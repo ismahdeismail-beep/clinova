@@ -28,34 +28,50 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    let isMounted = true;
+    
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
       setUser(currentUser);
       if (currentUser) {
-        const userDocRef = doc(db, 'users', currentUser.uid);
-        const userDoc = await getDoc(userDocRef);
-        
-        if (userDoc.exists()) {
-          setUserData(userDoc.data() as UserData);
-        } else {
-          // Defaults to student if new user
-          const newUserData: UserData = {
-            uid: currentUser.uid,
-            email: currentUser.email,
-            displayName: currentUser.displayName,
-            photoURL: currentUser.photoURL,
-            role: 'student',
-            createdAt: Date.now(),
-          };
-          await setDoc(userDocRef, newUserData);
-          setUserData(newUserData);
+        try {
+          const userDocRef = doc(db, 'users', currentUser.uid);
+          const userDoc = await getDoc(userDocRef);
+          
+          if (userDoc.exists()) {
+            if (isMounted) setUserData(userDoc.data() as UserData);
+          } else {
+            // Defaults to student if new user
+            const newUserData: UserData = {
+              uid: currentUser.uid,
+              email: currentUser.email,
+              displayName: currentUser.displayName,
+              photoURL: currentUser.photoURL,
+              role: 'student',
+              createdAt: Date.now(),
+            };
+            await setDoc(userDocRef, newUserData);
+            if (isMounted) setUserData(newUserData);
+          }
+        } catch (err) {
+          console.error("Error fetching user from Firestore:", err);
+        } finally {
+          if (isMounted) setLoading(false);
         }
       } else {
-        setUserData(null);
+        if (isMounted) {
+          setUserData(null);
+          setLoading(false);
+        }
       }
-      setLoading(false);
+    }, (error) => {
+      console.error("Auth state change error:", error);
+      if (isMounted) setLoading(false);
     });
 
-    return unsubscribe;
+    return () => {
+      isMounted = false;
+      unsubscribe();
+    };
   }, []);
 
   const signInWithGoogle = async () => {

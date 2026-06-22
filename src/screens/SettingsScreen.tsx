@@ -23,7 +23,7 @@ export default function SettingsScreen() {
             Manage your clinical environment protocols, data de-identification guardrails, and regional pharmaceutical standards.
           </p>
         </div>
-        <button className="px-6 py-3 bg-primary text-on-primary font-bold text-sm rounded-lg hover:opacity-90 transition-all flex items-center gap-2 relative z-10">
+        <button className="w-full md:w-auto min-h-[44px] px-6 py-3 bg-primary text-on-primary font-bold text-sm rounded-lg hover:opacity-90 transition-all flex items-center justify-center gap-2 relative z-10 shrink-0">
           <Save size={18} />
           <span>SAVE ALL CHANGES</span>
         </button>
@@ -64,7 +64,7 @@ export default function SettingsScreen() {
                     <span className="text-[10px] font-bold uppercase tracking-wider">PHR Redaction</span>
                   </div>
                   <p className="text-xs text-on-surface-variant flex-1">Auto-scrub Patient Health Records of PII during collaborative case reviews.</p>
-                  <button className="text-left text-xs font-bold text-primary tracking-widest uppercase hover:underline mt-2">Configure Patterns</button>
+                  <button className="text-left text-xs font-bold text-primary tracking-widest uppercase hover:underline mt-2 min-h-[44px] py-2">Configure Patterns</button>
                 </div>
                 
                 <div className="p-4 bg-surface-dim border border-outline-variant rounded-lg flex flex-col gap-3">

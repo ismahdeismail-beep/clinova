@@ -41,11 +41,11 @@ export default function StudyEngineScreen() {
             <h3 className="text-xl font-bold mb-1">Ingest Clinical Documents</h3>
             <p className="text-sm text-on-surface-variant mb-6 text-center max-w-xs">Drop PDFs, JPEG patient notes, or paste clinical abstracts</p>
             
-            <div className="flex gap-3">
-              <button className="px-6 py-2 bg-primary text-on-primary font-bold rounded-lg flex items-center gap-2 hover:opacity-90 transition-opacity whitespace-nowrap text-sm">
+            <div className="flex flex-wrap justify-center md:justify-start gap-4 w-full px-4 md:px-0">
+              <button className="flex-1 md:flex-none min-h-[44px] px-6 py-2 bg-primary text-on-primary font-bold rounded-lg flex items-center justify-center gap-2 hover:opacity-90 transition-opacity whitespace-nowrap text-sm">
                 <Plus size={16} /> Select Files
               </button>
-              <button className="px-6 py-2 border border-outline-variant text-on-surface font-bold rounded-lg hover:bg-surface-container-high transition-colors text-sm">
+              <button className="flex-1 md:flex-none min-h-[44px] px-6 py-2 border border-outline-variant text-on-surface font-bold rounded-lg hover:bg-surface-container-high transition-colors flex items-center justify-center text-sm">
                 Browse Notes
               </button>
             </div>
@@ -214,7 +214,7 @@ export default function StudyEngineScreen() {
               </div>
             </div>
             
-            <button className="w-full py-3 bg-surface-container-highest text-on-surface text-xs font-bold rounded-lg border border-outline-variant hover:border-primary/50 transition-colors tracking-widest uppercase">
+            <button className="w-full min-h-[44px] py-3 bg-surface-container-highest text-on-surface text-xs font-bold rounded-lg border border-outline-variant hover:border-primary/50 transition-colors tracking-widest uppercase flex items-center justify-center">
               Upgrade Engine
             </button>
           </div>

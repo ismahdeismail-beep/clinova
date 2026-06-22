@@ -58,8 +58,8 @@ export default function CaseLearningScreen() {
           <div className="flex items-center justify-between mb-4">
             <h4 className="text-xl font-bold">Available Simulations</h4>
             <div className="flex gap-2">
-              <button className="bg-surface-container-high px-3 py-1 rounded border border-outline-variant text-[10px] font-bold text-on-surface-variant uppercase hover:border-primary transition-colors">Filters</button>
-              <button className="bg-surface-container-high px-3 py-1 rounded border border-outline-variant text-[10px] font-bold text-on-surface-variant uppercase hover:border-primary transition-colors">Sort</button>
+              <button className="bg-surface-container-high px-3 min-h-[44px] rounded border border-outline-variant text-[10px] font-bold text-on-surface-variant uppercase hover:border-primary transition-colors flex items-center justify-center">Filters</button>
+              <button className="bg-surface-container-high px-3 min-h-[44px] rounded border border-outline-variant text-[10px] font-bold text-on-surface-variant uppercase hover:border-primary transition-colors flex items-center justify-center">Sort</button>
             </div>
           </div>
 
@@ -88,7 +88,7 @@ export default function CaseLearningScreen() {
                     <span>{sim.time}</span>
                     <span className="text-primary">{sim.xp}</span>
                   </div>
-                  <button className="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold text-sm hover:opacity-90 transition-opacity whitespace-nowrap">
+                  <button className="bg-primary text-on-primary px-6 min-h-[44px] rounded-lg font-bold text-sm hover:opacity-90 transition-opacity whitespace-nowrap flex items-center justify-center">
                     Launch Simulation
                   </button>
                 </div>

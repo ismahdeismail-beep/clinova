@@ -9,6 +9,7 @@ export default function TopBar({ activeView }: TopBarProps) {
   const getTitle = () => {
     switch (activeView) {
       case 'dashboard': return 'Clinova Canvas';
+      case 'tree': return 'Clinova Decision Tree';
       case 'study': return 'Clinova Knowledge Engine';
       case 'pharma': return 'Clinova Reasoning Engine';
       case 'case': return 'Clinova Risk Simulator';

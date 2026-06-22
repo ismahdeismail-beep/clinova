@@ -16,6 +16,7 @@ import StudyEngineScreen from './screens/StudyEngineScreen';
 import PharmaScreen from './screens/PharmaScreen';
 import CaseLearningScreen from './screens/CaseLearningScreen';
 import SettingsScreen from './screens/SettingsScreen';
+import DecisionTreeScreen from './screens/DecisionTreeScreen';
 
 function MainApp() {
   const { user, loading } = useAuth();
@@ -50,6 +51,7 @@ function MainApp() {
         
         <div className="mt-16 p-6 lg:p-10 overflow-y-auto w-full h-[calc(100vh-4rem)]">
           {activeView === 'dashboard' && <DashboardScreen />}
+          {activeView === 'tree' && <DecisionTreeScreen />}
           {activeView === 'study' && <StudyEngineScreen />}
           {activeView === 'pharma' && <PharmaScreen />}
           {activeView === 'case' && <CaseLearningScreen />}

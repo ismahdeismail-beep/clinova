@@ -1,4 +1,4 @@
-export type ViewState = 'login' | 'dashboard' | 'study' | 'pharma' | 'case' | 'settings' | 'admin';
+export type ViewState = 'login' | 'dashboard' | 'study' | 'pharma' | 'case' | 'settings' | 'admin' | 'tree';
 
 export type UserRole = 'student' | 'pharmacist' | 'clinician' | 'admin';
 

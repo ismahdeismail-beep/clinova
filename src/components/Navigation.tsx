@@ -6,7 +6,8 @@ import {
   FolderOpen, 
   Settings, 
   ShieldAlert,
-  LogOut
+  LogOut,
+  Brain
 } from 'lucide-react';
 import { ViewState } from '../types';
 import { useAuth } from '../contexts/AuthContext';
@@ -21,6 +22,7 @@ export default function Navigation({ activeView, onNavigate }: NavigationProps) 
   
   const navItems = [
     { id: 'dashboard', label: 'Clinova Canvas', icon: LayoutDashboard, core: true },
+    { id: 'tree', label: 'Clinova Decision Tree', icon: Brain, core: true },
     { id: 'study', label: 'Clinova Knowledge Engine', icon: FlaskConical, core: true },
     { id: 'pharma', label: 'Clinova Reasoning Engine', icon: Pill, core: true },
     { id: 'case', label: 'Clinova Risk Simulator', icon: GraduationCap, core: true },

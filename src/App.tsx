@@ -47,9 +47,9 @@ function MainApp() {
       <Navigation activeView={activeView} onNavigate={setActiveView} />
       
       <main className="md:ml-72 flex-1 flex flex-col h-screen relative overflow-hidden bg-background">
-        <TopBar activeView={activeView} onNavigate={setActiveView} />
+        <TopBar activeView={activeView} />
         
-        <div className="mt-16 pb-24 md:pb-6 p-4 md:p-6 lg:p-10 overflow-y-auto w-full h-[calc(100vh-4rem)]">
+        <div className="mt-16 p-6 lg:p-10 overflow-y-auto w-full h-[calc(100vh-4rem)]">
           {activeView === 'dashboard' && <DashboardScreen />}
           {activeView === 'tree' && <DecisionTreeScreen />}
           {activeView === 'study' && <StudyEngineScreen />}

@@ -76,7 +76,7 @@ export default function DashboardScreen() {
           ))}
         </div>
         
-        <button className="mt-6 w-full min-h-[44px] py-3 border border-outline-variant rounded-lg text-xs font-bold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2">
+        <button className="mt-6 w-full py-3 border border-outline-variant rounded-lg text-xs font-bold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2">
           View All Cases
           <ArrowRightIcon size={14} />
         </button>
@@ -148,7 +148,7 @@ export default function DashboardScreen() {
             <h3 className="text-xl font-bold">Clinova Reasoning Engine</h3>
             <p className="text-sm text-on-surface-variant">Currently active patient medication reconciliation and intelligence forms.</p>
           </div>
-          <button className="px-4 min-h-[44px] bg-primary text-on-primary rounded-lg font-bold text-sm flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+          <button className="px-4 py-2 bg-primary text-on-primary rounded-lg font-bold text-sm flex items-center gap-2 hover:opacity-90 transition-opacity">
             <span>+</span> New Form
           </button>
         </div>
@@ -177,8 +177,8 @@ export default function DashboardScreen() {
                   </div>
                 </td>
                 <td className="py-4 px-2 text-on-surface-variant">Review Warfarin-NSAID Logic</td>
-                <td className="py-2 px-2 text-right">
-                  <button className="text-primary font-bold text-xs hover:underline min-h-[44px] px-2 flex items-center justify-end w-full">Resume</button>
+                <td className="py-4 px-2 text-right">
+                  <button className="text-primary font-bold text-xs hover:underline">Resume</button>
                 </td>
               </tr>
               <tr className="border-b border-outline-variant hover:bg-surface-container-high transition-colors">
@@ -193,8 +193,8 @@ export default function DashboardScreen() {
                   </div>
                 </td>
                 <td className="py-4 px-2 text-on-surface-variant">Awaiting Serum Creatinine</td>
-                <td className="py-2 px-2 text-right">
-                  <button className="text-primary font-bold text-xs hover:underline min-h-[44px] px-2 flex items-center justify-end w-full">Resume</button>
+                <td className="py-4 px-2 text-right">
+                  <button className="text-primary font-bold text-xs hover:underline">Resume</button>
                 </td>
               </tr>
             </tbody>

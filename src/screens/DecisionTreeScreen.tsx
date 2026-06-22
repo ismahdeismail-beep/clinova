@@ -80,27 +80,27 @@ export default function DecisionTreeScreen() {
     <div className="flex flex-col h-full max-w-[1440px] mx-auto text-on-surface">
       
       {/* Header */}
-      <header className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+      <header className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-6">
         <div>
           <h2 className="text-3xl font-extrabold text-primary mb-2 tracking-tight">Clinova Decision Tree</h2>
           <p className="text-sm text-on-surface-variant max-w-xl">
             Visual workflow runner and logic builder. AI assists in traversing the graph while adhering to strict deterministic safety rules.
           </p>
         </div>
-        <div className="flex flex-wrap gap-3">
-          <button className="flex items-center justify-center gap-2 bg-surface-container-high px-4 min-h-[44px] rounded-lg text-sm font-bold border border-outline-variant hover:border-primary transition-colors flex-1 md:flex-none">
-            <Settings size={18} /> Configure
+        <div className="flex gap-3">
+          <button className="flex items-center gap-2 bg-surface-container-high px-4 py-2 rounded-lg text-sm font-bold border border-outline-variant hover:border-primary transition-colors">
+            <Settings size={16} /> Configure
           </button>
-          <button className="flex items-center justify-center gap-2 bg-primary text-on-primary px-6 min-h-[44px] rounded-lg text-sm font-bold hover:opacity-90 transition-opacity flex-1 md:flex-none">
-            <Play size={18} /> Execute Workflow
+          <button className="flex items-center gap-2 bg-primary text-on-primary px-6 py-2 rounded-lg text-sm font-bold hover:opacity-90 transition-opacity">
+            <Play size={16} /> Execute Workflow
           </button>
         </div>
       </header>
 
       {/* Main Graph Viewer */}
-      <section className="flex-1 obsidian-card rounded-2xl overflow-hidden border border-outline-variant relative flex flex-col lg:flex-row min-h-[500px]">
+      <section className="flex-1 obsidian-card rounded-2xl overflow-hidden border border-outline-variant relative flex">
         {/* Left Side: Graph Engine */}
-        <div className="flex-1 h-[400px] lg:h-full relative" style={{ background: '#0E0E10' }}>
+        <div className="flex-1 h-full relative" style={{ background: '#0E0E10' }}>
           <ReactFlow
             nodes={nodes}
             edges={edges}
@@ -116,10 +116,10 @@ export default function DecisionTreeScreen() {
         </div>
 
         {/* Right Side: Workflow Orchestrator Context */}
-        <div className="w-full lg:w-80 h-[300px] lg:h-full border-t lg:border-t-0 lg:border-l border-outline-variant bg-surface-container-low flex flex-col overflow-hidden">
-          <div className="p-4 border-b border-outline-variant flex items-center justify-between shrink-0">
+        <div className="w-80 h-full border-l border-outline-variant bg-surface-container-low flex flex-col hidden lg:flex">
+          <div className="p-4 border-b border-outline-variant flex items-center justify-between">
             <span className="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Execution Context</span>
-            <span className="px-2 py-0.5 bg-primary/10 text-primary text-[10px] font-bold uppercase rounded border border-primary/20 shrink-0">Active</span>
+            <span className="px-2 py-0.5 bg-primary/10 text-primary text-[10px] font-bold uppercase rounded border border-primary/20">Active</span>
           </div>
 
           <div className="p-4 flex-1 overflow-y-auto space-y-6">
@@ -152,29 +152,13 @@ export default function DecisionTreeScreen() {
             </div>
 
             {/* AI Orchestration Summary */}
-            <div className="space-y-2 shrink-0">
+            <div className="space-y-2">
               <span className="text-[10px] text-primary uppercase font-bold tracking-widest">Orchestrator Output</span>
               <div className="p-3 bg-surface-container border border-primary/30 rounded relative overflow-hidden">
                 <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
                 <p className="text-xs text-on-surface leading-relaxed">
                   "Evaluated Vitals Review Node. Detected BP of 88/50 matching clinical safety rule <span className="font-mono text-error">RULE_BP_001</span>. Forcing trajectory to Sepsis Protocol. AI overrides disabled for this path."
                 </p>
-              </div>
-            </div>
-
-            {/* Navigation Guards & Dead-end elimination actions */}
-            <div className="pt-2 border-t border-outline-variant shrink-0 mb-4">
-              <span className="text-[10px] text-on-surface-variant uppercase font-bold tracking-widest block mb-3">Workflow Actions</span>
-              <div className="grid grid-cols-2 gap-2">
-                 <button className="flex items-center justify-center min-h-[44px] bg-surface-container border border-outline-variant text-[11px] rounded font-bold hover:bg-surface-container-high transition-colors">
-                   Restart State
-                 </button>
-                 <button className="flex items-center justify-center min-h-[44px] bg-surface-container border border-outline-variant text-[11px] rounded font-bold hover:bg-surface-container-high transition-colors">
-                   Edit Inputs
-                 </button>
-                 <button className="flex items-center justify-center min-h-[44px] bg-primary/20 text-primary border border-primary/30 text-[11px] rounded font-bold hover:bg-primary/30 transition-colors col-span-2">
-                   Export Summary
-                 </button>
               </div>
             </div>
 

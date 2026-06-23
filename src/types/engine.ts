@@ -1,4 +1,4 @@
-export type NodeType = 'input' | 'decision' | 'calculation' | 'output';
+xport type NodeType = 'input' | 'decision' | 'calculation' | 'output';
 export interface WorkflowNode {
   id: string;
   workflowId: string;
@@ -96,7 +96,6 @@ export interface ClinicalSessionOutput {
   final_recommendation: string;
   safety_flags: string[];
 }
-
 export type FileCategory =
   | 'patient_image'
   | 'patient_document'
@@ -105,9 +104,7 @@ export type FileCategory =
   | 'knowledge'
   | 'report'
   | 'general';
-
 export type FileAccessScope = 'private' | 'shared' | 'public';
-
 export interface StoredFile {
   id: string;
   originalName: string;
@@ -126,7 +123,6 @@ export interface StoredFile {
   hash: string;
   accessibleTo: string[];
 }
-
 export interface FileUploadOptions {
   category: FileCategory;
   accessScope?: FileAccessScope;
@@ -135,7 +131,6 @@ export interface FileUploadOptions {
   allowedMimeTypes?: string[];
   maxSizeBytes?: number;
 }
-
 export interface UploadProgress {
   bytesTransferred: number;
   totalBytes: number;
@@ -143,6 +138,16 @@ export interface UploadProgress {
 }
 
 export interface UploadResult {
+export interface UploadResultData {
   file: StoredFile;
   url: string;
 }
+
+export type UploadResult = {
+  success: true;
+  data: UploadResultData;
+  error: null;
+} | {
+  success: false;
+  data: null;
+  error: { code: string; message: string; details?: string; status?: number; timestamp: number };

@@ -1,76 +1,35 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
+import React, { useEffect } from 'react';
+import FileUploader from './components/FileUploader';
+import FileList from './components/FileList';
+import { useFileStore } from './store/fileStore';
 
-import { useState, useEffect } from 'react';
-import Navigation from './components/Navigation';
-import TopBar from './components/TopBar';
-import { ViewState } from './types';
-import { AuthProvider, useAuth } from './contexts/AuthContext';
-
-// Screen imports
-import LoginScreen from './screens/LoginScreen';
-import DashboardScreen from './screens/DashboardScreen';
-import StudyEngineScreen from './screens/StudyEngineScreen';
-import PharmaScreen from './screens/PharmaScreen';
-import CaseLearningScreen from './screens/CaseLearningScreen';
-import SettingsScreen from './screens/SettingsScreen';
-import DecisionTreeScreen from './screens/DecisionTreeScreen';
-
-function MainApp() {
-  const { user, loading } = useAuth();
-  const [activeView, setActiveView] = useState<ViewState>('dashboard');
+function App() {
+  const { files, fetchFiles } = useFileStore();
 
   useEffect(() => {
-    if (!user) {
-      setActiveView('login');
-    } else if (activeView === 'login') {
-      setActiveView('dashboard');
-    }
-  }, [user, activeView]);
-
-  if (loading) {
-    return (
-      <div className="h-screen w-screen flex items-center justify-center bg-[#0E0E10] text-[#00E5FF] font-mono text-sm tracking-widest uppercase">
-        <span className="animate-pulse">Initializing Clinova OS...</span>
-      </div>
-    );
-  }
-
-  if (!user) {
-    return <LoginScreen />;
-  }
+    fetchFiles();
+  }, [fetchFiles]);
 
   return (
-    <div className="flex h-screen overflow-hidden bg-background">
-      <Navigation activeView={activeView} onNavigate={setActiveView} />
-      
-      <main className="md:ml-72 flex-1 flex flex-col h-screen relative overflow-hidden bg-background">
-        <TopBar activeView={activeView} />
-        
-        <div className="mt-16 p-6 lg:p-10 overflow-y-auto w-full h-[calc(100vh-4rem)]">
-          {activeView === 'dashboard' && <DashboardScreen />}
-          {activeView === 'tree' && <DecisionTreeScreen />}
-          {activeView === 'study' && <StudyEngineScreen />}
-          {activeView === 'pharma' && <PharmaScreen />}
-          {activeView === 'case' && <CaseLearningScreen />}
-          {activeView === 'settings' && <SettingsScreen />}
-          {activeView === 'admin' && (
-            <div className="flex items-center justify-center h-full text-on-surface-variant font-mono">
-              [GOVERNANCE CONSOLE - ENCRYPTED]
-            </div>
-          )}
+    <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] p-8">
+      <div className="max-w-2xl mx-auto space-y-8">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold mb-2">Clinova OS Media</h1>
+          <p className="text-[var(--text-muted)]">Upload and manage your clinical media.</p>
         </div>
-      </main>
+
+        <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] shadow-sm">
+          <h2 className="text-xl font-semibold mb-4">Upload Files</h2>
+          <FileUploader category="general" />
+        </div>
+
+        <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] shadow-sm">
+          <h2 className="text-xl font-semibold mb-4">Uploaded Files</h2>
+          <FileList files={files} />
+        </div>
+      </div>
     </div>
   );
 }
 
-export default function App() {
-  return (
-    <AuthProvider>
-      <MainApp />
-    </AuthProvider>
-  );
-}
+export default App;

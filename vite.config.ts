@@ -14,6 +14,7 @@ export default defineConfig(() => {
         includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'offline.html'],
         workbox: {
           globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
+          globIgnores: ['**/node_modules/**/*'],
           navigateFallback: '/offline.html',
         },
         manifest: {
@@ -55,6 +56,17 @@ export default defineConfig(() => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
+      },
+    },
+    ssr: {
+      noExternal: true,
+    },
+    build: {
+      rollupOptions: {
+        onwarn(warning, warn) {
+          if (warning.code === 'MODULE_NOT_FOUND') return;
+          warn(warning);
+        },
       },
     },
     server: {

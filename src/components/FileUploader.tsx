@@ -86,8 +86,12 @@ export default function FileUploader({
 
         const result = await StorageService.uploadFile(file, options, setLocalProgress);
 
-        addFile(result.file);
-        onUploadComplete?.(result.file.id);
+        if (result.success && result.data) {
+          addFile(result.data.file);
+          onUploadComplete?.(result.data.file.id);
+        } else {
+          setError(`Failed to upload "${file.name}": ${result.error?.message || 'Unknown error'}`);
+        }
       } catch (err: any) {
         if (err?.name === 'AbortError') return;
         setError(`Failed to upload "${file.name}": ${err?.message || 'Unknown error'}`);

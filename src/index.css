@@ -81,6 +81,53 @@
 
 html {
   color-scheme: light;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ===== UI Mode: Simple ===== */
+[data-ui-mode="simple"] .clinical-only {
+  display: none !important;
+}
+
+[data-ui-mode="simple"] .pharma-term,
+[data-ui-mode="simple"] .diagnosis-code,
+[data-ui-mode="simple"] .drug-generic {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+[data-ui-mode="simple"] .clinical-detail {
+  display: none;
+}
+
+[data-ui-mode="simple"] [data-simple-label]::after {
+  content: attr(data-simple-label);
+}
+
+/* ===== UI Mode: Clinical ===== */
+[data-ui-mode="clinical"] .simple-only {
+  display: none !important;
+}
+
+/* ===== Touch-safe spacing ===== */
+@media (hover: none) and (pointer: coarse) {
+  .touch-safe {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  button, a, [role="button"] {
+    min-height: 40px;
+  }
+}
+
+/* ===== Scroll restoration ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== Prevent layout shift on scroll ===== */
+.overflow-y-auto {
+  overscroll-behavior-y: contain;
 }
 
 html.dark {

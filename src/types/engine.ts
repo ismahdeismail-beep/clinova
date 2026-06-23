@@ -151,7 +151,17 @@ export interface UploadProgress {
   percentage: number;
 }
 
-export interface UploadResult {
+export interface UploadResultData {
   file: StoredFile;
   url: string;
 }
+
+export type UploadResult = {
+  success: true;
+  data: UploadResultData;
+  error: null;
+} | {
+  success: false;
+  data: null;
+  error: { code: string; message: string; details?: string; status?: number; timestamp: number };
+};

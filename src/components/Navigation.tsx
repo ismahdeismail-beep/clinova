@@ -1,29 +1,41 @@
-import { memo, useState, useCallback } from 'react';
+import { memo, useState, useCallback, useMemo } from 'react';
 import {
-  LayoutDashboard, FlaskConical, BrainCircuit, Pill, Activity, Settings, LogOut, Menu, X
+  LayoutDashboard, FlaskConical, BrainCircuit, Pill, Activity, Settings, LogOut, Menu, X, Users, FilePlus, Library, BookMarked, ClipboardList, Shield
 } from 'lucide-react';
 import ClinovaLogo from './ClinovaLogo';
 import type { ViewState } from '../types';
 import { useAuth } from '../contexts/AuthContext';
 import { useTheme } from '../contexts/ThemeContext';
+import { useUIMode } from '../contexts/UIModeContext';
 
 interface NavigationProps {
   activeView: ViewState;
   onNavigate: (view: ViewState) => void;
 }
 
-const NAV_ITEMS: { view: ViewState; label: string; icon: typeof LayoutDashboard }[] = [
+const CLINICAL_NAV_ITEMS: { view: ViewState; label: string; icon: typeof LayoutDashboard }[] = [
   { view: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
+  { view: 'patients', label: 'Patients', icon: Users },
+  { view: 'new-case', label: 'New Case', icon: FilePlus },
+  { view: 'pharmacotherapy', label: 'Pharma Review', icon: ClipboardList },
   { view: 'tree', label: 'Decision Tree', icon: FlaskConical },
-  { view: 'study', label: 'Knowledge Engine', icon: BrainCircuit },
-  { view: 'pharma', label: 'Reasoning Engine', icon: Pill },
-  { view: 'case', label: 'Risk Simulator', icon: Activity },
+  { view: 'drug-index', label: 'Drug Index', icon: BookMarked },
+  { view: 'knowledge-base', label: 'Knowledge Base', icon: Library },
+  { view: 'settings', label: 'Settings', icon: Settings },
+];
+
+const SIMPLE_NAV_ITEMS: { view: ViewState; label: string; icon: typeof LayoutDashboard }[] = [
+  { view: 'dashboard', label: 'Home', icon: LayoutDashboard },
+  { view: 'study', label: 'Study', icon: BrainCircuit },
+  { view: 'pharma', label: 'Medications', icon: Pill },
+  { view: 'case', label: 'Simulations', icon: Activity },
   { view: 'settings', label: 'Settings', icon: Settings },
 ];
 
 function Navigation({ activeView, onNavigate }: NavigationProps) {
   const { userData, logout } = useAuth();
   const { theme } = useTheme();
+  const { isSimple } = useUIMode();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleNav = useCallback((view: ViewState) => {
@@ -33,9 +45,11 @@ function Navigation({ activeView, onNavigate }: NavigationProps) {
 
   const logoVariant = theme === 'dark' ? 'light' : 'default';
 
+  const navItems = useMemo(() => isSimple ? SIMPLE_NAV_ITEMS : CLINICAL_NAV_ITEMS, [isSimple]);
+
   const navContent = (
-    <nav className="flex-1 px-3 py-4 space-y-0.5 overflow-y-auto">
-      {NAV_ITEMS.map((item) => {
+    <nav className="flex-1 px-3 py-4 space-y-0.5 overflow-y-auto touch-pan-y overscroll-y-contain">
+      {navItems.map((item) => {
         const Icon = item.icon;
         const isActive = activeView === item.view;
         return (
@@ -48,7 +62,7 @@ function Navigation({ activeView, onNavigate }: NavigationProps) {
                 : 'text-[var(--text-secondary)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]'
             }`}
           >
-            <Icon size={18} strokeWidth={isActive ? 2.5 : 1.5} />
+            <Icon size={18} strokeWidth={isActive ? 2.5 : 1.5} aria-hidden="true" />
             <span>{item.label}</span>
           </button>
         );

@@ -1,6 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-dim: var(--surface-dim);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-primary: var(--primary);
+  --color-primary-container: var(--primary-container);
+  --color-danger: var(--danger);
+  --color-danger-container: var(--danger-container);
+  --color-border: var(--border);
+  --color-success: var(--success);
+}
 
 @layer base {
   :root {

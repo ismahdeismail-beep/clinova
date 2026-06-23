@@ -64,6 +64,11 @@ clinova-main/
 | Reasoning Engine | `'pharma'` | Drug therapy assessment, renal/hepatic dose adjustments, interaction checks |
 | Risk Simulator | `'case'` | Interactive clinical case simulations |
 | Settings | `'settings'` | Privacy, de-identification, AI guardrails, regional lock, theme |
+| Patients | `'patients'` | Patient listing with search |
+| New Case | `'new-case'` | Clinical case intake form |
+| Pharmacotherapy Review | `'pharmacotherapy'` | Full clinical pharmacotherapy assessment wizard |
+| Drug Index | `'drug-index'` | KEML-referenced drug formulary |
+| Knowledge Base | `'knowledge-base'` | Guidelines, references, notes |
 | Admin | `'admin'` | Governance Console (admin-only, encrypted placeholder) |
 
 ## Conventions

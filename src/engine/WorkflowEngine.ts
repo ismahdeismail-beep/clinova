@@ -1,5 +1,7 @@
 import { EventBus } from './EventBus';
 import type { Workflow, WorkflowNode, ClinicalSessionOutput } from '../types/engine';
+import { RulesService } from '../services/rules.service';
+import { WorkflowService } from '../services/workflow.service';
 
 export type WorkflowEvent =
   | 'workflow:start'
@@ -54,11 +56,19 @@ export class WorkflowEngine {
     if (this.nodeCache.has(workflowId)) {
       return this.nodeCache.get(workflowId)!;
     }
-    const { WorkflowService } = await import('../services/workflow.service');
     const nodes = await WorkflowService.getWorkflowNodes(workflowId);
     this.nodeCache.set(workflowId, nodes);
     return nodes;
   }
+
+  private readonly DEFAULT_SAFE_NODE: WorkflowNode = {
+    id: 'default_safe_state',
+    workflowId: '',
+    type: 'output',
+    prompt: 'Safe State: Clinical assessment completed with default protocol.',
+    next: {},
+    position: { x: 0, y: 0 },
+  };
 
   private async traverse(node: WorkflowNode, allNodes: WorkflowNode[]): Promise<void> {
     if (!this.context) return;
@@ -67,7 +77,6 @@ export class WorkflowEngine {
     this.context.history.push(node.id);
     this.bus.emit('workflow:node:enter', { node, state: this.context.state });
 
-    const { RulesService } = await import('../services/rules.service');
     const brokenRules = await RulesService.evaluateRules(this.context.state);
     for (const rule of brokenRules) {
       this.context.safetyFlags.push(rule.action);
@@ -84,12 +93,18 @@ export class WorkflowEngine {
 
     const nextNode = allNodes.find((n) => n.id === nextId);
     if (!nextNode) {
-      this.bus.emit('workflow:error', { message: `Node "${nextId}" not found`, fromNode: node.id });
+      this.bus.emit('workflow:error', { message: `Node "${nextId}" not found — routing to safe fallback`, fromNode: node.id });
+      const safeNode = { ...this.DEFAULT_SAFE_NODE, workflowId: this.context.workflow.id, prompt: `Fallback from missing node "${nextId}". ${this.DEFAULT_SAFE_NODE.prompt}` };
+      this.bus.emit('workflow:node:exit', { node, nextNode: safeNode, state: this.context.state });
+      this.context.currentNode = safeNode;
       return;
     }
 
     if (this.context.history.filter((id) => id === nextId).length > 3) {
-      this.bus.emit('workflow:error', { message: `Cycle detected at node "${nextId}"`, path: this.context.history });
+      this.bus.emit('workflow:error', { message: `Cycle detected at node "${nextId}" — routing to safe fallback`, path: this.context.history });
+      const safeNode = { ...this.DEFAULT_SAFE_NODE, workflowId: this.context.workflow.id, prompt: `Cycle prevention fallback from "${nextId}". ${this.DEFAULT_SAFE_NODE.prompt}` };
+      this.bus.emit('workflow:node:exit', { node, nextNode: safeNode, state: this.context.state });
+      this.context.currentNode = safeNode;
       return;
     }
 
@@ -102,8 +117,8 @@ export class WorkflowEngine {
     if (!logic) return next.default || next.yes;
 
     try {
-      const result = new Function('state', `"use strict"; return (${logic});`)(state);
-      return result ? next.yes : next.no;
+      const result = RulesService.evaluateCondition(logic, state);
+      return result ? (next.yes || next.default) : (next.no || next.default);
     } catch {
       return next.default;
     }

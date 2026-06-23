@@ -42,10 +42,12 @@ const initialState = {
   error: null,
 };
 
-export const useClinicalStore = create<ClinicalState>((set) => ({
+export const useClinicalStore = create<ClinicalState>((set, get) => ({
   ...initialState,
 
-  setView: (view) => set({ view }),
+  setView: (view) => {
+    set({ view, error: null });
+  },
   setUser: (user) => set({ user }),
   setWorkflows: (workflows) => set({ workflows }),
   setCurrentWorkflow: (workflow, nodes) =>

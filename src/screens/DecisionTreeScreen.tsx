@@ -77,30 +77,30 @@ function DecisionTreeScreen() {
   );
 
   return (
-    <div className="flex flex-col h-full max-w-[1440px] mx-auto text-on-surface">
+    <div className="flex flex-col h-full max-w-[1440px] mx-auto p-4 md:p-6">
       
       {/* Header */}
-      <header className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-6">
+      <header className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-4 shrink-0">
         <div>
-          <h2 className="text-3xl font-extrabold text-primary mb-2 tracking-tight">Clinova Decision Tree</h2>
-          <p className="text-sm text-on-surface-variant max-w-xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0F172A] mb-1 tracking-tight">Decision Tree</h2>
+          <p className="text-sm text-[#64748B] max-w-xl">
             Visual workflow runner and logic builder. AI assists in traversing the graph while adhering to strict deterministic safety rules.
           </p>
         </div>
-        <div className="flex gap-3">
-          <button className="flex items-center gap-2 bg-surface-container-high px-4 py-2 rounded-lg text-sm font-bold border border-outline-variant hover:border-primary transition-colors">
+        <div className="flex gap-2">
+          <button className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg text-sm font-medium border border-[#E2E8F0] hover:border-[#2563EB] transition-colors text-[#475569]">
             <Settings size={16} /> Configure
           </button>
-          <button className="flex items-center gap-2 bg-primary text-on-primary px-6 py-2 rounded-lg text-sm font-bold hover:opacity-90 transition-opacity">
-            <Play size={16} /> Execute Workflow
+          <button className="flex items-center gap-2 bg-[#2563EB] text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-[#1D4ED8] transition-colors">
+            <Play size={16} /> Execute
           </button>
         </div>
       </header>
 
       {/* Main Graph Viewer */}
-      <section className="flex-1 obsidian-card rounded-2xl overflow-hidden border border-outline-variant relative flex">
+      <section className="flex-1 bg-white border border-[#E2E8F0] rounded-xl overflow-hidden relative flex min-h-0">
         {/* Left Side: Graph Engine */}
-        <div className="flex-1 h-full relative" style={{ background: '#0E0E10' }}>
+        <div className="flex-1 relative bg-[#F8FAFC]">
           <ReactFlow
             nodes={nodes}
             edges={edges}
@@ -110,54 +110,51 @@ function DecisionTreeScreen() {
             fitView
             className="cyan-glow"
           >
-            <Background variant={BackgroundVariant.Dots} gap={16} size={1} color="#3a4a5f" />
-            <Controls className="bg-surface-container border-outline-variant text-primary fill-primary" />
+            <Background variant={BackgroundVariant.Dots} gap={16} size={1} color="#CBD5E1" />
+            <Controls className="bg-white border-[#E2E8F0]" />
           </ReactFlow>
         </div>
 
         {/* Right Side: Workflow Orchestrator Context */}
-        <div className="w-80 h-full border-l border-outline-variant bg-surface-container-low flex flex-col hidden lg:flex">
-          <div className="p-4 border-b border-outline-variant flex items-center justify-between">
-            <span className="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Execution Context</span>
-            <span className="px-2 py-0.5 bg-primary/10 text-primary text-[10px] font-bold uppercase rounded border border-primary/20">Active</span>
+        <div className="w-72 h-full border-l border-[#E2E8F0] bg-[#F8FAFC] flex flex-col hidden lg:flex shrink-0">
+          <div className="p-4 border-b border-[#E2E8F0] flex items-center justify-between">
+            <span className="text-[10px] font-bold text-[#64748B] uppercase tracking-widest">Execution Context</span>
+            <span className="px-2 py-0.5 bg-[#EFF6FF] text-[#2563EB] text-[10px] font-bold uppercase rounded border border-[#2563EB]/20">Active</span>
           </div>
 
           <div className="p-4 flex-1 overflow-y-auto space-y-6">
             
-            {/* Context Vars */}
             <div className="space-y-2">
-              <span className="text-[10px] text-primary uppercase font-bold tracking-widest flex items-center gap-2">
+              <span className="text-[10px] text-[#2563EB] uppercase font-bold tracking-widest flex items-center gap-2">
                 <Brain size={12} /> Local State
               </span>
-              <div className="p-3 bg-surface-dim border border-outline-variant rounded text-xs font-mono text-on-surface-variant flex flex-col gap-1">
-                <div className="flex justify-between"><span>patient.BP</span> <span className="text-error">88/50</span></div>
-                <div className="flex justify-between"><span>patient.K</span> <span className="text-on-surface">4.2</span></div>
-                <div className="flex justify-between"><span>patient.EF</span> <span className="text-on-surface">55</span></div>
+              <div className="p-3 bg-[#F1F5F9] border border-[#E2E8F0] rounded text-xs font-mono text-[#64748B] flex flex-col gap-1">
+                <div className="flex justify-between"><span>patient.BP</span> <span className="text-[#DC2626]">88/50</span></div>
+                <div className="flex justify-between"><span>patient.K</span> <span className="text-[#0F172A]">4.2</span></div>
+                <div className="flex justify-between"><span>patient.EF</span> <span className="text-[#0F172A]">55</span></div>
               </div>
             </div>
 
-            {/* Rules Engine Overlay */}
             <div className="space-y-2">
-              <span className="text-[10px] text-error uppercase font-bold tracking-widest flex items-center gap-2">
+              <span className="text-[10px] text-[#DC2626] uppercase font-bold tracking-widest flex items-center gap-2">
                 <ShieldAlert size={12} /> Active Safety Rules
               </span>
               <div className="space-y-2">
-                <div className="p-3 bg-error-container/10 border border-error-container/30 rounded">
-                  <p className="text-[11px] font-mono text-error font-bold mb-1">RULE_BP_001</p>
-                  <p className="text-[10px] text-on-surface-variant leading-relaxed">
-                    If <span className="text-on-surface">BP {'<'} 90/60</span>, system MUST detour to Sepsis Protocol node and restrict ACE inhibitors.
+                <div className="p-3 bg-[#FEF2F2] border border-[#FECACA] rounded">
+                  <p className="text-[11px] font-mono text-[#DC2626] font-bold mb-1">RULE_BP_001</p>
+                  <p className="text-[10px] text-[#64748B] leading-relaxed">
+                    If <span className="text-[#0F172A]">BP {'<'} 90/60</span>, system MUST detour to Sepsis Protocol node and restrict ACE inhibitors.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* AI Orchestration Summary */}
             <div className="space-y-2">
-              <span className="text-[10px] text-primary uppercase font-bold tracking-widest">Orchestrator Output</span>
-              <div className="p-3 bg-surface-container border border-primary/30 rounded relative overflow-hidden">
-                <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
-                <p className="text-xs text-on-surface leading-relaxed">
-                  "Evaluated Vitals Review Node. Detected BP of 88/50 matching clinical safety rule <span className="font-mono text-error">RULE_BP_001</span>. Forcing trajectory to Sepsis Protocol. AI overrides disabled for this path."
+              <span className="text-[10px] text-[#2563EB] uppercase font-bold tracking-widest">Orchestrator Output</span>
+              <div className="p-3 bg-white border border-[#2563EB]/30 rounded relative overflow-hidden">
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#2563EB]"></div>
+                <p className="text-xs text-[#0F172A] leading-relaxed">
+                  "Evaluated Vitals Review Node. Detected BP of 88/50 matching clinical safety rule <span className="font-mono text-[#DC2626]">RULE_BP_001</span>. Forcing trajectory to Sepsis Protocol. AI overrides disabled for this path."
                 </p>
               </div>
             </div>

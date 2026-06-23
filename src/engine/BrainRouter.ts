@@ -9,16 +9,21 @@ interface RouteDefinition {
 }
 
 export const ROUTE_REGISTRY: RouteDefinition[] = [
-  { view: 'dashboard', label: 'Clinova Canvas', core: true },
-  { view: 'tree', label: 'Clinova Decision Tree', core: true },
-  { view: 'study', label: 'Clinova Knowledge Engine', core: true },
-  { view: 'pharma', label: 'Clinova Reasoning Engine', core: true },
-  { view: 'case', label: 'Clinova Risk Simulator', core: true },
+  { view: 'dashboard', label: 'Dashboard', core: true },
+  { view: 'tree', label: 'Decision Tree', core: true },
+  { view: 'study', label: 'Knowledge Engine', core: true },
+  { view: 'pharma', label: 'Reasoning Engine', core: true },
+  { view: 'case', label: 'Risk Simulator', core: true },
   { view: 'settings', label: 'Settings', core: false },
+  { view: 'patients', label: 'Patients', core: false },
+  { view: 'new-case', label: 'New Case', core: false },
+  { view: 'pharmacotherapy', label: 'Pharmacotherapy Review', core: false },
+  { view: 'drug-index', label: 'Drug Index', core: false },
+  { view: 'knowledge-base', label: 'Knowledge Base', core: false },
   { view: 'admin', label: 'Governance Console', roles: ['admin'], core: false },
 ];
 
-const ROUTE_ORDER: ViewState[] = ['login', 'dashboard', 'tree', 'study', 'pharma', 'case', 'settings', 'admin'];
+const ROUTE_ORDER: ViewState[] = ['login', 'dashboard', 'tree', 'study', 'pharma', 'case', 'settings', 'patients', 'new-case', 'pharmacotherapy', 'drug-index', 'knowledge-base', 'admin'];
 
 export class BrainRouter {
   private static instance: BrainRouter;

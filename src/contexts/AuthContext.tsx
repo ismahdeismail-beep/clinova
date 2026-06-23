@@ -31,40 +31,53 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     let isMounted = true;
+    let retryCount = 0;
+    const maxRetries = 3;
+
+    const fetchOrCreateUser = async (currentUser: User) => {
+      const userDocRef = doc(db, 'users', currentUser.uid);
+      const userDoc = await getDoc(userDocRef);
+
+      if (userDoc.exists()) {
+        const data = userDoc.data() as UserData;
+        if (isMounted) {
+          setUserData(data);
+          setStoreUser({ uid: data.uid, email: data.email, displayName: data.displayName, role: data.role });
+        }
+      } else {
+        const newUserData: UserData = {
+          uid: currentUser.uid,
+          email: currentUser.email,
+          displayName: currentUser.displayName,
+          photoURL: currentUser.photoURL,
+          role: 'student',
+          createdAt: Date.now(),
+        };
+        await setDoc(userDocRef, newUserData);
+        if (isMounted) {
+          setUserData(newUserData);
+          setStoreUser({ uid: newUserData.uid, email: newUserData.email, displayName: newUserData.displayName, role: newUserData.role });
+        }
+      }
+    };
 
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
       setUser(currentUser);
       if (currentUser) {
-        try {
-          const userDocRef = doc(db, 'users', currentUser.uid);
-          const userDoc = await getDoc(userDocRef);
-
-          if (userDoc.exists()) {
-            const data = userDoc.data() as UserData;
-            if (isMounted) {
-              setUserData(data);
-              setStoreUser({ uid: data.uid, email: data.email, displayName: data.displayName, role: data.role });
-            }
-          } else {
-            const newUserData: UserData = {
-              uid: currentUser.uid,
-              email: currentUser.email,
-              displayName: currentUser.displayName,
-              photoURL: currentUser.photoURL,
-              role: 'student',
-              createdAt: Date.now(),
-            };
-            await setDoc(userDocRef, newUserData);
-            if (isMounted) {
-              setUserData(newUserData);
-              setStoreUser({ uid: newUserData.uid, email: newUserData.email, displayName: newUserData.displayName, role: newUserData.role });
+        while (retryCount < maxRetries) {
+          try {
+            await fetchOrCreateUser(currentUser);
+            break;
+          } catch (err) {
+            retryCount++;
+            if (retryCount >= maxRetries) {
+              console.error('Auth: Failed to fetch/create user after retries');
+            } else {
+              await new Promise(r => setTimeout(r, 1000 * retryCount));
             }
           }
-        } catch (err) {
-          console.error("Error fetching user from Firestore:", err);
-        } finally {
-          if (isMounted) setLoading(false);
         }
+        if (isMounted) setLoading(false);
       } else {
         if (isMounted) {
           setUserData(null);
@@ -72,8 +85,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           setLoading(false);
         }
       }
-    }, () => {
-      if (isMounted) setLoading(false);
     });
 
     return () => {

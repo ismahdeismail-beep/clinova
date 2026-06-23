@@ -11,16 +11,28 @@ export default defineConfig(() => {
       tailwindcss(),
       VitePWA({
         registerType: 'autoUpdate',
-        includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
+        includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'offline.html'],
+        workbox: {
+          globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
+          navigateFallback: '/offline.html',
+        },
         manifest: {
-          name: 'Clinova OS',
+          name: 'Clinova Core OS',
           short_name: 'Clinova',
-          description: 'Clinical Intelligence System',
-          theme_color: '#0E0E10',
-          background_color: '#0E0E10',
+          description: 'Clinical Decision Support System — AI-assisted pharmacotherapy, knowledge ingestion, and risk simulation for Kenyan healthcare',
+          theme_color: '#F8FAFC',
+          background_color: '#F8FAFC',
           display: 'standalone',
+          start_url: '/',
+          scope: '/',
           icons: [
-             {
+            {
+              src: 'favicon.svg',
+              sizes: 'any',
+              type: 'image/svg+xml',
+              purpose: 'any'
+            },
+            {
               src: 'pwa-192x192.png',
               sizes: '192x192',
               type: 'image/png'
@@ -34,7 +46,7 @@ export default defineConfig(() => {
               src: 'pwa-512x512.png',
               sizes: '512x512',
               type: 'image/png',
-              purpose: 'any maskable'
+              purpose: 'maskable'
             }
           ]
         }

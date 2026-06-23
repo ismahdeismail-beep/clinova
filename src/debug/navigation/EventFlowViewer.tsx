@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { EventBus } from '../../engine/EventBus';
 
 interface EventEntry {
@@ -17,7 +17,7 @@ export function EventFlowViewer({ eventBus, maxEvents = 50 }: EventFlowViewerPro
   const [filter, setFilter] = useState('');
   const [paused, setPaused] = useState(false);
 
-  useMemo(() => {
+  useEffect(() => {
     const unsubscribe = eventBus.on('*', (args: unknown[], event: string) => {
       if (!paused) {
         setEvents(prev => {

@@ -32,7 +32,12 @@ export class BrainTree {
     return { ...this.state };
   }
 
+  private cleanups: (() => void)[] = [];
+
   async assess(workflow: Workflow, context: Record<string, any> = {}): Promise<void> {
+    this.cleanups.forEach(fn => fn());
+    this.cleanups = [];
+
     this.state = {
       phase: 'assessing',
       workflowId: workflow.id,
@@ -40,25 +45,33 @@ export class BrainTree {
     };
     this.bus.emit('braintree:assess', { workflow, context });
 
-    this.engine.on('workflow:start', () => {
-      this.state.phase = 'reasoning';
-      this.bus.emit('braintree:reason', { sessionId: this.state.sessionId });
-    });
+    this.cleanups.push(
+      this.engine.on('workflow:start', () => {
+        this.state.phase = 'reasoning';
+        this.bus.emit('braintree:reason', { sessionId: this.state.sessionId });
+      })
+    );
 
-    this.engine.on('workflow:node:enter', ({ node }: { node: WorkflowNode }) => {
-      this.state.phase = 'deciding';
-      this.bus.emit('braintree:decide', { node, sessionId: this.state.sessionId });
-    });
+    this.cleanups.push(
+      this.engine.on('workflow:node:enter', ({ node }: { node: WorkflowNode }) => {
+        this.state.phase = 'deciding';
+        this.bus.emit('braintree:decide', { node, sessionId: this.state.sessionId });
+      })
+    );
 
-    this.engine.on('workflow:complete', (output: ClinicalSessionOutput) => {
-      this.state.phase = 'complete';
-      this.bus.emit('braintree:complete', { output, sessionId: this.state.sessionId });
-    });
+    this.cleanups.push(
+      this.engine.on('workflow:complete', (output: ClinicalSessionOutput) => {
+        this.state.phase = 'complete';
+        this.bus.emit('braintree:complete', { output, sessionId: this.state.sessionId });
+      })
+    );
 
-    this.engine.on('workflow:error', ({ message, fromNode }: { message: string; fromNode?: string }) => {
-      this.state.phase = 'error';
-      this.bus.emit('braintree:error', { message, fromNode, sessionId: this.state.sessionId });
-    });
+    this.cleanups.push(
+      this.engine.on('workflow:error', ({ message, fromNode }: { message: string; fromNode?: string }) => {
+        this.state.phase = 'error';
+        this.bus.emit('braintree:error', { message, fromNode, sessionId: this.state.sessionId });
+      })
+    );
 
     await this.engine.start(workflow, context);
   }
@@ -76,6 +89,8 @@ export class BrainTree {
   }
 
   reset(): void {
+    this.cleanups.forEach(fn => fn());
+    this.cleanups = [];
     this.engine.reset();
     this.state = { phase: 'idle', workflowId: null, sessionId: null };
     this.bus.clear('braintree:assess');

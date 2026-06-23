@@ -10,23 +10,33 @@ export interface GraphNode {
 }
 
 const GRAPH_DEFINITION: GraphNode[] = [
-  { view: 'dashboard', edges: ['tree', 'study', 'pharma', 'case', 'settings'], label: 'Clinova Canvas', core: true },
-  { view: 'tree', edges: ['dashboard', 'pharma'], label: 'Clinova Decision Tree', core: true },
-  { view: 'study', edges: ['dashboard', 'pharma'], label: 'Clinova Knowledge Engine', core: true },
-  { view: 'pharma', edges: ['dashboard', 'study', 'case'], label: 'Clinova Reasoning Engine', core: true },
-  { view: 'case', edges: ['dashboard', 'pharma'], label: 'Clinova Risk Simulator', core: true },
+  { view: 'dashboard', edges: ['tree', 'study', 'pharma', 'case', 'settings', 'patients', 'new-case', 'pharmacotherapy', 'drug-index', 'knowledge-base'], label: 'Dashboard', core: true },
+  { view: 'tree', edges: ['dashboard', 'pharma', 'case'], label: 'Decision Tree', core: true },
+  { view: 'study', edges: ['dashboard', 'pharma', 'knowledge-base'], label: 'Knowledge Engine', core: true },
+  { view: 'pharma', edges: ['dashboard', 'study', 'case', 'drug-index'], label: 'Reasoning Engine', core: true },
+  { view: 'case', edges: ['dashboard', 'pharma', 'new-case'], label: 'Risk Simulator', core: true },
   { view: 'settings', edges: ['dashboard'], label: 'Settings', core: false },
+  { view: 'patients', edges: ['dashboard', 'new-case'], label: 'Patients', core: false },
+  { view: 'new-case', edges: ['dashboard', 'patients', 'pharmacotherapy'], label: 'New Case', core: false },
+  { view: 'pharmacotherapy', edges: ['dashboard', 'patients', 'drug-index'], label: 'Pharmacotherapy Review', core: false },
+  { view: 'drug-index', edges: ['dashboard', 'pharmacotherapy', 'pharma'], label: 'Drug Index', core: false },
+  { view: 'knowledge-base', edges: ['dashboard', 'study'], label: 'Knowledge Base', core: false },
   { view: 'admin', edges: ['dashboard'], label: 'Governance Console', roles: ['admin'], core: false },
 ];
 
 const VIEW_POSITIONS: Record<string, { x: number; y: number }> = {
-  dashboard: { x: 400, y: 50 },
-  tree: { x: 100, y: 150 },
-  study: { x: 400, y: 150 },
-  pharma: { x: 700, y: 150 },
-  case: { x: 100, y: 280 },
-  settings: { x: 400, y: 280 },
-  admin: { x: 700, y: 280 },
+  dashboard: { x: 400, y: 30 },
+  tree: { x: 100, y: 120 },
+  study: { x: 400, y: 120 },
+  pharma: { x: 700, y: 120 },
+  case: { x: 100, y: 230 },
+  settings: { x: 700, y: 230 },
+  patients: { x: 250, y: 230 },
+  'new-case': { x: 400, y: 230 },
+  pharmacotherapy: { x: 550, y: 230 },
+  'drug-index': { x: 250, y: 340 },
+  'knowledge-base': { x: 400, y: 340 },
+  admin: { x: 700, y: 340 },
   login: { x: 400, y: 400 },
 };
 

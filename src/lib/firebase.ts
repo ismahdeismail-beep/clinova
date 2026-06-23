@@ -3,13 +3,25 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
+const required = (key: string): string => {
+  const val = import.meta.env[`VITE_${key}`];
+  if (!val) {
+    if (typeof document !== 'undefined') {
+      console.warn(`Clinova: VITE_${key} not set. Using demo mode.`);
+      return `demo_${key.toLowerCase()}`;
+    }
+    throw new Error(`VITE_${key} environment variable is required`);
+  }
+  return val;
+};
+
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY ?? "AIzaSyBOXVvQm2JxW7JT9CXlFeZqC23iSrX3GoA",
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN ?? "nakurubnb-b99f2.firebaseapp.com",
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID ?? "nakurubnb-b99f2",
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET ?? "nakurubnb-b99f2.firebasestorage.app",
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID ?? "234989018252",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID ?? "1:234989018252:web:3547fa5f00d7ed6d9eefa9"
+  apiKey: required('FIREBASE_API_KEY'),
+  authDomain: required('FIREBASE_AUTH_DOMAIN'),
+  projectId: required('FIREBASE_PROJECT_ID'),
+  storageBucket: required('FIREBASE_STORAGE_BUCKET'),
+  messagingSenderId: required('FIREBASE_MESSAGING_SENDER_ID'),
+  appId: required('FIREBASE_APP_ID'),
 };
 
 export const app = initializeApp(firebaseConfig);

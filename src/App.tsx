@@ -5,6 +5,7 @@ import ClinovaLogo from './components/ClinovaLogo';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import type { ViewState } from './types';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
+import { ThemeProvider, useTheme } from './contexts/ThemeContext';
 import { EventBus } from './engine/EventBus';
 import { BrainTreeAuditor, WorkflowRepairEngine } from './core/selfHealing';
 import { RealtimeSyncManager } from './core/sync';
@@ -42,7 +43,7 @@ function LoadingFallback() {
     <div className="flex items-center justify-center h-full p-12">
       <div className="flex flex-col items-center gap-3">
         <ClinovaLogo size={40} variant="default" />
-        <div className="w-5 h-5 border-2 border-[#2563EB] border-t-transparent rounded-full animate-spin" />
+        <div className="w-5 h-5 border-2 border-[var(--primary)] border-t-transparent rounded-full animate-spin" />
       </div>
     </div>
   );
@@ -52,13 +53,13 @@ function RouteFallback({ view, onNavigate }: { view: string; onNavigate: (v: Vie
   return (
     <div className="flex items-center justify-center h-full p-8">
       <div className="text-center max-w-md">
-        <h2 className="text-xl font-bold text-[#0F172A] mb-2">Screen Not Found</h2>
-        <p className="text-sm text-[#64748B] mb-4">
-          The screen "{view}" is not available. This may be a navigation error.
+        <h2 className="text-xl font-bold text-[var(--text)] mb-2">Screen Not Found</h2>
+        <p className="text-sm text-[var(--text-muted)] mb-4">
+          The screen "{view}" is not available.
         </p>
         <button
           onClick={() => onNavigate('dashboard')}
-          className="px-5 py-2 bg-[#2563EB] text-white rounded-lg text-sm font-medium hover:bg-[#1D4ED8]"
+          className="px-5 py-2 bg-[var(--primary)] text-[var(--on-primary)] rounded-lg text-sm font-medium hover:opacity-90"
         >
           Return to Dashboard
         </button>
@@ -74,6 +75,7 @@ const auditor = new BrainTreeAuditor(eventBus);
 
 function MainApp() {
   const { user, loading } = useAuth();
+  const { theme } = useTheme();
   const [activeView, setActiveView] = useState<ViewState>('dashboard');
   const [fatalError, setFatalError] = useState<string | null>(null);
 
@@ -124,11 +126,11 @@ function MainApp() {
 
   if (loading) {
     return (
-      <div className="h-screen w-screen flex items-center justify-center bg-white">
+      <div className="h-screen w-screen flex items-center justify-center bg-[var(--bg)]">
         <div className="flex flex-col items-center gap-4">
-          <ClinovaLogo size={48} variant="default" />
-          <div className="w-5 h-5 border-2 border-[#2563EB] border-t-transparent rounded-full animate-spin" />
-          <span className="text-sm text-[#64748B] animate-pulse">Initializing Clinova...</span>
+          <ClinovaLogo size={48} variant={theme === 'dark' ? 'light' : 'default'} />
+          <div className="w-5 h-5 border-2 border-[var(--primary)] border-t-transparent rounded-full animate-spin" />
+          <span className="text-sm text-[var(--text-muted)] animate-pulse">Initializing Clinova...</span>
         </div>
       </div>
     );
@@ -143,12 +145,12 @@ function MainApp() {
   }
 
   return (
-    <div className="flex h-screen overflow-hidden bg-[#F8FAFC]">
+    <div className="flex h-screen overflow-hidden bg-[var(--bg)]">
       <Navigation activeView={activeView} onNavigate={handleNavigate} />
       <main className="flex-1 flex flex-col h-screen overflow-hidden md:ml-64">
         <TopBar activeView={activeView} />
         {fatalError && (
-          <div className="bg-[#FEF2F2] border-b border-[#FECACA] px-6 py-2 text-sm text-[#DC2626] flex items-center gap-2">
+          <div className="bg-[var(--danger-container)] border-b border-[var(--danger)]/30 px-6 py-2 text-sm text-[var(--danger)] flex items-center gap-2">
             <span className="font-medium">Recovery:</span> {fatalError}
             <button onClick={() => setFatalError(null)} className="ml-auto underline text-xs">Dismiss</button>
           </div>
@@ -166,9 +168,11 @@ function MainApp() {
 export default function App() {
   return (
     <ErrorBoundary>
-      <AuthProvider>
-        <MainApp />
-      </AuthProvider>
+      <ThemeProvider>
+        <AuthProvider>
+          <MainApp />
+        </AuthProvider>
+      </ThemeProvider>
     </ErrorBoundary>
   );
 }

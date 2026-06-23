@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import { Search, Bell, Home } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 import type { ViewState } from '../types';
 
 interface TopBarProps {
@@ -29,31 +30,32 @@ function TopBar({ activeView }: TopBarProps) {
   };
 
   return (
-    <header className="h-16 border-b border-[#E2E8F0] bg-white flex items-center justify-between px-4 md:px-6 shrink-0">
+    <header className="topbar h-16 flex items-center justify-between px-4 md:px-6 shrink-0">
       <div className="flex items-center gap-3">
         {activeView !== 'dashboard' && activeView !== 'login' && (
           <button
             onClick={handleHome}
-            className="text-[#64748B] hover:text-[#2563EB] p-1.5 rounded-lg hover:bg-[#F8FAFC] transition-colors"
+            className="p-1.5 rounded-lg text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--surface-dim)] transition-colors"
             title="Dashboard Home"
           >
             <Home size={18} />
           </button>
         )}
-        <h2 className="text-lg font-semibold text-[#0F172A]">{title}</h2>
+        <h2 className="text-lg font-semibold text-[var(--text)]">{title}</h2>
       </div>
-      <div className="flex items-center gap-4">
-        <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 border border-[#E2E8F0] rounded-lg bg-[#F8FAFC]">
-          <Search size={16} className="text-[#94A3B8]" />
+      <div className="flex items-center gap-2">
+        <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 border border-[var(--border)] rounded-lg bg-[var(--surface-dim)]">
+          <Search size={16} className="text-[var(--text-dim)]" />
           <input
             type="text"
             placeholder="Search..."
-            className="bg-transparent border-none focus:outline-none text-sm w-40 text-[#0F172A] placeholder:text-[#94A3B8]"
+            className="bg-transparent border-none focus:outline-none text-sm w-40 text-[var(--text)] placeholder:text-[var(--text-dim)]"
           />
         </div>
-        <button className="text-[#64748B] hover:text-[#2563EB] p-1.5 rounded-lg hover:bg-[#F8FAFC]">
+        <button className="p-1.5 rounded-lg text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--surface-dim)] transition-colors">
           <Bell size={18} />
         </button>
+        <ThemeToggle />
       </div>
     </header>
   );

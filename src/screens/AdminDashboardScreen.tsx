@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Database, ShieldAlert, Activity, Server, TrendingUp } from 'lucide-react';
+import { Users, Database, ShieldAlert, Activity, FileText, Server, TrendingUp } from 'lucide-react';
 
 export default function AdminDashboardScreen() {
   return (

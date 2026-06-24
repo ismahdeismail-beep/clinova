@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Bot, Send, User, BrainCircuit, Library, Pill, Activity, FlaskConical, FileText, CheckCircle2, ChevronRight, Loader2, Database, AlertCircle } from 'lucide-react';
-import { RAGRouter } from '../services/ragRouter';
+import { RagRouterService } from '../services/RagRouterService';
 
 interface Citation {
   source: string;
@@ -74,12 +74,11 @@ export default function ClinicalAssistantScreen() {
     setMessages(prev => [...prev, { id: userMsgId, role: 'user', content: userQuery }]);
 
     // Execute RAG Routing Logic
-    const intent = RAGRouter.analyzeIntent(userQuery);
-    const agent = RAGRouter.routeQuery(intent);
+    const routingResult = RagRouterService.routeQuery(userQuery);
     
     setActiveRouterState({ 
-      intent: intent.charAt(0).toUpperCase() + intent.slice(1) + ' Query', 
-      routes: [agent] 
+      intent: routingResult.intent, 
+      routes: routingResult.selectedSources 
     });
 
     const thinkingMsgId = 'think-' + Date.now();
@@ -94,8 +93,8 @@ export default function ClinicalAssistantScreen() {
 
     setMessages(prev => prev.map(m => m.id === thinkingMsgId ? { 
       ...m, 
-      content: `Routing to: ${agent}`, 
-      routedTo: [agent] 
+      content: `Routing to: ${routingResult.selectedSources.join(', ')}`, 
+      routedTo: routingResult.selectedSources 
     } : m));
 
     await new Promise(r => setTimeout(r, 1200));
@@ -103,7 +102,7 @@ export default function ClinicalAssistantScreen() {
     setMessages(prev => prev.map(m => m.id === thinkingMsgId ? { 
       ...m, 
       content: 'Retrieving evidence and validating...', 
-      routedTo: [agent] 
+      routedTo: routingResult.selectedSources 
     } : m));
 
     await new Promise(r => setTimeout(r, 1200));
@@ -142,8 +141,8 @@ export default function ClinicalAssistantScreen() {
       role: 'assistant',
       content: responseContent,
       citations,
-      confidence: 95,
-      routedTo: [agent]
+      confidence: routingResult.confidence,
+      routedTo: routingResult.selectedSources
     }]);
     
     setIsProcessing(false);

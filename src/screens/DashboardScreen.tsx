@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { 
   Search, Bot, BookOpen, Clock, Activity, Bookmark, 
   ChevronRight, BrainCircuit, FileText, Pill, Stethoscope, 
-  Sparkles, FileUp, GraduationCap, ClipboardList
+  Sparkles, FileUp, ShieldAlert, GraduationCap, ClipboardList
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 

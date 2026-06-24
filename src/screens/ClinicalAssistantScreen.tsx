@@ -56,7 +56,7 @@ export default function ClinicalAssistantScreen() {
   };
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    messagesEndRef.current?.scrollIntoView({ behavior: 'auto' });
   };
 
   useEffect(() => {
@@ -71,7 +71,13 @@ export default function ClinicalAssistantScreen() {
     setIsProcessing(true);
 
     const userMsgId = Date.now().toString();
-    setMessages(prev => [...prev, { id: userMsgId, role: 'user', content: userQuery }]);
+    const thinkingMsgId = 'think-' + Date.now();
+
+    setMessages(prev => [
+      ...prev, 
+      { id: userMsgId, role: 'user', content: userQuery },
+      { id: thinkingMsgId, role: 'assistant', content: 'Analyzing query intent...', isThinking: true }
+    ]);
 
     // Execute RAG Routing Logic
     const intent = RAGRouter.analyzeIntent(userQuery);
@@ -81,14 +87,6 @@ export default function ClinicalAssistantScreen() {
       intent: intent.charAt(0).toUpperCase() + intent.slice(1) + ' Query', 
       routes: [agent] 
     });
-
-    const thinkingMsgId = 'think-' + Date.now();
-    setMessages(prev => [...prev, { 
-      id: thinkingMsgId, 
-      role: 'assistant', 
-      content: 'Analyzing query intent...',
-      isThinking: true 
-    }]);
 
     await new Promise(r => setTimeout(r, 600));
 
@@ -136,15 +134,17 @@ export default function ClinicalAssistantScreen() {
     }
 
     // Replace thinking message with final response
-    setMessages(prev => prev.filter(m => m.id !== thinkingMsgId));
-    setMessages(prev => [...prev, {
-      id: 'res-' + Date.now(),
-      role: 'assistant',
-      content: responseContent,
-      citations,
-      confidence: 95,
-      routedTo: [agent]
-    }]);
+    setMessages(prev => {
+      const filtered = prev.filter(m => m.id !== thinkingMsgId);
+      return [...filtered, {
+        id: 'res-' + Date.now(),
+        role: 'assistant',
+        content: responseContent,
+        citations,
+        confidence: 95,
+        routedTo: [agent]
+      }];
+    });
     
     setIsProcessing(false);
     setTimeout(() => setActiveRouterState(null), 3000); // clear router state after a delay

@@ -67,12 +67,12 @@ export class RagRouterService {
 
     let intent = 'General clinical inquiry';
     
-    if (lowerQuery.includes('dose') || lowerQuery.includes('interaction') || lowerQuery.includes('side effect') || lowerQuery.includes('mg')) {
-      intent = 'Pharmacotherapy / Dosing Query';
+    if (lowerQuery.includes('dose') || lowerQuery.includes('interaction') || lowerQuery.includes('side effect') || lowerQuery.includes('mg') || lowerQuery.includes('drug')) {
+      intent = 'Drug Agent';
     } else if (lowerQuery.includes('guideline') || lowerQuery.includes('stg') || lowerQuery.includes('who') || lowerQuery.includes('first-line')) {
-      intent = 'Clinical Guideline / Protocol Query';
+      intent = 'Guideline Agent';
     } else if (lowerQuery.includes('study') || lowerQuery.includes('research') || lowerQuery.includes('evidence')) {
-      intent = 'Literature / Evidence Review';
+      intent = 'Research Agent';
     } else if (lowerQuery.includes('patient') || lowerQuery.includes('case') || lowerQuery.includes('monitor')) {
       intent = 'Patient Case Analysis / Monitoring';
     } else if (selected.length > 0) {
@@ -81,7 +81,7 @@ export class RagRouterService {
 
     return {
       selectedSources: selected,
-      confidence: Math.min(85 + (selected.length * 4) + (scoredSources[0].score * 2), 98), // Compute confidence based on matches
+      confidence: Math.min(85 + (selected.length * 4) + (scoredSources[0]?.score * 2 || 0), 98), // Compute confidence based on matches
       intent: intent
     };
   }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { 
-  User, Stethoscope, Activity, ClipboardList, Beaker, FileText, Pill, HeartPulse, CheckCircle
+  User, Stethoscope, Activity, ClipboardList, Beaker, FileText, Pill, HeartPulse, CheckCircle, BrainCircuit
 } from 'lucide-react';
 
 export default function PharmacotherapyReviewScreen() {
@@ -282,10 +282,13 @@ export default function PharmacotherapyReviewScreen() {
 
             {activeTab === 'treatment' && (
               <div className="space-y-6 animate-in fade-in slide-in-from-bottom-2 duration-300">
-                <div className="border-b border-[var(--border)] pb-4 mb-6">
+                <div className="border-b border-[var(--border)] pb-4 mb-6 flex justify-between items-center">
                   <h3 className="text-lg font-semibold text-[var(--text)] flex items-center gap-2">
                     <Pill size={20} className="text-[var(--primary)]"/> Current Management Plan
                   </h3>
+                  <button type="button" className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20">
+                    <BrainCircuit size={14} /> AI Treatment Suggestion
+                  </button>
                 </div>
 
                 <div className="space-y-6">
@@ -330,10 +333,13 @@ export default function PharmacotherapyReviewScreen() {
 
             {activeTab === 'care-plan' && (
               <div className="space-y-6 animate-in fade-in slide-in-from-bottom-2 duration-300">
-                <div className="border-b border-[var(--border)] pb-4 mb-6">
+                <div className="border-b border-[var(--border)] pb-4 mb-6 flex justify-between items-center">
                   <h3 className="text-lg font-semibold text-[var(--text)] flex items-center gap-2">
                     <FileText size={20} className="text-[var(--primary)]"/> Pharmaceutical Care Plan
                   </h3>
+                  <button type="button" className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20">
+                    <BrainCircuit size={14} /> Smart Autofill
+                  </button>
                 </div>
 
                 <div className="space-y-8">
@@ -380,10 +386,13 @@ export default function PharmacotherapyReviewScreen() {
 
             {activeTab === 'counselling' && (
               <div className="space-y-6 animate-in fade-in slide-in-from-bottom-2 duration-300">
-                <div className="border-b border-[var(--border)] pb-4 mb-6">
+                <div className="border-b border-[var(--border)] pb-4 mb-6 flex justify-between items-center">
                   <h3 className="text-lg font-semibold text-[var(--text)] flex items-center gap-2">
                     <HeartPulse size={20} className="text-[var(--primary)]"/> Patient Counselling Section
                   </h3>
+                  <button type="button" className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20">
+                    <BrainCircuit size={14} /> AI Generate Counselling
+                  </button>
                 </div>
 
                 <div className="space-y-4">

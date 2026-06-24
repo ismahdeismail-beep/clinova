@@ -35,23 +35,29 @@ export default function SettingsScreen() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-1.5">
                   <label className="text-sm font-medium text-[var(--text)]">First Name</label>
-                  <input type="text" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--surface)] text-[var(--text)] outline-none focus:ring-2 focus:ring-[var(--primary)]" defaultValue="Ismahde" />
+                  <input type="text" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--surface)] text-[var(--text)] outline-none focus:ring-2 focus:ring-[var(--primary)]" defaultValue="Sarah" />
                 </div>
                 <div className="space-y-1.5">
                   <label className="text-sm font-medium text-[var(--text)]">Last Name</label>
-                  <input type="text" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--surface)] text-[var(--text)] outline-none focus:ring-2 focus:ring-[var(--primary)]" defaultValue="Ismail" />
+                  <input type="text" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--surface)] text-[var(--text)] outline-none focus:ring-2 focus:ring-[var(--primary)]" defaultValue="K." />
                 </div>
               </div>
               <div className="space-y-1.5">
                 <label className="text-sm font-medium text-[var(--text)]">Email</label>
-                <input type="email" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--surface-dim)] text-[var(--text-muted)] outline-none" defaultValue="ismahdeismail@gmail.com" disabled />
+                <input type="email" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--surface-dim)] text-[var(--text-muted)] outline-none" defaultValue="doctor@clinova.health" disabled />
               </div>
               <div className="space-y-1.5">
                 <label className="text-sm font-medium text-[var(--text)]">Role / Designation</label>
                 <select className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--surface)] text-[var(--text)] outline-none focus:ring-2 focus:ring-[var(--primary)]">
                   <option>Clinical Pharmacist</option>
-                  <option>Medical Officer</option>
-                  <option>Pharmacy Student</option>
+                  <option>Student</option>
+                  <option>Pharmacist</option>
+                  <option>Intern</option>
+                  <option>Healthcare Professional</option>
+                  <option>Lecturer</option>
+                  <option>Researcher</option>
+                  <option>Administrator</option>
+                  <option>Super Admin</option>
                 </select>
               </div>
               <button className="px-4 py-2 bg-[var(--primary)] text-white font-medium rounded-lg hover:opacity-90 transition-opacity">

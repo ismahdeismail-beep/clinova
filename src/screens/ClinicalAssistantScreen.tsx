@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Bot, Send, User, BrainCircuit, Library, Pill, Activity, FlaskConical, FileText, CheckCircle2, ChevronRight, Loader2, Database, AlertCircle } from 'lucide-react';
-import { RagRouterService } from '../services/ragRouter';
+import { RAGRouter } from '../services/ragRouter';
 
 interface Citation {
   source: string;
@@ -74,11 +74,12 @@ export default function ClinicalAssistantScreen() {
     setMessages(prev => [...prev, { id: userMsgId, role: 'user', content: userQuery }]);
 
     // Execute RAG Routing Logic
-    const routingResult = RagRouterService.routeQuery(userQuery);
+    const intent = RAGRouter.analyzeIntent(userQuery);
+    const agent = RAGRouter.routeQuery(intent);
     
     setActiveRouterState({ 
-      intent: routingResult.intent, 
-      routes: routingResult.selectedSources 
+      intent: intent.charAt(0).toUpperCase() + intent.slice(1) + ' Query', 
+      routes: [agent] 
     });
 
     const thinkingMsgId = 'think-' + Date.now();
@@ -93,8 +94,8 @@ export default function ClinicalAssistantScreen() {
 
     setMessages(prev => prev.map(m => m.id === thinkingMsgId ? { 
       ...m, 
-      content: `Routing to: ${routingResult.selectedSources.join(', ')}`, 
-      routedTo: routingResult.selectedSources 
+      content: `Routing to: ${agent}`, 
+      routedTo: [agent] 
     } : m));
 
     await new Promise(r => setTimeout(r, 1200));

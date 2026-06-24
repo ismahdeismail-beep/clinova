@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Bot, Send, User, BrainCircuit, Library, Pill, Activity, FlaskConical, FileText, CheckCircle2, ChevronRight, Loader2, Database, AlertCircle } from 'lucide-react';
-import { RagRouterService } from '../services/RagRouterService';
+import { RagRouterService } from '../services/ragRouter';
 
 interface Citation {
   source: string;

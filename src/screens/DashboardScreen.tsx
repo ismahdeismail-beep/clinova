@@ -178,27 +178,27 @@ export default function DashboardScreen() {
               </h3>
             </div>
             <div className="p-2">
-              <a href="#" className="flex items-center gap-3 p-3 rounded-lg hover:bg-[var(--surface-dim)] transition-colors">
+              <Link to="/knowledge" className="flex items-center gap-3 p-3 rounded-lg hover:bg-[var(--surface-dim)] transition-colors">
                 <BookOpen size={16} className="text-[var(--primary)] shrink-0" />
                 <div className="min-w-0">
                   <p className="text-sm font-medium text-[var(--text)] truncate">Kenya STG 2024</p>
                   <p className="text-xs text-[var(--text-muted)] truncate">Chapter 4: Respiratory Infections</p>
                 </div>
-              </a>
-              <a href="#" className="flex items-center gap-3 p-3 rounded-lg hover:bg-[var(--surface-dim)] transition-colors">
+              </Link>
+              <Link to="/knowledge" className="flex items-center gap-3 p-3 rounded-lg hover:bg-[var(--surface-dim)] transition-colors">
                 <FileText size={16} className="text-[var(--primary)] shrink-0" />
                 <div className="min-w-0">
                   <p className="text-sm font-medium text-[var(--text)] truncate">My Lecture Notes</p>
                   <p className="text-xs text-[var(--text-muted)] truncate">Pharmacokinetics of Aminoglycosides</p>
                 </div>
-              </a>
-              <a href="#" className="flex items-center gap-3 p-3 rounded-lg hover:bg-[var(--surface-dim)] transition-colors">
+              </Link>
+              <Link to="/knowledge" className="flex items-center gap-3 p-3 rounded-lg hover:bg-[var(--surface-dim)] transition-colors">
                 <GraduationCap size={16} className="text-[var(--primary)] shrink-0" />
                 <div className="min-w-0">
                   <p className="text-sm font-medium text-[var(--text)] truncate">Generated MCQ Set</p>
                   <p className="text-xs text-[var(--text-muted)] truncate">Cardiology Case Studies</p>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="p-4 border-t border-[var(--border)] bg-[var(--surface-dim)]">
               <Link to="/knowledge" className="text-xs font-semibold text-[var(--primary)] w-full text-center block hover:underline">

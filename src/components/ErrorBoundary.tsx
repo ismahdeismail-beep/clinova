@@ -42,7 +42,7 @@ export class ErrorBoundary extends Component<Props, State> {
               <RefreshCw size={18} />
               Reload Application
             </button>
-            {process.env.NODE_ENV !== 'production' && this.state.error && (
+            {import.meta.env.MODE !== 'production' && this.state.error && (
               <div className="mt-6 text-left bg-[var(--bg)] p-4 rounded-lg overflow-x-auto text-xs font-mono text-[var(--danger)] border border-[var(--danger)]/20">
                 {this.state.error.toString()}
               </div>

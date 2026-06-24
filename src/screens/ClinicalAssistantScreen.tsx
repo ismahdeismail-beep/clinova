@@ -103,7 +103,7 @@ export default function ClinicalAssistantScreen() {
     setMessages(prev => prev.map(m => m.id === thinkingMsgId ? { 
       ...m, 
       content: 'Retrieving evidence and validating...', 
-      routedTo: routingResult.selectedSources 
+      routedTo: [agent] 
     } : m));
 
     await new Promise(r => setTimeout(r, 1200));
@@ -142,8 +142,8 @@ export default function ClinicalAssistantScreen() {
       role: 'assistant',
       content: responseContent,
       citations,
-      confidence: routingResult.confidence,
-      routedTo: routingResult.selectedSources
+      confidence: 95,
+      routedTo: [agent]
     }]);
     
     setIsProcessing(false);

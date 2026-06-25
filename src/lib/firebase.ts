@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { initializeFirestore, persistentLocalCache, persistentMultipleTabManager } from 'firebase/firestore';
+import { initializeFirestore, persistentLocalCache, persistentMultipleTabManager, setLogLevel } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 import { getStorage } from 'firebase/storage';
 import { env } from './env';
@@ -15,10 +15,14 @@ const firebaseConfig = {
 
 export const app = initializeApp(firebaseConfig);
 
+// Suppress Firestore connection warnings when offline or using dummy credentials
+setLogLevel('error');
+
 export const db = initializeFirestore(app, {
   localCache: persistentLocalCache({
     tabManager: persistentMultipleTabManager()
-  })
+  }),
+  experimentalAutoDetectLongPolling: true
 });
 
 export const auth = getAuth(app);

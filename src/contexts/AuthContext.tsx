@@ -1,11 +1,49 @@
-import { createContext, useContext, ReactNode } from 'react';
+import { createContext, useContext, ReactNode, useState } from 'react';
 
-const AuthContext = createContext<any>(null);
+type UserRole = 'admin' | 'user';
+
+interface UserData {
+  id: string;
+  name: string;
+  role: UserRole;
+}
+
+interface AuthContextType {
+  userData: UserData | null;
+  logout: () => void;
+  loginAs: (role: UserRole) => void;
+}
+
+const AuthContext = createContext<AuthContextType | null>(null);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
-  return <AuthContext.Provider value={{ userData: null, logout: () => {} }}>{children}</AuthContext.Provider>;
+  const [userData, setUserData] = useState<UserData | null>({
+    id: '1',
+    name: 'Dr. Sarah K.',
+    role: 'admin', // Default to admin for now, or could be 'user'
+  });
+
+  const loginAs = (role: UserRole) => {
+    setUserData({
+      id: '1',
+      name: role === 'admin' ? 'Dr. Sarah K.' : 'Nurse John D.',
+      role,
+    });
+  };
+
+  const logout = () => setUserData(null);
+
+  return (
+    <AuthContext.Provider value={{ userData, logout, loginAs }}>
+      {children}
+    </AuthContext.Provider>
+  );
 }
 
 export function useAuth() {
-  return useContext(AuthContext) || { userData: null, logout: () => {} };
+  const context = useContext(AuthContext);
+  if (!context) {
+    return { userData: null, logout: () => {}, loginAs: () => {} };
+  }
+  return context;
 }

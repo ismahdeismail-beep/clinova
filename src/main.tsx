@@ -4,6 +4,7 @@ import './lib/env.ts'; // Validate environment variables
 import { registerSW } from 'virtual:pwa-register';
 import App from './App.tsx';
 import { ErrorBoundary } from './components/ErrorBoundary.tsx';
+import { AuthProvider } from './contexts/AuthContext.tsx';
 import './index.css';
 
 const updateSW = registerSW({
@@ -20,7 +21,9 @@ const updateSW = registerSW({
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ErrorBoundary>
-      <App />
+      <AuthProvider>
+        <App />
+      </AuthProvider>
     </ErrorBoundary>
   </React.StrictMode>,
 )

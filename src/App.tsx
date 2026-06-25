@@ -16,8 +16,13 @@ import ReportsScreen from './screens/ReportsScreen';
 import NotificationsScreen from './screens/NotificationsScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import AdminDashboardScreen from './screens/AdminDashboardScreen';
+import { ProtectedRoute } from './components/ProtectedRoute';
+import { useAuth } from './contexts/AuthContext';
+import { InstallPWA } from './components/InstallPWA';
 
 function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
+  const { userData } = useAuth();
+  
   return (
     <header className="sticky top-0 z-30 bg-[var(--surface)] border-b border-[var(--border)] h-16 flex items-center justify-between px-4 lg:px-8">
       <div className="flex items-center gap-4">
@@ -60,11 +65,11 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
         
         <div className="flex items-center gap-3 pl-1 cursor-pointer hover:opacity-80 transition-opacity">
           <div className="hidden sm:block text-right">
-            <p className="text-sm font-semibold text-[var(--text)] leading-none">Dr. Sarah K.</p>
-            <p className="text-[10px] text-[var(--text-muted)] font-medium mt-1">Clinical Pharmacist</p>
+            <p className="text-sm font-semibold text-[var(--text)] leading-none">{userData?.name || 'Guest'}</p>
+            <p className="text-[10px] text-[var(--text-muted)] font-medium mt-1 capitalize">{userData?.role || 'user'}</p>
           </div>
           <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-[var(--primary)] to-[var(--primary-hover)] text-white flex items-center justify-center font-bold text-sm shadow-sm border-2 border-white">
-            SK
+            {userData?.name ? userData.name.split(' ').map((n: string) => n[0]).join('').substring(0, 2) : 'G'}
           </div>
         </div>
       </div>
@@ -74,6 +79,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
 
 function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolean) => void }) {
   const location = useLocation();
+  const { userData } = useAuth();
 
   const links = [
     { to: '/', label: 'Dashboard', icon: Home },
@@ -84,7 +90,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
     { to: '/assistant', label: 'Clinical Assistant', icon: Bot },
     { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
     { to: '/reports', label: 'Reports', icon: BarChart3 },
-    { to: '/admin', label: 'Admin Console', icon: ShieldCheck },
+    ...(userData?.role === 'admin' ? [{ to: '/admin', label: 'Admin Console', icon: ShieldCheck }] : []),
     { to: '/notifications', label: 'Notifications', icon: Bell },
     { to: '/settings', label: 'Settings', icon: Settings },
   ];
@@ -152,10 +158,15 @@ export default function App() {
               <Route path="/assistant" element={<ClinicalAssistantScreen />} />
               <Route path="/knowledge" element={<KnowledgeBaseScreen />} />
               <Route path="/reports" element={<ReportsScreen />} />
-              <Route path="/admin" element={<AdminDashboardScreen />} />
+              <Route path="/admin" element={
+                <ProtectedRoute requiredRole="admin">
+                  <AdminDashboardScreen />
+                </ProtectedRoute>
+              } />
               <Route path="/notifications" element={<NotificationsScreen />} />
               <Route path="/settings" element={<SettingsScreen />} />
             </Routes>
+            <InstallPWA />
           </main>
         </div>
       </div>

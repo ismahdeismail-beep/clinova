@@ -2,14 +2,12 @@
  * Media Service for handling file uploads using Cloudinary.
  */
 
+import { env } from '../lib/env';
+
 export const MediaService = {
   async uploadImage(file: File): Promise<string> {
-    const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
-    const uploadPreset = import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET;
-
-    if (!cloudName || !uploadPreset) {
-      throw new Error('Cloudinary environment variables are missing. Please configure VITE_CLOUDINARY_CLOUD_NAME and VITE_CLOUDINARY_UPLOAD_PRESET.');
-    }
+    const cloudName = env.VITE_CLOUDINARY_CLOUD_NAME;
+    const uploadPreset = env.VITE_CLOUDINARY_UPLOAD_PRESET;
 
     const formData = new FormData();
     formData.append('file', file);

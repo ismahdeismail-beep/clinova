@@ -19,6 +19,7 @@ import AdminDashboardScreen from './screens/AdminDashboardScreen';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { useAuth } from './contexts/AuthContext';
 import { InstallPWA } from './components/InstallPWA';
+import { OfflineStatus } from './components/OfflineStatus';
 
 function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
   const { userData } = useAuth();
@@ -145,6 +146,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] flex flex-col">
+        <OfflineStatus />
         <TopNavigation onMenuClick={() => setIsSidebarOpen(!isSidebarOpen)} />
         <div className="flex flex-1 overflow-hidden relative">
           <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />

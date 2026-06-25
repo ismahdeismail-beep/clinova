@@ -5,7 +5,11 @@ import { registerSW } from 'virtual:pwa-register';
 import App from './App.tsx';
 import { ErrorBoundary } from './components/ErrorBoundary.tsx';
 import { AuthProvider } from './contexts/AuthContext.tsx';
+import { syncManager } from './lib/syncManager.ts';
 import './index.css';
+
+// Initialize sync manager
+syncManager.sync();
 
 const updateSW = registerSW({
   onNeedRefresh() {

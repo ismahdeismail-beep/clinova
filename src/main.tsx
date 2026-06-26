@@ -1,30 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './lib/env.ts'; // Validate environment variables
-import { registerSW } from 'virtual:pwa-register';
-import App from './App.tsx';
-import { ErrorBoundary } from './components/ErrorBoundary.tsx';
-import { AuthProvider } from './contexts/AuthContext.tsx';
-import { syncManager } from './lib/syncManager.ts';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./lib/env.ts"; // Validate environment variables
+import { registerSW } from "virtual:pwa-register";
+import App from "./App.tsx";
+import { ErrorBoundary } from "./components/ErrorBoundary.tsx";
+import { AuthProvider } from "./contexts/AuthContext.tsx";
+import { syncManager } from "./lib/syncManager.ts";
+import "./index.css";
 
-import { NotificationProvider } from './contexts/NotificationContext.tsx';
+import { NotificationProvider } from "./contexts/NotificationContext";
 
 // Initialize sync manager
 syncManager.sync();
 
 const updateSW = registerSW({
   onNeedRefresh() {
-    if (confirm('New content available. Reload?')) {
+    if (confirm("New content available. Reload?")) {
       updateSW(true);
     }
   },
   onOfflineReady() {
-    console.log('App ready to work offline');
+    console.log("App ready to work offline");
   },
 });
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ErrorBoundary>
       <AuthProvider>
@@ -34,4 +34,4 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       </AuthProvider>
     </ErrorBoundary>
   </React.StrictMode>,
-)
+);

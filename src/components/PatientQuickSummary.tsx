@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Activity, Thermometer, HeartPulse, Wind, AlertTriangle, AlertCircle, X, ShieldAlert, LineChart as LineChartIcon, BrainCircuit, BellPlus, CheckCircle, Download } from 'lucide-react';
+import { Activity, Thermometer, HeartPulse, Wind, AlertTriangle, AlertCircle, X, ShieldAlert, LineChart as LineChartIcon, BrainCircuit, BellPlus, CheckCircle, Download, FlaskConical, ArrowUp, ArrowDown, ChevronsUp, ChevronsDown, Loader2 } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { useNotifications } from '../contexts/NotificationContext';
 import { jsPDF } from 'jspdf';
@@ -25,6 +25,16 @@ export interface VitalHistoryItem {
   spo2: number;
 }
 
+export interface LabResult {
+  id: string;
+  testName: string;
+  value: string | number;
+  unit: string;
+  referenceRange: string;
+  status: 'normal' | 'high' | 'low' | 'critical-high' | 'critical-low';
+  date: string;
+}
+
 export interface Patient {
   id: string;
   name: string;
@@ -36,6 +46,7 @@ export interface Patient {
   vitals: Vitals;
   vitalsHistory?: VitalHistoryItem[];
   alerts: Alert[];
+  labs?: LabResult[];
 }
 
 interface PatientQuickSummaryProps {
@@ -80,6 +91,10 @@ export function PatientQuickSummary({ patient, onClose }: PatientQuickSummaryPro
   const [delayMinutes, setDelayMinutes] = useState('15');
   const [reminderScheduled, setReminderScheduled] = useState(false);
 
+  // Labs State
+  const [labs, setLabs] = useState<LabResult[] | null>(patient.labs || null);
+  const [isLoadingLabs, setIsLoadingLabs] = useState(!patient.labs);
+
   useEffect(() => {
     setIsAnalyzing(true);
     setPriority(null);
@@ -89,6 +104,28 @@ export function PatientQuickSummary({ patient, onClose }: PatientQuickSummaryPro
     }, 800); // Simulate AI analysis
     return () => clearTimeout(timer);
   }, [patient.vitals]);
+
+  useEffect(() => {
+    if (patient.labs) {
+      setLabs(patient.labs);
+      setIsLoadingLabs(false);
+      return;
+    }
+    
+    setIsLoadingLabs(true);
+    // Simulate fetching recent lab results
+    const fetchTimer = setTimeout(() => {
+      const mockLabs: LabResult[] = [
+        { id: 'l1', testName: 'Hemoglobin', value: patient.sex === 'M' ? 12.1 : 10.5, unit: 'g/dL', referenceRange: patient.sex === 'M' ? '13.8-17.2' : '12.1-15.1', status: 'low', date: '2h ago' },
+        { id: 'l2', testName: 'WBC Count', value: 14.5, unit: '10^9/L', referenceRange: '4.5-11.0', status: 'high', date: '2h ago' },
+        { id: 'l3', testName: 'Potassium', value: 3.2, unit: 'mmol/L', referenceRange: '3.5-5.1', status: 'critical-low', date: '2h ago' },
+        { id: 'l4', testName: 'Creatinine', value: 0.9, unit: 'mg/dL', referenceRange: '0.7-1.3', status: 'normal', date: '2h ago' },
+      ];
+      setLabs(mockLabs);
+      setIsLoadingLabs(false);
+    }, 1200);
+    return () => clearTimeout(fetchTimer);
+  }, [patient.id, patient.labs, patient.sex]);
 
   const handleScheduleReminder = (e: React.FormEvent) => {
     e.preventDefault();
@@ -139,15 +176,31 @@ export function PatientQuickSummary({ patient, onClose }: PatientQuickSummaryPro
     doc.text(`Respiratory Rate: ${patient.vitals.rr} bpm`, 20, 150);
     doc.text(`SpO2: ${patient.vitals.spo2}%`, 20, 160);
     
-    // Alerts
+    let yOffset = 175;
     if (patient.alerts.length > 0) {
       doc.setFontSize(16);
-      doc.text('Active Alerts', 20, 175);
+      doc.text('Active Alerts', 20, yOffset);
+      yOffset += 10;
       
       doc.setFontSize(12);
-      let yOffset = 185;
       patient.alerts.forEach((alert) => {
         const text = `[${alert.type.toUpperCase()}] ${alert.message}`;
+        const splitText = doc.splitTextToSize(text, 170);
+        doc.text(splitText, 20, yOffset);
+        yOffset += splitText.length * 7;
+      });
+      yOffset += 5;
+    }
+
+    // Lab Results
+    if (labs && labs.length > 0) {
+      doc.setFontSize(16);
+      doc.text('Laboratory Results', 20, yOffset);
+      yOffset += 10;
+      
+      doc.setFontSize(12);
+      labs.forEach((lab) => {
+        const text = `${lab.testName}: ${lab.value} ${lab.unit} (Ref: ${lab.referenceRange}) - [${lab.status.toUpperCase()}]`;
         const splitText = doc.splitTextToSize(text, 170);
         doc.text(splitText, 20, yOffset);
         yOffset += splitText.length * 7;
@@ -330,6 +383,54 @@ export function PatientQuickSummary({ patient, onClose }: PatientQuickSummaryPro
                 {patient.vitals.spo2}% <span className="text-sm font-medium text-[var(--text-muted)]">on room air</span>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Laboratory Results Section */}
+        <div className="space-y-3">
+          <h3 className="text-sm font-semibold text-[var(--text)] uppercase tracking-wider flex items-center gap-2">
+            <FlaskConical size={16} className="text-[var(--primary)]" />
+            Recent Laboratory Results
+          </h3>
+          
+          <div className="bg-[var(--surface-dim)] rounded-xl border border-[var(--border)] overflow-hidden">
+            {isLoadingLabs ? (
+              <div className="p-8 flex flex-col items-center justify-center text-[var(--text-muted)] gap-3">
+                <Loader2 size={24} className="animate-spin text-[var(--primary)]" />
+                <span className="text-sm font-medium">Fetching lab results...</span>
+              </div>
+            ) : labs && labs.length > 0 ? (
+              <div className="divide-y divide-[var(--border)]">
+                {labs.map(lab => (
+                  <div key={lab.id} className="p-3 flex items-center justify-between">
+                    <div>
+                      <p className="text-sm font-bold text-[var(--text)] flex items-center gap-2">
+                        {lab.testName}
+                        {lab.status === 'high' && <ArrowUp size={14} className="text-amber-500" />}
+                        {lab.status === 'low' && <ArrowDown size={14} className="text-amber-500" />}
+                        {lab.status === 'critical-high' && <ChevronsUp size={14} className="text-red-500" />}
+                        {lab.status === 'critical-low' && <ChevronsDown size={14} className="text-red-500" />}
+                      </p>
+                      <p className="text-xs text-[var(--text-muted)] mt-0.5">Ref: {lab.referenceRange} {lab.unit}</p>
+                    </div>
+                    <div className="text-right">
+                      <p className={`text-base font-bold ${
+                        lab.status.includes('critical') ? 'text-red-600' :
+                        lab.status !== 'normal' ? 'text-amber-600' :
+                        'text-[var(--text)]'
+                      }`}>
+                        {lab.value} <span className="text-xs font-medium text-[var(--text-muted)] ml-0.5">{lab.unit}</span>
+                      </p>
+                      <p className="text-[10px] text-[var(--text-muted)] mt-0.5">{lab.date}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="p-6 text-center text-[var(--text-muted)] text-sm">
+                No recent laboratory results available.
+              </div>
+            )}
           </div>
         </div>
 

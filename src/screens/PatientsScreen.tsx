@@ -117,12 +117,59 @@ const MOCK_PATIENTS: Patient[] = [
 ];
 
 export default function PatientsScreen() {
+  const [patients, setPatients] = useState<Patient[]>(MOCK_PATIENTS);
   const [selectedPatientId, setSelectedPatientId] = useState<string | null>(
     null,
   );
 
   const selectedPatient =
-    MOCK_PATIENTS.find((p) => p.id === selectedPatientId) || null;
+    patients.find((p) => p.id === selectedPatientId) || null;
+
+  const handleUpdateVitals = (
+    patientId: string,
+    updatedVitals: Patient["vitals"],
+  ) => {
+    setPatients((prev) =>
+      prev.map((p) => {
+        if (p.id === patientId) {
+          const now = new Date();
+          const timeString = `${now.getHours().toString().padStart(2, "0")}:${now.getMinutes().toString().padStart(2, "0")}`;
+
+          return {
+            ...p,
+            vitals: updatedVitals,
+            vitalsHistory: [
+              ...(p.vitalsHistory || []),
+              {
+                time: timeString,
+                hr: updatedVitals.hr,
+                temp: updatedVitals.temp,
+                spo2: updatedVitals.spo2,
+              },
+            ],
+          };
+        }
+        return p;
+      }),
+    );
+  };
+
+  const handleAddNote = (patientId: string, noteText: string) => {
+    setPatients((prev) =>
+      prev.map((p) => {
+        if (p.id === patientId) {
+          const now = new Date();
+          const timeString = `${now.getHours().toString().padStart(2, "0")}:${now.getMinutes().toString().padStart(2, "0")}`;
+
+          return {
+            ...p,
+            notes: [...(p.notes || []), { time: timeString, text: noteText }],
+          };
+        }
+        return p;
+      }),
+    );
+  };
 
   return (
     <div className="p-6 max-w-[1400px] mx-auto space-y-6">
@@ -174,7 +221,7 @@ export default function PatientsScreen() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[var(--border)] bg-[var(--surface)]">
-                  {MOCK_PATIENTS.map((patient) => (
+                  {patients.map((patient) => (
                     <tr
                       key={patient.id}
                       className={`transition-colors cursor-pointer ${
@@ -220,6 +267,8 @@ export default function PatientsScreen() {
               <PatientQuickSummary
                 patient={selectedPatient}
                 onClose={() => setSelectedPatientId(null)}
+                onUpdateVitals={handleUpdateVitals}
+                onAddNote={handleAddNote}
               />
             </div>
           </div>

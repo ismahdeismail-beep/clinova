@@ -1,11 +1,79 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
-  User, Stethoscope, Activity, ClipboardList, Beaker, FileText, Pill, HeartPulse, CheckCircle, BrainCircuit
+  User, Stethoscope, Activity, ClipboardList, Beaker, FileText, Pill, HeartPulse, CheckCircle, BrainCircuit, AlertTriangle
 } from 'lucide-react';
+
+// Mock interaction database
+const KNOWN_INTERACTIONS: Record<string, string[]> = {
+  'warfarin': ['amiodarone', 'aspirin', 'ibuprofen'],
+  'amiodarone': ['warfarin', 'simvastatin'],
+  'aspirin': ['warfarin', 'ibuprofen'],
+  'ibuprofen': ['warfarin', 'aspirin'],
+  'simvastatin': ['amiodarone', 'amlodipine'],
+  'amlodipine': ['simvastatin'],
+  'ceftriaxone': ['calcium'],
+};
+
+const INTERACTION_MESSAGES: Record<string, string> = {
+  'warfarin-amiodarone': 'High Risk: Amiodarone increases Warfarin toxicity and bleeding risk.',
+  'warfarin-aspirin': 'High Risk: Increased risk of bleeding when Warfarin is used with Aspirin.',
+  'warfarin-ibuprofen': 'High Risk: Increased risk of bleeding when Warfarin is used with NSAIDs.',
+  'aspirin-ibuprofen': 'Moderate Risk: Increased risk of gastrointestinal toxicity.',
+  'simvastatin-amiodarone': 'High Risk: Increased risk of myopathy/rhabdomyolysis.',
+  'simvastatin-amlodipine': 'Moderate Risk: Increased risk of myopathy/rhabdomyolysis. Dose limit recommended.',
+  'ceftriaxone-calcium': 'Severe Risk: Potential for precipitation in lungs and kidneys (especially in neonates).'
+};
 
 export default function PharmacotherapyReviewScreen() {
   const [activeTab, setActiveTab] = useState<string>('admission');
   const formRef = useRef<HTMLFormElement>(null);
+  const [interactions, setInteractions] = useState<{ id: string, message: string }[]>([]);
+
+  const checkInteractions = (tabData: Record<string, string>) => {
+    // Extract all mentioned drugs from history and current treatment
+    const historyMeds = (tabData['history_meds'] || '').toLowerCase();
+    const treatmentDrugs: string[] = [];
+    
+    for (let i = 1; i <= 5; i++) {
+      const drug = (tabData[`treatment_drug_${i}`] || '').toLowerCase().trim();
+      if (drug) treatmentDrugs.push(drug);
+    }
+
+    const allMentionedDrugs = [...treatmentDrugs];
+    
+    // Add history meds if they match known drugs
+    Object.keys(KNOWN_INTERACTIONS).forEach(drug => {
+      if (historyMeds.includes(drug) && !allMentionedDrugs.includes(drug)) {
+        allMentionedDrugs.push(drug);
+      }
+    });
+
+    const foundInteractions: { id: string, message: string }[] = [];
+    
+    // Check all combinations
+    for (let i = 0; i < allMentionedDrugs.length; i++) {
+      for (let j = i + 1; j < allMentionedDrugs.length; j++) {
+        const drugA = allMentionedDrugs[i];
+        const drugB = allMentionedDrugs[j];
+        
+        // Find interactions where drugA is the key and drugB is in the list, or vice versa
+        let key = null;
+        if (KNOWN_INTERACTIONS[drugA]?.includes(drugB)) {
+          key = `${drugA}-${drugB}`;
+          if (!INTERACTION_MESSAGES[key]) key = `${drugB}-${drugA}`;
+        } else if (KNOWN_INTERACTIONS[drugB]?.includes(drugA)) {
+          key = `${drugB}-${drugA}`;
+          if (!INTERACTION_MESSAGES[key]) key = `${drugA}-${drugB}`;
+        }
+
+        if (key && INTERACTION_MESSAGES[key]) {
+          foundInteractions.push({ id: key, message: INTERACTION_MESSAGES[key] });
+        }
+      }
+    }
+
+    setInteractions(foundInteractions);
+  };
 
   // Restore form data when tab changes
   useEffect(() => {
@@ -45,10 +113,30 @@ export default function PharmacotherapyReviewScreen() {
       const parsed = savedData ? JSON.parse(savedData) : {};
       parsed[activeTab] = tabData;
       localStorage.setItem('clinova_pharma_review_form', JSON.stringify(parsed));
+      
+      // Merge all tabs for interaction checking
+      const allData: Record<string, string> = {};
+      Object.values(parsed).forEach(tab => {
+        Object.assign(allData, tab);
+      });
+      checkInteractions(allData);
     } catch (e) {
       console.error('Failed to save form data', e);
     }
   };
+
+  // Run interaction check on mount and tab change
+  useEffect(() => {
+    const savedData = localStorage.getItem('clinova_pharma_review_form');
+    if (savedData) {
+      try {
+        const parsed = JSON.parse(savedData);
+        const allData: Record<string, string> = {};
+        Object.values(parsed).forEach(tab => Object.assign(allData, tab));
+        checkInteractions(allData);
+      } catch (e) {}
+    }
+  }, []);
 
   const tabs = [
     { id: 'admission', label: 'Admission', icon: User },
@@ -97,7 +185,26 @@ export default function PharmacotherapyReviewScreen() {
         </div>
 
         {/* Form Content */}
-        <div className="flex-1 w-full bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-sm overflow-hidden">
+        <div className="flex-1 w-full bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-sm overflow-hidden flex flex-col">
+          
+          {interactions.length > 0 && (
+            <div className="bg-red-500/10 border-b border-red-500/20 p-4">
+              <div className="flex items-start gap-3">
+                <AlertTriangle className="text-red-600 shrink-0 mt-0.5" size={20} />
+                <div className="space-y-2 flex-1">
+                  <h4 className="font-semibold text-red-700">Drug-Drug Interactions Detected</h4>
+                  <ul className="space-y-1">
+                    {interactions.map(interaction => (
+                      <li key={interaction.id} className="text-sm text-red-600 font-medium list-disc ml-4">
+                        {interaction.message}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          )}
+
           <form ref={formRef} onChange={handleFormChange} className="p-6 sm:p-8 space-y-8" onSubmit={(e) => e.preventDefault()}>
             
             {activeTab === 'admission' && (
@@ -187,7 +294,7 @@ export default function PharmacotherapyReviewScreen() {
                       <span>Medication History</span>
                       <span className="text-xs text-[var(--text-muted)] font-normal">Limit to drugs used BEFORE current admission</span>
                     </label>
-                    <textarea rows={3} className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Include OTC, herbals, prescribed meds..."></textarea>
+                    <textarea name="history_meds" rows={3} className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Include OTC, herbals, prescribed meds..."></textarea>
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -360,12 +467,12 @@ export default function PharmacotherapyReviewScreen() {
                         <tbody className="divide-y divide-[var(--border)] bg-[var(--surface)]">
                           {[1, 2, 3, 4, 5].map((row) => (
                             <tr key={row}>
-                              <td className="p-1.5"><input type="text" className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none" /></td>
-                              <td className="p-1.5"><input type="text" className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none" /></td>
-                              <td className="p-1.5"><input type="text" className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none" /></td>
-                              <td className="p-1.5"><input type="text" className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none" /></td>
-                              <td className="p-1.5"><input type="date" className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none text-xs" /></td>
-                              <td className="p-1.5"><input type="text" className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none" /></td>
+                              <td className="p-1.5"><input type="text" name={`treatment_drug_${row}`} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none" /></td>
+                              <td className="p-1.5"><input type="text" name={`treatment_form_${row}`} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none" /></td>
+                              <td className="p-1.5"><input type="text" name={`treatment_dose_${row}`} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none" /></td>
+                              <td className="p-1.5"><input type="text" name={`treatment_freq_${row}`} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none" /></td>
+                              <td className="p-1.5"><input type="date" name={`treatment_start_${row}`} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none text-xs" /></td>
+                              <td className="p-1.5"><input type="text" name={`treatment_dur_${row}`} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none" /></td>
                             </tr>
                           ))}
                         </tbody>

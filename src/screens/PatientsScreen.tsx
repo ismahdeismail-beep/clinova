@@ -12,6 +12,11 @@ const MOCK_PATIENTS: Patient[] = [
     ward: 'Medical Ward A',
     lastAdmission: 'Oct 12, 2023',
     vitals: { bp: '140/90', hr: 88, temp: 37.2, rr: 18, spo2: 96 },
+    vitalsHistory: [
+      { time: '08:00', hr: 82, temp: 36.8, spo2: 98 },
+      { time: '12:00', hr: 85, temp: 37.0, spo2: 97 },
+      { time: '16:00', hr: 88, temp: 37.2, spo2: 96 },
+    ],
     alerts: [
       { id: 'a1', type: 'warning', message: 'Elevated blood pressure observed in last 2 readings.' }
     ]
@@ -25,6 +30,11 @@ const MOCK_PATIENTS: Patient[] = [
     ward: 'Maternity Wing',
     lastAdmission: 'Oct 14, 2023',
     vitals: { bp: '120/80', hr: 76, temp: 36.8, rr: 16, spo2: 99 },
+    vitalsHistory: [
+      { time: '08:00', hr: 72, temp: 36.5, spo2: 99 },
+      { time: '12:00', hr: 75, temp: 36.7, spo2: 99 },
+      { time: '16:00', hr: 76, temp: 36.8, spo2: 99 },
+    ],
     alerts: []
   },
   {
@@ -36,6 +46,12 @@ const MOCK_PATIENTS: Patient[] = [
     ward: 'ICU',
     lastAdmission: 'Oct 15, 2023',
     vitals: { bp: '90/60', hr: 110, temp: 38.5, rr: 24, spo2: 88 },
+    vitalsHistory: [
+      { time: '08:00', hr: 95, temp: 37.5, spo2: 92 },
+      { time: '10:00', hr: 102, temp: 38.0, spo2: 90 },
+      { time: '12:00', hr: 108, temp: 38.2, spo2: 89 },
+      { time: '14:00', hr: 110, temp: 38.5, spo2: 88 },
+    ],
     alerts: [
       { id: 'a2', type: 'critical', message: 'Desaturation alert: SpO2 dropped below 90%.' },
       { id: 'a3', type: 'critical', message: 'Tachycardia and fever present. Suspected sepsis.' }
@@ -50,6 +66,10 @@ const MOCK_PATIENTS: Patient[] = [
     ward: 'Surgical Ward',
     lastAdmission: 'Oct 16, 2023',
     vitals: { bp: '115/75', hr: 82, temp: 37.0, rr: 14, spo2: 98 },
+    vitalsHistory: [
+      { time: '08:00', hr: 80, temp: 36.9, spo2: 98 },
+      { time: '12:00', hr: 82, temp: 37.0, spo2: 98 },
+    ],
     alerts: [
       { id: 'a4', type: 'info', message: 'Scheduled for dressing change at 14:00.' }
     ]
@@ -63,6 +83,10 @@ const MOCK_PATIENTS: Patient[] = [
     ward: 'Medical Ward B',
     lastAdmission: 'Oct 10, 2023',
     vitals: { bp: '135/85', hr: 70, temp: 36.5, rr: 16, spo2: 95 },
+    vitalsHistory: [
+      { time: '08:00', hr: 72, temp: 36.4, spo2: 96 },
+      { time: '12:00', hr: 70, temp: 36.5, spo2: 95 },
+    ],
     alerts: [
       { id: 'a5', type: 'warning', message: 'Pending fasting blood sugar results.' }
     ]

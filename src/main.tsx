@@ -8,6 +8,8 @@ import { AuthProvider } from './contexts/AuthContext.tsx';
 import { syncManager } from './lib/syncManager.ts';
 import './index.css';
 
+import { NotificationProvider } from './contexts/NotificationContext.tsx';
+
 // Initialize sync manager
 syncManager.sync();
 
@@ -26,7 +28,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ErrorBoundary>
       <AuthProvider>
-        <App />
+        <NotificationProvider>
+          <App />
+        </NotificationProvider>
       </AuthProvider>
     </ErrorBoundary>
   </React.StrictMode>,

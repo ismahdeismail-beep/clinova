@@ -23,8 +23,11 @@ import { OfflineStatus } from './components/OfflineStatus';
 import { CommandPalette } from './components/CommandPalette';
 import LoginScreen from './screens/LoginScreen';
 
+import { useNotifications } from './contexts/NotificationContext';
+
 function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
   const { userData } = useAuth();
+  const { unreadCount } = useNotifications();
   
   return (
     <header className="sticky top-0 z-30 bg-[var(--surface)] border-b border-[var(--border)] h-16 flex items-center justify-between px-4 lg:px-8">
@@ -60,10 +63,14 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
       </div>
 
       <div className="flex items-center gap-2 sm:gap-4 shrink-0">
-        <button className="p-2 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary-container)] rounded-full transition-colors relative">
+        <Link to="/notifications" className="p-2 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary-container)] rounded-full transition-colors relative">
           <Bell size={20} />
-          <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-red-500 rounded-full border border-[var(--surface)]"></span>
-        </button>
+          {unreadCount > 0 && (
+            <span className="absolute top-1 right-1 min-w-[16px] h-4 flex items-center justify-center bg-red-500 rounded-full border border-[var(--surface)] text-[10px] font-bold text-white px-0.5">
+              {unreadCount}
+            </span>
+          )}
+        </Link>
         <button className="p-2 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary-container)] rounded-full transition-colors hidden sm:block">
           <MessageSquare size={20} />
         </button>

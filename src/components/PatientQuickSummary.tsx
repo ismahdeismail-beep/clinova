@@ -49,10 +49,13 @@ export interface Alert {
 }
 
 export interface VitalHistoryItem {
-  time: string;
+  time: string; // Keep as string, could be a date string now like "Mon" or "Jun 1"
+  date?: string; // To differentiate for weekly/monthly
   hr: number;
   temp: number;
   spo2: number;
+  bpSystolic?: number;
+  bpDiastolic?: number;
 }
 
 export interface LabResult {
@@ -159,7 +162,10 @@ export function PatientQuickSummary({
   onUpdateVitals,
   onAddNote,
 }: PatientQuickSummaryProps) {
-  const [activeChart, setActiveChart] = useState<"hr" | "temp" | "spo2">("hr");
+  const [activeChart, setActiveChart] = useState<"bp" | "hr" | "temp" | "spo2">(
+    "bp",
+  );
+  const [trendView, setTrendView] = useState<"weekly" | "monthly">("weekly");
   const [priority, setPriority] = useState<{
     level: string;
     color: string;
@@ -772,10 +778,30 @@ export function PatientQuickSummary({
                 <LineChartIcon size={16} className="text-[var(--primary)]" />
                 Vitals Trend
               </div>
+              <div className="flex bg-[var(--surface-dim)] rounded-md border border-[var(--border)] overflow-hidden">
+                <button
+                  onClick={() => setTrendView("weekly")}
+                  className={`px-2 py-0.5 text-[10px] font-medium transition-colors ${trendView === "weekly" ? "bg-[var(--primary)] text-white" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
+                >
+                  Weekly
+                </button>
+                <button
+                  onClick={() => setTrendView("monthly")}
+                  className={`px-2 py-0.5 text-[10px] font-medium transition-colors ${trendView === "monthly" ? "bg-[var(--primary)] text-white" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
+                >
+                  Monthly
+                </button>
+              </div>
             </h3>
 
             <div className="bg-[var(--surface-dim)] rounded-xl border border-[var(--border)] p-3">
               <div className="flex bg-[var(--surface)] p-1 rounded-lg mb-4 border border-[var(--border)]">
+                <button
+                  onClick={() => setActiveChart("bp")}
+                  className={`flex-1 py-1 text-xs font-medium rounded-md transition-colors ${activeChart === "bp" ? "bg-[var(--primary)] text-white" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
+                >
+                  BP
+                </button>
                 <button
                   onClick={() => setActiveChart("hr")}
                   className={`flex-1 py-1 text-xs font-medium rounded-md transition-colors ${activeChart === "hr" ? "bg-[var(--primary)] text-white" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
@@ -799,7 +825,11 @@ export function PatientQuickSummary({
               <div className="h-[180px] w-full">
                 <ResponsiveContainer width="100%" height="100%">
                   <LineChart
-                    data={patient.vitalsHistory}
+                    data={
+                      trendView === "monthly"
+                        ? patient.vitalsHistory
+                        : patient.vitalsHistory.slice(-3)
+                    }
                     margin={{ top: 5, right: 5, left: -20, bottom: 0 }}
                   >
                     <CartesianGrid
@@ -808,7 +838,7 @@ export function PatientQuickSummary({
                       vertical={false}
                     />
                     <XAxis
-                      dataKey="time"
+                      dataKey={trendView === "weekly" ? "time" : "date"}
                       axisLine={false}
                       tickLine={false}
                       tick={{ fill: "var(--text-muted)", fontSize: 10 }}
@@ -830,29 +860,52 @@ export function PatientQuickSummary({
                       itemStyle={{ color: "var(--text)" }}
                       labelStyle={{ color: "var(--text-muted)" }}
                     />
-                    <Line
-                      type="monotone"
-                      dataKey={activeChart}
-                      stroke={
-                        activeChart === "hr"
-                          ? "#f43f5e"
-                          : activeChart === "temp"
-                            ? "#f59e0b"
-                            : "#3b82f6"
-                      }
-                      strokeWidth={2}
-                      dot={{
-                        fill:
+                    {activeChart === "bp" ? (
+                      <>
+                        <Line
+                          type="monotone"
+                          dataKey="bpSystolic"
+                          stroke="#8b5cf6"
+                          strokeWidth={2}
+                          dot={{ fill: "#8b5cf6", r: 4, strokeWidth: 0 }}
+                          activeDot={{ r: 6 }}
+                          name="Systolic"
+                        />
+                        <Line
+                          type="monotone"
+                          dataKey="bpDiastolic"
+                          stroke="#c4b5fd"
+                          strokeWidth={2}
+                          dot={{ fill: "#c4b5fd", r: 4, strokeWidth: 0 }}
+                          activeDot={{ r: 6 }}
+                          name="Diastolic"
+                        />
+                      </>
+                    ) : (
+                      <Line
+                        type="monotone"
+                        dataKey={activeChart}
+                        stroke={
                           activeChart === "hr"
                             ? "#f43f5e"
                             : activeChart === "temp"
                               ? "#f59e0b"
-                              : "#3b82f6",
-                        r: 4,
-                        strokeWidth: 0,
-                      }}
-                      activeDot={{ r: 6 }}
-                    />
+                              : "#3b82f6"
+                        }
+                        strokeWidth={2}
+                        dot={{
+                          fill:
+                            activeChart === "hr"
+                              ? "#f43f5e"
+                              : activeChart === "temp"
+                                ? "#f59e0b"
+                                : "#3b82f6",
+                          r: 4,
+                          strokeWidth: 0,
+                        }}
+                        activeDot={{ r: 6 }}
+                      />
+                    )}
                   </LineChart>
                 </ResponsiveContainer>
               </div>

@@ -16,9 +16,51 @@ const MOCK_PATIENTS: Patient[] = [
     lastAdmission: "Oct 12, 2023",
     vitals: { bp: "140/90", hr: 88, temp: 37.2, rr: 18, spo2: 96 },
     vitalsHistory: [
-      { time: "08:00", hr: 82, temp: 36.8, spo2: 98 },
-      { time: "12:00", hr: 85, temp: 37.0, spo2: 97 },
-      { time: "16:00", hr: 88, temp: 37.2, spo2: 96 },
+      {
+        time: "08:00",
+        date: "Oct 24",
+        hr: 82,
+        temp: 36.8,
+        spo2: 98,
+        bpSystolic: 130,
+        bpDiastolic: 85,
+      },
+      {
+        time: "12:00",
+        date: "Oct 24",
+        hr: 85,
+        temp: 37.0,
+        spo2: 97,
+        bpSystolic: 135,
+        bpDiastolic: 88,
+      },
+      {
+        time: "16:00",
+        date: "Oct 24",
+        hr: 88,
+        temp: 37.2,
+        spo2: 96,
+        bpSystolic: 140,
+        bpDiastolic: 90,
+      },
+      {
+        time: "08:00",
+        date: "Oct 25",
+        hr: 84,
+        temp: 36.9,
+        spo2: 97,
+        bpSystolic: 132,
+        bpDiastolic: 86,
+      },
+      {
+        time: "16:00",
+        date: "Oct 25",
+        hr: 86,
+        temp: 37.1,
+        spo2: 97,
+        bpSystolic: 138,
+        bpDiastolic: 89,
+      },
     ],
     alerts: [
       {
@@ -38,9 +80,33 @@ const MOCK_PATIENTS: Patient[] = [
     lastAdmission: "Oct 14, 2023",
     vitals: { bp: "120/80", hr: 76, temp: 36.8, rr: 16, spo2: 99 },
     vitalsHistory: [
-      { time: "08:00", hr: 72, temp: 36.5, spo2: 99 },
-      { time: "12:00", hr: 75, temp: 36.7, spo2: 99 },
-      { time: "16:00", hr: 76, temp: 36.8, spo2: 99 },
+      {
+        time: "08:00",
+        date: "Oct 24",
+        hr: 72,
+        temp: 36.5,
+        spo2: 99,
+        bpSystolic: 118,
+        bpDiastolic: 78,
+      },
+      {
+        time: "12:00",
+        date: "Oct 24",
+        hr: 75,
+        temp: 36.7,
+        spo2: 99,
+        bpSystolic: 120,
+        bpDiastolic: 80,
+      },
+      {
+        time: "16:00",
+        date: "Oct 24",
+        hr: 76,
+        temp: 36.8,
+        spo2: 99,
+        bpSystolic: 122,
+        bpDiastolic: 82,
+      },
     ],
     alerts: [],
   },
@@ -54,10 +120,42 @@ const MOCK_PATIENTS: Patient[] = [
     lastAdmission: "Oct 15, 2023",
     vitals: { bp: "90/60", hr: 110, temp: 38.5, rr: 24, spo2: 88 },
     vitalsHistory: [
-      { time: "08:00", hr: 95, temp: 37.5, spo2: 92 },
-      { time: "10:00", hr: 102, temp: 38.0, spo2: 90 },
-      { time: "12:00", hr: 108, temp: 38.2, spo2: 89 },
-      { time: "14:00", hr: 110, temp: 38.5, spo2: 88 },
+      {
+        time: "08:00",
+        date: "Oct 24",
+        hr: 95,
+        temp: 37.5,
+        spo2: 92,
+        bpSystolic: 100,
+        bpDiastolic: 70,
+      },
+      {
+        time: "10:00",
+        date: "Oct 24",
+        hr: 102,
+        temp: 38.0,
+        spo2: 90,
+        bpSystolic: 95,
+        bpDiastolic: 65,
+      },
+      {
+        time: "12:00",
+        date: "Oct 24",
+        hr: 108,
+        temp: 38.2,
+        spo2: 89,
+        bpSystolic: 92,
+        bpDiastolic: 62,
+      },
+      {
+        time: "14:00",
+        date: "Oct 24",
+        hr: 110,
+        temp: 38.5,
+        spo2: 88,
+        bpSystolic: 90,
+        bpDiastolic: 60,
+      },
     ],
     alerts: [
       {
@@ -82,8 +180,24 @@ const MOCK_PATIENTS: Patient[] = [
     lastAdmission: "Oct 16, 2023",
     vitals: { bp: "115/75", hr: 82, temp: 37.0, rr: 14, spo2: 98 },
     vitalsHistory: [
-      { time: "08:00", hr: 80, temp: 36.9, spo2: 98 },
-      { time: "12:00", hr: 82, temp: 37.0, spo2: 98 },
+      {
+        time: "08:00",
+        date: "Oct 24",
+        hr: 80,
+        temp: 36.9,
+        spo2: 98,
+        bpSystolic: 110,
+        bpDiastolic: 70,
+      },
+      {
+        time: "12:00",
+        date: "Oct 24",
+        hr: 82,
+        temp: 37.0,
+        spo2: 98,
+        bpSystolic: 115,
+        bpDiastolic: 75,
+      },
     ],
     alerts: [
       {
@@ -103,8 +217,24 @@ const MOCK_PATIENTS: Patient[] = [
     lastAdmission: "Oct 10, 2023",
     vitals: { bp: "135/85", hr: 70, temp: 36.5, rr: 16, spo2: 95 },
     vitalsHistory: [
-      { time: "08:00", hr: 72, temp: 36.4, spo2: 96 },
-      { time: "12:00", hr: 70, temp: 36.5, spo2: 95 },
+      {
+        time: "08:00",
+        date: "Oct 24",
+        hr: 72,
+        temp: 36.4,
+        spo2: 96,
+        bpSystolic: 130,
+        bpDiastolic: 80,
+      },
+      {
+        time: "12:00",
+        date: "Oct 24",
+        hr: 70,
+        temp: 36.5,
+        spo2: 95,
+        bpSystolic: 135,
+        bpDiastolic: 85,
+      },
     ],
     alerts: [
       {
@@ -121,9 +251,20 @@ export default function PatientsScreen() {
   const [selectedPatientId, setSelectedPatientId] = useState<string | null>(
     null,
   );
+  const [searchQuery, setSearchQuery] = useState("");
 
   const selectedPatient =
     patients.find((p) => p.id === selectedPatientId) || null;
+
+  const filteredPatients = patients.filter((p) => {
+    const q = searchQuery.toLowerCase();
+    return (
+      p.name.toLowerCase().includes(q) ||
+      p.ipNumber.toLowerCase().includes(q) ||
+      p.ward.toLowerCase().includes(q) ||
+      p.id.toLowerCase().includes(q)
+    );
+  });
 
   const handleUpdateVitals = (
     patientId: string,
@@ -192,7 +333,9 @@ export default function PatientsScreen() {
         <Search size={20} className="text-[var(--text-muted)]" />
         <input
           type="text"
-          placeholder="Search by name, IP number, or ID..."
+          placeholder="Search by name, IP number, or ward..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
           className="flex-1 bg-transparent border-none outline-none text-[var(--text)]"
         />
       </div>
@@ -221,39 +364,52 @@ export default function PatientsScreen() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[var(--border)] bg-[var(--surface)]">
-                  {patients.map((patient) => (
-                    <tr
-                      key={patient.id}
-                      className={`transition-colors cursor-pointer ${
-                        selectedPatientId === patient.id
-                          ? "bg-[var(--primary-container)]"
-                          : "hover:bg-[var(--surface-dim)]"
-                      }`}
-                      onClick={() => setSelectedPatientId(patient.id)}
-                    >
-                      <td className="px-6 py-4 font-medium text-[var(--text)]">
-                        {patient.name}
-                        {patient.alerts.some((a) => a.type === "critical") && (
-                          <span className="ml-2 inline-block w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                        )}
-                      </td>
-                      <td className="px-6 py-4 text-[var(--text-muted)]">
-                        {patient.ipNumber}
-                      </td>
-                      <td className="px-6 py-4 text-[var(--text-muted)] hidden sm:table-cell">
-                        {patient.age} / {patient.sex}
-                      </td>
-                      <td className="px-6 py-4 text-[var(--text-muted)] hidden md:table-cell">
-                        {patient.ward}
-                      </td>
-                      <td className="px-6 py-4 text-right">
-                        <button className="text-[var(--primary)] hover:underline font-medium text-xs inline-flex items-center gap-1">
-                          View
-                          <ChevronRight size={14} />
-                        </button>
+                  {filteredPatients.length > 0 ? (
+                    filteredPatients.map((patient) => (
+                      <tr
+                        key={patient.id}
+                        className={`transition-colors cursor-pointer ${
+                          selectedPatientId === patient.id
+                            ? "bg-[var(--primary-container)]"
+                            : "hover:bg-[var(--surface-dim)]"
+                        }`}
+                        onClick={() => setSelectedPatientId(patient.id)}
+                      >
+                        <td className="px-6 py-4 font-medium text-[var(--text)]">
+                          {patient.name}
+                          {patient.alerts.some(
+                            (a) => a.type === "critical",
+                          ) && (
+                            <span className="ml-2 inline-block w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                          )}
+                        </td>
+                        <td className="px-6 py-4 text-[var(--text-muted)]">
+                          {patient.ipNumber}
+                        </td>
+                        <td className="px-6 py-4 text-[var(--text-muted)] hidden sm:table-cell">
+                          {patient.age} / {patient.sex}
+                        </td>
+                        <td className="px-6 py-4 text-[var(--text-muted)] hidden md:table-cell">
+                          {patient.ward}
+                        </td>
+                        <td className="px-6 py-4 text-right">
+                          <button className="text-[var(--primary)] hover:underline font-medium text-xs inline-flex items-center gap-1">
+                            View
+                            <ChevronRight size={14} />
+                          </button>
+                        </td>
+                      </tr>
+                    ))
+                  ) : (
+                    <tr>
+                      <td
+                        colSpan={5}
+                        className="px-6 py-8 text-center text-[var(--text-muted)]"
+                      >
+                        No patients found matching your search.
                       </td>
                     </tr>
-                  ))}
+                  )}
                 </tbody>
               </table>
             </div>

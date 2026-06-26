@@ -32,9 +32,11 @@ import {
 import { useAuth } from "../contexts/AuthContext";
 
 import { PatientTriage } from "../components/PatientTriage";
+import { ShiftHandoverModal } from "../components/ShiftHandoverModal";
 
 export default function DashboardScreen() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [showHandoverModal, setShowHandoverModal] = useState(false);
   const { userData } = useAuth();
   const isAdmin = userData?.role === "admin";
 
@@ -109,7 +111,7 @@ export default function DashboardScreen() {
                     Clinical Workflows
                   </h3>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
                   <Link
                     to="/review"
                     className="flex flex-col items-center justify-center p-4 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-colors group text-center h-full"
@@ -154,6 +156,17 @@ export default function DashboardScreen() {
                       Learning
                     </span>
                   </Link>
+                  <button
+                    onClick={() => setShowHandoverModal(true)}
+                    className="flex flex-col items-center justify-center p-4 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-colors group text-center h-full"
+                  >
+                    <div className="w-12 h-12 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                      <Clock size={24} />
+                    </div>
+                    <span className="text-sm font-medium text-[var(--text)]">
+                      Handover
+                    </span>
+                  </button>
                 </div>
               </div>
 
@@ -525,6 +538,10 @@ export default function DashboardScreen() {
             </Link>
           </div>
         </div>
+      )}
+
+      {showHandoverModal && (
+        <ShiftHandoverModal onClose={() => setShowHandoverModal(false)} />
       )}
     </div>
   );

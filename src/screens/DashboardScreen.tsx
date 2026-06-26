@@ -5,6 +5,7 @@ import {
   Sparkles, FileUp, GraduationCap, ClipboardList, ShieldCheck, Users, Settings
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { useAuth } from '../contexts/AuthContext';
 
 export default function DashboardScreen() {
@@ -103,6 +104,45 @@ export default function DashboardScreen() {
                     </div>
                     <span className="text-sm font-medium text-[var(--text)]">Learning</span>
                   </Link>
+                </div>
+              </div>
+
+              {/* Patient Activity Overview */}
+              <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6 shadow-sm">
+                <div className="flex items-center justify-between mb-6">
+                  <h3 className="font-semibold text-[var(--text)] text-lg tracking-tight">Patient Activity</h3>
+                  <select className="bg-[var(--surface-dim)] text-xs text-[var(--text)] border border-[var(--border)] rounded-lg px-3 py-1.5 outline-none">
+                    <option>Last 7 Days</option>
+                    <option>This Month</option>
+                  </select>
+                </div>
+                <div className="h-64 w-full">
+                  <ResponsiveContainer width="100%" height="100%">
+                    <AreaChart data={[
+                      { name: 'Mon', cases: 12 },
+                      { name: 'Tue', cases: 19 },
+                      { name: 'Wed', cases: 15 },
+                      { name: 'Thu', cases: 22 },
+                      { name: 'Fri', cases: 28 },
+                      { name: 'Sat', cases: 14 },
+                      { name: 'Sun', cases: 8 },
+                    ]} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                      <defs>
+                        <linearGradient id="colorCases" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="var(--primary)" stopOpacity={0.3}/>
+                          <stop offset="95%" stopColor="var(--primary)" stopOpacity={0}/>
+                        </linearGradient>
+                      </defs>
+                      <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--border)" />
+                      <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: 'var(--text-muted)' }} dy={10} />
+                      <YAxis axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: 'var(--text-muted)' }} />
+                      <Tooltip 
+                        contentStyle={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', borderRadius: '8px', color: 'var(--text)' }}
+                        itemStyle={{ color: 'var(--primary)' }}
+                      />
+                      <Area type="monotone" dataKey="cases" stroke="var(--primary)" strokeWidth={2} fillOpacity={1} fill="url(#colorCases)" />
+                    </AreaChart>
+                  </ResponsiveContainer>
                 </div>
               </div>
 

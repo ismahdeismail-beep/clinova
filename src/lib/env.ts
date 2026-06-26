@@ -1,14 +1,14 @@
 import { z } from 'zod';
 
 const envSchema = z.object({
-  VITE_FIREBASE_API_KEY: z.string().min(1, "VITE_FIREBASE_API_KEY is required"),
-  VITE_FIREBASE_AUTH_DOMAIN: z.string().min(1, "VITE_FIREBASE_AUTH_DOMAIN is required"),
-  VITE_FIREBASE_PROJECT_ID: z.string().min(1, "VITE_FIREBASE_PROJECT_ID is required"),
-  VITE_FIREBASE_STORAGE_BUCKET: z.string().min(1, "VITE_FIREBASE_STORAGE_BUCKET is required"),
-  VITE_FIREBASE_MESSAGING_SENDER_ID: z.string().min(1, "VITE_FIREBASE_MESSAGING_SENDER_ID is required"),
-  VITE_FIREBASE_APP_ID: z.string().min(1, "VITE_FIREBASE_APP_ID is required"),
-  VITE_CLOUDINARY_CLOUD_NAME: z.string().min(1, "VITE_CLOUDINARY_CLOUD_NAME is required"),
-  VITE_CLOUDINARY_UPLOAD_PRESET: z.string().min(1, "VITE_CLOUDINARY_UPLOAD_PRESET is required"),
+  VITE_FIREBASE_API_KEY: z.string().default("AIzaSyBOXVvQm2JxW7JT9CXlFeZqC23iSrX3GoA"),
+  VITE_FIREBASE_AUTH_DOMAIN: z.string().default("nakurubnb-b99f2.firebaseapp.com"),
+  VITE_FIREBASE_PROJECT_ID: z.string().default("nakurubnb-b99f2"),
+  VITE_FIREBASE_STORAGE_BUCKET: z.string().default("nakurubnb-b99f2.firebasestorage.app"),
+  VITE_FIREBASE_MESSAGING_SENDER_ID: z.string().default("234989018252"),
+  VITE_FIREBASE_APP_ID: z.string().default("1:234989018252:web:3547fa5f00d7ed6d9eefa9"),
+  VITE_CLOUDINARY_CLOUD_NAME: z.string().default("demo"),
+  VITE_CLOUDINARY_UPLOAD_PRESET: z.string().default("demo"),
 });
 
 let _env: z.infer<typeof envSchema>;

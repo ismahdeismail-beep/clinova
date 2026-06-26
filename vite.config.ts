@@ -14,7 +14,8 @@ export default defineConfig(() => {
         includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'masked-icon.svg', 'offline.html'],
         workbox: {
           globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
-          navigateFallback: '/offline.html'
+          navigateFallback: '/offline.html',
+          maximumFileSizeToCacheInBytes: 5 * 1024 * 1024
         },
         manifest: {
           name: 'Clinova OS',

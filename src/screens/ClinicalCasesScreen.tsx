@@ -20,9 +20,15 @@ export default function ClinicalCasesScreen() {
           <FolderOpen size={32} className="text-[var(--text-muted)]" />
         </div>
         <h3 className="text-lg font-semibold text-[var(--text)] mb-2">No active cases</h3>
-        <p className="text-[var(--text-muted)] text-sm max-w-md">
+        <p className="text-[var(--text-muted)] text-sm max-w-md mb-6">
           Start a new case to document comprehensive clinical findings, treatment plans, and outcomes for discussion.
         </p>
+        <button 
+          onClick={() => alert("Clinova AI Brain would automatically retrieve similar historical cases, flag potential drug interactions from the patient's profile, and suggest the most appropriate clinical pathway.")}
+          className="px-4 py-2 bg-[var(--primary-container)] text-[var(--primary)] font-medium rounded-lg text-sm transition-colors border border-[var(--primary)]/20"
+        >
+          View AI Case Suggestions
+        </button>
       </div>
     </div>
   );

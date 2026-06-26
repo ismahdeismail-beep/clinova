@@ -1,10 +1,54 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   User, Stethoscope, Activity, ClipboardList, Beaker, FileText, Pill, HeartPulse, CheckCircle, BrainCircuit
 } from 'lucide-react';
 
 export default function PharmacotherapyReviewScreen() {
   const [activeTab, setActiveTab] = useState<string>('admission');
+  const formRef = useRef<HTMLFormElement>(null);
+
+  // Restore form data when tab changes
+  useEffect(() => {
+    const savedData = localStorage.getItem('clinova_pharma_review_form');
+    if (savedData && formRef.current) {
+      try {
+        const parsed = JSON.parse(savedData);
+        const tabData = parsed[activeTab] || {};
+        const elements = formRef.current.elements;
+        for (let i = 0; i < elements.length; i++) {
+          const el = elements[i] as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+          if (el.tagName === 'BUTTON') continue;
+          const key = el.name || el.id || `input_${i}`;
+          if (tabData[key] !== undefined) {
+            el.value = tabData[key];
+          }
+        }
+      } catch (e) {
+        console.error('Failed to parse saved form data', e);
+      }
+    }
+  }, [activeTab]);
+
+  const handleFormChange = () => {
+    if (!formRef.current) return;
+    const elements = formRef.current.elements;
+    const tabData: Record<string, string> = {};
+    for (let i = 0; i < elements.length; i++) {
+      const el = elements[i] as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+      if (el.tagName === 'BUTTON') continue;
+      const key = el.name || el.id || `input_${i}`;
+      tabData[key] = el.value;
+    }
+    
+    try {
+      const savedData = localStorage.getItem('clinova_pharma_review_form');
+      const parsed = savedData ? JSON.parse(savedData) : {};
+      parsed[activeTab] = tabData;
+      localStorage.setItem('clinova_pharma_review_form', JSON.stringify(parsed));
+    } catch (e) {
+      console.error('Failed to save form data', e);
+    }
+  };
 
   const tabs = [
     { id: 'admission', label: 'Admission', icon: User },
@@ -54,7 +98,7 @@ export default function PharmacotherapyReviewScreen() {
 
         {/* Form Content */}
         <div className="flex-1 w-full bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-sm overflow-hidden">
-          <form className="p-6 sm:p-8 space-y-8" onSubmit={(e) => e.preventDefault()}>
+          <form ref={formRef} onChange={handleFormChange} className="p-6 sm:p-8 space-y-8" onSubmit={(e) => e.preventDefault()}>
             
             {activeTab === 'admission' && (
               <div className="space-y-6 animate-in fade-in slide-in-from-bottom-2 duration-300">
@@ -286,7 +330,14 @@ export default function PharmacotherapyReviewScreen() {
                   <h3 className="text-lg font-semibold text-[var(--text)] flex items-center gap-2">
                     <Pill size={20} className="text-[var(--primary)]"/> Current Management Plan
                   </h3>
-                  <button type="button" className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20">
+                  <button 
+                    type="button" 
+                    onClick={() => {
+                      const msg = "Clinova AI Treatment Suggestion:\n\nBased on the typical presentation of CAP, consider starting Amoxicillin 1g PO q8h for 5 days. For Malaria, Artemether-Lumefantrine 20/120mg as per guidelines.";
+                      alert(msg);
+                    }}
+                    className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20"
+                  >
                     <BrainCircuit size={14} /> AI Treatment Suggestion
                   </button>
                 </div>
@@ -337,7 +388,24 @@ export default function PharmacotherapyReviewScreen() {
                   <h3 className="text-lg font-semibold text-[var(--text)] flex items-center gap-2">
                     <FileText size={20} className="text-[var(--primary)]"/> Pharmaceutical Care Plan
                   </h3>
-                  <button type="button" className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20">
+                  <button 
+                    type="button" 
+                    onClick={() => {
+                      const msg = "Clinova AI Autofill Engine has analyzed the patient data and suggests: \n\nGoal: Eradicate infection and resolve symptoms.\nIntervention: Initiate IV Ceftriaxone 2g daily.\nFollow-up: Re-assess in 48 hours with culture results.";
+                      if (formRef.current) {
+                        const inputs = formRef.current.querySelectorAll('textarea');
+                        if (inputs.length >= 4) {
+                           (inputs[1] as HTMLTextAreaElement).value = "Untreated Infection";
+                           (inputs[2] as HTMLTextAreaElement).value = "Eradicate infection & resolve symptoms";
+                           (inputs[3] as HTMLTextAreaElement).value = "Initiate IV Ceftriaxone 2g daily";
+                           (inputs[4] as HTMLTextAreaElement).value = "Re-assess in 48 hours with culture results";
+                           handleFormChange();
+                        }
+                      }
+                      alert(msg);
+                    }}
+                    className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20"
+                  >
                     <BrainCircuit size={14} /> Smart Autofill
                   </button>
                 </div>
@@ -390,7 +458,22 @@ export default function PharmacotherapyReviewScreen() {
                   <h3 className="text-lg font-semibold text-[var(--text)] flex items-center gap-2">
                     <HeartPulse size={20} className="text-[var(--primary)]"/> Patient Counselling Section
                   </h3>
-                  <button type="button" className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20">
+                  <button 
+                    type="button" 
+                    onClick={() => {
+                      const text = "Clinova AI Generated Counselling Points:\n\n1. Medication Adherence: Take all medications exactly as prescribed. Do not skip doses.\n2. Diet: Maintain a low-sodium diet and stay hydrated.\n3. Side Effects: If you experience any severe stomach pain or dizziness, seek medical attention immediately.\n4. Follow-up: Return to the clinic in 2 weeks for a review.";
+                      if (formRef.current) {
+                        const textareas = formRef.current.querySelectorAll('textarea');
+                        if (textareas.length > 0) {
+                          const lastTextArea = textareas[textareas.length - 1] as HTMLTextAreaElement;
+                          lastTextArea.value = text;
+                          handleFormChange();
+                        }
+                      }
+                      alert("Counselling points generated successfully.");
+                    }}
+                    className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20"
+                  >
                     <BrainCircuit size={14} /> AI Generate Counselling
                   </button>
                 </div>

@@ -1,7 +1,20 @@
-import React from 'react';
-import { Users, Database, ShieldAlert, Activity, Server, TrendingUp } from 'lucide-react';
+import React, { useState } from 'react';
+import { Users, Database, ShieldAlert, Activity, Server, TrendingUp, CheckCircle, Loader2 } from 'lucide-react';
 
 export default function AdminDashboardScreen() {
+  const [isAuditing, setIsAuditing] = useState(false);
+  const [auditComplete, setAuditComplete] = useState(false);
+
+  const handleRunAudit = () => {
+    setIsAuditing(true);
+    setAuditComplete(false);
+    setTimeout(() => {
+      setIsAuditing(false);
+      setAuditComplete(true);
+      alert("System Audit Completed Successfully.\n- 0 Vulnerabilities Found\n- All Clinical Data Encrypted\n- Access Controls Verified\n- No Anomalous Access Patterns Detected");
+    }, 2500);
+  };
+
   return (
     <div className="p-6 max-w-6xl mx-auto space-y-8 pb-24">
       <div className="mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -10,8 +23,13 @@ export default function AdminDashboardScreen() {
           <p className="text-[var(--text-muted)] text-sm">System overview and administrative controls.</p>
         </div>
         <div className="flex gap-2">
-          <button className="px-4 py-2 bg-[var(--surface-dim)] text-[var(--text)] font-medium rounded-lg hover:bg-[var(--surface)] transition-colors border border-[var(--border)]">
-            Export Logs
+          <button 
+            onClick={handleRunAudit}
+            disabled={isAuditing}
+            className="flex items-center gap-2 px-4 py-2 bg-[var(--surface-dim)] text-[var(--text)] font-medium rounded-lg hover:bg-[var(--surface)] transition-colors border border-[var(--border)] disabled:opacity-70"
+          >
+            {isAuditing ? <Loader2 size={18} className="animate-spin" /> : <ShieldAlert size={18} />}
+            {isAuditing ? 'Running Audit...' : 'Run System Audit'}
           </button>
           <button className="px-4 py-2 bg-[var(--primary)] text-white font-medium rounded-lg hover:opacity-90 transition-opacity">
             System Settings

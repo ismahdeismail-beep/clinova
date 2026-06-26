@@ -20,6 +20,8 @@ import { ProtectedRoute } from './components/ProtectedRoute';
 import { useAuth } from './contexts/AuthContext';
 import { InstallPWA } from './components/InstallPWA';
 import { OfflineStatus } from './components/OfflineStatus';
+import { CommandPalette } from './components/CommandPalette';
+import LoginScreen from './screens/LoginScreen';
 
 function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
   const { userData } = useAuth();
@@ -42,11 +44,18 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
       <div className="flex-1 max-w-2xl px-4 lg:px-8 hidden md:block">
         <div className="relative group">
           <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)] group-focus-within:text-[var(--primary)] transition-colors" />
-          <input 
-            type="text" 
-            placeholder="Search Kenya Drug Index, Guidelines, patients..." 
-            className="w-full pl-10 pr-4 py-2 bg-[var(--bg)] border border-[var(--border)] rounded-full text-sm focus:outline-none focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)] text-[var(--text)] transition-all"
-          />
+          <div 
+            className="w-full pl-10 pr-4 py-2 bg-[var(--bg)] border border-[var(--border)] rounded-full text-sm text-[var(--text-muted)] flex items-center justify-between cursor-pointer hover:border-[var(--primary)] transition-colors"
+            onClick={() => {
+              window.dispatchEvent(new Event('open-command-palette'));
+            }}
+          >
+            <span>Search Kenya Drug Index, Guidelines, patients...</span>
+            <div className="flex items-center gap-1">
+              <kbd className="hidden sm:inline-block bg-[var(--surface-dim)] border border-[var(--border)] rounded px-1.5 py-0.5 text-[10px] font-mono font-medium text-[var(--text-muted)]">Ctrl</kbd>
+              <kbd className="hidden sm:inline-block bg-[var(--surface-dim)] border border-[var(--border)] rounded px-1.5 py-0.5 text-[10px] font-mono font-medium text-[var(--text-muted)]">K</kbd>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -140,38 +149,50 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
   );
 }
 
-export default function App() {
+function AppContent() {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
+  const { userData } = useAuth();
+
+  if (!userData) {
+    return <LoginScreen />;
+  }
 
   return (
-    <BrowserRouter>
-      <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] flex flex-col">
-        <OfflineStatus />
-        <TopNavigation onMenuClick={() => setIsSidebarOpen(!isSidebarOpen)} />
-        <div className="flex flex-1 overflow-hidden relative">
-          <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
-          <main className="flex-1 md:ml-64 w-full overflow-y-auto">
-            <Routes>
-              <Route path="/" element={<DashboardScreen />} />
-              <Route path="/patients" element={<PatientsScreen />} />
-              <Route path="/cases" element={<ClinicalCasesScreen />} />
-              <Route path="/review" element={<PharmacotherapyReviewScreen />} />
-              <Route path="/drugs" element={<DrugIndexScreen />} />
-              <Route path="/assistant" element={<ClinicalAssistantScreen />} />
-              <Route path="/knowledge" element={<KnowledgeBaseScreen />} />
-              <Route path="/reports" element={<ReportsScreen />} />
-              <Route path="/admin" element={
-                <ProtectedRoute requiredRole="admin">
-                  <AdminDashboardScreen />
-                </ProtectedRoute>
-              } />
-              <Route path="/notifications" element={<NotificationsScreen />} />
-              <Route path="/settings" element={<SettingsScreen />} />
-            </Routes>
-            <InstallPWA />
-          </main>
-        </div>
+    <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] flex flex-col">
+      <CommandPalette />
+      <OfflineStatus />
+      <TopNavigation onMenuClick={() => setIsSidebarOpen(!isSidebarOpen)} />
+      <div className="flex flex-1 overflow-hidden relative">
+        <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
+        <main className="flex-1 md:ml-64 w-full overflow-y-auto">
+          <Routes>
+            <Route path="/" element={<DashboardScreen />} />
+            <Route path="/patients" element={<PatientsScreen />} />
+            <Route path="/cases" element={<ClinicalCasesScreen />} />
+            <Route path="/review" element={<PharmacotherapyReviewScreen />} />
+            <Route path="/drugs" element={<DrugIndexScreen />} />
+            <Route path="/assistant" element={<ClinicalAssistantScreen />} />
+            <Route path="/knowledge" element={<KnowledgeBaseScreen />} />
+            <Route path="/reports" element={<ReportsScreen />} />
+            <Route path="/admin" element={
+              <ProtectedRoute requiredRole="admin">
+                <AdminDashboardScreen />
+              </ProtectedRoute>
+            } />
+            <Route path="/notifications" element={<NotificationsScreen />} />
+            <Route path="/settings" element={<SettingsScreen />} />
+          </Routes>
+          <InstallPWA />
+        </main>
       </div>
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
     </BrowserRouter>
   );
 }

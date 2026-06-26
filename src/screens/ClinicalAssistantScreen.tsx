@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Bot, Send, User, BrainCircuit, Library, Pill, Activity, FlaskConical, FileText, CheckCircle2, ChevronRight, Loader2, Database, AlertCircle } from 'lucide-react';
+import { Bot, Send, User, BrainCircuit, Library, Pill, Activity, FlaskConical, FileText, CheckCircle2, ChevronRight, Loader2, Database, AlertCircle, Mic, MicOff } from 'lucide-react';
 import { RAGRouter } from '../services/ragRouter';
 
 interface Citation {
@@ -36,6 +36,8 @@ export default function ClinicalAssistantScreen() {
     }
   ]);
   const [input, setInput] = useState('');
+  const [isListening, setIsListening] = useState(false);
+  const recognitionRef = useRef<any>(null);
 
   // Auto-save input to localStorage
   useEffect(() => {
@@ -44,6 +46,70 @@ export default function ClinicalAssistantScreen() {
       setInput(savedInput);
     }
   }, []);
+
+  useEffect(() => {
+    // Initialize Web Speech API
+    if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+      const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+      recognitionRef.current = new SpeechRecognition();
+      recognitionRef.current.continuous = true;
+      recognitionRef.current.interimResults = true;
+
+      recognitionRef.current.onresult = (event: any) => {
+        let interimTranscript = '';
+        let finalTranscript = '';
+
+        for (let i = event.resultIndex; i < event.results.length; ++i) {
+          if (event.results[i].isFinal) {
+            finalTranscript += event.results[i][0].transcript;
+          } else {
+            interimTranscript += event.results[i][0].transcript;
+          }
+        }
+        
+        if (finalTranscript) {
+          setInput(prev => {
+            const newValue = prev ? `${prev} ${finalTranscript}` : finalTranscript;
+            return newValue;
+          });
+        }
+      };
+
+      recognitionRef.current.onerror = (event: any) => {
+        console.error('Speech recognition error', event.error);
+        setIsListening(false);
+      };
+
+      recognitionRef.current.onend = () => {
+        setIsListening(false);
+      };
+    }
+
+    return () => {
+      if (recognitionRef.current) {
+        recognitionRef.current.stop();
+      }
+    };
+  }, []);
+
+  const toggleListening = () => {
+    if (!recognitionRef.current) {
+      alert("Voice recognition is not supported in this browser.");
+      return;
+    }
+
+    if (isListening) {
+      recognitionRef.current.stop();
+      setIsListening(false);
+    } else {
+      try {
+        recognitionRef.current.start();
+        setIsListening(true);
+      } catch (e) {
+        console.error(e);
+      }
+    }
+  };
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -383,6 +449,17 @@ export default function ClinicalAssistantScreen() {
                 rows={1}
               />
             </div>
+            <button
+              onClick={toggleListening}
+              className={`p-3 rounded-xl transition-colors shrink-0 flex items-center justify-center ${
+                isListening
+                  ? 'bg-red-500 text-white shadow-sm animate-pulse'
+                  : 'bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary-container)]'
+              }`}
+              title={isListening ? "Stop listening" : "Start dictation"}
+            >
+              {isListening ? <MicOff size={20} /> : <Mic size={20} />}
+            </button>
             <button 
               onClick={handleSend}
               disabled={!input.trim() || isProcessing}

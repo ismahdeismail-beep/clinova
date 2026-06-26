@@ -17,11 +17,7 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | null>(null);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const [userData, setUserData] = useState<UserData | null>({
-    id: '1',
-    name: 'Dr. Sarah K.',
-    role: 'admin', // Default to admin for now, or could be 'user'
-  });
+  const [userData, setUserData] = useState<UserData | null>(null);
 
   const loginAs = (role: UserRole) => {
     setUserData({

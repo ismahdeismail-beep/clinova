@@ -40,7 +40,9 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
           <Menu size={24} />
         </button>
         <Link to="/" className="flex items-center gap-2 text-[var(--primary)] font-bold text-xl tracking-tight shrink-0 md:hidden lg:flex">
-          <img src="/src/assets/images/clinova_logo_1782414107621.jpg" alt="Clinova Logo" className="w-8 h-8 rounded-lg" />
+          <div className="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center text-[var(--primary)] shadow-sm">
+            <Pill size={20} />
+          </div>
           <span className="hidden sm:inline">CLINOVA</span>
         </Link>
       </div>
@@ -118,7 +120,9 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
       <div className={`fixed inset-y-0 left-0 z-40 w-64 bg-[var(--surface)] border-r border-[var(--border)] transform transition-transform duration-200 ease-in-out md:translate-x-0 overflow-y-auto flex flex-col pt-16 md:pt-0 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="p-6 border-b border-[var(--border)] shrink-0 hidden md:block">
           <div className="flex items-center gap-2 text-[var(--primary)] font-bold text-xl tracking-tight">
-            <img src="/src/assets/images/clinova_logo_1782414107621.jpg" alt="Clinova Logo" className="w-8 h-8 rounded-lg" />
+            <div className="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center text-[var(--primary)] shadow-sm">
+              <Pill size={20} />
+            </div>
             CLINOVA
           </div>
           <p className="text-[10px] text-[var(--text-muted)] mt-1 font-semibold uppercase tracking-wider">Clinical Intelligence</p>

@@ -22,6 +22,7 @@ import { InstallPWA } from './components/InstallPWA';
 import { OfflineStatus } from './components/OfflineStatus';
 import { CommandPalette } from './components/CommandPalette';
 import LoginScreen from './screens/LoginScreen';
+import LandingScreen from './screens/LandingScreen';
 
 import { useNotifications } from './contexts/NotificationContext';
 
@@ -161,7 +162,12 @@ function AppContent() {
   const { userData } = useAuth();
 
   if (!userData) {
-    return <LoginScreen />;
+    return (
+      <Routes>
+        <Route path="/login" element={<LoginScreen />} />
+        <Route path="*" element={<LandingScreen />} />
+      </Routes>
+    );
   }
 
   return (

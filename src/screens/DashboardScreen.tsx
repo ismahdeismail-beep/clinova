@@ -48,32 +48,30 @@ export default function DashboardScreen() {
         <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div>
             <h1 className="text-3xl font-bold mb-2 tracking-tight">
-              Welcome, {userData?.name || "Guest"}
+              Pharmacy AI &amp; Study Assistant
             </h1>
-            <p className="text-white/80 max-w-lg">
+            <p className="text-white/80 max-w-lg text-sm leading-relaxed">
               {isAdmin
-                ? "Your admin console is ready. Manage users, monitor system health, and configure platform settings."
-                : "Your clinical intelligence platform is ready. How can I assist you with clinical decisions, care plans, or literature review today?"}
+                ? "Admin Repository Management: Add authoritative books, formularies, and reference URLs accessible to the entire learning community."
+                : "Your automated AI partner for pharmacotherapy reviews, instant answers from KDI and Medscape, and converting study notes into exam questions &amp; podcasts."}
             </p>
           </div>
-          {!isAdmin && (
+          <div className="flex items-center gap-3">
+            <Link
+              to="/knowledge"
+              className="flex items-center gap-2 px-5 py-3 bg-white/10 hover:bg-white/20 text-white rounded-xl font-semibold backdrop-blur-sm transition-all text-sm shrink-0 w-max"
+            >
+              <BookOpen size={18} />
+              Online Books Hub
+            </Link>
             <Link
               to="/assistant"
-              className="flex items-center gap-2 px-6 py-3 bg-white text-[var(--primary)] rounded-xl font-semibold hover:shadow-md transition-shadow shrink-0 w-max"
+              className="flex items-center gap-2 px-5 py-3 bg-white text-[var(--primary)] rounded-xl font-semibold hover:shadow-md transition-shadow text-sm shrink-0 w-max"
             >
-              <Bot size={20} />
-              Ask Clinova AI
+              <Bot size={18} />
+              Auto AI Review Form
             </Link>
-          )}
-          {isAdmin && (
-            <Link
-              to="/admin"
-              className="flex items-center gap-2 px-6 py-3 bg-white text-[var(--primary)] rounded-xl font-semibold hover:shadow-md transition-shadow shrink-0 w-max"
-            >
-              <ShieldCheck size={20} />
-              Admin Console
-            </Link>
-          )}
+          </div>
         </div>
       </div>
 

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { 
-  Pill, Mail, ArrowRight, UserCheck, 
+  Mail, ArrowRight, UserCheck, 
   Shield, Sparkles, ArrowLeft, Loader2
 } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
+import ClinovaLogo from '../components/ClinovaLogo';
 
 export default function LoginScreen() {
   const { loginWithGoogle, loginReturning } = useAuth();
@@ -44,19 +45,19 @@ export default function LoginScreen() {
         <span className="text-[10px] font-mono text-[var(--text-muted)] bg-[var(--surface)] border border-[var(--border)] px-2 py-0.5 rounded">Secure Portal</span>
       </div>
 
-      <div className="w-full max-w-md bg-[var(--surface)] border border-[var(--border)] rounded-3xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-400">
+      <div className="w-full max-w-md bg-[var(--surface)]/80 backdrop-blur-md border border-[var(--border)] rounded-3xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-400">
         
         {/* Header */}
         <div className="p-8 pb-6 text-center bg-gradient-to-b from-[var(--primary-container)]/50 to-transparent">
           <div className="w-16 h-16 bg-[var(--primary)] text-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-[var(--primary)]/30">
-            <Pill size={32} />
+            <ClinovaLogo size={32} variant="light" />
           </div>
           <h1 className="text-2xl font-bold text-[var(--text)] tracking-tight">Sign In Portal</h1>
           <p className="text-xs text-[var(--text-muted)] mt-1">Access Clinova Pharmacy AI &amp; Study Hub</p>
         </div>
 
         {/* Option Tabs */}
-        <div className="px-6 flex bg-[var(--surface-dim)] p-1 mx-6 rounded-xl border border-[var(--border)] mb-6">
+        <div className="px-6 flex bg-[var(--surface-dim)]/50 p-1 mx-6 rounded-xl border border-[var(--border)] mb-6 backdrop-blur-sm">
           <button
             type="button"
             onClick={() => setActiveTab('google')}
@@ -164,10 +165,11 @@ export default function LoginScreen() {
         </div>
 
         {/* Footer info */}
-        <div className="px-8 py-4 bg-[var(--surface-dim)] border-t border-[var(--border)] text-center text-[11px] text-[var(--text-muted)] flex items-center justify-center gap-2">
+        <div className="px-8 py-4 bg-[var(--surface-dim)]/50 border-t border-[var(--border)] text-center text-[11px] text-[var(--text-muted)] flex items-center justify-center gap-2 backdrop-blur-sm">
           <Shield size={12} className="text-emerald-500" /> Secure healthcare &amp; student study environment.
         </div>
       </div>
     </div>
   );
 }
+

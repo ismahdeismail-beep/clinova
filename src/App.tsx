@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { 
   Home, Users, FolderOpen, ClipboardList, Pill, Bot, 
-  BookOpen, BarChart3, Bell, Settings, Menu, X, Stethoscope, Search, MessageSquare, ShieldCheck
+  BookOpen, BarChart3, Bell, Settings, Menu, Search, MessageSquare, ShieldCheck
 } from 'lucide-react';
 
 import DashboardScreen from './screens/DashboardScreen';
@@ -23,6 +23,7 @@ import { OfflineStatus } from './components/OfflineStatus';
 import { CommandPalette } from './components/CommandPalette';
 import LoginScreen from './screens/LoginScreen';
 import LandingScreen from './screens/LandingScreen';
+import ClinovaLogo from './components/ClinovaLogo';
 
 import { useNotifications } from './contexts/NotificationContext';
 
@@ -31,7 +32,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
   const { unreadCount } = useNotifications();
   
   return (
-    <header className="sticky top-0 z-30 bg-[var(--surface)] border-b border-[var(--border)] h-16 flex items-center justify-between px-4 lg:px-8">
+    <header className="sticky top-0 z-30 bg-[var(--surface)]/80 backdrop-blur-md border-b border-[var(--border)] h-16 flex items-center justify-between px-4 lg:px-8">
       <div className="flex items-center gap-4">
         <button 
           className="md:hidden p-2 text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
@@ -41,7 +42,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
         </button>
         <Link to="/" className="flex items-center gap-2 text-[var(--primary)] font-bold text-xl tracking-tight shrink-0 md:hidden lg:flex">
           <div className="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center text-[var(--primary)] shadow-sm">
-            <Pill size={20} />
+            <ClinovaLogo size={20} />
           </div>
           <span className="hidden sm:inline">CLINOVA</span>
         </Link>
@@ -51,15 +52,15 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
         <div className="relative group">
           <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)] group-focus-within:text-[var(--primary)] transition-colors" />
           <div 
-            className="w-full pl-10 pr-4 py-2 bg-[var(--bg)] border border-[var(--border)] rounded-full text-sm text-[var(--text-muted)] flex items-center justify-between cursor-pointer hover:border-[var(--primary)] transition-colors"
+            className="w-full pl-10 pr-4 py-2 bg-[var(--surface-dim)]/50 border border-[var(--border)] rounded-full text-sm text-[var(--text-muted)] flex items-center justify-between cursor-pointer hover:border-[var(--primary)] transition-colors backdrop-blur-sm"
             onClick={() => {
               window.dispatchEvent(new Event('open-command-palette'));
             }}
           >
             <span>Search Kenya Drug Index, Guidelines, patients...</span>
             <div className="flex items-center gap-1">
-              <kbd className="hidden sm:inline-block bg-[var(--surface-dim)] border border-[var(--border)] rounded px-1.5 py-0.5 text-[10px] font-mono font-medium text-[var(--text-muted)]">Ctrl</kbd>
-              <kbd className="hidden sm:inline-block bg-[var(--surface-dim)] border border-[var(--border)] rounded px-1.5 py-0.5 text-[10px] font-mono font-medium text-[var(--text-muted)]">K</kbd>
+              <kbd className="hidden sm:inline-block bg-[var(--surface)] border border-[var(--border)] rounded px-1.5 py-0.5 text-[10px] font-mono font-medium text-[var(--text-muted)]">Ctrl</kbd>
+              <kbd className="hidden sm:inline-block bg-[var(--surface)] border border-[var(--border)] rounded px-1.5 py-0.5 text-[10px] font-mono font-medium text-[var(--text-muted)]">K</kbd>
             </div>
           </div>
         </div>
@@ -117,11 +118,11 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
 
   return (
     <>
-      <div className={`fixed inset-y-0 left-0 z-40 w-64 bg-[var(--surface)] border-r border-[var(--border)] transform transition-transform duration-200 ease-in-out md:translate-x-0 overflow-y-auto flex flex-col pt-16 md:pt-0 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div className={`fixed inset-y-0 left-0 z-40 w-64 bg-[var(--surface)]/80 backdrop-blur-md border-r border-[var(--border)] transform transition-transform duration-200 ease-in-out md:translate-x-0 overflow-y-auto flex flex-col pt-16 md:pt-0 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="p-6 border-b border-[var(--border)] shrink-0 hidden md:block">
           <div className="flex items-center gap-2 text-[var(--primary)] font-bold text-xl tracking-tight">
             <div className="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center text-[var(--primary)] shadow-sm">
-              <Pill size={20} />
+              <ClinovaLogo size={20} />
             </div>
             CLINOVA
           </div>
@@ -153,7 +154,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
       {/* Backdrop for mobile */}
       {isOpen && (
         <div 
-          className="fixed inset-0 bg-black/50 z-30 md:hidden top-16"
+          className="fixed inset-0 bg-black/50 z-30 md:hidden top-16 backdrop-blur-sm"
           onClick={() => setIsOpen(false)}
         />
       )}
@@ -213,3 +214,4 @@ export default function App() {
     </BrowserRouter>
   );
 }
+

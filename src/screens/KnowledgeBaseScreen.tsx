@@ -194,7 +194,7 @@ A 54-year-old patient presents with pneumonia on warfarin. Explain the pharmacok
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search KDI, Essential Medicines, Medscape, uploaded notes..."
                 className="w-full pl-10 pr-4 py-2.5 bg-[var(--bg)] border border-[var(--border)] rounded-xl text-sm text-[var(--text)] focus:outline-none focus:border-[var(--primary)]"
-              >
+              />
             </div>
 
             <div className="flex items-center gap-2.5">

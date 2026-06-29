@@ -15,21 +15,27 @@ export default function LoginScreen() {
   const [isLoading, setIsLoading] = useState(false);
   const [activeTab, setActiveTab] = useState<'google' | 'returning'>('google');
 
-  const handleGoogleSubmit = (e: React.FormEvent) => {
+  const handleGoogleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    setTimeout(() => {
-      loginWithGoogle(email || 'student.pharmacist@gmail.com');
+    try {
+      await loginWithGoogle();
       navigate('/');
-    }, 600);
+    } catch (e) {
+      console.error(e);
+      setIsLoading(false);
+    }
   };
 
-  const handleReturningSubmit = (name: string, role: 'admin' | 'user') => {
+  const handleReturningSubmit = async (name: string, role: 'admin' | 'user') => {
     setIsLoading(true);
-    setTimeout(() => {
-      loginReturning(name, role);
+    try {
+      await loginReturning(name, role);
       navigate('/');
-    }, 500);
+    } catch (e) {
+      console.error(e);
+      setIsLoading(false);
+    }
   };
 
   return (

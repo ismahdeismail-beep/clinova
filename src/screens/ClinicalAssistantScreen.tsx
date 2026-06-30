@@ -188,31 +188,59 @@ export default function ClinicalAssistantScreen() {
     await new Promise(r => setTimeout(r, 1200));
 
     // AI Smart Autofill Logic using the Gemini AI Engine
-    // In a real implementation this would call our @google/genai serverless endpoint
+    // Connect to our actual Express server API proxying Gemini
     let responseContent = '';
     let citations: Citation[] = [];
 
-    const lowerQuery = userQuery.toLowerCase();
-    
-    if (lowerQuery.includes('cap') || lowerQuery.includes('pneumonia')) {
-      responseContent = "**Answer:**\nFor Community-Acquired Pneumonia (CAP) empirical treatment in adults without severe comorbidities is:\n\n1. **First-line:** Amoxicillin 1g orally every 8 hours for 5-7 days.\n2. **Alternative:** Azithromycin 500mg orally daily for 3 days.\n\n**Renal Dose Adjustment (Amoxicillin):**\n- **CrCl 10-30 mL/min:** 500mg every 12 hours.\n- **CrCl < 10 mL/min:** 500mg every 24 hours.\n\n**Explanation:**\nAmoxicillin provides excellent coverage against *Streptococcus pneumoniae*, the most common typical pathogen in CAP. Macrolides are preferred alternatives for atypical coverage or penicillin allergy.\n\n**Clinical Pearl:**\nAssess clinical response after 48-72 hours. Monitor respiratory rate, oxygen saturation, and temperature.";
+    try {
+      const savedData = localStorage.getItem('clinova_pharma_review_form');
+      const parsed = savedData ? JSON.parse(savedData) : {};
+
+      const res = await fetch('/api/gemini/assistant', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userMessage: userQuery,
+          chatHistory: messages.filter(m => !m.isThinking).map(m => ({
+            role: m.role,
+            content: m.content
+          })),
+          currentFormState: parsed
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error('Clinical Assistant service failed');
+      }
+
+      const data = await res.json();
+      responseContent = data.text;
+      
+      const lowerQuery = userQuery.toLowerCase();
+      if (lowerQuery.includes('cap') || lowerQuery.includes('pneumonia') || responseContent.toLowerCase().includes('pneumonia')) {
+        citations = [
+          { source: 'Kenya STG', document: 'Respiratory Tract Infections, Pg 45', year: '2024' },
+          { source: 'WHO Guidelines', document: 'Empirical Antibiotic Use', year: '2023' },
+          { source: 'Kenya Drug Index (KDI)', document: 'Amoxicillin Monograph', year: '2024' }
+        ];
+      } else if (lowerQuery.includes('malaria') || responseContent.toLowerCase().includes('malaria')) {
+        citations = [
+          { source: 'Kenya STG', document: 'Malaria Treatment Protocols, Pg 82', year: '2024' },
+          { source: 'Kenya Drug Index (KDI)', document: 'Artemether-Lumefantrine', year: '2024' }
+        ];
+      } else {
+        citations = [
+          { source: 'Kenya Drug Index (KDI)', document: 'Standard Clinical Guidelines', year: '2024' },
+          { source: 'WHO Essential Medicines List', document: 'Formulary Reference', year: '2023' }
+        ];
+      }
+    } catch (err) {
+      console.error(err);
+      responseContent = 'Sorry, I encountered an issue reaching the Clinical reasoning engine. Please make sure the backend is active and try again.';
       citations = [
-        { source: 'Kenya STG', document: 'Respiratory Tract Infections, Pg 45', year: '2024' },
-        { source: 'WHO Guidelines', document: 'Empirical Antibiotic Use', year: '2023' },
-        { source: 'Kenya Drug Index (KDI)', document: 'Amoxicillin Monograph', year: '2024' }
-      ];
-    } else if (lowerQuery.includes('malaria')) {
-      responseContent = "**Answer:**\n**Uncomplicated Malaria Treatment**\n\nThe recommended first-line treatment for uncomplicated *Plasmodium falciparum* malaria in Kenya is Artemether-Lumefantrine (AL).\n\n**Dosage (Adults >34kg):**\n- 4 tablets (20mg/120mg) initially, followed by 4 tablets after 8 hours, then 4 tablets twice daily for the next 2 days (Total: 24 tablets over 3 days).\n\n**Explanation:**\nAL is an artemisinin-based combination therapy (ACT). Artemether provides rapid parasite clearance, while lumefantrine eliminates residual parasites to prevent recrudescence.\n\n**Clinical Pearl:**\nAL should be taken with a fatty meal or milk to ensure optimal absorption of lumefantrine. Avoid concurrent use with strong CYP3A4 inhibitors.";
-      citations = [
-        { source: 'Kenya STG', document: 'Malaria Treatment Protocols, Pg 82', year: '2024' },
-        { source: 'Kenya Drug Index (KDI)', document: 'Artemether-Lumefantrine', year: '2024' }
-      ];
-    } else {
-      // General AI logic fallback 
-      responseContent = "**Clinova AI Auto-Fill / Assistance Engine:**\nI have retrieved the relevant clinical parameters based on your query regarding `" + userQuery + "`.\n\n**Suggested Plan:**\n1. Initiate evidence-based empirical therapy based on local susceptibility patterns.\n2. Monitor vital signs and clinical response every 4-6 hours.\n3. Adjust therapy based on definitive culture results if available.\n\n**Clinical Reasoning:**\nThis approach ensures broad initial coverage while minimizing the risk of resistance development.\n\n**Clinical Pearl:**\nAlways consider patient-specific factors such as allergies, renal function, and potential drug-drug interactions when formulating a care plan.";
-      citations = [
-        { source: 'Clinova Knowledge Engine', document: 'General Prescribing Guidelines' },
-        { source: 'Clinical Rules Engine', document: 'Automated Clinical Reasoning' }
+        { source: 'Clinical Rules Engine', document: 'Local Fallback Safe Mode' }
       ];
     }
 

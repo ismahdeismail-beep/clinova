@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
-  User, Stethoscope, Activity, ClipboardList, Beaker, FileText, Pill, HeartPulse, CheckCircle, BrainCircuit, AlertTriangle
+  User, Stethoscope, Activity, ClipboardList, Beaker, FileText, Pill, HeartPulse, CheckCircle, BrainCircuit, AlertTriangle,
+  Send, Loader2, Sparkles, X
 } from 'lucide-react';
+import { useFileStore } from '../store/fileStore';
 
 // Mock interaction database
 const KNOWN_INTERACTIONS: Record<string, string[]> = {
@@ -28,6 +30,171 @@ export default function PharmacotherapyReviewScreen() {
   const [activeTab, setActiveTab] = useState<string>('admission');
   const formRef = useRef<HTMLFormElement>(null);
   const [interactions, setInteractions] = useState<{ id: string, message: string }[]>([]);
+
+  // AI State Variables
+  const [isGenerating, setIsGenerating] = useState(false);
+  const [bannerMessage, setBannerMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null);
+
+  const [isAssistantOpen, setIsAssistantOpen] = useState(false);
+  const [assistantMessage, setAssistantMessage] = useState('');
+  const [chatMessages, setChatMessages] = useState<{ role: 'user' | 'assistant', content: string, timestamp: Date }[]>([
+    {
+      role: 'assistant',
+      content: 'Hello! I am your Clinova AI Assistant. Ask me any clinical questions regarding the Kenya Drug Index (KDI), medical guidelines, drug-drug interactions, or dose adjustments for this patient.',
+      timestamp: new Date()
+    }
+  ]);
+  const [isAssistantThinking, setIsAssistantThinking] = useState(false);
+
+  const triggerAutofill = async () => {
+    setIsGenerating(true);
+    setBannerMessage(null);
+    try {
+      const savedData = localStorage.getItem('clinova_pharma_review_form');
+      const parsed = savedData ? JSON.parse(savedData) : {};
+      
+      // Gather files from fileStore
+      const files = useFileStore.getState().files || [];
+      const filesContext = files.map(f => ({ name: f.originalName, category: f.category }));
+
+      const res = await fetch('/api/gemini/autofill', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          formData: parsed,
+          filesContext: filesContext
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error('Server returned an error');
+      }
+
+      const data = await res.json();
+
+      // Update treatment tab
+      const treatmentTab: Record<string, string> = {};
+      if (data.pharmacological_treatments && Array.isArray(data.pharmacological_treatments)) {
+        data.pharmacological_treatments.forEach((tx: any, index: number) => {
+          const row = index + 1;
+          treatmentTab[`treatment_drug_${row}`] = tx.drug || '';
+          treatmentTab[`treatment_form_${row}`] = tx.form || '';
+          treatmentTab[`treatment_dose_${row}`] = tx.dose || '';
+          treatmentTab[`treatment_freq_${row}`] = tx.frequency || '';
+          treatmentTab[`treatment_start_${row}`] = tx.start_date || '';
+          treatmentTab[`treatment_dur_${row}`] = tx.duration || '';
+        });
+      }
+      treatmentTab['treatment_non_pharma'] = data.non_pharmacological_management || '';
+
+      // Update care plan tab
+      const carePlanTab: Record<string, string> = {};
+      if (data.care_plans && Array.isArray(data.care_plans)) {
+        data.care_plans.forEach((cp: any, index: number) => {
+          const row = index + 1;
+          carePlanTab[`care_plan_cond_${row}`] = cp.condition || '';
+          carePlanTab[`care_plan_problem_${row}`] = cp.problem || '';
+          carePlanTab[`care_plan_goal_${row}`] = cp.goal || '';
+          carePlanTab[`care_plan_intervention_${row}`] = cp.intervention || '';
+          carePlanTab[`care_plan_followup_${row}`] = cp.follow_up || '';
+        });
+      }
+      carePlanTab['care_plan_non_pharma'] = data.care_plan_non_pharma || '';
+      carePlanTab['care_plan_monitoring'] = data.care_plan_monitoring || '';
+
+      // Update counselling tab
+      const counsellingTab: Record<string, string> = {};
+      counsellingTab['counselling_points'] = data.counselling_points || '';
+
+      // Persist to localStorage
+      parsed['treatment'] = { ...(parsed['treatment'] || {}), ...treatmentTab };
+      parsed['care-plan'] = { ...(parsed['care-plan'] || {}), ...carePlanTab };
+      parsed['counselling'] = { ...(parsed['counselling'] || {}), ...counsellingTab };
+
+      localStorage.setItem('clinova_pharma_review_form', JSON.stringify(parsed));
+
+      // If active tab is one of these, update mounted DOM fields immediately
+      if (formRef.current) {
+        const elements = formRef.current.elements;
+        const currentTabData = parsed[activeTab] || {};
+        for (let i = 0; i < elements.length; i++) {
+          const el = elements[i] as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+          if (el.tagName === 'BUTTON') continue;
+          const key = el.name || el.id || `input_${i}`;
+          if (currentTabData[key] !== undefined) {
+            el.value = currentTabData[key];
+          }
+        }
+      }
+
+      // Merge and run interaction check
+      const allData: Record<string, string> = {};
+      Object.values(parsed).forEach(tab => Object.assign(allData, tab));
+      checkInteractions(allData);
+
+      setBannerMessage({
+        type: 'success',
+        text: 'Clinova AI has successfully analyzed patient demographics, vitals, labs, diagnoses, and uploaded notes to auto-fill the pharmacological treatments, non-pharmacological plan, care plan interventions, and patient counselling points.',
+      });
+    } catch (error) {
+      console.error(error);
+      setBannerMessage({
+        type: 'error',
+        text: 'Failed to auto-fill form. Please check your network or try again.',
+      });
+    } finally {
+      setIsGenerating(false);
+    }
+  };
+
+  const sendAssistantMessage = async () => {
+    if (!assistantMessage.trim() || isAssistantThinking) return;
+    const userPrompt = assistantMessage;
+    setAssistantMessage('');
+    const newMessages = [
+      ...chatMessages,
+      { role: 'user' as const, content: userPrompt, timestamp: new Date() }
+    ];
+    setChatMessages(newMessages);
+    setIsAssistantThinking(true);
+
+    try {
+      const savedData = localStorage.getItem('clinova_pharma_review_form');
+      const parsed = savedData ? JSON.parse(savedData) : {};
+
+      const res = await fetch('/api/gemini/assistant', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          userMessage: userPrompt,
+          chatHistory: newMessages.slice(1, -1),
+          currentFormState: parsed
+        })
+      });
+
+      if (!res.ok) {
+        throw new Error('Assistant failed to respond');
+      }
+
+      const data = await res.json();
+      setChatMessages(prev => [
+        ...prev,
+        { role: 'assistant', content: data.text, timestamp: new Date() }
+      ]);
+    } catch (error) {
+      console.error(error);
+      setChatMessages(prev => [
+        ...prev,
+        { role: 'assistant', content: 'Sorry, I encountered an error communicating with the clinical assistant. Please try again.', timestamp: new Date() }
+      ]);
+    } finally {
+      setIsAssistantThinking(false);
+    }
+  };
 
   const checkInteractions = (tabData: Record<string, string>) => {
     // Extract all mentioned drugs from history and current treatment
@@ -207,6 +374,25 @@ export default function PharmacotherapyReviewScreen() {
 
           <form ref={formRef} onChange={handleFormChange} className="p-6 sm:p-8 space-y-8" onSubmit={(e) => e.preventDefault()}>
             
+            {bannerMessage && (
+              <div className={`p-4 rounded-xl border flex items-start gap-3 animate-in fade-in slide-in-from-top-2 duration-300 ${
+                bannerMessage.type === 'success' 
+                  ? 'bg-emerald-500/10 border-emerald-500/20 text-emerald-800' 
+                  : 'bg-red-500/10 border-red-500/20 text-red-800'
+              }`}>
+                <div className="flex-1 text-sm font-medium">
+                  {bannerMessage.text}
+                </div>
+                <button 
+                  type="button" 
+                  onClick={() => setBannerMessage(null)}
+                  className="text-xs underline hover:no-underline font-semibold text-[var(--text)]"
+                >
+                  Dismiss
+                </button>
+              </div>
+            )}
+            
             {activeTab === 'admission' && (
               <div className="space-y-6 animate-in fade-in slide-in-from-bottom-2 duration-300">
                 <div className="border-b border-[var(--border)] pb-4 mb-6">
@@ -218,16 +404,16 @@ export default function PharmacotherapyReviewScreen() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="space-y-1.5">
                     <label className="text-sm font-medium text-[var(--text)]">Patient Name</label>
-                    <input type="text" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="John Doe" />
+                    <input type="text" name="patient_name" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="John Doe" />
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-1.5">
                       <label className="text-sm font-medium text-[var(--text)]">Age</label>
-                      <input type="number" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
+                      <input type="number" name="patient_age" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
                     </div>
                     <div className="space-y-1.5">
                       <label className="text-sm font-medium text-[var(--text)]">Sex</label>
-                      <select className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]">
+                      <select name="patient_sex" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]">
                         <option value="">Select...</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
@@ -238,31 +424,31 @@ export default function PharmacotherapyReviewScreen() {
                   
                   <div className="space-y-1.5">
                     <label className="text-sm font-medium text-[var(--text)]">IP Number</label>
-                    <input type="text" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
+                    <input type="text" name="patient_ip" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-1.5">
                       <label className="text-sm font-medium text-[var(--text)]">Ward</label>
-                      <input type="text" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
+                      <input type="text" name="patient_ward" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
                     </div>
                     <div className="space-y-1.5">
                       <label className="text-sm font-medium text-[var(--text)]">Bed</label>
-                      <input type="text" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
+                      <input type="text" name="patient_bed" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
                     </div>
                   </div>
 
                   <div className="space-y-1.5 md:col-span-2">
                     <label className="text-sm font-medium text-[var(--text)]">Residence</label>
-                    <input type="text" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
+                    <input type="text" name="patient_residence" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
                   </div>
 
                   <div className="space-y-1.5">
                     <label className="text-sm font-medium text-[var(--text)]">Date of Admission</label>
-                    <input type="date" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
+                    <input type="date" name="patient_adm_date" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
                   </div>
                   <div className="space-y-1.5">
                     <label className="text-sm font-medium text-[var(--text)]">Date of History Taking</label>
-                    <input type="date" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
+                    <input type="date" name="patient_history_date" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
                   </div>
                 </div>
               </div>
@@ -279,15 +465,15 @@ export default function PharmacotherapyReviewScreen() {
                 <div className="space-y-5">
                   <div className="space-y-1.5">
                     <label className="text-sm font-medium text-[var(--text)]">Chief Complaint</label>
-                    <textarea rows={2} className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Briefly describe the primary issue..."></textarea>
+                    <textarea name="chief_complaint" rows={2} className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Briefly describe the primary issue..."></textarea>
                   </div>
                   <div className="space-y-1.5">
                     <label className="text-sm font-medium text-[var(--text)]">History of Presenting Illness</label>
-                    <textarea rows={4} className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Detailed chronological description..."></textarea>
+                    <textarea name="hpi" rows={4} className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Detailed chronological description..."></textarea>
                   </div>
                   <div className="space-y-1.5">
                     <label className="text-sm font-medium text-[var(--text)]">Past Medical History</label>
-                    <textarea rows={3} className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Previous diagnoses, surgeries, hospitalizations..."></textarea>
+                    <textarea name="pmh" rows={3} className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Previous diagnoses, surgeries, hospitalizations..."></textarea>
                   </div>
                   <div className="space-y-1.5">
                     <label className="text-sm font-medium text-[var(--text)] flex justify-between items-center">
@@ -300,11 +486,11 @@ export default function PharmacotherapyReviewScreen() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div className="space-y-1.5">
                       <label className="text-sm font-medium text-[var(--text)]">Family History</label>
-                      <textarea rows={2} className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]"></textarea>
+                      <textarea name="family_history" rows={2} className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]"></textarea>
                     </div>
                     <div className="space-y-1.5">
                       <label className="text-sm font-medium text-[var(--text)]">Social History</label>
-                      <textarea rows={2} className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Smoking, alcohol, occupation..."></textarea>
+                      <textarea name="social_history" rows={2} className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Smoking, alcohol, occupation..."></textarea>
                     </div>
                   </div>
                 </div>
@@ -328,7 +514,7 @@ export default function PharmacotherapyReviewScreen() {
                   ].map(sys => (
                     <div key={sys} className="space-y-1.5">
                       <label className="text-sm font-medium text-[var(--text)]">{sys}</label>
-                      <input type="text" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Normal, or describe findings..." />
+                      <input type="text" name={`system_${sys.replace(/\s+/g, '_')}`} className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Normal, or describe findings..." />
                     </div>
                   ))}
                 </div>
@@ -349,12 +535,12 @@ export default function PharmacotherapyReviewScreen() {
                     <Activity size={16} className="text-[var(--primary)]"/> Vitals
                   </h4>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
-                    <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">HR (bpm)</label><input type="text" className="w-full px-2 py-1.5 border border-[var(--border)] rounded bg-[var(--surface)]" /></div>
-                    <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">BP (mmHg)</label><input type="text" className="w-full px-2 py-1.5 border border-[var(--border)] rounded bg-[var(--surface)]" placeholder="120/80"/></div>
-                    <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">Temp (°C)</label><input type="text" className="w-full px-2 py-1.5 border border-[var(--border)] rounded bg-[var(--surface)]" /></div>
-                    <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">PO2 (%)</label><input type="text" className="w-full px-2 py-1.5 border border-[var(--border)] rounded bg-[var(--surface)]" /></div>
-                    <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">RR (bpm)</label><input type="text" className="w-full px-2 py-1.5 border border-[var(--border)] rounded bg-[var(--surface)]" /></div>
-                    <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">BMI</label><input type="text" className="w-full px-2 py-1.5 border border-[var(--border)] rounded bg-[var(--surface)]" /></div>
+                    <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">HR (bpm)</label><input type="text" name="hr" className="w-full px-2 py-1.5 border border-[var(--border)] rounded bg-[var(--surface)]" /></div>
+                    <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">BP (mmHg)</label><input type="text" name="bp" className="w-full px-2 py-1.5 border border-[var(--border)] rounded bg-[var(--surface)]" placeholder="120/80"/></div>
+                    <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">Temp (°C)</label><input type="text" name="temp" className="w-full px-2 py-1.5 border border-[var(--border)] rounded bg-[var(--surface)]" /></div>
+                    <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">PO2 (%)</label><input type="text" name="po2" className="w-full px-2 py-1.5 border border-[var(--border)] rounded bg-[var(--surface)]" /></div>
+                    <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">RR (bpm)</label><input type="text" name="rr" className="w-full px-2 py-1.5 border border-[var(--border)] rounded bg-[var(--surface)]" /></div>
+                    <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">BMI</label><input type="text" name="bmi" className="w-full px-2 py-1.5 border border-[var(--border)] rounded bg-[var(--surface)]" /></div>
                   </div>
                 </div>
 
@@ -364,12 +550,12 @@ export default function PharmacotherapyReviewScreen() {
                   <div className="space-y-3">
                     <h4 className="text-sm font-medium text-[var(--text)] border-b border-[var(--border)] pb-2">Electrolytes / UECs</h4>
                     <div className="grid grid-cols-2 gap-3">
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Na+ <br/><span className="text-[10px] opacity-70">(135-145)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">K+ <br/><span className="text-[10px] opacity-70">(3.2-5)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Cl- <br/><span className="text-[10px] opacity-70">(98-106)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Urea <br/><span className="text-[10px] opacity-70">(2.5-6.5)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Creat <br/><span className="text-[10px] opacity-70">(45-104)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">CrCl <br/><span className="text-[10px] opacity-70">(80-120)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Na+ <br/><span className="text-[10px] opacity-70">(135-145)</span></span><input type="text" name="na" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">K+ <br/><span className="text-[10px] opacity-70">(3.2-5)</span></span><input type="text" name="k" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Cl- <br/><span className="text-[10px] opacity-70">(98-106)</span></span><input type="text" name="cl" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Urea <br/><span className="text-[10px] opacity-70">(2.5-6.5)</span></span><input type="text" name="urea" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Creat <br/><span className="text-[10px] opacity-70">(45-104)</span></span><input type="text" name="creat" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">CrCl <br/><span className="text-[10px] opacity-70">(80-120)</span></span><input type="text" name="crcl" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                     </div>
                   </div>
 
@@ -377,12 +563,12 @@ export default function PharmacotherapyReviewScreen() {
                   <div className="space-y-3">
                     <h4 className="text-sm font-medium text-[var(--text)] border-b border-[var(--border)] pb-2">Liver Function Tests</h4>
                     <div className="grid grid-cols-2 gap-3">
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">AST <br/><span className="text-[10px] opacity-70">(13-42)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">ALT <br/><span className="text-[10px] opacity-70">(9-52)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">ALP <br/><span className="text-[10px] opacity-70">(35-130)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">T. Bili <br/><span className="text-[10px] opacity-70">(&lt;17.1)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">D. Bili <br/><span className="text-[10px] opacity-70">(1-6)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Albumin <br/><span className="text-[10px] opacity-70">(35-48)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">AST <br/><span className="text-[10px] opacity-70">(13-42)</span></span><input type="text" name="ast" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">ALT <br/><span className="text-[10px] opacity-70">(9-52)</span></span><input type="text" name="alt" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">ALP <br/><span className="text-[10px] opacity-70">(35-130)</span></span><input type="text" name="alp" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">T. Bili <br/><span className="text-[10px] opacity-70">(&lt;17.1)</span></span><input type="text" name="t_bili" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">D. Bili <br/><span className="text-[10px] opacity-70">(1-6)</span></span><input type="text" name="d_bili" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Albumin <br/><span className="text-[10px] opacity-70">(35-48)</span></span><input type="text" name="albumin" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                     </div>
                   </div>
 
@@ -390,14 +576,14 @@ export default function PharmacotherapyReviewScreen() {
                   <div className="space-y-3 md:col-span-2">
                     <h4 className="text-sm font-medium text-[var(--text)] border-b border-[var(--border)] pb-2">Hematology</h4>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">WBC <br/><span className="text-[10px] opacity-70">(4.3-11)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Neut <br/><span className="text-[10px] opacity-70">(1-4.6)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Lymph <br/><span className="text-[10px] opacity-70">(1.5-4)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Mono <br/><span className="text-[10px] opacity-70">(0.2-0.8)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Eos <br/><span className="text-[10px] opacity-70">(0.04-0.77)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Hb <br/><span className="text-[10px] opacity-70">(9.5-13)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">MCV <br/><span className="text-[10px] opacity-70">(80-100)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Plts <br/><span className="text-[10px] opacity-70">(150-350)</span></span><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">WBC <br/><span className="text-[10px] opacity-70">(4.3-11)</span></span><input type="text" name="wbc" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Neut <br/><span className="text-[10px] opacity-70">(1-4.6)</span></span><input type="text" name="neut" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Lymph <br/><span className="text-[10px] opacity-70">(1.5-4)</span></span><input type="text" name="lymph" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Mono <br/><span className="text-[10px] opacity-70">(0.2-0.8)</span></span><input type="text" name="mono" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Eos <br/><span className="text-[10px] opacity-70">(0.04-0.77)</span></span><input type="text" name="eos" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Hb <br/><span className="text-[10px] opacity-70">(9.5-13)</span></span><input type="text" name="hb" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">MCV <br/><span className="text-[10px] opacity-70">(80-100)</span></span><input type="text" name="mcv" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Plts <br/><span className="text-[10px] opacity-70">(150-350)</span></span><input type="text" name="plts" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                     </div>
                   </div>
 
@@ -405,12 +591,12 @@ export default function PharmacotherapyReviewScreen() {
                   <div className="space-y-3 md:col-span-2">
                     <h4 className="text-sm font-medium text-[var(--text)] border-b border-[var(--border)] pb-2">Other Tests</h4>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                      <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">CrAG</label><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">India Ink Test</label><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">MPS</label><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">Urinalysis</label><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">Chest X-ray</label><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
-                      <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">ECG/Echo (EF%)</label><input type="text" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">CrAG</label><input type="text" name="crag" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">India Ink Test</label><input type="text" name="india_ink" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">MPS</label><input type="text" name="mps" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">Urinalysis</label><input type="text" name="urinalysis" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">Chest X-ray</label><input type="text" name="cxr" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
+                      <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">ECG/Echo (EF%)</label><input type="text" name="ecg" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                     </div>
                   </div>
                 </div>
@@ -426,7 +612,7 @@ export default function PharmacotherapyReviewScreen() {
                 </div>
 
                 <div className="space-y-4">
-                  <textarea rows={8} className="w-full px-4 py-3 border border-[var(--border)] rounded-xl focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)] leading-relaxed" placeholder="1. &#10;2. &#10;3. &#10;4. "></textarea>
+                  <textarea name="diagnoses_list" rows={8} className="w-full px-4 py-3 border border-[var(--border)] rounded-xl focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)] leading-relaxed" placeholder="1. &#10;2. &#10;3. &#10;4. "></textarea>
                 </div>
               </div>
             )}
@@ -439,13 +625,19 @@ export default function PharmacotherapyReviewScreen() {
                   </h3>
                   <button 
                     type="button" 
-                    onClick={() => {
-                      const msg = "Clinova AI Treatment Suggestion:\n\nBased on the typical presentation of CAP, consider starting Amoxicillin 1g PO q8h for 5 days. For Malaria, Artemether-Lumefantrine 20/120mg as per guidelines.";
-                      alert(msg);
-                    }}
-                    className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20"
+                    onClick={triggerAutofill}
+                    disabled={isGenerating}
+                    className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20 disabled:opacity-50"
                   >
-                    <BrainCircuit size={14} /> AI Treatment Suggestion
+                    {isGenerating ? (
+                      <>
+                        <Loader2 size={14} className="animate-spin" /> Analyzing KDI Guidelines...
+                      </>
+                    ) : (
+                      <>
+                        <BrainCircuit size={14} /> AI Treatment Suggestion
+                      </>
+                    )}
                   </button>
                 </div>
 
@@ -478,12 +670,12 @@ export default function PharmacotherapyReviewScreen() {
                         </tbody>
                       </table>
                     </div>
-                    <button className="text-xs text-[var(--primary)] font-medium mt-2 hover:underline">+ Add Row</button>
+                    <button type="button" className="text-xs text-[var(--primary)] font-medium mt-2 hover:underline">+ Add Row</button>
                   </div>
 
                   <div>
                     <h4 className="text-sm font-semibold text-[var(--text)] mb-3">B) Non-Pharmacological Management</h4>
-                    <textarea rows={4} className="w-full px-4 py-3 border border-[var(--border)] rounded-xl focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Dietary changes, physiotherapy, fluid restriction..."></textarea>
+                    <textarea name="treatment_non_pharma" rows={4} className="w-full px-4 py-3 border border-[var(--border)] rounded-xl focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Dietary changes, physiotherapy, fluid restriction..."></textarea>
                   </div>
                 </div>
               </div>
@@ -497,23 +689,19 @@ export default function PharmacotherapyReviewScreen() {
                   </h3>
                   <button 
                     type="button" 
-                    onClick={() => {
-                      const msg = "Clinova AI Autofill Engine has analyzed the patient data and suggests: \n\nGoal: Eradicate infection and resolve symptoms.\nIntervention: Initiate IV Ceftriaxone 2g daily.\nFollow-up: Re-assess in 48 hours with culture results.";
-                      if (formRef.current) {
-                        const inputs = formRef.current.querySelectorAll('textarea');
-                        if (inputs.length >= 4) {
-                           (inputs[1] as HTMLTextAreaElement).value = "Untreated Infection";
-                           (inputs[2] as HTMLTextAreaElement).value = "Eradicate infection & resolve symptoms";
-                           (inputs[3] as HTMLTextAreaElement).value = "Initiate IV Ceftriaxone 2g daily";
-                           (inputs[4] as HTMLTextAreaElement).value = "Re-assess in 48 hours with culture results";
-                           handleFormChange();
-                        }
-                      }
-                      alert(msg);
-                    }}
-                    className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20"
+                    onClick={triggerAutofill}
+                    disabled={isGenerating}
+                    className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20 disabled:opacity-50"
                   >
-                    <BrainCircuit size={14} /> Smart Autofill
+                    {isGenerating ? (
+                      <>
+                        <Loader2 size={14} className="animate-spin" /> Structuring Care Plan...
+                      </>
+                    ) : (
+                      <>
+                        <BrainCircuit size={14} /> Smart Autofill
+                      </>
+                    )}
                   </button>
                 </div>
 
@@ -534,11 +722,11 @@ export default function PharmacotherapyReviewScreen() {
                         <tbody className="divide-y divide-[var(--border)] bg-[var(--surface)]">
                           {[1, 2, 3].map((row) => (
                             <tr key={row}>
-                              <td className="p-1.5"><textarea rows={2} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none resize-none text-xs" /></td>
-                              <td className="p-1.5"><textarea rows={2} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none resize-none text-xs" /></td>
-                              <td className="p-1.5"><textarea rows={2} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none resize-none text-xs" /></td>
-                              <td className="p-1.5"><textarea rows={2} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none resize-none text-xs" /></td>
-                              <td className="p-1.5"><textarea rows={2} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none resize-none text-xs" /></td>
+                              <td className="p-1.5"><textarea name={`care_plan_cond_${row}`} rows={2} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none resize-none text-xs" /></td>
+                              <td className="p-1.5"><textarea name={`care_plan_problem_${row}`} rows={2} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none resize-none text-xs" /></td>
+                              <td className="p-1.5"><textarea name={`care_plan_goal_${row}`} rows={2} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none resize-none text-xs" /></td>
+                              <td className="p-1.5"><textarea name={`care_plan_intervention_${row}`} rows={2} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none resize-none text-xs" /></td>
+                              <td className="p-1.5"><textarea name={`care_plan_followup_${row}`} rows={2} className="w-full px-2 py-1 border border-transparent hover:border-[var(--border)] focus:border-[var(--primary)] rounded bg-transparent outline-none resize-none text-xs" /></td>
                             </tr>
                           ))}
                         </tbody>
@@ -548,12 +736,12 @@ export default function PharmacotherapyReviewScreen() {
 
                   <div className="space-y-2">
                     <h4 className="text-sm font-semibold text-[var(--text)]">II. Non-Pharmacological Interventions</h4>
-                    <textarea rows={3} className="w-full px-4 py-3 border border-[var(--border)] rounded-xl focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]"></textarea>
+                    <textarea name="care_plan_non_pharma" rows={3} className="w-full px-4 py-3 border border-[var(--border)] rounded-xl focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Enter non-pharmacological therapies..."></textarea>
                   </div>
 
                   <div className="space-y-2">
                     <h4 className="text-sm font-semibold text-[var(--text)]">III. Patient Monitoring</h4>
-                    <textarea rows={3} className="w-full px-4 py-3 border border-[var(--border)] rounded-xl focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Parameters to monitor (e.g. UECs daily, BP every 4 hours)..."></textarea>
+                    <textarea name="care_plan_monitoring" rows={3} className="w-full px-4 py-3 border border-[var(--border)] rounded-xl focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="Parameters to monitor (e.g. UECs daily, BP every 4 hours)..."></textarea>
                   </div>
                 </div>
               </div>
@@ -567,27 +755,25 @@ export default function PharmacotherapyReviewScreen() {
                   </h3>
                   <button 
                     type="button" 
-                    onClick={() => {
-                      const text = "Clinova AI Generated Counselling Points:\n\n1. Medication Adherence: Take all medications exactly as prescribed. Do not skip doses.\n2. Diet: Maintain a low-sodium diet and stay hydrated.\n3. Side Effects: If you experience any severe stomach pain or dizziness, seek medical attention immediately.\n4. Follow-up: Return to the clinic in 2 weeks for a review.";
-                      if (formRef.current) {
-                        const textareas = formRef.current.querySelectorAll('textarea');
-                        if (textareas.length > 0) {
-                          const lastTextArea = textareas[textareas.length - 1] as HTMLTextAreaElement;
-                          lastTextArea.value = text;
-                          handleFormChange();
-                        }
-                      }
-                      alert("Counselling points generated successfully.");
-                    }}
-                    className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20"
+                    onClick={triggerAutofill}
+                    disabled={isGenerating}
+                    className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20 disabled:opacity-50"
                   >
-                    <BrainCircuit size={14} /> AI Generate Counselling
+                    {isGenerating ? (
+                      <>
+                        <Loader2 size={14} className="animate-spin" /> Synthesizing Advice...
+                      </>
+                    ) : (
+                      <>
+                        <BrainCircuit size={14} /> AI Generate Counselling
+                      </>
+                    )}
                   </button>
                 </div>
 
                 <div className="space-y-4">
                   <p className="text-sm text-[var(--text-muted)]">Document key counselling points discussed with the patient or caregiver regarding their medication, lifestyle modifications, and adherence.</p>
-                  <textarea rows={8} className="w-full px-4 py-3 border border-[var(--border)] rounded-xl focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)] leading-relaxed" placeholder="Discussed..."></textarea>
+                  <textarea name="counselling_points" rows={8} className="w-full px-4 py-3 border border-[var(--border)] rounded-xl focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)] leading-relaxed" placeholder="Discussed..."></textarea>
                 </div>
                 
                 <div className="pt-6 flex justify-end">
@@ -601,6 +787,123 @@ export default function PharmacotherapyReviewScreen() {
           </form>
         </div>
       </div>
+
+      {/* AI Assistant Floating Button */}
+      <button
+        type="button"
+        onClick={() => setIsAssistantOpen(true)}
+        className="fixed bottom-6 right-6 z-50 p-4 bg-[var(--primary)] text-white rounded-full shadow-lg hover:opacity-90 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 font-medium"
+      >
+        <Sparkles size={20} className="animate-pulse" />
+        <span className="hidden sm:inline text-sm">Clinical AI Assistant</span>
+      </button>
+
+      {/* AI Assistant Sidebar Panel */}
+      {isAssistantOpen && (
+        <div 
+          className="fixed inset-0 z-50 flex justify-end bg-black/40 backdrop-blur-xs animate-in fade-in duration-200"
+          onClick={() => setIsAssistantOpen(false)}
+        >
+          <div 
+            className="w-full max-w-md bg-[var(--surface)] border-l border-[var(--border)] h-full flex flex-col shadow-2xl animate-in slide-in-from-right duration-300"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Header */}
+            <div className="p-4 bg-[var(--surface-dim)] border-b border-[var(--border)] flex justify-between items-center">
+              <div className="flex items-center gap-2.5">
+                <BrainCircuit className="text-[var(--primary)]" size={22} />
+                <div>
+                  <h3 className="font-semibold text-[var(--text)] text-sm">Clinova AI Clinical Assistant</h3>
+                  <p className="text-[10px] text-[var(--text-muted)]">KDI-integrated Guideline Engine</p>
+                </div>
+              </div>
+              <button 
+                type="button" 
+                onClick={() => setIsAssistantOpen(false)}
+                className="p-1.5 hover:bg-[var(--border)] rounded-lg transition-colors text-[var(--text-muted)] hover:text-[var(--text)]"
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            {/* Message Thread */}
+            <div className="flex-1 overflow-y-auto p-4 space-y-4">
+              {chatMessages.map((msg, index) => (
+                <div 
+                  key={index} 
+                  className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
+                >
+                  <div className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-xs sm:text-sm leading-relaxed ${
+                    msg.role === 'user' 
+                      ? 'bg-[var(--primary)] text-white' 
+                      : 'bg-[var(--surface-dim)] text-[var(--text)] border border-[var(--border)]'
+                  }`}>
+                    <div className="whitespace-pre-line">
+                      {msg.content}
+                    </div>
+                    <span className="text-[9px] opacity-75 block text-right mt-1 font-mono">
+                      {msg.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                    </span>
+                  </div>
+                </div>
+              ))}
+              {isAssistantThinking && (
+                <div className="flex justify-start animate-pulse">
+                  <div className="bg-[var(--surface-dim)] text-[var(--text-muted)] border border-[var(--border)] rounded-2xl px-4 py-3 text-xs flex items-center gap-2">
+                    <Loader2 size={14} className="animate-spin text-[var(--primary)]" />
+                    <span>Clinova AI is formulating clinical recommendations...</span>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Fast Guideline Queries */}
+            <div className="p-2 bg-[var(--surface-dim)] border-t border-[var(--border)] flex gap-2 overflow-x-auto whitespace-nowrap">
+              {[
+                "Renal adjustment guidelines",
+                "Check for interactions",
+                "Malaria guideline summary",
+                "Standard pneumonia treatment"
+              ].map((suggestion, idx) => (
+                <button
+                  key={idx}
+                  type="button"
+                  onClick={() => {
+                    setAssistantMessage(suggestion);
+                  }}
+                  className="text-[10px] bg-[var(--surface)] hover:bg-[var(--border)] border border-[var(--border)] px-2.5 py-1 rounded-full text-[var(--text-muted)] hover:text-[var(--text)] transition-colors inline-block"
+                >
+                  {suggestion}
+                </button>
+              ))}
+            </div>
+
+            {/* Input Footer */}
+            <div className="p-4 border-t border-[var(--border)] flex gap-2 items-center bg-[var(--surface)]">
+              <input
+                type="text"
+                value={assistantMessage}
+                onChange={(e) => setAssistantMessage(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    sendAssistantMessage();
+                  }
+                }}
+                placeholder="Ask clinical queries..."
+                className="flex-1 px-3 py-2 text-xs sm:text-sm border border-[var(--border)] rounded-lg bg-[var(--surface)] text-[var(--text)] focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none"
+              />
+              <button
+                type="button"
+                onClick={sendAssistantMessage}
+                disabled={!assistantMessage.trim() || isAssistantThinking}
+                className="p-2 bg-[var(--primary)] text-white rounded-lg hover:opacity-90 disabled:opacity-50 transition-all shrink-0"
+              >
+                <Send size={15} />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

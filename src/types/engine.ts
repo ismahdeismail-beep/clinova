@@ -125,6 +125,8 @@ export interface StoredFile {
   updatedAt: number;
   hash: string;
   accessibleTo: string[];
+  cloudinaryPublicId?: string;
+  cloudinaryUrl?: string;
 }
 
 export interface FileUploadOptions {

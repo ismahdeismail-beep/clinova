@@ -3,6 +3,7 @@ import path from 'path';
 import { createServer as createViteServer } from 'vite';
 import { GoogleGenAI, Type } from '@google/genai';
 import dotenv from 'dotenv';
+import crypto from 'crypto';
 
 // Load environment variables
 dotenv.config();
@@ -219,6 +220,47 @@ User Clinical Query: "${userMessage}"
   } catch (error: any) {
     console.error('Clinical Assistant error:', error);
     res.status(500).json({ error: error.message || 'AI assistant failed' });
+  }
+});
+
+// Secure Cloudinary Destroy API
+app.post('/api/cloudinary/destroy', async (req, res) => {
+  try {
+    const { publicId } = req.body;
+    if (!publicId) {
+      return res.status(400).json({ error: 'Missing publicId' });
+    }
+
+    const cloudName = process.env.VITE_CLOUDINARY_CLOUD_NAME || 'demo';
+    const apiKey = process.env.CLOUDINARY_API_KEY;
+    const apiSecret = process.env.CLOUDINARY_API_SECRET;
+
+    if (!apiKey || !apiSecret) {
+      console.warn('Cloudinary API credentials missing. Skipping cloud asset deletion.');
+      return res.json({ result: 'skipped', message: 'No API credentials configured on server' });
+    }
+
+    const timestamp = Math.floor(Date.now() / 1000);
+    const signatureInput = `public_id=${publicId}&timestamp=${timestamp}${apiSecret}`;
+    const signature = crypto.createHash('sha1').update(signatureInput).digest('hex');
+
+    const formData = new URLSearchParams();
+    formData.append('public_id', publicId);
+    formData.append('timestamp', timestamp.toString());
+    formData.append('api_key', apiKey);
+    formData.append('signature', signature);
+
+    const response = await fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/destroy`, {
+      method: 'POST',
+      body: formData,
+    });
+
+    const data = await response.json();
+    console.log(`Cloudinary deletion response for ${publicId}:`, data);
+    res.json({ result: data.result || 'ok', details: data });
+  } catch (error: any) {
+    console.error('Cloudinary destroy proxy error:', error);
+    res.status(500).json({ error: error.message || 'Failed to destroy Cloudinary image' });
   }
 });
 

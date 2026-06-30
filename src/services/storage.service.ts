@@ -8,6 +8,7 @@ import {
 } from 'firebase/firestore';
 import { storage, db } from '../lib/firebase';
 import type { StoredFile, FileCategory, FileUploadOptions, UploadProgress, UploadResult } from '../types/engine';
+import { MediaService } from './media.service';
 
 const FILES_COLLECTION = 'files';
 const STORAGE_ROOT = 'clinova';
@@ -97,6 +98,19 @@ export const StorageService = {
           try {
             const downloadUrl = await getDownloadURL(uploadTask.snapshot.ref);
 
+            let cloudinaryUrl: string | undefined = undefined;
+            let cloudinaryPublicId: string | undefined = undefined;
+
+            if (file.type.startsWith('image/') || options.category === 'patient_image') {
+              try {
+                const cloudDetails = await MediaService.uploadImageDetails(file);
+                cloudinaryUrl = cloudDetails.secure_url;
+                cloudinaryPublicId = cloudDetails.public_id;
+              } catch (cloudinaryErr) {
+                console.warn('Cloudinary upload failed, but Firebase upload succeeded:', cloudinaryErr);
+              }
+            }
+
             const storedFile: StoredFile = {
               id: fileId,
               originalName: file.name,
@@ -114,11 +128,12 @@ export const StorageService = {
               updatedAt: Date.now(),
               hash,
               accessibleTo: [],
+              ...(cloudinaryUrl ? { cloudinaryUrl, cloudinaryPublicId } : {}),
             };
 
             await setDoc(doc(db, FILES_COLLECTION, fileId), storedFile);
 
-            resolve({ file: storedFile, url: downloadUrl });
+            resolve({ file: storedFile, url: cloudinaryUrl || downloadUrl });
           } catch (err) {
             reject(err);
           }
@@ -143,8 +158,37 @@ export const StorageService = {
   async deleteFile(fileId: string): Promise<void> {
     const file = await this.getFile(fileId);
     if (!file) throw new Error(`File ${fileId} not found`);
-    const storageRef = ref(storage, file.storagePath);
-    await deleteObject(storageRef);
+
+    // 1. Delete from Firebase Storage (if possible)
+    try {
+      const storageRef = ref(storage, file.storagePath);
+      await deleteObject(storageRef);
+    } catch (storageErr) {
+      console.warn('Firebase storage file deletion skipped or failed (might already be deleted):', storageErr);
+    }
+
+    // 2. Delete from Cloudinary if public ID is present
+    if (file.cloudinaryPublicId) {
+      try {
+        const response = await fetch('/api/cloudinary/destroy', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ publicId: file.cloudinaryPublicId }),
+        });
+        if (!response.ok) {
+          console.warn('Failed to delete Cloudinary image via backend API proxy');
+        } else {
+          const resData = await response.json();
+          console.log('Cloudinary destruction outcome:', resData);
+        }
+      } catch (cloudinaryErr) {
+        console.warn('Error calling Cloudinary destroy proxy:', cloudinaryErr);
+      }
+    }
+
+    // 3. Delete metadata document from Firestore
     await deleteDoc(doc(db, FILES_COLLECTION, fileId));
   },
 

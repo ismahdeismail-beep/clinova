@@ -33,6 +33,7 @@ import { useAuth } from "../contexts/AuthContext";
 
 import { PatientTriage } from "../components/PatientTriage";
 import { ShiftHandoverModal } from "../components/ShiftHandoverModal";
+import ClinovaLogo from "../components/ClinovaLogo";
 
 export default function DashboardScreen() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -45,16 +46,21 @@ export default function DashboardScreen() {
       {/* Welcome Banner */}
       <div className="bg-gradient-to-r from-[var(--primary)] to-[var(--primary-hover)] rounded-2xl p-8 text-white shadow-sm relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-          <div>
-            <h1 className="text-3xl font-bold mb-2 tracking-tight">
-              Pharmacy AI &amp; Study Assistant
-            </h1>
-            <p className="text-white/80 max-w-lg text-sm leading-relaxed">
-              {isAdmin
-                ? "Admin Repository Management: Add authoritative books, formularies, and reference URLs accessible to the entire learning community."
-                : "Your automated AI partner for pharmacotherapy reviews, instant answers from KDI and Medscape, and converting study notes into exam questions &amp; podcasts."}
-            </p>
+        <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+          <div className="flex flex-col sm:flex-row items-start gap-4 flex-1">
+            <div className="w-14 h-14 rounded-2xl bg-white/15 flex items-center justify-center text-white shrink-0 shadow-inner backdrop-blur-md">
+              <ClinovaLogo size={32} variant="light" />
+            </div>
+            <div>
+              <h1 className="text-3xl font-bold mb-2 tracking-tight">
+                Clinova OS
+              </h1>
+              <p className="text-white/85 max-w-lg text-sm leading-relaxed">
+                {isAdmin
+                  ? "Admin Repository Management: Add authoritative books, formularies, and reference URLs accessible to the entire learning community."
+                  : "Your automated AI partner for pharmacotherapy reviews, instant answers from KDI and Medscape, and converting study notes into exam questions &amp; podcasts."}
+              </p>
+            </div>
           </div>
           <div className="flex items-center gap-3">
             <Link

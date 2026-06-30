@@ -25,6 +25,12 @@ export default defineConfig(() => {
           background_color: '#0E0E10',
           display: 'standalone',
           icons: [
+            {
+              src: 'clinova_logo.jpg',
+              sizes: '1024x1024',
+              type: 'image/jpeg',
+              purpose: 'any'
+            },
              {
               src: 'pwa-192x192.png',
               sizes: '192x192',

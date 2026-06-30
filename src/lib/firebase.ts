@@ -23,7 +23,7 @@ export const db = initializeFirestore(app, {
     tabManager: persistentMultipleTabManager()
   }),
   experimentalAutoDetectLongPolling: true
-});
+}, config.firestoreDatabaseId || '(default)');
 
 export const auth = getAuth(app);
 export const storage = getStorage(app);

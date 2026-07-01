@@ -54,11 +54,24 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       if (firebaseUser) {
-        // Try to fetch user role from firestore
+        // Set provisional/default user state immediately so the app can render and not hang
+        const provisionalName = firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Guest';
+        if (active) {
+          setUserData(prev => prev && prev.id === firebaseUser.uid ? prev : {
+            id: firebaseUser.uid,
+            name: provisionalName,
+            email: firebaseUser.email || '',
+            role: 'user', // default provisional role
+            photoURL: firebaseUser.photoURL || undefined
+          });
+          setLoading(false); // Unblock the loading screen immediately!
+        }
+
+        // Try to fetch user role from firestore in the background
         try {
           const userDoc = await getDoc(doc(db, 'users', firebaseUser.uid));
           let role: UserRole = 'user';
-          let name = firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Guest';
+          let name = provisionalName;
           
           if (userDoc.exists()) {
             role = userDoc.data().role as UserRole;
@@ -87,11 +100,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             });
           }
         } catch (e) {
-          console.error("Error fetching user role", e);
+          console.warn("Error fetching user role (using safe default profile):", e);
           if (active) {
             setUserData({
               id: firebaseUser.uid,
-              name: firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Guest',
+              name: provisionalName,
               email: firebaseUser.email || '',
               role: 'user',
               photoURL: firebaseUser.photoURL || undefined
@@ -102,9 +115,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         if (active && !localStorage.getItem('clinova-mock-user')) {
           setUserData(null);
         }
-      }
-      if (active) {
-        setLoading(false);
+        if (active) {
+          setLoading(false);
+        }
       }
     });
 

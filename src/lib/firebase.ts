@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { initializeFirestore, persistentLocalCache, persistentMultipleTabManager, setLogLevel } from 'firebase/firestore';
+import { getFirestore, initializeFirestore, persistentLocalCache, persistentMultipleTabManager, setLogLevel } from 'firebase/firestore';
 import { getAuth, connectAuthEmulator } from 'firebase/auth';
 import { getStorage } from 'firebase/storage';
 import config from '../../firebase-applet-config.json';
@@ -18,13 +18,26 @@ export const app = initializeApp(firebaseConfig);
 // Suppress Firestore connection warnings when offline or using dummy credentials
 setLogLevel('error');
 
-export const db = initializeFirestore(app, {
-  localCache: persistentLocalCache({
-    tabManager: persistentMultipleTabManager()
-  }),
-  experimentalAutoDetectLongPolling: true
-}, config.firestoreDatabaseId || '(default)');
+let dbInstance;
+try {
+  dbInstance = initializeFirestore(app, {
+    localCache: persistentLocalCache({
+      tabManager: persistentMultipleTabManager()
+    }),
+    experimentalAutoDetectLongPolling: true
+  }, config.firestoreDatabaseId || '(default)');
+} catch (e) {
+  console.warn("Firestore advanced initialization failed (likely due to iframe sandboxing or disabled third-party cookies). Falling back to basic Firestore:", e);
+  try {
+    dbInstance = getFirestore(app);
+  } catch (err) {
+    console.error("Critical: Standard Firestore fallback also failed", err);
+    throw err;
+  }
+}
 
+export const db = dbInstance;
 export const auth = getAuth(app);
 export const storage = getStorage(app);
+
 

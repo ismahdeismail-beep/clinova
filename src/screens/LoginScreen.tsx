@@ -5,7 +5,7 @@ import { useAuth } from '../contexts/AuthContext';
 import ClinovaLogo from '../components/ClinovaLogo';
 
 export default function LoginScreen() {
-  const { loginWithGoogle, loginWithEmail, signUpWithEmail, userData } = useAuth();
+  const { loginWithGoogle, loginWithEmail, signUpWithEmail, userData, loginAs } = useAuth();
   const navigate = useNavigate();
   
   const [isSignUp, setIsSignUp] = useState(false);
@@ -58,7 +58,13 @@ export default function LoginScreen() {
       navigate('/', { replace: true });
     } catch (err: any) {
       console.error(err);
-      setErrorMsg('Google authentication failed. Please try again.');
+      let errMsg = 'Google sign-in failed. Please use Email/Password or the Quick Demo Sign-In below.';
+      if (err?.code === 'auth/unauthorized-domain') {
+        errMsg = 'Google Sign-in: This domain is not authorized in your Firebase console. Please use standard Email/Password or click "Quick Demo Sign-In" below!';
+      } else if (err?.code === 'auth/popup-blocked') {
+        errMsg = 'The sign-in popup was blocked. Please allow popups or try the Quick Demo Sign-In.';
+      }
+      setErrorMsg(errMsg);
       setIsLoading(false);
     }
   };
@@ -187,6 +193,46 @@ export default function LoginScreen() {
               </svg>
               <span>Continue with Google</span>
             </button>
+          </div>
+
+          {/* Separator */}
+          <div className="relative flex py-2 items-center mt-6">
+            <div className="flex-grow border-t border-[var(--border)]"></div>
+            <span className="flex-shrink mx-4 text-[10px] text-[var(--text-muted)] font-semibold uppercase tracking-wider">Demo Quick Access</span>
+            <div className="flex-grow border-t border-[var(--border)]"></div>
+          </div>
+
+          <div className="mt-4 grid grid-cols-2 gap-3">
+            <button
+              onClick={async () => {
+                setIsLoading(true);
+                await loginAs('admin');
+                navigate('/', { replace: true });
+              }}
+              disabled={isLoading}
+              className="py-2.5 px-3 bg-gradient-to-b from-purple-500/10 to-purple-500/5 hover:from-purple-500/20 hover:to-purple-500/10 border border-purple-500/20 text-purple-700 dark:text-purple-300 font-semibold text-xs rounded-xl transition-all shadow-sm flex flex-col items-center justify-center gap-1 cursor-pointer"
+            >
+              <span className="font-bold">Admin Clinician</span>
+              <span className="text-[9px] text-purple-600/70 dark:text-purple-400/70 font-normal">Full privileges</span>
+            </button>
+            <button
+              onClick={async () => {
+                setIsLoading(true);
+                await loginAs('user');
+                navigate('/', { replace: true });
+              }}
+              disabled={isLoading}
+              className="py-2.5 px-3 bg-gradient-to-b from-blue-500/10 to-blue-500/5 hover:from-blue-500/20 hover:to-blue-500/10 border border-blue-500/20 text-blue-700 dark:text-blue-300 font-semibold text-xs rounded-xl transition-all shadow-sm flex flex-col items-center justify-center gap-1 cursor-pointer"
+            >
+              <span className="font-bold">Clinical Assistant</span>
+              <span className="text-[9px] text-blue-600/70 dark:text-blue-400/70 font-normal">Standard review</span>
+            </button>
+          </div>
+
+          <div className="mt-4 text-center">
+            <p className="text-[10px] text-[var(--text-muted)] font-medium">
+              Demo Credentials: <span className="font-semibold text-[var(--text)]">admin@clinova.health</span> / <span className="font-semibold text-[var(--text)]">password</span>
+            </p>
           </div>
         </div>
 

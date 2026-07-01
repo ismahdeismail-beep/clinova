@@ -1,5 +1,13 @@
 import { createContext, useContext, ReactNode, useState, useEffect } from 'react';
-import { onAuthStateChanged, signOut, GoogleAuthProvider, signInWithPopup, signInAnonymously } from 'firebase/auth';
+import { 
+  onAuthStateChanged, 
+  signOut, 
+  GoogleAuthProvider, 
+  signInWithPopup, 
+  signInAnonymously,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword
+} from 'firebase/auth';
 import { auth, db } from '../lib/firebase';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 
@@ -20,6 +28,8 @@ interface AuthContextType {
   loginAs: (role: UserRole) => Promise<void>;
   loginWithGoogle: () => Promise<void>;
   loginReturning: (name: string, role: UserRole) => Promise<void>;
+  loginWithEmail: (email: string, password: string) => Promise<void>;
+  signUpWithEmail: (email: string, password: string, name: string) => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | null>(null);
@@ -35,12 +45,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         try {
           const userDoc = await getDoc(doc(db, 'users', firebaseUser.uid));
           let role: UserRole = 'user';
+          let name = firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Guest';
+          
           if (userDoc.exists()) {
             role = userDoc.data().role as UserRole;
+            name = userDoc.data().name || name;
           } else {
             // New user, save them
             await setDoc(doc(db, 'users', firebaseUser.uid), {
-              name: firebaseUser.displayName || 'Guest',
+              name,
               email: firebaseUser.email || '',
               role: 'user',
             });
@@ -48,7 +61,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           
           setUserData({
             id: firebaseUser.uid,
-            name: firebaseUser.displayName || 'Guest',
+            name,
             email: firebaseUser.email || '',
             role,
             photoURL: firebaseUser.photoURL || undefined
@@ -58,7 +71,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           // Fallback
           setUserData({
             id: firebaseUser.uid,
-            name: firebaseUser.displayName || 'Guest',
+            name: firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Guest',
             email: firebaseUser.email || '',
             role: 'user',
             photoURL: firebaseUser.photoURL || undefined
@@ -100,6 +113,32 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     } catch (error) {
       console.error("Google sign in failed", error);
       setLoading(false);
+      throw error;
+    }
+  };
+
+  const loginWithEmail = async (email: string, password: string) => {
+    setLoading(true);
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+    } catch (error) {
+      setLoading(false);
+      throw error;
+    }
+  };
+
+  const signUpWithEmail = async (email: string, password: string, name: string) => {
+    setLoading(true);
+    try {
+      const res = await createUserWithEmailAndPassword(auth, email, password);
+      await setDoc(doc(db, 'users', res.user.uid), {
+        name: name || email.split('@')[0],
+        email: email,
+        role: 'user',
+      });
+    } catch (error) {
+      setLoading(false);
+      throw error;
     }
   };
 
@@ -113,9 +152,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   return (
-    <AuthContext.Provider value={{ userData, loading, logout, loginAs, loginWithGoogle, loginReturning }}>
-      {/* We can show a simple loading state or just render children. Let's render children so app doesn't flash white heavily, 
-          but if it's loading we could return null or a spinner. Let's just render children. */}
+    <AuthContext.Provider value={{ 
+      userData, 
+      loading, 
+      logout, 
+      loginAs, 
+      loginWithGoogle, 
+      loginReturning,
+      loginWithEmail,
+      signUpWithEmail
+    }}>
       {children}
     </AuthContext.Provider>
   );
@@ -130,7 +176,9 @@ export function useAuth() {
       logout: async () => {}, 
       loginAs: async () => {},
       loginWithGoogle: async () => {},
-      loginReturning: async () => {}
+      loginReturning: async () => {},
+      loginWithEmail: async () => {},
+      signUpWithEmail: async () => {}
     };
   }
   return context;

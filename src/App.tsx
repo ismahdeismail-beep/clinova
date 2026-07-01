@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
 import { 
   Home, Users, FolderOpen, ClipboardList, Pill, Bot, 
   BookOpen, BarChart3, Bell, Settings, Menu, Search, MessageSquare, ShieldCheck
@@ -75,9 +75,6 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
             </span>
           )}
         </Link>
-        <button className="p-2 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary-container)] rounded-full transition-colors hidden sm:block">
-          <MessageSquare size={20} />
-        </button>
         <Link to="/settings" className="p-2 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary-container)] rounded-full transition-colors hidden sm:block">
           <Settings size={20} />
         </Link>
@@ -162,6 +159,17 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
   );
 }
 
+function AdminLoginScreen() {
+  const { loginAs } = useAuth();
+  const navigate = useNavigate();
+  
+  React.useEffect(() => {
+    loginAs('admin').then(() => navigate('/'));
+  }, [loginAs, navigate]);
+
+  return <div className="min-h-screen bg-[var(--bg)] flex items-center justify-center p-8 text-center text-sm font-medium text-[var(--text-muted)] animate-pulse">Authenticating Admin Access...</div>;
+}
+
 function AppContent() {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
   const { userData } = useAuth();
@@ -170,6 +178,7 @@ function AppContent() {
     return (
       <Routes>
         <Route path="/login" element={<LoginScreen />} />
+        <Route path="/admin-access" element={<AdminLoginScreen />} />
         <Route path="*" element={<LandingScreen />} />
       </Routes>
     );

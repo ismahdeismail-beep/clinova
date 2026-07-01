@@ -4,19 +4,27 @@ import { Users, Database, ShieldAlert, Activity, Server, TrendingUp, CheckCircle
 export default function AdminDashboardScreen() {
   const [isAuditing, setIsAuditing] = useState(false);
   const [auditComplete, setAuditComplete] = useState(false);
+  const [auditResult, setAuditResult] = useState<string | null>(null);
 
   const handleRunAudit = () => {
     setIsAuditing(true);
     setAuditComplete(false);
+    setAuditResult(null);
     setTimeout(() => {
       setIsAuditing(false);
       setAuditComplete(true);
-      alert("System Audit Completed Successfully.\n- 0 Vulnerabilities Found\n- All Clinical Data Encrypted\n- Access Controls Verified\n- No Anomalous Access Patterns Detected");
+      setAuditResult("System Audit Completed Successfully: 0 Vulnerabilities Found, All Clinical Data Encrypted, Access Controls Verified, No Anomalous Access Patterns Detected.");
     }, 2500);
   };
 
   return (
     <div className="p-6 max-w-6xl mx-auto space-y-8 pb-24">
+      {auditResult && (
+        <div className="mb-4 p-4 bg-[var(--success)]/10 border border-[var(--success)]/20 rounded-xl flex items-start gap-3 text-sm text-[var(--success)]">
+          <CheckCircle size={20} className="shrink-0 mt-0.5" />
+          <p>{auditResult}</p>
+        </div>
+      )}
       <div className="mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <h1 className="text-3xl font-bold text-[var(--text)] mb-2 tracking-tight">Admin Console</h1>
@@ -30,9 +38,6 @@ export default function AdminDashboardScreen() {
           >
             {isAuditing ? <Loader2 size={18} className="animate-spin" /> : <ShieldAlert size={18} />}
             {isAuditing ? 'Running Audit...' : 'Run System Audit'}
-          </button>
-          <button className="px-4 py-2 bg-[var(--primary)] text-white font-medium rounded-lg hover:opacity-90 transition-opacity">
-            System Settings
           </button>
         </div>
       </div>

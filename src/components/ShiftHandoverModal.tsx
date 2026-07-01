@@ -75,7 +75,6 @@ export function ShiftHandoverModal({ onClose }: ShiftHandoverModalProps) {
       pdf.save("shift_handover_report.pdf");
     } catch (error) {
       console.error("Error generating PDF:", error);
-      alert("Failed to generate PDF report.");
     } finally {
       setIsGenerating(false);
     }

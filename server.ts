@@ -5,13 +5,52 @@ import { GoogleGenAI, Type } from '@google/genai';
 import dotenv from 'dotenv';
 import crypto from 'crypto';
 
+import multer from 'multer';
+
 // Load environment variables
 dotenv.config();
 
 const app = express();
 const PORT = 3000;
+const upload = multer({ storage: multer.memoryStorage() });
 
 app.use(express.json());
+
+// Proxy Cloudinary Upload
+app.post('/api/cloudinary/upload', upload.single('file'), async (req, res) => {
+  try {
+    if (!req.file) {
+      return res.status(400).json({ error: 'No file provided' });
+    }
+
+    const cloudName = process.env.VITE_CLOUDINARY_CLOUD_NAME || 'demo';
+    const uploadPreset = process.env.VITE_CLOUDINARY_UPLOAD_PRESET || '';
+
+    const formData = new FormData();
+    const blob = new Blob([req.file.buffer], { type: req.file.mimetype });
+    formData.append('file', blob, req.file.originalname);
+    formData.append('upload_preset', uploadPreset);
+
+    const response = await fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
+      method: 'POST',
+      body: formData as any,
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.error?.message || 'Failed to upload to Cloudinary');
+    }
+
+    const data = await response.json();
+    res.json({
+      secure_url: data.secure_url,
+      public_id: data.public_id,
+    });
+  } catch (error: any) {
+    console.error('Cloudinary proxy upload error:', error);
+    res.status(500).json({ error: error.message || 'Failed to upload image' });
+  }
+});
 
 // Initialize Gemini Client
 const ai = new GoogleGenAI({

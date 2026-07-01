@@ -94,7 +94,7 @@ export default function ClinicalAssistantScreen() {
 
   const toggleListening = () => {
     if (!recognitionRef.current) {
-      alert("Voice recognition is not supported in this browser.");
+      setQueryError("Voice recognition is not supported in this browser.");
       return;
     }
 

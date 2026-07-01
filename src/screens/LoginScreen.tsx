@@ -46,19 +46,6 @@ export default function LoginScreen() {
     }
   };
 
-  const handleDemoAccess = async (role: 'admin' | 'user') => {
-    setIsLoading(true);
-    setErrorMsg(null);
-    try {
-      await loginAs(role);
-      navigate('/');
-    } catch (err: any) {
-      console.error(err);
-      setErrorMsg('Failed to log in with demo account.');
-      setIsLoading(false);
-    }
-  };
-
   return (
     <div className="min-h-screen bg-[var(--bg)] flex flex-col items-center justify-center p-4 selection:bg-[var(--primary)] selection:text-white">
       <div className="w-full max-w-md bg-[var(--surface)] border border-[var(--border)] rounded-3xl shadow-xl overflow-hidden animate-in fade-in zoom-in-95 duration-300">
@@ -159,37 +146,6 @@ export default function LoginScreen() {
               className="text-xs text-[var(--primary)] hover:underline font-medium"
             >
               {isSignUp ? 'Already have an account? Sign In' : "Don't have an account? Sign Up"}
-            </button>
-          </div>
-
-          <div className="relative my-6">
-            <div className="absolute inset-0 flex items-center">
-              <span className="w-full border-t border-[var(--border)]" />
-            </div>
-            <div className="relative flex justify-center text-[10px] uppercase">
-              <span className="bg-[var(--surface)] px-2.5 text-[var(--text-muted)] font-medium">Or Quick Demo Play</span>
-            </div>
-          </div>
-
-          {/* Fast Demo Access */}
-          <div className="grid grid-cols-2 gap-2.5">
-            <button
-              type="button"
-              onClick={() => handleDemoAccess('admin')}
-              disabled={isLoading}
-              className="py-2 px-3 bg-[var(--bg)] hover:bg-[var(--primary-container)]/20 border border-[var(--border)] hover:border-[var(--primary)]/30 text-[11px] font-bold text-[var(--text)] rounded-xl transition-all text-center flex flex-col items-center justify-center"
-            >
-              <span className="text-[var(--primary)] font-semibold">Demo Admin</span>
-              <span className="text-[9px] text-[var(--text-muted)] font-normal mt-0.5">Full access (Dr. Sarah)</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => handleDemoAccess('user')}
-              disabled={isLoading}
-              className="py-2 px-3 bg-[var(--bg)] hover:bg-[var(--primary-container)]/20 border border-[var(--border)] hover:border-[var(--primary)]/30 text-[11px] font-bold text-[var(--text)] rounded-xl transition-all text-center flex flex-col items-center justify-center"
-            >
-              <span className="text-blue-600 font-semibold">Demo Pharmacist</span>
-              <span className="text-[9px] text-[var(--text-muted)] font-normal mt-0.5">Standard access (John D)</span>
             </button>
           </div>
 

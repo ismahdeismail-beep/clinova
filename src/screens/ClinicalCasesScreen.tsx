@@ -1,25 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { 
-  FolderOpen, Plus, Search, Loader2, X, User, Calendar, FileText, 
-  Tag, Trash2, ArrowRight, ClipboardList, CheckCircle2 
+  FolderOpen, Plus, Search, Loader2, X, BookOpen, 
+  Lightbulb, CheckCircle2, ChevronRight, BookMarked, Trash2
 } from 'lucide-react';
 import { db, auth } from '../lib/firebase';
 import { 
   collection, getDocs, addDoc, deleteDoc, doc, updateDoc, 
-  query, where, orderBy, Timestamp 
+  query, orderBy, Timestamp 
 } from 'firebase/firestore';
 import { handleFirestoreError, OperationType } from '../lib/firestore-error';
 
 interface ClinicalCase {
   id: string;
   title: string;
-  patientName: string;
-  ipNumber: string;
-  ward: string;
-  chiefComplaint: string;
-  historyOfPresentIllness: string;
+  topic: string;
+  difficulty: 'Beginner' | 'Intermediate' | 'Advanced';
+  scenario: string;
+  learningPoints: string;
   createdAt: any;
-  status: 'active' | 'archived';
+  status: 'published' | 'draft';
   createdBy: string;
   createdByName: string;
 }
@@ -35,11 +34,10 @@ export default function ClinicalCasesScreen() {
   
   // New Case form state
   const [newTitle, setNewTitle] = useState('');
-  const [newPatientName, setNewPatientName] = useState('');
-  const [newIpNumber, setNewIpNumber] = useState('');
-  const [newWard, setNewWard] = useState('Medical Ward A');
-  const [newChiefComplaint, setNewChiefComplaint] = useState('');
-  const [newHpi, setNewHpi] = useState('');
+  const [newTopic, setNewTopic] = useState('Cardiology');
+  const [newDifficulty, setNewDifficulty] = useState<'Beginner' | 'Intermediate' | 'Advanced'>('Beginner');
+  const [newScenario, setNewScenario] = useState('');
+  const [newLearningPoints, setNewLearningPoints] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const fetchCases = async () => {
@@ -54,15 +52,14 @@ export default function ClinicalCasesScreen() {
         caseList.push({
           id: docSnap.id,
           title: data.title || 'Untitled Case',
-          patientName: data.patientName || 'N/A',
-          ipNumber: data.ipNumber || 'N/A',
-          ward: data.ward || 'N/A',
-          chiefComplaint: data.chiefComplaint || 'N/A',
-          historyOfPresentIllness: data.historyOfPresentIllness || 'N/A',
+          topic: data.topic || data.ward || 'General Practice',
+          difficulty: data.difficulty || 'Intermediate',
+          scenario: data.scenario || data.chiefComplaint || data.historyOfPresentIllness || 'No scenario provided.',
+          learningPoints: data.learningPoints || 'No learning points documented.',
           createdAt: data.createdAt,
-          status: data.status || 'active',
+          status: data.status === 'active' ? 'published' : (data.status || 'published'),
           createdBy: data.createdBy || '',
-          createdByName: data.createdByName || 'Clinical Pharmacist',
+          createdByName: data.createdByName || 'Clinical Educator',
         });
       });
       setCases(caseList);
@@ -79,7 +76,7 @@ export default function ClinicalCasesScreen() {
 
   const handleCreateCase = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newTitle.trim() || !newPatientName.trim()) return;
+    if (!newTitle.trim() || !newScenario.trim()) return;
 
     setIsSubmitting(true);
     const path = 'clinical_cases';
@@ -87,26 +84,24 @@ export default function ClinicalCasesScreen() {
       const user = auth.currentUser;
       const caseData = {
         title: newTitle.trim(),
-        patientName: newPatientName.trim(),
-        ipNumber: newIpNumber.trim() || 'N/A',
-        ward: newWard,
-        chiefComplaint: newChiefComplaint.trim() || 'N/A',
-        historyOfPresentIllness: newHpi.trim() || 'N/A',
+        topic: newTopic,
+        difficulty: newDifficulty,
+        scenario: newScenario.trim(),
+        learningPoints: newLearningPoints.trim(),
         createdAt: Timestamp.now(),
-        status: 'active',
+        status: 'published',
         createdBy: user?.uid || 'anonymous',
-        createdByName: user?.displayName || user?.email?.split('@')[0] || 'Clinical Pharmacist',
+        createdByName: user?.displayName || user?.email?.split('@')[0] || 'Clinical Educator',
       };
 
       await addDoc(collection(db, path), caseData);
       
       // Reset fields
       setNewTitle('');
-      setNewPatientName('');
-      setNewIpNumber('');
-      setNewWard('Medical Ward A');
-      setNewChiefComplaint('');
-      setNewHpi('');
+      setNewTopic('Cardiology');
+      setNewDifficulty('Beginner');
+      setNewScenario('');
+      setNewLearningPoints('');
       setShowNewModal(false);
       
       // Refresh list
@@ -120,7 +115,7 @@ export default function ClinicalCasesScreen() {
 
   const handleDeleteCase = async (caseId: string, e: React.MouseEvent) => {
     e.stopPropagation();
-    if (!window.confirm('Are you sure you want to delete this case?')) return;
+    if (!window.confirm('Are you sure you want to delete this case study?')) return;
 
     const path = `clinical_cases/${caseId}`;
     try {
@@ -136,7 +131,7 @@ export default function ClinicalCasesScreen() {
 
   const handleToggleStatus = async (item: ClinicalCase, e: React.MouseEvent) => {
     e.stopPropagation();
-    const newStatus = item.status === 'active' ? 'archived' : 'active';
+    const newStatus = item.status === 'published' ? 'draft' : 'published';
     const path = `clinical_cases/${item.id}`;
     try {
       await updateDoc(doc(db, 'clinical_cases', item.id), { status: newStatus });
@@ -153,26 +148,34 @@ export default function ClinicalCasesScreen() {
     const q = searchQuery.toLowerCase();
     return (
       c.title.toLowerCase().includes(q) ||
-      c.patientName.toLowerCase().includes(q) ||
-      c.ipNumber.toLowerCase().includes(q) ||
-      c.ward.toLowerCase().includes(q)
+      c.topic.toLowerCase().includes(q) ||
+      c.scenario.toLowerCase().includes(q)
     );
   });
+
+  const getDifficultyColor = (diff: string) => {
+    switch (diff) {
+      case 'Beginner': return 'bg-green-100 text-green-700 border-green-200';
+      case 'Intermediate': return 'bg-blue-100 text-blue-700 border-blue-200';
+      case 'Advanced': return 'bg-purple-100 text-purple-700 border-purple-200';
+      default: return 'bg-gray-100 text-gray-700';
+    }
+  };
 
   return (
     <div className="p-6 max-w-7xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-white">
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-[var(--text)] mb-2 tracking-tight">Clinical Cases</h1>
-          <p className="text-[var(--text-muted)] text-sm">Create, review, and discuss active clinical case scenarios.</p>
+          <h1 className="text-3xl font-bold text-[var(--text)] mb-2 tracking-tight">Case Studies Library</h1>
+          <p className="text-[var(--text-muted)] text-sm">Explore interactive clinical scenarios to improve your pharmacotherapy reasoning.</p>
         </div>
         <button 
           onClick={() => setShowNewModal(true)}
           className="px-4 py-2.5 bg-[var(--primary)] text-white rounded-xl font-semibold text-sm flex items-center gap-2 hover:opacity-95 transition-opacity shadow-sm"
         >
           <Plus size={18} />
-          New Case Discussion
+          Create Case Study
         </button>
       </div>
 
@@ -187,7 +190,7 @@ export default function ClinicalCasesScreen() {
               type="text" 
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search case title, patient, IP..." 
+              placeholder="Search topics, conditions..." 
               className="flex-1 bg-transparent border-none outline-none text-[var(--text)] text-sm focus:ring-0"
             />
           </div>
@@ -196,22 +199,21 @@ export default function ClinicalCasesScreen() {
             {isLoading ? (
               <div className="p-8 text-center bg-[var(--surface)] rounded-xl border border-[var(--border)]">
                 <Loader2 size={24} className="animate-spin text-[var(--primary)] mx-auto mb-2" />
-                <span className="text-xs text-[var(--text-muted)]">Loading clinical cases...</span>
+                <span className="text-xs text-[var(--text-muted)]">Loading case library...</span>
               </div>
             ) : filteredCases.length === 0 ? (
               <div className="bg-[var(--surface)] p-12 rounded-xl border border-[var(--border)] shadow-sm flex flex-col items-center justify-center text-center">
                 <div className="w-12 h-12 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mb-3">
-                  <FolderOpen size={24} className="text-[var(--text-muted)]" />
+                  <BookMarked size={24} className="text-[var(--text-muted)]" />
                 </div>
-                <h3 className="text-sm font-bold text-[var(--text)] mb-1">No cases found</h3>
+                <h3 className="text-sm font-bold text-[var(--text)] mb-1">No case studies found</h3>
                 <p className="text-[var(--text-muted)] text-xs max-w-xs">
-                  {searchQuery ? 'Try adjusting your search query.' : 'Click "New Case Discussion" to add your first patient clinical case.'}
+                  {searchQuery ? 'Try adjusting your search query.' : 'Click "Create Case Study" to add the first clinical vignette.'}
                 </p>
               </div>
             ) : (
               filteredCases.map((item) => {
                 const isSelected = selectedCase?.id === item.id;
-                const formattedDate = item.createdAt ? new Date(item.createdAt.seconds * 1000).toLocaleDateString() : 'N/A';
                 
                 return (
                   <div 
@@ -224,37 +226,28 @@ export default function ClinicalCasesScreen() {
                     }`}
                   >
                     <div className="flex justify-between items-start gap-2">
-                      <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider ${
-                        item.status === 'active' 
-                          ? (isSelected ? 'bg-white/20 text-white' : 'bg-green-100 text-green-700')
-                          : (isSelected ? 'bg-white/10 text-white/80' : 'bg-[var(--surface-dim)] text-[var(--text-muted)]')
+                      <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold tracking-wider border ${
+                        isSelected ? 'bg-white/20 text-white border-white/10' : getDifficultyColor(item.difficulty)
                       }`}>
-                        {item.status}
+                        {item.difficulty}
                       </span>
                       <span className={`text-[10px] font-mono ${isSelected ? 'text-white/80' : 'text-[var(--text-muted)]'}`}>
-                        {formattedDate}
+                        {item.topic}
                       </span>
                     </div>
 
                     <div>
-                      <h4 className="font-bold text-sm tracking-tight leading-tight group-hover:underline">{item.title}</h4>
-                      <p className={`text-xs mt-1 ${isSelected ? 'text-white/80' : 'text-[var(--text-muted)]'}`}>
-                        Patient: {item.patientName} ({item.ipNumber})
+                      <h4 className="font-bold text-sm tracking-tight leading-tight group-hover:underline line-clamp-2">{item.title}</h4>
+                      <p className={`text-xs mt-1 line-clamp-2 ${isSelected ? 'text-white/80' : 'text-[var(--text-muted)]'}`}>
+                        {item.scenario}
                       </p>
                     </div>
 
                     <div className="flex justify-between items-center text-[10px] pt-2 border-t border-dashed border-[var(--border)] group-hover:border-transparent">
                       <span className={isSelected ? 'text-white/80' : 'text-[var(--text-muted)]'}>
-                        {item.ward}
+                        By {item.createdByName}
                       </span>
                       <div className="flex items-center gap-1">
-                        <button 
-                          onClick={(e) => handleToggleStatus(item, e)}
-                          title={item.status === 'active' ? 'Archive case' : 'Activate case'}
-                          className={`p-1 rounded hover:bg-black/10 transition-colors ${isSelected ? 'text-white' : 'text-[var(--text-muted)] hover:text-[var(--primary)]'}`}
-                        >
-                          <CheckCircle2 size={13} />
-                        </button>
                         <button 
                           onClick={(e) => handleDeleteCase(item.id, e)}
                           title="Delete case"
@@ -277,17 +270,15 @@ export default function ClinicalCasesScreen() {
             <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-6 shadow-sm space-y-6 animate-in fade-in duration-300">
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pb-4 border-b border-[var(--border)]">
                 <div>
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider ${
-                      selectedCase.status === 'active' ? 'bg-green-100 text-green-700' : 'bg-[var(--surface-dim)] text-[var(--text-muted)]'
-                    }`}>
-                      {selectedCase.status} Case
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold tracking-wider border ${getDifficultyColor(selectedCase.difficulty)}`}>
+                      {selectedCase.difficulty}
                     </span>
-                    <span className="text-xs text-[var(--text-muted)]">
-                      Started by {selectedCase.createdByName}
+                    <span className="text-xs font-semibold text-[var(--primary)] uppercase tracking-wider">
+                      {selectedCase.topic}
                     </span>
                   </div>
-                  <h2 className="text-xl font-bold text-[var(--text)] tracking-tight">{selectedCase.title}</h2>
+                  <h2 className="text-2xl font-bold text-[var(--text)] tracking-tight leading-tight">{selectedCase.title}</h2>
                 </div>
                 <button 
                   onClick={() => setSelectedCase(null)}
@@ -297,65 +288,42 @@ export default function ClinicalCasesScreen() {
                 </button>
               </div>
 
-              {/* Patient Profile Specs */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-[var(--surface-dim)] p-4 rounded-xl border border-[var(--border)]">
-                <div className="space-y-1">
-                  <span className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider block">Patient Name</span>
-                  <div className="flex items-center gap-2 text-sm font-semibold text-[var(--text)]">
-                    <User size={15} className="text-[var(--primary)]" />
-                    {selectedCase.patientName}
-                  </div>
-                </div>
-                <div className="space-y-1">
-                  <span className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider block">IP Number</span>
-                  <div className="text-sm font-semibold text-[var(--text)] font-mono">
-                    {selectedCase.ipNumber}
-                  </div>
-                </div>
-                <div className="space-y-1">
-                  <span className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider block">Admission Location</span>
-                  <div className="text-sm font-semibold text-[var(--text)]">
-                    {selectedCase.ward}
-                  </div>
-                </div>
-              </div>
-
               {/* Case Narrative */}
-              <div className="space-y-4">
-                <div className="space-y-1.5 text-left">
-                  <h3 className="text-sm font-bold text-[var(--text)] flex items-center gap-2">
-                    <ClipboardList size={16} className="text-[var(--primary)]" />
-                    Chief Complaint
+              <div className="space-y-6">
+                <div className="space-y-3 text-left">
+                  <h3 className="text-sm font-bold text-[var(--text)] flex items-center gap-2 uppercase tracking-wider">
+                    <BookOpen size={16} className="text-[var(--primary)]" />
+                    Clinical Scenario
                   </h3>
-                  <p className="text-sm text-[var(--text-muted)] leading-relaxed bg-[var(--surface-dim)] p-3 rounded-lg border border-[var(--border)] whitespace-pre-wrap">
-                    {selectedCase.chiefComplaint}
-                  </p>
+                  <div className="text-[var(--text)] leading-relaxed bg-[var(--bg)] p-5 rounded-xl border border-[var(--border)] whitespace-pre-wrap text-[15px] font-medium shadow-inner">
+                    {selectedCase.scenario}
+                  </div>
                 </div>
 
-                <div className="space-y-1.5 text-left">
-                  <h3 className="text-sm font-bold text-[var(--text)] flex items-center gap-2">
-                    <FileText size={16} className="text-[var(--primary)]" />
-                    History of Present Illness (HPI)
+                <div className="space-y-3 text-left">
+                  <h3 className="text-sm font-bold text-[var(--text)] flex items-center gap-2 uppercase tracking-wider">
+                    <Lightbulb size={16} className="text-amber-500" />
+                    Key Learning Points
                   </h3>
-                  <p className="text-sm text-[var(--text-muted)] leading-relaxed bg-[var(--surface-dim)] p-3 rounded-lg border border-[var(--border)] whitespace-pre-wrap">
-                    {selectedCase.historyOfPresentIllness}
-                  </p>
+                  <div className="text-[var(--text)] leading-relaxed bg-amber-500/5 p-5 rounded-xl border border-amber-500/20 whitespace-pre-wrap text-sm">
+                    {selectedCase.learningPoints}
+                  </div>
                 </div>
               </div>
 
               <div className="pt-4 border-t border-[var(--border)] flex justify-between items-center text-xs text-[var(--text-muted)]">
                 <span>Case ID: {selectedCase.id}</span>
-                <span>Date Created: {selectedCase.createdAt ? new Date(selectedCase.createdAt.seconds * 1000).toLocaleString() : 'N/A'}</span>
+                <span>Authored by: {selectedCase.createdByName}</span>
               </div>
             </div>
           ) : (
             <div className="w-full h-full min-h-[400px] bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 flex flex-col items-center justify-center text-center">
               <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mb-4">
-                <ClipboardList size={32} className="text-[var(--text-muted)]" />
+                <BookMarked size={32} className="text-[var(--text-muted)]" />
               </div>
-              <h3 className="text-lg font-semibold text-[var(--text)] mb-2">Review Case Details</h3>
+              <h3 className="text-lg font-semibold text-[var(--text)] mb-2">Read Case Studies</h3>
               <p className="text-[var(--text-muted)] text-sm max-w-sm">
-                Select a clinical case from the list to view comprehensive demographics, admitting history, presentation timelines, and updates.
+                Select a clinical case from the library to test your knowledge, review patient scenarios, and master critical pharmacotherapy concepts.
               </p>
             </div>
           )}
@@ -366,9 +334,9 @@ export default function ClinicalCasesScreen() {
       {/* New Case Modal Dialog */}
       {showNewModal && (
         <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 backdrop-blur-sm animate-in fade-in duration-200">
-          <div className="bg-[var(--surface)] w-full max-w-lg rounded-2xl border border-[var(--border)] shadow-xl overflow-hidden animate-in zoom-in-95 duration-200">
+          <div className="bg-[var(--surface)] w-full max-w-2xl rounded-2xl border border-[var(--border)] shadow-xl overflow-hidden animate-in zoom-in-95 duration-200">
             <div className="px-6 py-4 border-b border-[var(--border)] flex justify-between items-center bg-[var(--surface-dim)]">
-              <h3 className="text-lg font-bold text-[var(--text)]">Start New Case Discussion</h3>
+              <h3 className="text-lg font-bold text-[var(--text)]">Draft New Case Study</h3>
               <button 
                 onClick={() => setShowNewModal(false)}
                 className="p-1.5 hover:bg-[var(--surface-dim)] rounded-lg text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
@@ -378,78 +346,71 @@ export default function ClinicalCasesScreen() {
             </div>
 
             <form onSubmit={handleCreateCase}>
-              <div className="p-6 space-y-4 max-h-[70vh] overflow-y-auto text-left">
-                <div className="space-y-1">
+              <div className="p-6 space-y-5 max-h-[70vh] overflow-y-auto text-left">
+                <div className="space-y-1.5">
                   <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Case Title</label>
                   <input 
                     type="text"
                     required
                     value={newTitle}
                     onChange={(e) => setNewTitle(e.target.value)}
-                    placeholder="e.g. Sepsis secondary to Urinary Tract Infection"
-                    className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:border-[var(--primary)]"
+                    placeholder="e.g. 55-year-old male with Acute Decompensated Heart Failure"
+                    className="w-full px-4 py-2.5 border border-[var(--border)] rounded-xl bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
                   />
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-1">
-                    <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Patient Name</label>
-                    <input 
-                      type="text"
-                      required
-                      value={newPatientName}
-                      onChange={(e) => setNewPatientName(e.target.value)}
-                      placeholder="James Kamau"
-                      className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:border-[var(--primary)]"
-                    />
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Therapeutic Area / Topic</label>
+                    <select 
+                      value={newTopic}
+                      onChange={(e) => setNewTopic(e.target.value)}
+                      className="w-full px-4 py-2.5 border border-[var(--border)] rounded-xl bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
+                    >
+                      <option value="Cardiology">Cardiology</option>
+                      <option value="Infectious Disease">Infectious Disease</option>
+                      <option value="Endocrinology">Endocrinology</option>
+                      <option value="Neurology">Neurology</option>
+                      <option value="Oncology">Oncology</option>
+                      <option value="Critical Care">Critical Care</option>
+                      <option value="General Practice">General Practice</option>
+                    </select>
                   </div>
 
-                  <div className="space-y-1">
-                    <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">IP/OP Number</label>
-                    <input 
-                      type="text"
-                      value={newIpNumber}
-                      onChange={(e) => setNewIpNumber(e.target.value)}
-                      placeholder="IP-2026-8809"
-                      className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:border-[var(--primary)] font-mono"
-                    />
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Difficulty Level</label>
+                    <select 
+                      value={newDifficulty}
+                      onChange={(e) => setNewDifficulty(e.target.value as any)}
+                      className="w-full px-4 py-2.5 border border-[var(--border)] rounded-xl bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
+                    >
+                      <option value="Beginner">Beginner (P1/P2 Level)</option>
+                      <option value="Intermediate">Intermediate (P3/P4 Level)</option>
+                      <option value="Advanced">Advanced (Board Level)</option>
+                    </select>
                   </div>
                 </div>
 
-                <div className="space-y-1">
-                  <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Admitting Ward</label>
-                  <select 
-                    value={newWard}
-                    onChange={(e) => setNewWard(e.target.value)}
-                    className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:border-[var(--primary)]"
-                  >
-                    <option value="Medical Ward A">Medical Ward A</option>
-                    <option value="Medical Ward B">Medical Ward B</option>
-                    <option value="Surgical Ward">Surgical Ward</option>
-                    <option value="ICU">ICU</option>
-                    <option value="Maternity Wing">Maternity Wing</option>
-                  </select>
-                </div>
-
-                <div className="space-y-1">
-                  <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Chief Complaint</label>
+                <div className="space-y-1.5">
+                  <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Clinical Scenario (Vignette)</label>
                   <textarea 
-                    value={newChiefComplaint}
-                    onChange={(e) => setNewChiefComplaint(e.target.value)}
-                    placeholder="Describe main symptoms and duration..."
-                    rows={2}
-                    className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:border-[var(--primary)]"
+                    value={newScenario}
+                    onChange={(e) => setNewScenario(e.target.value)}
+                    required
+                    placeholder="Describe the patient presentation, history of present illness, vitals, labs, and current medications..."
+                    rows={6}
+                    className="w-full px-4 py-3 border border-[var(--border)] rounded-xl bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] resize-y"
                   />
                 </div>
 
-                <div className="space-y-1">
-                  <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">History of Present Illness (HPI)</label>
+                <div className="space-y-1.5">
+                  <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Key Learning Points & Resolution</label>
                   <textarea 
-                    value={newHpi}
-                    onChange={(e) => setNewHpi(e.target.value)}
-                    placeholder="Enter full history of presenting illness, system review, and past medications..."
-                    rows={3}
-                    className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:border-[var(--primary)]"
+                    value={newLearningPoints}
+                    onChange={(e) => setNewLearningPoints(e.target.value)}
+                    placeholder="Provide the rationale, guidelines to reference, and the correct pharmacotherapy intervention..."
+                    rows={4}
+                    className="w-full px-4 py-3 border border-[var(--border)] rounded-xl bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] resize-y"
                   />
                 </div>
               </div>
@@ -458,17 +419,17 @@ export default function ClinicalCasesScreen() {
                 <button 
                   type="button"
                   onClick={() => setShowNewModal(false)}
-                  className="px-4 py-2 border border-[var(--border)] hover:bg-[var(--surface-dim)] text-[var(--text)] font-semibold text-sm rounded-lg"
+                  className="px-4 py-2.5 border border-[var(--border)] hover:bg-[var(--surface-dim)] text-[var(--text)] font-semibold text-sm rounded-xl transition-colors"
                 >
                   Cancel
                 </button>
                 <button 
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-4 py-2 bg-[var(--primary)] text-white font-semibold text-sm rounded-lg hover:opacity-95 transition-opacity flex items-center gap-2"
+                  className="px-4 py-2.5 bg-[var(--primary)] text-white font-semibold text-sm rounded-xl hover:opacity-95 transition-opacity flex items-center gap-2"
                 >
-                  {isSubmitting && <Loader2 size={14} className="animate-spin" />}
-                  Create Case
+                  {isSubmitting ? <Loader2 size={16} className="animate-spin" /> : <BookOpen size={16} />}
+                  Publish Case Study
                 </button>
               </div>
             </form>
@@ -478,3 +439,4 @@ export default function ClinicalCasesScreen() {
     </div>
   );
 }
+

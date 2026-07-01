@@ -46,7 +46,33 @@ export default function PharmacotherapyReviewScreen() {
   ]);
   const [isAssistantThinking, setIsAssistantThinking] = useState(false);
 
+  const [autofillTreatment, setAutofillTreatment] = useState(true);
+  const [autofillCarePlan, setAutofillCarePlan] = useState(true);
+  const [autofillCounselling, setAutofillCounselling] = useState(true);
+
+  const handleNextTab = () => {
+    const currentIndex = tabs.findIndex(t => t.id === activeTab);
+    if (currentIndex < tabs.length - 1) {
+      setActiveTab(tabs[currentIndex + 1].id);
+    }
+  };
+
+  const handlePrevTab = () => {
+    const currentIndex = tabs.findIndex(t => t.id === activeTab);
+    if (currentIndex > 0) {
+      setActiveTab(tabs[currentIndex - 1].id);
+    }
+  };
+
   const triggerAutofill = async () => {
+    if (!autofillTreatment && !autofillCarePlan && !autofillCounselling) {
+      setBannerMessage({
+        type: 'error',
+        text: 'Please select at least one section to auto-fill in the settings panel above.'
+      });
+      return;
+    }
+
     setIsGenerating(true);
     setBannerMessage(null);
     try {
@@ -64,7 +90,12 @@ export default function PharmacotherapyReviewScreen() {
         },
         body: JSON.stringify({
           formData: parsed,
-          filesContext: filesContext
+          filesContext: filesContext,
+          options: {
+            treatment: autofillTreatment,
+            carePlan: autofillCarePlan,
+            counselling: autofillCounselling
+          }
         }),
       });
 
@@ -108,10 +139,16 @@ export default function PharmacotherapyReviewScreen() {
       const counsellingTab: Record<string, string> = {};
       counsellingTab['counselling_points'] = data.counselling_points || '';
 
-      // Persist to localStorage
-      parsed['treatment'] = { ...(parsed['treatment'] || {}), ...treatmentTab };
-      parsed['care-plan'] = { ...(parsed['care-plan'] || {}), ...carePlanTab };
-      parsed['counselling'] = { ...(parsed['counselling'] || {}), ...counsellingTab };
+      // Persist to localStorage based on options
+      if (autofillTreatment) {
+        parsed['treatment'] = { ...(parsed['treatment'] || {}), ...treatmentTab };
+      }
+      if (autofillCarePlan) {
+        parsed['care-plan'] = { ...(parsed['care-plan'] || {}), ...carePlanTab };
+      }
+      if (autofillCounselling) {
+        parsed['counselling'] = { ...(parsed['counselling'] || {}), ...counsellingTab };
+      }
 
       localStorage.setItem('clinova_pharma_review_form', JSON.stringify(parsed));
 
@@ -134,9 +171,14 @@ export default function PharmacotherapyReviewScreen() {
       Object.values(parsed).forEach(tab => Object.assign(allData, tab));
       checkInteractions(allData);
 
+      const filledSections = [];
+      if (autofillTreatment) filledSections.push('pharmacological treatments');
+      if (autofillCarePlan) filledSections.push('care plan interventions');
+      if (autofillCounselling) filledSections.push('patient counselling points');
+
       setBannerMessage({
         type: 'success',
-        text: 'Clinova AI has successfully analyzed patient demographics, vitals, labs, diagnoses, and uploaded notes to auto-fill the pharmacological treatments, non-pharmacological plan, care plan interventions, and patient counselling points.',
+        text: `Clinova AI has successfully analyzed patient demographics, vitals, labs, diagnoses, and uploaded notes to auto-fill the selected sections: ${filledSections.join(', ')}.`,
       });
     } catch (error) {
       console.error(error);
@@ -390,6 +432,53 @@ export default function PharmacotherapyReviewScreen() {
                 >
                   Dismiss
                 </button>
+              </div>
+            )}
+
+            {/* AI Auto-Fill Options Settings Panel */}
+            {['treatment', 'care-plan', 'counselling'].includes(activeTab) && (
+              <div className="bg-[var(--surface-dim)] border border-[var(--border)] rounded-xl p-4 space-y-3 animate-in fade-in duration-300">
+                <div className="flex items-center justify-between border-b border-[var(--border)] pb-2">
+                  <div className="flex items-center gap-2">
+                    <BrainCircuit size={18} className="text-[var(--primary)] animate-pulse" />
+                    <span className="text-sm font-semibold text-[var(--text)]">Clinova AI Auto-Fill Settings</span>
+                  </div>
+                  <span className="text-[10px] font-mono text-[var(--text-muted)] bg-[var(--border)]/40 px-2.5 py-0.5 rounded">
+                    Option-controlled filling
+                  </span>
+                </div>
+                <p className="text-xs text-[var(--text-muted)]">
+                  Select which sections the AI is allowed to auto-fill or modify when you trigger the suggestions.
+                </p>
+                <div className="flex flex-wrap gap-x-6 gap-y-2 pt-1">
+                  <label className="flex items-center gap-2.5 text-xs font-medium text-[var(--text)] cursor-pointer select-none">
+                    <input
+                      type="checkbox"
+                      checked={autofillTreatment}
+                      onChange={(e) => setAutofillTreatment(e.target.checked)}
+                      className="rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)] h-4 w-4 cursor-pointer"
+                    />
+                    A) Treatment Plan
+                  </label>
+                  <label className="flex items-center gap-2.5 text-xs font-medium text-[var(--text)] cursor-pointer select-none">
+                    <input
+                      type="checkbox"
+                      checked={autofillCarePlan}
+                      onChange={(e) => setAutofillCarePlan(e.target.checked)}
+                      className="rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)] h-4 w-4 cursor-pointer"
+                    />
+                    B) Pharmaceutical Care Plan
+                  </label>
+                  <label className="flex items-center gap-2.5 text-xs font-medium text-[var(--text)] cursor-pointer select-none">
+                    <input
+                      type="checkbox"
+                      checked={autofillCounselling}
+                      onChange={(e) => setAutofillCounselling(e.target.checked)}
+                      className="rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)] h-4 w-4 cursor-pointer"
+                    />
+                    C) Patient Counselling Points
+                  </label>
+                </div>
               </div>
             )}
             
@@ -775,15 +864,51 @@ export default function PharmacotherapyReviewScreen() {
                   <p className="text-sm text-[var(--text-muted)]">Document key counselling points discussed with the patient or caregiver regarding their medication, lifestyle modifications, and adherence.</p>
                   <textarea name="counselling_points" rows={8} className="w-full px-4 py-3 border border-[var(--border)] rounded-xl focus:ring-2 focus:ring-[var(--primary)] outline-none bg-[var(--surface)] text-[var(--text)] leading-relaxed" placeholder="Discussed..."></textarea>
                 </div>
-                
-                <div className="pt-6 flex justify-end">
-                  <button type="button" className="px-6 py-2.5 bg-[var(--primary)] text-white font-medium rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2 shadow-sm">
-                    <CheckCircle size={18} />
-                    Complete Review
-                  </button>
-                </div>
               </div>
             )}
+
+            {/* Persistent Dynamic Bottom Navigation Footer */}
+            <div className="pt-6 border-t border-[var(--border)] flex items-center justify-between mt-8 animate-in fade-in duration-300">
+              <div>
+                {activeTab !== 'admission' ? (
+                  <button
+                    type="button"
+                    onClick={handlePrevTab}
+                    className="px-4 py-2 bg-[var(--surface-dim)] hover:bg-[var(--border)] text-[var(--text)] font-semibold rounded-lg border border-[var(--border)] transition-colors text-sm flex items-center gap-1.5 cursor-pointer"
+                  >
+                    ← Previous Section
+                  </button>
+                ) : (
+                  <div />
+                )}
+              </div>
+              <div className="flex items-center gap-3">
+                {activeTab !== 'counselling' ? (
+                  <button
+                    type="button"
+                    onClick={handleNextTab}
+                    className="px-5 py-2 bg-[var(--primary)] text-white hover:opacity-95 font-semibold rounded-lg transition-all text-sm flex items-center gap-1.5 cursor-pointer"
+                  >
+                    Next Section →
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setBannerMessage({
+                        type: 'success',
+                        text: 'Pharmacotherapy Review Form Saved Successfully! All data has been stored locally.'
+                      });
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }}
+                    className="px-6 py-2 bg-[var(--primary)] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2 shadow-sm text-sm cursor-pointer"
+                  >
+                    <CheckCircle size={16} />
+                    Complete Review
+                  </button>
+                )}
+              </div>
+            </div>
           </form>
         </div>
       </div>

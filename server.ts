@@ -65,11 +65,13 @@ const ai = new GoogleGenAI({
 // AI Autofill Endpoint
 app.post('/api/gemini/autofill', async (req, res) => {
   try {
-    const { formData, filesContext } = req.body;
+    const { formData, filesContext, options } = req.body;
 
     if (!formData) {
       return res.status(400).json({ error: 'Missing formData' });
     }
+
+    const opt = options || { treatment: true, carePlan: true, counselling: true };
 
     // Prepare a descriptive context from the first part of the form
     const admission = formData.admission || {};
@@ -120,7 +122,12 @@ ${diagnosis.diagnoses_list || 'N/A'}
 
     const prompt = `
 You are Clinova OS, an advanced Clinical Pharmacy Assistant and AI Knowledge Engine.
-Based on the provided Patient Context, uploaded reference notes, and Kenya Drug Index (KDI) clinical rules, generate the optimal pharmacological treatment plan, non-pharmacological plan, pharmaceutical care plan, and patient counselling points.
+Based on the provided Patient Context, uploaded reference notes, and Kenya Drug Index (KDI) clinical rules, generate recommendations.
+
+=== ACTIVE SECTIONS TO GENERATE ===
+- Pharmacological & Non-pharmacological Treatment Plan: ${opt.treatment ? 'YES, GENERATE IN FULL DETAIL' : 'NO, SKIP (leave empty or return empty fields)'}
+- Pharmaceutical Care Plan: ${opt.carePlan ? 'YES, GENERATE IN FULL DETAIL' : 'NO, SKIP (leave empty or return empty fields)'}
+- Patient Counselling Points: ${opt.counselling ? 'YES, GENERATE IN FULL DETAIL' : 'NO, SKIP (leave empty or return empty fields)'}
 
 === RELEVANT NOTES CONTEXT ===
 ${filesContext ? JSON.stringify(filesContext) : 'No uploaded notes context.'}
@@ -136,14 +143,20 @@ Generate appropriate, guideline-based recommendations. Ensure you adjust doses f
       model: 'gemini-3.5-flash',
       contents: prompt,
       config: {
-        systemInstruction: 'You are an expert clinical pharmacist in Kenya, specializing in pharmacotherapy reviews, guideline-directed medical therapy, and local formularies (KDI). Your outputs must be highly clinical, precise, and evidence-based.',
+        systemInstruction: `You are an expert clinical pharmacist in Kenya, specializing in pharmacotherapy reviews, guideline-directed medical therapy, and local formularies (KDI). Your outputs must be highly clinical, precise, and evidence-based.
+
+CRITICAL SAFETY & TRUTH CONSTRAINT: You must be extremely careful and NEVER assume, invent, or speculate patient details, clinical findings, histories, or laboratory results that are not explicitly provided in the Patient Context or the uploaded notes context.
+- If a value or history detail is 'N/A' or missing, do NOT assume a pre-existing state, a standard normal value, or an active disease. Treat it strictly as unknown/unprovided.
+- Do NOT assume that any diagnostic procedures have been done unless they are explicitly documented in the patient case.
+- Base your treatment recommendations, care plans, and counselling points solely on actual, verified details present in the case context. If details are insufficient to make a recommendation, leave the corresponding fields blank or suggest monitoring/investigating first in the care plan, rather than guessing.
+- For sections marked as SKIP, return empty arrays/strings.`,
         responseMimeType: 'application/json',
         responseSchema: {
           type: Type.OBJECT,
           properties: {
             pharmacological_treatments: {
               type: Type.ARRAY,
-              description: 'Up to 5 pharmacological treatments. Map them to the treatment rows.',
+              description: 'Up to 5 pharmacological treatments. Map them to the treatment rows. Leave empty or skip if Treatment is marked as SKIP.',
               items: {
                 type: Type.OBJECT,
                 properties: {
@@ -159,11 +172,11 @@ Generate appropriate, guideline-based recommendations. Ensure you adjust doses f
             },
             non_pharmacological_management: {
               type: Type.STRING,
-              description: 'Text summarizing non-pharmacological interventions (e.g. oxygen support, fluid restriction, dietary changes).',
+              description: 'Text summarizing non-pharmacological interventions. Return empty if Treatment is marked as SKIP.',
             },
             care_plans: {
               type: Type.ARRAY,
-              description: 'Up to 3 clinical rows representing the pharmaceutical care plan.',
+              description: 'Up to 3 clinical rows representing the pharmaceutical care plan. Leave empty or skip if Care Plan is marked as SKIP.',
               items: {
                 type: Type.OBJECT,
                 properties: {
@@ -178,15 +191,15 @@ Generate appropriate, guideline-based recommendations. Ensure you adjust doses f
             },
             care_plan_non_pharma: {
               type: Type.STRING,
-              description: 'Non-pharmacological care plan details.',
+              description: 'Non-pharmacological care plan details. Return empty if Care Plan is marked as SKIP.',
             },
             care_plan_monitoring: {
               type: Type.STRING,
-              description: 'Detailed patient monitoring parameters (clinical, laboratory).',
+              description: 'Detailed patient monitoring parameters (clinical, laboratory). Return empty if Care Plan is marked as SKIP.',
             },
             counselling_points: {
               type: Type.STRING,
-              description: 'Actionable and clear counselling points for the patient or caregiver, clearly numbered or bulleted.',
+              description: 'Actionable and clear counselling points for the patient or caregiver, clearly numbered or bulleted. Return empty if Counselling is marked as SKIP.',
             },
           },
           required: [

@@ -39,11 +39,18 @@ export default function FileUploader({
   onUploadComplete,
 }: FileUploaderProps) {
   const [isDragOver, setIsDragOver] = useState(false);
-  const [localProgress, setLocalProgress] = useState<UploadProgress | null>(null);
+  const [uploadStates, setUploadStates] = useState<Record<string, {
+    key: string;
+    name: string;
+    size: number;
+    mime: string;
+    progress: number;
+    status: 'uploading' | 'completed' | 'failed';
+    error?: string;
+  }>>({});
   const [error, setError] = useState<string | null>(null);
-  const [previews, setPreviews] = useState<{ name: string; size: number; mime: string }[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
-  const abortRef = useRef<AbortController | null>(null);
+  const abortControllerRef = useRef<AbortController | null>(null);
 
   const { setUploading, addFile } = useFileStore();
 
@@ -51,7 +58,6 @@ export default function FileUploader({
 
   const processFiles = useCallback(async (files: FileList | File[]) => {
     setError(null);
-    setPreviews([]);
 
     const valid: File[] = [];
     for (const file of Array.from(files)) {
@@ -68,35 +74,96 @@ export default function FileUploader({
 
     if (valid.length === 0) return;
 
-    setPreviews(valid.map((f) => ({ name: f.name, size: f.size, mime: f.type })));
+    // Set uploading state in Zustand store
     setUploading(true);
 
-    abortRef.current = new AbortController();
+    // Prepare abort controller for this batch
+    abortControllerRef.current = new AbortController();
+    const signal = abortControllerRef.current.signal;
 
-    for (const file of valid) {
-      setLocalProgress({ bytesTransferred: 0, totalBytes: file.size, percentage: 0 });
+    // Initialize state for each file
+    const initialStates: typeof uploadStates = {};
+    const fileTasks = valid.map((file, index) => {
+      const key = `${file.name}-${file.size}-${index}-${Date.now()}`;
+      initialStates[key] = {
+        key,
+        name: file.name,
+        size: file.size,
+        mime: file.type,
+        progress: 0,
+        status: 'uploading',
+      };
+      return { file, key };
+    });
 
-      try {
-        const options: FileUploadOptions = {
-          category,
-          patientId,
-          studyId,
-          accessScope: 'private',
-        };
+    setUploadStates((prev) => ({ ...prev, ...initialStates }));
 
-        const result = await StorageService.uploadFile(file, options, setLocalProgress);
+    // Execute uploads in parallel
+    await Promise.all(
+      fileTasks.map(async ({ file, key }) => {
+        try {
+          const options: FileUploadOptions = {
+            category,
+            patientId,
+            studyId,
+            accessScope: 'private',
+          };
 
-        addFile(result.file);
-        onUploadComplete?.(result.file.id);
-      } catch (err: any) {
-        if (err?.name === 'AbortError') return;
-        setError(`Failed to upload "${file.name}": ${err?.message || 'Unknown error'}`);
-      }
-    }
+          const result = await StorageService.uploadFile(
+            file,
+            options,
+            (progress) => {
+              setUploadStates((prev) => {
+                if (!prev[key]) return prev;
+                return {
+                  ...prev,
+                  [key]: {
+                    ...prev[key],
+                    progress: progress.percentage,
+                  },
+                };
+              });
+            },
+            signal,
+          );
 
+          // Update individual file upload as completed
+          setUploadStates((prev) => {
+            if (!prev[key]) return prev;
+            return {
+              ...prev,
+              [key]: {
+                ...prev[key],
+                progress: 100,
+                status: 'completed',
+              },
+            };
+          });
+
+          // Update file list in global store
+          addFile(result.file);
+          onUploadComplete?.(result.file.id);
+        } catch (err: any) {
+          if (err?.name === 'AbortError') return;
+          console.error(`Error uploading file ${file.name}`, err);
+
+          setUploadStates((prev) => {
+            if (!prev[key]) return prev;
+            return {
+              ...prev,
+              [key]: {
+                ...prev[key],
+                status: 'failed',
+                error: err?.message || 'Upload failed',
+              },
+            };
+          });
+        }
+      })
+    );
+
+    // Set uploading to false in Zustand store when all tasks finish
     setUploading(false);
-    setLocalProgress(null);
-    setPreviews([]);
   }, [category, patientId, studyId, allowedMimeTypes, maxBytes, maxSizeMB, setUploading, addFile, onUploadComplete]);
 
   const handleDrop = useCallback((e: DragEvent) => {
@@ -122,11 +189,30 @@ export default function FileUploader({
   }, [processFiles]);
 
   const handleCancel = () => {
-    abortRef.current?.abort();
-    setLocalProgress(null);
+    abortControllerRef.current?.abort();
     setUploading(false);
-    setPreviews([]);
+    // Remove ongoing uploads from the list
+    setUploadStates((prev) => {
+      const next = { ...prev };
+      for (const k of Object.keys(next)) {
+        if (next[k].status === 'uploading') {
+          delete next[k];
+        }
+      }
+      return next;
+    });
   };
+
+  const removeStateItem = (key: string) => {
+    setUploadStates((prev) => {
+      const next = { ...prev };
+      delete next[key];
+      return next;
+    });
+  };
+
+  const uploadItems = Object.values(uploadStates);
+  const isAnyUploading = uploadItems.some((item) => item.status === 'uploading');
 
   return (
     <div className="space-y-3">
@@ -154,52 +240,91 @@ export default function FileUploader({
             <Upload size={20} className="text-[var(--primary)]" />
           </div>
           <p className="text-sm font-medium text-[var(--text)]">
-            {isDragOver ? 'Drop files here' : 'Drag & drop files or click to browse'}
+            {isDragOver ? 'Drop files here' : 'Drag & drop files (PDF/Images) or click to browse'}
           </p>
           <p className="text-xs text-[var(--text-muted)]">
-            Max {maxSizeMB}MB per file
+            Supports multiple uploads up to {maxSizeMB}MB each
           </p>
         </div>
       </div>
 
-      {previews.length > 0 && (
+      {uploadItems.length > 0 && (
         <div className="space-y-2">
-          {previews.map((p, i) => {
-            const Icon = getFileIcon(p.mime);
-            return (
-              <div
-                key={i}
-                className="flex items-center gap-3 px-3 py-2 rounded-lg bg-[var(--surface-dim)] text-sm"
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider">
+              Upload Progress ({uploadItems.filter(i => i.status === 'completed').length}/{uploadItems.length})
+            </span>
+            {isAnyUploading && (
+              <button
+                onClick={handleCancel}
+                className="flex items-center gap-1 text-xs text-[var(--danger)] hover:underline font-medium cursor-pointer"
               >
-                <Icon size={16} className="text-[var(--primary)] shrink-0" />
-                <span className="flex-1 truncate text-[var(--text)]">{p.name}</span>
-                <span className="text-xs text-[var(--text-muted)]">{formatSize(p.size)}</span>
-                {localProgress && localProgress.percentage < 100 ? (
-                  <div className="flex items-center gap-2">
-                    <div className="w-20 h-1.5 rounded-full bg-[var(--border)] overflow-hidden">
-                      <div
-                        className="h-full bg-[var(--primary)] rounded-full transition-all duration-200"
-                        style={{ width: `${localProgress.percentage}%` }}
-                      />
-                    </div>
-                    <span className="text-xs text-[var(--text-muted)] w-8 text-right">
-                      {localProgress.percentage}%
+                <X size={12} /> Cancel Pending
+              </button>
+            )}
+          </div>
+
+          <div className="space-y-1.5 max-h-60 overflow-y-auto pr-1">
+            {uploadItems.map((item) => {
+              const Icon = getFileIcon(item.mime);
+              return (
+                <div
+                  key={item.key}
+                  className="flex flex-col gap-1.5 p-3 rounded-xl bg-[var(--surface-dim)] border border-[var(--border)]/40 text-sm"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <Icon size={16} className="text-[var(--primary)] shrink-0" />
+                    <span className="flex-1 truncate text-xs font-semibold text-[var(--text)]">
+                      {item.name}
                     </span>
+                    <span className="text-[10px] text-[var(--text-muted)] font-medium">
+                      {formatSize(item.size)}
+                    </span>
+                    
+                    {item.status === 'completed' && (
+                      <span className="text-[10px] bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold px-2 py-0.5 rounded-full">
+                        Success
+                      </span>
+                    )}
+                    {item.status === 'failed' && (
+                      <span className="text-[10px] bg-red-500/10 text-red-600 dark:text-red-400 font-semibold px-2 py-0.5 rounded-full">
+                        Failed
+                      </span>
+                    )}
+                    
+                    {item.status !== 'uploading' && (
+                      <button
+                        onClick={() => removeStateItem(item.key)}
+                        className="text-[var(--text-muted)] hover:text-[var(--text)]"
+                      >
+                        <X size={12} />
+                      </button>
+                    )}
                   </div>
-                ) : (
-                  <span className="text-xs text-[var(--success)]">Uploaded</span>
-                )}
-              </div>
-            );
-          })}
-          {localProgress && localProgress.percentage < 100 && (
-            <button
-              onClick={handleCancel}
-              className="flex items-center gap-1 text-xs text-[var(--danger)] hover:underline"
-            >
-              <X size={12} /> Cancel
-            </button>
-          )}
+
+                  {item.status === 'uploading' && (
+                    <div className="flex items-center gap-2">
+                      <div className="flex-1 h-1.5 rounded-full bg-[var(--border)] overflow-hidden">
+                        <div
+                          className="h-full bg-[var(--primary)] rounded-full transition-all duration-200"
+                          style={{ width: `${item.progress}%` }}
+                        />
+                      </div>
+                      <span className="text-[10px] text-[var(--text-muted)] w-8 text-right font-semibold">
+                        {item.progress}%
+                      </span>
+                    </div>
+                  )}
+
+                  {item.status === 'failed' && item.error && (
+                    <p className="text-[10px] text-red-500 font-medium">
+                      Error: {item.error}
+                    </p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
       )}
 

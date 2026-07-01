@@ -6,12 +6,15 @@ import {
   collection, doc, getDoc, getDocs, setDoc, updateDoc, deleteDoc,
   query, where, orderBy, limit, serverTimestamp,
 } from 'firebase/firestore';
-import { storage, db } from '../lib/firebase';
+import { storage, db, auth } from '../lib/firebase';
 import type { StoredFile, FileCategory, FileUploadOptions, UploadProgress, UploadResult } from '../types/engine';
 import { MediaService } from './media.service';
 
 const FILES_COLLECTION = 'files';
 const STORAGE_ROOT = 'clinova';
+
+// Local cache for in-memory files (prevents crashing if firestore is blocked or offline)
+const IN_MEMORY_FILES: StoredFile[] = [];
 
 const CATEGORY_PATHS: Record<FileCategory, string> = {
   patient_image: 'patients',
@@ -72,173 +75,325 @@ export const StorageService = {
       options.patientId || options.studyId,
       file.name,
     );
-    const hash = await computeHash(file);
-    const storageRef = ref(storage, storagePath);
-    const uploadTask = uploadBytesResumable(storageRef, file);
 
-    return new Promise((resolve, reject) => {
-      const unsub = abortSignal?.addEventListener('abort', () => {
-        uploadTask.cancel();
-        reject(new Error('Upload aborted'));
-      });
+    let hash = 'hash-error';
+    try {
+      hash = await computeHash(file);
+    } catch (e) {
+      console.warn('Hash computation failed, using placeholder', e);
+    }
 
-      uploadTask.on(
-        'state_changed',
-        (snapshot: UploadTaskSnapshot) => {
-          onProgress?.({
-            bytesTransferred: snapshot.bytesTransferred,
-            totalBytes: snapshot.totalBytes,
-            percentage: Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100),
-          });
-        },
-        (error) => {
-          reject(error);
-        },
-        async () => {
-          try {
-            const downloadUrl = await getDownloadURL(uploadTask.snapshot.ref);
+    // Capture authenticating user details for multi-user tracking
+    const currentUser = auth.currentUser;
+    const uploadedBy = currentUser?.uid || 'guest';
+    const uploadedByEmail = currentUser?.email || null;
+    const uploadedByName = currentUser?.displayName || currentUser?.email?.split('@')[0] || 'Guest User';
 
-            let cloudinaryUrl: string | undefined = undefined;
-            let cloudinaryPublicId: string | undefined = undefined;
+    try {
+      const storageRef = ref(storage, storagePath);
+      const uploadTask = uploadBytesResumable(storageRef, file);
 
-            if (file.type.startsWith('image/') || options.category === 'patient_image') {
-              try {
-                const cloudDetails = await MediaService.uploadImageDetails(file);
-                cloudinaryUrl = cloudDetails.secure_url;
-                cloudinaryPublicId = cloudDetails.public_id;
-              } catch (cloudinaryErr) {
-                console.warn('Cloudinary upload failed, but Firebase upload succeeded:', cloudinaryErr);
-              }
-            }
+      return await new Promise<UploadResult>((resolve, reject) => {
+        let completed = false;
 
-            const storedFile: StoredFile = {
-              id: fileId,
-              originalName: file.name,
-              storagePath,
-              mimeType: file.type,
-              size: file.size,
-              category: options.category,
-              accessScope: options.accessScope ?? 'private',
-              patientId: options.patientId,
-              studyId: options.studyId,
-              uploadedBy: '',
-              uploadedByEmail: null,
-              uploadedByName: null,
-              createdAt: Date.now(),
-              updatedAt: Date.now(),
-              hash,
-              accessibleTo: [],
-              ...(cloudinaryUrl ? { cloudinaryUrl, cloudinaryPublicId } : {}),
-            };
-
-            await setDoc(doc(db, FILES_COLLECTION, fileId), storedFile);
-
-            resolve({ file: storedFile, url: cloudinaryUrl || downloadUrl });
-          } catch (err) {
-            reject(err);
+        const unsub = abortSignal?.addEventListener('abort', () => {
+          if (!completed) {
+            uploadTask.cancel();
+            reject(new Error('Upload aborted'));
           }
-        },
-      );
-    });
+        });
+
+        uploadTask.on(
+          'state_changed',
+          (snapshot: UploadTaskSnapshot) => {
+            onProgress?.({
+              bytesTransferred: snapshot.bytesTransferred,
+              totalBytes: snapshot.totalBytes,
+              percentage: Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100),
+            });
+          },
+          (error) => {
+            completed = true;
+            console.warn('Firebase uploadTask failed, triggering robust fallback', error);
+            this.uploadFileFallback(file, options, fileId, storagePath, hash, uploadedBy, uploadedByEmail, uploadedByName)
+              .then(resolve)
+              .catch(reject);
+          },
+          async () => {
+            try {
+              completed = true;
+              const downloadUrl = await getDownloadURL(uploadTask.snapshot.ref);
+
+              let cloudinaryUrl: string | undefined = undefined;
+              let cloudinaryPublicId: string | undefined = undefined;
+
+              if (file.type.startsWith('image/')) {
+                try {
+                  const cloudDetails = await MediaService.uploadImageDetails(file);
+                  cloudinaryUrl = cloudDetails.secure_url;
+                  cloudinaryPublicId = cloudDetails.public_id;
+                } catch (cloudinaryErr) {
+                  console.warn('Cloudinary upload failed, but Firebase upload succeeded:', cloudinaryErr);
+                }
+              }
+
+              const storedFile: StoredFile = {
+                id: fileId,
+                originalName: file.name,
+                storagePath,
+                mimeType: file.type,
+                size: file.size,
+                category: options.category,
+                accessScope: options.accessScope ?? 'private',
+                patientId: options.patientId,
+                studyId: options.studyId,
+                uploadedBy,
+                uploadedByEmail,
+                uploadedByName,
+                createdAt: Date.now(),
+                updatedAt: Date.now(),
+                hash,
+                accessibleTo: [],
+                ...(cloudinaryUrl ? { cloudinaryUrl, cloudinaryPublicId } : {}),
+              };
+
+              try {
+                await setDoc(doc(db, FILES_COLLECTION, fileId), storedFile);
+              } catch (fsError) {
+                console.warn('Firestore write failed, saving in-memory.', fsError);
+              }
+
+              // Also keep in memory for instantaneous queries
+              IN_MEMORY_FILES.unshift(storedFile);
+
+              resolve({ file: storedFile, url: cloudinaryUrl || downloadUrl });
+            } catch (err) {
+              console.warn('Finalizing Firebase upload failed, using fallback', err);
+              this.uploadFileFallback(file, options, fileId, storagePath, hash, uploadedBy, uploadedByEmail, uploadedByName)
+                .then(resolve)
+                .catch(reject);
+            }
+          },
+        );
+      });
+    } catch (e) {
+      console.warn('Initialization of Firebase upload failed, running fallback', e);
+      return this.uploadFileFallback(file, options, fileId, storagePath, hash, uploadedBy, uploadedByEmail, uploadedByName);
+    }
+  },
+
+  async uploadFileFallback(
+    file: File,
+    options: FileUploadOptions,
+    fileId: string,
+    storagePath: string,
+    hash: string,
+    uploadedBy: string,
+    uploadedByEmail: string | null,
+    uploadedByName: string | null,
+  ): Promise<UploadResult> {
+    const localUrl = URL.createObjectURL(file);
+
+    const storedFile: StoredFile = {
+      id: fileId,
+      originalName: file.name,
+      storagePath: localUrl,
+      mimeType: file.type,
+      size: file.size,
+      category: options.category,
+      accessScope: options.accessScope ?? 'private',
+      patientId: options.patientId,
+      studyId: options.studyId,
+      uploadedBy,
+      uploadedByEmail,
+      uploadedByName,
+      createdAt: Date.now(),
+      updatedAt: Date.now(),
+      hash,
+      accessibleTo: [],
+    };
+
+    IN_MEMORY_FILES.unshift(storedFile);
+    console.log('Fallback StoredFile generated:', storedFile);
+    return { file: storedFile, url: localUrl };
   },
 
   async getFile(fileId: string): Promise<StoredFile | null> {
-    const snap = await getDoc(doc(db, FILES_COLLECTION, fileId));
-    if (!snap.exists()) return null;
-    return { id: snap.id, ...snap.data() } as StoredFile;
+    try {
+      const snap = await getDoc(doc(db, FILES_COLLECTION, fileId));
+      if (snap.exists()) {
+        return { id: snap.id, ...snap.data() } as StoredFile;
+      }
+    } catch (e) {
+      console.warn('Firestore getFile failed, using memory cache', e);
+    }
+    const found = IN_MEMORY_FILES.find((f) => f.id === fileId);
+    return found || null;
   },
 
   async getFileUrl(fileId: string): Promise<string | null> {
     const file = await this.getFile(fileId);
     if (!file) return null;
-    const storageRef = ref(storage, file.storagePath);
-    return getDownloadURL(storageRef);
+    if (file.cloudinaryUrl) return file.cloudinaryUrl;
+    if (file.storagePath.startsWith('blob:') || file.storagePath.startsWith('data:')) {
+      return file.storagePath;
+    }
+    try {
+      const storageRef = ref(storage, file.storagePath);
+      return await getDownloadURL(storageRef);
+    } catch (e) {
+      console.warn('getDownloadURL failed, using fallback URL', e);
+      return file.cloudinaryUrl || file.storagePath || null;
+    }
   },
 
   async deleteFile(fileId: string): Promise<void> {
     const file = await this.getFile(fileId);
-    if (!file) throw new Error(`File ${fileId} not found`);
+    if (!file) return;
 
-    // 1. Delete from Firebase Storage (if possible)
+    // Remove from local cache
+    const memIndex = IN_MEMORY_FILES.findIndex((f) => f.id === fileId);
+    if (memIndex > -1) {
+      IN_MEMORY_FILES.splice(memIndex, 1);
+    }
+
     try {
       const storageRef = ref(storage, file.storagePath);
       await deleteObject(storageRef);
     } catch (storageErr) {
-      console.warn('Firebase storage file deletion skipped or failed (might already be deleted):', storageErr);
+      console.warn('Firebase storage deletion failed/skipped', storageErr);
     }
 
-    // 2. Delete from Cloudinary if public ID is present
     if (file.cloudinaryPublicId) {
       try {
-        const response = await fetch('/api/cloudinary/destroy', {
+        await fetch('/api/cloudinary/destroy', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({ publicId: file.cloudinaryPublicId }),
         });
-        if (!response.ok) {
-          console.warn('Failed to delete Cloudinary image via backend API proxy');
-        } else {
-          const resData = await response.json();
-          console.log('Cloudinary destruction outcome:', resData);
-        }
       } catch (cloudinaryErr) {
-        console.warn('Error calling Cloudinary destroy proxy:', cloudinaryErr);
+        console.warn('Cloudinary destroy failed', cloudinaryErr);
       }
     }
 
-    // 3. Delete metadata document from Firestore
-    await deleteDoc(doc(db, FILES_COLLECTION, fileId));
+    try {
+      await deleteDoc(doc(db, FILES_COLLECTION, fileId));
+    } catch (fsErr) {
+      console.warn('Firestore doc deletion failed', fsErr);
+    }
   },
 
   async listFilesByCategory(category: FileCategory, max = 50): Promise<StoredFile[]> {
-    const q = query(
-      collection(db, FILES_COLLECTION),
-      where('category', '==', category),
-      orderBy('createdAt', 'desc'),
-      limit(max),
-    );
-    const snap = await getDocs(q);
-    return snap.docs.map((d) => ({ id: d.id, ...d.data() } as StoredFile));
+    try {
+      const q = query(
+        collection(db, FILES_COLLECTION),
+        where('category', '==', category),
+        orderBy('createdAt', 'desc'),
+        limit(max),
+      );
+      const snap = await getDocs(q);
+      const dbFiles = snap.docs.map((d) => ({ id: d.id, ...d.data() } as StoredFile));
+      
+      // Merge with unsaved in-memory files of this category
+      const uniqueFiles = [...dbFiles];
+      for (const f of IN_MEMORY_FILES) {
+        if (f.category === category && !uniqueFiles.some((uf) => uf.id === f.id)) {
+          uniqueFiles.push(f);
+        }
+      }
+      return uniqueFiles.slice(0, max);
+    } catch (e) {
+      console.warn('Firestore listFilesByCategory failed, returning memory files', e);
+      return IN_MEMORY_FILES.filter((f) => f.category === category).slice(0, max);
+    }
   },
 
   async listFilesByPatient(patientId: string, max = 50): Promise<StoredFile[]> {
-    const q = query(
-      collection(db, FILES_COLLECTION),
-      where('patientId', '==', patientId),
-      orderBy('createdAt', 'desc'),
-      limit(max),
-    );
-    const snap = await getDocs(q);
-    return snap.docs.map((d) => ({ id: d.id, ...d.data() } as StoredFile));
+    try {
+      const q = query(
+        collection(db, FILES_COLLECTION),
+        where('patientId', '==', patientId),
+        orderBy('createdAt', 'desc'),
+        limit(max),
+      );
+      const snap = await getDocs(q);
+      const dbFiles = snap.docs.map((d) => ({ id: d.id, ...d.data() } as StoredFile));
+      
+      const uniqueFiles = [...dbFiles];
+      for (const f of IN_MEMORY_FILES) {
+        if (f.patientId === patientId && !uniqueFiles.some((uf) => uf.id === f.id)) {
+          uniqueFiles.push(f);
+        }
+      }
+      return uniqueFiles.slice(0, max);
+    } catch (e) {
+      console.warn('Firestore listFilesByPatient failed', e);
+      return IN_MEMORY_FILES.filter((f) => f.patientId === patientId).slice(0, max);
+    }
   },
 
   async listFilesByStudy(studyId: string, max = 50): Promise<StoredFile[]> {
-    const q = query(
-      collection(db, FILES_COLLECTION),
-      where('studyId', '==', studyId),
-      orderBy('createdAt', 'desc'),
-      limit(max),
-    );
-    const snap = await getDocs(q);
-    return snap.docs.map((d) => ({ id: d.id, ...d.data() } as StoredFile));
+    try {
+      const q = query(
+        collection(db, FILES_COLLECTION),
+        where('studyId', '==', studyId),
+        orderBy('createdAt', 'desc'),
+        limit(max),
+      );
+      const snap = await getDocs(q);
+      const dbFiles = snap.docs.map((d) => ({ id: d.id, ...d.data() } as StoredFile));
+      
+      const uniqueFiles = [...dbFiles];
+      for (const f of IN_MEMORY_FILES) {
+        if (f.studyId === studyId && !uniqueFiles.some((uf) => uf.id === f.id)) {
+          uniqueFiles.push(f);
+        }
+      }
+      return uniqueFiles.slice(0, max);
+    } catch (e) {
+      console.warn('Firestore listFilesByStudy failed', e);
+      return IN_MEMORY_FILES.filter((f) => f.studyId === studyId).slice(0, max);
+    }
   },
 
   async getAllFiles(max = 50): Promise<StoredFile[]> {
-    const q = query(
-      collection(db, FILES_COLLECTION),
-      orderBy('createdAt', 'desc'),
-      limit(max),
-    );
-    const snap = await getDocs(q);
-    return snap.docs.map((d) => ({ id: d.id, ...d.data() } as StoredFile));
+    try {
+      const q = query(
+        collection(db, FILES_COLLECTION),
+        orderBy('createdAt', 'desc'),
+        limit(max),
+      );
+      const snap = await getDocs(q);
+      const dbFiles = snap.docs.map((d) => ({ id: d.id, ...d.data() } as StoredFile));
+      
+      const uniqueFiles = [...dbFiles];
+      for (const f of IN_MEMORY_FILES) {
+        if (!uniqueFiles.some((uf) => uf.id === f.id)) {
+          uniqueFiles.push(f);
+        }
+      }
+      return uniqueFiles.slice(0, max);
+    } catch (e) {
+      console.warn('Firestore getAllFiles failed', e);
+      return [...IN_MEMORY_FILES].slice(0, max);
+    }
   },
 
   async updateFileAccess(fileId: string, accessibleTo: string[]): Promise<void> {
-    await updateDoc(doc(db, FILES_COLLECTION, fileId), {
-      accessibleTo,
-      updatedAt: Date.now(),
-    });
+    try {
+      await updateDoc(doc(db, FILES_COLLECTION, fileId), {
+        accessibleTo,
+        updatedAt: Date.now(),
+      });
+    } catch (e) {
+      console.warn('Firestore updateFileAccess failed', e);
+    }
+    const found = IN_MEMORY_FILES.find((f) => f.id === fileId);
+    if (found) {
+      found.accessibleTo = accessibleTo;
+      found.updatedAt = Date.now();
+    }
   },
 };

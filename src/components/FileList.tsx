@@ -40,19 +40,39 @@ export default function FileList({ files, loading, onDelete }: FileListProps) {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    let active = true;
     const load = async () => {
-      const map: Record<string, string> = {};
-      for (const f of files) {
-        try {
-          const url = await StorageService.getFileUrl(f.id);
-          if (url) map[f.id] = url;
-        } catch {
-          // skip
+      try {
+        const results = await Promise.all(
+          files.map(async (f) => {
+            try {
+              const url = await StorageService.getFileUrl(f.id);
+              return { id: f.id, url };
+            } catch {
+              return { id: f.id, url: null };
+            }
+          })
+        );
+        if (!active) return;
+        const map: Record<string, string> = {};
+        for (const res of results) {
+          if (res.url) {
+            map[res.id] = res.url;
+          }
         }
+        setUrls(map);
+      } catch (err) {
+        console.error('Failed to load file URLs', err);
       }
-      setUrls(map);
     };
-    if (files.length > 0) load();
+    if (files.length > 0) {
+      load();
+    } else {
+      setUrls({});
+    }
+    return () => {
+      active = false;
+    };
   }, [files]);
 
   const handleDelete = async (fileId: string) => {

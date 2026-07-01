@@ -242,7 +242,7 @@ export default function ClinicalAssistantScreen() {
       }
     } catch (err) {
       console.error(err);
-      responseContent = 'Sorry, I encountered an issue reaching the Clinical reasoning engine. Please make sure the backend is active and try again.';
+      responseContent = 'Sorry, I am currently unable to process your request. Please try again later.';
       citations = [
         { source: 'Clinical Rules Engine', document: 'Local Fallback Safe Mode' }
       ];

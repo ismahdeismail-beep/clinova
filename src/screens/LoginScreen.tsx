@@ -60,7 +60,7 @@ export default function LoginScreen() {
       console.error(err);
       let errMsg = 'Google sign-in failed. Please use Email/Password or the Quick Demo Sign-In below.';
       if (err?.code === 'auth/unauthorized-domain') {
-        errMsg = 'Google Sign-in: This domain is not authorized in your Firebase console. Please use standard Email/Password or click "Quick Demo Sign-In" below!';
+        errMsg = 'Google Sign-in is currently unavailable in this environment. Please use standard Email/Password or click "Quick Demo Sign-In" below.';
       } else if (err?.code === 'auth/popup-blocked') {
         errMsg = 'The sign-in popup was blocked. Please allow popups or try the Quick Demo Sign-In.';
       }

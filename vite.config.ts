@@ -11,9 +11,9 @@ export default defineConfig(() => {
       react(), 
       VitePWA({
         registerType: 'autoUpdate',
-        includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'masked-icon.svg', 'offline.html'],
+        includeAssets: ['clinova_logo.jpg', 'offline.html'],
         workbox: {
-          globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
+          globPatterns: ['**/*.{js,css,html,ico,png,jpg,jpeg,svg}'],
           navigateFallback: '/offline.html',
           maximumFileSizeToCacheInBytes: 5 * 1024 * 1024
         },
@@ -27,24 +27,8 @@ export default defineConfig(() => {
           icons: [
             {
               src: 'clinova_logo.jpg',
-              sizes: '1024x1024',
+              sizes: '192x192 512x512 1024x1024',
               type: 'image/jpeg',
-              purpose: 'any'
-            },
-             {
-              src: 'pwa-192x192.png',
-              sizes: '192x192',
-              type: 'image/png'
-            },
-            {
-              src: 'pwa-512x512.png',
-              sizes: '512x512',
-              type: 'image/png'
-            },
-            {
-              src: 'pwa-512x512.png',
-              sizes: '512x512',
-              type: 'image/png',
               purpose: 'any maskable'
             }
           ]

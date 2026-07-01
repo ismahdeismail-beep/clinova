@@ -127,7 +127,7 @@ export default function KnowledgeBaseScreen() {
       });
     } catch (error) {
       console.error('Study material generation error:', error);
-      alert('Error: Failed to connect or generate study material. Check server logs.');
+      alert('Sorry, there was an issue generating the study materials. Please try again later.');
     } finally {
       setIsGenerating(false);
     }

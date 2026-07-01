@@ -179,6 +179,54 @@ export default function ClinicalCasesScreen() {
         </button>
       </div>
 
+      {/* Free Open Access Books */}
+      <div className="space-y-3">
+        <h3 className="text-sm font-bold text-[var(--text)] uppercase tracking-wider flex items-center gap-2">
+          <BookOpen size={16} className="text-[var(--primary)]" />
+          Recommended Open Access Case Books
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[
+            {
+              title: "Clinical Cases in Clinical Pharmacology",
+              description: "Interactive clinical scenarios covering pharmacokinetics, analgesics, respiratory drugs, and cardiac therapies.",
+              source: "State Medical and Pharmaceutical University Library",
+              url: "https://library.usmf.md/sites/default/files/2019-10/Clinical%20cases%20in%20clinical%20pharmacology.pdf"
+            },
+            {
+              title: "Clinical Pharmacy & Pharmaceutical Care",
+              description: "Workbook focusing on identifying drug-related problems and building care plans via case analysis.",
+              source: "ResearchGate Repository",
+              url: "https://www.researchgate.net/"
+            },
+            {
+              title: "Clinical Pharmacy: Case Studies",
+              description: "USC Faculty Series guiding readers through laboratory test evaluations and therapeutic cases.",
+              source: "Academia.edu",
+              url: "https://www.academia.edu/"
+            },
+            {
+              title: "Pharmacy Case Studies",
+              description: "Therapeutic compilation focusing on complex areas, counseling, risk factors, and decision-making.",
+              source: "Academia.edu",
+              url: "https://www.academia.edu/"
+            }
+          ].map((book, i) => (
+            <a 
+              key={i} 
+              href={book.url} 
+              target="_blank" 
+              rel="noreferrer"
+              className="bg-[var(--surface-dim)] hover:bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] p-4 rounded-xl transition-all flex flex-col group cursor-pointer"
+            >
+              <h4 className="font-bold text-sm text-[var(--text)] mb-1 group-hover:text-[var(--primary)] transition-colors line-clamp-2">{book.title}</h4>
+              <p className="text-xs text-[var(--text-muted)] line-clamp-2 mb-3 flex-1">{book.description}</p>
+              <span className="text-[10px] font-mono text-[var(--primary)] bg-[var(--primary)]/10 px-2 py-1 rounded w-fit uppercase tracking-wider">{book.source}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+
       {/* Main Grid: List left, Detailed view right */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         

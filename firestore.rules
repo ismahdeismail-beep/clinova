@@ -1,8 +1,69 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    match /{document=**} {
-      allow read, write: if true;
+    
+    // Helper functions for auth status and roles
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function getUserData() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() &&
+        exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+        getUserData().role == 'admin';
+    }
+
+    // 1. Users Collection Rules
+    match /users/{userId} {
+      // Users can read and write their own profile details
+      allow read, write: if isOwner(userId);
+      // Administrators can read any user profile
+      allow read: if isAdmin();
+    }
+
+    // 2. Files Collection Rules
+    match /files/{fileId} {
+      // Reading file metadata
+      allow read: if (
+        isAuthenticated() && (
+          resource.data.accessScope == 'public' ||
+          resource.data.uploadedBy == request.auth.uid ||
+          (resource.data.keys().hasAll(['accessibleTo']) && request.auth.uid in resource.data.accessibleTo) ||
+          isAdmin()
+        )
+      ) || (
+        !isAuthenticated() && (
+          resource.data.accessScope == 'public' ||
+          resource.data.uploadedBy == 'guest'
+        )
+      );
+
+      // Creating a new file entry
+      allow create: if (
+        isAuthenticated() && request.resource.data.uploadedBy == request.auth.uid
+      ) || (
+        !isAuthenticated() && request.resource.data.uploadedBy == 'guest'
+      );
+
+      // Modifying or deleting a file entry
+      allow update, delete: if isAuthenticated() && (
+        resource.data.uploadedBy == request.auth.uid ||
+        isAdmin()
+      );
+    }
+
+    // 3. Generic fallback rules for any other synced dynamic collections (e.g., patients, cases, reviews)
+    match /{collectionPath}/{documentId} {
+      // Do not let this generic fallback override the strict rules for users and files
+      allow read, write: if isAuthenticated() && !(collectionPath in ['users', 'files']);
     }
   }
 }

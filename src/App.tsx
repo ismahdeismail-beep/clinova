@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate, Navigate } from 'react-router-dom';
 import { 
   Home, Users, FolderOpen, ClipboardList, Pill, Bot, 
   BookOpen, BarChart3, Bell, Settings, Menu, Search, MessageSquare, ShieldCheck
@@ -172,7 +172,21 @@ function AdminLoginScreen() {
 
 function AppContent() {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
-  const { userData } = useAuth();
+  const { userData, loading } = useAuth();
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-[var(--bg)] flex flex-col items-center justify-center p-8 text-center selection:bg-[var(--primary)] selection:text-white">
+        <div className="flex flex-col items-center gap-4 animate-pulse">
+          <div className="w-16 h-16 bg-[var(--primary)] text-white rounded-2xl flex items-center justify-center shadow-lg shadow-[var(--primary)]/20">
+            <ClinovaLogo size={32} variant="light" />
+          </div>
+          <h2 className="text-lg font-bold text-[var(--text)] tracking-tight">CLINOVA</h2>
+          <p className="text-xs text-[var(--text-muted)] font-medium">Initializing Clinical Intelligence OS...</p>
+        </div>
+      </div>
+    );
+  }
 
   if (!userData) {
     return (
@@ -208,6 +222,9 @@ function AppContent() {
             } />
             <Route path="/notifications" element={<NotificationsScreen />} />
             <Route path="/settings" element={<SettingsScreen />} />
+            <Route path="/login" element={<Navigate to="/" replace />} />
+            <Route path="/admin-access" element={<Navigate to="/" replace />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           <InstallPWA />
         </main>

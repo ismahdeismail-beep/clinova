@@ -5,11 +5,17 @@ import { useAuth } from '../contexts/AuthContext';
 import ClinovaLogo from '../components/ClinovaLogo';
 
 export default function LoginScreen() {
-  const { loginWithGoogle } = useAuth();
+  const { loginWithGoogle, userData } = useAuth();
   const navigate = useNavigate();
   
   const [isLoading, setIsLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+
+  React.useEffect(() => {
+    if (userData) {
+      navigate('/', { replace: true });
+    }
+  }, [userData, navigate]);
 
   const handleGoogleLogin = async () => {
     setIsLoading(true);

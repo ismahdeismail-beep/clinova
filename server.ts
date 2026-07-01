@@ -275,6 +275,112 @@ User Clinical Query: "${userMessage}"
   }
 });
 
+// AI Study and Exam Material Generator Endpoint
+app.post('/api/gemini/generate-study-material', async (req, res) => {
+  try {
+    const { source, outputType, questionTypes, includePodcast } = req.body;
+
+    if (!source) {
+      return res.status(400).json({ error: 'Missing source' });
+    }
+
+    let prompt = `You are Clinova OS, an advanced Clinical Pharmacy Assistant and AI Knowledge Engine.
+You need to generate high-quality clinical study materials for the resource: "${source}".
+Requested Output Type: ${outputType}
+`;
+
+    if (outputType === 'All Form Questions') {
+      prompt += `Generate a comprehensive exam questions pool including: ${questionTypes ? questionTypes.join(', ') : 'MCQs'}.
+Provide 3 highly relevant clinical board-style questions with answers, detailed explanations, and clinical pearls based on Kenyan clinical pharmacy guidelines and KDI.`;
+    } else {
+      prompt += `Generate high-yield short notes containing:
+1. Clinical Pharmacology & Mechanism of Action.
+2. Formulary Dosing & Adjustments (specifically highlighting renal clearance and CrCl guidance if applicable, citing KDI standards).
+3. Critical Contraindications & Drug Interactions.
+4. OSCE/Exam Pearls (high-yield tips for boards).`;
+    }
+
+    if (includePodcast) {
+      prompt += `\n\n=== PODCAST SECTION ===\nAlso generate a simulated educational audio podcast transcript between two clinical hosts (Dr. Clara and Dr. Noah) discussing this topic. Keep it lively, engaging, and highly educational. Start the transcript with "[Dr. Clara]:" or "[Dr. Noah]:".`;
+    }
+
+    const response = await ai.models.generateContent({
+      model: 'gemini-3.5-flash',
+      contents: prompt,
+      config: {
+        systemInstruction: `You are an expert clinical pharmacy professor and OSCE examiner in Kenya. You draft official medical board exam questions, high-yield summary guides, and professional medical educational materials based on the Kenya Drug Index (KDI) and international clinical standards. Ensure your outputs are formatted clearly using markdown.`,
+      }
+    });
+
+    const text = response.text || '';
+    
+    let content = text;
+    let podcastTranscript = '';
+    
+    if (includePodcast) {
+      const parts = text.split(/=== PODCAST SECTION ===|PODCAST SECTION/i);
+      if (parts.length > 1) {
+        content = parts[0].trim();
+        podcastTranscript = parts.slice(1).join('\n').trim();
+      } else {
+        const hostIndex = text.indexOf('[Dr.');
+        if (hostIndex !== -1) {
+          content = text.substring(0, hostIndex).trim();
+          podcastTranscript = text.substring(hostIndex).trim();
+        }
+      }
+    }
+
+    res.json({
+      content,
+      podcastTranscript: podcastTranscript || (includePodcast ? text : undefined),
+    });
+  } catch (error: any) {
+    console.error('Study generation error:', error);
+    res.status(500).json({ error: error.message || 'AI generation failed' });
+  }
+});
+
+// KDI & WHO Drug Profile Lookup Endpoint
+app.post('/api/gemini/search-drug', async (req, res) => {
+  try {
+    const { drugName, category } = req.body;
+
+    if (!drugName && !category) {
+      return res.status(400).json({ error: 'Missing drugName or category' });
+    }
+
+    const queryInfo = drugName ? `Search Name: "${drugName}"` : `Browse Category: "${category}"`;
+
+    const prompt = `You are Clinova OS, an advanced Clinical Pharmacy Assistant and AI Knowledge Engine.
+Please provide a complete, clinical-grade medical profile for the medication search query.
+Query Info: ${queryInfo}
+
+If a specific drug name is entered, return the profile for that drug. If a category is selected, return a list of 3-5 prominent drugs in that category, and describe each in brief, structured clinical notes.
+
+For each drug profile, include:
+1. **Generic Name & Class**: Generic name, pharmacologic class, and common brand names in Kenya.
+2. **Key Indications & Recommended Dosages**: Adult/pediatric doses for typical indications based on Kenya Drug Index (KDI) standards.
+3. **Renal & Hepatic Adjustments**: Crucial CrCl-based or child-pugh based adjustments.
+4. **Important Contraindications & Key Interaction Alerts**: Life-threatening combinations or critical warnings.
+5. **Key Patient Monitoring Guidelines**: Crucial clinical/lab monitoring indices (e.g., serum Cr, electrolytes, INR).
+`;
+
+    const response = await ai.models.generateContent({
+      model: 'gemini-3.5-flash',
+      contents: prompt,
+      config: {
+        systemInstruction: `You are an expert clinical pharmacologist and KDI committee editor. Provide highly structured, precise, and guideline-directed monographs. Always format using structured markdown with clear headings, bullets, and tables where helpful.`,
+      }
+    });
+
+    res.json({ text: response.text });
+  } catch (error: any) {
+    console.error('Drug profile search error:', error);
+    res.status(500).json({ error: error.message || 'AI drug lookup failed' });
+  }
+});
+
 // Secure Cloudinary Destroy API
 app.post('/api/cloudinary/destroy', async (req, res) => {
   try {

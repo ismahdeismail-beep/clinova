@@ -97,52 +97,40 @@ export default function KnowledgeBaseScreen() {
     }
   };
 
-  const handleGenerate = () => {
+  const handleGenerate = async () => {
     if (!selectedSource) return;
     setIsGenerating(true);
     setGeneratedResult(null);
 
-    setTimeout(() => {
-      let mockContent = '';
-      let mockTranscript = '';
+    try {
+      const res = await fetch('/api/gemini/generate-study-material', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          source: selectedSource,
+          outputType,
+          questionTypes,
+          includePodcast,
+        }),
+      });
 
-      if (outputType === 'Short Notes Summary') {
-        mockContent = `### High-Yield Short Notes: ${selectedSource}
-- **Mechanism of Action**: Key pathway target inhibiting bacterial peptidoglycan synthesis.
-- **Formulary Dosing (KDI Cited)**: Standard adult dose is 500mg PO Q8H. Adjust for CrCl < 30 mL/min to Q12H.
-- **Contraindications**: Severe hypersensitivity to beta-lactam antibiotics.
-- **Exam Pearls**: Commonly tested on OSCEs regarding cross-reactivity and renal monitoring. Always verify Baseline Creatinine.`;
-      } else if (outputType === 'All Form Questions') {
-        mockContent = `### Comprehensive Exam Questions Pool (${questionTypes.join(', ')})
-
-**1. Multiple Choice Question (MCQ)**
-Which of the following represents the correct renal dose adjustment according to KDI guidelines?
-A) No adjustment required
-B) Reduce dose by 50% for CrCl < 30 mL/min *(Correct)*
-C) Double the dosing interval only
-D) Contraindicated in mild renal impairment
-
-**2. True/False Statement**
-Routine monitoring of serum potassium is mandatory when initiating co-trimoxazole high-dose therapy. *(True)*
-
-**3. Short Answer / OSCE Scenario**
-A 54-year-old patient presents with pneumonia on warfarin. Explain the pharmacokinetic interaction and the immediate monitoring plan.`;
-      } else {
-        mockContent = `Generated Study Kit for ${selectedSource}. Review key monographs and exam checklists below.`;
+      if (!res.ok) {
+        throw new Error('Failed to generate study materials');
       }
 
-      if (includePodcast) {
-        mockTranscript = `[Podcast Audio AI Host]: "Welcome back to Clinova Exam Prep audio! Today we are breaking down ${selectedSource}. The absolute number one thing you must remember for your board exams is the interaction profile. When a patient is initiated on this regimen, Medscape and KDI explicitly emphasize monitoring renal clearance..."`;
-      }
-
+      const data = await res.json();
       setGeneratedResult({
         type: outputType,
-        content: mockContent,
-        podcastTranscript: includePodcast ? mockTranscript : undefined,
+        content: data.content,
+        podcastTranscript: data.podcastTranscript || undefined,
         audioUrl: includePodcast ? 'https://example.com/mock-podcast.mp3' : undefined
       });
+    } catch (error) {
+      console.error('Study material generation error:', error);
+      alert('Error: Failed to connect or generate study material. Check server logs.');
+    } finally {
       setIsGenerating(false);
-    }, 1500);
+    }
   };
 
   return (

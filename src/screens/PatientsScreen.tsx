@@ -1,9 +1,12 @@
-import React, { useState } from "react";
-import { Search, UserPlus, FileText, ChevronRight } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { Search, UserPlus, FileText, ChevronRight, Loader2, X, User } from "lucide-react";
 import {
   PatientQuickSummary,
   Patient,
 } from "../components/PatientQuickSummary";
+import { db } from "../lib/firebase";
+import { collection, getDocs, doc, setDoc, addDoc, updateDoc } from "firebase/firestore";
+import { handleFirestoreError, OperationType } from "../lib/firestore-error";
 
 const MOCK_PATIENTS: Patient[] = [
   {
@@ -43,24 +46,6 @@ const MOCK_PATIENTS: Patient[] = [
         bpSystolic: 140,
         bpDiastolic: 90,
       },
-      {
-        time: "08:00",
-        date: "Oct 25",
-        hr: 84,
-        temp: 36.9,
-        spo2: 97,
-        bpSystolic: 132,
-        bpDiastolic: 86,
-      },
-      {
-        time: "16:00",
-        date: "Oct 25",
-        hr: 86,
-        temp: 37.1,
-        spo2: 97,
-        bpSystolic: 138,
-        bpDiastolic: 89,
-      },
     ],
     alerts: [
       {
@@ -69,6 +54,7 @@ const MOCK_PATIENTS: Patient[] = [
         message: "Elevated blood pressure observed in last 2 readings.",
       },
     ],
+    notes: [],
   },
   {
     id: "2",
@@ -89,26 +75,9 @@ const MOCK_PATIENTS: Patient[] = [
         bpSystolic: 118,
         bpDiastolic: 78,
       },
-      {
-        time: "12:00",
-        date: "Oct 24",
-        hr: 75,
-        temp: 36.7,
-        spo2: 99,
-        bpSystolic: 120,
-        bpDiastolic: 80,
-      },
-      {
-        time: "16:00",
-        date: "Oct 24",
-        hr: 76,
-        temp: 36.8,
-        spo2: 99,
-        bpSystolic: 122,
-        bpDiastolic: 82,
-      },
     ],
     alerts: [],
+    notes: [],
   },
   {
     id: "3",
@@ -129,33 +98,6 @@ const MOCK_PATIENTS: Patient[] = [
         bpSystolic: 100,
         bpDiastolic: 70,
       },
-      {
-        time: "10:00",
-        date: "Oct 24",
-        hr: 102,
-        temp: 38.0,
-        spo2: 90,
-        bpSystolic: 95,
-        bpDiastolic: 65,
-      },
-      {
-        time: "12:00",
-        date: "Oct 24",
-        hr: 108,
-        temp: 38.2,
-        spo2: 89,
-        bpSystolic: 92,
-        bpDiastolic: 62,
-      },
-      {
-        time: "14:00",
-        date: "Oct 24",
-        hr: 110,
-        temp: 38.5,
-        spo2: 88,
-        bpSystolic: 90,
-        bpDiastolic: 60,
-      },
     ],
     alerts: [
       {
@@ -163,95 +105,74 @@ const MOCK_PATIENTS: Patient[] = [
         type: "critical",
         message: "Desaturation alert: SpO2 dropped below 90%.",
       },
-      {
-        id: "a3",
-        type: "critical",
-        message: "Tachycardia and fever present. Suspected sepsis.",
-      },
     ],
-  },
-  {
-    id: "4",
-    name: "Aisha Hassan",
-    ipNumber: "IP-2023-1004",
-    age: 27,
-    sex: "F",
-    ward: "Surgical Ward",
-    lastAdmission: "Oct 16, 2023",
-    vitals: { bp: "115/75", hr: 82, temp: 37.0, rr: 14, spo2: 98 },
-    vitalsHistory: [
-      {
-        time: "08:00",
-        date: "Oct 24",
-        hr: 80,
-        temp: 36.9,
-        spo2: 98,
-        bpSystolic: 110,
-        bpDiastolic: 70,
-      },
-      {
-        time: "12:00",
-        date: "Oct 24",
-        hr: 82,
-        temp: 37.0,
-        spo2: 98,
-        bpSystolic: 115,
-        bpDiastolic: 75,
-      },
-    ],
-    alerts: [
-      {
-        id: "a4",
-        type: "info",
-        message: "Scheduled for dressing change at 14:00.",
-      },
-    ],
-  },
-  {
-    id: "5",
-    name: "David Mutua",
-    ipNumber: "IP-2023-1005",
-    age: 64,
-    sex: "M",
-    ward: "Medical Ward B",
-    lastAdmission: "Oct 10, 2023",
-    vitals: { bp: "135/85", hr: 70, temp: 36.5, rr: 16, spo2: 95 },
-    vitalsHistory: [
-      {
-        time: "08:00",
-        date: "Oct 24",
-        hr: 72,
-        temp: 36.4,
-        spo2: 96,
-        bpSystolic: 130,
-        bpDiastolic: 80,
-      },
-      {
-        time: "12:00",
-        date: "Oct 24",
-        hr: 70,
-        temp: 36.5,
-        spo2: 95,
-        bpSystolic: 135,
-        bpDiastolic: 85,
-      },
-    ],
-    alerts: [
-      {
-        id: "a5",
-        type: "warning",
-        message: "Pending fasting blood sugar results.",
-      },
-    ],
+    notes: [],
   },
 ];
 
 export default function PatientsScreen() {
-  const [patients, setPatients] = useState<Patient[]>(MOCK_PATIENTS);
-  const [selectedPatientId, setSelectedPatientId] = useState<string | null>(
-    null,
-  );
+  const [patients, setPatients] = useState<Patient[]>([]);
+  const [selectedPatientId, setSelectedPatientId] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
+
+  // New Patient modal states
+  const [showNewModal, setShowNewModal] = useState(false);
+  const [newName, setNewName] = useState("");
+  const [newAge, setNewAge] = useState("40");
+  const [newSex, setNewSex] = useState("M");
+  const [newWard, setNewWard] = useState("Medical Ward A");
+  const [newIpNumber, setNewIpNumber] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const fetchPatients = async () => {
+    setIsLoading(true);
+    const path = "patients";
+    try {
+      const querySnapshot = await getDocs(collection(db, path));
+      if (querySnapshot.empty) {
+        // Seed patients to Firestore if empty
+        const seededPatients: Patient[] = [];
+        for (const p of MOCK_PATIENTS) {
+          const docRef = doc(collection(db, "patients"));
+          const patientWithId = { ...p, id: docRef.id };
+          await setDoc(docRef, patientWithId);
+          seededPatients.push(patientWithId);
+        }
+        setPatients(seededPatients);
+      } else {
+        const patientList: Patient[] = [];
+        querySnapshot.forEach((docSnap) => {
+          const data = docSnap.data();
+          patientList.push({
+            id: docSnap.id,
+            name: data.name || "",
+            ipNumber: data.ipNumber || "",
+            age: Number(data.age) || 0,
+            sex: data.sex || "M",
+            ward: data.ward || "",
+            lastAdmission: data.lastAdmission || "",
+            vitals: data.vitals || { bp: "120/80", hr: 70, temp: 36.5, rr: 16, spo2: 98 },
+            vitalsHistory: data.vitalsHistory || [],
+            alerts: data.alerts || [],
+            labs: data.labs || [],
+            notes: data.notes || [],
+          });
+        });
+        setPatients(patientList);
+      }
+    } catch (error) {
+      console.error("Error fetching patients from Firestore:", error);
+      // Fallback gracefully to MOCK if off-line or error
+      setPatients(MOCK_PATIENTS);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchPatients();
+  }, []);
 
   const selectedPatient =
     patients.find((p) => p.id === selectedPatientId) || null;
@@ -261,82 +182,163 @@ export default function PatientsScreen() {
     return (
       p.name.toLowerCase().includes(q) ||
       p.ipNumber.toLowerCase().includes(q) ||
-      p.ward.toLowerCase().includes(q) ||
-      p.id.toLowerCase().includes(q)
+      p.ward.toLowerCase().includes(q)
     );
   });
 
-  const handleUpdateVitals = (
+  const handleUpdateVitals = async (
     patientId: string,
     updatedVitals: Patient["vitals"],
   ) => {
+    const now = new Date();
+    const timeString = `${now.getHours().toString().padStart(2, "0")}:${now.getMinutes().toString().padStart(2, "0")}`;
+    const dateString = now.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+
+    const patient = patients.find((p) => p.id === patientId);
+    if (!patient) return;
+
+    const newHistoryItem = {
+      time: timeString,
+      date: dateString,
+      hr: Number(updatedVitals.hr),
+      temp: Number(updatedVitals.temp),
+      spo2: Number(updatedVitals.spo2),
+      bpSystolic: parseInt(updatedVitals.bp.split("/")[0]) || 120,
+      bpDiastolic: parseInt(updatedVitals.bp.split("/")[1]) || 80,
+    };
+
+    const updatedHistory = [...(patient.vitalsHistory || []), newHistoryItem];
+
+    // Optimistic Local state update
     setPatients((prev) =>
       prev.map((p) => {
         if (p.id === patientId) {
-          const now = new Date();
-          const timeString = `${now.getHours().toString().padStart(2, "0")}:${now.getMinutes().toString().padStart(2, "0")}`;
-
           return {
             ...p,
             vitals: updatedVitals,
-            vitalsHistory: [
-              ...(p.vitalsHistory || []),
-              {
-                time: timeString,
-                hr: updatedVitals.hr,
-                temp: updatedVitals.temp,
-                spo2: updatedVitals.spo2,
-              },
-            ],
+            vitalsHistory: updatedHistory,
           };
         }
         return p;
       }),
     );
+
+    // Save to Firestore
+    const path = `patients/${patientId}`;
+    try {
+      await updateDoc(doc(db, "patients", patientId), {
+        vitals: updatedVitals,
+        vitalsHistory: updatedHistory,
+      });
+    } catch (error) {
+      handleFirestoreError(error, OperationType.UPDATE, path);
+    }
   };
 
-  const handleAddNote = (patientId: string, noteText: string) => {
+  const handleAddNote = async (patientId: string, noteText: string) => {
+    const now = new Date();
+    const timeString = `${now.getHours().toString().padStart(2, "0")}:${now.getMinutes().toString().padStart(2, "0")}`;
+
+    const patient = patients.find((p) => p.id === patientId);
+    if (!patient) return;
+
+    const updatedNotes = [...(patient.notes || []), { time: timeString, text: noteText }];
+
+    // Optimistic local update
     setPatients((prev) =>
       prev.map((p) => {
         if (p.id === patientId) {
-          const now = new Date();
-          const timeString = `${now.getHours().toString().padStart(2, "0")}:${now.getMinutes().toString().padStart(2, "0")}`;
-
           return {
             ...p,
-            notes: [...(p.notes || []), { time: timeString, text: noteText }],
+            notes: updatedNotes,
           };
         }
         return p;
       }),
     );
+
+    // Save to Firestore
+    const path = `patients/${patientId}`;
+    try {
+      await updateDoc(doc(db, "patients", patientId), {
+        notes: updatedNotes,
+      });
+    } catch (error) {
+      handleFirestoreError(error, OperationType.UPDATE, path);
+    }
+  };
+
+  const handleCreatePatient = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newName.trim()) return;
+
+    setIsSubmitting(true);
+    const path = "patients";
+    try {
+      const now = new Date();
+      const dateString = now.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+      
+      const newPatientData = {
+        name: newName.trim(),
+        age: Number(newAge),
+        sex: newSex,
+        ward: newWard,
+        ipNumber: newIpNumber.trim() || `IP-2026-${Math.floor(1000 + Math.random() * 9000)}`,
+        lastAdmission: dateString,
+        vitals: { bp: "120/80", hr: 72, temp: 36.8, rr: 16, spo2: 98 },
+        vitalsHistory: [],
+        alerts: [],
+        labs: [],
+        notes: [],
+      };
+
+      const docRef = await addDoc(collection(db, path), newPatientData);
+      
+      // Clear forms
+      setNewName("");
+      setNewAge("40");
+      setNewSex("M");
+      setNewWard("Medical Ward A");
+      setNewIpNumber("");
+      setShowNewModal(false);
+
+      // Refresh list
+      await fetchPatients();
+    } catch (error) {
+      handleFirestoreError(error, OperationType.CREATE, path);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <div className="p-6 max-w-[1400px] mx-auto space-y-6">
+    <div className="p-6 max-w-[1400px] mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-white">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
         <div>
           <h1 className="text-3xl font-bold text-[var(--text)] mb-2 tracking-tight">
             Patients
           </h1>
           <p className="text-[var(--text-muted)] text-sm">
-            Patient registry and demographic profiles.
+            Patient registry, demographics, clinical notes, and vitals plotting.
           </p>
         </div>
-        <button className="px-4 py-2 bg-[var(--primary)] text-white rounded-lg font-medium text-sm flex items-center gap-2 hover:opacity-90 transition-opacity">
+        <button 
+          onClick={() => setShowNewModal(true)}
+          className="px-4 py-2.5 bg-[var(--primary)] text-white rounded-xl font-semibold text-sm flex items-center gap-2 hover:opacity-95 transition-opacity shadow-sm"
+        >
           <UserPlus size={18} />
-          New Patient
+          Add Patient
         </button>
       </div>
 
-      <div className="bg-[var(--surface)] p-4 rounded-xl border border-[var(--border)] shadow-sm flex items-center gap-3">
-        <Search size={20} className="text-[var(--text-muted)]" />
+      <div className="bg-[var(--surface)] p-3 rounded-xl border border-[var(--border)] shadow-sm flex items-center gap-3">
+        <Search size={20} className="text-[var(--text-dim)]" />
         <input
           type="text"
           placeholder="Search by name, IP number, or ward..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="flex-1 bg-transparent border-none outline-none text-[var(--text)]"
+          className="flex-1 bg-transparent border-none outline-none text-[var(--text)] text-sm focus:ring-0"
         />
       </div>
 
@@ -345,75 +347,82 @@ export default function PatientsScreen() {
         <div
           className={`transition-all duration-300 ${selectedPatient ? "lg:w-2/3" : "w-full"}`}
         >
-          <div className="bg-[var(--surface)] rounded-xl border border-[var(--border)] shadow-sm overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm text-left">
-                <thead className="bg-[var(--surface-dim)] text-[var(--text-muted)] text-xs uppercase">
-                  <tr>
-                    <th className="px-6 py-4 font-medium">Patient Name</th>
-                    <th className="px-6 py-4 font-medium">IP Number</th>
-                    <th className="px-6 py-4 font-medium hidden sm:table-cell">
-                      Age/Sex
-                    </th>
-                    <th className="px-6 py-4 font-medium hidden md:table-cell">
-                      Ward
-                    </th>
-                    <th className="px-6 py-4 font-medium text-right">
-                      Actions
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[var(--border)] bg-[var(--surface)]">
-                  {filteredPatients.length > 0 ? (
-                    filteredPatients.map((patient) => (
-                      <tr
-                        key={patient.id}
-                        className={`transition-colors cursor-pointer ${
-                          selectedPatientId === patient.id
-                            ? "bg-[var(--primary-container)]"
-                            : "hover:bg-[var(--surface-dim)]"
-                        }`}
-                        onClick={() => setSelectedPatientId(patient.id)}
-                      >
-                        <td className="px-6 py-4 font-medium text-[var(--text)]">
-                          {patient.name}
-                          {patient.alerts.some(
-                            (a) => a.type === "critical",
-                          ) && (
-                            <span className="ml-2 inline-block w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                          )}
-                        </td>
-                        <td className="px-6 py-4 text-[var(--text-muted)]">
-                          {patient.ipNumber}
-                        </td>
-                        <td className="px-6 py-4 text-[var(--text-muted)] hidden sm:table-cell">
-                          {patient.age} / {patient.sex}
-                        </td>
-                        <td className="px-6 py-4 text-[var(--text-muted)] hidden md:table-cell">
-                          {patient.ward}
-                        </td>
-                        <td className="px-6 py-4 text-right">
-                          <button className="text-[var(--primary)] hover:underline font-medium text-xs inline-flex items-center gap-1">
-                            View
-                            <ChevronRight size={14} />
-                          </button>
+          {isLoading ? (
+            <div className="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-12 text-center shadow-sm">
+              <Loader2 size={32} className="animate-spin text-[var(--primary)] mx-auto mb-3" />
+              <p className="text-sm text-[var(--text-muted)]">Fetching patient clinical records...</p>
+            </div>
+          ) : (
+            <div className="bg-[var(--surface)] rounded-xl border border-[var(--border)] shadow-sm overflow-hidden animate-in fade-in duration-300">
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm text-left">
+                  <thead className="bg-[var(--surface-dim)] text-[var(--text-muted)] text-xs uppercase">
+                    <tr>
+                      <th className="px-6 py-4 font-bold">Patient Name</th>
+                      <th className="px-6 py-4 font-bold">IP Number</th>
+                      <th className="px-6 py-4 font-bold hidden sm:table-cell">
+                        Age/Sex
+                      </th>
+                      <th className="px-6 py-4 font-bold hidden md:table-cell">
+                        Ward
+                      </th>
+                      <th className="px-6 py-4 font-bold text-right">
+                        Actions
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-[var(--border)] bg-[var(--surface)]">
+                    {filteredPatients.length > 0 ? (
+                      filteredPatients.map((patient) => (
+                        <tr
+                          key={patient.id}
+                          className={`transition-colors cursor-pointer ${
+                            selectedPatientId === patient.id
+                              ? "bg-[var(--primary-container)]"
+                              : "hover:bg-[var(--surface-dim)]"
+                          }`}
+                          onClick={() => setSelectedPatientId(patient.id)}
+                        >
+                          <td className="px-6 py-4 font-semibold text-[var(--text)]">
+                            {patient.name}
+                            {patient.alerts?.some(
+                              (a) => a.type === "critical",
+                            ) && (
+                              <span className="ml-2 inline-block w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                            )}
+                          </td>
+                          <td className="px-6 py-4 text-[var(--text-muted)] font-mono text-xs">
+                            {patient.ipNumber}
+                          </td>
+                          <td className="px-6 py-4 text-[var(--text-muted)] hidden sm:table-cell font-medium">
+                            {patient.age} / {patient.sex}
+                          </td>
+                          <td className="px-6 py-4 text-[var(--text-muted)] hidden md:table-cell font-medium">
+                            {patient.ward}
+                          </td>
+                          <td className="px-6 py-4 text-right">
+                            <button className="text-[var(--primary)] hover:underline font-bold text-xs inline-flex items-center gap-1">
+                              View Profile
+                              <ChevronRight size={14} />
+                            </button>
+                          </td>
+                        </tr>
+                      ))
+                    ) : (
+                      <tr>
+                        <td
+                          colSpan={5}
+                          className="px-6 py-8 text-center text-[var(--text-muted)] font-medium"
+                        >
+                          No patients found matching your search.
                         </td>
                       </tr>
-                    ))
-                  ) : (
-                    <tr>
-                      <td
-                        colSpan={5}
-                        className="px-6 py-8 text-center text-[var(--text-muted)]"
-                      >
-                        No patients found matching your search.
-                      </td>
-                    </tr>
-                  )}
-                </tbody>
-              </table>
+                    )}
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         {/* Quick Summary Section */}
@@ -430,6 +439,110 @@ export default function PatientsScreen() {
           </div>
         )}
       </div>
+
+      {/* New Patient Modal Dialog */}
+      {showNewModal && (
+        <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 backdrop-blur-sm animate-in fade-in duration-200">
+          <div className="bg-[var(--surface)] w-full max-w-md rounded-2xl border border-[var(--border)] shadow-xl overflow-hidden animate-in zoom-in-95 duration-200">
+            <div className="px-6 py-4 border-b border-[var(--border)] flex justify-between items-center bg-[var(--surface-dim)]">
+              <h3 className="text-lg font-bold text-[var(--text)]">Register New Patient</h3>
+              <button 
+                onClick={() => setShowNewModal(false)}
+                className="p-1.5 hover:bg-[var(--surface-dim)] rounded-lg text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            <form onSubmit={handleCreatePatient}>
+              <div className="p-6 space-y-4 text-left">
+                <div className="space-y-1">
+                  <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Patient Full Name</label>
+                  <input 
+                    type="text"
+                    required
+                    value={newName}
+                    onChange={(e) => setNewName(e.target.value)}
+                    placeholder="e.g. John Doe"
+                    className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:border-[var(--primary)]"
+                  />
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Age</label>
+                    <input 
+                      type="number"
+                      required
+                      value={newAge}
+                      onChange={(e) => setNewAge(e.target.value)}
+                      placeholder="40"
+                      className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:border-[var(--primary)]"
+                    />
+                  </div>
+
+                  <div className="space-y-1">
+                    <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Sex</label>
+                    <select 
+                      value={newSex}
+                      onChange={(e) => setNewSex(e.target.value)}
+                      className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:border-[var(--primary)]"
+                    >
+                      <option value="M">Male</option>
+                      <option value="F">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="space-y-1">
+                  <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">IP / OP Number</label>
+                  <input 
+                    type="text"
+                    value={newIpNumber}
+                    onChange={(e) => setNewIpNumber(e.target.value)}
+                    placeholder="Leave blank to auto-generate"
+                    className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:border-[var(--primary)] font-mono"
+                  />
+                </div>
+
+                <div className="space-y-1">
+                  <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Ward Assignment</label>
+                  <select 
+                    value={newWard}
+                    onChange={(e) => setNewWard(e.target.value)}
+                    className="w-full px-3 py-2 border border-[var(--border)] rounded-lg bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:border-[var(--primary)]"
+                  >
+                    <option value="Medical Ward A">Medical Ward A</option>
+                    <option value="Medical Ward B">Medical Ward B</option>
+                    <option value="Surgical Ward">Surgical Ward</option>
+                    <option value="ICU">ICU</option>
+                    <option value="Maternity Wing">Maternity Wing</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="px-6 py-4 border-t border-[var(--border)] flex justify-end gap-3 bg-[var(--surface-dim)]">
+                <button 
+                  type="button"
+                  onClick={() => setShowNewModal(false)}
+                  className="px-4 py-2 border border-[var(--border)] hover:bg-[var(--surface-dim)] text-[var(--text)] font-semibold text-sm rounded-lg"
+                >
+                  Cancel
+                </button>
+                <button 
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="px-4 py-2 bg-[var(--primary)] text-white font-semibold text-sm rounded-lg hover:opacity-95 transition-opacity flex items-center gap-2"
+                >
+                  {isSubmitting && <Loader2 size={14} className="animate-spin" />}
+                  Register Patient
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

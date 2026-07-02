@@ -100,7 +100,8 @@ export default function PharmacotherapyReviewScreen() {
       });
 
       if (!res.ok) {
-        throw new Error('Server returned an error');
+        const errorData = await res.json().catch(() => ({}));
+        throw new Error(errorData.error || 'Server returned an error');
       }
 
       const data = await res.json();
@@ -180,11 +181,11 @@ export default function PharmacotherapyReviewScreen() {
         type: 'success',
         text: `Clinova AI has successfully analyzed patient demographics, vitals, labs, diagnoses, and uploaded notes to auto-fill the selected sections: ${filledSections.join(', ')}.`,
       });
-    } catch (error) {
+    } catch (error: any) {
       console.error(error);
       setBannerMessage({
         type: 'error',
-        text: 'Failed to auto-fill form. Please check your network or try again.',
+        text: `Failed to auto-fill form: ${error.message || 'Please check your network or try again.'}`,
       });
     } finally {
       setIsGenerating(false);
@@ -219,7 +220,8 @@ export default function PharmacotherapyReviewScreen() {
       });
 
       if (!res.ok) {
-        throw new Error('Assistant failed to respond');
+        const errorData = await res.json().catch(() => ({}));
+        throw new Error(errorData.error || 'Assistant failed to respond');
       }
 
       const data = await res.json();
@@ -227,11 +229,11 @@ export default function PharmacotherapyReviewScreen() {
         ...prev,
         { role: 'assistant', content: data.text, timestamp: new Date() }
       ]);
-    } catch (error) {
+    } catch (error: any) {
       console.error(error);
       setChatMessages(prev => [
         ...prev,
-        { role: 'assistant', content: 'Sorry, I encountered an error communicating with the clinical assistant. Please try again.', timestamp: new Date() }
+        { role: 'assistant', content: `Sorry, I encountered an error: ${error.message || 'communicating with the clinical assistant. Please try again.'}`, timestamp: new Date() }
       ]);
     } finally {
       setIsAssistantThinking(false);

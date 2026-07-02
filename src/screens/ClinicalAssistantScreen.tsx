@@ -216,7 +216,8 @@ export default function ClinicalAssistantScreen() {
       });
 
       if (!res.ok) {
-        throw new Error('Clinical Assistant service failed');
+        const errorData = await res.json().catch(() => ({}));
+        throw new Error(errorData.error || 'Clinical Assistant service failed');
       }
 
       const data = await res.json();
@@ -240,9 +241,9 @@ export default function ClinicalAssistantScreen() {
           { source: 'WHO Essential Medicines List', document: 'Formulary Reference', year: '2023' }
         ];
       }
-    } catch (err) {
+    } catch (err: any) {
       console.error(err);
-      responseContent = 'Sorry, I am currently unable to process your request. Please try again later.';
+      responseContent = `Sorry, I encountered an issue: ${err.message || 'Please verify that your GEMINI_API_KEY environment variable is properly configured in settings.'}`;
       citations = [
         { source: 'Clinical Rules Engine', document: 'Local Fallback Safe Mode' }
       ];

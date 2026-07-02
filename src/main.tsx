@@ -9,6 +9,7 @@ import { syncManager } from "./lib/syncManager.ts";
 import "./index.css";
 
 import { NotificationProvider } from "./contexts/NotificationContext";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 // Initialize sync manager
 syncManager.sync();
@@ -29,7 +30,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <ErrorBoundary>
       <AuthProvider>
         <NotificationProvider>
-          <App />
+          <ThemeProvider>
+            <App />
+          </ThemeProvider>
         </NotificationProvider>
       </AuthProvider>
     </ErrorBoundary>

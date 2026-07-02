@@ -23,6 +23,7 @@ import { CommandPalette } from './components/CommandPalette';
 import LoginScreen from './screens/LoginScreen';
 import LandingScreen from './screens/LandingScreen';
 import ClinovaLogo from './components/ClinovaLogo';
+import ThemeToggle from './components/ThemeToggle';
 
 import { useNotifications } from './contexts/NotificationContext';
 
@@ -127,6 +128,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
           <Link to="/settings" className={`text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary-container)] rounded-full transition-colors hidden sm:block ${isScrolled ? 'p-1.5' : 'p-2'}`}>
             <Settings size={isScrolled ? 18 : 20} />
           </Link>
+          <ThemeToggle />
           
           {!isScrolled && <div className="h-8 w-px bg-[var(--border)] mx-1 hidden sm:block transition-all"></div>}
           

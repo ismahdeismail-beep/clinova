@@ -52,15 +52,26 @@ app.post('/api/cloudinary/upload', upload.single('file'), async (req, res) => {
   }
 });
 
-// Initialize Gemini Client
-const ai = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY,
-  httpOptions: {
-    headers: {
-      'User-Agent': 'aistudio-build',
-    },
-  },
-});
+// Initialize Gemini Client (Lazy Initialization to prevent startup crashes when API key is missing)
+let aiClient: GoogleGenAI | null = null;
+
+function getGeminiClient(): GoogleGenAI {
+  if (!aiClient) {
+    const key = process.env.GEMINI_API_KEY;
+    if (!key) {
+      throw new Error('GEMINI_API_KEY is not configured. Please add your Gemini API Key in the AI Studio Settings menu to power the AI features of Clinova.');
+    }
+    aiClient = new GoogleGenAI({
+      apiKey: key,
+      httpOptions: {
+        headers: {
+          'User-Agent': 'aistudio-build',
+        },
+      },
+    });
+  }
+  return aiClient;
+}
 
 // AI Autofill Endpoint
 app.post('/api/gemini/autofill', async (req, res) => {
@@ -139,7 +150,7 @@ Generate appropriate, guideline-based recommendations. Ensure you adjust doses f
     `;
 
     // We use a structured JSON schema to populate the rest of the form perfectly!
-    const response = await ai.models.generateContent({
+    const response = await getGeminiClient().models.generateContent({
       model: 'gemini-3.5-flash',
       contents: prompt,
       config: {
@@ -260,7 +271,7 @@ User Clinical Query: "${userMessage}"
       ` }],
     });
 
-    const response = await ai.models.generateContent({
+    const response = await getGeminiClient().models.generateContent({
       model: 'gemini-3.5-flash',
       contents: contents,
       config: {
@@ -304,7 +315,7 @@ Provide 3 highly relevant clinical board-style questions with answers, detailed 
       prompt += `\n\n=== PODCAST SECTION ===\nAlso generate a simulated educational audio podcast transcript between two clinical hosts (Dr. Clara and Dr. Noah) discussing this topic. Keep it lively, engaging, and highly educational. Start the transcript with "[Dr. Clara]:" or "[Dr. Noah]:".`;
     }
 
-    const response = await ai.models.generateContent({
+    const response = await getGeminiClient().models.generateContent({
       model: 'gemini-3.5-flash',
       contents: prompt,
       config: {
@@ -366,7 +377,7 @@ For each drug profile, include:
 5. **Key Patient Monitoring Guidelines**: Crucial clinical/lab monitoring indices (e.g., serum Cr, electrolytes, INR).
 `;
 
-    const response = await ai.models.generateContent({
+    const response = await getGeminiClient().models.generateContent({
       model: 'gemini-3.5-flash',
       contents: prompt,
       config: {
@@ -378,6 +389,68 @@ For each drug profile, include:
   } catch (error: any) {
     console.error('Drug profile search error:', error);
     res.status(500).json({ error: error.message || 'AI drug lookup failed' });
+  }
+});
+
+// AI Clinical Cases Extraction Endpoint
+app.post('/api/gemini/extract-cases', async (req, res) => {
+  try {
+    const { topic, bookName } = req.body;
+
+    if (!topic) {
+      return res.status(400).json({ error: 'Missing topic' });
+    }
+
+    const bookContext = bookName ? `using the open-access reference book "${bookName}"` : "using standard open-access clinical pharmacology resources";
+
+    const prompt = `You are Clinova OS, an advanced Clinical Pharmacy Assistant.
+Please extract/generate 3 highly realistic, high-fidelity clinical case studies in the topic "${topic}" ${bookContext}.
+
+Ensure each case contains:
+1. A clear, specific title focusing on drug-related problems (DRPs), pharmacokinetics, or guideline-directed therapy.
+2. A difficulty level: "Beginner", "Intermediate", or "Advanced".
+3. A detailed patient scenario vignette following this pattern:
+   - Chief Complaint & Patient Demographics (e.g. age, weight).
+   - Clinical Presentation / Vitals / Laboratory Results (specifically including renal function e.g. Creatinine, eGFR or liver functions where appropriate).
+   - Current Drug Regimen.
+   - Reference Textbook Case source attribution.
+4. Key learning points and guideline-directed resolution (answering how to correct the drug therapy problem, adjustments required, and counseling pearls).
+
+Ensure the output is highly educational, precise, and matches the clinical standards of KDI (Kenya Drug Index).`;
+
+    const response = await getGeminiClient().models.generateContent({
+      model: 'gemini-3.5-flash',
+      contents: prompt,
+      config: {
+        systemInstruction: `You are an expert clinical pharmacy examiner and KDI board editor. Extract clinical pharmacology and clinical pharmacy cases with high fidelity. Ensure all outputs strictly follow the requested JSON schema.`,
+        responseMimeType: 'application/json',
+        responseSchema: {
+          type: Type.ARRAY,
+          description: 'A list of extracted clinical case study objects',
+          items: {
+            type: Type.OBJECT,
+            properties: {
+              title: { type: Type.STRING, description: 'Clinical case title' },
+              difficulty: { 
+                type: Type.STRING, 
+                description: 'Must be Beginner, Intermediate, or Advanced',
+                enum: ['Beginner', 'Intermediate', 'Advanced']
+              },
+              topic: { type: Type.STRING, description: 'Therapeutic area / topic' },
+              scenario: { type: Type.STRING, description: 'Detailed patient scenario vignette with demographics, clinical presentation, medications, labs, and source citation' },
+              learningPoints: { type: Type.STRING, description: 'Learning points, guideline-directed pharmacotherapy resolution, and counseling pearls' },
+            },
+            required: ['title', 'difficulty', 'topic', 'scenario', 'learningPoints'],
+          },
+        },
+      }
+    });
+
+    const cases = JSON.parse(response.text || '[]');
+    res.json(cases);
+  } catch (error: any) {
+    console.error('Case extraction error:', error);
+    res.status(500).json({ error: error.message || 'AI case extraction failed' });
   }
 });
 

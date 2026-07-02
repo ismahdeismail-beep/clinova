@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { 
-  FolderOpen, Plus, Search, Loader2, X, BookOpen, 
-  Lightbulb, CheckCircle2, ChevronRight, BookMarked, Trash2
+  Plus, Search, Loader2, X, BookOpen, 
+  Lightbulb, CheckCircle2, ChevronRight, BookMarked, Trash2, 
+  BookOpenCheck, PenTool, Award, HelpCircle, ArrowRight, Trophy,
+  Bookmark, Share2, Sparkles, ThumbsUp, Check, ExternalLink
 } from 'lucide-react';
 import { db, auth } from '../lib/firebase';
 import { 
@@ -21,24 +23,250 @@ interface ClinicalCase {
   status: 'published' | 'draft';
   createdBy: string;
   createdByName: string;
+  likesCount?: number;
+  likedBy?: string[];
 }
+
+const CURATED_CASES: ClinicalCase[] = [
+  {
+    id: 'curated-1',
+    title: 'Digoxin Toxicity & Severe Hypokalemia in Geriatric Heart Failure',
+    topic: 'Cardiology',
+    difficulty: 'Advanced',
+    scenario: `An 82-year-old female presents to the Emergency Department complaining of severe progressive fatigue, anorexia, nausea, and experiencing "yellow-green halos" around lights for the past 3 days.
+
+=== CLINICAL PRESENTATION ===
+- Vitals: HR 46 bpm (irregularly irregular), BP 98/54 mmHg, RR 18 breaths/min, Temp 36.6°C.
+- ECG: Atrial fibrillation with slow ventricular response (45 bpm), frequent PVCs, and scooping of the ST-segment ("digoxin effect").
+
+=== MEDICAL REGIMEN ===
+- Digoxin 0.25 mg daily (for atrial fibrillation & HFrEF)
+- Furosemide 40 mg daily (for chronic edema)
+- Lisinopril 10 mg daily (for hypertension)
+
+=== LAB RESULTS ===
+- Serum Creatinine: 2.1 mg/dL (Baseline baseline: 0.9 mg/dL)
+- eGFR: 22 mL/min/1.73m² (indicates stage 4 CKD)
+- Serum Potassium: 3.1 mEq/L (Normal range: 3.5 - 5.0 mEq/L)
+- Serum Digoxin Concentration: 3.4 ng/mL (Therapeutic range in HF: 0.5 - 0.9 ng/mL)
+
+=== REFERENCE TEXTBOOK CASE ===
+Source: Clinical Cases in Clinical Pharmacology (State Medical and Pharmaceutical University Library).`,
+    learningPoints: `1. **Pharmacokinetics and Aging (Critical Clearance)**: Digoxin is primarily cleared by the kidneys (approx. 70%). Aging declines glomerular filtration. A daily dose of 0.25 mg is too high for geriatric patients, leading to accumulation.
+2. **Drug-Related Problems (DRP) - Hypokalemia Interaction**: Concomitant use of Furosemide (loop diuretic) without potassium-sparing agents or potassium supplements caused hypokalemia. Hypokalemia increases digoxin binding to the Na+/K+ ATPase pump, exacerbating toxicity even at lower serum levels.
+3. **Guideline-Directed Resolution**:
+   - Hold Digoxin and Furosemide immediately.
+   - Gently correct potassium deficits (target > 4.0 mEq/L) with IV/Oral Potassium, but avoid rapid hyperkalemia.
+   - For life-threatening arrhythmias or hemodynamically unstable digoxin toxicity, administer Digoxin-specific antibody fragments (Digibind/Digifab).
+   - In the future, optimize HFrEF with renal-adjusted GDMT (such as low-dose ACEi/ARB or ARNI, and beta-blockers when stable, avoiding digoxin if possible).`,
+    createdAt: null,
+    status: 'published',
+    createdBy: 'system-curated',
+    createdByName: 'Clinical Pharmacology Textbook'
+  },
+  {
+    id: 'curated-2',
+    title: 'Sulfonylurea-Induced Recurrent Hypoglycemia in Type 2 Diabetes',
+    topic: 'Endocrinology',
+    difficulty: 'Intermediate',
+    scenario: `A 65-year-old male with a 12-year history of Type 2 Diabetes Mellitus visits the outpatient pharmaceutical care clinic.
+
+=== CLINICAL PRESENTATION ===
+- Chief Complaint: Recurrent "cold sweats", hand tremors, heart palpitations, and extreme confusion occurring late in the afternoon (around 4:00 PM to 5:00 PM), about 3 to 4 times a week.
+- Patient states these episodes are worse on days when he works late and delays his evening meal.
+- Vitals: BP 132/78 mmHg, HR 72 bpm, BMI 29.4 kg/m².
+
+=== CURRENT MEDICATIONS ===
+- Metformin 1000 mg twice daily with meals.
+- Glimepiride 4 mg once daily in the morning.
+
+=== LAB RESULTS ===
+- HbA1c: 8.2% (Target: < 7.0%)
+- Serum Creatinine: 1.1 mg/dL (eGFR 68 mL/min/1.73m²)
+
+=== REFERENCE TEXTBOOK CASE ===
+Source: Clinical Pharmacy and Pharmaceutical Care in Clinical Cases Workbook (ResearchGate).`,
+    learningPoints: `1. **Drug-Related Problem (Safety/Adverse Event)**: The patient is experiencing recurrent moderate hypoglycemia due to Glimepiride, a long-acting sulfonylurea. Sulfonylureas trigger insulin release independently of ambient glucose levels, putting patients at risk when meals are delayed.
+2. **Clinical Paradox**: Despite active hypoglycemia, his overall glycemic control (HbA1c 8.2%) is poor. This is because sulfonylurea-induced hypoglycemia often causes compensatory overeating (or defense snacking), causing rebound hyperglycemia and poor overall control.
+3. **Guideline-Directed Management**:
+   - Discontinue or taper down Glimepiride.
+   - Replace with a safer oral anti-hyperglycemic agent that carries a low risk of hypoglycemia, such as an SGLT2 Inhibitor (e.g. Empagliflozin 10 mg daily) or a DPP-4 Inhibitor (e.g. Sitagliptin 100 mg daily), especially given his age and eGFR.
+   - Educate the patient on the "Rule of 15" (consume 15g fast-acting sugar, re-test glucose in 15 mins) and the importance of consistent meal times.`,
+    createdAt: null,
+    status: 'published',
+    createdBy: 'system-curated',
+    createdByName: 'Pharmaceutical Care Workbook'
+  },
+  {
+    id: 'curated-3',
+    title: 'Empiric Antibiotic Therapy in Outpatient Community-Acquired Pneumonia (CAP)',
+    topic: 'Infectious Disease',
+    difficulty: 'Beginner',
+    scenario: `A 34-year-old previously healthy male presents to the primary care clinic with a 5-day history of productive cough (greenish-rust colored sputum), high fever, shaking chills, and pleuritic chest pain on the right side.
+
+=== CLINICAL PRESENTATION ===
+- Vitals: BP 118/76 mmHg, HR 88 bpm, RR 18 breaths/min, Temp 38.8°C, SpO2 96% on room air.
+- Physical Exam: Bronchial breath sounds and crackles in the right lower lobe.
+- Chest X-Ray: Right lower lobe alveolar consolidation.
+- CURB-65 Score: 0 (Confusion: No, Urea: Normal, RR < 30: Yes, BP normal: Yes, Age < 65: Yes), indicating safe candidacy for outpatient therapy.
+- Medical History: Healthy, active, non-smoker, has no chronic comorbidities, no drug allergies, and has not taken any antibiotics in the preceding 90 days.
+
+=== REFERENCE TEXTBOOK CASE ===
+Source: Clinical Pharmacy: Case Studies (USC Faculty Series).`,
+    learningPoints: `1. **First-line Outpatient CAP Selection**: According to ATS/IDSA guidelines, healthy outpatients with no comorbidities or risk factors for MRSA/Pseudomonas should receive:
+   - Amoxicillin 1g orally three times daily OR
+   - Doxycycline 100 mg orally twice daily OR
+   - A macrolide (e.g., Azithromycin 500 mg Day 1, then 250 mg daily) ONLY if local macrolide resistance is < 25%.
+2. **Guideline-Directed Stewardship**: Broader spectrum agents like respiratory fluoroquinolones (e.g., Levofloxacin 750 mg daily) or beta-lactam + macrolide combinations should be reserved for patients with significant comorbidities (e.g., COPD, Chronic Kidney Disease, Heart Failure) or recent antibiotic use, to avoid excessive side effects and prevent microbial resistance.
+3. **Counseling Pearls**: Finished entire 5-day antibiotic course, remain hydrated, and return immediately if experiencing worsening shortness of breath or persistent fevers after 48-72 hours.`,
+    createdAt: null,
+    status: 'published',
+    createdBy: 'system-curated',
+    createdByName: 'USC Faculty Case Series'
+  }
+];
 
 export default function ClinicalCasesScreen() {
   const [cases, setCases] = useState<ClinicalCase[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   
-  // Modal states
-  const [showNewModal, setShowNewModal] = useState(false);
-  const [selectedCase, setSelectedCase] = useState<ClinicalCase | null>(null);
+  // Tab management: session = AI Session cases, textbook = standard, saved = portfolio, shared = community network
+  const [activeTab, setActiveTab] = useState<'session' | 'textbook' | 'saved' | 'shared'>('session');
   
-  // New Case form state
+  // AI Extraction States
+  const [sessionCases, setSessionCases] = useState<ClinicalCase[]>([]);
+  const [isExtracting, setIsExtracting] = useState(false);
+  const [extractionTopic, setExtractionTopic] = useState('Cardiology');
+  const [extractionBook, setExtractionBook] = useState('Clinical Cases in Clinical Pharmacology');
+
+  // Saved & Shared Cases Portfolio States
+  const [savedCases, setSavedCases] = useState<ClinicalCase[]>([]);
+  const [sharedCases, setSharedCases] = useState<ClinicalCase[]>([]);
+  const [isSavedLoading, setIsSavedLoading] = useState(false);
+  const [isSharedLoading, setIsSharedLoading] = useState(false);
+
+  // Interactive learning workflow states
+  const [selectedCase, setSelectedCase] = useState<ClinicalCase | null>(null);
+  const [subTab, setSubTab] = useState<'scenario' | 'reflect' | 'guideline'>('scenario');
+  
+  // Persistence state
+  const [userReflections, setUserReflections] = useState<Record<string, string>>(() => {
+    try {
+      const saved = localStorage.getItem('clinova_reflections');
+      return saved ? JSON.parse(saved) : {};
+    } catch {
+      return {};
+    }
+  });
+
+  const [revealedCases, setRevealedCases] = useState<string[]>(() => {
+    try {
+      const saved = localStorage.getItem('clinova_revealed');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+
+  const [masteredCases, setMasteredCases] = useState<string[]>(() => {
+    try {
+      const saved = localStorage.getItem('clinova_mastered');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+
+  // Modal states for creating new custom cases (Textbook list only)
+  const [showNewModal, setShowNewModal] = useState(false);
   const [newTitle, setNewTitle] = useState('');
   const [newTopic, setNewTopic] = useState('Cardiology');
   const [newDifficulty, setNewDifficulty] = useState<'Beginner' | 'Intermediate' | 'Advanced'>('Beginner');
   const [newScenario, setNewScenario] = useState('');
   const [newLearningPoints, setNewLearningPoints] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Auto save persistence
+  useEffect(() => {
+    localStorage.setItem('clinova_reflections', JSON.stringify(userReflections));
+  }, [userReflections]);
+
+  useEffect(() => {
+    localStorage.setItem('clinova_revealed', JSON.stringify(revealedCases));
+  }, [revealedCases]);
+
+  useEffect(() => {
+    localStorage.setItem('clinova_mastered', JSON.stringify(masteredCases));
+  }, [masteredCases]);
+
+  // Load resources based on login status
+  useEffect(() => {
+    const user = auth.currentUser;
+    fetchCases();
+    fetchSharedCases();
+
+    if (user) {
+      fetchSavedCases();
+      
+      const stored = localStorage.getItem(`clinova_session_cases_${user.uid}`);
+      if (stored) {
+        try {
+          setSessionCases(JSON.parse(stored));
+        } catch {
+          extractAICases('Cardiology', 'Clinical Cases in Clinical Pharmacology', true);
+        }
+      } else {
+        extractAICases('Cardiology', 'Clinical Cases in Clinical Pharmacology', true);
+      }
+    } else {
+      setSessionCases([]);
+      setSavedCases([]);
+    }
+  }, [auth.currentUser]);
+
+  const extractAICases = async (topic: string, bookName: string, isAuto: boolean = false) => {
+    const user = auth.currentUser;
+    if (!user) return;
+
+    setIsExtracting(true);
+    try {
+      const res = await fetch('/api/gemini/extract-cases', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ topic, bookName })
+      });
+
+      if (!res.ok) {
+        throw new Error('AI extraction failed');
+      }
+
+      const data = await res.json();
+      
+      const extractedList: ClinicalCase[] = data.map((c: any, index: number) => ({
+        id: `ai-extracted-${Date.now()}-${index}`,
+        title: c.title,
+        topic: c.topic || topic,
+        difficulty: c.difficulty || 'Intermediate',
+        scenario: c.scenario,
+        learningPoints: c.learningPoints,
+        createdAt: new Date().toISOString(),
+        status: 'published',
+        createdBy: 'ai-extracted',
+        createdByName: bookName || 'AI Extracted Textbook Case'
+      }));
+
+      setSessionCases(extractedList);
+      localStorage.setItem(`clinova_session_cases_${user.uid}`, JSON.stringify(extractedList));
+    } catch (error) {
+      console.error('Case extraction error:', error);
+      if (!isAuto) {
+        alert('AI case extraction failed. Please check your internet connection or try again later.');
+      }
+    } finally {
+      setIsExtracting(false);
+    }
+  };
 
   const fetchCases = async () => {
     setIsLoading(true);
@@ -52,27 +280,200 @@ export default function ClinicalCasesScreen() {
         caseList.push({
           id: docSnap.id,
           title: data.title || 'Untitled Case',
-          topic: data.topic || data.ward || 'General Practice',
+          topic: data.topic || 'General Practice',
           difficulty: data.difficulty || 'Intermediate',
-          scenario: data.scenario || data.chiefComplaint || data.historyOfPresentIllness || 'No scenario provided.',
+          scenario: data.scenario || 'No scenario provided.',
           learningPoints: data.learningPoints || 'No learning points documented.',
           createdAt: data.createdAt,
-          status: data.status === 'active' ? 'published' : (data.status || 'published'),
+          status: 'published',
           createdBy: data.createdBy || '',
           createdByName: data.createdByName || 'Clinical Educator',
         });
       });
       setCases(caseList);
     } catch (error) {
-      handleFirestoreError(error, OperationType.GET, path);
+      console.warn("Firestore clinical_cases collection read skipped or empty.");
     } finally {
       setIsLoading(false);
     }
   };
 
-  useEffect(() => {
-    fetchCases();
-  }, []);
+  const handleSaveToPortfolio = async (c: ClinicalCase) => {
+    const user = auth.currentUser;
+    if (!user) {
+      alert("Please log in to save clinical cases to your personal portfolio.");
+      return;
+    }
+
+    const path = 'saved_cases';
+    try {
+      const alreadySaved = savedCases.some(sc => sc.scenario === c.scenario || sc.title === c.title);
+      if (alreadySaved) {
+        alert("This clinical case is already saved in your portfolio.");
+        return;
+      }
+
+      const caseData = {
+        title: c.title,
+        topic: c.topic,
+        difficulty: c.difficulty,
+        scenario: c.scenario,
+        learningPoints: c.learningPoints,
+        savedBy: user.uid,
+        savedByName: user.displayName || user.email?.split('@')[0] || 'Clinova Scholar',
+        createdAt: Timestamp.now(),
+      };
+
+      await addDoc(collection(db, path), caseData);
+      alert("Case successfully added to your Saved Portfolio!");
+      await fetchSavedCases();
+    } catch (error) {
+      handleFirestoreError(error, OperationType.CREATE, path);
+    }
+  };
+
+  const fetchSavedCases = async () => {
+    const user = auth.currentUser;
+    if (!user) return;
+    
+    setIsSavedLoading(true);
+    const path = 'saved_cases';
+    try {
+      const q = query(collection(db, path), orderBy('createdAt', 'desc'));
+      const querySnapshot = await getDocs(q);
+      const list: ClinicalCase[] = [];
+      querySnapshot.forEach((docSnap) => {
+        const data = docSnap.data();
+        if (data.savedBy === user.uid) {
+          list.push({
+            id: docSnap.id,
+            title: data.title,
+            topic: data.topic,
+            difficulty: data.difficulty as any,
+            scenario: data.scenario,
+            learningPoints: data.learningPoints,
+            createdAt: data.createdAt,
+            status: 'published',
+            createdBy: 'saved',
+            createdByName: data.savedByName || 'Clinova Scholar'
+          });
+        }
+      });
+      setSavedCases(list);
+    } catch (error) {
+      console.warn("Firestore saved_cases read error:", error);
+    } finally {
+      setIsSavedLoading(false);
+    }
+  };
+
+  const handleShareCase = async (c: ClinicalCase) => {
+    const user = auth.currentUser;
+    if (!user) {
+      alert("You must be logged in to publish cases to the Shared Network.");
+      return;
+    }
+
+    const path = 'shared_cases';
+    try {
+      const alreadyShared = sharedCases.some(sc => sc.scenario === c.scenario || sc.title === c.title);
+      if (alreadyShared) {
+        alert("This clinical case has already been shared on the Clinova network.");
+        return;
+      }
+
+      const caseData = {
+        title: c.title,
+        topic: c.topic,
+        difficulty: c.difficulty,
+        scenario: c.scenario,
+        learningPoints: c.learningPoints,
+        sharedBy: user.uid,
+        sharedByName: user.displayName || user.email?.split('@')[0] || 'Clinova Scholar',
+        createdAt: Timestamp.now(),
+        likesCount: 0,
+        likedBy: []
+      };
+
+      await addDoc(collection(db, path), caseData);
+      
+      const shareUrl = `${window.location.origin}/clinical-cases?caseId=${c.id}`;
+      navigator.clipboard.writeText(shareUrl).catch(() => {});
+      
+      alert(`Case successfully shared with the Clinova Medical Network!\nClipboard updated with case link.`);
+      await fetchSharedCases();
+    } catch (error) {
+      handleFirestoreError(error, OperationType.CREATE, path);
+    }
+  };
+
+  const fetchSharedCases = async () => {
+    setIsSharedLoading(true);
+    const path = 'shared_cases';
+    try {
+      const q = query(collection(db, path), orderBy('createdAt', 'desc'));
+      const querySnapshot = await getDocs(q);
+      const list: ClinicalCase[] = [];
+      querySnapshot.forEach((docSnap) => {
+        const data = docSnap.data();
+        list.push({
+          id: docSnap.id,
+          title: data.title,
+          topic: data.topic,
+          difficulty: data.difficulty as any,
+          scenario: data.scenario,
+          learningPoints: data.learningPoints,
+          createdAt: data.createdAt,
+          status: 'published',
+          createdBy: 'shared',
+          createdByName: data.sharedByName || 'Anonymous Clinician',
+          likesCount: data.likesCount || 0,
+          likedBy: data.likedBy || []
+        });
+      });
+      setSharedCases(list);
+    } catch (error) {
+      console.warn("Firestore shared_cases read skipped or empty.");
+    } finally {
+      setIsSharedLoading(false);
+    }
+  };
+
+  const handleLikeSharedCase = async (caseId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const user = auth.currentUser;
+    if (!user) {
+      alert("Please log in to upvote shared cases.");
+      return;
+    }
+
+    const path = `shared_cases/${caseId}`;
+    try {
+      const target = sharedCases.find(sc => sc.id === caseId);
+      if (!target) return;
+
+      const likedBy = target.likedBy || [];
+      let newLikes = target.likesCount || 0;
+      let newLikedBy = [...likedBy];
+
+      if (likedBy.includes(user.uid)) {
+        newLikes = Math.max(0, newLikes - 1);
+        newLikedBy = newLikedBy.filter(uid => uid !== user.uid);
+      } else {
+        newLikes += 1;
+        newLikedBy.push(user.uid);
+      }
+
+      await updateDoc(doc(db, 'shared_cases', caseId), {
+        likesCount: newLikes,
+        likedBy: newLikedBy
+      });
+
+      setSharedCases(prev => prev.map(sc => sc.id === caseId ? { ...sc, likesCount: newLikes, likedBy: newLikedBy } : sc));
+    } catch (error) {
+      handleFirestoreError(error, OperationType.UPDATE, path);
+    }
+  };
 
   const handleCreateCase = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -96,7 +497,6 @@ export default function ClinicalCasesScreen() {
 
       await addDoc(collection(db, path), caseData);
       
-      // Reset fields
       setNewTitle('');
       setNewTopic('Cardiology');
       setNewDifficulty('Beginner');
@@ -104,7 +504,6 @@ export default function ClinicalCasesScreen() {
       setNewLearningPoints('');
       setShowNewModal(false);
       
-      // Refresh list
       await fetchCases();
     } catch (error) {
       handleFirestoreError(error, OperationType.CREATE, path);
@@ -115,7 +514,8 @@ export default function ClinicalCasesScreen() {
 
   const handleDeleteCase = async (caseId: string, e: React.MouseEvent) => {
     e.stopPropagation();
-    if (!window.confirm('Are you sure you want to delete this case study?')) return;
+    if (caseId.startsWith('curated-')) return;
+    if (!window.confirm('Are you sure you want to delete this custom case study?')) return;
 
     const path = `clinical_cases/${caseId}`;
     try {
@@ -129,22 +529,48 @@ export default function ClinicalCasesScreen() {
     }
   };
 
-  const handleToggleStatus = async (item: ClinicalCase, e: React.MouseEvent) => {
-    e.stopPropagation();
-    const newStatus = item.status === 'published' ? 'draft' : 'published';
-    const path = `clinical_cases/${item.id}`;
-    try {
-      await updateDoc(doc(db, 'clinical_cases', item.id), { status: newStatus });
-      setCases(prev => prev.map(c => c.id === item.id ? { ...c, status: newStatus as any } : c));
-      if (selectedCase?.id === item.id) {
-        setSelectedCase(prev => prev ? { ...prev, status: newStatus as any } : null);
-      }
-    } catch (error) {
-      handleFirestoreError(error, OperationType.UPDATE, path);
+  const handleSelectCase = (c: ClinicalCase) => {
+    setSelectedCase(c);
+    setSubTab('scenario');
+  };
+
+  const handleUpdateReflection = (caseId: string, text: string) => {
+    setUserReflections(prev => ({ ...prev, [caseId]: text }));
+  };
+
+  const handleRevealGuidelines = (caseId: string) => {
+    if (!revealedCases.includes(caseId)) {
+      setRevealedCases(prev => [...prev, caseId]);
+    }
+    setSubTab('guideline');
+  };
+
+  const handleToggleMastered = (caseId: string) => {
+    if (masteredCases.includes(caseId)) {
+      setMasteredCases(prev => prev.filter(id => id !== caseId));
+    } else {
+      setMasteredCases(prev => [...prev, caseId]);
     }
   };
 
-  const filteredCases = cases.filter((c) => {
+  // Compute Active Tab Cases
+  const getActiveTabCases = () => {
+    switch (activeTab) {
+      case 'session':
+        return sessionCases;
+      case 'saved':
+        return savedCases;
+      case 'shared':
+        return sharedCases;
+      case 'textbook':
+      default:
+        return [...CURATED_CASES, ...cases];
+    }
+  };
+
+  const activeTabCases = getActiveTabCases();
+
+  const filteredCases = activeTabCases.filter((c) => {
     const q = searchQuery.toLowerCase();
     return (
       c.title.toLowerCase().includes(q) ||
@@ -155,12 +581,24 @@ export default function ClinicalCasesScreen() {
 
   const getDifficultyColor = (diff: string) => {
     switch (diff) {
-      case 'Beginner': return 'bg-green-100 text-green-700 border-green-200';
-      case 'Intermediate': return 'bg-blue-100 text-blue-700 border-blue-200';
-      case 'Advanced': return 'bg-purple-100 text-purple-700 border-purple-200';
-      default: return 'bg-gray-100 text-gray-700';
+      case 'Beginner': return 'bg-green-100 text-green-700 border-green-200 dark:bg-green-950/30 dark:text-green-400 dark:border-green-900/45';
+      case 'Intermediate': return 'bg-blue-100 text-blue-700 border-blue-200 dark:bg-blue-950/30 dark:text-blue-400 dark:border-blue-900/45';
+      case 'Advanced': return 'bg-purple-100 text-purple-700 border-purple-200 dark:bg-purple-950/30 dark:text-purple-400 dark:border-purple-900/45';
+      default: return 'bg-gray-100 text-gray-700 border-gray-200';
     }
   };
+
+  // Deduped progress calculations across all sources
+  const allKnownCases = [...CURATED_CASES, ...cases, ...sessionCases, ...savedCases, ...sharedCases];
+  const uniqueKnownCases = allKnownCases.reduce((acc, current) => {
+    const isDup = acc.some(item => item.title.toLowerCase() === current.title.toLowerCase());
+    return isDup ? acc : acc.concat([current]);
+  }, [] as ClinicalCase[]);
+
+  const totalCasesCount = uniqueKnownCases.length;
+  const masteredCount = uniqueKnownCases.filter(c => masteredCases.includes(c.id)).length;
+  const attemptedCount = uniqueKnownCases.filter(c => revealedCases.includes(c.id)).length;
+  const progressPercent = totalCasesCount > 0 ? Math.round((masteredCount / totalCasesCount) * 100) : 0;
 
   return (
     <div className="p-6 max-w-7xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-white">
@@ -168,48 +606,48 @@ export default function ClinicalCasesScreen() {
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div>
           <h1 className="text-3xl font-bold text-[var(--text)] mb-2 tracking-tight">Case Studies Library</h1>
-          <p className="text-[var(--text-muted)] text-sm">Explore interactive clinical scenarios to improve your pharmacotherapy reasoning.</p>
+          <p className="text-[var(--text-muted)] text-sm">Review real open-access textbooks cases, draft your diagnostic interventions, and verify with guidelines.</p>
         </div>
         <button 
           onClick={() => setShowNewModal(true)}
-          className="px-4 py-2.5 bg-[var(--primary)] text-white rounded-xl font-semibold text-sm flex items-center gap-2 hover:opacity-95 transition-opacity shadow-sm"
+          className="px-4 py-2.5 bg-[var(--primary)] text-white rounded-xl font-semibold text-sm flex items-center gap-2 hover:opacity-95 transition-all shadow-sm cursor-pointer"
         >
           <Plus size={18} />
           Create Case Study
         </button>
       </div>
 
-      {/* Free Open Access Books */}
-      <div className="space-y-3">
+      {/* Free Open Access Books References Panel */}
+      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-5 shadow-sm space-y-4">
         <h3 className="text-sm font-bold text-[var(--text)] uppercase tracking-wider flex items-center gap-2">
           <BookOpen size={16} className="text-[var(--primary)]" />
-          Recommended Open Access Case Books
+          Recommended Open Access Clinical Case Books
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
             {
               title: "Clinical Cases in Clinical Pharmacology",
               description: "Interactive clinical scenarios covering pharmacokinetics, analgesics, respiratory drugs, and cardiac therapies.",
-              source: "State Medical and Pharmaceutical University Library",
+              source: "State Medical Library",
               url: "https://library.usmf.md/sites/default/files/2019-10/Clinical%20cases%20in%20clinical%20pharmacology.pdf"
             },
             {
               title: "Clinical Pharmacy & Pharmaceutical Care",
-              description: "Workbook focusing on identifying drug-related problems and building care plans via case analysis.",
+              description: "Focuses on identifying drug-related problems (DRPs) and building care plans via interactive cases.",
               source: "ResearchGate Repository",
-              url: "https://www.researchgate.net/"
+              url: "https://www.researchgate.net/publication/329587422_Clinical_Pharmacy_and_Pharmaceutical_Care_in_Clinical_Cases_Workbook"
             },
             {
               title: "Clinical Pharmacy: Case Studies",
-              description: "USC Faculty Series guiding readers through laboratory test evaluations and therapeutic cases.",
+              description: "USC Faculty compilation guiding readers through laboratory test evaluations and therapeutic clinical cases.",
               source: "Academia.edu",
-              url: "https://www.academia.edu/"
+              url: "https://www.academia.edu/37402517/Clinical_Pharmacy_Case_Studies"
             },
             {
               title: "Pharmacy Case Studies",
-              description: "Therapeutic compilation focusing on complex areas, counseling, risk factors, and decision-making.",
-              source: "Academia.edu",
-              url: "https://www.academia.edu/"
+              description: "Therapeutic compilation focusing on complex clinical decision-making, counseling, and risk factors.",
+              source: "Academia.edu Compile",
+              url: "https://www.academia.edu/resource/work/38115682"
             }
           ].map((book, i) => (
             <a 
@@ -217,21 +655,97 @@ export default function ClinicalCasesScreen() {
               href={book.url} 
               target="_blank" 
               rel="noreferrer"
-              className="bg-[var(--surface-dim)] hover:bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] p-4 rounded-xl transition-all flex flex-col group cursor-pointer"
+              className="bg-[var(--surface-dim)] hover:bg-[var(--bg)] border border-[var(--border)] hover:border-[var(--primary)] p-4 rounded-xl transition-all flex flex-col group cursor-pointer"
             >
-              <h4 className="font-bold text-sm text-[var(--text)] mb-1 group-hover:text-[var(--primary)] transition-colors line-clamp-2">{book.title}</h4>
-              <p className="text-xs text-[var(--text-muted)] line-clamp-2 mb-3 flex-1">{book.description}</p>
-              <span className="text-[10px] font-mono text-[var(--primary)] bg-[var(--primary)]/10 px-2 py-1 rounded w-fit uppercase tracking-wider">{book.source}</span>
+              <h4 className="font-bold text-xs text-[var(--text)] mb-1 group-hover:text-[var(--primary)] transition-colors line-clamp-2">{book.title}</h4>
+              <p className="text-[11px] text-[var(--text-muted)] line-clamp-2 mb-3 flex-1 leading-normal">{book.description}</p>
+              <span className="text-[9px] font-bold text-[var(--primary)] bg-[var(--primary)]/10 px-2 py-0.5 rounded w-fit uppercase tracking-wider flex items-center gap-1">
+                {book.source} <ExternalLink size={10} />
+              </span>
             </a>
           ))}
         </div>
       </div>
 
-      {/* Main Grid: List left, Detailed view right */}
+      {/* Segmented Control / Case Source Tabs */}
+      <div className="flex border-b border-[var(--border)] overflow-x-auto pb-px gap-2">
+        <button
+          onClick={() => { setActiveTab('session'); setSelectedCase(null); }}
+          className={`px-4 py-3 text-sm font-semibold border-b-2 whitespace-nowrap transition-all flex items-center gap-2 cursor-pointer ${
+            activeTab === 'session'
+              ? 'border-[var(--primary)] text-[var(--primary)]'
+              : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
+          }`}
+        >
+          <Sparkles size={16} />
+          AI Session Cases
+        </button>
+        <button
+          onClick={() => { setActiveTab('textbook'); setSelectedCase(null); }}
+          className={`px-4 py-3 text-sm font-semibold border-b-2 whitespace-nowrap transition-all flex items-center gap-2 cursor-pointer ${
+            activeTab === 'textbook'
+              ? 'border-[var(--primary)] text-[var(--primary)]'
+              : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
+          }`}
+        >
+          <BookOpen size={16} />
+          Textbook Library
+        </button>
+        <button
+          onClick={() => { setActiveTab('saved'); setSelectedCase(null); }}
+          className={`px-4 py-3 text-sm font-semibold border-b-2 whitespace-nowrap transition-all flex items-center gap-2 cursor-pointer ${
+            activeTab === 'saved'
+              ? 'border-[var(--primary)] text-[var(--primary)]'
+              : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
+          }`}
+        >
+          <BookMarked size={16} />
+          My Saved Portfolio
+        </button>
+        <button
+          onClick={() => { setActiveTab('shared'); setSelectedCase(null); }}
+          className={`px-4 py-3 text-sm font-semibold border-b-2 whitespace-nowrap transition-all flex items-center gap-2 cursor-pointer ${
+            activeTab === 'shared'
+              ? 'border-[var(--primary)] text-[var(--primary)]'
+              : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
+          }`}
+        >
+          <Share2 size={16} />
+          Shared Network
+        </button>
+      </div>
+
+      {/* Main Grid Layout: Progress, List, Detail View */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         
-        {/* Cases List */}
+        {/* Cases List & Progress Side */}
         <div className="lg:col-span-1 space-y-4">
+          
+          {/* Progress Tracker Widget */}
+          <div className="bg-[var(--surface)] p-5 rounded-2xl border border-[var(--border)] shadow-sm space-y-3 text-left">
+            <div className="flex justify-between items-center">
+              <span className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)] flex items-center gap-1.5">
+                <Trophy size={14} className="text-amber-500 animate-bounce" /> Board Prep Tracker
+              </span>
+              <span className="text-xs font-mono font-bold text-[var(--primary)]">
+                {masteredCount}/{totalCasesCount} Mastered
+              </span>
+            </div>
+            
+            <div className="w-full bg-[var(--surface-dim)] h-2.5 rounded-full overflow-hidden border border-[var(--border)]">
+              <div 
+                className="bg-gradient-to-r from-amber-500 to-[var(--primary)] h-full transition-all duration-500" 
+                style={{ width: `${progressPercent}%` }}
+              />
+            </div>
+
+            <div className="flex justify-between text-[10px] text-[var(--text-muted)]">
+              <span>{attemptedCount} Attempted</span>
+              <span>{progressPercent}% Mastery Target</span>
+            </div>
+          </div>
+
+          {/* Search Box */}
           <div className="bg-[var(--surface)] p-3 rounded-xl border border-[var(--border)] shadow-sm flex items-center gap-3">
             <Search size={18} className="text-[var(--text-dim)]" />
             <input 
@@ -243,33 +757,109 @@ export default function ClinicalCasesScreen() {
             />
           </div>
 
+          {/* AI Case Extractor Control Panel (shown only in Session Cases tab) */}
+          {activeTab === 'session' && auth.currentUser && (
+            <div className="bg-gradient-to-r from-teal-50/40 via-blue-50/40 to-indigo-50/40 dark:from-teal-950/10 dark:via-blue-950/10 dark:to-indigo-950/10 border border-[var(--border)] p-4 rounded-xl space-y-3 shadow-inner">
+              <div className="flex items-start gap-2.5">
+                <Sparkles size={16} className="text-[var(--primary)] mt-0.5 animate-pulse" />
+                <div className="text-left">
+                  <h4 className="font-bold text-xs text-[var(--text)]">AI Textbook Case Extractor</h4>
+                  <p className="text-[10px] text-[var(--text-muted)] leading-relaxed mt-0.5">
+                    Extract custom, board-grade diagnostic cases in real-time.
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <div className="space-y-1 text-left">
+                  <label className="text-[9px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Topic</label>
+                  <select
+                    value={extractionTopic}
+                    onChange={(e) => setExtractionTopic(e.target.value)}
+                    className="w-full px-2.5 py-1.5 border border-[var(--border)] rounded-lg bg-[var(--bg)] text-[var(--text)] text-xs focus:outline-none focus:ring-1 focus:ring-[var(--primary)] cursor-pointer"
+                  >
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Endocrinology">Endocrinology</option>
+                    <option value="Infectious Disease">Infectious Disease</option>
+                    <option value="Nephrology">Nephrology</option>
+                    <option value="Neurology">Neurology</option>
+                    <option value="Oncology">Oncology</option>
+                    <option value="Critical Care">Critical Care</option>
+                  </select>
+                </div>
+
+                <div className="space-y-1 text-left">
+                  <label className="text-[9px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Source Textbook</label>
+                  <select
+                    value={extractionBook}
+                    onChange={(e) => setExtractionBook(e.target.value)}
+                    className="w-full px-2.5 py-1.5 border border-[var(--border)] rounded-lg bg-[var(--bg)] text-[var(--text)] text-xs focus:outline-none focus:ring-1 focus:ring-[var(--primary)] cursor-pointer"
+                  >
+                    <option value="Clinical Cases in Clinical Pharmacology">Clinical Pharmacology (USMF)</option>
+                    <option value="Clinical Pharmacy & Pharmaceutical Care">Pharmacy & Care Workbook (RG)</option>
+                    <option value="Clinical Pharmacy: Case Studies">Case Studies Compilation (USC)</option>
+                    <option value="Pharmacy Case Studies">Pharmacy Case Studies (Academia)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="flex justify-end pt-1">
+                <button
+                  onClick={() => extractAICases(extractionTopic, extractionBook)}
+                  disabled={isExtracting}
+                  className="w-full py-1.5 bg-[var(--primary)] text-white text-xs font-bold rounded-lg hover:opacity-95 transition-all flex items-center justify-center gap-1 shadow-sm cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isExtracting ? (
+                    <>
+                      <Loader2 size={12} className="animate-spin" />
+                      Extracting cases...
+                    </>
+                  ) : (
+                    <>
+                      <Sparkles size={12} />
+                      Extract New Cases
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Left Cases Scroll List */}
           <div className="space-y-3 max-h-[600px] overflow-y-auto pr-1">
-            {isLoading ? (
+            {isLoading || (activeTab === 'saved' && isSavedLoading) || (activeTab === 'shared' && isSharedLoading) ? (
               <div className="p-8 text-center bg-[var(--surface)] rounded-xl border border-[var(--border)]">
                 <Loader2 size={24} className="animate-spin text-[var(--primary)] mx-auto mb-2" />
-                <span className="text-xs text-[var(--text-muted)]">Loading case library...</span>
+                <span className="text-xs text-[var(--text-muted)]">Loading clinical cases...</span>
               </div>
             ) : filteredCases.length === 0 ? (
               <div className="bg-[var(--surface)] p-12 rounded-xl border border-[var(--border)] shadow-sm flex flex-col items-center justify-center text-center">
                 <div className="w-12 h-12 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mb-3">
                   <BookMarked size={24} className="text-[var(--text-muted)]" />
                 </div>
-                <h3 className="text-sm font-bold text-[var(--text)] mb-1">No case studies found</h3>
-                <p className="text-[var(--text-muted)] text-xs max-w-xs">
-                  {searchQuery ? 'Try adjusting your search query.' : 'Click "Create Case Study" to add the first clinical vignette.'}
+                <h3 className="text-sm font-bold text-[var(--text)] mb-1">No cases found</h3>
+                <p className="text-[var(--text-muted)] text-xs max-w-xs leading-normal">
+                  {searchQuery ? 'Try adjusting your search query.' : 
+                    activeTab === 'session' ? 'Extract some customized daily cases with the AI Textbook Case Extractor tool above!' : 
+                    activeTab === 'saved' ? 'Your Portfolio is empty! Save cases from textbooks or AI extractions.' :
+                    activeTab === 'shared' ? 'No cases shared yet. Be the first to share a case with the Clinova network!' : 
+                    'No case studies found.'}
                 </p>
               </div>
             ) : (
               filteredCases.map((item) => {
                 const isSelected = selectedCase?.id === item.id;
+                const isCurated = item.id.startsWith('curated-');
+                const isMastered = masteredCases.includes(item.id);
+                const isRevealed = revealedCases.includes(item.id);
                 
                 return (
                   <div 
                     key={item.id}
-                    onClick={() => setSelectedCase(item)}
+                    onClick={() => handleSelectCase(item)}
                     className={`p-4 rounded-xl border transition-all cursor-pointer text-left space-y-3 group ${
                       isSelected 
-                        ? 'bg-[var(--primary)] text-white border-transparent' 
+                        ? 'bg-[var(--primary)] text-white border-transparent shadow-md' 
                         : 'bg-[var(--surface)] border-[var(--border)] hover:border-[var(--primary)] text-[var(--text)]'
                     }`}
                   >
@@ -279,9 +869,28 @@ export default function ClinicalCasesScreen() {
                       }`}>
                         {item.difficulty}
                       </span>
-                      <span className={`text-[10px] font-mono ${isSelected ? 'text-white/80' : 'text-[var(--text-muted)]'}`}>
-                        {item.topic}
-                      </span>
+                      
+                      <div className="flex items-center gap-1.5">
+                        {isMastered ? (
+                          <span className={`px-2 py-0.5 rounded-full text-[9px] font-bold flex items-center gap-1 ${
+                            isSelected ? 'bg-white/25 text-white' : 'bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-400'
+                          }`}>
+                            ✓ Mastered
+                          </span>
+                        ) : isRevealed ? (
+                          <span className={`px-2 py-0.5 rounded-full text-[9px] font-bold flex items-center gap-1 ${
+                            isSelected ? 'bg-white/20 text-white' : 'bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-400'
+                          }`}>
+                            Attempted
+                          </span>
+                        ) : (
+                          <span className={`px-2 py-0.5 rounded-full text-[9px] font-bold ${
+                            isSelected ? 'bg-white/10 text-white/80' : 'bg-gray-100 text-gray-400 dark:bg-gray-800 dark:text-gray-500'
+                          }`}>
+                            Unopened
+                          </span>
+                        )}
+                      </div>
                     </div>
 
                     <div>
@@ -293,9 +902,26 @@ export default function ClinicalCasesScreen() {
 
                     <div className="flex justify-between items-center text-[10px] pt-2 border-t border-dashed border-[var(--border)] group-hover:border-transparent">
                       <span className={isSelected ? 'text-white/80' : 'text-[var(--text-muted)]'}>
-                        By {item.createdByName}
+                        {isCurated ? '📚 Curated Textbook' : 
+                         item.createdBy === 'ai-extracted' ? `🤖 AI Extracted` : 
+                         item.createdBy === 'saved' ? `💾 Saved Portfolio` :
+                         item.createdBy === 'shared' ? `🌐 Shared Case` :
+                         `👤 Drafted by ${item.createdByName}`}
                       </span>
-                      <div className="flex items-center gap-1">
+                      
+                      {activeTab === 'shared' && (
+                        <button
+                          onClick={(e) => handleLikeSharedCase(item.id, e)}
+                          className={`flex items-center gap-1 px-1.5 py-0.5 rounded hover:bg-black/5 dark:hover:bg-white/5 transition-colors ${
+                            item.likedBy?.includes(auth.currentUser?.uid || '') ? 'text-red-500' : 'text-gray-400'
+                          }`}
+                        >
+                          <ThumbsUp size={11} />
+                          <span>{item.likesCount || 0}</span>
+                        </button>
+                      )}
+
+                      {!isCurated && activeTab === 'textbook' && (
                         <button 
                           onClick={(e) => handleDeleteCase(item.id, e)}
                           title="Delete case"
@@ -303,7 +929,7 @@ export default function ClinicalCasesScreen() {
                         >
                           <Trash2 size={13} />
                         </button>
-                      </div>
+                      )}
                     </div>
                   </div>
                 );
@@ -316,6 +942,8 @@ export default function ClinicalCasesScreen() {
         <div className="lg:col-span-2">
           {selectedCase ? (
             <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-6 shadow-sm space-y-6 animate-in fade-in duration-300">
+              
+              {/* Detailed Card Header */}
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pb-4 border-b border-[var(--border)]">
                 <div>
                   <div className="flex items-center gap-2 mb-2">
@@ -330,94 +958,273 @@ export default function ClinicalCasesScreen() {
                 </div>
                 <button 
                   onClick={() => setSelectedCase(null)}
-                  className="p-1.5 hover:bg-[var(--surface-dim)] rounded-lg text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
+                  className="p-1.5 hover:bg-[var(--surface-dim)] rounded-lg text-[var(--text-muted)] hover:text-[var(--text)] transition-colors cursor-pointer"
                 >
                   <X size={18} />
                 </button>
               </div>
 
-              {/* Case Narrative */}
-              <div className="space-y-6">
-                <div className="space-y-3 text-left">
-                  <h3 className="text-sm font-bold text-[var(--text)] flex items-center gap-2 uppercase tracking-wider">
-                    <BookOpen size={16} className="text-[var(--primary)]" />
-                    Clinical Scenario
-                  </h3>
-                  <div className="text-[var(--text)] leading-relaxed bg-[var(--bg)] p-5 rounded-xl border border-[var(--border)] whitespace-pre-wrap text-[15px] font-medium shadow-inner">
-                    {selectedCase.scenario}
-                  </div>
-                </div>
+              {/* Action Buttons: Save & Share */}
+              <div className="flex flex-wrap items-center gap-2.5 bg-[var(--surface-dim)] p-3 rounded-xl border border-[var(--border)]">
+                <span className="text-xs font-bold text-[var(--text-muted)] mr-1">Case Actions:</span>
+                
+                <button
+                  onClick={() => handleSaveToPortfolio(selectedCase)}
+                  className={`px-3 py-1.5 text-xs font-bold rounded-lg border flex items-center gap-1.5 transition-all cursor-pointer ${
+                    savedCases.some(sc => sc.title === selectedCase.title || sc.scenario === selectedCase.scenario)
+                      ? 'bg-green-50 text-green-700 border-green-200 dark:bg-green-950/20 dark:text-green-400 dark:border-green-900/40 cursor-default'
+                      : 'bg-[var(--surface)] text-[var(--text)] border-[var(--border)] hover:bg-[var(--surface-dim)]'
+                  }`}
+                >
+                  <Bookmark size={12} />
+                  {savedCases.some(sc => sc.title === selectedCase.title || sc.scenario === selectedCase.scenario) ? 'Saved to Portfolio ✓' : 'Save to Portfolio'}
+                </button>
 
-                <div className="space-y-3 text-left">
-                  <h3 className="text-sm font-bold text-[var(--text)] flex items-center gap-2 uppercase tracking-wider">
-                    <Lightbulb size={16} className="text-amber-500" />
-                    Key Learning Points
-                  </h3>
-                  <div className="text-[var(--text)] leading-relaxed bg-amber-500/5 p-5 rounded-xl border border-amber-500/20 whitespace-pre-wrap text-sm">
-                    {selectedCase.learningPoints}
-                  </div>
-                </div>
+                <button
+                  onClick={() => handleShareCase(selectedCase)}
+                  className={`px-3 py-1.5 text-xs font-bold rounded-lg border flex items-center gap-1.5 transition-all cursor-pointer ${
+                    sharedCases.some(sc => sc.title === selectedCase.title || sc.scenario === selectedCase.scenario)
+                      ? 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950/20 dark:text-blue-400 dark:border-blue-900/40 cursor-default'
+                      : 'bg-[var(--surface)] text-[var(--text)] border-[var(--border)] hover:bg-[var(--surface-dim)]'
+                  }`}
+                >
+                  <Share2 size={12} />
+                  {sharedCases.some(sc => sc.title === selectedCase.title || sc.scenario === selectedCase.scenario) ? 'Shared with Network' : 'Share with Network'}
+                </button>
               </div>
 
-              <div className="pt-4 border-t border-[var(--border)] flex justify-between items-center text-xs text-[var(--text-muted)]">
-                <span>Case ID: {selectedCase.id}</span>
-                <span>Authored by: {selectedCase.createdByName}</span>
+              {/* Sub-tabs Learning Stepper */}
+              <div className="flex border-b border-[var(--border)]">
+                <button 
+                  onClick={() => setSubTab('scenario')}
+                  className={`flex-1 py-3 text-sm font-semibold border-b-2 text-center transition-all flex items-center justify-center gap-2 ${
+                    subTab === 'scenario' 
+                      ? 'border-[var(--primary)] text-[var(--primary)]' 
+                      : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
+                  }`}
+                >
+                  <BookOpen size={16} />
+                  1. Patient Scenario
+                </button>
+                
+                <button 
+                  onClick={() => setSubTab('reflect')}
+                  className={`flex-1 py-3 text-sm font-semibold border-b-2 text-center transition-all flex items-center justify-center gap-2 ${
+                    subTab === 'reflect' 
+                      ? 'border-[var(--primary)] text-[var(--primary)]' 
+                      : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
+                  }`}
+                >
+                  <PenTool size={16} />
+                  2. Your Intervention Plan
+                </button>
+
+                <button 
+                  onClick={() => setSubTab('guideline')}
+                  className={`flex-1 py-3 text-sm font-semibold border-b-2 text-center transition-all flex items-center justify-center gap-2 ${
+                    subTab === 'guideline' 
+                      ? 'border-[var(--primary)] text-[var(--primary)]' 
+                      : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
+                  }`}
+                >
+                  <BookOpenCheck size={16} />
+                  3. Compare & Master
+                </button>
+              </div>
+
+              {/* Step Content */}
+              <div className="space-y-6">
+                
+                {/* Step 1: Scenario Content */}
+                {subTab === 'scenario' && (
+                  <div className="space-y-4 animate-in fade-in duration-200 text-left">
+                    <h3 className="text-sm font-bold text-[var(--text)] flex items-center gap-2 uppercase tracking-wider">
+                      <BookOpen size={16} className="text-[var(--primary)]" />
+                      Clinical Scenario Vignette
+                    </h3>
+                    <div className="text-[var(--text)] leading-relaxed bg-[var(--surface-dim)] p-5 rounded-xl border border-[var(--border)] whitespace-pre-wrap text-[15px] font-medium shadow-inner">
+                      {selectedCase.scenario}
+                    </div>
+
+                    <div className="flex justify-end pt-4">
+                      <button 
+                        onClick={() => setSubTab('reflect')}
+                        className="px-5 py-3 bg-[var(--primary)] text-white rounded-xl font-bold text-sm flex items-center gap-2 hover:opacity-95 transition-all shadow-md cursor-pointer"
+                      >
+                        Start Diagnostic Intervention
+                        <ArrowRight size={16} />
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {/* Step 2: User Reflection Pad */}
+                {subTab === 'reflect' && (
+                  <div className="space-y-4 animate-in fade-in duration-200 text-left">
+                    <div className="bg-blue-50/50 dark:bg-blue-950/10 border border-blue-100/50 dark:border-blue-900/40 p-4 rounded-xl space-y-2">
+                      <h4 className="font-bold text-sm text-[var(--primary)] flex items-center gap-1.5">
+                        <PenTool size={16} /> Learning Prompt
+                      </h4>
+                      <p className="text-xs text-[var(--text-muted)] leading-relaxed">
+                        Identify key drug-related problems (DRPs), analyze pharmacokinetics, calculate any dosing modifications based on renal values, and draft a guideline-directed patient monitoring plan.
+                      </p>
+                    </div>
+
+                    <div className="space-y-2">
+                      <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider block">Your Care Plan Notepad</label>
+                      <textarea 
+                        value={userReflections[selectedCase.id] || ''}
+                        onChange={(e) => handleUpdateReflection(selectedCase.id, e.target.value)}
+                        placeholder="Type your notes, clinical reasoning, drug interactions, or dosing adjustments here..."
+                        rows={10}
+                        className="w-full p-4 border border-[var(--border)] rounded-xl bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] font-medium leading-relaxed resize-y"
+                      />
+                    </div>
+
+                    <div className="flex justify-between items-center pt-2">
+                      <button 
+                        onClick={() => setSubTab('scenario')}
+                        className="px-4 py-2 text-xs font-bold text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
+                      >
+                        ← Back to Scenario
+                      </button>
+                      <button 
+                        onClick={() => handleRevealGuidelines(selectedCase.id)}
+                        className="px-5 py-3 bg-gradient-to-r from-[var(--primary)] to-indigo-600 text-white rounded-xl font-bold text-sm flex items-center gap-2 hover:opacity-95 transition-all shadow-md cursor-pointer"
+                      >
+                        Reveal Textbook Guidelines
+                        <ArrowRight size={16} />
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {/* Step 3: Compare Side-By-Side & Guidelines */}
+                {subTab === 'guideline' && (
+                  <div className="space-y-6 animate-in fade-in duration-200 text-left">
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {/* Left: User Answer */}
+                      <div className="space-y-3">
+                        <h4 className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider flex items-center gap-1.5">
+                          <PenTool size={14} className="text-blue-500" /> Your Formulated Notes
+                        </h4>
+                        <div className="bg-[var(--surface-dim)] p-4 rounded-xl border border-[var(--border)] min-h-[220px] text-xs font-medium leading-relaxed text-[var(--text-muted)] whitespace-pre-wrap">
+                          {userReflections[selectedCase.id] ? userReflections[selectedCase.id] : "No care plan notes drafted for this case study."}
+                        </div>
+                      </div>
+
+                      {/* Right: Expert Guidelines */}
+                      <div className="space-y-3">
+                        <h4 className="text-xs font-bold text-amber-500 uppercase tracking-wider flex items-center gap-1.5">
+                          <Lightbulb size={14} className="text-amber-500" /> Guideline Resolution
+                        </h4>
+                        <div className="bg-amber-500/5 p-4 rounded-xl border border-amber-500/20 min-h-[220px] text-xs leading-relaxed text-[var(--text)] whitespace-pre-wrap font-medium">
+                          {selectedCase.learningPoints}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Master Action Panel */}
+                    <div className="bg-[var(--surface-dim)] border border-[var(--border)] p-5 rounded-2xl flex flex-col sm:flex-row justify-between items-center gap-4">
+                      <div>
+                        <h4 className="font-bold text-sm text-[var(--text)]">Mastery Evaluation</h4>
+                        <p className="text-xs text-[var(--text-muted)] mt-1">If you have reviewed the diagnostic points and feel confident in this therapeutic area, mark this case study as mastered.</p>
+                      </div>
+                      
+                      <button 
+                        onClick={() => handleToggleMastered(selectedCase.id)}
+                        className={`px-5 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm border cursor-pointer ${
+                          masteredCases.includes(selectedCase.id)
+                            ? 'bg-green-600 hover:bg-green-700 text-white border-transparent'
+                            : 'bg-[var(--surface)] border-[var(--border)] text-[var(--text)] hover:bg-[var(--surface-dim)]'
+                        }`}
+                      >
+                        <Award size={15} />
+                        {masteredCases.includes(selectedCase.id) ? 'Mastered ✓' : 'Mark as Mastered'}
+                      </button>
+                    </div>
+
+                    <div className="flex justify-start pt-2">
+                      <button 
+                        onClick={() => setSubTab('reflect')}
+                        className="px-4 py-2 text-xs font-bold text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
+                      >
+                        ← Edit Care Plan Notes
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+              </div>
+
+              {/* Card Footer Metadata */}
+              <div className="pt-4 border-t border-[var(--border)] flex flex-col sm:flex-row justify-between items-center text-[10px] text-[var(--text-muted)] gap-2">
+                <span>Case Unique Identifier: {selectedCase.id}</span>
+                <span>Clinical Author / Compilation: {selectedCase.createdByName}</span>
               </div>
             </div>
           ) : (
-            <div className="w-full h-full min-h-[400px] bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 flex flex-col items-center justify-center text-center">
-              <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mb-4">
-                <BookMarked size={32} className="text-[var(--text-muted)]" />
+            <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 text-center h-[500px] flex flex-col items-center justify-center space-y-4">
+              <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center text-[var(--text-dim)]">
+                <BookOpen size={32} />
               </div>
-              <h3 className="text-lg font-semibold text-[var(--text)] mb-2">Read Case Studies</h3>
-              <p className="text-[var(--text-muted)] text-sm max-w-sm">
-                Select a clinical case from the library to test your knowledge, review patient scenarios, and master critical pharmacotherapy concepts.
-              </p>
+              <div>
+                <h3 className="text-lg font-bold text-[var(--text)]">No Clinical Case Selected</h3>
+                <p className="text-xs text-[var(--text-muted)] mt-1 max-w-sm mx-auto leading-relaxed">
+                  Select a case study from the sidebar on the left, or extract a new clinical vignette using the AI Extractor to start your review.
+                </p>
+              </div>
             </div>
           )}
         </div>
 
       </div>
 
-      {/* New Case Modal Dialog */}
+      {/* Modal: Create Custom Case Study */}
       {showNewModal && (
-        <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 backdrop-blur-sm animate-in fade-in duration-200">
-          <div className="bg-[var(--surface)] w-full max-w-2xl rounded-2xl border border-[var(--border)] shadow-xl overflow-hidden animate-in zoom-in-95 duration-200">
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 animate-in fade-in duration-200">
+          <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl w-full max-w-2xl shadow-xl overflow-hidden flex flex-col animate-in zoom-in-95 duration-200">
+            
             <div className="px-6 py-4 border-b border-[var(--border)] flex justify-between items-center bg-[var(--surface-dim)]">
-              <h3 className="text-lg font-bold text-[var(--text)]">Draft New Case Study</h3>
+              <h3 className="font-bold text-[var(--text)] flex items-center gap-2">
+                <PenTool size={18} className="text-[var(--primary)]" />
+                Draft Custom Case Study
+              </h3>
               <button 
                 onClick={() => setShowNewModal(false)}
-                className="p-1.5 hover:bg-[var(--surface-dim)] rounded-lg text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
+                className="p-1 text-[var(--text-muted)] hover:text-[var(--text)] transition-colors cursor-pointer"
               >
                 <X size={18} />
               </button>
             </div>
 
-            <form onSubmit={handleCreateCase}>
-              <div className="p-6 space-y-5 max-h-[70vh] overflow-y-auto text-left">
+            <form onSubmit={handleCreateCase} className="flex flex-col overflow-y-auto">
+              <div className="p-6 space-y-4 text-left">
                 <div className="space-y-1.5">
                   <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Case Title</label>
                   <input 
-                    type="text"
-                    required
+                    type="text" 
                     value={newTitle}
                     onChange={(e) => setNewTitle(e.target.value)}
-                    placeholder="e.g. 55-year-old male with Acute Decompensated Heart Failure"
-                    className="w-full px-4 py-2.5 border border-[var(--border)] rounded-xl bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
+                    required
+                    placeholder="e.g., Gentamicin Dosing and AKI Risk in Sepsis"
+                    className="w-full px-4 py-2.5 border border-[var(--border)] rounded-xl bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] font-medium"
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Therapeutic Area / Topic</label>
+                    <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Clinical Topic</label>
                     <select 
                       value={newTopic}
                       onChange={(e) => setNewTopic(e.target.value)}
-                      className="w-full px-4 py-2.5 border border-[var(--border)] rounded-xl bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
+                      className="w-full px-4 py-2.5 border border-[var(--border)] rounded-xl bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] cursor-pointer"
                     >
                       <option value="Cardiology">Cardiology</option>
-                      <option value="Infectious Disease">Infectious Disease</option>
                       <option value="Endocrinology">Endocrinology</option>
+                      <option value="Infectious Disease">Infectious Disease</option>
+                      <option value="Nephrology">Nephrology</option>
                       <option value="Neurology">Neurology</option>
                       <option value="Oncology">Oncology</option>
                       <option value="Critical Care">Critical Care</option>
@@ -426,11 +1233,11 @@ export default function ClinicalCasesScreen() {
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Difficulty Level</label>
+                    <label className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Target Level</label>
                     <select 
                       value={newDifficulty}
                       onChange={(e) => setNewDifficulty(e.target.value as any)}
-                      className="w-full px-4 py-2.5 border border-[var(--border)] rounded-xl bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
+                      className="w-full px-4 py-2.5 border border-[var(--border)] rounded-xl bg-[var(--bg)] text-[var(--text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] cursor-pointer"
                     >
                       <option value="Beginner">Beginner (P1/P2 Level)</option>
                       <option value="Intermediate">Intermediate (P3/P4 Level)</option>
@@ -467,14 +1274,14 @@ export default function ClinicalCasesScreen() {
                 <button 
                   type="button"
                   onClick={() => setShowNewModal(false)}
-                  className="px-4 py-2.5 border border-[var(--border)] hover:bg-[var(--surface-dim)] text-[var(--text)] font-semibold text-sm rounded-xl transition-colors"
+                  className="px-4 py-2.5 border border-[var(--border)] hover:bg-[var(--surface-dim)] text-[var(--text)] font-semibold text-sm rounded-xl transition-colors cursor-pointer"
                 >
                   Cancel
                 </button>
                 <button 
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-4 py-2.5 bg-[var(--primary)] text-white font-semibold text-sm rounded-xl hover:opacity-95 transition-opacity flex items-center gap-2"
+                  className="px-4 py-2.5 bg-[var(--primary)] text-white font-semibold text-sm rounded-xl hover:opacity-95 transition-all flex items-center gap-2 cursor-pointer"
                 >
                   {isSubmitting ? <Loader2 size={16} className="animate-spin" /> : <BookOpen size={16} />}
                   Publish Case Study
@@ -487,4 +1294,3 @@ export default function ClinicalCasesScreen() {
     </div>
   );
 }
-

@@ -15,7 +15,7 @@
 }
 
 @layer base {
-  :root {
+  :root, :root.light {
     --bg: #F8FAFC;
     --surface: rgba(255, 255, 255, 0.65);
     --surface-dim: rgba(241, 245, 249, 0.5);
@@ -29,20 +29,18 @@
     --success: #10B981;
   }
   
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0E0E10;
-      --surface: rgba(26, 26, 30, 0.65);
-      --surface-dim: rgba(39, 39, 42, 0.5);
-      --text: #E8E8ED;
-      --text-muted: #A1A1AA;
-      --primary: #00E5FF;
-      --primary-container: rgba(0, 229, 255, 0.1);
-      --danger: #F87171;
-      --danger-container: rgba(248, 113, 113, 0.1);
-      --border: rgba(63, 63, 70, 0.5);
-      --success: #34D399;
-    }
+  :root.dark {
+    --bg: #0E0E10;
+    --surface: rgba(26, 26, 30, 0.65);
+    --surface-dim: rgba(39, 39, 42, 0.5);
+    --text: #E8E8ED;
+    --text-muted: #A1A1AA;
+    --primary: #00E5FF;
+    --primary-container: rgba(0, 229, 255, 0.1);
+    --danger: #F87171;
+    --danger-container: rgba(248, 113, 113, 0.1);
+    --border: rgba(63, 63, 70, 0.5);
+    --success: #34D399;
   }
 
   body {

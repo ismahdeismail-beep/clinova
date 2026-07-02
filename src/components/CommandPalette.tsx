@@ -29,7 +29,6 @@ export function CommandPalette() {
     { id: 'drugs', label: 'Search Drug Index', icon: Pill, path: '/drugs' },
     { id: 'assistant', label: 'Ask Clinical Assistant', icon: Bot, path: '/assistant' },
     { id: 'knowledge', label: 'Go to Education Hub', icon: BookOpen, path: '/knowledge' },
-    { id: 'reports', label: 'Go to Reports', icon: BarChart3, path: '/reports' },
     { id: 'admin', label: 'Go to Admin Console', icon: ShieldCheck, path: '/admin' },
     { id: 'notifications', label: 'Go to Notifications', icon: Bell, path: '/notifications', shortcut: ['shift', 'n'] },
     { id: 'settings', label: 'Go to Settings', icon: Settings, path: '/settings' },

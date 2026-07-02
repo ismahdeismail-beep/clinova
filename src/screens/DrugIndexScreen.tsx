@@ -45,7 +45,8 @@ export default function DrugIndexScreen() {
       });
 
       if (!res.ok) {
-        throw new Error('Failed to retrieve drug monograph');
+        const errorData = await res.json().catch(() => ({}));
+        throw new Error(errorData.error || 'Failed to retrieve drug monograph');
       }
 
       const data = await res.json();

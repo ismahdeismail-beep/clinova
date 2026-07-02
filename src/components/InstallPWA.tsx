@@ -93,7 +93,7 @@ export function InstallPWA() {
     // Snooze prompt for 24 hours
     localStorage.setItem('clinova-pwa-dismissed-time', Date.now().toString());
     setShowModal(false);
-    setShowFloatingBtn(true); // Still keep the unobtrusive floating download trigger active
+    setShowFloatingBtn(false); // Do not show the floating button if they dismissed
   };
 
   const handleFloatingClick = () => {

@@ -115,7 +115,8 @@ export default function KnowledgeBaseScreen() {
       });
 
       if (!res.ok) {
-        throw new Error('Failed to generate study materials');
+        const errorData = await res.json().catch(() => ({}));
+        throw new Error(errorData.error || 'Failed to generate study materials');
       }
 
       const data = await res.json();
@@ -125,9 +126,9 @@ export default function KnowledgeBaseScreen() {
         podcastTranscript: data.podcastTranscript || undefined,
         audioUrl: includePodcast ? 'https://example.com/mock-podcast.mp3' : undefined
       });
-    } catch (error) {
+    } catch (error: any) {
       console.error('Study material generation error:', error);
-      alert('Sorry, there was an issue generating the study materials. Please try again later.');
+      alert(`Study material generation failed: ${error.message || 'Please check your connection and configuration.'}`);
     } finally {
       setIsGenerating(false);
     }

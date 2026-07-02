@@ -70,7 +70,7 @@ export function OverlayHost() {
                         onClick={action.onClick}
                         className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                           action.variant === 'primary'
-                            ? 'bg-[var(--primary)] text-white hover:opacity-90'
+                            ? 'bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90'
                             : 'bg-[var(--bg)] text-[var(--text)] border border-[var(--border)] hover:bg-[var(--bg-hover)]'
                         }`}
                       >
@@ -125,7 +125,7 @@ export function OverlayHost() {
                       (overlay.props?.onConfirm as (() => void) | undefined)?.();
                       dismiss(overlay.id);
                     }}
-                    className="px-4 py-2 text-sm font-medium rounded-lg bg-[var(--primary)] text-white hover:opacity-90"
+                    className="px-4 py-2 text-sm font-medium rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90"
                   >
                     {String(overlay.props?.confirmLabel ?? 'Confirm')}
                   </button>

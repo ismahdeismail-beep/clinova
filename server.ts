@@ -48,7 +48,7 @@ app.post('/api/cloudinary/upload', upload.single('file'), async (req, res) => {
     });
   } catch (error: any) {
     console.error('Cloudinary proxy upload error:', error);
-    res.status(500).json({ error: error.message || 'Failed to upload image' });
+    res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'Failed to upload image' });
   }
 });
 
@@ -57,7 +57,7 @@ let aiClient: GoogleGenAI | null = null;
 
 function getGeminiClient(): GoogleGenAI {
   if (!aiClient) {
-    const key = process.env.GEMINI_API_KEY;
+    const key = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
     if (!key) {
       throw new Error('GEMINI_API_KEY is not configured. Please add your Gemini API Key in the AI Studio Settings menu to power the AI features of Clinova.');
     }
@@ -72,6 +72,94 @@ function getGeminiClient(): GoogleGenAI {
   }
   return aiClient;
 }
+
+// File Extraction Endpoint using Gemini inlineData
+app.post('/api/gemini/extract-file', upload.single('file'), async (req, res) => {
+  try {
+    if (!req.file) return res.status(400).json({ error: 'No file provided' });
+    const { extractionType } = req.body;
+    
+    // Fallback if not provided
+    const type = extractionType || 'patient';
+    
+    const inlineData = {
+      data: req.file.buffer.toString('base64'),
+      mimeType: req.file.mimetype
+    };
+
+    let prompt = '';
+    let responseSchema: any = {};
+
+    if (type === 'patient') {
+      prompt = `Extract patient demographic information from this document, image, or audio.
+Return a JSON object with:
+- name (string)
+- age (number)
+- sex (string: "M", "F", or "Other")
+- ipNumber (string, optional)
+- ward (string, optional)`;
+      
+      responseSchema = {
+        type: Type.OBJECT,
+        properties: {
+          name: { type: Type.STRING },
+          age: { type: Type.NUMBER },
+          sex: { type: Type.STRING },
+          ipNumber: { type: Type.STRING },
+          ward: { type: Type.STRING }
+        }
+      };
+    } else if (type === 'pharmacotherapy') {
+      prompt = `Extract pharmacotherapy review data from this document, image, or audio transcript.
+Return a JSON object with fields mapping to a clinical review form:
+- patientName (string)
+- age (string)
+- weight (string)
+- height (string)
+- chiefComplaint (string)
+- pastMedicalHistory (string)
+- diagnosis (string)
+- currentMedications (string)
+- allergies (string)
+If a field is not found, omit it.`;
+      
+      responseSchema = {
+        type: Type.OBJECT,
+        properties: {
+          patientName: { type: Type.STRING },
+          age: { type: Type.STRING },
+          weight: { type: Type.STRING },
+          height: { type: Type.STRING },
+          chiefComplaint: { type: Type.STRING },
+          pastMedicalHistory: { type: Type.STRING },
+          diagnosis: { type: Type.STRING },
+          currentMedications: { type: Type.STRING },
+          allergies: { type: Type.STRING },
+        }
+      };
+    } else {
+      return res.status(400).json({ error: 'Invalid extraction type' });
+    }
+
+    const response = await getGeminiClient().models.generateContent({
+      model: 'gemini-3.5-flash',
+      contents: [
+        { role: 'user', parts: [ { text: prompt }, { inlineData } ] }
+      ],
+      config: {
+        responseMimeType: 'application/json',
+        responseSchema: responseSchema,
+        systemInstruction: "You are an expert clinical data extraction AI. You extract structured data from clinical documents, images, and dictations."
+      }
+    });
+
+    const parsed = JSON.parse(response.text || '{}');
+    res.json(parsed);
+  } catch (error: any) {
+    console.error('Extraction error:', error);
+    res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'AI extraction failed' });
+  }
+});
 
 // AI Autofill Endpoint
 app.post('/api/gemini/autofill', async (req, res) => {
@@ -229,7 +317,7 @@ CRITICAL SAFETY & TRUTH CONSTRAINT: You must be extremely careful and NEVER assu
     res.json(result);
   } catch (error: any) {
     console.error('Autofill generation error:', error);
-    res.status(500).json({ error: error.message || 'AI generation failed' });
+    res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'AI generation failed' });
   }
 });
 
@@ -282,7 +370,7 @@ User Clinical Query: "${userMessage}"
     res.json({ text: response.text });
   } catch (error: any) {
     console.error('Clinical Assistant error:', error);
-    res.status(500).json({ error: error.message || 'AI assistant failed' });
+    res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'AI assistant failed' });
   }
 });
 
@@ -348,7 +436,7 @@ Provide 3 highly relevant clinical board-style questions with answers, detailed 
     });
   } catch (error: any) {
     console.error('Study generation error:', error);
-    res.status(500).json({ error: error.message || 'AI generation failed' });
+    res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'AI generation failed' });
   }
 });
 
@@ -388,7 +476,7 @@ For each drug profile, include:
     res.json({ text: response.text });
   } catch (error: any) {
     console.error('Drug profile search error:', error);
-    res.status(500).json({ error: error.message || 'AI drug lookup failed' });
+    res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'AI drug lookup failed' });
   }
 });
 
@@ -450,7 +538,7 @@ Ensure the output is highly educational, precise, and matches the clinical stand
     res.json(cases);
   } catch (error: any) {
     console.error('Case extraction error:', error);
-    res.status(500).json({ error: error.message || 'AI case extraction failed' });
+    res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'AI case extraction failed' });
   }
 });
 
@@ -491,7 +579,7 @@ app.post('/api/cloudinary/destroy', async (req, res) => {
     res.json({ result: data.result || 'ok', details: data });
   } catch (error: any) {
     console.error('Cloudinary destroy proxy error:', error);
-    res.status(500).json({ error: error.message || 'Failed to destroy Cloudinary image' });
+    res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'Failed to destroy Cloudinary image' });
   }
 });
 

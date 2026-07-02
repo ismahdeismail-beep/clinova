@@ -79,7 +79,7 @@ export default function DrugIndexScreen() {
   };
 
   return (
-    <div className="p-6 max-w-7xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-white">
+    <div className="p-6 max-w-7xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-[var(--text)] mb-2 tracking-tight">Kenya Drug Index (KDI)</h1>
         <p className="text-[var(--text-muted)] text-sm">
@@ -102,7 +102,7 @@ export default function DrugIndexScreen() {
         <button 
           type="submit"
           disabled={isLoading}
-          className="px-5 py-2.5 bg-[var(--primary)] hover:opacity-90 transition-opacity text-white rounded-lg text-sm font-semibold flex items-center gap-2"
+          className="px-5 py-2.5 bg-[var(--primary)] hover:opacity-90 transition-opacity text-[var(--primary-foreground)] rounded-lg text-sm font-semibold flex items-center gap-2"
         >
           {isLoading ? <Loader2 size={16} className="animate-spin" /> : 'Search'}
         </button>
@@ -137,12 +137,12 @@ export default function DrugIndexScreen() {
                 onClick={() => handleCategoryClick(cat)}
                 className={`w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-all flex items-center justify-between group ${
                   isSelected 
-                    ? 'bg-[var(--primary)] text-white shadow-md shadow-primary/10' 
+                    ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-md shadow-primary/10' 
                     : 'bg-[var(--surface)] text-[var(--text)] hover:bg-[var(--surface-dim)] border border-[var(--border)]'
                 }`}
               >
                 <span>{cat}</span>
-                <ArrowRight size={14} className={`transition-transform duration-200 group-hover:translate-x-1 ${isSelected ? 'text-white' : 'text-[var(--text-dim)]'}`} />
+                <ArrowRight size={14} className={`transition-transform duration-200 group-hover:translate-x-1 ${isSelected ? 'text-[var(--primary-foreground)]' : 'text-[var(--text-dim)]'}`} />
               </button>
             );
           })}

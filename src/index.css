@@ -7,6 +7,8 @@
   --color-text: var(--text);
   --color-text-muted: var(--text-muted);
   --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
   --color-primary-container: var(--primary-container);
   --color-danger: var(--danger);
   --color-danger-container: var(--danger-container);
@@ -16,41 +18,39 @@
 
 @layer base {
   :root, :root.light {
-    --bg: #F8FAFC;
-    --surface: rgba(255, 255, 255, 0.65);
-    --surface-dim: rgba(241, 245, 249, 0.5);
-    --text: #0F172A;
-    --text-muted: #64748B;
-    --primary: #2563EB;
-    --primary-container: #DBEAFE;
+    --bg: #F8FAFC; /* Slate 50 */
+    --surface: #FFFFFF;
+    --surface-dim: #F1F5F9; /* Slate 100 */
+    --text: #0F172A; /* Slate 900 */
+    --text-muted: #64748B; /* Slate 500 */
+    --primary: #2563EB; /* Blue 600 */
+    --primary-hover: #1D4ED8; /* Blue 700 */
+    --primary-foreground: #FFFFFF;
+    --primary-container: #DBEAFE; /* Blue 100 */
     --danger: #EF4444;
     --danger-container: #FEE2E2;
-    --border: rgba(226, 232, 240, 0.6);
+    --border: #E2E8F0; /* Slate 200 */
     --success: #10B981;
   }
   
   :root.dark {
-    --bg: #0E0E10;
-    --surface: rgba(26, 26, 30, 0.65);
-    --surface-dim: rgba(39, 39, 42, 0.5);
-    --text: #E8E8ED;
-    --text-muted: #A1A1AA;
-    --primary: #00E5FF;
-    --primary-container: rgba(0, 229, 255, 0.1);
+    --bg: #0F172A; /* Slate 900 */
+    --surface: #1E293B; /* Slate 800 */
+    --surface-dim: #334155; /* Slate 700 */
+    --text: #F8FAFC; /* Slate 50 */
+    --text-muted: #94A3B8; /* Slate 400 */
+    --primary: #3B82F6; /* Blue 500 */
+    --primary-hover: #60A5FA; /* Blue 400 */
+    --primary-foreground: #FFFFFF;
+    --primary-container: rgba(37, 99, 235, 0.2); /* Blue 600 with opacity */
     --danger: #F87171;
-    --danger-container: rgba(248, 113, 113, 0.1);
-    --border: rgba(63, 63, 70, 0.5);
+    --danger-container: rgba(248, 113, 113, 0.15);
+    --border: #334155; /* Slate 700 */
     --success: #34D399;
   }
 
   body {
     @apply bg-[var(--bg)] text-[var(--text)];
-    background-image: 
-      radial-gradient(circle at 10% 20%, rgba(37, 99, 235, 0.12), transparent 40%),
-      radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.1), transparent 40%),
-      radial-gradient(circle at 70% 10%, rgba(147, 51, 234, 0.08), transparent 30%);
-    background-attachment: fixed;
-    background-size: cover;
   }
 
   /* Glassmorphism support */

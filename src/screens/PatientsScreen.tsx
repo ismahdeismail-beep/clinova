@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Search, UserPlus, FileText, ChevronRight, Loader2, X, User } from "lucide-react";
+import React, { useState, useEffect, useRef } from "react";
+import { Search, UserPlus, FileText, ChevronRight, Loader2, X, User, UploadCloud, Sparkles } from "lucide-react";
 import {
   PatientQuickSummary,
   Patient,
@@ -124,6 +124,46 @@ export default function PatientsScreen() {
   const [newWard, setNewWard] = useState("Medical Ward A");
   const [newIpNumber, setNewIpNumber] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // AI Extraction State
+  const [isExtracting, setIsExtracting] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setIsExtracting(true);
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('extractionType', 'patient');
+
+      const res = await fetch('/api/gemini/extract-file', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!res.ok) throw new Error('Failed to extract patient data');
+      
+      const data = await res.json();
+      
+      if (data.name) setNewName(data.name);
+      if (data.age) setNewAge(String(data.age));
+      if (data.sex) setNewSex(data.sex);
+      if (data.ipNumber) setNewIpNumber(data.ipNumber);
+      if (data.ward) setNewWard(data.ward);
+      
+    } catch (error) {
+      console.error('Extraction error:', error);
+      alert('Could not extract data from the uploaded file.');
+    } finally {
+      setIsExtracting(false);
+      if (fileInputRef.current) {
+        fileInputRef.current.value = '';
+      }
+    }
+  };
 
   const fetchPatients = async () => {
     setIsLoading(true);
@@ -312,7 +352,7 @@ export default function PatientsScreen() {
   };
 
   return (
-    <div className="p-6 max-w-[1400px] mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-white">
+    <div className="p-6 max-w-[1400px] mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
         <div>
           <h1 className="text-3xl font-bold text-[var(--text)] mb-2 tracking-tight">
@@ -324,7 +364,7 @@ export default function PatientsScreen() {
         </div>
         <button 
           onClick={() => setShowNewModal(true)}
-          className="px-4 py-2.5 bg-[var(--primary)] text-white rounded-xl font-semibold text-sm flex items-center gap-2 hover:opacity-95 transition-opacity shadow-sm"
+          className="px-4 py-2.5 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-xl font-semibold text-sm flex items-center gap-2 hover:opacity-95 transition-opacity shadow-sm"
         >
           <UserPlus size={18} />
           Add Patient
@@ -453,6 +493,36 @@ export default function PatientsScreen() {
                 <X size={18} />
               </button>
             </div>
+            
+            {/* AI Extraction Banner */}
+            <div className="px-6 py-4 bg-gradient-to-r from-blue-50/50 to-indigo-50/50 dark:from-blue-950/20 dark:to-indigo-950/20 border-b border-[var(--border)] text-left flex items-center justify-between">
+              <div className="flex flex-col">
+                <span className="text-xs font-bold text-[var(--primary)] flex items-center gap-1">
+                  <Sparkles size={14} /> AI Auto-Fill
+                </span>
+                <span className="text-xs text-[var(--text-muted)] mt-0.5">Upload a document, image, or audio to extract patient details.</span>
+              </div>
+              
+              <input 
+                type="file" 
+                ref={fileInputRef} 
+                onChange={handleFileUpload} 
+                className="hidden" 
+                accept="image/*,audio/*,application/pdf"
+              />
+              <button 
+                type="button"
+                onClick={() => fileInputRef.current?.click()}
+                disabled={isExtracting}
+                className="px-3 py-1.5 text-xs font-bold bg-white dark:bg-gray-800 border border-[var(--border)] rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center gap-2 shadow-sm whitespace-nowrap disabled:opacity-50"
+              >
+                {isExtracting ? (
+                  <><Loader2 size={14} className="animate-spin" /> Extracting...</>
+                ) : (
+                  <><UploadCloud size={14} /> Upload</>
+                )}
+              </button>
+            </div>
 
             <form onSubmit={handleCreatePatient}>
               <div className="p-6 space-y-4 text-left">
@@ -533,7 +603,7 @@ export default function PatientsScreen() {
                 <button 
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-4 py-2 bg-[var(--primary)] text-white font-semibold text-sm rounded-lg hover:opacity-95 transition-opacity flex items-center gap-2"
+                  className="px-4 py-2 bg-[var(--primary)] text-[var(--primary-foreground)] font-semibold text-sm rounded-lg hover:opacity-95 transition-opacity flex items-center gap-2"
                 >
                   {isSubmitting && <Loader2 size={14} className="animate-spin" />}
                   Register Patient

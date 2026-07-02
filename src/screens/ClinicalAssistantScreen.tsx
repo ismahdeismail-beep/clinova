@@ -243,7 +243,7 @@ export default function ClinicalAssistantScreen() {
       }
     } catch (err: any) {
       console.error(err);
-      responseContent = `Sorry, I encountered an issue: ${err.message || 'Please verify that your GEMINI_API_KEY environment variable is properly configured in settings.'}`;
+      responseContent = `Sorry, I encountered an issue: ${err.message || 'Service temporarily unavailable. Please try again.'}`;
       citations = [
         { source: 'Clinical Rules Engine', document: 'Local Fallback Safe Mode' }
       ];
@@ -274,7 +274,7 @@ export default function ClinicalAssistantScreen() {
   };
 
   return (
-    <div className="p-6 max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 h-[calc(100vh-2rem)]">
+    <div className="p-4 md:p-6 max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 h-[calc(100vh-5rem)] lg:h-[calc(100vh-6rem)]">
       {/* Left Sidebar: Master Router Status */}
       <div className="hidden lg:flex w-64 flex-col gap-4 shrink-0">
         <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 shadow-sm relative overflow-hidden">
@@ -343,7 +343,7 @@ export default function ClinicalAssistantScreen() {
           {messages.map((msg) => (
             <div key={msg.id} className={`flex gap-4 ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}>
               <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${
-                msg.role === 'user' ? 'bg-[var(--primary)] text-white' : 'bg-[var(--surface-dim)] text-[var(--primary)] border border-[var(--border)]'
+                msg.role === 'user' ? 'bg-[var(--primary)] text-[var(--primary-foreground)]' : 'bg-[var(--surface-dim)] text-[var(--primary)] border border-[var(--border)]'
               }`}>
                 {msg.role === 'user' ? <User size={16} /> : <Bot size={16} />}
               </div>
@@ -366,7 +366,7 @@ export default function ClinicalAssistantScreen() {
                 {!msg.isThinking && (
                   <div className={`rounded-2xl p-4 shadow-sm ${
                     msg.role === 'user' 
-                      ? 'bg-[var(--primary)] text-white rounded-tr-none' 
+                      ? 'bg-[var(--primary)] text-[var(--primary-foreground)] rounded-tr-none' 
                       : 'bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] rounded-tl-none'
                   }`}>
                     {/* Render Content with basic markdown-like support */}
@@ -498,7 +498,7 @@ export default function ClinicalAssistantScreen() {
               disabled={!input.trim() || isProcessing}
               className={`p-3 rounded-xl transition-colors shrink-0 flex items-center justify-center ${
                 input.trim() && !isProcessing
-                  ? 'bg-[var(--primary)] text-white hover:opacity-90 shadow-sm' 
+                  ? 'bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90 shadow-sm' 
                   : 'bg-[var(--surface-dim)] text-[var(--text-muted)] cursor-not-allowed'
               }`}
             >

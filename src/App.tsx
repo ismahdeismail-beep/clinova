@@ -87,8 +87,8 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
             <Menu size={20} />
           </button>
           <Link to="/" className="flex items-center gap-2 text-[var(--primary)] font-bold text-xl tracking-tight shrink-0 md:hidden lg:flex">
-            <div className={`rounded-lg bg-blue-500/10 flex items-center justify-center text-[var(--primary)] shadow-sm transition-all duration-300 ${isScrolled ? 'w-6 h-6' : 'w-8 h-8'}`}>
-              <ClinovaLogo size={isScrolled ? 14 : 20} />
+            <div className={`flex items-center justify-center transition-all duration-300`}>
+              <ClinovaLogo size={isScrolled ? 20 : 28} variant="colored" />
             </div>
             {!isScrolled && <span className="hidden sm:inline transition-opacity duration-300">CLINOVA</span>}
           </Link>
@@ -119,7 +119,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
           <Link to="/notifications" className={`text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary-container)] rounded-full transition-colors relative ${isScrolled ? 'p-1.5' : 'p-2'}`}>
             <Bell size={isScrolled ? 18 : 20} />
             {unreadCount > 0 && (
-              <span className={`absolute bg-red-500 rounded-full border border-[var(--surface)] font-bold text-white flex items-center justify-center
+              <span className={`absolute bg-[var(--danger)] rounded-full border border-[var(--surface)] font-bold text-white flex items-center justify-center
                 ${isScrolled ? 'top-0.5 right-0.5 min-w-[14px] h-3.5 text-[8px] px-0.5' : 'top-1 right-1 min-w-[16px] h-4 text-[10px] px-0.5'}`}>
                 {unreadCount}
               </span>
@@ -139,7 +139,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
                 <p className="text-[10px] text-[var(--text-muted)] font-medium mt-1 capitalize">{userData?.role || 'user'}</p>
               </div>
             )}
-            <div className={`rounded-full bg-gradient-to-tr from-[var(--primary)] to-[var(--primary-hover)] text-white flex items-center justify-center font-bold shadow-sm border-2 border-white transition-all
+            <div className={`rounded-full bg-gradient-to-tr from-[var(--primary)] to-[var(--primary-hover)] text-[var(--primary-foreground)] flex items-center justify-center font-bold shadow-sm border-2 border-white transition-all
               ${isScrolled ? 'w-7 h-7 text-xs' : 'w-9 h-9 text-sm'}`}>
               {userData?.name ? userData.name.split(' ').map((n: string) => n[0]).join('').substring(0, 2) : 'G'}
             </div>
@@ -172,8 +172,8 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
       <div className={`fixed inset-y-0 left-0 z-40 w-64 bg-[var(--surface)]/80 backdrop-blur-md border-r border-[var(--border)] transform transition-transform duration-200 ease-in-out md:translate-x-0 overflow-y-auto flex flex-col pt-16 md:pt-0 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="p-6 border-b border-[var(--border)] shrink-0 hidden md:block">
           <div className="flex items-center gap-2 text-[var(--primary)] font-bold text-xl tracking-tight">
-            <div className="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center text-[var(--primary)] shadow-sm">
-              <ClinovaLogo size={20} />
+            <div className="flex items-center justify-center">
+              <ClinovaLogo size={28} variant="colored" />
             </div>
             CLINOVA
           </div>
@@ -230,12 +230,12 @@ function AppContent() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-[var(--bg)] flex flex-col items-center justify-center p-8 text-center selection:bg-[var(--primary)] selection:text-white">
-        <div className="flex flex-col items-center gap-4 animate-pulse">
-          <div className="w-16 h-16 bg-[var(--primary)] text-white rounded-2xl flex items-center justify-center shadow-lg shadow-[var(--primary)]/20">
-            <ClinovaLogo size={32} variant="light" />
+      <div className="min-h-screen bg-[var(--bg)] flex flex-col items-center justify-center p-8 text-center selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
+        <div className="flex flex-col items-center gap-5 animate-pulse">
+          <div className="flex items-center justify-center drop-shadow-lg">
+            <ClinovaLogo size={64} variant="colored" />
           </div>
-          <h2 className="text-lg font-bold text-[var(--text)] tracking-tight">CLINOVA</h2>
+          <h2 className="text-xl font-bold text-[var(--text)] tracking-tight">CLINOVA</h2>
           <p className="text-xs text-[var(--text-muted)] font-medium">Initializing Clinical Intelligence OS...</p>
         </div>
       </div>

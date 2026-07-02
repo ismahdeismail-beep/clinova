@@ -117,7 +117,7 @@ export function InstallPWA() {
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0, opacity: 0, y: 50 }}
             onClick={handleFloatingClick}
-            className="fixed bottom-6 right-6 z-40 bg-[var(--primary)] text-white p-3.5 rounded-full shadow-2xl hover:scale-105 transition-transform flex items-center justify-center border border-white/10 group cursor-pointer"
+            className="fixed bottom-6 right-6 z-40 bg-[var(--primary)] text-[var(--primary-foreground)] p-3.5 rounded-full shadow-2xl hover:scale-105 transition-transform flex items-center justify-center border border-white/10 group cursor-pointer"
             title="Install Clinova OS App"
           >
             <Download className="w-5 h-5 group-hover:animate-bounce" />
@@ -157,7 +157,7 @@ export function InstallPWA() {
                     referrerPolicy="no-referrer"
                     className="relative w-20 h-20 rounded-2xl shadow-xl object-cover border border-white/20"
                   />
-                  <div className="absolute -bottom-1 -right-1 bg-[var(--primary)] text-white p-1 rounded-full border border-[var(--surface)]">
+                  <div className="absolute -bottom-1 -right-1 bg-[var(--primary)] text-[var(--primary-foreground)] p-1 rounded-full border border-[var(--surface)]">
                     <Smartphone className="w-3.5 h-3.5" />
                   </div>
                 </div>
@@ -227,7 +227,7 @@ export function InstallPWA() {
                 <div className="flex flex-col gap-2">
                   <button
                     onClick={handleInstallClick}
-                    className="w-full bg-[var(--primary)] text-white hover:bg-[var(--primary-hover)] font-semibold text-sm py-2.5 px-4 rounded-xl shadow-lg shadow-[var(--primary)]/10 transition-colors flex items-center justify-center gap-2 cursor-pointer"
+                    className="w-full bg-[var(--primary)] text-[var(--primary-foreground)] hover:bg-[var(--primary-hover)] font-semibold text-sm py-2.5 px-4 rounded-xl shadow-lg shadow-[var(--primary)]/10 transition-colors flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <Download className="w-4 h-4" />
                     <span>Install Clinova OS</span>

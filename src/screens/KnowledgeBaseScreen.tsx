@@ -135,7 +135,7 @@ export default function KnowledgeBaseScreen() {
   };
 
   return (
-    <div className="p-6 max-w-5xl mx-auto pb-24 selection:bg-[var(--primary)] selection:text-white">
+    <div className="p-6 max-w-5xl mx-auto pb-24 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
       <div className="mb-8">
         <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-2 tracking-tight">
           Online Reference Books &amp; Exam Prep Suite
@@ -190,14 +190,14 @@ export default function KnowledgeBaseScreen() {
               {isAdmin && (
                 <button
                   onClick={() => setShowAdminAdd(!showAdminAdd)}
-                  className="px-4 py-2.5 rounded-xl text-xs font-semibold bg-purple-500 hover:bg-purple-600 text-white flex items-center justify-center gap-2 shadow-sm transition-all"
+                  className="px-4 py-2.5 rounded-xl text-xs font-semibold bg-[var(--primary)] hover:bg-[var(--primary)] text-[var(--primary-foreground)] flex items-center justify-center gap-2 shadow-sm transition-all"
                 >
                   <FilePlus size={16} /> {showAdminAdd ? 'Cancel Add' : 'Admin: Add Book / URL'}
                 </button>
               )}
               <button
                 onClick={() => setShowUploader(!showUploader)}
-                className="px-4 py-2.5 rounded-xl text-xs font-semibold bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-white flex items-center justify-center gap-2 shadow-sm transition-all"
+                className="px-4 py-2.5 rounded-xl text-xs font-semibold bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-[var(--primary-foreground)] flex items-center justify-center gap-2 shadow-sm transition-all"
               >
                 {showUploader ? <X size={16} /> : <FileUp size={16} />}
                 {showUploader ? 'Close Upload' : 'Upload Notes / PDF'}
@@ -207,8 +207,8 @@ export default function KnowledgeBaseScreen() {
 
           {/* Admin Custom Resource Form */}
           {showAdminAdd && isAdmin && (
-            <form onSubmit={handleAddCustomResource} className="p-6 bg-purple-500/5 border border-purple-500/20 rounded-2xl space-y-4 animate-in fade-in">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-purple-600">
+            <form onSubmit={handleAddCustomResource} className="p-6 bg-[var(--primary-container)] border border-[var(--primary)]/20 rounded-2xl space-y-4 animate-in fade-in">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--primary)]">
                 <Sparkles size={16} /> Admin Repository Management
               </div>
               <p className="text-xs text-[var(--text-muted)]">
@@ -249,7 +249,7 @@ export default function KnowledgeBaseScreen() {
               </div>
               <button
                 type="submit"
-                className="px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold text-xs rounded-xl shadow-sm"
+                className="px-6 py-2 bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-[var(--primary-foreground)] font-semibold text-xs rounded-xl shadow-sm"
               >
                 Add Study Material to Global Library
               </button>
@@ -282,7 +282,7 @@ export default function KnowledgeBaseScreen() {
                     className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4 flex items-start justify-between shadow-sm"
                   >
                     <div className="flex items-start gap-3 min-w-0">
-                      <div className="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center shrink-0">
+                      <div className="w-10 h-10 rounded-xl bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center shrink-0">
                         <FileText size={20} />
                       </div>
                       <div className="min-w-0">
@@ -324,7 +324,7 @@ export default function KnowledgeBaseScreen() {
                           {book.type}
                         </span>
                         {book.isCustom && (
-                          <span className="px-2 py-0.5 text-[10px] font-bold bg-purple-500/10 text-purple-600 rounded">
+                          <span className="px-2 py-0.5 text-[10px] font-bold bg-[var(--primary-container)] text-[var(--primary)] rounded">
                             Admin Added
                           </span>
                         )}
@@ -356,7 +356,7 @@ export default function KnowledgeBaseScreen() {
         <div className="animate-in fade-in slide-in-from-bottom-2 duration-300 space-y-6">
           <div className="bg-[var(--surface)] border border-[var(--border)] rounded-3xl p-8 shadow-sm">
             <div className="flex items-center gap-3 mb-3">
-              <div className="p-3 bg-purple-500/10 text-purple-600 rounded-2xl font-bold">
+              <div className="p-3 bg-[var(--primary-container)] text-[var(--primary)] rounded-2xl font-bold">
                 <BrainCircuit size={24} />
               </div>
               <div>
@@ -437,7 +437,7 @@ export default function KnowledgeBaseScreen() {
                         onClick={() => handleToggleQuestionType(q)}
                         className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all ${
                           questionTypes.includes(q)
-                            ? 'bg-[var(--primary)] text-white border-[var(--primary)]'
+                            ? 'bg-[var(--primary)] text-[var(--primary-foreground)] border-[var(--primary)]'
                             : 'bg-[var(--surface)] text-[var(--text-muted)] border-[var(--border)] hover:text-[var(--text)]'
                         }`}
                       >
@@ -449,9 +449,9 @@ export default function KnowledgeBaseScreen() {
               )}
 
               {/* Step 4: Podcast Audio Option */}
-              <div className="p-5 rounded-2xl bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-pink-500/10 border border-purple-500/20 flex items-center justify-between">
+              <div className="p-5 rounded-2xl bg-gradient-to-r from-[var(--primary)]/10 via-[var(--primary)]/10 to-[var(--primary)]/10 border border-[var(--primary)]/20 flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="p-2.5 bg-purple-500 text-white rounded-xl shadow-sm">
+                  <div className="p-2.5 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-xl shadow-sm">
                     <Headphones size={22} />
                   </div>
                   <div>
@@ -466,7 +466,7 @@ export default function KnowledgeBaseScreen() {
                     onChange={(e) => setIncludePodcast(e.target.checked)}
                     className="sr-only peer"
                   />
-                  <div className="w-11 h-6 bg-gray-300 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600"></div>
+                  <div className="w-11 h-6 bg-gray-300 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[var(--primary)]"></div>
                 </label>
               </div>
 
@@ -475,7 +475,7 @@ export default function KnowledgeBaseScreen() {
                 type="button"
                 onClick={handleGenerate}
                 disabled={!selectedSource || isGenerating}
-                className="w-full py-4 bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-white font-bold text-base rounded-2xl transition-all shadow-lg shadow-[var(--primary)]/25 flex items-center justify-center gap-3 disabled:opacity-50"
+                className="w-full py-4 bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-[var(--primary-foreground)] font-bold text-base rounded-2xl transition-all shadow-lg shadow-[var(--primary)]/25 flex items-center justify-center gap-3 disabled:opacity-50"
               >
                 {isGenerating ? (
                   <>
@@ -510,17 +510,17 @@ export default function KnowledgeBaseScreen() {
 
               {/* Podcast Player Box */}
               {generatedResult.audioUrl && (
-                <div className="mb-6 p-5 rounded-2xl bg-gradient-to-r from-purple-900 text-white flex flex-col sm:flex-row items-center justify-between gap-4 shadow-md">
+                <div className="mb-6 p-5 rounded-2xl bg-gradient-to-r from-[var(--primary)] text-[var(--primary-foreground)] flex flex-col sm:flex-row items-center justify-between gap-4 shadow-md">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-full bg-white text-purple-900 flex items-center justify-center shrink-0 shadow">
+                    <div className="w-12 h-12 rounded-full bg-[var(--primary-foreground)] text-[var(--primary)] flex items-center justify-center shrink-0 shadow">
                       <Volume2 size={24} className="animate-pulse" />
                     </div>
                     <div>
                       <h4 className="text-sm font-bold">AI Study Podcast Audio Overview</h4>
-                      <p className="text-xs text-purple-200">Listening to high-yield clinical breakdown</p>
+                      <p className="text-xs text-[var(--primary-foreground)]/80">Listening to high-yield clinical breakdown</p>
                     </div>
                   </div>
-                  <audio controls className="w-full sm:w-64 h-10 accent-purple-500">
+                  <audio controls className="w-full sm:w-64 h-10 accent-[var(--primary)]">
                     <source src="https://actions.google.com/sounds/v1/ambiences/office_working.ogg" type="audio/ogg" />
                     Your browser does not support audio element.
                   </audio>
@@ -533,8 +533,8 @@ export default function KnowledgeBaseScreen() {
               </div>
 
               {generatedResult.podcastTranscript && (
-                <div className="mt-6 p-5 bg-purple-500/5 rounded-2xl border border-purple-500/20">
-                  <h5 className="text-xs font-bold uppercase tracking-wider text-purple-600 mb-2">
+                <div className="mt-6 p-5 bg-[var(--primary-container)] rounded-2xl border border-[var(--primary)]/20">
+                  <h5 className="text-xs font-bold uppercase tracking-wider text-[var(--primary)] mb-2">
                     🎙️ Podcast AI Transcript Excerpt
                   </h5>
                   <p className="text-xs text-[var(--text-muted)] italic leading-relaxed">

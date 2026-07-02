@@ -439,18 +439,20 @@ export default function PharmacotherapyReviewScreen() {
 
             {/* AI Auto-Fill Options Settings Panel */}
             {['treatment', 'care-plan', 'counselling'].includes(activeTab) && (
-              <div className="bg-[var(--surface-dim)] border border-[var(--border)] rounded-xl p-4 space-y-3 animate-in fade-in duration-300">
-                <div className="flex items-center justify-between border-b border-[var(--border)] pb-2">
+              <div className="bg-[var(--primary-container)]/30 border border-[var(--primary)]/30 rounded-xl p-4 space-y-3 animate-in fade-in duration-300 mt-6">
+                <div className="flex items-center justify-between border-b border-[var(--primary)]/20 pb-2">
                   <div className="flex items-center gap-2">
-                    <BrainCircuit size={18} className="text-[var(--primary)] animate-pulse" />
-                    <span className="text-sm font-semibold text-[var(--text)]">Clinova AI Auto-Fill Settings</span>
+                    <div className="w-8 h-8 rounded-lg bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)]">
+                      <BrainCircuit size={18} className="animate-pulse" />
+                    </div>
+                    <span className="text-sm font-bold text-[var(--primary)]">AI Auto-Fill Options</span>
                   </div>
-                  <span className="text-[10px] font-mono text-[var(--text-muted)] bg-[var(--border)]/40 px-2.5 py-0.5 rounded">
-                    Option-controlled filling
+                  <span className="text-[10px] font-mono text-[var(--primary)] bg-[var(--primary)]/10 px-2.5 py-0.5 rounded border border-[var(--primary)]/20 hidden sm:inline-block">
+                    Option-controlled
                   </span>
                 </div>
-                <p className="text-xs text-[var(--text-muted)]">
-                  Select which sections the AI is allowed to auto-fill or modify when you trigger the suggestions.
+                <p className="text-xs text-[var(--text-muted)] font-medium">
+                  Select which sections the AI is allowed to auto-fill when you trigger the suggestions.
                 </p>
                 <div className="flex flex-wrap gap-x-6 gap-y-2 pt-1">
                   <label className="flex items-center gap-2.5 text-xs font-medium text-[var(--text)] cursor-pointer select-none">
@@ -486,10 +488,66 @@ export default function PharmacotherapyReviewScreen() {
             
             {activeTab === 'admission' && (
               <div className="space-y-6 animate-in fade-in slide-in-from-bottom-2 duration-300">
-                <div className="border-b border-[var(--border)] pb-4 mb-6">
+                <div className="border-b border-[var(--border)] pb-4 mb-6 flex justify-between items-center">
                   <h3 className="text-lg font-semibold text-[var(--text)] flex items-center gap-2">
                     <User size={20} className="text-[var(--primary)]"/> Patient Identification & Admission Details
                   </h3>
+                  
+                  <div className="flex items-center gap-3">
+                    <input 
+                      type="file" 
+                      id="pharmacotherapyFileInput"
+                      onChange={async (e) => {
+                        const file = e.target.files?.[0];
+                        if (!file) return;
+                        setIsGenerating(true);
+                        try {
+                          const formData = new FormData();
+                          formData.append('file', file);
+                          formData.append('extractionType', 'pharmacotherapy');
+                          
+                          const res = await fetch('/api/gemini/extract-file', {
+                            method: 'POST',
+                            body: formData,
+                          });
+                          
+                          if (!res.ok) throw new Error('Extraction failed');
+                          const data = await res.json();
+                          
+                          if (formRef.current) {
+                            const els = formRef.current.elements as any;
+                            if (data.patientName && els.patient_name) els.patient_name.value = data.patientName;
+                            if (data.age && els.patient_age) els.patient_age.value = data.age;
+                            if (data.weight && els.patient_weight) els.patient_weight.value = data.weight;
+                            if (data.height && els.patient_height) els.patient_height.value = data.height;
+                            if (data.chiefComplaint && els.history_pc) els.history_pc.value = data.chiefComplaint;
+                            if (data.pastMedicalHistory && els.history_pmh) els.history_pmh.value = data.pastMedicalHistory;
+                            if (data.diagnosis && els.dx_working) els.dx_working.value = data.diagnosis;
+                            if (data.currentMedications && els.history_meds) els.history_meds.value = data.currentMedications;
+                            if (data.allergies && els.history_allergies) els.history_allergies.value = data.allergies;
+                            handleFormChange();
+                          }
+                          setBannerMessage({ type: 'success', text: 'Data extracted from file successfully.' });
+                        } catch (err: any) {
+                          setBannerMessage({ type: 'error', text: err.message || 'Failed to extract data' });
+                        } finally {
+                          setIsGenerating(false);
+                          if (e.target) e.target.value = '';
+                        }
+                      }}
+                      className="hidden" 
+                      accept="image/*,audio/*,application/pdf"
+                    />
+                    <button 
+                      type="button"
+                      onClick={() => document.getElementById('pharmacotherapyFileInput')?.click()}
+                      disabled={isGenerating}
+                      className="px-3 py-1.5 text-xs font-bold bg-white dark:bg-gray-800 border border-[var(--border)] rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center gap-2 shadow-sm disabled:opacity-50"
+                    >
+                      {isGenerating ? <Loader2 size={14} className="animate-spin" /> : <Sparkles size={14} className="text-[var(--primary)]" />}
+                      {isGenerating ? 'Extracting...' : 'AI Extract from File'}
+                    </button>
+                  </div>
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -718,7 +776,7 @@ export default function PharmacotherapyReviewScreen() {
                     type="button" 
                     onClick={triggerAutofill}
                     disabled={isGenerating}
-                    className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20 disabled:opacity-50"
+                    className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-[var(--primary-foreground)] transition-colors border border-[var(--primary)]/20 disabled:opacity-50"
                   >
                     {isGenerating ? (
                       <>
@@ -782,7 +840,7 @@ export default function PharmacotherapyReviewScreen() {
                     type="button" 
                     onClick={triggerAutofill}
                     disabled={isGenerating}
-                    className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20 disabled:opacity-50"
+                    className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-[var(--primary-foreground)] transition-colors border border-[var(--primary)]/20 disabled:opacity-50"
                   >
                     {isGenerating ? (
                       <>
@@ -848,7 +906,7 @@ export default function PharmacotherapyReviewScreen() {
                     type="button" 
                     onClick={triggerAutofill}
                     disabled={isGenerating}
-                    className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-white transition-colors border border-[var(--primary)]/20 disabled:opacity-50"
+                    className="text-xs bg-[var(--primary-container)] text-[var(--primary)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-2 hover:bg-[var(--primary)] hover:text-[var(--primary-foreground)] transition-colors border border-[var(--primary)]/20 disabled:opacity-50"
                   >
                     {isGenerating ? (
                       <>
@@ -889,7 +947,7 @@ export default function PharmacotherapyReviewScreen() {
                   <button
                     type="button"
                     onClick={handleNextTab}
-                    className="px-5 py-2 bg-[var(--primary)] text-white hover:opacity-95 font-semibold rounded-lg transition-all text-sm flex items-center gap-1.5 cursor-pointer"
+                    className="px-5 py-2 bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-95 font-semibold rounded-lg transition-all text-sm flex items-center gap-1.5 cursor-pointer"
                   >
                     Next Section →
                   </button>
@@ -903,7 +961,7 @@ export default function PharmacotherapyReviewScreen() {
                       });
                       window.scrollTo({ top: 0, behavior: 'smooth' });
                     }}
-                    className="px-6 py-2 bg-[var(--primary)] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2 shadow-sm text-sm cursor-pointer"
+                    className="px-6 py-2 bg-[var(--primary)] text-[var(--primary-foreground)] font-semibold rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2 shadow-sm text-sm cursor-pointer"
                   >
                     <CheckCircle size={16} />
                     Complete Review
@@ -919,7 +977,7 @@ export default function PharmacotherapyReviewScreen() {
       <button
         type="button"
         onClick={() => setIsAssistantOpen(true)}
-        className="fixed bottom-6 right-6 z-50 p-4 bg-[var(--primary)] text-white rounded-full shadow-lg hover:opacity-90 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 font-medium"
+        className="fixed bottom-6 right-6 z-50 p-4 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-full shadow-lg hover:opacity-90 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 font-medium"
       >
         <Sparkles size={20} className="animate-pulse" />
         <span className="hidden sm:inline text-sm">Clinical AI Assistant</span>
@@ -962,7 +1020,7 @@ export default function PharmacotherapyReviewScreen() {
                 >
                   <div className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-xs sm:text-sm leading-relaxed ${
                     msg.role === 'user' 
-                      ? 'bg-[var(--primary)] text-white' 
+                      ? 'bg-[var(--primary)] text-[var(--primary-foreground)]' 
                       : 'bg-[var(--surface-dim)] text-[var(--text)] border border-[var(--border)]'
                   }`}>
                     <div className="whitespace-pre-line">
@@ -1023,7 +1081,7 @@ export default function PharmacotherapyReviewScreen() {
                 type="button"
                 onClick={sendAssistantMessage}
                 disabled={!assistantMessage.trim() || isAssistantThinking}
-                className="p-2 bg-[var(--primary)] text-white rounded-lg hover:opacity-90 disabled:opacity-50 transition-all shrink-0"
+                className="p-2 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-lg hover:opacity-90 disabled:opacity-50 transition-all shrink-0"
               >
                 <Send size={15} />
               </button>

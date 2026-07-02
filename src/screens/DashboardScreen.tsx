@@ -42,37 +42,37 @@ export default function DashboardScreen() {
   const isAdmin = userData?.role === "admin";
 
   return (
-    <div className="p-6 max-w-6xl mx-auto space-y-8 pb-24">
+    <div className="p-4 sm:p-6 md:p-8 max-w-6xl mx-auto space-y-6 sm:space-y-8 pb-24">
       {/* Welcome Banner */}
-      <div className="bg-gradient-to-r from-[var(--primary)] to-[var(--primary-hover)] rounded-2xl p-8 text-white shadow-sm relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+      <div className="bg-gradient-to-r from-[var(--primary)] to-[var(--primary-hover)] rounded-2xl p-6 sm:p-8 text-[var(--primary-foreground)] shadow-sm relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--primary-foreground)]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
         <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
           <div className="flex flex-col sm:flex-row items-start gap-4 flex-1">
-            <div className="w-14 h-14 rounded-2xl bg-white/15 flex items-center justify-center text-white shrink-0 shadow-inner backdrop-blur-md">
+            <div className="w-14 h-14 rounded-2xl bg-[var(--primary-foreground)]/15 flex items-center justify-center text-[var(--primary-foreground)] shrink-0 shadow-inner backdrop-blur-md">
               <ClinovaLogo size={32} variant="light" />
             </div>
             <div>
               <h1 className="text-3xl font-bold mb-2 tracking-tight">
                 Clinova OS
               </h1>
-              <p className="text-white/85 max-w-lg text-sm leading-relaxed">
+              <p className="text-[var(--primary-foreground)]/85 max-w-lg text-sm leading-relaxed">
                 {isAdmin
                   ? "Admin Repository Management: Add authoritative books, formularies, and reference URLs accessible to the entire learning community."
                   : "Your automated AI partner for pharmacotherapy reviews, instant answers from KDI and Medscape, and converting study notes into exam questions &amp; podcasts."}
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full lg:w-auto">
             <Link
               to="/knowledge"
-              className="flex items-center gap-2 px-5 py-3 bg-white/10 hover:bg-white/20 text-white rounded-xl font-semibold backdrop-blur-sm transition-all text-sm shrink-0 w-max"
+              className="flex items-center justify-center gap-2 px-5 py-3 bg-[var(--primary-foreground)]/10 hover:bg-[var(--primary-foreground)]/20 text-[var(--primary-foreground)] rounded-xl font-semibold backdrop-blur-sm transition-all text-sm shrink-0 w-full sm:w-max"
             >
               <BookOpen size={18} />
               Online Books Hub
             </Link>
             <Link
               to="/assistant"
-              className="flex items-center gap-2 px-5 py-3 bg-white text-[var(--primary)] rounded-xl font-semibold hover:shadow-md transition-shadow text-sm shrink-0 w-max"
+              className="flex items-center justify-center gap-2 px-5 py-3 bg-[var(--primary-foreground)] text-[var(--primary)] rounded-xl font-semibold hover:shadow-md transition-shadow text-sm shrink-0 w-full sm:w-max"
             >
               <Bot size={18} />
               Auto AI Review Form
@@ -120,7 +120,7 @@ export default function DashboardScreen() {
                     to="/review"
                     className="flex flex-col items-center justify-center p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
                   >
-                    <div className="w-14 h-14 rounded-full bg-purple-500/10 text-purple-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <div className="w-14 h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                       <ClipboardList size={28} />
                     </div>
                     <span className="text-sm font-bold text-[var(--text)]">
@@ -132,7 +132,7 @@ export default function DashboardScreen() {
                     to="/knowledge"
                     className="flex flex-col items-center justify-center p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
                   >
-                    <div className="w-14 h-14 rounded-full bg-emerald-500/10 text-emerald-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <div className="w-14 h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                       <BookOpen size={28} />
                     </div>
                     <span className="text-sm font-bold text-[var(--text)]">
@@ -144,7 +144,7 @@ export default function DashboardScreen() {
                     to="/knowledge"
                     className="flex flex-col items-center justify-center p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
                   >
-                    <div className="w-14 h-14 rounded-full bg-blue-500/10 text-blue-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <div className="w-14 h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                       <GraduationCap size={28} />
                     </div>
                     <span className="text-sm font-bold text-[var(--text)]">
@@ -156,7 +156,7 @@ export default function DashboardScreen() {
                     to="/assistant"
                     className="flex flex-col items-center justify-center p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
                   >
-                    <div className="w-14 h-14 rounded-full bg-amber-500/10 text-amber-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <div className="w-14 h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                       <Bot size={28} />
                     </div>
                     <span className="text-sm font-bold text-[var(--text)]">
@@ -196,8 +196,8 @@ export default function DashboardScreen() {
                     </div>
                   </div>
                   <div className="p-4 flex items-start gap-4 hover:bg-[var(--surface-dim)] transition-colors cursor-pointer">
-                    <div className="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center shrink-0">
-                      <Sparkles size={18} className="text-purple-600" />
+                    <div className="w-10 h-10 rounded-xl bg-[var(--primary-container)] flex items-center justify-center shrink-0">
+                      <Sparkles size={18} className="text-[var(--primary)]" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-bold text-[var(--text)] truncate">
@@ -232,7 +232,7 @@ export default function DashboardScreen() {
                   >
                     <FileText
                       size={18}
-                      className="text-blue-500 shrink-0"
+                      className="text-[var(--primary)] shrink-0"
                     />
                     <div className="min-w-0">
                       <p className="text-sm font-bold text-[var(--text)] truncate">
@@ -249,7 +249,7 @@ export default function DashboardScreen() {
                   >
                     <BookOpen
                       size={18}
-                      className="text-emerald-500 shrink-0"
+                      className="text-[var(--primary)] shrink-0"
                     />
                     <div className="min-w-0">
                       <p className="text-sm font-bold text-[var(--text)] truncate">
@@ -302,7 +302,7 @@ export default function DashboardScreen() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Admin Specific Summary Cards */}
           <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] shadow-sm flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-blue-500/10 text-blue-600 flex items-center justify-center">
+            <div className="w-12 h-12 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center">
               <Users size={24} />
             </div>
             <div>
@@ -312,7 +312,7 @@ export default function DashboardScreen() {
           </div>
 
           <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] shadow-sm flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-green-500/10 text-green-600 flex items-center justify-center">
+            <div className="w-12 h-12 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center">
               <Activity size={24} />
             </div>
             <div>

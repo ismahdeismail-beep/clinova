@@ -218,12 +218,12 @@ export function CommandPalette() {
                     onMouseEnter={() => setSelectedIndex(index)}
                     className={`w-full flex items-center justify-between px-3 py-3 rounded-lg text-left transition-colors ${
                       isSelected 
-                        ? 'bg-[var(--primary)] text-white' 
+                        ? 'bg-[var(--primary)] text-[var(--primary-foreground)]' 
                         : 'text-[var(--text)] hover:bg-[var(--surface-dim)]'
                     }`}
                   >
                     <div className="flex items-center">
-                      <Icon size={18} className={`mr-3 ${isSelected ? 'text-white' : 'text-[var(--text-muted)]'}`} />
+                      <Icon size={18} className={`mr-3 ${isSelected ? 'text-[var(--primary-foreground)]' : 'text-[var(--text-muted)]'}`} />
                       <span className="font-medium">{action.label}</span>
                     </div>
                     {renderShortcut(action.shortcut)}

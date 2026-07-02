@@ -9,7 +9,7 @@ export default function SettingsScreen() {
   const [activeTab, setActiveTab] = useState<'profile' | 'api'>('profile');
 
   return (
-    <div className="p-6 max-w-5xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-white">
+    <div className="p-6 max-w-5xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-[var(--text)] mb-2 tracking-tight">Settings & Configuration</h1>
         <p className="text-[var(--text-muted)] text-sm">Manage your profile, credentials, and app intelligence settings.</p>
@@ -22,7 +22,7 @@ export default function SettingsScreen() {
             onClick={() => setActiveTab('profile')}
             className={`w-full text-left px-4 py-3 rounded-xl text-sm transition-all flex items-center gap-2.5 font-medium ${
               activeTab === 'profile' 
-                ? 'bg-[var(--primary)] text-white shadow-sm' 
+                ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm' 
                 : 'bg-[var(--surface)] hover:bg-[var(--surface-dim)] text-[var(--text)] border border-[var(--border)]'
             }`}
           >
@@ -34,7 +34,7 @@ export default function SettingsScreen() {
             onClick={() => setActiveTab('api')}
             className={`w-full text-left px-4 py-3 rounded-xl text-sm transition-all flex items-center gap-2.5 font-medium ${
               activeTab === 'api' 
-                ? 'bg-[var(--primary)] text-white shadow-sm' 
+                ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm' 
                 : 'bg-[var(--surface)] hover:bg-[var(--surface-dim)] text-[var(--text)] border border-[var(--border)]'
             }`}
           >
@@ -98,7 +98,7 @@ export default function SettingsScreen() {
                         : 'border-[var(--border)] bg-[var(--surface-dim)]/30 hover:bg-[var(--surface-dim)]/50 text-[var(--text-muted)] hover:text-[var(--text)]'
                     }`}
                   >
-                    <div className={`p-2 rounded-lg ${theme === 'light' ? 'bg-[var(--primary)] text-white' : 'bg-[var(--surface-dim)] text-[var(--text-muted)]'}`}>
+                    <div className={`p-2 rounded-lg ${theme === 'light' ? 'bg-[var(--primary)] text-[var(--primary-foreground)]' : 'bg-[var(--surface-dim)] text-[var(--text-muted)]'}`}>
                       <Sun size={18} />
                     </div>
                     <div>
@@ -116,7 +116,7 @@ export default function SettingsScreen() {
                         : 'border-[var(--border)] bg-[var(--surface-dim)]/30 hover:bg-[var(--surface-dim)]/50 text-[var(--text-muted)] hover:text-[var(--text)]'
                     }`}
                   >
-                    <div className={`p-2 rounded-lg ${theme === 'dark' ? 'bg-[var(--primary)] text-white' : 'bg-[var(--surface-dim)] text-[var(--text-muted)]'}`}>
+                    <div className={`p-2 rounded-lg ${theme === 'dark' ? 'bg-[var(--primary)] text-[var(--primary-foreground)]' : 'bg-[var(--surface-dim)] text-[var(--text-muted)]'}`}>
                       <Moon size={18} />
                     </div>
                     <div>

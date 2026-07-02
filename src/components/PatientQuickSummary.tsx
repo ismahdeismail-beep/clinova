@@ -470,7 +470,7 @@ export function PatientQuickSummary({
                   </div>
                   <button
                     type="submit"
-                    className="px-4 py-1.5 bg-[var(--primary)] text-white text-sm font-medium rounded-md hover:opacity-90 transition-opacity"
+                    className="px-4 py-1.5 bg-[var(--primary)] text-[var(--primary-foreground)] text-sm font-medium rounded-md hover:opacity-90 transition-opacity"
                   >
                     Schedule
                   </button>
@@ -619,7 +619,7 @@ export function PatientQuickSummary({
                 </button>
                 <button
                   type="submit"
-                  className="px-3 py-1.5 bg-[var(--primary)] text-white text-xs font-medium rounded-md hover:opacity-90 transition-opacity"
+                  className="px-3 py-1.5 bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-medium rounded-md hover:opacity-90 transition-opacity"
                 >
                   Save Vitals
                 </button>
@@ -781,13 +781,13 @@ export function PatientQuickSummary({
               <div className="flex bg-[var(--surface-dim)] rounded-md border border-[var(--border)] overflow-hidden">
                 <button
                   onClick={() => setTrendView("weekly")}
-                  className={`px-2 py-0.5 text-[10px] font-medium transition-colors ${trendView === "weekly" ? "bg-[var(--primary)] text-white" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
+                  className={`px-2 py-0.5 text-[10px] font-medium transition-colors ${trendView === "weekly" ? "bg-[var(--primary)] text-[var(--primary-foreground)]" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
                 >
                   Weekly
                 </button>
                 <button
                   onClick={() => setTrendView("monthly")}
-                  className={`px-2 py-0.5 text-[10px] font-medium transition-colors ${trendView === "monthly" ? "bg-[var(--primary)] text-white" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
+                  className={`px-2 py-0.5 text-[10px] font-medium transition-colors ${trendView === "monthly" ? "bg-[var(--primary)] text-[var(--primary-foreground)]" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
                 >
                   Monthly
                 </button>
@@ -798,25 +798,25 @@ export function PatientQuickSummary({
               <div className="flex bg-[var(--surface)] p-1 rounded-lg mb-4 border border-[var(--border)]">
                 <button
                   onClick={() => setActiveChart("bp")}
-                  className={`flex-1 py-1 text-xs font-medium rounded-md transition-colors ${activeChart === "bp" ? "bg-[var(--primary)] text-white" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
+                  className={`flex-1 py-1 text-xs font-medium rounded-md transition-colors ${activeChart === "bp" ? "bg-[var(--primary)] text-[var(--primary-foreground)]" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
                 >
                   BP
                 </button>
                 <button
                   onClick={() => setActiveChart("hr")}
-                  className={`flex-1 py-1 text-xs font-medium rounded-md transition-colors ${activeChart === "hr" ? "bg-[var(--primary)] text-white" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
+                  className={`flex-1 py-1 text-xs font-medium rounded-md transition-colors ${activeChart === "hr" ? "bg-[var(--primary)] text-[var(--primary-foreground)]" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
                 >
                   HR
                 </button>
                 <button
                   onClick={() => setActiveChart("temp")}
-                  className={`flex-1 py-1 text-xs font-medium rounded-md transition-colors ${activeChart === "temp" ? "bg-[var(--primary)] text-white" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
+                  className={`flex-1 py-1 text-xs font-medium rounded-md transition-colors ${activeChart === "temp" ? "bg-[var(--primary)] text-[var(--primary-foreground)]" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
                 >
                   Temp
                 </button>
                 <button
                   onClick={() => setActiveChart("spo2")}
-                  className={`flex-1 py-1 text-xs font-medium rounded-md transition-colors ${activeChart === "spo2" ? "bg-[var(--primary)] text-white" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
+                  className={`flex-1 py-1 text-xs font-medium rounded-md transition-colors ${activeChart === "spo2" ? "bg-[var(--primary)] text-[var(--primary-foreground)]" : "text-[var(--text-muted)] hover:text-[var(--text)]"}`}
                 >
                   SpO2
                 </button>
@@ -951,7 +951,7 @@ export function PatientQuickSummary({
               <button
                 type="submit"
                 disabled={!newNote.trim()}
-                className="bg-[var(--primary)] text-white p-1.5 rounded-lg disabled:opacity-50 transition-opacity"
+                className="bg-[var(--primary)] text-[var(--primary-foreground)] p-1.5 rounded-lg disabled:opacity-50 transition-opacity"
               >
                 <Plus size={20} />
               </button>
@@ -961,7 +961,7 @@ export function PatientQuickSummary({
       </div>
 
       <div className="p-4 border-t border-[var(--border)] bg-[var(--surface-dim)] rounded-b-xl">
-        <button className="w-full py-2.5 bg-[var(--primary)] text-white rounded-lg font-medium text-sm hover:opacity-90 transition-opacity">
+        <button className="w-full py-2.5 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-lg font-medium text-sm hover:opacity-90 transition-opacity">
           Open Full Clinical Profile
         </button>
       </div>

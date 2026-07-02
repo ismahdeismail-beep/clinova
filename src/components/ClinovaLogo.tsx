@@ -19,10 +19,10 @@ function ClinovaLogo({ size = 24, variant = 'default' }: { size?: number; varian
       id="clinova-logo-svg"
     >
       <defs>
-        {/* Modern health-tech gradient from primary (blue/cyan) to success (emerald/mint) */}
+        {/* Modern health-tech gradient from primary (blue/cyan) to primary-hover */}
         <linearGradient id="clinova-grad" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stopColor="var(--primary)" />
-          <stop offset="100%" stopColor="var(--success)" />
+          <stop offset="100%" stopColor="var(--primary-hover)" />
         </linearGradient>
       </defs>
 

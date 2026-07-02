@@ -70,15 +70,15 @@ export default function LoginScreen() {
   };
 
   return (
-    <div className="min-h-screen bg-[var(--bg)] flex flex-col items-center justify-center p-4 selection:bg-[var(--primary)] selection:text-white">
+    <div className="min-h-screen bg-[var(--bg)] flex flex-col items-center justify-center p-4 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
       <div className="w-full max-w-md bg-[var(--surface)] border border-[var(--border)] rounded-3xl shadow-xl overflow-hidden animate-in fade-in zoom-in-95 duration-300">
         
         {/* Logo and Greeting */}
-        <div className="p-8 pb-4 text-center bg-gradient-to-b from-[var(--primary-container)]/30 to-transparent">
-          <div className="w-14 h-14 bg-[var(--primary)] text-white rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-md shadow-[var(--primary)]/20">
-            <ClinovaLogo size={28} variant="light" />
+        <div className="p-6 sm:p-8 pb-4 text-center bg-gradient-to-b from-[var(--primary-container)]/30 to-transparent">
+          <div className="flex justify-center mb-4 drop-shadow-md">
+            <ClinovaLogo size={56} variant="colored" />
           </div>
-          <h1 className="text-xl font-bold text-[var(--text)] tracking-tight">
+          <h1 className="text-2xl font-bold text-[var(--text)] tracking-tight">
             {isSignUp ? 'Create Account' : 'Welcome to Clinova'}
           </h1>
           <p className="text-xs text-[var(--text-muted)] mt-1">
@@ -86,7 +86,7 @@ export default function LoginScreen() {
           </p>
         </div>
 
-        <div className="px-8 pb-8 pt-2">
+        <div className="px-6 sm:px-8 pb-6 sm:pb-8 pt-2">
           {errorMsg && (
             <div className="mb-4 p-3.5 bg-red-500/10 border border-red-500/20 rounded-xl flex items-start gap-2 text-xs text-red-700 dark:text-red-400">
               <AlertCircle size={16} className="shrink-0 mt-0.5" />
@@ -145,7 +145,7 @@ export default function LoginScreen() {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full py-2.5 bg-[var(--primary)] text-white hover:opacity-95 font-semibold text-xs sm:text-sm rounded-xl transition-all shadow-md flex items-center justify-center gap-2 disabled:opacity-50 cursor-pointer"
+              className="w-full py-2.5 bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-95 font-semibold text-xs sm:text-sm rounded-xl transition-all shadow-md flex items-center justify-center gap-2 disabled:opacity-50 cursor-pointer"
             >
               {isLoading ? (
                 <Loader2 size={16} className="animate-spin" />
@@ -210,10 +210,10 @@ export default function LoginScreen() {
                 navigate('/', { replace: true });
               }}
               disabled={isLoading}
-              className="py-2.5 px-3 bg-gradient-to-b from-purple-500/10 to-purple-500/5 hover:from-purple-500/20 hover:to-purple-500/10 border border-purple-500/20 text-purple-700 dark:text-purple-300 font-semibold text-xs rounded-xl transition-all shadow-sm flex flex-col items-center justify-center gap-1 cursor-pointer"
+              className="py-2.5 px-3 bg-gradient-to-b from-[var(--primary-container)] to-[var(--primary-container)]/50 hover:from-[var(--primary-container)] hover:to-[var(--primary-container)] border border-[var(--primary)]/20 text-[var(--text)]  font-semibold text-xs rounded-xl transition-all shadow-sm flex flex-col items-center justify-center gap-1 cursor-pointer"
             >
               <span className="font-bold">Admin Clinician</span>
-              <span className="text-[9px] text-purple-600/70 dark:text-purple-400/70 font-normal">Full privileges</span>
+              <span className="text-[9px] text-[var(--text-muted)]  font-normal">Full privileges</span>
             </button>
             <button
               onClick={async () => {
@@ -222,10 +222,10 @@ export default function LoginScreen() {
                 navigate('/', { replace: true });
               }}
               disabled={isLoading}
-              className="py-2.5 px-3 bg-gradient-to-b from-blue-500/10 to-blue-500/5 hover:from-blue-500/20 hover:to-blue-500/10 border border-blue-500/20 text-blue-700 dark:text-blue-300 font-semibold text-xs rounded-xl transition-all shadow-sm flex flex-col items-center justify-center gap-1 cursor-pointer"
+              className="py-2.5 px-3 bg-gradient-to-b from-[var(--surface-dim)] to-[var(--surface-dim)]/50 hover:from-[var(--surface-dim)] hover:to-[var(--surface-dim)] border border-[var(--border)] text-[var(--text)]  font-semibold text-xs rounded-xl transition-all shadow-sm flex flex-col items-center justify-center gap-1 cursor-pointer"
             >
               <span className="font-bold">Clinical Assistant</span>
-              <span className="text-[9px] text-blue-600/70 dark:text-blue-400/70 font-normal">Standard review</span>
+              <span className="text-[9px] text-[var(--text-muted)]  font-normal">Standard review</span>
             </button>
           </div>
 
@@ -238,7 +238,7 @@ export default function LoginScreen() {
 
         {/* Footer */}
         <div className="px-8 py-3.5 bg-[var(--surface-dim)]/50 border-t border-[var(--border)] text-center text-[10px] text-[var(--text-muted)] flex items-center justify-center gap-1.5">
-          <Shield size={12} className="text-emerald-500 shrink-0" /> Secure clinical &amp; research hub.
+          <Shield size={12} className="text-[var(--primary)] shrink-0" /> Secure clinical &amp; research hub.
         </div>
       </div>
     </div>

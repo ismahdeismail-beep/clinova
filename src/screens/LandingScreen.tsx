@@ -11,37 +11,37 @@ export default function LandingScreen() {
   const features = [
     {
       icon: Bot,
-      color: "text-purple-500 bg-purple-500/10",
+      color: "text-[var(--primary)] bg-[var(--primary-container)]",
       title: "AI Review Assistant",
       description: "Automated clinical partner to audit regimens and suggest evidence-based optimizations."
     },
     {
       icon: BookOpen,
-      color: "text-emerald-500 bg-emerald-500/10",
+      color: "text-[var(--primary)] bg-[var(--primary-container)]",
       title: "Clinical Library",
       description: "Instant answers cited directly from KDI, Medscape, and your uploaded notes."
     },
     {
       icon: GraduationCap,
-      color: "text-blue-500 bg-blue-500/10",
+      color: "text-[var(--primary)] bg-[var(--primary-container)]",
       title: "Study Suite",
       description: "Instantly convert notes into structured summaries, MCQs, and Podcast overviews."
     },
     {
       icon: FileUp,
-      color: "text-amber-500 bg-amber-500/10",
+      color: "text-[var(--primary)] bg-[var(--primary-container)]",
       title: "Smart Uploads",
       description: "Upload PDFs and images for personalized AI summarization and organization."
     }
   ];
 
   return (
-    <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] flex flex-col selection:bg-[var(--primary)] selection:text-white">
+    <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] flex flex-col selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
       {/* Top Navbar */}
       <header className="sticky top-0 z-50 bg-[var(--surface)]/80 backdrop-blur-md border-b border-[var(--border)] px-6 py-4 flex items-center justify-between max-w-7xl w-full mx-auto">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-[var(--primary)] shadow-sm">
-            <ClinovaLogo size={24} />
+          <div className="flex items-center justify-center">
+            <ClinovaLogo size={32} variant="colored" />
           </div>
           <div>
             <span className="font-bold text-xl tracking-tight text-[var(--text)]">CLINOVA</span>
@@ -52,7 +52,7 @@ export default function LandingScreen() {
         <div className="flex items-center gap-3">
           <Link
             to="/login"
-            className="px-5 py-2.5 rounded-xl bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-white font-medium text-sm transition-all shadow-sm shadow-[var(--primary)]/20 flex items-center gap-2 active:scale-95"
+            className="px-5 py-2.5 rounded-xl bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-[var(--primary-foreground)] font-medium text-sm transition-all shadow-sm shadow-[var(--primary)]/20 flex items-center gap-2 active:scale-95"
           >
             Sign In
             <ArrowRight size={16} />
@@ -82,7 +82,7 @@ export default function LandingScreen() {
         <div className="flex flex-col sm:flex-row items-center gap-4 w-full max-w-md justify-center">
           <button
             onClick={() => navigate('/login')}
-            className="w-full sm:w-auto px-8 py-4 bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-white text-base font-semibold rounded-2xl shadow-lg shadow-[var(--primary)]/25 flex items-center justify-center gap-3 transition-all active:scale-98"
+            className="w-full sm:w-auto px-8 py-4 bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-[var(--primary-foreground)] text-base font-semibold rounded-2xl shadow-lg shadow-[var(--primary)]/25 flex items-center justify-center gap-3 transition-all active:scale-98"
           >
             Get Started
             <ArrowRight size={18} />

@@ -601,7 +601,7 @@ export default function ClinicalCasesScreen() {
   const progressPercent = totalCasesCount > 0 ? Math.round((masteredCount / totalCasesCount) * 100) : 0;
 
   return (
-    <div className="p-6 max-w-7xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-white">
+    <div className="p-6 max-w-7xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div>
@@ -610,7 +610,7 @@ export default function ClinicalCasesScreen() {
         </div>
         <button 
           onClick={() => setShowNewModal(true)}
-          className="px-4 py-2.5 bg-[var(--primary)] text-white rounded-xl font-semibold text-sm flex items-center gap-2 hover:opacity-95 transition-all shadow-sm cursor-pointer"
+          className="px-4 py-2.5 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-xl font-semibold text-sm flex items-center gap-2 hover:opacity-95 transition-all shadow-sm cursor-pointer"
         >
           <Plus size={18} />
           Create Case Study
@@ -807,7 +807,7 @@ export default function ClinicalCasesScreen() {
                 <button
                   onClick={() => extractAICases(extractionTopic, extractionBook)}
                   disabled={isExtracting}
-                  className="w-full py-1.5 bg-[var(--primary)] text-white text-xs font-bold rounded-lg hover:opacity-95 transition-all flex items-center justify-center gap-1 shadow-sm cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full py-1.5 bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold rounded-lg hover:opacity-95 transition-all flex items-center justify-center gap-1 shadow-sm cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isExtracting ? (
                     <>
@@ -859,13 +859,13 @@ export default function ClinicalCasesScreen() {
                     onClick={() => handleSelectCase(item)}
                     className={`p-4 rounded-xl border transition-all cursor-pointer text-left space-y-3 group ${
                       isSelected 
-                        ? 'bg-[var(--primary)] text-white border-transparent shadow-md' 
+                        ? 'bg-[var(--primary)] text-[var(--primary-foreground)] border-transparent shadow-md' 
                         : 'bg-[var(--surface)] border-[var(--border)] hover:border-[var(--primary)] text-[var(--text)]'
                     }`}
                   >
                     <div className="flex justify-between items-start gap-2">
                       <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold tracking-wider border ${
-                        isSelected ? 'bg-white/20 text-white border-white/10' : getDifficultyColor(item.difficulty)
+                        isSelected ? 'bg-[var(--primary-foreground)]/20 text-[var(--primary-foreground)] border-[var(--primary-foreground)]/10' : getDifficultyColor(item.difficulty)
                       }`}>
                         {item.difficulty}
                       </span>
@@ -873,19 +873,19 @@ export default function ClinicalCasesScreen() {
                       <div className="flex items-center gap-1.5">
                         {isMastered ? (
                           <span className={`px-2 py-0.5 rounded-full text-[9px] font-bold flex items-center gap-1 ${
-                            isSelected ? 'bg-white/25 text-white' : 'bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-400'
+                            isSelected ? 'bg-[var(--primary-foreground)]/25 text-[var(--primary-foreground)]' : 'bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-400'
                           }`}>
                             ✓ Mastered
                           </span>
                         ) : isRevealed ? (
                           <span className={`px-2 py-0.5 rounded-full text-[9px] font-bold flex items-center gap-1 ${
-                            isSelected ? 'bg-white/20 text-white' : 'bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-400'
+                            isSelected ? 'bg-[var(--primary-foreground)]/20 text-[var(--primary-foreground)]' : 'bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-400'
                           }`}>
                             Attempted
                           </span>
                         ) : (
                           <span className={`px-2 py-0.5 rounded-full text-[9px] font-bold ${
-                            isSelected ? 'bg-white/10 text-white/80' : 'bg-gray-100 text-gray-400 dark:bg-gray-800 dark:text-gray-500'
+                            isSelected ? 'bg-[var(--primary-foreground)]/10 text-[var(--primary-foreground)]/80' : 'bg-gray-100 text-gray-400 dark:bg-gray-800 dark:text-gray-500'
                           }`}>
                             Unopened
                           </span>
@@ -895,13 +895,13 @@ export default function ClinicalCasesScreen() {
 
                     <div>
                       <h4 className="font-bold text-sm tracking-tight leading-tight group-hover:underline line-clamp-2">{item.title}</h4>
-                      <p className={`text-xs mt-1 line-clamp-2 ${isSelected ? 'text-white/80' : 'text-[var(--text-muted)]'}`}>
+                      <p className={`text-xs mt-1 line-clamp-2 ${isSelected ? 'text-[var(--primary-foreground)]/80' : 'text-[var(--text-muted)]'}`}>
                         {item.scenario}
                       </p>
                     </div>
 
                     <div className="flex justify-between items-center text-[10px] pt-2 border-t border-dashed border-[var(--border)] group-hover:border-transparent">
-                      <span className={isSelected ? 'text-white/80' : 'text-[var(--text-muted)]'}>
+                      <span className={isSelected ? 'text-[var(--primary-foreground)]/80' : 'text-[var(--text-muted)]'}>
                         {isCurated ? '📚 Curated Textbook' : 
                          item.createdBy === 'ai-extracted' ? `🤖 AI Extracted` : 
                          item.createdBy === 'saved' ? `💾 Saved Portfolio` :
@@ -925,7 +925,7 @@ export default function ClinicalCasesScreen() {
                         <button 
                           onClick={(e) => handleDeleteCase(item.id, e)}
                           title="Delete case"
-                          className={`p-1 rounded hover:bg-black/10 transition-colors ${isSelected ? 'text-white' : 'text-red-500'}`}
+                          className={`p-1 rounded hover:bg-black/10 transition-colors ${isSelected ? 'text-[var(--primary-foreground)]' : 'text-red-500'}`}
                         >
                           <Trash2 size={13} />
                         </button>
@@ -1049,7 +1049,7 @@ export default function ClinicalCasesScreen() {
                     <div className="flex justify-end pt-4">
                       <button 
                         onClick={() => setSubTab('reflect')}
-                        className="px-5 py-3 bg-[var(--primary)] text-white rounded-xl font-bold text-sm flex items-center gap-2 hover:opacity-95 transition-all shadow-md cursor-pointer"
+                        className="px-5 py-3 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-xl font-bold text-sm flex items-center gap-2 hover:opacity-95 transition-all shadow-md cursor-pointer"
                       >
                         Start Diagnostic Intervention
                         <ArrowRight size={16} />
@@ -1090,7 +1090,7 @@ export default function ClinicalCasesScreen() {
                       </button>
                       <button 
                         onClick={() => handleRevealGuidelines(selectedCase.id)}
-                        className="px-5 py-3 bg-gradient-to-r from-[var(--primary)] to-indigo-600 text-white rounded-xl font-bold text-sm flex items-center gap-2 hover:opacity-95 transition-all shadow-md cursor-pointer"
+                        className="px-5 py-3 bg-gradient-to-r from-[var(--primary)] to-indigo-600 text-[var(--primary-foreground)] rounded-xl font-bold text-sm flex items-center gap-2 hover:opacity-95 transition-all shadow-md cursor-pointer"
                       >
                         Reveal Textbook Guidelines
                         <ArrowRight size={16} />
@@ -1281,7 +1281,7 @@ export default function ClinicalCasesScreen() {
                 <button 
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-4 py-2.5 bg-[var(--primary)] text-white font-semibold text-sm rounded-xl hover:opacity-95 transition-all flex items-center gap-2 cursor-pointer"
+                  className="px-4 py-2.5 bg-[var(--primary)] text-[var(--primary-foreground)] font-semibold text-sm rounded-xl hover:opacity-95 transition-all flex items-center gap-2 cursor-pointer"
                 >
                   {isSubmitting ? <Loader2 size={16} className="animate-spin" /> : <BookOpen size={16} />}
                   Publish Case Study

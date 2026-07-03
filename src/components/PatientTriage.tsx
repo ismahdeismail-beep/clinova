@@ -9,6 +9,7 @@ import {
   HeartPulse,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { getPatientInitials } from "../lib/patientUtils";
 
 interface TriagePatient {
   id: string;
@@ -23,7 +24,7 @@ interface TriagePatient {
 const MOCK_TRIAGE_PATIENTS: TriagePatient[] = [
   {
     id: "1",
-    name: "James Kamau",
+    name: "J. K.",
     ward: "Medical Ward A",
     condition: "Hypertension",
     vitals: { hr: 88, spo2: 96, bp: "140/90", temp: 37.2 },
@@ -32,7 +33,7 @@ const MOCK_TRIAGE_PATIENTS: TriagePatient[] = [
   },
   {
     id: "3",
-    name: "Samuel Ochieng",
+    name: "S. O.",
     ward: "ICU",
     condition: "Sepsis Suspected",
     vitals: { hr: 112, spo2: 88, bp: "85/55", temp: 38.6 },
@@ -41,7 +42,7 @@ const MOCK_TRIAGE_PATIENTS: TriagePatient[] = [
   },
   {
     id: "4",
-    name: "Aisha Hassan",
+    name: "A. H.",
     ward: "Surgical Ward",
     condition: "Post-op Recovery",
     vitals: { hr: 82, spo2: 98, bp: "115/75", temp: 37.0 },
@@ -50,7 +51,7 @@ const MOCK_TRIAGE_PATIENTS: TriagePatient[] = [
   },
   {
     id: "6",
-    name: "Mary Njeri",
+    name: "M. N.",
     ward: "Emergency",
     condition: "Asthma Exacerbation",
     vitals: { hr: 105, spo2: 91, bp: "130/80", temp: 36.8 },
@@ -59,7 +60,7 @@ const MOCK_TRIAGE_PATIENTS: TriagePatient[] = [
   },
   {
     id: "5",
-    name: "David Mutua",
+    name: "D. M.",
     ward: "Medical Ward B",
     condition: "Diabetes Type II",
     vitals: { hr: 70, spo2: 95, bp: "135/85", temp: 36.5 },
@@ -174,7 +175,7 @@ export function PatientTriage() {
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-2 mb-1">
                 <p className="text-sm font-bold text-[var(--text)] truncate">
-                  {patient.name}
+                  {getPatientInitials(patient.name)}
                 </p>
                 {!isAnalyzing && (
                   <span

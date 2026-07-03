@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { getPatientInitials } from "../lib/patientUtils";
 import {
   Activity,
   Thermometer,
@@ -290,7 +291,7 @@ export function PatientQuickSummary({
     if (!medicationName.trim()) return;
 
     scheduleMedicationReminder(
-      patient.name,
+      getPatientInitials(patient.name),
       medicationName,
       parseInt(delayMinutes, 10),
     );
@@ -321,7 +322,7 @@ export function PatientQuickSummary({
     doc.text("Patient Information", 20, 45);
 
     doc.setFontSize(12);
-    doc.text(`Name: ${patient.name}`, 20, 55);
+    doc.text(`Name: ${getPatientInitials(patient.name)}`, 20, 55);
     doc.text(`IP Number: ${patient.ipNumber}`, 20, 65);
     doc.text(`Age/Sex: ${patient.age}y / ${patient.sex}`, 20, 75);
     doc.text(`Ward: ${patient.ward}`, 20, 85);
@@ -369,7 +370,7 @@ export function PatientQuickSummary({
       });
     }
 
-    doc.save(`${patient.name.replace(/\s+/g, "_")}_Report.pdf`);
+    doc.save(`${getPatientInitials(patient.name).replace(/[^A-Z]/g, "")}_Report.pdf`);
   };
 
   return (
@@ -383,7 +384,7 @@ export function PatientQuickSummary({
         </button>
         <div className="pr-8">
           <h2 className="text-lg font-bold text-[var(--text)] tracking-tight">
-            {patient.name}
+            {getPatientInitials(patient.name)}
           </h2>
           <p className="text-sm text-[var(--text-muted)] font-medium">
             {patient.ipNumber} • {patient.age}y / {patient.sex} • {patient.ward}

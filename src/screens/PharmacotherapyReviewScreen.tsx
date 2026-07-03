@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import { useFileStore } from '../store/fileStore';
 import { GhostWriterText } from '../components/GhostWriterText';
+import { getPatientInitials } from '../lib/patientUtils';
 
 // Mock interaction database
 const KNOWN_INTERACTIONS: Record<string, string[]> = {
@@ -557,7 +558,7 @@ export default function PharmacotherapyReviewScreen() {
                           
                           if (formRef.current) {
                             const els = formRef.current.elements as any;
-                            if (data.patientName && els.patient_name) els.patient_name.value = data.patientName;
+                            if (data.patientName && els.patient_name) els.patient_name.value = getPatientInitials(data.patientName);
                             if (data.age && els.patient_age) els.patient_age.value = data.age;
                             if (data.weight && els.patient_weight) els.patient_weight.value = data.weight;
                             if (data.height && els.patient_height) els.patient_height.value = data.height;
@@ -593,8 +594,17 @@ export default function PharmacotherapyReviewScreen() {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="space-y-1.5">
-                    <label className="text-sm font-medium text-[var(--text)]">Patient Name</label>
-                    <input type="text" name="patient_name" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="John Doe" />
+                    <label className="text-sm font-medium text-[var(--text)]">Patient Name (Initials Only)</label>
+                    <input 
+                      type="text" 
+                      name="patient_name" 
+                      className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" 
+                      placeholder="E.g., J. D." 
+                      onBlur={(e) => {
+                        e.target.value = getPatientInitials(e.target.value);
+                        handleFormChange();
+                      }}
+                    />
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-1.5">

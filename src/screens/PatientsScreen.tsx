@@ -7,11 +7,12 @@ import {
 import { db } from "../lib/firebase";
 import { collection, getDocs, doc, setDoc, addDoc, updateDoc } from "firebase/firestore";
 import { handleFirestoreError, OperationType } from "../lib/firestore-error";
+import { getPatientInitials } from "../lib/patientUtils";
 
 const MOCK_PATIENTS: Patient[] = [
   {
     id: "1",
-    name: "James Kamau",
+    name: "J. K.",
     ipNumber: "IP-2023-1001",
     age: 45,
     sex: "M",
@@ -58,7 +59,7 @@ const MOCK_PATIENTS: Patient[] = [
   },
   {
     id: "2",
-    name: "Grace Wanjiku",
+    name: "G. W.",
     ipNumber: "IP-2023-1002",
     age: 32,
     sex: "F",
@@ -81,7 +82,7 @@ const MOCK_PATIENTS: Patient[] = [
   },
   {
     id: "3",
-    name: "Samuel Ochieng",
+    name: "S. O.",
     ipNumber: "IP-2023-1003",
     age: 58,
     sex: "M",
@@ -148,7 +149,7 @@ export default function PatientsScreen() {
       
       const data = await res.json();
       
-      if (data.name) setNewName(data.name);
+      if (data.name) setNewName(getPatientInitials(data.name));
       if (data.age) setNewAge(String(data.age));
       if (data.sex) setNewSex(data.sex);
       if (data.ipNumber) setNewIpNumber(data.ipNumber);
@@ -319,7 +320,7 @@ export default function PatientsScreen() {
       const dateString = now.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
       
       const newPatientData = {
-        name: newName.trim(),
+        name: getPatientInitials(newName),
         age: Number(newAge),
         sex: newSex,
         ward: newWard,
@@ -424,7 +425,7 @@ export default function PatientsScreen() {
                           onClick={() => setSelectedPatientId(patient.id)}
                         >
                           <td className="px-6 py-4 font-semibold text-[var(--text)]">
-                            {patient.name}
+                            {getPatientInitials(patient.name)}
                             {patient.alerts?.some(
                               (a) => a.type === "critical",
                             ) && (

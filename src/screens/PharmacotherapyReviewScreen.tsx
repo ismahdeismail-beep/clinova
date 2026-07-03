@@ -1075,27 +1075,36 @@ export default function PharmacotherapyReviewScreen() {
             </div>
 
             {/* Input Footer */}
-            <div className="p-4 border-t border-[var(--border)] flex gap-2 items-center bg-[var(--surface)]">
-              <input
-                type="text"
-                value={assistantMessage}
-                onChange={(e) => setAssistantMessage(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter') {
-                    sendAssistantMessage();
-                  }
-                }}
-                placeholder="Ask clinical queries..."
-                className="flex-1 px-3 py-2 text-xs sm:text-sm border border-[var(--border)] rounded-lg bg-[var(--surface)] text-[var(--text)] focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none"
-              />
-              <button
-                type="button"
-                onClick={sendAssistantMessage}
-                disabled={!assistantMessage.trim() || isAssistantThinking}
-                className="p-2 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-lg hover:opacity-90 disabled:opacity-50 transition-all shrink-0"
-              >
-                <Send size={15} />
-              </button>
+            <div className="p-4 border-t border-[var(--border)] bg-[var(--surface)] shrink-0">
+              <div className="relative flex items-end bg-[var(--surface-dim)] border border-[var(--border)] focus-within:ring-2 focus-within:ring-[var(--primary)] focus-within:border-[var(--primary)] rounded-2xl shadow-sm transition-all overflow-hidden">
+                <textarea 
+                  value={assistantMessage}
+                  onChange={(e) => setAssistantMessage(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && !e.shiftKey) {
+                      e.preventDefault();
+                      sendAssistantMessage();
+                    }
+                  }}
+                  placeholder="Ask clinical queries..."
+                  className="w-full pl-4 pr-2 py-3 max-h-32 min-h-[48px] bg-transparent outline-none text-[var(--text)] text-sm resize-none placeholder-[var(--text-muted)]"
+                  rows={1}
+                />
+                <div className="flex items-center gap-1.5 pr-2 pb-2 shrink-0">
+                  <button
+                    type="button"
+                    onClick={sendAssistantMessage}
+                    disabled={!assistantMessage.trim() || isAssistantThinking}
+                    className={`p-2 rounded-xl transition-all ${
+                      assistantMessage.trim() && !isAssistantThinking
+                        ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm hover:opacity-90' 
+                        : 'text-[var(--text-muted)] opacity-50 cursor-not-allowed'
+                    }`}
+                  >
+                    {isAssistantThinking ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} />}
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

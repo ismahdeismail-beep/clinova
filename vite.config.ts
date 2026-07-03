@@ -11,10 +11,10 @@ export default defineConfig(() => {
       react(), 
       VitePWA({
         registerType: 'autoUpdate',
-        includeAssets: ['clinova_logo.jpg', 'offline.html'],
+        includeAssets: ['clinova_logo.jpg'],
         workbox: {
           globPatterns: ['**/*.{js,css,html,ico,png,jpg,jpeg,svg}'],
-          navigateFallback: '/offline.html',
+          navigateFallback: '/index.html',
           maximumFileSizeToCacheInBytes: 5 * 1024 * 1024
         },
         manifest: {

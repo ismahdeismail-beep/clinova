@@ -486,39 +486,39 @@ export default function ClinicalAssistantScreen() {
             )}
           </div>
 
-          <div className="relative flex items-end gap-2">
-            <div className="relative flex-1">
-              <textarea 
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                onKeyDown={handleKeyDown}
-                placeholder="Ask clinical queries, verify doses, or check guidelines..." 
-                className="w-full pl-4 pr-12 py-3 max-h-32 min-h-[50px] bg-[var(--surface-dim)] border border-[var(--border)] rounded-xl focus:ring-2 focus:ring-[var(--primary)] outline-none text-[var(--text)] text-sm resize-none"
-                rows={1}
-              />
+          <div className="relative flex items-end bg-[var(--surface)] border border-[var(--border)] focus-within:ring-2 focus-within:ring-[var(--primary)] focus-within:border-[var(--primary)] rounded-2xl shadow-sm transition-all overflow-hidden">
+            <textarea 
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={handleKeyDown}
+              placeholder="Ask clinical queries, verify doses, or check guidelines..." 
+              className="w-full pl-5 pr-2 py-4 max-h-32 min-h-[56px] bg-transparent outline-none text-[var(--text)] text-sm resize-none placeholder-[var(--text-muted)]"
+              rows={1}
+            />
+            <div className="flex items-center gap-1.5 pr-3 pb-3 shrink-0">
+              <button
+                onClick={toggleListening}
+                className={`p-2 rounded-xl transition-all ${
+                  isListening
+                    ? 'bg-red-500/20 text-red-500 animate-pulse'
+                    : 'text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--surface-dim)]'
+                }`}
+                title={isListening ? "Stop listening" : "Start dictation"}
+              >
+                {isListening ? <MicOff size={18} /> : <Mic size={18} />}
+              </button>
+              <button 
+                onClick={handleSend}
+                disabled={!input.trim() || isProcessing}
+                className={`p-2 rounded-xl transition-all ${
+                  input.trim() && !isProcessing
+                    ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm hover:opacity-90' 
+                    : 'bg-[var(--surface-dim)] text-[var(--text-muted)] cursor-not-allowed'
+                }`}
+              >
+                {isProcessing ? <Loader2 size={18} className="animate-spin" /> : <Send size={18} />}
+              </button>
             </div>
-            <button
-              onClick={toggleListening}
-              className={`p-3 rounded-xl transition-colors shrink-0 flex items-center justify-center ${
-                isListening
-                  ? 'bg-red-500 text-white shadow-sm animate-pulse'
-                  : 'bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary-container)]'
-              }`}
-              title={isListening ? "Stop listening" : "Start dictation"}
-            >
-              {isListening ? <MicOff size={20} /> : <Mic size={20} />}
-            </button>
-            <button 
-              onClick={handleSend}
-              disabled={!input.trim() || isProcessing}
-              className={`p-3 rounded-xl transition-colors shrink-0 flex items-center justify-center ${
-                input.trim() && !isProcessing
-                  ? 'bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90 shadow-sm' 
-                  : 'bg-[var(--surface-dim)] text-[var(--text-muted)] cursor-not-allowed'
-              }`}
-            >
-              {isProcessing ? <Loader2 size={20} className="animate-spin" /> : <Send size={20} />}
-            </button>
           </div>
           <div className="flex justify-between items-center mt-2 px-1">
             <p className="text-[10px] text-[var(--text-muted)]">Clinova uses a Multi-RAG engine. Always verify critical decisions.</p>

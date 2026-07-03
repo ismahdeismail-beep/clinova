@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { 
-  ArrowRight, Sparkles, CheckCircle2, Bot, BookOpen, GraduationCap, FileUp
+  ArrowRight, Sparkles, CheckCircle2, Bot, BookOpen, GraduationCap, FileUp, ShieldAlert
 } from 'lucide-react';
 import ClinovaLogo from '../components/ClinovaLogo';
 
@@ -140,8 +140,14 @@ export default function LandingScreen() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-[var(--border)] py-8 px-6 text-center text-xs text-[var(--text-muted)] bg-[var(--surface)]/80 backdrop-blur-sm mt-auto">
+      <footer className="border-t border-[var(--border)] py-8 px-6 text-center text-xs text-[var(--text-muted)] bg-[var(--surface)]/80 backdrop-blur-sm mt-auto space-y-4">
         <p>© {new Date().getFullYear()} Clinova. Built for modern clinical practice.</p>
+        <div className="flex items-center justify-center gap-2 text-[10px] bg-amber-500/10 text-amber-700 dark:text-amber-400 p-2.5 rounded-lg max-w-xl mx-auto border border-amber-500/20 text-left">
+          <ShieldAlert size={16} className="shrink-0" />
+          <p className="leading-relaxed">
+            <strong>Data Protection Warning:</strong> In compliance with the Kenya Data Protection Act, 2019 and global health privacy standards, all patient data is strictly protected. Users must ensure no unauthorized Personally Identifiable Information (PII) is exposed.
+          </p>
+        </div>
       </footer>
     </div>
   );

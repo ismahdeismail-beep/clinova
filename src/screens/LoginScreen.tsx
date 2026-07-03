@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Loader2, Shield, AlertCircle, Mail, Lock, User, ArrowRight } from 'lucide-react';
+import { Loader2, Shield, AlertCircle, Mail, Lock, User, ArrowRight, ShieldAlert } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import ClinovaLogo from '../components/ClinovaLogo';
 
@@ -237,8 +237,16 @@ export default function LoginScreen() {
         </div>
 
         {/* Footer */}
-        <div className="px-8 py-3.5 bg-[var(--surface-dim)]/50 border-t border-[var(--border)] text-center text-[10px] text-[var(--text-muted)] flex items-center justify-center gap-1.5">
-          <Shield size={12} className="text-[var(--primary)] shrink-0" /> Secure clinical &amp; research hub.
+        <div className="px-6 py-4 bg-[var(--surface-dim)]/50 border-t border-[var(--border)] text-center text-[10px] text-[var(--text-muted)] flex flex-col items-center justify-center gap-2">
+          <div className="flex items-center gap-1.5">
+            <Shield size={12} className="text-[var(--primary)] shrink-0" /> Secure clinical &amp; research hub.
+          </div>
+          <div className="flex items-center justify-center gap-1.5 text-[9px] sm:text-[10px] text-amber-700 dark:text-amber-400 bg-amber-500/10 p-2 rounded max-w-sm w-full mx-auto border border-amber-500/20 text-left">
+            <ShieldAlert size={14} className="shrink-0" />
+            <span className="leading-tight">
+              <strong>Data Protection:</strong> Adhere to Kenya Data Protection Act, 2019. Ensure patient confidentiality and avoid unauthorized exposure of Personal Identifiable Information (PII).
+            </span>
+          </div>
         </div>
       </div>
     </div>

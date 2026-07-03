@@ -6,22 +6,25 @@ interface GhostWriterTextProps {
   onComplete?: () => void;
 }
 
-export function GhostWriterText({ content, speed = 20, onComplete }: GhostWriterTextProps) {
-  const [displayedText, setDisplayedText] = useState("");
+export function GhostWriterText({ content, speed = 10, onComplete }: GhostWriterTextProps) {
+  const [displayedLength, setDisplayedLength] = useState(0);
 
   useEffect(() => {
     let index = 0;
-    setDisplayedText("");
+    setDisplayedLength(0);
     
-    // Short delay before starting to type
     const initialDelay = setTimeout(() => {
       const timer = setInterval(() => {
-        index++;
-        // Fast-forward through markdown tokens to avoid broken syntax while typing
-        setDisplayedText(content.slice(0, index));
+        // Advance by a few characters to make it smooth and fast
+        index += 3;
+        
         if (index >= content.length) {
+          index = content.length;
+          setDisplayedLength(index);
           clearInterval(timer);
           onComplete?.();
+        } else {
+          setDisplayedLength(index);
         }
       }, speed);
       
@@ -31,12 +34,56 @@ export function GhostWriterText({ content, speed = 20, onComplete }: GhostWriter
     return () => clearTimeout(initialDelay);
   }, [content, speed, onComplete]);
 
-  // Use the same Markdown-like splitting logic as in ClinicalAssistantScreen
+  // Render text with invisible characters for the remainder to prevent layout shifts and word-wrap flickering
+  const renderText = () => {
+    const parts = content.split('**');
+    let currentLen = 0;
+    
+    return parts.map((part, i) => {
+      const isBold = i % 2 === 1;
+      
+      // Calculate how much of this part is visible
+      const partStart = currentLen;
+      const partEnd = currentLen + part.length;
+      currentLen += part.length + 2; // +2 for the '**' which are removed in display
+      
+      let visiblePart = '';
+      let hiddenPart = '';
+      
+      if (displayedLength >= partEnd) {
+        visiblePart = part;
+      } else if (displayedLength <= partStart) {
+        hiddenPart = part;
+      } else {
+        const visibleChars = displayedLength - partStart;
+        visiblePart = part.slice(0, visibleChars);
+        hiddenPart = part.slice(visibleChars);
+      }
+      
+      return (
+        <React.Fragment key={i}>
+          {isBold ? (
+            <strong className="font-semibold">
+              <span>{visiblePart}</span>
+              {hiddenPart && <span className="opacity-0">{hiddenPart}</span>}
+            </strong>
+          ) : (
+            <>
+              <span>{visiblePart}</span>
+              {hiddenPart && <span className="opacity-0">{hiddenPart}</span>}
+            </>
+          )}
+        </React.Fragment>
+      );
+    });
+  };
+
   return (
-    <>
-      {displayedText.split('**').map((text, i) => 
-        i % 2 === 1 ? <strong key={i} className="font-semibold">{text}</strong> : text
+    <div className="relative inline">
+      {renderText()}
+      {displayedLength < content.length && (
+        <span className="inline-block w-1.5 h-3.5 ml-0.5 align-middle bg-[var(--primary)] animate-pulse" />
       )}
-    </>
+    </div>
   );
 }

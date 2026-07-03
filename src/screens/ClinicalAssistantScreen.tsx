@@ -263,7 +263,6 @@ export default function ClinicalAssistantScreen() {
         citations,
         confidence: 95,
         routedTo: [agent],
-        isNew: true,
         isNew: true
       }];
     });

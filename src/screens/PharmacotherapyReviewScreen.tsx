@@ -4,6 +4,7 @@ import {
   Send, Loader2, Sparkles, X
 } from 'lucide-react';
 import { useFileStore } from '../store/fileStore';
+import { GhostWriterText } from '../components/GhostWriterText';
 
 // Mock interaction database
 const KNOWN_INTERACTIONS: Record<string, string[]> = {
@@ -37,7 +38,7 @@ export default function PharmacotherapyReviewScreen() {
 
   const [isAssistantOpen, setIsAssistantOpen] = useState(false);
   const [assistantMessage, setAssistantMessage] = useState('');
-  const [chatMessages, setChatMessages] = useState<{ role: 'user' | 'assistant', content: string, timestamp: Date }[]>([
+  const [chatMessages, setChatMessages] = useState<{ role: 'user' | 'assistant', content: string, timestamp: Date, isNew?: boolean }[]>([
     {
       role: 'assistant',
       content: 'Hello! I am your Clinova AI Assistant. Ask me any clinical questions regarding the Kenya Drug Index (KDI), medical guidelines, drug-drug interactions, or dose adjustments for this patient.',
@@ -227,13 +228,13 @@ export default function PharmacotherapyReviewScreen() {
       const data = await res.json();
       setChatMessages(prev => [
         ...prev,
-        { role: 'assistant', content: data.text, timestamp: new Date() }
+        { role: 'assistant', content: data.text, timestamp: new Date(), isNew: true }
       ]);
     } catch (error: any) {
       console.error(error);
       setChatMessages(prev => [
         ...prev,
-        { role: 'assistant', content: `Sorry, I encountered an error: ${error.message || 'communicating with the clinical assistant. Please try again.'}`, timestamp: new Date() }
+        { role: 'assistant', content: `Sorry, I encountered an error: ${error.message || 'communicating with the clinical assistant. Please try again.'}`, timestamp: new Date(), isNew: true }
       ]);
     } finally {
       setIsAssistantThinking(false);
@@ -1024,7 +1025,17 @@ export default function PharmacotherapyReviewScreen() {
                       : 'bg-[var(--surface-dim)] text-[var(--text)] border border-[var(--border)]'
                   }`}>
                     <div className="whitespace-pre-line">
-                      {msg.content}
+                      {msg.isNew && msg.role === 'assistant' ? (
+                        <GhostWriterText 
+                          content={msg.content} 
+                          speed={15} 
+                          onComplete={() => {
+                            setChatMessages(prev => prev.map((m, i) => i === index ? { ...m, isNew: false } : m));
+                          }}
+                        />
+                      ) : (
+                        msg.content.split('**').map((text, i) => i % 2 === 1 ? <strong key={i} className="font-semibold">{text}</strong> : text)
+                      )}
                     </div>
                     <span className="text-[9px] opacity-75 block text-right mt-1 font-mono">
                       {msg.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}

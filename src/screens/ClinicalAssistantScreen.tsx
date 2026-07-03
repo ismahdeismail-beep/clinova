@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Bot, Send, User, BrainCircuit, Library, Pill, Activity, FlaskConical, FileText, CheckCircle2, ChevronRight, Loader2, Database, AlertCircle, Mic, MicOff } from 'lucide-react';
+import { GhostWriterText } from '../components/GhostWriterText';
 import { RAGRouter } from '../services/ragRouter';
 
 interface Citation {
@@ -16,6 +17,7 @@ interface Message {
   confidence?: number;
   routedTo?: string[];
   isThinking?: boolean;
+  isNew?: boolean;
 }
 
 const RAG_SOURCES = [
@@ -178,7 +180,8 @@ export default function ClinicalAssistantScreen() {
     setMessages(prev => prev.map(m => m.id === thinkingMsgId ? { 
       ...m, 
       content: `Routing to: ${agent}`, 
-      routedTo: [agent] 
+      routedTo: [agent],
+        isNew: true 
     } : m));
 
     await new Promise(r => setTimeout(r, 1200));
@@ -186,7 +189,8 @@ export default function ClinicalAssistantScreen() {
     setMessages(prev => prev.map(m => m.id === thinkingMsgId ? { 
       ...m, 
       content: 'Retrieving evidence and validating...', 
-      routedTo: [agent] 
+      routedTo: [agent],
+        isNew: true 
     } : m));
 
     await new Promise(r => setTimeout(r, 1200));
@@ -258,7 +262,9 @@ export default function ClinicalAssistantScreen() {
         content: responseContent,
         citations,
         confidence: 95,
-        routedTo: [agent]
+        routedTo: [agent],
+        isNew: true,
+        isNew: true
       }];
     });
     
@@ -371,7 +377,17 @@ export default function ClinicalAssistantScreen() {
                   }`}>
                     {/* Render Content with basic markdown-like support */}
                     <div className="text-sm leading-relaxed whitespace-pre-wrap">
-                      {msg.content.split('**').map((text, i) => i % 2 === 1 ? <strong key={i} className="font-semibold">{text}</strong> : text)}
+                      {msg.isNew && msg.role === 'assistant' ? (
+                        <GhostWriterText 
+                          content={msg.content} 
+                          speed={15} 
+                          onComplete={() => {
+                            setMessages(prev => prev.map(m => m.id === msg.id ? { ...m, isNew: false } : m));
+                          }}
+                        />
+                      ) : (
+                        msg.content.split('**').map((text, i) => i % 2 === 1 ? <strong key={i} className="font-semibold">{text}</strong> : text)
+                      )}
                     </div>
                   </div>
                 )}

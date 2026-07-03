@@ -1,6 +1,5 @@
 import express from 'express';
 import path from 'path';
-import { createServer as createViteServer } from 'vite';
 import { GoogleGenAI, Type } from '@google/genai';
 import dotenv from 'dotenv';
 import crypto from 'crypto';
@@ -586,7 +585,8 @@ app.post('/api/cloudinary/destroy', async (req, res) => {
 // Setup Vite Dev Server / Static files for production
 async function startServer() {
   if (process.env.NODE_ENV !== 'production') {
-    const vite = await createViteServer({
+    const viteModule = await import('vite');
+    const vite = await viteModule.createServer({
       server: { middlewareMode: true },
       appType: 'spa',
     });
@@ -600,8 +600,12 @@ async function startServer() {
   }
 
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Clinova core backend running on port ${PORT}`);
-  });
+    console.log(`Clinova core backend running on port ${PORT}`);  });
 }
 
-startServer();
+// Only start the server if not running in a serverless environment like Vercel
+if (process.env.VERCEL !== '1') {
+  startServer();
+}
+
+export default app;

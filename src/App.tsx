@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate, Navigate } from 'react-router-dom';
 import { 
   Home, Users, FolderOpen, ClipboardList, Pill, Bot, 
-  BookOpen, BarChart3, Bell, Settings, Menu, Search, MessageSquare, ShieldCheck
+  BookOpen, BarChart3, Bell, Settings, Menu, Search, MessageSquare, ShieldCheck,
+  X
 } from 'lucide-react';
 
 const DashboardScreen = React.lazy(() => import('./screens/DashboardScreen'));
@@ -33,7 +34,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
   const { unreadCount } = useNotifications();
   
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 md:left-64 flex justify-center pointer-events-none pt-0">
+    <div className="fixed top-0 left-0 right-0 z-30 md:z-50 md:left-64 flex justify-center pointer-events-none pt-0">
       <header className="pointer-events-auto flex items-center justify-between bg-[var(--surface)]/80 backdrop-blur-md border border-[var(--border)] h-16 w-full shadow-sm px-4 lg:px-8 border-b border-t-0 border-l-0 border-r-0">
         <div className="flex items-center gap-4 shrink-0">
           <button 
@@ -118,15 +119,23 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
 
   return (
     <>
-      <div className={`fixed inset-y-0 left-0 z-40 w-64 bg-[var(--surface)]/80 backdrop-blur-md border-r border-[var(--border)] transform transition-transform duration-200 ease-in-out md:translate-x-0 overflow-y-auto flex flex-col pt-16 md:pt-0 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-        <div className="p-6 border-b border-[var(--border)] shrink-0 hidden md:block">
-          <div className="flex items-center gap-2 text-[var(--primary)] font-bold text-xl tracking-tight">
-            <div className="flex items-center justify-center">
-              <ClinovaLogo size={28} variant="colored" />
+      <div className={`fixed inset-y-0 left-0 z-50 w-64 bg-[var(--surface)] border-r border-[var(--border)] transform transition-transform duration-200 ease-in-out md:translate-x-0 overflow-y-auto flex flex-col ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className="p-6 border-b border-[var(--border)] shrink-0 flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2 text-[var(--primary)] font-bold text-xl tracking-tight">
+              <div className="flex items-center justify-center">
+                <ClinovaLogo size={28} variant="colored" />
+              </div>
+              CLINOVA
             </div>
-            CLINOVA
+            <p className="text-[10px] text-[var(--text-muted)] mt-1 font-semibold uppercase tracking-wider">Clinical Intelligence</p>
           </div>
-          <p className="text-[10px] text-[var(--text-muted)] mt-1 font-semibold uppercase tracking-wider">Clinical Intelligence</p>
+          <button 
+            onClick={() => setIsOpen(false)}
+            className="md:hidden p-1.5 text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)] rounded-full transition-colors"
+          >
+            <X size={18} />
+          </button>
         </div>
         <nav className="p-4 space-y-1 flex-1 mt-2">
           {links.map((link) => {
@@ -154,7 +163,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
       {/* Backdrop for mobile */}
       {isOpen && (
         <div 
-          className="fixed inset-0 bg-black/50 z-30 md:hidden top-16 backdrop-blur-sm"
+          className="fixed inset-0 bg-black/60 z-40 md:hidden backdrop-blur-sm animate-in fade-in duration-200"
           onClick={() => setIsOpen(false)}
         />
       )}

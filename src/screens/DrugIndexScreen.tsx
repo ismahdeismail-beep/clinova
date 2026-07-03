@@ -123,9 +123,9 @@ export default function DrugIndexScreen() {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {/* Left sidebar: categories */}
-        <div className="lg:col-span-1 space-y-2">
+        <div className="md:col-span-1 space-y-2">
           <div className="px-4 py-3 bg-[var(--surface-dim)] rounded-xl font-bold text-xs text-[var(--text-muted)] uppercase tracking-wider border-l-4 border-[var(--primary)] mb-3">
             Therapeutic Classes
           </div>
@@ -149,7 +149,7 @@ export default function DrugIndexScreen() {
         </div>
 
         {/* Right Main Panel: Monograph presentation */}
-        <div className="lg:col-span-3 min-h-[400px]">
+        <div className="md:col-span-2 lg:col-span-3 min-h-[400px]">
           {isLoading ? (
             <div className="w-full h-full bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 flex flex-col items-center justify-center text-center space-y-4">
               <div className="p-4 bg-[var(--primary-container)] rounded-full animate-pulse">

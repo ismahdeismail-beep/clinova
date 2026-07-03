@@ -716,10 +716,10 @@ export default function ClinicalCasesScreen() {
       </div>
 
       {/* Main Grid Layout: Progress, List, Detail View */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         {/* Cases List & Progress Side */}
-        <div className="lg:col-span-1 space-y-4">
+        <div className="md:col-span-1 space-y-4">
           
           {/* Progress Tracker Widget */}
           <div className="bg-[var(--surface)] p-5 rounded-2xl border border-[var(--border)] shadow-sm space-y-3 text-left">
@@ -939,7 +939,7 @@ export default function ClinicalCasesScreen() {
         </div>
 
         {/* Detailed Case View Panel */}
-        <div className="lg:col-span-2">
+        <div className="md:col-span-2">
           {selectedCase ? (
             <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-6 shadow-sm space-y-6 animate-in fade-in duration-300">
               

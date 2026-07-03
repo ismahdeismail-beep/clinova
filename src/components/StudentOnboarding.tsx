@@ -92,7 +92,7 @@ const ACADEMIC_LEVELS: LevelOption[] = [
   },
   {
     id: 'Senior Pharmacy Student',
-    title: 'Senior Pharmacy Student (Y3-4)',
+    title: 'Senior Pharmacy Student (Y3-5)',
     description: 'Focuses on clinical therapeutics, disease guidelines, contraindications, and care planning.',
     icon: BookOpen
   },

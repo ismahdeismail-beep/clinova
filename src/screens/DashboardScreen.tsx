@@ -396,7 +396,7 @@ export default function DashboardScreen() {
                           className="w-full text-xs p-2.5 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-[var(--text)] focus:border-[var(--primary)] outline-none"
                         >
                           <option value="Junior Pharmacy Student">Junior Pharmacy Student (Y1-2)</option>
-                          <option value="Senior Pharmacy Student">Senior Pharmacy Student (Y3-4)</option>
+                          <option value="Senior Pharmacy Student">Senior Pharmacy Student (Y3-5)</option>
                           <option value="Pharmacy Intern">Pharmacy Intern / Novice</option>
                           <option value="Clinical Pharmacist">Clinical Pharmacist / Resident</option>
                         </select>

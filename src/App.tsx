@@ -5,23 +5,24 @@ import {
   BookOpen, BarChart3, Bell, Settings, Menu, Search, MessageSquare, ShieldCheck
 } from 'lucide-react';
 
-import DashboardScreen from './screens/DashboardScreen';
-import PatientsScreen from './screens/PatientsScreen';
-import ClinicalCasesScreen from './screens/ClinicalCasesScreen';
-import PharmacotherapyReviewScreen from './screens/PharmacotherapyReviewScreen';
-import DrugIndexScreen from './screens/DrugIndexScreen';
-import ClinicalAssistantScreen from './screens/ClinicalAssistantScreen';
-import KnowledgeBaseScreen from './screens/KnowledgeBaseScreen';
-import NotificationsScreen from './screens/NotificationsScreen';
-import SettingsScreen from './screens/SettingsScreen';
-import AdminDashboardScreen from './screens/AdminDashboardScreen';
+const DashboardScreen = React.lazy(() => import('./screens/DashboardScreen'));
+const PatientsScreen = React.lazy(() => import('./screens/PatientsScreen'));
+const ClinicalCasesScreen = React.lazy(() => import('./screens/ClinicalCasesScreen'));
+const PharmacotherapyReviewScreen = React.lazy(() => import('./screens/PharmacotherapyReviewScreen'));
+const DrugIndexScreen = React.lazy(() => import('./screens/DrugIndexScreen'));
+const ClinicalAssistantScreen = React.lazy(() => import('./screens/ClinicalAssistantScreen'));
+const KnowledgeBaseScreen = React.lazy(() => import('./screens/KnowledgeBaseScreen'));
+const NotificationsScreen = React.lazy(() => import('./screens/NotificationsScreen'));
+const SettingsScreen = React.lazy(() => import('./screens/SettingsScreen'));
+const AdminDashboardScreen = React.lazy(() => import('./screens/AdminDashboardScreen'));
+const LoginScreen = React.lazy(() => import('./screens/LoginScreen'));
+const LandingScreen = React.lazy(() => import('./screens/LandingScreen'));
+
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { useAuth } from './contexts/AuthContext';
 import { InstallPWA } from './components/InstallPWA';
 import { OfflineStatus } from './components/OfflineStatus';
 import { CommandPalette } from './components/CommandPalette';
-import LoginScreen from './screens/LoginScreen';
-import LandingScreen from './screens/LandingScreen';
 import ClinovaLogo from './components/ClinovaLogo';
 import ThemeToggle from './components/ThemeToggle';
 
@@ -192,11 +193,21 @@ function AppContent() {
 
   if (!userData) {
     return (
-      <Routes>
-        <Route path="/login" element={<LoginScreen />} />
-        <Route path="/admin-access" element={<AdminLoginScreen />} />
-        <Route path="*" element={<LandingScreen />} />
-      </Routes>
+      <React.Suspense fallback={
+        <div className="min-h-screen bg-[var(--bg)] flex flex-col items-center justify-center p-8 text-center selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
+          <div className="flex flex-col items-center gap-5 animate-pulse">
+            <div className="flex items-center justify-center drop-shadow-lg">
+              <ClinovaLogo size={64} variant="colored" />
+            </div>
+          </div>
+        </div>
+      }>
+        <Routes>
+          <Route path="/login" element={<LoginScreen />} />
+          <Route path="/admin-access" element={<AdminLoginScreen />} />
+          <Route path="*" element={<LandingScreen />} />
+        </Routes>
+      </React.Suspense>
     );
   }
 
@@ -208,25 +219,35 @@ function AppContent() {
       <div className="flex flex-1 overflow-hidden relative">
         <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
         <main id="main-scroll-area" className="flex-1 md:ml-64 w-full overflow-y-auto pt-16">
-          <Routes>
-            <Route path="/" element={<DashboardScreen />} />
-            <Route path="/patients" element={<PatientsScreen />} />
-            <Route path="/cases" element={<ClinicalCasesScreen />} />
-            <Route path="/review" element={<PharmacotherapyReviewScreen />} />
-            <Route path="/drugs" element={<DrugIndexScreen />} />
-            <Route path="/assistant" element={<ClinicalAssistantScreen />} />
-            <Route path="/knowledge" element={<KnowledgeBaseScreen />} />
-            <Route path="/admin" element={
-              <ProtectedRoute requiredRole="admin">
-                <AdminDashboardScreen />
-              </ProtectedRoute>
-            } />
-            <Route path="/notifications" element={<NotificationsScreen />} />
-            <Route path="/settings" element={<SettingsScreen />} />
-            <Route path="/login" element={<Navigate to="/" replace />} />
-            <Route path="/admin-access" element={<Navigate to="/" replace />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
+          <React.Suspense fallback={
+            <div className="h-full flex flex-col items-center justify-center p-8 text-center">
+              <div className="flex flex-col items-center gap-5 animate-pulse">
+                <div className="flex items-center justify-center drop-shadow-lg opacity-50">
+                  <ClinovaLogo size={48} variant="colored" />
+                </div>
+              </div>
+            </div>
+          }>
+            <Routes>
+              <Route path="/" element={<DashboardScreen />} />
+              <Route path="/patients" element={<PatientsScreen />} />
+              <Route path="/cases" element={<ClinicalCasesScreen />} />
+              <Route path="/review" element={<PharmacotherapyReviewScreen />} />
+              <Route path="/drugs" element={<DrugIndexScreen />} />
+              <Route path="/assistant" element={<ClinicalAssistantScreen />} />
+              <Route path="/knowledge" element={<KnowledgeBaseScreen />} />
+              <Route path="/admin" element={
+                <ProtectedRoute requiredRole="admin">
+                  <AdminDashboardScreen />
+                </ProtectedRoute>
+              } />
+              <Route path="/notifications" element={<NotificationsScreen />} />
+              <Route path="/settings" element={<SettingsScreen />} />
+              <Route path="/login" element={<Navigate to="/" replace />} />
+              <Route path="/admin-access" element={<Navigate to="/" replace />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Routes>
+          </React.Suspense>
           <InstallPWA />
         </main>
       </div>

@@ -6,6 +6,7 @@ import {
   Bookmark, Share2, Sparkles, ThumbsUp, Check, ExternalLink
 } from 'lucide-react';
 import { db, auth } from '../lib/firebase';
+import { useAuth } from '../contexts/AuthContext';
 import { 
   collection, getDocs, addDoc, deleteDoc, doc, updateDoc, 
   query, orderBy, Timestamp 
@@ -127,6 +128,7 @@ Source: Clinical Pharmacy: Case Studies (USC Faculty Series).`,
 ];
 
 export default function ClinicalCasesScreen() {
+  const { userData } = useAuth();
   const [cases, setCases] = useState<ClinicalCase[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
@@ -241,6 +243,44 @@ export default function ClinicalCasesScreen() {
     };
   }, [userReflections, revealedCases, masteredCases]);
 
+  const triggerRandomRotation = (isAuto: boolean = false) => {
+    const user = auth.currentUser;
+    if (!user) return;
+
+    let TOPICS = [
+      "Cardiology",
+      "Endocrinology",
+      "Infectious Disease",
+      "Nephrology",
+      "Neurology",
+      "Oncology",
+      "Critical Care"
+    ];
+
+    if (userData?.clinicalInterests && userData.clinicalInterests.length > 0) {
+      TOPICS = userData.clinicalInterests;
+    }
+
+    const BOOK_SOURCES = [
+      "Clinical Cases in Clinical Pharmacology",
+      "Clinical Pharmacy & Pharmaceutical Care",
+      "Clinical Pharmacy: Case Studies",
+      "Pharmacy Case Studies"
+    ];
+
+    const randomTopic = TOPICS[Math.floor(Math.random() * TOPICS.length)];
+    const randomBook = BOOK_SOURCES[Math.floor(Math.random() * BOOK_SOURCES.length)];
+
+    setExtractionTopic(randomTopic);
+    setExtractionBook(randomBook);
+
+    localStorage.setItem(`clinova_rotation_topic_${user.uid}`, randomTopic);
+    localStorage.setItem(`clinova_rotation_book_${user.uid}`, randomBook);
+    sessionStorage.setItem(`clinova_session_loaded_${user.uid}`, 'true');
+
+    extractAICases(randomTopic, randomBook, isAuto);
+  };
+
   // Load resources based on login status
   useEffect(() => {
     const user = auth.currentUser;
@@ -250,15 +290,23 @@ export default function ClinicalCasesScreen() {
     if (user) {
       fetchSavedCases();
       
+      const sessionLoaded = sessionStorage.getItem(`clinova_session_loaded_${user.uid}`);
       const stored = localStorage.getItem(`clinova_session_cases_${user.uid}`);
-      if (stored) {
+      const savedTopic = localStorage.getItem(`clinova_rotation_topic_${user.uid}`);
+      const savedBook = localStorage.getItem(`clinova_rotation_book_${user.uid}`);
+
+      if (savedTopic) setExtractionTopic(savedTopic);
+      if (savedBook) setExtractionBook(savedBook);
+
+      if (stored && sessionLoaded) {
         try {
           setSessionCases(JSON.parse(stored));
         } catch {
-          extractAICases('Cardiology', 'Clinical Cases in Clinical Pharmacology', true);
+          triggerRandomRotation(true);
         }
       } else {
-        extractAICases('Cardiology', 'Clinical Cases in Clinical Pharmacology', true);
+        // Automatically generate different cases on fresh login/session to keep user intrigued!
+        triggerRandomRotation(true);
       }
     } else {
       setSessionCases([]);
@@ -299,6 +347,8 @@ export default function ClinicalCasesScreen() {
 
       setSessionCases(extractedList);
       localStorage.setItem(`clinova_session_cases_${user.uid}`, JSON.stringify(extractedList));
+      localStorage.setItem(`clinova_rotation_topic_${user.uid}`, topic);
+      localStorage.setItem(`clinova_rotation_book_${user.uid}`, bookName);
     } catch (error) {
       console.error('Case extraction error:', error);
       if (!isAuto) {
@@ -755,6 +805,41 @@ export default function ClinicalCasesScreen() {
           Shared Network
         </button>
       </div>
+
+      {/* Active Specialty Rotation Banner */}
+      {activeTab === 'session' && auth.currentUser && (
+        <div className="bg-gradient-to-r from-[var(--primary)]/10 via-indigo-500/10 to-purple-500/10 border border-[var(--primary)]/20 rounded-2xl p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 shadow-sm animate-in fade-in slide-in-from-top-1 duration-200">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-gradient-to-tr from-[var(--primary)] to-indigo-600 rounded-xl flex items-center justify-center text-white shrink-0 shadow-sm">
+              <Sparkles size={20} className="animate-pulse" />
+            </div>
+            <div className="text-left">
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] bg-[var(--primary)]/20 text-[var(--primary)] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider flex items-center gap-1">
+                  <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-ping shrink-0" /> Specialty Rotation
+                </span>
+                <span className="text-xs text-[var(--text-muted)] font-medium">New scenario on login</span>
+              </div>
+              <h3 className="font-bold text-sm sm:text-base text-[var(--text)] mt-1">
+                Active clinical focus: <span className="text-[var(--primary)]">{extractionTopic}</span>
+              </h3>
+              <p className="text-[11px] text-[var(--text-muted)] mt-0.5">
+                Sourced from: <span className="italic">{extractionBook}</span>
+              </p>
+            </div>
+          </div>
+          
+          <button
+            type="button"
+            onClick={() => triggerRandomRotation(false)}
+            disabled={isExtracting}
+            className="px-3.5 py-1.5 bg-[var(--surface)] hover:bg-[var(--surface-dim)] text-[var(--text)] border border-[var(--border)] rounded-xl font-bold text-xs flex items-center gap-1.5 transition-all shadow-sm cursor-pointer select-none self-stretch sm:self-auto justify-center disabled:opacity-50"
+          >
+            <Sparkles size={12} className="text-[var(--primary)]" />
+            Spin New Specialty
+          </button>
+        </div>
+      )}
 
       {/* Main Grid Layout: Progress, List, Detail View */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

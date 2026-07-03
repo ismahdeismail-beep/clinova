@@ -18,6 +18,7 @@ const SettingsScreen = React.lazy(() => import('./screens/SettingsScreen'));
 const AdminDashboardScreen = React.lazy(() => import('./screens/AdminDashboardScreen'));
 const LoginScreen = React.lazy(() => import('./screens/LoginScreen'));
 const LandingScreen = React.lazy(() => import('./screens/LandingScreen'));
+const StudentOnboarding = React.lazy(() => import('./components/StudentOnboarding'));
 
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { useAuth } from './contexts/AuthContext';
@@ -224,6 +225,11 @@ function AppContent() {
     <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] flex flex-col">
       <CommandPalette />
       <OfflineStatus />
+      {userData && !userData.onboardingCompleted && userData.role !== 'admin' && (
+        <React.Suspense fallback={null}>
+          <StudentOnboarding />
+        </React.Suspense>
+      )}
       <TopNavigation onMenuClick={() => setIsSidebarOpen(!isSidebarOpen)} />
       <div className="flex flex-1 overflow-hidden relative">
         <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />

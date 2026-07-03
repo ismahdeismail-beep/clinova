@@ -19,6 +19,9 @@ interface UserData {
   email?: string;
   role: UserRole;
   photoURL?: string;
+  clinicalInterests?: string[];
+  academicLevel?: string;
+  onboardingCompleted?: boolean;
 }
 
 interface AuthContextType {
@@ -30,6 +33,7 @@ interface AuthContextType {
   loginReturning: (name: string, role: UserRole) => Promise<void>;
   loginWithEmail: (email: string, password: string) => Promise<void>;
   signUpWithEmail: (email: string, password: string, name: string) => Promise<void>;
+  updatePreferences: (interests: string[], level: string) => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | null>(null);
@@ -72,10 +76,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           const userDoc = await getDoc(doc(db, 'users', firebaseUser.uid));
           let role: UserRole = 'user';
           let name = provisionalName;
+          let clinicalInterests: string[] = [];
+          let academicLevel = '';
+          let onboardingCompleted = false;
           
           if (userDoc.exists()) {
             role = userDoc.data().role as UserRole;
             name = userDoc.data().name || name;
+            clinicalInterests = userDoc.data().clinicalInterests || [];
+            academicLevel = userDoc.data().academicLevel || '';
+            onboardingCompleted = !!userDoc.data().onboardingCompleted;
           } else {
             // New user, save them
             try {
@@ -96,7 +106,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
               name,
               email: firebaseUser.email || '',
               role,
-              photoURL: firebaseUser.photoURL || undefined
+              photoURL: firebaseUser.photoURL || undefined,
+              clinicalInterests,
+              academicLevel,
+              onboardingCompleted
             });
           }
         } catch (e) {
@@ -247,6 +260,37 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
+  const updatePreferences = async (interests: string[], level: string) => {
+    if (!userData) return;
+    const updated: UserData = {
+      ...userData,
+      clinicalInterests: interests,
+      academicLevel: level,
+      onboardingCompleted: true,
+    };
+    
+    setUserData(updated);
+    
+    // Save locally if mock session is running
+    if (localStorage.getItem('clinova-mock-user')) {
+      localStorage.setItem('clinova-mock-user', JSON.stringify(updated));
+    }
+    
+    // Save to Firestore if user logged in
+    const user = auth.currentUser;
+    if (user) {
+      try {
+        await setDoc(doc(db, 'users', user.uid), {
+          clinicalInterests: interests,
+          academicLevel: level,
+          onboardingCompleted: true,
+        }, { merge: true });
+      } catch (e) {
+        console.warn("Could not save preferences to Firestore, using local state", e);
+      }
+    }
+  };
+
   return (
     <AuthContext.Provider value={{ 
       userData, 
@@ -256,7 +300,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       loginWithGoogle, 
       loginReturning,
       loginWithEmail,
-      signUpWithEmail
+      signUpWithEmail,
+      updatePreferences
     }}>
       {children}
     </AuthContext.Provider>
@@ -274,7 +319,8 @@ export function useAuth() {
       loginWithGoogle: async () => {},
       loginReturning: async () => {},
       loginWithEmail: async () => {},
-      signUpWithEmail: async () => {}
+      signUpWithEmail: async () => {},
+      updatePreferences: async () => {}
     };
   }
   return context;

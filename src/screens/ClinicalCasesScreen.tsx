@@ -200,6 +200,47 @@ export default function ClinicalCasesScreen() {
     localStorage.setItem('clinova_mastered', JSON.stringify(masteredCases));
   }, [masteredCases]);
 
+  // Listen for storage changes (e.g., from Supabase Sync restoration)
+  useEffect(() => {
+    const handleStorageChange = () => {
+      try {
+        const savedReflections = localStorage.getItem('clinova_reflections');
+        if (savedReflections) {
+          const parsed = JSON.parse(savedReflections);
+          // Only update if actually different to prevent re-renders
+          if (JSON.stringify(parsed) !== JSON.stringify(userReflections)) {
+            setUserReflections(parsed);
+          }
+        }
+        
+        const savedRevealed = localStorage.getItem('clinova_revealed');
+        if (savedRevealed) {
+          const parsed = JSON.parse(savedRevealed);
+          if (JSON.stringify(parsed) !== JSON.stringify(revealedCases)) {
+            setRevealedCases(parsed);
+          }
+        }
+        
+        const savedMastered = localStorage.getItem('clinova_mastered');
+        if (savedMastered) {
+          const parsed = JSON.parse(savedMastered);
+          if (JSON.stringify(parsed) !== JSON.stringify(masteredCases)) {
+            setMasteredCases(parsed);
+          }
+        }
+      } catch (e) {
+        console.warn("Failed to load synced local storage keys", e);
+      }
+    };
+    
+    window.addEventListener('storage', handleStorageChange);
+    window.addEventListener('clinova-storage-synced', handleStorageChange);
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+      window.removeEventListener('clinova-storage-synced', handleStorageChange);
+    };
+  }, [userReflections, revealedCases, masteredCases]);
+
   // Load resources based on login status
   useEffect(() => {
     const user = auth.currentUser;

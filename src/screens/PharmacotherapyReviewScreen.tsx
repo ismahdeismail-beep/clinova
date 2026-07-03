@@ -350,6 +350,46 @@ export default function PharmacotherapyReviewScreen() {
     }
   }, []);
 
+  // Listen for storage changes (e.g., from Supabase Sync restoration)
+  useEffect(() => {
+    const handleStorageChange = () => {
+      const savedData = localStorage.getItem('clinova_pharma_review_form');
+      if (savedData && formRef.current) {
+        try {
+          const parsed = JSON.parse(savedData);
+          const tabData = parsed[activeTab] || {};
+          const elements = formRef.current.elements;
+          let changed = false;
+          for (let i = 0; i < elements.length; i++) {
+            const el = elements[i] as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+            if (el.tagName === 'BUTTON') continue;
+            const key = el.name || el.id || `input_${i}`;
+            if (tabData[key] !== undefined && el.value !== tabData[key]) {
+              el.value = tabData[key];
+              changed = true;
+            }
+          }
+          
+          if (changed) {
+            // Re-run interaction checking if form fields changed from sync
+            const allData: Record<string, string> = {};
+            Object.values(parsed).forEach(tab => Object.assign(allData, tab));
+            checkInteractions(allData);
+          }
+        } catch (e) {
+          console.error('Failed to parse saved form data', e);
+        }
+      }
+    };
+    
+    window.addEventListener('storage', handleStorageChange);
+    window.addEventListener('clinova-storage-synced', handleStorageChange);
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+      window.removeEventListener('clinova-storage-synced', handleStorageChange);
+    };
+  }, [activeTab]);
+
   const tabs = [
     { id: 'admission', label: 'Admission', icon: User },
     { id: 'history', label: 'History', icon: ClipboardList },

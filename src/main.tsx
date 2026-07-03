@@ -6,13 +6,15 @@ import App from "./App.tsx";
 import { ErrorBoundary } from "./components/ErrorBoundary.tsx";
 import { AuthProvider } from "./contexts/AuthContext.tsx";
 import { syncManager } from "./lib/syncManager.ts";
+import { initSupabaseSync } from "./lib/supabaseSync";
 import "./index.css";
 
 import { NotificationProvider } from "./contexts/NotificationContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
-// Initialize sync manager
+// Initialize sync managers
 syncManager.sync();
+initSupabaseSync();
 
 const updateSW = registerSW({
   onNeedRefresh() {

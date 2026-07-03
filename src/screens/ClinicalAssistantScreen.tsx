@@ -49,6 +49,22 @@ export default function ClinicalAssistantScreen() {
     }
   }, []);
 
+  // Listen for storage changes (e.g., from Supabase Sync restoration)
+  useEffect(() => {
+    const handleStorageChange = () => {
+      const savedInput = localStorage.getItem('clinova_assistant_input');
+      if (savedInput !== null && savedInput !== input) {
+        setInput(savedInput);
+      }
+    };
+    window.addEventListener('storage', handleStorageChange);
+    window.addEventListener('clinova-storage-synced', handleStorageChange);
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+      window.removeEventListener('clinova-storage-synced', handleStorageChange);
+    };
+  }, [input]);
+
   useEffect(() => {
     // Initialize Web Speech API
     if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {

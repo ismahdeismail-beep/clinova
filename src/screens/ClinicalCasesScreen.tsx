@@ -712,7 +712,7 @@ export default function ClinicalCasesScreen() {
       <div className="flex border-b border-[var(--border)] overflow-x-auto pb-px gap-2">
         <button
           onClick={() => { setActiveTab('session'); setSelectedCase(null); }}
-          className={`px-4 py-3 text-sm font-semibold border-b-2 whitespace-nowrap transition-all flex items-center gap-2 cursor-pointer ${
+          className={`px-4 py-3 text-sm font-semibold border-b-2 whitespace-nowrap shrink-0 transition-all flex items-center gap-2 cursor-pointer ${
             activeTab === 'session'
               ? 'border-[var(--primary)] text-[var(--primary)]'
               : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
@@ -723,7 +723,7 @@ export default function ClinicalCasesScreen() {
         </button>
         <button
           onClick={() => { setActiveTab('textbook'); setSelectedCase(null); }}
-          className={`px-4 py-3 text-sm font-semibold border-b-2 whitespace-nowrap transition-all flex items-center gap-2 cursor-pointer ${
+          className={`px-4 py-3 text-sm font-semibold border-b-2 whitespace-nowrap shrink-0 transition-all flex items-center gap-2 cursor-pointer ${
             activeTab === 'textbook'
               ? 'border-[var(--primary)] text-[var(--primary)]'
               : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
@@ -734,7 +734,7 @@ export default function ClinicalCasesScreen() {
         </button>
         <button
           onClick={() => { setActiveTab('saved'); setSelectedCase(null); }}
-          className={`px-4 py-3 text-sm font-semibold border-b-2 whitespace-nowrap transition-all flex items-center gap-2 cursor-pointer ${
+          className={`px-4 py-3 text-sm font-semibold border-b-2 whitespace-nowrap shrink-0 transition-all flex items-center gap-2 cursor-pointer ${
             activeTab === 'saved'
               ? 'border-[var(--primary)] text-[var(--primary)]'
               : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
@@ -868,10 +868,11 @@ export default function ClinicalCasesScreen() {
 
           {/* Left Cases Scroll List */}
           <div className="space-y-3 max-h-[600px] overflow-y-auto pr-1">
-            {isLoading || (activeTab === 'saved' && isSavedLoading) || (activeTab === 'shared' && isSharedLoading) ? (
-              <div className="p-8 text-center bg-[var(--surface)] rounded-xl border border-[var(--border)]">
+            {isLoading || (activeTab === 'saved' && isSavedLoading) || (activeTab === 'shared' && isSharedLoading) || isExtracting ? (
+              <div className="p-8 text-center bg-[var(--surface)] rounded-xl border border-[var(--border)] py-16">
                 <Loader2 size={24} className="animate-spin text-[var(--primary)] mx-auto mb-2" />
-                <span className="text-xs text-[var(--text-muted)]">Loading clinical cases...</span>
+                <span className="text-xs font-semibold text-[var(--text)]">Clinova AI is extracting cases...</span>
+                <p className="text-[10px] text-[var(--text-muted)] mt-1 animate-pulse">Analyzing document &amp; formulating clinical scenarios</p>
               </div>
             ) : filteredCases.length === 0 ? (
               <div className="bg-[var(--surface)] p-12 rounded-xl border border-[var(--border)] shadow-sm flex flex-col items-center justify-center text-center">

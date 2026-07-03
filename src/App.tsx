@@ -34,8 +34,8 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
   const { unreadCount } = useNotifications();
   
   return (
-    <div className="fixed top-0 left-0 right-0 z-30 md:z-50 md:left-64 flex justify-center pointer-events-none pt-0">
-      <header className="pointer-events-auto flex items-center justify-between bg-[var(--surface)]/80 backdrop-blur-md border border-[var(--border)] h-16 w-full shadow-sm px-4 lg:px-8 border-b border-t-0 border-l-0 border-r-0">
+    <div className="fixed top-0 left-0 right-0 z-30 md:z-50 md:left-64 flex justify-center pointer-events-none pt-[env(safe-area-inset-top,0px)] bg-[var(--surface)]/80 backdrop-blur-md border-b border-[var(--border)]">
+      <header className="pointer-events-auto flex items-center justify-between bg-transparent h-16 w-full px-4 lg:px-8">
         <div className="flex items-center gap-4 shrink-0">
           <button 
             className="md:hidden p-2 text-[var(--text-muted)] hover:text-[var(--text)] transition-colors rounded-full"
@@ -120,7 +120,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
   return (
     <>
       <div className={`fixed inset-y-0 left-0 z-50 w-64 bg-[var(--surface)] border-r border-[var(--border)] transform transition-transform duration-200 ease-in-out md:translate-x-0 overflow-y-auto flex flex-col ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-        <div className="p-6 border-b border-[var(--border)] shrink-0 flex items-center justify-between">
+        <div className="p-6 pt-[calc(1.5rem+env(safe-area-inset-top,0px))] border-b border-[var(--border)] shrink-0 flex items-center justify-between">
           <div>
             <div className="flex items-center gap-2 text-[var(--primary)] font-bold text-xl tracking-tight">
               <div className="flex items-center justify-center">
@@ -227,7 +227,7 @@ function AppContent() {
       <TopNavigation onMenuClick={() => setIsSidebarOpen(!isSidebarOpen)} />
       <div className="flex flex-1 overflow-hidden relative">
         <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
-        <main id="main-scroll-area" className="flex-1 md:ml-64 w-full overflow-y-auto pt-16">
+        <main id="main-scroll-area" className="flex-1 md:ml-64 w-full overflow-y-auto pt-[calc(4rem+env(safe-area-inset-top,0px))]">
           <React.Suspense fallback={
             <div className="h-full flex flex-col items-center justify-center p-8 text-center">
               <div className="flex flex-col items-center gap-5 animate-pulse">

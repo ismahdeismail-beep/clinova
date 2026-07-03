@@ -423,7 +423,7 @@ export default function PharmacotherapyReviewScreen() {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center gap-3 px-4 py-3 text-sm font-medium transition-colors whitespace-nowrap md:whitespace-normal border-l-4 md:border-l-4 md:border-b-0 border-b-4 ${
+                  className={`flex items-center gap-3 px-4 py-3 text-sm font-medium transition-colors whitespace-nowrap md:whitespace-normal border-l-4 md:border-l-4 md:border-b-0 border-b-4 shrink-0 ${
                     isActive 
                       ? 'border-[var(--primary)] bg-[var(--primary-container)] text-[var(--primary)]' 
                       : 'border-transparent text-[var(--text)] hover:bg-[var(--surface-dim)] hover:text-[var(--primary)]'
@@ -438,7 +438,33 @@ export default function PharmacotherapyReviewScreen() {
         </div>
 
         {/* Form Content */}
-        <div className="flex-1 w-full bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-sm overflow-hidden flex flex-col">
+        <div className="flex-1 w-full bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-sm overflow-hidden flex flex-col relative">
+          {isGenerating && (
+            <div className="absolute inset-0 bg-[var(--surface)]/85 backdrop-blur-[2px] z-20 flex flex-col items-center justify-center p-8 space-y-6">
+              <div className="w-full max-w-md space-y-5 text-center sm:text-left">
+                <div className="flex flex-col sm:flex-row items-center gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center animate-spin shrink-0">
+                    <Loader2 size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-[var(--text)] text-base">Clinova Intelligence Engine</h3>
+                    <p className="text-xs text-[var(--text-muted)] animate-pulse">Running advanced RAG synthesis &amp; patient clinical evaluation...</p>
+                  </div>
+                </div>
+                {/* Pulsing skeleton lines */}
+                <div className="space-y-3.5 pt-4">
+                  <div className="h-4 bg-[var(--surface-dim)] rounded-full w-3/4 animate-pulse"></div>
+                  <div className="h-4 bg-[var(--surface-dim)] rounded-full w-full animate-pulse"></div>
+                  <div className="h-4 bg-[var(--surface-dim)] rounded-full w-5/6 animate-pulse"></div>
+                  <div className="grid grid-cols-2 gap-4 pt-2">
+                    <div className="h-10 bg-[var(--surface-dim)] rounded-xl animate-pulse"></div>
+                    <div className="h-10 bg-[var(--surface-dim)] rounded-xl animate-pulse"></div>
+                  </div>
+                  <div className="h-24 bg-[var(--surface-dim)] rounded-2xl w-full animate-pulse"></div>
+                </div>
+              </div>
+            </div>
+          )}
           
           {interactions.length > 0 && (
             <div className="bg-red-500/10 border-b border-red-500/20 p-4">
@@ -1117,7 +1143,7 @@ export default function PharmacotherapyReviewScreen() {
                   onClick={() => {
                     setAssistantMessage(suggestion);
                   }}
-                  className="text-[10px] bg-[var(--surface)] hover:bg-[var(--border)] border border-[var(--border)] px-2.5 py-1 rounded-full text-[var(--text-muted)] hover:text-[var(--text)] transition-colors inline-block"
+                  className="text-[10px] bg-[var(--surface)] hover:bg-[var(--border)] border border-[var(--border)] px-2.5 py-1.5 rounded-full text-[var(--text-muted)] hover:text-[var(--text)] transition-colors shrink-0 whitespace-nowrap"
                 >
                   {suggestion}
                 </button>

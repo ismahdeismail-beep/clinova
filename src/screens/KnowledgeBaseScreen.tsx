@@ -149,7 +149,7 @@ export default function KnowledgeBaseScreen() {
       <div className="flex gap-2 mb-6 border-b border-[var(--border)] overflow-x-auto">
         <button
           onClick={() => setActiveTab('library')}
-          className={`pb-3 px-5 text-sm font-semibold transition-colors whitespace-nowrap border-b-2 flex items-center gap-2.5 ${
+          className={`pb-3 px-5 text-sm font-semibold transition-colors whitespace-nowrap shrink-0 border-b-2 flex items-center gap-2.5 ${
             activeTab === 'library' 
               ? 'border-[var(--primary)] text-[var(--primary)]' 
               : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
@@ -159,7 +159,7 @@ export default function KnowledgeBaseScreen() {
         </button>
         <button
           onClick={() => setActiveTab('generator')}
-          className={`pb-3 px-5 text-sm font-semibold transition-colors whitespace-nowrap border-b-2 flex items-center gap-2.5 ${
+          className={`pb-3 px-5 text-sm font-semibold transition-colors whitespace-nowrap shrink-0 border-b-2 flex items-center gap-2.5 ${
             activeTab === 'generator' 
               ? 'border-[var(--primary)] text-[var(--primary)]' 
               : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
@@ -491,6 +491,24 @@ export default function KnowledgeBaseScreen() {
           </div>
 
           {/* Generated Results Panel */}
+          {isGenerating && !generatedResult && (
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-3xl p-8 shadow-xl animate-pulse space-y-6">
+              <div className="flex items-center justify-between pb-6 border-b border-[var(--border)] mb-6">
+                <div className="space-y-2 w-1/3">
+                  <div className="h-4 bg-[var(--surface-dim)] rounded w-1/2"></div>
+                  <div className="h-6 bg-[var(--surface-dim)] rounded"></div>
+                </div>
+                <div className="h-8 bg-[var(--surface-dim)] rounded w-24"></div>
+              </div>
+              <div className="space-y-4">
+                <div className="h-4 bg-[var(--surface-dim)] rounded w-3/4"></div>
+                <div className="h-4 bg-[var(--surface-dim)] rounded w-full"></div>
+                <div className="h-4 bg-[var(--surface-dim)] rounded w-5/6"></div>
+                <div className="h-4 bg-[var(--surface-dim)] rounded w-2/3"></div>
+              </div>
+            </div>
+          )}
+
           {generatedResult && (
             <div className="bg-[var(--surface)] border-2 border-[var(--primary)] rounded-3xl p-8 shadow-xl animate-in fade-in zoom-in-95">
               <div className="flex items-center justify-between pb-6 border-b border-[var(--border)] mb-6">

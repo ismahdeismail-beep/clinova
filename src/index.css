@@ -22,7 +22,7 @@
     --surface: #FFFFFF;
     --surface-dim: #F1F5F9; /* Slate 100 */
     --text: #0F172A; /* Slate 900 */
-    --text-muted: #64748B; /* Slate 500 */
+    --text-muted: #475569; /* Slate 600 (High contrast) */
     --primary: #2563EB; /* Blue 600 */
     --primary-hover: #1D4ED8; /* Blue 700 */
     --primary-foreground: #FFFFFF;
@@ -38,7 +38,7 @@
     --surface: #1E293B; /* Slate 800 */
     --surface-dim: #334155; /* Slate 700 */
     --text: #F8FAFC; /* Slate 50 */
-    --text-muted: #94A3B8; /* Slate 400 */
+    --text-muted: #CBD5E1; /* Slate 300 (High contrast for bright daylight) */
     --primary: #3B82F6; /* Blue 500 */
     --primary-hover: #60A5FA; /* Blue 400 */
     --primary-foreground: #FFFFFF;

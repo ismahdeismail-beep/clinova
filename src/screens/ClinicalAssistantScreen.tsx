@@ -468,7 +468,7 @@ export default function ClinicalAssistantScreen() {
               <button 
                 key={i}
                 onClick={() => setInput(prompt)}
-                className="shrink-0 px-3 py-1.5 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)] border border-[var(--border)] rounded-full text-xs font-medium text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors"
+                className="shrink-0 px-3 py-1.5 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)] border border-[var(--border)] rounded-full text-xs font-medium text-[var(--text-muted)] hover:text-[var(--primary)] transition-colors whitespace-nowrap"
               >
                 {prompt}
               </button>

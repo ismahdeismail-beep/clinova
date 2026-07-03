@@ -178,6 +178,52 @@ app.post('/api/gemini/autofill', async (req, res) => {
     const vitalsLabs = formData['vitals-labs'] || {};
     const diagnosis = formData.diagnosis || {};
 
+    // Programmatic Renal & GFR calculation engine (Cockcroft-Gault Equation)
+    let calculatedCrCl: number | null = null;
+    let renalInsight = '';
+    
+    const age = parseFloat(admission.patient_age);
+    const weight = parseFloat(admission.patient_weight);
+    const scrStr = vitalsLabs.creat ? String(vitalsLabs.creat).trim() : '';
+    const sex = admission.patient_sex ? String(admission.patient_sex).toLowerCase() : '';
+    
+    if (age && weight && scrStr) {
+      const scrMatch = scrStr.match(/[\d.]+/);
+      if (scrMatch) {
+        const scrVal = parseFloat(scrMatch[0]);
+        if (scrVal > 0) {
+          // Detect unit: umol/L vs mg/dL
+          let isUmol = true; 
+          if (scrStr.toLowerCase().includes('mg') || scrVal < 8) {
+            isUmol = false; // Probably mg/dL
+          }
+          
+          let scrMg = scrVal;
+          if (isUmol) {
+            scrMg = scrVal / 88.4; // Convert umol/L to mg/dL
+          }
+          
+          let crclVal = ((140 - age) * weight) / (72 * scrMg);
+          if (sex === 'female') {
+            crclVal *= 0.85;
+          }
+          calculatedCrCl = Math.round(crclVal * 10) / 10;
+          
+          if (calculatedCrCl >= 90) {
+            renalInsight = `Normal Renal Function (Estimated CrCl: ${calculatedCrCl} mL/min)`;
+          } else if (calculatedCrCl >= 60) {
+            renalInsight = `Mild Renal Impairment (Estimated CrCl: ${calculatedCrCl} mL/min). Monitor drug doses.`;
+          } else if (calculatedCrCl >= 30) {
+            renalInsight = `Moderate Renal Impairment (Estimated CrCl: ${calculatedCrCl} mL/min). Dose adjustment required for renally cleared drugs (e.g. adjust Penicillins, Cephalosporins, Aminoglycosides, LMWH).`;
+          } else if (calculatedCrCl >= 15) {
+            renalInsight = `Severe Renal Impairment (Estimated CrCl: ${calculatedCrCl} mL/min). Critical dose adjustments required. Contraindicate Metformin, NSAIDs, etc.`;
+          } else {
+            renalInsight = `Kidney Failure / ESRD (Estimated CrCl: ${calculatedCrCl} mL/min). Avoid renally cleared nephrotoxins, max dose reductions mandatory.`;
+          }
+        }
+      }
+    }
+
     const patientContext = `
 === PATIENT DEMOGRAPHICS & ADMISSION ===
 Name: ${admission.patient_name || 'N/A'}
@@ -221,6 +267,9 @@ ${diagnosis.diagnoses_list || 'N/A'}
     const prompt = `
 You are Clinova OS, an advanced Clinical Pharmacy Assistant and AI Knowledge Engine.
 Based on the provided Patient Context, uploaded reference notes, and Kenya Drug Index (KDI) clinical rules, generate recommendations.
+
+=== PROGRAMMATIC RENAL CALCULUS ENGINE ===
+Calculated CrCl Insight: ${renalInsight || 'Insufficient data (Age, Weight, or Serum Creatinine missing) to calculate Cockcroft-Gault CrCl.'}
 
 === ACTIVE SECTIONS TO GENERATE ===
 - Pharmacological & Non-pharmacological Treatment Plan: ${opt.treatment ? 'YES, GENERATE IN FULL DETAIL' : 'NO, SKIP (leave empty or return empty fields)'}
@@ -299,6 +348,25 @@ CRITICAL SAFETY & TRUTH CONSTRAINT: You must be extremely careful and NEVER assu
               type: Type.STRING,
               description: 'Actionable and clear counselling points for the patient or caregiver, clearly numbered or bulleted. Return empty if Counselling is marked as SKIP.',
             },
+            safety_verification: {
+              type: Type.OBJECT,
+              description: 'Automatic clinical safety and guideline-directed verification checklist.',
+              properties: {
+                is_grounded_in_case: { type: Type.BOOLEAN, description: 'True if all recommendations are strictly grounded in actual case findings and no speculations are made' },
+                renal_adjustment_checked: { type: Type.BOOLEAN, description: 'True if renal function (CrCl/Creatinine) was assessed and adjusted' },
+                safety_flags_identified: { 
+                  type: Type.ARRAY, 
+                  items: { type: Type.STRING },
+                  description: 'Any high-risk clinical alerts or safety concerns identified for this regimen (e.g., "High-dose Amoxicillin in renal impairment", "Potential QT prolongation"). Leave empty if none.' 
+                },
+                clinical_evidence_sources: {
+                  type: Type.ARRAY,
+                  items: { type: Type.STRING },
+                  description: 'Specific clinical guidelines, manuals, or standard references cited (e.g., "KDI Section 4.2", "WHO Model Formulary").'
+                }
+              },
+              required: ['is_grounded_in_case', 'renal_adjustment_checked', 'safety_flags_identified', 'clinical_evidence_sources']
+            }
           },
           required: [
             'pharmacological_treatments',
@@ -307,6 +375,7 @@ CRITICAL SAFETY & TRUTH CONSTRAINT: You must be extremely careful and NEVER assu
             'care_plan_non_pharma',
             'care_plan_monitoring',
             'counselling_points',
+            'safety_verification',
           ],
         },
       },

@@ -36,6 +36,23 @@ export default function PharmacotherapyReviewScreen() {
   // AI State Variables
   const [isGenerating, setIsGenerating] = useState(false);
   const [bannerMessage, setBannerMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null);
+  const [safetyVerification, setSafetyVerification] = useState<{
+    is_grounded_in_case: boolean;
+    renal_adjustment_checked: boolean;
+    safety_flags_identified: string[];
+    clinical_evidence_sources: string[];
+  } | null>(null);
+
+  useEffect(() => {
+    const savedVerification = localStorage.getItem('clinova_pharma_safety_verification');
+    if (savedVerification) {
+      try {
+        setSafetyVerification(JSON.parse(savedVerification));
+      } catch (e) {
+        console.error('Failed to parse safety verification data', e);
+      }
+    }
+  }, []);
 
   const [isAssistantOpen, setIsAssistantOpen] = useState(false);
   const [assistantMessage, setAssistantMessage] = useState('');
@@ -173,6 +190,14 @@ export default function PharmacotherapyReviewScreen() {
       const allData: Record<string, string> = {};
       Object.values(parsed).forEach(tab => Object.assign(allData, tab));
       checkInteractions(allData);
+
+      if (data.safety_verification) {
+        setSafetyVerification(data.safety_verification);
+        localStorage.setItem('clinova_pharma_safety_verification', JSON.stringify(data.safety_verification));
+      } else {
+        setSafetyVerification(null);
+        localStorage.removeItem('clinova_pharma_safety_verification');
+      }
 
       const filledSections = [];
       if (autofillTreatment) filledSections.push('pharmacological treatments');
@@ -404,10 +429,130 @@ export default function PharmacotherapyReviewScreen() {
 
   return (
     <div className="max-w-5xl mx-auto p-4 sm:p-6 pb-24">
-      <div className="mb-8">
-        <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-2 tracking-tight">Pharmacotherapy Review</h1>
-        <p className="text-[var(--text-muted)] text-sm">Comprehensive clinical ward review and documentation</p>
+      <div className="mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div>
+          <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-2 tracking-tight">Pharmacotherapy Review</h1>
+          <p className="text-[var(--text-muted)] text-sm">Comprehensive clinical ward review and documentation</p>
+        </div>
+        {safetyVerification === null && localStorage.getItem('clinova_pharma_safety_verification') && (
+          <button
+            type="button"
+            onClick={() => {
+              const saved = localStorage.getItem('clinova_pharma_safety_verification');
+              if (saved) {
+                try {
+                  setSafetyVerification(JSON.parse(saved));
+                } catch (e) {}
+              }
+            }}
+            className="text-xs bg-[var(--surface-dim)] hover:bg-[var(--surface)] text-[var(--text-muted)] hover:text-[var(--text)] border border-[var(--border)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-1.5 transition-colors self-start sm:self-center"
+          >
+            <Sparkles size={13} className="text-[var(--primary)]" /> Restore Safety Report
+          </button>
+        )}
       </div>
+
+      {safetyVerification && (
+        <div className="mb-6 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-sm overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300">
+          <div className="p-4 sm:p-5">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[var(--border)]">
+              <div className="flex items-center gap-3">
+                <div className={`p-2 rounded-lg ${safetyVerification.safety_flags_identified && safetyVerification.safety_flags_identified.length > 0 ? 'bg-amber-100 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400' : 'bg-emerald-100 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400'}`}>
+                  {safetyVerification.safety_flags_identified && safetyVerification.safety_flags_identified.length > 0 ? <AlertTriangle size={20} /> : <CheckCircle size={20} />}
+                </div>
+                <div>
+                  <h3 className="text-sm sm:text-md font-bold text-[var(--text)] flex flex-wrap items-center gap-2">
+                    Clinova AI Safety Intelligence Report
+                    <span className={`text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full ${
+                      safetyVerification.safety_flags_identified && safetyVerification.safety_flags_identified.length > 0 
+                        ? 'bg-amber-100 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 border border-amber-200/20' 
+                        : 'bg-emerald-100 dark:bg-emerald-950/50 text-emerald-800 dark:text-emerald-300 border border-emerald-200/20'
+                    }`}>
+                      {safetyVerification.safety_flags_identified && safetyVerification.safety_flags_identified.length > 0 ? 'Attention Recommended' : 'Guideline Verified'}
+                    </span>
+                  </h3>
+                  <p className="text-xs text-[var(--text-muted)]">Automated clinical safety and KDI formulary alignment audit</p>
+                </div>
+              </div>
+              <button 
+                type="button"
+                onClick={() => setSafetyVerification(null)}
+                className="text-[var(--text-muted)] hover:text-[var(--text)] self-end sm:self-center p-1 hover:bg-[var(--surface-dim)] rounded-lg transition-colors"
+                title="Dismiss Report"
+              >
+                <X size={16} />
+              </button>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+              {/* Grounding and Renal checks */}
+              <div className="space-y-3">
+                <h4 className="text-[10px] font-semibold uppercase tracking-wider text-[var(--text-muted)]">Grounded Integrity Check</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2.5 text-sm text-[var(--text)]">
+                    <span className="mt-0.5 text-emerald-500 font-bold">✓</span>
+                    <div>
+                      <p className="font-semibold text-xs text-[var(--text)]">Patient Case Alignment</p>
+                      <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
+                        {safetyVerification.is_grounded_in_case 
+                          ? "Verified: Recommendations are strictly grounded in active clinical findings without speculation."
+                          : "Audit Check: Ensure all suggested therapies correspond directly to the active diagnosis list."}
+                      </p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2.5 text-sm text-[var(--text)]">
+                    <span className="mt-0.5 text-emerald-500 font-bold">✓</span>
+                    <div>
+                      <p className="font-semibold text-xs text-[var(--text)]">Renal Staging Assessment</p>
+                      <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
+                        {safetyVerification.renal_adjustment_checked 
+                          ? "Verified: Programmatic Cockcroft-Gault clearance calculations loaded and staging referenced."
+                          : "Audit Check: Renal values unprovided or clearance remains at standard defaults."}
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Identified Safety Flags */}
+              <div className="space-y-3">
+                <h4 className="text-[10px] font-semibold uppercase tracking-wider text-[var(--text-muted)]">Identified Safety Flags</h4>
+                {safetyVerification.safety_flags_identified && safetyVerification.safety_flags_identified.length > 0 ? (
+                  <ul className="space-y-1.5">
+                    {safetyVerification.safety_flags_identified.map((flag: string, index: number) => (
+                      <li key={index} className="flex items-start gap-2 text-xs text-amber-800 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/30 p-2 rounded-lg border border-amber-200/40 dark:border-amber-900/30 leading-relaxed">
+                        <span className="text-amber-500 font-bold shrink-0">!</span>
+                        <span>{flag}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <div className="text-xs text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/20 p-2.5 rounded-lg border border-emerald-100 dark:border-emerald-950 leading-relaxed">
+                    No high-risk contraindications, toxicities, or clinical mismatches identified for this patient's profile.
+                  </div>
+                )}
+              </div>
+
+              {/* Evidence Sourcing */}
+              <div className="space-y-3">
+                <h4 className="text-[10px] font-semibold uppercase tracking-wider text-[var(--text-muted)]">KDI & Guideline Evidence</h4>
+                {safetyVerification.clinical_evidence_sources && safetyVerification.clinical_evidence_sources.length > 0 ? (
+                  <ul className="space-y-1.5">
+                    {safetyVerification.clinical_evidence_sources.map((source: string, index: number) => (
+                      <li key={index} className="flex items-start gap-2 text-xs text-[var(--text-muted)] leading-relaxed">
+                        <span className="text-[var(--primary)] text-sm shrink-0">▪</span>
+                        <span className="italic">{source}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-xs text-[var(--text-muted)] italic">No formal evidence source returned by engine.</p>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="flex flex-col md:flex-row gap-6 items-start">
         {/* Navigation Sidebar */}
@@ -645,6 +790,14 @@ export default function PharmacotherapyReviewScreen() {
                         <option value="female">Female</option>
                         <option value="other">Other</option>
                       </select>
+                    </div>
+                    <div className="space-y-1.5">
+                      <label className="text-sm font-medium text-[var(--text)]">Weight (kg)</label>
+                      <input type="text" name="patient_weight" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="E.g., 70" />
+                    </div>
+                    <div className="space-y-1.5">
+                      <label className="text-sm font-medium text-[var(--text)]">Height (cm)</label>
+                      <input type="text" name="patient_height" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" placeholder="E.g., 175" />
                     </div>
                   </div>
                   

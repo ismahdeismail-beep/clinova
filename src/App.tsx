@@ -121,15 +121,15 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
   return (
     <>
       <div className={`fixed inset-y-0 left-0 z-50 w-64 bg-[var(--surface)] border-r border-[var(--border)] transform transition-transform duration-200 ease-in-out md:translate-x-0 overflow-y-auto flex flex-col ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-        <div className="p-6 pt-[calc(1.5rem+env(safe-area-inset-top,0px))] border-b border-[var(--border)] shrink-0 flex items-center justify-between">
-          <div>
-            <div className="flex items-center gap-2 text-[var(--primary)] font-bold text-xl tracking-tight">
-              <div className="flex items-center justify-center">
-                <ClinovaLogo size={28} variant="colored" />
-              </div>
-              CLINOVA
+        <div className="h-16 px-4 lg:px-6 pt-[env(safe-area-inset-top,0px)] border-b border-[var(--border)] shrink-0 flex items-center justify-between">
+          <div className="flex items-center gap-2 text-[var(--primary)] font-bold text-xl tracking-tight mt-1">
+            <div className="flex items-center justify-center">
+              <ClinovaLogo size={28} variant="colored" />
             </div>
-            <p className="text-[10px] text-[var(--text-muted)] mt-1 font-semibold uppercase tracking-wider">Clinical Intelligence</p>
+            <div className="flex flex-col leading-none">
+              <span>CLINOVA</span>
+              <span className="text-[9px] text-[var(--text-muted)] font-semibold uppercase tracking-wider mt-0.5">Clinical OS</span>
+            </div>
           </div>
           <button 
             onClick={() => setIsOpen(false)}
@@ -138,7 +138,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
             <X size={18} />
           </button>
         </div>
-        <nav className="p-4 space-y-1 flex-1 mt-2">
+        <nav className="p-3 space-y-0.5 flex-1 mt-2">
           {links.map((link) => {
             const isActive = location.pathname === link.to;
             const Icon = link.icon;
@@ -231,9 +231,9 @@ function AppContent() {
         </React.Suspense>
       )}
       <TopNavigation onMenuClick={() => setIsSidebarOpen(!isSidebarOpen)} />
-      <div className="flex flex-1 overflow-hidden relative">
+      <div className="flex-1 flex overflow-hidden relative">
         <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
-        <main id="main-scroll-area" className="flex-1 md:ml-64 w-full overflow-y-auto pt-[calc(4rem+env(safe-area-inset-top,0px))]">
+        <main id="main-scroll-area" className="flex-1 md:pl-64 overflow-y-auto pt-[calc(4rem+env(safe-area-inset-top,0px))]">
           <React.Suspense fallback={
             <div className="h-full flex flex-col items-center justify-center p-8 text-center">
               <div className="flex flex-col items-center gap-5 animate-pulse">

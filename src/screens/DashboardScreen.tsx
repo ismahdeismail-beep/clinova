@@ -25,6 +25,8 @@ import {
   ChevronDown,
   Award,
   Settings2,
+  X,
+  PlusCircle,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
@@ -111,6 +113,22 @@ const STUDY_TRACKS: Record<string, { title: string; subtitle: string; points: st
   },
 };
 
+const ALL_CLINICAL_SYSTEMS = [
+  'Cardiology',
+  'Nephrology',
+  'Gastrointestinal',
+  'Infectious Disease',
+  'Endocrinology',
+  'Neurology',
+  'Pulmonology',
+  'Pediatrics',
+  'Critical Care',
+  'Oncology',
+  'Toxicology',
+  'Psychiatry',
+  'Hematology'
+];
+
 export default function DashboardScreen() {
   const [searchQuery, setSearchQuery] = useState("");
   const [showHandoverModal, setShowHandoverModal] = useState(false);
@@ -120,44 +138,45 @@ export default function DashboardScreen() {
   const [isEditingPrefs, setIsEditingPrefs] = useState(false);
   const [prefLevel, setPrefLevel] = useState(userData?.academicLevel || 'Senior Pharmacy Student');
   const [prefTopics, setPrefTopics] = useState<string[]>(userData?.clinicalInterests || ['Cardiology', 'Nephrology']);
+  const [prefsSearchQuery, setPrefsSearchQuery] = useState("");
 
   return (
-    <div className="p-4 sm:p-6 md:p-8 max-w-6xl mx-auto space-y-6 sm:space-y-8 pb-24">
+    <div className="p-4 sm:p-6 md:p-8 max-w-6xl mx-auto space-y-4 md:space-y-8 pb-24">
       {/* Welcome Banner */}
-      <div className="bg-gradient-to-r from-[var(--primary)] to-indigo-600 rounded-2xl p-6 sm:p-8 text-white shadow-sm relative overflow-hidden">
+      <div className="bg-gradient-to-r from-[var(--primary)] to-indigo-600 rounded-2xl p-5 md:p-8 text-white shadow-sm relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-        <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+        <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-4 md:gap-6">
           <div className="flex flex-col sm:flex-row items-start gap-4 flex-1">
-            <div className="w-14 h-14 rounded-2xl bg-white/15 flex items-center justify-center text-white shrink-0 shadow-inner backdrop-blur-md">
-              <ClinovaLogo size={32} variant="light" />
+            <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white/15 flex items-center justify-center text-white shrink-0 shadow-inner backdrop-blur-md">
+              <ClinovaLogo size={28} variant="light" />
             </div>
             <div>
-              <h1 className="text-2xl sm:text-3xl font-bold mb-2 tracking-tight flex items-center gap-2 flex-wrap">
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-1.5 md:mb-2 tracking-tight flex items-center gap-2 flex-wrap">
                 Clinova OS 
                 {userData?.academicLevel && (
-                  <span className="text-[10px] bg-white/20 px-2.5 py-0.5 rounded-full font-bold border border-white/20 uppercase tracking-wider block sm:inline-block">
+                  <span className="text-[9px] md:text-[10px] bg-white/20 px-2 md:px-2.5 py-0.5 rounded-full font-bold border border-white/20 uppercase tracking-wider block sm:inline-block">
                     {userData.academicLevel}
                   </span>
                 )}
               </h1>
-              <p className="text-white/85 max-w-lg text-sm leading-relaxed">
+              <p className="text-white/85 max-w-lg text-xs md:text-sm leading-relaxed">
                 {isAdmin
                   ? "Admin Repository Management: Add authoritative books, formularies, and reference URLs accessible to the entire learning community."
                   : `Welcome back, ${userData?.name || 'Student'}! Adapt your clinical focus to your active rotations. Your clinical hub is currently adjusted to your professional stage and interests.`}
               </p>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full lg:w-auto">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 md:gap-3 w-full lg:w-auto">
             <Link
               to="/knowledge"
-              className="flex items-center justify-center gap-2 px-5 py-3 bg-white/10 hover:bg-white/20 text-white rounded-xl font-semibold backdrop-blur-sm transition-all text-sm shrink-0 w-full sm:w-max"
+              className="flex items-center justify-center gap-2 px-4 py-2.5 md:px-5 md:py-3 bg-white/10 hover:bg-white/20 text-white rounded-xl font-semibold backdrop-blur-sm transition-all text-sm shrink-0 w-full sm:w-max"
             >
               <BookOpen size={18} />
               Online Books Hub
             </Link>
             <Link
               to="/assistant"
-              className="flex items-center justify-center gap-2 px-5 py-3 bg-white text-[var(--primary)] rounded-xl font-semibold hover:shadow-md transition-all text-sm shrink-0 w-full sm:w-max"
+              className="flex items-center justify-center gap-2 px-4 py-2.5 md:px-5 md:py-3 bg-white text-[var(--primary)] rounded-xl font-semibold hover:shadow-md transition-all text-sm shrink-0 w-full sm:w-max"
             >
               <Bot size={18} />
               Auto AI Review Form
@@ -181,73 +200,73 @@ export default function DashboardScreen() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search Kenya Drug Index, Guidelines, your notes, or ask a clinical question..."
-              className="w-full pl-12 pr-4 py-4 bg-[var(--surface)] border-2 border-[var(--border)] rounded-2xl focus:border-[var(--primary)] focus:ring-4 focus:ring-[var(--primary)]/10 outline-none text-[var(--text)] text-base shadow-sm transition-all backdrop-blur-md"
+              className="w-full pl-12 pr-4 py-3.5 md:py-4 bg-[var(--surface)] border-2 border-[var(--border)] rounded-2xl focus:border-[var(--primary)] focus:ring-4 focus:ring-[var(--primary)]/10 outline-none text-[var(--text)] text-sm md:text-base shadow-sm transition-all backdrop-blur-md"
             />
-            <div className="absolute inset-y-0 right-4 flex items-center">
-              <span className="text-xs font-medium text-[var(--text-muted)] bg-[var(--surface-dim)] px-2 py-1 rounded border border-[var(--border)]">
+            <div className="absolute inset-y-0 right-4 flex items-center hidden sm:flex">
+              <span className="text-[10px] md:text-xs font-medium text-[var(--text-muted)] bg-[var(--surface-dim)] px-2 py-1 rounded border border-[var(--border)]">
                 ⌘ K
               </span>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
             {/* Left Column (Main Content) */}
-            <div className="md:col-span-2 space-y-6 md:space-y-8">
+            <div className="md:col-span-2 space-y-4 md:space-y-8">
               {/* Quick Actions */}
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="font-semibold text-[var(--text)] text-lg tracking-tight">
+                <div className="flex items-center justify-between mb-3 md:mb-4">
+                  <h3 className="font-semibold text-[var(--text)] text-base md:text-lg tracking-tight">
                     Quick Access Tools
                   </h3>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
                   <Link
                     to="/review"
-                    className="flex flex-col items-center justify-center p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
+                    className="flex flex-col items-center justify-center p-4 md:p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
                   >
-                    <div className="w-14 h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                      <ClipboardList size={28} />
+                    <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform">
+                      <ClipboardList size={24} />
                     </div>
-                    <span className="text-sm font-bold text-[var(--text)]">
+                    <span className="text-xs md:text-sm font-bold text-[var(--text)]">
                       Care Plan
                     </span>
-                    <span className="text-xs text-[var(--text-muted)] mt-1">Review &amp; Audit</span>
+                    <span className="text-[10px] md:text-xs text-[var(--text-muted)] mt-1">Review &amp; Audit</span>
                   </Link>
                   <Link
                     to="/knowledge"
-                    className="flex flex-col items-center justify-center p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
+                    className="flex flex-col items-center justify-center p-4 md:p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
                   >
-                    <div className="w-14 h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                      <BookOpen size={28} />
+                    <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform">
+                      <BookOpen size={24} />
                     </div>
-                    <span className="text-sm font-bold text-[var(--text)]">
+                    <span className="text-xs md:text-sm font-bold text-[var(--text)]">
                       Online Books
                     </span>
-                    <span className="text-xs text-[var(--text-muted)] mt-1">KDI, Medscape</span>
+                    <span className="text-[10px] md:text-xs text-[var(--text-muted)] mt-1">KDI, Medscape</span>
                   </Link>
                   <Link
                     to="/knowledge"
-                    className="flex flex-col items-center justify-center p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
+                    className="flex flex-col items-center justify-center p-4 md:p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
                   >
-                    <div className="w-14 h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                      <GraduationCap size={28} />
+                    <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform">
+                      <GraduationCap size={24} />
                     </div>
-                    <span className="text-sm font-bold text-[var(--text)]">
+                    <span className="text-xs md:text-sm font-bold text-[var(--text)]">
                       Study Prep
                     </span>
-                    <span className="text-xs text-[var(--text-muted)] mt-1">Convert Notes</span>
+                    <span className="text-[10px] md:text-xs text-[var(--text-muted)] mt-1">Convert Notes</span>
                   </Link>
                   <Link
                     to="/assistant"
-                    className="flex flex-col items-center justify-center p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
+                    className="flex flex-col items-center justify-center p-4 md:p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
                   >
-                    <div className="w-14 h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                      <Bot size={28} />
+                    <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform">
+                      <Bot size={24} />
                     </div>
-                    <span className="text-sm font-bold text-[var(--text)]">
+                    <span className="text-xs md:text-sm font-bold text-[var(--text)]">
                       Auto AI
                     </span>
-                    <span className="text-xs text-[var(--text-muted)] mt-1">Ask Questions</span>
+                    <span className="text-[10px] md:text-xs text-[var(--text-muted)] mt-1">Ask Questions</span>
                   </Link>
                 </div>
               </div>
@@ -402,32 +421,100 @@ export default function DashboardScreen() {
                         </select>
                       </div>
                       
-                      <div>
-                        <label className="text-xs font-bold text-[var(--text)] block mb-1">Clinical Systems (Toggle)</label>
-                        <div className="grid grid-cols-2 gap-1.5 pt-1">
-                          {['Cardiology', 'Nephrology', 'Gastrointestinal', 'Infectious Disease', 'Endocrinology', 'Neurology'].map((system) => {
-                            const isChecked = prefTopics.includes(system);
-                            return (
+                       <div>
+                        <label className="text-xs font-bold text-[var(--text)] block mb-1">Clinical Systems &amp; Topics</label>
+                        
+                        {/* Interactive Search for Clinical Interests */}
+                        <div className="space-y-2.5">
+                          <div className="relative">
+                            <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" />
+                            <input
+                              type="text"
+                              value={prefsSearchQuery}
+                              onChange={(e) => setPrefsSearchQuery(e.target.value)}
+                              placeholder="Search or type custom focus..."
+                              className="w-full text-xs pl-8 pr-8 py-2 bg-[var(--surface)] border border-[var(--border)] focus:border-[var(--primary)] outline-none rounded-xl text-[var(--text)]"
+                            />
+                            {prefsSearchQuery && (
                               <button
-                                key={system}
                                 type="button"
-                                onClick={() => {
-                                  setPrefTopics(prev => 
-                                    prev.includes(system) 
-                                      ? prev.filter(t => t !== system) 
-                                      : [...prev, system]
-                                  );
-                                }}
-                                className={`px-2 py-1.5 rounded-lg border text-left text-[11px] font-medium transition-all cursor-pointer ${
-                                  isChecked 
-                                    ? 'border-[var(--primary)] bg-[var(--primary-container)]/25 text-[var(--primary)]' 
-                                    : 'border-[var(--border)] bg-[var(--surface)] text-[var(--text-muted)]'
-                                }`}
+                                onClick={() => setPrefsSearchQuery('')}
+                                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)] hover:text-[var(--text)] p-0.5 rounded-full hover:bg-[var(--surface-dim)]"
                               >
-                                {isChecked ? '✓ ' : ''}{system}
+                                <X size={12} />
                               </button>
-                            );
-                          })}
+                            )}
+                          </div>
+
+                          {/* Custom Topic Generator Prompt */}
+                          {prefsSearchQuery.trim() && !(ALL_CLINICAL_SYSTEMS.some(s => s.toLowerCase() === prefsSearchQuery.trim().toLowerCase()) || prefTopics.some(t => t.toLowerCase() === prefsSearchQuery.trim().toLowerCase())) && (
+                            <button
+                              type="button"
+                              onClick={() => {
+                                const trimmed = prefsSearchQuery.trim();
+                                const formatted = trimmed.charAt(0).toUpperCase() + trimmed.slice(1);
+                                setPrefTopics(prev => prev.includes(formatted) ? prev : [...prev, formatted]);
+                                setPrefsSearchQuery('');
+                              }}
+                              className="w-full text-left p-2.5 bg-[var(--primary-container)]/10 border border-dashed border-[var(--primary)]/30 rounded-xl text-xs font-semibold text-[var(--primary)] hover:border-[var(--primary)]/50 transition-all flex items-center justify-between group cursor-pointer"
+                            >
+                              <span className="flex items-center gap-1.5 min-w-0">
+                                <PlusCircle size={14} className="shrink-0" />
+                                <span className="truncate">Add custom: "{prefsSearchQuery.trim()}"</span>
+                              </span>
+                              <ChevronRight size={14} className="text-[var(--primary)] group-hover:translate-x-0.5 transition-transform shrink-0" />
+                            </button>
+                          )}
+
+                          {/* Active Focus Badges */}
+                          {prefTopics.length > 0 && (
+                            <div className="flex flex-wrap gap-1 items-center p-1.5 rounded-xl bg-[var(--surface)] border border-[var(--border)]/40 max-h-[100px] overflow-y-auto">
+                              {prefTopics.map(topic => (
+                                <span key={topic} className="inline-flex items-center gap-1 text-[10px] bg-[var(--primary-container)]/50 text-[var(--primary)] font-semibold px-2 py-0.5 rounded-lg border border-[var(--primary)]/10 animate-in zoom-in-95 duration-100">
+                                  {topic}
+                                  <button
+                                    type="button"
+                                    onClick={() => setPrefTopics(prev => prev.filter(t => t !== topic))}
+                                    className="hover:bg-[var(--primary)]/20 p-0.5 rounded-full text-[var(--primary)] transition-colors cursor-pointer"
+                                  >
+                                    <X size={8} strokeWidth={3} />
+                                  </button>
+                                </span>
+                              ))}
+                            </div>
+                          )}
+
+                          {/* Suggestions grid with matching */}
+                          <div className="grid grid-cols-2 gap-1.5 pt-1 max-h-[150px] overflow-y-auto pr-1">
+                            {Array.from(new Set([...ALL_CLINICAL_SYSTEMS, ...prefTopics]))
+                              .filter(system => {
+                                const q = prefsSearchQuery.toLowerCase();
+                                return system.toLowerCase().includes(q);
+                              })
+                              .map((system) => {
+                                const isChecked = prefTopics.includes(system);
+                                return (
+                                  <button
+                                    key={system}
+                                    type="button"
+                                    onClick={() => {
+                                      setPrefTopics(prev => 
+                                        prev.includes(system) 
+                                          ? prev.filter(t => t !== system) 
+                                          : [...prev, system]
+                                      );
+                                    }}
+                                    className={`px-2 py-1.5 rounded-lg border text-left text-[11px] font-medium transition-all cursor-pointer truncate ${
+                                      isChecked 
+                                        ? 'border-[var(--primary)] bg-[var(--primary-container)]/25 text-[var(--primary)] font-semibold' 
+                                        : 'border-[var(--border)] bg-[var(--surface)] text-[var(--text-muted)]'
+                                    }`}
+                                  >
+                                    {isChecked ? '✓ ' : ''}{system}
+                                  </button>
+                                );
+                              })}
+                          </div>
                         </div>
                       </div>
                       

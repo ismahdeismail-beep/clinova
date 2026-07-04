@@ -353,8 +353,8 @@ export default function PatientsScreen() {
   };
 
   return (
-    <div className="p-6 max-w-[1400px] mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+    <div className="p-4 sm:p-6 md:p-8 max-w-[1400px] mx-auto space-y-4 md:space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4 md:mb-6">
         <div>
           <h1 className="text-3xl font-bold text-[var(--text)] mb-2 tracking-tight">
             Patients

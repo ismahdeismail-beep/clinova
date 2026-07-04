@@ -610,6 +610,208 @@ Ensure the output is highly educational, precise, and matches the clinical stand
   }
 });
 
+// AI Integrated Learning Module Content Generator
+app.post('/api/gemini/generate-module-content', async (req, res) => {
+  try {
+    const { moduleTitle, academicLevel } = req.body;
+
+    if (!moduleTitle) {
+      return res.status(400).json({ error: 'Missing moduleTitle' });
+    }
+
+    const level = academicLevel || 'Senior Pharmacy Student';
+
+    const prompt = `You are Clinova Curriculum Engine, an expert clinical pharmacy professor and OSCE examiner.
+Generate a comprehensive clinical education module for the topic "${moduleTitle}", tailored for a "${level}" level.
+
+The module MUST contain high-yield information structured exactly matching this requirement:
+- Overview: concise topic introduction and clinical importance.
+- Learning Objectives: 3 key outcomes the student should achieve.
+- Anatomy & Physiology Review: normal structure and function relevant to this topic.
+- Pathophysiology: disease mechanism and progression.
+- Pharmacology details:
+  * Drug Classes: main drug classes in this therapeutic area.
+  * Individual Drugs: key exemplary medications.
+  * Mechanism of Action: how these drugs work.
+  * Pharmacokinetics & Pharmacodynamics: absorption, metabolism, renal clearance, or receptor binding notes.
+  * Indications, Contraindications, Adverse Effects, Drug Interactions, and Monitoring Parameters.
+- Clinical Pharmacy & Therapeutics:
+  * Therapeutic Guidelines: first-line/second-line selections (incorporate Kenyan National Guidelines / KEML or KDI standards if applicable).
+  * Patient Assessment: key clinical exams, vital signs, lab markers (especially CrCl, renal adjustments).
+  * Medication Review, Clinical Decision Making, and Care Plans.
+  * Patient Counselling & Clinical Pearls.
+- Disease Management: brief management algorithm/guide.
+- Clinical Cases: 1 detailed, high-yield patient scenario with questions and answers.
+- OSCE Practice: 1 practical counseling station or clinical OSCE scenario with clear instructions.
+- Practice Questions: 2 board-style MCQs with multiple options, correct answer, and detailed explanations.
+- Flashcards: 2 high-yield study flashcards with front and back.
+- Mnemonics: 1 creative memory aid with a title, the phrase, and a breakdown.
+- Summary Notes: a quick markdown review summary.
+
+Ensure the content is medically accurate, authoritative, and strictly integrated (combining physiology, pharmacology, and clinical therapeutics seamlessly). Keep explanations highly focused, practical, and in bullet points to avoid truncation.`;
+
+    const response = await getGeminiClient().models.generateContent({
+      model: 'gemini-3.5-flash',
+      contents: prompt,
+      config: {
+        systemInstruction: `You are an expert clinical pharmacy curriculum builder. Generate medically accurate clinical modules based on official guidelines. Respond with a strictly formatted JSON object matching the requested schema.`,
+        responseMimeType: 'application/json',
+        responseSchema: {
+          type: Type.OBJECT,
+          properties: {
+            overview: { type: Type.STRING, description: 'Concise overview' },
+            learningObjectives: { 
+              type: Type.ARRAY, 
+              items: { type: Type.STRING },
+              description: '3 clear learning objectives'
+            },
+            anatomyReview: { type: Type.STRING, description: 'Anatomy and physiology review' },
+            pathophysiology: { type: Type.STRING, description: 'Pathophysiology notes' },
+            pharmacology: {
+              type: Type.OBJECT,
+              properties: {
+                drugClasses: { type: Type.STRING },
+                individualDrugs: { type: Type.STRING },
+                moa: { type: Type.STRING },
+                pkpd: { type: Type.STRING },
+                monitoring: { type: Type.STRING }
+              },
+              required: ['drugClasses', 'individualDrugs', 'moa', 'pkpd', 'monitoring']
+            },
+            clinicalPharmacy: {
+              type: Type.OBJECT,
+              properties: {
+                guidelines: { type: Type.STRING },
+                carePlans: { type: Type.STRING },
+                counseling: { type: Type.STRING },
+                pearls: { type: Type.STRING }
+              },
+              required: ['guidelines', 'carePlans', 'counseling', 'pearls']
+            },
+            diseaseManagement: { type: Type.STRING },
+            clinicalCases: {
+              type: Type.ARRAY,
+              items: {
+                type: Type.OBJECT,
+                properties: {
+                  title: { type: Type.STRING },
+                  scenario: { type: Type.STRING },
+                  questions: {
+                    type: Type.ARRAY,
+                    items: {
+                      type: Type.OBJECT,
+                      properties: {
+                        q: { type: Type.STRING },
+                        a: { type: Type.STRING }
+                      },
+                      required: ['q', 'a']
+                    }
+                  }
+                },
+                required: ['title', 'scenario', 'questions']
+              }
+            },
+            oscePractice: { type: Type.STRING },
+            questions: {
+              type: Type.ARRAY,
+              items: {
+                type: Type.OBJECT,
+                properties: {
+                  question: { type: Type.STRING },
+                  options: { type: Type.ARRAY, items: { type: Type.STRING } },
+                  answer: { type: Type.STRING },
+                  explanation: { type: Type.STRING }
+                },
+                required: ['question', 'options', 'answer', 'explanation']
+              }
+            },
+            flashcards: {
+              type: Type.ARRAY,
+              items: {
+                type: Type.OBJECT,
+                properties: {
+                  front: { type: Type.STRING },
+                  back: { type: Type.STRING }
+                },
+                required: ['front', 'back']
+              }
+            },
+            mnemonics: {
+              type: Type.ARRAY,
+              items: {
+                type: Type.OBJECT,
+                properties: {
+                  title: { type: Type.STRING },
+                  phrase: { type: Type.STRING },
+                  breakdown: { type: Type.STRING }
+                },
+                required: ['title', 'phrase', 'breakdown']
+              }
+            },
+            summaryNotes: { type: Type.STRING }
+          },
+          required: [
+            'overview', 'learningObjectives', 'anatomyReview', 'pathophysiology', 
+            'pharmacology', 'clinicalPharmacy', 'diseaseManagement', 'clinicalCases', 
+            'oscePractice', 'questions', 'flashcards', 'mnemonics', 'summaryNotes'
+          ]
+        }
+      }
+    });
+
+    res.json(JSON.parse(response.text || '{}'));
+  } catch (error: any) {
+    console.error('Module content generation error:', error);
+    res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable' : error.message) : 'AI module generation failed' });
+  }
+});
+
+// Context-Aware Module AI Tutor
+app.post('/api/gemini/module-tutor', async (req, res) => {
+  try {
+    const { moduleTitle, chatHistory, userMessage } = req.body;
+
+    if (!moduleTitle || !userMessage) {
+      return res.status(400).json({ error: 'Missing moduleTitle or userMessage' });
+    }
+
+    const systemInstruction = `You are Clinova AI Module Tutor, an expert Clinical Pharmacy Professor and OSCE Mentor.
+You are strictly context-locked to the selected module: "${moduleTitle}".
+Your objective is to answer questions, guide patient cases, teach clinical pearls, and review OSCE practice STRICTLY within the scope of "${moduleTitle}".
+
+If the user asks questions unrelated to clinical pharmacy, pharmacology, or specifically the therapeutics of "${moduleTitle}", gently pivot them back to the study material.
+Always reference reliable resources such as the Kenya Drug Index (KDI), Kenya National Guidelines, WHO Essential Medicines, and established pharmacotherapy standards. Keep answers highly interactive, clear, and clinical-grade.`;
+
+    const contents = [];
+    if (chatHistory && Array.isArray(chatHistory)) {
+      for (const msg of chatHistory) {
+        contents.push({
+          role: msg.role === 'assistant' ? 'model' : 'user',
+          parts: [{ text: msg.content }],
+        });
+      }
+    }
+
+    contents.push({
+      role: 'user',
+      parts: [{ text: userMessage }],
+    });
+
+    const response = await getGeminiClient().models.generateContent({
+      model: 'gemini-3.5-flash',
+      contents: contents,
+      config: {
+        systemInstruction: systemInstruction,
+      },
+    });
+
+    res.json({ text: response.text });
+  } catch (error: any) {
+    console.error('Module Tutor error:', error);
+    res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable' : error.message) : 'Module Tutor failed' });
+  }
+});
+
 // Secure Cloudinary Destroy API
 app.post('/api/cloudinary/destroy', async (req, res) => {
   try {

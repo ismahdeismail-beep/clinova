@@ -51,25 +51,75 @@ app.post('/api/cloudinary/upload', upload.single('file'), async (req, res) => {
   }
 });
 
-// Initialize Gemini Client (Lazy Initialization to prevent startup crashes when API key is missing)
-let aiClient: GoogleGenAI | null = null;
+// Multi-Key Gemini Initialization & Fallback handling
+let aiClients: GoogleGenAI[] = [];
+let currentClientIndex = 0;
 
-function getGeminiClient(): GoogleGenAI {
-  if (!aiClient) {
-    const key = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
-    if (!key) {
-      throw new Error('GEMINI_API_KEY is not configured. Please add your Gemini API Key in the AI Studio Settings menu to power the AI features of Clinova.');
-    }
-    aiClient = new GoogleGenAI({
-      apiKey: key,
-      httpOptions: {
-        headers: {
-          'User-Agent': 'aistudio-build',
-        },
-      },
-    });
+function initializeGeminiClients() {
+  if (aiClients.length > 0) return;
+  
+  const keys = new Set<string>();
+  
+  // 1. Process GEMINI_API_KEY (can be comma-separated)
+  const mainKeyEnv = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
+  if (mainKeyEnv) {
+    mainKeyEnv.split(',').map(k => k.trim()).filter(k => k).forEach(k => keys.add(k));
   }
-  return aiClient;
+  
+  // 2. Process numbered keys like GEMINI_API_KEY_1, GEMINI_API_KEY_2, etc.
+  for (let i = 1; i <= 10; i++) {
+    const fallbackKey = process.env[`GEMINI_API_KEY_${i}`];
+    if (fallbackKey) {
+      fallbackKey.split(',').map(k => k.trim()).filter(k => k).forEach(k => keys.add(k));
+    }
+  }
+
+  if (keys.size === 0) {
+    throw new Error('GEMINI_API_KEY is not configured. Please add your Gemini API Key in the AI Studio Settings menu to power the AI features of Clinova.');
+  }
+
+  aiClients = Array.from(keys).map(apiKey => new GoogleGenAI({
+    apiKey,
+    httpOptions: {
+      headers: {
+        'User-Agent': 'aistudio-build',
+      },
+    },
+  }));
+}
+
+async function generateContentWithFallback(request: any) {
+  initializeGeminiClients();
+  
+  const maxAttempts = aiClients.length;
+  let lastError: any;
+
+  for (let attempt = 0; attempt < maxAttempts; attempt++) {
+    try {
+      const client = aiClients[currentClientIndex];
+      const response = await client.models.generateContent(request);
+      return response;
+    } catch (error: any) {
+      lastError = error;
+      const errorMessage = error?.message || '';
+      const isQuotaError = error?.status === 429 || 
+                           errorMessage.includes('429') || 
+                           errorMessage.includes('quota') || 
+                           errorMessage.includes('Too Many Requests');
+      
+      if (isQuotaError && aiClients.length > 1) {
+        console.warn(`[Gemini API] Quota exceeded on client ${currentClientIndex}. Switching to next API key...`);
+        currentClientIndex = (currentClientIndex + 1) % aiClients.length;
+        // Try the next key in the next iteration
+      } else {
+        // Not a quota error, throw immediately
+        throw error;
+      }
+    }
+  }
+  
+  // If we exhaust all keys and all are over quota
+  throw new Error(`All available Gemini API keys (${maxAttempts}) have exceeded their quota or failed. Last error: ${lastError?.message}`);
 }
 
 // File Extraction Endpoint using Gemini inlineData
@@ -140,7 +190,7 @@ If a field is not found, omit it.`;
       return res.status(400).json({ error: 'Invalid extraction type' });
     }
 
-    const response = await getGeminiClient().models.generateContent({
+    const response = await generateContentWithFallback({
       model: 'gemini-3.5-flash',
       contents: [
         { role: 'user', parts: [ { text: prompt }, { inlineData } ] }
@@ -286,7 +336,7 @@ Generate appropriate, guideline-based recommendations. Ensure you adjust doses f
     `;
 
     // We use a structured JSON schema to populate the rest of the form perfectly!
-    const response = await getGeminiClient().models.generateContent({
+    const response = await generateContentWithFallback({
       model: 'gemini-3.5-flash',
       contents: prompt,
       config: {
@@ -427,7 +477,7 @@ User Clinical Query: "${userMessage}"
       ` }],
     });
 
-    const response = await getGeminiClient().models.generateContent({
+    const response = await generateContentWithFallback({
       model: 'gemini-3.5-flash',
       contents: contents,
       config: {
@@ -471,7 +521,7 @@ Provide 3 highly relevant clinical board-style questions with answers, detailed 
       prompt += `\n\n=== PODCAST SECTION ===\nAlso generate a simulated educational audio podcast transcript between two clinical hosts (Dr. Clara and Dr. Noah) discussing this topic. Keep it lively, engaging, and highly educational. Start the transcript with "[Dr. Clara]:" or "[Dr. Noah]:".`;
     }
 
-    const response = await getGeminiClient().models.generateContent({
+    const response = await generateContentWithFallback({
       model: 'gemini-3.5-flash',
       contents: prompt,
       config: {
@@ -533,7 +583,7 @@ For each drug profile, include:
 5. **Key Patient Monitoring Guidelines**: Crucial clinical/lab monitoring indices (e.g., serum Cr, electrolytes, INR).
 `;
 
-    const response = await getGeminiClient().models.generateContent({
+    const response = await generateContentWithFallback({
       model: 'gemini-3.5-flash',
       contents: prompt,
       config: {
@@ -574,7 +624,7 @@ Ensure each case contains:
 
 Ensure the output is highly educational, precise, and matches the clinical standards of KDI (Kenya Drug Index).`;
 
-    const response = await getGeminiClient().models.generateContent({
+    const response = await generateContentWithFallback({
       model: 'gemini-3.5-flash',
       contents: prompt,
       config: {
@@ -650,7 +700,7 @@ The module MUST contain high-yield information structured exactly matching this 
 
 Ensure the content is medically accurate, authoritative, and strictly integrated (combining physiology, pharmacology, and clinical therapeutics seamlessly). Keep explanations highly focused, practical, and in bullet points to avoid truncation.`;
 
-    const response = await getGeminiClient().models.generateContent({
+    const response = await generateContentWithFallback({
       model: 'gemini-3.5-flash',
       contents: prompt,
       config: {
@@ -797,7 +847,7 @@ Always reference reliable resources such as the Kenya Drug Index (KDI), Kenya Na
       parts: [{ text: userMessage }],
     });
 
-    const response = await getGeminiClient().models.generateContent({
+    const response = await generateContentWithFallback({
       model: 'gemini-3.5-flash',
       contents: contents,
       config: {

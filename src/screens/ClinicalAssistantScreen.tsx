@@ -3,7 +3,7 @@ import {
   Bot, Send, User, BrainCircuit, Library, Pill, Activity, 
   FlaskConical, FileText, CheckCircle2, ChevronRight, Loader2, 
   Database, AlertCircle, Mic, MicOff, ArrowDown, X, Layers, Sparkles,
-  Download, FileDown
+  Download, FileDown, Copy, Check
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { GhostWriterText } from '../components/GhostWriterText';
@@ -113,6 +113,47 @@ function AssistantMessageBubble({
         <span className="inline-block w-1.5 h-3.5 ml-0.5 align-middle bg-[var(--primary)] animate-pulse" />
       )}
     </div>
+  );
+}
+
+function CopyButton({ text }: { text: string }) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(text);
+      } else {
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-9999px";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+      }
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error("Failed to copy text: ", err);
+    }
+  };
+
+  return (
+    <button
+      onClick={handleCopy}
+      type="button"
+      className="p-1.5 rounded-lg border border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] transition-all cursor-pointer opacity-0 group-hover/bubble:opacity-100 focus:opacity-100 sm:opacity-0 max-sm:opacity-100 shrink-0 self-start mt-1.5 shadow-xs flex items-center justify-center hover:border-[var(--primary)]/30 select-none"
+      title="Copy to clipboard"
+    >
+      {copied ? (
+        <Check size={13} className="text-emerald-500 animate-in zoom-in-75 duration-100" />
+      ) : (
+        <Copy size={13} />
+      )}
+    </button>
   );
 }
 
@@ -911,22 +952,25 @@ export default function ClinicalAssistantScreen() {
 
                   {/* Bubble Content */}
                   {!msg.isThinking && (
-                    <div className={`rounded-2xl px-5 py-3.5 shadow-xs text-xs sm:text-sm leading-relaxed ${
-                      isUser 
-                        ? 'bg-[var(--primary)] text-white rounded-tr-none shadow-md' 
-                        : 'bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] rounded-tl-none shadow-xs'
-                    }`}>
-                      {isUser ? (
-                        <p className="whitespace-pre-wrap">{msg.content}</p>
-                      ) : (
-                        <AssistantMessageBubble 
-                          content={msg.content} 
-                          isNew={msg.isNew} 
-                          onComplete={() => {
-                            setMessages(prev => prev.map(m => m.id === msg.id ? { ...m, isNew: false } : m));
-                          }}
-                        />
-                      )}
+                    <div className="flex items-start gap-2.5 max-w-full group/bubble">
+                      <div className={`rounded-2xl px-5 py-3.5 shadow-xs text-xs sm:text-sm leading-relaxed ${
+                        isUser 
+                          ? 'bg-[var(--primary)] text-white rounded-tr-none shadow-md' 
+                          : 'bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] rounded-tl-none shadow-xs'
+                      }`}>
+                        {isUser ? (
+                          <p className="whitespace-pre-wrap">{msg.content}</p>
+                        ) : (
+                          <AssistantMessageBubble 
+                            content={msg.content} 
+                            isNew={msg.isNew} 
+                            onComplete={() => {
+                              setMessages(prev => prev.map(m => m.id === msg.id ? { ...m, isNew: false } : m));
+                            }}
+                          />
+                        )}
+                      </div>
+                      {!isUser && <CopyButton text={msg.content} />}
                     </div>
                   )}
 

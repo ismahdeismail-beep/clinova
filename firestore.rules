@@ -23,10 +23,8 @@ service cloud.firestore {
 
     // 1. Users Collection Rules
     match /users/{userId} {
-      // Users can read and write their own profile details
-      allow read, write: if isOwner(userId);
-      // Administrators can read any user profile
-      allow read: if isAdmin();
+      // Users can read and write their own profile details, and admins can do both
+      allow read, write: if isOwner(userId) || isAdmin();
     }
 
     // 2. Files Collection Rules

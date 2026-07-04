@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import crypto from 'crypto';
 
 import multer from 'multer';
-import { generateContentWithFallback, getProviderStatusList } from './src/server/aiRouter.js';
+import { generateContentWithFallback, getProviderStatusList, getGlobalProviderOverride, setGlobalProviderOverride, providerStatuses } from './src/server/aiRouter.js';
 
 // Load environment variables
 dotenv.config();
@@ -865,4 +865,47 @@ export default app;
 app.get('/api/admin/providers', (req, res) => {
   res.json(getProviderStatusList());
 });
+
+// GET Admin Router Configuration
+app.get('/api/admin/config', (req, res) => {
+  res.json({
+    globalProviderOverride: getGlobalProviderOverride()
+  });
+});
+
+// POST Admin Router Configuration
+app.post('/api/admin/config', (req, res) => {
+  const { globalProviderOverride } = req.body;
+  setGlobalProviderOverride(globalProviderOverride === undefined ? null : globalProviderOverride);
+  res.json({
+    success: true,
+    globalProviderOverride: getGlobalProviderOverride()
+  });
+});
+
+// POST Toggle Provider Health (Simulate Outages)
+app.post('/api/admin/providers/toggle-healthy', (req, res) => {
+  const { providerName } = req.body;
+  if (!providerName || !providerStatuses[providerName]) {
+    return res.status(400).json({ error: 'Invalid provider name' });
+  }
+  
+  const provider = providerStatuses[providerName];
+  provider.isHealthy = !provider.isHealthy;
+  
+  // If we marked it unhealthy, set its error count/rate
+  if (!provider.isHealthy) {
+    provider.errorRate = 100;
+  } else {
+    provider.errorRate = (provider.errorCount / Math.max(1, provider.requestCount)) * 100;
+  }
+  
+  res.json({
+    success: true,
+    providerName,
+    isHealthy: provider.isHealthy,
+    errorRate: provider.errorRate
+  });
+});
+
 

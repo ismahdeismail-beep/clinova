@@ -104,12 +104,33 @@ function mapToOpenAIFormat(request: any) {
   return payload;
 }
 
+let globalProviderOverride: string | null = null;
+
+export function setGlobalProviderOverride(provider: string | null) {
+  globalProviderOverride = provider;
+  console.log(`[AI Router] Global provider override set to: ${provider}`);
+}
+
+export function getGlobalProviderOverride() {
+  return globalProviderOverride;
+}
+
 // Fallback logic
 export async function generateContentWithFallback(request: any, providerOverride?: string) {
+  const activeOverride = providerOverride || globalProviderOverride;
   const providers = ['Google AI', 'Cerebras', 'OpenRouter', 'Mistral', 'Cohere', 'Jina'];
   
-  if (providerOverride) {
-    return executeProvider(providerOverride, request);
+  if (activeOverride) {
+    try {
+      console.log(`[AI Router] FORCING override provider: ${activeOverride}`);
+      const startTime = Date.now();
+      const response = await executeProvider(activeOverride, request);
+      recordProviderSuccess(activeOverride, Date.now() - startTime);
+      return response;
+    } catch (err: any) {
+      console.warn(`[AI Router] Forced provider override ${activeOverride} failed. Falling back to multi-provider chain. Error: ${err.message}`);
+      // If forced provider fails, we fall back to other providers so the app doesn't break
+    }
   }
 
   let lastError = null;

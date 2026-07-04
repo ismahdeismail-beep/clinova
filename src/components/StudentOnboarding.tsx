@@ -149,27 +149,27 @@ interface LevelOption {
 
 const ACADEMIC_LEVELS: LevelOption[] = [
   {
-    id: 'Junior Pharmacy Student',
-    title: 'Junior Pharmacy Student (Y1-2)',
-    description: 'Focuses on foundations of drug mechanisms, standard dosages, and basic clinical terminology.',
+    id: 'BPharm Year 2: Foundational Pharmacology',
+    title: 'BPharm Year 2: Foundational Pharmacology',
+    description: 'Basic principles including pharmacokinetics (ADME) and pharmacodynamics (drug-receptor, agonists/antagonists).',
     icon: GraduationCap
   },
   {
-    id: 'Senior Pharmacy Student',
-    title: 'Senior Pharmacy Student (Y3-5)',
-    description: 'Focuses on clinical therapeutics, disease guidelines, contraindications, and care planning.',
+    id: 'BPharm Year 3: Systems & Clinical Intro',
+    title: 'BPharm Year 3: Systems Pharmacology',
+    description: 'Autonomic system, CVS therapeutics, renal diuretics, patient profile analysis, and pharmaceutical care planning.',
     icon: BookOpen
   },
   {
-    id: 'Pharmacy Intern',
-    title: 'Pharmacy Intern / Novice Practitioner',
-    description: 'Focuses on real ward reviews, active cases, KDI formulary checking, and drug interaction audits.',
+    id: 'BPharm Year 4: Advanced Systems & ID',
+    title: 'BPharm Year 4: Advanced & Infectious Diseases',
+    description: 'Endocrine, GI, respiratory agents, chemotherapy mechanisms, and infectious disease therapeutic management.',
     icon: Award
   },
   {
-    id: 'Clinical Pharmacist',
-    title: 'Clinical Pharmacist / Resident',
-    description: 'Focuses on evidence-graded sources, toxicities, post-grad guidelines, and high-risk renal staging.',
+    id: 'BPharm Year 5: Specialty & Toxicology',
+    title: 'BPharm Year 5: Specialty & Toxicology',
+    description: 'Pediatric/geriatric therapeutics, oncology pharmacy, hospital ward rounds, toxicology, and TDM.',
     icon: Stethoscope
   }
 ];
@@ -177,7 +177,7 @@ const ACADEMIC_LEVELS: LevelOption[] = [
 export default function StudentOnboarding({ onClose }: { onClose?: () => void }) {
   const { userData, updatePreferences } = useAuth();
   const [step, setStep] = useState(1);
-  const [selectedLevel, setSelectedLevel] = useState<string>('Senior Pharmacy Student');
+  const [selectedLevel, setSelectedLevel] = useState<string>('BPharm Year 3: Systems & Clinical Intro');
   const [selectedTopics, setSelectedTopics] = useState<string[]>(['Cardiology', 'Nephrology']);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');

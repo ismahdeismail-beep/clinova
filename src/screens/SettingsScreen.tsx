@@ -7,6 +7,7 @@ export default function SettingsScreen() {
   const { userData } = useAuth();
   const { theme, setTheme } = useTheme();
   const [activeTab, setActiveTab] = useState<'profile' | 'api'>('profile');
+  const isAdmin = userData?.role === 'admin';
 
   return (
     <div className="p-6 max-w-5xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
@@ -15,36 +16,38 @@ export default function SettingsScreen() {
         <p className="text-[var(--text-muted)] text-sm">Manage your profile, credentials, and app intelligence settings.</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className={isAdmin ? "grid grid-cols-1 md:grid-cols-4 gap-6" : "max-w-3xl mx-auto"}>
         {/* Left Navigation Tabs */}
-        <div className="md:col-span-1 space-y-2">
-          <button 
-            onClick={() => setActiveTab('profile')}
-            className={`w-full text-left px-4 py-3 rounded-xl text-sm transition-all flex items-center gap-2.5 font-medium ${
-              activeTab === 'profile' 
-                ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm' 
-                : 'bg-[var(--surface)] hover:bg-[var(--surface-dim)] text-[var(--text)] border border-[var(--border)]'
-            }`}
-          >
-            <User size={16} />
-            Profile Settings
-          </button>
-          
-          <button 
-            onClick={() => setActiveTab('api')}
-            className={`w-full text-left px-4 py-3 rounded-xl text-sm transition-all flex items-center gap-2.5 font-medium ${
-              activeTab === 'api' 
-                ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm' 
-                : 'bg-[var(--surface)] hover:bg-[var(--surface-dim)] text-[var(--text)] border border-[var(--border)]'
-            }`}
-          >
-            <Cpu size={16} />
-            AI Brain & API Setup
-          </button>
-        </div>
+        {isAdmin && (
+          <div className="md:col-span-1 space-y-2">
+            <button 
+              onClick={() => setActiveTab('profile')}
+              className={`w-full text-left px-4 py-3 rounded-xl text-sm transition-all flex items-center gap-2.5 font-medium ${
+                activeTab === 'profile' 
+                  ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm' 
+                  : 'bg-[var(--surface)] hover:bg-[var(--surface-dim)] text-[var(--text)] border border-[var(--border)]'
+              }`}
+            >
+              <User size={16} />
+              Profile Settings
+            </button>
+            
+            <button 
+              onClick={() => setActiveTab('api')}
+              className={`w-full text-left px-4 py-3 rounded-xl text-sm transition-all flex items-center gap-2.5 font-medium ${
+                activeTab === 'api' 
+                  ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm' 
+                  : 'bg-[var(--surface)] hover:bg-[var(--surface-dim)] text-[var(--text)] border border-[var(--border)]'
+              }`}
+            >
+              <Cpu size={16} />
+              AI Brain & API Setup
+            </button>
+          </div>
+        )}
 
-        {/* Right Content Area */}
-        <div className="md:col-span-3">
+        {/* Content Area */}
+        <div className={isAdmin ? "md:col-span-3" : "w-full"}>
           {activeTab === 'profile' ? (
             <div className="bg-[var(--surface)] p-6 rounded-2xl border border-[var(--border)] shadow-sm space-y-6 animate-in fade-in duration-200">
               <h3 className="text-lg font-bold text-[var(--text)] flex items-center gap-2">

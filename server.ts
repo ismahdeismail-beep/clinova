@@ -599,10 +599,16 @@ app.post('/api/gemini/generate-module-content', async (req, res) => {
       return res.status(400).json({ error: 'Missing moduleTitle' });
     }
 
-    const level = academicLevel || 'Senior Pharmacy Student';
+    const level = academicLevel || 'BPharm Year 3: Systems & Clinical Intro';
 
-    const prompt = `You are Clinova Curriculum Engine, an expert clinical pharmacy professor and OSCE examiner.
+    const prompt = `You are Clinova Curriculum Engine, an expert clinical pharmacy professor and OSCE examiner at Kabarak University School of Pharmacy.
 Generate a comprehensive clinical education module for the topic "${moduleTitle}", tailored for a "${level}" level.
+
+If the requested level corresponds to a Kabarak BPharm level (Year 2 to Year 5), strictly calibrate the academic depth:
+- BPharm Year 2: Focus heavily on foundational pharmacology (ADME, basic PK/PD, receptor interactions, agonism/antagonism).
+- BPharm Year 3: Integrate systems pharmacology (e.g., CVS, autonomic) with introductory clinical pharmacy skills (patient profile analysis, medication histories).
+- BPharm Year 4: Focus on advanced pharmacotherapy of body systems (endocrine, respiratory) and rigorous infectious diseases therapeutics (chemotherapy, antimicrobial stewardship).
+- BPharm Year 5: Focus on specialized clinical pharmacy (pediatric, geriatric, oncology), advanced hospital rounds, clinical toxicology, and Therapeutic Drug Monitoring (TDM).
 
 The module MUST contain high-yield information structured exactly matching this requirement:
 - Overview: concise topic introduction and clinical importance.

@@ -138,7 +138,7 @@ export function PatientTriage() {
           </div>
           <div>
             <h3 className="font-semibold text-[var(--text)] text-lg tracking-tight">
-              AI Patient Triage
+              Clinical Risk Triage
             </h3>
             <p className="text-xs text-[var(--text-muted)] font-medium">
               Dynamically sorting by clinical risk score

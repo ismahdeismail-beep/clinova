@@ -136,7 +136,7 @@ export default function DashboardScreen() {
   const isAdmin = userData?.role === "admin";
 
   const [isEditingPrefs, setIsEditingPrefs] = useState(false);
-  const [prefLevel, setPrefLevel] = useState(userData?.academicLevel || 'Senior Pharmacy Student');
+  const [prefLevel, setPrefLevel] = useState(userData?.academicLevel || 'BPharm Year 3: Systems & Clinical Intro');
   const [prefTopics, setPrefTopics] = useState<string[]>(userData?.clinicalInterests || ['Cardiology', 'Nephrology']);
   const [prefsSearchQuery, setPrefsSearchQuery] = useState("");
 
@@ -152,7 +152,7 @@ export default function DashboardScreen() {
             </div>
             <div>
               <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-1.5 md:mb-2 tracking-tight flex items-center gap-2 flex-wrap">
-                Clinova OS 
+                Clinova Clinical Companion 
                 {userData?.academicLevel && (
                   <span className="text-[9px] md:text-[10px] bg-white/20 px-2 md:px-2.5 py-0.5 rounded-full font-bold border border-white/20 uppercase tracking-wider block sm:inline-block">
                     {userData.academicLevel}
@@ -161,7 +161,7 @@ export default function DashboardScreen() {
               </h1>
               <p className="text-white/85 max-w-lg text-xs md:text-sm leading-relaxed">
                 {isAdmin
-                  ? "Admin Repository Management: Add authoritative books, formularies, and reference URLs accessible to the entire learning community."
+                  ? "Admin Library Management: Add authoritative books, formularies, and reference URLs accessible to the entire learning community."
                   : `Welcome back, ${userData?.name || 'Student'}! Adapt your clinical focus to your active rotations. Your clinical hub is currently adjusted to your professional stage and interests.`}
               </p>
             </div>
@@ -179,7 +179,7 @@ export default function DashboardScreen() {
               className="flex items-center justify-center gap-2 px-4 py-2.5 md:px-5 md:py-3 bg-white text-[var(--primary)] rounded-xl font-semibold hover:shadow-md transition-all text-sm shrink-0 w-full sm:w-max"
             >
               <Bot size={18} />
-              Auto AI Review Form
+              Clinical Guide Assistant
             </Link>
           </div>
         </div>
@@ -264,7 +264,7 @@ export default function DashboardScreen() {
                       <Bot size={24} />
                     </div>
                     <span className="text-xs md:text-sm font-bold text-[var(--text)]">
-                      Auto AI
+                      Ask Assistant
                     </span>
                     <span className="text-[10px] md:text-xs text-[var(--text-muted)] mt-1">Ask Questions</span>
                   </Link>
@@ -289,10 +289,10 @@ export default function DashboardScreen() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-bold text-[var(--text)] truncate">
-                        Pharmacotherapy Review: IP-89432
+                        Pharmacotherapy Plan: Inpatient #89432
                       </p>
                       <p className="text-xs text-[var(--text-muted)] mt-0.5 truncate">
-                        AI Assisted • Community-Acquired Pneumonia
+                        Clinical Review • Community-Acquired Pneumonia
                       </p>
                       <p className="text-[10px] text-[var(--text-muted)] mt-1.5 font-bold uppercase tracking-wider">
                         2 hours ago
@@ -305,10 +305,10 @@ export default function DashboardScreen() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-bold text-[var(--text)] truncate">
-                        Generated Short Notes
+                        Synthesized Clinical Notes
                       </p>
                       <p className="text-xs text-[var(--text-muted)] mt-0.5 truncate">
-                        From: "Cardiovascular Guidelines 2024.pdf"
+                        Reference: Cardiology Practice Guidelines (2024)
                       </p>
                       <p className="text-[10px] text-[var(--text-muted)] mt-1.5 font-bold uppercase tracking-wider">
                         Yesterday
@@ -371,7 +371,7 @@ export default function DashboardScreen() {
                     </h3>
                     <button 
                       onClick={() => {
-                        setPrefLevel(userData.academicLevel || 'Senior Pharmacy Student');
+                        setPrefLevel(userData.academicLevel || 'BPharm Year 3: Systems & Clinical Intro');
                         setPrefTopics(userData.clinicalInterests || ['Cardiology', 'Nephrology']);
                         setIsEditingPrefs(!isEditingPrefs);
                       }}
@@ -385,7 +385,7 @@ export default function DashboardScreen() {
                     <div className="p-5 space-y-4">
                       <div>
                         <p className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-semibold">Academic Stage</p>
-                        <p className="text-sm font-bold text-[var(--text)] mt-0.5">{userData.academicLevel || 'Senior Pharmacy Student'}</p>
+                        <p className="text-sm font-bold text-[var(--text)] mt-0.5">{userData.academicLevel || 'BPharm Year 3: Systems & Clinical Intro'}</p>
                       </div>
                       <div>
                         <p className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-semibold mb-1.5">Clinical Interests</p>
@@ -412,12 +412,13 @@ export default function DashboardScreen() {
                         <select 
                           value={prefLevel} 
                           onChange={(e) => setPrefLevel(e.target.value)}
-                          className="w-full text-xs p-2.5 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-[var(--text)] focus:border-[var(--primary)] outline-none"
+                          className="w-full text-xs p-2.5 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-[var(--text)] focus:border-[var(--primary)] outline-none cursor-pointer"
                         >
-                          <option value="Junior Pharmacy Student">Junior Pharmacy Student (Y1-2)</option>
-                          <option value="Senior Pharmacy Student">Senior Pharmacy Student (Y3-5)</option>
-                          <option value="Pharmacy Intern">Pharmacy Intern / Novice</option>
-                          <option value="Clinical Pharmacist">Clinical Pharmacist / Resident</option>
+                          <option value="BPharm Year 2: Foundational Pharmacology">BPharm Year 2: Foundational Pharmacology</option>
+                          <option value="BPharm Year 3: Systems & Clinical Intro">BPharm Year 3: Systems Pharmacology</option>
+                          <option value="BPharm Year 4: Advanced Systems & ID">BPharm Year 4: Advanced &amp; Infectious Diseases</option>
+                          <option value="BPharm Year 5: Specialty &amp; Toxicology">BPharm Year 5: Specialty &amp; Toxicology</option>
+                          <option value="Graduate / Clinical Pharmacist">Clinical Pharmacist / Graduate</option>
                         </select>
                       </div>
                       
@@ -595,21 +596,21 @@ export default function DashboardScreen() {
                 <div className="p-5 border-b border-[var(--border)]">
                   <h3 className="font-semibold text-[var(--text)] flex items-center gap-2">
                     <Activity size={18} className="text-[var(--text-muted)]" />
-                    Latest System Updates
+                    Latest Practice Guidelines
                   </h3>
                 </div>
                 <div className="divide-y divide-[var(--border)]">
                   <div className="p-4">
                     <div className="flex items-center gap-2 mb-1.5">
                       <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-[var(--primary-container)] text-[var(--primary)] uppercase tracking-wider">
-                        New Book Added
+                        New Reference Added
                       </span>
                     </div>
                     <p className="text-sm font-bold text-[var(--text)]">
                       Medscape Monographs
                     </p>
                     <p className="text-xs text-[var(--text-muted)] mt-1">
-                      Admin added new online reference links to the library.
+                      Online reference library expanded with newly verified clinical guidelines.
                     </p>
                   </div>
                 </div>
@@ -625,7 +626,7 @@ export default function DashboardScreen() {
               <Users size={24} />
             </div>
             <div>
-              <p className="text-sm text-[var(--text-muted)]">Active Users</p>
+              <p className="text-sm text-[var(--text-muted)]">Active Clinicians</p>
               <p className="text-2xl font-bold text-[var(--text)]">1,248</p>
             </div>
           </div>
@@ -635,8 +636,8 @@ export default function DashboardScreen() {
               <Activity size={24} />
             </div>
             <div>
-              <p className="text-sm text-[var(--text-muted)]">System Health</p>
-              <p className="text-2xl font-bold text-[var(--text)]">99.9%</p>
+              <p className="text-sm text-[var(--text-muted)]">Portal Access Status</p>
+              <p className="text-2xl font-bold text-[var(--text)]">Online</p>
             </div>
           </div>
 
@@ -646,7 +647,7 @@ export default function DashboardScreen() {
             </div>
             <div>
               <p className="text-sm text-[var(--text-muted)]">
-                Pending Updates
+                Pending Guideline Reviews
               </p>
               <p className="text-2xl font-bold text-[var(--text)]">3</p>
             </div>
@@ -657,7 +658,7 @@ export default function DashboardScreen() {
               to="/admin"
               className="inline-flex items-center justify-center w-full bg-[var(--surface)] hover:bg-[var(--surface-dim)] border border-[var(--border)] p-4 rounded-xl text-[var(--primary)] font-medium transition-colors"
             >
-              Open Full Admin Console{" "}
+              Open Administration Command Center{" "}
               <ChevronRight size={18} className="ml-2" />
             </Link>
           </div>

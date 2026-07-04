@@ -227,7 +227,7 @@ export default function KnowledgeBaseScreen() {
   const [modulesQuery, setModulesQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [selectedModule, setSelectedModule] = useState<CurriculumModule | null>(null);
-  const [academicLevel, setAcademicLevel] = useState<string>(userData?.academicLevel || 'Senior Pharmacy Student');
+  const [academicLevel, setAcademicLevel] = useState<string>(userData?.academicLevel || 'BPharm Year 3: Systems & Clinical Intro');
   
   // Module Generation & Workspace State
   const [moduleContent, setModuleContent] = useState<any | null>(null);
@@ -506,11 +506,13 @@ export default function KnowledgeBaseScreen() {
             <select
               value={academicLevel}
               onChange={(e) => setAcademicLevel(e.target.value)}
-              className="text-xs font-semibold bg-[var(--surface)] text-[var(--text)] border-none outline-none py-1 px-2.5 rounded-lg focus:ring-1 focus:ring-[var(--primary)]"
+              className="text-xs font-semibold bg-[var(--surface)] text-[var(--text)] border-none outline-none py-1 px-2.5 rounded-lg focus:ring-1 focus:ring-[var(--primary)] cursor-pointer"
             >
-              <option value="Junior Pharmacy Student">Junior (Y1-2)</option>
-              <option value="Senior Pharmacy Student">Senior (Y3-5)</option>
-              <option value="Pharmacy Intern / Resident">Intern / Resident</option>
+              <option value="BPharm Year 2: Foundational Pharmacology">BPharm Year 2 (Foundational)</option>
+              <option value="BPharm Year 3: Systems & Clinical Intro">BPharm Year 3 (Systems / Intro)</option>
+              <option value="BPharm Year 4: Advanced Systems & ID">BPharm Year 4 (Advanced / Infectious)</option>
+              <option value="BPharm Year 5: Specialty & Toxicology">BPharm Year 5 (Specialty / Toxicology)</option>
+              <option value="Graduate / Clinical Pharmacist">Clinical Pharmacist / Graduate</option>
             </select>
           </div>
         )}

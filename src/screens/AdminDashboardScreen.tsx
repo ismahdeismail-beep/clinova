@@ -9,6 +9,22 @@ export default function AdminDashboardScreen() {
   const [providers, setProviders] = useState<any[]>([]);
   const [latencyHistory, setLatencyHistory] = useState<any[]>([]);
 
+  const [hiddenProviders, setHiddenProviders] = useState<Record<string, boolean>>({});
+
+  const handleLegendClick = (e: any) => {
+    const { dataKey } = e;
+    setHiddenProviders(prev => ({
+      ...prev,
+      [dataKey]: !prev[dataKey]
+    }));
+  };
+
+  const renderLegendText = (value: string, entry: any) => {
+    const { color } = entry;
+    const isHidden = hiddenProviders[value];
+    return <span style={{ color: isHidden ? 'var(--text-muted)' : color, textDecoration: isHidden ? 'line-through' : 'none' }}>{value}</span>;
+  };
+
   useEffect(() => {
     const fetchProviders = () => {
       fetch('/api/admin/providers')
@@ -186,12 +202,17 @@ export default function AdminDashboardScreen() {
                     contentStyle={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', borderRadius: '8px', color: 'var(--text)' }}
                     itemStyle={{ color: 'var(--text)' }}
                   />
-                  <Legend wrapperStyle={{ fontSize: '12px', paddingTop: '10px' }} />
+                  <Legend 
+                    wrapperStyle={{ fontSize: '12px', paddingTop: '10px', cursor: 'pointer' }} 
+                    onClick={handleLegendClick} 
+                    formatter={renderLegendText}
+                  />
                   {providers.map((provider, idx) => (
                     <Line 
                       key={provider.name} 
                       type="monotone" 
                       dataKey={provider.name} 
+                      hide={hiddenProviders[provider.name] === true}
                       stroke={['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#6366f1'][idx % 7]} 
                       strokeWidth={2}
                       dot={false}

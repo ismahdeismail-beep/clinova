@@ -1,10 +1,40 @@
-import React, { useState } from 'react';
-import { Users, Database, ShieldAlert, Activity, Server, TrendingUp, CheckCircle, Loader2 } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Users, Database, ShieldAlert, Activity, Server, TrendingUp, CheckCircle, Loader2, Cpu } from 'lucide-react';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
 export default function AdminDashboardScreen() {
   const [isAuditing, setIsAuditing] = useState(false);
   const [auditComplete, setAuditComplete] = useState(false);
   const [auditResult, setAuditResult] = useState<string | null>(null);
+  const [providers, setProviders] = useState<any[]>([]);
+  const [latencyHistory, setLatencyHistory] = useState<any[]>([]);
+
+  useEffect(() => {
+    const fetchProviders = () => {
+      fetch('/api/admin/providers')
+        .then(res => res.json())
+        .then(data => {
+          setProviders(data);
+          
+          const now = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+          const dataPoint: any = { time: now };
+          data.forEach((p: any) => {
+            // we'll just plot averageLatencyMs, or a mock real-time value if averageLatencyMs is 0 to make the chart look alive
+            dataPoint[p.name] = p.averageLatencyMs || 0;
+          });
+          
+          setLatencyHistory(prev => {
+            const newHistory = [...prev, dataPoint];
+            return newHistory.slice(-20); // Keep last 20 points
+          });
+        })
+        .catch(err => console.error("Failed to load providers", err));
+    };
+
+    fetchProviders();
+    const interval = setInterval(fetchProviders, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   const handleRunAudit = () => {
     setIsAuditing(true);
@@ -119,6 +149,100 @@ export default function AdminDashboardScreen() {
               <p><span className="text-[var(--success)]">[INFO]</span> 09:00:00 - Scheduled metric aggregation finished.</p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="bg-[var(--surface)] rounded-xl border border-[var(--border)] shadow-sm overflow-hidden mt-8">
+        <div className="p-5 border-b border-[var(--border)] flex justify-between items-center">
+          <div className="flex items-center gap-2">
+             <Cpu size={20} className="text-[var(--primary)]" />
+             <h3 className="font-semibold text-[var(--text)]">AI Provider Router Status</h3>
+          </div>
+          <span className="text-xs font-medium px-2.5 py-1 bg-[var(--primary)]/10 text-[var(--primary)] rounded-full">Multi-Provider Active</span>
+        </div>
+        
+        {providers.length > 0 && (
+          <div className="p-6 border-b border-[var(--border)] bg-[var(--bg)]">
+            <h4 className="text-sm font-semibold text-[var(--text-muted)] uppercase tracking-wider mb-4">Real-Time Latency (ms)</h4>
+            <div className="h-64 w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart data={latencyHistory} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
+                  <XAxis 
+                    dataKey="time" 
+                    stroke="var(--text-muted)" 
+                    fontSize={12} 
+                    tickLine={false} 
+                    axisLine={false} 
+                  />
+                  <YAxis 
+                    stroke="var(--text-muted)" 
+                    fontSize={12} 
+                    tickLine={false} 
+                    axisLine={false}
+                    tickFormatter={(value) => `${value}ms`}
+                  />
+                  <Tooltip 
+                    contentStyle={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', borderRadius: '8px', color: 'var(--text)' }}
+                    itemStyle={{ color: 'var(--text)' }}
+                  />
+                  <Legend wrapperStyle={{ fontSize: '12px', paddingTop: '10px' }} />
+                  {providers.map((provider, idx) => (
+                    <Line 
+                      key={provider.name} 
+                      type="monotone" 
+                      dataKey={provider.name} 
+                      stroke={['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#6366f1'][idx % 7]} 
+                      strokeWidth={2}
+                      dot={false}
+                      activeDot={{ r: 4 }}
+                      isAnimationActive={false}
+                    />
+                  ))}
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+        )}
+
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm text-left">
+            <thead className="bg-[var(--bg)] text-[var(--text-muted)] text-xs uppercase border-b border-[var(--border)]">
+              <tr>
+                <th className="px-6 py-3 font-medium">Provider</th>
+                <th className="px-6 py-3 font-medium">Status</th>
+                <th className="px-6 py-3 font-medium">Uptime</th>
+                <th className="px-6 py-3 font-medium">Requests</th>
+                <th className="px-6 py-3 font-medium">Avg Latency</th>
+                <th className="px-6 py-3 font-medium">Error Rate</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[var(--border)] text-[var(--text)]">
+              {providers.length > 0 ? providers.map((provider, i) => (
+                <tr key={i} className="hover:bg-[var(--surface-dim)] transition-colors">
+                  <td className="px-6 py-4 font-medium flex items-center gap-2">
+                     <div className={`w-2 h-2 rounded-full ${provider.isHealthy ? 'bg-[var(--success)]' : 'bg-[var(--destructive)]'}`} />
+                     {provider.name}
+                  </td>
+                  <td className="px-6 py-4">
+                     <span className={`px-2 py-1 text-[10px] uppercase font-bold rounded-full ${provider.isHealthy ? 'bg-[var(--success)]/10 text-[var(--success)]' : 'bg-[var(--destructive)]/10 text-[var(--destructive)]'}`}>
+                       {provider.isHealthy ? 'Operational' : 'Degraded'}
+                     </span>
+                  </td>
+                  <td className="px-6 py-4 font-mono">{provider.uptime.toFixed(1)}%</td>
+                  <td className="px-6 py-4 font-mono">{provider.requestCount.toLocaleString()}</td>
+                  <td className="px-6 py-4 font-mono">{provider.averageLatencyMs ? `${Math.round(provider.averageLatencyMs)}ms` : '-'}</td>
+                  <td className="px-6 py-4 font-mono">{provider.errorRate.toFixed(1)}%</td>
+                </tr>
+              )) : (
+                <tr>
+                   <td colSpan={6} className="px-6 py-8 text-center text-[var(--text-muted)]">
+                      <div className="flex justify-center items-center gap-2"><Loader2 className="animate-spin" size={16}/> Loading provider metrics...</div>
+                   </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

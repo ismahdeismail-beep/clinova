@@ -331,7 +331,7 @@ export default function DashboardScreen() {
                   </div>
                   
                   <div className="grid grid-cols-1 gap-4">
-                    {userData.clinicalInterests.map((interest) => {
+                    {Array.from(new Set(userData.clinicalInterests || [])).map((interest) => {
                       const track = STUDY_TRACKS[interest];
                       if (!track) return null;
                       return (
@@ -391,7 +391,7 @@ export default function DashboardScreen() {
                         <p className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-semibold mb-1.5">Clinical Interests</p>
                         <div className="flex flex-wrap gap-1.5">
                           {userData.clinicalInterests && userData.clinicalInterests.length > 0 ? (
-                            userData.clinicalInterests.map((interest) => (
+                            Array.from(new Set(userData.clinicalInterests)).map((interest) => (
                               <span key={interest} className="text-xs bg-[var(--primary-container)]/50 text-[var(--primary)] px-2.5 py-1 rounded-xl font-medium border border-[var(--primary)]/10">
                                 {interest}
                               </span>
@@ -469,7 +469,7 @@ export default function DashboardScreen() {
                           {/* Active Focus Badges */}
                           {prefTopics.length > 0 && (
                             <div className="flex flex-wrap gap-1 items-center p-1.5 rounded-xl bg-[var(--surface)] border border-[var(--border)]/40 max-h-[100px] overflow-y-auto">
-                              {prefTopics.map(topic => (
+                              {Array.from(new Set(prefTopics)).map(topic => (
                                 <span key={topic} className="inline-flex items-center gap-1 text-[10px] bg-[var(--primary-container)]/50 text-[var(--primary)] font-semibold px-2 py-0.5 rounded-lg border border-[var(--primary)]/10 animate-in zoom-in-95 duration-100">
                                   {topic}
                                   <button

@@ -29,6 +29,16 @@ export function InstallPWA() {
       return; // Do not show anything if already installed
     }
 
+    const isStandaloneEnv = 
+      window.matchMedia('(display-mode: standalone)').matches ||
+      (navigator as any).standalone === true ||
+      document.referrer.includes('android-app://');
+
+    if (isStandaloneEnv) {
+      setIsStandalone(true);
+      return; 
+    }
+
     // 2. Detect iOS & Safari
     const ua = navigator.userAgent;
     const ios = /iPad|iPhone|iPod/.test(ua) && !(window as any).MSStream;
@@ -101,8 +111,10 @@ export function InstallPWA() {
     setShowFloatingBtn(false);
   };
 
-  // If already standalone, or PWA install is not supported and not iOS Safari, show nothing
-  if (!promptInstall && !(isIOSDevice && isSafariBrowser)) {
+  const [isStandalone, setIsStandalone] = useState(false);
+
+  // If already standalone (installed and open), show absolutely nothing
+  if (isStandalone) {
     return null;
   }
 
@@ -135,7 +147,7 @@ export function InstallPWA() {
               initial={{ scale: 0.9, opacity: 0, y: 20 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
-              className="relative w-full max-w-md overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 shadow-2xl backdrop-blur-md"
+              className="relative w-full max-w-sm overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 shadow-2xl backdrop-blur-md"
             >
               {/* Close Button */}
               <button
@@ -147,99 +159,46 @@ export function InstallPWA() {
               </button>
 
               {/* Unique Launcher Logo Header */}
-              <div className="flex flex-col items-center text-center mt-2 mb-6">
-                <div className="relative mb-4 group">
+              <div className="flex flex-col items-center text-center mt-2 mb-4">
+                <div className="relative mb-3 group">
                   {/* Glowing backdrop effect */}
                   <div className="absolute inset-0 bg-[var(--primary)] rounded-2xl opacity-35 blur-xl group-hover:opacity-50 transition-opacity"></div>
                   <img
                     src="/clinova_logo.jpg"
                     alt="Clinova OS Logo"
                     referrerPolicy="no-referrer"
-                    className="relative w-20 h-20 rounded-2xl shadow-xl object-cover border border-white/20"
+                    className="relative w-16 h-16 rounded-2xl shadow-xl object-cover border border-white/20"
                   />
                   <div className="absolute -bottom-1 -right-1 bg-[var(--primary)] text-[var(--primary-foreground)] p-1 rounded-full border border-[var(--surface)]">
-                    <Smartphone className="w-3.5 h-3.5" />
+                    <Smartphone className="w-3 h-3" />
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold tracking-tight text-[var(--text)]">
-                  Clinova OS Native App
+                <h3 className="text-lg font-bold tracking-tight text-[var(--text)]">
+                  Install Clinova OS
                 </h3>
-                <p className="text-sm text-[var(--text-muted)] mt-1">
-                  Clinical Intelligence System
+                <p className="text-xs text-[var(--text-muted)] mt-1 max-w-[240px]">
+                  Add to your home screen for quick offline access to medical databases and drug indices.
                 </p>
               </div>
 
-              {/* Native App Benefits */}
-              <div className="space-y-4 mb-6">
-                <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-[var(--primary-container)] text-[var(--primary)] mt-0.5">
-                    <Zap className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-semibold text-[var(--text)]">Instant Loading</h4>
-                    <p className="text-xs text-[var(--text-muted)]">Launches immediately from your home screen dock with zero browser overhead.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-[var(--primary-container)] text-[var(--primary)] mt-0.5">
-                    <Shield className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-semibold text-[var(--text)]">Offline Clinical Reliability</h4>
-                    <p className="text-xs text-[var(--text-muted)]">Maintains access to medicine guides, triage, and handbook references offline.</p>
-                  </div>
-                </div>
-              </div>
-
               {/* Action Area */}
-              {isIOSDevice && isSafariBrowser ? (
-                /* Custom Instructions for iOS Safari */
-                <div className="border border-[var(--border)] rounded-xl bg-[var(--surface-dim)] p-4 space-y-3.5">
-                  <p className="text-xs font-medium text-center text-[var(--text)] flex items-center justify-center gap-1.5">
-                    <Share className="w-4 h-4 text-[var(--primary)]" />
-                    iOS Installation Instructions
-                  </p>
-                  <div className="text-xs space-y-2.5 text-[var(--text-muted)]">
-                    <div className="flex items-center gap-2">
-                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[var(--primary-container)] text-[var(--primary)] font-bold text-[10px]">1</span>
-                      <span>Tap the Safari <span className="font-semibold text-[var(--text)]">Share button</span> at the bottom of the screen.</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[var(--primary-container)] text-[var(--primary)] font-bold text-[10px]">2</span>
-                      <span>Scroll down and select <span className="font-semibold text-[var(--text)]">"Add to Home Screen"</span>.</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[var(--primary-container)] text-[var(--primary)] font-bold text-[10px]">3</span>
-                      <span>Tap <span className="font-semibold text-[var(--text)]">"Add"</span> in the top-right corner to complete.</span>
-                    </div>
-                  </div>
-                  <button
-                    onClick={handleDismiss}
-                    className="w-full bg-[var(--surface-dim)] text-[var(--text)] hover:bg-[var(--border)] border border-[var(--border)] font-medium text-sm py-2 px-4 rounded-xl transition-colors cursor-pointer mt-2"
-                  >
-                    Got It
-                  </button>
-                </div>
-              ) : (
-                /* Standard Browser Direct Installer Trigger */
-                <div className="flex flex-col gap-2">
-                  <button
-                    onClick={handleInstallClick}
-                    className="w-full bg-[var(--primary)] text-[var(--primary-foreground)] hover:bg-[var(--primary-hover)] font-semibold text-sm py-2.5 px-4 rounded-xl shadow-lg shadow-[var(--primary)]/10 transition-colors flex items-center justify-center gap-2 cursor-pointer"
-                  >
-                    <Download className="w-4 h-4" />
-                    <span>Install Clinova OS</span>
-                  </button>
-                  <button
-                    onClick={handleDismiss}
-                    className="w-full text-xs text-[var(--text-muted)] hover:text-[var(--text)] transition-colors py-2 font-medium cursor-pointer"
-                  >
-                    Maybe Later
-                  </button>
-                </div>
-              )}
+              <div className="flex flex-col gap-2 mt-4">
+                <button
+                  onClick={promptInstall ? handleInstallClick : handleDismiss}
+                  className="w-full bg-[var(--primary)] text-[var(--primary-foreground)] hover:bg-[var(--primary-hover)] font-semibold text-xs py-2.5 px-4 rounded-xl shadow-lg shadow-[var(--primary)]/10 transition-colors flex items-center justify-center gap-2 cursor-pointer"
+                  id="pwa-confirm-install-btn"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>Install App</span>
+                </button>
+                <button
+                  onClick={handleDismiss}
+                  className="w-full text-[11px] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors py-1.5 font-medium cursor-pointer"
+                >
+                  Maybe Later
+                </button>
+              </div>
             </motion.div>
           </div>
         )}

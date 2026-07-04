@@ -174,7 +174,7 @@ const ACADEMIC_LEVELS: LevelOption[] = [
   }
 ];
 
-export default function StudentOnboarding() {
+export default function StudentOnboarding({ onClose }: { onClose?: () => void }) {
   const { userData, updatePreferences } = useAuth();
   const [step, setStep] = useState(1);
   const [selectedLevel, setSelectedLevel] = useState<string>('Senior Pharmacy Student');
@@ -230,6 +230,9 @@ export default function StudentOnboarding() {
     setIsSubmitting(true);
     try {
       await updatePreferences(selectedTopics, selectedLevel);
+      if (onClose) {
+        onClose();
+      }
     } catch (e) {
       console.error(e);
     } finally {
@@ -244,6 +247,19 @@ export default function StudentOnboarding() {
         {/* Banner header */}
         <div className="p-6 sm:p-8 bg-gradient-to-r from-[var(--primary)] to-indigo-600 text-white shrink-0 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
+          
+          {/* Close button if onboarding is completed or onClose is passed */}
+          {(userData?.onboardingCompleted || onClose) && (
+            <button
+              type="button"
+              onClick={onClose || (() => updatePreferences(userData?.clinicalInterests || [], userData?.academicLevel || ''))}
+              className="absolute top-4 right-4 p-1.5 text-white/70 hover:text-white hover:bg-white/10 rounded-full transition-all cursor-pointer z-30"
+              title="Close personalization"
+            >
+              <X size={18} />
+            </button>
+          )}
+
           <div className="relative z-10">
             <span className="text-[10px] bg-white/20 text-white border border-white/20 font-bold uppercase tracking-wider px-2.5 py-1 rounded-full flex items-center gap-1 w-fit">
               <Sparkles size={11} className="animate-pulse" /> Student Personalization Engine
@@ -349,8 +365,8 @@ export default function StudentOnboarding() {
                 {selectedTopics.length > 0 && (
                   <div className="flex flex-wrap gap-1.5 items-center pt-1">
                     <span className="text-[10px] uppercase tracking-wider font-bold text-[var(--text-muted)] mr-1">Active Focus:</span>
-                    {selectedTopics.map(topicId => {
-                      const topicObj = [...CLINICAL_TOPICS, ...customTopics].find(t => t.id === topicId);
+                    {Array.from(new Set(selectedTopics)).map(topicId => {
+                      const topicObj = Array.from(new Map([...CLINICAL_TOPICS, ...customTopics].map(t => [t.id, t])).values()).find(t => t.id === topicId);
                       const displayName = topicObj ? topicObj.name : topicId;
                       return (
                         <span key={topicId} className="inline-flex items-center gap-1 text-[11px] bg-[var(--primary-container)]/60 text-[var(--primary)] font-semibold px-2.5 py-1 rounded-xl border border-[var(--primary)]/10 animate-in zoom-in-95 duration-150">
@@ -404,11 +420,11 @@ export default function StudentOnboarding() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1 max-h-[260px] overflow-y-auto pr-1">
-                {([...CLINICAL_TOPICS, ...customTopics]
+                {Array.from(new Map([...CLINICAL_TOPICS, ...customTopics].map(t => [t.id, t])).values())
                   .filter(t => {
                     const q = searchQuery.toLowerCase();
                     return t.name.toLowerCase().includes(q) || t.system.toLowerCase().includes(q);
-                  })).map((topic) => {
+                  }).map((topic) => {
                   const Icon = topic.icon;
                   const isSelected = selectedTopics.includes(topic.id);
                   return (

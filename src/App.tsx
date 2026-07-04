@@ -188,6 +188,13 @@ function AdminLoginScreen() {
 function AppContent() {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
   const { userData, loading } = useAuth();
+  const [forceShowOnboarding, setForceShowOnboarding] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleOpenOnboarding = () => setForceShowOnboarding(true);
+    window.addEventListener('open-onboarding', handleOpenOnboarding);
+    return () => window.removeEventListener('open-onboarding', handleOpenOnboarding);
+  }, []);
 
   if (loading) {
     return (
@@ -227,9 +234,9 @@ function AppContent() {
     <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] flex flex-col">
       <CommandPalette />
       <OfflineStatus />
-      {userData && !userData.onboardingCompleted && userData.role !== 'admin' && (
+      {(forceShowOnboarding || (userData && !userData.onboardingCompleted && userData.role !== 'admin')) && (
         <React.Suspense fallback={null}>
-          <StudentOnboarding />
+          <StudentOnboarding onClose={() => setForceShowOnboarding(false)} />
         </React.Suspense>
       )}
       <TopNavigation onMenuClick={() => setIsSidebarOpen(!isSidebarOpen)} />

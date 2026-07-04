@@ -81,6 +81,26 @@ export default function SettingsScreen() {
                 </div>
               </div>
 
+              {/* Academic Level & Personalization */}
+              <div className="border-t border-[var(--border)] pt-6">
+                <h4 className="text-sm font-bold text-[var(--text)] mb-2 flex items-center gap-2">
+                  Academic Level & Learning Personalization
+                </h4>
+                <p className="text-xs text-[var(--text-muted)] mb-3">
+                  Currently set to: <strong className="text-[var(--primary)]">{userData?.academicLevel || 'Not set'}</strong> with <strong className="text-[var(--primary)]">{userData?.clinicalInterests?.length || 0}</strong> systems of interest.
+                </p>
+                <button
+                  type="button"
+                  onClick={() => {
+                    window.dispatchEvent(new CustomEvent('open-onboarding'));
+                  }}
+                  className="px-4 py-2 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)]/20 border border-[var(--border)] hover:border-[var(--primary)]/30 text-xs font-bold text-[var(--text)] hover:text-[var(--primary)] rounded-xl transition-all cursor-pointer inline-flex items-center gap-2 select-none"
+                  id="adjust-academic-level-button"
+                >
+                  Adjust Academic Level & Clinical Focus
+                </button>
+              </div>
+
               {/* Theme Settings Selector Card */}
               <div className="border-t border-[var(--border)] pt-6">
                 <h4 className="text-sm font-bold text-[var(--text)] mb-2 flex items-center gap-2">

@@ -60,13 +60,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (firebaseUser) {
         // Set provisional/default user state immediately so the app can render and not hang
         const provisionalName = firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'Guest';
+        const wasCompleted = localStorage.getItem(`clinova_onboarding_completed_${firebaseUser.uid}`) === 'true';
         if (active) {
           setUserData(prev => prev && prev.id === firebaseUser.uid ? prev : {
             id: firebaseUser.uid,
             name: provisionalName,
             email: firebaseUser.email || '',
             role: 'user', // default provisional role
-            photoURL: firebaseUser.photoURL || undefined
+            photoURL: firebaseUser.photoURL || undefined,
+            onboardingCompleted: wasCompleted
           });
           setLoading(false); // Unblock the loading screen immediately!
         }
@@ -86,6 +88,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             clinicalInterests = userDoc.data().clinicalInterests || [];
             academicLevel = userDoc.data().academicLevel || '';
             onboardingCompleted = !!userDoc.data().onboardingCompleted;
+            if (onboardingCompleted) {
+              localStorage.setItem(`clinova_onboarding_completed_${firebaseUser.uid}`, 'true');
+            }
           } else {
             // New user, save them
             try {
@@ -270,6 +275,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     };
     
     setUserData(updated);
+    localStorage.setItem(`clinova_onboarding_completed_${userData.id}`, 'true');
     
     // Save locally if mock session is running
     if (localStorage.getItem('clinova-mock-user')) {

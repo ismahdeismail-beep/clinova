@@ -364,6 +364,7 @@ export default function AdminDashboardScreen() {
       setResNotes('');
       setResUrl('');
       setResSourceName('');
+      handleFirestoreError(err, OperationType.CREATE, 'curriculum_resources');
     } finally {
       setIsSavingResource(false);
     }
@@ -398,6 +399,7 @@ export default function AdminDashboardScreen() {
       console.warn("Firestore edit failed. Overriding in local cache memory.", err);
       setCurriculumResources(prev => prev.map(r => r.id === editingResource.id ? { ...r, ...updatedData } : r));
       setEditingResource(null);
+      handleFirestoreError(err, OperationType.UPDATE, `curriculum_resources/${editingResource.id}`);
     } finally {
       setIsSavingResource(false);
     }
@@ -414,6 +416,7 @@ export default function AdminDashboardScreen() {
     } catch (err) {
       console.warn("Could not delete from Firestore. Deleting from memory cache.", err);
       setCurriculumResources(prev => prev.filter(r => r.id !== resId));
+      handleFirestoreError(err, OperationType.DELETE, `curriculum_resources/${resId}`);
     }
   };
 
@@ -817,7 +820,7 @@ export default function AdminDashboardScreen() {
           id="tab-curriculum"
         >
           <BookOpen size={16} />
-          Syllabus & Topic Notes
+          Knowledge Source Management
         </button>
       </div>
 
@@ -1567,7 +1570,7 @@ export default function AdminDashboardScreen() {
         </div>
       )}
 
-      {/* ======================= TAB: CURRICULUM ======================= */}
+      {/* ======================= TAB: KNOWLEDGE SOURCE MANAGEMENT ======================= */}
       {activeTab === 'curriculum' && (
         <div className="space-y-6 animate-fade-in" id="panel-curriculum">
           {/* Header Controls */}
@@ -1576,7 +1579,7 @@ export default function AdminDashboardScreen() {
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" size={16} />
               <input
                 type="text"
-                placeholder="Search resources by syllabus topic or notes content..."
+                placeholder="Search vetted knowledge sources by topic or notes..."
                 value={curriculumSearch}
                 onChange={(e) => setCurriculumSearch(e.target.value)}
                 className="w-full pl-9 pr-4 py-2 text-xs bg-[var(--bg)] text-[var(--text)] border border-[var(--border)] rounded-lg focus:outline-hidden focus:ring-1 focus:ring-[var(--primary)]"
@@ -1586,7 +1589,7 @@ export default function AdminDashboardScreen() {
             <button
               onClick={() => {
                 setEditingResource(null);
-                setResTopicTitle(CURRICULUM_MODULES[0]?.title || '');
+                setResTopicTitle('');
                 setResNotes('');
                 setResUrl('');
                 setResSourceName('');
@@ -1596,7 +1599,7 @@ export default function AdminDashboardScreen() {
               id="add-resource-btn"
             >
               <Plus size={16} />
-              Add Notes & Sources
+              Add Vetted Knowledge Source
             </button>
           </div>
 
@@ -1606,7 +1609,7 @@ export default function AdminDashboardScreen() {
               <div className="flex items-center justify-between border-b border-[var(--border)] pb-3">
                 <h3 className="font-bold text-sm text-[var(--text)] flex items-center gap-2">
                   <BookOpen size={16} className="text-[var(--primary)]" />
-                  {editingResource ? 'Modify Syllabus Notes & Sources' : 'Supplement Syllabus Topic with Notes & References'}
+                  {editingResource ? 'Edit Vetted Knowledge Source' : 'Supplement Syllabus with Vetted Knowledge Source'}
                 </h3>
                 <button 
                   onClick={() => { setShowAddResource(false); setEditingResource(null); }}
@@ -1619,21 +1622,24 @@ export default function AdminDashboardScreen() {
               <form onSubmit={editingResource ? handleUpdateCurriculumResource : handleCreateCurriculumResource} className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-semibold text-[var(--text-muted)] uppercase mb-1.5">Syllabus Topic Module</label>
-                    <select
+                    <label className="block text-xs font-semibold text-[var(--text-muted)] uppercase mb-1.5">Topic Name</label>
+                    <input
+                      type="text"
+                      list="topic-suggestions"
+                      placeholder="Type or select topic name (e.g. Anatomy I, Cardiology)..."
                       value={resTopicTitle}
                       onChange={(e) => setResTopicTitle(e.target.value)}
                       required
                       className="w-full px-3 py-2 text-xs bg-[var(--bg)] text-[var(--text)] border border-[var(--border)] rounded-lg focus:outline-hidden focus:ring-1 focus:ring-[var(--primary)]"
                       id="form-res-topic"
-                    >
-                      <option value="" disabled>-- Select a Topic --</option>
+                    />
+                    <datalist id="topic-suggestions">
                       {CURRICULUM_MODULES.map((mod) => (
                         <option key={mod.title} value={mod.title}>
                           {mod.title} ({mod.category})
                         </option>
                       ))}
-                    </select>
+                    </datalist>
                   </div>
                   <div>
                     <label className="block text-xs font-semibold text-[var(--text-muted)] uppercase mb-1.5">Reference Source Name (Optional)</label>

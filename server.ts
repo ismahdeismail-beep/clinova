@@ -593,22 +593,23 @@ Ensure the output is highly educational, precise, and matches the clinical stand
 // AI Integrated Learning Module Content Generator
 app.post('/api/gemini/generate-module-content', async (req, res) => {
   try {
-    const { moduleTitle, academicLevel } = req.body;
+    const { moduleTitle, academicLevel, customResources } = req.body;
 
     if (!moduleTitle) {
       return res.status(400).json({ error: 'Missing moduleTitle' });
     }
 
-    const level = academicLevel || 'BPharm Year 3: Systems & Clinical Intro';
+    const level = academicLevel || 'Year 3: Systems & Clinical Intro';
 
-    const prompt = `You are Clinova Curriculum Engine, an expert clinical pharmacy professor and OSCE examiner at Kabarak University School of Pharmacy.
+    let prompt = `You are Clinova Curriculum Engine, an expert clinical pharmacology and therapeutics instructor.
 Generate a comprehensive clinical education module for the topic "${moduleTitle}", tailored for a "${level}" level.
 
-If the requested level corresponds to a Kabarak BPharm level (Year 2 to Year 5), strictly calibrate the academic depth:
-- BPharm Year 2: Focus heavily on foundational pharmacology (ADME, basic PK/PD, receptor interactions, agonism/antagonism).
-- BPharm Year 3: Integrate systems pharmacology (e.g., CVS, autonomic) with introductory clinical pharmacy skills (patient profile analysis, medication histories).
-- BPharm Year 4: Focus on advanced pharmacotherapy of body systems (endocrine, respiratory) and rigorous infectious diseases therapeutics (chemotherapy, antimicrobial stewardship).
-- BPharm Year 5: Focus on specialized clinical pharmacy (pediatric, geriatric, oncology), advanced hospital rounds, clinical toxicology, and Therapeutic Drug Monitoring (TDM).
+Strictly calibrate the academic depth based on the requested level of education:
+- Year 1: Focus heavily on normal anatomy, normal physiology, foundational biochemistry, basic chemistry principles, introductory microbiology, and basic pharmacy orientation. Emphasize the physical, biochemical, and anatomical foundations rather than complex clinical therapeutics.
+- Year 2: Focus heavily on foundational pharmacology (ADME, basic PK/PD, receptor interactions, agonism/antagonism).
+- Year 3: Integrate systems pharmacology (e.g., cardiovascular, autonomic) with introductory clinical practice skills (patient profile analysis, medication histories, care planning).
+- Year 4: Focus on advanced pharmacotherapy of complex body systems (endocrine, respiratory) and infectious diseases therapeutics (chemotherapy, antimicrobial stewardship).
+- Year 5: Focus on specialized clinical practice (pediatric, geriatric, oncology), advanced clinical rounds, clinical toxicology, and Therapeutic Drug Monitoring (TDM).
 
 The module MUST contain high-yield information structured exactly matching this requirement:
 - Overview: concise topic introduction and clinical importance.
@@ -635,6 +636,14 @@ The module MUST contain high-yield information structured exactly matching this 
 - Summary Notes: a quick markdown review summary.
 
 Ensure the content is medically accurate, authoritative, and strictly integrated (combining physiology, pharmacology, and clinical therapeutics seamlessly). Keep explanations highly focused, practical, and in bullet points to avoid truncation.`;
+
+    if (customResources && customResources.length > 0) {
+      const formattedResources = customResources.map((r: any) => 
+        `- NOTES/REFERENCE FROM INSTRUCTOR (${r.sourceName || 'General Reference'}): ${r.notes}${r.url ? ` (Source URL: ${r.url})` : ''}`
+      ).join('\n');
+      
+      prompt += `\n\nCRITICAL KNOWLEDGE ENRICHMENT:\nAn instructor or administrator has uploaded the following authoritative, localized guidelines or specific notes for this topic. You MUST integrate this information fully into the pharmacology details, therapeutic guidelines, patient counseling, clinical cases, or summary notes as applicable:\n${formattedResources}`;
+    }
 
     const response = await generateContentWithFallback({
       model: 'gemini-3.5-flash',
@@ -755,18 +764,29 @@ Ensure the content is medically accurate, authoritative, and strictly integrated
 // Context-Aware Module AI Tutor
 app.post('/api/gemini/module-tutor', async (req, res) => {
   try {
-    const { moduleTitle, chatHistory, userMessage } = req.body;
+    const { moduleTitle, chatHistory, userMessage, academicLevel, customResources } = req.body;
 
     if (!moduleTitle || !userMessage) {
       return res.status(400).json({ error: 'Missing moduleTitle or userMessage' });
     }
 
-    const systemInstruction = `You are Clinova AI Module Tutor, an expert Clinical Pharmacy Professor and OSCE Mentor.
+    const level = academicLevel || 'Year 1: Basic Medical Sciences';
+
+    let systemInstruction = `You are Clinova AI Module Tutor, an expert Clinical Pharmacy Professor and OSCE Mentor.
 You are strictly context-locked to the selected module: "${moduleTitle}".
 Your objective is to answer questions, guide patient cases, teach clinical pearls, and review OSCE practice STRICTLY within the scope of "${moduleTitle}".
+Your student is at the "${level}" academic level, so calibrate your explanations, scientific complexity, and clinical expectations accordingly. (e.g., Year 1 students focus on anatomy, physiology, microbiology, and basic chemistry; keep therapeutic clinical management simple and foundational).
 
 If the user asks questions unrelated to clinical pharmacy, pharmacology, or specifically the therapeutics of "${moduleTitle}", gently pivot them back to the study material.
 Always reference reliable resources such as the Kenya Drug Index (KDI), Kenya National Guidelines, WHO Essential Medicines, and established pharmacotherapy standards. Keep answers highly interactive, clear, and clinical-grade.`;
+
+    if (customResources && customResources.length > 0) {
+      const formattedResources = customResources.map((r: any) => 
+        `- SOURCE (${r.sourceName || 'General'}): ${r.notes}${r.url ? ` (Link: ${r.url})` : ''}`
+      ).join('\n');
+      
+      systemInstruction += `\n\nCRITICAL GROUNDING REFERENCE NOTES FROM INSTRUCTORS:\nUse the following supplemental notes and guidelines uploaded by clinical faculty/administrators to directly answer student questions. Treat this as the absolute truth for this module:\n${formattedResources}`;
+    }
 
     const contents = [];
     if (chatHistory && Array.isArray(chatHistory)) {

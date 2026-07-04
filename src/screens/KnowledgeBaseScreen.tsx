@@ -10,6 +10,8 @@ import Markdown from 'react-markdown';
 import FileUploader from '../components/FileUploader';
 import { useFileStore } from '../store/fileStore';
 import { useAuth } from '../contexts/AuthContext';
+import { db } from '../lib/firebase';
+import { collection, getDocs, query as firestoreQuery, where } from 'firebase/firestore';
 import type { StoredFile } from '../types/engine';
 
 interface BookResource {
@@ -30,15 +32,31 @@ const STATIC_BOOKS: BookResource[] = [
   { title: 'Renal & Hepatic Dose Adjustment Manual', source: 'Clinical Reference', type: 'Handbook', date: '2023-12' },
 ];
 
-interface CurriculumModule {
+export interface CurriculumModule {
   title: string;
-  category: 'Foundation' | 'Body Systems' | 'Infectious Diseases' | 'Specialized Medicine' | 'Professional Practice';
+  category: 'Foundation' | 'Body Systems' | 'Infectious Diseases' | 'Specialized Medicine' | 'Professional Practice' | 'Basic Medical Sciences';
   description: string;
   iconName: string;
   colorTheme: string;
 }
 
-const CURRICULUM_MODULES: CurriculumModule[] = [
+export const CURRICULUM_MODULES: CurriculumModule[] = [
+  // Basic Medical Sciences (Year 1)
+  { title: 'Anatomy I', category: 'Basic Medical Sciences', description: 'Introduction to anatomical terminology, cells, tissues, integumentary, skeletal, and muscular systems.', iconName: 'Accessibility', colorTheme: 'violet' },
+  { title: 'Physiology I', category: 'Basic Medical Sciences', description: 'Basic physiological processes, cell physiology, membrane transport, nerve, and muscle physiology.', iconName: 'Activity', colorTheme: 'rose' },
+  { title: 'Biochemistry I', category: 'Basic Medical Sciences', description: 'Chemical foundations of life, amino acids, proteins, enzymes, carbohydrates, and metabolic pathways.', iconName: 'Dna', colorTheme: 'indigo' },
+  { title: 'Physical Chemistry I', category: 'Basic Medical Sciences', description: 'Thermodynamics, chemical equilibrium, phase rule, solutions, and electrochemical cells in pharmacy.', iconName: 'Beaker', colorTheme: 'teal' },
+  { title: 'Inorganic Chemistry I', category: 'Basic Medical Sciences', description: 'Atomic structure, chemical bonding, periodic table, and inorganic substances used in pharmacy.', iconName: 'Beaker', colorTheme: 'blue' },
+  { title: 'Anatomy II', category: 'Basic Medical Sciences', description: 'Anatomy of the nervous system, endocrine system, cardiovascular, and respiratory systems.', iconName: 'Brain', colorTheme: 'violet' },
+  { title: 'Physiology II', category: 'Basic Medical Sciences', description: 'Physiological systems including the nervous, cardiovascular, respiratory, and GI systems.', iconName: 'Heart', colorTheme: 'rose' },
+  { title: 'Biochemistry II', category: 'Basic Medical Sciences', description: 'Lipid metabolism, nucleic acid biochemistry, replication, transcription, and translation.', iconName: 'Dna', colorTheme: 'indigo' },
+  { title: 'Organic Chemistry I', category: 'Basic Medical Sciences', description: 'Structure, bonding, stereochemistry, and reactions of hydrocarbons, alcohols, and alkyl halides.', iconName: 'Beaker', colorTheme: 'amber' },
+  { title: 'Anatomy III', category: 'Basic Medical Sciences', description: 'Detailed anatomy of the urinary, reproductive, gastrointestinal, and lymphoid systems.', iconName: 'Droplets', colorTheme: 'violet' },
+  { title: 'Physiology III', category: 'Basic Medical Sciences', description: 'Physiological systems including renal, gastrointestinal, reproductive, and endocrine systems.', iconName: 'Flame', colorTheme: 'rose' },
+  { title: 'Biochemistry III', category: 'Basic Medical Sciences', description: 'Integration of metabolism, hormonal regulation, biochemistry of specialized tissues, and clinical chemistry.', iconName: 'Dna', colorTheme: 'indigo' },
+  { title: 'Organic Chemistry II', category: 'Basic Medical Sciences', description: 'Reactions of aldehydes, ketones, carboxylic acids, amines, spectroscopy, and biomolecules.', iconName: 'Beaker', colorTheme: 'orange' },
+  { title: 'Microbiology I', category: 'Basic Medical Sciences', description: 'Introduction to general microbiology, bacteria, viruses, fungi, culture methods, and sterilization.', iconName: 'Bug', colorTheme: 'emerald' },
+  { title: 'Introduction to Pharmacy', category: 'Basic Medical Sciences', description: 'Evolution of pharmacy, role of pharmacist in healthcare, drug discovery, pharmacy ethics, and regulations.', iconName: 'BookOpen', colorTheme: 'cyan' },
   // Foundation
   { title: 'General Pharmacology', category: 'Foundation', description: 'Basic principles of pharmacology, pharmacokinetics, and pharmacodynamics.', iconName: 'Beaker', colorTheme: 'indigo' },
   { title: 'Pharmacokinetics', category: 'Foundation', description: 'Absorption, distribution, metabolism, elimination (ADME), half-life, and clearance.', iconName: 'Activity', colorTheme: 'indigo' },
@@ -217,17 +235,32 @@ const SAMPLE_CARDIOLOGY_MODULE = {
   summaryNotes: "### High-Yield Cardiovascular Pharmacotherapy Summary\n\n- **Hypertension Key Point**: Diabetics and CKD patients require **ACEI or ARB** as first-line therapy to preserve renal function.\n- **Heart Failure (HFrEF) Management**: Always initiate the 4 core pillars: **ARNI/ACEI, Beta-Blocker, MRA, and SGLT2i**. These classes collectively reduce cardiovascular mortality by over 50%.\n- **CCB Clinical Pearl**: Dihydropyridines (Amlodipine, Nifedipine) cause **precapillary peripheral vasodilation** leading to fluid accumulation in tissues (ankle edema). Do NOT add diuretics; adding an ACEI/ARB dilates the postcapillary venules, balancing pressure and resolving the edema.\n- **Anticoagulation**: Monitor **Warfarin therapy using PT/INR** with a typical target of **2.0 to 3.0**. Always check for interactions (Amiodarone, NSAIDs, Antibiotics) which significantly raise bleeding risk."
 };
 
+export interface CurriculumResource {
+  id: string;
+  topicTitle: string;
+  notes: string;
+  url?: string;
+  sourceName?: string;
+  createdAt?: any;
+  createdBy?: string;
+  createdByName?: string;
+}
+
 export default function KnowledgeBaseScreen() {
   const { userData } = useAuth();
   const isAdmin = userData?.role === 'admin';
 
   const [activeTab, setActiveTab] = useState<'modules' | 'library' | 'generator'>('modules');
   
+  // Dynamic Curriculum Resources States
+  const [topicResources, setTopicResources] = useState<CurriculumResource[]>([]);
+  const [isLoadingTopicResources, setIsLoadingTopicResources] = useState(false);
+  
   // Curriculum States
   const [modulesQuery, setModulesQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [selectedModule, setSelectedModule] = useState<CurriculumModule | null>(null);
-  const [academicLevel, setAcademicLevel] = useState<string>(userData?.academicLevel || 'BPharm Year 3: Systems & Clinical Intro');
+  const [academicLevel, setAcademicLevel] = useState<string>(userData?.academicLevel || 'Year 1: Basic Medical Sciences');
   
   // Module Generation & Workspace State
   const [moduleContent, setModuleContent] = useState<any | null>(null);
@@ -356,11 +389,43 @@ export default function KnowledgeBaseScreen() {
   };
 
   // MODULE CORE LOGIC
+  const fetchResourcesForModule = async (topicTitle: string) => {
+    setIsLoadingTopicResources(true);
+    try {
+      const q = firestoreQuery(
+        collection(db, 'curriculum_resources'),
+        where('topicTitle', '==', topicTitle)
+      );
+      const querySnapshot = await getDocs(q);
+      const resList: CurriculumResource[] = [];
+      querySnapshot.forEach((docSnap) => {
+        const data = docSnap.data() as any;
+        resList.push({
+          id: docSnap.id,
+          topicTitle: data.topicTitle || '',
+          notes: data.notes || '',
+          url: data.url || '',
+          sourceName: data.sourceName || '',
+          createdAt: data.createdAt,
+          createdBy: data.createdBy || '',
+          createdByName: data.createdByName || ''
+        });
+      });
+      setTopicResources(resList);
+    } catch (error) {
+      console.warn("Could not load dynamic resources for topic:", error);
+      setTopicResources([]);
+    } finally {
+      setIsLoadingTopicResources(false);
+    }
+  };
+
   const selectModule = (module: CurriculumModule) => {
     setSelectedModule(module);
     setSelectedAnswers({});
     setFlippedCard(null);
     setActiveModuleSection('overview');
+    fetchResourcesForModule(module.title);
     
     // Set up default greeting for Tutor
     setTutorChat([
@@ -414,7 +479,8 @@ export default function KnowledgeBaseScreen() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           moduleTitle: mod.title,
-          academicLevel: academicLevel
+          academicLevel: academicLevel,
+          customResources: topicResources.map(r => ({ notes: r.notes, sourceName: r.sourceName, url: r.url }))
         })
       });
 
@@ -462,7 +528,9 @@ export default function KnowledgeBaseScreen() {
         body: JSON.stringify({
           moduleTitle: selectedModule.title,
           chatHistory: tutorChat,
-          userMessage: userMsg
+          userMessage: userMsg,
+          academicLevel: academicLevel,
+          customResources: topicResources.map(r => ({ notes: r.notes, sourceName: r.sourceName, url: r.url }))
         })
       });
 
@@ -508,11 +576,12 @@ export default function KnowledgeBaseScreen() {
               onChange={(e) => setAcademicLevel(e.target.value)}
               className="text-xs font-semibold bg-[var(--surface)] text-[var(--text)] border-none outline-none py-1 px-2.5 rounded-lg focus:ring-1 focus:ring-[var(--primary)] cursor-pointer"
             >
-              <option value="BPharm Year 2: Foundational Pharmacology">BPharm Year 2 (Foundational)</option>
-              <option value="BPharm Year 3: Systems & Clinical Intro">BPharm Year 3 (Systems / Intro)</option>
-              <option value="BPharm Year 4: Advanced Systems & ID">BPharm Year 4 (Advanced / Infectious)</option>
-              <option value="BPharm Year 5: Specialty & Toxicology">BPharm Year 5 (Specialty / Toxicology)</option>
-              <option value="Graduate / Clinical Pharmacist">Clinical Pharmacist / Graduate</option>
+              <option value="Year 1: Basic Medical Sciences">Year 1 (Basic Medical Sciences)</option>
+              <option value="Year 2: Foundational Pharmacology">Year 2 (Foundational Pharmacology)</option>
+              <option value="Year 3: Systems & Clinical Intro">Year 3 (Systems &amp; Clinical Intro)</option>
+              <option value="Year 4: Advanced Systems & ID">Year 4 (Advanced Systems &amp; ID)</option>
+              <option value="Year 5: Specialty & Toxicology">Year 5 (Specialty &amp; Toxicology)</option>
+              <option value="Graduate / Clinical Pharmacist">Graduate / Healthcare Professional</option>
             </select>
           </div>
         )}
@@ -665,6 +734,30 @@ export default function KnowledgeBaseScreen() {
                     );
                   })}
                 </div>
+
+                {/* Instructor Notes & References */}
+                {topicResources.length > 0 && (
+                  <div className="bg-[var(--primary)]/5 border border-[var(--primary)]/20 p-5 rounded-2xl space-y-3 shadow-xs animate-in slide-in-from-top duration-200" id="instructor-supplement-card">
+                    <h3 className="text-xs font-bold uppercase tracking-wider text-[var(--primary)] flex items-center gap-1.5">
+                      <BookOpen size={14} /> Official Instructor Study Notes & References
+                    </h3>
+                    <div className="divide-y divide-[var(--primary)]/10 space-y-3">
+                      {topicResources.map((res, index) => (
+                        <div key={res.id} className={index > 0 ? "pt-3" : ""}>
+                          <p className="text-xs text-[var(--text)] font-medium leading-relaxed whitespace-pre-wrap">{res.notes}</p>
+                          {res.url && (
+                            <div className="flex items-center gap-1 text-[11px] text-[var(--primary)] font-semibold mt-1.5 hover:underline">
+                              <Link2 size={12} />
+                              <a href={res.url} target="_blank" rel="noopener noreferrer">
+                                {res.sourceName || 'External reference source'}
+                              </a>
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {/* Section Content Display */}
                 <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-6 animate-in fade-in duration-150">
@@ -1043,7 +1136,7 @@ export default function KnowledgeBaseScreen() {
 
               {/* Categorization chips */}
               <div className="flex gap-1.5 overflow-x-auto pb-1">
-                {['All', 'Foundation', 'Body Systems', 'Infectious Diseases', 'Specialized Medicine', 'Professional Practice'].map((cat) => (
+                {['All', 'Basic Medical Sciences', 'Foundation', 'Body Systems', 'Infectious Diseases', 'Specialized Medicine', 'Professional Practice'].map((cat) => (
                   <button
                     key={cat}
                     onClick={() => setSelectedCategory(cat)}

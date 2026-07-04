@@ -136,7 +136,7 @@ export default function DashboardScreen() {
   const isAdmin = userData?.role === "admin";
 
   const [isEditingPrefs, setIsEditingPrefs] = useState(false);
-  const [prefLevel, setPrefLevel] = useState(userData?.academicLevel || 'BPharm Year 3: Systems & Clinical Intro');
+  const [prefLevel, setPrefLevel] = useState(userData?.academicLevel || 'Year 1: Basic Medical Sciences');
   const [prefTopics, setPrefTopics] = useState<string[]>(userData?.clinicalInterests || ['Cardiology', 'Nephrology']);
   const [prefsSearchQuery, setPrefsSearchQuery] = useState("");
 
@@ -371,7 +371,7 @@ export default function DashboardScreen() {
                     </h3>
                     <button 
                       onClick={() => {
-                        setPrefLevel(userData.academicLevel || 'BPharm Year 3: Systems & Clinical Intro');
+                        setPrefLevel(userData.academicLevel || 'Year 1: Basic Medical Sciences');
                         setPrefTopics(userData.clinicalInterests || ['Cardiology', 'Nephrology']);
                         setIsEditingPrefs(!isEditingPrefs);
                       }}
@@ -385,7 +385,7 @@ export default function DashboardScreen() {
                     <div className="p-5 space-y-4">
                       <div>
                         <p className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-semibold">Academic Stage</p>
-                        <p className="text-sm font-bold text-[var(--text)] mt-0.5">{userData.academicLevel || 'BPharm Year 3: Systems & Clinical Intro'}</p>
+                        <p className="text-sm font-bold text-[var(--text)] mt-0.5">{userData.academicLevel || 'Year 1: Basic Medical Sciences'}</p>
                       </div>
                       <div>
                         <p className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-semibold mb-1.5">Clinical Interests</p>
@@ -414,11 +414,12 @@ export default function DashboardScreen() {
                           onChange={(e) => setPrefLevel(e.target.value)}
                           className="w-full text-xs p-2.5 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-[var(--text)] focus:border-[var(--primary)] outline-none cursor-pointer"
                         >
-                          <option value="BPharm Year 2: Foundational Pharmacology">BPharm Year 2: Foundational Pharmacology</option>
-                          <option value="BPharm Year 3: Systems & Clinical Intro">BPharm Year 3: Systems Pharmacology</option>
-                          <option value="BPharm Year 4: Advanced Systems & ID">BPharm Year 4: Advanced &amp; Infectious Diseases</option>
-                          <option value="BPharm Year 5: Specialty &amp; Toxicology">BPharm Year 5: Specialty &amp; Toxicology</option>
-                          <option value="Graduate / Clinical Pharmacist">Clinical Pharmacist / Graduate</option>
+                          <option value="Year 1: Basic Medical Sciences">Year 1: Basic Medical Sciences</option>
+                          <option value="Year 2: Foundational Pharmacology">Year 2: Foundational Pharmacology</option>
+                          <option value="Year 3: Systems & Clinical Intro">Year 3: Systems Pharmacology &amp; Clinical Practice</option>
+                          <option value="Year 4: Advanced Systems & ID">Year 4: Advanced Systems &amp; Infectious Diseases</option>
+                          <option value="Year 5: Specialty &amp; Toxicology">Year 5: Specialty Therapeutics &amp; Clinical Practice</option>
+                          <option value="Graduate / Clinical Pharmacist">Graduate / Healthcare Professional</option>
                         </select>
                       </div>
                       

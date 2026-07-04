@@ -58,10 +58,16 @@ service cloud.firestore {
       );
     }
 
-    // 3. Generic fallback rules for any other synced dynamic collections (e.g., patients, cases, reviews)
+    // 3. Curriculum Resources Rules (Admins can write, authenticated users can read)
+    match /curriculum_resources/{documentId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && isAdmin();
+    }
+
+    // 4. Generic fallback rules for any other synced dynamic collections (e.g., patients, cases, reviews)
     match /{collectionPath}/{documentId} {
       // Do not let this generic fallback override the strict rules for users and files
-      allow read, write: if isAuthenticated() && !(collectionPath in ['users', 'files']);
+      allow read, write: if isAuthenticated() && !(collectionPath in ['users', 'files', 'curriculum_resources']);
     }
   }
 }

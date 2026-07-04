@@ -149,27 +149,33 @@ interface LevelOption {
 
 const ACADEMIC_LEVELS: LevelOption[] = [
   {
-    id: 'BPharm Year 2: Foundational Pharmacology',
-    title: 'BPharm Year 2: Foundational Pharmacology',
+    id: 'Year 1: Basic Medical Sciences',
+    title: 'Year 1: Basic Medical Sciences',
+    description: 'Foundational medical sciences including anatomy, physiology, biochemistry, microbiology, and introductory pharmacy.',
+    icon: GraduationCap
+  },
+  {
+    id: 'Year 2: Foundational Pharmacology',
+    title: 'Year 2: Foundational Pharmacology',
     description: 'Basic principles including pharmacokinetics (ADME) and pharmacodynamics (drug-receptor, agonists/antagonists).',
     icon: GraduationCap
   },
   {
-    id: 'BPharm Year 3: Systems & Clinical Intro',
-    title: 'BPharm Year 3: Systems Pharmacology',
-    description: 'Autonomic system, CVS therapeutics, renal diuretics, patient profile analysis, and pharmaceutical care planning.',
+    id: 'Year 3: Systems & Clinical Intro',
+    title: 'Year 3: Systems Pharmacology & Clinical Practice',
+    description: 'Autonomic system, CVS therapeutics, renal diuretics, patient profile analysis, and care planning.',
     icon: BookOpen
   },
   {
-    id: 'BPharm Year 4: Advanced Systems & ID',
-    title: 'BPharm Year 4: Advanced & Infectious Diseases',
+    id: 'Year 4: Advanced Systems & ID',
+    title: 'Year 4: Advanced Systems & Infectious Diseases',
     description: 'Endocrine, GI, respiratory agents, chemotherapy mechanisms, and infectious disease therapeutic management.',
     icon: Award
   },
   {
-    id: 'BPharm Year 5: Specialty & Toxicology',
-    title: 'BPharm Year 5: Specialty & Toxicology',
-    description: 'Pediatric/geriatric therapeutics, oncology pharmacy, hospital ward rounds, toxicology, and TDM.',
+    id: 'Year 5: Specialty & Toxicology',
+    title: 'Year 5: Specialty Therapeutics & Clinical Practice',
+    description: 'Pediatric/geriatric therapeutics, oncology, hospital clinical rounds, toxicology, and TDM.',
     icon: Stethoscope
   }
 ];
@@ -177,7 +183,7 @@ const ACADEMIC_LEVELS: LevelOption[] = [
 export default function StudentOnboarding({ onClose }: { onClose?: () => void }) {
   const { userData, updatePreferences } = useAuth();
   const [step, setStep] = useState(1);
-  const [selectedLevel, setSelectedLevel] = useState<string>('BPharm Year 3: Systems & Clinical Intro');
+  const [selectedLevel, setSelectedLevel] = useState<string>('Year 1: Basic Medical Sciences');
   const [selectedTopics, setSelectedTopics] = useState<string[]>(['Cardiology', 'Nephrology']);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');

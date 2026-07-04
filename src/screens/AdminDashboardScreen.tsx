@@ -25,7 +25,8 @@ import {
   ArrowUpRight, 
   Check, 
   Eye, 
-  AlertCircle
+  AlertCircle,
+  BookOpen
 } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { db, auth } from '../lib/firebase';
@@ -34,6 +35,7 @@ import { handleFirestoreError, OperationType } from '../lib/firestore-error';
 import { StorageService } from '../services/storage.service';
 import { useAuth } from '../contexts/AuthContext';
 import type { StoredFile, FileCategory } from '../types/engine';
+import { CURRICULUM_MODULES } from './KnowledgeBaseScreen';
 
 interface ClinicalCase {
   id: string;
@@ -57,11 +59,22 @@ interface ClinicianProfile {
   clinicalInterests?: string[];
 }
 
+export interface CurriculumResource {
+  id: string;
+  topicTitle: string;
+  notes: string;
+  url?: string;
+  sourceName?: string;
+  createdAt?: any;
+  createdBy?: string;
+  createdByName?: string;
+}
+
 export default function AdminDashboardScreen() {
   const { userData } = useAuth();
   
   // Navigation & Tabs
-  const [activeTab, setActiveTab] = useState<'overview' | 'cases' | 'documents' | 'users'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'cases' | 'documents' | 'users' | 'curriculum'>('overview');
 
   // Diagnostics & System Audit
   const [isAuditing, setIsAuditing] = useState(false);
@@ -93,6 +106,20 @@ export default function AdminDashboardScreen() {
   const [caseDifficulty, setCaseDifficulty] = useState<'Beginner' | 'Intermediate' | 'Advanced'>('Intermediate');
   const [caseScenario, setCaseScenario] = useState('');
   const [caseLearningPoints, setCaseLearningPoints] = useState('');
+
+  // Curriculum Resources States
+  const [curriculumResources, setCurriculumResources] = useState<CurriculumResource[]>([]);
+  const [isLoadingCurriculum, setIsLoadingCurriculum] = useState(false);
+  const [curriculumSearch, setCurriculumSearch] = useState('');
+  const [editingResource, setEditingResource] = useState<CurriculumResource | null>(null);
+  const [showAddResource, setShowAddResource] = useState(false);
+  const [isSavingResource, setIsSavingResource] = useState(false);
+
+  // Form Fields for Resources
+  const [resTopicTitle, setResTopicTitle] = useState('');
+  const [resNotes, setResNotes] = useState('');
+  const [resUrl, setResUrl] = useState('');
+  const [resSourceName, setResSourceName] = useState('');
 
   // Clinical Documents & RAG Engine State
   const [files, setFiles] = useState<StoredFile[]>([]);
@@ -261,8 +288,142 @@ export default function AdminDashboardScreen() {
       fetchFilesFromStorage();
     } else if (activeTab === 'users') {
       fetchUsersFromFirestore();
+    } else if (activeTab === 'curriculum') {
+      fetchCurriculumResources();
     }
   }, [activeTab]);
+
+  const fetchCurriculumResources = async () => {
+    setIsLoadingCurriculum(true);
+    try {
+      const q = query(collection(db, 'curriculum_resources'), orderBy('createdAt', 'desc'));
+      const querySnapshot = await getDocs(q);
+      const resList: CurriculumResource[] = [];
+      querySnapshot.forEach((docSnap) => {
+        const data = docSnap.data();
+        resList.push({
+          id: docSnap.id,
+          topicTitle: data.topicTitle || '',
+          notes: data.notes || '',
+          url: data.url || '',
+          sourceName: data.sourceName || '',
+          createdAt: data.createdAt,
+          createdBy: data.createdBy || '',
+          createdByName: data.createdByName || ''
+        });
+      });
+      setCurriculumResources(resList);
+    } catch (error) {
+      console.warn("Firestore 'curriculum_resources' read failed, using default state.");
+      setCurriculumResources([
+        {
+          id: 'default-res-1',
+          topicTitle: 'Cardiovascular Pharmacology & Therapeutics',
+          notes: 'Important guidance for heart failure: Ensure target dose titration of ACE inhibitors (or ARBs) is carried out every 2 weeks as tolerated by renal function and blood pressure. Do not forget to check serum potassium and creatinine within 1-2 weeks of initiating or adjusting doses.',
+          url: 'https://who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02',
+          sourceName: 'WHO EML Clinical Guidelines',
+          createdBy: 'system',
+          createdByName: 'Lead Instructor'
+        }
+      ]);
+    } finally {
+      setIsLoadingCurriculum(false);
+    }
+  };
+
+  const handleCreateCurriculumResource = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!resTopicTitle || !resNotes.trim()) return;
+
+    setIsSavingResource(true);
+    const newResData = {
+      topicTitle: resTopicTitle,
+      notes: resNotes.trim(),
+      url: resUrl.trim() || '',
+      sourceName: resSourceName.trim() || '',
+      createdAt: Date.now(),
+      createdBy: userData?.id || 'admin',
+      createdByName: userData?.name || 'Clinical Educator'
+    };
+
+    try {
+      await addDoc(collection(db, 'curriculum_resources'), newResData);
+      setAuditLogs(prev => [...prev, `[INFO] ${new Date().toLocaleTimeString()} - Added Curriculum Resource for: "${resTopicTitle}"`]);
+      setResTopicTitle('');
+      setResNotes('');
+      setResUrl('');
+      setResSourceName('');
+      setShowAddResource(false);
+      await fetchCurriculumResources();
+    } catch (err) {
+      console.error("Firestore resource creation failed. Adding to local cache state.", err);
+      const mockId = `res-${Math.random().toString(36).substring(2, 9)}`;
+      setCurriculumResources(prev => [{ id: mockId, ...newResData }, ...prev]);
+      setShowAddResource(false);
+      setResTopicTitle('');
+      setResNotes('');
+      setResUrl('');
+      setResSourceName('');
+    } finally {
+      setIsSavingResource(false);
+    }
+  };
+
+  const handleUpdateCurriculumResource = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!editingResource || !resTopicTitle || !resNotes.trim()) return;
+
+    setIsSavingResource(true);
+    const updatedData = {
+      topicTitle: resTopicTitle,
+      notes: resNotes.trim(),
+      url: resUrl.trim() || '',
+      sourceName: resSourceName.trim() || '',
+      updatedAt: Date.now()
+    };
+
+    try {
+      if (editingResource.id.startsWith('default-')) {
+        await setDoc(doc(db, 'curriculum_resources', editingResource.id), {
+          ...editingResource,
+          ...updatedData
+        });
+      } else {
+        await updateDoc(doc(db, 'curriculum_resources', editingResource.id), updatedData);
+      }
+      setAuditLogs(prev => [...prev, `[INFO] ${new Date().toLocaleTimeString()} - Updated Curriculum Resource for: "${resTopicTitle}"`]);
+      setEditingResource(null);
+      await fetchCurriculumResources();
+    } catch (err) {
+      console.warn("Firestore edit failed. Overriding in local cache memory.", err);
+      setCurriculumResources(prev => prev.map(r => r.id === editingResource.id ? { ...r, ...updatedData } : r));
+      setEditingResource(null);
+    } finally {
+      setIsSavingResource(false);
+    }
+  };
+
+  const handleDeleteCurriculumResource = async (resId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (!window.confirm("Are you sure you want to permanently delete this curriculum resource?")) return;
+
+    try {
+      await deleteDoc(doc(db, 'curriculum_resources', resId));
+      setAuditLogs(prev => [...prev, `[INFO] ${new Date().toLocaleTimeString()} - Deleted Curriculum Resource ID: ${resId}`]);
+      await fetchCurriculumResources();
+    } catch (err) {
+      console.warn("Could not delete from Firestore. Deleting from memory cache.", err);
+      setCurriculumResources(prev => prev.filter(r => r.id !== resId));
+    }
+  };
+
+  const startEditCurriculumResource = (r: CurriculumResource) => {
+    setEditingResource(r);
+    setResTopicTitle(r.topicTitle);
+    setResNotes(r.notes);
+    setResUrl(r.url || '');
+    setResSourceName(r.sourceName || '');
+  };
 
   const handleLegendClick = (e: any) => {
     const { dataKey } = e;
@@ -553,6 +714,12 @@ export default function AdminDashboardScreen() {
     u.academicLevel?.toLowerCase().includes(userSearch.toLowerCase())
   );
 
+  const filteredResources = curriculumResources.filter(r =>
+    r.topicTitle.toLowerCase().includes(curriculumSearch.toLowerCase()) ||
+    r.notes.toLowerCase().includes(curriculumSearch.toLowerCase()) ||
+    (r.sourceName && r.sourceName.toLowerCase().includes(curriculumSearch.toLowerCase()))
+  );
+
   return (
     <div className="p-6 max-w-7xl mx-auto space-y-8 pb-24" id="admin-dashboard-root">
       {/* Dynamic Status Notifications banner */}
@@ -639,6 +806,18 @@ export default function AdminDashboardScreen() {
         >
           <Users size={16} />
           Clinicians Directory & Roles
+        </button>
+        <button
+          onClick={() => setActiveTab('curriculum')}
+          className={`px-5 py-3 text-sm font-semibold border-b-2 transition-all flex items-center gap-2 cursor-pointer ${
+            activeTab === 'curriculum' 
+              ? 'border-[var(--primary)] text-[var(--primary)] bg-[var(--primary)]/5' 
+              : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
+          }`}
+          id="tab-curriculum"
+        >
+          <BookOpen size={16} />
+          Syllabus & Topic Notes
         </button>
       </div>
 
@@ -1383,6 +1562,209 @@ export default function AdminDashboardScreen() {
                   ))}
                 </tbody>
               </table>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* ======================= TAB: CURRICULUM ======================= */}
+      {activeTab === 'curriculum' && (
+        <div className="space-y-6 animate-fade-in" id="panel-curriculum">
+          {/* Header Controls */}
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-[var(--surface)] p-4 rounded-xl border border-[var(--border)]">
+            <div className="relative flex-1 w-full">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" size={16} />
+              <input
+                type="text"
+                placeholder="Search resources by syllabus topic or notes content..."
+                value={curriculumSearch}
+                onChange={(e) => setCurriculumSearch(e.target.value)}
+                className="w-full pl-9 pr-4 py-2 text-xs bg-[var(--bg)] text-[var(--text)] border border-[var(--border)] rounded-lg focus:outline-hidden focus:ring-1 focus:ring-[var(--primary)]"
+                id="curriculum-search-input"
+              />
+            </div>
+            <button
+              onClick={() => {
+                setEditingResource(null);
+                setResTopicTitle(CURRICULUM_MODULES[0]?.title || '');
+                setResNotes('');
+                setResUrl('');
+                setResSourceName('');
+                setShowAddResource(true);
+              }}
+              className="flex items-center gap-2 px-4 py-2 bg-[var(--primary)] text-white text-xs font-semibold rounded-lg hover:opacity-90 transition-opacity w-full sm:w-auto justify-center cursor-pointer"
+              id="add-resource-btn"
+            >
+              <Plus size={16} />
+              Add Notes & Sources
+            </button>
+          </div>
+
+          {/* Create or Edit Resource Form Block */}
+          {(showAddResource || editingResource) && (
+            <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] shadow-md space-y-4 animate-fade-in" id="resource-form-card">
+              <div className="flex items-center justify-between border-b border-[var(--border)] pb-3">
+                <h3 className="font-bold text-sm text-[var(--text)] flex items-center gap-2">
+                  <BookOpen size={16} className="text-[var(--primary)]" />
+                  {editingResource ? 'Modify Syllabus Notes & Sources' : 'Supplement Syllabus Topic with Notes & References'}
+                </h3>
+                <button 
+                  onClick={() => { setShowAddResource(false); setEditingResource(null); }}
+                  className="p-1 hover:bg-[var(--surface-dim)] rounded-full text-[var(--text-muted)] cursor-pointer"
+                >
+                  <X size={16} />
+                </button>
+              </div>
+
+              <form onSubmit={editingResource ? handleUpdateCurriculumResource : handleCreateCurriculumResource} className="space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-xs font-semibold text-[var(--text-muted)] uppercase mb-1.5">Syllabus Topic Module</label>
+                    <select
+                      value={resTopicTitle}
+                      onChange={(e) => setResTopicTitle(e.target.value)}
+                      required
+                      className="w-full px-3 py-2 text-xs bg-[var(--bg)] text-[var(--text)] border border-[var(--border)] rounded-lg focus:outline-hidden focus:ring-1 focus:ring-[var(--primary)]"
+                      id="form-res-topic"
+                    >
+                      <option value="" disabled>-- Select a Topic --</option>
+                      {CURRICULUM_MODULES.map((mod) => (
+                        <option key={mod.title} value={mod.title}>
+                          {mod.title} ({mod.category})
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-[var(--text-muted)] uppercase mb-1.5">Reference Source Name (Optional)</label>
+                    <input
+                      type="text"
+                      placeholder="e.g. Kenya National Guidelines 2024, KDI Section 3"
+                      value={resSourceName}
+                      onChange={(e) => setResSourceName(e.target.value)}
+                      className="w-full px-3 py-2 text-xs bg-[var(--bg)] text-[var(--text)] border border-[var(--border)] rounded-lg focus:outline-hidden focus:ring-1 focus:ring-[var(--primary)]"
+                      id="form-res-source"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-[var(--text-muted)] uppercase mb-1.5">Reference Source URL (Optional)</label>
+                  <input
+                    type="url"
+                    placeholder="https://example.com/guideline-pdf"
+                    value={resUrl}
+                    onChange={(e) => setResUrl(e.target.value)}
+                    className="w-full px-3 py-2 text-xs bg-[var(--bg)] text-[var(--text)] border border-[var(--border)] rounded-lg focus:outline-hidden focus:ring-1 focus:ring-[var(--primary)]"
+                    id="form-res-url"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-[var(--text-muted)] uppercase mb-1.5">Instructor Study Notes & Specialized Reference Information</label>
+                  <textarea
+                    required
+                    rows={6}
+                    placeholder="Enter notes, local formulary considerations, or specific clinical pharmacology details. This will be made available directly to learners and fed into the AI tutor to ground its responses..."
+                    value={resNotes}
+                    onChange={(e) => setResNotes(e.target.value)}
+                    className="w-full p-3 text-xs bg-[var(--bg)] text-[var(--text)] border border-[var(--border)] rounded-lg focus:outline-hidden focus:ring-1 focus:ring-[var(--primary)] font-sans leading-relaxed"
+                    id="form-res-notes"
+                  />
+                  <p className="text-[10px] text-[var(--text-muted)] mt-1.5">
+                    💡 **Tip**: Grounding details like dose adjustments, renal risk scores, or specific local drug guidelines here will greatly improve AI precision when tutoring students.
+                  </p>
+                </div>
+
+                <div className="flex justify-end gap-3 pt-2">
+                  <button
+                    type="button"
+                    onClick={() => { setShowAddResource(false); setEditingResource(null); }}
+                    className="px-4 py-2 bg-[var(--bg)] text-[var(--text)] border border-[var(--border)] text-xs font-semibold rounded-lg hover:bg-[var(--surface-dim)] cursor-pointer"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    disabled={isSavingResource}
+                    className="flex items-center gap-2 px-5 py-2 bg-[var(--primary)] text-white text-xs font-semibold rounded-lg hover:opacity-95 disabled:opacity-75 cursor-pointer"
+                    id="save-resource-btn"
+                  >
+                    {isSavingResource ? <Loader2 size={14} className="animate-spin" /> : <Save size={14} />}
+                    {isSavingResource ? 'Saving Reference...' : 'Commit Notes & Sources'}
+                  </button>
+                </div>
+              </form>
+            </div>
+          )}
+
+          {/* Resources List */}
+          {isLoadingCurriculum ? (
+            <div className="flex flex-col justify-center items-center py-24 gap-3 bg-[var(--surface)] border border-[var(--border)] rounded-xl">
+              <Loader2 className="animate-spin text-[var(--primary)]" size={32} />
+              <p className="text-sm text-[var(--text-muted)] font-medium">Fetching syllabus resources from database...</p>
+            </div>
+          ) : filteredResources.length === 0 ? (
+            <div className="bg-[var(--surface)] text-center py-16 px-4 rounded-xl border border-[var(--border)]" id="no-resources-placeholder">
+              <BookOpen size={40} className="mx-auto text-[var(--text-muted)] opacity-50 mb-3" />
+              <h3 className="text-sm font-semibold text-[var(--text)]">No Syllabus Support Notes Yet</h3>
+              <p className="text-xs text-[var(--text-muted)] max-w-sm mx-auto mt-1">
+                Administrators have not yet supplemented topics with dynamic reference resources. Add the first note above!
+              </p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6" id="resources-grid">
+              {filteredResources.map((res) => (
+                <div key={res.id} className="bg-[var(--surface)] p-5 rounded-xl border border-[var(--border)] shadow-xs hover:shadow-md transition-all flex flex-col justify-between group">
+                  <div>
+                    <div className="flex justify-between items-start gap-3 mb-3">
+                      <span className="text-xs font-bold text-[var(--primary)] bg-[var(--primary)]/10 px-2.5 py-0.5 rounded-full">
+                        {res.topicTitle}
+                      </span>
+                      {res.sourceName && (
+                        <span className="px-2 py-0.5 border border-[var(--border)] bg-[var(--bg)] text-[9px] font-semibold text-[var(--text-muted)] uppercase rounded-md">
+                          {res.sourceName}
+                        </span>
+                      )}
+                    </div>
+                    
+                    <div className="text-xs text-[var(--text)] font-sans leading-relaxed mb-4 whitespace-pre-wrap bg-[var(--bg)]/50 p-3 rounded-lg border border-[var(--border)]/30">
+                      {res.notes}
+                    </div>
+
+                    {res.url && (
+                      <div className="flex items-center gap-1 text-xs text-[var(--primary)] hover:underline mb-4">
+                        <ArrowUpRight size={14} />
+                        <a href={res.url} target="_blank" rel="noopener noreferrer" className="font-semibold truncate max-w-xs">
+                          {res.url}
+                        </a>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="flex items-center justify-between border-t border-[var(--border)] pt-4 mt-auto">
+                    <span className="text-[10px] text-[var(--text-muted)] font-mono">
+                      Instructor: {res.createdByName || 'Clinical Specialist'}
+                    </span>
+                    <div className="flex gap-1.5 opacity-80 group-hover:opacity-100 transition-opacity">
+                      <button
+                        onClick={() => startEditCurriculumResource(res)}
+                        className="p-1.5 bg-[var(--bg)] border border-[var(--border)] rounded-lg text-[var(--text-muted)] hover:text-[var(--primary)] hover:border-[var(--primary)]/30 cursor-pointer"
+                        title="Edit Resource"
+                      >
+                        <Edit3 size={13} />
+                      </button>
+                      <button
+                        onClick={(e) => handleDeleteCurriculumResource(res.id, e)}
+                        className="p-1.5 bg-[var(--bg)] border border-[var(--border)] rounded-lg text-[var(--text-muted)] hover:text-[var(--destructive)] hover:border-[var(--destructive)]/30 cursor-pointer"
+                        title="Delete Resource"
+                      >
+                        <Trash2 size={13} />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           )}
         </div>

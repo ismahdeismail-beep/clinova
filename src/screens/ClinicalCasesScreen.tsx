@@ -11,7 +11,7 @@ import {
   collection, getDocs, addDoc, deleteDoc, doc, updateDoc, 
   query, orderBy, Timestamp 
 } from 'firebase/firestore';
-import { handleFirestoreError, OperationType } from '../lib/firestore-error';
+import { handleFirestoreError, OperationType } from '../lib/firestore-diagnostics';
 
 interface ClinicalCase {
   id: string;

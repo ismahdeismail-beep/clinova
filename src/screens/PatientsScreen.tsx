@@ -6,7 +6,7 @@ import {
 } from "../components/PatientQuickSummary";
 import { db } from "../lib/firebase";
 import { collection, getDocs, doc, setDoc, addDoc, updateDoc } from "firebase/firestore";
-import { handleFirestoreError, OperationType } from "../lib/firestore-error";
+import { handleFirestoreError, OperationType } from "../lib/firestore-diagnostics";
 import { getPatientInitials } from "../lib/patientUtils";
 
 const MOCK_PATIENTS: Patient[] = [

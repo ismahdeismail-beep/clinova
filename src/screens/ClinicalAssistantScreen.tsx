@@ -173,7 +173,16 @@ export default function ClinicalAssistantScreen() {
   const [input, setInput] = useState('');
   const [isListening, setIsListening] = useState(false);
   const [isMobileRouterOpen, setIsMobileRouterOpen] = useState(false);
+  const [speechInterim, setSpeechInterim] = useState('');
+  const [speechError, setSpeechError] = useState<string | null>(null);
+  const [speechLang, setSpeechLang] = useState('en-US');
   const recognitionRef = useRef<any>(null);
+  const shouldBeListeningRef = useRef(false);
+  const inputRef = useRef(input);
+
+  useEffect(() => {
+    inputRef.current = input;
+  }, [input]);
   
   // Ref for textarea auto-resizing
   const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -271,6 +280,7 @@ export default function ClinicalAssistantScreen() {
       recognitionRef.current = new SpeechRecognition();
       recognitionRef.current.continuous = true;
       recognitionRef.current.interimResults = true;
+      recognitionRef.current.lang = speechLang;
 
       recognitionRef.current.onresult = (event: any) => {
         let interimTranscript = '';
@@ -284,21 +294,97 @@ export default function ClinicalAssistantScreen() {
           }
         }
         
+        if (interimTranscript) {
+          setSpeechInterim(interimTranscript);
+        }
+
         if (finalTranscript) {
+          setSpeechInterim('');
+          const lowerFinal = finalTranscript.toLowerCase().trim();
+
+          if (lowerFinal === 'clear all' || lowerFinal === 'clear text') {
+            setInput('');
+            return;
+          }
+
+          if (lowerFinal === 'delete last' || lowerFinal === 'delete last word') {
+            setInput(prev => {
+              const words = prev.trim().split(/\s+/);
+              words.pop();
+              return words.join(' ');
+            });
+            return;
+          }
+
+          if (lowerFinal === 'send message' || lowerFinal === 'submit case' || lowerFinal === 'send query') {
+            const currentText = inputRef.current;
+            if (currentText.trim()) {
+              handleSend(currentText);
+            }
+            return;
+          }
+
+          // Spoken punctuation/symbols translation
+          let formatted = finalTranscript
+            .replace(/\bperiod\b/gi, '.')
+            .replace(/\bfull stop\b/gi, '.')
+            .replace(/\bcomma\b/gi, ',')
+            .replace(/\bnew line\b/gi, '\n')
+            .replace(/\bnext line\b/gi, '\n')
+            .replace(/\bquestion mark\b/gi, '?')
+            .replace(/\bcolon\b/gi, ':')
+            .replace(/\bsemi colon\b/gi, ';')
+            .replace(/\bhyphen\b/gi, '-')
+            .replace(/\bdegrees celsius\b/gi, '°C')
+            .replace(/\bpercent\b/gi, '%');
+
+          const lowerFormatted = formatted.toLowerCase().trim();
+          if (lowerFormatted.endsWith('send message') || lowerFormatted.endsWith('submit case') || lowerFormatted.endsWith('send query')) {
+            formatted = formatted.replace(/(send message|submit case|send query)$/i, '');
+            setInput(prev => {
+              const combined = prev ? `${prev.trim()} ${formatted.trim()}` : formatted.trim();
+              setTimeout(() => handleSend(combined), 100);
+              return '';
+            });
+            return;
+          }
+
           setInput(prev => {
-            const newValue = prev ? `${prev} ${finalTranscript}` : finalTranscript;
-            return newValue;
+            const prevTrimmed = prev.trim();
+            const formattedTrimmed = formatted.trim();
+            if (!prevTrimmed) return formatted;
+            return `${prevTrimmed} ${formattedTrimmed}`;
           });
         }
       };
 
       recognitionRef.current.onerror = (event: any) => {
         console.error('Speech recognition error', event.error);
+        let errorMsg = 'Error occurred during voice input.';
+        if (event.error === 'not-allowed') {
+          errorMsg = 'Microphone access denied. Please enable mic permissions.';
+        } else if (event.error === 'no-speech') {
+          errorMsg = 'No speech detected. Please speak clearly.';
+        } else if (event.error === 'network') {
+          errorMsg = 'Network error. Speech recognition requires internet connection.';
+        }
+        setSpeechError(errorMsg);
         setIsListening(false);
+        shouldBeListeningRef.current = false;
       };
 
       recognitionRef.current.onend = () => {
-        setIsListening(false);
+        if (shouldBeListeningRef.current) {
+          try {
+            recognitionRef.current.start();
+          } catch (e) {
+            console.error('Failed to restart speech recognition:', e);
+            setIsListening(false);
+            shouldBeListeningRef.current = false;
+          }
+        } else {
+          setIsListening(false);
+        }
       };
     }
 
@@ -307,7 +393,7 @@ export default function ClinicalAssistantScreen() {
         recognitionRef.current.stop();
       }
     };
-  }, []);
+  }, [speechLang]);
 
   const toggleListening = () => {
     if (!recognitionRef.current) {
@@ -320,12 +406,18 @@ export default function ClinicalAssistantScreen() {
     }
 
     if (isListening) {
+      shouldBeListeningRef.current = false;
       recognitionRef.current.stop();
       setIsListening(false);
+      setSpeechInterim('');
     } else {
       try {
+        shouldBeListeningRef.current = true;
+        recognitionRef.current.lang = speechLang;
         recognitionRef.current.start();
         setIsListening(true);
+        setSpeechError(null);
+        setSpeechInterim('');
       } catch (e) {
         console.error(e);
       }
@@ -592,10 +684,11 @@ export default function ClinicalAssistantScreen() {
     }
   }, [messages]);
 
-  const handleSend = async () => {
-    if ((!input.trim() && !attachedFile) || isProcessing) return;
+  const handleSend = async (textOverride?: string) => {
+    const textToSend = textOverride !== undefined ? textOverride : input;
+    if ((!textToSend.trim() && !attachedFile) || isProcessing) return;
 
-    const userQuery = input.trim() || `Analyze the attached file: ${attachedFile?.name}`;
+    const userQuery = textToSend.trim() || `Analyze the attached file: ${attachedFile?.name}`;
     setInput('');
     setIsProcessing(true);
 
@@ -1017,6 +1110,109 @@ export default function ClinicalAssistantScreen() {
             </AnimatePresence>
           </div>
 
+          {/* Clinical Voice Dictation Panel */}
+          <AnimatePresence>
+            {isListening && (
+              <motion.div
+                initial={{ opacity: 0, height: 0, y: 10 }}
+                animate={{ opacity: 1, height: 'auto', y: 0 }}
+                exit={{ opacity: 0, height: 0, y: 10 }}
+                className="overflow-hidden mb-3 bg-[var(--primary-container)]/10 border border-[var(--primary)]/20 rounded-2xl p-3.5 shadow-xs"
+              >
+                <div className="flex items-center justify-between gap-3 mb-2 flex-wrap">
+                  <div className="flex items-center gap-2">
+                    {/* Animated mic indicator (waveform pulses) */}
+                    <div className="flex items-center gap-1.5 bg-red-500/10 px-2.5 py-1 rounded-full text-red-500 font-bold text-[10px] uppercase tracking-wider animate-pulse border border-red-500/15">
+                      <span className="relative flex h-2 w-2">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                      </span>
+                      <span>Dictation Active</span>
+                    </div>
+
+                    {/* Speech Language selector dropdown */}
+                    <div className="flex items-center gap-1">
+                      <span className="text-[10px] text-[var(--text-muted)] font-medium">Language:</span>
+                      <select
+                        value={speechLang}
+                        onChange={(e) => setSpeechLang(e.target.value)}
+                        className="bg-[var(--surface)] text-[11px] text-[var(--text)] border border-[var(--border)] rounded px-1.5 py-0.5 outline-none font-semibold cursor-pointer font-sans"
+                      >
+                        <option value="en-US">English (US)</option>
+                        <option value="en-GB">English (UK)</option>
+                        <option value="en-KE">English (Kenya)</option>
+                        <option value="sw-KE">Swahili (Kenya)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-1.5">
+                    {/* Visualizer waves */}
+                    <div className="flex items-end gap-0.5 h-3">
+                      <span className="w-0.5 bg-red-500 rounded-full animate-[bounce_0.8s_infinite_100ms] h-2"></span>
+                      <span className="w-0.5 bg-red-500 rounded-full animate-[bounce_0.8s_infinite_300ms] h-3"></span>
+                      <span className="w-0.5 bg-red-500 rounded-full animate-[bounce_0.8s_infinite_200ms] h-1.5"></span>
+                      <span className="w-0.5 bg-red-500 rounded-full animate-[bounce_0.8s_infinite_400ms] h-2.5"></span>
+                    </div>
+                    <button
+                      onClick={toggleListening}
+                      className="text-[10px] bg-[var(--surface)] border border-[var(--border)] hover:bg-red-50/20 px-2 py-0.5 rounded text-[var(--text)] font-semibold transition-colors cursor-pointer"
+                    >
+                      Stop
+                    </button>
+                  </div>
+                </div>
+
+                {/* Real-time Interim speech content */}
+                <div className="bg-[var(--surface)] border border-[var(--border)]/75 rounded-xl p-2.5 min-h-[50px] flex flex-col justify-between mb-2">
+                  <div className="text-xs text-[var(--text)] select-text">
+                    {speechInterim ? (
+                      <span className="text-[var(--text-muted)] italic animate-pulse">{speechInterim}</span>
+                    ) : (
+                      <span className="text-[var(--text-muted)]/70 text-[11px]">Start speaking to dictate symptoms or clinical details...</span>
+                    )}
+                  </div>
+                </div>
+
+                {/* Hands-free Voice Commands Info Banner */}
+                <div className="flex items-start gap-1.5 bg-[var(--surface-dim)]/50 border border-[var(--border)]/50 rounded-xl p-2 text-[10px] text-[var(--text-muted)] leading-relaxed">
+                  <span className="font-bold text-[var(--primary)] text-xs">💡 Hands-Free Commands:</span>
+                  <div className="grid grid-cols-2 gap-x-3 gap-y-1 w-full pl-1">
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--surface)] px-1 rounded font-mono">"period"</code> for .</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--surface)] px-1 rounded font-mono">"comma"</code> for ,</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--surface)] px-1 rounded font-mono">"new line"</code> for break</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--surface)] px-1 rounded font-mono">"send message"</code> to send</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--surface)] px-1 rounded font-mono">"clear all"</code> to reset</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--surface)] px-1 rounded font-mono">"delete last"</code> to undo word</div>
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          {/* Toast / Banner for Speech Recognition Error */}
+          <AnimatePresence>
+            {speechError && (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 10 }}
+                className="mb-3 flex items-center justify-between gap-3 bg-red-500/10 border border-red-500/25 rounded-xl p-3 text-xs text-red-700 font-semibold"
+              >
+                <div className="flex items-center gap-2">
+                  <AlertCircle size={14} className="text-red-500 shrink-0" />
+                  <span>{speechError}</span>
+                </div>
+                <button
+                  onClick={() => setSpeechError(null)}
+                  className="p-1 hover:bg-red-500/20 rounded-lg text-red-500 transition-colors cursor-pointer"
+                >
+                  <X size={14} />
+                </button>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
           {/* Styled Floating Input Box */}
           <div className="relative flex flex-col bg-[var(--surface-dim)]/55 border border-[var(--border)] focus-within:ring-2 focus-within:ring-[var(--primary)]/20 focus-within:border-[var(--primary)] focus-within:bg-[var(--surface)] rounded-2xl shadow-inner transition-all overflow-hidden p-1">
             <input 
@@ -1071,7 +1267,7 @@ export default function ClinicalAssistantScreen() {
                   {isListening ? <MicOff size={16} /> : <Mic size={16} />}
                 </button>
                 <button 
-                  onClick={handleSend}
+                  onClick={() => handleSend()}
                   disabled={(!input.trim() && !attachedFile) || isProcessing}
                   className={`p-2 rounded-xl transition-all cursor-pointer select-none ${
                     (input.trim() || attachedFile) && !isProcessing

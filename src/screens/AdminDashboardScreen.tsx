@@ -31,7 +31,7 @@ import {
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { db, auth } from '../lib/firebase';
 import { collection, getDocs, doc, addDoc, updateDoc, deleteDoc, query, orderBy, limit, setDoc } from 'firebase/firestore';
-import { handleFirestoreError, OperationType } from '../lib/firestore-error';
+import { handleFirestoreError, OperationType } from '../lib/firestore-diagnostics';
 import { StorageService } from '../services/storage.service';
 import { useAuth } from '../contexts/AuthContext';
 import type { StoredFile, FileCategory } from '../types/engine';

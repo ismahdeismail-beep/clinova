@@ -3,7 +3,7 @@ import {
   Bot, Send, User, BrainCircuit, Library, Pill, Activity, 
   FlaskConical, FileText, CheckCircle2, ChevronRight, Loader2, 
   Database, AlertCircle, Mic, MicOff, ArrowDown, X, Layers, Sparkles,
-  Download, FileDown, Copy, Check
+  Download, FileDown, Copy, Check, Paperclip
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { GhostWriterText } from '../components/GhostWriterText';
@@ -26,6 +26,7 @@ interface Message {
   routedTo?: string[];
   isThinking?: boolean;
   isNew?: boolean;
+  fileName?: string;
 }
 
 const RAG_SOURCES = [
@@ -77,11 +78,13 @@ function renderMarkdown(text: string) {
 function AssistantMessageBubble({ 
   content, 
   isNew, 
-  onComplete 
+  onComplete,
+  onTick
 }: { 
   content: string; 
   isNew?: boolean; 
-  onComplete?: () => void 
+  onComplete?: () => void;
+  onTick?: () => void;
 }) {
   const [displayedText, setDisplayedText] = useState(isNew ? '' : content);
 
@@ -98,13 +101,15 @@ function AssistantMessageBubble({
         setDisplayedText(content);
         clearInterval(interval);
         onComplete?.();
+        onTick?.();
       } else {
         setDisplayedText(content.slice(0, currentIndex));
+        onTick?.();
       }
     }, 12);
 
     return () => clearInterval(interval);
-  }, [content, isNew, onComplete]);
+  }, [content, isNew, onComplete, onTick]);
 
   return (
     <div className="text-xs sm:text-sm leading-relaxed max-w-none break-words">
@@ -172,6 +177,34 @@ export default function ClinicalAssistantScreen() {
   
   // Ref for textarea auto-resizing
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const [attachedFile, setAttachedFile] = useState<{
+    data: string;
+    mimeType: string;
+    name: string;
+  } | null>(null);
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    if (file.size > 10 * 1024 * 1024) {
+      alert("File size exceeds 10MB limit.");
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      const base64String = (reader.result as string).split(',')[1];
+      setAttachedFile({
+        data: base64String,
+        mimeType: file.type,
+        name: file.name
+      });
+    };
+    reader.readAsDataURL(file);
+    e.target.value = '';
+  };
 
   // Keyboard and dynamic viewport height tracking
   const [viewportHeight, setViewportHeight] = useState<number>(window.innerHeight);
@@ -560,19 +593,21 @@ export default function ClinicalAssistantScreen() {
   }, [messages]);
 
   const handleSend = async () => {
-    if (!input.trim() || isProcessing) return;
+    if ((!input.trim() && !attachedFile) || isProcessing) return;
 
-    const userQuery = input.trim();
+    const userQuery = input.trim() || `Analyze the attached file: ${attachedFile?.name}`;
     setInput('');
     setIsProcessing(true);
 
     const userMsgId = Date.now().toString();
     const thinkingMsgId = 'think-' + Date.now();
+    const currentAttachment = attachedFile;
+    setAttachedFile(null);
 
     setMessages(prev => [
       ...prev, 
-      { id: userMsgId, role: 'user', content: userQuery },
-      { id: thinkingMsgId, role: 'assistant', content: 'Analyzing query intent...', isThinking: true }
+      { id: userMsgId, role: 'user', content: userQuery, fileName: currentAttachment?.name },
+      { id: thinkingMsgId, role: 'assistant', content: 'Analyzing clinical query & retrieving evidence from knowledge bases...', isThinking: true }
     ]);
 
     // Execute RAG Routing Logic
@@ -583,26 +618,6 @@ export default function ClinicalAssistantScreen() {
       intent: intent.charAt(0).toUpperCase() + intent.slice(1) + ' Query', 
       routes: [agent] 
     });
-
-    await new Promise(r => setTimeout(r, 600));
-
-    setMessages(prev => prev.map(m => m.id === thinkingMsgId ? { 
-      ...m, 
-      content: `Routing query to: ${agent}`, 
-      routedTo: [agent],
-      isNew: true 
-    } : m));
-
-    await new Promise(r => setTimeout(r, 1000));
-
-    setMessages(prev => prev.map(m => m.id === thinkingMsgId ? { 
-      ...m, 
-      content: 'Retrieving evidence and validating clinically...', 
-      routedTo: [agent],
-      isNew: true 
-    } : m));
-
-    await new Promise(r => setTimeout(r, 1000));
 
     // Connect to actual Express server API proxying Gemini
     let responseContent = '';
@@ -623,7 +638,10 @@ export default function ClinicalAssistantScreen() {
             role: m.role,
             content: m.content
           })),
-          currentFormState: parsed
+          currentFormState: parsed,
+          fileData: currentAttachment?.data,
+          fileType: currentAttachment?.mimeType,
+          fileName: currentAttachment?.name
         }),
       });
 
@@ -686,83 +704,7 @@ export default function ClinicalAssistantScreen() {
     }
   };
 
-  const masterRouterContent = (isMobile: boolean = false) => (
-    <div className="flex flex-col gap-4 h-full">
-      <div className="flex items-center justify-between mb-2">
-        <div className="flex items-center gap-2">
-          <Database size={16} className="text-[var(--primary)]" />
-          <h3 className="font-semibold text-sm text-[var(--text)]">Master Router</h3>
-        </div>
-        {isMobile && (
-          <button 
-            onClick={() => setIsMobileRouterOpen(false)}
-            className="p-1 text-[var(--text-muted)] hover:text-[var(--text)] rounded-full hover:bg-[var(--surface-dim)]"
-          >
-            <X size={16} />
-          </button>
-        )}
-      </div>
-      <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
-        Intelligently routes queries to the most relevant knowledge bases for &gt;95% evidence-backed responses.
-      </p>
-      <div className="space-y-2 flex-1 overflow-y-auto pr-1">
-        {RAG_SOURCES.map(source => {
-          const Icon = source.icon;
-          const isActiveRoute = activeRouterState?.routes.includes(source.name);
-          return (
-            <div 
-              key={source.id} 
-              className={`flex items-center justify-between p-2.5 rounded-xl border transition-all duration-300 ${
-                isActiveRoute 
-                  ? 'bg-[var(--primary-container)]/25 border-[var(--primary)]/30 shadow-xs' 
-                  : 'bg-[var(--surface-dim)]/50 border-[var(--border)]'
-              }`}
-            >
-              <div className="flex items-center gap-2.5">
-                <div className={`p-1.5 rounded-lg ${isActiveRoute ? 'bg-[var(--primary)]/10 text-[var(--primary)]' : 'bg-[var(--surface)] text-[var(--text-muted)]'}`}>
-                  <Icon size={14} />
-                </div>
-                <span className={`text-[11px] font-medium ${isActiveRoute ? 'text-[var(--primary)] font-semibold' : 'text-[var(--text)]'}`}>
-                  {source.name}
-                </span>
-              </div>
-              {isActiveRoute ? (
-                <span className="flex h-2 w-2 relative">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--primary)] opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--primary)]"></span>
-                </span>
-              ) : (
-                <div className="w-1.5 h-1.5 rounded-full bg-emerald-500/30"></div>
-              )}
-            </div>
-          );
-        })}
-      </div>
-      
-      {activeRouterState && (
-         <div className="mt-2 pt-3 border-t border-[var(--border)]">
-           <div className="text-[10px] uppercase tracking-wider font-bold text-[var(--text-muted)] mb-1">Detected Intent</div>
-           <div className="text-xs text-[var(--primary)] font-bold bg-[var(--primary-container)]/10 px-2.5 py-1.5 rounded-lg border border-[var(--primary)]/10 inline-block w-full text-center">
-             {activeRouterState.intent}
-           </div>
-         </div>
-      )}
 
-      <div className="bg-gradient-to-r from-[var(--primary)]/5 to-indigo-500/5 border border-[var(--primary)]/20 rounded-2xl p-4 shadow-xs">
-        <div className="flex items-start gap-2.5">
-          <div className="p-1.5 rounded-lg bg-[var(--primary)]/10 text-[var(--primary)] shrink-0">
-            <AlertCircle size={15} />
-          </div>
-          <div>
-            <h4 className="text-xs font-bold text-[var(--primary)] mb-1">Zero Hallucination Target</h4>
-            <p className="text-[10px] text-[var(--text)] opacity-80 leading-relaxed">
-              Every response requires retrieval of validated evidence and generates a clinical confidence score.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
 
   return (
     <div 
@@ -771,37 +713,7 @@ export default function ClinicalAssistantScreen() {
         height: `calc(${viewportHeight}px - 4rem - env(safe-area-inset-top, 0px))`
       }}
     >
-      {/* Left Sidebar: Master Router Status (Desktop) */}
-      <div className="hidden lg:flex w-72 flex-col gap-4 shrink-0 h-full p-6 border-r border-[var(--border)] bg-[var(--surface)] overflow-y-auto">
-        {masterRouterContent(false)}
-      </div>
-
-      {/* Slide-over Drawer (Mobile Router Monitor) */}
-      <AnimatePresence>
-        {isMobileRouterOpen && (
-          <>
-            <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.4 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setIsMobileRouterOpen(false)}
-              className="fixed inset-0 bg-black/50 z-40 lg:hidden"
-            />
-            <motion.div 
-              initial={{ x: '100%' }}
-              animate={{ x: 0 }}
-              exit={{ x: '100%' }}
-              transition={{ type: 'spring', damping: 25, stiffness: 220 }}
-              className="fixed right-0 top-[calc(4rem+env(safe-area-inset-top,0px))] bottom-0 w-80 max-w-[85vw] bg-[var(--surface)] border-l border-[var(--border)] p-5 shadow-2xl z-50 lg:hidden flex flex-col justify-between"
-              style={{
-                height: `calc(${viewportHeight}px - 4rem - env(safe-area-inset-top, 0px))`
-              }}
-            >
-              {masterRouterContent(true)}
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
+    
 
       {/* Main Chat Interface */}
       <div className="flex-1 flex flex-col h-full overflow-hidden bg-[var(--bg)] relative">
@@ -892,14 +804,7 @@ export default function ClinicalAssistantScreen() {
               </AnimatePresence>
             </div>
 
-            {/* Mobile RAG router toggle button */}
-            <button
-              onClick={() => setIsMobileRouterOpen(true)}
-              className="lg:hidden flex items-center gap-1.5 text-xs font-bold text-[var(--primary)] bg-[var(--primary)]/10 hover:bg-[var(--primary)]/25 px-3 py-1.5 rounded-xl border border-[var(--primary)]/10 transition-all cursor-pointer select-none"
-            >
-              <Layers size={13} />
-              <span>Router</span>
-            </button>
+            
           </div>
         </div>
 
@@ -959,13 +864,28 @@ export default function ClinicalAssistantScreen() {
                           : 'bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] rounded-tl-none shadow-xs'
                       }`}>
                         {isUser ? (
-                          <p className="whitespace-pre-wrap">{msg.content}</p>
+                          <div className="space-y-2">
+                            {msg.fileName && (
+                              <div className="flex items-center gap-1.5 text-xs bg-white/15 px-2.5 py-1.5 rounded-lg border border-white/10 max-w-xs truncate">
+                                <Paperclip size={12} className="shrink-0" />
+                                <span className="truncate">{msg.fileName}</span>
+                              </div>
+                            )}
+                            <p className="whitespace-pre-wrap">{msg.content}</p>
+                          </div>
                         ) : (
                           <AssistantMessageBubble 
                             content={msg.content} 
                             isNew={msg.isNew} 
                             onComplete={() => {
                               setMessages(prev => prev.map(m => m.id === msg.id ? { ...m, isNew: false } : m));
+                            }}
+                            onTick={() => {
+                              if (!chatContainerRef.current) return;
+                              const { scrollTop, scrollHeight, clientHeight } = chatContainerRef.current;
+                              if (scrollHeight - scrollTop - clientHeight < 350) {
+                                chatContainerRef.current.scrollTop = scrollHeight;
+                              }
                             }}
                           />
                         )}
@@ -1098,39 +1018,70 @@ export default function ClinicalAssistantScreen() {
           </div>
 
           {/* Styled Floating Input Box */}
-          <div className="relative flex items-end bg-[var(--surface-dim)]/55 border border-[var(--border)] focus-within:ring-2 focus-within:ring-[var(--primary)]/20 focus-within:border-[var(--primary)] focus-within:bg-[var(--surface)] rounded-2xl shadow-inner transition-all overflow-hidden pr-2">
-            <textarea 
-              ref={textareaRef}
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={handleKeyDown}
-              placeholder="Ask clinical queries, verify doses, or check guidelines..." 
-              className="w-full pl-5 pr-2 py-3 max-h-40 min-h-[44px] bg-transparent outline-none text-[var(--text)] text-sm resize-none placeholder-[var(--text-muted)] leading-relaxed self-center"
-              rows={1}
+          <div className="relative flex flex-col bg-[var(--surface-dim)]/55 border border-[var(--border)] focus-within:ring-2 focus-within:ring-[var(--primary)]/20 focus-within:border-[var(--primary)] focus-within:bg-[var(--surface)] rounded-2xl shadow-inner transition-all overflow-hidden p-1">
+            <input 
+              type="file" 
+              ref={fileInputRef} 
+              onChange={handleFileChange} 
+              className="hidden" 
+              accept="image/*,application/pdf" 
             />
-            <div className="flex items-center gap-1.5 pb-2 shrink-0 self-end">
-              <button
-                onClick={toggleListening}
-                className={`p-2 rounded-xl transition-all cursor-pointer select-none ${
-                  isListening
-                    ? 'bg-red-500/20 text-red-500 animate-pulse'
-                    : 'text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--surface-dim)]'
-                }`}
-                title={isListening ? "Stop listening" : "Start dictation"}
-              >
-                {isListening ? <MicOff size={16} /> : <Mic size={16} />}
-              </button>
-              <button 
-                onClick={handleSend}
-                disabled={!input.trim() || isProcessing}
-                className={`p-2 rounded-xl transition-all cursor-pointer select-none ${
-                  input.trim() && !isProcessing
-                    ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm hover:opacity-95' 
-                    : 'bg-[var(--surface-dim)] text-[var(--text-muted)] cursor-not-allowed'
-                }`}
-              >
-                {isProcessing ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} />}
-              </button>
+            {attachedFile && (
+              <div className="flex items-center justify-between mx-4 mt-2 p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-xs text-[var(--text)] font-semibold select-none">
+                <div className="flex items-center gap-2 truncate">
+                  <Paperclip size={14} className="text-[var(--primary)] shrink-0" />
+                  <span className="truncate">{attachedFile.name}</span>
+                </div>
+                <button 
+                  onClick={() => setAttachedFile(null)}
+                  className="p-1 hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--danger)] rounded-lg transition-colors cursor-pointer"
+                >
+                  <X size={14} />
+                </button>
+              </div>
+            )}
+            <div className="flex items-end w-full pr-2">
+              <textarea 
+                ref={textareaRef}
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                onKeyDown={handleKeyDown}
+                placeholder="Ask clinical queries, verify doses, or check guidelines..." 
+                className="w-full pl-4 pr-2 py-3 max-h-40 min-h-[44px] bg-transparent outline-none text-[var(--text)] text-sm resize-none placeholder-[var(--text-muted)] leading-relaxed self-center"
+                rows={1}
+              />
+              <div className="flex items-center gap-1.5 pb-2 shrink-0 self-end">
+                <button
+                  type="button"
+                  onClick={() => fileInputRef.current?.click()}
+                  className="p-2 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--surface-dim)] rounded-xl transition-all cursor-pointer select-none"
+                  title="Upload PDF or Image"
+                >
+                  <Paperclip size={16} />
+                </button>
+                <button
+                  onClick={toggleListening}
+                  className={`p-2 rounded-xl transition-all cursor-pointer select-none ${
+                    isListening
+                      ? 'bg-red-500/20 text-red-500 animate-pulse'
+                      : 'text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--surface-dim)]'
+                  }`}
+                  title={isListening ? "Stop listening" : "Start dictation"}
+                >
+                  {isListening ? <MicOff size={16} /> : <Mic size={16} />}
+                </button>
+                <button 
+                  onClick={handleSend}
+                  disabled={(!input.trim() && !attachedFile) || isProcessing}
+                  className={`p-2 rounded-xl transition-all cursor-pointer select-none ${
+                    (input.trim() || attachedFile) && !isProcessing
+                      ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm hover:opacity-95' 
+                      : 'bg-[var(--surface-dim)] text-[var(--text-muted)] cursor-not-allowed'
+                  }`}
+                >
+                  {isProcessing ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} />}
+                </button>
+              </div>
             </div>
           </div>
           <div className="flex justify-between items-center mt-2 px-1 flex-wrap gap-2 shrink-0">

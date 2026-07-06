@@ -372,10 +372,10 @@ CRITICAL SAFETY & TRUTH CONSTRAINT: You must be extremely careful and NEVER assu
 // AI Interactive Assistant / Chat Sidebar
 app.post('/api/gemini/assistant', async (req, res) => {
   try {
-    const { userMessage, chatHistory, currentFormState } = req.body;
+    const { userMessage, chatHistory, currentFormState, fileData, fileType, fileName } = req.body;
 
-    if (!userMessage) {
-      return res.status(400).json({ error: 'Missing userMessage' });
+    if (!userMessage && !fileData) {
+      return res.status(400).json({ error: 'Missing userMessage or fileData' });
     }
 
     const stateSummary = currentFormState ? `
@@ -398,13 +398,34 @@ Provide concise, authoritative, and actionable feedback. Be encouraging and high
       }
     }
 
-    contents.push({
-      role: 'user',
-      parts: [{ text: `
+    const userParts: any[] = [];
+    
+    // Add file inline data if available
+    if (fileData && fileType) {
+      let cleanBase64 = fileData;
+      if (fileData.includes(';base64,')) {
+        cleanBase64 = fileData.split(';base64,')[1];
+      }
+      userParts.push({
+        inlineData: {
+          mimeType: fileType,
+          data: cleanBase64
+        }
+      });
+    }
+
+    userParts.push({
+      text: `
 ${stateSummary}
 
-User Clinical Query: "${userMessage}"
-      ` }],
+User Clinical Query: "${userMessage || 'Analyze the attached file.'}"
+${fileName ? `(Attached file: ${fileName})` : ''}
+`
+    });
+
+    contents.push({
+      role: 'user',
+      parts: userParts,
     });
 
     const response = await generateContentWithFallback({

@@ -777,7 +777,7 @@ export default function PharmacotherapyReviewScreen() {
                       }}
                     />
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
                       <label className="text-sm font-medium text-[var(--text)]">Age</label>
                       <input type="number" name="patient_age" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
@@ -805,7 +805,7 @@ export default function PharmacotherapyReviewScreen() {
                     <label className="text-sm font-medium text-[var(--text)]">IP Number</label>
                     <input type="text" name="patient_ip" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
                       <label className="text-sm font-medium text-[var(--text)]">Ward</label>
                       <input type="text" name="patient_ward" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
@@ -928,7 +928,7 @@ export default function PharmacotherapyReviewScreen() {
                   {/* Electrolytes */}
                   <div className="space-y-3">
                     <h4 className="text-sm font-medium text-[var(--text)] border-b border-[var(--border)] pb-2">Electrolytes / UECs</h4>
-                    <div className="grid grid-cols-2 gap-3">
+                    <div className="grid grid-cols-1 xs:grid-cols-2 gap-3">
                       <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Na+ <br/><span className="text-[10px] opacity-70">(135-145)</span></span><input type="text" name="na" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                       <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">K+ <br/><span className="text-[10px] opacity-70">(3.2-5)</span></span><input type="text" name="k" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                       <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Cl- <br/><span className="text-[10px] opacity-70">(98-106)</span></span><input type="text" name="cl" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
@@ -941,7 +941,7 @@ export default function PharmacotherapyReviewScreen() {
                   {/* LFTs */}
                   <div className="space-y-3">
                     <h4 className="text-sm font-medium text-[var(--text)] border-b border-[var(--border)] pb-2">Liver Function Tests</h4>
-                    <div className="grid grid-cols-2 gap-3">
+                    <div className="grid grid-cols-1 xs:grid-cols-2 gap-3">
                       <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">AST <br/><span className="text-[10px] opacity-70">(13-42)</span></span><input type="text" name="ast" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                       <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">ALT <br/><span className="text-[10px] opacity-70">(9-52)</span></span><input type="text" name="alt" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                       <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">ALP <br/><span className="text-[10px] opacity-70">(35-130)</span></span><input type="text" name="alp" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
@@ -954,7 +954,7 @@ export default function PharmacotherapyReviewScreen() {
                   {/* Hematology */}
                   <div className="space-y-3 md:col-span-2">
                     <h4 className="text-sm font-medium text-[var(--text)] border-b border-[var(--border)] pb-2">Hematology</h4>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
                       <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">WBC <br/><span className="text-[10px] opacity-70">(4.3-11)</span></span><input type="text" name="wbc" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                       <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Neut <br/><span className="text-[10px] opacity-70">(1-4.6)</span></span><input type="text" name="neut" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                       <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Lymph <br/><span className="text-[10px] opacity-70">(1.5-4)</span></span><input type="text" name="lymph" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
@@ -969,7 +969,7 @@ export default function PharmacotherapyReviewScreen() {
                   {/* Other Tests */}
                   <div className="space-y-3 md:col-span-2">
                     <h4 className="text-sm font-medium text-[var(--text)] border-b border-[var(--border)] pb-2">Other Tests</h4>
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                       <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">CrAG</label><input type="text" name="crag" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                       <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">India Ink Test</label><input type="text" name="india_ink" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                       <div className="space-y-1"><label className="text-xs text-[var(--text-muted)]">MPS</label><input type="text" name="mps" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>

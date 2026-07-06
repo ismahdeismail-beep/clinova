@@ -1,5 +1,4 @@
 import { GoogleGenAI } from '@google/genai';
-import fetch from 'node-fetch'; // We can use global fetch if available in Node 18+, but let's assume global fetch is available
 
 export interface AIProviderStatus {
   name: string;
@@ -206,6 +205,12 @@ function getGoogleClient() {
 }
 
 async function executeGoogleAI(request: any) {
+  // Ensure clients are initialized before evaluating maxAttempts
+  try {
+    getGoogleClient();
+  } catch (err) {
+    // If we can't initialize, we will fail inside the loop or below
+  }
   const maxAttempts = aiClients.length || 1;
   let lastErr = null;
   
@@ -253,9 +258,10 @@ async function executeOpenRouter(request: any) {
 
   if (!res.ok) throw new Error(`OpenRouter Error: ${res.status}`);
   const data = await res.json() as any;
+  const content = data.choices?.[0]?.message?.content || '';
   
   return {
-    text: () => data.choices[0].message.content,
+    text: content,
   };
 }
 
@@ -281,9 +287,10 @@ async function executeCerebras(request: any) {
 
   if (!res.ok) throw new Error(`Cerebras Error: ${res.status}`);
   const data = await res.json() as any;
+  const content = data.choices?.[0]?.message?.content || '';
   
   return {
-    text: () => data.choices[0].message.content,
+    text: content,
   };
 }
 
@@ -309,9 +316,10 @@ async function executeMistral(request: any) {
 
   if (!res.ok) throw new Error(`Mistral Error: ${res.status}`);
   const data = await res.json() as any;
+  const content = data.choices?.[0]?.message?.content || '';
   
   return {
-    text: () => data.choices[0].message.content,
+    text: content,
   };
 }
 
@@ -341,7 +349,7 @@ async function executeCohere(request: any) {
   const data = await res.json() as any;
   
   return {
-    text: () => data.text,
+    text: data.text || '',
   };
 }
 

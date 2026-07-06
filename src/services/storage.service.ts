@@ -192,12 +192,23 @@ export const StorageService = {
     uploadedByEmail: string | null,
     uploadedByName: string | null,
   ): Promise<UploadResult> {
-    const localUrl = URL.createObjectURL(file);
+    let finalUrl = URL.createObjectURL(file);
+    let cloudinaryUrl: string | undefined;
+    let cloudinaryPublicId: string | undefined;
+
+    try {
+      const cloudDetails = await MediaService.uploadImageDetails(file);
+      cloudinaryUrl = cloudDetails.secure_url;
+      cloudinaryPublicId = cloudDetails.public_id;
+      finalUrl = cloudinaryUrl;
+    } catch (e) {
+      console.warn('Fallback: Cloudinary upload failed, using local URL', e);
+    }
 
     const storedFile: StoredFile = {
       id: fileId,
       originalName: file.name,
-      storagePath: localUrl,
+      storagePath: cloudinaryUrl || finalUrl,
       mimeType: file.type,
       size: file.size,
       category: options.category,
@@ -211,11 +222,18 @@ export const StorageService = {
       updatedAt: Date.now(),
       hash,
       accessibleTo: [],
+      ...(cloudinaryUrl ? { cloudinaryUrl, cloudinaryPublicId } : {}),
     };
+
+    try {
+      await setDoc(doc(db, FILES_COLLECTION, fileId), storedFile);
+    } catch (fsError) {
+      console.warn('Fallback: Firestore write failed, saving in-memory.', fsError);
+    }
 
     IN_MEMORY_FILES.unshift(storedFile);
     console.log('Fallback StoredFile generated:', storedFile);
-    return { file: storedFile, url: localUrl };
+    return { file: storedFile, url: finalUrl };
   },
 
   async getFile(fileId: string): Promise<StoredFile | null> {

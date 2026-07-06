@@ -31,7 +31,7 @@ app.post('/api/cloudinary/upload', upload.single('file'), async (req, res) => {
     formData.append('file', blob, req.file.originalname);
     formData.append('upload_preset', uploadPreset);
 
-    const response = await fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
+    const response = await fetch(`https://api.cloudinary.com/v1_1/${cloudName}/auto/upload`, {
       method: 'POST',
       body: formData as any,
     });
@@ -263,7 +263,7 @@ Ensure that you return a list of these medications.`;
       userParts.push({
         inlineData: {
           data: file.buffer.toString('base64'),
-          mimeType: file.mimetype
+          mimeType: file.mimetype.includes('pdf') ? 'application/pdf' : (file.mimetype.includes('image') ? file.mimetype : 'text/plain')
         }
       });
     }
@@ -566,7 +566,7 @@ Provide concise, authoritative, and actionable feedback. Be encouraging and high
       }
       userParts.push({
         inlineData: {
-          mimeType: fileType,
+          mimeType: fileType.includes('pdf') ? 'application/pdf' : (fileType.includes('image') ? fileType : 'text/plain'),
           data: cleanBase64
         }
       });

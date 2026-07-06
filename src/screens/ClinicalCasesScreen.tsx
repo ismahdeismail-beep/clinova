@@ -3,7 +3,8 @@ import {
   Plus, Search, Loader2, X, BookOpen, 
   Lightbulb, CheckCircle2, ChevronRight, BookMarked, Trash2, 
   BookOpenCheck, PenTool, Award, HelpCircle, ArrowRight, Trophy,
-  Bookmark, Share2, Sparkles, ThumbsUp, Check, ExternalLink
+  Bookmark, Share2, Sparkles, ThumbsUp, Check, ExternalLink,
+  Link, FileDown, FileText
 } from 'lucide-react';
 import { db, auth } from '../lib/firebase';
 import { useAuth } from '../contexts/AuthContext';
@@ -12,6 +13,8 @@ import {
   query, orderBy, Timestamp 
 } from 'firebase/firestore';
 import { handleFirestoreError, OperationType } from '../lib/firestore-diagnostics';
+import { jsPDF } from 'jspdf';
+import { Patient } from '../components/PatientQuickSummary';
 
 interface ClinicalCase {
   id: string;
@@ -151,6 +154,26 @@ export default function ClinicalCasesScreen() {
   // Interactive learning workflow states
   const [selectedCase, setSelectedCase] = useState<ClinicalCase | null>(null);
   const [subTab, setSubTab] = useState<'scenario' | 'reflect' | 'guideline'>('scenario');
+  
+  // Patient Context States
+  const [patients, setPatients] = useState<Patient[]>([]);
+  const [selectedPatientId, setSelectedPatientId] = useState<string>('');
+
+  useEffect(() => {
+    const fetchPatientsList = async () => {
+      try {
+        const qSnapshot = await getDocs(collection(db, 'patients'));
+        const list: Patient[] = [];
+        qSnapshot.forEach((docSnap) => {
+          list.push({ id: docSnap.id, ...docSnap.data() } as Patient);
+        });
+        setPatients(list);
+      } catch (err) {
+        console.error('Error loading patients context in ClinicalCasesScreen:', err);
+      }
+    };
+    fetchPatientsList();
+  }, []);
   
   // Persistence state
   const [userReflections, setUserReflections] = useState<Record<string, string>>(() => {
@@ -387,6 +410,260 @@ export default function ClinicalCasesScreen() {
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const handleExportPDF = (c: ClinicalCase) => {
+    if (!c) return;
+
+    const doc = new jsPDF('p', 'mm', 'a4');
+    const pageWidth = doc.internal.pageSize.getWidth();
+    const pageHeight = doc.internal.pageSize.getHeight();
+    const margin = 20;
+    const contentWidth = pageWidth - (margin * 2);
+    let yOffset = 20;
+
+    // Helper to add a new page with running footer
+    const addNewPage = () => {
+      // Draw running footer on current page before adding a new one
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(8);
+      doc.setTextColor(150, 150, 150);
+      doc.text("Clinova CoreOS - Automated Clinical Portlet Summary", margin, pageHeight - 12);
+      doc.text(`Page ${doc.internal.pages.length - 1}`, pageWidth - margin - 15, pageHeight - 12);
+
+      doc.addPage();
+      yOffset = 20;
+      drawHeaderBand(true);
+    };
+
+    const checkSpace = (needed: number) => {
+      if (yOffset + needed > pageHeight - 25) {
+        addNewPage();
+      }
+    };
+
+    const drawHeaderBand = (isSubsequentPage = false) => {
+      // Draw a sleek top border line or decorative banner
+      doc.setFillColor(30, 58, 138); // Navy
+      doc.rect(0, 0, pageWidth, 8, 'F');
+      yOffset = Math.max(yOffset, 15);
+
+      if (!isSubsequentPage) {
+        // Document Title Block
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(22);
+        doc.setTextColor(30, 58, 138);
+        doc.text("CLINICAL CASE STUDY SUMMARY", margin, yOffset + 10);
+        
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(10);
+        doc.setTextColor(100, 116, 139);
+        doc.text("Clinova CoreOS • Diagnostic & Therapeutic Review Portlet", margin, yOffset + 15);
+        
+        // Horizontal divider line
+        doc.setDrawColor(226, 232, 240);
+        doc.setLineWidth(0.5);
+        doc.line(margin, yOffset + 19, pageWidth - margin, yOffset + 19);
+        
+        yOffset += 26;
+      }
+    };
+
+    drawHeaderBand(false);
+
+    // Section 1: CASE STUDY METADATA
+    checkSpace(40);
+    doc.setFillColor(248, 250, 252); // Soft light background
+    doc.setDrawColor(226, 232, 240);
+    doc.rect(margin, yOffset, contentWidth, 32, 'FD');
+
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(11);
+    doc.setTextColor(30, 41, 59);
+    doc.text("CASE METADATA", margin + 6, yOffset + 6);
+
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(71, 85, 105);
+    
+    // Left Column
+    doc.text(`Title: ${c.title.length > 55 ? c.title.substring(0, 52) + '...' : c.title}`, margin + 6, yOffset + 13);
+    doc.text(`Topic / Therapeutic Area: ${c.topic}`, margin + 6, yOffset + 19);
+    doc.text(`Difficulty: ${c.difficulty}`, margin + 6, yOffset + 25);
+
+    // Right Column
+    const authorName = c.createdByName || 'Clinova Clinical Faculty';
+    doc.text(`Author: ${authorName}`, margin + 100, yOffset + 13);
+    doc.text(`Review Date: ${new Date().toLocaleDateString()}`, margin + 100, yOffset + 19);
+    const userEmail = auth.currentUser?.email || 'N/A';
+    doc.text(`Reviewer: ${userEmail}`, margin + 100, yOffset + 25);
+
+    yOffset += 40;
+
+    // Section 2: LINKED PATIENT CONTEXT (LEVERAGING EXISTING PATIENT DATA CONTEXT)
+    const selectedPatient = patients.find(p => p.id === selectedPatientId);
+    if (selectedPatient) {
+      checkSpace(65);
+      doc.setFillColor(239, 246, 255); // Blue tint light bg
+      doc.setDrawColor(191, 219, 254);
+      doc.rect(margin, yOffset, contentWidth, 54, 'FD');
+
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(11);
+      doc.setTextColor(29, 78, 216); // Blue-700
+      doc.text("🔗 ASSOCIATED PATIENT CLINICAL CONTEXT", margin + 6, yOffset + 6);
+
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(9);
+      doc.setTextColor(30, 41, 59);
+
+      // Col 1: Demographics
+      doc.setFont('helvetica', 'bold');
+      doc.text("Patient Demographics:", margin + 6, yOffset + 13);
+      doc.setFont('helvetica', 'normal');
+      doc.text(`Initials/Name: ${selectedPatient.name}`, margin + 6, yOffset + 19);
+      doc.text(`IP Number: ${selectedPatient.ipNumber}`, margin + 6, yOffset + 25);
+      doc.text(`Age / Sex: ${selectedPatient.age}y / ${selectedPatient.sex}`, margin + 6, yOffset + 31);
+      doc.text(`Location: ${selectedPatient.ward}`, margin + 6, yOffset + 37);
+      doc.text(`Last Admission: ${selectedPatient.lastAdmission}`, margin + 6, yOffset + 43);
+
+      // Col 2: Vitals
+      doc.setFont('helvetica', 'bold');
+      doc.text("Real-time Vitals:", margin + 65, yOffset + 13);
+      doc.setFont('helvetica', 'normal');
+      doc.text(`Blood Pressure: ${selectedPatient.vitals?.bp || 'N/A'} mmHg`, margin + 65, yOffset + 19);
+      doc.text(`Heart Rate: ${selectedPatient.vitals?.hr || 'N/A'} bpm`, margin + 65, yOffset + 25);
+      doc.text(`Temperature: ${selectedPatient.vitals?.temp || 'N/A'} °C`, margin + 65, yOffset + 31);
+      doc.text(`Respiratory Rate: ${selectedPatient.vitals?.rr || 'N/A'} breaths/min`, margin + 65, yOffset + 37);
+      doc.text(`Oxygen Saturation: ${selectedPatient.vitals?.spo2 || 'N/A'}% SpO2`, margin + 65, yOffset + 43);
+
+      // Col 3: Alerts or Labs snippet
+      doc.setFont('helvetica', 'bold');
+      doc.text("Clinical Safety Flags:", margin + 120, yOffset + 13);
+      doc.setFont('helvetica', 'normal');
+      
+      const activeAlerts = selectedPatient.alerts || [];
+      if (activeAlerts.length > 0) {
+        activeAlerts.slice(0, 3).forEach((alert, idx) => {
+          const alertText = `• [${alert.type.toUpperCase()}] ${alert.message}`;
+          const splitAlert = doc.splitTextToSize(alertText, 45);
+          doc.text(splitAlert[0] || '', margin + 120, yOffset + 19 + (idx * 9));
+        });
+      } else {
+        doc.setTextColor(100, 116, 139);
+        doc.text("• No active clinical alerts", margin + 120, yOffset + 19);
+        doc.text("• Hemodynamically stable", margin + 120, yOffset + 25);
+      }
+
+      yOffset += 62;
+    }
+
+    // Section 3: CLINICAL PATIENT PRESENTATION / SCENARIO
+    checkSpace(40);
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(12);
+    doc.setTextColor(30, 58, 138);
+    doc.text("1. CLINICAL PRESENTATION & CASE VIGNETTE", margin, yOffset);
+    yOffset += 4;
+    
+    doc.setDrawColor(226, 232, 240);
+    doc.setLineWidth(0.3);
+    doc.line(margin, yOffset, pageWidth - margin, yOffset);
+    yOffset += 6;
+
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9.5);
+    doc.setTextColor(51, 65, 85);
+    
+    const splitScenario = doc.splitTextToSize(c.scenario, contentWidth);
+    splitScenario.forEach((line: string) => {
+      checkSpace(6);
+      doc.text(line, margin, yOffset);
+      yOffset += 5.2;
+    });
+
+    yOffset += 10;
+
+    // Section 4: YOUR DIAGNOSTIC INTERVENTION PLAN (NOTES)
+    checkSpace(40);
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(12);
+    doc.setTextColor(30, 58, 138);
+    doc.text("2. FORMULATED THERAPEUTIC & INTERVENTION PLAN", margin, yOffset);
+    yOffset += 4;
+
+    doc.line(margin, yOffset, pageWidth - margin, yOffset);
+    yOffset += 6;
+
+    const userNote = userReflections[c.id] || "No clinical reasoning or care plan notes drafted for this case study.";
+    doc.setFont('helvetica', 'italic');
+    doc.setFontSize(9.5);
+    doc.setTextColor(51, 65, 85);
+
+    const splitNotes = doc.splitTextToSize(userNote, contentWidth);
+    splitNotes.forEach((line: string) => {
+      checkSpace(6);
+      doc.text(line, margin, yOffset);
+      yOffset += 5.2;
+    });
+
+    yOffset += 10;
+
+    // Section 5: GUIDELINE RESOLUTION & KEY CLINICAL LEARNED POINTS
+    checkSpace(40);
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(12);
+    doc.setTextColor(30, 58, 138);
+    doc.text("3. TEXTBOOK GUIDELINE RESOLUTION & LEARNING POINTS", margin, yOffset);
+    yOffset += 4;
+
+    doc.line(margin, yOffset, pageWidth - margin, yOffset);
+    yOffset += 6;
+
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9.5);
+    doc.setTextColor(51, 65, 85);
+
+    const splitPoints = doc.splitTextToSize(c.learningPoints, contentWidth);
+    splitPoints.forEach((line: string) => {
+      checkSpace(6);
+      doc.text(line, margin, yOffset);
+      yOffset += 5.2;
+    });
+
+    yOffset += 12;
+
+    // Section 6: EVALUATION STATUS
+    checkSpace(25);
+    doc.setFillColor(241, 245, 249);
+    doc.setDrawColor(203, 213, 225);
+    doc.rect(margin, yOffset, contentWidth, 18, 'FD');
+
+    const isMastered = masteredCases.includes(c.id);
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(10);
+    doc.setTextColor(30, 41, 59);
+    doc.text("MASTERY STATUS:", margin + 6, yOffset + 11);
+
+    doc.setFont('helvetica', 'bold');
+    if (isMastered) {
+      doc.setTextColor(22, 101, 52); // Green-800
+      doc.text("MASTERED ✓  (The student has reviewed standard reference criteria and verified proficiency.)", margin + 43, yOffset + 11);
+    } else {
+      doc.setTextColor(194, 65, 12); // Orange-700
+      doc.text("UNDER REVIEW  (Currently being evaluated in the student's clinical portfolio.)", margin + 43, yOffset + 11);
+    }
+
+    // Write final footer on current page
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(8);
+    doc.setTextColor(150, 150, 150);
+    doc.text("Clinova CoreOS - Automated Clinical Portlet Summary", margin, pageHeight - 12);
+    doc.text(`Page ${doc.internal.pages.length - 1}`, pageWidth - margin - 15, pageHeight - 12);
+
+    // Save
+    const sanitizedTitle = c.title.replace(/[^a-zA-Z0-9]/g, "_").substring(0, 35);
+    doc.save(`Clinova_CaseSummary_${sanitizedTitle}.pdf`);
   };
 
   const handleSaveToPortfolio = async (c: ClinicalCase) => {
@@ -1091,7 +1368,7 @@ export default function ClinicalCasesScreen() {
                 </button>
               </div>
 
-              {/* Action Buttons: Save & Share */}
+              {/* Action Buttons: Save, Share, & Export */}
               <div className="flex flex-wrap items-center gap-2.5 bg-[var(--surface-dim)] p-3 rounded-xl border border-[var(--border)]">
                 <span className="text-xs font-bold text-[var(--text-muted)] mr-1">Case Actions:</span>
                 
@@ -1118,6 +1395,88 @@ export default function ClinicalCasesScreen() {
                   <Share2 size={12} />
                   {sharedCases.some(sc => sc.title === selectedCase.title || sc.scenario === selectedCase.scenario) ? 'Shared with Network' : 'Share with Network'}
                 </button>
+
+                <button
+                  onClick={() => handleExportPDF(selectedCase)}
+                  className="px-3 py-1.5 text-xs font-bold rounded-lg border flex items-center gap-1.5 transition-all cursor-pointer bg-[var(--primary)] text-[var(--primary-foreground)] border-transparent hover:opacity-90 ml-auto"
+                >
+                  <FileDown size={12} />
+                  Export Summary (PDF)
+                </button>
+              </div>
+
+              {/* Linked Patient Context Selector */}
+              <div className="bg-[var(--surface-dim)] p-4 rounded-xl border border-[var(--border)] space-y-3">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                  <div className="space-y-1 text-left">
+                    <h4 className="text-xs font-bold text-[var(--primary)] flex items-center gap-1.5 uppercase tracking-wider">
+                      <Link size={14} /> Link Patient Context
+                    </h4>
+                    <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
+                      Select an active ward patient to overlay real-time lab values, vitals, and safety flags onto this clinical summary report.
+                    </p>
+                  </div>
+                  <div className="w-full sm:w-auto shrink-0 flex items-center gap-2">
+                    <select
+                      id="patient-context-select"
+                      value={selectedPatientId}
+                      onChange={(e) => setSelectedPatientId(e.target.value)}
+                      className="bg-[var(--surface)] text-xs text-[var(--text)] border border-[var(--border)] rounded-lg px-2.5 py-1.5 outline-none font-semibold cursor-pointer w-full sm:w-48"
+                    >
+                      <option value="">-- No Patient Record Linked --</option>
+                      {patients.map((p) => (
+                        <option key={p.id} value={p.id}>
+                          {p.name} ({p.ipNumber}) - {p.ward}
+                        </option>
+                      ))}
+                    </select>
+                    {selectedPatientId && (
+                      <button
+                        onClick={() => setSelectedPatientId('')}
+                        className="text-xs font-semibold text-red-500 hover:text-red-600 transition-colors cursor-pointer"
+                      >
+                        Clear
+                      </button>
+                    )}
+                  </div>
+                </div>
+
+                {/* Patient Micro Dashboard if Linked */}
+                {selectedPatientId && (() => {
+                  const p = patients.find(pat => pat.id === selectedPatientId);
+                  if (!p) return null;
+                  return (
+                    <div className="bg-[var(--surface)] border border-[var(--border)] rounded-lg p-3 grid grid-cols-2 sm:grid-cols-4 gap-4 animate-in fade-in duration-200">
+                      <div className="space-y-0.5 text-left">
+                        <span className="text-[10px] uppercase font-bold text-[var(--text-muted)] tracking-wider">Patient Profile</span>
+                        <p className="text-xs font-bold text-[var(--text)]">{p.name} ({p.sex}, {p.age}y)</p>
+                        <p className="text-[10px] text-[var(--text-muted)]">{p.ipNumber}</p>
+                      </div>
+                      <div className="space-y-0.5 text-left">
+                        <span className="text-[10px] uppercase font-bold text-[var(--text-muted)] tracking-wider">Location / Adm</span>
+                        <p className="text-xs font-bold text-[var(--text)]">{p.ward}</p>
+                        <p className="text-[10px] text-[var(--text-muted)]">Adm: {p.lastAdmission}</p>
+                      </div>
+                      <div className="space-y-0.5 col-span-2 text-left">
+                        <span className="text-[10px] uppercase font-bold text-[var(--text-muted)] tracking-wider">Active Clinical Vitals</span>
+                        <div className="flex flex-wrap items-center gap-x-3 gap-y-0.5 mt-0.5">
+                          <span className="text-xs font-semibold text-[var(--text)]">
+                            BP: <span className="font-bold text-[var(--primary)]">{p.vitals?.bp || 'N/A'}</span>
+                          </span>
+                          <span className="text-xs font-semibold text-[var(--text)]">
+                            HR: <span className="font-bold">{p.vitals?.hr || 'N/A'}</span> bpm
+                          </span>
+                          <span className="text-xs font-semibold text-[var(--text)]">
+                            Temp: <span className="font-bold">{p.vitals?.temp || 'N/A'}</span>°C
+                          </span>
+                          <span className="text-xs font-semibold text-[var(--text)]">
+                            SpO2: <span className="font-bold text-green-600">{p.vitals?.spo2 || 'N/A'}%</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })()}
               </div>
 
               {/* Sub-tabs Learning Stepper */}

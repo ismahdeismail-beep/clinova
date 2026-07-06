@@ -48,14 +48,14 @@ export default function PharmacotherapyReviewScreen() {
     e.preventDefault();
     e.stopPropagation();
     setDragActive(false);
-    if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-      handleFileUpload(e.dataTransfer.files[0]);
+    if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+      handleFileUpload(Array.from(e.dataTransfer.files));
     }
   };
 
   const handleFileInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      handleFileUpload(e.target.files[0]);
+    if (e.target.files && e.target.files.length > 0) {
+      handleFileUpload(Array.from(e.target.files));
     }
   };
 
@@ -72,11 +72,32 @@ export default function PharmacotherapyReviewScreen() {
       if (extractedData.age) {
         parsed['admission']['patient_age'] = String(extractedData.age);
       }
+      if (extractedData.sex) {
+        parsed['admission']['patient_sex'] = String(extractedData.sex).toLowerCase();
+      }
       if (extractedData.weight) {
         parsed['admission']['patient_weight'] = String(extractedData.weight);
       }
       if (extractedData.height) {
         parsed['admission']['patient_height'] = String(extractedData.height);
+      }
+      if (extractedData.ipNumber) {
+        parsed['admission']['patient_ip'] = String(extractedData.ipNumber);
+      }
+      if (extractedData.ward) {
+        parsed['admission']['patient_ward'] = String(extractedData.ward);
+      }
+      if (extractedData.bed) {
+        parsed['admission']['patient_bed'] = String(extractedData.bed);
+      }
+      if (extractedData.residence) {
+        parsed['admission']['patient_residence'] = String(extractedData.residence);
+      }
+      if (extractedData.dateOfAdmission) {
+        parsed['admission']['patient_adm_date'] = String(extractedData.dateOfAdmission);
+      }
+      if (extractedData.dateOfHistoryTaking) {
+        parsed['admission']['patient_hist_date'] = String(extractedData.dateOfHistoryTaking);
       }
 
       // Map to 'history' tab
@@ -84,17 +105,91 @@ export default function PharmacotherapyReviewScreen() {
       if (extractedData.chiefComplaint) {
         parsed['history']['chief_complaint'] = extractedData.chiefComplaint;
       }
+      if (extractedData.hpi) {
+        parsed['history']['hpi'] = extractedData.hpi;
+      }
       if (extractedData.pastMedicalHistory) {
         parsed['history']['pmh'] = extractedData.pastMedicalHistory;
       }
       if (extractedData.currentMedications) {
         parsed['history']['history_meds'] = extractedData.currentMedications;
       }
+      if (extractedData.allergies) {
+        parsed['history']['history_allergies'] = extractedData.allergies;
+      }
+      if (extractedData.familyHistory) {
+        parsed['history']['family_history'] = extractedData.familyHistory;
+      }
+      if (extractedData.socialHistory) {
+        parsed['history']['social_history'] = extractedData.socialHistory;
+      }
+
+      // Map to 'systems' tab
+      if (!parsed['systems']) parsed['systems'] = {};
+      if (extractedData.systems) {
+        Object.keys(extractedData.systems).forEach(key => {
+          parsed['systems'][key] = extractedData.systems[key];
+        });
+      }
+
+      // Map to 'vitals-labs' tab
+      if (!parsed['vitals-labs']) parsed['vitals-labs'] = {};
+      if (extractedData.vitals_labs) {
+        Object.keys(extractedData.vitals_labs).forEach(key => {
+          parsed['vitals-labs'][key] = extractedData.vitals_labs[key];
+        });
+      }
 
       // Map to 'diagnosis' tab
       if (!parsed['diagnosis']) parsed['diagnosis'] = {};
       if (extractedData.diagnosis) {
         parsed['diagnosis']['diagnoses_list'] = extractedData.diagnosis;
+      }
+
+      // Map to 'treatment' tab
+      if (!parsed['treatment']) parsed['treatment'] = {};
+      if (extractedData.pharmacological_treatments && Array.isArray(extractedData.pharmacological_treatments)) {
+        extractedData.pharmacological_treatments.forEach((tx: any, index: number) => {
+          const row = index + 1;
+          if (row <= 5) {
+            parsed['treatment'][`treatment_drug_${row}`] = tx.drug || '';
+            parsed['treatment'][`treatment_form_${row}`] = tx.form || '';
+            parsed['treatment'][`treatment_dose_${row}`] = tx.dose || '';
+            parsed['treatment'][`treatment_freq_${row}`] = tx.frequency || '';
+            parsed['treatment'][`treatment_start_${row}`] = tx.start_date || '';
+            parsed['treatment'][`treatment_dur_${row}`] = tx.duration || '';
+          }
+        });
+      }
+      if (extractedData.non_pharmacological_management) {
+        parsed['treatment']['treatment_non_pharma'] = extractedData.non_pharmacological_management;
+      }
+
+      // Map to 'care-plan' tab
+      if (!parsed['care-plan']) parsed['care-plan'] = {};
+      if (extractedData.care_plans && Array.isArray(extractedData.care_plans)) {
+        extractedData.care_plans.forEach((cp: any, index: number) => {
+          const row = index + 1;
+          if (row <= 3) {
+            parsed['care-plan'][`care_plan_cond_${row}`] = cp.condition || '';
+            parsed['care-plan'][`care_plan_problem_${row}`] = cp.problem || '';
+            parsed['care-plan'][`care_plan_goal_${row}`] = cp.goal || '';
+            parsed['care-plan'][`care_plan_intervention_${row}`] = cp.intervention || '';
+            parsed['care-plan'][`care_plan_followup_${row}`] = cp.follow_up || '';
+          }
+        });
+      }
+      if (extractedData.care_plan_non_pharma) {
+        parsed['care-plan']['care_plan_non_pharma'] = extractedData.care_plan_non_pharma;
+      }
+      if (extractedData.care_plan_monitoring) {
+        parsed['care-plan']['care_plan_monitoring'] = extractedData.care_plan_monitoring;
+      }
+
+      // Map to 'counselling' tab
+      if (!parsed['counselling']) parsed['counselling'] = {};
+      if (extractedData.counselling_points) {
+        parsed['counselling']['counselling_points'] = extractedData.counselling_points;
       }
 
       // Save back to localStorage
@@ -121,19 +216,21 @@ export default function PharmacotherapyReviewScreen() {
 
       setBannerMessage({
         type: 'success',
-        text: 'AI successfully extracted patient details, medical history, medications, and diagnosis. Form fields populated across all sections!'
+        text: 'AI successfully extracted patient details, medical history, systemic review, vitals, labs, medications, diagnosis, and care plans. Form fields populated across all sections!'
       });
     } catch (err) {
       console.error('Error populating form from extraction:', err);
     }
   };
 
-  const handleFileUpload = async (file: File) => {
+  const handleFileUpload = async (files: File[]) => {
     setIsGenerating(true);
     setBannerMessage(null);
     try {
       const formData = new FormData();
-      formData.append('file', file);
+      files.forEach((file) => {
+        formData.append('files', file);
+      });
       formData.append('extractionType', 'pharmacotherapy');
       
       const res = await fetch('/api/gemini/extract-file', {
@@ -143,7 +240,7 @@ export default function PharmacotherapyReviewScreen() {
       
       if (!res.ok) {
         const errorData = await res.json().catch(() => ({}));
-        throw new Error(errorData.error || 'Failed to extract clinical data from file.');
+        throw new Error(errorData.error || 'Failed to extract clinical data from files.');
       }
       const data = await res.json();
       
@@ -898,6 +995,7 @@ export default function PharmacotherapyReviewScreen() {
                     onChange={handleFileInputChange}
                     className="hidden" 
                     accept="image/*,audio/*,application/pdf"
+                    multiple
                   />
                   
                   {isGenerating ? (

@@ -419,7 +419,7 @@ export default function DrugIndexScreen() {
                     </div>
                   </div>
 
-                  <div className="markdown-body text-[var(--text)] prose prose-invert max-w-none prose-headings:font-bold prose-headings:text-[var(--text)] prose-p:leading-relaxed prose-li:my-1">
+                  <div className="markdown-body text-[var(--text)] max-w-none">
                     <ReactMarkdown>{monograph}</ReactMarkdown>
                   </div>
                 </div>

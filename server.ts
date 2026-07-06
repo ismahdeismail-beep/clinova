@@ -52,25 +52,43 @@ app.post('/api/cloudinary/upload', upload.single('file'), async (req, res) => {
   }
 });
 
-// File Extraction Endpoint using Gemini inlineData
-app.post('/api/gemini/extract-file', upload.single('file'), async (req, res) => {
+function getPatientInitialsBackend(name: string): string {
+  if (!name) return "";
+  const trimmed = name.trim();
+  
+  // If it's already formatted as initials (e.g., "J. K." or "J.K."), return as is
+  if (/^[A-Z](\.?\s*[A-Z]\.?)*$/.test(trimmed)) {
+    return trimmed;
+  }
+  
+  const parts = trimmed.split(/[\s\-_,\.]+/).filter(Boolean);
+  if (parts.length === 0) return "";
+  
+  // Map each part of the name to its capitalized first character and join with ". "
+  const initials = parts
+    .map(p => p.charAt(0).toUpperCase())
+    .join(". ");
+  
+  return initials + ".";
+}
+
+// File Extraction Endpoint supporting multiple files and extracting the complete clinical form
+app.post('/api/gemini/extract-file', upload.any(), async (req, res) => {
   try {
-    if (!req.file) return res.status(400).json({ error: 'No file provided' });
-    const { extractionType } = req.body;
+    const files = req.files as Express.Multer.File[] | undefined;
+    if (!files || files.length === 0) {
+      return res.status(400).json({ error: 'No files provided' });
+    }
     
-    // Fallback if not provided
+    const { extractionType } = req.body;
     const type = extractionType || 'patient';
     
-    const inlineData = {
-      data: req.file.buffer.toString('base64'),
-      mimeType: req.file.mimetype
-    };
-
     let prompt = '';
     let responseSchema: any = {};
 
     if (type === 'patient') {
-      prompt = `Extract patient demographic information from this document, image, or audio.
+      prompt = `Extract patient demographic information from the provided files.
+ANONYMITY REQUIREMENT: Extract the patient's name but convert it strictly to uppercase initials only (e.g., "Joseph Kimuge Chepyegon" -> "J. K. C."). Never output the full name.
 Return a JSON object with:
 - name (string)
 - age (number)
@@ -89,35 +107,126 @@ Return a JSON object with:
         }
       };
     } else if (type === 'pharmacotherapy') {
-      prompt = `Extract pharmacotherapy review data from this document, image, or audio transcript.
-Return a JSON object with fields mapping to a clinical review form:
-- patientName (string)
-- age (string)
-- weight (string)
-- height (string)
-- chiefComplaint (string)
-- pastMedicalHistory (string)
-- diagnosis (string)
-- currentMedications (string)
-- allergies (string)
-If a field is not found, omit it.`;
+      prompt = `You are Clinova's Pharmacotherapy Review Assistant. Analyze all the uploaded files (which can be clinical clerking notes, prescription charts, admitting sheets, lab results, etc.) and extract comprehensive clinical data to auto-fill the standardized Pharmacotherapy Review Form (Kabarak University School of Pharmacy format).
+
+CRITICAL CONSTRAINTS:
+1. Patient Anonymity: Extract the patient's name but render it strictly as UPPERCASE INITIALS only (e.g., "Joseph Kimuge Chepyegon" -> "J. K. C.") in the "patientName" field. Never output full names. Ensure relative or next-of-kin names are also converted to initials if mentioned.
+2. Chief Complaint formatting: Must be stated strictly as "[duration] history of [symptom]" in order of clinical priority/urgency, NOT as a diagnosis (e.g., write "3-day history of a painful, swollen left leg", NOT "Deep Venous Thrombosis").
+3. Systems & Vitals/Labs: Extract actual recorded numbers/findings. If a test is ordered but has no result, write "Pending — ordered [date], results awaited". If a system is not mentioned or examined, leave it blank or write "Not documented".
+4. Medication History (pre-admission): List drugs taken prior to admission in "currentMedications".
+5. Working Diagnoses (diagnosis): Number and list actual problems/diagnoses in clinical priority order.
+6. Current Pharmacological Management: Extract up to 5 pharmacological treatments. Include continued pre-admission drugs and newly started inpatient drugs.
+7. Care Plan & DTP categories: Identify drug therapy problems using DTP/MRP category types (e.g. Needs additional drug therapy, Wrong drug, Dosage too low, Adverse drug reaction, Dosage too high, Nonadherence).
+8. If any data point is not documented anywhere in the files, write 'Not documented' or leave it blank rather than inventing clinical details.
+
+Return a JSON object mapping to the complete review form:`;
       
       responseSchema = {
         type: Type.OBJECT,
         properties: {
-          patientName: { type: Type.STRING },
+          patientName: { type: Type.STRING, description: "Capitalized initials only, e.g. J. K. C." },
           age: { type: Type.STRING },
+          sex: { type: Type.STRING, description: "Male, Female, or Other" },
           weight: { type: Type.STRING },
           height: { type: Type.STRING },
+          ipNumber: { type: Type.STRING },
+          ward: { type: Type.STRING },
+          bed: { type: Type.STRING },
+          residence: { type: Type.STRING },
+          dateOfAdmission: { type: Type.STRING },
+          dateOfHistoryTaking: { type: Type.STRING },
           chiefComplaint: { type: Type.STRING },
+          hpi: { type: Type.STRING },
           pastMedicalHistory: { type: Type.STRING },
-          diagnosis: { type: Type.STRING },
           currentMedications: { type: Type.STRING },
           allergies: { type: Type.STRING },
+          familyHistory: { type: Type.STRING },
+          socialHistory: { type: Type.STRING },
+          systems: {
+            type: Type.OBJECT,
+            properties: {
+              "General Health": { type: Type.STRING },
+              "CNS": { type: Type.STRING },
+              "CVS": { type: Type.STRING },
+              "Respiratory System": { type: Type.STRING },
+              "Gastrointestinal System": { type: Type.STRING },
+              "Genitourinary System": { type: Type.STRING },
+              "Musculoskeletal System": { type: Type.STRING },
+              "Skin & Integumentary System": { type: Type.STRING }
+            }
+          },
+          vitals_labs: {
+            type: Type.OBJECT,
+            properties: {
+              hr: { type: Type.STRING },
+              bp: { type: Type.STRING },
+              temp: { type: Type.STRING },
+              po2: { type: Type.STRING },
+              rr: { type: Type.STRING },
+              bmi: { type: Type.STRING },
+              na: { type: Type.STRING },
+              k: { type: Type.STRING },
+              cl: { type: Type.STRING },
+              urea: { type: Type.STRING },
+              creat: { type: Type.STRING },
+              crcl: { type: Type.STRING },
+              ast: { type: Type.STRING },
+              alt: { type: Type.STRING },
+              alp: { type: Type.STRING },
+              t_bili: { type: Type.STRING },
+              d_bili: { type: Type.STRING },
+              albumin: { type: Type.STRING },
+              wbc: { type: Type.STRING },
+              neut: { type: Type.STRING },
+              lymph: { type: Type.STRING },
+              hb: { type: Type.STRING },
+              plts: { type: Type.STRING },
+              cxr: { type: Type.STRING },
+              ecg: { type: Type.STRING },
+              urinalysis: { type: Type.STRING }
+            }
+          },
+          diagnosis: { type: Type.STRING },
+          pharmacological_treatments: {
+            type: Type.ARRAY,
+            description: "Up to 5 pharmacological treatments active or initiated in the ward.",
+            items: {
+              type: Type.OBJECT,
+              properties: {
+                drug: { type: Type.STRING, description: "Generic drug name (INN)" },
+                form: { type: Type.STRING, description: "Dosage form (e.g. Tab, IV Infusion, Cap)" },
+                dose: { type: Type.STRING, description: "Dose (e.g. 500mg, 1g)" },
+                frequency: { type: Type.STRING, description: "Frequency (e.g. TDS, BD, OD)" },
+                start_date: { type: Type.STRING, description: "Start date if recorded" },
+                duration: { type: Type.STRING, description: "Duration or ongoing" }
+              },
+              required: ["drug"]
+            }
+          },
+          non_pharmacological_management: { type: Type.STRING },
+          care_plans: {
+            type: Type.ARRAY,
+            description: "Up to 3 clinical care plan rows representing identified drug therapy problems (DTPs).",
+            items: {
+              type: Type.OBJECT,
+              properties: {
+                condition: { type: Type.STRING, description: "Condition or indication addressed" },
+                problem: { type: Type.STRING, description: "Drug Therapy Problem (DTP) classification (e.g. Needs additional drug therapy, Dosage too low, Adverse drug reaction)" },
+                goal: { type: Type.STRING, description: "Therapeutic goals" },
+                intervention: { type: Type.STRING, description: "Pharmacist interventions recommended" },
+                follow_up: { type: Type.STRING, description: "Monitoring and follow-up plan" }
+              },
+              required: ["condition", "problem", "goal", "intervention", "follow_up"]
+            }
+          },
+          care_plan_non_pharma: { type: Type.STRING },
+          care_plan_monitoring: { type: Type.STRING },
+          counselling_points: { type: Type.STRING }
         }
       };
     } else if (type === 'medications') {
       prompt = `Analyze this prescription, treatment sheet, chart photo, or medical document and extract all medications/drugs listed.
+ANONYMITY REQUIREMENT: Do not extract any patient names in full; if name is extracted, ensure it is sanitized.
 For each medication, extract:
 - name: The generic or brand name of the drug (e.g. "Metformin", "Amlodipine", "Ceftriaxone")
 - dose: The strength/dosage (e.g. "500mg", "5mg", "1g", or empty if not specified)
@@ -149,19 +258,39 @@ Ensure that you return a list of these medications.`;
       return res.status(400).json({ error: 'Invalid extraction type' });
     }
 
+    const userParts: any[] = [{ text: prompt }];
+    for (const file of files) {
+      userParts.push({
+        inlineData: {
+          data: file.buffer.toString('base64'),
+          mimeType: file.mimetype
+        }
+      });
+    }
+
     const response = await generateContentWithFallback({
       model: 'gemini-3.5-flash',
       contents: [
-        { role: 'user', parts: [ { text: prompt }, { inlineData } ] }
+        { role: 'user', parts: userParts }
       ],
       config: {
         responseMimeType: 'application/json',
         responseSchema: responseSchema,
-        systemInstruction: "You are an expert clinical data extraction AI. You extract structured data from clinical documents, images, and dictations."
+        systemInstruction: `You are an expert clinical data extraction AI. You extract structured data from clinical documents, images, and dictations.
+ANONYMITY MANDATE: You MUST strictly sanitize all patient names, relatives, and physicians mentioned in any notes. Render all names as capitalized initials only (e.g. "James Kamau" -> "J. K."). NEVER expose any full names.`
       }
     });
 
     const parsed = JSON.parse(response.text || '{}');
+    
+    // Strict backend-side post-processing to enforce absolute anonymity of the patient name
+    if (parsed.patientName) {
+      parsed.patientName = getPatientInitialsBackend(parsed.patientName);
+    }
+    if (parsed.name) {
+      parsed.name = getPatientInitialsBackend(parsed.name);
+    }
+    
     res.json(parsed);
   } catch (error: any) {
     console.error('Extraction error:', error);

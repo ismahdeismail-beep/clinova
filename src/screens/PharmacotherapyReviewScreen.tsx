@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
   User, Stethoscope, Activity, ClipboardList, Beaker, FileText, Pill, HeartPulse, CheckCircle, BrainCircuit, AlertTriangle,
-  Send, Loader2, Sparkles, X
+  Send, Loader2, Sparkles, X, Upload, FileUp
 } from 'lucide-react';
 import { useFileStore } from '../store/fileStore';
 import { GhostWriterText } from '../components/GhostWriterText';
@@ -32,6 +32,128 @@ export default function PharmacotherapyReviewScreen() {
   const [activeTab, setActiveTab] = useState<string>('admission');
   const formRef = useRef<HTMLFormElement>(null);
   const [interactions, setInteractions] = useState<{ id: string, message: string }[]>([]);
+  const [dragActive, setDragActive] = useState(false);
+
+  const handleDrag = (e: React.DragEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (e.type === "dragenter" || e.type === "dragover") {
+      setDragActive(true);
+    } else if (e.type === "dragleave") {
+      setDragActive(false);
+    }
+  };
+
+  const handleDrop = (e: React.DragEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setDragActive(false);
+    if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+      handleFileUpload(e.dataTransfer.files[0]);
+    }
+  };
+
+  const handleFileInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files[0]) {
+      handleFileUpload(e.target.files[0]);
+    }
+  };
+
+  const updateFormFromExtraction = (extractedData: any) => {
+    try {
+      const savedData = localStorage.getItem('clinova_pharma_review_form');
+      const parsed = savedData ? JSON.parse(savedData) : {};
+
+      // Map to 'admission' tab
+      if (!parsed['admission']) parsed['admission'] = {};
+      if (extractedData.patientName) {
+        parsed['admission']['patient_name'] = getPatientInitials(extractedData.patientName);
+      }
+      if (extractedData.age) {
+        parsed['admission']['patient_age'] = String(extractedData.age);
+      }
+      if (extractedData.weight) {
+        parsed['admission']['patient_weight'] = String(extractedData.weight);
+      }
+      if (extractedData.height) {
+        parsed['admission']['patient_height'] = String(extractedData.height);
+      }
+
+      // Map to 'history' tab
+      if (!parsed['history']) parsed['history'] = {};
+      if (extractedData.chiefComplaint) {
+        parsed['history']['chief_complaint'] = extractedData.chiefComplaint;
+      }
+      if (extractedData.pastMedicalHistory) {
+        parsed['history']['pmh'] = extractedData.pastMedicalHistory;
+      }
+      if (extractedData.currentMedications) {
+        parsed['history']['history_meds'] = extractedData.currentMedications;
+      }
+
+      // Map to 'diagnosis' tab
+      if (!parsed['diagnosis']) parsed['diagnosis'] = {};
+      if (extractedData.diagnosis) {
+        parsed['diagnosis']['diagnoses_list'] = extractedData.diagnosis;
+      }
+
+      // Save back to localStorage
+      localStorage.setItem('clinova_pharma_review_form', JSON.stringify(parsed));
+
+      // Force values into currently mounted DOM fields of active tab
+      if (formRef.current) {
+        const elements = formRef.current.elements;
+        const currentTabData = parsed[activeTab] || {};
+        for (let i = 0; i < elements.length; i++) {
+          const el = elements[i] as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+          if (el.tagName === 'BUTTON') continue;
+          const key = el.name || el.id || `input_${i}`;
+          if (currentTabData[key] !== undefined) {
+            el.value = currentTabData[key];
+          }
+        }
+      }
+      
+      // Trigger interaction check based on updated medications
+      const allData: Record<string, string> = {};
+      Object.values(parsed).forEach((tab: any) => Object.assign(allData, tab));
+      checkInteractions(allData);
+
+      setBannerMessage({
+        type: 'success',
+        text: 'AI successfully extracted patient details, medical history, medications, and diagnosis. Form fields populated across all sections!'
+      });
+    } catch (err) {
+      console.error('Error populating form from extraction:', err);
+    }
+  };
+
+  const handleFileUpload = async (file: File) => {
+    setIsGenerating(true);
+    setBannerMessage(null);
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('extractionType', 'pharmacotherapy');
+      
+      const res = await fetch('/api/gemini/extract-file', {
+        method: 'POST',
+        body: formData,
+      });
+      
+      if (!res.ok) {
+        const errorData = await res.json().catch(() => ({}));
+        throw new Error(errorData.error || 'Failed to extract clinical data from file.');
+      }
+      const data = await res.json();
+      
+      updateFormFromExtraction(data);
+    } catch (err: any) {
+      setBannerMessage({ type: 'error', text: err.message || 'Failed to extract clinical data' });
+    } finally {
+      setIsGenerating(false);
+    }
+  };
 
   // AI State Variables
   const [isGenerating, setIsGenerating] = useState(false);
@@ -267,50 +389,99 @@ export default function PharmacotherapyReviewScreen() {
     }
   };
 
+  const interactionTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
   const checkInteractions = (tabData: Record<string, string>) => {
-    // Extract all mentioned drugs from history and current treatment
-    const historyMeds = (tabData['history_meds'] || '').toLowerCase();
-    const treatmentDrugs: string[] = [];
-    
-    for (let i = 1; i <= 5; i++) {
-      const drug = (tabData[`treatment_drug_${i}`] || '').toLowerCase().trim();
-      if (drug) treatmentDrugs.push(drug);
+    if (interactionTimeoutRef.current) {
+      clearTimeout(interactionTimeoutRef.current);
     }
 
-    const allMentionedDrugs = [...treatmentDrugs];
-    
-    // Add history meds if they match known drugs
-    Object.keys(KNOWN_INTERACTIONS).forEach(drug => {
-      if (historyMeds.includes(drug) && !allMentionedDrugs.includes(drug)) {
-        allMentionedDrugs.push(drug);
+    interactionTimeoutRef.current = setTimeout(async () => {
+      // 1. Extract all pharmacological treatments
+      const treatmentDrugs: { name: string, dose?: string, frequency?: string, route?: string }[] = [];
+      for (let i = 1; i <= 5; i++) {
+        const drug = (tabData[`treatment_drug_${i}`] || '').trim();
+        if (drug) {
+          treatmentDrugs.push({
+            name: drug,
+            dose: (tabData[`treatment_dose_${i}`] || '').trim(),
+            frequency: (tabData[`treatment_freq_${i}`] || '').trim(),
+            route: (tabData[`treatment_form_${i}`] || '').trim(),
+          });
+        }
       }
-    });
 
-    const foundInteractions: { id: string, message: string }[] = [];
-    
-    // Check all combinations
-    for (let i = 0; i < allMentionedDrugs.length; i++) {
-      for (let j = i + 1; j < allMentionedDrugs.length; j++) {
-        const drugA = allMentionedDrugs[i];
-        const drugB = allMentionedDrugs[j];
+      // 2. Extract history meds
+      const historyMedsRaw = (tabData['history_meds'] || '').trim();
+      if (historyMedsRaw) {
+        const splitMeds = historyMedsRaw.split(/[,\n;]+/).map(m => m.trim()).filter(Boolean);
+        splitMeds.forEach(med => {
+          if (!treatmentDrugs.some(d => d.name.toLowerCase() === med.toLowerCase())) {
+            treatmentDrugs.push({
+              name: med,
+              dose: 'Prescribed historically'
+            });
+          }
+        });
+      }
+
+      if (treatmentDrugs.length === 0) {
+        setInteractions([]);
+        return;
+      }
+
+      // 3. Construct patient context from tabData
+      const patientContext = {
+        name: tabData['patient_name'] || 'Anonymous',
+        age: tabData['patient_age'] || 'Unknown',
+        sex: tabData['patient_sex'] || 'Unknown',
+        ward: tabData['patient_ward'] || 'General Ward',
+        vitals: {
+          bp: tabData['bp'] || 'N/A',
+          hr: tabData['hr'] || 'N/A',
+          temp: tabData['temp'] || 'N/A',
+          spo2: tabData['po2'] || 'N/A',
+          rr: tabData['rr'] || 'N/A',
+        },
+        labs: [
+          { name: 'Creatinine', value: tabData['creat'] || 'N/A', unit: 'umol/L', status: 'Recent', referenceRange: '45-104' },
+          { name: 'Urea', value: tabData['urea'] || 'N/A', unit: 'mmol/L', status: 'Recent', referenceRange: '2.5-6.5' },
+          { name: 'Potassium (K+)', value: tabData['k'] || 'N/A', unit: 'mmol/L', status: 'Recent', referenceRange: '3.2-5' },
+          { name: 'Sodium (Na+)', value: tabData['na'] || 'N/A', unit: 'mmol/L', status: 'Recent', referenceRange: '135-145' },
+          { name: 'Hemoglobin (Hb)', value: tabData['hb'] || 'N/A', unit: 'g/dL', status: 'Recent', referenceRange: '9.5-13' },
+          { name: 'White Blood Cells (WBC)', value: tabData['wbc'] || 'N/A', unit: 'x10^9/L', status: 'Recent', referenceRange: '4.3-11' }
+        ].filter(l => l.value !== 'N/A'),
+        alerts: []
+      };
+
+      try {
+        const res = await fetch('/api/gemini/check-interactions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            medications: treatmentDrugs,
+            patientContext
+          })
+        });
+
+        if (!res.ok) throw new Error('Interaction check failed');
+        const result = await res.json();
         
-        // Find interactions where drugA is the key and drugB is in the list, or vice versa
-        let key = null;
-        if (KNOWN_INTERACTIONS[drugA]?.includes(drugB)) {
-          key = `${drugA}-${drugB}`;
-          if (!INTERACTION_MESSAGES[key]) key = `${drugB}-${drugA}`;
-        } else if (KNOWN_INTERACTIONS[drugB]?.includes(drugA)) {
-          key = `${drugB}-${drugA}`;
-          if (!INTERACTION_MESSAGES[key]) key = `${drugA}-${drugB}`;
+        if (result.hasInteractions && result.interactions && result.interactions.length > 0) {
+          const formattedInteractions = result.interactions.map((inter: any, idx: number) => ({
+            id: `api-inter-${idx}`,
+            message: `[${inter.severity}] ${inter.title}: ${inter.description} Recommendation: ${inter.recommendation}`
+          }));
+          setInteractions(formattedInteractions);
+        } else {
+          setInteractions([]);
         }
-
-        if (key && INTERACTION_MESSAGES[key]) {
-          foundInteractions.push({ id: key, message: INTERACTION_MESSAGES[key] });
-        }
+      } catch (err) {
+        console.error('Error running real-time interaction check:', err);
       }
-    }
-
-    setInteractions(foundInteractions);
+    }, 1000);
   };
 
   // Restore form data when tab changes
@@ -698,69 +869,58 @@ export default function PharmacotherapyReviewScreen() {
                 </div>
               </div>
             )}
-            
-            {activeTab === 'admission' && (
+                   {activeTab === 'admission' && (
               <div className="space-y-6 animate-in fade-in slide-in-from-bottom-2 duration-300">
-                <div className="border-b border-[var(--border)] pb-4 mb-6 flex justify-between items-center">
+                <div className="border-b border-[var(--border)] pb-4 mb-4">
                   <h3 className="text-lg font-semibold text-[var(--text)] flex items-center gap-2">
                     <User size={20} className="text-[var(--primary)]"/> Patient Identification & Admission Details
                   </h3>
+                  <p className="text-xs text-[var(--text-muted)] mt-1">
+                    Provide the general demographic details of the patient.
+                  </p>
+                </div>
+
+                {/* AI Document Upload Hub */}
+                <div 
+                  onDragEnter={handleDrag}
+                  onDragOver={handleDrag}
+                  onDragLeave={handleDrag}
+                  onDrop={handleDrop}
+                  className={`border border-dashed rounded-xl p-6 text-center transition-all flex flex-col items-center justify-center gap-3 relative ${
+                    dragActive 
+                      ? 'border-[var(--primary)] bg-[var(--primary-container)]/10 ring-2 ring-[var(--primary)]/25' 
+                      : 'border-[var(--border)] bg-[var(--surface-dim)] hover:border-[var(--primary)]/70 hover:bg-[var(--surface-dim)]/50'
+                  }`}
+                >
+                  <input 
+                    type="file" 
+                    id="pharmacotherapyFileInput"
+                    onChange={handleFileInputChange}
+                    className="hidden" 
+                    accept="image/*,audio/*,application/pdf"
+                  />
                   
-                  <div className="flex items-center gap-3">
-                    <input 
-                      type="file" 
-                      id="pharmacotherapyFileInput"
-                      onChange={async (e) => {
-                        const file = e.target.files?.[0];
-                        if (!file) return;
-                        setIsGenerating(true);
-                        try {
-                          const formData = new FormData();
-                          formData.append('file', file);
-                          formData.append('extractionType', 'pharmacotherapy');
-                          
-                          const res = await fetch('/api/gemini/extract-file', {
-                            method: 'POST',
-                            body: formData,
-                          });
-                          
-                          if (!res.ok) throw new Error('Extraction failed');
-                          const data = await res.json();
-                          
-                          if (formRef.current) {
-                            const els = formRef.current.elements as any;
-                            if (data.patientName && els.patient_name) els.patient_name.value = getPatientInitials(data.patientName);
-                            if (data.age && els.patient_age) els.patient_age.value = data.age;
-                            if (data.weight && els.patient_weight) els.patient_weight.value = data.weight;
-                            if (data.height && els.patient_height) els.patient_height.value = data.height;
-                            if (data.chiefComplaint && els.history_pc) els.history_pc.value = data.chiefComplaint;
-                            if (data.pastMedicalHistory && els.history_pmh) els.history_pmh.value = data.pastMedicalHistory;
-                            if (data.diagnosis && els.dx_working) els.dx_working.value = data.diagnosis;
-                            if (data.currentMedications && els.history_meds) els.history_meds.value = data.currentMedications;
-                            if (data.allergies && els.history_allergies) els.history_allergies.value = data.allergies;
-                            handleFormChange();
-                          }
-                          setBannerMessage({ type: 'success', text: 'Data extracted from file successfully.' });
-                        } catch (err: any) {
-                          setBannerMessage({ type: 'error', text: err.message || 'Failed to extract data' });
-                        } finally {
-                          setIsGenerating(false);
-                          if (e.target) e.target.value = '';
-                        }
-                      }}
-                      className="hidden" 
-                      accept="image/*,audio/*,application/pdf"
-                    />
-                    <button 
-                      type="button"
-                      onClick={() => document.getElementById('pharmacotherapyFileInput')?.click()}
-                      disabled={isGenerating}
-                      className="px-3 py-1.5 text-xs font-bold bg-white dark:bg-gray-800 border border-[var(--border)] rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center gap-2 shadow-sm disabled:opacity-50"
-                    >
-                      {isGenerating ? <Loader2 size={14} className="animate-spin" /> : <Sparkles size={14} className="text-[var(--primary)]" />}
-                      {isGenerating ? 'Extracting...' : 'AI Extract from File'}
-                    </button>
-                  </div>
+                  {isGenerating ? (
+                    <div className="space-y-3 py-3 flex flex-col items-center justify-center">
+                      <Loader2 size={32} className="text-[var(--primary)] animate-spin" />
+                      <div className="text-center">
+                        <p className="text-sm font-bold text-[var(--text)]">Extracting Clinical Context...</p>
+                        <p className="text-xs text-[var(--text-muted)] mt-1 animate-pulse">Gemini is parsing your document and populating the clinical review sections</p>
+                      </div>
+                    </div>
+                  ) : (
+                    <label htmlFor="pharmacotherapyFileInput" className="cursor-pointer w-full h-full flex flex-col items-center justify-center py-2">
+                      <div className="w-12 h-12 bg-[var(--primary)]/10 rounded-full flex items-center justify-center text-[var(--primary)] mb-3">
+                        <Sparkles size={22} className="animate-pulse" />
+                      </div>
+                      <span className="text-sm font-bold text-[var(--text)] block mb-1">
+                        AI-Powered Auto-Fill: Drag & drop your clinical file here, or <span className="text-[var(--primary)] underline">browse</span>
+                      </span>
+                      <span className="text-xs text-[var(--text-muted)] max-w-lg leading-relaxed">
+                        Upload a patient case note, admission sheet, prescription, or clinical image (PDF or Image) to automatically populate all tabs of this pharmacotherapy review form.
+                      </span>
+                    </label>
+                  )}
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

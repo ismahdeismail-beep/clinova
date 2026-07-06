@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate, Navigate 
 import { 
   Home, Users, FolderOpen, ClipboardList, Pill, Bot, 
   BookOpen, BarChart3, Bell, Settings, Menu, Search, MessageSquare, ShieldCheck,
-  X
+  X, LogOut
 } from 'lucide-react';
 
 const DashboardScreen = React.lazy(() => import('./screens/DashboardScreen'));
@@ -106,7 +106,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
 
 function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolean) => void }) {
   const location = useLocation();
-  const { userData } = useAuth();
+  const { userData, logout } = useAuth();
 
   const links = [
     { to: '/', label: 'Dashboard', icon: Home },
@@ -162,6 +162,28 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
             );
           })}
         </nav>
+        <div className="p-4 border-t border-[var(--border)] mt-auto bg-[var(--surface-dim)]/30">
+          {userData ? (
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-3 px-2">
+                <div className="w-9 h-9 rounded-full bg-[var(--primary)] text-[var(--primary-foreground)] flex items-center justify-center font-bold text-sm shrink-0">
+                  {userData.name.charAt(0).toUpperCase()}
+                </div>
+                <div className="flex flex-col min-w-0">
+                  <span className="text-sm font-semibold truncate text-[var(--text)]">{userData.name}</span>
+                  <span className="text-[10px] uppercase font-bold tracking-wider text-[var(--text-muted)] truncate">{userData.role}</span>
+                </div>
+              </div>
+              <button
+                onClick={() => logout()}
+                className="flex items-center justify-center gap-2 w-full py-2 px-3 rounded-lg text-sm font-medium text-[var(--destructive)] hover:bg-[var(--destructive)]/10 transition-colors border border-transparent hover:border-[var(--destructive)]/20"
+              >
+                <LogOut size={16} />
+                Sign Out
+              </button>
+            </div>
+          ) : null}
+        </div>
       </div>
       
       {/* Backdrop for mobile */}

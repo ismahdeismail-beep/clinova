@@ -116,6 +116,35 @@ If a field is not found, omit it.`;
           allergies: { type: Type.STRING },
         }
       };
+    } else if (type === 'medications') {
+      prompt = `Analyze this prescription, treatment sheet, chart photo, or medical document and extract all medications/drugs listed.
+For each medication, extract:
+- name: The generic or brand name of the drug (e.g. "Metformin", "Amlodipine", "Ceftriaxone")
+- dose: The strength/dosage (e.g. "500mg", "5mg", "1g", or empty if not specified)
+- frequency: How often it is administered (e.g. "OD", "BD", "TDS", "QDS", "PRN", "Daily", "Twice daily", or empty if not specified)
+- route: The route of administration (Must be one of: "Oral", "IV", "IM", "SC", "Topical", "Inhalation", or "Oral" as default if not specified)
+
+Ensure that you return a list of these medications.`;
+
+      responseSchema = {
+        type: Type.OBJECT,
+        properties: {
+          medications: {
+            type: Type.ARRAY,
+            items: {
+              type: Type.OBJECT,
+              properties: {
+                name: { type: Type.STRING },
+                dose: { type: Type.STRING },
+                frequency: { type: Type.STRING },
+                route: { type: Type.STRING }
+              },
+              required: ['name']
+            }
+          }
+        },
+        required: ['medications']
+      };
     } else {
       return res.status(400).json({ error: 'Invalid extraction type' });
     }
@@ -546,6 +575,122 @@ For each drug profile, include:
   } catch (error: any) {
     console.error('Drug profile search error:', error);
     res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'AI drug lookup failed' });
+  }
+});
+
+// AI Real-Time Drug Interaction Checker Endpoint
+app.post('/api/gemini/check-interactions', async (req, res) => {
+  try {
+    const { medications, patientContext } = req.body;
+
+    if (!medications || !Array.isArray(medications) || medications.length === 0) {
+      return res.status(400).json({ error: 'Please provide at least one medication to evaluate.' });
+    }
+
+    const medsStr = medications.map(m => `- ${m.name} (${m.dose || 'dose unstated'} ${m.frequency || 'frequency unstated'} ${m.route || 'route unstated'})`).join('\n');
+
+    let patientInfoStr = 'No specific patient context provided (Evaluation based on general demographic averages).';
+    if (patientContext) {
+      const vitals = patientContext.vitals || {};
+      const alerts = patientContext.alerts || [];
+      const labs = patientContext.labs || [];
+      patientInfoStr = `
+=== PATIENT DEMOGRAPHICS ===
+Name/Initials: ${patientContext.name || 'Anonymous'}
+Age: ${patientContext.age || 'Unknown'} years old
+Sex: ${patientContext.sex || 'Unknown'}
+Ward/Location: ${patientContext.ward || 'General ward'}
+
+=== VITALS ===
+BP: ${vitals.bp || 'N/A'} mmHg, HR: ${vitals.hr || 'N/A'} bpm, Temp: ${vitals.temp || 'N/A'} °C, SpO2: ${vitals.spo2 || 'N/A'}%, RR: ${vitals.rr || 'N/A'} bpm
+
+=== CLINICAL ALERTS & FLAGGED CONDITIONS ===
+${alerts.length > 0 ? alerts.map((a: any) => `- [${a.type.toUpperCase()}] ${a.message}`).join('\n') : '- No active security flags or alerts registered in chart.'}
+
+=== LAB VALUES ===
+${labs.length > 0 ? labs.map((l: any) => `- ${l.name}: ${l.value} ${l.unit} (${l.status}, Ref Range: ${l.referenceRange})`).join('\n') : '- No lab blood panels loaded.'}
+      `;
+    }
+
+    const prompt = `You are Clinova OS, an advanced Clinical Pharmacy Interaction Engine.
+Please perform a rigorous, multi-dimensional clinical safety evaluation for the following medication treatment plan, cross-referencing patient-specific physiology (demographics, vital signs, clinical alerts, and laboratory results if provided).
+
+=== PROPOSED MEDICATION TREATMENT PLAN ===
+${medsStr}
+
+=== CLINICAL PATIENT CONTEXT ===
+${patientInfoStr}
+
+Please evaluate and return a detailed response in the requested structured JSON format, examining:
+1. **Drug-Drug Interactions**: Identify critical combinations (e.g., Amiodarone + Warfarin, Sildenafil + Nitrates, Spironolactone + Potassium Supplements). Specify Severity ("Critical", "Moderate", or "Minor"), Mechanism, and specific, safe Recommendation (dose adjustment, alternative medication, or separate administration times).
+2. **Drug-Patient Context Hazards**: Screen for age-related safety (e.g., Beers Criteria for Geriatrics), sex-specific contraindications (e.g., pregnancy safety), vitals hazards (e.g., beta-blockers in severe bradycardia), and laboratory hazards (e.g., renally-cleared medications or nephrotoxins like NSAIDs/Aminoglycosides in impaired kidney function/AKI).
+3. **Food/Lifestyles and Monitoring Guidelines**: Highlight any crucial monitoring parameters needed during this therapy (e.g., monitor serum creatinine, blood pressure, or liver function tests).
+
+Ensure your guidance is highly clinical, accurate, aligned with the Kenya Drug Index (KDI), WHO Essential Medicines, and international guidelines (e.g., Beers Criteria). Avoid vague generalities. Provide high-yield clinical value.`;
+
+    const response = await generateContentWithFallback({
+      model: 'gemini-3.5-flash',
+      contents: prompt,
+      config: {
+        systemInstruction: `You are an expert clinical pharmacologist and KDI clinical safety checker. Your mission is to provide extremely accurate, non-redundant, and evidence-based drug safety checks. You MUST return your output in strict JSON conforming to the requested schema. Do not include markdown wrappers or other text outside the JSON.`,
+        responseMimeType: 'application/json',
+        responseSchema: {
+          type: Type.OBJECT,
+          properties: {
+            hasInteractions: { type: Type.BOOLEAN, description: 'True if any interactions or patient safety alerts are flagged.' },
+            summary: { type: Type.STRING, description: 'A highly cohesive, professional clinical summary of the safety check.' },
+            interactions: {
+              type: Type.ARRAY,
+              description: 'All drug-drug, drug-food, or direct therapeutic duplication interactions.',
+              items: {
+                type: Type.OBJECT,
+                properties: {
+                  type: { type: Type.STRING, description: 'Interaction type: "Drug-Drug", "Drug-Food", or "Therapeutic Duplication"' },
+                  severity: { type: Type.STRING, description: 'Must be "Critical" (high clinical danger/contraindicated), "Moderate" (requires monitoring/adjustment), or "Minor" (caution advised)' },
+                  title: { type: Type.STRING, description: 'Conscise title, e.g., "Aspirin + Warfarin Co-administration"' },
+                  description: { type: Type.STRING, description: 'Clear mechanism explaining what happens biologically.' },
+                  recommendation: { type: Type.STRING, description: 'Actionable clinical strategy (e.g., hold drug, swap with alternative X, adjust dose).' }
+                },
+                required: ['type', 'severity', 'title', 'description', 'recommendation']
+              }
+            },
+            patientSafetyFlags: {
+              type: Type.ARRAY,
+              description: 'Alerts detailing conflicts between the drugs and the patient’s clinical state (demographics, vitals, alerts, labs).',
+              items: {
+                type: Type.OBJECT,
+                properties: {
+                  severity: { type: Type.STRING, description: 'Must be "Critical", "Warning", or "Info"' },
+                  message: { type: Type.STRING, description: 'Specific safety warning (e.g., "Gentamicin in Severe Renal Impairment").' },
+                  rational: { type: Type.STRING, description: 'Biochemical or physiological reason for concern.' }
+                },
+                required: ['severity', 'message', 'rational']
+              }
+            },
+            monitoringParameters: {
+              type: Type.ARRAY,
+              description: 'Key parameters that clinicians must monitor during co-administration.',
+              items: {
+                type: Type.OBJECT,
+                properties: {
+                  parameter: { type: Type.STRING, description: 'Parameter name (e.g., Serum Potassium, Blood Glucose, Blood Pressure).' },
+                  frequency: { type: Type.STRING, description: 'Proposed frequency (e.g., Daily, Weekly, Prior to each dose).' },
+                  rationale: { type: Type.STRING, description: 'Specific reason why this monitoring is necessary.' }
+                },
+                required: ['parameter', 'frequency', 'rationale']
+              }
+            }
+          },
+          required: ['hasInteractions', 'summary', 'interactions', 'patientSafetyFlags', 'monitoringParameters']
+        }
+      }
+    });
+
+    const result = JSON.parse(response.text || '{}');
+    res.json(result);
+  } catch (error: any) {
+    console.error('Drug interaction check error:', error);
+    res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'AI interaction evaluation failed' });
   }
 });
 

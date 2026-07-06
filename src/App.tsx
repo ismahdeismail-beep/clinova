@@ -27,6 +27,7 @@ import { OfflineStatus } from './components/OfflineStatus';
 import { CommandPalette } from './components/CommandPalette';
 import ClinovaLogo from './components/ClinovaLogo';
 import ThemeToggle from './components/ThemeToggle';
+import { useInstallPrompt } from './hooks/useInstallPrompt';
 
 import { Breadcrumbs } from './components/Breadcrumbs';
 
@@ -189,6 +190,13 @@ function AppContent() {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
   const { userData, loading } = useAuth();
   const [forceShowOnboarding, setForceShowOnboarding] = React.useState(false);
+  const { isInstallable, promptInstall } = useInstallPrompt();
+
+  React.useEffect(() => {
+    if (isInstallable) {
+      promptInstall();
+    }
+  }, [isInstallable, promptInstall]);
 
   React.useEffect(() => {
     const handleOpenOnboarding = () => setForceShowOnboarding(true);

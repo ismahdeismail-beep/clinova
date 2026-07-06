@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { 
   Pill, Search, Loader2, ArrowRight, BookOpen,
   Sparkles, AlertTriangle, CheckCircle2, RefreshCw, User, Plus, Trash2, Info, HeartPulse, Activity, Check, ShieldAlert,
-  Upload, FileUp, FileText
+  Upload, FileUp, FileText, Download
 } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { db } from '../lib/firebase';
 import { collection, getDocs } from 'firebase/firestore';
 import { Patient } from '../components/PatientQuickSummary';
+import { getMonographCached, pinMonograph } from '../lib/getMonograph';
 
 interface QuickDrug {
   name: string;
@@ -76,6 +77,7 @@ export default function DrugIndexScreen() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [monograph, setMonograph] = useState<string | null>(null);
+  const [monographKey, setMonographKey] = useState<string>('');
 
   // Tab 2: Interaction Checker State
   const [patients, setPatients] = useState<Patient[]>([]);
@@ -197,27 +199,21 @@ export default function DrugIndexScreen() {
     setError(null);
     setMonograph(null);
     try {
-      const res = await fetch('/api/gemini/search-drug', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          drugName: query || undefined,
-          category: categoryName || undefined,
-        }),
-      });
-
-      if (!res.ok) {
-        const errorData = await res.json().catch(() => ({}));
-        throw new Error(errorData.error || 'Failed to retrieve drug monograph');
-      }
-
-      const data = await res.json();
-      setMonograph(data.text);
+      const entry = await getMonographCached(query, categoryName);
+      setMonograph(entry.content);
+      setMonographKey(entry.key);
     } catch (err: any) {
       console.error(err);
       setError(err.message || 'An error occurred while fetching the drug profile.');
     } finally {
       setIsLoading(false);
+    }
+  };
+
+  const handlePinForOffline = async () => {
+    if (monographKey) {
+      await pinMonograph(monographKey);
+      alert('Monograph saved for offline access!');
     }
   };
 
@@ -409,14 +405,24 @@ export default function DrugIndexScreen() {
                 </div>
               ) : monograph ? (
                 <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-8 shadow-sm space-y-6 text-left animate-in fade-in duration-300">
-                  <div className="flex items-center gap-3 pb-4 border-b border-[var(--border)]">
-                    <div className="w-10 h-10 bg-[var(--primary-container)] rounded-xl flex items-center justify-center text-[var(--primary)]">
-                      <BookOpen size={20} />
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[var(--border)]">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 bg-[var(--primary-container)] rounded-xl flex items-center justify-center text-[var(--primary)] shrink-0">
+                        <BookOpen size={20} />
+                      </div>
+                      <div>
+                        <h2 className="text-xl font-bold text-[var(--text)]">Medication Monograph</h2>
+                        <p className="text-xs text-[var(--text-muted)] font-mono">SOURCE: CLINICAL KNOWLEDGE ENGINE • KDI CITATION</p>
+                      </div>
                     </div>
-                    <div>
-                      <h2 className="text-xl font-bold text-[var(--text)]">Medication Monograph</h2>
-                      <p className="text-xs text-[var(--text-muted)] font-mono">SOURCE: CLINICAL KNOWLEDGE ENGINE • KDI CITATION</p>
-                    </div>
+                    
+                    <button 
+                      onClick={handlePinForOffline}
+                      className="flex items-center gap-2 px-3 py-1.5 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)] text-[var(--text-secondary)] hover:text-[var(--primary)] rounded-lg text-xs font-semibold transition-colors border border-[var(--border)] hover:border-[var(--primary)]/30 shrink-0"
+                    >
+                      <Download size={14} />
+                      Pin for Offline Access
+                    </button>
                   </div>
 
                   <div className="markdown-body text-[var(--text)] max-w-none">

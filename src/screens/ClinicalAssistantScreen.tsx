@@ -3,13 +3,15 @@ import {
   Bot, Send, User, BrainCircuit, Library, Pill, Activity, 
   FlaskConical, FileText, CheckCircle2, ChevronRight, Loader2, 
   Database, AlertCircle, Mic, MicOff, ArrowDown, X, Layers, Sparkles,
-  Download, FileDown, Copy, Check, Paperclip
+  Download, FileDown, Copy, Check, Paperclip, Menu
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { GhostWriterText } from '../components/GhostWriterText';
 import { RAGRouter } from '../services/ragRouter';
 import ReactMarkdown from 'react-markdown';
 import { jsPDF } from 'jspdf';
+import { ChatSessionList } from '../components/ChatSessionList';
+import { saveChatSession, ChatSession } from '../lib/localDb';
 
 interface Citation {
   source: string;
@@ -171,6 +173,8 @@ function CopyButton({ text }: { text: string }) {
 }
 
 export default function ClinicalAssistantScreen() {
+  const [currentSessionId, setCurrentSessionId] = useState<string>('session-' + Date.now());
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     { 
       id: 'welcome',
@@ -194,6 +198,44 @@ export default function ClinicalAssistantScreen() {
   
   // Ref for textarea auto-resizing
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  
+  useEffect(() => {
+    if (messages.length > 1) {
+      const title = messages.find(m => m.role === 'user')?.content.slice(0, 30) + '...' || 'Consultation';
+      saveChatSession({
+        id: currentSessionId,
+        userId: 'local', // Assuming local user for now if auth is handled elsewhere
+        title,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+        messages: messages.map(m => ({ role: m.role, content: m.content })),
+        synced: false,
+      });
+    }
+  }, [messages, currentSessionId]);
+
+  const handleNewSession = () => {
+    setCurrentSessionId('session-' + Date.now());
+    setMessages([
+      { 
+        id: 'welcome',
+        role: 'assistant', 
+        content: 'Welcome to the Clinova Knowledge & Reasoning Engine. I can retrieve and synthesize evidence from the Kenya Drug Index (KDI), STG Guidelines, WHO, and your clinical notes.\n\nHow can I assist your clinical decision making today?' 
+      }
+    ]);
+    setIsSidebarOpen(false);
+  };
+
+  const handleSelectSession = (session: ChatSession) => {
+    setCurrentSessionId(session.id);
+    setMessages(session.messages.map((m, i) => ({
+      id: `msg-${i}`,
+      role: m.role,
+      content: m.content
+    })));
+    setIsSidebarOpen(false);
+  };
+  
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [attachedFile, setAttachedFile] = useState<{
     data: string;
@@ -814,7 +856,24 @@ export default function ClinicalAssistantScreen() {
         height: `calc(${viewportHeight}px - 4rem - env(safe-area-inset-top, 0px))`
       }}
     >
-    
+      
+      {/* Sidebar for Mobile & Desktop */}
+      {isSidebarOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 z-20 md:hidden backdrop-blur-sm"
+          onClick={() => setIsSidebarOpen(false)}
+        />
+      )}
+      <div className={`
+        absolute inset-y-0 left-0 z-30 transform transition-transform duration-300 md:relative md:translate-x-0
+        ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
+      `}>
+        <ChatSessionList 
+          onSelectSession={handleSelectSession} 
+          onNewSession={handleNewSession}
+          currentSessionId={currentSessionId}
+        />
+      </div>
 
       {/* Main Chat Interface */}
       <div className="flex-1 flex flex-col h-full overflow-hidden bg-[var(--bg)] relative">
@@ -822,6 +881,12 @@ export default function ClinicalAssistantScreen() {
         {/* Chat Header */}
         <div className="h-14 border-b border-[var(--border)] px-4 bg-[var(--surface)] flex items-center justify-between z-10 shrink-0">
           <div className="flex items-center gap-3">
+            <button 
+              className="md:hidden p-1.5 rounded-lg border border-[var(--border)] hover:bg-[var(--surface-dim)] transition-colors"
+              onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+            >
+              <Menu size={16} className="text-[var(--text-muted)]" />
+            </button>
             <div className="w-8 h-8 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20 shadow-xs">
               <Bot size={18} className="animate-pulse" />
             </div>

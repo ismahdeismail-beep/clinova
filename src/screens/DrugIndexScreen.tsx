@@ -420,7 +420,31 @@ export default function DrugIndexScreen() {
                   </div>
 
                   <div className="markdown-body text-[var(--text)] max-w-none">
-                    <ReactMarkdown>{monograph}</ReactMarkdown>
+                    <ReactMarkdown
+                      components={{
+                        table: ({ children }) => (
+                          <div className="overflow-x-auto w-full my-4 rounded-xl border border-[var(--border)] shadow-sm bg-[var(--surface-dim)]">
+                            <table className="w-full text-left border-collapse text-xs sm:text-sm">
+                              {children}
+                            </table>
+                          </div>
+                        ),
+                        thead: ({ children }) => <thead className="bg-[var(--surface-dim)] border-b border-[var(--border)]">{children}</thead>,
+                        tbody: ({ children }) => <tbody className="divide-y divide-[var(--border)]/60">{children}</tbody>,
+                        tr: ({ children }) => <tr className="hover:bg-[var(--surface-dim)]/40 transition-colors">{children}</tr>,
+                        th: ({ children }) => <th className="p-3 font-semibold text-[var(--text)] uppercase tracking-wider text-[10px] sm:text-xs bg-[var(--surface-dim)] whitespace-nowrap">{children}</th>,
+                        td: ({ children }) => <td className="p-3 text-[var(--text-secondary)] leading-normal">{children}</td>,
+                        h1: ({ children }) => <h1 className="text-base sm:text-lg font-bold text-[var(--text)] mt-4 mb-2 tracking-tight border-b border-[var(--border)] pb-1">{children}</h1>,
+                        h2: ({ children }) => <h2 className="text-sm sm:text-base font-bold text-[var(--text)] mt-4 mb-2 tracking-tight">{children}</h2>,
+                        h3: ({ children }) => <h3 className="text-xs sm:text-sm font-bold text-[var(--text)] mt-3 mb-1.5 tracking-tight">{children}</h3>,
+                        p: ({ children }) => <p className="text-xs sm:text-sm leading-relaxed text-[var(--text-secondary)] mb-2.5 last:mb-0">{children}</p>,
+                        ul: ({ children }) => <ul className="list-disc pl-5 mb-3.5 space-y-1 text-xs sm:text-sm text-[var(--text-secondary)]">{children}</ul>,
+                        ol: ({ children }) => <ol className="list-decimal pl-5 mb-3.5 space-y-1 text-xs sm:text-sm text-[var(--text-secondary)]">{children}</ol>,
+                        li: ({ children }) => <li className="leading-relaxed">{children}</li>,
+                      }}
+                    >
+                      {monograph}
+                    </ReactMarkdown>
                   </div>
                 </div>
               ) : (

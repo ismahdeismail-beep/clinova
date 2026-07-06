@@ -87,6 +87,7 @@ function AssistantMessageBubble({
   onTick?: () => void;
 }) {
   const [displayedText, setDisplayedText] = useState(isNew ? '' : content);
+  const bufferRef = useRef('');
 
   useEffect(() => {
     if (!isNew) {
@@ -95,24 +96,31 @@ function AssistantMessageBubble({
     }
 
     let currentIndex = 0;
-    const interval = setInterval(() => {
-      currentIndex += 6; // Reveal 6 characters at a time for fast & elegant streaming
+    let rafId: number;
+
+    const flush = () => {
+      currentIndex += 15; // Batch more characters per frame
       if (currentIndex >= content.length) {
         setDisplayedText(content);
-        clearInterval(interval);
         onComplete?.();
         onTick?.();
       } else {
         setDisplayedText(content.slice(0, currentIndex));
         onTick?.();
+        rafId = requestAnimationFrame(flush);
       }
-    }, 12);
-
-    return () => clearInterval(interval);
+    };
+    
+    // Start flush cycle
+    rafId = requestAnimationFrame(flush);
+    return () => cancelAnimationFrame(rafId);
   }, [content, isNew, onComplete, onTick]);
 
   return (
-    <div className="text-xs sm:text-sm leading-relaxed max-w-none break-words">
+    <div 
+      className="text-xs sm:text-sm leading-relaxed max-w-none break-words min-h-[3rem]"
+      style={{ contain: 'layout style' }}
+    >
       {renderMarkdown(displayedText)}
       {isNew && displayedText.length < content.length && (
         <span className="inline-block w-1.5 h-3.5 ml-0.5 align-middle bg-[var(--primary)] animate-pulse" />

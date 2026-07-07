@@ -3,7 +3,7 @@ import {
   Bot, Send, User, BrainCircuit, Library, Pill, Activity, 
   FlaskConical, FileText, CheckCircle2, ChevronRight, Loader2, 
   Database, AlertCircle, Mic, MicOff, ArrowDown, X, Layers, Sparkles,
-  Download, FileDown, Copy, Check, Paperclip, Menu
+  Download, FileDown, Copy, Check, Paperclip, Menu, Plus, Settings
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { GhostWriterText } from '../components/GhostWriterText';
@@ -40,32 +40,91 @@ const RAG_SOURCES = [
   { id: 'ward', name: 'Ward-AID RAG', icon: Activity },
 ];
 
+function highlightMedicalTerms(text: string): React.ReactNode {
+  if (typeof text !== 'string') return text;
+  
+  // Regexes to capture dosages and common drug names
+  const combinedRegex = /\b(\d+(?:\.\d+)?\s*(?:mg|g|mcg|mL|ml|IU|mg\/kg|g\/L|mmol\/L|mEq))\b|\b(Amoxicillin|Paracetamol|Artemether|Lumefantrine|Ceftriaxone|Metronidazole|Insulin|Atorvastatin|Metformin|Ciprofloxacin|Aspirin|Ibuprofen|Penicillin|Gentamicin|Clindamycin|Erythromycin|Azithromycin|Co-trimoxazole|Albendazole|Artesunate|Quinine|Chloroquine)\b/gi;
+  
+  const parts = text.split(combinedRegex);
+  if (parts.length <= 1) return text;
+  
+  return (
+    <>
+      {parts.map((part, index) => {
+        if (!part) return null;
+        
+        // Match dosage
+        if (part.match(/^\d+(?:\.\d+)?\s*(?:mg|g|mcg|mL|ml|IU|mg\/kg|g\/L|mmol\/L|mEq)$/i)) {
+          return (
+            <span 
+              key={index} 
+              className="inline-block px-1.5 py-0.5 rounded text-[11px] font-bold font-mono bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 mx-0.5"
+            >
+              {part}
+            </span>
+          );
+        }
+        
+        // Match drug name
+        if (part.match(/^(Amoxicillin|Paracetamol|Artemether|Lumefantrine|Ceftriaxone|Metronidazole|Insulin|Atorvastatin|Metformin|Ciprofloxacin|Aspirin|Ibuprofen|Penicillin|Gentamicin|Clindamycin|Erythromycin|Azithromycin|Co-trimoxazole|Albendazole|Artesunate|Quinine|Chloroquine)$/i)) {
+          return (
+            <span 
+              key={index} 
+              className="inline-block px-1.5 py-0.5 rounded text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mx-0.5"
+            >
+              {part}
+            </span>
+          );
+        }
+        
+        return part;
+      })}
+    </>
+  );
+}
+
 function renderMarkdown(text: string) {
+  const processChildren = (children: React.ReactNode): React.ReactNode => {
+    if (typeof children === 'string') {
+      return highlightMedicalTerms(children);
+    }
+    if (Array.isArray(children)) {
+      return children.map((child, i) => {
+        if (typeof child === 'string') {
+          return <React.Fragment key={i}>{highlightMedicalTerms(child)}</React.Fragment>;
+        }
+        return child;
+      });
+    }
+    return children;
+  };
+
   return (
     <ReactMarkdown
       components={{
         table: ({ children }) => (
-          <div className="overflow-x-auto w-full my-4 rounded-xl border border-[var(--border)] shadow-sm bg-[var(--surface-dim)]">
-            <table className="w-full text-left border-collapse text-xs sm:text-sm">
+          <div className="overflow-x-auto w-full my-5 rounded-2xl border border-slate-800 shadow-lg bg-[#1E293B]">
+            <table className="w-full text-left border-collapse text-sm text-slate-300">
               {children}
             </table>
           </div>
         ),
-        thead: ({ children }) => <thead className="bg-[var(--surface-dim)] border-b border-[var(--border)]">{children}</thead>,
-        tbody: ({ children }) => <tbody className="divide-y divide-[var(--border)]/60">{children}</tbody>,
-        tr: ({ children }) => <tr className="hover:bg-[var(--surface-dim)]/40 transition-colors">{children}</tr>,
-        th: ({ children }) => <th className="p-3 font-semibold text-[var(--text)] uppercase tracking-wider text-[10px] sm:text-xs bg-[var(--surface-dim)]">{children}</th>,
-        td: ({ children }) => <td className="p-3 text-[var(--text-secondary)] leading-normal">{children}</td>,
-        h1: ({ children }) => <h1 className="text-base sm:text-lg font-bold text-[var(--text)] mt-4 mb-2 tracking-tight border-b border-[var(--border)] pb-1">{children}</h1>,
-        h2: ({ children }) => <h2 className="text-sm sm:text-base font-bold text-[var(--text)] mt-4 mb-2 tracking-tight">{children}</h2>,
-        h3: ({ children }) => <h3 className="text-xs sm:text-sm font-bold text-[var(--text)] mt-3 mb-1.5 tracking-tight">{children}</h3>,
-        p: ({ children }) => <p className="text-xs sm:text-sm leading-relaxed text-[var(--text-secondary)] mb-2.5 last:mb-0">{children}</p>,
-        ul: ({ children }) => <ul className="list-disc pl-5 mb-3.5 space-y-1 text-xs sm:text-sm text-[var(--text-secondary)]">{children}</ul>,
-        ol: ({ children }) => <ol className="list-decimal pl-5 mb-3.5 space-y-1 text-xs sm:text-sm text-[var(--text-secondary)]">{children}</ol>,
-        li: ({ children }) => <li className="leading-relaxed">{children}</li>,
+        thead: ({ children }) => <thead className="bg-[#1e293b] border-b border-slate-800">{children}</thead>,
+        tbody: ({ children }) => <tbody className="divide-y divide-slate-800/60">{children}</tbody>,
+        tr: ({ children }) => <tr className="hover:bg-slate-800/40 transition-colors">{children}</tr>,
+        th: ({ children }) => <th className="p-3.5 font-semibold text-slate-200 uppercase tracking-wider text-xs bg-[#1E293B]">{children}</th>,
+        td: ({ children }) => <td className="p-3.5 text-slate-300 leading-relaxed">{children}</td>,
+        h1: ({ children }) => <h1 className="text-xl font-bold text-slate-100 mt-6 mb-3 tracking-tight border-b border-slate-800 pb-1.5">{children}</h1>,
+        h2: ({ children }) => <h2 className="text-lg font-bold text-slate-100 mt-5 mb-2.5 tracking-tight">{children}</h2>,
+        h3: ({ children }) => <h3 className="text-base font-bold text-slate-200 mt-4 mb-2 tracking-tight">{children}</h3>,
+        p: ({ children }) => <p className="text-base sm:text-[17px] leading-loose text-slate-300 mb-4 last:mb-0 font-normal">{processChildren(children)}</p>,
+        ul: ({ children }) => <ul className="list-disc pl-6 mb-4 space-y-2 text-base sm:text-[17px] text-slate-300">{children}</ul>,
+        ol: ({ children }) => <ol className="list-decimal pl-6 mb-4 space-y-2 text-base sm:text-[17px] text-slate-300">{children}</ol>,
+        li: ({ children }) => <li className="leading-loose">{processChildren(children)}</li>,
         code: ({ inline, className, children, ...props }: any) => {
           return (
-            <code className="bg-[var(--surface-dim)] border border-[var(--border)] text-[var(--primary)] px-1.5 py-0.5 rounded text-xs font-mono font-medium" {...props}>
+            <code className="bg-[#0F172A] border border-slate-800 text-cyan-400 px-2 py-0.5 rounded text-sm font-mono font-medium" {...props}>
               {children}
             </code>
           );
@@ -175,13 +234,7 @@ function CopyButton({ text }: { text: string }) {
 export default function ClinicalAssistantScreen() {
   const [currentSessionId, setCurrentSessionId] = useState<string>('session-' + Date.now());
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [messages, setMessages] = useState<Message[]>([
-    { 
-      id: 'welcome',
-      role: 'assistant', 
-      content: 'Welcome to the Clinova Knowledge & Reasoning Engine. I can retrieve and synthesize evidence from the Kenya Drug Index (KDI), STG Guidelines, WHO, and your clinical notes.\n\nHow can I assist your clinical decision making today?' 
-    }
-  ]);
+  const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isListening, setIsListening] = useState(false);
   const [isMobileRouterOpen, setIsMobileRouterOpen] = useState(false);
@@ -216,13 +269,7 @@ export default function ClinicalAssistantScreen() {
 
   const handleNewSession = () => {
     setCurrentSessionId('session-' + Date.now());
-    setMessages([
-      { 
-        id: 'welcome',
-        role: 'assistant', 
-        content: 'Welcome to the Clinova Knowledge & Reasoning Engine. I can retrieve and synthesize evidence from the Kenya Drug Index (KDI), STG Guidelines, WHO, and your clinical notes.\n\nHow can I assist your clinical decision making today?' 
-      }
-    ]);
+    setMessages([]);
     setIsSidebarOpen(false);
   };
 
@@ -874,11 +921,18 @@ export default function ClinicalAssistantScreen() {
     }
   };
 
+  const handleSuggestionClick = (text: string) => {
+    setInput(text);
+    if (textareaRef.current) {
+      textareaRef.current.focus();
+    }
+  };
+
 
 
   return (
     <div 
-      className="fixed md:left-64 left-0 right-0 bottom-0 top-[calc(4rem+env(safe-area-inset-top,0px))] bg-[var(--bg)] flex flex-row overflow-hidden z-20"
+      className="fixed md:left-64 left-0 right-0 bottom-0 top-[calc(4rem+env(safe-area-inset-top,0px))] bg-[#0F172A] text-slate-100 flex flex-row overflow-hidden z-20 font-sans"
       style={{
         height: `calc(${viewportHeight}px - 4rem - env(safe-area-inset-top, 0px))`
       }}
@@ -887,12 +941,12 @@ export default function ClinicalAssistantScreen() {
       {/* Sidebar for Mobile & Desktop */}
       {isSidebarOpen && (
         <div 
-          className="fixed inset-0 bg-black/50 z-20 md:hidden backdrop-blur-sm"
+          className="fixed inset-0 bg-black/60 z-30 md:hidden backdrop-blur-sm"
           onClick={() => setIsSidebarOpen(false)}
         />
       )}
       <div className={`
-        absolute inset-y-0 left-0 z-30 transform transition-transform duration-300 md:relative md:translate-x-0
+        absolute inset-y-0 left-0 z-40 transform transition-transform duration-300 md:relative md:translate-x-0
         ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
       `}>
         <ChatSessionList 
@@ -903,52 +957,56 @@ export default function ClinicalAssistantScreen() {
       </div>
 
       {/* Main Chat Interface */}
-      <div className="flex-1 flex flex-col h-full overflow-hidden bg-[var(--bg)] relative">
+      <div className="flex-1 flex flex-col h-full overflow-hidden bg-[#0F172A] relative">
         
         {/* Chat Header */}
-        <div className="h-14 border-b border-[var(--border)] px-4 bg-[var(--surface)] flex items-center justify-between z-10 shrink-0">
-          <div className="flex items-center gap-3">
+        <div className="h-16 border-b border-slate-800/80 px-4 sm:px-6 bg-[#1E293B] flex items-center justify-between z-10 shrink-0">
+          <div className="flex items-center gap-3 min-w-0">
             <button 
-              className="md:hidden p-1.5 rounded-lg border border-[var(--border)] hover:bg-[var(--surface-dim)] transition-colors"
+              className="md:hidden p-2 rounded-xl border border-slate-800 hover:bg-[#2e3b52] transition-all cursor-pointer"
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
             >
-              <Menu size={16} className="text-[var(--text-muted)]" />
+              <Menu size={18} className="text-slate-300" />
             </button>
-            <div className="w-8 h-8 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20 shadow-xs">
-              <Bot size={18} className="animate-pulse" />
+            <div className="w-10 h-10 rounded-full bg-blue-500/15 text-blue-400 flex items-center justify-center border border-blue-500/20 shadow-inner shrink-0">
+              <Bot size={22} className="animate-pulse" />
             </div>
-            <div>
-              <div className="flex items-center gap-1.5">
-                <h2 className="text-xs sm:text-sm font-semibold text-[var(--text)]">Clinical Assistant</h2>
-                <div className="flex items-center gap-1 text-[9px] font-bold text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
-                  <span className="relative flex h-1 w-1">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-1 w-1 bg-emerald-500"></span>
+            <div className="min-w-0">
+              <div className="flex items-center gap-2">
+                <h2 className="text-sm sm:text-base font-bold text-slate-100 tracking-tight">Clinical Assistant</h2>
+                <div className="flex items-center gap-1.5 text-[10px] font-bold text-cyan-400 bg-cyan-500/10 px-2.5 py-0.5 rounded-full border border-cyan-500/20 select-none">
+                  <span className="relative flex h-1.5 w-1.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-cyan-500"></span>
                   </span>
-                  <span className="hidden xs:inline">Live Validation</span>
+                  <span>● Online</span>
                 </div>
               </div>
-              <p className="text-[10px] text-[var(--text-muted)] truncate max-w-[160px] xs:max-w-xs">Active Multi-RAG Decisional Support</p>
+              <p className="text-xs text-slate-400 truncate hidden xs:block mt-0.5">Powered by AI Clinical Decision Support</p>
             </div>
           </div>
           
-          <div className="flex items-center gap-2">
-            {/* Source selector status preview */}
-            <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-medium text-[var(--text-secondary)]">
-              <span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)]" />
-              <span>{selectedSources.length} databases selected</span>
-            </div>
+          <div className="flex items-center gap-2 shrink-0">
+            {/* Quick New Chat Button */}
+            <button
+              onClick={handleNewSession}
+              className="p-2 sm:px-3 sm:py-1.5 rounded-xl border border-slate-800 hover:border-slate-700 bg-[#0F172A]/40 hover:bg-[#0F172A]/80 text-xs font-bold text-slate-300 transition-all flex items-center gap-1.5 cursor-pointer"
+              title="Start New Session"
+            >
+              <Plus size={14} className="text-blue-400" />
+              <span className="hidden sm:inline">New Session</span>
+            </button>
 
             {/* Export Chat Dropdown */}
             <div className="relative">
               <button
                 onClick={() => setShowExportMenu(!showExportMenu)}
-                className="flex items-center gap-1.5 text-xs font-bold text-[var(--text-secondary)] bg-[var(--surface-dim)] hover:bg-[var(--surface-dim)]/80 hover:text-[var(--text)] px-3 py-1.5 rounded-xl border border-[var(--border)] transition-all cursor-pointer select-none"
+                className="flex items-center gap-1.5 text-xs font-bold text-slate-300 bg-[#0F172A]/40 hover:bg-[#0F172A]/80 px-3 py-2 rounded-xl border border-slate-800 hover:border-slate-700 transition-all cursor-pointer select-none"
                 title="Export current conversation for records"
                 id="export-chat-button"
               >
-                <Download size={13} className="text-[var(--text-muted)]" />
-                <span className="hidden xs:inline">Export Chat</span>
+                <Download size={14} className="text-slate-400" />
+                <span className="hidden xs:inline">Export</span>
               </button>
               
               <AnimatePresence>
@@ -963,32 +1021,32 @@ export default function ClinicalAssistantScreen() {
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 8, scale: 0.95 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute right-0 mt-2 w-56 bg-[var(--surface)] border border-[var(--border)] rounded-2xl shadow-xl z-40 p-1.5 flex flex-col gap-1 text-xs"
+                      className="absolute right-0 mt-2 w-56 bg-[#1E293B] border border-slate-800 rounded-2xl shadow-xl z-40 p-2 flex flex-col gap-1 text-xs"
                       id="export-chat-dropdown"
                     >
-                      <div className="px-2.5 py-2 border-b border-[var(--border)]/60 text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider">
+                      <div className="px-2.5 py-1.5 border-b border-slate-800/60 text-[10px] font-bold text-slate-400 uppercase tracking-wider">
                         Patient Record Format
                       </div>
                       <button
                         onClick={handleExportPDF}
-                        className="flex items-center gap-2.5 w-full text-left p-2 hover:bg-[var(--primary)]/10 text-[var(--text)] hover:text-[var(--primary)] rounded-xl transition-all cursor-pointer font-medium"
+                        className="flex items-center gap-2.5 w-full text-left p-2.5 hover:bg-slate-800/50 text-slate-200 rounded-xl transition-all cursor-pointer font-medium"
                         id="export-pdf-option"
                       >
-                        <FileDown size={14} className="text-red-500" />
-                        <div className="flex-1">
-                          <div className="font-semibold text-xs text-[var(--text)]">Export as Medical PDF</div>
-                          <div className="text-[10px] text-[var(--text-muted)]">Formatted, printable document</div>
+                        <FileDown size={15} className="text-red-400 shrink-0" />
+                        <div className="flex-1 min-w-0">
+                          <div className="font-semibold text-xs text-slate-200">Export as Medical PDF</div>
+                          <div className="text-[10px] text-slate-400">Formatted, printable record</div>
                         </div>
                       </button>
                       <button
                         onClick={handleExportMarkdown}
-                        className="flex items-center gap-2.5 w-full text-left p-2 hover:bg-[var(--primary)]/10 text-[var(--text)] hover:text-[var(--primary)] rounded-xl transition-all cursor-pointer font-medium"
+                        className="flex items-center gap-2.5 w-full text-left p-2.5 hover:bg-slate-800/50 text-slate-200 rounded-xl transition-all cursor-pointer font-medium"
                         id="export-md-option"
                       >
-                        <FileText size={14} className="text-blue-500" />
-                        <div className="flex-1">
-                          <div className="font-semibold text-xs text-[var(--text)]">Export as Markdown (.md)</div>
-                          <div className="text-[10px] text-[var(--text-muted)]">Raw text with styling for EHR</div>
+                        <FileText size={15} className="text-blue-400 shrink-0" />
+                        <div className="flex-1 min-w-0">
+                          <div className="font-semibold text-xs text-slate-200">Export as Markdown (.md)</div>
+                          <div className="text-[10px] text-slate-400">EHR compatible raw text</div>
                         </div>
                       </button>
                     </motion.div>
@@ -996,8 +1054,6 @@ export default function ClinicalAssistantScreen() {
                 )}
               </AnimatePresence>
             </div>
-
-            
           </div>
         </div>
 
@@ -1007,39 +1063,125 @@ export default function ClinicalAssistantScreen() {
           onScroll={handleScroll}
           className="flex-1 overflow-y-auto p-4 md:p-6 space-y-6 scrollbar-thin scroll-smooth"
         >
+          {/* Welcome State / Initial Empty State */}
+          {messages.length === 0 && (
+            <div className="max-w-3xl mx-auto py-8 sm:py-12 px-2">
+              <motion.div 
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+                className="bg-[#1E293B] border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl text-center flex flex-col items-center gap-5"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center border border-blue-500/20 shadow-inner">
+                  <Sparkles size={32} className="text-cyan-400" />
+                </div>
+                
+                <div className="space-y-2">
+                  <h1 className="text-xl sm:text-2xl font-bold text-slate-100 tracking-tight">
+                    Welcome to Clinova Clinical Assistant
+                  </h1>
+                  <p className="text-sm text-slate-400 max-w-xl mx-auto leading-relaxed">
+                    A fully-equipped clinical console designed to retrieve, synthesize, and validate clinical evidence from the Kenya Drug Index (KDI), STG Guidelines, WHO, and notes.
+                  </p>
+                </div>
+
+                <div className="w-full h-px bg-slate-800/60 my-1" />
+
+                <div className="w-full text-left">
+                  <span className="text-[11px] font-bold text-cyan-400 uppercase tracking-widest block mb-4 text-center sm:text-left">
+                    What can I do for you today?
+                  </span>
+                  
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {[
+                      { icon: Pill, title: "Learn pharmacology", desc: "Action mechanisms, indications, side effects, and exact dosing" },
+                      { icon: Library, title: "Get treatment guidance", desc: "Strict adherence to Kenyan STG & global guidelines" },
+                      { icon: Activity, title: "Ask clinical questions", desc: "Differential diagnostics, symptom checking, risk stratification" },
+                      { icon: FlaskConical, title: "Interpret investigations", desc: "Synthesizing abnormal laboratory or imaging results" }
+                    ].map((feat, idx) => {
+                      const Icon = feat.icon;
+                      return (
+                        <div key={idx} className="flex gap-3 p-3.5 bg-[#0F172A]/50 border border-slate-800/80 rounded-2xl">
+                          <div className="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center border border-blue-500/10 shrink-0">
+                            <Icon size={16} />
+                          </div>
+                          <div>
+                            <h4 className="text-xs font-bold text-slate-200">{feat.title}</h4>
+                            <p className="text-[11px] text-slate-400 leading-normal mt-0.5">{feat.desc}</p>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Suggestion Chips Section inside Empty State */}
+              <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.2, duration: 0.4 }}
+                className="mt-8 space-y-3"
+              >
+                <div className="flex items-center gap-2 px-1">
+                  <Sparkles size={14} className="text-cyan-400" />
+                  <span className="text-xs font-bold text-slate-300 uppercase tracking-wider">Suggested Queries</span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {[
+                    { text: 'Explain pneumonia treatment guidelines in Kenya', label: 'Explain pneumonia' },
+                    { text: 'Check drug interactions for Amoxicillin', label: 'Drug interactions' },
+                    { text: 'Calculate paediatric dosage for Paracetamol', label: 'Calculate dosage' },
+                    { text: 'Differential diagnosis for acute chest pain', label: 'Differential diagnosis' },
+                    { text: 'Kenya STG guidelines for first-line Malaria', label: 'Treatment guidelines' },
+                    { text: 'How to interpret abnormal renal function lab results?', label: 'Interpret lab results' }
+                  ].map((sug, i) => (
+                    <button
+                      key={i}
+                      onClick={() => handleSuggestionClick(sug.text)}
+                      className="text-left px-4 py-3 bg-[#1E293B] hover:bg-slate-800 border border-slate-800/80 hover:border-slate-700 rounded-xl text-xs sm:text-sm font-medium text-slate-300 hover:text-cyan-400 transition-all cursor-pointer shadow-xs flex items-center justify-between select-none"
+                    >
+                      <span className="truncate">{sug.label}</span>
+                      <ChevronRight size={14} className="text-slate-500 shrink-0 ml-2" />
+                    </button>
+                  ))}
+                </div>
+              </motion.div>
+            </div>
+          )}
+
+          {/* Render Active Conversation Thread */}
           {messages.map((msg) => {
             const isUser = msg.role === 'user';
             return (
               <div 
                 key={msg.id} 
-                className={`flex gap-3 sm:gap-4 ${isUser ? 'flex-row-reverse' : 'items-start'} animate-in fade-in slide-in-from-bottom-2 duration-200`}
+                className={`flex gap-3 sm:gap-4 ${isUser ? 'justify-end' : 'justify-start'} animate-in fade-in slide-in-from-bottom-2 duration-200`}
               >
-                {/* Avatar */}
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 shadow-xs ${
-                  isUser 
-                    ? 'bg-gradient-to-tr from-[var(--primary)] to-indigo-600 text-white' 
-                    : 'bg-gradient-to-tr from-[var(--surface-dim)] to-[var(--surface)] text-[var(--primary)] border border-[var(--border)]'
-                }`}>
-                  {isUser ? <User size={15} /> : <Bot size={15} />}
-                </div>
+                {/* Avatar (only for assistant responses to keep right margin clean) */}
+                {!isUser && (
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center bg-slate-800 text-blue-400 border border-slate-700 shrink-0 shadow-xs mt-1">
+                    <Bot size={15} />
+                  </div>
+                )}
                 
-                {/* Bubble Container */}
-                <div className={`flex flex-col gap-2 max-w-[88%] sm:max-w-[78%] ${isUser ? 'items-end' : 'items-start'}`}>
+                {/* Bubble Container - 80% limit for Assistant, 75% limit for User */}
+                <div className={`flex flex-col gap-2 ${isUser ? 'max-w-[75%]' : 'max-w-[80%]'}`}>
                   
                   {/* Real-time RAG Steps Tracker */}
                   {msg.isThinking && (
-                    <div className="flex flex-col gap-2.5 bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 shadow-sm w-full sm:min-w-[280px]">
-                      <div className="flex items-center gap-2 text-xs font-bold text-[var(--primary)]">
-                        <Loader2 size={14} className="animate-spin text-[var(--primary)] shrink-0" />
+                    <div className="flex flex-col gap-2.5 bg-[#1E293B] border border-slate-800 rounded-2xl p-4 shadow-md w-full sm:min-w-[320px]">
+                      <div className="flex items-center gap-2 text-xs font-bold text-cyan-400">
+                        <Loader2 size={14} className="animate-spin shrink-0" />
                         <span>Clinical Decisional Inference</span>
                       </div>
-                      <div className="space-y-2 pl-1.5 border-l-2 border-[var(--border)]">
-                        <div className="flex items-center gap-2 text-[11px] font-semibold text-[var(--text)]">
-                          <CheckCircle2 size={12} className="text-emerald-500 shrink-0" />
+                      <div className="space-y-2 pl-2 border-l-2 border-slate-700">
+                        <div className="flex items-center gap-2 text-xs font-semibold text-slate-200">
+                          <CheckCircle2 size={13} className="text-emerald-500 shrink-0" />
                           <span>{msg.content}</span>
                         </div>
                         {msg.routedTo && msg.routedTo.length > 0 && (
-                          <div className="flex items-center gap-1.5 text-[10px] text-[var(--text-muted)]">
+                          <div className="flex items-center gap-1.5 text-[10px] text-slate-400">
                             <ChevronRight size={10} className="shrink-0" />
                             <span>Routed Base: {msg.routedTo.join(', ')}</span>
                           </div>
@@ -1051,15 +1193,15 @@ export default function ClinicalAssistantScreen() {
                   {/* Bubble Content */}
                   {!msg.isThinking && (
                     <div className="flex items-start gap-2.5 max-w-full group/bubble">
-                      <div className={`rounded-2xl px-5 py-3.5 shadow-xs text-xs sm:text-sm leading-relaxed ${
+                      <div className={`rounded-3xl px-5 py-4 shadow-sm text-base leading-relaxed ${
                         isUser 
-                          ? 'bg-[var(--primary)] text-white rounded-tr-none shadow-md' 
-                          : 'bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] rounded-tl-none shadow-xs'
+                          ? 'bg-blue-600 text-slate-100 rounded-tr-none shadow-md font-medium' 
+                          : 'bg-[#1E293B] border border-slate-800 text-slate-200 rounded-tl-none shadow-xs'
                       }`}>
                         {isUser ? (
                           <div className="space-y-2">
                             {msg.fileName && (
-                              <div className="flex items-center gap-1.5 text-xs bg-white/15 px-2.5 py-1.5 rounded-lg border border-white/10 max-w-xs truncate">
+                              <div className="flex items-center gap-1.5 text-xs bg-white/10 px-2.5 py-1.5 rounded-lg border border-white/5 max-w-xs truncate">
                                 <Paperclip size={12} className="shrink-0" />
                                 <span className="truncate">{msg.fileName}</span>
                               </div>
@@ -1083,22 +1225,26 @@ export default function ClinicalAssistantScreen() {
                           />
                         )}
                       </div>
-                      {!isUser && <CopyButton text={msg.content} />}
+                      {!isUser && (
+                        <div className="mt-1">
+                          <CopyButton text={msg.content} />
+                        </div>
+                      )}
                     </div>
                   )}
 
                   {/* Verification Citations Widget */}
                   {!msg.isThinking && msg.role === 'assistant' && msg.citations && msg.citations.length > 0 && (
-                    <div className="w-full bg-[var(--surface-dim)]/60 border border-[var(--border)] rounded-xl p-4 text-xs mt-1 animate-in fade-in duration-300">
-                      <div className="flex items-center justify-between mb-3 border-b border-[var(--border)] pb-2 flex-wrap gap-2">
-                        <div className="flex items-center gap-1.5 text-[var(--text-muted)] font-bold">
+                    <div className="w-full bg-[#1E293B]/40 border border-slate-800 rounded-2xl p-4 text-xs mt-1 animate-in fade-in duration-300">
+                      <div className="flex items-center justify-between mb-3 border-b border-slate-800/80 pb-2.5 flex-wrap gap-2">
+                        <div className="flex items-center gap-1.5 text-slate-300 font-bold">
                           <CheckCircle2 size={14} className="text-emerald-500 shrink-0" />
                           <span>Clinical Evidence Synthesized</span>
                         </div>
                         {msg.confidence && (
                           <div className="flex items-center gap-1.5 font-bold">
-                            <span className="text-[var(--text-muted)]">Confidence:</span>
-                            <span className="bg-emerald-500/10 text-emerald-600 px-2.5 py-0.5 rounded-full border border-emerald-500/20 font-mono tracking-tight text-[11px]">
+                            <span className="text-slate-400">Confidence:</span>
+                            <span className="bg-emerald-500/10 text-emerald-400 px-2.5 py-0.5 rounded-full border border-emerald-500/20 font-mono tracking-tight text-[11px]">
                               {msg.confidence}%
                             </span>
                           </div>
@@ -1106,15 +1252,15 @@ export default function ClinicalAssistantScreen() {
                       </div>
                       
                       <div className="space-y-2">
-                        <span className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-bold block">Sources Cited:</span>
+                        <span className="text-[10px] text-slate-400 uppercase tracking-wider font-bold block">Sources Cited:</span>
                         <ul className="space-y-2">
                           {msg.citations.map((cite, i) => (
-                            <li key={i} className="flex items-start gap-2 text-[var(--text-secondary)]">
-                              <span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] mt-1.5 shrink-0" />
-                              <span className="leading-normal text-xs text-[var(--text-secondary)]">
-                                <span className="font-bold text-[var(--text)]">{cite.source}</span>
-                                {cite.year && <span className="text-[var(--text-muted)]"> ({cite.year})</span>}
-                                <span className="text-[var(--text-muted)]"> — {cite.document}</span>
+                            <li key={i} className="flex items-start gap-2 text-slate-300">
+                              <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 shrink-0" />
+                              <span className="leading-normal text-xs text-slate-300">
+                                <span className="font-bold text-slate-200">{cite.source}</span>
+                                {cite.year && <span className="text-slate-400"> ({cite.year})</span>}
+                                <span className="text-slate-400"> — {cite.document}</span>
                               </span>
                             </li>
                           ))}
@@ -1122,10 +1268,10 @@ export default function ClinicalAssistantScreen() {
                       </div>
                       
                       {msg.routedTo && (
-                        <div className="mt-3 pt-3 border-t border-[var(--border)] flex flex-wrap items-center gap-2">
-                          <span className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-bold">Routing:</span>
+                        <div className="mt-3 pt-3 border-t border-slate-800/80 flex flex-wrap items-center gap-2">
+                          <span className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Routing:</span>
                           {msg.routedTo.map((route, i) => (
-                            <span key={i} className="px-2 py-0.5 bg-[var(--surface)] border border-[var(--border)] rounded-lg text-[10px] font-bold text-[var(--primary)]">
+                            <span key={i} className="px-2 py-0.5 bg-slate-900 border border-slate-800 rounded-lg text-[10px] font-bold text-blue-400">
                               {route}
                             </span>
                           ))}
@@ -1138,6 +1284,25 @@ export default function ClinicalAssistantScreen() {
               </div>
             );
           })}
+
+          {/* Typing Indicator if processing */}
+          {isProcessing && (
+            <div className="flex gap-3 sm:gap-4 items-start animate-in fade-in duration-200">
+              <div className="w-8 h-8 rounded-full flex items-center justify-center bg-slate-800 text-blue-400 border border-slate-700 shrink-0 shadow-xs mt-1">
+                <Bot size={15} />
+              </div>
+              <div className="flex flex-col gap-2 max-w-[80%] items-start">
+                <div className="bg-[#1E293B] border border-slate-800 rounded-2xl rounded-tl-none px-5 py-4 shadow-md flex items-center gap-3">
+                  <span className="text-sm font-semibold text-slate-300">Clinical Assistant is thinking</span>
+                  <div className="flex gap-1 items-center justify-center mt-1">
+                    <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></span>
+                    <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></span>
+                    <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Floating Scroll Bottom Button */}
@@ -1148,41 +1313,26 @@ export default function ClinicalAssistantScreen() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
               onClick={() => scrollToBottom('smooth')}
-              className="absolute right-6 bottom-36 sm:bottom-32 p-2.5 rounded-full bg-[var(--surface)] border border-[var(--border)] text-[var(--primary)] shadow-md hover:bg-[var(--surface-dim)] transition-colors cursor-pointer z-10"
+              className="absolute right-6 bottom-36 sm:bottom-32 p-3 rounded-full bg-[#1E293B] border border-slate-800 text-cyan-400 shadow-lg hover:bg-slate-800 transition-colors cursor-pointer z-10"
               title="Scroll to bottom"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
             >
-              <ArrowDown size={16} />
+              <ArrowDown size={18} />
             </motion.button>
           )}
         </AnimatePresence>
         
         {/* Floating Interactive Input Composer Area */}
-        <div className="p-4 border-t border-[var(--border)] bg-[var(--surface)] shrink-0 z-10 shadow-lg">
+        <div className="p-4 border-t border-slate-800/80 bg-[#1E293B] shrink-0 z-10 shadow-xl">
           
-          {/* Quick Prompts Carousel */}
-          <div className="flex gap-2 overflow-x-auto pb-3 scrollbar-none">
-            {[
-              { text: 'Best antibiotic for CAP?', label: 'Pneumonia Rx' },
-              { text: 'Renal dose adjustment for Amoxicillin?', label: 'Renal Adjust' },
-              { text: 'Alternative therapy for Malaria?', label: 'Malaria Alternative' }
-            ].map((prompt, i) => (
-              <button 
-                key={i}
-                onClick={() => setInput(prompt.text)}
-                className="shrink-0 px-3.5 py-2 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)]/30 border border-[var(--border)] hover:border-[var(--primary)]/30 rounded-xl text-xs font-semibold text-[var(--text-muted)] hover:text-[var(--primary)] transition-all cursor-pointer shadow-xs whitespace-nowrap select-none"
-              >
-                💡 {prompt.label}
-              </button>
-            ))}
-          </div>
-
           {/* Active Databases Config Dropdown Panel */}
           <div className="mb-3 relative">
             <button 
               onClick={() => setShowSourceSelector(!showSourceSelector)}
-              className="flex items-center gap-1.5 text-xs font-bold text-[var(--primary)] px-2.5 py-1.5 hover:bg-[var(--primary-container)]/15 border border-[var(--primary)]/15 rounded-xl transition-all cursor-pointer select-none"
+              className="flex items-center gap-1.5 text-xs font-bold text-cyan-400 px-3 py-1.5 hover:bg-cyan-500/10 border border-cyan-500/20 rounded-xl transition-all cursor-pointer select-none"
             >
-              <Library size={13} className="text-[var(--primary)]" /> 
+              <Library size={13} className="text-cyan-400" /> 
               <span>Configure Active Databases ({selectedSources.length})</span>
             </button>
             
@@ -1192,17 +1342,17 @@ export default function ClinicalAssistantScreen() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
-                  className="absolute bottom-10 left-0 w-full sm:w-[480px] p-3.5 bg-[var(--surface)] border border-[var(--border)] rounded-2xl grid grid-cols-2 gap-2.5 shadow-lg z-20"
+                  className="absolute bottom-11 left-0 w-full sm:w-[480px] p-4 bg-[#1E293B] border border-slate-800 rounded-2xl grid grid-cols-2 gap-2.5 shadow-xl z-20"
                 >
                   {AVAILABLE_SOURCES.map(source => (
-                    <label key={source} className="flex items-center gap-2.5 cursor-pointer p-2 bg-[var(--surface-dim)]/50 border border-[var(--border)] hover:border-[var(--primary)]/30 rounded-xl transition-all select-none">
+                    <label key={source} className="flex items-center gap-2.5 cursor-pointer p-2.5 bg-[#0F172A]/80 border border-slate-800 hover:border-slate-700 rounded-xl transition-all select-none">
                       <input 
                         type="checkbox" 
                         checked={selectedSources.includes(source)}
                         onChange={() => toggleSource(source)}
-                        className="accent-[var(--primary)] rounded h-3.5 w-3.5 border-[var(--border)] cursor-pointer"
+                        className="accent-blue-500 rounded h-4 w-4 border-slate-800 cursor-pointer"
                       />
-                      <span className="text-xs text-[var(--text-secondary)] font-medium">{source}</span>
+                      <span className="text-xs text-slate-300 font-medium">{source}</span>
                     </label>
                   ))}
                 </motion.div>
@@ -1217,12 +1367,12 @@ export default function ClinicalAssistantScreen() {
                 initial={{ opacity: 0, height: 0, y: 10 }}
                 animate={{ opacity: 1, height: 'auto', y: 0 }}
                 exit={{ opacity: 0, height: 0, y: 10 }}
-                className="overflow-hidden mb-3 bg-[var(--primary-container)]/10 border border-[var(--primary)]/20 rounded-2xl p-3.5 shadow-xs"
+                className="overflow-hidden mb-3 bg-blue-500/5 border border-blue-500/15 rounded-2xl p-4 shadow-sm"
               >
                 <div className="flex items-center justify-between gap-3 mb-2 flex-wrap">
                   <div className="flex items-center gap-2">
                     {/* Animated mic indicator (waveform pulses) */}
-                    <div className="flex items-center gap-1.5 bg-red-500/10 px-2.5 py-1 rounded-full text-red-500 font-bold text-[10px] uppercase tracking-wider animate-pulse border border-red-500/15">
+                    <div className="flex items-center gap-1.5 bg-red-500/10 px-2.5 py-1 rounded-full text-red-400 font-bold text-[10px] uppercase tracking-wider animate-pulse border border-red-500/15">
                       <span className="relative flex h-2 w-2">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
@@ -1232,11 +1382,11 @@ export default function ClinicalAssistantScreen() {
 
                     {/* Speech Language selector dropdown */}
                     <div className="flex items-center gap-1">
-                      <span className="text-[10px] text-[var(--text-muted)] font-medium">Language:</span>
+                      <span className="text-[10px] text-slate-400 font-medium">Language:</span>
                       <select
                         value={speechLang}
                         onChange={(e) => setSpeechLang(e.target.value)}
-                        className="bg-[var(--surface)] text-[11px] text-[var(--text)] border border-[var(--border)] rounded px-1.5 py-0.5 outline-none font-semibold cursor-pointer font-sans"
+                        className="bg-[#0F172A] text-xs text-slate-300 border border-slate-800 rounded px-2 py-0.5 outline-none font-semibold cursor-pointer font-sans"
                       >
                         <option value="en-US">English (US)</option>
                         <option value="en-GB">English (UK)</option>
@@ -1256,7 +1406,7 @@ export default function ClinicalAssistantScreen() {
                     </div>
                     <button
                       onClick={toggleListening}
-                      className="text-[10px] bg-[var(--surface)] border border-[var(--border)] hover:bg-red-50/20 px-2 py-0.5 rounded text-[var(--text)] font-semibold transition-colors cursor-pointer"
+                      className="text-[10px] bg-[#0F172A] border border-slate-800 hover:bg-slate-800 px-2.5 py-0.5 rounded text-slate-300 font-semibold transition-colors cursor-pointer"
                     >
                       Stop
                     </button>
@@ -1264,26 +1414,26 @@ export default function ClinicalAssistantScreen() {
                 </div>
 
                 {/* Real-time Interim speech content */}
-                <div className="bg-[var(--surface)] border border-[var(--border)]/75 rounded-xl p-2.5 min-h-[50px] flex flex-col justify-between mb-2">
-                  <div className="text-xs text-[var(--text)] select-text">
+                <div className="bg-[#0F172A] border border-slate-800 rounded-xl p-3 min-h-[50px] flex flex-col justify-between mb-2">
+                  <div className="text-xs text-slate-300 select-text">
                     {speechInterim ? (
-                      <span className="text-[var(--text-muted)] italic animate-pulse">{speechInterim}</span>
+                      <span className="text-slate-400 italic animate-pulse">{speechInterim}</span>
                     ) : (
-                      <span className="text-[var(--text-muted)]/70 text-[11px]">Start speaking to dictate symptoms or clinical details...</span>
+                      <span className="text-slate-500 text-[11px]">Start speaking to dictate symptoms or clinical details...</span>
                     )}
                   </div>
                 </div>
 
                 {/* Hands-free Voice Commands Info Banner */}
-                <div className="flex items-start gap-1.5 bg-[var(--surface-dim)]/50 border border-[var(--border)]/50 rounded-xl p-2 text-[10px] text-[var(--text-muted)] leading-relaxed">
-                  <span className="font-bold text-[var(--primary)] text-xs">💡 Hands-Free Commands:</span>
+                <div className="flex items-start gap-1.5 bg-[#0F172A]/50 border border-slate-800/50 rounded-xl p-2.5 text-[10px] text-slate-400 leading-relaxed">
+                  <span className="font-bold text-blue-400 text-xs shrink-0">💡 Commands:</span>
                   <div className="grid grid-cols-2 gap-x-3 gap-y-1 w-full pl-1">
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--surface)] px-1 rounded font-mono">"period"</code> for .</div>
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--surface)] px-1 rounded font-mono">"comma"</code> for ,</div>
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--surface)] px-1 rounded font-mono">"new line"</code> for break</div>
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--surface)] px-1 rounded font-mono">"send message"</code> to send</div>
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--surface)] px-1 rounded font-mono">"clear all"</code> to reset</div>
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--surface)] px-1 rounded font-mono">"delete last"</code> to undo word</div>
+                    <div>Say <code className="font-bold text-slate-300 bg-[#0F172A] px-1 rounded font-mono">"period"</code> for .</div>
+                    <div>Say <code className="font-bold text-slate-300 bg-[#0F172A] px-1 rounded font-mono">"comma"</code> for ,</div>
+                    <div>Say <code className="font-bold text-slate-300 bg-[#0F172A] px-1 rounded font-mono">"new line"</code> for break</div>
+                    <div>Say <code className="font-bold text-slate-300 bg-[#0F172A] px-1 rounded font-mono">"send message"</code> to send</div>
+                    <div>Say <code className="font-bold text-slate-300 bg-[#0F172A] px-1 rounded font-mono">"clear all"</code> to reset</div>
+                    <div>Say <code className="font-bold text-slate-300 bg-[#0F172A] px-1 rounded font-mono">"delete last"</code> to undo word</div>
                   </div>
                 </div>
               </motion.div>
@@ -1297,15 +1447,15 @@ export default function ClinicalAssistantScreen() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
-                className="mb-3 flex items-center justify-between gap-3 bg-red-500/10 border border-red-500/25 rounded-xl p-3 text-xs text-red-700 font-semibold"
+                className="mb-3 flex items-center justify-between gap-3 bg-red-500/10 border border-red-500/25 rounded-xl p-3 text-xs text-red-400 font-semibold"
               >
                 <div className="flex items-center gap-2">
-                  <AlertCircle size={14} className="text-red-500 shrink-0" />
+                  <AlertCircle size={14} className="text-red-400 shrink-0" />
                   <span>{speechError}</span>
                 </div>
                 <button
                   onClick={() => setSpeechError(null)}
-                  className="p-1 hover:bg-red-500/20 rounded-lg text-red-500 transition-colors cursor-pointer"
+                  className="p-1 hover:bg-red-500/20 rounded-lg text-red-400 transition-colors cursor-pointer"
                 >
                   <X size={14} />
                 </button>
@@ -1314,7 +1464,7 @@ export default function ClinicalAssistantScreen() {
           </AnimatePresence>
 
           {/* Styled Floating Input Box */}
-          <div className="relative flex flex-col bg-[var(--surface-dim)]/55 border border-[var(--border)] focus-within:ring-2 focus-within:ring-[var(--primary)]/20 focus-within:border-[var(--primary)] focus-within:bg-[var(--surface)] rounded-2xl shadow-inner transition-all overflow-hidden p-1">
+          <div className="relative flex flex-col bg-[#0F172A] border border-slate-800 focus-within:ring-2 focus-within:ring-cyan-500/20 focus-within:border-cyan-500 focus-within:bg-[#0F172A]/90 rounded-2xl shadow-inner transition-all overflow-hidden p-1">
             <input 
               type="file" 
               ref={fileInputRef} 
@@ -1323,14 +1473,14 @@ export default function ClinicalAssistantScreen() {
               accept="image/*,application/pdf" 
             />
             {attachedFile && (
-              <div className="flex items-center justify-between mx-4 mt-2 p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-xs text-[var(--text)] font-semibold select-none">
+              <div className="flex items-center justify-between mx-4 mt-2 p-2 bg-[#1E293B] border border-slate-800 rounded-xl text-xs text-slate-300 font-semibold select-none">
                 <div className="flex items-center gap-2 truncate">
-                  <Paperclip size={14} className="text-[var(--primary)] shrink-0" />
+                  <Paperclip size={14} className="text-blue-400 shrink-0" />
                   <span className="truncate">{attachedFile.name}</span>
                 </div>
                 <button 
                   onClick={() => setAttachedFile(null)}
-                  className="p-1 hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--danger)] rounded-lg transition-colors cursor-pointer"
+                  className="p-1 hover:bg-slate-800 text-slate-400 hover:text-red-400 rounded-lg transition-colors cursor-pointer"
                 >
                   <X size={14} />
                 </button>
@@ -1342,50 +1492,50 @@ export default function ClinicalAssistantScreen() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Ask clinical queries, verify doses, or check guidelines..." 
-                className="w-full pl-4 pr-2 py-3 max-h-40 min-h-[44px] bg-transparent outline-none text-[var(--text)] text-sm resize-none placeholder-[var(--text-muted)] leading-relaxed self-center"
+                placeholder="Ask anything about diseases, drugs, laboratory results or patient management..." 
+                className="w-full pl-4 pr-2 py-3.5 max-h-40 min-h-[48px] bg-transparent outline-none text-slate-100 text-sm sm:text-base resize-none placeholder-slate-500 leading-relaxed self-center font-sans"
                 rows={1}
               />
               <div className="flex items-center gap-1.5 pb-2 shrink-0 self-end">
                 <button
                   type="button"
                   onClick={() => fileInputRef.current?.click()}
-                  className="p-2 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--surface-dim)] rounded-xl transition-all cursor-pointer select-none"
+                  className="p-2.5 text-slate-400 hover:text-blue-400 hover:bg-[#1E293B] rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center"
                   title="Upload PDF or Image"
                 >
-                  <Paperclip size={16} />
+                  <Paperclip size={18} />
                 </button>
                 <button
                   onClick={toggleListening}
-                  className={`p-2 rounded-xl transition-all cursor-pointer select-none ${
+                  className={`p-2.5 rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center ${
                     isListening
-                      ? 'bg-red-500/20 text-red-500 animate-pulse'
-                      : 'text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--surface-dim)]'
+                      ? 'bg-red-500/20 text-red-400 animate-pulse'
+                      : 'text-slate-400 hover:text-blue-400 hover:bg-[#1E293B]'
                   }`}
                   title={isListening ? "Stop listening" : "Start dictation"}
                 >
-                  {isListening ? <MicOff size={16} /> : <Mic size={16} />}
+                  {isListening ? <MicOff size={18} /> : <Mic size={18} />}
                 </button>
                 <button 
                   onClick={() => handleSend()}
                   disabled={(!input.trim() && !attachedFile) || isProcessing}
-                  className={`p-2 rounded-xl transition-all cursor-pointer select-none ${
+                  className={`p-2.5 rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center ${
                     (input.trim() || attachedFile) && !isProcessing
-                      ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm hover:opacity-95' 
-                      : 'bg-[var(--surface-dim)] text-[var(--text-muted)] cursor-not-allowed'
+                      ? 'bg-blue-600 text-slate-100 shadow-sm hover:bg-blue-500' 
+                      : 'bg-slate-800 text-slate-600 cursor-not-allowed'
                   }`}
                 >
-                  {isProcessing ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} />}
+                  {isProcessing ? <Loader2 size={18} className="animate-spin" /> : <Send size={18} />}
                 </button>
               </div>
             </div>
           </div>
           <div className="flex justify-between items-center mt-2 px-1 flex-wrap gap-2 shrink-0">
-            <p className="text-[10px] text-[var(--text-muted)]">Clinova uses an active Multi-RAG engine. Always check official sources.</p>
-            <div className="flex items-center gap-1.5 text-[10px] font-bold text-emerald-500 bg-emerald-500/5 px-2 py-0.5 rounded border border-emerald-500/10">
-              <span className="relative flex h-1 w-1">
+            <p className="text-[10px] text-slate-500">Clinova uses an active Multi-RAG engine. Always check official sources.</p>
+            <div className="flex items-center gap-1.5 text-[10px] font-bold text-emerald-400 bg-emerald-500/5 px-2.5 py-0.5 rounded border border-emerald-500/10">
+              <span className="relative flex h-1.5 w-1.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-1 w-1 bg-emerald-500"></span>
+                <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
               </span>
               <span>RAG Engine Verified</span>
             </div>

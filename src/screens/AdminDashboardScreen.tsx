@@ -36,7 +36,7 @@ import { handleFirestoreError, OperationType } from '../lib/firestore-diagnostic
 import { StorageService } from '../services/storage.service';
 import { useAuth } from '../contexts/AuthContext';
 import type { StoredFile, FileCategory } from '../types/engine';
-import { CURRICULUM_MODULES } from './KnowledgeBaseScreen';
+import { MODULES } from '../data/educationHubData';
 
 interface ClinicalCase {
   id: string;
@@ -1679,11 +1679,7 @@ export default function AdminDashboardScreen() {
                       id="form-res-topic"
                     />
                     <datalist id="topic-suggestions">
-                      {CURRICULUM_MODULES.map((mod) => (
-                        <option key={mod.title} value={mod.title}>
-                          {mod.title} ({mod.category})
-                        </option>
-                      ))}
+                      {MODULES.map((mod) => (<option key={mod.title} value={mod.title}>{mod.title}</option>))}
                     </datalist>
                   </div>
                   <div>

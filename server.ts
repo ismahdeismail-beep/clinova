@@ -15,6 +15,28 @@ const app = express();
 const PORT = 3000;
 const upload = multer({ storage: multer.memoryStorage() });
 
+function safeJsonParse(text: string | null | undefined, fallback: any = {}): any {
+  if (!text) return fallback;
+  try {
+    let cleaned = text.trim();
+    if (cleaned.startsWith('```')) {
+      cleaned = cleaned.replace(/^```(?:json)?\n?/i, '').replace(/\n?```$/, '').trim();
+    }
+    return JSON.parse(cleaned);
+  } catch (err) {
+    console.warn("[JSON Parse warning] Failed standard parse, trying regex extract:", err);
+    try {
+      const match = text.match(/(\{[\s\S]*\}|\[[\s\S]*\])/);
+      if (match) {
+        return JSON.parse(match[0]);
+      }
+    } catch (regexErr) {
+      console.error("[JSON Parse error] Regex extraction failed too:", regexErr);
+    }
+    return fallback;
+  }
+}
+
 app.use(express.json());
 
 // Proxy Cloudinary Upload
@@ -355,7 +377,7 @@ ANONYMITY MANDATE: You MUST strictly sanitize all patient names, relatives, and 
       }
     });
 
-    const parsed = JSON.parse(response.text || '{}');
+    const parsed = safeJsonParse(response.text, {});
     
     // Strict backend-side post-processing to enforce absolute anonymity of the patient name
     if (parsed.patientName) {
@@ -593,7 +615,7 @@ CRITICAL SAFETY & TRUTH CONSTRAINT: You must be extremely careful and NEVER assu
       },
     });
 
-    const result = JSON.parse(response.text || '{}');
+    const result = safeJsonParse(response.text, {});
     res.json(result);
   } catch (error: any) {
     console.error('Autofill generation error:', error);
@@ -1020,7 +1042,7 @@ Ensure your guidance is highly clinical, accurate, aligned with the Kenya Drug I
       }
     });
 
-    const result = JSON.parse(response.text || '{}');
+    const result = safeJsonParse(response.text, {});
     res.json(result);
   } catch (error: any) {
     console.error('Drug interaction check error:', error);
@@ -1082,7 +1104,7 @@ Ensure the output is highly educational, precise, and matches the clinical stand
       }
     });
 
-    const cases = JSON.parse(response.text || '[]');
+    const cases = safeJsonParse(response.text, []);
     res.json(cases);
   } catch (error: any) {
     console.error('Case extraction error:', error);
@@ -1254,7 +1276,7 @@ Ensure the content is medically accurate, authoritative, and strictly integrated
       }
     });
 
-    res.json(JSON.parse(response.text || '{}'));
+    res.json(safeJsonParse(response.text, {}));
   } catch (error: any) {
     console.error('Module content generation error:', error);
     res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable' : error.message) : 'AI module generation failed' });
@@ -1264,28 +1286,36 @@ Ensure the content is medically accurate, authoritative, and strictly integrated
 // Context-Aware Module AI Tutor
 app.post('/api/gemini/module-tutor', async (req, res) => {
   try {
-    const { moduleTitle, chatHistory, userMessage, academicLevel, customResources } = req.body;
+    const { discipline, moduleTitle, chatHistory, userMessage, academicLevel, customResources } = req.body;
 
     if (!moduleTitle || !userMessage) {
       return res.status(400).json({ error: 'Missing moduleTitle or userMessage' });
     }
 
     const level = academicLevel || 'Year 1: Basic Medical Sciences';
+    const disc = discipline || 'Clinical Pharmacy';
 
-    let systemInstruction = `You are Clinova AI Module Tutor, an expert Clinical Pharmacy Professor and OSCE Mentor.
-You are strictly context-locked to the selected module: "${moduleTitle}".
-Your objective is to answer questions, guide patient cases, teach clinical pearls, and review OSCE practice STRICTLY within the scope of "${moduleTitle}".
-Your student is at the "${level}" academic level, so calibrate your explanations, scientific complexity, and clinical expectations accordingly. (e.g., Year 1 students focus on anatomy, physiology, microbiology, and basic chemistry; keep therapeutic clinical management simple and foundational).
+    let systemInstruction = `You are Clinova AI Module Tutor, an expert Clinical Pharmacy Professor and OSCE Mentor for the Kabarak University B.Pharm Curriculum.
+When answering this question, follow this precise retrieval chain internally:
+1. Determine the discipline (${disc})
+2. Determine the unit (${moduleTitle})
+3. Search ONLY within that unit's indexed knowledge base (the custom resources provided below).
+4. Retrieve the most relevant chunks.
+5. Generate a precise, highly accurate answer.
+6. Show the references used at the bottom.
 
-If the user asks questions unrelated to clinical pharmacy, pharmacology, or specifically the therapeutics of "${moduleTitle}", gently pivot them back to the study material.
-Always reference reliable resources such as the Kenya Drug Index (KDI), Kenya National Guidelines, WHO Essential Medicines, and established pharmacotherapy standards. Keep answers highly interactive, clear, and clinical-grade.`;
+You are strictly context-locked to the selected unit: "${moduleTitle}" within the "${disc}" discipline.
+Your student is at the "${level}" academic level.
+
+If the user asks questions unrelated to ${moduleTitle}, gently pivot them back to the study material.
+Always reference reliable resources such as the Kenya Drug Index (KDI), Kenya National Guidelines, WHO Essential Medicines, and established pharmacotherapy standards.`;
 
     if (customResources && customResources.length > 0) {
       const formattedResources = customResources.map((r: any) => 
         `- SOURCE (${r.sourceName || 'General'}): ${r.notes}${r.url ? ` (Link: ${r.url})` : ''}`
       ).join('\n');
       
-      systemInstruction += `\n\nCRITICAL GROUNDING REFERENCE NOTES FROM INSTRUCTORS:\nUse the following supplemental notes and guidelines uploaded by clinical faculty/administrators to directly answer student questions. Treat this as the absolute truth for this module:\n${formattedResources}`;
+      systemInstruction += `\n\nCRITICAL GROUNDING REFERENCE NOTES FROM INSTRUCTORS (Unit Knowledge Base):\nUse the following supplemental notes and guidelines to directly answer student questions.\n${formattedResources}`;
     }
 
     const contents = [];
@@ -1376,7 +1406,110 @@ async function startServer() {
     });
   }
 
-  app.listen(PORT, '0.0.0.0', () => {
+  // Clinical Case AI Tutor
+app.post('/api/gemini/case-tutor', async (req, res) => {
+  try {
+    const { specialty, disease, caseTitle, caseData, chatHistory, userMessage } = req.body;
+
+    if (!caseTitle || !userMessage) {
+      return res.status(400).json({ error: 'Missing caseTitle or userMessage' });
+    }
+
+    const systemInstruction = `You are Clinova AI Clinical Tutor, an expert specialist physician and clinical pharmacist.
+You are discussing a clinical case with a pharmacy student.
+Case Specialty: ${specialty}
+Disease: ${disease}
+Case Title: ${caseTitle}
+
+Case Data:
+- Demographics: ${caseData?.demographics}
+- Chief Complaint: ${caseData?.chiefComplaint}
+- History of Present Illness: ${caseData?.hpi}
+- Past Medical History: ${caseData?.pmh}
+- Medications: ${caseData?.medHx}
+- Allergies: ${caseData?.allergies}
+- Physical Exam: ${caseData?.pe}
+- Vitals: ${caseData?.vitals}
+- Labs/Imaging: ${caseData?.labs} ${caseData?.imaging || ''}
+- Diagnosis: ${caseData?.diagnosis}
+- Plan: ${caseData?.carePlan}
+
+Your task is to guide the student's clinical reasoning.
+1. Answer their specific question based on evidence-based guidelines for ${disease}.
+2. Relate your answer back to the specific patient parameters in this case.
+3. Be concise and authoritative.
+4. If they ask for information not in the case, provide the standard guideline-based answer.`;
+
+    const chatSession = ai.chats.create({
+      model: 'gemini-2.5-flash',
+      config: {
+        systemInstruction: systemInstruction,
+        temperature: 0.2,
+      }
+    });
+
+    if (chatHistory && chatHistory.length > 0) {
+      for (const msg of chatHistory.slice(1)) {
+        if (msg.role === 'user') {
+          await chatSession.sendMessage({ message: msg.content });
+        }
+      }
+    }
+
+    const result = await chatSession.sendMessage({ message: userMessage });
+    res.json({ reply: result.text });
+  } catch (error) {
+    console.error('Case Tutor Error:', error);
+    res.status(500).json({ error: 'Failed to generate response' });
+  }
+});
+
+// Education Hub AI Tutor
+app.post('/api/gemini/hub-tutor', async (req, res) => {
+  try {
+    const { unitTitle, moduleTitle, chatHistory, userMessage } = req.body;
+
+    if (!unitTitle || !userMessage) {
+      return res.status(400).json({ error: 'Missing unitTitle or userMessage' });
+    }
+
+    const systemInstruction = `You are Clinova AI Study Assistant, an expert academic tutor for pharmacy and medical students.
+You are helping a student study for the unit: ${unitTitle} (Module: ${moduleTitle}).
+
+Your task:
+1. Answer their question accurately using evidence-based medical and pharmaceutical knowledge.
+2. Structure your response clearly using markdown.
+3. At the end of your response, include a section with:
+   - **Confidence Score**: (e.g. 95%)
+   - **Sources**: (list simulated sources like WHO guidelines, Katzung Pharmacology, etc. depending on context)
+   - **Suggested Flashcards**: 2-3 flashcard Q&A pairs related to the topic.
+4. Keep the tone academic, encouraging, and clear.`;
+
+    const chatSession = ai.chats.create({
+      model: 'gemini-2.5-flash',
+      config: {
+        systemInstruction: systemInstruction,
+        temperature: 0.3,
+      }
+    });
+
+    if (chatHistory && chatHistory.length > 0) {
+      for (const msg of chatHistory.slice(1)) {
+        if (msg.role === 'user') {
+          await chatSession.sendMessage({ message: msg.content });
+        }
+      }
+    }
+
+    const result = await chatSession.sendMessage({ message: userMessage });
+    res.json({ reply: result.text });
+  } catch (error) {
+    console.error('Hub Tutor Error:', error);
+    res.status(500).json({ error: 'Failed to generate response' });
+  }
+});
+
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Clinova core backend running on port ${PORT}`);  });
 }
 

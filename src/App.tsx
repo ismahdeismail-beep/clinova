@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate, Navigate } from 'react-router-dom';
 import { 
   Home, Users, FolderOpen, ClipboardList, Pill, Bot, 
-  BookOpen, BarChart3, Bell, Settings, Menu, Search, MessageSquare, ShieldCheck,
+  BookOpen, BarChart3, Bell, Settings, Menu, Search, MessageSquare, ShieldCheck, Database,
   X, LogOut
 } from 'lucide-react';
 
@@ -12,7 +12,8 @@ const ClinicalCasesScreen = React.lazy(() => import('./screens/ClinicalCasesScre
 const PharmacotherapyReviewScreen = React.lazy(() => import('./screens/PharmacotherapyReviewScreen'));
 const DrugIndexScreen = React.lazy(() => import('./screens/DrugIndexScreen'));
 const ClinicalAssistantScreen = React.lazy(() => import('./screens/ClinicalAssistantScreen'));
-const KnowledgeBaseScreen = React.lazy(() => import('./screens/KnowledgeBaseScreen'));
+const EducationHubScreen = React.lazy(() => import('./screens/EducationHubScreen'));
+const KnowledgeBaseManagerScreen = React.lazy(() => import('./screens/KnowledgeBaseManagerScreen'));
 const NotificationsScreen = React.lazy(() => import('./screens/NotificationsScreen'));
 const SettingsScreen = React.lazy(() => import('./screens/SettingsScreen'));
 const AdminDashboardScreen = React.lazy(() => import('./screens/AdminDashboardScreen'));
@@ -110,13 +111,15 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
 
   const links = [
     { to: '/', label: 'Dashboard', icon: Home },
-    { to: '/patients', label: 'Patients', icon: Users },
     { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
     { to: '/review', label: 'Pharmacotherapy Review', icon: ClipboardList },
     { to: '/drugs', label: 'Drug Index', icon: Pill },
     { to: '/assistant', label: 'Clinical Assistant', icon: Bot },
     { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
-    ...(userData?.role === 'admin' ? [{ to: '/admin', label: 'Admin Console', icon: ShieldCheck }] : []),
+    ...(userData?.role === 'admin' ? [
+      { to: '/admin', label: 'Admin Console', icon: ShieldCheck },
+      { to: '/admin/kbms', label: 'KB Engine', icon: Database }
+    ] : []),
     { to: '/notifications', label: 'Notifications', icon: Bell },
     { to: '/settings', label: 'Settings', icon: Settings },
   ];
@@ -290,7 +293,7 @@ function AppContent() {
               <Route path="/review" element={<PharmacotherapyReviewScreen />} />
               <Route path="/drugs" element={<DrugIndexScreen />} />
               <Route path="/assistant" element={<ClinicalAssistantScreen />} />
-              <Route path="/knowledge" element={<KnowledgeBaseScreen />} />
+              <Route path="/knowledge" element={<EducationHubScreen />} />
               <Route path="/admin" element={
                 <ProtectedRoute requiredRole="admin">
                   <AdminDashboardScreen />

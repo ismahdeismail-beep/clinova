@@ -17,6 +17,135 @@ const KNOWN_INTERACTIONS: Record<string, string[]> = {
   'ceftriaxone': ['calcium'],
 };
 
+const SAMPLE_PATIENT_DATA = {
+  patientName: "J. K. C.",
+  age: 64,
+  sex: "male",
+  weight: "74",
+  height: "168",
+  ipNumber: "IP-998342",
+  ward: "Medical Ward A",
+  bed: "Bed 12",
+  residence: "Nakuru, Kenya",
+  dateOfAdmission: "2026-07-01",
+  dateOfHistoryTaking: "2026-07-02",
+  chiefComplaint: "3-day history of high-grade fever, chills, and productive cough with rust-colored sputum.",
+  hpi: "64-year-old male presenting with acute onset of severe chills, followed by fever, pleuritic chest pain on the right side, and shortness of breath. Sputum is thick and rust-colored. Self-medicated with over-the-counter paracetamol with minimal relief.",
+  pastMedicalHistory: "Type 2 Diabetes Mellitus (diagnosed 8 years ago), Hypertension (diagnosed 12 years ago), Chronic Kidney Disease Stage 3a.",
+  currentMedications: "Metformin 1000mg BD, Enalapril 10mg BD, Atorvastatin 20mg OD.",
+  allergies: "Sulfa drugs (causes severe maculopapular rash)",
+  familyHistory: "Father died of stroke at age 68. Mother has Type 2 Diabetes.",
+  socialHistory: "Retired primary school teacher. Non-smoker, occasional social drinker. Lives with spouse.",
+  systems: {
+    "General Health": "Ill-looking, febrile (38.9°C), mild distress",
+    "CNS": "Alert, cooperative, oriented to person, place, and time. No focal neurological deficits.",
+    "CVS": "S1 S2 heard, tachycardia (HR 104 bpm), BP 142/88 mmHg. No murmurs.",
+    "Respiratory System": "Tachypnea (RR 24 breaths/min), decreased chest expansion on the right side. Dull percussion note, bronchial breath sounds, and fine crackles over the right middle and lower lung zones. SpO2 91% on room air.",
+    "Gastrointestinal System": "Abdomen soft, non-tender, bowel sounds active. No organomegaly.",
+    "Genitourinary System": "Urination normal, no dysuria or hematuria. Normal bladder control.",
+    "Musculoskeletal System": "Mild general body weakness, joint pain secondary to fever. No joint swelling.",
+    "Skin & Integumentary System": "Warm, dry, no active rashes or cyanosis. Skin turgor normal."
+  },
+  vitals_labs: {
+    "hr": "104",
+    "bp": "142/88",
+    "temp": "38.9",
+    "po2": "91",
+    "rr": "24",
+    "bmi": "26.2",
+    "na": "136",
+    "k": "4.8",
+    "cl": "101",
+    "urea": "11.2",
+    "creat": "145",
+    "crcl": "42",
+    "ast": "28",
+    "alt": "24",
+    "alp": "75",
+    "t_bili": "12",
+    "d_bili": "4",
+    "albumin": "38",
+    "wbc": "16.4",
+    "neut": "82",
+    "lymph": "12",
+    "hb": "11.8",
+    "plts": "280",
+    "cxr": "Right lower lobe consolidation consistent with lobar pneumonia",
+    "ecg": "Sinus tachycardia, no ischemic changes",
+    "urinalysis": "Protein 1+, Glucose 1+, Leucocytes negative, Nitrites negative"
+  },
+  diagnosis: "1. Community-Acquired Pneumonia (CAP) - Severe\n2. Type 2 Diabetes Mellitus - Poorly controlled (HbA1c 8.2%)\n3. Hypertension\n4. Stage 3a Chronic Kidney Disease (CKD)",
+  pharmacological_treatments: [
+    {
+      "drug": "Ceftriaxone",
+      "form": "IV Injection",
+      "dose": "2g",
+      "frequency": "OD",
+      "start_date": "2026-07-01",
+      "duration": "7 days"
+    },
+    {
+      "drug": "Azithromycin",
+      "form": "Tablet",
+      "dose": "500mg",
+      "frequency": "OD",
+      "start_date": "2026-07-01",
+      "duration": "5 days"
+    },
+    {
+      "drug": "Insulin Soluble (Actrapid)",
+      "form": "SC Injection",
+      "dose": "Sliding scale",
+      "frequency": "TDS (pre-meals)",
+      "start_date": "2026-07-01",
+      "duration": "During acute illness"
+    },
+    {
+      "drug": "Enalapril",
+      "form": "Tablet",
+      "dose": "5mg",
+      "frequency": "BD",
+      "start_date": "2026-07-01",
+      "duration": "Ongoing"
+    },
+    {
+      "drug": "Paracetamol",
+      "form": "Tablet",
+      "dose": "1g",
+      "frequency": "PRN (max QDS)",
+      "start_date": "2026-07-01",
+      "duration": "As needed for fever"
+    }
+  ],
+  non_pharmacological_management: "Humidified oxygen therapy at 3L/min via nasal prongs to maintain SpO2 > 94%. Strict fluid intake/output monitoring. Chest physiotherapy.",
+  "care_plans": [
+    {
+      "condition": "Community-Acquired Pneumonia",
+      "problem": "Severe bacterial lung infection requiring double antibiotic therapy.",
+      "goal": "Eradicate infection, resolve respiratory symptoms, normalize temperature and WBC.",
+      "intervention": "Administer Ceftriaxone 2g IV OD and Azithromycin 500mg PO OD. Monitor respiratory rate, chest signs, and SpO2.",
+      "follow_up": "Check vitals every 4 hours; repeat WBC in 48 hours."
+    },
+    {
+      "condition": "Diabetes Mellitus & Acute Illness",
+      "problem": "Poor glycemic control exacerbated by acute infection; Metformin contraindicated in severe acute renal impairment (CrCl 42 ml/min) and hypoxemic conditions.",
+      "goal": "Maintain blood glucose levels between 6.0 - 10.0 mmol/L; avoid hypoglycemia and lactic acidosis risk.",
+      "intervention": "Temporarily hold Metformin. Initiate soluble insulin sliding scale. Monitor finger-prick blood glucose pre-meals and at bedtime.",
+      "follow_up": "Check capillary blood glucose (CBG) QID."
+    },
+    {
+      "condition": "Hypertension & Stage 3a CKD",
+      "problem": "Enalapril dose adjustment: ACE inhibitors can cause acute-on-chronic kidney injury during acute infection/dehydration. BP is elevated (142/88).",
+      "goal": "Optimize BP control (target < 130/80 mmHg in CKD) while preventing acute renal deterioration.",
+      "intervention": "Continue Enalapril at reduced dose (5mg BD instead of 10mg BD) with close renal function monitoring. Ensure adequate hydration.",
+      "follow_up": "Repeat serum creatinine and potassium in 48 hours."
+    }
+  ],
+  care_plan_non_pharma: "Promote airway clearance through deep breathing exercises and productive coughing techniques. Bed rest with head-of-bed elevated to 30-45 degrees.",
+  care_plan_monitoring: "Check serum creatinine, potassium, and blood glucose daily. Monitor SpO2 and lung auscultation findings twice daily.",
+  counselling_points: "1. Explain the diagnosis of severe pneumonia and why insulin is temporarily replacing metformin during the hospital stay.\n2. Advise on the importance of completing the full course of antibiotics.\n3. Instruct the patient to report any chest pain, increasing shortness of breath, or cold sweats/tremors (hypoglycemia symptoms) immediately.\n4. Educate on avoiding over-the-counter NSAIDs (like ibuprofen) due to kidney stage."
+};
+
 const INTERACTION_MESSAGES: Record<string, string> = {
   'warfarin-amiodarone': 'High Risk: Amiodarone increases Warfarin toxicity and bleeding risk.',
   'warfarin-aspirin': 'High Risk: Increased risk of bleeding when Warfarin is used with Aspirin.',
@@ -193,6 +322,7 @@ export default function PharmacotherapyReviewScreen() {
 
       // Save back to localStorage
       localStorage.setItem('clinova_pharma_review_form', JSON.stringify(parsed));
+      window.dispatchEvent(new Event('clinova-storage-synced'));
 
       // Force values into currently mounted DOM fields of active tab
       if (formRef.current) {
@@ -1018,6 +1148,24 @@ export default function PharmacotherapyReviewScreen() {
                       </span>
                     </label>
                   )}
+                </div>
+                
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mt-1.5 mb-6 p-3.5 bg-[var(--primary)]/5 border border-[var(--primary)]/10 rounded-xl">
+                  <div className="flex items-center gap-2">
+                    <Sparkles size={16} className="text-[var(--primary)] animate-pulse" />
+                    <span className="text-xs font-medium text-[var(--text)]">
+                      Want to test the full-featured auto-fill instantly?
+                    </span>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      updateFormFromExtraction(SAMPLE_PATIENT_DATA);
+                    }}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-[var(--primary)] text-white hover:bg-[var(--primary)]/90 transition-all rounded-lg shadow-sm cursor-pointer"
+                  >
+                    Load High-Fidelity Demo Patient Case
+                  </button>
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

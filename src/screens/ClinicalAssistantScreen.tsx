@@ -12,6 +12,7 @@ import { jsPDF } from 'jspdf';
 import { ChatSessionList } from '../components/ChatSessionList';
 import { saveChatSession, ChatSession } from '../lib/localDb';
 import { StorageService } from '../services/storage.service';
+import { ClinicalDataAttribution } from '../components/ClinicalDataAttribution';
 
 interface Citation {
   source: string;
@@ -1414,6 +1415,8 @@ export default function ClinicalAssistantScreen() {
               </div>
             </div>
           )}
+          
+          <ClinicalDataAttribution />
         </div>
 
         {/* Floating Scroll Bottom Button */}

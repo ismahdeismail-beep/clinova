@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { 
   Pill, Search, Loader2, ArrowRight, BookOpen,
   Sparkles, AlertTriangle, CheckCircle2, RefreshCw, User, Plus, Trash2, Info, HeartPulse, Activity, Check, ShieldAlert,
-  Upload, FileUp, FileText, Download
+  Upload, FileUp, FileText, Download, Bookmark
 } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { db } from '../lib/firebase';
 import { collection, getDocs } from 'firebase/firestore';
 import { Patient } from '../components/PatientQuickSummary';
 import { getMonographCached, pinMonograph } from '../lib/getMonograph';
+import { ClinicalDataAttribution } from '../components/ClinicalDataAttribution';
 
 interface QuickDrug {
   name: string;
@@ -73,6 +74,7 @@ export default function DrugIndexScreen() {
 
   // Tab 1: Monograph Search State
   const [searchQuery, setSearchQuery] = useState('');
+  const [savedDrugs, setSavedDrugs] = useState<string[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -194,6 +196,26 @@ export default function DrugIndexScreen() {
   }, []);
 
   // Fetch drug monographs helper
+  useEffect(() => {
+    const saved = localStorage.getItem('savedDrugs');
+    if (saved) {
+      try {
+        setSavedDrugs(JSON.parse(saved));
+      } catch (e) {}
+    }
+  }, []);
+
+  const saveDrugSearch = (drug: string) => {
+    const clean = drug.trim();
+    if (!clean) return;
+    setSavedDrugs(prev => {
+      let next = [clean, ...prev.filter(d => d.toLowerCase() !== clean.toLowerCase())];
+      if (next.length > 10) next = next.slice(0, 10);
+      localStorage.setItem('savedDrugs', JSON.stringify(next));
+      return next;
+    });
+  };
+
   const fetchDrugProfile = async (query: string, categoryName?: string) => {
     setIsLoading(true);
     setError(null);
@@ -202,6 +224,10 @@ export default function DrugIndexScreen() {
       const entry = await getMonographCached(query, categoryName);
       setMonograph(entry.content);
       setMonographKey(entry.key);
+      
+      if (query) {
+        saveDrugSearch(query);
+      }
     } catch (err: any) {
       console.error(err);
       setError(err.message || 'An error occurred while fetching the drug profile.');
@@ -345,6 +371,26 @@ export default function DrugIndexScreen() {
               </button>
             ))}
           </div>
+
+          {/* Saved Offline Searches */}
+          {savedDrugs.length > 0 && (
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider flex items-center gap-1">
+                <Bookmark size={12} /> Saved (Offline):
+              </span>
+              {savedDrugs.map((drug) => (
+                <button
+                  key={drug}
+                  onClick={() => handleQuickDrugClick(drug)}
+                  className="px-3 py-1.5 rounded-lg text-xs font-medium bg-[var(--surface-dim)] border border-[var(--border)] hover:border-[var(--primary)] text-[var(--text)] hover:text-[var(--primary)] transition-all flex items-center gap-1 cursor-pointer shadow-sm"
+                  title="Available Offline"
+                >
+                  <Pill size={12} className="text-[var(--primary)]" />
+                  {drug}
+                </button>
+              ))}
+            </div>
+          )}
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {/* Left sidebar: categories */}
@@ -1106,6 +1152,7 @@ export default function DrugIndexScreen() {
 
         </div>
       )}
+      <ClinicalDataAttribution />
     </div>
   );
 }

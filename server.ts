@@ -5,7 +5,18 @@ import dotenv from 'dotenv';
 import crypto from 'crypto';
 
 import multer from 'multer';
-import { generateContentWithFallback, getProviderStatusList, getGlobalProviderOverride, setGlobalProviderOverride, providerStatuses } from './src/server/aiRouter.js';
+import { 
+  generateContentWithFallback, 
+  getProviderStatusList, 
+  getGlobalProviderOverride, 
+  setGlobalProviderOverride, 
+  providerStatuses,
+  gatewayLogs,
+  loadBalancingMode,
+  setLoadBalancingMode,
+  updateProviderConfig
+} from './src/server/aiRouter.js';
+import { getPrompts, updatePrompt, resetPrompts } from './src/server/promptRegistry.js';
 import { fetchOpenFdaLabel, resolveRxCui, fetchRxNormInteractions } from './src/server/externalMedicinesApi.js';
 
 // Load environment variables
@@ -1520,29 +1531,27 @@ if (process.env.VERCEL !== '1') {
 
 export default app;
 
-// AI Provider Admin Endpoint
+// GET AI Providers Status and configurations
 app.get('/api/admin/providers', (req, res) => {
-  res.json(getProviderStatusList());
-});
-
-// GET Admin Router Configuration
-app.get('/api/admin/config', (req, res) => {
   res.json({
+    providers: getProviderStatusList(),
+    loadBalancingMode: loadBalancingMode,
     globalProviderOverride: getGlobalProviderOverride()
   });
 });
 
-// POST Admin Router Configuration
-app.post('/api/admin/config', (req, res) => {
-  const { globalProviderOverride } = req.body;
-  setGlobalProviderOverride(globalProviderOverride === undefined ? null : globalProviderOverride);
-  res.json({
-    success: true,
-    globalProviderOverride: getGlobalProviderOverride()
-  });
+// POST Update a specific provider's metadata/status
+app.post('/api/admin/providers/update', (req, res) => {
+  const { providerName, priority, weight, status, apiKeyMasked } = req.body;
+  if (!providerName || !providerStatuses[providerName]) {
+    return res.status(400).json({ error: 'Invalid provider name' });
+  }
+  
+  updateProviderConfig(providerName, { priority, weight, status, apiKeyMasked });
+  res.json({ success: true, provider: providerStatuses[providerName] });
 });
 
-// POST Toggle Provider Health (Simulate Outages)
+// POST Toggle Provider Health (Outage Simulation)
 app.post('/api/admin/providers/toggle-healthy', (req, res) => {
   const { providerName } = req.body;
   if (!providerName || !providerStatuses[providerName]) {
@@ -1552,11 +1561,10 @@ app.post('/api/admin/providers/toggle-healthy', (req, res) => {
   const provider = providerStatuses[providerName];
   provider.isHealthy = !provider.isHealthy;
   
-  // If we marked it unhealthy, set its error count/rate
   if (!provider.isHealthy) {
     provider.errorRate = 100;
   } else {
-    provider.errorRate = (provider.errorCount / Math.max(1, provider.requestCount)) * 100;
+    provider.errorRate = Math.round((provider.errorCount / Math.max(1, provider.requestCount)) * 100);
   }
   
   res.json({
@@ -1565,6 +1573,82 @@ app.post('/api/admin/providers/toggle-healthy', (req, res) => {
     isHealthy: provider.isHealthy,
     errorRate: provider.errorRate
   });
+});
+
+// GET Global Router Configuration
+app.get('/api/admin/config', (req, res) => {
+  res.json({
+    globalProviderOverride: getGlobalProviderOverride(),
+    loadBalancingMode: loadBalancingMode
+  });
+});
+
+// POST Global Router Configuration
+app.post('/api/admin/config', (req, res) => {
+  const { globalProviderOverride, loadBalancingMode: newMode } = req.body;
+  
+  if (globalProviderOverride !== undefined) {
+    setGlobalProviderOverride(globalProviderOverride);
+  }
+  if (newMode !== undefined) {
+    setLoadBalancingMode(newMode);
+  }
+  
+  res.json({
+    success: true,
+    globalProviderOverride: getGlobalProviderOverride(),
+    loadBalancingMode: loadBalancingMode
+  });
+});
+
+// GET Gateway logs
+app.get('/api/admin/ai/logs', (req, res) => {
+  res.json(gatewayLogs);
+});
+
+// GET Current prompt templates
+app.get('/api/admin/ai/prompts', (req, res) => {
+  res.json(getPrompts());
+});
+
+// POST Update a prompt template
+app.post('/api/admin/ai/prompts/update', (req, res) => {
+  const { id, template } = req.body;
+  if (!id || template === undefined) {
+    return res.status(400).json({ error: 'Missing id or template' });
+  }
+  
+  const updated = updatePrompt(id, template);
+  res.json({ success: updated });
+});
+
+// POST Reset prompt templates
+app.post('/api/admin/ai/prompts/reset', (req, res) => {
+  resetPrompts();
+  res.json({ success: true, prompts: getPrompts() });
+});
+
+// POST Live Test Endpoint through the AI Gateway
+app.post('/api/admin/ai/gateway/test', async (req, res) => {
+  const { prompt, provider, feature } = req.body;
+  if (!prompt) {
+    return res.status(400).json({ error: 'Prompt is required' });
+  }
+
+  try {
+    const response = await generateContentWithFallback(
+      { contents: prompt },
+      provider || undefined,
+      feature || 'Admin Live Test'
+    );
+    res.json({
+      success: true,
+      text: response.text,
+      logs: gatewayLogs.slice(0, 5) // Return recent logs to show fallback details
+    });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Execution failed' });
+  }
 });
 
 

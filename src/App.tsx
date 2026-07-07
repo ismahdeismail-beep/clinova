@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate, Navigate 
 import { 
   Home, Users, FolderOpen, ClipboardList, Pill, Bot, 
   BookOpen, BarChart3, Bell, Settings, Menu, Search, MessageSquare, ShieldCheck, Database,
-  X, LogOut
+  X, LogOut, Cpu
 } from 'lucide-react';
 
 const DashboardScreen = React.lazy(() => import('./screens/DashboardScreen'));
@@ -14,6 +14,7 @@ const DrugIndexScreen = React.lazy(() => import('./screens/DrugIndexScreen'));
 const ClinicalAssistantScreen = React.lazy(() => import('./screens/ClinicalAssistantScreen'));
 const EducationHubScreen = React.lazy(() => import('./screens/EducationHubScreen'));
 const KnowledgeBaseManagerScreen = React.lazy(() => import('./screens/KnowledgeBaseManagerScreen'));
+const AiOrchestrationScreen = React.lazy(() => import('./screens/AiOrchestrationScreen'));
 const NotificationsScreen = React.lazy(() => import('./screens/NotificationsScreen'));
 const SettingsScreen = React.lazy(() => import('./screens/SettingsScreen'));
 const AdminDashboardScreen = React.lazy(() => import('./screens/AdminDashboardScreen'));
@@ -118,7 +119,8 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
     { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
     ...(userData?.role === 'admin' ? [
       { to: '/admin', label: 'Admin Console', icon: ShieldCheck },
-      { to: '/admin/kbms', label: 'KB Engine', icon: Database }
+      { to: '/admin/kbms', label: 'KB Engine', icon: Database },
+      { to: '/admin/ai', label: 'AI Gateway', icon: Cpu }
     ] : []),
     { to: '/notifications', label: 'Notifications', icon: Bell },
     { to: '/settings', label: 'Settings', icon: Settings },
@@ -297,6 +299,16 @@ function AppContent() {
               <Route path="/admin" element={
                 <ProtectedRoute requiredRole="admin">
                   <AdminDashboardScreen />
+                </ProtectedRoute>
+              } />
+              <Route path="/admin/kbms" element={
+                <ProtectedRoute requiredRole="admin">
+                  <KnowledgeBaseManagerScreen />
+                </ProtectedRoute>
+              } />
+              <Route path="/admin/ai" element={
+                <ProtectedRoute requiredRole="admin">
+                  <AiOrchestrationScreen />
                 </ProtectedRoute>
               } />
               <Route path="/notifications" element={<NotificationsScreen />} />

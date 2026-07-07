@@ -129,14 +129,12 @@ export const StorageService = {
               let cloudinaryUrl: string | undefined = undefined;
               let cloudinaryPublicId: string | undefined = undefined;
 
-              if (file.type.startsWith('image/')) {
-                try {
-                  const cloudDetails = await MediaService.uploadImageDetails(file, onRetry);
-                  cloudinaryUrl = cloudDetails.secure_url;
-                  cloudinaryPublicId = cloudDetails.public_id;
-                } catch (cloudinaryErr) {
-                  console.warn('Cloudinary upload failed, but Firebase upload succeeded:', cloudinaryErr);
-                }
+              try {
+                const cloudDetails = await MediaService.uploadImageDetails(file, onRetry);
+                cloudinaryUrl = cloudDetails.secure_url;
+                cloudinaryPublicId = cloudDetails.public_id;
+              } catch (cloudinaryErr) {
+                console.warn('Cloudinary upload failed, but Firebase upload succeeded:', cloudinaryErr);
               }
 
               const storedFile: StoredFile = {

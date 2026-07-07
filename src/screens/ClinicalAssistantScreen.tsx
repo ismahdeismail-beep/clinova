@@ -12,6 +12,7 @@ import ReactMarkdown from 'react-markdown';
 import { jsPDF } from 'jspdf';
 import { ChatSessionList } from '../components/ChatSessionList';
 import { saveChatSession, ChatSession } from '../lib/localDb';
+import { StorageService } from '../services/storage.service';
 
 interface Citation {
   source: string;
@@ -283,32 +284,121 @@ export default function ClinicalAssistantScreen() {
     setIsSidebarOpen(false);
   };
   
-  const fileInputRef = useRef<HTMLInputElement>(null);
-  const [attachedFile, setAttachedFile] = useState<{
-    data: string;
-    mimeType: string;
+  interface AttachedFile {
+    id: string;
     name: string;
-  } | null>(null);
+    size: number;
+    mimeType: string;
+    data: string; // base64
+    status: 'uploading' | 'extracted' | 'failed';
+    progress: number;
+    error?: string;
+    cloudinaryUrl?: string;
+    extractedContent?: {
+      patientName?: string;
+      age?: string;
+      sex?: string;
+      summary?: string;
+      diagnoses?: string[];
+      medications?: { name: string; dose?: string; frequency?: string }[];
+      carePlan?: string;
+    };
+  }
+
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const [attachedFiles, setAttachedFiles] = useState<AttachedFile[]>([]);
+
+  const triggerFileProcess = async (fileId: string, file: File) => {
+    try {
+      // 1. Convert to base64 for backup / local reference
+      const reader = new FileReader();
+      const base64Promise = new Promise<string>((resolve) => {
+        reader.onload = () => {
+          const base64 = (reader.result as string).split(',')[1];
+          resolve(base64);
+        };
+        reader.readAsDataURL(file);
+      });
+      const base64Data = await base64Promise;
+
+      setAttachedFiles(prev => prev.map(f => f.id === fileId ? { ...f, data: base64Data, progress: 30 } : f));
+
+      // 2. Upload file directly to storage (this automatically triggers direct Cloudinary upload for all files!)
+      let cloudinaryUrl = '';
+      try {
+        const uploadResult = await StorageService.uploadFile(file, {
+          category: 'general',
+          accessScope: 'public'
+        });
+        cloudinaryUrl = uploadResult.url || '';
+        setAttachedFiles(prev => prev.map(f => f.id === fileId ? { ...f, cloudinaryUrl, progress: 60 } : f));
+      } catch (uploadErr) {
+        console.warn('Storage upload failed, fallback to direct extraction:', uploadErr);
+      }
+
+      // 3. Trigger clinical notes extraction
+      const formData = new FormData();
+      formData.append('files', file);
+      formData.append('extractionType', 'clinical_notes');
+
+      const res = await fetch('/api/gemini/extract-file', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!res.ok) {
+        const errData = await res.json().catch(() => ({}));
+        throw new Error(errData.error || 'Failed to extract clinical notes.');
+      }
+
+      const extractedData = await res.json();
+
+      setAttachedFiles(prev => prev.map(f => f.id === fileId ? {
+        ...f,
+        status: 'extracted',
+        progress: 100,
+        extractedContent: extractedData
+      } : f));
+
+    } catch (err: any) {
+      console.error(`Error processing file ${file.name}:`, err);
+      setAttachedFiles(prev => prev.map(f => f.id === fileId ? {
+        ...f,
+        status: 'failed',
+        progress: 100,
+        error: err.message || 'Notes extraction failed'
+      } : f));
+    }
+  };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
+    const files = e.target.files;
+    if (!files || files.length === 0) return;
 
-    if (file.size > 10 * 1024 * 1024) {
-      alert("File size exceeds 10MB limit.");
-      return;
+    const newAttachedFiles: AttachedFile[] = [];
+
+    for (const file of Array.from(files)) {
+      if (file.size > 15 * 1024 * 1024) {
+        alert(`File "${file.name}" exceeds 15MB limit.`);
+        continue;
+      }
+
+      const fileId = Math.random().toString(36).substring(7);
+      const newFile: AttachedFile = {
+        id: fileId,
+        name: file.name,
+        size: file.size,
+        mimeType: file.type,
+        data: '',
+        status: 'uploading',
+        progress: 10
+      };
+
+      newAttachedFiles.push(newFile);
+      triggerFileProcess(fileId, file);
     }
 
-    const reader = new FileReader();
-    reader.onload = () => {
-      const base64String = (reader.result as string).split(',')[1];
-      setAttachedFile({
-        data: base64String,
-        mimeType: file.type,
-        name: file.name
-      });
-    };
-    reader.readAsDataURL(file);
+    setAttachedFiles(prev => [...prev, ...newAttachedFiles]);
     e.target.value = '';
   };
 
@@ -783,20 +873,28 @@ export default function ClinicalAssistantScreen() {
 
   const handleSend = async (textOverride?: string) => {
     const textToSend = textOverride !== undefined ? textOverride : input;
-    if ((!textToSend.trim() && !attachedFile) || isProcessing) return;
+    const hasFiles = attachedFiles.length > 0;
+    if ((!textToSend.trim() && !hasFiles) || isProcessing) return;
 
-    const userQuery = textToSend.trim() || `Analyze the attached file: ${attachedFile?.name}`;
+    const userQuery = textToSend.trim() || `Analyze the attached clinical files: ${attachedFiles.map(f => f.name).join(', ')}`;
     setInput('');
     setIsProcessing(true);
 
     const userMsgId = Date.now().toString();
     const thinkingMsgId = 'think-' + Date.now();
-    const currentAttachment = attachedFile;
-    setAttachedFile(null);
+    
+    // Copy active attachments and reset state
+    const currentAttachments = [...attachedFiles];
+    setAttachedFiles([]);
 
     setMessages(prev => [
       ...prev, 
-      { id: userMsgId, role: 'user', content: userQuery, fileName: currentAttachment?.name },
+      { 
+        id: userMsgId, 
+        role: 'user', 
+        content: userQuery, 
+        fileName: currentAttachments.length > 0 ? currentAttachments.map(f => f.name).join(', ') : undefined 
+      },
       { id: thinkingMsgId, role: 'assistant', content: 'Analyzing clinical query & retrieving evidence from knowledge bases...', isThinking: true }
     ]);
 
@@ -817,6 +915,15 @@ export default function ClinicalAssistantScreen() {
       const savedData = localStorage.getItem('clinova_pharma_review_form');
       const parsed = savedData ? JSON.parse(savedData) : {};
 
+      // Structure extracted notes from files for direct assistant use
+      const fileExtractions = currentAttachments
+        .filter(f => f.status === 'extracted' && f.extractedContent)
+        .map(f => ({
+          fileName: f.name,
+          cloudinaryUrl: f.cloudinaryUrl,
+          extractedContent: f.extractedContent
+        }));
+
       const maxAttempts = 3;
       let success = false;
       let lastError: any = null;
@@ -833,6 +940,8 @@ export default function ClinicalAssistantScreen() {
             await new Promise(resolve => setTimeout(resolve, 1500 * (attempt - 1)));
           }
 
+          const primaryFile = currentAttachments[0];
+
           const res = await fetch('/api/gemini/assistant', {
             method: 'POST',
             headers: {
@@ -844,10 +953,13 @@ export default function ClinicalAssistantScreen() {
                 role: m.role,
                 content: m.content
               })),
-              currentFormState: parsed,
-              fileData: currentAttachment?.data,
-              fileType: currentAttachment?.mimeType,
-              fileName: currentAttachment?.name
+              currentFormState: {
+                ...parsed,
+                extractedNotesFromAttachments: fileExtractions
+              },
+              fileData: primaryFile?.data,
+              fileType: primaryFile?.mimeType,
+              fileName: primaryFile?.name
             }),
           });
 
@@ -1471,19 +1583,89 @@ export default function ClinicalAssistantScreen() {
               onChange={handleFileChange} 
               className="hidden" 
               accept="image/*,application/pdf" 
+              multiple
             />
-            {attachedFile && (
-              <div className="flex items-center justify-between mx-4 mt-2 p-2 bg-[#1E293B] border border-slate-800 rounded-xl text-xs text-slate-300 font-semibold select-none">
-                <div className="flex items-center gap-2 truncate">
-                  <Paperclip size={14} className="text-blue-400 shrink-0" />
-                  <span className="truncate">{attachedFile.name}</span>
-                </div>
-                <button 
-                  onClick={() => setAttachedFile(null)}
-                  className="p-1 hover:bg-slate-800 text-slate-400 hover:text-red-400 rounded-lg transition-colors cursor-pointer"
-                >
-                  <X size={14} />
-                </button>
+            {attachedFiles.length > 0 && (
+              <div className="flex flex-col gap-2 mx-4 mt-3 max-h-48 overflow-y-auto pr-1">
+                {attachedFiles.map((file) => (
+                  <div 
+                    key={file.id} 
+                    className="flex flex-col gap-1.5 p-3 bg-slate-900/90 border border-slate-800 rounded-xl text-xs text-slate-300 shadow-sm transition-all"
+                  >
+                    <div className="flex items-center justify-between gap-3 select-none">
+                      <div className="flex items-center gap-2 truncate min-w-0">
+                        {file.status === 'uploading' ? (
+                          <Loader2 size={13} className="text-cyan-400 animate-spin shrink-0" />
+                        ) : file.status === 'extracted' ? (
+                          <CheckCircle2 size={13} className="text-emerald-400 shrink-0" />
+                        ) : (
+                          <AlertCircle size={13} className="text-rose-400 shrink-0" />
+                        )}
+                        <span className="font-semibold truncate text-slate-200">{file.name}</span>
+                        <span className="text-[10px] text-slate-500 font-mono">({(file.size / 1024).toFixed(1)} KB)</span>
+                      </div>
+                      <div className="flex items-center gap-2 shrink-0">
+                        {file.status === 'uploading' && (
+                          <span className="text-[10px] text-cyan-400 font-bold animate-pulse">Extracting...</span>
+                        )}
+                        {file.status === 'extracted' && (
+                          <span className="text-[10px] text-emerald-400 font-bold bg-emerald-500/10 px-1.5 py-0.5 rounded">Extracted</span>
+                        )}
+                        {file.status === 'failed' && (
+                          <span className="text-[10px] text-rose-400 font-bold bg-rose-500/10 px-1.5 py-0.5 rounded">Failed</span>
+                        )}
+                        
+                        {/* Direct Cloudinary Link */}
+                        {file.cloudinaryUrl && (
+                          <button
+                            type="button"
+                            onClick={() => {
+                              navigator.clipboard.writeText(file.cloudinaryUrl || '');
+                              alert('Direct Cloudinary URL copied to clipboard!');
+                            }}
+                            className="p-1 hover:bg-slate-800 text-cyan-400 hover:text-cyan-300 rounded transition-colors cursor-pointer"
+                            title="Copy Direct Cloudinary URL"
+                          >
+                            <Copy size={12} />
+                          </button>
+                        )}
+
+                        <button 
+                          type="button"
+                          onClick={() => setAttachedFiles(prev => prev.filter(f => f.id !== file.id))}
+                          className="p-1 hover:bg-slate-800 text-slate-400 hover:text-red-400 rounded-lg transition-colors cursor-pointer"
+                        >
+                          <X size={13} />
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Progress Bar / Error Message */}
+                    {file.status === 'uploading' && (
+                      <div className="w-full bg-slate-800 rounded-full h-1 overflow-hidden">
+                        <div 
+                          className="bg-cyan-500 h-full transition-all duration-300"
+                          style={{ width: `${file.progress}%` }}
+                        />
+                      </div>
+                    )}
+                    {file.status === 'failed' && file.error && (
+                      <span className="text-[10px] text-rose-400 italic font-medium">{file.error}</span>
+                    )}
+
+                    {/* Quick Preview of Extracted Content */}
+                    {file.status === 'extracted' && file.extractedContent && (
+                      <div className="mt-1 p-2 bg-slate-950/60 border border-slate-800/40 rounded-lg text-[10px] text-slate-400 leading-relaxed font-mono">
+                        {file.extractedContent.patientName && (
+                          <div><span className="text-cyan-400 font-semibold">Patient:</span> {file.extractedContent.patientName} ({file.extractedContent.age || 'N/A'}, {file.extractedContent.sex || 'N/A'})</div>
+                        )}
+                        {file.extractedContent.summary && (
+                          <div className="line-clamp-2 mt-0.5"><span className="text-slate-300 font-sans">Summary:</span> {file.extractedContent.summary}</div>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                ))}
               </div>
             )}
             <div className="flex items-end w-full pr-2">
@@ -1518,9 +1700,9 @@ export default function ClinicalAssistantScreen() {
                 </button>
                 <button 
                   onClick={() => handleSend()}
-                  disabled={(!input.trim() && !attachedFile) || isProcessing}
+                  disabled={(!input.trim() && attachedFiles.length === 0) || isProcessing || attachedFiles.some(f => f.status === 'uploading')}
                   className={`p-2.5 rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center ${
-                    (input.trim() || attachedFile) && !isProcessing
+                    (input.trim() || attachedFiles.length > 0) && !isProcessing && !attachedFiles.some(f => f.status === 'uploading')
                       ? 'bg-blue-600 text-slate-100 shadow-sm hover:bg-blue-500' 
                       : 'bg-slate-800 text-slate-600 cursor-not-allowed'
                   }`}

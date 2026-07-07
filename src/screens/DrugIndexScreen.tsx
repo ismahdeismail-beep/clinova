@@ -452,6 +452,12 @@ export default function DrugIndexScreen() {
                       {monograph}
                     </ReactMarkdown>
                   </div>
+                  
+                  {/* National Library of Medicine Attribution */}
+                  <div className="mt-6 pt-4 border-t border-[var(--border)]/60 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] text-[var(--text-muted)] font-sans select-none">
+                    <span>This product uses publicly available data from the U.S. National Library of Medicine (NLM) and openFDA.</span>
+                    <span className="font-mono bg-[var(--surface-dim)] text-cyan-500 font-bold px-2 py-0.5 rounded border border-[var(--border)]">FDA/NLM Grounded</span>
+                  </div>
                 </div>
               ) : (
                 <div className="w-full h-full bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 flex flex-col items-center justify-center text-center">
@@ -1077,6 +1083,12 @@ export default function DrugIndexScreen() {
                     </div>
                   </div>
                 )}
+
+                {/* National Library of Medicine Attribution */}
+                <div className="bg-[var(--surface)] p-4 rounded-xl border border-[var(--border)]/40 text-left flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] text-[var(--text-muted)] font-sans select-none">
+                  <span>This safety engine utilizes clinical references and drug interaction databases from the U.S. National Library of Medicine (NLM).</span>
+                  <span className="font-mono bg-[var(--surface-dim)] text-emerald-500 font-bold px-2 py-0.5 rounded border border-[var(--border)]">NLM RxNorm Verified</span>
+                </div>
 
               </div>
             ) : (

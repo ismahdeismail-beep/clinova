@@ -6,6 +6,7 @@ import crypto from 'crypto';
 
 import multer from 'multer';
 import { generateContentWithFallback, getProviderStatusList, getGlobalProviderOverride, setGlobalProviderOverride, providerStatuses } from './src/server/aiRouter.js';
+import { fetchOpenFdaLabel, resolveRxCui, fetchRxNormInteractions } from './src/server/externalMedicinesApi.js';
 
 // Load environment variables
 dotenv.config();
@@ -253,6 +254,42 @@ Ensure that you return a list of these medications.`;
           }
         },
         required: ['medications']
+      };
+    } else if (type === 'clinical_notes') {
+      prompt = `You are Clinova's Clinical Note Extraction Assistant. Analyze the uploaded clinical record, medical report, case history, or dictation and extract key clinical observations.
+      
+CRITICAL CONSTRAINTS:
+1. Patient Anonymity: Extract the patient's name but convert it strictly to UPPERCASE INITIALS only (e.g., "John Doe" -> "J. D."). Never expose the full name.
+2. Formulate a structured medical summary, including active chief complaints, history of present illness, primary diagnoses or clinical impressions, list of active medications, and recommended care plan interventions.
+If any section is not documented, write "Not documented" or leave empty.`;
+
+      responseSchema = {
+        type: Type.OBJECT,
+        properties: {
+          patientName: { type: Type.STRING, description: "Capitalized initials only, e.g. J. D." },
+          age: { type: Type.STRING },
+          sex: { type: Type.STRING },
+          summary: { type: Type.STRING, description: "A high-fidelity concise summary of the clinical presentation" },
+          diagnoses: {
+            type: Type.ARRAY,
+            description: "List of working diagnoses, clinical impressions, or main problems",
+            items: { type: Type.STRING }
+          },
+          medications: {
+            type: Type.ARRAY,
+            description: "List of current active medications with doses and frequencies if available",
+            items: {
+              type: Type.OBJECT,
+              properties: {
+                name: { type: Type.STRING },
+                dose: { type: Type.STRING },
+                frequency: { type: Type.STRING }
+              },
+              required: ["name"]
+            }
+          },
+          carePlan: { type: Type.STRING, description: "Pharmacist recommended care plan, DTP interventions, or follow-up actions" }
+        }
       };
     } else {
       return res.status(400).json({ error: 'Invalid extraction type' });
@@ -758,10 +795,61 @@ app.post('/api/gemini/search-drug', async (req, res) => {
     }
 
     const queryInfo = drugName ? `Search Name: "${drugName}"` : `Browse Category: "${category}"`;
+    
+    let fdaContext = "";
+    let resolvedCui = "";
+
+    if (drugName) {
+      try {
+        const [rxcui, fdaLabel] = await Promise.all([
+          resolveRxCui(drugName),
+          fetchOpenFdaLabel(drugName)
+        ]);
+        
+        if (rxcui) {
+          resolvedCui = rxcui;
+        }
+        
+        if (fdaLabel) {
+          fdaContext = `
+=== OFFICIAL NLM/FDA CLINICAL REFERENCES (GROUNDED DATA) ===
+- RxNorm Concept ID (RxCUI): ${resolvedCui || 'Resolved'}
+- Generic Name: ${fdaLabel.genericName || drugName}
+- Brand Name(s): ${fdaLabel.brandName || 'N/A'}
+
+[INDICATIONS & USAGE]:
+${fdaLabel.indicationsAndUsage ? fdaLabel.indicationsAndUsage.slice(0, 1000) : 'N/A'}
+
+[DOSAGE & ADMINISTRATION]:
+${fdaLabel.dosageAndAdministration ? fdaLabel.dosageAndAdministration.slice(0, 1000) : 'N/A'}
+
+[CONTRAINDICATIONS]:
+${fdaLabel.contraindications ? fdaLabel.contraindications.slice(0, 1000) : 'N/A'}
+
+[WARNINGS & PRECAUTIONS]:
+${fdaLabel.warningsAndPrecautions ? fdaLabel.warningsAndPrecautions.slice(0, 1000) : 'N/A'}
+
+[ADVERSE REACTIONS]:
+${fdaLabel.adverseReactions ? fdaLabel.adverseReactions.slice(0, 1000) : 'N/A'}
+
+[DRUG INTERACTIONS]:
+${fdaLabel.drugInteractions ? fdaLabel.drugInteractions.slice(0, 1000) : 'N/A'}
+
+[BOXED WARNING]:
+${fdaLabel.boxedWarning ? fdaLabel.boxedWarning.slice(0, 800) : 'N/A'}
+`;
+        }
+      } catch (err) {
+        console.warn('Failed to pre-fetch openFDA details in search-drug:', err);
+      }
+    }
 
     const prompt = `You are Clinova OS, an advanced Clinical Pharmacy Assistant and AI Knowledge Engine.
 Please provide a complete, clinical-grade medical profile for the medication search query.
 Query Info: ${queryInfo}
+
+${fdaContext ? `We have retrieved the following official FDA clinical label data for this medication from openFDA and RxNorm. Use it as the absolute source of clinical truth to synthesize the profile, but ensure you adapt it to include standard Kenyan brand names, local KDI clinical conventions, WHO essential medicine status, and standard formatting:
+${fdaContext}` : 'No local openFDA label was cached. Use your clinical pharmacotherapy knowledge base to draft a highly precise profile.'}
 
 If a specific drug name is entered, return the profile for that drug. If a category is selected, return a list of 3-5 prominent drugs in that category, and describe each in brief, structured clinical notes.
 
@@ -771,6 +859,8 @@ For each drug profile, include:
 3. **Renal & Hepatic Adjustments**: Crucial CrCl-based or child-pugh based adjustments.
 4. **Important Contraindications & Key Interaction Alerts**: Life-threatening combinations or critical warnings.
 5. **Key Patient Monitoring Guidelines**: Crucial clinical/lab monitoring indices (e.g., serum Cr, electrolytes, INR).
+
+ATTRIBUTION: This response uses clinical data sourced from the U.S. National Library of Medicine (NLM) and openFDA. Ensure you append an attribution line at the end of the text.
 `;
 
     const response = await generateContentWithFallback({
@@ -781,7 +871,12 @@ For each drug profile, include:
       }
     });
 
-    res.json({ text: response.text });
+    res.json({ 
+      text: response.text,
+      rxnormId: resolvedCui || undefined,
+      hasFdaData: !!fdaContext,
+      attribution: "This product uses publicly available data from the U.S. National Library of Medicine and openFDA."
+    });
   } catch (error: any) {
     console.error('Drug profile search error:', error);
     res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'AI drug lookup failed' });
@@ -798,6 +893,33 @@ app.post('/api/gemini/check-interactions', async (req, res) => {
     }
 
     const medsStr = medications.map(m => `- ${m.name} (${m.dose || 'dose unstated'} ${m.frequency || 'frequency unstated'} ${m.route || 'route unstated'})`).join('\n');
+
+    // Live NLM RxNorm/RxNav interaction API lookup
+    const rxnormPromises = medications.map(async (m) => {
+      const rxnormId = await resolveRxCui(m.name);
+      return { name: m.name, rxnormId };
+    });
+    const resolvedMeds = await Promise.all(rxnormPromises);
+    const validRxcuis = resolvedMeds.map(m => m.rxnormId).filter(Boolean) as string[];
+
+    let nlmInteractions: any[] = [];
+    if (validRxcuis.length >= 2) {
+      try {
+        nlmInteractions = await fetchRxNormInteractions(validRxcuis);
+      } catch (err) {
+        console.warn('Failed to pre-fetch RxNorm interactions:', err);
+      }
+    }
+
+    let nlmContext = "";
+    if (nlmInteractions.length > 0) {
+      nlmContext = `
+=== NLM RXNORM DOCUMENTED INTERACTIONS ===
+The following drug interactions were retrieved directly from the official U.S. National Library of Medicine (RxNav API) for the resolved RxCUIs of the active medications:
+${nlmInteractions.map(i => `- [${i.severity}] ${i.title}: ${i.description}`).join('\n')}
+Please incorporate these NLM safety alerts into your evaluation, providing localized therapeutic instructions and actions for clinicians.
+`;
+    }
 
     let patientInfoStr = 'No specific patient context provided (Evaluation based on general demographic averages).';
     if (patientContext) {
@@ -830,6 +952,8 @@ ${medsStr}
 
 === CLINICAL PATIENT CONTEXT ===
 ${patientInfoStr}
+
+${nlmContext}
 
 Please evaluate and return a detailed response in the requested structured JSON format, examining:
 1. **Drug-Drug Interactions**: Identify critical combinations (e.g., Amiodarone + Warfarin, Sildenafil + Nitrates, Spironolactone + Potassium Supplements). Specify Severity ("Critical", "Moderate", or "Minor"), Mechanism, and specific, safe Recommendation (dose adjustment, alternative medication, or separate administration times).

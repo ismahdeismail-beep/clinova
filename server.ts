@@ -260,12 +260,49 @@ Ensure that you return a list of these medications.`;
 
     const userParts: any[] = [{ text: prompt }];
     for (const file of files) {
-      userParts.push({
-        inlineData: {
-          data: file.buffer.toString('base64'),
-          mimeType: file.mimetype.includes('pdf') ? 'application/pdf' : (file.mimetype.includes('image') ? file.mimetype : 'text/plain')
+      const filename = file.originalname || 'document.txt';
+      const mimetype = file.mimetype || '';
+      
+      const isPdf = mimetype.includes('pdf') || filename.toLowerCase().endsWith('.pdf');
+      const isImage = mimetype.includes('image') || /\.(png|jpe?g|webp|gif|heic|heif)$/i.test(filename);
+      
+      if (isPdf) {
+        userParts.push({
+          inlineData: {
+            data: file.buffer.toString('base64'),
+            mimeType: 'application/pdf'
+          }
+        });
+      } else if (isImage) {
+        let cleanMimetype = mimetype;
+        if (!cleanMimetype.includes('image')) {
+          if (filename.toLowerCase().endsWith('.png')) cleanMimetype = 'image/png';
+          else if (filename.toLowerCase().endsWith('.webp')) cleanMimetype = 'image/webp';
+          else if (filename.toLowerCase().endsWith('.gif')) cleanMimetype = 'image/gif';
+          else cleanMimetype = 'image/jpeg';
         }
-      });
+        userParts.push({
+          inlineData: {
+            data: file.buffer.toString('base64'),
+            mimeType: cleanMimetype
+          }
+        });
+      } else {
+        // Safe check if it's a printable text file
+        const textContent = file.buffer.toString('utf-8');
+        const isBinary = textContent.includes('\u0000') || /[\x00-\x08\x0B\x0C\x0E-\x1F]/.test(textContent);
+        
+        if (!isBinary) {
+          userParts.push({
+            text: `\n--- ATTACHED FILE CONTENT: ${filename} ---\n${textContent}\n--- END OF ATTACHED FILE ---\n`
+          });
+        } else {
+          // Unsupported binary file format, gracefully include warning text instead of crashing the API with inlineData
+          userParts.push({
+            text: `\n[Attached File: ${filename} - This binary file format is not natively readable by the AI. For clinical records, please upload PDF files, high-quality images, or plain text document exports.]\n`
+          });
+        }
+      }
     }
 
     const response = await generateContentWithFallback({
@@ -558,18 +595,62 @@ Provide concise, authoritative, and actionable feedback. Be encouraging and high
 
     const userParts: any[] = [];
     
-    // Add file inline data if available
-    if (fileData && fileType) {
+    // Add file inline data or text content if available, handling binary gracefully
+    if (fileData) {
       let cleanBase64 = fileData;
       if (fileData.includes(';base64,')) {
         cleanBase64 = fileData.split(';base64,')[1];
       }
-      userParts.push({
-        inlineData: {
-          mimeType: fileType.includes('pdf') ? 'application/pdf' : (fileType.includes('image') ? fileType : 'text/plain'),
-          data: cleanBase64
+      
+      const filename = fileName || 'document.txt';
+      const mimetype = fileType || '';
+      
+      const isPdf = mimetype.includes('pdf') || filename.toLowerCase().endsWith('.pdf');
+      const isImage = mimetype.includes('image') || /\.(png|jpe?g|webp|gif|heic|heif)$/i.test(filename);
+      
+      if (isPdf) {
+        userParts.push({
+          inlineData: {
+            data: cleanBase64,
+            mimeType: 'application/pdf'
+          }
+        });
+      } else if (isImage) {
+        let cleanMimetype = mimetype;
+        if (!cleanMimetype.includes('image')) {
+          if (filename.toLowerCase().endsWith('.png')) cleanMimetype = 'image/png';
+          else if (filename.toLowerCase().endsWith('.webp')) cleanMimetype = 'image/webp';
+          else if (filename.toLowerCase().endsWith('.gif')) cleanMimetype = 'image/gif';
+          else cleanMimetype = 'image/jpeg';
         }
-      });
+        userParts.push({
+          inlineData: {
+            data: cleanBase64,
+            mimeType: cleanMimetype
+          }
+        });
+      } else {
+        // Decode as text and check if it contains binary control characters
+        try {
+          const buf = Buffer.from(cleanBase64, 'base64');
+          const textContent = buf.toString('utf-8');
+          const isBinary = textContent.includes('\u0000') || /[\x00-\x08\x0B\x0C\x0E-\x1F]/.test(textContent);
+          
+          if (!isBinary) {
+            userParts.push({
+              text: `\n--- ATTACHED FILE CONTENT: ${filename} ---\n${textContent}\n--- END OF ATTACHED FILE ---\n`
+            });
+          } else {
+            userParts.push({
+              text: `\n[Attached File: ${filename} - This binary file format is not natively readable by the AI. For clinical records, please upload PDF files, high-quality images, or plain text document exports.]\n`
+            });
+          }
+        } catch (e) {
+          userParts.push({
+            text: `\n[Attached File: ${filename} - Failed to parse file content.]\n`
+          });
+        }
+      }
     }
 
     userParts.push({

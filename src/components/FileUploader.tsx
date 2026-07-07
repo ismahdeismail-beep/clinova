@@ -1,5 +1,5 @@
 import { useState, useRef, useCallback, type ChangeEvent, type DragEvent } from 'react';
-import { Upload, X, FileText, Image, File as FileIcon, AlertCircle } from 'lucide-react';
+import { Upload, X, FileText, Image, File as FileIcon, AlertCircle, Loader2, RefreshCw, CheckCircle2 } from 'lucide-react';
 import { useFileStore } from '../store/fileStore';
 import type { FileCategory, FileUploadOptions, UploadProgress } from '../types/engine';
 import { StorageService } from '../services/storage.service';
@@ -46,6 +46,8 @@ export default function FileUploader({
     mime: string;
     progress: number;
     status: 'uploading' | 'completed' | 'failed';
+    retryAttempt?: number;
+    retryReason?: string;
     error?: string;
   }>>({});
   const [error, setError] = useState<string | null>(null);
@@ -120,11 +122,26 @@ export default function FileUploader({
                   [key]: {
                     ...prev[key],
                     progress: progress.percentage,
+                    retryAttempt: undefined,
+                    retryReason: undefined,
                   },
                 };
               });
             },
             signal,
+            (attempt, err) => {
+              setUploadStates((prev) => {
+                if (!prev[key]) return prev;
+                return {
+                  ...prev,
+                  [key]: {
+                    ...prev[key],
+                    retryAttempt: attempt,
+                    retryReason: err?.message || 'Connection issue, retrying...',
+                  },
+                };
+              });
+            },
           );
 
           // Update individual file upload as completed
@@ -136,6 +153,8 @@ export default function FileUploader({
                 ...prev[key],
                 progress: 100,
                 status: 'completed',
+                retryAttempt: undefined,
+                retryReason: undefined,
               },
             };
           });
@@ -155,6 +174,8 @@ export default function FileUploader({
                 ...prev[key],
                 status: 'failed',
                 error: err?.message || 'Upload failed',
+                retryAttempt: undefined,
+                retryReason: undefined,
               },
             };
           });
@@ -267,13 +288,26 @@ export default function FileUploader({
           <div className="space-y-1.5 max-h-60 overflow-y-auto pr-1">
             {uploadItems.map((item) => {
               const Icon = getFileIcon(item.mime);
+              const isRetrying = item.status === 'uploading' && item.retryAttempt !== undefined;
               return (
                 <div
                   key={item.key}
-                  className="flex flex-col gap-1.5 p-3 rounded-xl bg-[var(--surface-dim)] border border-[var(--border)]/40 text-sm"
+                  className="flex flex-col gap-1.5 p-3 rounded-xl bg-[var(--surface-dim)] border border-[var(--border)]/40 text-sm transition-all shadow-xs"
                 >
                   <div className="flex items-center gap-2.5">
-                    <Icon size={16} className="text-[var(--primary)] shrink-0" />
+                    <div className="relative shrink-0">
+                      {item.status === 'uploading' ? (
+                        isRetrying ? (
+                          <RefreshCw size={16} className="text-amber-500 animate-spin shrink-0" />
+                        ) : (
+                          <Loader2 size={16} className="text-[var(--primary)] animate-spin shrink-0" />
+                        )
+                      ) : item.status === 'completed' ? (
+                        <CheckCircle2 size={16} className="text-emerald-500 shrink-0" />
+                      ) : (
+                        <AlertCircle size={16} className="text-red-500 shrink-0" />
+                      )}
+                    </div>
                     <span className="flex-1 truncate text-xs font-semibold text-[var(--text)]">
                       {item.name}
                     </span>
@@ -291,11 +325,20 @@ export default function FileUploader({
                         Failed
                       </span>
                     )}
+                    {item.status === 'uploading' && (
+                      <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${
+                        isRetrying 
+                          ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 animate-pulse'
+                          : 'bg-blue-500/10 text-blue-600 dark:text-blue-400'
+                      }`}>
+                        {isRetrying ? `Retry #${item.retryAttempt}` : `${item.progress}%`}
+                      </span>
+                    )}
                     
                     {item.status !== 'uploading' && (
                       <button
                         onClick={() => removeStateItem(item.key)}
-                        className="text-[var(--text-muted)] hover:text-[var(--text)]"
+                        className="text-[var(--text-muted)] hover:text-[var(--text)] cursor-pointer"
                       >
                         <X size={12} />
                       </button>
@@ -303,21 +346,29 @@ export default function FileUploader({
                   </div>
 
                   {item.status === 'uploading' && (
-                    <div className="flex items-center gap-2">
-                      <div className="flex-1 h-1.5 rounded-full bg-[var(--border)] overflow-hidden">
-                        <div
-                          className="h-full bg-[var(--primary)] rounded-full transition-all duration-200"
-                          style={{ width: `${item.progress}%` }}
-                        />
+                    <div className="flex flex-col gap-1 w-full">
+                      <div className="flex items-center gap-2">
+                        <div className="flex-1 h-1.5 rounded-full bg-[var(--border)] overflow-hidden">
+                          <div
+                            className={`h-full rounded-full transition-all duration-200 ${
+                              isRetrying ? 'bg-amber-500' : 'bg-[var(--primary)]'
+                            }`}
+                            style={{ width: `${item.progress}%` }}
+                          />
+                        </div>
                       </div>
-                      <span className="text-[10px] text-[var(--text-muted)] w-8 text-right font-semibold">
-                        {item.progress}%
-                      </span>
+                      {isRetrying && item.retryReason && (
+                        <p className="text-[10px] text-amber-500 font-medium flex items-center gap-1 mt-0.5">
+                          <RefreshCw size={10} className="animate-spin" />
+                          {item.retryReason}
+                        </p>
+                      )}
                     </div>
                   )}
 
                   {item.status === 'failed' && item.error && (
-                    <p className="text-[10px] text-red-500 font-medium">
+                    <p className="text-[10px] text-red-500 font-medium flex items-center gap-1">
+                      <AlertCircle size={10} />
                       Error: {item.error}
                     </p>
                   )}

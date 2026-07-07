@@ -26,7 +26,8 @@ import {
   Check, 
   Eye, 
   AlertCircle,
-  BookOpen
+  BookOpen,
+  RefreshCw
 } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { db, auth } from '../lib/firebase';
@@ -129,6 +130,8 @@ export default function AdminDashboardScreen() {
   const [isUploadingFile, setIsUploadingFile] = useState(false);
   const [uploadProgress, setUploadProgress] = useState<number | null>(null);
   const [uploadError, setUploadError] = useState<string | null>(null);
+  const [uploadRetryAttempt, setUploadRetryAttempt] = useState<number | null>(null);
+  const [uploadRetryReason, setUploadRetryReason] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Clinician Profiles & Permissions State
@@ -598,6 +601,8 @@ export default function AdminDashboardScreen() {
     setIsUploadingFile(true);
     setUploadProgress(10);
     setUploadError(null);
+    setUploadRetryAttempt(null);
+    setUploadRetryReason(null);
 
     // Simulate clinical file structure upload options
     const options = {
@@ -607,9 +612,20 @@ export default function AdminDashboardScreen() {
 
     try {
       setUploadProgress(40);
-      const res = await StorageService.uploadFile(file, options, (progress) => {
-        setUploadProgress(Math.round(progress.percentage));
-      });
+      const res = await StorageService.uploadFile(
+        file, 
+        options, 
+        (progress) => {
+          setUploadProgress(Math.round(progress.percentage));
+          setUploadRetryAttempt(null);
+          setUploadRetryReason(null);
+        },
+        undefined,
+        (attempt, err) => {
+          setUploadRetryAttempt(attempt);
+          setUploadRetryReason(err?.message || 'Connection glitch, retrying...');
+        }
+      );
       setUploadProgress(100);
       setAuditLogs(prev => [...prev, `[INFO] ${new Date().toLocaleTimeString()} - Successfully indexed clinical document: "${file.name}" into RAG.`]);
       
@@ -617,11 +633,14 @@ export default function AdminDashboardScreen() {
       setTimeout(async () => {
         setIsUploadingFile(false);
         setUploadProgress(null);
+        setUploadRetryAttempt(null);
+        setUploadRetryReason(null);
         await fetchFilesFromStorage();
       }, 500);
 
-    } catch (err) {
+    } catch (err: any) {
       console.warn("File storage exception. Creating fallback file record in local state store.", err);
+      setUploadError(err?.message || 'Upload failed');
       
       const fallbackFile: StoredFile = {
         id: `file-${Math.random().toString(36).substring(2, 9)}`,
@@ -643,6 +662,8 @@ export default function AdminDashboardScreen() {
       setFiles(prev => [fallbackFile, ...prev]);
       setIsUploadingFile(false);
       setUploadProgress(null);
+      setUploadRetryAttempt(null);
+      setUploadRetryReason(null);
     }
   };
 
@@ -1293,22 +1314,46 @@ export default function AdminDashboardScreen() {
 
                 {isUploadingFile ? (
                   <div className="space-y-4 w-full px-4">
-                    <Loader2 className="animate-spin text-[var(--primary)] mx-auto" size={36} />
+                    {uploadRetryAttempt !== null ? (
+                      <div className="flex flex-col items-center gap-2">
+                        <RefreshCw className="animate-spin text-amber-500 mx-auto" size={36} />
+                        <span className="text-[10px] font-bold text-amber-500 bg-amber-500/10 px-2.5 py-0.5 rounded-full animate-pulse uppercase">
+                          Retrying (Attempt {uploadRetryAttempt}/3)
+                        </span>
+                      </div>
+                    ) : (
+                      <Loader2 className="animate-spin text-[var(--primary)] mx-auto" size={36} />
+                    )}
                     <div>
-                      <h4 className="font-semibold text-xs text-[var(--text)] uppercase tracking-wider">Parsing Document...</h4>
-                      <p className="text-[10px] text-[var(--text-muted)] mt-1">Extracting clinical parameters and structuring medical indexes...</p>
+                      <h4 className="font-semibold text-xs text-[var(--text)] uppercase tracking-wider">
+                        {uploadRetryAttempt !== null ? 'Re-establishing connection...' : 'Parsing Document...'}
+                      </h4>
+                      <p className="text-[10px] text-[var(--text-muted)] mt-1">
+                        {uploadRetryReason || 'Extracting clinical parameters and structuring medical indexes...'}
+                      </p>
                     </div>
                     {uploadProgress !== null && (
-                      <div className="w-full bg-[var(--bg)] h-1.5 rounded-full overflow-hidden border border-[var(--border)]">
-                        <div 
-                          className="bg-[var(--primary)] h-full transition-all duration-300 rounded-full"
-                          style={{ width: `${uploadProgress}%` }}
-                        />
+                      <div className="space-y-1.5">
+                        <div className="w-full bg-[var(--bg)] h-2 rounded-full overflow-hidden border border-[var(--border)]">
+                          <div 
+                            className={`h-full transition-all duration-300 rounded-full ${
+                              uploadRetryAttempt !== null ? 'bg-amber-500' : 'bg-[var(--primary)]'
+                            }`}
+                            style={{ width: `${uploadProgress}%` }}
+                          />
+                        </div>
+                        <span className="text-[10px] font-bold text-[var(--text-muted)]">{uploadProgress}% Uploaded</span>
                       </div>
                     )}
                   </div>
                 ) : (
-                  <div className="space-y-3">
+                  <div className="space-y-3 w-full px-4">
+                    {uploadError && (
+                      <div className="p-3 bg-red-500/10 border border-red-500/20 rounded-xl text-xs text-red-600 font-semibold mb-2 flex items-center gap-2 justify-center">
+                        <AlertCircle size={14} className="shrink-0" />
+                        <span>Upload failed: {uploadError}</span>
+                      </div>
+                    )}
                     <div className="w-12 h-12 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center mx-auto shadow-xs">
                       <UploadCloud size={24} />
                     </div>
@@ -1318,7 +1363,7 @@ export default function AdminDashboardScreen() {
                         Drag & Drop or click to upload clinical reference files, therapeutic research guides, or dosing manuals.
                       </p>
                     </div>
-                    <span className="text-[10px] font-bold text-[var(--primary)] bg-[var(--primary)]/10 px-3 py-1 rounded-full uppercase tracking-wider">
+                    <span className="text-[10px] font-bold text-[var(--primary)] bg-[var(--primary)]/10 px-3 py-1 rounded-full uppercase tracking-wider inline-block">
                       Supports PDF, TXT & DOCX up to 15MB
                     </span>
                   </div>

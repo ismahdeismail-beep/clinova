@@ -9,6 +9,7 @@ import {
 import { storage, db, auth } from '../lib/firebase';
 import type { StoredFile, FileCategory, FileUploadOptions, UploadProgress, UploadResult } from '../types/engine';
 import { MediaService } from './media.service';
+import { localFileDb } from '../lib/localFileDb';
 
 const FILES_COLLECTION = 'files';
 const STORAGE_ROOT = 'clinova';
@@ -68,6 +69,7 @@ export const StorageService = {
     options: FileUploadOptions,
     onProgress?: (progress: UploadProgress) => void,
     abortSignal?: AbortSignal,
+    onRetry?: (attempt: number, error: any) => void,
   ): Promise<UploadResult> {
     const fileId = getFileId();
     const storagePath = buildStoragePath(
@@ -115,7 +117,7 @@ export const StorageService = {
           (error) => {
             completed = true;
             console.warn('Firebase uploadTask failed, triggering robust fallback', error);
-            this.uploadFileFallback(file, options, fileId, storagePath, hash, uploadedBy, uploadedByEmail, uploadedByName)
+            this.uploadFileFallback(file, options, fileId, storagePath, hash, uploadedBy, uploadedByEmail, uploadedByName, onRetry)
               .then(resolve)
               .catch(reject);
           },
@@ -129,7 +131,7 @@ export const StorageService = {
 
               if (file.type.startsWith('image/')) {
                 try {
-                  const cloudDetails = await MediaService.uploadImageDetails(file);
+                  const cloudDetails = await MediaService.uploadImageDetails(file, onRetry);
                   cloudinaryUrl = cloudDetails.secure_url;
                   cloudinaryPublicId = cloudDetails.public_id;
                 } catch (cloudinaryErr) {
@@ -163,13 +165,20 @@ export const StorageService = {
                 console.warn('Firestore write failed, saving in-memory.', fsError);
               }
 
+              // Also cache in local IndexedDB for offline resilience
+              try {
+                await localFileDb.saveFile(fileId, storedFile, file);
+              } catch (idbErr) {
+                console.warn('IndexedDB save failed', idbErr);
+              }
+
               // Also keep in memory for instantaneous queries
               IN_MEMORY_FILES.unshift(storedFile);
 
               resolve({ file: storedFile, url: cloudinaryUrl || downloadUrl });
             } catch (err) {
               console.warn('Finalizing Firebase upload failed, using fallback', err);
-              this.uploadFileFallback(file, options, fileId, storagePath, hash, uploadedBy, uploadedByEmail, uploadedByName)
+              this.uploadFileFallback(file, options, fileId, storagePath, hash, uploadedBy, uploadedByEmail, uploadedByName, onRetry)
                 .then(resolve)
                 .catch(reject);
             }
@@ -178,7 +187,7 @@ export const StorageService = {
       });
     } catch (e) {
       console.warn('Initialization of Firebase upload failed, running fallback', e);
-      return this.uploadFileFallback(file, options, fileId, storagePath, hash, uploadedBy, uploadedByEmail, uploadedByName);
+      return this.uploadFileFallback(file, options, fileId, storagePath, hash, uploadedBy, uploadedByEmail, uploadedByName, onRetry);
     }
   },
 
@@ -191,13 +200,14 @@ export const StorageService = {
     uploadedBy: string,
     uploadedByEmail: string | null,
     uploadedByName: string | null,
+    onRetry?: (attempt: number, error: any) => void,
   ): Promise<UploadResult> {
     let finalUrl = URL.createObjectURL(file);
     let cloudinaryUrl: string | undefined;
     let cloudinaryPublicId: string | undefined;
 
     try {
-      const cloudDetails = await MediaService.uploadImageDetails(file);
+      const cloudDetails = await MediaService.uploadImageDetails(file, onRetry);
       cloudinaryUrl = cloudDetails.secure_url;
       cloudinaryPublicId = cloudDetails.public_id;
       finalUrl = cloudinaryUrl;
@@ -225,6 +235,13 @@ export const StorageService = {
       ...(cloudinaryUrl ? { cloudinaryUrl, cloudinaryPublicId } : {}),
     };
 
+    // Cache the full file and metadata in local IndexedDB for offline resilience
+    try {
+      await localFileDb.saveFile(fileId, storedFile, file);
+    } catch (idbErr) {
+      console.warn('Fallback: IndexedDB save failed', idbErr);
+    }
+
     try {
       await setDoc(doc(db, FILES_COLLECTION, fileId), storedFile);
     } catch (fsError) {
@@ -243,15 +260,36 @@ export const StorageService = {
         return { id: snap.id, ...snap.data() } as StoredFile;
       }
     } catch (e) {
-      console.warn('Firestore getFile failed, using memory cache', e);
+      console.warn('Firestore getFile failed, checking other storages', e);
     }
     const found = IN_MEMORY_FILES.find((f) => f.id === fileId);
-    return found || null;
+    if (found) return found;
+
+    try {
+      const idbRecord = await localFileDb.getFile(fileId);
+      if (idbRecord) {
+        return idbRecord.meta;
+      }
+    } catch (e) {
+      console.warn('IndexedDB getFile failed', e);
+    }
+    return null;
   },
 
   async getFileUrl(fileId: string): Promise<string | null> {
     const file = await this.getFile(fileId);
     if (!file) return null;
+
+    // Check if the actual blob is cached in local IndexedDB first (most reliable/instant)
+    try {
+      const idbRecord = await localFileDb.getFile(fileId);
+      if (idbRecord && idbRecord.blob) {
+        return URL.createObjectURL(idbRecord.blob);
+      }
+    } catch (e) {
+      console.warn('Failed to retrieve blob from IndexedDB, trying online', e);
+    }
+
     if (file.cloudinaryUrl) return file.cloudinaryUrl;
     if (file.storagePath.startsWith('blob:') || file.storagePath.startsWith('data:')) {
       return file.storagePath;
@@ -273,6 +311,13 @@ export const StorageService = {
     const memIndex = IN_MEMORY_FILES.findIndex((f) => f.id === fileId);
     if (memIndex > -1) {
       IN_MEMORY_FILES.splice(memIndex, 1);
+    }
+
+    // Delete from local IndexedDB
+    try {
+      await localFileDb.deleteFile(fileId);
+    } catch (idbErr) {
+      console.warn('IndexedDB file deletion failed', idbErr);
     }
 
     try {
@@ -321,10 +366,31 @@ export const StorageService = {
           uniqueFiles.push(f);
         }
       }
+
+      try {
+        const idbRecords = await localFileDb.getAllFiles();
+        for (const record of idbRecords) {
+          if (record.meta.category === category && !uniqueFiles.some((uf) => uf.id === record.meta.id)) {
+            uniqueFiles.push(record.meta);
+          }
+        }
+      } catch (e) {
+        console.warn('Failed to merge IndexedDB files', e);
+      }
+
       return uniqueFiles.slice(0, max);
     } catch (e) {
-      console.warn('Firestore listFilesByCategory failed, returning memory files', e);
-      return IN_MEMORY_FILES.filter((f) => f.category === category).slice(0, max);
+      console.warn('Firestore listFilesByCategory failed, returning offline files', e);
+      const list = IN_MEMORY_FILES.filter((f) => f.category === category);
+      try {
+        const idbRecords = await localFileDb.getAllFiles();
+        for (const record of idbRecords) {
+          if (record.meta.category === category && !list.some((uf) => uf.id === record.meta.id)) {
+            list.push(record.meta);
+          }
+        }
+      } catch (_) {}
+      return list.slice(0, max);
     }
   },
 
@@ -345,10 +411,31 @@ export const StorageService = {
           uniqueFiles.push(f);
         }
       }
+
+      try {
+        const idbRecords = await localFileDb.getAllFiles();
+        for (const record of idbRecords) {
+          if (record.meta.patientId === patientId && !uniqueFiles.some((uf) => uf.id === record.meta.id)) {
+            uniqueFiles.push(record.meta);
+          }
+        }
+      } catch (e) {
+        console.warn('Failed to merge IndexedDB files', e);
+      }
+
       return uniqueFiles.slice(0, max);
     } catch (e) {
       console.warn('Firestore listFilesByPatient failed', e);
-      return IN_MEMORY_FILES.filter((f) => f.patientId === patientId).slice(0, max);
+      const list = IN_MEMORY_FILES.filter((f) => f.patientId === patientId);
+      try {
+        const idbRecords = await localFileDb.getAllFiles();
+        for (const record of idbRecords) {
+          if (record.meta.patientId === patientId && !list.some((uf) => uf.id === record.meta.id)) {
+            list.push(record.meta);
+          }
+        }
+      } catch (_) {}
+      return list.slice(0, max);
     }
   },
 
@@ -369,10 +456,31 @@ export const StorageService = {
           uniqueFiles.push(f);
         }
       }
+
+      try {
+        const idbRecords = await localFileDb.getAllFiles();
+        for (const record of idbRecords) {
+          if (record.meta.studyId === studyId && !uniqueFiles.some((uf) => uf.id === record.meta.id)) {
+            uniqueFiles.push(record.meta);
+          }
+        }
+      } catch (e) {
+        console.warn('Failed to merge IndexedDB files', e);
+      }
+
       return uniqueFiles.slice(0, max);
     } catch (e) {
       console.warn('Firestore listFilesByStudy failed', e);
-      return IN_MEMORY_FILES.filter((f) => f.studyId === studyId).slice(0, max);
+      const list = IN_MEMORY_FILES.filter((f) => f.studyId === studyId);
+      try {
+        const idbRecords = await localFileDb.getAllFiles();
+        for (const record of idbRecords) {
+          if (record.meta.studyId === studyId && !list.some((uf) => uf.id === record.meta.id)) {
+            list.push(record.meta);
+          }
+        }
+      } catch (_) {}
+      return list.slice(0, max);
     }
   },
 
@@ -392,10 +500,31 @@ export const StorageService = {
           uniqueFiles.push(f);
         }
       }
+
+      try {
+        const idbRecords = await localFileDb.getAllFiles();
+        for (const record of idbRecords) {
+          if (!uniqueFiles.some((uf) => uf.id === record.meta.id)) {
+            uniqueFiles.push(record.meta);
+          }
+        }
+      } catch (e) {
+        console.warn('Failed to merge IndexedDB files', e);
+      }
+
       return uniqueFiles.slice(0, max);
     } catch (e) {
       console.warn('Firestore getAllFiles failed', e);
-      return [...IN_MEMORY_FILES].slice(0, max);
+      const list = [...IN_MEMORY_FILES];
+      try {
+        const idbRecords = await localFileDb.getAllFiles();
+        for (const record of idbRecords) {
+          if (!list.some((uf) => uf.id === record.meta.id)) {
+            list.push(record.meta);
+          }
+        }
+      } catch (_) {}
+      return list.slice(0, max);
     }
   },
 

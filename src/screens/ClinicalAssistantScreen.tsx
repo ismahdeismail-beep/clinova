@@ -765,36 +765,63 @@ export default function ClinicalAssistantScreen() {
     // Connect to actual Express server API proxying Gemini
     let responseContent = '';
     let citations: Citation[] = [];
-
+    
     try {
       const savedData = localStorage.getItem('clinova_pharma_review_form');
       const parsed = savedData ? JSON.parse(savedData) : {};
 
-      const res = await fetch('/api/gemini/assistant', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          userMessage: userQuery,
-          chatHistory: messages.filter(m => !m.isThinking).map(m => ({
-            role: m.role,
-            content: m.content
-          })),
-          currentFormState: parsed,
-          fileData: currentAttachment?.data,
-          fileType: currentAttachment?.mimeType,
-          fileName: currentAttachment?.name
-        }),
-      });
+      const maxAttempts = 3;
+      let success = false;
+      let lastError: any = null;
 
-      if (!res.ok) {
-        const errorData = await res.json().catch(() => ({}));
-        throw new Error(errorData.error || 'Clinical Assistant service failed');
+      for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+        try {
+          if (attempt > 1) {
+            // Update thinking message text to give user visual feedback about the retry
+            setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
+              ...m,
+              content: `Clinical Assistant service busy. Retrying... (Attempt ${attempt}/${maxAttempts})`
+            } : m));
+            // Staggered backoff before retrying
+            await new Promise(resolve => setTimeout(resolve, 1500 * (attempt - 1)));
+          }
+
+          const res = await fetch('/api/gemini/assistant', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              userMessage: userQuery,
+              chatHistory: messages.filter(m => !m.isThinking).map(m => ({
+                role: m.role,
+                content: m.content
+              })),
+              currentFormState: parsed,
+              fileData: currentAttachment?.data,
+              fileType: currentAttachment?.mimeType,
+              fileName: currentAttachment?.name
+            }),
+          });
+
+          if (!res.ok) {
+            const errorData = await res.json().catch(() => ({}));
+            throw new Error(errorData.error || `Clinical Assistant service failed with status ${res.status}`);
+          }
+
+          const data = await res.json();
+          responseContent = data.text;
+          success = true;
+          break;
+        } catch (err: any) {
+          console.warn(`[ClinicalAssistant] Attempt ${attempt} failed:`, err);
+          lastError = err;
+        }
       }
 
-      const data = await res.json();
-      responseContent = data.text;
+      if (!success) {
+        throw lastError || new Error('Failed to reach assistant after multiple attempts');
+      }
       
       const lowerQuery = userQuery.toLowerCase();
       if (lowerQuery.includes('cap') || lowerQuery.includes('pneumonia') || responseContent.toLowerCase().includes('pneumonia')) {

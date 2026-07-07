@@ -4,7 +4,6 @@ import {
   Send, Loader2, Sparkles, X, Upload, FileUp
 } from 'lucide-react';
 import { useFileStore } from '../store/fileStore';
-import { GhostWriterText } from '../components/GhostWriterText';
 import { getPatientInitials } from '../lib/patientUtils';
 
 // Mock interaction database
@@ -1512,17 +1511,7 @@ export default function PharmacotherapyReviewScreen() {
                       : 'bg-[var(--surface-dim)] text-[var(--text)] border border-[var(--border)]'
                   }`}>
                     <div className="whitespace-pre-line">
-                      {msg.isNew && msg.role === 'assistant' ? (
-                        <GhostWriterText 
-                          content={msg.content} 
-                          speed={15} 
-                          onComplete={() => {
-                            setChatMessages(prev => prev.map((m, i) => i === index ? { ...m, isNew: false } : m));
-                          }}
-                        />
-                      ) : (
-                        msg.content.split('**').map((text, i) => i % 2 === 1 ? <strong key={i} className="font-semibold">{text}</strong> : text)
-                      )}
+                      {msg.content.split('**').map((text, i) => i % 2 === 1 ? <strong key={i} className="font-semibold">{text}</strong> : text)}
                     </div>
                     <span className="text-[9px] opacity-75 block text-right mt-1 font-mono">
                       {msg.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}

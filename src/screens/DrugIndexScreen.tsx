@@ -372,7 +372,7 @@ export default function DrugIndexScreen() {
             </div>
 
             {/* Right Main Panel: Monograph presentation */}
-            <div className="md:col-span-2 lg:col-span-3 min-h-[400px]">
+            <div className="md:col-span-2 lg:col-span-3 min-h-[400px] min-w-0">
               {isLoading ? (
                 <div className="w-full h-full bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 flex flex-col items-center justify-center text-center space-y-4">
                   <div className="p-4 bg-[var(--primary-container)] rounded-full animate-pulse">
@@ -404,7 +404,7 @@ export default function DrugIndexScreen() {
                   </button>
                 </div>
               ) : monograph ? (
-                <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-8 shadow-sm space-y-6 text-left animate-in fade-in duration-300">
+                <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-4 sm:p-6 md:p-8 shadow-sm space-y-6 text-left animate-in fade-in duration-300">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[var(--border)]">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 bg-[var(--primary-container)] rounded-xl flex items-center justify-center text-[var(--primary)] shrink-0">
@@ -425,7 +425,7 @@ export default function DrugIndexScreen() {
                     </button>
                   </div>
 
-                  <div className="markdown-body text-[var(--text)] max-w-none">
+                  <div className="markdown-body text-[var(--text)] max-w-none min-w-0">
                     <ReactMarkdown
                       components={{
                         table: ({ children }) => (
@@ -440,13 +440,13 @@ export default function DrugIndexScreen() {
                         tr: ({ children }) => <tr className="hover:bg-[var(--surface-dim)]/40 transition-colors">{children}</tr>,
                         th: ({ children }) => <th className="p-3 font-semibold text-[var(--text)] uppercase tracking-wider text-[10px] sm:text-xs bg-[var(--surface-dim)] whitespace-nowrap">{children}</th>,
                         td: ({ children }) => <td className="p-3 text-[var(--text-secondary)] leading-normal">{children}</td>,
-                        h1: ({ children }) => <h1 className="text-base sm:text-lg font-bold text-[var(--text)] mt-4 mb-2 tracking-tight border-b border-[var(--border)] pb-1">{children}</h1>,
-                        h2: ({ children }) => <h2 className="text-sm sm:text-base font-bold text-[var(--text)] mt-4 mb-2 tracking-tight">{children}</h2>,
-                        h3: ({ children }) => <h3 className="text-xs sm:text-sm font-bold text-[var(--text)] mt-3 mb-1.5 tracking-tight">{children}</h3>,
-                        p: ({ children }) => <p className="text-xs sm:text-sm leading-relaxed text-[var(--text-secondary)] mb-2.5 last:mb-0">{children}</p>,
-                        ul: ({ children }) => <ul className="list-disc pl-5 mb-3.5 space-y-1 text-xs sm:text-sm text-[var(--text-secondary)]">{children}</ul>,
-                        ol: ({ children }) => <ol className="list-decimal pl-5 mb-3.5 space-y-1 text-xs sm:text-sm text-[var(--text-secondary)]">{children}</ol>,
-                        li: ({ children }) => <li className="leading-relaxed">{children}</li>,
+                        h1: ({ children }) => <h1 className="text-lg sm:text-xl font-bold text-[var(--primary)] mt-6 mb-3 tracking-tight border-b border-[var(--border)] pb-1.5">{children}</h1>,
+                        h2: ({ children }) => <h2 className="text-base sm:text-lg font-semibold text-[var(--text)] mt-5 mb-2.5 tracking-tight">{children}</h2>,
+                        h3: ({ children }) => <h3 className="text-sm sm:text-base font-semibold text-[var(--text-secondary)] mt-4 mb-2">{children}</h3>,
+                        p: ({ children }) => <p className="text-sm leading-relaxed text-[var(--text-secondary)] mb-3 last:mb-0">{children}</p>,
+                        ul: ({ children }) => <ul className="list-disc pl-5 mb-4 space-y-1.5 text-sm text-[var(--text-secondary)]">{children}</ul>,
+                        ol: ({ children }) => <ol className="list-decimal pl-5 mb-4 space-y-1.5 text-sm text-[var(--text-secondary)]">{children}</ol>,
+                        li: ({ children }) => <li className="leading-relaxed text-sm">{children}</li>,
                       }}
                     >
                       {monograph}

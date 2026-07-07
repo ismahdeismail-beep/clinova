@@ -6,7 +6,6 @@ import {
   Download, FileDown, Copy, Check, Paperclip, Menu, Plus, Settings
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { GhostWriterText } from '../components/GhostWriterText';
 import { RAGRouter } from '../services/ragRouter';
 import ReactMarkdown from 'react-markdown';
 import { jsPDF } from 'jspdf';

@@ -4,6 +4,7 @@ import {
   Search, Home, Users, FolderOpen, ClipboardList, Pill, 
   Bot, BookOpen, BarChart3, Bell, Settings, ShieldCheck, X, Moon
 } from 'lucide-react';
+import { useTheme } from '../contexts/ThemeContext';
 
 type Action = {
   id: string;
@@ -20,6 +21,7 @@ export function CommandPalette() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const navigate = useNavigate();
   const inputRef = useRef<HTMLInputElement>(null);
+  const { toggleTheme } = useTheme();
 
   const actions: Action[] = [
     { id: 'dashboard', label: 'Go to Dashboard', icon: Home, path: '/', shortcut: ['shift', 'h'] },
@@ -37,10 +39,7 @@ export function CommandPalette() {
       label: 'Toggle Theme', 
       icon: Moon, 
       action: () => {
-        document.documentElement.classList.toggle('dark');
-        // If we want to persist, we could save to localStorage
-        const isDark = document.documentElement.classList.contains('dark');
-        localStorage.setItem('clinova_theme', isDark ? 'dark' : 'light');
+        toggleTheme();
       },
       shortcut: ['shift', 't']
     },

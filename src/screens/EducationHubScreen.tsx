@@ -4,7 +4,7 @@ import {
   BookOpen, ChevronRight, Search, Activity, Accessibility, Dna, FlaskConical, 
   Droplets, Flame, Beaker, HeartPulse, Bug, Skull, Heart, Award, FileText,
   Briefcase, HelpCircle, Layers, Headphones, FileArchive, Calendar, BrainCircuit,
-  Bookmark, Download, History, ChevronLeft, Bot, Play, FileUp, List, Sparkles, CheckCircle2, Clock, Database
+  Bookmark, Download, History, ChevronLeft, Bot, Play, FileUp, List, Sparkles, CheckCircle2, Clock, Database, Mic
 } from 'lucide-react';
 import Markdown from 'react-markdown';
 import { MODULES, LearningModule, LearningUnit } from '../data/educationHubData';
@@ -25,6 +25,10 @@ export default function EducationHubScreen() {
     }
     if (mod.id === 'drug_info') {
       navigate('/drugs');
+      return;
+    }
+    if (mod.id === 'oral_practice') {
+      navigate('/oral-practice');
       return;
     }
     setSelectedModule(mod);
@@ -169,7 +173,7 @@ function ModuleIcon({ name, className }: { name: string, className?: string }) {
   const icons: Record<string, any> = {
     Activity, Accessibility, Dna, FlaskConical, Droplets, Flame, Beaker, HeartPulse,
     BookOpen, Bug, Skull, Heart, Award, FileText, Briefcase, HelpCircle, Layers,
-    Headphones, FileArchive, Calendar, BrainCircuit, Bookmark, Download, History
+    Headphones, FileArchive, Calendar, BrainCircuit, Bookmark, Download, History, Mic
   };
   const Icon = icons[name] || BookOpen;
   return <Icon className={className} size={24} />;

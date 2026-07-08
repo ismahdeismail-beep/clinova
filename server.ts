@@ -1450,6 +1450,154 @@ At the end of your response, include a section with:
   }
 });
 
+// Oral Practice - Question Generator
+app.post('/api/gemini/oral-practice/generate', async (req, res) => {
+  try {
+    const { mode, category, difficulty, specificItem, history } = req.body;
+    
+    let prompt = "";
+    let responseSchema: any = {};
+    
+    if (mode === 'mcq') {
+      prompt = `You are an expert Pharmacy and Clinical Education Examiner.
+Generate a high-yield Multiple Choice Question (MCQ) for oral preparation in the category "${category}".
+Difficulty level: ${difficulty}.
+${specificItem ? `Focus on this specific topic: ${specificItem}` : ""}
+${history && history.length > 0 ? `Avoid repeating these recently asked questions: ${JSON.stringify(history)}` : ""}
+
+Generate a realistic, clinically accurate question with exactly 4 options. One option must be correct.
+Provide an in-depth explanation detailing why the correct answer is right and why the other options are incorrect.`;
+
+      responseSchema = {
+        type: Type.OBJECT,
+        properties: {
+          question: { type: Type.STRING },
+          options: {
+            type: Type.ARRAY,
+            items: { type: Type.STRING }
+          },
+          answerIndex: { type: Type.NUMBER, description: "0-based index of the correct answer" },
+          explanation: { type: Type.STRING, description: "Detailed clinical explanation for correct/incorrect answers" }
+        },
+        required: ["question", "options", "answerIndex", "explanation"]
+      };
+    } else {
+      prompt = `You are a clinical examiner for medical, pharmacy, and healthcare students (such as in OSCEs, ward rounds, viva voce, or oral exams).
+Generate a high-yield oral practice question.
+Mode: ${mode}
+Category: ${category}
+Difficulty: ${difficulty}
+${specificItem ? `Focus item (drug/disease/scenario): ${specificItem}` : ""}
+${history && history.length > 0 ? `Avoid repeating these recently asked questions: ${JSON.stringify(history)}` : ""}
+
+Depending on the mode, tailor the output:
+- 'viva': Classic oral viva question. A direct, academic yet practical question.
+- 'rapid': Short, high-intensity question.
+- 'case': Present a realistic patient scenario (e.g. including age, chief complaint, vitals or labs) followed by a direct oral question.
+- 'drug': Ask a detailed clinical question focused on the mechanism, side effects, interactions, or counseling for the specified drug.
+- 'disease': Ask a clinical pharmacy or pharmacotherapy management question around the specified disease.
+
+Provide brief "promptGuidance" (a 1-sentence hint or tip for the student on what they should cover in their answer).`;
+
+      responseSchema = {
+        type: Type.OBJECT,
+        properties: {
+          question: { type: Type.STRING, description: "The oral examiner's question" },
+          promptGuidance: { type: Type.STRING, description: "1-sentence hint or focus tip for the student" },
+          patientScenario: { type: Type.STRING, description: "Detailed patient scenario if mode is case, otherwise empty" }
+        },
+        required: ["question", "promptGuidance"]
+      };
+    }
+    
+    const response = await generateContentWithFallback({
+      model: 'gemini-3.5-flash',
+      contents: prompt,
+      config: {
+        responseMimeType: 'application/json',
+        responseSchema: responseSchema,
+        systemInstruction: "You are Clinova's Oral Examination Simulator. You generate accurate, highly relevant, and challenging questions for healthcare students preparing for OSCEs, Vivas, and Ward Rounds."
+      }
+    });
+    
+    const parsed = safeJsonParse(response.text, {});
+    res.json(parsed);
+  } catch (error: any) {
+    console.error('Oral practice question generation error:', error);
+    res.status(500).json({ error: error.message || 'Failed to generate oral practice question' });
+  }
+});
+
+// Oral Practice - Student Answer Evaluator
+app.post('/api/gemini/oral-practice/evaluate', async (req, res) => {
+  try {
+    const { question, studentResponse, mode, category, difficulty, specificItem, patientScenario } = req.body;
+    
+    if (!studentResponse) {
+      return res.status(400).json({ error: 'Missing student response' });
+    }
+    
+    const prompt = `You are a strict yet constructive clinical examiner evaluating a student's oral or typed response.
+Evaluate the response based on clinical accuracy, completeness, structure, and professional language.
+
+Examiner Context:
+- Question Asked: ${question}
+${patientScenario ? `- Patient Scenario: ${patientScenario}` : ""}
+- Mode: ${mode}
+- Category: ${category}
+- Difficulty: ${difficulty}
+${specificItem ? `- Specific Topic: ${specificItem}` : ""}
+
+Student's Response:
+"${studentResponse}"
+
+Evaluate and score the answer out of 100.
+Provide:
+1. Overall score (0-100)
+2. 2-4 key Strengths (what they got right, accurate clinical points, etc.)
+3. 2-4 key Areas for Improvement (what they missed, contraindications they forgot to mention, counseling points omitted, etc.)
+4. Ideal Answer: A gold-standard model response an expert clinical pharmacist or consultant physician would give.
+5. Key Learning Points: 2-3 critical facts, pearls, clinical mnemonics, or common mistakes related to this specific topic.`;
+
+    const responseSchema = {
+      type: Type.OBJECT,
+      properties: {
+        score: { type: Type.NUMBER },
+        strengths: {
+          type: Type.ARRAY,
+          items: { type: Type.STRING }
+        },
+        improvements: {
+          type: Type.ARRAY,
+          items: { type: Type.STRING }
+        },
+        idealAnswer: { type: Type.STRING },
+        learningPoints: {
+          type: Type.ARRAY,
+          items: { type: Type.STRING }
+        }
+      },
+      required: ["score", "strengths", "improvements", "idealAnswer", "learningPoints"]
+    };
+    
+    const response = await generateContentWithFallback({
+      model: 'gemini-3.5-flash',
+      contents: prompt,
+      config: {
+        responseMimeType: 'application/json',
+        responseSchema: responseSchema,
+        systemInstruction: "You are an elite clinical medical and pharmacy oral board examiner. You evaluate student responses critically and constructively, offering accurate, evidence-based feedback."
+      }
+    });
+    
+    const parsed = safeJsonParse(response.text, {});
+    res.json(parsed);
+  } catch (error: any) {
+    console.error('Oral practice evaluation error:', error);
+    res.status(500).json({ error: error.message || 'Failed to evaluate response' });
+  }
+});
+
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Clinova core backend running on port ${PORT}`);  });
 }

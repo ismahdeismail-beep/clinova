@@ -221,5 +221,13 @@ export const MODULES: LearningModule[] = [
     icon: 'History',
     color: 'blue',
     units: []
+  },
+  {
+    id: 'oral_practice',
+    title: 'Oral Practice',
+    description: 'Prepare for viva voce examinations, OSCE stations, and ward rounds with real-time timed AI voice practice.',
+    icon: 'Mic',
+    color: 'fuchsia',
+    units: []
   }
 ];

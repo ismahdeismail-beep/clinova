@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate, Navigate 
 import { 
   Home, Users, FolderOpen, ClipboardList, Pill, Bot, 
   BookOpen, BarChart3, Bell, Settings, Menu, Search, MessageSquare, ShieldCheck, Database,
-  X, LogOut, Cpu
+  X, LogOut, Cpu, Mic
 } from 'lucide-react';
 
 const DashboardScreen = React.lazy(() => import('./screens/DashboardScreen'));
@@ -15,6 +15,7 @@ const ClinicalAssistantScreen = React.lazy(() => import('./screens/ClinicalAssis
 const EducationHubScreen = React.lazy(() => import('./screens/EducationHubScreen'));
 const KnowledgeBaseManagerScreen = React.lazy(() => import('./screens/KnowledgeBaseManagerScreen'));
 const AiOrchestrationScreen = React.lazy(() => import('./screens/AiOrchestrationScreen'));
+const OralPracticeScreen = React.lazy(() => import('./screens/OralPracticeScreen'));
 const NotificationsScreen = React.lazy(() => import('./screens/NotificationsScreen'));
 const SettingsScreen = React.lazy(() => import('./screens/SettingsScreen'));
 const AdminDashboardScreen = React.lazy(() => import('./screens/AdminDashboardScreen'));
@@ -116,6 +117,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
     { to: '/review', label: 'Pharmacotherapy Review', icon: ClipboardList },
     { to: '/drugs', label: 'Drug Index', icon: Pill },
     { to: '/assistant', label: 'Clinical Assistant', icon: Bot },
+    { to: '/oral-practice', label: 'Oral Practice', icon: Mic },
     { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
     ...(userData?.role === 'admin' ? [
       { to: '/admin', label: 'Admin Console', icon: ShieldCheck },
@@ -295,6 +297,7 @@ function AppContent() {
               <Route path="/review" element={<PharmacotherapyReviewScreen />} />
               <Route path="/drugs" element={<DrugIndexScreen />} />
               <Route path="/assistant" element={<ClinicalAssistantScreen />} />
+              <Route path="/oral-practice" element={<OralPracticeScreen />} />
               <Route path="/knowledge" element={<EducationHubScreen />} />
               <Route path="/admin" element={
                 <ProtectedRoute requiredRole="admin">

@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-bg: var(--bg);
   --color-surface: var(--surface);
@@ -33,7 +35,7 @@
     --success: #10B981;
   }
   
-  :root.dark {
+  :root.dark, .dark {
     --bg: #0F172A; /* Slate 900 */
     --surface: #1E293B; /* Slate 800 */
     --surface-dim: #334155; /* Slate 700 */

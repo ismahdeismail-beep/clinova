@@ -9,7 +9,6 @@ import { db } from '../lib/firebase';
 import { collection, getDocs } from 'firebase/firestore';
 import { Patient } from '../components/PatientQuickSummary';
 import { getMonographCached, pinMonograph } from '../lib/getMonograph';
-import { ClinicalDataAttribution } from '../components/ClinicalDataAttribution';
 
 interface QuickDrug {
   name: string;
@@ -1152,7 +1151,6 @@ export default function DrugIndexScreen() {
 
         </div>
       )}
-      <ClinicalDataAttribution />
     </div>
   );
 }

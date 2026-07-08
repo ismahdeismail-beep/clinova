@@ -12,7 +12,6 @@ import { jsPDF } from 'jspdf';
 import { ChatSessionList } from '../components/ChatSessionList';
 import { saveChatSession, ChatSession } from '../lib/localDb';
 import { StorageService } from '../services/storage.service';
-import { ClinicalDataAttribution } from '../components/ClinicalDataAttribution';
 
 interface Citation {
   source: string;
@@ -1280,7 +1279,7 @@ export default function ClinicalAssistantScreen() {
                     <div className="flex items-start gap-2.5 max-w-full group/bubble">
                       <div className={`rounded-3xl px-5 py-4 shadow-sm text-base leading-relaxed ${
                         isUser 
-                          ? 'bg-[var(--primary)] text-[var(--text)] rounded-tr-none shadow-md font-medium' 
+                          ? 'bg-[var(--primary)] text-[var(--primary-foreground)] rounded-tr-none shadow-md font-medium' 
                           : 'bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] rounded-tl-none shadow-xs'
                       }`}>
                         {isUser ? (
@@ -1389,7 +1388,6 @@ export default function ClinicalAssistantScreen() {
             </div>
           )}
           
-          <ClinicalDataAttribution />
         </div>
 
         {/* Floating Scroll Bottom Button */}

@@ -11,6 +11,16 @@ export interface CustomUnit {
   createdAt: number;
 }
 
+export interface SubFolder {
+  id: string;
+  userId: string;
+  unitId: string;     // Top-level unit or custom unit ID
+  parentId: string;   // 'root' or another subfolder ID
+  title: string;
+  description: string;
+  createdAt: number;
+}
+
 export interface SavedFlashcard {
   id: string;
   unitId: string;
@@ -97,6 +107,71 @@ export const EducationService = {
       const list: CustomUnit[] = JSON.parse(cached);
       const filtered = list.filter((u) => u.id !== unitId);
       localStorage.setItem(`custom_units_${userId}_${moduleId}`, JSON.stringify(filtered));
+    }
+  },
+
+  // --- SUB-FOLDERS (RECURSIVE STRUCTURES) ---
+  async getSubFolders(userId: string, unitId: string): Promise<SubFolder[]> {
+    try {
+      const q = query(
+        collection(db, 'custom_subfolders'),
+        where('userId', '==', userId),
+        where('unitId', '==', unitId)
+      );
+      const snapshot = await getDocs(q);
+      const folders: SubFolder[] = [];
+      snapshot.forEach((doc) => {
+        folders.push({ id: doc.id, ...doc.data() } as SubFolder);
+      });
+      // Cache locally
+      localStorage.setItem(`subfolders_${userId}_${unitId}`, JSON.stringify(folders));
+      return folders;
+    } catch (err) {
+      console.warn('[EducationService] Firestore load failed, loading from local cache:', err);
+      const cached = localStorage.getItem(`subfolders_${userId}_${unitId}`);
+      return cached ? JSON.parse(cached) : [];
+    }
+  },
+
+  async createSubFolder(userId: string, unitId: string, parentId: string, title: string, description?: string): Promise<SubFolder> {
+    const folderId = `fold_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`;
+    const newFolder: SubFolder = {
+      id: folderId,
+      userId,
+      unitId,
+      parentId,
+      title,
+      description: description || '',
+      createdAt: Date.now()
+    };
+
+    try {
+      await setDoc(doc(db, 'custom_subfolders', folderId), newFolder);
+    } catch (err) {
+      console.warn('[EducationService] Firestore save failed, using local backup:', err);
+    }
+
+    // Always update local cache
+    const cached = localStorage.getItem(`subfolders_${userId}_${unitId}`);
+    const list: SubFolder[] = cached ? JSON.parse(cached) : [];
+    list.push(newFolder);
+    localStorage.setItem(`subfolders_${userId}_${unitId}`, JSON.stringify(list));
+
+    return newFolder;
+  },
+
+  async deleteSubFolder(userId: string, unitId: string, folderId: string): Promise<void> {
+    try {
+      await deleteDoc(doc(db, 'custom_subfolders', folderId));
+    } catch (err) {
+      console.warn('[EducationService] Firestore delete failed:', err);
+    }
+
+    const cached = localStorage.getItem(`subfolders_${userId}_${unitId}`);
+    if (cached) {
+      const list: SubFolder[] = JSON.parse(cached);
+      const filtered = list.filter((f) => f.id !== folderId);
+      localStorage.setItem(`subfolders_${userId}_${unitId}`, JSON.stringify(filtered));
     }
   },
 

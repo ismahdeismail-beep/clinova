@@ -12,7 +12,7 @@ import { MODULES, LearningModule, LearningUnit } from '../data/educationHubData'
 import FileUploader from '../components/FileUploader';
 import { useFileStore } from '../store/fileStore';
 import { useAuth } from '../contexts/AuthContext';
-import { EducationService, CustomUnit, SavedFlashcard, SavedQuiz } from '../services/education.service';
+import { EducationService, CustomUnit, SubFolder, SavedFlashcard, SavedQuiz } from '../services/education.service';
 
 export default function EducationHubScreen() {
   const navigate = useNavigate();
@@ -403,16 +403,103 @@ function ModuleCard({ module, onClick }: { module: LearningModule, onClick: () =
 }
 
 // ==========================================
-// UPGRADED LEARNING WORKSPACE
+// UPGRADED LEARNING WORKSPACE WITH RECURSIVE SUB-FOLDERS
 // ==========================================
 function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, module: LearningModule, onBack: () => void }) {
   const [activeTab, setActiveTab] = useState('overview');
   const { fetchFiles } = useFileStore();
+  const { userData } = useAuth();
+
+  // Folder states
+  const [subFolders, setSubFolders] = useState<SubFolder[]>([]);
+  const [currentFolderId, setCurrentFolderId] = useState(unit.id);
+  const [folderStack, setFolderStack] = useState<SubFolder[]>([]);
+  const [showAddFolder, setShowAddFolder] = useState(false);
+  const [newFolderName, setNewFolderName] = useState('');
+  const [newFolderDesc, setNewFolderDesc] = useState('');
+
+  // Fetch subfolders from service
+  const fetchFolders = async () => {
+    if (userData) {
+      try {
+        const folders = await EducationService.getSubFolders(userData.id, unit.id);
+        setSubFolders(folders);
+      } catch (err) {
+        console.error('Error fetching subfolders:', err);
+      }
+    }
+  };
+
+  useEffect(() => {
+    fetchFolders();
+  }, [userData, unit.id]);
 
   // Reload files when workspace mounts
   useEffect(() => {
     fetchFiles('study_source');
   }, [fetchFiles, unit.id]);
+
+  const activeParentId = currentFolderId === unit.id ? 'root' : currentFolderId;
+  const currentLevelFolders = subFolders.filter(f => f.parentId === activeParentId);
+  const currentFolderName = currentFolderId === unit.id 
+    ? unit.title 
+    : subFolders.find(f => f.id === currentFolderId)?.title || unit.title;
+
+  const handleCreateFolder = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!userData || !newFolderName.trim()) return;
+
+    try {
+      await EducationService.createSubFolder(
+        userData.id, 
+        unit.id, 
+        activeParentId, 
+        newFolderName.trim(), 
+        newFolderDesc.trim()
+      );
+      setNewFolderName('');
+      setNewFolderDesc('');
+      setShowAddFolder(false);
+      await fetchFolders();
+    } catch (err) {
+      console.error('Error creating folder:', err);
+    }
+  };
+
+  const handleDeleteFolder = async (folderId: string) => {
+    if (!userData) return;
+    if (window.confirm('Are you sure you want to delete this sub-folder? All nested items will be detached.')) {
+      try {
+        await EducationService.deleteSubFolder(userData.id, unit.id, folderId);
+        // If current active directory was deleted or was a descendant of deleted folder, reset to root
+        const isCurrentDeleted = currentFolderId === folderId;
+        const isParentInStackDeleted = folderStack.some(f => f.id === folderId);
+        if (isCurrentDeleted || isParentInStackDeleted) {
+          setCurrentFolderId(unit.id);
+          setFolderStack([]);
+        }
+        await fetchFolders();
+      } catch (err) {
+        console.error('Error deleting folder:', err);
+      }
+    }
+  };
+
+  const handleNavigateToRoot = () => {
+    setCurrentFolderId(unit.id);
+    setFolderStack([]);
+  };
+
+  const handleNavigateToStack = (idx: number) => {
+    const clicked = folderStack[idx];
+    setCurrentFolderId(clicked.id);
+    setFolderStack(folderStack.slice(0, idx + 1));
+  };
+
+  const handleEnterFolder = (folder: SubFolder) => {
+    setCurrentFolderId(folder.id);
+    setFolderStack([...folderStack, folder]);
+  };
 
   const tabs = [
     { id: 'overview', label: 'Study Guide' },
@@ -437,13 +524,146 @@ function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, modul
             <div className="flex items-center gap-3 text-xs text-[var(--text-muted)] mt-1">
               <span>{module.title}</span>
               <span>&bull;</span>
-              <span>Workspace</span>
+              <span>Workspace Directory</span>
             </div>
           </div>
         </div>
       </div>
 
+      {/* RECURSIVE SUB-FOLDERS CONTAINER */}
+      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-5 mb-6 shadow-sm space-y-4">
+        {/* Breadcrumb Navigation Row */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[var(--border)]/40">
+          <div className="flex flex-wrap items-center gap-1.5 text-xs font-semibold text-[var(--text-muted)]">
+            <button 
+              onClick={handleNavigateToRoot}
+              className={`flex items-center gap-1 hover:text-[var(--primary)] transition-colors ${currentFolderId === unit.id ? 'text-[var(--primary)] font-extrabold' : ''}`}
+            >
+              <Folder size={14} className={currentFolderId === unit.id ? 'text-[var(--primary)]' : 'text-amber-500'} />
+              <span>{unit.title}</span>
+            </button>
+            
+            {folderStack.map((folder, idx) => (
+              <React.Fragment key={folder.id}>
+                <ChevronRight size={12} className="opacity-60 shrink-0" />
+                <button
+                  onClick={() => handleNavigateToStack(idx)}
+                  className={`hover:text-[var(--primary)] transition-colors shrink-0 ${idx === folderStack.length - 1 ? 'text-[var(--primary)] font-extrabold' : ''}`}
+                >
+                  <span>{folder.title}</span>
+                </button>
+              </React.Fragment>
+            ))}
+          </div>
+
+          <button
+            onClick={() => setShowAddFolder(!showAddFolder)}
+            className="px-3.5 py-1.5 bg-[var(--primary)]/10 text-[var(--primary)] hover:bg-[var(--primary)]/20 rounded-xl text-xs font-extrabold transition-all flex items-center gap-1.5 cursor-pointer self-start sm:self-auto shrink-0"
+          >
+            <FolderPlus size={14} />
+            New Folder
+          </button>
+        </div>
+
+        {/* Inline Create Sub-Folder Dialog */}
+        {showAddFolder && (
+          <form onSubmit={handleCreateFolder} className="p-4 bg-[var(--surface-dim)]/50 border border-[var(--border)]/40 rounded-2xl space-y-3 max-w-md animate-in slide-in-from-top-2 duration-200">
+            <h4 className="text-xs font-black text-[var(--text)] uppercase tracking-wider flex items-center gap-1">
+              <FolderPlus size={13} className="text-[var(--primary)]" /> Create Sub-folder in {currentFolderName}
+            </h4>
+            <div className="space-y-2">
+              <input
+                type="text"
+                required
+                placeholder="Sub-folder Name (e.g. Anticancers, Vitamins, Endocrine)"
+                value={newFolderName}
+                onChange={(e) => setNewFolderName(e.target.value)}
+                className="w-full px-3.5 py-2 bg-[var(--bg)] border border-[var(--border)] rounded-xl text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[var(--primary)] text-[var(--text)]"
+              />
+              <input
+                type="text"
+                placeholder="Brief Description (e.g. Cytotoxic agents and protocols)"
+                value={newFolderDesc}
+                onChange={(e) => setNewFolderDesc(e.target.value)}
+                className="w-full px-3.5 py-2 bg-[var(--bg)] border border-[var(--border)] rounded-xl text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[var(--primary)] text-[var(--text)]"
+              />
+            </div>
+            <div className="flex gap-2">
+              <button
+                type="submit"
+                className="px-3.5 py-1.5 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-xl text-xs font-bold hover:opacity-95 transition-all cursor-pointer"
+              >
+                Create
+              </button>
+              <button
+                type="button"
+                onClick={() => setShowAddFolder(false)}
+                className="px-3.5 py-1.5 border border-[var(--border)] text-[var(--text)] rounded-xl text-xs font-bold hover:bg-[var(--surface-dim)] transition-all cursor-pointer"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        )}
+
+        {/* Directory Contents Row/Grid */}
+        {currentLevelFolders.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+            {currentLevelFolders.map((folder) => (
+              <div
+                key={folder.id}
+                onClick={() => handleEnterFolder(folder)}
+                className="group border border-[var(--border)]/60 rounded-xl p-3 flex items-start justify-between hover:border-[var(--primary)] hover:bg-[var(--primary)]/5 cursor-pointer transition-all shadow-xs"
+              >
+                <div className="flex items-start gap-2.5 min-w-0">
+                  <div className="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0">
+                    <Folder size={18} />
+                  </div>
+                  <div className="min-w-0">
+                    <h5 className="text-xs font-extrabold text-[var(--text)] truncate group-hover:text-[var(--primary)] transition-colors">
+                      {folder.title}
+                    </h5>
+                    {folder.description && (
+                      <p className="text-[10px] text-[var(--text-muted)] line-clamp-1">
+                        {folder.description}
+                      </p>
+                    )}
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleDeleteFolder(folder.id);
+                  }}
+                  className="p-1 text-[var(--text-muted)] hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/40 rounded-lg transition-colors cursor-pointer"
+                  title="Delete subfolder"
+                >
+                  <Trash2 size={13} />
+                </button>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="text-[11px] text-[var(--text-muted)] font-semibold italic flex items-center gap-1.5">
+            <Folder size={13} className="text-amber-500 opacity-60" />
+            <span>This directory has no subfolders yet. Click "New Folder" to sub-categorize your materials.</span>
+          </p>
+        )}
+      </div>
+
       <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl shadow-sm overflow-hidden flex flex-col min-h-[650px]">
+        {/* Active Context Bar */}
+        <div className="bg-amber-500/5 px-6 py-2.5 border-b border-[var(--border)]/40 flex items-center justify-between text-xs font-bold text-[var(--text)]">
+          <span className="flex items-center gap-1.5 text-[var(--text)]">
+            <Folder size={13} className="text-amber-500" />
+            Active Sub-folder: <span className="text-[var(--primary)] underline">{currentFolderName}</span>
+          </span>
+          <span className="text-[10px] text-[var(--text-muted)]">
+            All AI tools and notes will sync specifically within this subfolder context.
+          </span>
+        </div>
+
         {/* Workspace Tabs */}
         <div className="flex overflow-x-auto border-b border-[var(--border)] no-scrollbar bg-[var(--surface-dim)]/40">
           {tabs.map(tab => (
@@ -463,12 +683,12 @@ function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, modul
 
         {/* Workspace Content */}
         <div className="flex-1 p-6 bg-[var(--bg)]">
-          {activeTab === 'overview' && <WorkspaceOverview unit={unit} module={module} />}
-          {activeTab === 'tutor' && <WorkspaceTutor unit={unit} module={module} />}
-          {activeTab === 'notes' && <WorkspaceNotes unit={unit} />}
-          {activeTab === 'resources' && <WorkspaceResources unit={unit} />}
-          {activeTab === 'flashcards' && <WorkspaceFlashcards unit={unit} module={module} />}
-          {activeTab === 'mcqs' && <WorkspaceQuizzes unit={unit} module={module} />}
+          {activeTab === 'overview' && <WorkspaceOverview unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
+          {activeTab === 'tutor' && <WorkspaceTutor unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
+          {activeTab === 'notes' && <WorkspaceNotes unit={unit} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
+          {activeTab === 'resources' && <WorkspaceResources unit={unit} currentFolderId={currentFolderId} />}
+          {activeTab === 'flashcards' && <WorkspaceFlashcards unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
+          {activeTab === 'mcqs' && <WorkspaceQuizzes unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
         </div>
       </div>
     </div>
@@ -478,27 +698,29 @@ function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, modul
 // ==========================================
 // WORKSPACE OVERVIEW & AI STUDY GUIDE
 // ==========================================
-function WorkspaceOverview({ unit, module }: { unit: LearningUnit, module: LearningModule }) {
+function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName }: { unit: LearningUnit, module: LearningModule, currentFolderId: string, currentFolderName: string }) {
   const { files } = useFileStore();
   const [summary, setSummary] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [customNotes, setCustomNotes] = useState('');
 
-  const unitFiles = files.filter(f => f.category === 'study_source' && f.studyId === unit.id);
+  const unitFiles = files.filter(f => f.category === 'study_source' && f.studyId === currentFolderId);
 
   // Load existing summary and custom notes text
   useEffect(() => {
     const loadData = async () => {
-      const savedSummary = await EducationService.getSummary(unit.id);
+      const savedSummary = await EducationService.getSummary(currentFolderId);
       setSummary(savedSummary);
 
-      const savedCustomNotes = localStorage.getItem(`custom_notes_${unit.id}`);
+      const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`);
       if (savedCustomNotes) {
         setCustomNotes(savedCustomNotes);
+      } else {
+        setCustomNotes('');
       }
     };
     loadData();
-  }, [unit.id]);
+  }, [currentFolderId]);
 
   const handleGenerateSummary = async () => {
     setLoading(true);
@@ -516,7 +738,7 @@ function WorkspaceOverview({ unit, module }: { unit: LearningUnit, module: Learn
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          unitTitle: unit.title,
+          unitTitle: currentFolderName,
           moduleTitle: module.title,
           notesText: context || undefined
         })
@@ -526,7 +748,7 @@ function WorkspaceOverview({ unit, module }: { unit: LearningUnit, module: Learn
       const data = await res.json();
       
       if (data.summary) {
-        await EducationService.saveSummary(unit.id, data.summary);
+        await EducationService.saveSummary(currentFolderId, data.summary);
         setSummary(data.summary);
       }
     } catch (err) {
@@ -675,7 +897,7 @@ function WorkspaceOverview({ unit, module }: { unit: LearningUnit, module: Learn
 // ==========================================
 // WORKSPACE TUTOR (INTELLIGENT RECALL CHAT)
 // ==========================================
-function WorkspaceTutor({ unit, module }: { unit: LearningUnit, module: LearningModule }) {
+function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName }: { unit: LearningUnit, module: LearningModule, currentFolderId: string, currentFolderName: string }) {
   const { files } = useFileStore();
   const [tutorMessage, setTutorMessage] = useState('');
   const [tutorChat, setTutorChat] = useState<{ role: 'user' | 'assistant', content: string }[]>([]);
@@ -685,9 +907,9 @@ function WorkspaceTutor({ unit, module }: { unit: LearningUnit, module: Learning
   // Initialize tutor message
   useEffect(() => {
     setTutorChat([
-      { role: 'assistant', content: `Hello! I am your AI Clinical Tutor for **${unit.title}**. \n\nI have automatically indexed any revision notes you wrote and documents you uploaded for this unit. Ask me any pharmacological, therapeutic, or OSCE board exam questions regarding this topic!` }
+      { role: 'assistant', content: `Hello! I am your AI Clinical Tutor for **${currentFolderName}**. \n\nI have automatically indexed any revision notes you wrote and documents you uploaded for this folder. Ask me any pharmacological, therapeutic, or OSCE board exam questions regarding this topic!` }
     ]);
-  }, [unit.title]);
+  }, [currentFolderName]);
 
   const handleAskTutor = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -706,9 +928,9 @@ function WorkspaceTutor({ unit, module }: { unit: LearningUnit, module: Learning
 
     try {
       // Gather student notes/summary context to send alongside RAG
-      const savedSummary = await EducationService.getSummary(unit.id) || '';
-      const savedCustomNotes = localStorage.getItem(`custom_notes_${unit.id}`) || '';
-      const unitFiles = files.filter(f => f.category === 'study_source' && f.studyId === unit.id);
+      const savedSummary = await EducationService.getSummary(currentFolderId) || '';
+      const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || '';
+      const unitFiles = files.filter(f => f.category === 'study_source' && f.studyId === currentFolderId);
       
       let context = '';
       if (savedCustomNotes) context += `STUDENT SCRATCHPAD NOTES:\n${savedCustomNotes}\n`;
@@ -721,7 +943,7 @@ function WorkspaceTutor({ unit, module }: { unit: LearningUnit, module: Learning
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          unitTitle: unit.title,
+          unitTitle: currentFolderName,
           moduleTitle: module.title,
           userMessage: userMsg,
           chatHistory: newChat.slice(-10), // Send last 10 messages for continuous memory
@@ -734,7 +956,7 @@ function WorkspaceTutor({ unit, module }: { unit: LearningUnit, module: Learning
 
       setTutorChat([...newChat, { 
         role: 'assistant', 
-        content: data.reply || `I have successfully analyzed your query regarding **${unit.title}** based on standard drug indices. Please try asking again or check your notes upload.` 
+        content: data.reply || `I have successfully analyzed your query regarding **${currentFolderName}** based on standard drug indices. Please try asking again or check your notes upload.` 
       }]);
     } catch (error) {
       console.error('Error asking tutor:', error);
@@ -821,25 +1043,27 @@ function WorkspaceTutor({ unit, module }: { unit: LearningUnit, module: Learning
 // ==========================================
 // MY NOTES (UPLOAD & SCRATCHPAD NOTES)
 // ==========================================
-function WorkspaceNotes({ unit }: { unit: LearningUnit }) {
+function WorkspaceNotes({ unit, currentFolderId, currentFolderName }: { unit: LearningUnit, currentFolderId: string, currentFolderName: string }) {
   const { userData } = useAuth();
   const { files } = useFileStore();
   const [customNotes, setCustomNotes] = useState('');
   const [isSaved, setIsSaved] = useState(false);
   
-  // Filter files that belong to this unit (mocking with a unit tag)
-  const unitFiles = files.filter(f => f.category === 'study_source' && f.studyId === unit.id);
+  // Filter files that belong to this sub-folder
+  const unitFiles = files.filter(f => f.category === 'study_source' && f.studyId === currentFolderId);
 
-  // Load custom notes from local storage on mount
+  // Load custom notes from local storage on mount/folder change
   useEffect(() => {
-    const saved = localStorage.getItem(`custom_notes_${unit.id}`);
+    const saved = localStorage.getItem(`custom_notes_${currentFolderId}`);
     if (saved) {
       setCustomNotes(saved);
+    } else {
+      setCustomNotes('');
     }
-  }, [unit.id]);
+  }, [currentFolderId]);
 
   const handleSaveNotes = () => {
-    localStorage.setItem(`custom_notes_${unit.id}`, customNotes);
+    localStorage.setItem(`custom_notes_${currentFolderId}`, customNotes);
     setIsSaved(true);
     setTimeout(() => setIsSaved(false), 2000);
   };
@@ -855,9 +1079,9 @@ function WorkspaceNotes({ unit }: { unit: LearningUnit }) {
               <FileUp className="text-[var(--primary)]" size={18} /> Upload Academic Lectures
             </h3>
             <p className="text-xs text-[var(--text-muted)] leading-relaxed mb-4">
-              Upload course PDFs, slide decks, or protocol guidelines. Clinova AI analyzes these documents to populate your Study Guide, Flashcards, and MCQs.
+              Upload course PDFs, slide decks, or protocol guidelines for <strong className="text-[var(--primary)]">{currentFolderName}</strong>. Clinova AI analyzes these documents to populate your Study Guide, Flashcards, and MCQs.
             </p>
-            <FileUploader category="study_source" studyId={unit.id} />
+            <FileUploader category="study_source" studyId={currentFolderId} />
           </div>
 
           <div className="mt-6 border-t border-[var(--border)]/40 pt-4">
@@ -896,7 +1120,7 @@ function WorkspaceNotes({ unit }: { unit: LearningUnit }) {
           <div className="flex-1 flex flex-col">
             <div className="flex items-center justify-between mb-2">
               <h3 className="text-base font-bold text-[var(--text)] flex items-center gap-2">
-                <FileSignature className="text-purple-500" size={18} /> Revision Scratchpad Notes
+                <FileSignature className="text-purple-500" size={18} /> Scratchpad for {currentFolderName}
               </h3>
               <button
                 onClick={handleSaveNotes}
@@ -907,7 +1131,7 @@ function WorkspaceNotes({ unit }: { unit: LearningUnit }) {
               </button>
             </div>
             <p className="text-xs text-[var(--text-muted)] leading-relaxed mb-4">
-              Type or paste bullet points from class lectures, textbook pages, or drug lists. Your typed text is indexed synchronously with files.
+              Type or paste bullet points from class lectures, textbook pages, or drug lists specifically for <strong className="text-[var(--primary)]">{currentFolderName}</strong>. Your typed text is indexed synchronously with files.
             </p>
             
             <textarea
@@ -931,23 +1155,25 @@ function WorkspaceNotes({ unit }: { unit: LearningUnit }) {
 // ==========================================
 // WORKSPACE FLASHCARDS (ACTIVE RECALL)
 // ==========================================
-function WorkspaceFlashcards({ unit, module }: { unit: LearningUnit, module: LearningModule }) {
+function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName }: { unit: LearningUnit, module: LearningModule, currentFolderId: string, currentFolderName: string }) {
   const { files } = useFileStore();
   const [cards, setCards] = useState<SavedFlashcard[]>([]);
   const [loading, setLoading] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const unitFiles = files.filter(f => f.category === 'study_source' && f.studyId === unit.id);
+  const unitFiles = files.filter(f => f.category === 'study_source' && f.studyId === currentFolderId);
 
-  // Fetch saved flashcards on mount
+  // Fetch saved flashcards on mount/folder change
   useEffect(() => {
     const loadCards = async () => {
-      const saved = await EducationService.getFlashcards(unit.id);
+      const saved = await EducationService.getFlashcards(currentFolderId);
       setCards(saved);
+      setCurrentIndex(0);
+      setIsFlipped(false);
     };
     loadCards();
-  }, [unit.id]);
+  }, [currentFolderId]);
 
   const handleGenerateCards = async () => {
     setLoading(true);
@@ -955,15 +1181,15 @@ function WorkspaceFlashcards({ unit, module }: { unit: LearningUnit, module: Lea
     setCurrentIndex(0);
     try {
       // Gather source text
-      const savedSummary = await EducationService.getSummary(unit.id) || '';
-      const savedCustomNotes = localStorage.getItem(`custom_notes_${unit.id}`) || '';
+      const savedSummary = await EducationService.getSummary(currentFolderId) || '';
+      const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || '';
       const notesCombined = `${savedCustomNotes}\n\n${savedSummary}`;
 
       const res = await fetch('/api/gemini/generate-unit-flashcards', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          unitTitle: unit.title,
+          unitTitle: currentFolderName,
           moduleTitle: module.title,
           notesText: notesCombined.trim() || undefined
         })
@@ -973,7 +1199,7 @@ function WorkspaceFlashcards({ unit, module }: { unit: LearningUnit, module: Lea
       const data = await res.json();
       
       if (data.flashcards && data.flashcards.length > 0) {
-        const saved = await EducationService.saveFlashcards(unit.id, data.flashcards);
+        const saved = await EducationService.saveFlashcards(currentFolderId, data.flashcards);
         setCards(saved);
       }
     } catch (err) {
@@ -989,7 +1215,7 @@ function WorkspaceFlashcards({ unit, module }: { unit: LearningUnit, module: Lea
     const currentCard = cards[currentIndex];
     
     try {
-      await EducationService.updateFlashcardDifficulty(currentCard.id, difficulty, unit.id);
+      await EducationService.updateFlashcardDifficulty(currentCard.id, difficulty, currentFolderId);
       // Update local state statefully
       setCards(prev => prev.map((c, idx) => idx === currentIndex ? { ...c, difficulty } : c));
       
@@ -1155,7 +1381,7 @@ function WorkspaceFlashcards({ unit, module }: { unit: LearningUnit, module: Lea
 // ==========================================
 // WORKSPACE QUIZZES (INTERACTIVE MCQS ASSESSMENT)
 // ==========================================
-function WorkspaceQuizzes({ unit, module }: { unit: LearningUnit, module: LearningModule }) {
+function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName }: { unit: LearningUnit, module: LearningModule, currentFolderId: string, currentFolderName: string }) {
   const { files } = useFileStore();
   const [quizzes, setQuizzes] = useState<SavedQuiz[]>([]);
   const [loading, setLoading] = useState(false);
@@ -1165,14 +1391,19 @@ function WorkspaceQuizzes({ unit, module }: { unit: LearningUnit, module: Learni
   const [score, setScore] = useState(0);
   const [quizFinished, setQuizFinished] = useState(false);
 
-  // Load existing quizzes on mount
+  // Load existing quizzes on mount/folder change
   useEffect(() => {
     const loadQuizzes = async () => {
-      const saved = await EducationService.getQuizzes(unit.id);
+      const saved = await EducationService.getQuizzes(currentFolderId);
       setQuizzes(saved);
+      setCurrentIndex(0);
+      setSelectedAnswer(null);
+      setIsAnswered(false);
+      setScore(0);
+      setQuizFinished(false);
     };
     loadQuizzes();
-  }, [unit.id]);
+  }, [currentFolderId]);
 
   const handleGenerateQuiz = async () => {
     setLoading(true);
@@ -1182,15 +1413,15 @@ function WorkspaceQuizzes({ unit, module }: { unit: LearningUnit, module: Learni
     setIsAnswered(false);
     setScore(0);
     try {
-      const savedSummary = await EducationService.getSummary(unit.id) || '';
-      const savedCustomNotes = localStorage.getItem(`custom_notes_${unit.id}`) || '';
+      const savedSummary = await EducationService.getSummary(currentFolderId) || '';
+      const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || '';
       const notesCombined = `${savedCustomNotes}\n\n${savedSummary}`;
 
       const res = await fetch('/api/gemini/generate-unit-quiz', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          unitTitle: unit.title,
+          unitTitle: currentFolderName,
           moduleTitle: module.title,
           notesText: notesCombined.trim() || undefined
         })
@@ -1200,7 +1431,7 @@ function WorkspaceQuizzes({ unit, module }: { unit: LearningUnit, module: Learni
       const data = await res.json();
       
       if (data.quizzes && data.quizzes.length > 0) {
-        const saved = await EducationService.saveQuizzes(unit.id, data.quizzes);
+        const saved = await EducationService.saveQuizzes(currentFolderId, data.quizzes);
         setQuizzes(saved);
       }
     } catch (err) {
@@ -1409,7 +1640,7 @@ function WorkspaceQuizzes({ unit, module }: { unit: LearningUnit, module: Learni
 // ==========================================
 // STATIC WORKSPACE RESOURCES
 // ==========================================
-function WorkspaceResources({ unit }: { unit: LearningUnit }) {
+function WorkspaceResources({ unit, currentFolderId }: { unit: LearningUnit, currentFolderId: string }) {
   const resources = [
     { title: 'Clinical Treatment Guidelines 2024', author: 'Ministry of Health Kenya', type: 'PDF' },
     { title: 'Standard Treatment Protocol Guidelines (STGs)', author: 'World Health Organization', type: 'Link' },

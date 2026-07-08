@@ -1,5 +1,5 @@
 import {
-  ref, uploadBytesResumable, getDownloadURL, deleteObject,
+  ref, getDownloadURL, deleteObject,
   listAll, getMetadata, type UploadTaskSnapshot,
 } from 'firebase/storage';
 import {
@@ -92,145 +92,47 @@ export const StorageService = {
     const uploadedByEmail = currentUser?.email || null;
     const uploadedByName = currentUser?.displayName || currentUser?.email?.split('@')[0] || 'Guest User';
 
-    // Intercept files larger than 15MB to upload in sequential chunks
-    if (file.size > 15 * 1024 * 1024) {
-      try {
-        console.log(`[StorageService] Large file detected (${(file.size / 1024 / 1024).toFixed(2)}MB). Proceeding with multi-part chunked upload...`);
-        const chunkedResult = await ChunkedUploadService.uploadFileInChunks(file, onProgress, abortSignal);
-        
-        const storedFile: StoredFile = {
-          id: fileId,
-          originalName: file.name,
-          storagePath: chunkedResult.url,
-          mimeType: file.type,
-          size: file.size,
-          category: options.category,
-          accessScope: options.accessScope ?? 'private',
-          patientId: options.patientId,
-          studyId: options.studyId,
-          uploadedBy,
-          uploadedByEmail,
-          uploadedByName,
-          createdAt: Date.now(),
-          updatedAt: Date.now(),
-          hash,
-          accessibleTo: [],
-        };
-
-        try {
-          await setDoc(doc(db, FILES_COLLECTION, fileId), storedFile);
-        } catch (fsError) {
-          console.warn('[StorageService] Firestore registry failed for chunked file, continuing with in-memory fallback:', fsError);
-        }
-
-        try {
-          await localFileDb.saveFile(fileId, storedFile, file);
-        } catch (idbErr) {
-          console.warn('[StorageService] Local IndexedDB save skipped for chunked file:', idbErr);
-        }
-
-        IN_MEMORY_FILES.unshift(storedFile);
-
-        return { file: storedFile, url: chunkedResult.url };
-      } catch (chunkErr) {
-        console.error('[StorageService] Chunked multipart upload failed, attempting default upload fallback:', chunkErr);
-      }
-    }
-
+    // ALWAYS use ChunkedUploadService for all files to ensure reliable progress and avoid Firebase Storage hanging
     try {
-      const storageRef = ref(storage, storagePath);
-      const uploadTask = uploadBytesResumable(storageRef, file);
+      console.log(`[StorageService] Uploading file (${(file.size / 1024 / 1024).toFixed(2)}MB) via chunked upload...`);
+      const chunkedResult = await ChunkedUploadService.uploadFileInChunks(file, onProgress, abortSignal);
+      
+      const storedFile: StoredFile = {
+        id: fileId,
+        originalName: file.name,
+        storagePath: chunkedResult.url,
+        mimeType: file.type,
+        size: file.size,
+        category: options.category,
+        accessScope: options.accessScope ?? 'private',
+        patientId: options.patientId,
+        studyId: options.studyId,
+        uploadedBy,
+        uploadedByEmail,
+        uploadedByName,
+        createdAt: Date.now(),
+        updatedAt: Date.now(),
+        hash,
+        accessibleTo: [],
+      };
 
-      return await new Promise<UploadResult>((resolve, reject) => {
-        let completed = false;
+      try {
+        await setDoc(doc(db, FILES_COLLECTION, fileId), storedFile);
+      } catch (fsError) {
+        console.warn('[StorageService] Firestore registry failed for chunked file, continuing with in-memory fallback:', fsError);
+      }
 
-        const unsub = abortSignal?.addEventListener('abort', () => {
-          if (!completed) {
-            uploadTask.cancel();
-            reject(new Error('Upload aborted'));
-          }
-        });
+      try {
+        await localFileDb.saveFile(fileId, storedFile, file);
+      } catch (idbErr) {
+        console.warn('[StorageService] Local IndexedDB save skipped for chunked file:', idbErr);
+      }
 
-        uploadTask.on(
-          'state_changed',
-          (snapshot: UploadTaskSnapshot) => {
-            onProgress?.({
-              bytesTransferred: snapshot.bytesTransferred,
-              totalBytes: snapshot.totalBytes,
-              percentage: Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100),
-            });
-          },
-          (error) => {
-            completed = true;
-            console.warn('Firebase uploadTask failed, triggering robust fallback', error);
-            this.uploadFileFallback(file, options, fileId, storagePath, hash, uploadedBy, uploadedByEmail, uploadedByName, onRetry)
-              .then(resolve)
-              .catch(reject);
-          },
-          async () => {
-            try {
-              completed = true;
-              const downloadUrl = await getDownloadURL(uploadTask.snapshot.ref);
+      IN_MEMORY_FILES.unshift(storedFile);
 
-              let cloudinaryUrl: string | undefined = undefined;
-              let cloudinaryPublicId: string | undefined = undefined;
-
-              try {
-                const cloudDetails = await MediaService.uploadImageDetails(file, onRetry);
-                cloudinaryUrl = cloudDetails.secure_url;
-                cloudinaryPublicId = cloudDetails.public_id;
-              } catch (cloudinaryErr) {
-                console.warn('Cloudinary upload failed, but Firebase upload succeeded:', cloudinaryErr);
-              }
-
-              const storedFile: StoredFile = {
-                id: fileId,
-                originalName: file.name,
-                storagePath,
-                mimeType: file.type,
-                size: file.size,
-                category: options.category,
-                accessScope: options.accessScope ?? 'private',
-                patientId: options.patientId,
-                studyId: options.studyId,
-                uploadedBy,
-                uploadedByEmail,
-                uploadedByName,
-                createdAt: Date.now(),
-                updatedAt: Date.now(),
-                hash,
-                accessibleTo: [],
-                ...(cloudinaryUrl ? { cloudinaryUrl, cloudinaryPublicId } : {}),
-              };
-
-              try {
-                await setDoc(doc(db, FILES_COLLECTION, fileId), storedFile);
-              } catch (fsError) {
-                console.warn('Firestore write failed, saving in-memory.', fsError);
-              }
-
-              // Also cache in local IndexedDB for offline resilience
-              try {
-                await localFileDb.saveFile(fileId, storedFile, file);
-              } catch (idbErr) {
-                console.warn('IndexedDB save failed', idbErr);
-              }
-
-              // Also keep in memory for instantaneous queries
-              IN_MEMORY_FILES.unshift(storedFile);
-
-              resolve({ file: storedFile, url: cloudinaryUrl || downloadUrl });
-            } catch (err) {
-              console.warn('Finalizing Firebase upload failed, using fallback', err);
-              this.uploadFileFallback(file, options, fileId, storagePath, hash, uploadedBy, uploadedByEmail, uploadedByName, onRetry)
-                .then(resolve)
-                .catch(reject);
-            }
-          },
-        );
-      });
-    } catch (e) {
-      console.warn('Initialization of Firebase upload failed, running fallback', e);
+      return { file: storedFile, url: chunkedResult.url };
+    } catch (chunkErr) {
+      console.error('[StorageService] Chunked multipart upload failed, attempting default upload fallback:', chunkErr);
       return this.uploadFileFallback(file, options, fileId, storagePath, hash, uploadedBy, uploadedByEmail, uploadedByName, onRetry);
     }
   },
@@ -335,7 +237,7 @@ export const StorageService = {
     }
 
     if (file.cloudinaryUrl) return file.cloudinaryUrl;
-    if (file.storagePath.startsWith('blob:') || file.storagePath.startsWith('data:')) {
+    if (file.storagePath.startsWith('blob:') || file.storagePath.startsWith('data:') || file.storagePath.startsWith('/uploads/')) {
       return file.storagePath;
     }
     try {
@@ -364,11 +266,13 @@ export const StorageService = {
       console.warn('IndexedDB file deletion failed', idbErr);
     }
 
-    try {
-      const storageRef = ref(storage, file.storagePath);
-      await deleteObject(storageRef);
-    } catch (storageErr) {
-      console.warn('Firebase storage deletion failed/skipped', storageErr);
+    if (!file.storagePath.startsWith('/uploads/')) {
+      try {
+        const storageRef = ref(storage, file.storagePath);
+        await deleteObject(storageRef);
+      } catch (storageErr) {
+        console.warn('Firebase storage deletion failed/skipped', storageErr);
+      }
     }
 
     if (file.cloudinaryPublicId) {

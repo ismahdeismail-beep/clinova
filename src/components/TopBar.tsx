@@ -1,7 +1,9 @@
 import { memo } from 'react';
-import { Search, Bell, Home, Eye, EyeOff } from 'lucide-react';
+import { Search, Bell, Home, Eye, EyeOff, Cloud, CloudOff, RefreshCw, CheckCircle2 } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import { useUIMode } from '../contexts/UIModeContext';
+import { useOnlineStatus } from '../hooks/useOnlineStatus';
+import { useSyncStatus } from '../hooks/useSyncStatus';
 import type { ViewState } from '../types';
 
 interface TopBarProps {
@@ -37,6 +39,9 @@ function TopBar({ activeView }: TopBarProps) {
   const titleMap = isSimple ? { ...TITLE_MAP, ...SIMPLE_TITLE_MAP } : TITLE_MAP;
   const title = activeView !== 'login' ? titleMap[activeView] || 'Clinova' : '';
 
+  const isOnline = useOnlineStatus();
+  const { status, pendingCount } = useSyncStatus();
+
   const handleHome = () => {
     window.dispatchEvent(new CustomEvent('clinova:navigate', { detail: { view: 'dashboard' } }));
   };
@@ -56,7 +61,33 @@ function TopBar({ activeView }: TopBarProps) {
         <h2 className="text-lg font-semibold text-[var(--text)]">{title}</h2>
       </div>
       <div className="flex items-center gap-2">
-        <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 border border-[var(--border)] rounded-lg bg-[var(--surface-dim)]">
+        {activeView !== 'login' && (
+          <div className="hidden md:flex items-center gap-1.5 px-3 py-1.5 bg-[var(--surface)] border border-[var(--border)] rounded-full text-xs font-medium" title={!isOnline ? 'Offline' : status === 'syncing' ? 'Syncing changes...' : pendingCount > 0 ? `${pendingCount} changes pending` : 'All changes synced'}>
+            {!isOnline ? (
+              <>
+                <CloudOff size={14} className="text-red-500" />
+                <span className="text-[var(--text-muted)]">Offline</span>
+                {pendingCount > 0 && <span className="text-xs bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 px-1.5 py-0.5 rounded-full ml-1">{pendingCount}</span>}
+              </>
+            ) : status === 'syncing' ? (
+              <>
+                <RefreshCw size={14} className="text-blue-500 animate-spin" />
+                <span className="text-blue-500">Syncing...</span>
+              </>
+            ) : pendingCount > 0 ? (
+              <>
+                <Cloud size={14} className="text-amber-500" />
+                <span className="text-amber-600 dark:text-amber-400">Pending ({pendingCount})</span>
+              </>
+            ) : (
+              <>
+                <CheckCircle2 size={14} className="text-emerald-500" />
+                <span className="text-[var(--text-muted)]">Up to date</span>
+              </>
+            )}
+          </div>
+        )}
+        <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 border border-[var(--border)] rounded-lg bg-[var(--surface-dim)] ml-2">
           <Search size={16} className="text-[var(--text-dim)]" />
           <input
             type="text"

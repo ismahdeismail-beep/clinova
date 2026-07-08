@@ -16,8 +16,14 @@ interface SyncDBSchema extends DBSchema {
   };
 }
 
+type SyncStatus = 'idle' | 'syncing' | 'error';
+type SyncListener = (status: SyncStatus, pendingCount: number) => void;
+
 class SyncManager {
   private dbPromise: Promise<IDBPDatabase<SyncDBSchema>>;
+  private listeners: Set<SyncListener> = new Set();
+  private isSyncing = false;
+  private currentStatus: SyncStatus = 'idle';
 
   constructor() {
     this.dbPromise = openDB<SyncDBSchema>('clinova-sync-db', 1, {
@@ -32,6 +38,22 @@ class SyncManager {
     }
   }
 
+  subscribe(listener: SyncListener) {
+    this.listeners.add(listener);
+    this.getPendingMutationsCount().then(count => {
+      listener(this.currentStatus, count);
+    });
+    return () => {
+      this.listeners.delete(listener);
+    };
+  }
+
+  private async notifyListeners(status?: SyncStatus) {
+    if (status) this.currentStatus = status;
+    const count = await this.getPendingMutationsCount();
+    this.listeners.forEach(listener => listener(this.currentStatus, count));
+  }
+
   async addMutation(collectionPath: string, action: 'create' | 'update' | 'delete', payload: any, docId?: string) {
     const id = crypto.randomUUID();
     const idb = await this.dbPromise;
@@ -44,19 +66,31 @@ class SyncManager {
       timestamp: Date.now(),
     });
 
+    this.notifyListeners();
+
     if (navigator.onLine) {
       this.sync();
     }
   }
 
   async sync() {
-    if (!navigator.onLine) return;
+    if (!navigator.onLine || this.isSyncing) return;
+
+    this.isSyncing = true;
+    this.notifyListeners('syncing');
 
     const idb = await this.dbPromise;
     const mutations = await idb.getAll('pending_mutations');
     
+    if (mutations.length === 0) {
+      this.isSyncing = false;
+      this.notifyListeners('idle');
+      return;
+    }
+
     // Sort by timestamp to apply them in order
     mutations.sort((a, b) => a.timestamp - b.timestamp);
+    let hasError = false;
 
     for (const mutation of mutations) {
       try {
@@ -78,11 +112,16 @@ class SyncManager {
 
         // Successfully synced, remove from IndexedDB
         await idb.delete('pending_mutations', id);
+        this.notifyListeners();
       } catch (error) {
         console.error('Failed to sync mutation:', error, mutation);
+        hasError = true;
         // We leave it in the queue for the next sync attempt if it fails (e.g. timeout/network error)
       }
     }
+
+    this.isSyncing = false;
+    this.notifyListeners(hasError ? 'error' : 'idle');
   }
   
   async getPendingMutationsCount() {

@@ -119,7 +119,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
     { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
     ...(userData?.role === 'admin' ? [
       { to: '/admin', label: 'Admin Console', icon: ShieldCheck },
-      { to: '/admin/kbms', label: 'KB Engine', icon: Database },
+      { to: '/admin/kbms', label: 'Knowledge Base ⭐', icon: Database },
       { to: '/admin/ai', label: 'AI Gateway', icon: Cpu }
     ] : []),
     { to: '/notifications', label: 'Notifications', icon: Bell },

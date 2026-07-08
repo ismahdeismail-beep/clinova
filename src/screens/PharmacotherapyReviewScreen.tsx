@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
   User, Stethoscope, Activity, ClipboardList, Beaker, FileText, Pill, HeartPulse, CheckCircle, BrainCircuit, AlertTriangle,
-  Send, Loader2, Sparkles, X, Upload, FileUp
+  Send, Loader2, Sparkles, X, Upload, FileUp, Download
 } from 'lucide-react';
 import { useFileStore } from '../store/fileStore';
 import { getPatientInitials } from '../lib/patientUtils';
+import jsPDF from 'jspdf';
 
 // Mock interaction database
 const KNOWN_INTERACTIONS: Record<string, string[]> = {
@@ -824,6 +825,52 @@ export default function PharmacotherapyReviewScreen() {
     { id: 'counselling', label: 'Counselling', icon: HeartPulse },
   ];
 
+  const handleDownloadPDF = () => {
+    try {
+      const doc = new jsPDF();
+      doc.setFontSize(16);
+      doc.text("Clinical Pharmacotherapy Review", 20, 20);
+      
+      const savedData = localStorage.getItem('clinova_pharma_review_form');
+      if (!savedData) {
+        alert('Please fill out and save the form first.');
+        return;
+      }
+      
+      const parsed = JSON.parse(savedData);
+      let y = 30;
+      doc.setFontSize(10);
+      
+      Object.keys(parsed).forEach(tab => {
+        doc.setFont('helvetica', 'bold');
+        doc.text(tab.toUpperCase().replace('_', ' '), 20, y);
+        y += 8;
+        
+        doc.setFont('helvetica', 'normal');
+        Object.keys(parsed[tab]).forEach(key => {
+          const val = parsed[tab][key];
+          if (val) {
+            const formattedKey = key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+            const textLines = doc.splitTextToSize(`${formattedKey}: ${val}`, 170);
+            doc.text(textLines, 20, y);
+            y += (6 * textLines.length);
+            
+            if (y > 280) {
+              doc.addPage();
+              y = 20;
+            }
+          }
+        });
+        y += 6;
+      });
+      
+      doc.save("Pharmacotherapy_Review.pdf");
+    } catch (e) {
+      console.error("Failed to generate PDF", e);
+      alert("Failed to generate PDF. Please try again.");
+    }
+  };
+
   return (
     <div className="max-w-5xl mx-auto p-4 sm:p-6 pb-24">
       <div className="mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
@@ -1587,20 +1634,30 @@ export default function PharmacotherapyReviewScreen() {
                     Next Section →
                   </button>
                 ) : (
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setBannerMessage({
-                        type: 'success',
-                        text: 'Pharmacotherapy Review Form Saved Successfully! All data has been stored locally.'
-                      });
-                      window.scrollTo({ top: 0, behavior: 'smooth' });
-                    }}
-                    className="px-6 py-2 bg-[var(--primary)] text-[var(--primary-foreground)] font-semibold rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2 shadow-sm text-sm cursor-pointer"
-                  >
-                    <CheckCircle size={16} />
-                    Complete Review
-                  </button>
+                  <div className="flex gap-2">
+                    <button
+                      type="button"
+                      onClick={handleDownloadPDF}
+                      className="px-4 py-2 bg-[var(--surface-dim)] text-[var(--text)] border border-[var(--border)] font-semibold rounded-lg hover:bg-[var(--border)] transition-colors flex items-center gap-2 text-sm cursor-pointer"
+                    >
+                      <Download size={16} />
+                      Download PDF
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setBannerMessage({
+                          type: 'success',
+                          text: 'Pharmacotherapy Review Form Saved Successfully! All data has been stored locally.'
+                        });
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                      }}
+                      className="px-6 py-2 bg-[var(--primary)] text-[var(--primary-foreground)] font-semibold rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2 shadow-sm text-sm cursor-pointer"
+                    >
+                      <CheckCircle size={16} />
+                      Complete Review
+                    </button>
+                  </div>
                 )}
               </div>
             </div>

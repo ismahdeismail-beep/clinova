@@ -184,9 +184,11 @@ function ResourcesTab() {
                    <option>Clinical Pharmacy</option>
                  </select>
                </div>
-               <div className="border-2 border-dashed border-[var(--border)] p-8 text-center rounded-xl bg-[var(--bg)]">
+               <div className="border-2 border-dashed border-[var(--border)] p-8 text-center rounded-xl bg-[var(--bg)] relative hover:bg-[var(--surface-dim)] transition-colors cursor-pointer">
+                 <input type="file" multiple className="absolute inset-0 opacity-0 cursor-pointer" accept=".pdf,.doc,.docx,.txt,.csv,.json" />
                  <FileText className="mx-auto mb-2 text-[var(--text-muted)]" />
-                 <p className="text-sm font-semibold">Select file or URL</p>
+                 <p className="text-sm font-semibold text-[var(--text)]">Click or Drag to Select Multiple Files</p>
+                 <p className="text-xs text-[var(--text-muted)] mt-1">Files will be batch-processed and indexed together</p>
                </div>
                
                <div className="pt-2 flex justify-end gap-3">

@@ -1,3 +1,4 @@
+import { processAcademicRequest } from "./src/server/academicEngine.js";
 import express from 'express';
 import path from 'path';
 import { GoogleGenAI, Type } from '@google/genai';
@@ -1294,71 +1295,6 @@ Ensure the content is medically accurate, authoritative, and strictly integrated
   }
 });
 
-// Context-Aware Module AI Tutor
-app.post('/api/gemini/module-tutor', async (req, res) => {
-  try {
-    const { discipline, moduleTitle, chatHistory, userMessage, academicLevel, customResources } = req.body;
-
-    if (!moduleTitle || !userMessage) {
-      return res.status(400).json({ error: 'Missing moduleTitle or userMessage' });
-    }
-
-    const level = academicLevel || 'Year 1: Basic Medical Sciences';
-    const disc = discipline || 'Clinical Pharmacy';
-
-    let systemInstruction = `You are Clinova AI Module Tutor, an expert Clinical Pharmacy Professor and OSCE Mentor for the Kabarak University B.Pharm Curriculum.
-When answering this question, follow this precise retrieval chain internally:
-1. Determine the discipline (${disc})
-2. Determine the unit (${moduleTitle})
-3. Search ONLY within that unit's indexed knowledge base (the custom resources provided below).
-4. Retrieve the most relevant chunks.
-5. Generate a precise, highly accurate answer.
-6. Show the references used at the bottom.
-
-You are strictly context-locked to the selected unit: "${moduleTitle}" within the "${disc}" discipline.
-Your student is at the "${level}" academic level.
-
-If the user asks questions unrelated to ${moduleTitle}, gently pivot them back to the study material.
-Always reference reliable resources such as the Kenya Drug Index (KDI), Kenya National Guidelines, WHO Essential Medicines, and established pharmacotherapy standards.`;
-
-    if (customResources && customResources.length > 0) {
-      const formattedResources = customResources.map((r: any) => 
-        `- SOURCE (${r.sourceName || 'General'}): ${r.notes}${r.url ? ` (Link: ${r.url})` : ''}`
-      ).join('\n');
-      
-      systemInstruction += `\n\nCRITICAL GROUNDING REFERENCE NOTES FROM INSTRUCTORS (Unit Knowledge Base):\nUse the following supplemental notes and guidelines to directly answer student questions.\n${formattedResources}`;
-    }
-
-    const contents = [];
-    if (chatHistory && Array.isArray(chatHistory)) {
-      for (const msg of chatHistory) {
-        contents.push({
-          role: msg.role === 'assistant' ? 'model' : 'user',
-          parts: [{ text: msg.content }],
-        });
-      }
-    }
-
-    contents.push({
-      role: 'user',
-      parts: [{ text: userMessage }],
-    });
-
-    const response = await generateContentWithFallback({
-      model: 'gemini-3.5-flash',
-      contents: contents,
-      config: {
-        systemInstruction: systemInstruction,
-      },
-    });
-
-    res.json({ text: response.text });
-  } catch (error: any) {
-    console.error('Module Tutor error:', error);
-    res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable' : error.message) : 'Module Tutor failed' });
-  }
-});
-
 // Secure Cloudinary Destroy API
 app.post('/api/cloudinary/destroy', async (req, res) => {
   try {
@@ -1417,21 +1353,54 @@ async function startServer() {
     });
   }
 
-  // Clinical Case AI Tutor
+  
+// ==================== CLINOVA ACADEMIC ENGINE ====================
+// Context-Aware Module AI Tutor
+app.post('/api/gemini/module-tutor', async (req, res) => {
+  try {
+    const { discipline, moduleTitle, chatHistory, userMessage, academicLevel, customResources } = req.body;
+    if (!moduleTitle || !userMessage) {
+      return res.status(400).json({ error: 'Missing moduleTitle or userMessage' });
+    }
+    const level = academicLevel || 'Year 1: Basic Medical Sciences';
+    const disc = discipline || 'Clinical Pharmacy';
+    
+    let baseContext = `MODULE TUTOR SESSION:
+Discipline: ${disc}
+Unit: ${moduleTitle}
+Level: ${level}
+Task:
+Search ONLY within this unit's indexed knowledge base (the custom resources provided).
+Generate a precise, highly accurate answer.
+Show the references used at the bottom.
+Gently pivot unrelated questions back to the study material.`;
+
+    if (customResources && customResources.length > 0) {
+      const formattedResources = customResources.map((r) => 
+        `- SOURCE (${r.sourceName || 'General'}): ${r.notes}${r.url ? ` (Link: ${r.url})` : ''}`
+      ).join('\n');
+      baseContext += `\n\nCRITICAL GROUNDING REFERENCE NOTES FROM INSTRUCTORS (Unit Knowledge Base):\nUse the following supplemental notes and guidelines to directly answer student questions.\n${formattedResources}`;
+    }
+
+    const result = await processAcademicRequest(userMessage, baseContext, chatHistory);
+    res.json({ text: result.reply });
+  } catch (error) {
+    console.error('Module Tutor error:', error);
+    res.status(500).json({ error: 'Module Tutor failed' });
+  }
+});
+
+// Clinical Case AI Tutor
 app.post('/api/gemini/case-tutor', async (req, res) => {
   try {
     const { specialty, disease, caseTitle, caseData, chatHistory, userMessage } = req.body;
-
     if (!caseTitle || !userMessage) {
       return res.status(400).json({ error: 'Missing caseTitle or userMessage' });
     }
-
-    const systemInstruction = `You are Clinova AI Clinical Tutor, an expert specialist physician and clinical pharmacist.
-You are discussing a clinical case with a pharmacy student.
-Case Specialty: ${specialty}
+    const baseContext = `CASE TUTOR SESSION:
+Specialty: ${specialty}
 Disease: ${disease}
 Case Title: ${caseTitle}
-
 Case Data:
 - Demographics: ${caseData?.demographics}
 - Chief Complaint: ${caseData?.chiefComplaint}
@@ -1445,30 +1414,11 @@ Case Data:
 - Diagnosis: ${caseData?.diagnosis}
 - Plan: ${caseData?.carePlan}
 
-Your task is to guide the student's clinical reasoning.
-1. Answer their specific question based on evidence-based guidelines for ${disease}.
-2. Relate your answer back to the specific patient parameters in this case.
-3. Be concise and authoritative.
-4. If they ask for information not in the case, provide the standard guideline-based answer.`;
+Task:
+Guide the student's clinical reasoning. Answer their specific question based on evidence-based guidelines for ${disease}, relating it back to these specific patient parameters.`;
 
-    const chatSession = ai.chats.create({
-      model: 'gemini-2.5-flash',
-      config: {
-        systemInstruction: systemInstruction,
-        temperature: 0.2,
-      }
-    });
-
-    if (chatHistory && chatHistory.length > 0) {
-      for (const msg of chatHistory.slice(1)) {
-        if (msg.role === 'user') {
-          await chatSession.sendMessage({ message: msg.content });
-        }
-      }
-    }
-
-    const result = await chatSession.sendMessage({ message: userMessage });
-    res.json({ reply: result.text });
+    const result = await processAcademicRequest(userMessage, baseContext, chatHistory);
+    res.json({ reply: result.reply });
   } catch (error) {
     console.error('Case Tutor Error:', error);
     res.status(500).json({ error: 'Failed to generate response' });
@@ -1479,41 +1429,21 @@ Your task is to guide the student's clinical reasoning.
 app.post('/api/gemini/hub-tutor', async (req, res) => {
   try {
     const { unitTitle, moduleTitle, chatHistory, userMessage } = req.body;
-
     if (!unitTitle || !userMessage) {
       return res.status(400).json({ error: 'Missing unitTitle or userMessage' });
     }
+    const baseContext = `EDUCATION HUB TUTOR:
+Unit: ${unitTitle}
+Module: ${moduleTitle}
+Task:
+Answer their question accurately using evidence-based medical and pharmaceutical knowledge.
+At the end of your response, include a section with:
+- **Confidence Score**: (e.g. 95%)
+- **Sources**: (list simulated sources like WHO guidelines, Katzung Pharmacology, etc. depending on context)
+- **Suggested Flashcards**: 2-3 flashcard Q&A pairs related to the topic.`;
 
-    const systemInstruction = `You are Clinova AI Study Assistant, an expert academic tutor for pharmacy and medical students.
-You are helping a student study for the unit: ${unitTitle} (Module: ${moduleTitle}).
-
-Your task:
-1. Answer their question accurately using evidence-based medical and pharmaceutical knowledge.
-2. Structure your response clearly using markdown.
-3. At the end of your response, include a section with:
-   - **Confidence Score**: (e.g. 95%)
-   - **Sources**: (list simulated sources like WHO guidelines, Katzung Pharmacology, etc. depending on context)
-   - **Suggested Flashcards**: 2-3 flashcard Q&A pairs related to the topic.
-4. Keep the tone academic, encouraging, and clear.`;
-
-    const chatSession = ai.chats.create({
-      model: 'gemini-2.5-flash',
-      config: {
-        systemInstruction: systemInstruction,
-        temperature: 0.3,
-      }
-    });
-
-    if (chatHistory && chatHistory.length > 0) {
-      for (const msg of chatHistory.slice(1)) {
-        if (msg.role === 'user') {
-          await chatSession.sendMessage({ message: msg.content });
-        }
-      }
-    }
-
-    const result = await chatSession.sendMessage({ message: userMessage });
-    res.json({ reply: result.text });
+    const result = await processAcademicRequest(userMessage, baseContext, chatHistory);
+    res.json({ reply: result.reply });
   } catch (error) {
     console.error('Hub Tutor Error:', error);
     res.status(500).json({ error: 'Failed to generate response' });

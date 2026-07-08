@@ -60,7 +60,7 @@ function highlightMedicalTerms(text: string): React.ReactNode {
           return (
             <span 
               key={index} 
-              className="inline-block px-1.5 py-0.5 rounded text-[11px] font-bold font-mono bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 mx-0.5"
+              className="inline-block px-1.5 py-0.5 rounded text-[11px] font-bold font-mono bg-[var(--primary)]/10 text-[var(--primary)] border border-[var(--primary)]/20 mx-0.5"
             >
               {part}
             </span>
@@ -72,7 +72,7 @@ function highlightMedicalTerms(text: string): React.ReactNode {
           return (
             <span 
               key={index} 
-              className="inline-block px-1.5 py-0.5 rounded text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mx-0.5"
+              className="inline-block px-1.5 py-0.5 rounded text-xs font-semibold bg-[var(--primary)]/10 text-[var(--primary)] border border-[var(--primary)]/20 mx-0.5"
             >
               {part}
             </span>
@@ -105,27 +105,27 @@ function renderMarkdown(text: string) {
     <ReactMarkdown
       components={{
         table: ({ children }) => (
-          <div className="overflow-x-auto w-full my-5 rounded-2xl border border-slate-800 shadow-lg bg-[#1E293B]">
-            <table className="w-full text-left border-collapse text-sm text-slate-300">
+          <div className="overflow-x-auto w-full my-5 rounded-xl border border-[var(--border)] shadow-sm bg-[var(--surface)]">
+            <table className="w-full text-left border-collapse text-sm text-[var(--text)]">
               {children}
             </table>
           </div>
         ),
-        thead: ({ children }) => <thead className="bg-[#1e293b] border-b border-slate-800">{children}</thead>,
-        tbody: ({ children }) => <tbody className="divide-y divide-slate-800/60">{children}</tbody>,
-        tr: ({ children }) => <tr className="hover:bg-slate-800/40 transition-colors">{children}</tr>,
-        th: ({ children }) => <th className="p-3.5 font-semibold text-slate-200 uppercase tracking-wider text-xs bg-[#1E293B]">{children}</th>,
-        td: ({ children }) => <td className="p-3.5 text-slate-300 leading-relaxed">{children}</td>,
-        h1: ({ children }) => <h1 className="text-xl font-bold text-slate-100 mt-6 mb-3 tracking-tight border-b border-slate-800 pb-1.5">{children}</h1>,
-        h2: ({ children }) => <h2 className="text-lg font-bold text-slate-100 mt-5 mb-2.5 tracking-tight">{children}</h2>,
-        h3: ({ children }) => <h3 className="text-base font-bold text-slate-200 mt-4 mb-2 tracking-tight">{children}</h3>,
-        p: ({ children }) => <p className="text-base sm:text-[17px] leading-loose text-slate-300 mb-4 last:mb-0 font-normal">{processChildren(children)}</p>,
-        ul: ({ children }) => <ul className="list-disc pl-6 mb-4 space-y-2 text-base sm:text-[17px] text-slate-300">{children}</ul>,
-        ol: ({ children }) => <ol className="list-decimal pl-6 mb-4 space-y-2 text-base sm:text-[17px] text-slate-300">{children}</ol>,
-        li: ({ children }) => <li className="leading-loose">{processChildren(children)}</li>,
+        thead: ({ children }) => <thead className="bg-[var(--surface-dim)] border-b border-[var(--border)]">{children}</thead>,
+        tbody: ({ children }) => <tbody className="divide-y divide-[var(--border)]">{children}</tbody>,
+        tr: ({ children }) => <tr className="hover:bg-[var(--surface-dim)] transition-colors">{children}</tr>,
+        th: ({ children }) => <th className="p-3.5 font-semibold text-[var(--text)] uppercase tracking-wider text-xs">{children}</th>,
+        td: ({ children }) => <td className="p-3.5 text-[var(--text-muted)] leading-relaxed">{children}</td>,
+        h1: ({ children }) => <h1 className="text-xl font-bold text-[var(--text)] mt-6 mb-3 tracking-tight border-b border-[var(--border)] pb-1.5">{children}</h1>,
+        h2: ({ children }) => <h2 className="text-lg font-bold text-[var(--text)] mt-5 mb-2.5 tracking-tight">{children}</h2>,
+        h3: ({ children }) => <h3 className="text-base font-bold text-[var(--text)] mt-4 mb-2 tracking-tight">{children}</h3>,
+        p: ({ children }) => <p className="text-base leading-relaxed text-[var(--text)] mb-4 last:mb-0">{processChildren(children)}</p>,
+        ul: ({ children }) => <ul className="list-disc pl-6 mb-4 space-y-2 text-base text-[var(--text)]">{children}</ul>,
+        ol: ({ children }) => <ol className="list-decimal pl-6 mb-4 space-y-2 text-base text-[var(--text)]">{children}</ol>,
+        li: ({ children }) => <li className="leading-relaxed">{processChildren(children)}</li>,
         code: ({ inline, className, children, ...props }: any) => {
           return (
-            <code className="bg-[#0F172A] border border-slate-800 text-cyan-400 px-2 py-0.5 rounded text-sm font-mono font-medium" {...props}>
+            <code className="bg-[var(--surface-dim)] border border-[var(--border)] text-[var(--primary)] px-1.5 py-0.5 rounded text-sm font-mono" {...props}>
               {children}
             </code>
           );
@@ -148,45 +148,18 @@ function AssistantMessageBubble({
   onComplete?: () => void;
   onTick?: () => void;
 }) {
-  const [displayedText, setDisplayedText] = useState(isNew ? '' : content);
-  const bufferRef = useRef('');
-
   useEffect(() => {
-    if (!isNew) {
-      setDisplayedText(content);
-      return;
+    if (isNew) {
+      onComplete?.();
+      onTick?.();
     }
-
-    let currentIndex = 0;
-    let rafId: number;
-
-    const flush = () => {
-      currentIndex += 15; // Batch more characters per frame
-      if (currentIndex >= content.length) {
-        setDisplayedText(content);
-        onComplete?.();
-        onTick?.();
-      } else {
-        setDisplayedText(content.slice(0, currentIndex));
-        onTick?.();
-        rafId = requestAnimationFrame(flush);
-      }
-    };
-    
-    // Start flush cycle
-    rafId = requestAnimationFrame(flush);
-    return () => cancelAnimationFrame(rafId);
-  }, [content, isNew, onComplete, onTick]);
+  }, [isNew, onComplete, onTick]);
 
   return (
     <div 
-      className="text-xs sm:text-sm leading-relaxed max-w-none break-words min-h-[3rem]"
-      style={{ contain: 'layout style' }}
+      className="text-sm leading-relaxed max-w-none break-words min-h-[3rem] text-[var(--text)]"
     >
-      {renderMarkdown(displayedText)}
-      {isNew && displayedText.length < content.length && (
-        <span className="inline-block w-1.5 h-3.5 ml-0.5 align-middle bg-[var(--primary)] animate-pulse" />
-      )}
+      {renderMarkdown(content)}
     </div>
   );
 }
@@ -224,7 +197,7 @@ function CopyButton({ text }: { text: string }) {
       title="Copy to clipboard"
     >
       {copied ? (
-        <Check size={13} className="text-emerald-500 animate-in zoom-in-75 duration-100" />
+        <Check size={13} className="text-[var(--success)] animate-in zoom-in-75 duration-100" />
       ) : (
         <Copy size={13} />
       )}
@@ -1044,7 +1017,7 @@ export default function ClinicalAssistantScreen() {
 
   return (
     <div 
-      className="fixed md:left-64 left-0 right-0 bottom-0 top-[calc(4rem+env(safe-area-inset-top,0px))] bg-[#0F172A] text-slate-100 flex flex-row overflow-hidden z-20 font-sans"
+      className="fixed md:left-64 left-0 right-0 bottom-0 top-[calc(4rem+env(safe-area-inset-top,0px))] bg-[#0F172A] text-[var(--text)] flex flex-row overflow-hidden z-20 font-sans"
       style={{
         height: `calc(${viewportHeight}px - 4rem - env(safe-area-inset-top, 0px))`
       }}
@@ -1072,29 +1045,29 @@ export default function ClinicalAssistantScreen() {
       <div className="flex-1 flex flex-col h-full overflow-hidden bg-[#0F172A] relative">
         
         {/* Chat Header */}
-        <div className="h-16 border-b border-slate-800/80 px-4 sm:px-6 bg-[#1E293B] flex items-center justify-between z-10 shrink-0">
+        <div className="h-16 border-b border-[var(--border)]/80 px-4 sm:px-6 bg-[#1E293B] flex items-center justify-between z-10 shrink-0">
           <div className="flex items-center gap-3 min-w-0">
             <button 
-              className="md:hidden p-2 rounded-xl border border-slate-800 hover:bg-[#2e3b52] transition-all cursor-pointer"
+              className="md:hidden p-2 rounded-xl border border-[var(--border)] hover:bg-[#2e3b52] transition-all cursor-pointer"
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
             >
-              <Menu size={18} className="text-slate-300" />
+              <Menu size={18} className="text-[var(--text)]" />
             </button>
-            <div className="w-10 h-10 rounded-full bg-blue-500/15 text-blue-400 flex items-center justify-center border border-blue-500/20 shadow-inner shrink-0">
+            <div className="w-10 h-10 rounded-full bg-[var(--primary)]/15 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20 shadow-inner shrink-0">
               <Bot size={22} className="animate-pulse" />
             </div>
             <div className="min-w-0">
               <div className="flex items-center gap-2">
-                <h2 className="text-sm sm:text-base font-bold text-slate-100 tracking-tight">Clinical Assistant</h2>
-                <div className="flex items-center gap-1.5 text-[10px] font-bold text-cyan-400 bg-cyan-500/10 px-2.5 py-0.5 rounded-full border border-cyan-500/20 select-none">
+                <h2 className="text-sm sm:text-base font-bold text-[var(--text)] tracking-tight">Clinical Assistant</h2>
+                <div className="flex items-center gap-1.5 text-[10px] font-bold text-[var(--primary)] bg-[var(--primary)]/10 px-2.5 py-0.5 rounded-full border border-[var(--primary)]/20 select-none">
                   <span className="relative flex h-1.5 w-1.5">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-cyan-500"></span>
+                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[var(--primary)]"></span>
                   </span>
                   <span>● Online</span>
                 </div>
               </div>
-              <p className="text-xs text-slate-400 truncate hidden xs:block mt-0.5">Powered by AI Clinical Decision Support</p>
+              <p className="text-xs text-[var(--text-muted)] truncate hidden xs:block mt-0.5">Powered by AI Clinical Decision Support</p>
             </div>
           </div>
           
@@ -1102,10 +1075,10 @@ export default function ClinicalAssistantScreen() {
             {/* Quick New Chat Button */}
             <button
               onClick={handleNewSession}
-              className="p-2 sm:px-3 sm:py-1.5 rounded-xl border border-slate-800 hover:border-slate-700 bg-[#0F172A]/40 hover:bg-[#0F172A]/80 text-xs font-bold text-slate-300 transition-all flex items-center gap-1.5 cursor-pointer"
+              className="p-2 sm:px-3 sm:py-1.5 rounded-xl border border-[var(--border)] hover:border-[var(--border)] bg-[#0F172A]/40 hover:bg-[#0F172A]/80 text-xs font-bold text-[var(--text)] transition-all flex items-center gap-1.5 cursor-pointer"
               title="Start New Session"
             >
-              <Plus size={14} className="text-blue-400" />
+              <Plus size={14} className="text-[var(--primary)]" />
               <span className="hidden sm:inline">New Session</span>
             </button>
 
@@ -1113,11 +1086,11 @@ export default function ClinicalAssistantScreen() {
             <div className="relative">
               <button
                 onClick={() => setShowExportMenu(!showExportMenu)}
-                className="flex items-center gap-1.5 text-xs font-bold text-slate-300 bg-[#0F172A]/40 hover:bg-[#0F172A]/80 px-3 py-2 rounded-xl border border-slate-800 hover:border-slate-700 transition-all cursor-pointer select-none"
+                className="flex items-center gap-1.5 text-xs font-bold text-[var(--text)] bg-[#0F172A]/40 hover:bg-[#0F172A]/80 px-3 py-2 rounded-xl border border-[var(--border)] hover:border-[var(--border)] transition-all cursor-pointer select-none"
                 title="Export current conversation for records"
                 id="export-chat-button"
               >
-                <Download size={14} className="text-slate-400" />
+                <Download size={14} className="text-[var(--text-muted)]" />
                 <span className="hidden xs:inline">Export</span>
               </button>
               
@@ -1133,32 +1106,32 @@ export default function ClinicalAssistantScreen() {
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 8, scale: 0.95 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute right-0 mt-2 w-56 bg-[#1E293B] border border-slate-800 rounded-2xl shadow-xl z-40 p-2 flex flex-col gap-1 text-xs"
+                      className="absolute right-0 mt-2 w-56 bg-[#1E293B] border border-[var(--border)] rounded-2xl shadow-xl z-40 p-2 flex flex-col gap-1 text-xs"
                       id="export-chat-dropdown"
                     >
-                      <div className="px-2.5 py-1.5 border-b border-slate-800/60 text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+                      <div className="px-2.5 py-1.5 border-b border-[var(--border)] text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider">
                         Patient Record Format
                       </div>
                       <button
                         onClick={handleExportPDF}
-                        className="flex items-center gap-2.5 w-full text-left p-2.5 hover:bg-slate-800/50 text-slate-200 rounded-xl transition-all cursor-pointer font-medium"
+                        className="flex items-center gap-2.5 w-full text-left p-2.5 hover:bg-[var(--surface)]/50 text-[var(--text)] rounded-xl transition-all cursor-pointer font-medium"
                         id="export-pdf-option"
                       >
                         <FileDown size={15} className="text-red-400 shrink-0" />
                         <div className="flex-1 min-w-0">
-                          <div className="font-semibold text-xs text-slate-200">Export as Medical PDF</div>
-                          <div className="text-[10px] text-slate-400">Formatted, printable record</div>
+                          <div className="font-semibold text-xs text-[var(--text)]">Export as Medical PDF</div>
+                          <div className="text-[10px] text-[var(--text-muted)]">Formatted, printable record</div>
                         </div>
                       </button>
                       <button
                         onClick={handleExportMarkdown}
-                        className="flex items-center gap-2.5 w-full text-left p-2.5 hover:bg-slate-800/50 text-slate-200 rounded-xl transition-all cursor-pointer font-medium"
+                        className="flex items-center gap-2.5 w-full text-left p-2.5 hover:bg-[var(--surface)]/50 text-[var(--text)] rounded-xl transition-all cursor-pointer font-medium"
                         id="export-md-option"
                       >
-                        <FileText size={15} className="text-blue-400 shrink-0" />
+                        <FileText size={15} className="text-[var(--primary)] shrink-0" />
                         <div className="flex-1 min-w-0">
-                          <div className="font-semibold text-xs text-slate-200">Export as Markdown (.md)</div>
-                          <div className="text-[10px] text-slate-400">EHR compatible raw text</div>
+                          <div className="font-semibold text-xs text-[var(--text)]">Export as Markdown (.md)</div>
+                          <div className="text-[10px] text-[var(--text-muted)]">EHR compatible raw text</div>
                         </div>
                       </button>
                     </motion.div>
@@ -1182,25 +1155,25 @@ export default function ClinicalAssistantScreen() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
-                className="bg-[#1E293B] border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl text-center flex flex-col items-center gap-5"
+                className="bg-[#1E293B] border border-[var(--border)] rounded-3xl p-6 sm:p-8 shadow-xl text-center flex flex-col items-center gap-5"
               >
-                <div className="w-14 h-14 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center border border-blue-500/20 shadow-inner">
-                  <Sparkles size={32} className="text-cyan-400" />
+                <div className="w-14 h-14 rounded-2xl bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20 shadow-inner">
+                  <Sparkles size={32} className="text-[var(--primary)]" />
                 </div>
                 
                 <div className="space-y-2">
-                  <h1 className="text-xl sm:text-2xl font-bold text-slate-100 tracking-tight">
+                  <h1 className="text-xl sm:text-2xl font-bold text-[var(--text)] tracking-tight">
                     Welcome to Clinova Clinical Assistant
                   </h1>
-                  <p className="text-sm text-slate-400 max-w-xl mx-auto leading-relaxed">
+                  <p className="text-sm text-[var(--text-muted)] max-w-xl mx-auto leading-relaxed">
                     A fully-equipped clinical console designed to retrieve, synthesize, and validate clinical evidence from the Kenya Drug Index (KDI), STG Guidelines, WHO, and notes.
                   </p>
                 </div>
 
-                <div className="w-full h-px bg-slate-800/60 my-1" />
+                <div className="w-full h-px bg-[var(--surface)]/60 my-1" />
 
                 <div className="w-full text-left">
-                  <span className="text-[11px] font-bold text-cyan-400 uppercase tracking-widest block mb-4 text-center sm:text-left">
+                  <span className="text-[11px] font-bold text-[var(--primary)] uppercase tracking-widest block mb-4 text-center sm:text-left">
                     What can I do for you today?
                   </span>
                   
@@ -1213,13 +1186,13 @@ export default function ClinicalAssistantScreen() {
                     ].map((feat, idx) => {
                       const Icon = feat.icon;
                       return (
-                        <div key={idx} className="flex gap-3 p-3.5 bg-[#0F172A]/50 border border-slate-800/80 rounded-2xl">
-                          <div className="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center border border-blue-500/10 shrink-0">
+                        <div key={idx} className="flex gap-3 p-3.5 bg-[#0F172A]/50 border border-[var(--border)]/80 rounded-2xl">
+                          <div className="w-8 h-8 rounded-lg bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/10 shrink-0">
                             <Icon size={16} />
                           </div>
                           <div>
-                            <h4 className="text-xs font-bold text-slate-200">{feat.title}</h4>
-                            <p className="text-[11px] text-slate-400 leading-normal mt-0.5">{feat.desc}</p>
+                            <h4 className="text-xs font-bold text-[var(--text)]">{feat.title}</h4>
+                            <p className="text-[11px] text-[var(--text-muted)] leading-normal mt-0.5">{feat.desc}</p>
                           </div>
                         </div>
                       );
@@ -1236,8 +1209,8 @@ export default function ClinicalAssistantScreen() {
                 className="mt-8 space-y-3"
               >
                 <div className="flex items-center gap-2 px-1">
-                  <Sparkles size={14} className="text-cyan-400" />
-                  <span className="text-xs font-bold text-slate-300 uppercase tracking-wider">Suggested Queries</span>
+                  <Sparkles size={14} className="text-[var(--primary)]" />
+                  <span className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Suggested Queries</span>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {[
@@ -1251,10 +1224,10 @@ export default function ClinicalAssistantScreen() {
                     <button
                       key={i}
                       onClick={() => handleSuggestionClick(sug.text)}
-                      className="text-left px-4 py-3 bg-[#1E293B] hover:bg-slate-800 border border-slate-800/80 hover:border-slate-700 rounded-xl text-xs sm:text-sm font-medium text-slate-300 hover:text-cyan-400 transition-all cursor-pointer shadow-xs flex items-center justify-between select-none"
+                      className="text-left px-4 py-3 bg-[#1E293B] hover:bg-[var(--surface)] border border-[var(--border)]/80 hover:border-[var(--border)] rounded-xl text-xs sm:text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-all cursor-pointer shadow-xs flex items-center justify-between select-none"
                     >
                       <span className="truncate">{sug.label}</span>
-                      <ChevronRight size={14} className="text-slate-500 shrink-0 ml-2" />
+                      <ChevronRight size={14} className="text-[var(--text-muted)] shrink-0 ml-2" />
                     </button>
                   ))}
                 </div>
@@ -1272,7 +1245,7 @@ export default function ClinicalAssistantScreen() {
               >
                 {/* Avatar (only for assistant responses to keep right margin clean) */}
                 {!isUser && (
-                  <div className="w-8 h-8 rounded-full flex items-center justify-center bg-slate-800 text-blue-400 border border-slate-700 shrink-0 shadow-xs mt-1">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[var(--surface)] text-[var(--primary)] border border-[var(--border)] shrink-0 shadow-xs mt-1">
                     <Bot size={15} />
                   </div>
                 )}
@@ -1282,18 +1255,18 @@ export default function ClinicalAssistantScreen() {
                   
                   {/* Real-time RAG Steps Tracker */}
                   {msg.isThinking && (
-                    <div className="flex flex-col gap-2.5 bg-[#1E293B] border border-slate-800 rounded-2xl p-4 shadow-md w-full sm:min-w-[320px]">
-                      <div className="flex items-center gap-2 text-xs font-bold text-cyan-400">
+                    <div className="flex flex-col gap-2.5 bg-[#1E293B] border border-[var(--border)] rounded-2xl p-4 shadow-md w-full sm:min-w-[320px]">
+                      <div className="flex items-center gap-2 text-xs font-bold text-[var(--primary)]">
                         <Loader2 size={14} className="animate-spin shrink-0" />
                         <span>Clinical Decisional Inference</span>
                       </div>
-                      <div className="space-y-2 pl-2 border-l-2 border-slate-700">
-                        <div className="flex items-center gap-2 text-xs font-semibold text-slate-200">
-                          <CheckCircle2 size={13} className="text-emerald-500 shrink-0" />
+                      <div className="space-y-2 pl-2 border-l-2 border-[var(--border)]">
+                        <div className="flex items-center gap-2 text-xs font-semibold text-[var(--text)]">
+                          <CheckCircle2 size={13} className="text-[var(--success)] shrink-0" />
                           <span>{msg.content}</span>
                         </div>
                         {msg.routedTo && msg.routedTo.length > 0 && (
-                          <div className="flex items-center gap-1.5 text-[10px] text-slate-400">
+                          <div className="flex items-center gap-1.5 text-[10px] text-[var(--text-muted)]">
                             <ChevronRight size={10} className="shrink-0" />
                             <span>Routed Base: {msg.routedTo.join(', ')}</span>
                           </div>
@@ -1307,8 +1280,8 @@ export default function ClinicalAssistantScreen() {
                     <div className="flex items-start gap-2.5 max-w-full group/bubble">
                       <div className={`rounded-3xl px-5 py-4 shadow-sm text-base leading-relaxed ${
                         isUser 
-                          ? 'bg-blue-600 text-slate-100 rounded-tr-none shadow-md font-medium' 
-                          : 'bg-[#1E293B] border border-slate-800 text-slate-200 rounded-tl-none shadow-xs'
+                          ? 'bg-[var(--primary)] text-[var(--text)] rounded-tr-none shadow-md font-medium' 
+                          : 'bg-[#1E293B] border border-[var(--border)] text-[var(--text)] rounded-tl-none shadow-xs'
                       }`}>
                         {isUser ? (
                           <div className="space-y-2">
@@ -1347,16 +1320,16 @@ export default function ClinicalAssistantScreen() {
 
                   {/* Verification Citations Widget */}
                   {!msg.isThinking && msg.role === 'assistant' && msg.citations && msg.citations.length > 0 && (
-                    <div className="w-full bg-[#1E293B]/40 border border-slate-800 rounded-2xl p-4 text-xs mt-1 animate-in fade-in duration-300">
-                      <div className="flex items-center justify-between mb-3 border-b border-slate-800/80 pb-2.5 flex-wrap gap-2">
-                        <div className="flex items-center gap-1.5 text-slate-300 font-bold">
-                          <CheckCircle2 size={14} className="text-emerald-500 shrink-0" />
+                    <div className="w-full bg-[#1E293B]/40 border border-[var(--border)] rounded-2xl p-4 text-xs mt-1 animate-in fade-in duration-300">
+                      <div className="flex items-center justify-between mb-3 border-b border-[var(--border)]/80 pb-2.5 flex-wrap gap-2">
+                        <div className="flex items-center gap-1.5 text-[var(--text)] font-bold">
+                          <CheckCircle2 size={14} className="text-[var(--success)] shrink-0" />
                           <span>Clinical Evidence Synthesized</span>
                         </div>
                         {msg.confidence && (
                           <div className="flex items-center gap-1.5 font-bold">
-                            <span className="text-slate-400">Confidence:</span>
-                            <span className="bg-emerald-500/10 text-emerald-400 px-2.5 py-0.5 rounded-full border border-emerald-500/20 font-mono tracking-tight text-[11px]">
+                            <span className="text-[var(--text-muted)]">Confidence:</span>
+                            <span className="bg-[var(--success)]/10 text-[var(--success)] px-2.5 py-0.5 rounded-full border border-emerald-500/20 font-mono tracking-tight text-[11px]">
                               {msg.confidence}%
                             </span>
                           </div>
@@ -1364,15 +1337,15 @@ export default function ClinicalAssistantScreen() {
                       </div>
                       
                       <div className="space-y-2">
-                        <span className="text-[10px] text-slate-400 uppercase tracking-wider font-bold block">Sources Cited:</span>
+                        <span className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-bold block">Sources Cited:</span>
                         <ul className="space-y-2">
                           {msg.citations.map((cite, i) => (
-                            <li key={i} className="flex items-start gap-2 text-slate-300">
-                              <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 shrink-0" />
-                              <span className="leading-normal text-xs text-slate-300">
-                                <span className="font-bold text-slate-200">{cite.source}</span>
-                                {cite.year && <span className="text-slate-400"> ({cite.year})</span>}
-                                <span className="text-slate-400"> — {cite.document}</span>
+                            <li key={i} className="flex items-start gap-2 text-[var(--text)]">
+                              <span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] mt-1.5 shrink-0" />
+                              <span className="leading-normal text-xs text-[var(--text)]">
+                                <span className="font-bold text-[var(--text)]">{cite.source}</span>
+                                {cite.year && <span className="text-[var(--text-muted)]"> ({cite.year})</span>}
+                                <span className="text-[var(--text-muted)]"> — {cite.document}</span>
                               </span>
                             </li>
                           ))}
@@ -1380,10 +1353,10 @@ export default function ClinicalAssistantScreen() {
                       </div>
                       
                       {msg.routedTo && (
-                        <div className="mt-3 pt-3 border-t border-slate-800/80 flex flex-wrap items-center gap-2">
-                          <span className="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Routing:</span>
+                        <div className="mt-3 pt-3 border-t border-[var(--border)]/80 flex flex-wrap items-center gap-2">
+                          <span className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-bold">Routing:</span>
                           {msg.routedTo.map((route, i) => (
-                            <span key={i} className="px-2 py-0.5 bg-slate-900 border border-slate-800 rounded-lg text-[10px] font-bold text-blue-400">
+                            <span key={i} className="px-2 py-0.5 bg-[var(--bg)] border border-[var(--border)] rounded-lg text-[10px] font-bold text-[var(--primary)]">
                               {route}
                             </span>
                           ))}
@@ -1400,12 +1373,12 @@ export default function ClinicalAssistantScreen() {
           {/* Typing Indicator if processing */}
           {isProcessing && (
             <div className="flex gap-3 sm:gap-4 items-start animate-in fade-in duration-200">
-              <div className="w-8 h-8 rounded-full flex items-center justify-center bg-slate-800 text-blue-400 border border-slate-700 shrink-0 shadow-xs mt-1">
+              <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[var(--surface)] text-[var(--primary)] border border-[var(--border)] shrink-0 shadow-xs mt-1">
                 <Bot size={15} />
               </div>
               <div className="flex flex-col gap-2 max-w-[80%] items-start">
-                <div className="bg-[#1E293B] border border-slate-800 rounded-2xl rounded-tl-none px-5 py-4 shadow-md flex items-center gap-3">
-                  <span className="text-sm font-semibold text-slate-300">Clinical Assistant is thinking</span>
+                <div className="bg-[#1E293B] border border-[var(--border)] rounded-2xl rounded-tl-none px-5 py-4 shadow-md flex items-center gap-3">
+                  <span className="text-sm font-semibold text-[var(--text)]">Clinical Assistant is thinking</span>
                   <div className="flex gap-1 items-center justify-center mt-1">
                     <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></span>
                     <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></span>
@@ -1427,7 +1400,7 @@ export default function ClinicalAssistantScreen() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
               onClick={() => scrollToBottom('smooth')}
-              className="absolute right-6 bottom-36 sm:bottom-32 p-3 rounded-full bg-[#1E293B] border border-slate-800 text-cyan-400 shadow-lg hover:bg-slate-800 transition-colors cursor-pointer z-10"
+              className="absolute right-6 bottom-36 sm:bottom-32 p-3 rounded-full bg-[#1E293B] border border-[var(--border)] text-[var(--primary)] shadow-lg hover:bg-[var(--surface)] transition-colors cursor-pointer z-10"
               title="Scroll to bottom"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -1438,15 +1411,15 @@ export default function ClinicalAssistantScreen() {
         </AnimatePresence>
         
         {/* Floating Interactive Input Composer Area */}
-        <div className="p-4 border-t border-slate-800/80 bg-[#1E293B] shrink-0 z-10 shadow-xl">
+        <div className="p-4 border-t border-[var(--border)]/80 bg-[#1E293B] shrink-0 z-10 shadow-xl">
           
           {/* Active Databases Config Dropdown Panel */}
           <div className="mb-3 relative">
             <button 
               onClick={() => setShowSourceSelector(!showSourceSelector)}
-              className="flex items-center gap-1.5 text-xs font-bold text-cyan-400 px-3 py-1.5 hover:bg-cyan-500/10 border border-cyan-500/20 rounded-xl transition-all cursor-pointer select-none"
+              className="flex items-center gap-1.5 text-xs font-bold text-[var(--primary)] px-3 py-1.5 hover:bg-[var(--primary)]/10 border border-[var(--primary)]/20 rounded-xl transition-all cursor-pointer select-none"
             >
-              <Library size={13} className="text-cyan-400" /> 
+              <Library size={13} className="text-[var(--primary)]" /> 
               <span>Configure Active Databases ({selectedSources.length})</span>
             </button>
             
@@ -1456,17 +1429,17 @@ export default function ClinicalAssistantScreen() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
-                  className="absolute bottom-11 left-0 w-full sm:w-[480px] p-4 bg-[#1E293B] border border-slate-800 rounded-2xl grid grid-cols-2 gap-2.5 shadow-xl z-20"
+                  className="absolute bottom-11 left-0 w-full sm:w-[480px] p-4 bg-[#1E293B] border border-[var(--border)] rounded-2xl grid grid-cols-2 gap-2.5 shadow-xl z-20"
                 >
                   {AVAILABLE_SOURCES.map(source => (
-                    <label key={source} className="flex items-center gap-2.5 cursor-pointer p-2.5 bg-[#0F172A]/80 border border-slate-800 hover:border-slate-700 rounded-xl transition-all select-none">
+                    <label key={source} className="flex items-center gap-2.5 cursor-pointer p-2.5 bg-[#0F172A]/80 border border-[var(--border)] hover:border-[var(--border)] rounded-xl transition-all select-none">
                       <input 
                         type="checkbox" 
                         checked={selectedSources.includes(source)}
                         onChange={() => toggleSource(source)}
-                        className="accent-blue-500 rounded h-4 w-4 border-slate-800 cursor-pointer"
+                        className="accent-blue-500 rounded h-4 w-4 border-[var(--border)] cursor-pointer"
                       />
-                      <span className="text-xs text-slate-300 font-medium">{source}</span>
+                      <span className="text-xs text-[var(--text)] font-medium">{source}</span>
                     </label>
                   ))}
                 </motion.div>
@@ -1481,7 +1454,7 @@ export default function ClinicalAssistantScreen() {
                 initial={{ opacity: 0, height: 0, y: 10 }}
                 animate={{ opacity: 1, height: 'auto', y: 0 }}
                 exit={{ opacity: 0, height: 0, y: 10 }}
-                className="overflow-hidden mb-3 bg-blue-500/5 border border-blue-500/15 rounded-2xl p-4 shadow-sm"
+                className="overflow-hidden mb-3 bg-[var(--primary)]/5 border border-[var(--primary)]/15 rounded-2xl p-4 shadow-sm"
               >
                 <div className="flex items-center justify-between gap-3 mb-2 flex-wrap">
                   <div className="flex items-center gap-2">
@@ -1496,11 +1469,11 @@ export default function ClinicalAssistantScreen() {
 
                     {/* Speech Language selector dropdown */}
                     <div className="flex items-center gap-1">
-                      <span className="text-[10px] text-slate-400 font-medium">Language:</span>
+                      <span className="text-[10px] text-[var(--text-muted)] font-medium">Language:</span>
                       <select
                         value={speechLang}
                         onChange={(e) => setSpeechLang(e.target.value)}
-                        className="bg-[#0F172A] text-xs text-slate-300 border border-slate-800 rounded px-2 py-0.5 outline-none font-semibold cursor-pointer font-sans"
+                        className="bg-[#0F172A] text-xs text-[var(--text)] border border-[var(--border)] rounded px-2 py-0.5 outline-none font-semibold cursor-pointer font-sans"
                       >
                         <option value="en-US">English (US)</option>
                         <option value="en-GB">English (UK)</option>
@@ -1520,7 +1493,7 @@ export default function ClinicalAssistantScreen() {
                     </div>
                     <button
                       onClick={toggleListening}
-                      className="text-[10px] bg-[#0F172A] border border-slate-800 hover:bg-slate-800 px-2.5 py-0.5 rounded text-slate-300 font-semibold transition-colors cursor-pointer"
+                      className="text-[10px] bg-[#0F172A] border border-[var(--border)] hover:bg-[var(--surface)] px-2.5 py-0.5 rounded text-[var(--text)] font-semibold transition-colors cursor-pointer"
                     >
                       Stop
                     </button>
@@ -1528,26 +1501,26 @@ export default function ClinicalAssistantScreen() {
                 </div>
 
                 {/* Real-time Interim speech content */}
-                <div className="bg-[#0F172A] border border-slate-800 rounded-xl p-3 min-h-[50px] flex flex-col justify-between mb-2">
-                  <div className="text-xs text-slate-300 select-text">
+                <div className="bg-[#0F172A] border border-[var(--border)] rounded-xl p-3 min-h-[50px] flex flex-col justify-between mb-2">
+                  <div className="text-xs text-[var(--text)] select-text">
                     {speechInterim ? (
-                      <span className="text-slate-400 italic animate-pulse">{speechInterim}</span>
+                      <span className="text-[var(--text-muted)] italic animate-pulse">{speechInterim}</span>
                     ) : (
-                      <span className="text-slate-500 text-[11px]">Start speaking to dictate symptoms or clinical details...</span>
+                      <span className="text-[var(--text-muted)] text-[11px]">Start speaking to dictate symptoms or clinical details...</span>
                     )}
                   </div>
                 </div>
 
                 {/* Hands-free Voice Commands Info Banner */}
-                <div className="flex items-start gap-1.5 bg-[#0F172A]/50 border border-slate-800/50 rounded-xl p-2.5 text-[10px] text-slate-400 leading-relaxed">
-                  <span className="font-bold text-blue-400 text-xs shrink-0">💡 Commands:</span>
+                <div className="flex items-start gap-1.5 bg-[#0F172A]/50 border border-[var(--border)]/50 rounded-xl p-2.5 text-[10px] text-[var(--text-muted)] leading-relaxed">
+                  <span className="font-bold text-[var(--primary)] text-xs shrink-0">💡 Commands:</span>
                   <div className="grid grid-cols-2 gap-x-3 gap-y-1 w-full pl-1">
-                    <div>Say <code className="font-bold text-slate-300 bg-[#0F172A] px-1 rounded font-mono">"period"</code> for .</div>
-                    <div>Say <code className="font-bold text-slate-300 bg-[#0F172A] px-1 rounded font-mono">"comma"</code> for ,</div>
-                    <div>Say <code className="font-bold text-slate-300 bg-[#0F172A] px-1 rounded font-mono">"new line"</code> for break</div>
-                    <div>Say <code className="font-bold text-slate-300 bg-[#0F172A] px-1 rounded font-mono">"send message"</code> to send</div>
-                    <div>Say <code className="font-bold text-slate-300 bg-[#0F172A] px-1 rounded font-mono">"clear all"</code> to reset</div>
-                    <div>Say <code className="font-bold text-slate-300 bg-[#0F172A] px-1 rounded font-mono">"delete last"</code> to undo word</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[#0F172A] px-1 rounded font-mono">"period"</code> for .</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[#0F172A] px-1 rounded font-mono">"comma"</code> for ,</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[#0F172A] px-1 rounded font-mono">"new line"</code> for break</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[#0F172A] px-1 rounded font-mono">"send message"</code> to send</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[#0F172A] px-1 rounded font-mono">"clear all"</code> to reset</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[#0F172A] px-1 rounded font-mono">"delete last"</code> to undo word</div>
                   </div>
                 </div>
               </motion.div>
@@ -1578,7 +1551,7 @@ export default function ClinicalAssistantScreen() {
           </AnimatePresence>
 
           {/* Styled Floating Input Box */}
-          <div className="relative flex flex-col bg-[#0F172A] border border-slate-800 focus-within:ring-2 focus-within:ring-cyan-500/20 focus-within:border-cyan-500 focus-within:bg-[#0F172A]/90 rounded-2xl shadow-inner transition-all overflow-hidden p-1">
+          <div className="relative flex flex-col bg-[#0F172A] border border-[var(--border)] focus-within:ring-2 focus-within:ring-cyan-500/20 focus-within:border-[var(--primary)] focus-within:bg-[#0F172A]/90 rounded-2xl shadow-inner transition-all overflow-hidden p-1">
             <input 
               type="file" 
               ref={fileInputRef} 
@@ -1592,29 +1565,29 @@ export default function ClinicalAssistantScreen() {
                 {attachedFiles.map((file) => (
                   <div 
                     key={file.id} 
-                    className="flex flex-col gap-1.5 p-3 bg-slate-900/90 border border-slate-800 rounded-xl text-xs text-slate-300 shadow-sm transition-all"
+                    className="flex flex-col gap-1.5 p-3 bg-[var(--bg)]/90 border border-[var(--border)] rounded-xl text-xs text-[var(--text)] shadow-sm transition-all"
                   >
                     <div className="flex items-center justify-between gap-3 select-none">
                       <div className="flex items-center gap-2 truncate min-w-0">
                         {file.status === 'uploading' ? (
-                          <Loader2 size={13} className="text-cyan-400 animate-spin shrink-0" />
+                          <Loader2 size={13} className="text-[var(--primary)] animate-spin shrink-0" />
                         ) : file.status === 'extracted' ? (
-                          <CheckCircle2 size={13} className="text-emerald-400 shrink-0" />
+                          <CheckCircle2 size={13} className="text-[var(--success)] shrink-0" />
                         ) : (
-                          <AlertCircle size={13} className="text-rose-400 shrink-0" />
+                          <AlertCircle size={13} className="text-red-500 shrink-0" />
                         )}
-                        <span className="font-semibold truncate text-slate-200">{file.name}</span>
-                        <span className="text-[10px] text-slate-500 font-mono">({(file.size / 1024).toFixed(1)} KB)</span>
+                        <span className="font-semibold truncate text-[var(--text)]">{file.name}</span>
+                        <span className="text-[10px] text-[var(--text-muted)] font-mono">({(file.size / 1024).toFixed(1)} KB)</span>
                       </div>
                       <div className="flex items-center gap-2 shrink-0">
                         {file.status === 'uploading' && (
-                          <span className="text-[10px] text-cyan-400 font-bold animate-pulse">Extracting...</span>
+                          <span className="text-[10px] text-[var(--primary)] font-bold animate-pulse">Extracting...</span>
                         )}
                         {file.status === 'extracted' && (
-                          <span className="text-[10px] text-emerald-400 font-bold bg-emerald-500/10 px-1.5 py-0.5 rounded">Extracted</span>
+                          <span className="text-[10px] text-[var(--success)] font-bold bg-[var(--success)]/10 px-1.5 py-0.5 rounded">Extracted</span>
                         )}
                         {file.status === 'failed' && (
-                          <span className="text-[10px] text-rose-400 font-bold bg-rose-500/10 px-1.5 py-0.5 rounded">Failed</span>
+                          <span className="text-[10px] text-red-500 font-bold bg-red-500/10 px-1.5 py-0.5 rounded">Failed</span>
                         )}
                         
                         {/* Direct Cloudinary Link */}
@@ -1625,7 +1598,7 @@ export default function ClinicalAssistantScreen() {
                               navigator.clipboard.writeText(file.cloudinaryUrl || '');
                               alert('Direct Cloudinary URL copied to clipboard!');
                             }}
-                            className="p-1 hover:bg-slate-800 text-cyan-400 hover:text-cyan-300 rounded transition-colors cursor-pointer"
+                            className="p-1 hover:bg-[var(--surface)] text-[var(--primary)] hover:text-cyan-300 rounded transition-colors cursor-pointer"
                             title="Copy Direct Cloudinary URL"
                           >
                             <Copy size={12} />
@@ -1635,7 +1608,7 @@ export default function ClinicalAssistantScreen() {
                         <button 
                           type="button"
                           onClick={() => setAttachedFiles(prev => prev.filter(f => f.id !== file.id))}
-                          className="p-1 hover:bg-slate-800 text-slate-400 hover:text-red-400 rounded-lg transition-colors cursor-pointer"
+                          className="p-1 hover:bg-[var(--surface)] text-[var(--text-muted)] hover:text-red-400 rounded-lg transition-colors cursor-pointer"
                         >
                           <X size={13} />
                         </button>
@@ -1644,25 +1617,25 @@ export default function ClinicalAssistantScreen() {
 
                     {/* Progress Bar / Error Message */}
                     {file.status === 'uploading' && (
-                      <div className="w-full bg-slate-800 rounded-full h-1 overflow-hidden">
+                      <div className="w-full bg-[var(--surface)] rounded-full h-1 overflow-hidden">
                         <div 
-                          className="bg-cyan-500 h-full transition-all duration-300"
+                          className="bg-[var(--primary)] h-full transition-all duration-300"
                           style={{ width: `${file.progress}%` }}
                         />
                       </div>
                     )}
                     {file.status === 'failed' && file.error && (
-                      <span className="text-[10px] text-rose-400 italic font-medium">{file.error}</span>
+                      <span className="text-[10px] text-red-500 italic font-medium">{file.error}</span>
                     )}
 
                     {/* Quick Preview of Extracted Content */}
                     {file.status === 'extracted' && file.extractedContent && (
-                      <div className="mt-1 p-2 bg-slate-950/60 border border-slate-800/40 rounded-lg text-[10px] text-slate-400 leading-relaxed font-mono">
+                      <div className="mt-1 p-2 bg-[var(--bg)]/60 border border-[var(--border)] rounded-lg text-[10px] text-[var(--text-muted)] leading-relaxed font-mono">
                         {file.extractedContent.patientName && (
-                          <div><span className="text-cyan-400 font-semibold">Patient:</span> {file.extractedContent.patientName} ({file.extractedContent.age || 'N/A'}, {file.extractedContent.sex || 'N/A'})</div>
+                          <div><span className="text-[var(--primary)] font-semibold">Patient:</span> {file.extractedContent.patientName} ({file.extractedContent.age || 'N/A'}, {file.extractedContent.sex || 'N/A'})</div>
                         )}
                         {file.extractedContent.summary && (
-                          <div className="line-clamp-2 mt-0.5"><span className="text-slate-300 font-sans">Summary:</span> {file.extractedContent.summary}</div>
+                          <div className="line-clamp-2 mt-0.5"><span className="text-[var(--text)] font-sans">Summary:</span> {file.extractedContent.summary}</div>
                         )}
                       </div>
                     )}
@@ -1677,14 +1650,14 @@ export default function ClinicalAssistantScreen() {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Ask anything about diseases, drugs, laboratory results or patient management..." 
-                className="w-full pl-4 pr-2 py-3.5 max-h-40 min-h-[48px] bg-transparent outline-none text-slate-100 text-sm sm:text-base resize-none placeholder-slate-500 leading-relaxed self-center font-sans"
+                className="w-full pl-4 pr-2 py-3.5 max-h-40 min-h-[48px] bg-transparent outline-none text-[var(--text)] text-sm sm:text-base resize-none placeholder-slate-500 leading-relaxed self-center font-sans"
                 rows={1}
               />
               <div className="flex items-center gap-1.5 pb-2 shrink-0 self-end">
                 <button
                   type="button"
                   onClick={() => fileInputRef.current?.click()}
-                  className="p-2.5 text-slate-400 hover:text-blue-400 hover:bg-[#1E293B] rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center"
+                  className="p-2.5 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[#1E293B] rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center"
                   title="Upload PDF or Image"
                 >
                   <Paperclip size={18} />
@@ -1694,7 +1667,7 @@ export default function ClinicalAssistantScreen() {
                   className={`p-2.5 rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center ${
                     isListening
                       ? 'bg-red-500/20 text-red-400 animate-pulse'
-                      : 'text-slate-400 hover:text-blue-400 hover:bg-[#1E293B]'
+                      : 'text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[#1E293B]'
                   }`}
                   title={isListening ? "Stop listening" : "Start dictation"}
                 >
@@ -1705,23 +1678,13 @@ export default function ClinicalAssistantScreen() {
                   disabled={(!input.trim() && attachedFiles.length === 0) || isProcessing || attachedFiles.some(f => f.status === 'uploading')}
                   className={`p-2.5 rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center ${
                     (input.trim() || attachedFiles.length > 0) && !isProcessing && !attachedFiles.some(f => f.status === 'uploading')
-                      ? 'bg-blue-600 text-slate-100 shadow-sm hover:bg-blue-500' 
-                      : 'bg-slate-800 text-slate-600 cursor-not-allowed'
+                      ? 'bg-[var(--primary)] text-[var(--text)] shadow-sm hover:bg-[var(--primary)]' 
+                      : 'bg-[var(--surface)] text-[var(--text-muted)] cursor-not-allowed'
                   }`}
                 >
                   {isProcessing ? <Loader2 size={18} className="animate-spin" /> : <Send size={18} />}
                 </button>
               </div>
-            </div>
-          </div>
-          <div className="flex justify-between items-center mt-2 px-1 flex-wrap gap-2 shrink-0">
-            <p className="text-[10px] text-slate-500">Clinova uses an active Multi-RAG engine. Always check official sources.</p>
-            <div className="flex items-center gap-1.5 text-[10px] font-bold text-emerald-400 bg-emerald-500/5 px-2.5 py-0.5 rounded border border-emerald-500/10">
-              <span className="relative flex h-1.5 w-1.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
-              </span>
-              <span>RAG Engine Verified</span>
             </div>
           </div>
         </div>

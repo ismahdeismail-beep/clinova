@@ -10,6 +10,7 @@ import { storage, db, auth } from '../lib/firebase';
 import type { StoredFile, FileCategory, FileUploadOptions, UploadProgress, UploadResult } from '../types/engine';
 import { MediaService } from './media.service';
 import { localFileDb } from '../lib/localFileDb';
+import { ChunkedUploadService } from './chunkedUpload.service';
 
 const FILES_COLLECTION = 'files';
 const STORAGE_ROOT = 'clinova';
@@ -90,6 +91,51 @@ export const StorageService = {
     const uploadedBy = currentUser?.uid || 'guest';
     const uploadedByEmail = currentUser?.email || null;
     const uploadedByName = currentUser?.displayName || currentUser?.email?.split('@')[0] || 'Guest User';
+
+    // Intercept files larger than 15MB to upload in sequential chunks
+    if (file.size > 15 * 1024 * 1024) {
+      try {
+        console.log(`[StorageService] Large file detected (${(file.size / 1024 / 1024).toFixed(2)}MB). Proceeding with multi-part chunked upload...`);
+        const chunkedResult = await ChunkedUploadService.uploadFileInChunks(file, onProgress, abortSignal);
+        
+        const storedFile: StoredFile = {
+          id: fileId,
+          originalName: file.name,
+          storagePath: chunkedResult.url,
+          mimeType: file.type,
+          size: file.size,
+          category: options.category,
+          accessScope: options.accessScope ?? 'private',
+          patientId: options.patientId,
+          studyId: options.studyId,
+          uploadedBy,
+          uploadedByEmail,
+          uploadedByName,
+          createdAt: Date.now(),
+          updatedAt: Date.now(),
+          hash,
+          accessibleTo: [],
+        };
+
+        try {
+          await setDoc(doc(db, FILES_COLLECTION, fileId), storedFile);
+        } catch (fsError) {
+          console.warn('[StorageService] Firestore registry failed for chunked file, continuing with in-memory fallback:', fsError);
+        }
+
+        try {
+          await localFileDb.saveFile(fileId, storedFile, file);
+        } catch (idbErr) {
+          console.warn('[StorageService] Local IndexedDB save skipped for chunked file:', idbErr);
+        }
+
+        IN_MEMORY_FILES.unshift(storedFile);
+
+        return { file: storedFile, url: chunkedResult.url };
+      } catch (chunkErr) {
+        console.error('[StorageService] Chunked multipart upload failed, attempting default upload fallback:', chunkErr);
+      }
+    }
 
     try {
       const storageRef = ref(storage, storagePath);

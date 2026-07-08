@@ -1,6 +1,7 @@
 import { processAcademicRequest } from "./src/server/academicEngine.js";
 import express from 'express';
 import path from 'path';
+import fs from 'fs';
 import { GoogleGenAI, Type } from '@google/genai';
 import dotenv from 'dotenv';
 import crypto from 'crypto';
@@ -52,6 +53,9 @@ function safeJsonParse(text: string | null | undefined, fallback: any = {}): any
 app.use(express.json({ limit: '100mb' }));
 app.use(express.urlencoded({ limit: '100mb', extended: true }));
 
+// Serve uploaded files statically
+app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
+
 // Proxy Cloudinary Upload
 app.post('/api/cloudinary/upload', upload.single('file'), async (req, res) => {
   try {
@@ -85,6 +89,88 @@ app.post('/api/cloudinary/upload', upload.single('file'), async (req, res) => {
   } catch (error: any) {
     console.error('Cloudinary proxy upload error:', error);
     res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'Failed to upload image' });
+  }
+});
+
+// Multipart Chunked Upload API
+app.post('/api/upload/chunk', upload.single('chunk'), async (req, res) => {
+  try {
+    const { uploadId, chunkIndex, totalChunks, fileName } = req.body;
+    if (!uploadId || chunkIndex === undefined || !totalChunks || !fileName) {
+      return res.status(400).json({ error: 'Missing required chunk upload fields.' });
+    }
+
+    if (!req.file) {
+      return res.status(400).json({ error: 'No chunk file provided.' });
+    }
+
+    const chunkIdx = parseInt(chunkIndex, 10);
+    const totalChks = parseInt(totalChunks, 10);
+
+    const uploadsDir = path.join(process.cwd(), 'uploads');
+    const tmpDir = path.join(uploadsDir, 'tmp', uploadId);
+
+    // Create directories recursively
+    if (!fs.existsSync(uploadsDir)) {
+      fs.mkdirSync(uploadsDir, { recursive: true });
+    }
+    if (!fs.existsSync(tmpDir)) {
+      fs.mkdirSync(tmpDir, { recursive: true });
+    }
+
+    // Write current chunk
+    const chunkPath = path.join(tmpDir, `chunk_${chunkIdx}`);
+    fs.writeFileSync(chunkPath, req.file.buffer);
+
+    // Check if we have received all chunks
+    const files = fs.readdirSync(tmpDir);
+    const uploadedChunksCount = files.filter(f => f.startsWith('chunk_')).length;
+
+    if (uploadedChunksCount === totalChks) {
+      // Ensure all individual chunks are actually written completely
+      const safeName = fileName.replace(/[^a-zA-Z0-9._-]/g, '_').toLowerCase();
+      const finalFileName = `${uploadId}_${safeName}`;
+      const finalPath = path.join(uploadsDir, finalFileName);
+
+      const writeStream = fs.createWriteStream(finalPath);
+
+      for (let i = 0; i < totalChks; i++) {
+        const currentChunkPath = path.join(tmpDir, `chunk_${i}`);
+        if (!fs.existsSync(currentChunkPath)) {
+          throw new Error(`Missing chunk index: ${i}`);
+        }
+        const chunkData = fs.readFileSync(currentChunkPath);
+        writeStream.write(chunkData);
+      }
+
+      writeStream.end();
+
+      // Clear chunk files and remove the temporary folder
+      for (let i = 0; i < totalChks; i++) {
+        const currentChunkPath = path.join(tmpDir, `chunk_${i}`);
+        if (fs.existsSync(currentChunkPath)) {
+          fs.unlinkSync(currentChunkPath);
+        }
+      }
+      fs.rmdirSync(tmpDir);
+
+      return res.json({
+        status: 'completed',
+        url: `/uploads/${finalFileName}`,
+        fileName: finalFileName,
+      });
+    }
+
+    return res.json({
+      status: 'chunk_received',
+      chunkIndex: chunkIdx,
+      uploadedCount: uploadedChunksCount,
+      totalChunks: totalChks
+    });
+
+  } catch (error: any) {
+    console.error('Chunk upload error:', error);
+    res.status(500).json({ error: error.message || 'Failed to process chunk upload.' });
   }
 });
 

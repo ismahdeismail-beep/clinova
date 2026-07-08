@@ -1017,7 +1017,7 @@ export default function ClinicalAssistantScreen() {
 
   return (
     <div 
-      className="fixed md:left-64 left-0 right-0 bottom-0 top-[calc(4rem+env(safe-area-inset-top,0px))] bg-[#0F172A] text-[var(--text)] flex flex-row overflow-hidden z-20 font-sans"
+      className="fixed md:left-64 left-0 right-0 bottom-0 top-[calc(4rem+env(safe-area-inset-top,0px))] bg-[var(--bg)] text-[var(--text)] flex flex-row overflow-hidden z-20 font-sans"
       style={{
         height: `calc(${viewportHeight}px - 4rem - env(safe-area-inset-top, 0px))`
       }}
@@ -1042,13 +1042,13 @@ export default function ClinicalAssistantScreen() {
       </div>
 
       {/* Main Chat Interface */}
-      <div className="flex-1 flex flex-col h-full overflow-hidden bg-[#0F172A] relative">
+      <div className="flex-1 flex flex-col h-full overflow-hidden bg-[var(--bg)] relative">
         
         {/* Chat Header */}
-        <div className="h-16 border-b border-[var(--border)]/80 px-4 sm:px-6 bg-[#1E293B] flex items-center justify-between z-10 shrink-0">
+        <div className="h-16 border-b border-[var(--border)]/80 px-4 sm:px-6 bg-[var(--surface)] flex items-center justify-between z-10 shrink-0">
           <div className="flex items-center gap-3 min-w-0">
             <button 
-              className="md:hidden p-2 rounded-xl border border-[var(--border)] hover:bg-[#2e3b52] transition-all cursor-pointer"
+              className="md:hidden p-2 rounded-xl border border-[var(--border)] hover:bg-[var(--surface-dim)] transition-all cursor-pointer"
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
             >
               <Menu size={18} className="text-[var(--text)]" />
@@ -1075,7 +1075,7 @@ export default function ClinicalAssistantScreen() {
             {/* Quick New Chat Button */}
             <button
               onClick={handleNewSession}
-              className="p-2 sm:px-3 sm:py-1.5 rounded-xl border border-[var(--border)] hover:border-[var(--border)] bg-[#0F172A]/40 hover:bg-[#0F172A]/80 text-xs font-bold text-[var(--text)] transition-all flex items-center gap-1.5 cursor-pointer"
+              className="p-2 sm:px-3 sm:py-1.5 rounded-xl border border-[var(--border)] hover:border-[var(--border)] bg-[var(--bg)]/40 hover:bg-[var(--bg)]/80 text-xs font-bold text-[var(--text)] transition-all flex items-center gap-1.5 cursor-pointer"
               title="Start New Session"
             >
               <Plus size={14} className="text-[var(--primary)]" />
@@ -1086,7 +1086,7 @@ export default function ClinicalAssistantScreen() {
             <div className="relative">
               <button
                 onClick={() => setShowExportMenu(!showExportMenu)}
-                className="flex items-center gap-1.5 text-xs font-bold text-[var(--text)] bg-[#0F172A]/40 hover:bg-[#0F172A]/80 px-3 py-2 rounded-xl border border-[var(--border)] hover:border-[var(--border)] transition-all cursor-pointer select-none"
+                className="flex items-center gap-1.5 text-xs font-bold text-[var(--text)] bg-[var(--bg)]/40 hover:bg-[var(--bg)]/80 px-3 py-2 rounded-xl border border-[var(--border)] hover:border-[var(--border)] transition-all cursor-pointer select-none"
                 title="Export current conversation for records"
                 id="export-chat-button"
               >
@@ -1106,7 +1106,7 @@ export default function ClinicalAssistantScreen() {
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 8, scale: 0.95 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute right-0 mt-2 w-56 bg-[#1E293B] border border-[var(--border)] rounded-2xl shadow-xl z-40 p-2 flex flex-col gap-1 text-xs"
+                      className="absolute right-0 mt-2 w-56 bg-[var(--surface)] border border-[var(--border)] rounded-2xl shadow-xl z-40 p-2 flex flex-col gap-1 text-xs"
                       id="export-chat-dropdown"
                     >
                       <div className="px-2.5 py-1.5 border-b border-[var(--border)] text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider">
@@ -1155,7 +1155,7 @@ export default function ClinicalAssistantScreen() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
-                className="bg-[#1E293B] border border-[var(--border)] rounded-3xl p-6 sm:p-8 shadow-xl text-center flex flex-col items-center gap-5"
+                className="bg-[var(--surface)] border border-[var(--border)] rounded-3xl p-6 sm:p-8 shadow-xl text-center flex flex-col items-center gap-5"
               >
                 <div className="w-14 h-14 rounded-2xl bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20 shadow-inner">
                   <Sparkles size={32} className="text-[var(--primary)]" />
@@ -1186,7 +1186,7 @@ export default function ClinicalAssistantScreen() {
                     ].map((feat, idx) => {
                       const Icon = feat.icon;
                       return (
-                        <div key={idx} className="flex gap-3 p-3.5 bg-[#0F172A]/50 border border-[var(--border)]/80 rounded-2xl">
+                        <div key={idx} className="flex gap-3 p-3.5 bg-[var(--bg)]/50 border border-[var(--border)]/80 rounded-2xl">
                           <div className="w-8 h-8 rounded-lg bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/10 shrink-0">
                             <Icon size={16} />
                           </div>
@@ -1224,7 +1224,7 @@ export default function ClinicalAssistantScreen() {
                     <button
                       key={i}
                       onClick={() => handleSuggestionClick(sug.text)}
-                      className="text-left px-4 py-3 bg-[#1E293B] hover:bg-[var(--surface)] border border-[var(--border)]/80 hover:border-[var(--border)] rounded-xl text-xs sm:text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-all cursor-pointer shadow-xs flex items-center justify-between select-none"
+                      className="text-left px-4 py-3 bg-[var(--surface)] hover:bg-[var(--surface-dim)] border border-[var(--border)]/80 hover:border-[var(--border)] rounded-xl text-xs sm:text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-all cursor-pointer shadow-xs flex items-center justify-between select-none"
                     >
                       <span className="truncate">{sug.label}</span>
                       <ChevronRight size={14} className="text-[var(--text-muted)] shrink-0 ml-2" />
@@ -1255,7 +1255,7 @@ export default function ClinicalAssistantScreen() {
                   
                   {/* Real-time RAG Steps Tracker */}
                   {msg.isThinking && (
-                    <div className="flex flex-col gap-2.5 bg-[#1E293B] border border-[var(--border)] rounded-2xl p-4 shadow-md w-full sm:min-w-[320px]">
+                    <div className="flex flex-col gap-2.5 bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 shadow-md w-full sm:min-w-[320px]">
                       <div className="flex items-center gap-2 text-xs font-bold text-[var(--primary)]">
                         <Loader2 size={14} className="animate-spin shrink-0" />
                         <span>Clinical Decisional Inference</span>
@@ -1281,7 +1281,7 @@ export default function ClinicalAssistantScreen() {
                       <div className={`rounded-3xl px-5 py-4 shadow-sm text-base leading-relaxed ${
                         isUser 
                           ? 'bg-[var(--primary)] text-[var(--text)] rounded-tr-none shadow-md font-medium' 
-                          : 'bg-[#1E293B] border border-[var(--border)] text-[var(--text)] rounded-tl-none shadow-xs'
+                          : 'bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] rounded-tl-none shadow-xs'
                       }`}>
                         {isUser ? (
                           <div className="space-y-2">
@@ -1320,7 +1320,7 @@ export default function ClinicalAssistantScreen() {
 
                   {/* Verification Citations Widget */}
                   {!msg.isThinking && msg.role === 'assistant' && msg.citations && msg.citations.length > 0 && (
-                    <div className="w-full bg-[#1E293B]/40 border border-[var(--border)] rounded-2xl p-4 text-xs mt-1 animate-in fade-in duration-300">
+                    <div className="w-full bg-[var(--surface)]/40 border border-[var(--border)] rounded-2xl p-4 text-xs mt-1 animate-in fade-in duration-300">
                       <div className="flex items-center justify-between mb-3 border-b border-[var(--border)]/80 pb-2.5 flex-wrap gap-2">
                         <div className="flex items-center gap-1.5 text-[var(--text)] font-bold">
                           <CheckCircle2 size={14} className="text-[var(--success)] shrink-0" />
@@ -1377,7 +1377,7 @@ export default function ClinicalAssistantScreen() {
                 <Bot size={15} />
               </div>
               <div className="flex flex-col gap-2 max-w-[80%] items-start">
-                <div className="bg-[#1E293B] border border-[var(--border)] rounded-2xl rounded-tl-none px-5 py-4 shadow-md flex items-center gap-3">
+                <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl rounded-tl-none px-5 py-4 shadow-md flex items-center gap-3">
                   <span className="text-sm font-semibold text-[var(--text)]">Clinical Assistant is thinking</span>
                   <div className="flex gap-1 items-center justify-center mt-1">
                     <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></span>
@@ -1400,7 +1400,7 @@ export default function ClinicalAssistantScreen() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
               onClick={() => scrollToBottom('smooth')}
-              className="absolute right-6 bottom-36 sm:bottom-32 p-3 rounded-full bg-[#1E293B] border border-[var(--border)] text-[var(--primary)] shadow-lg hover:bg-[var(--surface)] transition-colors cursor-pointer z-10"
+              className="absolute right-6 bottom-36 sm:bottom-32 p-3 rounded-full bg-[var(--surface)] border border-[var(--border)] text-[var(--primary)] shadow-lg hover:bg-[var(--surface-dim)] transition-colors cursor-pointer z-10"
               title="Scroll to bottom"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -1411,7 +1411,7 @@ export default function ClinicalAssistantScreen() {
         </AnimatePresence>
         
         {/* Floating Interactive Input Composer Area */}
-        <div className="p-4 border-t border-[var(--border)]/80 bg-[#1E293B] shrink-0 z-10 shadow-xl">
+        <div className="p-4 border-t border-[var(--border)]/80 bg-[var(--surface)] shrink-0 z-10 shadow-xl">
           
           {/* Active Databases Config Dropdown Panel */}
           <div className="mb-3 relative">
@@ -1429,10 +1429,10 @@ export default function ClinicalAssistantScreen() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
-                  className="absolute bottom-11 left-0 w-full sm:w-[480px] p-4 bg-[#1E293B] border border-[var(--border)] rounded-2xl grid grid-cols-2 gap-2.5 shadow-xl z-20"
+                  className="absolute bottom-11 left-0 w-full sm:w-[480px] p-4 bg-[var(--surface)] border border-[var(--border)] rounded-2xl grid grid-cols-2 gap-2.5 shadow-xl z-20"
                 >
                   {AVAILABLE_SOURCES.map(source => (
-                    <label key={source} className="flex items-center gap-2.5 cursor-pointer p-2.5 bg-[#0F172A]/80 border border-[var(--border)] hover:border-[var(--border)] rounded-xl transition-all select-none">
+                    <label key={source} className="flex items-center gap-2.5 cursor-pointer p-2.5 bg-[var(--bg)]/80 border border-[var(--border)] hover:border-[var(--border)] rounded-xl transition-all select-none">
                       <input 
                         type="checkbox" 
                         checked={selectedSources.includes(source)}
@@ -1473,7 +1473,7 @@ export default function ClinicalAssistantScreen() {
                       <select
                         value={speechLang}
                         onChange={(e) => setSpeechLang(e.target.value)}
-                        className="bg-[#0F172A] text-xs text-[var(--text)] border border-[var(--border)] rounded px-2 py-0.5 outline-none font-semibold cursor-pointer font-sans"
+                        className="bg-[var(--bg)] text-xs text-[var(--text)] border border-[var(--border)] rounded px-2 py-0.5 outline-none font-semibold cursor-pointer font-sans"
                       >
                         <option value="en-US">English (US)</option>
                         <option value="en-GB">English (UK)</option>
@@ -1493,7 +1493,7 @@ export default function ClinicalAssistantScreen() {
                     </div>
                     <button
                       onClick={toggleListening}
-                      className="text-[10px] bg-[#0F172A] border border-[var(--border)] hover:bg-[var(--surface)] px-2.5 py-0.5 rounded text-[var(--text)] font-semibold transition-colors cursor-pointer"
+                      className="text-[10px] bg-[var(--bg)] border border-[var(--border)] hover:bg-[var(--surface-dim)] px-2.5 py-0.5 rounded text-[var(--text)] font-semibold transition-colors cursor-pointer"
                     >
                       Stop
                     </button>
@@ -1501,7 +1501,7 @@ export default function ClinicalAssistantScreen() {
                 </div>
 
                 {/* Real-time Interim speech content */}
-                <div className="bg-[#0F172A] border border-[var(--border)] rounded-xl p-3 min-h-[50px] flex flex-col justify-between mb-2">
+                <div className="bg-[var(--bg)] border border-[var(--border)] rounded-xl p-3 min-h-[50px] flex flex-col justify-between mb-2">
                   <div className="text-xs text-[var(--text)] select-text">
                     {speechInterim ? (
                       <span className="text-[var(--text-muted)] italic animate-pulse">{speechInterim}</span>
@@ -1512,15 +1512,15 @@ export default function ClinicalAssistantScreen() {
                 </div>
 
                 {/* Hands-free Voice Commands Info Banner */}
-                <div className="flex items-start gap-1.5 bg-[#0F172A]/50 border border-[var(--border)]/50 rounded-xl p-2.5 text-[10px] text-[var(--text-muted)] leading-relaxed">
+                <div className="flex items-start gap-1.5 bg-[var(--bg)]/50 border border-[var(--border)]/50 rounded-xl p-2.5 text-[10px] text-[var(--text-muted)] leading-relaxed">
                   <span className="font-bold text-[var(--primary)] text-xs shrink-0">💡 Commands:</span>
                   <div className="grid grid-cols-2 gap-x-3 gap-y-1 w-full pl-1">
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[#0F172A] px-1 rounded font-mono">"period"</code> for .</div>
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[#0F172A] px-1 rounded font-mono">"comma"</code> for ,</div>
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[#0F172A] px-1 rounded font-mono">"new line"</code> for break</div>
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[#0F172A] px-1 rounded font-mono">"send message"</code> to send</div>
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[#0F172A] px-1 rounded font-mono">"clear all"</code> to reset</div>
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[#0F172A] px-1 rounded font-mono">"delete last"</code> to undo word</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--bg)] px-1 rounded font-mono">"period"</code> for .</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--bg)] px-1 rounded font-mono">"comma"</code> for ,</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--bg)] px-1 rounded font-mono">"new line"</code> for break</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--bg)] px-1 rounded font-mono">"send message"</code> to send</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--bg)] px-1 rounded font-mono">"clear all"</code> to reset</div>
+                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--bg)] px-1 rounded font-mono">"delete last"</code> to undo word</div>
                   </div>
                 </div>
               </motion.div>
@@ -1551,7 +1551,7 @@ export default function ClinicalAssistantScreen() {
           </AnimatePresence>
 
           {/* Styled Floating Input Box */}
-          <div className="relative flex flex-col bg-[#0F172A] border border-[var(--border)] focus-within:ring-2 focus-within:ring-cyan-500/20 focus-within:border-[var(--primary)] focus-within:bg-[#0F172A]/90 rounded-2xl shadow-inner transition-all overflow-hidden p-1">
+          <div className="relative flex flex-col bg-[var(--bg)] border border-[var(--border)] focus-within:ring-2 focus-within:ring-cyan-500/20 focus-within:border-[var(--primary)] focus-within:bg-[var(--bg)]/90 rounded-2xl shadow-inner transition-all overflow-hidden p-1">
             <input 
               type="file" 
               ref={fileInputRef} 
@@ -1657,7 +1657,7 @@ export default function ClinicalAssistantScreen() {
                 <button
                   type="button"
                   onClick={() => fileInputRef.current?.click()}
-                  className="p-2.5 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[#1E293B] rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center"
+                  className="p-2.5 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--surface-dim)] rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center"
                   title="Upload PDF or Image"
                 >
                   <Paperclip size={18} />
@@ -1667,7 +1667,7 @@ export default function ClinicalAssistantScreen() {
                   className={`p-2.5 rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center ${
                     isListening
                       ? 'bg-red-500/20 text-red-400 animate-pulse'
-                      : 'text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[#1E293B]'
+                      : 'text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--surface-dim)]'
                   }`}
                   title={isListening ? "Stop listening" : "Start dictation"}
                 >

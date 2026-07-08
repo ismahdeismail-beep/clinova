@@ -49,6 +49,13 @@ function getFileId(): string {
 
 function computeHash(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
+    // For files > 10MB, just create a pseudo-hash to prevent UI thread freezing
+    // and massive memory allocation.
+    if (file.size > 10 * 1024 * 1024) {
+      resolve(`large-file-${file.size}-${file.lastModified}-${file.name.length}`);
+      return;
+    }
+
     const reader = new FileReader();
     reader.onload = () => {
       const buffer = reader.result as ArrayBuffer;
@@ -57,7 +64,7 @@ function computeHash(file: File): Promise<string> {
           .map((b) => b.toString(16).padStart(2, '0'))
           .join('');
         resolve(hex);
-      });
+      }).catch(reject);
     };
     reader.onerror = reject;
     reader.readAsArrayBuffer(file);

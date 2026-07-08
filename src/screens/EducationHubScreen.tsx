@@ -243,15 +243,19 @@ export default function EducationHubScreen() {
   });
 
   // Filter modules by search and Year level
-  let filteredMods = MODULES.filter(m => 
-    m.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    m.description.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  let filteredMods = MODULES.filter(m => {
+    if (!searchQuery) return true;
+    const q = searchQuery.toLowerCase();
+    return m.title.toLowerCase().includes(q) ||
+           m.description.toLowerCase().includes(q) ||
+           m.units.some(u => u.title.toLowerCase().includes(q) || (u.description || '').toLowerCase().includes(q));
+  });
 
   const userYear = userData?.academicLevel || '1st Year';
   const activeYearFilter = selectedYearFilter === 'My Year' ? userYear : selectedYearFilter;
   
-  if (activeYearFilter !== 'All') {
+  // Ignore year filter when searching so users can find units across all years
+  if (activeYearFilter !== 'All' && !searchQuery) {
     filteredMods = filteredMods.filter(m => MODULE_YEARS[m.id] === activeYearFilter);
   }
 
@@ -290,12 +294,12 @@ export default function EducationHubScreen() {
             </p>
           </div>
 
-          {!selectedModule && (
+          {!selectedUnit && (
             <div className="relative w-full md:w-96">
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" size={18} />
               <input
                 type="text"
-                placeholder="Search modules..."
+                placeholder={selectedModule ? "Search units..." : "Search modules & units..."}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full pl-10 pr-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"

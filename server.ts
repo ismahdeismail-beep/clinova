@@ -906,6 +906,144 @@ Provide 3 highly relevant clinical board-style questions with answers, detailed 
   }
 });
 
+// AI Flashcards Generator for Educational Units
+app.post('/api/gemini/generate-unit-flashcards', async (req, res) => {
+  try {
+    const { unitTitle, moduleTitle, notesText } = req.body;
+    if (!unitTitle) {
+      return res.status(400).json({ error: 'Missing unitTitle' });
+    }
+
+    const prompt = `Generate 5-8 high-yield active-recall study flashcards for the educational unit: "${unitTitle}" (part of "${moduleTitle || 'General Studies'}").
+${notesText ? `\nUse the following student-uploaded notes as the source of truth for custom topics, guidelines, or points:\n${notesText}\n` : 'Focus on the standard clinical, pharmacological, or physiological curriculum for this topic.'}
+
+Return a list of flashcard objects, where each flashcard has:
+1. question: A clear, concise active recall question or clinical scenario (e.g. "What is the primary mechanism of action of paclitaxel?").
+2. answer: A high-yield, punchy, informative answer explaining the concept or facts cleanly.`;
+
+    const response = await generateContentWithFallback({
+      model: 'gemini-3.5-flash',
+      contents: prompt,
+      config: {
+        responseMimeType: 'application/json',
+        responseSchema: {
+          type: Type.OBJECT,
+          properties: {
+            flashcards: {
+              type: Type.ARRAY,
+              items: {
+                type: Type.OBJECT,
+                properties: {
+                  question: { type: Type.STRING },
+                  answer: { type: Type.STRING }
+                },
+                required: ['question', 'answer']
+              }
+            }
+          },
+          required: ['flashcards']
+        },
+        systemInstruction: `You are an expert clinical pharmacy professor and OSCE board examiner. You construct high-yield, active recall flashcards to help trainees memorize core mechanisms, drug classes, side effects, guidelines, and diagnostic criteria. Keep questions highly specific and answers comprehensive yet punchy.`
+      }
+    });
+
+    const parsed = JSON.parse(response.text || '{"flashcards": []}');
+    res.json(parsed);
+  } catch (error: any) {
+    console.error('Flashcard generation error:', error);
+    res.status(500).json({ error: 'Failed to generate flashcards' });
+  }
+});
+
+// AI Quiz/MCQ Generator for Educational Units
+app.post('/api/gemini/generate-unit-quiz', async (req, res) => {
+  try {
+    const { unitTitle, moduleTitle, notesText } = req.body;
+    if (!unitTitle) {
+      return res.status(400).json({ error: 'Missing unitTitle' });
+    }
+
+    const prompt = `Generate 5 clinical-case-based or core-pharmacological multiple choice questions (MCQs) for the unit: "${unitTitle}" (under "${moduleTitle || 'General Studies'}").
+${notesText ? `\nBasing on these student-uploaded notes:\n${notesText}\n` : 'Basing on standard academic board requirements.'}
+
+Return a list of quiz question objects, where each object has:
+1. question: The clinical vignette or conceptual question.
+2. options: An array of exactly 4 strings (distractors and 1 correct answer).
+3. correctAnswer: The exact string corresponding to the correct option.
+4. explanation: A comprehensive explanation explaining why that answer is correct and why other options are incorrect, citing relevant mechanisms or guidelines.`;
+
+    const response = await generateContentWithFallback({
+      model: 'gemini-3.5-flash',
+      contents: prompt,
+      config: {
+        responseMimeType: 'application/json',
+        responseSchema: {
+          type: Type.OBJECT,
+          properties: {
+            quizzes: {
+              type: Type.ARRAY,
+              items: {
+                type: Type.OBJECT,
+                properties: {
+                  question: { type: Type.STRING },
+                  options: {
+                    type: Type.ARRAY,
+                    items: { type: Type.STRING }
+                  },
+                  correctAnswer: { type: Type.STRING },
+                  explanation: { type: Type.STRING }
+                },
+                required: ['question', 'options', 'correctAnswer', 'explanation']
+              }
+            }
+          },
+          required: ['quizzes']
+        },
+        systemInstruction: `You are an expert MCQ item writer for clinical board exams (such as the Pharmacy and Poisons Board OSCE exams or USMLE). You write highly realistic clinical vignettes, challenging distractors, and extremely educational explanation rationales based on evidence-based guidelines.`
+      }
+    });
+
+    const parsed = JSON.parse(response.text || '{"quizzes": []}');
+    res.json(parsed);
+  } catch (error: any) {
+    console.error('Quiz generation error:', error);
+    res.status(500).json({ error: 'Failed to generate quiz' });
+  }
+});
+
+// AI Study Guide Summary Generator for Educational Units
+app.post('/api/gemini/generate-unit-summary', async (req, res) => {
+  try {
+    const { unitTitle, moduleTitle, notesText } = req.body;
+    if (!unitTitle) {
+      return res.status(400).json({ error: 'Missing unitTitle' });
+    }
+
+    const prompt = `Generate an elegant, comprehensive, and highly structured medical study guide for the educational unit: "${unitTitle}" (part of "${moduleTitle || 'General Studies'}").
+${notesText ? `\nAnalyze and summarize the following student-uploaded materials, consolidating key details, names of medications, and guidelines:\n${notesText}\n` : 'Create a comprehensive guide following the standard medical/pharmacy curriculum.'}
+
+Structure the output beautifully using Markdown with the following key sections:
+1. **Overview & High-Yield Summary**: A high-level introduction to the physiological, clinical, or pharmacotherapy context.
+2. **Core Pharmacology & Mechanism of Action**: Detailed therapeutic classifications, receptor interactions, and pathways.
+3. **Formulary Dosing & Critical Adjustments**: Emphasize standard guidelines (e.g., KDI, WHO), dosing regimens, and any special patient conditions (like renal clearance, hepatic adjustments, or CrCl-based calculations).
+4. **Key Safety Profiles & Interactions**: Highlight high-alert adverse reactions, key contraindications, and major drug-drug or drug-food interactions.
+5. **Clinical OSCE Pearls**: Golden high-yield tips, diagnostic rules of thumb, or common board pitfalls for this unit.`;
+
+    const response = await generateContentWithFallback({
+      model: 'gemini-3.5-flash',
+      contents: prompt,
+      config: {
+        systemInstruction: `You are an expert clinical pharmacotherapist and esteemed academic professor. You write publication-quality, structured, evidence-based study summaries, highlighting critical guidelines, safety profiles, and OSCE board review concepts.`
+      }
+    });
+
+    res.json({ summary: response.text || 'Failed to generate summary content.' });
+  } catch (error: any) {
+    console.error('Summary generation error:', error);
+    res.status(500).json({ error: 'Failed to generate study summary' });
+  }
+});
+
 // KDI & WHO Drug Profile Lookup Endpoint
 app.post('/api/gemini/search-drug', async (req, res) => {
   try {
@@ -1515,18 +1653,21 @@ Guide the student's clinical reasoning. Answer their specific question based on 
 // Education Hub AI Tutor
 app.post('/api/gemini/hub-tutor', async (req, res) => {
   try {
-    const { unitTitle, moduleTitle, chatHistory, userMessage } = req.body;
+    const { unitTitle, moduleTitle, chatHistory, userMessage, notesContext } = req.body;
     if (!unitTitle || !userMessage) {
       return res.status(400).json({ error: 'Missing unitTitle or userMessage' });
     }
     const baseContext = `EDUCATION HUB TUTOR:
 Unit: ${unitTitle}
 Module: ${moduleTitle}
+
+${notesContext ? `=== STUDENT UPLOADED NOTES / STUDY GUIDE CONTEXT ===\n${notesContext}\n==================================================\n` : ''}
+
 Task:
-Answer their question accurately using evidence-based medical and pharmaceutical knowledge.
+Answer their question accurately using evidence-based medical and pharmaceutical knowledge. Prefer utilizing the provided notes context if relevant.
 At the end of your response, include a section with:
 - **Confidence Score**: (e.g. 95%)
-- **Sources**: (list simulated sources like WHO guidelines, Katzung Pharmacology, etc. depending on context)
+- **Sources**: (list sources, including Student Notes if utilized, alongside standard sources like WHO guidelines, Katzung Pharmacology, etc. depending on context)
 - **Suggested Flashcards**: 2-3 flashcard Q&A pairs related to the topic.`;
 
     const result = await processAcademicRequest(userMessage, baseContext, chatHistory);

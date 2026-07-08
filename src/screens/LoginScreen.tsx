@@ -79,10 +79,10 @@ export default function LoginScreen() {
             <ClinovaLogo size={56} variant="colored" />
           </div>
           <h1 className="text-2xl font-bold text-[var(--text)] tracking-tight">
-            {isSignUp ? 'Create Account' : 'Welcome to Clinova'}
+            {isSignUp ? 'Create Account' : 'Sign In'}
           </h1>
           <p className="text-xs text-[var(--text-muted)] mt-1">
-            {isSignUp ? 'Sign up to start your practice review' : 'Sign in to access patient reviews & KDI engine'}
+            {isSignUp ? 'Sign up to create your clinical portal account' : 'Sign in to access your secure workspace'}
           </p>
         </div>
 
@@ -237,16 +237,8 @@ export default function LoginScreen() {
         </div>
 
         {/* Footer */}
-        <div className="px-6 py-4 bg-[var(--surface-dim)]/50 border-t border-[var(--border)] text-center text-[10px] text-[var(--text-muted)] flex flex-col items-center justify-center gap-2">
-          <div className="flex items-center gap-1.5">
-            <Shield size={12} className="text-[var(--primary)] shrink-0" /> Secure clinical &amp; research hub.
-          </div>
-          <div className="flex items-center justify-center gap-1.5 text-[9px] sm:text-[10px] text-amber-700 dark:text-amber-400 bg-amber-500/10 p-2 rounded max-w-sm w-full mx-auto border border-amber-500/20 text-left">
-            <ShieldAlert size={14} className="shrink-0" />
-            <span className="leading-tight">
-              <strong>Data Protection:</strong> Adhere to Kenya Data Protection Act, 2019. Ensure patient confidentiality and avoid unauthorized exposure of Personal Identifiable Information (PII).
-            </span>
-          </div>
+        <div className="px-6 py-4 bg-[var(--surface-dim)]/50 border-t border-[var(--border)] text-center text-[10px] text-[var(--text-muted)] flex items-center justify-center gap-1.5">
+          <Shield size={12} className="text-[var(--primary)] shrink-0" /> Secure and encrypted clinical workspace.
         </div>
       </div>
     </div>

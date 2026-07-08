@@ -215,6 +215,17 @@ function AdminLoginScreen() {
   return <div className="min-h-screen bg-[var(--bg)] flex items-center justify-center p-8 text-center text-sm font-medium text-[var(--text-muted)] animate-pulse">Authenticating Admin Access...</div>;
 }
 
+function UserLoginScreen() {
+  const { loginAs } = useAuth();
+  const navigate = useNavigate();
+  
+  React.useEffect(() => {
+    loginAs('user').then(() => navigate('/'));
+  }, [loginAs, navigate]);
+
+  return <div className="min-h-screen bg-[var(--bg)] flex items-center justify-center p-8 text-center text-sm font-medium text-[var(--text-muted)] animate-pulse">Authenticating User Access...</div>;
+}
+
 function AppContent() {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
   const { userData, loading } = useAuth();
@@ -261,6 +272,7 @@ function AppContent() {
         <Routes>
           <Route path="/login" element={<LoginScreen />} />
           <Route path="/admin-access" element={<AdminLoginScreen />} />
+          <Route path="/user-access" element={<UserLoginScreen />} />
           <Route path="*" element={<LandingScreen />} />
         </Routes>
       </React.Suspense>
@@ -271,7 +283,7 @@ function AppContent() {
     <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] flex flex-col">
       <CommandPalette />
       <OfflineStatus />
-      {(forceShowOnboarding || (userData && !userData.onboardingCompleted && userData.role !== 'admin')) && (
+      {forceShowOnboarding && (
         <React.Suspense fallback={null}>
           <StudentOnboarding onClose={() => setForceShowOnboarding(false)} />
         </React.Suspense>
@@ -318,6 +330,7 @@ function AppContent() {
               <Route path="/settings" element={<SettingsScreen />} />
               <Route path="/login" element={<Navigate to="/" replace />} />
               <Route path="/admin-access" element={<Navigate to="/" replace />} />
+              <Route path="/user-access" element={<Navigate to="/" replace />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </React.Suspense>

@@ -1547,7 +1547,7 @@ export default function AdminDashboardScreen() {
                       </p>
                     </div>
                     <span className="text-[10px] font-bold text-[var(--primary)] bg-[var(--primary)]/10 px-3 py-1 rounded-full uppercase tracking-wider inline-block">
-                      Supports PDF, TXT & DOCX up to 15MB
+                      Supports PDF, TXT & DOCX up to 100MB
                     </span>
                   </div>
                 )}

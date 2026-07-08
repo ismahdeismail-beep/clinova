@@ -350,8 +350,8 @@ export default function ClinicalAssistantScreen() {
     const newAttachedFiles: AttachedFile[] = [];
 
     for (const file of Array.from(files)) {
-      if (file.size > 15 * 1024 * 1024) {
-        alert(`File "${file.name}" exceeds 15MB limit.`);
+      if (file.size > 100 * 1024 * 1024) {
+        alert(`File "${file.name}" exceeds 100MB limit.`);
         continue;
       }
 

@@ -49,7 +49,8 @@ function safeJsonParse(text: string | null | undefined, fallback: any = {}): any
   }
 }
 
-app.use(express.json());
+app.use(express.json({ limit: '100mb' }));
+app.use(express.urlencoded({ limit: '100mb', extended: true }));
 
 // Proxy Cloudinary Upload
 app.post('/api/cloudinary/upload', upload.single('file'), async (req, res) => {

@@ -35,7 +35,7 @@ export default function FileUploader({
   patientId,
   studyId,
   allowedMimeTypes,
-  maxSizeMB = 10,
+  maxSizeMB = 100,
   onUploadComplete,
 }: FileUploaderProps) {
   const [isDragOver, setIsDragOver] = useState(false);

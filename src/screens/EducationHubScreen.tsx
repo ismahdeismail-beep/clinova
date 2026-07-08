@@ -5,14 +5,38 @@ import {
   Droplets, Flame, Beaker, HeartPulse, Bug, Skull, Heart, Award, FileText,
   Briefcase, HelpCircle, Layers, Headphones, FileArchive, Calendar, BrainCircuit,
   Bookmark, Download, History, ChevronLeft, Bot, Play, FileUp, List, Sparkles, CheckCircle2, Clock, Database, Mic,
-  FolderPlus, Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X
+  FolderPlus, Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star
 } from 'lucide-react';
 import Markdown from 'react-markdown';
+import html2canvas from 'html2canvas';
+import { jsPDF } from 'jspdf';
 import { MODULES, LearningModule, LearningUnit } from '../data/educationHubData';
 import FileUploader from '../components/FileUploader';
 import { useFileStore } from '../store/fileStore';
 import { useAuth } from '../contexts/AuthContext';
 import { EducationService, CustomUnit, SubFolder, SavedFlashcard, SavedQuiz } from '../services/education.service';
+
+const MODULE_YEARS: Record<string, string> = {
+  'physio': '1st Year',
+  'anatomy': '1st Year',
+  'biochem': '1st Year',
+  'pharmchem': '2nd Year',
+  'pharmaceutics': '2nd Year',
+  'pharmacognosy': '2nd Year',
+  'microbio': '2nd Year',
+  'pathology': '3rd Year',
+  'public_health': '3rd Year',
+  'biostats': '3rd Year',
+  'pharmacology': '4th Year',
+  'drug_info': '4th Year',
+  'qbank': '4th Year',
+  'planner': '4th Year',
+  'clinical_pharm': '5th Year',
+  'pharm_practice': '5th Year',
+  'cases': '5th Year',
+  'oral_practice': '5th Year',
+  'ai_tools': '5th Year',
+};
 
 export default function EducationHubScreen() {
   const navigate = useNavigate();
@@ -21,6 +45,7 @@ export default function EducationHubScreen() {
   const [selectedModule, setSelectedModule] = useState<LearningModule | null>(null);
   const [selectedUnit, setSelectedUnit] = useState<LearningUnit | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedYearFilter, setSelectedYearFilter] = useState<string>('My Year');
   
   // Custom unit management states
   const [customUnits, setCustomUnits] = useState<CustomUnit[]>([]);
@@ -29,6 +54,66 @@ export default function EducationHubScreen() {
   const [newTitle, setNewTitle] = useState('');
   const [newDescription, setNewDescription] = useState('');
   const [newHours, setNewHours] = useState(10);
+  const [isCreatingUnit, setIsCreatingUnit] = useState(false);
+  const [unitError, setUnitError] = useState<string | null>(null);
+
+  // Favorite state management
+  const [favoriteModules, setFavoriteModules] = useState<string[]>(() => {
+    try {
+      return JSON.parse(localStorage.getItem(`fav_modules_${userData?.id || 'guest'}`) || '[]');
+    } catch {
+      return [];
+    }
+  });
+
+  const [favoriteUnits, setFavoriteUnits] = useState<string[]>(() => {
+    try {
+      return JSON.parse(localStorage.getItem(`fav_units_${userData?.id || 'guest'}`) || '[]');
+    } catch {
+      return [];
+    }
+  });
+
+  // Default filter to "My Year" if logged in user has level
+  useEffect(() => {
+    if (userData?.academicLevel) {
+      setSelectedYearFilter('My Year');
+    } else {
+      setSelectedYearFilter('All');
+    }
+  }, [userData]);
+
+  // Sync favorites when user loads or switches
+  useEffect(() => {
+    if (userData?.id) {
+      try {
+        const savedMods = localStorage.getItem(`fav_modules_${userData.id}`);
+        if (savedMods) setFavoriteModules(JSON.parse(savedMods));
+        const savedUnits = localStorage.getItem(`fav_units_${userData.id}`);
+        if (savedUnits) setFavoriteUnits(JSON.parse(savedUnits));
+      } catch (err) {
+        console.error('Error loading favorites from cache:', err);
+      }
+    }
+  }, [userData]);
+
+  const toggleModuleFavorite = (modId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const next = favoriteModules.includes(modId)
+      ? favoriteModules.filter(id => id !== modId)
+      : [...favoriteModules, modId];
+    setFavoriteModules(next);
+    localStorage.setItem(`fav_modules_${userData?.id || 'guest'}`, JSON.stringify(next));
+  };
+
+  const toggleUnitFavorite = (unitId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const next = favoriteUnits.includes(unitId)
+      ? favoriteUnits.filter(id => id !== unitId)
+      : [...favoriteUnits, unitId];
+    setFavoriteUnits(next);
+    localStorage.setItem(`fav_units_${userData?.id || 'guest'}`, JSON.stringify(next));
+  };
 
   // Fetch custom sub-folders/units from Firestore
   const fetchCustomUnits = async () => {
@@ -81,23 +166,42 @@ export default function EducationHubScreen() {
 
   const handleCreateUnit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newTitle.trim() || !userData || !selectedModule) return;
+    const title = newTitle.trim();
+    if (!title || !userData || !selectedModule) return;
+
+    // Check for duplicate custom unit titles (case insensitive)
+    const isDuplicate = [
+      ...selectedModule.units,
+      ...customUnits
+    ].some(u => u.title.toLowerCase() === title.toLowerCase());
+
+    if (isDuplicate) {
+      setUnitError(`A unit or folder named "${title}" already exists in this module.`);
+      return;
+    }
+
+    setIsCreatingUnit(true);
+    setUnitError(null);
     
     try {
       await EducationService.createCustomUnit(
         userData.id,
         selectedModule.id,
-        newTitle.trim(),
+        title,
         newDescription.trim(),
         newHours
       );
       setNewTitle('');
       setNewDescription('');
       setNewHours(10);
+      setUnitError(null);
       setShowCreateModal(false);
-      fetchCustomUnits();
+      await fetchCustomUnits();
     } catch (err) {
       console.error('Error creating custom unit:', err);
+      setUnitError('Failed to create custom unit. Please try again.');
+    } finally {
+      setIsCreatingUnit(false);
     }
   };
 
@@ -115,15 +219,58 @@ export default function EducationHubScreen() {
     }
   };
 
-  const filteredModules = MODULES.filter(m => m.title.toLowerCase().includes(searchQuery.toLowerCase()));
-
-  // Combine static and custom units
-  const displayedUnits = selectedModule
+  // Combine static and custom units, search and sort by favorites
+  const rawUnits = selectedModule
     ? [
         ...selectedModule.units.map(u => ({ ...u, isCustom: false })),
         ...customUnits.map(cu => ({ ...cu, isCustom: true }))
       ]
     : [];
+
+  const filteredUnits = searchQuery 
+    ? rawUnits.filter(u => 
+        u.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+        (u.description || '').toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    : rawUnits;
+
+  const sortedUnits = [...filteredUnits].sort((a, b) => {
+    const aFav = favoriteUnits.includes(a.id);
+    const bFav = favoriteUnits.includes(b.id);
+    if (aFav && !bFav) return -1;
+    if (!aFav && bFav) return 1;
+    return a.title.localeCompare(b.title);
+  });
+
+  // Filter modules by search and Year level
+  let filteredMods = MODULES.filter(m => 
+    m.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    m.description.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  const userYear = userData?.academicLevel || '1st Year';
+  const activeYearFilter = selectedYearFilter === 'My Year' ? userYear : selectedYearFilter;
+  
+  if (activeYearFilter !== 'All') {
+    filteredMods = filteredMods.filter(m => MODULE_YEARS[m.id] === activeYearFilter);
+  }
+
+  const sortedModules = [...filteredMods].sort((a, b) => {
+    const aFav = favoriteModules.includes(a.id);
+    const bFav = favoriteModules.includes(b.id);
+    
+    if (aFav && !bFav) return -1;
+    if (!aFav && bFav) return 1;
+    
+    if (selectedYearFilter === 'All' && userData?.academicLevel) {
+      const aIsUserYear = MODULE_YEARS[a.id] === userData.academicLevel;
+      const bIsUserYear = MODULE_YEARS[b.id] === userData.academicLevel;
+      if (aIsUserYear && !bIsUserYear) return -1;
+      if (!aIsUserYear && bIsUserYear) return 1;
+    }
+    
+    return a.title.localeCompare(b.title);
+  });
 
   return (
     <div className="flex-1 bg-[var(--bg)] min-h-screen overflow-y-auto">
@@ -183,10 +330,55 @@ export default function EducationHubScreen() {
           
           {/* Level 1: Modules */}
           {!selectedModule && (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 animate-in fade-in duration-300">
-              {filteredModules.map((mod) => (
-                <ModuleCard key={mod.id} module={mod} onClick={() => handleModuleClick(mod)} />
-              ))}
+            <div className="space-y-6 animate-in fade-in duration-300">
+              {/* Year Level Filter Bar */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 shadow-xs">
+                <span className="text-xs font-black text-[var(--text-muted)] uppercase tracking-wider flex items-center gap-1.5">
+                  <Sparkles size={14} className="text-amber-500" />
+                  Sort / Arrange By Year:
+                </span>
+                <div className="flex flex-wrap gap-1.5">
+                  {[
+                    { id: 'My Year', label: `My Year (${userData?.academicLevel || '1st Year'})` },
+                    { id: 'All', label: 'All Subjects (Favorites First)' },
+                    { id: '1st Year', label: '1st Year' },
+                    { id: '2nd Year', label: '2nd Year' },
+                    { id: '3rd Year', label: '3rd Year' },
+                    { id: '4th Year', label: '4th Year' },
+                    { id: '5th Year', label: '5th Year' },
+                  ].map((tab) => (
+                    <button
+                      key={tab.id}
+                      onClick={() => setSelectedYearFilter(tab.id)}
+                      className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                        selectedYearFilter === tab.id
+                          ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-xs font-extrabold'
+                          : 'bg-[var(--surface-dim)] text-[var(--text-muted)] border border-[var(--border)] hover:bg-[var(--surface)] hover:text-[var(--text)]'
+                      }`}
+                    >
+                      {tab.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {sortedModules.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                  {sortedModules.map((mod) => (
+                    <ModuleCard 
+                      key={mod.id} 
+                      module={mod} 
+                      onClick={() => handleModuleClick(mod)} 
+                      isFavorite={favoriteModules.includes(mod.id)}
+                      onToggleFavorite={(e) => toggleModuleFavorite(mod.id, e)}
+                    />
+                  ))}
+                </div>
+              ) : (
+                <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-12 text-center">
+                  <p className="text-sm text-[var(--text-muted)] italic font-semibold">No subjects match your active search or filters.</p>
+                </div>
+              )}
             </div>
           )}
 
@@ -207,7 +399,10 @@ export default function EducationHubScreen() {
                 
                 {userData && (
                   <button 
-                    onClick={() => setShowCreateModal(true)}
+                    onClick={() => {
+                      setUnitError(null);
+                      setShowCreateModal(true);
+                    }}
                     className="flex items-center justify-center gap-2 px-5 py-3 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-2xl hover:opacity-95 font-bold text-sm shadow-sm hover:shadow transition-all w-full sm:w-auto"
                   >
                     <FolderPlus size={18} /> Add Custom Unit/Folder
@@ -215,9 +410,9 @@ export default function EducationHubScreen() {
                 )}
               </div>
 
-              {displayedUnits.length > 0 ? (
+              {sortedUnits.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {displayedUnits.map((unit) => (
+                  {sortedUnits.map((unit) => (
                     <div 
                       key={unit.id}
                       onClick={() => handleUnitClick(unit)}
@@ -225,6 +420,13 @@ export default function EducationHubScreen() {
                     >
                       <div className="flex-1 min-w-0 pr-4">
                         <div className="flex items-center gap-2 mb-1.5 flex-wrap">
+                          <button
+                            onClick={(e) => toggleUnitFavorite(unit.id, e)}
+                            className={`p-1 hover:bg-[var(--surface-dim)] rounded-lg transition-all shrink-0 ${favoriteUnits.includes(unit.id) ? 'text-amber-500 fill-amber-500' : 'text-[var(--text-muted)] hover:text-amber-500'}`}
+                            title={favoriteUnits.includes(unit.id) ? 'Remove from favorites' : 'Mark as favorite'}
+                          >
+                            <Star size={14} className="transition-transform hover:scale-110" />
+                          </button>
                           <h3 className={`font-bold text-base truncate transition-colors ${unit.isCustom ? 'group-hover:text-purple-600' : 'group-hover:text-[var(--primary)]'}`}>{unit.title}</h3>
                           {unit.isCustom && (
                             <span className="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded-full bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300 flex items-center gap-1 shrink-0">
@@ -285,12 +487,23 @@ export default function EducationHubScreen() {
                 <FolderPlus className="text-purple-500" /> Create Custom Folder
               </h3>
               <button 
-                onClick={() => setShowCreateModal(false)}
+                onClick={() => {
+                  setUnitError(null);
+                  setShowCreateModal(false);
+                }}
                 className="p-1.5 hover:bg-[var(--surface-dim)] rounded-lg transition-colors text-[var(--text-muted)] hover:text-[var(--text)]"
+                disabled={isCreatingUnit}
               >
                 <X size={20} />
               </button>
             </div>
+
+            {unitError && (
+              <div className="p-3 bg-red-500/10 border border-red-500/30 rounded-xl flex items-start gap-2 text-xs text-red-500 mb-4 animate-in fade-in duration-200">
+                <AlertCircle size={14} className="shrink-0 mt-0.5" />
+                <span>{unitError}</span>
+              </div>
+            )}
             
             <form onSubmit={handleCreateUnit} className="space-y-4">
               <div>
@@ -302,6 +515,7 @@ export default function EducationHubScreen() {
                   value={newTitle}
                   onChange={(e) => setNewTitle(e.target.value)}
                   className="w-full px-4 py-2.5 bg-[var(--surface-dim)] border border-[var(--border)] rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
+                  disabled={isCreatingUnit}
                 />
               </div>
 
@@ -313,6 +527,7 @@ export default function EducationHubScreen() {
                   value={newDescription}
                   onChange={(e) => setNewDescription(e.target.value)}
                   className="w-full px-4 py-2.5 bg-[var(--surface-dim)] border border-[var(--border)] rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all resize-none"
+                  disabled={isCreatingUnit}
                 />
               </div>
 
@@ -326,22 +541,35 @@ export default function EducationHubScreen() {
                   value={newHours}
                   onChange={(e) => setNewHours(parseInt(e.target.value) || 10)}
                   className="w-full px-4 py-2.5 bg-[var(--surface-dim)] border border-[var(--border)] rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
+                  disabled={isCreatingUnit}
                 />
               </div>
 
               <div className="flex gap-3 pt-2">
                 <button
                   type="button"
-                  onClick={() => setShowCreateModal(false)}
+                  onClick={() => {
+                    setUnitError(null);
+                    setShowCreateModal(false);
+                  }}
                   className="flex-1 px-4 py-2.5 border border-[var(--border)] text-[var(--text)] rounded-xl text-sm font-semibold hover:bg-[var(--surface-dim)] transition-colors"
+                  disabled={isCreatingUnit}
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="flex-1 px-4 py-2.5 bg-gradient-to-r from-purple-600 to-[var(--primary)] text-white rounded-xl text-sm font-bold shadow-md hover:opacity-95 transition-opacity"
+                  className="flex-1 px-4 py-2.5 bg-gradient-to-r from-purple-600 to-[var(--primary)] text-white rounded-xl text-sm font-bold shadow-md hover:opacity-95 transition-opacity disabled:opacity-50 flex items-center justify-center gap-2"
+                  disabled={isCreatingUnit}
                 >
-                  Create Folder
+                  {isCreatingUnit ? (
+                    <>
+                      <RotateCcw className="animate-spin" size={16} />
+                      <span>Creating...</span>
+                    </>
+                  ) : (
+                    <span>Create Folder</span>
+                  )}
                 </button>
               </div>
             </form>
@@ -362,7 +590,17 @@ function ModuleIcon({ name, className }: { name: string, className?: string }) {
   return <Icon className={className} size={24} />;
 }
 
-function ModuleCard({ module, onClick }: { module: LearningModule, onClick: () => void }) {
+function ModuleCard({ 
+  module, 
+  onClick, 
+  isFavorite, 
+  onToggleFavorite 
+}: { 
+  module: LearningModule, 
+  onClick: () => void, 
+  isFavorite?: boolean, 
+  onToggleFavorite?: (e: React.MouseEvent) => void 
+}) {
   const colorMap: Record<string, string> = {
     rose: 'from-rose-500/10 to-rose-500/20 border-rose-200/40 text-rose-700',
     violet: 'from-violet-500/10 to-violet-500/20 border-violet-200/40 text-violet-700',
@@ -386,14 +624,23 @@ function ModuleCard({ module, onClick }: { module: LearningModule, onClick: () =
   return (
     <div 
       onClick={onClick}
-      className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl p-5 cursor-pointer transition-all shadow-sm hover:shadow-md group flex flex-col h-full"
+      className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl p-5 cursor-pointer transition-all shadow-sm hover:shadow-md group flex flex-col h-full relative"
     >
-      <div className="flex items-center gap-4 mb-3">
+      {onToggleFavorite && (
+        <button
+          onClick={onToggleFavorite}
+          className={`absolute top-4 right-4 p-1.5 rounded-lg hover:bg-[var(--surface-dim)] transition-all z-10 ${isFavorite ? 'text-amber-500 fill-amber-500' : 'text-[var(--text-muted)] hover:text-amber-500'}`}
+          title={isFavorite ? 'Remove from favorites' : 'Mark as favorite'}
+        >
+          <Star size={16} className="transition-transform hover:scale-110" />
+        </button>
+      )}
+      <div className="flex items-center gap-4 mb-3 pr-8">
         <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-gradient-to-br ${colorClass}`}>
           <ModuleIcon name={module.icon} />
         </div>
         <div>
-          <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">{module.title}</h3>
+          <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors line-clamp-1">{module.title}</h3>
           <p className="text-xs text-[var(--text-muted)] mt-0.5">{module.units.length} Standard Units</p>
         </div>
       </div>
@@ -407,7 +654,7 @@ function ModuleCard({ module, onClick }: { module: LearningModule, onClick: () =
 // ==========================================
 function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, module: LearningModule, onBack: () => void }) {
   const [activeTab, setActiveTab] = useState('overview');
-  const { fetchFiles } = useFileStore();
+  const { files, fetchFiles } = useFileStore();
   const { userData } = useAuth();
 
   // Folder states
@@ -417,6 +664,214 @@ function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, modul
   const [showAddFolder, setShowAddFolder] = useState(false);
   const [newFolderName, setNewFolderName] = useState('');
   const [newFolderDesc, setNewFolderDesc] = useState('');
+  const [isCreatingFolder, setIsCreatingFolder] = useState(false);
+  const [folderError, setFolderError] = useState<string | null>(null);
+
+  const handleWorkspaceBack = () => {
+    if (folderStack.length > 0) {
+      const newStack = [...folderStack];
+      newStack.pop();
+      setFolderStack(newStack);
+      if (newStack.length === 0) {
+        setCurrentFolderId(unit.id);
+      } else {
+        setCurrentFolderId(newStack[newStack.length - 1].id);
+      }
+    } else {
+      onBack();
+    }
+  };
+
+  // Export consolidated PDF state
+  const [showExportModal, setShowExportModal] = useState(false);
+  const [exportLoading, setExportLoading] = useState(false);
+  const [exportData, setExportData] = useState<{
+    summary: string | null;
+    scratchpad: string;
+    flashcards: SavedFlashcard[];
+    quizzes: SavedQuiz[];
+    files: any[];
+  }>({
+    summary: null,
+    scratchpad: '',
+    flashcards: [],
+    quizzes: [],
+    files: []
+  });
+
+  const [includeCover, setIncludeCover] = useState(true);
+  const [includeSummary, setIncludeSummary] = useState(true);
+  const [includeScratchpad, setIncludeScratchpad] = useState(true);
+  const [includeFlashcards, setIncludeFlashcards] = useState(true);
+  const [includeQuizzes, setIncludeQuizzes] = useState(true);
+  const [includeFiles, setIncludeFiles] = useState(true);
+
+  const [pdfGenerating, setPdfGenerating] = useState(false);
+
+  const handleOpenExportModal = async () => {
+    setShowExportModal(true);
+    setExportLoading(true);
+    try {
+      // 1. Fetch study guide summary
+      const savedSummary = await EducationService.getSummary(currentFolderId);
+      
+      // 2. Fetch scratchpad notes
+      const savedNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || '';
+
+      // 3. Fetch flashcards
+      const savedCards = await EducationService.getFlashcards(currentFolderId);
+
+      // 4. Fetch quizzes
+      const savedQuizzes = await EducationService.getQuizzes(currentFolderId);
+
+      // 5. Filter files for this folder
+      const folderFiles = files.filter(
+        f => f.category === 'study_source' && f.studyId === currentFolderId
+      );
+
+      setExportData({
+        summary: savedSummary,
+        scratchpad: savedNotes,
+        flashcards: savedCards,
+        quizzes: savedQuizzes,
+        files: folderFiles
+      });
+    } catch (err) {
+      console.error('Error compiling export data:', err);
+    } finally {
+      setExportLoading(false);
+    }
+  };
+
+  const handlePrint = () => {
+    const printContent = document.getElementById('print-report-sheet');
+    if (!printContent) return;
+
+    // Create a hidden iframe
+    const iframe = document.createElement('iframe');
+    iframe.style.position = 'fixed';
+    iframe.style.right = '0';
+    iframe.style.bottom = '0';
+    iframe.style.width = '0';
+    iframe.style.height = '0';
+    iframe.style.border = '0';
+    document.body.appendChild(iframe);
+
+    const doc = iframe.contentWindow?.document;
+    if (!doc) return;
+
+    doc.open();
+    doc.write(`
+      <html>
+        <head>
+          <title>${currentFolderName} - Consolidated Study Report</title>
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono&display=swap');
+            body {
+              font-family: 'Inter', sans-serif;
+              color: #0f172a;
+              background-color: #ffffff;
+              padding: 40px;
+              line-height: 1.6;
+            }
+            h1, h2, h3, h4 {
+              color: #0f172a;
+              font-weight: 800;
+              margin-top: 1.8em;
+              margin-bottom: 0.6em;
+            }
+            h1 { font-size: 26px; border-bottom: 3px solid #0f172a; padding-bottom: 12px; margin-top: 0; text-transform: uppercase; letter-spacing: -0.5px; }
+            h2 { font-size: 18px; border-bottom: 1px solid #cbd5e1; padding-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; color: #1e293b; }
+            h3 { font-size: 14px; color: #334155; }
+            p { margin-bottom: 1.2em; font-size: 12.5px; color: #334155; }
+            ul, ol { margin-bottom: 1.2em; padding-left: 24px; font-size: 12.5px; color: #334155; }
+            li { margin-bottom: 0.4em; }
+            table { width: 100%; border-collapse: collapse; margin-bottom: 1.8em; font-size: 11.5px; }
+            th, td { border: 1px solid #e2e8f0; padding: 10px 12px; text-align: left; }
+            th { background-color: #f8fafc; font-weight: 700; color: #1e293b; text-transform: uppercase; font-size: 10px; letter-spacing: 0.5px; }
+            .badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: bold; background-color: #f1f5f9; border: 1px solid #e2e8f0; }
+            .badge-easy { background-color: #f0fdf4; color: #166534; border-color: #bbf7d0; }
+            .badge-medium { background-color: #fffbeb; color: #92400e; border-color: #fef3c7; }
+            .badge-hard { background-color: #fef2f2; color: #991b1b; border-color: #fee2e2; }
+            .flashcard { border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; margin-bottom: 16px; background-color: #fafbfc; page-break-inside: avoid; box-shadow: inset 0 1px 2px rgba(0,0,0,0.02); }
+            .quiz-question { border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; margin-bottom: 16px; page-break-inside: avoid; }
+            .rationale { margin-top: 10px; font-style: italic; color: #475569; font-size: 11.5px; background-color: #f8fafc; padding: 10px 14px; border-left: 4px solid #64748b; border-radius: 0 8px 8px 0; }
+            .cover-page { text-align: center; padding: 100px 20px; page-break-after: always; display: flex; flex-direction: column; justify-content: center; min-height: 80vh; }
+            .cover-title { font-size: 36px; font-weight: 800; color: #0f172a; margin-bottom: 10px; line-height: 1.2; letter-spacing: -1px; }
+            .cover-subtitle { font-size: 18px; color: #475569; margin-bottom: 40px; font-weight: 500; }
+            .cover-meta { font-size: 12px; color: #64748b; margin-top: 60px; line-height: 1.8; border-top: 1px solid #e2e8f0; padding-top: 20px; display: inline-block; width: 60%; margin-left: auto; margin-right: auto; }
+            .footer { font-size: 10px; color: #94a3b8; text-align: center; margin-top: 60px; border-top: 1px solid #e2e8f0; padding-top: 15px; text-transform: uppercase; letter-spacing: 1px; }
+            @media print {
+              .no-print { display: none; }
+              body { padding: 0; }
+            }
+          </style>
+        </head>
+        <body>
+          ${printContent.innerHTML}
+          <div class="footer">
+            CLINOVA LEARNING ENGINE &bull; COGNITIVE MEDICAL REVISION SYSTEMS
+          </div>
+        </body>
+      </html>
+    `);
+    doc.close();
+
+    iframe.contentWindow?.focus();
+    setTimeout(() => {
+      iframe.contentWindow?.print();
+      setTimeout(() => {
+        document.body.removeChild(iframe);
+      }, 1000);
+    }, 500);
+  };
+
+  const handleDownloadPDF = async () => {
+    const reportElement = document.getElementById('print-report-sheet');
+    if (!reportElement) return;
+
+    setPdfGenerating(true);
+
+    try {
+      const canvas = await html2canvas(reportElement, {
+        scale: 1.5, // optimal scale to balance resolution and bundle size
+        useCORS: true,
+        allowTaint: true,
+        backgroundColor: '#ffffff',
+        logging: false,
+      });
+
+      const imgData = canvas.toDataURL('image/jpeg', 0.9);
+      
+      const pdf = new jsPDF('p', 'mm', 'a4');
+      const imgWidth = 210;
+      const pageHeight = 297;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      let heightLeft = imgHeight;
+      
+      let position = 0;
+      
+      // Page 1
+      pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
+      heightLeft -= pageHeight;
+      
+      // Loop to create extra pages as needed
+      while (heightLeft > 0) {
+        position = heightLeft - imgHeight;
+        pdf.addPage();
+        pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
+        heightLeft -= pageHeight;
+      }
+      
+      const cleanFolderName = currentFolderName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+      pdf.save(`clinova_${cleanFolderName}_consolidated_report.pdf`);
+    } catch (err) {
+      console.error('Error generating PDF:', err);
+      alert('Could not compile PDF automatically due to browser memory limits. Please use the "Print & Save to PDF" option instead.');
+    } finally {
+      setPdfGenerating(false);
+    }
+  };
 
   // Fetch subfolders from service
   const fetchFolders = async () => {
@@ -447,22 +902,40 @@ function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, modul
 
   const handleCreateFolder = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!userData || !newFolderName.trim()) return;
+    const name = newFolderName.trim();
+    if (!userData || !name) return;
+
+    // Check for duplicate folder names within the current parent scope
+    const isDuplicate = subFolders.some(
+      f => f.parentId === activeParentId && f.title.toLowerCase() === name.toLowerCase()
+    );
+
+    if (isDuplicate) {
+      setFolderError(`A folder named "${name}" already exists in this directory.`);
+      return;
+    }
+
+    setIsCreatingFolder(true);
+    setFolderError(null);
 
     try {
       await EducationService.createSubFolder(
         userData.id, 
         unit.id, 
         activeParentId, 
-        newFolderName.trim(), 
+        name, 
         newFolderDesc.trim()
       );
       setNewFolderName('');
       setNewFolderDesc('');
+      setFolderError(null);
       setShowAddFolder(false);
       await fetchFolders();
     } catch (err) {
       console.error('Error creating folder:', err);
+      setFolderError('Failed to create folder. Please try again.');
+    } finally {
+      setIsCreatingFolder(false);
     }
   };
 
@@ -514,7 +987,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, modul
     <div className="animate-in fade-in slide-in-from-bottom-4 duration-300">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
         <div className="flex items-center gap-3">
-          <button onClick={onBack} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors">
+          <button onClick={handleWorkspaceBack} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors" title="Go Back">
             <ChevronLeft size={18} className="text-[var(--text)]" />
           </button>
           <div>
@@ -528,6 +1001,14 @@ function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, modul
             </div>
           </div>
         </div>
+        
+        <button
+          onClick={handleOpenExportModal}
+          className="px-4 py-2 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white rounded-xl text-xs font-black shadow-sm transition-all flex items-center gap-2 cursor-pointer self-start md:self-auto shrink-0"
+        >
+          <FileText size={15} />
+          Export Study Report (PDF)
+        </button>
       </div>
 
       {/* RECURSIVE SUB-FOLDERS CONTAINER */}
@@ -557,7 +1038,10 @@ function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, modul
           </div>
 
           <button
-            onClick={() => setShowAddFolder(!showAddFolder)}
+            onClick={() => {
+              setFolderError(null);
+              setShowAddFolder(!showAddFolder);
+            }}
             className="px-3.5 py-1.5 bg-[var(--primary)]/10 text-[var(--primary)] hover:bg-[var(--primary)]/20 rounded-xl text-xs font-extrabold transition-all flex items-center gap-1.5 cursor-pointer self-start sm:self-auto shrink-0"
           >
             <FolderPlus size={14} />
@@ -571,6 +1055,14 @@ function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, modul
             <h4 className="text-xs font-black text-[var(--text)] uppercase tracking-wider flex items-center gap-1">
               <FolderPlus size={13} className="text-[var(--primary)]" /> Create Sub-folder in {currentFolderName}
             </h4>
+            
+            {folderError && (
+              <div className="p-2.5 bg-red-500/10 border border-red-500/20 rounded-xl text-xs text-red-500 flex items-start gap-1.5 animate-in fade-in duration-200">
+                <AlertCircle size={14} className="shrink-0 mt-0.5" />
+                <span>{folderError}</span>
+              </div>
+            )}
+
             <div className="space-y-2">
               <input
                 type="text"
@@ -579,6 +1071,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, modul
                 value={newFolderName}
                 onChange={(e) => setNewFolderName(e.target.value)}
                 className="w-full px-3.5 py-2 bg-[var(--bg)] border border-[var(--border)] rounded-xl text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[var(--primary)] text-[var(--text)]"
+                disabled={isCreatingFolder}
               />
               <input
                 type="text"
@@ -586,19 +1079,32 @@ function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, modul
                 value={newFolderDesc}
                 onChange={(e) => setNewFolderDesc(e.target.value)}
                 className="w-full px-3.5 py-2 bg-[var(--bg)] border border-[var(--border)] rounded-xl text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[var(--primary)] text-[var(--text)]"
+                disabled={isCreatingFolder}
               />
             </div>
             <div className="flex gap-2">
               <button
                 type="submit"
-                className="px-3.5 py-1.5 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-xl text-xs font-bold hover:opacity-95 transition-all cursor-pointer"
+                className="px-3.5 py-1.5 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-xl text-xs font-bold hover:opacity-95 transition-all cursor-pointer disabled:opacity-50 flex items-center gap-1"
+                disabled={isCreatingFolder}
               >
-                Create
+                {isCreatingFolder ? (
+                  <>
+                    <RotateCcw className="animate-spin" size={12} />
+                    <span>Creating...</span>
+                  </>
+                ) : (
+                  <span>Create</span>
+                )}
               </button>
               <button
                 type="button"
-                onClick={() => setShowAddFolder(false)}
+                onClick={() => {
+                  setFolderError(null);
+                  setShowAddFolder(false);
+                }}
                 className="px-3.5 py-1.5 border border-[var(--border)] text-[var(--text)] rounded-xl text-xs font-bold hover:bg-[var(--surface-dim)] transition-all cursor-pointer"
+                disabled={isCreatingFolder}
               >
                 Cancel
               </button>
@@ -691,6 +1197,370 @@ function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, modul
           {activeTab === 'mcqs' && <WorkspaceQuizzes unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
         </div>
       </div>
+
+      {/* CONSOLIDATED STUDY REPORT PREVIEW & EXPORT MODAL */}
+      {showExportModal && (
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
+          <div className="bg-[var(--bg)] border border-[var(--border)] rounded-3xl w-full max-w-5xl shadow-2xl flex flex-col md:flex-row max-h-[90vh] overflow-hidden animate-in zoom-in-95 duration-200">
+            
+            {/* LEFT COLUMN: Controls & Options */}
+            <div className="w-full md:w-80 border-r border-[var(--border)]/60 bg-[var(--surface-dim)]/50 p-6 overflow-y-auto space-y-6 shrink-0 flex flex-col justify-between">
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-sm font-black text-[var(--text)] uppercase tracking-wider flex items-center gap-2">
+                    <FileText className="text-[var(--primary)]" size={16} /> Report Customization
+                  </h3>
+                  <p className="text-[11px] text-[var(--text-muted)] mt-1.5 leading-relaxed">
+                    Toggle sections to tailor your consolidated clinical revision report. Perfect for offline study guides or OSCE folders.
+                  </p>
+                </div>
+
+                <div className="space-y-3.5">
+                  <h4 className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Include Sections</h4>
+                  
+                  <label className="flex items-center gap-3 text-xs font-semibold text-[var(--text)] cursor-pointer select-none">
+                    <input 
+                      type="checkbox" 
+                      checked={includeCover} 
+                      onChange={(e) => setIncludeCover(e.target.checked)}
+                      className="w-4 h-4 rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)] bg-[var(--bg)]"
+                    />
+                    <span>Cover Page & Details</span>
+                  </label>
+
+                  <label className="flex items-center gap-3 text-xs font-semibold text-[var(--text)] cursor-pointer select-none">
+                    <input 
+                      type="checkbox" 
+                      checked={includeSummary} 
+                      onChange={(e) => setIncludeSummary(e.target.checked)}
+                      className="w-4 h-4 rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)] bg-[var(--bg)]"
+                    />
+                    <span className="flex items-center gap-1.5 justify-between w-full">
+                      <span>Study Guide Summary</span>
+                      {exportData.summary && <span className="text-[10px] bg-emerald-500/10 text-emerald-500 px-1.5 py-0.5 rounded font-black">Active</span>}
+                    </span>
+                  </label>
+
+                  <label className="flex items-center gap-3 text-xs font-semibold text-[var(--text)] cursor-pointer select-none">
+                    <input 
+                      type="checkbox" 
+                      checked={includeScratchpad} 
+                      onChange={(e) => setIncludeScratchpad(e.target.checked)}
+                      className="w-4 h-4 rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)] bg-[var(--bg)]"
+                    />
+                    <span className="flex items-center gap-1.5 justify-between w-full">
+                      <span>Revision Scratchpad</span>
+                      {exportData.scratchpad.trim() && <span className="text-[10px] bg-purple-500/10 text-purple-500 px-1.5 py-0.5 rounded font-black">Active</span>}
+                    </span>
+                  </label>
+
+                  <label className="flex items-center gap-3 text-xs font-semibold text-[var(--text)] cursor-pointer select-none">
+                    <input 
+                      type="checkbox" 
+                      checked={includeFlashcards} 
+                      onChange={(e) => setIncludeFlashcards(e.target.checked)}
+                      className="w-4 h-4 rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)] bg-[var(--bg)]"
+                    />
+                    <span className="flex items-center gap-1.5 justify-between w-full">
+                      <span>Active Recall Flashcards</span>
+                      {exportData.flashcards.length > 0 && <span className="text-[10px] bg-amber-500/10 text-amber-500 px-1.5 py-0.5 rounded font-black">{exportData.flashcards.length}</span>}
+                    </span>
+                  </label>
+
+                  <label className="flex items-center gap-3 text-xs font-semibold text-[var(--text)] cursor-pointer select-none">
+                    <input 
+                      type="checkbox" 
+                      checked={includeQuizzes} 
+                      onChange={(e) => setIncludeQuizzes(e.target.checked)}
+                      className="w-4 h-4 rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)] bg-[var(--bg)]"
+                    />
+                    <span className="flex items-center gap-1.5 justify-between w-full">
+                      <span>Practice Quizzes (MCQs)</span>
+                      {exportData.quizzes.length > 0 && <span className="text-[10px] bg-red-500/10 text-red-500 px-1.5 py-0.5 rounded font-black">{exportData.quizzes.length}</span>}
+                    </span>
+                  </label>
+
+                  <label className="flex items-center gap-3 text-xs font-semibold text-[var(--text)] cursor-pointer select-none">
+                    <input 
+                      type="checkbox" 
+                      checked={includeFiles} 
+                      onChange={(e) => setIncludeFiles(e.target.checked)}
+                      className="w-4 h-4 rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)] bg-[var(--bg)]"
+                    />
+                    <span className="flex items-center gap-1.5 justify-between w-full">
+                      <span>Uploaded Files Index</span>
+                      {exportData.files.length > 0 && <span className="text-[10px] bg-blue-500/10 text-blue-500 px-1.5 py-0.5 rounded font-black">{exportData.files.length}</span>}
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <div className="pt-6 border-t border-[var(--border)]/60 space-y-2 mt-6 md:mt-0">
+                <button
+                  type="button"
+                  disabled={exportLoading || pdfGenerating}
+                  onClick={handleDownloadPDF}
+                  className="w-full py-2.5 bg-gradient-to-r from-red-600 to-amber-600 text-white font-extrabold rounded-xl text-xs hover:from-red-700 hover:to-amber-700 transition-all flex items-center justify-center gap-2 shadow-sm cursor-pointer disabled:opacity-50"
+                >
+                  {pdfGenerating ? (
+                    <>
+                      <div className="w-3.5 h-3.5 border-2 border-white/40 border-t-white rounded-full animate-spin"></div>
+                      Generating PDF...
+                    </>
+                  ) : (
+                    <>
+                      <Download size={14} />
+                      Download PDF Document
+                    </>
+                  )}
+                </button>
+
+                <button
+                  type="button"
+                  disabled={exportLoading}
+                  onClick={handlePrint}
+                  className="w-full py-2.5 bg-[var(--surface)] hover:bg-[var(--surface-dim)] border border-[var(--border)] text-[var(--text)] font-extrabold rounded-xl text-xs transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+                >
+                  <Printer size={14} className="text-amber-500" />
+                  Print / Save using Browser
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setShowExportModal(false)}
+                  className="w-full py-2.5 bg-transparent text-[var(--text-muted)] hover:text-[var(--text)] text-xs font-bold transition-all text-center cursor-pointer"
+                >
+                  Close & Return
+                </button>
+              </div>
+            </div>
+
+            {/* RIGHT COLUMN: Interactive Document Sheet Preview */}
+            <div className="flex-1 flex flex-col overflow-hidden bg-[var(--surface-dim)]">
+              <div className="px-6 py-4 border-b border-[var(--border)]/60 bg-[var(--surface)] flex items-center justify-between">
+                <div>
+                  <h4 className="text-xs font-black text-[var(--text)] uppercase tracking-wider">
+                    High-Yield Study Report Preview
+                  </h4>
+                  <p className="text-[10px] text-[var(--text-muted)]">
+                    This high-contrast theme is optimized for printer ink efficiency and offline reading.
+                  </p>
+                </div>
+                <button
+                  onClick={() => setShowExportModal(false)}
+                  className="p-1.5 text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)] rounded-xl transition-colors cursor-pointer"
+                >
+                  <X size={16} />
+                </button>
+              </div>
+
+              <div className="flex-1 overflow-y-auto p-4 sm:p-6 select-text font-sans">
+                {exportLoading ? (
+                  <div className="flex flex-col items-center justify-center py-24 space-y-3">
+                    <div className="w-8 h-8 border-3 border-[var(--primary)]/20 border-t-[var(--primary)] rounded-full animate-spin"></div>
+                    <span className="text-xs font-bold text-[var(--text-muted)]">Compiling active subfolder materials...</span>
+                  </div>
+                ) : (
+                  <div 
+                    id="print-report-sheet"
+                    className="bg-white text-slate-900 shadow-xl p-8 sm:p-12 rounded-2xl mx-auto max-w-[760px] border border-slate-200/60 leading-relaxed text-left text-xs"
+                    style={{ color: '#0f172a', backgroundColor: '#ffffff' }}
+                  >
+                    {/* COVER PAGE */}
+                    {includeCover && (
+                      <div className="text-center py-12 border-b-2 border-slate-900 mb-8 flex flex-col justify-center min-h-[400px]">
+                        <div className="mx-auto w-12 h-12 bg-red-600 text-white rounded-xl flex items-center justify-center font-extrabold text-lg mb-4 tracking-tighter">
+                          CN
+                        </div>
+                        <h1 className="text-2xl sm:text-3xl font-black text-slate-950 uppercase tracking-tight leading-tight">
+                          Clinova Revision Study Report
+                        </h1>
+                        <p className="text-sm font-semibold text-slate-500 mt-2 uppercase tracking-widest">
+                          {module.title}
+                        </p>
+                        
+                        <div className="my-8 py-4 px-6 border-y border-slate-200 inline-block mx-auto max-w-md">
+                          <p className="text-xs text-slate-400 font-bold uppercase tracking-wider mb-1">Path Context</p>
+                          <p className="text-xs font-extrabold text-slate-800">
+                            {unit.title} {folderStack.map(f => ` → ${f.title}`)}
+                          </p>
+                        </div>
+
+                        <div className="mt-8 text-[11px] text-slate-400 space-y-1 font-semibold">
+                          <p>GENERATED ON {new Date().toLocaleDateString()}</p>
+                          <p>STUDENT PROFILE: {userData?.email || 'clinova_learner'}</p>
+                          <p className="text-[9px] tracking-wider text-slate-300">CLINOVA COGNITIVE HEALTH SCIENCES SYSTEM</p>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* STUDY GUIDE SUMMARY */}
+                    {includeSummary && (
+                      <div className="mb-8 page-break-after">
+                        <h2 className="text-base font-black text-slate-950 border-b-2 border-slate-900 pb-1.5 uppercase tracking-wide mb-4">
+                          1. AI Study Guide & High-Yield Summary
+                        </h2>
+                        {exportData.summary ? (
+                          <div className="prose prose-slate max-w-none prose-xs text-slate-800">
+                            <Markdown>{exportData.summary}</Markdown>
+                          </div>
+                        ) : (
+                          <p className="text-slate-400 italic">
+                            No study guide was generated for this folder yet. Generate a guide in the "Study Guide" tab to include it here.
+                          </p>
+                        )}
+                      </div>
+                    )}
+
+                    {/* SCRATCHPAD NOTES */}
+                    {includeScratchpad && (
+                      <div className="mb-8 page-break-after">
+                        <h2 className="text-base font-black text-slate-950 border-b-2 border-slate-900 pb-1.5 uppercase tracking-wide mb-4">
+                          2. Revision Scratchpad Notes
+                        </h2>
+                        {exportData.scratchpad.trim() ? (
+                          <div className="whitespace-pre-wrap text-slate-800 bg-slate-50 border border-slate-200 rounded-xl p-4 font-mono text-[11px] leading-relaxed">
+                            {exportData.scratchpad}
+                          </div>
+                        ) : (
+                          <p className="text-slate-400 italic">
+                            No personalized scratchpad notes have been saved in this directory.
+                          </p>
+                        )}
+                      </div>
+                    )}
+
+                    {/* FLASHCARDS */}
+                    {includeFlashcards && (
+                      <div className="mb-8 page-break-after">
+                        <h2 className="text-base font-black text-slate-950 border-b-2 border-slate-900 pb-1.5 uppercase tracking-wide mb-4">
+                          3. Active Recall Flashcards
+                        </h2>
+                        {exportData.flashcards.length > 0 ? (
+                          <div className="space-y-4">
+                            {exportData.flashcards.map((card, idx) => (
+                              <div key={card.id} className="border border-slate-200 rounded-xl p-4 bg-slate-50/50 break-inside-avoid">
+                                <div className="flex items-center justify-between mb-2">
+                                  <span className="text-[10px] font-black uppercase text-slate-400 tracking-wider">
+                                    Card #{idx + 1}
+                                  </span>
+                                  {card.difficulty && (
+                                    <span className={`text-[9px] px-2 py-0.5 rounded-full font-bold uppercase ${
+                                      card.difficulty === 'easy' ? 'bg-emerald-50 text-emerald-800 border border-emerald-200' :
+                                      card.difficulty === 'medium' ? 'bg-amber-50 text-amber-800 border border-amber-200' :
+                                      'bg-red-50 text-red-800 border border-red-200'
+                                    }`}>
+                                      {card.difficulty}
+                                    </span>
+                                  )}
+                                </div>
+                                <p className="font-extrabold text-slate-900 text-xs mb-2">
+                                  Q: {card.question}
+                                </p>
+                                <p className="text-slate-600 bg-white border border-slate-100 p-2.5 rounded-lg text-xs font-semibold">
+                                  A: {card.answer}
+                                </p>
+                              </div>
+                            ))}
+                          </div>
+                        ) : (
+                          <p className="text-slate-400 italic">
+                            No flashcards have been generated for this subfolder yet.
+                          </p>
+                        )}
+                      </div>
+                    )}
+
+                    {/* PRACTICE QUIZZES / MCQS */}
+                    {includeQuizzes && (
+                      <div className="mb-8 page-break-after">
+                        <h2 className="text-base font-black text-slate-950 border-b-2 border-slate-900 pb-1.5 uppercase tracking-wide mb-4">
+                          4. Practice Board Quizzes & Assessments
+                        </h2>
+                        {exportData.quizzes.length > 0 ? (
+                          <div className="space-y-6">
+                            {exportData.quizzes.map((quiz, idx) => (
+                              <div key={quiz.id} className="border border-slate-200 rounded-xl p-4 break-inside-avoid">
+                                <span className="text-[10px] font-black uppercase text-slate-400 tracking-wider block mb-1.5">
+                                  Assessment Item #{idx + 1}
+                                </span>
+                                <p className="font-extrabold text-slate-950 text-xs mb-3">
+                                  {quiz.question}
+                                </p>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
+                                  {quiz.options.map((option, optIdx) => {
+                                    const isCorrect = option === quiz.correctAnswer;
+                                    return (
+                                      <div 
+                                        key={optIdx} 
+                                        className={`p-2 rounded-lg border text-xs font-semibold ${
+                                          isCorrect 
+                                            ? 'bg-emerald-50/70 border-emerald-300 text-emerald-900' 
+                                            : 'border-slate-200 bg-white text-slate-700'
+                                        }`}
+                                      >
+                                        <span className="font-extrabold mr-1">
+                                          {String.fromCharCode(65 + optIdx)})
+                                        </span>
+                                        {option}
+                                      </div>
+                                    );
+                                  })}
+                                </div>
+                                {quiz.explanation && (
+                                  <div className="mt-3 text-[11px] text-slate-600 bg-slate-50 border-l-4 border-slate-400 p-3 rounded-r-lg italic">
+                                    <strong className="not-italic text-slate-800 font-extrabold block mb-0.5 uppercase tracking-wider text-[9px]">Rationale:</strong>
+                                    {quiz.explanation}
+                                  </div>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        ) : (
+                          <p className="text-slate-400 italic">
+                            No practice quizzes have been generated for this subfolder yet.
+                          </p>
+                        )}
+                      </div>
+                    )}
+
+                    {/* SOURCE FILES INDEX */}
+                    {includeFiles && (
+                      <div className="mb-8">
+                        <h2 className="text-base font-black text-slate-950 border-b-2 border-slate-900 pb-1.5 uppercase tracking-wide mb-4">
+                          5. Academic References & Source Files
+                        </h2>
+                        {exportData.files.length > 0 ? (
+                          <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 space-y-2">
+                            {exportData.files.map((file, idx) => (
+                              <div key={file.id || idx} className="flex items-center justify-between text-xs font-semibold text-slate-700">
+                                <span className="flex items-center gap-2">
+                                  <span className="w-5 h-5 bg-slate-200 rounded text-[10px] flex items-center justify-center font-black">
+                                    #{idx + 1}
+                                  </span>
+                                  {file.name}
+                                </span>
+                                <span className="text-[10px] text-slate-400 uppercase font-black">
+                                  Indexed Source
+                                </span>
+                              </div>
+                            ))}
+                          </div>
+                        ) : (
+                          <p className="text-slate-400 italic">
+                            No reference lecture notes or PDF slide decks have been uploaded in this directory.
+                          </p>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      )}
     </div>
   );
 }

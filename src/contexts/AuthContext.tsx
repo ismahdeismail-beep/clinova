@@ -32,7 +32,7 @@ interface AuthContextType {
   loginWithGoogle: () => Promise<void>;
   loginReturning: (name: string, role: UserRole) => Promise<void>;
   loginWithEmail: (email: string, password: string) => Promise<void>;
-  signUpWithEmail: (email: string, password: string, name: string) => Promise<void>;
+  signUpWithEmail: (email: string, password: string, name: string, academicLevel?: string) => Promise<void>;
   updatePreferences: (interests: string[], level: string) => Promise<void>;
 }
 
@@ -223,8 +223,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const signUpWithEmail = async (email: string, password: string, name: string) => {
+  const signUpWithEmail = async (email: string, password: string, name: string, academicLevel?: string) => {
     setLoading(true);
+    const hasLevel = !!academicLevel;
     try {
       const res = await createUserWithEmailAndPassword(auth, email, password);
       try {
@@ -232,9 +233,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           name: name || email.split('@')[0],
           email: email,
           role: 'user',
+          academicLevel: academicLevel || '',
+          onboardingCompleted: hasLevel,
         });
       } catch (fsErr) {
         console.warn("Firestore write during signup failed", fsErr);
+      }
+      if (hasLevel) {
+        localStorage.setItem(`clinova_onboarding_completed_${res.user.uid}`, 'true');
       }
     } catch (error) {
       console.warn("Firebase email signup failed. Creating local mock account for seamless user experience.", error);
@@ -243,8 +249,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         name: name || email.split('@')[0],
         email: email,
         role: 'user',
+        academicLevel: academicLevel || '',
+        onboardingCompleted: hasLevel,
       };
       localStorage.setItem('clinova-mock-user', JSON.stringify(mockUser));
+      if (hasLevel) {
+        localStorage.setItem(`clinova_onboarding_completed_${mockUser.id}`, 'true');
+      }
       setUserData(mockUser);
     } finally {
       setLoading(false);

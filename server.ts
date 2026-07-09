@@ -1894,6 +1894,256 @@ Provide:
   }
 });
 
+// ================================================================
+// EDUCATIONAL INTELLIGENCE ENGINE API
+// Unified API for Knowledge Engine, Knowledge Graph, Upload Pipeline,
+// Smart Search, and Learning Intelligence services
+// ================================================================
+
+// POST Process a query through the Knowledge Engine
+app.post('/api/engine/query', async (req, res) => {
+  try {
+    const { query, discipline, unit, educationalLevel, chatHistory, attachedResources } = req.body;
+    if (!query) return res.status(400).json({ error: 'Query is required' });
+
+    const { knowledgeEngine } = await import('./src/engine/knowledgeEngine.js');
+    const result = await knowledgeEngine.processQuery(query, {
+      discipline, unit, educationalLevel, chatHistory, attachedResources,
+    });
+    res.json({ success: true, ...result });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Knowledge engine query failed' });
+  }
+});
+
+// POST Detect educational context from a query
+app.post('/api/engine/detect-context', async (req, res) => {
+  try {
+    const { query } = req.body;
+    if (!query) return res.status(400).json({ error: 'Query is required' });
+
+    const { knowledgeEngine } = await import('./src/engine/knowledgeEngine.js');
+    const context = knowledgeEngine.detectContext(query);
+    const path = knowledgeEngine.suggestLearningPath(context);
+    res.json({ success: true, context, suggestedPath: path });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Context detection failed' });
+  }
+});
+
+// GET Knowledge Graph data
+app.get('/api/engine/graph', async (req, res) => {
+  try {
+    const { knowledgeGraph } = await import('./src/engine/knowledgeGraph.js');
+    const type = req.query.type as string;
+    const query = req.query.q as string;
+
+    if (type) {
+      const nodes = knowledgeGraph.getNodesByType(type);
+      return res.json({ success: true, nodes, total: nodes.length });
+    }
+    if (query) {
+      const nodes = knowledgeGraph.searchNodes(query);
+      return res.json({ success: true, nodes, total: nodes.length });
+    }
+
+    const stats = knowledgeGraph.getStats();
+    const tree = knowledgeGraph.toSubjectTree();
+    res.json({ success: true, stats, tree });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Graph query failed' });
+  }
+});
+
+// GET Related nodes in knowledge graph
+app.get('/api/engine/graph/related/:nodeId', async (req, res) => {
+  try {
+    const { knowledgeGraph } = await import('./src/engine/knowledgeGraph.js');
+    const depth = parseInt(req.query.depth as string) || 1;
+    const related = knowledgeGraph.getRelated(req.params.nodeId, undefined, depth);
+    const node = knowledgeGraph.getNode(req.params.nodeId);
+    res.json({ success: true, node, related, total: related.length });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Failed to get related nodes' });
+  }
+});
+
+// POST Smart Search
+app.post('/api/engine/search', async (req, res) => {
+  try {
+    const { query, filters, maxResults } = req.body;
+    if (!query) return res.status(400).json({ error: 'Search query is required' });
+
+    const { smartSearch } = await import('./src/engine/smartSearch.js');
+    const results = await smartSearch.search(query, filters, maxResults || 20);
+    res.json({ success: true, ...results });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Search failed' });
+  }
+});
+
+// POST Analyze search query intent
+app.post('/api/engine/search/analyze', async (req, res) => {
+  try {
+    const { query } = req.body;
+    if (!query) return res.status(400).json({ error: 'Query is required' });
+
+    const { smartSearch } = await import('./src/engine/smartSearch.js');
+    const analyzed = smartSearch.analyzeQuery(query);
+    res.json({ success: true, analyzed });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Query analysis failed' });
+  }
+});
+
+// POST Process uploaded file through intelligent pipeline
+app.post('/api/engine/upload', async (req, res) => {
+  try {
+    const { fileId, fileName, mimeType, size, extension, text } = req.body;
+    if (!fileName) return res.status(400).json({ error: 'fileName is required' });
+
+    const { UploadPipeline } = await import('./src/engine/uploadPipeline.js');
+    const pipeline = UploadPipeline.getInstance();
+    const result = await pipeline.processFile({
+      id: fileId || `upload_${Date.now()}`,
+      originalName: fileName,
+      mimeType: mimeType || 'text/plain',
+      size: size || 0,
+      extension: extension || fileName.split('.').pop() || '',
+      text: text || '',
+    });
+
+    res.json({ success: result.status === 'completed', result });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Upload processing failed' });
+  }
+});
+
+// GET Upload pipeline history
+app.get('/api/engine/uploads', async (req, res) => {
+  try {
+    const { UploadPipeline } = await import('./src/engine/uploadPipeline.js');
+    const pipeline = UploadPipeline.load();
+    const count = parseInt(req.query.count as string) || 10;
+    const uploads = pipeline.getRecentUploads(count);
+    res.json({ success: true, uploads });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Failed to get uploads' });
+  }
+});
+
+// POST Record a learning session
+app.post('/api/engine/learning/session', async (req, res) => {
+  try {
+    const session = req.body;
+    if (!session.userId) return res.status(400).json({ error: 'userId is required' });
+
+    const { learningIntelligence } = await import('./src/engine/learningIntelligence.js');
+    const profile = learningIntelligence.recordSession({
+      ...session,
+      completedAt: session.completedAt || Date.now(),
+    });
+
+    res.json({ success: true, profile });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Failed to record session' });
+  }
+});
+
+// GET Learning profile for a user
+app.get('/api/engine/learning/profile/:userId', async (req, res) => {
+  try {
+    const { learningIntelligence } = await import('./src/engine/learningIntelligence.js');
+    const profile = learningIntelligence.getProfile(req.params.userId);
+    const stats = learningIntelligence.getLearningStats(req.params.userId);
+    const weakAreas = learningIntelligence.identifyWeakAreas(req.params.userId);
+    const dueForReview = learningIntelligence.getDueForReview(req.params.userId);
+    const recommendations = learningIntelligence.getRecommendations(req.params.userId);
+
+    res.json({
+      success: true,
+      profile,
+      stats,
+      weakAreas,
+      dueForReview,
+      recommendations,
+    });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Failed to get profile' });
+  }
+});
+
+// GET Personalized recommendations for a user
+app.get('/api/engine/learning/recommendations/:userId', async (req, res) => {
+  try {
+    const { learningIntelligence } = await import('./src/engine/learningIntelligence.js');
+    const limit = parseInt(req.query.limit as string) || 5;
+    const recommendations = learningIntelligence.getRecommendations(req.params.userId, limit);
+    res.json({ success: true, recommendations });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Failed to get recommendations' });
+  }
+});
+
+// GET Revision schedule for a user
+app.get('/api/engine/learning/schedule/:userId', async (req, res) => {
+  try {
+    const { learningIntelligence } = await import('./src/engine/learningIntelligence.js');
+    const days = parseInt(req.query.days as string) || 7;
+    const schedule = learningIntelligence.generateRevisionSchedule(req.params.userId, days);
+    res.json({ success: true, schedule });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Failed to generate schedule' });
+  }
+});
+
+// GET Performance trends
+app.get('/api/engine/learning/trends/:userId', async (req, res) => {
+  try {
+    const { learningIntelligence } = await import('./src/engine/learningIntelligence.js');
+    const days = parseInt(req.query.days as string) || 30;
+    const trends = learningIntelligence.getPerformanceTrends(req.params.userId, days);
+    res.json({ success: true, trends });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Failed to get trends' });
+  }
+});
+
+// GET Weak areas analysis
+app.get('/api/engine/learning/weak-areas/:userId', async (req, res) => {
+  try {
+    const { learningIntelligence } = await import('./src/engine/learningIntelligence.js');
+    const weakAreas = learningIntelligence.identifyWeakAreas(req.params.userId);
+    res.json({ success: true, weakAreas });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Failed to identify weak areas' });
+  }
+});
+
+// GET Learning path suggestion
+app.get('/api/engine/learning/next-topic/:userId', async (req, res) => {
+  try {
+    const { learningIntelligence } = await import('./src/engine/learningIntelligence.js');
+    const nextTopic = learningIntelligence.suggestNextTopic(req.params.userId);
+    res.json({ success: true, nextTopic });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Failed to suggest next topic' });
+  }
+});
+
+// POST Clear learning data for a user
+app.post('/api/engine/learning/clear', async (req, res) => {
+  try {
+    const { userId } = req.body;
+    if (!userId) return res.status(400).json({ error: 'userId is required' });
+
+    const { learningIntelligence } = await import('./src/engine/learningIntelligence.js');
+    learningIntelligence.clearAllData(userId);
+    res.json({ success: true, message: 'Learning data cleared' });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Failed to clear data' });
+  }
+});
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Clinova core backend running on port ${PORT}`);  });
 }

@@ -78,6 +78,7 @@ class SyncManager {
     if (!navigator.onLine || this.isSyncing) return;
 
     this.isSyncing = true;
+    this.notifyListeners('syncing');
 
     const idb = await this.dbPromise;
     const mutations = await idb.getAll('pending_mutations');

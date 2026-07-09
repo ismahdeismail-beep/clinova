@@ -156,7 +156,7 @@ function AssistantMessageBubble({
 
   return (
     <div 
-      className="text-sm leading-relaxed max-w-none break-words min-h-[3rem] text-[var(--text)]"
+      className="text-sm sm:text-base leading-relaxed max-w-full overflow-x-auto scrollbar-thin break-words min-h-[3rem] text-[var(--text)]"
     >
       {renderMarkdown(content)}
     </div>
@@ -1251,7 +1251,7 @@ export default function ClinicalAssistantScreen() {
                 )}
                 
                 {/* Bubble Container - 80% limit for Assistant, 75% limit for User */}
-                <div className={`flex flex-col gap-2 ${isUser ? 'max-w-[75%]' : 'max-w-[80%]'}`}>
+                <div className={`flex flex-col gap-2 ${isUser ? 'max-w-[75%]' : 'max-w-[80%]'} w-full overflow-hidden`}>
                   
                   {/* Real-time RAG Steps Tracker */}
                   {msg.isThinking && (
@@ -1278,7 +1278,7 @@ export default function ClinicalAssistantScreen() {
                   {/* Bubble Content */}
                   {!msg.isThinking && (
                     <div className="flex items-start gap-2.5 max-w-full group/bubble">
-                      <div className={`rounded-3xl px-5 py-4 shadow-sm text-base leading-relaxed ${
+                      <div className={`rounded-3xl px-5 py-4 shadow-sm text-base leading-relaxed max-w-full overflow-x-auto scrollbar-thin ${
                         isUser 
                           ? 'bg-[var(--primary)] text-[var(--primary-foreground)] rounded-tr-none shadow-md font-medium' 
                           : 'bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] rounded-tl-none shadow-xs'

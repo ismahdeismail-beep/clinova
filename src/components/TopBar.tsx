@@ -40,7 +40,7 @@ function TopBar({ activeView }: TopBarProps) {
   const title = activeView !== 'login' ? titleMap[activeView] || 'Clinova' : '';
 
   const isOnline = useOnlineStatus();
-  const { status, pendingCount } = useSyncStatus();
+  const { status, pendingCount, progress } = useSyncStatus();
 
   const handleHome = () => {
     window.dispatchEvent(new CustomEvent('clinova:navigate', { detail: { view: 'dashboard' } }));
@@ -62,7 +62,7 @@ function TopBar({ activeView }: TopBarProps) {
       </div>
       <div className="flex items-center gap-2">
         {activeView !== 'login' && (
-          <div className="hidden md:flex items-center gap-1.5 px-3 py-1.5 bg-[var(--surface)] border border-[var(--border)] rounded-full text-xs font-medium" title={!isOnline ? 'Offline' : status === 'syncing' ? 'Syncing changes...' : pendingCount > 0 ? `${pendingCount} changes pending` : 'All changes synced'}>
+          <div className="hidden md:flex items-center gap-1.5 px-3 py-1.5 bg-[var(--surface)] border border-[var(--border)] rounded-full text-xs font-medium" title={!isOnline ? 'Offline' : status === 'syncing' ? `Syncing changes: ${progress ? `${progress.completed}/${progress.total}` : ''}` : pendingCount > 0 ? `${pendingCount} changes pending` : 'All changes synced'}>
             {!isOnline ? (
               <>
                 <CloudOff size={14} className="text-red-500" />
@@ -70,10 +70,18 @@ function TopBar({ activeView }: TopBarProps) {
                 {pendingCount > 0 && <span className="text-xs bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 px-1.5 py-0.5 rounded-full ml-1">{pendingCount}</span>}
               </>
             ) : status === 'syncing' ? (
-              <>
-                <RefreshCw size={14} className="text-blue-500 animate-spin" />
-                <span className="text-blue-500">Syncing...</span>
-              </>
+              <div className="flex items-center gap-2">
+                <RefreshCw size={13} className="text-blue-500 animate-spin" />
+                <span className="text-blue-500 whitespace-nowrap">
+                  Syncing {progress ? `(${progress.completed}/${progress.total})` : ''}
+                </span>
+                <div className="w-16 h-1.5 bg-blue-100 dark:bg-blue-900/40 rounded-full overflow-hidden">
+                  <div 
+                    className="h-full bg-blue-500 rounded-full transition-all duration-300 ease-out"
+                    style={{ width: `${progress && progress.total > 0 ? Math.round((progress.completed / progress.total) * 100) : 0}%` }}
+                  />
+                </div>
+              </div>
             ) : pendingCount > 0 ? (
               <>
                 <Cloud size={14} className="text-amber-500" />

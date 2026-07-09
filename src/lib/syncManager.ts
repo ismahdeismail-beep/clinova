@@ -17,13 +17,14 @@ interface SyncDBSchema extends DBSchema {
 }
 
 type SyncStatus = 'idle' | 'syncing' | 'error';
-type SyncListener = (status: SyncStatus, pendingCount: number) => void;
+type SyncListener = (status: SyncStatus, pendingCount: number, progress?: { completed: number; total: number }) => void;
 
 class SyncManager {
   private dbPromise: Promise<IDBPDatabase<SyncDBSchema>>;
   private listeners: Set<SyncListener> = new Set();
   private isSyncing = false;
   private currentStatus: SyncStatus = 'idle';
+  private syncProgress?: { completed: number; total: number };
 
   constructor() {
     this.dbPromise = openDB<SyncDBSchema>('clinova-sync-db', 1, {
@@ -41,7 +42,7 @@ class SyncManager {
   subscribe(listener: SyncListener) {
     this.listeners.add(listener);
     this.getPendingMutationsCount().then(count => {
-      listener(this.currentStatus, count);
+      listener(this.currentStatus, count, this.syncProgress);
     });
     return () => {
       this.listeners.delete(listener);
@@ -51,7 +52,7 @@ class SyncManager {
   private async notifyListeners(status?: SyncStatus) {
     if (status) this.currentStatus = status;
     const count = await this.getPendingMutationsCount();
-    this.listeners.forEach(listener => listener(this.currentStatus, count));
+    this.listeners.forEach(listener => listener(this.currentStatus, count, this.syncProgress));
   }
 
   async addMutation(collectionPath: string, action: 'create' | 'update' | 'delete', payload: any, docId?: string) {
@@ -77,13 +78,13 @@ class SyncManager {
     if (!navigator.onLine || this.isSyncing) return;
 
     this.isSyncing = true;
-    this.notifyListeners('syncing');
 
     const idb = await this.dbPromise;
     const mutations = await idb.getAll('pending_mutations');
     
     if (mutations.length === 0) {
       this.isSyncing = false;
+      this.syncProgress = undefined;
       this.notifyListeners('idle');
       return;
     }
@@ -91,6 +92,9 @@ class SyncManager {
     // Sort by timestamp to apply them in order
     mutations.sort((a, b) => a.timestamp - b.timestamp);
     let hasError = false;
+
+    this.syncProgress = { completed: 0, total: mutations.length };
+    this.notifyListeners('syncing');
 
     for (const mutation of mutations) {
       try {
@@ -112,15 +116,24 @@ class SyncManager {
 
         // Successfully synced, remove from IndexedDB
         await idb.delete('pending_mutations', id);
+        
+        if (this.syncProgress) {
+          this.syncProgress.completed++;
+        }
         this.notifyListeners();
       } catch (error) {
         console.error('Failed to sync mutation:', error, mutation);
         hasError = true;
+        if (this.syncProgress) {
+          this.syncProgress.completed++;
+        }
+        this.notifyListeners();
         // We leave it in the queue for the next sync attempt if it fails (e.g. timeout/network error)
       }
     }
 
     this.isSyncing = false;
+    this.syncProgress = undefined;
     this.notifyListeners(hasError ? 'error' : 'idle');
   }
   

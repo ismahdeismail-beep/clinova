@@ -343,8 +343,29 @@ export default function OralPracticeScreen() {
       window.speechSynthesis.cancel();
     }
     setIsSpeakingQuestion(false);
-
     try {
+      
+      // KNOWLEDGE BASE INTEGRATION
+      const kbFiles = files.filter(f => (f.category === 'knowledge' || f.category === 'knowledge_base') && f.aiProcessed);
+      let relevantKbContext = '';
+      const topic = specificItem || selectedCategory;
+      const keywords = topic.toLowerCase().split(/\s+/).filter(w => w.length > 3);
+      if (keywords.length > 0 && kbFiles.length > 0) {
+        const matchedFiles = kbFiles.filter(f => {
+          const searchText = `${f.title} ${f.originalName} ${f.summary || ''} ${f.classification?.keywords?.join(' ') || ''}`.toLowerCase();
+          return keywords.some(k => searchText.includes(k));
+        }).slice(0, 3);
+        
+        if (matchedFiles.length > 0) {
+          relevantKbContext = "\n\n=== KNOWLEDGE ENGINE RETRIEVED RESOURCES ===\n";
+          matchedFiles.forEach(f => {
+            relevantKbContext += `- ${f.title || f.originalName}\n`;
+            if (f.summary) relevantKbContext += `  Summary: ${f.summary}\n`;
+            if (f.textContent) relevantKbContext += `  Content: ${f.textContent.substring(0, 1500)}\n`;
+          });
+        }
+      }
+
       const response = await fetch('/api/gemini/oral-practice/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -353,6 +374,7 @@ export default function OralPracticeScreen() {
           category: selectedCategory,
           difficulty: selectedDifficulty,
           specificItem: (selectedMode === 'drug' || selectedMode === 'disease') ? specificItem : undefined,
+          kbContext: relevantKbContext || undefined,
           history: sessions.map(s => s.question)
         })
       });

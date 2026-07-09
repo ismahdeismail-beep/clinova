@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
   Database, Upload, Search, Filter, FolderTree, FileText, Settings, 
-  BarChart as ChartIcon, Trash2, Edit, Plus, BookOpen, Layers, CheckCircle2, 
+  BarChart as ChartIcon, Trash2, Edit, Plus, BookOpen, Layers, CheckCircle2, Sparkles, 
   AlertTriangle, RefreshCw, X, Sliders, Info, Server, HelpCircle, HardDrive
 } from 'lucide-react';
 import { useFileStore } from '../store/fileStore';
@@ -72,10 +72,75 @@ const SYSTEM_RESOURCES: ResourceItem[] = [
     originalName: 'WHO Pediatric Dosing Formulary.pdf',
     title: 'Pediatric Pharmacotherapy Guidelines',
     author: 'World Health Organization',
-    discipline: 'Clinical Pharmacy & Therapeutics',
+    discipline: 'Pediatrics',
     type: 'Clinical Guideline',
     size: 3820199,
     createdAt: Date.now() - 2 * 24 * 3600 * 1000,
+    status: 'Indexed',
+    isUserUploaded: false,
+    storagePath: ''
+  },
+  {
+    id: 'sys-5',
+    originalName: 'Basic and Clinical Pharmacology.pdf',
+    title: 'General Pharmacology Principles',
+    author: 'Katzung & Trevor',
+    discipline: 'Pharmacology',
+    type: 'Textbook',
+    size: 8200199,
+    createdAt: Date.now() - 10 * 24 * 3600 * 1000,
+    status: 'Indexed',
+    isUserUploaded: false,
+    storagePath: ''
+  },
+  {
+    id: 'sys-6',
+    originalName: 'Harrison Principles of Internal Medicine - Ch1.pdf',
+    title: 'Introduction to Clinical Medicine',
+    author: 'Kasper et al.',
+    discipline: 'Clinical Medicine',
+    type: 'Textbook Chapter',
+    size: 4500000,
+    createdAt: Date.now() - 12 * 24 * 3600 * 1000,
+    status: 'Indexed',
+    isUserUploaded: false,
+    storagePath: ''
+  },
+  {
+    id: 'sys-7',
+    originalName: 'Robbins Basic Pathology - Inflammation.pdf',
+    title: 'Cell Injury and Inflammation',
+    author: 'Kumar et al.',
+    discipline: 'Pathology',
+    type: 'Textbook Chapter',
+    size: 6100000,
+    createdAt: Date.now() - 8 * 24 * 3600 * 1000,
+    status: 'Indexed',
+    isUserUploaded: false,
+    storagePath: ''
+  },
+  {
+    id: 'sys-8',
+    originalName: 'CDC Guidelines for Infection Control.pdf',
+    title: 'Infection Control Guidelines',
+    author: 'Centers for Disease Control and Prevention',
+    discipline: 'Public Health',
+    type: 'Clinical Guideline',
+    size: 2150000,
+    createdAt: Date.now() - 20 * 24 * 3600 * 1000,
+    status: 'Indexed',
+    isUserUploaded: false,
+    storagePath: ''
+  },
+  {
+    id: 'sys-9',
+    originalName: 'Netter Atlas of Human Anatomy.pdf',
+    title: 'Atlas of Human Anatomy',
+    author: 'Frank H. Netter',
+    discipline: 'Anatomy',
+    type: 'Textbook',
+    size: 15500000,
+    createdAt: Date.now() - 40 * 24 * 3600 * 1000,
     status: 'Indexed',
     isUserUploaded: false,
     storagePath: ''
@@ -317,11 +382,14 @@ function ResourcesTab({ onUploadClick }: { onUploadClick: () => void }) {
 
   // Filter resources
   const filteredResources = combinedResources.filter(doc => {
-    const matchesSearch = 
+        const matchesSearch = 
       doc.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       doc.author.toLowerCase().includes(searchTerm.toLowerCase()) ||
       doc.originalName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      doc.discipline.toLowerCase().includes(searchTerm.toLowerCase());
+      doc.discipline.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      (doc.textContent && doc.textContent.toLowerCase().includes(searchTerm.toLowerCase())) ||
+      (doc.summary && doc.summary.toLowerCase().includes(searchTerm.toLowerCase())) ||
+      (doc.classification?.keywords && doc.classification.keywords.some(k => k.toLowerCase().includes(searchTerm.toLowerCase())));
 
     const matchesType = typeFilter === 'All Types' || doc.type === typeFilter;
     const matchesDiscipline = disciplineFilter === 'All Disciplines' || doc.discipline === disciplineFilter;
@@ -360,7 +428,17 @@ function ResourcesTab({ onUploadClick }: { onUploadClick: () => void }) {
     'Pharmacognosy',
     'Pharmacology',
     'Clinical Pharmacy & Therapeutics',
-    'Pediatric Pharmacy'
+    'Pediatric Pharmacy',
+    'Organic Chemistry',
+    'Pharmaceutical Analysis',
+    'Clinical Medicine',
+    'Diagnostics',
+    'Nursing',
+    'Dentistry',
+    'Nutrition',
+    'Pathology',
+    'Microbiology',
+    'Public Health'
   ];
 
   const types = [
@@ -485,10 +563,17 @@ function ResourcesTab({ onUploadClick }: { onUploadClick: () => void }) {
                     <td className="px-6 py-4 text-[var(--text-muted)] text-xs font-mono">
                       {formatSize(doc.size)}
                     </td>
-                    <td className="px-6 py-4">
-                      <span className="flex items-center gap-1.5 text-emerald-600 text-xs font-bold">
-                        <CheckCircle2 size={14} className="text-emerald-500" /> Indexed
-                      </span>
+                                        <td className="px-6 py-4">
+                      <div className="flex flex-col gap-1.5">
+                        <span className="flex items-center gap-1.5 text-emerald-600 text-[11px] font-bold">
+                          <CheckCircle2 size={12} className="text-emerald-500" /> Indexed
+                        </span>
+                        {doc.aiProcessed && (
+                           <span className="flex items-center gap-1.5 text-blue-600 dark:text-blue-400 text-[11px] font-bold">
+                             <Sparkles size={12} /> AI Integrated
+                           </span>
+                        )}
+                      </div>
                     </td>
                     <td className="px-6 py-4 text-right">
                       {doc.isUserUploaded && doc.storagePath && (
@@ -543,6 +628,18 @@ function TaxonomyTab() {
     {
       name: 'Biochemistry',
       units: ['Enzymatic Kinetics', 'Metabolic Cycles & Respiration', 'Nucleic Acids Expression']
+    },
+    {
+      name: 'Clinical Medicine',
+      units: ['Internal Medicine', 'Surgery', 'Pediatrics', 'Obstetrics & Gynecology']
+    },
+    {
+      name: 'Pathology',
+      units: ['Cell Injury & Inflammation', 'Hemodynamic Disorders', 'Neoplasia', 'Infectious Diseases']
+    },
+    {
+      name: 'Anatomy',
+      units: ['Gross Anatomy of Thorax', 'Neuroanatomy', 'Musculoskeletal Anatomy']
     }
   ]);
 
@@ -633,19 +730,21 @@ function AnalyticsTab() {
   // Chart data: Distribution of resources by discipline
   const barChartData = [
     { name: 'Physiology', count: 4 },
-    { name: 'Pharmacology', count: 3 },
-    { name: 'Clinical Therapeutics', count: 5 },
-    { name: 'Biochemistry', count: 2 },
-    { name: 'Pharmaceutics', count: 2 },
-    { name: 'Anatomy', count: 2 }
+    { name: 'Pharmacology', count: 5 },
+    { name: 'Clin. Med.', count: 6 },
+    { name: 'Pediatrics', count: 4 },
+    { name: 'Pathology', count: 3 },
+    { name: 'Anatomy', count: 3 },
+    { name: 'Public Health', count: 2 }
   ];
 
   // Pie chart data: Resource formats in system
   const pieChartData = [
-    { name: 'Clinical Guidelines', value: 5, color: '#0ea5e9' },
+    { name: 'Clinical Guidelines', value: 8, color: '#0ea5e9' },
     { name: 'Lecture Notes', value: 4, color: '#10b981' },
-    { name: 'Textbook Chapters', value: 3, color: '#f59e0b' },
-    { name: 'Syllabus Map', value: 2, color: '#8b5cf6' }
+    { name: 'Textbook Chapters', value: 6, color: '#f59e0b' },
+    { name: 'Syllabus Map', value: 2, color: '#8b5cf6' },
+    { name: 'Textbook', value: 4, color: '#ec4899' }
   ];
 
   return (
@@ -913,7 +1012,17 @@ function UploadModal({ onClose }: { onClose: () => void }) {
     'Pharmaceutics',
     'Pharmacognosy',
     'Pharmacology',
-    'Pediatric Pharmacy'
+    'Pediatric Pharmacy',
+    'Organic Chemistry',
+    'Pharmaceutical Analysis',
+    'Clinical Medicine',
+    'Diagnostics',
+    'Nursing',
+    'Dentistry',
+    'Nutrition',
+    'Pathology',
+    'Microbiology',
+    'Public Health'
   ];
 
   const types = [
@@ -952,32 +1061,61 @@ function UploadModal({ onClose }: { onClose: () => void }) {
     setErrorMessage('');
     setUploadProgress(10);
 
-    try {
+        try {
       // 1. Upload via real StorageService
+      setUploadProgress(20);
       const res = await StorageService.uploadFile(
         selectedFile,
         { category: 'knowledge', accessScope: 'public' },
         (progress) => {
-          setUploadProgress(Math.min(90, Math.round(progress.percentage)));
+          setUploadProgress(20 + Math.min(30, Math.round(progress.percentage * 0.3)));
         }
       );
 
-      // 2. Enrich the Firestore file document with our custom attributes
-      await StorageService.updateFileMetadata(res.file.id, {
-        author: author.trim() || userData?.name || userData?.email?.split('@')[0] || 'Unknown Author',
-        discipline,
-        type,
-        // Since we also want title dynamically
-        ...({ title: title.trim() || selectedFile.name.replace(/\.[^/.]+$/, "") } as any)
-      });
+      // 2. Intelligent AI Processing Pipeline
+      setUploadProgress(60);
+      const formData = new FormData();
+      formData.append('file', selectedFile);
+      formData.append('extractionType', 'educational_resource');
 
-      // 3. Add to local zustand state for instant reactivity
+      let aiMetadata = {};
+      try {
+        const aiRes = await fetch('/api/gemini/extract-file', {
+          method: 'POST',
+          body: formData,
+        });
+        
+        if (aiRes.ok) {
+           aiMetadata = await aiRes.json();
+           setUploadProgress(90);
+        } else {
+           console.warn('AI Extraction returned error, falling back to basic indexing.');
+        }
+      } catch(aiErr) {
+        console.warn('AI Extraction failed, falling back to basic indexing:', aiErr);
+      }
+
+      // 3. Enrich the Firestore file document with our custom attributes and AI metadata
+      const finalMetadata = {
+        author: author.trim() || userData?.name || userData?.email?.split('@')[0] || 'Unknown Author',
+        discipline: aiMetadata?.classification?.subject || aiMetadata?.classification?.learningArea || discipline,
+        type: aiMetadata?.classification?.resourceType || type,
+        title: aiMetadata?.title || title.trim() || selectedFile.name.replace(/\.[^/.]+$/, ""),
+        summary: aiMetadata?.summary || '',
+        learningObjectives: aiMetadata?.learningObjectives || [],
+        textContent: aiMetadata?.textContent || '',
+        classification: aiMetadata?.classification || {},
+        relationships: aiMetadata?.relationships || {},
+        suggestions: aiMetadata?.suggestions || {},
+        aiProcessed: true,
+      };
+
+      await StorageService.updateFileMetadata(res.file.id, finalMetadata);
+
+      // 4. Add to local zustand state for instant reactivity
       addFile({
         ...res.file,
-        author: author.trim() || userData?.name || userData?.email?.split('@')[0] || 'Unknown Author',
-        discipline,
-        type,
-        title: title.trim() || selectedFile.name.replace(/\.[^/.]+$/, "")
+        ...finalMetadata
       } as any);
 
       setUploadProgress(100);

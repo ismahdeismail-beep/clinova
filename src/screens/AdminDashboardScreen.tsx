@@ -762,9 +762,12 @@ export default function AdminDashboardScreen() {
     c.difficulty.toLowerCase().includes(caseSearch.toLowerCase())
   );
 
-  const filteredFiles = files.filter(f => 
-    f.originalName.toLowerCase().includes(fileSearch.toLowerCase()) ||
-    f.uploadedByName?.toLowerCase().includes(fileSearch.toLowerCase())
+    const filteredFiles = files.filter(f => 
+    (f.originalName && f.originalName.toLowerCase().includes(fileSearch.toLowerCase())) ||
+    (f.uploadedByName && f.uploadedByName.toLowerCase().includes(fileSearch.toLowerCase())) ||
+    (f.title && f.title.toLowerCase().includes(fileSearch.toLowerCase())) ||
+    (f.summary && f.summary.toLowerCase().includes(fileSearch.toLowerCase())) ||
+    (f.textContent && f.textContent.toLowerCase().includes(fileSearch.toLowerCase()))
   );
 
   const filteredUsers = users.filter(u => 

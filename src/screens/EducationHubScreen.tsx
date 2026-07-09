@@ -16,26 +16,42 @@ import { useFileStore } from '../store/fileStore';
 import { useAuth } from '../contexts/AuthContext';
 import { EducationService, CustomUnit, SubFolder, SavedFlashcard, SavedQuiz } from '../services/education.service';
 
+const getRelevantFiles = (files: any[], currentFolderId: string, currentFolderName: string, unitTitle: string) => {
+  return files.filter(f => {
+    if (f.category === 'study_source' && f.studyId === currentFolderId) return true;
+    if (f.category === 'knowledge' || f.category === 'knowledge_base') {
+      const keywords = `${currentFolderName} ${unitTitle}`.toLowerCase().replace(/disorders|cases|pharmacology|system|concepts|management/g, '').split(/\s+/).filter(w => w.length > 3);
+      const fText = `${f.title || ''} ${f.originalName || ''} ${f.discipline || ''} ${f.type || ''}`.toLowerCase();
+      return keywords.length > 0 && keywords.some(w => fText.includes(w));
+    }
+    return false;
+  });
+};
+
+
+const buildRichKnowledgeContext = (unitFiles: any[]) => {
+  if (!unitFiles || unitFiles.length === 0) return '';
+  let ctx = '\n\n=== CLINICAL KNOWLEDGE BASE EXPERT RESOURCES ===\n';
+  unitFiles.forEach(f => {
+    ctx += `- ${f.title || f.originalName} (${f.type || 'Document'})`;
+    if (f.author) ctx += ` by ${f.author}`;
+    ctx += '\n';
+    if (f.aiProcessed && f.textContent) {
+       ctx += `  Content/Excerpts:\n  ${f.textContent}\n`;
+    } else if (f.aiProcessed && f.summary) {
+       ctx += `  Summary: ${f.summary}\n`;
+    }
+  });
+  return ctx;
+};
 const MODULE_YEARS: Record<string, string> = {
-  'physio': '1st Year',
-  'anatomy': '1st Year',
-  'biochem': '1st Year',
-  'pharmchem': '2nd Year',
-  'pharmaceutics': '2nd Year',
-  'pharmacognosy': '2nd Year',
-  'microbio': '2nd Year',
-  'pathology': '3rd Year',
-  'public_health': '3rd Year',
-  'biostats': '3rd Year',
-  'pharmacology': '4th Year',
+  'supporting': '1st Year',
+  'pharmacology': '3rd Year',
   'drug_info': '4th Year',
-  'qbank': '4th Year',
-  'planner': '4th Year',
   'clinical_pharm': '5th Year',
-  'pharm_practice': '5th Year',
   'cases': '5th Year',
-  'oral_practice': '5th Year',
-  'ai_tools': '5th Year',
+  'ebm': '5th Year',
+  'tools': 'All Years'
 };
 
 export default function EducationHubScreen() {
@@ -147,14 +163,6 @@ export default function EducationHubScreen() {
       navigate('/oral-practice');
       return;
     }
-    if (mod.id === 'clinical_cases') {
-      navigate('/knowledge-base/cases');
-      return;
-    }
-    if (mod.id === 'knowledge_base') {
-      navigate('/knowledge-base');
-      return;
-    }
     setSelectedModule(mod);
     setSelectedUnit(null);
   };
@@ -264,7 +272,7 @@ export default function EducationHubScreen() {
   
   // Ignore year filter when searching so users can find units across all years
   if (activeYearFilter !== 'All' && !searchQuery) {
-    filteredMods = filteredMods.filter(m => MODULE_YEARS[m.id] === activeYearFilter);
+    filteredMods = filteredMods.filter(m => MODULE_YEARS[m.id] === activeYearFilter || m.id === 'tools' || MODULE_YEARS[m.id] === 'All Years');
   }
 
   const sortedModules = [...filteredMods].sort((a, b) => {
@@ -1586,7 +1594,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName }:
   const [loading, setLoading] = useState(false);
   const [customNotes, setCustomNotes] = useState('');
 
-  const unitFiles = files.filter(f => f.category === 'study_source' && f.studyId === currentFolderId);
+  const unitFiles = getRelevantFiles(files, currentFolderId, currentFolderName, unit.title);
 
   // Load existing summary and custom notes text
   useEffect(() => {
@@ -1612,9 +1620,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName }:
       if (customNotes.trim()) {
         context += `\n--- STUDENT HAND-WRITTEN REVISION NOTES ---\n${customNotes}\n`;
       }
-      if (unitFiles.length > 0) {
-        context += `\n--- INDEXED MATERIALS LIST ---\n${unitFiles.map(f => `- ${f.originalName} (${f.mimeType})`).join('\n')}\n`;
-      }
+      context += buildRichKnowledgeContext(unitFiles);
 
       const res = await fetch('/api/gemini/generate-unit-summary', {
         method: 'POST',
@@ -1812,14 +1818,12 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName }: { 
       // Gather student notes/summary context to send alongside RAG
       const savedSummary = await EducationService.getSummary(currentFolderId) || '';
       const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || '';
-      const unitFiles = files.filter(f => f.category === 'study_source' && f.studyId === currentFolderId);
+      const unitFiles = getRelevantFiles(files, currentFolderId, currentFolderName, unit.title);
       
       let context = '';
       if (savedCustomNotes) context += `STUDENT SCRATCHPAD NOTES:\n${savedCustomNotes}\n`;
       if (savedSummary) context += `STUDENT COMPILED STUDY GUIDE:\n${savedSummary}\n`;
-      if (unitFiles.length > 0) {
-        context += `UPLOADED DOCUMENTS LIST:\n${unitFiles.map(f => f.originalName).join(', ')}`;
-      }
+      context += buildRichKnowledgeContext(unitFiles);
 
       const res = await fetch('/api/gemini/hub-tutor', {
         method: 'POST',
@@ -1932,7 +1936,7 @@ function WorkspaceNotes({ unit, currentFolderId, currentFolderName }: { unit: Le
   const [isSaved, setIsSaved] = useState(false);
   
   // Filter files that belong to this sub-folder
-  const unitFiles = files.filter(f => f.category === 'study_source' && f.studyId === currentFolderId);
+  const unitFiles = getRelevantFiles(files, currentFolderId, currentFolderName, unit.title);
 
   // Load custom notes from local storage on mount/folder change
   useEffect(() => {
@@ -2044,7 +2048,7 @@ function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const unitFiles = files.filter(f => f.category === 'study_source' && f.studyId === currentFolderId);
+  const unitFiles = getRelevantFiles(files, currentFolderId, currentFolderName, unit.title);
 
   // Fetch saved flashcards on mount/folder change
   useEffect(() => {
@@ -2065,7 +2069,7 @@ function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName 
       // Gather source text
       const savedSummary = await EducationService.getSummary(currentFolderId) || '';
       const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || '';
-      const notesCombined = `${savedCustomNotes}\n\n${savedSummary}`;
+      const notesCombined = `${savedCustomNotes}\n\n${savedSummary}\n` + buildRichKnowledgeContext(unitFiles);
 
       const res = await fetch('/api/gemini/generate-unit-flashcards', {
         method: 'POST',
@@ -2297,7 +2301,7 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName }: 
     try {
       const savedSummary = await EducationService.getSummary(currentFolderId) || '';
       const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || '';
-      const notesCombined = `${savedCustomNotes}\n\n${savedSummary}`;
+      const notesCombined = `${savedCustomNotes}\n\n${savedSummary}\n` + buildRichKnowledgeContext(unitFiles);
 
       const res = await fetch('/api/gemini/generate-unit-quiz', {
         method: 'POST',

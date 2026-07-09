@@ -17,11 +17,7 @@ interface SyncDBSchema extends DBSchema {
 }
 
 type SyncStatus = 'idle' | 'syncing' | 'error';
-<<<<<<< HEAD
 type SyncListener = (status: SyncStatus, pendingCount: number, progress?: { completed: number; total: number }) => void;
-=======
-type SyncListener = (status: SyncStatus, pendingCount: number, progress?: { completed: number; total: number }) => void;
->>>>>>> origin/main
 
 class SyncManager {
   private dbPromise: Promise<IDBPDatabase<SyncDBSchema>>;
@@ -82,20 +78,13 @@ class SyncManager {
     if (!navigator.onLine || this.isSyncing) return;
 
     this.isSyncing = true;
-<<<<<<< HEAD
-    this.notifyListeners('syncing');
-=======
->>>>>>> origin/main
 
     const idb = await this.dbPromise;
     const mutations = await idb.getAll('pending_mutations');
     
     if (mutations.length === 0) {
       this.isSyncing = false;
-<<<<<<< HEAD
-=======
       this.syncProgress = undefined;
->>>>>>> origin/main
       this.notifyListeners('idle');
       return;
     }
@@ -104,12 +93,9 @@ class SyncManager {
     mutations.sort((a, b) => a.timestamp - b.timestamp);
     let hasError = false;
 
-<<<<<<< HEAD
-=======
     this.syncProgress = { completed: 0, total: mutations.length };
     this.notifyListeners('syncing');
 
->>>>>>> origin/main
     for (const mutation of mutations) {
       try {
         const { collectionPath, docId, action, payload, id } = mutation;
@@ -130,33 +116,24 @@ class SyncManager {
 
         // Successfully synced, remove from IndexedDB
         await idb.delete('pending_mutations', id);
-<<<<<<< HEAD
-=======
         
         if (this.syncProgress) {
           this.syncProgress.completed++;
         }
->>>>>>> origin/main
         this.notifyListeners();
       } catch (error) {
         console.error('Failed to sync mutation:', error, mutation);
         hasError = true;
-<<<<<<< HEAD
-=======
         if (this.syncProgress) {
           this.syncProgress.completed++;
         }
         this.notifyListeners();
->>>>>>> origin/main
         // We leave it in the queue for the next sync attempt if it fails (e.g. timeout/network error)
       }
     }
 
     this.isSyncing = false;
-<<<<<<< HEAD
-=======
     this.syncProgress = undefined;
->>>>>>> origin/main
     this.notifyListeners(hasError ? 'error' : 'idle');
   }
   

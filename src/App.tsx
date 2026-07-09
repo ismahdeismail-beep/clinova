@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate, Navigate 
 import { 
   Home, Users, FolderOpen, ClipboardList, Pill, Bot, 
   BookOpen, BarChart3, Bell, Settings, Menu, Search, MessageSquare, ShieldCheck, Database,
-  X, LogOut, Cpu, Mic, HeartPulse,
+  X, LogOut, Cpu, Mic
 } from 'lucide-react';
 
 const DashboardScreen = React.lazy(() => import('./screens/DashboardScreen'));
@@ -14,8 +14,6 @@ const DrugIndexScreen = React.lazy(() => import('./screens/DrugIndexScreen'));
 const ClinicalAssistantScreen = React.lazy(() => import('./screens/ClinicalAssistantScreen'));
 const EducationHubScreen = React.lazy(() => import('./screens/EducationHubScreen'));
 const KnowledgeBaseManagerScreen = React.lazy(() => import('./screens/KnowledgeBaseManagerScreen'));
-const KnowledgeBaseBrowserScreen = React.lazy(() => import('./screens/KnowledgeBaseBrowserScreen'));
-const ClinicalCasesBrowserScreen = React.lazy(() => import('./screens/ClinicalCasesBrowserScreen'));
 const AiOrchestrationScreen = React.lazy(() => import('./screens/AiOrchestrationScreen'));
 const OralPracticeScreen = React.lazy(() => import('./screens/OralPracticeScreen'));
 const NotificationsScreen = React.lazy(() => import('./screens/NotificationsScreen'));
@@ -115,14 +113,12 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
 
   const links = [
     { to: '/', label: 'Dashboard', icon: Home },
-    { to: '/cases', label: 'Case Studies', icon: FolderOpen },
+    { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
     { to: '/review', label: 'Pharmacotherapy Review', icon: ClipboardList },
     { to: '/drugs', label: 'Drug Index', icon: Pill },
     { to: '/assistant', label: 'Clinical Assistant', icon: Bot },
     { to: '/oral-practice', label: 'Oral Practice', icon: Mic },
     { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
-    { to: '/knowledge-base', label: 'Knowledge Library', icon: Database },
-    { to: '/knowledge-base/cases', label: 'Case Repository', icon: HeartPulse },
     ...(userData?.role === 'admin' ? [
       { to: '/admin', label: 'Admin Console', icon: ShieldCheck },
       { to: '/admin/kbms', label: 'Knowledge Base ⭐', icon: Database },
@@ -330,8 +326,6 @@ function AppContent() {
                   <AiOrchestrationScreen />
                 </ProtectedRoute>
               } />
-              <Route path="/knowledge-base" element={<KnowledgeBaseBrowserScreen />} />
-              <Route path="/knowledge-base/cases" element={<ClinicalCasesBrowserScreen />} />
               <Route path="/notifications" element={<NotificationsScreen />} />
               <Route path="/settings" element={<SettingsScreen />} />
               <Route path="/login" element={<Navigate to="/" replace />} />

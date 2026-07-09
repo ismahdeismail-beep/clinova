@@ -1,4 +1,4 @@
-﻿import { processAcademicRequest } from "./src/server/academicEngine.js";
+import { processAcademicRequest } from "./src/server/academicEngine.js";
 import express from 'express';
 import path from 'path';
 import fs from 'fs';
@@ -243,7 +243,7 @@ Return a JSON object with:
 CRITICAL CONSTRAINTS:
 1. Patient Anonymity: Extract the patient's name but render it strictly as UPPERCASE INITIALS only (e.g., "Joseph Kimuge Chepyegon" -> "J. K. C.") in the "patientName" field. Never output full names. Ensure relative or next-of-kin names are also converted to initials if mentioned.
 2. Chief Complaint formatting: Must be stated strictly as "[duration] history of [symptom]" in order of clinical priority/urgency, NOT as a diagnosis (e.g., write "3-day history of a painful, swollen left leg", NOT "Deep Venous Thrombosis").
-3. Systems & Vitals/Labs: Extract actual recorded numbers/findings. If a test is ordered but has no result, write "Pending â€” ordered [date], results awaited". If a system is not mentioned or examined, leave it blank or write "Not documented".
+3. Systems & Vitals/Labs: Extract actual recorded numbers/findings. If a test is ordered but has no result, write "Pending — ordered [date], results awaited". If a system is not mentioned or examined, leave it blank or write "Not documented".
 4. Medication History (pre-admission): List drugs taken prior to admission in "currentMedications".
 5. Working Diagnoses (diagnosis): Number and list actual problems/diagnoses in clinical priority order.
 6. Current Pharmacological Management: Extract up to 5 pharmacological treatments. Include continued pre-admission drugs and newly started inpatient drugs.
@@ -421,6 +421,63 @@ If any section is not documented, write "Not documented" or leave empty.`;
           carePlan: { type: Type.STRING, description: "Pharmacist recommended care plan, DTP interventions, or follow-up actions" }
         }
       };
+    } else if (type === 'educational_resource') {
+      prompt = `You are Clinova's Educational Knowledge Engine. Analyze the uploaded educational resource (which could be a book chapter, clinical guideline, lecture note, research article, or case study).
+Extract comprehensive metadata, classify the content within the medical/pharmacy curriculum, and generate AI-ready summaries.
+
+Return a JSON object containing:
+- title: The extracted or inferred title of the document.
+- summary: A concise, high-yield summary of the entire document.
+- learningObjectives: An array of 3-5 learning objectives covered.
+- textContent: A well-formatted, extracted text representation of the document's core content, preserving important clinical guidelines, facts, and structure.
+- classification: An object categorizing the resource within the curriculum.
+- relationships: Related clinical concepts, diseases, and drugs mentioned.`;
+      
+      responseSchema = {
+        type: Type.OBJECT,
+        properties: {
+          title: { type: Type.STRING },
+          summary: { type: Type.STRING },
+          learningObjectives: {
+            type: Type.ARRAY,
+            items: { type: Type.STRING }
+          },
+          textContent: { type: Type.STRING, description: "Full extracted readable text content, properly formatted." },
+          classification: {
+            type: Type.OBJECT,
+            properties: {
+              learningArea: { type: Type.STRING, description: "e.g., Clinical Pharmacy, Basic Sciences, Clinical Medicine" },
+              unit: { type: Type.STRING },
+              topic: { type: Type.STRING },
+              subtopic: { type: Type.STRING },
+              subject: { type: Type.STRING },
+              therapeuticArea: { type: Type.STRING },
+              clinicalSpecialty: { type: Type.STRING },
+              educationalLevel: { type: Type.STRING },
+              resourceType: { type: Type.STRING },
+              keywords: {
+                type: Type.ARRAY,
+                items: { type: Type.STRING }
+              }
+            }
+          },
+          relationships: {
+            type: Type.OBJECT,
+            properties: {
+              diseases: { type: Type.ARRAY, items: { type: Type.STRING } },
+              drugs: { type: Type.ARRAY, items: { type: Type.STRING } },
+              clinicalCases: { type: Type.ARRAY, items: { type: Type.STRING } }
+            }
+          },
+          suggestions: {
+            type: Type.OBJECT,
+            properties: {
+              flashcards: { type: Type.ARRAY, items: { type: Type.STRING } },
+              quizzes: { type: Type.ARRAY, items: { type: Type.STRING } }
+            }
+          }
+        }
+      };
     } else {
       return res.status(400).json({ error: 'Invalid extraction type' });
     }
@@ -473,7 +530,7 @@ If any section is not documented, write "Not documented" or leave empty.`;
     }
 
     const response = await generateContentWithFallback({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.5-flash',
       contents: [
         { role: 'user', parts: userParts }
       ],
@@ -595,7 +652,7 @@ Musculoskeletal: ${systems['Musculoskeletal System'] || 'N/A'}
 Skin/Integumentary: ${systems['Skin & Integumentary System'] || 'N/A'}
 
 === VITALS & LABS ===
-Vitals: HR: ${vitalsLabs.hr || 'N/A'} bpm, BP: ${vitalsLabs.bp || 'N/A'} mmHg, Temp: ${vitalsLabs.temp || 'N/A'} Â°C, PO2: ${vitalsLabs.po2 || 'N/A'} %, RR: ${vitalsLabs.rr || 'N/A'} bpm, BMI: ${vitalsLabs.bmi || 'N/A'}
+Vitals: HR: ${vitalsLabs.hr || 'N/A'} bpm, BP: ${vitalsLabs.bp || 'N/A'} mmHg, Temp: ${vitalsLabs.temp || 'N/A'} °C, PO2: ${vitalsLabs.po2 || 'N/A'} %, RR: ${vitalsLabs.rr || 'N/A'} bpm, BMI: ${vitalsLabs.bmi || 'N/A'}
 Labs Electrolytes: Na+: ${vitalsLabs.na || 'N/A'}, K+: ${vitalsLabs.k || 'N/A'}, Cl-: ${vitalsLabs.cl || 'N/A'}, Urea: ${vitalsLabs.urea || 'N/A'}, Creatinine: ${vitalsLabs.creat || 'N/A'}, CrCl: ${vitalsLabs.crcl || 'N/A'}
 Labs LFTs: AST: ${vitalsLabs.ast || 'N/A'}, ALT: ${vitalsLabs.alt || 'N/A'}, ALP: ${vitalsLabs.alp || 'N/A'}, T. Bili: ${vitalsLabs.t_bili || 'N/A'}, D. Bili: ${vitalsLabs.d_bili || 'N/A'}, Albumin: ${vitalsLabs.albumin || 'N/A'}
 Labs Hematology: WBC: ${vitalsLabs.wbc || 'N/A'}, Neutrophils: ${vitalsLabs.neut || 'N/A'}, Lymphocytes: ${vitalsLabs.lymph || 'N/A'}, Hb: ${vitalsLabs.hb || 'N/A'}, Platelets: ${vitalsLabs.plts || 'N/A'}
@@ -629,7 +686,7 @@ Generate appropriate, guideline-based recommendations. Ensure you adjust doses f
 
     // We use a structured JSON schema to populate the rest of the form perfectly!
     const response = await generateContentWithFallback({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.5-flash',
       contents: prompt,
       config: {
         systemInstruction: `You are an expert clinical pharmacist in Kenya, specializing in pharmacotherapy reviews, guideline-directed medical therapy, and local formularies (KDI). Your outputs must be highly clinical, precise, and evidence-based.
@@ -835,7 +892,7 @@ ${fileName ? `(Attached file: ${fileName})` : ''}
     });
 
     const response = await generateContentWithFallback({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.5-flash',
       contents: contents,
       config: {
         systemInstruction: systemInstruction,
@@ -879,7 +936,7 @@ Provide 3 highly relevant clinical board-style questions with answers, detailed 
     }
 
     const response = await generateContentWithFallback({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.5-flash',
       contents: prompt,
       config: {
         systemInstruction: `You are an expert clinical pharmacy professor and OSCE examiner in Kenya. You draft official medical board exam questions, high-yield summary guides, and professional medical educational materials based on the Kenya Drug Index (KDI) and international clinical standards. Ensure your outputs are formatted clearly using markdown.`,
@@ -931,7 +988,7 @@ Return a list of flashcard objects, where each flashcard has:
 2. answer: A high-yield, punchy, informative answer explaining the concept or facts cleanly.`;
 
     const response = await generateContentWithFallback({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.5-flash',
       contents: prompt,
       config: {
         responseMimeType: 'application/json',
@@ -982,7 +1039,7 @@ Return a list of quiz question objects, where each object has:
 4. explanation: A comprehensive explanation explaining why that answer is correct and why other options are incorrect, citing relevant mechanisms or guidelines.`;
 
     const response = await generateContentWithFallback({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.5-flash',
       contents: prompt,
       config: {
         responseMimeType: 'application/json',
@@ -1039,7 +1096,7 @@ Structure the output beautifully using Markdown with the following key sections:
 5. **Clinical OSCE Pearls**: Golden high-yield tips, diagnostic rules of thumb, or common board pitfalls for this unit.`;
 
     const response = await generateContentWithFallback({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.5-flash',
       contents: prompt,
       config: {
         systemInstruction: `You are an expert clinical pharmacotherapist and esteemed academic professor. You write publication-quality, structured, evidence-based study summaries, highlighting critical guidelines, safety profiles, and OSCE board review concepts.`
@@ -1132,7 +1189,7 @@ ATTRIBUTION: This response uses clinical data sourced from the U.S. National Lib
 `;
 
     const response = await generateContentWithFallback({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.5-flash',
       contents: prompt,
       config: {
         systemInstruction: `You are an expert clinical pharmacologist and KDI committee editor. Provide highly structured, precise, and guideline-directed monographs. Always format using structured markdown with clear headings, bullets, and tables where helpful.`,
@@ -1202,7 +1259,7 @@ Sex: ${patientContext.sex || 'Unknown'}
 Ward/Location: ${patientContext.ward || 'General ward'}
 
 === VITALS ===
-BP: ${vitals.bp || 'N/A'} mmHg, HR: ${vitals.hr || 'N/A'} bpm, Temp: ${vitals.temp || 'N/A'} Â°C, SpO2: ${vitals.spo2 || 'N/A'}%, RR: ${vitals.rr || 'N/A'} bpm
+BP: ${vitals.bp || 'N/A'} mmHg, HR: ${vitals.hr || 'N/A'} bpm, Temp: ${vitals.temp || 'N/A'} °C, SpO2: ${vitals.spo2 || 'N/A'}%, RR: ${vitals.rr || 'N/A'} bpm
 
 === CLINICAL ALERTS & FLAGGED CONDITIONS ===
 ${alerts.length > 0 ? alerts.map((a: any) => `- [${a.type.toUpperCase()}] ${a.message}`).join('\n') : '- No active security flags or alerts registered in chart.'}
@@ -1231,7 +1288,7 @@ Please evaluate and return a detailed response in the requested structured JSON 
 Ensure your guidance is highly clinical, accurate, aligned with the Kenya Drug Index (KDI), WHO Essential Medicines, and international guidelines (e.g., Beers Criteria). Avoid vague generalities. Provide high-yield clinical value.`;
 
     const response = await generateContentWithFallback({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.5-flash',
       contents: prompt,
       config: {
         systemInstruction: `You are an expert clinical pharmacologist and KDI clinical safety checker. Your mission is to provide extremely accurate, non-redundant, and evidence-based drug safety checks. You MUST return your output in strict JSON conforming to the requested schema. Do not include markdown wrappers or other text outside the JSON.`,
@@ -1258,7 +1315,7 @@ Ensure your guidance is highly clinical, accurate, aligned with the Kenya Drug I
             },
             patientSafetyFlags: {
               type: Type.ARRAY,
-              description: 'Alerts detailing conflicts between the drugs and the patientâ€™s clinical state (demographics, vitals, alerts, labs).',
+              description: 'Alerts detailing conflicts between the drugs and the patient’s clinical state (demographics, vitals, alerts, labs).',
               items: {
                 type: Type.OBJECT,
                 properties: {
@@ -1323,7 +1380,7 @@ Ensure each case contains:
 Ensure the output is highly educational, precise, and matches the clinical standards of KDI (Kenya Drug Index).`;
 
     const response = await generateContentWithFallback({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.5-flash',
       contents: prompt,
       config: {
         systemInstruction: `You are an expert clinical pharmacy examiner and KDI board editor. Extract clinical pharmacology and clinical pharmacy cases with high fidelity. Ensure all outputs strictly follow the requested JSON schema.`,
@@ -1414,7 +1471,7 @@ Ensure the content is medically accurate, authoritative, and strictly integrated
     }
 
     const response = await generateContentWithFallback({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.5-flash',
       contents: prompt,
       config: {
         systemInstruction: `You are an expert clinical pharmacy curriculum builder. Generate medically accurate clinical modules based on official guidelines. Respond with a strictly formatted JSON object matching the requested schema.`,
@@ -1690,15 +1747,17 @@ At the end of your response, include a section with:
 // Oral Practice - Question Generator
 app.post('/api/gemini/oral-practice/generate', async (req, res) => {
   try {
-    const { mode, category, difficulty, specificItem, history } = req.body;
+    const { mode, category, difficulty, specificItem, history, kbContext } = req.body;
     
     let prompt = "";
     let responseSchema: any = {};
+    const contextStr = kbContext ? `\n\nUse this validated clinical knowledge to build the question:\n${kbContext}` : '';
     
     if (mode === 'mcq') {
       prompt = `You are an expert Pharmacy and Clinical Education Examiner.
 Generate a high-yield Multiple Choice Question (MCQ) for oral preparation in the category "${category}".
-Difficulty level: ${difficulty}.
+Difficulty level: ${difficulty}. ${contextStr}
+Ensure options are plausible distractors and correct answer is evidence-based.
 ${specificItem ? `Focus on this specific topic: ${specificItem}` : ""}
 ${history && history.length > 0 ? `Avoid repeating these recently asked questions: ${JSON.stringify(history)}` : ""}
 
@@ -1748,7 +1807,7 @@ Provide brief "promptGuidance" (a 1-sentence hint or tip for the student on what
     }
     
     const response = await generateContentWithFallback({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.5-flash',
       contents: prompt,
       config: {
         responseMimeType: 'application/json',
@@ -1818,7 +1877,7 @@ Provide:
     };
     
     const response = await generateContentWithFallback({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-2.5-flash',
       contents: prompt,
       config: {
         responseMimeType: 'application/json',
@@ -1834,278 +1893,6 @@ Provide:
     res.status(500).json({ error: error.message || 'Failed to evaluate response' });
   }
 });
-
-
-app.post('/api/knowledge-base/ingest', async (req, res) => {
-  try {
-    const { title, description, authors, year, publisher, isbn, doi, language, tags, source, mimeType, fileSize, contentSample, contentHash, generateSummary, generateFlashcards, generateMCQs } = req.body;
-
-    if (!title || !source) {
-      return res.status(400).json({ error: 'Title and source are required' });
-    }
-
-    // Dynamically import the service (to avoid build-time dependency issues)
-    const { ingestResource } = await import('./src/services/knowledge.service.js');
-    
-    const resource = await ingestResource(
-      { title, description, authors, year, publisher, isbn, doi, language, tags, source, file: { mimeType, size: fileSize }, contentSample, contentHash },
-      { generateSummary: generateSummary !== false, generateFlashcards: generateFlashcards !== false, generateMCQs: generateMCQs !== false },
-      req.body.uploadedBy || 'system'
-    );
-
-    res.json({ success: true, resource });
-  } catch (error: any) {
-    console.error('[KnowledgeBase] Ingest error:', error);
-    res.status(400).json({ error: error.message || 'Ingestion failed' });
-  }
-});
-
-// POST Batch ingest multiple resources
-app.post('/api/knowledge-base/batch-ingest', async (req, res) => {
-  try {
-    const { resources, options } = req.body;
-    if (!resources || !Array.isArray(resources) || resources.length === 0) {
-      return res.status(400).json({ error: 'Resources array is required' });
-    }
-
-    const { batchIngest } = await import('./src/services/knowledge.service.js');
-    const result = await batchIngest(resources, options || {}, req.body.uploadedBy || 'system');
-    res.json({ success: true, result });
-  } catch (error: any) {
-    res.status(500).json({ error: error.message || 'Batch ingest failed' });
-  }
-});
-
-// GET Search knowledge base resources
-app.get('/api/knowledge-base/search', async (req, res) => {
-  try {
-    const { searchResources } = await import('./src/services/knowledge.service.js');
-    const filters = {
-      query: req.query.q as string || '',
-      discipline: req.query.discipline as any,
-      subDiscipline: req.query.subDiscipline as string,
-      documentType: req.query.documentType as any,
-      educationalLevel: req.query.educationalLevel as any,
-      language: req.query.language as any,
-      yearFrom: req.query.yearFrom ? parseInt(req.query.yearFrom as string) : undefined,
-      yearTo: req.query.yearTo ? parseInt(req.query.yearTo as string) : undefined,
-      tags: req.query.tags ? (req.query.tags as string).split(',') : undefined,
-    };
-    const maxResults = parseInt(req.query.limit as string) || 50;
-    const results = await searchResources(filters, maxResults);
-    res.json({ success: true, results, total: results.length });
-  } catch (error: any) {
-    res.status(500).json({ error: error.message || 'Search failed' });
-  }
-});
-
-// GET Get a single knowledge base resource
-app.get('/api/knowledge-base/resource/:id', async (req, res) => {
-  try {
-    const { getResource } = await import('./src/services/knowledge.service.js');
-    const resource = await getResource(req.params.id);
-    if (!resource) return res.status(404).json({ error: 'Resource not found' });
-    res.json({ success: true, resource });
-  } catch (error: any) {
-    res.status(500).json({ error: error.message || 'Failed to fetch resource' });
-  }
-});
-
-// DELETE Delete a knowledge base resource
-app.delete('/api/knowledge-base/resource/:id', async (req, res) => {
-  try {
-    const { deleteResource } = await import('./src/services/knowledge.service.js');
-    await deleteResource(req.params.id);
-    res.json({ success: true });
-  } catch (error: any) {
-    res.status(500).json({ error: error.message || 'Failed to delete resource' });
-  }
-});
-
-// GET Knowledge base statistics
-app.get('/api/knowledge-base/stats', async (req, res) => {
-  try {
-    const { getKBStats } = await import('./src/services/knowledge.service.js');
-    const stats = await getKBStats();
-    res.json({ success: true, stats });
-  } catch (error: any) {
-    res.status(500).json({ error: error.message || 'Failed to fetch stats' });
-  }
-});
-
-// POST AI generate metadata (summary, flashcards, MCQs) for a resource
-app.post('/api/knowledge-base/ai-generate', async (req, res) => {
-  try {
-    const { resourceId, generateSummary, generateFlashcards, generateMCQs } = req.body;
-    if (!resourceId) return res.status(400).json({ error: 'resourceId is required' });
-
-    const { getResource, generateResourceId } = await import('./src/services/knowledge.service.js');
-    const resource = await getResource(resourceId);
-    if (!resource) return res.status(404).json({ error: 'Resource not found' });
-
-    const result: any = { resourceId };
-
-    // Generate summary via AI
-    if (generateSummary) {
-      try {
-        const prompt = `Create a concise, well-structured educational summary for the following medical resource. Include: (1) core concepts, (2) key clinical takeaways, (3) learning objectives for students.
-        
-Title: ${resource.title}
-Description: ${resource.description || 'N/A'}
-Discipline: ${resource.discipline}
-Sub-discipline: ${resource.subDiscipline}
-Type: ${resource.documentType}
-Tags: ${resource.tags.join(', ')}`;
-
-        const aiResponse = await generateContentWithFallback(
-          { contents: prompt },
-          undefined,
-          'Knowledge Base Summary Generation'
-        );
-        result.summary = aiResponse.text;
-      } catch (e) {
-        console.warn('Summary generation failed:', e);
-        result.summary = null;
-      }
-    }
-
-    // Generate flashcards via AI
-    if (generateFlashcards) {
-      try {
-        const prompt = `Generate 5 high-yield active recall flashcards in JSON format for the following medical topic. Each flashcard must have "question" and "answer" fields. Format as a valid JSON array.
-
-Topic: ${resource.title}
-Discipline: ${resource.discipline}
-Description: ${resource.description || 'N/A'}
-
-Return ONLY the JSON array, no other text.`;
-
-        const aiResponse = await generateContentWithFallback(
-          { contents: prompt },
-          undefined,
-          'Knowledge Base Flashcard Generation'
-        );
-
-        const cleaned = aiResponse.text.replace(/```json|```/g, '').trim();
-        const flashcards = JSON.parse(cleaned);
-        if (Array.isArray(flashcards)) {
-          result.flashcards = flashcards;
-        }
-      } catch (e) {
-        console.warn('Flashcard generation failed:', e);
-        result.flashcards = [];
-      }
-    }
-
-    // Generate MCQs via AI
-    if (generateMCQs) {
-      try {
-        const prompt = `Generate 3 multiple-choice questions in JSON format for the following medical topic. Each MCQ must have: "question", "options" (array of 4 strings), "correctAnswer", "explanation", and "difficulty" ("easy", "medium", or "hard"). Format as a valid JSON array.
-
-Topic: ${resource.title}
-Discipline: ${resource.discipline}
-Description: ${resource.description || 'N/A'}
-
-Return ONLY the JSON array, no other text.`;
-
-        const aiResponse = await generateContentWithFallback(
-          { contents: prompt },
-          undefined,
-          'Knowledge Base MCQ Generation'
-        );
-
-        const cleaned = aiResponse.text.replace(/```json|```/g, '').trim();
-        const mcqs = JSON.parse(cleaned);
-        if (Array.isArray(mcqs)) {
-          result.mcqs = mcqs;
-        }
-      } catch (e) {
-        console.warn('MCQ generation failed:', e);
-        result.mcqs = [];
-      }
-    }
-
-    res.json({ success: true, result });
-  } catch (error: any) {
-    res.status(500).json({ error: error.message || 'AI generation failed' });
-  }
-});
-
-// ================================================================
-// CLINICAL CASES API
-// ================================================================
-
-// GET List all clinical cases
-app.get('/api/knowledge-base/cases', async (req, res) => {
-  try {
-    const { getAllCases, searchCases, getCaseStats } = await import('./src/data/clinicalCases.js');
-    
-    const specialty = req.query.specialty as string;
-    const discipline = req.query.discipline as string;
-    const difficulty = req.query.difficulty as string;
-    const query = req.query.q as string;
-    
-    let cases = getAllCases();
-    
-    if (query) cases = searchCases(query);
-    if (specialty) cases = cases.filter(c => c.specialty.toLowerCase() === specialty.toLowerCase());
-    if (discipline) cases = cases.filter(c => c.discipline.toLowerCase() === discipline.toLowerCase());
-    if (difficulty) cases = cases.filter(c => c.difficulty === difficulty);
-    
-    const stats = getCaseStats();
-    
-    res.json({ success: true, cases, total: cases.length, stats });
-  } catch (error: any) {
-    res.status(500).json({ error: error.message || 'Failed to fetch cases' });
-  }
-});
-
-// GET Get a specific clinical case
-app.get('/api/knowledge-base/cases/:id', async (req, res) => {
-  try {
-    const { getCaseById } = await import('./src/data/clinicalCases.js');
-    const caseData = getCaseById(req.params.id);
-    if (!caseData) return res.status(404).json({ error: 'Case not found' });
-    res.json({ success: true, case: caseData });
-  } catch (error: any) {
-    res.status(500).json({ error: error.message || 'Failed to fetch case' });
-  }
-});
-
-// GET Available specialties and disciplines
-app.get('/api/knowledge-base/cases/meta', async (req, res) => {
-  try {
-    const { getAllSpecialties, getAllDisciplines, getCaseStats } = await import('./src/data/clinicalCases.js');
-    res.json({
-      success: true,
-      specialties: getAllSpecialties(),
-      disciplines: getAllDisciplines(),
-      stats: getCaseStats(),
-    });
-  } catch (error: any) {
-    res.status(500).json({ error: error.message || 'Failed' });
-  }
-});
-
-// ================================================================
-// RESOURCE CLASSIFICATION API
-// ================================================================
-
-// POST Classify a resource (returns predicted discipline, type, etc.)
-app.post('/api/knowledge-base/classify', async (req, res) => {
-  try {
-    const { title, description, contentSample } = req.body;
-    if (!title) return res.status(400).json({ error: 'Title is required' });
-
-    const { classifyResource } = await import('./src/services/knowledge.service.js');
-    const classification = classifyResource(title, description, contentSample);
-    res.json({ success: true, classification });
-  } catch (error: any) {
-    res.status(500).json({ error: error.message || 'Classification failed' });
-  }
-});
-
-
 
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Clinova core backend running on port ${PORT}`);  });
@@ -2237,6 +2024,5 @@ app.post('/api/admin/ai/gateway/test', async (req, res) => {
     res.status(500).json({ error: error.message || 'Execution failed' });
   }
 });
-
 
 

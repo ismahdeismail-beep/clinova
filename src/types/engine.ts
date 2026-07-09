@@ -127,6 +127,14 @@ export interface StoredFile {
   accessibleTo: string[];
   cloudinaryPublicId?: string;
   cloudinaryUrl?: string;
+  
+  // Knowledge Base Metadata
+  title?: string;
+  author?: string;
+  discipline?: string;
+  type?: string;
+  tags?: string[];
+  metadata?: Record<string, any>;
 }
 
 export interface FileUploadOptions {

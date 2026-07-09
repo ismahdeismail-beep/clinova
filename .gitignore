@@ -27,6 +27,3 @@ dist-ssr
 .env
 .env.*
 !.env.example
-
-# Firebase local config (contains live API keys — use .env for production)
-firebase-applet-config.json

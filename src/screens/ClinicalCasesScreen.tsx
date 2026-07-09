@@ -60,38 +60,36 @@ export default function ClinicalCasesScreen() {
 
   const getSpecialtyIcon = (specialty: string) => {
     switch (specialty) {
-      case 'Cardiology': return <HeartPulse className="text-rose-500" />;
-      case 'Respiratory Medicine': return <Wind className="text-sky-500" />;
-      case 'Endocrinology': return <Flame className="text-orange-500" />;
+      case 'Cardiovascular Disorders': return <HeartPulse className="text-rose-500" />;
+      case 'Respiratory Disorders': return <Wind className="text-sky-500" />;
+      case 'Endocrine Disorders': return <Flame className="text-orange-500" />;
       case 'Infectious Diseases': return <ShieldAlert className="text-emerald-500" />;
-      case 'Nephrology': return <Droplets className="text-blue-500" />;
-      case 'Gastroenterology': return <Activity className="text-amber-500" />;
-      case 'Neurology': return <Brain className="text-violet-500" />;
-      case 'Psychiatry': return <BrainCircuit className="text-fuchsia-500" />;
-      case 'Hematology': return <Droplets className="text-red-500" />;
-      case 'Oncology': return <Activity className="text-purple-500" />;
+      case 'Renal Disorders': return <Droplets className="text-blue-500" />;
+      case 'Gastrointestinal Disorders': return <Activity className="text-amber-500" />;
+      case 'Neurological Disorders': return <Brain className="text-violet-500" />;
+      case 'Psychiatric Disorders': return <BrainCircuit className="text-fuchsia-500" />;
+      case 'Hematology & Oncology': return <Activity className="text-purple-500" />;
       case 'Pediatrics': return <Baby className="text-teal-500" />;
       case 'Obstetrics & Gynecology': return <User className="text-pink-500" />;
-      case 'Emergency Medicine': return <AlertTriangle className="text-yellow-500" />;
+      case 'Emergency & Critical Care': return <AlertTriangle className="text-yellow-500" />;
       default: return <Stethoscope className="text-indigo-500" />;
     }
   };
 
   const getSpecialtyColor = (specialty: string) => {
     switch (specialty) {
-      case 'Cardiology': return 'from-rose-500/10 to-rose-500/20 border-rose-200/40 text-rose-700';
-      case 'Respiratory Medicine': return 'from-sky-500/10 to-sky-500/20 border-sky-200/40 text-sky-700';
-      case 'Endocrinology': return 'from-orange-500/10 to-orange-500/20 border-orange-200/40 text-orange-700';
+      case 'Cardiovascular Disorders': return 'from-rose-500/10 to-rose-500/20 border-rose-200/40 text-rose-700';
+      case 'Respiratory Disorders': return 'from-sky-500/10 to-sky-500/20 border-sky-200/40 text-sky-700';
+      case 'Endocrine Disorders': return 'from-orange-500/10 to-orange-500/20 border-orange-200/40 text-orange-700';
       case 'Infectious Diseases': return 'from-emerald-500/10 to-emerald-500/20 border-emerald-200/40 text-emerald-700';
-      case 'Nephrology': return 'from-blue-500/10 to-blue-500/20 border-blue-200/40 text-blue-700';
-      case 'Gastroenterology': return 'from-amber-500/10 to-amber-500/20 border-amber-200/40 text-amber-700';
-      case 'Neurology': return 'from-violet-500/10 to-violet-500/20 border-violet-200/40 text-violet-700';
-      case 'Psychiatry': return 'from-fuchsia-500/10 to-fuchsia-500/20 border-fuchsia-200/40 text-fuchsia-700';
-      case 'Hematology': return 'from-red-500/10 to-red-500/20 border-red-200/40 text-red-700';
-      case 'Oncology': return 'from-purple-500/10 to-purple-500/20 border-purple-200/40 text-purple-700';
+      case 'Renal Disorders': return 'from-blue-500/10 to-blue-500/20 border-blue-200/40 text-blue-700';
+      case 'Gastrointestinal Disorders': return 'from-amber-500/10 to-amber-500/20 border-amber-200/40 text-amber-700';
+      case 'Neurological Disorders': return 'from-violet-500/10 to-violet-500/20 border-violet-200/40 text-violet-700';
+      case 'Psychiatric Disorders': return 'from-fuchsia-500/10 to-fuchsia-500/20 border-fuchsia-200/40 text-fuchsia-700';
+      case 'Hematology & Oncology': return 'from-purple-500/10 to-purple-500/20 border-purple-200/40 text-purple-700';
       case 'Pediatrics': return 'from-teal-500/10 to-teal-500/20 border-teal-200/40 text-teal-700';
       case 'Obstetrics & Gynecology': return 'from-pink-500/10 to-pink-500/20 border-pink-200/40 text-pink-700';
-      case 'Emergency Medicine': return 'from-yellow-500/10 to-yellow-500/20 border-yellow-200/40 text-yellow-700';
+      case 'Emergency & Critical Care': return 'from-yellow-500/10 to-yellow-500/20 border-yellow-200/40 text-yellow-700';
       default: return 'from-indigo-500/10 to-indigo-500/20 border-indigo-200/40 text-indigo-700';
     }
   };

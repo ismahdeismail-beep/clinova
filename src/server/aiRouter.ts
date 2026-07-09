@@ -247,6 +247,21 @@ function selectProvidersSequence(): string[] {
 
 // Fallback logic
 export async function generateContentWithFallback(request: any, providerOverride?: string, featureName: string = 'General Inquiry') {
+  // Inject Universal Knowledge Engine Rules
+  if (!request.config) {
+    request.config = {};
+  }
+  
+  const hierarchyRules = `\n\n=== CLINOVA AI KNOWLEDGE ENGINE REASONING HIERARCHY ===\nYou must organize and retrieve information using the following structural priority: Learning Area -> Unit -> Topic -> Subtopic -> Educational Resource -> Clinical Application.\nTreat every educational resource (books, notes, clinical cases, guidelines, drug information, flashcards, quizzes) as part of a single interconnected knowledge graph.\nPrioritize authoritative educational resources (Guidelines, Official Notes) over general knowledge. Connect foundational sciences directly with clinical applications. Explain concepts progressively as structured teaching. Relate topics across disciplines when appropriate.`;
+
+  if (request.config.systemInstruction) {
+     if (typeof request.config.systemInstruction === 'string' && !request.config.systemInstruction.includes('Learning Area -> Unit')) {
+        request.config.systemInstruction += hierarchyRules;
+     }
+  } else {
+     request.config.systemInstruction = hierarchyRules;
+  }
+
   const activeOverride = providerOverride || globalProviderOverride;
   const executionId = 'gw-' + Math.random().toString(36).substr(2, 9);
   

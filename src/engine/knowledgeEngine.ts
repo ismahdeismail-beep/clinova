@@ -5,6 +5,7 @@
 // ============================================================
 
 import { generateContentWithFallback } from '../server/aiRouter';
+import { searchLibrary } from '../data/onlineLibraryData';
 
 // ============================================================
 // Educational Context — detected before any AI response
@@ -415,6 +416,27 @@ export class KnowledgeEngine {
         relevance: 0.8,
         reason: `Review key facts about ${context.drug}`,
       });
+    }
+
+    // Library resource recommendations (textbooks, guidelines, OERs)
+    try {
+      const searchQuery = [context.disease, context.drug, context.subject, context.unit].filter(Boolean).join(' ');
+      if (searchQuery) {
+        const libraryResults = searchLibrary(searchQuery, {}).slice(0, 3);
+        for (const lib of libraryResults) {
+          recommendations.push({
+            type: 'book',
+            title: lib.title,
+            resourceId: lib.id,
+            relevance: lib.isFree ? 0.85 : 0.7,
+            reason: lib.isFree
+              ? `Free resource: ${lib.description.substring(0, 80)}`
+              : `Recommended textbook: ${lib.authors}`,
+          });
+        }
+      }
+    } catch {
+      // Library search is optional
     }
 
     // Topic-based recommendations

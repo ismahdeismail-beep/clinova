@@ -1,5 +1,12 @@
 export interface ClinicalCase {
   id: string;
+  /** Pharmacology subject (e.g., 'Cardiovascular Pharmacology', 'Autonomic Pharmacology') */
+  pharmacologySubject: string;
+  /** Specific unit within the subject */
+  unit?: string;
+  /** Learning objectives this case addresses */
+  learningObjectives?: string[];
+  /** Clinical specialty for backward compatibility */
   specialty: string;
   disease: string;
   title: string;
@@ -32,6 +39,54 @@ export interface ClinicalCase {
   createdByName: string;
 }
 
+// ================================================================
+// Pharmacology Curriculum — Subject Area Definitions
+// Organizes all clinical cases by the pharmacology curriculum
+// ================================================================
+
+export const PHARMACOLOGY_SUBJECTS = [
+  'General Pharmacology',
+  'Autonomic Pharmacology',
+  'Cardiovascular Pharmacology',
+  'Respiratory Pharmacology',
+  'Gastrointestinal Pharmacology',
+  'Endocrine Pharmacology',
+  'Vitamins & Nutrition',
+  'Central Nervous System Pharmacology',
+  'Pain & Inflammation',
+  'Chemotherapy & Antimicrobial Pharmacology',
+  'Oncology',
+  'Hematology',
+  'Renal Pharmacology',
+  'Dermatology',
+  'Ophthalmology',
+  'Toxicology',
+  'Clinical Pharmacy'
+] as const;
+
+export type PharmacologySubject = typeof PHARMACOLOGY_SUBJECTS[number];
+
+export const DISEASES_BY_SUBJECT: Record<PharmacologySubject, string[]> = {
+  'General Pharmacology': ['Adverse Drug Reaction', 'Drug Overdose', 'Drug Poisoning', 'Medication Error', 'Polypharmacy', 'Drug Interaction', 'Dose Adjustment', 'Therapeutic Drug Monitoring', 'Medication Non-adherence', 'Special Population Dosing'],
+  'Autonomic Pharmacology': ['Hypertension', 'Asthma', 'COPD', 'Benign Prostatic Hyperplasia', 'Glaucoma', 'Anaphylaxis', 'Organophosphate Poisoning', 'Shock', 'Bradycardia', 'Tachyarrhythmias', 'Motion Sickness'],
+  'Cardiovascular Pharmacology': ['Hypertension', 'Heart Failure', 'Acute Coronary Syndrome', 'Stable Angina', 'Myocardial Infarction', 'Atrial Fibrillation', 'Deep Vein Thrombosis', 'Pulmonary Embolism', 'Hyperlipidaemia', 'Stroke Prevention', 'Cardiac Arrhythmias'],
+  'Respiratory Pharmacology': ['Asthma', 'COPD', 'Tuberculosis', 'Community Acquired Pneumonia', 'Hospital Acquired Pneumonia', 'Allergic Rhinitis', 'Pulmonary Embolism', 'Bronchiectasis', 'Acute Bronchitis', 'Chronic Cough'],
+  'Gastrointestinal Pharmacology': ['Peptic Ulcer Disease', 'GERD', 'Helicobacter pylori Infection', 'Liver Cirrhosis', 'Hepatitis', 'Pancreatitis', 'Constipation', 'Diarrhoea', 'Irritable Bowel Syndrome', 'Inflammatory Bowel Disease'],
+  'Endocrine Pharmacology': ['Type 1 Diabetes', 'Type 2 Diabetes', 'Diabetic Ketoacidosis', 'Hyperosmolar Hyperglycaemic State', 'Hypothyroidism', 'Hyperthyroidism', 'Osteoporosis', 'Adrenal Insufficiency', 'Cushing Syndrome', 'Menopause'],
+  'Vitamins & Nutrition': ['Iron Deficiency Anaemia', 'Vitamin A Deficiency', 'Vitamin D Deficiency', 'Vitamin B12 Deficiency', 'Folate Deficiency', 'Vitamin K Deficiency', 'Malnutrition', 'Rickets', 'Osteomalacia', 'Micronutrient Deficiencies'],
+  'Central Nervous System Pharmacology': ['Epilepsy', 'Parkinson Disease', 'Alzheimer Disease', 'Migraine', 'Depression', 'Anxiety Disorders', 'Bipolar Disorder', 'Schizophrenia', 'Neuropathic Pain', 'Insomnia'],
+  'Pain & Inflammation': ['Acute Pain', 'Chronic Pain', 'Rheumatoid Arthritis', 'Osteoarthritis', 'Gout', 'Fever', 'Inflammatory Disorders'],
+  'Chemotherapy & Antimicrobial Pharmacology': ['Malaria', 'HIV/AIDS', 'Tuberculosis', 'Community Acquired Pneumonia', 'Urinary Tract Infection', 'Meningitis', 'Sepsis', 'Gonorrhoea', 'Syphilis', 'Cellulitis', 'Typhoid Fever'],
+  'Oncology': ['Breast Cancer', 'Cervical Cancer', 'Prostate Cancer', 'Lung Cancer', 'Colorectal Cancer', 'Leukemia', 'Lymphoma', 'Chemotherapy Toxicity', 'Febrile Neutropenia'],
+  'Hematology': ['Iron Deficiency Anaemia', 'Sickle Cell Disease', 'Hemophilia', 'Leukemia', 'Aplastic Anaemia', 'Venous Thromboembolism', 'Disseminated Intravascular Coagulation'],
+  'Renal Pharmacology': ['Acute Kidney Injury', 'Chronic Kidney Disease', 'Hyperkalaemia', 'Hyponatraemia', 'Oedema', 'Resistant Hypertension', 'Nephrotic Syndrome'],
+  'Dermatology': ['Acne', 'Psoriasis', 'Eczema', 'Contact Dermatitis', 'Cellulitis', 'Scabies', 'Fungal Skin Infections', 'Urticaria'],
+  'Ophthalmology': ['Glaucoma', 'Conjunctivitis', 'Cataracts', 'Dry Eye Disease', 'Uveitis'],
+  'Toxicology': ['Organophosphate Poisoning', 'Paracetamol Overdose', 'Opioid Overdose', 'Snake Bite', 'Carbon Monoxide Poisoning', 'Alcohol Poisoning', 'Heavy Metal Poisoning'],
+  'Clinical Pharmacy': ['Medication Therapy Management', 'Medication Reconciliation', 'Pharmaceutical Care Plan', 'Therapeutic Drug Monitoring', 'Polypharmacy', 'Medication Review', 'Renal Dose Adjustment', 'Hepatic Dose Adjustment', 'Antimicrobial Stewardship', 'Pharmacovigilance', 'Drug Information', 'Medication Safety', 'Patient Counselling', 'Clinical Decision Making', 'Evidence-Based Medicine']
+};
+
+// Backward compatibility specialties mapping
 export const SPECIALTIES = [
   'Cardiovascular Disorders',
   'Respiratory Disorders',
@@ -65,6 +120,7 @@ export const DISEASES_BY_SPECIALTY: Record<string, string[]> = {
 export const INITIAL_CASES: ClinicalCase[] = [
   {
     id: 'case-1',
+    pharmacologySubject: 'Cardiovascular Pharmacology',
     specialty: 'Cardiovascular Disorders',
     disease: 'Heart Failure',
     title: 'Decompensated HFrEF with Digoxin Toxicity',
@@ -98,6 +154,7 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-2',
+    pharmacologySubject: 'Chemotherapy & Antimicrobial Pharmacology',
     specialty: 'Pediatrics',
     disease: 'Childhood Pneumonia',
     title: 'Severe Childhood Pneumonia in a 14-Month-Old with Mild Dehydration',
@@ -131,6 +188,7 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-3',
+    pharmacologySubject: 'Endocrine Pharmacology',
     specialty: 'Endocrine Disorders',
     disease: 'Diabetic Ketoacidosis',
     title: 'Severe Diabetic Ketoacidosis Precipitated by Urinary Tract Infection',
@@ -164,6 +222,7 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-4',
+    pharmacologySubject: 'Respiratory Pharmacology',
     specialty: 'Respiratory Disorders',
     disease: 'Asthma',
     title: 'Acute Severe Asthma Exacerbation in a Young Adult',
@@ -197,6 +256,7 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-5',
+    pharmacologySubject: 'Cardiovascular Pharmacology',
     specialty: 'Obstetrics & Gynecology',
     disease: 'Preeclampsia',
     title: 'Severe Preeclampsia at 34 Weeks Gestation',
@@ -230,6 +290,7 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-6',
+    pharmacologySubject: 'Cardiovascular Pharmacology',
     specialty: 'Neurological Disorders',
     disease: 'Stroke',
     title: 'Acute Ischemic Stroke in the Middle Cerebral Artery Territory',
@@ -263,6 +324,7 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-7',
+    pharmacologySubject: 'Chemotherapy & Antimicrobial Pharmacology',
     specialty: 'Infectious Diseases',
     disease: 'Meningitis',
     title: 'Acute Bacterial Meningitis in a Young Adult',
@@ -296,6 +358,7 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-8',
+    pharmacologySubject: 'Central Nervous System Pharmacology',
     specialty: 'Psychiatric Disorders',
     disease: 'Depression',
     title: 'Severe Major Depressive Disorder with Suicidal Ideation',
@@ -329,6 +392,7 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-9',
+    pharmacologySubject: 'Gastrointestinal Pharmacology',
     specialty: 'Gastrointestinal Disorders',
     disease: 'Liver Cirrhosis',
     title: 'Decompensated Liver Cirrhosis with Ascites and Encephalopathy',
@@ -362,6 +426,7 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-10',
+    pharmacologySubject: 'Oncology',
     specialty: 'Hematology & Oncology',
     disease: 'Breast Cancer',
     title: 'Adjuvant Endocrine Therapy for HR-Positive Breast Cancer',

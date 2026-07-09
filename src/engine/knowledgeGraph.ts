@@ -3,11 +3,58 @@
 // Interconnects all educational resources into a unified graph
 // ============================================================
 
-import {
-  type Discipline,
-  DISCIPLINES,
-  SUB_DISCIPLINES,
-} from '../types/knowledge';
+// ============================================================
+// Discipline & Sub-discipline Definitions
+// (Inlined from deleted ../types/knowledge)
+// ============================================================
+
+export type Discipline = typeof DISCIPLINES[number];
+
+/** Main pharmacy/medical school subject disciplines */
+export const DISCIPLINES = [
+  'Pharmacy',
+  'Pharmacology',
+  'Pharmaceutics',
+  'Pharmaceutical Chemistry',
+  'Organic Chemistry',
+  'Pharmaceutical Analysis',
+  'Pharmacognosy',
+  'Biochemistry',
+  'Physiology',
+  'Anatomy',
+  'Pathology',
+  'Microbiology',
+  'Clinical Medicine',
+  'Diagnostics',
+  'Public Health',
+  'Research',
+  'Nursing',
+  'Dentistry',
+  'Nutrition',
+] as const;
+
+/** Sub-disciplines/units within each discipline */
+export const SUB_DISCIPLINES: Record<string, string[]> = {
+  Pharmacy: ['Clinical Pharmacy', 'Hospital Pharmacy', 'Community Pharmacy', 'Pharmacy Practice', 'Social Pharmacy', 'Pharmacy Law & Ethics'],
+  Pharmacology: ['General Pharmacology', 'Autonomic Pharmacology', 'Cardiovascular Pharmacology', 'Respiratory Pharmacology', 'Gastrointestinal Pharmacology', 'Endocrine Pharmacology', 'Central Nervous System Pharmacology', 'Chemotherapy', 'Toxicology', 'Clinical Pharmacology'],
+  Pharmaceutics: ['Physical Pharmacy', 'Dosage Form Design', 'Biopharmaceutics', 'Pharmacokinetics', 'Industrial Pharmacy', 'Cosmetology'],
+  'Pharmaceutical Chemistry': ['Medicinal Chemistry', 'Drug Design', 'Stereochemistry', 'Drug Metabolism'],
+  'Organic Chemistry': ['Organic Synthesis', 'Reaction Mechanisms', 'Spectroscopy'],
+  'Pharmaceutical Analysis': ['Qualitative Analysis', 'Quantitative Analysis', 'Instrumental Analysis', 'Quality Control', 'Bioanalysis'],
+  Pharmacognosy: ['Medicinal Plants', 'Phytochemistry', 'Herbal Medicine', 'Ethnopharmacology'],
+  Biochemistry: ['Metabolism', 'Enzymology', 'Molecular Biology', 'Clinical Biochemistry'],
+  Physiology: ['General Physiology', 'Systemic Physiology', 'Pathophysiology'],
+  Anatomy: ['Gross Anatomy', 'Histology', 'Embryology', 'Neuroanatomy'],
+  Pathology: ['General Pathology', 'Systemic Pathology', 'Clinical Pathology', 'Hematology'],
+  Microbiology: ['Medical Microbiology', 'Immunology', 'Virology', 'Mycology', 'Parasitology', 'Bacteriology'],
+  'Clinical Medicine': ['Internal Medicine', 'Surgery', 'Pediatrics', 'Obstetrics & Gynecology', 'Psychiatry', 'Dermatology', 'Ophthalmology', 'ENT'],
+  Diagnostics: ['Clinical Chemistry', 'Medical Imaging', 'Laboratory Medicine'],
+  'Public Health': ['Epidemiology', 'Biostatistics', 'Health Promotion', 'Environmental Health', 'Health Policy'],
+  Research: ['Research Methodology', 'Biostatistics', 'Evidence-Based Medicine', 'Literature Review'],
+  Nursing: ['Medical-Surgical Nursing', 'Community Health Nursing', 'Mental Health Nursing', 'Midwifery'],
+  Dentistry: ['Oral Medicine', 'Oral Surgery', 'Periodontics', 'Orthodontics'],
+  Nutrition: ['Clinical Nutrition', 'Dietetics', 'Food Science', 'Micronutrients'],
+};
 
 // ============================================================
 // Types

@@ -20,6 +20,7 @@ import {
 } from './src/server/aiRouter.js';
 import { getPrompts, updatePrompt, resetPrompts } from './src/server/promptRegistry.js';
 import { fetchOpenFdaLabel, resolveRxCui, fetchRxNormInteractions } from './src/server/externalMedicinesApi.js';
+import { searchLibrary, getLibraryDisciplines, ALL_LIBRARY_RESOURCES, OPEN_EDUCATIONAL_RESOURCES, type LibraryResource } from './src/data/onlineLibraryData.js';
 
 // Load environment variables
 dotenv.config();
@@ -151,8 +152,110 @@ app.post('/api/upload/chunk', upload.single('chunk'), async (req, res) => {
         } catch (err) {
           writeStream.destroy();
           reject(err);
-        }
-      });
+  }
+});
+
+// ================================================================
+// ONLINE MEDICAL & PHARMACY LIBRARY API
+// Curated directory of textbooks, references, and OERs
+// ================================================================
+
+// GET Browse library by discipline
+app.get('/api/library/disciplines', (_req, res) => {
+  res.json({ success: true, disciplines: getLibraryDisciplines() });
+});
+
+// GET Search/browse library resources
+app.get('/api/library/search', (req, res) => {
+  try {
+    const query = (req.query.q as string) || '';
+    const filters: any = {};
+    if (req.query.discipline) filters.discipline = req.query.discipline as string;
+    if (req.query.type) filters.type = req.query.type as LibraryResource['type'];
+    if (req.query.isFree) filters.isFree = req.query.isFree === 'true';
+    if (req.query.level) filters.level = req.query.level as string;
+
+    const results = searchLibrary(query, filters);
+    res.json({ success: true, results, total: results.length });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Search failed' });
+  }
+});
+
+// GET Single library resource by ID
+app.get('/api/library/resource/:id', (req, res) => {
+  const resource = ALL_LIBRARY_RESOURCES.find(r => r.id === req.params.id);
+  if (!resource) return res.status(404).json({ error: 'Resource not found' });
+  res.json({ success: true, resource });
+});
+
+// GET Open Educational Resources
+app.get('/api/library/oer', (_req, res) => {
+  res.json({
+    success: true,
+    resources: OPEN_EDUCATIONAL_RESOURCES,
+    total: OPEN_EDUCATIONAL_RESOURCES.length,
+  });
+});
+
+// GET Resources by discipline
+app.get('/api/library/discipline/:discipline', (req, res) => {
+  const resources = ALL_LIBRARY_RESOURCES.filter(
+    r => r.discipline.toLowerCase() === req.params.discipline.toLowerCase()
+  );
+  res.json({ success: true, resources, total: resources.length });
+});
+
+// GET Kenya-relevant resources
+app.get('/api/library/kenya', (_req, res) => {
+  const resources = ALL_LIBRARY_RESOURCES.filter(r => r.isKenyaRelevant);
+  res.json({ success: true, resources, total: resources.length });
+});
+
+// GET WHO publications
+app.get('/api/library/who', (_req, res) => {
+  const resources = ALL_LIBRARY_RESOURCES.filter(r => r.discipline === 'WHO Publications');
+  res.json({ success: true, resources, total: resources.length });
+});
+
+// POST Get AI-recommended resources for a topic
+app.post('/api/library/recommend', async (req, res) => {
+  try {
+    const { topic, subject, query } = req.body;
+    if (!topic && !query) return res.status(400).json({ error: 'Topic or query is required' });
+
+    const searchQuery = query || topic;
+    const results = searchLibrary(searchQuery, {});
+    
+    // Filter to most relevant
+    const recommended = results.slice(0, 8);
+    
+    // Try to use AI to provide personalized recommendations
+    let aiRecommendation: string | null = null;
+    try {
+      const aiPrompt = `You are Clinova's Library Recommendation Assistant. Based on the user studying "${topic || query}" in the subject "${subject || 'General'}", recommend specific textbooks or resources. 
+      
+Available resources that match:
+${recommended.map((r: LibraryResource) => `- ${r.title} by ${r.authors} (${r.discipline}) - ${r.isFree ? 'FREE' : r.publisher}`).join('\n')}
+
+Provide a concise (2-3 sentence) recommendation on which resource to start with and why. Focus on free/OER resources where applicable.`;
+
+      const aiResponse = await generateContentWithFallback(
+        { contents: aiPrompt },
+        undefined,
+        'Library Recommendation'
+      );
+      aiRecommendation = aiResponse.text;
+    } catch {
+      // AI recommendation is optional
+    }
+
+    res.json({ success: true, recommended, aiRecommendation, total: recommended.length });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Recommendation failed' });
+  }
+});
+
 
       // Clear chunk files and remove the temporary folder
       for (let i = 0; i < totalChks; i++) {

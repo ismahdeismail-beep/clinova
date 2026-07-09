@@ -49,10 +49,10 @@ function getFileId(): string {
 
 function computeHash(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
-    // For files > 10MB, just create a pseudo-hash to prevent UI thread freezing
+    // For files > 1MB, just create a pseudo-hash to prevent UI thread freezing
     // and massive memory allocation.
-    if (file.size > 10 * 1024 * 1024) {
-      resolve(`large-file-${file.size}-${file.lastModified}-${file.name.length}`);
+    if (file.size > 1 * 1024 * 1024) {
+      resolve(`file-${file.size}-${file.lastModified}-${file.name.replace(/[^a-zA-Z0-9]/g, '')}`);
       return;
     }
 

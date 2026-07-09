@@ -1145,9 +1145,10 @@ export default function ClinicalAssistantScreen() {
         <div 
           ref={chatContainerRef}
           onScroll={handleScroll}
-          className="flex-1 overflow-y-auto p-4 md:p-6 space-y-6 scrollbar-thin scroll-smooth"
+          className="flex-1 overflow-y-auto p-4 md:p-6 scrollbar-thin scroll-smooth"
         >
-          {/* Welcome State / Initial Empty State */}
+          <div className="max-w-3xl mx-auto w-full flex flex-col gap-6">
+            {/* Welcome State / Initial Empty State */}
           {messages.length === 0 && (
             <div className="max-w-3xl mx-auto py-8 sm:py-12 px-2">
               <motion.div 
@@ -1388,6 +1389,7 @@ export default function ClinicalAssistantScreen() {
             </div>
           )}
           
+          </div>
         </div>
 
         {/* Floating Scroll Bottom Button */}
@@ -1410,6 +1412,7 @@ export default function ClinicalAssistantScreen() {
         
         {/* Floating Interactive Input Composer Area */}
         <div className="p-4 border-t border-[var(--border)]/80 bg-[var(--surface)] shrink-0 z-10 shadow-xl">
+          <div className="max-w-3xl mx-auto w-full">
           
           {/* Active Databases Config Dropdown Panel */}
           <div className="mb-3 relative">
@@ -1687,6 +1690,7 @@ export default function ClinicalAssistantScreen() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

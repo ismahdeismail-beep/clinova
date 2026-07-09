@@ -134,16 +134,25 @@ app.post('/api/upload/chunk', upload.single('chunk'), async (req, res) => {
 
       const writeStream = fs.createWriteStream(finalPath);
 
-      for (let i = 0; i < totalChks; i++) {
-        const currentChunkPath = path.join(tmpDir, `chunk_${i}`);
-        if (!fs.existsSync(currentChunkPath)) {
-          throw new Error(`Missing chunk index: ${i}`);
-        }
-        const chunkData = fs.readFileSync(currentChunkPath);
-        writeStream.write(chunkData);
-      }
+      await new Promise<void>((resolve, reject) => {
+        writeStream.on('finish', resolve);
+        writeStream.on('error', reject);
 
-      writeStream.end();
+        try {
+          for (let i = 0; i < totalChks; i++) {
+            const currentChunkPath = path.join(tmpDir, `chunk_${i}`);
+            if (!fs.existsSync(currentChunkPath)) {
+              throw new Error(`Missing chunk index: ${i}`);
+            }
+            const chunkData = fs.readFileSync(currentChunkPath);
+            writeStream.write(chunkData);
+          }
+          writeStream.end();
+        } catch (err) {
+          writeStream.destroy();
+          reject(err);
+        }
+      });
 
       // Clear chunk files and remove the temporary folder
       for (let i = 0; i < totalChks; i++) {

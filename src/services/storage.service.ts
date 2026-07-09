@@ -47,12 +47,30 @@ function getFileId(): string {
   return doc(collection(db, FILES_COLLECTION)).id;
 }
 
+const withTimeout = <T>(promise: Promise<T>, timeoutMs = 2500): Promise<T> => {
+  return new Promise<T>((resolve, reject) => {
+    const timer = setTimeout(() => {
+      reject(new Error('Firebase operation timed out'));
+    }, timeoutMs);
+    promise.then(
+      (res) => {
+        clearTimeout(timer);
+        resolve(res);
+      },
+      (err) => {
+        clearTimeout(timer);
+        reject(err);
+      }
+    );
+  });
+};
+
 function computeHash(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
-    // For files > 10MB, just create a pseudo-hash to prevent UI thread freezing
+    // For files > 1MB, just create a pseudo-hash to prevent UI thread freezing
     // and massive memory allocation.
-    if (file.size > 10 * 1024 * 1024) {
-      resolve(`large-file-${file.size}-${file.lastModified}-${file.name.length}`);
+    if (file.size > 1 * 1024 * 1024) {
+      resolve(`file-${file.size}-${file.lastModified}-${file.name.replace(/[^a-zA-Z0-9]/g, '')}`);
       return;
     }
 
@@ -124,7 +142,7 @@ export const StorageService = {
       };
 
       try {
-        await setDoc(doc(db, FILES_COLLECTION, fileId), storedFile);
+        await withTimeout(setDoc(doc(db, FILES_COLLECTION, fileId), storedFile), 2500);
       } catch (fsError) {
         console.warn('[StorageService] Firestore registry failed for chunked file, continuing with in-memory fallback:', fsError);
       }
@@ -196,7 +214,7 @@ export const StorageService = {
     }
 
     try {
-      await setDoc(doc(db, FILES_COLLECTION, fileId), storedFile);
+      await withTimeout(setDoc(doc(db, FILES_COLLECTION, fileId), storedFile), 2500);
     } catch (fsError) {
       console.warn('Fallback: Firestore write failed, saving in-memory.', fsError);
     }
@@ -208,7 +226,7 @@ export const StorageService = {
 
   async getFile(fileId: string): Promise<StoredFile | null> {
     try {
-      const snap = await getDoc(doc(db, FILES_COLLECTION, fileId));
+      const snap = await withTimeout(getDoc(doc(db, FILES_COLLECTION, fileId)), 2500);
       if (snap.exists()) {
         return { id: snap.id, ...snap.data() } as StoredFile;
       }
@@ -297,7 +315,7 @@ export const StorageService = {
     }
 
     try {
-      await deleteDoc(doc(db, FILES_COLLECTION, fileId));
+      await withTimeout(deleteDoc(doc(db, FILES_COLLECTION, fileId)), 2500);
     } catch (fsErr) {
       console.warn('Firestore doc deletion failed', fsErr);
     }
@@ -311,7 +329,7 @@ export const StorageService = {
         orderBy('createdAt', 'desc'),
         limit(max),
       );
-      const snap = await getDocs(q);
+      const snap = await withTimeout(getDocs(q), 2500);
       const dbFiles = snap.docs.map((d) => ({ id: d.id, ...d.data() } as StoredFile));
       
       // Merge with unsaved in-memory files of this category
@@ -357,7 +375,7 @@ export const StorageService = {
         orderBy('createdAt', 'desc'),
         limit(max),
       );
-      const snap = await getDocs(q);
+      const snap = await withTimeout(getDocs(q), 2500);
       const dbFiles = snap.docs.map((d) => ({ id: d.id, ...d.data() } as StoredFile));
       
       const uniqueFiles = [...dbFiles];
@@ -402,7 +420,7 @@ export const StorageService = {
         orderBy('createdAt', 'desc'),
         limit(max),
       );
-      const snap = await getDocs(q);
+      const snap = await withTimeout(getDocs(q), 2500);
       const dbFiles = snap.docs.map((d) => ({ id: d.id, ...d.data() } as StoredFile));
       
       const uniqueFiles = [...dbFiles];
@@ -446,7 +464,7 @@ export const StorageService = {
         orderBy('createdAt', 'desc'),
         limit(max),
       );
-      const snap = await getDocs(q);
+      const snap = await withTimeout(getDocs(q), 2500);
       const dbFiles = snap.docs.map((d) => ({ id: d.id, ...d.data() } as StoredFile));
       
       const uniqueFiles = [...dbFiles];
@@ -485,16 +503,32 @@ export const StorageService = {
 
   async updateFileAccess(fileId: string, accessibleTo: string[]): Promise<void> {
     try {
-      await updateDoc(doc(db, FILES_COLLECTION, fileId), {
+      await withTimeout(updateDoc(doc(db, FILES_COLLECTION, fileId), {
         accessibleTo,
         updatedAt: Date.now(),
-      });
+      }), 2500);
     } catch (e) {
       console.warn('Firestore updateFileAccess failed', e);
     }
     const found = IN_MEMORY_FILES.find((f) => f.id === fileId);
     if (found) {
       found.accessibleTo = accessibleTo;
+      found.updatedAt = Date.now();
+    }
+  },
+
+  async updateFileMetadata(fileId: string, meta: { author?: string; discipline?: string; type?: string }): Promise<void> {
+    try {
+      await withTimeout(updateDoc(doc(db, FILES_COLLECTION, fileId), {
+        ...meta,
+        updatedAt: Date.now(),
+      }), 2500);
+    } catch (e) {
+      console.warn('Firestore updateFileMetadata failed', e);
+    }
+    const found = IN_MEMORY_FILES.find((f) => f.id === fileId);
+    if (found) {
+      Object.assign(found, meta);
       found.updatedAt = Date.now();
     }
   },

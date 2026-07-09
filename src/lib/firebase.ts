@@ -38,7 +38,7 @@ try {
       tabManager: persistentMultipleTabManager()
     }),
     experimentalAutoDetectLongPolling: true
-  }, config.firestoreDatabaseId || '(default)');
+  }, jsonConfig.firestoreDatabaseId || '(default)');
 } catch (e) {
   console.warn("Firestore advanced initialization failed (likely due to iframe sandboxing or disabled third-party cookies). Falling back to basic Firestore:", e);
   try {

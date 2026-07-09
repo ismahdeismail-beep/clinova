@@ -156,7 +156,7 @@ function AssistantMessageBubble({
 
   return (
     <div 
-      className="text-sm leading-relaxed max-w-none break-words min-h-[3rem] text-[var(--text)]"
+      className="text-sm sm:text-base leading-relaxed max-w-full overflow-x-auto scrollbar-thin break-words min-h-[3rem] text-[var(--text)]"
     >
       {renderMarkdown(content)}
     </div>
@@ -1145,9 +1145,10 @@ export default function ClinicalAssistantScreen() {
         <div 
           ref={chatContainerRef}
           onScroll={handleScroll}
-          className="flex-1 overflow-y-auto p-4 md:p-6 space-y-6 scrollbar-thin scroll-smooth"
+          className="flex-1 overflow-y-auto p-4 md:p-6 scrollbar-thin scroll-smooth"
         >
-          {/* Welcome State / Initial Empty State */}
+          <div className="max-w-3xl mx-auto w-full flex flex-col gap-6">
+            {/* Welcome State / Initial Empty State */}
           {messages.length === 0 && (
             <div className="max-w-3xl mx-auto py-8 sm:py-12 px-2">
               <motion.div 
@@ -1250,7 +1251,7 @@ export default function ClinicalAssistantScreen() {
                 )}
                 
                 {/* Bubble Container - 80% limit for Assistant, 75% limit for User */}
-                <div className={`flex flex-col gap-2 ${isUser ? 'max-w-[75%]' : 'max-w-[80%]'}`}>
+                <div className={`flex flex-col gap-2 ${isUser ? 'max-w-[75%]' : 'max-w-[80%]'} w-full overflow-hidden`}>
                   
                   {/* Real-time RAG Steps Tracker */}
                   {msg.isThinking && (
@@ -1277,7 +1278,7 @@ export default function ClinicalAssistantScreen() {
                   {/* Bubble Content */}
                   {!msg.isThinking && (
                     <div className="flex items-start gap-2.5 max-w-full group/bubble">
-                      <div className={`rounded-3xl px-5 py-4 shadow-sm text-base leading-relaxed ${
+                      <div className={`rounded-3xl px-5 py-4 shadow-sm text-base leading-relaxed max-w-full overflow-x-auto scrollbar-thin ${
                         isUser 
                           ? 'bg-[var(--primary)] text-[var(--primary-foreground)] rounded-tr-none shadow-md font-medium' 
                           : 'bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] rounded-tl-none shadow-xs'
@@ -1388,6 +1389,7 @@ export default function ClinicalAssistantScreen() {
             </div>
           )}
           
+          </div>
         </div>
 
         {/* Floating Scroll Bottom Button */}
@@ -1410,6 +1412,7 @@ export default function ClinicalAssistantScreen() {
         
         {/* Floating Interactive Input Composer Area */}
         <div className="p-4 border-t border-[var(--border)]/80 bg-[var(--surface)] shrink-0 z-10 shadow-xl">
+          <div className="max-w-3xl mx-auto w-full">
           
           {/* Active Databases Config Dropdown Panel */}
           <div className="mb-3 relative">
@@ -1687,6 +1690,7 @@ export default function ClinicalAssistantScreen() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

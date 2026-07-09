@@ -1,4 +1,4 @@
-import { processAcademicRequest } from "./src/server/academicEngine.js";
+﻿import { processAcademicRequest } from "./src/server/academicEngine.js";
 import express from 'express';
 import path from 'path';
 import fs from 'fs';
@@ -134,16 +134,25 @@ app.post('/api/upload/chunk', upload.single('chunk'), async (req, res) => {
 
       const writeStream = fs.createWriteStream(finalPath);
 
-      for (let i = 0; i < totalChks; i++) {
-        const currentChunkPath = path.join(tmpDir, `chunk_${i}`);
-        if (!fs.existsSync(currentChunkPath)) {
-          throw new Error(`Missing chunk index: ${i}`);
-        }
-        const chunkData = fs.readFileSync(currentChunkPath);
-        writeStream.write(chunkData);
-      }
+      await new Promise<void>((resolve, reject) => {
+        writeStream.on('finish', resolve);
+        writeStream.on('error', reject);
 
-      writeStream.end();
+        try {
+          for (let i = 0; i < totalChks; i++) {
+            const currentChunkPath = path.join(tmpDir, `chunk_${i}`);
+            if (!fs.existsSync(currentChunkPath)) {
+              throw new Error(`Missing chunk index: ${i}`);
+            }
+            const chunkData = fs.readFileSync(currentChunkPath);
+            writeStream.write(chunkData);
+          }
+          writeStream.end();
+        } catch (err) {
+          writeStream.destroy();
+          reject(err);
+        }
+      });
 
       // Clear chunk files and remove the temporary folder
       for (let i = 0; i < totalChks; i++) {
@@ -234,7 +243,7 @@ Return a JSON object with:
 CRITICAL CONSTRAINTS:
 1. Patient Anonymity: Extract the patient's name but render it strictly as UPPERCASE INITIALS only (e.g., "Joseph Kimuge Chepyegon" -> "J. K. C.") in the "patientName" field. Never output full names. Ensure relative or next-of-kin names are also converted to initials if mentioned.
 2. Chief Complaint formatting: Must be stated strictly as "[duration] history of [symptom]" in order of clinical priority/urgency, NOT as a diagnosis (e.g., write "3-day history of a painful, swollen left leg", NOT "Deep Venous Thrombosis").
-3. Systems & Vitals/Labs: Extract actual recorded numbers/findings. If a test is ordered but has no result, write "Pending — ordered [date], results awaited". If a system is not mentioned or examined, leave it blank or write "Not documented".
+3. Systems & Vitals/Labs: Extract actual recorded numbers/findings. If a test is ordered but has no result, write "Pending â€” ordered [date], results awaited". If a system is not mentioned or examined, leave it blank or write "Not documented".
 4. Medication History (pre-admission): List drugs taken prior to admission in "currentMedications".
 5. Working Diagnoses (diagnosis): Number and list actual problems/diagnoses in clinical priority order.
 6. Current Pharmacological Management: Extract up to 5 pharmacological treatments. Include continued pre-admission drugs and newly started inpatient drugs.
@@ -586,7 +595,7 @@ Musculoskeletal: ${systems['Musculoskeletal System'] || 'N/A'}
 Skin/Integumentary: ${systems['Skin & Integumentary System'] || 'N/A'}
 
 === VITALS & LABS ===
-Vitals: HR: ${vitalsLabs.hr || 'N/A'} bpm, BP: ${vitalsLabs.bp || 'N/A'} mmHg, Temp: ${vitalsLabs.temp || 'N/A'} °C, PO2: ${vitalsLabs.po2 || 'N/A'} %, RR: ${vitalsLabs.rr || 'N/A'} bpm, BMI: ${vitalsLabs.bmi || 'N/A'}
+Vitals: HR: ${vitalsLabs.hr || 'N/A'} bpm, BP: ${vitalsLabs.bp || 'N/A'} mmHg, Temp: ${vitalsLabs.temp || 'N/A'} Â°C, PO2: ${vitalsLabs.po2 || 'N/A'} %, RR: ${vitalsLabs.rr || 'N/A'} bpm, BMI: ${vitalsLabs.bmi || 'N/A'}
 Labs Electrolytes: Na+: ${vitalsLabs.na || 'N/A'}, K+: ${vitalsLabs.k || 'N/A'}, Cl-: ${vitalsLabs.cl || 'N/A'}, Urea: ${vitalsLabs.urea || 'N/A'}, Creatinine: ${vitalsLabs.creat || 'N/A'}, CrCl: ${vitalsLabs.crcl || 'N/A'}
 Labs LFTs: AST: ${vitalsLabs.ast || 'N/A'}, ALT: ${vitalsLabs.alt || 'N/A'}, ALP: ${vitalsLabs.alp || 'N/A'}, T. Bili: ${vitalsLabs.t_bili || 'N/A'}, D. Bili: ${vitalsLabs.d_bili || 'N/A'}, Albumin: ${vitalsLabs.albumin || 'N/A'}
 Labs Hematology: WBC: ${vitalsLabs.wbc || 'N/A'}, Neutrophils: ${vitalsLabs.neut || 'N/A'}, Lymphocytes: ${vitalsLabs.lymph || 'N/A'}, Hb: ${vitalsLabs.hb || 'N/A'}, Platelets: ${vitalsLabs.plts || 'N/A'}
@@ -1193,7 +1202,7 @@ Sex: ${patientContext.sex || 'Unknown'}
 Ward/Location: ${patientContext.ward || 'General ward'}
 
 === VITALS ===
-BP: ${vitals.bp || 'N/A'} mmHg, HR: ${vitals.hr || 'N/A'} bpm, Temp: ${vitals.temp || 'N/A'} °C, SpO2: ${vitals.spo2 || 'N/A'}%, RR: ${vitals.rr || 'N/A'} bpm
+BP: ${vitals.bp || 'N/A'} mmHg, HR: ${vitals.hr || 'N/A'} bpm, Temp: ${vitals.temp || 'N/A'} Â°C, SpO2: ${vitals.spo2 || 'N/A'}%, RR: ${vitals.rr || 'N/A'} bpm
 
 === CLINICAL ALERTS & FLAGGED CONDITIONS ===
 ${alerts.length > 0 ? alerts.map((a: any) => `- [${a.type.toUpperCase()}] ${a.message}`).join('\n') : '- No active security flags or alerts registered in chart.'}
@@ -1249,7 +1258,7 @@ Ensure your guidance is highly clinical, accurate, aligned with the Kenya Drug I
             },
             patientSafetyFlags: {
               type: Type.ARRAY,
-              description: 'Alerts detailing conflicts between the drugs and the patient’s clinical state (demographics, vitals, alerts, labs).',
+              description: 'Alerts detailing conflicts between the drugs and the patientâ€™s clinical state (demographics, vitals, alerts, labs).',
               items: {
                 type: Type.OBJECT,
                 properties: {
@@ -1826,142 +1835,7 @@ Provide:
   }
 });
 
-app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Clinova core backend running on port ${PORT}`);  });
-}
 
-// Only start the server if not running in a serverless environment like Vercel
-if (process.env.VERCEL !== '1') {
-  startServer();
-}
-
-export default app;
-
-// GET AI Providers Status and configurations
-app.get('/api/admin/providers', (req, res) => {
-  res.json({
-    providers: getProviderStatusList(),
-    loadBalancingMode: loadBalancingMode,
-    globalProviderOverride: getGlobalProviderOverride()
-  });
-});
-
-// POST Update a specific provider's metadata/status
-app.post('/api/admin/providers/update', (req, res) => {
-  const { providerName, priority, weight, status, apiKeyMasked } = req.body;
-  if (!providerName || !providerStatuses[providerName]) {
-    return res.status(400).json({ error: 'Invalid provider name' });
-  }
-  
-  updateProviderConfig(providerName, { priority, weight, status, apiKeyMasked });
-  res.json({ success: true, provider: providerStatuses[providerName] });
-});
-
-// POST Toggle Provider Health (Outage Simulation)
-app.post('/api/admin/providers/toggle-healthy', (req, res) => {
-  const { providerName } = req.body;
-  if (!providerName || !providerStatuses[providerName]) {
-    return res.status(400).json({ error: 'Invalid provider name' });
-  }
-  
-  const provider = providerStatuses[providerName];
-  provider.isHealthy = !provider.isHealthy;
-  
-  if (!provider.isHealthy) {
-    provider.errorRate = 100;
-  } else {
-    provider.errorRate = Math.round((provider.errorCount / Math.max(1, provider.requestCount)) * 100);
-  }
-  
-  res.json({
-    success: true,
-    providerName,
-    isHealthy: provider.isHealthy,
-    errorRate: provider.errorRate
-  });
-});
-
-// GET Global Router Configuration
-app.get('/api/admin/config', (req, res) => {
-  res.json({
-    globalProviderOverride: getGlobalProviderOverride(),
-    loadBalancingMode: loadBalancingMode
-  });
-});
-
-// POST Global Router Configuration
-app.post('/api/admin/config', (req, res) => {
-  const { globalProviderOverride, loadBalancingMode: newMode } = req.body;
-  
-  if (globalProviderOverride !== undefined) {
-    setGlobalProviderOverride(globalProviderOverride);
-  }
-  if (newMode !== undefined) {
-    setLoadBalancingMode(newMode);
-  }
-  
-  res.json({
-    success: true,
-    globalProviderOverride: getGlobalProviderOverride(),
-    loadBalancingMode: loadBalancingMode
-  });
-});
-
-// GET Gateway logs
-app.get('/api/admin/ai/logs', (req, res) => {
-  res.json(gatewayLogs);
-});
-
-// GET Current prompt templates
-app.get('/api/admin/ai/prompts', (req, res) => {
-  res.json(getPrompts());
-});
-
-// POST Update a prompt template
-app.post('/api/admin/ai/prompts/update', (req, res) => {
-  const { id, template } = req.body;
-  if (!id || template === undefined) {
-    return res.status(400).json({ error: 'Missing id or template' });
-  }
-  
-  const updated = updatePrompt(id, template);
-  res.json({ success: updated });
-});
-
-// POST Reset prompt templates
-app.post('/api/admin/ai/prompts/reset', (req, res) => {
-  resetPrompts();
-  res.json({ success: true, prompts: getPrompts() });
-});
-
-// POST Live Test Endpoint through the AI Gateway
-app.post('/api/admin/ai/gateway/test', async (req, res) => {
-  const { prompt, provider, feature } = req.body;
-  if (!prompt) {
-    return res.status(400).json({ error: 'Prompt is required' });
-  }
-
-  try {
-    const response = await generateContentWithFallback(
-      { contents: prompt },
-      provider || undefined,
-      feature || 'Admin Live Test'
-    );
-    res.json({
-      success: true,
-      text: response.text,
-      logs: gatewayLogs.slice(0, 5) // Return recent logs to show fallback details
-    });
-  } catch (error: any) {
-    res.status(500).json({ error: error.message || 'Execution failed' });
-  }
-});
-
-// ================================================================
-// KNOWLEDGE BASE API
-// ================================================================
-
-// POST Ingest a new resource into the knowledge base
 app.post('/api/knowledge-base/ingest', async (req, res) => {
   try {
     const { title, description, authors, year, publisher, isbn, doi, language, tags, source, mimeType, fileSize, contentSample, contentHash, generateSummary, generateFlashcards, generateMCQs } = req.body;
@@ -2230,5 +2104,139 @@ app.post('/api/knowledge-base/classify', async (req, res) => {
     res.status(500).json({ error: error.message || 'Classification failed' });
   }
 });
+
+
+
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Clinova core backend running on port ${PORT}`);  });
+}
+
+// Only start the server if not running in a serverless environment like Vercel
+if (process.env.VERCEL !== '1') {
+  startServer();
+}
+
+export default app;
+
+// GET AI Providers Status and configurations
+app.get('/api/admin/providers', (req, res) => {
+  res.json({
+    providers: getProviderStatusList(),
+    loadBalancingMode: loadBalancingMode,
+    globalProviderOverride: getGlobalProviderOverride()
+  });
+});
+
+// POST Update a specific provider's metadata/status
+app.post('/api/admin/providers/update', (req, res) => {
+  const { providerName, priority, weight, status, apiKeyMasked } = req.body;
+  if (!providerName || !providerStatuses[providerName]) {
+    return res.status(400).json({ error: 'Invalid provider name' });
+  }
+  
+  updateProviderConfig(providerName, { priority, weight, status, apiKeyMasked });
+  res.json({ success: true, provider: providerStatuses[providerName] });
+});
+
+// POST Toggle Provider Health (Outage Simulation)
+app.post('/api/admin/providers/toggle-healthy', (req, res) => {
+  const { providerName } = req.body;
+  if (!providerName || !providerStatuses[providerName]) {
+    return res.status(400).json({ error: 'Invalid provider name' });
+  }
+  
+  const provider = providerStatuses[providerName];
+  provider.isHealthy = !provider.isHealthy;
+  
+  if (!provider.isHealthy) {
+    provider.errorRate = 100;
+  } else {
+    provider.errorRate = Math.round((provider.errorCount / Math.max(1, provider.requestCount)) * 100);
+  }
+  
+  res.json({
+    success: true,
+    providerName,
+    isHealthy: provider.isHealthy,
+    errorRate: provider.errorRate
+  });
+});
+
+// GET Global Router Configuration
+app.get('/api/admin/config', (req, res) => {
+  res.json({
+    globalProviderOverride: getGlobalProviderOverride(),
+    loadBalancingMode: loadBalancingMode
+  });
+});
+
+// POST Global Router Configuration
+app.post('/api/admin/config', (req, res) => {
+  const { globalProviderOverride, loadBalancingMode: newMode } = req.body;
+  
+  if (globalProviderOverride !== undefined) {
+    setGlobalProviderOverride(globalProviderOverride);
+  }
+  if (newMode !== undefined) {
+    setLoadBalancingMode(newMode);
+  }
+  
+  res.json({
+    success: true,
+    globalProviderOverride: getGlobalProviderOverride(),
+    loadBalancingMode: loadBalancingMode
+  });
+});
+
+// GET Gateway logs
+app.get('/api/admin/ai/logs', (req, res) => {
+  res.json(gatewayLogs);
+});
+
+// GET Current prompt templates
+app.get('/api/admin/ai/prompts', (req, res) => {
+  res.json(getPrompts());
+});
+
+// POST Update a prompt template
+app.post('/api/admin/ai/prompts/update', (req, res) => {
+  const { id, template } = req.body;
+  if (!id || template === undefined) {
+    return res.status(400).json({ error: 'Missing id or template' });
+  }
+  
+  const updated = updatePrompt(id, template);
+  res.json({ success: updated });
+});
+
+// POST Reset prompt templates
+app.post('/api/admin/ai/prompts/reset', (req, res) => {
+  resetPrompts();
+  res.json({ success: true, prompts: getPrompts() });
+});
+
+// POST Live Test Endpoint through the AI Gateway
+app.post('/api/admin/ai/gateway/test', async (req, res) => {
+  const { prompt, provider, feature } = req.body;
+  if (!prompt) {
+    return res.status(400).json({ error: 'Prompt is required' });
+  }
+
+  try {
+    const response = await generateContentWithFallback(
+      { contents: prompt },
+      provider || undefined,
+      feature || 'Admin Live Test'
+    );
+    res.json({
+      success: true,
+      text: response.text,
+      logs: gatewayLogs.slice(0, 5) // Return recent logs to show fallback details
+    });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message || 'Execution failed' });
+  }
+});
+
 
 

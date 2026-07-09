@@ -43,6 +43,24 @@ const FLASHCARDS_COLLECTION = 'custom_flashcards';
 const QUIZZES_COLLECTION = 'custom_quizzes';
 const SUMMARIES_COLLECTION = 'custom_summaries';
 
+const withTimeout = <T>(promise: Promise<T>, timeoutMs = 2500): Promise<T> => {
+  return new Promise<T>((resolve, reject) => {
+    const timer = setTimeout(() => {
+      reject(new Error('Firebase operation timed out'));
+    }, timeoutMs);
+    promise.then(
+      (res) => {
+        clearTimeout(timer);
+        resolve(res);
+      },
+      (err) => {
+        clearTimeout(timer);
+        reject(err);
+      }
+    );
+  });
+};
+
 export const EducationService = {
   // --- CUSTOM UNITS & SUB-FOLDERS ---
   async getCustomUnits(userId: string, moduleId: string): Promise<CustomUnit[]> {
@@ -52,7 +70,7 @@ export const EducationService = {
         where('userId', '==', userId),
         where('moduleId', '==', moduleId)
       );
-      const snapshot = await getDocs(q);
+      const snapshot = await withTimeout(getDocs(q), 2500);
       const units: CustomUnit[] = [];
       snapshot.forEach((doc) => {
         units.push({ id: doc.id, ...doc.data() } as CustomUnit);
@@ -81,7 +99,7 @@ export const EducationService = {
     };
 
     try {
-      await setDoc(doc(db, CUSTOM_UNITS_COLLECTION, unitId), newUnit);
+      await withTimeout(setDoc(doc(db, CUSTOM_UNITS_COLLECTION, unitId), newUnit), 2500);
     } catch (err) {
       console.warn('[EducationService] Firestore save failed, using local storage backup:', err);
     }
@@ -97,7 +115,7 @@ export const EducationService = {
 
   async deleteCustomUnit(userId: string, moduleId: string, unitId: string): Promise<void> {
     try {
-      await deleteDoc(doc(db, CUSTOM_UNITS_COLLECTION, unitId));
+      await withTimeout(deleteDoc(doc(db, CUSTOM_UNITS_COLLECTION, unitId)), 2500);
     } catch (err) {
       console.warn('[EducationService] Firestore delete failed:', err);
     }
@@ -118,7 +136,7 @@ export const EducationService = {
         where('userId', '==', userId),
         where('unitId', '==', unitId)
       );
-      const snapshot = await getDocs(q);
+      const snapshot = await withTimeout(getDocs(q), 2500);
       const folders: SubFolder[] = [];
       snapshot.forEach((doc) => {
         folders.push({ id: doc.id, ...doc.data() } as SubFolder);
@@ -146,7 +164,7 @@ export const EducationService = {
     };
 
     try {
-      await setDoc(doc(db, 'custom_subfolders', folderId), newFolder);
+      await withTimeout(setDoc(doc(db, 'custom_subfolders', folderId), newFolder), 2500);
     } catch (err) {
       console.warn('[EducationService] Firestore save failed, using local backup:', err);
     }
@@ -162,7 +180,7 @@ export const EducationService = {
 
   async deleteSubFolder(userId: string, unitId: string, folderId: string): Promise<void> {
     try {
-      await deleteDoc(doc(db, 'custom_subfolders', folderId));
+      await withTimeout(deleteDoc(doc(db, 'custom_subfolders', folderId)), 2500);
     } catch (err) {
       console.warn('[EducationService] Firestore delete failed:', err);
     }

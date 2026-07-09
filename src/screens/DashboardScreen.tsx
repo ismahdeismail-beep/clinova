@@ -138,7 +138,7 @@ export default function DashboardScreen() {
 
   const searchResults = files.filter(f => 
     searchQuery.trim().length > 1 &&
-    ((f.category === 'knowledge' || f.category === 'knowledge_base') &&
+    ((f.category === 'knowledge' || (f.category as string) === 'knowledge_base') &&
     (
       (f.title && f.title.toLowerCase().includes(searchQuery.toLowerCase())) ||
       (f.originalName && f.originalName.toLowerCase().includes(searchQuery.toLowerCase())) ||

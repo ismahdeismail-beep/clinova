@@ -25,6 +25,10 @@ interface ResourceItem {
   status: string;
   isUserUploaded?: boolean;
   storagePath?: string;
+  textContent?: string;
+  summary?: string;
+  classification?: any;
+  aiProcessed?: boolean;
 }
 
 const SYSTEM_RESOURCES: ResourceItem[] = [
@@ -373,7 +377,11 @@ function ResourcesTab({ onUploadClick }: { onUploadClick: () => void }) {
         createdAt: file.createdAt,
         status: 'Indexed',
         isUserUploaded: true,
-        storagePath: file.storagePath
+        storagePath: file.storagePath,
+        textContent: file.textContent,
+        summary: file.summary,
+        classification: file.classification,
+        aiProcessed: file.aiProcessed
       };
     });
 
@@ -389,7 +397,7 @@ function ResourcesTab({ onUploadClick }: { onUploadClick: () => void }) {
       doc.discipline.toLowerCase().includes(searchTerm.toLowerCase()) ||
       (doc.textContent && doc.textContent.toLowerCase().includes(searchTerm.toLowerCase())) ||
       (doc.summary && doc.summary.toLowerCase().includes(searchTerm.toLowerCase())) ||
-      (doc.classification?.keywords && doc.classification.keywords.some(k => k.toLowerCase().includes(searchTerm.toLowerCase())));
+      (doc.classification?.keywords && doc.classification.keywords.some((k: any) => k.toLowerCase().includes(searchTerm.toLowerCase())));
 
     const matchesType = typeFilter === 'All Types' || doc.type === typeFilter;
     const matchesDiscipline = disciplineFilter === 'All Disciplines' || doc.discipline === disciplineFilter;
@@ -1078,7 +1086,7 @@ function UploadModal({ onClose }: { onClose: () => void }) {
       formData.append('file', selectedFile);
       formData.append('extractionType', 'educational_resource');
 
-      let aiMetadata = {};
+      let aiMetadata: any = {};
       try {
         const aiRes = await fetch('/api/gemini/extract-file', {
           method: 'POST',

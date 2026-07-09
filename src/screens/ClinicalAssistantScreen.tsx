@@ -12,6 +12,7 @@ import { jsPDF } from 'jspdf';
 import { ChatSessionList } from '../components/ChatSessionList';
 import { saveChatSession, ChatSession } from '../lib/localDb';
 import { StorageService } from '../services/storage.service';
+import { useFileStore } from '../store/fileStore';
 
 interface Citation {
   source: string;
@@ -205,7 +206,12 @@ function CopyButton({ text }: { text: string }) {
 }
 
 export default function ClinicalAssistantScreen() {
+  const { files, fetchFiles } = useFileStore();
   const [currentSessionId, setCurrentSessionId] = useState<string>('session-' + Date.now());
+
+  useEffect(() => {
+    fetchFiles();
+  }, [fetchFiles]);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
@@ -915,7 +921,7 @@ export default function ClinicalAssistantScreen() {
           const primaryFile = currentAttachments[0];
 
           // FIND RELEVANT KNOWLEDGE BASE RESOURCES
-          const kbFiles = files.filter(f => (f.category === 'knowledge' || f.category === 'knowledge_base') && f.aiProcessed);
+          const kbFiles = files.filter(f => (f.category === 'knowledge' || (f.category as string) === 'knowledge_base') && f.aiProcessed);
           
           let relevantKbContext = '';
           const keywords = userQuery.toLowerCase().split(/\s+/).filter(w => w.length > 3);

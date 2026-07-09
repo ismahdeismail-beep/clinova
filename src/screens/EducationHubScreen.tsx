@@ -5,12 +5,13 @@ import {
   Droplets, Flame, Beaker, HeartPulse, Bug, Skull, Heart, Award, FileText,
   Briefcase, HelpCircle, Layers, Headphones, FileArchive, Calendar, BrainCircuit,
   Bookmark, Download, History, ChevronLeft, Bot, Play, FileUp, List, Sparkles, CheckCircle2, Clock, Database, Mic,
-  FolderPlus, Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star
+  FolderPlus, Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star, ArrowUpRight
 } from 'lucide-react';
 import Markdown from 'react-markdown';
 import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
 import { MODULES, LearningModule, LearningUnit } from '../data/educationHubData';
+import { INITIAL_CASES } from '../data/clinicalCasesData';
 import FileUploader from '../components/FileUploader';
 import { useFileStore } from '../store/fileStore';
 import { useAuth } from '../contexts/AuthContext';
@@ -2299,6 +2300,7 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName }: 
     setIsAnswered(false);
     setScore(0);
     try {
+      const unitFiles = getRelevantFiles(files, currentFolderId, currentFolderName, unit.title);
       const savedSummary = await EducationService.getSummary(currentFolderId) || '';
       const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || '';
       const notesCombined = `${savedCustomNotes}\n\n${savedSummary}\n` + buildRichKnowledgeContext(unitFiles);

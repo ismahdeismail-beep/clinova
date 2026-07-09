@@ -135,6 +135,10 @@ export interface StoredFile {
   type?: string;
   tags?: string[];
   metadata?: Record<string, any>;
+  summary?: string;
+  textContent?: string;
+  classification?: any;
+  aiProcessed?: boolean;
 }
 
 export interface FileUploadOptions {

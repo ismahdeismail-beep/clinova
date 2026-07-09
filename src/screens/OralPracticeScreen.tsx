@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { 
   Mic, 
   MicOff, 
@@ -31,6 +32,7 @@ import {
 } from 'lucide-react';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { motion, AnimatePresence } from 'motion/react';
+import { useFileStore } from '../store/fileStore';
 
 // Interfaces
 interface SavedSession {
@@ -79,6 +81,10 @@ const CATEGORIES = [
 const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
 
 export default function OralPracticeScreen() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { files } = useFileStore();
+  
   // Navigation State
   const [currentView, setCurrentView] = useState<'dashboard' | 'setup' | 'active' | 'feedback'>('dashboard');
   
@@ -133,6 +139,20 @@ export default function OralPracticeScreen() {
   const recognitionRef = useRef<any>(null);
   const timerIntervalRef = useRef<NodeJS.Timeout | null>(null);
   const recordIntervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Handle preloaded state from other modules (e.g. Clinical Cases or Education Workspace)
+  useEffect(() => {
+    if (location.state) {
+      const { mode, category, specificItem, difficulty } = location.state;
+      if (mode) setSelectedMode(mode);
+      if (category) setSelectedCategory(category);
+      if (specificItem) setSpecificItem(specificItem);
+      if (difficulty) setSelectedDifficulty(difficulty);
+      
+      // Navigate to setup view so they can customize the timer or click "Start"
+      setCurrentView('setup');
+    }
+  }, [location.state]);
 
   // Load persistence data
   useEffect(() => {
@@ -346,7 +366,7 @@ export default function OralPracticeScreen() {
     try {
       
       // KNOWLEDGE BASE INTEGRATION
-      const kbFiles = files.filter(f => (f.category === 'knowledge' || f.category === 'knowledge_base') && f.aiProcessed);
+      const kbFiles = files.filter(f => (f.category === 'knowledge' || (f.category as string) === 'knowledge_base') && f.aiProcessed);
       let relevantKbContext = '';
       const topic = specificItem || selectedCategory;
       const keywords = topic.toLowerCase().split(/\s+/).filter(w => w.length > 3);
@@ -373,7 +393,7 @@ export default function OralPracticeScreen() {
           mode: selectedMode,
           category: selectedCategory,
           difficulty: selectedDifficulty,
-          specificItem: (selectedMode === 'drug' || selectedMode === 'disease') ? specificItem : undefined,
+          specificItem: (selectedMode === 'drug' || selectedMode === 'disease' || selectedMode === 'case') ? specificItem : undefined,
           kbContext: relevantKbContext || undefined,
           history: sessions.map(s => s.question)
         })

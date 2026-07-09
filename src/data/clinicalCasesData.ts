@@ -1,16 +1,11 @@
 export interface ClinicalCase {
   id: string;
-  /** Pharmacology subject (e.g., 'Cardiovascular Pharmacology', 'Autonomic Pharmacology') */
-  pharmacologySubject: string;
-  /** Specific unit within the subject */
-  unit?: string;
-  /** Learning objectives this case addresses */
-  learningObjectives?: string[];
-  /** Clinical specialty for backward compatibility */
   specialty: string;
   disease: string;
   title: string;
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced';
+  patientName: string;
+  facilitySetting: string;
   demographics: string;
   chiefComplaint: string;
   hpi: string;
@@ -33,60 +28,12 @@ export interface ClinicalCase {
   followUp: string;
   pearls: string;
   references: string[];
-  createdAt: any;
+  createdAt: string;
   status: 'published' | 'draft';
   createdBy: string;
   createdByName: string;
 }
 
-// ================================================================
-// Pharmacology Curriculum — Subject Area Definitions
-// Organizes all clinical cases by the pharmacology curriculum
-// ================================================================
-
-export const PHARMACOLOGY_SUBJECTS = [
-  'General Pharmacology',
-  'Autonomic Pharmacology',
-  'Cardiovascular Pharmacology',
-  'Respiratory Pharmacology',
-  'Gastrointestinal Pharmacology',
-  'Endocrine Pharmacology',
-  'Vitamins & Nutrition',
-  'Central Nervous System Pharmacology',
-  'Pain & Inflammation',
-  'Chemotherapy & Antimicrobial Pharmacology',
-  'Oncology',
-  'Hematology',
-  'Renal Pharmacology',
-  'Dermatology',
-  'Ophthalmology',
-  'Toxicology',
-  'Clinical Pharmacy'
-] as const;
-
-export type PharmacologySubject = typeof PHARMACOLOGY_SUBJECTS[number];
-
-export const DISEASES_BY_SUBJECT: Record<PharmacologySubject, string[]> = {
-  'General Pharmacology': ['Adverse Drug Reaction', 'Drug Overdose', 'Drug Poisoning', 'Medication Error', 'Polypharmacy', 'Drug Interaction', 'Dose Adjustment', 'Therapeutic Drug Monitoring', 'Medication Non-adherence', 'Special Population Dosing'],
-  'Autonomic Pharmacology': ['Hypertension', 'Asthma', 'COPD', 'Benign Prostatic Hyperplasia', 'Glaucoma', 'Anaphylaxis', 'Organophosphate Poisoning', 'Shock', 'Bradycardia', 'Tachyarrhythmias', 'Motion Sickness'],
-  'Cardiovascular Pharmacology': ['Hypertension', 'Heart Failure', 'Acute Coronary Syndrome', 'Stable Angina', 'Myocardial Infarction', 'Atrial Fibrillation', 'Deep Vein Thrombosis', 'Pulmonary Embolism', 'Hyperlipidaemia', 'Stroke Prevention', 'Cardiac Arrhythmias'],
-  'Respiratory Pharmacology': ['Asthma', 'COPD', 'Tuberculosis', 'Community Acquired Pneumonia', 'Hospital Acquired Pneumonia', 'Allergic Rhinitis', 'Pulmonary Embolism', 'Bronchiectasis', 'Acute Bronchitis', 'Chronic Cough'],
-  'Gastrointestinal Pharmacology': ['Peptic Ulcer Disease', 'GERD', 'Helicobacter pylori Infection', 'Liver Cirrhosis', 'Hepatitis', 'Pancreatitis', 'Constipation', 'Diarrhoea', 'Irritable Bowel Syndrome', 'Inflammatory Bowel Disease'],
-  'Endocrine Pharmacology': ['Type 1 Diabetes', 'Type 2 Diabetes', 'Diabetic Ketoacidosis', 'Hyperosmolar Hyperglycaemic State', 'Hypothyroidism', 'Hyperthyroidism', 'Osteoporosis', 'Adrenal Insufficiency', 'Cushing Syndrome', 'Menopause'],
-  'Vitamins & Nutrition': ['Iron Deficiency Anaemia', 'Vitamin A Deficiency', 'Vitamin D Deficiency', 'Vitamin B12 Deficiency', 'Folate Deficiency', 'Vitamin K Deficiency', 'Malnutrition', 'Rickets', 'Osteomalacia', 'Micronutrient Deficiencies'],
-  'Central Nervous System Pharmacology': ['Epilepsy', 'Parkinson Disease', 'Alzheimer Disease', 'Migraine', 'Depression', 'Anxiety Disorders', 'Bipolar Disorder', 'Schizophrenia', 'Neuropathic Pain', 'Insomnia'],
-  'Pain & Inflammation': ['Acute Pain', 'Chronic Pain', 'Rheumatoid Arthritis', 'Osteoarthritis', 'Gout', 'Fever', 'Inflammatory Disorders'],
-  'Chemotherapy & Antimicrobial Pharmacology': ['Malaria', 'HIV/AIDS', 'Tuberculosis', 'Community Acquired Pneumonia', 'Urinary Tract Infection', 'Meningitis', 'Sepsis', 'Gonorrhoea', 'Syphilis', 'Cellulitis', 'Typhoid Fever'],
-  'Oncology': ['Breast Cancer', 'Cervical Cancer', 'Prostate Cancer', 'Lung Cancer', 'Colorectal Cancer', 'Leukemia', 'Lymphoma', 'Chemotherapy Toxicity', 'Febrile Neutropenia'],
-  'Hematology': ['Iron Deficiency Anaemia', 'Sickle Cell Disease', 'Hemophilia', 'Leukemia', 'Aplastic Anaemia', 'Venous Thromboembolism', 'Disseminated Intravascular Coagulation'],
-  'Renal Pharmacology': ['Acute Kidney Injury', 'Chronic Kidney Disease', 'Hyperkalaemia', 'Hyponatraemia', 'Oedema', 'Resistant Hypertension', 'Nephrotic Syndrome'],
-  'Dermatology': ['Acne', 'Psoriasis', 'Eczema', 'Contact Dermatitis', 'Cellulitis', 'Scabies', 'Fungal Skin Infections', 'Urticaria'],
-  'Ophthalmology': ['Glaucoma', 'Conjunctivitis', 'Cataracts', 'Dry Eye Disease', 'Uveitis'],
-  'Toxicology': ['Organophosphate Poisoning', 'Paracetamol Overdose', 'Opioid Overdose', 'Snake Bite', 'Carbon Monoxide Poisoning', 'Alcohol Poisoning', 'Heavy Metal Poisoning'],
-  'Clinical Pharmacy': ['Medication Therapy Management', 'Medication Reconciliation', 'Pharmaceutical Care Plan', 'Therapeutic Drug Monitoring', 'Polypharmacy', 'Medication Review', 'Renal Dose Adjustment', 'Hepatic Dose Adjustment', 'Antimicrobial Stewardship', 'Pharmacovigilance', 'Drug Information', 'Medication Safety', 'Patient Counselling', 'Clinical Decision Making', 'Evidence-Based Medicine']
-};
-
-// Backward compatibility specialties mapping
 export const SPECIALTIES = [
   'Cardiovascular Disorders',
   'Respiratory Disorders',
@@ -120,18 +67,19 @@ export const DISEASES_BY_SPECIALTY: Record<string, string[]> = {
 export const INITIAL_CASES: ClinicalCase[] = [
   {
     id: 'case-1',
-    pharmacologySubject: 'Cardiovascular Pharmacology',
     specialty: 'Cardiovascular Disorders',
     disease: 'Heart Failure',
     title: 'Decompensated HFrEF with Digoxin Toxicity',
     difficulty: 'Advanced',
-    demographics: '82-year-old female, 58 kg',
+    patientName: 'James Mwangi',
+    facilitySetting: 'Kiambu County Referral Hospital (Level 5)',
+    demographics: '68-year-old male, 58 kg',
     chiefComplaint: 'Severe progressive fatigue, anorexia, nausea, and experiencing "yellow-green halos" around lights for the past 3 days.',
-    hpi: 'Patient has a history of HFrEF and atrial fibrillation. She was doing well until 3 days ago when she started having nausea and visual disturbances.',
+    hpi: 'James, a retired civil servant from Kiambu, has a history of HFrEF and atrial fibrillation. He was doing well until 3 days ago when he started having progressive nausea, anorexia, and strange yellow-green halos around the lights in his living room.',
     pmh: 'Heart Failure with reduced Ejection Fraction (HFrEF, EF 30%), Atrial Fibrillation, Hypertension, Chronic Kidney Disease Stage 4.',
     medHx: 'Digoxin 0.25 mg daily, Furosemide 40 mg daily, Lisinopril 10 mg daily.',
     allergies: 'NKDA',
-    pe: 'General: Fatigued, mildly confused. CV: Irregularly irregular rhythm. Lungs: Clear to auscultation. Ext: 1+ pitting edema.',
+    pe: 'General: Fatigued, mildly confused, pale. CV: Irregularly irregular rhythm. Lungs: Clear to auscultation. Ext: 1+ pitting ankle edema.',
     vitals: 'HR 46 bpm (irregular), BP 98/54 mmHg, RR 18 breaths/min, Temp 36.6°C.',
     labs: 'Serum Creatinine: 2.1 mg/dL (Baseline: 0.9 mg/dL). eGFR: 22 mL/min/1.73m2. Serum Potassium: 3.1 mEq/L (Normal: 3.5 - 5.0 mEq/L). Serum Digoxin Concentration: 3.4 ng/mL (Therapeutic: 0.5 - 0.9 ng/mL).',
     imaging: 'ECG: Atrial fibrillation with slow ventricular response (45 bpm), frequent PVCs, and scooping of the ST-segment ("digoxin effect").',
@@ -154,14 +102,15 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-2',
-    pharmacologySubject: 'Chemotherapy & Antimicrobial Pharmacology',
     specialty: 'Pediatrics',
     disease: 'Childhood Pneumonia',
-    title: 'Severe Childhood Pneumonia in a 14-Month-Old with Mild Dehydration',
+    title: 'Severe Childhood Pneumonia in Silas with Mild Dehydration',
     difficulty: 'Intermediate',
-    demographics: '14-month-old male, 10 kg',
+    patientName: 'Baby Silas Baraka',
+    facilitySetting: 'Nakuru County Referral Hospital (Level 5)',
+    demographics: '14-month-old male, 10 kg. Mother: Faith Wanjiku.',
     chiefComplaint: 'Rapid breathing, high fever, and poor feeding for 2 days.',
-    hpi: 'Presented with a 3-day history of dry cough and rhinorrhea that progressed to high fever, decreased activity, tachypnea, and chest indrawing. He is resisting drinking liquids and breast milk.',
+    hpi: 'Presented to the Nakuru pediatric wing with a 3-day history of dry cough and rhinorrhea that progressed to high fever, decreased activity, tachypnea, and visible chest indrawing. He is resisting drinking liquids and breast milk.',
     pmh: 'Unremarkable. Fully immunised according to KEPI (Kenya Expanded Programme on Immunization) standards including PCV-10.',
     medHx: 'Paracetamol syrup 120 mg/5ml given PRN by mother.',
     allergies: 'NKDA',
@@ -188,14 +137,15 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-3',
-    pharmacologySubject: 'Endocrine Pharmacology',
     specialty: 'Endocrine Disorders',
     disease: 'Diabetic Ketoacidosis',
     title: 'Severe Diabetic Ketoacidosis Precipitated by Urinary Tract Infection',
     difficulty: 'Advanced',
+    patientName: 'Jane Atieno',
+    facilitySetting: 'Moi Teaching & Referral Hospital (MTRH), Eldoret',
     demographics: '24-year-old female, 55 kg',
     chiefComplaint: 'Deep rapid breathing, progressive abdominal pain, vomiting, and confusion over the last 12 hours.',
-    hpi: 'Patient with Type 1 Diabetes Mellitus presented with dysuria and polyuria for the past week, leading to nausea, persistent vomiting, severe abdominal pain, and Kussmaul respirations. Admitted to holding insulin for 2 days due to poor oral intake.',
+    hpi: 'Jane, a university student in Eldoret, has Type 1 Diabetes Mellitus. She presented with dysuria and polyuria for the past week, leading to severe nausea, persistent vomiting, severe abdominal pain, and deep rapid Kussmaul respirations. She admitted to holding her insulin for 2 days due to poor oral intake during exams.',
     pmh: 'Type 1 Diabetes Mellitus (diagnosed 6 years ago), history of poor compliance.',
     medHx: 'Insulin Glargine 22 units SC at bedtime, Insulin Aspart 6 units SC before meals (held for 48 hours).',
     allergies: 'NKDA',
@@ -222,17 +172,18 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-4',
-    pharmacologySubject: 'Respiratory Pharmacology',
     specialty: 'Respiratory Disorders',
     disease: 'Asthma',
     title: 'Acute Severe Asthma Exacerbation in a Young Adult',
     difficulty: 'Intermediate',
+    patientName: 'Emmanuel Kiprop',
+    facilitySetting: 'Kericho County Referral Hospital',
     demographics: '19-year-old male, 70 kg',
     chiefComplaint: 'Severe shortness of breath, chest tightness, and a dry, hacking cough for 6 hours.',
-    hpi: 'Presented with acute respiratory distress. He has been using his Salbutamol inhaler every 30 minutes for the past 4 hours with minimal relief. Triggered by cold air and respiratory viral infection.',
+    hpi: 'Emmanuel, a student from Kericho, presented with acute respiratory distress. He has been using his Salbutamol inhaler every 30 minutes for the past 4 hours with minimal relief. Triggered by cold tea farm air and a recent respiratory viral infection.',
     pmh: 'Persistent moderate asthma diagnosed in childhood, poor adherence to controller medication.',
     medHx: 'Salbutamol MDI 100 mcg 2 puffs PRN (uses daily), Budesonide/Formoterol 160/4.5 mcg 1 puff twice daily (uses rarely).',
-    allergies: 'Allergies to pollen and cat dander.',
+    allergies: 'Allergies to tea pollen and cat dander.',
     pe: 'General: Sitting upright, speaking in single words due to breathlessness, accessory muscle use (supraclavicular retractions). Resp: High-pitched expiratory wheezing bilaterally, prolonged expiratory phase. CV: Tachycardia, no murmurs.',
     vitals: 'Temp: 37.0°C, HR: 118 bpm, BP: 124/80 mmHg, RR: 28 breaths/min, SpO2: 89% on room air, Peak Expiratory Flow (PEF): 150 L/min (35% of predicted).',
     labs: 'WBC: 9.8 x 10^9/L (mild eosinophilia), BMP (K+, Na+, BUN, SCr): Normal.',
@@ -256,18 +207,19 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-5',
-    pharmacologySubject: 'Cardiovascular Pharmacology',
     specialty: 'Obstetrics & Gynecology',
     disease: 'Preeclampsia',
     title: 'Severe Preeclampsia at 34 Weeks Gestation',
     difficulty: 'Intermediate',
+    patientName: 'Mercy Chebet',
+    facilitySetting: 'Longisa County Referral Hospital, Bomet',
     demographics: '28-year-old female, G1P0',
     chiefComplaint: 'Severe headache, blurred vision, and right upper quadrant abdominal pain for 1 day.',
-    hpi: 'Patient is 34 weeks pregnant, presenting with a severe frontal headache unieved by paracetamol, visual scotomas, and epigastric pain. Reports decreased fetal movements over the last 12 hours.',
+    hpi: 'Mercy, a primary school teacher from Bomet, is 34 weeks pregnant. She presents to the antenatal unit with a severe frontal headache unrelieved by paracetamol, visual scotomas, and epigastric pain. She reports decreased fetal movements over the last 12 hours.',
     pmh: 'Primigravida, previously normotensive.',
     medHx: 'Prenatal vitamins, Iron supplements.',
     allergies: 'NKDA',
-    pe: 'General: Appears uncomfortable. BP: 170/110 mmHg. Ext: 3+ pitting edema of lower extremities, hyperreflexia (3+) with 2 beats of clonus. Abdomen: Tender in the right upper quadrant. Fetal Heart Rate: 130 bpm with decreased variability.',
+    pe: 'General: Appears uncomfortable, distressed. BP: 170/110 mmHg. Ext: 3+ pitting edema of lower extremities, hyperreflexia (3+) with 2 beats of clonus. Abdomen: Tender in the right upper quadrant. Fetal Heart Rate: 130 bpm with decreased variability.',
     vitals: 'HR: 95 bpm, BP: 172/114 mmHg, RR: 18 breaths/min, Temp: 36.8°C.',
     labs: 'Urine protein: 3+ on dipstick. Platelets: 95 x 10^9/L. AST: 120 U/L, ALT: 150 U/L. Creatinine: 1.2 mg/dL. Uric acid: 7.5 mg/dL.',
     imaging: 'Obstetric ultrasound confirms intrauterine pregnancy at 34 weeks, estimated fetal weight in 40th percentile, oligohydramnios.',
@@ -290,14 +242,15 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-6',
-    pharmacologySubject: 'Cardiovascular Pharmacology',
     specialty: 'Neurological Disorders',
     disease: 'Stroke',
     title: 'Acute Ischemic Stroke in the Middle Cerebral Artery Territory',
     difficulty: 'Advanced',
+    patientName: 'Joseph Kamau',
+    facilitySetting: 'Nyeri County Referral Hospital',
     demographics: '65-year-old male, 85 kg',
     chiefComplaint: 'Sudden onset of right-sided weakness and difficulty speaking.',
-    hpi: 'Patient was watching TV when his wife noticed his face drooping on the right side. He was unable to move his right arm and leg and could not form coherent words. Last known normal was 2 hours ago.',
+    hpi: 'Joseph, a tea farmer from Nyeri, was watching TV at home when his wife noticed his face drooping on the right side. He was suddenly unable to move his right arm and leg and could not form coherent words. Last known normal was 2 hours ago.',
     pmh: 'Hypertension, Type 2 Diabetes, Hyperlipidemia, heavy smoker (40 pack-years).',
     medHx: 'Amlodipine 10mg daily, Metformin 1000mg BID, Atorvastatin 20mg daily.',
     allergies: 'Penicillin (rash)',
@@ -324,18 +277,19 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-7',
-    pharmacologySubject: 'Chemotherapy & Antimicrobial Pharmacology',
     specialty: 'Infectious Diseases',
     disease: 'Meningitis',
-    title: 'Acute Bacterial Meningitis in a Young Adult',
+    title: 'Acute Bacterial Meningitis in Kelvin',
     difficulty: 'Intermediate',
+    patientName: 'Kelvin Mwenda',
+    facilitySetting: 'Chuka County Referral Hospital',
     demographics: '21-year-old male, 72 kg',
     chiefComplaint: 'Severe headache, fever, neck stiffness, and photophobia for 24 hours.',
-    hpi: 'College student living in a dormitory presents with sudden onset of severe generalized headache, high fever, and vomiting. Reports pain when looking at bright lights. Roommate states he has been progressively confused over the last 6 hours.',
+    hpi: 'Kelvin, a second-year student at Chuka University, presents with sudden onset of severe generalized headache, high fever, and vomiting. Reports extreme pain when looking at bright lights. His roommate states Kelvin has been progressively confused over the last 6 hours.',
     pmh: 'No significant past medical history. Missed his booster meningococcal vaccine.',
     medHx: 'None.',
     allergies: 'NKDA',
-    pe: 'General: Toxic appearing, lethargic but arousable. Vitals: T 39.5°C, HR 115 bpm, BP 100/60 mmHg, RR 22 breaths/min. Neuro: Nuchal rigidity present. Positive Kernig and Brudzinski signs. Skin: Petechial rash noted on lower extremities.',
+    pe: 'General: Toxic appearing, lethargic but arousable. Neuro: Nuchal rigidity present. Positive Kernig and Brudzinski signs. Skin: Petechial rash noted on lower extremities.',
     vitals: 'HR: 115 bpm, BP: 100/60 mmHg, RR: 22 breaths/min, Temp: 39.5°C.',
     labs: 'WBC: 18.5 x 10^9/L (90% neutrophils). CRP: 150 mg/L. Blood cultures drawn. Lumbar Puncture (CSF): Opening pressure 250 mmH2O, WBC 1500/mm3 (95% PMNs), Glucose 20 mg/dL (serum 90 mg/dL), Protein 180 mg/dL. Gram stain: Gram-negative diplococci.',
     imaging: 'Non-contrast Head CT: No mass effect, no hydrocephalus.',
@@ -358,14 +312,15 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-8',
-    pharmacologySubject: 'Central Nervous System Pharmacology',
     specialty: 'Psychiatric Disorders',
     disease: 'Depression',
     title: 'Severe Major Depressive Disorder with Suicidal Ideation',
     difficulty: 'Intermediate',
+    patientName: 'Mary Muthoni',
+    facilitySetting: 'Mama Lucy Kibaki Hospital, Nairobi',
     demographics: '35-year-old female, 65 kg',
     chiefComplaint: 'Feeling overwhelming sadness, inability to get out of bed, and thoughts of wanting to end her life for the past month.',
-    hpi: 'Patient reports persistent depressed mood, anhedonia, significant weight loss (5 kg in 1 month), insomnia, fatigue, and poor concentration. She states she feels "worthless" and has been hoarding her sleep medications with intent to overdose.',
+    hpi: 'Mary, a small-scale business owner from Githurai, reports persistent depressed mood, severe anhedonia, significant weight loss (5 kg in 1 month), insomnia, fatigue, and poor concentration. She states she feels "worthless" and has been hoarding her sleeping pills with intent to overdose.',
     pmh: 'One previous episode of depression at age 22, successfully treated with Sertraline (discontinued after 1 year).',
     medHx: 'Zolpidem 10mg occasionally for sleep.',
     allergies: 'NKDA',
@@ -381,7 +336,7 @@ export const INITIAL_CASES: ClinicalCase[] = [
     carePlan: 'Admit to psychiatric unit for stabilization and safety. Start SSRI therapy. Initiate cognitive behavioral therapy (CBT) when patient is able to participate. Discontinue Zolpidem due to overdose risk.',
     dtps: '1. Active suicidal intent requiring secure environment. 2. Need for re-initiation of previously effective antidepressant therapy.',
     monitoring: 'Daily assessment of suicide risk, mood, sleep, appetite. Monitor for SSRI side effects (GI upset, increased anxiety initially) and potential activation.',
-    counselling: 'Educate patient that antidepressants take 4-6 weeks for full effect. Discuss the black box warning regarding potential increased suicidal thoughts in young adults (though risk is lower in 30s, monitoring is crucial).',
+    counselling: 'Educate patient that antidepressants take 4-6 weeks for full effect. Discuss the black box warning regarding potential increased suicidal thoughts in young adults. Explain the safety measures at the hospital.',
     followUp: 'Ensure outpatient psychiatric appointment and therapy within 7 days of discharge.',
     pearls: 'Safety is the immediate priority in patients with active suicidal ideation and a plan. Previous response to a specific SSRI is a strong predictor of future response to the same medication.',
     references: ['APA Practice Guideline for the Treatment of Patients with Major Depressive Disorder'],
@@ -392,18 +347,19 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-9',
-    pharmacologySubject: 'Gastrointestinal Pharmacology',
     specialty: 'Gastrointestinal Disorders',
     disease: 'Liver Cirrhosis',
     title: 'Decompensated Liver Cirrhosis with Ascites and Encephalopathy',
     difficulty: 'Advanced',
+    patientName: 'Peter Omondi',
+    facilitySetting: 'Jaramogi Oginga Odinga Teaching & Referral Hospital (JOOTRH), Kisumu',
     demographics: '52-year-old male, 78 kg',
     chiefComplaint: 'Increasing abdominal swelling, confusion, and yellowing of the eyes over the past week.',
-    hpi: 'Patient has a known history of alcohol-related liver cirrhosis. Presents with worsening abdominal distension, bilateral lower extremity edema, and altered mental status. His wife reports he has been confused and sleeping more than usual.',
+    hpi: 'Peter, a carpenter from Kisumu, has a known history of alcohol-related liver cirrhosis. He presents with worsening abdominal distension, bilateral lower extremity edema, and altered mental status. His wife reports he has been highly confused, sleeping more than usual, and disoriented to time.',
     pmh: 'Alcohol-related liver cirrhosis, Portal hypertension, Esophageal varices (banded 1 year ago).',
     medHx: 'Spironolactone 100mg daily, Furosemide 40mg daily, Nadolol 20mg daily, Lactulose 30mL daily (wife admits he stopped taking lactulose a week ago due to diarrhea).',
     allergies: 'NKDA',
-    pe: 'General: Jaundiced, lethargic, slow to respond. Asterixis present. Abdomen: Distended, tense, shifting dullness positive, fluid wave positive. Ext: 2+ pitting edema.',
+    pe: 'General: Jaundiced, lethargic, slow to respond. Asterixis (flapping tremors) present. Abdomen: Distended, tense, shifting dullness positive, fluid wave positive. Ext: 2+ pitting edema.',
     vitals: 'HR: 92 bpm, BP: 105/65 mmHg, RR: 18 breaths/min, Temp: 36.7°C.',
     labs: 'Serum Creatinine: 1.5 mg/dL (baseline 0.9). Total Bilirubin: 6.2 mg/dL. Albumin: 2.1 g/dL. INR: 1.8. Na: 128 mEq/L. K: 3.2 mEq/L. Diagnostic paracentesis: PMNs < 250 cells/mm3 (rules out SBP).',
     imaging: 'Abdominal ultrasound confirms large volume ascites and nodular liver compatible with cirrhosis. Portal vein is patent.',
@@ -426,18 +382,19 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-10',
-    pharmacologySubject: 'Oncology',
     specialty: 'Hematology & Oncology',
     disease: 'Breast Cancer',
     title: 'Adjuvant Endocrine Therapy for HR-Positive Breast Cancer',
     difficulty: 'Beginner',
+    patientName: 'Grace Wambui',
+    facilitySetting: 'Thika Level 5 Hospital',
     demographics: '58-year-old female, 68 kg',
     chiefComplaint: 'Clinic visit to discuss systemic therapy after breast conserving surgery.',
-    hpi: 'Patient recently underwent a lumpectomy and sentinel lymph node biopsy for a 1.5 cm invasive ductal carcinoma. Margins are clear, and lymph nodes are negative for metastasis (T1c N0 M0).',
+    hpi: 'Grace, a retired primary school headteacher from Thika, recently underwent a lumpectomy and sentinel lymph node biopsy for a 1.5 cm invasive ductal carcinoma. Margins are clear, and lymph nodes are negative for metastasis (T1c N0 M0).',
     pmh: 'Postmenopausal (last menses 8 years ago). Osteopenia on recent DEXA scan. Hypertension.',
     medHx: 'Lisinopril 10mg daily, Calcium 600mg / Vitamin D 400 IU daily.',
     allergies: 'NKDA',
-    pe: 'General: Well-appearing. Chest: Healing surgical scar in the right upper outer quadrant, no signs of infection. Remainder of exam normal.',
+    pe: 'General: Well-appearing, optimistic. Chest: Healing surgical scar in the right upper outer quadrant, no signs of infection. Remainder of exam normal.',
     vitals: 'HR: 70 bpm, BP: 128/82 mmHg, RR: 14 breaths/min, Temp: 36.9°C.',
     labs: 'Pathology: ER positive (95%), PR positive (90%), HER2 negative. Ki-67: 10%. Genomic assay (Oncotype DX) recurrence score is low (12), indicating minimal benefit from chemotherapy.',
     imaging: 'Post-operative mammogram: no residual disease. DEXA: T-score -1.8 at femoral neck.',

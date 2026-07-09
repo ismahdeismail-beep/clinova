@@ -4,7 +4,7 @@ import {
   HeartPulse, Wind, Flame, ShieldAlert, Droplets, Activity, Brain, 
   Smile, Pill, Baby, User, AlertTriangle, ChevronRight,
   Search, BookOpen, Stethoscope, ChevronLeft, BrainCircuit,
-  MessageSquare, Loader2, Play, Sparkles
+  MessageSquare, Loader2, Play, Sparkles, Mic
 } from 'lucide-react';
 import Markdown from 'react-markdown';
 import { ClinicalCase, SPECIALTIES, DISEASES_BY_SPECIALTY, INITIAL_CASES } from '../data/clinicalCasesData';
@@ -299,7 +299,10 @@ export default function ClinicalCasesScreen() {
                           {clinicalCase.title}
                         </h3>
                         <p className="text-sm text-[var(--text-muted)] line-clamp-2 leading-relaxed">
-                          <span className="font-semibold">Patient:</span> {clinicalCase.demographics}. <span className="font-semibold">CC:</span> {clinicalCase.chiefComplaint}
+                          <span className="font-semibold">Patient:</span> {clinicalCase.patientName} ({clinicalCase.demographics}) &bull; <span className="font-semibold">Setting:</span> {clinicalCase.facilitySetting}
+                        </p>
+                        <p className="text-sm text-[var(--text-muted)] line-clamp-2 leading-relaxed mt-1">
+                          <span className="font-semibold">CC:</span> "{clinicalCase.chiefComplaint}"
                         </p>
                       </div>
                       <div className="flex items-center justify-end md:items-center">
@@ -329,24 +332,42 @@ export default function ClinicalCasesScreen() {
           {/* Level 4: Case Details */}
           {selectedCase && (
             <div className="animate-in fade-in slide-in-from-bottom-4 duration-300">
-              <div className="flex items-center gap-3 mb-6">
-                <button onClick={handleBackToCases} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors">
-                  <ChevronLeft size={18} className="text-[var(--text)]" />
-                </button>
-                <div>
-                  <h2 className="text-2xl font-bold text-[var(--text)] leading-tight">{selectedCase.title}</h2>
-                  <div className="flex items-center gap-3 text-xs text-[var(--text-muted)] mt-1">
-                    <span>{selectedCase.specialty}</span>
-                    <span>&bull;</span>
-                    <span>{selectedCase.disease}</span>
-                    <span>&bull;</span>
-                    <span className={`font-semibold ${
-                      selectedCase.difficulty === 'Beginner' ? 'text-emerald-600' :
-                      selectedCase.difficulty === 'Intermediate' ? 'text-amber-600' :
-                      'text-rose-600'
-                    }`}>{selectedCase.difficulty} Level</span>
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                <div className="flex items-center gap-3">
+                  <button onClick={handleBackToCases} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors">
+                    <ChevronLeft size={18} className="text-[var(--text)]" />
+                  </button>
+                  <div>
+                    <h2 className="text-2xl font-bold text-[var(--text)] leading-tight">{selectedCase.title}</h2>
+                    <div className="flex items-center gap-3 text-xs text-[var(--text-muted)] mt-1">
+                      <span>{selectedCase.specialty}</span>
+                      <span>&bull;</span>
+                      <span>{selectedCase.disease}</span>
+                      <span>&bull;</span>
+                      <span className={`font-semibold ${
+                        selectedCase.difficulty === 'Beginner' ? 'text-emerald-600' :
+                        selectedCase.difficulty === 'Intermediate' ? 'text-amber-600' :
+                        'text-rose-600'
+                      }`}>{selectedCase.difficulty} Level</span>
+                    </div>
                   </div>
                 </div>
+                <button
+                  onClick={() => {
+                    navigate('/oral-practice', {
+                      state: {
+                        mode: 'case',
+                        category: 'OSCE Practice',
+                        specificItem: selectedCase.title,
+                        difficulty: selectedCase.difficulty.toLowerCase()
+                      }
+                    });
+                  }}
+                  className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-[var(--primary)] to-[var(--primary-hover)] text-[var(--primary-foreground)] rounded-xl shadow-md font-medium text-sm hover:opacity-95 transition-all shrink-0 cursor-pointer"
+                >
+                  <Mic size={16} />
+                  Practice OSCE Oral Exam
+                </button>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -360,6 +381,14 @@ export default function ClinicalCasesScreen() {
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-4">
+                        <div>
+                          <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Patient Name</h4>
+                          <p className="text-base font-bold text-[var(--primary)]">{selectedCase.patientName}</p>
+                        </div>
+                        <div>
+                          <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Facility / Setting</h4>
+                          <p className="text-sm text-[var(--text)] font-medium">{selectedCase.facilitySetting}</p>
+                        </div>
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Demographics</h4>
                           <p className="text-sm text-[var(--text)]">{selectedCase.demographics}</p>

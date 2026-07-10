@@ -1,3 +1,5 @@
+import { GENERATED_CASES } from './clinicalCases';
+
 export interface ClinicalCase {
   id: string;
   specialty: string;
@@ -989,3 +991,16 @@ export function getCurriculumCasesForUnit(unitNumber: number): ClinicalCase[] {
   return cases;
 }
 
+// ================================================================
+// Merged Clinical Cases — The full case library
+// Combines initial editor-published cases with all generated batches.
+// Use this for the Knowledge Engine / AI retrieval.
+// Use INITIAL_CASES separately only if you need the original 10.
+// ================================================================
+
+export const ALL_CLINICAL_CASES: ClinicalCase[] = [
+  ...INITIAL_CASES,
+  ...GENERATED_CASES,
+];
+
+export const TOTAL_CASE_COUNT = ALL_CLINICAL_CASES.length;

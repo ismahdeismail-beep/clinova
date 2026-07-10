@@ -24,6 +24,7 @@ const CATEGORY_PATHS: Record<FileCategory, string> = {
   study_source: 'studies',
   study_output: 'studies',
   knowledge: 'knowledge',
+  knowledge_base: 'knowledge',
   report: 'reports',
   general: 'general',
 };

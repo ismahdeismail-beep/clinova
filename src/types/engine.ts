@@ -103,6 +103,7 @@ export type FileCategory =
   | 'study_source'
   | 'study_output'
   | 'knowledge'
+  | 'knowledge_base'
   | 'report'
   | 'general';
 
@@ -137,7 +138,7 @@ export interface StoredFile {
   metadata?: Record<string, any>;
   summary?: string;
   textContent?: string;
-  classification?: any;
+  classification?: Record<string, any>;
   aiProcessed?: boolean;
 }
 

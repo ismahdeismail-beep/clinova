@@ -1,4 +1,5 @@
 import { processAcademicRequest } from "./src/server/academicEngine.js";
+import { orchestrateSkills, skillRegistry } from "./src/skills";
 import express from 'express';
 import path from 'path';
 import fs from 'fs';
@@ -1841,6 +1842,71 @@ At the end of your response, include a section with:
   } catch (error) {
     console.error('Hub Tutor Error:', error);
     res.status(500).json({ error: 'Failed to generate response' });
+  }
+});
+
+// ================================================================
+// CLINOVA AI SKILLS — ORCHESTRATED ENDPOINT
+// Routes a query through the modular skills system: intent
+// detection -> skill selection -> parallel execution -> merge.
+// ================================================================
+
+function buildEducationalContext(query: string): any {
+  const q = query.toLowerCase();
+  let queryType = 'general';
+  if (/what is|explain|define|describe|how does|mechanism/.test(q)) queryType = 'concept_explanation';
+  else if (/diagnosis|treatment|management|care plan|case|patient|vignette/.test(q)) queryType = 'clinical_case';
+  else if (/drug|medicine|dosage|side effect|interaction|contraindication/.test(q)) queryType = 'drug_info';
+  else if (/guideline|recommend|evidence/.test(q)) queryType = 'guideline';
+  else if (/compare|vs\b|difference| versus /.test(q)) queryType = 'comparison';
+  else if (/study|revise|notes|flashcard|summary/.test(q)) queryType = 'study_material';
+  else if (/mcq|quiz|question|exam|viva|test me/.test(q)) queryType = 'practice_question';
+
+  return {
+    learningArea: '', subject: '', unit: '', topic: '', subtopic: '',
+    educationalLevel: 'Intermediate', queryType,
+  };
+}
+
+// List registered skills (for admin/debug/UI)
+app.get('/api/ai/skills', (_req, res) => {
+  res.json({
+    success: true,
+    count: skillRegistry.count,
+    skills: skillRegistry.getDefinitions().map((d) => ({
+      id: d.id, name: d.name, category: d.category, description: d.description,
+      priority: d.priority, cacheable: !!d.cacheable,
+    })),
+  });
+});
+
+// Orchestrated skill execution
+app.post('/api/ai/orchestrate', async (req, res) => {
+  try {
+    const { query, chatHistory, attachedResources, userId, preferences, disease, drug, level } = req.body;
+    if (!query) return res.status(400).json({ error: 'Missing query' });
+
+    const ctx = buildEducationalContext(query);
+    if (disease) ctx.disease = disease;
+    if (drug) ctx.drug = drug;
+    if (level) ctx.educationalLevel = level;
+
+    const result = await orchestrateSkills(query, ctx, {
+      chatHistory, attachedResources, userId, preferences,
+    });
+
+    res.json({
+      success: true,
+      text: result.consolidatedContent,
+      plan: result.plan,
+      skillsApplied: Array.from(result.skillResults.keys()),
+      recommendations: result.recommendations,
+      references: result.references,
+      processingTimeMs: result.processingTimeMs,
+    });
+  } catch (error: any) {
+    console.error('Skill Orchestration error:', error);
+    res.status(500).json({ error: error.message || 'Orchestration failed' });
   }
 });
 

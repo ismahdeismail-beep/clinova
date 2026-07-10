@@ -27,8 +27,11 @@ interface ResourceItem {
   storagePath?: string;
   textContent?: string;
   summary?: string;
-  classification?: any;
+  classification?: { keywords?: string[]; subject?: string; learningArea?: string; resourceType?: string };
   aiProcessed?: boolean;
+  learningObjectives?: string[];
+  relationships?: Record<string, any>;
+  suggestions?: Record<string, any>;
 }
 
 const SYSTEM_RESOURCES: ResourceItem[] = [
@@ -378,10 +381,13 @@ function ResourcesTab({ onUploadClick }: { onUploadClick: () => void }) {
         status: 'Indexed',
         isUserUploaded: true,
         storagePath: file.storagePath,
-        textContent: file.textContent,
-        summary: file.summary,
-        classification: file.classification,
-        aiProcessed: file.aiProcessed
+        textContent: typedFile.textContent,
+        summary: typedFile.summary,
+        classification: typedFile.classification,
+        aiProcessed: typedFile.aiProcessed,
+        learningObjectives: typedFile.learningObjectives,
+        relationships: typedFile.relationships,
+        suggestions: typedFile.suggestions
       };
     });
 
@@ -397,7 +403,7 @@ function ResourcesTab({ onUploadClick }: { onUploadClick: () => void }) {
       doc.discipline.toLowerCase().includes(searchTerm.toLowerCase()) ||
       (doc.textContent && doc.textContent.toLowerCase().includes(searchTerm.toLowerCase())) ||
       (doc.summary && doc.summary.toLowerCase().includes(searchTerm.toLowerCase())) ||
-      (doc.classification?.keywords && doc.classification.keywords.some((k: any) => k.toLowerCase().includes(searchTerm.toLowerCase())));
+      (doc.classification?.keywords && doc.classification.keywords.some((k: string) => k.toLowerCase().includes(searchTerm.toLowerCase())));
 
     const matchesType = typeFilter === 'All Types' || doc.type === typeFilter;
     const matchesDiscipline = disciplineFilter === 'All Disciplines' || doc.discipline === disciplineFilter;

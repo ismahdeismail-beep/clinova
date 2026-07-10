@@ -35,6 +35,9 @@ export interface ClinicalCase {
   createdBy: string;
   createdByName: string;
   pharmacologySubject?: string;
+  /** Supabase PK / slug (seed_id) — populated when sourced from Supabase */
+  unitId?: string;
+  seedId?: string;
 }
 
 export const SPECIALTIES = [

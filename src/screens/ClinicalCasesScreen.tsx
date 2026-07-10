@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
 import { 
   HeartPulse, Wind, Flame, ShieldAlert, Droplets, Activity, Brain, 
   Smile, Pill, Baby, User, AlertTriangle, ChevronRight,
@@ -9,88 +8,39 @@ import {
   Award, Sliders, HelpCircle, Book, FileText, Compass, Folder, Copy, Edit3, File, Link, CheckSquare, X
 } from 'lucide-react';
 import Markdown from 'react-markdown';
-import { ClinicalCase, SPECIALTIES, DISEASES_BY_SPECIALTY, INITIAL_CASES } from '../data/clinicalCasesData';
-import { db } from '../lib/firebase';
-import { collection, getDocs, query, orderBy, where } from 'firebase/firestore';
+import { ClinicalCase, SPECIALTIES, ALL_CLINICAL_CASES } from '../data/clinicalCasesData';
+import { getIntegratedUnitId } from '../data/curriculum';
+import { ClinicalCaseService } from '../services/clinicalCase.service';
 
 export default function ClinicalCasesScreen() {
   const navigate = useNavigate();
-  const { userData } = useAuth();
   const [selectedSpecialty, setSelectedSpecialty] = useState<string | null>(null);
   const [selectedDisease, setSelectedDisease] = useState<string | null>(null);
   const [selectedCase, setSelectedCase] = useState<ClinicalCase | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
-  const [allCases, setAllCases] = useState<ClinicalCase[]>(INITIAL_CASES);
+  const [allCases, setAllCases] = useState<ClinicalCase[]>(ALL_CLINICAL_CASES);
   const [isLoadingDbCases, setIsLoadingDbCases] = useState(false);
 
   useEffect(() => {
-    const fetchCases = async () => {
+    const loadCases = async () => {
       setIsLoadingDbCases(true);
       try {
-        let q = query(collection(db, 'clinical_cases'), orderBy('createdAt', 'desc'));
-        
-        // Filter by user if authenticated
-        if (userData?.id) {
-          q = query(collection(db, 'clinical_cases'), where('userId', '==', userData.id), orderBy('createdAt', 'desc'));
-        }
-        
-        const querySnapshot = await getDocs(q);
-        const fetchedList: ClinicalCase[] = [];
-        querySnapshot.forEach((docSnap) => {
-          const data = docSnap.data();
-          fetchedList.push({
-            id: docSnap.id,
-            specialty: data.specialty || data.topic || 'Cardiovascular Pharmacotherapy',
-            disease: data.disease || 'Heart Failure',
-            title: data.title || 'Untitled Case',
-            difficulty: data.difficulty || 'Intermediate',
-            patientName: data.patientName || 'Anonymous Patient',
-            facilitySetting: data.facilitySetting || 'Clinova Reference Facility',
-            demographics: data.demographics || 'Adult Patient',
-            chiefComplaint: data.chiefComplaint || data.scenario || '',
-            hpi: data.hpi || data.scenario || '',
-            pmh: data.pmh || '',
-            medHx: data.medHx || '',
-            allergies: data.allergies || 'NKDA',
-            pe: data.pe || '',
-            vitals: data.vitals || '',
-            labs: data.labs || '',
-            imaging: data.imaging || '',
-            diagnosis: data.diagnosis || data.title || '',
-            ddx: data.ddx || [],
-            goals: data.goals || '',
-            pharm: data.pharm || '',
-            nonPharm: data.nonPharm || '',
-            carePlan: data.carePlan || '',
-            dtps: data.dtps || data.learningPoints || '',
-            monitoring: data.monitoring || '',
-            counselling: data.counselling || '',
-            followUp: data.followUp || '',
-            pearls: data.pearls || '',
-            references: data.references || [],
-            createdAt: data.createdAt ? new Date(data.createdAt).toISOString() : new Date().toISOString(),
-            status: data.status || 'published',
-            createdBy: data.createdBy || 'faculty',
-            createdByName: data.createdByName || 'Clinical Educator'
-          });
+        // Supabase is the source of truth; falls back to bundled data when unconfigured.
+        const { cases } = await ClinicalCaseService.fetchCases({
+          pageSize: 2000,
+          status: 'published',
         });
-
-        if (fetchedList.length > 0) {
-          setAllCases(prev => {
-            const combined = [...fetchedList, ...prev];
-            const uniqueMap = new Map<string, ClinicalCase>();
-            combined.forEach(c => uniqueMap.set(c.id, c));
-            return Array.from(uniqueMap.values());
-          });
+        if (cases.length > 0) {
+          setAllCases(cases);
         }
       } catch (err) {
-        console.warn("Could not load clinical cases from Firestore:", err);
+        console.warn('[ClinicalCasesScreen] Could not load cases from Supabase:', err);
       } finally {
         setIsLoadingDbCases(false);
       }
     };
 
-    fetchCases();
+    loadCases();
   }, []);
 
   // Tab navigation & disease brain subsections state
@@ -142,6 +92,34 @@ export default function ClinicalCasesScreen() {
   const handleBackToCases = () => {
     setSelectedCase(null);
   };
+
+  // ── Dynamic grouping: cases are sourced from Supabase (unitId maps to the
+  //    integrated unit). Derive diseases and counts from the live case set so
+  //    every seeded case is reachable, regardless of raw specialty naming. ──
+  const matchesUnit = (c: ClinicalCase, unitTitle: string) => {
+    const unitId = getIntegratedUnitId(unitTitle);
+    return (unitId && c.unitId === unitId) || c.specialty === unitTitle;
+  };
+
+  const diseaseCountBySpecialty: Record<string, number> = {};
+  for (const s of SPECIALTIES) {
+    const set = new Set(allCases.filter((c) => matchesUnit(c, s)).map((c) => c.disease));
+    diseaseCountBySpecialty[s] = set.size;
+  }
+
+  const selectedUnitId = selectedSpecialty ? getIntegratedUnitId(selectedSpecialty) : undefined;
+  const casesForSelectedUnit = selectedUnitId
+    ? allCases.filter((c) => matchesUnit(c, selectedSpecialty as string))
+    : [];
+  const diseasesForSelectedUnit = Array.from(
+    new Set(casesForSelectedUnit.map((c) => c.disease).filter(Boolean))
+  ).sort();
+
+  const casesForSelectedDisease = selectedSpecialty && selectedDisease
+    ? allCases.filter(
+        (c) => matchesUnit(c, selectedSpecialty) && c.disease === selectedDisease
+      )
+    : [];
 
   const getSpecialtyIcon = (specialty: string) => {
     switch (specialty) {
@@ -715,7 +693,7 @@ export default function ClinicalCasesScreen() {
                     </div>
                     <div>
                       <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">{specialty}</h3>
-                      <p className="text-xs text-[var(--text-muted)] mt-1">{DISEASES_BY_SPECIALTY[specialty]?.length || 0} Diseases</p>
+                      <p className="text-xs text-[var(--text-muted)] mt-1">{diseaseCountBySpecialty[specialty] || 0} Diseases</p>
                     </div>
                   </div>
                 </div>
@@ -736,8 +714,8 @@ export default function ClinicalCasesScreen() {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {(DISEASES_BY_SPECIALTY[selectedSpecialty] || []).map((disease, idx) => {
-                  const casesCount = allCases.filter(c => c.specialty === selectedSpecialty && c.disease === disease).length;
+                {diseasesForSelectedUnit.map((disease, idx) => {
+                  const casesCount = casesForSelectedUnit.filter(c => c.disease === disease).length;
                   return (
                     <div 
                       key={idx}
@@ -801,7 +779,7 @@ export default function ClinicalCasesScreen() {
 
               {activeLevel3Tab === 'cases' ? (
                 <div className="space-y-4">
-                  {allCases.filter(c => c.specialty === selectedSpecialty && c.disease === selectedDisease).map((clinicalCase, idx) => (
+                  {casesForSelectedDisease.map((clinicalCase, idx) => (
                     <div 
                       key={idx}
                       onClick={() => handleCaseClick(clinicalCase)}
@@ -838,7 +816,7 @@ export default function ClinicalCasesScreen() {
                     </div>
                   ))}
 
-                  {allCases.filter(c => c.specialty === selectedSpecialty && c.disease === selectedDisease).length === 0 && (
+                  {casesForSelectedDisease.length === 0 && (
                     <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-12 text-center">
                       <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mx-auto mb-4">
                         <BookOpen size={32} className="text-[var(--text-muted)]" />

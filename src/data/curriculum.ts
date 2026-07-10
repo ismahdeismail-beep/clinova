@@ -745,8 +745,44 @@ export const INTEGRATED_UNITS_MAP: Record<string, string> = {
   'Toxicology & Poison Management': 'cp-tox',
 };
 
+// Raw specialty (e.g. 'Cardiology') to integrated unit ID mapping
+const RAW_SPECIALTY_MAP: Record<string, string> = {
+  'Cardiology': 'cp-cv',
+  'Internal Medicine': 'cp-cv',
+  'Cardiovascular Disorders': 'cp-cv',
+  'Respiratory Medicine': 'cp-resp',
+  'Respiratory Disorders': 'cp-resp',
+  'Infectious Diseases': 'cp-id',
+  'Endocrinology': 'cp-endo',
+  'Endocrine Disorders': 'cp-endo',
+  'Gastroenterology': 'cp-gi',
+  'Gastrointestinal Disorders': 'cp-gi',
+  'Hepatology': 'cp-gi',
+  'Nephrology': 'cp-renal',
+  'Renal Disorders': 'cp-renal',
+  'Neurology': 'cp-neuro',
+  'Neurological Disorders': 'cp-neuro',
+  'Psychiatry': 'cp-neuro',
+  'Neurology / Pain Medicine': 'cp-neuro',
+  'Haematology': 'cp-onc',
+  'Oncology': 'cp-onc',
+  'Hematology & Oncology': 'cp-onc',
+  'Orthopaedics': 'cp-rheum',
+  'Rheumatology': 'cp-rheum',
+  'Obstetrics & Gynecology': 'cp-obgyn',
+  'Pediatrics': 'cp-peds',
+  'Geriatrics': 'cp-ger',
+  'Emergency Medicine / Toxicology': 'cp-tox',
+  'Toxicology': 'cp-tox',
+  'Clinical Pharmacy / Antimicrobial Stewardship': 'cp-id',
+  'Clinical Pharmacy / Pharmacokinetics': 'cp-renal',
+  'Clinical Pharmacy / Polypharmacy': 'cp-ger',
+  'Clinical Pharmacy / Transitions of Care': 'cp-ger',
+  'Nutrition': 'cp-ger',
+};
+
 export function getIntegratedUnitId(specialtyName: string): string | undefined {
-  return INTEGRATED_UNITS_MAP[specialtyName];
+  return INTEGRATED_UNITS_MAP[specialtyName] || RAW_SPECIALTY_MAP[specialtyName];
 }
 
 // ================================================================

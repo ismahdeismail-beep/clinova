@@ -130,7 +130,7 @@ function generateQuizQuestions(c: CaseRecord): {
   ];
 }
 
-// ── Main ────────────────────────────────────────────────────────────
+// ── Main (bulk, idempotent) ──────────────────────────────────────────
 async function main() {
   console.log('='.repeat(60));
   console.log('📝 AI RESOURCE GENERATION');
@@ -154,96 +154,57 @@ async function main() {
 
   console.log(`📦 Found ${cases.length} published cases.`);
 
-  // For each case, check if resources already exist
-  let guidesCreated = 0;
-  let guidesSkipped = 0;
-  let flashcardsCreated = 0;
-  let flashcardsSkipped = 0;
-  let quizzesCreated = 0;
-  let quizzesSkipped = 0;
+  // Bulk fetch which case_ids already have each resource type
+  const { data: existingGuides } = await supabase.from('study_guides').select('case_id');
+  const { data: existingFC }    = await supabase.from('flashcards').select('case_id');
+  const { data: existingQuiz }  = await supabase.from('quiz_questions').select('case_id');
 
-  for (let i = 0; i < cases.length; i += BATCH_SIZE) {
-    const batch = cases.slice(i, i + BATCH_SIZE);
+  const guideSet = new Set((existingGuides || []).map((r: any) => r.case_id));
+  const fcSet    = new Set((existingFC || []).map((r: any) => r.case_id));
+  const quizSet  = new Set((existingQuiz || []).map((r: any) => r.case_id));
 
-    for (const c of batch as CaseRecord[]) {
-      // Check existing study guide
-      const { data: existingGuide } = await supabase
-        .from('study_guides')
-        .select('id')
-        .eq('case_id', c.id)
-        .limit(1);
+  const guideRows: any[] = [];
+  const fcRows: any[] = [];
+  const quizRows: any[] = [];
 
-      if (!existingGuide || existingGuide.length === 0) {
-        const guide = generateStudyGuide(c);
-        const { error } = await supabase
-          .from('study_guides')
-          .insert({ case_id: c.id, title: guide.title, content: guide.content });
-        if (error) {
-          console.warn(`   ⚠️  Study guide failed for "${c.title}": ${error.message}`);
-        } else {
-          guidesCreated++;
-        }
-      } else {
-        guidesSkipped++;
-      }
-
-      // Check existing flashcards
-      const { data: existingFC } = await supabase
-        .from('flashcards')
-        .select('id')
-        .eq('case_id', c.id)
-        .limit(1);
-
-      if (!existingFC || existingFC.length === 0) {
-        const cards = generateFlashcards(c);
-        const { error } = await supabase
-          .from('flashcards')
-          .insert(cards.map(card => ({ ...card, case_id: c.id })));
-        if (error) {
-          console.warn(`   ⚠️  Flashcards failed for "${c.title}": ${error.message}`);
-        } else {
-          flashcardsCreated += cards.length;
-        }
-      } else {
-        flashcardsSkipped += 5;
-      }
-
-      // Check existing quiz questions
-      const { data: existingQuiz } = await supabase
-        .from('quiz_questions')
-        .select('id')
-        .eq('case_id', c.id)
-        .limit(1);
-
-      if (!existingQuiz || existingQuiz.length === 0) {
-        const questions = generateQuizQuestions(c);
-        const { error } = await supabase
-          .from('quiz_questions')
-          .insert(questions.map(q => ({ ...q, case_id: c.id })));
-        if (error) {
-          console.warn(`   ⚠️  Quiz questions failed for "${c.title}": ${error.message}`);
-        } else {
-          quizzesCreated += questions.length;
-        }
-      } else {
-        quizzesSkipped += 3;
-      }
+  for (const c of cases as CaseRecord[]) {
+    if (!guideSet.has(c.id)) {
+      const g = generateStudyGuide(c);
+      guideRows.push({ case_id: c.id, title: g.title, content: g.content });
     }
-
-    console.log(`   Batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(cases.length / BATCH_SIZE)} processed`);
-    
-    if (i + BATCH_SIZE < cases.length) {
-      await new Promise(r => setTimeout(r, 300));
+    if (!fcSet.has(c.id)) {
+      for (const card of generateFlashcards(c)) fcRows.push({ ...card, case_id: c.id });
+    }
+    if (!quizSet.has(c.id)) {
+      for (const q of generateQuizQuestions(c)) quizRows.push({ ...q, case_id: c.id });
     }
   }
 
-  // ── Report ──────────────────────────────────────────────────────
+  const CHUNK = 200;
+  let guidesCreated = 0, flashcardsCreated = 0, quizzesCreated = 0;
+
+  for (let i = 0; i < guideRows.length; i += CHUNK) {
+    const { error } = await supabase.from('study_guides').insert(guideRows.slice(i, i + CHUNK));
+    if (error) console.warn(`   ⚠️  Guide chunk ${i} failed: ${error.message}`);
+    else guidesCreated += Math.min(CHUNK, guideRows.length - i);
+  }
+  for (let i = 0; i < fcRows.length; i += CHUNK) {
+    const { error } = await supabase.from('flashcards').insert(fcRows.slice(i, i + CHUNK));
+    if (error) console.warn(`   ⚠️  Flashcard chunk ${i} failed: ${error.message}`);
+    else flashcardsCreated += Math.min(CHUNK, fcRows.length - i);
+  }
+  for (let i = 0; i < quizRows.length; i += CHUNK) {
+    const { error } = await supabase.from('quiz_questions').insert(quizRows.slice(i, i + CHUNK));
+    if (error) console.warn(`   ⚠️  Quiz chunk ${i} failed: ${error.message}`);
+    else quizzesCreated += Math.min(CHUNK, quizRows.length - i);
+  }
+
   console.log('\n' + '='.repeat(60));
   console.log('📊 GENERATION COMPLETE');
   console.log('='.repeat(60));
-  console.log(`   Study Guides:   ${guidesCreated} created, ${guidesSkipped} skipped`);
-  console.log(`   Flashcards:     ${flashcardsCreated} created, ${flashcardsSkipped} skipped`);
-  console.log(`   Quiz Questions: ${quizzesCreated} created, ${quizzesSkipped} skipped`);
+  console.log(`   Study Guides:   ${guidesCreated} created (${guideRows.length} pending)`);
+  console.log(`   Flashcards:     ${flashcardsCreated} created (${fcRows.length} pending)`);
+  console.log(`   Quiz Questions: ${quizzesCreated} created (${quizRows.length} pending)`);
   console.log('✅ Done.');
 }
 

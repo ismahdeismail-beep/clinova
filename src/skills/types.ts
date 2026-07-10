@@ -11,7 +11,7 @@ import type { LibraryResource } from '../data/onlineLibraryData';
 // ================================================================
 
 export interface EducationalContext {
-  topic: string;
+  topic?: string;
   level?: 'Beginner' | 'Intermediate' | 'Advanced';
   userId?: string;
   learningObjectives?: string[];
@@ -20,6 +20,16 @@ export interface EducationalContext {
   academicLevel?: string;
   curriculumUnitId?: string;
   preferences?: Record<string, any>;
+  /** Skill-routing intent hint */
+  queryType?: string;
+  /** Subject / discipline label */
+  subject?: string;
+  /** Learner level label used by teaching skills */
+  educationalLevel?: string;
+  /** Disease name when the query concerns a specific disease */
+  disease?: string;
+  /** Drug / medicine name when the query concerns a specific drug */
+  drug?: string;
 }
 
 // ================================================================

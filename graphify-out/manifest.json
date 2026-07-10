@@ -2583,5 +2583,665 @@
     "mtime": 1783702268.9821317,
     "ast_hash": "3577354430e1e4598488135d566ae006",
     "semantic_hash": "3577354430e1e4598488135d566ae006"
+  },
+  ".agents/skills/supabase-postgres-best-practices/CHANGELOG.md": {
+    "mtime": 1783700861.8216593,
+    "ast_hash": "8731d1210c45d9f453c1a8f673bca669",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/SKILL.md": {
+    "mtime": 1783700861.8236575,
+    "ast_hash": "76523dd6bc0fb5d7893efa728a8707a6",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/_contributing.md": {
+    "mtime": 1783700861.8256552,
+    "ast_hash": "32c800fa6621705288dc651da22c9366",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/_sections.md": {
+    "mtime": 1783700861.8266563,
+    "ast_hash": "8547fba7fd9fae3b6be916c6f55b0f62",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/_template.md": {
+    "mtime": 1783700861.8286922,
+    "ast_hash": "74ec7e2bdd6c8ddbb354fcceec038bc2",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/advanced-full-text-search.md": {
+    "mtime": 1783700861.8296628,
+    "ast_hash": "327f8367de51b0982b963f2928184c35",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/advanced-jsonb-indexing.md": {
+    "mtime": 1783700861.8306565,
+    "ast_hash": "413ba907ff4408d6fd3545f839101ebf",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/conn-idle-timeout.md": {
+    "mtime": 1783700861.8316574,
+    "ast_hash": "8bbe8b609d5241351672cefc19036db6",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/conn-limits.md": {
+    "mtime": 1783700861.8326564,
+    "ast_hash": "661b3efcf0e35136352b3923ff265d5c",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/conn-pooling.md": {
+    "mtime": 1783700861.8346555,
+    "ast_hash": "c90dab7d0ab47443b41f17d5bc9f04b3",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/conn-prepared-statements.md": {
+    "mtime": 1783700861.8366582,
+    "ast_hash": "b53eb9dea11d6da338a8b6f9e67a3622",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/data-batch-inserts.md": {
+    "mtime": 1783700861.8376613,
+    "ast_hash": "6801a3a2d414dfd6a4c79970a37e795d",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/data-n-plus-one.md": {
+    "mtime": 1783700861.8386574,
+    "ast_hash": "c3ed0702a116d654602120bd5cd7713e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/data-pagination.md": {
+    "mtime": 1783700861.8406584,
+    "ast_hash": "59be210a420d34780949ce16d5b4a8d5",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/data-upsert.md": {
+    "mtime": 1783700861.8416574,
+    "ast_hash": "3ae132bce8b5368e1e4a426d55ca4567",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/lock-advisory.md": {
+    "mtime": 1783700861.8436565,
+    "ast_hash": "ff943eb307d8b6e12cc6ab2bcb6e2d18",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/lock-deadlock-prevention.md": {
+    "mtime": 1783700861.8446567,
+    "ast_hash": "685b04bcae3a0720e84f1507d243e959",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/lock-short-transactions.md": {
+    "mtime": 1783700861.8456628,
+    "ast_hash": "3c947d59e0359f3b236bf2ad1da52c61",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/lock-skip-locked.md": {
+    "mtime": 1783700861.8466587,
+    "ast_hash": "098d38542f44b656aa55923f06db74c1",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/monitor-explain-analyze.md": {
+    "mtime": 1783700861.8746545,
+    "ast_hash": "1fd19c373a0ff272129edd215a96e3a1",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/monitor-pg-stat-statements.md": {
+    "mtime": 1783700861.875659,
+    "ast_hash": "2f0cab7f72ad9dfe2cba469aaaacc733",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/monitor-vacuum-analyze.md": {
+    "mtime": 1783700861.8766544,
+    "ast_hash": "25e738451079707ac54d21364b5538e1",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/query-composite-indexes.md": {
+    "mtime": 1783700861.8776581,
+    "ast_hash": "5017f09940ed04b5b3ad836e426d9084",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/query-covering-indexes.md": {
+    "mtime": 1783700861.8786879,
+    "ast_hash": "fd05c38771229d97f2d4065d0af0df70",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/query-index-types.md": {
+    "mtime": 1783700861.879656,
+    "ast_hash": "e2395c6ef69ea2f147c9ab1d18c7f879",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/query-missing-indexes.md": {
+    "mtime": 1783700861.880656,
+    "ast_hash": "786767ec677862bad060fc1b4ae0a94f",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/query-partial-indexes.md": {
+    "mtime": 1783700861.8816564,
+    "ast_hash": "249d8fccca68c332e946b499531f21d8",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/schema-constraints.md": {
+    "mtime": 1783700861.882656,
+    "ast_hash": "476ca283cfda6c5517d94c25c41de775",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/schema-data-types.md": {
+    "mtime": 1783700861.9046562,
+    "ast_hash": "cd65e34969ebce0bce84f622f5072477",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/schema-foreign-key-indexes.md": {
+    "mtime": 1783700861.9056585,
+    "ast_hash": "8b99b21a07cadd2d85c6c16f416b5464",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/schema-lowercase-identifiers.md": {
+    "mtime": 1783700861.906658,
+    "ast_hash": "632ea53a0da6fe7651e354f3744d998e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/schema-partitioning.md": {
+    "mtime": 1783700861.9076607,
+    "ast_hash": "0f2fe9016bf9aa79dd30d7d6a4a03358",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/schema-primary-keys.md": {
+    "mtime": 1783700861.9086602,
+    "ast_hash": "a732b1a95b6c231d47af14b715c6b9b0",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/security-privileges.md": {
+    "mtime": 1783700861.9096582,
+    "ast_hash": "e6fbc325f8f3af1cab3e1cb99d9f146a",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/security-rls-basics.md": {
+    "mtime": 1783700861.9116573,
+    "ast_hash": "82ee8b214f39f78c9e88061b6f890508",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase-postgres-best-practices/references/security-rls-performance.md": {
+    "mtime": 1783700861.9126568,
+    "ast_hash": "ad2ccf01dfd325527b18256c3e25b842",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase/CHANGELOG.md": {
+    "mtime": 1783700861.9146588,
+    "ast_hash": "260e8f41018eb83191046f32fb863f05",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase/SKILL.md": {
+    "mtime": 1783700861.915658,
+    "ast_hash": "462faaec084676fa37eff6f82b8dd90b",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase/assets/feedback-issue-template.md": {
+    "mtime": 1783700861.9166548,
+    "ast_hash": "e2c8b4f1a20e46315dd7609540d9b8d4",
+    "semantic_hash": ""
+  },
+  ".agents/skills/supabase/references/skill-feedback.md": {
+    "mtime": 1783700862.0086656,
+    "ast_hash": "c9fa098e2ec8bdce9d6a0f8a64d2c6c0",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1783681230.6599145,
+    "ast_hash": "d109aab5810b1f644304cc1ca90eb2fc",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1783537197.0,
+    "ast_hash": "c1e31422cb07d5f5a78a23e471068230",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1783537197.0,
+    "ast_hash": "cd6da4031bfeb22503a8739feee6c60a",
+    "semantic_hash": ""
+  },
+  "public/offline.html": {
+    "mtime": 1783537197.0,
+    "ast_hash": "12e0c21ab9c0b0bed16f2059df6fa3cd",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/academic-knowledge/SKILL.md": {
+    "mtime": 1783681230.7014008,
+    "ast_hash": "c6536c050425fe0d856da38c04992bfc",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/academic-knowledge/rules.md": {
+    "mtime": 1783681230.7023408,
+    "ast_hash": "5e12ba2fff4b523304bd5e96803342a9",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/academic-writing/SKILL.md": {
+    "mtime": 1783537197.0,
+    "ast_hash": "4b2fe51b4cf6cbb9d7faa49591765660",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/academic-writing/rules.md": {
+    "mtime": 1783537197.0,
+    "ast_hash": "0ccad6ccbb066c495cc56fb9981d0c7d",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/adaptive-learning/SKILL.md": {
+    "mtime": 1783681230.703955,
+    "ast_hash": "9c8df586469ba2900bf3169c21c61272",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/adaptive-learning/rules.md": {
+    "mtime": 1783681230.7049487,
+    "ast_hash": "328c9500164ffcec858940803f5f760b",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/assessment/SKILL.md": {
+    "mtime": 1783681230.7059028,
+    "ast_hash": "cf5caf4ae0368a1d16f0124c6e3004c0",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/assessment/rules.md": {
+    "mtime": 1783681230.707585,
+    "ast_hash": "836617a08880bfc5f92976117b154e45",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/citation-validation/SKILL.md": {
+    "mtime": 1783537197.0,
+    "ast_hash": "525c9966bcdfcfa56de43a3e641a5161",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/citation-validation/rules.md": {
+    "mtime": 1783537197.0,
+    "ast_hash": "259ffbbc168fb65fddded03f9202358f",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/clinical-cases/SKILL.md": {
+    "mtime": 1783681230.708901,
+    "ast_hash": "2b4683770a71d2ce8868cefd3281f2e8",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/clinical-cases/rules.md": {
+    "mtime": 1783681230.7109015,
+    "ast_hash": "e35c7148ee66931fb7464c62105ca9bb",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/clinical-reasoning/SKILL.md": {
+    "mtime": 1783681230.7118995,
+    "ast_hash": "d036fd2bb4ca84ca9408a7a1ee723eb5",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/clinical-reasoning/rules.md": {
+    "mtime": 1783681230.7129498,
+    "ast_hash": "cc0d334cb3b7ac3c8cd76332ae7df27a",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/collaboration/SKILL.md": {
+    "mtime": 1783681230.7148998,
+    "ast_hash": "073d5c4f7394464599da8632ae8abc09",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/collaboration/rules.md": {
+    "mtime": 1783681230.7158978,
+    "ast_hash": "6d0120a17d16e2410c8bde1137b77231",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/continuous-learning/SKILL.md": {
+    "mtime": 1783681230.716898,
+    "ast_hash": "aab4e09cfffffaa921eb55e546b6fdf0",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/continuous-learning/rules.md": {
+    "mtime": 1783681230.7179482,
+    "ast_hash": "a87c93b27c4021d3e9c66715e1f9cbcd",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/curriculum-mapping/SKILL.md": {
+    "mtime": 1783681230.7198994,
+    "ast_hash": "286a35b4bfc15cafc64f0cfdef252410",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/curriculum-mapping/rules.md": {
+    "mtime": 1783681230.7208982,
+    "ast_hash": "f3166f2e2245faf4627b909e3da96a0c",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/disease-knowledge/SKILL.md": {
+    "mtime": 1783681230.7218988,
+    "ast_hash": "dc45bfed7fa2e304512d478ff9749164",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/disease-knowledge/rules.md": {
+    "mtime": 1783681230.7228982,
+    "ast_hash": "c682a918e6a556eb6519535c81250107",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/disease-monograph/SKILL.md": {
+    "mtime": 1783681230.7249007,
+    "ast_hash": "ff45a9bdb59b0def812f45138f3c99bd",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/disease-monograph/rules.md": {
+    "mtime": 1783681230.7259014,
+    "ast_hash": "451ba8555092e87c84360777bc51fe96",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/document-intelligence/SKILL.md": {
+    "mtime": 1783681230.7269022,
+    "ast_hash": "54122ebdcc44455ac3ff237debc93c46",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/document-intelligence/rules.md": {
+    "mtime": 1783681230.7283635,
+    "ast_hash": "4a3f3a38e83764b5703314cfbe454979",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/drug-information/SKILL.md": {
+    "mtime": 1783681230.7299008,
+    "ast_hash": "3f5c3ce255bd796b6f9f9eebda6341fb",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/drug-information/rules.md": {
+    "mtime": 1783681230.7299008,
+    "ast_hash": "291a20caa58ce5f151b548336430fe9d",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/drug-monograph/SKILL.md": {
+    "mtime": 1783681230.7319012,
+    "ast_hash": "bf12e03069ca0937c0d66957a0966e0f",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/drug-monograph/rules.md": {
+    "mtime": 1783681230.7329023,
+    "ast_hash": "933da0ac049a0064d9a9c1b92a2a3f04",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/evidence-based-medicine/SKILL.md": {
+    "mtime": 1783537197.0,
+    "ast_hash": "0ecaaf1afb2f80346b34bc537e512d62",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/evidence-based-medicine/rules.md": {
+    "mtime": 1783537197.0,
+    "ast_hash": "7b11a03bb5b3950f13ce2f7cb9ca235a",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/evidence-synthesis/SKILL.md": {
+    "mtime": 1783681230.7339013,
+    "ast_hash": "c4a744b1ff695173355a43951c3372b1",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/evidence-synthesis/rules.md": {
+    "mtime": 1783681230.734901,
+    "ast_hash": "7b4b854af2b5b8d39d630057de3f483e",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/export-print/SKILL.md": {
+    "mtime": 1783681230.736902,
+    "ast_hash": "63ed68d2182ba8d8432de3f8045193cf",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/export-print/rules.md": {
+    "mtime": 1783681230.7598982,
+    "ast_hash": "d5d949831a264f3df6b6d483d9551847",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/flashcard-intelligence/SKILL.md": {
+    "mtime": 1783681230.7623284,
+    "ast_hash": "9b1499aba0800c0112aee24862a8bbec",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/flashcard-intelligence/rules.md": {
+    "mtime": 1783681230.7635932,
+    "ast_hash": "43edc7f14be1b95d10173fda103c2443",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/guideline-integration/SKILL.md": {
+    "mtime": 1783681230.7979002,
+    "ast_hash": "bf0266c55975eaa5c0ac06fd177a155b",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/guideline-integration/rules.md": {
+    "mtime": 1783681230.7989016,
+    "ast_hash": "0fbd471c0ddb7dba8c14587c039be0c7",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/journal-intelligence/SKILL.md": {
+    "mtime": 1783681230.8009012,
+    "ast_hash": "80a7b304fafec39a2769bf0bfe145f9f",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/journal-intelligence/rules.md": {
+    "mtime": 1783681230.801901,
+    "ast_hash": "096a33b65bea0f7e24c715b7d1e1078d",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/knowledge-graph/SKILL.md": {
+    "mtime": 1783681230.8038998,
+    "ast_hash": "0862902b36c6e48cdf32544a0fcded1e",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/knowledge-graph/rules.md": {
+    "mtime": 1783681230.8054657,
+    "ast_hash": "4d862dbb9b1b37a5e4adb99e8eeda724",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/knowledge-maintenance/SKILL.md": {
+    "mtime": 1783681230.8072991,
+    "ast_hash": "85d894e0ee346ce1df2b16c78857dcee",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/knowledge-maintenance/rules.md": {
+    "mtime": 1783681230.8084686,
+    "ast_hash": "e593c3f7d25de5096808cb41c92c9ea3",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/knowledge-retrieval/SKILL.md": {
+    "mtime": 1783681230.8099012,
+    "ast_hash": "860d1ec448ff496052a0f18fd5e3d383",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/knowledge-retrieval/rules.md": {
+    "mtime": 1783681230.8499,
+    "ast_hash": "b532e43bb6288adfc7bee82c8f121cea",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/learning-objective/SKILL.md": {
+    "mtime": 1783681230.8509963,
+    "ast_hash": "16e5b9d1a99c98d06ae42ad7c334573e",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/learning-objective/rules.md": {
+    "mtime": 1783681230.8520906,
+    "ast_hash": "fb9cdd33c5027bd1b6927f99a4633e01",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/memory/SKILL.md": {
+    "mtime": 1783681230.884906,
+    "ast_hash": "dab059d1cbf413ffa90291ae2a59c4df",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/memory/rules.md": {
+    "mtime": 1783681230.8859663,
+    "ast_hash": "2d1557e95c1c4eb54525dc3d41afc4df",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/online-library/SKILL.md": {
+    "mtime": 1783681230.8879015,
+    "ast_hash": "89ea0e7dae74802e84021e3c772d63bc",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/online-library/rules.md": {
+    "mtime": 1783681230.9383588,
+    "ast_hash": "1d44c79963944e42f289bde0fb305803",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/oral-practice/SKILL.md": {
+    "mtime": 1783681230.9399855,
+    "ast_hash": "bd8206d2250befc0975773c35b296056",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/oral-practice/rules.md": {
+    "mtime": 1783681230.9409013,
+    "ast_hash": "26542dd4b3201ea2a7b0b7b855fb185d",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/performance-caching/SKILL.md": {
+    "mtime": 1783681230.951897,
+    "ast_hash": "688bbe42879ca6fd4455e9ada6624178",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/performance-caching/rules.md": {
+    "mtime": 1783681230.9529245,
+    "ast_hash": "fabf1d22808bf62a1962fa64995f9ad3",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/pharmacy-research/SKILL.md": {
+    "mtime": 1783537197.0,
+    "ast_hash": "5a692395bb93f2b2b0478111e9e410c4",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/pharmacy-research/rules.md": {
+    "mtime": 1783537197.0,
+    "ast_hash": "1771cdf325b31199371c38a185ecffcd",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/presentation/SKILL.md": {
+    "mtime": 1783681230.954407,
+    "ast_hash": "c0e578e679779c0cee24790787b9e6e7",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/presentation/rules.md": {
+    "mtime": 1783681230.9559104,
+    "ast_hash": "b10654842e2016a93f5b70ebd7eb0f02",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/question-bank/SKILL.md": {
+    "mtime": 1783681230.9569,
+    "ast_hash": "69875e2d476369f72762fa71cdb78fa0",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/question-bank/rules.md": {
+    "mtime": 1783681230.9580715,
+    "ast_hash": "1ef229e7f6a11834fb090e0f72c55f67",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/research/SKILL.md": {
+    "mtime": 1783681230.960954,
+    "ast_hash": "9d3c5da4d3a41422e7897cbe22aa3b6d",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/research/rules.md": {
+    "mtime": 1783681230.961899,
+    "ast_hash": "451983660474157d598f18d899914a15",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/revision-intelligence/SKILL.md": {
+    "mtime": 1783681230.962904,
+    "ast_hash": "766cd0705d20decfb0559af77bde0d8a",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/revision-intelligence/rules.md": {
+    "mtime": 1783681230.984065,
+    "ast_hash": "70ba29b3756fb44c08f92b364c966d27",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/semantic-search/SKILL.md": {
+    "mtime": 1783681230.987581,
+    "ast_hash": "03954818546e06fadfea9a3ef23059bd",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/semantic-search/rules.md": {
+    "mtime": 1783681230.9890757,
+    "ast_hash": "1685d6c2c650f5daf0e97370442b45a4",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/study-planning/SKILL.md": {
+    "mtime": 1783681231.0019813,
+    "ast_hash": "641e1438f6c06278a0f6da6232933497",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/study-planning/rules.md": {
+    "mtime": 1783681231.0029013,
+    "ast_hash": "6f1699fb9a3b31531b5dc309be30bfab",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/teaching/SKILL.md": {
+    "mtime": 1783681231.0079021,
+    "ast_hash": "d7f99035f0552169adbd90b21eb5e945",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/teaching/rules.md": {
+    "mtime": 1783681231.012922,
+    "ast_hash": "6cadb602a1df2702fb962dae81430f4d",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/web-crawling/SKILL.md": {
+    "mtime": 1783681231.0374978,
+    "ast_hash": "7c9ab7f1ecd09ff7063f3068f8350a25",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/web-crawling/rules.md": {
+    "mtime": 1783681231.0393207,
+    "ast_hash": "bcccf6ece7aba27390aec27cbd8faddf",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/web-research/SKILL.md": {
+    "mtime": 1783681231.041904,
+    "ast_hash": "23548d297b034bb8efbb2d485b18495d",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/web-research/rules.md": {
+    "mtime": 1783681231.044312,
+    "ast_hash": "21b998c19f3d77b32fdadf0f9f3c8433",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/workspace-intelligence/SKILL.md": {
+    "mtime": 1783681231.0478995,
+    "ast_hash": "90768b975e55d9f58b9523660cd25f73",
+    "semantic_hash": ""
+  },
+  "src/server/ai/skills/workspace-intelligence/rules.md": {
+    "mtime": 1783681231.048902,
+    "ast_hash": "b2b85253e5f7dc427480b82af2113797",
+    "semantic_hash": ""
+  },
+  "public/apple-touch-icon.png": {
+    "mtime": 1783537197.0,
+    "ast_hash": "7fb495ff2146217200fdc7ae9bb7980c",
+    "semantic_hash": ""
+  },
+  "public/clinova_logo.jpg": {
+    "mtime": 1783537197.0,
+    "ast_hash": "d6c1d88766e446affa22aaa692c54a30",
+    "semantic_hash": ""
+  },
+  "public/favicon.svg": {
+    "mtime": 1783537197.0,
+    "ast_hash": "de3e937258a1299a856e8da34976153c",
+    "semantic_hash": ""
+  },
+  "public/masked-icon.svg": {
+    "mtime": 1783537197.0,
+    "ast_hash": "de3e937258a1299a856e8da34976153c",
+    "semantic_hash": ""
+  },
+  "public/pwa-192x192.png": {
+    "mtime": 1783537197.0,
+    "ast_hash": "7fb495ff2146217200fdc7ae9bb7980c",
+    "semantic_hash": ""
+  },
+  "public/pwa-512x512.png": {
+    "mtime": 1783537197.0,
+    "ast_hash": "7fb495ff2146217200fdc7ae9bb7980c",
+    "semantic_hash": ""
+  },
+  "src/assets/images/clinova_logo_1782286653661.jpg": {
+    "mtime": 1783537197.0,
+    "ast_hash": "2c30b134eac0e0bd94a5c0c84bc872d4",
+    "semantic_hash": ""
+  },
+  "src/assets/images/clinova_logo_1782414107621.jpg": {
+    "mtime": 1783537197.0,
+    "ast_hash": "be69ecc3df9dd814149a05be602d6571",
+    "semantic_hash": ""
   }
 }

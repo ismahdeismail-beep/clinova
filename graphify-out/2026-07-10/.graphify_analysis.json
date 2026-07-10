@@ -673,28 +673,6 @@
       "src_engine_eventbus_eventbus_on"
     ],
     "14": [
-      "scripts_generategapcases",
-      "scripts_generategapcases_existing_files",
-      "scripts_generategapcases_main",
-      "scripts_generategapcases_plantemplates",
-      "scripts_generategapcases_q",
-      "scripts_generategapcases_safename",
-      "scripts_templates_dermatology",
-      "scripts_templates_dermatology_dermatology_templates",
-      "scripts_templates_dermatology_t",
-      "scripts_templates_gapunits",
-      "scripts_templates_gapunits_ent_templates",
-      "scripts_templates_gapunits_geriatric_templates",
-      "scripts_templates_gapunits_obstetrics_gynaecology_templates",
-      "scripts_templates_gapunits_paediatric_templates",
-      "scripts_templates_ophthalmology",
-      "scripts_templates_ophthalmology_ophthalmology_templates",
-      "scripts_templates_ophthalmology_t",
-      "scripts_templates_paininflammation",
-      "scripts_templates_paininflammation_pain_inflammation_templates",
-      "scripts_templates_paininflammation_tpl"
-    ],
-    "15": [
       "src_app_adminloginscreen",
       "src_app_sidebar",
       "src_app_userloginscreen",
@@ -716,7 +694,7 @@
       "src_screens_loginscreen",
       "src_screens_loginscreen_loginscreen"
     ],
-    "16": [
+    "15": [
       "scripts_generatecases",
       "scripts_generatecases_female_occupations",
       "scripts_generatecases_generatecasefromtemplate",
@@ -736,6 +714,25 @@
       "scripts_generatecases_roundto",
       "scripts_generatecases_vitalsigns",
       "scripts_generatecases_vitalsstring"
+    ],
+    "16": [
+      "scripts_generategapcases",
+      "scripts_generategapcases_existing_files",
+      "scripts_generategapcases_main",
+      "scripts_generategapcases_plantemplates",
+      "scripts_generategapcases_q",
+      "scripts_generategapcases_safename",
+      "scripts_templates_dermatology",
+      "scripts_templates_dermatology_dermatology_templates",
+      "scripts_templates_dermatology_t",
+      "scripts_templates_gapunits",
+      "scripts_templates_gapunits_ent_templates",
+      "scripts_templates_gapunits_geriatric_templates",
+      "scripts_templates_gapunits_obstetrics_gynaecology_templates",
+      "scripts_templates_gapunits_paediatric_templates",
+      "scripts_templates_ophthalmology",
+      "scripts_templates_ophthalmology_ophthalmology_templates",
+      "scripts_templates_ophthalmology_t"
     ],
     "17": [
       "src_components_overlayhost",
@@ -819,9 +816,9 @@
       "src_screens_notificationsscreen_notificationsscreen"
     ],
     "23": [
-      "browser_image_compression",
+      "clsx",
       "package_dependencies",
-      "package_dependencies_browser_image_compression",
+      "package_dependencies_clsx",
       "package_dependencies_react_dom",
       "package_dependencies_react_router_dom",
       "package_dependencies_supabase_ssr",
@@ -912,721 +909,726 @@
       "scripts_templates_endocrine_tpl"
     ],
     "36": [
+      "scripts_templates_paininflammation",
+      "scripts_templates_paininflammation_pain_inflammation_templates",
+      "scripts_templates_paininflammation_tpl"
+    ],
+    "37": [
       "scripts_templates_renal",
       "scripts_templates_renal_renal_templates",
       "scripts_templates_renal_t"
     ],
-    "37": [
+    "38": [
       "scripts_templates_toxicology",
       "scripts_templates_toxicology_t",
       "scripts_templates_toxicology_toxicology_templates"
     ],
-    "38": [
+    "39": [
       "append_placeholders",
       "append_placeholders_content"
     ],
-    "39": [
-      "clsx",
-      "package_dependencies_clsx"
-    ],
     "40": [
+      "browser_image_compression",
+      "package_dependencies_browser_image_compression"
+    ],
+    "41": [
       "d3",
       "package_dependencies_d3"
     ],
-    "41": [
+    "42": [
       "docx",
       "package_dependencies_docx"
     ],
-    "42": [
+    "43": [
       "dotenv",
       "package_dependencies_dotenv"
     ],
-    "43": [
+    "44": [
       "express",
       "package_dependencies_express"
     ],
-    "44": [
+    "45": [
       "firebase",
       "package_dependencies_firebase"
     ],
-    "45": [
+    "46": [
       "google_genai",
       "package_dependencies_google_genai"
     ],
-    "46": [
+    "47": [
       "html2canvas",
       "package_dependencies_html2canvas"
     ],
-    "47": [
+    "48": [
       "idb",
       "package_dependencies_idb"
     ],
-    "48": [
+    "49": [
       "lucide_react",
       "package_dependencies_lucide_react"
     ],
-    "49": [
+    "50": [
       "motion",
       "package_dependencies_motion"
     ],
-    "50": [
+    "51": [
       "multer",
       "package_dependencies_multer"
     ],
-    "51": [
+    "52": [
       "package_dependencies_react",
       "package_json_react"
     ],
-    "52": [
+    "53": [
       "package_dependencies_react_markdown",
       "react_markdown"
     ],
-    "53": [
+    "54": [
       "package_dependencies_recharts",
       "recharts"
     ],
-    "54": [
+    "55": [
       "package_dependencies_supabase_supabase_js",
       "supabase_supabase_js"
     ],
-    "55": [
+    "56": [
       "package_dependencies_supermemory",
       "supermemory"
     ],
-    "56": [
+    "57": [
       "package_dependencies_tailwind_merge",
       "tailwind_merge"
     ],
-    "57": [
+    "58": [
       "package_dependencies_tailwindcss_vite",
       "tailwindcss_vite"
     ],
-    "58": [
+    "59": [
       "package_dependencies_types_d3",
       "types_d3"
     ],
-    "59": [
+    "60": [
       "package_dependencies_vite",
       "vite"
     ],
-    "60": [
+    "61": [
       "package_dependencies_vitejs_plugin_react",
       "vitejs_plugin_react"
     ],
-    "61": [
+    "62": [
       "package_dependencies_xyflow_react",
       "xyflow_react"
     ],
-    "62": [
+    "63": [
       "package_dependencies_zod",
       "zod"
     ],
-    "63": [
+    "64": [
       "package_dependencies_zustand",
       "zustand"
     ],
-    "64": [
+    "65": [
       "scripts_applymigrationapi",
       "scripts_applymigrationapi_sql"
     ],
-    "65": [
+    "66": [
       "scripts_testinclude",
       "scripts_testinclude_s"
     ],
-    "66": [
+    "67": [
       "scripts_testmapper",
       "scripts_testmapper_unitforspecialty"
     ],
-    "67": [
+    "68": [
       "separate_overview",
       "separate_overview_content"
     ],
-    "68": [
+    "69": [
       "src_components_clinicaldataattribution",
       "src_components_clinicaldataattribution_clinicaldataattribution"
     ],
-    "69": [
+    "70": [
       "vercel",
       "vercel_rewrites"
     ],
-    "70": [
+    "71": [
       "vite_config",
       "vite_config_onwarn"
     ],
-    "71": [
+    "72": [
       "api_index"
     ],
-    "72": [
+    "73": [
       "authenticator"
     ],
-    "73": [
+    "74": [
       "baseexception"
     ],
-    "74": [
+    "75": [
       "bool"
     ],
-    "75": [
+    "76": [
       "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_domain_domain_csproj"
     ],
-    "76": [
+    "77": [
       "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_fixtures_src_domain_domain_csproj"
     ],
-    "77": [
+    "78": [
       "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_fixtures_src_webapi_webapi_csproj"
     ],
-    "78": [
+    "79": [
       "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_fixtures_tests_tests_tests_csproj"
     ],
-    "79": [
+    "80": [
       "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_infrastructure_infrastructure_csproj"
     ],
-    "80": [
+    "81": [
       "constant"
     ],
-    "81": [
+    "82": [
       "digraph"
     ],
-    "82": [
+    "83": [
       "double"
     ],
-    "83": [
+    "84": [
       "enum"
     ],
-    "84": [
+    "85": [
       "float64"
     ],
-    "85": [
+    "86": [
       "global"
     ],
-    "86": [
+    "87": [
       "hashmap"
     ],
-    "87": [
+    "88": [
       "hasname"
     ],
-    "88": [
+    "89": [
       "injectable"
     ],
-    "89": [
+    "90": [
       "ipv4address"
     ],
-    "90": [
+    "91": [
       "ipv6address"
     ],
-    "91": [
+    "92": [
       "kernel"
     ],
-    "92": [
+    "93": [
       "list"
     ],
-    "93": [
+    "94": [
       "loggable"
     ],
-    "94": [
+    "95": [
       "module"
     ],
-    "95": [
+    "96": [
       "multidigraph"
     ],
-    "96": [
+    "97": [
       "mutablelist"
     ],
-    "97": [
+    "98": [
       "namespace"
     ],
-    "98": [
+    "99": [
       "ndarray"
     ],
-    "99": [
+    "100": [
       "nsobject"
     ],
-    "100": [
+    "101": [
       "nsstring"
     ],
-    "101": [
+    "102": [
       "observableobject"
     ],
-    "102": [
+    "103": [
       "openerdirector"
     ],
-    "103": [
+    "104": [
       "override"
     ],
-    "104": [
+    "105": [
       "processor"
     ],
-    "105": [
+    "106": [
       "rectangle"
     ],
-    "106": [
+    "107": [
       "relaycommand"
     ],
-    "107": [
+    "108": [
       "routedeventargs"
     ],
-    "108": [
+    "109": [
       "sampledelegate"
     ],
-    "109": [
+    "110": [
       "self"
     ],
-    "110": [
+    "111": [
       "src_server_airouter_providerstatusescompat"
     ],
-    "111": [
+    "112": [
       "src_vite_env_d"
     ],
-    "112": [
+    "113": [
       "str"
     ],
-    "113": [
+    "114": [
       "task"
     ],
-    "114": [
+    "115": [
       "testclient"
     ],
-    "115": [
+    "116": [
       "tools_graphify_graphify_affected_py_path"
     ],
-    "116": [
+    "117": [
       "tools_graphify_graphify_build_py_path"
     ],
-    "117": [
+    "118": [
       "tools_graphify_graphify_cache_py_path"
     ],
-    "118": [
+    "119": [
       "tools_graphify_graphify_callflow_html_py_counter"
     ],
-    "119": [
+    "120": [
       "tools_graphify_graphify_callflow_html_py_path"
     ],
-    "120": [
+    "121": [
       "tools_graphify_graphify_cargo_introspect_py_any"
     ],
-    "121": [
+    "122": [
       "tools_graphify_graphify_cargo_introspect_py_path"
     ],
-    "122": [
+    "123": [
       "tools_graphify_graphify_cli_py_path"
     ],
-    "123": [
+    "124": [
       "tools_graphify_graphify_detect_py_path"
     ],
-    "124": [
+    "125": [
       "tools_graphify_graphify_diagnostics_py_any"
     ],
-    "125": [
+    "126": [
       "tools_graphify_graphify_diagnostics_py_counter"
     ],
-    "126": [
+    "127": [
       "tools_graphify_graphify_diagnostics_py_path"
     ],
-    "127": [
+    "128": [
       "tools_graphify_graphify_export_py_path"
     ],
-    "128": [
+    "129": [
       "tools_graphify_graphify_extract_py_any"
     ],
-    "129": [
+    "130": [
       "tools_graphify_graphify_extract_py_path"
     ],
-    "130": [
+    "131": [
       "tools_graphify_graphify_extractors_apex_py_path"
     ],
-    "131": [
+    "132": [
       "tools_graphify_graphify_extractors_base_py_path"
     ],
-    "132": [
+    "133": [
       "tools_graphify_graphify_extractors_bash_py_path"
     ],
-    "133": [
+    "134": [
       "tools_graphify_graphify_extractors_blade_py_path"
     ],
-    "134": [
+    "135": [
       "tools_graphify_graphify_extractors_csharp_py_path"
     ],
-    "135": [
+    "136": [
       "tools_graphify_graphify_extractors_dart_py_path"
     ],
-    "136": [
+    "137": [
       "tools_graphify_graphify_extractors_dm_py_path"
     ],
-    "137": [
+    "138": [
       "tools_graphify_graphify_extractors_elixir_py_path"
     ],
-    "138": [
+    "139": [
       "tools_graphify_graphify_extractors_engine_py_path"
     ],
-    "139": [
+    "140": [
       "tools_graphify_graphify_extractors_fortran_py_path"
     ],
-    "140": [
+    "141": [
       "tools_graphify_graphify_extractors_go_py_path"
     ],
-    "141": [
+    "142": [
       "tools_graphify_graphify_extractors_json_config_py_path"
     ],
-    "142": [
+    "143": [
       "tools_graphify_graphify_extractors_julia_py_path"
     ],
-    "143": [
+    "144": [
       "tools_graphify_graphify_extractors_markdown_py_path"
     ],
-    "144": [
+    "145": [
       "tools_graphify_graphify_extractors_objc_py_path"
     ],
-    "145": [
+    "146": [
       "tools_graphify_graphify_extractors_pascal_forms_py_path"
     ],
-    "146": [
+    "147": [
       "tools_graphify_graphify_extractors_pascal_py_path"
     ],
-    "147": [
+    "148": [
       "tools_graphify_graphify_extractors_powershell_py_path"
     ],
-    "148": [
+    "149": [
       "tools_graphify_graphify_extractors_razor_py_path"
     ],
-    "149": [
+    "150": [
       "tools_graphify_graphify_extractors_resolution_py_any"
     ],
-    "150": [
+    "151": [
       "tools_graphify_graphify_extractors_resolution_py_path"
     ],
-    "151": [
+    "152": [
       "tools_graphify_graphify_extractors_rust_py_path"
     ],
-    "152": [
+    "153": [
       "tools_graphify_graphify_extractors_sln_py_path"
     ],
-    "153": [
+    "154": [
       "tools_graphify_graphify_extractors_sql_py_path"
     ],
-    "154": [
+    "155": [
       "tools_graphify_graphify_extractors_terraform_py_path"
     ],
-    "155": [
+    "156": [
       "tools_graphify_graphify_extractors_verilog_py_path"
     ],
-    "156": [
+    "157": [
       "tools_graphify_graphify_extractors_zig_py_path"
     ],
-    "157": [
+    "158": [
       "tools_graphify_graphify_file_slice_py_path"
     ],
-    "158": [
+    "159": [
       "tools_graphify_graphify_global_graph_py_path"
     ],
-    "159": [
+    "160": [
       "tools_graphify_graphify_google_workspace_py_any"
     ],
-    "160": [
+    "161": [
       "tools_graphify_graphify_google_workspace_py_path"
     ],
-    "161": [
+    "162": [
       "tools_graphify_graphify_hooks_py_path"
     ],
-    "162": [
+    "163": [
       "tools_graphify_graphify_ingest_py_path"
     ],
-    "163": [
+    "164": [
       "tools_graphify_graphify_install_py_path"
     ],
-    "164": [
+    "165": [
       "tools_graphify_graphify_llm_py_path"
     ],
-    "165": [
+    "166": [
       "tools_graphify_graphify_main_py_path"
     ],
-    "166": [
+    "167": [
       "tools_graphify_graphify_manifest_ingest_py_any"
     ],
-    "167": [
+    "168": [
       "tools_graphify_graphify_manifest_ingest_py_path"
     ],
-    "168": [
+    "169": [
       "tools_graphify_graphify_mcp_ingest_py_any"
     ],
-    "169": [
+    "170": [
       "tools_graphify_graphify_mcp_ingest_py_path"
     ],
-    "170": [
+    "171": [
       "tools_graphify_graphify_paths_py_path"
     ],
-    "171": [
+    "172": [
       "tools_graphify_graphify_prs_py_path"
     ],
-    "172": [
+    "173": [
       "tools_graphify_graphify_querylog_py_any"
     ],
-    "173": [
+    "174": [
       "tools_graphify_graphify_querylog_py_path"
     ],
-    "174": [
+    "175": [
       "tools_graphify_graphify_reflect_py_any"
     ],
-    "175": [
+    "176": [
       "tools_graphify_graphify_reflect_py_datetime"
     ],
-    "176": [
+    "177": [
       "tools_graphify_graphify_reflect_py_path"
     ],
-    "177": [
+    "178": [
       "tools_graphify_graphify_resolver_registry_py_path"
     ],
-    "178": [
+    "179": [
       "tools_graphify_graphify_scip_ingest_py_any"
     ],
-    "179": [
+    "180": [
       "tools_graphify_graphify_security_py_any"
     ],
-    "180": [
+    "181": [
       "tools_graphify_graphify_security_py_path"
     ],
-    "181": [
+    "182": [
       "tools_graphify_graphify_semantic_cleanup_py_path"
     ],
-    "182": [
+    "183": [
       "tools_graphify_graphify_symbol_resolution_py_any"
     ],
-    "183": [
+    "184": [
       "tools_graphify_graphify_symbol_resolution_py_path"
     ],
-    "184": [
+    "185": [
       "tools_graphify_graphify_transcribe_py_path"
     ],
-    "185": [
+    "186": [
       "tools_graphify_graphify_tree_html_py_any"
     ],
-    "186": [
+    "187": [
       "tools_graphify_graphify_tree_html_py_path"
     ],
-    "187": [
+    "188": [
       "tools_graphify_graphify_watch_py_path"
     ],
-    "188": [
+    "189": [
       "tools_graphify_graphify_wiki_py_path"
     ],
-    "189": [
+    "190": [
       "tools_graphify_tests_bench_extract_py_path"
     ],
-    "190": [
+    "191": [
       "tools_graphify_tests_conftest_py_any"
     ],
-    "191": [
+    "192": [
       "tools_graphify_tests_fixtures_objc_mixed_widgetextras_swift_string"
     ],
-    "192": [
+    "193": [
       "tools_graphify_tests_fixtures_sample_cpp_string"
     ],
-    "193": [
+    "194": [
       "tools_graphify_tests_fixtures_sample_cpp_t"
     ],
-    "194": [
+    "195": [
       "tools_graphify_tests_fixtures_sample_cs_httpclient"
     ],
-    "195": [
+    "196": [
       "tools_graphify_tests_fixtures_sample_cu_device"
     ],
-    "196": [
+    "197": [
       "tools_graphify_tests_fixtures_sample_java_httpclient"
     ],
-    "197": [
+    "198": [
       "tools_graphify_tests_fixtures_sample_kt_string"
     ],
-    "198": [
+    "199": [
       "tools_graphify_tests_fixtures_sample_kt_t"
     ],
-    "199": [
+    "200": [
       "tools_graphify_tests_fixtures_sample_metal_device"
     ],
-    "200": [
+    "201": [
       "tools_graphify_tests_fixtures_sample_ps1_string"
     ],
-    "201": [
+    "202": [
       "tools_graphify_tests_fixtures_sample_rs_string"
     ],
-    "202": [
+    "203": [
       "tools_graphify_tests_fixtures_sample_rs_t"
     ],
-    "203": [
+    "204": [
       "tools_graphify_tests_fixtures_sample_scala_int"
     ],
-    "204": [
+    "205": [
       "tools_graphify_tests_fixtures_sample_scala_loggable"
     ],
-    "205": [
+    "206": [
       "tools_graphify_tests_fixtures_sample_scala_string"
     ],
-    "206": [
+    "207": [
       "tools_graphify_tests_fixtures_sample_swift_int"
     ],
-    "207": [
+    "208": [
       "tools_graphify_tests_fixtures_sample_swift_string"
     ],
-    "208": [
+    "209": [
       "tools_graphify_tests_fixtures_xaml_viewmodel_viewmodels_toolkitviewmodel_cs_string"
     ],
-    "209": [
+    "210": [
       "tools_graphify_tests_test_astro_extraction_py_path"
     ],
-    "210": [
+    "211": [
       "tools_graphify_tests_test_build_merge_hyperedges_and_prune_py_path"
     ],
-    "211": [
+    "212": [
       "tools_graphify_tests_test_callflow_html_py_path"
     ],
-    "212": [
+    "213": [
       "tools_graphify_tests_test_cli_export_py_completedprocess"
     ],
-    "213": [
+    "214": [
       "tools_graphify_tests_test_cli_export_py_path"
     ],
-    "214": [
+    "215": [
       "tools_graphify_tests_test_cpp_objc_cross_file_calls_py_path"
     ],
-    "215": [
+    "216": [
       "tools_graphify_tests_test_cross_language_call_resolution_py_path"
     ],
-    "216": [
+    "217": [
       "tools_graphify_tests_test_csharp_type_resolution_py_path"
     ],
-    "217": [
+    "218": [
       "tools_graphify_tests_test_extract_code_only_cli_py_path"
     ],
-    "218": [
+    "219": [
       "tools_graphify_tests_test_extraction_spec_ids_py_path"
     ],
-    "219": [
+    "220": [
       "tools_graphify_tests_test_file_slice_py_path"
     ],
-    "220": [
+    "221": [
       "tools_graphify_tests_test_hooks_py_path"
     ],
-    "221": [
+    "222": [
       "tools_graphify_tests_test_import_extension_resolution_py_path"
     ],
-    "222": [
+    "223": [
       "tools_graphify_tests_test_incremental_py_completedprocess"
     ],
-    "223": [
+    "224": [
       "tools_graphify_tests_test_incremental_py_path"
     ],
-    "224": [
+    "225": [
       "tools_graphify_tests_test_java_member_calls_py_path"
     ],
-    "225": [
+    "226": [
       "tools_graphify_tests_test_java_type_resolution_py_path"
     ],
-    "226": [
+    "227": [
       "tools_graphify_tests_test_js_import_resolution_py_path"
     ],
-    "227": [
+    "228": [
       "tools_graphify_tests_test_manifest_ingest_py_path"
     ],
-    "228": [
+    "229": [
       "tools_graphify_tests_test_mcp_ingest_py_path"
     ],
-    "229": [
+    "230": [
       "tools_graphify_tests_test_merge_graphs_cli_py_path"
     ],
-    "230": [
+    "231": [
       "tools_graphify_tests_test_multigraph_diagnostics_py_path"
     ],
-    "231": [
+    "232": [
       "tools_graphify_tests_test_office_incremental_py_path"
     ],
-    "232": [
+    "233": [
       "tools_graphify_tests_test_phantom_cross_package_call_py_path"
     ],
-    "233": [
+    "234": [
       "tools_graphify_tests_test_phantom_external_import_py_path"
     ],
-    "234": [
+    "235": [
       "tools_graphify_tests_test_pipeline_py_path"
     ],
-    "235": [
+    "236": [
       "tools_graphify_tests_test_prs_py_datetime"
     ],
-    "236": [
+    "237": [
       "tools_graphify_tests_test_python_import_resolution_py_path"
     ],
-    "237": [
+    "238": [
       "tools_graphify_tests_test_rationale_py_path"
     ],
-    "238": [
+    "239": [
       "tools_graphify_tests_test_reflect_py_completedprocess"
     ],
-    "239": [
+    "240": [
       "tools_graphify_tests_test_reflect_py_path"
     ],
-    "240": [
+    "241": [
       "tools_graphify_tests_test_ruby_resolution_py_path"
     ],
-    "241": [
+    "242": [
       "tools_graphify_tests_test_serve_http_py_path"
     ],
-    "242": [
+    "243": [
       "tools_graphify_tests_test_skill_version_warning_py_path"
     ],
-    "243": [
+    "244": [
       "tools_graphify_tests_test_swift_cross_file_calls_py_path"
     ],
-    "244": [
+    "245": [
       "tools_graphify_tests_test_swift_import_resolution_py_path"
     ],
-    "245": [
+    "246": [
       "tools_graphify_tests_test_symbol_resolution_py_path"
     ],
-    "246": [
+    "247": [
       "tools_graphify_tests_test_terraform_py_path"
     ],
-    "247": [
+    "248": [
       "tools_graphify_tests_test_ts_decorators_py_path"
     ],
-    "248": [
+    "249": [
       "tools_graphify_tests_test_ts_generators_py_path"
     ],
-    "249": [
+    "250": [
       "tools_graphify_tests_test_ts_import_require_py_path"
     ],
-    "250": [
+    "251": [
       "tools_graphify_tests_test_ts_inheritance_py_path"
     ],
-    "251": [
+    "252": [
       "tools_graphify_tests_test_ts_namespace_py_path"
     ],
-    "252": [
+    "253": [
       "tools_graphify_tests_test_typescript_module_extensions_py_path"
     ],
-    "253": [
+    "254": [
       "tools_graphify_tests_test_vue_extraction_py_path"
     ],
-    "254": [
+    "255": [
       "tools_graphify_tests_test_wheel_packaging_py_path"
     ],
-    "255": [
+    "256": [
       "tools_graphify_tools_skillgen_gen_py_path"
     ],
-    "256": [
+    "257": [
       "tools_graphify_worked_example_raw_validator_py_exception"
     ],
-    "257": [
+    "258": [
       "tools_graphify_worked_httpx_raw_exceptions_py_exception"
     ],
-    "258": [
+    "259": [
       "uint"
     ],
-    "259": [
+    "260": [
       "vec"
     ],
-    "260": [
+    "261": [
       "vector"
     ],
-    "261": [
+    "262": [
       "void"
     ],
-    "262": [
+    "263": [
       "window"
     ]
   },
@@ -1645,9 +1647,9 @@
     "11": 0.08547008547008547,
     "12": 0.08,
     "13": 0.11428571428571428,
-    "14": 0.15263157894736842,
-    "15": 0.1368421052631579,
-    "16": 0.15204678362573099,
+    "14": 0.1368421052631579,
+    "15": 0.15204678362573099,
+    "16": 0.18382352941176472,
     "17": 0.21794871794871795,
     "18": 0.19696969696969696,
     "19": 0.2727272727272727,
@@ -1669,7 +1671,7 @@
     "35": 0.6666666666666666,
     "36": 0.6666666666666666,
     "37": 0.6666666666666666,
-    "38": 1.0,
+    "38": 0.6666666666666666,
     "39": 1.0,
     "40": 1.0,
     "41": 1.0,
@@ -1893,7 +1895,8 @@
     "259": 1.0,
     "260": 1.0,
     "261": 1.0,
-    "262": 1.0
+    "262": 1.0,
+    "263": 1.0
   },
   "gods": [
     {

@@ -4,12 +4,221 @@
   "graph": {},
   "nodes": [
     {
+      "label": "generate-ai-resources.ts",
+      "file_type": "code",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 26,
+      "norm_label": "generate-ai-resources.ts",
+      "id": "scripts_generate_ai_resources",
+      "community_name": "generate-ai-resources.ts"
+    },
+    {
+      "label": "supabase",
+      "file_type": "code",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L25",
+      "_origin": "ast",
+      "community": 26,
+      "norm_label": "supabase",
+      "id": "scripts_generate_ai_resources_supabase",
+      "community_name": "generate-ai-resources.ts"
+    },
+    {
+      "label": "CaseRecord",
+      "file_type": "code",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L30",
+      "_origin": "ast",
+      "community": 26,
+      "norm_label": "caserecord",
+      "id": "scripts_generate_ai_resources_caserecord",
+      "community_name": "generate-ai-resources.ts"
+    },
+    {
+      "label": "generateStudyGuide()",
+      "file_type": "code",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L46",
+      "_origin": "ast",
+      "community": 26,
+      "norm_label": "generatestudyguide()",
+      "id": "scripts_generate_ai_resources_generatestudyguide",
+      "community_name": "generate-ai-resources.ts"
+    },
+    {
+      "label": "generateFlashcards()",
+      "file_type": "code",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L62",
+      "_origin": "ast",
+      "community": 26,
+      "norm_label": "generateflashcards()",
+      "id": "scripts_generate_ai_resources_generateflashcards",
+      "community_name": "generate-ai-resources.ts"
+    },
+    {
+      "label": "generateQuizQuestions()",
+      "file_type": "code",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L92",
+      "_origin": "ast",
+      "community": 26,
+      "norm_label": "generatequizquestions()",
+      "id": "scripts_generate_ai_resources_generatequizquestions",
+      "community_name": "generate-ai-resources.ts"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L134",
+      "_origin": "ast",
+      "community": 26,
+      "norm_label": "main()",
+      "id": "scripts_generate_ai_resources_main",
+      "community_name": "generate-ai-resources.ts"
+    },
+    {
+      "label": "sync-knowledge-engine.ts",
+      "file_type": "code",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 36,
+      "norm_label": "sync-knowledge-engine.ts",
+      "id": "scripts_sync_knowledge_engine",
+      "community_name": "sync-knowledge-engine.ts"
+    },
+    {
+      "label": "supabase",
+      "file_type": "code",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L29",
+      "_origin": "ast",
+      "community": 36,
+      "norm_label": "supabase",
+      "id": "scripts_sync_knowledge_engine_supabase",
+      "community_name": "sync-knowledge-engine.ts"
+    },
+    {
+      "label": "toSeedId()",
+      "file_type": "code",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L32",
+      "_origin": "ast",
+      "community": 36,
+      "norm_label": "toseedid()",
+      "id": "scripts_sync_knowledge_engine_toseedid",
+      "community_name": "sync-knowledge-engine.ts"
+    },
+    {
+      "label": "batchUpsert()",
+      "file_type": "code",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L40",
+      "_origin": "ast",
+      "community": 36,
+      "norm_label": "batchupsert()",
+      "id": "scripts_sync_knowledge_engine_batchupsert",
+      "community_name": "sync-knowledge-engine.ts"
+    },
+    {
+      "label": "syncDiseaseNodes()",
+      "file_type": "code",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L56",
+      "_origin": "ast",
+      "community": 36,
+      "norm_label": "syncdiseasenodes()",
+      "id": "scripts_sync_knowledge_engine_syncdiseasenodes",
+      "community_name": "sync-knowledge-engine.ts"
+    },
+    {
+      "label": "syncCaseNodes()",
+      "file_type": "code",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L69",
+      "_origin": "ast",
+      "community": 36,
+      "norm_label": "synccasenodes()",
+      "id": "scripts_sync_knowledge_engine_synccasenodes",
+      "community_name": "sync-knowledge-engine.ts"
+    },
+    {
+      "label": "syncRelationships()",
+      "file_type": "code",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L88",
+      "_origin": "ast",
+      "community": 36,
+      "norm_label": "syncrelationships()",
+      "id": "scripts_sync_knowledge_engine_syncrelationships",
+      "community_name": "sync-knowledge-engine.ts"
+    },
+    {
+      "label": "syncDiseases()",
+      "file_type": "code",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L136",
+      "_origin": "ast",
+      "community": 36,
+      "norm_label": "syncdiseases()",
+      "id": "scripts_sync_knowledge_engine_syncdiseases",
+      "community_name": "sync-knowledge-engine.ts"
+    },
+    {
+      "label": "syncDiseaseMonographs()",
+      "file_type": "code",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L147",
+      "_origin": "ast",
+      "community": 36,
+      "norm_label": "syncdiseasemonographs()",
+      "id": "scripts_sync_knowledge_engine_syncdiseasemonographs",
+      "community_name": "sync-knowledge-engine.ts"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L167",
+      "_origin": "ast",
+      "community": 36,
+      "norm_label": "main()",
+      "id": "scripts_sync_knowledge_engine_main",
+      "community_name": "sync-knowledge-engine.ts"
+    },
+    {
+      "label": "vite.config.ts",
+      "file_type": "code",
+      "source_file": "vite.config.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 71,
+      "norm_label": "vite.config.ts",
+      "id": "vite_config",
+      "community_name": "vite.config.ts"
+    },
+    {
+      "label": "onwarn()",
+      "file_type": "code",
+      "source_file": "vite.config.ts",
+      "source_location": "L47",
+      "_origin": "ast",
+      "community": 71,
+      "norm_label": "onwarn()",
+      "id": "vite_config_onwarn",
+      "community_name": "vite.config.ts"
+    },
+    {
       "label": "index.ts",
       "file_type": "code",
       "source_file": "api/index.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 71,
+      "community": 72,
       "norm_label": "index.ts",
       "community_name": "index.ts",
       "id": "api_index"
@@ -20,7 +229,7 @@
       "source_file": "append_placeholders.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 38,
+      "community": 39,
       "norm_label": "append_placeholders.ts",
       "community_name": "append_placeholders.ts",
       "id": "append_placeholders"
@@ -31,7 +240,7 @@
       "source_file": "append_placeholders.ts",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 38,
+      "community": 39,
       "norm_label": "content",
       "community_name": "append_placeholders.ts",
       "id": "append_placeholders_content"
@@ -240,7 +449,7 @@
       "source_file": "package.json",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 45,
+      "community": 46,
       "norm_label": "@google/genai",
       "community_name": "@google/genai",
       "id": "package_dependencies_google_genai"
@@ -251,7 +460,7 @@
       "source_file": "package.json",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 45,
+      "community": 46,
       "norm_label": "@google/genai",
       "community_name": "@google/genai",
       "id": "google_genai"
@@ -284,7 +493,7 @@
       "source_file": "package.json",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 54,
+      "community": 55,
       "norm_label": "@supabase/supabase-js",
       "community_name": "@supabase/supabase-js",
       "id": "package_dependencies_supabase_supabase_js"
@@ -295,7 +504,7 @@
       "source_file": "package.json",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 54,
+      "community": 55,
       "norm_label": "@supabase/supabase-js",
       "community_name": "@supabase/supabase-js",
       "id": "supabase_supabase_js"
@@ -306,7 +515,7 @@
       "source_file": "package.json",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 57,
+      "community": 58,
       "norm_label": "@tailwindcss/vite",
       "community_name": "@tailwindcss/vite",
       "id": "package_dependencies_tailwindcss_vite"
@@ -317,7 +526,7 @@
       "source_file": "package.json",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 57,
+      "community": 58,
       "norm_label": "@tailwindcss/vite",
       "community_name": "@tailwindcss/vite",
       "id": "tailwindcss_vite"
@@ -328,7 +537,7 @@
       "source_file": "package.json",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 58,
+      "community": 59,
       "norm_label": "@types/d3",
       "community_name": "@types/d3",
       "id": "package_dependencies_types_d3"
@@ -339,7 +548,7 @@
       "source_file": "package.json",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 58,
+      "community": 59,
       "norm_label": "@types/d3",
       "community_name": "@types/d3",
       "id": "types_d3"
@@ -350,9 +559,9 @@
       "source_file": "package.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 60,
+      "community": 23,
       "norm_label": "@vitejs/plugin-react",
-      "community_name": "@vitejs/plugin-react",
+      "community_name": "dependencies",
       "id": "package_dependencies_vitejs_plugin_react"
     },
     {
@@ -361,9 +570,9 @@
       "source_file": "package.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 60,
+      "community": 23,
       "norm_label": "@vitejs/plugin-react",
-      "community_name": "@vitejs/plugin-react",
+      "community_name": "dependencies",
       "id": "vitejs_plugin_react"
     },
     {
@@ -372,7 +581,7 @@
       "source_file": "package.json",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 61,
+      "community": 62,
       "norm_label": "@xyflow/react",
       "community_name": "@xyflow/react",
       "id": "package_dependencies_xyflow_react"
@@ -383,7 +592,7 @@
       "source_file": "package.json",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 61,
+      "community": 62,
       "norm_label": "@xyflow/react",
       "community_name": "@xyflow/react",
       "id": "xyflow_react"
@@ -394,9 +603,9 @@
       "source_file": "package.json",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 23,
+      "community": 40,
       "norm_label": "browser-image-compression",
-      "community_name": "dependencies",
+      "community_name": "browser-image-compression",
       "id": "package_dependencies_browser_image_compression"
     },
     {
@@ -405,9 +614,9 @@
       "source_file": "package.json",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 23,
+      "community": 40,
       "norm_label": "browser-image-compression",
-      "community_name": "dependencies",
+      "community_name": "browser-image-compression",
       "id": "browser_image_compression"
     },
     {
@@ -416,7 +625,7 @@
       "source_file": "package.json",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 39,
+      "community": 49,
       "norm_label": "clsx",
       "community_name": "clsx",
       "id": "package_dependencies_clsx"
@@ -427,7 +636,7 @@
       "source_file": "package.json",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 39,
+      "community": 49,
       "norm_label": "clsx",
       "community_name": "clsx",
       "id": "clsx"
@@ -438,7 +647,7 @@
       "source_file": "package.json",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 40,
+      "community": 41,
       "norm_label": "d3",
       "community_name": "d3",
       "id": "package_dependencies_d3"
@@ -449,7 +658,7 @@
       "source_file": "package.json",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 40,
+      "community": 41,
       "norm_label": "d3",
       "community_name": "d3",
       "id": "d3"
@@ -460,7 +669,7 @@
       "source_file": "package.json",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 41,
+      "community": 42,
       "norm_label": "docx",
       "community_name": "docx",
       "id": "package_dependencies_docx"
@@ -471,7 +680,7 @@
       "source_file": "package.json",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 41,
+      "community": 42,
       "norm_label": "docx",
       "community_name": "docx",
       "id": "docx"
@@ -482,7 +691,7 @@
       "source_file": "package.json",
       "source_location": "L31",
       "_origin": "ast",
-      "community": 42,
+      "community": 43,
       "norm_label": "dotenv",
       "community_name": "dotenv",
       "id": "package_dependencies_dotenv"
@@ -493,7 +702,7 @@
       "source_file": "package.json",
       "source_location": "L31",
       "_origin": "ast",
-      "community": 42,
+      "community": 43,
       "norm_label": "dotenv",
       "community_name": "dotenv",
       "id": "dotenv"
@@ -504,7 +713,7 @@
       "source_file": "package.json",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 43,
+      "community": 44,
       "norm_label": "express",
       "community_name": "express",
       "id": "package_dependencies_express"
@@ -515,7 +724,7 @@
       "source_file": "package.json",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 43,
+      "community": 44,
       "norm_label": "express",
       "community_name": "express",
       "id": "express"
@@ -526,7 +735,7 @@
       "source_file": "package.json",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 44,
+      "community": 45,
       "norm_label": "firebase",
       "community_name": "firebase",
       "id": "package_dependencies_firebase"
@@ -537,7 +746,7 @@
       "source_file": "package.json",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 44,
+      "community": 45,
       "norm_label": "firebase",
       "community_name": "firebase",
       "id": "firebase"
@@ -548,7 +757,7 @@
       "source_file": "package.json",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 46,
+      "community": 47,
       "norm_label": "html2canvas",
       "community_name": "html2canvas",
       "id": "package_dependencies_html2canvas"
@@ -559,7 +768,7 @@
       "source_file": "package.json",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 46,
+      "community": 47,
       "norm_label": "html2canvas",
       "community_name": "html2canvas",
       "id": "html2canvas"
@@ -570,7 +779,7 @@
       "source_file": "package.json",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 47,
+      "community": 48,
       "norm_label": "idb",
       "community_name": "idb",
       "id": "package_dependencies_idb"
@@ -581,7 +790,7 @@
       "source_file": "package.json",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 47,
+      "community": 48,
       "norm_label": "idb",
       "community_name": "idb",
       "id": "idb"
@@ -614,7 +823,7 @@
       "source_file": "package.json",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 48,
+      "community": 61,
       "norm_label": "lucide-react",
       "community_name": "lucide-react",
       "id": "package_dependencies_lucide_react"
@@ -625,7 +834,7 @@
       "source_file": "package.json",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 48,
+      "community": 61,
       "norm_label": "lucide-react",
       "community_name": "lucide-react",
       "id": "lucide_react"
@@ -636,7 +845,7 @@
       "source_file": "package.json",
       "source_location": "L38",
       "_origin": "ast",
-      "community": 49,
+      "community": 50,
       "norm_label": "motion",
       "community_name": "motion",
       "id": "package_dependencies_motion"
@@ -647,7 +856,7 @@
       "source_file": "package.json",
       "source_location": "L38",
       "_origin": "ast",
-      "community": 49,
+      "community": 50,
       "norm_label": "motion",
       "community_name": "motion",
       "id": "motion"
@@ -658,7 +867,7 @@
       "source_file": "package.json",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 50,
+      "community": 51,
       "norm_label": "multer",
       "community_name": "multer",
       "id": "package_dependencies_multer"
@@ -669,7 +878,7 @@
       "source_file": "package.json",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 50,
+      "community": 51,
       "norm_label": "multer",
       "community_name": "multer",
       "id": "multer"
@@ -680,7 +889,7 @@
       "source_file": "package.json",
       "source_location": "L40",
       "_origin": "ast",
-      "community": 51,
+      "community": 52,
       "norm_label": "react",
       "community_name": "react",
       "id": "package_dependencies_react"
@@ -691,7 +900,7 @@
       "source_file": "package.json",
       "source_location": "L40",
       "_origin": "ast",
-      "community": 51,
+      "community": 52,
       "norm_label": "react",
       "community_name": "react",
       "id": "package_json_react"
@@ -724,7 +933,7 @@
       "source_file": "package.json",
       "source_location": "L42",
       "_origin": "ast",
-      "community": 52,
+      "community": 53,
       "norm_label": "react-markdown",
       "community_name": "react-markdown",
       "id": "package_dependencies_react_markdown"
@@ -735,7 +944,7 @@
       "source_file": "package.json",
       "source_location": "L42",
       "_origin": "ast",
-      "community": 52,
+      "community": 53,
       "norm_label": "react-markdown",
       "community_name": "react-markdown",
       "id": "react_markdown"
@@ -768,7 +977,7 @@
       "source_file": "package.json",
       "source_location": "L44",
       "_origin": "ast",
-      "community": 53,
+      "community": 54,
       "norm_label": "recharts",
       "community_name": "recharts",
       "id": "package_dependencies_recharts"
@@ -779,7 +988,7 @@
       "source_file": "package.json",
       "source_location": "L44",
       "_origin": "ast",
-      "community": 53,
+      "community": 54,
       "norm_label": "recharts",
       "community_name": "recharts",
       "id": "recharts"
@@ -790,7 +999,7 @@
       "source_file": "package.json",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 55,
+      "community": 56,
       "norm_label": "supermemory",
       "community_name": "supermemory",
       "id": "package_dependencies_supermemory"
@@ -801,7 +1010,7 @@
       "source_file": "package.json",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 55,
+      "community": 56,
       "norm_label": "supermemory",
       "community_name": "supermemory",
       "id": "supermemory"
@@ -812,7 +1021,7 @@
       "source_file": "package.json",
       "source_location": "L46",
       "_origin": "ast",
-      "community": 56,
+      "community": 57,
       "norm_label": "tailwind-merge",
       "community_name": "tailwind-merge",
       "id": "package_dependencies_tailwind_merge"
@@ -823,7 +1032,7 @@
       "source_file": "package.json",
       "source_location": "L46",
       "_origin": "ast",
-      "community": 56,
+      "community": 57,
       "norm_label": "tailwind-merge",
       "community_name": "tailwind-merge",
       "id": "tailwind_merge"
@@ -834,7 +1043,7 @@
       "source_file": "package.json",
       "source_location": "L47",
       "_origin": "ast",
-      "community": 59,
+      "community": 60,
       "norm_label": "vite",
       "community_name": "vite",
       "id": "package_dependencies_vite"
@@ -845,7 +1054,7 @@
       "source_file": "package.json",
       "source_location": "L47",
       "_origin": "ast",
-      "community": 59,
+      "community": 60,
       "norm_label": "vite",
       "community_name": "vite",
       "id": "vite"
@@ -856,7 +1065,7 @@
       "source_file": "package.json",
       "source_location": "L48",
       "_origin": "ast",
-      "community": 62,
+      "community": 63,
       "norm_label": "zod",
       "community_name": "zod",
       "id": "package_dependencies_zod"
@@ -867,7 +1076,7 @@
       "source_file": "package.json",
       "source_location": "L48",
       "_origin": "ast",
-      "community": 62,
+      "community": 63,
       "norm_label": "zod",
       "community_name": "zod",
       "id": "zod"
@@ -878,7 +1087,7 @@
       "source_file": "package.json",
       "source_location": "L49",
       "_origin": "ast",
-      "community": 63,
+      "community": 64,
       "norm_label": "zustand",
       "community_name": "zustand",
       "id": "package_dependencies_zustand"
@@ -889,7 +1098,7 @@
       "source_file": "package.json",
       "source_location": "L49",
       "_origin": "ast",
-      "community": 63,
+      "community": 64,
       "norm_label": "zustand",
       "community_name": "zustand",
       "id": "zustand"
@@ -1307,7 +1516,7 @@
       "source_file": "scripts/_testInclude.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 65,
+      "community": 66,
       "norm_label": "_testinclude.ts",
       "community_name": "_testInclude.ts",
       "id": "scripts_testinclude"
@@ -1318,7 +1527,7 @@
       "source_file": "scripts/_testInclude.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 65,
+      "community": 66,
       "norm_label": "s",
       "community_name": "_testInclude.ts",
       "id": "scripts_testinclude_s"
@@ -1329,7 +1538,7 @@
       "source_file": "scripts/_testMapper.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 66,
+      "community": 67,
       "norm_label": "_testmapper.ts",
       "community_name": "_testMapper.ts",
       "id": "scripts_testmapper"
@@ -1340,7 +1549,7 @@
       "source_file": "scripts/_testMapper.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 66,
+      "community": 67,
       "norm_label": "unitforspecialty()",
       "community_name": "_testMapper.ts",
       "id": "scripts_testmapper_unitforspecialty"
@@ -1351,7 +1560,7 @@
       "source_file": "scripts/applyMigrationApi.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 64,
+      "community": 65,
       "norm_label": "applymigrationapi.ts",
       "community_name": "applyMigrationApi.ts",
       "id": "scripts_applymigrationapi"
@@ -1362,7 +1571,7 @@
       "source_file": "scripts/applyMigrationApi.ts",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 64,
+      "community": 65,
       "norm_label": "sql",
       "community_name": "applyMigrationApi.ts",
       "id": "scripts_applymigrationapi_sql"
@@ -1478,89 +1687,12 @@
       "id": "scripts_fixlegacycases_fixarrayitems"
     },
     {
-      "label": "generate-ai-resources.ts",
-      "file_type": "code",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 26,
-      "norm_label": "generate-ai-resources.ts",
-      "community_name": "generate-ai-resources.ts",
-      "id": "scripts_generate_ai_resources"
-    },
-    {
-      "label": "supabase",
-      "file_type": "code",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L25",
-      "_origin": "ast",
-      "community": 26,
-      "norm_label": "supabase",
-      "community_name": "generate-ai-resources.ts",
-      "id": "scripts_generate_ai_resources_supabase"
-    },
-    {
-      "label": "CaseRecord",
-      "file_type": "code",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L30",
-      "_origin": "ast",
-      "community": 26,
-      "norm_label": "caserecord",
-      "community_name": "generate-ai-resources.ts",
-      "id": "scripts_generate_ai_resources_caserecord"
-    },
-    {
-      "label": "generateStudyGuide()",
-      "file_type": "code",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L46",
-      "_origin": "ast",
-      "community": 26,
-      "norm_label": "generatestudyguide()",
-      "community_name": "generate-ai-resources.ts",
-      "id": "scripts_generate_ai_resources_generatestudyguide"
-    },
-    {
-      "label": "generateFlashcards()",
-      "file_type": "code",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L62",
-      "_origin": "ast",
-      "community": 26,
-      "norm_label": "generateflashcards()",
-      "community_name": "generate-ai-resources.ts",
-      "id": "scripts_generate_ai_resources_generateflashcards"
-    },
-    {
-      "label": "generateQuizQuestions()",
-      "file_type": "code",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L92",
-      "_origin": "ast",
-      "community": 26,
-      "norm_label": "generatequizquestions()",
-      "community_name": "generate-ai-resources.ts",
-      "id": "scripts_generate_ai_resources_generatequizquestions"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L134",
-      "_origin": "ast",
-      "community": 26,
-      "norm_label": "main()",
-      "community_name": "generate-ai-resources.ts",
-      "id": "scripts_generate_ai_resources_main"
-    },
-    {
       "label": "generateCases.ts",
       "file_type": "code",
       "source_file": "scripts/generateCases.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "generatecases.ts",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases"
@@ -1571,7 +1703,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "kenyan_first_names_male",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_kenyan_first_names_male"
@@ -1582,7 +1714,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "kenyan_first_names_female",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_kenyan_first_names_female"
@@ -1593,7 +1725,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L36",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "kenyan_last_names",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_kenyan_last_names"
@@ -1604,7 +1736,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L48",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "kenyan_locations",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_kenyan_locations"
@@ -1615,7 +1747,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L57",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "kenyan_settings",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_kenyan_settings"
@@ -1626,7 +1758,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L80",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "pick()",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_pick"
@@ -1637,7 +1769,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L84",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "pickn()",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_pickn"
@@ -1648,7 +1780,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L89",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "randomage()",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_randomage"
@@ -1659,7 +1791,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L93",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "roundto()",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_roundto"
@@ -1670,7 +1802,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L101",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "patientprofile",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_patientprofile"
@@ -1681,7 +1813,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L113",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "male_occupations",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_male_occupations"
@@ -1692,7 +1824,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L114",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "female_occupations",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_female_occupations"
@@ -1703,7 +1835,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L116",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "generatepatient()",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_generatepatient"
@@ -1714,7 +1846,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L139",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "vitalsigns",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_vitalsigns"
@@ -1725,7 +1857,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L148",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "generatevitals()",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_generatevitals"
@@ -1736,7 +1868,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L180",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "vitalsstring()",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_vitalsstring"
@@ -1758,7 +1890,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L219",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "generatecasefromtemplate()",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_generatecasefromtemplate"
@@ -1780,7 +1912,7 @@
       "source_file": "scripts/generateCases.ts",
       "source_location": "L309",
       "_origin": "ast",
-      "community": 16,
+      "community": 15,
       "norm_label": "generatecasesfromtemplate()",
       "community_name": "generateCases.ts",
       "id": "scripts_generatecases_generatecasesfromtemplate"
@@ -1791,7 +1923,7 @@
       "source_file": "scripts/generateGapCases.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "generategapcases.ts",
       "community_name": "generateGapCases.ts",
       "id": "scripts_generategapcases"
@@ -1802,7 +1934,7 @@
       "source_file": "scripts/generateGapCases.ts",
       "source_location": "L42",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "q()",
       "community_name": "generateGapCases.ts",
       "id": "scripts_generategapcases_q"
@@ -1813,7 +1945,7 @@
       "source_file": "scripts/generateGapCases.ts",
       "source_location": "L55",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "safename()",
       "community_name": "generateGapCases.ts",
       "id": "scripts_generategapcases_safename"
@@ -1824,7 +1956,7 @@
       "source_file": "scripts/generateGapCases.ts",
       "source_location": "L59",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "existing_files",
       "community_name": "generateGapCases.ts",
       "id": "scripts_generategapcases_existing_files"
@@ -1835,7 +1967,7 @@
       "source_file": "scripts/generateGapCases.ts",
       "source_location": "L80",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "plantemplates()",
       "community_name": "generateGapCases.ts",
       "id": "scripts_generategapcases_plantemplates"
@@ -1846,7 +1978,7 @@
       "source_file": "scripts/generateGapCases.ts",
       "source_location": "L111",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "main()",
       "community_name": "generateGapCases.ts",
       "id": "scripts_generategapcases_main"
@@ -2116,116 +2248,6 @@
       "id": "scripts_seedexistingdb_main"
     },
     {
-      "label": "sync-knowledge-engine.ts",
-      "file_type": "code",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "sync-knowledge-engine.ts",
-      "community_name": "curriculum.ts",
-      "id": "scripts_sync_knowledge_engine"
-    },
-    {
-      "label": "supabase",
-      "file_type": "code",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L29",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "supabase",
-      "community_name": "curriculum.ts",
-      "id": "scripts_sync_knowledge_engine_supabase"
-    },
-    {
-      "label": "toSeedId()",
-      "file_type": "code",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L32",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "toseedid()",
-      "community_name": "curriculum.ts",
-      "id": "scripts_sync_knowledge_engine_toseedid"
-    },
-    {
-      "label": "batchUpsert()",
-      "file_type": "code",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L40",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "batchupsert()",
-      "community_name": "curriculum.ts",
-      "id": "scripts_sync_knowledge_engine_batchupsert"
-    },
-    {
-      "label": "syncDiseaseNodes()",
-      "file_type": "code",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L56",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "syncdiseasenodes()",
-      "community_name": "curriculum.ts",
-      "id": "scripts_sync_knowledge_engine_syncdiseasenodes"
-    },
-    {
-      "label": "syncCaseNodes()",
-      "file_type": "code",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L69",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "synccasenodes()",
-      "community_name": "curriculum.ts",
-      "id": "scripts_sync_knowledge_engine_synccasenodes"
-    },
-    {
-      "label": "syncRelationships()",
-      "file_type": "code",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L88",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "syncrelationships()",
-      "community_name": "curriculum.ts",
-      "id": "scripts_sync_knowledge_engine_syncrelationships"
-    },
-    {
-      "label": "syncDiseases()",
-      "file_type": "code",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L136",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "syncdiseases()",
-      "community_name": "curriculum.ts",
-      "id": "scripts_sync_knowledge_engine_syncdiseases"
-    },
-    {
-      "label": "syncDiseaseMonographs()",
-      "file_type": "code",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L147",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "syncdiseasemonographs()",
-      "community_name": "curriculum.ts",
-      "id": "scripts_sync_knowledge_engine_syncdiseasemonographs"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L167",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "main()",
-      "community_name": "curriculum.ts",
-      "id": "scripts_sync_knowledge_engine_main"
-    },
-    {
       "label": "chemotherapy.ts",
       "file_type": "code",
       "source_file": "scripts/templates/chemotherapy.ts",
@@ -2330,7 +2352,7 @@
       "source_file": "scripts/templates/dermatology.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "dermatology.ts",
       "community_name": "generateGapCases.ts",
       "id": "scripts_templates_dermatology"
@@ -2341,7 +2363,7 @@
       "source_file": "scripts/templates/dermatology.ts",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "t()",
       "community_name": "generateGapCases.ts",
       "id": "scripts_templates_dermatology_t"
@@ -2352,7 +2374,7 @@
       "source_file": "scripts/templates/dermatology.ts",
       "source_location": "L58",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "dermatology_templates",
       "community_name": "generateGapCases.ts",
       "id": "scripts_templates_dermatology_dermatology_templates"
@@ -2396,7 +2418,7 @@
       "source_file": "scripts/templates/gapUnits.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "gapunits.ts",
       "community_name": "generateGapCases.ts",
       "id": "scripts_templates_gapunits"
@@ -2407,7 +2429,7 @@
       "source_file": "scripts/templates/gapUnits.ts",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "ent_templates",
       "community_name": "generateGapCases.ts",
       "id": "scripts_templates_gapunits_ent_templates"
@@ -2418,7 +2440,7 @@
       "source_file": "scripts/templates/gapUnits.ts",
       "source_location": "L93",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "geriatric_templates",
       "community_name": "generateGapCases.ts",
       "id": "scripts_templates_gapunits_geriatric_templates"
@@ -2429,7 +2451,7 @@
       "source_file": "scripts/templates/gapUnits.ts",
       "source_location": "L175",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "obstetrics_gynaecology_templates",
       "community_name": "generateGapCases.ts",
       "id": "scripts_templates_gapunits_obstetrics_gynaecology_templates"
@@ -2440,7 +2462,7 @@
       "source_file": "scripts/templates/gapUnits.ts",
       "source_location": "L257",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "paediatric_templates",
       "community_name": "generateGapCases.ts",
       "id": "scripts_templates_gapunits_paediatric_templates"
@@ -2550,7 +2572,7 @@
       "source_file": "scripts/templates/ophthalmology.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "ophthalmology.ts",
       "community_name": "generateGapCases.ts",
       "id": "scripts_templates_ophthalmology"
@@ -2561,7 +2583,7 @@
       "source_file": "scripts/templates/ophthalmology.ts",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "t()",
       "community_name": "generateGapCases.ts",
       "id": "scripts_templates_ophthalmology_t"
@@ -2572,7 +2594,7 @@
       "source_file": "scripts/templates/ophthalmology.ts",
       "source_location": "L58",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "ophthalmology_templates",
       "community_name": "generateGapCases.ts",
       "id": "scripts_templates_ophthalmology_ophthalmology_templates"
@@ -2583,9 +2605,9 @@
       "source_file": "scripts/templates/painInflammation.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 263,
+      "community": 16,
       "norm_label": "paininflammation.ts",
-      "community_name": "painInflammation.ts",
+      "community_name": "generateGapCases.ts",
       "id": "scripts_templates_paininflammation"
     },
     {
@@ -2594,9 +2616,9 @@
       "source_file": "scripts/templates/painInflammation.ts",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 263,
+      "community": 16,
       "norm_label": "tpl()",
-      "community_name": "painInflammation.ts",
+      "community_name": "generateGapCases.ts",
       "id": "scripts_templates_paininflammation_tpl"
     },
     {
@@ -2605,9 +2627,9 @@
       "source_file": "scripts/templates/painInflammation.ts",
       "source_location": "L62",
       "_origin": "ast",
-      "community": 263,
+      "community": 16,
       "norm_label": "pain_inflammation_templates",
-      "community_name": "painInflammation.ts",
+      "community_name": "generateGapCases.ts",
       "id": "scripts_templates_paininflammation_pain_inflammation_templates"
     },
     {
@@ -2616,7 +2638,7 @@
       "source_file": "scripts/templates/renal.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 36,
+      "community": 37,
       "norm_label": "renal.ts",
       "community_name": "renal.ts",
       "id": "scripts_templates_renal"
@@ -2627,7 +2649,7 @@
       "source_file": "scripts/templates/renal.ts",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 36,
+      "community": 37,
       "norm_label": "t()",
       "community_name": "renal.ts",
       "id": "scripts_templates_renal_t"
@@ -2638,7 +2660,7 @@
       "source_file": "scripts/templates/renal.ts",
       "source_location": "L58",
       "_origin": "ast",
-      "community": 36,
+      "community": 37,
       "norm_label": "renal_templates",
       "community_name": "renal.ts",
       "id": "scripts_templates_renal_renal_templates"
@@ -2682,7 +2704,7 @@
       "source_file": "scripts/templates/toxicology.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 37,
+      "community": 38,
       "norm_label": "toxicology.ts",
       "community_name": "toxicology.ts",
       "id": "scripts_templates_toxicology"
@@ -2693,7 +2715,7 @@
       "source_file": "scripts/templates/toxicology.ts",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 37,
+      "community": 38,
       "norm_label": "t()",
       "community_name": "toxicology.ts",
       "id": "scripts_templates_toxicology_t"
@@ -2704,7 +2726,7 @@
       "source_file": "scripts/templates/toxicology.ts",
       "source_location": "L58",
       "_origin": "ast",
-      "community": 37,
+      "community": 38,
       "norm_label": "toxicology_templates",
       "community_name": "toxicology.ts",
       "id": "scripts_templates_toxicology_toxicology_templates"
@@ -2858,7 +2880,7 @@
       "source_file": "separate_overview.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 67,
+      "community": 68,
       "norm_label": "separate_overview.ts",
       "community_name": "separate_overview.ts",
       "id": "separate_overview"
@@ -2869,7 +2891,7 @@
       "source_file": "separate_overview.ts",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 67,
+      "community": 68,
       "norm_label": "content",
       "community_name": "separate_overview.ts",
       "id": "separate_overview_content"
@@ -3144,7 +3166,7 @@
       "source_file": "src/App.tsx",
       "source_location": "L110",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "sidebar()",
       "community_name": "useAuth",
       "id": "src_app_sidebar"
@@ -3155,7 +3177,7 @@
       "source_file": "src/App.tsx",
       "source_location": "L207",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "adminloginscreen()",
       "community_name": "useAuth",
       "id": "src_app_adminloginscreen"
@@ -3166,7 +3188,7 @@
       "source_file": "src/App.tsx",
       "source_location": "L218",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "userloginscreen()",
       "community_name": "useAuth",
       "id": "src_app_userloginscreen"
@@ -3276,7 +3298,7 @@
       "source_file": "src/components/ClinicalDataAttribution.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 68,
+      "community": 69,
       "norm_label": "clinicaldataattribution.tsx",
       "community_name": "ClinicalDataAttribution.tsx",
       "id": "src_components_clinicaldataattribution"
@@ -3287,7 +3309,7 @@
       "source_file": "src/components/ClinicalDataAttribution.tsx",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 68,
+      "community": 69,
       "norm_label": "clinicaldataattribution()",
       "community_name": "ClinicalDataAttribution.tsx",
       "id": "src_components_clinicaldataattribution_clinicaldataattribution"
@@ -3903,7 +3925,7 @@
       "source_file": "src/components/ProtectedRoute.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "protectedroute.tsx",
       "community_name": "useAuth",
       "id": "src_components_protectedroute"
@@ -3914,7 +3936,7 @@
       "source_file": "src/components/ProtectedRoute.tsx",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "protectedrouteprops",
       "community_name": "useAuth",
       "id": "src_components_protectedroute_protectedrouteprops"
@@ -3925,7 +3947,7 @@
       "source_file": "src/components/ProtectedRoute.tsx",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "protectedroute()",
       "community_name": "useAuth",
       "id": "src_components_protectedroute_protectedroute"
@@ -3980,7 +4002,7 @@
       "source_file": "src/components/StudentOnboarding.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "studentonboarding.tsx",
       "community_name": "useAuth",
       "id": "src_components_studentonboarding"
@@ -3991,7 +4013,7 @@
       "source_file": "src/components/StudentOnboarding.tsx",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "topicoption",
       "community_name": "useAuth",
       "id": "src_components_studentonboarding_topicoption"
@@ -4002,7 +4024,7 @@
       "source_file": "src/components/StudentOnboarding.tsx",
       "source_location": "L36",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "clinical_topics",
       "community_name": "useAuth",
       "id": "src_components_studentonboarding_clinical_topics"
@@ -4013,7 +4035,7 @@
       "source_file": "src/components/StudentOnboarding.tsx",
       "source_location": "L143",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "leveloption",
       "community_name": "useAuth",
       "id": "src_components_studentonboarding_leveloption"
@@ -4024,7 +4046,7 @@
       "source_file": "src/components/StudentOnboarding.tsx",
       "source_location": "L150",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "academic_levels",
       "community_name": "useAuth",
       "id": "src_components_studentonboarding_academic_levels"
@@ -4035,7 +4057,7 @@
       "source_file": "src/components/StudentOnboarding.tsx",
       "source_location": "L183",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "studentonboarding()",
       "community_name": "useAuth",
       "id": "src_components_studentonboarding_studentonboarding"
@@ -4123,7 +4145,7 @@
       "source_file": "src/contexts/AuthContext.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "authcontext.tsx",
       "community_name": "useAuth",
       "id": "src_contexts_authcontext"
@@ -4134,7 +4156,7 @@
       "source_file": "src/contexts/AuthContext.tsx",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "userrole",
       "community_name": "useAuth",
       "id": "src_contexts_authcontext_userrole"
@@ -4145,7 +4167,7 @@
       "source_file": "src/contexts/AuthContext.tsx",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "userdata",
       "community_name": "useAuth",
       "id": "src_contexts_authcontext_userdata"
@@ -4156,7 +4178,7 @@
       "source_file": "src/contexts/AuthContext.tsx",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "authcontexttype",
       "community_name": "useAuth",
       "id": "src_contexts_authcontext_authcontexttype"
@@ -4167,7 +4189,7 @@
       "source_file": "src/contexts/AuthContext.tsx",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "authcontext",
       "community_name": "useAuth",
       "id": "src_contexts_authcontext_authcontext"
@@ -4189,7 +4211,7 @@
       "source_file": "src/contexts/AuthContext.tsx",
       "source_location": "L328",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "useauth()",
       "community_name": "useAuth",
       "id": "src_contexts_authcontext_useauth"
@@ -7269,7 +7291,7 @@
       "source_file": "src/screens/LoginScreen.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "loginscreen.tsx",
       "community_name": "useAuth",
       "id": "src_screens_loginscreen"
@@ -7280,7 +7302,7 @@
       "source_file": "src/screens/LoginScreen.tsx",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "loginscreen()",
       "community_name": "useAuth",
       "id": "src_screens_loginscreen_loginscreen"
@@ -9601,7 +9623,7 @@
       "source_file": "src/vite-env.d.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 111,
+      "community": 112,
       "norm_label": "vite-env.d.ts",
       "community_name": "vite-env.d.ts",
       "id": "src_vite_env_d"
@@ -9612,7 +9634,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 165,
+      "community": 166,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_main_py_path"
@@ -9623,7 +9645,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 98,
+      "community": 99,
       "norm_label": "ndarray",
       "community_name": "ndarray",
       "id": "ndarray"
@@ -9634,7 +9656,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 115,
+      "community": 116,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_affected_py_path"
@@ -9645,7 +9667,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 116,
+      "community": 117,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_build_py_path"
@@ -9656,7 +9678,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 117,
+      "community": 118,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_cache_py_path"
@@ -9667,7 +9689,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 119,
+      "community": 120,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_callflow_html_py_path"
@@ -9678,7 +9700,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 118,
+      "community": 119,
       "norm_label": "counter",
       "community_name": "Counter",
       "id": "tools_graphify_graphify_callflow_html_py_counter"
@@ -9689,7 +9711,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 121,
+      "community": 122,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_cargo_introspect_py_path"
@@ -9700,7 +9722,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 120,
+      "community": 121,
       "norm_label": "any",
       "community_name": "Any",
       "id": "tools_graphify_graphify_cargo_introspect_py_any"
@@ -9711,7 +9733,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 122,
+      "community": 123,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_cli_py_path"
@@ -9722,7 +9744,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 112,
+      "community": 113,
       "norm_label": "str",
       "community_name": "str",
       "id": "str"
@@ -9733,7 +9755,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 83,
+      "community": 84,
       "norm_label": "enum",
       "community_name": "Enum",
       "id": "enum"
@@ -9744,7 +9766,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 123,
+      "community": 124,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_detect_py_path"
@@ -9755,7 +9777,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 124,
+      "community": 125,
       "norm_label": "any",
       "community_name": "Any",
       "id": "tools_graphify_graphify_diagnostics_py_any"
@@ -9766,7 +9788,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 125,
+      "community": 126,
       "norm_label": "counter",
       "community_name": "Counter",
       "id": "tools_graphify_graphify_diagnostics_py_counter"
@@ -9777,7 +9799,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 126,
+      "community": 127,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_diagnostics_py_path"
@@ -9788,7 +9810,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 127,
+      "community": 128,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_export_py_path"
@@ -9799,7 +9821,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 129,
+      "community": 130,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extract_py_path"
@@ -9810,7 +9832,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 128,
+      "community": 129,
       "norm_label": "any",
       "community_name": "Any",
       "id": "tools_graphify_graphify_extract_py_any"
@@ -9821,7 +9843,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 130,
+      "community": 131,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_apex_py_path"
@@ -9832,7 +9854,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 131,
+      "community": 132,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_base_py_path"
@@ -9843,7 +9865,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 132,
+      "community": 133,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_bash_py_path"
@@ -9854,7 +9876,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 133,
+      "community": 134,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_blade_py_path"
@@ -9865,7 +9887,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 134,
+      "community": 135,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_csharp_py_path"
@@ -9876,7 +9898,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 135,
+      "community": 136,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_dart_py_path"
@@ -9887,7 +9909,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 136,
+      "community": 137,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_dm_py_path"
@@ -9898,7 +9920,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 137,
+      "community": 138,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_elixir_py_path"
@@ -9909,7 +9931,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 138,
+      "community": 139,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_engine_py_path"
@@ -9920,7 +9942,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 139,
+      "community": 140,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_fortran_py_path"
@@ -9931,7 +9953,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 140,
+      "community": 141,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_go_py_path"
@@ -9942,7 +9964,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 141,
+      "community": 142,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_json_config_py_path"
@@ -9953,7 +9975,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 142,
+      "community": 143,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_julia_py_path"
@@ -9964,7 +9986,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 143,
+      "community": 144,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_markdown_py_path"
@@ -9975,7 +9997,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 144,
+      "community": 145,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_objc_py_path"
@@ -9986,7 +10008,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 146,
+      "community": 147,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_pascal_py_path"
@@ -9997,7 +10019,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 145,
+      "community": 146,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_pascal_forms_py_path"
@@ -10008,7 +10030,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 147,
+      "community": 148,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_powershell_py_path"
@@ -10019,7 +10041,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 148,
+      "community": 149,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_razor_py_path"
@@ -10030,7 +10052,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 150,
+      "community": 151,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_resolution_py_path"
@@ -10041,7 +10063,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 149,
+      "community": 150,
       "norm_label": "any",
       "community_name": "Any",
       "id": "tools_graphify_graphify_extractors_resolution_py_any"
@@ -10052,7 +10074,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 151,
+      "community": 152,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_rust_py_path"
@@ -10063,7 +10085,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 152,
+      "community": 153,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_sln_py_path"
@@ -10074,7 +10096,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 153,
+      "community": 154,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_sql_py_path"
@@ -10085,7 +10107,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 154,
+      "community": 155,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_terraform_py_path"
@@ -10096,7 +10118,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 155,
+      "community": 156,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_verilog_py_path"
@@ -10107,7 +10129,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 156,
+      "community": 157,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_extractors_zig_py_path"
@@ -10118,7 +10140,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 157,
+      "community": 158,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_file_slice_py_path"
@@ -10129,7 +10151,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 158,
+      "community": 159,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_global_graph_py_path"
@@ -10140,7 +10162,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 159,
+      "community": 160,
       "norm_label": "any",
       "community_name": "Any",
       "id": "tools_graphify_graphify_google_workspace_py_any"
@@ -10151,7 +10173,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 160,
+      "community": 161,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_google_workspace_py_path"
@@ -10162,7 +10184,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 161,
+      "community": 162,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_hooks_py_path"
@@ -10173,7 +10195,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 162,
+      "community": 163,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_ingest_py_path"
@@ -10184,7 +10206,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 163,
+      "community": 164,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_install_py_path"
@@ -10195,7 +10217,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 164,
+      "community": 165,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_llm_py_path"
@@ -10206,7 +10228,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 73,
+      "community": 74,
       "norm_label": "baseexception",
       "community_name": "BaseException",
       "id": "baseexception"
@@ -10217,7 +10239,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 167,
+      "community": 168,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_manifest_ingest_py_path"
@@ -10228,7 +10250,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 166,
+      "community": 167,
       "norm_label": "any",
       "community_name": "Any",
       "id": "tools_graphify_graphify_manifest_ingest_py_any"
@@ -10239,7 +10261,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 169,
+      "community": 170,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_mcp_ingest_py_path"
@@ -10250,7 +10272,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 168,
+      "community": 169,
       "norm_label": "any",
       "community_name": "Any",
       "id": "tools_graphify_graphify_mcp_ingest_py_any"
@@ -10261,7 +10283,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 95,
+      "community": 96,
       "norm_label": "multidigraph",
       "community_name": "MultiDiGraph",
       "id": "multidigraph"
@@ -10272,7 +10294,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 170,
+      "community": 171,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_paths_py_path"
@@ -10283,7 +10305,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 171,
+      "community": 172,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_prs_py_path"
@@ -10294,7 +10316,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 173,
+      "community": 174,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_querylog_py_path"
@@ -10305,7 +10327,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 172,
+      "community": 173,
       "norm_label": "any",
       "community_name": "Any",
       "id": "tools_graphify_graphify_querylog_py_any"
@@ -10316,7 +10338,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 174,
+      "community": 175,
       "norm_label": "any",
       "community_name": "Any",
       "id": "tools_graphify_graphify_reflect_py_any"
@@ -10327,7 +10349,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 176,
+      "community": 177,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_reflect_py_path"
@@ -10338,7 +10360,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 175,
+      "community": 176,
       "norm_label": "datetime",
       "community_name": "datetime",
       "id": "tools_graphify_graphify_reflect_py_datetime"
@@ -10349,7 +10371,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 177,
+      "community": 178,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_resolver_registry_py_path"
@@ -10360,7 +10382,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 178,
+      "community": 179,
       "norm_label": "any",
       "community_name": "Any",
       "id": "tools_graphify_graphify_scip_ingest_py_any"
@@ -10371,7 +10393,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 89,
+      "community": 90,
       "norm_label": "ipv4address",
       "community_name": "IPv4Address",
       "id": "ipv4address"
@@ -10382,7 +10404,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 90,
+      "community": 91,
       "norm_label": "ipv6address",
       "community_name": "IPv6Address",
       "id": "ipv6address"
@@ -10393,7 +10415,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 102,
+      "community": 103,
       "norm_label": "openerdirector",
       "community_name": "OpenerDirector",
       "id": "openerdirector"
@@ -10404,7 +10426,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 180,
+      "community": 181,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_security_py_path"
@@ -10415,7 +10437,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 179,
+      "community": 180,
       "norm_label": "any",
       "community_name": "Any",
       "id": "tools_graphify_graphify_security_py_any"
@@ -10426,7 +10448,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 181,
+      "community": 182,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_semantic_cleanup_py_path"
@@ -10437,7 +10459,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 182,
+      "community": 183,
       "norm_label": "any",
       "community_name": "Any",
       "id": "tools_graphify_graphify_symbol_resolution_py_any"
@@ -10448,7 +10470,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 183,
+      "community": 184,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_symbol_resolution_py_path"
@@ -10459,7 +10481,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 184,
+      "community": 185,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_transcribe_py_path"
@@ -10470,7 +10492,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 185,
+      "community": 186,
       "norm_label": "any",
       "community_name": "Any",
       "id": "tools_graphify_graphify_tree_html_py_any"
@@ -10481,7 +10503,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 186,
+      "community": 187,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_tree_html_py_path"
@@ -10492,7 +10514,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 187,
+      "community": 188,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_watch_py_path"
@@ -10503,7 +10525,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 188,
+      "community": 189,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_graphify_wiki_py_path"
@@ -10514,7 +10536,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 189,
+      "community": 190,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_bench_extract_py_path"
@@ -10525,7 +10547,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 190,
+      "community": 191,
       "norm_label": "any",
       "community_name": "Any",
       "id": "tools_graphify_tests_conftest_py_any"
@@ -10536,7 +10558,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 191,
+      "community": 192,
       "norm_label": "string",
       "community_name": "String",
       "id": "tools_graphify_tests_fixtures_objc_mixed_widgetextras_swift_string"
@@ -10547,7 +10569,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 105,
+      "community": 106,
       "norm_label": "rectangle",
       "community_name": "Rectangle",
       "id": "rectangle"
@@ -10558,7 +10580,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 192,
+      "community": 193,
       "norm_label": "string",
       "community_name": "string",
       "id": "tools_graphify_tests_fixtures_sample_cpp_string"
@@ -10569,7 +10591,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 260,
+      "community": 261,
       "norm_label": "vector",
       "community_name": "vector",
       "id": "vector"
@@ -10580,7 +10602,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 193,
+      "community": 194,
       "norm_label": "t",
       "community_name": "T",
       "id": "tools_graphify_tests_fixtures_sample_cpp_t"
@@ -10591,7 +10613,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 92,
+      "community": 93,
       "norm_label": "list",
       "community_name": "List",
       "id": "list"
@@ -10602,32 +10624,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 194,
+      "community": 195,
       "norm_label": "httpclient",
       "community_name": "HttpClient",
       "id": "tools_graphify_tests_fixtures_sample_cs_httpclient"
-    },
-    {
-      "label": "Domain.csproj",
-      "file_type": "code",
-      "source_file": "tools/graphify/tests/Domain/Domain.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "community": 75,
-      "norm_label": "domain.csproj",
-      "community_name": "Domain.csproj",
-      "id": "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_domain_domain_csproj"
-    },
-    {
-      "label": "Infrastructure.csproj",
-      "file_type": "code",
-      "source_file": "tools/graphify/tests/Infrastructure/Infrastructure.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "community": 79,
-      "norm_label": "infrastructure.csproj",
-      "community_name": "Infrastructure.csproj",
-      "id": "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_infrastructure_infrastructure_csproj"
     },
     {
       "label": "__device__",
@@ -10635,7 +10635,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 195,
+      "community": 196,
       "norm_label": "__device__",
       "community_name": "__device__",
       "id": "tools_graphify_tests_fixtures_sample_cu_device"
@@ -10646,7 +10646,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 85,
+      "community": 86,
       "norm_label": "__global__",
       "community_name": "__global__",
       "id": "global"
@@ -10657,7 +10657,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 104,
+      "community": 105,
       "norm_label": "processor",
       "community_name": "Processor",
       "id": "processor"
@@ -10668,7 +10668,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 196,
+      "community": 197,
       "norm_label": "httpclient",
       "community_name": "HttpClient",
       "id": "tools_graphify_tests_fixtures_sample_java_httpclient"
@@ -10679,7 +10679,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 103,
+      "community": 104,
       "norm_label": "override",
       "community_name": "Override",
       "id": "override"
@@ -10690,7 +10690,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 84,
+      "community": 85,
       "norm_label": "float64",
       "community_name": "Float64",
       "id": "float64"
@@ -10701,7 +10701,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 197,
+      "community": 198,
       "norm_label": "string",
       "community_name": "String",
       "id": "tools_graphify_tests_fixtures_sample_kt_string"
@@ -10712,7 +10712,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 96,
+      "community": 97,
       "norm_label": "mutablelist",
       "community_name": "MutableList",
       "id": "mutablelist"
@@ -10723,7 +10723,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 198,
+      "community": 199,
       "norm_label": "t",
       "community_name": "T",
       "id": "tools_graphify_tests_fixtures_sample_kt_t"
@@ -10734,7 +10734,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 99,
+      "community": 100,
       "norm_label": "nsobject",
       "community_name": "NSObject",
       "id": "nsobject"
@@ -10745,7 +10745,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 108,
+      "community": 109,
       "norm_label": "sampledelegate",
       "community_name": "SampleDelegate",
       "id": "sampledelegate"
@@ -10756,7 +10756,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 100,
+      "community": 101,
       "norm_label": "nsstring",
       "community_name": "NSString",
       "id": "nsstring"
@@ -10767,7 +10767,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 91,
+      "community": 92,
       "norm_label": "kernel",
       "community_name": "kernel",
       "id": "kernel"
@@ -10778,7 +10778,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 199,
+      "community": 200,
       "norm_label": "device",
       "community_name": "device",
       "id": "tools_graphify_tests_fixtures_sample_metal_device"
@@ -10789,7 +10789,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 80,
+      "community": 81,
       "norm_label": "constant",
       "community_name": "constant",
       "id": "constant"
@@ -10800,7 +10800,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 258,
+      "community": 259,
       "norm_label": "uint",
       "community_name": "uint",
       "id": "uint"
@@ -10811,7 +10811,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 72,
+      "community": 73,
       "norm_label": "authenticator",
       "community_name": "Authenticator",
       "id": "authenticator"
@@ -10822,7 +10822,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 93,
+      "community": 94,
       "norm_label": "loggable",
       "community_name": "Loggable",
       "id": "loggable"
@@ -10833,7 +10833,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 87,
+      "community": 88,
       "norm_label": "hasname",
       "community_name": "HasName",
       "id": "hasname"
@@ -10844,7 +10844,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 200,
+      "community": 201,
       "norm_label": "string",
       "community_name": "string",
       "id": "tools_graphify_tests_fixtures_sample_ps1_string"
@@ -10855,7 +10855,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 261,
+      "community": 262,
       "norm_label": "void",
       "community_name": "void",
       "id": "void"
@@ -10866,7 +10866,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 82,
+      "community": 83,
       "norm_label": "double",
       "community_name": "double",
       "id": "double"
@@ -10877,7 +10877,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 86,
+      "community": 87,
       "norm_label": "hashmap",
       "community_name": "HashMap",
       "id": "hashmap"
@@ -10888,7 +10888,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 201,
+      "community": 202,
       "norm_label": "string",
       "community_name": "String",
       "id": "tools_graphify_tests_fixtures_sample_rs_string"
@@ -10899,7 +10899,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 259,
+      "community": 260,
       "norm_label": "vec",
       "community_name": "Vec",
       "id": "vec"
@@ -10910,7 +10910,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 109,
+      "community": 110,
       "norm_label": "self",
       "community_name": "Self",
       "id": "self"
@@ -10921,7 +10921,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 202,
+      "community": 203,
       "norm_label": "t",
       "community_name": "T",
       "id": "tools_graphify_tests_fixtures_sample_rs_t"
@@ -10932,7 +10932,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 205,
+      "community": 206,
       "norm_label": "string",
       "community_name": "String",
       "id": "tools_graphify_tests_fixtures_sample_scala_string"
@@ -10943,7 +10943,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 203,
+      "community": 204,
       "norm_label": "int",
       "community_name": "Int",
       "id": "tools_graphify_tests_fixtures_sample_scala_int"
@@ -10954,43 +10954,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 204,
+      "community": 205,
       "norm_label": "loggable",
       "community_name": "Loggable",
       "id": "tools_graphify_tests_fixtures_sample_scala_loggable"
-    },
-    {
-      "label": "Domain",
-      "file_type": "code",
-      "source_file": "tools/graphify/tests/fixtures/src/Domain/Domain.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "community": 76,
-      "norm_label": "domain",
-      "community_name": "Domain",
-      "id": "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_fixtures_src_domain_domain_csproj"
-    },
-    {
-      "label": "WebApi",
-      "file_type": "code",
-      "source_file": "tools/graphify/tests/fixtures/src/WebApi/WebApi.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "community": 77,
-      "norm_label": "webapi",
-      "community_name": "WebApi",
-      "id": "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_fixtures_src_webapi_webapi_csproj"
-    },
-    {
-      "label": "Tests",
-      "file_type": "code",
-      "source_file": "tools/graphify/tests/fixtures/tests/Tests/Tests.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "community": 78,
-      "norm_label": "tests",
-      "community_name": "Tests",
-      "id": "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_fixtures_tests_tests_tests_csproj"
     },
     {
       "label": "String",
@@ -10998,7 +10965,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 207,
+      "community": 208,
       "norm_label": "string",
       "community_name": "String",
       "id": "tools_graphify_tests_fixtures_sample_swift_string"
@@ -11009,7 +10976,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 206,
+      "community": 207,
       "norm_label": "int",
       "community_name": "Int",
       "id": "tools_graphify_tests_fixtures_sample_swift_int"
@@ -11020,7 +10987,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 74,
+      "community": 75,
       "norm_label": "bool",
       "community_name": "Bool",
       "id": "bool"
@@ -11031,7 +10998,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 262,
+      "community": 263,
       "norm_label": "window",
       "community_name": "Window",
       "id": "window"
@@ -11042,7 +11009,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 107,
+      "community": 108,
       "norm_label": "routedeventargs",
       "community_name": "RoutedEventArgs",
       "id": "routedeventargs"
@@ -11053,7 +11020,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 88,
+      "community": 89,
       "norm_label": "injectable",
       "community_name": "Injectable",
       "id": "injectable"
@@ -11064,7 +11031,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 94,
+      "community": 95,
       "norm_label": "module",
       "community_name": "Module",
       "id": "module"
@@ -11075,7 +11042,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 101,
+      "community": 102,
       "norm_label": "observableobject",
       "community_name": "ObservableObject",
       "id": "observableobject"
@@ -11086,7 +11053,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 208,
+      "community": 209,
       "norm_label": "string",
       "community_name": "string",
       "id": "tools_graphify_tests_fixtures_xaml_viewmodel_viewmodels_toolkitviewmodel_cs_string"
@@ -11097,7 +11064,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 113,
+      "community": 114,
       "norm_label": "task",
       "community_name": "Task",
       "id": "task"
@@ -11108,7 +11075,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 106,
+      "community": 107,
       "norm_label": "relaycommand",
       "community_name": "RelayCommand",
       "id": "relaycommand"
@@ -11119,7 +11086,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 81,
+      "community": 82,
       "norm_label": "digraph",
       "community_name": "DiGraph",
       "id": "digraph"
@@ -11130,7 +11097,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 209,
+      "community": 210,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_astro_extraction_py_path"
@@ -11141,7 +11108,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 210,
+      "community": 211,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_build_merge_hyperedges_and_prune_py_path"
@@ -11152,7 +11119,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 211,
+      "community": 212,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_callflow_html_py_path"
@@ -11163,7 +11130,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 213,
+      "community": 214,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_cli_export_py_path"
@@ -11174,7 +11141,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 212,
+      "community": 213,
       "norm_label": "completedprocess",
       "community_name": "CompletedProcess",
       "id": "tools_graphify_tests_test_cli_export_py_completedprocess"
@@ -11185,7 +11152,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 214,
+      "community": 215,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_cpp_objc_cross_file_calls_py_path"
@@ -11196,7 +11163,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 215,
+      "community": 216,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_cross_language_call_resolution_py_path"
@@ -11207,7 +11174,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 216,
+      "community": 217,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_csharp_type_resolution_py_path"
@@ -11218,7 +11185,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 217,
+      "community": 218,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_extract_code_only_cli_py_path"
@@ -11229,7 +11196,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 218,
+      "community": 219,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_extraction_spec_ids_py_path"
@@ -11240,7 +11207,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 219,
+      "community": 220,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_file_slice_py_path"
@@ -11251,7 +11218,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 220,
+      "community": 221,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_hooks_py_path"
@@ -11262,7 +11229,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 221,
+      "community": 222,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_import_extension_resolution_py_path"
@@ -11273,7 +11240,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 223,
+      "community": 224,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_incremental_py_path"
@@ -11284,7 +11251,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 222,
+      "community": 223,
       "norm_label": "completedprocess",
       "community_name": "CompletedProcess",
       "id": "tools_graphify_tests_test_incremental_py_completedprocess"
@@ -11295,7 +11262,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 224,
+      "community": 225,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_java_member_calls_py_path"
@@ -11306,7 +11273,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 225,
+      "community": 226,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_java_type_resolution_py_path"
@@ -11317,7 +11284,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 226,
+      "community": 227,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_js_import_resolution_py_path"
@@ -11328,7 +11295,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 227,
+      "community": 228,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_manifest_ingest_py_path"
@@ -11339,7 +11306,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 228,
+      "community": 229,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_mcp_ingest_py_path"
@@ -11350,7 +11317,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 229,
+      "community": 230,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_merge_graphs_cli_py_path"
@@ -11361,7 +11328,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 230,
+      "community": 231,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_multigraph_diagnostics_py_path"
@@ -11372,7 +11339,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 231,
+      "community": 232,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_office_incremental_py_path"
@@ -11383,7 +11350,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 232,
+      "community": 233,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_phantom_cross_package_call_py_path"
@@ -11394,7 +11361,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 233,
+      "community": 234,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_phantom_external_import_py_path"
@@ -11405,7 +11372,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 234,
+      "community": 235,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_pipeline_py_path"
@@ -11416,7 +11383,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 235,
+      "community": 236,
       "norm_label": "datetime",
       "community_name": "datetime",
       "id": "tools_graphify_tests_test_prs_py_datetime"
@@ -11427,7 +11394,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 236,
+      "community": 237,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_python_import_resolution_py_path"
@@ -11438,7 +11405,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 237,
+      "community": 238,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_rationale_py_path"
@@ -11449,7 +11416,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 239,
+      "community": 240,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_reflect_py_path"
@@ -11460,7 +11427,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 238,
+      "community": 239,
       "norm_label": "completedprocess",
       "community_name": "CompletedProcess",
       "id": "tools_graphify_tests_test_reflect_py_completedprocess"
@@ -11471,7 +11438,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 240,
+      "community": 241,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_ruby_resolution_py_path"
@@ -11482,7 +11449,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 241,
+      "community": 242,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_serve_http_py_path"
@@ -11493,7 +11460,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 114,
+      "community": 115,
       "norm_label": "testclient",
       "community_name": "TestClient",
       "id": "testclient"
@@ -11504,7 +11471,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 242,
+      "community": 243,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_skill_version_warning_py_path"
@@ -11515,7 +11482,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 243,
+      "community": 244,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_swift_cross_file_calls_py_path"
@@ -11526,7 +11493,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 244,
+      "community": 245,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_swift_import_resolution_py_path"
@@ -11537,7 +11504,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 245,
+      "community": 246,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_symbol_resolution_py_path"
@@ -11548,7 +11515,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 246,
+      "community": 247,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_terraform_py_path"
@@ -11559,7 +11526,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 247,
+      "community": 248,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_ts_decorators_py_path"
@@ -11570,7 +11537,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 248,
+      "community": 249,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_ts_generators_py_path"
@@ -11581,7 +11548,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 249,
+      "community": 250,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_ts_import_require_py_path"
@@ -11592,7 +11559,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 250,
+      "community": 251,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_ts_inheritance_py_path"
@@ -11603,7 +11570,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 251,
+      "community": 252,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_ts_namespace_py_path"
@@ -11614,7 +11581,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 252,
+      "community": 253,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_typescript_module_extensions_py_path"
@@ -11625,7 +11592,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 253,
+      "community": 254,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_vue_extraction_py_path"
@@ -11636,7 +11603,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 254,
+      "community": 255,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tests_test_wheel_packaging_py_path"
@@ -11647,7 +11614,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 255,
+      "community": 256,
       "norm_label": "path",
       "community_name": "Path",
       "id": "tools_graphify_tools_skillgen_gen_py_path"
@@ -11658,7 +11625,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 97,
+      "community": 98,
       "norm_label": "namespace",
       "community_name": "Namespace",
       "id": "namespace"
@@ -11669,7 +11636,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 256,
+      "community": 257,
       "norm_label": "exception",
       "community_name": "Exception",
       "id": "tools_graphify_worked_example_raw_validator_py_exception"
@@ -11680,7 +11647,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 257,
+      "community": 258,
       "norm_label": "exception",
       "community_name": "Exception",
       "id": "tools_graphify_worked_httpx_raw_exceptions_py_exception"
@@ -12076,7 +12043,7 @@
       "source_file": "vercel.json",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 69,
+      "community": 70,
       "norm_label": "vercel.json",
       "community_name": "vercel.json",
       "id": "vercel"
@@ -12087,32 +12054,10 @@
       "source_file": "vercel.json",
       "source_location": "L2",
       "_origin": "ast",
-      "community": 69,
+      "community": 70,
       "norm_label": "rewrites",
       "community_name": "vercel.json",
       "id": "vercel_rewrites"
-    },
-    {
-      "label": "vite.config.ts",
-      "file_type": "code",
-      "source_file": "vite.config.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 70,
-      "norm_label": "vite.config.ts",
-      "community_name": "vite.config.ts",
-      "id": "vite_config"
-    },
-    {
-      "label": "onwarn()",
-      "file_type": "code",
-      "source_file": "vite.config.ts",
-      "source_location": "L47",
-      "_origin": "ast",
-      "community": 70,
-      "norm_label": "onwarn()",
-      "community_name": "vite.config.ts",
-      "id": "vite_config_onwarn"
     },
     {
       "label": "db",
@@ -12131,13 +12076,338 @@
       "source_file": "src/server/aiRouter.ts",
       "source_location": "L58",
       "_origin": "ast",
-      "community": 110,
+      "community": 111,
       "norm_label": "providerstatusescompat",
       "community_name": "providerStatusesCompat",
       "id": "src_server_airouter_providerstatusescompat"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_generate_ai_resources",
+      "target": "scripts_generate_ai_resources_caserecord"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_generate_ai_resources",
+      "target": "scripts_generate_ai_resources_generateflashcards"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L92",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_generate_ai_resources",
+      "target": "scripts_generate_ai_resources_generatequizquestions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_generate_ai_resources",
+      "target": "scripts_generate_ai_resources_generatestudyguide"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L134",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_generate_ai_resources",
+      "target": "scripts_generate_ai_resources_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_generate_ai_resources",
+      "target": "scripts_generate_ai_resources_supabase"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L172",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_generate_ai_resources_main",
+      "target": "scripts_generate_ai_resources_generatestudyguide"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L176",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_generate_ai_resources_main",
+      "target": "scripts_generate_ai_resources_generateflashcards"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate-ai-resources.ts",
+      "source_location": "L179",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_generate_ai_resources_main",
+      "target": "scripts_generate_ai_resources_generatequizquestions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine",
+      "target": "scripts_sync_knowledge_engine_batchupsert"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L167",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine",
+      "target": "scripts_sync_knowledge_engine_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine",
+      "target": "scripts_sync_knowledge_engine_supabase"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine",
+      "target": "scripts_sync_knowledge_engine_synccasenodes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L147",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine",
+      "target": "scripts_sync_knowledge_engine_syncdiseasemonographs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine",
+      "target": "scripts_sync_knowledge_engine_syncdiseasenodes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L136",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine",
+      "target": "scripts_sync_knowledge_engine_syncdiseases"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine",
+      "target": "scripts_sync_knowledge_engine_syncrelationships"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine",
+      "target": "scripts_sync_knowledge_engine_toseedid"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine_synccasenodes",
+      "target": "scripts_sync_knowledge_engine_toseedid"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine_syncrelationships",
+      "target": "scripts_sync_knowledge_engine_toseedid"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine_synccasenodes",
+      "target": "scripts_sync_knowledge_engine_batchupsert"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L163",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine_syncdiseasemonographs",
+      "target": "scripts_sync_knowledge_engine_batchupsert"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine_syncdiseasenodes",
+      "target": "scripts_sync_knowledge_engine_batchupsert"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L143",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine_syncdiseases",
+      "target": "scripts_sync_knowledge_engine_batchupsert"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L127",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine_syncrelationships",
+      "target": "scripts_sync_knowledge_engine_batchupsert"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L172",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine_main",
+      "target": "scripts_sync_knowledge_engine_syncdiseasenodes"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L173",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine_main",
+      "target": "scripts_sync_knowledge_engine_synccasenodes"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L174",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine_main",
+      "target": "scripts_sync_knowledge_engine_syncrelationships"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L175",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine_main",
+      "target": "scripts_sync_knowledge_engine_syncdiseases"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-knowledge-engine.ts",
+      "source_location": "L176",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_knowledge_engine_main",
+      "target": "scripts_sync_knowledge_engine_syncdiseasemonographs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vite.config.ts",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "vite_config",
+      "target": "vite_config_onwarn"
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -13863,99 +14133,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L30",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_generate_ai_resources",
-      "target": "scripts_generate_ai_resources_caserecord"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L62",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_generate_ai_resources",
-      "target": "scripts_generate_ai_resources_generateflashcards"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L92",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_generate_ai_resources",
-      "target": "scripts_generate_ai_resources_generatequizquestions"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L46",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_generate_ai_resources",
-      "target": "scripts_generate_ai_resources_generatestudyguide"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L134",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_generate_ai_resources",
-      "target": "scripts_generate_ai_resources_main"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L25",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_generate_ai_resources",
-      "target": "scripts_generate_ai_resources_supabase"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L172",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_generate_ai_resources_main",
-      "target": "scripts_generate_ai_resources_generatestudyguide"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L176",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_generate_ai_resources_main",
-      "target": "scripts_generate_ai_resources_generateflashcards"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/generate-ai-resources.ts",
-      "source_location": "L179",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_generate_ai_resources_main",
-      "target": "scripts_generate_ai_resources_generatequizquestions"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "scripts/generateCases.ts",
       "source_location": "L188",
       "weight": 1.0,
@@ -15392,305 +15569,6 @@
       "confidence_score": 1.0,
       "source": "scripts_seedexistingdb_main",
       "target": "scripts_seedexistingdb_unitforspecialty"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L40",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_batchupsert"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L167",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_main"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L29",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_supabase"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L69",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_synccasenodes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L147",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_syncdiseasemonographs"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L56",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_syncdiseasenodes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L136",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_syncdiseases"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L88",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_syncrelationships"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L32",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_toseedid"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "src_data_clinicalcases_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "src_data_clinicalcases_index_generated_cases"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "src_data_clinicalcasesdata_initial_cases"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "src_data_curriculum"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine",
-      "target": "src_data_curriculum_diseases"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L74",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine_synccasenodes",
-      "target": "scripts_sync_knowledge_engine_toseedid"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L108",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine_syncrelationships",
-      "target": "scripts_sync_knowledge_engine_toseedid"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L84",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine_synccasenodes",
-      "target": "scripts_sync_knowledge_engine_batchupsert"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L163",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine_syncdiseasemonographs",
-      "target": "scripts_sync_knowledge_engine_batchupsert"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L65",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine_syncdiseasenodes",
-      "target": "scripts_sync_knowledge_engine_batchupsert"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L143",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine_syncdiseases",
-      "target": "scripts_sync_knowledge_engine_batchupsert"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L127",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine_syncrelationships",
-      "target": "scripts_sync_knowledge_engine_batchupsert"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L172",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine_main",
-      "target": "scripts_sync_knowledge_engine_syncdiseasenodes"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L173",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine_main",
-      "target": "scripts_sync_knowledge_engine_synccasenodes"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L174",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine_main",
-      "target": "scripts_sync_knowledge_engine_syncrelationships"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L175",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine_main",
-      "target": "scripts_sync_knowledge_engine_syncdiseases"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sync-knowledge-engine.ts",
-      "source_location": "L176",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sync_knowledge_engine_main",
-      "target": "scripts_sync_knowledge_engine_syncdiseasemonographs"
     },
     {
       "relation": "contains",
@@ -30945,18 +30823,8 @@
       "confidence_score": 1.0,
       "source": "vercel",
       "target": "vercel_rewrites"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "vite.config.ts",
-      "source_location": "L47",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "vite_config",
-      "target": "vite_config_onwarn"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e1cf915f03b7b263161ca2fe3e56eac9d6c8770b"
+  "built_at_commit": "4c075f90abdb58d58aaf23f1d3a7335542da42e6"
 }

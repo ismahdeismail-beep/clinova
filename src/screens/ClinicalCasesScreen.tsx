@@ -25,11 +25,11 @@ export default function ClinicalCasesScreen() {
     const loadCases = async () => {
       setIsLoadingDbCases(true);
       try {
-        // Supabase is the source of truth; falls back to bundled data when unconfigured.
         const { cases } = await ClinicalCaseService.fetchCases({
           pageSize: 2000,
           status: 'published',
         });
+        console.log('[ClinicalCasesScreen] Loaded cases:', cases.length);
         if (cases.length > 0) {
           setAllCases(cases);
         }

@@ -9,9 +9,10 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "scripts_generate_ai_resources",
       "community": 26,
-      "norm_label": "generate-ai-resources.ts"
+      "norm_label": "generate-ai-resources.ts",
+      "id": "scripts_generate_ai_resources",
+      "community_name": "generate-ai-resources.ts"
     },
     {
       "label": "supabase",
@@ -19,9 +20,10 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "scripts_generate_ai_resources_supabase",
       "community": 26,
-      "norm_label": "supabase"
+      "norm_label": "supabase",
+      "id": "scripts_generate_ai_resources_supabase",
+      "community_name": "generate-ai-resources.ts"
     },
     {
       "label": "CaseRecord",
@@ -29,9 +31,10 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L30",
       "_origin": "ast",
-      "id": "scripts_generate_ai_resources_caserecord",
       "community": 26,
-      "norm_label": "caserecord"
+      "norm_label": "caserecord",
+      "id": "scripts_generate_ai_resources_caserecord",
+      "community_name": "generate-ai-resources.ts"
     },
     {
       "label": "generateStudyGuide()",
@@ -39,9 +42,10 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L46",
       "_origin": "ast",
-      "id": "scripts_generate_ai_resources_generatestudyguide",
       "community": 26,
-      "norm_label": "generatestudyguide()"
+      "norm_label": "generatestudyguide()",
+      "id": "scripts_generate_ai_resources_generatestudyguide",
+      "community_name": "generate-ai-resources.ts"
     },
     {
       "label": "generateFlashcards()",
@@ -49,9 +53,10 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L62",
       "_origin": "ast",
-      "id": "scripts_generate_ai_resources_generateflashcards",
       "community": 26,
-      "norm_label": "generateflashcards()"
+      "norm_label": "generateflashcards()",
+      "id": "scripts_generate_ai_resources_generateflashcards",
+      "community_name": "generate-ai-resources.ts"
     },
     {
       "label": "generateQuizQuestions()",
@@ -59,9 +64,10 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L92",
       "_origin": "ast",
-      "id": "scripts_generate_ai_resources_generatequizquestions",
       "community": 26,
-      "norm_label": "generatequizquestions()"
+      "norm_label": "generatequizquestions()",
+      "id": "scripts_generate_ai_resources_generatequizquestions",
+      "community_name": "generate-ai-resources.ts"
     },
     {
       "label": "main()",
@@ -69,9 +75,10 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L134",
       "_origin": "ast",
-      "id": "scripts_generate_ai_resources_main",
       "community": 26,
-      "norm_label": "main()"
+      "norm_label": "main()",
+      "id": "scripts_generate_ai_resources_main",
+      "community_name": "generate-ai-resources.ts"
     },
     {
       "label": "sync-knowledge-engine.ts",
@@ -79,9 +86,10 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "scripts_sync_knowledge_engine",
       "community": 36,
-      "norm_label": "sync-knowledge-engine.ts"
+      "norm_label": "sync-knowledge-engine.ts",
+      "id": "scripts_sync_knowledge_engine",
+      "community_name": "sync-knowledge-engine.ts"
     },
     {
       "label": "supabase",
@@ -89,9 +97,10 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L29",
       "_origin": "ast",
-      "id": "scripts_sync_knowledge_engine_supabase",
       "community": 36,
-      "norm_label": "supabase"
+      "norm_label": "supabase",
+      "id": "scripts_sync_knowledge_engine_supabase",
+      "community_name": "sync-knowledge-engine.ts"
     },
     {
       "label": "toSeedId()",
@@ -99,9 +108,10 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L32",
       "_origin": "ast",
-      "id": "scripts_sync_knowledge_engine_toseedid",
       "community": 36,
-      "norm_label": "toseedid()"
+      "norm_label": "toseedid()",
+      "id": "scripts_sync_knowledge_engine_toseedid",
+      "community_name": "sync-knowledge-engine.ts"
     },
     {
       "label": "batchUpsert()",
@@ -109,9 +119,10 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L40",
       "_origin": "ast",
-      "id": "scripts_sync_knowledge_engine_batchupsert",
       "community": 36,
-      "norm_label": "batchupsert()"
+      "norm_label": "batchupsert()",
+      "id": "scripts_sync_knowledge_engine_batchupsert",
+      "community_name": "sync-knowledge-engine.ts"
     },
     {
       "label": "syncDiseaseNodes()",
@@ -119,9 +130,10 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L56",
       "_origin": "ast",
-      "id": "scripts_sync_knowledge_engine_syncdiseasenodes",
       "community": 36,
-      "norm_label": "syncdiseasenodes()"
+      "norm_label": "syncdiseasenodes()",
+      "id": "scripts_sync_knowledge_engine_syncdiseasenodes",
+      "community_name": "sync-knowledge-engine.ts"
     },
     {
       "label": "syncCaseNodes()",
@@ -129,9 +141,10 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L69",
       "_origin": "ast",
-      "id": "scripts_sync_knowledge_engine_synccasenodes",
       "community": 36,
-      "norm_label": "synccasenodes()"
+      "norm_label": "synccasenodes()",
+      "id": "scripts_sync_knowledge_engine_synccasenodes",
+      "community_name": "sync-knowledge-engine.ts"
     },
     {
       "label": "syncRelationships()",
@@ -139,9 +152,10 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L88",
       "_origin": "ast",
-      "id": "scripts_sync_knowledge_engine_syncrelationships",
       "community": 36,
-      "norm_label": "syncrelationships()"
+      "norm_label": "syncrelationships()",
+      "id": "scripts_sync_knowledge_engine_syncrelationships",
+      "community_name": "sync-knowledge-engine.ts"
     },
     {
       "label": "syncDiseases()",
@@ -149,9 +163,10 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L136",
       "_origin": "ast",
-      "id": "scripts_sync_knowledge_engine_syncdiseases",
       "community": 36,
-      "norm_label": "syncdiseases()"
+      "norm_label": "syncdiseases()",
+      "id": "scripts_sync_knowledge_engine_syncdiseases",
+      "community_name": "sync-knowledge-engine.ts"
     },
     {
       "label": "syncDiseaseMonographs()",
@@ -159,9 +174,10 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L147",
       "_origin": "ast",
-      "id": "scripts_sync_knowledge_engine_syncdiseasemonographs",
       "community": 36,
-      "norm_label": "syncdiseasemonographs()"
+      "norm_label": "syncdiseasemonographs()",
+      "id": "scripts_sync_knowledge_engine_syncdiseasemonographs",
+      "community_name": "sync-knowledge-engine.ts"
     },
     {
       "label": "main()",
@@ -169,9 +185,10 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L167",
       "_origin": "ast",
-      "id": "scripts_sync_knowledge_engine_main",
       "community": 36,
-      "norm_label": "main()"
+      "norm_label": "main()",
+      "id": "scripts_sync_knowledge_engine_main",
+      "community_name": "sync-knowledge-engine.ts"
     },
     {
       "label": "vite.config.ts",
@@ -179,9 +196,10 @@
       "source_file": "vite.config.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "vite_config",
       "community": 71,
-      "norm_label": "vite.config.ts"
+      "norm_label": "vite.config.ts",
+      "id": "vite_config",
+      "community_name": "vite.config.ts"
     },
     {
       "label": "onwarn()",
@@ -189,9 +207,10 @@
       "source_file": "vite.config.ts",
       "source_location": "L47",
       "_origin": "ast",
-      "id": "vite_config_onwarn",
       "community": 71,
-      "norm_label": "onwarn()"
+      "norm_label": "onwarn()",
+      "id": "vite_config_onwarn",
+      "community_name": "vite.config.ts"
     },
     {
       "label": "index.ts",
@@ -540,9 +559,9 @@
       "source_file": "package.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 61,
+      "community": 23,
       "norm_label": "@vitejs/plugin-react",
-      "community_name": "@vitejs/plugin-react",
+      "community_name": "dependencies",
       "id": "package_dependencies_vitejs_plugin_react"
     },
     {
@@ -551,9 +570,9 @@
       "source_file": "package.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 61,
+      "community": 23,
       "norm_label": "@vitejs/plugin-react",
-      "community_name": "@vitejs/plugin-react",
+      "community_name": "dependencies",
       "id": "vitejs_plugin_react"
     },
     {
@@ -586,7 +605,7 @@
       "_origin": "ast",
       "community": 40,
       "norm_label": "browser-image-compression",
-      "community_name": "dependencies",
+      "community_name": "browser-image-compression",
       "id": "package_dependencies_browser_image_compression"
     },
     {
@@ -597,7 +616,7 @@
       "_origin": "ast",
       "community": 40,
       "norm_label": "browser-image-compression",
-      "community_name": "dependencies",
+      "community_name": "browser-image-compression",
       "id": "browser_image_compression"
     },
     {
@@ -804,7 +823,7 @@
       "source_file": "package.json",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 23,
+      "community": 61,
       "norm_label": "lucide-react",
       "community_name": "lucide-react",
       "id": "package_dependencies_lucide_react"
@@ -815,7 +834,7 @@
       "source_file": "package.json",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 23,
+      "community": 61,
       "norm_label": "lucide-react",
       "community_name": "lucide-react",
       "id": "lucide_react"
@@ -2588,7 +2607,7 @@
       "_origin": "ast",
       "community": 16,
       "norm_label": "paininflammation.ts",
-      "community_name": "painInflammation.ts",
+      "community_name": "generateGapCases.ts",
       "id": "scripts_templates_paininflammation"
     },
     {
@@ -2599,7 +2618,7 @@
       "_origin": "ast",
       "community": 16,
       "norm_label": "tpl()",
-      "community_name": "painInflammation.ts",
+      "community_name": "generateGapCases.ts",
       "id": "scripts_templates_paininflammation_tpl"
     },
     {
@@ -2610,7 +2629,7 @@
       "_origin": "ast",
       "community": 16,
       "norm_label": "pain_inflammation_templates",
-      "community_name": "painInflammation.ts",
+      "community_name": "generateGapCases.ts",
       "id": "scripts_templates_paininflammation_pain_inflammation_templates"
     },
     {
@@ -12070,9 +12089,9 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_generate_ai_resources",
-      "target": "scripts_generate_ai_resources_caserecord",
-      "confidence_score": 1.0
+      "target": "scripts_generate_ai_resources_caserecord"
     },
     {
       "relation": "contains",
@@ -12080,9 +12099,9 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_generate_ai_resources",
-      "target": "scripts_generate_ai_resources_generateflashcards",
-      "confidence_score": 1.0
+      "target": "scripts_generate_ai_resources_generateflashcards"
     },
     {
       "relation": "contains",
@@ -12090,9 +12109,9 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_generate_ai_resources",
-      "target": "scripts_generate_ai_resources_generatequizquestions",
-      "confidence_score": 1.0
+      "target": "scripts_generate_ai_resources_generatequizquestions"
     },
     {
       "relation": "contains",
@@ -12100,9 +12119,9 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_generate_ai_resources",
-      "target": "scripts_generate_ai_resources_generatestudyguide",
-      "confidence_score": 1.0
+      "target": "scripts_generate_ai_resources_generatestudyguide"
     },
     {
       "relation": "contains",
@@ -12110,9 +12129,9 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_generate_ai_resources",
-      "target": "scripts_generate_ai_resources_main",
-      "confidence_score": 1.0
+      "target": "scripts_generate_ai_resources_main"
     },
     {
       "relation": "contains",
@@ -12120,9 +12139,9 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_generate_ai_resources",
-      "target": "scripts_generate_ai_resources_supabase",
-      "confidence_score": 1.0
+      "target": "scripts_generate_ai_resources_supabase"
     },
     {
       "relation": "calls",
@@ -12131,9 +12150,9 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_generate_ai_resources_main",
-      "target": "scripts_generate_ai_resources_generatestudyguide",
-      "confidence_score": 1.0
+      "target": "scripts_generate_ai_resources_generatestudyguide"
     },
     {
       "relation": "calls",
@@ -12142,9 +12161,9 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_generate_ai_resources_main",
-      "target": "scripts_generate_ai_resources_generateflashcards",
-      "confidence_score": 1.0
+      "target": "scripts_generate_ai_resources_generateflashcards"
     },
     {
       "relation": "calls",
@@ -12153,9 +12172,9 @@
       "source_file": "scripts/generate-ai-resources.ts",
       "source_location": "L179",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_generate_ai_resources_main",
-      "target": "scripts_generate_ai_resources_generatequizquestions",
-      "confidence_score": 1.0
+      "target": "scripts_generate_ai_resources_generatequizquestions"
     },
     {
       "relation": "contains",
@@ -12163,9 +12182,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_batchupsert",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_batchupsert"
     },
     {
       "relation": "contains",
@@ -12173,9 +12192,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_main",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_main"
     },
     {
       "relation": "contains",
@@ -12183,9 +12202,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_supabase",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_supabase"
     },
     {
       "relation": "contains",
@@ -12193,9 +12212,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_synccasenodes",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_synccasenodes"
     },
     {
       "relation": "contains",
@@ -12203,9 +12222,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_syncdiseasemonographs",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_syncdiseasemonographs"
     },
     {
       "relation": "contains",
@@ -12213,9 +12232,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_syncdiseasenodes",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_syncdiseasenodes"
     },
     {
       "relation": "contains",
@@ -12223,9 +12242,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_syncdiseases",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_syncdiseases"
     },
     {
       "relation": "contains",
@@ -12233,9 +12252,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L88",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_syncrelationships",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_syncrelationships"
     },
     {
       "relation": "contains",
@@ -12243,9 +12262,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine",
-      "target": "scripts_sync_knowledge_engine_toseedid",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_toseedid"
     },
     {
       "relation": "calls",
@@ -12254,9 +12273,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine_synccasenodes",
-      "target": "scripts_sync_knowledge_engine_toseedid",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_toseedid"
     },
     {
       "relation": "calls",
@@ -12265,9 +12284,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine_syncrelationships",
-      "target": "scripts_sync_knowledge_engine_toseedid",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_toseedid"
     },
     {
       "relation": "calls",
@@ -12276,9 +12295,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine_synccasenodes",
-      "target": "scripts_sync_knowledge_engine_batchupsert",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_batchupsert"
     },
     {
       "relation": "calls",
@@ -12287,9 +12306,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L163",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine_syncdiseasemonographs",
-      "target": "scripts_sync_knowledge_engine_batchupsert",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_batchupsert"
     },
     {
       "relation": "calls",
@@ -12298,9 +12317,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine_syncdiseasenodes",
-      "target": "scripts_sync_knowledge_engine_batchupsert",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_batchupsert"
     },
     {
       "relation": "calls",
@@ -12309,9 +12328,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L143",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine_syncdiseases",
-      "target": "scripts_sync_knowledge_engine_batchupsert",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_batchupsert"
     },
     {
       "relation": "calls",
@@ -12320,9 +12339,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine_syncrelationships",
-      "target": "scripts_sync_knowledge_engine_batchupsert",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_batchupsert"
     },
     {
       "relation": "calls",
@@ -12331,9 +12350,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine_main",
-      "target": "scripts_sync_knowledge_engine_syncdiseasenodes",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_syncdiseasenodes"
     },
     {
       "relation": "calls",
@@ -12342,9 +12361,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine_main",
-      "target": "scripts_sync_knowledge_engine_synccasenodes",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_synccasenodes"
     },
     {
       "relation": "calls",
@@ -12353,9 +12372,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine_main",
-      "target": "scripts_sync_knowledge_engine_syncrelationships",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_syncrelationships"
     },
     {
       "relation": "calls",
@@ -12364,9 +12383,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine_main",
-      "target": "scripts_sync_knowledge_engine_syncdiseases",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_syncdiseases"
     },
     {
       "relation": "calls",
@@ -12375,9 +12394,9 @@
       "source_file": "scripts/sync-knowledge-engine.ts",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_knowledge_engine_main",
-      "target": "scripts_sync_knowledge_engine_syncdiseasemonographs",
-      "confidence_score": 1.0
+      "target": "scripts_sync_knowledge_engine_syncdiseasemonographs"
     },
     {
       "relation": "contains",
@@ -12385,9 +12404,9 @@
       "source_file": "vite.config.ts",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vite_config",
-      "target": "vite_config_onwarn",
-      "confidence_score": 1.0
+      "target": "vite_config_onwarn"
     },
     {
       "relation": "contains",
@@ -30807,5 +30826,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ce3744c00aba114abdfce11e279fcd2bb4bf04cf"
+  "built_at_commit": "4c075f90abdb58d58aaf23f1d3a7335542da42e6"
 }

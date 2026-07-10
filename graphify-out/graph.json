@@ -4,6 +4,166 @@
   "graph": {},
   "nodes": [
     {
+      "label": "clinicalCasesData.ts",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_data_clinicalcasesdata",
+      "community": 1,
+      "norm_label": "clinicalcasesdata.ts"
+    },
+    {
+      "label": "ClinicalCase",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_data_clinicalcasesdata_clinicalcase",
+      "community": 1,
+      "norm_label": "clinicalcase"
+    },
+    {
+      "label": "SPECIALTIES",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "src_data_clinicalcasesdata_specialties",
+      "community": 1,
+      "norm_label": "specialties"
+    },
+    {
+      "label": "DISEASES_BY_SPECIALTY",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "src_data_clinicalcasesdata_diseases_by_specialty",
+      "community": 4,
+      "norm_label": "diseases_by_specialty"
+    },
+    {
+      "label": "INITIAL_CASES",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L229",
+      "_origin": "ast",
+      "id": "src_data_clinicalcasesdata_initial_cases",
+      "community": 4,
+      "norm_label": "initial_cases"
+    },
+    {
+      "label": "CURRICULUM_UNITS",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L586",
+      "_origin": "ast",
+      "id": "src_data_clinicalcasesdata_curriculum_units",
+      "community": 1,
+      "norm_label": "curriculum_units"
+    },
+    {
+      "label": "CURRICULUM_TOPICS_REGISTRY",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L605",
+      "_origin": "ast",
+      "id": "src_data_clinicalcasesdata_curriculum_topics_registry",
+      "community": 1,
+      "norm_label": "curriculum_topics_registry"
+    },
+    {
+      "label": "getCurriculumCasesForUnit()",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L645",
+      "_origin": "ast",
+      "id": "src_data_clinicalcasesdata_getcurriculumcasesforunit",
+      "community": 6,
+      "norm_label": "getcurriculumcasesforunit()"
+    },
+    {
+      "label": "ALL_CLINICAL_CASES",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L1005",
+      "_origin": "ast",
+      "id": "src_data_clinicalcasesdata_all_clinical_cases",
+      "community": 1,
+      "norm_label": "all_clinical_cases"
+    },
+    {
+      "label": "ClinicalCasesScreen.tsx",
+      "file_type": "code",
+      "source_file": "src/screens/ClinicalCasesScreen.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_screens_clinicalcasesscreen",
+      "community": 1,
+      "norm_label": "clinicalcasesscreen.tsx"
+    },
+    {
+      "label": "ClinicalCasesScreen()",
+      "file_type": "code",
+      "source_file": "src/screens/ClinicalCasesScreen.tsx",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "src_screens_clinicalcasesscreen_clinicalcasesscreen",
+      "community": 1,
+      "norm_label": "clinicalcasesscreen()"
+    },
+    {
+      "label": "clinicalCase.service.ts",
+      "file_type": "code",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_services_clinicalcase_service",
+      "community": 1,
+      "norm_label": "clinicalcase.service.ts"
+    },
+    {
+      "label": "mapRow()",
+      "file_type": "code",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "src_services_clinicalcase_service_maprow",
+      "community": 1,
+      "norm_label": "maprow()"
+    },
+    {
+      "label": "CaseFilters",
+      "file_type": "code",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "src_services_clinicalcase_service_casefilters",
+      "community": 1,
+      "norm_label": "casefilters"
+    },
+    {
+      "label": "applyFilters()",
+      "file_type": "code",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "src_services_clinicalcase_service_applyfilters",
+      "community": 1,
+      "norm_label": "applyfilters()"
+    },
+    {
+      "label": "ClinicalCaseService",
+      "file_type": "code",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "src_services_clinicalcase_service_clinicalcaseservice",
+      "community": 1,
+      "norm_label": "clinicalcaseservice"
+    },
+    {
       "label": "generate-ai-resources.ts",
       "file_type": "code",
       "source_file": "scripts/generate-ai-resources.ts",
@@ -11,8 +171,8 @@
       "_origin": "ast",
       "community": 26,
       "norm_label": "generate-ai-resources.ts",
-      "id": "scripts_generate_ai_resources",
-      "community_name": "generate-ai-resources.ts"
+      "community_name": "generate-ai-resources.ts",
+      "id": "scripts_generate_ai_resources"
     },
     {
       "label": "supabase",
@@ -22,8 +182,8 @@
       "_origin": "ast",
       "community": 26,
       "norm_label": "supabase",
-      "id": "scripts_generate_ai_resources_supabase",
-      "community_name": "generate-ai-resources.ts"
+      "community_name": "generate-ai-resources.ts",
+      "id": "scripts_generate_ai_resources_supabase"
     },
     {
       "label": "CaseRecord",
@@ -33,8 +193,8 @@
       "_origin": "ast",
       "community": 26,
       "norm_label": "caserecord",
-      "id": "scripts_generate_ai_resources_caserecord",
-      "community_name": "generate-ai-resources.ts"
+      "community_name": "generate-ai-resources.ts",
+      "id": "scripts_generate_ai_resources_caserecord"
     },
     {
       "label": "generateStudyGuide()",
@@ -44,8 +204,8 @@
       "_origin": "ast",
       "community": 26,
       "norm_label": "generatestudyguide()",
-      "id": "scripts_generate_ai_resources_generatestudyguide",
-      "community_name": "generate-ai-resources.ts"
+      "community_name": "generate-ai-resources.ts",
+      "id": "scripts_generate_ai_resources_generatestudyguide"
     },
     {
       "label": "generateFlashcards()",
@@ -55,8 +215,8 @@
       "_origin": "ast",
       "community": 26,
       "norm_label": "generateflashcards()",
-      "id": "scripts_generate_ai_resources_generateflashcards",
-      "community_name": "generate-ai-resources.ts"
+      "community_name": "generate-ai-resources.ts",
+      "id": "scripts_generate_ai_resources_generateflashcards"
     },
     {
       "label": "generateQuizQuestions()",
@@ -66,8 +226,8 @@
       "_origin": "ast",
       "community": 26,
       "norm_label": "generatequizquestions()",
-      "id": "scripts_generate_ai_resources_generatequizquestions",
-      "community_name": "generate-ai-resources.ts"
+      "community_name": "generate-ai-resources.ts",
+      "id": "scripts_generate_ai_resources_generatequizquestions"
     },
     {
       "label": "main()",
@@ -77,8 +237,8 @@
       "_origin": "ast",
       "community": 26,
       "norm_label": "main()",
-      "id": "scripts_generate_ai_resources_main",
-      "community_name": "generate-ai-resources.ts"
+      "community_name": "generate-ai-resources.ts",
+      "id": "scripts_generate_ai_resources_main"
     },
     {
       "label": "sync-knowledge-engine.ts",
@@ -88,8 +248,8 @@
       "_origin": "ast",
       "community": 36,
       "norm_label": "sync-knowledge-engine.ts",
-      "id": "scripts_sync_knowledge_engine",
-      "community_name": "sync-knowledge-engine.ts"
+      "community_name": "sync-knowledge-engine.ts",
+      "id": "scripts_sync_knowledge_engine"
     },
     {
       "label": "supabase",
@@ -99,8 +259,8 @@
       "_origin": "ast",
       "community": 36,
       "norm_label": "supabase",
-      "id": "scripts_sync_knowledge_engine_supabase",
-      "community_name": "sync-knowledge-engine.ts"
+      "community_name": "sync-knowledge-engine.ts",
+      "id": "scripts_sync_knowledge_engine_supabase"
     },
     {
       "label": "toSeedId()",
@@ -110,8 +270,8 @@
       "_origin": "ast",
       "community": 36,
       "norm_label": "toseedid()",
-      "id": "scripts_sync_knowledge_engine_toseedid",
-      "community_name": "sync-knowledge-engine.ts"
+      "community_name": "sync-knowledge-engine.ts",
+      "id": "scripts_sync_knowledge_engine_toseedid"
     },
     {
       "label": "batchUpsert()",
@@ -121,8 +281,8 @@
       "_origin": "ast",
       "community": 36,
       "norm_label": "batchupsert()",
-      "id": "scripts_sync_knowledge_engine_batchupsert",
-      "community_name": "sync-knowledge-engine.ts"
+      "community_name": "sync-knowledge-engine.ts",
+      "id": "scripts_sync_knowledge_engine_batchupsert"
     },
     {
       "label": "syncDiseaseNodes()",
@@ -132,8 +292,8 @@
       "_origin": "ast",
       "community": 36,
       "norm_label": "syncdiseasenodes()",
-      "id": "scripts_sync_knowledge_engine_syncdiseasenodes",
-      "community_name": "sync-knowledge-engine.ts"
+      "community_name": "sync-knowledge-engine.ts",
+      "id": "scripts_sync_knowledge_engine_syncdiseasenodes"
     },
     {
       "label": "syncCaseNodes()",
@@ -143,8 +303,8 @@
       "_origin": "ast",
       "community": 36,
       "norm_label": "synccasenodes()",
-      "id": "scripts_sync_knowledge_engine_synccasenodes",
-      "community_name": "sync-knowledge-engine.ts"
+      "community_name": "sync-knowledge-engine.ts",
+      "id": "scripts_sync_knowledge_engine_synccasenodes"
     },
     {
       "label": "syncRelationships()",
@@ -154,8 +314,8 @@
       "_origin": "ast",
       "community": 36,
       "norm_label": "syncrelationships()",
-      "id": "scripts_sync_knowledge_engine_syncrelationships",
-      "community_name": "sync-knowledge-engine.ts"
+      "community_name": "sync-knowledge-engine.ts",
+      "id": "scripts_sync_knowledge_engine_syncrelationships"
     },
     {
       "label": "syncDiseases()",
@@ -165,8 +325,8 @@
       "_origin": "ast",
       "community": 36,
       "norm_label": "syncdiseases()",
-      "id": "scripts_sync_knowledge_engine_syncdiseases",
-      "community_name": "sync-knowledge-engine.ts"
+      "community_name": "sync-knowledge-engine.ts",
+      "id": "scripts_sync_knowledge_engine_syncdiseases"
     },
     {
       "label": "syncDiseaseMonographs()",
@@ -176,8 +336,8 @@
       "_origin": "ast",
       "community": 36,
       "norm_label": "syncdiseasemonographs()",
-      "id": "scripts_sync_knowledge_engine_syncdiseasemonographs",
-      "community_name": "sync-knowledge-engine.ts"
+      "community_name": "sync-knowledge-engine.ts",
+      "id": "scripts_sync_knowledge_engine_syncdiseasemonographs"
     },
     {
       "label": "main()",
@@ -187,8 +347,8 @@
       "_origin": "ast",
       "community": 36,
       "norm_label": "main()",
-      "id": "scripts_sync_knowledge_engine_main",
-      "community_name": "sync-knowledge-engine.ts"
+      "community_name": "sync-knowledge-engine.ts",
+      "id": "scripts_sync_knowledge_engine_main"
     },
     {
       "label": "vite.config.ts",
@@ -198,8 +358,8 @@
       "_origin": "ast",
       "community": 71,
       "norm_label": "vite.config.ts",
-      "id": "vite_config",
-      "community_name": "vite.config.ts"
+      "community_name": "vite.config.ts",
+      "id": "vite_config"
     },
     {
       "label": "onwarn()",
@@ -209,8 +369,8 @@
       "_origin": "ast",
       "community": 71,
       "norm_label": "onwarn()",
-      "id": "vite_config_onwarn",
-      "community_name": "vite.config.ts"
+      "community_name": "vite.config.ts",
+      "id": "vite_config_onwarn"
     },
     {
       "label": "index.ts",
@@ -559,7 +719,7 @@
       "source_file": "package.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 23,
+      "community": 76,
       "norm_label": "@vitejs/plugin-react",
       "community_name": "dependencies",
       "id": "package_dependencies_vitejs_plugin_react"
@@ -570,7 +730,7 @@
       "source_file": "package.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 23,
+      "community": 76,
       "norm_label": "@vitejs/plugin-react",
       "community_name": "dependencies",
       "id": "vitejs_plugin_react"
@@ -823,7 +983,7 @@
       "source_file": "package.json",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 61,
+      "community": 23,
       "norm_label": "lucide-react",
       "community_name": "lucide-react",
       "id": "package_dependencies_lucide_react"
@@ -834,7 +994,7 @@
       "source_file": "package.json",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 61,
+      "community": 23,
       "norm_label": "lucide-react",
       "community_name": "lucide-react",
       "id": "lucide_react"
@@ -4822,105 +4982,6 @@
       "id": "src_core_overlaymanager_overlaymanager_notify"
     },
     {
-      "label": "clinicalCasesData.ts",
-      "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "clinicalcasesdata.ts",
-      "community_name": "index.ts",
-      "id": "src_data_clinicalcasesdata"
-    },
-    {
-      "label": "ClinicalCase",
-      "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L3",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "clinicalcase",
-      "community_name": "index.ts",
-      "id": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "label": "SPECIALTIES",
-      "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L43",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "specialties",
-      "community_name": "index.ts",
-      "id": "src_data_clinicalcasesdata_specialties"
-    },
-    {
-      "label": "DISEASES_BY_SPECIALTY",
-      "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L63",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "diseases_by_specialty",
-      "community_name": "curriculum.ts",
-      "id": "src_data_clinicalcasesdata_diseases_by_specialty"
-    },
-    {
-      "label": "INITIAL_CASES",
-      "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L229",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "initial_cases",
-      "community_name": "curriculum.ts",
-      "id": "src_data_clinicalcasesdata_initial_cases"
-    },
-    {
-      "label": "CURRICULUM_UNITS",
-      "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L586",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "curriculum_units",
-      "community_name": "index.ts",
-      "id": "src_data_clinicalcasesdata_curriculum_units"
-    },
-    {
-      "label": "CURRICULUM_TOPICS_REGISTRY",
-      "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L605",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "curriculum_topics_registry",
-      "community_name": "index.ts",
-      "id": "src_data_clinicalcasesdata_curriculum_topics_registry"
-    },
-    {
-      "label": "getCurriculumCasesForUnit()",
-      "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L645",
-      "_origin": "ast",
-      "community": 6,
-      "norm_label": "getcurriculumcasesforunit()",
-      "community_name": "AdminDashboardScreen.tsx",
-      "id": "src_data_clinicalcasesdata_getcurriculumcasesforunit"
-    },
-    {
-      "label": "ALL_CLINICAL_CASES",
-      "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L1005",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "all_clinical_cases",
-      "community_name": "index.ts",
-      "id": "src_data_clinicalcasesdata_all_clinical_cases"
-    },
-    {
       "label": "autonomic_pharmacology.ts",
       "file_type": "code",
       "source_file": "src/data/clinicalCases/autonomic_pharmacology.ts",
@@ -5597,7 +5658,7 @@
       "source_file": "src/data/curriculum.ts",
       "source_location": "L748",
       "_origin": "ast",
-      "community": 1,
+      "community": 4,
       "norm_label": "getintegratedunitid()",
       "community_name": "index.ts",
       "id": "src_data_curriculum_getintegratedunitid"
@@ -6323,7 +6384,7 @@
       "source_file": "src/lib/supabase.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 61,
       "norm_label": "supabase.ts",
       "community_name": "index.ts",
       "id": "src_lib_supabase"
@@ -6334,7 +6395,7 @@
       "source_file": "src/lib/supabase.ts",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 1,
+      "community": 61,
       "norm_label": "supabaseurl",
       "community_name": "index.ts",
       "id": "src_lib_supabase_supabaseurl"
@@ -6345,7 +6406,7 @@
       "source_file": "src/lib/supabase.ts",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 1,
+      "community": 61,
       "norm_label": "supabaseanonkey",
       "community_name": "index.ts",
       "id": "src_lib_supabase_supabaseanonkey"
@@ -6833,28 +6894,6 @@
       "norm_label": "clinicalassistantscreen()",
       "community_name": "ClinicalAssistantScreen.tsx",
       "id": "src_screens_clinicalassistantscreen_clinicalassistantscreen"
-    },
-    {
-      "label": "ClinicalCasesScreen.tsx",
-      "file_type": "code",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "clinicalcasesscreen.tsx",
-      "community_name": "index.ts",
-      "id": "src_screens_clinicalcasesscreen"
-    },
-    {
-      "label": "ClinicalCasesScreen()",
-      "file_type": "code",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L15",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "clinicalcasesscreen()",
-      "community_name": "index.ts",
-      "id": "src_screens_clinicalcasesscreen_clinicalcasesscreen"
     },
     {
       "label": "DashboardScreen.tsx",
@@ -8032,61 +8071,6 @@
       "norm_label": "chunkeduploadservice",
       "community_name": "storage.service.ts",
       "id": "src_services_chunkedupload_service_chunkeduploadservice"
-    },
-    {
-      "label": "clinicalCase.service.ts",
-      "file_type": "code",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "clinicalcase.service.ts",
-      "community_name": "index.ts",
-      "id": "src_services_clinicalcase_service"
-    },
-    {
-      "label": "mapRow()",
-      "file_type": "code",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L21",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "maprow()",
-      "community_name": "index.ts",
-      "id": "src_services_clinicalcase_service_maprow"
-    },
-    {
-      "label": "CaseFilters",
-      "file_type": "code",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L63",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "casefilters",
-      "community_name": "index.ts",
-      "id": "src_services_clinicalcase_service_casefilters"
-    },
-    {
-      "label": "applyFilters()",
-      "file_type": "code",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L72",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "applyfilters()",
-      "community_name": "index.ts",
-      "id": "src_services_clinicalcase_service_applyfilters"
-    },
-    {
-      "label": "ClinicalCaseService",
-      "file_type": "code",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L89",
-      "_origin": "ast",
-      "community": 1,
-      "norm_label": "clinicalcaseservice",
-      "community_name": "index.ts",
-      "id": "src_services_clinicalcase_service_clinicalcaseservice"
     },
     {
       "label": "education.service.ts",
@@ -12084,6 +12068,917 @@
   ],
   "links": [
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seed-clinical-cases.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_seed_clinical_cases",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seedExistingDb.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_seedexistingdb",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/CurriculumGraph.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_curriculumgraph",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/autonomic_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_autonomic_pharmacology",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/cardiovascular_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_cardiovascular_pharmacology",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/central_nervous_system_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_central_nervous_system_pharmacology",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/chemotherapy_antimicrobial_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_chemotherapy_antimicrobial_pharmacology",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/clinical_pharmacy.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_clinical_pharmacy",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/dermatology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_dermatology",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/endocrine_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_endocrine_pharmacology",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/gastrointestinal_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_gastrointestinal_pharmacology",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/general_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_general_pharmacology",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/hematology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_hematology",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/index.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_index",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/oncology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_oncology",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/ophthalmology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_ophthalmology",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/pain_inflammation.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_pain_inflammation",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/renal_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_renal_pharmacology",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/respiratory_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_respiratory_pharmacology",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/toxicology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_toxicology",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/vitamins_nutrition.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_vitamins_nutrition",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L1005",
+      "weight": 1.0,
+      "source": "src_data_clinicalcasesdata",
+      "target": "src_data_clinicalcasesdata_all_clinical_cases",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_data_clinicalcasesdata",
+      "target": "src_data_clinicalcasesdata_clinicalcase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L605",
+      "weight": 1.0,
+      "source": "src_data_clinicalcasesdata",
+      "target": "src_data_clinicalcasesdata_curriculum_topics_registry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L586",
+      "weight": 1.0,
+      "source": "src_data_clinicalcasesdata",
+      "target": "src_data_clinicalcasesdata_curriculum_units",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "src_data_clinicalcasesdata",
+      "target": "src_data_clinicalcasesdata_diseases_by_specialty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L645",
+      "weight": 1.0,
+      "source": "src_data_clinicalcasesdata",
+      "target": "src_data_clinicalcasesdata_getcurriculumcasesforunit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L229",
+      "weight": 1.0,
+      "source": "src_data_clinicalcasesdata",
+      "target": "src_data_clinicalcasesdata_initial_cases",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "src_data_clinicalcasesdata",
+      "target": "src_data_clinicalcasesdata_specialties",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/AdminDashboardScreen.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_screens_admindashboardscreen",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/ClinicalCasesScreen.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_screens_clinicalcasesscreen",
+      "target": "src_data_clinicalcasesdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/EducationHubScreen.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_screens_educationhubscreen",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_services_clinicalcase_service",
+      "target": "src_data_clinicalcasesdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/clinicalCases.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_clinicalcases",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/knowledgeRetrieval.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_knowledgeretrieval",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/semanticSearch.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_semanticsearch",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/types.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_types",
+      "target": "src_data_clinicalcasesdata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seed-clinical-cases.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_seed_clinical_cases",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seedExistingDb.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_seedexistingdb",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/autonomic_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_autonomic_pharmacology",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/cardiovascular_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_cardiovascular_pharmacology",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/central_nervous_system_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_central_nervous_system_pharmacology",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/chemotherapy_antimicrobial_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_chemotherapy_antimicrobial_pharmacology",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/clinical_pharmacy.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_clinical_pharmacy",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/dermatology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_dermatology",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/endocrine_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_endocrine_pharmacology",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/gastrointestinal_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_gastrointestinal_pharmacology",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/general_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_general_pharmacology",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/hematology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_hematology",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/index.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_index",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/oncology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_oncology",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/ophthalmology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_ophthalmology",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/pain_inflammation.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_pain_inflammation",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/renal_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_renal_pharmacology",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/respiratory_pharmacology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_respiratory_pharmacology",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/toxicology.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_toxicology",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/clinicalCases/vitamins_nutrition.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_clinicalcases_vitamins_nutrition",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/ClinicalCasesScreen.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_screens_clinicalcasesscreen",
+      "target": "src_data_clinicalcasesdata_clinicalcase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_services_clinicalcase_service",
+      "target": "src_data_clinicalcasesdata_clinicalcase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/types.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_types",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/types.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_types_educationalcontext",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/types.ts",
+      "source_location": "L92",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_types_skillcontext",
+      "target": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/ClinicalCasesScreen.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_screens_clinicalcasesscreen",
+      "target": "src_data_clinicalcasesdata_specialties",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/CurriculumGraph.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_curriculumgraph",
+      "target": "src_data_clinicalcasesdata_diseases_by_specialty"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seed-clinical-cases.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_seed_clinical_cases",
+      "target": "src_data_clinicalcasesdata_initial_cases"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/CurriculumGraph.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_curriculumgraph",
+      "target": "src_data_clinicalcasesdata_initial_cases"
+    },
+    {
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/CurriculumGraph.tsx",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "src_components_curriculumgraph_curriculumgraph",
+      "target": "src_data_clinicalcasesdata_initial_cases"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/EducationHubScreen.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_screens_educationhubscreen",
+      "target": "src_data_clinicalcasesdata_initial_cases"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/clinicalCases.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_clinicalcases",
+      "target": "src_data_clinicalcasesdata_initial_cases"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/knowledgeRetrieval.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_knowledgeretrieval",
+      "target": "src_data_clinicalcasesdata_initial_cases"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/semanticSearch.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_semanticsearch",
+      "target": "src_data_clinicalcasesdata_initial_cases"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/AdminDashboardScreen.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_screens_admindashboardscreen",
+      "target": "src_data_clinicalcasesdata_getcurriculumcasesforunit"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/screens/AdminDashboardScreen.tsx",
+      "source_location": "L447",
+      "weight": 1.0,
+      "source": "src_screens_admindashboardscreen_admindashboardscreen",
+      "target": "src_data_clinicalcasesdata_getcurriculumcasesforunit"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seedExistingDb.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_seedexistingdb",
+      "target": "src_data_clinicalcasesdata_all_clinical_cases"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/ClinicalCasesScreen.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_screens_clinicalcasesscreen",
+      "target": "src_data_clinicalcasesdata_all_clinical_cases",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_services_clinicalcase_service",
+      "target": "src_data_clinicalcasesdata_all_clinical_cases",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/ClinicalCasesScreen.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_screens_clinicalcasesscreen",
+      "target": "src_screens_clinicalcasesscreen_clinicalcasesscreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/ClinicalCasesScreen.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_screens_clinicalcasesscreen",
+      "target": "src_services_clinicalcase_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/ClinicalCasesScreen.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_screens_clinicalcasesscreen",
+      "target": "src_services_clinicalcase_service_clinicalcaseservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/screens/ClinicalCasesScreen.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_screens_clinicalcasesscreen_clinicalcasesscreen",
+      "target": "src_services_clinicalcase_service_clinicalcaseservice"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "src_services_clinicalcase_service",
+      "target": "src_services_clinicalcase_service_applyfilters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "src_services_clinicalcase_service",
+      "target": "src_services_clinicalcase_service_casefilters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "src_services_clinicalcase_service",
+      "target": "src_services_clinicalcase_service_clinicalcaseservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_services_clinicalcase_service",
+      "target": "src_services_clinicalcase_service_maprow",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/generate-ai-resources.ts",
@@ -15292,39 +16187,6 @@
       "target": "src_data_clinicalcases_index_generated_cases"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/seed-clinical-cases.ts",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_seed_clinical_cases",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/seed-clinical-cases.ts",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_seed_clinical_cases",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/seed-clinical-cases.ts",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_seed_clinical_cases",
-      "target": "src_data_clinicalcasesdata_initial_cases"
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -15459,39 +16321,6 @@
       "confidence_score": 1.0,
       "source": "scripts_seedexistingdb",
       "target": "src_data_clinicalcases_index_generated_cases"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/seedExistingDb.ts",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_seedexistingdb",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/seedExistingDb.ts",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_seedexistingdb",
-      "target": "src_data_clinicalcasesdata_all_clinical_cases"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/seedExistingDb.ts",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_seedexistingdb",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
     },
     {
       "relation": "calls",
@@ -17185,39 +18014,6 @@
       "target": "src_components_curriculumgraph_specialty_to_units"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/CurriculumGraph.tsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_components_curriculumgraph",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/CurriculumGraph.tsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_components_curriculumgraph",
-      "target": "src_data_clinicalcasesdata_diseases_by_specialty"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/CurriculumGraph.tsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_components_curriculumgraph",
-      "target": "src_data_clinicalcasesdata_initial_cases"
-    },
-    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -17260,17 +18056,6 @@
       "confidence_score": 1.0,
       "source": "src_screens_educationhubscreen",
       "target": "src_components_curriculumgraph"
-    },
-    {
-      "relation": "references",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/CurriculumGraph.tsx",
-      "source_location": "L178",
-      "weight": 1.0,
-      "source": "src_components_curriculumgraph_curriculumgraph",
-      "target": "src_data_clinicalcasesdata_initial_cases"
     },
     {
       "relation": "calls",
@@ -19678,17 +20463,6 @@
       "context": "argument",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L610",
-      "weight": 1.0,
-      "source": "src_screens_clinicalcasesscreen_clinicalcasesscreen",
-      "target": "src_core_errorhandler_errorhandler_error"
-    },
-    {
-      "relation": "indirect_call",
-      "context": "argument",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L1885",
       "weight": 1.0,
@@ -19883,735 +20657,6 @@
       "confidence_score": 1.0,
       "source": "src_core_overlaymanager_overlaymanager_dismiss",
       "target": "src_core_overlaymanager_overlaymanager_notify"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/autonomic_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_autonomic_pharmacology",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/cardiovascular_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_cardiovascular_pharmacology",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/central_nervous_system_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_central_nervous_system_pharmacology",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/chemotherapy_antimicrobial_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_chemotherapy_antimicrobial_pharmacology",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/clinical_pharmacy.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_clinical_pharmacy",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/dermatology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_dermatology",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/endocrine_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_endocrine_pharmacology",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/gastrointestinal_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_gastrointestinal_pharmacology",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/general_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_general_pharmacology",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/hematology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_hematology",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/index.ts",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_index",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/oncology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_oncology",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/ophthalmology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_ophthalmology",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/pain_inflammation.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_pain_inflammation",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/renal_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_renal_pharmacology",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/respiratory_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_respiratory_pharmacology",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/toxicology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_toxicology",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/vitamins_nutrition.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_vitamins_nutrition",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcases_index_generated_cases"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L1005",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_all_clinical_cases"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L605",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_curriculum_topics_registry"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L586",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_curriculum_units"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L63",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_diseases_by_specialty"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L645",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_getcurriculumcasesforunit"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L229",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_initial_cases"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L43",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_specialties"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/AdminDashboardScreen.tsx",
-      "source_location": "L40",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_admindashboardscreen",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/EducationHubScreen.tsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_educationhubscreen",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_services_clinicalcase_service",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/clinicalCases.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_clinicalcases",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/knowledgeRetrieval.ts",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_knowledgeretrieval",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/semanticSearch.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_semanticsearch",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/types.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_types",
-      "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/autonomic_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_autonomic_pharmacology",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/cardiovascular_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_cardiovascular_pharmacology",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/central_nervous_system_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_central_nervous_system_pharmacology",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/chemotherapy_antimicrobial_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_chemotherapy_antimicrobial_pharmacology",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/clinical_pharmacy.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_clinical_pharmacy",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/dermatology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_dermatology",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/endocrine_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_endocrine_pharmacology",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/gastrointestinal_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_gastrointestinal_pharmacology",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/general_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_general_pharmacology",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/hematology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_hematology",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/index.ts",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_index",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/oncology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_oncology",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/ophthalmology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_ophthalmology",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/pain_inflammation.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_pain_inflammation",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/renal_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_renal_pharmacology",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/respiratory_pharmacology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_respiratory_pharmacology",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/toxicology.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_toxicology",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/clinicalCases/vitamins_nutrition.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_clinicalcases_vitamins_nutrition",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_services_clinicalcase_service",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/types.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_types",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "references",
-      "context": "field",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/types.ts",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_types_educationalcontext",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "references",
-      "context": "field",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/types.ts",
-      "source_location": "L92",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_types_skillcontext",
-      "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_data_clinicalcasesdata_specialties"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/EducationHubScreen.tsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_educationhubscreen",
-      "target": "src_data_clinicalcasesdata_initial_cases"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/clinicalCases.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_clinicalcases",
-      "target": "src_data_clinicalcasesdata_initial_cases"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/knowledgeRetrieval.ts",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_knowledgeretrieval",
-      "target": "src_data_clinicalcasesdata_initial_cases"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/semanticSearch.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_semanticsearch",
-      "target": "src_data_clinicalcasesdata_initial_cases"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/AdminDashboardScreen.tsx",
-      "source_location": "L40",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_admindashboardscreen",
-      "target": "src_data_clinicalcasesdata_getcurriculumcasesforunit"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/screens/AdminDashboardScreen.tsx",
-      "source_location": "L447",
-      "weight": 1.0,
-      "source": "src_screens_admindashboardscreen_admindashboardscreen",
-      "target": "src_data_clinicalcasesdata_getcurriculumcasesforunit"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_data_clinicalcasesdata_all_clinical_cases"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_services_clinicalcase_service",
-      "target": "src_data_clinicalcasesdata_all_clinical_cases"
     },
     {
       "relation": "contains",
@@ -21492,17 +21537,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_data_curriculum"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/skills/curriculumMapping.ts",
       "source_location": "L10",
       "weight": 1.0,
@@ -21915,28 +21949,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_getintegratedunitid"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_data_curriculum_getintegratedunitid"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L100",
-      "weight": 1.0,
-      "source": "src_screens_clinicalcasesscreen_clinicalcasesscreen",
       "target": "src_data_curriculum_getintegratedunitid"
     },
     {
@@ -23443,17 +23455,6 @@
       "target": "src_lib_supabase_supabaseurl"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_services_clinicalcase_service",
-      "target": "src_lib_supabase"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lib/supabaseSync.ts",
@@ -24393,49 +24394,6 @@
       "weight": 1.0,
       "source": "src_screens_clinicalassistantscreen_clinicalassistantscreen",
       "target": "src_store_filestore_usefilestore"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_screens_clinicalcasesscreen_clinicalcasesscreen"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_services_clinicalcase_service"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_services_clinicalcase_service_clinicalcaseservice"
-    },
-    {
-      "relation": "references",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L29",
-      "weight": 1.0,
-      "source": "src_screens_clinicalcasesscreen_clinicalcasesscreen",
-      "target": "src_services_clinicalcase_service_clinicalcaseservice"
     },
     {
       "relation": "contains",
@@ -26591,46 +26549,6 @@
       "confidence_score": 1.0,
       "source": "src_services_storage_service",
       "target": "src_services_chunkedupload_service_chunkeduploadservice"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L72",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_services_clinicalcase_service",
-      "target": "src_services_clinicalcase_service_applyfilters"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L63",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_services_clinicalcase_service",
-      "target": "src_services_clinicalcase_service_casefilters"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L89",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_services_clinicalcase_service",
-      "target": "src_services_clinicalcase_service_clinicalcaseservice"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_services_clinicalcase_service",
-      "target": "src_services_clinicalcase_service_maprow"
     },
     {
       "relation": "imports",
@@ -30826,5 +30744,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4c075f90abdb58d58aaf23f1d3a7335542da42e6"
+  "built_at_commit": "fcf4d99bce531aa3a820ff11a559712592ff3229"
 }

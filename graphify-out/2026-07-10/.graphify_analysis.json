@@ -303,16 +303,6 @@
       "src_services_ragrouter_ragrouter"
     ],
     "4": [
-      "scripts_sync_knowledge_engine",
-      "scripts_sync_knowledge_engine_batchupsert",
-      "scripts_sync_knowledge_engine_main",
-      "scripts_sync_knowledge_engine_supabase",
-      "scripts_sync_knowledge_engine_synccasenodes",
-      "scripts_sync_knowledge_engine_syncdiseasemonographs",
-      "scripts_sync_knowledge_engine_syncdiseasenodes",
-      "scripts_sync_knowledge_engine_syncdiseases",
-      "scripts_sync_knowledge_engine_syncrelationships",
-      "scripts_sync_knowledge_engine_toseedid",
       "src_components_curriculumgraph",
       "src_components_curriculumgraph_curriculumgraph",
       "src_components_curriculumgraph_graphlink",
@@ -732,7 +722,10 @@
       "scripts_templates_gapunits_paediatric_templates",
       "scripts_templates_ophthalmology",
       "scripts_templates_ophthalmology_ophthalmology_templates",
-      "scripts_templates_ophthalmology_t"
+      "scripts_templates_ophthalmology_t",
+      "scripts_templates_paininflammation",
+      "scripts_templates_paininflammation_pain_inflammation_templates",
+      "scripts_templates_paininflammation_tpl"
     ],
     "17": [
       "src_components_overlayhost",
@@ -816,15 +809,15 @@
       "src_screens_notificationsscreen_notificationsscreen"
     ],
     "23": [
-      "clsx",
       "package_dependencies",
-      "package_dependencies_clsx",
       "package_dependencies_react_dom",
       "package_dependencies_react_router_dom",
       "package_dependencies_supabase_ssr",
+      "package_dependencies_vitejs_plugin_react",
       "react_dom",
       "react_router_dom",
-      "supabase_ssr"
+      "supabase_ssr",
+      "vitejs_plugin_react"
     ],
     "24": [
       "ref_vite_config_ts",
@@ -909,9 +902,16 @@
       "scripts_templates_endocrine_tpl"
     ],
     "36": [
-      "scripts_templates_paininflammation",
-      "scripts_templates_paininflammation_pain_inflammation_templates",
-      "scripts_templates_paininflammation_tpl"
+      "scripts_sync_knowledge_engine",
+      "scripts_sync_knowledge_engine_batchupsert",
+      "scripts_sync_knowledge_engine_main",
+      "scripts_sync_knowledge_engine_supabase",
+      "scripts_sync_knowledge_engine_synccasenodes",
+      "scripts_sync_knowledge_engine_syncdiseasemonographs",
+      "scripts_sync_knowledge_engine_syncdiseasenodes",
+      "scripts_sync_knowledge_engine_syncdiseases",
+      "scripts_sync_knowledge_engine_syncrelationships",
+      "scripts_sync_knowledge_engine_toseedid"
     ],
     "37": [
       "scripts_templates_renal",
@@ -964,8 +964,8 @@
       "package_dependencies_idb"
     ],
     "49": [
-      "lucide_react",
-      "package_dependencies_lucide_react"
+      "clsx",
+      "package_dependencies_clsx"
     ],
     "50": [
       "motion",
@@ -1012,8 +1012,8 @@
       "vite"
     ],
     "61": [
-      "package_dependencies_vitejs_plugin_react",
-      "vitejs_plugin_react"
+      "lucide_react",
+      "package_dependencies_lucide_react"
     ],
     "62": [
       "package_dependencies_xyflow_react",
@@ -1066,21 +1066,6 @@
     ],
     "75": [
       "bool"
-    ],
-    "76": [
-      "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_domain_domain_csproj"
-    ],
-    "77": [
-      "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_fixtures_src_domain_domain_csproj"
-    ],
-    "78": [
-      "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_fixtures_src_webapi_webapi_csproj"
-    ],
-    "79": [
-      "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_fixtures_tests_tests_tests_csproj"
-    ],
-    "80": [
-      "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_infrastructure_infrastructure_csproj"
     ],
     "81": [
       "constant"
@@ -1637,7 +1622,7 @@
     "1": 0.06453028972783142,
     "2": 0.05336951605608322,
     "3": 0.05878084179970972,
-    "4": 0.08673469387755102,
+    "4": 0.10526315789473684,
     "5": 0.041666666666666664,
     "6": 0.07641196013289037,
     "7": 0.06620209059233449,
@@ -1649,7 +1634,7 @@
     "13": 0.11428571428571428,
     "14": 0.1368421052631579,
     "15": 0.15204678362573099,
-    "16": 0.18382352941176472,
+    "16": 0.15263157894736842,
     "17": 0.21794871794871795,
     "18": 0.19696969696969696,
     "19": 0.2727272727272727,
@@ -1669,7 +1654,7 @@
     "33": 0.6666666666666666,
     "34": 0.6666666666666666,
     "35": 0.6666666666666666,
-    "36": 0.6666666666666666,
+    "36": 0.4666666666666667,
     "37": 0.6666666666666666,
     "38": 0.6666666666666666,
     "39": 1.0,
@@ -1709,11 +1694,6 @@
     "73": 1.0,
     "74": 1.0,
     "75": 1.0,
-    "76": 1.0,
-    "77": 1.0,
-    "78": 1.0,
-    "79": 1.0,
-    "80": 1.0,
     "81": 1.0,
     "82": 1.0,
     "83": 1.0,
@@ -1932,7 +1912,7 @@
     {
       "id": "src_data_clinicalcasesdata_clinicalcase",
       "label": "ClinicalCase",
-      "degree": 27
+      "degree": 26
     },
     {
       "id": "src_store_filestore_usefilestore",
@@ -2007,8 +1987,41 @@
       "why": "connects across different repos/directories; bridges separate communities"
     }
   ],
-  "tokens": {
-    "input": 0,
-    "output": 0
-  }
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `dependencies` connect `dependencies` to `devDependencies`, `AdminDashboardScreen.tsx`, `browser-image-compression`, `d3`, `docx`, `dotenv`, `express`, `firebase`, `@google/genai`, `html2canvas`, `idb`, `clsx`, `motion`, `multer`, `react`, `react-markdown`, `recharts`, `@supabase/supabase-js`, `supermemory`, `tailwind-merge`, `@tailwindcss/vite`, `@types/d3`, `vite`, `lucide-react`, `@xyflow/react`, `zod`, `zustand`?",
+      "why": "High betweenness centrality (0.119) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `jspdf` connect `AdminDashboardScreen.tsx` to `EducationHubScreen.tsx`, `DashboardScreen.tsx`, `ClinicalAssistantScreen.tsx`, `dependencies`?",
+      "why": "High betweenness centrality (0.112) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `LearningWorkspace()` connect `EducationHubScreen.tsx` to `AdminDashboardScreen.tsx`, `useAuth`?",
+      "why": "High betweenness centrality (0.053) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `supabase`, `CaseRecord`, `supabase` to the rest of the system?",
+      "why": "291 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `types.ts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06702605570530099 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `index.ts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06453028972783142 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `storage.service.ts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.05336951605608322 - nodes in this community are weakly interconnected."
+    }
+  ]
 }

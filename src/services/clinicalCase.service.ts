@@ -16,6 +16,7 @@ import {
   ALL_CLINICAL_CASES,
   type ClinicalCase,
 } from '../data/clinicalCasesData';
+import { getIntegratedUnitId } from '../data/curriculum';
 
 // ── Row mapping (snake_case DB → camelCase ClinicalCase) ──────────────────
 function mapRow(row: any): ClinicalCase {
@@ -145,7 +146,13 @@ export const ClinicalCaseService = {
     }
 
     // ── Fallback path: bundled data ──────────────────────────────────
-    const filtered = applyFilters(ALL_CLINICAL_CASES, opts);
+    const cases = ALL_CLINICAL_CASES.map(c => ({
+        ...c,
+        // Ensure bundled cases have a unitId for filtering, if not already set
+        unitId: c.unitId || (c.specialty ? getIntegratedUnitId(c.specialty) : undefined)
+    }));
+    
+    const filtered = applyFilters(cases, opts);
     const sorted = [...filtered].sort((a, b) =>
       opts.order === 'title'
         ? a.title.localeCompare(b.title)

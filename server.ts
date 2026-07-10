@@ -1716,6 +1716,106 @@ Guide the student's clinical reasoning. Answer their specific question based on 
   }
 });
 
+// Dynamic Full Case Generator Endpoint
+app.post('/api/gemini/generate-full-case', async (req, res) => {
+  try {
+    const { specialty, disease, title, difficulty } = req.body;
+    if (!specialty || !disease || !title) {
+      return res.status(400).json({ error: 'Missing specialty, disease, or title' });
+    }
+
+    const diff = difficulty || 'Intermediate';
+
+    const prompt = `You are Clinova's AI Curriculum Case Generator.
+Generate a highly detailed, medically realistic, and curriculum-appropriate patient case study matching these clinical parameters:
+- Specialty: ${specialty}
+- Disease / Clinical Topic: ${disease}
+- Case Title: ${title}
+- Target Difficulty: ${diff}
+
+The patient should have a unique realistic name (e.g., local Kenyan or standard clinical name) and a detailed clinical story. The case MUST focus on a Drug-Therapy Problem (DTP) (such as inappropriate dosing, renal adjustment required, untreated indication, adverse drug reaction, drug-drug interaction, or therapeutic duplication).
+
+Provide:
+1. Detailed patient demographics and a chief complaint.
+2. History of Present Illness (HPI) and Past Medical History (PMH).
+3. Medication History (medHx), Allergies, physical exam (pe), vitals, and specific labs/imaging values (especially renal clearance like Creatinine and eGFR).
+4. Full clinical care plan details, including pharmacotherapy (pharm) and non-pharmacotherapy (nonPharm) interventions, goals of therapy, drug-therapy problems (dtps), monitoring parameters, and patient counseling pearls.
+5. In-depth clinical pearls and official guideline-directed references.
+
+You must respond with a strictly formatted JSON object matching the required schema.`;
+
+    const response = await generateContentWithFallback({
+      model: 'gemini-2.5-flash',
+      contents: prompt,
+      config: {
+        systemInstruction: 'You are an expert clinical pharmacy and pharmacology examiner. Generate high-fidelity patient case studies conforming to the requested JSON schema.',
+        responseMimeType: 'application/json',
+        responseSchema: {
+          type: Type.OBJECT,
+          properties: {
+            id: { type: Type.STRING },
+            specialty: { type: Type.STRING },
+            disease: { type: Type.STRING },
+            title: { type: Type.STRING },
+            difficulty: { type: Type.STRING },
+            patientName: { type: Type.STRING },
+            facilitySetting: { type: Type.STRING },
+            demographics: { type: Type.STRING },
+            chiefComplaint: { type: Type.STRING },
+            hpi: { type: Type.STRING },
+            pmh: { type: Type.STRING },
+            medHx: { type: Type.STRING },
+            allergies: { type: Type.STRING },
+            pe: { type: Type.STRING },
+            vitals: { type: Type.STRING },
+            labs: { type: Type.STRING },
+            imaging: { type: Type.STRING },
+            diagnosis: { type: Type.STRING },
+            ddx: { type: Type.ARRAY, items: { type: Type.STRING } },
+            goals: { type: Type.STRING },
+            pharm: { type: Type.STRING },
+            nonPharm: { type: Type.STRING },
+            carePlan: { type: Type.STRING },
+            dtps: { type: Type.STRING },
+            monitoring: { type: Type.STRING },
+            counselling: { type: Type.STRING },
+            followUp: { type: Type.STRING },
+            pearls: { type: Type.STRING },
+            references: { type: Type.ARRAY, items: { type: Type.STRING } }
+          },
+          required: [
+            'id', 'specialty', 'disease', 'title', 'difficulty', 'patientName',
+            'facilitySetting', 'demographics', 'chiefComplaint', 'hpi', 'pmh',
+            'medHx', 'allergies', 'pe', 'vitals', 'labs', 'imaging', 'diagnosis',
+            'ddx', 'goals', 'pharm', 'nonPharm', 'carePlan', 'dtps', 'monitoring',
+            'counselling', 'followUp', 'pearls', 'references'
+          ]
+        }
+      }
+    });
+
+    const parsedCase = safeJsonParse(response.text, {});
+    // Ensure all mandatory fields are populated
+    const finalCase = {
+      ...parsedCase,
+      id: parsedCase.id || `case_gen_${Date.now()}`,
+      specialty: specialty,
+      disease: disease,
+      title: title,
+      difficulty: diff,
+      createdAt: new Date().toISOString(),
+      status: 'published',
+      createdBy: 'system',
+      createdByName: 'Clinical Faculty'
+    };
+
+    res.json(finalCase);
+  } catch (error: any) {
+    console.error('Case generation error:', error);
+    res.status(500).json({ error: 'Failed to generate clinical case' });
+  }
+});
+
 // Education Hub AI Tutor
 app.post('/api/gemini/hub-tutor', async (req, res) => {
   try {

@@ -3,9 +3,24 @@
 // Every skill shares these common types
 // ================================================================
 
-import type { EducationalContext } from '../engine/knowledgeEngine';
 import type { ClinicalCase } from '../data/clinicalCasesData';
 import type { LibraryResource } from '../data/onlineLibraryData';
+
+// ================================================================
+// Educational Context
+// ================================================================
+
+export interface EducationalContext {
+  topic: string;
+  level?: 'Beginner' | 'Intermediate' | 'Advanced';
+  userId?: string;
+  learningObjectives?: string[];
+  clinicalCase?: ClinicalCase;
+  uploadedResources?: string[];
+  academicLevel?: string;
+  curriculumUnitId?: string;
+  preferences?: Record<string, any>;
+}
 
 // ================================================================
 // Skill Identity

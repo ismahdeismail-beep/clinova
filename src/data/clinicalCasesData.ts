@@ -1,4 +1,4 @@
-import { GENERATED_CASES } from './clinicalCases';
+import { GENERATED_CASES } from './clinicalCases/index';
 
 export interface ClinicalCase {
   id: string;
@@ -6,8 +6,8 @@ export interface ClinicalCase {
   disease: string;
   title: string;
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced';
-  patientName: string;
-  facilitySetting: string;
+  patientName?: string;
+  facilitySetting?: string;
   demographics: string;
   chiefComplaint: string;
   hpi: string;
@@ -34,6 +34,7 @@ export interface ClinicalCase {
   status: 'published' | 'draft';
   createdBy: string;
   createdByName: string;
+  pharmacologySubject?: string;
 }
 
 export const SPECIALTIES = [

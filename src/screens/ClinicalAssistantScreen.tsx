@@ -11,8 +11,11 @@ import ReactMarkdown from 'react-markdown';
 import { jsPDF } from 'jspdf';
 import { ChatSessionList } from '../components/ChatSessionList';
 import { saveChatSession, ChatSession } from '../lib/localDb';
+import { ChatService } from '../services/chat.service';
 import { StorageService } from '../services/storage.service';
 import { useFileStore } from '../store/fileStore';
+import { useAuth } from '../contexts/AuthContext';
+import exportService from '../services/export.service';
 
 interface Citation {
   source: string;
@@ -205,13 +208,98 @@ function CopyButton({ text }: { text: string }) {
   );
 }
 
+function DownloadButton({ content, filename }: { content: string; filename: string }) {
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = async (format: 'pdf' | 'txt' | 'md') => {
+    setDownloading(true);
+    try {
+      await exportService.exportAndDownload({
+        title: filename.replace(/\.[^/.]+$/, ''),
+        content,
+        format,
+        filename: filename,
+      });
+    } catch (err) {
+      console.error('Download failed:', err);
+    } finally {
+      setDownloading(false);
+    }
+  };
+
+  return (
+    <div className="flex items-center gap-1">
+      <button
+        onClick={() => handleDownload('pdf')}
+        disabled={downloading}
+        className="p-1.5 rounded-lg border border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] transition-all cursor-pointer disabled:opacity-50 min-h-[36px] min-w-[36px] flex items-center justify-center"
+        title="Download as PDF"
+      >
+        <FileDown size={14} />
+      </button>
+      <div className="relative">
+        <button
+          onClick={() => handleDownload('md')}
+          disabled={downloading}
+          className="p-1.5 rounded-lg border border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] transition-all cursor-pointer disabled:opacity-50 min-h-[36px] min-w-[36px] flex items-center justify-center"
+          title="Download as Markdown"
+        >
+          <FileText size={14} />
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export default function ClinicalAssistantScreen() {
   const { files, fetchFiles } = useFileStore();
+  const { userData } = useAuth();
   const [currentSessionId, setCurrentSessionId] = useState<string>('session-' + Date.now());
+  const [chatSessions, setChatSessions] = useState<ChatSession[]>([]);
+  const [sessionsLoading, setSessionsLoading] = useState(true);
 
   useEffect(() => {
     fetchFiles();
   }, [fetchFiles]);
+
+  // Load chat sessions from Firestore (via ChatService)
+  useEffect(() => {
+    if (!userData?.id) return;
+    
+    const loadSessions = async () => {
+      try {
+        setSessionsLoading(true);
+        const sessions = await ChatService.getChatSessions(userData.id);
+        setChatSessions(sessions);
+      } catch (err) {
+        console.warn('[ClinicalAssistant] Failed to load chat sessions:', err);
+      } finally {
+        setSessionsLoading(false);
+      }
+    };
+    
+    loadSessions();
+  }, [userData?.id]);
+
+  // Periodically sync local sessions to Firestore
+  useEffect(() => {
+    if (!userData?.id) return;
+    
+    const syncInterval = setInterval(async () => {
+      try {
+        const syncedCount = await ChatService.syncLocalToCloud(userData.id);
+        if (syncedCount > 0) {
+          const sessions = await ChatService.getChatSessions(userData.id);
+          setChatSessions(sessions);
+        }
+      } catch (err) {
+        console.warn('[ClinicalAssistant] Sync failed:', err);
+      }
+    }, 30000); // Sync every 30 seconds
+    
+    return () => clearInterval(syncInterval);
+  }, [userData?.id]);
+  
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
@@ -223,7 +311,7 @@ export default function ClinicalAssistantScreen() {
   const recognitionRef = useRef<any>(null);
   const shouldBeListeningRef = useRef(false);
   const inputRef = useRef(input);
-
+  
   useEffect(() => {
     inputRef.current = input;
   }, [input]);
@@ -232,19 +320,25 @@ export default function ClinicalAssistantScreen() {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   
   useEffect(() => {
-    if (messages.length > 1) {
+    if (messages.length > 1 && userData?.id) {
       const title = messages.find(m => m.role === 'user')?.content.slice(0, 30) + '...' || 'Consultation';
-      saveChatSession({
+      const session: ChatSession = {
         id: currentSessionId,
-        userId: 'local', // Assuming local user for now if auth is handled elsewhere
+        userId: userData.id,
         title,
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
         messages: messages.map(m => ({ role: m.role, content: m.content })),
         synced: false,
-      });
+      };
+      
+      // Save to both local DB and Firestore
+      saveChatSession(session);
+      ChatService.saveChatSession(session).catch(err => 
+        console.warn('[ClinicalAssistant] Failed to save to Firestore:', err)
+      );
     }
-  }, [messages, currentSessionId]);
+  }, [messages, currentSessionId, userData?.id]);
 
   const handleNewSession = () => {
     setCurrentSessionId('session-' + Date.now());
@@ -1337,11 +1431,15 @@ export default function ClinicalAssistantScreen() {
                           />
                         )}
                       </div>
-                      {!isUser && (
-                        <div className="mt-1">
-                          <CopyButton text={msg.content} />
-                        </div>
-                      )}
+{!isUser && (
+                          <div className="mt-1 flex items-center gap-1">
+                            <CopyButton text={msg.content} />
+                            <DownloadButton 
+                              content={msg.content} 
+                              filename={`clinova-consultation-${Date.now()}`}
+                            />
+                          </div>
+                        )}
                     </div>
                   )}
 

@@ -16,7 +16,7 @@ import type {
   SkillRecommendation,
   SkillReference,
 } from './types';
-import type { EducationalContext } from '../engine/knowledgeEngine';
+import type { EducationalContext } from './types';
 
 // ================================================================
 // Intent Detection

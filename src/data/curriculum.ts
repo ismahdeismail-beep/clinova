@@ -119,6 +119,8 @@ export const DISEASES: Record<string, Disease> = {
   rheumatoid_arthritis: { id: 'rheumatoid_arthritis', name: 'Rheumatoid Arthritis' },
   osteoarthritis: { id: 'osteoarthritis', name: 'Osteoarthritis' },
   gout: { id: 'gout', name: 'Gout' },
+  sle: { id: 'sle', name: 'Systemic Lupus Erythematosus' },
+  musculoskeletal_pain: { id: 'musculoskeletal_pain', name: 'Musculoskeletal Pain' },
   fever: { id: 'fever', name: 'Fever' },
   // Antimicrobial / Infection
   malaria: { id: 'malaria', name: 'Malaria' },
@@ -159,12 +161,21 @@ export const DISEASES: Record<string, Disease> = {
   fungal_skin: { id: 'fungal_skin', name: 'Fungal Skin Infections' },
   urticaria: { id: 'urticaria', name: 'Urticaria' },
   scabies: { id: 'scabies', name: 'Scabies' },
+  bacterial_skin_infections: { id: 'bacterial_skin_infections', name: 'Bacterial Skin Infections' },
+  drug_induced_skin: { id: 'drug_induced_skin', name: 'Drug-Induced Skin Reactions' },
   // Ophthalmology
   glaucoma: { id: 'glaucoma', name: 'Glaucoma' },
   conjunctivitis: { id: 'conjunctivitis', name: 'Conjunctivitis' },
   cataracts: { id: 'cataracts', name: 'Cataracts' },
   dry_eye: { id: 'dry_eye', name: 'Dry Eye Disease' },
   uveitis: { id: 'uveitis', name: 'Uveitis' },
+  ocular_infections: { id: 'ocular_infections', name: 'Ocular Infections' },
+  // ENT
+  otitis_media: { id: 'otitis_media', name: 'Otitis Media' },
+  sinusitis: { id: 'sinusitis', name: 'Sinusitis' },
+  pharyngitis: { id: 'pharyngitis', name: 'Pharyngitis' },
+  tonsillitis: { id: 'tonsillitis', name: 'Tonsillitis' },
+  hearing_disorders: { id: 'hearing_disorders', name: 'Hearing Disorders' },
   // Toxicology
   organophosphate: { id: 'organophosphate', name: 'Organophosphate Poisoning' },
   paracetamol_overdose: { id: 'paracetamol_overdose', name: 'Paracetamol Overdose' },
@@ -454,17 +465,19 @@ export const CURRICULUM: CurriculumArea[] = [
         ],
       },
       {
-        id: 'cp-neuro', areaId: 'clinical_pharm', subject: 'Neurological Disorders',
-        title: "Neurological Disorders", description: "Epilepsy, Parkinson's, Alzheimer's, and pain management.", estimatedHours: 20,
-        diseaseIds: ['epilepsy', 'parkinson', 'alzheimer', 'migraine', 'stroke', 'neuropathic_pain', 'insomnia'],
+        id: 'cp-neuro', areaId: 'clinical_pharm', subject: 'Central Nervous System Pharmacotherapy',
+        title: 'Central Nervous System Pharmacotherapy', description: 'Epilepsy, stroke, psychiatric disorders, neurodegenerative diseases, and pain management.', estimatedHours: 38,
+        diseaseIds: ['epilepsy', 'parkinson', 'alzheimer', 'migraine', 'stroke', 'neuropathic_pain', 'insomnia', 'depression', 'schizophrenia', 'bipolar', 'anxiety'],
         learningObjectives: [
           { id: 'lo-cp-neuro-epilepsy', unitId: 'cp-neuro', statement: 'Individualize antiseizure therapy and counsel on adherence.' },
           { id: 'lo-cp-neuro-stroke', unitId: 'cp-neuro', statement: 'Apply acute stroke reperfusion and secondary prevention.' },
+          { id: 'lo-cp-neuro-depression', unitId: 'cp-neuro', statement: 'Select and monitor antidepressant therapy safely.' },
+          { id: 'lo-cp-neuro-psychosis', unitId: 'cp-neuro', statement: 'Manage schizophrenia and bipolar disorder with antipsychotic and mood stabilizer therapy.' },
         ],
       },
       {
-        id: 'cp-id', areaId: 'clinical_pharm', subject: 'Infectious Diseases',
-        title: 'Infectious Diseases', description: 'Pneumonia, UTI, meningitis, HIV/AIDS, and tuberculosis.', estimatedHours: 30,
+        id: 'cp-id', areaId: 'clinical_pharm', subject: 'Infectious Diseases & Antimicrobial Pharmacotherapy',
+        title: 'Infectious Diseases & Antimicrobial Pharmacotherapy', description: 'Pneumonia, UTI, meningitis, HIV/AIDS, tuberculosis, malaria, and antimicrobial stewardship.', estimatedHours: 30,
         diseaseIds: ['community_acquired_pneumonia', 'childhood_pneumonia', 'uti', 'meningitis', 'sepsis', 'hiv', 'tuberculosis', 'malaria', 'gonorrhoea', 'syphilis', 'cellulitis', 'typhoid'],
         learningObjectives: [
           { id: 'lo-cp-id-empiric', unitId: 'cp-id', statement: 'Select empiric antimicrobial therapy by syndrome and local resistance.' },
@@ -472,30 +485,14 @@ export const CURRICULUM: CurriculumArea[] = [
         ],
       },
       {
-        id: 'cp-onc', areaId: 'clinical_pharm', subject: 'Oncology',
-        title: 'Oncology', description: 'Breast cancer, lung cancer, leukemia, and supportive care.', estimatedHours: 22,
-        diseaseIds: ['breast_cancer', 'cervical_cancer', 'prostate_cancer', 'lung_cancer', 'colorectal_cancer', 'leukemia', 'lymphoma', 'chemo_toxicity', 'febrile_neutropenia'],
+        id: 'cp-onc', areaId: 'clinical_pharm', subject: 'Haematology & Oncology Pharmacotherapy',
+        title: 'Haematology & Oncology Pharmacotherapy', description: 'Solid tumours, haematological malignancies, anaemias, coagulopathies, and supportive care.', estimatedHours: 34,
+        diseaseIds: ['breast_cancer', 'cervical_cancer', 'prostate_cancer', 'lung_cancer', 'colorectal_cancer', 'leukemia', 'lymphoma', 'chemo_toxicity', 'febrile_neutropenia', 'iron_deficiency_anemia', 'sickle_cell', 'hemophilia', 'dvt', 'pulmonary_embolism', 'dic'],
         learningObjectives: [
           { id: 'lo-cp-onc-regimens', unitId: 'cp-onc', statement: 'Explain goals of therapy (curative vs palliative) in common cancers.' },
           { id: 'lo-cp-onc-toxicity', unitId: 'cp-onc', statement: 'Prevent and manage chemotherapy toxicity and febrile neutropenia.' },
-        ],
-      },
-      {
-        id: 'cp-hem', areaId: 'clinical_pharm', subject: 'Hematology',
-        title: 'Hematology', description: 'Anemias, coagulopathies, and venous thromboembolism.', estimatedHours: 12,
-        diseaseIds: ['iron_deficiency_anemia', 'sickle_cell', 'hemophilia', 'dvt', 'pulmonary_embolism', 'dic'],
-        learningObjectives: [
-          { id: 'lo-cp-hem-vte', unitId: 'cp-hem', statement: 'Compare anticoagulants for VTE treatment and prophylaxis.' },
-          { id: 'lo-cp-hem-anemia', unitId: 'cp-hem', statement: 'Differentiate and manage major anemia types.' },
-        ],
-      },
-      {
-        id: 'cp-psych', areaId: 'clinical_pharm', subject: 'Psychiatry',
-        title: 'Psychiatry', description: 'Depression, schizophrenia, bipolar disorder, and anxiety.', estimatedHours: 18,
-        diseaseIds: ['depression', 'schizophrenia', 'bipolar', 'anxiety', 'insomnia'],
-        learningObjectives: [
-          { id: 'lo-cp-psych-depression', unitId: 'cp-psych', statement: 'Select and monitor antidepressant therapy safely.' },
-          { id: 'lo-cp-psych-safety', unitId: 'cp-psych', statement: 'Assess and mitigate suicide risk in depressive disorders.' },
+          { id: 'lo-cp-onc-vte', unitId: 'cp-onc', statement: 'Compare anticoagulants for VTE treatment and prophylaxis in cancer patients.' },
+          { id: 'lo-cp-onc-anemia', unitId: 'cp-onc', statement: 'Differentiate and manage major anaemia types.' },
         ],
       },
       {
@@ -517,20 +514,61 @@ export const CURRICULUM: CurriculumArea[] = [
         ],
       },
       {
-        id: 'cp-em', areaId: 'clinical_pharm', subject: 'Emergency Medicine',
-        title: 'Emergency Medicine', description: 'ACLS, toxicology, trauma, and hypertensive crises.', estimatedHours: 20,
-        diseaseIds: ['anaphylaxis', 'shock', 'septic_shock', 'status_epilepticus', 'cardiac_arrest', 'paracetamol_overdose', 'opioid_overdose', 'preeclampsia'],
+        id: 'cp-em', areaId: 'clinical_pharm', subject: 'Emergency & Critical Care',
+        title: 'Emergency & Critical Care', description: 'ACLS, sepsis, shock, trauma, sedation, and hypertensive crises.', estimatedHours: 42,
+        diseaseIds: ['anaphylaxis', 'shock', 'septic_shock', 'status_epilepticus', 'cardiac_arrest', 'paracetamol_overdose', 'opioid_overdose', 'preeclampsia', 'sepsis', 'aki'],
         learningObjectives: [
           { id: 'lo-cp-em-acls', unitId: 'cp-em', statement: 'Apply ACLS pharmacology in cardiac arrest.' },
           { id: 'lo-cp-em-tox', unitId: 'cp-em', statement: 'Stabilize and antidote common toxicologic emergencies.' },
+          { id: 'lo-cp-em-sepsis', unitId: 'cp-em', statement: 'Apply the sepsis bundle and vasopressor selection.' },
         ],
       },
       {
-        id: 'cp-cc', areaId: 'clinical_pharm', subject: 'Critical Care',
-        title: 'Critical Care', description: 'Sepsis, shock, sedation, and mechanical ventilation.', estimatedHours: 22,
-        diseaseIds: ['sepsis', 'septic_shock', 'shock', 'aki'],
+        id: 'cp-rheum', areaId: 'clinical_pharm', subject: 'Rheumatology & Musculoskeletal Pharmacotherapy',
+        title: 'Rheumatology & Musculoskeletal Pharmacotherapy', description: 'Osteoarthritis, rheumatoid arthritis, gout, SLE, and musculoskeletal pain.', estimatedHours: 12,
+        diseaseIds: ['rheumatoid_arthritis', 'osteoarthritis', 'gout', 'sle', 'musculoskeletal_pain', 'acute_pain', 'chronic_pain'],
         learningObjectives: [
-          { id: 'lo-cp-cc-sepsis', unitId: 'cp-cc', statement: 'Apply the sepsis bundle and vasopressor selection.' },
+          { id: 'lo-cp-rheum-ra', unitId: 'cp-rheum', statement: 'Select DMARDs and biologic therapy for rheumatoid arthritis.' },
+          { id: 'lo-cp-rheum-gout', unitId: 'cp-rheum', statement: 'Manage acute gout flares and urate-lowering therapy.' },
+          { id: 'lo-cp-rheum-pain', unitId: 'cp-rheum', statement: 'Apply WHO analgesic ladder for musculoskeletal pain.' },
+        ],
+      },
+      {
+        id: 'cp-derm', areaId: 'clinical_pharm', subject: 'Dermatology Pharmacotherapy',
+        title: 'Dermatology Pharmacotherapy', description: 'Acne, psoriasis, eczema, fungal infections, and drug-induced skin reactions.', estimatedHours: 8,
+        diseaseIds: ['acne', 'psoriasis', 'eczema', 'contact_dermatitis', 'fungal_skin', 'urticaria', 'scabies', 'bacterial_skin_infections', 'drug_induced_skin'],
+        learningObjectives: [
+          { id: 'lo-cp-derm-acne', unitId: 'cp-derm', statement: 'Outline topical and systemic acne therapy.' },
+          { id: 'lo-cp-derm-psoriasis', unitId: 'cp-derm', statement: 'Describe psoriasis management including biologics.' },
+          { id: 'lo-cp-derm-infection', unitId: 'cp-derm', statement: 'Treat common bacterial and fungal skin infections.' },
+        ],
+      },
+      {
+        id: 'cp-ophth', areaId: 'clinical_pharm', subject: 'Ophthalmology Pharmacotherapy',
+        title: 'Ophthalmology Pharmacotherapy', description: 'Glaucoma, conjunctivitis, cataracts, and ocular infections.', estimatedHours: 6,
+        diseaseIds: ['glaucoma', 'conjunctivitis', 'cataracts', 'dry_eye', 'uveitis', 'ocular_infections'],
+        learningObjectives: [
+          { id: 'lo-cp-ophth-glaucoma', unitId: 'cp-ophth', statement: 'Classify antiglaucoma agents by mechanism and select therapy.' },
+          { id: 'lo-cp-ophth-infection', unitId: 'cp-ophth', statement: 'Manage common ocular infections with topical anti-infectives.' },
+        ],
+      },
+      {
+        id: 'cp-ent', areaId: 'clinical_pharm', subject: 'ENT Pharmacotherapy',
+        title: 'ENT Pharmacotherapy', description: 'Otitis media, sinusitis, pharyngitis, and hearing disorders.', estimatedHours: 6,
+        diseaseIds: ['otitis_media', 'sinusitis', 'pharyngitis', 'tonsillitis', 'hearing_disorders', 'allergic_rhinitis'],
+        learningObjectives: [
+          { id: 'lo-cp-ent-omi', unitId: 'cp-ent', statement: 'Select appropriate antibiotics for acute otitis media and sinusitis.' },
+          { id: 'lo-cp-ent-pharyngitis', unitId: 'cp-ent', statement: 'Differentiate viral vs bacterial pharyngitis and treat accordingly.' },
+        ],
+      },
+      {
+        id: 'cp-tox', areaId: 'clinical_pharm', subject: 'Toxicology & Poison Management',
+        title: 'Toxicology & Poison Management', description: 'Drug overdose, poisoning, antidotes, and environmental toxins.', estimatedHours: 12,
+        diseaseIds: ['organophosphate', 'paracetamol_overdose', 'opioid_overdose', 'snake_bite', 'carbon_monoxide', 'alcohol_poisoning', 'heavy_metal', 'drug_overdose', 'drug_poisoning'],
+        learningObjectives: [
+          { id: 'lo-cp-tox-antidotes', unitId: 'cp-tox', statement: 'Match common poisonings to their specific antidotes.' },
+          { id: 'lo-cp-tox-paracetamol', unitId: 'cp-tox', statement: 'Manage paracetamol overdose with N-acetylcysteine.' },
+          { id: 'lo-cp-tox-overdose', unitId: 'cp-tox', statement: 'Stabilize and manage opioid and organophosphate poisoning.' },
         ],
       },
       {
@@ -650,3 +688,161 @@ export function getUnitsForLearningObjective(loId: string): CurriculumUnit[] {
 export function getDiseaseIdsForUnit(unitId: string): string[] {
   return getUnit(unitId)?.diseaseIds ?? [];
 }
+
+// ================================================================
+// Integrated Curriculum — 17 Clinical Units
+// (single source of truth for specialty-based modules)
+// ================================================================
+
+export const INTEGRATED_UNIT_IDS = [
+  'cp-cv',      // Cardiovascular Pharmacotherapy
+  'cp-resp',    // Respiratory Pharmacotherapy
+  'cp-id',      // Infectious Diseases & Antimicrobial Pharmacotherapy
+  'cp-endo',    // Endocrine Pharmacotherapy
+  'cp-gi',      // Gastrointestinal Pharmacotherapy
+  'cp-renal',   // Renal & Electrolyte Pharmacotherapy
+  'cp-neuro',   // Central Nervous System Pharmacotherapy
+  'cp-onc',     // Haematology & Oncology Pharmacotherapy
+  'cp-rheum',   // Rheumatology & Musculoskeletal Pharmacotherapy
+  'cp-obgyn',   // Obstetrics & Gynaecology Pharmacotherapy
+  'cp-peds',    // Paediatric Pharmacotherapy
+  'cp-ger',     // Geriatric Pharmacotherapy
+  'cp-derm',    // Dermatology Pharmacotherapy
+  'cp-ophth',   // Ophthalmology Pharmacotherapy
+  'cp-ent',     // ENT Pharmacotherapy
+  'cp-em',      // Emergency & Critical Care
+  'cp-tox',     // Toxicology & Poison Management
+] as const;
+
+export type IntegratedUnitId = typeof INTEGRATED_UNIT_IDS[number];
+
+export function getIntegratedUnits(): CurriculumUnit[] {
+  return INTEGRATED_UNIT_IDS.map((id) => getUnit(id)).filter(Boolean) as CurriculumUnit[];
+}
+
+export function isIntegratedUnit(unitId: string): boolean {
+  return (INTEGRATED_UNIT_IDS as readonly string[]).includes(unitId);
+}
+
+/** Clinical curriculum with specialty name → integrated unit */
+export const INTEGRATED_UNITS_MAP: Record<string, string> = {
+  'Cardiovascular Pharmacotherapy': 'cp-cv',
+  'Respiratory Pharmacotherapy': 'cp-resp',
+  'Infectious Diseases & Antimicrobial Pharmacotherapy': 'cp-id',
+  'Endocrine Pharmacotherapy': 'cp-endo',
+  'Gastrointestinal Pharmacotherapy': 'cp-gi',
+  'Renal & Electrolyte Pharmacotherapy': 'cp-renal',
+  'Central Nervous System Pharmacotherapy': 'cp-neuro',
+  'Haematology & Oncology Pharmacotherapy': 'cp-onc',
+  'Rheumatology & Musculoskeletal Pharmacotherapy': 'cp-rheum',
+  'Obstetrics & Gynaecology Pharmacotherapy': 'cp-obgyn',
+  'Paediatric Pharmacotherapy': 'cp-peds',
+  'Geriatric Pharmacotherapy': 'cp-ger',
+  'Dermatology Pharmacotherapy': 'cp-derm',
+  'Ophthalmology Pharmacotherapy': 'cp-ophth',
+  'ENT Pharmacotherapy': 'cp-ent',
+  'Emergency & Critical Care': 'cp-em',
+  'Toxicology & Poison Management': 'cp-tox',
+};
+
+export function getIntegratedUnitId(specialtyName: string): string | undefined {
+  return INTEGRATED_UNITS_MAP[specialtyName];
+}
+
+// ================================================================
+// Education Hub Modules — derived from curriculum areas + modules
+// that don't map directly (cases, drug info, EBM, tools)
+// ================================================================
+
+export interface EducationModuleUnit {
+  id: string;
+  title: string;
+  description: string;
+  estimatedHours?: number;
+  isCustom?: boolean;
+  parentId?: string;
+}
+
+export interface EducationModule {
+  id: string;
+  title: string;
+  description: string;
+  /** Whether this module contains the 17 integrated clinical units */
+  isIntegrated: boolean;
+  /** Reference to the curriculum area id if applicable */
+  areaId?: string;
+  /** Optional display properties for the UI */
+  icon?: string;
+  color?: string;
+}
+
+/** All top-level modules for the Education Hub */
+export const EDUCATION_MODULES: EducationModule[] = [
+  { id: 'pharmacology', title: 'Pharmacology', description: 'Drug mechanisms, kinetics, dynamics, and toxicology.', isIntegrated: false, areaId: 'pharmacology', icon: 'Beaker', color: 'indigo' },
+  { id: 'clinical_pharm', title: 'Clinical Pharmacy & Therapeutics', description: 'Disease management and patient care across 17 integrated therapeutic areas.', isIntegrated: true, areaId: 'clinical_pharm', icon: 'HeartPulse', color: 'red' },
+  { id: 'cases', title: 'Clinical Cases', description: 'Interactive patient cases for therapeutic areas.', isIntegrated: false, icon: 'Briefcase', color: 'orange' },
+  { id: 'drug_info', title: 'Drug Information & Guidelines', description: 'Clinical guidelines, monographs, and evidence.', isIntegrated: false, icon: 'FileText', color: 'teal' },
+  { id: 'ebm', title: 'Evidence-Based Medicine', description: 'Research methods, biostatistics, and critical appraisal.', isIntegrated: false, icon: 'Search', color: 'sky' },
+  { id: 'supporting', title: 'Supporting Sciences', description: 'Foundational sciences for pharmacy and medicine.', isIntegrated: false, areaId: 'supporting', icon: 'FlaskConical', color: 'emerald' },
+  { id: 'tools', title: 'Study & AI Tools', description: 'Flashcards, Q-banks, Oral Practice, and Planning.', isIntegrated: false, icon: 'BrainCircuit', color: 'fuchsia' },
+];
+
+export function getEducationModule(moduleId: string): EducationModule | undefined {
+  return EDUCATION_MODULES.find((m) => m.id === moduleId);
+}
+
+/** All units for a given education module (derived from curriculum areas where possible) */
+export function getModuleUnits(moduleId: string): EducationModuleUnit[] {
+  if (moduleId === 'clinical_pharm') {
+    return getIntegratedUnits().map((u) => ({
+      id: u.id, title: u.title, description: u.description,
+    }));
+  }
+  if (moduleId === 'pharmacology' || moduleId === 'supporting') {
+    const area = getArea(moduleId);
+    return (area?.units ?? []).map((u) => ({
+      id: u.id, title: u.title, description: u.description,
+    }));
+  }
+  // Non-curriculum modules (cases, drug_info, ebm, tools) return units from static data
+  return NON_CURRICULUM_UNITS[moduleId] ?? [];
+}
+
+// Static units for non-curriculum modules (preserved from original educationHubData)
+const NON_CURRICULUM_UNITS: Record<string, EducationModuleUnit[]> = {
+  cases: [
+    { id: 'cc-cv', title: 'Cardiovascular Cases', description: 'Interactive cases on hypertension, heart failure, and ischemic heart disease.' },
+    { id: 'cc-endo', title: 'Endocrine Cases', description: 'Interactive cases on diabetes, thyroid, and adrenal disorders.' },
+    { id: 'cc-resp', title: 'Respiratory Cases', description: 'Interactive cases on asthma, COPD, and allergic rhinitis.' },
+    { id: 'cc-gi', title: 'Gastrointestinal Cases', description: 'Interactive cases on PUD, IBD, and liver cirrhosis.' },
+    { id: 'cc-renal', title: 'Renal Cases', description: 'Interactive cases on AKI and CKD management.' },
+    { id: 'cc-neuro', title: 'Neurological Cases', description: 'Interactive cases on epilepsy, stroke, and Parkinson\'s disease.' },
+    { id: 'cc-id', title: 'Infectious Disease Cases', description: 'Interactive cases on meningitis, pneumonia, and HIV.' },
+    { id: 'cc-onc', title: 'Oncology Cases', description: 'Interactive cases on solid tumors and haematological malignancies.' },
+    { id: 'cc-hem', title: 'Hematology Cases', description: 'Interactive cases on anemia and anticoagulation.' },
+    { id: 'cc-psych', title: 'Psychiatry Cases', description: 'Interactive cases on depression, bipolar, and schizophrenia.' },
+    { id: 'cc-peds', title: 'Pediatric Cases', description: 'Interactive cases on neonatal care and childhood infections.' },
+    { id: 'cc-obgyn', title: 'Obstetrics & Gynecology Cases', description: 'Interactive cases on preeclampsia, pregnancy, and contraception.' },
+    { id: 'cc-em', title: 'Critical Care & Emergency Cases', description: 'Interactive cases on sepsis, trauma, and toxicology.' },
+  ],
+  drug_info: [
+    { id: 'di-guidelines', title: 'Clinical Guidelines', description: 'Latest WHO, AHA, IDSA, and national therapeutic guidelines.' },
+    { id: 'di-monographs', title: 'Drug Monographs', description: 'Detailed prescribing information, adverse effects, and interactions.' },
+    { id: 'di-formulary', title: 'Formulary Management', description: 'Pharmacy and Therapeutics (P&T) committee processes and drug selection.' },
+  ],
+  ebm: [
+    { id: 'ebm-research', title: 'Research Methods', description: 'Study designs, clinical trials, and epidemiological studies.' },
+    { id: 'ebm-biostats', title: 'Biostatistics', description: 'Statistical testing, p-values, confidence intervals, and regression.' },
+    { id: 'ebm-literature', title: 'Literature Evaluation', description: 'Critical appraisal of journal articles and identifying bias.' },
+    { id: 'ebm-trials', title: 'Clinical Trials', description: 'Phases of drug development and regulatory approval processes.' },
+  ],
+  tools: [
+    { id: 'tool-qbank', title: 'Question Bank', description: 'MCQs and practice exams for all subjects.' },
+    { id: 'tool-flashcards', title: 'Spaced Repetition Flashcards', description: 'Active recall decks for pharmacology and therapeutics.' },
+    { id: 'tool-oral', title: 'Oral Practice (OSCE)', description: 'AI-driven voice practice for clinical encounters and vivas.' },
+    { id: 'tool-podcasts', title: 'Podcasts & Audio', description: 'Audio summaries of clinical topics and guidelines.' },
+    { id: 'tool-papers', title: 'Past Papers', description: 'Historical board and university examination papers.' },
+    { id: 'tool-planner', title: 'AI Study Planner', description: 'Generate personalized study schedules and track progress.' },
+    { id: 'tool-saved', title: 'Downloads & Bookmarks', description: 'Access saved resources, PDFs, and offline content.' },
+  ],
+};

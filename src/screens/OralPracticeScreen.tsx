@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { useAuth } from '../contexts/AuthContext';
 import { 
   Mic, 
   MicOff, 
@@ -33,6 +34,8 @@ import {
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { motion, AnimatePresence } from 'motion/react';
 import { useFileStore } from '../store/fileStore';
+import { db } from '../lib/firebase';
+import { collection, doc, setDoc, getDocs, query, where, orderBy, limit } from 'firebase/firestore';
 
 // Interfaces
 interface SavedSession {
@@ -83,6 +86,7 @@ const SpeechRecognition = (window as any).SpeechRecognition || (window as any).w
 export default function OralPracticeScreen() {
   const location = useLocation();
   const navigate = useNavigate();
+  const { userData } = useAuth();
   const { files } = useFileStore();
   
   // Navigation State
@@ -154,47 +158,82 @@ export default function OralPracticeScreen() {
     }
   }, [location.state]);
 
-  // Load persistence data
+// Load persistence data
   useEffect(() => {
-    const savedSessions = localStorage.getItem('clinova_oral_practice_sessions');
-    const savedStats = localStorage.getItem('clinova_oral_practice_stats');
-    
-    if (savedSessions) {
-      try {
-        setSessions(JSON.parse(savedSessions));
-      } catch (e) {
-        console.error(e);
+    const loadData = async () => {
+      // Load from localStorage (immediate)
+      const savedSessions = localStorage.getItem('clinova_oral_practice_sessions');
+      const savedStats = localStorage.getItem('clinova_oral_practice_stats');
+      
+      if (savedSessions) {
+        try {
+          setSessions(JSON.parse(savedSessions));
+        } catch (e) {
+          console.error(e);
+        }
       }
-    }
-    
-    if (savedStats) {
-      try {
-        setStats(JSON.parse(savedStats));
-      } catch (e) {
-        console.error(e);
+      
+      if (savedStats) {
+        try {
+          setStats(JSON.parse(savedStats));
+        } catch (e) {
+          console.error(e);
+        }
+      } else {
+        // Seed initial dummy data for realistic charts if empty
+        const initialStats: OralPracticeStats = {
+          totalAttempted: 12,
+          averageScore: 78,
+          totalSpeakingSeconds: 480,
+          currentStreak: 3,
+          longestStreak: 5,
+          weakAreas: ['Microbiology Monitoring', 'TDM Calculations'],
+          recentProgress: [
+            { date: 'Mon', score: 72 },
+            { date: 'Tue', score: 75 },
+            { date: 'Wed', score: 80 },
+            { date: 'Thu', score: 76 },
+            { date: 'Fri', score: 84 },
+            { date: 'Sat', score: 82 },
+            { date: 'Sun', score: 79 },
+          ],
+        };
+        setStats(initialStats);
+        localStorage.setItem('clinova_oral_practice_stats', JSON.stringify(initialStats));
       }
-    } else {
-      // Seed initial dummy data for realistic charts if empty
-      const initialStats: OralPracticeStats = {
-        totalAttempted: 12,
-        averageScore: 78,
-        totalSpeakingSeconds: 480,
-        currentStreak: 3,
-        longestStreak: 5,
-        weakAreas: ['Microbiology Monitoring', 'TDM Calculations'],
-        recentProgress: [
-          { date: 'Mon', score: 72 },
-          { date: 'Tue', score: 75 },
-          { date: 'Wed', score: 80 },
-          { date: 'Thu', score: 76 },
-          { date: 'Fri', score: 84 },
-          { date: 'Sat', score: 82 }
-        ]
-      };
-      setStats(initialStats);
-      localStorage.setItem('clinova_oral_practice_stats', JSON.stringify(initialStats));
-    }
-  }, []);
+      
+      // Load from Firestore if authenticated (merge with local)
+      if (userData?.id) {
+        try {
+          const q = query(
+            collection(db, 'oral_practice_sessions'),
+            where('userId', '==', userData.id),
+            orderBy('date', 'desc'),
+            limit(100)
+          );
+          const snapshot = await getDocs(q);
+          const firestoreSessions: SavedSession[] = [];
+          snapshot.forEach(doc => {
+            firestoreSessions.push({ id: doc.id, ...doc.data() } as SavedSession);
+          });
+          
+          // Merge with local sessions (local takes precedence for conflicts)
+          const mergedSessions = [...firestoreSessions];
+          const localIds = new Set(sessions.map(s => s.id));
+          sessions.forEach(s => {
+            if (!mergedSessions.some(f => f.id === s.id)) {
+              mergedSessions.unshift(s);
+            }
+          });
+          setSessions(mergedSessions.slice(0, 100));
+        } catch (err) {
+          console.warn('[OralPractice] Failed to load from Firestore:', err);
+        }
+      }
+    };
+    
+    loadData();
+  }, [userData?.id]);
 
   // Web Speech Recognition Setup
   useEffect(() => {
@@ -522,6 +561,19 @@ export default function OralPracticeScreen() {
       const updatedSessions = [newSession, ...sessions].slice(0, 50); // Keep last 50
       setSessions(updatedSessions);
       localStorage.setItem('clinova_oral_practice_sessions', JSON.stringify(updatedSessions));
+      
+      // Also save to Firestore
+      if (userData?.id) {
+        try {
+          await setDoc(doc(db, 'oral_practice_sessions', newSession.id), {
+            ...newSession,
+            userId: userData.id,
+            createdAt: new Date().toISOString(),
+          });
+        } catch (err) {
+          console.warn('[OralPractice] Failed to save session to Firestore:', err);
+        }
+      }
 
       // Calculate new Statistics
       const updatedStats = { ...stats };
@@ -555,6 +607,19 @@ export default function OralPracticeScreen() {
 
       setStats(updatedStats);
       localStorage.setItem('clinova_oral_practice_stats', JSON.stringify(updatedStats));
+      
+      // Also save stats to Firestore
+      if (userData?.id) {
+        try {
+          await setDoc(doc(db, 'oral_practice_stats', userData.id), {
+            ...updatedStats,
+            userId: userData.id,
+            updatedAt: new Date().toISOString(),
+          });
+        } catch (err) {
+          console.warn('[OralPractice] Failed to save stats to Firestore:', err);
+        }
+      }
 
     } catch (e) {
       console.error(e);

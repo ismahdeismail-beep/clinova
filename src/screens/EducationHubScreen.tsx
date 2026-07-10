@@ -6,19 +6,21 @@ import {
   Briefcase, HelpCircle, Layers, Headphones, FileArchive, Calendar, BrainCircuit,
   Bookmark, Download, History, ChevronLeft, Bot, Play, FileUp, List, Sparkles, CheckCircle2, Clock, Database, Mic,
   FolderPlus, Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star, ArrowUpRight,
-  Compass
+  Compass, FileDown
 } from 'lucide-react';
 import Markdown from 'react-markdown';
 import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
-import { MODULES, LearningModule, LearningUnit } from '../data/educationHubData';
+import { EDUCATION_MODULES, type EducationModule, type EducationModuleUnit, getModuleUnits } from '../data/educationHubData';
 import { INITIAL_CASES } from '../data/clinicalCasesData';
 import FileUploader from '../components/FileUploader';
 import { useFileStore } from '../store/fileStore';
 import { useAuth } from '../contexts/AuthContext';
-import { EducationService, CustomUnit, SubFolder, SavedFlashcard, SavedQuiz } from '../services/education.service';
+import { EducationService, CustomUnit, SubFolder, SavedFlashcard, SavedQuiz } 
+from '../services/education.service';
+import { AIContentService } from '../services/aiContent.service';
+import exportService from '../services/export.service';
 import CurriculumGraph from '../components/CurriculumGraph';
-
 const getRelevantFiles = (files: any[], currentFolderId: string, currentFolderName: string, unitTitle: string) => {
   return files.filter(f => {
     if (f.category === 'study_source' && f.studyId === currentFolderId) return true;
@@ -47,24 +49,57 @@ const buildRichKnowledgeContext = (unitFiles: any[]) => {
   });
   return ctx;
 };
-const MODULE_YEARS: Record<string, string> = {
-  'supporting': '1st Year',
-  'pharmacology': '3rd Year',
-  'drug_info': '4th Year',
-  'clinical_pharm': '5th Year',
-  'cases': '5th Year',
-  'ebm': '5th Year',
-  'tools': 'All Years'
-};
+
+function DownloadButton({ content, filename }: { content: string; filename: string }) {
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = async (format: 'pdf' | 'txt' | 'md') => {
+    setDownloading(true);
+    try {
+      await exportService.exportAndDownload({
+        title: filename.replace(/\.[^/.]+$/, ''),
+        content,
+        format,
+        filename: filename,
+      });
+    } catch (err) {
+      console.error('Download failed:', err);
+    } finally {
+      setDownloading(false);
+    }
+  };
+
+  return (
+    <div className="flex items-center gap-1">
+      <button
+        onClick={() => handleDownload('pdf')}
+        disabled={downloading}
+        className="p-1.5 rounded-lg border border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] transition-all cursor-pointer disabled:opacity-50 min-h-[36px] min-w-[36px] flex items-center justify-center"
+        title="Download as PDF"
+      >
+        <FileDown size={14} />
+      </button>
+      <div className="relative">
+        <button
+          onClick={() => handleDownload('md')}
+          disabled={downloading}
+          className="p-1.5 rounded-lg border border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] transition-all cursor-pointer disabled:opacity-50 min-h-[36px] min-w-[36px] flex items-center justify-center"
+          title="Download as Markdown"
+        >
+          <FileText size={14} />
+        </button>
+      </div>
+    </div>
+  );
+}
 
 export default function EducationHubScreen() {
   const navigate = useNavigate();
   const { userData } = useAuth();
   
-  const [selectedModule, setSelectedModule] = useState<LearningModule | null>(null);
-  const [selectedUnit, setSelectedUnit] = useState<LearningUnit | null>(null);
+  const [selectedModule, setSelectedModule] = useState<EducationModule | null>(null);
+  const [selectedUnit, setSelectedUnit] = useState<EducationModuleUnit | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedYearFilter, setSelectedYearFilter] = useState<string>('My Year');
   const [viewMode, setViewMode] = useState<'grid' | 'graph'>('grid');
   
   // Custom unit management states
@@ -93,15 +128,6 @@ export default function EducationHubScreen() {
       return [];
     }
   });
-
-  // Default filter to "My Year" if logged in user has level
-  useEffect(() => {
-    if (userData?.academicLevel) {
-      setSelectedYearFilter('My Year');
-    } else {
-      setSelectedYearFilter('All');
-    }
-  }, [userData]);
 
   // Sync favorites when user loads or switches
   useEffect(() => {
@@ -154,7 +180,7 @@ export default function EducationHubScreen() {
     fetchCustomUnits();
   }, [userData, selectedModule]);
 
-  const handleModuleClick = (mod: LearningModule) => {
+  const handleModuleClick = (mod: EducationModule) => {
     if (mod.id === 'cases') {
       navigate('/cases');
       return;
@@ -171,7 +197,7 @@ export default function EducationHubScreen() {
     setSelectedUnit(null);
   };
 
-  const handleUnitClick = (unit: LearningUnit) => {
+  const handleUnitClick = (unit: EducationModuleUnit) => {
     setSelectedUnit(unit);
   };
 
@@ -191,7 +217,7 @@ export default function EducationHubScreen() {
 
     // Check for duplicate custom unit titles (case insensitive)
     const isDuplicate = [
-      ...selectedModule.units,
+      ...getModuleUnits(selectedModule.id),
       ...customUnits
     ].some(u => u.title.toLowerCase() === title.toLowerCase());
 
@@ -242,7 +268,7 @@ export default function EducationHubScreen() {
   // Combine static and custom units, search and sort by favorites
   const rawUnits = selectedModule
     ? [
-        ...selectedModule.units.map(u => ({ ...u, isCustom: false })),
+        ...getModuleUnits(selectedModule.id).map(u => ({ ...u, isCustom: false })),
         ...customUnits.map(cu => ({ ...cu, isCustom: true }))
       ]
     : [];
@@ -263,21 +289,13 @@ export default function EducationHubScreen() {
   });
 
   // Filter modules by search and Year level
-  let filteredMods = MODULES.filter(m => {
+  let filteredMods = EDUCATION_MODULES.filter(m => {
     if (!searchQuery) return true;
     const q = searchQuery.toLowerCase();
     return m.title.toLowerCase().includes(q) ||
            m.description.toLowerCase().includes(q) ||
-           m.units.some(u => u.title.toLowerCase().includes(q) || (u.description || '').toLowerCase().includes(q));
+           getModuleUnits(m.id).some(u => u.title.toLowerCase().includes(q) || (u.description || '').toLowerCase().includes(q));
   });
-
-  const userYear = userData?.academicLevel || '1st Year';
-  const activeYearFilter = selectedYearFilter === 'My Year' ? userYear : selectedYearFilter;
-  
-  // Ignore year filter when searching so users can find units across all years
-  if (activeYearFilter !== 'All' && !searchQuery) {
-    filteredMods = filteredMods.filter(m => MODULE_YEARS[m.id] === activeYearFilter || m.id === 'tools' || MODULE_YEARS[m.id] === 'All Years');
-  }
 
   const sortedModules = [...filteredMods].sort((a, b) => {
     const aFav = favoriteModules.includes(a.id);
@@ -285,13 +303,6 @@ export default function EducationHubScreen() {
     
     if (aFav && !bFav) return -1;
     if (!aFav && bFav) return 1;
-    
-    if (selectedYearFilter === 'All' && userData?.academicLevel) {
-      const aIsUserYear = MODULE_YEARS[a.id] === userData.academicLevel;
-      const bIsUserYear = MODULE_YEARS[b.id] === userData.academicLevel;
-      if (aIsUserYear && !bIsUserYear) return -1;
-      if (!aIsUserYear && bIsUserYear) return 1;
-    }
     
     return a.title.localeCompare(b.title);
   });
@@ -381,37 +392,6 @@ export default function EducationHubScreen() {
 
           {!selectedModule && viewMode === 'grid' && (
             <div className="space-y-6 animate-in fade-in duration-300">
-              {/* Year Level Filter Bar */}
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 shadow-xs">
-                <span className="text-xs font-black text-[var(--text-muted)] uppercase tracking-wider flex items-center gap-1.5">
-                  <Sparkles size={14} className="text-amber-500" />
-                  Sort / Arrange By Year:
-                </span>
-                <div className="flex flex-wrap gap-1.5">
-                  {[
-                    { id: 'My Year', label: `My Year (${userData?.academicLevel || '1st Year'})` },
-                    { id: 'All', label: 'All Subjects (Favorites First)' },
-                    { id: '1st Year', label: '1st Year' },
-                    { id: '2nd Year', label: '2nd Year' },
-                    { id: '3rd Year', label: '3rd Year' },
-                    { id: '4th Year', label: '4th Year' },
-                    { id: '5th Year', label: '5th Year' },
-                  ].map((tab) => (
-                    <button
-                      key={tab.id}
-                      onClick={() => setSelectedYearFilter(tab.id)}
-                      className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                        selectedYearFilter === tab.id
-                          ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-xs font-extrabold'
-                          : 'bg-[var(--surface-dim)] text-[var(--text-muted)] border border-[var(--border)] hover:bg-[var(--surface)] hover:text-[var(--text)]'
-                      }`}
-                    >
-                      {tab.label}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
               {sortedModules.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                   {sortedModules.map((mod) => (
@@ -630,13 +610,13 @@ export default function EducationHubScreen() {
   );
 }
 
-function ModuleIcon({ name, className }: { name: string, className?: string }) {
+function ModuleIcon({ name, className }: { name?: string, className?: string }) {
   const icons: Record<string, any> = {
     Activity, Accessibility, Dna, FlaskConical, Droplets, Flame, Beaker, HeartPulse,
     BookOpen, Bug, Skull, Heart, Award, FileText, Briefcase, HelpCircle, Layers,
     Headphones, FileArchive, Calendar, BrainCircuit, Bookmark, Download, History, Mic
   };
-  const Icon = icons[name] || BookOpen;
+  const Icon = name ? icons[name] || BookOpen : BookOpen;
   return <Icon className={className} size={24} />;
 }
 
@@ -646,7 +626,7 @@ function ModuleCard({
   isFavorite, 
   onToggleFavorite 
 }: { 
-  module: LearningModule, 
+  module: EducationModule, 
   onClick: () => void, 
   isFavorite?: boolean, 
   onToggleFavorite?: (e: React.MouseEvent) => void 
@@ -669,7 +649,7 @@ function ModuleCard({
     slate: 'from-slate-500/10 to-slate-500/20 border-slate-200/40 text-slate-700',
   };
 
-  const colorClass = colorMap[module.color] || colorMap['indigo'];
+  const colorClass = module.color ? colorMap[module.color] || colorMap['indigo'] : colorMap['indigo'];
 
   return (
     <div 
@@ -691,7 +671,7 @@ function ModuleCard({
         </div>
         <div>
           <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors line-clamp-1">{module.title}</h3>
-          <p className="text-xs text-[var(--text-muted)] mt-0.5">{module.units.length} Standard Units</p>
+          <p className="text-xs text-[var(--text-muted)] mt-0.5">{getModuleUnits(module.id).length} Standard Units</p>
         </div>
       </div>
       <p className="text-xs text-[var(--text-muted)] line-clamp-2 mt-auto">{module.description}</p>
@@ -702,7 +682,7 @@ function ModuleCard({
 // ==========================================
 // UPGRADED LEARNING WORKSPACE WITH RECURSIVE SUB-FOLDERS
 // ==========================================
-function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, module: LearningModule, onBack: () => void }) {
+function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit, module: EducationModule, onBack: () => void }) {
   const [activeTab, setActiveTab] = useState('overview');
   const { files, fetchFiles } = useFileStore();
   const { userData } = useAuth();
@@ -1239,12 +1219,11 @@ function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, modul
 
         {/* Workspace Content */}
         <div className="flex-1 p-6 bg-[var(--bg)]">
-          {activeTab === 'overview' && <WorkspaceOverview unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
-          {activeTab === 'tutor' && <WorkspaceTutor unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
-          {activeTab === 'notes' && <WorkspaceNotes unit={unit} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
-          {activeTab === 'resources' && <WorkspaceResources unit={unit} currentFolderId={currentFolderId} />}
-          {activeTab === 'flashcards' && <WorkspaceFlashcards unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
-          {activeTab === 'mcqs' && <WorkspaceQuizzes unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
+{activeTab === 'overview' && <WorkspaceOverview unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
+          {activeTab === 'tutor' && <WorkspaceTutor unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
+          {activeTab === 'notes' && <WorkspaceNotes unit={unit} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
+          {activeTab === 'flashcards' && <WorkspaceFlashcards unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
+          {activeTab === 'mcqs' && <WorkspaceQuizzes unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
         </div>
       </div>
 
@@ -1618,7 +1597,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: LearningUnit, modul
 // ==========================================
 // WORKSPACE OVERVIEW & AI STUDY GUIDE
 // ==========================================
-function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName }: { unit: LearningUnit, module: LearningModule, currentFolderId: string, currentFolderName: string }) {
+function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, userData }: { unit: EducationModuleUnit, module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
   const { files } = useFileStore();
   const [summary, setSummary] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -1667,6 +1646,26 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName }:
       
       if (data.summary) {
         await EducationService.saveSummary(currentFolderId, data.summary);
+        
+        // Also save to AIContentService for cross-referencing and export
+        if (userData?.id) {
+          try {
+            await AIContentService.saveGeneratedSummary(
+              userData.id,
+              currentFolderId,
+              currentFolderName,
+              `Study Guide: ${currentFolderName}`,
+              data.summary,
+              {
+                specialty: module.title,
+                curriculumUnitId: currentFolderId,
+              }
+            );
+          } catch (err) {
+            console.warn('[EducationHub] Failed to save summary to AIContentService:', err);
+          }
+        }
+        
         setSummary(data.summary);
       }
     } catch (err) {
@@ -1719,22 +1718,30 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName }:
                 <FileSignature className="text-[var(--primary)]" size={20} /> AI Study Guide & Summary
               </h3>
               {(unitFiles.length > 0 || customNotes.trim()) && (
-                <button
-                  onClick={handleGenerateSummary}
-                  disabled={loading}
-                  className="px-4 py-2 bg-gradient-to-r from-[var(--primary)] to-purple-600 text-white rounded-xl text-xs font-bold shadow-md hover:opacity-95 transition-opacity disabled:opacity-50 flex items-center gap-1.5 cursor-pointer"
-                >
-                  {loading ? (
-                    <>
-                      <div className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                      Analyzing...
-                    </>
-                  ) : (
-                    <>
-                      <Sparkles size={13} /> {summary ? 'Regenerate Summary' : 'Compile Study Guide'}
-                    </>
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={handleGenerateSummary}
+                    disabled={loading}
+                    className="px-4 py-2 bg-gradient-to-r from-[var(--primary)] to-purple-600 text-white rounded-xl text-xs font-bold shadow-md hover:opacity-95 transition-opacity disabled:opacity-50 flex items-center gap-1.5 cursor-pointer"
+                  >
+                    {loading ? (
+                      <>
+                        <div className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                        Analyzing...
+                      </>
+                    ) : (
+                      <>
+                        <Sparkles size={13} /> {summary ? 'Regenerate Summary' : 'Compile Study Guide'}
+                      </>
+                    )}
+                  </button>
+                  {summary && userData?.id && (
+                    <DownloadButton 
+                      content={summary} 
+                      filename={`study-guide-${currentFolderName.replace(/\s+/g, '-').toLowerCase()}`}
+                    />
                   )}
-                </button>
+                </div>
               )}
             </div>
 
@@ -1815,7 +1822,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName }:
 // ==========================================
 // WORKSPACE TUTOR (INTELLIGENT RECALL CHAT)
 // ==========================================
-function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName }: { unit: LearningUnit, module: LearningModule, currentFolderId: string, currentFolderName: string }) {
+function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, userData }: { unit: EducationModuleUnit, module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
   const { files } = useFileStore();
   const [tutorMessage, setTutorMessage] = useState('');
   const [tutorChat, setTutorChat] = useState<{ role: 'user' | 'assistant', content: string }[]>([]);
@@ -1959,8 +1966,7 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName }: { 
 // ==========================================
 // MY NOTES (UPLOAD & SCRATCHPAD NOTES)
 // ==========================================
-function WorkspaceNotes({ unit, currentFolderId, currentFolderName }: { unit: LearningUnit, currentFolderId: string, currentFolderName: string }) {
-  const { userData } = useAuth();
+function WorkspaceNotes({ unit, currentFolderId, currentFolderName, userData }: { unit: EducationModuleUnit, currentFolderId: string, currentFolderName: string, userData: any }) {
   const { files } = useFileStore();
   const [customNotes, setCustomNotes] = useState('');
   const [isSaved, setIsSaved] = useState(false);
@@ -2071,7 +2077,7 @@ function WorkspaceNotes({ unit, currentFolderId, currentFolderName }: { unit: Le
 // ==========================================
 // WORKSPACE FLASHCARDS (ACTIVE RECALL)
 // ==========================================
-function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName }: { unit: LearningUnit, module: LearningModule, currentFolderId: string, currentFolderName: string }) {
+function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName, userData }: { unit: EducationModuleUnit, module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
   const { files } = useFileStore();
   const [cards, setCards] = useState<SavedFlashcard[]>([]);
   const [loading, setLoading] = useState(false);
@@ -2117,6 +2123,26 @@ function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName 
       if (data.flashcards && data.flashcards.length > 0) {
         const saved = await EducationService.saveFlashcards(currentFolderId, data.flashcards);
         setCards(saved);
+        
+        // Also save to AIContentService for cross-referencing and export
+        if (userData?.id) {
+          try {
+            await AIContentService.saveGeneratedFlashcards(
+              userData.id,
+              currentFolderId,
+              currentFolderName,
+              `Flashcards: ${currentFolderName}`,
+              JSON.stringify(data.flashcards),
+              {
+                specialty: module.title,
+                curriculumUnitId: currentFolderId,
+                difficulty: 'Intermediate',
+              }
+            );
+          } catch (err) {
+            console.warn('[EducationHub] Failed to save flashcards to AIContentService:', err);
+          }
+        }
       }
     } catch (err) {
       console.error(err);
@@ -2269,7 +2295,37 @@ function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName 
                 <Sparkles size={12} /> Regenerate revision cards with AI
               </button>
             </div>
-
+            {/* Download buttons */}
+            <div className="flex gap-2 justify-center pt-4 border-t border-[var(--border)]/40">
+              <button
+                onClick={() => {
+                  const content = cards.map((c, i) => `**Card ${i + 1}**\n\n**Q:** ${c.question}\n\n**A:** ${c.answer}\n`).join('\n---\n');
+                  exportService.exportAndDownload({
+                    title: `Flashcards: ${currentFolderName}`,
+                    content,
+                    format: 'pdf',
+                    filename: `flashcards-${currentFolderName.toLowerCase().replace(/\s+/g, '-')}`,
+                  });
+                }}
+                className="px-3 py-1.5 text-xs font-semibold bg-[var(--primary)]/10 text-[var(--primary)] border border-[var(--primary)]/30 rounded-lg hover:bg-[var(--primary)]/20 transition-colors flex items-center gap-1 cursor-pointer"
+              >
+                <FileDown size={10} /> PDF
+              </button>
+              <button
+                onClick={() => {
+                  const content = cards.map((c, i) => `**Card ${i + 1}**\n\n**Q:** ${c.question}\n\n**A:** ${c.answer}\n`).join('\n---\n');
+                  exportService.exportAndDownload({
+                    title: `Flashcards: ${currentFolderName}`,
+                    content,
+                    format: 'md',
+                    filename: `flashcards-${currentFolderName.toLowerCase().replace(/\s+/g, '-')}`,
+                  });
+                }}
+                className="px-3 py-1.5 text-xs font-semibold bg-purple-500/10 text-purple-600 border border-purple-500/30 rounded-lg hover:bg-purple-500/20 transition-colors flex items-center gap-1 cursor-pointer"
+              >
+                <FileText size={10} /> MD
+              </button>
+            </div>
           </div>
 
         </div>
@@ -2297,7 +2353,7 @@ function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName 
 // ==========================================
 // WORKSPACE QUIZZES (INTERACTIVE MCQS ASSESSMENT)
 // ==========================================
-function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName }: { unit: LearningUnit, module: LearningModule, currentFolderId: string, currentFolderName: string }) {
+function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName, userData }: { unit: EducationModuleUnit, module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
   const { files } = useFileStore();
   const [quizzes, setQuizzes] = useState<SavedQuiz[]>([]);
   const [loading, setLoading] = useState(false);
@@ -2350,6 +2406,26 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName }: 
       if (data.quizzes && data.quizzes.length > 0) {
         const saved = await EducationService.saveQuizzes(currentFolderId, data.quizzes);
         setQuizzes(saved);
+        
+        // Also save to AIContentService for cross-referencing and export
+        if (userData?.id) {
+          try {
+            await AIContentService.saveGeneratedQuiz(
+              userData.id,
+              currentFolderId,
+              currentFolderName,
+              `Quiz: ${currentFolderName}`,
+              JSON.stringify(data.quizzes),
+              {
+                specialty: module.title,
+                curriculumUnitId: currentFolderId,
+                difficulty: 'Intermediate',
+              }
+            );
+          } catch (err) {
+            console.warn('[EducationHub] Failed to save quiz to AIContentService:', err);
+          }
+        }
       }
     } catch (err) {
       console.error(err);
@@ -2514,8 +2590,8 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName }: 
                   {score === quizzes.length ? '🌟 Exemplary Diagnostic Accuracy!' : score >= 3 ? '📚 Solid Pharmacological Foundation' : '📖 Review Guidelines & Re-examine'}
                 </span>
               </div>
+<div className="flex gap-4">
 
-              <div className="flex gap-4">
                 <button
                   onClick={handleResetQuiz}
                   className="flex-1 py-3 border border-[var(--border)] text-[var(--text)] rounded-xl font-bold text-xs hover:bg-[var(--surface-dim)] transition-colors cursor-pointer"
@@ -2527,6 +2603,41 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName }: 
                   className="flex-1 py-3 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-xl font-bold text-xs hover:opacity-95 transition-opacity cursor-pointer"
                 >
                   Generate New MCQ Quiz
+                </button>
+              </div>
+              {/* Download buttons for completed quiz */}
+              <div className="flex gap-2 justify-center pt-4 border-t border-[var(--border)]/40">
+                <button
+                  onClick={() => {
+                    const content = quizzes.map((q, i) => 
+                      `**Question ${i + 1}**\n\n${q.question}\n\n**Options:**\n${q.options.map((o, j) => `${String.fromCharCode(65 + j)}) ${o}`).join('\n')}\n\n**Answer:** ${q.correctAnswer}\n\n**Explanation:** ${q.explanation}\n`
+                    ).join('\n---\n');
+                    exportService.exportAndDownload({
+                      title: `Quiz: ${currentFolderName}`,
+                      content,
+                      format: 'pdf',
+                      filename: `quiz-${currentFolderName.toLowerCase().replace(/\s+/g, '-')}`,
+                    });
+                  }}
+                  className="px-3 py-1.5 text-xs font-semibold bg-[var(--primary)]/10 text-[var(--primary)] border border-[var(--primary)]/30 rounded-lg hover:bg-[var(--primary)]/20 transition-colors flex items-center gap-1 cursor-pointer"
+                >
+                  <FileDown size={10} /> PDF
+                </button>
+                <button
+                  onClick={() => {
+                    const content = quizzes.map((q, i) => 
+                      `**Question ${i + 1}**\n\n${q.question}\n\n**Options:**\n${q.options.map((o, j) => `${String.fromCharCode(65 + j)}) ${o}`).join('\n')}\n\n**Answer:** ${q.correctAnswer}\n\n**Explanation:** ${q.explanation}\n`
+                    ).join('\n---\n');
+                    exportService.exportAndDownload({
+                      title: `Quiz: ${currentFolderName}`,
+                      content,
+                      format: 'md',
+                      filename: `quiz-${currentFolderName.toLowerCase().replace(/\s+/g, '-')}`,
+                    });
+                  }}
+                  className="px-3 py-1.5 text-xs font-semibold bg-purple-500/10 text-purple-600 border border-purple-500/30 rounded-lg hover:bg-purple-500/20 transition-colors flex items-center gap-1 cursor-pointer"
+                >
+                  <FileText size={10} /> MD
                 </button>
               </div>
             </div>
@@ -2557,7 +2668,7 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName }: 
 // ==========================================
 // STATIC WORKSPACE RESOURCES
 // ==========================================
-function WorkspaceResources({ unit, currentFolderId }: { unit: LearningUnit, currentFolderId: string }) {
+function WorkspaceResources({ unit, currentFolderId }: { unit: EducationModuleUnit, currentFolderId: string }) {
   const resources = [
     { title: 'Clinical Treatment Guidelines 2024', author: 'Ministry of Health Kenya', type: 'PDF' },
     { title: 'Standard Treatment Protocol Guidelines (STGs)', author: 'World Health Organization', type: 'Link' },

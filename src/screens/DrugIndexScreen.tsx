@@ -6,9 +6,10 @@ import {
 } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { db } from '../lib/firebase';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, doc, setDoc, query, where } from 'firebase/firestore';
 import { Patient } from '../components/PatientQuickSummary';
 import { getMonographCached, pinMonograph } from '../lib/getMonograph';
+import { useAuth } from '../contexts/AuthContext';
 
 interface QuickDrug {
   name: string;
@@ -68,6 +69,8 @@ const CATEGORIES = [
 ];
 
 export default function DrugIndexScreen() {
+  const { userData } = useAuth();
+  
   // Navigation State
   const [activeTab, setActiveTab] = useState<'monograph' | 'interaction'>('monograph');
 
@@ -196,15 +199,41 @@ export default function DrugIndexScreen() {
 
   // Fetch drug monographs helper
   useEffect(() => {
-    const saved = localStorage.getItem('savedDrugs');
-    if (saved) {
-      try {
-        setSavedDrugs(JSON.parse(saved));
-      } catch (e) {}
-    }
+    const loadSavedDrugs = async () => {
+      // Load from localStorage (immediate)
+      const saved = localStorage.getItem('savedDrugs');
+      if (saved) {
+        try {
+          setSavedDrugs(JSON.parse(saved));
+        } catch (e) {}
+      }
+      
+      // Load from Firestore if authenticated
+      if (userData?.id) {
+        try {
+          const q = query(
+            collection(db, 'saved_drugs'),
+            where('userId', '==', userData.id)
+          );
+          const snapshot = await getDocs(q);
+          const firestoreDrugs = snapshot.docs.map(doc => doc.data().drugName);
+          
+          // Merge with local (Firestore takes precedence for new entries)
+          if (firestoreDrugs.length > 0) {
+            const merged = [...new Set([...firestoreDrugs, ...savedDrugs])].slice(0, 10);
+            setSavedDrugs(merged);
+            localStorage.setItem('savedDrugs', JSON.stringify(merged));
+          }
+        } catch (err) {
+          console.warn('[DrugIndex] Failed to load saved drugs from Firestore:', err);
+        }
+      }
+    };
+    
+    loadSavedDrugs();
   }, []);
 
-  const saveDrugSearch = (drug: string) => {
+  const saveDrugSearch = async (drug: string) => {
     const clean = drug.trim();
     if (!clean) return;
     setSavedDrugs(prev => {
@@ -213,6 +242,19 @@ export default function DrugIndexScreen() {
       localStorage.setItem('savedDrugs', JSON.stringify(next));
       return next;
     });
+    
+    // Also save to Firestore
+    if (userData?.id) {
+      try {
+        await setDoc(doc(db, 'saved_drugs', `${userData.id}_${clean.toLowerCase().replace(/\s+/g, '_')}`), {
+          userId: userData.id,
+          drugName: clean,
+          createdAt: new Date().toISOString(),
+        });
+      } catch (err) {
+        console.warn('[DrugIndex] Failed to save drug to Firestore:', err);
+      }
+    }
   };
 
   const fetchDrugProfile = async (query: string, categoryName?: string) => {

@@ -1,17 +1,14 @@
 // ================================================================
 // Clinical Cases — Barrel Export (Auto-generated)
 // Merges all subject-based case modules into a single array.
-// Generated on: 2026-07-09T21:52:37.789Z
+// Version: 3.0.0 — Full regeneration from all templates
+// Generated on: 2026-07-10T14:02:56.362Z
 // ================================================================
 
 import type { ClinicalCase } from '../clinicalCasesData';
 
-// Existing case modules (preserved)
-import { GENERAL_PHARMACOLOGY_CASES } from './generalPharmacology';
-import { AUTONOMIC_PHARMACOLOGY_CASES_A } from './autonomicPharmacology_a';
-import { AUTONOMIC_PHARMACOLOGY_CASES_B } from './autonomicPharmacology_b';
-
-// Newly generated case modules
+import { general_pharmacology_cases } from './general_pharmacology';
+import { autonomic_pharmacology_cases } from './autonomic_pharmacology';
 import { cardiovascular_pharmacology_cases } from './cardiovascular_pharmacology';
 import { respiratory_pharmacology_cases } from './respiratory_pharmacology';
 import { gastrointestinal_pharmacology_cases } from './gastrointestinal_pharmacology';
@@ -28,11 +25,10 @@ import { ophthalmology_cases } from './ophthalmology';
 import { toxicology_cases } from './toxicology';
 import { clinical_pharmacy_cases } from './clinical_pharmacy';
 
-// Merge all generated case batches
+// Merge all generated case batches into one array
 export const GENERATED_CASES: ClinicalCase[] = [
-  ...GENERAL_PHARMACOLOGY_CASES,
-  ...AUTONOMIC_PHARMACOLOGY_CASES_A,
-  ...AUTONOMIC_PHARMACOLOGY_CASES_B,
+  ...general_pharmacology_cases,
+  ...autonomic_pharmacology_cases,
   ...cardiovascular_pharmacology_cases,
   ...respiratory_pharmacology_cases,
   ...gastrointestinal_pharmacology_cases,
@@ -51,5 +47,5 @@ export const GENERATED_CASES: ClinicalCase[] = [
 ];
 
 // Version tracking for cache invalidation
-export const GENERATED_CASES_VERSION = '2.0.0';
+export const GENERATED_CASES_VERSION = '3.0.0';
 export const GENERATED_CASES_COUNT = GENERATED_CASES.length;

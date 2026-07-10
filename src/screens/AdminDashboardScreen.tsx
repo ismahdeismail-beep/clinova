@@ -36,9 +36,8 @@ import { handleFirestoreError, OperationType } from '../lib/firestore-diagnostic
 import { StorageService } from '../services/storage.service';
 import { useAuth } from '../contexts/AuthContext';
 import type { StoredFile, FileCategory } from '../types/engine';
-import { MODULES } from '../data/educationHubData';
+import { EDUCATION_MODULES as MODULES } from '../data/educationHubData';
 import { getCurriculumCasesForUnit } from '../data/clinicalCasesData';
-import { ClinicalCaseValidationEngine, UNIT_CURRICULUM_MAP } from '../services/ClinicalCaseValidationEngine';
 
 interface ClinicalCase {
   id: string;

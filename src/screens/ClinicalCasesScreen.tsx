@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../contexts/AuthContext';
 import { 
   HeartPulse, Wind, Flame, ShieldAlert, Droplets, Activity, Brain, 
   Smile, Pill, Baby, User, AlertTriangle, ChevronRight,
@@ -10,10 +11,11 @@ import {
 import Markdown from 'react-markdown';
 import { ClinicalCase, SPECIALTIES, DISEASES_BY_SPECIALTY, INITIAL_CASES } from '../data/clinicalCasesData';
 import { db } from '../lib/firebase';
-import { collection, getDocs, query, orderBy } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy, where } from 'firebase/firestore';
 
 export default function ClinicalCasesScreen() {
   const navigate = useNavigate();
+  const { userData } = useAuth();
   const [selectedSpecialty, setSelectedSpecialty] = useState<string | null>(null);
   const [selectedDisease, setSelectedDisease] = useState<string | null>(null);
   const [selectedCase, setSelectedCase] = useState<ClinicalCase | null>(null);
@@ -25,7 +27,13 @@ export default function ClinicalCasesScreen() {
     const fetchCases = async () => {
       setIsLoadingDbCases(true);
       try {
-        const q = query(collection(db, 'clinical_cases'), orderBy('createdAt', 'desc'));
+        let q = query(collection(db, 'clinical_cases'), orderBy('createdAt', 'desc'));
+        
+        // Filter by user if authenticated
+        if (userData?.id) {
+          q = query(collection(db, 'clinical_cases'), where('userId', '==', userData.id), orderBy('createdAt', 'desc'));
+        }
+        
         const querySnapshot = await getDocs(q);
         const fetchedList: ClinicalCase[] = [];
         querySnapshot.forEach((docSnap) => {

@@ -8,10 +8,17 @@
     "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
     "start": "node dist/server.cjs",
     "clean": "rm -rf dist server.js",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "supabase:start": "supabase start",
+    "supabase:stop": "supabase stop",
+    "supabase:migrate": "supabase db reset",
+    "supabase:status": "supabase db lint",
+    "db:seed": "tsx scripts/seedExistingDb.ts",
+    "db:validate": "tsx scripts/validateDb.ts"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
+    "@supabase/ssr": "^0.12.0",
     "@supabase/supabase-js": "^2.110.0",
     "@tailwindcss/vite": "^4.1.14",
     "@types/d3": "^7.4.3",
@@ -20,6 +27,7 @@
     "browser-image-compression": "^2.0.2",
     "clsx": "^2.1.1",
     "d3": "^7.9.0",
+    "docx": "^9.7.1",
     "dotenv": "^17.2.3",
     "express": "^4.21.2",
     "firebase": "^12.15.0",

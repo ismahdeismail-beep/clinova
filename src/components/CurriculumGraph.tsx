@@ -6,7 +6,7 @@ import {
   Maximize2, RotateCcw, Search, Sliders, Info, BookOpen, 
   Activity, Award, Sparkles, X, ChevronRight, Play, Compass, Filter
 } from 'lucide-react';
-import { MODULES } from '../data/educationHubData';
+import { EDUCATION_MODULES as MODULES, getModuleUnits } from '../data/educationHubData';
 import { INITIAL_CASES, DISEASES_BY_SPECIALTY } from '../data/clinicalCasesData';
 
 // Define Node and Link interfaces for D3 Graph
@@ -96,13 +96,13 @@ export default function CurriculumGraph() {
     MODULES.forEach(mod => {
       // Establish customized branding colors
       let color = '#3b82f6'; // default blue
-      if (mod.color === 'indigo') color = '#6366f1';
-      else if (mod.color === 'red') color = '#ef4444';
-      else if (mod.color === 'orange') color = '#f97316';
-      else if (mod.color === 'teal') color = '#14b8a6';
-      else if (mod.color === 'sky') color = '#0ea5e9';
-      else if (mod.color === 'emerald') color = '#10b981';
-      else if (mod.color === 'fuchsia') color = '#d946ef';
+      if ((mod as any).color === 'indigo') color = '#6366f1';
+      else if ((mod as any).color === 'red') color = '#ef4444';
+      else if ((mod as any).color === 'orange') color = '#f97316';
+      else if ((mod as any).color === 'teal') color = '#14b8a6';
+      else if ((mod as any).color === 'sky') color = '#0ea5e9';
+      else if ((mod as any).color === 'emerald') color = '#10b981';
+      else if ((mod as any).color === 'fuchsia') color = '#d946ef';
 
       nodes.push({
         id: mod.id,
@@ -120,8 +120,9 @@ export default function CurriculumGraph() {
         type: 'hierarchy'
       });
 
-      // Add Units
-      mod.units.forEach(unit => {
+      // Add Units from the canonical curriculum
+      const moduleUnits = getModuleUnits(mod.id);
+      moduleUnits.forEach(unit => {
         nodes.push({
           id: unit.id,
           label: unit.title,

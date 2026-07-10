@@ -115,8 +115,8 @@ const CLINICAL_TOPICS: TopicOption[] = [
     color: 'from-yellow-500/10 to-yellow-500/20 text-yellow-500 border-yellow-200/50' 
   },
   { 
-    id: 'Toxicology', 
-    name: 'Toxicology', 
+    id: 'Toxicology & Poison Management', 
+    name: 'Toxicology & Poison Management', 
     system: 'Overdose & Antidotes', 
     description: 'Poison management, pesticide toxicity, heavy metal chelators, and common antidotes.', 
     icon: Skull, 

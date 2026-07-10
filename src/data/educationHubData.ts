@@ -36,7 +36,7 @@ export const MODULES: LearningModule[] = [
       { id: 'pharm-cns', title: 'Central Nervous System Pharmacology', description: 'Antidepressants, antipsychotics, anxiolytics, and anesthetics.', estimatedHours: 20 },
       { id: 'pharm-chemo', title: 'Chemotherapy', description: 'Principles of antimicrobial and antineoplastic therapy.', estimatedHours: 8 },
       { id: 'pharm-anti', title: 'Antimicrobial Pharmacology', description: 'Antibiotics, antivirals, antifungals, and antiparasitics.', estimatedHours: 24 },
-      { id: 'pharm-tox', title: 'Toxicology', description: 'Principles of poisoning, antidotes, and environmental toxins.', estimatedHours: 12 },
+      { id: 'pharm-tox', title: 'Toxicology & Poison Management', description: 'Principles of poisoning, antidotes, and environmental toxins.', estimatedHours: 12 },
       { id: 'pharm-onc', title: 'Oncology Pharmacology', description: 'Targeted therapies, immunotherapies, and traditional cytotoxics.', estimatedHours: 16 },
       { id: 'pharm-derm', title: 'Dermatological Pharmacology', description: 'Topical agents, acne treatments, and immunosuppressants.', estimatedHours: 8 },
       { id: 'pharm-ophth', title: 'Ophthalmic Pharmacology', description: 'Glaucoma drops, mydriatics, and ocular therapeutics.', estimatedHours: 6 },

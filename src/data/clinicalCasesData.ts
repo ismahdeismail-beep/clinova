@@ -35,39 +35,195 @@ export interface ClinicalCase {
 }
 
 export const SPECIALTIES = [
-  'Cardiovascular Disorders',
-  'Respiratory Disorders',
-  'Endocrine Disorders',
-  'Infectious Diseases',
-  'Renal Disorders',
-  'Gastrointestinal Disorders',
-  'Neurological Disorders',
-  'Psychiatric Disorders',
-  'Hematology & Oncology',
-  'Pediatrics',
-  'Obstetrics & Gynecology',
-  'Emergency & Critical Care'
+  'Cardiovascular Pharmacotherapy',
+  'Respiratory Pharmacotherapy',
+  'Infectious Diseases & Antimicrobial Pharmacotherapy',
+  'Endocrine Pharmacotherapy',
+  'Gastrointestinal Pharmacotherapy',
+  'Renal & Electrolyte Pharmacotherapy',
+  'Central Nervous System Pharmacotherapy',
+  'Haematology & Oncology Pharmacotherapy',
+  'Rheumatology & Musculoskeletal Pharmacotherapy',
+  'Obstetrics & Gynaecology Pharmacotherapy',
+  'Paediatric Pharmacotherapy',
+  'Geriatric Pharmacotherapy',
+  'Dermatology Pharmacotherapy',
+  'Ophthalmology Pharmacotherapy',
+  'ENT Pharmacotherapy',
+  'Emergency & Critical Care',
+  'Toxicology & Poison Management'
 ];
 
 export const DISEASES_BY_SPECIALTY: Record<string, string[]> = {
-  'Cardiovascular Disorders': ['Hypertension', 'Heart Failure', 'Acute Coronary Syndrome', 'Stable Angina', 'Atrial Fibrillation', 'Infective Endocarditis'],
-  'Respiratory Disorders': ['Asthma', 'COPD', 'Pneumonia', 'Tuberculosis', 'Pulmonary Embolism'],
-  'Endocrine Disorders': ['Diabetes Mellitus', 'Diabetic Ketoacidosis', 'Hyperthyroidism', 'Hypothyroidism'],
-  'Infectious Diseases': ['HIV/AIDS', 'Malaria', 'Typhoid Fever', 'Urinary Tract Infection', 'Sepsis', 'Meningitis', 'Cellulitis'],
-  'Renal Disorders': ['Acute Kidney Injury', 'Chronic Kidney Disease', 'Nephrotic Syndrome'],
-  'Gastrointestinal Disorders': ['GERD', 'Peptic Ulcer Disease', 'Liver Cirrhosis', 'Hepatitis', 'Acute Pancreatitis'],
-  'Neurological Disorders': ['Stroke', 'Epilepsy', 'Parkinson Disease', 'Migraine'],
-  'Psychiatric Disorders': ['Depression', 'Schizophrenia', 'Bipolar Disorder', 'Anxiety Disorders'],
-  'Hematology & Oncology': ['Iron Deficiency Anaemia', 'Sickle Cell Disease', 'Leukemia', 'Venous Thromboembolism', 'Breast Cancer', 'Colorectal Cancer', 'Prostate Cancer', 'Chemotherapy Supportive Care'],
-  'Pediatrics': ['Neonatal Sepsis', 'Childhood Pneumonia', 'Acute Diarrhea', 'Pediatric Malaria'],
-  'Obstetrics & Gynecology': ['Preeclampsia', 'Eclampsia', 'Gestational Diabetes', 'Postpartum Hemorrhage'],
-  'Emergency & Critical Care': ['Poisoning', 'Anaphylaxis', 'Status Epilepticus', 'Septic Shock', 'Cardiac Arrest']
+  'Cardiovascular Pharmacotherapy': [
+    'Hypertension',
+    'Heart Failure',
+    'Ischaemic Heart Disease',
+    'Acute Coronary Syndrome',
+    'Stable Angina',
+    'Cardiac Arrhythmias',
+    'Atrial Fibrillation',
+    'Valvular Heart Disease',
+    'Deep Vein Thrombosis',
+    'Pulmonary Embolism',
+    'Dyslipidaemia'
+  ],
+  'Respiratory Pharmacotherapy': [
+    'Asthma',
+    'COPD',
+    'Community Acquired Pneumonia',
+    'Hospital Acquired Pneumonia',
+    'Tuberculosis',
+    'COVID-19',
+    'Allergic Rhinitis',
+    'Pleural Diseases'
+  ],
+  'Infectious Diseases & Antimicrobial Pharmacotherapy': [
+    'Sepsis',
+    'HIV/AIDS',
+    'Malaria',
+    'Bacterial Infections',
+    'Viral Infections',
+    'Fungal Infections',
+    'Parasitic Diseases',
+    'Sexually Transmitted Infections',
+    'Opportunistic Infections',
+    'Antimicrobial Stewardship'
+  ],
+  'Endocrine Pharmacotherapy': [
+    'Diabetes Mellitus',
+    'Diabetic Emergencies',
+    'Thyroid Disorders',
+    'Adrenal Disorders',
+    'Pituitary Disorders',
+    'Osteoporosis',
+    'Metabolic Disorders'
+  ],
+  'Gastrointestinal Pharmacotherapy': [
+    'Peptic Ulcer Disease',
+    'Gastro-oesophageal Reflux Disease',
+    'H. pylori Infection',
+    'Inflammatory Bowel Disease',
+    'Irritable Bowel Syndrome',
+    'Liver Disease',
+    'Hepatitis',
+    'Cirrhosis',
+    'Pancreatitis',
+    'Gastroenteritis'
+  ],
+  'Renal & Electrolyte Pharmacotherapy': [
+    'Acute Kidney Injury',
+    'Chronic Kidney Disease',
+    'Nephrotic Syndrome',
+    'Nephritic Syndrome',
+    'Electrolyte Disorders',
+    'Acid-Base Disorders',
+    'Dialysis Care'
+  ],
+  'Central Nervous System Pharmacotherapy': [
+    'Epilepsy',
+    'Parkinson\'s Disease',
+    'Alzheimer\'s Disease',
+    'Stroke',
+    'Migraine',
+    'Depression',
+    'Anxiety Disorders',
+    'Bipolar Disorder',
+    'Schizophrenia',
+    'Neuropathic Pain'
+  ],
+  'Haematology & Oncology Pharmacotherapy': [
+    'Iron Deficiency Anaemia',
+    'Megaloblastic Anaemia',
+    'Sickle Cell Disease',
+    'Bleeding Disorders',
+    'Leukaemia',
+    'Lymphoma',
+    'Solid Tumours',
+    'Chemotherapy Supportive Care',
+    'Palliative Care'
+  ],
+  'Rheumatology & Musculoskeletal Pharmacotherapy': [
+    'Osteoarthritis',
+    'Rheumatoid Arthritis',
+    'Gout',
+    'Systemic Lupus Erythematosus',
+    'Osteoporosis',
+    'Musculoskeletal Pain'
+  ],
+  'Obstetrics & Gynaecology Pharmacotherapy': [
+    'Antenatal Care',
+    'Hypertensive Disorders of Pregnancy',
+    'Gestational Diabetes',
+    'Labour & Delivery',
+    'Postpartum Care',
+    'Contraception',
+    'Infertility',
+    'Menstrual Disorders',
+    'Menopause'
+  ],
+  'Paediatric Pharmacotherapy': [
+    'Neonatal Care',
+    'Childhood Infections',
+    'Paediatric Asthma',
+    'Childhood Diarrhoeal Diseases',
+    'Malnutrition',
+    'Immunisation',
+    'Common Paediatric Emergencies'
+  ],
+  'Geriatric Pharmacotherapy': [
+    'Polypharmacy',
+    'Falls',
+    'Frailty',
+    'Dementia',
+    'Delirium',
+    'Medication Optimisation'
+  ],
+  'Dermatology Pharmacotherapy': [
+    'Eczema',
+    'Psoriasis',
+    'Acne',
+    'Fungal Skin Infections',
+    'Bacterial Skin Infections',
+    'Drug-Induced Skin Reactions'
+  ],
+  'Ophthalmology Pharmacotherapy': [
+    'Glaucoma',
+    'Conjunctivitis',
+    'Cataracts',
+    'Ocular Infections'
+  ],
+  'ENT Pharmacotherapy': [
+    'Otitis Media',
+    'Sinusitis',
+    'Pharyngitis',
+    'Tonsillitis',
+    'Hearing Disorders'
+  ],
+  'Emergency & Critical Care': [
+    'Shock',
+    'Cardiac Arrest',
+    'Poisoning',
+    'Anaphylaxis',
+    'Status Epilepticus',
+    'Diabetic Ketoacidosis',
+    'Hypertensive Emergency',
+    'Trauma'
+  ],
+  'Toxicology & Poison Management': [
+    'Drug Overdose',
+    'Chemical Poisoning',
+    'Snake Bites',
+    'Food Poisoning',
+    'Environmental Toxicology',
+    'Poison Management Principles'
+  ]
 };
 
 export const INITIAL_CASES: ClinicalCase[] = [
   {
     id: 'case-1',
-    specialty: 'Cardiovascular Disorders',
+    specialty: 'Cardiovascular Pharmacotherapy',
     disease: 'Heart Failure',
     title: 'Decompensated HFrEF with Digoxin Toxicity',
     difficulty: 'Advanced',
@@ -102,8 +258,8 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-2',
-    specialty: 'Pediatrics',
-    disease: 'Childhood Pneumonia',
+    specialty: 'Paediatric Pharmacotherapy',
+    disease: 'Childhood Infections',
     title: 'Severe Childhood Pneumonia in Silas with Mild Dehydration',
     difficulty: 'Intermediate',
     patientName: 'Baby Silas Baraka',
@@ -137,8 +293,8 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-3',
-    specialty: 'Endocrine Disorders',
-    disease: 'Diabetic Ketoacidosis',
+    specialty: 'Endocrine Pharmacotherapy',
+    disease: 'Diabetic Emergencies',
     title: 'Severe Diabetic Ketoacidosis Precipitated by Urinary Tract Infection',
     difficulty: 'Advanced',
     patientName: 'Jane Atieno',
@@ -172,7 +328,7 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-4',
-    specialty: 'Respiratory Disorders',
+    specialty: 'Respiratory Pharmacotherapy',
     disease: 'Asthma',
     title: 'Acute Severe Asthma Exacerbation in a Young Adult',
     difficulty: 'Intermediate',
@@ -207,8 +363,8 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-5',
-    specialty: 'Obstetrics & Gynecology',
-    disease: 'Preeclampsia',
+    specialty: 'Obstetrics & Gynaecology Pharmacotherapy',
+    disease: 'Hypertensive Disorders of Pregnancy',
     title: 'Severe Preeclampsia at 34 Weeks Gestation',
     difficulty: 'Intermediate',
     patientName: 'Mercy Chebet',
@@ -242,7 +398,7 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-6',
-    specialty: 'Neurological Disorders',
+    specialty: 'Central Nervous System Pharmacotherapy',
     disease: 'Stroke',
     title: 'Acute Ischemic Stroke in the Middle Cerebral Artery Territory',
     difficulty: 'Advanced',
@@ -277,8 +433,8 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-7',
-    specialty: 'Infectious Diseases',
-    disease: 'Meningitis',
+    specialty: 'Infectious Diseases & Antimicrobial Pharmacotherapy',
+    disease: 'Bacterial Infections',
     title: 'Acute Bacterial Meningitis in Kelvin',
     difficulty: 'Intermediate',
     patientName: 'Kelvin Mwenda',
@@ -312,7 +468,7 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-8',
-    specialty: 'Psychiatric Disorders',
+    specialty: 'Central Nervous System Pharmacotherapy',
     disease: 'Depression',
     title: 'Severe Major Depressive Disorder with Suicidal Ideation',
     difficulty: 'Intermediate',
@@ -347,8 +503,8 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-9',
-    specialty: 'Gastrointestinal Disorders',
-    disease: 'Liver Cirrhosis',
+    specialty: 'Gastrointestinal Pharmacotherapy',
+    disease: 'Cirrhosis',
     title: 'Decompensated Liver Cirrhosis with Ascites and Encephalopathy',
     difficulty: 'Advanced',
     patientName: 'Peter Omondi',
@@ -382,8 +538,8 @@ export const INITIAL_CASES: ClinicalCase[] = [
   },
   {
     id: 'case-10',
-    specialty: 'Hematology & Oncology',
-    disease: 'Breast Cancer',
+    specialty: 'Haematology & Oncology Pharmacotherapy',
+    disease: 'Solid Tumours',
     title: 'Adjuvant Endocrine Therapy for HR-Positive Breast Cancer',
     difficulty: 'Beginner',
     patientName: 'Grace Wambui',
@@ -435,7 +591,7 @@ export const CURRICULUM_UNITS = [
   "Infectious Diseases & Antimicrobial Pharmacotherapy",
   "Oncology Pharmacotherapy",
   "Vitamins, Nutrition & Clinical Nutrition",
-  "Toxicology",
+  "Toxicology & Poison Management",
   "Pharmaceutical Care & Professional Practice"
 ];
 
@@ -529,7 +685,7 @@ export function getCurriculumCasesForUnit(unitNumber: number): ClinicalCase[] {
       { title: "Aminoglycoside Once-Daily vs Multiple-Dosing Nephrotoxicity", disease: "Pharmacodynamics", specialty: "Renal Disorders", dtp: "Nephrotoxic drug selection.", labs: "Serum Creatinine: 2.3 mg/dL (elevated from 0.8).", pearls: "Once-daily gentamicin utilizes concentration-dependent killing and reduces renal accumulation." }
     ],
     2: [ // Autonomic Nervous System Pharmacotherapy
-      { title: "Organophosphate Insecticide Ingestion and Cholinergic Crisis", disease: "Toxicology", specialty: "Emergency & Critical Care", dtp: "Toxic chemical poisoning.", labs: "Pseudocholinesterase activity <20% of normal.", pearls: "Atropine blocks muscarinic excess; Pralidoxime reactivates acetylcholinesterase." },
+      { title: "Organophosphate Insecticide Ingestion and Cholinergic Crisis", disease: "Chemical Poisoning", specialty: "Toxicology & Poison Management", dtp: "Toxic chemical poisoning.", labs: "Pseudocholinesterase activity <20% of normal.", pearls: "Atropine blocks muscarinic excess; Pralidoxime reactivates acetylcholinesterase." },
       { title: "Myasthenia Gravis Overmedication: Cholinergic vs Myasthenic Crisis", disease: "Neurological Disorders", specialty: "Neurological Disorders", dtp: "Inappropriate dosage titration.", labs: "Tensilon (edrophonium) test worsens strength.", pearls: "Cholinergic crisis presents with flaccid paralysis and miosis due to acetylcholine excess." },
       { title: "Pheochromocytoma and Hypertensive Crisis: Alpha before Beta blockade", disease: "Endocrine Disorders", specialty: "Endocrine Disorders", dtp: "Inappropriate drug order sequence.", labs: "Urinary metanephrines: 4500 mcg/24h.", pearls: "Giving beta-blockers first causes unopposed alpha-1 vasoconstriction, worsening hypertension." },
       { title: "Overactive Bladder and Anticholinergic Side Effects in the Elderly", disease: "Gastrointestinal Disorders", specialty: "Geriatric Pharmacotherapy", dtp: "Adverse drug reaction.", labs: "Post-void residual volume: 250 mL (urinary retention).", pearls: "Oxybutynin has high central anticholinergic activity; prefer Mirabegron (beta-3 agonist)." },
@@ -672,17 +828,17 @@ export function getCurriculumCasesForUnit(unitNumber: number): ClinicalCase[] {
       { title: "Zinc Supplementation in Pediatric Acute Diarrhea", disease: "Diastolic Disorders", specialty: "Pediatrics", dtp: "Lack of adjunctive therapy.", labs: "Stool frequency: 8 times/day.", pearls: "WHO recommends Zinc 20mg daily (10mg if <6 months) for 10-14 days to reduce childhood diarrhea." },
       { title: "Simeprevir and Vitamin A Toxicity in Liver Impairment", disease: "Malnutrition", specialty: "Gastrointestinal Disorders", dtp: "Toxic vitamin dosing.", labs: "Dry peeling skin, headache, hepatomegaly.", pearls: "Vitamin A is stored in hepatic stellate cells; toxicity occurs easily in advanced liver disease." }
     ],
-    14: [ // Toxicology
-      { title: "Paracetamol (Acetaminophen) Overdose: Acetylcysteine Rumack Nomogram", disease: "Toxicology", specialty: "Emergency & Critical Care", dtp: "Critical toxic ingestion.", labs: "APAP level: 180 mcg/mL at 6 hours post-ingestion.", pearls: "Acetylcysteine restores glutathione stores to conjugate the toxic metabolite NAPQI." },
-      { title: "Salicylate Poisoning: Sodium Bicarbonate Urinary Alkalinization", disease: "Toxicology", specialty: "Emergency & Critical Care", dtp: "Severe acid-base toxicity.", labs: "ABG: mixed respiratory alkalosis and metabolic acidosis. pH 7.42.", pearls: "Alkalinizing blood/urine (target pH 7.5-8.0) traps salicylate in ionized form, preventing CNS entry." },
-      { title: "Tricyclic Antidepressant Overdose: Sodium Bicarbonate Cardioprotection", disease: "Toxicology", specialty: "Emergency & Critical Care", dtp: "Cardiotoxic ingestion.", labs: "ECG: QRS duration 120 ms.", pearls: "Hypertonic sodium bicarbonate overcomes TCA sodium-channel blockade, preventing fatal arrhythmias." },
-      { title: "Digoxin Poisoning: Digibind Antibody Fragment Dosing", disease: "Toxicology", specialty: "Emergency & Critical Care", dtp: "Life-threatening arrhythmia.", labs: "Digoxin: 5.5 ng/mL. Potassium: 6.1 mEq/L.", pearls: "Indicated for severe hyperkalemia (>5.0 mEq/L), hemodynamic instability, or life-threatening block." },
-      { title: "Methanol Ingestion: Fomepizole vs Ethanol Therapy", disease: "Toxicology", specialty: "Emergency & Critical Care", dtp: "Toxic ingestion.", labs: "Anion gap: 28. Osmolar gap: 35.", pearls: "Fomepizole inhibits alcohol dehydrogenase, preventing conversion of methanol to toxic formic acid." },
-      { title: "Iron Poisoning: Deferoxamine Chelation and 'Vin Rose' Urine", disease: "Toxicology", specialty: "Emergency & Critical Care", dtp: "Heavy metal toxicity.", labs: "Serum Iron: 650 mcg/dL.", pearls: "Chelate with IV Deferoxamine; the resulting ferrioxamine complex colors urine reddish-pink." },
-      { title: "Lead Poisoning in Child: Succimer (DMSA) Chelation", disease: "Toxicology", specialty: "Pediatrics", dtp: "Heavy metal toxicity.", labs: "Blood Lead Level (BLL): 55 mcg/dL.", pearls: "Succimer is an oral chelator indicated for BLL >45 mcg/dL in pediatric patients." },
-      { title: "Carbon Monoxide Poisoning: Carboxyhemoglobin and Hyperbaric Oxygen", disease: "Toxicology", specialty: "Emergency & Critical Care", dtp: "Inhalation poisoning.", labs: "Carboxyhemoglobin: 32%.", pearls: "Hyperbaric oxygen reduces the half-life of carboxyhemoglobin from 5 hours to 20 minutes." },
-      { title: "Snake Envenomation: Antivenom Dose and Anaphylaxis Risk", disease: "Toxicology", specialty: "Emergency & Critical Care", dtp: "Life-threatening bite.", labs: "PT/INR >5.0. Severe coagulopathy.", pearls: "Administer polyvalent antivenom immediately; prepare epinephrine for potential anaphylactoid reactions." },
-      { title: "Calcium Channel Blocker Overdose: High-Dose Insulin Euglycemia", disease: "Toxicology", specialty: "Emergency & Critical Care", dtp: "Cardiotoxic shock.", labs: "BP: 70/40. HR: 35 bpm.", pearls: "High-dose insulin acts as an inotrope, forcing myocytes to switch from fatty acid to carbohydrate metabolism." }
+    14: [ // Toxicology & Poison Management
+      { title: "Paracetamol (Acetaminophen) Overdose: Acetylcysteine Rumack Nomogram", disease: "Drug Overdose", specialty: "Toxicology & Poison Management", dtp: "Critical toxic ingestion.", labs: "APAP level: 180 mcg/mL at 6 hours post-ingestion.", pearls: "Acetylcysteine restores glutathione stores to conjugate the toxic metabolite NAPQI." },
+      { title: "Salicylate Poisoning: Sodium Bicarbonate Urinary Alkalinization", disease: "Drug Overdose", specialty: "Toxicology & Poison Management", dtp: "Severe acid-base toxicity.", labs: "ABG: mixed respiratory alkalosis and metabolic acidosis. pH 7.42.", pearls: "Alkalinizing blood/urine (target pH 7.5-8.0) traps salicylate in ionized form, preventing CNS entry." },
+      { title: "Tricyclic Antidepressant Overdose: Sodium Bicarbonate Cardioprotection", disease: "Drug Overdose", specialty: "Toxicology & Poison Management", dtp: "Cardiotoxic ingestion.", labs: "ECG: QRS duration 120 ms.", pearls: "Hypertonic sodium bicarbonate overcomes TCA sodium-channel blockade, preventing fatal arrhythmias." },
+      { title: "Digoxin Poisoning: Digibind Antibody Fragment Dosing", disease: "Drug Overdose", specialty: "Toxicology & Poison Management", dtp: "Life-threatening arrhythmia.", labs: "Digoxin: 5.5 ng/mL. Potassium: 6.1 mEq/L.", pearls: "Indicated for severe hyperkalemia (>5.0 mEq/L), hemodynamic instability, or life-threatening block." },
+      { title: "Methanol Ingestion: Fomepizole vs Ethanol Therapy", disease: "Chemical Poisoning", specialty: "Toxicology & Poison Management", dtp: "Toxic ingestion.", labs: "Anion gap: 28. Osmolar gap: 35.", pearls: "Fomepizole inhibits alcohol dehydrogenase, preventing conversion of methanol to toxic formic acid." },
+      { title: "Iron Poisoning: Deferoxamine Chelation and 'Vin Rose' Urine", disease: "Chemical Poisoning", specialty: "Toxicology & Poison Management", dtp: "Heavy metal toxicity.", labs: "Serum Iron: 650 mcg/dL.", pearls: "Chelate with IV Deferoxamine; the resulting ferrioxamine complex colors urine reddish-pink." },
+      { title: "Lead Poisoning in Child: Succimer (DMSA) Chelation", disease: "Chemical Poisoning", specialty: "Toxicology & Poison Management", dtp: "Heavy metal toxicity.", labs: "Blood Lead Level (BLL): 55 mcg/dL.", pearls: "Succimer is an oral chelator indicated for BLL >45 mcg/dL in pediatric patients." },
+      { title: "Carbon Monoxide Poisoning: Carboxyhemoglobin and Hyperbaric Oxygen", disease: "Environmental Toxicology", specialty: "Toxicology & Poison Management", dtp: "Inhalation poisoning.", labs: "Carboxyhemoglobin: 32%.", pearls: "Hyperbaric oxygen reduces the half-life of carboxyhemoglobin from 5 hours to 20 minutes." },
+      { title: "Snake Envenomation: Antivenom Dose and Anaphylaxis Risk", disease: "Snake Bites", specialty: "Toxicology & Poison Management", dtp: "Life-threatening bite.", labs: "PT/INR >5.0. Severe coagulopathy.", pearls: "Administer polyvalent antivenom immediately; prepare epinephrine for potential anaphylactoid reactions." },
+      { title: "Calcium Channel Blocker Overdose: High-Dose Insulin Euglycemia", disease: "Drug Overdose", specialty: "Toxicology & Poison Management", dtp: "Cardiotoxic shock.", labs: "BP: 70/40. HR: 35 bpm.", pearls: "High-dose insulin acts as an inotrope, forcing myocytes to switch from fatty acid to carbohydrate metabolism." }
     ],
     15: [ // Pharmaceutical Care & Professional Practice
       { title: "Medication Reconciliation: Avoiding Transition of Care Errors", disease: "Medication Reconciliation", specialty: "Emergency & Critical Care", dtp: "Improper drug continuation.", labs: "Omitted home beta-blocker, resulting in rebound tachycardia.", pearls: "Perform rigorous medication reconciliation at admission, transfer, and hospital discharge." },
@@ -727,8 +883,76 @@ export function getCurriculumCasesForUnit(unitNumber: number): ClinicalCase[] {
 
     cases.push({
       id: caseId,
-      specialty: template.specialty,
-      disease: template.disease,
+      specialty: (() => {
+        let mappedSpecialty = template.specialty;
+        if (mappedSpecialty === "Cardiovascular Disorders") {
+          mappedSpecialty = "Cardiovascular Pharmacotherapy";
+        } else if (mappedSpecialty === "Respiratory Disorders") {
+          mappedSpecialty = "Respiratory Pharmacotherapy";
+        } else if (mappedSpecialty === "Endocrine Disorders") {
+          mappedSpecialty = "Endocrine Pharmacotherapy";
+        } else if (mappedSpecialty === "Gastrointestinal Disorders") {
+          mappedSpecialty = "Gastrointestinal Pharmacotherapy";
+        } else if (mappedSpecialty === "Renal Disorders") {
+          mappedSpecialty = "Renal & Electrolyte Pharmacotherapy";
+        } else if (mappedSpecialty === "Neurological Disorders" || mappedSpecialty === "Central Nervous System") {
+          mappedSpecialty = "Central Nervous System Pharmacotherapy";
+        } else if (mappedSpecialty === "Hematology & Oncology" || mappedSpecialty === "Oncology Support") {
+          mappedSpecialty = "Haematology & Oncology Pharmacotherapy";
+        } else if (mappedSpecialty === "Pediatrics") {
+          mappedSpecialty = "Paediatric Pharmacotherapy";
+        } else if (mappedSpecialty === "Toxicology" || mappedSpecialty === "Toxicology & Poison Management") {
+          mappedSpecialty = "Toxicology & Poison Management";
+        }
+        return mappedSpecialty;
+      })(),
+      disease: (() => {
+        let mappedSpecialty = template.specialty;
+        if (mappedSpecialty === "Cardiovascular Disorders") mappedSpecialty = "Cardiovascular Pharmacotherapy";
+        else if (mappedSpecialty === "Respiratory Disorders") mappedSpecialty = "Respiratory Pharmacotherapy";
+
+        let mappedDisease = template.disease;
+        if (mappedSpecialty === "Cardiovascular Pharmacotherapy") {
+          const allowedCardio = DISEASES_BY_SPECIALTY["Cardiovascular Pharmacotherapy"] || [];
+          if (!allowedCardio.includes(mappedDisease)) {
+            if (mappedDisease.includes("Heart Failure") || mappedDisease.includes("Dosing")) {
+              mappedDisease = "Heart Failure";
+            } else if (mappedDisease.includes("Hypertension") || mappedDisease.includes("Geriatric") || mappedDisease.includes("Therapeutic")) {
+              mappedDisease = "Hypertension";
+            } else if (mappedDisease.includes("Atrial Fibrillation") || mappedDisease.includes("Drug-Drug")) {
+              mappedDisease = "Atrial Fibrillation";
+            } else if (mappedDisease.includes("Angina")) {
+              mappedDisease = "Stable Angina";
+            } else if (mappedDisease.includes("Hyperlipidemia") || mappedDisease.includes("Statin")) {
+              mappedDisease = "Dyslipidaemia";
+            } else if (mappedDisease.includes("Anticoagulation") || mappedDisease.includes("DVT") || mappedDisease.includes("Deep Vein")) {
+              mappedDisease = "Deep Vein Thrombosis";
+            } else if (mappedDisease.includes("Endocarditis")) {
+              mappedDisease = "Valvular Heart Disease";
+            } else {
+              mappedDisease = "Heart Failure";
+            }
+          }
+        } else if (mappedSpecialty === "Respiratory Pharmacotherapy") {
+          const allowedResp = DISEASES_BY_SPECIALTY["Respiratory Pharmacotherapy"] || [];
+          if (!allowedResp.includes(mappedDisease)) {
+            if (mappedDisease.includes("Asthma")) {
+              mappedDisease = "Asthma";
+            } else if (mappedDisease.includes("COPD") || mappedDisease.includes("Interaction") || mappedDisease.includes("Hypertension")) {
+              mappedDisease = "COPD";
+            } else if (mappedDisease.includes("Fibrosis")) {
+              mappedDisease = "Pleural Diseases";
+            } else if (mappedDisease.includes("Tuberculosis")) {
+              mappedDisease = "Tuberculosis";
+            } else if (mappedDisease.includes("Rhinitis")) {
+              mappedDisease = "Allergic Rhinitis";
+            } else {
+              mappedDisease = "Community Acquired Pneumonia";
+            }
+          }
+        }
+        return mappedDisease;
+      })(),
       title: `${i + 1}. ${template.title}`,
       difficulty: difficulty,
       patientName: patientName,

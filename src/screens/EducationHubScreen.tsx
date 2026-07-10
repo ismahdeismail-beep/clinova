@@ -5,7 +5,8 @@ import {
   Droplets, Flame, Beaker, HeartPulse, Bug, Skull, Heart, Award, FileText,
   Briefcase, HelpCircle, Layers, Headphones, FileArchive, Calendar, BrainCircuit,
   Bookmark, Download, History, ChevronLeft, Bot, Play, FileUp, List, Sparkles, CheckCircle2, Clock, Database, Mic,
-  FolderPlus, Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star, ArrowUpRight
+  FolderPlus, Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star, ArrowUpRight,
+  Compass
 } from 'lucide-react';
 import Markdown from 'react-markdown';
 import html2canvas from 'html2canvas';
@@ -16,6 +17,7 @@ import FileUploader from '../components/FileUploader';
 import { useFileStore } from '../store/fileStore';
 import { useAuth } from '../contexts/AuthContext';
 import { EducationService, CustomUnit, SubFolder, SavedFlashcard, SavedQuiz } from '../services/education.service';
+import CurriculumGraph from '../components/CurriculumGraph';
 
 const getRelevantFiles = (files: any[], currentFolderId: string, currentFolderName: string, unitTitle: string) => {
   return files.filter(f => {
@@ -63,6 +65,7 @@ export default function EducationHubScreen() {
   const [selectedUnit, setSelectedUnit] = useState<LearningUnit | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedYearFilter, setSelectedYearFilter] = useState<string>('My Year');
+  const [viewMode, setViewMode] = useState<'grid' | 'graph'>('grid');
   
   // Custom unit management states
   const [customUnits, setCustomUnits] = useState<CustomUnit[]>([]);
@@ -312,15 +315,35 @@ export default function EducationHubScreen() {
           </div>
 
           {!selectedUnit && (
-            <div className="relative w-full md:w-96">
-              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" size={18} />
-              <input
-                type="text"
-                placeholder={selectedModule ? "Search units..." : "Search modules & units..."}
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
-              />
+            <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto shrink-0">
+              {/* Grid vs Graph Toggles */}
+              {!selectedModule && (
+                <div className="flex bg-[var(--surface-dim)] p-1 rounded-2xl border border-[var(--border)] shrink-0 w-full sm:w-auto justify-center">
+                  <button
+                    onClick={() => setViewMode('grid')}
+                    className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${viewMode === 'grid' ? 'bg-[var(--surface)] text-[var(--text)] shadow-xs font-extrabold' : 'text-[var(--text-muted)] hover:text-[var(--text)]'}`}
+                  >
+                    <Layers size={14} /> Grid View
+                  </button>
+                  <button
+                    onClick={() => setViewMode('graph')}
+                    className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${viewMode === 'graph' ? 'bg-[var(--surface)] text-[var(--text)] shadow-xs font-extrabold' : 'text-[var(--text-muted)] hover:text-[var(--text)]'}`}
+                  >
+                    <Compass size={14} /> Curriculum Map
+                  </button>
+                </div>
+              )}
+
+              <div className="relative w-full md:w-80">
+                <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" size={18} />
+                <input
+                  type="text"
+                  placeholder={selectedModule ? "Search units..." : "Search modules & units..."}
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full pl-10 pr-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
+                />
+              </div>
             </div>
           )}
         </div>
@@ -350,7 +373,13 @@ export default function EducationHubScreen() {
         <div className="pb-24">
           
           {/* Level 1: Modules */}
-          {!selectedModule && (
+          {!selectedModule && viewMode === 'graph' && (
+            <div className="animate-in fade-in duration-300">
+              <CurriculumGraph />
+            </div>
+          )}
+
+          {!selectedModule && viewMode === 'grid' && (
             <div className="space-y-6 animate-in fade-in duration-300">
               {/* Year Level Filter Bar */}
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 shadow-xs">

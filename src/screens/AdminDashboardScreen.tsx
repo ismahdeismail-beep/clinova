@@ -31,12 +31,14 @@ import {
 } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { db, auth } from '../lib/firebase';
-import { collection, getDocs, doc, addDoc, updateDoc, deleteDoc, query, orderBy, limit, setDoc } from 'firebase/firestore';
+import { collection, getDocs, doc, addDoc, updateDoc, deleteDoc, query, orderBy, limit, setDoc, writeBatch } from 'firebase/firestore';
 import { handleFirestoreError, OperationType } from '../lib/firestore-diagnostics';
 import { StorageService } from '../services/storage.service';
 import { useAuth } from '../contexts/AuthContext';
 import type { StoredFile, FileCategory } from '../types/engine';
 import { MODULES } from '../data/educationHubData';
+import { getCurriculumCasesForUnit } from '../data/clinicalCasesData';
+import { ClinicalCaseValidationEngine, UNIT_CURRICULUM_MAP } from '../services/ClinicalCaseValidationEngine';
 
 interface ClinicalCase {
   id: string;
@@ -49,6 +51,33 @@ interface ClinicalCase {
   status: 'published' | 'draft';
   createdBy?: string;
   createdByName?: string;
+  // Rich optional properties for curriculum cases compatibility
+  specialty?: string;
+  disease?: string;
+  patientName?: string;
+  facilitySetting?: string;
+  demographics?: string;
+  chiefComplaint?: string;
+  hpi?: string;
+  pmh?: string;
+  medHx?: string;
+  allergies?: string;
+  pe?: string;
+  vitals?: string;
+  labs?: string;
+  imaging?: string;
+  diagnosis?: string;
+  ddx?: string[];
+  goals?: string;
+  pharm?: string;
+  nonPharm?: string;
+  carePlan?: string;
+  dtps?: string;
+  monitoring?: string;
+  counselling?: string;
+  followUp?: string;
+  pearls?: string;
+  references?: string[];
 }
 
 interface ClinicianProfile {
@@ -100,7 +129,487 @@ export default function AdminDashboardScreen() {
   const [editingCase, setEditingCase] = useState<ClinicalCase | null>(null);
   const [showAddCase, setShowAddCase] = useState(false);
   const [isSavingCase, setIsSavingCase] = useState(false);
-  
+
+  // Curriculum Compliance Generation States & Handler
+  const [isGeneratingCurriculum, setIsGeneratingCurriculum] = useState(false);
+  const [generationProgress, setGenerationProgress] = useState('');
+  const [validationReports, setValidationReports] = useState<Record<number, {
+    unitNumber: number;
+    unitName: string;
+    existingCount: number;
+    duplicateCount: number;
+    resolvedCount: number;
+    newCreatedCount: number;
+    totalCount: number;
+    retainedCount: number;
+    needsReviewCount: number;
+    flaggedCasesList: { id: string; title: string; score: number; reason: string }[];
+    diseasesCovered: string[];
+    missingDiseases: string[];
+    dtpsCovered: string[];
+    drugClasses: string[];
+    settings: Record<string, number>;
+    missingSettings: string[];
+    difficultyDistribution: { Beginner: number; Intermediate: number; Advanced: number };
+    ageCohorts: { Paediatric: number; Adult: number; Geriatric: number };
+    presentationTypes: { Acute: number; Chronic: number };
+    routineVsEmergency: { Routine: number; Emergency: number };
+    curriculumCoveragePercent: number;
+    dbCompletionPercent: number;
+  }>>({});
+
+  const getCasesForUnit = (unitNumber: number) => {
+    return cases.filter(c => {
+      const spec = (c.specialty || c.topic || '').toLowerCase();
+      if (unitNumber === 3) {
+        return spec.includes('cardiovascular') || spec.includes('cardio');
+      } else if (unitNumber === 4) {
+        return spec.includes('respiratory') || spec.includes('respir');
+      }
+      return false;
+    });
+  };
+
+  // Helper: Text similarity calculation using word overlap Jaccard-like index
+  const getTextSimilarity = (s1: string, s2: string): number => {
+    if (!s1 || !s2) return 0;
+    const words1 = new Set(s1.toLowerCase().match(/\w+/g) || []);
+    const words2 = new Set(s2.toLowerCase().match(/\w+/g) || []);
+    if (words1.size === 0 || words2.size === 0) return 0;
+    const intersection = new Set([...words1].filter(x => words2.has(x)));
+    return intersection.size / Math.max(words1.size, words2.size);
+  };
+
+  // Helper: Intelligent multi-attribute duplicate detection
+  const areCasesDuplicate = (c1: any, c2: any): boolean => {
+    if (c1.id === c2.id) return false;
+    
+    // Check if diseases are different
+    const d1 = (c1.disease || '').toLowerCase().trim();
+    const d2 = (c2.disease || '').toLowerCase().trim();
+    if (d1 !== d2) return false; // Different diseases are not duplicates
+
+    // If same disease, analyze patient scenario, comorbidities, and chief complaint details
+    const simComplaint = getTextSimilarity(c1.chiefComplaint || c1.scenario || '', c2.chiefComplaint || c2.scenario || '');
+    const simPmh = getTextSimilarity(c1.pmh || '', c2.pmh || '');
+    const simDtps = getTextSimilarity(c1.dtps || c1.learningPoints || '', c2.dtps || c2.learningPoints || '');
+    const simDemographics = getTextSimilarity(c1.demographics || '', c2.demographics || '');
+
+    // Cases are only marked as duplicates if they are substantially the exact same educational scenario
+    // We preserve different presentations of the same disease (e.g. child vs elderly or chronic vs acute, differing comorbidities)
+    return simComplaint > 0.8 && simPmh > 0.8 && simDtps > 0.8 && simDemographics > 0.8;
+  };
+
+  // Helper: Case Quality Score calculator (out of 100 points)
+  const calculateQualityScore = (c: any): { score: number; reasons: string[] } => {
+    let score = 0;
+    const reasons: string[] = [];
+
+    // 1. Title Quality & Granularity (+15 pts)
+    if (c.title && c.title.trim().length > 10) {
+      score += 15;
+    } else {
+      reasons.push("Title is missing or not descriptive enough");
+    }
+
+    // 2. Specialty & Disease Monograph Tagging (+15 pts)
+    if (c.specialty && c.disease) {
+      score += 15;
+    } else {
+      reasons.push("Specialty/disease mapping is incomplete");
+    }
+
+    // 3. Subjective patient profile (+15 pts)
+    let subjCount = 0;
+    if (c.demographics) subjCount++;
+    if (c.chiefComplaint || c.scenario) subjCount++;
+    if (c.hpi) subjCount++;
+    if (c.pmh) subjCount++;
+    score += subjCount * 3.75;
+    if (subjCount < 4) {
+      reasons.push(`Incomplete patient subjective profile (${subjCount}/4 fields filled)`);
+    }
+
+    // 4. Diagnostic & Investigation Completeness (+15 pts)
+    let clinCount = 0;
+    if (c.pe) clinCount++;
+    if (c.vitals) clinCount++;
+    if (c.labs) clinCount++;
+    score += clinCount * 5;
+    if (clinCount < 3) {
+      reasons.push(`Missing clinical diagnostic data (${clinCount}/3 objective fields filled)`);
+    }
+
+    // 5. Therapeutic management details (+15 pts)
+    let mgmtCount = 0;
+    if (c.goals) mgmtCount++;
+    if (c.pharm) mgmtCount++;
+    if (c.nonPharm) mgmtCount++;
+    if (c.carePlan) mgmtCount++;
+    score += mgmtCount * 3.75;
+    if (mgmtCount < 4) {
+      reasons.push(`Incomplete therapeutic intervention plan (${mgmtCount}/4 management fields filled)`);
+    }
+
+    // 6. Educational variables & pearls (+15 pts)
+    let eduCount = 0;
+    if (c.dtps || c.learningPoints) eduCount++;
+    if (c.monitoring) eduCount++;
+    if (c.counselling) eduCount++;
+    if (c.pearls) eduCount++;
+    score += eduCount * 3.75;
+    if (eduCount < 4) {
+      reasons.push(`Missing curricular assessment variables (${eduCount}/4 pedagogical fields filled)`);
+    }
+
+    // 7. Academic clinical references (+10 pts)
+    if (c.references && c.references.length > 0) {
+      score += 10;
+    } else {
+      reasons.push("No evidence-based medical references mapped");
+    }
+
+    return { score: Math.round(score), reasons };
+  };
+
+  const handleGenerateCurriculumCases = async (unitNumber: number) => {
+    setIsGeneratingCurriculum(true);
+    setGenerationProgress(`Scanning database for Unit ${unitNumber} existing cases...`);
+    try {
+      const unitName = unitNumber === 3 ? "Cardiovascular Pharmacotherapy" : "Respiratory Pharmacotherapy";
+
+      // 1. Target curriculum definitions
+      const targetDiseases = unitNumber === 3 
+        ? ["Hypertension", "Heart Failure", "Stable Angina", "Arrhythmias", "Thromboembolism", "Dyslipidemia", "Myocardial Infarction"]
+        : ["Asthma", "COPD", "Tuberculosis", "Pneumonia", "Allergic Rhinitis", "Pulmonary Embolism"];
+      const targetSettings = ["Outpatient Clinic", "Emergency Department", "Inpatient Ward", "Community Pharmacy"];
+      const targetAgeCohorts = unitNumber === 4 ? ["Paediatric", "Adult", "Geriatric"] : ["Adult", "Geriatric"];
+      const targetPresentationTypes = ["Acute", "Chronic"];
+
+      // 2. Fetch matches from current state
+      const matches = getCasesForUnit(unitNumber);
+      const existingCount = matches.length;
+
+      // 3. Intelligent duplicate detection and quality triage
+      // We will identify duplicates and flag cases with quality score < 75
+      const uniqueCasesMap = new Map<string, ClinicalCase>();
+      const duplicateCasesToResolve: ClinicalCase[] = [];
+      const flaggedCasesList: { id: string; title: string; score: number; reason: string }[] = [];
+
+      matches.forEach(c => {
+        // Calculate quality score
+        const { score, reasons } = calculateQualityScore(c);
+        if (score < 75) {
+          flaggedCasesList.push({
+            id: c.id,
+            title: c.title,
+            score,
+            reason: reasons.slice(0, 2).join(", ") || "Incomplete clinical details"
+          });
+        }
+
+        // Check if there's already a duplicate of this case in our uniqueCasesMap
+        let isDup = false;
+        for (const [key, uniqueCase] of uniqueCasesMap.entries()) {
+          if (areCasesDuplicate(c, uniqueCase)) {
+            isDup = true;
+            // Retain the higher quality case of the duplicates
+            const currentScore = calculateQualityScore(uniqueCase).score;
+            if (score > currentScore) {
+              // Swap: current becomes duplicate to resolve, this one is retained
+              duplicateCasesToResolve.push(uniqueCase);
+              uniqueCasesMap.delete(key);
+              uniqueCasesMap.set(c.id, c);
+            } else {
+              duplicateCasesToResolve.push(c);
+            }
+            break;
+          }
+        }
+
+        if (!isDup) {
+          uniqueCasesMap.set(c.id, c);
+        }
+      });
+
+      const retainedCases = Array.from(uniqueCasesMap.values());
+      const duplicateCount = duplicateCasesToResolve.length;
+      const retainedCount = retainedCases.length;
+
+      setGenerationProgress(`Auditing current coverage... Found ${retainedCount} unique retained cases. ${duplicateCount} duplicates identified.`);
+
+      // 4. Perform Curriculum Coverage Scan & Gap Analysis on retained unique cases
+      const diseasesCovered = new Set<string>();
+      const dtpsCovered = new Set<string>();
+      const drugClassesSet = new Set<string>();
+      const settingsMap: Record<string, number> = {
+        "Outpatient Clinic": 0,
+        "Emergency Department": 0,
+        "Inpatient Ward": 0,
+        "Community Pharmacy": 0,
+        "Other Setting": 0
+      };
+
+      const difficultyDistribution = { Beginner: 0, Intermediate: 0, Advanced: 0 };
+      const ageCohorts = { Paediatric: 0, Adult: 0, Geriatric: 0 };
+      const presentationTypes = { Acute: 0, Chronic: 0 };
+      const routineVsEmergency = { Routine: 0, Emergency: 0 };
+
+      const analyzeCase = (c: any) => {
+        const dis = c.disease || 'General';
+        diseasesCovered.add(dis);
+
+        if (c.pearls) dtpsCovered.add(c.pearls);
+        if (c.dtps) dtpsCovered.add(c.dtps);
+        if (c.learningPoints) dtpsCovered.add(c.learningPoints);
+
+        // Drug class extraction
+        const pharmText = (c.pharm || '') + ' ' + (c.carePlan || '');
+        const drugKeywords = [
+          { name: "Beta-blockers", regex: /beta-blocker|carvedilol|metoprolol|atenolol|bisoprolol/i },
+          { name: "ACE Inhibitors", regex: /ace inhibitor|enalapril|lisinopril|ramipril/i },
+          { name: "ARBs", regex: /arb|losartan|valsartan|candesartan|irbesartan/i },
+          { name: "CCBs", regex: /ccb|calcium channel|amlodipine|nifedipine|diltiazem|verapamil/i },
+          { name: "Loop Diuretics", regex: /loop diuretic|furosemide|bumetanide|torsemide/i },
+          { name: "Thiazides", regex: /thiazide|hydrochlorothiazide|chlorthalidone|indapamide/i },
+          { name: "SGLT2 Inhibitors", regex: /sglt2|empagliflozin|dapagliflozin/i },
+          { name: "Statins", regex: /statin|atorvastatin|rosuvastatin|simvastatin/i },
+          { name: "Anticoagulants", regex: /anticoagulant|heparin|warfarin|rivaroxaban|apixaban|dabigatran/i },
+          { name: "SABAs / SAMAs", regex: /saba|sama|salbutamol|albuterol|ipratropium/i },
+          { name: "LABAs / LAMAs", regex: /laba|lama|salmeterol|formoterol|tiotropium|glycopyrronium/i },
+          { name: "Inhaled Corticosteroids", regex: /ics|inhaled corticosteroid|fluticasone|budesonide|beclomethasone/i },
+          { name: "Antibiotics / Antifungals", regex: /antibiotic|amoxicillin|ceftriaxone|levofloxacin|azithromycin|piperacillin/i },
+        ];
+        drugKeywords.forEach(k => {
+          if (k.regex.test(pharmText)) {
+            drugClassesSet.add(k.name);
+          }
+        });
+
+        const settingText = (c.facilitySetting || '').toLowerCase();
+        if (settingText.includes('clinic') || settingText.includes('outpatient') || settingText.includes('ambulatory')) {
+          settingsMap["Outpatient Clinic"]++;
+        } else if (settingText.includes('emergency') || settingText.includes('ed') || settingText.includes('casualty') || settingText.includes('er')) {
+          settingsMap["Emergency Department"]++;
+        } else if (settingText.includes('inpatient') || settingText.includes('ward') || settingText.includes('referral hospital') || settingText.includes('hospit') || settingText.includes('icu') || settingText.includes('critical')) {
+          settingsMap["Inpatient Ward"]++;
+        } else if (settingText.includes('pharmacy') || settingText.includes('chemist') || settingText.includes('retail')) {
+          settingsMap["Community Pharmacy"]++;
+        } else {
+          settingsMap["Other Setting"]++;
+        }
+
+        if (c.difficulty === 'Beginner') difficultyDistribution.Beginner++;
+        else if (c.difficulty === 'Advanced') difficultyDistribution.Advanced++;
+        else difficultyDistribution.Intermediate++;
+
+        const demo = (c.demographics || '').toLowerCase();
+        if (demo.includes('paediatric') || demo.includes('child') || demo.includes('infant') || demo.includes('boy') || demo.includes('girl') || demo.includes('year-old boy') || demo.includes('year-old girl') || /months?-old/i.test(demo)) {
+          ageCohorts.Paediatric++;
+        } else if (demo.includes('geriatric') || demo.includes('elderly') || demo.includes('65-year-old') || demo.includes('70-year-old') || demo.includes('72-year-old') || demo.includes('75-year-old') || demo.includes('80-year-old') || demo.includes('82-year-old') || demo.includes('85-year-old') || demo.includes('90-year-old')) {
+          ageCohorts.Geriatric++;
+        } else {
+          ageCohorts.Adult++;
+        }
+
+        const scenarioText = (c.chiefComplaint || c.scenario || '').toLowerCase() + ' ' + (c.hpi || '').toLowerCase();
+        if (scenarioText.includes('acute') || scenarioText.includes('exacerbation') || scenarioText.includes('crisis') || scenarioText.includes('unstable') || scenarioText.includes('myocardial infarction') || scenarioText.includes('attack') || scenarioText.includes('stroke') || scenarioText.includes('arrest')) {
+          presentationTypes.Acute++;
+        } else {
+          presentationTypes.Chronic++;
+        }
+
+        if (settingText.includes('emergency') || settingText.includes('ed') || settingText.includes('icu') || scenarioText.includes('emergency') || scenarioText.includes('icu') || scenarioText.includes('arrest') || scenarioText.includes('infarction')) {
+          routineVsEmergency.Emergency++;
+        } else {
+          routineVsEmergency.Routine++;
+        }
+      };
+
+      retainedCases.forEach(analyzeCase);
+
+      // Identify Gaps
+      const missingDiseases = targetDiseases.filter(d => !Array.from(diseasesCovered).some(dc => dc.toLowerCase().includes(d.toLowerCase())));
+      const missingSettings = targetSettings.filter(s => {
+        if (s === "Outpatient Clinic" && settingsMap["Outpatient Clinic"] === 0) return true;
+        if (s === "Emergency Department" && settingsMap["Emergency Department"] === 0) return true;
+        if (s === "Inpatient Ward" && settingsMap["Inpatient Ward"] === 0) return true;
+        if (s === "Community Pharmacy" && settingsMap["Community Pharmacy"] === 0) return true;
+        return false;
+      });
+
+      // Target counts check
+      const targetMin = 50;
+      const gap = Math.max(0, targetMin - retainedCount);
+
+      setGenerationProgress(`Gap Analysis: Retained ${retainedCount} valid. Missing ${missingDiseases.length} diseases. Gap to fill: ${gap} cases.`);
+
+      // 5. Intelligent Gap-Filling Case Selection
+      const candidates = getCurriculumCasesForUnit(unitNumber);
+      
+      // Filter out candidates that are duplicates of our retained cases
+      const uniqueCandidates = candidates.filter(cand => {
+        return !retainedCases.some(ret => areCasesDuplicate(cand, ret));
+      });
+
+      // Rank remaining candidates based on how well they fill our specific curriculum gaps
+      const rankedCandidates = uniqueCandidates.map(cand => {
+        let gapScore = 0;
+        
+        // Match missing disease
+        const candDis = cand.disease || '';
+        const isMissingDis = missingDiseases.some(md => candDis.toLowerCase().includes(md.toLowerCase()));
+        if (isMissingDis) gapScore += 10;
+
+        // Match missing setting
+        const settingLower = (cand.facilitySetting || '').toLowerCase();
+        const candSettingCat = settingLower.includes('clinic') || settingLower.includes('outpatient') ? "Outpatient Clinic"
+          : settingLower.includes('emergency') || settingLower.includes('ed') ? "Emergency Department"
+          : settingLower.includes('inpatient') || settingLower.includes('ward') ? "Inpatient Ward"
+          : settingLower.includes('pharmacy') ? "Community Pharmacy" : "Other Setting";
+        if (missingSettings.includes(candSettingCat)) gapScore += 5;
+
+        // Match missing age cohort
+        const ageLower = (cand.demographics || '').toLowerCase();
+        const candAgeCat = ageLower.includes('paediatric') || ageLower.includes('child') || ageLower.includes('infant') ? "Paediatric"
+          : ageLower.includes('geriatric') || ageLower.includes('elderly') ? "Geriatric" : "Adult";
+        if (unitNumber === 4 && candAgeCat === "Paediatric" && ageCohorts.Paediatric === 0) gapScore += 5;
+        if (candAgeCat === "Geriatric" && ageCohorts.Geriatric === 0) gapScore += 5;
+
+        return { cand, gapScore };
+      }).sort((a, b) => b.gapScore - a.gapScore);
+
+      // Select exactly the top scoring candidates to fill our gap to 50
+      const casesToCreate = rankedCandidates.slice(0, gap).map(x => x.cand);
+
+      // Analyze newly created cases too so the final report is accurate
+      casesToCreate.forEach(analyzeCase);
+
+      const batch = writeBatch(db);
+
+      // Create missing gap-filling cases in Firestore
+      casesToCreate.forEach(c => {
+        const docRef = doc(db, 'clinical_cases', c.id);
+        batch.set(docRef, {
+          title: c.title,
+          specialty: c.specialty,
+          disease: c.disease,
+          difficulty: c.difficulty,
+          patientName: c.patientName,
+          facilitySetting: c.facilitySetting,
+          demographics: c.demographics,
+          chiefComplaint: c.chiefComplaint,
+          hpi: c.hpi,
+          pmh: c.pmh,
+          medHx: c.medHx,
+          allergies: c.allergies,
+          pe: c.pe,
+          vitals: c.vitals,
+          labs: c.labs,
+          imaging: c.imaging || '',
+          diagnosis: c.diagnosis,
+          ddx: c.ddx || [],
+          goals: c.goals,
+          pharm: c.pharm,
+          nonPharm: c.nonPharm,
+          carePlan: c.carePlan,
+          dtps: c.dtps,
+          monitoring: c.monitoring,
+          counselling: c.counselling,
+          followUp: c.followUp,
+          pearls: c.pearls,
+          references: c.references || [],
+          createdAt: new Date().toISOString(),
+          status: 'published',
+          createdBy: 'system',
+          createdByName: 'Clinova Compliance Generator'
+        });
+      });
+
+      // Resolve duplicates by deleting duplicate documents in Firestore
+      duplicateCasesToResolve.forEach(dup => {
+        if (!dup.id.startsWith('case-')) {
+          const docRef = doc(db, 'clinical_cases', dup.id);
+          batch.delete(docRef);
+        }
+      });
+
+      if (casesToCreate.length > 0 || duplicateCasesToResolve.length > 0) {
+        setGenerationProgress(`Writing ${casesToCreate.length} gap-filling cases and resolving ${duplicateCasesToResolve.length} duplicate scenarios in Firestore...`);
+        await batch.commit();
+      }
+
+      // Compute final coverage percentages
+      const diseasesPercent = (targetDiseases.length - missingDiseases.filter(d => !casesToCreate.some(cc => (cc.disease || '').toLowerCase().includes(d.toLowerCase()))).length) / targetDiseases.length;
+      const finalMissingDiseases = missingDiseases.filter(d => !casesToCreate.some(cc => (cc.disease || '').toLowerCase().includes(d.toLowerCase())));
+      const finalMissingSettings = missingSettings.filter(s => {
+        if (s === "Outpatient Clinic" && settingsMap["Outpatient Clinic"] === 0) return true;
+        if (s === "Emergency Department" && settingsMap["Emergency Department"] === 0) return true;
+        if (s === "Inpatient Ward" && settingsMap["Inpatient Ward"] === 0) return true;
+        if (s === "Community Pharmacy" && settingsMap["Community Pharmacy"] === 0) return true;
+        return false;
+      });
+
+      const finalCasesList = [...retainedCases, ...casesToCreate];
+      const finalTotal = finalCasesList.length;
+
+      let finalAgeCohortsCount = 0;
+      if (ageCohorts.Adult > 0) finalAgeCohortsCount++;
+      if (ageCohorts.Geriatric > 0) finalAgeCohortsCount++;
+      if (unitNumber === 4 && ageCohorts.Paediatric > 0) finalAgeCohortsCount++;
+      const totalExpectedCohorts = unitNumber === 4 ? 3 : 2;
+      const ageCohortPercent = finalAgeCohortsCount / totalExpectedCohorts;
+
+      const curriculumCoveragePercent = Math.round(((diseasesPercent * 0.5) + ((targetSettings.length - finalMissingSettings.length) / targetSettings.length * 0.3) + (ageCohortPercent * 0.2)) * 100);
+      const dbCompletionPercent = Math.round(Math.min(100, (finalTotal / 50) * 100));
+
+      const report = {
+        unitNumber,
+        unitName,
+        existingCount,
+        duplicateCount,
+        resolvedCount: duplicateCount,
+        newCreatedCount: casesToCreate.length,
+        totalCount: finalTotal,
+        retainedCount,
+        needsReviewCount: flaggedCasesList.length,
+        flaggedCasesList,
+        diseasesCovered: Array.from(diseasesCovered),
+        missingDiseases: finalMissingDiseases,
+        dtpsCovered: Array.from(dtpsCovered).slice(0, 15),
+        drugClasses: Array.from(drugClassesSet),
+        settings: settingsMap,
+        missingSettings: finalMissingSettings,
+        difficultyDistribution,
+        ageCohorts,
+        presentationTypes,
+        routineVsEmergency,
+        curriculumCoveragePercent,
+        dbCompletionPercent
+      };
+
+      setValidationReports(prev => ({
+        ...prev,
+        [unitNumber]: report
+      }));
+
+      setAuditLogs(prev => [
+        ...prev, 
+        `[SUCCESS] ${new Date().toLocaleTimeString()} - Unit ${unitNumber} intelligent compliance run completed. Scanned ${existingCount} cases. Preserved ${retainedCount} unique scenarios. Resolved ${duplicateCount} duplicates. Created ${casesToCreate.length} gap-closing cases. Curricular Coverage is ${curriculumCoveragePercent}%.`
+      ]);
+
+      setGenerationProgress(`Unit ${unitNumber} compliance completed!`);
+      await fetchCasesFromFirestore();
+    } catch (err) {
+      console.error(err);
+      setAuditLogs(prev => [...prev, `[ERROR] ${new Date().toLocaleTimeString()} - Compliance generation failed: ${err instanceof Error ? err.message : String(err)}`]);
+      alert("Error generating cases: " + (err instanceof Error ? err.message : String(err)));
+    } finally {
+      setIsGeneratingCurriculum(false);
+      setGenerationProgress('');
+    }
+  };
+
   // Case Study Form fields
   const [caseTitle, setCaseTitle] = useState('');
   const [caseTopic, setCaseTopic] = useState('Pharmacology');
@@ -177,14 +686,41 @@ export default function AdminDashboardScreen() {
         caseList.push({
           id: docSnap.id,
           title: data.title || 'Untitled Case',
-          topic: data.topic || 'General Medicine',
+          topic: data.specialty || data.topic || 'General Medicine',
           difficulty: data.difficulty || 'Intermediate',
-          scenario: data.scenario || '',
-          learningPoints: data.learningPoints || '',
+          scenario: data.chiefComplaint || data.scenario || '',
+          learningPoints: data.dtps || data.learningPoints || '',
           createdAt: data.createdAt,
           status: data.status || 'published',
           createdBy: data.createdBy || 'system',
-          createdByName: data.createdByName || 'Clinical Educator'
+          createdByName: data.createdByName || 'Clinical Educator',
+          // Rich optional properties for curriculum cases compatibility
+          specialty: data.specialty || data.topic || '',
+          disease: data.disease || '',
+          patientName: data.patientName || '',
+          facilitySetting: data.facilitySetting || '',
+          demographics: data.demographics || '',
+          chiefComplaint: data.chiefComplaint || '',
+          hpi: data.hpi || '',
+          pmh: data.pmh || '',
+          medHx: data.medHx || '',
+          allergies: data.allergies || '',
+          pe: data.pe || '',
+          vitals: data.vitals || '',
+          labs: data.labs || '',
+          imaging: data.imaging || '',
+          diagnosis: data.diagnosis || '',
+          ddx: data.ddx || [],
+          goals: data.goals || '',
+          pharm: data.pharm || '',
+          nonPharm: data.nonPharm || '',
+          carePlan: data.carePlan || '',
+          dtps: data.dtps || '',
+          monitoring: data.monitoring || '',
+          counselling: data.counselling || '',
+          followUp: data.followUp || '',
+          pearls: data.pearls || '',
+          references: data.references || []
         });
       });
       setCases(caseList);
@@ -1254,6 +1790,419 @@ export default function AdminDashboardScreen() {
       {/* ======================= TAB: CASES ======================= */}
       {activeTab === 'cases' && (
         <div className="space-y-6 animate-fade-in" id="panel-cases">
+          {/* CURRICULUM COMPLIANCE ENGINE (50-CASE MANDATE) */}
+          <div className="bg-[var(--surface)] p-6 rounded-2xl border border-[var(--border)] shadow-xs space-y-4" id="curriculum-compliance-panel">
+            <div className="flex items-center justify-between border-b border-[var(--border)] pb-3">
+              <div>
+                <h3 className="font-bold text-sm text-[var(--text)] flex items-center gap-2">
+                  <Cpu size={18} className="text-[var(--primary)]" />
+                  Clinova Curriculum Compliance Engine
+                </h3>
+                <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                  Verify and enforce the national pharmacy mandate of <strong>50 clinical cases</strong> per therapeutic module.
+                </p>
+              </div>
+              <span className="text-[10px] bg-emerald-500/10 text-emerald-500 px-2.5 py-1 rounded-full font-bold uppercase tracking-wider animate-pulse">
+                Active Guardian
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Card 1: Cardiovascular */}
+              <div className="bg-[var(--bg)] border border-[var(--border)]/75 p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div className="flex justify-between items-start mb-2">
+                    <span className="text-xs font-bold text-[var(--text)]">Unit 3: Cardiovascular Pharmacotherapy</span>
+                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                      getCasesForUnit(3).length >= 50
+                        ? 'bg-emerald-500/10 text-emerald-500'
+                        : 'bg-amber-500/10 text-amber-500'
+                    }`}>
+                      {getCasesForUnit(3).length}/50 Cases
+                    </span>
+                  </div>
+                  <p className="text-xs text-[var(--text-muted)] leading-relaxed">
+                    Organized around hypertension, heart failure, stable angina, arrhythmias, and thromboembolism.
+                  </p>
+                  
+                  {/* Progress Bar */}
+                  <div className="w-full bg-[var(--surface-dim)] h-1.5 rounded-full mt-3 overflow-hidden">
+                    <div 
+                      className={`h-full rounded-full transition-all duration-500 ${
+                        getCasesForUnit(3).length >= 50
+                          ? 'bg-emerald-500'
+                          : 'bg-amber-500'
+                      }`}
+                      style={{ width: `${Math.min(100, (getCasesForUnit(3).length / 50) * 100)}%` }}
+                    />
+                  </div>
+                </div>
+
+                <div className="mt-4 flex gap-2">
+                  <button
+                    disabled={isGeneratingCurriculum}
+                    onClick={() => handleGenerateCurriculumCases(3)}
+                    className="w-full py-1.5 px-3 bg-[var(--primary)] text-white text-[11px] font-semibold rounded-lg hover:opacity-90 disabled:opacity-50 transition-opacity flex items-center justify-center gap-1.5 cursor-pointer"
+                  >
+                    {isGeneratingCurriculum ? <Loader2 size={12} className="animate-spin" /> : <RefreshCw size={12} />}
+                    Trigger Generation Engine
+                  </button>
+                </div>
+              </div>
+
+              {/* Card 2: Respiratory */}
+              <div className="bg-[var(--bg)] border border-[var(--border)]/75 p-4 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div className="flex justify-between items-start mb-2">
+                    <span className="text-xs font-bold text-[var(--text)]">Unit 4: Respiratory Pharmacotherapy</span>
+                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                      getCasesForUnit(4).length >= 50
+                        ? 'bg-emerald-500/10 text-emerald-500'
+                        : 'bg-amber-500/10 text-amber-500'
+                    }`}>
+                      {getCasesForUnit(4).length}/50 Cases
+                    </span>
+                  </div>
+                  <p className="text-xs text-[var(--text-muted)] leading-relaxed">
+                    Organized around asthma management, COPD staging, tuberculosis, pneumonia, and allergic rhinitis.
+                  </p>
+
+                  {/* Progress Bar */}
+                  <div className="w-full bg-[var(--surface-dim)] h-1.5 rounded-full mt-3 overflow-hidden">
+                    <div 
+                      className={`h-full rounded-full transition-all duration-500 ${
+                        getCasesForUnit(4).length >= 50
+                          ? 'bg-emerald-500'
+                          : 'bg-amber-500'
+                      }`}
+                      style={{ width: `${Math.min(100, (getCasesForUnit(4).length / 50) * 100)}%` }}
+                    />
+                  </div>
+                </div>
+
+                <div className="mt-4 flex gap-2">
+                  <button
+                    disabled={isGeneratingCurriculum}
+                    onClick={() => handleGenerateCurriculumCases(4)}
+                    className="w-full py-1.5 px-3 bg-[var(--primary)] text-white text-[11px] font-semibold rounded-lg hover:opacity-90 disabled:opacity-50 transition-opacity flex items-center justify-center gap-1.5 cursor-pointer"
+                  >
+                    {isGeneratingCurriculum ? <Loader2 size={12} className="animate-spin" /> : <RefreshCw size={12} />}
+                    Trigger Generation Engine
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {isGeneratingCurriculum && generationProgress && (
+              <div className="bg-[var(--primary)]/5 border border-[var(--primary)]/20 p-3 rounded-xl flex items-center gap-2 text-xs text-[var(--primary)] animate-pulse">
+                <Loader2 size={14} className="animate-spin" />
+                <span>{generationProgress}</span>
+              </div>
+            )}
+
+            {/* CURRICULUM VALIDATION & COMPLIANCE REPORT */}
+            {Object.keys(validationReports).length > 0 && (
+              <div className="mt-6 border-t border-[var(--border)] pt-6 space-y-6 animate-fade-in" id="compliance-validation-reports">
+                {/* Section Header */}
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                  <div className="flex items-center gap-2 text-sm font-bold text-[var(--text)] uppercase tracking-wider">
+                    <CheckCircle size={16} className="text-emerald-500 animate-pulse" />
+                    Clinova Medical Knowledge Engine: Intelligent Curriculum & Gap-Analysis Audits
+                  </div>
+                  <div className="text-xs text-[var(--text-muted)] bg-[var(--surface-dim)] px-3 py-1.5 rounded-lg border border-[var(--border)] font-medium">
+                    Overall Database Status: <span className="font-bold text-emerald-500">
+                      {Object.values(validationReports).reduce((acc, curr) => acc + curr.totalCount, 0)} Validated Cases
+                    </span>
+                  </div>
+                </div>
+
+                {/* Overall DB Completion Tracker */}
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 bg-[var(--surface-dim)] p-4 rounded-xl border border-[var(--border)] shadow-xs">
+                  <div className="space-y-1">
+                    <div className="text-[10px] text-[var(--text-muted)] font-bold uppercase tracking-wider flex items-center gap-1">
+                      <Database size={10} className="text-[var(--primary)]" />
+                      Global Database Count
+                    </div>
+                    <div className="text-xl font-black text-[var(--text)] flex items-baseline gap-1.5">
+                      {Object.values(validationReports).reduce((acc, curr) => acc + curr.totalCount, 0)}
+                      <span className="text-[11px] text-[var(--text-muted)] font-normal">/ 100 Target Min</span>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-1">
+                    <div className="text-[10px] text-[var(--text-muted)] font-bold uppercase tracking-wider flex items-center gap-1">
+                      <TrendingUp size={10} className="text-emerald-500" />
+                      Curriculum Gaps Filled
+                    </div>
+                    <div className="text-xl font-black text-emerald-500">
+                      +{Object.values(validationReports).reduce((acc, curr) => acc + curr.newCreatedCount, 0)}
+                      <span className="text-[10px] text-[var(--text-muted)] font-normal ml-1">scenarios created</span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-1">
+                    <div className="text-[10px] text-[var(--text-muted)] font-bold uppercase tracking-wider flex items-center gap-1">
+                      <Shield size={10} className="text-amber-500" />
+                      Duplicate Scenarios Merged
+                    </div>
+                    <div className="text-xl font-black text-amber-500">
+                      {Object.values(validationReports).reduce((acc, curr) => acc + curr.duplicateCount, 0)}
+                      <span className="text-[10px] text-[var(--text-muted)] font-normal ml-1">duplicates resolved</span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-1">
+                    <div className="text-[10px] text-[var(--text-muted)] font-bold uppercase tracking-wider flex items-center gap-1">
+                      <AlertCircle size={10} className="text-rose-500" />
+                      Flagged Clinical Reviews
+                    </div>
+                    <div className="text-xl font-black text-rose-500">
+                      {Object.values(validationReports).reduce((acc, curr) => acc + curr.needsReviewCount, 0)}
+                      <span className="text-[10px] text-[var(--text-muted)] font-normal ml-1">scenarios marked</span>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Detailed Bento Cards for Units */}
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+                  {Object.entries(validationReports).map(([unit, r]) => (
+                    <div key={unit} className="bg-[var(--surface)] border border-[var(--border)] p-5 rounded-2xl space-y-4 relative overflow-hidden shadow-xs">
+                      {/* Top Compliance Bar */}
+                      <div className="absolute top-0 right-0 left-0 h-[4px] bg-emerald-500" />
+                      
+                      {/* Card Header */}
+                      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 pb-2 border-b border-[var(--border)]/65">
+                        <div>
+                          <span className="text-[9px] bg-[var(--primary)]/10 text-[var(--primary)] px-2 py-0.5 rounded font-bold uppercase tracking-wider">
+                            Integrated Clinical Unit {unit}
+                          </span>
+                          <h4 className="font-extrabold text-sm text-[var(--text)] mt-1">{r.unitName}</h4>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span className="text-[10px] text-emerald-500 font-bold bg-emerald-500/10 px-2 py-1 rounded-md flex items-center gap-1">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                            {r.curriculumCoveragePercent}% Curricular Coverage
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Coverage Progress Gauges */}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div className="space-y-1">
+                          <div className="flex justify-between text-[11px] font-bold text-[var(--text-muted)]">
+                            <span>Unit Case Target (50 min)</span>
+                            <span>{r.dbCompletionPercent}% Completed</span>
+                          </div>
+                          <div className="w-full bg-[var(--border)]/40 h-2.5 rounded-full overflow-hidden">
+                            <div 
+                              className="bg-emerald-500 h-full rounded-full transition-all duration-500" 
+                              style={{ width: `${r.dbCompletionPercent}%` }}
+                            />
+                          </div>
+                          <span className="text-[9px] text-[var(--text-muted)] mt-1 block">
+                            {r.totalCount} active clinical cases registered in system.
+                          </span>
+                        </div>
+
+                        <div className="space-y-1">
+                          <div className="flex justify-between text-[11px] font-bold text-[var(--text-muted)]">
+                            <span>Curricular Balance Index</span>
+                            <span>{r.curriculumCoveragePercent}% Balanced</span>
+                          </div>
+                          <div className="w-full bg-[var(--border)]/40 h-2.5 rounded-full overflow-hidden">
+                            <div 
+                              className="bg-[var(--primary)] h-full rounded-full transition-all duration-500" 
+                              style={{ width: `${r.curriculumCoveragePercent}%` }}
+                            />
+                          </div>
+                          <span className="text-[9px] text-[var(--text-muted)] mt-1 block">
+                            Validates age cohorts, diseases, settings and acuity ratios.
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Numeric Core Metrics Bento Grid */}
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                        <div className="bg-[var(--bg)] border border-[var(--border)] p-2.5 rounded-xl text-center">
+                          <div className="text-[9px] text-[var(--text-muted)] font-bold uppercase tracking-wider">Scanned</div>
+                          <div className="text-base font-black text-[var(--text)] mt-0.5">{r.existingCount}</div>
+                        </div>
+                        <div className="bg-[var(--bg)] border border-[var(--border)] p-2.5 rounded-xl text-center">
+                          <div className="text-[9px] text-[var(--text-muted)] font-bold uppercase tracking-wider">Merged (Dups)</div>
+                          <div className="text-base font-black text-amber-500 mt-0.5">-{r.duplicateCount}</div>
+                        </div>
+                        <div className="bg-[var(--bg)] border border-[var(--border)] p-2.5 rounded-xl text-center">
+                          <div className="text-[9px] text-[var(--text-muted)] font-bold uppercase tracking-wider">Gap Created</div>
+                          <div className="text-base font-black text-[var(--primary)] mt-0.5">+{r.newCreatedCount}</div>
+                        </div>
+                        <div className="bg-[var(--bg)] border border-[var(--border)] p-2.5 rounded-xl text-center">
+                          <div className="text-[9px] text-[var(--text-muted)] font-bold uppercase tracking-wider">Total Preserved</div>
+                          <div className="text-base font-black text-emerald-500 mt-0.5">{r.totalCount}</div>
+                        </div>
+                      </div>
+
+                      {/* Disease Coverage Audits & Gap Analysis */}
+                      <div className="space-y-2 bg-[var(--surface-dim)] p-3 rounded-xl border border-[var(--border)]/40">
+                        <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider flex justify-between items-center">
+                          <span>Diseases Fully Mapped ({r.diseasesCovered.length}):</span>
+                          <span className="text-[9px] text-emerald-500 font-bold bg-emerald-500/10 px-1.5 py-0.5 rounded">Compliance Verified</span>
+                        </div>
+                        <div className="flex flex-wrap gap-1">
+                          {r.diseasesCovered.map((d, idx) => (
+                            <span key={idx} className="text-[9px] bg-[var(--surface)] border border-[var(--border)] px-2 py-0.5 rounded text-[var(--text)] font-semibold shadow-2xs">
+                              {d}
+                            </span>
+                          ))}
+                        </div>
+
+                        {/* Gap Identification */}
+                        {r.missingDiseases.length > 0 && (
+                          <div className="mt-2 pt-2 border-t border-[var(--border)]/40">
+                            <div className="text-[10px] font-bold text-rose-500 uppercase tracking-wider">
+                              Unrepresented Disease Monographs (Gaps):
+                            </div>
+                            <div className="flex flex-wrap gap-1 mt-1">
+                              {r.missingDiseases.map((d, idx) => (
+                                <span key={idx} className="text-[9px] bg-rose-500/10 border border-rose-500/20 px-2 py-0.5 rounded text-rose-500 font-bold flex items-center gap-1 animate-pulse">
+                                  <X size={10} />
+                                  {d}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Drug Classes Represented */}
+                      <div className="space-y-1.5">
+                        <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider">
+                          Drug Classes Represented ({r.drugClasses.length}):
+                        </div>
+                        <div className="flex flex-wrap gap-1">
+                          {r.drugClasses.slice(0, 8).map((dc, idx) => (
+                            <span key={idx} className="text-[9px] bg-[var(--surface)] border border-[var(--border)] px-2 py-0.5 rounded text-[var(--text-muted)] font-medium">
+                              {dc}
+                            </span>
+                          ))}
+                          {r.drugClasses.length > 8 && (
+                            <span className="text-[9px] text-[var(--primary)] font-bold">
+                              + {r.drugClasses.length - 8} more classes
+                            </span>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Clinical Settings & Acuity Balance Indicators */}
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 border-t border-[var(--border)]/45">
+                        {/* Clinical settings counts */}
+                        <div className="space-y-1">
+                          <div className="text-[9px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Clinical Settings</div>
+                          <ul className="text-[10px] space-y-0.5 text-[var(--text-muted)]">
+                            <li className="flex justify-between">
+                              <span>Clinic:</span> <span className="font-bold text-[var(--text)]">{r.settings["Outpatient Clinic"] || 0}</span>
+                            </li>
+                            <li className="flex justify-between">
+                              <span>Inpatient:</span> <span className="font-bold text-[var(--text)]">{r.settings["Inpatient Ward"] || 0}</span>
+                            </li>
+                            <li className="flex justify-between">
+                              <span>ER / ICU:</span> <span className="font-bold text-[var(--text)]">{r.settings["Emergency Department"] || 0}</span>
+                            </li>
+                            <li className="flex justify-between">
+                              <span>Pharmacy:</span> <span className="font-bold text-[var(--text)]">{r.settings["Community Pharmacy"] || 0}</span>
+                            </li>
+                          </ul>
+                        </div>
+
+                        {/* Demographics */}
+                        <div className="space-y-1">
+                          <div className="text-[9px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Age Representation</div>
+                          <ul className="text-[10px] space-y-0.5 text-[var(--text-muted)]">
+                            <li className="flex justify-between">
+                              <span>Paediatric:</span> <span className="font-bold text-[var(--text)]">{r.ageCohorts.Paediatric || 0}</span>
+                            </li>
+                            <li className="flex justify-between">
+                              <span>Adult:</span> <span className="font-bold text-[var(--text)]">{r.ageCohorts.Adult || 0}</span>
+                            </li>
+                            <li className="flex justify-between">
+                              <span>Geriatric:</span> <span className="font-bold text-[var(--text)]">{r.ageCohorts.Geriatric || 0}</span>
+                            </li>
+                          </ul>
+                        </div>
+
+                        {/* Presentation Acuity */}
+                        <div className="space-y-1">
+                          <div className="text-[9px] font-bold text-[var(--text-muted)] uppercase tracking-wider">Acuity & Routine</div>
+                          <ul className="text-[10px] space-y-0.5 text-[var(--text-muted)]">
+                            <li className="flex justify-between">
+                              <span>Acute:</span> <span className="font-bold text-[var(--text)]">{r.presentationTypes.Acute || 0}</span>
+                            </li>
+                            <li className="flex justify-between">
+                              <span>Chronic:</span> <span className="font-bold text-[var(--text)]">{r.presentationTypes.Chronic || 0}</span>
+                            </li>
+                            <li className="flex justify-between">
+                              <span>Emergency:</span> <span className="font-bold text-[var(--text)]">{r.routineVsEmergency.Emergency || 0}</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      {/* Quality Score Reviews & Flagged Cases Section */}
+                      <div className="space-y-1.5 pt-3 border-t border-[var(--border)]/45">
+                        <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider flex justify-between items-center">
+                          <span>Diagnostic Quality Audit:</span>
+                          <span className={`text-[9px] font-bold px-2 py-0.5 rounded ${r.needsReviewCount > 0 ? "bg-amber-500/10 text-amber-500" : "bg-emerald-500/10 text-emerald-500"}`}>
+                            {r.needsReviewCount > 0 ? `${r.needsReviewCount} flagged for review` : "All cases match quality targets"}
+                          </span>
+                        </div>
+                        
+                        {r.flaggedCasesList.length > 0 ? (
+                          <div className="max-h-[110px] overflow-y-auto border border-[var(--border)]/40 rounded-lg p-2 bg-[var(--surface-dim)] divide-y divide-[var(--border)]/30 space-y-1.5">
+                            {r.flaggedCasesList.map((fc, idx) => (
+                              <div key={idx} className="text-[10px] pt-1.5 first:pt-0 pb-1.5 last:pb-0 space-y-0.5">
+                                <div className="flex justify-between items-center">
+                                  <span className="font-extrabold text-[var(--text)] truncate max-w-[250px]">
+                                    {fc.title}
+                                  </span>
+                                  <span className="text-[9px] bg-rose-500/10 text-rose-500 font-black px-1.5 py-0.2 rounded">
+                                    Score: {fc.score}/100
+                                  </span>
+                                </div>
+                                <div className="text-[9px] text-rose-500/80 font-medium leading-normal italic">
+                                  Flagged gaps: {fc.reason}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        ) : (
+                          <p className="text-[10px] text-emerald-500/90 font-medium italic">
+                            ✓ Excellent! 100% of analyzed clinical cases scored above the 75-point academic validation threshold. No flagged gaps.
+                          </p>
+                        )}
+                      </div>
+
+                      {/* Validated Curricular Objectives Section */}
+                      <div className="space-y-1.5 pt-3 border-t border-[var(--border)]/45">
+                        <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider">
+                          Sample Validated Curricular Objectives & DTPs:
+                        </div>
+                        <ul className="text-[10px] text-[var(--text-muted)] list-disc pl-4 space-y-1.5 leading-relaxed">
+                          {r.dtpsCovered.slice(0, 3).map((p, idx) => (
+                            <li key={idx} className="line-clamp-1 italic">"{p}"</li>
+                          ))}
+                          {r.dtpsCovered.length > 3 && (
+                            <li className="list-none text-[9px] font-bold text-[var(--primary)] mt-1">
+                              + {r.dtpsCovered.length - 3} more pharmacotherapy variables audited & verified in database cache.
+                            </li>
+                          )}
+                        </ul>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
           {/* Header Controls */}
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-[var(--surface)] p-4 rounded-xl border border-[var(--border)]">
             <div className="relative flex-1 w-full">

@@ -126,7 +126,7 @@ const ALL_CLINICAL_SYSTEMS = [
   'Pediatrics',
   'Critical Care',
   'Oncology',
-  'Toxicology',
+  'Toxicology & Poison Management',
   'Psychiatry',
   'Hematology'
 ];

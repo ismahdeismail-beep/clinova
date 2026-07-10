@@ -1,0 +1,2047 @@
+{
+  "communities": {
+    "0": [
+      "src_data_onlinelibrarydata",
+      "src_data_onlinelibrarydata_getlibrarysubjects",
+      "src_data_onlinelibrarydata_getresourcesbytype",
+      "src_data_onlinelibrarydata_library",
+      "src_data_onlinelibrarydata_libraryresource",
+      "src_data_onlinelibrarydata_searchlibrary",
+      "src_server_airouter",
+      "src_server_airouter_addgatewaylog",
+      "src_server_airouter_aiproviderstatus",
+      "src_server_airouter_createinitialstatus",
+      "src_server_airouter_executeprovider",
+      "src_server_airouter_gatewaylog",
+      "src_server_airouter_generatecontentwithfallback",
+      "src_server_airouter_getloadbalancingmode",
+      "src_server_airouter_maptoopenaiformat",
+      "src_server_airouter_recordprovidererror",
+      "src_server_airouter_recordprovidersuccess",
+      "src_server_airouter_selectproviderssequence",
+      "src_skills_academicknowledge",
+      "src_skills_academicknowledge_academicknowledgeskill",
+      "src_skills_academicknowledge_discipline_prompts",
+      "src_skills_adaptivelearning",
+      "src_skills_adaptivelearning_adaptivelearningskill",
+      "src_skills_assessment",
+      "src_skills_assessment_assessmentskill",
+      "src_skills_caching",
+      "src_skills_caching_cache",
+      "src_skills_caching_cachingskill",
+      "src_skills_caching_getcached",
+      "src_skills_caching_setcached",
+      "src_skills_citation",
+      "src_skills_citation_citationskill",
+      "src_skills_citation_formatcitation",
+      "src_skills_citation_styles",
+      "src_skills_clinicalcases",
+      "src_skills_clinicalcases_clinicalcasesskill",
+      "src_skills_clinicalreasoning",
+      "src_skills_clinicalreasoning_clinicalreasoningskill",
+      "src_skills_conceptmapping",
+      "src_skills_conceptmapping_conceptmappingskill",
+      "src_skills_curriculummapping",
+      "src_skills_curriculummapping_curriculummappingskill",
+      "src_skills_diseaseknowledge",
+      "src_skills_diseaseknowledge_diseaseknowledgeskill",
+      "src_skills_druginformation",
+      "src_skills_druginformation_druginformationskill",
+      "src_skills_evidencebasedmedicine",
+      "src_skills_evidencebasedmedicine_evidencebasedmedicineskill",
+      "src_skills_externalknowledge",
+      "src_skills_externalknowledge_externalknowledgeskill",
+      "src_skills_index",
+      "src_skills_knowledgegapdetection",
+      "src_skills_knowledgegapdetection_knowledgegapdetectionskill",
+      "src_skills_knowledgegraph",
+      "src_skills_knowledgegraph_knowledgegraphskill",
+      "src_skills_knowledgeretrieval",
+      "src_skills_knowledgeretrieval_knowledgeretrievalskill",
+      "src_skills_learningobjectiveextraction",
+      "src_skills_learningobjectiveextraction_learningobjectiveextractionskill",
+      "src_skills_memory",
+      "src_skills_memory_memoryskill",
+      "src_skills_onlinelibrary",
+      "src_skills_onlinelibrary_onlinelibraryskill",
+      "src_skills_oralpractice",
+      "src_skills_oralpractice_oralpracticeskill",
+      "src_skills_orchestrator",
+      "src_skills_orchestrator_deduplicaterecommendations",
+      "src_skills_orchestrator_deduplicatereferences",
+      "src_skills_orchestrator_detectintent",
+      "src_skills_orchestrator_orchestrateskills",
+      "src_skills_orchestrator_selectskillsbyintents",
+      "src_skills_presentation",
+      "src_skills_presentation_presentationskill",
+      "src_skills_registry",
+      "src_skills_registry_skillregistry",
+      "src_skills_registry_skillregistry_clear",
+      "src_skills_registry_skillregistry_findcapable",
+      "src_skills_registry_skillregistry_get",
+      "src_skills_registry_skillregistry_getall",
+      "src_skills_registry_skillregistry_getbycategory",
+      "src_skills_registry_skillregistry_getdefinitions",
+      "src_skills_registry_skillregistry_has",
+      "src_skills_registry_skillregistry_register",
+      "src_skills_semanticsearch",
+      "src_skills_semanticsearch_semanticsearchskill",
+      "src_skills_summarization",
+      "src_skills_summarization_summarizationskill",
+      "src_skills_teaching",
+      "src_skills_teaching_teachingskill",
+      "src_skills_types",
+      "src_skills_types_educationalcontext",
+      "src_skills_types_orchestrationplan",
+      "src_skills_types_orchestrationresult",
+      "src_skills_types_skill",
+      "src_skills_types_skill_canhandle",
+      "src_skills_types_skill_execute",
+      "src_skills_types_skill_getrecommendations",
+      "src_skills_types_skillcategory",
+      "src_skills_types_skillcontext",
+      "src_skills_types_skilldefinition",
+      "src_skills_types_skillid",
+      "src_skills_types_skillrecommendation",
+      "src_skills_types_skillreference",
+      "src_skills_types_skillresponse",
+      "src_skills_webresearch",
+      "src_skills_webresearch_webresearchskill"
+    ],
+    "1": [
+      "scripts_seed_clinical_cases",
+      "scripts_seed_clinical_cases_inferunitid",
+      "scripts_seed_clinical_cases_main",
+      "scripts_seed_clinical_cases_supabase",
+      "scripts_seed_clinical_cases_toseedid",
+      "scripts_seed_clinical_cases_unit_ids",
+      "scripts_seed_clinical_cases_validatecase",
+      "scripts_seedexistingdb",
+      "scripts_seedexistingdb_buildbody",
+      "scripts_seedexistingdb_esc",
+      "scripts_seedexistingdb_main",
+      "scripts_seedexistingdb_runsql",
+      "scripts_seedexistingdb_specialties",
+      "scripts_seedexistingdb_sqlarr",
+      "scripts_seedexistingdb_unitforspecialty",
+      "src_data_clinicalcases_autonomic_pharmacology",
+      "src_data_clinicalcases_autonomic_pharmacology_autonomic_pharmacology_cases",
+      "src_data_clinicalcases_cardiovascular_pharmacology",
+      "src_data_clinicalcases_cardiovascular_pharmacology_cardiovascular_pharmacology_cases",
+      "src_data_clinicalcases_central_nervous_system_pharmacology",
+      "src_data_clinicalcases_central_nervous_system_pharmacology_central_nervous_system_pharmacology_cases",
+      "src_data_clinicalcases_chemotherapy_antimicrobial_pharmacology",
+      "src_data_clinicalcases_chemotherapy_antimicrobial_pharmacology_chemotherapy_antimicrobial_pharmacology_cases",
+      "src_data_clinicalcases_clinical_pharmacy",
+      "src_data_clinicalcases_clinical_pharmacy_clinical_pharmacy_cases",
+      "src_data_clinicalcases_dermatology",
+      "src_data_clinicalcases_dermatology_dermatology_cases",
+      "src_data_clinicalcases_endocrine_pharmacology",
+      "src_data_clinicalcases_endocrine_pharmacology_endocrine_pharmacology_cases",
+      "src_data_clinicalcases_gastrointestinal_pharmacology",
+      "src_data_clinicalcases_gastrointestinal_pharmacology_gastrointestinal_pharmacology_cases",
+      "src_data_clinicalcases_general_pharmacology",
+      "src_data_clinicalcases_general_pharmacology_general_pharmacology_cases",
+      "src_data_clinicalcases_hematology",
+      "src_data_clinicalcases_hematology_hematology_cases",
+      "src_data_clinicalcases_index",
+      "src_data_clinicalcases_index_generated_cases",
+      "src_data_clinicalcases_oncology",
+      "src_data_clinicalcases_oncology_oncology_cases",
+      "src_data_clinicalcases_ophthalmology",
+      "src_data_clinicalcases_ophthalmology_ophthalmology_cases",
+      "src_data_clinicalcases_pain_inflammation",
+      "src_data_clinicalcases_pain_inflammation_pain_inflammation_cases",
+      "src_data_clinicalcases_renal_pharmacology",
+      "src_data_clinicalcases_renal_pharmacology_renal_pharmacology_cases",
+      "src_data_clinicalcases_respiratory_pharmacology",
+      "src_data_clinicalcases_respiratory_pharmacology_respiratory_pharmacology_cases",
+      "src_data_clinicalcases_toxicology",
+      "src_data_clinicalcases_toxicology_toxicology_cases",
+      "src_data_clinicalcases_vitamins_nutrition",
+      "src_data_clinicalcases_vitamins_nutrition_vitamins_nutrition_cases",
+      "src_data_clinicalcasesdata",
+      "src_data_clinicalcasesdata_all_clinical_cases",
+      "src_data_clinicalcasesdata_clinicalcase",
+      "src_data_clinicalcasesdata_curriculum_topics_registry",
+      "src_data_clinicalcasesdata_curriculum_units",
+      "src_data_clinicalcasesdata_specialties",
+      "src_data_curriculum_getintegratedunitid",
+      "src_lib_supabase",
+      "src_lib_supabase_supabaseanonkey",
+      "src_lib_supabase_supabaseurl",
+      "src_screens_clinicalcasesscreen",
+      "src_screens_clinicalcasesscreen_clinicalcasesscreen",
+      "src_services_clinicalcase_service",
+      "src_services_clinicalcase_service_applyfilters",
+      "src_services_clinicalcase_service_casefilters",
+      "src_services_clinicalcase_service_clinicalcaseservice",
+      "src_services_clinicalcase_service_maprow"
+    ],
+    "2": [
+      "src_components_filelist",
+      "src_components_filelist_filelist",
+      "src_components_filelist_filelistprops",
+      "src_components_filelist_formatdate",
+      "src_components_filelist_formatsize",
+      "src_components_filelist_getfileicon",
+      "src_components_filelist_mime_icons",
+      "src_components_fileuploader",
+      "src_components_fileuploader_fileuploader",
+      "src_components_fileuploader_fileuploaderprops",
+      "src_components_fileuploader_formatsize",
+      "src_components_fileuploader_getfileicon",
+      "src_components_fileuploader_mime_icons",
+      "src_lib_env",
+      "src_lib_env_env",
+      "src_lib_env_envschema",
+      "src_lib_localfiledb",
+      "src_lib_localfiledb_localfiledb",
+      "src_lib_localfiledb_localfiledb_deletefile",
+      "src_lib_localfiledb_localfiledb_getallfiles",
+      "src_lib_localfiledb_localfiledb_getdb",
+      "src_lib_localfiledb_localfiledb_getfile",
+      "src_lib_localfiledb_localfiledb_savefile",
+      "src_lib_localfiledb_localfiledbschema",
+      "src_lib_localfiledb_localfilerecord",
+      "src_screens_knowledgebasemanagerscreen",
+      "src_screens_knowledgebasemanagerscreen_analyticstab",
+      "src_screens_knowledgebasemanagerscreen_knowledgebasemanagerscreen",
+      "src_screens_knowledgebasemanagerscreen_resourceitem",
+      "src_screens_knowledgebasemanagerscreen_resourcestab",
+      "src_screens_knowledgebasemanagerscreen_settingstab",
+      "src_screens_knowledgebasemanagerscreen_system_resources",
+      "src_screens_knowledgebasemanagerscreen_taxonomytab",
+      "src_screens_knowledgebasemanagerscreen_uploadmodal",
+      "src_services_chunkedupload_service",
+      "src_services_chunkedupload_service_chunkeduploadservice",
+      "src_services_media_service",
+      "src_services_media_service_mediaservice",
+      "src_services_storage_service",
+      "src_services_storage_service_buildstoragepath",
+      "src_services_storage_service_category_paths",
+      "src_services_storage_service_computehash",
+      "src_services_storage_service_getfileid",
+      "src_services_storage_service_in_memory_files",
+      "src_services_storage_service_sanitizefilename",
+      "src_services_storage_service_storageservice",
+      "src_services_storage_service_withtimeout",
+      "src_store_filestore",
+      "src_store_filestore_filestate",
+      "src_store_filestore_queuedupload",
+      "src_types_engine",
+      "src_types_engine_airesponse",
+      "src_types_engine_clinicalrule",
+      "src_types_engine_clinicalsessionoutput",
+      "src_types_engine_condition",
+      "src_types_engine_drug",
+      "src_types_engine_drugdosing",
+      "src_types_engine_fileaccessscope",
+      "src_types_engine_filecategory",
+      "src_types_engine_fileuploadoptions",
+      "src_types_engine_interaction",
+      "src_types_engine_nodetype",
+      "src_types_engine_storedfile",
+      "src_types_engine_uploadprogress",
+      "src_types_engine_uploadresult",
+      "src_types_engine_workflow",
+      "src_types_engine_workflownode"
+    ],
+    "3": [
+      "src_components_chatsessionlist",
+      "src_components_chatsessionlist_chatsessionlist",
+      "src_components_chatsessionlist_props",
+      "src_components_chatsessionlist_sessionitem",
+      "src_lib_getmonograph",
+      "src_lib_getmonograph_getmonographcached",
+      "src_lib_getmonograph_searchcachedmonographs",
+      "src_lib_localdb",
+      "src_lib_localdb_chatmessage",
+      "src_lib_localdb_chatsession",
+      "src_lib_localdb_cleanupoldcache",
+      "src_lib_localdb_clinovadb",
+      "src_lib_localdb_dbpromise",
+      "src_lib_localdb_deletechatsession",
+      "src_lib_localdb_getallchatsessions",
+      "src_lib_localdb_getmonograph",
+      "src_lib_localdb_monographcacheentry",
+      "src_lib_localdb_pinmonograph",
+      "src_lib_localdb_renamechatsession",
+      "src_lib_localdb_savechatsession",
+      "src_lib_localdb_savemonograph",
+      "src_screens_clinicalassistantscreen",
+      "src_screens_clinicalassistantscreen_assistantmessagebubble",
+      "src_screens_clinicalassistantscreen_citation",
+      "src_screens_clinicalassistantscreen_clinicalassistantscreen",
+      "src_screens_clinicalassistantscreen_copybutton",
+      "src_screens_clinicalassistantscreen_downloadbutton",
+      "src_screens_clinicalassistantscreen_highlightmedicalterms",
+      "src_screens_clinicalassistantscreen_message",
+      "src_screens_clinicalassistantscreen_rag_sources",
+      "src_screens_clinicalassistantscreen_rendermarkdown",
+      "src_screens_drugindexscreen",
+      "src_screens_drugindexscreen_addedmedication",
+      "src_screens_drugindexscreen_categories",
+      "src_screens_drugindexscreen_drugindexscreen",
+      "src_screens_drugindexscreen_interaction",
+      "src_screens_drugindexscreen_interactionresult",
+      "src_screens_drugindexscreen_monitoringparam",
+      "src_screens_drugindexscreen_patientsafetyflag",
+      "src_screens_drugindexscreen_quick_drugs",
+      "src_screens_drugindexscreen_quickdrug",
+      "src_services_chat_service",
+      "src_services_chat_service_chatservice",
+      "src_services_chat_service_withtimeout",
+      "src_services_export_service",
+      "src_services_export_service_documentsection",
+      "src_services_export_service_exportformat",
+      "src_services_export_service_exportoptions",
+      "src_services_export_service_exportservice",
+      "src_services_export_service_structureddocument",
+      "src_services_ragrouter",
+      "src_services_ragrouter_intentcategory",
+      "src_services_ragrouter_ragrouter"
+    ],
+    "4": [
+      "scripts_sync_knowledge_engine",
+      "scripts_sync_knowledge_engine_batchupsert",
+      "scripts_sync_knowledge_engine_main",
+      "scripts_sync_knowledge_engine_supabase",
+      "scripts_sync_knowledge_engine_synccasenodes",
+      "scripts_sync_knowledge_engine_syncdiseasemonographs",
+      "scripts_sync_knowledge_engine_syncdiseasenodes",
+      "scripts_sync_knowledge_engine_syncdiseases",
+      "scripts_sync_knowledge_engine_syncrelationships",
+      "scripts_sync_knowledge_engine_toseedid",
+      "src_components_curriculumgraph",
+      "src_components_curriculumgraph_curriculumgraph",
+      "src_components_curriculumgraph_graphlink",
+      "src_components_curriculumgraph_graphnode",
+      "src_components_curriculumgraph_specialty_to_units",
+      "src_data_clinicalcasesdata_diseases_by_specialty",
+      "src_data_clinicalcasesdata_initial_cases",
+      "src_data_curriculum",
+      "src_data_curriculum_all_learning_objectives",
+      "src_data_curriculum_all_units",
+      "src_data_curriculum_curriculum",
+      "src_data_curriculum_curriculumarea",
+      "src_data_curriculum_curriculumunit",
+      "src_data_curriculum_difficulty",
+      "src_data_curriculum_disease",
+      "src_data_curriculum_diseases",
+      "src_data_curriculum_education_modules",
+      "src_data_curriculum_educationmodule",
+      "src_data_curriculum_educationmoduleunit",
+      "src_data_curriculum_getarea",
+      "src_data_curriculum_getdisease",
+      "src_data_curriculum_getdiseaseidbyname",
+      "src_data_curriculum_getdiseaseidsforunit",
+      "src_data_curriculum_geteducationmodule",
+      "src_data_curriculum_getintegratedunits",
+      "src_data_curriculum_getlearningobjective",
+      "src_data_curriculum_getlearningobjectivesforunit",
+      "src_data_curriculum_getmoduleunits",
+      "src_data_curriculum_getunit",
+      "src_data_curriculum_getunitsbyarea",
+      "src_data_curriculum_getunitsbydisease",
+      "src_data_curriculum_getunitsforlearningobjective",
+      "src_data_curriculum_integrated_unit_ids",
+      "src_data_curriculum_integrated_units_map",
+      "src_data_curriculum_integratedunitid",
+      "src_data_curriculum_isintegratedunit",
+      "src_data_curriculum_learningobjective",
+      "src_data_curriculum_non_curriculum_units",
+      "src_data_educationhubdata"
+    ],
+    "5": [
+      "autoprefixer",
+      "esbuild",
+      "package",
+      "package_devdependencies",
+      "package_devdependencies_autoprefixer",
+      "package_devdependencies_esbuild",
+      "package_devdependencies_sharp",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_tsx",
+      "package_devdependencies_types_express",
+      "package_devdependencies_types_multer",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript",
+      "package_devdependencies_vite_plugin_pwa",
+      "package_json_typescript",
+      "package_name",
+      "package_overrides",
+      "package_overrides_react",
+      "package_overrides_react_dom",
+      "package_private",
+      "package_resolutions",
+      "package_resolutions_react",
+      "package_resolutions_react_dom",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_clean",
+      "package_scripts_db_seed",
+      "package_scripts_db_validate",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_start",
+      "package_scripts_supabase_migrate",
+      "package_scripts_supabase_start",
+      "package_scripts_supabase_status",
+      "package_scripts_supabase_stop",
+      "package_type",
+      "package_version",
+      "sharp",
+      "tailwindcss",
+      "tsx",
+      "types_express",
+      "types_multer",
+      "types_node",
+      "types_react",
+      "types_react_dom",
+      "vite_plugin_pwa"
+    ],
+    "6": [
+      "jspdf",
+      "package_dependencies_jspdf",
+      "src_components_patientquicksummary",
+      "src_components_patientquicksummary_alert",
+      "src_components_patientquicksummary_evaluatepriority",
+      "src_components_patientquicksummary_labresult",
+      "src_components_patientquicksummary_patient",
+      "src_components_patientquicksummary_patientquicksummary",
+      "src_components_patientquicksummary_patientquicksummaryprops",
+      "src_components_patientquicksummary_vitalhistoryitem",
+      "src_components_patientquicksummary_vitals",
+      "src_components_patienttriage",
+      "src_components_patienttriage_assignurgency",
+      "src_components_patienttriage_calculateriskscore",
+      "src_components_patienttriage_geturgencycolors",
+      "src_components_patienttriage_mock_triage_patients",
+      "src_components_patienttriage_patienttriage",
+      "src_components_patienttriage_triagepatient",
+      "src_data_clinicalcasesdata_getcurriculumcasesforunit",
+      "src_lib_firebase",
+      "src_lib_firebase_app",
+      "src_lib_firebase_auth",
+      "src_lib_firebase_firebaseconfig",
+      "src_lib_firebase_storage",
+      "src_lib_firestore_diagnostics",
+      "src_lib_firestore_diagnostics_firestoreerrorinfo",
+      "src_lib_firestore_diagnostics_handlefirestoreerror",
+      "src_lib_firestore_diagnostics_operationtype",
+      "src_lib_patientutils",
+      "src_lib_patientutils_getpatientinitials",
+      "src_screens_admindashboardscreen",
+      "src_screens_admindashboardscreen_admindashboardscreen",
+      "src_screens_admindashboardscreen_clinicalcase",
+      "src_screens_admindashboardscreen_clinicianprofile",
+      "src_screens_admindashboardscreen_curriculumresource",
+      "src_screens_patientsscreen",
+      "src_screens_patientsscreen_mock_patients",
+      "src_screens_patientsscreen_patientsscreen",
+      "src_screens_pharmacotherapyreviewscreen",
+      "src_screens_pharmacotherapyreviewscreen_interaction_messages",
+      "src_screens_pharmacotherapyreviewscreen_known_interactions",
+      "src_screens_pharmacotherapyreviewscreen_pharmacotherapyreviewscreen",
+      "src_screens_pharmacotherapyreviewscreen_sample_patient_data"
+    ],
+    "7": [
+      "server",
+      "server_app",
+      "server_getpatientinitialsbackend",
+      "server_safejsonparse",
+      "server_startserver",
+      "server_upload",
+      "src_core_errorhandler",
+      "src_core_errorhandler_apierror",
+      "src_core_errorhandler_apiresponse",
+      "src_core_errorhandler_errorhandler",
+      "src_core_errorhandler_errorhandler_error",
+      "src_core_errorhandler_errorhandler_fromfirebase",
+      "src_core_errorhandler_errorhandler_getinstance",
+      "src_core_errorhandler_errorhandler_issuccess",
+      "src_core_errorhandler_errorhandler_success",
+      "src_core_errorhandler_errorhandler_wrapservicecall",
+      "src_server_academicengine",
+      "src_server_academicengine_academicskill",
+      "src_server_academicengine_loadacademicskills",
+      "src_server_academicengine_processacademicrequest",
+      "src_server_academicengine_skills_dir",
+      "src_server_airouter_gatewaylogs",
+      "src_server_airouter_getglobalprovideroverride",
+      "src_server_airouter_getproviderstatuslist",
+      "src_server_airouter_providerstatuses",
+      "src_server_airouter_setglobalprovideroverride",
+      "src_server_airouter_setloadbalancingmode",
+      "src_server_airouter_updateproviderconfig",
+      "src_server_externalmedicinesapi",
+      "src_server_externalmedicinesapi_fetchopenfdalabel",
+      "src_server_externalmedicinesapi_fetchrxnorminteractions",
+      "src_server_externalmedicinesapi_nlminteractiondata",
+      "src_server_externalmedicinesapi_openfdalabeldata",
+      "src_server_externalmedicinesapi_parseopenfdalabelresponse",
+      "src_server_externalmedicinesapi_resolverxcui",
+      "src_server_promptregistry",
+      "src_server_promptregistry_customprompts",
+      "src_server_promptregistry_defaultprompts",
+      "src_server_promptregistry_getprompts",
+      "src_server_promptregistry_prompttemplate",
+      "src_server_promptregistry_resetprompts",
+      "src_server_promptregistry_updateprompt"
+    ],
+    "8": [
+      "src_lib_firebase_db",
+      "src_screens_educationhubscreen",
+      "src_screens_educationhubscreen_buildrichknowledgecontext",
+      "src_screens_educationhubscreen_downloadbutton",
+      "src_screens_educationhubscreen_educationhubscreen",
+      "src_screens_educationhubscreen_getrelevantfiles",
+      "src_screens_educationhubscreen_learningworkspace",
+      "src_screens_educationhubscreen_modulecard",
+      "src_screens_educationhubscreen_moduleicon",
+      "src_screens_educationhubscreen_workspaceflashcards",
+      "src_screens_educationhubscreen_workspacenotes",
+      "src_screens_educationhubscreen_workspaceoverview",
+      "src_screens_educationhubscreen_workspacequizzes",
+      "src_screens_educationhubscreen_workspaceresources",
+      "src_screens_educationhubscreen_workspacetutor",
+      "src_screens_oralpracticescreen",
+      "src_screens_oralpracticescreen_categories",
+      "src_screens_oralpracticescreen_oralpracticescreen",
+      "src_screens_oralpracticescreen_oralpracticestats",
+      "src_screens_oralpracticescreen_preset_diseases",
+      "src_screens_oralpracticescreen_preset_drugs",
+      "src_screens_oralpracticescreen_savedsession",
+      "src_services_aicontent_service",
+      "src_services_aicontent_service_aicontentservice",
+      "src_services_aicontent_service_generatedcontent",
+      "src_services_aicontent_service_withtimeout",
+      "src_services_education_service",
+      "src_services_education_service_customunit",
+      "src_services_education_service_educationservice",
+      "src_services_education_service_savedflashcard",
+      "src_services_education_service_savedquiz",
+      "src_services_education_service_subfolder",
+      "src_services_education_service_withtimeout",
+      "src_store_filestore_usefilestore"
+    ],
+    "9": [
+      "scripts_casetemplates",
+      "scripts_casetemplates_all_template_count",
+      "scripts_casetemplates_autonomic_pharmacology_templates",
+      "scripts_casetemplates_cardiovascular_pharmacology_templates",
+      "scripts_casetemplates_general_pharmacology_templates",
+      "scripts_casetemplates_tpl",
+      "scripts_generatecases_clinicalcasetemplate",
+      "scripts_templates_chemotherapy",
+      "scripts_templates_chemotherapy_chemotherapy_templates",
+      "scripts_templates_chemotherapy_tpl",
+      "scripts_templates_clinicalpharmacy",
+      "scripts_templates_clinicalpharmacy_clinical_pharmacy_templates",
+      "scripts_templates_clinicalpharmacy_t",
+      "scripts_templates_cns",
+      "scripts_templates_cns_cns_templates",
+      "scripts_templates_cns_tpl",
+      "scripts_templates_gastrointestinal",
+      "scripts_templates_gastrointestinal_gastrointestinal_templates",
+      "scripts_templates_gastrointestinal_tpl",
+      "scripts_templates_hematology",
+      "scripts_templates_hematology_hematology_templates",
+      "scripts_templates_hematology_t",
+      "scripts_templates_oncology",
+      "scripts_templates_oncology_oncology_templates",
+      "scripts_templates_oncology_t",
+      "scripts_templates_respiratory",
+      "scripts_templates_respiratory_respiratory_templates",
+      "scripts_templates_respiratory_tpl",
+      "scripts_templates_vitamins",
+      "scripts_templates_vitamins_tpl",
+      "scripts_templates_vitamins_vitamins_templates"
+    ],
+    "10": [
+      "src_components_topbar",
+      "src_components_topbar_simple_title_map",
+      "src_components_topbar_title_map",
+      "src_components_topbar_topbar",
+      "src_components_topbar_topbarprops",
+      "src_contexts_uimodecontext",
+      "src_contexts_uimodecontext_uimode",
+      "src_contexts_uimodecontext_uimodecontext",
+      "src_contexts_uimodecontext_uimodecontextvalue",
+      "src_contexts_uimodecontext_uimodeprovider",
+      "src_contexts_uimodecontext_useuimode",
+      "src_hooks_useonlinestatus",
+      "src_hooks_useonlinestatus_useonlinestatus",
+      "src_hooks_usesyncstatus",
+      "src_hooks_usesyncstatus_usesyncstatus",
+      "src_lib_syncmanager",
+      "src_lib_syncmanager_syncdbschema",
+      "src_lib_syncmanager_synclistener",
+      "src_lib_syncmanager_syncmanager",
+      "src_lib_syncmanager_syncmanager_addmutation",
+      "src_lib_syncmanager_syncmanager_constructor",
+      "src_lib_syncmanager_syncmanager_getpendingmutationscount",
+      "src_lib_syncmanager_syncmanager_notifylisteners",
+      "src_lib_syncmanager_syncmanager_subscribe",
+      "src_lib_syncmanager_syncmanager_sync",
+      "src_lib_syncmanager_syncstatus",
+      "src_skills_registry_skillregistry_count",
+      "src_types_index",
+      "src_types_index_viewstate"
+    ],
+    "11": [
+      "src_app",
+      "src_app_admindashboardscreen",
+      "src_app_aiorchestrationscreen",
+      "src_app_app",
+      "src_app_appcontent",
+      "src_app_clinicalassistantscreen",
+      "src_app_clinicalcasesscreen",
+      "src_app_dashboardscreen",
+      "src_app_drugindexscreen",
+      "src_app_educationhubscreen",
+      "src_app_knowledgebasemanagerscreen",
+      "src_app_landingscreen",
+      "src_app_loginscreen",
+      "src_app_notificationsscreen",
+      "src_app_oralpracticescreen",
+      "src_app_patientsscreen",
+      "src_app_pharmacotherapyreviewscreen",
+      "src_app_settingsscreen",
+      "src_app_studentonboarding",
+      "src_components_breadcrumbs",
+      "src_components_breadcrumbs_breadcrumbs",
+      "src_components_breadcrumbs_routenames",
+      "src_components_offlinestatus",
+      "src_components_offlinestatus_offlinestatus",
+      "src_hooks_useinstallprompt",
+      "src_hooks_useinstallprompt_beforeinstallpromptevent",
+      "src_hooks_useinstallprompt_useinstallprompt"
+    ],
+    "12": [
+      "ref_dom",
+      "ref_dom_iterable",
+      "ref_es2020",
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowimportingtsextensions",
+      "tsconfig_compileroptions_baseurl",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_nofallthroughcasesinswitch",
+      "tsconfig_compileroptions_nounusedlocals",
+      "tsconfig_compileroptions_nounusedparameters",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_compileroptions_usedefineforclassfields",
+      "tsconfig_include",
+      "tsconfig_json_ref_src",
+      "tsconfig_paths",
+      "tsconfig_references"
+    ],
+    "13": [
+      "src_core_appbootmanager",
+      "src_core_appbootmanager_appbootmanager",
+      "src_core_appbootmanager_appbootmanager_checkallcomplete",
+      "src_core_appbootmanager_appbootmanager_geterror",
+      "src_core_appbootmanager_appbootmanager_getinstance",
+      "src_core_appbootmanager_appbootmanager_getphase",
+      "src_core_appbootmanager_appbootmanager_isservicecomplete",
+      "src_core_appbootmanager_appbootmanager_isservicefailed",
+      "src_core_appbootmanager_appbootmanager_markcomplete",
+      "src_core_appbootmanager_appbootmanager_markfailed",
+      "src_core_appbootmanager_appbootmanager_reset",
+      "src_core_appbootmanager_appbootmanager_start",
+      "src_core_appbootmanager_boot_sequence",
+      "src_core_appbootmanager_bootphase",
+      "src_core_appbootmanager_bootservice",
+      "src_core_appbootmanager_boottask",
+      "src_engine_eventbus",
+      "src_engine_eventbus_eventbus",
+      "src_engine_eventbus_eventbus_emit",
+      "src_engine_eventbus_eventbus_getinstance",
+      "src_engine_eventbus_eventbus_on"
+    ],
+    "14": [
+      "scripts_generategapcases",
+      "scripts_generategapcases_existing_files",
+      "scripts_generategapcases_main",
+      "scripts_generategapcases_plantemplates",
+      "scripts_generategapcases_q",
+      "scripts_generategapcases_safename",
+      "scripts_templates_dermatology",
+      "scripts_templates_dermatology_dermatology_templates",
+      "scripts_templates_dermatology_t",
+      "scripts_templates_gapunits",
+      "scripts_templates_gapunits_ent_templates",
+      "scripts_templates_gapunits_geriatric_templates",
+      "scripts_templates_gapunits_obstetrics_gynaecology_templates",
+      "scripts_templates_gapunits_paediatric_templates",
+      "scripts_templates_ophthalmology",
+      "scripts_templates_ophthalmology_ophthalmology_templates",
+      "scripts_templates_ophthalmology_t"
+    ],
+    "15": [
+      "src_app_adminloginscreen",
+      "src_app_sidebar",
+      "src_app_userloginscreen",
+      "src_components_protectedroute",
+      "src_components_protectedroute_protectedroute",
+      "src_components_protectedroute_protectedrouteprops",
+      "src_components_studentonboarding",
+      "src_components_studentonboarding_academic_levels",
+      "src_components_studentonboarding_clinical_topics",
+      "src_components_studentonboarding_leveloption",
+      "src_components_studentonboarding_studentonboarding",
+      "src_components_studentonboarding_topicoption",
+      "src_contexts_authcontext",
+      "src_contexts_authcontext_authcontext",
+      "src_contexts_authcontext_authcontexttype",
+      "src_contexts_authcontext_useauth",
+      "src_contexts_authcontext_userdata",
+      "src_contexts_authcontext_userrole",
+      "src_screens_loginscreen",
+      "src_screens_loginscreen_loginscreen"
+    ],
+    "16": [
+      "scripts_generatecases",
+      "scripts_generatecases_female_occupations",
+      "scripts_generatecases_generatecasefromtemplate",
+      "scripts_generatecases_generatecasesfromtemplate",
+      "scripts_generatecases_generatepatient",
+      "scripts_generatecases_generatevitals",
+      "scripts_generatecases_kenyan_first_names_female",
+      "scripts_generatecases_kenyan_first_names_male",
+      "scripts_generatecases_kenyan_last_names",
+      "scripts_generatecases_kenyan_locations",
+      "scripts_generatecases_kenyan_settings",
+      "scripts_generatecases_male_occupations",
+      "scripts_generatecases_patientprofile",
+      "scripts_generatecases_pick",
+      "scripts_generatecases_pickn",
+      "scripts_generatecases_randomage",
+      "scripts_generatecases_roundto",
+      "scripts_generatecases_vitalsigns",
+      "scripts_generatecases_vitalsstring"
+    ],
+    "17": [
+      "src_components_overlayhost",
+      "src_components_overlayhost_manager",
+      "src_components_overlayhost_overlayhost",
+      "src_core_overlaymanager",
+      "src_core_overlaymanager_overlayinstance",
+      "src_core_overlaymanager_overlaymanager",
+      "src_core_overlaymanager_overlaymanager_dismiss",
+      "src_core_overlaymanager_overlaymanager_getinstance",
+      "src_core_overlaymanager_overlaymanager_notify",
+      "src_core_overlaymanager_overlaymanager_onchange",
+      "src_core_overlaymanager_overlaymanager_show",
+      "src_core_overlaymanager_overlaypriority",
+      "src_core_overlaymanager_overlaytype"
+    ],
+    "18": [
+      "src_components_clinovalogo",
+      "src_components_clinovalogo_clinovalogo",
+      "src_components_shifthandovermodal",
+      "src_components_shifthandovermodal_handover_data",
+      "src_components_shifthandovermodal_shifthandovermodal",
+      "src_components_shifthandovermodal_shifthandovermodalprops",
+      "src_screens_dashboardscreen",
+      "src_screens_dashboardscreen_all_clinical_systems",
+      "src_screens_dashboardscreen_dashboardscreen",
+      "src_screens_dashboardscreen_study_tracks",
+      "src_screens_landingscreen",
+      "src_screens_landingscreen_landingscreen"
+    ],
+    "19": [
+      "src_components_commandpalette",
+      "src_components_commandpalette_action",
+      "src_components_commandpalette_commandpalette",
+      "src_components_themetoggle",
+      "src_components_themetoggle_themetoggle",
+      "src_contexts_themecontext",
+      "src_contexts_themecontext_theme",
+      "src_contexts_themecontext_themecontext",
+      "src_contexts_themecontext_themecontexttype",
+      "src_contexts_themecontext_usetheme",
+      "src_screens_settingsscreen",
+      "src_screens_settingsscreen_settingsscreen"
+    ],
+    "20": [
+      "src_components_errorboundary",
+      "src_components_errorboundary_errorboundary",
+      "src_components_errorboundary_errorboundary_componentdidcatch",
+      "src_components_errorboundary_errorboundary_getderivedstatefromerror",
+      "src_components_errorboundary_errorboundary_render",
+      "src_components_errorboundary_props",
+      "src_components_errorboundary_state",
+      "src_contexts_authcontext_authprovider",
+      "src_contexts_themecontext_themeprovider",
+      "src_main",
+      "src_main_updatesw"
+    ],
+    "21": [
+      "src_lib_supabasesync",
+      "src_lib_supabasesync_checkautherror",
+      "src_lib_supabasesync_initsupabasesync",
+      "src_lib_supabasesync_isplaceholder",
+      "src_lib_supabasesync_originalgetitem",
+      "src_lib_supabasesync_originalremoveitem",
+      "src_lib_supabasesync_originalsetitem",
+      "src_lib_supabasesync_pullfromsupabase",
+      "src_lib_supabasesync_removefromsupabase",
+      "src_lib_supabasesync_syncable_keys",
+      "src_lib_supabasesync_synctosupabase"
+    ],
+    "22": [
+      "src_app_topnavigation",
+      "src_contexts_notificationcontext",
+      "src_contexts_notificationcontext_appnotification",
+      "src_contexts_notificationcontext_default_notifications",
+      "src_contexts_notificationcontext_notificationcontext",
+      "src_contexts_notificationcontext_notificationcontexttype",
+      "src_contexts_notificationcontext_notificationprovider",
+      "src_contexts_notificationcontext_usenotifications",
+      "src_screens_notificationsscreen",
+      "src_screens_notificationsscreen_notificationsscreen"
+    ],
+    "23": [
+      "browser_image_compression",
+      "package_dependencies",
+      "package_dependencies_browser_image_compression",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_router_dom",
+      "package_dependencies_supabase_ssr",
+      "react_dom",
+      "react_router_dom",
+      "supabase_ssr"
+    ],
+    "24": [
+      "ref_vite_config_ts",
+      "tsconfig_node",
+      "tsconfig_node_compileroptions",
+      "tsconfig_node_compileroptions_allowsyntheticdefaultimports",
+      "tsconfig_node_compileroptions_composite",
+      "tsconfig_node_compileroptions_module",
+      "tsconfig_node_compileroptions_moduleresolution",
+      "tsconfig_node_compileroptions_skiplibcheck",
+      "tsconfig_node_include"
+    ],
+    "25": [
+      "scripts_casetemplates_all_templates",
+      "scripts_generatecases_writebatchfile",
+      "scripts_rungenerate",
+      "scripts_rungenerate_dirname",
+      "scripts_rungenerate_filename",
+      "scripts_rungenerate_main",
+      "scripts_rungenerate_output_dir"
+    ],
+    "26": [
+      "scripts_generate_ai_resources",
+      "scripts_generate_ai_resources_caserecord",
+      "scripts_generate_ai_resources_generateflashcards",
+      "scripts_generate_ai_resources_generatequizquestions",
+      "scripts_generate_ai_resources_generatestudyguide",
+      "scripts_generate_ai_resources_main",
+      "scripts_generate_ai_resources_supabase"
+    ],
+    "27": [
+      "scripts_validate_population",
+      "scripts_validate_population_checkresult",
+      "scripts_validate_population_checktablecount",
+      "scripts_validate_population_main",
+      "scripts_validate_population_supabase",
+      "scripts_validate_population_unit_labels"
+    ],
+    "28": [
+      "src_screens_aiorchestrationscreen",
+      "src_screens_aiorchestrationscreen_aiorchestrationscreen",
+      "src_screens_aiorchestrationscreen_logentry",
+      "src_screens_aiorchestrationscreen_prompttemplate",
+      "src_screens_aiorchestrationscreen_provider"
+    ],
+    "29": [
+      "scripts_populate_all",
+      "scripts_populate_all_main",
+      "scripts_populate_all_runstep",
+      "scripts_populate_all_steps"
+    ],
+    "30": [
+      "scripts_validatedb",
+      "scripts_validatedb_issues",
+      "scripts_validatedb_main",
+      "scripts_validatedb_q"
+    ],
+    "31": [
+      "src_components_installpwa",
+      "src_components_installpwa_beforeinstallpromptevent",
+      "src_components_installpwa_beforeinstallpromptevent_prompt",
+      "src_components_installpwa_installpwa"
+    ],
+    "32": [
+      "patch_drug_saved",
+      "patch_drug_saved_content",
+      "patch_drug_saved_fs"
+    ],
+    "33": [
+      "patch_kbms",
+      "patch_kbms_content",
+      "patch_kbms_fs"
+    ],
+    "34": [
+      "scripts_fixlegacycases",
+      "scripts_fixlegacycases_files",
+      "scripts_fixlegacycases_fixarrayitems"
+    ],
+    "35": [
+      "scripts_templates_endocrine",
+      "scripts_templates_endocrine_endocrine_templates",
+      "scripts_templates_endocrine_tpl"
+    ],
+    "36": [
+      "scripts_templates_renal",
+      "scripts_templates_renal_renal_templates",
+      "scripts_templates_renal_t"
+    ],
+    "37": [
+      "scripts_templates_toxicology",
+      "scripts_templates_toxicology_t",
+      "scripts_templates_toxicology_toxicology_templates"
+    ],
+    "38": [
+      "append_placeholders",
+      "append_placeholders_content"
+    ],
+    "39": [
+      "clsx",
+      "package_dependencies_clsx"
+    ],
+    "40": [
+      "d3",
+      "package_dependencies_d3"
+    ],
+    "41": [
+      "docx",
+      "package_dependencies_docx"
+    ],
+    "42": [
+      "dotenv",
+      "package_dependencies_dotenv"
+    ],
+    "43": [
+      "express",
+      "package_dependencies_express"
+    ],
+    "44": [
+      "firebase",
+      "package_dependencies_firebase"
+    ],
+    "45": [
+      "google_genai",
+      "package_dependencies_google_genai"
+    ],
+    "46": [
+      "html2canvas",
+      "package_dependencies_html2canvas"
+    ],
+    "47": [
+      "idb",
+      "package_dependencies_idb"
+    ],
+    "48": [
+      "lucide_react",
+      "package_dependencies_lucide_react"
+    ],
+    "49": [
+      "motion",
+      "package_dependencies_motion"
+    ],
+    "50": [
+      "multer",
+      "package_dependencies_multer"
+    ],
+    "51": [
+      "package_dependencies_react",
+      "package_json_react"
+    ],
+    "52": [
+      "package_dependencies_react_markdown",
+      "react_markdown"
+    ],
+    "53": [
+      "package_dependencies_recharts",
+      "recharts"
+    ],
+    "54": [
+      "package_dependencies_supabase_supabase_js",
+      "supabase_supabase_js"
+    ],
+    "55": [
+      "package_dependencies_supermemory",
+      "supermemory"
+    ],
+    "56": [
+      "package_dependencies_tailwind_merge",
+      "tailwind_merge"
+    ],
+    "57": [
+      "package_dependencies_tailwindcss_vite",
+      "tailwindcss_vite"
+    ],
+    "58": [
+      "package_dependencies_types_d3",
+      "types_d3"
+    ],
+    "59": [
+      "package_dependencies_vite",
+      "vite"
+    ],
+    "60": [
+      "package_dependencies_vitejs_plugin_react",
+      "vitejs_plugin_react"
+    ],
+    "61": [
+      "package_dependencies_xyflow_react",
+      "xyflow_react"
+    ],
+    "62": [
+      "package_dependencies_zod",
+      "zod"
+    ],
+    "63": [
+      "package_dependencies_zustand",
+      "zustand"
+    ],
+    "64": [
+      "scripts_applymigrationapi",
+      "scripts_applymigrationapi_sql"
+    ],
+    "65": [
+      "scripts_testinclude",
+      "scripts_testinclude_s"
+    ],
+    "66": [
+      "scripts_testmapper",
+      "scripts_testmapper_unitforspecialty"
+    ],
+    "67": [
+      "separate_overview",
+      "separate_overview_content"
+    ],
+    "68": [
+      "src_components_clinicaldataattribution",
+      "src_components_clinicaldataattribution_clinicaldataattribution"
+    ],
+    "69": [
+      "vercel",
+      "vercel_rewrites"
+    ],
+    "70": [
+      "vite_config",
+      "vite_config_onwarn"
+    ],
+    "71": [
+      "api_index"
+    ],
+    "72": [
+      "authenticator"
+    ],
+    "73": [
+      "baseexception"
+    ],
+    "74": [
+      "bool"
+    ],
+    "75": [
+      "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_domain_domain_csproj"
+    ],
+    "76": [
+      "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_fixtures_src_domain_domain_csproj"
+    ],
+    "77": [
+      "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_fixtures_src_webapi_webapi_csproj"
+    ],
+    "78": [
+      "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_fixtures_tests_tests_tests_csproj"
+    ],
+    "79": [
+      "c_users_admin_desktop_projects_websites_clinova_clinova_main_tools_graphify_tests_infrastructure_infrastructure_csproj"
+    ],
+    "80": [
+      "constant"
+    ],
+    "81": [
+      "digraph"
+    ],
+    "82": [
+      "double"
+    ],
+    "83": [
+      "enum"
+    ],
+    "84": [
+      "float64"
+    ],
+    "85": [
+      "global"
+    ],
+    "86": [
+      "hashmap"
+    ],
+    "87": [
+      "hasname"
+    ],
+    "88": [
+      "injectable"
+    ],
+    "89": [
+      "ipv4address"
+    ],
+    "90": [
+      "ipv6address"
+    ],
+    "91": [
+      "kernel"
+    ],
+    "92": [
+      "list"
+    ],
+    "93": [
+      "loggable"
+    ],
+    "94": [
+      "module"
+    ],
+    "95": [
+      "multidigraph"
+    ],
+    "96": [
+      "mutablelist"
+    ],
+    "97": [
+      "namespace"
+    ],
+    "98": [
+      "ndarray"
+    ],
+    "99": [
+      "nsobject"
+    ],
+    "100": [
+      "nsstring"
+    ],
+    "101": [
+      "observableobject"
+    ],
+    "102": [
+      "openerdirector"
+    ],
+    "103": [
+      "override"
+    ],
+    "104": [
+      "processor"
+    ],
+    "105": [
+      "rectangle"
+    ],
+    "106": [
+      "relaycommand"
+    ],
+    "107": [
+      "routedeventargs"
+    ],
+    "108": [
+      "sampledelegate"
+    ],
+    "109": [
+      "self"
+    ],
+    "110": [
+      "src_server_airouter_providerstatusescompat"
+    ],
+    "111": [
+      "src_vite_env_d"
+    ],
+    "112": [
+      "str"
+    ],
+    "113": [
+      "task"
+    ],
+    "114": [
+      "testclient"
+    ],
+    "115": [
+      "tools_graphify_graphify_affected_py_path"
+    ],
+    "116": [
+      "tools_graphify_graphify_build_py_path"
+    ],
+    "117": [
+      "tools_graphify_graphify_cache_py_path"
+    ],
+    "118": [
+      "tools_graphify_graphify_callflow_html_py_counter"
+    ],
+    "119": [
+      "tools_graphify_graphify_callflow_html_py_path"
+    ],
+    "120": [
+      "tools_graphify_graphify_cargo_introspect_py_any"
+    ],
+    "121": [
+      "tools_graphify_graphify_cargo_introspect_py_path"
+    ],
+    "122": [
+      "tools_graphify_graphify_cli_py_path"
+    ],
+    "123": [
+      "tools_graphify_graphify_detect_py_path"
+    ],
+    "124": [
+      "tools_graphify_graphify_diagnostics_py_any"
+    ],
+    "125": [
+      "tools_graphify_graphify_diagnostics_py_counter"
+    ],
+    "126": [
+      "tools_graphify_graphify_diagnostics_py_path"
+    ],
+    "127": [
+      "tools_graphify_graphify_export_py_path"
+    ],
+    "128": [
+      "tools_graphify_graphify_extract_py_any"
+    ],
+    "129": [
+      "tools_graphify_graphify_extract_py_path"
+    ],
+    "130": [
+      "tools_graphify_graphify_extractors_apex_py_path"
+    ],
+    "131": [
+      "tools_graphify_graphify_extractors_base_py_path"
+    ],
+    "132": [
+      "tools_graphify_graphify_extractors_bash_py_path"
+    ],
+    "133": [
+      "tools_graphify_graphify_extractors_blade_py_path"
+    ],
+    "134": [
+      "tools_graphify_graphify_extractors_csharp_py_path"
+    ],
+    "135": [
+      "tools_graphify_graphify_extractors_dart_py_path"
+    ],
+    "136": [
+      "tools_graphify_graphify_extractors_dm_py_path"
+    ],
+    "137": [
+      "tools_graphify_graphify_extractors_elixir_py_path"
+    ],
+    "138": [
+      "tools_graphify_graphify_extractors_engine_py_path"
+    ],
+    "139": [
+      "tools_graphify_graphify_extractors_fortran_py_path"
+    ],
+    "140": [
+      "tools_graphify_graphify_extractors_go_py_path"
+    ],
+    "141": [
+      "tools_graphify_graphify_extractors_json_config_py_path"
+    ],
+    "142": [
+      "tools_graphify_graphify_extractors_julia_py_path"
+    ],
+    "143": [
+      "tools_graphify_graphify_extractors_markdown_py_path"
+    ],
+    "144": [
+      "tools_graphify_graphify_extractors_objc_py_path"
+    ],
+    "145": [
+      "tools_graphify_graphify_extractors_pascal_forms_py_path"
+    ],
+    "146": [
+      "tools_graphify_graphify_extractors_pascal_py_path"
+    ],
+    "147": [
+      "tools_graphify_graphify_extractors_powershell_py_path"
+    ],
+    "148": [
+      "tools_graphify_graphify_extractors_razor_py_path"
+    ],
+    "149": [
+      "tools_graphify_graphify_extractors_resolution_py_any"
+    ],
+    "150": [
+      "tools_graphify_graphify_extractors_resolution_py_path"
+    ],
+    "151": [
+      "tools_graphify_graphify_extractors_rust_py_path"
+    ],
+    "152": [
+      "tools_graphify_graphify_extractors_sln_py_path"
+    ],
+    "153": [
+      "tools_graphify_graphify_extractors_sql_py_path"
+    ],
+    "154": [
+      "tools_graphify_graphify_extractors_terraform_py_path"
+    ],
+    "155": [
+      "tools_graphify_graphify_extractors_verilog_py_path"
+    ],
+    "156": [
+      "tools_graphify_graphify_extractors_zig_py_path"
+    ],
+    "157": [
+      "tools_graphify_graphify_file_slice_py_path"
+    ],
+    "158": [
+      "tools_graphify_graphify_global_graph_py_path"
+    ],
+    "159": [
+      "tools_graphify_graphify_google_workspace_py_any"
+    ],
+    "160": [
+      "tools_graphify_graphify_google_workspace_py_path"
+    ],
+    "161": [
+      "tools_graphify_graphify_hooks_py_path"
+    ],
+    "162": [
+      "tools_graphify_graphify_ingest_py_path"
+    ],
+    "163": [
+      "tools_graphify_graphify_install_py_path"
+    ],
+    "164": [
+      "tools_graphify_graphify_llm_py_path"
+    ],
+    "165": [
+      "tools_graphify_graphify_main_py_path"
+    ],
+    "166": [
+      "tools_graphify_graphify_manifest_ingest_py_any"
+    ],
+    "167": [
+      "tools_graphify_graphify_manifest_ingest_py_path"
+    ],
+    "168": [
+      "tools_graphify_graphify_mcp_ingest_py_any"
+    ],
+    "169": [
+      "tools_graphify_graphify_mcp_ingest_py_path"
+    ],
+    "170": [
+      "tools_graphify_graphify_paths_py_path"
+    ],
+    "171": [
+      "tools_graphify_graphify_prs_py_path"
+    ],
+    "172": [
+      "tools_graphify_graphify_querylog_py_any"
+    ],
+    "173": [
+      "tools_graphify_graphify_querylog_py_path"
+    ],
+    "174": [
+      "tools_graphify_graphify_reflect_py_any"
+    ],
+    "175": [
+      "tools_graphify_graphify_reflect_py_datetime"
+    ],
+    "176": [
+      "tools_graphify_graphify_reflect_py_path"
+    ],
+    "177": [
+      "tools_graphify_graphify_resolver_registry_py_path"
+    ],
+    "178": [
+      "tools_graphify_graphify_scip_ingest_py_any"
+    ],
+    "179": [
+      "tools_graphify_graphify_security_py_any"
+    ],
+    "180": [
+      "tools_graphify_graphify_security_py_path"
+    ],
+    "181": [
+      "tools_graphify_graphify_semantic_cleanup_py_path"
+    ],
+    "182": [
+      "tools_graphify_graphify_symbol_resolution_py_any"
+    ],
+    "183": [
+      "tools_graphify_graphify_symbol_resolution_py_path"
+    ],
+    "184": [
+      "tools_graphify_graphify_transcribe_py_path"
+    ],
+    "185": [
+      "tools_graphify_graphify_tree_html_py_any"
+    ],
+    "186": [
+      "tools_graphify_graphify_tree_html_py_path"
+    ],
+    "187": [
+      "tools_graphify_graphify_watch_py_path"
+    ],
+    "188": [
+      "tools_graphify_graphify_wiki_py_path"
+    ],
+    "189": [
+      "tools_graphify_tests_bench_extract_py_path"
+    ],
+    "190": [
+      "tools_graphify_tests_conftest_py_any"
+    ],
+    "191": [
+      "tools_graphify_tests_fixtures_objc_mixed_widgetextras_swift_string"
+    ],
+    "192": [
+      "tools_graphify_tests_fixtures_sample_cpp_string"
+    ],
+    "193": [
+      "tools_graphify_tests_fixtures_sample_cpp_t"
+    ],
+    "194": [
+      "tools_graphify_tests_fixtures_sample_cs_httpclient"
+    ],
+    "195": [
+      "tools_graphify_tests_fixtures_sample_cu_device"
+    ],
+    "196": [
+      "tools_graphify_tests_fixtures_sample_java_httpclient"
+    ],
+    "197": [
+      "tools_graphify_tests_fixtures_sample_kt_string"
+    ],
+    "198": [
+      "tools_graphify_tests_fixtures_sample_kt_t"
+    ],
+    "199": [
+      "tools_graphify_tests_fixtures_sample_metal_device"
+    ],
+    "200": [
+      "tools_graphify_tests_fixtures_sample_ps1_string"
+    ],
+    "201": [
+      "tools_graphify_tests_fixtures_sample_rs_string"
+    ],
+    "202": [
+      "tools_graphify_tests_fixtures_sample_rs_t"
+    ],
+    "203": [
+      "tools_graphify_tests_fixtures_sample_scala_int"
+    ],
+    "204": [
+      "tools_graphify_tests_fixtures_sample_scala_loggable"
+    ],
+    "205": [
+      "tools_graphify_tests_fixtures_sample_scala_string"
+    ],
+    "206": [
+      "tools_graphify_tests_fixtures_sample_swift_int"
+    ],
+    "207": [
+      "tools_graphify_tests_fixtures_sample_swift_string"
+    ],
+    "208": [
+      "tools_graphify_tests_fixtures_xaml_viewmodel_viewmodels_toolkitviewmodel_cs_string"
+    ],
+    "209": [
+      "tools_graphify_tests_test_astro_extraction_py_path"
+    ],
+    "210": [
+      "tools_graphify_tests_test_build_merge_hyperedges_and_prune_py_path"
+    ],
+    "211": [
+      "tools_graphify_tests_test_callflow_html_py_path"
+    ],
+    "212": [
+      "tools_graphify_tests_test_cli_export_py_completedprocess"
+    ],
+    "213": [
+      "tools_graphify_tests_test_cli_export_py_path"
+    ],
+    "214": [
+      "tools_graphify_tests_test_cpp_objc_cross_file_calls_py_path"
+    ],
+    "215": [
+      "tools_graphify_tests_test_cross_language_call_resolution_py_path"
+    ],
+    "216": [
+      "tools_graphify_tests_test_csharp_type_resolution_py_path"
+    ],
+    "217": [
+      "tools_graphify_tests_test_extract_code_only_cli_py_path"
+    ],
+    "218": [
+      "tools_graphify_tests_test_extraction_spec_ids_py_path"
+    ],
+    "219": [
+      "tools_graphify_tests_test_file_slice_py_path"
+    ],
+    "220": [
+      "tools_graphify_tests_test_hooks_py_path"
+    ],
+    "221": [
+      "tools_graphify_tests_test_import_extension_resolution_py_path"
+    ],
+    "222": [
+      "tools_graphify_tests_test_incremental_py_completedprocess"
+    ],
+    "223": [
+      "tools_graphify_tests_test_incremental_py_path"
+    ],
+    "224": [
+      "tools_graphify_tests_test_java_member_calls_py_path"
+    ],
+    "225": [
+      "tools_graphify_tests_test_java_type_resolution_py_path"
+    ],
+    "226": [
+      "tools_graphify_tests_test_js_import_resolution_py_path"
+    ],
+    "227": [
+      "tools_graphify_tests_test_manifest_ingest_py_path"
+    ],
+    "228": [
+      "tools_graphify_tests_test_mcp_ingest_py_path"
+    ],
+    "229": [
+      "tools_graphify_tests_test_merge_graphs_cli_py_path"
+    ],
+    "230": [
+      "tools_graphify_tests_test_multigraph_diagnostics_py_path"
+    ],
+    "231": [
+      "tools_graphify_tests_test_office_incremental_py_path"
+    ],
+    "232": [
+      "tools_graphify_tests_test_phantom_cross_package_call_py_path"
+    ],
+    "233": [
+      "tools_graphify_tests_test_phantom_external_import_py_path"
+    ],
+    "234": [
+      "tools_graphify_tests_test_pipeline_py_path"
+    ],
+    "235": [
+      "tools_graphify_tests_test_prs_py_datetime"
+    ],
+    "236": [
+      "tools_graphify_tests_test_python_import_resolution_py_path"
+    ],
+    "237": [
+      "tools_graphify_tests_test_rationale_py_path"
+    ],
+    "238": [
+      "tools_graphify_tests_test_reflect_py_completedprocess"
+    ],
+    "239": [
+      "tools_graphify_tests_test_reflect_py_path"
+    ],
+    "240": [
+      "tools_graphify_tests_test_ruby_resolution_py_path"
+    ],
+    "241": [
+      "tools_graphify_tests_test_serve_http_py_path"
+    ],
+    "242": [
+      "tools_graphify_tests_test_skill_version_warning_py_path"
+    ],
+    "243": [
+      "tools_graphify_tests_test_swift_cross_file_calls_py_path"
+    ],
+    "244": [
+      "tools_graphify_tests_test_swift_import_resolution_py_path"
+    ],
+    "245": [
+      "tools_graphify_tests_test_symbol_resolution_py_path"
+    ],
+    "246": [
+      "tools_graphify_tests_test_terraform_py_path"
+    ],
+    "247": [
+      "tools_graphify_tests_test_ts_decorators_py_path"
+    ],
+    "248": [
+      "tools_graphify_tests_test_ts_generators_py_path"
+    ],
+    "249": [
+      "tools_graphify_tests_test_ts_import_require_py_path"
+    ],
+    "250": [
+      "tools_graphify_tests_test_ts_inheritance_py_path"
+    ],
+    "251": [
+      "tools_graphify_tests_test_ts_namespace_py_path"
+    ],
+    "252": [
+      "tools_graphify_tests_test_typescript_module_extensions_py_path"
+    ],
+    "253": [
+      "tools_graphify_tests_test_vue_extraction_py_path"
+    ],
+    "254": [
+      "tools_graphify_tests_test_wheel_packaging_py_path"
+    ],
+    "255": [
+      "tools_graphify_tools_skillgen_gen_py_path"
+    ],
+    "256": [
+      "tools_graphify_worked_example_raw_validator_py_exception"
+    ],
+    "257": [
+      "tools_graphify_worked_httpx_raw_exceptions_py_exception"
+    ],
+    "258": [
+      "uint"
+    ],
+    "259": [
+      "vec"
+    ],
+    "260": [
+      "vector"
+    ],
+    "261": [
+      "void"
+    ],
+    "262": [
+      "window"
+    ],
+    "263": [
+      "scripts_templates_paininflammation",
+      "scripts_templates_paininflammation_pain_inflammation_templates",
+      "scripts_templates_paininflammation_tpl"
+    ]
+  },
+  "cohesion": {
+    "0": 0.06702605570530099,
+    "1": 0.06453028972783142,
+    "2": 0.05336951605608322,
+    "3": 0.05878084179970972,
+    "4": 0.08673469387755102,
+    "5": 0.041666666666666664,
+    "6": 0.07641196013289037,
+    "7": 0.06620209059233449,
+    "8": 0.11764705882352941,
+    "9": 0.0989247311827957,
+    "10": 0.10837438423645321,
+    "11": 0.08547008547008547,
+    "12": 0.08,
+    "13": 0.11428571428571428,
+    "14": 0.18382352941176472,
+    "15": 0.1368421052631579,
+    "16": 0.15204678362573099,
+    "17": 0.21794871794871795,
+    "18": 0.19696969696969696,
+    "19": 0.2727272727272727,
+    "20": 0.2,
+    "21": 0.4727272727272727,
+    "22": 0.24444444444444444,
+    "23": 0.2222222222222222,
+    "24": 0.2222222222222222,
+    "25": 0.3333333333333333,
+    "26": 0.42857142857142855,
+    "27": 0.4,
+    "28": 0.4,
+    "29": 0.6666666666666666,
+    "30": 0.6666666666666666,
+    "31": 0.6666666666666666,
+    "32": 0.6666666666666666,
+    "33": 0.6666666666666666,
+    "34": 0.6666666666666666,
+    "35": 0.6666666666666666,
+    "36": 0.6666666666666666,
+    "37": 0.6666666666666666,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0,
+    "52": 1.0,
+    "53": 1.0,
+    "54": 1.0,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0,
+    "71": 1.0,
+    "72": 1.0,
+    "73": 1.0,
+    "74": 1.0,
+    "75": 1.0,
+    "76": 1.0,
+    "77": 1.0,
+    "78": 1.0,
+    "79": 1.0,
+    "80": 1.0,
+    "81": 1.0,
+    "82": 1.0,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0,
+    "93": 1.0,
+    "94": 1.0,
+    "95": 1.0,
+    "96": 1.0,
+    "97": 1.0,
+    "98": 1.0,
+    "99": 1.0,
+    "100": 1.0,
+    "101": 1.0,
+    "102": 1.0,
+    "103": 1.0,
+    "104": 1.0,
+    "105": 1.0,
+    "106": 1.0,
+    "107": 1.0,
+    "108": 1.0,
+    "109": 1.0,
+    "110": 1.0,
+    "111": 1.0,
+    "112": 1.0,
+    "113": 1.0,
+    "114": 1.0,
+    "115": 1.0,
+    "116": 1.0,
+    "117": 1.0,
+    "118": 1.0,
+    "119": 1.0,
+    "120": 1.0,
+    "121": 1.0,
+    "122": 1.0,
+    "123": 1.0,
+    "124": 1.0,
+    "125": 1.0,
+    "126": 1.0,
+    "127": 1.0,
+    "128": 1.0,
+    "129": 1.0,
+    "130": 1.0,
+    "131": 1.0,
+    "132": 1.0,
+    "133": 1.0,
+    "134": 1.0,
+    "135": 1.0,
+    "136": 1.0,
+    "137": 1.0,
+    "138": 1.0,
+    "139": 1.0,
+    "140": 1.0,
+    "141": 1.0,
+    "142": 1.0,
+    "143": 1.0,
+    "144": 1.0,
+    "145": 1.0,
+    "146": 1.0,
+    "147": 1.0,
+    "148": 1.0,
+    "149": 1.0,
+    "150": 1.0,
+    "151": 1.0,
+    "152": 1.0,
+    "153": 1.0,
+    "154": 1.0,
+    "155": 1.0,
+    "156": 1.0,
+    "157": 1.0,
+    "158": 1.0,
+    "159": 1.0,
+    "160": 1.0,
+    "161": 1.0,
+    "162": 1.0,
+    "163": 1.0,
+    "164": 1.0,
+    "165": 1.0,
+    "166": 1.0,
+    "167": 1.0,
+    "168": 1.0,
+    "169": 1.0,
+    "170": 1.0,
+    "171": 1.0,
+    "172": 1.0,
+    "173": 1.0,
+    "174": 1.0,
+    "175": 1.0,
+    "176": 1.0,
+    "177": 1.0,
+    "178": 1.0,
+    "179": 1.0,
+    "180": 1.0,
+    "181": 1.0,
+    "182": 1.0,
+    "183": 1.0,
+    "184": 1.0,
+    "185": 1.0,
+    "186": 1.0,
+    "187": 1.0,
+    "188": 1.0,
+    "189": 1.0,
+    "190": 1.0,
+    "191": 1.0,
+    "192": 1.0,
+    "193": 1.0,
+    "194": 1.0,
+    "195": 1.0,
+    "196": 1.0,
+    "197": 1.0,
+    "198": 1.0,
+    "199": 1.0,
+    "200": 1.0,
+    "201": 1.0,
+    "202": 1.0,
+    "203": 1.0,
+    "204": 1.0,
+    "205": 1.0,
+    "206": 1.0,
+    "207": 1.0,
+    "208": 1.0,
+    "209": 1.0,
+    "210": 1.0,
+    "211": 1.0,
+    "212": 1.0,
+    "213": 1.0,
+    "214": 1.0,
+    "215": 1.0,
+    "216": 1.0,
+    "217": 1.0,
+    "218": 1.0,
+    "219": 1.0,
+    "220": 1.0,
+    "221": 1.0,
+    "222": 1.0,
+    "223": 1.0,
+    "224": 1.0,
+    "225": 1.0,
+    "226": 1.0,
+    "227": 1.0,
+    "228": 1.0,
+    "229": 1.0,
+    "230": 1.0,
+    "231": 1.0,
+    "232": 1.0,
+    "233": 1.0,
+    "234": 1.0,
+    "235": 1.0,
+    "236": 1.0,
+    "237": 1.0,
+    "238": 1.0,
+    "239": 1.0,
+    "240": 1.0,
+    "241": 1.0,
+    "242": 1.0,
+    "243": 1.0,
+    "244": 1.0,
+    "245": 1.0,
+    "246": 1.0,
+    "247": 1.0,
+    "248": 1.0,
+    "249": 1.0,
+    "250": 1.0,
+    "251": 1.0,
+    "252": 1.0,
+    "253": 1.0,
+    "254": 1.0,
+    "255": 1.0,
+    "256": 1.0,
+    "257": 1.0,
+    "258": 1.0,
+    "259": 1.0,
+    "260": 1.0,
+    "261": 1.0,
+    "262": 1.0,
+    "263": 0.6666666666666666
+  },
+  "gods": [
+    {
+      "id": "src_skills_registry_skillregistry",
+      "label": "SkillRegistry",
+      "degree": 39
+    },
+    {
+      "id": "src_skills_types_skill",
+      "label": "Skill",
+      "degree": 38
+    },
+    {
+      "id": "src_server_airouter_generatecontentwithfallback",
+      "label": "generateContentWithFallback()",
+      "degree": 31
+    },
+    {
+      "id": "src_contexts_authcontext_useauth",
+      "label": "useAuth()",
+      "degree": 30
+    },
+    {
+      "id": "src_skills_types_skillcontext",
+      "label": "SkillContext",
+      "degree": 30
+    },
+    {
+      "id": "src_skills_types_skillresponse",
+      "label": "SkillResponse",
+      "degree": 28
+    },
+    {
+      "id": "src_data_clinicalcasesdata_clinicalcase",
+      "label": "ClinicalCase",
+      "degree": 27
+    },
+    {
+      "id": "src_store_filestore_usefilestore",
+      "label": "useFileStore",
+      "degree": 21
+    },
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 18
+    },
+    {
+      "id": "scripts_generatecases_clinicalcasetemplate",
+      "label": "ClinicalCaseTemplate",
+      "degree": 17
+    }
+  ],
+  "surprises": [
+    {
+      "source": "ShiftHandoverModal()",
+      "target": "jspdf",
+      "source_files": [
+        "src/components/ShiftHandoverModal.tsx",
+        "package.json"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "ClinicalAssistantScreen()",
+      "target": "jspdf",
+      "source_files": [
+        "src/screens/ClinicalAssistantScreen.tsx",
+        "package.json"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "LearningWorkspace()",
+      "target": "jspdf",
+      "source_files": [
+        "src/screens/EducationHubScreen.tsx",
+        "package.json"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "startServer()",
+      "target": "generateContentWithFallback()",
+      "source_files": [
+        "server.ts",
+        "src/server/aiRouter.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "startServer()",
+      "target": "orchestrateSkills()",
+      "source_files": [
+        "server.ts",
+        "src/skills/orchestrator.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `jspdf` connect `AdminDashboardScreen.tsx` to `EducationHubScreen.tsx`, `DashboardScreen.tsx`, `ClinicalAssistantScreen.tsx`, `dependencies`?",
+      "why": "High betweenness centrality (0.109) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `dependencies` connect `dependencies` to `devDependencies`, `AdminDashboardScreen.tsx`, `clsx`, `d3`, `docx`, `dotenv`, `express`, `firebase`, `@google/genai`, `html2canvas`, `idb`, `lucide-react`, `motion`, `multer`, `react`, `react-markdown`, `recharts`, `@supabase/supabase-js`, `supermemory`, `tailwind-merge`, `@tailwindcss/vite`, `@types/d3`, `vite`, `@vitejs/plugin-react`, `@xyflow/react`, `zod`, `zustand`?",
+      "why": "High betweenness centrality (0.108) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `useAuth()` connect `useAuth` to `storage.service.ts`, `ClinicalAssistantScreen.tsx`, `AdminDashboardScreen.tsx`, `EducationHubScreen.tsx`, `App.tsx`, `DashboardScreen.tsx`, `ThemeContext.tsx`, `NotificationContext.tsx`?",
+      "why": "High betweenness centrality (0.056) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `content`, `name`, `private` to the rest of the system?",
+      "why": "294 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `types.ts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06702605570530099 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `index.ts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06453028972783142 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `storage.service.ts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.05336951605608322 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

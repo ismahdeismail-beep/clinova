@@ -133,6 +133,17 @@ async function syncRelationships() {
   console.log(`   ✅ ${n} relationships synced`);
 }
 
+async function syncDiseases() {
+  console.log('\n🦠 Syncing diseases registry...');
+  const rows = Object.entries(DISEASES).map(([id, disease]) => ({
+    id,
+    name: (disease as any).name,
+    aliases: (disease as any).aliases || [],
+  }));
+  const n = await batchUpsert('diseases', rows, 'id', 'diseases');
+  console.log(`   ✅ ${n} diseases synced`);
+}
+
 async function syncDiseaseMonographs() {
   console.log('\n📄 Syncing disease monographs (placeholders)...');
   const rows = Object.entries(DISEASES).map(([id, disease]) => ({
@@ -161,6 +172,7 @@ async function main() {
   await syncDiseaseNodes();
   await syncCaseNodes();
   await syncRelationships();
+  await syncDiseases();
   await syncDiseaseMonographs();
 
   console.log('\n' + '='.repeat(60));

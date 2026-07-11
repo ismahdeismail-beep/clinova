@@ -18,6 +18,41 @@ import {
 } from '../data/clinicalCasesData';
 import { getIntegratedUnitId } from '../data/curriculum';
 
+export type CaseDifficulty = 'Beginner' | 'Intermediate' | 'Advanced';
+
+/** Minimal payload for creating a new case via the "Add Patient" flow. */
+export interface AddCaseInput {
+  title: string;
+  specialty: string;
+  disease: string;
+  difficulty: CaseDifficulty;
+  patientName?: string;
+  demographics?: string;
+  facilitySetting?: string;
+  chiefComplaint?: string;
+  hpi?: string;
+  pmh?: string;
+  medHx?: string;
+  allergies?: string;
+  pe?: string;
+  vitals?: string;
+  labs?: string;
+  imaging?: string;
+  diagnosis?: string;
+  ddx?: string[];
+  goals?: string;
+  pharm?: string;
+  nonPharm?: string;
+  carePlan?: string;
+  dtps?: string;
+  monitoring?: string;
+  counselling?: string;
+  followUp?: string;
+  pearls?: string;
+  references?: string[];
+  pharmacologySubject?: string;
+}
+
 // ── Row mapping (snake_case DB → camelCase ClinicalCase) ──────────────────
 function mapRow(row: any): ClinicalCase {
   return {
@@ -233,6 +268,100 @@ export const ClinicalCaseService = {
     const bundledCount = ALL_CLINICAL_CASES.filter((c) => c.status === status).length;
     // Live + bundled; overlap is rare (distinct seeds) so this is a safe approximation.
     return liveCount + bundledCount;
+  },
+
+  /** Create a new clinical case (e.g. an "Add Patient" submission). */
+  async addCase(input: AddCaseInput): Promise<ClinicalCase> {
+    if (!supabase) {
+      // Offline fallback: synthesize a local case so the UI still works.
+      const local: ClinicalCase = {
+        id: `local-${Date.now()}`,
+        seedId: `local-${Date.now()}`,
+        title: input.title,
+        specialty: input.specialty,
+        disease: input.disease,
+        difficulty: input.difficulty,
+        patientName: input.patientName || '',
+        facilitySetting: input.facilitySetting || '',
+        demographics: input.demographics || '',
+        chiefComplaint: input.chiefComplaint || '',
+        hpi: input.hpi || '',
+        pmh: input.pmh || '',
+        medHx: input.medHx || '',
+        allergies: input.allergies || '',
+        pe: input.pe || '',
+        vitals: input.vitals || '',
+        labs: input.labs || '',
+        imaging: input.imaging || '',
+        diagnosis: input.diagnosis || '',
+        ddx: input.ddx ?? [],
+        goals: input.goals || '',
+        pharm: input.pharm || '',
+        nonPharm: input.nonPharm || '',
+        carePlan: input.carePlan || '',
+        dtps: input.dtps || '',
+        monitoring: input.monitoring || '',
+        counselling: input.counselling || '',
+        followUp: input.followUp || '',
+        pearls: input.pearls || '',
+        references: input.references ?? [],
+        status: 'published',
+        createdAt: new Date().toISOString(),
+        createdBy: 'local',
+        createdByName: 'You',
+      };
+      return local;
+    }
+
+    const { data: authData } = await supabase.auth.getUser();
+    const userId = authData.user?.id ?? null;
+    const fullName =
+      (authData.user?.user_metadata?.full_name as string) ||
+      authData.user?.email ||
+      'You';
+
+    const row = {
+      title: input.title,
+      specialty: input.specialty,
+      disease: input.disease,
+      difficulty: input.difficulty,
+      patient_name: input.patientName || null,
+      demographics: input.demographics || null,
+      facility_setting: input.facilitySetting || null,
+      chief_complaint: input.chiefComplaint || null,
+      hpi: input.hpi || null,
+      pmh: input.pmh || null,
+      med_hx: input.medHx || null,
+      allergies: input.allergies || null,
+      pe: input.pe || null,
+      vitals: input.vitals || null,
+      labs: input.labs || null,
+      imaging: input.imaging || null,
+      diagnosis: input.diagnosis || null,
+      ddx: input.ddx ?? [],
+      goals: input.goals || null,
+      pharm: input.pharm || null,
+      non_pharm: input.nonPharm || null,
+      care_plan: input.carePlan || null,
+      dtps: input.dtps || null,
+      monitoring: input.monitoring || null,
+      counselling: input.counselling || null,
+      follow_up: input.followUp || null,
+      pearls: input.pearls || null,
+      references: input.references ?? [],
+      status: 'published',
+      created_by: userId,
+      created_by_name: fullName,
+      pharmacology_subject: input.pharmacologySubject || null,
+    };
+
+    const { data, error } = await supabase
+      .from('clinical_cases')
+      .insert(row)
+      .select()
+      .single();
+    if (error) throw error;
+    return mapRow(data);
   },
 };
 

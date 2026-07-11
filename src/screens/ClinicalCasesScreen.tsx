@@ -5,7 +5,8 @@ import {
   Smile, Pill, Baby, User, AlertTriangle, ChevronRight,
   Search, BookOpen, Stethoscope, ChevronLeft, BrainCircuit,
   Loader2, Play, Sparkles,
-  Award, Sliders, HelpCircle, Book, FileText, Compass, Folder, Copy, Edit3, File, Link, CheckSquare, X
+  Award, Sliders, HelpCircle, Book, FileText, Compass, Folder, Copy, Edit3, File, Link, CheckSquare, X,
+  UserPlus
 } from 'lucide-react';
 import Markdown from 'react-markdown';
 import { ClinicalCase, SPECIALTIES, ALL_CLINICAL_CASES } from '../data/clinicalCasesData';
@@ -17,6 +18,7 @@ import {
 } from '../components/clinical';
 import { parseVitals, parseLabs, parseDtps, toArray, toText } from '../lib/clinicalParsers';
 import { extractMedicines } from '../lib/clinicalTerms';
+import AddPatientModal from '../components/AddPatientModal';
 
 export default function ClinicalCasesScreen() {
   const navigate = useNavigate();
@@ -74,6 +76,7 @@ export default function ClinicalCasesScreen() {
   // Disease brain subsection state
   const [showBrainTree, setShowBrainTree] = useState(false);
   const [filterSpecialty, setFilterSpecialty] = useState<string | null>(null);
+  const [showAddPatient, setShowAddPatient] = useState(false);
   const [selectedSubsection, setSelectedSubsection] = useState<{ id: string, title: string, category: string, content: string, cta?: string, action?: string } | null>(null);
 
   // AI Tutor states
@@ -648,18 +651,26 @@ export default function ClinicalCasesScreen() {
             </p>
           </div>
 
-          {!selectedSpecialty && (
-            <div className="relative w-full md:w-96">
-              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" size={18} />
-              <input
-                type="text"
-                  placeholder="Search cases, diseases, or drugs..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
-              />
-            </div>
-          )}
+          <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+            {!selectedSpecialty && (
+              <div className="relative w-full md:w-96">
+                <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" size={18} />
+                <input
+                  type="text"
+                    placeholder="Search cases, diseases, or drugs..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full pl-10 pr-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
+                />
+              </div>
+            )}
+            <button
+              onClick={() => setShowAddPatient(true)}
+              className="flex items-center justify-center gap-2 px-4 py-3 rounded-2xl bg-[var(--primary)] text-[var(--primary-foreground)] text-sm font-semibold hover:opacity-90 transition-all shadow-sm whitespace-nowrap"
+            >
+              <UserPlus size={16} /> Add Patient
+            </button>
+          </div>
         </div>
 
         {/* Breadcrumb Navigation */}
@@ -1055,11 +1066,11 @@ export default function ClinicalCasesScreen() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Therapeutic Goals</h4>
-                          <p className="text-sm text-[var(--text)] leading-relaxed">{selectedCase.goals}</p>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.goals || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Drug Therapy Problems</h4>
-                          <p className="text-sm text-amber-600 font-medium leading-relaxed bg-amber-500/10 p-3 rounded-xl border border-amber-500/20">{selectedCase.dtps}</p>
+                          <p className="text-sm text-amber-600 font-medium leading-relaxed bg-amber-500/10 p-3 rounded-xl border border-amber-500/20"><HighlightText text={selectedCase.dtps || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                       </div>
 
@@ -1069,26 +1080,26 @@ export default function ClinicalCasesScreen() {
                         </h4>
                         <div>
                           <h5 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Pharmacological Management</h5>
-                          <p className="text-sm text-[var(--text)] leading-relaxed">{selectedCase.pharm}</p>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.pharm || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                         <div>
                           <h5 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Non-Pharmacological Management</h5>
-                          <p className="text-sm text-[var(--text)] leading-relaxed">{selectedCase.nonPharm}</p>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.nonPharm || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                         <div>
                           <h5 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Comprehensive Care Plan</h5>
-                          <p className="text-sm text-[var(--text)] leading-relaxed">{selectedCase.carePlan}</p>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.carePlan || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                       </div>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Monitoring Parameters</h4>
-                          <p className="text-sm text-[var(--text)] leading-relaxed">{selectedCase.monitoring}</p>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.monitoring || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Patient Counselling</h4>
-                          <p className="text-sm text-[var(--text)] leading-relaxed">{selectedCase.counselling}</p>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.counselling || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                       </div>
                     </div>
@@ -1098,7 +1109,7 @@ export default function ClinicalCasesScreen() {
                   {/* Pearls Section */}
                   <Card className="p-6">
                     <Section id="pearls" title="Clinical Pearls & References" icon={<Sparkles size={16} />}>
-                      <p className="text-sm text-[var(--text)] leading-relaxed mb-4">{selectedCase.pearls}</p>
+                      <p className="text-sm text-[var(--text)] leading-relaxed mb-4"><HighlightText text={selectedCase.pearls || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
                     <div className="border-t border-[var(--border)] pt-4">
                       <h4 className="text-xs font-bold text-[var(--text-muted)] mb-2">References:</h4>
                       <ul className="space-y-1">
@@ -1232,7 +1243,47 @@ export default function ClinicalCasesScreen() {
               </div>
             </div>
           )}
-          
+
+          <AddPatientModal
+            open={showAddPatient}
+            onClose={() => setShowAddPatient(false)}
+            onCreated={(created) => {
+              const newCase: ClinicalCase = {
+                id: created.id || `local-${Date.now()}`,
+                seedId: created.id || `local-${Date.now()}`,
+                title: created.title,
+                specialty: created.specialty,
+                disease: created.disease,
+                difficulty: created.difficulty,
+                demographics: created.demographics || '',
+                chiefComplaint: created.chiefComplaint || '',
+                hpi: created.hpi || '',
+                pmh: '', medHx: '', allergies: '', pe: '', vitals: '', labs: '',
+                imaging: undefined,
+                diagnosis: created.diagnosis || '',
+                ddx: [], goals: '',
+                pharm: created.pharm || '',
+                nonPharm: created.nonPharm || '',
+                carePlan: created.carePlan || '',
+                dtps: '',
+                monitoring: created.monitoring || '',
+                counselling: created.counselling || '',
+                followUp: created.followUp || '',
+                pearls: created.pearls || '',
+                references: [],
+                createdAt: new Date().toISOString(),
+                status: 'published',
+                createdBy: 'local',
+                createdByName: 'You',
+                patientName: created.patientName,
+                facilitySetting: created.facilitySetting,
+              };
+              setAllCases((prev) => [newCase, ...prev]);
+              setFilterSpecialty(null);
+              setSearchQuery('');
+            }}
+          />
+
         </div>
       </div>
     </div>

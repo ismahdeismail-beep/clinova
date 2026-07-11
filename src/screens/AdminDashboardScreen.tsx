@@ -1050,7 +1050,7 @@ export default function AdminDashboardScreen() {
       try {
         const res = await fetch('/api/admin/providers');
         if (res.ok) {
-          setAuditLogs(prev => [...prev, `[INFO] ${new Date().toLocaleTimeString()} - AI Engine: ONLINE. Multi-service routing active.`]);
+          setAuditLogs(prev => [...prev, `[INFO] ${new Date().toLocaleTimeString()} - Engine: ONLINE. Multi-service routing active.`]);
         } else {
           throw new Error('Bad response');
         }
@@ -1540,8 +1540,8 @@ export default function AdminDashboardScreen() {
                   <CheckCircle size={10} /> ONLINE
                 </span>
               </div>
-              <h3 className="font-bold text-[var(--text)]">AI Services</h3>
-              <p className="text-xs text-[var(--text-muted)] mt-1">Multiple AI services configured and operational.</p>
+              <h3 className="font-bold text-[var(--text)]">Service Status</h3>
+              <p className="text-xs text-[var(--text-muted)] mt-1">Multiple services configured and operational.</p>
               <div className="mt-4 pt-4 border-t border-[var(--border)] grid grid-cols-2 gap-2 text-xs">
                 <div>
                   <span className="block text-[var(--text-muted)]">Active</span>
@@ -1725,7 +1725,7 @@ export default function AdminDashboardScreen() {
             <div className="p-5 border-b border-[var(--border)] flex justify-between items-center">
               <div className="flex items-center gap-2">
                  <Cpu size={20} className="text-[var(--primary)]" />
-                 <h3 className="font-bold text-sm text-[var(--text)] uppercase tracking-wider">AI Provider Router Performance</h3>
+                  <h3 className="font-bold text-sm text-[var(--text)] uppercase tracking-wider">Provider Router Performance</h3>
               </div>
               <span className="text-xs font-semibold px-2.5 py-1 bg-[var(--primary)]/10 text-[var(--primary)] rounded-full">Load Balancer Active</span>
             </div>

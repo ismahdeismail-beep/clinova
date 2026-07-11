@@ -764,7 +764,7 @@ export default function CurriculumGraph() {
                         <span className="text-[var(--primary)]">{selectedNode.data.estimatedHours} Hours</span>
                       </div>
                       <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
-                        This subfolder is focused on board preparation, OSCE training, and pharmacology workflows. Write notes and upload slides to unlock the AI Study Assistant.
+                        This subfolder is focused on board preparation, OSCE training, and pharmacology workflows. Write notes and upload slides to unlock the Study Assistant.
                       </p>
                     </div>
                   )}

@@ -1007,7 +1007,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
 
   const tabs = [
     { id: 'overview', label: 'Study Guide' },
-    { id: 'tutor', label: 'AI Tutor' },
+    { id: 'tutor', label: 'Clinical Tutor' },
     { id: 'notes', label: 'My Notes' },
     { id: 'flashcards', label: 'Flashcards' },
     { id: 'mcqs', label: 'Practice Quiz' },
@@ -1428,7 +1428,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                     {includeSummary && (
                       <div className="mb-8 page-break-after">
                         <h2 className="text-base font-black text-slate-950 border-b-2 border-slate-900 pb-1.5 uppercase tracking-wide mb-4">
-                          1. AI Study Guide & High-Yield Summary
+                          1. Study Guide & High-Yield Summary
                         </h2>
                         {exportData.summary ? (
                           <div className="prose prose-slate max-w-none prose-xs text-slate-800">
@@ -1671,7 +1671,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
       }
     } catch (err) {
       console.error(err);
-      alert('Failed to compile your AI Study Guide. Please try again.');
+      alert('Failed to compile your Study Guide. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -1704,7 +1704,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
             <Sparkles size={22} />
           </div>
           <div>
-            <p className="text-[10px] text-[var(--text-muted)] uppercase font-extrabold tracking-wider">AI Knowledge</p>
+            <p className="text-[10px] text-[var(--text-muted)] uppercase font-extrabold tracking-wider">Knowledge</p>
             <p className="text-xl font-black text-[var(--text)]">{summary ? 'Study Guide Active' : 'Ready'}</p>
           </div>
         </div>
@@ -1716,7 +1716,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
           <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-xs relative">
             <div className="flex items-center justify-between mb-6 pb-4 border-b border-[var(--border)]/40">
               <h3 className="text-lg font-bold text-[var(--text)] flex items-center gap-2">
-                <FileSignature className="text-[var(--primary)]" size={20} /> AI Study Guide & Summary
+                <FileSignature className="text-[var(--primary)]" size={20} /> Study Guide & Summary
               </h3>
               {(unitFiles.length > 0 || customNotes.trim()) && (
                 <div className="flex items-center gap-2">
@@ -1833,7 +1833,7 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
   // Initialize tutor message
   useEffect(() => {
     setTutorChat([
-      { role: 'assistant', content: `Hello! I am your AI Clinical Tutor for **${currentFolderName}**. \n\nI have automatically indexed any revision notes you wrote and documents you uploaded for this folder. Ask me any pharmacological, therapeutic, or OSCE board exam questions regarding this topic!` }
+      { role: 'assistant', content: `Hello! I am your Clinical Tutor for **${currentFolderName}**. \n\nI have automatically indexed any revision notes you wrote and documents you uploaded for this folder. Ask me any pharmacological, therapeutic, or OSCE board exam questions regarding this topic!` }
     ]);
   }, [currentFolderName]);
 
@@ -1886,7 +1886,7 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
       console.error('Error asking tutor:', error);
       setTutorChat([...newChat, { 
         role: 'assistant', 
-        content: `⚠️ Sorry, there was an error connecting to the AI Tutor service. Please verify your connection or try again.` 
+        content: `⚠️ Sorry, there was an error connecting to the Clinical Tutor service. Please verify your connection or try again.` 
       }]);
     } finally {
       setIsTutorThinking(false);
@@ -2567,7 +2567,7 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName, us
               {isAnswered && (
                 <div className="bg-purple-50 dark:bg-purple-950/20 border border-purple-200/40 rounded-2xl p-5 space-y-2 animate-in slide-in-from-top-2 duration-200">
                   <h5 className="text-xs font-extrabold uppercase tracking-wider text-purple-700 dark:text-purple-300 flex items-center gap-1">
-                    <BrainCircuit size={14} /> AI Clinical Explanation
+                    <BrainCircuit size={14} /> Clinical Explanation
                   </h5>
                   <p className="text-xs text-[var(--text-muted)] font-semibold leading-relaxed">{quizzes[currentIndex].explanation}</p>
                 </div>

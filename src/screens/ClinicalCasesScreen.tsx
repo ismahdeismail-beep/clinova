@@ -58,7 +58,7 @@ export default function ClinicalCasesScreen() {
         setTutorChat([
           {
             role: 'assistant',
-            content: `Welcome to the Clinical Case on **${match.title}**. I am your AI Clinical Tutor. I have loaded the case details, patient history, guidelines for ${match.disease}, and relevant pharmacological concepts. How can I assist you with your clinical reasoning for this case?`
+            content: `Welcome to the Clinical Case on **${match.title}**. I am your Clinical Tutor. I have loaded the case details, patient history, guidelines for ${match.disease}, and relevant pharmacological concepts. How can I assist you with your clinical reasoning for this case?`
           }
         ]);
       }
@@ -93,7 +93,7 @@ export default function ClinicalCasesScreen() {
     setTutorChat([
       {
         role: 'assistant',
-        content: `Welcome to the Clinical Case on **${clinicalCase.title}**. I am your AI Clinical Tutor. I have loaded the case details, patient history, guidelines for ${clinicalCase.disease}, and relevant pharmacological concepts. How can I assist you with your clinical reasoning for this case?`
+        content: `Welcome to the Clinical Case on **${clinicalCase.title}**. I am your Clinical Tutor. I have loaded the case details, patient history, guidelines for ${clinicalCase.disease}, and relevant pharmacological concepts. How can I assist you with your clinical reasoning for this case?`
       }
     ]);
   };
@@ -283,7 +283,7 @@ export default function ClinicalCasesScreen() {
         category: 'Clinical Foundation',
         icon: <Activity className="text-rose-500" size={18} />,
         content: `### Pathophysiological Cascade\n\n${brain.pathology}\n\n*   **Cellular Remodeling**: Chronic structural changes.\n*   **Neurohormonal Stressors**: Target pathways for active pharmacotherapy.`,
-        cta: 'Ask AI Tutor about Pathophysiology',
+        cta: 'Ask the Tutor about Pathophysiology',
         action: 'tutor'
       },
       {
@@ -561,7 +561,7 @@ export default function ClinicalCasesScreen() {
         setTutorChat([
           {
             role: 'assistant',
-            content: `Hello! I am your AI Clinical Tutor. Let's study **${selectedDisease}** pharmacology and therapeutics together. What questions do you have about the pathophysiology, drug guidelines, or clinical pharmacy care plans?`
+            content: `Hello! I am your Clinical Tutor. Let's study **${selectedDisease}** pharmacology and therapeutics together. What questions do you have about the pathophysiology, drug guidelines, or clinical pharmacy care plans?`
           }
         ]);
         // Simulate clicking an interactive case or tutor discussion
@@ -1086,7 +1086,7 @@ export default function ClinicalCasesScreen() {
                         <BrainCircuit size={20} />
                       </div>
                       <div>
-                        <h3 className="font-bold text-[var(--text)]">AI Case Discussion</h3>
+                        <h3 className="font-bold text-[var(--text)]">Case Discussion</h3>
                         <p className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-bold">Context-Aware Tutor</p>
                       </div>
                     </div>

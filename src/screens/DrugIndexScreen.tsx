@@ -786,7 +786,7 @@ export default function DrugIndexScreen() {
                   }`}
                 >
                   <Sparkles size={12} className="text-[var(--primary)] animate-pulse" />
-                  AI Document Scan
+                  Document Scan
                 </button>
               </div>
 
@@ -1039,7 +1039,7 @@ export default function DrugIndexScreen() {
                 ) : (
                   <>
                     <Sparkles size={16} />
-                    Evaluate Regimen Safety (AI Check)
+                    Evaluate Regimen Safety
                   </>
                 )}
               </button>

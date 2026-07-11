@@ -650,7 +650,7 @@ export default function OralPracticeScreen() {
   const modeData = [
     {
       id: 'viva',
-      title: 'AI Viva Exam',
+      title: 'Viva Exam',
       description: 'Simulate high-stakes medical oral examinations with sequential examiner grilling.',
       badge: 'Viva Voce',
       color: 'from-purple-500/10 to-indigo-500/10 border-purple-500/20 text-purple-400',

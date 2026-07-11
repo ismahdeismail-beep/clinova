@@ -499,7 +499,7 @@ export default function PatientsScreen() {
             <div className="px-6 py-4 bg-gradient-to-r from-blue-50/50 to-indigo-50/50 dark:from-blue-950/20 dark:to-indigo-950/20 border-b border-[var(--border)] text-left flex items-center justify-between">
               <div className="flex flex-col">
                 <span className="text-xs font-bold text-[var(--primary)] flex items-center gap-1">
-                  <Sparkles size={14} /> AI Auto-Fill
+                  <Sparkles size={14} /> Auto-Fill
                 </span>
                 <span className="text-xs text-[var(--text-muted)] mt-0.5">Upload a document, image, or audio to extract patient details.</span>
               </div>

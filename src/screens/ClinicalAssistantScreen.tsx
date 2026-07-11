@@ -1181,7 +1181,7 @@ export default function ClinicalAssistantScreen() {
                   <span>● Online</span>
                 </div>
               </div>
-              <p className="text-xs text-[var(--text-muted)] truncate hidden xs:block mt-0.5">Powered by AI Clinical Decision Support</p>
+              <p className="text-xs text-[var(--text-muted)] truncate hidden xs:block mt-0.5">Clinical Decision Support</p>
             </div>
           </div>
           

@@ -906,7 +906,7 @@ export default function PharmacotherapyReviewScreen() {
                 </div>
                 <div>
                   <h3 className="text-sm sm:text-md font-bold text-[var(--text)] flex flex-wrap items-center gap-2">
-                    Clinova AI Safety Intelligence Report
+                    Clinova Safety Intelligence Report
                     <span className={`text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full ${
                       safetyVerification.safety_flags_identified && safetyVerification.safety_flags_identified.length > 0 
                         ? 'bg-amber-100 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 border border-amber-200/20' 
@@ -1102,7 +1102,7 @@ export default function PharmacotherapyReviewScreen() {
                     <div className="w-8 h-8 rounded-lg bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)]">
                       <BrainCircuit size={18} className="animate-pulse" />
                     </div>
-                    <span className="text-sm font-bold text-[var(--primary)]">AI Auto-Fill Options</span>
+                    <span className="text-sm font-bold text-[var(--primary)]">Auto-Fill Options</span>
                   </div>
                   <span className="text-[10px] font-mono text-[var(--primary)] bg-[var(--primary)]/10 px-2.5 py-0.5 rounded border border-[var(--primary)]/20 hidden sm:inline-block">
                     Option-controlled
@@ -1466,7 +1466,7 @@ export default function PharmacotherapyReviewScreen() {
                       </>
                     ) : (
                       <>
-                        <BrainCircuit size={14} /> AI Treatment Suggestion
+                        <BrainCircuit size={14} /> Treatment Suggestion
                       </>
                     )}
                   </button>
@@ -1596,7 +1596,7 @@ export default function PharmacotherapyReviewScreen() {
                       </>
                     ) : (
                       <>
-                        <BrainCircuit size={14} /> AI Generate Counselling
+                        <BrainCircuit size={14} /> Generate Counselling
                       </>
                     )}
                   </button>
@@ -1690,7 +1690,7 @@ export default function PharmacotherapyReviewScreen() {
               <div className="flex items-center gap-2.5">
                 <BrainCircuit className="text-[var(--primary)]" size={22} />
                 <div>
-                  <h3 className="font-semibold text-[var(--text)] text-sm">Clinova AI Clinical Assistant</h3>
+                  <h3 className="font-semibold text-[var(--text)] text-sm">Clinova Clinical Assistant</h3>
                   <p className="text-[10px] text-[var(--text-muted)]">KDI-integrated Guideline Engine</p>
                 </div>
               </div>

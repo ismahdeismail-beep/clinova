@@ -444,7 +444,7 @@ function ResourcesTab({ onUploadClick }: { onUploadClick: () => void }) {
                         </span>
                         {doc.aiProcessed && (
                            <span className="flex items-center gap-1.5 text-blue-600 dark:text-blue-400 text-[11px] font-bold">
-                             <Sparkles size={12} /> AI Integrated
+                             <Sparkles size={12} /> Smart Integrated
                            </span>
                         )}
                       </div>
@@ -743,7 +743,7 @@ function SettingsTab() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Left panel: Checkboxes */}
           <div className="space-y-4">
-            <h4 className="font-bold text-[var(--text)] text-xs uppercase tracking-wider text-[var(--primary)]">Ingestion Pipeline</h4>
+            <h4 className="font-bold text-[var(--text)] text-xs uppercase tracking-wider text-[var(--primary)]">Content Processing</h4>
             
             <label className="flex items-start gap-3 p-4 border border-[var(--border)] rounded-xl bg-[var(--surface-dim)]/30 hover:bg-[var(--surface-dim)] transition-all cursor-pointer">
               <input 

@@ -41,7 +41,7 @@ export default function SettingsScreen() {
               }`}
             >
               <Cpu size={16} />
-              AI Configuration
+              Service Configuration
             </button>
           </div>
         )}
@@ -155,7 +155,7 @@ export default function SettingsScreen() {
               <div className="flex items-start justify-between gap-4 border-b border-[var(--border)] pb-4">
                 <div>
                   <h3 className="text-lg font-bold text-[var(--text)] flex items-center gap-2">
-                    <Key size={20} className="text-amber-500" /> Clinova AI Configuration
+                    <Key size={20} className="text-amber-500" /> Clinova Configuration
                   </h3>
                   <p className="text-xs text-[var(--text-muted)] mt-1">Configure the credentials that power clinical autofill, pharmacy index chat, and case studies.</p>
                 </div>
@@ -167,7 +167,7 @@ export default function SettingsScreen() {
               {/* Instructions Panel */}
               <div className="bg-[var(--surface-dim)] border border-[var(--border)] p-5 rounded-xl space-y-4">
                 <h4 className="font-bold text-sm text-[var(--text)] flex items-center gap-2">
-                  <HelpCircle size={16} className="text-[var(--primary)]" /> About AI Service Credentials
+                  <HelpCircle size={16} className="text-[var(--primary)]" /> About Service Credentials
                 </h4>
                 
                 <div className="text-sm text-[var(--text-muted)] space-y-3 leading-relaxed">
@@ -184,7 +184,7 @@ export default function SettingsScreen() {
                 <div className="divide-y divide-[var(--border)] border border-[var(--border)] rounded-xl overflow-hidden">
                   <div className="p-4 bg-[var(--surface-dim)] flex flex-col sm:flex-row justify-between sm:items-center gap-3">
                     <div>
-                      <span className="font-mono text-xs font-bold text-[var(--primary)] bg-[var(--primary)]/10 px-2 py-0.5 rounded">Clinova AI Key</span>
+                      <span className="font-mono text-xs font-bold text-[var(--primary)] bg-[var(--primary)]/10 px-2 py-0.5 rounded">Clinova Key</span>
                       <p className="text-xs text-[var(--text-muted)] mt-1.5">Powers the Clinical Assistant, automatic form-filling recommendations, drug lookup monographs, and exam study generators.</p>
                     </div>
                     <span className="text-[10px] font-bold text-amber-600 bg-amber-500/10 border border-amber-500/20 px-2.5 py-1 rounded-full uppercase shrink-0 w-fit">

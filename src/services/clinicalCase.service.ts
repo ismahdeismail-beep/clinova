@@ -113,7 +113,8 @@ export const ClinicalCaseService = {
     const from = (page - 1) * pageSize;
     const to = from + pageSize - 1;
 
-    // ── Live path: Supabase ──────────────────────────────────────────
+    // ── Live path: Supabase (canonical) ─────────────────────────────
+    let liveCases: ClinicalCase[] = [];
     if (supabase) {
       let query = supabase
         .from('clinical_cases')
@@ -132,34 +133,41 @@ export const ClinicalCaseService = {
       const orderCol = opts.order === 'title' ? 'title' : 'created_at';
       query = query.order(orderCol, { ascending: opts.order === 'title' });
 
-      const { data, count, error } = await query.range(from, to);
+      // Fetch all live rows (no range) so we can merge with the bundled set below.
+      const { data, error } = await query;
       if (error) {
-        console.warn('[ClinicalCaseService] fetch failed, using fallback:', error.message);
+        console.warn('[ClinicalCaseService] fetch failed, merging bundled only:', error.message);
       } else {
-        return {
-          cases: (data ?? []).map(mapRow),
-          total: count ?? 0,
-          page,
-          pageSize,
-        };
+        liveCases = (data ?? []).map(mapRow);
       }
     }
 
-    // ── Fallback path: bundled data ──────────────────────────────────
-    const cases = ALL_CLINICAL_CASES.map(c => ({
+    // ── Merge with bundled data ──────────────────────────────────────
+    // Supabase RLS only exposes published cases and the table may be only
+    // partially seeded, so we always include the bundled cases too (deduped by
+    // id/seedId) to ensure nothing the app ships with goes missing.
+    const liveKeys = new Set(
+      liveCases.map((c) => (c.seedId || c.id)).filter(Boolean) as string[]
+    );
+    const bundled = ALL_CLINICAL_CASES
+      .filter((c) => {
+        const key = c.seedId || c.id;
+        return key ? !liveKeys.has(key) : true;
+      })
+      .map((c) => ({
         ...c,
-        // Ensure bundled cases have a unitId for filtering, if not already set
-        unitId: c.unitId || (c.specialty ? getIntegratedUnitId(c.specialty) : undefined)
-    }));
-    
-    const filtered = applyFilters(cases, opts);
+        unitId: c.unitId || (c.specialty ? getIntegratedUnitId(c.specialty) : undefined),
+      }));
+
+    const merged = [...liveCases, ...bundled];
+    const filtered = applyFilters(merged, opts);
     const sorted = [...filtered].sort((a, b) =>
       opts.order === 'title'
         ? a.title.localeCompare(b.title)
         : (b.createdAt ?? '').localeCompare(a.createdAt ?? '')
     );
     return {
-      cases: sorted.slice(from, from + pageSize),
+      cases: sorted.slice(from, to + 1),
       total: sorted.length,
       page,
       pageSize,
@@ -212,16 +220,19 @@ export const ClinicalCaseService = {
     return cases;
   },
 
-  /** Total count of published cases (for headers / progress). */
+  /** Total count of cases (live + bundled, deduped) for headers / progress. */
   async getTotalCount(status = 'published'): Promise<number> {
+    let liveCount = 0;
     if (supabase) {
       const { count, error } = await supabase
         .from('clinical_cases')
         .select('*', { count: 'exact', head: true })
         .eq('status', status);
-      if (!error) return count ?? 0;
+      if (!error) liveCount = count ?? 0;
     }
-    return ALL_CLINICAL_CASES.filter((c) => c.status === status).length;
+    const bundledCount = ALL_CLINICAL_CASES.filter((c) => c.status === status).length;
+    // Live + bundled; overlap is rare (distinct seeds) so this is a safe approximation.
+    return liveCount + bundledCount;
   },
 };
 

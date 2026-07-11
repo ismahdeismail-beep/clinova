@@ -33,7 +33,9 @@ import {
 } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { db, auth } from '../lib/firebase';
-import { collection, getDocs, doc, addDoc, updateDoc, deleteDoc, query, orderBy, limit, setDoc, writeBatch } from 'firebase/firestore';
+import { supabase } from '../lib/supabase';
+import { getIntegratedUnitId } from '../data/curriculum';
+import { collection, getDocs, doc, addDoc, updateDoc, deleteDoc, query, orderBy, limit, setDoc } from 'firebase/firestore';
 import { handleFirestoreError, OperationType } from '../lib/firestore-diagnostics';
 import { StorageService } from '../services/storage.service';
 import { useAuth } from '../contexts/AuthContext';
@@ -53,6 +55,7 @@ interface ClinicalCase {
   status: 'published' | 'draft';
   createdBy?: string;
   createdByName?: string;
+  unitId?: string;
   // Rich optional properties for curriculum cases compatibility
   specialty?: string;
   disease?: string;
@@ -490,58 +493,29 @@ export default function AdminDashboardScreen() {
       // Analyze newly created cases too so the final report is accurate
       casesToCreate.forEach(analyzeCase);
 
-      const batch = writeBatch(db);
-
-      // Create missing gap-filling cases in Firestore
-      casesToCreate.forEach(c => {
-        const docRef = doc(db, 'clinical_cases', c.id);
-        batch.set(docRef, {
-          title: c.title,
-          specialty: c.specialty,
-          disease: c.disease,
-          difficulty: c.difficulty,
-          patientName: c.patientName,
-          facilitySetting: c.facilitySetting,
-          demographics: c.demographics,
-          chiefComplaint: c.chiefComplaint,
-          hpi: c.hpi,
-          pmh: c.pmh,
-          medHx: c.medHx,
-          allergies: c.allergies,
-          pe: c.pe,
-          vitals: c.vitals,
-          labs: c.labs,
-          imaging: c.imaging || '',
-          diagnosis: c.diagnosis,
-          ddx: c.ddx || [],
-          goals: c.goals,
-          pharm: c.pharm,
-          nonPharm: c.nonPharm,
-          carePlan: c.carePlan,
-          dtps: c.dtps,
-          monitoring: c.monitoring,
-          counselling: c.counselling,
-          followUp: c.followUp,
-          pearls: c.pearls,
-          references: c.references || [],
-          createdAt: new Date().toISOString(),
-          status: 'published',
-          createdBy: 'system',
-          createdByName: 'Clinova Compliance Generator'
+      // Persist gap-filling cases to Supabase (canonical store) via the server API.
+      if (casesToCreate.length > 0) {
+        setGenerationProgress(`Writing ${casesToCreate.length} gap-filling cases to Supabase...`);
+        const res = await fetch('/api/admin/clinical-cases', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            cases: casesToCreate.map(c => ({
+              ...c,
+              status: 'published',
+              createdBy: 'system',
+              createdByName: 'Clinova Compliance Generator'
+            }))
+          })
         });
-      });
+        if (!res.ok) throw new Error((await res.json()).error || 'Failed to write gap-filling cases');
+      }
 
-      // Resolve duplicates by deleting duplicate documents in Firestore
-      duplicateCasesToResolve.forEach(dup => {
+      // Resolve duplicates by deleting duplicate cases from Supabase
+      for (const dup of duplicateCasesToResolve) {
         if (!dup.id.startsWith('case-')) {
-          const docRef = doc(db, 'clinical_cases', dup.id);
-          batch.delete(docRef);
+          await fetch(`/api/admin/clinical-cases/${dup.id}`, { method: 'DELETE' });
         }
-      });
-
-      if (casesToCreate.length > 0 || duplicateCasesToResolve.length > 0) {
-        setGenerationProgress(`Writing ${casesToCreate.length} gap-filling cases and resolving ${duplicateCasesToResolve.length} duplicate scenarios in Firestore...`);
-        await batch.commit();
       }
 
       // Compute final coverage percentages
@@ -679,10 +653,64 @@ export default function AdminDashboardScreen() {
     return () => clearInterval(interval);
   }, []);
 
-  // Fetch Cases from Firestore
+  // Fetch Cases — reads from Supabase (canonical store) with Firestore fallback.
   const fetchCasesFromFirestore = async () => {
     setIsLoadingCases(true);
     try {
+      if (supabase) {
+        const { data, error } = await supabase
+          .from('clinical_cases')
+          .select('*')
+          .order('created_at', { ascending: false });
+        if (!error && data) {
+          const caseList: ClinicalCase[] = data.map((row: any) => ({
+            id: row.id,
+            title: row.title || 'Untitled Case',
+            topic: row.specialty || row.disease || 'General Medicine',
+            difficulty: row.difficulty || 'Intermediate',
+            scenario: row.chief_complaint || '',
+            learningPoints: row.dtps || '',
+            createdAt: row.created_at,
+            status: row.status || 'published',
+            createdBy: row.created_by || 'system',
+            createdByName: row.created_by_name || 'Clinical Educator',
+            unitId: row.unit_id || undefined,
+            // Rich optional properties for curriculum cases compatibility
+            specialty: row.specialty || '',
+            disease: row.disease || '',
+            patientName: row.patient_name || '',
+            facilitySetting: row.facility_setting || '',
+            demographics: row.demographics || '',
+            chiefComplaint: row.chief_complaint || '',
+            hpi: row.hpi || '',
+            pmh: row.pmh || '',
+            medHx: row.med_hx || '',
+            allergies: row.allergies || '',
+            pe: row.pe || '',
+            vitals: row.vitals || '',
+            labs: row.labs || '',
+            imaging: row.imaging || '',
+            diagnosis: row.diagnosis || '',
+            ddx: row.ddx || [],
+            goals: row.goals || '',
+            pharm: row.pharm || '',
+            nonPharm: row.non_pharm || '',
+            carePlan: row.care_plan || '',
+            dtps: row.dtps || '',
+            monitoring: row.monitoring || '',
+            counselling: row.counselling || '',
+            followUp: row.follow_up || '',
+            pearls: row.pearls || '',
+            references: row.references || []
+          }));
+          setCases(caseList);
+          setIsLoadingCases(false);
+          return;
+        }
+        console.warn("Supabase clinical_cases read failed, falling back to Firestore:", error?.message);
+      }
+
+      // Fallback: Firestore
       const q = query(collection(db, 'clinical_cases'), orderBy('createdAt', 'desc'));
       const querySnapshot = await getDocs(q);
       const caseList: ClinicalCase[] = [];
@@ -699,6 +727,7 @@ export default function AdminDashboardScreen() {
           status: data.status || 'published',
           createdBy: data.createdBy || 'system',
           createdByName: data.createdByName || 'Clinical Educator',
+          unitId: data.unitId || data.unit_id || undefined,
           // Rich optional properties for curriculum cases compatibility
           specialty: data.specialty || data.topic || '',
           disease: data.disease || '',
@@ -730,7 +759,7 @@ export default function AdminDashboardScreen() {
       });
       setCases(caseList);
     } catch (error) {
-      console.warn("Firestore 'clinical_cases' is empty or reading failed, using rich fallback database.");
+      console.warn("Case read failed, using rich fallback database.");
       setCases([
         {
           id: 'curated-1',
@@ -1046,41 +1075,42 @@ export default function AdminDashboardScreen() {
     }, 2500);
   };
 
-  // Clinical Case CRUD Operations
+  // Clinical Case CRUD Operations — persisted to Supabase via server API.
   const handleCreateCase = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!caseTitle.trim() || !caseScenario.trim()) return;
 
     setIsSavingCase(true);
+    const unitId = caseTopic ? getIntegratedUnitId(caseTopic) : undefined;
     const newCaseData = {
       title: caseTitle.trim(),
       topic: caseTopic,
       difficulty: caseDifficulty,
       scenario: caseScenario.trim(),
       learningPoints: caseLearningPoints.trim(),
-      createdAt: Date.now(),
       status: 'published' as const,
       createdBy: userData?.id || 'admin',
-      createdByName: userData?.name || 'Super Admin'
+      createdByName: userData?.name || 'Super Admin',
+      unitId
     };
 
     try {
-      await addDoc(collection(db, 'clinical_cases'), newCaseData);
+      const res = await fetch('/api/admin/clinical-cases', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newCaseData)
+      });
+      if (!res.ok) throw new Error((await res.json()).error || 'Failed to save case');
       setAuditLogs(prev => [...prev, `[INFO] ${new Date().toLocaleTimeString()} - Added Clinical Case Study: "${caseTitle}"`]);
       setCaseTitle('');
       setCaseScenario('');
       setCaseLearningPoints('');
       setShowAddCase(false);
       await fetchCasesFromFirestore();
-    } catch (err) {
-      console.error("Firestore Clinical Case creation failed. Inserting to local memory state.", err);
-      // Fallback state insertion
-      const mockId = `case-${Math.random().toString(36).substring(2, 9)}`;
-      setCases(prev => [{ id: mockId, ...newCaseData }, ...prev]);
-      setShowAddCase(false);
-      setCaseTitle('');
-      setCaseScenario('');
-      setCaseLearningPoints('');
+    } catch (err: any) {
+      console.error("Supabase clinical case creation failed.", err);
+      setAuditLogs(prev => [...prev, `[ERROR] ${new Date().toLocaleTimeString()} - Failed to save case: ${err.message}`]);
+      alert("Failed to save clinical case: " + err.message);
     } finally {
       setIsSavingCase(false);
     }
@@ -1091,32 +1121,30 @@ export default function AdminDashboardScreen() {
     if (!editingCase || !caseTitle.trim() || !caseScenario.trim()) return;
 
     setIsSavingCase(true);
+    const unitId = caseTopic ? getIntegratedUnitId(caseTopic) : editingCase.unitId;
     const updatedData = {
       title: caseTitle.trim(),
       topic: caseTopic,
       difficulty: caseDifficulty,
       scenario: caseScenario.trim(),
       learningPoints: caseLearningPoints.trim(),
-      updatedAt: Date.now()
+      unitId
     };
 
     try {
-      if (editingCase.id.startsWith('curated-')) {
-        // Since curated are built-in templates, we simulate updating or write to Firestore under its ID to allow overlay
-        await setDoc(doc(db, 'clinical_cases', editingCase.id), {
-          ...editingCase,
-          ...updatedData
-        });
-      } else {
-        await updateDoc(doc(db, 'clinical_cases', editingCase.id), updatedData);
-      }
+      const res = await fetch(`/api/admin/clinical-cases/${editingCase.id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(updatedData)
+      });
+      if (!res.ok) throw new Error((await res.json()).error || 'Failed to update case');
       setAuditLogs(prev => [...prev, `[INFO] ${new Date().toLocaleTimeString()} - Updated Case Study: "${caseTitle}"`]);
       setEditingCase(null);
       await fetchCasesFromFirestore();
-    } catch (err) {
-      console.warn("Firestore edit failed. Overriding in local cache memory.", err);
-      setCases(prev => prev.map(c => c.id === editingCase.id ? { ...c, ...updatedData } : c));
-      setEditingCase(null);
+    } catch (err: any) {
+      console.warn("Supabase case update failed.", err);
+      setAuditLogs(prev => [...prev, `[ERROR] ${new Date().toLocaleTimeString()} - Failed to update case: ${err.message}`]);
+      alert("Failed to update clinical case: " + err.message);
     } finally {
       setIsSavingCase(false);
     }
@@ -1127,12 +1155,14 @@ export default function AdminDashboardScreen() {
     if (!window.confirm("Are you sure you want to permanently delete this clinical case study? This cannot be undone.")) return;
 
     try {
-      await deleteDoc(doc(db, 'clinical_cases', caseId));
+      const res = await fetch(`/api/admin/clinical-cases/${caseId}`, { method: 'DELETE' });
+      if (!res.ok) throw new Error((await res.json()).error || 'Failed to delete');
       setAuditLogs(prev => [...prev, `[INFO] ${new Date().toLocaleTimeString()} - Deleted Clinical Case Study ID: ${caseId}`]);
       await fetchCasesFromFirestore();
-    } catch (err) {
-      console.warn("Could not delete from Firestore. Deleting from memory cache.", err);
-      setCases(prev => prev.filter(c => c.id !== caseId));
+    } catch (err: any) {
+      console.warn("Could not delete case from Supabase.", err);
+      setAuditLogs(prev => [...prev, `[ERROR] ${new Date().toLocaleTimeString()} - Failed to delete case: ${err.message}`]);
+      alert("Failed to delete clinical case: " + err.message);
     }
   };
 

@@ -21,6 +21,16 @@ import {
 } from './src/server/aiRouter.js';
 import { getPrompts, updatePrompt, resetPrompts } from './src/server/promptRegistry.js';
 import { fetchOpenFdaLabel, resolveRxCui, fetchRxNormInteractions } from './src/server/externalMedicinesApi.js';
+import { createClient } from '@supabase/supabase-js';
+
+// Server-side Supabase client (service role) for privileged clinical-case writes.
+// Uses the service-role key (never exposed to the browser) so RLS policies that
+// block anonymous inserts do not prevent admin-authored cases from being persisted.
+const SUPABASE_URL = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL || '';
+const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || '';
+const adminSupabase = SUPABASE_URL && SUPABASE_SERVICE_ROLE_KEY
+  ? createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, { auth: { persistSession: false } })
+  : null;
 
 // Load environment variables
 dotenv.config();
@@ -2188,6 +2198,104 @@ app.post('/api/admin/ai/gateway/test', async (req, res) => {
     });
   } catch (error: any) {
     res.status(500).json({ error: error.message || 'Execution failed' });
+  }
+});
+
+// ── Admin Clinical Case persistence (Supabase is the canonical store) ────────
+// AdminDashboard writes clinical cases here (server-side service role) so they
+// become visible in the case browser, which reads from Supabase `clinical_cases`.
+
+function isValidUuid(v: any): boolean {
+  return typeof v === 'string' && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(v);
+}
+
+// Map the AdminDashboard ClinicalCase shape (camelCase) to Supabase row columns.
+function mapAdminCaseToRow(p: any): Record<string, any> {
+  return {
+    title: p.title ?? null,
+    specialty: p.specialty ?? p.topic ?? null,
+    difficulty: p.difficulty ?? 'Intermediate',
+    chief_complaint: p.chiefComplaint ?? p.scenario ?? '',
+    dtps: p.dtps ?? p.learningPoints ?? '',
+    status: p.status ?? 'published',
+    created_by: p.createdBy ?? p.created_by ?? null,
+    created_by_name: p.createdByName ?? p.created_by_name ?? null,
+    disease: p.disease ?? null,
+    unit_id: p.unitId ?? p.unit_id ?? null,
+    pharmacology_subject: p.pharmacologySubject ?? p.pharmacology_subject ?? null,
+    patient_name: p.patientName ?? p.patient_name ?? null,
+    facility_setting: p.facilitySetting ?? p.facility_setting ?? null,
+    demographics: p.demographics ?? null,
+    hpi: p.hpi ?? null,
+    pmh: p.pmh ?? null,
+    med_hx: p.medHx ?? p.med_hx ?? null,
+    allergies: p.allergies ?? null,
+    pe: p.pe ?? null,
+    vitals: p.vitals ?? null,
+    labs: p.labs ?? null,
+    imaging: p.imaging ?? null,
+    diagnosis: p.diagnosis ?? null,
+    ddx: p.ddx ?? [],
+    goals: p.goals ?? null,
+    pharm: p.pharm ?? null,
+    non_pharm: p.nonPharm ?? p.non_pharm ?? null,
+    care_plan: p.carePlan ?? p.care_plan ?? null,
+    monitoring: p.monitoring ?? null,
+    counselling: p.counselling ?? p.counselling ?? null,
+    follow_up: p.followUp ?? p.follow_up ?? null,
+    pearls: p.pearls ?? null,
+    references: p.references ?? [],
+  };
+}
+
+app.post('/api/admin/clinical-cases', async (req, res) => {
+  if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+  try {
+    const body = req.body;
+    const items: any[] = Array.isArray(body)
+      ? body
+      : (body?.cases && Array.isArray(body.cases) ? body.cases : [body]);
+    const rows = items
+      .filter((p) => p && p.title)
+      .map((p) => {
+        const row = mapAdminCaseToRow(p);
+        row.id = isValidUuid(p.id) ? p.id : crypto.randomUUID();
+        row.created_at = new Date().toISOString();
+        return row;
+      });
+    if (rows.length === 0) return res.status(400).json({ error: 'No valid case payloads provided' });
+    const { data, error } = await adminSupabase.from('clinical_cases').insert(rows).select();
+    if (error) return res.status(400).json({ error: error.message });
+    res.json({ success: true, cases: data });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.put('/api/admin/clinical-cases/:id', async (req, res) => {
+  if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+  try {
+    const row = mapAdminCaseToRow(req.body);
+    const { data, error } = await adminSupabase
+      .from('clinical_cases')
+      .update(row)
+      .eq('id', req.params.id)
+      .select();
+    if (error) return res.status(400).json({ error: error.message });
+    res.json({ success: true, case: data?.[0] ?? null });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.delete('/api/admin/clinical-cases/:id', async (req, res) => {
+  if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+  try {
+    const { error } = await adminSupabase.from('clinical_cases').delete().eq('id', req.params.id);
+    if (error) return res.status(400).json({ error: error.message });
+    res.json({ success: true });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
   }
 });
 

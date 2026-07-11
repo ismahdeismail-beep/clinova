@@ -6,7 +6,7 @@
 import type { Skill, SkillContext, SkillResponse, SkillRecommendation } from './types';
 import { skillRegistry } from './registry';
 import { searchLibrary } from '../data/onlineLibraryData';
-import { INITIAL_CASES } from '../data/clinicalCasesData';
+import { ALL_CLINICAL_CASES } from '../data/clinicalCasesData';
 
 export const semanticSearchSkill: Skill = {
   definition: {
@@ -30,7 +30,7 @@ export const semanticSearchSkill: Skill = {
     const q = context.query.toLowerCase();
 
     const lib = searchLibrary(context.query, {}).slice(0, 5);
-    const cases = INITIAL_CASES.filter((c) =>
+    const cases = ALL_CLINICAL_CASES.filter((c) =>
       [c.disease, c.title, c.specialty, c.pharmacologySubject].some((f) => (f || '').toLowerCase().includes(q)),
     ).slice(0, 5);
 

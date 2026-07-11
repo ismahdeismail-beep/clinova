@@ -1075,22 +1075,23 @@ export default function ClinicalAssistantScreen() {
         throw lastError || new Error('Failed to reach assistant after multiple attempts');
       }
       
-      const lowerQuery = userQuery.toLowerCase();
-      if (lowerQuery.includes('cap') || lowerQuery.includes('pneumonia') || responseContent.toLowerCase().includes('pneumonia')) {
-        citations = [
-          { source: 'Kenya STG', document: 'Respiratory Tract Infections, Pg 45', year: '2024' },
-          { source: 'WHO Guidelines', document: 'Empirical Antibiotic Use', year: '2023' },
-          { source: 'Kenya Drug Index (KDI)', document: 'Amoxicillin Monograph', year: '2024' }
-        ];
-      } else if (lowerQuery.includes('malaria') || responseContent.toLowerCase().includes('malaria')) {
-        citations = [
-          { source: 'Kenya STG', document: 'Malaria Treatment Protocols, Pg 82', year: '2024' },
-          { source: 'Kenya Drug Index (KDI)', document: 'Artemether-Lumefantrine', year: '2024' }
-        ];
+      const kbFiles: any[] = files.filter((f: any) => (f.category === 'knowledge' || f.category === 'knowledge_base') && f.aiProcessed);
+      const matchedDb: string[] = selectedSources;
+      if (kbFiles.length > 0) {
+        citations = kbFiles.slice(0, 3).map((f: any) => ({
+          source: 'Knowledge Base',
+          document: f.title || f.originalName || 'Uploaded Resource',
+          year: new Date().getFullYear().toString()
+        }));
+      } else if (matchedDb.length > 0) {
+        citations = matchedDb.map((db: string) => ({
+          source: db,
+          document: 'Clinical Reference',
+          year: '2024'
+        }));
       } else {
         citations = [
-          { source: 'Kenya Drug Index (KDI)', document: 'Standard Clinical Guidelines', year: '2024' },
-          { source: 'WHO Essential Medicines List', document: 'Formulary Reference', year: '2023' }
+          { source: 'Clinova Knowledge Engine', document: 'Synthesized from curriculum data', year: '2024' }
         ];
       }
     } catch (err: any) {
@@ -1101,7 +1102,8 @@ export default function ClinicalAssistantScreen() {
       ];
     }
 
-    // Replace thinking message with final response
+    const confidenceScore = citations.length > 0 && citations.some(c => c.source !== 'Clinova Knowledge Engine') ? 92 : 75;
+
     setMessages(prev => {
       const filtered = prev.filter(m => m.id !== thinkingMsgId);
       return [...filtered, {
@@ -1109,7 +1111,7 @@ export default function ClinicalAssistantScreen() {
         role: 'assistant',
         content: responseContent,
         citations,
-        confidence: 95,
+        confidence: confidenceScore,
         routedTo: [agent],
         isNew: true
       }];

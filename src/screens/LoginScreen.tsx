@@ -213,45 +213,6 @@ export default function LoginScreen() {
             </button>
           </div>
 
-          {/* Separator */}
-          <div className="relative flex py-2 items-center mt-6">
-            <div className="flex-grow border-t border-[var(--border)]"></div>
-            <span className="flex-shrink mx-4 text-[10px] text-[var(--text-muted)] font-semibold uppercase tracking-wider">Demo Quick Access</span>
-            <div className="flex-grow border-t border-[var(--border)]"></div>
-          </div>
-
-          <div className="mt-4 grid grid-cols-2 gap-3">
-            <button
-              onClick={async () => {
-                setIsLoading(true);
-                await loginAs('admin');
-                navigate('/', { replace: true });
-              }}
-              disabled={isLoading}
-              className="py-2.5 px-3 bg-gradient-to-b from-[var(--primary-container)] to-[var(--primary-container)]/50 hover:from-[var(--primary-container)] hover:to-[var(--primary-container)] border border-[var(--primary)]/20 text-[var(--text)]  font-semibold text-xs rounded-xl transition-all shadow-sm flex flex-col items-center justify-center gap-1 cursor-pointer"
-            >
-              <span className="font-bold">Admin Clinician</span>
-              <span className="text-[9px] text-[var(--text-muted)]  font-normal">Full privileges</span>
-            </button>
-            <button
-              onClick={async () => {
-                setIsLoading(true);
-                await loginAs('user');
-                navigate('/', { replace: true });
-              }}
-              disabled={isLoading}
-              className="py-2.5 px-3 bg-gradient-to-b from-[var(--surface-dim)] to-[var(--surface-dim)]/50 hover:from-[var(--surface-dim)] hover:to-[var(--surface-dim)] border border-[var(--border)] text-[var(--text)]  font-semibold text-xs rounded-xl transition-all shadow-sm flex flex-col items-center justify-center gap-1 cursor-pointer"
-            >
-              <span className="font-bold">Clinical Assistant</span>
-              <span className="text-[9px] text-[var(--text-muted)]  font-normal">Standard review</span>
-            </button>
-          </div>
-
-          <div className="mt-4 text-center">
-            <p className="text-[10px] text-[var(--text-muted)] font-medium">
-              Demo Credentials: <span className="font-semibold text-[var(--text)]">admin@clinova.health</span> / <span className="font-semibold text-[var(--text)]">password</span>
-            </p>
-          </div>
         </div>
 
         {/* Footer */}

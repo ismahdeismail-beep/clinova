@@ -355,16 +355,8 @@ export async function generateContentWithFallback(request: any, providerOverride
     }
   }
   
-  // Ultimate fallback to simulation so the app NEVER crashes
-  const fallbackProvider = 'Google Gemini';
-  console.warn(`[AI Gateway] All providers failed! Utilizing mock RAG response fallback chain to avoid outage.`);
-  const simulatedText = `[AI Gateway Failover Response] Due to upstream API downtime, we have fallen back to local Clinova cache. 
-
-Here is the authoritative medical synthesis:
-Your query is highly relevant to standard clinical guidelines. Standard pharmacotherapy is advised with rigorous patient-centered vitals assessment and clinical reasoning.
-
-**Confidence Score**: 98% (Cached authoritative medical guidelines)
-**Sources**: Clinova Local Emergency Synthesis, World Health Organization (WHO) 2024 Cache`;
+  const errorMsg = lastError?.message || 'Upstream provider timed out';
+  console.error(`[AI Gateway] All providers failed. Last error: ${errorMsg}`);
 
   addGatewayLog({
     id: executionId,
@@ -374,14 +366,14 @@ Your query is highly relevant to standard clinical guidelines. Standard pharmaco
     provider: 'Emergency Cache',
     latencyMs: 150,
     status: 'failed',
-    error: lastError?.message || 'Upstream provider timed out',
+    error: errorMsg,
     fallbackChain: attemptedProviders,
     tokensInput: 200,
     tokensOutput: 150,
     cost: 0
   });
 
-  return { text: simulatedText };
+  throw new Error(`AI service unavailable: ${errorMsg}`);
 }
 
 function addGatewayLog(log: GatewayLog) {
@@ -397,7 +389,7 @@ async function executeProvider(provider: string, request: any): Promise<{ text: 
   const inputPromptText = typeof request.contents === 'string' ? request.contents : JSON.stringify(request.contents);
 
   if (provider === 'Google Gemini') {
-    const mainKeyEnv = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY;
+    const mainKeyEnv = process.env.GEMINI_API_KEY;
     if (mainKeyEnv) {
       // Execute live Gemini API call
       const client = new GoogleGenAI({ apiKey: mainKeyEnv });
@@ -426,55 +418,5 @@ async function executeProvider(provider: string, request: any): Promise<{ text: 
     }
   }
 
-  // Elegant clinical simulation for providers without configuration to allow seamless proof-of-concept
-  await new Promise((resolve) => setTimeout(resolve, 300 + Math.random() * 500)); // Simulate latency
-  
-  const mockResponses: Record<string, string> = {
-    'Cerebras': `**Cerebras Ultra-low Latency Inference Engine**
-    
-*Analysis & Formulation:*
-We have synthesized the curriculum objectives. Standard clinical review and pharmacotherapy monitoring are indicated.
-
-- **Recommendation:** Maintain medication reconciliation, check drug-drug interactions, and evaluate renal clearance (CrCl).
-- **Spaced Repetition Flashcard:** Q: What is the main clinical risk of co-administering ACE inhibitors and NSAIDs? A: Acute Kidney Injury (AKI) due to bilateral afferent/efferent glomerular constriction interference.`,
-    
-    'Cohere': `**Cohere Command-R Medical Summarizer**
-    
-- **Key Takeaways:** Continuous education in pharmacokinetics (ADME) is vital for student competency.
-- **Guideline Summary:** Ensure all patient-specific vital indicators are logged prior to ordering therapies. Always refer to local guidelines before prescribing.`,
-    
-    'Mistral': `**Mistral Large Educational Synthesis**
-    
-1. Standard pharmacology teaches that drug clearance determines maintenance dose requirements.
-2. Direct clinical monitoring is mandatory when administering high-alert narrow therapeutic index drugs (e.g., Warfarin, Digoxin, Phenytoin).`,
-
-    'OpenAI': `**OpenAI GPT-4o Clinical Assistant Synthesis**
-    
-*Clinical Assessment:*
-The patient's clinical markers point towards localized symptoms requiring rapid-acting intervention. Review and verify the clinical history.
-
-- **Confidence Score:** 96%
-- **Sources:** Harrison's Principles of Internal Medicine, WHO Therapeutics Manual`,
-
-    'Anthropic Claude': `**Anthropic Claude 3.5 Sonnet Reasoning Output**
-    
-I have evaluated the query with maximum attention to patient-safety safeguards.
-1. Cross-reference the dosage of medications against renal indicators.
-2. Educate the patient regarding red-flag adverse indicators.
-3. Optimize the care plan based on therapeutic objectives.`,
-
-    'xAI': `**xAI Grok Synthesis Engine**
-    
-Real-time healthcare insights synthesized. Ensure direct supervision of trainees during patient clerking and case-presentation reviews. Maintain structured records.`,
-
-    'DeepSeek': `**DeepSeek Reasoning V3 Output**
-    
-Evaluating clinical guidelines step-by-step.
-- Cross-referencing primary indications.
-- Standard dosing protocols applied.
-- Estimated confidence: 95%.`
-  };
-
-  const responseText = mockResponses[provider] || `[${provider} Response] Medical data processed and synthesized successfully according to requested Clinova templates.`;
-  return { text: responseText };
+  throw new Error(`${provider} API key not configured. Cannot generate response.`);
 }

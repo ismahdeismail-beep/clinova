@@ -8,7 +8,7 @@ import type { Skill, SkillContext, SkillResponse, SkillRecommendation } from './
 import { skillRegistry } from './registry';
 import { generateContentWithFallback } from '../server/aiRouter';
 import { searchLibrary } from '../data/onlineLibraryData';
-import { INITIAL_CASES } from '../data/clinicalCasesData';
+import { ALL_CLINICAL_CASES } from '../data/clinicalCasesData';
 import { KnowledgeEngine } from '../engine/knowledgeEngine.service';
 
 export const knowledgeRetrievalSkill: Skill = {
@@ -35,7 +35,7 @@ export const knowledgeRetrievalSkill: Skill = {
     const engineResult = await KnowledgeEngine.process(query);
 
     const lib = searchLibrary(query, {}).slice(0, 5);
-    const cases = INITIAL_CASES.filter((c) =>
+    const cases = ALL_CLINICAL_CASES.filter((c) =>
       (c.disease || '').toLowerCase().includes(query.toLowerCase()) ||
       (c.title || '').toLowerCase().includes(query.toLowerCase()),
     ).slice(0, 5);

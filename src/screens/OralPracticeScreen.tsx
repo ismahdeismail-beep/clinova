@@ -699,13 +699,15 @@ export default function OralPracticeScreen() {
   ];
 
   return (
-    <div id="oral-practice-root" className="min-h-screen text-[var(--text)] p-4 md:p-8 bg-transparent max-w-7xl mx-auto">
+    <div className="min-h-screen text-[var(--text)] p-4 md:p-8 bg-transparent max-w-7xl mx-auto">
       {/* Top Breadcrumb Header */}
-      <div className="flex items-center justify-between mb-8 border-b border-gray-800 pb-4">
+      <div className="flex items-center justify-between mb-8 border-b border-[var(--border)] pb-4">
         <div>
-          <span className="text-xs font-mono text-purple-400 uppercase tracking-widest">Clinova OSCE Engine</span>
-          <h1 className="text-3xl font-sans font-bold tracking-tight mt-1 flex items-center gap-3">
-            🗣️ Oral Practice Hub
+          <span className="text-xs font-bold uppercase tracking-wider text-[var(--primary)] flex items-center gap-1.5">
+            <Mic size={14} /> Oral Practice
+          </span>
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-[var(--text)] tracking-tight mt-1">
+            Clinova <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-purple-500">OSCE Simulator</span>
           </h1>
         </div>
         {currentView !== 'dashboard' && (

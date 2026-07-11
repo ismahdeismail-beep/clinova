@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { 
   HeartPulse, Wind, Flame, ShieldAlert, Droplets, Activity, Brain, 
   Smile, Pill, Baby, User, AlertTriangle, ChevronRight,
@@ -20,6 +20,7 @@ export default function ClinicalCasesScreen() {
   const [searchQuery, setSearchQuery] = useState('');
   const [allCases, setAllCases] = useState<ClinicalCase[]>(ALL_CLINICAL_CASES);
   const [isLoadingDbCases, setIsLoadingDbCases] = useState(false);
+  const [searchParams] = useSearchParams();
 
   useEffect(() => {
     const loadCases = async () => {
@@ -42,6 +43,27 @@ export default function ClinicalCasesScreen() {
 
     loadCases();
   }, []);
+
+  // Handle deep-linking: if ?caseId=xxx is present, navigate directly to that case
+  useEffect(() => {
+    const caseId = searchParams.get('caseId');
+    if (!caseId || allCases.length === 0) return;
+    const match = allCases.find((c) => c.id === caseId || c.seedId === caseId);
+    if (match) {
+      const unit = SPECIALTIES.find((s) => matchesUnit(match, s));
+      if (unit) {
+        setSelectedSpecialty(unit);
+        setSelectedDisease(match.disease);
+        setSelectedCase(match);
+        setTutorChat([
+          {
+            role: 'assistant',
+            content: `Welcome to the Clinical Case on **${match.title}**. I am your AI Clinical Tutor. I have loaded the case details, patient history, guidelines for ${match.disease}, and relevant pharmacological concepts. How can I assist you with your clinical reasoning for this case?`
+          }
+        ]);
+      }
+    }
+  }, [searchParams, allCases]);
 
   // Tab navigation & disease brain subsections state
   const [activeLevel3Tab, setActiveLevel3Tab] = useState<'cases' | 'knowledge'>('cases');

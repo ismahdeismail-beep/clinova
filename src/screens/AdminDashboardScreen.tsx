@@ -27,6 +27,8 @@ import {
   Eye, 
   AlertCircle,
   BookOpen,
+  Compass,
+  Layers,
   RefreshCw
 } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
@@ -38,6 +40,7 @@ import { useAuth } from '../contexts/AuthContext';
 import type { StoredFile, FileCategory } from '../types/engine';
 import { EDUCATION_MODULES as MODULES } from '../data/educationHubData';
 import { getCurriculumCasesForUnit } from '../data/clinicalCasesData';
+import CurriculumGraph from '../components/CurriculumGraph';
 
 interface ClinicalCase {
   id: string;
@@ -128,6 +131,9 @@ export default function AdminDashboardScreen() {
   const [editingCase, setEditingCase] = useState<ClinicalCase | null>(null);
   const [showAddCase, setShowAddCase] = useState(false);
   const [isSavingCase, setIsSavingCase] = useState(false);
+
+  // Curriculum Graph toggle
+  const [showGraph, setShowGraph] = useState(false);
 
   // Curriculum Compliance Generation States & Handler
   const [isGeneratingCurriculum, setIsGeneratingCurriculum] = useState(false);
@@ -2752,6 +2758,28 @@ export default function AdminDashboardScreen() {
       {/* ======================= TAB: KNOWLEDGE SOURCE MANAGEMENT ======================= */}
       {activeTab === 'curriculum' && (
         <div className="space-y-6 animate-fade-in" id="panel-curriculum">
+          {/* Curriculum Map Visualization */}
+          <div className="bg-[var(--surface)] rounded-xl border border-[var(--border)] overflow-hidden">
+            <button
+              onClick={() => setShowGraph(!showGraph)}
+              className="w-full flex items-center justify-between p-4 hover:bg-[var(--surface-dim)] transition-colors cursor-pointer"
+            >
+              <div className="flex items-center gap-2">
+                <Compass size={16} className="text-[var(--primary)]" />
+                <span className="text-sm font-bold text-[var(--text)]">Curriculum Map</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] text-[var(--text-muted)]">{showGraph ? 'Hide' : 'Show'} visualization</span>
+                <ChevronRight size={14} className={`text-[var(--text-muted)] transition-transform ${showGraph ? 'rotate-90' : ''}`} />
+              </div>
+            </button>
+            {showGraph && (
+              <div className="border-t border-[var(--border)] animate-fade-in">
+                <CurriculumGraph />
+              </div>
+            )}
+          </div>
+
           {/* Header Controls */}
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-[var(--surface)] p-4 rounded-xl border border-[var(--border)]">
             <div className="relative flex-1 w-full">

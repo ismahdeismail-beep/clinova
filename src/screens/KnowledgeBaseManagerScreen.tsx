@@ -12,7 +12,6 @@ import {
   Tooltip, Legend, PieChart, Pie, Cell 
 } from 'recharts';
 
-// Seed initial system knowledge resources so the app feels full-featured out of the box
 interface ResourceItem {
   id: string;
   originalName: string;
@@ -34,125 +33,7 @@ interface ResourceItem {
   suggestions?: Record<string, any>;
 }
 
-const SYSTEM_RESOURCES: ResourceItem[] = [
-  { 
-    id: 'sys-1', 
-    originalName: 'MOH Kenya Cardiovascular Guidelines 2024.pdf', 
-    title: 'Cardiovascular Guidelines 2024',
-    author: 'Ministry of Health Kenya', 
-    discipline: 'Clinical Pharmacy & Therapeutics', 
-    type: 'Clinical Guideline', 
-    size: 2450122, 
-    createdAt: Date.now() - 30 * 24 * 3600 * 1000,
-    status: 'Indexed',
-    isUserUploaded: false,
-    storagePath: ''
-  },
-  { 
-    id: 'sys-2', 
-    originalName: 'Renal Physiology Lecture Notes.docx', 
-    title: 'Renal Physiology Notes',
-    author: 'Prof. J. O. Omondi', 
-    discipline: 'Medical Physiology', 
-    type: 'Lecture Notes', 
-    size: 1045091, 
-    createdAt: Date.now() - 15 * 24 * 3600 * 1000,
-    status: 'Indexed',
-    isUserUploaded: false,
-    storagePath: ''
-  },
-  { 
-    id: 'sys-3', 
-    originalName: 'Katzung Pharmacology - Ch3 Pharmacokinetics.pdf', 
-    title: 'Intro to Pharmacokinetics',
-    author: 'Katzung & Trevor', 
-    discipline: 'Pharmacology', 
-    type: 'Textbook Chapter', 
-    size: 4981022, 
-    createdAt: Date.now() - 5 * 24 * 3600 * 1000,
-    status: 'Indexed',
-    isUserUploaded: false,
-    storagePath: ''
-  },
-  {
-    id: 'sys-4',
-    originalName: 'WHO Pediatric Dosing Formulary.pdf',
-    title: 'Pediatric Pharmacotherapy Guidelines',
-    author: 'World Health Organization',
-    discipline: 'Pediatrics',
-    type: 'Clinical Guideline',
-    size: 3820199,
-    createdAt: Date.now() - 2 * 24 * 3600 * 1000,
-    status: 'Indexed',
-    isUserUploaded: false,
-    storagePath: ''
-  },
-  {
-    id: 'sys-5',
-    originalName: 'Basic and Clinical Pharmacology.pdf',
-    title: 'General Pharmacology Principles',
-    author: 'Katzung & Trevor',
-    discipline: 'Pharmacology',
-    type: 'Textbook',
-    size: 8200199,
-    createdAt: Date.now() - 10 * 24 * 3600 * 1000,
-    status: 'Indexed',
-    isUserUploaded: false,
-    storagePath: ''
-  },
-  {
-    id: 'sys-6',
-    originalName: 'Harrison Principles of Internal Medicine - Ch1.pdf',
-    title: 'Introduction to Clinical Medicine',
-    author: 'Kasper et al.',
-    discipline: 'Clinical Medicine',
-    type: 'Textbook Chapter',
-    size: 4500000,
-    createdAt: Date.now() - 12 * 24 * 3600 * 1000,
-    status: 'Indexed',
-    isUserUploaded: false,
-    storagePath: ''
-  },
-  {
-    id: 'sys-7',
-    originalName: 'Robbins Basic Pathology - Inflammation.pdf',
-    title: 'Cell Injury and Inflammation',
-    author: 'Kumar et al.',
-    discipline: 'Pathology',
-    type: 'Textbook Chapter',
-    size: 6100000,
-    createdAt: Date.now() - 8 * 24 * 3600 * 1000,
-    status: 'Indexed',
-    isUserUploaded: false,
-    storagePath: ''
-  },
-  {
-    id: 'sys-8',
-    originalName: 'CDC Guidelines for Infection Control.pdf',
-    title: 'Infection Control Guidelines',
-    author: 'Centers for Disease Control and Prevention',
-    discipline: 'Public Health',
-    type: 'Clinical Guideline',
-    size: 2150000,
-    createdAt: Date.now() - 20 * 24 * 3600 * 1000,
-    status: 'Indexed',
-    isUserUploaded: false,
-    storagePath: ''
-  },
-  {
-    id: 'sys-9',
-    originalName: 'Netter Atlas of Human Anatomy.pdf',
-    title: 'Atlas of Human Anatomy',
-    author: 'Frank H. Netter',
-    discipline: 'Anatomy',
-    type: 'Textbook',
-    size: 15500000,
-    createdAt: Date.now() - 40 * 24 * 3600 * 1000,
-    status: 'Indexed',
-    isUserUploaded: false,
-    storagePath: ''
-  }
-];
+const SYSTEM_RESOURCES: ResourceItem[] = [];
 
 export default function KnowledgeBaseManagerScreen() {
   const [activeTab, setActiveTab] = useState('resources');
@@ -164,33 +45,12 @@ export default function KnowledgeBaseManagerScreen() {
   const [rebuildStatus, setRebuildStatus] = useState('');
   const [rebuildProgress, setRebuildProgress] = useState(0);
 
-  // Trigger RAG indexing process
+  // Vector index rebuild — placeholder until backend embedding service is deployed
   const triggerRebuildEmbeddings = () => {
     setShowRebuildModal(true);
-    setRebuildStep(0);
+    setRebuildStep(1);
     setRebuildProgress(0);
-    setRebuildStatus('Initiating vector database connection...');
-
-    const steps = [
-      { status: 'Scanning files and active curriculum taxonomies...', progress: 15 },
-      { status: 'Parsing PDF text blocks and generating semantic chunks...', progress: 35 },
-      { status: 'Computing vector embedding layers using server-side Gemini API...', progress: 60 },
-      { status: 'Updating pinecone/firestore spatial indexing tree structures...', progress: 85 },
-      { status: 'Testing vector retrieval semantic similarity recall...', progress: 95 },
-      { status: 'Embeddings successfully rebuilt! Vector space is optimized.', progress: 100 }
-    ];
-
-    let currentStep = 0;
-    const interval = setInterval(() => {
-      if (currentStep < steps.length) {
-        setRebuildStatus(steps[currentStep].status);
-        setRebuildProgress(steps[currentStep].progress);
-        setRebuildStep(currentStep + 1);
-        currentStep++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 1500);
+    setRebuildStatus('Vector embedding service not yet available. Uploaded files are indexed via keyword search. Semantic vector search will be enabled in a future update.');
   };
 
   return (
@@ -741,35 +601,37 @@ function AnalyticsTab() {
   const totalUser = files.filter(f => f.category === 'knowledge').length;
   const totalResources = totalSystem + totalUser;
 
-  // Chart data: Distribution of resources by discipline
-  const barChartData = [
-    { name: 'Physiology', count: 4 },
-    { name: 'Pharmacology', count: 5 },
-    { name: 'Clin. Med.', count: 6 },
-    { name: 'Pediatrics', count: 4 },
-    { name: 'Pathology', count: 3 },
-    { name: 'Anatomy', count: 3 },
-    { name: 'Public Health', count: 2 }
-  ];
+  const userFiles = files.filter((f: any) => f.category === 'knowledge');
+  const discCounts: Record<string, number> = {};
+  userFiles.forEach((f: any) => {
+    const d = f.discipline || 'Uncategorized';
+    discCounts[d] = (discCounts[d] || 0) + 1;
+  });
+  const barChartData = Object.entries(discCounts)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 10)
+    .map(([name, count]) => ({ name: name.length > 12 ? name.slice(0, 12) + '…' : name, count }));
 
-  // Pie chart data: Resource formats in system
-  const pieChartData = [
-    { name: 'Clinical Guidelines', value: 8, color: '#0ea5e9' },
-    { name: 'Lecture Notes', value: 4, color: '#10b981' },
-    { name: 'Textbook Chapters', value: 6, color: '#f59e0b' },
-    { name: 'Syllabus Map', value: 2, color: '#8b5cf6' },
-    { name: 'Textbook', value: 4, color: '#ec4899' }
-  ];
+  const typeCounts: Record<string, number> = {};
+  userFiles.forEach((f: any) => {
+    const t = f.type || 'Other';
+    typeCounts[t] = (typeCounts[t] || 0) + 1;
+  });
+  const colors = ['#0ea5e9', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#14b8a6', '#f97316'];
+  const pieChartData = Object.entries(typeCounts)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 7)
+    .map(([name, value], i) => ({ name, value, color: colors[i % colors.length] }));
 
   return (
     <div className="space-y-6 animate-in fade-in duration-200">
       {/* Mini KPIs cards */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {[
-          { label: 'Total Base Documents', val: totalResources.toString(), icon: Database },
-          { label: 'Queries Answered (RAG)', val: '4,812', icon: Search },
-          { label: 'Vector Quantized Chunks', val: '18,522', icon: Layers },
-          { label: 'Cloud Space Allocated', val: '124.5 MB', icon: HardDrive }
+          { label: 'Total Documents', val: totalResources.toString(), icon: Database },
+          { label: 'User Uploads', val: totalUser.toString(), icon: Upload },
+          { label: 'AI-Processed', val: userFiles.filter((f: any) => f.aiProcessed).length.toString(), icon: Layers },
+          { label: 'Cloud Space', val: totalUser > 0 ? `${(userFiles.reduce((s: number, f: any) => s + (f.size || 0), 0) / 1048576).toFixed(1)} MB` : '0 MB', icon: HardDrive }
         ].map((stat, i) => (
           <div key={i} className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-5 flex flex-col justify-between shadow-xs">
             <div className="flex items-center gap-3 mb-4">

@@ -7,7 +7,7 @@
 import type { Skill, SkillContext, SkillResponse, SkillRecommendation } from './types';
 import { skillRegistry } from './registry';
 import { generateContentWithFallback } from '../server/aiRouter';
-import { INITIAL_CASES } from '../data/clinicalCasesData';
+import { ALL_CLINICAL_CASES } from '../data/clinicalCasesData';
 
 export const clinicalCasesSkill: Skill = {
   definition: {
@@ -42,7 +42,7 @@ export const clinicalCasesSkill: Skill = {
       );
 
       // Link to related existing cases by disease mention.
-      const related = INITIAL_CASES.filter((c) =>
+      const related = ALL_CLINICAL_CASES.filter((c) =>
         context.query.toLowerCase().includes((c.disease || '').toLowerCase()) && c.disease,
       ).slice(0, 3);
       const recommendations: SkillRecommendation[] = related.map((c) => ({

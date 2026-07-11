@@ -2,15 +2,14 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore, initializeFirestore, persistentLocalCache, persistentMultipleTabManager, setLogLevel } from 'firebase/firestore';
 import { getAuth, connectAuthEmulator } from 'firebase/auth';
 import { getStorage } from 'firebase/storage';
-import config from '../../firebase-applet-config.json';
 
 const firebaseConfig = {
-  apiKey: config.apiKey,
-  authDomain: config.authDomain,
-  projectId: config.projectId,
-  storageBucket: config.storageBucket,
-  messagingSenderId: config.messagingSenderId,
-  appId: config.appId,
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || 'AIzaSyBOXVvQm2JxW7JT9CXlFeZqC23iSrX3GoA',
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || 'nakurubnb-b99f2.firebaseapp.com',
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || 'nakurubnb-b99f2',
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || 'nakurubnb-b99f2.firebasestorage.app',
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || '234989018252',
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || '1:234989018252:web:3547fa5f00d7ed6d9eefa9',
 };
 
 export const app = initializeApp(firebaseConfig);
@@ -25,7 +24,7 @@ try {
       tabManager: persistentMultipleTabManager()
     }),
     experimentalAutoDetectLongPolling: true
-  }, config.firestoreDatabaseId || '(default)');
+  }, '(default)');
 } catch (e) {
   console.warn("Firestore advanced initialization failed (likely due to iframe sandboxing or disabled third-party cookies). Falling back to basic Firestore:", e);
   try {

@@ -100,6 +100,7 @@ export default function EducationHubScreen() {
   const [selectedModule, setSelectedModule] = useState<EducationModule | null>(null);
   const [selectedUnit, setSelectedUnit] = useState<EducationModuleUnit | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const isAdmin = userData?.role === 'admin';
   const [viewMode, setViewMode] = useState<'grid' | 'graph'>('grid');
   
   // Custom unit management states
@@ -318,7 +319,7 @@ export default function EducationHubScreen() {
               <BookOpen size={16} /> Education Hub
             </div>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-[var(--text)] tracking-tight leading-tight">
-              AI-Powered <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-purple-500">Learning Platform</span>
+              Clinova <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-purple-500">Learning Platform</span>
             </h1>
             <p className="text-sm text-[var(--text-muted)] mt-2 max-w-2xl leading-relaxed">
               Your primary academic workspace. Set up custom units, upload lecture notes, and let Clinova AI compile active study guides, revision cards, and clinical OSCE quiz questions.
@@ -327,8 +328,8 @@ export default function EducationHubScreen() {
 
           {!selectedUnit && (
             <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto shrink-0">
-              {/* Grid vs Graph Toggles */}
-              {!selectedModule && (
+              {/* Grid vs Graph Toggles — admin only */}
+              {isAdmin && !selectedModule && (
                 <div className="flex bg-[var(--surface-dim)] p-1 rounded-2xl border border-[var(--border)] shrink-0 w-full sm:w-auto justify-center">
                   <button
                     onClick={() => setViewMode('grid')}
@@ -383,8 +384,8 @@ export default function EducationHubScreen() {
         {/* Content Area */}
         <div className="pb-24">
           
-          {/* Level 1: Modules */}
-          {!selectedModule && viewMode === 'graph' && (
+          {/* Level 1: Modules — CurriculumGraph admin-only */}
+          {isAdmin && !selectedModule && viewMode === 'graph' && (
             <div className="animate-in fade-in duration-300">
               <CurriculumGraph />
             </div>

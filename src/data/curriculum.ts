@@ -619,8 +619,8 @@ export const CURRICULUM: CurriculumArea[] = [
     description: 'Foundational sciences for pharmacy and medicine.',
     units: [
       { id: 'sup-anat', areaId: 'supporting', subject: 'Anatomy', title: 'Anatomy', description: 'Gross anatomy, neuroanatomy, and histology.', estimatedHours: 30, diseaseIds: [], learningObjectives: [{ id: 'lo-sup-anat-basics', unitId: 'sup-anat', statement: 'Recall major anatomical relationships relevant to drug action.' }] },
-      { id: 'sup-phys', areaId: 'supporting', subject: 'Physiology', title: 'Physiology', description: 'Human body systems and homeostatic mechanisms.', estimatedHours: 35, diseaseIds: ['hypertension', 'heart_failure', 'asthma', 'ckd'], learningObjectives: [{ id: 'lo-sup-phys-systems', unitId: 'sup-phys', statement: 'Explain physiological basis of major organ systems.' }] },
-      { id: 'sup-biochem', areaId: 'supporting', subject: 'Biochemistry', title: 'Biochemistry', description: 'Metabolism, enzymology, and molecular biology.', estimatedHours: 30, diseaseIds: ['type_2_diabetes', 'hhs'], learningObjectives: [{ id: 'lo-sup-biochem-metabolism', unitId: 'sup-biochem', statement: 'Relate metabolic pathways to drug targets.' }] },
+      { id: 'sup-phys', areaId: 'supporting', subject: 'Physiology', title: 'Physiology', description: 'Human body systems, homeostatic mechanisms, and organ function.', estimatedHours: 35, diseaseIds: [], learningObjectives: [{ id: 'lo-sup-phys-systems', unitId: 'sup-phys', statement: 'Explain physiological basis of major organ systems.' }, { id: 'lo-sup-phys-homeostasis', unitId: 'sup-phys', statement: 'Describe homeostatic regulation of body fluids, electrolytes, and acid-base balance.' }] },
+      { id: 'sup-biochem', areaId: 'supporting', subject: 'Biochemistry', title: 'Biochemistry', description: 'Metabolism, enzymology, and molecular biology.', estimatedHours: 30, diseaseIds: [], learningObjectives: [{ id: 'lo-sup-biochem-metabolism', unitId: 'sup-biochem', statement: 'Describe major metabolic pathways and their regulation.' }, { id: 'lo-sup-biochem-enzymes', unitId: 'sup-biochem', statement: 'Explain enzyme kinetics and inhibition relevant to drug action.' }] },
       { id: 'sup-path', areaId: 'supporting', subject: 'Pathology', title: 'Pathology', description: 'Cell injury, inflammation, and systemic disease processes.', estimatedHours: 25, diseaseIds: [], learningObjectives: [{ id: 'lo-sup-path-inflammation', unitId: 'sup-path', statement: 'Describe cellular and inflammatory pathology.' }] },
       { id: 'sup-micro', areaId: 'supporting', subject: 'Microbiology', title: 'Microbiology', description: 'Bacteriology, virology, mycology, and parasitology.', estimatedHours: 25, diseaseIds: ['tuberculosis', 'hiv', 'malaria', 'meningitis', 'uti'], learningObjectives: [{ id: 'lo-sup-micro-classification', unitId: 'sup-micro', statement: 'Classify pathogens by causative organism.' }] },
       { id: 'sup-immuno', areaId: 'supporting', subject: 'Immunology', title: 'Immunology', description: 'Innate and adaptive immunity, hypersensitivity, and vaccines.', estimatedHours: 15, diseaseIds: ['anaphylaxis'], learningObjectives: [{ id: 'lo-sup-immuno-hypersensitivity', unitId: 'sup-immuno', statement: 'Classify hypersensitivity reactions.' }] },
@@ -818,7 +818,7 @@ export const EDUCATION_MODULES: EducationModule[] = [
   { id: 'clinical_pharm', title: 'Clinical Pharmacy & Therapeutics', description: 'Disease management and patient care across 17 integrated therapeutic areas.', isIntegrated: true, areaId: 'clinical_pharm', icon: 'HeartPulse', color: 'red' },
   { id: 'cases', title: 'Clinical Cases', description: 'Interactive patient cases for therapeutic areas.', isIntegrated: false, icon: 'Briefcase', color: 'orange' },
   { id: 'drug_info', title: 'Drug Information & Guidelines', description: 'Clinical guidelines, monographs, and evidence.', isIntegrated: false, icon: 'FileText', color: 'teal' },
-  { id: 'ebm', title: 'Evidence-Based Medicine', description: 'Research methods, biostatistics, and critical appraisal.', isIntegrated: false, icon: 'Search', color: 'sky' },
+  { id: 'ebm', title: 'Evidence-Based Medicine & Research', description: 'Research methodology, biostatistics, critical appraisal, and evidence synthesis.', isIntegrated: false, icon: 'Search', color: 'sky' },
   { id: 'supporting', title: 'Supporting Sciences', description: 'Foundational sciences for pharmacy and medicine.', isIntegrated: false, areaId: 'supporting', icon: 'FlaskConical', color: 'emerald' },
   { id: 'tools', title: 'Study & AI Tools', description: 'Flashcards, Q-banks, Oral Practice, and Planning.', isIntegrated: false, icon: 'BrainCircuit', color: 'fuchsia' },
 ];
@@ -867,10 +867,10 @@ const NON_CURRICULUM_UNITS: Record<string, EducationModuleUnit[]> = {
     { id: 'di-formulary', title: 'Formulary Management', description: 'Pharmacy and Therapeutics (P&T) committee processes and drug selection.' },
   ],
   ebm: [
-    { id: 'ebm-research', title: 'Research Methods', description: 'Study designs, clinical trials, and epidemiological studies.' },
-    { id: 'ebm-biostats', title: 'Biostatistics', description: 'Statistical testing, p-values, confidence intervals, and regression.' },
-    { id: 'ebm-literature', title: 'Literature Evaluation', description: 'Critical appraisal of journal articles and identifying bias.' },
-    { id: 'ebm-trials', title: 'Clinical Trials', description: 'Phases of drug development and regulatory approval processes.' },
+    { id: 'ebm-research', title: 'Research Methodology', description: 'Study designs, epidemiological methods, and research question formulation.' },
+    { id: 'ebm-biostats', title: 'Biostatistics', description: 'Descriptive and inferential statistics, hypothesis testing, and data interpretation.' },
+    { id: 'ebm-literature', title: 'Critical Appraisal', description: 'Evaluating validity, bias, and applicability of published medical research.' },
+    { id: 'ebm-trials', title: 'Clinical Trial Design', description: 'Phases of drug development, randomization, blinding, and regulatory approval.' },
   ],
   tools: [
     { id: 'tool-qbank', title: 'Question Bank', description: 'MCQs and practice exams for all subjects.' },

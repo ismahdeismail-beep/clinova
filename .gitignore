@@ -29,3 +29,6 @@ dist-ssr
 !.env.example
 
 graphify-out/
+
+# Firebase config with API keys (should not be committed)
+firebase-applet-config.json

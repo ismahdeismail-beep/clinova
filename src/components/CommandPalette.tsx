@@ -5,6 +5,7 @@ import {
   Bot, BookOpen, BarChart3, Bell, Settings, ShieldCheck, X, Moon
 } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
+import { useAuth } from '../contexts/AuthContext';
 
 type Action = {
   id: string;
@@ -22,6 +23,8 @@ export function CommandPalette() {
   const navigate = useNavigate();
   const inputRef = useRef<HTMLInputElement>(null);
   const { toggleTheme } = useTheme();
+  const { userData } = useAuth();
+  const isAdmin = userData?.role === 'admin';
 
   const actions: Action[] = [
     { id: 'dashboard', label: 'Go to Dashboard', icon: Home, path: '/', shortcut: ['shift', 'h'] },
@@ -31,7 +34,7 @@ export function CommandPalette() {
     { id: 'drugs', label: 'Search Drug Index', icon: Pill, path: '/drugs' },
     { id: 'assistant', label: 'Ask Clinical Assistant', icon: Bot, path: '/assistant' },
     { id: 'knowledge', label: 'Go to Education Hub', icon: BookOpen, path: '/knowledge' },
-    { id: 'admin', label: 'Go to Admin Console', icon: ShieldCheck, path: '/admin' },
+    ...(isAdmin ? [{ id: 'admin', label: 'Go to Admin Console', icon: ShieldCheck, path: '/admin' }] : []),
     { id: 'notifications', label: 'Go to Notifications', icon: Bell, path: '/notifications', shortcut: ['shift', 'n'] },
     { id: 'settings', label: 'Go to Settings', icon: Settings, path: '/settings' },
     { 

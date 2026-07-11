@@ -32,6 +32,16 @@ function mapRow(row: any): DrugMonograph {
   };
 }
 
+export interface UserMonograph {
+  id: string;
+  user_id: string;
+  monograph_id: string;
+  saved_at: string;
+  notes: string | null;
+  tags: string[];
+  monograph?: DrugMonograph;
+}
+
 export const DrugMonographService = {
   async getAll(): Promise<DrugMonograph[]> {
     if (!supabase) return [];
@@ -116,5 +126,110 @@ export const DrugMonographService = {
     }
 
     return results;
+  },
+
+  // ── Saved Monographs ──────────────────────────────────────────
+
+  async saveMonograph(monographId: string, opts?: { notes?: string; tags?: string[] }): Promise<boolean> {
+    if (!supabase) return false;
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return false;
+
+    const { error } = await supabase
+      .from('user_monographs')
+      .upsert({
+        user_id: user.id,
+        monograph_id: monographId,
+        notes: opts?.notes ?? null,
+        tags: opts?.tags ?? [],
+      }, { onConflict: 'user_id,monograph_id' });
+
+    return !error;
+  },
+
+  async removeSavedMonograph(monographId: string): Promise<boolean> {
+    if (!supabase) return false;
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return false;
+
+    const { error } = await supabase
+      .from('user_monographs')
+      .delete()
+      .eq('user_id', user.id)
+      .eq('monograph_id', monographId);
+
+    return !error;
+  },
+
+  async getUserMonographs(opts?: {
+    search?: string;
+    tag?: string;
+    page?: number;
+    pageSize?: number;
+  }): Promise<{ items: UserMonograph[]; total: number }> {
+    if (!supabase) return { items: [], total: 0 };
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return { items: [], total: 0 };
+
+    const page = opts?.page ?? 1;
+    const pageSize = opts?.pageSize ?? 24;
+    const from = (page - 1) * pageSize;
+    const to = from + pageSize - 1;
+
+    let query = supabase
+      .from('user_monographs')
+      .select('*, monograph:drug_monographs(*)', { count: 'exact' })
+      .eq('user_id', user.id);
+
+    if (opts?.tag) {
+      query = query.contains('tags', [opts.tag]);
+    }
+
+    if (opts?.search) {
+      const s = `%${opts.search}%`;
+      query = query.or(`notes.ilike.${s}`);
+    }
+
+    const { data, count, error } = await query
+      .order('saved_at', { ascending: false })
+      .range(from, to);
+
+    if (error) return { items: [], total: 0 };
+
+    return {
+      items: (data ?? []).map((r: any) => ({
+        id: r.id,
+        user_id: r.user_id,
+        monograph_id: r.monograph_id,
+        saved_at: r.saved_at,
+        notes: r.notes,
+        tags: r.tags ?? [],
+        monograph: r.monograph ? mapRow(r.monograph) : undefined,
+      })),
+      total: count ?? 0,
+    };
+  },
+
+  async isMonographSaved(monographId: string): Promise<boolean> {
+    if (!supabase) return false;
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return false;
+
+    const { data } = await supabase
+      .from('user_monographs')
+      .select('id')
+      .eq('user_id', user.id)
+      .eq('monograph_id', monographId)
+      .maybeSingle();
+
+    return data !== null;
+  },
+
+  async saveMonographWithDetails(monographId: string): Promise<UserMonograph | null> {
+    const ok = await DrugMonographService.saveMonograph(monographId);
+    if (!ok) return null;
+
+    const { items } = await DrugMonographService.getUserMonographs({ pageSize: 1 });
+    return items[0] ?? null;
   },
 };

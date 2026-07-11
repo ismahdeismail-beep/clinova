@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   Pill, Search, Loader2, ArrowRight, BookOpen,
   Sparkles, AlertTriangle, CheckCircle2, RefreshCw, User, Plus, Trash2, Info, HeartPulse, Activity, Check, ShieldAlert,
-  Upload, FileUp, FileText, Download, Bookmark
+  Upload, FileUp, FileText, Download, Bookmark, Heart
 } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { db } from '../lib/firebase';
@@ -10,6 +10,8 @@ import { collection, getDocs, doc, setDoc, query, where } from 'firebase/firesto
 import { Patient } from '../components/PatientQuickSummary';
 import { getMonographCached, pinMonograph } from '../lib/getMonograph';
 import { useAuth } from '../contexts/AuthContext';
+import { DrugMonographService } from '../services/drugMonograph.service';
+import SavedMonographsPanel, { SaveMonographButton } from '../components/SavedMonographsPanel';
 
 interface QuickDrug {
   name: string;
@@ -72,7 +74,7 @@ export default function DrugIndexScreen() {
   const { userData } = useAuth();
   
   // Navigation State
-  const [activeTab, setActiveTab] = useState<'monograph' | 'interaction'>('monograph');
+  const [activeTab, setActiveTab] = useState<'monograph' | 'interaction' | 'library'>('monograph');
 
   // Tab 1: Monograph Search State
   const [searchQuery, setSearchQuery] = useState('');
@@ -82,6 +84,7 @@ export default function DrugIndexScreen() {
   const [error, setError] = useState<string | null>(null);
   const [monograph, setMonograph] = useState<string | null>(null);
   const [monographKey, setMonographKey] = useState<string>('');
+  const [currentMonographId, setCurrentMonographId] = useState<string | null>(null);
 
   // Tab 2: Interaction Checker State
   const [patients, setPatients] = useState<Patient[]>([]);
@@ -261,10 +264,18 @@ export default function DrugIndexScreen() {
     setIsLoading(true);
     setError(null);
     setMonograph(null);
+    setCurrentMonographId(null);
     try {
       const entry = await getMonographCached(query, categoryName);
       setMonograph(entry.content);
       setMonographKey(entry.key);
+
+      // Look up Supabase monograph for save button
+      const searchName = query || categoryName || '';
+      if (searchName) {
+        const monograph = await DrugMonographService.getByName(searchName);
+        if (monograph) setCurrentMonographId(monograph.id);
+      }
       
       if (query) {
         saveDrugSearch(query);
@@ -373,9 +384,31 @@ export default function DrugIndexScreen() {
           <Sparkles size={16} className="text-[var(--primary)] animate-pulse" />
           Real-Time Interaction Checker
         </button>
+        <button
+          onClick={() => setActiveTab('library')}
+          className={`px-5 py-3 text-sm font-semibold border-b-2 transition-all flex items-center gap-2 cursor-pointer ${
+            activeTab === 'library'
+              ? 'border-rose-500 text-rose-600 font-bold'
+              : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
+          }`}
+        >
+          <Heart size={16} className={activeTab === 'library' ? 'text-rose-500' : ''} />
+          My Library
+        </button>
       </div>
 
-      {activeTab === 'monograph' ? (
+      {activeTab === 'library' ? (
+        <div className="animate-in fade-in duration-200 max-w-3xl mx-auto">
+          <SavedMonographsPanel
+            onNavigateToDrug={(name) => {
+              setActiveTab('monograph');
+              setSearchQuery(name);
+              setSelectedCategory(null);
+              fetchDrugProfile(name);
+            }}
+          />
+        </div>
+      ) : activeTab === 'monograph' ? (
         <div className="space-y-6 animate-in fade-in duration-200">
           {/* Search Bar */}
           <form onSubmit={handleSearchSubmit} className="flex gap-3 bg-[var(--surface)] p-2 rounded-xl border border-[var(--border)] shadow-sm">
@@ -503,13 +536,18 @@ export default function DrugIndexScreen() {
                       </div>
                     </div>
                     
-                    <button 
-                      onClick={handlePinForOffline}
-                      className="flex items-center gap-2 px-3 py-1.5 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)] text-[var(--text-secondary)] hover:text-[var(--primary)] rounded-lg text-xs font-semibold transition-colors border border-[var(--border)] hover:border-[var(--primary)]/30 shrink-0"
-                    >
-                      <Download size={14} />
-                      Pin for Offline Access
-                    </button>
+                    <div className="flex items-center gap-2 shrink-0">
+                      {currentMonographId && (
+                        <SaveMonographButton monographId={currentMonographId} monographName={searchQuery} />
+                      )}
+                      <button 
+                        onClick={handlePinForOffline}
+                        className="flex items-center gap-2 px-3 py-1.5 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)] text-[var(--text-secondary)] hover:text-[var(--primary)] rounded-lg text-xs font-semibold transition-colors border border-[var(--border)] hover:border-[var(--primary)]/30 shrink-0"
+                      >
+                        <Download size={14} />
+                        Pin for Offline Access
+                      </button>
+                    </div>
                   </div>
 
                   <div className="markdown-body text-[var(--text)] max-w-none min-w-0">

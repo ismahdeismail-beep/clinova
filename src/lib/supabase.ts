@@ -7,14 +7,24 @@
  */
 import { createBrowserClient } from '@supabase/ssr';
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string | undefined;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined;
+// Resolve env safely across both the Vite browser build (import.meta.env) and the
+// CJS server build (process.env), where `import.meta` is undefined/empty.
+const _meta: any = (typeof import.meta !== 'undefined') ? import.meta : {};
+const _viteEnv: any = _meta && _meta.env ? _meta.env : {};
+const _processEnv: any = (typeof process !== 'undefined' && process.env) ? process.env : {};
+
+const supabaseUrl = (_viteEnv.VITE_SUPABASE_URL || _processEnv.VITE_SUPABASE_URL) as string | undefined;
+const supabaseAnonKey = (_viteEnv.VITE_SUPABASE_ANON_KEY || _processEnv.VITE_SUPABASE_ANON_KEY) as string | undefined;
+
+const isBrowser = typeof window !== 'undefined';
 
 if (!supabaseUrl || !supabaseAnonKey) {
   // Fail soft so the app still boots where Supabase isn't configured (e.g. Firebase-only mode).
   console.warn('[supabase] VITE_SUPABASE_URL / VITE_SUPABASE_ANON_KEY not set; client disabled.');
 }
 
-export const supabase = supabaseUrl && supabaseAnonKey
+// Only instantiate the browser client in a browser context. In the Node server
+// build this stays null (the service-role client in server.ts handles writes).
+export const supabase = (isBrowser && supabaseUrl && supabaseAnonKey)
   ? createBrowserClient(supabaseUrl, supabaseAnonKey)
   : null;

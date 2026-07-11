@@ -402,7 +402,7 @@ async function executeProvider(provider: string, request: any): Promise<{ text: 
     const apiKey = process.env.OPENROUTER_API_KEY;
     if (apiKey) {
       const payload = mapToOpenAIFormat(request);
-      payload.model = "google/gemini-2.5-flash";
+      payload.model = "google/gemini-2.0-flash";
       const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {

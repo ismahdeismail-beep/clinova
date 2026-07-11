@@ -600,7 +600,7 @@ Return a JSON object containing:
     }
 
     const response = await generateContentWithFallback({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-flash-latest',
       contents: [
         { role: 'user', parts: userParts }
       ],
@@ -756,7 +756,7 @@ Generate appropriate, guideline-based recommendations. Ensure you adjust doses f
 
     // We use a structured JSON schema to populate the rest of the form perfectly!
     const response = await generateContentWithFallback({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-flash-latest',
       contents: prompt,
       config: {
         systemInstruction: `You are an expert clinical pharmacist in Kenya, specializing in pharmacotherapy reviews, guideline-directed medical therapy, and local formularies (KDI). Your outputs must be highly clinical, precise, and evidence-based.
@@ -962,7 +962,7 @@ ${fileName ? `(Attached file: ${fileName})` : ''}
     });
 
     const response = await generateContentWithFallback({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-flash-latest',
       contents: contents,
       config: {
         systemInstruction: systemInstruction,
@@ -1006,7 +1006,7 @@ Provide 3 highly relevant clinical board-style questions with answers, detailed 
     }
 
     const response = await generateContentWithFallback({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-flash-latest',
       contents: prompt,
       config: {
         systemInstruction: `You are an expert clinical pharmacy professor and OSCE examiner in Kenya. You draft official medical board exam questions, high-yield summary guides, and professional medical educational materials based on the Kenya Drug Index (KDI) and international clinical standards. Ensure your outputs are formatted clearly using markdown.`,
@@ -1058,7 +1058,7 @@ Return a list of flashcard objects, where each flashcard has:
 2. answer: A high-yield, punchy, informative answer explaining the concept or facts cleanly.`;
 
     const response = await generateContentWithFallback({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-flash-latest',
       contents: prompt,
       config: {
         responseMimeType: 'application/json',
@@ -1109,7 +1109,7 @@ Return a list of quiz question objects, where each object has:
 4. explanation: A comprehensive explanation explaining why that answer is correct and why other options are incorrect, citing relevant mechanisms or guidelines.`;
 
     const response = await generateContentWithFallback({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-flash-latest',
       contents: prompt,
       config: {
         responseMimeType: 'application/json',
@@ -1166,7 +1166,7 @@ Structure the output beautifully using Markdown with the following key sections:
 5. **Clinical OSCE Pearls**: Golden high-yield tips, diagnostic rules of thumb, or common board pitfalls for this unit.`;
 
     const response = await generateContentWithFallback({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-flash-latest',
       contents: prompt,
       config: {
         systemInstruction: `You are an expert clinical pharmacotherapist and esteemed academic professor. You write publication-quality, structured, evidence-based study summaries, highlighting critical guidelines, safety profiles, and OSCE board review concepts.`
@@ -1259,7 +1259,7 @@ ATTRIBUTION: This response uses clinical data sourced from the U.S. National Lib
 `;
 
     const response = await generateContentWithFallback({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-flash-latest',
       contents: prompt,
       config: {
         systemInstruction: `You are an expert clinical pharmacologist and KDI committee editor. Provide highly structured, precise, and guideline-directed monographs. Always format using structured markdown with clear headings, bullets, and tables where helpful.`,
@@ -1358,7 +1358,7 @@ Please evaluate and return a detailed response in the requested structured JSON 
 Ensure your guidance is highly clinical, accurate, aligned with the Kenya Drug Index (KDI), WHO Essential Medicines, and international guidelines (e.g., Beers Criteria). Avoid vague generalities. Provide high-yield clinical value.`;
 
     const response = await generateContentWithFallback({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-flash-latest',
       contents: prompt,
       config: {
         systemInstruction: `You are an expert clinical pharmacologist and KDI clinical safety checker. Your mission is to provide extremely accurate, non-redundant, and evidence-based drug safety checks. You MUST return your output in strict JSON conforming to the requested schema. Do not include markdown wrappers or other text outside the JSON.`,
@@ -1450,7 +1450,7 @@ Ensure each case contains:
 Ensure the output is highly educational, precise, and matches the clinical standards of KDI (Kenya Drug Index).`;
 
     const response = await generateContentWithFallback({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-flash-latest',
       contents: prompt,
       config: {
         systemInstruction: `You are an expert clinical pharmacy examiner and KDI board editor. Extract clinical pharmacology and clinical pharmacy cases with high fidelity. Ensure all outputs strictly follow the requested JSON schema.`,
@@ -1541,7 +1541,7 @@ Ensure the content is medically accurate, authoritative, and strictly integrated
     }
 
     const response = await generateContentWithFallback({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-flash-latest',
       contents: prompt,
       config: {
         systemInstruction: `You are an expert clinical pharmacy curriculum builder. Generate medically accurate clinical modules based on official guidelines. Respond with a strictly formatted JSON object matching the requested schema.`,
@@ -1815,7 +1815,7 @@ Provide:
 You must respond with a strictly formatted JSON object matching the required schema.`;
 
     const response = await generateContentWithFallback({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-flash-latest',
       contents: prompt,
       config: {
         systemInstruction: 'You are an expert clinical pharmacy and pharmacology examiner. Generate high-fidelity patient case studies conforming to the requested JSON schema.',
@@ -2042,7 +2042,7 @@ Provide brief "promptGuidance" (a 1-sentence hint or tip for the student on what
     }
     
     const response = await generateContentWithFallback({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-flash-latest',
       contents: prompt,
       config: {
         responseMimeType: 'application/json',
@@ -2112,7 +2112,7 @@ Provide:
     };
     
     const response = await generateContentWithFallback({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-flash-latest',
       contents: prompt,
       config: {
         responseMimeType: 'application/json',

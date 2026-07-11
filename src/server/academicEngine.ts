@@ -92,7 +92,7 @@ Example output: ["clinical-reasoning", "evidence-based-medicine"]`;
 
   try {
     const selectorResponse = await generateContentWithFallback({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-flash-latest',
       contents: [{ role: 'user', parts: [{ text: selectorPrompt }] }],
       config: {
         temperature: 0.1,

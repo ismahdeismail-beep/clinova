@@ -526,10 +526,10 @@ export default function ClinicalCasesScreen() {
   const handleSubsectionAction = (action: string) => {
     switch (action) {
       case 'link-education':
-        navigate('/education');
+        navigate('/knowledge');
         break;
       case 'link-drug-info':
-        navigate('/knowledge-base');
+        navigate('/knowledge');
         break;
       case 'oral':
         navigate('/oral-practice', {
@@ -542,34 +542,19 @@ export default function ClinicalCasesScreen() {
         });
         break;
       case 'flashcards':
-        navigate('/revision', {
-          state: {
-            activeTab: 'flashcards',
-            topic: selectedDisease
-          }
-        });
+        navigate('/knowledge');
         break;
       case 'qbank':
-        navigate('/revision', {
-          state: {
-            activeTab: 'qbank',
-            topic: selectedDisease
-          }
-        });
+        navigate('/knowledge');
         break;
       case 'notes':
-        navigate('/revision', {
-          state: {
-            activeTab: 'notes',
-            topic: selectedDisease
-          }
-        });
+        navigate('/knowledge');
         break;
       case 'planner':
         navigate('/');
         break;
       case 'kdl':
-        navigate('/knowledge-base');
+        navigate('/knowledge');
         break;
       case 'tutor':
         // Start AI tutor on the disease general topic

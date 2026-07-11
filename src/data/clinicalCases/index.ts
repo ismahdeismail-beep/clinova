@@ -24,6 +24,7 @@ import { dermatology_cases } from './dermatology';
 import { ophthalmology_cases } from './ophthalmology';
 import { toxicology_cases } from './toxicology';
 import { clinical_pharmacy_cases } from './clinical_pharmacy';
+import { ent_pharmacotherapy_cases } from './ent_pharmacotherapy';
 
 // Merge all generated case batches into one array
 export const GENERATED_CASES: ClinicalCase[] = [
@@ -44,6 +45,7 @@ export const GENERATED_CASES: ClinicalCase[] = [
   ...ophthalmology_cases,
   ...toxicology_cases,
   ...clinical_pharmacy_cases,
+  ...ent_pharmacotherapy_cases,
 ];
 
 // Version tracking for cache invalidation

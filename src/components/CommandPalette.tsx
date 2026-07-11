@@ -34,7 +34,11 @@ export function CommandPalette() {
     { id: 'drugs', label: 'Search Drug Index', icon: Pill, path: '/drugs' },
     { id: 'assistant', label: 'Ask Clinical Assistant', icon: Bot, path: '/assistant' },
     { id: 'knowledge', label: 'Go to Education Hub', icon: BookOpen, path: '/knowledge' },
-    ...(isAdmin ? [{ id: 'admin', label: 'Go to Admin Console', icon: ShieldCheck, path: '/admin' }] : []),
+    ...(isAdmin ? [
+      { id: 'admin', label: 'Go to Admin Console', icon: ShieldCheck, path: '/admin' },
+      { id: 'kbms', label: 'Go to Knowledge Base Manager', icon: BookOpen, path: '/admin/kbms' },
+      { id: 'ai-gateway', label: 'Go to AI Gateway', icon: Bot, path: '/admin/ai' },
+    ] : []),
     { id: 'notifications', label: 'Go to Notifications', icon: Bell, path: '/notifications', shortcut: ['shift', 'n'] },
     { id: 'settings', label: 'Go to Settings', icon: Settings, path: '/settings' },
     { 

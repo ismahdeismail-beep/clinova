@@ -329,6 +329,7 @@ export const CURRICULUM: CurriculumArea[] = [
         diseaseIds: ['iron_deficiency_anemia', 'vitamin_d_deficiency', 'vitamin_b12_deficiency'],
         learningObjectives: [
           { id: 'lo-pharm-vit-deficiencies', unitId: 'pharm-vit', statement: 'Recognize deficiency states and replacement therapy for key vitamins/minerals.' },
+          { id: 'lo-pharm-vit-anemia', unitId: 'pharm-vit', statement: 'Differentiate iron deficiency, B12, and folate anaemia by lab findings and treatment.' },
         ],
       },
       {
@@ -393,6 +394,7 @@ export const CURRICULUM: CurriculumArea[] = [
         diseaseIds: ['glaucoma', 'conjunctivitis', 'cataracts', 'dry_eye', 'uveitis'],
         learningObjectives: [
           { id: 'lo-pharm-ophth-glaucoma', unitId: 'pharm-ophth', statement: 'Classify antiglaucoma agents by mechanism.' },
+          { id: 'lo-pharm-ophth-infections', unitId: 'pharm-ophth', statement: 'Select appropriate topical anti-infectives for common ocular infections.' },
         ],
       },
       {
@@ -401,6 +403,7 @@ export const CURRICULUM: CurriculumArea[] = [
         diseaseIds: [],
         learningObjectives: [
           { id: 'lo-pharm-vet-principles', unitId: 'pharm-vet', statement: 'Recognize key differences in veterinary pharmacokinetics.' },
+          { id: 'lo-pharm-vet-dosing', unitId: 'pharm-vet', statement: 'Apply allometric scaling to cross-species dose calculation.' },
         ],
       },
     ],
@@ -416,6 +419,7 @@ export const CURRICULUM: CurriculumArea[] = [
         diseaseIds: [],
         learningObjectives: [
           { id: 'lo-cp-intro-role', unitId: 'cp-intro', statement: 'Describe the role of the clinical pharmacist in the healthcare team.' },
+          { id: 'lo-cp-intro-care', unitId: 'cp-intro', statement: 'Outline the pharmaceutical care process and its core components.' },
         ],
       },
       {
@@ -478,7 +482,7 @@ export const CURRICULUM: CurriculumArea[] = [
       {
         id: 'cp-id', areaId: 'clinical_pharm', subject: 'Infectious Diseases & Antimicrobial Pharmacotherapy',
         title: 'Infectious Diseases & Antimicrobial Pharmacotherapy', description: 'Pneumonia, UTI, meningitis, HIV/AIDS, tuberculosis, malaria, and antimicrobial stewardship.', estimatedHours: 30,
-        diseaseIds: ['community_acquired_pneumonia', 'childhood_pneumonia', 'uti', 'meningitis', 'sepsis', 'hiv', 'tuberculosis', 'malaria', 'gonorrhoea', 'syphilis', 'cellulitis', 'typhoid'],
+        diseaseIds: ['community_acquired_pneumonia', 'childhood_pneumonia', 'uti', 'meningitis', 'sepsis', 'hiv', 'tuberculosis', 'malaria', 'gonorrhoea', 'syphilis', 'cellulitis', 'typhoid', 'fever'],
         learningObjectives: [
           { id: 'lo-cp-id-empiric', unitId: 'cp-id', statement: 'Select empiric antimicrobial therapy by syndrome and local resistance.' },
           { id: 'lo-cp-id-stewardship', unitId: 'cp-id', statement: 'Apply antimicrobial stewardship principles.' },
@@ -577,14 +581,16 @@ export const CURRICULUM: CurriculumArea[] = [
         diseaseIds: ['polypharmacy', 'ckd', 'heart_failure'],
         learningObjectives: [
           { id: 'lo-cp-ger-polypharmacy', unitId: 'cp-ger', statement: 'Deprescribe and apply the Beers criteria in older adults.' },
+          { id: 'lo-cp-ger-cognition', unitId: 'cp-ger', statement: 'Screen for cognitive impairment and anticholinergic burden in older adults.' },
         ],
       },
       {
         id: 'cp-tdm', areaId: 'clinical_pharm', subject: 'Therapeutic Drug Monitoring',
         title: 'Therapeutic Drug Monitoring', description: 'Clinical pharmacokinetics of narrow therapeutic index drugs.', estimatedHours: 15,
-        diseaseIds: ['tdm', 'dose_adjustment'],
+        diseaseIds: ['tdm', 'dose_adjustment', 'special_pop_dosing'],
         learningObjectives: [
           { id: 'lo-cp-tdm-principles', unitId: 'cp-tdm', statement: 'Define when TDM is indicated and interpret levels.' },
+          { id: 'lo-cp-tdm-pharmacokinetics', unitId: 'cp-tdm', statement: 'Calculate loading and maintenance doses using pharmacokinetic equations.' },
         ],
       },
       {
@@ -593,6 +599,7 @@ export const CURRICULUM: CurriculumArea[] = [
         diseaseIds: ['nonadherence'],
         learningObjectives: [
           { id: 'lo-cp-couns-adherence', unitId: 'cp-couns', statement: 'Use teach-back and adherence strategies in counselling.' },
+          { id: 'lo-cp-couns-barriers', unitId: 'cp-couns', statement: 'Identify and address common barriers to medication adherence.' },
         ],
       },
       {
@@ -601,6 +608,7 @@ export const CURRICULUM: CurriculumArea[] = [
         diseaseIds: ['medication_error', 'adr'],
         learningObjectives: [
           { id: 'lo-cp-safety-vigilance', unitId: 'cp-safety', statement: 'Apply pharmacovigilance and error-reporting processes.' },
+          { id: 'lo-cp-safety-error', unitId: 'cp-safety', statement: 'Classify medication errors by type and stage of the medication-use process.' },
         ],
       },
       {
@@ -609,6 +617,7 @@ export const CURRICULUM: CurriculumArea[] = [
         diseaseIds: ['adr', 'drug_interaction', 'polypharmacy'],
         learningObjectives: [
           { id: 'lo-cp-pharmcare-dtp', unitId: 'cp-pharmcare', statement: 'Identify and resolve drug therapy problems.' },
+          { id: 'lo-cp-pharmcare-plan', unitId: 'cp-pharmcare', statement: 'Construct a pharmaceutical care plan with measurable outcomes.' },
         ],
       },
     ],
@@ -618,19 +627,107 @@ export const CURRICULUM: CurriculumArea[] = [
     title: 'Supporting Sciences',
     description: 'Foundational sciences for pharmacy and medicine.',
     units: [
-      { id: 'sup-anat', areaId: 'supporting', subject: 'Anatomy', title: 'Anatomy', description: 'Gross anatomy, neuroanatomy, and histology.', estimatedHours: 30, diseaseIds: [], learningObjectives: [{ id: 'lo-sup-anat-basics', unitId: 'sup-anat', statement: 'Recall major anatomical relationships relevant to drug action.' }] },
+      {
+        id: 'sup-anat', areaId: 'supporting', subject: 'Anatomy',
+        title: 'Anatomy', description: 'Gross anatomy, neuroanatomy, and histology.',
+        estimatedHours: 30, diseaseIds: [],
+        learningObjectives: [
+          { id: 'lo-sup-anat-basics', unitId: 'sup-anat', statement: 'Recall major anatomical relationships relevant to drug action.' },
+          { id: 'lo-sup-anat-systems', unitId: 'sup-anat', statement: 'Identify anatomical structures relevant to drug administration routes.' },
+        ],
+      },
       { id: 'sup-phys', areaId: 'supporting', subject: 'Physiology', title: 'Physiology', description: 'Human body systems, homeostatic mechanisms, and organ function.', estimatedHours: 35, diseaseIds: [], learningObjectives: [{ id: 'lo-sup-phys-systems', unitId: 'sup-phys', statement: 'Explain physiological basis of major organ systems.' }, { id: 'lo-sup-phys-homeostasis', unitId: 'sup-phys', statement: 'Describe homeostatic regulation of body fluids, electrolytes, and acid-base balance.' }] },
       { id: 'sup-biochem', areaId: 'supporting', subject: 'Biochemistry', title: 'Biochemistry', description: 'Metabolism, enzymology, and molecular biology.', estimatedHours: 30, diseaseIds: [], learningObjectives: [{ id: 'lo-sup-biochem-metabolism', unitId: 'sup-biochem', statement: 'Describe major metabolic pathways and their regulation.' }, { id: 'lo-sup-biochem-enzymes', unitId: 'sup-biochem', statement: 'Explain enzyme kinetics and inhibition relevant to drug action.' }] },
-      { id: 'sup-path', areaId: 'supporting', subject: 'Pathology', title: 'Pathology', description: 'Cell injury, inflammation, and systemic disease processes.', estimatedHours: 25, diseaseIds: [], learningObjectives: [{ id: 'lo-sup-path-inflammation', unitId: 'sup-path', statement: 'Describe cellular and inflammatory pathology.' }] },
-      { id: 'sup-micro', areaId: 'supporting', subject: 'Microbiology', title: 'Microbiology', description: 'Bacteriology, virology, mycology, and parasitology.', estimatedHours: 25, diseaseIds: ['tuberculosis', 'hiv', 'malaria', 'meningitis', 'uti'], learningObjectives: [{ id: 'lo-sup-micro-classification', unitId: 'sup-micro', statement: 'Classify pathogens by causative organism.' }] },
-      { id: 'sup-immuno', areaId: 'supporting', subject: 'Immunology', title: 'Immunology', description: 'Innate and adaptive immunity, hypersensitivity, and vaccines.', estimatedHours: 15, diseaseIds: ['anaphylaxis'], learningObjectives: [{ id: 'lo-sup-immuno-hypersensitivity', unitId: 'sup-immuno', statement: 'Classify hypersensitivity reactions.' }] },
-      { id: 'sup-medchem', areaId: 'supporting', subject: 'Medicinal Chemistry', title: 'Medicinal Chemistry', description: 'Drug design, SAR, and targets.', estimatedHours: 25, diseaseIds: [], learningObjectives: [{ id: 'lo-sup-medchem-sar', unitId: 'sup-medchem', statement: 'Relate structure-activity relationships to pharmacology.' }] },
-      { id: 'sup-pharmchem', areaId: 'supporting', subject: 'Pharmaceutical Chemistry', title: 'Pharmaceutical Chemistry', description: 'Analytical techniques and quality control.', estimatedHours: 20, diseaseIds: [], learningObjectives: [{ id: 'lo-sup-pharmchem-qc', unitId: 'sup-pharmchem', statement: 'Apply basic analytical QC principles.' }] },
-      { id: 'sup-orgchem', areaId: 'supporting', subject: 'Organic Chemistry', title: 'Organic Chemistry', description: 'Reaction mechanisms and functional groups.', estimatedHours: 25, diseaseIds: [], learningObjectives: [{ id: 'lo-sup-orgchem-mechanisms', unitId: 'sup-orgchem', statement: 'Identify functional groups relevant to drug molecules.' }] },
-      { id: 'sup-pharmanal', areaId: 'supporting', subject: 'Pharmaceutical Analysis', title: 'Pharmaceutical Analysis', description: 'Spectroscopy and chromatography.', estimatedHours: 20, diseaseIds: [], learningObjectives: [{ id: 'lo-sup-pharmanal-methods', unitId: 'sup-pharmanal', statement: 'Describe chromatographic and spectroscopic methods.' }] },
-      { id: 'sup-pharmaceutics', areaId: 'supporting', subject: 'Pharmaceutics', title: 'Pharmaceutics', description: 'Dosage forms and biopharmaceutics.', estimatedHours: 30, diseaseIds: [], learningObjectives: [{ id: 'lo-sup-pharmaceutics-dosage', unitId: 'sup-pharmaceutics', statement: 'Relate dosage form to bioavailability.' }] },
-      { id: 'sup-pharmacog', areaId: 'supporting', subject: 'Pharmacognosy', title: 'Pharmacognosy', description: 'Natural products and herbal medicines.', estimatedHours: 15, diseaseIds: [], learningObjectives: [{ id: 'lo-sup-pharmacog-natural', unitId: 'sup-pharmacog', statement: 'Identify key natural-product-derived drugs.' }] },
-      { id: 'sup-pubhealth', areaId: 'supporting', subject: 'Public Health', title: 'Public Health', description: 'Epidemiology, health systems, and disease prevention.', estimatedHours: 15, diseaseIds: ['malaria', 'tuberculosis', 'hiv'], learningObjectives: [{ id: 'lo-sup-pubhealth-epid', unitId: 'sup-pubhealth', statement: 'Apply epidemiological measures to pharmacy practice.' }] },
+      {
+        id: 'sup-path', areaId: 'supporting', subject: 'Pathology',
+        title: 'Pathology', description: 'Cell injury, inflammation, and systemic disease processes.',
+        estimatedHours: 25, diseaseIds: [],
+        learningObjectives: [
+          { id: 'lo-sup-path-inflammation', unitId: 'sup-path', statement: 'Describe cellular and inflammatory pathology.' },
+          { id: 'lo-sup-path-neoplasia', unitId: 'sup-path', statement: 'Describe the hallmarks of cancer and neoplastic progression.' },
+        ],
+      },
+      {
+        id: 'sup-micro', areaId: 'supporting', subject: 'Microbiology',
+        title: 'Microbiology', description: 'Bacteriology, virology, mycology, and parasitology.',
+        estimatedHours: 25, diseaseIds: ['tuberculosis', 'hiv', 'malaria', 'meningitis', 'uti'],
+        learningObjectives: [
+          { id: 'lo-sup-micro-classification', unitId: 'sup-micro', statement: 'Classify pathogens by causative organism.' },
+          { id: 'lo-sup-micro-stains', unitId: 'sup-micro', statement: 'Compare Gram stain, acid-fast, and special staining techniques for bacterial identification.' },
+        ],
+      },
+      {
+        id: 'sup-immuno', areaId: 'supporting', subject: 'Immunology',
+        title: 'Immunology', description: 'Innate and adaptive immunity, hypersensitivity, and vaccines.',
+        estimatedHours: 15, diseaseIds: ['anaphylaxis'],
+        learningObjectives: [
+          { id: 'lo-sup-immuno-hypersensitivity', unitId: 'sup-immuno', statement: 'Classify hypersensitivity reactions.' },
+          { id: 'lo-sup-immuno-vaccines', unitId: 'sup-immuno', statement: 'Describe vaccine types and the immunological basis of immunization.' },
+        ],
+      },
+      {
+        id: 'sup-medchem', areaId: 'supporting', subject: 'Medicinal Chemistry',
+        title: 'Medicinal Chemistry', description: 'Drug design, SAR, and targets.',
+        estimatedHours: 25, diseaseIds: [],
+        learningObjectives: [
+          { id: 'lo-sup-medchem-sar', unitId: 'sup-medchem', statement: 'Relate structure-activity relationships to pharmacology.' },
+          { id: 'lo-sup-medchem-synthesis', unitId: 'sup-medchem', statement: 'Outline synthetic pathways for representative drug classes.' },
+        ],
+      },
+      {
+        id: 'sup-pharmchem', areaId: 'supporting', subject: 'Pharmaceutical Chemistry',
+        title: 'Pharmaceutical Chemistry', description: 'Analytical techniques and quality control.',
+        estimatedHours: 20, diseaseIds: [],
+        learningObjectives: [
+          { id: 'lo-sup-pharmchem-qc', unitId: 'sup-pharmchem', statement: 'Apply basic analytical QC principles.' },
+          { id: 'lo-sup-pharmchem-stability', unitId: 'sup-pharmchem', statement: 'Evaluate drug stability and degradation pathways.' },
+        ],
+      },
+      {
+        id: 'sup-orgchem', areaId: 'supporting', subject: 'Organic Chemistry',
+        title: 'Organic Chemistry', description: 'Reaction mechanisms and functional groups.',
+        estimatedHours: 25, diseaseIds: [],
+        learningObjectives: [
+          { id: 'lo-sup-orgchem-mechanisms', unitId: 'sup-orgchem', statement: 'Identify functional groups relevant to drug molecules.' },
+          { id: 'lo-sup-orgchem-reactions', unitId: 'sup-orgchem', statement: 'Classify organic reactions relevant to drug synthesis and metabolism.' },
+        ],
+      },
+      {
+        id: 'sup-pharmanal', areaId: 'supporting', subject: 'Pharmaceutical Analysis',
+        title: 'Pharmaceutical Analysis', description: 'Spectroscopy and chromatography.',
+        estimatedHours: 20, diseaseIds: [],
+        learningObjectives: [
+          { id: 'lo-sup-pharmanal-methods', unitId: 'sup-pharmanal', statement: 'Describe chromatographic and spectroscopic methods.' },
+          { id: 'lo-sup-pharmanal-validation', unitId: 'sup-pharmanal', statement: 'Apply analytical method validation parameters (accuracy, precision, specificity).' },
+        ],
+      },
+      {
+        id: 'sup-pharmaceutics', areaId: 'supporting', subject: 'Pharmaceutics',
+        title: 'Pharmaceutics', description: 'Dosage forms and biopharmaceutics.',
+        estimatedHours: 30, diseaseIds: [],
+        learningObjectives: [
+          { id: 'lo-sup-pharmaceutics-dosage', unitId: 'sup-pharmaceutics', statement: 'Relate dosage form to bioavailability.' },
+          { id: 'lo-sup-pharmaceutics-forms', unitId: 'sup-pharmaceutics', statement: 'Compare solid, liquid, and semi-solid dosage forms and their advantages.' },
+        ],
+      },
+      {
+        id: 'sup-pharmacog', areaId: 'supporting', subject: 'Pharmacognosy',
+        title: 'Pharmacognosy', description: 'Natural products and herbal medicines.',
+        estimatedHours: 15, diseaseIds: [],
+        learningObjectives: [
+          { id: 'lo-sup-pharmacog-natural', unitId: 'sup-pharmacog', statement: 'Identify key natural-product-derived drugs.' },
+          { id: 'lo-sup-pharmacog-herbal', unitId: 'sup-pharmacog', statement: 'Evaluate evidence for commonly used herbal medicines and their interactions.' },
+        ],
+      },
+      {
+        id: 'sup-pubhealth', areaId: 'supporting', subject: 'Public Health',
+        title: 'Public Health', description: 'Epidemiology, health systems, and disease prevention.',
+        estimatedHours: 15, diseaseIds: ['malaria', 'tuberculosis', 'hiv'],
+        learningObjectives: [
+          { id: 'lo-sup-pubhealth-epid', unitId: 'sup-pubhealth', statement: 'Apply epidemiological measures to pharmacy practice.' },
+          { id: 'lo-sup-pubhealth-programmes', unitId: 'sup-pubhealth', statement: 'Describe major disease prevention programmes in the Kenyan health system.' },
+        ],
+      },
     ],
   },
 ];

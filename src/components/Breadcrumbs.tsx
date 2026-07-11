@@ -11,6 +11,8 @@ const routeNames: Record<string, string> = {
   '/assistant': 'Auto AI',
   '/knowledge': 'Knowledge Base',
   '/admin': 'Admin Dashboard',
+  '/admin/kbms': 'Knowledge Base Manager',
+  '/admin/ai': 'AI Gateway',
   '/notifications': 'Notifications',
   '/settings': 'Settings',
 };

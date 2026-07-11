@@ -9,6 +9,7 @@ import { skillRegistry } from './registry';
 import { generateContentWithFallback } from '../server/aiRouter';
 import { searchLibrary } from '../data/onlineLibraryData';
 import { INITIAL_CASES } from '../data/clinicalCasesData';
+import { KnowledgeEngine } from '../engine/knowledgeEngine.service';
 
 export const knowledgeRetrievalSkill: Skill = {
   definition: {
@@ -16,7 +17,7 @@ export const knowledgeRetrievalSkill: Skill = {
     name: 'Knowledge Retrieval',
     description: 'Locates relevant information from notes, books, cases, guidelines, and drug/disease monographs',
     category: 'retrieval',
-    version: '1.0.0',
+    version: '2.0.0',
     priority: 70,
     cacheable: true,
     intents: ['find', 'search', 'where can i read', 'resource', 'notes about', 'show me'],
@@ -31,6 +32,8 @@ export const knowledgeRetrievalSkill: Skill = {
     const start = Date.now();
     const query = context.query;
 
+    const engineResult = await KnowledgeEngine.process(query);
+
     const lib = searchLibrary(query, {}).slice(0, 5);
     const cases = INITIAL_CASES.filter((c) =>
       (c.disease || '').toLowerCase().includes(query.toLowerCase()) ||
@@ -38,6 +41,17 @@ export const knowledgeRetrievalSkill: Skill = {
     ).slice(0, 5);
 
     const recommendations: SkillRecommendation[] = [
+      ...engineResult.sources.map((s) => ({
+        type: (s.type === 'drug_monograph' ? 'drug' :
+               s.type === 'clinical_case' ? 'clinical_case' :
+               s.type === 'disease' ? 'book' : 'book') as SkillRecommendation['type'],
+        title: s.title,
+        resourceId: s.id,
+        relevance: s.relevance,
+        reason: s.type === 'drug_monograph' ? `Drug monograph for ${s.title}` :
+                s.type === 'clinical_case' ? `Clinical case related to your query` :
+                `Disease information: ${s.title}`,
+      })),
       ...lib.map((r) => ({
         type: 'book' as const,
         title: r.title,
@@ -60,10 +74,9 @@ export const knowledgeRetrievalSkill: Skill = {
       .join('\n')}`;
 
     try {
-      // Use the retrieval context to ground an AI synthesis.
       const response = await generateContentWithFallback(
         {
-          contents: `Using the retrieved resources below, give a concise, well-structured answer to: "${query}".\n\n${content}`,
+          contents: `Using the retrieved resources below, give a concise, well-structured answer to: "${query}".\n\n${engineResult.contextSummary || content}`,
           config: { temperature: 0.2, maxOutputTokens: 1536 },
         },
         undefined,
@@ -73,7 +86,7 @@ export const knowledgeRetrievalSkill: Skill = {
         skillId: 'knowledge_retrieval',
         content: `${content}\n\n${response.text}`,
         recommendations,
-        confidence: 0.85,
+        confidence: engineResult.hasData ? 0.92 : 0.75,
         processingTimeMs: Date.now() - start,
         cacheable: true,
         cacheKey: `retrieval_${query.substring(0, 120)}`,

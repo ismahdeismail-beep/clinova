@@ -1,4 +1,4 @@
-import { ClinicalCaseService } from './src/services/clinicalCase.service';
+import { ClinicalCaseService } from '../src/services/clinicalCase.service';
 
 async function main() {
   console.log('Fetching cases...');

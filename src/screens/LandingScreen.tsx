@@ -75,7 +75,7 @@ export default function LandingScreen() {
         </h1>
 
         <p className="text-lg sm:text-xl text-[var(--text-muted)] max-w-2xl font-normal leading-relaxed mb-10">
-          Unifying automated reviews, instant answers from standard books, and AI-powered study tools to transform your workflow.
+          Unifying automated reviews, instant answers from standard books, and Clinova study tools to transform your workflow.
         </p>
 
         {/* CTA Box */}

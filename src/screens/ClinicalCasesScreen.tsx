@@ -120,7 +120,11 @@ export default function ClinicalCasesScreen() {
   //    every seeded case is reachable, regardless of raw specialty naming. ──
   const matchesUnit = (c: ClinicalCase, unitTitle: string) => {
     const unitId = getIntegratedUnitId(unitTitle);
-    return (unitId && c.unitId === unitId) || c.specialty === unitTitle;
+    if (!unitId) return false;
+    if (c.unitId === unitId) return true;
+    if (c.specialty === unitTitle) return true;
+    const caseUnitId = getIntegratedUnitId(c.specialty);
+    return caseUnitId === unitId;
   };
 
   const diseaseCountBySpecialty: Record<string, number> = {};
@@ -422,7 +426,7 @@ export default function ClinicalCasesScreen() {
         title: 'OSCE Oral Practice',
         category: 'Assessments & Practice',
         icon: <Mic className="text-emerald-600" size={18} />,
-        content: `### Interactive OSCE Oral Exam\n\n*   **AI-Powered OSCE Simulator**: Speak directly to the patient or examiner.\n*   **Instant Audio Feedback**: Evaluation of clinical communication, diagnostic questioning, and empathetic patient counselling.\n*   **Vivas & Board Practice**: Prepares you for rigorous oral examinations.`,
+        content: `### Interactive OSCE Oral Exam\n\n*   **Clinova OSCE Simulator**: Speak directly to the patient or examiner.\n*   **Instant Audio Feedback**: Evaluation of clinical communication, diagnostic questioning, and empathetic patient counselling.\n*   **Vivas & Board Practice**: Prepares you for rigorous oral examinations.`,
         cta: 'Start OSCE Voice Practice',
         action: 'oral'
       },
@@ -473,11 +477,11 @@ export default function ClinicalCasesScreen() {
       },
       {
         id: 'study_guide',
-        title: 'AI Study Guide',
+        title: 'Clinova Study Guide',
         category: 'Study & Revision Tools',
         icon: <Sparkles className="text-yellow-500" size={18} />,
-        content: `### AI-Powered Study Planner & Guide\n\n*   **Personalized Path**: Custom study guides mapped directly to your academic progress.\n*   **Focus Recommendations**: Automatically flags weak therapeutic concepts.\n*   **Time-Optimized**: Maximizes score efficiency per study hour.`,
-        cta: 'Generate AI Study Guide',
+        content: `### Clinova Study Planner & Guide\n\n*   **Personalized Path**: Custom study guides mapped directly to your academic progress.\n*   **Focus Recommendations**: Automatically flags weak therapeutic concepts.\n*   **Time-Optimized**: Maximizes score efficiency per study hour.`,
+        cta: 'Generate Study Guide',
         action: 'planner'
       },
       {

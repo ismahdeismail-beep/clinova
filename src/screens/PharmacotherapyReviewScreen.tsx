@@ -1188,7 +1188,7 @@ export default function PharmacotherapyReviewScreen() {
                         <Sparkles size={22} className="animate-pulse" />
                       </div>
                       <span className="text-sm font-bold text-[var(--text)] block mb-1">
-                        AI-Powered Auto-Fill: Drag & drop your clinical file here, or <span className="text-[var(--primary)] underline">browse</span>
+                        Smart Auto-Fill: Drag & drop your clinical file here, or <span className="text-[var(--primary)] underline">browse</span>
                       </span>
                       <span className="text-xs text-[var(--text-muted)] max-w-lg leading-relaxed">
                         Upload a patient case note, admission sheet, prescription, or clinical image (PDF or Image) to automatically populate all tabs of this pharmacotherapy review form.

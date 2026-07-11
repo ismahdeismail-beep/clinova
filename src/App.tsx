@@ -244,7 +244,7 @@ function AdminLoginScreen() {
   const navigate = useNavigate();
   
   React.useEffect(() => {
-    loginAs('admin').then(() => navigate('/'));
+    loginAs('admin').then(() => navigate('/')).catch((e) => console.error('[Auth] Admin demo sign-in failed:', e));
   }, [loginAs, navigate]);
 
   return <div className="min-h-screen bg-[var(--bg)] flex items-center justify-center p-8 text-center text-sm font-medium text-[var(--text-muted)] animate-pulse">Authenticating Admin Access...</div>;
@@ -255,7 +255,7 @@ function UserLoginScreen() {
   const navigate = useNavigate();
   
   React.useEffect(() => {
-    loginAs('user').then(() => navigate('/'));
+    loginAs('user').then(() => navigate('/')).catch((e) => console.error('[Auth] User demo sign-in failed:', e));
   }, [loginAs, navigate]);
 
   return <div className="min-h-screen bg-[var(--bg)] flex items-center justify-center p-8 text-center text-sm font-medium text-[var(--text-muted)] animate-pulse">Authenticating User Access...</div>;

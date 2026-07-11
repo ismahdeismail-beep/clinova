@@ -38,23 +38,17 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | null>(null);
 
+// Structured, non-technical auth diagnostics (Phase 12). Detailed errors go to console.error.
+const authLog = (event: string, detail?: string) => {
+  console.info(`%c[Auth] ${event}${detail ? ` — ${detail}` : ''}`, 'color:#6366f1;font-weight:bold;');
+};
+
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [userData, setUserData] = useState<UserData | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     let active = true;
-
-    // Check if there is a local mock session first
-    const mockSession = localStorage.getItem('clinova-mock-user');
-    if (mockSession) {
-      try {
-        setUserData(JSON.parse(mockSession));
-        setLoading(false);
-      } catch (e) {
-        localStorage.removeItem('clinova-mock-user');
-      }
-    }
 
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       if (firebaseUser) {
@@ -73,37 +67,57 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           setLoading(false); // Unblock the loading screen immediately!
         }
 
-        // Try to fetch user role from firestore in the background
+        // Provision / refresh the application profile in Firestore (idempotent, exactly once per user).
         try {
-          const userDoc = await getDoc(doc(db, 'users', firebaseUser.uid));
+          const userRef = doc(db, 'users', firebaseUser.uid);
+          const userDoc = await getDoc(userRef);
           let role: UserRole = 'user';
           let name = provisionalName;
           let clinicalInterests: string[] = [];
           let academicLevel = '';
           let onboardingCompleted = false;
-          
+
           if (userDoc.exists()) {
-            role = userDoc.data().role as UserRole;
-            name = userDoc.data().name || name;
-            clinicalInterests = userDoc.data().clinicalInterests || [];
-            academicLevel = userDoc.data().academicLevel || '';
-            onboardingCompleted = !!userDoc.data().onboardingCompleted;
+            const data = userDoc.data();
+            role = (data.role as UserRole) || 'user';
+            name = data.name || name;
+            clinicalInterests = data.clinicalInterests || [];
+            academicLevel = data.academicLevel || '';
+            onboardingCompleted = !!data.onboardingCompleted;
             if (onboardingCompleted) {
               localStorage.setItem(`clinova_onboarding_completed_${firebaseUser.uid}`, 'true');
             }
-          } else {
-            // New user, save them
+            // Refresh last-login without clobbering existing data
             try {
-              await setDoc(doc(db, 'users', firebaseUser.uid), {
-                name,
-                email: firebaseUser.email || '',
-                role: 'user',
-              });
+              await setDoc(userRef, { lastLogin: new Date().toISOString() }, { merge: true });
+            } catch { /* non-fatal */ }
+            authLog('Profile loaded', `${firebaseUser.uid} (${role})`);
+          } else {
+            // First sign-in: create the full profile once
+            const newProfile = {
+              name,
+              email: firebaseUser.email || '',
+              role: 'user' as UserRole,
+              photoURL: firebaseUser.photoURL || null,
+              clinicalInterests: [],
+              academicLevel: '',
+              onboardingCompleted: false,
+              settings: { theme: 'system', emailNotifications: true, pushNotifications: false },
+              preferences: {},
+              notifications: { caseReminders: true, weeklyDigest: false },
+              createdAt: new Date().toISOString(),
+              lastLogin: new Date().toISOString(),
+              provider: firebaseUser.providerData?.[0]?.providerId || 'firebase',
+            };
+            try {
+              await setDoc(userRef, newProfile, { merge: true });
+              authLog('Profile created', firebaseUser.uid);
             } catch (fsWriteError) {
-              console.warn("Firestore user creation blocked by rules or network. Falling back to memory profile.", fsWriteError);
+              authLog('Profile creation FAILED', (fsWriteError as Error)?.message || 'Firestore write blocked');
+              console.error('[Auth] Firestore profile creation failed (check Firestore rules for /users):', fsWriteError);
             }
           }
-          
+
           if (active) {
             localStorage.removeItem('clinova-mock-user');
             setUserData({
@@ -118,7 +132,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             });
           }
         } catch (e) {
-          console.warn("Error fetching user role (using safe default profile):", e);
+          console.error('[Auth] Error fetching/creating user profile:', e);
+          authLog('Profile sync error', (e as Error)?.message);
           if (active) {
             setUserData({
               id: firebaseUser.uid,
@@ -154,20 +169,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           name: role === 'admin' ? 'Dr. Sarah K.' : 'Nurse John D.',
           email: role === 'admin' ? 'dr.sarah.k@clinova.health' : 'john.d@clinova.health',
           role,
-        });
+          createdAt: new Date().toISOString(),
+          lastLogin: new Date().toISOString(),
+          provider: 'anonymous',
+        }, { merge: true });
+        authLog('Anonymous demo sign-in', res.user.uid);
       } catch (fsError) {
-        console.warn("Firestore write during loginAs failed", fsError);
+        console.error('[Auth] Firestore write during loginAs failed:', fsError);
       }
     } catch (e) {
-      console.warn("Firebase Anonymous Sign-In is disabled or blocked. Falling back to local mock session.", e);
-      const mockUser: UserData = {
-        id: `mock-${role}-${Math.random().toString(36).substring(2, 9)}`,
-        name: role === 'admin' ? 'Dr. Sarah K. (Demo)' : 'Nurse John D. (Demo)',
-        email: role === 'admin' ? 'dr.sarah.k@clinova.health' : 'john.d@clinova.health',
-        role,
-      };
-      localStorage.setItem('clinova-mock-user', JSON.stringify(mockUser));
-      setUserData(mockUser);
+      console.error('[Auth] Anonymous sign-in failed. Enable Anonymous Auth in the Firebase console (Authentication → Sign-in method).', e);
+      setLoading(false);
+      throw e;
     } finally {
       setLoading(false);
     }
@@ -177,9 +190,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     try {
       setLoading(true);
       const provider = new GoogleAuthProvider();
-      await signInWithPopup(auth, provider);
+      const cred = await signInWithPopup(auth, provider);
+      authLog('Google sign-in success', cred.user.uid);
     } catch (error) {
-      console.error("Google sign in failed", error);
+      authLog('Google sign-in failed', (error as Error)?.message);
+      console.error('[Auth] Google sign in failed:', error);
       setLoading(false);
       throw error;
     }
@@ -188,36 +203,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const loginWithEmail = async (email: string, password: string) => {
     setLoading(true);
     try {
-      // First check for easy demo credential shortcut
-      if (email.toLowerCase() === 'admin@clinova.health' && password === 'password') {
-        const mockUser: UserData = {
-          id: 'mock-admin-default',
-          name: 'Dr. Sarah K. (Demo Admin)',
-          email: 'admin@clinova.health',
-          role: 'admin',
-        };
-        localStorage.setItem('clinova-mock-user', JSON.stringify(mockUser));
-        setUserData(mockUser);
-        setLoading(false);
-        return;
-      }
-
-      await signInWithEmailAndPassword(auth, email, password);
+      const cred = await signInWithEmailAndPassword(auth, email, password);
+      authLog('Email sign-in success', cred.user.uid);
     } catch (error) {
-      console.warn("Firebase email sign-in failed. Checking if we can fallback to mock sign-in.", error);
-      // Fallback for testing with random email
-      if (password.length >= 6) {
-        const mockUser: UserData = {
-          id: `mock-user-${Math.random().toString(36).substring(2, 9)}`,
-          name: email.split('@')[0].toUpperCase(),
-          email: email,
-          role: 'user',
-        };
-        localStorage.setItem('clinova-mock-user', JSON.stringify(mockUser));
-        setUserData(mockUser);
-        setLoading(false);
-        return;
-      }
+      authLog('Email sign-in failed', (error as Error)?.message);
+      console.error('[Auth] Email sign-in failed:', error);
       setLoading(false);
       throw error;
     }
@@ -228,6 +218,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const hasLevel = !!academicLevel;
     try {
       const res = await createUserWithEmailAndPassword(auth, email, password);
+      authLog('Email sign-up success', res.user.uid);
       try {
         await setDoc(doc(db, 'users', res.user.uid), {
           name: name || email.split('@')[0],
@@ -235,28 +226,20 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           role: 'user',
           academicLevel: academicLevel || '',
           onboardingCompleted: hasLevel,
-        });
+          createdAt: new Date().toISOString(),
+          lastLogin: new Date().toISOString(),
+        }, { merge: true });
       } catch (fsErr) {
-        console.warn("Firestore write during signup failed", fsErr);
+        console.error('[Auth] Firestore write during signup failed:', fsErr);
       }
       if (hasLevel) {
         localStorage.setItem(`clinova_onboarding_completed_${res.user.uid}`, 'true');
       }
     } catch (error) {
-      console.warn("Firebase email signup failed. Creating local mock account for seamless user experience.", error);
-      const mockUser: UserData = {
-        id: `mock-user-${Math.random().toString(36).substring(2, 9)}`,
-        name: name || email.split('@')[0],
-        email: email,
-        role: 'user',
-        academicLevel: academicLevel || '',
-        onboardingCompleted: hasLevel,
-      };
-      localStorage.setItem('clinova-mock-user', JSON.stringify(mockUser));
-      if (hasLevel) {
-        localStorage.setItem(`clinova_onboarding_completed_${mockUser.id}`, 'true');
-      }
-      setUserData(mockUser);
+      authLog('Email sign-up failed', (error as Error)?.message);
+      console.error('[Auth] Email sign-up failed:', error);
+      setLoading(false);
+      throw error;
     } finally {
       setLoading(false);
     }
@@ -287,11 +270,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     
     setUserData(updated);
     localStorage.setItem(`clinova_onboarding_completed_${userData.id}`, 'true');
-    
-    // Save locally if mock session is running
-    if (localStorage.getItem('clinova-mock-user')) {
-      localStorage.setItem('clinova-mock-user', JSON.stringify(updated));
-    }
     
     // Save to Firestore if user logged in
     const user = auth.currentUser;

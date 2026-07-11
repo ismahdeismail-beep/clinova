@@ -14,6 +14,13 @@ const firebaseConfig = {
 
 export const app = initializeApp(firebaseConfig);
 
+// ── Config transparency ───────────────────────────────────────────────────────
+const usingEnvConfig = !!import.meta.env.VITE_FIREBASE_API_KEY;
+if (!usingEnvConfig) {
+  console.warn('[Auth] VITE_FIREBASE_* env vars are not set — using bundled default project config. Set them in .env to override.');
+}
+console.info(`[Auth] Firebase initialized for project "${firebaseConfig.projectId}" (authDomain: ${firebaseConfig.authDomain}).`);
+
 // Suppress Firestore connection warnings when offline or using dummy credentials
 setLogLevel('error');
 

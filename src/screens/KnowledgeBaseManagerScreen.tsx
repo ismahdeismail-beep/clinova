@@ -158,7 +158,7 @@ export default function KnowledgeBaseManagerScreen() {
                   {[
                     'Discipline & Taxonomy Scanning',
                     'Document Semantic Chunking',
-                    'Gemini API Embedding Calculations',
+                    'AI Embedding Calculations',
                     'Vector Tree Matrix Mapping',
                     'Recall & Reliability Verification'
                   ].map((label, idx) => {
@@ -736,8 +736,8 @@ function SettingsTab() {
     <div className="space-y-6 animate-in fade-in duration-200">
       <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 space-y-6">
         <div>
-          <h3 className="font-bold text-[var(--text)] text-lg">Retrieval-Augmented Generation (RAG) Settings</h3>
-          <p className="text-sm text-[var(--text-muted)] mt-1">Configure chunk parameters, OCR parameters, and LLM threshold rules for Clinical AI matching queries.</p>
+          <h3 className="font-bold text-[var(--text)] text-lg">Knowledge Retrieval Settings</h3>
+          <p className="text-sm text-[var(--text-muted)] mt-1">Configure chunk parameters, OCR settings, and matching rules for Clinical AI queries.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -780,7 +780,7 @@ function SettingsTab() {
               />
               <div>
                 <p className="font-bold text-sm text-[var(--text)]">Pre-compile Spaced Repetition Decks</p>
-                <p className="text-xs text-[var(--text-muted)]">Instantly prompt Gemini API to suggest flashcards when indexing completes.</p>
+                <p className="text-xs text-[var(--text-muted)]">Automatically generate flashcard suggestions when indexing completes.</p>
               </div>
             </label>
           </div>
@@ -803,7 +803,7 @@ function SettingsTab() {
                 onChange={(e) => setTopK(parseInt(e.target.value))}
                 className="w-full accent-[var(--primary)] bg-[var(--surface-dim)] rounded-lg h-2" 
               />
-              <p className="text-[11px] text-[var(--text-muted)]">Maximum snippet slices to feed into the prompt context window.</p>
+              <p className="text-[11px] text-[var(--text-muted)]">Maximum snippet slices to include for AI matching.</p>
             </div>
 
             {/* Chunk Size */}
@@ -821,7 +821,7 @@ function SettingsTab() {
                 onChange={(e) => setChunkSize(parseInt(e.target.value))}
                 className="w-full accent-[var(--primary)] bg-[var(--surface-dim)] rounded-lg h-2" 
               />
-              <p className="text-[11px] text-[var(--text-muted)]">Token threshold block divisions for optimal search indexing.</p>
+              <p className="text-[11px] text-[var(--text-muted)]">Text block size for optimal search indexing.</p>
             </div>
 
             {/* Temperature */}

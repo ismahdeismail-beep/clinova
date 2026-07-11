@@ -1179,7 +1179,7 @@ export default function PharmacotherapyReviewScreen() {
                       <Loader2 size={32} className="text-[var(--primary)] animate-spin" />
                       <div className="text-center">
                         <p className="text-sm font-bold text-[var(--text)]">Extracting Clinical Context...</p>
-                        <p className="text-xs text-[var(--text-muted)] mt-1 animate-pulse">Gemini is parsing your document and populating the clinical review sections</p>
+                        <p className="text-xs text-[var(--text-muted)] mt-1 animate-pulse">Clinova is parsing your document and populating the clinical review sections</p>
                       </div>
                     </div>
                   ) : (

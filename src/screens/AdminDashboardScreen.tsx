@@ -1021,12 +1021,12 @@ export default function AdminDashboardScreen() {
       try {
         const res = await fetch('/api/admin/providers');
         if (res.ok) {
-          setAuditLogs(prev => [...prev, `[INFO] ${new Date().toLocaleTimeString()} - AI Orchestration Gateway: ONLINE. Multi-model routing active.`]);
+          setAuditLogs(prev => [...prev, `[INFO] ${new Date().toLocaleTimeString()} - AI Engine: ONLINE. Multi-service routing active.`]);
         } else {
           throw new Error('Bad response');
         }
       } catch (err) {
-        setAuditLogs(prev => [...prev, `[WARN] ${new Date().toLocaleTimeString()} - AI Backend node server unreachable. Running fallback API routes.`]);
+        setAuditLogs(prev => [...prev, `[WARN] ${new Date().toLocaleTimeString()} - AI services unreachable. Running fallback routes.`]);
       }
     }, 1200);
 
@@ -1042,7 +1042,7 @@ export default function AdminDashboardScreen() {
     setTimeout(() => {
       setIsAuditing(false);
       setAuditComplete(true);
-      setAuditResult(`Clinova Diagnostic Report: Complete. Firestore Connection: ${dbStatus}. 0 Critical Breaches found. Multi-provider LLM gateways operational. Knowledge base and media storage verified.`);
+      setAuditResult(`Clinova Diagnostic Report: Complete. Firestore Connection: ${dbStatus}. 0 Critical Breaches found. AI services operational. Knowledge base and media storage verified.`);
     }, 2500);
   };
 
@@ -1510,16 +1510,16 @@ export default function AdminDashboardScreen() {
                   <CheckCircle size={10} /> ONLINE
                 </span>
               </div>
-              <h3 className="font-bold text-[var(--text)]">AI Providers</h3>
-              <p className="text-xs text-[var(--text-muted)] mt-1">Gemini, Anthropic, OpenRouter Gateways.</p>
+              <h3 className="font-bold text-[var(--text)]">AI Services</h3>
+              <p className="text-xs text-[var(--text-muted)] mt-1">Multiple AI services configured and operational.</p>
               <div className="mt-4 pt-4 border-t border-[var(--border)] grid grid-cols-2 gap-2 text-xs">
                 <div>
                   <span className="block text-[var(--text-muted)]">Active</span>
-                  <span className="font-semibold text-[var(--text)]">3 Nodes</span>
+                  <span className="font-semibold text-[var(--text)]">3 Services</span>
                 </div>
                 <div>
-                  <span className="block text-[var(--text-muted)]">Tokens</span>
-                  <span className="font-semibold text-[var(--text)]">1.2M/d</span>
+                  <span className="block text-[var(--text-muted)]">Daily Usage</span>
+                  <span className="font-semibold text-[var(--text)]">1.2M</span>
                 </div>
               </div>
             </div>

@@ -355,15 +355,15 @@ export async function generateContentWithFallback(request: any, providerOverride
     }
   }
   
-  const errorMsg = lastError?.message || 'Upstream provider timed out';
-  console.error(`[AI Gateway] All providers failed. Last error: ${errorMsg}`);
+  const errorMsg = lastError?.message || 'Upstream service timed out';
+  console.error(`[AI Engine] All services failed. Last error: ${errorMsg}`);
 
   addGatewayLog({
     id: executionId,
     timestamp: new Date().toISOString(),
     feature: featureName,
     prompt: logPrompt,
-    provider: 'Emergency Cache',
+    provider: 'Fallback Cache',
     latencyMs: 150,
     status: 'failed',
     error: errorMsg,
@@ -418,5 +418,5 @@ async function executeProvider(provider: string, request: any): Promise<{ text: 
     }
   }
 
-  throw new Error(`${provider} API key not configured. Cannot generate response.`);
+  throw new Error(`The requested AI service is not available. Please contact support.`);
 }

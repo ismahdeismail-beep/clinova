@@ -1642,7 +1642,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
         })
       });
 
-      if (!res.ok) throw new Error('API failed');
+      if (!res.ok) throw new Error('Service unavailable');
       const data = await res.json();
       
       if (data.summary) {
@@ -1875,7 +1875,7 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
         })
       });
 
-      if (!res.ok) throw new Error('API failed');
+      if (!res.ok) throw new Error('Service unavailable');
       const data = await res.json();
 
       setTutorChat([...newChat, { 
@@ -2118,7 +2118,7 @@ function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName,
         })
       });
 
-      if (!res.ok) throw new Error('API failed');
+      if (!res.ok) throw new Error('Service unavailable');
       const data = await res.json();
       
       if (data.flashcards && data.flashcards.length > 0) {
@@ -2401,7 +2401,7 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName, us
         })
       });
 
-      if (!res.ok) throw new Error('API failed');
+      if (!res.ok) throw new Error('Service unavailable');
       const data = await res.json();
       
       if (data.quizzes && data.quizzes.length > 0) {

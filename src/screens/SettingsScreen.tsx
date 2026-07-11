@@ -41,7 +41,7 @@ export default function SettingsScreen() {
               }`}
             >
               <Cpu size={16} />
-              AI Brain & API Setup
+              AI Configuration
             </button>
           </div>
         )}
@@ -155,9 +155,9 @@ export default function SettingsScreen() {
               <div className="flex items-start justify-between gap-4 border-b border-[var(--border)] pb-4">
                 <div>
                   <h3 className="text-lg font-bold text-[var(--text)] flex items-center gap-2">
-                    <Key size={20} className="text-amber-500" /> API Keys & Core "Brain" Setup
+                    <Key size={20} className="text-amber-500" /> Clinova AI Configuration
                   </h3>
-                  <p className="text-xs text-[var(--text-muted)] mt-1">Configure the keys that power the AI clinical autofill, pharmacy index chat, and case studies.</p>
+                  <p className="text-xs text-[var(--text-muted)] mt-1">Configure the credentials that power clinical autofill, pharmacy index chat, and case studies.</p>
                 </div>
                 <span className="px-2.5 py-1 bg-amber-500/10 text-amber-500 border border-amber-500/20 rounded-full text-[10px] font-bold tracking-wider uppercase">
                   Security Safe
@@ -167,39 +167,24 @@ export default function SettingsScreen() {
               {/* Instructions Panel */}
               <div className="bg-[var(--surface-dim)] border border-[var(--border)] p-5 rounded-xl space-y-4">
                 <h4 className="font-bold text-sm text-[var(--text)] flex items-center gap-2">
-                  <HelpCircle size={16} className="text-[var(--primary)]" /> Where to put the API Keys?
+                  <HelpCircle size={16} className="text-[var(--primary)]" /> About AI Service Credentials
                 </h4>
                 
                 <div className="text-sm text-[var(--text-muted)] space-y-3 leading-relaxed">
                   <p>
-                    Because this is an secure, container-isolated workspace, you should <strong className="text-[var(--text)]">never</strong> expose, paste, or hardcode your secret keys inside the code files themselves. Instead, you can manage secrets using our platform's secure environment settings:
+                    Clinova securely manages service credentials at the system level. Keys are never exposed in the browser or stored in code. To update credentials, contact your system administrator or configure them in the server environment settings.
                   </p>
-                  
-                  <ol className="list-decimal list-inside space-y-2 font-medium text-[var(--text)]">
-                    <li>
-                      Open the <strong className="text-[var(--primary)]">Settings Menu (Settings Gear)</strong> in the top-right or left-sidebar of the AI Studio development console.
-                    </li>
-                    <li>
-                      Add an environment variable named <code className="bg-black/5 dark:bg-white/10 px-1.5 py-0.5 rounded font-mono text-xs text-red-500">GEMINI_API_KEY</code>.
-                    </li>
-                    <li>
-                      Paste your secure key from <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noreferrer" className="text-[var(--primary)] underline hover:text-[var(--primary-dark)] inline-flex items-center gap-1">Google AI Studio <ExternalLink size={12} /></a> as the value.
-                    </li>
-                    <li>
-                      Click save. The system will securely inject it at runtime without exposing it to the client/browser!
-                    </li>
-                  </ol>
                 </div>
               </div>
 
               {/* Secret Keys List */}
               <div className="space-y-4">
-                <h4 className="font-bold text-sm text-[var(--text)] uppercase tracking-wider">Required Environment Keys</h4>
+                <h4 className="font-bold text-sm text-[var(--text)] uppercase tracking-wider">Required Service Credentials</h4>
                 
                 <div className="divide-y divide-[var(--border)] border border-[var(--border)] rounded-xl overflow-hidden">
                   <div className="p-4 bg-[var(--surface-dim)] flex flex-col sm:flex-row justify-between sm:items-center gap-3">
                     <div>
-                      <span className="font-mono text-xs font-bold text-red-500 bg-red-500/10 px-2 py-0.5 rounded">GEMINI_API_KEY</span>
+                      <span className="font-mono text-xs font-bold text-[var(--primary)] bg-[var(--primary)]/10 px-2 py-0.5 rounded">Clinova AI Key</span>
                       <p className="text-xs text-[var(--text-muted)] mt-1.5">Powers the Clinical Assistant, automatic form-filling recommendations, drug lookup monographs, and exam study generators.</p>
                     </div>
                     <span className="text-[10px] font-bold text-amber-600 bg-amber-500/10 border border-amber-500/20 px-2.5 py-1 rounded-full uppercase shrink-0 w-fit">

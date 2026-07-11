@@ -867,7 +867,7 @@ export default function DrugIndexScreen() {
                         <Loader2 size={24} className="text-[var(--primary)] animate-spin" />
                         <div className="text-center">
                           <p className="text-xs font-bold text-[var(--text)]">Scanning Document...</p>
-                          <p className="text-[10px] text-[var(--text-muted)] mt-0.5">Gemini is extracting medication records</p>
+                          <p className="text-[10px] text-[var(--text-muted)] mt-0.5">Clinova is extracting medication records</p>
                         </div>
                       </div>
                     ) : (

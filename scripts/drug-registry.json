@@ -1,0 +1,1029 @@
+[
+  {
+    "name": "-pam",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Abiraterone",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Acetazolamide",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Acetylcysteine",
+    "count": 1,
+    "sourceCases": []
+  },
+  {
+    "name": "Activated Charcoal",
+    "count": 78,
+    "sourceCases": [
+      "Severe Organophosphate Poisoning from Agricultural Pesticide Exposure",
+      "Severe Organophosphate Poisoning from Agricultural Pesticide Exposure — Variant 2",
+      "Severe Organophosphate Poisoning from Agricultural Pesticide Exposure — Variant 3",
+      "Severe Organophosphate Poisoning from Agricultural Pesticide Exposure — Variant 4",
+      "Severe Organophosphate Poisoning from Agricultural Pesticide Exposure — Variant 5",
+      "Severe Organophosphate Poisoning from Agricultural Pesticide Exposure — Variant 6",
+      "Severe Organophosphate Poisoning from Agricultural Pesticide Exposure — Variant 7",
+      "Severe Organophosphate Poisoning from Agricultural Pesticide Exposure — Variant 8",
+      "Severe Organophosphate Poisoning from Agricultural Pesticide Exposure — Variant 9",
+      "Severe Organophosphate Poisoning from Agricultural Pesticide Exposure — Variant 10",
+      "Severe Organophosphate Poisoning from Agricultural Pesticide Exposure — Variant 11",
+      "Severe Organophosphate Poisoning from Agricultural Pesticide Exposure — Variant 12",
+      "Severe Organophosphate Poisoning from Agricultural Pesticide Exposure — Variant 13",
+      "Acute Paracetamol Overdose in a Young Adult",
+      "Acute Paracetamol Overdose in a Young Adult — Variant 2",
+      "Acute Paracetamol Overdose in a Young Adult — Variant 3",
+      "Acute Paracetamol Overdose in a Young Adult — Variant 4",
+      "Acute Paracetamol Overdose in a Young Adult — Variant 5",
+      "Acute Paracetamol Overdose in a Young Adult — Variant 6",
+      "Acute Paracetamol Overdose in a Young Adult — Variant 7",
+      "Acute Paracetamol Overdose in a Young Adult — Variant 8",
+      "Acute Paracetamol Overdose in a Young Adult — Variant 9",
+      "Acute Paracetamol Overdose in a Young Adult — Variant 10",
+      "Acute Paracetamol Overdose in a Young Adult — Variant 11",
+      "Acute Paracetamol Overdose in a Young Adult — Variant 12",
+      "Acute Paracetamol Overdose in a Young Adult — Variant 13"
+    ]
+  },
+  {
+    "name": "Adalimumab",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Albendazole",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Alendronate",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Allopurinol",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Amitriptyline",
+    "count": 66,
+    "sourceCases": []
+  },
+  {
+    "name": "Amlodipine",
+    "count": 378,
+    "sourceCases": []
+  },
+  {
+    "name": "Amoxicillin",
+    "count": 83,
+    "sourceCases": []
+  },
+  {
+    "name": "Ampicillin",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Anastrozole",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Antivenom",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Apixaban",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Aspirin",
+    "count": 105,
+    "sourceCases": []
+  },
+  {
+    "name": "Atorvastatin",
+    "count": 117,
+    "sourceCases": []
+  },
+  {
+    "name": "Atropine",
+    "count": 78,
+    "sourceCases": []
+  },
+  {
+    "name": "Azithromycin",
+    "count": 66,
+    "sourceCases": []
+  },
+  {
+    "name": "Beclometasone",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Bicalutamide",
+    "count": 39,
+    "sourceCases": []
+  },
+  {
+    "name": "Bisoprolol",
+    "count": 39,
+    "sourceCases": []
+  },
+  {
+    "name": "Calcium Chloride",
+    "count": 26,
+    "sourceCases": [
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 2",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 3",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 4",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 5",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 6",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 7",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 8",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 9",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 10",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 11",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 12",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 13"
+    ]
+  },
+  {
+    "name": "Calcium Gluconate",
+    "count": 143,
+    "sourceCases": [
+      "Primary Adrenal Insufficiency Presenting with an Adrenal Crisis",
+      "Primary Adrenal Insufficiency Presenting with an Adrenal Crisis — Variant 2",
+      "Primary Adrenal Insufficiency Presenting with an Adrenal Crisis — Variant 3",
+      "Primary Adrenal Insufficiency Presenting with an Adrenal Crisis — Variant 4",
+      "Primary Adrenal Insufficiency Presenting with an Adrenal Crisis — Variant 5",
+      "Primary Adrenal Insufficiency Presenting with an Adrenal Crisis — Variant 6",
+      "Primary Adrenal Insufficiency Presenting with an Adrenal Crisis — Variant 7",
+      "Primary Adrenal Insufficiency Presenting with an Adrenal Crisis — Variant 8",
+      "Primary Adrenal Insufficiency Presenting with an Adrenal Crisis — Variant 9",
+      "Primary Adrenal Insufficiency Presenting with an Adrenal Crisis — Variant 10",
+      "Primary Adrenal Insufficiency Presenting with an Adrenal Crisis — Variant 11",
+      "Primary Adrenal Insufficiency Presenting with an Adrenal Crisis — Variant 12",
+      "Primary Adrenal Insufficiency Presenting with an Adrenal Crisis — Variant 13",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 2",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 2",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 3",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 3",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 4",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 4",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 5",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 5",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 6",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 6",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 7",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 7",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 8",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 8",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 9",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 9",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 10",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 10",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 11",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 11",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 12",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 12",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 13",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 13",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 2",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 3",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 4",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 5",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 6",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 7",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 8",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 9",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 10",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 11",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 12",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 13",
+      "Vitamin D Deficiency Presenting with Bone Pain and Proximal Muscle Weakness",
+      "Vitamin D Deficiency Presenting with Bone Pain and Proximal Muscle Weakness — Variant 2",
+      "Vitamin D Deficiency Presenting with Bone Pain and Proximal Muscle Weakness — Variant 3",
+      "Vitamin D Deficiency Presenting with Bone Pain and Proximal Muscle Weakness — Variant 4",
+      "Vitamin D Deficiency Presenting with Bone Pain and Proximal Muscle Weakness — Variant 5",
+      "Vitamin D Deficiency Presenting with Bone Pain and Proximal Muscle Weakness — Variant 6",
+      "Vitamin D Deficiency Presenting with Bone Pain and Proximal Muscle Weakness — Variant 7",
+      "Vitamin D Deficiency Presenting with Bone Pain and Proximal Muscle Weakness — Variant 8",
+      "Vitamin D Deficiency Presenting with Bone Pain and Proximal Muscle Weakness — Variant 9",
+      "Vitamin D Deficiency Presenting with Bone Pain and Proximal Muscle Weakness — Variant 10",
+      "Vitamin D Deficiency Presenting with Bone Pain and Proximal Muscle Weakness — Variant 11",
+      "Vitamin D Deficiency Presenting with Bone Pain and Proximal Muscle Weakness — Variant 12",
+      "Vitamin D Deficiency Presenting with Bone Pain and Proximal Muscle Weakness — Variant 13"
+    ]
+  },
+  {
+    "name": "Candesartan",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Capecitabine",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Carbamazepine",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Carbimazole",
+    "count": 52,
+    "sourceCases": []
+  },
+  {
+    "name": "Chlordiazepoxide",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Ciprofloxacin",
+    "count": 39,
+    "sourceCases": []
+  },
+  {
+    "name": "Cisplatin",
+    "count": 39,
+    "sourceCases": []
+  },
+  {
+    "name": "Clarithromycin",
+    "count": 41,
+    "sourceCases": []
+  },
+  {
+    "name": "Clopidogrel",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Co-trimoxazole",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Cyclophosphamide",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Daptomycin",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Darbepoetin Alfa",
+    "count": 26,
+    "sourceCases": [
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 2",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 3",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 4",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 5",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 6",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 7",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 8",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 9",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 10",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 11",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 12",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 13"
+    ]
+  },
+  {
+    "name": "Denosumab",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Dexamethasone",
+    "count": 78,
+    "sourceCases": []
+  },
+  {
+    "name": "Diazepam",
+    "count": 91,
+    "sourceCases": []
+  },
+  {
+    "name": "Docetaxel",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Dolutegravir",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Done",
+    "count": 54,
+    "sourceCases": []
+  },
+  {
+    "name": "Doxorubicin",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Doxycycline",
+    "count": 52,
+    "sourceCases": []
+  },
+  {
+    "name": "Duloxetine",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Ecog",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Enoxaparin",
+    "count": 39,
+    "sourceCases": []
+  },
+  {
+    "name": "Entacapone",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Epoetin Alfa",
+    "count": 52,
+    "sourceCases": [
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 2",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 3",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 4",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 5",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 6",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 7",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 8",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 9",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 10",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 11",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 12",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 13"
+    ]
+  },
+  {
+    "name": "Esomeprazole",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Famotidine",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Filgrastim",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Flucloxacillin",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Fluconazole",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Fluoroquinolone",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Fosfomycin",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Furosemide",
+    "count": 117,
+    "sourceCases": []
+  },
+  {
+    "name": "Gabapentin",
+    "count": 66,
+    "sourceCases": []
+  },
+  {
+    "name": "Goserelin",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Hydrocortisone",
+    "count": 78,
+    "sourceCases": []
+  },
+  {
+    "name": "Hydroxychloroquine",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Hydroxyurea",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Hydroxyzine",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Ibuprofen",
+    "count": 112,
+    "sourceCases": []
+  },
+  {
+    "name": "Infliximab",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Insulin",
+    "count": 117,
+    "sourceCases": []
+  },
+  {
+    "name": "Ipratropium",
+    "count": 39,
+    "sourceCases": []
+  },
+  {
+    "name": "Lactulose",
+    "count": 39,
+    "sourceCases": []
+  },
+  {
+    "name": "Lamotrigine",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Letrozole",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Leucovorin",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Levetiracetam",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Levothyroxine",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Lisinopril",
+    "count": 40,
+    "sourceCases": []
+  },
+  {
+    "name": "Loperamide",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Lorazepam",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Losartan",
+    "count": 117,
+    "sourceCases": []
+  },
+  {
+    "name": "Lymecycline",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Magnesium Sulfate",
+    "count": 26,
+    "sourceCases": [
+      "Acute Severe Asthma Exacerbation with Poor Controller Adherence",
+      "Acute Severe Asthma Exacerbation with Poor Controller Adherence — Variant 2",
+      "Acute Severe Asthma Exacerbation with Poor Controller Adherence — Variant 3",
+      "Acute Severe Asthma Exacerbation with Poor Controller Adherence — Variant 4",
+      "Acute Severe Asthma Exacerbation with Poor Controller Adherence — Variant 5",
+      "Acute Severe Asthma Exacerbation with Poor Controller Adherence — Variant 6",
+      "Acute Severe Asthma Exacerbation with Poor Controller Adherence — Variant 7",
+      "Acute Severe Asthma Exacerbation with Poor Controller Adherence — Variant 8",
+      "Acute Severe Asthma Exacerbation with Poor Controller Adherence — Variant 9",
+      "Acute Severe Asthma Exacerbation with Poor Controller Adherence — Variant 10",
+      "Acute Severe Asthma Exacerbation with Poor Controller Adherence — Variant 11",
+      "Acute Severe Asthma Exacerbation with Poor Controller Adherence — Variant 12",
+      "Acute Severe Asthma Exacerbation with Poor Controller Adherence — Variant 13"
+    ]
+  },
+  {
+    "name": "Mannitol",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Mesalazine",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Metformin",
+    "count": 171,
+    "sourceCases": []
+  },
+  {
+    "name": "Methimazole",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Methotrexate",
+    "count": 39,
+    "sourceCases": []
+  },
+  {
+    "name": "Methylprednisolone",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Metoclopramide",
+    "count": 78,
+    "sourceCases": []
+  },
+  {
+    "name": "Metocloprazole",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Metoprolol",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Metronidazole",
+    "count": 54,
+    "sourceCases": []
+  },
+  {
+    "name": "Midazolam",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Milnacipran",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Mirtazapine",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Montelukast",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Morphine",
+    "count": 52,
+    "sourceCases": []
+  },
+  {
+    "name": "Moxifloxacin",
+    "count": 1,
+    "sourceCases": []
+  },
+  {
+    "name": "N-acetylcysteine",
+    "count": 40,
+    "sourceCases": []
+  },
+  {
+    "name": "Nadolol",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Olanzapine",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Omeprazole",
+    "count": 143,
+    "sourceCases": []
+  },
+  {
+    "name": "Ondansetron",
+    "count": 117,
+    "sourceCases": []
+  },
+  {
+    "name": "Paclitaxel",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Pantoprazole",
+    "count": 39,
+    "sourceCases": []
+  },
+  {
+    "name": "Paracetamol",
+    "count": 258,
+    "sourceCases": []
+  },
+  {
+    "name": "Pegfilgrastim",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Penicillin",
+    "count": 6,
+    "sourceCases": []
+  },
+  {
+    "name": "Pertuzumab",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Phenobarbital",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Phenoxymethylpenicillin",
+    "count": 2,
+    "sourceCases": []
+  },
+  {
+    "name": "Pralidoxime",
+    "count": 52,
+    "sourceCases": []
+  },
+  {
+    "name": "Prednisolone",
+    "count": 91,
+    "sourceCases": []
+  },
+  {
+    "name": "Pregabalin",
+    "count": 65,
+    "sourceCases": []
+  },
+  {
+    "name": "Propranolol",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Ramipril",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Ranitidine",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Rasagiline",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Rivaroxaban",
+    "count": 39,
+    "sourceCases": []
+  },
+  {
+    "name": "Sacubitril/valsartan",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Salbutamol",
+    "count": 104,
+    "sourceCases": []
+  },
+  {
+    "name": "Selegiline",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Senna",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Sertraline",
+    "count": 39,
+    "sourceCases": []
+  },
+  {
+    "name": "Sodium Bicarbonate",
+    "count": 78,
+    "sourceCases": [
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 2",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 3",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 4",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 5",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 6",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 7",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 8",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 9",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 10",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 11",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 12",
+      "Newly Diagnosed CKD Stage 4 in a Patient with Diabetes and Hypertension — Variant 13",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 2",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 3",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 4",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 5",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 6",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 7",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 8",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 9",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 10",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 11",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 12",
+      "Life-Threatening Hyperkalaemia in a CKD Patient on ACE Inhibitor — Variant 13",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 2",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 3",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 4",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 5",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 6",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 7",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 8",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 9",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 10",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 11",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 12",
+      "NSAID-Induced Acute Kidney Injury in an Elderly Patient with Osteoarthritis — Variant 13"
+    ]
+  },
+  {
+    "name": "Spironolactone",
+    "count": 91,
+    "sourceCases": []
+  },
+  {
+    "name": "Sulfasalazine",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Tenofovir",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Teriparatide",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Tetracycline",
+    "count": 26,
+    "sourceCases": []
+  },
+  {
+    "name": "Tiotropium",
+    "count": 52,
+    "sourceCases": []
+  },
+  {
+    "name": "Tobramycin",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Tramadol",
+    "count": 40,
+    "sourceCases": []
+  },
+  {
+    "name": "Tranexamic Acid",
+    "count": 39,
+    "sourceCases": [
+      "Iron Deficiency Anaemia Secondary to Menorrhagia",
+      "Iron Deficiency Anaemia Secondary to Menorrhagia — Variant 2",
+      "Iron Deficiency Anaemia Secondary to Menorrhagia — Variant 3",
+      "Iron Deficiency Anaemia Secondary to Menorrhagia — Variant 4",
+      "Iron Deficiency Anaemia Secondary to Menorrhagia — Variant 5",
+      "Iron Deficiency Anaemia Secondary to Menorrhagia — Variant 6",
+      "Iron Deficiency Anaemia Secondary to Menorrhagia — Variant 7",
+      "Iron Deficiency Anaemia Secondary to Menorrhagia — Variant 8",
+      "Iron Deficiency Anaemia Secondary to Menorrhagia — Variant 9",
+      "Iron Deficiency Anaemia Secondary to Menorrhagia — Variant 10",
+      "Iron Deficiency Anaemia Secondary to Menorrhagia — Variant 11",
+      "Iron Deficiency Anaemia Secondary to Menorrhagia — Variant 12",
+      "Iron Deficiency Anaemia Secondary to Menorrhagia — Variant 13"
+    ]
+  },
+  {
+    "name": "Trastuzumab",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Triamcinolone",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Vancomycin",
+    "count": 78,
+    "sourceCases": []
+  },
+  {
+    "name": "Venlafaxine",
+    "count": 13,
+    "sourceCases": []
+  },
+  {
+    "name": "Vitamin K",
+    "count": 299,
+    "sourceCases": [
+      "Acute Hepatitis B Virus Infection with Jaundice",
+      "Acute Hepatitis B Virus Infection with Jaundice — Variant 2",
+      "Acute Hepatitis B Virus Infection with Jaundice — Variant 3",
+      "Acute Hepatitis B Virus Infection with Jaundice — Variant 4",
+      "Acute Hepatitis B Virus Infection with Jaundice — Variant 5",
+      "Acute Hepatitis B Virus Infection with Jaundice — Variant 6",
+      "Acute Hepatitis B Virus Infection with Jaundice — Variant 7",
+      "Acute Hepatitis B Virus Infection with Jaundice — Variant 8",
+      "Acute Hepatitis B Virus Infection with Jaundice — Variant 9",
+      "Acute Hepatitis B Virus Infection with Jaundice — Variant 10",
+      "Acute Hepatitis B Virus Infection with Jaundice — Variant 11",
+      "Acute Hepatitis B Virus Infection with Jaundice — Variant 12",
+      "Acute Hepatitis B Virus Infection with Jaundice — Variant 13",
+      "Paracetamol Overdose with Hepatotoxicity Risk",
+      "Paracetamol Overdose with Hepatotoxicity Risk — Variant 2",
+      "Paracetamol Overdose with Hepatotoxicity Risk — Variant 3",
+      "Paracetamol Overdose with Hepatotoxicity Risk — Variant 4",
+      "Paracetamol Overdose with Hepatotoxicity Risk — Variant 5",
+      "Paracetamol Overdose with Hepatotoxicity Risk — Variant 6",
+      "Paracetamol Overdose with Hepatotoxicity Risk — Variant 7",
+      "Paracetamol Overdose with Hepatotoxicity Risk — Variant 8",
+      "Paracetamol Overdose with Hepatotoxicity Risk — Variant 9",
+      "Paracetamol Overdose with Hepatotoxicity Risk — Variant 10",
+      "Paracetamol Overdose with Hepatotoxicity Risk — Variant 11",
+      "Paracetamol Overdose with Hepatotoxicity Risk — Variant 12",
+      "Paracetamol Overdose with Hepatotoxicity Risk — Variant 13",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 2",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 2",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 2",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 3",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 3",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 3",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 4",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 4",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 4",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 5",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 5",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 5",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 6",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 6",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 6",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 7",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 7",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 7",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 8",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 8",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 8",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 9",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 9",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 9",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 10",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 10",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 10",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 11",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 11",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 11",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 12",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 12",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 12",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 13",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 13",
+      "Warfarin Management with Supratherapeutic INR in a Patient with Mechanical Heart Valve — Variant 13"
+    ]
+  },
+  {
+    "name": "Warfarin",
+    "count": 39,
+    "sourceCases": []
+  },
+  {
+    "name": "Zoledronic Acid",
+    "count": 117,
+    "sourceCases": [
+      "Postmenopausal Osteoporosis with a Vertebral Compression Fracture",
+      "Postmenopausal Osteoporosis with a Vertebral Compression Fracture — Variant 2",
+      "Postmenopausal Osteoporosis with a Vertebral Compression Fracture — Variant 3",
+      "Postmenopausal Osteoporosis with a Vertebral Compression Fracture — Variant 4",
+      "Postmenopausal Osteoporosis with a Vertebral Compression Fracture — Variant 5",
+      "Postmenopausal Osteoporosis with a Vertebral Compression Fracture — Variant 6",
+      "Postmenopausal Osteoporosis with a Vertebral Compression Fracture — Variant 7",
+      "Postmenopausal Osteoporosis with a Vertebral Compression Fracture — Variant 8",
+      "Postmenopausal Osteoporosis with a Vertebral Compression Fracture — Variant 9",
+      "Postmenopausal Osteoporosis with a Vertebral Compression Fracture — Variant 10",
+      "Postmenopausal Osteoporosis with a Vertebral Compression Fracture — Variant 11",
+      "Postmenopausal Osteoporosis with a Vertebral Compression Fracture — Variant 12",
+      "Postmenopausal Osteoporosis with a Vertebral Compression Fracture — Variant 13",
+      "Early-Stage HR+ Breast Cancer in a Postmenopausal Woman — Adjuvant Therapy Decision",
+      "Early-Stage HR+ Breast Cancer in a Postmenopausal Woman — Adjuvant Therapy Decision — Variant 2",
+      "Early-Stage HR+ Breast Cancer in a Postmenopausal Woman — Adjuvant Therapy Decision — Variant 3",
+      "Early-Stage HR+ Breast Cancer in a Postmenopausal Woman — Adjuvant Therapy Decision — Variant 4",
+      "Early-Stage HR+ Breast Cancer in a Postmenopausal Woman — Adjuvant Therapy Decision — Variant 5",
+      "Early-Stage HR+ Breast Cancer in a Postmenopausal Woman — Adjuvant Therapy Decision — Variant 6",
+      "Early-Stage HR+ Breast Cancer in a Postmenopausal Woman — Adjuvant Therapy Decision — Variant 7",
+      "Early-Stage HR+ Breast Cancer in a Postmenopausal Woman — Adjuvant Therapy Decision — Variant 8",
+      "Early-Stage HR+ Breast Cancer in a Postmenopausal Woman — Adjuvant Therapy Decision — Variant 9",
+      "Early-Stage HR+ Breast Cancer in a Postmenopausal Woman — Adjuvant Therapy Decision — Variant 10",
+      "Early-Stage HR+ Breast Cancer in a Postmenopausal Woman — Adjuvant Therapy Decision — Variant 11",
+      "Early-Stage HR+ Breast Cancer in a Postmenopausal Woman — Adjuvant Therapy Decision — Variant 12",
+      "Early-Stage HR+ Breast Cancer in a Postmenopausal Woman — Adjuvant Therapy Decision — Variant 13",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 2",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 2",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 3",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 3",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 4",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 4",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 5",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 5",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 6",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 6",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 7",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 7",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 8",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 8",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 9",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 9",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 10",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 10",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 11",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 11",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 12",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 12",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 13",
+      "Metastatic Hormone-Sensitive Prostate Cancer in an Elderly Man — Variant 13"
+    ]
+  },
+  {
+    "name": "Zopiclone",
+    "count": 13,
+    "sourceCases": []
+  }
+]

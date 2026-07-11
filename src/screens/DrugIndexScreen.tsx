@@ -10,7 +10,8 @@ import { collection, getDocs, doc, setDoc, query, where } from 'firebase/firesto
 import { Patient } from '../components/PatientQuickSummary';
 import { getMonographCached, pinMonograph } from '../lib/getMonograph';
 import { useAuth } from '../contexts/AuthContext';
-import { DrugMonographService } from '../services/drugMonograph.service';
+import { DrugMonographService, type DrugMonograph } from '../services/drugMonograph.service';
+import { monographToMarkdown } from '../lib/monographToMarkdown';
 import SavedMonographsPanel, { SaveMonographButton } from '../components/SavedMonographsPanel';
 
 interface QuickDrug {
@@ -66,8 +67,19 @@ const CATEGORIES = [
   'Anti-infectives',
   'Cardiovascular',
   'Central Nervous System',
+  'Analgesics',
   'Gastrointestinal',
   'Endocrine',
+  'Respiratory',
+  'Anticoagulants',
+  'Oncology',
+  'Immunology',
+  'Dermatology',
+  'Renal/Electrolytes',
+  'Nutrition/Vitamins',
+  'Anaesthesia',
+  'Ophthalmology',
+  'Toxicology/Antidotes',
 ];
 
 export default function DrugIndexScreen() {
@@ -266,12 +278,27 @@ export default function DrugIndexScreen() {
     setMonograph(null);
     setCurrentMonographId(null);
     try {
+      const searchName = query || categoryName || '';
+
+      // Try Supabase seeded monograph first
+      if (searchName) {
+        const seeded = await DrugMonographService.getByName(searchName);
+        if (seeded && seeded.indications?.length > 0) {
+          setMonograph(monographToMarkdown(seeded));
+          setMonographKey(searchName.toLowerCase());
+          setCurrentMonographId(seeded.id);
+          if (query) saveDrugSearch(query);
+          setIsLoading(false);
+          return;
+        }
+      }
+
+      // Fall back to AI-generated monograph
       const entry = await getMonographCached(query, categoryName);
       setMonograph(entry.content);
       setMonographKey(entry.key);
 
-      // Look up Supabase monograph for save button
-      const searchName = query || categoryName || '';
+      // Look up Supabase monograph for save button (re-check in case data arrived)
       if (searchName) {
         const monograph = await DrugMonographService.getByName(searchName);
         if (monograph) setCurrentMonographId(monograph.id);
@@ -499,9 +526,9 @@ export default function DrugIndexScreen() {
                     <Loader2 size={36} className="text-[var(--primary)] animate-spin" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-[var(--text)]">Loading Formulary Profile</h3>
+                      <h3 className="text-lg font-semibold text-[var(--text)]">Loading Formulary Profile</h3>
                     <p className="text-[var(--text-muted)] text-sm max-w-sm mt-1">
-                      Querying the Kenya Drug Index and WHO Essential Monographs for guideline-directed data...
+                      Checking Kenya Drug Index database for monograph, then querying AI if needed...
                     </p>
                   </div>
                 </div>
@@ -532,7 +559,7 @@ export default function DrugIndexScreen() {
                       </div>
                       <div>
                         <h2 className="text-xl font-bold text-[var(--text)]">Medication Monograph</h2>
-                        <p className="text-xs text-[var(--text-muted)] font-mono">SOURCE: CLINICAL KNOWLEDGE ENGINE • KDI CITATION</p>
+                        <p className="text-xs text-[var(--text-muted)] font-mono">SOURCE: KDI DRUG DATABASE {(currentMonographId ? '• SEEDED MONOGRAPH' : '• AI-GENERATED')}</p>
                       </div>
                     </div>
                     
@@ -578,10 +605,16 @@ export default function DrugIndexScreen() {
                     </ReactMarkdown>
                   </div>
                   
-                  {/* National Library of Medicine Attribution */}
+                  {/* Data Source Attribution */}
                   <div className="mt-6 pt-4 border-t border-[var(--border)]/60 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] text-[var(--text-muted)] font-sans select-none">
-                    <span>This product uses publicly available data from the U.S. National Library of Medicine (NLM) and openFDA.</span>
-                    <span className="font-mono bg-[var(--surface-dim)] text-cyan-500 font-bold px-2 py-0.5 rounded border border-[var(--border)]">FDA/NLM Grounded</span>
+                    {currentMonographId ? (
+                      <span>Kenya Drug Index — Clinova Drug Monograph Database. Clinical content reviewed per Kenyan standard treatment guidelines.</span>
+                    ) : (
+                      <span>This product uses publicly available data from the U.S. National Library of Medicine (NLM) and openFDA.</span>
+                    )}
+                    <span className={`font-mono font-bold px-2 py-0.5 rounded border ${currentMonographId ? 'bg-emerald-50 text-emerald-600 border-emerald-200' : 'bg-[var(--surface-dim)] text-cyan-500 border-[var(--border)]'}`}>
+                      {currentMonographId ? 'KDI Seeded' : 'FDA/NLM Grounded'}
+                    </span>
                   </div>
                 </div>
               ) : (

@@ -1,0 +1,1955 @@
+[
+  {
+    "name": "Atracurium",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Bupivacaine",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Desflurane",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Etomidate",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Halothane",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Isoflurane",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Ketamine",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Neostigmine",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Nitrous Oxide",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Prilocaine",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Propofol",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Rocuronium",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Ropivacaine",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Sevoflurane",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Sugammadex",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Suxamethonium",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Thiopental",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Vecuronium",
+    "therapeuticClass": "Anaesthesia",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Aspirin",
+    "therapeuticClass": "Analgesics",
+    "status": "new"
+  },
+  {
+    "name": "Celecoxib",
+    "therapeuticClass": "Analgesics",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Diclofenac",
+    "therapeuticClass": "Analgesics",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Etoricoxib",
+    "therapeuticClass": "Analgesics",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Ibuprofen",
+    "therapeuticClass": "Analgesics",
+    "status": "seeded"
+  },
+  {
+    "name": "Indomethacin",
+    "therapeuticClass": "Analgesics",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Meloxicam",
+    "therapeuticClass": "Analgesics",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Morphine",
+    "therapeuticClass": "Analgesics",
+    "status": "seeded"
+  },
+  {
+    "name": "Naproxen",
+    "therapeuticClass": "Analgesics",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Nimesulide",
+    "therapeuticClass": "Analgesics",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Paracetamol",
+    "therapeuticClass": "Analgesics",
+    "status": "seeded"
+  },
+  {
+    "name": "Piroxicam",
+    "therapeuticClass": "Analgesics",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Tramadol",
+    "therapeuticClass": "Analgesics",
+    "status": "new"
+  },
+  {
+    "name": "Abacavir",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Aciclovir",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Albendazole",
+    "therapeuticClass": "Anti-infectives",
+    "status": "seeded"
+  },
+  {
+    "name": "Amodiaquine",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Amoxicillin",
+    "therapeuticClass": "Anti-infectives",
+    "status": "new"
+  },
+  {
+    "name": "Ampicillin",
+    "therapeuticClass": "Anti-infectives",
+    "status": "new"
+  },
+  {
+    "name": "Artemether",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Artesunate",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Atazanavir",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Azithromycin",
+    "therapeuticClass": "Anti-infectives",
+    "status": "seeded"
+  },
+  {
+    "name": "Benzyl Benzoate",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Benzylpenicillin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Cefazolin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Cefepime",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Cefixime",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Cefotaxime",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Ceftriaxone",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Cefuroxime",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Cephalexin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "seeded"
+  },
+  {
+    "name": "Chloroquine",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Ciprofloxacin",
+    "therapeuticClass": "Anti-infectives",
+    "status": "seeded"
+  },
+  {
+    "name": "Clarithromycin",
+    "therapeuticClass": "Anti-infectives",
+    "status": "new"
+  },
+  {
+    "name": "Clindamycin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Clotrimazole",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Co-trimoxazole",
+    "therapeuticClass": "Anti-infectives",
+    "status": "seeded"
+  },
+  {
+    "name": "Daclatasvir",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Daptomycin",
+    "therapeuticClass": "Anti-infectives",
+    "status": "new"
+  },
+  {
+    "name": "Darunavir",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Dolutegravir",
+    "therapeuticClass": "Anti-infectives",
+    "status": "seeded"
+  },
+  {
+    "name": "Doxycycline",
+    "therapeuticClass": "Anti-infectives",
+    "status": "seeded"
+  },
+  {
+    "name": "Efavirenz",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Entecavir",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Erythromycin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Ethambutol",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Flucloxacillin",
+    "therapeuticClass": "Anti-infectives",
+    "status": "new"
+  },
+  {
+    "name": "Fluconazole",
+    "therapeuticClass": "Anti-infectives",
+    "status": "seeded"
+  },
+  {
+    "name": "Fluoroquinolone",
+    "therapeuticClass": "Anti-infectives",
+    "status": "new"
+  },
+  {
+    "name": "Fosfomycin",
+    "therapeuticClass": "Anti-infectives",
+    "status": "new"
+  },
+  {
+    "name": "Ganciclovir",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Gentamicin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "seeded"
+  },
+  {
+    "name": "Griseofulvin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Hydroxychloroquine",
+    "therapeuticClass": "Anti-infectives",
+    "status": "new"
+  },
+  {
+    "name": "Imipenem",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Isoniazid",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "seeded"
+  },
+  {
+    "name": "Itraconazole",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Ivermectin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Ketoconazole",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Lamivudine",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Levofloxacin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Linezolid",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Lopinavir",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Lumefantrine",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Lymecycline",
+    "therapeuticClass": "Anti-infectives",
+    "status": "new"
+  },
+  {
+    "name": "Malathion",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Mebendazole",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Meropenem",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Metronidazole",
+    "therapeuticClass": "Anti-infectives",
+    "status": "seeded"
+  },
+  {
+    "name": "Miconazole",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Moxifloxacin",
+    "therapeuticClass": "Anti-infectives",
+    "status": "new"
+  },
+  {
+    "name": "Neomycin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Nevirapine",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Norfloxacin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Nystatin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Ofloxacin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Oseltamivir",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Penicillin",
+    "therapeuticClass": "Anti-infectives",
+    "status": "new"
+  },
+  {
+    "name": "Permethrin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Phenoxymethylpenicillin",
+    "therapeuticClass": "Anti-infectives",
+    "status": "new"
+  },
+  {
+    "name": "Praziquantel",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Primaquine",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Pyrazinamide",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Pyrimethamine",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Quinine",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Raltegravir",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Ribavirin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Rifampicin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "seeded"
+  },
+  {
+    "name": "Ritonavir",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Sofosbuvir",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Streptomycin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Sulfadoxine",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Teicoplanin",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Tenofovir",
+    "therapeuticClass": "Anti-infectives",
+    "status": "seeded"
+  },
+  {
+    "name": "Terbinafine",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Tetracycline",
+    "therapeuticClass": "Anti-infectives",
+    "status": "new"
+  },
+  {
+    "name": "Tobramycin",
+    "therapeuticClass": "Anti-infectives",
+    "status": "new"
+  },
+  {
+    "name": "Valaciclovir",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Vancomycin",
+    "therapeuticClass": "Anti-infectives",
+    "status": "new"
+  },
+  {
+    "name": "Voriconazole",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Zidovudine",
+    "therapeuticClass": "Anti-infectives",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Apixaban",
+    "therapeuticClass": "Anticoagulants",
+    "status": "new"
+  },
+  {
+    "name": "Clopidogrel",
+    "therapeuticClass": "Anticoagulants",
+    "status": "new"
+  },
+  {
+    "name": "Dabigatran",
+    "therapeuticClass": "Anticoagulants",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Enoxaparin",
+    "therapeuticClass": "Anticoagulants",
+    "status": "new"
+  },
+  {
+    "name": "Heparin",
+    "therapeuticClass": "Anticoagulants",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Rivaroxaban",
+    "therapeuticClass": "Anticoagulants",
+    "status": "new"
+  },
+  {
+    "name": "Ticagrelor",
+    "therapeuticClass": "Anticoagulants",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Warfarin",
+    "therapeuticClass": "Anticoagulants",
+    "status": "seeded"
+  },
+  {
+    "name": "Adenosine",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Adrenaline",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Amiodarone",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Amlodipine",
+    "therapeuticClass": "Cardiovascular",
+    "status": "new"
+  },
+  {
+    "name": "Atenolol",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "seeded"
+  },
+  {
+    "name": "Atorvastatin",
+    "therapeuticClass": "Cardiovascular",
+    "status": "seeded"
+  },
+  {
+    "name": "Bisoprolol",
+    "therapeuticClass": "Cardiovascular",
+    "status": "new"
+  },
+  {
+    "name": "Bumetanide",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Candesartan",
+    "therapeuticClass": "Cardiovascular",
+    "status": "new"
+  },
+  {
+    "name": "Carvedilol",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Digoxin",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "seeded"
+  },
+  {
+    "name": "Diltiazem",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Dobutamine",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Dopamine",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Doxazosin",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Enalapril",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "seeded"
+  },
+  {
+    "name": "Felodipine",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Furosemide",
+    "therapeuticClass": "Cardiovascular",
+    "status": "seeded"
+  },
+  {
+    "name": "Hydralazine",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "seeded"
+  },
+  {
+    "name": "Hydrochlorothiazide",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Indapamide",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Lidocaine",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Lisinopril",
+    "therapeuticClass": "Cardiovascular",
+    "status": "new"
+  },
+  {
+    "name": "Losartan",
+    "therapeuticClass": "Cardiovascular",
+    "status": "seeded"
+  },
+  {
+    "name": "Methyldopa",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "seeded"
+  },
+  {
+    "name": "Metoprolol",
+    "therapeuticClass": "Cardiovascular",
+    "status": "new"
+  },
+  {
+    "name": "Milrinone",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Minoxidil",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Nadolol",
+    "therapeuticClass": "Cardiovascular",
+    "status": "new"
+  },
+  {
+    "name": "Nifedipine",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Noradrenaline",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Pravastatin",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Prazosin",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Propranolol",
+    "therapeuticClass": "Cardiovascular",
+    "status": "new"
+  },
+  {
+    "name": "Ramipril",
+    "therapeuticClass": "Cardiovascular",
+    "status": "new"
+  },
+  {
+    "name": "Rosuvastatin",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Sacubitril",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Simvastatin",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Spironolactone",
+    "therapeuticClass": "Cardiovascular",
+    "status": "seeded"
+  },
+  {
+    "name": "Valsartan",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Verapamil",
+    "therapeuticClass": "Cardiovascular",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Amitriptyline",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Carbamazepine",
+    "therapeuticClass": "Central Nervous System",
+    "status": "seeded"
+  },
+  {
+    "name": "Cetirizine",
+    "therapeuticClass": "Central Nervous System",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Chlordiazepoxide",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Chlorphenamine",
+    "therapeuticClass": "Central Nervous System",
+    "sourceMentions": 0,
+    "status": "seeded"
+  },
+  {
+    "name": "Diazepam",
+    "therapeuticClass": "Central Nervous System",
+    "status": "seeded"
+  },
+  {
+    "name": "Duloxetine",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Entacapone",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Gabapentin",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Hydroxyzine",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Lamotrigine",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Levetiracetam",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Loratadine",
+    "therapeuticClass": "Central Nervous System",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Lorazepam",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Midazolam",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Milnacipran",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Mirtazapine",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Olanzapine",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Phenobarbital",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Pregabalin",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Promethazine",
+    "therapeuticClass": "Central Nervous System",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Rasagiline",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Selegiline",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Sertraline",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Venlafaxine",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Zopiclone",
+    "therapeuticClass": "Central Nervous System",
+    "status": "new"
+  },
+  {
+    "name": "Adapalene",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Anthralin",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Azelaic Acid",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Bacitracin",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Benzoyl Peroxide",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Betamethasone",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Calamine",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Calcipotriol",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Cetrimide",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Chlorhexidine",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Clobetasol",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Coal Tar",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Dapsone",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Dithranol",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Ethanol",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Fluocinolone",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Fusidic Acid",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Hydrogen Peroxide",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Imiquimod",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Isotretinoin",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Mometasone",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Mupirocin",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Pimecrolimus",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Podophyllotoxin",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Polymyxin B",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Potassium Permanganate",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Povidone-Iodine",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Salicylic Acid",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Silver Sulfadiazine",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Tacrolimus",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Tazarotene",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Tretinoin",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Urea",
+    "therapeuticClass": "Dermatology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Alendronate",
+    "therapeuticClass": "Endocrine",
+    "status": "new"
+  },
+  {
+    "name": "Calcitonin",
+    "therapeuticClass": "Endocrine",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Calcitriol",
+    "therapeuticClass": "Endocrine",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Carbimazole",
+    "therapeuticClass": "Endocrine",
+    "status": "new"
+  },
+  {
+    "name": "Denosumab",
+    "therapeuticClass": "Endocrine",
+    "status": "new"
+  },
+  {
+    "name": "Desmopressin",
+    "therapeuticClass": "Endocrine",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Dexamethasone",
+    "therapeuticClass": "Endocrine",
+    "status": "new"
+  },
+  {
+    "name": "Hydrocortisone",
+    "therapeuticClass": "Endocrine",
+    "status": "seeded"
+  },
+  {
+    "name": "Insulin",
+    "therapeuticClass": "Endocrine",
+    "status": "new"
+  },
+  {
+    "name": "Lanreotide",
+    "therapeuticClass": "Endocrine",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Levothyroxine",
+    "therapeuticClass": "Endocrine",
+    "status": "seeded"
+  },
+  {
+    "name": "Metformin",
+    "therapeuticClass": "Endocrine",
+    "status": "seeded"
+  },
+  {
+    "name": "Methimazole",
+    "therapeuticClass": "Endocrine",
+    "status": "new"
+  },
+  {
+    "name": "Methylprednisolone",
+    "therapeuticClass": "Endocrine",
+    "status": "new"
+  },
+  {
+    "name": "Octreotide",
+    "therapeuticClass": "Endocrine",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Prednisolone",
+    "therapeuticClass": "Endocrine",
+    "status": "seeded"
+  },
+  {
+    "name": "Propylthiouracil",
+    "therapeuticClass": "Endocrine",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Teriparatide",
+    "therapeuticClass": "Endocrine",
+    "status": "new"
+  },
+  {
+    "name": "Thyroxine",
+    "therapeuticClass": "Endocrine",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Triamcinolone",
+    "therapeuticClass": "Endocrine",
+    "status": "new"
+  },
+  {
+    "name": "Zoledronic Acid",
+    "therapeuticClass": "Endocrine",
+    "status": "new"
+  },
+  {
+    "name": "Esomeprazole",
+    "therapeuticClass": "Gastrointestinal",
+    "status": "new"
+  },
+  {
+    "name": "Famotidine",
+    "therapeuticClass": "Gastrointestinal",
+    "status": "new"
+  },
+  {
+    "name": "Lactulose",
+    "therapeuticClass": "Gastrointestinal",
+    "status": "seeded"
+  },
+  {
+    "name": "Loperamide",
+    "therapeuticClass": "Gastrointestinal",
+    "status": "new"
+  },
+  {
+    "name": "Mesalazine",
+    "therapeuticClass": "Gastrointestinal",
+    "status": "new"
+  },
+  {
+    "name": "Metoclopramide",
+    "therapeuticClass": "Gastrointestinal",
+    "status": "new"
+  },
+  {
+    "name": "Omeprazole",
+    "therapeuticClass": "Gastrointestinal",
+    "status": "seeded"
+  },
+  {
+    "name": "Ondansetron",
+    "therapeuticClass": "Gastrointestinal",
+    "status": "seeded"
+  },
+  {
+    "name": "Pantoprazole",
+    "therapeuticClass": "Gastrointestinal",
+    "status": "new"
+  },
+  {
+    "name": "Ranitidine",
+    "therapeuticClass": "Gastrointestinal",
+    "status": "new"
+  },
+  {
+    "name": "Senna",
+    "therapeuticClass": "Gastrointestinal",
+    "status": "new"
+  },
+  {
+    "name": "Sulfasalazine",
+    "therapeuticClass": "Gastrointestinal",
+    "status": "new"
+  },
+  {
+    "name": "Adalimumab",
+    "therapeuticClass": "Immunology",
+    "status": "new"
+  },
+  {
+    "name": "Infliximab",
+    "therapeuticClass": "Immunology",
+    "status": "new"
+  },
+  {
+    "name": "Rituximab",
+    "therapeuticClass": "Immunology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Tocilizumab",
+    "therapeuticClass": "Immunology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Calcium Carbonate",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Cholecalciferol",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Cyanocobalamin",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "seeded"
+  },
+  {
+    "name": "Dextrose",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Ergocalciferol",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Ferrous Fumarate",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Ferrous Sulphate",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "seeded"
+  },
+  {
+    "name": "Folic Acid",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "seeded"
+  },
+  {
+    "name": "Iron Dextran",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Iron Sucrose",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Multivitamins",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "ORS",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Phytomenadione",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Pyridoxine",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Thiamine",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Vitamin K",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "status": "new"
+  },
+  {
+    "name": "Zinc Sulfate",
+    "therapeuticClass": "Nutrition/Vitamins",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Abiraterone",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Anastrozole",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Asparaginase",
+    "therapeuticClass": "Oncology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Bicalutamide",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Bleomycin",
+    "therapeuticClass": "Oncology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Capecitabine",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Carboplatin",
+    "therapeuticClass": "Oncology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Cisplatin",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Cyclophosphamide",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Docetaxel",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Doxorubicin",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Filgrastim",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Fluorouracil",
+    "therapeuticClass": "Oncology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Gemcitabine",
+    "therapeuticClass": "Oncology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Goserelin",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Hydroxyurea",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Letrozole",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Leucovorin",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Mesna",
+    "therapeuticClass": "Oncology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Methotrexate",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Oxaliplatin",
+    "therapeuticClass": "Oncology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Paclitaxel",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Pegfilgrastim",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Pemetrexed",
+    "therapeuticClass": "Oncology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Pertuzumab",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Trastuzumab",
+    "therapeuticClass": "Oncology",
+    "status": "new"
+  },
+  {
+    "name": "Vinblastine",
+    "therapeuticClass": "Oncology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Vincristine",
+    "therapeuticClass": "Oncology",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Acetazolamide",
+    "therapeuticClass": "Ophthalmology",
+    "status": "new"
+  },
+  {
+    "name": "Allopurinol",
+    "therapeuticClass": "Other",
+    "status": "new"
+  },
+  {
+    "name": "Darbepoetin Alfa",
+    "therapeuticClass": "Other",
+    "status": "new"
+  },
+  {
+    "name": "Epoetin Alfa",
+    "therapeuticClass": "Other",
+    "status": "new"
+  },
+  {
+    "name": "Finasteride",
+    "therapeuticClass": "Other",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Mirabegron",
+    "therapeuticClass": "Other",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Oxybutynin",
+    "therapeuticClass": "Other",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Rasburicase",
+    "therapeuticClass": "Other",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Sacubitril/valsartan",
+    "therapeuticClass": "Other",
+    "status": "new"
+  },
+  {
+    "name": "Tamsulosin",
+    "therapeuticClass": "Other",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Tolterodine",
+    "therapeuticClass": "Other",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Tranexamic Acid",
+    "therapeuticClass": "Other",
+    "status": "new"
+  },
+  {
+    "name": "Calcium Chloride",
+    "therapeuticClass": "Renal/Electrolytes",
+    "status": "new"
+  },
+  {
+    "name": "Calcium Gluconate",
+    "therapeuticClass": "Renal/Electrolytes",
+    "status": "new"
+  },
+  {
+    "name": "Magnesium Sulfate",
+    "therapeuticClass": "Renal/Electrolytes",
+    "status": "new"
+  },
+  {
+    "name": "Mannitol",
+    "therapeuticClass": "Renal/Electrolytes",
+    "status": "new"
+  },
+  {
+    "name": "Ringer's Lactate",
+    "therapeuticClass": "Renal/Electrolytes",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Sodium Bicarbonate",
+    "therapeuticClass": "Renal/Electrolytes",
+    "status": "new"
+  },
+  {
+    "name": "Sodium Chloride",
+    "therapeuticClass": "Renal/Electrolytes",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Water for Injection",
+    "therapeuticClass": "Renal/Electrolytes",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Aminophylline",
+    "therapeuticClass": "Respiratory",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Beclometasone",
+    "therapeuticClass": "Respiratory",
+    "status": "new"
+  },
+  {
+    "name": "Budesonide",
+    "therapeuticClass": "Respiratory",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Fluticasone",
+    "therapeuticClass": "Respiratory",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Ipratropium",
+    "therapeuticClass": "Respiratory",
+    "status": "new"
+  },
+  {
+    "name": "Montelukast",
+    "therapeuticClass": "Respiratory",
+    "status": "new"
+  },
+  {
+    "name": "Salbutamol",
+    "therapeuticClass": "Respiratory",
+    "status": "new"
+  },
+  {
+    "name": "Theophylline",
+    "therapeuticClass": "Respiratory",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Tiotropium",
+    "therapeuticClass": "Respiratory",
+    "status": "new"
+  },
+  {
+    "name": "Acetylcysteine",
+    "therapeuticClass": "Toxicology/Antidotes",
+    "sourceMentions": null,
+    "status": "new"
+  },
+  {
+    "name": "Activated Charcoal",
+    "therapeuticClass": "Toxicology/Antidotes",
+    "status": "new"
+  },
+  {
+    "name": "Antivenom",
+    "therapeuticClass": "Toxicology/Antidotes",
+    "status": "new"
+  },
+  {
+    "name": "Atropine",
+    "therapeuticClass": "Toxicology/Antidotes",
+    "status": "new"
+  },
+  {
+    "name": "Deferoxamine",
+    "therapeuticClass": "Toxicology/Antidotes",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Flumazenil",
+    "therapeuticClass": "Toxicology/Antidotes",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "N-acetylcysteine",
+    "therapeuticClass": "Toxicology/Antidotes",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Naloxone",
+    "therapeuticClass": "Toxicology/Antidotes",
+    "sourceMentions": 0,
+    "status": "new"
+  },
+  {
+    "name": "Pralidoxime",
+    "therapeuticClass": "Toxicology/Antidotes",
+    "status": "new"
+  }
+]

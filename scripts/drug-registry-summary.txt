@@ -1,0 +1,148 @@
+Drug Registry Summary
+====================
+Total unique drugs found: 141
+Total drug mentions: 6030
+
+Alphabetical Drug List:
+
+  -pam                                mentions: 26
+  Abiraterone                         mentions: 13
+  Acetazolamide                       mentions: 26
+  Acetylcysteine                      mentions: 1
+  Activated Charcoal                  mentions: 78
+  Adalimumab                          mentions: 13
+  Albendazole                         mentions: 13
+  Alendronate                         mentions: 26
+  Allopurinol                         mentions: 13
+  Amitriptyline                       mentions: 66
+  Amlodipine                          mentions: 378
+  Amoxicillin                         mentions: 83
+  Ampicillin                          mentions: 26
+  Anastrozole                         mentions: 26
+  Antivenom                           mentions: 13
+  Apixaban                            mentions: 26
+  Aspirin                             mentions: 105
+  Atorvastatin                        mentions: 117
+  Atropine                            mentions: 78
+  Azithromycin                        mentions: 66
+  Beclometasone                       mentions: 26
+  Bicalutamide                        mentions: 39
+  Bisoprolol                          mentions: 39
+  Calcium Chloride                    mentions: 26
+  Calcium Gluconate                   mentions: 143
+  Candesartan                         mentions: 13
+  Capecitabine                        mentions: 13
+  Carbamazepine                       mentions: 13
+  Carbimazole                         mentions: 52
+  Chlordiazepoxide                    mentions: 13
+  Ciprofloxacin                       mentions: 39
+  Cisplatin                           mentions: 39
+  Clarithromycin                      mentions: 41
+  Clopidogrel                         mentions: 26
+  Co-trimoxazole                      mentions: 13
+  Cyclophosphamide                    mentions: 26
+  Daptomycin                          mentions: 13
+  Darbepoetin Alfa                    mentions: 26
+  Denosumab                           mentions: 26
+  Dexamethasone                       mentions: 78
+  Diazepam                            mentions: 91
+  Docetaxel                           mentions: 13
+  Dolutegravir                        mentions: 13
+  Done                                mentions: 54
+  Doxorubicin                         mentions: 26
+  Doxycycline                         mentions: 52
+  Duloxetine                          mentions: 13
+  Ecog                                mentions: 13
+  Enoxaparin                          mentions: 39
+  Entacapone                          mentions: 26
+  Epoetin Alfa                        mentions: 52
+  Esomeprazole                        mentions: 13
+  Famotidine                          mentions: 13
+  Filgrastim                          mentions: 13
+  Flucloxacillin                      mentions: 13
+  Fluconazole                         mentions: 13
+  Fluoroquinolone                     mentions: 13
+  Fosfomycin                          mentions: 13
+  Furosemide                          mentions: 117
+  Gabapentin                          mentions: 66
+  Goserelin                           mentions: 13
+  Hydrocortisone                      mentions: 78
+  Hydroxychloroquine                  mentions: 13
+  Hydroxyurea                         mentions: 13
+  Hydroxyzine                         mentions: 13
+  Ibuprofen                           mentions: 112
+  Infliximab                          mentions: 13
+  Insulin                             mentions: 117
+  Ipratropium                         mentions: 39
+  Lactulose                           mentions: 39
+  Lamotrigine                         mentions: 13
+  Letrozole                           mentions: 13
+  Leucovorin                          mentions: 13
+  Levetiracetam                       mentions: 13
+  Levothyroxine                       mentions: 26
+  Lisinopril                          mentions: 40
+  Loperamide                          mentions: 13
+  Lorazepam                           mentions: 13
+  Losartan                            mentions: 117
+  Lymecycline                         mentions: 13
+  Magnesium Sulfate                   mentions: 26
+  Mannitol                            mentions: 13
+  Mesalazine                          mentions: 13
+  Metformin                           mentions: 171
+  Methimazole                         mentions: 13
+  Methotrexate                        mentions: 39
+  Methylprednisolone                  mentions: 13
+  Metoclopramide                      mentions: 78
+  Metocloprazole                      mentions: 13
+  Metoprolol                          mentions: 13
+  Metronidazole                       mentions: 54
+  Midazolam                           mentions: 26
+  Milnacipran                         mentions: 13
+  Mirtazapine                         mentions: 13
+  Montelukast                         mentions: 13
+  Morphine                            mentions: 52
+  Moxifloxacin                        mentions: 1
+  N-acetylcysteine                    mentions: 40
+  Nadolol                             mentions: 13
+  Olanzapine                          mentions: 13
+  Omeprazole                          mentions: 143
+  Ondansetron                         mentions: 117
+  Paclitaxel                          mentions: 13
+  Pantoprazole                        mentions: 39
+  Paracetamol                         mentions: 258
+  Pegfilgrastim                       mentions: 13
+  Penicillin                          mentions: 6
+  Pertuzumab                          mentions: 13
+  Phenobarbital                       mentions: 13
+  Phenoxymethylpenicillin             mentions: 2
+  Pralidoxime                         mentions: 52
+  Prednisolone                        mentions: 91
+  Pregabalin                          mentions: 65
+  Propranolol                         mentions: 26
+  Ramipril                            mentions: 13
+  Ranitidine                          mentions: 13
+  Rasagiline                          mentions: 26
+  Rivaroxaban                         mentions: 39
+  Sacubitril/valsartan                mentions: 13
+  Salbutamol                          mentions: 104
+  Selegiline                          mentions: 26
+  Senna                               mentions: 13
+  Sertraline                          mentions: 39
+  Sodium Bicarbonate                  mentions: 78
+  Spironolactone                      mentions: 91
+  Sulfasalazine                       mentions: 13
+  Tenofovir                           mentions: 26
+  Teriparatide                        mentions: 13
+  Tetracycline                        mentions: 26
+  Tiotropium                          mentions: 52
+  Tobramycin                          mentions: 13
+  Tramadol                            mentions: 40
+  Tranexamic Acid                     mentions: 39
+  Trastuzumab                         mentions: 13
+  Triamcinolone                       mentions: 13
+  Vancomycin                          mentions: 78
+  Venlafaxine                         mentions: 13
+  Vitamin K                           mentions: 299
+  Warfarin                            mentions: 39
+  Zoledronic Acid                     mentions: 117
+  Zopiclone                           mentions: 13

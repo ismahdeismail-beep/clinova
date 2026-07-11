@@ -4,13 +4,19 @@ import {
   HeartPulse, Wind, Flame, ShieldAlert, Droplets, Activity, Brain, 
   Smile, Pill, Baby, User, AlertTriangle, ChevronRight,
   Search, BookOpen, Stethoscope, ChevronLeft, BrainCircuit,
-  MessageSquare, Loader2, Play, Sparkles, Mic,
+  Loader2, Play, Sparkles,
   Award, Sliders, HelpCircle, Book, FileText, Compass, Folder, Copy, Edit3, File, Link, CheckSquare, X
 } from 'lucide-react';
 import Markdown from 'react-markdown';
 import { ClinicalCase, SPECIALTIES, ALL_CLINICAL_CASES } from '../data/clinicalCasesData';
 import { getIntegratedUnitId } from '../data/curriculum';
 import { ClinicalCaseService } from '../services/clinicalCase.service';
+import {
+  Section, Card, VitalsGrid, LabTable, DTPCard, PearlPanel, Checklist,
+  Bullets, HighlightText, StickySectionNav, ScrollProgress,
+} from '../components/clinical';
+import { parseVitals, parseLabs, parseDtps, toArray, toText } from '../lib/clinicalParsers';
+import { extractMedicines } from '../lib/clinicalTerms';
 
 export default function ClinicalCasesScreen() {
   const navigate = useNavigate();
@@ -422,15 +428,6 @@ export default function ClinicalCasesScreen() {
         action: 'cases'
       },
       {
-        id: 'oral_practice',
-        title: 'OSCE Oral Practice',
-        category: 'Assessments & Practice',
-        icon: <Mic className="text-emerald-600" size={18} />,
-        content: `### Interactive OSCE Oral Exam\n\n*   **Clinova OSCE Simulator**: Speak directly to the patient or examiner.\n*   **Instant Audio Feedback**: Evaluation of clinical communication, diagnostic questioning, and empathetic patient counselling.\n*   **Vivas & Board Practice**: Prepares you for rigorous oral examinations.`,
-        cta: 'Start OSCE Voice Practice',
-        action: 'oral'
-      },
-      {
         id: 'flashcards',
         title: 'Spaced Repetition Flashcards',
         category: 'Assessments & Practice',
@@ -494,15 +491,6 @@ export default function ClinicalCasesScreen() {
         action: 'notes'
       },
       {
-        id: 'counselling',
-        title: 'Patient Counselling Points',
-        category: 'Study & Revision Tools',
-        icon: <MessageSquare className="text-purple-600" size={18} />,
-        content: `### Patient Counselling & Adherence\n\n*   **Administration Directives**: High-yield instructions (e.g., taking SGLT2i in morning, avoiding grape juice, using spacer devices).\n*   **Safety Warning Education**: Teach patients how to identify warning symptoms like muscle pain (myopathy) or extreme thirst.\n*   **Adherence Checklists**: Simple tools to empower patients.`,
-        cta: 'Counselling Practice OSCE',
-        action: 'oral'
-      },
-      {
         id: 'monitoring',
         title: 'Monitoring & Safety Parameters',
         category: 'Study & Revision Tools',
@@ -530,16 +518,6 @@ export default function ClinicalCasesScreen() {
         break;
       case 'link-drug-info':
         navigate('/knowledge');
-        break;
-      case 'oral':
-        navigate('/oral-practice', {
-          state: {
-            mode: 'case',
-            category: 'Counselling & OSCE',
-            specificItem: selectedDisease,
-            difficulty: 'intermediate'
-          }
-        });
         break;
       case 'flashcards':
         navigate('/knowledge');
@@ -622,6 +600,18 @@ export default function ClinicalCasesScreen() {
       setIsTutorThinking(false);
     }
   };
+
+  const caseText = selectedCase
+    ? [selectedCase.hpi, selectedCase.pe, selectedCase.pharm, selectedCase.nonPharm, selectedCase.carePlan, selectedCase.dtps, selectedCase.monitoring, selectedCase.counselling, selectedCase.goals, selectedCase.diagnosis].join(' ')
+    : '';
+  const medicines = extractMedicines(caseText);
+  const diseases = selectedCase ? [selectedCase.disease] : [];
+  const vitals = selectedCase ? parseVitals(selectedCase.vitals) : null;
+  const labs = selectedCase ? parseLabs(selectedCase.labs) : null;
+  const dtps = selectedCase ? parseDtps(selectedCase.dtps) : [];
+  const monitoringItems = selectedCase ? toArray(selectedCase.monitoring) : [];
+  const openDrug = (name: string) => navigate(`/drugs?q=${encodeURIComponent(name)}`);
+  const openDisease = (name: string) => navigate(`/knowledge?disease=${encodeURIComponent(name)}`);
 
   return (
     <div className="flex-1 bg-[var(--bg)] min-h-screen overflow-y-auto">
@@ -899,35 +889,23 @@ export default function ClinicalCasesScreen() {
                     </div>
                   </div>
                 </div>
-                <button
-                  onClick={() => {
-                    navigate('/oral-practice', {
-                      state: {
-                        mode: 'case',
-                        category: 'OSCE Practice',
-                        specificItem: selectedCase.title,
-                        difficulty: selectedCase.difficulty.toLowerCase()
-                      }
-                    });
-                  }}
-                  className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-[var(--primary)] to-[var(--primary-hover)] text-[var(--primary-foreground)] rounded-xl shadow-md font-medium text-sm hover:opacity-95 transition-all shrink-0 cursor-pointer"
-                >
-                  <Mic size={16} />
-                  Practice OSCE Oral Exam
-                </button>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <ScrollProgress />
+              <div className="grid grid-cols-1 xl:grid-cols-12 gap-6">
+                {/* Sticky Section Nav */}
+                <StickySectionNav items={[
+                  { id: 'presentation', label: 'Presentation' },
+                  { id: 'investigations', label: 'Investigations' },
+                  { id: 'management', label: 'Management' },
+                  { id: 'pearls', label: 'Pearls' },
+                ]} />
                 {/* Main Case Info */}
-                <div className="lg:col-span-2 space-y-6">
+                <div className="xl:col-span-7 space-y-6">
                   {/* Presentation Section */}
-                  <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-6">
-                    <h3 className="text-lg font-bold text-[var(--text)] border-b border-[var(--border)] pb-3 flex items-center gap-2">
-                      <User size={20} className="text-[var(--primary)]" /> Clinical Presentation
-                    </h3>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div className="space-y-4">
+                  <Card className="p-6">
+                    <Section id="presentation" title="Clinical Presentation" icon={<User size={16} />}>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Patient Name</h4>
                           <p className="text-base font-bold text-[var(--primary)]">{selectedCase.patientName}</p>
@@ -944,65 +922,61 @@ export default function ClinicalCasesScreen() {
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Chief Complaint</h4>
                           <p className="text-sm text-[var(--text)] font-medium">"{selectedCase.chiefComplaint}"</p>
                         </div>
+                      </div>
+
+                      <div className="mt-4 space-y-4">
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">History of Presenting Illness</h4>
-                          <p className="text-sm text-[var(--text)] leading-relaxed">{selectedCase.hpi}</p>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.hpi || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Past Medical History</h4>
-                          <p className="text-sm text-[var(--text)] leading-relaxed">{selectedCase.pmh}</p>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.pmh || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
-                      </div>
-                      
-                      <div className="space-y-4">
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Medication History</h4>
-                          <p className="text-sm text-[var(--text)] leading-relaxed">{selectedCase.medHx}</p>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.medHx || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Allergies</h4>
-                          <p className="text-sm text-[var(--text)] text-rose-600 font-medium">{selectedCase.allergies}</p>
+                          <p className="text-sm text-[var(--danger)] font-medium">{selectedCase.allergies}</p>
                         </div>
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Physical Examination</h4>
-                          <p className="text-sm text-[var(--text)] leading-relaxed">{selectedCase.pe}</p>
-                        </div>
-                        <div>
-                          <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Vital Signs</h4>
-                          <p className="text-sm text-[var(--text)] font-mono bg-[var(--surface-dim)] p-2 rounded-lg">{selectedCase.vitals}</p>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.pe || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                       </div>
-                    </div>
-                  </div>
+
+                      <div className="mt-4">
+                        <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-2">Vital Signs</h4>
+                        {vitals ? <VitalsGrid vitals={vitals} /> : <p className="text-sm text-[var(--text-muted)]">{selectedCase.vitals}</p>}
+                      </div>
+                    </Section>
+                  </Card>
 
                   {/* Investigations Section */}
-                  <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-6">
-                    <h3 className="text-lg font-bold text-[var(--text)] border-b border-[var(--border)] pb-3 flex items-center gap-2">
-                      <Activity size={20} className="text-[var(--primary)]" /> Investigations
-                    </h3>
-                    
-                    <div className="space-y-4">
-                      <div>
-                        <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-2">Laboratory Results</h4>
-                        <div className="text-sm text-[var(--text)] leading-relaxed bg-[var(--surface-dim)] p-4 rounded-xl font-mono whitespace-pre-wrap">
-                          {selectedCase.labs}
-                        </div>
-                      </div>
-                      {selectedCase.imaging && (
+                  <Card className="p-6">
+                    <Section id="investigations" title="Investigations" icon={<Activity size={16} />}>
+                      <div className="space-y-4">
                         <div>
-                          <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-2">Imaging / Other</h4>
-                          <p className="text-sm text-[var(--text)] leading-relaxed">{selectedCase.imaging}</p>
+                          <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-2">Laboratory Results</h4>
+                          {labs ? <LabTable labs={labs} /> : (
+                            <div className="text-sm text-[var(--text)] leading-relaxed bg-[var(--surface-dim)] p-4 rounded-xl whitespace-pre-wrap">{selectedCase.labs}</div>
+                          )}
                         </div>
-                      )}
-                    </div>
-                  </div>
+                        {selectedCase.imaging && (
+                          <div>
+                            <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-2">Imaging / Other</h4>
+                            <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.imaging} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
+                          </div>
+                        )}
+                      </div>
+                    </Section>
+                  </Card>
 
                   {/* Management Section */}
-                  <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-6">
-                    <h3 className="text-lg font-bold text-[var(--text)] border-b border-[var(--border)] pb-3 flex items-center gap-2">
-                      <Stethoscope size={20} className="text-[var(--primary)]" /> Assessment & Management
-                    </h3>
-                    
+                  <Card className="p-6">
+                    <Section id="management" title="Assessment & Management" icon={<Stethoscope size={16} />}>
                     <div className="space-y-5">
                       <div>
                         <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Diagnosis</h4>
@@ -1057,14 +1031,13 @@ export default function ClinicalCasesScreen() {
                         </div>
                       </div>
                     </div>
-                  </div>
+                    </Section>
+                  </Card>
 
                   {/* Pearls Section */}
-                  <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-sm">
-                    <h3 className="text-sm font-bold text-emerald-600 uppercase tracking-wider mb-3 flex items-center gap-2">
-                      <Sparkles size={16} /> Clinical Pearls & References
-                    </h3>
-                    <p className="text-sm text-[var(--text)] leading-relaxed mb-4">{selectedCase.pearls}</p>
+                  <Card className="p-6">
+                    <Section id="pearls" title="Clinical Pearls & References" icon={<Sparkles size={16} />}>
+                      <p className="text-sm text-[var(--text)] leading-relaxed mb-4">{selectedCase.pearls}</p>
                     <div className="border-t border-[var(--border)] pt-4">
                       <h4 className="text-xs font-bold text-[var(--text-muted)] mb-2">References:</h4>
                       <ul className="space-y-1">
@@ -1075,7 +1048,8 @@ export default function ClinicalCasesScreen() {
                         ))}
                       </ul>
                     </div>
-                  </div>
+                    </Section>
+                  </Card>
                 </div>
 
                 {/* AI Discussion Sidebar */}

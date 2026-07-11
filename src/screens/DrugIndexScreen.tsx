@@ -10,6 +10,7 @@ import { collection, getDocs, doc, setDoc, query, where } from 'firebase/firesto
 import { Patient } from '../components/PatientQuickSummary';
 import { getMonographCached, pinMonograph } from '../lib/getMonograph';
 import { useAuth } from '../contexts/AuthContext';
+import { useSearchParams } from 'react-router-dom';
 import { DrugMonographService, type DrugMonograph } from '../services/drugMonograph.service';
 import { monographToMarkdown } from '../lib/monographToMarkdown';
 import SavedMonographsPanel, { SaveMonographButton } from '../components/SavedMonographsPanel';
@@ -84,6 +85,7 @@ const CATEGORIES = [
 
 export default function DrugIndexScreen() {
   const { userData } = useAuth();
+  const [searchParams] = useSearchParams();
   
   // Navigation State
   const [activeTab, setActiveTab] = useState<'monograph' | 'interaction' | 'library'>('monograph');
@@ -210,6 +212,13 @@ export default function DrugIndexScreen() {
       }
     };
     fetchPatientsList();
+  }, []);
+
+  // Pre-fill the search when arriving with ?q= (e.g. from Pharmacotherapy Review "Detected Medicines")
+  useEffect(() => {
+    const q = searchParams.get('q');
+    if (q) handleQuickDrugClick(q);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Fetch drug monographs helper

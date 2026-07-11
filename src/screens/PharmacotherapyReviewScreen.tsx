@@ -1,11 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { 
+import { useNavigate } from 'react-router-dom';
+import {
   User, Stethoscope, Activity, ClipboardList, Beaker, FileText, Pill, HeartPulse, CheckCircle, BrainCircuit, AlertTriangle,
-  Send, Loader2, Sparkles, X, Upload, FileUp, Download
+  Send, Loader2, Sparkles, X, Upload, FileUp, Download, UserPlus, PenLine
 } from 'lucide-react';
 import { useFileStore } from '../store/fileStore';
 import { getPatientInitials } from '../lib/patientUtils';
+import { extractMedicines } from '../lib/clinicalTerms';
 import jsPDF from 'jspdf';
+import { db } from '../lib/firebase';
+import { collection, addDoc } from 'firebase/firestore';
 
 // Mock interaction database
 const KNOWN_INTERACTIONS: Record<string, string[]> = {
@@ -157,11 +161,30 @@ const INTERACTION_MESSAGES: Record<string, string> = {
   'ceftriaxone-calcium': 'Severe Risk: Potential for precipitation in lungs and kidneys (especially in neonates).'
 };
 
+const UNIT_OPTIONS: string[] = [
+  'Medical Ward A',
+  'Medical Ward B',
+  'Surgical Ward',
+  'ICU',
+  'Maternity Wing',
+  'Paediatric Ward',
+  'Neonatal Unit (NBU)',
+  'Oncology Ward',
+  'A&E / Casualty',
+  'Outpatient Clinic',
+  'Theatre',
+  'Isolation Ward',
+];
+
 export default function PharmacotherapyReviewScreen() {
   const [activeTab, setActiveTab] = useState<string>('admission');
   const formRef = useRef<HTMLFormElement>(null);
   const [interactions, setInteractions] = useState<{ id: string, message: string }[]>([]);
   const [dragActive, setDragActive] = useState(false);
+  const [patientAddMode, setPatientAddMode] = useState<'upload' | 'write'>('write');
+  const [savingToRegistry, setSavingToRegistry] = useState(false);
+  const [detectedMeds, setDetectedMeds] = useState<string[]>([]);
+  const navigate = useNavigate();
 
   const handleDrag = (e: React.DragEvent) => {
     e.preventDefault();
@@ -215,6 +238,9 @@ export default function PharmacotherapyReviewScreen() {
       }
       if (extractedData.ward) {
         parsed['admission']['patient_ward'] = String(extractedData.ward);
+        if (!parsed['admission']['patient_unit']) {
+          parsed['admission']['patient_unit'] = String(extractedData.ward);
+        }
       }
       if (extractedData.bed) {
         parsed['admission']['patient_bed'] = String(extractedData.bed);
@@ -662,7 +688,7 @@ export default function PharmacotherapyReviewScreen() {
         name: tabData['patient_name'] || 'Anonymous',
         age: tabData['patient_age'] || 'Unknown',
         sex: tabData['patient_sex'] || 'Unknown',
-        ward: tabData['patient_ward'] || 'General Ward',
+        ward: tabData['patient_ward'] || tabData['patient_unit'] || 'General Ward',
         vitals: {
           bp: tabData['bp'] || 'N/A',
           hr: tabData['hr'] || 'N/A',
@@ -733,6 +759,67 @@ export default function PharmacotherapyReviewScreen() {
     }
   }, [activeTab]);
 
+  // When switching to "Write Details", populate admission fields from saved data
+  // (they were unmounted while in "Upload Media" mode).
+  useEffect(() => {
+    if (patientAddMode !== 'write') return;
+    const savedData = localStorage.getItem('clinova_pharma_review_form');
+    if (savedData && formRef.current) {
+      try {
+        const parsed = JSON.parse(savedData);
+        const tabData = parsed['admission'] || {};
+        const elements = formRef.current.elements;
+        for (let i = 0; i < elements.length; i++) {
+          const el = elements[i] as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+          if (el.tagName === 'BUTTON') continue;
+          const key = el.name || el.id;
+          if (tabData[key] !== undefined) {
+            el.value = tabData[key];
+          }
+        }
+      } catch (e) {
+        console.error('Failed to restore admission fields', e);
+      }
+    }
+  }, [patientAddMode]);
+
+  // Save the patient entered in this form into the shared Patients registry (PatientsScreen "patient tab")
+  const handleSaveToRegistry = async () => {
+    setSavingToRegistry(true);
+    try {
+      const savedData = localStorage.getItem('clinova_pharma_review_form');
+      const parsed = savedData ? JSON.parse(savedData) : {};
+      const p: Record<string, any> = parsed['admission'] || {};
+      const name = (p.patient_name || '').toString().trim();
+      if (!name) {
+        setBannerMessage({ type: 'error', text: 'Add patient details (at least a name) in the Add Patient section before saving to the registry.' });
+        return;
+      }
+      const now = new Date();
+      const dateString = now.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+      const newPatientData = {
+        name: getPatientInitials(name),
+        age: Number(p.patient_age) || 0,
+        sex: (p.patient_sex || 'M').toString(),
+        ward: (p.patient_unit || p.patient_ward || '').toString(),
+        ipNumber: (p.patient_ip || '').toString().trim() || `IP-2026-${Math.floor(1000 + Math.random() * 9000)}`,
+        lastAdmission: dateString,
+        vitals: { bp: '120/80', hr: 72, temp: 36.8, rr: 16, spo2: 98 },
+        vitalsHistory: [],
+        alerts: [],
+        labs: [],
+        notes: [],
+      };
+      await addDoc(collection(db, 'patients'), newPatientData);
+      setBannerMessage({ type: 'success', text: `Patient "${newPatientData.name}" saved to the Patients registry.` });
+    } catch (error: any) {
+      console.error(error);
+      setBannerMessage({ type: 'error', text: `Failed to save patient to registry: ${error?.message || 'Please check your connection and try again.'}` });
+    } finally {
+      setSavingToRegistry(false);
+    }
+  };
+
   const handleFormChange = () => {
     if (!formRef.current) return;
     const elements = formRef.current.elements;
@@ -756,8 +843,31 @@ export default function PharmacotherapyReviewScreen() {
         Object.assign(allData, tab);
       });
       checkInteractions(allData);
+      detectMedicinesInForm();
     } catch (e) {
       console.error('Failed to save form data', e);
+    }
+  };
+
+  // Scan all filled sections for drug mentions and surface them as Drug Index links
+  const detectMedicinesInForm = () => {
+    try {
+      const savedData = localStorage.getItem('clinova_pharma_review_form');
+      if (!savedData) {
+        setDetectedMeds([]);
+        return;
+      }
+      const parsed = JSON.parse(savedData);
+      const text = Object.values(parsed)
+        .map((tab: any) =>
+          Object.values(tab || {})
+            .filter((v) => typeof v === 'string')
+            .join(' ')
+        )
+        .join(' ');
+      setDetectedMeds(extractMedicines(text));
+    } catch {
+      /* ignore malformed form data */
     }
   };
 
@@ -772,7 +882,13 @@ export default function PharmacotherapyReviewScreen() {
         checkInteractions(allData);
       } catch (e) {}
     }
+    detectMedicinesInForm();
   }, []);
+
+  // Re-scan for medicines whenever the active section changes
+  useEffect(() => {
+    detectMedicinesInForm();
+  }, [activeTab]);
 
   // Listen for storage changes (e.g., from Supabase Sync restoration)
   useEffect(() => {
@@ -1149,12 +1265,54 @@ export default function PharmacotherapyReviewScreen() {
                     <User size={20} className="text-[var(--primary)]"/> Patient Identification & Admission Details
                   </h3>
                   <p className="text-xs text-[var(--text-muted)] mt-1">
-                    Provide the general demographic details of the patient.
+                    Start by selecting the patient's source unit, then add the patient by uploading clinical media or writing their details. Use Smart Auto-Fill to populate the full review.
                   </p>
                 </div>
 
-                {/* AI Document Upload Hub */}
-                <div 
+                {/* SOURCE UNIT - chosen before auto-fill */}
+                <div className="space-y-1.5">
+                  <label className="text-sm font-medium text-[var(--text)]">
+                    Source Unit <span className="text-[var(--text-muted)] font-normal">(where the patient is from)</span>
+                  </label>
+                  <input
+                    list="patient-unit-options"
+                    name="patient_unit"
+                    placeholder="e.g. Medical Ward A, ICU, Outpatient Clinic…"
+                    className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]"
+                  />
+                  <datalist id="patient-unit-options">
+                    {UNIT_OPTIONS.map((u) => (
+                      <option key={u} value={u} />
+                    ))}
+                  </datalist>
+                </div>
+
+                {/* ADD PATIENT */}
+                <div className="border border-[var(--border)] rounded-xl p-5 bg-[var(--surface)] shadow-sm">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+                    <h4 className="text-sm font-semibold text-[var(--text)] flex items-center gap-2">
+                      <UserPlus size={18} className="text-[var(--primary)]" /> Add Patient
+                    </h4>
+                    <div className="inline-flex rounded-lg border border-[var(--border)] overflow-hidden text-xs font-semibold">
+                      <button
+                        type="button"
+                        onClick={() => setPatientAddMode('upload')}
+                        className={`px-3 py-1.5 flex items-center gap-1.5 transition-colors ${patientAddMode === 'upload' ? 'bg-[var(--primary)] text-[var(--primary-foreground)]' : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)]'}`}
+                      >
+                        <Upload size={14} /> Upload Media
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setPatientAddMode('write')}
+                        className={`px-3 py-1.5 flex items-center gap-1.5 transition-colors ${patientAddMode === 'write' ? 'bg-[var(--primary)] text-[var(--primary-foreground)]' : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)]'}`}
+                      >
+                        <PenLine size={14} /> Write Details
+                      </button>
+                    </div>
+                  </div>
+
+                  {patientAddMode === 'upload' ? (
+                <div
                   onDragEnter={handleDrag}
                   onDragOver={handleDrag}
                   onDragLeave={handleDrag}
@@ -1195,27 +1353,9 @@ export default function PharmacotherapyReviewScreen() {
                       </span>
                     </label>
                   )}
-                </div>
-                
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mt-1.5 mb-6 p-3.5 bg-[var(--primary)]/5 border border-[var(--primary)]/10 rounded-xl">
-                  <div className="flex items-center gap-2">
-                    <Sparkles size={16} className="text-[var(--primary)] animate-pulse" />
-                    <span className="text-xs font-medium text-[var(--text)]">
-                      Want to test the full-featured auto-fill instantly?
-                    </span>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      updateFormFromExtraction(SAMPLE_PATIENT_DATA);
-                    }}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-[var(--primary)] text-white hover:bg-[var(--primary)]/90 transition-all rounded-lg shadow-sm cursor-pointer"
-                  >
-                    Load High-Fidelity Demo Patient Case
-                  </button>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                 </div>
+                  ) : (
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="space-y-1.5">
                     <label className="text-sm font-medium text-[var(--text)]">Patient Name (Initials Only)</label>
                     <input 
@@ -1281,11 +1421,46 @@ export default function PharmacotherapyReviewScreen() {
                     <label className="text-sm font-medium text-[var(--text)]">Date of History Taking</label>
                     <input type="date" name="patient_history_date" className="w-full px-3 py-2 border border-[var(--border)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent outline-none bg-[var(--surface)] text-[var(--text)]" />
                   </div>
-                </div>
-              </div>
-            )}
+                 </div>
+                  )}
+                 </div>
 
-            {activeTab === 'history' && (
+                  <div className="flex items-center justify-end gap-3 pt-1">
+                    <button
+                      type="button"
+                      onClick={handleSaveToRegistry}
+                      disabled={savingToRegistry}
+                      className="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-semibold bg-[var(--primary)] text-white hover:bg-[var(--primary)]/90 transition-all rounded-lg shadow-sm cursor-pointer disabled:opacity-60"
+                    >
+                      {savingToRegistry ? <Loader2 size={16} className="animate-spin" /> : <UserPlus size={16} />}
+                      {savingToRegistry ? 'Saving…' : 'Save to Patient Registry'}
+                    </button>
+                  </div>
+
+                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mt-1.5 mb-6 p-3.5 bg-[var(--primary)]/5 border border-[var(--primary)]/10 rounded-xl">
+                   <div className="flex items-center gap-2">
+                     <Sparkles size={16} className="text-[var(--primary)] animate-pulse" />
+                     <span className="text-xs font-medium text-[var(--text)]">
+                       Want to test the full-featured auto-fill instantly?
+                     </span>
+                   </div>
+                   <button
+                     type="button"
+                     onClick={() => {
+                       updateFormFromExtraction(SAMPLE_PATIENT_DATA);
+                     }}
+                     className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-[var(--primary)] text-white hover:bg-[var(--primary)]/90 transition-all rounded-lg shadow-sm cursor-pointer"
+                   >
+                      Load High-Fidelity Demo Patient Case
+                     </button>
+                   </div>
+                  </div>
+
+              </div>
+
+              )}
+
+             {activeTab === 'history' && (
               <div className="space-y-6 animate-in fade-in slide-in-from-bottom-2 duration-300">
                 <div className="border-b border-[var(--border)] pb-4 mb-6">
                   <h3 className="text-lg font-semibold text-[var(--text)] flex items-center gap-2">

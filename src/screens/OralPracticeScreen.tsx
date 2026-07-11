@@ -1539,7 +1539,7 @@ export default function OralPracticeScreen() {
                   <div className="p-6 rounded-2xl bg-gray-900/40 border border-gray-800 space-y-3">
                     <div className="flex items-center gap-2 border-b border-gray-800 pb-2">
                       <BookOpen className="w-4.5 h-4.5 text-purple-400" />
-                      <h4 className="text-sm font-sans font-bold text-white">Model Gold Standard Response</h4>
+                      <h4 className="text-sm font-sans font-bold text-white">Gold Standard Response</h4>
                     </div>
                     <p className="text-xs text-gray-300 leading-relaxed font-sans select-text">
                       {evaluationResult?.idealAnswer}

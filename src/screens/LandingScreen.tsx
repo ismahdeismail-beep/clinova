@@ -45,7 +45,7 @@ export default function LandingScreen() {
           </div>
           <div>
             <span className="font-bold text-xl tracking-tight text-[var(--text)]">CLINOVA</span>
-            <span className="ml-1.5 px-2 py-0.5 rounded text-[10px] font-semibold bg-[var(--primary)]/10 text-[var(--primary)] uppercase tracking-wider hidden sm:inline-block">AI Assistant</span>
+            <span className="ml-1.5 px-2 py-0.5 rounded text-[10px] font-semibold bg-[var(--primary)]/10 text-[var(--primary)] uppercase tracking-wider hidden sm:inline-block">Clinical Assistant</span>
           </div>
         </div>
 

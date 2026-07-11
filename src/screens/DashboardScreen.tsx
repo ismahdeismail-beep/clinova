@@ -258,7 +258,7 @@ export default function DashboardScreen() {
                    className="p-3 bg-[var(--primary)]/5 border-t border-[var(--border)] flex items-center justify-center gap-2 text-sm font-semibold text-[var(--primary)] cursor-pointer hover:bg-[var(--primary)]/10 transition-colors"
                    onClick={() => navigate('/assistant')}
                 >
-                  <Sparkles size={16} /> Ask AI Assistant instead
+                  <Sparkles size={16} /> Open Clinical Assistant
                 </div>
               </div>
             )}

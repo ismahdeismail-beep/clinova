@@ -50,7 +50,7 @@ export default function KnowledgeBaseManagerScreen() {
     setShowRebuildModal(true);
     setRebuildStep(1);
     setRebuildProgress(0);
-    setRebuildStatus('Vector embedding service not yet available. Uploaded files are indexed via keyword search. Semantic vector search will be enabled in a future update.');
+    setRebuildStatus('Advanced semantic indexing is not yet available. Uploaded files are currently indexed via keyword search. Full content-based search will be enabled in a future update.');
   };
 
   return (
@@ -66,7 +66,7 @@ export default function KnowledgeBaseManagerScreen() {
               Resource Manager
             </h1>
             <p className="text-sm text-[var(--text-muted)] mt-2">
-              Centralized repository for curriculum documents, clinical guidelines, and RAG embeddings.
+              Centralized repository for curriculum documents, clinical guidelines, and educational resources.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
@@ -74,7 +74,7 @@ export default function KnowledgeBaseManagerScreen() {
               onClick={triggerRebuildEmbeddings}
               className="px-4 py-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-sm font-bold flex items-center gap-2 hover:bg-[var(--surface-dim)] transition-all active:scale-95"
             >
-              <RefreshCw size={16} className="text-[var(--primary)]" /> Rebuild Embeddings
+              <RefreshCw size={16} className="text-[var(--primary)]" /> Reindex Resources
             </button>
             <button 
               onClick={() => setShowUploadModal(true)}
@@ -91,7 +91,7 @@ export default function KnowledgeBaseManagerScreen() {
             { id: 'resources', label: 'Resources & Files', icon: FileText },
             { id: 'taxonomy', label: 'Curriculum Taxonomy', icon: FolderTree },
             { id: 'analytics', label: 'Knowledge Analytics', icon: ChartIcon },
-            { id: 'settings', label: 'RAG Configuration', icon: Settings },
+            { id: 'settings', label: 'Index Configuration', icon: Settings },
           ].map(t => (
             <button
               key={t.id}
@@ -126,7 +126,7 @@ export default function KnowledgeBaseManagerScreen() {
               <div className="flex items-center justify-between border-b border-[var(--border)] pb-3">
                 <div className="flex items-center gap-2">
                   <RefreshCw size={20} className="text-[var(--primary)] animate-spin" />
-                  <h3 className="font-bold text-[var(--text)] text-lg">Rebuilding RAG Index</h3>
+                  <h3 className="font-bold text-[var(--text)] text-lg">Rebuilding Resource Index</h3>
                 </div>
                 {rebuildStep === 6 && (
                   <button onClick={() => setShowRebuildModal(false)} className="text-[var(--text-muted)] hover:text-[var(--text)]">
@@ -158,8 +158,8 @@ export default function KnowledgeBaseManagerScreen() {
                   {[
                     'Discipline & Taxonomy Scanning',
                     'Document Semantic Chunking',
-                    'AI Embedding Calculations',
-                    'Vector Tree Matrix Mapping',
+                    'Content Chunking & Classification',
+                    'Knowledge Tree Mapping',
                     'Recall & Reliability Verification'
                   ].map((label, idx) => {
                     const isDone = rebuildStep > idx + 1;
@@ -389,7 +389,7 @@ function ResourcesTab({ onUploadClick }: { onUploadClick: () => void }) {
                 <th className="px-6 py-4 border-b border-[var(--border)]">Curriculum Discipline</th>
                 <th className="px-6 py-4 border-b border-[var(--border)]">Document Type</th>
                 <th className="px-6 py-4 border-b border-[var(--border)]">Size</th>
-                <th className="px-6 py-4 border-b border-[var(--border)]">RAG Index Status</th>
+                <th className="px-6 py-4 border-b border-[var(--border)]">Index Status</th>
                 <th className="px-6 py-4 border-b border-[var(--border)] text-right">Actions</th>
               </tr>
             </thead>
@@ -534,7 +534,7 @@ function TaxonomyTab() {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <h3 className="font-bold text-[var(--text)] text-lg">Curriculum Structures & Taxonomies</h3>
-            <p className="text-sm text-[var(--text-muted)]">Verify the hierarchical units mapped for targeted Spaced Repetition card generations and RAG lookup categories.</p>
+            <p className="text-sm text-[var(--text-muted)]">Verify the hierarchical units mapped for targeted Spaced Repetition card generations and smart lookup categories.</p>
           </div>
           <button 
             onClick={() => setIsAdding(!isAdding)}
@@ -579,7 +579,7 @@ function TaxonomyTab() {
                       <BookOpen size={12} className="text-[var(--text-muted)]" /> {unit}
                     </span>
                     <span className="text-[10px] text-emerald-600 font-bold bg-emerald-50 dark:bg-emerald-950/40 px-2 py-0.5 rounded-full">
-                      RAG Ready
+                      Indexed
                     </span>
                   </div>
                 ))}
@@ -669,7 +669,7 @@ function AnalyticsTab() {
         <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 space-y-4">
           <div>
             <h4 className="font-bold text-[var(--text)] text-base">Resource Composition</h4>
-            <p className="text-xs text-[var(--text-muted)]">Percentage shares of indexed resource classification standards in vector bank.</p>
+            <p className="text-xs text-[var(--text-muted)]">Percentage distribution of indexed resources by classification standard.</p>
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-around gap-6">
             <div className="h-56 w-56 shrink-0">

@@ -559,7 +559,7 @@ export default function DrugIndexScreen() {
                       </div>
                       <div>
                         <h2 className="text-xl font-bold text-[var(--text)]">Medication Monograph</h2>
-                        <p className="text-xs text-[var(--text-muted)] font-mono">SOURCE: KDI DRUG DATABASE {(currentMonographId ? '• SEEDED MONOGRAPH' : '• AI-GENERATED')}</p>
+                        <p className="text-xs text-[var(--text-muted)] font-mono">SOURCE: KDI DRUG DATABASE {(currentMonographId ? '• KDI SEEDED' : '• COMPILED BY CLINOVA')}</p>
                       </div>
                     </div>
                     

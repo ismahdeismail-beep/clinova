@@ -294,7 +294,7 @@ export default function StudentOnboarding({ onClose }: { onClose?: () => void })
                   Step 1: Where are you in your academic/professional journey?
                 </h3>
                 <p className="text-xs text-[var(--text-muted)] mt-0.5">
-                  This customizes the clinical complexity of AI-generated notes, guidelines, and dosage recommendations.
+                  This customizes the clinical complexity of study notes, guidelines, and dosage recommendations.
                 </p>
               </div>
 

@@ -114,7 +114,7 @@ export default function AdminDashboardScreen() {
   const [auditResult, setAuditResult] = useState<string | null>(null);
   const [auditLogs, setAuditLogs] = useState<string[]>([
     "[SYS] 08:00:01 - Clinova OS Secure Boot init sequence started.",
-    "[INFO] 08:00:01 - RAG Index database connection verified.",
+    "[INFO] 08:00:01 - Knowledge Index database connection verified.",
     "[INFO] 08:15:22 - Multi-provider routing table initialized successfully.",
     "[SYS] 08:30:00 - Scheduled database compression checks passed."
   ]);
@@ -1203,7 +1203,7 @@ export default function AdminDashboardScreen() {
             setUploadRetryReason(err?.message || 'Connection glitch, retrying...');
           }
         );
-        setAuditLogs(prev => [...prev, `[INFO] ${new Date().toLocaleTimeString()} - Successfully indexed clinical document: "${file.name}" into RAG.`]);
+        setAuditLogs(prev => [...prev, `[INFO] ${new Date().toLocaleTimeString()} - Successfully indexed clinical document: "${file.name}" into knowledge base.`]);
       } catch (err: any) {
         console.warn("File storage exception. Creating fallback file record in local state store.", err);
         setUploadError(err?.message || 'Upload failed for some files');
@@ -1344,7 +1344,7 @@ export default function AdminDashboardScreen() {
         <div>
           <h1 className="text-3xl font-extrabold text-[var(--text)] tracking-tight">Clinova OS Admin Command Center</h1>
           <p className="text-[var(--text-muted)] text-sm mt-1">
-            Perform global audits, manage medical case scenarios, administer clinician access privileges, and configure RAG knowledge files.
+            Perform global audits, manage medical case scenarios, administer clinician access privileges, and configure knowledge files.
           </p>
         </div>
         <div className="flex items-center gap-3">
@@ -1396,7 +1396,7 @@ export default function AdminDashboardScreen() {
           id="tab-documents"
         >
           <Database size={16} />
-          Medical RAG Documents ({files.length})
+          Medical Documents ({files.length})
         </button>
         <button
           onClick={() => setActiveTab('users')}
@@ -1442,7 +1442,7 @@ export default function AdminDashboardScreen() {
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-xl font-bold text-[var(--text)]">System Health & Infrastructure</h2>
-              <p className="text-sm text-[var(--text-muted)] mt-1">Monitor connected services, API gateways, and storage engines.</p>
+              <p className="text-sm text-[var(--text-muted)] mt-1">Monitor connected services, gateways, and storage engines.</p>
             </div>
             <button 
               onClick={handleRunAudit}
@@ -1591,7 +1591,7 @@ export default function AdminDashboardScreen() {
 
             <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] shadow-xs flex items-center justify-between">
               <div>
-                <h3 className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider">AI RAG Inferences</h3>
+                <h3 className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider">Knowledge Inferences</h3>
                 <p className="text-3xl font-extrabold text-[var(--text)] mt-1">45.2k</p>
                 <p className="text-[10px] text-[var(--success)] mt-2 font-semibold flex items-center gap-1">
                   <TrendingUp size={10} /> +8% query load
@@ -1753,7 +1753,7 @@ export default function AdminDashboardScreen() {
               <table className="w-full text-xs text-left">
                 <thead className="bg-[var(--bg)] text-[var(--text-muted)] uppercase border-b border-[var(--border)]">
                   <tr>
-                    <th className="px-6 py-3 font-bold">Model Engine Provider</th>
+                    <th className="px-6 py-3 font-bold">Service Provider</th>
                     <th className="px-6 py-3 font-bold">Status</th>
                     <th className="px-6 py-3 font-bold">Uptime Rate</th>
                     <th className="px-6 py-3 font-bold">Total Request Load</th>

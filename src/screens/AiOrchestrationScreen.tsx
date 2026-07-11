@@ -116,7 +116,7 @@ export default function AiOrchestrationScreen() {
       setErrorMessage(null);
     } catch (err: any) {
       console.error('Error loading AI orchestration settings:', err);
-      setErrorMessage(err.message || 'Could not reach server API. Verify backend server is running on port 3000.');
+      setErrorMessage(err.message || 'Could not reach the backend server. Please verify it is running.');
     } finally {
       setIsLoading(false);
     }
@@ -207,7 +207,7 @@ export default function AiOrchestrationScreen() {
         })
       });
       if (!res.ok) throw new Error('Failed to update prompt template');
-      alert('Prompt template successfully synchronized across all active gateway tasks!');
+      alert('Template successfully synchronized across all active gateway tasks!');
       fetchData();
     } catch (err: any) {
       alert('Error: ' + err.message);
@@ -216,16 +216,16 @@ export default function AiOrchestrationScreen() {
 
   // Reset prompts to default
   const handleResetPrompts = async () => {
-    if (confirm('Are you sure you want to reset all prompt templates to Clinova factory defaults?')) {
+    if (confirm('Are you sure you want to reset all templates to Clinova factory defaults?')) {
       try {
         const res = await fetch('/api/admin/ai/prompts/reset', {
           method: 'POST'
         });
         if (!res.ok) throw new Error('Failed to reset prompts');
-        alert('All prompts reverted to initial default structures.');
+        alert('All templates reverted to initial default structures.');
         fetchData();
       } catch (err: any) {
-        alert('Error resetting prompts: ' + err.message);
+        alert('Error resetting templates: ' + err.message);
       }
     }
   };
@@ -297,13 +297,13 @@ export default function AiOrchestrationScreen() {
         <div id="ai-orchestration-header" className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2">
           <div>
             <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--primary)] mb-2">
-              <Cpu size={16} /> Clinova AI Orchestration Engine
+              <Cpu size={16} /> Clinova Gateway Engine
             </div>
             <h1 className="text-3xl font-extrabold text-[var(--text)] tracking-tight">
-              AI Gateway Gateway
+              Service Gateway
             </h1>
             <p className="text-sm text-[var(--text-muted)] mt-2">
-              Fault-tolerant, multi-provider API router that intelligently balances, failovers, and filters queries across nine model platforms.
+              Fault-tolerant, multi-provider router that intelligently balances and distributes queries across connected services.
             </p>
           </div>
           <div className="flex gap-3 shrink-0">
@@ -321,7 +321,7 @@ export default function AiOrchestrationScreen() {
           <div id="gateway-err-banner" className="p-4 bg-amber-500/15 border border-amber-500/30 rounded-2xl flex items-start gap-3">
             <AlertCircle className="text-amber-500 shrink-0 mt-0.5" size={18} />
             <div>
-              <p className="text-sm font-bold text-amber-500">API Connection Error</p>
+              <p className="text-sm font-bold text-amber-500">Connection Error</p>
               <p className="text-xs text-[var(--text-muted)] mt-1">{errorMessage}</p>
             </div>
           </div>
@@ -330,9 +330,9 @@ export default function AiOrchestrationScreen() {
         {/* Real-time Enterprise Stats cards */}
         <div id="telemetry-summary-row" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
-            { label: 'Total API Requests', val: totalQueries, sub: `${totalSuccess} successful, ${totalError} failed`, icon: Server, color: 'text-[var(--primary)]', bg: 'bg-[var(--primary)]/10' },
+            { label: 'Total Requests', val: totalQueries, sub: `${totalSuccess} successful, ${totalError} failed`, icon: Server, color: 'text-[var(--primary)]', bg: 'bg-[var(--primary)]/10' },
             { label: 'Average Gateway Latency', val: `${averageLatency}ms`, sub: 'Across healthy nodes', icon: Zap, color: 'text-amber-500', bg: 'bg-amber-500/10' },
-            { label: 'Estimated AI Budget Spend', val: `$${totalCost.toFixed(5)}`, sub: `${(totalTokens / 1000).toFixed(1)}k tokens transferred`, icon: DollarSign, color: 'text-emerald-500', bg: 'bg-emerald-500/10' },
+            { label: 'Estimated Budget Spend', val: `$${totalCost.toFixed(5)}`, sub: `${(totalTokens / 1000).toFixed(1)}k units processed`, icon: DollarSign, color: 'text-emerald-500', bg: 'bg-emerald-500/10' },
             { label: 'Global Failure Rate', val: `${failureRate}%`, sub: failureRate > 10 ? 'High Failures: Failover triggered' : 'Within normal SLA limits', icon: Activity, color: failureRate > 10 ? 'text-red-500' : 'text-emerald-500', bg: failureRate > 10 ? 'bg-red-500/10' : 'bg-emerald-500/10' }
           ].map((stat, i) => (
             <div key={i} className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 flex items-start justify-between">
@@ -353,7 +353,7 @@ export default function AiOrchestrationScreen() {
           {[
             { id: 'registry', label: 'Provider Registry', icon: Server },
             { id: 'routing', label: 'Intelligent Routing', icon: Layers },
-            { id: 'prompts', label: 'System Prompts', icon: FileText },
+            { id: 'prompts', label: 'System Templates', icon: FileText },
             { id: 'testing', label: 'Live Gateway Test', icon: Play },
             { id: 'logs', label: 'Gateway Audit Trail', icon: Terminal },
           ].map(t => (
@@ -378,8 +378,8 @@ export default function AiOrchestrationScreen() {
             <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl overflow-hidden">
               <div className="p-6 border-b border-[var(--border)] bg-[var(--surface-dim)]/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <div>
-                  <h3 className="font-extrabold text-[var(--text)] text-lg">AI Provider Registry</h3>
-                  <p className="text-xs text-[var(--text-muted)] mt-1">Configure weights, priorities, health diagnostics, and simulate API outages.</p>
+                  <h3 className="font-extrabold text-[var(--text)] text-lg">Provider Registry</h3>
+                  <p className="text-xs text-[var(--text-muted)] mt-1">Configure weights, priorities, health diagnostics, and simulate service outages.</p>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-xs font-bold text-[var(--text-muted)] uppercase">Status:</span>
@@ -399,7 +399,7 @@ export default function AiOrchestrationScreen() {
                       <th className="px-6 py-4 border-b border-[var(--border)]">Load Weight</th>
                       <th className="px-6 py-4 border-b border-[var(--border)]">Uptime %</th>
                       <th className="px-6 py-4 border-b border-[var(--border)]">Avg Latency</th>
-                      <th className="px-6 py-4 border-b border-[var(--border)]">API Key</th>
+                      <th className="px-6 py-4 border-b border-[var(--border)]">Access Key</th>
                       <th className="px-6 py-4 border-b border-[var(--border)] text-right">Actions</th>
                     </tr>
                   </thead>
@@ -503,7 +503,7 @@ export default function AiOrchestrationScreen() {
                                   ? 'bg-amber-500/10 text-amber-500 border border-amber-500/20 hover:bg-amber-500/20' 
                                   : 'bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 hover:bg-emerald-500/20'
                               }`}
-                              title={p.isHealthy ? 'Simulate Outage on this API' : 'Restore health of this API'}
+                              title={p.isHealthy ? 'Simulate Outage on this Provider' : 'Restore health of this Provider'}
                             >
                               {p.isHealthy ? 'Simulate Outage' : 'Heal Outage'}
                             </button>
@@ -538,17 +538,17 @@ export default function AiOrchestrationScreen() {
                   <Layers size={18} className="text-[var(--primary)]" />
                   Gateway Algorithm
                 </h3>
-                <p className="text-xs text-[var(--text-muted)] mt-1">Determine how requests are multiplexed or routed to healthy models.</p>
+                <p className="text-xs text-[var(--text-muted)] mt-1">Determine how requests are routed to healthy providers.</p>
               </div>
 
               {/* Mode Selectors */}
               <div className="space-y-2">
                 {[
                   { mode: 'Priority', desc: 'SLA Fallback (Cascade)', details: 'Routes sequentially to the highest priority active provider (Priority 1 first). If failing, automatically cascading-fails over.' },
-                  { mode: 'Weighted', desc: 'Load-Balanced Distribution', details: 'Distributes traffic probabilistically based on configured weight percentage. Excellent for multi-key APIs.' },
+                  { mode: 'Weighted', desc: 'Load-Balanced Distribution', details: 'Distributes traffic probabilistically based on configured weight percentage. Excellent for multi-key configurations.' },
                   { mode: 'Latency', desc: 'Fastest Response First', details: 'Dynamically routes incoming requests to the provider displaying the lowest rolling average latency (ms).' },
-                  { mode: 'Cost', desc: 'Budget Optimizer', details: 'Always routes to the cheapest healthy active model based on input/output token pricing metrics.' },
-                  { mode: 'Health', desc: 'Uptime Maximizer', details: 'Routes to the provider possessing the highest uptime ratio, bypassing flaky APIs completely.' },
+                  { mode: 'Cost', desc: 'Budget Optimizer', details: 'Always routes to the cheapest healthy active provider based on input/output pricing metrics.' },
+                  { mode: 'Health', desc: 'Uptime Maximizer', details: 'Routes to the provider possessing the highest uptime ratio, bypassing unreliable services completely.' },
                   { mode: 'RoundRobin', desc: 'Load Equalizer', details: 'Cycles evenly across healthy nodes based on request counters to prevent quota exhausts.' }
                 ].map((item) => (
                   <label 
@@ -610,7 +610,7 @@ export default function AiOrchestrationScreen() {
                         contentStyle={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)', borderRadius: '12px' }}
                         labelStyle={{ color: 'var(--text)', fontWeight: 'bold' }}
                       />
-                      <Bar dataKey="Requests" name="API Requests Run" radius={[4, 4, 0, 0]}>
+                      <Bar dataKey="Requests" name="Requests Run" radius={[4, 4, 0, 0]}>
                         {providerDataForChart.map((entry, index) => (
                           <Cell key={`cell-${index}`} fill={index === 0 ? 'var(--primary)' : 'rgba(var(--primary-rgb, 99, 102, 241), 0.5)'} />
                         ))}
@@ -656,7 +656,7 @@ export default function AiOrchestrationScreen() {
             
             {/* Left selector */}
             <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 space-y-2 lg:col-span-1">
-              <span className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider px-2 block mb-2">Prompt Templates</span>
+              <span className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider px-2 block mb-2">Templates</span>
               <div className="space-y-1">
                 {prompts.map((p) => (
                   <button
@@ -696,12 +696,12 @@ export default function AiOrchestrationScreen() {
                         {prompts.find(item => item.id === selectedPromptId)?.name}
                       </h3>
                       <p className="text-xs text-[var(--text-muted)] mt-1">
-                        Editing System prompt guidelines. Placed in systemInstruction header dynamically.
+                        Editing system instruction guidelines. These are applied dynamically to guide responses.
                       </p>
                     </div>
-                    <span className="px-2.5 py-1 rounded-md bg-[var(--surface-dim)] border border-[var(--border)] text-xs font-bold uppercase tracking-wider text-[var(--text-muted)]">
-                      {prompts.find(item => item.id === selectedPromptId)?.category} Category
-                    </span>
+<span className="px-2.5 py-1 rounded-md bg-[var(--surface-dim)] border border-[var(--border)] text-xs font-bold uppercase tracking-wider text-[var(--text-muted)]">
+                       {prompts.find(item => item.id === selectedPromptId)?.category}
+                     </span>
                   </div>
 
                   <div className="space-y-1.5">
@@ -713,11 +713,11 @@ export default function AiOrchestrationScreen() {
                         </span>
                       ))}
                     </div>
-                    <p className="text-[10px] text-[var(--text-muted)]">Placeholders are automatically parsed on execution by the RAG memory core. Do not delete them unless required.</p>
+                    <p className="text-[10px] text-[var(--text-muted)]">Placeholders are automatically parsed during execution. Do not delete them unless required.</p>
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider block">Prompt Template System Instructions</label>
+                    <label className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider block">Template Instructions</label>
                     <textarea
                       rows={14}
                       value={editedPromptTemplate}
@@ -737,7 +737,7 @@ export default function AiOrchestrationScreen() {
                 </>
               ) : (
                 <div className="h-full flex items-center justify-center text-xs text-[var(--text-muted)] py-20">
-                   Select a prompt template from the panel to manage its instructions.
+                   Select a template from the panel to manage its instructions.
                 </div>
               )}
             </div>
@@ -759,7 +759,7 @@ export default function AiOrchestrationScreen() {
               </div>
 
               <div className="space-y-1.5">
-                <label className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider block">Select Route / Target API</label>
+                <label className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider block">Select Route / Target</label>
                 <select
                   value={testProvider}
                   onChange={(e) => setTestProvider(e.target.value)}
@@ -789,12 +789,12 @@ export default function AiOrchestrationScreen() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider block">Test Input Prompt</label>
+                <label className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider block">Test Input</label>
                 <textarea
                   rows={4}
                   value={testPrompt}
                   onChange={(e) => setTestPrompt(e.target.value)}
-                  placeholder="Enter custom prompt or clinical scenario..."
+                  placeholder="Enter a clinical scenario or test query..."
                   className="w-full p-3 bg-[var(--bg)] border border-[var(--border)] rounded-xl text-xs focus:outline-none focus:ring-1 focus:ring-[var(--primary)]"
                 />
               </div>
@@ -837,8 +837,8 @@ export default function AiOrchestrationScreen() {
                   <div className="flex-1 flex flex-col items-center justify-center py-20 text-center space-y-4">
                     <RefreshCw className="animate-spin text-[var(--primary)]" size={32} />
                     <div>
-                      <p className="text-sm font-bold">Multiplexing API Request...</p>
-                      <p className="text-xs text-[var(--text-muted)] mt-1">Evaluating health metrics, checking fallback rules, and invoking model engine.</p>
+<p className="text-sm font-bold">Processing Request...</p>
+<p className="text-xs text-[var(--text-muted)] mt-1">Evaluating provider health and routing the request to the best available service.</p>
                     </div>
                   </div>
                 ) : testError ? (
@@ -870,7 +870,7 @@ export default function AiOrchestrationScreen() {
                           </div>
                           <div>- Timestamp: {new Date(testResult.logs[0].timestamp).toLocaleTimeString()}</div>
                           <div>- Latency Response: {testResult.logs[0].latencyMs}ms</div>
-                          <div>- Token Count: {testResult.logs[0].tokensInput} (in) / {testResult.logs[0].tokensOutput} (out)</div>
+                          <div>- Units: {testResult.logs[0].tokensInput} (in) / {testResult.logs[0].tokensOutput} (out)</div>
                           {testResult.logs[0].fallbackChain && testResult.logs[0].fallbackChain.length > 0 && (
                             <div className="text-amber-500">
                               - Fallback triggered! Bypassed failed nodes: {testResult.logs[0].fallbackChain.join(' → ')}
@@ -888,7 +888,7 @@ export default function AiOrchestrationScreen() {
                   <div className="flex-1 flex flex-col items-center justify-center py-20 text-center space-y-2 my-auto">
                     <Code className="text-[var(--text-muted)]" size={32} />
                     <p className="text-sm font-bold">Gateway Console Ready</p>
-                    <p className="text-xs text-[var(--text-muted)]">Trigger a test prompt to monitor live orchestration results and verify routing rules.</p>
+                    <p className="text-xs text-[var(--text-muted)]">Run a test to monitor live routing results and verify configuration.</p>
                   </div>
                 )}
               </div>

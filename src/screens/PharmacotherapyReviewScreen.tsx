@@ -408,7 +408,7 @@ export default function PharmacotherapyReviewScreen() {
   const [chatMessages, setChatMessages] = useState<{ role: 'user' | 'assistant', content: string, timestamp: Date, isNew?: boolean }[]>([
     {
       role: 'assistant',
-      content: 'Hello! I am your Clinova AI Assistant. Ask me any clinical questions regarding the Kenya Drug Index (KDI), medical guidelines, drug-drug interactions, or dose adjustments for this patient.',
+      content: 'Hello! I am your Clinova Clinical Assistant. Ask me any clinical questions regarding the Kenya Drug Index (KDI), medical guidelines, drug-drug interactions, or dose adjustments for this patient.',
       timestamp: new Date()
     }
   ]);
@@ -1037,7 +1037,7 @@ export default function PharmacotherapyReviewScreen() {
                   </div>
                   <div>
                     <h3 className="font-bold text-[var(--text)] text-base">Clinova Intelligence Engine</h3>
-                    <p className="text-xs text-[var(--text-muted)] animate-pulse">Running advanced RAG synthesis &amp; patient clinical evaluation...</p>
+                    <p className="text-xs text-[var(--text-muted)] animate-pulse">Running advanced clinical synthesis &amp; patient evaluation...</p>
                   </div>
                 </div>
                 {/* Pulsing skeleton lines */}
@@ -1672,7 +1672,7 @@ export default function PharmacotherapyReviewScreen() {
         className="fixed bottom-6 right-6 z-50 p-4 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-full shadow-lg hover:opacity-90 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 font-medium"
       >
         <Sparkles size={20} className="animate-pulse" />
-        <span className="hidden sm:inline text-sm">Clinical AI Assistant</span>
+        <span className="hidden sm:inline text-sm">Clinical Assistant</span>
       </button>
 
       {/* AI Assistant Sidebar Panel */}

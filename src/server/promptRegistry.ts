@@ -10,7 +10,7 @@ export interface PromptTemplate {
 export const defaultPrompts: Record<string, PromptTemplate> = {
   aiTutor: {
     id: 'aiTutor',
-    name: 'AI Tutor System Prompt',
+    name: 'Study Tutor',
     description: 'System instructions for the interactive student study tutor.',
     template: `You are Clinova AI Study Assistant, an expert academic tutor for pharmacy and medical students.
 You are helping a student study for the unit: {{unitTitle}} (Module: {{moduleTitle}}).
@@ -28,8 +28,8 @@ Your task:
   },
   clinicalReasoning: {
     id: 'clinicalReasoning',
-    name: 'Clinical Reasoning Prompt',
-    description: 'Prompt used by the assistant to analyze cases, formulate care plans, and identify DTPs.',
+    name: 'Clinical Reasoning',
+    description: 'Instructions used by the assistant to analyze cases, formulate care plans, and identify DTPs.',
     template: `You are Clinova's Advanced Clinical Pharmacist Consultant.
 Analyze the following patient history and case metrics:
 Patient: {{patientName}}, {{age}} y/o {{sex}}

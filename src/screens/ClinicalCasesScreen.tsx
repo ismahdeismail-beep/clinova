@@ -472,7 +472,7 @@ export default function ClinicalCasesScreen() {
         category: 'Assessments & Practice',
         icon: <FileText className="text-rose-600" size={18} />,
         content: `### Broad Essay & Viva Questions\n\n*   **Long-Form Clinical Logic**: Synthesize complex guidelines, pharmacogenomic variables, and care transition protocols.\n*   **Structured Rubrics**: Evaluated based on medical depth, priority-based reasoning, and patient safety.\n*   **Viva Preparation**: Practice mapping structured therapeutic defense.`,
-        cta: 'Review Essay Prompts',
+        cta: 'Review Essay Questions',
         action: 'qbank'
       },
       {

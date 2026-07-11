@@ -35,14 +35,6 @@ interface Message {
   fileName?: string;
 }
 
-const RAG_SOURCES = [
-  { id: 'drug', name: 'Drug RAG', icon: Pill },
-  { id: 'guideline', name: 'Guideline RAG', icon: Library },
-  { id: 'pharma', name: 'Pharmacotherapy RAG', icon: FlaskConical },
-  { id: 'research', name: 'Research RAG', icon: BrainCircuit },
-  { id: 'notes', name: 'User Notes RAG', icon: FileText },
-  { id: 'ward', name: 'Ward-AID RAG', icon: Activity },
-];
 
 function highlightMedicalTerms(text: string): React.ReactNode {
   if (typeof text !== 'string') return text;

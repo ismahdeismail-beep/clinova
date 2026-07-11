@@ -111,21 +111,47 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
   const location = useLocation();
   const { userData, logout } = useAuth();
 
-  const links = [
-    { to: '/', label: 'Dashboard', icon: Home },
-    { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
-    { to: '/review', label: 'Pharmacotherapy Review', icon: ClipboardList },
-    { to: '/drugs', label: 'Drug Index', icon: Pill },
-    { to: '/assistant', label: 'Clinical Assistant', icon: Bot },
-    { to: '/oral-practice', label: 'Oral Practice', icon: Mic },
-    { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
-    ...(userData?.role === 'admin' ? [
-      { to: '/admin', label: 'Admin Console', icon: ShieldCheck },
-      { to: '/admin/kbms', label: 'Knowledge Base ⭐', icon: Database },
-      { to: '/admin/ai', label: 'AI Gateway', icon: Cpu }
-    ] : []),
-    { to: '/notifications', label: 'Notifications', icon: Bell },
-    { to: '/settings', label: 'Settings', icon: Settings },
+  const groups = [
+    {
+      label: 'Learn',
+      links: [
+        { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
+        { to: '/oral-practice', label: 'Oral Practice', icon: Mic },
+      ],
+    },
+    {
+      label: 'Clinical Practice',
+      links: [
+        { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
+        { to: '/review', label: 'Pharmacotherapy Review', icon: ClipboardList },
+        { to: '/drugs', label: 'Drug Index', icon: Pill },
+        { to: '/assistant', label: 'Clinical Assistant', icon: Bot },
+        { to: '/patients', label: 'Patients', icon: Users },
+      ],
+    },
+    {
+      label: 'Knowledge',
+      links: userData?.role === 'admin'
+        ? [{ to: '/admin/kbms', label: 'Knowledge Base', icon: Database }]
+        : [],
+    },
+    {
+      label: 'Personal',
+      links: [
+        { to: '/', label: 'Dashboard', icon: Home },
+        { to: '/notifications', label: 'Notifications', icon: Bell },
+        { to: '/settings', label: 'Settings', icon: Settings },
+      ],
+    },
+    ...(userData?.role === 'admin'
+      ? [{
+          label: 'Admin',
+          links: [
+            { to: '/admin', label: 'Admin Console', icon: ShieldCheck },
+            { to: '/admin/ai', label: 'AI Gateway', icon: Cpu },
+          ],
+        }]
+      : []),
   ];
 
   return (
@@ -148,26 +174,37 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
             <X size={18} />
           </button>
         </div>
-        <nav className="p-3 space-y-0.5 flex-1 mt-2">
-          {links.map((link) => {
-            const isActive = location.pathname === link.to;
-            const Icon = link.icon;
-            return (
-              <Link
-                key={link.to}
-                to={link.to}
-                onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
-                  isActive
-                    ? 'bg-[var(--primary-container)] text-[var(--primary)]'
-                    : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]'
-                }`}
-              >
-                <Icon size={18} className={isActive ? 'text-[var(--primary)]' : ''} />
-                {link.label}
-              </Link>
-            );
-          })}
+        <nav className="p-3 space-y-4 flex-1 mt-2 overflow-y-auto">
+          {groups.map((group) =>
+            group.links.length ? (
+              <div key={group.label}>
+                <div className="px-3 mb-1 text-[0.65rem] font-bold uppercase tracking-wider text-[var(--text-muted)]/70">
+                  {group.label}
+                </div>
+                <div className="space-y-0.5">
+                  {group.links.map((link) => {
+                    const isActive = location.pathname === link.to;
+                    const Icon = link.icon;
+                    return (
+                      <Link
+                        key={link.to}
+                        to={link.to}
+                        onClick={() => setIsOpen(false)}
+                        className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                          isActive
+                            ? 'bg-[var(--primary-container)] text-[var(--primary)]'
+                            : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]'
+                        }`}
+                      >
+                        <Icon size={18} className={isActive ? 'text-[var(--primary)]' : ''} />
+                        {link.label}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            ) : null,
+          )}
         </nav>
         <div className="p-4 border-t border-[var(--border)] mt-auto bg-[var(--surface-dim)]/30">
           {userData ? (

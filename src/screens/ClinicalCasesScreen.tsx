@@ -71,8 +71,9 @@ export default function ClinicalCasesScreen() {
     }
   }, [searchParams, allCases]);
 
-  // Tab navigation & disease brain subsections state
-  const [activeLevel3Tab, setActiveLevel3Tab] = useState<'cases' | 'knowledge'>('cases');
+  // Disease brain subsection state
+  const [showBrainTree, setShowBrainTree] = useState(false);
+  const [filterSpecialty, setFilterSpecialty] = useState<string | null>(null);
   const [selectedSubsection, setSelectedSubsection] = useState<{ id: string, title: string, category: string, content: string, cta?: string, action?: string } | null>(null);
 
   // AI Tutor states
@@ -90,11 +91,15 @@ export default function ClinicalCasesScreen() {
   const handleDiseaseClick = (disease: string) => {
     setSelectedDisease(disease);
     setSelectedCase(null);
-    setActiveLevel3Tab('cases');
+    setShowBrainTree(false);
     setSelectedSubsection(null);
   };
 
   const handleCaseClick = (clinicalCase: ClinicalCase) => {
+    const unit = SPECIALTIES.find((s) => matchesUnit(clinicalCase, s));
+    setSelectedSpecialty(unit || null);
+    setSelectedDisease(clinicalCase.disease);
+    setShowBrainTree(false);
     setSelectedCase(clinicalCase);
     setTutorChat([
       {
@@ -152,6 +157,18 @@ export default function ClinicalCasesScreen() {
         (c) => matchesUnit(c, selectedSpecialty) && c.disease === selectedDisease
       )
     : [];
+
+  const filteredCases = allCases.filter((c) => {
+    if (filterSpecialty && !matchesUnit(c, filterSpecialty)) return false;
+    const q = searchQuery.trim().toLowerCase();
+    if (q && !(
+      (c.title || '').toLowerCase().includes(q) ||
+      (c.disease || '').toLowerCase().includes(q) ||
+      (c.specialty || '').toLowerCase().includes(q) ||
+      (c.chiefComplaint || '').toLowerCase().includes(q)
+    )) return false;
+    return true;
+  });
 
   const getSpecialtyIcon = (specialty: string) => {
     switch (specialty) {
@@ -545,7 +562,7 @@ export default function ClinicalCasesScreen() {
         // Simulate clicking an interactive case or tutor discussion
         break;
       case 'cases':
-        setActiveLevel3Tab('cases');
+        setShowBrainTree(false);
         setSelectedSubsection(null);
         break;
       default:
@@ -636,7 +653,7 @@ export default function ClinicalCasesScreen() {
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" size={18} />
               <input
                 type="text"
-                placeholder="Search specialties..."
+                  placeholder="Search cases, diseases, or drugs..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full pl-10 pr-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
@@ -681,24 +698,74 @@ export default function ClinicalCasesScreen() {
           
           {/* Level 1: Specialties */}
           {!selectedSpecialty && (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 animate-in fade-in duration-300">
-              {filteredSpecialties.map((specialty, idx) => (
-                <div 
-                  key={idx}
-                  onClick={() => handleSpecialtyClick(specialty)}
-                  className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl p-5 cursor-pointer transition-all shadow-sm hover:shadow-md group"
+            <div className="space-y-5 animate-in fade-in duration-300">
+              {/* Specialty filter chips */}
+              <div className="flex flex-wrap gap-2">
+                <button
+                  onClick={() => setFilterSpecialty(null)}
+                  className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-all cursor-pointer ${
+                    !filterSpecialty
+                      ? 'bg-[var(--primary)] text-[var(--primary-foreground)] border-[var(--primary)]'
+                      : 'bg-[var(--surface)] text-[var(--text-muted)] border-[var(--border)] hover:border-[var(--primary)]'
+                  }`}
                 >
-                  <div className="flex items-center gap-4">
-                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-gradient-to-br ${getSpecialtyColor(specialty)}`}>
-                      {getSpecialtyIcon(specialty)}
+                  All Cases ({allCases.length})
+                </button>
+                {SPECIALTIES.map((spec) => {
+                  const count = allCases.filter((c) => matchesUnit(c, spec)).length;
+                  if (count === 0) return null;
+                  return (
+                    <button
+                      key={spec}
+                      onClick={() => setFilterSpecialty(spec)}
+                      className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-all cursor-pointer flex items-center gap-1.5 ${
+                        filterSpecialty === spec
+                          ? 'bg-[var(--primary)] text-[var(--primary-foreground)] border-[var(--primary)]'
+                          : 'bg-[var(--surface)] text-[var(--text-muted)] border-[var(--border)] hover:border-[var(--primary)]'
+                      }`}
+                    >
+                      {getSpecialtyIcon(spec)} {spec.replace(' Pharmacotherapy', '')} ({count})
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Flat case grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {filteredCases.map((clinicalCase, idx) => (
+                  <div
+                    key={clinicalCase.id || clinicalCase.seedId || idx}
+                    onClick={() => handleCaseClick(clinicalCase)}
+                    className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl p-5 cursor-pointer transition-all shadow-sm hover:shadow-md group"
+                  >
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className={`px-2.5 py-1 rounded-lg text-[10px] font-extrabold uppercase tracking-wider ${
+                        clinicalCase.difficulty === 'Beginner' ? 'bg-emerald-500/10 text-emerald-600' :
+                        clinicalCase.difficulty === 'Intermediate' ? 'bg-amber-500/10 text-amber-600' :
+                        'bg-rose-500/10 text-rose-600'
+                      }`}>{clinicalCase.difficulty} Level</span>
+                      <span className="text-xs text-[var(--text-muted)] truncate">{clinicalCase.specialty?.replace(' Pharmacotherapy', '')}</span>
                     </div>
-                    <div>
-                      <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">{specialty}</h3>
-                      <p className="text-xs text-[var(--text-muted)] mt-1">{diseaseCountBySpecialty[specialty] || 0} Diseases</p>
-                    </div>
+                    <h3 className="text-base font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors mb-1 leading-tight">{clinicalCase.title}</h3>
+                    <p className="text-xs text-[var(--text-muted)]">{clinicalCase.disease}</p>
+                    {clinicalCase.chiefComplaint && (
+                      <p className="text-xs text-[var(--text-muted)] line-clamp-2 leading-relaxed mt-2">
+                        <span className="font-semibold">CC:</span> "{clinicalCase.chiefComplaint}"
+                      </p>
+                    )}
                   </div>
+                ))}
+              </div>
+
+              {filteredCases.length === 0 && (
+                <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-12 text-center">
+                  <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mx-auto mb-4">
+                    <BookOpen size={32} className="text-[var(--text-muted)]" />
+                  </div>
+                  <h3 className="text-lg font-bold text-[var(--text)]">No cases match your search</h3>
+                  <p className="text-sm text-[var(--text-muted)] mt-2 max-w-sm mx-auto">Try a different term or clear the specialty filter.</p>
                 </div>
-              ))}
+              )}
             </div>
           )}
 
@@ -752,34 +819,21 @@ export default function ClinicalCasesScreen() {
                   </div>
                 </div>
 
-                {/* Tab Switcher */}
-                <div className="flex bg-[var(--surface-dim)] border border-[var(--border)] p-1 rounded-2xl self-start md:self-auto shadow-sm">
-                  <button
-                    onClick={() => setActiveLevel3Tab('cases')}
-                    className={`px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all cursor-pointer ${
-                      activeLevel3Tab === 'cases'
-                        ? 'bg-[var(--surface)] border border-[var(--border)] text-[var(--primary)] shadow-sm'
-                        : 'text-[var(--text-muted)] hover:text-[var(--text)]'
-                    }`}
-                  >
-                    <Folder size={14} />
-                    Teaching Cases
-                  </button>
-                  <button
-                    onClick={() => setActiveLevel3Tab('knowledge')}
-                    className={`px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all cursor-pointer ${
-                      activeLevel3Tab === 'knowledge'
-                        ? 'bg-[var(--surface)] border border-[var(--border)] text-[var(--primary)] shadow-sm'
-                        : 'text-[var(--text-muted)] hover:text-[var(--text)]'
-                    }`}
-                  >
-                    <BrainCircuit size={14} />
-                    Disease Brain Tree (30 Nodes)
-                  </button>
-                </div>
+                {/* Disease Brain Tree toggle */}
+                <button
+                  onClick={() => setShowBrainTree(!showBrainTree)}
+                  className={`px-4 py-2 rounded-2xl text-xs font-semibold flex items-center gap-2 border transition-all cursor-pointer self-start md:self-auto shadow-sm ${
+                    showBrainTree
+                      ? 'bg-[var(--primary)] text-[var(--primary-foreground)] border-[var(--primary)]'
+                      : 'bg-[var(--surface)] border-[var(--border)] text-[var(--text-muted)] hover:text-[var(--text)]'
+                  }`}
+                >
+                  <BrainCircuit size={14} />
+                  Disease Brain Tree
+                </button>
               </div>
 
-              {activeLevel3Tab === 'cases' ? (
+              {!showBrainTree ? (
                 <div className="space-y-4">
                   {casesForSelectedDisease.map((clinicalCase, idx) => (
                     <div 
@@ -888,6 +942,13 @@ export default function ClinicalCasesScreen() {
                       }`}>{selectedCase.difficulty} Level</span>
                     </div>
                   </div>
+                  <button
+                    onClick={() => { setSelectedCase(null); setShowBrainTree(true); }}
+                    className="px-4 py-2 rounded-2xl text-xs font-semibold flex items-center gap-2 border border-[var(--border)] bg-[var(--surface)] text-[var(--text-muted)] hover:text-[var(--text)] transition-all cursor-pointer self-start sm:self-auto shadow-sm"
+                  >
+                    <BrainCircuit size={14} />
+                    Disease Brain
+                  </button>
                 </div>
               </div>
 

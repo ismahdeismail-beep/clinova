@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { 
   Pill, Search, Loader2, ArrowRight, BookOpen,
   Sparkles, AlertTriangle, CheckCircle2, RefreshCw, User, Plus, Trash2, Info, HeartPulse, Activity, Check, ShieldAlert,
@@ -99,6 +99,10 @@ export default function DrugIndexScreen() {
   const [monograph, setMonograph] = useState<string | null>(null);
   const [monographKey, setMonographKey] = useState<string>('');
   const [currentMonographId, setCurrentMonographId] = useState<string | null>(null);
+
+  // Seeded Supabase catalog (canonical source of monographs, mirrored from clinical cases pattern)
+  const [catalog, setCatalog] = useState<DrugMonograph[]>([]);
+  const [catalogLoading, setCatalogLoading] = useState(false);
 
   // Tab 2: Interaction Checker State
   const [patients, setPatients] = useState<Patient[]>([]);
@@ -221,6 +225,22 @@ export default function DrugIndexScreen() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Load the full seeded monograph catalog from Supabase so monographs reflect in the app
+  useEffect(() => {
+    const loadCatalog = async () => {
+      setCatalogLoading(true);
+      try {
+        const list = await DrugMonographService.getAll();
+        setCatalog(list);
+      } catch (err) {
+        console.warn('[DrugIndex] Failed to load seeded monographs:', err);
+      } finally {
+        setCatalogLoading(false);
+      }
+    };
+    loadCatalog();
+  }, []);
+
   // Fetch drug monographs helper
   useEffect(() => {
     const loadSavedDrugs = async () => {
@@ -281,6 +301,15 @@ export default function DrugIndexScreen() {
     }
   };
 
+  const openSeeded = (m: DrugMonograph) => {
+    setMonograph(monographToMarkdown(m));
+    setMonographKey((m.name || m.generic_name || '').toLowerCase());
+    setCurrentMonographId(m.id);
+    setSelectedCategory(null);
+    setError(null);
+    if (m.name) saveDrugSearch(m.name);
+  };
+
   const fetchDrugProfile = async (query: string, categoryName?: string) => {
     setIsLoading(true);
     setError(null);
@@ -289,7 +318,22 @@ export default function DrugIndexScreen() {
     try {
       const searchName = query || categoryName || '';
 
-      // Try Supabase seeded monograph first
+      // Try the locally-loaded seeded catalog first (lenient match)
+      if (searchName) {
+        const localMatch = catalog.find(m =>
+          (m.name && m.name.toLowerCase() === searchName.toLowerCase()) ||
+          (m.generic_name && m.generic_name.toLowerCase() === searchName.toLowerCase()) ||
+          (m.name && m.name.toLowerCase().includes(searchName.toLowerCase())) ||
+          (m.generic_name && m.generic_name.toLowerCase().includes(searchName.toLowerCase()))
+        );
+        if (localMatch) {
+          openSeeded(localMatch);
+          setIsLoading(false);
+          return;
+        }
+      }
+
+      // Try Supabase seeded monograph (exact name match)
       if (searchName) {
         const seeded = await DrugMonographService.getByName(searchName);
         if (seeded && seeded.indications?.length > 0) {
@@ -341,7 +385,10 @@ export default function DrugIndexScreen() {
   const handleCategoryClick = (category: string) => {
     setSelectedCategory(category);
     setSearchQuery('');
-    fetchDrugProfile('', category);
+    setMonograph(null);
+    setCurrentMonographId(null);
+    setMonographKey('');
+    setError(null);
   };
 
   const handleQuickDrugClick = (drugName: string) => {
@@ -386,6 +433,22 @@ export default function DrugIndexScreen() {
       setIsChecking(false);
     }
   };
+
+  // Filtered view of the seeded catalog (by category or live search)
+  const filteredCatalog = useMemo(() => {
+    const q = searchQuery.trim().toLowerCase();
+    let list = catalog;
+    if (selectedCategory) {
+      list = list.filter(m => (m.drug_class || '').toLowerCase().includes(selectedCategory.toLowerCase()));
+    } else if (q) {
+      list = list.filter(m =>
+        (m.name || '').toLowerCase().includes(q) ||
+        (m.generic_name || '').toLowerCase().includes(q) ||
+        (m.drug_class || '').toLowerCase().includes(q)
+      );
+    }
+    return list;
+  }, [catalog, searchQuery, selectedCategory]);
 
   return (
     <div className="p-6 max-w-7xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
@@ -572,10 +635,16 @@ export default function DrugIndexScreen() {
                       </div>
                     </div>
                     
-                    <div className="flex items-center gap-2 shrink-0">
-                      {currentMonographId && (
-                        <SaveMonographButton monographId={currentMonographId} monographName={searchQuery} />
-                      )}
+                     <div className="flex items-center gap-2 shrink-0">
+                       <button
+                         onClick={() => { setMonograph(null); setCurrentMonographId(null); setMonographKey(''); setSelectedCategory(null); }}
+                         className="flex items-center gap-1 px-3 py-1.5 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)] text-[var(--text-secondary)] hover:text-[var(--primary)] rounded-lg text-xs font-semibold transition-colors border border-[var(--border)] hover:border-[var(--primary)]/30 shrink-0"
+                       >
+                         <ArrowRight size={14} className="rotate-180" /> Catalog
+                       </button>
+                       {currentMonographId && (
+                         <SaveMonographButton monographId={currentMonographId} monographName={searchQuery} />
+                       )}
                       <button 
                         onClick={handlePinForOffline}
                         className="flex items-center gap-2 px-3 py-1.5 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)] text-[var(--text-secondary)] hover:text-[var(--primary)] rounded-lg text-xs font-semibold transition-colors border border-[var(--border)] hover:border-[var(--primary)]/30 shrink-0"
@@ -627,14 +696,65 @@ export default function DrugIndexScreen() {
                   </div>
                 </div>
               ) : (
-                <div className="w-full h-full bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 flex flex-col items-center justify-center text-center">
-                  <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mb-4">
-                    <Pill size={32} className="text-[var(--text-muted)]" />
+                <div className="space-y-4 animate-in fade-in duration-200">
+                  <div className="flex items-center justify-between flex-wrap gap-2">
+                    <div className="text-sm text-[var(--text-muted)]">
+                      {selectedCategory ? (
+                        <span>Showing <span className="font-semibold text-[var(--text)]">{filteredCatalog.length}</span> seeded monographs in <span className="font-semibold text-[var(--text)]">{selectedCategory}</span></span>
+                      ) : searchQuery.trim() ? (
+                        <span>Showing <span className="font-semibold text-[var(--text)]">{filteredCatalog.length}</span> match(es) for &ldquo;{searchQuery}&rdquo;</span>
+                      ) : (
+                        <span>Browse the <span className="font-semibold text-[var(--text)]">{filteredCatalog.length}</span> seeded Kenya Drug Index monographs{catalogLoading && filteredCatalog.length === 0 ? ' (loading…)' : ''}</span>
+                      )}
+                    </div>
+                    {selectedCategory && (
+                      <button
+                        onClick={() => { setSelectedCategory(null); setSearchQuery(''); }}
+                        className="text-xs font-semibold text-[var(--primary)] hover:underline flex items-center gap-1 cursor-pointer"
+                      >
+                        <ArrowRight size={12} className="rotate-180" /> All classes
+                      </button>
+                    )}
                   </div>
-                  <h3 className="text-lg font-semibold text-[var(--text)] mb-2">Search or Browse Drug Profiles</h3>
-                  <p className="text-[var(--text-muted)] text-sm max-w-md">
-                    Enter a generic name or select a therapeutic class to view official KDI indications, adult/pediatric dosages, interactions, and mandatory renal clearance modifications.
-                  </p>
+
+                  {filteredCatalog.length === 0 ? (
+                    <div className="w-full bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 flex flex-col items-center justify-center text-center">
+                      <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mb-4">
+                        <Pill size={32} className="text-[var(--text-muted)]" />
+                      </div>
+                      <h3 className="text-lg font-semibold text-[var(--text)] mb-2">
+                        {selectedCategory ? `No seeded monographs in ${selectedCategory} yet` : 'No monographs found'}
+                      </h3>
+                      <p className="text-[var(--text-muted)] text-sm max-w-md">
+                        {selectedCategory
+                          ? 'Try another therapeutic class, or search by name to generate a profile via the Clinical Assistant.'
+                          : 'Try a different search term, or press Search to generate a profile via the Clinical Assistant.'}
+                      </p>
+                    </div>
+                  ) : (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                      {filteredCatalog.map((m) => (
+                        <button
+                          key={m.id}
+                          onClick={() => openSeeded(m)}
+                          className="text-left bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-xl p-4 transition-all cursor-pointer group"
+                        >
+                          <div className="flex items-start justify-between gap-2">
+                            <div className="font-semibold text-[var(--text)] text-sm group-hover:text-[var(--primary)] transition-colors">{m.name}</div>
+                            <Pill size={14} className="text-[var(--text-dim)] shrink-0 mt-0.5" />
+                          </div>
+                          {m.generic_name && m.generic_name !== m.name && (
+                            <div className="text-xs text-[var(--text-muted)]">{m.generic_name}</div>
+                          )}
+                          {m.drug_class && (
+                            <div className="mt-2 inline-block text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded bg-[var(--surface-dim)] text-[var(--text-secondary)]">
+                              {m.drug_class}
+                            </div>
+                          )}
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </div>
               )}
             </div>

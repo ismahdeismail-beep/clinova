@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate, Navigate 
 import { 
   Home, Users, FolderOpen, ClipboardList, Pill, Bot, 
   BookOpen, BarChart3, Bell, Settings, Menu, Search, MessageSquare, ShieldCheck, Database,
-  X, LogOut, Cpu, Mic
+  X, LogOut, Cpu
 } from 'lucide-react';
 
 const DashboardScreen = React.lazy(() => import('./screens/DashboardScreen'));
@@ -15,7 +15,6 @@ const ClinicalAssistantScreen = React.lazy(() => import('./screens/ClinicalAssis
 const EducationHubScreen = React.lazy(() => import('./screens/EducationHubScreen'));
 const KnowledgeBaseManagerScreen = React.lazy(() => import('./screens/KnowledgeBaseManagerScreen'));
 const AiOrchestrationScreen = React.lazy(() => import('./screens/AiOrchestrationScreen'));
-const OralPracticeScreen = React.lazy(() => import('./screens/OralPracticeScreen'));
 const NotificationsScreen = React.lazy(() => import('./screens/NotificationsScreen'));
 const SettingsScreen = React.lazy(() => import('./screens/SettingsScreen'));
 const AdminDashboardScreen = React.lazy(() => import('./screens/AdminDashboardScreen'));
@@ -116,7 +115,6 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
       label: 'Learn',
       links: [
         { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
-        { to: '/oral-practice', label: 'Oral Practice', icon: Mic },
       ],
     },
     {
@@ -346,7 +344,6 @@ function AppContent() {
               <Route path="/review" element={<PharmacotherapyReviewScreen />} />
               <Route path="/drugs" element={<DrugIndexScreen />} />
               <Route path="/assistant" element={<ClinicalAssistantScreen />} />
-              <Route path="/oral-practice" element={<OralPracticeScreen />} />
               <Route path="/knowledge" element={<EducationHubScreen />} />
               <Route path="/admin" element={
                 <ProtectedRoute requiredRole="admin">

@@ -6,7 +6,7 @@ import { db } from '../lib/firebase';
 export interface GeneratedContent {
   id: string;
   userId: string;
-  type: 'study_guide' | 'flashcards' | 'quiz' | 'summary' | 'clinical_case' | 'pharmacotherapy_review' | 'oral_practice' | 'research_output' | 'ai_conversation';
+  type: 'study_guide' | 'flashcards' | 'quiz' | 'summary' | 'clinical_case' | 'pharmacotherapy_review' | 'research_output' | 'ai_conversation';
   title: string;
   content: string;
   metadata?: {

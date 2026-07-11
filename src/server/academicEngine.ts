@@ -132,7 +132,6 @@ Example output: ["clinical-reasoning", "evidence-based-medicine"]`;
       'adaptive-learning': ['personalize', 'weak area', 'progress', 'recommend action', 'remedial'],
       'teaching': ['teach', 'explain step', 'analogy', 'socratic', 'explain simply'],
       'clinical-cases': ['soap', 'case study', 'patient case', 'clinical scenario'],
-      'oral-practice': ['viva', 'oral practice', 'examiner', 'rapid-fire', 'counseling'],
       'assessment': ['quiz', 'mcq', 'sba', 'test', 'exam question'],
       'memory': ['remember', 'preference', 'session', 'history', 'metrics'],
       'document-intelligence': ['print-ready', 'study guide', 'revision guide', 'manual', 'monograph booklet'],

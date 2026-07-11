@@ -13,7 +13,6 @@ import './knowledgeRetrieval';
 import './diseaseKnowledge';
 import './clinicalCases';
 import './assessment';
-import './oralPractice';
 import './summarization';
 import './citation';
 import './evidenceBasedMedicine';

@@ -64,7 +64,7 @@ function detectIntent(query: string, context: EducationalContext): {
   if (q.includes('mcq') || q.includes('question') || q.includes('quiz') || q.includes('exam') || q.includes('viva') || q.includes('osce') || q.includes('test me')) {
     return {
       intent: 'assessment',
-      requiredSkills: ['assessment', 'oral_practice', 'knowledge_retrieval'],
+      requiredSkills: ['assessment', 'knowledge_retrieval'],
     };
   }
 

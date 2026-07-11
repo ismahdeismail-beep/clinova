@@ -190,10 +190,6 @@ export default function EducationHubScreen() {
       navigate('/drugs');
       return;
     }
-    if (mod.id === 'oral_practice') {
-      navigate('/oral-practice');
-      return;
-    }
     setSelectedModule(mod);
     setSelectedUnit(null);
   };

@@ -1453,10 +1453,9 @@ export default function PharmacotherapyReviewScreen() {
                    >
                       Load High-Fidelity Demo Patient Case
                      </button>
-                   </div>
-                  </div>
+                    </div>
 
-              </div>
+               </div>
 
               )}
 

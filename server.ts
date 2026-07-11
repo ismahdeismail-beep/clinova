@@ -67,6 +67,57 @@ app.use(express.urlencoded({ limit: '100mb', extended: true }));
 // Serve uploaded files statically
 app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
 
+// Health & readiness probes (additive; no auth required so infra can poll).
+app.get('/api/health', (_req, res) => {
+  res.json({ status: 'ok', uptime: process.uptime(), ts: Date.now() });
+});
+
+app.get('/api/ready', (_req, res) => {
+  const deps = {
+    gemini: Boolean(process.env.GEMINI_API_KEY),
+    supabase: Boolean(adminSupabase),
+    openrouter: Boolean(process.env.OPENROUTER_API_KEY),
+  };
+  const ready = deps.gemini; // Gemini is the minimum viable dependency.
+  res.status(ready ? 200 : 503).json({ status: ready ? 'ready' : 'degraded', deps, ts: Date.now() });
+});
+
+// ----- Optional API protection (opt-in; safe defaults, NO breaking changes) -----
+// Rate limiting + auth are DISABLED by default so existing clients keep working.
+// Enable for production via env: RATE_LIMIT_ENABLED=true, API_REQUIRE_AUTH=true.
+const RATE_LIMIT_ENABLED = process.env.RATE_LIMIT_ENABLED === 'true';
+const RATE_LIMIT_WINDOW_MS = Number(process.env.RATE_LIMIT_WINDOW_MS || 60000);
+const RATE_LIMIT_MAX = Number(process.env.RATE_LIMIT_MAX || 300);
+const API_REQUIRE_AUTH = process.env.API_REQUIRE_AUTH === 'true';
+const API_SHARED_SECRET = process.env.API_SHARED_SECRET || '';
+
+const rateBuckets = new Map<string, number[]>();
+function rateLimit(req: any, res: any, next: any) {
+  if (!RATE_LIMIT_ENABLED) return next();
+  const ip = String(req.headers['x-forwarded-for'] || req.socket.remoteAddress || 'unknown')
+    .split(',')[0].trim();
+  const now = Date.now();
+  const hits = (rateBuckets.get(ip) || []).filter((t) => now - t < RATE_LIMIT_WINDOW_MS);
+  if (hits.length >= RATE_LIMIT_MAX) {
+    res.set('Retry-After', String(Math.ceil(RATE_LIMIT_WINDOW_MS / 1000)));
+    return res.status(429).json({ error: 'Too many requests. Please slow down.' });
+  }
+  hits.push(now);
+  rateBuckets.set(ip, hits);
+  next();
+}
+
+function requireAuth(req: any, res: any, next: any) {
+  if (!API_REQUIRE_AUTH) return next();
+  const auth = req.headers['authorization'] || '';
+  const token = auth.startsWith('Bearer ') ? auth.slice(7) : '';
+  if (API_SHARED_SECRET && token === API_SHARED_SECRET) return next();
+  return res.status(401).json({ error: 'Unauthorized' });
+}
+
+// Apply to all /api routes. Health/ready declared above stay open.
+app.use('/api', rateLimit, requireAuth);
+
 // Proxy Cloudinary Upload
 app.post('/api/cloudinary/upload', upload.single('file'), async (req, res) => {
   try {
@@ -190,6 +241,14 @@ app.post('/api/upload/chunk', upload.single('chunk'), async (req, res) => {
 
   } catch (error: any) {
     console.error('Chunk upload error:', error);
+    // Best-effort cleanup of partial chunks to avoid disk leak on failed assembly.
+    try {
+      const uid = req.body && (req.body.uploadId as string | undefined);
+      if (uid) {
+        const d = path.join(process.cwd(), 'uploads', 'tmp', uid);
+        if (fs.existsSync(d)) fs.rmSync(d, { recursive: true, force: true });
+      }
+    } catch (_) { /* non-fatal */ }
     res.status(500).json({ error: error.message || 'Failed to process chunk upload.' });
   }
 });

@@ -4,114 +4,334 @@
   "graph": {},
   "nodes": [
     {
-      "label": "clinicalCasesData.ts",
+      "label": "curriculum.ts",
       "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
+      "source_file": "src/data/curriculum.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_data_clinicalcasesdata",
-      "community": 1,
-      "norm_label": "clinicalcasesdata.ts"
-    },
-    {
-      "label": "ClinicalCase",
-      "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L3",
-      "_origin": "ast",
-      "id": "src_data_clinicalcasesdata_clinicalcase",
-      "community": 1,
-      "norm_label": "clinicalcase"
-    },
-    {
-      "label": "SPECIALTIES",
-      "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L43",
-      "_origin": "ast",
-      "id": "src_data_clinicalcasesdata_specialties",
-      "community": 1,
-      "norm_label": "specialties"
-    },
-    {
-      "label": "DISEASES_BY_SPECIALTY",
-      "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L63",
-      "_origin": "ast",
-      "id": "src_data_clinicalcasesdata_diseases_by_specialty",
+      "id": "src_data_curriculum",
       "community": 4,
-      "norm_label": "diseases_by_specialty"
+      "norm_label": "curriculum.ts"
     },
     {
-      "label": "INITIAL_CASES",
+      "label": "Difficulty",
       "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L229",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L19",
       "_origin": "ast",
-      "id": "src_data_clinicalcasesdata_initial_cases",
+      "id": "src_data_curriculum_difficulty",
       "community": 4,
-      "norm_label": "initial_cases"
+      "norm_label": "difficulty"
     },
     {
-      "label": "CURRICULUM_UNITS",
+      "label": "LearningObjective",
       "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L586",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L21",
       "_origin": "ast",
-      "id": "src_data_clinicalcasesdata_curriculum_units",
-      "community": 1,
-      "norm_label": "curriculum_units"
+      "id": "src_data_curriculum_learningobjective",
+      "community": 4,
+      "norm_label": "learningobjective"
     },
     {
-      "label": "CURRICULUM_TOPICS_REGISTRY",
+      "label": "Disease",
       "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L605",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L29",
       "_origin": "ast",
-      "id": "src_data_clinicalcasesdata_curriculum_topics_registry",
-      "community": 1,
-      "norm_label": "curriculum_topics_registry"
+      "id": "src_data_curriculum_disease",
+      "community": 4,
+      "norm_label": "disease"
     },
     {
-      "label": "getCurriculumCasesForUnit()",
+      "label": "CurriculumUnit",
       "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "src_data_curriculum_curriculumunit",
+      "community": 4,
+      "norm_label": "curriculumunit"
+    },
+    {
+      "label": "CurriculumArea",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "src_data_curriculum_curriculumarea",
+      "community": 4,
+      "norm_label": "curriculumarea"
+    },
+    {
+      "label": "DISEASES",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "src_data_curriculum_diseases",
+      "community": 4,
+      "norm_label": "diseases"
+    },
+    {
+      "label": "CURRICULUM",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L224",
+      "_origin": "ast",
+      "id": "src_data_curriculum_curriculum",
+      "community": 4,
+      "norm_label": "curriculum"
+    },
+    {
+      "label": "ALL_UNITS",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L642",
+      "_origin": "ast",
+      "id": "src_data_curriculum_all_units",
+      "community": 4,
+      "norm_label": "all_units"
+    },
+    {
+      "label": "ALL_LEARNING_OBJECTIVES",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L643",
+      "_origin": "ast",
+      "id": "src_data_curriculum_all_learning_objectives",
+      "community": 4,
+      "norm_label": "all_learning_objectives"
+    },
+    {
+      "label": "getArea()",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
       "source_location": "L645",
       "_origin": "ast",
-      "id": "src_data_clinicalcasesdata_getcurriculumcasesforunit",
-      "community": 6,
-      "norm_label": "getcurriculumcasesforunit()"
+      "id": "src_data_curriculum_getarea",
+      "community": 4,
+      "norm_label": "getarea()"
     },
     {
-      "label": "ALL_CLINICAL_CASES",
+      "label": "getUnit()",
       "file_type": "code",
-      "source_file": "src/data/clinicalCasesData.ts",
-      "source_location": "L1005",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L649",
       "_origin": "ast",
-      "id": "src_data_clinicalcasesdata_all_clinical_cases",
-      "community": 1,
-      "norm_label": "all_clinical_cases"
+      "id": "src_data_curriculum_getunit",
+      "community": 4,
+      "norm_label": "getunit()"
     },
     {
-      "label": "ClinicalCasesScreen.tsx",
+      "label": "getUnitsByArea()",
       "file_type": "code",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L1",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L653",
       "_origin": "ast",
-      "id": "src_screens_clinicalcasesscreen",
-      "community": 1,
-      "norm_label": "clinicalcasesscreen.tsx"
+      "id": "src_data_curriculum_getunitsbyarea",
+      "community": 4,
+      "norm_label": "getunitsbyarea()"
     },
     {
-      "label": "ClinicalCasesScreen()",
+      "label": "getUnitsByDisease()",
       "file_type": "code",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L15",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L657",
       "_origin": "ast",
-      "id": "src_screens_clinicalcasesscreen_clinicalcasesscreen",
-      "community": 1,
-      "norm_label": "clinicalcasesscreen()"
+      "id": "src_data_curriculum_getunitsbydisease",
+      "community": 4,
+      "norm_label": "getunitsbydisease()"
+    },
+    {
+      "label": "getDisease()",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L661",
+      "_origin": "ast",
+      "id": "src_data_curriculum_getdisease",
+      "community": 4,
+      "norm_label": "getdisease()"
+    },
+    {
+      "label": "getDiseaseIdByName()",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L665",
+      "_origin": "ast",
+      "id": "src_data_curriculum_getdiseaseidbyname",
+      "community": 4,
+      "norm_label": "getdiseaseidbyname()"
+    },
+    {
+      "label": "getLearningObjective()",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L675",
+      "_origin": "ast",
+      "id": "src_data_curriculum_getlearningobjective",
+      "community": 4,
+      "norm_label": "getlearningobjective()"
+    },
+    {
+      "label": "getLearningObjectivesForUnit()",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L679",
+      "_origin": "ast",
+      "id": "src_data_curriculum_getlearningobjectivesforunit",
+      "community": 4,
+      "norm_label": "getlearningobjectivesforunit()"
+    },
+    {
+      "label": "getUnitsForLearningObjective()",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L683",
+      "_origin": "ast",
+      "id": "src_data_curriculum_getunitsforlearningobjective",
+      "community": 4,
+      "norm_label": "getunitsforlearningobjective()"
+    },
+    {
+      "label": "getDiseaseIdsForUnit()",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L688",
+      "_origin": "ast",
+      "id": "src_data_curriculum_getdiseaseidsforunit",
+      "community": 4,
+      "norm_label": "getdiseaseidsforunit()"
+    },
+    {
+      "label": "INTEGRATED_UNIT_IDS",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L697",
+      "_origin": "ast",
+      "id": "src_data_curriculum_integrated_unit_ids",
+      "community": 4,
+      "norm_label": "integrated_unit_ids"
+    },
+    {
+      "label": "IntegratedUnitId",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L717",
+      "_origin": "ast",
+      "id": "src_data_curriculum_integratedunitid",
+      "community": 4,
+      "norm_label": "integratedunitid"
+    },
+    {
+      "label": "getIntegratedUnits()",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L719",
+      "_origin": "ast",
+      "id": "src_data_curriculum_getintegratedunits",
+      "community": 4,
+      "norm_label": "getintegratedunits()"
+    },
+    {
+      "label": "isIntegratedUnit()",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L723",
+      "_origin": "ast",
+      "id": "src_data_curriculum_isintegratedunit",
+      "community": 4,
+      "norm_label": "isintegratedunit()"
+    },
+    {
+      "label": "INTEGRATED_UNITS_MAP",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L728",
+      "_origin": "ast",
+      "id": "src_data_curriculum_integrated_units_map",
+      "community": 4,
+      "norm_label": "integrated_units_map"
+    },
+    {
+      "label": "RAW_SPECIALTY_MAP",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L749",
+      "_origin": "ast",
+      "id": "src_data_curriculum_raw_specialty_map",
+      "community": 4,
+      "norm_label": "raw_specialty_map"
+    },
+    {
+      "label": "getIntegratedUnitId()",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L784",
+      "_origin": "ast",
+      "id": "src_data_curriculum_getintegratedunitid",
+      "community": 4,
+      "norm_label": "getintegratedunitid()"
+    },
+    {
+      "label": "EducationModuleUnit",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L793",
+      "_origin": "ast",
+      "id": "src_data_curriculum_educationmoduleunit",
+      "community": 4,
+      "norm_label": "educationmoduleunit"
+    },
+    {
+      "label": "EducationModule",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L802",
+      "_origin": "ast",
+      "id": "src_data_curriculum_educationmodule",
+      "community": 4,
+      "norm_label": "educationmodule"
+    },
+    {
+      "label": "EDUCATION_MODULES",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L816",
+      "_origin": "ast",
+      "id": "src_data_curriculum_education_modules",
+      "community": 4,
+      "norm_label": "education_modules"
+    },
+    {
+      "label": "getEducationModule()",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L826",
+      "_origin": "ast",
+      "id": "src_data_curriculum_geteducationmodule",
+      "community": 4,
+      "norm_label": "geteducationmodule()"
+    },
+    {
+      "label": "getModuleUnits()",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L831",
+      "_origin": "ast",
+      "id": "src_data_curriculum_getmoduleunits",
+      "community": 4,
+      "norm_label": "getmoduleunits()"
+    },
+    {
+      "label": "NON_CURRICULUM_UNITS",
+      "file_type": "code",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L848",
+      "_origin": "ast",
+      "id": "src_data_curriculum_non_curriculum_units",
+      "community": 4,
+      "norm_label": "non_curriculum_units"
     },
     {
       "label": "clinicalCase.service.ts",
@@ -119,49 +339,179 @@
       "source_file": "src/services/clinicalCase.service.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_services_clinicalcase_service",
-      "community": 1,
-      "norm_label": "clinicalcase.service.ts"
+      "community": 80,
+      "norm_label": "clinicalcase.service.ts",
+      "id": "src_services_clinicalcase_service"
     },
     {
       "label": "mapRow()",
       "file_type": "code",
       "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L21",
+      "source_location": "L22",
       "_origin": "ast",
-      "id": "src_services_clinicalcase_service_maprow",
-      "community": 1,
-      "norm_label": "maprow()"
+      "community": 80,
+      "norm_label": "maprow()",
+      "id": "src_services_clinicalcase_service_maprow"
     },
     {
       "label": "CaseFilters",
       "file_type": "code",
       "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L63",
+      "source_location": "L64",
       "_origin": "ast",
-      "id": "src_services_clinicalcase_service_casefilters",
-      "community": 1,
-      "norm_label": "casefilters"
+      "community": 80,
+      "norm_label": "casefilters",
+      "id": "src_services_clinicalcase_service_casefilters"
     },
     {
       "label": "applyFilters()",
       "file_type": "code",
       "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L72",
+      "source_location": "L73",
       "_origin": "ast",
-      "id": "src_services_clinicalcase_service_applyfilters",
-      "community": 1,
-      "norm_label": "applyfilters()"
+      "community": 80,
+      "norm_label": "applyfilters()",
+      "id": "src_services_clinicalcase_service_applyfilters"
     },
     {
       "label": "ClinicalCaseService",
       "file_type": "code",
       "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L89",
+      "source_location": "L90",
       "_origin": "ast",
-      "id": "src_services_clinicalcase_service_clinicalcaseservice",
+      "community": 80,
+      "norm_label": "clinicalcaseservice",
+      "id": "src_services_clinicalcase_service_clinicalcaseservice"
+    },
+    {
+      "label": "verify-case-loading.ts",
+      "file_type": "code",
+      "source_file": "scripts/verify-case-loading.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 78,
+      "norm_label": "verify-case-loading.ts",
+      "id": "scripts_verify_case_loading"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/verify-case-loading.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "community": 78,
+      "norm_label": "main()",
+      "id": "scripts_verify_case_loading_main"
+    },
+    {
+      "label": "ClinicalCasesScreen.tsx",
+      "file_type": "code",
+      "source_file": "src/screens/ClinicalCasesScreen.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 79,
+      "norm_label": "clinicalcasesscreen.tsx",
+      "id": "src_screens_clinicalcasesscreen"
+    },
+    {
+      "label": "ClinicalCasesScreen()",
+      "file_type": "code",
+      "source_file": "src/screens/ClinicalCasesScreen.tsx",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 79,
+      "norm_label": "clinicalcasesscreen()",
+      "id": "src_screens_clinicalcasesscreen_clinicalcasesscreen"
+    },
+    {
+      "label": "clinicalCasesData.ts",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L1",
+      "_origin": "ast",
       "community": 1,
-      "norm_label": "clinicalcaseservice"
+      "norm_label": "clinicalcasesdata.ts",
+      "id": "src_data_clinicalcasesdata"
+    },
+    {
+      "label": "ClinicalCase",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "clinicalcase",
+      "id": "src_data_clinicalcasesdata_clinicalcase"
+    },
+    {
+      "label": "SPECIALTIES",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L43",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "specialties",
+      "id": "src_data_clinicalcasesdata_specialties"
+    },
+    {
+      "label": "DISEASES_BY_SPECIALTY",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L63",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "diseases_by_specialty",
+      "id": "src_data_clinicalcasesdata_diseases_by_specialty"
+    },
+    {
+      "label": "INITIAL_CASES",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L229",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "initial_cases",
+      "id": "src_data_clinicalcasesdata_initial_cases"
+    },
+    {
+      "label": "CURRICULUM_UNITS",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L586",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "curriculum_units",
+      "id": "src_data_clinicalcasesdata_curriculum_units"
+    },
+    {
+      "label": "CURRICULUM_TOPICS_REGISTRY",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L605",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "curriculum_topics_registry",
+      "id": "src_data_clinicalcasesdata_curriculum_topics_registry"
+    },
+    {
+      "label": "getCurriculumCasesForUnit()",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L645",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "getcurriculumcasesforunit()",
+      "id": "src_data_clinicalcasesdata_getcurriculumcasesforunit"
+    },
+    {
+      "label": "ALL_CLINICAL_CASES",
+      "file_type": "code",
+      "source_file": "src/data/clinicalCasesData.ts",
+      "source_location": "L1005",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "all_clinical_cases",
+      "id": "src_data_clinicalcasesdata_all_clinical_cases"
     },
     {
       "label": "generate-ai-resources.ts",
@@ -4360,7 +4710,7 @@
       "source_file": "src/contexts/AuthContext.tsx",
       "source_location": "L41",
       "_origin": "ast",
-      "community": 20,
+      "community": 7,
       "norm_label": "authprovider()",
       "community_name": "main.tsx",
       "id": "src_contexts_authcontext_authprovider"
@@ -4437,7 +4787,7 @@
       "source_file": "src/contexts/NotificationContext.tsx",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 22,
+      "community": 20,
       "norm_label": "notificationprovider()",
       "community_name": "NotificationContext.tsx",
       "id": "src_contexts_notificationcontext_notificationprovider"
@@ -4503,7 +4853,7 @@
       "source_file": "src/contexts/ThemeContext.tsx",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 20,
+      "community": 19,
       "norm_label": "themeprovider()",
       "community_name": "main.tsx",
       "id": "src_contexts_themecontext_themeprovider"
@@ -5378,358 +5728,6 @@
       "id": "src_data_clinicalcases_vitamins_nutrition_vitamins_nutrition_cases"
     },
     {
-      "label": "curriculum.ts",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "curriculum.ts",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum"
-    },
-    {
-      "label": "Difficulty",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L19",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "difficulty",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_difficulty"
-    },
-    {
-      "label": "LearningObjective",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L21",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "learningobjective",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_learningobjective"
-    },
-    {
-      "label": "Disease",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L29",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "disease",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_disease"
-    },
-    {
-      "label": "CurriculumUnit",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L36",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "curriculumunit",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_curriculumunit"
-    },
-    {
-      "label": "CurriculumArea",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L49",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "curriculumarea",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_curriculumarea"
-    },
-    {
-      "label": "DISEASES",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L61",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "diseases",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_diseases"
-    },
-    {
-      "label": "CURRICULUM",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L224",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "curriculum",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_curriculum"
-    },
-    {
-      "label": "ALL_UNITS",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L642",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "all_units",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_all_units"
-    },
-    {
-      "label": "ALL_LEARNING_OBJECTIVES",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L643",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "all_learning_objectives",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_all_learning_objectives"
-    },
-    {
-      "label": "getArea()",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L645",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "getarea()",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_getarea"
-    },
-    {
-      "label": "getUnit()",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L649",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "getunit()",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_getunit"
-    },
-    {
-      "label": "getUnitsByArea()",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L653",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "getunitsbyarea()",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_getunitsbyarea"
-    },
-    {
-      "label": "getUnitsByDisease()",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L657",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "getunitsbydisease()",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_getunitsbydisease"
-    },
-    {
-      "label": "getDisease()",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L661",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "getdisease()",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_getdisease"
-    },
-    {
-      "label": "getDiseaseIdByName()",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L665",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "getdiseaseidbyname()",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_getdiseaseidbyname"
-    },
-    {
-      "label": "getLearningObjective()",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L675",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "getlearningobjective()",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_getlearningobjective"
-    },
-    {
-      "label": "getLearningObjectivesForUnit()",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L679",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "getlearningobjectivesforunit()",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_getlearningobjectivesforunit"
-    },
-    {
-      "label": "getUnitsForLearningObjective()",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L683",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "getunitsforlearningobjective()",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_getunitsforlearningobjective"
-    },
-    {
-      "label": "getDiseaseIdsForUnit()",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L688",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "getdiseaseidsforunit()",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_getdiseaseidsforunit"
-    },
-    {
-      "label": "INTEGRATED_UNIT_IDS",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L697",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "integrated_unit_ids",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_integrated_unit_ids"
-    },
-    {
-      "label": "IntegratedUnitId",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L717",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "integratedunitid",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_integratedunitid"
-    },
-    {
-      "label": "getIntegratedUnits()",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L719",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "getintegratedunits()",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_getintegratedunits"
-    },
-    {
-      "label": "isIntegratedUnit()",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L723",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "isintegratedunit()",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_isintegratedunit"
-    },
-    {
-      "label": "INTEGRATED_UNITS_MAP",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L728",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "integrated_units_map",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_integrated_units_map"
-    },
-    {
-      "label": "getIntegratedUnitId()",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L748",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "getintegratedunitid()",
-      "community_name": "index.ts",
-      "id": "src_data_curriculum_getintegratedunitid"
-    },
-    {
-      "label": "EducationModuleUnit",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L757",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "educationmoduleunit",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_educationmoduleunit"
-    },
-    {
-      "label": "EducationModule",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L766",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "educationmodule",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_educationmodule"
-    },
-    {
-      "label": "EDUCATION_MODULES",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L780",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "education_modules",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_education_modules"
-    },
-    {
-      "label": "getEducationModule()",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L790",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "geteducationmodule()",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_geteducationmodule"
-    },
-    {
-      "label": "getModuleUnits()",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L795",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "getmoduleunits()",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_getmoduleunits"
-    },
-    {
-      "label": "NON_CURRICULUM_UNITS",
-      "file_type": "code",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L812",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "non_curriculum_units",
-      "community_name": "curriculum.ts",
-      "id": "src_data_curriculum_non_curriculum_units"
-    },
-    {
       "label": "educationHubData.ts",
       "file_type": "code",
       "source_file": "src/data/educationHubData.ts",
@@ -6021,7 +6019,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L41",
       "_origin": "ast",
-      "community": 6,
+      "community": 2,
       "norm_label": "storage",
       "community_name": "AdminDashboardScreen.tsx",
       "id": "src_lib_firebase_storage"
@@ -7055,7 +7053,7 @@
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "educationhubscreen.tsx",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_educationhubscreen"
@@ -7066,7 +7064,7 @@
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "getrelevantfiles()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_educationhubscreen_getrelevantfiles"
@@ -7077,7 +7075,7 @@
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "buildrichknowledgecontext()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_educationhubscreen_buildrichknowledgecontext"
@@ -7088,7 +7086,7 @@
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "downloadbutton()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_educationhubscreen_downloadbutton"
@@ -7099,7 +7097,7 @@
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L96",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "educationhubscreen()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_educationhubscreen_educationhubscreen"
@@ -7110,7 +7108,7 @@
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L613",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "moduleicon()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_educationhubscreen_moduleicon"
@@ -7121,7 +7119,7 @@
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L623",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "modulecard()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_educationhubscreen_modulecard"
@@ -7132,7 +7130,7 @@
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L685",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "learningworkspace()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_educationhubscreen_learningworkspace"
@@ -7143,7 +7141,7 @@
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L1600",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "workspaceoverview()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_educationhubscreen_workspaceoverview"
@@ -7154,7 +7152,7 @@
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L1825",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "workspacetutor()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_educationhubscreen_workspacetutor"
@@ -7165,7 +7163,7 @@
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L1969",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "workspacenotes()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_educationhubscreen_workspacenotes"
@@ -7176,7 +7174,7 @@
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L2080",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "workspaceflashcards()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_educationhubscreen_workspaceflashcards"
@@ -7187,7 +7185,7 @@
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L2356",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "workspacequizzes()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_educationhubscreen_workspacequizzes"
@@ -7198,7 +7196,7 @@
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L2671",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "workspaceresources()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_educationhubscreen_workspaceresources"
@@ -7374,7 +7372,7 @@
       "source_file": "src/screens/OralPracticeScreen.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "norm_label": "oralpracticescreen.tsx",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_oralpracticescreen"
@@ -7385,7 +7383,7 @@
       "source_file": "src/screens/OralPracticeScreen.tsx",
       "source_location": "L41",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "norm_label": "savedsession",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_oralpracticescreen_savedsession"
@@ -7396,7 +7394,7 @@
       "source_file": "src/screens/OralPracticeScreen.tsx",
       "source_location": "L59",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "norm_label": "oralpracticestats",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_oralpracticescreen_oralpracticestats"
@@ -7407,7 +7405,7 @@
       "source_file": "src/screens/OralPracticeScreen.tsx",
       "source_location": "L69",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "norm_label": "preset_drugs",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_oralpracticescreen_preset_drugs"
@@ -7418,7 +7416,7 @@
       "source_file": "src/screens/OralPracticeScreen.tsx",
       "source_location": "L74",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "norm_label": "preset_diseases",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_oralpracticescreen_preset_diseases"
@@ -7429,7 +7427,7 @@
       "source_file": "src/screens/OralPracticeScreen.tsx",
       "source_location": "L79",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "norm_label": "categories",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_oralpracticescreen_categories"
@@ -7440,7 +7438,7 @@
       "source_file": "src/screens/OralPracticeScreen.tsx",
       "source_location": "L86",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "oralpracticescreen()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_screens_oralpracticescreen_oralpracticescreen"
@@ -7979,7 +7977,7 @@
       "source_file": "src/services/aiContent.service.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "aicontent.service.ts",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_services_aicontent_service"
@@ -7990,7 +7988,7 @@
       "source_file": "src/services/aiContent.service.ts",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "generatedcontent",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_services_aicontent_service_generatedcontent"
@@ -8001,7 +7999,7 @@
       "source_file": "src/services/aiContent.service.ts",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "withtimeout()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_services_aicontent_service_withtimeout"
@@ -8012,7 +8010,7 @@
       "source_file": "src/services/aiContent.service.ts",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "aicontentservice",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_services_aicontent_service_aicontentservice"
@@ -8078,7 +8076,7 @@
       "source_file": "src/services/education.service.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "education.service.ts",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_services_education_service"
@@ -8089,7 +8087,7 @@
       "source_file": "src/services/education.service.ts",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "customunit",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_services_education_service_customunit"
@@ -8100,7 +8098,7 @@
       "source_file": "src/services/education.service.ts",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "subfolder",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_services_education_service_subfolder"
@@ -8111,7 +8109,7 @@
       "source_file": "src/services/education.service.ts",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "savedflashcard",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_services_education_service_savedflashcard"
@@ -8122,7 +8120,7 @@
       "source_file": "src/services/education.service.ts",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "savedquiz",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_services_education_service_savedquiz"
@@ -8133,7 +8131,7 @@
       "source_file": "src/services/education.service.ts",
       "source_location": "L46",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "withtimeout()",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_services_education_service_withtimeout"
@@ -8144,7 +8142,7 @@
       "source_file": "src/services/education.service.ts",
       "source_location": "L64",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "educationservice",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_services_education_service_educationservice"
@@ -9387,7 +9385,7 @@
       "source_file": "src/store/fileStore.ts",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "norm_label": "usefilestore",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_store_filestore_usefilestore"
@@ -12049,7 +12047,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "norm_label": "db",
       "community_name": "EducationHubScreen.tsx",
       "id": "src_lib_firebase_db"
@@ -12067,6 +12065,936 @@
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L643",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_all_learning_objectives",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L642",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_all_units",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L224",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_curriculum",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_curriculumarea",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_curriculumunit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_difficulty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_disease",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_diseases",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L816",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_education_modules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L802",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_educationmodule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L793",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_educationmoduleunit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L645",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_getarea",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L661",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_getdisease",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L665",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_getdiseaseidbyname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L688",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_getdiseaseidsforunit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L826",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_geteducationmodule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L784",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_getintegratedunitid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L719",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_getintegratedunits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L675",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_getlearningobjective",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L679",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_getlearningobjectivesforunit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L831",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_getmoduleunits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L649",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_getunit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L653",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_getunitsbyarea",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L657",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_getunitsbydisease",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L683",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_getunitsforlearningobjective",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L697",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_integrated_unit_ids",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L728",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_integrated_units_map",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L717",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_integratedunitid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L723",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_isintegratedunit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_learningobjective",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L848",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_non_curriculum_units",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L749",
+      "weight": 1.0,
+      "source": "src_data_curriculum",
+      "target": "src_data_curriculum_raw_specialty_map",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/curriculumMapping.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_curriculummapping",
+      "target": "src_data_curriculum"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/knowledgeGraph.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_knowledgegraph",
+      "target": "src_data_curriculum"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_learningobjective"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_disease"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_curriculumunit"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_curriculumarea"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/knowledgeGraph.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_knowledgegraph",
+      "target": "src_data_curriculum_diseases"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_curriculum"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_all_units"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/curriculumMapping.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_curriculummapping",
+      "target": "src_data_curriculum_all_units"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/knowledgeGraph.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_knowledgegraph",
+      "target": "src_data_curriculum_all_units"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_all_learning_objectives"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L838",
+      "weight": 1.0,
+      "source": "src_data_curriculum_getmoduleunits",
+      "target": "src_data_curriculum_getarea",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_getarea"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L689",
+      "weight": 1.0,
+      "source": "src_data_curriculum_getdiseaseidsforunit",
+      "target": "src_data_curriculum_getunit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L720",
+      "weight": 1.0,
+      "source": "src_data_curriculum_getintegratedunits",
+      "target": "src_data_curriculum_getunit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L680",
+      "weight": 1.0,
+      "source": "src_data_curriculum_getlearningobjectivesforunit",
+      "target": "src_data_curriculum_getunit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_getunit"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_getunitsbyarea"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_getunitsbydisease"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/curriculumMapping.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_curriculummapping",
+      "target": "src_data_curriculum_getunitsbydisease"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/skills/knowledgeGraph.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_skills_knowledgegraph",
+      "target": "src_data_curriculum_getunitsbydisease"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_getdisease"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_getdiseaseidbyname"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_getlearningobjective"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_getlearningobjectivesforunit"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_getdiseaseidsforunit"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_integrated_unit_ids"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_integratedunitid"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/curriculum.ts",
+      "source_location": "L833",
+      "weight": 1.0,
+      "source": "src_data_curriculum_getmoduleunits",
+      "target": "src_data_curriculum_getintegratedunits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_getintegratedunits"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_isintegratedunit"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_integrated_units_map"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_getintegratedunitid"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_educationmoduleunit"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/EducationHubScreen.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_screens_educationhubscreen",
+      "target": "src_data_curriculum_educationmoduleunit"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_educationmodule"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/EducationHubScreen.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_screens_educationhubscreen",
+      "target": "src_data_curriculum_educationmodule"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/CurriculumGraph.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_curriculumgraph",
+      "target": "src_data_curriculum_education_modules"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_education_modules"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/AdminDashboardScreen.tsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_screens_admindashboardscreen",
+      "target": "src_data_curriculum_education_modules"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/EducationHubScreen.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_screens_educationhubscreen",
+      "target": "src_data_curriculum_education_modules"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_geteducationmodule"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/CurriculumGraph.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_curriculumgraph",
+      "target": "src_data_curriculum_getmoduleunits"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/CurriculumGraph.tsx",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "src_components_curriculumgraph_curriculumgraph",
+      "target": "src_data_curriculum_getmoduleunits"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/educationHubData.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_educationhubdata",
+      "target": "src_data_curriculum_getmoduleunits"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/EducationHubScreen.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_screens_educationhubscreen",
+      "target": "src_data_curriculum_getmoduleunits"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/screens/EducationHubScreen.tsx",
+      "source_location": "L220",
+      "weight": 1.0,
+      "source": "src_screens_educationhubscreen_educationhubscreen",
+      "target": "src_data_curriculum_getmoduleunits"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/screens/EducationHubScreen.tsx",
+      "source_location": "L674",
+      "weight": 1.0,
+      "source": "src_screens_educationhubscreen_modulecard",
+      "target": "src_data_curriculum_getmoduleunits"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_services_clinicalcase_service",
+      "target": "src_services_clinicalcase_service_applyfilters"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_services_clinicalcase_service",
+      "target": "src_services_clinicalcase_service_casefilters"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L90",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_services_clinicalcase_service",
+      "target": "src_services_clinicalcase_service_clinicalcaseservice"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/clinicalCase.service.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_services_clinicalcase_service",
+      "target": "src_services_clinicalcase_service_maprow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/verify-case-loading.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_verify_case_loading",
+      "target": "scripts_verify_case_loading_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/screens/ClinicalCasesScreen.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_screens_clinicalcasesscreen",
+      "target": "src_screens_clinicalcasesscreen_clinicalcasesscreen"
+    },
     {
       "relation": "imports_from",
       "context": "import",
@@ -12304,9 +13232,9 @@
       "source_file": "src/data/clinicalCasesData.ts",
       "source_location": "L1005",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_all_clinical_cases",
-      "confidence_score": 1.0
+      "target": "src_data_clinicalcasesdata_all_clinical_cases"
     },
     {
       "relation": "contains",
@@ -12314,9 +13242,9 @@
       "source_file": "src/data/clinicalCasesData.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_clinicalcase",
-      "confidence_score": 1.0
+      "target": "src_data_clinicalcasesdata_clinicalcase"
     },
     {
       "relation": "contains",
@@ -12324,9 +13252,9 @@
       "source_file": "src/data/clinicalCasesData.ts",
       "source_location": "L605",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_curriculum_topics_registry",
-      "confidence_score": 1.0
+      "target": "src_data_clinicalcasesdata_curriculum_topics_registry"
     },
     {
       "relation": "contains",
@@ -12334,9 +13262,9 @@
       "source_file": "src/data/clinicalCasesData.ts",
       "source_location": "L586",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_curriculum_units",
-      "confidence_score": 1.0
+      "target": "src_data_clinicalcasesdata_curriculum_units"
     },
     {
       "relation": "contains",
@@ -12344,9 +13272,9 @@
       "source_file": "src/data/clinicalCasesData.ts",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_diseases_by_specialty",
-      "confidence_score": 1.0
+      "target": "src_data_clinicalcasesdata_diseases_by_specialty"
     },
     {
       "relation": "contains",
@@ -12354,9 +13282,9 @@
       "source_file": "src/data/clinicalCasesData.ts",
       "source_location": "L645",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_getcurriculumcasesforunit",
-      "confidence_score": 1.0
+      "target": "src_data_clinicalcasesdata_getcurriculumcasesforunit"
     },
     {
       "relation": "contains",
@@ -12364,9 +13292,9 @@
       "source_file": "src/data/clinicalCasesData.ts",
       "source_location": "L229",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_initial_cases",
-      "confidence_score": 1.0
+      "target": "src_data_clinicalcasesdata_initial_cases"
     },
     {
       "relation": "contains",
@@ -12374,9 +13302,9 @@
       "source_file": "src/data/clinicalCasesData.ts",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_clinicalcasesdata",
-      "target": "src_data_clinicalcasesdata_specialties",
-      "confidence_score": 1.0
+      "target": "src_data_clinicalcasesdata_specialties"
     },
     {
       "relation": "imports_from",
@@ -12393,34 +13321,12 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_data_clinicalcasesdata",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/screens/EducationHubScreen.tsx",
       "source_location": "L15",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_screens_educationhubscreen",
       "target": "src_data_clinicalcasesdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "src_services_clinicalcase_service",
-      "target": "src_data_clinicalcasesdata",
-      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -12690,28 +13596,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_data_clinicalcasesdata_clinicalcase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "src_services_clinicalcase_service",
-      "target": "src_data_clinicalcasesdata_clinicalcase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/skills/types.ts",
       "source_location": "L6",
       "weight": 1.0,
@@ -12740,17 +13624,6 @@
       "confidence_score": 1.0,
       "source": "src_skills_types_skillcontext",
       "target": "src_data_clinicalcasesdata_clinicalcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_data_clinicalcasesdata_specialties",
-      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -12872,111 +13745,6 @@
       "confidence_score": 1.0,
       "source": "scripts_seedexistingdb",
       "target": "src_data_clinicalcasesdata_all_clinical_cases"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_data_clinicalcasesdata_all_clinical_cases",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "src_services_clinicalcase_service",
-      "target": "src_data_clinicalcasesdata_all_clinical_cases",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_screens_clinicalcasesscreen_clinicalcasesscreen",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_services_clinicalcase_service",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "src_screens_clinicalcasesscreen",
-      "target": "src_services_clinicalcase_service_clinicalcaseservice",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/screens/ClinicalCasesScreen.tsx",
-      "source_location": "L29",
-      "weight": 1.0,
-      "source": "src_screens_clinicalcasesscreen_clinicalcasesscreen",
-      "target": "src_services_clinicalcase_service_clinicalcaseservice"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L72",
-      "weight": 1.0,
-      "source": "src_services_clinicalcase_service",
-      "target": "src_services_clinicalcase_service_applyfilters",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L63",
-      "weight": 1.0,
-      "source": "src_services_clinicalcase_service",
-      "target": "src_services_clinicalcase_service_casefilters",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L89",
-      "weight": 1.0,
-      "source": "src_services_clinicalcase_service",
-      "target": "src_services_clinicalcase_service_clinicalcaseservice",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/clinicalCase.service.ts",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "src_services_clinicalcase_service",
-      "target": "src_services_clinicalcase_service_maprow",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -18014,28 +18782,6 @@
       "target": "src_components_curriculumgraph_specialty_to_units"
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/CurriculumGraph.tsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_components_curriculumgraph",
-      "target": "src_data_curriculum_education_modules"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/CurriculumGraph.tsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_components_curriculumgraph",
-      "target": "src_data_curriculum_getmoduleunits"
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -18056,17 +18802,6 @@
       "confidence_score": 1.0,
       "source": "src_screens_educationhubscreen",
       "target": "src_components_curriculumgraph"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/CurriculumGraph.tsx",
-      "source_location": "L124",
-      "weight": 1.0,
-      "source": "src_components_curriculumgraph_curriculumgraph",
-      "target": "src_data_curriculum_getmoduleunits"
     },
     {
       "relation": "contains",
@@ -21211,888 +21946,6 @@
       "confidence_score": 1.0,
       "source": "src_data_clinicalcases_vitamins_nutrition",
       "target": "src_data_clinicalcases_vitamins_nutrition_vitamins_nutrition_cases"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L643",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_all_learning_objectives"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L642",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_all_units"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L224",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_curriculum"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L49",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_curriculumarea"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L36",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_curriculumunit"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_difficulty"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L29",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_disease"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L61",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_diseases"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L780",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_education_modules"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L766",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_educationmodule"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L757",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_educationmoduleunit"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L645",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_getarea"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L661",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_getdisease"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L665",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_getdiseaseidbyname"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L688",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_getdiseaseidsforunit"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L790",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_geteducationmodule"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L748",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_getintegratedunitid"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L719",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_getintegratedunits"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L675",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_getlearningobjective"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L679",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_getlearningobjectivesforunit"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L795",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_getmoduleunits"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L649",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_getunit"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L653",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_getunitsbyarea"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L657",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_getunitsbydisease"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L683",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_getunitsforlearningobjective"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L697",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_integrated_unit_ids"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L728",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_integrated_units_map"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L717",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_integratedunitid"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L723",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_isintegratedunit"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_learningobjective"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L812",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum",
-      "target": "src_data_curriculum_non_curriculum_units"
-    },
-    {
-      "relation": "re_exports",
-      "context": "export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/curriculumMapping.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_curriculummapping",
-      "target": "src_data_curriculum"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/knowledgeGraph.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_knowledgegraph",
-      "target": "src_data_curriculum"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_learningobjective"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_disease"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_curriculumunit"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_curriculumarea"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/knowledgeGraph.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_knowledgegraph",
-      "target": "src_data_curriculum_diseases"
-    },
-    {
-      "relation": "references",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L646",
-      "weight": 1.0,
-      "source": "src_data_curriculum_getarea",
-      "target": "src_data_curriculum_curriculum"
-    },
-    {
-      "relation": "references",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L654",
-      "weight": 1.0,
-      "source": "src_data_curriculum_getunitsbyarea",
-      "target": "src_data_curriculum_curriculum"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_curriculum"
-    },
-    {
-      "relation": "references",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L650",
-      "weight": 1.0,
-      "source": "src_data_curriculum_getunit",
-      "target": "src_data_curriculum_all_units"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_all_units"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/curriculumMapping.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_curriculummapping",
-      "target": "src_data_curriculum_all_units"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/knowledgeGraph.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_knowledgegraph",
-      "target": "src_data_curriculum_all_units"
-    },
-    {
-      "relation": "references",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L676",
-      "weight": 1.0,
-      "source": "src_data_curriculum_getlearningobjective",
-      "target": "src_data_curriculum_all_learning_objectives"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_all_learning_objectives"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L802",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum_getmoduleunits",
-      "target": "src_data_curriculum_getarea"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_getarea"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L689",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum_getdiseaseidsforunit",
-      "target": "src_data_curriculum_getunit"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L720",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum_getintegratedunits",
-      "target": "src_data_curriculum_getunit"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L680",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum_getlearningobjectivesforunit",
-      "target": "src_data_curriculum_getunit"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_getunit"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_getunitsbyarea"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_getunitsbydisease"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/curriculumMapping.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_curriculummapping",
-      "target": "src_data_curriculum_getunitsbydisease"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/skills/knowledgeGraph.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_skills_knowledgegraph",
-      "target": "src_data_curriculum_getunitsbydisease"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_getdisease"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_getdiseaseidbyname"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_getlearningobjective"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_getlearningobjectivesforunit"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_getdiseaseidsforunit"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_integrated_unit_ids"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_integratedunitid"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L797",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_curriculum_getmoduleunits",
-      "target": "src_data_curriculum_getintegratedunits"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_getintegratedunits"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_isintegratedunit"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_integrated_units_map"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_getintegratedunitid"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_educationmoduleunit"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/EducationHubScreen.tsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_educationhubscreen",
-      "target": "src_data_curriculum_educationmoduleunit"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_educationmodule"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/EducationHubScreen.tsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_educationhubscreen",
-      "target": "src_data_curriculum_educationmodule"
-    },
-    {
-      "relation": "references",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/data/curriculum.ts",
-      "source_location": "L791",
-      "weight": 1.0,
-      "source": "src_data_curriculum_geteducationmodule",
-      "target": "src_data_curriculum_education_modules"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_education_modules"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/AdminDashboardScreen.tsx",
-      "source_location": "L39",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_admindashboardscreen",
-      "target": "src_data_curriculum_education_modules"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/EducationHubScreen.tsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_educationhubscreen",
-      "target": "src_data_curriculum_education_modules"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_geteducationmodule"
-    },
-    {
-      "relation": "re_exports",
-      "context": "re-export",
-      "confidence": "EXTRACTED",
-      "source_file": "src/data/educationHubData.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_data_educationhubdata",
-      "target": "src_data_curriculum_getmoduleunits"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/screens/EducationHubScreen.tsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_screens_educationhubscreen",
-      "target": "src_data_curriculum_getmoduleunits"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/screens/EducationHubScreen.tsx",
-      "source_location": "L220",
-      "weight": 1.0,
-      "source": "src_screens_educationhubscreen_educationhubscreen",
-      "target": "src_data_curriculum_getmoduleunits"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/screens/EducationHubScreen.tsx",
-      "source_location": "L674",
-      "weight": 1.0,
-      "source": "src_screens_educationhubscreen_modulecard",
-      "target": "src_data_curriculum_getmoduleunits"
     },
     {
       "relation": "imports_from",
@@ -30744,5 +30597,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "fcf4d99bce531aa3a820ff11a559712592ff3229"
+  "built_at_commit": "14f5948b1434b47194ea78507f14ad9ad2415299"
 }

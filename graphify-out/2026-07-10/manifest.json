@@ -65,7 +65,7 @@
     "semantic_hash": "1db751195e69ba428c95c1cb505c84ac"
   },
   "scripts/generate-ai-resources.ts": {
-    "mtime": 1783702323.7846591,
+    "mtime": 1783711238.4052422,
     "ast_hash": "4eea6c7d2541f3e15ffc615ec04089a3",
     "semantic_hash": "4eea6c7d2541f3e15ffc615ec04089a3"
   },
@@ -90,7 +90,7 @@
     "semantic_hash": "f64bb8fcf29327c9a1eb28c3f319e61e"
   },
   "scripts/seed-clinical-cases.ts": {
-    "mtime": 1783700862.0306623,
+    "mtime": 1783711238.2505107,
     "ast_hash": "7c091057a85ef15745e36b5dea441355",
     "semantic_hash": "7c091057a85ef15745e36b5dea441355"
   },
@@ -100,7 +100,7 @@
     "semantic_hash": "489031029d1ff40f698ddfa757a1d460"
   },
   "scripts/sync-knowledge-engine.ts": {
-    "mtime": 1783701335.5032036,
+    "mtime": 1783711238.3492143,
     "ast_hash": "d8517e723a0b38d3a5f761f3e504b762",
     "semantic_hash": "d8517e723a0b38d3a5f761f3e504b762"
   },
@@ -180,7 +180,7 @@
     "semantic_hash": "5ba92abbd8d8e67d62519f2b22e88e43"
   },
   "scripts/validate-population.ts": {
-    "mtime": 1783700862.0476582,
+    "mtime": 1783711238.4782205,
     "ast_hash": "90c4d122e40a8942d7d7f4ad2a4e0fd4",
     "semantic_hash": "90c4d122e40a8942d7d7f4ad2a4e0fd4"
   },
@@ -340,7 +340,7 @@
     "semantic_hash": "c046e73903e80d7398c4c829d79f1dfb"
   },
   "src/data/clinicalCasesData.ts": {
-    "mtime": 1783703498.3995419,
+    "mtime": 1783709939.9531038,
     "ast_hash": "d6bbd1dc5496106255dd58a7df9fcf88",
     "semantic_hash": "d6bbd1dc5496106255dd58a7df9fcf88"
   },
@@ -540,9 +540,9 @@
     "semantic_hash": "ce4ecfb84bfb8e480927e3a723d7dfe3"
   },
   "src/screens/ClinicalCasesScreen.tsx": {
-    "mtime": 1783704314.8614745,
-    "ast_hash": "81821154196a238848a33cfbea7dcff3",
-    "semantic_hash": "81821154196a238848a33cfbea7dcff3"
+    "mtime": 1783710424.4933555,
+    "ast_hash": "43f0117c3f9416afc5e8520e10896306",
+    "semantic_hash": ""
   },
   "src/screens/DashboardScreen.tsx": {
     "mtime": 1783681230.6898966,
@@ -635,9 +635,9 @@
     "semantic_hash": "24516ac61f23946a99e3351c4dd6813a"
   },
   "src/services/clinicalCase.service.ts": {
-    "mtime": 1783703522.8767316,
-    "ast_hash": "f6c1956650abf95ba5483b4b4847f9bb",
-    "semantic_hash": "f6c1956650abf95ba5483b4b4847f9bb"
+    "mtime": 1783711484.3568268,
+    "ast_hash": "644335ec61aeb81c7b86ace66be74576",
+    "semantic_hash": ""
   },
   "src/services/education.service.ts": {
     "mtime": 1783595611.3193169,
@@ -800,7 +800,7 @@
     "semantic_hash": "fc5e9e258ead4e1853706b7f08a7980a"
   },
   "src/skills/types.ts": {
-    "mtime": 1783703799.0837414,
+    "mtime": 1783709938.6598213,
     "ast_hash": "de69d338f8ebe6360e15566ecab58338",
     "semantic_hash": "de69d338f8ebe6360e15566ecab58338"
   },
@@ -3242,6 +3242,21 @@
   "src/assets/images/clinova_logo_1782414107621.jpg": {
     "mtime": 1783537197.0,
     "ast_hash": "be69ecc3df9dd814149a05be602d6571",
+    "semantic_hash": ""
+  },
+  "scripts/verify-case-loading.ts": {
+    "mtime": 1783710392.6970446,
+    "ast_hash": "7b9c98eee9c099564f4fa527a64f096f",
+    "semantic_hash": ""
+  },
+  "scripts/verify-mapping.ts": {
+    "mtime": 1783710998.8795168,
+    "ast_hash": "35b41aa93a127d19d7e732c0e9ebd747",
+    "semantic_hash": ""
+  },
+  "src/lib/supabase.node.ts": {
+    "mtime": 1783711144.4130616,
+    "ast_hash": "9e0097b1a84f503434779818eb367f79",
     "semantic_hash": ""
   }
 }

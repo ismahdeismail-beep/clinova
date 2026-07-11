@@ -734,10 +734,11 @@ export default function ClinicalCasesScreen() {
             </div>
           )}
 
-          {/* Level 3: Cases & Disease Brain Tree */}
-          {selectedSpecialty && selectedDisease && !selectedCase && (
-            <div className="animate-in fade-in slide-in-from-right-4 duration-300">
-              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+              {/* Level 3: Cases & Disease Brain Tree */}
+              {selectedSpecialty && selectedDisease && !selectedCase && (
+                <div className="animate-in fade-in slide-in-from-right-4 duration-300">
+                  {console.log('[ClinicalCasesScreen] Rendering casesForSelectedDisease:', casesForSelectedDisease)}
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
                 <div className="flex items-center gap-3">
                   <button onClick={handleBackToDiseases} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors">
                     <ChevronLeft size={18} className="text-[var(--text)]" />

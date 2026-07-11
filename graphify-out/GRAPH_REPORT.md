@@ -1,16 +1,16 @@
 # Graph Report - clinova-main  (2026-07-10)
 
 ## Corpus Check
-- 294 files · ~1,121,459 words
+- 298 files · ~1,121,892 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1098 nodes · 1761 edges · 260 communities (37 shown, 223 thin omitted)
+- 1101 nodes · 1748 edges · 262 communities (38 shown, 224 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 18 edges (avg confidence: 0.75)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fcf4d99b`
+- Built from commit: `14f5948b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -23,7 +23,6 @@
 - devDependencies
 - AdminDashboardScreen.tsx
 - server.ts
-- EducationHubScreen.tsx
 - caseTemplates.ts
 - TopBar.tsx
 - App.tsx
@@ -88,6 +87,7 @@
 - BaseException
 - Bool
 - @vitejs/plugin-react
+- clinicalCase.service.ts
 - constant
 - DiGraph
 - double
@@ -278,7 +278,7 @@
 4. `useAuth()` - 30 edges
 5. `SkillContext` - 30 edges
 6. `SkillResponse` - 28 edges
-7. `ClinicalCase` - 26 edges
+7. `ClinicalCase` - 24 edges
 8. `useFileStore` - 21 edges
 9. `compilerOptions` - 18 edges
 10. `ClinicalCaseTemplate` - 17 edges
@@ -298,43 +298,39 @@
 ## Import Cycles
 - None detected.
 
-## Communities (260 total, 223 thin omitted)
+## Communities (262 total, 224 thin omitted)
 
 ### Community 0 - "types.ts"
 Cohesion: 0.07
 Nodes (57): LIBRARY, LibraryResource, searchLibrary(), addGatewayLog(), AIProviderStatus, executeProvider(), GatewayLog, generateContentWithFallback() (+49 more)
 
 ### Community 1 - "index.ts"
-Cohesion: 0.07
-Nodes (39): inferUnitId(), main(), supabase, toSeedId(), UNIT_IDS, validateCase(), buildBody(), esc() (+31 more)
+Cohesion: 0.08
+Nodes (36): inferUnitId(), main(), supabase, toSeedId(), UNIT_IDS, validateCase(), buildBody(), esc() (+28 more)
 
 ### Community 2 - "storage.service.ts"
 Cohesion: 0.05
-Nodes (46): FileList(), FileListProps, formatDate(), formatSize(), getFileIcon(), MIME_ICONS, FileUploader(), FileUploaderProps (+38 more)
+Nodes (47): FileList(), FileListProps, formatDate(), formatSize(), getFileIcon(), MIME_ICONS, FileUploader(), FileUploaderProps (+39 more)
 
 ### Community 3 - "ClinicalAssistantScreen.tsx"
 Cohesion: 0.06
 Nodes (38): ChatSessionList(), Props, SessionItem(), getMonographCached(), ChatMessage, ChatSession, ClinovaDB, dbPromise (+30 more)
 
 ### Community 4 - "curriculum.ts"
-Cohesion: 0.10
-Nodes (36): CurriculumGraph(), GraphLink, GraphNode, SPECIALTY_TO_UNITS, DISEASES_BY_SPECIALTY, INITIAL_CASES, ALL_LEARNING_OBJECTIVES, ALL_UNITS (+28 more)
+Cohesion: 0.06
+Nodes (55): CurriculumGraph(), GraphLink, GraphNode, SPECIALTY_TO_UNITS, DISEASES_BY_SPECIALTY, INITIAL_CASES, ALL_LEARNING_OBJECTIVES, ALL_UNITS (+47 more)
 
 ### Community 5 - "devDependencies"
 Cohesion: 0.04
 Nodes (47): autoprefixer, esbuild, devDependencies, autoprefixer, esbuild, sharp, tailwindcss, tsx (+39 more)
 
 ### Community 6 - "AdminDashboardScreen.tsx"
-Cohesion: 0.08
-Nodes (35): jspdf, jspdf, Alert, evaluatePriority(), LabResult, Patient, PatientQuickSummary(), PatientQuickSummaryProps (+27 more)
+Cohesion: 0.07
+Nodes (40): jspdf, jspdf, Alert, evaluatePriority(), LabResult, Patient, PatientQuickSummary(), PatientQuickSummaryProps (+32 more)
 
 ### Community 7 - "server.ts"
-Cohesion: 0.07
-Nodes (30): app, safeJsonParse(), startServer(), upload, ApiError, ApiResponse, ErrorHandler, AcademicSkill (+22 more)
-
-### Community 8 - "EducationHubScreen.tsx"
-Cohesion: 0.12
-Nodes (25): db, buildRichKnowledgeContext(), EducationHubScreen(), getRelevantFiles(), LearningWorkspace(), ModuleCard(), WorkspaceFlashcards(), WorkspaceNotes() (+17 more)
+Cohesion: 0.06
+Nodes (32): app, safeJsonParse(), startServer(), upload, AuthProvider(), ApiError, ApiResponse, ErrorHandler (+24 more)
 
 ### Community 9 - "caseTemplates.ts"
 Cohesion: 0.10
@@ -377,20 +373,20 @@ Cohesion: 0.20
 Nodes (6): HANDOVER_DATA, ShiftHandoverModal(), ShiftHandoverModalProps, ALL_CLINICAL_SYSTEMS, DashboardScreen(), STUDY_TRACKS
 
 ### Community 19 - "ThemeContext.tsx"
-Cohesion: 0.27
-Nodes (8): Action, CommandPalette(), ThemeToggle(), Theme, ThemeContext, ThemeContextType, useTheme(), SettingsScreen()
+Cohesion: 0.24
+Nodes (9): Action, CommandPalette(), ThemeToggle(), Theme, ThemeContext, ThemeContextType, ThemeProvider(), useTheme() (+1 more)
 
 ### Community 20 - "main.tsx"
-Cohesion: 0.20
-Nodes (6): ErrorBoundary, Props, State, AuthProvider(), ThemeProvider(), updateSW
+Cohesion: 0.22
+Nodes (5): ErrorBoundary, Props, State, NotificationProvider(), updateSW
 
 ### Community 21 - "supabaseSync.ts"
 Cohesion: 0.47
 Nodes (9): checkAuthError(), initSupabaseSync(), originalGetItem, originalRemoveItem, originalSetItem, pullFromSupabase(), removeFromSupabase(), SYNCABLE_KEYS (+1 more)
 
 ### Community 22 - "NotificationContext.tsx"
-Cohesion: 0.24
-Nodes (8): TopNavigation(), AppNotification, DEFAULT_NOTIFICATIONS, NotificationContext, NotificationContextType, NotificationProvider(), useNotifications(), NotificationsScreen()
+Cohesion: 0.28
+Nodes (7): TopNavigation(), AppNotification, DEFAULT_NOTIFICATIONS, NotificationContext, NotificationContextType, useNotifications(), NotificationsScreen()
 
 ### Community 23 - "dependencies"
 Cohesion: 0.22
@@ -429,24 +425,24 @@ Cohesion: 0.47
 Nodes (9): batchUpsert(), main(), supabase, syncCaseNodes(), syncDiseaseMonographs(), syncDiseaseNodes(), syncDiseases(), syncRelationships() (+1 more)
 
 ## Knowledge Gaps
-- **291 isolated node(s):** `CURRICULUM_UNITS`, `CURRICULUM_TOPICS_REGISTRY`, `CaseFilters`, `supabase`, `CaseRecord` (+286 more)
+- **294 isolated node(s):** `Difficulty`, `RAW_SPECIALTY_MAP`, `NON_CURRICULUM_UNITS`, `CaseFilters`, `ClinicalCaseService` (+289 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **223 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **224 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `dependencies` to `devDependencies`, `AdminDashboardScreen.tsx`, `browser-image-compression`, `d3`, `docx`, `dotenv`, `express`, `firebase`, `@google/genai`, `html2canvas`, `idb`, `clsx`, `motion`, `multer`, `react`, `react-markdown`, `recharts`, `@supabase/supabase-js`, `supermemory`, `tailwind-merge`, `@tailwindcss/vite`, `@types/d3`, `vite`, `@xyflow/react`, `zod`, `zustand`, `@vitejs/plugin-react`?**
-  _High betweenness centrality (0.124) - this node is a cross-community bridge._
-- **Why does `jspdf` connect `AdminDashboardScreen.tsx` to `EducationHubScreen.tsx`, `DashboardScreen.tsx`, `ClinicalAssistantScreen.tsx`, `dependencies`?**
-  _High betweenness centrality (0.117) - this node is a cross-community bridge._
-- **Why does `LearningWorkspace()` connect `EducationHubScreen.tsx` to `AdminDashboardScreen.tsx`, `useAuth`?**
-  _High betweenness centrality (0.055) - this node is a cross-community bridge._
-- **What connects `CURRICULUM_UNITS`, `CURRICULUM_TOPICS_REGISTRY`, `CaseFilters` to the rest of the system?**
-  _291 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.119) - this node is a cross-community bridge._
+- **Why does `jspdf` connect `AdminDashboardScreen.tsx` to `DashboardScreen.tsx`, `ClinicalAssistantScreen.tsx`, `curriculum.ts`, `dependencies`?**
+  _High betweenness centrality (0.111) - this node is a cross-community bridge._
+- **Why does `useAuth()` connect `useAuth` to `storage.service.ts`, `ClinicalAssistantScreen.tsx`, `curriculum.ts`, `AdminDashboardScreen.tsx`, `server.ts`, `App.tsx`, `DashboardScreen.tsx`, `ThemeContext.tsx`, `NotificationContext.tsx`?**
+  _High betweenness centrality (0.061) - this node is a cross-community bridge._
+- **What connects `Difficulty`, `RAW_SPECIALTY_MAP`, `NON_CURRICULUM_UNITS` to the rest of the system?**
+  _294 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `types.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.06702605570530099 - nodes in this community are weakly interconnected._
 - **Should `index.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.06994047619047619 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07894736842105263 - nodes in this community are weakly interconnected._
 - **Should `storage.service.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.05336951605608322 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05223880597014925 - nodes in this community are weakly interconnected._

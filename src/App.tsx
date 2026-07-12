@@ -43,7 +43,8 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
       <header className="pointer-events-auto flex items-center justify-between bg-transparent h-16 w-full px-4 lg:px-8">
         <div className="flex items-center gap-4 shrink-0">
           <button 
-            className="md:hidden p-2 text-[var(--text-muted)] hover:text-[var(--text)] transition-colors rounded-full"
+            aria-label="Open menu"
+            className="md:hidden p-2 text-[var(--text-muted)] hover:text-[var(--text)] transition-colors rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)]"
             onClick={onMenuClick}
           >
             <Menu size={20} />
@@ -58,19 +59,21 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
 
         <div className="flex-1 px-4 lg:px-8 hidden md:flex justify-center max-w-2xl">
           <div className="relative group w-full">
-            <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)] group-focus-within:text-[var(--primary)] transition-colors" />
-            <div 
-              className="w-full bg-[var(--surface-dim)]/50 border border-[var(--border)] text-[var(--text-muted)] flex items-center justify-between cursor-pointer hover:border-[var(--primary)] transition-all duration-300 backdrop-blur-sm pl-10 pr-4 py-2 rounded-full text-sm"
+            <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)] group-focus-within:text-[var(--primary)] transition-colors pointer-events-none" />
+            <button 
+              type="button"
+              aria-label="Open search"
+              className="w-full bg-[var(--surface-dim)]/50 border border-[var(--border)] text-[var(--text-muted)] flex items-center justify-between cursor-pointer hover:border-[var(--primary)] transition-all duration-300 backdrop-blur-sm pl-10 pr-4 py-2 rounded-full text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)]"
               onClick={() => {
                 window.dispatchEvent(new Event('open-command-palette'));
               }}
             >
               <span className="truncate">Search Kenya Drug Index, Guidelines...</span>
-              <div className="flex items-center gap-1 shrink-0 ml-2">
+              <span className="flex items-center gap-1 shrink-0 ml-2">
                 <kbd className="hidden sm:inline-block bg-[var(--surface)] border border-[var(--border)] rounded px-1.5 py-0.5 text-[10px] font-mono font-medium text-[var(--text-muted)]">Ctrl</kbd>
                 <kbd className="hidden sm:inline-block bg-[var(--surface)] border border-[var(--border)] rounded px-1.5 py-0.5 text-[10px] font-mono font-medium text-[var(--text-muted)]">K</kbd>
-              </div>
-            </div>
+              </span>
+            </button>
           </div>
         </div>
 

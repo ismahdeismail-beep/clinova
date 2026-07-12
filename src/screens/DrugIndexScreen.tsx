@@ -15,6 +15,7 @@ import { useSearchParams } from 'react-router-dom';
 import { DrugMonographService, type DrugMonograph } from '../services/drugMonograph.service';
 import { monographToMarkdown } from '../lib/monographToMarkdown';
 import SavedMonographsPanel, { SaveMonographButton } from '../components/SavedMonographsPanel';
+import { BUNDLED_DRUGS, getCategoryForDrug } from '../data/drugIndexData';
 
 interface QuickDrug {
   name: string;
@@ -101,6 +102,8 @@ export default function DrugIndexScreen() {
   const [monographKey, setMonographKey] = useState<string>('');
   const [currentMonographId, setCurrentMonographId] = useState<string | null>(null);
 
+  const [selectedDrugName, setSelectedDrugName] = useState<string | null>(null);
+
   // Alpha filter + recent search state
   const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
   const searchRef = useRef<HTMLDivElement>(null);
@@ -111,8 +114,8 @@ export default function DrugIndexScreen() {
   });
   const [showSearchDropdown, setShowSearchDropdown] = useState(false);
 
-  // Seeded Supabase catalog (canonical source of monographs, mirrored from clinical cases pattern)
-  const [catalog, setCatalog] = useState<DrugMonograph[]>([]);
+  // Seeded catalog: bundled data first, Supabase enhances it (mirrored from clinical cases pattern)
+  const [catalog, setCatalog] = useState<DrugMonograph[]>(BUNDLED_DRUGS);
   const [catalogLoading, setCatalogLoading] = useState(false);
 
   // Tab 2: Interaction Checker State
@@ -236,15 +239,21 @@ export default function DrugIndexScreen() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Load the full seeded monograph catalog from Supabase so monographs reflect in the app
+  // Load Supabase monographs as an enhancement on top of the bundled catalog
   useEffect(() => {
     const loadCatalog = async () => {
       setCatalogLoading(true);
       try {
         const list = await DrugMonographService.getAll();
-        setCatalog(list);
+        if (list.length > 0) {
+          const bundledIds = new Set(BUNDLED_DRUGS.map(d => d.id));
+          const newItems = list.filter(d => !bundledIds.has(d.id));
+          if (newItems.length > 0) {
+            setCatalog(prev => [...prev, ...newItems]);
+          }
+        }
       } catch (err) {
-        console.warn('[DrugIndex] Failed to load seeded monographs:', err);
+        console.warn('[DrugIndex] Failed to load Supabase monographs (bundled data active):', err);
       } finally {
         setCatalogLoading(false);
       }
@@ -335,6 +344,7 @@ export default function DrugIndexScreen() {
     setMonograph(monographToMarkdown(m));
     setMonographKey((m.name || m.generic_name || '').toLowerCase());
     setCurrentMonographId(m.id);
+    setSelectedDrugName(m.name || m.generic_name || null);
     setSelectedCategory(null);
     setError(null);
     if (m.name) { saveDrugSearch(m.name); saveRecentSearch(m.name); }
@@ -345,6 +355,7 @@ export default function DrugIndexScreen() {
     setError(null);
     setMonograph(null);
     setCurrentMonographId(null);
+    setSelectedDrugName(null);
     try {
       const searchName = query || categoryName || '';
 
@@ -370,6 +381,7 @@ export default function DrugIndexScreen() {
           setMonograph(monographToMarkdown(seeded));
           setMonographKey(searchName.toLowerCase());
           setCurrentMonographId(seeded.id);
+          setSelectedDrugName(seeded.name || searchName);
           if (query) saveDrugSearch(query);
           setIsLoading(false);
           return;
@@ -380,6 +392,7 @@ export default function DrugIndexScreen() {
       const entry = await getMonographCached(query, categoryName);
       setMonograph(entry.content);
       setMonographKey(entry.key);
+      setSelectedDrugName(query || categoryName || null);
 
       // Look up Supabase monograph for save button (re-check in case data arrived)
       if (searchName) {
@@ -422,7 +435,7 @@ export default function DrugIndexScreen() {
     setMonograph(null);
     setCurrentMonographId(null);
     setMonographKey('');
-    setError(null);
+    setSelectedDrugName(null);
   };
 
   const handleCategoryClick = (category: string) => {
@@ -633,6 +646,34 @@ export default function DrugIndexScreen() {
             )}
           </div>
 
+          {/* Breadcrumb Navigation */}
+          <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] overflow-x-auto pb-3 whitespace-nowrap">
+            <span className={`${!selectedCategory && !monograph ? 'text-[var(--text)] font-bold' : 'hover:text-[var(--primary)] transition-colors cursor-pointer'}`}
+              onClick={!selectedCategory && !monograph ? undefined : handleBackToCategories}>
+              Drug Index
+            </span>
+            {selectedCategory && !monograph && (
+              <>
+                <ChevronRight size={14} />
+                <span className="text-[var(--text)] font-bold">{selectedCategory}</span>
+              </>
+            )}
+            {selectedCategory && monograph && (
+              <>
+                <ChevronRight size={14} />
+                <button onClick={() => { setMonograph(null); setCurrentMonographId(null); setMonographKey(''); }} className="hover:text-[var(--primary)] transition-colors">
+                  {selectedCategory}
+                </button>
+              </>
+            )}
+            {selectedDrugName && monograph && (
+              <>
+                <ChevronRight size={14} />
+                <span className="text-[var(--text)] font-bold truncate max-w-[200px]">{selectedDrugName}</span>
+              </>
+            )}
+          </div>
+
           {/* Main Content */}
           <div className="min-h-[400px]">
               {isLoading ? (
@@ -678,7 +719,7 @@ export default function DrugIndexScreen() {
 
                     <div className="flex items-center gap-2 shrink-0">
                       <button
-                        onClick={() => { setMonograph(null); setCurrentMonographId(null); setMonographKey(''); }}
+                        onClick={() => { setMonograph(null); setCurrentMonographId(null); setMonographKey(''); setSelectedDrugName(null); }}
                         className="flex items-center gap-1 px-3 py-1.5 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)] text-[var(--text-secondary)] hover:text-[var(--primary)] rounded-lg text-xs font-semibold transition-colors border border-[var(--border)] hover:border-[var(--primary)]/30 shrink-0 cursor-pointer"
                       >
                         <ArrowRight size={14} className="rotate-180" /> Back

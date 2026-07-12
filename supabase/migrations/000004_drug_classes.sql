@@ -1,128 +1,178 @@
--- =====================================================================
 -- 000004_drug_classes.sql
--- Normalised drug-class reference table (broad parents + specific children)
--- Links every drug_monographs row to a canonical drug_class_id while
--- preserving the original free-text drug_class column as a fallback.
--- =====================================================================
+-- Adds a relational drug_classes reference table (broad category -> specific class)
+-- to replace the free-text drug_monographs.drug_class field, consistent with the
+-- project's "relational lookup tables over enums" architecture principle.
+--
+-- Applied live to project bveztrtykjburdhewcdy on 2026-07-12.
+-- This file is a retroactive record of that migration so the repo's migration
+-- history matches the live database. Safe to run on a fresh environment.
 
-CREATE TABLE IF NOT EXISTS drug_classes (
-  id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  name        TEXT NOT NULL,
-  slug        TEXT UNIQUE,
-  parent_id   UUID REFERENCES drug_classes(id) ON DELETE SET NULL,
-  sort_order  INTEGER DEFAULT 0,
-  is_broad    BOOLEAN DEFAULT false,
-  created_at  TIMESTAMPTZ DEFAULT now()
+-- ============================================================================
+-- 1. Table
+-- ============================================================================
+
+CREATE TABLE drug_classes (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  name text NOT NULL UNIQUE,
+  parent_id uuid REFERENCES drug_classes(id),
+  description text,
+  sort_order integer NOT NULL DEFAULT 0,
+  is_active boolean NOT NULL DEFAULT true,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now()
 );
 
-CREATE INDEX IF NOT EXISTS idx_drug_classes_parent ON drug_classes(parent_id);
+CREATE INDEX idx_drug_classes_parent_id ON drug_classes(parent_id);
 
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001000', 'Anti-infectives', 'anti_infectives', NULL, 1, true) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001001', 'Cardiovascular', 'cardiovascular', NULL, 2, true) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001002', 'Central Nervous System', 'cns', NULL, 3, true) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001003', 'Analgesics', 'analgesics', NULL, 4, true) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001004', 'Gastrointestinal', 'gastrointestinal', NULL, 5, true) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001005', 'Endocrine / Metabolic', 'endocrine', NULL, 6, true) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001006', 'Respiratory', 'respiratory', NULL, 7, true) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001007', 'Anticoagulants / Antithrombotics', 'anticoagulants', NULL, 8, true) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001008', 'Oncology', 'oncology', NULL, 9, true) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001009', 'Immunology', 'immunology', NULL, 10, true) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001010', 'Dermatology', 'dermatology', NULL, 11, true) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001011', 'Renal / Electrolytes', 'renal', NULL, 12, true) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001012', 'Nutrition / Vitamins', 'nutrition', NULL, 13, true) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001013', 'Anaesthesia', 'anaesthesia', NULL, 14, true) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001014', 'Ophthalmology', 'ophthalmology', NULL, 15, true) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c00000-0000-0000-0000-000000001015', 'Toxicology / Antidotes', 'toxicology', NULL, 16, true) ON CONFLICT (slug) DO NOTHING;
+-- Reuses the project's existing shared trigger function (also used by
+-- kenya_drug_index and other tables) rather than duplicating logic.
+CREATE TRIGGER set_updated_at
+BEFORE UPDATE ON drug_classes
+FOR EACH ROW
+EXECUTE FUNCTION set_updated_at();
 
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001000', '5-HT₃ receptor antagonist (antiemetic)', 'child-1000', d1c00000-0000-0000-0000-000000001004, 1, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001001', 'Aminoglycoside antibiotic â€” bactericidal, concentration-dependent killing', 'child-1001', d1c00000-0000-0000-0000-000000001000, 2, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001002', 'Anaesthetic agent', 'child-1002', d1c00000-0000-0000-0000-000000001013, 3, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001003', 'Analgesic (non-opioid) and antipyretic â€” mechanism involves central COX inhibition, serotonergic descending pathways, and endocannabinoid system', 'child-1003', d1c00000-0000-0000-0000-000000001003, 4, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001004', 'Analgesic agent', 'child-1004', d1c00000-0000-0000-0000-000000001003, 5, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001005', 'Angiotensin II receptor blocker (ARB)', 'child-1005', d1c00000-0000-0000-0000-000000001001, 6, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001006', 'Angiotensin-converting enzyme (ACE) inhibitor', 'child-1006', d1c00000-0000-0000-0000-000000001001, 7, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001007', 'Anticoagulant / antithrombotic agent', 'child-1007', d1c00000-0000-0000-0000-000000001007, 8, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001008', 'Antidote / toxicology agent', 'child-1008', d1c00000-0000-0000-0000-000000001015, 9, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001009', 'Antiepileptic; mood stabiliser', 'child-1009', d1c00000-0000-0000-0000-000000001002, 10, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001010', 'Antiepileptic; mood stabiliser; anticonvulsant', 'child-1010', d1c00000-0000-0000-0000-000000001002, 11, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001011', 'Antimalarial (artemisinin-based combination therapy — ACT)', 'child-1011', d1c00000-0000-0000-0000-000000001000, 12, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001012', 'Antimicrobial agent', 'child-1012', d1c00000-0000-0000-0000-000000001000, 13, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001013', 'Antineoplastic / chemotherapeutic agent', 'child-1013', d1c00000-0000-0000-0000-000000001008, 14, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001014', 'Antipsychotic (first-generation / typical antipsychotic — butyrophenone)', 'child-1014', d1c00000-0000-0000-0000-000000001002, 15, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001015', 'Antipsychotic (second-generation / atypical antipsychotic — benzisoxazole derivative)', 'child-1015', d1c00000-0000-0000-0000-000000001002, 16, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001016', 'Benzimidazole anthelmintic â€” microtubule disruptor (inhibits polymerisation of Î²-tubulin â†’ impairs glucose uptake â†’ death of helminth)', 'child-1016', d1c00000-0000-0000-0000-000000001000, 17, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001017', 'Benzodiazepine â€” long-acting (half-life 20â€“100 hours; active metabolite desmethyldiazepam tÂ½ 36â€“200 hours); anxiolytic, sedative, hypnotic, anticonvulsant, muscle relaxant', 'child-1017', d1c00000-0000-0000-0000-000000001002, 18, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001018', 'Beta-1 selective adrenergic receptor blocker (cardioselective beta-blocker)', 'child-1018', d1c00000-0000-0000-0000-000000001001, 19, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001019', 'Biguanide (oral antihyperglycaemic)', 'child-1019', d1c00000-0000-0000-0000-000000001005, 20, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001020', 'Cardiac glycoside', 'child-1020', d1c00000-0000-0000-0000-000000001001, 21, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001021', 'Cardiovascular agent', 'child-1021', d1c00000-0000-0000-0000-000000001001, 22, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001022', 'Central nervous system agent', 'child-1022', d1c00000-0000-0000-0000-000000001002, 23, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001023', 'Centrally acting alpha-2 adrenergic agonist', 'child-1023', d1c00000-0000-0000-0000-000000001001, 24, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001024', 'Corticosteroid (glucocorticoid with mineralocorticoid activity — short-acting)', 'child-1024', d1c00000-0000-0000-0000-000000001009, 25, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001025', 'Corticosteroid (glucocorticoid — intermediate-acting)', 'child-1025', d1c00000-0000-0000-0000-000000001009, 26, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001026', 'Dermatological agent', 'child-1026', d1c00000-0000-0000-0000-000000001010, 27, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001027', 'Direct-acting vasodilator (arteriolar dilator)', 'child-1027', d1c00000-0000-0000-0000-000000001001, 28, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001028', 'Endocrine / metabolic agent', 'child-1028', d1c00000-0000-0000-0000-000000001005, 29, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001029', 'First-generation antihistamine (H₁-receptor antagonist) — sedating alkylamine', 'child-1029', d1c00000-0000-0000-0000-000000001006, 30, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001030', 'First-generation cephalosporin', 'child-1030', d1c00000-0000-0000-0000-000000001000, 31, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001031', 'First-line antitubercular (bactericidal — inhibits mycolic acid synthesis)', 'child-1031', d1c00000-0000-0000-0000-000000001000, 32, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001032', 'Fluoroquinolone antibiotic', 'child-1032', d1c00000-0000-0000-0000-000000001000, 33, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001033', 'Folate synthesis inhibitor (sulphonamide + diaminopyrimidine combination)', 'child-1033', d1c00000-0000-0000-0000-000000001000, 34, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001034', 'Gastrointestinal agent', 'child-1034', d1c00000-0000-0000-0000-000000001004, 35, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001035', 'HMG-CoA reductase inhibitor (statin)', 'child-1035', d1c00000-0000-0000-0000-000000001001, 36, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001036', 'Immunomodulatory / biologic agent', 'child-1036', d1c00000-0000-0000-0000-000000001009, 37, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001037', 'Integrase strand transfer inhibitor (INSTI) — HIV antiretroviral', 'child-1037', d1c00000-0000-0000-0000-000000001000, 38, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001038', 'Intermediate-acting insulin (pre-mixed formulation)', 'child-1038', d1c00000-0000-0000-0000-000000001005, 39, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001039', 'Loop diuretic', 'child-1039', d1c00000-0000-0000-0000-000000001011, 40, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001040', 'Macrolide antibiotic', 'child-1040', d1c00000-0000-0000-0000-000000001000, 41, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001041', 'Mood stabiliser (antimanic)', 'child-1041', d1c00000-0000-0000-0000-000000001002, 42, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001042', 'Nitroimidazole antibiotic / antiprotozoal', 'child-1042', d1c00000-0000-0000-0000-000000001000, 43, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001043', 'Non-steroidal anti-inflammatory drug (NSAID) â€” non-selective COX-1/COX-2 inhibitor (propionic acid derivative)', 'child-1043', d1c00000-0000-0000-0000-000000001003, 44, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001044', 'Nucleotide reverse transcriptase inhibitor (NtRTI) — HIV antiretroviral', 'child-1044', d1c00000-0000-0000-0000-000000001000, 45, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001045', 'Nutritional supplement / vitamin', 'child-1045', d1c00000-0000-0000-0000-000000001012, 46, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001046', 'Ophthalmic agent', 'child-1046', d1c00000-0000-0000-0000-000000001014, 47, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001047', 'Opioid analgesic (full mu-opioid receptor agonist — natural alkaloid)', 'child-1047', d1c00000-0000-0000-0000-000000001003, 48, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001048', 'Oral iron preparation (haematinic)', 'child-1048', d1c00000-0000-0000-0000-000000001012, 49, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001049', 'Osmotic laxative; ammonia-lowering agent', 'child-1049', d1c00000-0000-0000-0000-000000001004, 50, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001050', 'Penicillinase-resistant (anti-staphylococcal) penicillin â€” isoxazolyl penicillin', 'child-1050', d1c00000-0000-0000-0000-000000001000, 51, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001051', 'Potassium-sparing diuretic (mineralocorticoid receptor antagonist)', 'child-1051', d1c00000-0000-0000-0000-000000001011, 52, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001052', 'Proton pump inhibitor (PPI) — substituted benzimidazole', 'child-1052', d1c00000-0000-0000-0000-000000001004, 53, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001053', 'Renal / electrolyte agent', 'child-1053', d1c00000-0000-0000-0000-000000001011, 54, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001054', 'Respiratory agent', 'child-1054', d1c00000-0000-0000-0000-000000001006, 55, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001055', 'Rifamycin antibiotic (first-line antitubercular — bactericidal)', 'child-1055', d1c00000-0000-0000-0000-000000001000, 56, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001056', 'Sulphonylurea (insulin secretagogue) — second-generation', 'child-1056', d1c00000-0000-0000-0000-000000001005, 57, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001057', 'Tetracycline antibiotic', 'child-1057', d1c00000-0000-0000-0000-000000001000, 58, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001058', 'Therapeutic agent', 'child-1058', NULL, 59, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001059', 'Thyroid hormone (T₄) — synthetic', 'child-1059', d1c00000-0000-0000-0000-000000001005, 60, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001060', 'Triazole antifungal', 'child-1060', d1c00000-0000-0000-0000-000000001000, 61, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001061', 'Vitamin K antagonist (anticoagulant)', 'child-1061', d1c00000-0000-0000-0000-000000001007, 62, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001062', 'Water-soluble B vitamin (cobalamin)', 'child-1062', d1c00000-0000-0000-0000-000000001012, 63, false) ON CONFLICT (slug) DO NOTHING;
-INSERT INTO drug_classes (id, name, slug, parent_id, sort_order, is_broad) VALUES ('d1c10000-0000-0000-0000-000000001063', 'Water-soluble B vitamin (folate)', 'child-1063', d1c00000-0000-0000-0000-000000001012, 64, false) ON CONFLICT (slug) DO NOTHING;
-
-ALTER TABLE drug_monographs ADD COLUMN IF NOT EXISTS drug_class_id UUID REFERENCES drug_classes(id);
-ALTER TABLE drug_monographs ADD COLUMN IF NOT EXISTS classification_note TEXT;
-CREATE INDEX IF NOT EXISTS idx_drug_monographs_class ON drug_monographs(drug_class_id);
-
--- Link existing monographs to their specific drug_class child (exact name match)
-UPDATE drug_monographs
-SET drug_class_id = (
-  SELECT dc.id FROM drug_classes dc
-  WHERE dc.name = drug_monographs.drug_class AND dc.is_broad = false
-  LIMIT 1
-)
-WHERE drug_monographs.drug_class IS NOT NULL
-  AND drug_monographs.drug_class_id IS NULL;
-
--- Acetazolamide: reclassify from Ophthalmic agent to Renal/electrolyte agent (carbonic
--- anhydrase inhibitor). Flagged via classification_note for clinical verification.
-UPDATE drug_monographs
-SET drug_class_id = 'd1c10000-0000-0000-0000-000000001053',
-    drug_class = 'Renal / electrolyte agent',
-    classification_note = 'Reclassified from Ophthalmic agent to Renal/electrolyte agent (carbonic anhydrase inhibitor). Original class was a route/indication label, not a pharmacological class. Verify clinical classification.'
-WHERE lower(name) = 'acetazolamide';
+-- ============================================================================
+-- 2. Row Level Security
+-- ============================================================================
+-- Matches the established pattern for lookup/reference tables (clinical_settings,
+-- case_types, acuity_levels, patient_age_groups): public read, writes restricted
+-- to service_role by default (no write policy defined).
 
 ALTER TABLE drug_classes ENABLE ROW LEVEL SECURITY;
-CREATE POLICY "Anyone can read drug_classes" ON drug_classes FOR SELECT USING (true);
 
--- Summary report (run after migration to verify linkage)
--- SELECT COUNT(*) FILTER (WHERE drug_class_id IS NULL) AS unlinked, COUNT(*) AS total FROM drug_monographs;
+CREATE POLICY "Anyone can read drug_classes"
+ON drug_classes
+FOR SELECT
+TO public
+USING (true);
+
+-- ============================================================================
+-- 3. Seed data: 16 broad categories (top-level, parent_id IS NULL)
+-- ============================================================================
+
+INSERT INTO drug_classes (name) VALUES
+('Antimicrobial agent'),
+('Dermatological agent'),
+('Cardiovascular agent'),
+('Antineoplastic / chemotherapeutic agent'),
+('Central nervous system agent'),
+('Anaesthetic agent'),
+('Endocrine / metabolic agent'),
+('Nutritional supplement / vitamin'),
+('Therapeutic agent'),
+('Analgesic agent'),
+('Antidote / toxicology agent'),
+('Gastrointestinal agent'),
+('Respiratory agent'),
+('Renal / electrolyte agent'),
+('Anticoagulant / antithrombotic agent'),
+('Immunomodulatory / biologic agent');
+
+-- Stable display order for broad categories (alphabetical baseline, reorder later as needed)
+WITH ordered AS (
+  SELECT id, ROW_NUMBER() OVER (ORDER BY name) AS rn
+  FROM drug_classes WHERE parent_id IS NULL
+)
+UPDATE drug_classes dc
+SET sort_order = ordered.rn
+FROM ordered
+WHERE dc.id = ordered.id;
+
+-- ============================================================================
+-- 4. Seed data: 50 specific classes (children of the broad categories above)
+-- ============================================================================
+-- Names are the exact original drug_monographs.drug_class text values, except
+-- 'Ophthalmic agent' (Acetazolamide), which was corrected to the accurate
+-- pharmacological class 'Carbonic anhydrase inhibitor' -- the original label
+-- described a route/indication, not a drug class. Flagged for review at the
+-- time; written here as the corrected value so a fresh build matches the
+-- current live database.
+
+INSERT INTO drug_classes (name, parent_id)
+SELECT v.name, dc.id
+FROM (VALUES
+  ('5-HT₃ receptor antagonist (antiemetic)', 'Gastrointestinal agent'),
+  ('Aminoglycoside antibiotic — bactericidal, concentration-dependent killing', 'Antimicrobial agent'),
+  ('Analgesic (non-opioid) and antipyretic — mechanism involves central COX inhibition, serotonergic descending pathways, and endocannabinoid system', 'Analgesic agent'),
+  ('Angiotensin II receptor blocker (ARB)', 'Cardiovascular agent'),
+  ('Angiotensin-converting enzyme (ACE) inhibitor', 'Cardiovascular agent'),
+  ('Antiepileptic; mood stabiliser', 'Central nervous system agent'),
+  ('Antiepileptic; mood stabiliser; anticonvulsant', 'Central nervous system agent'),
+  ('Antimalarial (artemisinin-based combination therapy — ACT)', 'Antimicrobial agent'),
+  ('Antipsychotic (first-generation / typical antipsychotic — butyrophenone)', 'Central nervous system agent'),
+  ('Antipsychotic (second-generation / atypical antipsychotic — benzisoxazole derivative)', 'Central nervous system agent'),
+  ('Benzimidazole anthelmintic — microtubule disruptor (inhibits polymerisation of β-tubulin → impairs glucose uptake → death of helminth)', 'Antimicrobial agent'),
+  ('Benzodiazepine — long-acting (half-life 20–100 hours; active metabolite desmethyldiazepam t½ 36–200 hours); anxiolytic, sedative, hypnotic, anticonvulsant, muscle relaxant', 'Central nervous system agent'),
+  ('Beta-1 selective adrenergic receptor blocker (cardioselective beta-blocker)', 'Cardiovascular agent'),
+  ('Biguanide (oral antihyperglycaemic)', 'Endocrine / metabolic agent'),
+  ('Cardiac glycoside', 'Cardiovascular agent'),
+  ('Centrally acting alpha-2 adrenergic agonist', 'Cardiovascular agent'),
+  ('Corticosteroid (glucocorticoid — intermediate-acting)', 'Endocrine / metabolic agent'),
+  ('Corticosteroid (glucocorticoid with mineralocorticoid activity — short-acting)', 'Endocrine / metabolic agent'),
+  ('Direct-acting vasodilator (arteriolar dilator)', 'Cardiovascular agent'),
+  ('First-generation antihistamine (H₁-receptor antagonist) — sedating alkylamine', 'Central nervous system agent'),
+  ('First-generation cephalosporin', 'Antimicrobial agent'),
+  ('First-line antitubercular (bactericidal — inhibits mycolic acid synthesis)', 'Antimicrobial agent'),
+  ('Fluoroquinolone antibiotic', 'Antimicrobial agent'),
+  ('Folate synthesis inhibitor (sulphonamide + diaminopyrimidine combination)', 'Antimicrobial agent'),
+  ('HMG-CoA reductase inhibitor (statin)', 'Cardiovascular agent'),
+  ('Integrase strand transfer inhibitor (INSTI) — HIV antiretroviral', 'Antimicrobial agent'),
+  ('Intermediate-acting insulin (pre-mixed formulation)', 'Endocrine / metabolic agent'),
+  ('Loop diuretic', 'Cardiovascular agent'),
+  ('Macrolide antibiotic', 'Antimicrobial agent'),
+  ('Mood stabiliser (antimanic)', 'Central nervous system agent'),
+  ('Nitroimidazole antibiotic / antiprotozoal', 'Antimicrobial agent'),
+  ('Non-steroidal anti-inflammatory drug (NSAID) — non-selective COX-1/COX-2 inhibitor (propionic acid derivative)', 'Analgesic agent'),
+  ('Nucleotide reverse transcriptase inhibitor (NtRTI) — HIV antiretroviral', 'Antimicrobial agent'),
+  ('Carbonic anhydrase inhibitor', 'Renal / electrolyte agent'),
+  ('Opioid analgesic (full mu-opioid receptor agonist — natural alkaloid)', 'Analgesic agent'),
+  ('Oral iron preparation (haematinic)', 'Nutritional supplement / vitamin'),
+  ('Osmotic laxative; ammonia-lowering agent', 'Gastrointestinal agent'),
+  ('Penicillin + beta-lactamase inhibitor', 'Antimicrobial agent'),
+  ('Penicillinase-resistant (anti-staphylococcal) penicillin — isoxazolyl penicillin', 'Antimicrobial agent'),
+  ('Potassium-sparing diuretic (mineralocorticoid receptor antagonist)', 'Cardiovascular agent'),
+  ('Proton pump inhibitor (PPI) — substituted benzimidazole', 'Gastrointestinal agent'),
+  ('Rifamycin antibiotic (first-line antitubercular — bactericidal)', 'Antimicrobial agent'),
+  ('Short-acting insulin', 'Endocrine / metabolic agent'),
+  ('Sulphonylurea (insulin secretagogue) — second-generation', 'Endocrine / metabolic agent'),
+  ('Tetracycline antibiotic', 'Antimicrobial agent'),
+  ('Thyroid hormone (T₄) — synthetic', 'Endocrine / metabolic agent'),
+  ('Triazole antifungal', 'Antimicrobial agent'),
+  ('Vitamin K antagonist (anticoagulant)', 'Anticoagulant / antithrombotic agent'),
+  ('Water-soluble B vitamin (cobalamin)', 'Nutritional supplement / vitamin'),
+  ('Water-soluble B vitamin (folate)', 'Nutritional supplement / vitamin')
+) AS v(name, parent_name)
+JOIN drug_classes dc ON dc.name = v.parent_name;
+
+-- ============================================================================
+-- 5. Link drug_monographs to drug_classes
+-- ============================================================================
+
+ALTER TABLE drug_monographs ADD COLUMN drug_class_id uuid REFERENCES drug_classes(id);
+
+CREATE INDEX idx_drug_monographs_drug_class_id ON drug_monographs(drug_class_id);
+
+-- Correct the legacy free-text field for Acetazolamide to match the corrected
+-- classification before backfilling (see note in section 4).
+UPDATE drug_monographs
+SET drug_class = 'Carbonic anhydrase inhibitor'
+WHERE name = 'Acetazolamide';
+
+-- Backfill: link every monograph to its matching class by exact text match.
+UPDATE drug_monographs dm
+SET drug_class_id = dc.id
+FROM drug_classes dc
+WHERE dc.name = dm.drug_class;
+
+-- NOTE: drug_monographs.drug_class (legacy free-text column) is intentionally
+-- left in place as a safe fallback and is not dropped by this migration.
+-- Drop it in a later migration once the frontend reads from drug_class_id.
+
+-- ============================================================================
+-- 6. Validation (run manually after applying; not part of the migration)
+-- ============================================================================
+-- SELECT COUNT(*) FROM drug_monographs WHERE drug_class_id IS NULL;              -- expect 0
+-- SELECT COUNT(*) FROM drug_classes WHERE parent_id IS NULL;                     -- expect 16
+-- SELECT COUNT(*) FROM drug_classes WHERE parent_id IS NOT NULL;                 -- expect 50
+-- SELECT COUNT(*) FROM drug_monographs dm JOIN drug_classes dc
+--   ON dc.id = dm.drug_class_id WHERE dm.drug_class <> dc.name;                  -- expect 0

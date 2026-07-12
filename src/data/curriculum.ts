@@ -917,7 +917,7 @@ export const EDUCATION_MODULES: EducationModule[] = [
   { id: 'drug_info', title: 'Drug Information & Guidelines', description: 'Clinical guidelines, monographs, and evidence.', isIntegrated: false, icon: 'FileText', color: 'teal' },
   { id: 'ebm', title: 'Evidence-Based Medicine & Research', description: 'Research methodology, biostatistics, critical appraisal, and evidence synthesis.', isIntegrated: false, icon: 'Search', color: 'sky' },
   { id: 'supporting', title: 'Supporting Sciences', description: 'Foundational sciences for pharmacy and medicine.', isIntegrated: false, areaId: 'supporting', icon: 'FlaskConical', color: 'emerald' },
-  { id: 'tools', title: 'Study & Learning Tools', description: 'Flashcards, Q-banks, Oral Practice, and Planning.', isIntegrated: false, icon: 'BrainCircuit', color: 'fuchsia' },
+  { id: 'tools', title: 'Study & Learning Tools', description: 'Flashcards, Q-banks, and Planning.', isIntegrated: false, icon: 'BrainCircuit', color: 'fuchsia' },
 ];
 
 export function getEducationModule(moduleId: string): EducationModule | undefined {
@@ -972,7 +972,6 @@ const NON_CURRICULUM_UNITS: Record<string, EducationModuleUnit[]> = {
   tools: [
     { id: 'tool-qbank', title: 'Question Bank', description: 'MCQs and practice exams for all subjects.' },
     { id: 'tool-flashcards', title: 'Spaced Repetition Flashcards', description: 'Active recall decks for pharmacology and therapeutics.' },
-    { id: 'tool-oral', title: 'Oral Practice (OSCE)', description: 'AI-driven voice practice for clinical encounters and vivas.' },
     { id: 'tool-podcasts', title: 'Podcasts & Audio', description: 'Audio summaries of clinical topics and guidelines.' },
     { id: 'tool-papers', title: 'Past Papers', description: 'Historical board and university examination papers.' },
     { id: 'tool-planner', title: 'Smart Study Planner', description: 'Generate personalized study schedules and track progress.' },

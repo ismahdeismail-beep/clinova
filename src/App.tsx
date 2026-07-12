@@ -1,13 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate, Navigate } from 'react-router-dom';
 import { 
-  Home, Users, FolderOpen, ClipboardList, Pill, Bot, 
+  Home, FolderOpen, ClipboardList, Pill, Bot, 
   BookOpen, BarChart3, Bell, Settings, Menu, Search, MessageSquare, ShieldCheck, Database,
   X, LogOut, Cpu
 } from 'lucide-react';
 
 const DashboardScreen = React.lazy(() => import('./screens/DashboardScreen'));
-const PatientsScreen = React.lazy(() => import('./screens/PatientsScreen'));
 const ClinicalCasesScreen = React.lazy(() => import('./screens/ClinicalCasesScreen'));
 const PharmacotherapyReviewScreen = React.lazy(() => import('./screens/PharmacotherapyReviewScreen'));
 const DrugIndexScreen = React.lazy(() => import('./screens/DrugIndexScreen'));
@@ -66,7 +65,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
                 window.dispatchEvent(new Event('open-command-palette'));
               }}
             >
-              <span className="truncate">Search Kenya Drug Index, Guidelines, patients...</span>
+              <span className="truncate">Search Kenya Drug Index, Guidelines...</span>
               <div className="flex items-center gap-1 shrink-0 ml-2">
                 <kbd className="hidden sm:inline-block bg-[var(--surface)] border border-[var(--border)] rounded px-1.5 py-0.5 text-[10px] font-mono font-medium text-[var(--text-muted)]">Ctrl</kbd>
                 <kbd className="hidden sm:inline-block bg-[var(--surface)] border border-[var(--border)] rounded px-1.5 py-0.5 text-[10px] font-mono font-medium text-[var(--text-muted)]">K</kbd>
@@ -124,7 +123,6 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
         { to: '/review', label: 'Pharmacotherapy Review', icon: ClipboardList },
         { to: '/drugs', label: 'Drug Index', icon: Pill },
         { to: '/assistant', label: 'Clinical Support', icon: Bot },
-        { to: '/patients', label: 'Patients', icon: Users },
       ],
     },
     {
@@ -339,7 +337,6 @@ function AppContent() {
           }>
             <Routes>
               <Route path="/" element={<DashboardScreen />} />
-              <Route path="/patients" element={<PatientsScreen />} />
               <Route path="/cases" element={<ClinicalCasesScreen />} />
               <Route path="/review" element={<PharmacotherapyReviewScreen />} />
               <Route path="/drugs" element={<DrugIndexScreen />} />

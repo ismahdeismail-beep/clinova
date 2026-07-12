@@ -6,7 +6,6 @@ import {
   Search, BookOpen, Stethoscope, ChevronLeft, BrainCircuit,
   Loader2, Play, Sparkles,
   Award, Sliders, HelpCircle, Book, FileText, Compass, Folder, Copy, Edit3, File, Link, CheckSquare, X,
-  UserPlus
 } from 'lucide-react';
 import Markdown from 'react-markdown';
 import { ClinicalCase, SPECIALTIES, ALL_CLINICAL_CASES } from '../data/clinicalCasesData';
@@ -18,7 +17,6 @@ import {
 } from '../components/clinical';
 import { parseVitals, parseLabs, parseDtps, toArray, toText } from '../lib/clinicalParsers';
 import { extractMedicines } from '../lib/clinicalTerms';
-import AddPatientModal from '../components/AddPatientModal';
 
 export default function ClinicalCasesScreen() {
   const navigate = useNavigate();
@@ -76,7 +74,6 @@ export default function ClinicalCasesScreen() {
   // Disease brain subsection state
   const [showBrainTree, setShowBrainTree] = useState(false);
   const [filterSpecialty, setFilterSpecialty] = useState<string | null>(null);
-  const [showAddPatient, setShowAddPatient] = useState(false);
   const [selectedSubsection, setSelectedSubsection] = useState<{ id: string, title: string, category: string, content: string, cta?: string, action?: string } | null>(null);
 
   // Clinical Coach states
@@ -664,12 +661,6 @@ export default function ClinicalCasesScreen() {
                 />
               </div>
             )}
-            <button
-              onClick={() => setShowAddPatient(true)}
-              className="flex items-center justify-center gap-2 px-4 py-3 rounded-2xl bg-[var(--primary)] text-[var(--primary-foreground)] text-sm font-semibold hover:opacity-90 transition-all shadow-sm whitespace-nowrap"
-            >
-              <UserPlus size={16} /> Add Patient
-            </button>
           </div>
         </div>
 
@@ -1243,46 +1234,6 @@ export default function ClinicalCasesScreen() {
               </div>
             </div>
           )}
-
-          <AddPatientModal
-            open={showAddPatient}
-            onClose={() => setShowAddPatient(false)}
-            onCreated={(created) => {
-              const newCase: ClinicalCase = {
-                id: created.id || `local-${Date.now()}`,
-                seedId: created.id || `local-${Date.now()}`,
-                title: created.title,
-                specialty: created.specialty,
-                disease: created.disease,
-                difficulty: created.difficulty,
-                demographics: created.demographics || '',
-                chiefComplaint: created.chiefComplaint || '',
-                hpi: created.hpi || '',
-                pmh: '', medHx: '', allergies: '', pe: '', vitals: '', labs: '',
-                imaging: undefined,
-                diagnosis: created.diagnosis || '',
-                ddx: [], goals: '',
-                pharm: created.pharm || '',
-                nonPharm: created.nonPharm || '',
-                carePlan: created.carePlan || '',
-                dtps: '',
-                monitoring: created.monitoring || '',
-                counselling: created.counselling || '',
-                followUp: created.followUp || '',
-                pearls: created.pearls || '',
-                references: [],
-                createdAt: new Date().toISOString(),
-                status: 'published',
-                createdBy: 'local',
-                createdByName: 'You',
-                patientName: created.patientName,
-                facilitySetting: created.facilitySetting,
-              };
-              setAllCases((prev) => [newCase, ...prev]);
-              setFilterSpecialty(null);
-              setSearchQuery('');
-            }}
-          />
 
         </div>
       </div>

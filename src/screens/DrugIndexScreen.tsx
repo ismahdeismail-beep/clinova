@@ -14,7 +14,6 @@ import { useSearchParams } from 'react-router-dom';
 import { DrugMonographService, type DrugMonograph } from '../services/drugMonograph.service';
 import { monographToMarkdown } from '../lib/monographToMarkdown';
 import SavedMonographsPanel, { SaveMonographButton } from '../components/SavedMonographsPanel';
-import { supabase } from '../lib/supabase';
 
 interface QuickDrug {
   name: string;
@@ -65,6 +64,25 @@ const QUICK_DRUGS: QuickDrug[] = [
   { name: 'Amitriptyline', category: 'Central Nervous System' },
 ];
 
+const CATEGORIES = [
+  'Anti-infectives',
+  'Cardiovascular',
+  'Central Nervous System',
+  'Analgesics',
+  'Gastrointestinal',
+  'Endocrine',
+  'Respiratory',
+  'Anticoagulants',
+  'Oncology',
+  'Immunology',
+  'Dermatology',
+  'Renal/Electrolytes',
+  'Nutrition/Vitamins',
+  'Anaesthesia',
+  'Ophthalmology',
+  'Toxicology/Antidotes',
+];
+
 export default function DrugIndexScreen() {
   const { userData } = useAuth();
   const [searchParams] = useSearchParams();
@@ -81,30 +99,6 @@ export default function DrugIndexScreen() {
   const [monograph, setMonograph] = useState<string | null>(null);
   const [monographKey, setMonographKey] = useState<string>('');
   const [currentMonographId, setCurrentMonographId] = useState<string | null>(null);
-
-  // Drug classes lookup for category filtering
-  const [broadCategories, setBroadCategories] = useState<string[]>([]);
-  const [drugClassToBroad, setDrugClassToBroad] = useState<Map<string, string>>(new Map());
-
-  useEffect(() => {
-    const loadDrugClasses = async () => {
-      const { data } = await supabase
-        .from('drug_classes')
-        .select('id, name, parent_id');
-      if (!data) return;
-      const byId = new Map(data.map(dc => [dc.id, dc]));
-      const childToBroad = new Map<string, string>();
-      data.filter(dc => dc.parent_id).forEach(child => {
-        const parent = byId.get(child.parent_id);
-        if (parent) childToBroad.set(child.id, parent.name);
-      });
-      setBroadCategories(
-        data.filter(dc => !dc.parent_id).map(dc => dc.name).sort()
-      );
-      setDrugClassToBroad(childToBroad);
-    };
-    loadDrugClasses();
-  }, []);
 
   // Seeded Supabase catalog (canonical source of monographs, mirrored from clinical cases pattern)
   const [catalog, setCatalog] = useState<DrugMonograph[]>([]);
@@ -445,10 +439,7 @@ export default function DrugIndexScreen() {
     const q = searchQuery.trim().toLowerCase();
     let list = catalog;
     if (selectedCategory) {
-      list = list.filter(m => {
-        if (!m.drug_class_id) return false;
-        return drugClassToBroad.get(m.drug_class_id) === selectedCategory;
-      });
+      list = list.filter(m => (m.drug_class_name || '').toLowerCase().includes(selectedCategory.toLowerCase()));
     } else if (q) {
       list = list.filter(m =>
         (m.name || '').toLowerCase().includes(q) ||
@@ -580,7 +571,7 @@ export default function DrugIndexScreen() {
               <div className="px-4 py-3 bg-[var(--surface-dim)] rounded-xl font-bold text-xs text-[var(--text-muted)] uppercase tracking-wider border-l-4 border-[var(--primary)] mb-3 text-left">
                 Therapeutic Classes
               </div>
-              {broadCategories.map((cat) => {
+              {CATEGORIES.map((cat) => {
                 const isSelected = selectedCategory === cat;
                 return (
                   <button
@@ -679,13 +670,23 @@ export default function DrugIndexScreen() {
                         tr: ({ children }) => <tr className="hover:bg-[var(--surface-dim)]/40 transition-colors">{children}</tr>,
                         th: ({ children }) => <th className="p-3 font-semibold text-[var(--text)] uppercase tracking-wider text-[10px] sm:text-xs bg-[var(--surface-dim)] whitespace-nowrap">{children}</th>,
                         td: ({ children }) => <td className="p-3 text-[var(--text-secondary)] leading-normal">{children}</td>,
-                        h1: ({ children }) => <h1 className="text-lg sm:text-xl font-bold text-[var(--primary)] mt-6 mb-3 tracking-tight border-b border-[var(--border)] pb-1.5">{children}</h1>,
-                        h2: ({ children }) => <h2 className="text-base sm:text-lg font-semibold text-[var(--text)] mt-5 mb-2.5 tracking-tight">{children}</h2>,
-                        h3: ({ children }) => <h3 className="text-sm sm:text-base font-semibold text-[var(--text-secondary)] mt-4 mb-2">{children}</h3>,
+                        h1: ({ children }) => <h1 className="text-xl sm:text-2xl font-bold text-[var(--text)] mt-6 mb-4 tracking-tight border-b-2 border-[var(--primary)]/30 pb-2">{children}</h1>,
+                        h2: ({ children }) => (
+                          <div className="flex items-center gap-2 mt-6 mb-3">
+                            <div className="w-1 h-5 bg-[var(--primary)] rounded-full shrink-0" />
+                            <h2 className="text-base sm:text-lg font-semibold text-[var(--text)] tracking-tight">{children}</h2>
+                          </div>
+                        ),
+                        h3: ({ children }) => <h3 className="text-sm sm:text-base font-semibold text-[var(--text-secondary)] mt-4 mb-2 ml-3 border-l-2 border-[var(--border)] pl-3">{children}</h3>,
                         p: ({ children }) => <p className="text-sm leading-relaxed text-[var(--text-secondary)] mb-3 last:mb-0">{children}</p>,
-                        ul: ({ children }) => <ul className="list-disc pl-5 mb-4 space-y-1.5 text-sm text-[var(--text-secondary)]">{children}</ul>,
-                        ol: ({ children }) => <ol className="list-decimal pl-5 mb-4 space-y-1.5 text-sm text-[var(--text-secondary)]">{children}</ol>,
-                        li: ({ children }) => <li className="leading-relaxed text-sm">{children}</li>,
+                        ul: ({ children }) => <ul className="space-y-2 mb-5">{children}</ul>,
+                        ol: ({ children }) => <ol className="space-y-2 mb-5">{children}</ol>,
+                        li: ({ children }) => <li className="flex items-start gap-2 text-sm leading-relaxed text-[var(--text-secondary)]"><span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)]/60 mt-1.5 shrink-0" />{children}</li>,
+                        blockquote: ({ children }) => (
+                          <div className="bg-[var(--surface-dim)]/60 border-l-3 border-[var(--primary)]/40 rounded-r-lg px-4 py-3 my-4 text-sm text-[var(--text-muted)] italic">
+                            {children}
+                          </div>
+                        ),
                       }}
                     >
                       {monograph}
@@ -746,14 +747,14 @@ export default function DrugIndexScreen() {
                         <button
                           key={m.id}
                           onClick={() => openSeeded(m)}
-                          className="text-left bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-xl p-4 transition-all cursor-pointer group"
+                          className="text-left bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-xl p-4 transition-all cursor-pointer group overflow-hidden"
                         >
-                          <div className="flex items-start justify-between gap-2">
-                            <div className="font-semibold text-[var(--text)] text-sm group-hover:text-[var(--primary)] transition-colors">{m.name}</div>
+                          <div className="flex items-start justify-between gap-2 min-w-0">
+                            <div className="font-semibold text-[var(--text)] text-sm group-hover:text-[var(--primary)] transition-colors truncate">{m.name}</div>
                             <Pill size={14} className="text-[var(--text-dim)] shrink-0 mt-0.5" />
                           </div>
                           {m.generic_name && m.generic_name !== m.name && (
-                            <div className="text-xs text-[var(--text-muted)]">{m.generic_name}</div>
+                            <div className="text-xs text-[var(--text-muted)] truncate">{m.generic_name}</div>
                           )}
                           {m.drug_class_name && (
                             <div className="mt-2 inline-block text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded bg-[var(--surface-dim)] text-[var(--text-secondary)]">
@@ -959,7 +960,7 @@ export default function DrugIndexScreen() {
                     />
                   </div>
 
-                  <div className="grid grid-cols-3 gap-2.5 text-left">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-left">
                     <div className="space-y-1">
                       <label className="text-[10px] font-bold text-[var(--text-muted)] uppercase block">Dose</label>
                       <input

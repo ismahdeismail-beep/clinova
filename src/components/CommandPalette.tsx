@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
-  Search, Home, Users, FolderOpen, ClipboardList, Pill, 
+  Search, Home, FolderOpen, ClipboardList, Pill, 
   Bot, BookOpen, BarChart3, Bell, Settings, ShieldCheck, X, Moon
 } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
@@ -28,7 +28,6 @@ export function CommandPalette() {
 
   const actions: Action[] = [
     { id: 'dashboard', label: 'Go to Dashboard', icon: Home, path: '/', shortcut: ['shift', 'h'] },
-    { id: 'patients', label: 'Search Patients', icon: Users, path: '/patients' },
     { id: 'cases', label: 'Search Clinical Cases', icon: FolderOpen, path: '/cases' },
     { id: 'review', label: 'Go to Pharmacotherapy Review', icon: ClipboardList, path: '/review' },
     { id: 'drugs', label: 'Search Drug Index', icon: Pill, path: '/drugs' },

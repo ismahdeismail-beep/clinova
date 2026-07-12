@@ -4,7 +4,6 @@ import { ChevronRight, Home, ChevronLeft } from 'lucide-react';
 
 const routeNames: Record<string, string> = {
   '/': 'Dashboard',
-  '/patients': 'Patients',
   '/cases': 'Clinical Cases',
   '/review': 'Care Plan Review',
   '/drugs': 'KDI & Guidelines',

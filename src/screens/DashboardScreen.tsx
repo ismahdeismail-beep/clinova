@@ -5,9 +5,7 @@ import {
   Search,
   Bot,
   BookOpen,
-  Clock,
   Activity,
-  Bookmark,
   ChevronRight,
   BrainCircuit,
   FileText,
@@ -20,13 +18,6 @@ import {
   ShieldCheck,
   Users,
   Settings,
-  Heart,
-  Flame,
-  ShieldAlert,
-  Check,
-  ChevronDown,
-  Award,
-  Settings2,
   X,
   PlusCircle,
 } from "lucide-react";
@@ -331,50 +322,43 @@ export default function DashboardScreen() {
                 </div>
               </div>
 
-              {/* Recent Activities */}
+              {/* Continue Learning - Recent Files */}
               <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden backdrop-blur-md">
                 <div className="p-5 border-b border-[var(--border)] flex items-center justify-between">
                   <h3 className="font-semibold text-[var(--text)] flex items-center gap-2">
-                    <Clock size={18} className="text-[var(--text-muted)]" />
-                    Recent Clinical Activity
+                    <BookOpen size={18} className="text-[var(--text-muted)]" />
+                    Continue Learning
                   </h3>
+                  {files.length > 0 && (
+                    <Link to="/knowledge" className="text-xs font-bold text-[var(--primary)] hover:underline">
+                      View All
+                    </Link>
+                  )}
                 </div>
                 <div className="divide-y divide-[var(--border)]">
-                  <div className="p-4 flex items-start gap-4 hover:bg-[var(--surface-dim)] transition-colors cursor-pointer">
-                    <div className="w-10 h-10 rounded-xl bg-[var(--primary-container)] flex items-center justify-center shrink-0">
-                      <ClipboardList
-                        size={18}
-                        className="text-[var(--primary)]"
-                      />
+                  {files.length > 0 ? (
+                    files.slice(0, 3).map((f) => (
+                      <div key={f.id} className="p-4 flex items-start gap-4 hover:bg-[var(--surface-dim)] transition-colors cursor-pointer">
+                        <div className="w-10 h-10 rounded-xl bg-[var(--primary-container)] flex items-center justify-center shrink-0">
+                          <FileText size={18} className="text-[var(--primary)]" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-sm font-bold text-[var(--text)] truncate">{f.title || f.originalName}</p>
+                          {f.summary && <p className="text-xs text-[var(--text-muted)] mt-0.5 truncate">{f.summary}</p>}
+                          <p className="text-[10px] text-[var(--text-muted)] mt-1.5 font-bold uppercase tracking-wider">
+                            {f.category || 'Knowledge Base'}
+                          </p>
+                        </div>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="p-5 text-center text-sm text-[var(--text-muted)]">
+                      <p>No files yet. Upload lecture notes or reference materials to get started.</p>
+                      <Link to="/knowledge" className="text-[var(--primary)] font-semibold hover:underline inline-block mt-2">
+                        Go to Education Hub
+                      </Link>
                     </div>
-                    <div className="flex-1 min-w-0">
-                      <p className="text-sm font-bold text-[var(--text)] truncate">
-                        Pharmacotherapy Plan: Inpatient #89432
-                      </p>
-                      <p className="text-xs text-[var(--text-muted)] mt-0.5 truncate">
-                        Clinical Review • Community-Acquired Pneumonia
-                      </p>
-                      <p className="text-[10px] text-[var(--text-muted)] mt-1.5 font-bold uppercase tracking-wider">
-                        2 hours ago
-                      </p>
-                    </div>
-                  </div>
-                  <div className="p-4 flex items-start gap-4 hover:bg-[var(--surface-dim)] transition-colors cursor-pointer">
-                    <div className="w-10 h-10 rounded-xl bg-[var(--primary-container)] flex items-center justify-center shrink-0">
-                      <Sparkles size={18} className="text-[var(--primary)]" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <p className="text-sm font-bold text-[var(--text)] truncate">
-                        Synthesized Clinical Notes
-                      </p>
-                      <p className="text-xs text-[var(--text-muted)] mt-0.5 truncate">
-                        Reference: Cardiology Practice Guidelines (2024)
-                      </p>
-                      <p className="text-[10px] text-[var(--text-muted)] mt-1.5 font-bold uppercase tracking-wider">
-                        Yesterday
-                      </p>
-                    </div>
-                  </div>
+                  )}
                 </div>
               </div>
               <PatientTriage />
@@ -598,60 +582,6 @@ export default function DashboardScreen() {
                   )}
                 </div>
               )}
-              {/* Saved Work */}
-              <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden backdrop-blur-md">
-                <div className="p-5 border-b border-[var(--border)]">
-                  <h3 className="font-semibold text-[var(--text)] flex items-center gap-2">
-                    <Bookmark size={18} className="text-[var(--text-muted)]" />
-                    Your Uploads &amp; Saves
-                  </h3>
-                </div>
-                <div className="p-2">
-                  <Link
-                    to="/knowledge"
-                    className="flex items-center gap-3 p-3 rounded-lg hover:bg-[var(--surface-dim)] transition-colors"
-                  >
-                    <FileText
-                      size={18}
-                      className="text-[var(--primary)] shrink-0"
-                    />
-                    <div className="min-w-0">
-                      <p className="text-sm font-bold text-[var(--text)] truncate">
-                        My Lecture Notes
-                      </p>
-                      <p className="text-xs text-[var(--text-muted)] truncate">
-                        Pharmacokinetics of Aminoglycosides
-                      </p>
-                    </div>
-                  </Link>
-                  <Link
-                    to="/knowledge"
-                    className="flex items-center gap-3 p-3 rounded-lg hover:bg-[var(--surface-dim)] transition-colors"
-                  >
-                    <BookOpen
-                      size={18}
-                      className="text-[var(--primary)] shrink-0"
-                    />
-                    <div className="min-w-0">
-                      <p className="text-sm font-bold text-[var(--text)] truncate">
-                        KDI Formulary Note
-                      </p>
-                      <p className="text-xs text-[var(--text-muted)] truncate">
-                        Saved Reference Link
-                      </p>
-                    </div>
-                  </Link>
-                </div>
-                <div className="p-4 border-t border-[var(--border)] bg-[var(--surface-dim)] text-center">
-                  <Link
-                    to="/knowledge"
-                    className="text-xs font-bold text-[var(--primary)] hover:underline"
-                  >
-                    Open Library →
-                  </Link>
-                </div>
-              </div>
-
               {/* Clinical Updates & Notifications */}
               <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden backdrop-blur-md">
                 <div className="p-5 border-b border-[var(--border)]">

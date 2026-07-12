@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import {
   Bookmark, BookmarkCheck, Search, Trash2, Loader2,
   Pill, BookOpen, X, Tag, ChevronDown, ExternalLink, Heart,
+  ArrowUpDown, Clock, Database,
 } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { DrugMonographService, type DrugMonograph, type UserMonograph } from '../services/drugMonograph.service';
@@ -11,6 +12,8 @@ interface SavedMonographsPanelProps {
   compact?: boolean;
 }
 
+type SortMode = 'date-desc' | 'date-asc' | 'name-asc' | 'name-desc';
+
 export default function SavedMonographsPanel({ onNavigateToDrug, compact }: SavedMonographsPanelProps) {
   const [items, setItems] = useState<UserMonograph[]>([]);
   const [total, setTotal] = useState(0);
@@ -19,6 +22,7 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [removing, setRemoving] = useState<string | null>(null);
+  const [sortMode, setSortMode] = useState<SortMode>('date-desc');
 
   const loadItems = useCallback(async () => {
     setLoading(true);
@@ -33,6 +37,19 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
   }, [search, selectedTag]);
 
   useEffect(() => { loadItems(); }, [loadItems]);
+
+  const sortedItems = [...items].sort((a, b) => {
+    switch (sortMode) {
+      case 'date-desc':
+        return new Date(b.saved_at).getTime() - new Date(a.saved_at).getTime();
+      case 'date-asc':
+        return new Date(a.saved_at).getTime() - new Date(b.saved_at).getTime();
+      case 'name-asc':
+        return (a.monograph?.name ?? '').localeCompare(b.monograph?.name ?? '');
+      case 'name-desc':
+        return (b.monograph?.name ?? '').localeCompare(a.monograph?.name ?? '');
+    }
+  });
 
   const allTags = [...new Set(items.flatMap(i => i.tags ?? []))].sort();
 
@@ -60,6 +77,28 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
             <p className="text-[10px] text-[var(--text-muted)]">{total} saved monograph{total !== 1 ? 's' : ''}</p>
           </div>
         </div>
+        {items.length > 0 && (
+          <div className="flex items-center gap-1">
+            <button
+              onClick={() => setSortMode(sortMode === 'date-desc' ? 'date-asc' : 'date-desc')}
+              className={`p-1.5 rounded-lg text-[10px] font-semibold transition-colors cursor-pointer flex items-center gap-1 ${
+                sortMode.startsWith('date') ? 'bg-rose-100 text-rose-700' : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)]'
+              }`}
+              title="Sort by date"
+            >
+              <Clock size={12} />
+            </button>
+            <button
+              onClick={() => setSortMode(sortMode === 'name-asc' ? 'name-desc' : 'name-asc')}
+              className={`p-1.5 rounded-lg text-[10px] font-semibold transition-colors cursor-pointer flex items-center gap-1 ${
+                sortMode.startsWith('name') ? 'bg-rose-100 text-rose-700' : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)]'
+              }`}
+              title="Sort by name"
+            >
+              <ArrowUpDown size={12} />
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Search */}
@@ -116,7 +155,7 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
         </div>
       ) : (
         <div className="space-y-2">
-          {items.map(item => (
+          {sortedItems.map(item => (
             <div
               key={item.id}
               className="bg-[var(--surface)] rounded-xl border border-[var(--border)] overflow-hidden transition-all hover:border-[var(--primary)]/30"
@@ -136,6 +175,9 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
                     <div className="flex items-center gap-2 mt-0.5">
                       <span className="text-[10px] text-[var(--text-muted)] font-mono">
                         {item.monograph?.drug_class_name ?? item.monograph?.drug_class ?? ''}
+                      </span>
+                      <span className="text-[9px] text-[var(--text-dim)]">
+                        {new Date(item.saved_at).toLocaleDateString()}
                       </span>
                       {(item.tags?.length ?? 0) > 0 && (
                         <span className="text-[10px] text-rose-500 font-semibold">
@@ -174,7 +216,7 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
 
               {expandedId === item.monograph_id && item.monograph && (
                 <div className="border-t border-[var(--border)] px-4 py-3 bg-[var(--surface-dim)]/30 max-h-80 overflow-y-auto">
-                  <div className="markdown-body text-xs space-y-2">
+                  <div className="markdown-body text-xs space-y-3">
                     <div className="grid grid-cols-2 gap-3">
                       <div>
                         <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">Generic Name</span>
@@ -206,6 +248,10 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
                     <div>
                       <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">Monitoring</span>
                       <p className="text-[var(--text-secondary)] mt-0.5 line-clamp-2">{item.monograph.monitoring}</p>
+                    </div>
+                    <div>
+                      <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">Saved On</span>
+                      <p className="text-[var(--text)] mt-0.5 font-medium">{new Date(item.saved_at).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
                     </div>
                   </div>
                 </div>

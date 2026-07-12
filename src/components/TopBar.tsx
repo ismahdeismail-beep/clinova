@@ -23,7 +23,6 @@ const TITLE_MAP: Record<string, string> = {
   pharma: 'Reasoning Engine',
   case: 'Risk Simulator',
   settings: 'Settings',
-  patients: 'Patients',
   'new-case': 'New Case',
   pharmacotherapy: 'Pharmacotherapy Review',
   'drug-index': 'Drug Index',
@@ -36,7 +35,6 @@ const SIMPLE_TITLE_MAP: Record<string, string> = {
   pharma: 'Medications',
   case: 'Simulations',
   settings: 'Settings',
-  patients: 'Patients',
 };
 
 function TopBar({ activeView }: TopBarProps) {

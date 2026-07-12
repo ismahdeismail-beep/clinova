@@ -100,6 +100,8 @@ export default function EducationHubScreen() {
   const [selectedModule, setSelectedModule] = useState<EducationModule | null>(null);
   const [selectedUnit, setSelectedUnit] = useState<EducationModuleUnit | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const scrollPositions = useRef<{ units: number }>({ units: 0 });
   const isAdmin = userData?.role === 'admin';
   const [viewMode, setViewMode] = useState<'grid' | 'graph'>('grid');
   
@@ -195,6 +197,9 @@ export default function EducationHubScreen() {
   };
 
   const handleUnitClick = (unit: EducationModuleUnit) => {
+    if (scrollContainerRef.current) {
+      scrollPositions.current.units = scrollContainerRef.current.scrollTop;
+    }
     setSelectedUnit(unit);
   };
 
@@ -205,6 +210,11 @@ export default function EducationHubScreen() {
 
   const handleBackToUnits = () => {
     setSelectedUnit(null);
+    setTimeout(() => {
+      if (scrollContainerRef.current && scrollPositions.current.units > 0) {
+        scrollContainerRef.current.scrollTop = scrollPositions.current.units;
+      }
+    }, 0);
   };
 
   const handleCreateUnit = async (e: React.FormEvent) => {
@@ -305,7 +315,7 @@ export default function EducationHubScreen() {
   });
 
   return (
-    <div className="flex-1 bg-[var(--bg)] min-h-screen overflow-y-auto">
+    <div ref={scrollContainerRef} className="flex-1 bg-[var(--bg)] min-h-screen overflow-y-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
         
         {/* Header Section */}
@@ -454,7 +464,7 @@ export default function EducationHubScreen() {
                           >
                             <Star size={14} className="transition-transform hover:scale-110" />
                           </button>
-                          <h3 className={`font-bold text-base truncate transition-colors ${unit.isCustom ? 'group-hover:text-purple-600' : 'group-hover:text-[var(--primary)]'}`}>{unit.title}</h3>
+                          <h3 className={`font-bold text-base whitespace-normal break-words transition-colors ${unit.isCustom ? 'group-hover:text-purple-600' : 'group-hover:text-[var(--primary)]'}`}>{unit.title}</h3>
                           {unit.isCustom && (
                             <span className="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded-full bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300 flex items-center gap-1 shrink-0">
                               <Sparkles size={10} /> Custom Folder
@@ -667,7 +677,7 @@ function ModuleCard({
           <ModuleIcon name={module.icon} />
         </div>
         <div>
-          <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors line-clamp-1">{module.title}</h3>
+          <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors whitespace-normal break-words">{module.title}</h3>
           <p className="text-xs text-[var(--text-muted)] mt-0.5">{getModuleUnits(module.id).length} Standard Units</p>
         </div>
       </div>

@@ -111,13 +111,23 @@ function renderMarkdown(text: string) {
         tr: ({ children }) => <tr className="hover:bg-[var(--surface-dim)] transition-colors">{children}</tr>,
         th: ({ children }) => <th className="p-3.5 font-semibold text-[var(--text)] uppercase tracking-wider text-xs">{children}</th>,
         td: ({ children }) => <td className="p-3.5 text-[var(--text-muted)] leading-relaxed">{children}</td>,
-        h1: ({ children }) => <h1 className="text-xl font-bold text-[var(--text)] mt-6 mb-3 tracking-tight border-b border-[var(--border)] pb-1.5">{children}</h1>,
-        h2: ({ children }) => <h2 className="text-lg font-bold text-[var(--text)] mt-5 mb-2.5 tracking-tight">{children}</h2>,
-        h3: ({ children }) => <h3 className="text-base font-bold text-[var(--text)] mt-4 mb-2 tracking-tight">{children}</h3>,
+        h1: ({ children }) => <h1 className="text-xl font-bold text-[var(--text)] mt-6 mb-3 tracking-tight border-b-2 border-[var(--primary)]/30 pb-2">{children}</h1>,
+        h2: ({ children }) => (
+          <div className="flex items-center gap-2 mt-6 mb-3">
+            <div className="w-1 h-5 bg-[var(--primary)] rounded-full shrink-0" />
+            <h2 className="text-lg font-bold text-[var(--text)] tracking-tight">{children}</h2>
+          </div>
+        ),
+        h3: ({ children }) => <h3 className="text-base font-bold text-[var(--text)] mt-5 mb-2 tracking-tight border-l-2 border-[var(--primary)]/40 pl-3">{children}</h3>,
         p: ({ children }) => <p className="text-base leading-relaxed text-[var(--text)] mb-4 last:mb-0">{processChildren(children)}</p>,
-        ul: ({ children }) => <ul className="list-disc pl-6 mb-4 space-y-2 text-base text-[var(--text)]">{children}</ul>,
-        ol: ({ children }) => <ol className="list-decimal pl-6 mb-4 space-y-2 text-base text-[var(--text)]">{children}</ol>,
-        li: ({ children }) => <li className="leading-relaxed">{processChildren(children)}</li>,
+        ul: ({ children }) => <ul className="space-y-2 mb-5">{children}</ul>,
+        ol: ({ children }) => <ol className="space-y-2 mb-5">{children}</ol>,
+        li: ({ children }) => <li className="flex items-start gap-2 text-base leading-relaxed"><span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)]/60 mt-2 shrink-0" />{processChildren(children)}</li>,
+        blockquote: ({ children }) => (
+          <div className="bg-[var(--surface-dim)]/60 border-l-4 border-[var(--primary)]/50 rounded-r-xl px-5 py-4 my-5 text-base text-[var(--text)] shadow-sm">
+            {children}
+          </div>
+        ),
         code: ({ inline, className, children, ...props }: any) => {
           return (
             <code className="bg-[var(--surface-dim)] border border-[var(--border)] text-[var(--primary)] px-1.5 py-0.5 rounded text-sm font-mono" {...props}>

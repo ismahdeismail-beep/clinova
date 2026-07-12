@@ -8,7 +8,6 @@ import {
   ShieldAlert,
   HeartPulse,
 } from "lucide-react";
-import { Link } from "react-router-dom";
 import { getPatientInitials } from "../lib/patientUtils";
 
 interface TriagePatient {
@@ -217,23 +216,17 @@ export function PatientTriage() {
               </div>
             </div>
 
-            <Link
-              to="/patients"
-              className="p-2 rounded-lg text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary-container)] transition-colors shrink-0"
-            >
-              <ChevronRight size={18} />
-            </Link>
+            <div className="p-2 shrink-0">
+              <ChevronRight size={18} className="text-[var(--text-muted)] opacity-30" />
+            </div>
           </div>
         ))}
       </div>
 
       <div className="p-3 border-t border-[var(--border)] bg-[var(--surface-dim)]">
-        <Link
-          to="/patients"
-          className="text-xs font-semibold text-[var(--primary)] w-full text-center block hover:underline"
-        >
-          View All Patients in Ward
-        </Link>
+        <div className="text-xs font-medium text-[var(--text-muted)] text-center">
+          Patient management is integrated into Care Plan Review
+        </div>
       </div>
     </div>
   );

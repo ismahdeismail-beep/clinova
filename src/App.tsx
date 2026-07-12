@@ -112,12 +112,16 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
   const location = useLocation();
   const { userData, logout } = useAuth();
 
+  const isClinicalModule = ['/cases', '/review', '/drugs', '/assistant'].some(path => location.pathname.startsWith(path));
+  const isLearningModule = location.pathname.startsWith('/knowledge');
+
   const groups = [
     {
       label: 'Learn',
       links: [
         { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
       ],
+      show: !isClinicalModule // Only show when not in a clinical module or at root
     },
     {
       label: 'Clinical Practice',
@@ -127,12 +131,14 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
         { to: '/drugs', label: 'Drug Index', icon: Pill },
         { to: '/assistant', label: 'Clinical Support', icon: Bot },
       ],
+      show: isClinicalModule || location.pathname === '/'
     },
     {
       label: 'Knowledge',
       links: userData?.role === 'admin'
         ? [{ to: '/admin/kbms', label: 'Knowledge Base', icon: Database }]
         : [],
+      show: userData?.role === 'admin'
     },
     {
       label: 'Personal',
@@ -141,6 +147,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
         { to: '/notifications', label: 'Notifications', icon: Bell },
         { to: '/settings', label: 'Settings', icon: Settings },
       ],
+      show: true
     },
     ...(userData?.role === 'admin'
       ? [{
@@ -149,6 +156,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
             { to: '/admin', label: 'Admin Console', icon: ShieldCheck },
             { to: '/admin/ai', label: 'AI Gateway', icon: Cpu },
           ],
+          show: true
         }]
       : []),
   ];
@@ -168,13 +176,14 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
           </div>
           <button 
             onClick={() => setIsOpen(false)}
+            aria-label="Close sidebar"
             className="md:hidden p-1.5 text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)] rounded-full transition-colors"
           >
             <X size={18} />
           </button>
         </div>
         <nav className="p-3 space-y-4 flex-1 mt-2 overflow-y-auto">
-          {groups.map((group) =>
+          {groups.filter(g => g.show).map((group) =>
             group.links.length ? (
               <div key={group.label}>
                 <div className="px-3 mb-1 text-[0.65rem] font-bold uppercase tracking-wider text-[var(--text-muted)]/70">

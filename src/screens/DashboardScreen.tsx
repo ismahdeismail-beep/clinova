@@ -271,54 +271,33 @@ export default function DashboardScreen() {
                     Quick Access Tools
                   </h3>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4">
                   <Link
                     to="/review"
-                    className="flex flex-col items-center justify-center p-4 md:p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
+                    className="flex flex-col items-center justify-center p-4 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group shadow-sm backdrop-blur-md"
                   >
-                    <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform">
-                      <ClipboardList size={24} />
+                    <div className="w-10 h-10 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                      <ClipboardList size={20} />
                     </div>
-                    <span className="text-xs md:text-sm font-bold text-[var(--text)]">
-                      Care Plan
-                    </span>
-                    <span className="text-[10px] md:text-xs text-[var(--text-muted)] mt-1">Review &amp; Audit</span>
+                    <span className="text-xs font-bold text-[var(--text)]">Care Plan Review</span>
                   </Link>
                   <Link
                     to="/knowledge"
-                    className="flex flex-col items-center justify-center p-4 md:p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
+                    className="flex flex-col items-center justify-center p-4 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group shadow-sm backdrop-blur-md"
                   >
-                    <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform">
-                      <BookOpen size={24} />
+                    <div className="w-10 h-10 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                      <BookOpen size={20} />
                     </div>
-                    <span className="text-xs md:text-sm font-bold text-[var(--text)]">
-                      Online Books
-                    </span>
-                    <span className="text-[10px] md:text-xs text-[var(--text-muted)] mt-1">KDI, Medscape</span>
-                  </Link>
-                  <Link
-                    to="/knowledge"
-                    className="flex flex-col items-center justify-center p-4 md:p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
-                  >
-                    <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform">
-                      <GraduationCap size={24} />
-                    </div>
-                    <span className="text-xs md:text-sm font-bold text-[var(--text)]">
-                      Study Prep
-                    </span>
-                    <span className="text-[10px] md:text-xs text-[var(--text-muted)] mt-1">Convert Notes</span>
+                    <span className="text-xs font-bold text-[var(--text)]">Knowledge Hub</span>
                   </Link>
                   <Link
                     to="/assistant"
-                    className="flex flex-col items-center justify-center p-4 md:p-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group text-center h-full shadow-sm backdrop-blur-md"
+                    className="flex flex-col items-center justify-center p-4 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group shadow-sm backdrop-blur-md"
                   >
-                    <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform">
-                      <Bot size={24} />
+                    <div className="w-10 h-10 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                      <Bot size={20} />
                     </div>
-                    <span className="text-xs md:text-sm font-bold text-[var(--text)]">
-                      Ask Assistant
-                    </span>
-                    <span className="text-[10px] md:text-xs text-[var(--text-muted)] mt-1">Ask Questions</span>
+                    <span className="text-xs font-bold text-[var(--text)]">Ask Assistant</span>
                   </Link>
                 </div>
               </div>

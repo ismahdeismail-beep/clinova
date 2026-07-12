@@ -704,7 +704,7 @@ export default function DrugIndexScreen() {
                     Retry Request
                   </button>
                 </div>
-              ) : monograph ? (
+                      ) : monograph ? (
                 <DrugMonographView
                   content={monograph}
                   drugName={selectedDrugName || searchQuery || 'Medication Monograph'}

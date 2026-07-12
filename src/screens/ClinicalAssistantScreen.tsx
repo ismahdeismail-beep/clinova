@@ -1131,10 +1131,7 @@ export default function ClinicalAssistantScreen() {
   };
 
   const handleSuggestionClick = (text: string) => {
-    setInput(text);
-    if (textareaRef.current) {
-      textareaRef.current.focus();
-    }
+    handleSend(text);
   };
 
 
@@ -1280,7 +1277,7 @@ export default function ClinicalAssistantScreen() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
-                className="bg-[var(--surface)] border border-[var(--border)] rounded-3xl p-6 sm:p-8 shadow-xl text-center flex flex-col items-center gap-5"
+                className="bg-[var(--surface)] border border-[var(--border)] rounded-3xl p-6 sm:p-8 shadow-md text-center flex flex-col items-center gap-5"
               >
                 <div className="w-14 h-14 rounded-2xl bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20 shadow-inner">
                   <Sparkles size={32} className="text-[var(--primary)]" />
@@ -1406,7 +1403,7 @@ export default function ClinicalAssistantScreen() {
                       <div className={`rounded-3xl px-5 py-4 shadow-sm text-base leading-relaxed max-w-full overflow-x-auto scrollbar-thin ${
                         isUser 
                           ? 'bg-[var(--primary)] text-[var(--primary-foreground)] rounded-tr-none shadow-md font-medium' 
-                          : 'bg-[var(--surface)] border border-[var(--border)] text-[var(--text)] rounded-tl-none shadow-xs'
+                          : 'bg-[var(--surface)] border border-[var(--border)] border-l-2 border-l-[var(--primary)]/30 text-[var(--text)] rounded-tl-none shadow-xs'
                       }`}>
                         {isUser ? (
                           <div className="space-y-2">
@@ -1540,7 +1537,7 @@ export default function ClinicalAssistantScreen() {
         </AnimatePresence>
         
         {/* Floating Interactive Input Composer Area */}
-        <div className="p-4 border-t border-[var(--border)]/80 bg-[var(--surface)] shrink-0 z-10 shadow-xl">
+        <div className="p-3 sm:p-4 border-t border-[var(--border)]/80 bg-[var(--surface)] shrink-0 z-10 shadow-lg">
           <div className="max-w-3xl mx-auto w-full">
           
           {/* Active Databases Config Dropdown Panel */}
@@ -1780,7 +1777,7 @@ export default function ClinicalAssistantScreen() {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Ask anything about diseases, drugs, laboratory results or patient management..." 
-                className="w-full pl-4 pr-2 py-3.5 max-h-40 min-h-[48px] bg-transparent outline-none text-[var(--text)] text-sm sm:text-base resize-none placeholder-slate-500 leading-relaxed self-center font-sans"
+                className="w-full pl-4 pr-2 py-3 max-h-36 min-h-[44px] bg-transparent outline-none text-[var(--text)] text-sm sm:text-base resize-none placeholder-slate-500 leading-relaxed self-center font-sans"
                 rows={1}
               />
               <div className="flex items-center gap-1.5 pb-2 shrink-0 self-end">

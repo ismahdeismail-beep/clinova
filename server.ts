@@ -20,7 +20,8 @@ import {
   gatewayLogs,
   loadBalancingMode,
   setLoadBalancingMode,
-  updateProviderConfig
+  updateProviderConfig,
+  embedText
 } from './src/server/aiRouter.js';
 import { getPrompts, updatePrompt, resetPrompts } from './src/server/promptRegistry.js';
 import { fetchOpenFdaLabel, resolveRxCui, fetchRxNormInteractions } from './src/server/externalMedicinesApi.js';
@@ -2424,6 +2425,125 @@ app.delete('/api/admin/clinical-cases/:id', async (req, res) => {
     const { error } = await adminSupabase.from('clinical_cases').delete().eq('id', req.params.id);
     if (error) return res.status(400).json({ error: error.message });
     res.json({ success: true });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// ================================================================
+// Embeddings ingestion pipeline (Phase 10)
+// Populates document_embeddings for semantic search / RAG. Runs in
+// bounded batches so it stays within provider rate limits and the
+// serverless request budget. Call repeatedly (or from a cron) until
+// { remaining: 0 }. Writes use the service-role client (bypasses RLS).
+// ================================================================
+
+function truncateForEmbedding(text: string, max = 2000): string {
+  const t = (text || '').replace(/\s+/g, ' ').trim();
+  return t.length > max ? t.slice(0, max) : t;
+}
+
+function buildEmbeddingText(contentType: string, row: any): string {
+  if (contentType === 'drug') {
+    return [
+      `Drug: ${row.name}`,
+      row.generic_name ? `Generic: ${row.generic_name}` : '',
+      row.drug_class ? `Class: ${row.drug_class}` : '',
+      Array.isArray(row.indications) ? `Indications: ${row.indications.join('; ')}` : '',
+      Array.isArray(row.contraindications) ? `Contraindications: ${row.contraindications.join('; ')}` : '',
+      Array.isArray(row.side_effects) ? `Side effects: ${row.side_effects.join('; ')}` : '',
+    ].filter(Boolean).join('\n');
+  }
+  if (contentType === 'disease') {
+    return [
+      `Disease: ${row.name}`,
+      row.specialty ? `Specialty: ${row.specialty}` : '',
+      row.icd10_code ? `ICD-10: ${row.icd10_code}` : '',
+      row.aliases ? `Aliases: ${row.aliases}` : '',
+    ].filter(Boolean).join('\n');
+  }
+  // clinical case
+  return [
+    `Case: ${row.title}`,
+    row.disease ? `Disease: ${row.disease}` : '',
+    row.diagnosis ? `Diagnosis: ${row.diagnosis}` : '',
+    row.specialty ? `Specialty: ${row.specialty}` : '',
+  ].filter(Boolean).join('\n');
+}
+
+const EMBED_SOURCES: { contentType: string; table: string; select: string; filter?: (q: any) => any }[] = [
+  { contentType: 'drug', table: 'drug_monographs', select: 'id, name, generic_name, drug_class, indications, contraindications, side_effects' },
+  { contentType: 'disease', table: 'diseases', select: 'id, name, specialty, icd10_code, aliases' },
+  { contentType: 'case', table: 'clinical_cases', select: 'id, title, disease, diagnosis, specialty', filter: (q: any) => q.eq('status', 'published') },
+];
+
+app.post('/api/admin/embeddings/reindex', async (req, res) => {
+  if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+  if (!process.env.GEMINI_API_KEY) return res.status(500).json({ error: 'GEMINI_API_KEY not configured' });
+
+  const contentTypeFilter: string | undefined = req.body?.contentType;
+  const batchSize: number = Math.min(Math.max(Number(req.body?.batchSize) || 25, 1), 100);
+
+  try {
+    const { data: existing } = await adminSupabase
+      .from('document_embeddings')
+      .select('content_type, content_id');
+    const done = new Set((existing ?? []).map((e: any) => `${e.content_type}:${e.content_id}`));
+
+    let processed = 0;
+    let remaining = 0;
+    const errors: string[] = [];
+
+    for (const src of EMBED_SOURCES) {
+      if (contentTypeFilter && src.contentType !== contentTypeFilter) continue;
+
+      let q = adminSupabase.from(src.table).select(src.select);
+      if (src.filter) q = src.filter(q);
+      const { data: rows, error } = await q;
+      if (error) { errors.push(`${src.table}: ${error.message}`); continue; }
+
+      const pending = (rows ?? []).filter((r: any) => !done.has(`${src.contentType}:${r.id}`));
+      remaining += pending.length;
+
+      for (const row of pending) {
+        if (processed >= batchSize) break;
+        try {
+          const text = truncateForEmbedding(buildEmbeddingText(src.contentType, row));
+          if (!text) continue;
+          const embedding = await embedText(text);
+          const { error: insErr } = await adminSupabase.from('document_embeddings').insert({
+            content_type: src.contentType,
+            content_id: String(row.id),
+            chunk_index: 0,
+            chunk_text: text,
+            embedding,
+            metadata: { title: row.name || row.title || '' },
+          });
+          if (insErr) { errors.push(`insert ${src.contentType}/${row.id}: ${insErr.message}`); continue; }
+          processed++;
+          remaining--;
+        } catch (e: any) {
+          errors.push(`embed ${src.contentType}/${row.id}: ${e.message}`);
+        }
+      }
+      if (processed >= batchSize) break;
+    }
+
+    res.json({ success: true, processed, remaining, errors: errors.slice(0, 10) });
+  } catch (e: any) {
+    console.error('Embeddings reindex error:', e);
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// Lightweight status: how many items are embedded vs total.
+app.get('/api/admin/embeddings/status', async (_req, res) => {
+  if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+  try {
+    const { count: embedded } = await adminSupabase
+      .from('document_embeddings')
+      .select('*', { count: 'exact', head: true });
+    res.json({ success: true, embedded: embedded ?? 0 });
   } catch (e: any) {
     res.status(500).json({ error: e.message });
   }

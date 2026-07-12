@@ -435,6 +435,36 @@ export async function streamGenerateContent(
   return '';
 }
 
+// Embeddings — used by the background ingestion pipeline (Phase 10) to
+// populate document_embeddings for semantic search / RAG. Uses Gemini
+// text-embedding-004 which returns 768-dim vectors (matches vector(768)).
+export async function embedText(text: string): Promise<number[]> {
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) throw new Error('GEMINI_API_KEY not configured for embeddings');
+  const client = new GoogleGenAI({ apiKey });
+  const result: any = await client.models.embedContent({
+    model: 'text-embedding-004',
+    contents: text,
+  });
+  const values: number[] | undefined =
+    result?.embeddings?.[0]?.values ?? result?.embedding?.values;
+  if (!values || values.length === 0) {
+    throw new Error('Embedding provider returned no vector');
+  }
+  return values;
+}
+
+// Batch helper: embeds many texts sequentially with light backoff so we stay
+// within provider rate limits during bulk ingestion.
+export async function embedTextBatch(texts: string[]): Promise<number[][]> {
+  const out: number[][] = [];
+  for (const t of texts) {
+    out.push(await embedText(t));
+    await new Promise((r) => setTimeout(r, 120));
+  }
+  return out;
+}
+
 // Mock-and-Live Execution for Gateway APIs
 async function executeProvider(provider: string, request: any): Promise<{ text: string }> {
   // Let's implement live calls for Gemini and OpenRouter if key exists, otherwise elegant medical simulation

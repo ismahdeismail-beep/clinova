@@ -14,6 +14,7 @@ import { useSearchParams } from 'react-router-dom';
 import { DrugMonographService, type DrugMonograph } from '../services/drugMonograph.service';
 import { monographToMarkdown } from '../lib/monographToMarkdown';
 import SavedMonographsPanel, { SaveMonographButton } from '../components/SavedMonographsPanel';
+import { supabase } from '../lib/supabase';
 
 interface QuickDrug {
   name: string;
@@ -64,25 +65,6 @@ const QUICK_DRUGS: QuickDrug[] = [
   { name: 'Amitriptyline', category: 'Central Nervous System' },
 ];
 
-const CATEGORIES = [
-  'Anti-infectives',
-  'Cardiovascular',
-  'Central Nervous System',
-  'Analgesics',
-  'Gastrointestinal',
-  'Endocrine',
-  'Respiratory',
-  'Anticoagulants',
-  'Oncology',
-  'Immunology',
-  'Dermatology',
-  'Renal/Electrolytes',
-  'Nutrition/Vitamins',
-  'Anaesthesia',
-  'Ophthalmology',
-  'Toxicology/Antidotes',
-];
-
 export default function DrugIndexScreen() {
   const { userData } = useAuth();
   const [searchParams] = useSearchParams();
@@ -99,6 +81,30 @@ export default function DrugIndexScreen() {
   const [monograph, setMonograph] = useState<string | null>(null);
   const [monographKey, setMonographKey] = useState<string>('');
   const [currentMonographId, setCurrentMonographId] = useState<string | null>(null);
+
+  // Drug classes lookup for category filtering
+  const [broadCategories, setBroadCategories] = useState<string[]>([]);
+  const [drugClassToBroad, setDrugClassToBroad] = useState<Map<string, string>>(new Map());
+
+  useEffect(() => {
+    const loadDrugClasses = async () => {
+      const { data } = await supabase
+        .from('drug_classes')
+        .select('id, name, parent_id');
+      if (!data) return;
+      const byId = new Map(data.map(dc => [dc.id, dc]));
+      const childToBroad = new Map<string, string>();
+      data.filter(dc => dc.parent_id).forEach(child => {
+        const parent = byId.get(child.parent_id);
+        if (parent) childToBroad.set(child.id, parent.name);
+      });
+      setBroadCategories(
+        data.filter(dc => !dc.parent_id).map(dc => dc.name).sort()
+      );
+      setDrugClassToBroad(childToBroad);
+    };
+    loadDrugClasses();
+  }, []);
 
   // Seeded Supabase catalog (canonical source of monographs, mirrored from clinical cases pattern)
   const [catalog, setCatalog] = useState<DrugMonograph[]>([]);
@@ -439,12 +445,15 @@ export default function DrugIndexScreen() {
     const q = searchQuery.trim().toLowerCase();
     let list = catalog;
     if (selectedCategory) {
-      list = list.filter(m => (m.drug_class || '').toLowerCase().includes(selectedCategory.toLowerCase()));
+      list = list.filter(m => {
+        if (!m.drug_class_id) return false;
+        return drugClassToBroad.get(m.drug_class_id) === selectedCategory;
+      });
     } else if (q) {
       list = list.filter(m =>
         (m.name || '').toLowerCase().includes(q) ||
         (m.generic_name || '').toLowerCase().includes(q) ||
-        (m.drug_class || '').toLowerCase().includes(q)
+        (m.drug_class_name || '').toLowerCase().includes(q)
       );
     }
     return list;
@@ -571,7 +580,7 @@ export default function DrugIndexScreen() {
               <div className="px-4 py-3 bg-[var(--surface-dim)] rounded-xl font-bold text-xs text-[var(--text-muted)] uppercase tracking-wider border-l-4 border-[var(--primary)] mb-3 text-left">
                 Therapeutic Classes
               </div>
-              {CATEGORIES.map((cat) => {
+              {broadCategories.map((cat) => {
                 const isSelected = selectedCategory === cat;
                 return (
                   <button
@@ -746,9 +755,9 @@ export default function DrugIndexScreen() {
                           {m.generic_name && m.generic_name !== m.name && (
                             <div className="text-xs text-[var(--text-muted)]">{m.generic_name}</div>
                           )}
-                          {m.drug_class && (
+                          {m.drug_class_name && (
                             <div className="mt-2 inline-block text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded bg-[var(--surface-dim)] text-[var(--text-secondary)]">
-                              {m.drug_class}
+                              {m.drug_class_name}
                             </div>
                           )}
                         </button>

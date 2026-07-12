@@ -14,6 +14,16 @@
   - Legacy `drug_monographs.drug_class` text column intentionally kept (not dropped) as a safe fallback until the frontend is updated to read `drug_class_id`.
   - Migration recorded at `supabase/migrations/000004_drug_classes.sql` (applied live first, file added retroactively to keep repo and database in sync).
 
+### Changed
+- **Frontend migrated from `drug_class` to `drug_class_id`**: `DrugMonograph` interface now includes `drug_class_id` and `drug_class_name` (resolved via FK join). All service queries include `drug_classes(name)` join. UI components (`DrugIndexScreen`, `SavedMonographsPanel`) read `drug_class_name` with fallback to legacy `drug_class`. Internal consumers (`ragRouter`, `knowledgeEngine`, `monographToMarkdown`, `drugInformation` skill) use `drug_class_name || drug_class` for backward compatibility.
+- **Category filter now uses relational `drug_classes` tree**: Instead of the static shorthand `CATEGORIES` array and string `includes()` matching, categories are loaded dynamically from `drug_classes` (16 broad categories) and filtered by resolving `drug_class_id` → broad parent via the FK tree.
+- **`firebase.json`**: Added `functions.source` config for Firebase Cloud Functions deployment.
+
+### Added
+- **Firebase blocking Cloud Functions** (`functions/src/setAuthenticatedRole.ts`): Two Gen 2 identity functions (`beforecreated`, `beforesignedin`) that assign the `role: 'authenticated'` custom claim on every sign-up/sign-in, required by Supabase's Third-Party Auth integration for RLS.
+- **Backfill script** (`scripts/backfill-role-claim.js`): One-time script to retroactively assign `role: 'authenticated'` to all existing Firebase Auth users. Requires a service account key.
+
 ### Known open items
-- `drug_class` legacy text column still needs to be dropped once frontend queries move to `drug_class_id`.
-- Firebase ↔ Supabase Third-Party Auth integration still needs to be added manually via the Supabase Dashboard (cannot be applied via SQL/migration tooling) — pending confirmation.
+- `drug_class` legacy text column still needs to be dropped once frontend migration is verified stable.
+- Firebase OIDC provider must be configured in the Supabase Dashboard (project settings > Authentication > Third-Party Auth) for the custom claims to take effect.
+- `functions/` directory needs `npm install` before deploying blocking functions.

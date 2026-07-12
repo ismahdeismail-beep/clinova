@@ -67,7 +67,7 @@ export const drugInformationSkill: Skill = {
 
         content = `## ${monograph.name} (${monograph.generic_name})
 
-**Drug Class:** ${monograph.drug_class}
+**Drug Class:** ${monograph.drug_class_name || monograph.drug_class}
 
 ### Indications
 - ${monograph.indications.join('\n- ')}

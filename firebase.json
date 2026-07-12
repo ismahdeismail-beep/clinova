@@ -1,4 +1,13 @@
 {
+  "functions": {
+    "source": "functions",
+    "ignore": [
+      "node_modules",
+      ".git",
+      "tsconfig.json",
+      "src"
+    ]
+  },
   "firestore": [
     {
       "database": "ai-studio-clin-5533e234-e701-45e0-9e83-6631e48a030b",

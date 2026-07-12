@@ -92,7 +92,7 @@ export const KnowledgeEngine = {
 
         for (const m of results) {
           const parts: string[] = [];
-          parts.push(`CLASS: ${m.drug_class}`);
+          parts.push(`CLASS: ${m.drug_class_name || m.drug_class}`);
           parts.push(`INDICATIONS: ${m.indications.slice(0, 3).join('; ')}`);
           parts.push(`CONTRAINDICATIONS: ${m.contraindications.slice(0, 3).join('; ')}`);
           parts.push(`KEY SIDE EFFECTS: ${m.side_effects.slice(0, 3).join('; ')}`);

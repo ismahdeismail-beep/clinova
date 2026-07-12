@@ -135,7 +135,7 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
                     </button>
                     <div className="flex items-center gap-2 mt-0.5">
                       <span className="text-[10px] text-[var(--text-muted)] font-mono">
-                        {item.monograph?.drug_class ?? ''}
+                        {item.monograph?.drug_class_name ?? item.monograph?.drug_class ?? ''}
                       </span>
                       {(item.tags?.length ?? 0) > 0 && (
                         <span className="text-[10px] text-rose-500 font-semibold">
@@ -182,7 +182,7 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
                       </div>
                       <div>
                         <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">Drug Class</span>
-                        <p className="text-[var(--text)] font-medium mt-0.5">{item.monograph.drug_class}</p>
+                        <p className="text-[var(--text)] font-medium mt-0.5">{item.monograph.drug_class_name || item.monograph.drug_class}</p>
                       </div>
                     </div>
                     <div>

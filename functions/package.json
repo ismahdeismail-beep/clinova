@@ -1,0 +1,17 @@
+{
+  "name": "clinova-auth-claims",
+  "private": true,
+  "description": "Firebase Cloud Functions for Supabase auth integration",
+  "main": "lib/setAuthenticatedRole.js",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "npm run build && firebase deploy --only functions:beforecreated,functions:beforesignedin"
+  },
+  "dependencies": {
+    "firebase-functions": "^6.0.0",
+    "firebase-admin": "^12.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}

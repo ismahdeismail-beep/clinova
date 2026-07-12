@@ -5,7 +5,7 @@ export function monographToMarkdown(m: DrugMonograph): string {
 
   lines.push(`# ${m.name} Monograph`);
   lines.push('');
-  lines.push(`**Drug Class:** ${m.drug_class}`);
+  lines.push(`**Drug Class:** ${m.drug_class_name || m.drug_class}`);
   lines.push('');
 
   if (m.indications.length > 0) {

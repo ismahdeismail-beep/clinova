@@ -104,7 +104,7 @@ export const RAGRouter = {
     if (monographs && monographs.length > 0) {
       context += `### Drug Monographs (${monographs.length})\n\n`;
       for (const m of monographs) {
-        context += `**${m.name}** (${m.drug_class})\n`;
+        context += `**${m.name}** (${m.drug_class_name || m.drug_class})\n`;
         context += `- Indications: ${m.indications.slice(0, 3).join('; ')}\n`;
         context += `- Contraindications: ${m.contraindications.slice(0, 3).join('; ')}\n`;
         context += `- Key interactions: ${m.interactions.slice(0, 3).join('; ')}\n\n`;

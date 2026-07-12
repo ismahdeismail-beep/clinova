@@ -5,6 +5,8 @@ export interface DrugMonograph {
   name: string;
   generic_name: string;
   drug_class: string;
+  drug_class_id: string | null;
+  drug_class_name: string;
   indications: string[];
   contraindications: string[];
   side_effects: string[];
@@ -16,11 +18,14 @@ export interface DrugMonograph {
 }
 
 function mapRow(row: any): DrugMonograph {
+  const drugClassInfo = row.drug_class_info;
   return {
     id: row.id,
     name: row.name,
     generic_name: row.generic_name,
-    drug_class: row.drug_class,
+    drug_class: row.drug_class ?? '',
+    drug_class_id: row.drug_class_id ?? null,
+    drug_class_name: drugClassInfo?.name ?? row.drug_class ?? '',
     indications: row.indications ?? [],
     contraindications: row.contraindications ?? [],
     side_effects: row.side_effects ?? [],
@@ -47,7 +52,7 @@ export const DrugMonographService = {
     if (!supabase) return [];
     const { data, error } = await supabase
       .from('drug_monographs')
-      .select('*')
+      .select('*, drug_class_info:drug_classes(name)')
       .order('name');
     if (error) throw error;
     return (data ?? []).map(mapRow);
@@ -57,7 +62,7 @@ export const DrugMonographService = {
     if (!supabase) return null;
     const { data, error } = await supabase
       .from('drug_monographs')
-      .select('*')
+      .select('*, drug_class_info:drug_classes(name)')
       .eq('id', id)
       .single();
     if (error) return null;
@@ -68,7 +73,7 @@ export const DrugMonographService = {
     if (!supabase) return null;
     const { data, error } = await supabase
       .from('drug_monographs')
-      .select('*')
+      .select('*, drug_class_info:drug_classes(name)')
       .ilike('name', name)
       .single();
     if (error) return null;
@@ -79,7 +84,7 @@ export const DrugMonographService = {
     if (!supabase) return [];
     const { data, error } = await supabase
       .from('drug_monographs')
-      .select('*')
+      .select('*, drug_class_info:drug_classes(name)')
       .or(`name.ilike.%${query}%,generic_name.ilike.%${query}%,drug_class.ilike.%${query}%`)
       .order('name');
     if (error) throw error;
@@ -90,7 +95,7 @@ export const DrugMonographService = {
     if (!supabase) return [];
     const { data, error } = await supabase
       .from('drug_monographs')
-      .select('*')
+      .select('*, drug_class_info:drug_classes(name)')
       .contains('indications', [indication])
       .order('name');
     if (error) throw error;
@@ -101,7 +106,7 @@ export const DrugMonographService = {
     if (!supabase) return [];
     const { data, error } = await supabase
       .from('drug_monographs')
-      .select('*')
+      .select('*, drug_class_info:drug_classes(name)')
       .ilike('drug_class', `%${drugClass}%`)
       .order('name');
     if (error) throw error;
@@ -178,7 +183,7 @@ export const DrugMonographService = {
 
     let query = supabase
       .from('user_monographs')
-      .select('*, monograph:drug_monographs(*)', { count: 'exact' })
+      .select('*, monograph:drug_monographs(*, drug_class_info:drug_classes(name))', { count: 'exact' })
       .eq('user_id', user.id);
 
     if (opts?.tag) {

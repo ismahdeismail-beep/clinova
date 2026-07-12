@@ -1035,7 +1035,7 @@ export default function ClinicalAssistantScreen() {
             }
           }
 
-          const res = await fetch('/api/gemini/assistant', {
+          const res = await fetch('/api/gemini/assistant/stream', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -1056,13 +1056,44 @@ export default function ClinicalAssistantScreen() {
             }),
           });
 
-          if (!res.ok) {
+          // Non-streamed error (e.g. 400 validation) still returns JSON.
+          if (!res.ok && (res.headers.get('content-type') || '').includes('application/json')) {
             const errorData = await res.json().catch(() => ({}));
             throw new Error(errorData.error || `Clinical Support service failed with status ${res.status}`);
           }
 
-          const data = await res.json();
-          responseContent = data.text;
+          // Stream SSE chunks live into the thinking message bubble.
+          const reader = res.body?.getReader();
+          const decoder = new TextDecoder();
+          let buffer = '';
+          let streamedText = '';
+          if (reader) {
+            while (true) {
+              const { done, value } = await reader.read();
+              if (done) break;
+              buffer += decoder.decode(value, { stream: true });
+              const parts = buffer.split('\n\n');
+              buffer = parts.pop() || '';
+              for (const part of parts) {
+                const trimmed = part.trim();
+                if (!trimmed.startsWith('data:')) continue;
+                const payload = trimmed.slice(5).trim();
+                if (!payload) continue;
+                try {
+                  const evt = JSON.parse(payload);
+                  if (evt.text) {
+                    streamedText += evt.text;
+                    setMessages(prev => prev.map(m => m.id === thinkingMsgId ? { ...m, content: streamedText } : m));
+                  } else if (evt.error) {
+                    throw new Error(evt.error);
+                  }
+                } catch (parseErr) {
+                  /* ignore keep-alive / partial frames */
+                }
+              }
+            }
+          }
+          responseContent = streamedText || 'No response received.';
           success = true;
           break;
         } catch (err: any) {

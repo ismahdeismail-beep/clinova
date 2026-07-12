@@ -968,9 +968,9 @@ export default function PharmacotherapyReviewScreen() {
       )}
 
       <div className="flex flex-col md:flex-row gap-6 items-start">
-        {/* Navigation Sidebar - Collapsible */}
+        {/* Navigation Sidebar - Collapsible (vertical on desktop, horizontal scroll on mobile) */}
         <div className={`w-full md:w-64 shrink-0 bg-[var(--surface)] border border-[var(--border)] rounded-xl overflow-hidden shadow-sm md:sticky md:top-6 transition-all duration-300 ease-in-out ${sidebarCollapsed ? 'md:w-14' : 'md:w-64'}`}>
-          <div className="p-4 bg-[var(--surface-dim)] border-b border-[var(--border)] flex items-center justify-between">
+          <div className="hidden md:flex p-4 bg-[var(--surface-dim)] border-b border-[var(--border)] items-center justify-between">
             <h2 className="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)]">
               {!sidebarCollapsed && 'Form Sections'}
             </h2>
@@ -983,7 +983,7 @@ export default function PharmacotherapyReviewScreen() {
               <ChevronLeft size={18} className={`text-[var(--text)] transition-transform ${sidebarCollapsed ? 'rotate-180' : ''}`} />
             </button>
           </div>
-          <div className={`flex flex-col overflow-hidden transition-all duration-300 ${sidebarCollapsed ? 'md:w-14' : ''}`}>
+          <div className={`flex flex-row md:flex-col overflow-x-auto md:overflow-hidden transition-all duration-300 ${sidebarCollapsed ? 'md:w-14' : ''}`}>
             {tabs.map(tab => {
               const Icon = tab.icon;
               const isActive = activeTab === tab.id;
@@ -991,15 +991,15 @@ export default function PharmacotherapyReviewScreen() {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center gap-3 px-4 py-3 text-sm font-medium transition-colors whitespace-nowrap md:whitespace-normal border-l-4 md:border-l-4 md:border-b-0 border-b-4 shrink-0 ${
+                  className={`flex items-center gap-3 px-4 py-3 text-sm font-medium transition-colors whitespace-nowrap shrink-0 border-b-4 md:border-b-0 md:border-l-4 ${
                     isActive 
                       ? 'border-[var(--primary)] bg-[var(--primary-container)] text-[var(--primary)]' 
                       : 'border-transparent text-[var(--text)] hover:bg-[var(--surface-dim)] hover:text-[var(--primary)]'
                   }`}
-                  title={sidebarCollapsed ? tab.label : undefined}
+                  title={tab.label}
                 >
                   <Icon size={18} className="shrink-0" />
-                  {!sidebarCollapsed && <span className="truncate">{tab.label}</span>}
+                  <span className="truncate">{tab.label}</span>
                 </button>
               );
             })}
@@ -1400,7 +1400,7 @@ export default function PharmacotherapyReviewScreen() {
                   {/* Electrolytes */}
                   <div className="space-y-3">
                     <h4 className="text-sm font-medium text-[var(--text)] border-b border-[var(--border)] pb-2">Electrolytes / UECs</h4>
-                    <div className="grid grid-cols-1 xs:grid-cols-2 gap-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Na+ <br/><span className="text-[10px] opacity-70">(135-145)</span></span><input type="text" name="na" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                       <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">K+ <br/><span className="text-[10px] opacity-70">(3.2-5)</span></span><input type="text" name="k" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                       <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">Cl- <br/><span className="text-[10px] opacity-70">(98-106)</span></span><input type="text" name="cl" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
@@ -1413,7 +1413,7 @@ export default function PharmacotherapyReviewScreen() {
                   {/* LFTs */}
                   <div className="space-y-3">
                     <h4 className="text-sm font-medium text-[var(--text)] border-b border-[var(--border)] pb-2">Liver Function Tests</h4>
-                    <div className="grid grid-cols-1 xs:grid-cols-2 gap-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">AST <br/><span className="text-[10px] opacity-70">(13-42)</span></span><input type="text" name="ast" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                       <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">ALT <br/><span className="text-[10px] opacity-70">(9-52)</span></span><input type="text" name="alt" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>
                       <div className="flex items-center justify-between gap-2"><span className="text-xs text-[var(--text-muted)] w-24">ALP <br/><span className="text-[10px] opacity-70">(35-130)</span></span><input type="text" name="alp" className="w-full px-2 py-1 border border-[var(--border)] rounded bg-[var(--surface)] text-sm" /></div>

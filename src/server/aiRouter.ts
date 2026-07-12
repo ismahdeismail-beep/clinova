@@ -383,6 +383,58 @@ function addGatewayLog(log: GatewayLog) {
   }
 }
 
+// Streaming variant — emits chunks as they arrive to cut perceived latency.
+// Primary path is Gemini (generateContentStream); on failure it falls back to
+// the non-streaming gateway so callers still receive a complete response.
+export async function streamGenerateContent(
+  request: any,
+  onChunk: (text: string) => void,
+  providerOverride?: string,
+  featureName: string = 'General Inquiry'
+): Promise<string> {
+  if (!request.config) request.config = {};
+
+  const hierarchyRules = `\n\n=== CLINOVA AI KNOWLEDGE ENGINE REASONING HIERARCHY ===\nYou must organize and retrieve information using the following structural priority: Learning Area -> Unit -> Topic -> Subtopic -> Educational Resource -> Clinical Application.\nTreat every educational resource as part of a single interconnected knowledge graph. Prioritize authoritative educational resources over general knowledge.`;
+
+  if (request.config.systemInstruction) {
+    if (typeof request.config.systemInstruction === 'string' && !request.config.systemInstruction.includes('Learning Area -> Unit')) {
+      request.config.systemInstruction += hierarchyRules;
+    }
+  } else {
+    request.config.systemInstruction = hierarchyRules;
+  }
+
+  const activeOverride = providerOverride || globalProviderOverride;
+
+  // Streaming is only wired for Gemini; honor an explicit override if it is Gemini.
+  const useGemini = !activeOverride || activeOverride === 'Google Gemini';
+  if (useGemini && process.env.GEMINI_API_KEY) {
+    try {
+      const client = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+      const result = await client.models.generateContentStream(request);
+      let full = '';
+      for await (const chunk of result) {
+        const t = chunk.text || '';
+        if (t) {
+          full += t;
+          onChunk(t);
+        }
+      }
+      return full;
+    } catch (err: any) {
+      console.warn(`[AI Gateway] Gemini stream failed, falling back to buffered call: ${err.message}`);
+    }
+  }
+
+  // Fallback: buffered generation, emitted as a single chunk.
+  const response = await generateContentWithFallback(request, undefined, featureName);
+  if (response.text) {
+    onChunk(response.text);
+    return response.text;
+  }
+  return '';
+}
+
 // Mock-and-Live Execution for Gateway APIs
 async function executeProvider(provider: string, request: any): Promise<{ text: string }> {
   // Let's implement live calls for Gemini and OpenRouter if key exists, otherwise elegant medical simulation

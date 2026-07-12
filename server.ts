@@ -12,7 +12,8 @@ import crypto from 'crypto';
 import multer from 'multer';
 import { 
   generateContentWithFallback, 
-  getProviderStatusList, 
+  streamGenerateContent, 
+  getProviderStatusList,
   getGlobalProviderOverride, 
   setGlobalProviderOverride, 
   providerStatuses,
@@ -860,30 +861,54 @@ CRITICAL SAFETY & TRUTH CONSTRAINT: You must be extremely careful and NEVER assu
   }
 });
 
-// AI Interactive Assistant / Chat Sidebar
-app.post('/api/gemini/assistant', async (req, res) => {
+// ----- Context-window optimization helpers (Phase 7) -----
+// Drop empty fields and truncate overly long values so the full form state
+// does not blow the prompt on every assistant request.
+function optimizeFormContext(formState: any): string {
+  if (!formState || typeof formState !== 'object') return '';
   try {
-    const { userMessage, chatHistory, currentFormState, fileData, fileType, fileName } = req.body;
-
-    if (!userMessage && !fileData) {
-      return res.status(400).json({ error: 'Missing userMessage or fileData' });
-    }
-
-    // Retrieve clinical context
-    let ragContext = '';
-    if (userMessage) {
-        const route = await RAGRouter.route(userMessage, adminSupabase);
-        if (route.requiresRag) {
-            ragContext = RAGRouter.buildContextForAi(route.engineResult);
+    const compact = (val: any): any => {
+      if (Array.isArray(val)) {
+        const arr = val.map(compact).filter(v => v !== null && v !== '' && v !== undefined);
+        return arr;
+      }
+      if (val && typeof val === 'object') {
+        const out: any = {};
+        for (const [k, v] of Object.entries(val)) {
+          const cv = compact(v);
+          const empty = cv === null || cv === '' ||
+            (Array.isArray(cv) && cv.length === 0) ||
+            (cv && typeof cv === 'object' && Object.keys(cv).length === 0);
+          if (!empty) {
+            out[k] = (typeof cv === 'string' && cv.length > 1500) ? cv.slice(0, 1500) + '…' : cv;
+          }
         }
+        return out;
+      }
+      return val;
+    };
+    const trimmed = compact(formState);
+    return JSON.stringify(trimmed);
+  } catch {
+    return '';
+  }
+}
+
+// Builds the Gemini request contents + system instruction for the assistant.
+// Shared by the buffered and streaming endpoints. Caps history to the last 8
+// turns and compacts the form state to keep the context window lean.
+async function buildAssistantRequest(body: any) {
+  const { userMessage, chatHistory, currentFormState, fileData, fileType, fileName } = body;
+
+  let ragContext = '';
+  if (userMessage) {
+    const route = await RAGRouter.route(userMessage, adminSupabase);
+    if (route.requiresRag) {
+      ragContext = RAGRouter.buildContextForAi(route.engineResult);
     }
+  }
 
-    const stateSummary = currentFormState ? `
-=== CURRENT CLINICAL FORM STATE ===
-${JSON.stringify(currentFormState)}
-    ` : '';
-
-    const systemInstruction = `You are Clinova AI Assistant, a specialized Clinical Pharmacy mentor.
+  const systemInstruction = `You are Clinova AI Assistant, a specialized Clinical Pharmacy mentor.
 You support pharmacy students and practitioners in ward rounds, pharmacotherapy reviews, and Board exam prep.
 When asked questions, refer to the Kenya Drug Index (KDI), WHO Essential Medicines, and local clinical guidelines.
 Provide concise, authoritative, and actionable feedback. Be encouraging and highly educational.
@@ -891,102 +916,131 @@ Provide concise, authoritative, and actionable feedback. Be encouraging and high
 ${ragContext}
 `;
 
-    const contents = [];
-    if (chatHistory && Array.isArray(chatHistory)) {
-      for (const msg of chatHistory) {
-        contents.push({
-          role: msg.role === 'assistant' ? 'model' : 'user',
-          parts: [{ text: msg.content }],
-        });
+  const contents: any[] = [];
+  const limitedHistory = Array.isArray(chatHistory) ? chatHistory.slice(-8) : [];
+  for (const msg of limitedHistory) {
+    contents.push({
+      role: msg.role === 'assistant' ? 'model' : 'user',
+      parts: [{ text: msg.content }],
+    });
+  }
+
+  const userParts: any[] = [];
+
+  if (fileData) {
+    let cleanBase64 = fileData;
+    if (fileData.includes(';base64,')) {
+      cleanBase64 = fileData.split(';base64,')[1];
+    }
+    const filename = fileName || 'document.txt';
+    const mimetype = fileType || '';
+    const isPdf = mimetype.includes('pdf') || filename.toLowerCase().endsWith('.pdf');
+    const isImage = mimetype.includes('image') || /\.(png|jpe?g|webp|gif|heic|heif)$/i.test(filename);
+
+    if (isPdf) {
+      userParts.push({ inlineData: { data: cleanBase64, mimeType: 'application/pdf' } });
+    } else if (isImage) {
+      let cleanMimetype = mimetype;
+      if (!cleanMimetype.includes('image')) {
+        if (filename.toLowerCase().endsWith('.png')) cleanMimetype = 'image/png';
+        else if (filename.toLowerCase().endsWith('.webp')) cleanMimetype = 'image/webp';
+        else if (filename.toLowerCase().endsWith('.gif')) cleanMimetype = 'image/gif';
+        else cleanMimetype = 'image/jpeg';
+      }
+      userParts.push({ inlineData: { data: cleanBase64, mimeType: cleanMimetype } });
+    } else {
+      try {
+        const buf = Buffer.from(cleanBase64, 'base64');
+        const textContent = buf.toString('utf-8');
+        const isBinary = textContent.includes('\u0000') || /[\x00-\x08\x0B\x0C\x0E-\x1F]/.test(textContent);
+        if (!isBinary) {
+          userParts.push({ text: `\n--- ATTACHED FILE CONTENT: ${filename} ---\n${textContent}\n--- END OF ATTACHED FILE ---\n` });
+        } else {
+          userParts.push({ text: `\n[Attached File: ${filename} - binary format not natively readable. Upload PDF, image, or text.]\n` });
+        }
+      } catch {
+        userParts.push({ text: `\n[Attached File: ${filename} - Failed to parse file content.]\n` });
       }
     }
+  }
 
-    const userParts: any[] = [];
-    
-    // Add file inline data or text content if available, handling binary gracefully
-    if (fileData) {
-      let cleanBase64 = fileData;
-      if (fileData.includes(';base64,')) {
-        cleanBase64 = fileData.split(';base64,')[1];
-      }
-      
-      const filename = fileName || 'document.txt';
-      const mimetype = fileType || '';
-      
-      const isPdf = mimetype.includes('pdf') || filename.toLowerCase().endsWith('.pdf');
-      const isImage = mimetype.includes('image') || /\.(png|jpe?g|webp|gif|heic|heif)$/i.test(filename);
-      
-      if (isPdf) {
-        userParts.push({
-          inlineData: {
-            data: cleanBase64,
-            mimeType: 'application/pdf'
-          }
-        });
-      } else if (isImage) {
-        let cleanMimetype = mimetype;
-        if (!cleanMimetype.includes('image')) {
-          if (filename.toLowerCase().endsWith('.png')) cleanMimetype = 'image/png';
-          else if (filename.toLowerCase().endsWith('.webp')) cleanMimetype = 'image/webp';
-          else if (filename.toLowerCase().endsWith('.gif')) cleanMimetype = 'image/gif';
-          else cleanMimetype = 'image/jpeg';
-        }
-        userParts.push({
-          inlineData: {
-            data: cleanBase64,
-            mimeType: cleanMimetype
-          }
-        });
-      } else {
-        // Decode as text and check if it contains binary control characters
-        try {
-          const buf = Buffer.from(cleanBase64, 'base64');
-          const textContent = buf.toString('utf-8');
-          const isBinary = textContent.includes('\u0000') || /[\x00-\x08\x0B\x0C\x0E-\x1F]/.test(textContent);
-          
-          if (!isBinary) {
-            userParts.push({
-              text: `\n--- ATTACHED FILE CONTENT: ${filename} ---\n${textContent}\n--- END OF ATTACHED FILE ---\n`
-            });
-          } else {
-            userParts.push({
-              text: `\n[Attached File: ${filename} - This binary file format is not natively readable by the AI. For clinical records, please upload PDF files, high-quality images, or plain text document exports.]\n`
-            });
-          }
-        } catch (e) {
-          userParts.push({
-            text: `\n[Attached File: ${filename} - Failed to parse file content.]\n`
-          });
-        }
-      }
-    }
+  const stateSummary = currentFormState ? `
+=== CURRENT CLINICAL FORM STATE (compact) ===
+${optimizeFormContext(currentFormState)}
+  ` : '';
 
-    userParts.push({
-      text: `
+  userParts.push({
+    text: `
 ${stateSummary}
 
 User Clinical Query: "${userMessage || 'Analyze the attached file.'}"
 ${fileName ? `(Attached file: ${fileName})` : ''}
 `
-    });
+  });
 
-    contents.push({
-      role: 'user',
-      parts: userParts,
-    });
+  contents.push({ role: 'user', parts: userParts });
+
+  return { contents, systemInstruction };
+}
+
+// AI Interactive Assistant / Chat Sidebar (buffered)
+app.post('/api/gemini/assistant', async (req, res) => {
+  try {
+    const { userMessage, fileData } = req.body;
+
+    if (!userMessage && !fileData) {
+      return res.status(400).json({ error: 'Missing userMessage or fileData' });
+    }
+
+    const { contents, systemInstruction } = await buildAssistantRequest(req.body);
 
     const response = await generateContentWithFallback({
       model: 'gemini-flash-latest',
-      contents: contents,
-      config: {
-        systemInstruction: systemInstruction,
-      },
+      contents,
+      config: { systemInstruction },
     });
 
     res.json({ text: response.text });
   } catch (error: any) {
     console.error('Clinical Assistant error:', error);
     res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'AI assistant failed' });
+  }
+});
+
+// AI Interactive Assistant / Chat Sidebar (streaming, SSE)
+app.post('/api/gemini/assistant/stream', async (req, res) => {
+  const send = (obj: any) => res.write(`data: ${JSON.stringify(obj)}\n\n`);
+  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Cache-Control', 'no-cache, no-transform');
+  res.setHeader('Connection', 'keep-alive');
+  res.setHeader('X-Accel-Buffering', 'no');
+  if (typeof (res as any).flushHeaders === 'function') (res as any).flushHeaders();
+
+  let closed = false;
+  req.on('close', () => { closed = true; });
+
+  try {
+    const { userMessage, fileData } = req.body;
+    if (!userMessage && !fileData) {
+      if (!closed) send({ error: 'Missing userMessage or fileData' });
+      return res.end();
+    }
+
+    const { contents, systemInstruction } = await buildAssistantRequest(req.body);
+
+    await streamGenerateContent(
+      { model: 'gemini-flash-latest', contents, config: { systemInstruction } },
+      (chunk) => { if (!closed) send({ text: chunk }); },
+      undefined,
+      'Clinical Assistant'
+    );
+
+    if (!closed) send({ done: true });
+    res.end();
+  } catch (error: any) {
+    console.error('Clinical Assistant stream error:', error);
+    if (!closed) send({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'AI assistant failed' });
+    res.end();
   }
 });
 

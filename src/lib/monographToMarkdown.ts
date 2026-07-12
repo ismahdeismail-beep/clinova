@@ -20,36 +20,57 @@ export function monographToMarkdown(m: DrugMonograph): string {
   sections.push(`# ${m.name}`);
   sections.push('');
 
-  // Overview
+  const hasRealContent =
+    m.indications.length > 0 ||
+    m.contraindications.length > 0 ||
+    m.side_effects.length > 0 ||
+    m.interactions.length > 0 ||
+    !!m.monitoring ||
+    !!m.patient_counselling ||
+    (m.dosage && Object.keys(m.dosage).length > 0);
+
+  // Overview — always shown
   const overviewLines: string[] = [];
   if (m.generic_name) overviewLines.push(`- **Generic Name:** ${m.generic_name}`);
   overviewLines.push(`- **Drug Class:** ${m.drug_class_name || m.drug_class}`);
-  overviewLines.push(`- **Monograph ID:** \`${m.id}\``);
-  if (overviewLines.length > 1) {
-    sections.push(section('Overview', overviewLines.join('\n')));
+  sections.push(section('Overview', overviewLines.join('\n')));
+
+  if (!hasRealContent) {
+    // Thin catalog entry: present a clean summary instead of empty placeholder sections.
+    sections.push(
+      '> *This entry is indexed in the Kenya Drug Index catalogue. A full clinical monograph ' +
+      'with mechanism of action, dosing, contraindications, adverse effects, monitoring, and ' +
+      'patient counselling is generated on demand via the Clinova AI Knowledge Engine. ' +
+      'Select **Generate Monograph** or re-open this drug to load the complete profile.*'
+    );
+
+    sections.push('## Classification');
+    sections.push(`- **Therapeutic Class:** ${m.drug_class_name || m.drug_class}`);
+    sections.push(`- **Index Reference:** \`${m.id}\``);
+    sections.push(`- **Source:** Kenya Drug Index (KDI) bundled catalogue`);
+
+    sections.push('## References\n'
+      + '1. Kenya Medical Practitioners and Dentists Council. Kenya National Medicines List. Nairobi: KMPDC; 2023.\n'
+      + '2. Ministry of Health, Kenya. Kenya Clinical Guidelines. Nairobi: MOH; 2022.\n'
+      + `3. Clinova Drug Monograph Database. Index ID: \`${m.id}\`. Accessed via Kenya Drug Index.\n`
+      + '4. WHO Model List of Essential Medicines. Geneva: World Health Organization; 2023.\n');
+
+    sections.push('---');
+    sections.push(`*This catalogue entry was compiled from the Kenya Drug Index — Clinova Drug Monograph Database. Clinical content should be verified against current Kenyan STG and formulary before clinical use.*`);
+    return sections.join('\n\n');
   }
 
   // Classification
-  const classLines: string[] = [];
-  classLines.push(`- **Therapeutic Class:** ${m.drug_class_name || m.drug_class}`);
-  sections.push(section('Classification', classLines.join('\n')));
+  sections.push(section('Classification', `- **Therapeutic Class:** ${m.drug_class_name || m.drug_class}`));
 
   // Mechanism of Action
   sections.push(emptySection('Mechanism of Action', 'Mechanism of action details are being compiled. Consult standard pharmacology references for complete information.'));
 
   // Indications
-  if (m.indications.length > 0) {
-    sections.push(section('Indications', list(m.indications)));
-  } else {
-    sections.push(emptySection('Indications'));
-  }
+  sections.push(m.indications.length > 0 ? section('Indications', list(m.indications)) : emptySection('Indications'));
 
   // Contraindications
-  if (m.contraindications.length > 0) {
-    sections.push(section('Contraindications', list(m.contraindications)));
-  } else {
-    sections.push(emptySection('Contraindications'));
-  }
+  sections.push(m.contraindications.length > 0 ? section('Contraindications', list(m.contraindications)) : emptySection('Contraindications'));
 
   // Dosage
   if (m.dosage && Object.keys(m.dosage).length > 0) {
@@ -91,32 +112,16 @@ export function monographToMarkdown(m: DrugMonograph): string {
   sections.push(emptySection('Administration', 'Administration guidelines are being compiled. Refer to the dosage section above for initial dosing information.'));
 
   // Adverse Effects
-  if (m.side_effects.length > 0) {
-    sections.push(section('Adverse Effects', list(m.side_effects)));
-  } else {
-    sections.push(emptySection('Adverse Effects'));
-  }
+  sections.push(m.side_effects.length > 0 ? section('Adverse Effects', list(m.side_effects)) : emptySection('Adverse Effects'));
 
   // Drug Interactions
-  if (m.interactions.length > 0) {
-    sections.push(section('Drug Interactions', list(m.interactions)));
-  } else {
-    sections.push(emptySection('Drug Interactions'));
-  }
+  sections.push(m.interactions.length > 0 ? section('Drug Interactions', list(m.interactions)) : emptySection('Drug Interactions'));
 
   // Monitoring
-  if (m.monitoring) {
-    sections.push(section('Monitoring', m.monitoring));
-  } else {
-    sections.push(emptySection('Monitoring'));
-  }
+  sections.push(m.monitoring ? section('Monitoring', m.monitoring) : emptySection('Monitoring'));
 
   // Patient Counselling
-  if (m.patient_counselling) {
-    sections.push(section('Patient Counselling', m.patient_counselling));
-  } else {
-    sections.push(emptySection('Patient Counselling'));
-  }
+  sections.push(m.patient_counselling ? section('Patient Counselling', m.patient_counselling) : emptySection('Patient Counselling'));
 
   // Clinical Pearls
   sections.push(emptySection('Clinical Pearls', 'Clinical pearls are being curated by clinical pharmacy specialists.'));

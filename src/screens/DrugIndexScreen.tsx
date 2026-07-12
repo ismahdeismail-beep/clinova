@@ -367,7 +367,17 @@ export default function DrugIndexScreen() {
           (m.name && m.name.toLowerCase().includes(searchName.toLowerCase())) ||
           (m.generic_name && m.generic_name.toLowerCase().includes(searchName.toLowerCase()))
         );
-        if (localMatch) {
+        // Only render the bundled monograph directly when it carries real clinical content.
+        // Thin bundled entries (name + class only) are enriched via AI generation below so
+        // users always get a complete, well-structured monograph.
+        const hasClinicalContent = localMatch && (
+          (localMatch.indications?.length ?? 0) > 0 ||
+          (localMatch.side_effects?.length ?? 0) > 0 ||
+          (localMatch.contraindications?.length ?? 0) > 0 ||
+          !!localMatch.monitoring ||
+          (localMatch.interactions?.length ?? 0) > 0
+        );
+        if (hasClinicalContent) {
           openSeeded(localMatch);
           setIsLoading(false);
           return;

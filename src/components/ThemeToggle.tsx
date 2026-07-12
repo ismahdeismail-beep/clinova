@@ -10,8 +10,9 @@ function ThemeToggle() {
     <motion.button
       whileTap={{ scale: 0.92 }}
       onClick={toggleTheme}
-      className="p-2 rounded-xl text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary-container)] transition-all cursor-pointer border border-[var(--border)] bg-[var(--surface-dim)]/50 backdrop-blur-sm flex items-center justify-center shadow-sm"
+      className="p-2 rounded-xl text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary-container)] transition-all cursor-pointer border border-[var(--border)] bg-[var(--surface-dim)]/50 backdrop-blur-sm flex items-center justify-center shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)]"
       title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+      aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
     >
       <div className="relative w-5 h-5 flex items-center justify-center">
         {theme === 'dark' ? (

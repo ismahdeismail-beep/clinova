@@ -86,9 +86,10 @@ export function OfflineStatus() {
                 )}
               </div>
 
-              <button
+               <button
                 type="button"
                 onClick={() => setShowToast(false)}
+                aria-label="Dismiss notification"
                 className="text-current opacity-60 hover:opacity-100 p-1 rounded-lg hover:bg-white/5 transition-colors cursor-pointer shrink-0"
               >
                 <X size={15} />

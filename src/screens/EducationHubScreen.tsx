@@ -1236,11 +1236,11 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
 
       {/* CONSOLIDATED STUDY REPORT PREVIEW & EXPORT MODAL */}
       {showExportModal && (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto overscroll-contain">
           <div className="bg-[var(--bg)] border border-[var(--border)] rounded-3xl w-full max-w-5xl shadow-2xl flex flex-col md:flex-row max-h-[90vh] overflow-hidden animate-in zoom-in-95 duration-200">
             
             {/* LEFT COLUMN: Controls & Options */}
-            <div className="w-full md:w-80 border-r border-[var(--border)]/60 bg-[var(--surface-dim)]/50 p-6 overflow-y-auto space-y-6 shrink-0 flex flex-col justify-between">
+            <div className="w-full md:w-80 border-r border-[var(--border)]/60 bg-[var(--surface-dim)]/50 p-6 overflow-y-auto overscroll-contain space-y-6 shrink-0 flex flex-col justify-between">
               <div className="space-y-6">
                 <div>
                   <h3 className="text-sm font-black text-[var(--text)] uppercase tracking-wider flex items-center gap-2">

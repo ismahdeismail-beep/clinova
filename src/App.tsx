@@ -324,7 +324,7 @@ function AppContent() {
       <TopNavigation onMenuClick={() => setIsSidebarOpen(!isSidebarOpen)} />
       <div className="flex-1 flex overflow-hidden relative">
         <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
-        <main id="main-scroll-area" className="flex-1 md:pl-64 overflow-y-auto pt-[calc(4rem+env(safe-area-inset-top,0px))]">
+        <main id="main-scroll-area" className="flex-1 md:pl-64 overflow-y-auto overflow-x-hidden pt-[calc(4rem+env(safe-area-inset-top,0px))]">
           <Breadcrumbs />
           <React.Suspense fallback={
             <div className="h-full flex flex-col items-center justify-center p-8 text-center">

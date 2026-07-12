@@ -534,13 +534,22 @@ export default function DrugIndexScreen() {
         </p>
       </div>
 
-      {/* Tabs navigation */}
-      <div className="flex flex-wrap gap-1 sm:gap-2 border-b border-[var(--border)]">
+      {/* Tabs navigation - Modern design */}
+      <div className="relative flex flex-wrap gap-1 border-b border-[var(--border)]">
+        {/* Active tab indicator */}
+        <div 
+          className="absolute left-0 top-full -translate-y-px h-[3px] w-auto bg-[var(--primary)] rounded-t transition-all duration-200 ease-out"
+          style={{
+            left: activeTab === 'monograph' ? 0 : 
+                  activeTab === 'interaction' ? 'calc(33.333% + 4px)' : 'calc(66.666% + 8px)',
+            width: 'calc(33.333% - 4px)'
+          }}
+        />
         {([
           { id: 'monograph', label: 'Monographs', icon: BookOpen },
           { id: 'interaction', label: 'Interaction Checker', icon: Sparkles },
           { id: 'library', label: 'My Library', icon: Heart },
-        ] as const).map((tab) => {
+        ] as const).map((tab, index) => {
           const Icon = tab.icon;
           const active = activeTab === tab.id;
           return (
@@ -548,10 +557,12 @@ export default function DrugIndexScreen() {
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               aria-label={tab.label}
-              className={`px-3 sm:px-5 py-3 text-sm font-semibold border-b-2 -mb-px transition-all flex items-center gap-2 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] ${
+              aria-selected={active}
+              role="tab"
+              className={`relative flex-1 min-w-[120px] max-w-[200px] px-4 py-3 text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 ${
                 active
-                  ? 'border-[var(--primary)] text-[var(--primary)]'
-                  : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
+                  ? 'text-[var(--primary)] bg-[var(--primary-container)]/30'
+                  : 'text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)]/50'
               }`}
             >
               <Icon size={16} />

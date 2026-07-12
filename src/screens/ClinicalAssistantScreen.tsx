@@ -161,9 +161,7 @@ function AssistantMessageBubble({
   }, [isNew, onComplete, onTick]);
 
   return (
-    <div 
-      className="text-sm sm:text-base leading-relaxed max-w-full overflow-x-auto scrollbar-thin break-words min-h-[3rem] text-[var(--text)]"
-    >
+    <div className="prose prose-sm prose-clinova max-w-none break-words text-[var(--text)] leading-relaxed">
       {renderMarkdown(content)}
     </div>
   );
@@ -1203,16 +1201,20 @@ export default function ClinicalAssistantScreen() {
               <span className="hidden sm:inline">New Session</span>
             </button>
 
-            {/* Export Chat Dropdown */}
+            {/* Export Chat Dropdown - Modern */}
             <div className="relative">
               <button
                 onClick={() => setShowExportMenu(!showExportMenu)}
-                className="flex items-center gap-1.5 text-xs font-bold text-[var(--text)] bg-[var(--bg)]/40 hover:bg-[var(--bg)]/80 px-3 py-2 rounded-xl border border-[var(--border)] hover:border-[var(--border)] transition-all cursor-pointer select-none"
+                className="flex items-center gap-1.5 text-xs font-bold text-[var(--text)] bg-[var(--bg)]/40 hover:bg-[var(--bg)]/80 px-3 py-2 rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/40 transition-all cursor-pointer select-none"
                 title="Export current conversation for records"
                 id="export-chat-button"
+                aria-expanded={showExportMenu}
+                aria-haspopup="true"
+                aria-label="Export chat"
               >
                 <Download size={14} className="text-[var(--text-muted)]" />
                 <span className="hidden xs:inline">Export</span>
+                <ChevronDown size={12} className={`text-[var(--text-muted)] transition-transform duration-200 ${showExportMenu ? 'rotate-180' : ''}`} />
               </button>
               
               <AnimatePresence>
@@ -1221,14 +1223,16 @@ export default function ClinicalAssistantScreen() {
                     <div 
                       className="fixed inset-0 z-30" 
                       onClick={() => setShowExportMenu(false)}
+                      aria-hidden="true"
                     />
                     <motion.div
                       initial={{ opacity: 0, y: 8, scale: 0.95 }}
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 8, scale: 0.95 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute right-0 mt-2 w-56 bg-[var(--surface)] border border-[var(--border)] rounded-2xl shadow-xl z-40 p-2 flex flex-col gap-1 text-xs"
+                      className="absolute right-0 mt-2 w-60 bg-[var(--surface)] border border-[var(--border)] rounded-2xl shadow-xl z-40 p-2 flex flex-col gap-1 text-xs"
                       id="export-chat-dropdown"
+                      role="menu"
                     >
                       <div className="px-2.5 py-1.5 border-b border-[var(--border)] text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider">
                         Patient Record Format
@@ -1236,6 +1240,7 @@ export default function ClinicalAssistantScreen() {
                       <button
                         onClick={handleExportPDF}
                         className="flex items-center gap-2.5 w-full text-left p-2.5 hover:bg-[var(--surface)]/50 text-[var(--text)] rounded-xl transition-all cursor-pointer font-medium"
+                        role="menuitem"
                         id="export-pdf-option"
                       >
                         <FileDown size={15} className="text-red-400 shrink-0" />
@@ -1247,6 +1252,7 @@ export default function ClinicalAssistantScreen() {
                       <button
                         onClick={handleExportMarkdown}
                         className="flex items-center gap-2.5 w-full text-left p-2.5 hover:bg-[var(--surface)]/50 text-[var(--text)] rounded-xl transition-all cursor-pointer font-medium"
+                        role="menuitem"
                         id="export-md-option"
                       >
                         <FileText size={15} className="text-[var(--primary)] shrink-0" />
@@ -1397,7 +1403,7 @@ export default function ClinicalAssistantScreen() {
                     </div>
                   )}
 
-                  {/* Bubble Content */}
+{/* Bubble Content */}
                   {!msg.isThinking && (
                     <div className="flex items-start gap-2.5 max-w-full group/bubble">
                       <div className={`rounded-3xl px-5 py-4 shadow-sm text-base leading-relaxed max-w-full overflow-x-auto scrollbar-thin ${
@@ -1413,7 +1419,7 @@ export default function ClinicalAssistantScreen() {
                                 <span className="truncate">{msg.fileName}</span>
                               </div>
                             )}
-                            <p className="whitespace-pre-wrap">{msg.content}</p>
+                            <p className="whitespace-pre-wrap text-base leading-relaxed">{msg.content}</p>
                           </div>
                         ) : (
                           <AssistantMessageBubble 
@@ -1433,7 +1439,7 @@ export default function ClinicalAssistantScreen() {
                         )}
                       </div>
 {!isUser && (
-                          <div className="mt-1 flex items-center gap-1">
+                          <div className="mt-1.5 flex items-center gap-1.5 opacity-0 group-hover/bubble:opacity-100 transition-opacity duration-200">
                             <CopyButton text={msg.content} />
                             <DownloadButton 
                               content={msg.content} 
@@ -1545,21 +1551,27 @@ export default function ClinicalAssistantScreen() {
             <button 
               onClick={() => setShowSourceSelector(!showSourceSelector)}
               className="flex items-center gap-1.5 text-xs font-bold text-[var(--primary)] px-3 py-1.5 hover:bg-[var(--primary)]/10 border border-[var(--primary)]/20 rounded-xl transition-all cursor-pointer select-none"
+              aria-expanded={showSourceSelector}
+              aria-haspopup="true"
+              aria-label="Configure active databases"
             >
               <Library size={13} className="text-[var(--primary)]" /> 
               <span>Configure Active Databases ({selectedSources.length})</span>
+              <ChevronDown size={12} className={`text-[var(--primary)] transition-transform duration-200 ${showSourceSelector ? 'rotate-180' : ''}`} />
             </button>
             
             <AnimatePresence>
               {showSourceSelector && (
                 <motion.div 
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  className="absolute bottom-11 left-0 w-full sm:w-[480px] p-4 bg-[var(--surface)] border border-[var(--border)] rounded-2xl grid grid-cols-2 gap-2.5 shadow-xl z-20"
+                  initial={{ opacity: 0, y: 10, scale: 0.98 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 10, scale: 0.98 }}
+                  transition={{ duration: 0.15 }}
+                  className="absolute bottom-full left-0 mb-1 w-full sm:w-[480px] p-4 bg-[var(--surface)] border border-[var(--border)] rounded-2xl grid grid-cols-2 gap-2.5 shadow-xl z-20"
+                  role="menu"
                 >
                   {AVAILABLE_SOURCES.map(source => (
-                    <label key={source} className="flex items-center gap-2.5 cursor-pointer p-2.5 bg-[var(--bg)]/80 border border-[var(--border)] hover:border-[var(--border)] rounded-xl transition-all select-none">
+                    <label key={source} role="menuitemcheckbox" aria-checked={selectedSources.includes(source)} className="flex items-center gap-2.5 cursor-pointer p-2.5 bg-[var(--bg)]/80 border border-[var(--border)] hover:border-[var(--primary)]/40 rounded-xl transition-all select-none">
                       <input 
                         type="checkbox" 
                         checked={selectedSources.includes(source)}
@@ -1595,18 +1607,19 @@ export default function ClinicalAssistantScreen() {
                     </div>
 
                     {/* Speech Language selector dropdown */}
-                    <div className="flex items-center gap-1">
+                    <div className="relative">
                       <span className="text-[10px] text-[var(--text-muted)] font-medium">Language:</span>
                       <select
                         value={speechLang}
                         onChange={(e) => setSpeechLang(e.target.value)}
-                        className="bg-[var(--bg)] text-xs text-[var(--text)] border border-[var(--border)] rounded px-2 py-0.5 outline-none font-semibold cursor-pointer font-sans"
+                        className="bg-[var(--bg)] text-xs text-[var(--text)] border border-[var(--border)] rounded px-2 py-0.5 outline-none font-semibold cursor-pointer font-sans appearance-none pr-8 bg-[var(--surface)] hover:border-[var(--primary)]/40 focus:border-[var(--primary)] focus:outline-none focus:ring-1 focus:ring-[var(--primary)]"
                       >
                         <option value="en-US">English (US)</option>
                         <option value="en-GB">English (UK)</option>
                         <option value="en-KE">English (Kenya)</option>
                         <option value="sw-KE">Swahili (Kenya)</option>
                       </select>
+                      <ChevronDown size={12} className="absolute right-2 top-1/2 -translate-y-1/2 text-[var(--text-muted)] pointer-events-none" />
                     </div>
                   </div>
 

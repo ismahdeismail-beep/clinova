@@ -181,23 +181,23 @@ export function VitalsGrid({ vitals }: { vitals: { label: string; value: string;
 export function LabTable({ labs }: { labs: { test: string; value: string; unit?: string; range?: string; abnormal: boolean }[] }) {
   return (
     <div className="cl-card overflow-hidden">
-      <table className="w-full text-sm">
+      <table className="w-full text-sm border-collapse">
         <thead>
-          <tr className="bg-[var(--surface-dim)] text-[var(--text-muted)] text-left">
-            <th className="px-3 py-2 font-semibold">Test</th>
-            <th className="px-3 py-2 font-semibold">Result</th>
-            <th className="px-3 py-2 font-semibold">Reference</th>
+          <tr className="bg-[var(--surface-dim)] text-[var(--text-muted)] text-left border-b-2 border-[var(--border)]">
+            <th className="px-4 py-3 font-semibold text-[var(--text)] border-b border-[var(--border)]">Test</th>
+            <th className="px-4 py-3 font-semibold text-[var(--text)] border-b border-[var(--border)]">Result</th>
+            <th className="px-4 py-3 font-semibold text-[var(--text)] border-b border-[var(--border)]">Reference</th>
           </tr>
         </thead>
         <tbody>
           {labs.map((l, i) => (
-            <tr key={i} className="border-t border-[var(--border)]">
-              <td className="px-3 py-2 text-[var(--text)]">{l.test}</td>
-              <td className={cx('px-3 py-2 font-semibold', l.abnormal ? 'cl-lab-abnormal' : 'cl-lab-normal')}>
+            <tr key={i} className="border-t border-[var(--border)] hover:bg-[var(--surface-dim)]/50 transition-colors">
+              <td className="px-4 py-3 text-[var(--text)] border-r border-[var(--border)]">{l.test}</td>
+              <td className={cx('px-4 py-3 font-semibold text-[var(--text)] border-r border-[var(--border)]', l.abnormal ? 'cl-lab-abnormal' : 'cl-lab-normal')}>
                 {l.value} {l.unit || ''}
                 {l.abnormal && <AlertTriangle size={12} className="inline ml-1" />}
               </td>
-              <td className="px-3 py-2 text-[var(--text-muted)] text-xs">{l.range || '—'}</td>
+              <td className="px-4 py-3 text-[var(--text-muted)] text-xs">{l.range || '—'}</td>
             </tr>
           ))}
         </tbody>

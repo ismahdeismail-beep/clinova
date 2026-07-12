@@ -164,7 +164,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
   return (
     <>
       <div className={`fixed inset-y-0 left-0 z-50 w-64 bg-[var(--surface)] border-r border-[var(--border)] transform transition-transform duration-200 ease-in-out md:translate-x-0 overflow-y-auto flex flex-col ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-        <div className="h-16 px-4 lg:px-6 pt-[env(safe-area-inset-top,0px)] border-b border-[var(--border)] shrink-0 flex items-center justify-between">
+        <div className="h-16 px-4 lg:px-6 pt-[env(safe-area-inset-top,0px)] border-b border-[var(--border)] shrink-0 flex items-center justify-between bg-[var(--bg)]/95 backdrop-blur-sm">
           <div className="flex items-center gap-2 text-[var(--primary)] font-bold text-xl tracking-tight mt-1">
             <div className="flex items-center justify-center">
               <ClinovaLogo size={28} variant="colored" />
@@ -182,11 +182,11 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
             <X size={18} />
           </button>
         </div>
-        <nav className="p-3 space-y-4 flex-1 mt-2 overflow-y-auto">
+        <nav className="p-3 space-y-3 flex-1 mt-1 overflow-y-auto">
           {groups.filter(g => g.show).map((group) =>
             group.links.length ? (
               <div key={group.label}>
-                <div className="px-3 mb-1 text-[0.65rem] font-bold uppercase tracking-wider text-[var(--text-muted)]/70">
+                <div className="px-3 mb-1.5 text-[0.6rem] font-bold uppercase tracking-wider text-[var(--text-muted)]/60">
                   {group.label}
                 </div>
                 <div className="space-y-0.5">
@@ -198,14 +198,20 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
                         key={link.to}
                         to={link.to}
                         onClick={() => setIsOpen(false)}
-                        className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                        className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-150 ${
                           isActive
-                            ? 'bg-[var(--primary-container)] text-[var(--primary)]'
+                            ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm'
                             : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]'
                         }`}
                       >
-                        <Icon size={18} className={isActive ? 'text-[var(--primary)]' : ''} />
-                        {link.label}
+                        <div className="flex items-center justify-center w-8 h-8 rounded-lg transition-colors ${
+                          isActive
+                            ? 'bg-[var(--primary-foreground)]/20'
+                            : 'bg-transparent hover:bg-[var(--surface-dim)]'
+                        }">
+                          <Icon size={18} className={isActive ? 'text-[var(--primary-foreground)]' : ''} />
+                        </div>
+                        <span className="truncate">{link.label}</span>
                       </Link>
                     );
                   })}
@@ -214,7 +220,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
             ) : null,
           )}
         </nav>
-        <div className="p-4 border-t border-[var(--border)] mt-auto bg-[var(--surface-dim)]/30">
+        <div className="p-3 border-t border-[var(--border)] mt-auto bg-[var(--surface-dim)]/30">
           {userData ? (
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3 px-2">

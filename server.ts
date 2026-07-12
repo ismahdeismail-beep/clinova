@@ -1,3 +1,5 @@
+import { RAGRouter } from './src/services/ragRouter';
+import { KnowledgeEngine } from './src/engine/knowledgeEngine.service';
 import { processAcademicRequest } from "./src/server/academicEngine.js";
 import { orchestrateSkills, skillRegistry } from "./src/skills";
 import express from 'express';
@@ -867,6 +869,15 @@ app.post('/api/gemini/assistant', async (req, res) => {
       return res.status(400).json({ error: 'Missing userMessage or fileData' });
     }
 
+    // Retrieve clinical context
+    let ragContext = '';
+    if (userMessage) {
+        const route = await RAGRouter.route(userMessage, adminSupabase);
+        if (route.requiresRag) {
+            ragContext = RAGRouter.buildContextForAi(route.engineResult);
+        }
+    }
+
     const stateSummary = currentFormState ? `
 === CURRENT CLINICAL FORM STATE ===
 ${JSON.stringify(currentFormState)}
@@ -875,7 +886,10 @@ ${JSON.stringify(currentFormState)}
     const systemInstruction = `You are Clinova AI Assistant, a specialized Clinical Pharmacy mentor.
 You support pharmacy students and practitioners in ward rounds, pharmacotherapy reviews, and Board exam prep.
 When asked questions, refer to the Kenya Drug Index (KDI), WHO Essential Medicines, and local clinical guidelines.
-Provide concise, authoritative, and actionable feedback. Be encouraging and highly educational.`;
+Provide concise, authoritative, and actionable feedback. Be encouraging and highly educational.
+
+${ragContext}
+`;
 
     const contents = [];
     if (chatHistory && Array.isArray(chatHistory)) {

@@ -32,7 +32,7 @@ export function CommandPalette() {
     { id: 'cases', label: 'Search Clinical Cases', icon: FolderOpen, path: '/cases' },
     { id: 'review', label: 'Go to Pharmacotherapy Review', icon: ClipboardList, path: '/review' },
     { id: 'drugs', label: 'Search Drug Index', icon: Pill, path: '/drugs' },
-    { id: 'assistant', label: 'Ask Clinical Assistant', icon: Bot, path: '/assistant' },
+    { id: 'assistant', label: 'Get Clinical Support', icon: Bot, path: '/assistant' },
     { id: 'knowledge', label: 'Go to Education Hub', icon: BookOpen, path: '/knowledge' },
     ...(isAdmin ? [
       { id: 'admin', label: 'Go to Admin Console', icon: ShieldCheck, path: '/admin' },

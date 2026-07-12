@@ -1003,7 +1003,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
 
   const tabs = [
     { id: 'overview', label: 'Study Guide' },
-    { id: 'tutor', label: 'Clinical Tutor' },
+    { id: 'tutor', label: 'Clinical Coach' },
     { id: 'notes', label: 'My Notes' },
     { id: 'flashcards', label: 'Flashcards' },
     { id: 'mcqs', label: 'Practice Quiz' },
@@ -1829,7 +1829,7 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
   // Initialize tutor message
   useEffect(() => {
     setTutorChat([
-      { role: 'assistant', content: `Hello! I am your Clinical Tutor for **${currentFolderName}**. \n\nI have automatically indexed any revision notes you wrote and documents you uploaded for this folder. Ask me any pharmacological, therapeutic, or OSCE board exam questions regarding this topic!` }
+      { role: 'assistant', content: `Hello! I am your Clinical Coach for **${currentFolderName}**. \n\nI have automatically indexed any revision notes you wrote and documents you uploaded for this folder. Ask me any pharmacological, therapeutic, or OSCE board exam questions regarding this topic!` }
     ]);
   }, [currentFolderName]);
 
@@ -1882,7 +1882,7 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
       console.error('Error asking tutor:', error);
       setTutorChat([...newChat, { 
         role: 'assistant', 
-        content: `⚠️ Sorry, there was an error connecting to the Clinical Tutor service. Please verify your connection or try again.` 
+        content: `⚠️ Sorry, there was an error connecting to the Clinical Coach service. Please verify your connection or try again.` 
       }]);
     } finally {
       setIsTutorThinking(false);
@@ -1900,7 +1900,7 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
             <BrainCircuit size={20} />
           </div>
           <div>
-            <h3 className="font-bold text-sm text-[var(--text)]">Intelligent Study Tutor</h3>
+            <h3 className="font-bold text-sm text-[var(--text)]">Intelligent Study Coach</h3>
             <p className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-extrabold">Context-Aware Revision Chat</p>
           </div>
         </div>

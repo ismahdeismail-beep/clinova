@@ -689,7 +689,7 @@ export default function ClinicalAssistantScreen() {
   const [showExportMenu, setShowExportMenu] = useState(false);
 
   const handleExportMarkdown = () => {
-    let mdContent = `# Clinova Clinical Assistant - Session Export\n`;
+    let mdContent = `# Clinova Clinical Support - Session Export\n`;
     mdContent += `*Date/Time:* ${new Date().toLocaleString()}\n`;
     mdContent += `*Active Knowledge Bases:* ${selectedSources.join(', ')}\n`;
     mdContent += `*Verification Target:* Zero Hallucination Retrieval & Live Validation\n\n`;
@@ -697,7 +697,7 @@ export default function ClinicalAssistantScreen() {
 
     messages.forEach((msg, idx) => {
       if (msg.isThinking) return;
-      const role = msg.role === 'user' ? 'User (Clinician)' : 'Clinical Assistant (AI)';
+      const role = msg.role === 'user' ? 'User (Clinician)' : 'Clinical Support';
       mdContent += `### **${idx + 1}. ${role}**\n\n`;
       mdContent += `${msg.content}\n\n`;
 
@@ -753,7 +753,7 @@ export default function ClinicalAssistantScreen() {
         doc.setFont('helvetica', 'italic');
         doc.setFontSize(8);
         doc.setTextColor(150, 150, 150);
-        doc.text('Clinova Session Record - Confidential Medical Assistant Support', margin, 12);
+        doc.text('Clinova Session Record - Confidential Clinical Support', margin, 12);
         doc.line(margin, 14, pageWidth - margin, 14);
       }
     };
@@ -768,7 +768,7 @@ export default function ClinicalAssistantScreen() {
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(12);
     doc.setTextColor(30, 41, 59);
-    doc.text('Clinical Assistant Session Record', margin, y);
+    doc.text('Clinical Support Session Record', margin, y);
     y += 8;
 
     // Metadata Block
@@ -798,7 +798,7 @@ export default function ClinicalAssistantScreen() {
       if (msg.isThinking) return; // skip temporary thinking states
       
       const isUser = msg.role === 'user';
-      const roleHeader = isUser ? 'User (Clinician)' : 'Clinical Assistant (Evidence Synthesized)';
+      const roleHeader = isUser ? 'User (Clinician)' : 'Clinical Support (Evidence Synthesized)';
 
       // Reserve space for message header
       checkPageOverflow(14);
@@ -998,7 +998,7 @@ export default function ClinicalAssistantScreen() {
             // Update thinking message text to give user visual feedback about the retry
             setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
               ...m,
-              content: `Clinical Assistant service busy. Retrying... (Attempt ${attempt}/${maxAttempts})`
+              content: `Clinical Support service busy. Retrying... (Attempt ${attempt}/${maxAttempts})`
             } : m));
             // Staggered backoff before retrying
             await new Promise(resolve => setTimeout(resolve, 1500 * (attempt - 1)));
@@ -1050,7 +1050,7 @@ export default function ClinicalAssistantScreen() {
 
           if (!res.ok) {
             const errorData = await res.json().catch(() => ({}));
-            throw new Error(errorData.error || `Clinical Assistant service failed with status ${res.status}`);
+            throw new Error(errorData.error || `Clinical Support service failed with status ${res.status}`);
           }
 
           const data = await res.json();
@@ -1172,7 +1172,7 @@ export default function ClinicalAssistantScreen() {
             </div>
             <div className="min-w-0">
               <div className="flex items-center gap-2">
-                <h2 className="text-sm sm:text-base font-bold text-[var(--text)] tracking-tight">Clinical Assistant</h2>
+                <h2 className="text-sm sm:text-base font-bold text-[var(--text)] tracking-tight">Clinical Support</h2>
                 <div className="flex items-center gap-1.5 text-[10px] font-bold text-[var(--primary)] bg-[var(--primary)]/10 px-2.5 py-0.5 rounded-full border border-[var(--primary)]/20 select-none">
                   <span className="relative flex h-1.5 w-1.5">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
@@ -1278,7 +1278,7 @@ export default function ClinicalAssistantScreen() {
                 
                 <div className="space-y-2">
                   <h1 className="text-xl sm:text-2xl font-bold text-[var(--text)] tracking-tight">
-                    Welcome to Clinova Clinical Assistant
+                    Welcome to Clinova Clinical Support
                   </h1>
                   <p className="text-sm text-[var(--text-muted)] max-w-xl mx-auto leading-relaxed">
                     A fully-equipped clinical console designed to retrieve, synthesize, and validate clinical evidence from the Kenya Drug Index (KDI), STG Guidelines, WHO, and notes.
@@ -1497,7 +1497,7 @@ export default function ClinicalAssistantScreen() {
               </div>
               <div className="flex flex-col gap-2 max-w-[80%] items-start">
                 <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl rounded-tl-none px-5 py-4 shadow-md flex items-center gap-3">
-                  <span className="text-sm font-semibold text-[var(--text)]">Clinical Assistant is thinking</span>
+                  <span className="text-sm font-semibold text-[var(--text)]">Clinical Support is thinking</span>
                   <div className="flex gap-1 items-center justify-center mt-1">
                     <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></span>
                     <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></span>

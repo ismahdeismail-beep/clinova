@@ -70,7 +70,7 @@ export default function AiOrchestrationScreen() {
   // Live testing states
   const [testPrompt, setTestPrompt] = useState<string>('What is the mechanism of action of metformin?');
   const [testProvider, setTestProvider] = useState<string>('auto'); // auto or specific
-  const [testFeature, setTestFeature] = useState<string>('Interactive Study Tutor');
+  const [testFeature, setTestFeature] = useState<string>('Interactive Study Coach');
   const [isTesting, setIsTesting] = useState<boolean>(false);
   const [testResult, setTestResult] = useState<{ text: string; logs: LogEntry[] } | null>(null);
   const [testError, setTestError] = useState<string | null>(null);
@@ -779,7 +779,7 @@ export default function AiOrchestrationScreen() {
                   onChange={(e) => setTestFeature(e.target.value)}
                   className="w-full bg-[var(--bg)] text-[var(--text)] border border-[var(--border)] rounded-xl px-3 py-2 text-sm outline-none focus:ring-1 focus:ring-[var(--primary)]"
                 >
-                  <option>Interactive Study Tutor</option>
+                  <option>Interactive Study Coach</option>
                   <option>Clinical Case Reasoning</option>
                   <option>Flashcard Generator</option>
                   <option>MCQ Board Generator</option>

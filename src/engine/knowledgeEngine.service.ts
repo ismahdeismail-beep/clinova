@@ -68,12 +68,15 @@ function extractDrugNames(query: string): string[] {
 }
 
 export const KnowledgeEngine = {
-  async process(query: string): Promise<KnowledgeEngineResult> {
+  async process(query: string, customClient?: any): Promise<KnowledgeEngineResult> {
     const intent = detectIntent(query);
     const drugNames = extractDrugNames(query);
 
     const sources: KnowledgeSource[] = [];
     let drugMonographs: DrugMonograph[] | undefined;
+    
+    // Use the provided customClient (admin client) or fallback to the browser client
+    const client = customClient || supabase;
 
     if (intent === 'drug_info' || intent === 'drug_interaction' || drugNames.length > 0) {
       if (drugNames.length > 0) {
@@ -124,9 +127,9 @@ export const KnowledgeEngine = {
       }
     }
 
-    if (supabase && (intent === 'case_lookup' || intent === 'general')) {
+    if (client && (intent === 'case_lookup' || intent === 'general')) {
       const searchTerm = drugNames.length > 0 ? drugNames[0] : query;
-      const { data: cases } = await supabase
+      const { data: cases } = await client
         .from('clinical_cases')
         .select('id, title, disease, diagnosis, specialty, difficulty')
         .or(`title.ilike.%${searchTerm}%,disease.ilike.%${searchTerm}%,diagnosis.ilike.%${searchTerm}%`)
@@ -146,10 +149,10 @@ export const KnowledgeEngine = {
       }
     }
 
-    if (supabase && intent === 'disease_info') {
+    if (client && intent === 'disease_info') {
       const searchTerm = query.replace(/disease|condition|pathophysiology|aetiology|epidemiology/gi, '').trim();
       if (searchTerm) {
-        const { data: diseases } = await supabase
+        const { data: diseases } = await client
           .from('diseases')
           .select('id, name, aliases, icd10_code, specialty')
           .or(`name.ilike.%${searchTerm}%,aliases.ilike.%${searchTerm}%`)
@@ -157,7 +160,7 @@ export const KnowledgeEngine = {
 
         if (diseases) {
           const name = diseases[0]?.name ?? searchTerm;
-          const { data: cases } = await supabase
+          const { data: cases } = await client
             .from('clinical_cases')
             .select('id, title, disease, specialty, difficulty')
             .eq('disease', name)

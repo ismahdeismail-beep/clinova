@@ -66,7 +66,7 @@ export default function ClinicalCasesScreen() {
         setTutorChat([
           {
             role: 'assistant',
-            content: `Welcome to the Clinical Case on **${match.title}**. I am your Clinical Tutor. I have loaded the case details, patient history, guidelines for ${match.disease}, and relevant pharmacological concepts. How can I assist you with your clinical reasoning for this case?`
+            content: `Welcome to the Clinical Case on **${match.title}**. I am your Clinical Coach. I have loaded the case details, patient history, guidelines for ${match.disease}, and relevant pharmacological concepts. How can I assist you with your clinical reasoning for this case?`
           }
         ]);
       }
@@ -79,7 +79,7 @@ export default function ClinicalCasesScreen() {
   const [showAddPatient, setShowAddPatient] = useState(false);
   const [selectedSubsection, setSelectedSubsection] = useState<{ id: string, title: string, category: string, content: string, cta?: string, action?: string } | null>(null);
 
-  // AI Tutor states
+  // Clinical Coach states
   const [tutorMessage, setTutorMessage] = useState('');
   const [tutorChat, setTutorChat] = useState<{ role: 'user' | 'assistant', content: string }[]>([]);
   const [isTutorThinking, setIsTutorThinking] = useState(false);
@@ -107,7 +107,7 @@ export default function ClinicalCasesScreen() {
     setTutorChat([
       {
         role: 'assistant',
-        content: `Welcome to the Clinical Case on **${clinicalCase.title}**. I am your Clinical Tutor. I have loaded the case details, patient history, guidelines for ${clinicalCase.disease}, and relevant pharmacological concepts. How can I assist you with your clinical reasoning for this case?`
+        content: `Welcome to the Clinical Case on **${clinicalCase.title}**. I am your Clinical Coach. I have loaded the case details, patient history, guidelines for ${clinicalCase.disease}, and relevant pharmacological concepts. How can I assist you with your clinical reasoning for this case?`
       }
     ]);
   };
@@ -559,7 +559,7 @@ export default function ClinicalCasesScreen() {
         setTutorChat([
           {
             role: 'assistant',
-            content: `Hello! I am your Clinical Tutor. Let's study **${selectedDisease}** pharmacology and therapeutics together. What questions do you have about the pathophysiology, drug guidelines, or clinical pharmacy care plans?`
+            content: `Hello! I am your Clinical Coach. Let's study **${selectedDisease}** pharmacology and therapeutics together. What questions do you have about the pathophysiology, drug guidelines, or clinical pharmacy care plans?`
           }
         ]);
         // Simulate clicking an interactive case or tutor discussion

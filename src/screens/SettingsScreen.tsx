@@ -185,7 +185,7 @@ export default function SettingsScreen() {
                   <div className="p-4 bg-[var(--surface-dim)] flex flex-col sm:flex-row justify-between sm:items-center gap-3">
                     <div>
                       <span className="font-mono text-xs font-bold text-[var(--primary)] bg-[var(--primary)]/10 px-2 py-0.5 rounded">Clinova Key</span>
-                      <p className="text-xs text-[var(--text-muted)] mt-1.5">Powers the Clinical Assistant, automatic form-filling recommendations, drug lookup monographs, and exam study generators.</p>
+                      <p className="text-xs text-[var(--text-muted)] mt-1.5">Powers the Clinical Support, automatic form-filling recommendations, drug lookup monographs, and exam study generators.</p>
                     </div>
                     <span className="text-[10px] font-bold text-amber-600 bg-amber-500/10 border border-amber-500/20 px-2.5 py-1 rounded-full uppercase shrink-0 w-fit">
                       Runtime Managed

@@ -123,7 +123,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
         { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
         { to: '/review', label: 'Pharmacotherapy Review', icon: ClipboardList },
         { to: '/drugs', label: 'Drug Index', icon: Pill },
-        { to: '/assistant', label: 'Clinical Assistant', icon: Bot },
+        { to: '/assistant', label: 'Clinical Support', icon: Bot },
         { to: '/patients', label: 'Patients', icon: Users },
       ],
     },

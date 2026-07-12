@@ -434,7 +434,7 @@ export default function PharmacotherapyReviewScreen() {
   const [chatMessages, setChatMessages] = useState<{ role: 'user' | 'assistant', content: string, timestamp: Date, isNew?: boolean }[]>([
     {
       role: 'assistant',
-      content: 'Hello! I am your Clinova Clinical Assistant. Ask me any clinical questions regarding the Kenya Drug Index (KDI), medical guidelines, drug-drug interactions, or dose adjustments for this patient.',
+      content: 'Hello! I am your Clinova Clinical Support. Ask me any clinical questions regarding the Kenya Drug Index (KDI), medical guidelines, drug-drug interactions, or dose adjustments for this patient.',
       timestamp: new Date()
     }
   ]);
@@ -1846,7 +1846,7 @@ export default function PharmacotherapyReviewScreen() {
         className="fixed bottom-6 right-6 z-50 p-4 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-full shadow-lg hover:opacity-90 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 font-medium"
       >
         <Sparkles size={20} className="animate-pulse" />
-        <span className="hidden sm:inline text-sm">Clinical Assistant</span>
+        <span className="hidden sm:inline text-sm">Clinical Support</span>
       </button>
 
       {/* AI Assistant Sidebar Panel */}
@@ -1864,7 +1864,7 @@ export default function PharmacotherapyReviewScreen() {
               <div className="flex items-center gap-2.5">
                 <BrainCircuit className="text-[var(--primary)]" size={22} />
                 <div>
-                  <h3 className="font-semibold text-[var(--text)] text-sm">Clinova Clinical Assistant</h3>
+                  <h3 className="font-semibold text-[var(--text)] text-sm">Clinova Clinical Support</h3>
                   <p className="text-[10px] text-[var(--text-muted)]">KDI-integrated Guideline Engine</p>
                 </div>
               </div>

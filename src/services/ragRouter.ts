@@ -82,8 +82,8 @@ export const RAGRouter = {
     return 'general';
   },
 
-  async route(query: string): Promise<RoutedQuery> {
-    const engineResult = await KnowledgeEngine.process(query);
+  async route(query: string, customClient?: any): Promise<RoutedQuery> {
+    const engineResult = await KnowledgeEngine.process(query, customClient);
     const intent = this.analyzeIntent(query, engineResult);
     const targetAgent = getAgent(intent);
 

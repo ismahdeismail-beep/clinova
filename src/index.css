@@ -27,7 +27,7 @@
   --color-pearl-container: var(--pearl-container);
   --color-info: var(--info);
   --color-info-container: var(--info-container);
-  --radius-card: 1rem;
+  --radius-card: 1.25rem;
   --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 16px rgba(15, 23, 42, 0.06);
   --shadow-float: 0 8px 30px rgba(15, 23, 42, 0.12);
 }

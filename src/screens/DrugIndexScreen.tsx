@@ -346,7 +346,7 @@ export default function DrugIndexScreen() {
         }
       }
 
-      // Fall back to AI-generated monograph
+      // Fall back to auto-generated monograph
       const entry = await getMonographCached(query, categoryName);
       setMonograph(entry.content);
       setMonographKey(entry.key);
@@ -727,8 +727,8 @@ export default function DrugIndexScreen() {
                       </h3>
                       <p className="text-[var(--text-muted)] text-sm max-w-md">
                         {selectedCategory
-                          ? 'Try another therapeutic class, or search by name to generate a profile via the Clinical Assistant.'
-                          : 'Try a different search term, or press Search to generate a profile via the Clinical Assistant.'}
+                          ? 'Try another therapeutic class, or search by name to generate a profile via Clinical Support.'
+                          : 'Try a different search term, or press Search to generate a profile via Clinical Support.'}
                       </p>
                     </div>
                   ) : (

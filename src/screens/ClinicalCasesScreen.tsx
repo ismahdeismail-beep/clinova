@@ -76,6 +76,18 @@ export default function ClinicalCasesScreen() {
   const [filterSpecialty, setFilterSpecialty] = useState<string | null>(null);
   const [selectedSubsection, setSelectedSubsection] = useState<{ id: string, title: string, category: string, content: string, cta?: string, action?: string } | null>(null);
 
+  const BRAIN_CATEGORIES = ['Clinical Foundation', 'Diagnosis & Workup', 'Pharmacology & Therapeutics', 'Assessments & Practice', 'Study & Revision Tools'];
+
+  const previewOf = (content: string) => {
+    const text = content
+      .replace(/^###\s*.*$/m, '')
+      .replace(/[#>*_`~]/g, ' ')
+      .replace(/\n+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    return text.length > 120 ? text.slice(0, 120) + '…' : text;
+  };
+
   // Clinical Coach states
   const [tutorMessage, setTutorMessage] = useState('');
   const [tutorChat, setTutorChat] = useState<{ role: 'user' | 'assistant', content: string }[]>([]);
@@ -904,29 +916,47 @@ export default function ClinicalCasesScreen() {
                   )}
                 </div>
               ) : (
-                <div className="space-y-8 animate-in fade-in duration-300">
+                <div className="space-y-6 animate-in fade-in duration-300">
+                  {/* Category navigation */}
+                  <div className="sticky top-[4.25rem] z-20 -mx-1 px-1 py-2 bg-[var(--bg)]/90 backdrop-blur flex gap-2 overflow-x-auto">
+                    {BRAIN_CATEGORIES.map((cat, i) => (
+                      <button
+                        key={cat}
+                        type="button"
+                        onClick={() => document.getElementById(`brain-cat-${i}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                        className="shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold border border-[var(--border)] bg-[var(--surface)] text-[var(--text-muted)] hover:text-[var(--text)] hover:border-[var(--primary)]/40 transition-colors whitespace-nowrap cursor-pointer"
+                      >
+                        {cat}
+                      </button>
+                    ))}
+                  </div>
+
                   {/* Category Sections */}
-                  {['Clinical Foundation', 'Diagnosis & Workup', 'Pharmacology & Therapeutics', 'Assessments & Practice', 'Study & Revision Tools'].map((cat, cIdx) => {
+                  {BRAIN_CATEGORIES.map((cat, cIdx) => {
                     const nodes = getDiseaseKnowledgeTree(selectedDisease!).filter(node => node.category === cat);
+                    if (nodes.length === 0) return null;
                     return (
-                      <div key={cIdx} className="space-y-4">
-                        <h3 className="text-xs font-extrabold uppercase tracking-widest text-[var(--primary)] border-b border-[var(--border)] pb-2">{cat}</h3>
+                      <div key={cIdx} id={`brain-cat-${cIdx}`} className="space-y-4 scroll-mt-[6rem]">
+                        <div className="flex items-center justify-between border-b border-[var(--border)] pb-2">
+                          <h3 className="text-xs font-extrabold uppercase tracking-widest text-[var(--primary)]">{cat}</h3>
+                          <span className="text-[10px] font-mono text-[var(--text-muted)]">{nodes.length} topics</span>
+                        </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
                           {nodes.map((node, nIdx) => (
                             <div
                               key={nIdx}
                               onClick={() => setSelectedSubsection({ id: node.id, title: node.title, category: node.category, content: node.content, cta: node.cta, action: node.action })}
-                              className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl p-4 cursor-pointer transition-all hover:shadow-md flex flex-col justify-between group h-36"
+                              className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl p-4 cursor-pointer transition-all hover:shadow-md flex flex-col gap-3 group"
                             >
                               <div className="flex justify-between items-start">
                                 <div className="p-2 bg-[var(--surface-dim)] border border-[var(--border)] rounded-xl group-hover:border-[var(--primary)]/30 transition-colors">
                                   {node.icon}
                                 </div>
-                                <span className="text-[10px] font-mono text-[var(--text-muted)]">{(cIdx + 1)}.{nIdx + 1}</span>
+                                <span className="text-[10px] font-mono text-[var(--text-muted)]">{cIdx + 1}.{nIdx + 1}</span>
                               </div>
                               <div>
                                 <h4 className="font-bold text-sm text-[var(--text)] leading-tight group-hover:text-[var(--primary)] transition-colors">{node.title}</h4>
-                                <p className="text-[10px] text-[var(--text-muted)] mt-1 line-clamp-2">Master curriculum targets, monographs, and practice connections.</p>
+                                <p className="text-[11px] text-[var(--text-muted)] mt-1.5 line-clamp-3 leading-relaxed">{previewOf(node.content)}</p>
                               </div>
                             </div>
                           ))}

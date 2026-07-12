@@ -34,9 +34,9 @@ import {
 } from "recharts";
 import { useAuth } from "../contexts/AuthContext";
 
-import { PatientTriage } from "../components/PatientTriage";
 import { ShiftHandoverModal } from "../components/ShiftHandoverModal";
 import ClinovaLogo from "../components/ClinovaLogo";
+import DailySpotlight from "../components/DailySpotlight";
 
 const STUDY_TRACKS: Record<string, { title: string; subtitle: string; points: string[]; color: string; badge: string }> = {
   'Cardiology': {
@@ -261,6 +261,8 @@ export default function DashboardScreen() {
             </div>
           </div>
 
+          <DailySpotlight />
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
             {/* Left Column (Main Content) */}
             <div className="md:col-span-2 space-y-4 md:space-y-8">
@@ -341,7 +343,6 @@ export default function DashboardScreen() {
                   )}
                 </div>
               </div>
-              <PatientTriage />
 
               {/* Student Personalized Study Tracks */}
               {userData && userData.clinicalInterests && userData.clinicalInterests.length > 0 && (

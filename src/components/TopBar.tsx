@@ -174,7 +174,7 @@ function TopBar({ activeView }: TopBarProps) {
               onChange={(e) => setSearchQuery(e.target.value)}
               onFocus={() => { if (searchQuery.trim().length >= 2) setSearchOpen(true); }}
               onKeyDown={onSearchKeyDown}
-              placeholder="Search cases, drugs..."
+              placeholder="Search cases & drugs"
               className="bg-transparent border-none focus:outline-none text-sm w-44 text-[var(--text)] placeholder:text-[var(--text-dim)]"
             />
             {searching && <Loader2 size={14} className="animate-spin text-[var(--text-dim)]" />}

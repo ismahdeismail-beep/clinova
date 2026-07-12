@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   User, Stethoscope, Activity, ClipboardList, Beaker, FileText, Pill, HeartPulse, CheckCircle, BrainCircuit, AlertTriangle,
-  Send, Loader2, Sparkles, X, Upload, FileUp, Download, UserPlus, PenLine
+  Send, Loader2, Sparkles, X, Upload, FileUp, Download, UserPlus, PenLine, ChevronLeft
 } from 'lucide-react';
 import { useFileStore } from '../store/fileStore';
 import { getPatientInitials } from '../lib/patientUtils';
@@ -36,6 +36,7 @@ export default function PharmacotherapyReviewScreen() {
   const [patientAddMode, setPatientAddMode] = useState<'upload' | 'write'>('upload');
   const [savingToRegistry, setSavingToRegistry] = useState(false);
   const [detectedMeds, setDetectedMeds] = useState<string[]>([]);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const navigate = useNavigate();
 
   const handleDrag = (e: React.DragEvent) => {
@@ -967,12 +968,22 @@ export default function PharmacotherapyReviewScreen() {
       )}
 
       <div className="flex flex-col md:flex-row gap-6 items-start">
-        {/* Navigation Sidebar */}
-        <div className="w-full md:w-64 shrink-0 bg-[var(--surface)] border border-[var(--border)] rounded-xl overflow-hidden shadow-sm md:sticky md:top-6">
-          <div className="p-4 bg-[var(--surface-dim)] border-b border-[var(--border)]">
-            <h2 className="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)]">Form Sections</h2>
+        {/* Navigation Sidebar - Collapsible */}
+        <div className={`w-full md:w-64 shrink-0 bg-[var(--surface)] border border-[var(--border)] rounded-xl overflow-hidden shadow-sm md:sticky md:top-6 transition-all duration-300 ease-in-out ${sidebarCollapsed ? 'md:w-14' : 'md:w-64'}`}>
+          <div className="p-4 bg-[var(--surface-dim)] border-b border-[var(--border)] flex items-center justify-between">
+            <h2 className="text-sm font-semibold uppercase tracking-wider text-[var(--text-muted)]">
+              {!sidebarCollapsed && 'Form Sections'}
+            </h2>
+            <button
+              onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
+              className="p-1.5 rounded-lg bg-[var(--surface)] border border-[var(--border)] hover:bg-[var(--surface-dim)] transition-colors"
+              aria-label={sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
+              aria-expanded={!sidebarCollapsed}
+            >
+              <ChevronLeft size={18} className={`text-[var(--text)] transition-transform ${sidebarCollapsed ? 'rotate-180' : ''}`} />
+            </button>
           </div>
-          <div className="flex flex-row md:flex-col overflow-x-auto md:overflow-visible">
+          <div className={`flex flex-col overflow-hidden transition-all duration-300 ${sidebarCollapsed ? 'md:w-14' : ''}`}>
             {tabs.map(tab => {
               const Icon = tab.icon;
               const isActive = activeTab === tab.id;
@@ -985,9 +996,10 @@ export default function PharmacotherapyReviewScreen() {
                       ? 'border-[var(--primary)] bg-[var(--primary-container)] text-[var(--primary)]' 
                       : 'border-transparent text-[var(--text)] hover:bg-[var(--surface-dim)] hover:text-[var(--primary)]'
                   }`}
+                  title={sidebarCollapsed ? tab.label : undefined}
                 >
-                  <Icon size={18} />
-                  {tab.label}
+                  <Icon size={18} className="shrink-0" />
+                  {!sidebarCollapsed && <span className="truncate">{tab.label}</span>}
                 </button>
               );
             })}

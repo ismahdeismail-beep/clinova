@@ -701,71 +701,88 @@ export default function ClinicalCasesScreen() {
           {/* Level 1: Specialties */}
           {!selectedSpecialty && (
             <div className="space-y-5 animate-in fade-in duration-300">
-              {/* Specialty filter chips */}
-              <div className="flex flex-wrap gap-2">
-                <button
-                  onClick={() => setFilterSpecialty(null)}
-                  className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-all cursor-pointer ${
-                    !filterSpecialty
-                      ? 'bg-[var(--primary)] text-[var(--primary-foreground)] border-[var(--primary)]'
-                      : 'bg-[var(--surface)] text-[var(--text-muted)] border-[var(--border)] hover:border-[var(--primary)]'
-                  }`}
-                >
-                  All Cases ({allCases.length})
-                </button>
-                {SPECIALTIES.map((spec) => {
-                  const count = allCases.filter((c) => matchesUnit(c, spec)).length;
-                  if (count === 0) return null;
+              <div className="flex items-center justify-between">
+                <div>
+                  <h2 className="text-2xl font-bold text-[var(--text)]">Clinical Cases</h2>
+                  <p className="text-sm text-[var(--text-muted)] mt-1">Select a therapeutic area to explore clinical cases</p>
+                </div>
+                <div className="text-sm text-[var(--text-muted)] font-medium">
+                  {allCases.length} cases
+                </div>
+              </div>
+
+              {/* Search */}
+              <div className="relative">
+                <Search size={18} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" />
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search cases by title, disease, or specialty..."
+                  className="w-full pl-10 pr-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-sm text-[var(--text)] outline-none focus:border-[var(--primary)] transition-colors"
+                />
+              </div>
+
+              {/* Specialty cards */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                {SPECIALTIES.filter((spec) => {
+                  if (!searchQuery) return true;
+                  const q = searchQuery.toLowerCase();
+                  return spec.toLowerCase().includes(q) ||
+                    allCases.filter((c) => matchesUnit(c, spec)).some((c) =>
+                      c.title.toLowerCase().includes(q) || c.disease.toLowerCase().includes(q)
+                    );
+                }).map((spec) => {
+                  const cases = allCases.filter((c) => matchesUnit(c, spec));
+                  if (cases.length === 0) return null;
+                  const diseases = [...new Set(cases.map((c) => c.disease))];
                   return (
                     <button
                       key={spec}
-                      onClick={() => setFilterSpecialty(spec)}
-                      className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-all cursor-pointer flex items-center gap-1.5 ${
-                        filterSpecialty === spec
-                          ? 'bg-[var(--primary)] text-[var(--primary-foreground)] border-[var(--primary)]'
-                          : 'bg-[var(--surface)] text-[var(--text-muted)] border-[var(--border)] hover:border-[var(--primary)]'
-                      }`}
+                      onClick={() => handleSpecialtyClick(spec)}
+                      className="text-left bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] hover:shadow-md rounded-2xl p-5 cursor-pointer transition-all group"
                     >
-                      {getSpecialtyIcon(spec)} {spec.replace(' Pharmacotherapy', '')} ({count})
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="w-10 h-10 rounded-xl bg-[var(--primary-container)] flex items-center justify-center shrink-0">
+                          {getSpecialtyIcon(spec)}
+                        </div>
+                        <div className="min-w-0">
+                          <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors text-sm truncate">
+                            {spec.replace(' Pharmacotherapy', '')}
+                          </h3>
+                          <p className="text-xs text-[var(--text-muted)]">{cases.length} case{cases.length !== 1 ? 's' : ''} &bull; {diseases.length} disease{diseases.length !== 1 ? 's' : ''}</p>
+                        </div>
+                        <ChevronRight size={16} className="text-[var(--text-dim)] group-hover:text-[var(--primary)] ml-auto shrink-0 group-hover:translate-x-1 transition-all" />
+                      </div>
+                      <div className="flex flex-wrap gap-1">
+                        {diseases.slice(0, 3).map((d) => (
+                          <span key={d} className="text-[10px] px-2 py-0.5 rounded-full bg-[var(--surface-dim)] text-[var(--text-muted)] truncate max-w-[120px]">
+                            {d}
+                          </span>
+                        ))}
+                        {diseases.length > 3 && (
+                          <span className="text-[10px] text-[var(--text-dim)] px-1">+{diseases.length - 3}</span>
+                        )}
+                      </div>
                     </button>
                   );
                 })}
               </div>
 
-              {/* Flat case grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {filteredCases.map((clinicalCase, idx) => (
-                  <div
-                    key={clinicalCase.id || clinicalCase.seedId || idx}
-                    onClick={() => handleCaseClick(clinicalCase)}
-                    className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl p-5 cursor-pointer transition-all shadow-sm hover:shadow-md group"
-                  >
-                    <div className="flex items-center gap-2 mb-2">
-                      <span className={`px-2.5 py-1 rounded-lg text-[10px] font-extrabold uppercase tracking-wider ${
-                        clinicalCase.difficulty === 'Beginner' ? 'bg-emerald-500/10 text-emerald-600' :
-                        clinicalCase.difficulty === 'Intermediate' ? 'bg-amber-500/10 text-amber-600' :
-                        'bg-rose-500/10 text-rose-600'
-                      }`}>{clinicalCase.difficulty} Level</span>
-                      <span className="text-xs text-[var(--text-muted)] truncate">{clinicalCase.specialty?.replace(' Pharmacotherapy', '')}</span>
-                    </div>
-                    <h3 className="text-base font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors mb-1 leading-tight">{clinicalCase.title}</h3>
-                    <p className="text-xs text-[var(--text-muted)]">{clinicalCase.disease}</p>
-                    {clinicalCase.chiefComplaint && (
-                      <p className="text-xs text-[var(--text-muted)] line-clamp-2 leading-relaxed mt-2">
-                        <span className="font-semibold">CC:</span> "{clinicalCase.chiefComplaint}"
-                      </p>
-                    )}
-                  </div>
-                ))}
-              </div>
-
-              {filteredCases.length === 0 && (
+              {SPECIALTIES.filter((spec) => {
+                if (!searchQuery) return true;
+                const q = searchQuery.toLowerCase();
+                return spec.toLowerCase().includes(q) ||
+                  allCases.filter((c) => matchesUnit(c, spec)).some((c) =>
+                    c.title.toLowerCase().includes(q) || c.disease.toLowerCase().includes(q)
+                  );
+              }).every((spec) => allCases.filter((c) => matchesUnit(c, spec)).length === 0) && (
                 <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-12 text-center">
                   <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mx-auto mb-4">
                     <BookOpen size={32} className="text-[var(--text-muted)]" />
                   </div>
                   <h3 className="text-lg font-bold text-[var(--text)]">No cases match your search</h3>
-                  <p className="text-sm text-[var(--text-muted)] mt-2 max-w-sm mx-auto">Try a different term or clear the specialty filter.</p>
+                  <p className="text-sm text-[var(--text-muted)] mt-2 max-w-sm mx-auto">Try a different term.</p>
                 </div>
               )}
             </div>

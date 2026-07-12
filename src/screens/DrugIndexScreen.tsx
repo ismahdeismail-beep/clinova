@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { 
   Pill, Search, Loader2, ArrowRight, BookOpen,
   Sparkles, AlertTriangle, CheckCircle2, RefreshCw, User, Plus, Trash2, Info, HeartPulse, Activity, Check, ShieldAlert,
-  Upload, FileUp, FileText, Download, Bookmark, Heart
+  Upload, FileUp, FileText, Download, Bookmark, Heart,
+  ChevronRight, ChevronLeft
 } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { db } from '../lib/firebase';
@@ -99,6 +100,16 @@ export default function DrugIndexScreen() {
   const [monograph, setMonograph] = useState<string | null>(null);
   const [monographKey, setMonographKey] = useState<string>('');
   const [currentMonographId, setCurrentMonographId] = useState<string | null>(null);
+
+  // Alpha filter + recent search state
+  const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
+  const searchRef = useRef<HTMLDivElement>(null);
+  const [recentSearches, setRecentSearches] = useState<string[]>(() => {
+    try {
+      return JSON.parse(localStorage.getItem('recentDrugSearches') || '[]');
+    } catch { return []; }
+  });
+  const [showSearchDropdown, setShowSearchDropdown] = useState(false);
 
   // Seeded Supabase catalog (canonical source of monographs, mirrored from clinical cases pattern)
   const [catalog, setCatalog] = useState<DrugMonograph[]>([]);
@@ -301,13 +312,32 @@ export default function DrugIndexScreen() {
     }
   };
 
+  const saveRecentSearch = (term: string) => {
+    if (!term.trim()) return;
+    setRecentSearches(prev => {
+      const next = [term, ...prev.filter(s => s.toLowerCase() !== term.toLowerCase())].slice(0, 5);
+      localStorage.setItem('recentDrugSearches', JSON.stringify(next));
+      return next;
+    });
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (searchRef.current && !searchRef.current.contains(e.target as Node)) {
+        setShowSearchDropdown(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   const openSeeded = (m: DrugMonograph) => {
     setMonograph(monographToMarkdown(m));
     setMonographKey((m.name || m.generic_name || '').toLowerCase());
     setCurrentMonographId(m.id);
     setSelectedCategory(null);
     setError(null);
-    if (m.name) saveDrugSearch(m.name);
+    if (m.name) { saveDrugSearch(m.name); saveRecentSearch(m.name); }
   };
 
   const fetchDrugProfile = async (query: string, categoryName?: string) => {
@@ -378,12 +408,26 @@ export default function DrugIndexScreen() {
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!searchQuery.trim()) return;
+    setSelectedLetter(null);
     setSelectedCategory(null);
+    saveRecentSearch(searchQuery.trim());
+    setShowSearchDropdown(false);
     fetchDrugProfile(searchQuery.trim());
+  };
+
+  const handleBackToCategories = () => {
+    setSelectedCategory(null);
+    setSelectedLetter(null);
+    setSearchQuery('');
+    setMonograph(null);
+    setCurrentMonographId(null);
+    setMonographKey('');
+    setError(null);
   };
 
   const handleCategoryClick = (category: string) => {
     setSelectedCategory(category);
+    setSelectedLetter(null);
     setSearchQuery('');
     setMonograph(null);
     setCurrentMonographId(null);
@@ -393,7 +437,10 @@ export default function DrugIndexScreen() {
 
   const handleQuickDrugClick = (drugName: string) => {
     setSearchQuery(drugName);
+    setSelectedLetter(null);
     setSelectedCategory(null);
+    saveRecentSearch(drugName);
+    setShowSearchDropdown(false);
     fetchDrugProfile(drugName);
   };
 
@@ -434,7 +481,7 @@ export default function DrugIndexScreen() {
     }
   };
 
-  // Filtered view of the seeded catalog (by category or live search)
+  // Filtered view of the seeded catalog (by category, search, or alpha)
   const filteredCatalog = useMemo(() => {
     const q = searchQuery.trim().toLowerCase();
     let list = catalog;
@@ -447,8 +494,13 @@ export default function DrugIndexScreen() {
         (m.drug_class_name || '').toLowerCase().includes(q)
       );
     }
+    if (selectedLetter) {
+      list = list.filter(m => (m.name || '').toUpperCase().startsWith(selectedLetter));
+    }
     return list;
-  }, [catalog, searchQuery, selectedCategory]);
+  }, [catalog, searchQuery, selectedCategory, selectedLetter]);
+
+  const hasActiveFilter = !!(searchQuery.trim() || selectedCategory || selectedLetter);
 
   return (
     <div className="p-6 max-w-7xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
@@ -510,27 +562,47 @@ export default function DrugIndexScreen() {
       ) : activeTab === 'monograph' ? (
         <div className="space-y-6 animate-in fade-in duration-200">
           {/* Search Bar */}
-          <form onSubmit={handleSearchSubmit} className="flex gap-3 bg-[var(--surface)] p-2 rounded-xl border border-[var(--border)] shadow-sm">
-            <div className="flex-1 flex items-center gap-3 px-3">
-              <Search size={20} className="text-[var(--text-dim)]" />
-              <input 
-                type="text" 
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search by generic (e.g., Ceftriaxone, Amoxicillin) or brand name..." 
-                className="flex-1 bg-transparent border-none outline-none text-[var(--text)] text-sm focus:ring-0"
-              />
-            </div>
-            <button 
-              type="submit"
-              disabled={isLoading}
-              className="px-5 py-2.5 bg-[var(--primary)] hover:opacity-90 transition-opacity text-[var(--primary-foreground)] rounded-lg text-sm font-semibold flex items-center gap-2 cursor-pointer"
-            >
-              {isLoading ? <Loader2 size={16} className="animate-spin" /> : 'Search'}
-            </button>
-          </form>
+          <div className="relative" ref={searchRef}>
+            <form onSubmit={handleSearchSubmit} className="flex gap-3 bg-[var(--surface)] p-2 rounded-xl border border-[var(--border)] shadow-sm">
+              <div className="flex-1 flex items-center gap-3 px-3">
+                <Search size={20} className="text-[var(--text-dim)]" />
+                <input 
+                  type="text" 
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onFocus={() => !searchQuery.trim() && setShowSearchDropdown(true)}
+                  placeholder="Search by generic (e.g., Ceftriaxone, Amoxicillin) or brand name..." 
+                  className="flex-1 bg-transparent border-none outline-none text-[var(--text)] text-sm focus:ring-0"
+                />
+              </div>
+              <button 
+                type="submit"
+                disabled={isLoading}
+                className="px-5 py-2.5 bg-[var(--primary)] hover:opacity-90 transition-opacity text-[var(--primary-foreground)] rounded-lg text-sm font-semibold flex items-center gap-2 cursor-pointer"
+              >
+                {isLoading ? <Loader2 size={16} className="animate-spin" /> : 'Search'}
+              </button>
+            </form>
 
-          {/* Quick Discovery Tags */}
+            {/* Recent search suggestions dropdown */}
+            {showSearchDropdown && recentSearches.length > 0 && !searchQuery.trim() && (
+              <div className="absolute top-full left-0 right-0 mt-1 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-lg z-10 p-2 animate-in fade-in slide-in-from-top-1 duration-150">
+                <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider px-2 py-1">Recent Searches</div>
+                {recentSearches.map((term) => (
+                  <button
+                    key={term}
+                    onClick={() => handleQuickDrugClick(term)}
+                    className="w-full text-left px-2 py-2 rounded-lg text-xs font-medium text-[var(--text)] hover:bg-[var(--surface-dim)] transition-colors flex items-center gap-2 cursor-pointer"
+                  >
+                    <Search size={12} className="text-[var(--text-dim)] shrink-0" />
+                    {term}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Quick Discovery Tags + Saved Searches row */}
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider">Quick Search:</span>
             {QUICK_DRUGS.map((drug) => (
@@ -543,79 +615,48 @@ export default function DrugIndexScreen() {
                 {drug.name}
               </button>
             ))}
+            {savedDrugs.length > 0 && (
+              <>
+                <span className="w-px h-4 bg-[var(--border)] mx-1" />
+                {savedDrugs.map((drug) => (
+                  <button
+                    key={drug}
+                    onClick={() => handleQuickDrugClick(drug)}
+                    className="px-2.5 py-1 rounded-lg text-xs font-medium bg-[var(--surface-dim)] border border-[var(--border)] hover:border-[var(--primary)] text-[var(--text)] hover:text-[var(--primary)] transition-all flex items-center gap-1 cursor-pointer"
+                    title="Previously saved"
+                  >
+                    <Bookmark size={10} className="text-[var(--primary)]" />
+                    {drug}
+                  </button>
+                ))}
+              </>
+            )}
           </div>
 
-          {/* Saved Offline Searches */}
-          {savedDrugs.length > 0 && (
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider flex items-center gap-1">
-                <Bookmark size={12} /> Saved (Offline):
-              </span>
-              {savedDrugs.map((drug) => (
-                <button
-                  key={drug}
-                  onClick={() => handleQuickDrugClick(drug)}
-                  className="px-3 py-1.5 rounded-lg text-xs font-medium bg-[var(--surface-dim)] border border-[var(--border)] hover:border-[var(--primary)] text-[var(--text)] hover:text-[var(--primary)] transition-all flex items-center gap-1 cursor-pointer shadow-sm"
-                  title="Available Offline"
-                >
-                  <Pill size={12} className="text-[var(--primary)]" />
-                  {drug}
-                </button>
-              ))}
-            </div>
-          )}
-
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {/* Left sidebar: categories */}
-            <div className="md:col-span-1 space-y-2">
-              <div className="px-4 py-3 bg-[var(--surface-dim)] rounded-xl font-bold text-xs text-[var(--text-muted)] uppercase tracking-wider border-l-4 border-[var(--primary)] mb-3 text-left">
-                Therapeutic Classes
-              </div>
-              {CATEGORIES.map((cat) => {
-                const isSelected = selectedCategory === cat;
-                return (
-                  <button
-                    key={cat}
-                    onClick={() => handleCategoryClick(cat)}
-                    className={`w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-all flex items-center justify-between group cursor-pointer ${
-                      isSelected 
-                        ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-md shadow-primary/10' 
-                        : 'bg-[var(--surface)] text-[var(--text)] hover:bg-[var(--surface-dim)] border border-[var(--border)]'
-                    }`}
-                  >
-                    <span>{cat}</span>
-                    <ArrowRight size={14} className={`transition-transform duration-200 group-hover:translate-x-1 ${isSelected ? 'text-[var(--primary-foreground)]' : 'text-[var(--text-dim)]'}`} />
-                  </button>
-                );
-              })}
-            </div>
-
-            {/* Right Main Panel: Monograph presentation */}
-            <div className="md:col-span-2 lg:col-span-3 min-h-[400px] min-w-0">
+          {/* Main Content */}
+          <div className="min-h-[400px]">
               {isLoading ? (
-                <div className="w-full h-full bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 flex flex-col items-center justify-center text-center space-y-4">
+                <div className="w-full bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 flex flex-col items-center justify-center text-center space-y-4">
                   <div className="p-4 bg-[var(--primary-container)] rounded-full animate-pulse">
                     <Loader2 size={36} className="text-[var(--primary)] animate-spin" />
                   </div>
                   <div>
-                      <h3 className="text-lg font-semibold text-[var(--text)]">Loading Formulary Profile</h3>
+                    <h3 className="text-lg font-semibold text-[var(--text)]">Loading Formulary Profile</h3>
                     <p className="text-[var(--text-muted)] text-sm max-w-sm mt-1">
                       Checking Kenya Drug Index database for monograph, then querying AI if needed...
                     </p>
                   </div>
                 </div>
               ) : error ? (
-                <div className="w-full h-full bg-[var(--surface)] rounded-2xl border border-red-200/20 p-12 flex flex-col items-center justify-center text-center space-y-4">
+                <div className="w-full bg-[var(--surface)] rounded-2xl border border-red-200/20 p-12 flex flex-col items-center justify-center text-center space-y-4">
                   <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-red-600">
                     <Pill size={32} />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-red-600">Failed to Retrieve Monograph</h3>
-                    <p className="text-[var(--text-muted)] text-sm max-w-sm mt-1">
-                      {error}
-                    </p>
+                    <p className="text-[var(--text-muted)] text-sm max-w-sm mt-1">{error}</p>
                   </div>
-                  <button 
+                  <button
                     onClick={() => fetchDrugProfile(searchQuery || 'Ceftriaxone')}
                     className="px-4 py-2 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 cursor-pointer"
                   >
@@ -634,20 +675,20 @@ export default function DrugIndexScreen() {
                         <p className="text-xs text-[var(--text-muted)] font-mono">SOURCE: KDI DRUG DATABASE {(currentMonographId ? '• KDI SEEDED' : '• COMPILED BY CLINOVA')}</p>
                       </div>
                     </div>
-                    
-                     <div className="flex items-center gap-2 shrink-0">
-                       <button
-                         onClick={() => { setMonograph(null); setCurrentMonographId(null); setMonographKey(''); setSelectedCategory(null); }}
-                         className="flex items-center gap-1 px-3 py-1.5 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)] text-[var(--text-secondary)] hover:text-[var(--primary)] rounded-lg text-xs font-semibold transition-colors border border-[var(--border)] hover:border-[var(--primary)]/30 shrink-0"
-                       >
-                         <ArrowRight size={14} className="rotate-180" /> Catalog
-                       </button>
-                       {currentMonographId && (
-                         <SaveMonographButton monographId={currentMonographId} monographName={searchQuery} />
-                       )}
-                      <button 
+
+                    <div className="flex items-center gap-2 shrink-0">
+                      <button
+                        onClick={() => { setMonograph(null); setCurrentMonographId(null); setMonographKey(''); }}
+                        className="flex items-center gap-1 px-3 py-1.5 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)] text-[var(--text-secondary)] hover:text-[var(--primary)] rounded-lg text-xs font-semibold transition-colors border border-[var(--border)] hover:border-[var(--primary)]/30 shrink-0 cursor-pointer"
+                      >
+                        <ArrowRight size={14} className="rotate-180" /> Back
+                      </button>
+                      {currentMonographId && (
+                        <SaveMonographButton monographId={currentMonographId} monographName={searchQuery} />
+                      )}
+                      <button
                         onClick={handlePinForOffline}
-                        className="flex items-center gap-2 px-3 py-1.5 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)] text-[var(--text-secondary)] hover:text-[var(--primary)] rounded-lg text-xs font-semibold transition-colors border border-[var(--border)] hover:border-[var(--primary)]/30 shrink-0"
+                        className="flex items-center gap-2 px-3 py-1.5 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)] text-[var(--text-secondary)] hover:text-[var(--primary)] rounded-lg text-xs font-semibold transition-colors border border-[var(--border)] hover:border-[var(--primary)]/30 shrink-0 cursor-pointer"
                       >
                         <Download size={14} />
                         Pin for Offline Access
@@ -660,9 +701,7 @@ export default function DrugIndexScreen() {
                       components={{
                         table: ({ children }) => (
                           <div className="overflow-x-auto w-full my-4 rounded-xl border border-[var(--border)] shadow-sm bg-[var(--surface-dim)]">
-                            <table className="w-full text-left border-collapse text-xs sm:text-sm">
-                              {children}
-                            </table>
+                            <table className="w-full text-left border-collapse text-xs sm:text-sm">{children}</table>
                           </div>
                         ),
                         thead: ({ children }) => <thead className="bg-[var(--surface-dim)] border-b border-[var(--border)]">{children}</thead>,
@@ -683,17 +722,14 @@ export default function DrugIndexScreen() {
                         ol: ({ children }) => <ol className="space-y-2 mb-5">{children}</ol>,
                         li: ({ children }) => <li className="flex items-start gap-2 text-sm leading-relaxed text-[var(--text-secondary)]"><span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)]/60 mt-1.5 shrink-0" />{children}</li>,
                         blockquote: ({ children }) => (
-                          <div className="bg-[var(--surface-dim)]/60 border-l-3 border-[var(--primary)]/40 rounded-r-lg px-4 py-3 my-4 text-sm text-[var(--text-muted)] italic">
-                            {children}
-                          </div>
+                          <div className="bg-[var(--surface-dim)]/60 border-l-3 border-[var(--primary)]/40 rounded-r-lg px-4 py-3 my-4 text-sm text-[var(--text-muted)] italic">{children}</div>
                         ),
                       }}
                     >
                       {monograph}
                     </ReactMarkdown>
                   </div>
-                  
-                  {/* Data Source Attribution */}
+
                   <div className="mt-6 pt-4 border-t border-[var(--border)]/60 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] text-[var(--text-muted)] font-sans select-none">
                     {currentMonographId ? (
                       <span>Kenya Drug Index — Clinova Drug Monograph Database. Clinical content reviewed per Kenyan standard treatment guidelines.</span>
@@ -705,41 +741,162 @@ export default function DrugIndexScreen() {
                     </span>
                   </div>
                 </div>
-              ) : (
-                <div className="space-y-4 animate-in fade-in duration-200">
-                  <div className="flex items-center justify-between flex-wrap gap-2">
-                    <div className="text-sm text-[var(--text-muted)]">
-                      {selectedCategory ? (
-                        <span>Showing <span className="font-semibold text-[var(--text)]">{filteredCatalog.length}</span> seeded monographs in <span className="font-semibold text-[var(--text)]">{selectedCategory}</span></span>
-                      ) : searchQuery.trim() ? (
-                        <span>Showing <span className="font-semibold text-[var(--text)]">{filteredCatalog.length}</span> match(es) for &ldquo;{searchQuery}&rdquo;</span>
-                      ) : (
-                        <span>Browse the <span className="font-semibold text-[var(--text)]">{filteredCatalog.length}</span> seeded Kenya Drug Index monographs{catalogLoading && filteredCatalog.length === 0 ? ' (loading…)' : ''}</span>
-                      )}
+              ) : !selectedCategory ? (
+                /* ── Level 1: Category cards ── */
+                <div className="space-y-6 animate-in fade-in duration-200">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h2 className="text-2xl font-bold text-[var(--text)]">Drug Index</h2>
+                      <p className="text-sm text-[var(--text-muted)] mt-1">Select a therapeutic class to browse monographs</p>
                     </div>
-                    {selectedCategory && (
-                      <button
-                        onClick={() => { setSelectedCategory(null); setSearchQuery(''); }}
-                        className="text-xs font-semibold text-[var(--primary)] hover:underline flex items-center gap-1 cursor-pointer"
-                      >
-                        <ArrowRight size={12} className="rotate-180" /> All classes
-                      </button>
-                    )}
+                    <div className="text-sm text-[var(--text-muted)] font-medium">
+                      {catalog.length} monographs
+                    </div>
                   </div>
 
+                  {/* Category cards grid */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                    {CATEGORIES.map((cat) => {
+                      const count = catalog.filter((m) =>
+                        (m.drug_class_name || '').toLowerCase().includes(cat.toLowerCase())
+                      ).length;
+                      if (count === 0) return null;
+                      return (
+                        <button
+                          key={cat}
+                          onClick={() => handleCategoryClick(cat)}
+                          className="text-left bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] hover:shadow-md rounded-2xl p-5 cursor-pointer transition-all group"
+                        >
+                          <div className="flex items-center gap-3 mb-3">
+                            <div className="w-10 h-10 rounded-xl bg-[var(--primary-container)] flex items-center justify-center shrink-0">
+                              <Pill size={18} className="text-[var(--primary)]" />
+                            </div>
+                            <div className="min-w-0">
+                              <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors text-sm truncate">{cat}</h3>
+                              <p className="text-xs text-[var(--text-muted)]">{count} monograph{count !== 1 ? 's' : ''}</p>
+                            </div>
+                            <ChevronRight size={16} className="text-[var(--text-dim)] group-hover:text-[var(--primary)] ml-auto shrink-0 group-hover:translate-x-1 transition-all" />
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {/* Featured drugs */}
+                  {catalog.length > 0 && (
+                    <div>
+                      <div className="flex items-center gap-2 mb-3">
+                        <Sparkles size={14} className="text-amber-500" />
+                        <h3 className="text-sm font-bold text-[var(--text)]">Featured Drugs</h3>
+                      </div>
+                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                        {catalog.slice(0, 8).map((m) => (
+                          <button
+                            key={m.id}
+                            onClick={() => openSeeded(m)}
+                            className="text-left bg-gradient-to-br from-[var(--surface)] to-[var(--surface-dim)] border border-[var(--border)] hover:border-[var(--primary)] rounded-xl p-4 transition-all cursor-pointer group overflow-hidden"
+                          >
+                            <div className="flex items-start justify-between gap-2 min-w-0">
+                              <div className="font-bold text-[var(--text)] text-sm group-hover:text-[var(--primary)] transition-colors truncate">{m.name}</div>
+                              <Pill size={14} className="text-[var(--text-dim)] shrink-0 mt-0.5" />
+                            </div>
+                            {m.generic_name && m.generic_name !== m.name && (
+                              <div className="text-xs text-[var(--text-muted)] truncate mt-0.5">{m.generic_name}</div>
+                            )}
+                            {m.drug_class_name && (
+                              <div className="mt-2 inline-block text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded bg-[var(--surface-dim)] text-[var(--text-secondary)]">
+                                {m.drug_class_name}
+                              </div>
+                            )}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {CATEGORIES.every((cat) => {
+                    const count = catalog.filter((m) =>
+                      (m.drug_class_name || '').toLowerCase().includes(cat.toLowerCase())
+                    ).length;
+                    return count === 0;
+                  }) && (
+                    <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-12 text-center">
+                      <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <BookOpen size={32} className="text-[var(--text-muted)]" />
+                      </div>
+                      <h3 className="text-lg font-bold text-[var(--text)]">No monographs loaded</h3>
+                      <p className="text-sm text-[var(--text-muted)] mt-2">The Kenya Drug Index is being populated.</p>
+                    </div>
+                  )}
+                </div>
+
+              ) : (
+                /* ── Level 2: Drugs in selected category ── */
+                <div className="animate-in fade-in slide-in-from-right-4 duration-300 space-y-6">
+                  <div className="flex items-center gap-3">
+                    <button onClick={handleBackToCategories} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer">
+                      <ChevronLeft size={18} className="text-[var(--text)]" />
+                    </button>
+                    <div>
+                      <h2 className="text-2xl font-bold text-[var(--text)] flex items-center gap-3">
+                        <Pill size={20} className="text-[var(--primary)]" /> {selectedCategory}
+                      </h2>
+                      <p className="text-xs text-[var(--text-muted)] mt-0.5">{filteredCatalog.length} monograph{filteredCatalog.length !== 1 ? 's' : ''} available</p>
+                    </div>
+                  </div>
+
+                  {/* Search within category */}
+                  <div className="relative">
+                    <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" />
+                    <input
+                      type="text"
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      placeholder="Search drugs within this class..."
+                      className="w-full pl-10 pr-4 py-2.5 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-sm text-[var(--text)] outline-none focus:border-[var(--primary)] transition-colors"
+                    />
+                  </div>
+
+                  {/* Alpha filter */}
+                  <div className="flex flex-wrap items-center gap-1">
+                    <span className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider mr-1">Alpha:</span>
+                    <button
+                      onClick={() => setSelectedLetter(null)}
+                      className={`px-2 py-0.5 rounded text-xs font-bold transition-all cursor-pointer ${
+                        !selectedLetter
+                          ? 'bg-[var(--primary)] text-[var(--primary-foreground)]'
+                          : 'bg-[var(--surface)] text-[var(--text-muted)] border border-[var(--border)] hover:border-[var(--primary)]'
+                      }`}
+                    >
+                      All
+                    </button>
+                    {'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((letter) => {
+                      const hasDrugs = filteredCatalog.some((m) => (m.name || '').toUpperCase().startsWith(letter));
+                      if (!hasDrugs) return null;
+                      return (
+                        <button
+                          key={letter}
+                          onClick={() => setSelectedLetter(letter === selectedLetter ? null : letter)}
+                          className={`w-6 h-6 rounded text-[10px] font-bold transition-all cursor-pointer ${
+                            selectedLetter === letter
+                              ? 'bg-[var(--primary)] text-[var(--primary-foreground)]'
+                              : 'bg-[var(--surface)] text-[var(--text-muted)] border border-[var(--border)] hover:border-[var(--primary)] hover:text-[var(--primary)]'
+                          }`}
+                        >
+                          {letter}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {/* Drug grid */}
                   {filteredCatalog.length === 0 ? (
                     <div className="w-full bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 flex flex-col items-center justify-center text-center">
                       <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mb-4">
                         <Pill size={32} className="text-[var(--text-muted)]" />
                       </div>
-                      <h3 className="text-lg font-semibold text-[var(--text)] mb-2">
-                        {selectedCategory ? `No seeded monographs in ${selectedCategory} yet` : 'No monographs found'}
-                      </h3>
-                      <p className="text-[var(--text-muted)] text-sm max-w-md">
-                        {selectedCategory
-                          ? 'Try another therapeutic class, or search by name to generate a profile via Clinical Support.'
-                          : 'Try a different search term, or press Search to generate a profile via Clinical Support.'}
-                      </p>
+                      <h3 className="text-lg font-semibold text-[var(--text)] mb-2">No monographs found</h3>
+                      <p className="text-[var(--text-muted)] text-sm max-w-md">Try a different alpha filter or search term.</p>
                     </div>
                   ) : (
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -769,7 +926,6 @@ export default function DrugIndexScreen() {
               )}
             </div>
           </div>
-        </div>
       ) : (
         /* Real-Time Drug Interaction Checker Panel */
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 animate-in fade-in duration-300">

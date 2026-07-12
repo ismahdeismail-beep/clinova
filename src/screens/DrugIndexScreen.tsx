@@ -535,40 +535,30 @@ export default function DrugIndexScreen() {
       </div>
 
       {/* Tabs navigation */}
-      <div className="flex border-b border-[var(--border)] gap-2">
-        <button
-          onClick={() => setActiveTab('monograph')}
-          className={`px-5 py-3 text-sm font-semibold border-b-2 transition-all flex items-center gap-2 cursor-pointer ${
-            activeTab === 'monograph'
-              ? 'border-[var(--primary)] text-[var(--primary)] font-bold'
-              : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
-          }`}
-        >
-          <BookOpen size={16} />
-          KDI Search & Monographs
-        </button>
-        <button
-          onClick={() => setActiveTab('interaction')}
-          className={`px-5 py-3 text-sm font-semibold border-b-2 transition-all flex items-center gap-2 cursor-pointer ${
-            activeTab === 'interaction'
-              ? 'border-[var(--primary)] text-[var(--primary)] font-bold'
-              : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
-          }`}
-        >
-          <Sparkles size={16} className="text-[var(--primary)] animate-pulse" />
-          Real-Time Interaction Checker
-        </button>
-        <button
-          onClick={() => setActiveTab('library')}
-          className={`px-5 py-3 text-sm font-semibold border-b-2 transition-all flex items-center gap-2 cursor-pointer ${
-            activeTab === 'library'
-              ? 'border-rose-500 text-rose-600 font-bold'
-              : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
-          }`}
-        >
-          <Heart size={16} className={activeTab === 'library' ? 'text-rose-500' : ''} />
-          My Library
-        </button>
+      <div className="flex flex-wrap gap-1 sm:gap-2 border-b border-[var(--border)]">
+        {([
+          { id: 'monograph', label: 'Monographs', icon: BookOpen },
+          { id: 'interaction', label: 'Interaction Checker', icon: Sparkles },
+          { id: 'library', label: 'My Library', icon: Heart },
+        ] as const).map((tab) => {
+          const Icon = tab.icon;
+          const active = activeTab === tab.id;
+          return (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              aria-label={tab.label}
+              className={`px-3 sm:px-5 py-3 text-sm font-semibold border-b-2 -mb-px transition-all flex items-center gap-2 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] ${
+                active
+                  ? 'border-[var(--primary)] text-[var(--primary)]'
+                  : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)]'
+              }`}
+            >
+              <Icon size={16} />
+              <span className="whitespace-nowrap">{tab.label}</span>
+            </button>
+          );
+        })}
       </div>
 
       {activeTab === 'library' ? (

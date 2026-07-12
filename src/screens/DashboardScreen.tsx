@@ -20,6 +20,7 @@ import {
   Settings,
   X,
   PlusCircle,
+  ArrowRight,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
@@ -582,28 +583,32 @@ export default function DashboardScreen() {
                   )}
                 </div>
               )}
-              {/* Clinical Updates & Notifications */}
+              {/* Quick Clinical References */}
               <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden backdrop-blur-md">
                 <div className="p-5 border-b border-[var(--border)]">
                   <h3 className="font-semibold text-[var(--text)] flex items-center gap-2">
                     <Activity size={18} className="text-[var(--text-muted)]" />
-                    Latest Practice Guidelines
+                    Quick Clinical References
                   </h3>
                 </div>
                 <div className="divide-y divide-[var(--border)]">
-                  <div className="p-4">
-                    <div className="flex items-center gap-2 mb-1.5">
-                      <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-[var(--primary-container)] text-[var(--primary)] uppercase tracking-wider">
-                        New Reference Added
-                      </span>
-                    </div>
-                    <p className="text-sm font-bold text-[var(--text)]">
-                      Medscape Monographs
-                    </p>
-                    <p className="text-xs text-[var(--text-muted)] mt-1">
-                      Online reference library expanded with newly verified clinical guidelines.
-                    </p>
-                  </div>
+                  {[
+                    { name: 'WHO Guidelines & Essential Medicines', url: 'https://www.who.int/publications' },
+                    { name: 'Kenya MOH Clinical Guidelines', url: 'https://www.health.go.ke/resources/guidelines' },
+                    { name: 'NICE Guidance (UK)', url: 'https://www.nice.org.uk/guidance' },
+                    { name: 'Kenya Essential Medicines List', url: 'https://www.health.go.ke' },
+                  ].map((ref) => (
+                    <a
+                      key={ref.name}
+                      href={ref.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-4 flex items-center justify-between gap-3 hover:bg-[var(--surface-dim)] transition-colors group"
+                    >
+                      <span className="text-sm font-medium text-[var(--text)] truncate min-w-0">{ref.name}</span>
+                      <ArrowRight size={16} className="text-[var(--text-muted)] group-hover:text-[var(--primary)] group-hover:translate-x-0.5 transition-all shrink-0" />
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>

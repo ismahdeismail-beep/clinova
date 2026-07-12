@@ -267,21 +267,6 @@
 
 /* ===== Clinova redesign — clinical content primitives ===== */
 
-.cl-card {
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-card);
-  box-shadow: var(--shadow-card);
-}
-
-.cl-section-title {
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-
 /* Pill / chip used for medicines, diseases, tags */
 .cl-pill {
   display: inline-flex;

@@ -40,6 +40,7 @@
   }
 
   :root, :root.light {
+    color-scheme: light;
     --bg: #F8FAFC; /* Slate 50 */
     --surface: #FFFFFF;
     --surface-dim: #F1F5F9; /* Slate 100 */
@@ -68,6 +69,7 @@
   }
   
   :root.dark, .dark {
+    color-scheme: dark;
     --bg: #0F172A; /* Slate 900 */
     --surface: #1E293B; /* Slate 800 */
     --surface-dim: #334155; /* Slate 700 */
@@ -97,6 +99,18 @@
 
   body {
     @apply bg-[var(--bg)] text-[var(--text)];
+  }
+
+  /* Prevent double-tap zoom delay on interactive controls (mobile) */
+  button, a, [role="button"], input, select, textarea, label {
+    touch-action: manipulation;
+  }
+
+  /* Consistent, visible focus ring across the app */
+  :focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: 0.5rem;
   }
 
   /* Glassmorphism support */

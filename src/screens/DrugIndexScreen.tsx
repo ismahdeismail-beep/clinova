@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { 
-  Pill, Search, Loader2, ArrowRight, BookOpen,
+  Pill, Search, Loader2, BookOpen,
   Sparkles, AlertTriangle, CheckCircle2, RefreshCw, User, Plus, Trash2, Info, HeartPulse, Activity, Check, ShieldAlert,
-  Upload, FileUp, FileText, Download, Bookmark, Heart,
+  Upload, FileUp, FileText, Bookmark, Heart,
   ChevronRight, ChevronLeft
 } from 'lucide-react';
-import ReactMarkdown from 'react-markdown';
+import { DrugMonographView } from '../components/DrugMonographView';
 import { db } from '../lib/firebase';
 import { collection, getDocs, doc, setDoc, query, where } from 'firebase/firestore';
 import { Patient } from '../components/PatientQuickSummary';
@@ -715,83 +715,14 @@ export default function DrugIndexScreen() {
                   </button>
                 </div>
               ) : monograph ? (
-                <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-4 sm:p-6 md:p-8 shadow-sm space-y-6 text-left animate-in fade-in duration-300">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[var(--border)]">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 bg-[var(--primary-container)] rounded-xl flex items-center justify-center text-[var(--primary)] shrink-0">
-                        <BookOpen size={20} />
-                      </div>
-                      <div>
-                        <h2 className="text-xl font-bold text-[var(--text)]">Medication Monograph</h2>
-                        <p className="text-xs text-[var(--text-muted)] font-mono">SOURCE: KDI DRUG DATABASE {(currentMonographId ? '• KDI SEEDED' : '• COMPILED BY CLINOVA')}</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-2 shrink-0">
-                      <button
-                        onClick={() => { setMonograph(null); setCurrentMonographId(null); setMonographKey(''); setSelectedDrugName(null); }}
-                        className="flex items-center gap-1 px-3 py-1.5 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)] text-[var(--text-secondary)] hover:text-[var(--primary)] rounded-lg text-xs font-semibold transition-colors border border-[var(--border)] hover:border-[var(--primary)]/30 shrink-0 cursor-pointer"
-                      >
-                        <ArrowRight size={14} className="rotate-180" /> Back
-                      </button>
-                      {currentMonographId && (
-                        <SaveMonographButton monographId={currentMonographId} monographName={searchQuery} />
-                      )}
-                      <button
-                        onClick={handlePinForOffline}
-                        className="flex items-center gap-2 px-3 py-1.5 bg-[var(--surface-dim)] hover:bg-[var(--primary-container)] text-[var(--text-secondary)] hover:text-[var(--primary)] rounded-lg text-xs font-semibold transition-colors border border-[var(--border)] hover:border-[var(--primary)]/30 shrink-0 cursor-pointer"
-                      >
-                        <Download size={14} />
-                        Pin for Offline Access
-                      </button>
-                    </div>
-                  </div>
-
-                  <div className="markdown-body text-[var(--text)] max-w-none min-w-0">
-                    <ReactMarkdown
-                      components={{
-                        table: ({ children }) => (
-                          <div className="overflow-x-auto w-full my-4 rounded-xl border border-[var(--border)] shadow-sm bg-[var(--surface-dim)]">
-                            <table className="w-full text-left border-collapse text-xs sm:text-sm">{children}</table>
-                          </div>
-                        ),
-                        thead: ({ children }) => <thead className="bg-[var(--surface-dim)] border-b border-[var(--border)]">{children}</thead>,
-                        tbody: ({ children }) => <tbody className="divide-y divide-[var(--border)]/60">{children}</tbody>,
-                        tr: ({ children }) => <tr className="hover:bg-[var(--surface-dim)]/40 transition-colors">{children}</tr>,
-                        th: ({ children }) => <th className="p-3 font-semibold text-[var(--text)] uppercase tracking-wider text-[10px] sm:text-xs bg-[var(--surface-dim)] whitespace-nowrap">{children}</th>,
-                        td: ({ children }) => <td className="p-3 text-[var(--text-secondary)] leading-normal">{children}</td>,
-                        h1: ({ children }) => <h1 className="text-xl sm:text-2xl font-bold text-[var(--text)] mt-6 mb-4 tracking-tight border-b-2 border-[var(--primary)]/30 pb-2">{children}</h1>,
-                        h2: ({ children }) => (
-                          <div className="flex items-center gap-2 mt-6 mb-3">
-                            <div className="w-1 h-5 bg-[var(--primary)] rounded-full shrink-0" />
-                            <h2 className="text-base sm:text-lg font-semibold text-[var(--text)] tracking-tight">{children}</h2>
-                          </div>
-                        ),
-                        h3: ({ children }) => <h3 className="text-sm sm:text-base font-semibold text-[var(--text-secondary)] mt-4 mb-2 ml-3 border-l-2 border-[var(--border)] pl-3">{children}</h3>,
-                        p: ({ children }) => <p className="text-sm leading-relaxed text-[var(--text-secondary)] mb-3 last:mb-0">{children}</p>,
-                        ul: ({ children }) => <ul className="space-y-2 mb-5">{children}</ul>,
-                        ol: ({ children }) => <ol className="space-y-2 mb-5">{children}</ol>,
-                        li: ({ children }) => <li className="flex items-start gap-2 text-sm leading-relaxed text-[var(--text-secondary)]"><span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)]/60 mt-1.5 shrink-0" />{children}</li>,
-                        blockquote: ({ children }) => (
-                          <div className="bg-[var(--surface-dim)]/60 border-l-3 border-[var(--primary)]/40 rounded-r-lg px-4 py-3 my-4 text-sm text-[var(--text-muted)] italic">{children}</div>
-                        ),
-                      }}
-                    >
-                      {monograph}
-                    </ReactMarkdown>
-                  </div>
-
-                  <div className="mt-6 pt-4 border-t border-[var(--border)]/60 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] text-[var(--text-muted)] font-sans select-none">
-                    {currentMonographId ? (
-                      <span>Kenya Drug Index — Clinova Drug Monograph Database. Clinical content reviewed per Kenyan standard treatment guidelines.</span>
-                    ) : (
-                      <span>This product uses publicly available data from the U.S. National Library of Medicine (NLM) and openFDA.</span>
-                    )}
-                    <span className={`font-mono font-bold px-2 py-0.5 rounded border ${currentMonographId ? 'bg-emerald-50 text-emerald-600 border-emerald-200' : 'bg-[var(--surface-dim)] text-cyan-500 border-[var(--border)]'}`}>
-                      {currentMonographId ? 'KDI Seeded' : 'FDA/NLM Grounded'}
-                    </span>
-                  </div>
-                </div>
+                <DrugMonographView
+                  content={monograph}
+                  drugName={selectedDrugName || searchQuery || 'Medication Monograph'}
+                  isSeeded={!!currentMonographId}
+                  onBack={() => { setMonograph(null); setCurrentMonographId(null); setMonographKey(''); setSelectedDrugName(null); }}
+                  onPin={handlePinForOffline}
+                  saveButton={currentMonographId ? <SaveMonographButton monographId={currentMonographId} monographName={searchQuery} /> : undefined}
+                />
               ) : !selectedCategory ? (
                 /* ── Level 1: Category cards ── */
                 <div className="space-y-6 animate-in fade-in duration-200">

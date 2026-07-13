@@ -81,6 +81,27 @@ app.use((_req, res, next) => {
   next();
 });
 
+// Structured request logging (Phase 13). Logs method, path, status, duration
+// for every API call. In production (VERCEL=1) uses compact JSON; in dev uses
+// a concise coloured-ish format.
+app.use((req, res, next) => {
+  const start = Date.now();
+  const originalEnd = res.end.bind(res);
+  res.end = (...args: any[]) => {
+    const ms = Date.now() - start;
+    const line = `${req.method} ${req.path} ${res.statusCode} ${ms}ms`;
+    if (process.env.VERCEL === '1') {
+      console.log(JSON.stringify({ method: req.method, path: req.path, status: res.statusCode, ms, ts: new Date().toISOString() }));
+    } else if (res.statusCode >= 500) {
+      console.error(`[ERR] ${line}`);
+    } else {
+      console.log(`[API] ${line}`);
+    }
+    return originalEnd(...args);
+  };
+  next();
+});
+
 app.use(express.json({ limit: '100mb' }));
 app.use(express.urlencoded({ limit: '100mb', extended: true }));
 

@@ -23,6 +23,7 @@ import {
   updateProviderConfig,
   embedText
 } from './src/server/aiRouter.js';
+import { processOneJob, processJobBatch } from './src/server/jobProcessor.js';
 import { getPrompts, updatePrompt, resetPrompts } from './src/server/promptRegistry.js';
 import { fetchOpenFdaLabel, resolveRxCui, fetchRxNormInteractions } from './src/server/externalMedicinesApi.js';
 import { createClient } from '@supabase/supabase-js';
@@ -2594,6 +2595,58 @@ app.get('/api/admin/embeddings/status', async (_req, res) => {
       .from('document_embeddings')
       .select('*', { count: 'exact', head: true });
     res.json({ success: true, embedded: embedded ?? 0 });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// ================================================================
+// Background Job Queue (Phase 9)
+// Enqueue + process async jobs (document ingestion, embedding gen).
+// ================================================================
+
+// Enqueue a new job
+app.post('/api/admin/jobs/enqueue', async (req, res) => {
+  if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+  try {
+    const { job_type, payload, priority, user_id } = req.body;
+    if (!job_type) return res.status(400).json({ error: 'Missing job_type' });
+    const { data, error } = await adminSupabase.from('processing_jobs').insert({
+      job_type,
+      payload: payload ?? {},
+      priority: priority ?? 0,
+      user_id: user_id ?? null,
+    }).select();
+    if (error) return res.status(400).json({ error: error.message });
+    res.json({ success: true, job: data?.[0] ?? null });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// Process the next batch of pending jobs
+app.post('/api/admin/jobs/process', async (req, res) => {
+  if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+  try {
+    const max = Math.min(Math.max(Number(req.body?.batchSize) || 5, 1), 50);
+    const jobType: string | undefined = req.body?.jobType || undefined;
+    const count = await processJobBatch(max, jobType);
+    res.json({ success: true, processed: count });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// Get pending job counts grouped by type
+app.get('/api/admin/jobs/status', async (_req, res) => {
+  if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+  try {
+    const { data, error } = await adminSupabase
+      .from('processing_jobs')
+      .select('job_type, status, count:job_type.count()', { count: 'exact' })
+      .in('status', ['pending', 'processing', 'failed']);
+    if (error) return res.status(400).json({ error: error.message });
+    res.json({ success: true, jobs: data ?? [] });
   } catch (e: any) {
     res.status(500).json({ error: e.message });
   }

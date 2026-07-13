@@ -65,6 +65,21 @@ function safeJsonParse(text: string | null | undefined, fallback: any = {}): any
   }
 }
 
+// Security headers (always on; dependency-free, safe defaults). Hardens
+// against clickjacking, MIME sniffing, referrer leakage, and enforces HTTPS
+// in production. Kept minimal to avoid interfering with the SPA / API.
+app.use((_req, res, next) => {
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  res.setHeader('X-DNS-Prefetch-Control', 'off');
+  res.setHeader('Permissions-Policy', 'geolocation=(), microphone=(), camera=()');
+  if (process.env.NODE_ENV === 'production' || process.env.VERCEL === '1') {
+    res.setHeader('Strict-Transport-Security', 'max-age=15552000; includeSubDomains');
+  }
+  next();
+});
+
 app.use(express.json({ limit: '100mb' }));
 app.use(express.urlencoded({ limit: '100mb', extended: true }));
 
@@ -119,8 +134,43 @@ function requireAuth(req: any, res: any, next: any) {
   return res.status(401).json({ error: 'Unauthorized' });
 }
 
+// Admin route guard (opt-in). When ADMIN_API_SECRET is set, all /api/admin/*
+// routes require a matching `x-admin-secret` header. This protects the
+// privileged, service-role write endpoints (clinical cases, embeddings
+// reindex) in production. When unset, behavior is unchanged (open) so local
+// dev and existing deploys keep working.
+const ADMIN_API_SECRET = process.env.ADMIN_API_SECRET || '';
+function requireAdmin(req: any, res: any, next: any) {
+  if (!ADMIN_API_SECRET) return next();
+  const provided = req.headers['x-admin-secret'] || '';
+  if (provided === ADMIN_API_SECRET) return next();
+  return res.status(403).json({ error: 'Forbidden' });
+}
+
+// Per-IP limiter for expensive AI endpoints (always on, generous default).
+// Independent of the opt-in global limiter; prevents a single client from
+// exhausting AI quota / driving cost. Tunable via AI_RATE_LIMIT_MAX.
+const AI_RATE_LIMIT_MAX = Number(process.env.AI_RATE_LIMIT_MAX || 60);
+const AI_RATE_LIMIT_WINDOW_MS = Number(process.env.AI_RATE_LIMIT_WINDOW_MS || 60000);
+const aiRateBuckets = new Map<string, number[]>();
+function aiRateLimit(req: any, res: any, next: any) {
+  const ip = String(req.headers['x-forwarded-for'] || req.socket.remoteAddress || 'unknown')
+    .split(',')[0].trim();
+  const now = Date.now();
+  const hits = (aiRateBuckets.get(ip) || []).filter((t) => now - t < AI_RATE_LIMIT_WINDOW_MS);
+  if (hits.length >= AI_RATE_LIMIT_MAX) {
+    res.set('Retry-After', String(Math.ceil(AI_RATE_LIMIT_WINDOW_MS / 1000)));
+    return res.status(429).json({ error: 'AI request rate exceeded. Please slow down.' });
+  }
+  hits.push(now);
+  aiRateBuckets.set(ip, hits);
+  next();
+}
+
 // Apply to all /api routes. Health/ready declared above stay open.
 app.use('/api', rateLimit, requireAuth);
+app.use('/api/admin', requireAdmin);
+app.use('/api/gemini', aiRateLimit);
 
 // Proxy Cloudinary Upload
 app.post('/api/cloudinary/upload', upload.single('file'), async (req, res) => {

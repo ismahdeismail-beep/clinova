@@ -15,7 +15,7 @@ import { useSearchParams } from 'react-router-dom';
 import { DrugMonographService, type DrugMonograph } from '../services/drugMonograph.service';
 import { monographToMarkdown } from '../lib/monographToMarkdown';
 import SavedMonographsPanel, { SaveMonographButton } from '../components/SavedMonographsPanel';
-import { BUNDLED_DRUGS, getCategoryForDrug } from '../data/drugIndexData';
+import { BUNDLED_DRUGS } from '../data/drugIndexData';
 
 interface QuickDrug {
   name: string;

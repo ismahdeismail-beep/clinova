@@ -319,6 +319,21 @@ export default function EducationHubScreen() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
         
         {/* Header Section */}
+        {selectedUnit ? (
+          <div className="flex items-center gap-3">
+            <button onClick={handleBackToModules} className="flex items-center gap-1.5 px-3 py-1.5 bg-[var(--surface)] border border-[var(--border)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] rounded-xl text-xs font-black shadow-xs transition-all cursor-pointer">
+              <ChevronLeft size={14} />
+              Back
+            </button>
+            {selectedModule && (
+              <span className="text-sm text-[var(--text-muted)]">
+                <button onClick={handleBackToUnits} className="hover:text-[var(--primary)] transition-colors">{selectedModule.title}</button>
+                <ChevronRight size={14} className="inline mx-1" />
+                <span className="text-[var(--text)] font-semibold">{selectedUnit.title}</span>
+              </span>
+            )}
+          </div>
+        ) : (
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
             <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--primary)] mb-2">
@@ -332,39 +347,38 @@ export default function EducationHubScreen() {
             </p>
           </div>
 
-          {!selectedUnit && (
-            <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto shrink-0">
-              {/* Grid vs Graph Toggles — admin only */}
-              {isAdmin && !selectedModule && (
-                <div className="flex bg-[var(--surface-dim)] p-1 rounded-2xl border border-[var(--border)] shrink-0 w-full sm:w-auto justify-center">
-                  <button
-                    onClick={() => setViewMode('grid')}
-                    className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${viewMode === 'grid' ? 'bg-[var(--surface)] text-[var(--text)] shadow-xs font-extrabold' : 'text-[var(--text-muted)] hover:text-[var(--text)]'}`}
-                  >
-                    <Layers size={14} /> Grid View
-                  </button>
-                  <button
-                    onClick={() => setViewMode('graph')}
-                    className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${viewMode === 'graph' ? 'bg-[var(--surface)] text-[var(--text)] shadow-xs font-extrabold' : 'text-[var(--text-muted)] hover:text-[var(--text)]'}`}
-                  >
-                    <Compass size={14} /> Curriculum Map
-                  </button>
-                </div>
-              )}
-
-              <div className="relative w-full md:w-80">
-                <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" size={18} />
-                <input
-                  type="text"
-                  placeholder={selectedModule ? "Search units..." : "Search modules & units..."}
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
-                />
+          <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto shrink-0">
+            {/* Grid vs Graph Toggles — admin only */}
+            {isAdmin && !selectedModule && (
+              <div className="flex bg-[var(--surface-dim)] p-1 rounded-2xl border border-[var(--border)] shrink-0 w-full sm:w-auto justify-center">
+                <button
+                  onClick={() => setViewMode('grid')}
+                  className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${viewMode === 'grid' ? 'bg-[var(--surface)] text-[var(--text)] shadow-xs font-extrabold' : 'text-[var(--text-muted)] hover:text-[var(--text)]'}`}
+                >
+                  <Layers size={14} /> Grid View
+                </button>
+                <button
+                  onClick={() => setViewMode('graph')}
+                  className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${viewMode === 'graph' ? 'bg-[var(--surface)] text-[var(--text)] shadow-xs font-extrabold' : 'text-[var(--text-muted)] hover:text-[var(--text)]'}`}
+                >
+                  <Compass size={14} /> Curriculum Map
+                </button>
               </div>
+            )}
+
+            <div className="relative w-full md:w-80">
+              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" size={18} />
+              <input
+                type="text"
+                placeholder={selectedModule ? "Search units..." : "Search modules & units..."}
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-10 pr-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
+              />
             </div>
-          )}
+          </div>
         </div>
+        )}
 
         {/* Breadcrumb Navigation */}
         <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] overflow-x-auto pb-2 whitespace-nowrap border-b border-[var(--border)]/40">

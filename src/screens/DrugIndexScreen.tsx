@@ -523,63 +523,116 @@ export default function DrugIndexScreen() {
 
   return (
     <div className="p-6 max-w-7xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
-      <div className="mb-4">
-        <h1 className="text-3xl font-bold text-[var(--text)] mb-2 tracking-tight">Kenya Drug Index (KDI)</h1>
-        <p className="text-[var(--text-muted)] text-sm">
-          Access comprehensive clinical drug monographs, WHO essential classifications, and perform dynamic, patient-contextualized interaction audits.
-        </p>
-      </div>
-
-      {/* Tabs navigation - Modern design */}
-      <div className="relative flex flex-nowrap gap-1 border-b border-[var(--border)] overflow-x-auto scrollbar-none">
-        {/* Active tab indicator */}
-        <div 
-          className="absolute left-0 top-full -translate-y-px h-[3px] w-auto bg-[var(--primary)] rounded-t transition-all duration-200 ease-out"
-          style={{
-            left: activeTab === 'monograph' ? 0 : 
-                  activeTab === 'interaction' ? 'calc(33.333% + 4px)' : 'calc(66.666% + 8px)',
-            width: 'calc(33.333% - 4px)'
-          }}
-        />
-        {([
-          { id: 'monograph', label: 'Monographs', icon: BookOpen },
-          { id: 'interaction', label: 'Interaction Checker', icon: Sparkles },
-          { id: 'library', label: 'My Library', icon: Heart },
-        ] as const).map((tab, index) => {
-          const Icon = tab.icon;
-          const active = activeTab === tab.id;
-          return (
+      {/* ── Monograph detail view: compact header + monograph ── */}
+      {monograph ? (
+        <>
+          <div className="flex items-center gap-3">
             <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              aria-label={tab.label}
-              aria-selected={active}
-              role="tab"
-              className={`relative flex-1 min-w-[120px] max-w-[200px] px-4 py-3 text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 ${
-                active
-                  ? 'text-[var(--primary)] bg-[var(--primary-container)]/30'
-                  : 'text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)]/50'
-              }`}
+              onClick={() => { setMonograph(null); setCurrentMonographId(null); setMonographKey(''); setSelectedDrugName(null); }}
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-[var(--surface)] border border-[var(--border)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] rounded-xl text-xs font-black shadow-xs transition-all cursor-pointer"
             >
-              <Icon size={16} />
-              <span className="whitespace-nowrap">{tab.label}</span>
+              <ChevronLeft size={14} />
+              Back
             </button>
-          );
-        })}
-      </div>
+            {selectedCategory && (
+              <span className="text-sm text-[var(--text-muted)]">
+                <button onClick={() => { setMonograph(null); setCurrentMonographId(null); setMonographKey(''); }} className="hover:text-[var(--primary)] transition-colors">{selectedCategory}</button>
+                <ChevronRight size={14} className="inline mx-1" />
+                <span className="text-[var(--text)] font-semibold">{selectedDrugName}</span>
+              </span>
+            )}
+          </div>
 
-      {activeTab === 'library' ? (
-        <div className="animate-in fade-in duration-200 max-w-3xl mx-auto">
-          <SavedMonographsPanel
-            onNavigateToDrug={(name) => {
-              setActiveTab('monograph');
-              setSearchQuery(name);
-              setSelectedCategory(null);
-              fetchDrugProfile(name);
-            }}
-          />
+          {isLoading ? (
+            <div className="w-full bg-[var(--surface)] rounded-2xl border border-[var(--border)] p-12 flex flex-col items-center justify-center text-center space-y-4">
+              <div className="p-4 bg-[var(--primary-container)] rounded-full animate-pulse">
+                <Loader2 size={36} className="text-[var(--primary)] animate-spin" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-[var(--text)]">Loading Formulary Profile</h3>
+                <p className="text-[var(--text-muted)] text-sm max-w-sm mt-1">
+                  Checking Kenya Drug Index database for monograph, then querying AI if needed...
+                </p>
+              </div>
+            </div>
+          ) : error ? (
+            <div className="w-full bg-[var(--surface)] rounded-2xl border border-red-200/20 p-12 flex flex-col items-center justify-center text-center space-y-4">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-red-600">
+                <Pill size={32} />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-red-600">Failed to Retrieve Monograph</h3>
+                <p className="text-[var(--text-muted)] text-sm max-w-sm mt-1">{error}</p>
+              </div>
+              <button
+                onClick={() => fetchDrugProfile(searchQuery || 'Ceftriaxone')}
+                className="px-4 py-2 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 cursor-pointer"
+              >
+                Retry Request
+              </button>
+            </div>
+          ) : (
+            <DrugMonographView
+              content={monograph}
+              drugName={selectedDrugName || searchQuery || 'Medication Monograph'}
+              isSeeded={!!currentMonographId}
+              onBack={() => { setMonograph(null); setCurrentMonographId(null); setMonographKey(''); setSelectedDrugName(null); }}
+              onPin={handlePinForOffline}
+              saveButton={currentMonographId ? <SaveMonographButton monographId={currentMonographId} monographName={searchQuery} /> : undefined}
+            />
+          )}
+        </>
+      ) : (
+      /* ── Browse mode: heading + tabs + content ── */
+      <>
+        <div className="mb-4">
+          <h1 className="text-3xl font-bold text-[var(--text)] mb-2 tracking-tight">Kenya Drug Index (KDI)</h1>
+          <p className="text-[var(--text-muted)] text-sm">
+            Access comprehensive clinical drug monographs, WHO essential classifications, and perform dynamic, patient-contextualized interaction audits.
+          </p>
         </div>
-      ) : activeTab === 'monograph' ? (
+
+        {/* Tabs navigation */}
+        <div className="relative flex border-b border-[var(--border)] overflow-x-auto">
+          {([
+            { id: 'monograph', label: 'Monographs', icon: BookOpen },
+            { id: 'interaction', label: 'Interaction Checker', icon: Sparkles },
+            { id: 'library', label: 'My Library', icon: Heart },
+          ] as const).map((tab) => {
+            const Icon = tab.icon;
+            const active = activeTab === tab.id;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                aria-label={tab.label}
+                aria-selected={active}
+                role="tab"
+                className={`flex-1 shrink-0 px-4 py-3 text-sm font-medium transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-inset border-b-2 ${
+                  active
+                    ? 'text-[var(--primary)] border-[var(--primary)] bg-[var(--primary-container)]/30'
+                    : 'text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)]/50 border-transparent hover:border-[var(--border)]'
+                }`}
+              >
+                <Icon size={16} className="shrink-0" />
+                <span className="whitespace-nowrap">{tab.label}</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {activeTab === 'library' ? (
+          <div className="animate-in fade-in duration-200 max-w-3xl mx-auto">
+            <SavedMonographsPanel
+              onNavigateToDrug={(name) => {
+                setActiveTab('monograph');
+                setSearchQuery(name);
+                setSelectedCategory(null);
+                fetchDrugProfile(name);
+              }}
+            />
+          </div>
+        ) : activeTab === 'monograph' ? (
         <div className="space-y-6 animate-in fade-in duration-200">
           {/* Search Bar */}
           {!monograph && (
@@ -659,28 +712,14 @@ export default function DrugIndexScreen() {
 
           {/* Breadcrumb Navigation */}
           <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] overflow-x-auto pb-3 whitespace-nowrap">
-            <span className={`${!selectedCategory && !monograph ? 'text-[var(--text)] font-bold' : 'hover:text-[var(--primary)] transition-colors cursor-pointer'}`}
-              onClick={!selectedCategory && !monograph ? undefined : handleBackToCategories}>
+            <span className={`${!selectedCategory ? 'text-[var(--text)] font-bold' : 'hover:text-[var(--primary)] transition-colors cursor-pointer'}`}
+              onClick={!selectedCategory ? undefined : handleBackToCategories}>
               Drug Index
             </span>
-            {selectedCategory && !monograph && (
+            {selectedCategory && (
               <>
                 <ChevronRight size={14} />
                 <span className="text-[var(--text)] font-bold">{selectedCategory}</span>
-              </>
-            )}
-            {selectedCategory && monograph && (
-              <>
-                <ChevronRight size={14} />
-                <button onClick={() => { setMonograph(null); setCurrentMonographId(null); setMonographKey(''); }} className="hover:text-[var(--primary)] transition-colors">
-                  {selectedCategory}
-                </button>
-              </>
-            )}
-            {selectedDrugName && monograph && (
-              <>
-                <ChevronRight size={14} />
-                <span className="text-[var(--text)] font-bold truncate max-w-[200px]">{selectedDrugName}</span>
               </>
             )}
           </div>
@@ -1541,6 +1580,8 @@ export default function DrugIndexScreen() {
           </div>
 
         </div>
+      )}
+      </>
       )}
     </div>
   );

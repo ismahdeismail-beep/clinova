@@ -37,7 +37,7 @@ function emitChange(key: string) {
 export function CacheProvider({ children, config = defaultConfig }: { children: ReactNode; config?: Partial<CacheConfig> }) {
   const mergedConfig = { ...defaultConfig, ...config };
 
-  const get = useCallback(<T>(key: string): T | null => {
+  const get = useCallback(<T,>(key: string): T | null => {
     const entry = cache.get(key);
     if (entry && Date.now() - entry.timestamp < (config?.defaultCacheTime || defaultConfig.defaultCacheTime)) {
       return entry.data;
@@ -45,7 +45,7 @@ export function CacheProvider({ children, config = defaultConfig }: { children: 
     return null;
   }, []);
 
-  const set = useCallback(<T>(key: string, data: T, ttl?: number) => {
+  const set = useCallback(<T,>(key: string, data: T, ttl?: number) => {
     cache.set(key, {
       data,
       timestamp: Date.now(),

@@ -112,16 +112,13 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
   const location = useLocation();
   const { userData, logout } = useAuth();
 
-  const isClinicalModule = ['/cases', '/review', '/drugs', '/assistant'].some(path => location.pathname.startsWith(path));
-  const isLearningModule = location.pathname.startsWith('/knowledge');
-
   const groups = [
     {
-      label: 'Learn',
+      label: 'Study',
       links: [
+        { to: '/', label: 'Dashboard', icon: Home },
         { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
       ],
-      show: !isClinicalModule // Only show when not in a clinical module or at root
     },
     {
       label: 'Clinical Practice',
@@ -131,32 +128,22 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
         { to: '/drugs', label: 'Drug Index', icon: Pill },
         { to: '/assistant', label: 'Clinical Support', icon: Bot },
       ],
-      show: isClinicalModule || location.pathname === '/'
     },
     {
-      label: 'Knowledge',
-      links: userData?.role === 'admin'
-        ? [{ to: '/admin/kbms', label: 'Knowledge Base', icon: Database }]
-        : [],
-      show: userData?.role === 'admin'
-    },
-    {
-      label: 'Personal',
+      label: 'Account',
       links: [
-        { to: '/', label: 'Dashboard', icon: Home },
         { to: '/notifications', label: 'Notifications', icon: Bell },
         { to: '/settings', label: 'Settings', icon: Settings },
       ],
-      show: true
     },
     ...(userData?.role === 'admin'
       ? [{
           label: 'Admin',
           links: [
+            { to: '/admin/kbms', label: 'Knowledge Base', icon: Database },
             { to: '/admin', label: 'Admin Console', icon: ShieldCheck },
             { to: '/admin/ai', label: 'AI Gateway', icon: Cpu },
           ],
-          show: true
         }]
       : []),
   ];
@@ -183,7 +170,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
           </button>
         </div>
         <nav className="p-3 space-y-3 flex-1 mt-1 overflow-y-auto">
-          {groups.filter(g => g.show).map((group) =>
+          {groups.map((group) =>
             group.links.length ? (
               <div key={group.label}>
                 <div className="px-3 mb-1.5 text-[0.6rem] font-bold uppercase tracking-wider text-[var(--text-muted)]/60">
@@ -191,7 +178,9 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
                 </div>
                 <div className="space-y-0.5">
                   {group.links.map((link) => {
-                    const isActive = location.pathname === link.to;
+                    const isActive =
+                      location.pathname === link.to ||
+                      (link.to !== '/' && location.pathname.startsWith(link.to + '/'));
                     const Icon = link.icon;
                     return (
                       <Link

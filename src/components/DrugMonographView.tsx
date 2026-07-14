@@ -34,7 +34,7 @@ export function DrugMonographView({
   return (
     <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden animate-in fade-in duration-300">
       {/* ── Header ── */}
-      <div className="relative bg-gradient-to-br from-[var(--primary-container)]/70 to-transparent border-b border-[var(--border)] px-4 sm:px-6 md:px-8 py-5 sm:py-6">
+      <div className="relative bg-gradient-to-br from-[var(--primary-container)]/70 to-transparent border-b border-[var(--border)] px-4 sm:px-6 md:px-8 py-4 sm:py-5">
         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
           <div className="flex items-start gap-3 min-w-0">
             <div className="w-11 h-11 shrink-0 rounded-xl bg-[var(--primary-container)] flex items-center justify-center text-[var(--primary)] shadow-sm">
@@ -79,7 +79,7 @@ export function DrugMonographView({
         </div>
 
         {/* Source badge */}
-        <div className="mt-4 flex items-center gap-2">
+        <div className="mt-3 flex items-center gap-2">
           <span
             className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wide border ${
               isSeeded
@@ -97,8 +97,8 @@ export function DrugMonographView({
       </div>
 
       {/* ── Body ── */}
-      <div className="px-4 sm:px-6 md:px-8 py-6">
-        <div className="markdown-body cl-reading max-w-none min-w-0">
+      <div className="px-4 sm:px-6 md:px-8 py-5">
+        <div className="markdown-body cl-reading max-w-3xl min-w-0">
           <ReactMarkdown
             components={{
               table: ({ children }) => (
@@ -124,21 +124,21 @@ export function DrugMonographView({
                 <td className="p-3 text-[var(--text-muted)] leading-normal align-top">{children}</td>
               ),
               h2: ({ children }) => (
-                <div className="flex items-center gap-2 mt-7 mb-3">
+                <div className="flex items-center gap-2 mt-5 mb-2.5">
                   <div className="w-1 h-5 bg-[var(--primary)] rounded-full shrink-0" />
                   <h2 className="text-base sm:text-lg font-semibold text-[var(--text)] tracking-tight">{children}</h2>
                 </div>
               ),
               h3: ({ children }) => (
-                <h3 className="text-sm sm:text-base font-semibold text-[var(--text)] mt-4 mb-2 ml-3 border-l-2 border-[var(--border)] pl-3">
+                <h3 className="text-sm sm:text-base font-semibold text-[var(--text)] mt-3 mb-2 ml-3 border-l-2 border-[var(--border)] pl-3">
                   {children}
                 </h3>
               ),
               p: ({ children }) => (
-                <p className="text-sm leading-relaxed text-[var(--text-muted)] mb-3 last:mb-0">{children}</p>
+                <p className="text-sm leading-relaxed text-[var(--text-muted)] mb-2.5 last:mb-0">{children}</p>
               ),
-              ul: ({ children }) => <ul className="space-y-2 mb-5">{children}</ul>,
-              ol: ({ children }) => <ol className="space-y-2 mb-5">{children}</ol>,
+              ul: ({ children }) => <ul className="space-y-2 mb-4">{children}</ul>,
+              ol: ({ children }) => <ol className="space-y-2 mb-4">{children}</ol>,
               li: ({ children }) => (
                 <li className="flex items-start gap-2 text-sm leading-relaxed text-[var(--text-muted)]">
                   <span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)]/60 mt-2 shrink-0" />
@@ -174,7 +174,7 @@ export function DrugMonographView({
       </div>
 
       {/* ── Footer ── */}
-      <div className="px-4 sm:px-6 md:px-8 py-4 border-t border-[var(--border)]/60 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] text-[var(--text-muted)] font-sans select-none">
+      <div className="px-4 sm:px-6 md:px-8 py-3 border-t border-[var(--border)]/60 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] text-[var(--text-muted)] font-sans select-none">
         <div className="flex items-center gap-1.5">
           <ShieldCheck size={13} className="text-[var(--success)]" />
           <span>

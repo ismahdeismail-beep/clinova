@@ -535,7 +535,7 @@ export default function DrugIndexScreen() {
       </div>
 
       {/* Tabs navigation - Modern design */}
-      <div className="relative flex flex-wrap gap-1 border-b border-[var(--border)]">
+      <div className="relative flex flex-nowrap gap-1 border-b border-[var(--border)] overflow-x-auto scrollbar-none">
         {/* Active tab indicator */}
         <div 
           className="absolute left-0 top-full -translate-y-px h-[3px] w-auto bg-[var(--primary)] rounded-t transition-all duration-200 ease-out"
@@ -586,6 +586,7 @@ export default function DrugIndexScreen() {
       ) : activeTab === 'monograph' ? (
         <div className="space-y-6 animate-in fade-in duration-200">
           {/* Search Bar */}
+          {!monograph && (
           <div className="relative" ref={searchRef}>
             <form onSubmit={handleSearchSubmit} className="flex gap-3 bg-[var(--surface)] p-2 rounded-xl border border-[var(--border)] shadow-sm">
               <div className="flex-1 flex items-center gap-3 px-3">
@@ -625,8 +626,10 @@ export default function DrugIndexScreen() {
               </div>
             )}
           </div>
+          )}
 
           {/* Quick Discovery Tags + Saved Searches row */}
+          {!monograph && (
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider">Quick Search:</span>
             {QUICK_DRUGS.map((drug) => (
@@ -656,6 +659,7 @@ export default function DrugIndexScreen() {
               </>
             )}
           </div>
+          )}
 
           {/* Breadcrumb Navigation */}
           <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] overflow-x-auto pb-3 whitespace-nowrap">

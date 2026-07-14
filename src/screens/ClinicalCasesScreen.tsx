@@ -646,7 +646,8 @@ export default function ClinicalCasesScreen() {
     <div className="flex-1 bg-[var(--bg)] min-h-screen overflow-y-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
         
-        {/* Header Section */}
+        {/* Header Section — hidden once a case is open to avoid duplicate nav/explanation */}
+        {!selectedCase && (
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
             <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--primary)] mb-2">
@@ -675,6 +676,7 @@ export default function ClinicalCasesScreen() {
             )}
           </div>
         </div>
+        )}
 
         {/* Breadcrumb Navigation */}
         <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] overflow-x-auto pb-2 whitespace-nowrap">
@@ -1011,9 +1013,9 @@ export default function ClinicalCasesScreen() {
                   { id: 'pearls', label: 'Pearls' },
                 ]} />
                 {/* Main Case Info */}
-                <div className="xl:col-span-7 space-y-6">
+                <div className="xl:col-span-7 space-y-5">
                   {/* Presentation Section */}
-                  <Card className="p-6">
+                  <Card className="p-5">
                     <Section id="presentation" title="Clinical Presentation" icon={<User size={16} />}>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
                         <div>
@@ -1065,7 +1067,7 @@ export default function ClinicalCasesScreen() {
                   </Card>
 
                   {/* Investigations Section */}
-                  <Card className="p-6">
+                  <Card className="p-5">
                     <Section id="investigations" title="Investigations" icon={<Activity size={16} />}>
                       <div className="space-y-4">
                         <div>
@@ -1085,7 +1087,7 @@ export default function ClinicalCasesScreen() {
                   </Card>
 
                   {/* Management Section */}
-                  <Card className="p-6">
+                  <Card className="p-5">
                     <Section id="management" title="Assessment & Management" icon={<Stethoscope size={16} />}>
                     <div className="space-y-5">
                       <div>
@@ -1145,7 +1147,7 @@ export default function ClinicalCasesScreen() {
                   </Card>
 
                   {/* Pearls Section */}
-                  <Card className="p-6">
+                  <Card className="p-5">
                     <Section id="pearls" title="Clinical Pearls & References" icon={<Sparkles size={16} />}>
                       <p className="text-sm text-[var(--text)] leading-relaxed mb-4"><HighlightText text={selectedCase.pearls || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
                     <div className="border-t border-[var(--border)] pt-4">

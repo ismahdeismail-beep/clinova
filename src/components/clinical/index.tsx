@@ -309,7 +309,7 @@ export function StickySectionNav({ items }: { items: { id: string; label: string
     return () => obs.disconnect();
   }, [items]);
   return (
-    <nav className="cl-section-nav hidden xl:block w-52 shrink-0">
+    <nav className="cl-section-nav hidden lg:block w-52 shrink-0">
       <div className="cl-section-title mb-2">On this page</div>
       <ul className="space-y-1 border-l border-[var(--border)]">
         {items.map((it) => (

@@ -1029,11 +1029,11 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
 
   const tabs = [
     { id: 'overview', label: 'Study Guide' },
-    { id: 'tutor', label: 'Clinical Coach' },
     { id: 'notes', label: 'My Notes' },
+    { id: 'tutor', label: 'Clinical Coach' },
+    { id: 'resources', label: 'Resources' },
     { id: 'flashcards', label: 'Flashcards' },
     { id: 'mcqs', label: 'Practice Quiz' },
-    { id: 'resources', label: 'Resources' }
   ];
 
   return (
@@ -1243,11 +1243,11 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
         {/* Workspace Content */}
         <div className="flex-1 p-6 bg-[var(--bg)]">
 {activeTab === 'overview' && <WorkspaceOverview unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
-          {activeTab === 'tutor' && <WorkspaceTutor unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
           {activeTab === 'notes' && <WorkspaceNotes unit={unit} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
+          {activeTab === 'tutor' && <WorkspaceTutor unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
+          {activeTab === 'resources' && <WorkspaceResources unit={unit} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
           {activeTab === 'flashcards' && <WorkspaceFlashcards unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
           {activeTab === 'mcqs' && <WorkspaceQuizzes unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
-          {activeTab === 'resources' && <WorkspaceResources unit={unit} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
         </div>
       </div>
 

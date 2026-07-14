@@ -911,8 +911,8 @@ export interface EducationModule {
 
 /** All top-level modules for the Education Hub */
 export const EDUCATION_MODULES: EducationModule[] = [
-  { id: 'pharmacology', title: 'Pharmacology', description: 'Drug mechanisms, kinetics, dynamics, and toxicology.', isIntegrated: false, areaId: 'pharmacology', icon: 'Beaker', color: 'indigo' },
   { id: 'clinical_pharm', title: 'Clinical Pharmacy & Therapeutics', description: 'Disease management and patient care across 17 integrated therapeutic areas.', isIntegrated: true, areaId: 'clinical_pharm', icon: 'HeartPulse', color: 'red' },
+  { id: 'pharmacology', title: 'Pharmacology', description: 'Drug mechanisms, kinetics, dynamics, and toxicology.', isIntegrated: false, areaId: 'pharmacology', icon: 'Beaker', color: 'indigo' },
   { id: 'cases', title: 'Clinical Cases', description: 'Interactive patient cases for therapeutic areas.', isIntegrated: false, icon: 'Briefcase', color: 'orange' },
   { id: 'drug_info', title: 'Drug Information & Guidelines', description: 'Clinical guidelines, monographs, and evidence.', isIntegrated: false, icon: 'FileText', color: 'teal' },
   { id: 'ebm', title: 'Evidence-Based Medicine & Research', description: 'Research methodology, biostatistics, critical appraisal, and evidence synthesis.', isIntegrated: false, icon: 'Search', color: 'sky' },

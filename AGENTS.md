@@ -279,3 +279,34 @@ The backend should remain modular, secure, and maintainable.
 # Final Goal
 
 Supabase should function as the secure, scalable foundation of Clinova. It stores, organizes, protects, and synchronizes all educational content, user data, and application resources while enabling fast retrieval for the Knowledge Engine and Google AI. By separating backend responsibilities from AI reasoning, Clinova achieves a robust architecture that is maintainable, performant, and ready to support future growth.
+
+---
+
+# Subagent Memory & Tooling
+
+This section helps coding/subagents work effectively in this repo.
+
+## Project Context Memory
+
+Full stack, commands, and conventions are documented in `.opencode/project-context.md`.
+Subagents should read it before starting work. Key points:
+
+- TypeScript (ESM), React 19 + Vite 6, Express backend (`server.ts`), Supabase primary backend.
+- Verify edits with `npm run lint` (`tsc --noEmit`) and/or `npx eslint .`.
+- Prettier: no semicolons, single quotes, trailingComma all, printWidth 100. Do not add comments unless asked.
+
+## Persistent Memory (Supermemory)
+
+The Supermemory tool provides cross-session persistent memory for subagents. It requires:
+
+- Environment variable `SUPERMEMORY_API_KEY` (from https://supermemory.ai).
+- Set it in the shell/environment before launching opencode, e.g. add to your profile:
+  `setx SUPERMEMORY_API_KEY "your-key-here"` (PowerShell) or in `.env` / shell rc.
+
+Once set, subagents can save/retrieve project facts via the Supermemory tool (scope: `project`).
+
+## LSP on Laptop
+
+- `typescript-language-server` is installed globally (`npm i -g typescript-language-server`) → TS diagnostics + completions in Neovim/VSCode.
+- `.vscode/settings.json` + `extensions.json` configure workspace TS SDK, ESLint fixOnSave, Prettier.
+- Neovim users: see `nvim-lsp-config.lua` for the LSP setup snippet.

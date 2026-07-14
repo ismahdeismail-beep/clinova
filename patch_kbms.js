@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const fs = require('fs');
 let content = fs.readFileSync('src/App.tsx', 'utf8');
 
@@ -9,7 +10,7 @@ const linksReplacement = `    ...(userData?.role === 'admin' ? [
       { to: '/admin', label: 'Admin Console', icon: ShieldCheck },
       { to: '/admin/kbms', label: 'KB Engine', icon: Database }
     ] : []),`;
-content = content.replace(/    \.\.\.\(userData\?\.role === 'admin' \? \[\{ to: '\/admin', label: 'Admin Console', icon: ShieldCheck \}\] : \[\]\),/, linksReplacement);
+content = content.replace(/ {4}\.\.\.\(userData\?\.role === 'admin' \? \[\{ to: '\/admin', label: 'Admin Console', icon: ShieldCheck \}\] : \[\]\),/, linksReplacement);
 
 const routesReplacement = `              <Route path="/admin" element={
                 <AdminRoute>
@@ -21,6 +22,6 @@ const routesReplacement = `              <Route path="/admin" element={
                   <KnowledgeBaseManagerScreen />
                 </AdminRoute>
               } />`;
-content = content.replace(/              <Route path="\/admin" element=\{\s*<AdminRoute>\s*<AdminDashboardScreen \/>\s*<\/AdminRoute>\s*\} \/>/, routesReplacement);
+content = content.replace(/ {14}<Route path="\/admin" element=\{\s*<AdminRoute>\s*<AdminDashboardScreen \/>\s*<\/AdminRoute>\s*\} \/>/, routesReplacement);
 
 fs.writeFileSync('src/App.tsx', content);

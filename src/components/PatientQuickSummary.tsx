@@ -101,7 +101,7 @@ function evaluatePriority(vitals: Vitals): {
 } {
   const systolic = parseInt(vitals.bp.split("/")[0]) || 120;
   let score = 0;
-  let reasons: string[] = [];
+  const reasons: string[] = [];
 
   if (vitals.hr > 110 || vitals.hr < 50) {
     score += 2;

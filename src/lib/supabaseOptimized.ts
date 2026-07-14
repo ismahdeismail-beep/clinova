@@ -1,3 +1,4 @@
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
@@ -92,9 +93,9 @@ export function subscribeToChanges(
   filter?: string
 ) {
   const client = getBrowserClient();
-  let channel = client.channel(`public:${table}`)
+  const channel = client.channel(`public:${table}`)
     .on(
-      'postgres_changes',
+      'postgres_changes' as any,
       {
         event: '*',
         schema: 'public',
@@ -119,7 +120,7 @@ export function subscribeToRealtime(
   const channel = client
     .channel(`realtime:${table}`)
     .on(
-      'postgres_changes',
+      'postgres_changes' as any,
       {
         event: events,
         schema: 'public',
@@ -146,23 +147,22 @@ export function useRealtimeSubscription(
     if (!enabled) return;
 
     let isMounted = true;
-    let channel: ReturnType<typeof supabase.channel> | null = null;
+    let channelRef: ReturnType<typeof supabase.channel> | null = null;
 
     const connect = async () => {
       try {
         const client = getBrowserClient();
-        const channelName = `realtime:${supabase.channel('realtime:${Math.random()}').topic}`;
-        const channel = supabase
+        channelRef = supabase
           .channel(`realtime:${table}`)
           .on(
-            'postgres_changes',
+            'postgres_changes' as any,
             {
               event: events,
               schema: 'public',
               table,
               filter,
             },
-            (payload) => {
+            (payload: any) => {
               if (isMounted) callback(payload);
             }
           )
@@ -171,8 +171,6 @@ export function useRealtimeSubscription(
               setIsConnected(status === 'SUBSCRIBED');
             }
           });
-
-        channel = supabase.channel(channelName);
       } catch (err) {
         if (isMounted) setError(err as Error);
       }
@@ -181,7 +179,7 @@ export function useRealtimeSubscription(
     connect();
     return () => {
       isMounted = false;
-      channel?.unsubscribe();
+      channelRef?.unsubscribe();
     };
   }, [table, events, filter, enabled, callback]);
 
@@ -195,7 +193,7 @@ export async function batchUpsert(
   batchSize = 100
 ) {
   const client = getAdminClient();
-  const results = [];
+  const results: any[] = [];
 
   for (let i = 0; i < records.length; i += batchSize) {
     const batch = records.slice(i, i + batchSize);
@@ -215,7 +213,7 @@ export async function batchInsert(
   batchSize = 100
 ) {
   const client = getAdminClient();
-  const results = [];
+  const results: any[] = [];
 
   for (let i = 0; i < records.length; i += batchSize) {
     const batch = records.slice(i, i + batchSize);
@@ -309,7 +307,7 @@ export function useRealtimeQuery<T>(
 
   useEffect(() => {
     let isMounted = true;
-    let channel: ReturnType<typeof supabase.channel> | null = null;
+    let channelRef: ReturnType<typeof supabase.channel> | null = null;
 
     const fetchInitialData = async () => {
       try {
@@ -337,7 +335,7 @@ export function useRealtimeQuery<T>(
         const { data, error } = await query;
         if (error) throw error;
         if (isMounted) {
-          setData(data || []);
+          setData((data || []) as T[]);
           setLoading(false);
         }
       } catch (err) {
@@ -350,28 +348,30 @@ export function useRealtimeQuery<T>(
 
     fetchInitialData();
 
-    const channel = supabase
+    channelRef = supabase
       .channel(`realtime:${table}`)
       .on(
-        'postgres_changes',
+        'postgres_changes' as any,
         {
           event: '*',
           schema: 'public',
           table,
         },
-        (payload) => {
+        (payload: any) => {
           if (!isMounted) return;
           
-          setData(prev => {
-            switch (payload.eventType) {
+          setData(function(prev: T[]) {
+            switch ((payload as any).eventType) {
               case 'INSERT':
-                return [payload.new as T, ...prev];
+                return [(payload as any).new as T, ...prev];
               case 'UPDATE':
-                return prev.map(item => 
-                  (item as any).id === payload.new.id ? payload.new : item
-                );
+                return prev.map(function(item: any) {
+                  return (item as any).id === (payload as any).new.id ? (payload as any).new as T : item
+                });
               case 'DELETE':
-                return prev.filter(item => (item as any).id !== payload.old.id);
+                return prev.filter(function(item: any) {
+                  return (item as any).id !== (payload as any).old.id
+                });
               default:
                 return prev;
             }
@@ -381,29 +381,11 @@ export function useRealtimeQuery<T>(
 
     return () => {
       isMounted = false;
-      channel?.unsubscribe();
+      channelRef?.unsubscribe();
     };
   }, []);
 
   return { data, loading, error };
-}
-
-function useState<T>(initial: T): [T, (value: T | ((prev: T) => T)) => void] {
-  // This is a placeholder - actual implementation uses React's useState
-  // This file is for the hook implementation only
-  return [initial, () => {}];
-}
-
-function useEffect(effect: () => void | (() => void), deps?: any[]) {
-  // Placeholder
-}
-
-function useCallback<T extends (...args: any[]) => any>(callback: T, deps: any[]): T {
-  return callback;
-}
-
-function useRef<T>(initial: T): { current: T } {
-  return { current: initial };
 }
 
 export { getBrowserClient, getAdminClient };

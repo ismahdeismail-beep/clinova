@@ -244,16 +244,18 @@ const exportService = {
         blob = await this.exportToDOCX(options);
         filename += '.docx';
         break;
-      case 'md':
+      case 'md': {
         const md = this.exportToMarkdown(options);
         blob = new Blob([options.content], { type: 'text/markdown' });
         filename += '.md';
         break;
-      case 'txt':
+      }
+      case 'txt': {
         const txt = this.exportToText(options);
         blob = new Blob([options.content], { type: 'text/plain' });
         filename += '.txt';
         break;
+      }
       default:
         throw new Error(`Unsupported format: ${options.format}`);
     }

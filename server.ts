@@ -338,7 +338,7 @@ function getPatientInitialsBackend(name: string): string {
     return trimmed;
   }
   
-  const parts = trimmed.split(/[\s\-_,\.]+/).filter(Boolean);
+  const parts = trimmed.split(/[\s\-_,.]+/).filter(Boolean);
   if (parts.length === 0) return "";
   
   // Map each part of the name to its capitalized first character and join with ". "
@@ -660,6 +660,7 @@ Return a JSON object containing:
       } else {
         // Safe check if it's a printable text file
         const textContent = file.buffer.toString('utf-8');
+        // eslint-disable-next-line no-control-regex
         const isBinary = textContent.includes('\u0000') || /[\x00-\x08\x0B\x0C\x0E-\x1F]/.test(textContent);
         
         if (!isBinary) {
@@ -1025,6 +1026,7 @@ ${ragContext}
       try {
         const buf = Buffer.from(cleanBase64, 'base64');
         const textContent = buf.toString('utf-8');
+        // eslint-disable-next-line no-control-regex
         const isBinary = textContent.includes('\u0000') || /[\x00-\x08\x0B\x0C\x0E-\x1F]/.test(textContent);
         if (!isBinary) {
           userParts.push({ text: `\n--- ATTACHED FILE CONTENT: ${filename} ---\n${textContent}\n--- END OF ATTACHED FILE ---\n` });

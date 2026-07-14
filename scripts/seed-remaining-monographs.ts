@@ -7,7 +7,7 @@ const svc = process.env.SUPABASE_SERVICE_ROLE_KEY!;
 const supabase = createClient(url, svc, { auth: { persistSession: false } });
 
 async function loadMonographs(file: string): Promise<any[]> {
-  let src = fs.readFileSync(file, 'utf8');
+  const src = fs.readFileSync(file, 'utf8');
   const start = src.indexOf('const MONOGRAPHS');
   const end = src.indexOf('];', start);
   let arr = src.slice(start, end + 2);

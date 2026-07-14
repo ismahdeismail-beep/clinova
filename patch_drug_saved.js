@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const fs = require('fs');
 let content = fs.readFileSync('src/screens/DrugIndexScreen.tsx', 'utf8');
 
@@ -5,7 +6,7 @@ const stateBlock = `  const [searchQuery, setSearchQuery] = useState('');
   const [savedDrugs, setSavedDrugs] = useState<string[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);`;
 
-content = content.replace(/  const \[searchQuery, setSearchQuery\] = useState\(''\);\n  const \[selectedCategory, setSelectedCategory\] = useState<string \| null>\(null\);/, stateBlock);
+content = content.replace(/ {2}const \[searchQuery, setSearchQuery\] = useState\(''\);\n {2}const \[selectedCategory, setSelectedCategory\] = useState<string \| null>\(null\);/, stateBlock);
 
 const useEffectBlock = `  useEffect(() => {
     const saved = localStorage.getItem('savedDrugs');
@@ -29,12 +30,12 @@ const useEffectBlock = `  useEffect(() => {
 
   const handleSearch = async (e: React.FormEvent) => {`;
 
-content = content.replace(/  const handleSearch = async \(e: React\.FormEvent\) => \{/, useEffectBlock);
+content = content.replace(/ {2}const handleSearch = async \(e: React\.FormEvent\) => \{/, useEffectBlock);
 
 const saveDrugCall = `      setMonograph(entry.content);
       saveDrugSearch(searchQuery);
     } catch (err: any) {`;
 
-content = content.replace(/      setMonograph\(entry\.content\);\n    \} catch \(err: any\) \{/, saveDrugCall);
+content = content.replace(/ {6}setMonograph\(entry\.content\);\n {4}\} catch \(err: any\) \{/, saveDrugCall);
 
 fs.writeFileSync('src/screens/DrugIndexScreen.tsx', content);

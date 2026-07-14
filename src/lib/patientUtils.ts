@@ -12,7 +12,7 @@ export function getPatientInitials(name: string): string {
     return trimmed;
   }
   
-  const parts = trimmed.split(/[\s\-_,\.]+/).filter(Boolean);
+  const parts = trimmed.split(/[\s\-_,.]+/).filter(Boolean);
   if (parts.length === 0) return "";
   
   // Map each part of the name to its capitalized first character and join with ". "

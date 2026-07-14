@@ -70,7 +70,7 @@ export const MediaService = {
         try {
           const errorData = await response.json();
           errorMessage = errorData.error || errorMessage;
-        } catch (_) {}
+        } catch (_) { /* noop */ }
         throw new Error(errorMessage);
       }
 

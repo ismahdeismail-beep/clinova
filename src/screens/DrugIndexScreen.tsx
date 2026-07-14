@@ -232,13 +232,6 @@ export default function DrugIndexScreen() {
     fetchPatientsList();
   }, []);
 
-  // Pre-fill the search when arriving with ?q= (e.g. from Pharmacotherapy Review "Detected Medicines")
-  useEffect(() => {
-    const q = searchParams.get('q');
-    if (q) handleQuickDrugClick(q);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   // Load monographs from Supabase; fall back to bundled data if unavailable
   useEffect(() => {
     const loadCatalog = async () => {
@@ -265,8 +258,8 @@ export default function DrugIndexScreen() {
       if (saved) {
         try {
           setSavedDrugs(JSON.parse(saved));
-        } catch (e) {}
-      }
+      } catch (e) { /* noop */ }
+    }
       
       // Load from Firestore if authenticated
       if (userData?.id) {
@@ -462,6 +455,13 @@ export default function DrugIndexScreen() {
     setShowSearchDropdown(false);
     fetchDrugProfile(drugName);
   };
+
+  // Pre-fill the search when arriving with ?q= (e.g. from Pharmacotherapy Review "Detected Medicines")
+  useEffect(() => {
+    const q = searchParams.get('q');
+    if (q) handleQuickDrugClick(q);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Evaluate Medication Treatment Plan & Patient context hazards
   const handleCheckInteractions = async () => {

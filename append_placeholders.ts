@@ -19,6 +19,6 @@ const placeholder = `
             )}
 `;
 
-content = content.replace(/                \<\/div\>\n              \<\/div\>\n            \)\}\n          \<\/div\>/m, placeholder + '          </div>');
+content = content.replace(/ {16}<\/div>\n {14}<\/div>\n {12}\)\}\n {10}<\/div>/m, placeholder + '          </div>');
 
 fs.writeFileSync('src/screens/KnowledgeBaseScreen.tsx', content);

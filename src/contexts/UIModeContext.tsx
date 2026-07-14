@@ -19,7 +19,7 @@ export function UIModeProvider({ children }: { children: ReactNode }) {
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored === 'simple' || stored === 'clinical') return stored;
-    } catch { }
+    } catch { /* noop */ }
     const role = localStorage.getItem('clinova-role');
     return role === 'admin' || role === 'clinician' ? 'clinical' : 'simple';
   });
@@ -28,7 +28,7 @@ export function UIModeProvider({ children }: { children: ReactNode }) {
     setModeState(newMode);
     try {
       localStorage.setItem(STORAGE_KEY, newMode);
-    } catch { }
+    } catch { /* noop */ }
   }, []);
 
   const toggleMode = useCallback(() => {

@@ -1,5 +1,5 @@
 import { useMemo, useCallback, useRef, useEffect, useState } from 'react';
-import { useVirtualizer } from '@tanstack/react-virtual';
+import { useVirtualizer, VirtualItem } from '@tanstack/react-virtual';
 
 interface VirtualListProps<T> {
   items: T[];
@@ -31,7 +31,7 @@ export function VirtualList<T>({
     getScrollElement: () => parentRef.current,
     estimateSize: typeof itemHeight === 'function' ? itemHeight : () => itemHeight,
     overscan: overscanCount,
-    getItemKey: (index) => index,
+    getItemKey: (index: number) => index,
     debug: false,
   });
 
@@ -57,7 +57,6 @@ export function VirtualList<T>({
       ref={parentRef}
       className={className}
       style={{ height, overflow: 'auto', ...style }}
-      className="overflow-auto"
     >
       <div
         style={{
@@ -66,7 +65,7 @@ export function VirtualList<T>({
           position: 'relative',
         }}
       >
-        {visibleItems.map((virtualRow) => (
+        {visibleItems.map((virtualRow: VirtualItem) => (
           <div
             key={virtualRow.key}
             style={{
@@ -88,7 +87,7 @@ export function VirtualList<T>({
 
 interface WindowedListProps<T> {
   items: T[];
-  renderItem: (item: T, index: number) => React.ReactNode;
+  renderItem?: (item: T, index: number) => React.ReactNode;
   itemHeight: number;
   containerHeight: number;
   itemWidth?: number;
@@ -176,7 +175,7 @@ export function WindowedList<T>({
               height: itemHeight,
             }}
           >
-            {renderItem(item, startIndex + index)}
+            {renderItem?.(item, startIndex + index)}
           </div>
         ))}
       </div>

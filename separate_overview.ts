@@ -2,7 +2,7 @@ import fs from 'fs';
 
 let content = fs.readFileSync('src/screens/KnowledgeBaseScreen.tsx', 'utf8');
 
-const overviewRegex = /                  \{\/\* OVERVIEW SECTION \*\/\}\n                  \{activeModuleSection === 'overview' && \([\s\S]*?                      \<\/div\>\n                    \<\/div\>\n                  \)\}/;
+const overviewRegex = / {18}\{\/\* OVERVIEW SECTION \*\/\}\n {18}\{activeModuleSection === 'overview' && \([\s\S]*? {22}<\/div>\n {20}<\/div>\n {18}\)\}/;
 
 const overviewReplacement = `                  {/* OVERVIEW SECTION */}
                   {activeModuleSection === 'overview' && (

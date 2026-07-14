@@ -363,7 +363,7 @@ export const StorageService = {
             list.push(record.meta);
           }
         }
-      } catch (_) {}
+      } catch (_) { /* noop */ }
       return list.slice(0, max);
     }
   },
@@ -408,7 +408,7 @@ export const StorageService = {
             list.push(record.meta);
           }
         }
-      } catch (_) {}
+      } catch (_) { /* noop */ }
       return list.slice(0, max);
     }
   },
@@ -453,7 +453,7 @@ export const StorageService = {
             list.push(record.meta);
           }
         }
-      } catch (_) {}
+              } catch (_) { /* noop */ }
       return list.slice(0, max);
     }
   },
@@ -497,7 +497,7 @@ export const StorageService = {
             list.push(record.meta);
           }
         }
-      } catch (_) {}
+      } catch (_) { /* noop */ }
       return list.slice(0, max);
     }
   },

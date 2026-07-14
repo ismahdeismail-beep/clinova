@@ -733,7 +733,7 @@ export default function PharmacotherapyReviewScreen() {
         const allData: Record<string, string> = {};
         Object.values(parsed).forEach(tab => Object.assign(allData, tab));
         checkInteractions(allData);
-      } catch (e) {}
+      } catch (e) { /* noop */ }
     }
     detectMedicinesInForm();
   }, []);
@@ -855,7 +855,7 @@ export default function PharmacotherapyReviewScreen() {
               if (saved) {
                 try {
                   setSafetyVerification(JSON.parse(saved));
-                } catch (e) {}
+                } catch (e) { /* noop */ }
               }
             }}
             className="text-xs bg-[var(--surface-dim)] hover:bg-[var(--surface)] text-[var(--text-muted)] hover:text-[var(--text)] border border-[var(--border)] font-medium px-3 py-1.5 rounded-lg flex items-center gap-1.5 transition-colors self-start sm:self-center"

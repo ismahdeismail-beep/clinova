@@ -1213,7 +1213,7 @@ export default function AdminDashboardScreen() {
       accessScope: 'public' as const
     };
 
-    let newFallbackFiles: StoredFile[] = [];
+    const newFallbackFiles: StoredFile[] = [];
 
     for (let i = 0; i < filesToUpload.length; i++) {
       const file = filesToUpload[i];

@@ -39,7 +39,7 @@ export function parseVitals(input: unknown): Vital[] | null {
   if (parts.length === 0) return null;
   const out: Vital[] = [];
   for (const part of parts) {
-    const m = part.match(/^([A-Za-z\/ ]+?)\s*[:：]?\s*([\d./]+)\s*([A-Za-z%°\/]+)?/);
+    const m = part.match(/^([A-Za-z/ ]+?)\s*[:：]?\s*([\d./]+)\s*([A-Za-z%°/]+)?/);
     if (!m) {
       out.push({ label: part, value: '', abnormal: false });
       continue;

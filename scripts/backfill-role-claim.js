@@ -16,7 +16,9 @@
 // token) after this runs for the new claim to appear in their tokens.
 
 'use strict';
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const { initializeApp } = require('firebase-admin/app');
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const { getAuth } = require('firebase-admin/auth');
 
 initializeApp();

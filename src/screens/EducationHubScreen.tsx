@@ -298,7 +298,7 @@ export default function EducationHubScreen() {
   });
 
   // Filter modules by search and Year level
-  let filteredMods = EDUCATION_MODULES.filter(m => {
+  const filteredMods = EDUCATION_MODULES.filter(m => {
     if (!searchQuery) return true;
     const q = searchQuery.toLowerCase();
     return m.title.toLowerCase().includes(q) ||

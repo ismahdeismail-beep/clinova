@@ -41,7 +41,7 @@ function fixArrayItems(inner: string): string {
     const start = i + 1;
     let end = start;
     // greedy: find last `'` in the remaining string
-    let lastQuote = inner.lastIndexOf("'", n);
+    const lastQuote = inner.lastIndexOf("'", n);
     // ensure it's a real terminator (followed by , or ] or end/whitespace)
     end = lastQuote;
     items.push(JSON.stringify(inner.slice(start, end)));

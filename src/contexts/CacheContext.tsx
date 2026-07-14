@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useRef, useState, useCallback, ReactNode } from 'react';
-import { useOptimizedQuery, invalidateQueries, setQueryData } from './useOptimizedQuery';
+import { useOptimizedQuery, invalidateQueries, setQueryData } from '../hooks/useOptimizedQuery';
 
 interface CacheConfig {
   defaultCacheTime: number;

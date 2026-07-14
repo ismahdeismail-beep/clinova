@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { 
   Bot, Send, User, BrainCircuit, Library, Pill, Activity, 
-  FlaskConical, FileText, CheckCircle2, ChevronRight, Loader2, 
+  FlaskConical, FileText, CheckCircle2, ChevronDown, ChevronRight, Loader2, 
   Database, AlertCircle, Mic, MicOff, ArrowDown, X, Layers, Sparkles,
   Download, FileDown, Copy, Check, Paperclip, Menu, Plus, Settings
 } from 'lucide-react';

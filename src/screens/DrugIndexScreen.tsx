@@ -596,8 +596,8 @@ export default function DrugIndexScreen() {
         <div className="relative flex border-b border-[var(--border)] overflow-x-auto">
           {([
             { id: 'monograph', label: 'Monographs', icon: BookOpen },
-            { id: 'interaction', label: 'Interaction Checker', icon: Sparkles },
             { id: 'library', label: 'My Library', icon: Heart },
+            { id: 'interaction', label: 'Interaction Checker', icon: Sparkles },
           ] as const).map((tab) => {
             const Icon = tab.icon;
             const active = activeTab === tab.id;
@@ -621,18 +621,7 @@ export default function DrugIndexScreen() {
           })}
         </div>
 
-        {activeTab === 'library' ? (
-          <div className="animate-in fade-in duration-200 max-w-3xl mx-auto">
-            <SavedMonographsPanel
-              onNavigateToDrug={(name) => {
-                setActiveTab('monograph');
-                setSearchQuery(name);
-                setSelectedCategory(null);
-                fetchDrugProfile(name);
-              }}
-            />
-          </div>
-        ) : activeTab === 'monograph' ? (
+        {activeTab === 'monograph' ? (
         <div className="space-y-6 animate-in fade-in duration-200">
           {/* Search Bar */}
           {!monograph && (
@@ -947,6 +936,17 @@ export default function DrugIndexScreen() {
                 </div>
               )}
             </div>
+          </div>
+      ) : activeTab === 'library' ? (
+          <div className="animate-in fade-in duration-200 max-w-3xl mx-auto">
+            <SavedMonographsPanel
+              onNavigateToDrug={(name) => {
+                setActiveTab('monograph');
+                setSearchQuery(name);
+                setSelectedCategory(null);
+                fetchDrugProfile(name);
+              }}
+            />
           </div>
       ) : (
         /* Real-Time Drug Interaction Checker Panel */

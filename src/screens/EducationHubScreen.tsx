@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
   BookOpen, ChevronRight, Search, Activity, Accessibility, Dna, FlaskConical, 
@@ -21,6 +21,8 @@ from '../services/education.service';
 import { AIContentService } from '../services/aiContent.service';
 import exportService from '../services/export.service';
 import CurriculumGraph from '../components/CurriculumGraph';
+import { getResourcesForUnit } from '../data/unitToLibraryMapping';
+import { getStaticContent } from '../data/unitStaticContent';
 const getRelevantFiles = (files: any[], currentFolderId: string, currentFolderName: string, unitTitle: string) => {
   return files.filter(f => {
     if (f.category === 'study_source' && f.studyId === currentFolderId) return true;
@@ -1245,6 +1247,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
           {activeTab === 'notes' && <WorkspaceNotes unit={unit} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
           {activeTab === 'flashcards' && <WorkspaceFlashcards unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
           {activeTab === 'mcqs' && <WorkspaceQuizzes unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
+          {activeTab === 'resources' && <WorkspaceResources unit={unit} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
         </div>
       </div>
 
@@ -1623,6 +1626,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
   const [summary, setSummary] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [customNotes, setCustomNotes] = useState('');
+  const staticContent = getStaticContent(unit.id);
 
   const unitFiles = getRelevantFiles(files, currentFolderId, currentFolderName, unit.title);
 
@@ -1770,6 +1774,51 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
               <div className="prose prose-slate dark:prose-invert max-w-none text-sm text-[var(--text)] leading-relaxed space-y-4 markdown-body">
                 <Markdown>{summary}</Markdown>
               </div>
+            ) : staticContent ? (
+              <div className="space-y-4">
+                <div className="prose prose-slate dark:prose-invert max-w-none text-sm text-[var(--text)] leading-relaxed space-y-4 markdown-body">
+                  <Markdown>{staticContent.summary}</Markdown>
+                </div>
+                {staticContent.keyPoints && (
+                  <div className="bg-[var(--surface-dim)]/50 border border-[var(--border)]/40 rounded-xl p-4">
+                    <h4 className="text-xs font-bold text-[var(--text)] mb-3 uppercase tracking-wider">Key Points</h4>
+                    <ul className="space-y-2">
+                      {staticContent.keyPoints.map((pt, i) => (
+                        <li key={i} className="text-xs text-[var(--text-muted)] flex gap-2">
+                          <span className="text-emerald-500 mt-0.5">&bull;</span>
+                          {pt}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {staticContent.drugClasses && staticContent.drugClasses.length > 0 && (
+                  <div className="flex flex-wrap gap-2">
+                    {staticContent.drugClasses.map((dc) => (
+                      <span key={dc} className="text-[11px] font-semibold px-2.5 py-1 rounded-lg bg-[var(--primary)]/5 text-[var(--primary)] border border-[var(--primary)]/10">
+                        {dc}
+                      </span>
+                    ))}
+                  </div>
+                )}
+                <button
+                  onClick={handleGenerateSummary}
+                  disabled={loading}
+                  className="w-full mt-4 py-2.5 bg-gradient-to-r from-[var(--primary)] to-purple-600 text-white rounded-xl text-xs font-bold shadow-md hover:opacity-95 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+                >
+                  {loading ? (
+                    <>
+                      <div className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                      Generating...
+                    </>
+                  ) : (
+                    <>
+                      <Sparkles size={13} />
+                      Regenerate with AI (uses your files & notes)
+                    </>
+                  )}
+                </button>
+              </div>
             ) : (
               <div className="py-12 text-center max-w-md mx-auto space-y-4">
                 <div className="w-14 h-14 bg-purple-500/10 text-purple-600 rounded-full flex items-center justify-center mx-auto">
@@ -1787,7 +1836,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
                 </div>
                 {(!unitFiles.length && !customNotes.trim()) ? (
                   <p className="text-[11px] font-semibold text-amber-600 bg-amber-50 dark:bg-amber-950/20 p-2.5 rounded-lg border border-amber-200/40">
-                    ⚠️ To get started, write some notes in the scratchpad or upload a revision source file.
+                    To get started, write some notes in the scratchpad or upload a revision source file.
                   </p>
                 ) : (
                   <button
@@ -1795,7 +1844,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
                     disabled={loading}
                     className="mt-4 px-6 py-3 bg-gradient-to-r from-[var(--primary)] to-purple-600 text-white rounded-xl text-sm font-bold shadow-md hover:opacity-95 transition-all flex items-center gap-2 mx-auto cursor-pointer"
                   >
-                    {loading ? 'Processing Uploads...' : '✨ Compile Study Guide Now'}
+                    {loading ? 'Processing Uploads...' : 'Compile Study Guide Now'}
                   </button>
                 )}
               </div>
@@ -2689,32 +2738,92 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName, us
 // ==========================================
 // STATIC WORKSPACE RESOURCES
 // ==========================================
-function WorkspaceResources({ unit, currentFolderId }: { unit: EducationModuleUnit, currentFolderId: string }) {
-  const resources = [
-    { title: 'Clinical Treatment Guidelines 2024', author: 'Ministry of Health Kenya', type: 'PDF' },
-    { title: 'Standard Treatment Protocol Guidelines (STGs)', author: 'World Health Organization', type: 'Link' },
-    { title: 'Essential Medicines List (EML)', author: 'KDI Standard Reference', type: 'PDF' },
-    { title: 'Osce Clinical Board Exam Blueprints', author: 'School of Pharmacy Council', type: 'PPTX' }
-  ];
+function WorkspaceResources({ unit, currentFolderId, currentFolderName }: { unit: EducationModuleUnit, currentFolderId: string, currentFolderName: string }) {
+  const unitResources = useMemo(() => getResourcesForUnit(unit.id), [unit.id]);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const displayed = isExpanded ? unitResources : unitResources.slice(0, 8);
+
+  const typeIcons: Record<string, React.ReactNode> = {
+    textbook: <BookOpen size={16} />,
+    guideline: <FileText size={16} />,
+    reference: <Database size={16} />,
+    handbook: <BookOpen size={16} />,
+    formulary: <FileText size={16} />,
+    oer: <Award size={16} />,
+  };
+
+  if (unitResources.length === 0) {
+    return (
+      <div className="py-12 text-center max-w-md mx-auto space-y-4">
+        <div className="w-14 h-14 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mx-auto">
+          <BookOpen size={28} className="text-[var(--text-muted)]" />
+        </div>
+        <h4 className="text-base font-bold text-[var(--text)]">No Library Resources Yet</h4>
+        <p className="text-xs text-[var(--text-muted)] leading-relaxed">
+          Visit the <strong>Online Books Hub</strong> from the dashboard to explore textbooks, guidelines, and references. Resources tagged for this unit will appear here.
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-4">
-      {resources.map((res, i) => (
-        <div key={i} className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-5 flex items-center justify-between hover:border-[var(--primary)] transition-colors group cursor-pointer shadow-xs">
-          <div className="flex items-center gap-4">
-            <div className="w-10 h-10 bg-[var(--surface-dim)] rounded-xl flex items-center justify-center text-[var(--primary)]">
-              <BookOpen size={18} />
+      <div className="flex items-center justify-between">
+        <p className="text-[11px] font-bold text-[var(--text-muted)] uppercase tracking-wider">
+          {unitResources.length} Resource{unitResources.length !== 1 ? 's' : ''} Available
+        </p>
+        <span className="text-[10px] text-[var(--primary)] font-semibold bg-[var(--primary)]/5 px-2 py-0.5 rounded-lg">
+          {currentFolderName}
+        </span>
+      </div>
+
+      {displayed.map((res) => (
+        <div key={res.id} className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 flex items-start justify-between hover:border-[var(--primary)] transition-colors group shadow-xs">
+          <div className="flex items-start gap-3 min-w-0">
+            <div className="w-9 h-9 rounded-xl bg-[var(--surface-dim)] flex items-center justify-center text-[var(--primary)] shrink-0 mt-0.5">
+              {typeIcons[res.type] || <BookOpen size={16} />}
             </div>
-            <div>
-              <h4 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">{res.title}</h4>
-              <p className="text-[10px] text-[var(--text-muted)] font-bold">{res.author} &bull; {res.type}</p>
+            <div className="min-w-0">
+              <h4 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors leading-tight">{res.title}</h4>
+              <p className="text-[10px] text-[var(--text-muted)] font-semibold mt-1">
+                {res.authors} &bull; {res.edition ? `${res.edition}, ` : ''}{res.year}
+              </p>
+              <div className="flex flex-wrap gap-1.5 mt-1.5">
+                <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-[var(--primary)]/5 text-[var(--primary)] capitalize">
+                  {res.type}
+                </span>
+                {res.isFree && (
+                  <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600">
+                    Free
+                  </span>
+                )}
+              </div>
             </div>
           </div>
-          <button className="p-2 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary)]/10 rounded-lg transition-colors cursor-pointer">
-            <Download size={18} />
-          </button>
+          {res.openAccessLink && (
+            <a
+              href={res.openAccessLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary)]/10 rounded-lg transition-colors cursor-pointer shrink-0"
+              title="Open resource"
+            >
+              <ArrowUpRight size={16} />
+            </a>
+          )}
         </div>
       ))}
+
+      {unitResources.length > 8 && (
+        <button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="w-full py-2 text-xs font-bold text-[var(--primary)] bg-[var(--primary)]/5 hover:bg-[var(--primary)]/10 rounded-xl transition-colors cursor-pointer"
+        >
+          {isExpanded
+            ? `Show fewer (${8} of ${unitResources.length})`
+            : `Show all ${unitResources.length} resources`}
+        </button>
+      )}
     </div>
   );
 }

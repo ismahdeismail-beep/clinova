@@ -59,7 +59,13 @@ function getAdminClient(): SupabaseClient {
 }
 
 export const supabase = getBrowserClient();
-export const supabaseAdmin = getAdminClient();
+export const supabaseAdmin = (() => {
+  try {
+    return getAdminClient();
+  } catch {
+    return null;
+  }
+})();
 
 export async function refreshSession() {
   const client = getBrowserClient();

@@ -239,21 +239,17 @@ export default function DrugIndexScreen() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Load Supabase monographs as an enhancement on top of the bundled catalog
+  // Load monographs from Supabase; fall back to bundled data if unavailable
   useEffect(() => {
     const loadCatalog = async () => {
       setCatalogLoading(true);
       try {
         const list = await DrugMonographService.getAll();
         if (list.length > 0) {
-          const bundledIds = new Set(BUNDLED_DRUGS.map(d => d.id));
-          const newItems = list.filter(d => !bundledIds.has(d.id));
-          if (newItems.length > 0) {
-            setCatalog(prev => [...prev, ...newItems]);
-          }
+          setCatalog(list);
         }
       } catch (err) {
-        console.warn('[DrugIndex] Failed to load Supabase monographs (bundled data active):', err);
+        console.warn('[DrugIndex] Supabase unavailable, using bundled data:', err);
       } finally {
         setCatalogLoading(false);
       }

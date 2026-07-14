@@ -46,7 +46,7 @@ export const SearchService = {
     const [drugs, diseases, cases] = await Promise.all([
       supabase
         .from('drug_monographs')
-        .select('id, name, drug_class')
+        .select('id, name')
         .or(`name.ilike.${like},generic_name.ilike.${like}`)
         .limit(limit),
       supabase
@@ -63,7 +63,7 @@ export const SearchService = {
     ]);
 
     for (const d of drugs.data ?? []) {
-      results.push({ result_type: 'drug', id: String(d.id), title: d.name, subtitle: d.drug_class ?? '', relevance: 0.5 });
+      results.push({ result_type: 'drug', id: String(d.id), title: d.name, subtitle: '', relevance: 0.5 });
     }
     for (const d of diseases.data ?? []) {
       results.push({ result_type: 'disease', id: String(d.id), title: d.name, subtitle: d.specialty ?? '', relevance: 0.5 });
@@ -73,25 +73,5 @@ export const SearchService = {
     }
 
     return results.slice(0, limit);
-  },
-
-  /**
-   * Semantic (vector) search via the `match_embeddings` RPC (migration 000007).
-   * Requires a precomputed query embedding (768-dim, Gemini embedding-001),
-   * produced server-side by the embeddings pipeline (Phase 10).
-   */
-  async semantic(
-    queryEmbedding: number[],
-    contentType?: string,
-    limit = 8
-  ): Promise<{ content_id: string; chunk_text: string; metadata: any; similarity: number }[]> {
-    if (!supabase) return [];
-    const { data, error } = await supabase.rpc('match_embeddings', {
-      query_embedding: queryEmbedding,
-      match_content_type: contentType ?? null,
-      match_count: limit,
-    });
-    if (error || !data) return [];
-    return data;
   },
 };

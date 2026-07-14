@@ -38,12 +38,13 @@ AS $$
       'drug'::TEXT AS result_type,
       d.id::TEXT AS id,
       d.name AS title,
-      COALESCE(d.drug_class, '') AS subtitle,
+      COALESCE(dc.name, '') AS subtitle,
       GREATEST(
         similarity(lower(d.name), (SELECT term FROM q)),
         similarity(lower(COALESCE(d.generic_name, '')), (SELECT term FROM q))
       )::FLOAT AS relevance
     FROM drug_monographs d
+    LEFT JOIN drug_classes dc ON dc.id = d.drug_class_id
     WHERE lower(d.name) % (SELECT term FROM q)
        OR lower(COALESCE(d.generic_name, '')) % (SELECT term FROM q)
        OR d.name ILIKE '%' || (SELECT term FROM q) || '%'
@@ -91,4 +92,3 @@ $$;
 -- Grant execute to the roles used by the app (anon + authenticated).
 -- ================================================================
 GRANT EXECUTE ON FUNCTION unified_search(TEXT, INT) TO anon, authenticated;
-GRANT EXECUTE ON FUNCTION match_embeddings(vector, TEXT, INT) TO anon, authenticated;

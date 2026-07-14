@@ -85,7 +85,7 @@ export const DrugMonographService = {
     const { data, error } = await supabase
       .from('drug_monographs')
       .select('*, drug_class_info:drug_classes(name)')
-      .or(`name.ilike.%${query}%,generic_name.ilike.%${query}%,drug_class.ilike.%${query}%`)
+      .or(`name.ilike.%${query}%,generic_name.ilike.%${query}%`)
       .order('name');
     if (error) throw error;
     return (data ?? []).map(mapRow);
@@ -107,7 +107,7 @@ export const DrugMonographService = {
     const { data, error } = await supabase
       .from('drug_monographs')
       .select('*, drug_class_info:drug_classes(name)')
-      .ilike('drug_class', `%${drugClass}%`)
+      .ilike('drug_class_info.name', `%${drugClass}%`)
       .order('name');
     if (error) throw error;
     return (data ?? []).map(mapRow);

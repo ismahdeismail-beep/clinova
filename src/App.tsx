@@ -2,8 +2,11 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate, Navigate } from 'react-router-dom';
 import { 
   Home, FolderOpen, ClipboardList, Pill, Bot, 
-  BookOpen, BarChart3, Bell, Settings, Menu, Search, MessageSquare, ShieldCheck, Database,
-  X, LogOut, Cpu
+  BookOpen, Bell, Settings, Menu, Search,
+  X, LogOut, ChevronDown, Star, Clock,
+  GraduationCap, Stethoscope, FlaskConical, Library, Users,
+  BookMarked, FileText, Puzzle, BarChart3, FileUp, MessageSquare,
+  PlusCircle, Sparkles,
 } from 'lucide-react';
 
 const DashboardScreen = React.lazy(() => import('./screens/DashboardScreen'));
@@ -29,10 +32,18 @@ import { CommandPalette } from './components/CommandPalette';
 import ClinovaLogo from './components/ClinovaLogo';
 import ThemeToggle from './components/ThemeToggle';
 import { useInstallPrompt } from './hooks/useInstallPrompt';
+import { QuickActions } from './components/QuickActions';
 
 import { Breadcrumbs } from './components/Breadcrumbs';
 
 import { useNotifications } from './contexts/NotificationContext';
+
+import {
+  NAV_GROUPS, CONTEXT_NAV, getRouteLabel,
+  getFavorites, toggleFavorite, isFavorite,
+  getRecent, trackVisit,
+  type NavGroup,
+} from './data/navigationConfig';
 
 function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
   const { userData } = useAuth();
@@ -68,7 +79,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
                 window.dispatchEvent(new Event('open-command-palette'));
               }}
             >
-              <span className="truncate">Search Kenya Drug Index, Guidelines...</span>
+              <span className="truncate">Search drugs, diseases, guidelines...</span>
               <span className="flex items-center gap-1 shrink-0 ml-2">
                 <kbd className="hidden sm:inline-block bg-[var(--surface)] border border-[var(--border)] rounded px-1.5 py-0.5 text-[10px] font-mono font-medium text-[var(--text-muted)]">Ctrl</kbd>
                 <kbd className="hidden sm:inline-block bg-[var(--surface)] border border-[var(--border)] rounded px-1.5 py-0.5 text-[10px] font-mono font-medium text-[var(--text-muted)]">K</kbd>
@@ -110,43 +121,37 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
 
 function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolean) => void }) {
   const location = useLocation();
+  const navigate = useNavigate();
   const { userData, logout } = useAuth();
+  const [expandedGroups, setExpandedGroups] = React.useState<Record<string, boolean>>(() => {
+    const saved = localStorage.getItem('clinova_sidebar_sections')
+    return saved ? JSON.parse(saved) : { 'knowledge-base': true }
+  })
+  const [favorites, setFavorites] = React.useState<string[]>(getFavorites)
+  const recent = getRecent()
 
-  const groups = [
-    {
-      label: 'Study',
-      links: [
-        { to: '/', label: 'Dashboard', icon: Home },
-        { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
-      ],
-    },
-    {
-      label: 'Clinical Practice',
-      links: [
-        { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
-        { to: '/review', label: 'Pharmacotherapy Review', icon: ClipboardList },
-        { to: '/drugs', label: 'Drug Index', icon: Pill },
-        { to: '/assistant', label: 'Clinical Support', icon: Bot },
-      ],
-    },
-    {
-      label: 'Account',
-      links: [
-        { to: '/notifications', label: 'Notifications', icon: Bell },
-        { to: '/settings', label: 'Settings', icon: Settings },
-      ],
-    },
-    ...(userData?.role === 'admin'
-      ? [{
-          label: 'Admin',
-          links: [
-            { to: '/admin/kbms', label: 'Knowledge Base', icon: Database },
-            { to: '/admin', label: 'Admin Console', icon: ShieldCheck },
-            { to: '/admin/ai', label: 'AI Gateway', icon: Cpu },
-          ],
-        }]
-      : []),
-  ];
+  const toggleGroup = (id: string) => {
+    setExpandedGroups((prev) => {
+      const next = { ...prev, [id]: !prev[id] }
+      localStorage.setItem('clinova_sidebar_sections', JSON.stringify(next))
+      return next
+    })
+  }
+
+  const handleToggleFavorite = (e: React.MouseEvent, path: string) => {
+    e.preventDefault()
+    e.stopPropagation()
+    const updated = toggleFavorite(path)
+    setFavorites(updated)
+  }
+
+  const contextNav = CONTEXT_NAV[location.pathname]
+
+  const visibleGroups = NAV_GROUPS.filter((g) => {
+    if (g.future) return false
+    if (g.adminOnly && userData?.role !== 'admin') return false
+    return true
+  })
 
   return (
     <>
@@ -169,46 +174,163 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
             <X size={18} />
           </button>
         </div>
-        <nav className="p-3 space-y-3 flex-1 mt-1 overflow-y-auto">
-          {groups.map((group) =>
-            group.links.length ? (
-              <div key={group.label}>
-                <div className="px-3 mb-1.5 text-[0.6rem] font-bold uppercase tracking-wider text-[var(--text-muted)]/60">
-                  {group.label}
-                </div>
-                <div className="space-y-0.5">
-                  {group.links.map((link) => {
-                    const isActive =
-                      location.pathname === link.to ||
-                      (link.to !== '/' && location.pathname.startsWith(link.to + '/'));
-                    const Icon = link.icon;
+        <nav className="p-3 space-y-1 flex-1 mt-1 overflow-y-auto">
+
+          {favorites.length > 0 && (
+            <div className="mb-2">
+              <div className="px-3 mb-1 text-[0.6rem] font-bold uppercase tracking-wider text-[var(--text-muted)]/60 flex items-center gap-1.5">
+                <Star size={10} />
+                Favorites
+              </div>
+              <div className="space-y-0.5">
+                {favorites.map((path) => {
+                  const favItem = visibleGroups
+                    .flatMap((g) => g.items)
+                    .find((i) => i.to === path)
+                  if (!favItem) return null
+                  const FavIcon = favItem.icon
+                  return (
+                    <Link
+                      key={path}
+                      to={path}
+                      onClick={() => setIsOpen(false)}
+                      className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 text-[var(--text-muted)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]`}
+                    >
+                      <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-transparent">
+                        <FavIcon size={18} />
+                      </div>
+                      <span className="truncate">{favItem.label}</span>
+                    </Link>
+                  )
+                })}
+              </div>
+            </div>
+          )}
+
+          {recent.length > 0 && (
+            <div className="mb-2">
+              <div className="px-3 mb-1 text-[0.6rem] font-bold uppercase tracking-wider text-[var(--text-muted)]/60 flex items-center gap-1.5">
+                <Clock size={10} />
+                Recent
+              </div>
+              <div className="space-y-0.5">
+                {recent.slice(0, 5).map((path) => {
+                  const recItem = visibleGroups
+                    .flatMap((g) => g.items)
+                    .find((i) => i.to === path)
+                  if (!recItem) {
+                    const label = getRouteLabel(path)
                     return (
                       <Link
-                        key={link.to}
-                        to={link.to}
+                        key={path}
+                        to={path}
                         onClick={() => setIsOpen(false)}
-                        className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-150 ${
-                          isActive
-                            ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm'
-                            : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]'
-                        }`}
+                        className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 text-[var(--text-muted)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]"
                       >
-                        <div className="flex items-center justify-center w-8 h-8 rounded-lg transition-colors ${
-                          isActive
-                            ? 'bg-[var(--primary-foreground)]/20'
-                            : 'bg-transparent hover:bg-[var(--surface-dim)]'
-                        }">
-                          <Icon size={18} className={isActive ? 'text-[var(--primary-foreground)]' : ''} />
+                        <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-transparent">
+                          <Clock size={18} />
                         </div>
-                        <span className="truncate">{link.label}</span>
+                        <span className="truncate">{label}</span>
                       </Link>
-                    );
-                  })}
-                </div>
+                    )
+                  }
+                  const RecIcon = recItem.icon
+                  return (
+                    <Link
+                      key={path}
+                      to={path}
+                      onClick={() => setIsOpen(false)}
+                      className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 text-[var(--text-muted)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]"
+                    >
+                      <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-transparent">
+                        <RecIcon size={18} />
+                      </div>
+                      <span className="truncate">{recItem.label}</span>
+                    </Link>
+                  )
+                })}
               </div>
-            ) : null,
+            </div>
           )}
+
+          {visibleGroups.map((group) => {
+            const isGroupActive = group.items.some(
+              (item) => location.pathname === item.to || location.pathname.startsWith(item.to + '/')
+            )
+            const isExpanded = expandedGroups[group.id] ?? false
+            const GroupIcon = group.icon
+
+            return (
+              <div key={group.id}>
+                <button
+                  onClick={() => toggleGroup(group.id)}
+                  className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors ${
+                    isGroupActive
+                      ? 'text-[var(--primary)]'
+                      : 'text-[var(--text-muted)]/60 hover:text-[var(--text)]'
+                  }`}
+                >
+                  <div className="flex items-center gap-2">
+                    <GroupIcon size={14} />
+                    <span>{group.label}</span>
+                  </div>
+                  <ChevronDown
+                    size={14}
+                    className={`transition-transform duration-200 ${
+                      isExpanded ? 'rotate-0' : '-rotate-90'
+                    }`}
+                  />
+                </button>
+
+                {isExpanded && (
+                  <div className="space-y-0.5 mt-1 mb-2 ml-1">
+                    {group.items.map((item) => {
+                      const isActive =
+                        location.pathname === item.to ||
+                        (item.to !== '/' && location.pathname.startsWith(item.to + '/'))
+                      const ItemIcon = item.icon
+
+                      return (
+                        <div key={item.to} className="relative group/item">
+                          <Link
+                            to={item.to}
+                            onClick={() => setIsOpen(false)}
+                            className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 ${
+                              isActive
+                                ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm'
+                                : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]'
+                            }`}
+                          >
+                            <div className={`flex items-center justify-center w-8 h-8 rounded-lg transition-colors ${
+                              isActive
+                                ? 'bg-[var(--primary-foreground)]/20'
+                                : ''
+                            }`}>
+                              <ItemIcon size={18} className={isActive ? 'text-[var(--primary-foreground)]' : ''} />
+                            </div>
+                            <span className="truncate flex-1">{item.label}</span>
+                            <button
+                              onClick={(e) => handleToggleFavorite(e, item.to)}
+                              className={`opacity-0 group-hover/item:opacity-100 transition-opacity p-0.5 rounded ${
+                                isFavorite(item.to)
+                                  ? 'text-yellow-500 opacity-100'
+                                  : 'text-[var(--text-muted)] hover:text-yellow-500'
+                              }`}
+                              title={isFavorite(item.to) ? 'Remove from favorites' : 'Add to favorites'}
+                            >
+                              <Star size={12} fill={isFavorite(item.to) ? 'currentColor' : 'none'} />
+                            </button>
+                          </Link>
+                        </div>
+                      )
+                    })}
+                  </div>
+                )}
+              </div>
+            )
+          })}
         </nav>
+
         <div className="p-3 border-t border-[var(--border)] mt-auto bg-[var(--surface-dim)]/30">
           {userData ? (
             <div className="flex flex-col gap-3">
@@ -233,7 +355,6 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
         </div>
       </div>
       
-      {/* Backdrop for mobile */}
       {isOpen && (
         <div 
           className="fixed inset-0 bg-black/60 z-40 md:hidden backdrop-blur-sm animate-in fade-in duration-200"
@@ -373,6 +494,7 @@ function AppContent() {
             </Routes>
           </React.Suspense>
           <InstallPWA />
+          <QuickActions />
         </main>
       </div>
     </div>

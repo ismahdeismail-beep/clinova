@@ -194,6 +194,10 @@ export default function EducationHubScreen() {
       navigate('/drugs');
       return;
     }
+    if (mod.id === 'board_exam') {
+      navigate('/board-exam');
+      return;
+    }
     setSelectedModule(mod);
     setSelectedUnit(null);
   };

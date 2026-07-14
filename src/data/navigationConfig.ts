@@ -54,7 +54,7 @@ export const NAV_GROUPS: NavGroup[] = [
     icon: Stethoscope,
     items: [
       { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
-      { to: '/assistant', label: 'AI Clinical Assistant', icon: Bot },
+      { to: '/assistant', label: 'Clinical Support', icon: Bot },
       { to: '/review', label: 'Medication Review', icon: ClipboardList },
     ],
   },
@@ -134,7 +134,7 @@ export const ROUTE_LABELS: Record<string, string> = {
   '/cases': 'Clinical Cases',
   '/review': 'Medication Review',
   '/drugs': 'Drug Index',
-  '/assistant': 'Clinical Assistant',
+  '/assistant': 'Clinical Support',
   '/knowledge': 'Education Hub',
   '/admin': 'Admin Dashboard',
   '/admin/kbms': 'Knowledge Manager',

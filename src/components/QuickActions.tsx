@@ -51,7 +51,7 @@ export function QuickActions() {
     {
       id: 'chat',
       label: 'Start AI Chat',
-      description: 'Ask the clinical assistant a question',
+      description: 'Ask for clinical support and guidance',
       icon: getIcon('chat'),
       path: '/assistant',
     },

@@ -23,6 +23,7 @@ const AdminDashboardScreen = React.lazy(() => import('./screens/AdminDashboardSc
 const LoginScreen = React.lazy(() => import('./screens/LoginScreen'));
 const LandingScreen = React.lazy(() => import('./screens/LandingScreen'));
 const StudentOnboarding = React.lazy(() => import('./components/StudentOnboarding'));
+const BoardExamScreen = React.lazy(() => import('./screens/BoardExamScreen'));
 
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { useAuth } from './contexts/AuthContext';
@@ -470,6 +471,8 @@ function AppContent() {
               <Route path="/drugs" element={<DrugIndexScreen />} />
               <Route path="/assistant" element={<ClinicalAssistantScreen />} />
               <Route path="/knowledge" element={<EducationHubScreen />} />
+              <Route path="/board-exam" element={<BoardExamScreen />} />
+              <Route path="/board-exam/:setId" element={<BoardExamScreen />} />
               <Route path="/admin" element={
                 <ProtectedRoute requiredRole="admin">
                   <AdminDashboardScreen />

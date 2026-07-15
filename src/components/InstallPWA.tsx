@@ -19,24 +19,14 @@ export function InstallPWA() {
   const [isSafariBrowser, setIsSafariBrowser] = useState(false);
 
   useEffect(() => {
-    // 1. Check if already installed / standalone
     const isStandalone = 
       window.matchMedia('(display-mode: standalone)').matches ||
       (navigator as any).standalone === true ||
       document.referrer.includes('android-app://');
 
     if (isStandalone) {
-      return; // Do not show anything if already installed
-    }
-
-    const isStandaloneEnv = 
-      window.matchMedia('(display-mode: standalone)').matches ||
-      (navigator as any).standalone === true ||
-      document.referrer.includes('android-app://');
-
-    if (isStandaloneEnv) {
       setIsStandalone(true);
-      return; 
+      return;
     }
 
     // 2. Detect iOS & Safari

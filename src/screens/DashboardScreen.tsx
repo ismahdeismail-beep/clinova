@@ -7,17 +7,9 @@ import {
   BookOpen,
   Activity,
   ChevronRight,
-  BrainCircuit,
   FileText,
-  Pill,
-  Stethoscope,
   Sparkles,
-  FileUp,
   GraduationCap,
-  ClipboardList,
-  ShieldCheck,
-  Users,
-  Settings,
   X,
   PlusCircle,
   ArrowRight,
@@ -34,7 +26,6 @@ import {
 } from "recharts";
 import { useAuth } from "../contexts/AuthContext";
 
-import { ShiftHandoverModal } from "../components/ShiftHandoverModal";
 import ClinovaLogo from "../components/ClinovaLogo";
 import DailySpotlight from "../components/DailySpotlight";
 
@@ -138,9 +129,7 @@ export default function DashboardScreen() {
       (f.classification?.keywords && f.classification.keywords.some((k: string) => k.toLowerCase().includes(searchQuery.toLowerCase())))
     ))
   ).slice(0, 5);
-  const [showHandoverModal, setShowHandoverModal] = useState(false);
   const { userData, updatePreferences } = useAuth();
-  const isAdmin = userData?.role === "admin";
 
   const [isEditingPrefs, setIsEditingPrefs] = useState(false);
   const [prefLevel, setPrefLevel] = useState(userData?.academicLevel || 'Year 1: Basic Medical Sciences');
@@ -167,9 +156,7 @@ export default function DashboardScreen() {
                 )}
               </h1>
               <p className="text-white/85 max-w-lg text-xs md:text-sm leading-relaxed">
-                {isAdmin
-                  ? "Admin Library Management: Add authoritative books, formularies, and reference URLs accessible to the entire learning community."
-                  : `Welcome back, ${userData?.name || 'Student'}! Adapt your clinical focus to your active rotations. Your clinical hub is currently adjusted to your professional stage and interests.`}
+                Welcome back, {userData?.name || 'Student'}! Adapt your clinical focus to your active rotations. Your clinical hub is currently adjusted to your professional stage and interests.
               </p>
             </div>
           </div>
@@ -192,9 +179,8 @@ export default function DashboardScreen() {
         </div>
       </div>
 
-      {!isAdmin ? (
-        <>
-                    {/* Quick Search */}
+      <>
+          {/* Quick Search */}
           <div className="relative group z-30">
             <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
               <Search
@@ -254,11 +240,6 @@ export default function DashboardScreen() {
                 </div>
               </div>
             )}
-            <div className="absolute inset-y-0 right-4 flex items-center hidden sm:flex">
-              <span className="text-[10px] md:text-xs font-medium text-[var(--text-muted)] bg-[var(--surface-dim)] px-2 py-1 rounded border border-[var(--border)]">
-                ⌘ K
-              </span>
-            </div>
           </div>
 
           <DailySpotlight />
@@ -593,57 +574,7 @@ export default function DashboardScreen() {
               </div>
             </div>
           </div>
-        </>
-      ) : (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Admin Specific Summary Cards */}
-          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] shadow-sm flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center">
-              <Users size={24} />
-            </div>
-            <div>
-              <p className="text-sm text-[var(--text-muted)]">Active Clinicians</p>
-              <p className="text-2xl font-bold text-[var(--text)]">1,248</p>
-            </div>
-          </div>
-
-          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] shadow-sm flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center">
-              <Activity size={24} />
-            </div>
-            <div>
-              <p className="text-sm text-[var(--text-muted)]">Portal Access Status</p>
-              <p className="text-2xl font-bold text-[var(--text)]">Online</p>
-            </div>
-          </div>
-
-          <div className="bg-[var(--surface)] p-6 rounded-xl border border-[var(--border)] shadow-sm flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center">
-              <Settings size={24} />
-            </div>
-            <div>
-              <p className="text-sm text-[var(--text-muted)]">
-                Pending Guideline Reviews
-              </p>
-              <p className="text-2xl font-bold text-[var(--text)]">3</p>
-            </div>
-          </div>
-
-          <div className="md:col-span-3 mt-4">
-            <Link
-              to="/admin"
-              className="inline-flex items-center justify-center w-full bg-[var(--surface)] hover:bg-[var(--surface-dim)] border border-[var(--border)] p-4 rounded-xl text-[var(--primary)] font-medium transition-colors"
-            >
-              Open Administration Command Center{" "}
-              <ChevronRight size={18} className="ml-2" />
-            </Link>
-          </div>
-        </div>
-      )}
-
-      {showHandoverModal && (
-        <ShiftHandoverModal onClose={() => setShowHandoverModal(false)} />
-      )}
+      </>
     </div>
   );
 }

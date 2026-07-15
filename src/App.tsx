@@ -1,11 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate, Navigate } from 'react-router-dom';
 import {
-  Home, FolderOpen, ClipboardList, Pill, Bot, 
-  BookOpen, Bell, Settings, Menu, Search,
-  X, LogOut, ChevronDown,
-  FlaskConical, Users,
-  FileText,
+  Menu, Search,
+  X, LogOut,
 } from 'lucide-react';
 
 const DashboardScreen = React.lazy(() => import('./screens/DashboardScreen'));
@@ -20,14 +17,11 @@ const LandingScreen = React.lazy(() => import('./screens/LandingScreen'));
 import { useAuth } from './contexts/AuthContext';
 import ClinovaLogo from './components/ClinovaLogo';
 import ThemeToggle from './components/ThemeToggle';
-import { useNotifications } from './contexts/NotificationContext';
-import { NAV_GROUPS, getRouteLabel, type NavGroup } from './data/navigationConfig';
+import { NAV_GROUPS, type NavGroup } from './data/navigationConfig';
 import { InstallPWA } from './components/InstallPWA';
-import { useInstallPrompt } from './hooks/useInstallPrompt';
 
 function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
   const { userData } = useAuth();
-  const { unreadCount } = useNotifications();
   
   return (
     <div className="fixed top-0 left-0 right-0 z-30 md:z-50 md:left-64 flex justify-center pointer-events-none pt-[env(safe-area-inset-top,0px)] bg-[var(--surface)]/80 backdrop-blur-md border-b border-[var(--border)]">
@@ -91,24 +85,6 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
 function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolean) => void }) {
   const location = useLocation();
   const { userData, logout } = useAuth();
-  const [expandedGroups, setExpandedGroups] = React.useState<Record<string, boolean>>(() => {
-    const saved = localStorage.getItem('clinova_sidebar_sections')
-    return saved ? JSON.parse(saved) : { 'knowledge-base': true }
-  })
-
-  const toggleGroup = (id: string) => {
-    setExpandedGroups((prev) => {
-      const next = { ...prev, [id]: !prev[id] }
-      localStorage.setItem('clinova_sidebar_sections', JSON.stringify(next))
-      return next
-    })
-  }
-
-  const visibleGroups = NAV_GROUPS.filter((g) => {
-    if (g.future) return false
-    if (g.adminOnly && userData?.role !== 'admin') return false
-    return true
-  })
 
   return (
     <>
@@ -132,76 +108,42 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
           </button>
         </div>
         <nav className="p-3 space-y-1 flex-1 mt-1 overflow-y-auto">
-          {visibleGroups.map((group) => {
-            const isGroupActive = group.items.some(
-              (item) => location.pathname === item.to || location.pathname.startsWith(item.to + '/')
-            )
-            const isExpanded = expandedGroups[group.id] ?? false
+          {NAV_GROUPS.map((group) => (
+            <div key={group.id} className="space-y-0.5">
+              {group.items.map((item) => {
+                const isActive =
+                  location.pathname === item.to ||
+                  (item.to !== '/' && location.pathname.startsWith(item.to + '/'))
+                const ItemIcon = item.icon
 
-            return (
-              <div key={group.id}>
-                {group.label && (
-                  <button
-                    onClick={() => toggleGroup(group.id)}
-                    className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors ${
-                      isGroupActive
-                        ? 'text-[var(--primary)]'
-                        : 'text-[var(--text-muted)]/60 hover:text-[var(--text)]'
+                return (
+                  <Link
+                    key={item.to}
+                    to={item.to}
+                    onClick={() => setIsOpen(false)}
+                    className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 ${
+                      isActive
+                        ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm'
+                        : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]'
                     }`}
                   >
-                    <div className="flex items-center gap-2">
-                      <group.icon size={14} />
-                      <span>{group.label}</span>
+                    <div className={`flex items-center justify-center w-8 h-8 rounded-lg transition-colors ${
+                      isActive
+                        ? 'bg-[var(--primary-foreground)]/20'
+                        : ''
+                    }`}>
+                      <ItemIcon size={18} className={isActive ? 'text-[var(--primary-foreground)]' : ''} />
                     </div>
-                    <ChevronDown
-                      size={14}
-                      className={`transition-transform duration-200 ${
-                        isExpanded ? 'rotate-0' : '-rotate-90'
-                      }`}
-                    />
-                  </button>
-                )}
-
-                {(group.label ? isExpanded : true) && (
-                  <div className="space-y-0.5 mt-1 mb-2 ml-1">
-                    {group.items.map((item) => {
-                      const isActive =
-                        location.pathname === item.to ||
-                        (item.to !== '/' && location.pathname.startsWith(item.to + '/'))
-                      const ItemIcon = item.icon
-
-                      return (
-                        <div key={item.to}>
-                          <Link
-                            to={item.to}
-                            onClick={() => setIsOpen(false)}
-                            className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 ${
-                              isActive
-                                ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm'
-                                : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]'
-                            }`}
-                          >
-                            <div className={`flex items-center justify-center w-8 h-8 rounded-lg transition-colors ${
-                              isActive
-                                ? 'bg-[var(--primary-foreground)]/20'
-                                : ''
-                            }`}>
-                              <ItemIcon size={18} className={isActive ? 'text-[var(--primary-foreground)]' : ''} />
-                            </div>
-                            <span className="truncate">{item.label}</span>
-                          </Link>
-                        </div>
-                      )
-                    })}
-                  </div>
-                )}
-              </div>
-            )
-          })}
+                    <span className="truncate">{item.label}</span>
+                  </Link>
+                )
+              })}
+            </div>
+          ))}
         </nav>
 
         <div className="p-3 border-t border-[var(--border)] mt-auto bg-[var(--surface-dim)]/30">
-          {userData ? (
+          {userData && (
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3 px-2">
                 <div className="w-9 h-9 rounded-full bg-[var(--primary)] text-[var(--primary-foreground)] flex items-center justify-center font-bold text-sm shrink-0">
@@ -220,7 +162,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
                 Sign Out
               </button>
             </div>
-          ) : null}
+          )}
         </div>
       </div>
       
@@ -237,13 +179,6 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
 function AppContent() {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
   const { userData, loading } = useAuth();
-  const { isInstallable, promptInstall } = useInstallPrompt();
-
-  React.useEffect(() => {
-    if (isInstallable) {
-      promptInstall();
-    }
-  }, [isInstallable, promptInstall]);
 
   if (loading) {
     return (
@@ -301,8 +236,6 @@ function AppContent() {
               <Route path="/knowledge" element={<EducationHubScreen />} />
               <Route path="/board-exam" element={<BoardExamScreen />} />
               <Route path="/board-exam/:setId" element={<BoardExamScreen />} />
-              <Route path="/notifications" element={<DashboardScreen />} />
-              <Route path="/settings" element={<DashboardScreen />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </React.Suspense>

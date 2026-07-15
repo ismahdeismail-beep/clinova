@@ -22,6 +22,7 @@ import exportService from '../services/export.service';
 import CurriculumGraph from '../components/CurriculumGraph';
 import { getResourcesForUnit } from '../data/unitToLibraryMapping';
 import { getStaticContent } from '../data/unitStaticContent';
+import { LIBRARY, type LibraryResource } from '../data/onlineLibraryData';
 import { DISEASE_NOTES, type DiseaseNote } from '../data/diseaseNotes';
 const getRelevantFiles = (files: any[], currentFolderId: string, currentFolderName: string, unitTitle: string) => {
   return files.filter(f => {
@@ -2898,7 +2899,27 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName, us
 function WorkspaceResources({ unit, currentFolderId, currentFolderName }: { unit: EducationModuleUnit, currentFolderId: string, currentFolderName: string }) {
   const unitResources = useMemo(() => getResourcesForUnit(unit.id), [unit.id]);
   const [isExpanded, setIsExpanded] = useState(false);
-  const displayed = isExpanded ? unitResources : unitResources.slice(0, 8);
+  const [bookSearch, setBookSearch] = useState('');
+  const [typeFilter, setTypeFilter] = useState<'all' | LibraryResource['type']>('all');
+
+  const displayedUnit = isExpanded ? unitResources : unitResources.slice(0, 8);
+
+  const filteredBooks = useMemo(() => {
+    let books = LIBRARY
+    if (typeFilter !== 'all') {
+      books = books.filter(b => b.type === typeFilter)
+    }
+    if (bookSearch.trim()) {
+      const q = bookSearch.toLowerCase()
+      books = books.filter(b =>
+        b.title.toLowerCase().includes(q) ||
+        b.authors.toLowerCase().includes(q) ||
+        b.keywords.toLowerCase().includes(q) ||
+        b.subjects.some(s => s.toLowerCase().includes(q))
+      )
+    }
+    return books
+  }, [bookSearch, typeFilter])
 
   const typeIcons: Record<string, React.ReactNode> = {
     textbook: <BookOpen size={16} />,
@@ -2909,78 +2930,132 @@ function WorkspaceResources({ unit, currentFolderId, currentFolderName }: { unit
     oer: <Award size={16} />,
   };
 
-  if (unitResources.length === 0) {
-    return (
-      <div className="py-12 text-center max-w-md mx-auto space-y-4">
-        <div className="w-14 h-14 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mx-auto">
-          <BookOpen size={28} className="text-[var(--text-muted)]" />
-        </div>
-        <h4 className="text-base font-bold text-[var(--text)]">No Library Resources Yet</h4>
-        <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-          Visit the <strong>Online Books Hub</strong> from the dashboard to explore textbooks, guidelines, and references. Resources tagged for this unit will appear here.
-        </p>
-      </div>
-    );
-  }
-
   return (
-    <div className="space-y-4">
-      <div className="flex items-center justify-between">
-        <p className="text-[11px] font-bold text-[var(--text-muted)] uppercase tracking-wider">
-          {unitResources.length} Resource{unitResources.length !== 1 ? 's' : ''} Available
-        </p>
-        <span className="text-[10px] text-[var(--primary)] font-semibold bg-[var(--primary)]/5 px-2 py-0.5 rounded-lg">
+    <div className="space-y-6">
+      {/* Header */}
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <div>
+          <h3 className="text-sm font-black text-[var(--text)] flex items-center gap-2">
+            <BookOpen size={18} className="text-[var(--primary)]" />
+            Online Clinical Library
+          </h3>
+          <p className="text-[11px] text-[var(--text-muted)] font-medium mt-0.5">
+            {LIBRARY.length} textbooks, guidelines, formularies & references
+          </p>
+        </div>
+        <span className="text-[10px] text-[var(--primary)] font-semibold bg-[var(--primary)]/5 px-2 py-0.5 rounded-lg shrink-0">
           {currentFolderName}
         </span>
       </div>
 
-      {displayed.map((res) => (
-        <div key={res.id} className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 flex items-start justify-between hover:border-[var(--primary)] transition-colors group shadow-xs">
-          <div className="flex items-start gap-3 min-w-0">
-            <div className="w-9 h-9 rounded-xl bg-[var(--surface-dim)] flex items-center justify-center text-[var(--primary)] shrink-0 mt-0.5">
-              {typeIcons[res.type] || <BookOpen size={16} />}
-            </div>
-            <div className="min-w-0">
-              <h4 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors leading-tight">{res.title}</h4>
-              <p className="text-[10px] text-[var(--text-muted)] font-semibold mt-1">
-                {res.authors} &bull; {res.edition ? `${res.edition}, ` : ''}{res.year}
-              </p>
-              <div className="flex flex-wrap gap-1.5 mt-1.5">
-                <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-[var(--primary)]/5 text-[var(--primary)] capitalize">
-                  {res.type}
-                </span>
-                {res.isFree && (
-                  <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600">
-                    Free
-                  </span>
-                )}
+      {/* Search & Filter */}
+      <div className="flex flex-col sm:flex-row gap-2">
+        <div className="relative flex-1">
+          <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" />
+          <input
+            type="text"
+            value={bookSearch}
+            onChange={e => setBookSearch(e.target.value)}
+            placeholder="Search all books, authors, subjects..."
+            className="w-full pl-9 pr-3 py-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-xs text-[var(--text)] outline-none focus:border-[var(--primary)] transition-colors"
+          />
+        </div>
+        <select
+          value={typeFilter}
+          onChange={e => setTypeFilter(e.target.value as any)}
+          className="px-3 py-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-xs text-[var(--text)] outline-none focus:border-[var(--primary)] transition-colors cursor-pointer"
+        >
+          <option value="all">All Types</option>
+          <option value="textbook">Textbooks</option>
+          <option value="guideline">Guidelines</option>
+          <option value="reference">References</option>
+          <option value="handbook">Handbooks</option>
+          <option value="formulary">Formularies</option>
+          <option value="oer">Open Resources</option>
+        </select>
+      </div>
+
+      {/* Unit-tagged resources */}
+      {unitResources.length > 0 && (
+        <div className="space-y-3">
+          <p className="text-[11px] font-bold text-[var(--text-muted)] uppercase tracking-wider">
+            Tagged for this unit ({unitResources.length})
+          </p>
+          {displayedUnit.map((res) => (
+            <div key={res.id} className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 flex items-start justify-between hover:border-[var(--primary)] transition-colors group shadow-xs">
+              <div className="flex items-start gap-3 min-w-0">
+                <div className="w-9 h-9 rounded-xl bg-[var(--surface-dim)] flex items-center justify-center text-[var(--primary)] shrink-0 mt-0.5">
+                  {typeIcons[res.type] || <BookOpen size={16} />}
+                </div>
+                <div className="min-w-0">
+                  <h4 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors leading-tight">{res.title}</h4>
+                  <p className="text-[10px] text-[var(--text-muted)] font-semibold mt-1">
+                    {res.authors} &bull; {res.edition ? `${res.edition}, ` : ''}{res.year}
+                  </p>
+                  <div className="flex flex-wrap gap-1.5 mt-1.5">
+                    <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-[var(--primary)]/5 text-[var(--primary)] capitalize">{res.type}</span>
+                    {res.isFree && <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600">Free</span>}
+                  </div>
+                </div>
               </div>
+              {res.publisherUrl && (
+                <a href={res.publisherUrl} target="_blank" rel="noopener noreferrer" className="p-2 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary)]/10 rounded-lg transition-colors cursor-pointer shrink-0" title="Open resource">
+                  <ArrowUpRight size={16} />
+                </a>
+              )}
             </div>
-          </div>
-          {res.openAccessLink && (
-            <a
-              href={res.openAccessLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary)]/10 rounded-lg transition-colors cursor-pointer shrink-0"
-              title="Open resource"
-            >
-              <ArrowUpRight size={16} />
-            </a>
+          ))}
+          {unitResources.length > 8 && (
+            <button onClick={() => setIsExpanded(!isExpanded)} className="w-full py-2 text-xs font-bold text-[var(--primary)] bg-[var(--primary)]/5 hover:bg-[var(--primary)]/10 rounded-xl transition-colors cursor-pointer">
+              {isExpanded ? `Show fewer (${8} of ${unitResources.length})` : `Show all ${unitResources.length} resources`}
+            </button>
           )}
         </div>
-      ))}
-
-      {unitResources.length > 8 && (
-        <button
-          onClick={() => setIsExpanded(!isExpanded)}
-          className="w-full py-2 text-xs font-bold text-[var(--primary)] bg-[var(--primary)]/5 hover:bg-[var(--primary)]/10 rounded-xl transition-colors cursor-pointer"
-        >
-          {isExpanded
-            ? `Show fewer (${8} of ${unitResources.length})`
-            : `Show all ${unitResources.length} resources`}
-        </button>
       )}
+
+      {/* Full Library */}
+      <div className="space-y-3">
+        <p className="text-[11px] font-bold text-[var(--text-muted)] uppercase tracking-wider">
+          Full Library ({filteredBooks.length} of {LIBRARY.length})
+        </p>
+        {filteredBooks.length === 0 ? (
+          <div className="py-8 text-center">
+            <BookOpen size={24} className="text-[var(--text-muted)] mx-auto mb-2 opacity-50" />
+            <p className="text-xs text-[var(--text-muted)]">No books match your search</p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {filteredBooks.map((res) => (
+              <div key={res.id} className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 flex flex-col hover:border-[var(--primary)] transition-colors group shadow-xs">
+                <div className="flex items-start gap-3 min-w-0 flex-1">
+                  <div className="w-9 h-9 rounded-xl bg-[var(--surface-dim)] flex items-center justify-center text-[var(--primary)] shrink-0 mt-0.5">
+                    {typeIcons[res.type] || <BookOpen size={16} />}
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <h4 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors leading-tight">{res.title}</h4>
+                    <p className="text-[10px] text-[var(--text-muted)] font-semibold mt-1 line-clamp-1">
+                      {res.authors}
+                    </p>
+                    <p className="text-[9px] text-[var(--text-muted)] mt-0.5">
+                      {res.publisher} &bull; {res.year}{res.edition ? ` &bull; ${res.edition}` : ''}
+                    </p>
+                    <div className="flex flex-wrap gap-1 mt-2">
+                      <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-md bg-[var(--primary)]/5 text-[var(--primary)] capitalize">{res.type}</span>
+                      {res.isFree && <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600">Free</span>}
+                      {res.language && res.language !== 'en' && <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-md bg-blue-500/10 text-blue-600 uppercase">{res.language}</span>}
+                    </div>
+                  </div>
+                </div>
+                {res.publisherUrl && (
+                  <a href={res.publisherUrl} target="_blank" rel="noopener noreferrer" className="mt-2 w-full py-1.5 text-center text-[10px] font-bold text-[var(--primary)] bg-[var(--primary)]/5 hover:bg-[var(--primary)]/10 rounded-xl transition-colors" title="Open resource">
+                    Access Resource →
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 }

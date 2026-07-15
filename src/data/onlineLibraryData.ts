@@ -34,7 +34,7 @@ export interface LibraryResource {
 // Brain Tree International Pharmacy Curriculum and Kenyan practice.
 // ================================================================
 
-const LIBRARY: LibraryResource[] = [
+export const LIBRARY: LibraryResource[] = [
   // ---- Pharmacology & Therapeutics (Core) ----
   {
     id: 'lib_katzung',

@@ -133,8 +133,8 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
         title: 'Drug of the Day',
         message: `${drug.name} (${drug.drug_class}) — ${drug.indications[0]}. Tap to view full monograph.`,
         iconName: 'Pill',
-        color: 'text-[var(--primary)]',
-        bg: 'bg-[var(--primary-container)]',
+        color: 'text-emerald-500',
+        bg: 'bg-emerald-500/15',
       })
     }
 

@@ -2058,11 +2058,15 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
 }
 
 // ==========================================
-// DISEASE NOTES
+// DISEASE NOTES — full-page detail view
 // ==========================================
 function DiseaseNotesView({ unit }: { unit: EducationModuleUnit }) {
   const notes = DISEASE_NOTES.filter(n => n.unitId === unit.id)
-  const [expandedId, setExpandedId] = useState<string | null>(null)
+  const [selectedNote, setSelectedNote] = useState<DiseaseNote | null>(null)
+
+  if (selectedNote) {
+    return <DiseaseDetailView note={selectedNote} onBack={() => setSelectedNote(null)} />
+  }
 
   if (notes.length === 0) {
     return (
@@ -2081,99 +2085,113 @@ function DiseaseNotesView({ unit }: { unit: EducationModuleUnit }) {
   return (
     <div className="space-y-4">
       <p className="text-[11px] font-bold text-[var(--text-muted)] uppercase tracking-wider mb-4">
-        {notes.length} Disease Note{notes.length !== 1 ? 's' : ''} &mdash; {unit.title}
+        {notes.length} Disease Note{notes.length !== 1 ? 's' : ''}
       </p>
-      {notes.map(note => (
-        <DiseaseNoteCard key={note.id} note={note} expandedId={expandedId} onToggle={setExpandedId} />
-      ))}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {notes.map(note => (
+          <button
+            key={note.id}
+            onClick={() => setSelectedNote(note)}
+            className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] hover:shadow-md rounded-2xl p-5 text-left transition-all cursor-pointer group"
+          >
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--primary)]/20 to-purple-500/20 text-[var(--primary)] flex items-center justify-center shrink-0">
+                <FileText size={18} />
+              </div>
+              <div>
+                <h4 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">{note.name}</h4>
+                <p className="text-[10px] text-[var(--text-muted)] font-semibold">{note.specialty}</p>
+              </div>
+            </div>
+            <p className="text-xs text-[var(--text-muted)] line-clamp-2 leading-relaxed">{note.overview}</p>
+            {note.diagram && (
+              <div className="mt-3 flex items-center gap-1 text-[10px] text-[var(--primary)] font-bold">
+                <FileText size={11} /> Includes diagram
+              </div>
+            )}
+          </button>
+        ))}
+      </div>
     </div>
   )
 }
 
-function DiseaseNoteCard({ note, expandedId, onToggle }: { note: DiseaseNote; expandedId: string | null; onToggle: (id: string | null) => void }) {
-  const isOpen = expandedId === note.id
-
+function DiseaseDetailView({ note, onBack }: { note: DiseaseNote; onBack: () => void }) {
   return (
-    <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl shadow-sm overflow-hidden">
-      <button
-        onClick={() => onToggle(isOpen ? null : note.id)}
-        className="w-full flex items-center justify-between p-4 sm:p-5 hover:bg-[var(--surface-dim)]/50 transition-colors cursor-pointer text-left"
-      >
-        <div className="flex items-center gap-3 min-w-0">
-          <div className="w-9 h-9 rounded-xl bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center shrink-0">
-            <FileText size={16} />
-          </div>
-          <div className="min-w-0">
-            <h4 className="text-sm font-bold text-[var(--text)]">{note.name}</h4>
-            <p className="text-[10px] text-[var(--text-muted)] font-semibold">{note.specialty}</p>
-          </div>
+    <div className="max-w-4xl mx-auto space-y-8 py-2">
+      {/* Header */}
+      <div className="flex items-center gap-4">
+        <button
+          onClick={onBack}
+          className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer"
+        >
+          <ChevronLeft size={18} className="text-[var(--text)]" />
+        </button>
+        <div>
+          <h2 className="text-2xl font-extrabold text-[var(--text)]">{note.name}</h2>
+          <p className="text-xs text-[var(--text-muted)] font-semibold mt-0.5">{note.specialty}</p>
         </div>
-        <ChevronRight size={18} className={`text-[var(--text-muted)] shrink-0 transition-transform ${isOpen ? 'rotate-90' : ''}`} />
-      </button>
+      </div>
 
-      {isOpen && (
-        <div className="px-4 sm:px-5 pb-5 space-y-5 animate-in slide-in-from-top-2 duration-200">
-          {/* Overview */}
-          <div className="bg-[var(--surface-dim)]/40 border border-[var(--border)]/40 rounded-xl p-4">
-            <h5 className="text-[10px] font-black uppercase tracking-wider text-[var(--text-muted)] mb-1.5">Overview</h5>
-            <p className="text-xs text-[var(--text)] leading-relaxed">{note.overview}</p>
-          </div>
+      {/* Overview */}
+      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-sm">
+        <h3 className="text-xs font-black uppercase tracking-wider text-[var(--primary)] mb-3">Overview</h3>
+        <p className="text-sm text-[var(--text)] leading-relaxed">{note.overview}</p>
+      </div>
 
-          {/* Diagram */}
-          {note.diagram && (
-            <div className="bg-white dark:bg-gray-900 border border-[var(--border)]/40 rounded-xl p-4 overflow-x-auto flex justify-center">
-              <div dangerouslySetInnerHTML={{ __html: note.diagram }} className="max-w-full" />
-            </div>
-          )}
-
-          {/* Key Drugs Table */}
-          <div>
-            <h5 className="text-[10px] font-black uppercase tracking-wider text-[var(--text-muted)] mb-2">Key Drugs & Side Effects</h5>
-            <div className="overflow-x-auto rounded-xl border border-[var(--border)]/40">
-              <table className="w-full text-xs">
-                <thead>
-                  <tr className="bg-[var(--surface-dim)] text-[var(--text-muted)] font-bold uppercase text-[10px] tracking-wider">
-                    <th className="px-3 py-2.5 text-left">Drug</th>
-                    <th className="px-3 py-2.5 text-left">Class</th>
-                    <th className="px-3 py-2.5 text-left">Side Effects</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[var(--border)]/30">
-                  {note.keyDrugs.map((d, i) => (
-                    <tr key={i} className="hover:bg-[var(--surface-dim)]/30">
-                      <td className="px-3 py-2.5 font-bold text-[var(--text)]">{d.drug}</td>
-                      <td className="px-3 py-2.5 text-[var(--text-muted)]">{d.class}</td>
-                      <td className="px-3 py-2.5">
-                        <div className="flex flex-wrap gap-1">
-                          {d.sideEffects.map((se, j) => (
-                            <span key={j} className="text-[10px] px-1.5 py-0.5 rounded-md bg-red-50 dark:bg-red-950/30 text-red-600 dark:text-red-400 border border-red-200/40 font-semibold">{se}</span>
-                          ))}
-                        </div>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          {/* Monitoring */}
-          <div className="bg-amber-500/5 border border-amber-200/30 rounded-xl p-4">
-            <h5 className="text-[10px] font-black uppercase tracking-wider text-amber-600 mb-1.5">Monitoring</h5>
-            <p className="text-xs text-[var(--text)] leading-relaxed">{note.monitoring}</p>
-          </div>
-
-          {/* MCQs */}
-          <div className="border-t border-[var(--border)]/40 pt-4">
-            <h5 className="text-[10px] font-black uppercase tracking-wider text-[var(--text-muted)] mb-3">Practice Questions</h5>
-            <div className="space-y-4">
-              {note.mcqs.map((mcq, i) => (
-                <MCQBlock key={i} mcq={mcq} index={i} />
-              ))}
-            </div>
-          </div>
+      {/* Diagram */}
+      {note.diagram && (
+        <div className="bg-white dark:bg-gray-900 border border-[var(--border)] rounded-2xl p-6 shadow-sm overflow-x-auto flex justify-center">
+          <div dangerouslySetInnerHTML={{ __html: note.diagram }} className="max-w-full" />
         </div>
       )}
+
+      {/* Key Drugs */}
+      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-sm">
+        <h3 className="text-xs font-black uppercase tracking-wider text-[var(--primary)] mb-4">Key Drugs & Side Effects</h3>
+        <div className="overflow-x-auto rounded-xl border border-[var(--border)]/40">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="bg-[var(--surface-dim)] text-[var(--text-muted)] font-bold uppercase text-[11px] tracking-wider">
+                <th className="px-4 py-3 text-left w-[30%]">Drug</th>
+                <th className="px-4 py-3 text-left w-[25%]">Class</th>
+                <th className="px-4 py-3 text-left">Side Effects</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[var(--border)]/30">
+              {note.keyDrugs.map((d, i) => (
+                <tr key={i} className="hover:bg-[var(--surface-dim)]/30">
+                  <td className="px-4 py-3 font-bold text-[var(--text)]">{d.drug}</td>
+                  <td className="px-4 py-3 text-[var(--text-muted)]">{d.class}</td>
+                  <td className="px-4 py-3">
+                    <div className="flex flex-wrap gap-1">
+                      {d.sideEffects.map((se, j) => (
+                        <span key={j} className="text-[11px] px-2 py-0.5 rounded-md bg-red-50 dark:bg-red-950/30 text-red-600 dark:text-red-400 border border-red-200/40 font-semibold whitespace-nowrap">{se}</span>
+                      ))}
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Monitoring */}
+      <div className="bg-amber-500/5 border border-amber-200/30 rounded-2xl p-6 shadow-sm">
+        <h3 className="text-xs font-black uppercase tracking-wider text-amber-600 mb-3">Monitoring Parameters</h3>
+        <p className="text-sm text-[var(--text)] leading-relaxed">{note.monitoring}</p>
+      </div>
+
+      {/* MCQs */}
+      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-sm">
+        <h3 className="text-xs font-black uppercase tracking-wider text-[var(--primary)] mb-4">Practice Questions</h3>
+        <div className="space-y-6">
+          {note.mcqs.map((mcq, i) => (
+            <MCQBlock key={i} mcq={mcq} index={i} />
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

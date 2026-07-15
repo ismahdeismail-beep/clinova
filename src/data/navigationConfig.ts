@@ -41,7 +41,7 @@ export const NAV_GROUPS: NavGroup[] = [
     label: 'Clinical Tools',
     icon: Stethoscope,
     items: [
-      { to: '/assistant', label: 'Support Center', icon: ClipboardList },
+      { to: '/assistant', label: 'Clinova Support', icon: ClipboardList },
     ],
   },
   {
@@ -112,7 +112,7 @@ export const ROUTE_LABELS: Record<string, string> = {
   '/': 'Dashboard',
   '/cases': 'Clinical Cases',
   '/drugs': 'Drug Index',
-  '/assistant': 'Support Center',
+  '/assistant': 'Clinova Support',
   '/knowledge': 'Education Hub',
   '/board-exam': 'Board Exam',
   '/admin': 'Admin Dashboard',

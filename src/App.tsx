@@ -22,6 +22,8 @@ import ClinovaLogo from './components/ClinovaLogo';
 import ThemeToggle from './components/ThemeToggle';
 import { useNotifications } from './contexts/NotificationContext';
 import { NAV_GROUPS, getRouteLabel, type NavGroup } from './data/navigationConfig';
+import { InstallPWA } from './components/InstallPWA';
+import { useInstallPrompt } from './hooks/useInstallPrompt';
 
 function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
   const { userData } = useAuth();
@@ -235,6 +237,13 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
 function AppContent() {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
   const { userData, loading } = useAuth();
+  const { isInstallable, promptInstall } = useInstallPrompt();
+
+  React.useEffect(() => {
+    if (isInstallable) {
+      promptInstall();
+    }
+  }, [isInstallable, promptInstall]);
 
   if (loading) {
     return (
@@ -297,6 +306,7 @@ function AppContent() {
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </React.Suspense>
+          <InstallPWA />
         </main>
       </div>
     </div>

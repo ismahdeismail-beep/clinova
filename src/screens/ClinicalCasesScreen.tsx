@@ -13,7 +13,7 @@ import { getIntegratedUnitId } from '../data/curriculum';
 import { ClinicalCaseService } from '../services/clinicalCase.service';
 import {
   Section, Card, VitalsGrid, LabTable, DTPCard, PearlPanel, Checklist,
-  Bullets, HighlightText, StickySectionNav, ScrollProgress,
+  Bullets, HighlightText, StickySectionNav, ScrollProgress, COMMON_ADRS,
 } from '../components/clinical';
 import { parseVitals, parseLabs, parseDtps, toArray, toText } from '../lib/clinicalParsers';
 import { extractMedicines } from '../lib/clinicalTerms';
@@ -77,6 +77,11 @@ export default function ClinicalCasesScreen() {
   const [selectedSubsection, setSelectedSubsection] = useState<{ id: string, title: string, category: string, content: string, cta?: string, action?: string } | null>(null);
 
   const BRAIN_CATEGORIES = ['Clinical Foundation', 'Diagnosis & Workup', 'Pharmacology & Therapeutics', 'Assessments & Practice', 'Study & Revision Tools'];
+
+  const getInitials = (name?: string) => {
+    if (!name) return ''
+    return name.split(' ').filter(Boolean).map(w => w[0]).join('').toUpperCase().slice(0, 3)
+  }
 
   const previewOf = (content: string) => {
     const text = content
@@ -835,140 +840,61 @@ export default function ClinicalCasesScreen() {
             </div>
           )}
 
-              {/* Level 3: Cases & Disease Brain Tree */}
+              {/* Level 3: Cases */}
               {selectedSpecialty && selectedDisease && !selectedCase && (
                 <div className="animate-in fade-in slide-in-from-right-4 duration-300">
-                  {(() => { console.log('[ClinicalCasesScreen] Rendering casesForSelectedDisease:', casesForSelectedDisease); return null; })()}
-                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-                <div className="flex items-center gap-3">
-                  <button onClick={handleBackToDiseases} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors">
-                    <ChevronLeft size={18} className="text-[var(--text)]" />
-                  </button>
-                  <div>
+                  <div className="flex items-center gap-3 mb-6">
+                    <button onClick={handleBackToDiseases} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors">
+                      <ChevronLeft size={18} className="text-[var(--text)]" />
+                    </button>
                     <h2 className="text-2xl font-bold text-[var(--text)]">
                       {selectedDisease}
                     </h2>
-                    <p className="text-xs text-[var(--text-muted)] mt-0.5">Explore active clinical cases or master the 30-node disease learning tree.</p>
                   </div>
-                </div>
 
-                {/* Disease Brain Tree toggle */}
-                <button
-                  onClick={() => setShowBrainTree(!showBrainTree)}
-                  className={`px-4 py-2 rounded-2xl text-xs font-semibold flex items-center gap-2 border transition-all cursor-pointer self-start md:self-auto shadow-sm ${
-                    showBrainTree
-                      ? 'bg-[var(--primary)] text-[var(--primary-foreground)] border-[var(--primary)]'
-                      : 'bg-[var(--surface)] border-[var(--border)] text-[var(--text-muted)] hover:text-[var(--text)]'
-                  }`}
-                >
-                  <BrainCircuit size={14} />
-                  Disease Brain Tree
-                </button>
-              </div>
-
-              {!showBrainTree ? (
-                <div className="space-y-4">
-                  {casesForSelectedDisease.map((clinicalCase, idx) => (
-                    <div 
-                      key={idx}
-                      onClick={() => handleCaseClick(clinicalCase)}
-                      className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl p-6 cursor-pointer transition-all shadow-sm hover:shadow-md group"
-                    >
-                      <div className="flex flex-col md:flex-row justify-between gap-4">
-                        <div>
-                          <div className="flex items-center gap-2 mb-2">
-                            <span className={`px-2.5 py-1 rounded-lg text-[10px] font-extrabold uppercase tracking-wider ${
-                              clinicalCase.difficulty === 'Beginner' ? 'bg-emerald-500/10 text-emerald-600' :
-                              clinicalCase.difficulty === 'Intermediate' ? 'bg-amber-500/10 text-amber-600' :
-                              'bg-rose-500/10 text-rose-600'
-                            }`}>
-                              {clinicalCase.difficulty} Level
-                            </span>
-                            <span className="text-xs text-[var(--text-muted)]">By {clinicalCase.createdByName}</span>
-                          </div>
-                          <h3 className="text-lg font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors mb-2">
-                            {clinicalCase.title}
-                          </h3>
-                          <p className="text-sm text-[var(--text-muted)] line-clamp-2 leading-relaxed">
-                            <span className="font-semibold">Patient:</span> {clinicalCase.patientName} ({clinicalCase.demographics}) &bull; <span className="font-semibold">Setting:</span> {clinicalCase.facilitySetting}
-                          </p>
-                          <p className="text-sm text-[var(--text-muted)] line-clamp-2 leading-relaxed mt-1">
-                            <span className="font-semibold">CC:</span> "{clinicalCase.chiefComplaint}"
-                          </p>
-                        </div>
-                        <div className="flex items-center justify-end md:items-center">
-                          <div className="flex items-center gap-2 text-[var(--primary)] font-semibold text-sm">
-                            Review Case <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-
-                  {casesForSelectedDisease.length === 0 && (
-                    <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-12 text-center">
-                      <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mx-auto mb-4">
-                        <BookOpen size={32} className="text-[var(--text-muted)]" />
-                      </div>
-                      <h3 className="text-lg font-bold text-[var(--text)]">No Cases Available Yet</h3>
-                      <p className="text-sm text-[var(--text-muted)] mt-2 max-w-sm mx-auto">
-                        Teaching cases for {selectedDisease} are currently being compiled by the faculty. Please check back later.
-                      </p>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <div className="space-y-6 animate-in fade-in duration-300">
-                  {/* Category navigation */}
-                  <div className="sticky top-[4.25rem] z-20 -mx-1 px-1 py-2 bg-[var(--bg)]/90 backdrop-blur flex gap-2 overflow-x-auto">
-                    {BRAIN_CATEGORIES.map((cat, i) => (
-                      <button
-                        key={cat}
-                        type="button"
-                        onClick={() => document.getElementById(`brain-cat-${i}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-                        className="shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold border border-[var(--border)] bg-[var(--surface)] text-[var(--text-muted)] hover:text-[var(--text)] hover:border-[var(--primary)]/40 transition-colors whitespace-nowrap cursor-pointer"
+                  <div className="space-y-4">
+                    {casesForSelectedDisease.map((clinicalCase, idx) => (
+                      <div 
+                        key={idx}
+                        onClick={() => handleCaseClick(clinicalCase)}
+                        className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl p-4 cursor-pointer transition-all shadow-sm hover:shadow-md group"
                       >
-                        {cat}
-                      </button>
-                    ))}
-                  </div>
-
-                  {/* Category Sections */}
-                  {BRAIN_CATEGORIES.map((cat, cIdx) => {
-                    const nodes = getDiseaseKnowledgeTree(selectedDisease!).filter(node => node.category === cat);
-                    if (nodes.length === 0) return null;
-                    return (
-                      <div key={cIdx} id={`brain-cat-${cIdx}`} className="space-y-4 scroll-mt-[6rem]">
-                        <div className="flex items-center justify-between border-b border-[var(--border)] pb-2">
-                          <h3 className="text-xs font-extrabold uppercase tracking-widest text-[var(--primary)]">{cat}</h3>
-                          <span className="text-[10px] font-mono text-[var(--text-muted)]">{nodes.length} topics</span>
-                        </div>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-                          {nodes.map((node, nIdx) => (
-                            <div
-                              key={nIdx}
-                              onClick={() => setSelectedSubsection({ id: node.id, title: node.title, category: node.category, content: node.content, cta: node.cta, action: node.action })}
-                              className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl p-4 cursor-pointer transition-all hover:shadow-md flex flex-col gap-3 group"
-                            >
-                              <div className="flex justify-between items-start">
-                                <div className="p-2 bg-[var(--surface-dim)] border border-[var(--border)] rounded-xl group-hover:border-[var(--primary)]/30 transition-colors">
-                                  {node.icon}
-                                </div>
-                                <span className="text-[10px] font-mono text-[var(--text-muted)]">{cIdx + 1}.{nIdx + 1}</span>
-                              </div>
-                              <div>
-                                <h4 className="font-bold text-sm text-[var(--text)] leading-tight group-hover:text-[var(--primary)] transition-colors">{node.title}</h4>
-                                <p className="text-[11px] text-[var(--text-muted)] mt-1.5 line-clamp-3 leading-relaxed">{previewOf(node.content)}</p>
-                              </div>
+                        <div className="flex items-start justify-between gap-4">
+                          <div className="min-w-0">
+                            <div className="flex items-center gap-2 mb-1.5">
+                              <span className={`px-2 py-0.5 rounded-lg text-[10px] font-extrabold uppercase tracking-wider ${
+                                clinicalCase.difficulty === 'Beginner' ? 'bg-emerald-500/10 text-emerald-600' :
+                                clinicalCase.difficulty === 'Intermediate' ? 'bg-amber-500/10 text-amber-600' :
+                                'bg-rose-500/10 text-rose-600'
+                              }`}>
+                                {clinicalCase.difficulty}
+                              </span>
                             </div>
-                          ))}
+                            <h3 className="text-base font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">
+                              {clinicalCase.title}
+                            </h3>
+                            <p className="text-xs text-[var(--text-muted)] mt-1">
+                              {getInitials(clinicalCase.patientName)} &bull; {clinicalCase.demographics} &bull; {clinicalCase.facilitySetting}
+                            </p>
+                            <p className="text-xs text-[var(--text-muted)] mt-0.5 italic truncate">
+                              "{clinicalCase.chiefComplaint}"
+                            </p>
+                          </div>
+                          <ChevronRight size={16} className="text-[var(--border)] group-hover:text-[var(--primary)] group-hover:translate-x-1 transition-all shrink-0 mt-2" />
                         </div>
                       </div>
-                    );
-                  })}
+                    ))}
+
+                    {casesForSelectedDisease.length === 0 && (
+                      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-8 text-center">
+                        <h3 className="text-base font-bold text-[var(--text)]">No Cases Available Yet</h3>
+                        <p className="text-xs text-[var(--text-muted)] mt-1">
+                          Teaching cases for {selectedDisease} are being compiled.
+                        </p>
+                      </div>
+                    )}
+                  </div>
                 </div>
-              )}
-            </div>
           )}
 
           {/* Level 4: Case Details */}
@@ -993,61 +919,45 @@ export default function ClinicalCasesScreen() {
                       }`}>{selectedCase.difficulty} Level</span>
                     </div>
                   </div>
-                  <button
-                    onClick={() => { setSelectedCase(null); setShowBrainTree(true); }}
-                    className="px-4 py-2 rounded-2xl text-xs font-semibold flex items-center gap-2 border border-[var(--border)] bg-[var(--surface)] text-[var(--text-muted)] hover:text-[var(--text)] transition-all cursor-pointer self-start sm:self-auto shadow-sm"
-                  >
-                    <BrainCircuit size={14} />
-                    Disease Brain
-                  </button>
                 </div>
               </div>
 
               <ScrollProgress />
-              <div className="grid grid-cols-1 xl:grid-cols-12 gap-6">
-                {/* Sticky Section Nav */}
-                <StickySectionNav items={[
-                  { id: 'presentation', label: 'Presentation' },
-                  { id: 'investigations', label: 'Investigations' },
-                  { id: 'management', label: 'Management' },
-                  { id: 'pearls', label: 'Pearls' },
-                ]} />
-                {/* Main Case Info */}
-                <div className="xl:col-span-7 space-y-5">
-                  {/* Presentation Section */}
-                  <Card className="p-5">
-                    <Section id="presentation" title="Clinical Presentation" icon={<User size={16} />}>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
-                        <div>
-                          <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Patient Name</h4>
-                          <p className="text-base font-bold text-[var(--primary)]">{selectedCase.patientName}</p>
-                        </div>
-                        <div>
-                          <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Facility / Setting</h4>
-                          <p className="text-sm text-[var(--text)] font-medium">{selectedCase.facilitySetting}</p>
-                        </div>
-                        <div>
-                          <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Demographics</h4>
-                          <p className="text-sm text-[var(--text)]">{selectedCase.demographics}</p>
-                        </div>
-                        <div>
-                          <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Chief Complaint</h4>
-                          <p className="text-sm text-[var(--text)] font-medium">"{selectedCase.chiefComplaint}"</p>
-                        </div>
+              <div className="space-y-5">
+                {/* Presentation Section */}
+                <Card className="p-4">
+                  <Section id="presentation" title="Clinical Presentation" icon={<User size={16} />}>
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-3">
+                      <div>
+                        <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Patient</h4>
+                        <p className="text-base font-bold text-[var(--primary)]" title={selectedCase.patientName}>{getInitials(selectedCase.patientName)}</p>
                       </div>
+                      <div>
+                        <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Facility</h4>
+                        <p className="text-sm text-[var(--text)] font-medium">{selectedCase.facilitySetting}</p>
+                      </div>
+                      <div>
+                        <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Demographics</h4>
+                        <p className="text-sm text-[var(--text)]">{selectedCase.demographics}</p>
+                      </div>
+                      <div>
+                        <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Chief Complaint</h4>
+                        <p className="text-sm text-[var(--text)] font-medium">"{selectedCase.chiefComplaint}"</p>
+                      </div>
+                    </div>
 
                       <div className="mt-4 space-y-4">
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">History of Presenting Illness</h4>
-                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.hpi || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.hpi || ''} medicines={medicines} diseases={diseases} adrs={COMMON_ADRS} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Past Medical History</h4>
-                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.pmh || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.pmh || ''} medicines={medicines} diseases={diseases} adrs={COMMON_ADRS} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Medication History</h4>
-                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.medHx || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.medHx || ''} medicines={medicines} diseases={diseases} adrs={COMMON_ADRS} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Allergies</h4>
@@ -1055,7 +965,7 @@ export default function ClinicalCasesScreen() {
                         </div>
                         <div>
                           <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Physical Examination</h4>
-                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.pe || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.pe || ''} medicines={medicines} diseases={diseases} adrs={COMMON_ADRS} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                       </div>
 
@@ -1067,7 +977,7 @@ export default function ClinicalCasesScreen() {
                   </Card>
 
                   {/* Investigations Section */}
-                  <Card className="p-5">
+                  <Card className="p-4">
                     <Section id="investigations" title="Investigations" icon={<Activity size={16} />}>
                       <div className="space-y-4">
                         <div>
@@ -1079,7 +989,7 @@ export default function ClinicalCasesScreen() {
                         {selectedCase.imaging && (
                           <div>
                             <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-2">Imaging / Other</h4>
-                            <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.imaging} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
+                            <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.imaging} medicines={medicines} diseases={diseases} adrs={COMMON_ADRS} onMedicine={openDrug} onDisease={openDisease} /></p>
                           </div>
                         )}
                       </div>
@@ -1087,59 +997,59 @@ export default function ClinicalCasesScreen() {
                   </Card>
 
                   {/* Management Section */}
-                  <Card className="p-5">
+                  <Card className="p-4">
                     <Section id="management" title="Assessment & Management" icon={<Stethoscope size={16} />}>
-                    <div className="space-y-5">
+                    <div className="space-y-4">
                       <div>
-                        <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Diagnosis</h4>
+                        <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Diagnosis</h4>
                         <p className="text-base font-bold text-[var(--primary)]">{selectedCase.diagnosis}</p>
                       </div>
                       <div>
-                        <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Differential Diagnoses</h4>
-                        <div className="flex flex-wrap gap-2 mt-1">
+                        <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Differential Diagnoses</h4>
+                        <div className="flex flex-wrap gap-1.5 mt-1">
                           {selectedCase.ddx.map((d, i) => (
-                            <span key={i} className="px-3 py-1 bg-[var(--surface-dim)] border border-[var(--border)] rounded-lg text-xs font-medium text-[var(--text)]">{d}</span>
+                            <span key={i} className="px-2 py-0.5 bg-[var(--surface-dim)] border border-[var(--border)] rounded text-xs text-[var(--text)]">{d}</span>
                           ))}
                         </div>
                       </div>
                       
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                          <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Therapeutic Goals</h4>
-                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.goals || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
+                          <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Therapeutic Goals</h4>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.goals || ''} medicines={medicines} diseases={diseases} adrs={COMMON_ADRS} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                         <div>
-                          <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Drug Therapy Problems</h4>
-                          <p className="text-sm text-amber-600 font-medium leading-relaxed bg-amber-500/10 p-3 rounded-xl border border-amber-500/20"><HighlightText text={selectedCase.dtps || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
+                          <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Drug Therapy Problems</h4>
+                          <p className="text-sm text-amber-600 font-medium leading-relaxed bg-amber-500/10 p-2.5 rounded-xl border border-amber-500/20"><HighlightText text={selectedCase.dtps || ''} medicines={medicines} diseases={diseases} adrs={COMMON_ADRS} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                       </div>
 
-                      <div className="bg-[var(--primary-container)]/10 p-5 rounded-2xl border border-[var(--primary)]/20 space-y-4">
+                      <div className="bg-[var(--primary-container)]/10 p-4 rounded-2xl border border-[var(--primary)]/20 space-y-3">
                         <h4 className="font-bold text-[var(--primary)] flex items-center gap-2">
-                          <Pill size={16} /> Pharmaceutical Care Plan
+                          <Pill size={14} /> Pharmaceutical Care Plan
                         </h4>
                         <div>
-                          <h5 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Pharmacological Management</h5>
-                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.pharm || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
+                          <h5 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Pharmacological Management</h5>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.pharm || ''} medicines={medicines} diseases={diseases} adrs={COMMON_ADRS} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                         <div>
-                          <h5 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Non-Pharmacological Management</h5>
-                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.nonPharm || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
+                          <h5 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Non-Pharmacological Management</h5>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.nonPharm || ''} medicines={medicines} diseases={diseases} adrs={COMMON_ADRS} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                         <div>
-                          <h5 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Comprehensive Care Plan</h5>
-                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.carePlan || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
+                          <h5 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Comprehensive Care Plan</h5>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.carePlan || ''} medicines={medicines} diseases={diseases} adrs={COMMON_ADRS} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                          <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Monitoring Parameters</h4>
-                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.monitoring || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
+                          <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Monitoring Parameters</h4>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.monitoring || ''} medicines={medicines} diseases={diseases} adrs={COMMON_ADRS} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                         <div>
-                          <h4 className="text-xs font-bold uppercase text-[var(--text-muted)] mb-1">Patient Counselling</h4>
-                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.counselling || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
+                          <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Patient Counselling</h4>
+                          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightText text={selectedCase.counselling || ''} medicines={medicines} diseases={diseases} adrs={COMMON_ADRS} onMedicine={openDrug} onDisease={openDisease} /></p>
                         </div>
                       </div>
                     </div>
@@ -1147,141 +1057,24 @@ export default function ClinicalCasesScreen() {
                   </Card>
 
                   {/* Pearls Section */}
-                  <Card className="p-5">
+                  <Card className="p-4">
                     <Section id="pearls" title="Clinical Pearls & References" icon={<Sparkles size={16} />}>
-                      <p className="text-sm text-[var(--text)] leading-relaxed mb-4"><HighlightText text={selectedCase.pearls || ''} medicines={medicines} diseases={diseases} onMedicine={openDrug} onDisease={openDisease} /></p>
-                    <div className="border-t border-[var(--border)] pt-4">
-                      <h4 className="text-xs font-bold text-[var(--text-muted)] mb-2">References:</h4>
+                      <p className="text-sm text-[var(--text)] leading-relaxed mb-3"><HighlightText text={selectedCase.pearls || ''} medicines={medicines} diseases={diseases} adrs={COMMON_ADRS} onMedicine={openDrug} onDisease={openDisease} /></p>
+                    <div className="border-t border-[var(--border)] pt-3">
+                      <h4 className="text-[10px] font-bold text-[var(--text-muted)] mb-1.5">References</h4>
                       <ul className="space-y-1">
                         {selectedCase.references.map((ref, i) => (
-                          <li key={i} className="text-xs text-[var(--text-muted)] flex items-center gap-2">
-                            <BookOpen size={12} /> {ref}
+                          <li key={i} className="text-xs text-[var(--text-muted)] flex items-center gap-1.5">
+                            <BookOpen size={10} /> {ref}
                           </li>
                         ))}
                       </ul>
                     </div>
                     </Section>
                   </Card>
-                </div>
 
-                {/* AI Discussion Sidebar */}
-                <div className="lg:col-span-1 h-[calc(100vh-160px)] sticky top-6">
-                  <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl h-full flex flex-col shadow-sm overflow-hidden">
-                    <div className="p-4 border-b border-[var(--border)] bg-gradient-to-r from-[var(--primary)]/10 to-transparent flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-[var(--primary)]/20 flex items-center justify-center text-[var(--primary)]">
-                        <BrainCircuit size={20} />
-                      </div>
-                      <div>
-                        <h3 className="font-bold text-[var(--text)]">Case Discussion</h3>
-                        <p className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-bold">Context-Aware Tutor</p>
-                      </div>
-                    </div>
-
-                    <div className="flex-1 overflow-y-auto p-4 space-y-4">
-                      {tutorChat.map((msg, i) => (
-                        <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-                          <div className={`max-w-[85%] rounded-2xl p-3 text-sm leading-relaxed ${
-                            msg.role === 'user' 
-                              ? 'bg-[var(--primary)] text-[var(--primary-foreground)] rounded-br-sm' 
-                              : 'bg-[var(--surface-dim)] border border-[var(--border)] text-[var(--text)] rounded-bl-sm'
-                          }`}>
-                            <div className={msg.role === 'user' ? 'prose-invert' : ''}><Markdown>{msg.content}</Markdown></div>
-                          </div>
-                        </div>
-                      ))}
-                      {isTutorThinking && (
-                        <div className="flex justify-start">
-                          <div className="bg-[var(--surface-dim)] border border-[var(--border)] rounded-2xl rounded-bl-sm p-4 flex gap-1.5 items-center">
-                            <div className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] animate-bounce" style={{ animationDelay: '0ms' }} />
-                            <div className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] animate-bounce" style={{ animationDelay: '150ms' }} />
-                            <div className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] animate-bounce" style={{ animationDelay: '300ms' }} />
-                          </div>
-                        </div>
-                      )}
-                      <div ref={chatEndRef} />
-                    </div>
-
-                    <div className="p-4 border-t border-[var(--border)] bg-[var(--surface-dim)]/50">
-                      <form onSubmit={handleAskTutor} className="flex gap-2">
-                        <input
-                          type="text"
-                          value={tutorMessage}
-                          onChange={(e) => setTutorMessage(e.target.value)}
-                          placeholder="Ask about this case..."
-                          className="flex-1 px-4 py-2.5 bg-[var(--bg)] border border-[var(--border)] rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
-                        />
-                        <button
-                          type="submit"
-                          disabled={!tutorMessage.trim() || isTutorThinking}
-                          className="p-2.5 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-xl hover:opacity-95 disabled:opacity-50 transition-opacity flex items-center justify-center shrink-0 cursor-pointer"
-                        >
-                          <Play size={18} className="fill-current" />
-                        </button>
-                      </form>
-                      <p className="text-[9px] text-center text-[var(--text-muted)] mt-2">
-                        AI answers are based on guidelines and the specific case context.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          )}
-          
-          {/* Subsection Detail Modal */}
-          {selectedSubsection && (
-            <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-in fade-in duration-200">
-              <div className="bg-[var(--surface)] border border-[var(--border)] rounded-3xl max-w-2xl w-full max-h-[85vh] overflow-hidden flex flex-col shadow-2xl animate-in zoom-in-95 duration-200">
-                {/* Header */}
-                <div className="p-6 border-b border-[var(--border)] flex items-center justify-between bg-gradient-to-r from-[var(--primary)]/5 to-transparent">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-[var(--surface-dim)] border border-[var(--border)] flex items-center justify-center">
-                      {getDiseaseKnowledgeTree(selectedDisease!).find(node => node.id === selectedSubsection.id)?.icon || <BookOpen className="text-[var(--primary)]" size={18} />}
-                    </div>
-                    <div>
-                      <span className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)]">{selectedSubsection.category}</span>
-                      <h3 className="text-xl font-bold text-[var(--text)] mt-0.5">{selectedSubsection.title}</h3>
-                    </div>
-                  </div>
-                  <button 
-                    onClick={() => setSelectedSubsection(null)}
-                    className="p-2 hover:bg-[var(--surface-dim)] rounded-xl transition-colors"
-                  >
-                    <X size={20} className="text-[var(--text-muted)]" />
-                  </button>
-                </div>
-
-                {/* Content */}
-                <div className="p-6 overflow-y-auto space-y-4 text-[var(--text)] prose prose-sm max-w-none">
-                  <div className="markdown-body text-sm leading-relaxed text-[var(--text)]">
-                    <Markdown>{selectedSubsection.content}</Markdown>
-                  </div>
-                </div>
-
-                {/* Footer / CTA Actions */}
-                <div className="p-6 border-t border-[var(--border)] bg-[var(--surface-dim)] flex flex-col sm:flex-row gap-3 justify-between items-center">
-                  <span className="text-xs text-[var(--text-muted)] italic font-mono">Clinova Curriculum Connection</span>
-                  <div className="flex gap-2 w-full sm:w-auto">
-                    <button
-                      onClick={() => setSelectedSubsection(null)}
-                      className="flex-1 sm:flex-none px-4 py-2 border border-[var(--border)] rounded-xl text-xs font-semibold text-[var(--text)] hover:bg-[var(--surface)] transition-colors"
-                    >
-                      Close
-                    </button>
-                    {selectedSubsection.cta && selectedSubsection.action && (
-                      <button
-                        onClick={() => handleSubsectionAction(selectedSubsection.action!)}
-                        className="flex-1 sm:flex-none px-4 py-2 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-xl text-xs font-semibold hover:bg-[var(--primary-hover)] transition-all flex items-center gap-1.5 justify-center cursor-pointer shadow-sm"
-                      >
-                        <span>{selectedSubsection.cta}</span>
-                        <ChevronRight size={14} />
-                      </button>
-                    )}
-                  </div>
                 </div>
               </div>
-            </div>
           )}
 
         </div>

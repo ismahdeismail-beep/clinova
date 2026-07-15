@@ -710,7 +710,7 @@ function ModuleCard({
 // UPGRADED LEARNING WORKSPACE WITH RECURSIVE SUB-FOLDERS
 // ==========================================
 function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit, module: EducationModule, onBack: () => void }) {
-  const [activeTab, setActiveTab] = useState('overview');
+  const [activeTab, setActiveTab] = useState(() => module.id === 'clinical_pharm' ? 'disease-notes' : 'overview');
   const { files, fetchFiles } = useFileStore();
   const { userData } = useAuth();
 
@@ -1038,7 +1038,12 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
     { id: 'resources', label: 'Resources' },
     { id: 'flashcards', label: 'Flashcards' },
     { id: 'mcqs', label: 'Practice Quiz' },
-  ];
+  ]
+
+  const isClinicalPharm = module.id === 'clinical_pharm'
+  const workspaceTabs = isClinicalPharm
+    ? tabs.filter(t => t.id === 'disease-notes')
+    : tabs;
 
   return (
     <div className="animate-in fade-in slide-in-from-bottom-4 duration-300">
@@ -1229,7 +1234,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
 
         {/* Workspace Tabs */}
         <div className="flex overflow-x-auto border-b border-[var(--border)] no-scrollbar bg-[var(--surface-dim)]/40">
-          {tabs.map(tab => (
+          {workspaceTabs.map(tab => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
@@ -2098,6 +2103,13 @@ function DiseaseNoteCard({ note, expandedId, onToggle }: { note: DiseaseNote; ex
             <h5 className="text-[10px] font-black uppercase tracking-wider text-[var(--text-muted)] mb-1.5">Overview</h5>
             <p className="text-xs text-[var(--text)] leading-relaxed">{note.overview}</p>
           </div>
+
+          {/* Diagram */}
+          {note.diagram && (
+            <div className="bg-white dark:bg-gray-900 border border-[var(--border)]/40 rounded-xl p-4 overflow-x-auto flex justify-center">
+              <div dangerouslySetInnerHTML={{ __html: note.diagram }} className="max-w-full" />
+            </div>
+          )}
 
           {/* Key Drugs Table */}
           <div>

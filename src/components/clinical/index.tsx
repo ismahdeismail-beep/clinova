@@ -5,6 +5,31 @@ import {
   BookOpen, FileText, FlaskConical, Activity, Link2, ListChecks,
 } from 'lucide-react';
 
+export const COMMON_ADRS: string[] = [
+  'Hypotension', 'Hypertension', 'Bradycardia', 'Tachycardia', 'Arrhythmia',
+  'Hyperkalaemia', 'Hypokalaemia', 'Hyponatraemia', 'Hypercalcaemia', 'Hypocalcaemia',
+  'Hyperglycaemia', 'Hypoglycaemia', 'Hyperuricaemia', 'Hypernatraemia',
+  'Nausea', 'Vomiting', 'Diarrhoea', 'Diarrhea', 'Constipation',
+  'Headache', 'Dizziness', 'Fatigue', 'Insomnia', 'Sedation', 'Somnolence',
+  'Rash', 'Pruritus', 'Urticaria', 'Angioedema',
+  'Cough', 'Bronchospasm', 'Dyspnoea', 'Dyspnea',
+  'Oedema', 'Edema', 'Anaemia', 'Anemia', 'Neutropenia', 'Thrombocytopenia',
+  'Hepatotoxicity', 'Nephrotoxicity', 'Ototoxicity', 'Cardiotoxicity',
+  'Haemorrhage', 'Hemorrhage', 'Bleeding',
+  'Nephritis', 'Pneumonitis', 'Colitis', 'Pancreatitis',
+  'Tremor', 'Seizure', 'Seizures', 'Confusion', 'Hallucination',
+  'Gynaecomastia', 'Gynecomastia', 'Galactorrhoea',
+  'Photosensitivity', 'Alopecia', 'Xerostomia', 'Dry mouth',
+  'Flushing', 'Sweating', 'Fever',
+  'Weight gain', 'Weight loss',
+  'Acute kidney injury', 'Anaphylaxis',
+  'Hypokalaemia', 'Hypoglycaemia', 'Hypomagnesaemia',
+  'Stevens-Johnson syndrome', 'Torsades de pointes',
+  'QT prolongation', 'Cushing syndrome',
+  'Extrapyramidal symptoms', 'Tardive dyskinesia',
+  'Serotonin syndrome', 'Neuroleptic malignant syndrome',
+]
+
 export const cx = clsx;
 
 /* ---------------- Layout primitives ---------------- */
@@ -97,6 +122,15 @@ export function DiseaseLink({ name, onClick }: { name: string; onClick?: () => v
   );
 }
 
+export function ADRBadge({ name }: { name: string }) {
+  return (
+    <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-md bg-red-50 dark:bg-red-950/30 text-red-600 dark:text-red-400 border border-red-200/40 font-semibold text-xs" title="Adverse drug reaction">
+      <AlertTriangle size={10} />
+      {name}
+    </span>
+  );
+}
+
 export function MedicineChip({ name, onClick }: { name: string; onClick?: () => void }) {
   return (
     <button type="button" className="cl-pill cl-pill-medicine" onClick={onClick}>
@@ -120,17 +154,19 @@ function escapeReg(str: string) {
 }
 
 export function HighlightText({
-  text, medicines = [], diseases = [], onMedicine, onDisease,
+  text, medicines = [], diseases = [], adrs = [], onMedicine, onDisease,
 }: {
   text: string;
   medicines?: string[];
   diseases?: string[];
+  adrs?: string[];
   onMedicine?: (name: string) => void;
   onDisease?: (name: string) => void;
 }) {
   const terms = [
     ...medicines.map((m) => ({ t: m, kind: 'med' as const })),
     ...diseases.map((d) => ({ t: d, kind: 'dz' as const })),
+    ...adrs.map((a) => ({ t: a, kind: 'adr' as const })),
   ].filter((x) => x.t && x.t.length > 2)
     .sort((a, b) => b.t.length - a.t.length);
   if (terms.length === 0) return <>{text}</>;
@@ -146,6 +182,9 @@ export function HighlightText({
         }
         if (match && match.kind === 'dz') {
           return <DiseaseLink key={i} name={part} onClick={() => onDisease?.(part)} />;
+        }
+        if (match && match.kind === 'adr') {
+          return <ADRBadge key={i} name={part} />;
         }
         return <React.Fragment key={i}>{part}</React.Fragment>;
       })}

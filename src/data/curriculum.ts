@@ -1007,13 +1007,7 @@ export interface EducationModule {
 /** All top-level modules for the Education Hub */
 export const EDUCATION_MODULES: EducationModule[] = [
   { id: 'clinical_pharm', title: 'Clinical Pharmacy & Therapeutics', description: 'Disease management and patient care across 17 integrated therapeutic areas.', isIntegrated: true, areaId: 'clinical_pharm', icon: 'HeartPulse', color: 'red' },
-  { id: 'pharmacology', title: 'Pharmacology', description: 'Drug mechanisms, kinetics, dynamics, and toxicology.', isIntegrated: false, areaId: 'pharmacology', icon: 'Beaker', color: 'indigo' },
-  { id: 'cases', title: 'Clinical Cases', description: 'Interactive patient cases for therapeutic areas.', isIntegrated: false, icon: 'Briefcase', color: 'orange' },
-  { id: 'drug_info', title: 'Drug Information & Guidelines', description: 'Clinical guidelines, monographs, and evidence.', isIntegrated: false, icon: 'FileText', color: 'teal' },
-  { id: 'ebm', title: 'Evidence-Based Medicine & Research', description: 'Research methodology, biostatistics, critical appraisal, and evidence synthesis.', isIntegrated: false, icon: 'Search', color: 'sky' },
-  { id: 'supporting', title: 'Supporting Sciences', description: 'Foundational sciences for pharmacy and medicine.', isIntegrated: false, areaId: 'supporting', icon: 'FlaskConical', color: 'emerald' },
-  { id: 'tools', title: 'Study & Learning Tools', description: 'Flashcards, Q-banks, and Planning.', isIntegrated: false, icon: 'BrainCircuit', color: 'fuchsia' },
-  { id: 'board_exam', title: 'Board Exam Prep', description: 'PPB (Kenya) exam preparation with 3 prediction sets — authentic questions, answers, and explanations.', isIntegrated: false, icon: 'GraduationCap', color: 'amber' },
+  { id: 'online_books', title: 'Online Books', description: 'Pharmacy reference books, textbooks, and clinical resources.', isIntegrated: false, icon: 'BookOpen', color: 'sky' },
 ];
 
 export function getEducationModule(moduleId: string): EducationModule | undefined {
@@ -1027,56 +1021,23 @@ export function getModuleUnits(moduleId: string): EducationModuleUnit[] {
       id: u.id, title: u.title, description: u.description,
     }));
   }
-  if (moduleId === 'pharmacology' || moduleId === 'supporting') {
+  if (moduleId === 'pharmacology') {
     const area = getArea(moduleId);
     return (area?.units ?? []).map((u) => ({
       id: u.id, title: u.title, description: u.description,
     }));
   }
-  // Non-curriculum modules (cases, drug_info, ebm, tools) return units from static data
+  // Non-curriculum modules (online_books) return units from static data
   return NON_CURRICULUM_UNITS[moduleId] ?? [];
 }
 
-// Static units for non-curriculum modules (preserved from original educationHubData)
+// Static units for non-curriculum modules
 const NON_CURRICULUM_UNITS: Record<string, EducationModuleUnit[]> = {
-  cases: [
-    { id: 'cc-cv', title: 'Cardiovascular Cases', description: 'Interactive cases on hypertension, heart failure, and ischemic heart disease.' },
-    { id: 'cc-endo', title: 'Endocrine Cases', description: 'Interactive cases on diabetes, thyroid, and adrenal disorders.' },
-    { id: 'cc-resp', title: 'Respiratory Cases', description: 'Interactive cases on asthma, COPD, and allergic rhinitis.' },
-    { id: 'cc-gi', title: 'Gastrointestinal Cases', description: 'Interactive cases on PUD, IBD, and liver cirrhosis.' },
-    { id: 'cc-renal', title: 'Renal Cases', description: 'Interactive cases on AKI and CKD management.' },
-    { id: 'cc-neuro', title: 'Neurological Cases', description: 'Interactive cases on epilepsy, stroke, and Parkinson\'s disease.' },
-    { id: 'cc-id', title: 'Infectious Disease Cases', description: 'Interactive cases on meningitis, pneumonia, and HIV.' },
-    { id: 'cc-onc', title: 'Oncology Cases', description: 'Interactive cases on solid tumors and haematological malignancies.' },
-    { id: 'cc-hem', title: 'Hematology Cases', description: 'Interactive cases on anemia and anticoagulation.' },
-    { id: 'cc-psych', title: 'Psychiatry Cases', description: 'Interactive cases on depression, bipolar, and schizophrenia.' },
-    { id: 'cc-peds', title: 'Pediatric Cases', description: 'Interactive cases on neonatal care and childhood infections.' },
-    { id: 'cc-obgyn', title: 'Obstetrics & Gynecology Cases', description: 'Interactive cases on preeclampsia, pregnancy, and contraception.' },
-    { id: 'cc-em', title: 'Critical Care & Emergency Cases', description: 'Interactive cases on sepsis, trauma, and toxicology.' },
-  ],
-  drug_info: [
-    { id: 'di-guidelines', title: 'Clinical Guidelines', description: 'Latest WHO, AHA, IDSA, and national therapeutic guidelines.' },
-    { id: 'di-monographs', title: 'Drug Monographs', description: 'Detailed prescribing information, adverse effects, and interactions.' },
-    { id: 'di-formulary', title: 'Formulary Management', description: 'Pharmacy and Therapeutics (P&T) committee processes and drug selection.' },
-  ],
-  ebm: [
-    { id: 'ebm-research', title: 'Research Methodology', description: 'Study designs, epidemiological methods, and research question formulation.' },
-    { id: 'ebm-biostats', title: 'Biostatistics', description: 'Descriptive and inferential statistics, hypothesis testing, and data interpretation.' },
-    { id: 'ebm-literature', title: 'Critical Appraisal', description: 'Evaluating validity, bias, and applicability of published medical research.' },
-    { id: 'ebm-trials', title: 'Clinical Trial Design', description: 'Phases of drug development, randomization, blinding, and regulatory approval.' },
-  ],
-  board_exam: [
-    { id: 'prediction-set-1', title: 'Prediction Set 1 — Clinical Pharmacy', description: '30 authentic PPB-style MCQs, SAQs, and essays covering all 17 therapeutic units with detailed explanations.' },
-    { id: 'prediction-set-2', title: 'Prediction Set 2 — Clinical Pharmacy', description: '30 questions focusing on complex case scenarios, drug therapy problems, and regulatory pharmacy.' },
-    { id: 'prediction-set-3', title: 'Prediction Set 3 — Clinical Pharmacy', description: '30 questions covering advanced therapeutics, toxicology, emergency care, and specialty pharmacy.' },
-    { id: 'board-exam-guide', title: 'Exam Guide & Strategy', description: 'PPB Stage I & Stage II exam structure, marking scheme, and preparation strategies.' },
-  ],
-  tools: [
-    { id: 'tool-qbank', title: 'Question Bank', description: 'MCQs and practice exams for all subjects.' },
-    { id: 'tool-flashcards', title: 'Spaced Repetition Flashcards', description: 'Active recall decks for pharmacology and therapeutics.' },
-    { id: 'tool-podcasts', title: 'Podcasts & Audio', description: 'Audio summaries of clinical topics and guidelines.' },
-    { id: 'tool-papers', title: 'Past Papers', description: 'Historical board and university examination papers.' },
-    { id: 'tool-planner', title: 'Smart Study Planner', description: 'Generate personalized study schedules and track progress.' },
-    { id: 'tool-saved', title: 'Downloads & Bookmarks', description: 'Access saved resources, PDFs, and offline content.' },
+  online_books: [
+    { id: 'ob-textbooks', title: 'Pharmacy Textbooks', description: 'Online access to standard pharmacy and pharmacology textbooks.' },
+    { id: 'ob-guidelines', title: 'Clinical Guidelines', description: 'WHO, AHA, IDSA, and national therapeutic guidelines.' },
+    { id: 'ob-monographs', title: 'Drug Monographs & Formularies', description: 'BNF, Martindale, and hospital formulary resources.' },
+    { id: 'ob-journals', title: 'Journals & Research', description: 'Pharmacy and medical journal access for latest evidence.' },
+    { id: 'ob-references', title: 'Reference Tools', description: 'Calculators, conversion tools, and clinical reference apps.' },
   ],
 };

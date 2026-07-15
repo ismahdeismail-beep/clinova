@@ -335,7 +335,7 @@ export default function BoardExamScreen() {
             <h3 className="font-bold text-sm">Exam Guide &amp; Strategy</h3>
           </div>
           <div className="space-y-2 text-sm text-[var(--text-muted)]">
-            <p><strong>Stage I:</strong> For foreign degree holders — 100 MCQs + 15 SAQs + 3 Essays (3 hours)</p>
+            <p><strong>Stage I:</strong> For foreign degree holders — 100 MCQs · 15 SAQs · 3 Essays (3 hours)</p>
             <p><strong>Stage II:</strong> For Kenyan graduates after internship — same structure</p>
             <p><strong>Frequency:</strong> Exams held twice yearly (May/June &amp; October/November)</p>
             <p><strong>Clinical Pharmacy topics:</strong> CV, Respiratory, Endocrine, GI, Renal, ID, Neuro, Psychiatry, Oncology, Haematology, Rheumatology, Dermatology, Ophthalmology, ENT, OBGYN, Paediatrics, Critical Care, Toxicology</p>

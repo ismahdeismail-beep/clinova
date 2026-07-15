@@ -1,5 +1,6 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react';
 import { Bell, Activity, Pill, AlertTriangle } from 'lucide-react';
+import { BUNDLED_DRUGS } from '../data/drugIndexData';
 
 export interface AppNotification {
   id: string;
@@ -107,6 +108,40 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
       });
     }, delayMinutes * 60 * 1000);
   };
+
+  // Drug of the Day — fires at 8 AM daily
+  const getDrugOfTheDay = useCallback(() => {
+    const now = new Date()
+    const dayOfYear = Math.floor((now.getTime() - new Date(now.getFullYear(), 0, 0).getTime()) / 86400000)
+    const idx = dayOfYear % BUNDLED_DRUGS.length
+    return BUNDLED_DRUGS[idx]
+  }, [])
+
+  useEffect(() => {
+    const checkAndNotify = () => {
+      const now = new Date()
+      if (now.getHours() !== 8 || now.getMinutes() !== 0) return
+
+      const lastNotified = localStorage.getItem('clinova_dotd_date')
+      if (lastNotified === now.toDateString()) return
+
+      const drug = getDrugOfTheDay()
+      localStorage.setItem('clinova_dotd_date', now.toDateString())
+
+      addNotification({
+        type: 'reminder',
+        title: 'Drug of the Day',
+        message: `${drug.name} (${drug.drug_class}) — ${drug.indications[0]}. Tap to view full monograph.`,
+        iconName: 'Pill',
+        color: 'text-[var(--primary)]',
+        bg: 'bg-[var(--primary-container)]',
+      })
+    }
+
+    checkAndNotify()
+    const interval = setInterval(checkAndNotify, 60000)
+    return () => clearInterval(interval)
+  }, [addNotification, getDrugOfTheDay])
 
   const markAsRead = (id: string) => {
     setNotifications(prev => prev.map(n => n.id === id ? { ...n, read: true } : n));

@@ -33,6 +33,7 @@ export const NAV_GROUPS: NavGroup[] = [
       { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
       { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
       { to: '/drugs', label: 'Drug Index', icon: Pill },
+      { to: '/board-exam', label: 'Board Exam', icon: GraduationCap },
       { to: '/assistant', label: 'Clinova Support', icon: ClipboardList },
     ],
   },

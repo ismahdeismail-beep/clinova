@@ -13,6 +13,7 @@ const ClinicalCasesScreen = React.lazy(() => import('./screens/ClinicalCasesScre
 const DrugIndexScreen = React.lazy(() => import('./screens/DrugIndexScreen'));
 const ClinicalAssistantScreen = React.lazy(() => import('./screens/ClinicalAssistantScreen'));
 const EducationHubScreen = React.lazy(() => import('./screens/EducationHubScreen'));
+const BoardExamScreen = React.lazy(() => import('./screens/BoardExamScreen'));
 const LoginScreen = React.lazy(() => import('./screens/LoginScreen'));
 const LandingScreen = React.lazy(() => import('./screens/LandingScreen'));
 
@@ -289,6 +290,8 @@ function AppContent() {
               <Route path="/drugs" element={<DrugIndexScreen />} />
               <Route path="/assistant" element={<ClinicalAssistantScreen />} />
               <Route path="/knowledge" element={<EducationHubScreen />} />
+              <Route path="/board-exam" element={<BoardExamScreen />} />
+              <Route path="/board-exam/:setId" element={<BoardExamScreen />} />
               <Route path="/notifications" element={<DashboardScreen />} />
               <Route path="/settings" element={<DashboardScreen />} />
               <Route path="*" element={<Navigate to="/" replace />} />

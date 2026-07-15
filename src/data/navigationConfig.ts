@@ -30,7 +30,6 @@ export const NAV_GROUPS: NavGroup[] = [
     label: 'Main',
     icon: Home,
     items: [
-      { to: '/', label: 'Dashboard', icon: Home },
       { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
       { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
       { to: '/drugs', label: 'Drug Index', icon: Pill },

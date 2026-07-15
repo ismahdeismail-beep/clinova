@@ -723,6 +723,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
   const [newFolderDesc, setNewFolderDesc] = useState('');
   const [isCreatingFolder, setIsCreatingFolder] = useState(false);
   const [folderError, setFolderError] = useState<string | null>(null);
+  const [showTabs, setShowTabs] = useState(true);
 
   const handleWorkspaceBack = () => {
     if (folderStack.length > 0) {
@@ -1232,31 +1233,45 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
           </span>
         </div>
 
-        {/* Workspace Tabs */}
-        <div className="flex overflow-x-auto border-b border-[var(--border)] no-scrollbar bg-[var(--surface-dim)]/40">
-          {workspaceTabs.map(tab => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`px-5 py-4 text-sm font-bold whitespace-nowrap border-b-2 transition-colors ${
-                activeTab === tab.id 
-                  ? 'border-[var(--primary)] text-[var(--primary)] bg-[var(--surface)]' 
-                  : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)]/60'
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-
         {/* Workspace Content */}
-        <div className="flex-1 p-6 bg-[var(--bg)]">
+        <div className="flex-1 p-6 bg-[var(--bg)] min-h-[500px]">
 {activeTab === 'overview' && <WorkspaceOverview unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
           {activeTab === 'disease-notes' && <DiseaseNotesView unit={unit} />}
           {activeTab === 'tutor' && <WorkspaceTutor unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
           {activeTab === 'resources' && <WorkspaceResources unit={unit} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
           {activeTab === 'flashcards' && <WorkspaceFlashcards unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
           {activeTab === 'mcqs' && <WorkspaceQuizzes unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
+        </div>
+
+        {/* Bottom Tabs — retractable */}
+        <div className="border-t border-[var(--border)] bg-[var(--surface-dim)]/40">
+          <button
+            onClick={() => setShowTabs(!showTabs)}
+            className="w-full flex items-center justify-center gap-1.5 py-1.5 text-[10px] font-bold text-[var(--text-muted)] hover:text-[var(--text)] transition-colors cursor-pointer"
+          >
+            <ChevronRight size={12} className={`transition-transform ${showTabs ? 'rotate-90' : '-rotate-90'}`} />
+            {showTabs ? 'Hide tabs' : 'Show tabs'}
+          </button>
+          {showTabs && (
+            <div className="flex overflow-x-auto no-scrollbar px-2 pb-2 gap-1">
+              {workspaceTabs.map(tab => {
+                const isActive = activeTab === tab.id
+                return (
+                  <button
+                    key={tab.id}
+                    onClick={() => setActiveTab(tab.id)}
+                    className={`flex-1 min-w-0 px-3 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
+                      isActive
+                        ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm'
+                        : 'bg-[var(--surface)] text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface)]/80 border border-[var(--border)]/40'
+                    }`}
+                  >
+                    {tab.label}
+                  </button>
+                )
+              })}
+            </div>
+          )}
         </div>
       </div>
 

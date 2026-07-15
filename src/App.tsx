@@ -259,31 +259,32 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
               (item) => location.pathname === item.to || location.pathname.startsWith(item.to + '/')
             )
             const isExpanded = expandedGroups[group.id] ?? false
-            const GroupIcon = group.icon
 
             return (
               <div key={group.id}>
-                <button
-                  onClick={() => toggleGroup(group.id)}
-                  className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors ${
-                    isGroupActive
-                      ? 'text-[var(--primary)]'
-                      : 'text-[var(--text-muted)]/60 hover:text-[var(--text)]'
-                  }`}
-                >
-                  <div className="flex items-center gap-2">
-                    <GroupIcon size={14} />
-                    <span>{group.label}</span>
-                  </div>
-                  <ChevronDown
-                    size={14}
-                    className={`transition-transform duration-200 ${
-                      isExpanded ? 'rotate-0' : '-rotate-90'
+                {group.label && (
+                  <button
+                    onClick={() => toggleGroup(group.id)}
+                    className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors ${
+                      isGroupActive
+                        ? 'text-[var(--primary)]'
+                        : 'text-[var(--text-muted)]/60 hover:text-[var(--text)]'
                     }`}
-                  />
-                </button>
+                  >
+                    <div className="flex items-center gap-2">
+                      <group.icon size={14} />
+                      <span>{group.label}</span>
+                    </div>
+                    <ChevronDown
+                      size={14}
+                      className={`transition-transform duration-200 ${
+                        isExpanded ? 'rotate-0' : '-rotate-90'
+                      }`}
+                    />
+                  </button>
+                )}
 
-                {isExpanded && (
+                {(group.label ? isExpanded : true) && (
                   <div className="space-y-0.5 mt-1 mb-2 ml-1">
                     {group.items.map((item) => {
                       const isActive =

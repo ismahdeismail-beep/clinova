@@ -3,14 +3,15 @@ import {
   Bot, Send, User, BrainCircuit, Library, Pill, Activity, 
   FlaskConical, FileText, CheckCircle2, ChevronDown, ChevronRight, Loader2, 
   Database, AlertCircle, Mic, MicOff, ArrowDown, X, Layers, Sparkles,
-  Download, FileDown, Copy, Check, Paperclip, Menu, Plus, Settings
+  Download, FileDown, Copy, Check, Paperclip, Menu, Plus, Settings,
+  Trash2, AlertTriangle
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { RAGRouter } from '../services/ragRouter';
 import ReactMarkdown from 'react-markdown';
 import { jsPDF } from 'jspdf';
 import { ChatSessionList } from '../components/ChatSessionList';
-import { saveChatSession, ChatSession } from '../lib/localDb';
+import { saveChatSession, deleteChatSession, ChatSession } from '../lib/localDb';
 import { ChatService } from '../services/chat.service';
 import { StorageService } from '../services/storage.service';
 import { useFileStore } from '../store/fileStore';
@@ -354,6 +355,16 @@ export default function ClinicalAssistantScreen() {
       content: m.content
     })));
     setIsSidebarOpen(false);
+  };
+  
+  const handleDeleteCurrentSession = async () => {
+    if (!confirm('Delete this entire conversation? This cannot be undone.')) return;
+    try {
+      await deleteChatSession(currentSessionId);
+      handleNewSession();
+    } catch (err) {
+      console.warn('[ClinicalAssistant] Failed to delete session:', err);
+    }
   };
   
   interface AttachedFile {
@@ -1230,6 +1241,15 @@ export default function ClinicalAssistantScreen() {
             >
               <Plus size={14} className="text-[var(--primary)]" />
               <span className="hidden sm:inline">New Session</span>
+            </button>
+
+            {/* Delete Current Conversation */}
+            <button
+              onClick={handleDeleteCurrentSession}
+              className="p-2 sm:px-3 sm:py-2 rounded-xl border border-[var(--border)] hover:border-red-400/40 bg-[var(--bg)]/40 hover:bg-red-500/10 text-[var(--text-muted)] hover:text-red-500 transition-all cursor-pointer"
+              title="Delete current conversation"
+            >
+              <Trash2 size={14} />
             </button>
 
             {/* Export Chat Dropdown - Modern */}

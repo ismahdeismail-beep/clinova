@@ -1,9 +1,9 @@
 import {
-  Home, BookOpen, FolderOpen, Pill, Bell, Settings,
-  GraduationCap, Stethoscope, FlaskConical, Users,
+  Home, BookOpen, FolderOpen, Pill,
+  GraduationCap, FlaskConical,
   BookMarked, FileText, HeartPulse, Database, Cpu,
   Puzzle, BarChart3, Star, Clock, Search, Library,
-  MessageSquare, ClipboardList,
+  MessageSquare, ClipboardList, Settings, Users,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -27,30 +27,13 @@ export type NavGroup = {
 export const NAV_GROUPS: NavGroup[] = [
   {
     id: 'main',
-    label: 'Main',
+    label: '',
     icon: Home,
     items: [
       { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
       { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
       { to: '/drugs', label: 'Drug Index', icon: Pill },
-      { to: '/board-exam', label: 'Board Exam', icon: GraduationCap },
-    ],
-  },
-  {
-    id: 'tools',
-    label: 'Clinical Tools',
-    icon: Stethoscope,
-    items: [
       { to: '/assistant', label: 'Clinova Support', icon: ClipboardList },
-    ],
-  },
-  {
-    id: 'account',
-    label: 'Account',
-    icon: Users,
-    items: [
-      { to: '/notifications', label: 'Notifications', icon: Bell, badge: 'unread' },
-      { to: '/settings', label: 'Settings', icon: Settings },
     ],
   },
   {

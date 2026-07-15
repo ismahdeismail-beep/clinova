@@ -6,7 +6,7 @@ import {
   Briefcase, HelpCircle, Layers, Headphones, FileArchive, Calendar, BrainCircuit,
   Bookmark, Download, History, ChevronLeft, Bot, Play, FileUp, List, Sparkles, CheckCircle2, Clock, Database, Mic,
   FolderPlus, Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star, ArrowUpRight,
-  Compass, FileDown
+  Compass, FileDown, MoreHorizontal, ArrowLeft, ArrowRight
 } from 'lucide-react';
 import Markdown from 'react-markdown';
 import html2canvas from 'html2canvas';
@@ -1247,10 +1247,10 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
         <div className="border-t border-[var(--border)] bg-[var(--surface-dim)]/40">
           <button
             onClick={() => setShowTabs(!showTabs)}
-            className="w-full flex items-center justify-center gap-1.5 py-1.5 text-[10px] font-bold text-[var(--text-muted)] hover:text-[var(--text)] transition-colors cursor-pointer"
+            className="w-full flex items-center justify-center py-1 text-[var(--text-muted)] hover:text-[var(--text)] transition-colors cursor-pointer"
+            title={showTabs ? 'Collapse tabs' : 'Expand tabs'}
           >
-            <ChevronRight size={12} className={`transition-transform ${showTabs ? 'rotate-90' : '-rotate-90'}`} />
-            {showTabs ? 'Hide tabs' : 'Show tabs'}
+            <MoreHorizontal size={16} className={`transition-transform ${showTabs ? 'rotate-0' : ''}`} />
           </button>
           {showTabs && (
             <div className="flex overflow-x-auto no-scrollbar px-2 pb-2 gap-1">
@@ -1260,7 +1260,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`flex-1 min-w-0 px-3 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
+                    className={`flex-1 min-w-0 px-3 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
                       isActive
                         ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm'
                         : 'bg-[var(--surface)] text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface)]/80 border border-[var(--border)]/40'
@@ -2062,10 +2062,19 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
 // ==========================================
 function DiseaseNotesView({ unit }: { unit: EducationModuleUnit }) {
   const notes = DISEASE_NOTES.filter(n => n.unitId === unit.id)
-  const [selectedNote, setSelectedNote] = useState<DiseaseNote | null>(null)
+  const [selectedIdx, setSelectedIdx] = useState<number | null>(null)
 
-  if (selectedNote) {
-    return <DiseaseDetailView note={selectedNote} onBack={() => setSelectedNote(null)} />
+  if (selectedIdx !== null) {
+    return (
+      <DiseaseDetailView
+        note={notes[selectedIdx]}
+        hasPrev={selectedIdx > 0}
+        hasNext={selectedIdx < notes.length - 1}
+        onPrev={() => setSelectedIdx(selectedIdx - 1)}
+        onNext={() => setSelectedIdx(selectedIdx + 1)}
+        onBack={() => setSelectedIdx(null)}
+      />
+    )
   }
 
   if (notes.length === 0) {
@@ -2091,7 +2100,7 @@ function DiseaseNotesView({ unit }: { unit: EducationModuleUnit }) {
         {notes.map(note => (
           <button
             key={note.id}
-            onClick={() => setSelectedNote(note)}
+            onClick={() => setSelectedIdx(notes.indexOf(note))}
             className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] hover:shadow-md rounded-2xl p-5 text-left transition-all cursor-pointer group"
           >
             <div className="flex items-center gap-3 mb-3">
@@ -2116,16 +2125,33 @@ function DiseaseNotesView({ unit }: { unit: EducationModuleUnit }) {
   )
 }
 
-function DiseaseDetailView({ note, onBack }: { note: DiseaseNote; onBack: () => void }) {
+function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: { note: DiseaseNote; onBack: () => void; hasPrev?: boolean; hasNext?: boolean; onPrev?: () => void; onNext?: () => void }) {
   return (
     <div className="max-w-4xl mx-auto space-y-8 py-2">
       {/* Header */}
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-2">
         <button
           onClick={onBack}
           className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer"
+          title="Back to list"
         >
           <ChevronLeft size={18} className="text-[var(--text)]" />
+        </button>
+        <button
+          onClick={onPrev}
+          disabled={!hasPrev}
+          className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
+          title="Previous disease"
+        >
+          <ArrowLeft size={16} className="text-[var(--text)]" />
+        </button>
+        <button
+          onClick={onNext}
+          disabled={!hasNext}
+          className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
+          title="Next disease"
+        >
+          <ArrowRight size={16} className="text-[var(--text)]" />
         </button>
         <div>
           <h2 className="text-2xl font-extrabold text-[var(--text)]">{note.name}</h2>
@@ -2166,7 +2192,7 @@ function DiseaseDetailView({ note, onBack }: { note: DiseaseNote; onBack: () => 
                   <td className="px-4 py-3">
                     <div className="flex flex-wrap gap-1">
                       {d.sideEffects.map((se, j) => (
-                        <span key={j} className="text-[11px] px-2 py-0.5 rounded-md bg-red-50 dark:bg-red-950/30 text-red-600 dark:text-red-400 border border-red-200/40 font-semibold whitespace-nowrap">{se}</span>
+                        <span key={j} className="text-[11px] px-2 py-0.5 rounded-md bg-red-50 dark:bg-red-950/30 text-red-600 dark:text-red-400 border border-red-200/40 font-semibold">{se}</span>
                       ))}
                     </div>
                   </td>

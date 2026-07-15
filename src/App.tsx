@@ -1,50 +1,26 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate, Navigate } from 'react-router-dom';
-import { 
+import {
   Home, FolderOpen, ClipboardList, Pill, Bot, 
   BookOpen, Bell, Settings, Menu, Search,
-  X, LogOut, ChevronDown, Star, Clock,
-  GraduationCap, Stethoscope, FlaskConical, Library, Users,
-  BookMarked, FileText, Puzzle, BarChart3, FileUp, MessageSquare,
-  PlusCircle, Sparkles,
+  X, LogOut, ChevronDown,
+  FlaskConical, Users,
+  FileText,
 } from 'lucide-react';
 
 const DashboardScreen = React.lazy(() => import('./screens/DashboardScreen'));
 const ClinicalCasesScreen = React.lazy(() => import('./screens/ClinicalCasesScreen'));
-
 const DrugIndexScreen = React.lazy(() => import('./screens/DrugIndexScreen'));
 const ClinicalAssistantScreen = React.lazy(() => import('./screens/ClinicalAssistantScreen'));
 const EducationHubScreen = React.lazy(() => import('./screens/EducationHubScreen'));
-const KnowledgeBaseManagerScreen = React.lazy(() => import('./screens/KnowledgeBaseManagerScreen'));
-const AiOrchestrationScreen = React.lazy(() => import('./screens/AiOrchestrationScreen'));
-const NotificationsScreen = React.lazy(() => import('./screens/NotificationsScreen'));
-const SettingsScreen = React.lazy(() => import('./screens/SettingsScreen'));
-const AdminDashboardScreen = React.lazy(() => import('./screens/AdminDashboardScreen'));
 const LoginScreen = React.lazy(() => import('./screens/LoginScreen'));
 const LandingScreen = React.lazy(() => import('./screens/LandingScreen'));
-const StudentOnboarding = React.lazy(() => import('./components/StudentOnboarding'));
-const BoardExamScreen = React.lazy(() => import('./screens/BoardExamScreen'));
 
-import { ProtectedRoute } from './components/ProtectedRoute';
 import { useAuth } from './contexts/AuthContext';
-import { InstallPWA } from './components/InstallPWA';
-import { OfflineStatus } from './components/OfflineStatus';
-import { CommandPalette } from './components/CommandPalette';
 import ClinovaLogo from './components/ClinovaLogo';
 import ThemeToggle from './components/ThemeToggle';
-import { useInstallPrompt } from './hooks/useInstallPrompt';
-import { QuickActions } from './components/QuickActions';
-
-import { Breadcrumbs } from './components/Breadcrumbs';
-
 import { useNotifications } from './contexts/NotificationContext';
-
-import {
-  NAV_GROUPS, CONTEXT_NAV, getRouteLabel,
-  getFavorites, toggleFavorite, isFavorite,
-  getRecent, trackVisit,
-  type NavGroup,
-} from './data/navigationConfig';
+import { NAV_GROUPS, getRouteLabel, type NavGroup } from './data/navigationConfig';
 
 function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
   const { userData } = useAuth();
@@ -77,7 +53,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
               aria-label="Open search"
               className="w-full bg-[var(--surface-dim)]/50 border border-[var(--border)] text-[var(--text-muted)] flex items-center justify-between cursor-pointer hover:border-[var(--primary)] transition-all duration-300 backdrop-blur-sm pl-10 pr-4 py-2 rounded-full text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)]"
               onClick={() => {
-                window.dispatchEvent(new Event('open-command-palette'));
+                window.dispatchEvent(new CustomEvent('open-search'));
               }}
             >
               <span className="truncate">Search drugs, diseases, guidelines...</span>
@@ -90,17 +66,6 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
         </div>
 
         <div className="flex items-center gap-1 sm:gap-2 shrink-0">
-          <Link to="/notifications" className="text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary-container)] rounded-full transition-colors relative p-2">
-            <Bell size={20} />
-            {unreadCount > 0 && (
-              <span className="absolute bg-[var(--danger)] rounded-full border border-[var(--surface)] font-bold text-white flex items-center justify-center top-1 right-1 min-w-[16px] h-4 text-[10px] px-0.5">
-                {unreadCount}
-              </span>
-            )}
-          </Link>
-          <Link to="/settings" className="text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--primary-container)] rounded-full transition-colors hidden sm:block p-2">
-            <Settings size={20} />
-          </Link>
           <ThemeToggle />
           
           <div className="h-8 w-px bg-[var(--border)] mx-1 hidden sm:block"></div>
@@ -122,14 +87,11 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
 
 function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolean) => void }) {
   const location = useLocation();
-  const navigate = useNavigate();
   const { userData, logout } = useAuth();
   const [expandedGroups, setExpandedGroups] = React.useState<Record<string, boolean>>(() => {
     const saved = localStorage.getItem('clinova_sidebar_sections')
     return saved ? JSON.parse(saved) : { 'knowledge-base': true }
   })
-  const [favorites, setFavorites] = React.useState<string[]>(getFavorites)
-  const recent = getRecent()
 
   const toggleGroup = (id: string) => {
     setExpandedGroups((prev) => {
@@ -138,15 +100,6 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
       return next
     })
   }
-
-  const handleToggleFavorite = (e: React.MouseEvent, path: string) => {
-    e.preventDefault()
-    e.stopPropagation()
-    const updated = toggleFavorite(path)
-    setFavorites(updated)
-  }
-
-  const contextNav = CONTEXT_NAV[location.pathname]
 
   const visibleGroups = NAV_GROUPS.filter((g) => {
     if (g.future) return false
@@ -176,84 +129,6 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
           </button>
         </div>
         <nav className="p-3 space-y-1 flex-1 mt-1 overflow-y-auto">
-
-          {favorites.length > 0 && (
-            <div className="mb-2">
-              <div className="px-3 mb-1 text-[0.6rem] font-bold uppercase tracking-wider text-[var(--text-muted)]/60 flex items-center gap-1.5">
-                <Star size={10} />
-                Favorites
-              </div>
-              <div className="space-y-0.5">
-                {favorites.map((path) => {
-                  const favItem = visibleGroups
-                    .flatMap((g) => g.items)
-                    .find((i) => i.to === path)
-                  if (!favItem) return null
-                  const FavIcon = favItem.icon
-                  return (
-                    <Link
-                      key={path}
-                      to={path}
-                      onClick={() => setIsOpen(false)}
-                      className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 text-[var(--text-muted)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]`}
-                    >
-                      <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-transparent">
-                        <FavIcon size={18} />
-                      </div>
-                      <span className="truncate">{favItem.label}</span>
-                    </Link>
-                  )
-                })}
-              </div>
-            </div>
-          )}
-
-          {recent.length > 0 && (
-            <div className="mb-2">
-              <div className="px-3 mb-1 text-[0.6rem] font-bold uppercase tracking-wider text-[var(--text-muted)]/60 flex items-center gap-1.5">
-                <Clock size={10} />
-                Recent
-              </div>
-              <div className="space-y-0.5">
-                {recent.slice(0, 5).map((path) => {
-                  const recItem = visibleGroups
-                    .flatMap((g) => g.items)
-                    .find((i) => i.to === path)
-                  if (!recItem) {
-                    const label = getRouteLabel(path)
-                    return (
-                      <Link
-                        key={path}
-                        to={path}
-                        onClick={() => setIsOpen(false)}
-                        className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 text-[var(--text-muted)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]"
-                      >
-                        <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-transparent">
-                          <Clock size={18} />
-                        </div>
-                        <span className="truncate">{label}</span>
-                      </Link>
-                    )
-                  }
-                  const RecIcon = recItem.icon
-                  return (
-                    <Link
-                      key={path}
-                      to={path}
-                      onClick={() => setIsOpen(false)}
-                      className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 text-[var(--text-muted)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]"
-                    >
-                      <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-transparent">
-                        <RecIcon size={18} />
-                      </div>
-                      <span className="truncate">{recItem.label}</span>
-                    </Link>
-                  )
-                })}
-              </div>
-            </div>
-          )}
-
           {visibleGroups.map((group) => {
             const isGroupActive = group.items.some(
               (item) => location.pathname === item.to || location.pathname.startsWith(item.to + '/')
@@ -293,7 +168,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
                       const ItemIcon = item.icon
 
                       return (
-                        <div key={item.to} className="relative group/item">
+                        <div key={item.to}>
                           <Link
                             to={item.to}
                             onClick={() => setIsOpen(false)}
@@ -310,18 +185,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
                             }`}>
                               <ItemIcon size={18} className={isActive ? 'text-[var(--primary-foreground)]' : ''} />
                             </div>
-                            <span className="truncate flex-1">{item.label}</span>
-                            <button
-                              onClick={(e) => handleToggleFavorite(e, item.to)}
-                              className={`opacity-0 group-hover/item:opacity-100 transition-opacity p-0.5 rounded ${
-                                isFavorite(item.to)
-                                  ? 'text-yellow-500 opacity-100'
-                                  : 'text-[var(--text-muted)] hover:text-yellow-500'
-                              }`}
-                              title={isFavorite(item.to) ? 'Remove from favorites' : 'Add to favorites'}
-                            >
-                              <Star size={12} fill={isFavorite(item.to) ? 'currentColor' : 'none'} />
-                            </button>
+                            <span className="truncate">{item.label}</span>
                           </Link>
                         </div>
                       )
@@ -367,45 +231,9 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
   );
 }
 
-function AdminLoginScreen() {
-  const { loginAs } = useAuth();
-  const navigate = useNavigate();
-  
-  React.useEffect(() => {
-    loginAs('admin').then(() => navigate('/')).catch((e) => console.error('[Auth] Admin demo sign-in failed:', e));
-  }, [loginAs, navigate]);
-
-  return <div className="min-h-screen bg-[var(--bg)] flex items-center justify-center p-8 text-center text-sm font-medium text-[var(--text-muted)] animate-pulse">Authenticating Admin Access...</div>;
-}
-
-function UserLoginScreen() {
-  const { loginAs } = useAuth();
-  const navigate = useNavigate();
-  
-  React.useEffect(() => {
-    loginAs('user').then(() => navigate('/')).catch((e) => console.error('[Auth] User demo sign-in failed:', e));
-  }, [loginAs, navigate]);
-
-  return <div className="min-h-screen bg-[var(--bg)] flex items-center justify-center p-8 text-center text-sm font-medium text-[var(--text-muted)] animate-pulse">Authenticating User Access...</div>;
-}
-
 function AppContent() {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
   const { userData, loading } = useAuth();
-  const [forceShowOnboarding, setForceShowOnboarding] = React.useState(false);
-  const { isInstallable, promptInstall } = useInstallPrompt();
-
-  React.useEffect(() => {
-    if (isInstallable) {
-      promptInstall();
-    }
-  }, [isInstallable, promptInstall]);
-
-  React.useEffect(() => {
-    const handleOpenOnboarding = () => setForceShowOnboarding(true);
-    window.addEventListener('open-onboarding', handleOpenOnboarding);
-    return () => window.removeEventListener('open-onboarding', handleOpenOnboarding);
-  }, []);
 
   if (loading) {
     return (
@@ -434,8 +262,6 @@ function AppContent() {
       }>
         <Routes>
           <Route path="/login" element={<LoginScreen />} />
-          <Route path="/admin-access" element={<AdminLoginScreen />} />
-          <Route path="/user-access" element={<UserLoginScreen />} />
           <Route path="*" element={<LandingScreen />} />
         </Routes>
       </React.Suspense>
@@ -444,18 +270,10 @@ function AppContent() {
 
   return (
     <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] flex flex-col">
-      <CommandPalette />
-      <OfflineStatus />
-      {forceShowOnboarding && (
-        <React.Suspense fallback={null}>
-          <StudentOnboarding onClose={() => setForceShowOnboarding(false)} />
-        </React.Suspense>
-      )}
       <TopNavigation onMenuClick={() => setIsSidebarOpen(!isSidebarOpen)} />
       <div className="flex-1 flex overflow-hidden relative">
         <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
         <main id="main-scroll-area" className="flex-1 md:pl-64 overflow-y-auto overflow-x-hidden pt-[calc(4rem+env(safe-area-inset-top,0px))]">
-          <Breadcrumbs />
           <React.Suspense fallback={
             <div className="h-full flex flex-col items-center justify-center p-8 text-center">
               <div className="flex flex-col items-center gap-5 animate-pulse">
@@ -468,37 +286,14 @@ function AppContent() {
             <Routes>
               <Route path="/" element={<DashboardScreen />} />
               <Route path="/cases" element={<ClinicalCasesScreen />} />
-
               <Route path="/drugs" element={<DrugIndexScreen />} />
               <Route path="/assistant" element={<ClinicalAssistantScreen />} />
               <Route path="/knowledge" element={<EducationHubScreen />} />
-              <Route path="/board-exam" element={<BoardExamScreen />} />
-              <Route path="/board-exam/:setId" element={<BoardExamScreen />} />
-              <Route path="/admin" element={
-                <ProtectedRoute requiredRole="admin">
-                  <AdminDashboardScreen />
-                </ProtectedRoute>
-              } />
-              <Route path="/admin/kbms" element={
-                <ProtectedRoute requiredRole="admin">
-                  <KnowledgeBaseManagerScreen />
-                </ProtectedRoute>
-              } />
-              <Route path="/admin/ai" element={
-                <ProtectedRoute requiredRole="admin">
-                  <AiOrchestrationScreen />
-                </ProtectedRoute>
-              } />
-              <Route path="/notifications" element={<NotificationsScreen />} />
-              <Route path="/settings" element={<SettingsScreen />} />
-              <Route path="/login" element={<Navigate to="/" replace />} />
-              <Route path="/admin-access" element={<Navigate to="/" replace />} />
-              <Route path="/user-access" element={<Navigate to="/" replace />} />
+              <Route path="/notifications" element={<DashboardScreen />} />
+              <Route path="/settings" element={<DashboardScreen />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </React.Suspense>
-          <InstallPWA />
-          <QuickActions />
         </main>
       </div>
     </div>

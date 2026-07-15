@@ -50,7 +50,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
               aria-label="Open search"
               className="w-full bg-[var(--surface-dim)]/50 border border-[var(--border)] text-[var(--text-muted)] flex items-center justify-between cursor-pointer hover:border-[var(--primary)] transition-all duration-300 backdrop-blur-sm pl-10 pr-4 py-2 rounded-full text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)]"
               onClick={() => {
-                window.dispatchEvent(new CustomEvent('open-search'));
+                window.location.href = '/knowledge';
               }}
             >
               <span className="truncate">Search drugs, diseases, guidelines...</span>

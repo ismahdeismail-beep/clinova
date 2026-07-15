@@ -1,11 +1,9 @@
 import {
-  Home, BookOpen, FolderOpen, ClipboardList, Pill, Bot,
-  Bell, Settings, Database, ShieldCheck, Cpu,
-  GraduationCap, Stethoscope, FlaskConical, Library, Users,
-  BookMarked, FileText, HeartPulse, Microscope, Calculator,
-  Droplets, Puzzle, AlertTriangle, ScrollText, Video,
-  MessageSquare, Search, Star, Clock, PlusCircle,
-  BarChart3, BrainCircuit, FileUp, Link, RefreshCw,
+  Home, BookOpen, FolderOpen, Pill, Bell, Settings,
+  GraduationCap, Stethoscope, FlaskConical, Users,
+  BookMarked, FileText, HeartPulse, Database, Cpu,
+  Puzzle, BarChart3, Star, Clock, Search, Library,
+  MessageSquare, ClipboardList,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -28,61 +26,44 @@ export type NavGroup = {
 
 export const NAV_GROUPS: NavGroup[] = [
   {
-    id: 'dashboard',
-    label: 'Dashboard',
+    id: 'main',
+    label: 'Main',
     icon: Home,
     items: [
-      { to: '/', label: 'Home', icon: Home },
+      { to: '/', label: 'Dashboard', icon: Home },
+      { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
+      { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
+      { to: '/drugs', label: 'Drug Index', icon: Pill },
+      { to: '/board-exam', label: 'Board Exam', icon: GraduationCap },
+    ],
+  },
+  {
+    id: 'tools',
+    label: 'Clinical Tools',
+    icon: Stethoscope,
+    items: [
+      { to: '/assistant', label: 'Support Center', icon: ClipboardList },
+    ],
+  },
+  {
+    id: 'account',
+    label: 'Account',
+    icon: Users,
+    items: [
       { to: '/notifications', label: 'Notifications', icon: Bell, badge: 'unread' },
       { to: '/settings', label: 'Settings', icon: Settings },
     ],
   },
   {
-    id: 'knowledge-base',
-    label: 'Knowledge Base',
-    icon: BookOpen,
+    id: 'admin',
+    label: 'Administration',
+    icon: Database,
     items: [
-      { to: '/drugs', label: 'Drug Index', icon: Pill },
-      { to: '/drugs', label: 'Drug Monographs', icon: BookMarked },
-      { to: '/drugs', label: 'Drug Interactions', icon: Puzzle },
-      { to: '/drugs', label: 'Therapeutic Classes', icon: BarChart3 },
-    ],
-  },
-  {
-    id: 'clinical',
-    label: 'Clinical Workspace',
-    icon: Stethoscope,
-    items: [
-      { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
-      { to: '/assistant', label: 'Clinical Support', icon: Bot },
-      { to: '/review', label: 'Medication Review', icon: ClipboardList },
-    ],
-  },
-  {
-    id: 'learning',
-    label: 'Learning',
-    icon: GraduationCap,
-    items: [
-      { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
-    ],
-  },
-  {
-    id: 'research',
-    label: 'Research',
-    icon: FlaskConical,
-    items: [
+      { to: '/admin', label: 'Admin Dashboard', icon: Settings },
       { to: '/admin/kbms', label: 'Knowledge Base Mgmt', icon: Database, badge: 'admin' },
+      { to: '/admin/ai', label: 'AI Gateway', icon: Cpu },
     ],
     adminOnly: true,
-  },
-  {
-    id: 'library',
-    label: 'Library',
-    icon: Library,
-    items: [
-      { to: '/admin/kbms', label: 'Uploaded Files', icon: FileUp },
-      { to: '/knowledge', label: 'Saved Notes', icon: FileText },
-    ],
   },
   {
     id: 'community',
@@ -90,7 +71,6 @@ export const NAV_GROUPS: NavGroup[] = [
     icon: Users,
     items: [
       { to: '#', label: 'Discussions', icon: MessageSquare },
-      { to: '#', label: 'Groups', icon: Users },
       { to: '#', label: 'Shared Cases', icon: FolderOpen },
     ],
     future: true,
@@ -132,10 +112,10 @@ export const CONTEXT_NAV: Record<string, ContextNav> = {
 export const ROUTE_LABELS: Record<string, string> = {
   '/': 'Dashboard',
   '/cases': 'Clinical Cases',
-  '/review': 'Medication Review',
   '/drugs': 'Drug Index',
-  '/assistant': 'Clinical Support',
+  '/assistant': 'Support Center',
   '/knowledge': 'Education Hub',
+  '/board-exam': 'Board Exam',
   '/admin': 'Admin Dashboard',
   '/admin/kbms': 'Knowledge Manager',
   '/admin/ai': 'AI Gateway',

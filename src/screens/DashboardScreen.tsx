@@ -275,11 +275,11 @@ export default function DashboardScreen() {
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4">
                   <Link
-                    to="/review"
+                    to="/knowledge"
                     className="flex flex-col items-center justify-center p-4 bg-[var(--surface)] border border-[var(--border)] rounded-2xl hover:border-[var(--primary)]/50 hover:bg-[var(--primary-container)] transition-all group shadow-sm backdrop-blur-md"
                   >
                     <div className="w-10 h-10 rounded-full bg-[var(--primary-container)] text-[var(--primary)] flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-                      <ClipboardList size={20} />
+                      <BookOpen size={20} />
                     </div>
                     <span className="text-xs font-bold text-[var(--text)]">Care Plan Review</span>
                   </Link>

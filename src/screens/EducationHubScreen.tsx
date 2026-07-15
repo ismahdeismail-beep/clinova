@@ -13,7 +13,6 @@ import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
 import { EDUCATION_MODULES, type EducationModule, type EducationModuleUnit, getModuleUnits } from '../data/educationHubData';
 import { INITIAL_CASES } from '../data/clinicalCasesData';
-import FileUploader from '../components/FileUploader';
 import { useFileStore } from '../store/fileStore';
 import { useAuth } from '../contexts/AuthContext';
 import { EducationService, CustomUnit, SubFolder, SavedFlashcard, SavedQuiz } 
@@ -23,6 +22,7 @@ import exportService from '../services/export.service';
 import CurriculumGraph from '../components/CurriculumGraph';
 import { getResourcesForUnit } from '../data/unitToLibraryMapping';
 import { getStaticContent } from '../data/unitStaticContent';
+import { DISEASE_NOTES, type DiseaseNote } from '../data/diseaseNotes';
 const getRelevantFiles = (files: any[], currentFolderId: string, currentFolderName: string, unitTitle: string) => {
   return files.filter(f => {
     if (f.category === 'study_source' && f.studyId === currentFolderId) return true;
@@ -1033,8 +1033,8 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
 
   const tabs = [
     { id: 'overview', label: 'Study Guide' },
-    { id: 'notes', label: 'My Notes' },
-    { id: 'tutor', label: 'Clinical Coach' },
+    { id: 'disease-notes', label: 'Disease Notes' },
+    { id: 'tutor', label: 'Tutor' },
     { id: 'resources', label: 'Resources' },
     { id: 'flashcards', label: 'Flashcards' },
     { id: 'mcqs', label: 'Practice Quiz' },
@@ -1247,7 +1247,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
         {/* Workspace Content */}
         <div className="flex-1 p-6 bg-[var(--bg)]">
 {activeTab === 'overview' && <WorkspaceOverview unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
-          {activeTab === 'notes' && <WorkspaceNotes unit={unit} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
+          {activeTab === 'disease-notes' && <DiseaseNotesView unit={unit} />}
           {activeTab === 'tutor' && <WorkspaceTutor unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
           {activeTab === 'resources' && <WorkspaceResources unit={unit} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
           {activeTab === 'flashcards' && <WorkspaceFlashcards unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
@@ -2038,114 +2038,196 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
 }
 
 // ==========================================
-// MY NOTES (UPLOAD & SCRATCHPAD NOTES)
+// DISEASE NOTES
 // ==========================================
-function WorkspaceNotes({ unit, currentFolderId, currentFolderName, userData }: { unit: EducationModuleUnit, currentFolderId: string, currentFolderName: string, userData: any }) {
-  const { files } = useFileStore();
-  const [customNotes, setCustomNotes] = useState('');
-  const [isSaved, setIsSaved] = useState(false);
-  
-  // Filter files that belong to this sub-folder
-  const unitFiles = getRelevantFiles(files, currentFolderId, currentFolderName, unit.title);
+function DiseaseNotesView({ unit }: { unit: EducationModuleUnit }) {
+  const notes = DISEASE_NOTES.filter(n => n.unitId === unit.id)
+  const [expandedId, setExpandedId] = useState<string | null>(null)
 
-  // Load custom notes from local storage on mount/folder change
-  useEffect(() => {
-    const saved = localStorage.getItem(`custom_notes_${currentFolderId}`);
-    if (saved) {
-      setCustomNotes(saved);
-    } else {
-      setCustomNotes('');
-    }
-  }, [currentFolderId]);
-
-  const handleSaveNotes = () => {
-    localStorage.setItem(`custom_notes_${currentFolderId}`, customNotes);
-    setIsSaved(true);
-    setTimeout(() => setIsSaved(false), 2000);
-  };
+  if (notes.length === 0) {
+    return (
+      <div className="py-12 text-center max-w-md mx-auto space-y-4">
+        <div className="w-14 h-14 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mx-auto">
+          <FileText size={28} className="text-[var(--text-muted)]" />
+        </div>
+        <h4 className="text-base font-bold text-[var(--text)]">No Disease Notes Yet</h4>
+        <p className="text-xs text-[var(--text-muted)] leading-relaxed">
+          Curated disease-specific notes are not available for this folder yet. They will appear automatically for standard CP&T units.
+        </p>
+      </div>
+    )
+  }
 
   return (
-    <div className="space-y-6">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        
-        {/* Left column: PDF/Document File Uploader */}
-        <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-xs flex flex-col justify-between min-h-[350px]">
-          <div>
-            <h3 className="text-base font-bold text-[var(--text)] flex items-center gap-2 mb-1">
-              <FileUp className="text-[var(--primary)]" size={18} /> Upload Academic Lectures
-            </h3>
-            <p className="text-xs text-[var(--text-muted)] leading-relaxed mb-4">
-              Upload course PDFs, slide decks, or protocol guidelines for <strong className="text-[var(--primary)]">{currentFolderName}</strong>. Clinova AI analyzes these documents to populate your Study Guide, Flashcards, and MCQs.
-            </p>
-            <FileUploader category="study_source" studyId={currentFolderId} />
-          </div>
-
-          <div className="mt-6 border-t border-[var(--border)]/40 pt-4">
-            <h4 className="text-xs font-bold text-[var(--text)] mb-3 flex items-center gap-1.5">
-              <Database size={13} /> Indexed Documents ({unitFiles.length})
-            </h4>
-            {unitFiles.length > 0 ? (
-              <div className="grid grid-cols-1 gap-2.5 max-h-[160px] overflow-y-auto no-scrollbar pr-1">
-                {unitFiles.map((file) => (
-                  <div key={file.id} className="border border-[var(--border)] rounded-xl p-3 flex items-start gap-3 hover:border-[var(--primary)] transition-colors bg-[var(--bg)]/40">
-                    <div className="w-8 h-8 bg-[var(--surface-dim)] rounded-lg flex items-center justify-center shrink-0">
-                      <FileText size={16} className="text-[var(--primary)]" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <p className="text-xs font-bold text-[var(--text)] truncate">{file.originalName}</p>
-                      <div className="flex items-center gap-2 mt-0.5">
-                        <span className="text-[9px] uppercase font-extrabold text-[var(--text-muted)] bg-[var(--surface-dim)] px-1.5 py-0.5 rounded">
-                          {file.mimeType.split('/')[1]?.toUpperCase() || 'DOCUMENT'}
-                        </span>
-                        <span className="text-[10px] text-[var(--text-muted)]">
-                          {new Date(file.createdAt).toLocaleDateString()}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <p className="text-xs text-[var(--text-muted)] italic">No documents uploaded yet for this sub-folder.</p>
-            )}
-          </div>
-        </div>
-
-        {/* Right column: Rich Text Scratchpad */}
-        <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-xs flex flex-col justify-between min-h-[350px]">
-          <div className="flex-1 flex flex-col">
-            <div className="flex items-center justify-between mb-2">
-              <h3 className="text-base font-bold text-[var(--text)] flex items-center gap-2">
-                <FileSignature className="text-purple-500" size={18} /> Scratchpad for {currentFolderName}
-              </h3>
-              <button
-                onClick={handleSaveNotes}
-                className="px-3.5 py-1.5 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-lg text-xs font-bold shadow-xs hover:opacity-95 flex items-center gap-1.5 transition-all cursor-pointer"
-              >
-                {isSaved ? <Check size={13} /> : <FileSignature size={13} />}
-                {isSaved ? 'Notes Saved' : 'Save Notes'}
-              </button>
-            </div>
-            <p className="text-xs text-[var(--text-muted)] leading-relaxed mb-4">
-              Type or paste bullet points from class lectures, textbook pages, or drug lists specifically for <strong className="text-[var(--primary)]">{currentFolderName}</strong>. Your typed text is indexed synchronously with files.
-            </p>
-            
-            <textarea
-              className="w-full flex-1 p-4 bg-[var(--bg)] border border-[var(--border)] rounded-2xl text-xs font-semibold leading-relaxed focus:outline-none focus:ring-2 focus:ring-[var(--primary)] text-[var(--text)] resize-none min-h-[220px]"
-              placeholder="e.g. 
-- Classification: Antineoplastic, Alkylating Agent
-- Mechanism: Covalently binds DNA, cross-linking strands to inhibit replication.
-- Dose adjustment: Reduce by 50% if CrCl is < 30 mL/min
-- Major Toxicity: Hemorrhagic cystitis (co-administer with Mesna)..."
-              value={customNotes}
-              onChange={(e) => setCustomNotes(e.target.value)}
-            />
-          </div>
-        </div>
-
-      </div>
+    <div className="space-y-4">
+      <p className="text-[11px] font-bold text-[var(--text-muted)] uppercase tracking-wider mb-4">
+        {notes.length} Disease Note{notes.length !== 1 ? 's' : ''} &mdash; {unit.title}
+      </p>
+      {notes.map(note => (
+        <DiseaseNoteCard key={note.id} note={note} expandedId={expandedId} onToggle={setExpandedId} />
+      ))}
     </div>
-  );
+  )
+}
+
+function DiseaseNoteCard({ note, expandedId, onToggle }: { note: DiseaseNote; expandedId: string | null; onToggle: (id: string | null) => void }) {
+  const isOpen = expandedId === note.id
+
+  return (
+    <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl shadow-sm overflow-hidden">
+      <button
+        onClick={() => onToggle(isOpen ? null : note.id)}
+        className="w-full flex items-center justify-between p-4 sm:p-5 hover:bg-[var(--surface-dim)]/50 transition-colors cursor-pointer text-left"
+      >
+        <div className="flex items-center gap-3 min-w-0">
+          <div className="w-9 h-9 rounded-xl bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center shrink-0">
+            <FileText size={16} />
+          </div>
+          <div className="min-w-0">
+            <h4 className="text-sm font-bold text-[var(--text)]">{note.name}</h4>
+            <p className="text-[10px] text-[var(--text-muted)] font-semibold">{note.specialty}</p>
+          </div>
+        </div>
+        <ChevronRight size={18} className={`text-[var(--text-muted)] shrink-0 transition-transform ${isOpen ? 'rotate-90' : ''}`} />
+      </button>
+
+      {isOpen && (
+        <div className="px-4 sm:px-5 pb-5 space-y-5 animate-in slide-in-from-top-2 duration-200">
+          {/* Overview */}
+          <div className="bg-[var(--surface-dim)]/40 border border-[var(--border)]/40 rounded-xl p-4">
+            <h5 className="text-[10px] font-black uppercase tracking-wider text-[var(--text-muted)] mb-1.5">Overview</h5>
+            <p className="text-xs text-[var(--text)] leading-relaxed">{note.overview}</p>
+          </div>
+
+          {/* Key Drugs Table */}
+          <div>
+            <h5 className="text-[10px] font-black uppercase tracking-wider text-[var(--text-muted)] mb-2">Key Drugs & Side Effects</h5>
+            <div className="overflow-x-auto rounded-xl border border-[var(--border)]/40">
+              <table className="w-full text-xs">
+                <thead>
+                  <tr className="bg-[var(--surface-dim)] text-[var(--text-muted)] font-bold uppercase text-[10px] tracking-wider">
+                    <th className="px-3 py-2.5 text-left">Drug</th>
+                    <th className="px-3 py-2.5 text-left">Class</th>
+                    <th className="px-3 py-2.5 text-left">Side Effects</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[var(--border)]/30">
+                  {note.keyDrugs.map((d, i) => (
+                    <tr key={i} className="hover:bg-[var(--surface-dim)]/30">
+                      <td className="px-3 py-2.5 font-bold text-[var(--text)]">{d.drug}</td>
+                      <td className="px-3 py-2.5 text-[var(--text-muted)]">{d.class}</td>
+                      <td className="px-3 py-2.5">
+                        <div className="flex flex-wrap gap-1">
+                          {d.sideEffects.map((se, j) => (
+                            <span key={j} className="text-[10px] px-1.5 py-0.5 rounded-md bg-red-50 dark:bg-red-950/30 text-red-600 dark:text-red-400 border border-red-200/40 font-semibold">{se}</span>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Monitoring */}
+          <div className="bg-amber-500/5 border border-amber-200/30 rounded-xl p-4">
+            <h5 className="text-[10px] font-black uppercase tracking-wider text-amber-600 mb-1.5">Monitoring</h5>
+            <p className="text-xs text-[var(--text)] leading-relaxed">{note.monitoring}</p>
+          </div>
+
+          {/* MCQs */}
+          <div className="border-t border-[var(--border)]/40 pt-4">
+            <h5 className="text-[10px] font-black uppercase tracking-wider text-[var(--text-muted)] mb-3">Practice Questions</h5>
+            <div className="space-y-4">
+              {note.mcqs.map((mcq, i) => (
+                <MCQBlock key={i} mcq={mcq} index={i} />
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+function MCQBlock({ mcq, index }: { mcq: DiseaseNote['mcqs'][number]; index: number }) {
+  const [selected, setSelected] = useState<string | null>(null)
+  const [answered, setAnswered] = useState(false)
+
+  const handleSelect = (opt: string) => {
+    if (answered) return
+    setSelected(opt)
+  }
+
+  const handleVerify = () => {
+    if (!selected) return
+    setAnswered(true)
+  }
+
+  const handleReset = () => {
+    setSelected(null)
+    setAnswered(false)
+  }
+
+  const correctLetter = mcq.correctAnswer
+
+  return (
+    <div className="border border-[var(--border)]/40 rounded-xl p-4 space-y-3">
+      <div className="flex items-start gap-2">
+        <span className="text-[10px] font-black text-[var(--text-muted)] bg-[var(--surface-dim)] px-1.5 py-0.5 rounded shrink-0 mt-0.5">Q{index + 1}</span>
+        <p className="text-xs font-bold text-[var(--text)] leading-relaxed">{mcq.question}</p>
+      </div>
+      <div className="space-y-1.5">
+        {mcq.options.map((opt) => {
+          const letter = opt.charAt(0)
+          const isSelected = selected === opt
+          const isCorrect = letter === correctLetter
+
+          let style = 'border-[var(--border)] bg-[var(--bg)] hover:bg-[var(--surface-dim)]'
+          if (answered) {
+            if (isCorrect) style = 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/20 text-emerald-700 dark:text-emerald-300 font-bold'
+            else if (isSelected) style = 'border-red-500 bg-red-50 dark:bg-red-950/20 text-red-600 dark:text-red-300'
+            else style = 'border-[var(--border)]/30 bg-[var(--surface-dim)] opacity-50'
+          } else if (isSelected) {
+            style = 'border-[var(--primary)] bg-[var(--primary)]/5 font-bold'
+          }
+
+          return (
+            <button
+              key={opt}
+              onClick={() => handleSelect(opt)}
+              disabled={answered}
+              className={`w-full px-3 py-2 rounded-lg border text-xs text-left transition-all ${style}`}
+            >
+              {opt}
+            </button>
+          )
+        })}
+      </div>
+      {!answered ? (
+        <button
+          onClick={handleVerify}
+          disabled={!selected}
+          className="px-4 py-1.5 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-lg text-xs font-bold disabled:opacity-50 hover:opacity-95 transition-all cursor-pointer"
+        >
+          Check Answer
+        </button>
+      ) : (
+        <div className="space-y-2">
+          <div className={`text-xs font-semibold ${selected?.charAt(0) === correctLetter ? 'text-emerald-600' : 'text-red-600'}`}>
+            {selected?.charAt(0) === correctLetter ? 'Correct' : `Incorrect — Answer: ${correctLetter}`}
+          </div>
+          <p className="text-[11px] text-[var(--text-muted)] leading-relaxed bg-[var(--surface-dim)]/50 rounded-lg p-3 border border-[var(--border)]/30">
+            {mcq.explanation}
+          </p>
+          <button onClick={handleReset} className="text-xs text-[var(--primary)] font-bold hover:underline cursor-pointer">
+            Try Again
+          </button>
+        </div>
+      )}
+    </div>
+  )
 }
 
 // ==========================================

@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import {
   ArrowLeft, ChevronRight, CheckCircle2, AlertCircle,
@@ -8,7 +8,6 @@ import {
 import {
   BOARD_EXAM_QUESTIONS,
   getQuestionsByPredictionSet,
-  getQuestionById,
   type BoardExamQuestion,
 } from '../data/boardExams'
 
@@ -48,14 +47,20 @@ const SET_NUMBER: Record<string, 1 | 2 | 3> = {
   'prediction-set-3': 3,
 }
 
+const getSelectedLetter = (opt: string) => opt.charAt(0).toUpperCase()
+
 function QuestionCard({
   question,
   number,
   total,
+  onNext,
+  isLast,
 }: {
   question: BoardExamQuestion
   number: number
   total: number
+  onNext: () => void
+  isLast: boolean
 }) {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null)
   const [isAnswered, setIsAnswered] = useState(false)
@@ -67,18 +72,19 @@ function QuestionCard({
     setShowExplanation(false)
   }, [question.id])
 
-  const isCorrect =
-    isAnswered && selectedAnswer?.trim().toUpperCase() === question.correctAnswer.trim().toUpperCase()
+  const selectedLetter = selectedAnswer ? getSelectedLetter(selectedAnswer) : null
+  const correctLetter = question.correctAnswer.trim().toUpperCase()
+  const isCorrect = isAnswered && selectedLetter === correctLetter
 
   const getOptionStyle = (opt: string) => {
+    const letter = getSelectedLetter(opt)
     if (!isAnswered) {
       return selectedAnswer === opt
         ? 'border-[var(--primary)] bg-[var(--primary)]/5'
         : 'border-[var(--border)] hover:border-[var(--primary)]/50'
     }
-    const isCorrectOpt = opt.trim().toUpperCase() === question.correctAnswer.trim().toUpperCase()
-    if (isCorrectOpt) return 'border-emerald-500 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400'
-    if (selectedAnswer === opt && !isCorrectOpt) return 'border-red-500 bg-red-500/10 text-red-600 dark:text-red-400'
+    if (letter === correctLetter) return 'border-emerald-500 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400'
+    if (selectedAnswer === opt && letter !== correctLetter) return 'border-red-500 bg-red-500/10 text-red-600 dark:text-red-400'
     return 'border-[var(--border)] opacity-50'
   }
 
@@ -108,28 +114,33 @@ function QuestionCard({
 
       {question.type === 'mcq' && question.options && (
         <div className="space-y-2 mb-5">
-          {question.options.map((opt) => (
-            <button
-              key={opt}
-              onClick={() => {
-                if (!isAnswered) setSelectedAnswer(opt)
-              }}
-              className={`w-full text-left p-3 rounded-xl border transition-all text-sm ${getOptionStyle(opt)}`}
-            >
-              <div className="flex items-center gap-3">
-                <span className="w-6 h-6 rounded-full bg-[var(--bg)] flex items-center justify-center text-xs font-bold shrink-0">
-                  {opt.charAt(0)}
-                </span>
-                <span>{opt.substring(3)}</span>
-                {isAnswered && opt.trim().toUpperCase() === question.correctAnswer.trim().toUpperCase() && (
-                  <CheckCircle2 size={16} className="text-emerald-500 shrink-0 ml-auto" />
-                )}
-                {isAnswered && selectedAnswer === opt && !isCorrect && (
-                  <AlertCircle size={16} className="text-red-500 shrink-0 ml-auto" />
-                )}
-              </div>
-            </button>
-          ))}
+          {question.options.map((opt) => {
+            const letter = getSelectedLetter(opt)
+            const isCorrectOpt = letter === correctLetter
+            const isSelectedOpt = selectedAnswer === opt
+            return (
+              <button
+                key={opt}
+                onClick={() => {
+                  if (!isAnswered) setSelectedAnswer(opt)
+                }}
+                className={`w-full text-left p-3 rounded-xl border transition-all text-sm ${getOptionStyle(opt)}`}
+              >
+                <div className="flex items-center gap-3">
+                  <span className="w-6 h-6 rounded-full bg-[var(--bg)] flex items-center justify-center text-xs font-bold shrink-0">
+                    {letter}
+                  </span>
+                  <span className="flex-1">{opt.substring(3)}</span>
+                  {isAnswered && isCorrectOpt && (
+                    <CheckCircle2 size={16} className="text-emerald-500 shrink-0" />
+                  )}
+                  {isAnswered && isSelectedOpt && !isCorrectOpt && (
+                    <AlertCircle size={16} className="text-red-500 shrink-0" />
+                  )}
+                </div>
+              </button>
+            )
+          })}
         </div>
       )}
 
@@ -186,6 +197,15 @@ function QuestionCard({
             <AlertCircle size={16} /> Incorrect
           </span>
         )}
+
+        {isAnswered && !isLast && (
+          <button
+            onClick={onNext}
+            className="ml-auto px-5 py-2.5 bg-[var(--primary)] text-white rounded-xl text-sm font-bold hover:opacity-90 transition-all flex items-center gap-2"
+          >
+            Next <ChevronRight size={14} />
+          </button>
+        )}
       </div>
 
       {showExplanation && (
@@ -239,8 +259,8 @@ export default function BoardExamScreen() {
   }
 
   const current = questions[currentIndex]
+  const isLast = currentIndex === questions.length - 1
 
-  // Set list view
   if (!selectedSet) {
     return (
       <div className="p-4 md:p-6 max-w-6xl mx-auto">
@@ -326,7 +346,6 @@ export default function BoardExamScreen() {
     )
   }
 
-  // Single question view (quiz mode)
   return (
     <div className="p-4 md:p-6 max-w-4xl mx-auto">
       <button onClick={handleBack} className="flex items-center gap-2 text-sm text-[var(--text-muted)] hover:text-[var(--text)] mb-4 transition-colors">
@@ -364,7 +383,13 @@ export default function BoardExamScreen() {
       </div>
 
       {current && (
-        <QuestionCard question={current} number={currentIndex + 1} total={questions.length} />
+        <QuestionCard
+          question={current}
+          number={currentIndex + 1}
+          total={questions.length}
+          onNext={() => setCurrentIndex((i) => Math.min(questions.length - 1, i + 1))}
+          isLast={isLast}
+        />
       )}
 
       <div className="flex items-center justify-between mt-4">

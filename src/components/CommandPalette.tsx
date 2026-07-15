@@ -29,8 +29,7 @@ export function CommandPalette() {
   const actions: Action[] = [
     { id: 'dashboard', label: 'Go to Dashboard', icon: Home, path: '/', shortcut: ['shift', 'h'] },
     { id: 'cases', label: 'Search Clinical Cases', icon: FolderOpen, path: '/cases' },
-    { id: 'review', label: 'Go to Pharmacotherapy Review', icon: ClipboardList, path: '/review' },
-    { id: 'drugs', label: 'Search Drug Index', icon: Pill, path: '/drugs' },
+    { id: 'cases', label: 'Search Clinical Cases', icon: FolderOpen, path: '/cases' },    { id: 'drugs', label: 'Search Drug Index', icon: Pill, path: '/drugs' },
     { id: 'assistant', label: 'Get Clinical Support', icon: Bot, path: '/assistant' },
     { id: 'knowledge', label: 'Go to Education Hub', icon: BookOpen, path: '/knowledge' },
     ...(isAdmin ? [

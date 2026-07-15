@@ -5,10 +5,10 @@ import { ChevronRight, Home, ChevronLeft } from 'lucide-react';
 const routeNames: Record<string, string> = {
   '/': 'Dashboard',
   '/cases': 'Clinical Cases',
-  '/review': 'Care Plan Review',
   '/drugs': 'KDI & Guidelines',
-  '/assistant': 'Auto AI',
+  '/assistant': 'Support Center',
   '/knowledge': 'Knowledge Base',
+  '/board-exam': 'Board Exam',
   '/admin': 'Admin Dashboard',
   '/admin/kbms': 'Knowledge Base Manager',
   '/admin/ai': 'AI Gateway',

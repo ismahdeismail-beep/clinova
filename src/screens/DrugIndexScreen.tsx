@@ -592,8 +592,84 @@ export default function DrugIndexScreen() {
           </p>
         </div>
 
+        {/* Search Bar — always visible at top */}
+        {!monograph && (
+        <div className="relative mb-4" ref={searchRef}>
+          <form onSubmit={handleSearchSubmit} className="flex gap-3 bg-[var(--surface)] p-2 rounded-xl border border-[var(--border)] shadow-sm">
+            <div className="flex-1 flex items-center gap-3 px-3">
+              <Search size={20} className="text-[var(--text-dim)]" />
+              <input 
+                type="text" 
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                onFocus={() => !searchQuery.trim() && setShowSearchDropdown(true)}
+                placeholder="Search by generic (e.g., Ceftriaxone, Amoxicillin) or brand name..." 
+                className="flex-1 bg-transparent border-none outline-none text-[var(--text)] text-sm focus:ring-0"
+              />
+            </div>
+            <button 
+              type="submit"
+              disabled={isLoading}
+              className="px-5 py-2.5 bg-[var(--primary)] hover:opacity-90 transition-opacity text-[var(--primary-foreground)] rounded-lg text-sm font-semibold flex items-center gap-2 cursor-pointer"
+            >
+              {isLoading ? <Loader2 size={16} className="animate-spin" /> : 'Search'}
+            </button>
+          </form>
+
+          {/* Recent search suggestions dropdown */}
+          {showSearchDropdown && recentSearches.length > 0 && !searchQuery.trim() && (
+            <div className="absolute top-full left-0 right-0 mt-1 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-lg z-10 p-2 animate-in fade-in slide-in-from-top-1 duration-150">
+              <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider px-2 py-1">Recent Searches</div>
+              {recentSearches.map((term) => (
+                <button
+                  key={term}
+                  onClick={() => handleQuickDrugClick(term)}
+                  className="w-full text-left px-2 py-2 rounded-lg text-xs font-medium text-[var(--text)] hover:bg-[var(--surface-dim)] transition-colors flex items-center gap-2 cursor-pointer"
+                >
+                  <Search size={12} className="text-[var(--text-dim)] shrink-0" />
+                  {term}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+        )}
+
+        {/* Quick Discovery Tags + Saved Searches row */}
+        {!monograph && (
+        <div className="flex flex-wrap items-center gap-2 mb-4">
+          <span className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider">Quick Search:</span>
+          {QUICK_DRUGS.map((drug) => (
+            <button
+              key={drug.name}
+              onClick={() => handleQuickDrugClick(drug.name)}
+              className="px-3 py-1.5 rounded-lg text-xs font-medium bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] text-[var(--text)] hover:text-[var(--primary)] transition-all flex items-center gap-1 cursor-pointer"
+            >
+              <Pill size={12} />
+              {drug.name}
+            </button>
+          ))}
+          {savedDrugs.length > 0 && (
+            <>
+              <span className="w-px h-4 bg-[var(--border)] mx-1" />
+              {savedDrugs.map((drug) => (
+                <button
+                  key={drug}
+                  onClick={() => handleQuickDrugClick(drug)}
+                  className="px-2.5 py-1 rounded-lg text-xs font-medium bg-[var(--surface-dim)] border border-[var(--border)] hover:border-[var(--primary)] text-[var(--text)] hover:text-[var(--primary)] transition-all flex items-center gap-1 cursor-pointer"
+                  title="Previously saved"
+                >
+                  <Bookmark size={10} className="text-[var(--primary)]" />
+                  {drug}
+                </button>
+              ))}
+            </>
+          )}
+        </div>
+        )}
+
         {/* Tabs navigation */}
-        <div className="relative flex border-b border-[var(--border)] overflow-x-auto">
+        <div className="relative flex border-b border-[var(--border)] overflow-x-auto mb-6">
           {([
             { id: 'monograph', label: 'Monographs', icon: BookOpen },
             { id: 'library', label: 'My Library', icon: Heart },
@@ -623,82 +699,6 @@ export default function DrugIndexScreen() {
 
         {activeTab === 'monograph' ? (
         <div className="space-y-6 animate-in fade-in duration-200">
-          {/* Search Bar */}
-          {!monograph && (
-          <div className="relative" ref={searchRef}>
-            <form onSubmit={handleSearchSubmit} className="flex gap-3 bg-[var(--surface)] p-2 rounded-xl border border-[var(--border)] shadow-sm">
-              <div className="flex-1 flex items-center gap-3 px-3">
-                <Search size={20} className="text-[var(--text-dim)]" />
-                <input 
-                  type="text" 
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  onFocus={() => !searchQuery.trim() && setShowSearchDropdown(true)}
-                  placeholder="Search by generic (e.g., Ceftriaxone, Amoxicillin) or brand name..." 
-                  className="flex-1 bg-transparent border-none outline-none text-[var(--text)] text-sm focus:ring-0"
-                />
-              </div>
-              <button 
-                type="submit"
-                disabled={isLoading}
-                className="px-5 py-2.5 bg-[var(--primary)] hover:opacity-90 transition-opacity text-[var(--primary-foreground)] rounded-lg text-sm font-semibold flex items-center gap-2 cursor-pointer"
-              >
-                {isLoading ? <Loader2 size={16} className="animate-spin" /> : 'Search'}
-              </button>
-            </form>
-
-            {/* Recent search suggestions dropdown */}
-            {showSearchDropdown && recentSearches.length > 0 && !searchQuery.trim() && (
-              <div className="absolute top-full left-0 right-0 mt-1 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-lg z-10 p-2 animate-in fade-in slide-in-from-top-1 duration-150">
-                <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider px-2 py-1">Recent Searches</div>
-                {recentSearches.map((term) => (
-                  <button
-                    key={term}
-                    onClick={() => handleQuickDrugClick(term)}
-                    className="w-full text-left px-2 py-2 rounded-lg text-xs font-medium text-[var(--text)] hover:bg-[var(--surface-dim)] transition-colors flex items-center gap-2 cursor-pointer"
-                  >
-                    <Search size={12} className="text-[var(--text-dim)] shrink-0" />
-                    {term}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-          )}
-
-          {/* Quick Discovery Tags + Saved Searches row */}
-          {!monograph && (
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider">Quick Search:</span>
-            {QUICK_DRUGS.map((drug) => (
-              <button
-                key={drug.name}
-                onClick={() => handleQuickDrugClick(drug.name)}
-                className="px-3 py-1.5 rounded-lg text-xs font-medium bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] text-[var(--text)] hover:text-[var(--primary)] transition-all flex items-center gap-1 cursor-pointer"
-              >
-                <Pill size={12} />
-                {drug.name}
-              </button>
-            ))}
-            {savedDrugs.length > 0 && (
-              <>
-                <span className="w-px h-4 bg-[var(--border)] mx-1" />
-                {savedDrugs.map((drug) => (
-                  <button
-                    key={drug}
-                    onClick={() => handleQuickDrugClick(drug)}
-                    className="px-2.5 py-1 rounded-lg text-xs font-medium bg-[var(--surface-dim)] border border-[var(--border)] hover:border-[var(--primary)] text-[var(--text)] hover:text-[var(--primary)] transition-all flex items-center gap-1 cursor-pointer"
-                    title="Previously saved"
-                  >
-                    <Bookmark size={10} className="text-[var(--primary)]" />
-                    {drug}
-                  </button>
-                ))}
-              </>
-            )}
-          </div>
-          )}
-
           {/* Breadcrumb Navigation */}
           <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] overflow-x-auto pb-3 whitespace-nowrap">
             <span className={`${!selectedCategory ? 'text-[var(--text)] font-bold' : 'hover:text-[var(--primary)] transition-colors cursor-pointer'}`}

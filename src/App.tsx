@@ -11,7 +11,7 @@ import {
 
 const DashboardScreen = React.lazy(() => import('./screens/DashboardScreen'));
 const ClinicalCasesScreen = React.lazy(() => import('./screens/ClinicalCasesScreen'));
-const PharmacotherapyReviewScreen = React.lazy(() => import('./screens/PharmacotherapyReviewScreen'));
+
 const DrugIndexScreen = React.lazy(() => import('./screens/DrugIndexScreen'));
 const ClinicalAssistantScreen = React.lazy(() => import('./screens/ClinicalAssistantScreen'));
 const EducationHubScreen = React.lazy(() => import('./screens/EducationHubScreen'));
@@ -467,7 +467,7 @@ function AppContent() {
             <Routes>
               <Route path="/" element={<DashboardScreen />} />
               <Route path="/cases" element={<ClinicalCasesScreen />} />
-              <Route path="/review" element={<PharmacotherapyReviewScreen />} />
+
               <Route path="/drugs" element={<DrugIndexScreen />} />
               <Route path="/assistant" element={<ClinicalAssistantScreen />} />
               <Route path="/knowledge" element={<EducationHubScreen />} />

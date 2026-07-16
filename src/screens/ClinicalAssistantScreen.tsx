@@ -13,8 +13,6 @@ import { jsPDF } from 'jspdf';
 import { ChatSessionList } from '../components/ChatSessionList';
 import { saveChatSession, deleteChatSession, ChatSession } from '../lib/localDb';
 import { ChatService } from '../services/chat.service';
-import { StorageService } from '../services/storage.service';
-import { useFileStore } from '../store/fileStore';
 import { useAuth } from '../contexts/AuthContext';
 import exportService from '../services/export.service';
 
@@ -253,15 +251,10 @@ function DownloadButton({ content, filename }: { content: string; filename: stri
 }
 
 export default function ClinicalAssistantScreen() {
-  const { files, fetchFiles } = useFileStore();
   const { userData } = useAuth();
   const [currentSessionId, setCurrentSessionId] = useState<string>('session-' + Date.now());
   const [chatSessions, setChatSessions] = useState<ChatSession[]>([]);
   const [sessionsLoading, setSessionsLoading] = useState(true);
-
-  useEffect(() => {
-    fetchFiles();
-  }, [fetchFiles]);
 
   // Load chat sessions from Firestore (via ChatService)
   useEffect(() => {
@@ -406,20 +399,7 @@ export default function ClinicalAssistantScreen() {
 
       setAttachedFiles(prev => prev.map(f => f.id === fileId ? { ...f, data: base64Data, progress: 30 } : f));
 
-      // 2. Upload file directly to storage (this automatically triggers direct Cloudinary upload for all files!)
-      let cloudinaryUrl = '';
-      try {
-        const uploadResult = await StorageService.uploadFile(file, {
-          category: 'general',
-          accessScope: 'public'
-        });
-        cloudinaryUrl = uploadResult.url || '';
-        setAttachedFiles(prev => prev.map(f => f.id === fileId ? { ...f, cloudinaryUrl, progress: 60 } : f));
-      } catch (uploadErr) {
-        console.warn('Storage upload failed, fallback to direct extraction:', uploadErr);
-      }
-
-      // 3. Trigger clinical notes extraction
+      // 2. Trigger clinical notes extraction
       const formData = new FormData();
       formData.append('files', file);
       formData.append('extractionType', 'clinical_notes');
@@ -1026,7 +1006,7 @@ export default function ClinicalAssistantScreen() {
           const primaryFile = currentAttachments[0];
 
           // FIND RELEVANT KNOWLEDGE BASE RESOURCES
-          const kbFiles = files.filter(f => (f.category === 'knowledge' || (f.category as string) === 'knowledge_base') && f.aiProcessed);
+          const kbFiles: any[] = [];
           
           let relevantKbContext = '';
           const keywords = userQuery.toLowerCase().split(/\s+/).filter(w => w.length > 3);
@@ -1117,7 +1097,7 @@ export default function ClinicalAssistantScreen() {
         throw lastError || new Error('Failed to reach assistant after multiple attempts');
       }
       
-      const kbFiles: any[] = files.filter((f: any) => (f.category === 'knowledge' || f.category === 'knowledge_base') && f.aiProcessed);
+      const kbFiles: any[] = [];
       const matchedDb: string[] = selectedSources;
       if (kbFiles.length > 0) {
         citations = kbFiles.slice(0, 3).map((f: any) => ({

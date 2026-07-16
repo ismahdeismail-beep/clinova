@@ -13,6 +13,9 @@
   PSORIASIS_DIAGRAM, PUD_DIAGRAM, RHEUM_ARTHRITIS_DIAGRAM, SCHIZOPHRENIA_DIAGRAM, 
   SEPSIS_DIAGRAM, SNAKE_BITE_DIAGRAM, STATUS_EPILEPTICUS_DIAGRAM, STROKE_DIAGRAM, 
   T1DM_DIAGRAM, TB_DIAGRAM, THYROID_DIAGRAM, TYPHOID_DIAGRAM, UTI_DIAGRAM,
+  LUNG_CA_DIAGRAM, IDA_DIAGRAM, GLAUCOMA_DIAGRAM, CONJUNCTIVITIS_DIAGRAM,
+  ALLERGIC_RHINITIS_DIAGRAM, PARACETAMOL_OD_DIAGRAM, OP_POISONING_DIAGRAM,
+  OPIOID_OD_DIAGRAM, POLYPHARMACY_DIAGRAM,
 } from './diseaseDiagrams'
 
 export interface DiseaseNoteMCQ {
@@ -1095,6 +1098,7 @@ export const DISEASE_NOTES: DiseaseNote[] = [
     name: 'Lung Cancer',
     unitId: 'cp-onc',
     specialty: 'Haematology & Oncology',
+    diagram: LUNG_CA_DIAGRAM,
     overview: 'Lung cancer is the leading cause of cancer death worldwide. Non-small cell lung cancer (NSCLC) accounts for 85% (subtypes: adenocarcinoma, squamous cell, large cell) and small cell lung cancer (SCLC) for 15%. Risk factor: smoking (80-90% of cases). NSCLC presentation: persistent cough, haemoptysis, chest pain, dyspnoea, weight loss, hoarseness (recurrent laryngeal nerve). Diagnosis: chest X-ray, CT chest with contrast, PET-CT for staging, and tissue biopsy (CT-guided or bronchoscopic). Staging (TNM) determines operability. Targeted therapy based on molecular profiling: EGFR mutations (osimertinib 80mg PO daily), ALK rearrangements (alectinib 600mg PO BID), ROS1 fusion (crizotinib). Immunotherapy: pembrolizumab 200mg IV q3w for PD-L1 â‰¥50% (monotherapy) or combined with platinum-based chemotherapy for PD-L1 1-49%. Platinum-doublet chemotherapy: cisplatin 75mg/mÂ² + pemetrexed 500mg/mÂ² (non-squamous) or cisplatin + gemcitabine (squamous) q3w Ã— 4 cycles. SCLC: etoposide + cisplatin + concurrent radiotherapy + prophylactic cranial irradiation.',
     keyDrugs: [
       { drug: 'Cisplatin 75mg/mÂ² IV q3w', class: 'Platinum agent', sideEffects: ['Nephrotoxicity (pre-hydrate with saline, monitor CrCl)', 'Ototoxicity (irreversible high-frequency hearing loss)', 'Severe emetogenic (give 5-HT3 antagonist + NK1 antagonist + dexamethasone)', 'Peripheral neuropathy (cumulative, sensory)', 'Myelosuppression (neutropenia)', 'Electrolyte wasting (MgÂ²âº, Kâº)'] },
@@ -1117,6 +1121,7 @@ export const DISEASE_NOTES: DiseaseNote[] = [
     name: 'Iron Deficiency Anaemia',
     unitId: 'cp-onc',
     specialty: 'Haematology & Oncology',
+    diagram: IDA_DIAGRAM,
     overview: 'Iron deficiency anaemia (IDA) is the most common anaemia worldwide, caused by insufficient iron for haemoglobin synthesis. Iron is essential for the porphyrin ring of haem; deficiency leads to microcytic, hypochromic red blood cells. Causes include chronic blood loss (menorrhagia, GI bleeding from peptic ulcer, colorectal cancer, NSAIDs), inadequate dietary intake (vegans, malnutrition), and malabsorption (coeliac disease, H. pylori, post-gastrectomy, PPI use). Clinical features: pallor, fatigue, dyspnoea on exertion, pica (pagophagia), koilonychia (spoon nails), angular cheilitis, glossitis, restless legs syndrome. Laboratory findings: low Hb, low MCV (<80 fL), low MCH, low ferritin (<30 Î¼g/L), low transferrin saturation (<20%), high RDW, target cells on blood film. Oral ferrous sulphate 200mg (containing ~65mg elemental iron) TID is first-line. Hb rises ~1g/dL per 2-3 weeks. Continue iron for 3-6 months after Hb normalisation to replenish stores. IV iron (iron sucrose, ferric carboxymaltose) if oral intolerance, malabsorption, ongoing losses exceeding absorption, or severe anaemia requiring rapid correction. Always investigate the underlying cause â€” especially GI malignancy in men and postmenopausal women.',
     keyDrugs: [
       { drug: 'Ferrous sulphate 200mg PO TID (65mg elemental iron Ã— 3)', class: 'Oral iron supplement', sideEffects: ['Constipation (most common, dose-limiting)', 'Nausea, epigastric pain', 'Dark greenish-black stools (expected, not harmful)', 'Metallic taste', 'Toxic in overdose (children: lethal dose ~20mg elemental Fe/kg)', 'Reduces absorption of levothyroxine, tetracyclines, quinolones â€” separate by 2h'] },
@@ -1442,6 +1447,7 @@ export const DISEASE_NOTES: DiseaseNote[] = [
     name: 'Glaucoma (Open Angle)',
     unitId: 'cp-ophth',
     specialty: 'Ophthalmology Pharmacotherapy',
+    diagram: GLAUCOMA_DIAGRAM,
     overview: 'Open-angle glaucoma (OAG) is a progressive optic neuropathy characterised by gradual loss of retinal ganglion cells and their axons, leading to characteristic visual field defects and optic disc cupping. The major modifiable risk factor is elevated intraocular pressure (IOP), although normal-tension glaucoma exists. Primary open-angle glaucoma (POAG) is insidious and often asymptomatic until advanced visual field loss. First-line pharmacotherapy: topical prostaglandin analogues (latanoprost 0.005% one drop OD in the evening, reducing IOP by 25â€“30%). Second-line: topical beta-blockers (timolol 0.5% BD â€” avoid in asthma/COPD), alpha-agonists (brimonidine 0.1â€“0.2% BD), or carbonic anhydrase inhibitors (dorzolamide 2% TDS). Target IOP is individualised based on baseline IOP and severity (typically <21 mmHg; <15 mmHg for severe disease or high risk). Laser trabeculoplasty (SLT) and filtration surgery (trabeculectomy, tube shunts) are reserved for medically uncontrolled disease.',
     keyDrugs: [
       { drug: 'Latanoprost 0.005% one drop OD (evening)', class: 'Prostaglandin F2Î± analogue', sideEffects: ['Conjunctival hyperaemia', 'Eyelash growth (darkening, thickening)', 'Periocular skin pigmentation', 'Iris colour change (permanent brown)', 'Cystoid macular oedema', 'Herpes simplex keratitis reactivation'] },
@@ -1462,6 +1468,7 @@ export const DISEASE_NOTES: DiseaseNote[] = [
     name: 'Conjunctivitis',
     unitId: 'cp-ophth',
     specialty: 'Ophthalmology Pharmacotherapy',
+    diagram: CONJUNCTIVITIS_DIAGRAM,
     overview: 'Conjunctivitis is inflammation of the conjunctival membrane and is one of the most common ocular presentations. Viral conjunctivitis (adenovirus) is the most common form, is highly contagious, presents with watery discharge, preauricular lymphadenopathy, and follicular conjunctival reaction, and is self-limited (7â€“14 days). Bacterial conjunctivitis presents with purulent/mucopurulent discharge, matting of lashes, and conjunctival erythema â€” treated with topical antibiotics: chloramphenicol 0.5% drops q2h while awake (first-line) or fusidic acid 1% TDS. Allergic conjunctivitis presents with bilateral itching, clear/watery discharge, and papillary reaction â€” treated with topical antihistamine/mast cell stabiliser (ketotifen 0.03% BD). Key diagnostic distinction: viral has preauricular node; bacterial has purulent discharge; allergic has itching. Red flags requiring urgent referral: decreased visual acuity, photophobia, severe pain, corneal involvement, or neonatal conjunctivitis.',
     keyDrugs: [
       { drug: 'Chloramphenicol 0.5% eye drops q2h (awake)', class: 'Topical antibiotic', sideEffects: ['Stinging on application', 'Allergic contact dermatitis', 'Aplastic anaemia (very rare, systemic absorption)', 'Bone marrow suppression (prolonged use)', 'Corneal toxicity (long-term)'] },
@@ -1507,6 +1514,7 @@ export const DISEASE_NOTES: DiseaseNote[] = [
     name: 'Allergic Rhinitis',
     unitId: 'cp-ent',
     specialty: 'ENT Pharmacotherapy',
+    diagram: ALLERGIC_RHINITIS_DIAGRAM,
     overview: 'Allergic rhinitis is an IgE-mediated inflammatory response of the nasal mucosa to inhaled allergens, characterised by sneezing, rhinorrhoea (anterior clear discharge), nasal congestion, and nasal itching. Classification: intermittent (<4 days/week or <4 weeks) vs persistent (>4 days/week and >4 weeks); mild vs moderate-severe (impact on sleep, daily activities, work/school). Seasonal (pollen â€” tree, grass, weed) vs perennial (dust mites, pet dander, mould). Treatment follows a stepwise approach: mild intermittent â€” oral second-generation antihistamine (cetirizine 10 mg OD, loratadine 10 mg OD, fexofenadine 120 mg OD); moderate-severe or persistent â€” intranasal corticosteroid (fluticasone propionate 50 mcg/spray 1â€“2 sprays BD, or mometasone 200 mcg OD); severe refractory â€” add montelukast 10 mg OD or consider immunotherapy. Intranasal corticosteroids are the most effective single therapy, superior to antihistamines for congestion.',
     keyDrugs: [
       { drug: 'Fluticasone propionate 50 mcg/spray 1â€“2 sprays BD', class: 'Intranasal corticosteroid', sideEffects: ['Nasal irritation/dryness', 'Epistaxis (5â€“10%)', 'Headache', 'Septal perforation (rare)', 'Systemic absorption (minimal at recommended dose)', 'Oral candidiasis (if spray directed posteriorly)'] },
@@ -1531,6 +1539,7 @@ export const DISEASE_NOTES: DiseaseNote[] = [
     name: 'Paracetamol Overdose',
     unitId: 'cp-tox',
     specialty: 'Toxicology & Poison Management',
+    diagram: PARACETAMOL_OD_DIAGRAM,
     overview: 'Paracetamol (acetaminophen) overdose is the leading cause of acute liver failure in the UK, USA, and many other countries. Toxic dose: >150 mg/kg or >7.5 g in adults. Normally, paracetamol is metabolised by glucuronidation and sulphation, with a small fraction metabolised by CYP2E1 to the toxic metabolite NAPQI (N-acetyl-p-benzoquinone imine), which is detoxified by glutathione. In overdose, glucuronidation/sulphation pathways saturate, more NAPQI is produced, glutathione is depleted, and NAPQI causes hepatocellular necrosis (centrilobular). Diagnosis requires serum paracetamol level at â‰¥4 hours post-ingestion, plotted on the Rumack-Matthew nomogram. N-Acetylcysteine (NAC) is the antidote â€” most effective within 8 hours but should be started even beyond 24 hours. IV NAC protocol: 150 mg/kg in 200 mL 5% dextrose over 1 hour, then 50 mg/kg over 4 hours, then 100 mg/kg over 16 hours (total 300 mg/kg over 21 hours).',
     keyDrugs: [
       { drug: 'N-Acetylcysteine (NAC) IV 150 mg/kg over 1h then 50 mg/kg over 4h then 100 mg/kg over 16h', class: 'Antidote (glutathione precursor)', sideEffects: ['Nausea/vomiting (10â€“15%)', 'Anaphylactoid reaction (flushing, bronchospasm, hypotension â€” 5â€“10%)', 'Rash/urticaria', 'Hypotension (rapid infusion)', 'Non-cardiogenic pulmonary oedema (rare)', 'Headache'] },
@@ -1549,6 +1558,7 @@ export const DISEASE_NOTES: DiseaseNote[] = [
     name: 'Organophosphate Poisoning',
     unitId: 'cp-tox',
     specialty: 'Toxicology & Poison Management',
+    diagram: OP_POISONING_DIAGRAM,
     overview: 'Organophosphate (OP) and carbamate insecticides irreversibly inhibit acetylcholinesterase (AChE) at synaptic junctions, causing excessive accumulation of acetylcholine at muscarinic and nicotinic receptors. Muscarinic effects (SLUDGE/DUMBELS mnemonic): salivation, lacrimation, urination, defecation, GI upset, emesis, miosis, bronchospasm, bradycardia. Nicotinic effects: fasciculations, muscle weakness, paralysis (including respiratory muscles), tachycardia. CNS effects: seizures, coma, respiratory depression. Diagnosis: clinical features + red blood cell (RBC) AChE activity (more reliable than plasma cholinesterase). Treatment: atropine (muscarinic antagonist) titrated to drying of secretions (NOT to pupil size or heart rate), and pralidoxime (AChE reactivator â€” must be given early before "aging" of the enzyme-OP complex, typically within 24â€“48 hours). Decontamination: remove clothing, wash skin with soap and water, prevent secondary contamination of healthcare workers.',
     keyDrugs: [
       { drug: 'Atropine IV 1â€“2 mg bolus q5 min titrated to drying secretions', class: 'Muscarinic antagonist (anticholinergic)', sideEffects: ['Tachycardia', 'Dry mouth', 'Blurred vision (mydriasis)', 'Urinary retention', 'Hyperthermia (heat stroke risk)', 'Delirium/psychosis', 'Ileus'] },
@@ -1568,6 +1578,7 @@ export const DISEASE_NOTES: DiseaseNote[] = [
     name: 'Opioid Overdose',
     unitId: 'cp-tox',
     specialty: 'Toxicology & Poison Management',
+    diagram: OPIOID_OD_DIAGRAM,
     overview: 'Opioid overdose presents with the classic triad: respiratory depression (RR <12/min), CNS depression (reduced GCS), and miosis (pinpoint pupils). Common opioids involved: heroin (diamorphine), methadone, fentanyl, oxycodone, morphine, codeine, and tramadol. Untreated respiratory arrest leads to hypoxic brain injury and death. Naloxone is the specific opioid antagonist â€” competes at mu, kappa, and delta receptors, reversing respiratory depression within 1â€“3 minutes (IV/IM). Initial dose: naloxone 0.4â€“2 mg IV/IM, repeated every 2â€“3 minutes until respiratory rate >12 and GCS improves. Naloxone half-life is 30â€“90 minutes (shorter than most opioids, especially methadone and extended-release formulations), requiring repeated doses or IV infusion (2â€“3 mg in 500 mL NS or 0.4â€“0.6 mg/h titrated). Post-naloxone observation: 4â€“6 hours minimum (long-acting opioids: 24+ hours). ABC management with airway protection (recovery position, NPA/OPA, intubation if needed).',
     keyDrugs: [
       { drug: 'Naloxone IV/IM 0.4â€“2 mg q2â€“3 min (titrate to RR >12)', class: 'Opioid antagonist', sideEffects: ['Acute opioid withdrawal (agitation, vomiting, diarrhoea, piloerection, diaphoresis)', 'Pulmonary oedema (rare)', 'Tachycardia', 'Hypertension', 'Seizures (very rare)'] },
@@ -1611,6 +1622,7 @@ export const DISEASE_NOTES: DiseaseNote[] = [
     name: 'Polypharmacy in Elderly',
     unitId: 'cp-ger',
     specialty: 'Geriatric Pharmacotherapy',
+    diagram: POLYPHARMACY_DIAGRAM,
     overview: 'Polypharmacy is defined as the concurrent use of â‰¥5 medications (hyperpolypharmacy: â‰¥10), and is a major patient safety concern in older adults (>65 years). It significantly increases the risk of adverse drug reactions (ADR), drug-drug interactions, drug-disease interactions, medication non-adherence, falls, cognitive impairment, malnutrition, and hospitalisation. Key assessment tools include the Beers Criteria (American Geriatrics Society â€” list of potentially inappropriate medications in older adults, updated every 3 years), STOPP/START criteria (Screening Tool of Older Persons\' Prescriptions / Screening Tool to Alert doctors to Right Treatments â€” European, evidence-based), and the Medication Appropriateness Index (MAI). Deprescribing is the systematic process of identifying and discontinuing drugs where the harm or burden outweighs the benefit, guided by patient preferences and clinical judgement. Common targets for deprescribing: benzodiazepines, proton pump inhibitors (PPIs) without clear indication, anticholinergic burden (ACB score â‰¥3), NSAIDs, antipsychotics, and duplicate therapies. Anticholinergic burden should be assessed using the Anticholinergic Cognitive Burden (ACB) scale â€” scores â‰¥3 associated with increased mortality, cognitive decline, and falls.',
     keyDrugs: [],
     monitoring: 'Medication reconciliation at every clinical encounter (admission, transfer, discharge); renal function (eGFR/CrCl) for dose adjustment â€” use Cockcroft-Gault; Beers Criteria review annually; STOPP/START criteria assessment at each medication review; Anticholinergic Cognitive Burden (ACB) score calculation; falls risk assessment (Timed Up and Go, Berg Balance Scale); cognitive screening (MMSE/MoCA) if new confusion; medication adherence assessment; drug interaction screening (using clinical decision support); nutritional status (BMI, albumin); functional independence assessment (ADL/IADL); bone density if on steroids or high falls risk; depression screening (GDS); social isolation assessment; medication simplification (once-daily dosing where possible); review of OTC/herbal medications.',

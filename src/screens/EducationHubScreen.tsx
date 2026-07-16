@@ -4,7 +4,7 @@ import {
   BookOpen, ChevronRight, Search, Activity, Accessibility, Dna, FlaskConical, 
   Droplets, Flame, Beaker, HeartPulse, Bug, Skull, Heart, Award, FileText,
   Briefcase, HelpCircle, Layers, Headphones, FileArchive, Calendar, BrainCircuit,
-  Bookmark, Download, History, ChevronLeft, Bot, Play, FileUp, List, Sparkles, CheckCircle2, Clock, Database, Mic,
+  Bookmark, Download, History, ChevronLeft, Bot, Play, List, Sparkles, CheckCircle2, Clock, Database, Mic,
   FolderPlus, Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star, ArrowUpRight,
   Compass, FileDown, MoreHorizontal, ArrowLeft, ArrowRight
 } from 'lucide-react';
@@ -13,7 +13,6 @@ import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
 import { EDUCATION_MODULES, type EducationModule, type EducationModuleUnit, getModuleUnits } from '../data/educationHubData';
 import { INITIAL_CASES } from '../data/clinicalCasesData';
-import { useFileStore } from '../store/fileStore';
 import { useAuth } from '../contexts/AuthContext';
 import { EducationService, CustomUnit, SubFolder, SavedFlashcard, SavedQuiz } 
 from '../services/education.service';
@@ -24,34 +23,6 @@ import { getResourcesForUnit } from '../data/unitToLibraryMapping';
 import { getStaticContent } from '../data/unitStaticContent';
 import { LIBRARY, type LibraryResource } from '../data/onlineLibraryData';
 import { DISEASE_NOTES, type DiseaseNote } from '../data/diseaseNotes';
-const getRelevantFiles = (files: any[], currentFolderId: string, currentFolderName: string, unitTitle: string) => {
-  return files.filter(f => {
-    if (f.category === 'study_source' && f.studyId === currentFolderId) return true;
-    if (f.category === 'knowledge' || f.category === 'knowledge_base') {
-      const keywords = `${currentFolderName} ${unitTitle}`.toLowerCase().replace(/disorders|cases|pharmacology|system|concepts|management/g, '').split(/\s+/).filter(w => w.length > 3);
-      const fText = `${f.title || ''} ${f.originalName || ''} ${f.discipline || ''} ${f.type || ''}`.toLowerCase();
-      return keywords.length > 0 && keywords.some(w => fText.includes(w));
-    }
-    return false;
-  });
-};
-
-
-const buildRichKnowledgeContext = (unitFiles: any[]) => {
-  if (!unitFiles || unitFiles.length === 0) return '';
-  let ctx = '\n\n=== CLINICAL KNOWLEDGE BASE EXPERT RESOURCES ===\n';
-  unitFiles.forEach(f => {
-    ctx += `- ${f.title || f.originalName} (${f.type || 'Document'})`;
-    if (f.author) ctx += ` by ${f.author}`;
-    ctx += '\n';
-    if (f.aiProcessed && f.textContent) {
-       ctx += `  Content/Excerpts:\n  ${f.textContent}\n`;
-    } else if (f.aiProcessed && f.summary) {
-       ctx += `  Summary: ${f.summary}\n`;
-    }
-  });
-  return ctx;
-};
 
 function DownloadButton({ content, filename }: { content: string; filename: string }) {
   const [downloading, setDownloading] = useState(false);
@@ -326,19 +297,23 @@ export default function EducationHubScreen() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
         
         {/* Header Section */}
-        {selectedUnit ? (
+        {selectedModule ? (
           <div className="flex items-center gap-3">
             <button onClick={handleBackToModules} className="flex items-center gap-1.5 px-3 py-1.5 bg-[var(--surface)] border border-[var(--border)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] rounded-xl text-xs font-black shadow-xs transition-all cursor-pointer">
               <ChevronLeft size={14} />
               Back
             </button>
-            {selectedModule && (
-              <span className="text-sm text-[var(--text-muted)]">
-                <button onClick={handleBackToUnits} className="hover:text-[var(--primary)] transition-colors">{selectedModule.title}</button>
-                <ChevronRight size={14} className="inline mx-1" />
-                <span className="text-[var(--text)] font-semibold">{selectedUnit.title}</span>
-              </span>
-            )}
+            <span className="text-sm text-[var(--text-muted)]">
+              {selectedUnit ? (
+                <>
+                  <button onClick={handleBackToUnits} className="hover:text-[var(--primary)] transition-colors">{selectedModule.title}</button>
+                  <ChevronRight size={14} className="inline mx-1" />
+                  <span className="text-[var(--text)] font-semibold">{selectedUnit.title}</span>
+                </>
+              ) : (
+                <span className="text-[var(--text)] font-semibold">{selectedModule.title}</span>
+              )}
+            </span>
           </div>
         ) : (
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
@@ -350,7 +325,7 @@ export default function EducationHubScreen() {
               Clinova <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-purple-500">Learning Platform</span>
             </h1>
             <p className="text-sm text-[var(--text-muted)] mt-2 max-w-2xl leading-relaxed">
-              Your primary academic workspace. Set up custom units, upload lecture notes, and let Clinova AI compile active study guides, revision cards, and clinical OSCE quiz questions.
+              Your primary academic workspace. Set up custom units and let Clinova AI compile active study guides, revision cards, and clinical OSCE quiz questions.
             </p>
           </div>
 
@@ -521,7 +496,7 @@ export default function EducationHubScreen() {
                   </div>
                   <h3 className="text-lg font-bold text-[var(--text)]">No Sub-Folders or Units Yet</h3>
                   <p className="text-sm text-[var(--text-muted)] mt-2 max-w-sm mx-auto">
-                    Create your first custom sub-folder (e.g. Anticancers, Vitamins, Autonomics) using the button above to begin uploading study material.
+                    Create your first custom sub-folder (e.g. Anticancers, Vitamins, Autonomics) using the button above to begin organizing your study material.
                   </p>
                 </div>
               )}
@@ -712,7 +687,6 @@ function ModuleCard({
 // ==========================================
 function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit, module: EducationModule, onBack: () => void }) {
   const [activeTab, setActiveTab] = useState(() => module.id === 'clinical_pharm' ? 'disease-notes' : 'overview');
-  const { files, fetchFiles } = useFileStore();
   const { userData } = useAuth();
 
   // Folder states
@@ -749,13 +723,11 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
     scratchpad: string;
     flashcards: SavedFlashcard[];
     quizzes: SavedQuiz[];
-    files: any[];
   }>({
     summary: null,
     scratchpad: '',
     flashcards: [],
-    quizzes: [],
-    files: []
+    quizzes: []
   });
 
   const [includeCover, setIncludeCover] = useState(true);
@@ -763,7 +735,6 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
   const [includeScratchpad, setIncludeScratchpad] = useState(true);
   const [includeFlashcards, setIncludeFlashcards] = useState(true);
   const [includeQuizzes, setIncludeQuizzes] = useState(true);
-  const [includeFiles, setIncludeFiles] = useState(true);
 
   const [pdfGenerating, setPdfGenerating] = useState(false);
 
@@ -783,17 +754,11 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
       // 4. Fetch quizzes
       const savedQuizzes = await EducationService.getQuizzes(currentFolderId);
 
-      // 5. Filter files for this folder
-      const folderFiles = files.filter(
-        f => f.category === 'study_source' && f.studyId === currentFolderId
-      );
-
       setExportData({
         summary: savedSummary,
         scratchpad: savedNotes,
         flashcards: savedCards,
-        quizzes: savedQuizzes,
-        files: folderFiles
+        quizzes: savedQuizzes
       });
     } catch (err) {
       console.error('Error compiling export data:', err);
@@ -947,11 +912,6 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
   useEffect(() => {
     fetchFolders();
   }, [userData, unit.id]);
-
-  // Reload files when workspace mounts
-  useEffect(() => {
-    fetchFiles('study_source');
-  }, [fetchFiles, unit.id]);
 
   const activeParentId = currentFolderId === unit.id ? 'root' : currentFolderId;
   const currentLevelFolders = subFolders.filter(f => f.parentId === activeParentId);
@@ -1358,18 +1318,6 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                     </span>
                   </label>
 
-                  <label className="flex items-center gap-3 text-xs font-semibold text-[var(--text)] cursor-pointer select-none">
-                    <input 
-                      type="checkbox" 
-                      checked={includeFiles} 
-                      onChange={(e) => setIncludeFiles(e.target.checked)}
-                      className="w-4 h-4 rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)] bg-[var(--bg)]"
-                    />
-                    <span className="flex items-center gap-1.5 justify-between w-full">
-                      <span>Uploaded Files Index</span>
-                      {exportData.files.length > 0 && <span className="text-[10px] bg-blue-500/10 text-blue-500 px-1.5 py-0.5 rounded font-black">{exportData.files.length}</span>}
-                    </span>
-                  </label>
                 </div>
               </div>
 
@@ -1602,35 +1550,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                       </div>
                     )}
 
-                    {/* SOURCE FILES INDEX */}
-                    {includeFiles && (
-                      <div className="mb-8">
-                        <h2 className="text-base font-black text-slate-950 border-b-2 border-slate-900 pb-1.5 uppercase tracking-wide mb-4">
-                          5. Academic References & Source Files
-                        </h2>
-                        {exportData.files.length > 0 ? (
-                          <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 space-y-2">
-                            {exportData.files.map((file, idx) => (
-                              <div key={file.id || idx} className="flex items-center justify-between text-xs font-semibold text-slate-700">
-                                <span className="flex items-center gap-2">
-                                  <span className="w-5 h-5 bg-slate-200 rounded text-[10px] flex items-center justify-center font-black">
-                                    #{idx + 1}
-                                  </span>
-                                  {file.name}
-                                </span>
-                                <span className="text-[10px] text-slate-400 uppercase font-black">
-                                  Indexed Source
-                                </span>
-                              </div>
-                            ))}
-                          </div>
-                        ) : (
-                          <p className="text-slate-400 italic">
-                            No reference lecture notes or PDF slide decks have been uploaded in this directory.
-                          </p>
-                        )}
-                      </div>
-                    )}
+
                   </div>
                 )}
               </div>
@@ -1647,13 +1567,10 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
 // WORKSPACE OVERVIEW & AI STUDY GUIDE
 // ==========================================
 function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, userData }: { unit: EducationModuleUnit, module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
-  const { files } = useFileStore();
   const [summary, setSummary] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [customNotes, setCustomNotes] = useState('');
   const staticContent = getStaticContent(unit.id);
-
-  const unitFiles = getRelevantFiles(files, currentFolderId, currentFolderName, unit.title);
 
   // Load existing summary and custom notes text
   useEffect(() => {
@@ -1679,8 +1596,6 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
       if (customNotes.trim()) {
         context += `\n--- STUDENT HAND-WRITTEN REVISION NOTES ---\n${customNotes}\n`;
       }
-      context += buildRichKnowledgeContext(unitFiles);
-
       const res = await fetch('/api/gemini/generate-unit-summary', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -1729,7 +1644,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
   return (
     <div className="space-y-6">
       {/* Metrics Row */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-5 flex items-center gap-4 shadow-xs">
           <div className="w-12 h-12 rounded-xl bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center">
             <Clock size={22} />
@@ -1739,15 +1654,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
             <p className="text-xl font-black text-[var(--text)]">{unit.estimatedHours} Hours</p>
           </div>
         </div>
-        <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-5 flex items-center gap-4 shadow-xs">
-          <div className="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center">
-            <CheckCircle2 size={22} />
-          </div>
-          <div>
-            <p className="text-[10px] text-[var(--text-muted)] uppercase font-extrabold tracking-wider">Indexed Files</p>
-            <p className="text-xl font-black text-[var(--text)]">{unitFiles.length} Uploads</p>
-          </div>
-        </div>
+
         <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-5 flex items-center gap-4 shadow-xs">
           <div className="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-600 flex items-center justify-center">
             <Sparkles size={22} />
@@ -1767,7 +1674,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
               <h3 className="text-lg font-bold text-[var(--text)] flex items-center gap-2">
                 <FileSignature className="text-[var(--primary)]" size={20} /> Study Guide & Summary
               </h3>
-              {(unitFiles.length > 0 || customNotes.trim()) && (
+              {(customNotes.trim()) && (
                 <div className="flex items-center gap-2">
                   <button
                     onClick={handleGenerateSummary}
@@ -1839,7 +1746,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
                   ) : (
                     <>
                       <Sparkles size={13} />
-                      Regenerate with AI (uses your files & notes)
+                      Regenerate with AI
                     </>
                   )}
                 </button>
@@ -1851,7 +1758,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
                 </div>
                 <h4 className="text-base font-bold text-[var(--text)]">Let the Magic Happen!</h4>
                 <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-                  Upload your lectures, slides, notes, or guidelines in the "My Notes" tab or write down your class summaries in the scratchpad. Clinova AI will build a personalized clinical guide summarizing:
+                  Write down your class summaries in the scratchpad. Clinova AI will build a personalized clinical guide summarizing:
                 </p>
                 <div className="text-left text-xs text-[var(--text-muted)] space-y-2 bg-[var(--surface-dim)]/50 p-4 rounded-xl border border-[var(--border)]/40">
                   <div className="flex gap-2">&bull; <strong>Core Pharmacology & receptor pathways</strong></div>
@@ -1859,9 +1766,9 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
                   <div className="flex gap-2">&bull; <strong>High-alert drug safety & interactions</strong></div>
                   <div className="flex gap-2">&bull; <strong>Board-style clinical OSCE Pearls</strong></div>
                 </div>
-                {(!unitFiles.length && !customNotes.trim()) ? (
+                {!customNotes.trim() ? (
                   <p className="text-[11px] font-semibold text-amber-600 bg-amber-50 dark:bg-amber-950/20 p-2.5 rounded-lg border border-amber-200/40">
-                    To get started, write some notes in the scratchpad or upload a revision source file.
+                    To get started, write some notes in the scratchpad.
                   </p>
                 ) : (
                   <button
@@ -1869,7 +1776,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
                     disabled={loading}
                     className="mt-4 px-6 py-3 bg-gradient-to-r from-[var(--primary)] to-purple-600 text-white rounded-xl text-sm font-bold shadow-md hover:opacity-95 transition-all flex items-center gap-2 mx-auto cursor-pointer"
                   >
-                    {loading ? 'Processing Uploads...' : 'Compile Study Guide Now'}
+                    {loading ? 'Generating...' : 'Compile Study Guide Now'}
                   </button>
                 )}
               </div>
@@ -1905,7 +1812,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
               <Plus className="text-purple-500" size={18} /> Module Context
             </h3>
             <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-              This unit runs within <strong>{module.title}</strong>. Dynamic flashcards, MCQ simulators, and the tutor chat are automatically optimized based on the files and outlines you submit.
+              This unit runs within <strong>{module.title}</strong>. Dynamic flashcards, MCQ simulators, and the tutor chat are automatically optimized based on your notes and outlines.
             </p>
           </div>
         </div>
@@ -1918,7 +1825,6 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
 // WORKSPACE TUTOR (INTELLIGENT RECALL CHAT)
 // ==========================================
 function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, userData }: { unit: EducationModuleUnit, module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
-  const { files } = useFileStore();
   const [tutorMessage, setTutorMessage] = useState('');
   const [tutorChat, setTutorChat] = useState<{ role: 'user' | 'assistant', content: string }[]>([]);
   const [isTutorThinking, setIsTutorThinking] = useState(false);
@@ -1927,7 +1833,7 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
   // Initialize tutor message
   useEffect(() => {
     setTutorChat([
-      { role: 'assistant', content: `Hello! I am your Clinical Coach for **${currentFolderName}**. \n\nI have automatically indexed any revision notes you wrote and documents you uploaded for this folder. Ask me any pharmacological, therapeutic, or OSCE board exam questions regarding this topic!` }
+      { role: 'assistant', content: `Hello! I am your Clinical Coach for **${currentFolderName}**. \n\nI have analyzed your revision notes for this folder. Ask me any pharmacological, therapeutic, or OSCE board exam questions regarding this topic!` }
     ]);
   }, [currentFolderName]);
 
@@ -1950,12 +1856,10 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
       // Gather student notes/summary context to send alongside RAG
       const savedSummary = await EducationService.getSummary(currentFolderId) || '';
       const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || '';
-      const unitFiles = getRelevantFiles(files, currentFolderId, currentFolderName, unit.title);
       
       let context = '';
       if (savedCustomNotes) context += `STUDENT SCRATCHPAD NOTES:\n${savedCustomNotes}\n`;
       if (savedSummary) context += `STUDENT COMPILED STUDY GUIDE:\n${savedSummary}\n`;
-      context += buildRichKnowledgeContext(unitFiles);
 
       const res = await fetch('/api/gemini/hub-tutor', {
         method: 'POST',
@@ -1974,7 +1878,7 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
 
       setTutorChat([...newChat, { 
         role: 'assistant', 
-        content: data.reply || `I have successfully analyzed your query regarding **${currentFolderName}** based on standard drug indices. Please try asking again or check your notes upload.` 
+        content: data.reply || `I have successfully analyzed your query regarding **${currentFolderName}** based on standard drug indices. Please try asking again.` 
       }]);
     } catch (error) {
       console.error('Error asking tutor:', error);
@@ -2306,13 +2210,10 @@ function MCQBlock({ mcq, index }: { mcq: DiseaseNote['mcqs'][number]; index: num
 // WORKSPACE FLASHCARDS (ACTIVE RECALL)
 // ==========================================
 function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName, userData }: { unit: EducationModuleUnit, module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
-  const { files } = useFileStore();
   const [cards, setCards] = useState<SavedFlashcard[]>([]);
   const [loading, setLoading] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
-
-  const unitFiles = getRelevantFiles(files, currentFolderId, currentFolderName, unit.title);
 
   // Fetch saved flashcards on mount/folder change
   useEffect(() => {
@@ -2333,7 +2234,7 @@ function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName,
       // Gather source text
       const savedSummary = await EducationService.getSummary(currentFolderId) || '';
       const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || '';
-      const notesCombined = `${savedCustomNotes}\n\n${savedSummary}\n` + buildRichKnowledgeContext(unitFiles);
+      const notesCombined = `${savedCustomNotes}\n\n${savedSummary}\n`;
 
       const res = await fetch('/api/gemini/generate-unit-flashcards', {
         method: 'POST',
@@ -2582,7 +2483,6 @@ function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName,
 // WORKSPACE QUIZZES (INTERACTIVE MCQS ASSESSMENT)
 // ==========================================
 function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName, userData }: { unit: EducationModuleUnit, module: EducationModule, currentFolderId: string, currentFolderName: string, userData: any }) {
-  const { files } = useFileStore();
   const [quizzes, setQuizzes] = useState<SavedQuiz[]>([]);
   const [loading, setLoading] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -2613,10 +2513,9 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName, us
     setIsAnswered(false);
     setScore(0);
     try {
-      const unitFiles = getRelevantFiles(files, currentFolderId, currentFolderName, unit.title);
       const savedSummary = await EducationService.getSummary(currentFolderId) || '';
       const savedCustomNotes = localStorage.getItem(`custom_notes_${currentFolderId}`) || '';
-      const notesCombined = `${savedCustomNotes}\n\n${savedSummary}\n` + buildRichKnowledgeContext(unitFiles);
+      const notesCombined = `${savedCustomNotes}\n\n${savedSummary}\n`;
 
       const res = await fetch('/api/gemini/generate-unit-quiz', {
         method: 'POST',
@@ -2704,7 +2603,7 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName, us
         </div>
         <h3 className="text-base font-bold text-[var(--text)]">Compiling Board Questions...</h3>
         <p className="text-xs text-[var(--text-muted)] mt-1 max-w-sm">
-          Generating clinical case scenarios, patient vignettes, dosage calculations, and realistic distractor choices based on your uploads.
+          Generating clinical case scenarios, patient vignettes, dosage calculations, and realistic distractor choices based on your notes.
         </p>
       </div>
     );
@@ -2879,7 +2778,7 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName, us
           </div>
           <h3 className="text-xl font-bold text-[var(--text)] mb-2">Clinical MCQ Board Simulator</h3>
           <p className="text-sm text-[var(--text-muted)] max-w-sm mb-4 leading-relaxed">
-            Practice board-style vignette questions, diagnostic formulas, and medication reconciliation challenges compiled from your uploaded notes.
+            Practice board-style vignette questions, diagnostic formulas, and medication reconciliation challenges compiled from your notes.
           </p>
           <button 
             onClick={handleGenerateQuiz}

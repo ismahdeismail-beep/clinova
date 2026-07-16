@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useFileStore } from '../store/fileStore';
 import { useNavigate } from 'react-router-dom';
 import {
   Search,
@@ -116,19 +115,9 @@ const ALL_CLINICAL_SYSTEMS = [
 
 export default function DashboardScreen() {
     const [searchQuery, setSearchQuery] = useState("");
-  const files = useFileStore(state => state.files);
   const navigate = useNavigate();
 
-  const searchResults = files.filter(f => 
-    searchQuery.trim().length > 1 &&
-    ((f.category === 'knowledge' || (f.category as string) === 'knowledge_base') &&
-    (
-      (f.title && f.title.toLowerCase().includes(searchQuery.toLowerCase())) ||
-      (f.originalName && f.originalName.toLowerCase().includes(searchQuery.toLowerCase())) ||
-      (f.summary && f.summary.toLowerCase().includes(searchQuery.toLowerCase())) ||
-      (f.classification?.keywords && f.classification.keywords.some((k: string) => k.toLowerCase().includes(searchQuery.toLowerCase())))
-    ))
-  ).slice(0, 5);
+  const searchResults: any[] = [];
   const { userData, updatePreferences } = useAuth();
 
   const [isEditingPrefs, setIsEditingPrefs] = useState(false);
@@ -162,11 +151,11 @@ export default function DashboardScreen() {
           </div>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 md:gap-3 w-full lg:w-auto">
             <Link
-              to="/knowledge"
+              to="/library"
               className="flex items-center justify-center gap-2 px-4 py-2.5 md:px-5 md:py-3 bg-white/10 hover:bg-white/20 text-white rounded-xl font-semibold backdrop-blur-sm transition-all text-sm shrink-0 w-full sm:w-max"
             >
               <BookOpen size={18} />
-              Online Books Hub
+              Online Library
             </Link>
             <Link
               to="/assistant"
@@ -285,43 +274,24 @@ export default function DashboardScreen() {
                 </div>
               </div>
 
-              {/* Continue Learning - Recent Files */}
+              {/* Continue Learning */}
               <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden backdrop-blur-md">
                 <div className="p-5 border-b border-[var(--border)] flex items-center justify-between">
                   <h3 className="font-semibold text-[var(--text)] flex items-center gap-2">
                     <BookOpen size={18} className="text-[var(--text-muted)]" />
                     Continue Learning
                   </h3>
-                  {files.length > 0 && (
-                    <Link to="/knowledge" className="text-xs font-bold text-[var(--primary)] hover:underline">
-                      View All
-                    </Link>
-                  )}
+                  <Link to="/knowledge" className="text-xs font-bold text-[var(--primary)] hover:underline">
+                    Browse All
+                  </Link>
                 </div>
                 <div className="divide-y divide-[var(--border)]">
-                  {files.length > 0 ? (
-                    files.slice(0, 3).map((f) => (
-                      <div key={f.id} className="p-4 flex items-start gap-4 hover:bg-[var(--surface-dim)] transition-colors cursor-pointer">
-                        <div className="w-10 h-10 rounded-xl bg-[var(--primary-container)] flex items-center justify-center shrink-0">
-                          <FileText size={18} className="text-[var(--primary)]" />
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-sm font-bold text-[var(--text)] truncate">{f.title || f.originalName}</p>
-                          {f.summary && <p className="text-xs text-[var(--text-muted)] mt-0.5 truncate">{f.summary}</p>}
-                          <p className="text-[10px] text-[var(--text-muted)] mt-1.5 font-bold uppercase tracking-wider">
-                            {f.category || 'Knowledge Base'}
-                          </p>
-                        </div>
-                      </div>
-                    ))
-                  ) : (
-                    <div className="p-5 text-center text-sm text-[var(--text-muted)]">
-                      <p>No files yet. Upload lecture notes or reference materials to get started.</p>
-                      <Link to="/knowledge" className="text-[var(--primary)] font-semibold hover:underline inline-block mt-2">
-                        Go to Education Hub
-                      </Link>
-                    </div>
-                  )}
+                  <div className="p-5 text-center text-sm text-[var(--text-muted)]">
+                    <p>Explore clinical cases, drug monographs, and board exam prep materials.</p>
+                    <Link to="/knowledge" className="text-[var(--primary)] font-semibold hover:underline inline-block mt-2">
+                      Go to Education Hub
+                    </Link>
+                  </div>
                 </div>
               </div>
 

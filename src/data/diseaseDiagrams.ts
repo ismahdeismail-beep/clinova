@@ -1434,3 +1434,144 @@ ${arrow(235, 154, 235, 175)}
 ${box(60, 177, 200, 40, 'PEG 3350 (Macrogol) for faecal impaction', '#3b82f6')}
 <text x="20" y="238" font-size="9" fill="#64748b">KENYA: Underacknowledged. Low-fibre diet, inadequate hydration. Opioid-induced constipation in palliative care.</text>
 </svg>`
+
+export const LUNG_CA_DIAGRAM = `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui,sans-serif;font-size:10px;fill:#334155}</style>${SVG_ARROW}
+${box(160, 5, 200, 30, 'Lung Cancer (smoking, radon, asbestos)', '#ef4444')}
+${arrow(260, 35, 260, 55)}
+${box(90, 57, 150, 36, 'NSCLC (~85%)', '#3b82f6')}
+${box(290, 57, 150, 36, 'SCLC (~15%)', '#8b5cf6')}
+${arrow(120, 93, 90, 115)}
+${arrow(200, 93, 230, 115)}
+${arrow(340, 93, 340, 115)}
+${box(10, 118, 150, 40, 'Surgery + chemo (early stage)', '#10b981')}
+${box(180, 118, 140, 40, 'EGFR/ALK TKIs + PD-L1 immunotherapy', '#3b82f6')}
+${box(340, 118, 160, 40, 'Platinum-etoposide + prophylactic cranial RT', '#8b5cf6')}
+${arrow(260, 158, 260, 178)}
+${box(120, 180, 280, 36, 'Staging: CT/PET, biopsy, molecular profiling (EGFR, ALK, ROS1, PD-L1)', '#f59e0b')}
+<text x="20" y="238" font-size="9" fill="#64748b">KENYA: Often late presentation. Limited access to targeted therapy/PET. Tobacco control is key prevention.</text>
+</svg>`
+
+export const IDA_DIAGRAM = `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui,sans-serif;font-size:10px;fill:#334155}</style>${SVG_ARROW}
+${box(150, 5, 220, 30, 'Iron Deficiency (blood loss, poor intake, malabsorption)', '#f59e0b')}
+${arrow(260, 35, 260, 55)}
+${box(180, 57, 160, 36, '↓ Ferritin, ↓ Serum Fe, ↑ TIBC', '#8b5cf6')}
+${arrow(260, 93, 260, 113)}
+${box(150, 115, 220, 36, 'Microcytic hypochromic anaemia (↓ MCV, ↓ Hb)', '#ef4444')}
+${arrow(140, 133, 90, 165)}
+${arrow(380, 133, 430, 165)}
+${box(20, 167, 160, 40, 'Oral ferrous sulfate 200mg + vitamin C', '#10b981')}
+${box(340, 167, 160, 40, 'IV iron if intolerant / malabsorption', '#3b82f6')}
+${box(180, 220, 160, 34, 'Treat underlying cause (GI bleed, menorrhagia)', '#ef4444')}
+<text x="20" y="270" font-size="9" fill="#64748b">KENYA: Hookworm, malaria, dietary. Screen in pregnancy. Recheck Hb in 2-4 wks, continue iron 3 months after normalisation.</text>
+</svg>`
+
+export const GLAUCOMA_DIAGRAM = `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui,sans-serif;font-size:10px;fill:#334155}</style>${SVG_ARROW}
+${box(155, 5, 210, 30, 'Open-Angle Glaucoma (↑ IOP)', '#ef4444')}
+${arrow(260, 35, 260, 55)}
+${box(150, 57, 220, 36, 'Optic nerve damage → visual field loss', '#8b5cf6')}
+${arrow(260, 93, 260, 113)}
+${box(140, 115, 240, 30, 'Goal: lower IOP by 20-30%', '#f59e0b')}
+${box(10, 155, 150, 40, 'Prostaglandin analogue (latanoprost) 1st-line', '#10b981')}
+${box(180, 155, 150, 40, 'Beta-blocker (timolol)', '#3b82f6')}
+${box(350, 155, 150, 40, 'CAI / alpha-agonist add-on', '#3b82f6')}
+${arrow(85, 195, 85, 218)}
+${arrow(425, 195, 425, 218)}
+${box(30, 220, 200, 34, 'Refractory → laser trabeculoplasty', '#8b5cf6')}
+${box(300, 220, 190, 34, 'Surgery: trabeculectomy', '#8b5cf6')}
+<text x="20" y="272" font-size="9" fill="#64748b">KENYA: Leading cause of irreversible blindness. Often asymptomatic until late. Adherence to drops critical.</text>
+</svg>`
+
+export const CONJUNCTIVITIS_DIAGRAM = `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui,sans-serif;font-size:10px;fill:#334155}</style>${SVG_ARROW}
+${box(175, 5, 170, 30, 'Conjunctivitis (red eye)', '#ef4444')}
+${arrow(150, 35, 90, 60)}
+${arrow(260, 35, 260, 60)}
+${arrow(370, 35, 430, 60)}
+${box(10, 62, 160, 40, 'Bacterial: purulent discharge', '#3b82f6')}
+${box(185, 62, 150, 40, 'Viral: watery, adenovirus', '#8b5cf6')}
+${box(350, 62, 160, 40, 'Allergic: itch, bilateral', '#10b981')}
+${arrow(90, 102, 90, 128)}
+${arrow(260, 102, 260, 128)}
+${arrow(430, 102, 430, 128)}
+${box(10, 130, 160, 44, 'Chloramphenicol drops (self-limiting)', '#3b82f6')}
+${box(185, 130, 150, 44, 'Supportive, hygiene, highly contagious', '#8b5cf6')}
+${box(350, 130, 160, 44, 'Antihistamine / mast-cell stabiliser drops', '#10b981')}
+${box(120, 195, 280, 40, 'Red flags: pain, photophobia, ↓ vision → refer (keratitis, uveitis)', '#ef4444')}
+<text x="20" y="262" font-size="9" fill="#64748b">KENYA: Ophthalmia neonatorum (gonococcal/chlamydial) — medical emergency, systemic antibiotics.</text>
+</svg>`
+
+export const ALLERGIC_RHINITIS_DIAGRAM = `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui,sans-serif;font-size:10px;fill:#334155}</style>${SVG_ARROW}
+${box(150, 5, 220, 30, 'Allergen → IgE-mediated nasal inflammation', '#8b5cf6')}
+${arrow(260, 35, 260, 55)}
+${box(150, 57, 220, 30, 'Sneezing, rhinorrhoea, congestion, itch', '#ef4444')}
+${arrow(260, 87, 260, 107)}
+${box(160, 109, 200, 30, 'Classify: intermittent vs persistent', '#f59e0b')}
+${box(10, 150, 150, 40, 'Mild: oral 2nd-gen antihistamine', '#10b981')}
+${box(185, 150, 160, 40, 'Mod-severe: intranasal corticosteroid', '#3b82f6')}
+${box(370, 150, 140, 40, 'Add: montelukast / immunotherapy', '#8b5cf6')}
+${arrow(260, 190, 260, 213)}
+${box(120, 215, 280, 34, 'Allergen avoidance + spray technique (aim laterally)', '#10b981')}
+<text x="20" y="268" font-size="9" fill="#64748b">KENYA: Dust mites, pollen. INCS most effective single therapy. Avoid sedating 1st-gen antihistamines.</text>
+</svg>`
+
+export const PARACETAMOL_OD_DIAGRAM = `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui,sans-serif;font-size:10px;fill:#334155}</style>${SVG_ARROW}
+${box(150, 5, 220, 30, 'Paracetamol OD (>150 mg/kg)', '#ef4444')}
+${arrow(260, 35, 260, 55)}
+${box(160, 57, 200, 30, 'CYP2E1 → NAPQI (toxic)', '#8b5cf6')}
+${arrow(260, 87, 260, 107)}
+${box(150, 109, 220, 30, 'Glutathione depleted → hepatic necrosis', '#ef4444')}
+${arrow(150, 130, 90, 160)}
+${arrow(370, 130, 430, 160)}
+${box(20, 162, 160, 40, 'Level at ≥4h → Rumack-Matthew nomogram', '#f59e0b')}
+${box(340, 162, 160, 40, 'NAC antidote (best <8h)', '#10b981')}
+${arrow(420, 202, 420, 222)}
+${box(210, 224, 200, 34, 'NAC 300 mg/kg total over 21h', '#10b981')}
+${box(20, 224, 170, 34, "King's College criteria → transplant", '#ef4444')}
+<text x="20" y="272" font-size="9" fill="#64748b">KENYA: Common in self-harm. NAC beneficial even >24h if hepatotoxicity. Monitor LFTs, INR, pH.</text>
+</svg>`
+
+export const OP_POISONING_DIAGRAM = `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui,sans-serif;font-size:10px;fill:#334155}</style>${SVG_ARROW}
+${box(150, 5, 220, 30, 'Organophosphate (inhibits AChE)', '#ef4444')}
+${arrow(260, 35, 260, 55)}
+${box(150, 57, 220, 30, '↑ Acetylcholine at synapses', '#8b5cf6')}
+${arrow(150, 78, 90, 108)}
+${arrow(370, 78, 430, 108)}
+${box(20, 110, 160, 44, 'Muscarinic: DUMBELS (SLUDGE)', '#f59e0b')}
+${box(340, 110, 160, 44, 'Nicotinic: fasciculations, paralysis', '#f59e0b')}
+${arrow(260, 100, 260, 165)}
+${box(30, 170, 200, 44, 'Atropine (titrate to dry secretions)', '#10b981')}
+${box(290, 170, 200, 44, 'Pralidoxime (reactivate AChE, before ageing)', '#3b82f6')}
+${box(140, 228, 240, 30, 'ABC, decontaminate, secure airway', '#ef4444')}
+<text x="20" y="272" font-size="9" fill="#64748b">KENYA: Common agricultural/suicidal exposure. Atropine is life-saving; give early and repeatedly.</text>
+</svg>`
+
+export const OPIOID_OD_DIAGRAM = `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui,sans-serif;font-size:10px;fill:#334155}</style>${SVG_ARROW}
+${box(160, 5, 200, 30, 'Opioid Overdose (μ-agonism)', '#ef4444')}
+${arrow(260, 35, 260, 55)}
+${box(120, 57, 280, 36, 'Triad: ↓ RR, pinpoint pupils, ↓ GCS', '#8b5cf6')}
+${arrow(260, 93, 260, 113)}
+${box(150, 115, 220, 34, 'Respiratory depression → hypoxia', '#ef4444')}
+${arrow(150, 132, 90, 165)}
+${arrow(370, 132, 430, 165)}
+${box(20, 167, 160, 44, 'Support airway + ventilation', '#f59e0b')}
+${box(340, 167, 160, 44, 'Naloxone 0.4-2mg IV/IM, repeat', '#10b981')}
+${arrow(420, 211, 420, 231)}
+${box(230, 233, 200, 34, 'Watch re-sedation (short t½ vs opioid)', '#f59e0b')}
+${box(20, 233, 190, 34, 'Naloxone infusion for long-acting', '#3b82f6')}
+<text x="20" y="272" font-size="9" fill="#64748b">KENYA: Rising with tramadol/heroin. Titrate naloxone to RR (not full arousal) to avoid withdrawal.</text>
+</svg>`
+
+export const POLYPHARMACY_DIAGRAM = `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui,sans-serif;font-size:10px;fill:#334155}</style>${SVG_ARROW}
+${box(150, 5, 220, 30, 'Polypharmacy (≥5 medicines)', '#f59e0b')}
+${arrow(260, 35, 260, 55)}
+${box(120, 57, 280, 36, '↑ ADRs, interactions, falls, non-adherence', '#ef4444')}
+${arrow(260, 93, 260, 113)}
+${box(150, 115, 220, 30, 'Medication review (STOPP/START, Beers)', '#3b82f6')}
+${arrow(150, 133, 90, 165)}
+${arrow(260, 145, 260, 165)}
+${arrow(370, 133, 430, 165)}
+${box(20, 167, 150, 44, 'Deprescribe inappropriate drugs', '#10b981')}
+${box(190, 167, 140, 44, 'Assess renal/hepatic dosing', '#3b82f6')}
+${box(350, 167, 160, 44, 'Simplify regimen, adherence aids', '#10b981')}
+${box(120, 228, 280, 30, 'Regular review + patient/carer involvement', '#8b5cf6')}
+<text x="20" y="272" font-size="9" fill="#64748b">KENYA: Ageing population, multimorbidity. Anticholinergic burden, NSAIDs, benzodiazepines are high-risk.</text>
+</svg>`

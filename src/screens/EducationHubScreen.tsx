@@ -2084,6 +2084,16 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         <p className="text-sm text-[var(--text)] leading-relaxed">{note.overview}</p>
       </div>
 
+      {/* Kenyan Context */}
+      {note.kenyaContext && (
+        <div className="bg-green-500/5 border border-green-200/40 rounded-2xl p-6 shadow-sm">
+          <h3 className="text-xs font-black uppercase tracking-wider text-green-600 mb-3 flex items-center gap-1.5">
+            <span aria-hidden>🇰🇪</span> Kenyan Context
+          </h3>
+          <p className="text-sm text-[var(--text)] leading-relaxed">{note.kenyaContext}</p>
+        </div>
+      )}
+
       {/* Diagram */}
       {note.diagram && (
         <div className="bg-white dark:bg-gray-900 border border-[var(--border)] rounded-2xl p-6 shadow-sm overflow-x-auto flex justify-center">

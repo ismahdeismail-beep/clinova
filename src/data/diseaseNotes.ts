@@ -17,6 +17,7 @@
   ALLERGIC_RHINITIS_DIAGRAM, PARACETAMOL_OD_DIAGRAM, OP_POISONING_DIAGRAM,
   OPIOID_OD_DIAGRAM, POLYPHARMACY_DIAGRAM,
 } from './diseaseDiagrams'
+import { DISEASE_KENYA_CONTEXT } from './diseaseKenyaContext'
 
 export interface DiseaseNoteMCQ {
   question: string
@@ -31,6 +32,7 @@ export interface DiseaseNote {
   unitId: string
   specialty: string
   overview: string
+  kenyaContext?: string
   diagram?: string
   keyDrugs: { drug: string; class: string; sideEffects: string[] }[]
   monitoring: string
@@ -43,7 +45,7 @@ export type DiseaseNoteCategory = {
   diseases: DiseaseNote[]
 }
 
-export const DISEASE_NOTES: DiseaseNote[] = [
+const RAW_DISEASE_NOTES: DiseaseNote[] = [
   // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
   // 1. CARDIOVASCULAR DISORDERS (cp-cv)
   // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
@@ -1634,3 +1636,8 @@ export const DISEASE_NOTES: DiseaseNote[] = [
     ],
   },
 ]
+
+export const DISEASE_NOTES: DiseaseNote[] = RAW_DISEASE_NOTES.map((note) => ({
+  ...note,
+  kenyaContext: note.kenyaContext ?? DISEASE_KENYA_CONTEXT[note.id],
+}))

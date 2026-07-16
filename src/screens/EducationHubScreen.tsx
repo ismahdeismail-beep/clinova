@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { 
   BookOpen, ChevronRight, Search, Activity, Accessibility, Dna, FlaskConical, 
   Droplets, Flame, Beaker, HeartPulse, Bug, Skull, Heart, Award, FileText,
@@ -69,6 +69,7 @@ function DownloadButton({ content, filename }: { content: string; filename: stri
 
 export default function EducationHubScreen() {
   const navigate = useNavigate();
+  const { moduleId, unitId } = useParams<{ moduleId: string; unitId: string }>();
   const { userData } = useAuth();
   
   const [selectedModule, setSelectedModule] = useState<EducationModule | null>(null);
@@ -157,6 +158,32 @@ export default function EducationHubScreen() {
     fetchCustomUnits();
   }, [userData, selectedModule]);
 
+  // Sync state from URL params (deep-link, refresh, browser back/forward)
+  useEffect(() => {
+    if (!moduleId) {
+      if (selectedModule) setSelectedModule(null);
+      if (selectedUnit) setSelectedUnit(null);
+      return;
+    }
+    const mod = EDUCATION_MODULES.find(m => m.id === moduleId) || null;
+    if (mod && mod.id !== selectedModule?.id) {
+      setSelectedModule(mod);
+    }
+    if (!mod) return;
+    if (!unitId) {
+      if (selectedUnit) setSelectedUnit(null);
+      return;
+    }
+    const units = [
+      ...getModuleUnits(mod.id),
+      ...customUnits.map(cu => ({ ...cu, isCustom: true } as unknown as EducationModuleUnit)),
+    ];
+    const unit = units.find(u => u.id === unitId) || null;
+    if (unit && unit.id !== selectedUnit?.id) {
+      setSelectedUnit(unit);
+    }
+  }, [moduleId, unitId, customUnits]);
+
   const handleModuleClick = (mod: EducationModule) => {
     if (mod.id === 'cases') {
       navigate('/cases');
@@ -172,6 +199,7 @@ export default function EducationHubScreen() {
     }
     setSelectedModule(mod);
     setSelectedUnit(null);
+    navigate(`/knowledge/${mod.id}`);
   };
 
   const handleUnitClick = (unit: EducationModuleUnit) => {
@@ -179,15 +207,18 @@ export default function EducationHubScreen() {
       scrollPositions.current.units = scrollContainerRef.current.scrollTop;
     }
     setSelectedUnit(unit);
+    if (selectedModule) navigate(`/knowledge/${selectedModule.id}/${unit.id}`);
   };
 
   const handleBackToModules = () => {
     setSelectedModule(null);
     setSelectedUnit(null);
+    navigate('/knowledge');
   };
 
   const handleBackToUnits = () => {
     setSelectedUnit(null);
+    if (selectedModule) navigate(`/knowledge/${selectedModule.id}`);
     setTimeout(() => {
       if (scrollContainerRef.current && scrollPositions.current.units > 0) {
         scrollContainerRef.current.scrollTop = scrollPositions.current.units;

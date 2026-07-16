@@ -235,6 +235,8 @@ function AppContent() {
               <Route path="/drugs" element={<DrugIndexScreen />} />
               <Route path="/assistant" element={<ClinicalAssistantScreen />} />
               <Route path="/knowledge" element={<EducationHubScreen />} />
+              <Route path="/knowledge/:moduleId" element={<EducationHubScreen />} />
+              <Route path="/knowledge/:moduleId/:unitId" element={<EducationHubScreen />} />
               <Route path="/board-exam" element={<BoardExamScreen />} />
               <Route path="/board-exam/:setId" element={<BoardExamScreen />} />
               <Route path="/library" element={<OnlineLibraryScreen />} />

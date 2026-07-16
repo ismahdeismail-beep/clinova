@@ -362,26 +362,14 @@ export default function EducationHubScreen() {
         </div>
         )}
 
-        {/* Breadcrumb Navigation */}
-        <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] overflow-x-auto pb-2 whitespace-nowrap border-b border-[var(--border)]/40">
-          <button onClick={handleBackToModules} className={`hover:text-[var(--primary)] transition-colors flex items-center gap-1 ${!selectedModule ? 'text-[var(--text)] font-bold' : ''}`}>
-            Education Hub
-          </button>
-          {selectedModule && (
-            <>
-              <ChevronRight size={14} />
-              <button onClick={handleBackToUnits} className={`hover:text-[var(--primary)] transition-colors flex items-center gap-1 ${!selectedUnit ? 'text-[var(--text)] font-bold' : ''}`}>
-                {selectedModule.title}
-              </button>
-            </>
-          )}
-          {selectedUnit && (
-            <>
-              <ChevronRight size={14} />
-              <span className="text-[var(--text)] font-bold truncate max-w-[200px]">{selectedUnit.title}</span>
-            </>
-          )}
-        </div>
+        {/* Breadcrumb Navigation — only at top level; drill-in view has its own header/breadcrumb */}
+        {!selectedModule && (
+          <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] overflow-x-auto pb-2 whitespace-nowrap border-b border-[var(--border)]/40">
+            <button onClick={handleBackToModules} className="text-[var(--text)] font-bold flex items-center gap-1">
+              Education Hub
+            </button>
+          </div>
+        )}
 
         {/* Content Area */}
         <div className="pb-24">
@@ -420,15 +408,10 @@ export default function EducationHubScreen() {
             <div className="animate-in fade-in slide-in-from-right-4 duration-300 space-y-6">
               
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <div className="flex items-center gap-3">
-                  <button onClick={handleBackToModules} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors">
-                    <ChevronLeft size={18} className="text-[var(--text)]" />
-                  </button>
-                  <h2 className="text-2xl font-bold text-[var(--text)] flex items-center gap-3">
-                    <ModuleIcon name={selectedModule.icon} className={`text-${selectedModule.color}-500`} /> 
-                    {selectedModule.title}
-                  </h2>
-                </div>
+                <h2 className="text-2xl font-bold text-[var(--text)] flex items-center gap-3">
+                  <ModuleIcon name={selectedModule.icon} className={`text-${selectedModule.color}-500`} /> 
+                  {selectedModule.title}
+                </h2>
                 
                 {userData && (
                   <button 

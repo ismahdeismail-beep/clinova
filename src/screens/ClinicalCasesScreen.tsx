@@ -683,7 +683,8 @@ export default function ClinicalCasesScreen() {
         </div>
         )}
 
-        {/* Breadcrumb Navigation */}
+        {/* Breadcrumb Navigation — only shown when drilled into a specialty */}
+        {selectedSpecialty && (
         <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] overflow-x-auto pb-2 whitespace-nowrap">
           <button onClick={() => navigate('/knowledge')} className="hover:text-[var(--primary)] transition-colors flex items-center gap-1">Education Hub</button>
           <ChevronRight size={14} />
@@ -713,6 +714,7 @@ export default function ClinicalCasesScreen() {
             </>
           )}
         </div>
+        )}
 
         {/* Content Area */}
         <div className="pb-24">

@@ -29,17 +29,23 @@ export default function DailySpotlight() {
   const openMonograph = () =>
     navigate(`/drugs?q=${encodeURIComponent(drug.name)}`);
 
+  const isDrugOfDay = !isObservance
+
   return (
     <section
       aria-label="Daily clinical spotlight"
-      className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] shadow-sm overflow-hidden animate-in fade-in duration-300"
+      className={`rounded-2xl border overflow-hidden animate-in fade-in duration-300 ${
+        isDrugOfDay
+          ? "border-emerald-500/20 bg-gradient-to-br from-emerald-500/[0.04] via-[var(--surface)] to-emerald-500/[0.02] shadow-sm shadow-emerald-500/5"
+          : "border-[var(--border)] bg-[var(--surface)] shadow-sm"
+      }`}
     >
       {/* Header band */}
       <div
-        className={`flex items-center justify-between gap-3 px-4 sm:px-5 py-3 border-b border-[var(--border)] ${
+        className={`flex items-center justify-between gap-3 px-4 sm:px-5 py-3 border-b ${
           isObservance
-            ? "bg-gradient-to-r from-[var(--primary)]/10 to-transparent"
-            : "bg-[var(--surface-dim)]/60"
+            ? "bg-gradient-to-r from-[var(--primary)]/10 to-transparent border-[var(--border)]"
+            : "bg-gradient-to-r from-emerald-500/10 to-emerald-500/[0.02] border-emerald-500/10"
         }`}
       >
         <div className="flex items-center gap-2 min-w-0">
@@ -47,7 +53,7 @@ export default function DailySpotlight() {
             className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-wide border shrink-0 ${
               isObservance
                 ? "bg-[var(--primary)]/10 text-[var(--primary)] border-[var(--primary)]/20"
-                : "bg-[var(--surface)] text-[var(--text-muted)] border-[var(--border)]"
+                : "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20"
             }`}
           >
             {isObservance ? <Globe2 size={12} /> : <Sparkles size={12} />}
@@ -70,7 +76,11 @@ export default function DailySpotlight() {
         {/* Left: headline + explanation */}
         <div className="md:col-span-2 min-w-0">
           <div className="flex items-center gap-2.5">
-            <div className="w-10 h-10 rounded-xl bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20 shrink-0">
+            <div className={`w-10 h-10 rounded-xl flex items-center justify-center border shrink-0 ${
+              isDrugOfDay
+                ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20"
+                : "bg-[var(--primary)]/10 text-[var(--primary)] border-[var(--primary)]/20"
+            }`}>
               <Pill size={20} />
             </div>
             <div className="min-w-0">

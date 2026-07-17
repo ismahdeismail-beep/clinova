@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { RAGRouter } from '../services/ragRouter';
+import { KnowledgeEngine } from '../engine/knowledgeEngine.service';
 import ReactMarkdown from 'react-markdown';
 import { jsPDF } from 'jspdf';
 import { ChatSessionList } from '../components/ChatSessionList';
@@ -1005,25 +1006,37 @@ export default function ClinicalAssistantScreen() {
 
           const primaryFile = currentAttachments[0];
 
-          // FIND RELEVANT KNOWLEDGE BASE RESOURCES
-          const kbFiles: any[] = [];
-          
+          // RETRIEVE KNOWLEDGE ENGINE CONTEXT
           let relevantKbContext = '';
-          const keywords = userQuery.toLowerCase().split(/\s+/).filter(w => w.length > 3);
-          if (keywords.length > 0 && kbFiles.length > 0) {
-            const matchedFiles = kbFiles.filter(f => {
-              const searchText = `${f.title} ${f.originalName} ${f.summary || ''} ${f.classification?.keywords?.join(' ') || ''}`.toLowerCase();
-              return keywords.some(k => searchText.includes(k));
-            }).slice(0, 3); // Max 3 to fit context limit
-            
-            if (matchedFiles.length > 0) {
-              relevantKbContext = "\n\n=== KNOWLEDGE ENGINE RETRIEVED RESOURCES ===\n";
-              matchedFiles.forEach(f => {
-                relevantKbContext += `- ${f.title || f.originalName}\n`;
-                if (f.summary) relevantKbContext += `  Summary: ${f.summary}\n`;
-                if (f.textContent) relevantKbContext += `  Content: ${f.textContent.substring(0, 1500)}\n`;
-              });
+          let engineSources: any[] = [];
+          try {
+            setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
+              ...m,
+              content: 'Searching knowledge bases for relevant context...'
+            } : m));
+            setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
+              ...m,
+              content: 'Querying Drug Monographs, Clinical Cases, and Disease Knowledge...'
+            } : m));
+            const engineResult = await KnowledgeEngine.process(userQuery);
+            if (engineResult.hasData) {
+              engineSources = engineResult.sources;
+              const contextFromRag = RAGRouter.buildContextForAi(engineResult);
+              if (contextFromRag) {
+                relevantKbContext = "\n\n" + contextFromRag;
+              }
+              setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
+                ...m,
+                content: `Found ${engineSources.length} relevant sources. Generating clinical response...`
+              } : m));
+            } else {
+              setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
+                ...m,
+                content: 'No specific knowledge base matches. Answering from general clinical knowledge...'
+              } : m));
             }
+          } catch (e) {
+            console.warn('[ClinicalAssistant] KnowledgeEngine retrieval failed:', e);
           }
 
           const res = await fetch('/api/gemini/assistant/stream', {
@@ -1097,24 +1110,18 @@ export default function ClinicalAssistantScreen() {
         throw lastError || new Error('Failed to reach assistant after multiple attempts');
       }
       
-      const kbFiles: any[] = [];
-      const matchedDb: string[] = selectedSources;
-      if (kbFiles.length > 0) {
-        citations = kbFiles.slice(0, 3).map((f: any) => ({
-          source: 'Knowledge Base',
-          document: f.title || f.originalName || 'Uploaded Resource',
-          year: new Date().getFullYear().toString()
+      if (engineSources.length > 0) {
+        citations = engineSources.slice(0, 4).map((s: any) => ({
+          source: s.type === 'drug_monograph' ? 'Kenya Drug Index' : s.type === 'clinical_case' ? 'Clinical Cases' : s.type === 'disease' ? 'Disease Knowledge' : 'Knowledge Base',
+          document: s.title,
+          year: '2024'
         }));
-      } else if (matchedDb.length > 0) {
-        citations = matchedDb.map((db: string) => ({
+      } else {
+        citations = selectedSources.map((db: string) => ({
           source: db,
           document: 'Clinical Reference',
           year: '2024'
         }));
-      } else {
-        citations = [
-          { source: 'Clinova Knowledge Engine', document: 'Synthesized from curriculum data', year: '2024' }
-        ];
       }
     } catch (err: any) {
       console.error(err);

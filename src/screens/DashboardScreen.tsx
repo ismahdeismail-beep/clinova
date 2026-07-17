@@ -126,7 +126,7 @@ export default function DashboardScreen() {
   const [prefsSearchQuery, setPrefsSearchQuery] = useState("");
 
   return (
-    <div className="p-4 sm:p-6 md:p-8 max-w-6xl mx-auto space-y-4 md:space-y-8 pb-24">
+    <div className="p-4 sm:p-6 md:p-8 max-w-full 2xl:max-w-7xl mx-auto space-y-4 md:space-y-8 pb-24">
       {/* Welcome Banner */}
       <div className="bg-gradient-to-r from-[var(--primary)] to-indigo-600 rounded-2xl p-5 md:p-8 text-white shadow-sm relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
@@ -233,9 +233,9 @@ export default function DashboardScreen() {
 
           <DailySpotlight />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
             {/* Left Column (Main Content) */}
-            <div className="md:col-span-2 space-y-4 md:space-y-8">
+            <div className="md:col-span-2 xl:col-span-3 space-y-4 md:space-y-8">
               {/* Quick Actions */}
               <div>
                 <div className="flex items-center justify-between mb-3 md:mb-4">

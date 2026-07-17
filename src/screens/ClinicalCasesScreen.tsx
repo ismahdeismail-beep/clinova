@@ -835,35 +835,38 @@ export default function ClinicalCasesScreen() {
                     </h2>
                   </div>
 
-                  <div className="space-y-4">
+                  <div className="space-y-0.5 border border-[var(--border)] rounded-xl overflow-hidden divide-y divide-[var(--border)]">
+                    <div className="grid grid-cols-[1fr_auto_auto] gap-3 px-4 py-2 bg-[var(--surface-dim)]/50 text-[10px] font-bold uppercase text-[var(--text-muted)] tracking-wider">
+                      <span>Case Title</span>
+                      <span className="w-24 text-center">Patient</span>
+                      <span className="w-20 text-center">Difficulty</span>
+                    </div>
                     {casesForSelectedDisease.map((clinicalCase, idx) => (
                       <div 
                         key={idx}
                         onClick={() => handleCaseClick(clinicalCase)}
-                        className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl p-4 cursor-pointer transition-all shadow-sm hover:shadow-md group"
+                        className="grid grid-cols-[1fr_auto_auto] gap-3 px-4 py-2.5 bg-[var(--surface)] hover:bg-[var(--surface-dim)]/50 cursor-pointer transition-colors group items-center"
                       >
-                        <div className="flex items-start justify-between gap-4">
-                          <div className="min-w-0">
-                            <div className="flex items-center gap-2 mb-1.5">
-                              <span className={`px-2 py-0.5 rounded-lg text-[10px] font-extrabold uppercase tracking-wider ${
-                                clinicalCase.difficulty === 'Beginner' ? 'bg-emerald-500/10 text-emerald-600' :
-                                clinicalCase.difficulty === 'Intermediate' ? 'bg-amber-500/10 text-amber-600' :
-                                'bg-rose-500/10 text-rose-600'
-                              }`}>
-                                {clinicalCase.difficulty}
-                              </span>
-                            </div>
-                            <h3 className="text-base font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">
-                              {clinicalCase.title}
-                            </h3>
-                            <p className="text-xs text-[var(--text-muted)] mt-1">
-                              {getInitials(clinicalCase.patientName)} &bull; {clinicalCase.demographics} &bull; {clinicalCase.facilitySetting}
-                            </p>
-                            <p className="text-xs text-[var(--text-muted)] mt-0.5 italic truncate">
-                              "{clinicalCase.chiefComplaint}"
-                            </p>
-                          </div>
-                          <ChevronRight size={16} className="text-[var(--border)] group-hover:text-[var(--primary)] group-hover:translate-x-1 transition-all shrink-0 mt-2" />
+                        <div className="min-w-0">
+                          <h3 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors truncate">
+                            {clinicalCase.title}
+                          </h3>
+                          <p className="text-[11px] text-[var(--text-muted)] truncate">
+                            "{clinicalCase.chiefComplaint}"
+                          </p>
+                        </div>
+                        <div className="w-24 text-center shrink-0">
+                          <p className="text-xs font-bold text-[var(--text)]">{getInitials(clinicalCase.patientName)}</p>
+                          <p className="text-[10px] text-[var(--text-muted)] truncate">{clinicalCase.demographics}</p>
+                        </div>
+                        <div className="w-20 text-center shrink-0">
+                          <span className={`inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider ${
+                            clinicalCase.difficulty === 'Beginner' ? 'bg-emerald-500/10 text-emerald-600' :
+                            clinicalCase.difficulty === 'Intermediate' ? 'bg-amber-500/10 text-amber-600' :
+                            'bg-rose-500/10 text-rose-600'
+                          }`}>
+                            {clinicalCase.difficulty === 'Beginner' ? 'Beg' : clinicalCase.difficulty === 'Intermediate' ? 'Int' : 'Adv'}
+                          </span>
                         </div>
                       </div>
                     ))}

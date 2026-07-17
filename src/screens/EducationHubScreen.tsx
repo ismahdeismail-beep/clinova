@@ -1193,7 +1193,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
         )}
       </div>
 
-      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl shadow-sm overflow-hidden flex flex-col min-h-[650px]">
+      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl shadow-sm flex flex-col min-h-[650px]">
         {/* Active Context Bar */}
         <div className="bg-amber-500/5 px-6 py-2.5 border-b border-[var(--border)]/40 flex items-center justify-between text-xs font-bold text-[var(--text)]">
           <span className="flex items-center gap-1.5 text-[var(--text)]">
@@ -1206,7 +1206,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
         </div>
 
         {/* Workspace Content */}
-        <div className="flex-1 p-6 bg-[var(--bg)] min-h-[500px]">
+        <div className="flex-1 p-4 sm:p-6 bg-[var(--bg)] min-h-[500px]">
 {activeTab === 'overview' && <WorkspaceOverview unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
           {activeTab === 'disease-notes' && <DiseaseNotesView unit={unit} />}
           {activeTab === 'tutor' && <WorkspaceTutor unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}

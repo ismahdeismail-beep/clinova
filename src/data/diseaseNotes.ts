@@ -28,6 +28,60 @@ export interface DiseaseNoteMCQ {
   explanation: string
 }
 
+export interface DiseaseNoteDrug {
+  drug: string
+  class: string
+  dose?: string
+  mechanism?: string
+  contraindications?: string
+  sideEffects: string[]
+  monitoring?: string
+}
+
+export interface DiseaseNoteRiskFactors {
+  nonModifiable?: string[]
+  modifiable?: string[]
+}
+
+export interface DiseaseNoteManagement {
+  goals?: string
+  immediate?: string
+  definitive?: string
+  longTerm?: string
+}
+
+export interface DiseaseNoteDifferential {
+  condition: string
+  similarities?: string
+  differences?: string
+}
+
+export interface DiseaseNoteFAQ {
+  q: string
+  a: string
+}
+
+export interface DiseaseNoteCase {
+  presentation?: string
+  examination?: string
+  investigations?: string
+  assessment?: string
+  management?: string
+  followUp?: string
+  learningPoints?: string
+}
+
+export interface DiseaseNoteMetadata {
+  lastUpdated?: string
+  version?: string
+  author?: string
+  reviewer?: string
+  evidenceLevel?: string
+  references?: string[]
+}
+
+// Standard Disease Discussion Template (Clinova) — every section is optional
+// so a note only renders the parts that apply / have been authored.
 export interface DiseaseNote {
   id: string
   name: string
@@ -38,7 +92,73 @@ export interface DiseaseNote {
   pathophysiology?: string
   diagram?: string
   pathophysiologyDiagram?: string
-  keyDrugs: { drug: string; class: string; sideEffects: string[] }[]
+  keyDrugs: DiseaseNoteDrug[]
+
+  // §1 Identification
+  alternativeNames?: string[]
+  icd10?: string
+  icd11?: string
+  // §2 Definition
+  definition?: string
+  // §3 Epidemiology
+  epidemiology?: string
+  // §4 Etiology
+  etiology?: string[]
+  // §5 Risk factors
+  riskFactors?: DiseaseNoteRiskFactors
+  // §6 Pathophysiology (reuses `pathophysiology`)
+  // §7 Classification
+  classification?: string[]
+  // §8 Clinical features
+  clinicalFeatures?: string[]
+  // §9 Signs
+  signs?: string[]
+  // §10 Red flags
+  redFlags?: string[]
+  // §11 Complications
+  complications?: string[]
+  // §12 Differential diagnosis
+  differential?: DiseaseNoteDifferential[]
+  // §15 Investigations
+  investigations?: string[]
+  // §16 Diagnosis
+  diagnosis?: string
+  // §17 Severity scores
+  severityScores?: string[]
+  // §18 Management
+  management?: DiseaseNoteManagement
+  // §19 Non-pharmacological
+  nonPharmacological?: string[]
+  // §20 Pharmacological (reuses `keyDrugs`)
+  // §21 Surgical
+  surgical?: string
+  // §22 Monitoring (reuses `monitoring`)
+  // §23 Prevention
+  prevention?: string[]
+  // §24 Prognosis
+  prognosis?: string
+  // §25 Patient counseling
+  counseling?: string[]
+  // §26 Special populations
+  specialPopulations?: string[]
+  // §27 Clinical pearls
+  clinicalPearls?: string[]
+  // §28 Common mistakes
+  commonMistakes?: string[]
+  // §29 Drug therapy problems
+  drugTherapyProblems?: string[]
+  // §30 Guidelines
+  guidelines?: string[]
+  // §32 FAQ
+  faq?: DiseaseNoteFAQ[]
+  // §33 Clinical case
+  caseExample?: DiseaseNoteCase
+  // §34 Self-assessment (reuses `mcqs`)
+  // §35 References
+  references?: string[]
+  // §36 Metadata
+  metadata?: DiseaseNoteMetadata
+
   monitoring: string
   mcqs: DiseaseNoteMCQ[]
 }
@@ -61,7 +181,7 @@ const RAW_DISEASE_NOTES: DiseaseNote[] = [
     overview: 'Hypertension is defined as sustained arterial blood pressure â‰¥140/90 mmHg on â‰¥2 readings measured on separate occasions, affecting over 1.28 billion adults worldwide and representing the leading modifiable risk factor for stroke, myocardial infarction, heart failure, and chronic kidney disease. The pathophysiology involves RAAS activation, sympathetic nervous system overactivity, sodium and water retention, endothelial dysfunction, and progressive vascular remodelling leading to increased systemic vascular resistance. Most patients are asymptomatic; severe or accelerated elevations may present with occipital headache, visual disturbance, epistaxis, or dyspnoea, and hypertensive urgency/emergency should be excluded by assessing for acute target organ damage. First-line pharmacotherapy includes ACE inhibitors (enalapril 5-20 mg daily, lisinopril 10-40 mg daily), ARBs (losartan 50-100 mg daily, telmisartan 40-80 mg daily), dihydropyridine CCBs (amlodipine 5-10 mg daily), and thiazide diuretics (hydrochlorothiazide 12.5-25 mg daily, chlorthalidone 12.5-25 mg daily); CCBs or thiazides are preferred first-line in black patients due to low-renin physiology, and the WHO Essential Medicines List 2025 includes triple fixed-dose combination antihypertensives for resource-limited settings. Blood pressure targets: <130/80 mmHg in diabetic patients (Kenya guidelines), <130/80 mmHg in most adults, and <140/90 mmHg in uncomplicated elderly â‰¥80 years. Non-pharmacological measures include the DASH dietary pattern, sodium restriction to <2 g daily, regular aerobic exercise â‰¥150 minutes per week, weight reduction to BMI <25, alcohol moderation, and smoking cessation.',
     diagram: HTN_RAAS_DIAGRAM,
     keyDrugs: [
-      { drug: 'Enalapril 5-20 mg daily', class: 'ACE inhibitor', sideEffects: ['Dry cough (up to 10%)', 'Angioedema (0.1-0.7%)', 'Hyperkalaemia', 'Acute renal impairment (bilateral RAS)', 'Foetal toxicity (contraindicated in pregnancy)', 'Headache', 'Dizziness'] },
+      { drug: 'Enalapril 5-20 mg daily', class: 'ACE inhibitor', dose: '5 mg ODâ€“20 mg BD', mechanism: 'Inhibits ACE â†“ Ang II, â†“ aldosterone', monitoring: 'Kâº & Cr at 1-2 wk', sideEffects: ['Dry cough (up to 10%)', 'Angioedema (0.1-0.7%)', 'Hyperkalaemia', 'Acute renal impairment (bilateral RAS)', 'Foetal toxicity (contraindicated in pregnancy)', 'Headache', 'Dizziness'] },
       { drug: 'Losartan 50-100 mg daily', class: 'ARB', sideEffects: ['Dizziness', 'Hyperkalaemia', 'Renal impairment (less frequent than ACEi)', 'Foetal toxicity (contraindicated in pregnancy)', 'Fatigue', 'Upper respiratory infection'] },
       { drug: 'Amlodipine 5-10 mg daily', class: 'Dihydropyridine CCB', sideEffects: ['Ankle oedema (dose-dependent, up to 10%)', 'Flushing', 'Headache', 'Gingival hyperplasia', 'Dizziness', 'Palpitations', 'Reflex tachycardia'] },
       { drug: 'Hydrochlorothiazide 12.5-25 mg daily', class: 'Thiazide diuretic', sideEffects: ['Hypokalaemia', 'Hyperglycaemia (worsens glucose tolerance)', 'Hyperuricaemia (precipitates gout)', 'Hyponatraemia', 'Hypercalcaemia', 'Dehydration', 'Erectile dysfunction'] },
@@ -75,6 +195,57 @@ const RAW_DISEASE_NOTES: DiseaseNote[] = [
       { question: 'A patient on enalapril 10 mg daily develops a serum potassium of 5.8 mEq/L and creatinine rise of 30%. What is the next best step?', options: ['A. Add spironolactone', 'B. Increase enalapril dose', 'C. Stop enalapril and investigate bilateral renal artery stenosis', 'D. Switch to amlodipine and continue monitoring'], correctAnswer: 'C', explanation: 'A creatinine rise >30% or hyperkalaemia >5.5 mEq/L on ACE inhibitors should raise suspicion for bilateral renal artery stenosis (or volume depletion). The ACEi should be discontinued, renal imaging considered, and an alternative antihypertensive such as a CCB initiated.' },
       { question: 'According to WHO EML 2025, what strategy is recommended for improving antihypertensive adherence in resource-limited settings?', options: ['A. Monotherapy escalation', 'B. Triple fixed-dose combination therapy', 'C. Injectable antihypertensives', 'D. Beta-blocker-based regimens'], correctAnswer: 'B', explanation: 'The WHO EML 2025 includes triple fixed-dose combination antihypertensives (ACEi/ARB + CCB + thiazide) to improve adherence, reduce pill burden, and achieve BP targets more rapidly in low-resource settings where single-pill combinations improve treatment persistence.' },
     ],
+    alternativeNames: ['High blood pressure', 'HTN', 'Arterial hypertension'],
+    icd10: 'I10',
+    icd11: 'BA00',
+    definition: 'A clinical syndrome of persistently elevated arterial pressure (â‰¥140/90 mmHg) that increases cardiovascular, cerebrovascular, and renal risk; primary (essential) in ~90% and secondary in the remainder.',
+    epidemiology: 'Affects >1.28 billion adults globally; prevalence rises with age and is especially high in sub-Saharan Africa and among urban Kenyans. It is the leading modifiable risk factor for stroke, MI, heart failure, and CKD. Control rates remain <20% in many low-resource settings.',
+    etiology: ['Primary (essential, ~90%): polygenic + environmental', 'Secondary: renal artery stenosis, CKD, primary aldosteronism, Cushing/phaeochromocytoma', 'Drug-induced: NSAIDs, oral contraceptives, steroids, liquorice'],
+    riskFactors: {
+      nonModifiable: ['Age >55 years', 'Male sex (earlier onset)', 'Black African ethnicity (low-renin)', 'Family history', 'Genetic predisposition'],
+      modifiable: ['High sodium intake', 'Low potassium / DASH non-adherence', 'Obesity / central adiposity', 'Physical inactivity', 'Excess alcohol', 'Smoking', 'Obstructive sleep apnoea', 'Chronic stress'],
+    },
+    clinicalFeatures: ['Often asymptomatic (silent killer)', 'Occipital headache (severe/elevated)', 'Visual disturbance / scotomata', 'Epistaxis', 'Dyspnoea (if HF)', 'Dizziness, palpitations'],
+    signs: ['Elevated BP on repeated measurement', 'Fundoscopy: arteriolar narrowing, AV nipping, haemorrhages/exudates, papilloedema', 'LV heave / S4 gallop (LVH)', 'Bruit over renal arteries', 'Pedal oedema (if HF)'],
+    redFlags: ['BP >180/120 mmHg with symptoms', 'New confusion / reduced GCS', 'Chest pain / acute pulmonary oedema', 'Focal neurological deficit / seizure', 'Papilloedema', 'Oliguria / rising creatinine', 'Aortic dissection pain'],
+    complications: ['Ischaemic stroke / haemorrhagic stroke', 'Myocardial infarction', 'Heart failure (HFrEF/HFpEF)', 'Chronic kidney disease / ESRF', 'Retinopathy / vision loss', 'Aortic dissection', 'Hypertensive encephalopathy'],
+    differential: [
+      { condition: 'Secondary hypertension', similarities: 'Same BP elevation', differences: 'Young age, resistant HTN, sudden onset; investigate renal/endocrine causes' },
+      { condition: 'White-coat hypertension', similarities: 'Office readings high', differences: 'Normal ambulatory/home BP; confirmed by ABPM' },
+      { condition: 'Pheochromocytoma', similarities: 'Severe paroxysmal HTN', differences: 'Episodic sweating, palpitations, headache triad; plasma metanephrines' },
+    ],
+    investigations: ['BP confirmation (â‰¥2 readings, both arms, sitting/standing)', 'Urinalysis (protein, blood) + ACR', 'U&E, creatinine/eGFR, uric acid', 'Fasting glucose / HbA1c', 'Lipid profile', 'ECG (LVH, ischaemia)', 'Fundoscopy', 'Consider: renin/aldosterone, renal Doppler, cortisol if secondary suspected'],
+    diagnosis: 'Diagnosis is clinical: sustained BP â‰¥140/90 mmHg on â‰¥2 occasions using validated cuff, with staging by severity and cardiovascular risk stratification. Exclude secondary causes in young, resistant, or atypical cases.',
+    severityScores: ['Stage 1: 140-159/90-99 mmHg', 'Stage 2: 160-179/100-109 mmHg', 'Stage 3: â‰¥180/110 mmHg', 'Hypertensive crisis: >180/120 mmHg with/without TOD', 'ASCVD risk estimation for treatment intensity'],
+    management: {
+      goals: 'Reduce BP to target, prevent target-organ damage, and lower CV/renal events; individualise by comorbidity.',
+      definitive: 'Lifestyle + pharmacotherapy: ACEi/ARB, CCB, thiazide (or triple single-pill FDC per WHO). Add spironolactone if resistant. CCB/thiazide preferred first-line in Black patients.',
+      longTerm: 'Lifelong therapy, annual complication screening (eyes, kidneys, heart), adherence support, and CV risk factor control.',
+    },
+    nonPharmacological: ['DASH / high-potassium diet', 'Sodium <2 g/day (<5 g salt)', 'Weight loss to BMI <25', 'Aerobic exercise â‰¥150 min/week', 'Alcohol moderation (<14 units/week)', 'Smoking cessation', 'Stress management', 'Home BP monitoring'],
+    prevention: ['Population salt reduction', 'Healthy diet & activity', 'Limit alcohol', 'Routine BP screening from age 18', 'Control of glucose/lipids', 'Community health promoter follow-up'],
+    prognosis: 'Excellent with control; poor if untreated â€” markedly increased stroke, MI, HF, and CKD risk. Most patients need lifelong treatment.',
+    counseling: ['Take medication at same time daily', 'Do not stop abruptly', 'Reduce salt; read food labels', 'Monitor home BP and keep a log', 'Report cough/angioedema (ACEi) or swelling (CCB)', 'Attend regular checks for kidneys/eyes'],
+    specialPopulations: ['Pregnancy: methyldopa/labetalol/nifedipine; ACEi/ARB contraindicated', 'Elderly â‰¥80: target <140/90, cautious posture', 'CKD: ACEi/ARB preferred (renoprotective), watch Kâº/Cr', 'Diabetes: stricter <130/80 target'],
+    clinicalPearls: ['"Silent killer" â€” screen everyone', 'Check both arms; use the higher', 'Resistant HTN â†’ think adherence, OSA, secondary', 'Black patients: CCB/thiazide first-line', 'Triple FDC improves adherence'],
+    commonMistakes: ['Treating single high reading as HTN', 'Ignoring lifestyle counselling', 'Over-titrating in elderly (falls)', 'Using ACEi/ARB in pregnancy', 'Not checking Kâº/Cr after initiation'],
+    drugTherapyProblems: ['Non-adherence (pill burden) â€” use FDC', 'Dose too low / undertitrated', 'ACEi + spironolactone â†’ hyperkalaemia', 'Thiazide â†’ gout flare', 'Drug-induced (NSAID) resistance'],
+    guidelines: ['WHO HEARTS / EML 2025 (triple FDC)', 'Kenya MOH NCD guidelines', 'Kenya Essential Medicines List (KEML)', 'ESC/ESH 2023', 'NICE NG136', 'JNC 8'],
+    faq: [
+      { q: 'Can hypertension be cured?', a: 'Essential hypertension is usually lifelong; it is controlled, not cured. Secondary causes may be reversible.' },
+      { q: 'Why a combination pill?', a: 'Single-pill triple therapy improves adherence and reaches target faster than sequential monotherapy.' },
+    ],
+    caseExample: {
+      presentation: '52-year-old man, BP 168/102 mmHg x2 visits, asymptomatic, no meds.',
+      examination: 'BMI 31, LV heave, fundoscopy grade 1, no papilloedema, bilateral femoral pulses present.',
+      investigations: 'Cr 92, eGFR 78, Kâº 4.3, ACR 35 mg/g, ECG LVH, glucose 6.4 mmol/L.',
+      assessment: 'Stage 2 essential hypertension with early target-organ changes and pre-diabetes.',
+      management: 'Start amlodipine 5 mg + hydrochlorothiazide 25 mg (FDC), lifestyle, recheck in 2 weeks.',
+      followUp: 'BP <140/90 at 4 weeks; ACR checked 6-monthly; eye/renal screen annually.',
+      learningPoints: 'Screen, stage, stratify risk, start low, and prioritise adherence with FDC.',
+    },
+    references: ['WHO. HEARTS technical package & EML 2025.', 'Kenya MOH. National Guidelines for Cardiovascular Diseases. 2021.', 'ESC/ESH. Guidelines for arterial hypertension. 2023.', 'NICE. NG136. Hypertension. 2019 (updated 2023).', 'Katzung BG. Basic & Clinical Pharmacology. 15th ed.'],
+    metadata: { lastUpdated: '2026-07', version: '1.0', author: 'Clinova Clinical Team', evidenceLevel: 'A (RCT/guideline)', reviewer: 'Pharmacy Reviewer' },
   },
   {
     id: 'dnote-htn-emergency',

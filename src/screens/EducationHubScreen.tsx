@@ -2072,6 +2072,70 @@ function DiseaseNotesView({ unit }: { unit: EducationModuleUnit }) {
   )
 }
 
+// ── Reusable section primitives for the Standard Disease Discussion Template ──
+function Section({
+  title,
+  children,
+  tone = 'default',
+  icon,
+}: {
+  title: string
+  children: React.ReactNode
+  tone?: 'default' | 'green' | 'amber' | 'rose' | 'violet'
+  icon?: React.ReactNode
+}) {
+  const tones: Record<string, string> = {
+    default: 'border-[var(--border)]',
+    green: 'border-green-200/40 bg-green-500/5',
+    amber: 'border-amber-200/30 bg-amber-500/5',
+    rose: 'border-rose-200/40 bg-rose-500/5',
+    violet: 'border-purple-200/40 bg-purple-500/5',
+  }
+  const titleColors: Record<string, string> = {
+    default: 'text-[var(--primary)]',
+    green: 'text-green-600',
+    amber: 'text-amber-600',
+    rose: 'text-rose-600',
+    violet: 'text-purple-600',
+  }
+  return (
+    <div className={`bg-[var(--surface)] border ${tones[tone]} rounded-2xl p-5 sm:p-6 shadow-sm`}>
+      <h3 className={`text-xs font-black uppercase tracking-wider ${titleColors[tone]} mb-3 flex items-center gap-1.5`}>
+        {icon}
+        {title}
+      </h3>
+      {children}
+    </div>
+  )
+}
+
+function Bullets({ items, tone = 'default' }: { items: string[]; tone?: 'default' | 'rose' | 'amber' }) {
+  const dot = tone === 'rose' ? 'bg-rose-500' : tone === 'amber' ? 'bg-amber-500' : 'bg-[var(--primary)]'
+  return (
+    <ul className="space-y-1.5">
+      {items.map((it, i) => (
+        <li key={i} className="flex items-start gap-2 text-sm text-[var(--text)] leading-relaxed">
+          <span className={`w-1.5 h-1.5 rounded-full ${dot} mt-2 shrink-0`} />
+          <span>{it}</span>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+function DefinitionList({ rows }: { rows: { label: string; value: string }[] }) {
+  return (
+    <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
+      {rows.map((r, i) => (
+        <div key={i} className="flex flex-col">
+          <dt className="text-[10px] font-bold uppercase tracking-wider text-[var(--text-muted)]">{r.label}</dt>
+          <dd className="text-sm text-[var(--text)] leading-relaxed">{r.value}</dd>
+        </div>
+      ))}
+    </dl>
+  )
+}
+
 function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: { note: DiseaseNote; onBack: () => void; hasPrev?: boolean; hasNext?: boolean; onPrev?: () => void; onNext?: () => void }) {
   return (
     <div className="w-full space-y-5 sm:space-y-8 py-2">
@@ -2106,31 +2170,275 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </div>
       </div>
 
-      {/* Overview */}
-      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-sm">
-        <h3 className="text-xs font-black uppercase tracking-wider text-[var(--primary)] mb-3">Overview</h3>
+      {/* §1 Disease Identification */}
+      {(note.alternativeNames?.length || note.icd10 || note.icd11) && (
+        <Section title="Disease Identification">
+          <DefinitionList
+            rows={[
+              ...(note.alternativeNames?.length ? [{ label: 'Alternative Names', value: note.alternativeNames.join(', ') }] : []),
+              ...(note.icd10 ? [{ label: 'ICD-10', value: note.icd10 }] : []),
+              ...(note.icd11 ? [{ label: 'ICD-11', value: note.icd11 }] : []),
+            ]}
+          />
+        </Section>
+      )}
+
+      {/* §2 Definition */}
+      {note.definition && (
+        <Section title="Definition">
+          <p className="text-sm text-[var(--text)] leading-relaxed">{note.definition}</p>
+        </Section>
+      )}
+
+      {/* Overview (always present) */}
+      <Section title="Overview">
         <p className="text-sm text-[var(--text)] leading-relaxed">{note.overview}</p>
-      </div>
+      </Section>
 
-      {/* Pathophysiology */}
+      {/* §3 Epidemiology */}
+      {note.epidemiology && (
+        <Section title="Epidemiology">
+          <p className="text-sm text-[var(--text)] leading-relaxed">{note.epidemiology}</p>
+        </Section>
+      )}
+
+      {/* §4 Etiology */}
+      {note.etiology?.length ? (
+        <Section title="Etiology (Causes)">
+          <Bullets items={note.etiology} />
+        </Section>
+      ) : null}
+
+      {/* §5 Risk Factors */}
+      {note.riskFactors && (note.riskFactors.nonModifiable?.length || note.riskFactors.modifiable?.length) ? (
+        <Section title="Risk Factors">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {note.riskFactors.nonModifiable?.length ? (
+              <div>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2">Non-Modifiable</h4>
+                <Bullets items={note.riskFactors.nonModifiable} />
+              </div>
+            ) : null}
+            {note.riskFactors.modifiable?.length ? (
+              <div>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2">Modifiable</h4>
+                <Bullets items={note.riskFactors.modifiable} tone="amber" />
+              </div>
+            ) : null}
+          </div>
+        </Section>
+      ) : null}
+
+      {/* §6 Pathophysiology */}
       {note.pathophysiology && (
-        <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-sm">
-          <h3 className="text-xs font-black uppercase tracking-wider text-[var(--primary)] mb-3">Pathophysiology & Mechanism</h3>
+        <Section title="Pathophysiology & Mechanism">
           <p className="text-sm text-[var(--text)] leading-relaxed">{note.pathophysiology}</p>
-        </div>
+        </Section>
       )}
 
-      {/* Kenyan Context */}
+      {/* §7 Classification */}
+      {note.classification?.length ? (
+        <Section title="Classification">
+          <Bullets items={note.classification} />
+        </Section>
+      ) : null}
+
+      {/* §8 Clinical Features */}
+      {note.clinicalFeatures?.length ? (
+        <Section title="Clinical Features">
+          <Bullets items={note.clinicalFeatures} />
+        </Section>
+      ) : null}
+
+      {/* §9 Signs */}
+      {note.signs?.length ? (
+        <Section title="Signs">
+          <Bullets items={note.signs} />
+        </Section>
+      ) : null}
+
+      {/* §10 Red Flag Features */}
+      {note.redFlags?.length ? (
+        <Section title="Red Flag Features" tone="rose">
+          <Bullets items={note.redFlags} tone="rose" />
+        </Section>
+      ) : null}
+
+      {/* §11 Complications */}
+      {note.complications?.length ? (
+        <Section title="Complications">
+          <Bullets items={note.complications} />
+        </Section>
+      ) : null}
+
+      {/* §12 Differential Diagnosis */}
+      {note.differential?.length ? (
+        <Section title="Differential Diagnosis">
+          <div className="space-y-3">
+            {note.differential.map((d, i) => (
+              <div key={i} className="border border-[var(--border)]/40 rounded-xl p-3">
+                <p className="text-sm font-bold text-[var(--text)]">{d.condition}</p>
+                {d.similarities && <p className="text-xs text-[var(--text)] mt-1"><span className="font-semibold text-[var(--text-muted)]">Similarities: </span>{d.similarities}</p>}
+                {d.differences && <p className="text-xs text-[var(--text)] mt-1"><span className="font-semibold text-[var(--text-muted)]">Key differences: </span>{d.differences}</p>}
+              </div>
+            ))}
+          </div>
+        </Section>
+      ) : null}
+
+      {/* §15 Investigations */}
+      {note.investigations?.length ? (
+        <Section title="Investigations">
+          <Bullets items={note.investigations} />
+        </Section>
+      ) : null}
+
+      {/* §16 Diagnosis */}
+      {note.diagnosis && (
+        <Section title="Diagnosis">
+          <p className="text-sm text-[var(--text)] leading-relaxed">{note.diagnosis}</p>
+        </Section>
+      )}
+
+      {/* §17 Disease Severity Scores */}
+      {note.severityScores?.length ? (
+        <Section title="Disease Severity Scores">
+          <Bullets items={note.severityScores} />
+        </Section>
+      ) : null}
+
+      {/* §18 Management */}
+      {note.management && (note.management.goals || note.management.immediate || note.management.definitive || note.management.longTerm) ? (
+        <Section title="Management">
+          <div className="space-y-3">
+            {note.management.goals && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Goals of Treatment</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.management.goals}</p></div>}
+            {note.management.immediate && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Immediate / Emergency</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.management.immediate}</p></div>}
+            {note.management.definitive && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Definitive Treatment</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.management.definitive}</p></div>}
+            {note.management.longTerm && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Long-Term Management</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.management.longTerm}</p></div>}
+          </div>
+        </Section>
+      ) : null}
+
+      {/* §19 Non-Pharmacological Management */}
+      {note.nonPharmacological?.length ? (
+        <Section title="Non-Pharmacological Management">
+          <Bullets items={note.nonPharmacological} tone="amber" />
+        </Section>
+      ) : null}
+
+      {/* Kenyan Context (special callout) */}
       {note.kenyaContext && (
-        <div className="bg-green-500/5 border border-green-200/40 rounded-2xl p-6 shadow-sm">
-          <h3 className="text-xs font-black uppercase tracking-wider text-green-600 mb-3 flex items-center gap-1.5">
-            <span aria-hidden>🇰🇪</span> Kenyan Context
-          </h3>
+        <Section title="Kenyan Context" tone="green" icon={<span aria-hidden>🇰🇪</span>}>
           <p className="text-sm text-[var(--text)] leading-relaxed">{note.kenyaContext}</p>
-        </div>
+        </Section>
       )}
 
-      {/* Diagram */}
+      {/* §20 Pharmacological Management — Key Drugs */}
+      <Section title="Pharmacological Management">
+        <div className="overflow-x-auto rounded-xl border border-[var(--border)]/40">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="bg-[var(--surface-dim)] text-[var(--text-muted)] font-bold uppercase text-[11px] tracking-wider">
+                <th className="px-4 py-3 text-left w-[24%]">Drug</th>
+                <th className="px-4 py-3 text-left w-[16%]">Class</th>
+                <th className="px-4 py-3 text-left w-[16%]">Key Info</th>
+                <th className="px-4 py-3 text-left">Side Effects</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[var(--border)]/30">
+              {note.keyDrugs.map((d, i) => (
+                <tr key={i} className="hover:bg-[var(--surface-dim)]/30 align-top">
+                  <td className="px-4 py-3 font-bold text-[var(--text)]">{d.drug}</td>
+                  <td className="px-4 py-3 text-[var(--text-muted)]">{d.class}</td>
+                  <td className="px-4 py-3 text-[var(--text-muted)] text-xs leading-relaxed">
+                    {d.dose && <div><span className="font-semibold">Dose:</span> {d.dose}</div>}
+                    {d.mechanism && <div className="mt-1"><span className="font-semibold">MoA:</span> {d.mechanism}</div>}
+                    {d.monitoring && <div className="mt-1"><span className="font-semibold">Monitor:</span> {d.monitoring}</div>}
+                    {d.contraindications && <div className="mt-1"><span className="font-semibold text-rose-600">Avoid:</span> {d.contraindications}</div>}
+                  </td>
+                  <td className="px-4 py-3">
+                    <div className="flex flex-wrap gap-1">
+                      {d.sideEffects.map((se, j) => (
+                        <span key={j} className="text-[11px] px-2 py-0.5 rounded-md bg-red-50 dark:bg-red-950/30 text-red-600 dark:text-red-400 border border-red-200/40 font-semibold">{se}</span>
+                      ))}
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </Section>
+
+      {/* §21 Surgical Management */}
+      {note.surgical && (
+        <Section title="Surgical Management">
+          <p className="text-sm text-[var(--text)] leading-relaxed">{note.surgical}</p>
+        </Section>
+      )}
+
+      {/* §22 Monitoring */}
+      <Section title="Monitoring Parameters" tone="amber">
+        <p className="text-sm text-[var(--text)] leading-relaxed">{note.monitoring}</p>
+      </Section>
+
+      {/* §23 Prevention */}
+      {note.prevention?.length ? (
+        <Section title="Prevention">
+          <Bullets items={note.prevention} />
+        </Section>
+      ) : null}
+
+      {/* §24 Prognosis */}
+      {note.prognosis && (
+        <Section title="Prognosis">
+          <p className="text-sm text-[var(--text)] leading-relaxed">{note.prognosis}</p>
+        </Section>
+      )}
+
+      {/* §25 Patient Counseling */}
+      {note.counseling?.length ? (
+        <Section title="Patient Counseling">
+          <Bullets items={note.counseling} tone="amber" />
+        </Section>
+      ) : null}
+
+      {/* §26 Special Populations */}
+      {note.specialPopulations?.length ? (
+        <Section title="Special Populations">
+          <Bullets items={note.specialPopulations} />
+        </Section>
+      ) : null}
+
+      {/* §27 Clinical Pearls */}
+      {note.clinicalPearls?.length ? (
+        <Section title="Clinical Pearls" tone="violet">
+          <Bullets items={note.clinicalPearls} />
+        </Section>
+      ) : null}
+
+      {/* §28 Common Mistakes */}
+      {note.commonMistakes?.length ? (
+        <Section title="Common Mistakes" tone="rose">
+          <Bullets items={note.commonMistakes} tone="rose" />
+        </Section>
+      ) : null}
+
+      {/* §29 Drug Therapy Problems */}
+      {note.drugTherapyProblems?.length ? (
+        <Section title="Drug Therapy Problems (Clinical Pharmacy)">
+          <Bullets items={note.drugTherapyProblems} />
+        </Section>
+      ) : null}
+
+      {/* §30 Evidence-Based Guidelines */}
+      {note.guidelines?.length ? (
+        <Section title="Evidence-Based Guidelines">
+          <Bullets items={note.guidelines} />
+        </Section>
+      ) : null}
+
+      {/* Diagram (treatment algorithm) */}
       {note.diagram && (
         <div className="bg-white border border-[var(--border)] rounded-2xl p-4 sm:p-6 shadow-sm overflow-x-auto flex justify-center">
           <div dangerouslySetInnerHTML={{ __html: note.diagram }} className="[&_svg]:w-full [&_svg]:h-auto max-w-full" />
@@ -2150,52 +2458,71 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </div>
       )}
 
-      {/* Key Drugs */}
-      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-sm">
-        <h3 className="text-xs font-black uppercase tracking-wider text-[var(--primary)] mb-4">Key Drugs & Side Effects</h3>
-        <div className="overflow-x-auto rounded-xl border border-[var(--border)]/40">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="bg-[var(--surface-dim)] text-[var(--text-muted)] font-bold uppercase text-[11px] tracking-wider">
-                <th className="px-4 py-3 text-left w-[30%]">Drug</th>
-                <th className="px-4 py-3 text-left w-[25%]">Class</th>
-                <th className="px-4 py-3 text-left">Side Effects</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-[var(--border)]/30">
-              {note.keyDrugs.map((d, i) => (
-                <tr key={i} className="hover:bg-[var(--surface-dim)]/30">
-                  <td className="px-4 py-3 font-bold text-[var(--text)]">{d.drug}</td>
-                  <td className="px-4 py-3 text-[var(--text-muted)]">{d.class}</td>
-                  <td className="px-4 py-3">
-                    <div className="flex flex-wrap gap-1">
-                      {d.sideEffects.map((se, j) => (
-                        <span key={j} className="text-[11px] px-2 py-0.5 rounded-md bg-red-50 dark:bg-red-950/30 text-red-600 dark:text-red-400 border border-red-200/40 font-semibold">{se}</span>
-                      ))}
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
+      {/* §32 FAQ */}
+      {note.faq?.length ? (
+        <Section title="Frequently Asked Questions">
+          <div className="space-y-3">
+            {note.faq.map((f, i) => (
+              <div key={i} className="border border-[var(--border)]/40 rounded-xl p-3">
+                <p className="text-sm font-bold text-[var(--text)]">{f.q}</p>
+                <p className="text-xs text-[var(--text)] mt-1 leading-relaxed">{f.a}</p>
+              </div>
+            ))}
+          </div>
+        </Section>
+      ) : null}
 
-      {/* Monitoring */}
-      <div className="bg-amber-500/5 border border-amber-200/30 rounded-2xl p-6 shadow-sm">
-        <h3 className="text-xs font-black uppercase tracking-wider text-amber-600 mb-3">Monitoring Parameters</h3>
-        <p className="text-sm text-[var(--text)] leading-relaxed">{note.monitoring}</p>
-      </div>
+      {/* §33 Clinical Case Example */}
+      {note.caseExample && (
+        <Section title="Clinical Case Example">
+          <div className="space-y-2">
+            {note.caseExample.presentation && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Presentation</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.presentation}</p></div>}
+            {note.caseExample.examination && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Examination</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.examination}</p></div>}
+            {note.caseExample.investigations && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Investigations</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.investigations}</p></div>}
+            {note.caseExample.assessment && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Assessment</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.assessment}</p></div>}
+            {note.caseExample.management && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Management</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.management}</p></div>}
+            {note.caseExample.followUp && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Follow-Up</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.followUp}</p></div>}
+            {note.caseExample.learningPoints && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Learning Points</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.learningPoints}</p></div>}
+          </div>
+        </Section>
+      )}
 
-      {/* MCQs */}
-      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-sm">
-        <h3 className="text-xs font-black uppercase tracking-wider text-[var(--primary)] mb-4">Practice Questions</h3>
-        <div className="space-y-6">
-          {note.mcqs.map((mcq, i) => (
-            <MCQBlock key={i} mcq={mcq} index={i} />
-          ))}
-        </div>
-      </div>
+      {/* §34 Self-Assessment (MCQs) */}
+      {note.mcqs?.length ? (
+        <Section title="Self-Assessment Questions">
+          <div className="space-y-6">
+            {note.mcqs.map((mcq, i) => (
+              <MCQBlock key={i} mcq={mcq} index={i} />
+            ))}
+          </div>
+        </Section>
+      ) : null}
+
+      {/* §35 References */}
+      {note.references?.length ? (
+        <Section title="References">
+          <ol className="space-y-1.5 list-decimal list-inside">
+            {note.references.map((r, i) => (
+              <li key={i} className="text-xs text-[var(--text-muted)] leading-relaxed">{r}</li>
+            ))}
+          </ol>
+        </Section>
+      ) : null}
+
+      {/* §36 Metadata */}
+      {note.metadata && (
+        <Section title="Metadata">
+          <DefinitionList
+            rows={[
+              ...(note.metadata.lastUpdated ? [{ label: 'Last Updated', value: note.metadata.lastUpdated }] : []),
+              ...(note.metadata.version ? [{ label: 'Version', value: note.metadata.version }] : []),
+              ...(note.metadata.author ? [{ label: 'Content Author', value: note.metadata.author }] : []),
+              ...(note.metadata.reviewer ? [{ label: 'Clinical Reviewer', value: note.metadata.reviewer }] : []),
+              ...(note.metadata.evidenceLevel ? [{ label: 'Evidence Level', value: note.metadata.evidenceLevel }] : []),
+            ]}
+          />
+        </Section>
+      )}
     </div>
   )
 }

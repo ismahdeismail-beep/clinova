@@ -22,7 +22,8 @@ import CurriculumGraph from '../components/CurriculumGraph';
 import { getResourcesForUnit } from '../data/unitToLibraryMapping';
 import { getStaticContent } from '../data/unitStaticContent';
 import { LIBRARY, type LibraryResource } from '../data/onlineLibraryData';
-import { DISEASE_NOTES, type DiseaseNote } from '../data/diseaseNotes';
+import { type DiseaseNote } from '../data/diseaseNotes';
+import { DiseaseNoteService } from '../services/diseaseNote.service';
 
 function DownloadButton({ content, filename }: { content: string; filename: string }) {
   const [downloading, setDownloading] = useState(false);
@@ -205,6 +206,10 @@ export default function EducationHubScreen() {
   const handleUnitClick = (unit: EducationModuleUnit) => {
     if (scrollContainerRef.current) {
       scrollPositions.current.units = scrollContainerRef.current.scrollTop;
+    }
+    if (selectedModule?.id === 'online_books') {
+      navigate('/library');
+      return;
     }
     setSelectedUnit(unit);
     if (selectedModule) navigate(`/knowledge/${selectedModule.id}/${unit.id}`);
@@ -483,6 +488,11 @@ export default function EducationHubScreen() {
                           <Clock size={14} />
                           <span>{unit.estimatedHours} Hours Estimated</span>
                         </div>
+                        {selectedModule?.id === 'online_books' && (
+                          <div className="mt-2 text-[10px] font-bold text-sky-600 dark:text-sky-400 bg-sky-500/5 px-2 py-0.5 rounded-lg inline-flex items-center gap-1">
+                            <BookOpen size={10} /> Opens Online Library
+                          </div>
+                        )}
                       </div>
                       
                       <div className="flex flex-col items-end gap-4 shrink-0">
@@ -1977,10 +1987,31 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
 // DISEASE NOTES — full-page detail view
 // ==========================================
 function DiseaseNotesView({ unit }: { unit: EducationModuleUnit }) {
-  const notes = DISEASE_NOTES.filter(n => n.unitId === unit.id)
+  const [notes, setNotes] = useState<DiseaseNote[]>([])
+  const [loading, setLoading] = useState(true)
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null)
 
-  if (selectedIdx !== null) {
+  useEffect(() => {
+    let cancelled = false
+    setLoading(true)
+    DiseaseNoteService.getNotesByUnit(unit.id).then((data) => {
+      if (!cancelled) {
+        setNotes(data)
+        setLoading(false)
+      }
+    })
+    return () => { cancelled = true }
+  }, [unit.id])
+
+  if (loading) {
+    return (
+      <div className="py-12 text-center">
+        <div className="w-6 h-6 border-2 border-[var(--primary)] border-t-transparent rounded-full animate-spin mx-auto" />
+      </div>
+    )
+  }
+
+  if (selectedIdx !== null && notes[selectedIdx]) {
     return (
       <DiseaseDetailView
         note={notes[selectedIdx]}

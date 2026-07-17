@@ -14,6 +14,7 @@
     "supabase:migrate": "supabase db reset",
     "supabase:status": "supabase db lint",
     "db:seed": "tsx scripts/seedExistingDb.ts",
+    "db:seed:notes": "tsx scripts/seedDiseaseNotes.ts",
     "db:validate": "tsx scripts/validateDb.ts"
   },
   "dependencies": {

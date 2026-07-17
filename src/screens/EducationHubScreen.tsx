@@ -2137,6 +2137,19 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </div>
       )}
 
+      {/* Pathophysiology / mechanism diagram */}
+      {note.pathophysiologyDiagram && (
+        <div className="bg-gradient-to-br from-[var(--surface-dim)]/40 to-transparent border border-[var(--border)] rounded-2xl p-4 sm:p-6 shadow-sm overflow-x-auto flex justify-center">
+          <div className="w-full">
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-1 h-4 bg-[var(--primary)] rounded-full" />
+              <h4 className="text-xs font-black uppercase tracking-wider text-[var(--primary)]">Mechanism & Pathophysiology</h4>
+            </div>
+            <div dangerouslySetInnerHTML={{ __html: note.pathophysiologyDiagram }} className="[&_svg]:w-full [&_svg]:h-auto max-w-full" />
+          </div>
+        </div>
+      )}
+
       {/* Key Drugs */}
       <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-sm">
         <h3 className="text-xs font-black uppercase tracking-wider text-[var(--primary)] mb-4">Key Drugs & Side Effects</h3>

@@ -17,6 +17,7 @@
   ALLERGIC_RHINITIS_DIAGRAM, PARACETAMOL_OD_DIAGRAM, OP_POISONING_DIAGRAM,
   OPIOID_OD_DIAGRAM, POLYPHARMACY_DIAGRAM,
 } from './diseaseDiagrams'
+import { PATHOPHYSIOLOGY_DIAGRAMS } from './diseaseMechanismDiagrams'
 import { DISEASE_KENYA_CONTEXT } from './diseaseKenyaContext'
 import { DISEASE_PATHOPHYSIOLOGY } from './diseasePathophysiology'
 
@@ -36,6 +37,7 @@ export interface DiseaseNote {
   kenyaContext?: string
   pathophysiology?: string
   diagram?: string
+  pathophysiologyDiagram?: string
   keyDrugs: { drug: string; class: string; sideEffects: string[] }[]
   monitoring: string
   mcqs: DiseaseNoteMCQ[]
@@ -1643,4 +1645,5 @@ export const DISEASE_NOTES: DiseaseNote[] = RAW_DISEASE_NOTES.map((note) => ({
   ...note,
   kenyaContext: note.kenyaContext ?? DISEASE_KENYA_CONTEXT[note.id],
   pathophysiology: note.pathophysiology ?? DISEASE_PATHOPHYSIOLOGY[note.id],
+  pathophysiologyDiagram: note.pathophysiologyDiagram ?? PATHOPHYSIOLOGY_DIAGRAMS[note.id],
 }))

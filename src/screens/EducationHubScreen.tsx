@@ -2043,7 +2043,7 @@ function DiseaseNotesView({ unit }: { unit: EducationModuleUnit }) {
 
 function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: { note: DiseaseNote; onBack: () => void; hasPrev?: boolean; hasNext?: boolean; onPrev?: () => void; onNext?: () => void }) {
   return (
-    <div className="max-w-4xl mx-auto space-y-8 py-2">
+    <div className="w-full space-y-8 py-2">
       {/* Header */}
       <div className="flex items-center gap-2">
         <button
@@ -2101,8 +2101,8 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
 
       {/* Diagram */}
       {note.diagram && (
-        <div className="bg-white dark:bg-gray-900 border border-[var(--border)] rounded-2xl p-6 shadow-sm overflow-x-auto flex justify-center">
-          <div dangerouslySetInnerHTML={{ __html: note.diagram }} className="max-w-full" />
+        <div className="bg-white border border-[var(--border)] rounded-2xl p-4 sm:p-6 shadow-sm overflow-x-auto flex justify-center">
+          <div dangerouslySetInnerHTML={{ __html: note.diagram }} className="[&_svg]:w-full [&_svg]:h-auto max-w-full" />
         </div>
       )}
 
@@ -2183,19 +2183,19 @@ function MCQBlock({ mcq, index }: { mcq: DiseaseNote['mcqs'][number]; index: num
         <span className="text-[10px] font-black text-[var(--text-muted)] bg-[var(--surface-dim)] px-1.5 py-0.5 rounded shrink-0 mt-0.5">Q{index + 1}</span>
         <p className="text-xs font-bold text-[var(--text)] leading-relaxed">{mcq.question}</p>
       </div>
-      <div className="space-y-1.5">
+      <div className="border border-[var(--border)]/40 rounded-xl overflow-hidden divide-y divide-[var(--border)]/20">
         {mcq.options.map((opt) => {
           const letter = opt.charAt(0)
           const isSelected = selected === opt
           const isCorrect = letter === correctLetter
 
-          let style = 'border-[var(--border)] bg-[var(--bg)] hover:bg-[var(--surface-dim)]'
+          let style = 'bg-[var(--bg)] hover:bg-[var(--surface-dim)]'
           if (answered) {
-            if (isCorrect) style = 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/20 text-emerald-700 dark:text-emerald-300 font-bold'
-            else if (isSelected) style = 'border-red-500 bg-red-50 dark:bg-red-950/20 text-red-600 dark:text-red-300'
-            else style = 'border-[var(--border)]/30 bg-[var(--surface-dim)] opacity-50'
+            if (isCorrect) style = 'bg-emerald-50 dark:bg-emerald-950/20 text-emerald-700 dark:text-emerald-300 font-bold'
+            else if (isSelected) style = 'bg-red-50 dark:bg-red-950/20 text-red-600 dark:text-red-300'
+            else style = 'bg-[var(--surface-dim)] opacity-50'
           } else if (isSelected) {
-            style = 'border-[var(--primary)] bg-[var(--primary)]/5 font-bold'
+            style = 'bg-[var(--primary)]/5 font-bold'
           }
 
           return (
@@ -2203,7 +2203,7 @@ function MCQBlock({ mcq, index }: { mcq: DiseaseNote['mcqs'][number]; index: num
               key={opt}
               onClick={() => handleSelect(opt)}
               disabled={answered}
-              className={`w-full px-3 py-2 rounded-lg border text-xs text-left transition-all ${style}`}
+              className={`w-full px-3 py-2.5 text-xs text-left transition-all ${style}`}
             >
               {opt}
             </button>

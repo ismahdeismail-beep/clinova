@@ -301,6 +301,25 @@
   cursor: default;
 }
 
+/* Bound tables inside prose (Tailwind typography plugin lacks visible borders) */
+.prose table {
+  display: block;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+.prose thead,
+.prose tbody {
+  min-width: fit-content;
+}
+.prose th,
+.prose td {
+  white-space: nowrap;
+}
+
 /* Highlighted inline medicine / disease tokens inside prose */
 .cl-med {
   color: var(--medicine);

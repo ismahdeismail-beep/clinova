@@ -764,7 +764,7 @@ export default function CurriculumGraph() {
                         <span className="text-[var(--primary)]">{selectedNode.data.estimatedHours} Hours</span>
                       </div>
                       <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
-                        This subfolder is focused on board preparation, OSCE training, and pharmacology workflows. Write notes and upload slides to unlock the Study Assistant.
+                        This subfolder is focused on board preparation, OSCE training, and pharmacology workflows.
                       </p>
                     </div>
                   )}
@@ -837,9 +837,6 @@ export default function CurriculumGraph() {
 
                 {selectedNode.type === 'unit' && selectedNode.data && (
                   <div className="space-y-2">
-                    <p className="text-[10px] text-[var(--text-muted)] italic text-center font-semibold mb-1">
-                      Drag and drop files to start compiling guides.
-                    </p>
                     <div className="flex gap-2">
                       <button
                         onClick={handleResetView}

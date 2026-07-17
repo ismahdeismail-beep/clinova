@@ -1073,184 +1073,82 @@ export default function DrugIndexScreen() {
                 </span>
               </div>
 
-              {/* Entry Mode Selector */}
-              <div className="grid grid-cols-2 bg-[var(--surface-dim)] p-1 rounded-xl border border-[var(--border)] text-xs font-bold">
-                <button
-                  type="button"
-                  onClick={() => setEntryMode('manual')}
-                  className={`py-2 rounded-lg transition-all cursor-pointer ${
-                    entryMode === 'manual'
-                      ? 'bg-[var(--surface)] text-[var(--text)] shadow-sm border border-[var(--border)]'
-                      : 'text-[var(--text-muted)] hover:text-[var(--text)]'
-                  }`}
-                >
-                  Manual Entry
-                </button>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setEntryMode('upload');
-                    setUploadError(null);
-                    setUploadSuccessMessage(null);
-                  }}
-                  className={`py-2 rounded-lg transition-all cursor-pointer flex items-center justify-center gap-1.5 ${
-                    entryMode === 'upload'
-                      ? 'bg-[var(--surface)] text-[var(--text)] shadow-sm border border-[var(--border)]'
-                      : 'text-[var(--text-muted)] hover:text-[var(--text)]'
-                  }`}
-                >
-                  <Sparkles size={12} className="text-[var(--primary)] animate-pulse" />
-                  Document Scan
-                </button>
-              </div>
+              <span className="text-[10px] font-bold text-[var(--text-muted)] uppercase block">Add Medication</span>
 
-              {entryMode === 'manual' ? (
-                /* Input Form */
-                <form onSubmit={(e) => {
-                  e.preventDefault();
-                  if (!newMedName.trim()) return;
-                  const newMed: AddedMedication = {
-                    id: Math.random().toString(36).substring(2, 9),
-                    name: newMedName.trim(),
-                    dose: newMedDose.trim(),
-                    frequency: newMedFreq.trim(),
-                    route: newMedRoute,
-                  };
-                  setAddedMeds([...addedMeds, newMed]);
-                  setNewMedName('');
-                  setNewMedDose('');
-                  setNewMedFreq('');
-                  setNewMedRoute('Oral');
-                  setCheckResult(null);
-                }} className="space-y-3">
-                  <div className="space-y-1 text-left">
-                    <label className="text-[10px] font-bold text-[var(--text-muted)] uppercase block">Medication Name (Generic/Brand)</label>
+              <form onSubmit={(e) => {
+                e.preventDefault();
+                if (!newMedName.trim()) return;
+                const newMed: AddedMedication = {
+                  id: Math.random().toString(36).substring(2, 9),
+                  name: newMedName.trim(),
+                  dose: newMedDose.trim(),
+                  frequency: newMedFreq.trim(),
+                  route: newMedRoute,
+                };
+                setAddedMeds([...addedMeds, newMed]);
+                setNewMedName('');
+                setNewMedDose('');
+                setNewMedFreq('');
+                setNewMedRoute('Oral');
+                setCheckResult(null);
+              }} className="space-y-3">
+                <div className="space-y-1 text-left">
+                  <label className="text-[10px] font-bold text-[var(--text-muted)] uppercase block">Medication Name (Generic/Brand)</label>
+                  <input
+                    type="text"
+                    required
+                    placeholder="e.g. Warfarin, Amlodipine, Ibuprofen..."
+                    value={newMedName}
+                    onChange={(e) => setNewMedName(e.target.value)}
+                    className="w-full bg-[var(--surface-dim)] text-xs text-[var(--text)] border border-[var(--border)] rounded-xl px-3 py-2.5 outline-none font-semibold focus:border-[var(--primary)]"
+                  />
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-left">
+                  <div className="space-y-1">
+                    <label className="text-[10px] font-bold text-[var(--text-muted)] uppercase block">Dose</label>
                     <input
                       type="text"
-                      required
-                      placeholder="e.g. Warfarin, Amlodipine, Ibuprofen..."
-                      value={newMedName}
-                      onChange={(e) => setNewMedName(e.target.value)}
-                      className="w-full bg-[var(--surface-dim)] text-xs text-[var(--text)] border border-[var(--border)] rounded-xl px-3 py-2.5 outline-none font-semibold focus:border-[var(--primary)]"
+                      placeholder="e.g. 5mg, 500mg"
+                      value={newMedDose}
+                      onChange={(e) => setNewMedDose(e.target.value)}
+                      className="w-full bg-[var(--surface-dim)] text-xs text-[var(--text)] border border-[var(--border)] rounded-xl px-2.5 py-2 outline-none font-semibold focus:border-[var(--primary)]"
                     />
                   </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-left">
-                    <div className="space-y-1">
-                      <label className="text-[10px] font-bold text-[var(--text-muted)] uppercase block">Dose</label>
-                      <input
-                        type="text"
-                        placeholder="e.g. 5mg, 500mg"
-                        value={newMedDose}
-                        onChange={(e) => setNewMedDose(e.target.value)}
-                        className="w-full bg-[var(--surface-dim)] text-xs text-[var(--text)] border border-[var(--border)] rounded-xl px-2.5 py-2 outline-none font-semibold focus:border-[var(--primary)]"
-                      />
-                    </div>
-                    <div className="space-y-1">
-                      <label className="text-[10px] font-bold text-[var(--text-muted)] uppercase block">Frequency</label>
-                      <input
-                        type="text"
-                        placeholder="e.g. OD, BD, TDS"
-                        value={newMedFreq}
-                        onChange={(e) => setNewMedFreq(e.target.value)}
-                        className="w-full bg-[var(--surface-dim)] text-xs text-[var(--text)] border border-[var(--border)] rounded-xl px-2.5 py-2 outline-none font-semibold focus:border-[var(--primary)]"
-                      />
-                    </div>
-                    <div className="space-y-1">
-                      <label className="text-[10px] font-bold text-[var(--text-muted)] uppercase block">Route</label>
-                      <select
-                        value={newMedRoute}
-                        onChange={(e) => setNewMedRoute(e.target.value)}
-                        className="w-full bg-[var(--surface-dim)] text-xs text-[var(--text)] border border-[var(--border)] rounded-xl px-2 py-2 outline-none font-semibold cursor-pointer focus:border-[var(--primary)]"
-                      >
-                        <option value="Oral">Oral</option>
-                        <option value="IV">IV</option>
-                        <option value="IM">IM</option>
-                        <option value="SC">SC</option>
-                        <option value="Topical">Topical</option>
-                        <option value="Inhalation">Inhalation</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full py-2.5 bg-slate-950 hover:opacity-90 text-white text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 cursor-pointer"
-                  >
-                    <Plus size={14} /> Add Medication
-                  </button>
-                </form>
-              ) : (
-                /* AI Document Scan Component */
-                <div className="space-y-3 text-left animate-in fade-in duration-200">
-                  <div className="text-left">
-                    <span className="text-[10px] font-bold text-[var(--text-muted)] uppercase block">Upload Prescription or Treatment Sheet</span>
-                    <p className="text-[10px] text-[var(--text-muted)] mt-0.5">Let Clinova OS scan a photo or PDF to instantly extract patient medications.</p>
-                  </div>
-                  
-                  {/* Drag and Drop Zone */}
-                  <div
-                    onDragEnter={handleDrag}
-                    onDragOver={handleDrag}
-                    onDragLeave={handleDrag}
-                    onDrop={handleDrop}
-                    className={`border-2 border-dashed rounded-xl p-5 text-center transition-all flex flex-col items-center justify-center relative ${
-                      dragActive 
-                        ? 'border-[var(--primary)] bg-[var(--primary-container)]/10' 
-                        : 'border-[var(--border)] bg-[var(--surface-dim)] hover:border-[var(--text-dim)]'
-                    }`}
-                  >
+                  <div className="space-y-1">
+                    <label className="text-[10px] font-bold text-[var(--text-muted)] uppercase block">Frequency</label>
                     <input
-                      type="file"
-                      id="med-file-upload"
-                      accept=".pdf,image/*"
-                      onChange={handleFileInputChange}
-                      className="hidden"
-                      disabled={fileUploading}
+                      type="text"
+                      placeholder="e.g. OD, BD, TDS"
+                      value={newMedFreq}
+                      onChange={(e) => setNewMedFreq(e.target.value)}
+                      className="w-full bg-[var(--surface-dim)] text-xs text-[var(--text)] border border-[var(--border)] rounded-xl px-2.5 py-2 outline-none font-semibold focus:border-[var(--primary)]"
                     />
-                    
-                    {fileUploading ? (
-                      <div className="space-y-3 py-2 flex flex-col items-center justify-center">
-                        <Loader2 size={24} className="text-[var(--primary)] animate-spin" />
-                        <div className="text-center">
-                          <p className="text-xs font-bold text-[var(--text)]">Scanning Document...</p>
-                          <p className="text-[10px] text-[var(--text-muted)] mt-0.5">Clinova is extracting medication records</p>
-                        </div>
-                      </div>
-                    ) : (
-                      <label htmlFor="med-file-upload" className="cursor-pointer w-full h-full flex flex-col items-center justify-center py-2">
-                        <FileUp size={24} className="text-[var(--text-dim)] mb-2 hover:text-[var(--primary)]" />
-                        <span className="text-xs font-bold text-[var(--text)] block">
-                          Drag & drop your file here, or <span className="text-[var(--primary)] underline">browse</span>
-                        </span>
-                        <span className="text-[10px] text-[var(--text-muted)] mt-1">
-                          Supports PDF or Image (Prescription, Ward Chart)
-                        </span>
-                      </label>
-                    )}
                   </div>
-
-                  {/* Upload Error Banner */}
-                  {uploadError && (
-                    <div className="p-3 bg-red-50 text-red-800 text-xs rounded-xl flex items-start gap-2 border border-red-100 animate-in slide-in-from-top-1">
-                      <AlertTriangle size={14} className="text-red-600 mt-0.5 shrink-0" />
-                      <div>
-                        <span className="font-bold">Extraction Error:</span> {uploadError}
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Upload Success Banner */}
-                  {uploadSuccessMessage && (
-                    <div className="p-3 bg-green-50 text-green-800 text-xs rounded-xl flex items-start gap-2 border border-green-100 animate-in slide-in-from-top-1">
-                      <CheckCircle2 size={14} className="text-green-600 mt-0.5 shrink-0" />
-                      <div>
-                        <span className="font-bold">Success!</span> {uploadSuccessMessage}
-                      </div>
-                    </div>
-                  )}
+                  <div className="space-y-1">
+                    <label className="text-[10px] font-bold text-[var(--text-muted)] uppercase block">Route</label>
+                    <select
+                      value={newMedRoute}
+                      onChange={(e) => setNewMedRoute(e.target.value)}
+                      className="w-full bg-[var(--surface-dim)] text-xs text-[var(--text)] border border-[var(--border)] rounded-xl px-2 py-2 outline-none font-semibold cursor-pointer focus:border-[var(--primary)]"
+                    >
+                      <option value="Oral">Oral</option>
+                      <option value="IV">IV</option>
+                      <option value="IM">IM</option>
+                      <option value="SC">SC</option>
+                      <option value="Topical">Topical</option>
+                      <option value="Inhalation">Inhalation</option>
+                    </select>
+                  </div>
                 </div>
-              )}
+
+                <button
+                  type="submit"
+                  className="w-full py-2.5 bg-slate-950 hover:opacity-90 text-white text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 cursor-pointer"
+                >
+                  <Plus size={14} /> Add Medication
+                </button>
+              </form>
 
               {/* List of Added Medications */}
               {addedMeds.length > 0 ? (
@@ -1284,7 +1182,7 @@ export default function DrugIndexScreen() {
                 </div>
               ) : (
                 <div className="border-2 border-dashed border-[var(--border)] rounded-xl p-6 text-center text-[var(--text-muted)] text-xs">
-                  No medications added yet. Type a drug name above or load a quick test template below.
+                  No medications added yet. Use the form above to add a drug.
                 </div>
               )}
 

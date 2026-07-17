@@ -1836,7 +1836,7 @@ export default function ClinicalAssistantScreen() {
                   type="button"
                   onClick={() => fileInputRef.current?.click()}
                   className="p-2.5 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--surface-dim)] rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center"
-                  title="Upload PDF or Image"
+                  title="Attach file"
                 >
                   <Paperclip size={18} />
                 </button>

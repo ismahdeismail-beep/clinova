@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { 
-  ArrowRight, Sparkles, CheckCircle2, Bot, BookOpen, GraduationCap, FileUp, ShieldAlert
+  ArrowRight, Sparkles, CheckCircle2, Bot, BookOpen, GraduationCap, FileSearch, ShieldAlert
 } from 'lucide-react';
 import ClinovaLogo from '../components/ClinovaLogo';
 
@@ -19,7 +19,7 @@ export default function LandingScreen() {
       icon: BookOpen,
       color: "text-[var(--primary)] bg-[var(--primary-container)]",
       title: "Clinical Library",
-      description: "Instant answers cited directly from KDI, Medscape, and your uploaded notes."
+      description: "Instant answers cited directly from KDI and Medscape."
     },
     {
       icon: GraduationCap,
@@ -28,10 +28,10 @@ export default function LandingScreen() {
       description: "Instantly convert notes into structured summaries, MCQs, and Podcast overviews."
     },
     {
-      icon: FileUp,
+      icon: FileSearch,
       color: "text-[var(--primary)] bg-[var(--primary-container)]",
-      title: "Smart Uploads",
-      description: "Upload PDFs and images for personalized AI summarization and organization."
+      title: "Document Analysis",
+      description: "Extract and organize medication data from prescriptions and clinical sheets."
     }
   ];
 

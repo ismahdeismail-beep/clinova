@@ -586,10 +586,7 @@ export default function DrugIndexScreen() {
       /* ── Browse mode: heading + tabs + content ── */
       <>
         <div className="mb-4">
-          <h1 className="text-3xl font-bold text-[var(--text)] mb-2 tracking-tight">Kenya Drug Index (KDI)</h1>
-          <p className="text-[var(--text-muted)] text-sm">
-            Access comprehensive clinical drug monographs, WHO essential classifications, and perform dynamic, patient-contextualized interaction audits.
-          </p>
+          <h1 className="text-3xl font-bold text-[var(--text)] tracking-tight">Kenya Drug Index (KDI)</h1>
         </div>
 
         {/* Search Bar — always visible at top */}

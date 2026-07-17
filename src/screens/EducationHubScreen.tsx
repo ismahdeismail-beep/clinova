@@ -355,9 +355,6 @@ export default function EducationHubScreen() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-[var(--text)] tracking-tight leading-tight">
               Clinova <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-purple-500">Learning Platform</span>
             </h1>
-            <p className="text-sm text-[var(--text-muted)] mt-2 max-w-2xl leading-relaxed">
-              Your primary academic workspace. Set up custom units and let Clinova AI compile active study guides, revision cards, and clinical OSCE quiz questions.
-            </p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto shrink-0">

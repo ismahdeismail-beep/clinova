@@ -661,24 +661,6 @@ export default function ClinicalCasesScreen() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-[var(--text)] tracking-tight leading-tight">
               Clinical Case <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-purple-500">Studies</span>
             </h1>
-            <p className="text-sm text-[var(--text-muted)] mt-2 max-w-2xl leading-relaxed">
-              Integrate knowledge from multiple disciplines to simulate real patient care. Practice diagnostic reasoning and pharmacotherapy management.
-            </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-            {!selectedSpecialty && (
-              <div className="relative w-full md:w-96">
-                <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" size={18} />
-                <input
-                  type="text"
-                    placeholder="Search cases, diseases, or drugs..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
-                />
-              </div>
-            )}
           </div>
         </div>
         )}
@@ -725,7 +707,6 @@ export default function ClinicalCasesScreen() {
               <div className="flex items-center justify-between">
                 <div>
                   <h2 className="text-2xl font-bold text-[var(--text)]">Clinical Cases</h2>
-                  <p className="text-sm text-[var(--text-muted)] mt-1">Select a therapeutic area to explore clinical cases</p>
                 </div>
                 <div className="text-sm text-[var(--text-muted)] font-medium">
                   {allCases.length} cases

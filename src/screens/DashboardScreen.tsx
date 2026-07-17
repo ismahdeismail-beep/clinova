@@ -341,10 +341,10 @@ export default function DashboardScreen() {
               {userData && (
                 <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden backdrop-blur-md">
                   <div className="p-5 border-b border-[var(--border)] flex items-center justify-between">
-                    <h3 className="font-semibold text-[var(--text)] flex items-center gap-2">
+                    <button onClick={() => navigate('/settings')} className="font-semibold text-[var(--text)] flex items-center gap-2 hover:text-[var(--primary)] transition-colors cursor-pointer text-left">
                       <GraduationCap size={18} className="text-[var(--primary)]" />
                       Clinical Focus Profile
-                    </h3>
+                    </button>
                     <button 
                       onClick={() => {
                         setPrefLevel(userData.academicLevel || 'Year 1: Basic Medical Sciences');

@@ -12,6 +12,7 @@ const ClinicalAssistantScreen = React.lazy(() => import('./screens/ClinicalAssis
 const EducationHubScreen = React.lazy(() => import('./screens/EducationHubScreen'));
 const BoardExamScreen = React.lazy(() => import('./screens/BoardExamScreen'));
 const OnlineLibraryScreen = React.lazy(() => import('./screens/OnlineLibraryScreen'));
+const SettingsScreen = React.lazy(() => import('./screens/SettingsScreen'));
 const LoginScreen = React.lazy(() => import('./screens/LoginScreen'));
 const LandingScreen = React.lazy(() => import('./screens/LandingScreen'));
 
@@ -68,7 +69,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
           
           <div className="h-8 w-px bg-[var(--border)] mx-1 hidden sm:block"></div>
           
-          <div className="flex items-center gap-2 pl-1 cursor-pointer hover:opacity-80">
+          <Link to="/settings" className="flex items-center gap-2 pl-1 hover:opacity-80 transition-opacity">
             <div className="hidden sm:block text-right">
               <p className="text-sm font-semibold text-[var(--text)] leading-none">{userData?.name || 'Guest'}</p>
               <p className="text-[10px] text-[var(--text-muted)] font-medium mt-1 capitalize">{userData?.role || 'user'}</p>
@@ -76,7 +77,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
             <div className="rounded-full bg-gradient-to-tr from-[var(--primary)] to-[var(--primary-hover)] text-[var(--primary-foreground)] flex items-center justify-center font-bold shadow-sm border-2 border-white w-9 h-9 text-sm">
               {userData?.name ? userData.name.split(' ').map((n: string) => n[0]).join('').substring(0, 2) : 'G'}
             </div>
-          </div>
+          </Link>
         </div>
       </header>
     </div>
@@ -240,6 +241,7 @@ function AppContent() {
               <Route path="/board-exam" element={<BoardExamScreen />} />
               <Route path="/board-exam/:setId" element={<BoardExamScreen />} />
               <Route path="/library" element={<OnlineLibraryScreen />} />
+              <Route path="/settings" element={<SettingsScreen />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </React.Suspense>

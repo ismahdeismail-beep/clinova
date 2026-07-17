@@ -2084,6 +2084,14 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         <p className="text-sm text-[var(--text)] leading-relaxed">{note.overview}</p>
       </div>
 
+      {/* Pathophysiology */}
+      {note.pathophysiology && (
+        <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-sm">
+          <h3 className="text-xs font-black uppercase tracking-wider text-[var(--primary)] mb-3">Pathophysiology & Mechanism</h3>
+          <p className="text-sm text-[var(--text)] leading-relaxed">{note.pathophysiology}</p>
+        </div>
+      )}
+
       {/* Kenyan Context */}
       {note.kenyaContext && (
         <div className="bg-green-500/5 border border-green-200/40 rounded-2xl p-6 shadow-sm">

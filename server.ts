@@ -26,8 +26,8 @@ import {
 import { processOneJob, processJobBatch } from './src/server/jobProcessor.js';
 import { getPrompts, updatePrompt, resetPrompts } from './src/server/promptRegistry.js';
 import { fetchOpenFdaLabel, resolveRxCui, fetchRxNormInteractions } from './src/server/externalMedicinesApi.js';
-import { crawlSource, crawlMany, searchLibrary, isSupermemoryConfigured } from './src/server/bookCrawler.service.js';
-import { LIBRARY_CATEGORY } from './src/server/supermemory.service.js';
+import { crawlSource, crawlMany, searchLibrary } from './src/server/bookCrawler.service.js';
+import { LIBRARY_CATEGORY, isSupermemoryConfigured } from './src/server/supermemory.service.js';
 import { createClient } from '@supabase/supabase-js';
 
 // Server-side Supabase client (service role) for privileged clinical-case writes.

@@ -33,6 +33,7 @@ export interface DiseaseNote {
   specialty: string
   overview: string
   kenyaContext?: string
+  pathophysiology?: string
   diagram?: string
   keyDrugs: { drug: string; class: string; sideEffects: string[] }[]
   monitoring: string

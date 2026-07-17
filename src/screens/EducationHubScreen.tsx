@@ -330,7 +330,7 @@ export default function EducationHubScreen() {
 
   return (
     <div ref={scrollContainerRef} className="flex-1 bg-[var(--bg)] min-h-screen overflow-y-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-4 sm:space-y-6">
         
         {/* Header Section */}
         {selectedModule ? (
@@ -405,7 +405,7 @@ export default function EducationHubScreen() {
         )}
 
         {/* Content Area */}
-        <div className="pb-24">
+        <div className="pb-20 sm:pb-24">
           
           {/* Level 1: Modules — CurriculumGraph admin-only */}
           {isAdmin && !selectedModule && viewMode === 'graph' && (
@@ -2074,7 +2074,7 @@ function DiseaseNotesView({ unit }: { unit: EducationModuleUnit }) {
 
 function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: { note: DiseaseNote; onBack: () => void; hasPrev?: boolean; hasNext?: boolean; onPrev?: () => void; onNext?: () => void }) {
   return (
-    <div className="w-full space-y-8 py-2">
+    <div className="w-full space-y-5 sm:space-y-8 py-2">
       {/* Header */}
       <div className="flex items-center gap-2">
         <button

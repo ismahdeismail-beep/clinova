@@ -839,11 +839,11 @@ export default function ClinicalCasesScreen() {
 
   return (
     <div className="flex-1 bg-[var(--bg)] min-h-screen overflow-y-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-4 sm:space-y-6">
         
         {/* Header Section — hidden when drilling into a specialty */}
         {!selectedSpecialty && (
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
             <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--primary)] mb-2">
               <Stethoscope size={16} /> Clinical Cases
@@ -1030,32 +1030,33 @@ export default function ClinicalCasesScreen() {
                     </h2>
                   </div>
 
-                  <div className="space-y-0.5 border border-[var(--border)] rounded-xl overflow-hidden divide-y divide-[var(--border)]">
-                    <div className="grid grid-cols-[1fr_auto_auto] gap-3 px-4 py-2 bg-[var(--surface-dim)]/50 text-[10px] font-bold uppercase text-[var(--text-muted)] tracking-wider">
+                  <div className="overflow-x-auto -mx-3 sm:mx-0">
+                  <div className="min-w-[400px] sm:min-w-0 border border-[var(--border)] rounded-xl overflow-hidden divide-y divide-[var(--border)]">
+                    <div className="grid grid-cols-[1fr_auto_auto] gap-2 sm:gap-3 px-3 sm:px-4 py-2 bg-[var(--surface-dim)]/50 text-[10px] font-bold uppercase text-[var(--text-muted)] tracking-wider">
                       <span>Case Title</span>
-                      <span className="w-24 text-center">Patient</span>
-                      <span className="w-20 text-center">Difficulty</span>
+                      <span className="w-16 sm:w-24 text-center">Patient</span>
+                      <span className="w-16 sm:w-20 text-center">Difficulty</span>
                     </div>
                     {casesForSelectedDisease.map((clinicalCase, idx) => (
                       <div 
                         key={idx}
                         onClick={() => handleCaseClick(clinicalCase)}
-                        className="grid grid-cols-[1fr_auto_auto] gap-3 px-4 py-2.5 bg-[var(--surface)] hover:bg-[var(--surface-dim)]/50 cursor-pointer transition-colors group items-center"
+                        className="grid grid-cols-[1fr_auto_auto] gap-2 sm:gap-3 px-3 sm:px-4 py-2.5 bg-[var(--surface)] hover:bg-[var(--surface-dim)]/50 cursor-pointer transition-colors group items-center"
                       >
                         <div className="min-w-0">
                           <h3 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors truncate">
                             {clinicalCase.title}
                           </h3>
-                          <p className="text-[11px] text-[var(--text-muted)] truncate">
+                          <p className="text-[11px] text-[var(--text-muted)] truncate hidden sm:block">
                             "{clinicalCase.chiefComplaint}"
                           </p>
                         </div>
-                        <div className="w-24 text-center shrink-0">
+                        <div className="w-16 sm:w-24 text-center shrink-0">
                           <p className="text-xs font-bold text-[var(--text)]">{getInitials(clinicalCase.patientName)}</p>
-                          <p className="text-[10px] text-[var(--text-muted)] truncate">{clinicalCase.demographics}</p>
+                          <p className="text-[10px] text-[var(--text-muted)] truncate hidden sm:block">{clinicalCase.demographics}</p>
                         </div>
-                        <div className="w-20 text-center shrink-0">
-                          <span className={`inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider ${
+                        <div className="w-16 sm:w-20 text-center shrink-0">
+                          <span className={`inline-block px-1.5 sm:px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider ${
                             clinicalCase.difficulty === 'Beginner' ? 'bg-emerald-500/10 text-emerald-600' :
                             clinicalCase.difficulty === 'Intermediate' ? 'bg-amber-500/10 text-amber-600' :
                             'bg-rose-500/10 text-rose-600'
@@ -1067,13 +1068,14 @@ export default function ClinicalCasesScreen() {
                     ))}
 
                     {casesForSelectedDisease.length === 0 && (
-                      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-8 text-center">
-                        <h3 className="text-base font-bold text-[var(--text)]">No Cases Available Yet</h3>
+                      <div className="bg-[var(--surface)] p-6 text-center">
+                        <h3 className="text-sm font-bold text-[var(--text)]">No Cases Available Yet</h3>
                         <p className="text-xs text-[var(--text-muted)] mt-1">
                           Teaching cases for {selectedDisease} are being compiled.
                         </p>
                       </div>
                     )}
+                  </div>
                   </div>
                 </div>
           )}

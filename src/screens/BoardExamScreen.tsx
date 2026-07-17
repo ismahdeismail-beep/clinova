@@ -269,7 +269,7 @@ export default function BoardExamScreen() {
           Back to Education Hub
         </button>
 
-        <div className="mb-8">
+        <div className="mb-6 sm:mb-8">
           <div className="flex items-center gap-3 mb-2">
             <div className="w-10 h-10 rounded-xl bg-amber-500/15 flex items-center justify-center">
               <GraduationCap size={20} className="text-amber-500" />
@@ -292,7 +292,7 @@ export default function BoardExamScreen() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 sm:mb-8">
           {SET_INFO.map((set) => {
             const qs = getQuestionsByPredictionSet(SET_NUMBER[set.id])
             const mcqCount = qs.filter((q) => q.type === 'mcq').length

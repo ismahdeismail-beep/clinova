@@ -1316,7 +1316,7 @@ export default function ClinicalAssistantScreen() {
           <div className="max-w-3xl mx-auto w-full flex flex-col gap-6">
             {/* Welcome State / Initial Empty State */}
           {messages.length === 0 && (
-            <div className="max-w-3xl mx-auto py-8 sm:py-12 px-2">
+            <div className="max-w-3xl mx-auto py-4 sm:py-8 px-2">
               <motion.div 
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}

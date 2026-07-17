@@ -336,7 +336,7 @@ export default function DashboardScreen() {
             </div>
 
             {/* Right Column */}
-            <div className="space-y-8">
+            <div className="space-y-4 md:space-y-8">
               {/* Clinical Focus Profile & Preferences Adjuster */}
               {userData && (
                 <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden backdrop-blur-md">

@@ -26,6 +26,8 @@ import {
 import { processOneJob, processJobBatch } from './src/server/jobProcessor.js';
 import { getPrompts, updatePrompt, resetPrompts } from './src/server/promptRegistry.js';
 import { fetchOpenFdaLabel, resolveRxCui, fetchRxNormInteractions } from './src/server/externalMedicinesApi.js';
+import { crawlSource, crawlMany, searchLibrary, isSupermemoryConfigured } from './src/server/bookCrawler.service.js';
+import { LIBRARY_CATEGORY } from './src/server/supermemory.service.js';
 import { createClient } from '@supabase/supabase-js';
 
 // Server-side Supabase client (service role) for privileged clinical-case writes.
@@ -1852,6 +1854,53 @@ async function startServer() {
   } else {
     const distPath = path.join(process.cwd(), 'dist');
     app.use(express.static(distPath));
+
+    // ── Library ingestion (Supermemory + Firecrawl) ───────────────────────────
+    app.post('/api/library/crawl', async (req, res) => {
+      if (!isSupermemoryConfigured()) {
+        return res.status(400).json({ error: 'Supermemory not configured (set SUPERMEMORY_API_KEY)' })
+      }
+      const source = req.body?.source
+      if (!source || !source.url) {
+        return res.status(400).json({ error: 'source.url is required' })
+      }
+      const result = await crawlSource({
+        id: source.id || source.url,
+        title: source.title || source.url,
+        url: source.url,
+        authors: source.authors,
+        type: source.type,
+        subject: source.subject,
+      })
+      res.json({ ok: !result.skipped, result })
+    })
+
+    app.post('/api/library/crawl-many', async (req, res) => {
+      if (!isSupermemoryConfigured()) {
+        return res.status(400).json({ error: 'Supermemory not configured (set SUPERMEMORY_API_KEY)' })
+      }
+      const sources = Array.isArray(req.body?.sources) ? req.body.sources : []
+      if (sources.length === 0) return res.status(400).json({ error: 'sources[] required' })
+      const results = await crawlMany(
+        sources.map((s: any) => ({
+          id: s.id || s.url,
+          title: s.title || s.url,
+          url: s.url,
+          authors: s.authors,
+          type: s.type,
+          subject: s.subject,
+        }))
+      )
+      res.json({ ok: true, results })
+    })
+
+    app.get('/api/library/search', async (req, res) => {
+      const q = req.query.q as string
+      if (!q) return res.status(400).json({ error: 'q required' })
+      const results = await searchLibrary(q, Number(req.query.limit) || 5)
+      res.json({ ok: true, category: LIBRARY_CATEGORY, results })
+    })
+
     app.get('*', (req, res) => {
       res.sendFile(path.join(distPath, 'index.html'));
     });

@@ -5,6 +5,7 @@ import {
   FileText, ChevronRight, ArrowLeft, Sparkles, GraduationCap
 } from 'lucide-react'
 import { LIBRARY, type LibraryResource, getResourcesByType } from '../data/onlineLibraryData'
+import { crawlLibraryMany, type CrawlResult } from '../services/libraryCrawler.client'
 
 const TYPE_ICONS: Record<LibraryResource['type'], React.ReactNode> = {
   textbook: <BookOpen size={16} />,
@@ -31,6 +32,8 @@ export default function OnlineLibraryScreen() {
   const [searchQuery, setSearchQuery] = useState('')
   const [subjectFilter, setSubjectFilter] = useState<string | null>(null)
   const [typeFilter, setTypeFilter] = useState<LibraryResource['type'] | null>(null)
+  const [syncing, setSyncing] = useState(false)
+  const [syncMsg, setSyncMsg] = useState<string | null>(null)
 
   const allSubjects = Array.from(new Set(LIBRARY.flatMap((r) => r.subjects))).sort()
 
@@ -102,6 +105,42 @@ export default function OnlineLibraryScreen() {
             <p className="text-2xl font-black text-[var(--text)]">{getResourcesByType('textbook').length}</p>
             <p className="text-[10px] text-[var(--text-muted)] uppercase font-bold tracking-wider mt-1">Textbooks</p>
           </div>
+        </div>
+
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+          <button
+            onClick={async () => {
+              setSyncing(true)
+              setSyncMsg(null)
+              const sources = LIBRARY.filter((r) => r.publisherUrl).map((r) => ({
+                id: r.id,
+                title: r.title,
+                url: r.publisherUrl,
+                authors: r.authors,
+                type: r.type,
+                subject: r.subjects[0],
+              }))
+              try {
+                const results: CrawlResult[] = await crawlLibraryMany(sources)
+                const stored = results.reduce((a, r) => a + r.stored, 0)
+                const skipped = results.filter((r) => r.skipped).length
+                setSyncMsg(
+                  skipped > 0
+                    ? `Supermemory not configured — ${skipped} sources skipped. Set SUPERMEMORY_API_KEY + FIRECRAWL_API_KEY on the server to enable crawling.`
+                    : `Ingested ${stored} passages from ${results.length} sources into the knowledge base.`
+                )
+              } catch (err: any) {
+                setSyncMsg(err?.message || 'Sync failed')
+              } finally {
+                setSyncing(false)
+              }
+            }}
+            disabled={syncing}
+            className="flex items-center gap-2 px-4 py-2.5 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-xl font-bold text-sm shadow-sm hover:opacity-95 transition-all disabled:opacity-50"
+          >
+            <Sparkles size={16} /> {syncing ? 'Syncing…' : 'Sync Library to Knowledge Base'}
+          </button>
+          {syncMsg && <p className="text-xs text-[var(--text-muted)] leading-relaxed max-w-xl">{syncMsg}</p>}
         </div>
 
         <div className="flex flex-wrap gap-2">

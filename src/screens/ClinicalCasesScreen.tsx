@@ -18,6 +18,196 @@ import {
 import { parseVitals, parseLabs, parseDtps, toArray, toText } from '../lib/clinicalParsers';
 import { extractMedicines } from '../lib/clinicalTerms';
 
+const DISEASE_CONFIG: Record<string, { color: string, sub: string }> = {
+  // Cardiovascular
+  'Heart Failure': { color: 'rose', sub: 'Pump dysfunction & congestion' },
+  'Hypertension': { color: 'rose', sub: 'Elevated systemic vascular resistance' },
+  'Atrial Fibrillation': { color: 'rose', sub: 'Irregularly irregular rhythm' },
+  'Coronary Artery Disease': { color: 'rose', sub: 'Myocardial ischaemia burden' },
+  'Stable Angina': { color: 'rose', sub: 'Exertional chest pain' },
+  'Chronic Stable Angina': { color: 'rose', sub: 'Exertional chest pain' },
+  'Hyperlipidemia': { color: 'rose', sub: 'Dyslipidaemia management' },
+  'Anticoagulation': { color: 'rose', sub: 'Thromboembolic prophylaxis' },
+  'Anticoagulation Management': { color: 'rose', sub: 'Thromboembolic prophylaxis' },
+  'Acute Coronary Syndrome': { color: 'rose', sub: 'Acute myocardial ischaemia' },
+  'Diastolic Disorders': { color: 'rose', sub: 'Impaired ventricular filling' },
+  'Venous Thromboembolism': { color: 'rose', sub: 'Clot prevention & treatment' },
+  // Respiratory
+  'Asthma': { color: 'sky', sub: 'Reversible airway obstruction' },
+  'COPD': { color: 'sky', sub: 'Chronic airflow limitation' },
+  'Pulmonary Fibrosis': { color: 'sky', sub: 'Restrictive lung disease' },
+  'Pulmonary Hypertension': { color: 'sky', sub: 'Elevated pulmonary pressure' },
+  'Allergic Rhinitis': { color: 'sky', sub: 'Nasal allergen response' },
+  'Cystic Fibrosis': { color: 'sky', sub: 'CFTR channel dysfunction' },
+  'Tuberculosis': { color: 'sky', sub: 'Mycobacterial infection' },
+  'Acute Bronchitis': { color: 'sky', sub: 'Acute airway inflammation' },
+  'Community Acquired Pneumonia': { color: 'sky', sub: 'Lung parenchyma infection' },
+  'Hospital Acquired Pneumonia': { color: 'sky', sub: 'Nosocomial lung infection' },
+  'Bronchiectasis': { color: 'sky', sub: 'Irreversible airway dilation' },
+  // Endocrine
+  'Diabetic Emergencies': { color: 'amber', sub: 'Acute metabolic decompensation' },
+  'Diabetes Mellitus': { color: 'amber', sub: 'Chronic hyperglycaemia' },
+  'Type 1 Diabetes': { color: 'amber', sub: 'Insulin-dependent diabetes' },
+  'Type 2 Diabetes': { color: 'amber', sub: 'Insulin resistance diabetes' },
+  'Diabetic Ketoacidosis': { color: 'amber', sub: 'Ketone acid accumulation' },
+  'Hyperosmolar Hyperglycaemic State': { color: 'amber', sub: 'Severe hyperglycaemia' },
+  'Hyperthyroidism': { color: 'amber', sub: 'Excess thyroid hormone' },
+  'Hypothyroidism': { color: 'amber', sub: 'Thyroid hormone deficiency' },
+  'Cushing Syndrome': { color: 'amber', sub: 'Cortisol excess state' },
+  'Addison Disease': { color: 'amber', sub: 'Adrenal insufficiency' },
+  'Adrenal Insufficiency': { color: 'amber', sub: 'Cortisol deficiency' },
+  'SIADH': { color: 'amber', sub: 'Water retention hyponatraemia' },
+  'Diabetes Insipidus': { color: 'amber', sub: 'Water loss polyuria' },
+  'Osteoporosis': { color: 'amber', sub: 'Bone density loss' },
+  // Renal
+  'Acute Kidney Injury': { color: 'teal', sub: 'Rapid renal function decline' },
+  'Chronic Kidney Disease': { color: 'teal', sub: 'Progressive renal impairment' },
+  'Nephrotic Syndrome': { color: 'teal', sub: 'Protein-losing kidney disease' },
+  'Electrolyte Imbalance': { color: 'teal', sub: 'Serum electrolyte disturbance' },
+  'Anemia of CKD': { color: 'teal', sub: 'Renal anaemia management' },
+  'Hyperkalaemia': { color: 'teal', sub: 'Elevated serum potassium' },
+  'CKD-Mineral and Bone Disorder': { color: 'teal', sub: 'Renal bone disease' },
+  // Neurological
+  'Stroke': { color: 'violet', sub: 'Cerebrovascular ischaemia/bleed' },
+  'Epilepsy': { color: 'violet', sub: 'Recurrent seizure disorder' },
+  'Parkinson Disease': { color: 'violet', sub: 'Dopamine deficiency disorder' },
+  'Dementia': { color: 'violet', sub: 'Cognitive decline syndrome' },
+  'Multiple Sclerosis': { color: 'violet', sub: 'Demyelinating CNS disease' },
+  'Migraine': { color: 'violet', sub: 'Recurrent headache disorder' },
+  'Serotonin Syndrome': { color: 'violet', sub: 'Serotonin excess toxicity' },
+  'Neuroleptic Malignant Syndrome': { color: 'violet', sub: 'Dopamine blockade crisis' },
+  'Alcohol Withdrawal': { color: 'violet', sub: 'GABA withdrawal syndrome' },
+  'Neuropathic Pain': { color: 'violet', sub: 'Nerve injury pain' },
+  // GI / Hepatic
+  'Cirrhosis': { color: 'emerald', sub: 'End-stage liver disease' },
+  'Liver Cirrhosis': { color: 'emerald', sub: 'End-stage liver disease' },
+  'Peptic Ulcer Disease': { color: 'emerald', sub: 'Gastric mucosal erosion' },
+  'Inflammatory Bowel Disease': { color: 'emerald', sub: 'Chronic gut inflammation' },
+  'Hepatitis': { color: 'emerald', sub: 'Liver inflammation' },
+  'Pancreatitis': { color: 'emerald', sub: 'Pancreatic inflammation' },
+  'Irritable Bowel Syndrome': { color: 'emerald', sub: 'Functional bowel disorder' },
+  'Gastroparesis': { color: 'emerald', sub: 'Delayed gastric emptying' },
+  'GERD': { color: 'emerald', sub: 'Acid reflux disease' },
+  'Helicobacter pylori Infection': { color: 'emerald', sub: 'Gastric bacterial infection' },
+  'C. difficile Infection': { color: 'emerald', sub: 'Antibiotic-associated colitis' },
+  // Infectious Diseases
+  'Childhood Infections': { color: 'red', sub: 'Paediatric infectious diseases' },
+  'Bacterial Infections': { color: 'red', sub: 'Bacterial pathogen management' },
+  'Sepsis': { color: 'red', sub: 'Life-threatening organ dysfunction' },
+  'Meningitis': { color: 'red', sub: 'Meningeal inflammation' },
+  'Infective Endocarditis': { color: 'red', sub: 'Valvular infection' },
+  'Urinary Tract Infection': { color: 'red', sub: 'Lower/upper UTI management' },
+  'HIV/AIDS': { color: 'red', sub: 'Retroviral disease management' },
+  'Malaria': { color: 'red', sub: 'Plasmodium parasite infection' },
+  'Typhoid Fever': { color: 'red', sub: 'Salmonella enteric fever' },
+  'Pharyngitis': { color: 'red', sub: 'Acute throat infection' },
+  'Tonsillitis': { color: 'red', sub: 'Tonsillar inflammation' },
+  'Sinusitis': { color: 'red', sub: 'Sinus cavity infection' },
+  'Otitis Media': { color: 'red', sub: 'Middle ear infection' },
+  'Tinea Capitis': { color: 'red', sub: 'Scalp fungal infection' },
+  // Oncology / Haematology
+  'Solid Tumours': { color: 'indigo', sub: 'Solid organ malignancy' },
+  'Cancer': { color: 'indigo', sub: 'Malignant neoplasm' },
+  'Breast Cancer': { color: 'indigo', sub: 'Breast malignancy' },
+  'Colorectal Cancer': { color: 'indigo', sub: 'Colorectal malignancy' },
+  'Prostate Cancer': { color: 'indigo', sub: 'Prostate malignancy' },
+  'Cervical Cancer': { color: 'indigo', sub: 'Cervical malignancy' },
+  'Anemia': { color: 'indigo', sub: 'Red cell deficiency' },
+  'Iron Deficiency Anaemia': { color: 'indigo', sub: 'Iron-deficiency anaemia' },
+  'Sickle Cell Disease': { color: 'indigo', sub: 'Haemoglobinopathy crisis' },
+  'Hemophilia': { color: 'indigo', sub: 'Clotting factor deficiency' },
+  'Thrombocytopenia': { color: 'indigo', sub: 'Low platelet count' },
+  'Thrombophilia': { color: 'indigo', sub: 'Hypercoagulable state' },
+  'Folate Deficiency': { color: 'indigo', sub: 'Folic acid deficiency' },
+  'Vitamin B12 Deficiency': { color: 'indigo', sub: 'B12 deficiency anaemia' },
+  'Oncology Support': { color: 'indigo', sub: 'Cancer supportive care' },
+  // Rheumatology / Musculoskeletal
+  'Gout': { color: 'orange', sub: 'Uric acid crystal arthritis' },
+  'Rheumatoid Arthritis': { color: 'orange', sub: 'Autoimmune inflammatory arthritis' },
+  'Osteoarthritis': { color: 'orange', sub: 'Degenerative joint disease' },
+  'Fibromyalgia': { color: 'orange', sub: 'Central pain sensitisation' },
+  'Acute Pain': { color: 'orange', sub: 'Short-term pain management' },
+  'Chronic Pain': { color: 'orange', sub: 'Persistent pain management' },
+  // Toxicology
+  'Chemical Poisoning': { color: 'yellow', sub: 'Toxic chemical exposure' },
+  'Organophosphate Poisoning': { color: 'yellow', sub: 'Cholinesterase inhibitor tox' },
+  'Drug Overdose': { color: 'yellow', sub: 'Intentional/accidental overdose' },
+  'Paracetamol Overdose': { color: 'yellow', sub: 'Acetaminophen toxicity' },
+  'Snake Bites': { color: 'yellow', sub: 'Envenomation management' },
+  'Snake Envenomation': { color: 'yellow', sub: 'Venom toxin treatment' },
+  'Environmental Toxicology': { color: 'yellow', sub: 'Environmental poison exposure' },
+  // Pharmacology Concepts
+  'Pharmacogenomics': { color: 'slate', sub: 'Gene-guided drug therapy' },
+  'Pharmacokinetics': { color: 'slate', sub: 'Drug ADME principles' },
+  'Pharmacodynamics': { color: 'slate', sub: 'Drug-receptor interactions' },
+  'Dosing in Special Populations': { color: 'slate', sub: 'Renal/hepatic dose adjustment' },
+  'Drug-Drug Interaction': { color: 'slate', sub: 'Drug interaction management' },
+  'Protein Binding Incompatibility': { color: 'slate', sub: 'Albumin displacement risk' },
+  'Teratogenicity': { color: 'slate', sub: 'Drug-induced birth defects' },
+  'Therapeutic Duplication': { color: 'slate', sub: 'Redundant drug therapy' },
+  'Therapeutic Drug Monitoring': { color: 'slate', sub: 'Serum drug level optimisation' },
+  'Adverse Drug Reactions': { color: 'slate', sub: 'Unintended drug effects' },
+  'Adverse Drug Reaction': { color: 'slate', sub: 'Unintended drug effects' },
+  'Medication Reconciliation': { color: 'slate', sub: 'Medication accuracy check' },
+  'Intravenous Safety': { color: 'slate', sub: 'IV administration safety' },
+  'Surgical Prophylaxis': { color: 'slate', sub: 'Pre-op infection prevention' },
+  'Antimicrobial Stewardship': { color: 'slate', sub: 'Antibiotic optimisation' },
+  'Opioid Stewardship': { color: 'slate', sub: 'Safe opioid prescribing' },
+  'Polypharmacy Review': { color: 'slate', sub: 'Multiple medication review' },
+  'Inborn Error of Metabolism': { color: 'slate', sub: 'Metabolic genetic disorder' },
+  // OB / GYN / Paediatric
+  'Hypertensive Disorders of Pregnancy': { color: 'pink', sub: 'Gestational hypertension' },
+  // Ophthalmology
+  'Glaucoma': { color: 'cyan', sub: 'Optic nerve damage' },
+  'Open Angle Glaucoma': { color: 'cyan', sub: 'Chronic open-angle glaucoma' },
+  'Primary Open-Angle Glaucoma': { color: 'cyan', sub: 'POAG management' },
+  'Bacterial Conjunctivitis': { color: 'cyan', sub: 'Ocular surface infection' },
+  'Ophthalmic Disorders': { color: 'cyan', sub: 'Eye disease management' },
+  // Dermatology
+  'Acne': { color: 'green', sub: 'Acne vulgaris management' },
+  'Eczema': { color: 'green', sub: 'Atopic dermatitis' },
+  'Psoriasis': { color: 'green', sub: 'Plaque psoriasis therapy' },
+  // ENT
+  'Hearing Disorders': { color: 'amber', sub: 'Hearing loss management' },
+  // Emergency / Critical Care
+  'Anaphylaxis': { color: 'rose', sub: 'Acute allergic emergency' },
+  'Anesthesiology': { color: 'rose', sub: 'Perioperative drug management' },
+  'Emergency & Critical Care': { color: 'rose', sub: 'Acute care pharmacology' },
+  // Nutrition
+  'Malnutrition': { color: 'amber', sub: 'Nutritional deficiency state' },
+  'Nutritional Deficiency': { color: 'amber', sub: 'Micronutrient deficiency' },
+  'Vitamin A Deficiency': { color: 'amber', sub: 'Vitamin A deficiency' },
+  'Vitamin D Deficiency': { color: 'amber', sub: 'Vitamin D deficiency' },
+  // Psychiatric
+  'Depression': { color: 'pink', sub: 'Major depressive disorder' },
+  'Schizophrenia': { color: 'pink', sub: 'Psychotic disorder management' },
+}
+
+const COLOR_MAP: Record<string, { bar: string, text: string }> = {
+  rose: { bar: 'bg-rose-500', text: 'text-rose-600' },
+  sky: { bar: 'bg-sky-500', text: 'text-sky-600' },
+  amber: { bar: 'bg-amber-500', text: 'text-amber-600' },
+  teal: { bar: 'bg-teal-500', text: 'text-teal-600' },
+  violet: { bar: 'bg-violet-500', text: 'text-violet-600' },
+  emerald: { bar: 'bg-emerald-500', text: 'text-emerald-600' },
+  red: { bar: 'bg-red-500', text: 'text-red-600' },
+  indigo: { bar: 'bg-indigo-500', text: 'text-indigo-600' },
+  orange: { bar: 'bg-orange-500', text: 'text-orange-600' },
+  yellow: { bar: 'bg-yellow-500', text: 'text-yellow-600' },
+  pink: { bar: 'bg-pink-500', text: 'text-pink-600' },
+  cyan: { bar: 'bg-cyan-500', text: 'text-cyan-600' },
+  green: { bar: 'bg-green-500', text: 'text-green-600' },
+  slate: { bar: 'bg-slate-500', text: 'text-slate-600' },
+}
+
+const DEFAULT_DISEASE_CONFIG = { color: 'slate', sub: 'Pharmaceutical care topic' }
+
+function getDiseaseConfig(disease: string) {
+  const cfg = DISEASE_CONFIG[disease] ?? DISEASE_CONFIG[disease.replace(/^./, c => c.toUpperCase())] ?? DEFAULT_DISEASE_CONFIG
+  const colors = COLOR_MAP[cfg.color] ?? COLOR_MAP.slate
+  return { ...cfg, ...colors }
+}
+
 export default function ClinicalCasesScreen() {
   const navigate = useNavigate();
   const [selectedSpecialty, setSelectedSpecialty] = useState<string | null>(null);
@@ -805,17 +995,22 @@ export default function ClinicalCasesScreen() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {diseasesForSelectedUnit.map((disease, idx) => {
                   const casesCount = casesForSelectedUnit.filter(c => c.disease === disease).length;
+                  const cfg = getDiseaseConfig(disease);
                   return (
                     <div 
                       key={idx}
                       onClick={() => handleDiseaseClick(disease)}
-                      className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl p-5 cursor-pointer transition-all shadow-sm hover:shadow-md group flex justify-between items-center"
+                      className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl cursor-pointer transition-all shadow-sm hover:shadow-md group flex overflow-hidden"
                     >
-                      <div>
-                        <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">{disease}</h3>
-                        <p className="text-xs text-[var(--text-muted)] mt-1">{casesCount} {casesCount === 1 ? 'Case' : 'Cases'} Available</p>
+                      <div className={`w-1.5 shrink-0 ${cfg.bar}`} />
+                      <div className="flex-1 p-4 flex items-center justify-between gap-3">
+                        <div className="min-w-0">
+                          <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">{disease}</h3>
+                          <p className={`text-[11px] font-medium mt-0.5 ${cfg.text}`}>{cfg.sub}</p>
+                          <p className="text-[10px] text-[var(--text-muted)] mt-1">{casesCount} {casesCount === 1 ? 'case' : 'cases'}</p>
+                        </div>
+                        <ChevronRight size={16} className="shrink-0 text-[var(--border)] group-hover:text-[var(--primary)] group-hover:translate-x-1 transition-all" />
                       </div>
-                      <ChevronRight size={18} className="text-[var(--border)] group-hover:text-[var(--primary)] group-hover:translate-x-1 transition-all" />
                     </div>
                   );
                 })}

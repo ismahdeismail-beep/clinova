@@ -18,6 +18,7 @@
   OPIOID_OD_DIAGRAM, POLYPHARMACY_DIAGRAM,
 } from './diseaseDiagrams'
 import { DISEASE_KENYA_CONTEXT } from './diseaseKenyaContext'
+import { DISEASE_PATHOPHYSIOLOGY } from './diseasePathophysiology'
 
 export interface DiseaseNoteMCQ {
   question: string
@@ -1641,4 +1642,5 @@ const RAW_DISEASE_NOTES: DiseaseNote[] = [
 export const DISEASE_NOTES: DiseaseNote[] = RAW_DISEASE_NOTES.map((note) => ({
   ...note,
   kenyaContext: note.kenyaContext ?? DISEASE_KENYA_CONTEXT[note.id],
+  pathophysiology: note.pathophysiology ?? DISEASE_PATHOPHYSIOLOGY[note.id],
 }))

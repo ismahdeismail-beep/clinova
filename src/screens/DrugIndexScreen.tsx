@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { 
   Pill, Search, Loader2, BookOpen,
   Sparkles, AlertTriangle, CheckCircle2, RefreshCw, User, Plus, Trash2, Info, HeartPulse, Activity, Check, ShieldAlert,
-  Upload, FileUp, FileText, Bookmark, Heart,
+  FileText, Bookmark, Heart,
   ChevronRight, ChevronLeft
 } from 'lucide-react';
 import { DrugMonographView } from '../components/DrugMonographView';
@@ -132,85 +132,6 @@ export default function DrugIndexScreen() {
   const [newMedDose, setNewMedDose] = useState('');
   const [newMedFreq, setNewMedFreq] = useState('');
   const [newMedRoute, setNewMedRoute] = useState('Oral');
-
-  // AI Document Extraction State
-  const [entryMode, setEntryMode] = useState<'manual' | 'upload'>('manual');
-  const [fileUploading, setFileUploading] = useState(false);
-  const [uploadError, setUploadError] = useState<string | null>(null);
-  const [uploadSuccessMessage, setUploadSuccessMessage] = useState<string | null>(null);
-  const [dragActive, setDragActive] = useState(false);
-
-  const handleDrag = (e: React.DragEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    if (e.type === "dragenter" || e.type === "dragover") {
-      setDragActive(true);
-    } else if (e.type === "dragleave") {
-      setDragActive(false);
-    }
-  };
-
-  const handleDrop = (e: React.DragEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setDragActive(false);
-    if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-      handleFileUpload(e.dataTransfer.files[0]);
-    }
-  };
-
-  const handleFileInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      handleFileUpload(e.target.files[0]);
-    }
-  };
-
-  const handleFileUpload = async (file: File) => {
-    setFileUploading(true);
-    setUploadError(null);
-    setUploadSuccessMessage(null);
-    try {
-      const formData = new FormData();
-      formData.append('file', file);
-      formData.append('extractionType', 'medications');
-
-      const res = await fetch('/api/gemini/extract-file', {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (!res.ok) {
-        const errorData = await res.json().catch(() => ({}));
-        throw new Error(errorData.error || 'Failed to analyze and extract medications');
-      }
-
-      const data = await res.json();
-      if (data.medications && Array.isArray(data.medications)) {
-        if (data.medications.length === 0) {
-          throw new Error("No medications could be extracted from the document. Please ensure the handwriting is legible or try a clearer image.");
-        }
-
-        const parsedMeds: AddedMedication[] = data.medications.map((m: any) => ({
-          id: Math.random().toString(36).substring(2, 9),
-          name: m.name || 'Unknown Medication',
-          dose: m.dose || '',
-          frequency: m.frequency || '',
-          route: m.route || 'Oral',
-        }));
-
-        setAddedMeds((prev) => [...prev, ...parsedMeds]);
-        setUploadSuccessMessage(`Successfully extracted and added ${parsedMeds.length} medications!`);
-        setCheckResult(null);
-      } else {
-        throw new Error('Could not find structured medications list in the document.');
-      }
-    } catch (err: any) {
-      console.error(err);
-      setUploadError(err.message || 'An error occurred during file extraction.');
-    } finally {
-      setFileUploading(false);
-    }
-  };
 
   // Fetch Ward Patients context for Interaction cross-referencing
   useEffect(() => {

@@ -16,6 +16,8 @@
 // and AI Skills all read from here so nothing is duplicated.
 // ================================================================
 
+import { EXAM_PREP_UNITS } from './examPrepData';
+
 export type Difficulty = 'Beginner' | 'Intermediate' | 'Advanced';
 
 export interface LearningObjective {
@@ -1008,6 +1010,7 @@ export interface EducationModule {
 export const EDUCATION_MODULES: EducationModule[] = [
   { id: 'clinical_pharm', title: 'Clinical Pharmacy & Therapeutics', description: 'Disease management and patient care across 17 integrated therapeutic areas.', isIntegrated: true, areaId: 'clinical_pharm', icon: 'HeartPulse', color: 'red' },
   { id: 'online_books', title: 'Online Books', description: 'Pharmacy reference books, textbooks, and clinical resources.', isIntegrated: false, icon: 'BookOpen', color: 'sky' },
+  { id: 'exam_prep', title: 'Exam Prep', description: 'Mock papers modelled on the real clinical-pharmacy exam pattern across subject areas.', isIntegrated: false, icon: 'FileText', color: 'amber' },
 ];
 
 export function getEducationModule(moduleId: string): EducationModule | undefined {
@@ -1027,12 +1030,17 @@ export function getModuleUnits(moduleId: string): EducationModuleUnit[] {
       id: u.id, title: u.title, description: u.description,
     }));
   }
-  // Non-curriculum modules (online_books) return units from static data
+  // Non-curriculum modules (online_books, exam_prep) return units from static data
   return NON_CURRICULUM_UNITS[moduleId] ?? [];
 }
 
 // Static units for non-curriculum modules
 const NON_CURRICULUM_UNITS: Record<string, EducationModuleUnit[]> = {
+  exam_prep: EXAM_PREP_UNITS.map((spec) => ({
+    id: spec.id,
+    title: spec.title,
+    description: `${spec.topics.length} topic areas · ${spec.structure.reduce((a, s) => a + s.marks, 0)} marks across ${spec.structure.length} sections`,
+  })),
   online_books: [
     { id: 'ob-textbooks', title: 'Pharmacy Textbooks', description: 'Online access to standard pharmacy and pharmacology textbooks.' },
     { id: 'ob-guidelines', title: 'Clinical Guidelines', description: 'WHO, AHA, IDSA, and national therapeutic guidelines.' },

@@ -76,6 +76,7 @@ export default function EducationHubScreen() {
   
   const [selectedModule, setSelectedModule] = useState<EducationModule | null>(null);
   const [selectedUnit, setSelectedUnit] = useState<EducationModuleUnit | null>(null);
+  const [examPrepOpen, setExamPrepOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const scrollPositions = useRef<{ units: number }>({ units: 0 });
@@ -460,6 +461,24 @@ export default function EducationHubScreen() {
                 )}
               </div>
 
+              {selectedModule?.id === 'clinical_pharm' && (
+                <div className="flex items-center justify-between gap-4 bg-gradient-to-r from-amber-500/10 to-red-500/10 border border-amber-500/30 rounded-2xl p-4">
+                  <div className="flex items-center gap-3">
+                    <Sparkles size={20} className="text-amber-600 shrink-0" />
+                    <div>
+                      <div className="text-sm font-bold text-[var(--text)]">Exam Prep</div>
+                      <div className="text-[11px] text-[var(--text-muted)]">Mock papers modelled on the real clinical-pharmacy exam pattern</div>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => { setExamPrepOpen(true); setSelectedUnit(null); }}
+                    className="shrink-0 flex items-center gap-2 px-4 py-2.5 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-xl font-bold text-sm hover:opacity-95 transition-all"
+                  >
+                    <FileText size={16} /> Open Exam Prep
+                  </button>
+                </div>
+              )}
+
               {sortedUnits.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {sortedUnits.map((unit) => (
@@ -527,7 +546,9 @@ export default function EducationHubScreen() {
 
           {/* Level 3: Learning Workspace */}
           {selectedModule && selectedUnit && (
-            <LearningWorkspace unit={selectedUnit} module={selectedModule} onBack={handleBackToUnits} />
+            selectedModule.id === 'exam_prep'
+              ? <ExamPrepView subjectId={selectedUnit.id} />
+              : <LearningWorkspace unit={selectedUnit} module={selectedModule} onBack={handleBackToUnits} />
           )}
           
         </div>

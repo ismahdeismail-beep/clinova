@@ -219,7 +219,10 @@ function ExamSubjectCard({ spec }: { spec: ExamUnitSpec }) {
   );
 }
 
-export default function ExamPrepView() {
+export default function ExamPrepView({ subjectId }: { subjectId?: string }) {
+  const specs = subjectId
+    ? EXAM_PREP_UNITS.filter((s) => s.id === subjectId)
+    : EXAM_PREP_UNITS;
   return (
     <div className="space-y-5">
       <div className="flex items-center gap-2">
@@ -232,7 +235,7 @@ export default function ExamPrepView() {
         papers (Section A MCQs, Section B short answers, Section C long answers). Toggle answers to self-mark.
       </p>
       <div className="space-y-4">
-        {EXAM_PREP_UNITS.map((spec) => (
+        {specs.map((spec) => (
           <ExamSubjectCard key={spec.id} spec={spec} />
         ))}
       </div>

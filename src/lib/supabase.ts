@@ -1,7 +1,8 @@
 import { createBrowserClient } from '@supabase/ssr'
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string | undefined
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined
+const env = (typeof import.meta !== 'undefined' && import.meta.env) ? import.meta.env : ({} as Record<string, any>)
+const supabaseUrl = (env.VITE_SUPABASE_URL as string | undefined) ?? process.env.VITE_SUPABASE_URL
+const supabaseAnonKey = (env.VITE_SUPABASE_ANON_KEY as string | undefined) ?? process.env.VITE_SUPABASE_ANON_KEY
 const isBrowser = typeof window !== 'undefined'
 
 if (!supabaseUrl || !supabaseAnonKey) {

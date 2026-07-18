@@ -1292,6 +1292,122 @@ Return a list of quiz question objects, where each object has:
   }
 });
 
+// AI Exam-Prep Paper Generator — mirrors a real clinical-pharmacy exam pattern
+app.post('/api/gemini/generate-exam-paper', async (req, res) => {
+  try {
+    const { title, topics, structure, variant } = req.body;
+    if (!title || !Array.isArray(topics) || !Array.isArray(structure)) {
+      return res.status(400).json({ error: 'Missing title, topics, or structure' });
+    }
+
+    const variantNote = variant === 2
+      ? 'This is PAPER 2 (a second, distinct mock paper). Produce DIFFERENT questions, different vignettes, and different distractors from any paper you may have produced before. Do not repeat questions from Paper 1.'
+      : 'This is PAPER 1 (the first mock paper).';
+
+    const structureText = structure
+      .map((s: any) => `SECTION ${s.letter}: ${s.name} — ${s.count} question(s), ${s.marks} marks. Instruction: ${s.instruction}`)
+      .join('\n');
+
+    const topicsText = topics.map((t: string, i: number) => `${i + 1}. ${t}`).join('\n');
+
+    const prompt = `You are an expert clinical-pharmacy examination item writer. Generate a complete, realistic mock examination paper for the subject: "${title}".
+
+EXAM STRUCTURE (follow EXACTLY — same sections, same question counts, same marks):
+${structureText}
+
+TOPIC AREAS THE PAPER MUST COVER (draw questions from these, weighted to the unit):
+${topicsText}
+
+${variantNote}
+
+QUESTION STYLE (match a real university clinical-pharmacy exam):
+- Section A: clinical-vignette or concept Multiple Choice Questions with exactly 4 options (a, b, c, d) and one correct answer. Include "EXCEPT"/"NOT" style questions where natural.
+- Section B: concise Short Answer Questions (1-3 mark points each) testing applied knowledge.
+- Section C: Long Answer Questions requiring structured, exam-style responses (mechanism, management, monitoring, counselling).
+
+Return a single JSON object with this exact shape:
+{
+  "title": "${title}",
+  "variant": ${variant || 1},
+  "sections": [
+    {
+      "letter": "A",
+      "name": "Multiple Choice Questions",
+      "marks": <number>,
+      "questions": [
+        { "stem": "<question text / vignette>", "options": ["a", "b", "c", "d"], "answer": "<exact correct option text>", "explanation": "<1-2 sentence rationale>" }
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Short Answer Questions",
+      "marks": <number>,
+      "questions": [
+        { "stem": "<question text>", "modelAnswer": "<concise expected answer>" }
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "Long Answer Questions",
+      "marks": <number>,
+      "questions": [
+        { "stem": "<question text>", "modelAnswer": "<structured exam-style answer with key headings>" }
+      ]
+    }
+  ]
+}`;
+
+    const response = await generateContentWithFallback({
+      model: 'gemini-flash-latest',
+      contents: prompt,
+      config: {
+        responseMimeType: 'application/json',
+        responseSchema: {
+          type: Type.OBJECT,
+          properties: {
+            title: { type: Type.STRING },
+            variant: { type: Type.NUMBER },
+            sections: {
+              type: Type.ARRAY,
+              items: {
+                type: Type.OBJECT,
+                properties: {
+                  letter: { type: Type.STRING },
+                  name: { type: Type.STRING },
+                  marks: { type: Type.NUMBER },
+                  questions: {
+                    type: Type.ARRAY,
+                    items: {
+                      type: Type.OBJECT,
+                      properties: {
+                        stem: { type: Type.STRING },
+                        options: { type: Type.ARRAY, items: { type: Type.STRING } },
+                        answer: { type: Type.STRING },
+                        explanation: { type: Type.STRING },
+                        modelAnswer: { type: Type.STRING }
+                      },
+                      required: ['stem']
+                    }
+                  }
+                },
+                required: ['letter', 'name', 'questions']
+              }
+            }
+          },
+          required: ['sections']
+        },
+        systemInstruction: `You are a senior clinical-pharmacy examiner. You write board-style exam papers that are clinically accurate, guideline-aligned (WHO/KDI), and pedagogically sound. Every MCQ has exactly one unambiguously correct answer. Short and long answers are concise but complete.`
+      }
+    });
+
+    const parsed = JSON.parse(response.text || '{"sections": []}');
+    res.json(parsed);
+  } catch (error: any) {
+    console.error('Exam paper generation error:', error);
+    res.status(500).json({ error: 'Failed to generate exam paper' });
+  }
+});
+
 // AI Study Guide Summary Generator for Educational Units
 app.post('/api/gemini/generate-unit-summary', async (req, res) => {
   try {

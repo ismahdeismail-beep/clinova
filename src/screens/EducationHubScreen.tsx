@@ -19,6 +19,7 @@ from '../services/education.service';
 import { AIContentService } from '../services/aiContent.service';
 import exportService from '../services/export.service';
 import CurriculumGraph from '../components/CurriculumGraph';
+import ExamPrepView from '../components/ExamPrepView';
 import { getResourcesForUnit } from '../data/unitToLibraryMapping';
 import { getStaticContent } from '../data/unitStaticContent';
 import { LIBRARY, type LibraryResource } from '../data/onlineLibraryData';
@@ -1026,7 +1027,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
 
   const isClinicalPharm = module.id === 'clinical_pharm'
   const workspaceTabs = isClinicalPharm
-    ? tabs.filter(t => t.id === 'disease-notes')
+    ? tabs.filter(t => t.id === 'disease-notes' || t.id === 'exam-prep')
     : tabs;
 
   // When a disease note is open, present it as a full standalone page:
@@ -1234,6 +1235,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
           {activeTab === 'resources' && <WorkspaceResources unit={unit} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
           {activeTab === 'flashcards' && <WorkspaceFlashcards unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
           {activeTab === 'mcqs' && <WorkspaceQuizzes unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
+          {activeTab === 'exam-prep' && <ExamPrepView />}
         </div>
 
         {/* Bottom Tabs â€” retractable */}

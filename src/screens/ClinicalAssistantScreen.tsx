@@ -991,6 +991,8 @@ export default function ClinicalAssistantScreen() {
       const maxAttempts = 3;
       let success = false;
       let lastError: any = null;
+      let relevantKbContext = '';
+      let engineSources: any[] = [];
 
       for (let attempt = 1; attempt <= maxAttempts; attempt++) {
         try {
@@ -1007,8 +1009,6 @@ export default function ClinicalAssistantScreen() {
           const primaryFile = currentAttachments[0];
 
           // RETRIEVE KNOWLEDGE ENGINE CONTEXT
-          let relevantKbContext = '';
-          let engineSources: any[] = [];
           try {
             setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
               ...m,

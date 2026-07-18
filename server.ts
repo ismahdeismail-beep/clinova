@@ -1395,10 +1395,17 @@ If a specific drug name is entered, return the profile for that drug. If a categ
 
 For each drug profile, include:
 1. **Generic Name & Class**: Generic name, pharmacologic class, and common brand names in Kenya.
-2. **Key Indications & Recommended Dosages**: Adult/pediatric doses for typical indications based on Kenya Drug Index (KDI) standards.
-3. **Renal & Hepatic Adjustments**: Crucial CrCl-based or child-pugh based adjustments.
-4. **Important Contraindications & Key Interaction Alerts**: Life-threatening combinations or critical warnings.
-5. **Key Patient Monitoring Guidelines**: Crucial clinical/lab monitoring indices (e.g., serum Cr, electrolytes, INR).
+2. **Mechanism of Action**: A concise, accurate pharmacologic mechanism.
+3. **Key Indications & Recommended Dosages**: Adult/pediatric doses for typical indications based on Kenya Drug Index (KDI) standards.
+4. **Renal & Hepatic Adjustments**: Crucial CrCl-based or child-pugh based adjustments.
+5. **Important Contraindications & Key Interaction Alerts**: Life-threatening combinations or critical warnings.
+6. **Key Patient Monitoring Guidelines**: Crucial clinical/lab monitoring indices (e.g., serum Cr, electrolytes, INR).
+7. **Patient Counselling**: Practical advice the patient should receive at dispensing.
+
+CRITICAL OUTPUT RULES:
+- DO NOT include any section about where to obtain, purchase, buy, or source the medicine, and DO NOT write "where to get", "available at", "consult a pharmacist", "we do not have data on availability", or any placeholder availability text. The monograph must be fully self-sufficient clinical content.
+- DO NOT write "information being compiled", "data not yet available", or any placeholder/empty sections. If a detail is genuinely unknown, omit that sub-point rather than stating it is missing.
+- Every heading you include must contain substantive clinical content.
 
 ATTRIBUTION: This response uses clinical data sourced from the U.S. National Library of Medicine (NLM) and openFDA. Ensure you append an attribution line at the end of the text.
 `;

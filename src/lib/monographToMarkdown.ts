@@ -63,9 +63,6 @@ export function monographToMarkdown(m: DrugMonograph): string {
   // Classification
   sections.push(section('Classification', `- **Therapeutic Class:** ${m.drug_class_name || m.drug_class}`));
 
-  // Mechanism of Action
-  sections.push(emptySection('Mechanism of Action', 'Mechanism of action details are being compiled. Consult standard pharmacology references for complete information.'));
-
   // Indications
   sections.push(m.indications.length > 0 ? section('Indications', list(m.indications)) : emptySection('Indications'));
 
@@ -108,9 +105,6 @@ export function monographToMarkdown(m: DrugMonograph): string {
     sections.push(emptySection('Dosage'));
   }
 
-  // Administration
-  sections.push(emptySection('Administration', 'Administration guidelines are being compiled. Refer to the dosage section above for initial dosing information.'));
-
   // Adverse Effects
   sections.push(m.side_effects.length > 0 ? section('Adverse Effects', list(m.side_effects)) : emptySection('Adverse Effects'));
 
@@ -122,15 +116,6 @@ export function monographToMarkdown(m: DrugMonograph): string {
 
   // Patient Counselling
   sections.push(m.patient_counselling ? section('Patient Counselling', m.patient_counselling) : emptySection('Patient Counselling'));
-
-  // Clinical Pearls
-  sections.push(emptySection('Clinical Pearls', 'Clinical pearls are being curated by clinical pharmacy specialists.'));
-
-  // Related Diseases
-  sections.push(emptySection('Related Diseases', 'Disease associations are being mapped to the knowledge graph.'));
-
-  // Related Clinical Cases
-  sections.push(emptySection('Related Clinical Cases', 'Case linkages are being established. Browse Clinical Cases for relevant patient scenarios.'));
 
   // References
   sections.push('## References\n'

@@ -1,0 +1,1383 @@
+{
+  "exam-infections-i": {
+    "1": {
+      "title": "Clinical Pharmacy — Infections I",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 60,
+          "questions": [
+            {
+              "stem": "A 28-year-old man presents with sudden onset of diplopia, dysphagia, and dysarthria. He reports no fever or confusion but develops progressive descending flaccid paralysis over 24 hours. The most likely diagnosis is:",
+              "options": [
+                "Tetanus",
+                "Diphtheria",
+                "Botulism",
+                "Strychnine poisoning"
+              ],
+              "answer": "Botulism",
+              "explanation": "Botulism causes descending flaccid paralysis with cranial nerve involvement and no fever or confusion, distinguishing it from tetanus and diphtheria."
+            },
+            {
+              "stem": "A 22-year-old student develops abdominal cramps, fever, and bloody diarrhea 18 hours after eating undercooked chicken at a barbecue. Stool culture confirms Campylobacter jejuni. The most appropriate antimicrobial therapy is:",
+              "options": [
+                "Azithromycin",
+                "Ciprofloxacin",
+                "Metronidazole",
+                "No antimicrobials needed"
+              ],
+              "answer": "Azithromycin",
+              "explanation": "Azithromycin is the preferred agent for Campylobacter enteritis, particularly in severe or bloody cases, as per WHO guidelines."
+            },
+            {
+              "stem": "A 10-year-old boy with sickle cell disease presents with acute right knee pain and fever. Blood cultures grow Salmonella species. The most likely organism responsible for his osteomyelitis is:",
+              "options": [
+                "Staphylococcus aureus",
+                "Streptococcus pneumoniae",
+                "Salmonella enterica",
+                "Pseudomonas aeruginosa"
+              ],
+              "answer": "Salmonella enterica",
+              "explanation": "Salmonella is the most common cause of osteomyelitis in patients with sickle cell disease due to functional asplenia and increased susceptibility."
+            },
+            {
+              "stem": "A 35-year-old woman presents with migratory swellings over her arm and back, lasting 2-3 days, associated with itching and redness. She recently returned from a 6-month stay in Cameroon. The most likely vector for her infection is:",
+              "options": [
+                "Anopheles mosquito",
+                "Chrysops deerfly",
+                "Culex mosquito",
+                "Mansonia mosquito"
+              ],
+              "answer": "Chrysops deerfly",
+              "explanation": "Chrysops deerfly is the vector for Loa loa filariasis, which presents with migratory subcutaneous swellings."
+            },
+            {
+              "stem": "A 9-month-old infant presents with severe watery diarrhea, vomiting, and signs of dehydration after consuming contaminated formula. The mechanism of action of the causative organism's toxin involves:",
+              "options": [
+                "ADP ribosylation of Elongation Factor 2",
+                "ADP ribosylation of inhibitory G proteins leading to reduced cAMP",
+                "ADP ribosylation of stimulatory G proteins leading to elevated intracellular cAMP",
+                "Formation of cation-selective pores in cell membranes"
+              ],
+              "answer": "ADP ribosylation of stimulatory G proteins leading to elevated intracellular cAMP",
+              "explanation": "Cholera toxin ADP-ribosylates the stimulatory G protein (Gs), locking it in an active state and causing persistent elevation of cAMP, leading to chloride secretion and watery diarrhea."
+            },
+            {
+              "stem": "A 4-year-old boy with a history of chickenpox presents with refusal to walk, fever, and pain over the right knee. Examination reveals warmth and tenderness without joint effusion. The most likely causative organism is:",
+              "options": [
+                "Salmonella",
+                "Staphylococcus aureus",
+                "Group A Streptococcus",
+                "Haemophilus influenzae"
+              ],
+              "answer": "Staphylococcus aureus",
+              "explanation": "Staphylococcus aureus is the most common cause of acute hematogenous osteomyelitis in children, particularly following varicella infection."
+            },
+            {
+              "stem": "A 25-year-old man presents with fever, right knee pain, and rigors. Joint aspiration reveals purulent fluid with 120,000 WBC/mm³. The most likely cause of septic arthritis is:",
+              "options": [
+                "Neisseria gonorrhoeae",
+                "Escherichia coli",
+                "Parvovirus",
+                "Staphylococcus aureus"
+              ],
+              "answer": "Neisseria gonorrhoeae",
+              "explanation": "Neisseria gonorrhoeae is the most common cause of septic arthritis in sexually active adults, particularly in the absence of trauma."
+            },
+            {
+              "stem": "A 7-year-old girl is treated for a carbuncle caused by MRSA sensitive to all antibiotics except erythromycin and oxacillin. The double disk diffusion test is positive. The best option to complete her antibiotic course is:",
+              "options": [
+                "Clindamycin",
+                "Doxycycline",
+                "Levofloxacin",
+                "Linezolid"
+              ],
+              "answer": "Clindamycin",
+              "explanation": "Clindamycin is appropriate for MRSA infections with inducible resistance ruled out by a negative D-test, as per antimicrobial stewardship principles."
+            },
+            {
+              "stem": "A 65-year-old man with uncontrolled type 2 diabetes is bitten by a stray dog. He has no history of tetanus vaccination in the past 10 years. The most appropriate intervention includes:",
+              "options": [
+                "Wound debridement and washout only",
+                "Amoxicillin-clavulanate plus tetanus toxoid-containing vaccine",
+                "Ciprofloxacin plus clindamycin",
+                "Moxifloxacin plus tetanus toxoid-containing vaccine"
+              ],
+              "answer": "Amoxicillin-clavulanate plus tetanus toxoid-containing vaccine",
+              "explanation": "Amoxicillin-clavulanate covers typical dog bite pathogens, and tetanus vaccination is indicated due to incomplete immunization history."
+            },
+            {
+              "stem": "A 21-year-old woman presents with multiple painless, skin-colored papules over her vulva and perianal area, with some cauliflower-shaped clusters. The most likely HPV type responsible is:",
+              "options": [
+                "HPV-1",
+                "HPV-6",
+                "HPV-16",
+                "HPV-18"
+              ],
+              "answer": "HPV-6",
+              "explanation": "HPV-6 and HPV-11 are the most common types associated with anogenital warts (condyloma acuminata)."
+            },
+            {
+              "stem": "A 29-year-old man returns from a camping trip in Amboseli with a wild dog bite to his hand. He has received a full primary tetanus series and a booster 12 years ago. The most appropriate rabies post-exposure prophylaxis is:",
+              "options": [
+                "Wound debridement and washout only",
+                "Five doses of IM rabies vaccine on days 0, 3, 7, 14, and 28 only",
+                "Five doses of IM rabies vaccine plus human rabies immunoglobulin infiltrated into the wound",
+                "Human rabies immunoglobulin infiltrated into the wound only"
+              ],
+              "answer": "Five doses of IM rabies vaccine plus human rabies immunoglobulin infiltrated into the wound",
+              "explanation": "Rabies post-exposure prophylaxis requires both rabies vaccine and human rabies immunoglobulin infiltrated into the wound for category III exposures."
+            },
+            {
+              "stem": "An 18-month-old boy presents with 4 days of severe watery diarrhea, vomiting, and dehydration. He has no blood in stool. In addition to oral rehydration solution, the most beneficial adjunctive therapy is:",
+              "options": [
+                "Ascorbic acid",
+                "Cholecalciferol",
+                "Thiamine",
+                "Zinc"
+              ],
+              "answer": "Zinc",
+              "explanation": "Zinc supplementation reduces the duration and severity of diarrhea in children, particularly in resource-limited settings, as per WHO guidelines."
+            },
+            {
+              "stem": "A 32-year-old woman presents with 7 days of cramping abdominal pain and bloody diarrhea after returning from a family holiday. Stool culture is positive for Campylobacter jejuni. The most appropriate management is:",
+              "options": [
+                "Azithromycin",
+                "Ciprofloxacin",
+                "Metronidazole",
+                "No antimicrobials needed"
+              ],
+              "answer": "Azithromycin",
+              "explanation": "Azithromycin is the preferred agent for Campylobacter enteritis, particularly in severe or prolonged cases."
+            },
+            {
+              "stem": "A 9-year-old boy with acute hematogenous osteomyelitis of the distal tibia shows no clinical improvement after 3 days of IV antibiotics. Imaging reveals a 1.5x1.5cm abscess. The most reliable method to monitor early treatment success is:",
+              "options": [
+                "White blood cell count",
+                "MRI",
+                "Erythrocyte sedimentation rate",
+                "C-reactive protein"
+              ],
+              "answer": "C-reactive protein",
+              "explanation": "C-reactive protein is the most expeditious marker for monitoring early response to treatment in osteomyelitis, with levels declining within 48-72 hours of effective therapy."
+            },
+            {
+              "stem": "A 22-year-old sexually active woman presents with fever, joint pain, and a petechial rash with pustules over her arms. Tenosynovitis of the wrist is noted. The most likely diagnosis is:",
+              "options": [
+                "Gonococcal arthritis",
+                "Meningococcal septicaemia",
+                "Pustular psoriasis",
+                "Reactive arthritis"
+              ],
+              "answer": "Gonococcal arthritis",
+              "explanation": "Gonococcal arthritis presents with fever, migratory arthralgia, tenosynovitis, and dermatitis, particularly in sexually active individuals."
+            },
+            {
+              "stem": "Which of the following statements is CORRECT regarding Vibrio cholerae infection?",
+              "options": [
+                "The organism is isolated from a blood sample.",
+                "The natural reservoir of the organism is domestic animals.",
+                "The LPS complex is the main virulence factor.",
+                "An enterotoxin is the main virulence factor."
+              ],
+              "answer": "An enterotoxin is the main virulence factor.",
+              "explanation": "Cholera toxin (an enterotoxin) is the primary virulence factor, causing ADP-ribosylation of Gs proteins and persistent cAMP elevation."
+            },
+            {
+              "stem": "Each of the following agents is a recognized cause of diarrhea EXCEPT:",
+              "options": [
+                "Clostridium perfringens",
+                "Enterococcus faecalis",
+                "Shigella dysenteriae",
+                "Vibrio cholerae",
+                "Campylobacter jejuni"
+              ],
+              "answer": "Enterococcus faecalis",
+              "explanation": "Enterococcus faecalis is not a recognized cause of diarrhea; it is a commensal organism of the gastrointestinal tract."
+            },
+            {
+              "stem": "A 7-year-old girl is treated for a carbuncle caused by MRSA. The culture shows sensitivity to all antibiotics except erythromycin and oxacillin, with a positive double disk diffusion test. The best option to complete her antibiotic course is:",
+              "options": [
+                "Clindamycin",
+                "Doxycycline",
+                "Levofloxacin",
+                "Linezolid"
+              ],
+              "answer": "Linezolid",
+              "explanation": "Linezolid is recommended for MRSA infections with inducible clindamycin resistance (positive D-test) to avoid treatment failure."
+            },
+            {
+              "stem": "A 4-year-old boy presents with intense perianal itching and irritability. Eggs with a flattened side are identified on scotch tape examination. The most likely organism is:",
+              "options": [
+                "Enterobius vermicularis",
+                "Ascaris lumbricoides",
+                "Entamoeba histolytica",
+                "Trichuris trichiura"
+              ],
+              "answer": "Enterobius vermicularis",
+              "explanation": "Enterobius vermicularis (pinworm) causes perianal itching, particularly at night, and eggs with a flattened side are diagnostic."
+            },
+            {
+              "stem": "Pigs or dogs are the source of human infection by each of the following parasites EXCEPT:",
+              "options": [
+                "Echinococcus granulosus",
+                "Trichinella spiralis",
+                "Ascaris lumbricoides",
+                "Taenia solium"
+              ],
+              "answer": "Ascaris lumbricoides",
+              "explanation": "Ascaris lumbricoides is transmitted via fecal-oral route from contaminated food/water, not from pigs or dogs."
+            },
+            {
+              "stem": "Which of the following is most likely to be a source of food poisoning bacteria?",
+              "options": [
+                "Frozen peas",
+                "Pasteurised milk",
+                "Tinned salmon",
+                "Raw meat"
+              ],
+              "answer": "Raw meat",
+              "explanation": "Raw meat is a common source of foodborne pathogens such as Salmonella, Campylobacter, and E. coli O157:H7."
+            },
+            {
+              "stem": "The main symptom of Staphylococcus food poisoning is:",
+              "options": [
+                "Vomiting",
+                "Diarrhoea",
+                "Fever",
+                "Abdominal pains"
+              ],
+              "answer": "Vomiting",
+              "explanation": "Staphylococcus aureus food poisoning is characterized by rapid onset (1-6 hours) of severe nausea and vomiting due to preformed enterotoxins."
+            },
+            {
+              "stem": "Escherichia coli is characterized by its virulence properties. All are types of E. coli EXCEPT:",
+              "options": [
+                "Enterohemorrhagic E. coli",
+                "Enteropathogenic E. coli",
+                "Enterotoxigenic E. coli",
+                "Enterolysogenic E. coli"
+              ],
+              "answer": "Enterolysogenic E. coli",
+              "explanation": "Enterolysogenic E. coli is not a recognized category; the main pathotypes are EHEC, EPEC, ETEC, EIEC, and EAEC."
+            },
+            {
+              "stem": "Symptoms of typhoid fever develop 1-3 weeks after exposure to S. typhi. All of the following are major symptoms EXCEPT:",
+              "options": [
+                "Weight gain",
+                "Headache",
+                "High-grade fever",
+                "Rashes"
+              ],
+              "answer": "Weight gain",
+              "explanation": "Weight loss, not gain, is a common feature of typhoid fever due to anorexia and systemic illness."
+            },
+            {
+              "stem": "One of the most common food-borne illnesses from undercooked poultry and eggs is:",
+              "options": [
+                "Trichinella",
+                "Salmonella",
+                "Clostridium perfringens",
+                "Clostridium botulinum"
+              ],
+              "answer": "Salmonella",
+              "explanation": "Salmonella is the most common cause of foodborne illness from undercooked poultry and eggs."
+            },
+            {
+              "stem": "A patient with severe dehydration based on weight loss and clinical signs should be rehydrated with:",
+              "options": [
+                "Oral rehydration solution",
+                "Intravenous normal saline",
+                "Intravenous D5W",
+                "Intravenous colloid solutions"
+              ],
+              "answer": "Intravenous normal saline",
+              "explanation": "Intravenous normal saline is the preferred fluid for initial resuscitation in severe dehydration due to its isotonicity and rapid distribution."
+            },
+            {
+              "stem": "Which of the following is true regarding oral rehydration therapy (ORT)?",
+              "options": [
+                "Requires hospitalization to administer",
+                "Cannot be used in infants with infrequent vomiting",
+                "Often ineffective",
+                "Inexpensive"
+              ],
+              "answer": "Inexpensive",
+              "explanation": "ORT is inexpensive, effective, and can be administered at home, making it ideal for resource-limited settings."
+            },
+            {
+              "stem": "Which is NOT an advantage of low-osmolarity (rice-based) ORT over isotonic, traditional ORT?",
+              "options": [
+                "More effectively replenishes electrolytes",
+                "Decreases stool frequency",
+                "Decreases duration of diarrhea",
+                "Decreases stool volume"
+              ],
+              "answer": "More effectively replenishes electrolytes",
+              "explanation": "Low-osmolarity ORT decreases stool frequency, duration, and volume but does not more effectively replenish electrolytes compared to traditional ORT."
+            },
+            {
+              "stem": "Which diarrhea category can be treated safely with antimotility agents?",
+              "options": [
+                "Empirical traveler's diarrhea (nonbloody)",
+                "Dysentery",
+                "EHEC",
+                "Shigellosis"
+              ],
+              "answer": "Empirical traveler's diarrhea (nonbloody)",
+              "explanation": "Antimotility agents (e.g., loperamide) may be used cautiously in nonbloody traveler's diarrhea but are contraindicated in dysentery, EHEC, and shigellosis."
+            },
+            {
+              "stem": "An 8-year-old with cholera should be treated with:",
+              "options": [
+                "Ciprofloxacin",
+                "Doxycycline",
+                "TMP-SMX",
+                "Antibiotic use is not indicated"
+              ],
+              "answer": "Ciprofloxacin",
+              "explanation": "Antibiotics shorten the duration and reduce the severity of cholera; ciprofloxacin is the preferred agent in children."
+            },
+            {
+              "stem": "Some of the more common causes of food poisoning include all these EXCEPT:",
+              "options": [
+                "Shigella",
+                "Salmonella",
+                "S. aureus",
+                "V. cholerae"
+              ],
+              "answer": "V. cholerae",
+              "explanation": "Vibrio cholerae is not a common cause of food poisoning; it causes cholera, a separate clinical entity."
+            },
+            {
+              "stem": "All of the following are major complications of falciparum malaria infection EXCEPT:",
+              "options": [
+                "Seizures and coma",
+                "Hypoglycemia",
+                "Severe anemia",
+                "Peritonitis"
+              ],
+              "answer": "Peritonitis",
+              "explanation": "Peritonitis is not a recognized complication of falciparum malaria; complications include cerebral malaria, hypoglycemia, severe anemia, and acute kidney injury."
+            },
+            {
+              "stem": "The drug of choice for the eradication of lice infestation (body, head, and crab lice) is:",
+              "options": [
+                "1% menthol",
+                "Permethrin 1%",
+                "Y-benzene hexachloride",
+                "Sulfur ointment"
+              ],
+              "answer": "Permethrin 1%",
+              "explanation": "Permethrin 1% is the first-line treatment for lice infestations due to its efficacy and safety profile."
+            },
+            {
+              "stem": "Which of the following agents should be avoided in patients with glucose-6-phosphate dehydrogenase (G6PD) deficiency?",
+              "options": [
+                "Ivermectin",
+                "Mefloquine",
+                "Primaquine",
+                "Albendazole"
+              ],
+              "answer": "Primaquine",
+              "explanation": "Primaquine can cause hemolytic anemia in G6PD-deficient patients due to oxidative stress."
+            },
+            {
+              "stem": "Black water fever is a special manifestation of malaria caused by:",
+              "options": [
+                "P. falciparum",
+                "P. malariae",
+                "P. ovale",
+                "P. vivax"
+              ],
+              "answer": "P. falciparum",
+              "explanation": "Black water fever, characterized by hemoglobinuria and renal failure, is associated with severe Plasmodium falciparum infection."
+            },
+            {
+              "stem": "All of the following statements regarding Plasmodium falciparum are true EXCEPT:",
+              "options": [
+                "Causes more severe disease in pregnancy",
+                "Is associated with recurrent relapses after initial treatment because of liver hypnozoites",
+                "Is the only malarial parasite causing greater than 20% parasitaemia",
+                "Is the only cause of cerebral malaria"
+              ],
+              "answer": "Is associated with recurrent relapses after initial treatment because of liver hypnozoites",
+              "explanation": "P. falciparum does not form hypnozoites and does not cause relapses; this feature is characteristic of P. vivax and P. ovale."
+            },
+            {
+              "stem": "Which of the following statements is true regarding amoebic liver abscess?",
+              "options": [
+                "Should be treated by diloxanide furoate alone",
+                "Should be aspirated routinely",
+                "Is associated with eosinophilia",
+                "Should be treated using a combination of metronidazole and diloxanide"
+              ],
+              "answer": "Should be treated using a combination of metronidazole and diloxanide",
+              "explanation": "Amoebic liver abscess requires metronidazole for the trophozoite stage followed by diloxanide furoate to eliminate intestinal carriage."
+            },
+            {
+              "stem": "Subcutaneous nodules are a typical finding in all the following infections EXCEPT:",
+              "options": [
+                "Neurofibromatosis",
+                "Hydatid disease",
+                "Cysticercosis",
+                "Onchocerciasis"
+              ],
+              "answer": "Neurofibromatosis",
+              "explanation": "Neurofibromatosis is a genetic disorder, not an infectious cause of subcutaneous nodules."
+            },
+            {
+              "stem": "All of the following are characteristic features of acute schistosomiasis EXCEPT:",
+              "options": [
+                "Fever",
+                "Eosinophilia",
+                "Myocarditis",
+                "Incubation period of 4-6 weeks"
+              ],
+              "answer": "Myocarditis",
+              "explanation": "Myocarditis is not a characteristic feature of acute schistosomiasis; the acute phase (Katayama fever) presents with fever, eosinophilia, and urticaria."
+            },
+            {
+              "stem": "Effective malaria control interventions include all the following EXCEPT:",
+              "options": [
+                "Mass use of Fansidar chemoprophylaxis",
+                "Use of pyrethroid impregnated mosquito nets",
+                "Larviciding",
+                "Eradication of mosquito breeding sites"
+              ],
+              "answer": "Mass use of Fansidar chemoprophylaxis",
+              "explanation": "Mass chemoprophylaxis with Fansidar (sulfadoxine-pyrimethamine) is not recommended due to resistance and potential toxicity."
+            },
+            {
+              "stem": "All of the following occur in Chagas' disease (American trypanosomiasis) EXCEPT:",
+              "options": [
+                "Lymphadenopathy",
+                "Meningoencephalitis",
+                "Calabar swelling",
+                "Mega-oesophagus"
+              ],
+              "answer": "Calabar swelling",
+              "explanation": "Calabar swelling is a feature of loiasis, not Chagas' disease."
+            },
+            {
+              "stem": "Blindness is a recognized complication of all the following infections EXCEPT:",
+              "options": [
+                "Onchocerciasis",
+                "Amoebiasis",
+                "Cysticercosis",
+                "Toxoplasmosis"
+              ],
+              "answer": "Amoebiasis",
+              "explanation": "Amoebiasis does not cause blindness; onchocerciasis, cysticercosis, and toxoplasmosis can lead to visual impairment or blindness."
+            },
+            {
+              "stem": "Which of the following may not present with fever and diarrhea?",
+              "options": [
+                "Malaria",
+                "Giardiasis",
+                "Campylobacter enteritis",
+                "Brucellosis"
+              ],
+              "answer": "Giardiasis",
+              "explanation": "Giardiasis typically presents with chronic diarrhea, malabsorption, and weight loss but is less commonly associated with fever."
+            },
+            {
+              "stem": "Steroids are of benefit in the treatment of:",
+              "options": [
+                "Visceral leishmaniasis",
+                "Escherichia coli septicaemia",
+                "Cerebral malaria",
+                "Severe typhoid fever"
+              ],
+              "answer": "Cerebral malaria",
+              "explanation": "Dexamethasone is recommended in cerebral malaria to reduce cerebral edema and improve outcomes."
+            },
+            {
+              "stem": "Which of the following parasites can cause rectal prolapse?",
+              "options": [
+                "Hookworm",
+                "Ascaris",
+                "Trichuris",
+                "All of the above"
+              ],
+              "answer": "Trichuris",
+              "explanation": "Trichuris trichiura (whipworm) can cause chronic inflammation and rectal prolapse, particularly in children with heavy infestations."
+            },
+            {
+              "stem": "A 12-year-old patient with Salmonella enterocolitis with moderate symptoms should receive which of the following regimens?",
+              "options": [
+                "ORT + ciprofloxacin + loperamide",
+                "ORT + ciprofloxacin",
+                "ORT + azithromycin",
+                "ORT"
+              ],
+              "answer": "ORT + azithromycin",
+              "explanation": "Azithromycin is preferred for Salmonella enterocolitis in children due to its safety and efficacy against Salmonella species."
+            },
+            {
+              "stem": "Intervention strategies for malaria include:",
+              "options": [
+                "Insecticide-treated bed net",
+                "Indoor residual spraying with DDT",
+                "Removal of mosquito breeding sites",
+                "All of the above"
+              ],
+              "answer": "All of the above",
+              "explanation": "All listed interventions are effective components of malaria control strategies."
+            },
+            {
+              "stem": "Treatment of acute diarrhea includes:",
+              "options": [
+                "Oral rehydration and penicillin",
+                "Oral rehydration, zinc supplementation",
+                "Intravenous saline and penicillin",
+                "Oral rehydration, energy-rich food, and zinc supplementation"
+              ],
+              "answer": "Oral rehydration, energy-rich food, and zinc supplementation",
+              "explanation": "Oral rehydration solution replenishes fluids and electrolytes, zinc reduces diarrhea duration, and energy-rich food supports recovery."
+            },
+            {
+              "stem": "Acute osteomyelitis is commonly caused by:",
+              "options": [
+                "Staph aureus",
+                "S. pyogenes",
+                "H. influenzae",
+                "Salmonella"
+              ],
+              "answer": "Staph aureus",
+              "explanation": "Staphylococcus aureus is the most common cause of acute osteomyelitis across all age groups."
+            },
+            {
+              "stem": "Complication of amoebic dysentery includes all the following EXCEPT:",
+              "options": [
+                "Ameboma",
+                "Intestinal perforation and peritonitis",
+                "Extra intestinal lesions",
+                "Peptic ulcer disease"
+              ],
+              "answer": "Peptic ulcer disease",
+              "explanation": "Peptic ulcer disease is not a complication of amoebic dysentery; complications include ameboma, perforation, and extraintestinal abscesses."
+            },
+            {
+              "stem": "All of the following are TRUE regarding acute osteomyelitis in a child EXCEPT:",
+              "options": [
+                "Diagnosis by X-ray is 8-10 days after onset",
+                "There is diffuse tenderness at the site",
+                "Antibiotic therapy should be at least for 4 weeks",
+                "Salmonella is the most common cause"
+              ],
+              "answer": "Salmonella is the most common cause",
+              "explanation": "Salmonella is not the most common cause of acute osteomyelitis in children; Staphylococcus aureus is the predominant pathogen."
+            },
+            {
+              "stem": "Which among the following is NOT a complication of acute osteomyelitis?",
+              "options": [
+                "Malignancy",
+                "Fracture of the affected bone",
+                "Sepsis",
+                "Chronicity"
+              ],
+              "answer": "Malignancy",
+              "explanation": "Malignancy is not a recognized complication of acute osteomyelitis."
+            },
+            {
+              "stem": "The most common cause of nongonococcal septic arthritis is:",
+              "options": [
+                "Staph aureus",
+                "H. influenzae",
+                "Pseudomonas",
+                "Streptococcus"
+              ],
+              "answer": "Staph aureus",
+              "explanation": "Staphylococcus aureus is the most common cause of nongonococcal septic arthritis."
+            },
+            {
+              "stem": "Pseudomembranous colitis is caused by:",
+              "options": [
+                "Clostridium tetani",
+                "Clostridium difficile",
+                "Clostridium botulinum",
+                "Clostridium perfringens"
+              ],
+              "answer": "Clostridium difficile",
+              "explanation": "Clostridium difficile is the causative agent of pseudomembranous colitis, typically following antibiotic use."
+            },
+            {
+              "stem": "Select the commonest organism causing osteomyelitis in children under 3 years:",
+              "options": [
+                "Haemophilus",
+                "Staphylococcal",
+                "Streptococcal",
+                "Salmonella"
+              ],
+              "answer": "Staphylococcal",
+              "explanation": "Staphylococcus aureus is the most common cause of osteomyelitis in children under 3 years."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "A 17-year-old boy presents with sudden onset of fever (103.3°F), fatigue, and pain in his right lower leg. He is unable to walk due to pain. Examination reveals swelling, point tenderness over the proximal medial tibia, and limited movement. Labs: Hb 12.5 g/dL, WBC 15,000/mm³, ESR 65 mm/h. A technetium bone scan shows increased uptake at the metaphysis of the tibia. Identify the most likely diagnosis.",
+              "modelAnswer": "Acute hematogenous osteomyelitis of the tibia."
+            },
+            {
+              "stem": "Outline the pharmacological and non-pharmacological management of the patient described above.",
+              "modelAnswer": "Pharmacological: Empirical IV antibiotics (e.g., cloxacillin or cefazolin) for 4-6 weeks, tailored to culture results. Analgesia (paracetamol or NSAIDs) for pain control. Non-pharmacological: Rest, immobilization of the limb, and surgical debridement if abscess formation or failure to improve within 48-72 hours."
+            },
+            {
+              "stem": "Identify the most important member of Enterobacteriaceae that causes each of the following diseases: (a) Childhood diarrhea, (b) Traveler's diarrhea, (c) Bacillary dysentery, (d) Hemorrhagic colitis or Hemolytic Uremic Syndrome (HUS).",
+              "modelAnswer": "(a) Enteropathogenic E. coli (EPEC), (b) Enterotoxigenic E. coli (ETEC), (c) Shigella dysenteriae, (d) Enterohemorrhagic E. coli (EHEC, e.g., E. coli O157:H7)."
+            },
+            {
+              "stem": "Identify 3 human worms (parasites) that can cause iron deficiency anemia and 1 parasite associated with pernicious anemia.",
+              "modelAnswer": "Worms causing iron deficiency anemia: Hookworm (Necator americanus, Ancylostoma duodenale), Whipworm (Trichuris trichiura), Ascaris lumbricoides. Parasite associated with pernicious anemia: Fish tapeworm (Diphyllobothrium latum)."
+            },
+            {
+              "stem": "Pablo, a 41-year-old security officer, is bitten by a neighbor’s dog while passing near the driveway. The dog’s vaccination history is unclear. Formulate an appropriate treatment plan for Pablo and include counseling points.",
+              "modelAnswer": "Treatment plan: 1) Immediate wound cleansing and irrigation with soap and water. 2) Tetanus toxoid-containing vaccine if not up to date. 3) Rabies post-exposure prophylaxis: Human rabies immunoglobulin (HRIG) infiltrated into the wound + rabies vaccine on days 0, 3, 7, 14, and 28. 4) Empirical antimicrobial therapy (e.g., amoxicillin-clavulanate) for 5-7 days to cover Pasteurella, Capnocytophaga, and oral flora. Counseling: Advise on wound care, signs of infection, importance of completing rabies vaccination series, and avoiding contact with stray animals."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "BC is a 49-year-old obese woman presenting with a 1-week history of fever, confusion, delirium, abdominal pain, headache, anorexia, and diarrhea. She returned 10 days ago from Mathare slums, where some relatives were recovering from typhoid fever. Admission vitals: T 38.3°C, HR 60 bpm, BP stable. Exam: Splenomegaly, hepatomegaly. Labs: WBC 3.0 x 10⁶/μL, mildly elevated LFTs, pending blood cultures. Identify the most likely presumptive diagnosis and the probable causative agent. Why is her history, presentation, and labs consistent with this diagnosis? Illustrate three benefits of antimicrobial treatment in BC. Design an appropriate treatment plan for BC (include adjunctive and supportive therapy). Fourteen months after discharge, BC’s stool is still positive for the same microbial agent. Propose 4 therapeutic options to cure BC’s chronic carrier state. Outline 2 preventive measures against BC’s condition.",
+              "modelAnswer": {
+                "diagnosis": "Presumptive diagnosis: Typhoid fever (enteric fever) caused by Salmonella Typhi.",
+                "consistency": [
+                  "History: Recent travel to an endemic area with exposure to typhoid cases.",
+                  "Clinical presentation: Fever, confusion, abdominal pain, diarrhea, and hepatosplenomegaly are classic features of typhoid fever.",
+                  "Labs: Leukopenia (WBC 3.0 x 10⁶/μL) is typical in typhoid fever, and elevated LFTs suggest hepatic involvement.",
+                  "Pending blood cultures: Salmonella Typhi is the likely causative agent."
+                ],
+                "benefits_of_antimicrobials": [
+                  "Reduces mortality by 90% if treated early with appropriate antibiotics.",
+                  "Shortens the duration of illness and reduces complications (e.g., intestinal perforation, hemorrhage).",
+                  "Prevents the development of chronic carrier state in a subset of patients."
+                ],
+                "treatment_plan": {
+                  "empirical_antibiotics": "IV ceftriaxone 2g q24h for 10-14 days (or until afebrile for 5-7 days), as fluoroquinolone resistance is common in endemic regions.",
+                  "adjustment": "Switch to oral azithromycin 500mg q24h if sensitivities confirm susceptibility and clinical improvement is noted.",
+                  "supportive_care": "Aggressive fluid resuscitation, antipyretics (paracetamol), and nutritional support. Monitor for complications (e.g., intestinal perforation, encephalopathy).",
+                  "infection_control": "Contact precautions until 3 consecutive negative stool cultures are obtained."
+                },
+                "chronic_carrier_options": [
+                  "Oral ciprofloxacin 500mg q12h for 28 days (first-line for chronic carriers).",
+                  "Oral norfloxacin 400mg q12h for 28 days (alternative if ciprofloxacin-resistant).",
+                  "Cholecystectomy (if gallstones are present) combined with antimicrobial therapy to eliminate the carrier state.",
+                  "Oral amoxicillin 1g q6h for 6 weeks (if susceptible) or oral trimethoprim-sulfamethoxazole DS 160/800mg q12h for 6 weeks."
+                ],
+                "preventive_measures": [
+                  "Consumption of safe water and food, particularly in endemic areas; avoid raw vegetables, unpeeled fruits, and street food.",
+                  "Typhoid vaccination (inactivated or live attenuated) for travelers to endemic regions or high-risk populations."
+                ]
+              }
+            },
+            {
+              "stem": "A 5-year-old boy is brought to the outpatient department with a history of vomiting after breakfast and fever (38.5°C). He is alert, well-nourished, and has no signs of dehydration. Social history reveals recent travel to Mwea. Identify the most likely diagnosis and causative agent. Justify your answer. Propose 3 diagnostic tests that would help confirm the diagnosis and elaborate on their utility. Compile an elaborate treatment plan for this patient (include dosing regimens). Illustrate 3 counseling points for the mother. The patient returns later with worsening symptoms, including a seizure and unconsciousness. Identify the most probable diagnosis and justify your answer. Design an appropriate treatment plan for this patient.",
+              "modelAnswer": {
+                "diagnosis_part1": "Most likely diagnosis: Acute gastroenteritis due to rotavirus infection.",
+                "causative_agent": "Rotavirus is the most common cause of severe diarrhea in children under 5 years, particularly in resource-limited settings.",
+                "justification": [
+                  "Age: Rotavirus is most severe in children aged 6 months to 2 years.",
+                  "Travel history: Increased exposure to contaminated water/food in Mwea.",
+                  "Clinical presentation: Acute onset of vomiting and fever, typical of rotavirus gastroenteritis.",
+                  "Absence of dehydration: Mild-moderate cases often present without dehydration."
+                ],
+                "diagnostic_tests": [
+                  "Stool rotavirus antigen test: Rapid immunochromatographic assay to detect rotavirus antigen in stool (high sensitivity and specificity).",
+                  "Stool culture: To rule out bacterial pathogens (e.g., Salmonella, Campylobacter) if bloody diarrhea or severe symptoms are present.",
+                  "Electrolyte panel: To assess for hyponatremia, hypokalemia, or metabolic acidosis secondary to fluid losses."
+                ],
+                "treatment_plan": {
+                  "rehydration": "Oral rehydration solution (ORS): 75 mL/kg over 4 hours for mild dehydration, followed by maintenance fluids (100 mL/kg/day for 24 hours).",
+                  "antiemetics": "Ondansetron 0.15 mg/kg/dose (max 8 mg) as a single dose if persistent vomiting.",
+                  "zinc_supplementation": "Zinc sulfate 20 mg/day for 10-14 days to reduce duration and severity of diarrhea.",
+                  "antipyretics": "Paracetamol 15 mg/kg/dose every 4-6 hours as needed for fever (max 60 mg/kg/day).",
+                  "diet": "Continue breastfeeding or age-appropriate diet; avoid dairy products temporarily if lactose intolerance is suspected."
+                },
+                "counseling_points": [
+                  "Emphasize the importance of hand hygiene and safe water/food consumption to prevent recurrence.",
+                  "Advise on signs of dehydration (e.g., reduced urine output, dry mucous membranes, lethargy) and when to seek medical attention.",
+                  "Explain the role of zinc supplementation in reducing the duration of diarrhea and improving outcomes."
+                ],
+                "diagnosis_part2": "Most probable diagnosis: Rotavirus gastroenteritis with severe dehydration and electrolyte imbalance, complicated by febrile seizure and altered consciousness.",
+                "justification_part2": [
+                  "Seizure: Febrile seizures are common in children with rotavirus gastroenteritis due to rapid fluid shifts and electrolyte imbalances.",
+                  "Unconsciousness: Suggests severe dehydration, hyponatremia, or metabolic acidosis leading to altered mental status.",
+                  "Absence of neck stiffness or rash: Rules out meningitis or other intracranial pathologies."
+                ],
+                "treatment_plan_part2": {
+                  "resuscitation": "IV normal saline 20 mL/kg bolus over 15-30 minutes, repeated if necessary, followed by maintenance fluids (D5 0.45% saline with 20 mEq/L KCl at 1.5x maintenance rate).",
+                  "anticonvulsants": "IV lorazepam 0.1 mg/kg (max 4 mg) for seizure control if ongoing.",
+                  "monitoring": "Frequent vital signs, neurological checks, and electrolyte monitoring (particularly sodium and potassium).",
+                  "antimicrobials": "Not indicated unless bacterial co-infection is suspected (e.g., bloody diarrhea).",
+                  "supportive_care": "Oxygen therapy if hypoxic, and gradual reintroduction of oral fluids once stable."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Clinical Pharmacy — Infections I",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 60,
+          "questions": [
+            {
+              "stem": "A 45-year-old farmer presents with progressive muscle weakness starting in the upper limbs, followed by facial drooping and difficulty swallowing. He reports no fever but notes blurred vision. On examination, pupils are dilated and non-reactive. What is the most likely diagnosis?",
+              "options": [
+                "Tetanus",
+                "Diphtheria",
+                "Botulism",
+                "Strychnine poisoning"
+              ],
+              "answer": "Botulism",
+              "explanation": "Botulism presents with descending flaccid paralysis, cranial nerve palsies, and autonomic symptoms without fever, typically from toxin ingestion or wound contamination."
+            },
+            {
+              "stem": "A 22-year-old student develops watery diarrhea and severe abdominal cramps 24 hours after eating undercooked chicken at a barbecue. Stool culture reveals curved, gram-negative rods. Which organism is most likely responsible?",
+              "options": [
+                "Salmonella enterica",
+                "Campylobacter jejuni",
+                "Escherichia coli O157:H7",
+                "Staphylococcus aureus"
+              ],
+              "answer": "Campylobacter jejuni",
+              "explanation": "Campylobacter is a common cause of foodborne illness after poultry consumption, often presenting with bloody diarrhea and culture yielding curved gram-negative rods."
+            },
+            {
+              "stem": "A 6-year-old child with sickle cell disease presents with acute onset right knee pain and fever. Imaging reveals osteomyelitis. Which organism is most likely responsible?",
+              "options": [
+                "Staphylococcus aureus",
+                "Streptococcus pneumoniae",
+                "Salmonella spp.",
+                "Pseudomonas aeruginosa"
+              ],
+              "answer": "Salmonella spp.",
+              "explanation": "In sickle cell disease, osteomyelitis is commonly caused by Salmonella due to functional asplenia and impaired opsonization."
+            },
+            {
+              "stem": "A 28-year-old woman presents with multiple painless, cauliflower-like lesions on her vulva. PCR testing identifies HPV type 6. Which clinical feature is most consistent with this infection?",
+              "options": [
+                "Painful ulcerative lesions",
+                "Cervical dysplasia on Pap smear",
+                "Spontaneous resolution within 2 years",
+                "Association with cervical cancer"
+              ],
+              "answer": "Spontaneous resolution within 2 years",
+              "explanation": "HPV-6 and HPV-11 are low-risk types causing anogenital warts, which often resolve spontaneously within 2 years without progression to cancer."
+            },
+            {
+              "stem": "A 35-year-old man sustains a bite from a stray dog in a rural area. He has no prior rabies vaccination. What is the recommended post-exposure prophylaxis regimen?",
+              "options": [
+                "Rabies vaccine only on days 0, 3, 7, 14, and 28",
+                "Rabies vaccine plus human rabies immunoglobulin (RIG) infiltrated into the wound",
+                "Human rabies immunoglobulin infiltrated into the wound only",
+                "No intervention unless symptoms develop"
+              ],
+              "answer": "Rabies vaccine plus human rabies immunoglobulin (RIG) infiltrated into the wound",
+              "explanation": "Post-exposure prophylaxis for unvaccinated individuals includes both rabies vaccine (days 0, 3, 7, 14, 28) and RIG infiltrated into the wound to neutralize virus at the site."
+            },
+            {
+              "stem": "A 40-year-old woman presents with 5 days of bloody diarrhea, fever, and abdominal cramps after returning from a camping trip. Stool culture confirms Campylobacter jejuni. Which antibiotic is most appropriate for treatment?",
+              "options": [
+                "Metronidazole",
+                "Ciprofloxacin",
+                "Azithromycin",
+                "No antibiotics indicated"
+              ],
+              "answer": "Azithromycin",
+              "explanation": "Azithromycin is the preferred agent for Campylobacter enteritis due to increasing fluoroquinolone resistance; alternatives include erythromycin or clarithromycin."
+            },
+            {
+              "stem": "A 10-year-old boy is admitted with profuse rice-water diarrhea after drinking contaminated water. Stool culture grows Vibrio cholerae. What is the mechanism of action of the cholera toxin?",
+              "options": [
+                "ADP ribosylation of elongation factor 2",
+                "ADP ribosylation of inhibitory G proteins leading to reduced cAMP",
+                "ADP ribosylation of stimulatory G proteins leading to elevated intracellular cAMP",
+                "Formation of cation-selective pores in cell membranes"
+              ],
+              "answer": "ADP ribosylation of stimulatory G proteins leading to elevated intracellular cAMP",
+              "explanation": "Cholera toxin ADP-ribosylates the stimulatory Gs protein, locking it in an active state and causing persistent elevation of cAMP, leading to chloride secretion and watery diarrhea."
+            },
+            {
+              "stem": "A 30-year-old woman presents with migratory swellings on her arm and back, lasting 2–3 days each, associated with pruritus. She recently returned from Cameroon. Which vector is most likely responsible for her infection?",
+              "options": [
+                "Anopheles mosquito",
+                "Chrysops deerfly",
+                "Culex mosquito",
+                "Simulium blackfly"
+              ],
+              "answer": "Chrysops deerfly",
+              "explanation": "Chrysops deerflies are the vectors for Loa loa filariasis, causing migratory subcutaneous swellings known as Calabar swellings."
+            },
+            {
+              "stem": "A 7-year-old boy with a history of chickenpox 2 weeks ago now refuses to bear weight on his right leg and has fever. Examination reveals warmth and tenderness over the distal femur. Which organism is most likely responsible?",
+              "options": [
+                "Staphylococcus aureus",
+                "Streptococcus pyogenes",
+                "Haemophilus influenzae",
+                "Salmonella spp."
+              ],
+              "answer": "Staphylococcus aureus",
+              "explanation": "Post-viral osteomyelitis is most commonly caused by Staphylococcus aureus, which can seed bone during transient bacteremia following viral infections."
+            },
+            {
+              "stem": "A 14-year-old boy presents with fever, right knee pain, and swelling 10 days after a minor ankle sprain treated with a splint. Labs show elevated CRP and ESR. What is the next best step in management?",
+              "options": [
+                "Irrigation and debridement of the distal fibula",
+                "Place in short leg walking cast for 3 weeks",
+                "Begin oral antibiotics and follow up in 2 weeks",
+                "Perform stress radiographs to assess ligament integrity"
+              ],
+              "answer": "Irrigation and debridement of the distal fibula",
+              "explanation": "Acute osteomyelitis following trauma or splint use requires surgical debridement to remove necrotic bone and obtain cultures for targeted therapy."
+            },
+            {
+              "stem": "A 25-year-old man presents with fever, right knee pain, and swelling. Synovial fluid analysis shows 50,000 WBC/mm³ with 90% neutrophils. Which organism is most likely responsible?",
+              "options": [
+                "Neisseria gonorrhoeae",
+                "Staphylococcus aureus",
+                "Escherichia coli",
+                "Streptococcus pneumoniae"
+              ],
+              "answer": "Neisseria gonorrhoeae",
+              "explanation": "Gonococcal septic arthritis is common in sexually active adults and typically presents with migratory polyarthralgia, tenosynovitis, and culture-negative synovial fluid."
+            },
+            {
+              "stem": "A 22-year-old sexually active woman presents with fever, wrist tenosynovitis, and a pustular rash on her arms. Blood cultures are pending. What is the most likely diagnosis?",
+              "options": [
+                "Gonococcal arthritis",
+                "Reactive arthritis",
+                "Meningococcal sepsis",
+                "Rheumatoid arthritis"
+              ],
+              "answer": "Gonococcal arthritis",
+              "explanation": "Disseminated gonococcal infection classically presents with fever, tenosynovitis, dermatitis, and migratory polyarthralgia in sexually active individuals."
+            },
+            {
+              "stem": "Which of the following is the most common cause of osteomyelitis in children under 3 years of age?",
+              "options": [
+                "Haemophilus influenzae",
+                "Staphylococcus aureus",
+                "Streptococcus pneumoniae",
+                "Salmonella spp."
+              ],
+              "answer": "Staphylococcus aureus",
+              "explanation": "Staphylococcus aureus is the leading cause of acute hematogenous osteomyelitis in children, particularly in those under 3 years old."
+            },
+            {
+              "stem": "Which statement about Vibrio cholerae infection is correct?",
+              "options": [
+                "The organism is isolated from blood samples.",
+                "The natural reservoir is domestic animals.",
+                "The LPS complex is the main virulence factor.",
+                "An enterotoxin is the main virulence factor."
+              ],
+              "answer": "An enterotoxin is the main virulence factor.",
+              "explanation": "Cholera toxin, an A-B enterotoxin, is the primary virulence factor responsible for the massive secretory diarrhea characteristic of cholera."
+            },
+            {
+              "stem": "Each of the following agents is a recognized cause of diarrhea EXCEPT:",
+              "options": [
+                "Clostridium perfringens",
+                "Enterococcus faecalis",
+                "Shigella dysenteriae",
+                "Vibrio cholerae",
+                "Campylobacter jejuni"
+              ],
+              "answer": "Enterococcus faecalis",
+              "explanation": "Enterococcus faecalis is a commensal gut organism and not a recognized cause of infectious diarrhea."
+            },
+            {
+              "stem": "A 7-year-old girl completes a 2-day course of vancomycin for a carbuncle caused by MRSA. The isolate is sensitive to clindamycin, doxycycline, and linezolid. Which agent is preferred for oral step-down therapy?",
+              "options": [
+                "Clindamycin",
+                "Doxycycline",
+                "Levofloxacin",
+                "Linezolid"
+              ],
+              "answer": "Clindamycin",
+              "explanation": "Clindamycin is preferred for oral step-down in susceptible MRSA skin infections due to excellent tissue penetration and oral bioavailability."
+            },
+            {
+              "stem": "To reduce Clostridioides difficile infection after clindamycin use for skin infections, which antibiotic should be recommended for moderate purulent SSTIs?",
+              "options": [
+                "Continue clindamycin if D-test negative",
+                "Use cephalexin instead of clindamycin",
+                "Use linezolid instead of clindamycin",
+                "Use trimethoprim/sulfamethoxazole instead of clindamycin"
+              ],
+              "answer": "Use trimethoprim/sulfamethoxazole instead of clindamycin",
+              "explanation": "Trimethoprim/sulfamethoxazole is an effective alternative for CA-MRSA with lower risk of C. difficile infection compared to clindamycin."
+            },
+            {
+              "stem": "A 65-year-old man with uncontrolled diabetes is bitten by a dog. He is allergic to sulfa drugs. Which antibiotic is most appropriate for prophylaxis?",
+              "options": [
+                "Amoxicillin-clavulanate",
+                "Amoxicillin-clavulanate plus tetanus toxoid",
+                "Ciprofloxacin plus clindamycin",
+                "Moxifloxacin plus tetanus toxoid"
+              ],
+              "answer": "Amoxicillin-clavulanate",
+              "explanation": "Amoxicillin-clavulanate provides broad coverage for dog bite pathogens including Pasteurella and anaerobes; sulfa allergy does not contraindicate its use."
+            },
+            {
+              "stem": "A man sustains a human bite to the hand. After aggressive wound cleansing, what is the most appropriate next step?",
+              "options": [
+                "Withhold antimicrobials until signs of infection",
+                "Administer penicillin plus dicloxacillin for 5 days",
+                "Administer cefaclor for 5 days as prophylaxis",
+                "Administer cephalexin as empirical therapy"
+              ],
+              "answer": "Administer penicillin plus dicloxacillin for 5 days",
+              "explanation": "Human bites require prophylactic antibiotics covering Eikenella corrodens and oral anaerobes; penicillin plus dicloxacillin is a standard regimen."
+            },
+            {
+              "stem": "The skin is very red, swollen, and demarcated with a clear line of infection. The most common cause is Streptococcus pyogenes. This describes:",
+              "options": [
+                "Erysipelas",
+                "Furuncles",
+                "Cellulitis",
+                "Steven-Johnson syndrome"
+              ],
+              "answer": "Erysipelas",
+              "explanation": "Erysipelas is a superficial skin infection characterized by well-demarcated erythema, edema, and warmth, most commonly caused by group A Streptococcus."
+            },
+            {
+              "stem": "Complications of amoebic dysentery include all the following EXCEPT:",
+              "options": [
+                "Ameboma",
+                "Intestinal perforation and peritonitis",
+                "Extra-intestinal lesions (e.g., liver abscess)",
+                "Peptic ulcer disease"
+              ],
+              "answer": "Peptic ulcer disease",
+              "explanation": "Peptic ulcer disease is not a recognized complication of Entamoeba histolytica infection; complications include ameboma, perforation, and extraintestinal abscesses."
+            },
+            {
+              "stem": "All of the following are true regarding acute osteomyelitis in a child EXCEPT:",
+              "options": [
+                "Diagnosis by X-ray is delayed 8–10 days after onset",
+                "There is diffuse tenderness at the site",
+                "Antibiotic therapy should be at least 4 weeks",
+                "Salmonella is the most common cause"
+              ],
+              "answer": "Salmonella is the most common cause",
+              "explanation": "Salmonella is not the most common cause of acute osteomyelitis in children; Staphylococcus aureus is the predominant pathogen."
+            },
+            {
+              "stem": "Which is NOT a complication of acute osteomyelitis?",
+              "options": [
+                "Malignancy",
+                "Fracture of the affected bone",
+                "Sepsis",
+                "Chronicity"
+              ],
+              "answer": "Malignancy",
+              "explanation": "Malignancy is not a recognized complication of osteomyelitis; chronic osteomyelitis, fractures, and sepsis are well-documented complications."
+            },
+            {
+              "stem": "The most common cause of nongonococcal septic arthritis is:",
+              "options": [
+                "Staphylococcus aureus",
+                "Haemophilus influenzae",
+                "Pseudomonas aeruginosa",
+                "Streptococcus pneumoniae"
+              ],
+              "answer": "Staphylococcus aureus",
+              "explanation": "Staphylococcus aureus is the leading cause of nongonococcal septic arthritis across all age groups."
+            },
+            {
+              "stem": "Pseudomembranous colitis is caused by:",
+              "options": [
+                "Clostridium tetani",
+                "Clostridium difficile",
+                "Clostridium botulinum",
+                "Clostridium perfringens"
+              ],
+              "answer": "Clostridium difficile",
+              "explanation": "Clostridioides (formerly Clostridium) difficile is the causative agent of pseudomembranous colitis, typically following antibiotic disruption of normal flora."
+            },
+            {
+              "stem": "A 4-year-old boy presents with perianal itching and irritability. Eggs with a flattened side are identified on scotch tape test. The organism is:",
+              "options": [
+                "Enterobius vermicularis",
+                "Ascaris lumbricoides",
+                "Entamoeba histolytica",
+                "Trichuris trichiura"
+              ],
+              "answer": "Enterobius vermicularis",
+              "explanation": "Enterobius vermicularis (pinworm) causes perianal itching and is diagnosed by identifying characteristic eggs on scotch tape test."
+            },
+            {
+              "stem": "Pigs or dogs are the source of human infection by each of the following parasites EXCEPT:",
+              "options": [
+                "Echinococcus granulosus",
+                "Trichinella spiralis",
+                "Ascaris lumbricoides",
+                "Taenia solium"
+              ],
+              "answer": "Ascaris lumbricoides",
+              "explanation": "Ascaris lumbricoides is transmitted via fecal-oral route from contaminated soil or food, not from pigs or dogs."
+            },
+            {
+              "stem": "Which of the following is most likely to be a source of food poisoning bacteria?",
+              "options": [
+                "Frozen peas",
+                "Pasteurized milk",
+                "Tinned salmon",
+                "Raw meat"
+              ],
+              "answer": "Raw meat",
+              "explanation": "Raw meat is a common source of foodborne pathogens such as Salmonella, Campylobacter, and E. coli O157:H7."
+            },
+            {
+              "stem": "Which bacteria causes the greatest number of cases of food poisoning?",
+              "options": [
+                "Clostridium perfringens",
+                "Listeria monocytogenes",
+                "Staphylococcus aureus",
+                "Salmonella spp."
+              ],
+              "answer": "Salmonella spp.",
+              "explanation": "Salmonella is the leading bacterial cause of foodborne illness globally, responsible for more cases than Staphylococcus aureus or Clostridium perfringens."
+            },
+            {
+              "stem": "The main symptom of Staphylococcus food poisoning is:",
+              "options": [
+                "Vomiting",
+                "Diarrhea",
+                "Fever",
+                "Abdominal pain"
+              ],
+              "answer": "Vomiting",
+              "explanation": "Staphylococcus aureus food poisoning is characterized by rapid onset vomiting due to preformed enterotoxins, often within 1–6 hours of ingestion."
+            },
+            {
+              "stem": "Escherichia coli is characterized by virulence properties. All are types of E. coli EXCEPT:",
+              "options": [
+                "Enterohemorrhagic E. coli",
+                "Enteropathogenic E. coli",
+                "Enterotoxigenic E. coli",
+                "Enterolysogenic E. coli"
+              ],
+              "answer": "Enterolysogenic E. coli",
+              "explanation": "Enterolysogenic E. coli is not a recognized pathotype; the main E. coli pathotypes include EHEC, EPEC, ETEC, EAEC, and EIEC."
+            },
+            {
+              "stem": "Symptoms of typhoid fever develop 1–3 weeks after exposure to S. Typhi. All of the following are major symptoms EXCEPT:",
+              "options": [
+                "Weight gain",
+                "Headache",
+                "High-grade fever",
+                "Rose spots"
+              ],
+              "answer": "Weight gain",
+              "explanation": "Weight gain is not a feature of typhoid fever; patients typically experience weight loss due to prolonged fever and anorexia."
+            },
+            {
+              "stem": "One of the most common foodborne illnesses from undercooked poultry and eggs is:",
+              "options": [
+                "Trichinella spiralis",
+                "Salmonella spp.",
+                "Clostridium perfringens",
+                "Clostridium botulinum"
+              ],
+              "answer": "Salmonella spp.",
+              "explanation": "Salmonella is the leading cause of foodborne illness from poultry and eggs, often causing gastroenteritis or typhoid fever."
+            },
+            {
+              "stem": "A patient with severe dehydration based on weight loss and clinical signs should be rehydrated with:",
+              "options": [
+                "Oral rehydration solution",
+                "Intravenous normal saline",
+                "Intravenous D5W",
+                "Intravenous colloid solutions"
+              ],
+              "answer": "Intravenous normal saline",
+              "explanation": "Severe dehydration requires rapid intravenous fluid resuscitation with isotonic crystalloids such as normal saline to restore intravascular volume."
+            },
+            {
+              "stem": "Which of the following is true regarding oral rehydration therapy?",
+              "options": [
+                "Requires hospitalization to administer",
+                "Cannot be used in infants with infrequent vomiting",
+                "Often ineffective",
+                "Inexpensive"
+              ],
+              "answer": "Inexpensive",
+              "explanation": "Oral rehydration therapy is inexpensive, effective, and can be administered at home or in outpatient settings for mild to moderate dehydration."
+            },
+            {
+              "stem": "Which is NOT an advantage of low-osmolarity (rice-based) ORT over isotonic ORT?",
+              "options": [
+                "More effectively replenishes electrolytes",
+                "Decreases stool frequency",
+                "Decreases duration of diarrhea",
+                "Decreases stool volume"
+              ],
+              "answer": "More effectively replenishes electrolytes",
+              "explanation": "Low-osmolarity ORS improves rehydration by reducing stool volume and duration but does not more effectively replenish electrolytes than standard ORS."
+            },
+            {
+              "stem": "Which diarrhea category can be safely treated with antimotility agents?",
+              "options": [
+                "Empirical traveler's diarrhea (nonbloody)",
+                "Dysentery",
+                "EHEC infection",
+                "Shigellosis"
+              ],
+              "answer": "Empirical traveler's diarrhea (nonbloody)",
+              "explanation": "Antimotility agents (e.g., loperamide) may be used cautiously in nonbloody, afebrile traveler's diarrhea but are contraindicated in dysentery or bloody diarrhea."
+            },
+            {
+              "stem": "An 8-year-old with cholera should be treated with:",
+              "options": [
+                "Ciprofloxacin",
+                "Doxycycline",
+                "TMP-SMX",
+                "Antibiotic use is not indicated"
+              ],
+              "answer": "Ciprofloxacin",
+              "explanation": "Antibiotics shorten the duration and reduce the volume of cholera diarrhea; ciprofloxacin is a first-line agent in children."
+            },
+            {
+              "stem": "Some common causes of food poisoning include all these EXCEPT:",
+              "options": [
+                "Shigella",
+                "Salmonella",
+                "Staphylococcus aureus",
+                "Vibrio cholerae"
+              ],
+              "answer": "Vibrio cholerae",
+              "explanation": "While Vibrio cholerae causes epidemic cholera, it is not typically classified among common causes of food poisoning outbreaks in the same way as Shigella, Salmonella, or S. aureus."
+            },
+            {
+              "stem": "All of the following are major complications of falciparum malaria EXCEPT:",
+              "options": [
+                "Seizures and coma",
+                "Hypoglycemia",
+                "Severe anemia",
+                "Peritonitis"
+              ],
+              "answer": "Peritonitis",
+              "explanation": "Peritonitis is not a recognized complication of Plasmodium falciparum malaria; complications include cerebral malaria, hypoglycemia, severe anemia, and renal failure."
+            },
+            {
+              "stem": "The drug of choice for the eradication of lice infestation (body, head, and crab lice) is:",
+              "options": [
+                "1% menthol",
+                "Permethrin 1%",
+                "Y-benzene hexachloride",
+                "Sulfur ointment"
+              ],
+              "answer": "Permethrin 1%",
+              "explanation": "Permethrin 1% is the first-line topical pediculicide for head, body, and pubic lice due to efficacy and safety."
+            },
+            {
+              "stem": "Which agent should be avoided in patients with glucose-6-phosphate dehydrogenase deficiency?",
+              "options": [
+                "Ivermectin",
+                "Mefloquine",
+                "Primaquine",
+                "Albendazole"
+              ],
+              "answer": "Primaquine",
+              "explanation": "Primaquine can cause hemolytic anemia in G6PD-deficient individuals due to oxidative stress on red blood cells."
+            },
+            {
+              "stem": "Black water fever is a special manifestation of malaria caused by:",
+              "options": [
+                "Plasmodium falciparum",
+                "Plasmodium malariae",
+                "Plasmodium ovale",
+                "Plasmodium vivax"
+              ],
+              "answer": "Plasmodium falciparum",
+              "explanation": "Black water fever, characterized by hemoglobinuria and renal failure, is associated with severe Plasmodium falciparum malaria."
+            },
+            {
+              "stem": "All of the following statements regarding Plasmodium falciparum are true EXCEPT:",
+              "options": [
+                "Causes more severe disease in pregnancy",
+                "Is associated with recurrent relapses after initial treatment because of liver hypnozoites",
+                "Is the only malarial parasite causing greater than 20% parasitemia",
+                "Is the only cause of cerebral malaria"
+              ],
+              "answer": "Is associated with recurrent relapses after initial treatment because of liver hypnozoites",
+              "explanation": "P. falciparum does not form hypnozoites; relapse is not a feature; hypnozoites are seen in P. vivax and P. ovale."
+            },
+            {
+              "stem": "Which statement is true regarding amoebic liver abscess?",
+              "options": [
+                "Should be treated by diloxanide furoate alone",
+                "Should be aspirated routinely",
+                "Is associated with eosinophilia",
+                "Should be treated using a combination of metronidazole and diloxanide"
+              ],
+              "answer": "Should be treated using a combination of metronidazole and diloxanide",
+              "explanation": "Amoebic liver abscess requires metronidazole to kill trophozoites followed by diloxanide furoate to eradicate intestinal carriage."
+            },
+            {
+              "stem": "Subcutaneous nodules are a typical finding in all the following infections EXCEPT:",
+              "options": [
+                "Neurofibromatosis",
+                "Hydatid disease",
+                "Cysticercosis",
+                "Onchocerciasis"
+              ],
+              "answer": "Neurofibromatosis",
+              "explanation": "Neurofibromatosis is a genetic disorder, not an infectious cause of subcutaneous nodules; hydatid cysts, cysticercosis, and onchocerciasis are infectious causes."
+            },
+            {
+              "stem": "All of the following are characteristic features of acute schistosomiasis EXCEPT:",
+              "options": [
+                "Fever",
+                "Eosinophilia",
+                "Myocarditis",
+                "Incubation period of 4–6 weeks"
+              ],
+              "answer": "Myocarditis",
+              "explanation": "Acute schistosomiasis (Katayama fever) presents with fever, eosinophilia, and urticaria; myocarditis is not a typical feature."
+            },
+            {
+              "stem": "Effective malaria control interventions include all the following EXCEPT:",
+              "options": [
+                "Mass use of Fansidar chemoprophylaxis",
+                "Use of pyrethroid-impregnated mosquito nets",
+                "Larviciding",
+                "Eradication of mosquito breeding sites"
+              ],
+              "answer": "Mass use of Fansidar chemoprophylaxis",
+              "explanation": "Mass chemoprophylaxis with Fansidar (sulfadoxine-pyrimethamine) is not recommended due to resistance and potential toxicity; targeted prophylaxis is preferred."
+            },
+            {
+              "stem": "All of the following occur in Chagas' disease (American trypanosomiasis) EXCEPT:",
+              "options": [
+                "Lymphadenopathy",
+                "Meningoencephalitis",
+                "Calabar swelling",
+                "Mega-esophagus"
+              ],
+              "answer": "Calabar swelling",
+              "explanation": "Calabar swellings are characteristic of Loa loa infection, not Chagas disease; Chagas disease causes mega-esophagus, cardiomyopathy, and meningoencephalitis."
+            },
+            {
+              "stem": "Blindness is a recognized complication of all the following infections EXCEPT:",
+              "options": [
+                "Onchocerciasis",
+                "Amoebiasis",
+                "Cysticercosis",
+                "Toxoplasmosis"
+              ],
+              "answer": "Amoebiasis",
+              "explanation": "Amoebiasis does not cause blindness; onchocerciasis (river blindness), cysticercosis (ocular cysticercosis), and toxoplasmosis (retinochoroiditis) can lead to visual impairment."
+            },
+            {
+              "stem": "Which of the following may not present with fever and diarrhea?",
+              "options": [
+                "Malaria",
+                "Giardiasis",
+                "Campylobacter enteritis",
+                "Brucellosis"
+              ],
+              "answer": "Giardiasis",
+              "explanation": "Giardiasis often presents with chronic diarrhea without fever; other options commonly present with fever and diarrhea."
+            },
+            {
+              "stem": "Steroids are of benefit in the treatment of:",
+              "options": [
+                "Visceral leishmaniasis",
+                "Escherichia coli septicaemia",
+                "Cerebral malaria",
+                "Severe typhoid fever"
+              ],
+              "answer": "Cerebral malaria",
+              "explanation": "Dexamethasone or other corticosteroids are used adjunctively in cerebral malaria to reduce intracranial pressure and improve outcomes."
+            },
+            {
+              "stem": "Which parasite can cause rectal prolapse?",
+              "options": [
+                "Hookworm",
+                "Ascaris lumbricoides",
+                "Trichuris trichiura",
+                "All of the above"
+              ],
+              "answer": "Trichuris trichiura",
+              "explanation": "Heavy infection with Trichuris trichiura (whipworm) can cause chronic diarrhea and rectal prolapse due to inflammation and peristaltic strain."
+            },
+            {
+              "stem": "A 12-year-old with Salmonella enterocolitis and moderate symptoms should receive which regimen?",
+              "options": [
+                "ORT + ciprofloxacin + loperamide",
+                "ORT + ciprofloxacin",
+                "ORT + azithromycin",
+                "ORT"
+              ],
+              "answer": "ORT",
+              "explanation": "Salmonella gastroenteritis typically does not require antibiotics unless severe or invasive; oral rehydration therapy is the mainstay of treatment."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "A 14-year-old boy presents with acute onset fever, chills, and right knee pain after a minor soccer injury. Examination reveals a warm, swollen joint with limited range of motion. Synovial fluid analysis shows 80,000 WBC/mm³ with 92% neutrophils. Blood cultures are pending. Identify the most likely diagnosis and outline the pharmacological and non-pharmacological management.",
+              "modelAnswer": "Diagnosis: Septic arthritis (most likely due to Staphylococcus aureus).\n\nPharmacological management:\n- Empirical IV antibiotics: Ceftriaxone 2g q24h plus vancomycin 15–20 mg/kg q8–12h (to cover MRSA and gram-negatives).\n- Adjust therapy based on culture and sensitivity results (e.g., switch to flucloxacillin if MSSA confirmed).\n- Analgesia: Paracetamol 1g q6h PRN or ibuprofen 400mg q8h PRN for pain and inflammation.\n- Consider intra-articular corticosteroids only after infection is controlled.\n\nNon-pharmacological management:\n- Joint aspiration and irrigation to relieve pressure and obtain synovial fluid for culture.\n- Immobilization of the joint initially with splinting to reduce pain and prevent further injury.\n- Physical therapy after acute phase to restore range of motion and strength.\n- Monitor for complications such as osteomyelitis or systemic sepsis."
+            },
+            {
+              "stem": "Identify the most important member of Enterobacteriaceae that causes each of the following diseases: (a) Childhood diarrhea, (b) Traveler's diarrhea, (c) Bacillary dysentery, (d) Hemorrhagic colitis or Hemolytic Uremic Syndrome (HUS).",
+              "modelAnswer": "(a) Childhood diarrhea: Enteropathogenic Escherichia coli (EPEC)\n(b) Traveler's diarrhea: Enterotoxigenic Escherichia coli (ETEC)\n(c) Bacillary dysentery: Shigella dysenteriae\n(d) Hemorrhagic colitis or Hemolytic Uremic Syndrome (HUS): Enterohemorrhagic Escherichia coli (EHEC), particularly E. coli O157:H7"
+            },
+            {
+              "stem": "Identify 3 human worms (parasites) that can cause iron deficiency anemia and 1 parasite associated with pernicious anemia.",
+              "modelAnswer": "Parasites causing iron deficiency anemia:\n1. Hookworm (Necator americanus, Ancylostoma duodenale)\n2. Whipworm (Trichuris trichiura)\n3. Ascaris lumbricoides (in heavy infections)\n\nParasite associated with pernicious anemia:\n- Fish tapeworm (Diphyllobothrium latum) due to vitamin B12 deficiency from parasite absorption in the intestine."
+            },
+            {
+              "stem": "Maria, a 38-year-old teacher, is bitten by her neighbor’s dog while walking home. The dog’s vaccination history is unknown. The wound is on her forearm and appears clean but deep. Formulate an appropriate treatment plan for Maria, including counseling points.",
+              "modelAnswer": "Treatment plan:\n1. Immediate wound care: Cleanse thoroughly with soap and water, irrigate with normal saline, and debride devitalized tissue.\n2. Tetanus prophylaxis: Administer tetanus toxoid-containing vaccine if not up to date (Tdap or Td).\n3. Rabies post-exposure prophylaxis (PEP):\n   - Rabies vaccine: 5 doses (days 0, 3, 7, 14, 28) IM in deltoid.\n   - Human rabies immunoglobulin (RIG): 20 IU/kg infiltrated into and around the wound on day 0 (if anatomically feasible).\n4. Antibiotic prophylaxis: Amoxicillin-clavulanate 875/125mg PO q12h for 5–7 days to cover Pasteurella, Capnocytophaga, and anaerobes.\n\nCounseling points:\n- Avoid contact with stray animals and do not attempt to feed or touch wild animals.\n- Report any signs of infection (increased pain, redness, swelling, fever) immediately.\n- Complete the full course of rabies vaccine and RIG as scheduled.\n- Follow up in 48–72 hours for wound reassessment and to ensure adherence to PEP."
+            },
+            {
+              "stem": "Match each clinical presentation with the causative parasite:\n1. Migratory subcutaneous swellings lasting 2–3 days\n2. Rectal prolapse in a child with chronic diarrhea\n3. Iron deficiency anemia in a farmer\n4. Vitamin B12 deficiency with megaloblastic anemia",
+              "modelAnswer": "1. Migratory subcutaneous swellings lasting 2–3 days → Loa loa (Calabar swellings)\n2. Rectal prolapse in a child with chronic diarrhea → Trichuris trichiura (whipworm)\n3. Iron deficiency anemia in a farmer → Hookworm (Necator americanus or Ancylostoma duodenale)\n4. Vitamin B12 deficiency with megaloblastic anemia → Diphyllobothrium latum (fish tapeworm)"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "A 50-year-old woman with a history of type 2 diabetes and hypertension presents to the emergency department with a 1-week history of fever, confusion, and abdominal pain. She returned 10 days ago from a rural area in Nyeri, where she stayed with relatives recovering from typhoid fever. On examination, she is febrile (38.8°C), tachycardic (110 bpm), and hypotensive (88/52 mmHg). Her abdomen is tender in the right upper quadrant. Labs reveal: WBC 2.8 × 10⁹/L, Hb 12.1 g/dL, platelets 110 × 10⁹/L, ALT 120 U/L, AST 150 U/L, total bilirubin 2.1 mg/dL, and CRP 240 mg/L. Blood cultures are pending. \n\nIdentify the most likely presumptive diagnosis and the probable causative agent. Explain why her history, clinical presentation, and laboratory results are consistent with this diagnosis. Design an appropriate treatment plan for her, including adjunctive and supportive therapy. Fourteen months after discharge, her stool remains positive for the same organism. Propose 4 therapeutic options to cure her chronic carrier state. Outline 2 preventive measures against this condition.",
+              "modelAnswer": "**Presumptive diagnosis:** Typhoid fever (enteric fever) caused by *Salmonella Typhi*.\n\n**Consistency with history, presentation, and labs:**\n- Recent travel to an endemic area with exposure to typhoid cases.\n- Prolonged fever, confusion (encephalopathy), and abdominal pain (classic typhoid triad).\n- Relative bradycardia (though not always present), leukopenia, thrombocytopenia, and elevated liver enzymes suggest systemic infection.\n- Low-grade hyperbilirubinemia and transaminitis consistent with typhoid hepatitis.\n\n**Treatment plan:**\n1. **Antimicrobial therapy:**\n   - Empirical: IV ceftriaxone 2g q24h for 10–14 days (covers *S. Typhi* and *S. Paratyphi*).\n   - Adjust based on susceptibility: Oral azithromycin 500mg q24h for 7 days or oral ciprofloxacin 500mg q12h for 7–10 days if susceptible.\n2. **Supportive care:**\n   - IV fluids (normal saline or Ringer’s lactate) for hypotension and dehydration.\n   - Antipyretics: Paracetamol 1g q6h PRN (avoid NSAIDs due to bleeding risk).\n   - Monitor for complications: Intestinal perforation, hemorrhage, or encephalopathy.\n3. **Adjunctive therapy:**\n   - Consider dexamethasone 3mg/kg IV followed by 1mg/kg q6h for 48 hours in severe cases with encephalopathy.\n\n**Chronic carrier state management (14 months post-discharge, stool positive):**\n1. **Ciprofloxacin 500mg PO q12h for 28 days** (first-line for chronic carriage).\n2. **Azithromycin 500mg PO q24h for 21 days** (alternative for fluoroquinolone-resistant cases).\n3. **Amoxicillin 1g PO q6h for 28 days** (if susceptible and no contraindications).\n4. **Cholecystectomy** (if gallstones present, as chronic carriage often involves the gallbladder).\n\n**Preventive measures:**\n1. **Vaccination:** Administer typhoid conjugate vaccine (e.g., Typbar-TCV) to travelers and high-risk individuals; booster every 3–7 years depending on exposure risk.\n2. **Food and water hygiene:** Avoid raw or undercooked foods, unpeeled fruits, and untreated water; practice hand hygiene with soap and water."
+            },
+            {
+              "stem": "A 5-year-old boy is brought to the outpatient department with a 1-day history of fever (38.5°C), vomiting after breakfast, and lethargy. He recently traveled to Mwea for a family function. He is well-nourished (20 kg), alert, and not dehydrated. Physical examination is unremarkable except for fever. \n\nIdentify the most likely diagnosis and causative agent. Justify your answer. Propose 3 diagnostic tests that would help confirm the diagnosis and explain their utility. Compile an elaborate treatment plan for this patient (include dosing regimens). Illustrate 3 counseling points for the mother regarding treatment. The child returns later that night with drowsiness, refusal to feed, and a seizure. Outline the most probable diagnosis and design an appropriate treatment plan.",
+              "modelAnswer": "**Most likely diagnosis and causative agent:**\n- Diagnosis: Cerebral malaria caused by *Plasmodium falciparum*.\n- Justification: Sudden onset fever, lethargy, and recent travel to a malaria-endemic area (Mwea) strongly suggest malaria. Cerebral malaria is a severe manifestation with altered consciousness and seizures.\n\n**Diagnostic tests and utility:**\n1. **Thick and thin blood smears:** Gold standard for malaria diagnosis; identifies species and quantifies parasitemia.\n2. **Rapid diagnostic test (RDT) for malaria:** Detects *P. falciparum* HRP-2 antigen; provides rapid results but less sensitive at low parasitemia.\n3. **Complete blood count (CBC):** May show anemia, thrombocytopenia, or leukocytosis; supports diagnosis and guides management.\n\n**Treatment plan (for uncomplicated malaria):**\n- **Artemether-lumefantrine (AL):** 20 mg/120 mg tablets.\n  - Dose: 4 tablets (80 mg artemether/480 mg lumefantrine) stat, then 4 tablets 8 hours later, then 4 tablets q12h for 2 more days (total 6 doses).\n  - Take with fatty food to enhance absorption.\n- **Supportive care:**\n  - Antipyretics: Paracetamol 15 mg/kg/dose q6h PRN.\n  - Hydration: Oral rehydration solution or IV fluids if unable to tolerate oral intake.\n  - Monitor for hypoglycemia (especially with quinine-based regimens).\n\n**Counseling points for the mother:**\n1. **Complete the full course of antimalarials** even if symptoms improve to prevent recrudescence or resistance.\n2. **Return immediately** if the child develops confusion, seizures, inability to drink, or signs of dehydration.\n3. **Use insecticide-treated bed nets (ITNs)** and apply insect repellent to prevent future mosquito bites.\n\n**Later presentation (drowsiness, seizure, refusal to feed):**\n- **Most probable diagnosis:** Severe malaria with cerebral involvement (cerebral malaria).\n- **Treatment plan:**\n  1. **Emergency management:**\n     - Secure airway and oxygen if needed.\n     - Diazepam 0.3 mg/kg IV or PR for seizure control (max 10 mg/dose).\n     - IV artesunate 2.4 mg/kg stat, then at 12 and 24 hours (preferred for severe malaria).\n  2. **Supportive care:**\n     - IV fluids (normal saline or Ringer’s lactate) for hydration and electrolyte balance.\n     - Monitor blood glucose (hypoglycemia is common in severe malaria).\n     - Consider ICU admission for close monitoring of coma, seizures, or respiratory failure.\n  3. **Adjunctive therapy:**\n     - Dexamethasone is NOT recommended in cerebral malaria.\n     - Avoid blood transfusions unless severe anemia (Hb < 5 g/dL) or respiratory distress."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

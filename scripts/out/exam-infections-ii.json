@@ -1,0 +1,1116 @@
+{
+  "exam-infections-ii": {
+    "1": {
+      "title": "Clinical Pharmacy — Infections II",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 60,
+          "questions": [
+            {
+              "stem": "A 35-year-old healthcare worker presents with acute jaundice, fatigue, and dark urine 3 weeks after a needle-stick injury. Which viral hepatitis is most likely transmitted via this route?",
+              "options": [
+                "Hepatitis A",
+                "Hepatitis B",
+                "Hepatitis C",
+                "Hepatitis E"
+              ],
+              "answer": "Hepatitis B",
+              "explanation": "Hepatitis B is transmitted parenterally, sexually, and vertically, making it the most likely cause in this scenario."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism of action of tenofovir disoproxil fumarate (TDF) in HIV therapy?",
+              "options": [
+                "Inhibition of viral reverse transcriptase by incorporating into viral DNA",
+                "Blockade of viral entry by binding to CCR5 co-receptor",
+                "Inhibition of viral integrase preventing proviral DNA integration",
+                "Inhibition of viral protease preventing maturation of new virions"
+              ],
+              "answer": "Inhibition of viral reverse transcriptase by incorporating into viral DNA",
+              "explanation": "Tenofovir is a nucleotide reverse transcriptase inhibitor (NtRTI) that mimics natural nucleotides and terminates viral DNA synthesis."
+            },
+            {
+              "stem": "A 28-year-old woman presents with a 5-day history of fever, headache, and neck stiffness. Lumbar puncture reveals CSF with 250 WBC/μL (80% lymphocytes), glucose 2.2 mmol/L (serum 4.5 mmol/L), and protein 1.8 g/L. Which organism is most likely responsible?",
+              "options": [
+                "Neisseria meningitidis",
+                "Streptococcus pneumoniae",
+                "Mycobacterium tuberculosis",
+                "Herpes simplex virus"
+              ],
+              "answer": "Mycobacterium tuberculosis",
+              "explanation": "The CSF profile (lymphocytic predominance, low glucose, elevated protein) is classic for tuberculous meningitis."
+            },
+            {
+              "stem": "A 22-year-old male presents with dysuria and purulent urethral discharge. Gram stain shows intracellular gram-negative diplococci. Which antibiotic should be administered empirically?",
+              "options": [
+                "Doxycycline 100 mg orally twice daily for 7 days",
+                "Ceftriaxone 500 mg IM as a single dose",
+                "Azithromycin 1 g orally as a single dose",
+                "Metronidazole 400 mg orally twice daily for 7 days"
+              ],
+              "answer": "Ceftriaxone 500 mg IM as a single dose",
+              "explanation": "Gram-negative diplococci suggest Neisseria gonorrhoeae, which requires ceftriaxone for empirical treatment."
+            },
+            {
+              "stem": "Which serological marker pattern indicates chronic hepatitis B infection?",
+              "options": [
+                "HBsAg positive, anti-HBc IgM positive, anti-HBs negative",
+                "HBsAg negative, anti-HBc IgG positive, anti-HBs positive",
+                "HBsAg positive, anti-HBc IgG positive, anti-HBs negative",
+                "HBsAg negative, anti-HBc IgM positive, anti-HBs negative"
+              ],
+              "answer": "HBsAg positive, anti-HBc IgG positive, anti-HBs negative",
+              "explanation": "Chronic HBV infection is characterized by persistent HBsAg positivity with anti-HBc IgG (indicating past exposure) and absence of anti-HBs (immunity)."
+            },
+            {
+              "stem": "A 45-year-old man with chronic HCV infection (genotype 1) is started on sofosbuvir/velpatasvir. Which adverse effect is most commonly associated with this regimen?",
+              "options": [
+                "Peripheral neuropathy",
+                "Bradycardia",
+                "Headache",
+                "Hemolytic anemia"
+              ],
+              "answer": "Headache",
+              "explanation": "Sofosbuvir/velpatasvir is generally well-tolerated, with headache being the most commonly reported adverse effect."
+            },
+            {
+              "stem": "Which of the following is the most significant risk factor for vertical transmission of HIV?",
+              "options": [
+                "Maternal CD4 count >500 cells/μL",
+                "Maternal HIV viral load >1000 copies/mL",
+                "Maternal use of efavirenz-based ART",
+                "Maternal history of prior cesarean section"
+              ],
+              "answer": "Maternal HIV viral load >1000 copies/mL",
+              "explanation": "A high maternal viral load is the strongest predictor of vertical HIV transmission, regardless of ART regimen."
+            },
+            {
+              "stem": "A 30-year-old woman presents with a painless genital ulcer and inguinal lymphadenopathy. Serology shows VDRL positive and FTA-ABS positive. Which stage of syphilis is this?",
+              "options": [
+                "Primary syphilis",
+                "Secondary syphilis",
+                "Latent syphilis",
+                "Tertiary syphilis"
+              ],
+              "answer": "Primary syphilis",
+              "explanation": "A painless genital ulcer (chancre) with positive serology indicates primary syphilis."
+            },
+            {
+              "stem": "Which of the following is the recommended post-exposure prophylaxis (PEP) regimen for HIV after a high-risk occupational exposure?",
+              "options": [
+                "Tenofovir/emtricitabine + raltegravir for 28 days",
+                "Zidovudine/lamivudine + efavirenz for 21 days",
+                "Abacavir/lamivudine + dolutegravir for 30 days",
+                "Emtricitabine/tenofovir alafenamide + bictegravir for 21 days"
+              ],
+              "answer": "Tenofovir/emtricitabine + raltegravir for 28 days",
+              "explanation": "The WHO-recommended PEP regimen is a 28-day course of tenofovir/emtricitabine (NRTIs) plus raltegravir (INSTI)."
+            },
+            {
+              "stem": "A 50-year-old man with HBV-related cirrhosis develops hepatocellular carcinoma. Which viral hepatitis is most strongly associated with this malignancy?",
+              "options": [
+                "Hepatitis A",
+                "Hepatitis B",
+                "Hepatitis C",
+                "Hepatitis D"
+              ],
+              "answer": "Hepatitis B",
+              "explanation": "Chronic HBV infection is the leading viral cause of hepatocellular carcinoma globally."
+            },
+            {
+              "stem": "Which of the following is the most appropriate initial treatment for a 2-month-old infant with a confirmed UTI?",
+              "options": [
+                "Amoxicillin/clavulanate 30 mg/kg/day divided every 12 hours",
+                "Cefixime 8 mg/kg/day as a single daily dose",
+                "Cotrimoxazole 6–10 mg/kg/day (trimethoprim component) divided every 12 hours",
+                "Nitrofurantoin 5 mg/kg/day divided every 6 hours"
+              ],
+              "answer": "Cefixime 8 mg/kg/day as a single daily dose",
+              "explanation": "Cefixime is a third-generation cephalosporin with good oral bioavailability and is recommended for pediatric UTI."
+            },
+            {
+              "stem": "A 25-year-old man with HIV (CD4 120 cells/μL) presents with fever, cough, and dyspnea. Chest X-ray shows bilateral interstitial infiltrates. Which opportunistic infection is most likely?",
+              "options": [
+                "Cryptococcal meningitis",
+                "Pneumocystis jirovecii pneumonia",
+                "Toxoplasma gondii encephalitis",
+                "Mycobacterium avium complex"
+              ],
+              "answer": "Pneumocystis jirovecii pneumonia",
+              "explanation": "The clinical presentation and CD4 count are classic for Pneumocystis jirovecii pneumonia in HIV."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism of action of dolutegravir in HIV therapy?",
+              "options": [
+                "Inhibition of viral reverse transcriptase",
+                "Inhibition of viral integrase",
+                "Blockade of viral entry via CCR5 co-receptor",
+                "Inhibition of viral protease"
+              ],
+              "answer": "Inhibition of viral integrase",
+              "explanation": "Dolutegravir is an integrase strand transfer inhibitor (INSTI) that blocks integration of viral DNA into the host genome."
+            },
+            {
+              "stem": "A 30-year-old woman presents with a 3-day history of fever, jaundice, and right upper quadrant pain. Serology shows IgM anti-HAV positive and IgG anti-HAV negative. What is the most appropriate management?",
+              "options": [
+                "Administer hepatitis A vaccine immediately",
+                "Administer hepatitis A immune globulin within 2 weeks",
+                "Start tenofovir for potential HBV co-infection",
+                "Supportive care with hydration and rest"
+              ],
+              "answer": "Supportive care with hydration and rest",
+              "explanation": "Acute hepatitis A is self-limiting; supportive care is the mainstay of management."
+            },
+            {
+              "stem": "Which of the following is the recommended regimen for treating gonococcal urethritis in a non-pregnant adult?",
+              "options": [
+                "Ceftriaxone 500 mg IM single dose + azithromycin 1 g orally single dose",
+                "Ceftriaxone 250 mg IM single dose + doxycycline 100 mg orally twice daily for 7 days",
+                "Azithromycin 2 g orally single dose",
+                "Ciprofloxacin 500 mg orally single dose"
+              ],
+              "answer": "Ceftriaxone 500 mg IM single dose + azithromycin 1 g orally single dose",
+              "explanation": "Dual therapy with ceftriaxone (for gonorrhea) and azithromycin (for chlamydia) is recommended due to rising resistance."
+            },
+            {
+              "stem": "A 40-year-old man with chronic HCV (genotype 3) is started on glecaprevir/pibrentasvir. Which adverse effect is most commonly associated with this regimen?",
+              "options": [
+                "Hyperglycemia",
+                "Bradyarrhythmia",
+                "Headache",
+                "Hepatotoxicity"
+              ],
+              "answer": "Headache",
+              "explanation": "Glecaprevir/pibrentasvir is generally well-tolerated, with headache being the most commonly reported adverse effect."
+            },
+            {
+              "stem": "Which of the following is the most appropriate initial treatment for neurosyphilis?",
+              "options": [
+                "Benzathine penicillin G 2.4 million units IM weekly for 3 weeks",
+                "Procaine penicillin G 1.2 million units IM daily for 14 days",
+                "Ceftriaxone 2 g IV daily for 10–14 days",
+                "Doxycycline 200 mg orally twice daily for 28 days"
+              ],
+              "answer": "Procaine penicillin G 1.2 million units IM daily for 14 days",
+              "explanation": "Neurosyphilis requires aqueous penicillin G (IV or IM) for 10–14 days; procaine penicillin is an alternative if IV is unavailable."
+            },
+            {
+              "stem": "A 28-year-old woman presents with a 1-week history of fever, malaise, and a maculopapular rash on her palms and soles. Serology shows VDRL positive and FTA-ABS positive. Which stage of syphilis is this?",
+              "options": [
+                "Primary syphilis",
+                "Secondary syphilis",
+                "Latent syphilis",
+                "Tertiary syphilis"
+              ],
+              "answer": "Secondary syphilis",
+              "explanation": "The maculopapular rash on palms and soles is characteristic of secondary syphilis."
+            },
+            {
+              "stem": "Which of the following is the recommended first-line ART regimen for a treatment-naïve HIV patient with normal renal function?",
+              "options": [
+                "Tenofovir/emtricitabine + efavirenz",
+                "Abacavir/lamivudine + dolutegravir",
+                "Zidovudine/lamivudine + nevirapine",
+                "Stavudine/lamivudine + atazanavir"
+              ],
+              "answer": "Abacavir/lamivudine + dolutegravir",
+              "explanation": "Abacavir/lamivudine (NRTIs) + dolutegravir (INSTI) is a recommended first-line regimen due to high efficacy and low toxicity."
+            },
+            {
+              "stem": "A 35-year-old man presents with fever, headache, and confusion. CSF analysis shows 500 WBC/μL (90% neutrophils), glucose 1.8 mmol/L (serum 4.2 mmol/L), and protein 2.5 g/L. Which organism is most likely responsible?",
+              "options": [
+                "Streptococcus pneumoniae",
+                "Neisseria meningitidis",
+                "Listeria monocytogenes",
+                "Mycobacterium tuberculosis"
+              ],
+              "answer": "Streptococcus pneumoniae",
+              "explanation": "The CSF profile (neutrophilic predominance, low glucose, elevated protein) is classic for bacterial meningitis, with S. pneumoniae being a common cause."
+            },
+            {
+              "stem": "Which of the following is the most appropriate treatment for a 24-week pregnant woman with confirmed syphilis?",
+              "options": [
+                "Doxycycline 100 mg orally twice daily for 14 days",
+                "Azithromycin 500 mg orally daily for 7 days",
+                "Benzathine penicillin G 2.4 million units IM single dose",
+                "Ceftriaxone 500 mg IM single dose"
+              ],
+              "answer": "Benzathine penicillin G 2.4 million units IM single dose",
+              "explanation": "Penicillin is the only effective treatment for syphilis in pregnancy; alternatives are not recommended due to resistance or safety concerns."
+            },
+            {
+              "stem": "A 45-year-old man with HIV (CD4 80 cells/μL) presents with odynophagia and white plaques on his tongue. Which antifungal is most appropriate for empirical treatment?",
+              "options": [
+                "Fluconazole 100 mg orally daily for 7–14 days",
+                "Amphotericin B IV 0.3 mg/kg daily for 7 days",
+                "Nystatin suspension 5 mL swish and swallow four times daily",
+                "Caspofungin IV 50 mg daily for 7 days"
+              ],
+              "answer": "Fluconazole 100 mg orally daily for 7–14 days",
+              "explanation": "Fluconazole is the preferred empirical treatment for oropharyngeal candidiasis in HIV."
+            },
+            {
+              "stem": "Which of the following is the most significant risk factor for hepatocellular carcinoma in a patient with chronic HBV infection?",
+              "options": [
+                "Male sex",
+                "Age >40 years",
+                "High HBV DNA levels",
+                "Presence of anti-HBs antibodies"
+              ],
+              "answer": "High HBV DNA levels",
+              "explanation": "High HBV DNA levels (>2000 IU/mL) are strongly associated with an increased risk of hepatocellular carcinoma."
+            },
+            {
+              "stem": "A 22-year-old woman presents with dysuria, frequency, and suprapubic pain. Urinalysis shows >100 WBC/HPF and positive nitrites. Which organism is most likely responsible?",
+              "options": [
+                "Staphylococcus saprophyticus",
+                "Escherichia coli",
+                "Klebsiella pneumoniae",
+                "Proteus mirabilis"
+              ],
+              "answer": "Escherichia coli",
+              "explanation": "E. coli is the most common cause of uncomplicated UTI, accounting for 75–95% of cases."
+            },
+            {
+              "stem": "Which of the following is the recommended regimen for treating chlamydial urethritis in a non-pregnant adult?",
+              "options": [
+                "Doxycycline 100 mg orally twice daily for 7 days",
+                "Azithromycin 1 g orally single dose",
+                "Ceftriaxone 500 mg IM single dose",
+                "Ciprofloxacin 500 mg orally twice daily for 3 days"
+              ],
+              "answer": "Azithromycin 1 g orally single dose",
+              "explanation": "Azithromycin is the recommended first-line treatment for chlamydial infections due to its efficacy and convenience."
+            },
+            {
+              "stem": "A 30-year-old man with HIV presents with a 2-week history of watery diarrhea and abdominal cramping. Stool microscopy shows acid-fast oocysts. Which organism is most likely responsible?",
+              "options": [
+                "Cryptosporidium parvum",
+                "Giardia lamblia",
+                "Entamoeba histolytica",
+                "Isospora belli"
+              ],
+              "answer": "Cryptosporidium parvum",
+              "explanation": "Acid-fast oocysts in stool are diagnostic of Cryptosporidium, a common cause of diarrhea in HIV."
+            },
+            {
+              "stem": "Which of the following is the most appropriate initial treatment for a 6-month-old infant with confirmed UTI?",
+              "options": [
+                "Amoxicillin 20 mg/kg/day divided every 8 hours",
+                "Cefixime 8 mg/kg/day as a single daily dose",
+                "Cotrimoxazole 6–10 mg/kg/day (trimethoprim component) divided every 12 hours",
+                "Nitrofurantoin 5 mg/kg/day divided every 6 hours"
+              ],
+              "answer": "Cefixime 8 mg/kg/day as a single daily dose",
+              "explanation": "Cefixime is a third-generation cephalosporin with good oral bioavailability and is recommended for pediatric UTI."
+            },
+            {
+              "stem": "A 25-year-old woman presents with a 3-day history of fever, jaundice, and right upper quadrant pain. Serology shows HBsAg positive, anti-HBc IgM positive, and anti-HBs negative. What is the most appropriate management?",
+              "options": [
+                "Administer hepatitis B immune globulin immediately",
+                "Start tenofovir for acute hepatitis B infection",
+                "Supportive care with hydration and rest",
+                "Administer hepatitis B vaccine immediately"
+              ],
+              "answer": "Supportive care with hydration and rest",
+              "explanation": "Acute hepatitis B is self-limiting; supportive care is the mainstay of management."
+            },
+            {
+              "stem": "Which of the following is the recommended regimen for treating pelvic inflammatory disease (PID) in a non-pregnant woman?",
+              "options": [
+                "Ceftriaxone 500 mg IM single dose + doxycycline 100 mg orally twice daily for 14 days",
+                "Ceftriaxone 250 mg IM single dose + azithromycin 1 g orally single dose",
+                "Metronidazole 400 mg orally twice daily for 14 days",
+                "Ciprofloxacin 500 mg orally twice daily for 14 days"
+              ],
+              "answer": "Ceftriaxone 500 mg IM single dose + doxycycline 100 mg orally twice daily for 14 days",
+              "explanation": "This regimen provides coverage for Neisseria gonorrhoeae and Chlamydia trachomatis, the most common causes of PID."
+            },
+            {
+              "stem": "A 40-year-old man with HIV (CD4 150 cells/μL) presents with fever, headache, and confusion. CSF analysis shows 200 WBC/μL (80% lymphocytes), glucose 2.5 mmol/L (serum 4.8 mmol/L), and protein 1.2 g/L. Which organism is most likely responsible?",
+              "options": [
+                "Cryptococcus neoformans",
+                "Toxoplasma gondii",
+                "Mycobacterium tuberculosis",
+                "Herpes simplex virus"
+              ],
+              "answer": "Cryptococcus neoformans",
+              "explanation": "The CSF profile (lymphocytic predominance, low glucose, elevated protein) is classic for cryptococcal meningitis in HIV."
+            },
+            {
+              "stem": "Which of the following is the most appropriate initial treatment for a 24-week pregnant woman with confirmed gonococcal cervicitis?",
+              "options": [
+                "Ceftriaxone 500 mg IM single dose + azithromycin 1 g orally single dose",
+                "Doxycycline 100 mg orally twice daily for 7 days",
+                "Azithromycin 1 g orally single dose",
+                "Ciprofloxacin 500 mg orally single dose"
+              ],
+              "answer": "Ceftriaxone 500 mg IM single dose + azithromycin 1 g orally single dose",
+              "explanation": "Dual therapy with ceftriaxone (for gonorrhea) and azithromycin (for chlamydia) is recommended, with both drugs being safe in pregnancy."
+            },
+            {
+              "stem": "A 30-year-old man presents with a 1-week history of fever, malaise, and a maculopapular rash on his trunk. Serology shows VDRL positive and FTA-ABS negative. Which stage of syphilis is this?",
+              "options": [
+                "Primary syphilis",
+                "Secondary syphilis",
+                "Latent syphilis",
+                "Tertiary syphilis"
+              ],
+              "answer": "Secondary syphilis",
+              "explanation": "The maculopapular rash on the trunk is characteristic of secondary syphilis."
+            },
+            {
+              "stem": "Which of the following is the most significant risk factor for vertical transmission of HBV?",
+              "options": [
+                "Maternal HBeAg positivity",
+                "Maternal HBsAg negativity",
+                "Maternal anti-HBs positivity",
+                "Maternal HBV DNA <2000 IU/mL"
+              ],
+              "answer": "Maternal HBeAg positivity",
+              "explanation": "HBeAg positivity indicates high viral replication and is a strong predictor of vertical HBV transmission."
+            },
+            {
+              "stem": "A 25-year-old woman presents with dysuria, frequency, and suprapubic pain. Urinalysis shows >100 WBC/HPF and positive nitrites. Which antibiotic is most appropriate for empirical treatment?",
+              "options": [
+                "Nitrofurantoin 100 mg orally twice daily for 5 days",
+                "Ciprofloxacin 500 mg orally twice daily for 3 days",
+                "Amoxicillin 500 mg orally three times daily for 7 days",
+                "Metronidazole 400 mg orally twice daily for 7 days"
+              ],
+              "answer": "Nitrofurantoin 100 mg orally twice daily for 5 days",
+              "explanation": "Nitrofurantoin is a first-line agent for uncomplicated UTI due to its efficacy and low resistance rates."
+            },
+            {
+              "stem": "Which of the following is the recommended regimen for treating acute hepatitis C infection?",
+              "options": [
+                "Pegylated interferon alfa-2a + ribavirin for 24 weeks",
+                "Sofosbuvir/ledipasvir for 8–12 weeks",
+                "Tenofovir for 12 weeks",
+                "Ribavirin monotherapy for 24 weeks"
+              ],
+              "answer": "Sofosbuvir/ledipasvir for 8–12 weeks",
+              "explanation": "Direct-acting antivirals (DAAs) like sofosbuvir/ledipasvir are now the standard of care for acute HCV infection."
+            },
+            {
+              "stem": "A 30-year-old man with HIV (CD4 200 cells/μL) presents with fever, cough, and dyspnea. Chest X-ray shows bilateral interstitial infiltrates. Which opportunistic infection is most likely?",
+              "options": [
+                "Pneumocystis jirovecii pneumonia",
+                "Cryptococcal meningitis",
+                "Toxoplasma gondii encephalitis",
+                "Mycobacterium avium complex"
+              ],
+              "answer": "Pneumocystis jirovecii pneumonia",
+              "explanation": "The clinical presentation and CD4 count are classic for Pneumocystis jirovecii pneumonia in HIV."
+            },
+            {
+              "stem": "Which of the following is the most appropriate initial treatment for a 2-month-old infant with confirmed UTI?",
+              "options": [
+                "Amoxicillin 20 mg/kg/day divided every 8 hours",
+                "Cefixime 8 mg/kg/day as a single daily dose",
+                "Cotrimoxazole 6–10 mg/kg/day (trimethoprim component) divided every 12 hours",
+                "Nitrofurantoin 5 mg/kg/day divided every 6 hours"
+              ],
+              "answer": "Cefixime 8 mg/kg/day as a single daily dose",
+              "explanation": "Cefixime is a third-generation cephalosporin with good oral bioavailability and is recommended for pediatric UTI."
+            },
+            {
+              "stem": "A 25-year-old woman presents with a 3-day history of fever, jaundice, and right upper quadrant pain. Serology shows HBsAg positive, anti-HBc IgM positive, and anti-HBs negative. What is the most appropriate management?",
+              "options": [
+                "Administer hepatitis B immune globulin immediately",
+                "Start tenofovir for acute hepatitis B infection",
+                "Supportive care with hydration and rest",
+                "Administer hepatitis B vaccine immediately"
+              ],
+              "answer": "Supportive care with hydration and rest",
+              "explanation": "Acute hepatitis B is self-limiting; supportive care is the mainstay of management."
+            },
+            {
+              "stem": "Which of the following is the recommended regimen for treating chlamydial urethritis in a non-pregnant adult?",
+              "options": [
+                "Doxycycline 100 mg orally twice daily for 7 days",
+                "Azithromycin 1 g orally single dose",
+                "Ceftriaxone 500 mg IM single dose",
+                "Ciprofloxacin 500 mg orally twice daily for 3 days"
+              ],
+              "answer": "Azithromycin 1 g orally single dose",
+              "explanation": "Azithromycin is the recommended first-line treatment for chlamydial infections due to its efficacy and convenience."
+            },
+            {
+              "stem": "A 30-year-old man with HIV presents with a 2-week history of watery diarrhea and abdominal cramping. Stool microscopy shows acid-fast oocysts. Which organism is most likely responsible?",
+              "options": [
+                "Cryptosporidium parvum",
+                "Giardia lamblia",
+                "Entamoeba histolytica",
+                "Isospora belli"
+              ],
+              "answer": "Cryptosporidium parvum",
+              "explanation": "Acid-fast oocysts in stool are diagnostic of Cryptosporidium, a common cause of diarrhea in HIV."
+            },
+            {
+              "stem": "Which of the following is the most significant risk factor for hepatocellular carcinoma in a patient with chronic HBV infection?",
+              "options": [
+                "Male sex",
+                "Age >40 years",
+                "High HBV DNA levels",
+                "Presence of anti-HBs antibodies"
+              ],
+              "answer": "High HBV DNA levels",
+              "explanation": "High HBV DNA levels (>2000 IU/mL) are strongly associated with an increased risk of hepatocellular carcinoma."
+            },
+            {
+              "stem": "A 22-year-old woman presents with dysuria, frequency, and suprapubic pain. Urinalysis shows >100 WBC/HPF and positive nitrites. Which organism is most likely responsible?",
+              "options": [
+                "Staphylococcus saprophyticus",
+                "Escherichia coli",
+                "Klebsiella pneumoniae",
+                "Proteus mirabilis"
+              ],
+              "answer": "Escherichia coli",
+              "explanation": "E. coli is the most common cause of uncomplicated UTI, accounting for 75–95% of cases."
+            },
+            {
+              "stem": "Which of the following is the recommended regimen for treating pelvic inflammatory disease (PID) in a non-pregnant woman?",
+              "options": [
+                "Ceftriaxone 500 mg IM single dose + doxycycline 100 mg orally twice daily for 14 days",
+                "Ceftriaxone 250 mg IM single dose + azithromycin 1 g orally single dose",
+                "Metronidazole 400 mg orally twice daily for 14 days",
+                "Ciprofloxacin 500 mg orally twice daily for 14 days"
+              ],
+              "answer": "Ceftriaxone 500 mg IM single dose + doxycycline 100 mg orally twice daily for 14 days",
+              "explanation": "This regimen provides coverage for Neisseria gonorrhoeae and Chlamydia trachomatis, the most common causes of PID."
+            },
+            {
+              "stem": "A 40-year-old man with HIV (CD4 150 cells/μL) presents with fever, headache, and confusion. CSF analysis shows 200 WBC/μL (80% lymphocytes), glucose 2.5 mmol/L (serum 4.8 mmol/L), and protein 1.2 g/L. Which organism is most likely responsible?",
+              "options": [
+                "Cryptococcus neoformans",
+                "Toxoplasma gondii",
+                "Mycobacterium tuberculosis",
+                "Herpes simplex virus"
+              ],
+              "answer": "Cryptococcus neoformans",
+              "explanation": "The CSF profile (lymphocytic predominance, low glucose, elevated protein) is classic for cryptococcal meningitis in HIV."
+            },
+            {
+              "stem": "Which of the following is the most appropriate initial treatment for a 24-week pregnant woman with confirmed gonococcal cervicitis?",
+              "options": [
+                "Ceftriaxone 500 mg IM single dose + azithromycin 1 g orally single dose",
+                "Doxycycline 100 mg orally twice daily for 7 days",
+                "Azithromycin 1 g orally single dose",
+                "Ciprofloxacin 500 mg orally single dose"
+              ],
+              "answer": "Ceftriaxone 500 mg IM single dose + azithromycin 1 g orally single dose",
+              "explanation": "Dual therapy with ceftriaxone (for gonorrhea) and azithromycin (for chlamydia) is recommended, with both drugs being safe in pregnancy."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "List four opportunistic infections that can be prevented by co-trimoxazole preventive therapy (CPT) in HIV-positive patients.",
+              "modelAnswer": "1. Pneumocystis jirovecii pneumonia (PCP)\n2. Toxoplasma gondii encephalitis\n3. Isosporiasis\n4. Certain bacterial infections (e.g., recurrent bacterial pneumonia, Salmonella bacteremia)"
+            },
+            {
+              "stem": "A 56-year-old truck driver is admitted with a diagnosis of cryptococcal meningitis. He is started on amphotericin B. Outline the key recommendations for administration and monitoring of amphotericin B.",
+              "modelAnswer": "1. **Administration**: Dilute amphotericin B in 5% dextrose (avoid saline) and infuse over 4–6 hours. Use a test dose (1 mg IV) to assess tolerance.\n2. **Monitoring**: Check serum electrolytes (especially potassium and magnesium) daily due to renal wasting. Monitor renal function (creatinine, BUN) and CBC for anemia/neutropenia.\n3. **Supportive care**: Pre-medicate with paracetamol, antihistamines, and corticosteroids to reduce infusion-related reactions.\n4. **Duration**: Continue amphotericin B for 2 weeks, followed by fluconazole for consolidation therapy."
+            },
+            {
+              "stem": "Outline three indirect methods that can be used to assess adherence to antiretroviral therapy (ART) during routine clinic visits.",
+              "modelAnswer": "1. **Pill counts**: Compare the number of pills dispensed with the number returned at the next visit.\n2. **Pharmacy refill records**: Review the frequency and timing of refills to identify gaps in therapy.\n3. **Patient self-report**: Use standardized questionnaires (e.g., Morisky Medication Adherence Scale) to assess missed doses."
+            },
+            {
+              "stem": "Explain the current recommendations for preventing recurrent HBV infection after liver transplantation.",
+              "modelAnswer": "1. **Pre-transplant**: Administer hepatitis B immune globulin (HBIG) and nucleos(t)ide analogs (e.g., tenofovir or entecavir) to reduce HBV DNA levels.\n2. **Post-transplant**: Continue long-term HBIG (lifelong) and nucleos(t)ide analogs (e.g., tenofovir) to prevent HBV recurrence.\n3. **Monitoring**: Regularly monitor HBV DNA levels and liver function tests to detect breakthrough infections."
+            },
+            {
+              "stem": "Describe three goals of therapy for treating HCV infection.",
+              "modelAnswer": "1. **Viral eradication**: Achieve sustained virologic response (SVR), defined as undetectable HCV RNA 12 weeks after completing therapy.\n2. **Prevent complications**: Reduce the risk of cirrhosis, hepatocellular carcinoma, and liver failure.\n3. **Improve quality of life**: Alleviate symptoms (e.g., fatigue, jaundice) and reduce extrahepatic manifestations (e.g., cryoglobulinemic vasculitis)."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "A 31-year-old man newly diagnosed with HIV was admitted with shortness of breath, cough, and generalized chest discomfort. Chest radiograph revealed diffuse bilateral opacities and a blood gas analysis demonstrated an arterial partial oxygen pressure (PaO2) of 8.0 kPa (normal range 11.0–14.0 kPa). Sputum culture was uninformative. A bronchoalveolar lavage was performed and transbronchial biopsies taken.\n\n(a) Identify the most likely clinical diagnosis and the causative agent.\n(b) Justify your answer in (a) above.\n(c) Propose 2 other tests that could be performed to support the diagnosis.\n(d) Design a comprehensive treatment plan for this patient including appropriate antimicrobial regimen, adjunctive treatment, and supportive therapy.\n(e) Assuming this patient was allergic to the first-line treatment for this condition, propose two other alternative pharmacological interventions (for moderate to severe infection) that you would consider for this infection.\n(f) Explain how you would monitor treatment in this patient.\n(g) Illustrate the ART regimen that you would recommend to be initiated in this patient and the exact timing of initiation of the regimen (justify your answer).",
+              "modelAnswer": {
+                "a": "Most likely diagnosis: Pneumocystis jirovecii pneumonia (PCP). Causative agent: Pneumocystis jirovecii (a fungus).",
+                "b": "1. **Clinical presentation**: Shortness of breath, cough, and diffuse bilateral opacities on chest X-ray are classic for PCP.\n2. **Hypoxemia**: PaO2 of 8.0 kPa (severe hypoxemia) is typical in moderate-to-severe PCP.\n3. **CD4 count**: Newly diagnosed HIV with likely low CD4 count (<200 cells/μL) predisposes to PCP.\n4. **Diagnostic yield**: Sputum culture was uninformative, but bronchoalveolar lavage and transbronchial biopsy are highly sensitive for PCP.",
+                "c": "1. **Induced sputum for Pneumocystis PCR**: Highly sensitive and specific for detecting P. jirovecii DNA.\n2. **Serum LDH levels**: Elevated LDH (>500 IU/L) supports the diagnosis of PCP.\n3. **Beta-D-glucan assay**: A non-invasive test with high sensitivity and specificity for fungal infections, including PCP.",
+                "d": "**Antimicrobial regimen**: Trimethoprim-sulfamethoxazole (TMP-SMX) 15–20 mg/kg/day (TMP component) IV or orally in divided doses for 21 days.\n**Adjunctive therapy**: Prednisone 40 mg orally twice daily for 5 days, then 40 mg daily for 5 days, then 20 mg daily for 11 days (to reduce inflammation and improve oxygenation).\n**Supportive therapy**: Oxygen therapy to maintain SpO2 >90%, hydration, and nutritional support.\n**Monitoring**: Daily clinical assessment, oxygen saturation, and adverse effects (e.g., rash, hyperkalemia, nephrotoxicity).",
+                "e": "1. **Clindamycin 600 mg IV every 8 hours + primaquine 30 mg orally daily**: Alternative regimen for moderate-to-severe PCP in patients intolerant to TMP-SMX.\n2. **Atovaquone 750 mg orally twice daily**: Alternative for mild-to-moderate PCP, especially in patients with sulfa allergies.",
+                "f": "1. **Clinical response**: Monitor symptoms (cough, dyspnea, fever) and oxygen requirements.\n2. **Laboratory monitoring**: Check CBC, renal function, and electrolytes (TMP-SMX can cause hyperkalemia and nephrotoxicity).\n3. **Radiological monitoring**: Repeat chest X-ray at the end of treatment to assess resolution.\n4. **Virologic monitoring**: If HIV is newly diagnosed, monitor CD4 count and HIV viral load post-ART initiation.",
+                "g": "**ART regimen**: Tenofovir/emtricitabine + dolutegravir (TDF/FTC/DTG).\n**Timing of initiation**: Start ART within 2 weeks of PCP diagnosis, but after the patient has stabilized (e.g., oxygen requirements are improving).\n**Justification**: Early ART initiation reduces mortality and improves immune recovery. TDF/FTC/DTG is a recommended first-line regimen due to high efficacy, low toxicity, and once-daily dosing. Avoid efavirenz due to potential drug interactions with TMP-SMX (e.g., rash)."
+              }
+            },
+            {
+              "stem": "D.S., a 23-year-old male army officer recently stationed in Lanet, complains of dysuria, meatal pain, and a profuse yellow urethral discharge for 2 days. He admits to extramarital sex with a sex worker during the past week. He is accompanied by his pregnant wife, C.S., who is asymptomatic. D.S. engages in vaginal sex, but there is no history of oral or anal sex with either partner. Intracellular gram-negative diplococci are seen on the Gram stain of D.S.’s urethral exudate.\n\n(a) Identify the most likely diagnosis and causative agent.\n(b) Explain your answer in (a) above.\n(c) Prepare the treatment plans for both C.S and D.S.\n(d) Outline three parameters that you would use to monitor response to treatment for both C.S and D.S.\n(e) Identify one antimicrobial drug that is effective for this condition but is contraindicated in C.S because of pregnancy. Give the reason for contraindication.\n(f) Assuming D.S presented before 72 hours elapsed after initial sexual contact with the sex worker, outline any other therapy that he would have benefited from (give the drug regimen and duration of therapy).\n(g) List two adverse effects associated with the therapy in (f) that you would watch out for.\n(h) D.S is diagnosed with primary syphilis 3 years later. Outline two possible complications of syphilis in D.S.",
+              "modelAnswer": {
+                "a": "Most likely diagnosis: Gonococcal urethritis. Causative agent: Neisseria gonorrhoeae.",
+                "b": "1. **Clinical presentation**: Dysuria, meatal pain, and profuse yellow urethral discharge are classic symptoms of gonococcal urethritis.\n2. **Gram stain**: Intracellular gram-negative diplococci are diagnostic of N. gonorrhoeae.\n3. **Risk factors**: Recent unprotected sexual contact with a sex worker increases the likelihood of gonorrhea.",
+                "c": "**Treatment for D.S.**: Ceftriaxone 500 mg IM single dose + azithromycin 1 g orally single dose (to cover potential chlamydial co-infection).\n**Treatment for C.S.**: Empirical treatment for chlamydia: Azithromycin 1 g orally single dose (since gonorrhea screening is negative and pregnancy precludes ceftriaxone).",
+                "d": "1. **Clinical response**: Resolution of dysuria, meatal pain, and urethral discharge within 7 days.\n2. **Microbiological cure**: Repeat Gram stain or NAAT for N. gonorrhoeae and C. trachomatis 1–2 weeks post-treatment.\n3. **Partner notification and testing**: Ensure C.S. is tested and treated, and D.S. abstains from sexual contact until both are cured.",
+                "e": "Ciprofloxacin 500 mg orally single dose. Contraindication: Pregnancy (risk of fetal cartilage damage and arthropathy).",
+                "f": "Post-exposure prophylaxis (PEP) for gonorrhea: Ceftriaxone 500 mg IM single dose. Duration: Single dose.",
+                "g": "1. **Injection site pain**: Ceftriaxone can cause local pain or induration at the injection site.\n2. **Hypersensitivity reactions**: Rare but possible, ranging from rash to anaphylaxis.",
+                "h": "1. **Neurosyphilis**: Can cause meningitis, stroke, or cognitive impairment if untreated.\n2. **Cardiovascular syphilis**: Can lead to aortic aneurysm or valvular heart disease."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Clinical Pharmacy — Infections II",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 60,
+          "questions": [
+            {
+              "stem": "A 28-year-old woman presents with a 3-day history of jaundice, dark urine, and fatigue. She reports recent consumption of raw oysters. Serology reveals anti-HAV IgM positive, HBsAg negative, anti-HBc IgM negative, anti-HCV negative. What is the most likely diagnosis?",
+              "options": [
+                "Acute hepatitis B",
+                "Acute hepatitis C",
+                "Acute hepatitis A",
+                "Chronic hepatitis E"
+              ],
+              "answer": "Acute hepatitis A",
+              "explanation": "Anti-HAV IgM positivity indicates acute hepatitis A infection, which is consistent with the clinical presentation and exposure history."
+            },
+            {
+              "stem": "Which of the following is the most appropriate vaccination schedule for hepatitis A in a previously unvaccinated 12-month-old child according to WHO guidelines?",
+              "options": [
+                "Single dose at 12 months",
+                "Two doses at 12 and 18 months",
+                "Three doses at 6, 10, and 14 weeks",
+                "Four doses at 2, 4, 6, and 12 months"
+              ],
+              "answer": "Two doses at 12 and 18 months",
+              "explanation": "WHO recommends two doses of hepatitis A vaccine for children, with the first dose given at 12 months and the second dose 6–12 months later."
+            },
+            {
+              "stem": "A 35-year-old man with HIV (CD4 count 180 cells/µL) is started on antiretroviral therapy (ART). He develops severe nausea, vomiting, and abdominal pain 2 weeks later. Laboratory tests show elevated serum amylase and lipase. Which antiretroviral is most likely responsible for this adverse effect?",
+              "options": [
+                "Efavirenz",
+                "Tenofovir",
+                "Dolutegravir",
+                "Lamivudine"
+              ],
+              "answer": "Tenofovir",
+              "explanation": "Tenofovir is associated with pancreatitis, particularly in patients with pre-existing risk factors or concurrent medications that increase risk."
+            },
+            {
+              "stem": "A 45-year-old woman presents with a 1-week history of fever, headache, and confusion. Lumbar puncture reveals CSF with 250 WBC/µL (70% lymphocytes), glucose 1.8 mmol/L (serum glucose 5.2 mmol/L), protein 3.5 g/L, and negative India ink stain. Which pathogen is most likely responsible?",
+              "options": [
+                "Neisseria meningitidis",
+                "Cryptococcus neoformans",
+                "Listeria monocytogenes",
+                "Herpes simplex virus"
+              ],
+              "answer": "Cryptococcus neoformans",
+              "explanation": "The CSF profile (lymphocytic pleocytosis, low glucose, high protein) with a negative India ink stain suggests cryptococcal meningitis, especially in an immunocompromised patient."
+            },
+            {
+              "stem": "A 22-year-old man presents with dysuria and a purulent urethral discharge. Gram stain shows intracellular gram-negative diplococci. Which antibiotic is the first-line treatment for this infection?",
+              "options": [
+                "Doxycycline 100 mg orally twice daily for 7 days",
+                "Ceftriaxone 500 mg IM as a single dose",
+                "Azithromycin 1 g orally as a single dose",
+                "Metronidazole 500 mg orally twice daily for 7 days"
+              ],
+              "answer": "Ceftriaxone 500 mg IM as a single dose",
+              "explanation": "Ceftriaxone is the first-line treatment for gonorrhea, and co-treatment for Chlamydia trachomatis with doxycycline or azithromycin is recommended."
+            },
+            {
+              "stem": "A 30-year-old woman is diagnosed with primary syphilis. Which of the following is the most appropriate treatment according to WHO guidelines?",
+              "options": [
+                "Benzathine penicillin G 2.4 million units IM weekly for 2 weeks",
+                "Doxycycline 100 mg orally twice daily for 14 days",
+                "Ceftriaxone 1 g IM daily for 10 days",
+                "Azithromycin 500 mg orally daily for 10 days"
+              ],
+              "answer": "Benzathine penicillin G 2.4 million units IM weekly for 2 weeks",
+              "explanation": "Benzathine penicillin G is the preferred treatment for primary syphilis, with a single dose for early syphilis and weekly doses for late latent syphilis."
+            },
+            {
+              "stem": "A 50-year-old man with chronic hepatitis B (HBsAg positive, HBeAg positive, HBV DNA 5 log10 IU/mL) is started on tenofovir. Which parameter should be monitored most closely during therapy?",
+              "options": [
+                "Serum potassium",
+                "Renal function (eGFR)",
+                "Hemoglobin levels",
+                "Thyroid function"
+              ],
+              "answer": "Renal function (eGFR)",
+              "explanation": "Tenofovir is nephrotoxic, and renal function (eGFR) should be monitored closely during therapy, especially in patients with pre-existing renal impairment."
+            },
+            {
+              "stem": "A 25-year-old pregnant woman (28 weeks gestation) is diagnosed with hepatitis C virus (HCV) infection. Which of the following is the most appropriate next step?",
+              "options": [
+                "Start sofosbuvir/ledipasvir immediately",
+                "Wait until postpartum to initiate treatment",
+                "Perform HCV RNA testing to confirm active infection",
+                "Administer pegylated interferon and ribavirin"
+              ],
+              "answer": "Perform HCV RNA testing to confirm active infection",
+              "explanation": "HCV antibody testing alone cannot distinguish between past and current infection; HCV RNA testing is required to confirm active infection before treatment."
+            },
+            {
+              "stem": "A 40-year-old man with HIV (CD4 count 120 cells/µL) presents with a 2-week history of cough, fever, and weight loss. Chest X-ray shows bilateral infiltrates. Sputum AFB stain is negative. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Pneumocystis jirovecii pneumonia",
+                "Tuberculosis",
+                "Bacterial pneumonia",
+                "Histoplasmosis"
+              ],
+              "answer": "Pneumocystis jirovecii pneumonia",
+              "explanation": "The clinical presentation (subacute onset, bilateral infiltrates, low CD4 count) is highly suggestive of Pneumocystis jirovecii pneumonia in an HIV-infected patient."
+            },
+            {
+              "stem": "A 35-year-old woman with a history of intravenous drug use presents with jaundice, fatigue, and elevated ALT/AST. Serology shows anti-HCV positive, HCV RNA positive, HBsAg negative, anti-HBc IgG positive. What is the most likely diagnosis?",
+              "options": [
+                "Chronic hepatitis B",
+                "Acute hepatitis C",
+                "Chronic hepatitis C",
+                "Hepatitis D superinfection"
+              ],
+              "answer": "Chronic hepatitis C",
+              "explanation": "Anti-HCV positivity with detectable HCV RNA indicates chronic hepatitis C infection, especially in the context of risk factors like intravenous drug use."
+            },
+            {
+              "stem": "A 60-year-old man with a history of chronic hepatitis B presents with abdominal distension and ascites. Ultrasound reveals a liver mass. Which of the following is the most likely cause of his hepatocellular carcinoma?",
+              "options": [
+                "Hepatitis A virus",
+                "Hepatitis B virus",
+                "Hepatitis C virus",
+                "Alcohol abuse"
+              ],
+              "answer": "Hepatitis B virus",
+              "explanation": "Chronic hepatitis B infection is a leading cause of hepatocellular carcinoma worldwide, particularly in regions with high HBV prevalence."
+            },
+            {
+              "stem": "A 28-year-old man presents with a painless genital ulcer and inguinal lymphadenopathy. Serology shows VDRL positive, RPR positive, and TPHA positive. Which stage of syphilis is most likely?",
+              "options": [
+                "Primary syphilis",
+                "Secondary syphilis",
+                "Latent syphilis",
+                "Tertiary syphilis"
+              ],
+              "answer": "Primary syphilis",
+              "explanation": "A painless genital ulcer (chancre) with positive serology for syphilis indicates primary syphilis."
+            },
+            {
+              "stem": "A 30-year-old woman is diagnosed with pelvic inflammatory disease (PID). Which of the following is the most appropriate outpatient treatment regimen?",
+              "options": [
+                "Ceftriaxone 500 mg IM + doxycycline 100 mg orally twice daily for 14 days",
+                "Ceftriaxone 250 mg IM + azithromycin 1 g orally weekly for 2 weeks",
+                "Cefixime 400 mg orally + metronidazole 500 mg orally twice daily for 7 days",
+                "Ciprofloxacin 500 mg orally twice daily for 14 days"
+              ],
+              "answer": "Ceftriaxone 500 mg IM + doxycycline 100 mg orally twice daily for 14 days",
+              "explanation": "The CDC and WHO recommend ceftriaxone for gonococcal coverage plus doxycycline for Chlamydia trachomatis in the treatment of PID."
+            },
+            {
+              "stem": "A 45-year-old man with HIV (CD4 count 50 cells/µL) presents with a 1-week history of fever, headache, and confusion. CSF analysis shows 500 WBC/µL (90% lymphocytes), glucose 1.5 mmol/L, protein 4.0 g/L, and positive cryptococcal antigen. Which of the following is the most appropriate initial antifungal therapy?",
+              "options": [
+                "Fluconazole 800 mg orally daily",
+                "Amphotericin B deoxycholate 0.7 mg/kg IV daily",
+                "Liposomal amphotericin B 3–4 mg/kg IV daily + flucytosine 25 mg/kg orally 4 times daily",
+                "Caspofungin 70 mg IV loading dose, then 50 mg IV daily"
+              ],
+              "answer": "Liposomal amphotericin B 3–4 mg/kg IV daily + flucytosine 25 mg/kg orally 4 times daily",
+              "explanation": "Liposomal amphotericin B plus flucytosine is the recommended initial therapy for cryptococcal meningitis in HIV-infected patients."
+            },
+            {
+              "stem": "A 25-year-old woman presents with a 3-day history of dysuria, urinary frequency, and suprapubic pain. Urinalysis shows >100 WBC/HPF, positive nitrites, and positive leukocyte esterase. Which of the following is the most appropriate first-line treatment?",
+              "options": [
+                "Nitrofurantoin 100 mg orally twice daily for 3 days",
+                "Ciprofloxacin 500 mg orally twice daily for 7 days",
+                "Amoxicillin 500 mg orally three times daily for 5 days",
+                "Trimethoprim-sulfamethoxazole 160/800 mg orally twice daily for 3 days"
+              ],
+              "answer": "Nitrofurantoin 100 mg orally twice daily for 3 days",
+              "explanation": "Nitrofurantoin is a first-line treatment for uncomplicated urinary tract infections in women, with a 3-day course being standard."
+            },
+            {
+              "stem": "A 35-year-old man with HIV (CD4 count 200 cells/µL) presents with a 2-week history of watery diarrhea and weight loss. Stool microscopy reveals acid-fast oocysts. Which of the following is the most likely pathogen?",
+              "options": [
+                "Giardia lamblia",
+                "Cryptosporidium parvum",
+                "Entamoeba histolytica",
+                "Isospora belli"
+              ],
+              "answer": "Cryptosporidium parvum",
+              "explanation": "Cryptosporidium parvum is a common cause of chronic diarrhea in HIV-infected patients with low CD4 counts and is identified by acid-fast staining of oocysts."
+            },
+            {
+              "stem": "A 50-year-old man with chronic hepatitis B (HBsAg positive, HBeAg negative, HBV DNA 3 log10 IU/mL) is started on tenofovir. Which of the following is the most appropriate monitoring schedule for this patient?",
+              "options": [
+                "LFTs and HBV DNA every 3 months",
+                "Renal function and HBV DNA every 6 months",
+                "CBC and HBV DNA every 12 months",
+                "Renal function and LFTs every 6 months"
+              ],
+              "answer": "Renal function and HBV DNA every 6 months",
+              "explanation": "Patients on tenofovir should have renal function (eGFR) and HBV DNA monitored every 6 months to assess efficacy and safety."
+            },
+            {
+              "stem": "A 28-year-old woman presents with a 1-week history of fever, rash, and arthralgia. She reports a tick bite 2 weeks ago. Serology shows positive IgM for Borrelia burgdorferi. Which of the following is the most appropriate treatment?",
+              "options": [
+                "Doxycycline 100 mg orally twice daily for 14 days",
+                "Amoxicillin 500 mg orally three times daily for 21 days",
+                "Ceftriaxone 2 g IV daily for 14 days",
+                "Azithromycin 500 mg orally daily for 7 days"
+              ],
+              "answer": "Doxycycline 100 mg orally twice daily for 14 days",
+              "explanation": "Doxycycline is the first-line treatment for early Lyme disease, with a 14-day course being standard."
+            },
+            {
+              "stem": "A 40-year-old man with HIV (CD4 count 100 cells/µL) presents with a 1-month history of progressive dyspnea and dry cough. Chest X-ray shows bilateral interstitial infiltrates. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Pneumocystis jirovecii pneumonia",
+                "Tuberculosis",
+                "Bacterial pneumonia",
+                "Kaposi sarcoma"
+              ],
+              "answer": "Pneumocystis jirovecii pneumonia",
+              "explanation": "The clinical presentation (progressive dyspnea, dry cough, bilateral interstitial infiltrates) in an HIV-infected patient with low CD4 count is highly suggestive of Pneumocystis jirovecii pneumonia."
+            },
+            {
+              "stem": "A 30-year-old woman is diagnosed with acute hepatitis B (HBsAg positive, anti-HBc IgM positive, HBeAg positive). Which of the following is the most appropriate management?",
+              "options": [
+                "Supportive care only",
+                "Tenofovir therapy for 4 weeks",
+                "Pegylated interferon therapy for 48 weeks",
+                "Lamivudine therapy for 12 months"
+              ],
+              "answer": "Supportive care only",
+              "explanation": "Acute hepatitis B typically resolves spontaneously, and antiviral therapy is not routinely recommended unless the patient is severely ill or immunocompromised."
+            },
+            {
+              "stem": "A 25-year-old man presents with a 2-week history of fever, night sweats, and weight loss. Chest X-ray shows a right upper lobe infiltrate. Sputum AFB stain is positive. Which of the following is the most appropriate treatment regimen?",
+              "options": [
+                "Isoniazid, rifampicin, pyrazinamide, and ethambutol for 2 months, then isoniazid and rifampicin for 4 months",
+                "Isoniazid and rifampicin for 9 months",
+                "Streptomycin, isoniazid, rifampicin, and ethambutol for 6 months",
+                "Rifampicin, ethambutol, and pyrazinamide for 12 months"
+              ],
+              "answer": "Isoniazid, rifampicin, pyrazinamide, and ethambutol for 2 months, then isoniazid and rifampicin for 4 months",
+              "explanation": "This is the standard WHO-recommended regimen for drug-susceptible tuberculosis, consisting of an intensive phase (2 months) and a continuation phase (4 months)."
+            },
+            {
+              "stem": "A 35-year-old woman with HIV (CD4 count 150 cells/µL) presents with a 1-week history of fever, headache, and confusion. CSF analysis shows 200 WBC/µL (80% lymphocytes), glucose 2.0 mmol/L, protein 3.0 g/L, and positive India ink stain. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Cryptococcal meningitis",
+                "Tuberculous meningitis",
+                "Bacterial meningitis",
+                "Viral meningitis"
+              ],
+              "answer": "Cryptococcal meningitis",
+              "explanation": "The CSF profile (lymphocytic pleocytosis, low glucose, high protein) with a positive India ink stain is diagnostic of cryptococcal meningitis."
+            },
+            {
+              "stem": "A 40-year-old man presents with a 3-day history of fever, headache, and myalgia. He reports recent travel to a rural area with poor sanitation. Serology shows IgM positive for hepatitis E virus. Which of the following is the most likely mode of transmission?",
+              "options": [
+                "Parenteral transmission",
+                "Sexual transmission",
+                "Fecal-oral transmission",
+                "Vector-borne transmission"
+              ],
+              "answer": "Fecal-oral transmission",
+              "explanation": "Hepatitis E virus is primarily transmitted via the fecal-oral route, often through contaminated water or food in endemic regions."
+            },
+            {
+              "stem": "A 28-year-old woman presents with a 1-week history of dysuria and vaginal discharge. Urinalysis shows >50 WBC/HPF, and vaginal swab shows clue cells. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Urinary tract infection",
+                "Bacterial vaginosis",
+                "Candidiasis",
+                "Trichomoniasis"
+              ],
+              "answer": "Bacterial vaginosis",
+              "explanation": "Clue cells on vaginal swab are diagnostic of bacterial vaginosis, which can cause dysuria and vaginal discharge."
+            },
+            {
+              "stem": "A 35-year-old man with HIV (CD4 count 80 cells/µL) presents with a 2-week history of fever, night sweats, and weight loss. Chest X-ray shows bilateral infiltrates. Sputum AFB stain is negative. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Pneumocystis jirovecii pneumonia",
+                "Tuberculosis",
+                "Histoplasmosis",
+                "Coccidioidomycosis"
+              ],
+              "answer": "Pneumocystis jirovecii pneumonia",
+              "explanation": "The clinical presentation (fever, night sweats, weight loss, bilateral infiltrates) in an HIV-infected patient with low CD4 count is highly suggestive of Pneumocystis jirovecii pneumonia."
+            },
+            {
+              "stem": "A 45-year-old woman with chronic hepatitis C (genotype 1) is started on sofosbuvir/ledipasvir. Which of the following is the most appropriate duration of therapy?",
+              "options": [
+                "8 weeks",
+                "12 weeks",
+                "16 weeks",
+                "24 weeks"
+              ],
+              "answer": "12 weeks",
+              "explanation": "For treatment-naïve patients with chronic hepatitis C genotype 1, sofosbuvir/ledipasvir is typically administered for 12 weeks."
+            },
+            {
+              "stem": "A 30-year-old man presents with a 2-week history of fever, rash, and lymphadenopathy. Serology shows positive VDRL and FTA-ABS. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Primary syphilis",
+                "Secondary syphilis",
+                "Latent syphilis",
+                "Tertiary syphilis"
+              ],
+              "answer": "Secondary syphilis",
+              "explanation": "Secondary syphilis presents with systemic symptoms (fever, rash, lymphadenopathy) and positive serology, indicating disseminated infection."
+            },
+            {
+              "stem": "A 25-year-old woman presents with a 3-day history of dysuria and urinary frequency. Urinalysis shows >100 WBC/HPF and positive nitrites. She is allergic to sulfonamides. Which of the following is the most appropriate treatment?",
+              "options": [
+                "Nitrofurantoin 100 mg orally twice daily for 3 days",
+                "Ciprofloxacin 500 mg orally twice daily for 3 days",
+                "Amoxicillin 500 mg orally three times daily for 5 days",
+                "Trimethoprim 200 mg orally twice daily for 3 days"
+              ],
+              "answer": "Ciprofloxacin 500 mg orally twice daily for 3 days",
+              "explanation": "Ciprofloxacin is an appropriate alternative for urinary tract infections in patients with sulfonamide allergy."
+            },
+            {
+              "stem": "A 40-year-old man with HIV (CD4 count 200 cells/µL) presents with a 1-month history of watery diarrhea and weight loss. Stool microscopy reveals acid-fast oocysts. Which of the following is the most appropriate treatment?",
+              "options": [
+                "Metronidazole 500 mg orally three times daily for 7 days",
+                "Nitazoxanide 500 mg orally twice daily for 3 days",
+                "Paromomycin 500 mg orally three times daily for 7 days",
+                "Start antiretroviral therapy"
+              ],
+              "answer": "Start antiretroviral therapy",
+              "explanation": "In HIV-infected patients with cryptosporidiosis, the most effective intervention is to initiate or optimize antiretroviral therapy to restore immune function."
+            },
+            {
+              "stem": "A 35-year-old woman presents with a 1-week history of fever, headache, and confusion. Lumbar puncture reveals CSF with 100 WBC/µL (90% lymphocytes), glucose 2.5 mmol/L (serum glucose 5.0 mmol/L), protein 2.0 g/L, and negative Gram stain. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Viral meningitis",
+                "Bacterial meningitis",
+                "Tuberculous meningitis",
+                "Fungal meningitis"
+              ],
+              "answer": "Viral meningitis",
+              "explanation": "The CSF profile (lymphocytic pleocytosis, normal glucose, normal protein) with a negative Gram stain is suggestive of viral meningitis."
+            },
+            {
+              "stem": "A 28-year-old man presents with a 2-week history of fever, night sweats, and weight loss. Chest X-ray shows a right upper lobe cavity. Sputum AFB stain is positive. Which of the following is the most appropriate treatment regimen?",
+              "options": [
+                "Isoniazid, rifampicin, pyrazinamide, and ethambutol for 2 months, then isoniazid and rifampicin for 4 months",
+                "Isoniazid and rifampicin for 9 months",
+                "Streptomycin, isoniazid, rifampicin, and ethambutol for 6 months",
+                "Rifampicin, ethambutol, and pyrazinamide for 12 months"
+              ],
+              "answer": "Isoniazid, rifampicin, pyrazinamide, and ethambutol for 2 months, then isoniazid and rifampicin for 4 months",
+              "explanation": "This is the standard WHO-recommended regimen for drug-susceptible tuberculosis, consisting of an intensive phase (2 months) and a continuation phase (4 months)."
+            },
+            {
+              "stem": "A 45-year-old woman with chronic hepatitis B (HBsAg positive, HBeAg negative, HBV DNA 4 log10 IU/mL) is started on tenofovir. Which of the following is the most appropriate monitoring schedule for this patient?",
+              "options": [
+                "LFTs and HBV DNA every 3 months",
+                "Renal function and HBV DNA every 6 months",
+                "CBC and HBV DNA every 12 months",
+                "Renal function and LFTs every 6 months"
+              ],
+              "answer": "Renal function and HBV DNA every 6 months",
+              "explanation": "Patients on tenofovir should have renal function (eGFR) and HBV DNA monitored every 6 months to assess efficacy and safety."
+            },
+            {
+              "stem": "A 30-year-old man presents with a 1-week history of fever, rash, and arthralgia. He reports a tick bite 2 weeks ago. Serology shows positive IgM for Borrelia burgdorferi. Which of the following is the most appropriate treatment?",
+              "options": [
+                "Doxycycline 100 mg orally twice daily for 14 days",
+                "Amoxicillin 500 mg orally three times daily for 21 days",
+                "Ceftriaxone 2 g IV daily for 14 days",
+                "Azithromycin 500 mg orally daily for 7 days"
+              ],
+              "answer": "Doxycycline 100 mg orally twice daily for 14 days",
+              "explanation": "Doxycycline is the first-line treatment for early Lyme disease, with a 14-day course being standard."
+            },
+            {
+              "stem": "A 35-year-old woman with HIV (CD4 count 100 cells/µL) presents with a 1-month history of progressive dyspnea and dry cough. Chest X-ray shows bilateral interstitial infiltrates. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Pneumocystis jirovecii pneumonia",
+                "Tuberculosis",
+                "Bacterial pneumonia",
+                "Kaposi sarcoma"
+              ],
+              "answer": "Pneumocystis jirovecii pneumonia",
+              "explanation": "The clinical presentation (progressive dyspnea, dry cough, bilateral interstitial infiltrates) in an HIV-infected patient with low CD4 count is highly suggestive of Pneumocystis jirovecii pneumonia."
+            },
+            {
+              "stem": "A 25-year-old man presents with a 3-day history of fever, headache, and myalgia. He reports recent travel to a rural area with poor sanitation. Serology shows IgM positive for hepatitis E virus. Which of the following is the most likely mode of transmission?",
+              "options": [
+                "Parenteral transmission",
+                "Sexual transmission",
+                "Fecal-oral transmission",
+                "Vector-borne transmission"
+              ],
+              "answer": "Fecal-oral transmission",
+              "explanation": "Hepatitis E virus is primarily transmitted via the fecal-oral route, often through contaminated water or food in endemic regions."
+            },
+            {
+              "stem": "A 28-year-old woman presents with a 1-week history of dysuria and vaginal discharge. Urinalysis shows >50 WBC/HPF, and vaginal swab shows clue cells. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Urinary tract infection",
+                "Bacterial vaginosis",
+                "Candidiasis",
+                "Trichomoniasis"
+              ],
+              "answer": "Bacterial vaginosis",
+              "explanation": "Clue cells on vaginal swab are diagnostic of bacterial vaginosis, which can cause dysuria and vaginal discharge."
+            },
+            {
+              "stem": "A 35-year-old man with HIV (CD4 count 80 cells/µL) presents with a 2-week history of fever, night sweats, and weight loss. Chest X-ray shows bilateral infiltrates. Sputum AFB stain is negative. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Pneumocystis jirovecii pneumonia",
+                "Tuberculosis",
+                "Histoplasmosis",
+                "Coccidioidomycosis"
+              ],
+              "answer": "Pneumocystis jirovecii pneumonia",
+              "explanation": "The clinical presentation (fever, night sweats, weight loss, bilateral infiltrates) in an HIV-infected patient with low CD4 count is highly suggestive of Pneumocystis jirovecii pneumonia."
+            },
+            {
+              "stem": "A 45-year-old woman with chronic hepatitis C (genotype 1) is started on sofosbuvir/ledipasvir. Which of the following is the most appropriate duration of therapy?",
+              "options": [
+                "8 weeks",
+                "12 weeks",
+                "16 weeks",
+                "24 weeks"
+              ],
+              "answer": "12 weeks",
+              "explanation": "For treatment-naïve patients with chronic hepatitis C genotype 1, sofosbuvir/ledipasvir is typically administered for 12 weeks."
+            },
+            {
+              "stem": "A 30-year-old man presents with a 2-week history of fever, rash, and lymphadenopathy. Serology shows positive VDRL and FTA-ABS. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Primary syphilis",
+                "Secondary syphilis",
+                "Latent syphilis",
+                "Tertiary syphilis"
+              ],
+              "answer": "Secondary syphilis",
+              "explanation": "Secondary syphilis presents with systemic symptoms (fever, rash, lymphadenopathy) and positive serology, indicating disseminated infection."
+            },
+            {
+              "stem": "A 25-year-old woman presents with a 3-day history of dysuria and urinary frequency. Urinalysis shows >100 WBC/HPF and positive nitrites. She is allergic to sulfonamides. Which of the following is the most appropriate treatment?",
+              "options": [
+                "Nitrofurantoin 100 mg orally twice daily for 3 days",
+                "Ciprofloxacin 500 mg orally twice daily for 3 days",
+                "Amoxicillin 500 mg orally three times daily for 5 days",
+                "Trimethoprim 200 mg orally twice daily for 3 days"
+              ],
+              "answer": "Ciprofloxacin 500 mg orally twice daily for 3 days",
+              "explanation": "Ciprofloxacin is an appropriate alternative for urinary tract infections in patients with sulfonamide allergy."
+            },
+            {
+              "stem": "A 40-year-old man with HIV (CD4 count 200 cells/µL) presents with a 1-month history of watery diarrhea and weight loss. Stool microscopy reveals acid-fast oocysts. Which of the following is the most appropriate treatment?",
+              "options": [
+                "Metronidazole 500 mg orally three times daily for 7 days",
+                "Nitazoxanide 500 mg orally twice daily for 3 days",
+                "Paromomycin 500 mg orally three times daily for 7 days",
+                "Start antiretroviral therapy"
+              ],
+              "answer": "Start antiretroviral therapy",
+              "explanation": "In HIV-infected patients with cryptosporidiosis, the most effective intervention is to initiate or optimize antiretroviral therapy to restore immune function."
+            },
+            {
+              "stem": "A 35-year-old woman presents with a 1-week history of fever, headache, and confusion. Lumbar puncture reveals CSF with 100 WBC/µL (90% lymphocytes), glucose 2.5 mmol/L (serum glucose 5.0 mmol/L), protein 2.0 g/L, and negative Gram stain. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Viral meningitis",
+                "Bacterial meningitis",
+                "Tuberculous meningitis",
+                "Fungal meningitis"
+              ],
+              "answer": "Viral meningitis",
+              "explanation": "The CSF profile (lymphocytic pleocytosis, normal glucose, normal protein) with a negative Gram stain is suggestive of viral meningitis."
+            },
+            {
+              "stem": "A 28-year-old man presents with a 2-week history of fever, night sweats, and weight loss. Chest X-ray shows a right upper lobe cavity. Sputum AFB stain is positive. Which of the following is the most appropriate treatment regimen?",
+              "options": [
+                "Isoniazid, rifampicin, pyrazinamide, and ethambutol for 2 months, then isoniazid and rifampicin for 4 months",
+                "Isoniazid and rifampicin for 9 months",
+                "Streptomycin, isoniazid, rifampicin, and ethambutol for 6 months",
+                "Rifampicin, ethambutol, and pyrazinamide for 12 months"
+              ],
+              "answer": "Isoniazid, rifampicin, pyrazinamide, and ethambutol for 2 months, then isoniazid and rifampicin for 4 months",
+              "explanation": "This is the standard WHO-recommended regimen for drug-susceptible tuberculosis, consisting of an intensive phase (2 months) and a continuation phase (4 months)."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "List four opportunistic infections that can be prevented by co-trimoxazole preventive therapy (CPT) in HIV-infected patients.",
+              "modelAnswer": "1. Pneumocystis jirovecii pneumonia (PCP)\n2. Toxoplasma gondii encephalitis\n3. Isospora belli diarrhea\n4. Nocardiosis\n(Other acceptable answers: Recurrent bacterial infections, malaria in endemic areas, or other infections where local guidelines support CPT use.)"
+            },
+            {
+              "stem": "A 55-year-old man with HIV (CD4 count 50 cells/µL) is diagnosed with cryptococcal meningitis. He is started on amphotericin B deoxycholate. Outline the key monitoring parameters and supportive care measures for this patient during the first week of therapy.",
+              "modelAnswer": "1. **Renal function**: Monitor serum creatinine and electrolytes (especially potassium and magnesium) daily due to amphotericin B nephrotoxicity.\n2. **Hematologic parameters**: Check CBC for anemia and leukopenia.\n3. **Electrolyte supplementation**: Administer potassium and magnesium supplements as needed to prevent cardiac arrhythmias.\n4. **Hydration**: Ensure adequate IV fluids to maintain renal perfusion and reduce nephrotoxicity.\n5. **CSF pressure management**: Perform daily lumbar punctures to relieve increased intracranial pressure if symptomatic.\n6. **Adverse effects**: Monitor for infusion-related reactions (fever, chills, rigors) and premedicate with paracetamol and hydrocortisone if necessary.\n7. **Antifungal levels**: Consider therapeutic drug monitoring if available."
+            },
+            {
+              "stem": "Outline three indirect methods that can be used to assess adherence to antiretroviral therapy (ART) in HIV-infected patients during routine clinic visits.",
+              "modelAnswer": "1. **Pharmacy refill records**: Track the frequency and timeliness of medication refills.\n2. **Pill counts**: Compare the number of pills dispensed with the number returned at follow-up visits.\n3. **Patient self-reports**: Use standardized questionnaires or interviews to assess adherence, though these may be subject to recall bias."
+            },
+            {
+              "stem": "Explain the current recommendations for preventing recurrent hepatitis B virus (HBV) infection after liver transplantation.",
+              "modelAnswer": "1. **Pre-transplant**: Screen for HBV DNA and administer hepatitis B immune globulin (HBIG) perioperatively.\n2. **Post-transplant**: Administer long-term antiviral therapy (e.g., tenofovir or entecavir) to suppress HBV replication and prevent reinfection.\n3. **HBIG administration**: Continue HBIG for at least 6–12 months post-transplant, often in combination with antiviral therapy.\n4. **Monitoring**: Monitor HBV DNA levels, liver function tests, and HBsAg status regularly to detect breakthrough infections."
+            },
+            {
+              "stem": "Describe three goals of therapy for treating hepatitis C virus (HCV) infection.",
+              "modelAnswer": "1. **Viral eradication**: Achieve sustained virologic response (SVR), defined as undetectable HCV RNA 12 weeks after completing therapy, to prevent long-term complications (e.g., cirrhosis, hepatocellular carcinoma).\n2. **Prevent disease progression**: Reduce liver inflammation, fibrosis, and the risk of cirrhosis and liver failure.\n3. **Improve quality of life**: Alleviate symptoms (e.g., fatigue, jaundice) and reduce the risk of extrahepatic manifestations (e.g., cryoglobulinemic vasculitis)."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "A 32-year-old man newly diagnosed with HIV presents to the emergency department with a 2-week history of progressive shortness of breath, dry cough, and fever. He reports no prior medical history and has not started antiretroviral therapy. On examination, he is tachypneic (RR 28/min), hypoxic (SpO2 88% on room air), and febrile (38.5°C). Chest auscultation reveals bilateral crackles. Chest X-ray shows diffuse bilateral interstitial infiltrates. Arterial blood gas analysis demonstrates a PaO2 of 7.5 kPa (normal range 11.0–14.0 kPa). \n\n(a) Identify the most likely clinical diagnosis and the causative agent. (2 marks)\n(b) Justify your answer in (a) above. (4 marks)\n(c) Propose two other tests that could be performed to support the diagnosis. (2 marks)\n(d) Design a comprehensive treatment plan for this patient, including appropriate antimicrobial regimen, adjunctive treatment, and supportive therapy. (5 marks)\n(e) Assuming this patient was allergic to the first-line treatment for this condition, propose two other alternative pharmacological interventions for moderate-to-severe infection. (2 marks)\n(f) Explain how you would monitor treatment in this patient. (2 marks)\n(g) Illustrate the ART regimen that you would recommend to be initiated in this patient and the exact timing of initiation of the regimen. Justify your answer. (5 marks)",
+              "modelAnswer": {
+                "a": "Most likely clinical diagnosis: Pneumocystis jirovecii pneumonia (PCP). Causative agent: Pneumocystis jirovecii (formerly Pneumocystis carinii).",
+                "b": "Justification:\n1. **Clinical presentation**: Progressive shortness of breath, dry cough, and fever in a patient with newly diagnosed HIV and no prior ART are classic for PCP.\n2. **Hypoxemia**: Severe hypoxia (PaO2 7.5 kPa) out of proportion to clinical findings is characteristic of PCP.\n3. **Chest X-ray**: Diffuse bilateral interstitial infiltrates are typical of PCP, though they may appear normal early in the disease.\n4. **Risk factors**: Newly diagnosed HIV with low CD4 count (not explicitly stated but implied by lack of ART) is a major risk factor for PCP.",
+                "c": "Two other tests to support the diagnosis:\n1. **Induced sputum or bronchoalveolar lavage (BAL)**: Microscopy (e.g., Gomori methenamine silver stain) or PCR to identify Pneumocystis jirovecii.\n2. **Serum LDH levels**: Elevated lactate dehydrogenase (LDH) is often seen in PCP due to lung tissue damage and is a supportive diagnostic marker.",
+                "d": "Comprehensive treatment plan:\n**Antimicrobial regimen**:\n- **First-line therapy**: Trimethoprim-sulfamethoxazole (TMP-SMX) 15–20 mg/kg/day IV (divided into 3–4 doses) for 21 days.\n- **Adjunctive therapy**: Prednisone 40 mg orally twice daily for 5 days, then 40 mg daily for 5 days, then 20 mg daily for 11 days (to reduce inflammation and improve oxygenation).\n\n**Supportive therapy**:\n- **Oxygen therapy**: Administer supplemental oxygen to maintain SpO2 >90%.\n- **Hydration and nutrition**: Ensure adequate IV fluids and nutritional support.\n- **Monitoring**: Continuous pulse oximetry, vital signs, and fluid balance.\n\n**Other considerations**:\n- **Prophylaxis**: Start PCP prophylaxis (e.g., TMP-SMX 960 mg orally daily) after completing acute therapy.\n- **ART initiation**: Delay ART for 2 weeks to reduce the risk of immune reconstitution inflammatory syndrome (IRIS).",
+                "e": "Alternative pharmacological interventions for moderate-to-severe PCP (if allergic to TMP-SMX):\n1. **Clindamycin 600 mg IV every 6 hours + primaquine 30 mg orally daily**: Effective alternative for moderate-to-severe PCP, though primaquine requires G6PD testing.\n2. **Atovaquone 750 mg orally twice daily + azithromycin 500 mg orally daily**: Less effective than TMP-SMX but an option for mild-to-moderate cases or in patients intolerant to other therapies.",
+                "f": "Monitoring treatment:\n1. **Clinical response**: Assess improvement in symptoms (e.g., dyspnea, cough) and oxygenation (SpO2, PaO2).\n2. **Laboratory parameters**: Monitor CBC, renal function, and electrolytes (especially potassium) during TMP-SMX therapy.\n3. **Radiologic response**: Repeat chest X-ray at the end of therapy to assess resolution of infiltrates.\n4. **Adverse effects**: Watch for drug-related toxicities (e.g., rash, hepatotoxicity, nephrotoxicity) and adjust therapy as needed.",
+                "g": "ART regimen and timing:\n**Recommended ART regimen**: Dolutegravir (DTG) 50 mg orally daily + tenofovir disoproxil fumarate (TDF) 300 mg orally daily + lamivudine (3TC) 300 mg orally daily (DTG/3TC/TDF fixed-dose combination).\n\n**Timing of initiation**:\n- **Delay ART for 2 weeks** after starting PCP treatment to reduce the risk of immune reconstitution inflammatory syndrome (IRIS).\n- **Rationale**: Early ART initiation in the setting of acute PCP can precipitate severe IRIS, worsening respiratory status. Delaying ART allows stabilization of the patient's condition before immune recovery.\n\n**Justification**:\n1. **DTG/3TC/TDF**: This regimen is preferred due to its high efficacy, low pill burden, and favorable side effect profile (e.g., minimal drug interactions, low risk of mitochondrial toxicity).\n2. **Timing**: Delaying ART for 2 weeks balances the risks of IRIS with the benefits of early viral suppression. After 2 weeks, the risk of IRIS decreases, and ART can be safely initiated."
+              }
+            },
+            {
+              "stem": "A 24-year-old man presents to the emergency department with a 3-day history of dysuria, meatal pain, and a profuse yellow urethral discharge. He admits to unprotected sexual intercourse with a sex worker 1 week ago. On examination, he has a purulent urethral discharge, and a Gram stain of the discharge shows intracellular gram-negative diplococci. His pregnant wife (28 weeks gestation) is asymptomatic but accompanies him. \n\n(a) Identify the most likely diagnosis and causative agent. (2 marks)\n(b) Explain your answer in (a) above. (4 marks)\n(c) Prepare treatment plans for both the patient and his wife. (4 marks)\n(d) Outline three parameters that you would use to monitor response to treatment for both the patient and his wife. (3 marks)\n(e) Identify one antimicrobial drug that is effective for this condition but is contraindicated in the wife because of pregnancy. Give the reason for the contraindication. (2 marks)\n(f) Assuming the patient presented within 72 hours of sexual contact, outline any other therapy he would have benefited from. Include the drug regimen and duration of therapy. (3 marks)\n(g) List two adverse effects associated with the therapy in (f) that you would watch out for. (2 marks)\n(h) The patient is diagnosed with primary syphilis 3 years later. Outline two possible complications of syphilis in this patient. (2 marks)",
+              "modelAnswer": {
+                "a": "Most likely diagnosis: Gonorrhea (Neisseria gonorrhoeae infection). Causative agent: Neisseria gonorrhoeae.",
+                "b": "Explanation:\n1. **Clinical presentation**: Dysuria, meatal pain, and purulent urethral discharge are classic symptoms of gonococcal urethritis.\n2. **Gram stain**: Intracellular gram-negative diplococci on Gram stain of urethral discharge are diagnostic of Neisseria gonorrhoeae.\n3. **Risk factors**: Unprotected sexual intercourse with a sex worker is a major risk factor for gonorrhea.\n4. **Incubation period**: Symptoms typically appear 2–7 days after exposure, consistent with the patient's history.",
+                "c": "Treatment plans:\n**For the patient (D.S.)**:\n- **First-line therapy**: Ceftriaxone 500 mg IM as a single dose.\n- **Chlamydia co-treatment**: Azithromycin 1 g orally as a single dose (due to high prevalence of co-infection with Chlamydia trachomatis).\n\n**For the wife (C.S., pregnant)**:\n- **First-line therapy**: Azithromycin 1 g orally as a single dose (safe in pregnancy).\n- **Alternative**: Amoxicillin 500 mg orally three times daily for 7 days (if allergic to azithromycin).\n\n**Additional measures**:\n- **Partner notification**: Advise D.S. to inform all sexual partners for testing and treatment.\n- **Counseling**: Provide safe sex counseling and condom use education.",
+                "d": "Parameters to monitor response to treatment:\n1. **Clinical improvement**: Resolution of dysuria, meatal pain, and urethral discharge within 3–7 days.\n2. **Microbiologic clearance**: Repeat Gram stain or nucleic acid amplification test (NAAT) 1–2 weeks post-treatment to confirm eradication of Neisseria gonorrhoeae.\n3. **Symptom resolution in wife**: Asymptomatic wife should be monitored for any signs of infection (e.g., vaginal discharge, dysuria) during follow-up.",
+                "e": "Contraindicated drug in pregnancy: **Doxycycline**.\nReason: Doxycycline is contraindicated in pregnancy due to its association with fetal skeletal abnormalities and tooth discoloration.",
+                "f": "Post-exposure prophylaxis (if presented within 72 hours):\n- **Regimen**: Ceftriaxone 500 mg IM as a single dose + azithromycin 1 g orally as a single dose.\n- **Duration**: Single-dose therapy (no extended duration required).\n- **Rationale**: Early administration of antibiotics can prevent infection if given within the incubation period.",
+                "g": "Adverse effects to watch for with therapy in (f):\n1. **Ceftriaxone**: Hypersensitivity reactions (e.g., rash, anaphylaxis), injection site reactions, or rarely, biliary sludging.\n2. **Azithromycin**: Gastrointestinal upset (e.g., nausea, vomiting, diarrhea), QT prolongation (rare), or allergic reactions.",
+                "h": "Possible complications of syphilis:\n1. **Neurosyphilis**: Can occur at any stage and may lead to meningitis, stroke, or cognitive decline.\n2. **Cardiovascular syphilis**: Can cause aortic aneurysms, aortic regurgitation, or coronary artery disease."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

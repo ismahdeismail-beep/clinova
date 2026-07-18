@@ -1,0 +1,1269 @@
+{
+  "exam-cns": {
+    "1": {
+      "title": "Clinical Pharmacy — Central Nervous System Disorders",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 60,
+          "questions": [
+            {
+              "stem": "A 28-year-old male presents with 3 days of decreased sleep, excessive talking, grandiose beliefs about his business skills, and impulsive spending sprees. His mood is euphoric and irritable. The most likely diagnosis is:",
+              "options": [
+                "Schizophrenia",
+                "Major depressive disorder",
+                "Bipolar I disorder, manic episode",
+                "Generalized anxiety disorder"
+              ],
+              "answer": "Bipolar I disorder, manic episode",
+              "explanation": "The combination of decreased sleep, grandiosity, impulsivity, and euphoric/irritable mood is characteristic of a manic episode in bipolar I disorder."
+            },
+            {
+              "stem": "Which of the following antibiotics is most likely to cause a disulfiram-like reaction when consumed with alcohol?",
+              "options": [
+                "Ceftriaxone",
+                "Metronidazole",
+                "Amoxicillin",
+                "Doxycycline"
+              ],
+              "answer": "Metronidazole",
+              "explanation": "Metronidazole inhibits aldehyde dehydrogenase, leading to acetaldehyde accumulation and a disulfiram-like reaction when alcohol is consumed."
+            },
+            {
+              "stem": "Which opioid derivative has the highest potential for physical dependence and abuse?",
+              "options": [
+                "Meperidine",
+                "Methadone",
+                "Codeine",
+                "Heroin"
+              ],
+              "answer": "Heroin",
+              "explanation": "Heroin is a Schedule I controlled substance with rapid onset and high abuse liability, leading to severe physical dependence."
+            },
+            {
+              "stem": "A 12-year-old child presents with staring spells lasting 5–10 seconds, during which she is unresponsive to verbal commands. EEG shows 3-Hz spike-and-wave discharges. The most appropriate first-line antiepileptic drug is:",
+              "options": [
+                "Phenytoin",
+                "Ethosuximide",
+                "Carbamazepine",
+                "Valproate"
+              ],
+              "answer": "Ethosuximide",
+              "explanation": "Ethosuximide is the drug of choice for absence seizures, characterized by 3-Hz spike-and-wave discharges on EEG."
+            },
+            {
+              "stem": "Following a traumatic brain injury, which pathophysiologic event is the primary trigger for secondary neuronal injury?",
+              "options": [
+                "Systemic hypotension",
+                "Cerebral edema",
+                "Central nervous system ischemia",
+                "Hyperglycemia"
+              ],
+              "answer": "Central nervous system ischemia",
+              "explanation": "Secondary neuronal injury is primarily driven by ischemia due to reduced cerebral blood flow, mitochondrial dysfunction, and excitotoxicity."
+            },
+            {
+              "stem": "A patient with severe head injury (GCS 7) develops signs of raised intracranial pressure. Which of the following is the most appropriate first-line osmotic therapy?",
+              "options": [
+                "Hypertonic saline (3%)",
+                "Mannitol 20%",
+                "Furosemide",
+                "Acetazolamide"
+              ],
+              "answer": "Mannitol 20%",
+              "explanation": "Mannitol is a first-line osmotic agent for reducing intracranial pressure in severe head injury, provided the patient is euvolemic."
+            },
+            {
+              "stem": "A patient with a Glasgow Coma Scale score of 8 after a motor vehicle accident is classified as having:",
+              "options": [
+                "Mild head injury",
+                "Moderate head injury",
+                "Severe head injury",
+                "No head injury"
+              ],
+              "answer": "Severe head injury",
+              "explanation": "A GCS score of 8 or below indicates severe head injury, requiring urgent medical intervention."
+            },
+            {
+              "stem": "Which of the following is a typical feature of migraine headache?",
+              "options": [
+                "Bilateral, dull headache",
+                "Unilateral, throbbing pain",
+                "Pain worsened by movement",
+                "Aura in 80% of cases"
+              ],
+              "answer": "Unilateral, throbbing pain",
+              "explanation": "Migraine headaches are typically unilateral, throbbing, and often associated with photophobia, phonophobia, and nausea."
+            },
+            {
+              "stem": "Wernicke encephalopathy is caused by a deficiency of which vitamin?",
+              "options": [
+                "Vitamin B6",
+                "Thiamine (Vitamin B1)",
+                "Folate",
+                "Vitamin B12"
+              ],
+              "answer": "Thiamine (Vitamin B1)",
+              "explanation": "Wernicke encephalopathy results from thiamine deficiency, commonly seen in alcohol use disorder due to poor nutrition and malabsorption."
+            },
+            {
+              "stem": "Which symptom is NOT considered a positive symptom of schizophrenia?",
+              "options": [
+                "Hallucinations",
+                "Delusions",
+                "Disorganized speech",
+                "Apathy"
+              ],
+              "answer": "Apathy",
+              "explanation": "Positive symptoms include hallucinations, delusions, and disorganized behavior/speech, while apathy is a negative symptom."
+            },
+            {
+              "stem": "A patient with chronic alcohol use disorder presents with tremors, agitation, and hallucinations 48 hours after his last drink. The most appropriate initial therapy is:",
+              "options": [
+                "Disulfiram",
+                "Acamprosate",
+                "Lorazepam",
+                "Naltrexone"
+              ],
+              "answer": "Lorazepam",
+              "explanation": "Benzodiazepines like lorazepam are first-line for alcohol withdrawal to prevent seizures and delirium tremens."
+            },
+            {
+              "stem": "Schizophrenia is typically diagnosed in which age group?",
+              "options": [
+                "Infancy",
+                "Childhood",
+                "Early adulthood (18–30 years)",
+                "Old age (>65 years)"
+              ],
+              "answer": "Early adulthood (18–30 years)",
+              "explanation": "Schizophrenia most commonly presents in late adolescence to early adulthood, with peak onset between 18–30 years."
+            },
+            {
+              "stem": "Seeing a ghost would be classified as a _______, while believing you are a ghost would be classified as a _______.",
+              "options": [
+                "Hallucination; delusion",
+                "Delusion; hallucination",
+                "Positive symptom; negative symptom",
+                "Negative symptom; positive symptom"
+              ],
+              "answer": "Hallucination; delusion",
+              "explanation": "Hallucinations involve sensory perceptions without stimuli, while delusions are fixed false beliefs."
+            },
+            {
+              "stem": "Which of the following antipsychotics is most likely to cause significant weight gain and metabolic syndrome?",
+              "options": [
+                "Haloperidol",
+                "Risperidone",
+                "Aripiprazole",
+                "Ziprasidone"
+              ],
+              "answer": "Risperidone",
+              "explanation": "Risperidone, an atypical antipsychotic, is associated with significant weight gain, hyperglycemia, and dyslipidemia."
+            },
+            {
+              "stem": "A 70-year-old patient with Parkinson’s disease on levodopa-carbidopa develops visual hallucinations and confusion. Which of his medications is most likely contributing?",
+              "options": [
+                "Levodopa-carbidopa",
+                "Donepezil",
+                "Ramipril",
+                "Calcium citrate"
+              ],
+              "answer": "Levodopa-carbidopa",
+              "explanation": "Dopaminergic agents like levodopa can cause hallucinations and psychosis, especially in elderly patients."
+            },
+            {
+              "stem": "Which factor is most strongly associated with the increased risk of diabetes in patients with schizophrenia?",
+              "options": [
+                "Genetic predisposition",
+                "Antipsychotic medication",
+                "High-calorie diet",
+                "Sedentary lifestyle"
+              ],
+              "answer": "Antipsychotic medication",
+              "explanation": "Atypical antipsychotics (e.g., olanzapine, clozapine) are linked to weight gain, insulin resistance, and increased diabetes risk."
+            },
+            {
+              "stem": "A patient presents with blurred vision, confusion, and metabolic acidosis after ingesting a red-colored liquid with a formaldehyde-like odor. The most likely toxicant is:",
+              "options": [
+                "Ethanol",
+                "Ethylene glycol",
+                "Isopropanol",
+                "Methanol"
+              ],
+              "answer": "Methanol",
+              "explanation": "Methanol poisoning causes visual disturbances (snowstorm vision), metabolic acidosis, and formaldehyde-like breath odor."
+            },
+            {
+              "stem": "A 45-year-old alcoholic presents with confusion, ataxia, and ophthalmoplegia. The immediate treatment should include:",
+              "options": [
+                "Chlordiazepoxide",
+                "Thiamine",
+                "Folic acid",
+                "Disulfiram"
+              ],
+              "answer": "Thiamine",
+              "explanation": "Thiamine deficiency causes Wernicke encephalopathy; immediate IV thiamine is critical to prevent Korsakoff syndrome."
+            },
+            {
+              "stem": "A 40-year-old man with a history of heavy alcohol use stops drinking abruptly. Which complication is he most at risk for within 48–72 hours?",
+              "options": [
+                "Alcoholic ketoacidosis",
+                "Delirium tremens",
+                "Hepatic encephalopathy",
+                "Pancreatitis"
+              ],
+              "answer": "Delirium tremens",
+              "explanation": "Abrupt alcohol cessation can lead to delirium tremens, characterized by agitation, hallucinations, and autonomic hyperactivity."
+            },
+            {
+              "stem": "A 20-year-old student with no alcohol tolerance consumes enough ethanol to reach a blood alcohol concentration of 500 mg/dL. His condition is best described as:",
+              "options": [
+                "Mild sedation",
+                "Ataxia and slurred speech",
+                "Comatose and near death",
+                "Euphoric and talkative"
+              ],
+              "answer": "Comatose and near death",
+              "explanation": "A BAC of 500 mg/dL is life-threatening and typically causes coma, respiratory depression, and death without intervention."
+            },
+            {
+              "stem": "A pregnant woman with chronic alcohol use disorder is at risk of delivering an infant with which syndrome?",
+              "options": [
+                "Down syndrome",
+                "Fetal alcohol spectrum disorder (FASD)",
+                "Turner syndrome",
+                "Klinefelter syndrome"
+              ],
+              "answer": "Fetal alcohol spectrum disorder (FASD)",
+              "explanation": "Prenatal alcohol exposure causes FASD, characterized by craniofacial abnormalities, growth retardation, and neurodevelopmental deficits."
+            },
+            {
+              "stem": "A patient with cocaine overdose is least likely to present with which symptom?",
+              "options": [
+                "Agitation",
+                "Tachycardia",
+                "Hyperthermia",
+                "Bradycardia"
+              ],
+              "answer": "Bradycardia",
+              "explanation": "Cocaine stimulates the sympathetic nervous system, causing tachycardia, hypertension, and hyperthermia; bradycardia is unlikely."
+            },
+            {
+              "stem": "Regular low-to-moderate alcohol consumption is associated with which cardiovascular effect?",
+              "options": [
+                "Increased risk of coronary artery disease",
+                "Myocardial depression",
+                "Lower incidence of coronary artery disease",
+                "Wernicke encephalopathy"
+              ],
+              "answer": "Lower incidence of coronary artery disease",
+              "explanation": "Moderate alcohol consumption (1 drink/day for women, 2 for men) is associated with reduced CAD risk due to increased HDL and antiplatelet effects."
+            },
+            {
+              "stem": "Which statement about alcohol’s effect on sleep is correct?",
+              "options": [
+                "It is a dependable hypnotic with no abuse potential",
+                "It consistently improves sleep architecture",
+                "It can disorganize sleep architecture",
+                "It suppresses sleep apnea"
+              ],
+              "answer": "It can disorganize sleep architecture",
+              "explanation": "Alcohol disrupts REM sleep and causes fragmented sleep, leading to poor sleep quality despite initial sedation."
+            },
+            {
+              "stem": "Ethanol is used in methanol poisoning primarily because it:",
+              "options": [
+                "Antagonizes methanol’s effects",
+                "Stimulates methanol metabolism",
+                "Inhibits methanol metabolism",
+                "Replenishes folate stores"
+              ],
+              "answer": "Inhibits methanol metabolism",
+              "explanation": "Ethanol competitively inhibits alcohol dehydrogenase, reducing methanol metabolism to toxic formate and formaldehyde."
+            },
+            {
+              "stem": "The preferred drug for suppressing febrile convulsions in children is:",
+              "options": [
+                "Intramuscular phenobarbital",
+                "Intravenous phenytoin",
+                "Rectal diazepam",
+                "Oral sodium valproate"
+              ],
+              "answer": "Rectal diazepam",
+              "explanation": "Rectal diazepam is first-line for acute febrile convulsions due to rapid onset and ease of administration."
+            },
+            {
+              "stem": "Combination therapy with two or more antiepileptic drugs is indicated:",
+              "options": [
+                "Routinely in all types of epilepsy",
+                "Only when monotherapy fails",
+                "In all cases of complex partial seizures",
+                "In all cases of secondarily generalized seizures"
+              ],
+              "answer": "Only when monotherapy fails",
+              "explanation": "Polytherapy is reserved for refractory epilepsy when two or more first-line AEDs have failed to control seizures."
+            },
+            {
+              "stem": "An epileptic woman controlled by phenytoin conceives. The most appropriate management is to:",
+              "options": [
+                "Terminate the pregnancy",
+                "Withdraw phenytoin immediately",
+                "Gradually reduce phenytoin to the lowest effective dose",
+                "Substitute phenytoin with carbamazepine and valproate"
+              ],
+              "answer": "Gradually reduce phenytoin to the lowest effective dose",
+              "explanation": "AED dose reduction should be attempted during pregnancy to minimize teratogenic risk, but seizures must be controlled."
+            },
+            {
+              "stem": "In a 60-year-old male with Parkinson’s disease, levodopa is initiated. Which statement is true about levodopa?",
+              "options": [
+                "It causes fewer CNS side effects when given with a dopa decarboxylase inhibitor",
+                "Its effectiveness decreases over time",
+                "It prevents extrapyramidal effects of antipsychotics",
+                "It protects against melanoma"
+              ],
+              "answer": "It causes fewer CNS side effects when given with a dopa decarboxylase inhibitor",
+              "explanation": "Carbidopa (a dopa decarboxylase inhibitor) reduces peripheral conversion of levodopa to dopamine, minimizing nausea and increasing CNS availability."
+            },
+            {
+              "stem": "Risk of neural tube defects in pregnant women on antiepileptic drugs can be minimized by supplemental therapy with:",
+              "options": [
+                "Folic acid",
+                "Vitamin A",
+                "Vitamin E",
+                "Pyridoxine"
+              ],
+              "answer": "Folic acid",
+              "explanation": "Folic acid supplementation (4–5 mg/day) reduces neural tube defect risk in women on AEDs, particularly valproate and carbamazepine."
+            },
+            {
+              "stem": "In parkinsonian patients, levodopa exerts all the following effects EXCEPT:",
+              "options": [
+                "Reduces skeletal muscle contractility",
+                "Decreases muscle tone",
+                "Increases locomotor activity",
+                "Inhibits muscle tremor"
+              ],
+              "answer": "Reduces skeletal muscle contractility",
+              "explanation": "Levodopa improves muscle tone, increases mobility, and reduces tremor but does not reduce skeletal muscle contractility."
+            },
+            {
+              "stem": "Use of drugs of abuse is a risk factor for seizures, especially during:",
+              "options": [
+                "Infection",
+                "Hypoglycemia",
+                "Overdose and withdrawal",
+                "Tuberous sclerosis"
+              ],
+              "answer": "Overdose and withdrawal",
+              "explanation": "Seizures are common during drug overdose (e.g., cocaine, amphetamines) and withdrawal (e.g., alcohol, benzodiazepines)."
+            },
+            {
+              "stem": "An aura in migraine typically lasts for:",
+              "options": [
+                "A few seconds",
+                "Several hours",
+                "Several days",
+                "Minutes to an hour"
+              ],
+              "answer": "Minutes to an hour",
+              "explanation": "Auras in migraine usually last 5–60 minutes and precede the headache phase."
+            },
+            {
+              "stem": "Which antiepileptic drug is most strongly associated with an increased risk of neural tube defects?",
+              "options": [
+                "Valproate",
+                "Phenobarbital",
+                "Gabapentin",
+                "Lamotrigine"
+              ],
+              "answer": "Valproate",
+              "explanation": "Valproate is contraindicated in pregnancy due to a 1–5% risk of neural tube defects (e.g., spina bifida)."
+            },
+            {
+              "stem": "A 30-year-old male on antipsychotic therapy complains of feeling 'flat,' confusion, weight gain, and decreased libido. He also has a tremor and polyuria. The most likely drug is:",
+              "options": [
+                "Carbamazepine",
+                "Clozapine",
+                "Lithium",
+                "Risperidone"
+              ],
+              "answer": "Lithium",
+              "explanation": "Lithium causes tremor, polyuria (nephrogenic diabetes insipidus), weight gain, and cognitive dulling ('flat affect')."
+            },
+            {
+              "stem": "Long-term marijuana use may result in persistent ______ even after cessation.",
+              "options": [
+                "Visual processing difficulties",
+                "Short-term memory impairment",
+                "Decreased attention span",
+                "Increased agitation"
+              ],
+              "answer": "Short-term memory impairment",
+              "explanation": "Chronic marijuana use impairs short-term memory and executive function, with effects persisting beyond acute intoxication."
+            },
+            {
+              "stem": "Which symptom is NOT characteristic of Alzheimer’s disease?",
+              "options": [
+                "Delirium",
+                "Anomia",
+                "Wandering",
+                "Paranoid delusions"
+              ],
+              "answer": "Delirium",
+              "explanation": "Delirium is an acute confusional state, not a core feature of Alzheimer’s disease, which is a chronic neurodegenerative disorder."
+            },
+            {
+              "stem": "Which drug is considered safe and effective for bipolar disorder during pregnancy?",
+              "options": [
+                "Carbamazepine",
+                "Valproic acid",
+                "Lithium",
+                "Olanzapine"
+              ],
+              "answer": "Olanzapine",
+              "explanation": "Olanzapine is an atypical antipsychotic with lower teratogenic risk compared to lithium, valproate, or carbamazepine."
+            },
+            {
+              "stem": "Which drug is most effective for obsessive-compulsive disorder?",
+              "options": [
+                "Amitriptyline",
+                "Bupropion",
+                "Clomipramine",
+                "Trazodone"
+              ],
+              "answer": "Clomipramine",
+              "explanation": "Clomipramine, a tricyclic antidepressant, is FDA-approved for OCD and more effective than SSRIs in some cases."
+            },
+            {
+              "stem": "A 40-year-old woman presents with episodes of intense anxiety, hyperventilation, tachycardia, and sweating. The most appropriate drug for panic disorder is:",
+              "options": [
+                "Alprazolam",
+                "Eszopiclone",
+                "Flurazepam",
+                "Propranolol"
+              ],
+              "answer": "Alprazolam",
+              "explanation": "Benzodiazepines like alprazolam are first-line for acute panic attacks due to rapid onset; SSRIs are preferred for maintenance."
+            },
+            {
+              "stem": "The preferred treatment for psychotic depression is:",
+              "options": [
+                "Imipramine plus risperidone",
+                "Imipramine plus sertraline",
+                "Tranylcypromine",
+                "Fluoxetine"
+              ],
+              "answer": "Imipramine plus risperidone",
+              "explanation": "Combination therapy with an antidepressant (e.g., imipramine) and an antipsychotic (e.g., risperidone) is most effective for psychotic depression."
+            },
+            {
+              "stem": "According to DSM-IV-TR, major depression criteria include all EXCEPT:",
+              "options": [
+                "Symptoms present for at least 2 weeks",
+                "Inability to work",
+                "Increased focus and concentration",
+                "Feelings of inappropriate guilt"
+              ],
+              "answer": "Increased focus and concentration",
+              "explanation": "Major depression is associated with decreased concentration, not increased focus."
+            },
+            {
+              "stem": "When choosing antidepressant therapy, which factor should NOT be considered?",
+              "options": [
+                "Past history of response or intolerance",
+                "Concomitant medications",
+                "Cost of the medication regimen",
+                "Patient’s astrological sign"
+              ],
+              "answer": "Patient’s astrological sign",
+              "explanation": "Evidence-based factors (response history, drug interactions, cost) guide antidepressant selection; astrology is irrelevant."
+            },
+            {
+              "stem": "An acutely manic patient on lithium and risperidone requires adjunctive therapy for agitation. The best short-term option is:",
+              "options": [
+                "Gabapentin",
+                "Propranolol",
+                "Clonazepam",
+                "Clonidine"
+              ],
+              "answer": "Clonazepam",
+              "explanation": "Benzodiazepines like clonazepam are effective for acute agitation in mania, complementing antipsychotic and mood stabilizer therapy."
+            },
+            {
+              "stem": "Patients on mood stabilizers should be monitored for all EXCEPT:",
+              "options": [
+                "Decreased white blood counts with carbamazepine and clozapine",
+                "Weight gain with olanzapine, lithium, and valproate",
+                "Hypothyroidism with lithium",
+                "Polycystic ovaries with gabapentin"
+              ],
+              "answer": "Polycystic ovaries with gabapentin",
+              "explanation": "Polycystic ovary syndrome is linked to valproate, not gabapentin; gabapentin is weight-neutral and metabolically safe."
+            },
+            {
+              "stem": "The most important counseling point for a patient starting alprazolam for panic disorder is:",
+              "options": [
+                "Do not discontinue alprazolam abruptly",
+                "Concurrent alcohol use is permissible",
+                "Take the full dose at bedtime after several weeks",
+                "No drug interactions exist"
+              ],
+              "answer": "Do not discontinue alprazolam abruptly",
+              "explanation": "Abrupt benzodiazepine cessation can cause withdrawal seizures and rebound anxiety; tapering is essential."
+            },
+            {
+              "stem": "Complications during a seizure can include all EXCEPT:",
+              "options": [
+                "Burns and bruises",
+                "Pneumonia and sinusitis",
+                "Abrasions and head injuries",
+                "Tongue bite and broken bones"
+              ],
+              "answer": "Pneumonia and sinusitis",
+              "explanation": "Pneumonia and sinusitis are not direct complications of seizures; burns, abrasions, and fractures are common."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "List four non-motor symptoms of Parkinson’s disease.",
+              "modelAnswer": "1. Autonomic dysfunction (e.g., orthostatic hypotension, constipation, urinary incontinence). 2. Sleep disturbances (e.g., REM sleep behavior disorder, insomnia). 3. Cognitive impairment (e.g., dementia, executive dysfunction). 4. Mood disorders (e.g., depression, anxiety)."
+            },
+            {
+              "stem": "Describe four differences between tension-type headaches and migraine headaches.",
+              "modelAnswer": "1. **Pain characteristics**: Tension-type headaches are bilateral, dull, and pressing; migraines are unilateral, throbbing, and severe. 2. **Aura**: Migraines often have an aura (e.g., visual disturbances); tension-type headaches do not. 3. **Associated symptoms**: Migraines include photophobia, phonophobia, nausea/vomiting; tension-type headaches do not. 4. **Triggers**: Migraines are triggered by stress, hormonal changes, or specific foods; tension-type headaches are linked to muscle tension and stress."
+            },
+            {
+              "stem": "List four strategies used in the management of raised intracranial pressure (ICP) associated with traumatic brain injury (TBI).",
+              "modelAnswer": "1. **Osmotic therapy**: Mannitol 20% or hypertonic saline (3%) to reduce cerebral edema. 2. **Hyperventilation**: Brief, controlled hyperventilation to reduce PaCO2 and cerebral vasoconstriction (target PaCO2 30–35 mmHg). 3. **Head elevation**: 30° head-of-bed elevation to improve venous drainage. 4. **Sedation and analgesia**: Propofol or fentanyl to reduce metabolic demand and ICP."
+            },
+            {
+              "stem": "Identify four modifiable risk factors for ischemic stroke.",
+              "modelAnswer": "1. **Hypertension**: The leading modifiable risk factor; blood pressure control reduces stroke risk by 30–40%. 2. **Hyperlipidemia**: Statin therapy lowers LDL cholesterol and reduces atherosclerotic plaque formation. 3. **Diabetes mellitus**: Tight glycemic control (HbA1c <7%) reduces microvascular complications and stroke risk. 4. **Smoking**: Cessation reduces stroke risk by 50% within 5 years."
+            },
+            {
+              "stem": "List four acute effects of marijuana use.",
+              "modelAnswer": "1. **Euphoria and relaxation**: Due to THC’s effects on cannabinoid receptors in the brain. 2. **Impaired short-term memory**: THC disrupts hippocampal function, affecting memory encoding. 3. **Increased appetite**: Often referred to as 'the munchies.' 4. **Tachycardia and conjunctival injection**: Due to sympathetic activation and vasodilation."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "EC is a 35-year-old female with a 17-year history of epilepsy. Her seizures have been refractory to multiple antiepileptic drugs. She presents to the emergency department with a generalized motor seizure that began 20 minutes ago and has not stopped. (a) Outline the acute management of this patient. (b) Outline four principles of chronic management of EC’s condition, assuming she is pregnant.",
+              "modelAnswer": {
+                "a": {
+                  "title": "Acute Management of Refractory Status Epilepticus",
+                  "content": [
+                    "1. **ABCs and Stabilization**: Ensure airway patency, administer oxygen, and monitor vital signs. Establish IV access for drug administration.",
+                    "2. **Benzodiazepines (First-line)**: Administer IV lorazepam (0.1 mg/kg, max 4 mg) or midazolam (0.2 mg/kg IM if IV access delayed). Repeat once if seizure persists.",
+                    "3. **Second-line Antiepileptic Drugs**: If seizures continue, administer IV fosphenytoin (20 PE/kg, max 1500 PE) or valproate (40 mg/kg, max 3000 mg). Avoid phenytoin in pregnancy.",
+                    "4. **Refractory Status Epilepticus**: If seizures persist beyond 30 minutes, intubate and initiate continuous EEG monitoring. Consider midazolam infusion (0.1–0.4 mg/kg/h) or propofol (1–2 mg/kg bolus, then 2–10 mg/kg/h).",
+                    "5. **Supportive Care**: Correct hypoglycemia, electrolyte imbalances, and acidosis. Monitor for complications (e.g., rhabdomyolysis, lactic acidosis)."
+                  ]
+                },
+                "b": {
+                  "title": "Principles of Chronic Management in Pregnancy",
+                  "content": [
+                    "1. **AED Selection**: Prefer AEDs with lower teratogenic risk (e.g., lamotrigine, levetiracetam). Avoid valproate and carbamazepine due to neural tube defect risk.",
+                    "2. **Folate Supplementation**: Administer folic acid 4–5 mg/day to reduce neural tube defect risk, especially if on valproate or carbamazepine.",
+                    "3. **Monitoring**: Perform regular ultrasound scans (18–20 weeks) to assess fetal development. Monitor AED serum levels to balance seizure control and fetal exposure.",
+                    "4. **Multidisciplinary Care**: Coordinate with obstetrics, neurology, and genetics to optimize outcomes. Consider vitamin K supplementation in the third trimester if on enzyme-inducing AEDs (e.g., phenytoin, carbamazepine)."
+                  ]
+                }
+              }
+            },
+            {
+              "stem": "JS is a 55-year-old man with a 25 pack-year smoking history, heavy alcohol use, and poorly controlled diabetes (HbA1c 10%). He presents with a 15-minute episode of right arm paralysis and slurred speech that resolved spontaneously. Carotid Doppler shows 90% stenosis on the left carotid artery. (a) Identify five points in JS’s history consistent with a transient ischemic attack (TIA). (b) Outline the initial and long-term goals in treating JS. (c) Describe how JS’s risk factors can be modified to prevent further TIA.",
+              "modelAnswer": {
+                "a": {
+                  "title": "Points Consistent with TIA",
+                  "content": [
+                    "1. **Focal neurological deficit**: Right arm paralysis and slurred speech indicate a focal deficit.",
+                    "2. **Duration**: Symptoms lasted 15 minutes, consistent with TIA (typically <24 hours).",
+                    "3. **Carotid stenosis**: 90% left carotid stenosis is a high-risk source of embolic stroke.",
+                    "4. **Vascular risk factors**: Smoking (25 pack-years), hypertension, diabetes, and hyperlipidemia increase TIA/stroke risk.",
+                    "5. **Resolution**: Spontaneous resolution of symptoms without residual deficits."
+                  ]
+                },
+                "b": {
+                  "title": "Initial and Long-Term Goals in Treating JS",
+                  "content": [
+                    "1. **Initial Goals**:",
+                    "   - Stabilize the patient and rule out stroke (e.g., CT/MRI brain).",
+                    "   - Initiate antiplatelet therapy (e.g., aspirin 325 mg loading dose, then 81 mg daily).",
+                    "   - Start high-intensity statin (e.g., atorvastatin 80 mg daily).",
+                    "   - Optimize blood pressure control (e.g., ACE inhibitor + thiazide).",
+                    "2. **Long-Term Goals**:",
+                    "   - Prevent recurrent TIA/stroke: Maintain BP <130/80 mmHg, LDL <70 mg/dL.",
+                    "   - Reduce cardiovascular risk: Smoking cessation, glycemic control (HbA1c <7%).",
+                    "   - Consider carotid endarterectomy or stenting for symptomatic severe stenosis (>70%)."
+                  ]
+                },
+                "c": {
+                  "title": "Modification of JS’s Risk Factors",
+                  "content": [
+                    "1. **Smoking Cessation**: Refer to smoking cessation programs, use nicotine replacement therapy or varenicline if needed. Reduces stroke risk by 50% within 5 years.",
+                    "2. **Alcohol Reduction**: Limit to ≤1 drink/day to reduce blood pressure and stroke risk.",
+                    "3. **Glycemic Control**: Intensify diabetes management with metformin, SGLT2 inhibitors, or GLP-1 agonists to achieve HbA1c <7%.",
+                    "4. **Blood Pressure Control**: Initiate ACE inhibitor + thiazide diuretic to target <130/80 mmHg.",
+                    "5. **Lipid Management**: High-intensity statin (e.g., atorvastatin 80 mg) to reduce LDL <70 mg/dL.",
+                    "6. **Carotid Intervention**: Urgent carotid endarterectomy or stenting for 90% left carotid stenosis to prevent recurrent embolization."
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Clinical Pharmacy — Central Nervous System Disorders",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 60,
+          "questions": [
+            {
+              "stem": "A 28-year-old male presents with 3 days of insomnia, reckless spending sprees, and grandiose delusions about his business acumen. He has no prior psychiatric history. Which of the following is the MOST likely diagnosis?",
+              "options": [
+                "Schizophrenia",
+                "Generalized anxiety disorder",
+                "Bipolar I disorder, manic episode",
+                "Major depressive disorder with psychotic features"
+              ],
+              "answer": "Bipolar I disorder, manic episode",
+              "explanation": "The triad of insomnia, reckless behavior, and grandiose delusions is characteristic of a manic episode in bipolar I disorder."
+            },
+            {
+              "stem": "A patient with a history of alcohol dependence is prescribed metronidazole for a dental infection. Which of the following adverse effects is MOST likely if the patient consumes alcohol during therapy?",
+              "options": [
+                "Hypotension and tachycardia",
+                "Disulfiram-like reaction with flushing and nausea",
+                "Seizures due to lowered seizure threshold",
+                "Respiratory depression"
+              ],
+              "answer": "Disulfiram-like reaction with flushing and nausea",
+              "explanation": "Metronidazole inhibits aldehyde dehydrogenase, leading to acetaldehyde accumulation and a disulfiram-like reaction when alcohol is consumed."
+            },
+            {
+              "stem": "A 35-year-old male with a 10-year history of heroin use is admitted for opioid detoxification. Which of the following medications is MOST appropriate for managing opioid withdrawal symptoms?",
+              "options": [
+                "Methadone",
+                "Meperidine",
+                "Buprenorphine",
+                "Naltrexone"
+              ],
+              "answer": "Buprenorphine",
+              "explanation": "Buprenorphine is a partial opioid agonist used for opioid detoxification and maintenance therapy due to its safety profile and efficacy in reducing withdrawal symptoms."
+            },
+            {
+              "stem": "A 12-year-old boy presents with episodes of staring blankly for 5–10 seconds, during which he is unresponsive to verbal commands. EEG confirms 3-Hz spike-and-wave discharges. Which of the following is the MOST appropriate first-line antiepileptic drug?",
+              "options": [
+                "Phenytoin",
+                "Ethosuximide",
+                "Carbamazepine",
+                "Valproate"
+              ],
+              "answer": "Ethosuximide",
+              "explanation": "Ethosuximide is the drug of choice for absence seizures, characterized by 3-Hz spike-and-wave discharges on EEG."
+            },
+            {
+              "stem": "A 22-year-old male is brought to the emergency department after a motor vehicle collision with a Glasgow Coma Scale (GCS) score of 8. Which of the following is the MOST critical pathophysiologic event triggering secondary brain injury?",
+              "options": [
+                "Systemic hypertension",
+                "Cerebral edema",
+                "Cerebral ischemia",
+                "Hyperglycemia"
+              ],
+              "answer": "Cerebral ischemia",
+              "explanation": "Secondary brain injury following trauma is primarily driven by cerebral ischemia due to reduced cerebral perfusion pressure and oxygen delivery."
+            },
+            {
+              "stem": "A 45-year-old female with severe traumatic brain injury (GCS 7) develops signs of raised intracranial pressure (ICP). Which of the following is the MOST appropriate FIRST-LINE therapy to reduce ICP?",
+              "options": [
+                "Hyperventilation to PaCO2 25–30 mmHg",
+                "Intravenous mannitol 20%",
+                "Intravenous furosemide",
+                "Induced hypothermia (34–35°C)"
+              ],
+              "answer": "Intravenous mannitol 20%",
+              "explanation": "Mannitol is an osmotic diuretic used first-line to reduce ICP by drawing water out of brain tissue into the vascular space."
+            },
+            {
+              "stem": "A 30-year-old female presents with a unilateral throbbing headache associated with photophobia and nausea. She reports that these headaches occur 2–3 times monthly and are preceded by visual disturbances. Which of the following is the MOST likely diagnosis?",
+              "options": [
+                "Tension-type headache",
+                "Cluster headache",
+                "Migraine with aura",
+                "Sinus headache"
+              ],
+              "answer": "Migraine with aura",
+              "explanation": "The presence of unilateral throbbing pain, photophobia, nausea, and visual aura is classic for migraine with aura."
+            },
+            {
+              "stem": "A 50-year-old male with chronic alcohol dependence presents with confusion, ataxia, and ophthalmoplegia. Which of the following is the MOST likely cause of his symptoms?",
+              "options": [
+                "Alcohol withdrawal delirium",
+                "Hepatic encephalopathy",
+                "Wernicke encephalopathy",
+                "Alcoholic cerebellar degeneration"
+              ],
+              "answer": "Wernicke encephalopathy",
+              "explanation": "Wernicke encephalopathy is caused by thiamine (vitamin B1) deficiency and presents with the triad of confusion, ataxia, and ophthalmoplegia."
+            },
+            {
+              "stem": "A 25-year-old male with schizophrenia reports hearing voices telling him to harm himself. He also exhibits flat affect and social withdrawal. Which of the following symptoms is classified as a NEGATIVE symptom?",
+              "options": [
+                "Auditory hallucinations",
+                "Delusions of persecution",
+                "Flat affect",
+                "Disorganized speech"
+              ],
+              "answer": "Flat affect",
+              "explanation": "Negative symptoms in schizophrenia include flat affect, alogia, avolition, and social withdrawal, reflecting a deficit in normal functioning."
+            },
+            {
+              "stem": "A 40-year-old male with a history of alcohol dependence presents with tremors, diaphoresis, and agitation 48 hours after his last drink. Which of the following is the MOST appropriate initial therapy?",
+              "options": [
+                "Lorazepam",
+                "Disulfiram",
+                "Acamprosate",
+                "Naltrexone"
+              ],
+              "answer": "Lorazepam",
+              "explanation": "Benzodiazepines like lorazepam are first-line for alcohol withdrawal due to their efficacy in preventing seizures and delirium tremens."
+            },
+            {
+              "stem": "A 35-year-old female with schizophrenia is started on olanzapine. Which of the following adverse effects is MOST commonly associated with olanzapine?",
+              "options": [
+                "Extrapyramidal symptoms",
+                "Hyperprolactinemia",
+                "Weight gain and metabolic syndrome",
+                "Neuroleptic malignant syndrome"
+              ],
+              "answer": "Weight gain and metabolic syndrome",
+              "explanation": "Olanzapine is associated with significant weight gain, dyslipidemia, and insulin resistance, contributing to metabolic syndrome."
+            },
+            {
+              "stem": "A 28-year-old female with bipolar disorder is started on lithium. Which of the following laboratory parameters should be monitored MOST frequently during the first 3 months of therapy?",
+              "options": [
+                "Serum creatinine and thyroid function",
+                "Liver enzymes",
+                "Complete blood count",
+                "Electrolytes"
+              ],
+              "answer": "Serum creatinine and thyroid function",
+              "explanation": "Lithium can cause nephrogenic diabetes insipidus (monitoring serum creatinine) and hypothyroidism (monitoring TSH)."
+            },
+            {
+              "stem": "A 60-year-old male with Parkinson’s disease is started on levodopa-carbidopa. Which of the following adverse effects is MOST likely to occur with long-term use?",
+              "options": [
+                "Bradykinesia",
+                "Dyskinesias",
+                "Orthostatic hypotension",
+                "Hallucinations"
+              ],
+              "answer": "Dyskinesias",
+              "explanation": "Long-term levodopa therapy is associated with motor fluctuations and dyskinesias due to pulsatile dopamine receptor stimulation."
+            },
+            {
+              "stem": "A 30-year-old female with epilepsy is started on carbamazepine. Which of the following is a MOST important monitoring parameter for this patient?",
+              "options": [
+                "Serum sodium levels",
+                "Liver enzymes",
+                "White blood cell count",
+                "Serum carbamazepine levels"
+              ],
+              "answer": "White blood cell count",
+              "explanation": "Carbamazepine can cause agranulocytosis and aplastic anemia, necessitating regular monitoring of white blood cell counts."
+            },
+            {
+              "stem": "A 25-year-old male presents with sudden-onset severe headache, neck stiffness, and photophobia. Lumbar puncture reveals xanthochromia. Which of the following is the MOST likely diagnosis?",
+              "options": [
+                "Migraine headache",
+                "Subarachnoid hemorrhage",
+                "Meningitis",
+                "Cluster headache"
+              ],
+              "answer": "Subarachnoid hemorrhage",
+              "explanation": "Sudden severe headache with neck stiffness and xanthochromia on lumbar puncture is diagnostic of subarachnoid hemorrhage."
+            },
+            {
+              "stem": "A 45-year-old female with schizophrenia is started on risperidone. Which of the following is a MOST important counseling point regarding her medication?",
+              "options": [
+                "Avoid grapefruit juice",
+                "Monitor for extrapyramidal symptoms",
+                "Take with food to enhance absorption",
+                "Avoid exposure to sunlight"
+              ],
+              "answer": "Monitor for extrapyramidal symptoms",
+              "explanation": "Risperidone, an atypical antipsychotic, can cause extrapyramidal symptoms, particularly at higher doses."
+            },
+            {
+              "stem": "A 35-year-old male with a history of opioid dependence is started on methadone maintenance therapy. Which of the following is the MOST appropriate monitoring parameter?",
+              "options": [
+                "Serum methadone levels",
+                "QT interval on ECG",
+                "Liver function tests",
+                "Urine drug screens"
+              ],
+              "answer": "QT interval on ECG",
+              "explanation": "Methadone can prolong the QT interval, increasing the risk of torsades de pointes, necessitating baseline and periodic ECG monitoring."
+            },
+            {
+              "stem": "A 22-year-old female presents with recurrent episodes of intense fear, palpitations, and shortness of breath. Symptoms peak within 10 minutes and resolve spontaneously. Which of the following is the MOST likely diagnosis?",
+              "options": [
+                "Generalized anxiety disorder",
+                "Panic disorder",
+                "Social anxiety disorder",
+                "Post-traumatic stress disorder"
+              ],
+              "answer": "Panic disorder",
+              "explanation": "Recurrent, unexpected episodes of intense fear with physical symptoms peaking within 10 minutes are diagnostic of panic disorder."
+            },
+            {
+              "stem": "A 50-year-old male with a history of alcohol dependence is started on disulfiram. Which of the following is the MOST important patient counseling point?",
+              "options": [
+                "Avoid all forms of alcohol, including topical products",
+                "Take the medication with food to reduce nausea",
+                "Monitor for signs of liver toxicity",
+                "Avoid driving while taking the medication"
+              ],
+              "answer": "Avoid all forms of alcohol, including topical products",
+              "explanation": "Disulfiram causes a severe disulfiram-ethanol reaction if alcohol is consumed, including topical alcohol in colognes or mouthwashes."
+            },
+            {
+              "stem": "A 30-year-old female with bipolar disorder is started on valproate. Which of the following is a MOST important teratogenic risk associated with valproate?",
+              "options": [
+                "Cleft palate",
+                "Neural tube defects",
+                "Limb reduction defects",
+                "Cardiac malformations"
+              ],
+              "answer": "Neural tube defects",
+              "explanation": "Valproate is associated with a 1–5% risk of neural tube defects (e.g., spina bifida) if taken during the first trimester of pregnancy."
+            },
+            {
+              "stem": "A 40-year-old male with schizophrenia is started on clozapine. Which of the following is a MOST important monitoring parameter for this patient?",
+              "options": [
+                "White blood cell count",
+                "Serum glucose levels",
+                "Liver enzymes",
+                "Serum clozapine levels"
+              ],
+              "answer": "White blood cell count",
+              "explanation": "Clozapine can cause agranulocytosis, necessitating weekly white blood cell count monitoring for the first 6 months of therapy."
+            },
+            {
+              "stem": "A 25-year-old female with epilepsy is started on lamotrigine. Which of the following is a MOST important adverse effect to monitor for?",
+              "options": [
+                "Rash, including Stevens-Johnson syndrome",
+                "Weight gain",
+                "Sedation",
+                "Hair loss"
+              ],
+              "answer": "Rash, including Stevens-Johnson syndrome",
+              "explanation": "Lamotrigine is associated with a risk of serious skin reactions, including Stevens-Johnson syndrome, particularly with rapid titration."
+            },
+            {
+              "stem": "A 35-year-old male with a history of alcohol dependence presents with confusion, nystagmus, and ataxia. Which of the following is the MOST appropriate immediate therapy?",
+              "options": [
+                "Intravenous thiamine",
+                "Intravenous glucose",
+                "Intravenous naloxone",
+                "Intravenous benzodiazepines"
+              ],
+              "answer": "Intravenous thiamine",
+              "explanation": "Thiamine deficiency in alcohol dependence can lead to Wernicke encephalopathy; immediate thiamine administration is critical to prevent progression."
+            },
+            {
+              "stem": "A 40-year-old female with schizophrenia is started on haloperidol. Which of the following is a MOST likely extrapyramidal symptom (EPS) associated with haloperidol?",
+              "options": [
+                "Akathisia",
+                "Sedation",
+                "Weight gain",
+                "Hyperprolactinemia"
+              ],
+              "answer": "Akathisia",
+              "explanation": "Haloperidol, a typical antipsychotic, frequently causes akathisia, a distressing sense of inner restlessness and inability to sit still."
+            },
+            {
+              "stem": "A 28-year-old male with a history of opioid dependence is started on buprenorphine-naloxone. Which of the following is the MOST important counseling point regarding this medication?",
+              "options": [
+                "Avoid alcohol while taking this medication",
+                "Dissolve the tablet under the tongue and do not swallow",
+                "Take the medication with food to enhance absorption",
+                "Monitor for signs of respiratory depression"
+              ],
+              "answer": "Dissolve the tablet under the tongue and do not swallow",
+              "explanation": "Buprenorphine-naloxone tablets must be dissolved sublingually to ensure proper absorption and to prevent diversion."
+            },
+            {
+              "stem": "A 30-year-old female with bipolar disorder is started on lithium. Which of the following is a MOST important drug interaction to avoid?",
+              "options": [
+                "NSAIDs",
+                "Proton pump inhibitors",
+                "Calcium channel blockers",
+                "Beta-blockers"
+              ],
+              "answer": "NSAIDs",
+              "explanation": "NSAIDs can increase lithium levels by reducing renal clearance, increasing the risk of lithium toxicity."
+            },
+            {
+              "stem": "A 45-year-old male with epilepsy is started on phenytoin. Which of the following is a MOST important adverse effect to monitor for?",
+              "options": [
+                "Gingival hyperplasia",
+                "Weight loss",
+                "Hypotension",
+                "Bradycardia"
+              ],
+              "answer": "Gingival hyperplasia",
+              "explanation": "Phenytoin commonly causes gingival hyperplasia, particularly in younger patients or those with poor oral hygiene."
+            },
+            {
+              "stem": "A 25-year-old female with schizophrenia is started on aripiprazole. Which of the following is a MOST important advantage of aripiprazole over other antipsychotics?",
+              "options": [
+                "Lower risk of weight gain",
+                "Lower risk of extrapyramidal symptoms",
+                "Lower risk of QT prolongation",
+                "Lower risk of sedation"
+              ],
+              "answer": "Lower risk of weight gain",
+              "explanation": "Aripiprazole, an atypical antipsychotic, has a lower propensity for weight gain compared to olanzapine or clozapine."
+            },
+            {
+              "stem": "A 30-year-old male with a history of alcohol dependence is started on acamprosate. Which of the following is the MOST important mechanism of action of acamprosate?",
+              "options": [
+                "Opioid receptor antagonist",
+                "GABA agonist and glutamate antagonist",
+                "Dopamine antagonist",
+                "Serotonin reuptake inhibitor"
+              ],
+              "answer": "GABA agonist and glutamate antagonist",
+              "explanation": "Acamprosate modulates GABA and glutamate neurotransmission to reduce craving and relapse in alcohol dependence."
+            },
+            {
+              "stem": "A 40-year-old female with epilepsy is started on levetiracetam. Which of the following is a MOST important adverse effect to monitor for?",
+              "options": [
+                "Rash",
+                "Behavioral changes",
+                "Hepatotoxicity",
+                "Nephrotoxicity"
+              ],
+              "answer": "Behavioral changes",
+              "explanation": "Levetiracetam is associated with mood changes, irritability, and even psychosis in some patients."
+            },
+            {
+              "stem": "A 28-year-old male with schizophrenia is started on olanzapine. Which of the following is a MOST important metabolic parameter to monitor?",
+              "options": [
+                "Serum potassium",
+                "Fasting blood glucose and lipid profile",
+                "Serum magnesium",
+                "Liver enzymes"
+              ],
+              "answer": "Fasting blood glucose and lipid profile",
+              "explanation": "Olanzapine is associated with significant weight gain, dyslipidemia, and insulin resistance, necessitating regular monitoring of metabolic parameters."
+            },
+            {
+              "stem": "A 35-year-old female with bipolar disorder is started on carbamazepine. Which of the following is a MOST important drug interaction to avoid?",
+              "options": [
+                "Oral contraceptives",
+                "Warfarin",
+                "Lisinopril",
+                "Metformin"
+              ],
+              "answer": "Oral contraceptives",
+              "explanation": "Carbamazepine induces hepatic enzymes, reducing the efficacy of oral contraceptives and increasing the risk of unintended pregnancy."
+            },
+            {
+              "stem": "A 40-year-old male with Parkinson’s disease is started on rasagiline. Which of the following is a MOST important dietary counseling point?",
+              "options": [
+                "Avoid high-protein meals",
+                "Avoid tyramine-rich foods",
+                "Avoid grapefruit juice",
+                "Avoid caffeine"
+              ],
+              "answer": "Avoid tyramine-rich foods",
+              "explanation": "Rasagiline is a MAO-B inhibitor; tyramine-rich foods can precipitate hypertensive crises in patients taking MAO inhibitors."
+            },
+            {
+              "stem": "A 25-year-old female with epilepsy is started on topiramate. Which of the following is a MOST important adverse effect to monitor for?",
+              "options": [
+                "Weight gain",
+                "Metabolic acidosis",
+                "Sedation",
+                "Hair loss"
+              ],
+              "answer": "Metabolic acidosis",
+              "explanation": "Topiramate can cause hyperchloremic non-anion gap metabolic acidosis due to renal bicarbonate wasting."
+            },
+            {
+              "stem": "A 30-year-old male with a history of opioid dependence is started on naltrexone. Which of the following is a MOST important patient counseling point?",
+              "options": [
+                "Take the medication with food to reduce nausea",
+                "Avoid alcohol while taking this medication",
+                "Naltrexone will block the effects of opioids for 24–72 hours",
+                "Monitor for signs of respiratory depression"
+              ],
+              "answer": "Naltrexone will block the effects of opioids for 24–72 hours",
+              "explanation": "Naltrexone is an opioid antagonist that blocks the effects of opioids for 24–72 hours, reducing craving and relapse risk."
+            },
+            {
+              "stem": "A 45-year-old female with schizophrenia is started on ziprasidone. Which of the following is a MOST important adverse effect to monitor for?",
+              "options": [
+                "Weight gain",
+                "QT prolongation",
+                "Sedation",
+                "Extrapyramidal symptoms"
+              ],
+              "answer": "QT prolongation",
+              "explanation": "Ziprasidone is associated with a dose-dependent risk of QT prolongation, necessitating baseline and periodic ECG monitoring."
+            },
+            {
+              "stem": "A 28-year-old male with epilepsy is started on zonisamide. Which of the following is a MOST important adverse effect to monitor for?",
+              "options": [
+                "Rash",
+                "Metabolic acidosis",
+                "Weight gain",
+                "Hepatotoxicity"
+              ],
+              "answer": "Metabolic acidosis",
+              "explanation": "Zonisamide can cause hyperchloremic non-anion gap metabolic acidosis due to renal bicarbonate wasting."
+            },
+            {
+              "stem": "A 35-year-old female with bipolar disorder is started on quetiapine. Which of the following is a MOST important advantage of quetiapine over other antipsychotics?",
+              "options": [
+                "Lower risk of weight gain",
+                "Lower risk of extrapyramidal symptoms",
+                "Lower risk of QT prolongation",
+                "Lower risk of sedation"
+              ],
+              "answer": "Lower risk of extrapyramidal symptoms",
+              "explanation": "Quetiapine has a lower risk of extrapyramidal symptoms compared to typical antipsychotics and some atypical agents."
+            },
+            {
+              "stem": "A 40-year-old male with Parkinson’s disease is started on entacapone. Which of the following is the MOST important mechanism of action of entacapone?",
+              "options": [
+                "Dopamine agonist",
+                "COMT inhibitor",
+                "MAO-B inhibitor",
+                "Dopamine reuptake inhibitor"
+              ],
+              "answer": "COMT inhibitor",
+              "explanation": "Entacapone inhibits catechol-O-methyltransferase (COMT), prolonging the action of levodopa by preventing its peripheral metabolism."
+            },
+            {
+              "stem": "A 25-year-old female with schizophrenia is started on lurasidone. Which of the following is a MOST important advantage of lurasidone over other antipsychotics?",
+              "options": [
+                "Lower risk of weight gain",
+                "Lower risk of QT prolongation",
+                "Lower risk of sedation",
+                "Lower risk of extrapyramidal symptoms"
+              ],
+              "answer": "Lower risk of weight gain",
+              "explanation": "Lurasidone has a lower propensity for weight gain compared to olanzapine or clozapine, making it a preferred option for metabolic concerns."
+            },
+            {
+              "stem": "A 30-year-old male with a history of alcohol dependence is started on disulfiram. Which of the following is the MOST important patient education point regarding disulfiram?",
+              "options": [
+                "Take the medication with food to reduce nausea",
+                "Avoid all forms of alcohol, including hidden sources",
+                "Monitor for signs of liver toxicity",
+                "Avoid driving while taking the medication"
+              ],
+              "answer": "Avoid all forms of alcohol, including hidden sources",
+              "explanation": "Disulfiram causes a severe reaction if alcohol is consumed, including hidden sources like mouthwash, cough syrups, or topical products."
+            },
+            {
+              "stem": "A 45-year-old female with epilepsy is started on perampanel. Which of the following is a MOST important adverse effect to monitor for?",
+              "options": [
+                "Weight gain",
+                "Behavioral changes",
+                "Hepatotoxicity",
+                "Nephrotoxicity"
+              ],
+              "answer": "Behavioral changes",
+              "explanation": "Perampanel is associated with mood changes, irritability, and even aggression in some patients."
+            },
+            {
+              "stem": "A 28-year-old male with schizophrenia is started on asenapine. Which of the following is a MOST important adverse effect to monitor for?",
+              "options": [
+                "Weight gain",
+                "QT prolongation",
+                "Sedation",
+                "Extrapyramidal symptoms"
+              ],
+              "answer": "QT prolongation",
+              "explanation": "Asenapine is associated with a dose-dependent risk of QT prolongation, necessitating baseline and periodic ECG monitoring."
+            },
+            {
+              "stem": "A 35-year-old female with bipolar disorder is started on lamotrigine. Which of the following is a MOST important drug interaction to avoid?",
+              "options": [
+                "Valproate",
+                "Carbamazepine",
+                "Lithium",
+                "Quetiapine"
+              ],
+              "answer": "Valproate",
+              "explanation": "Valproate increases lamotrigine levels by inhibiting its metabolism, increasing the risk of serious skin reactions."
+            },
+            {
+              "stem": "A 40-year-old male with Parkinson’s disease is started on pramipexole. Which of the following is a MOST important adverse effect to monitor for?",
+              "options": [
+                "Weight gain",
+                "Sedation",
+                "Impulse control disorders",
+                "Hypotension"
+              ],
+              "answer": "Impulse control disorders",
+              "explanation": "Dopamine agonists like pramipexole can cause impulse control disorders, including gambling, shopping, or hypersexuality."
+            },
+            {
+              "stem": "A 25-year-old female with epilepsy is started on brivaracetam. Which of the following is a MOST important advantage of brivaracetam over levetiracetam?",
+              "options": [
+                "Lower risk of behavioral changes",
+                "Lower risk of sedation",
+                "Lower risk of weight gain",
+                "Lower risk of rash"
+              ],
+              "answer": "Lower risk of behavioral changes",
+              "explanation": "Brivaracetam has a lower risk of behavioral changes (e.g., agitation, aggression) compared to levetiracetam."
+            },
+            {
+              "stem": "A 30-year-old male with a history of opioid dependence is started on buprenorphine. Which of the following is a MOST important advantage of buprenorphine over methadone?",
+              "options": [
+                "Lower risk of respiratory depression",
+                "Longer duration of action",
+                "Lower risk of diversion",
+                "Lower risk of QT prolongation"
+              ],
+              "answer": "Lower risk of respiratory depression",
+              "explanation": "Buprenorphine, a partial opioid agonist, has a ceiling effect on respiratory depression, reducing the risk of overdose compared to full agonists like methadone."
+            },
+            {
+              "stem": "A 45-year-old female with schizophrenia is started on iloperidone. Which of the following is a MOST important adverse effect to monitor for?",
+              "options": [
+                "Weight gain",
+                "QT prolongation",
+                "Sedation",
+                "Extrapyramidal symptoms"
+              ],
+              "answer": "QT prolongation",
+              "explanation": "Iloperidone is associated with a dose-dependent risk of QT prolongation, necessitating baseline and periodic ECG monitoring."
+            },
+            {
+              "stem": "A 28-year-old male with bipolar disorder is started on oxcarbazepine. Which of the following is a MOST important monitoring parameter?",
+              "options": [
+                "Serum sodium levels",
+                "Liver enzymes",
+                "White blood cell count",
+                "Serum oxcarbazepine levels"
+              ],
+              "answer": "Serum sodium levels",
+              "explanation": "Oxcarbazepine can cause hyponatremia, particularly in elderly patients or those on diuretics, necessitating regular monitoring of serum sodium."
+            },
+            {
+              "stem": "A 35-year-old female with epilepsy is started on eslicarbazepine. Which of the following is a MOST important drug interaction to avoid?",
+              "options": [
+                "Oral contraceptives",
+                "Warfarin",
+                "Lisinopril",
+                "Metformin"
+              ],
+              "answer": "Oral contraceptives",
+              "explanation": "Eslicarbazepine induces hepatic enzymes, reducing the efficacy of oral contraceptives and increasing the risk of unintended pregnancy."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "List FOUR non-motor symptoms of Parkinson’s disease.",
+              "modelAnswer": "1. Cognitive impairment (e.g., dementia, executive dysfunction)\n2. Mood disorders (e.g., depression, anxiety)\n3. Sleep disturbances (e.g., REM sleep behavior disorder, insomnia)\n4. Autonomic dysfunction (e.g., constipation, urinary incontinence, orthostatic hypotension)"
+            },
+            {
+              "stem": "List FOUR differences between tension-type headaches and migraine headaches.",
+              "modelAnswer": "1. **Duration**: Tension-type headaches typically last 30 minutes to 7 days; migraines last 4–72 hours.\n2. **Character of pain**: Tension-type headaches are bilateral, pressing/tightening; migraines are unilateral, throbbing.\n3. **Associated symptoms**: Tension-type headaches lack nausea/vomiting and photophobia/phonophobia; migraines often include these.\n4. **Triggers**: Tension-type headaches are often stress-related; migraines are triggered by hormonal changes, foods, or sensory stimuli."
+            },
+            {
+              "stem": "Describe FOUR strategies used in the management of raised intracranial pressure (ICP) associated with traumatic brain injury (TBI).",
+              "modelAnswer": "1. **Osmotic therapy**: Mannitol 20% or hypertonic saline to reduce brain water content.\n2. **Hyperventilation**: Temporary reduction in PaCO2 to 30–35 mmHg to cause cerebral vasoconstriction (short-term measure).\n3. **Sedation and analgesia**: Propofol or midazolam to reduce metabolic demand and ICP.\n4. **Surgical intervention**: Decompressive craniectomy for refractory ICP."
+            },
+            {
+              "stem": "Elucidate FOUR modifiable risk factors for ischemic stroke.",
+              "modelAnswer": "1. **Hypertension**: The most important modifiable risk factor; control with antihypertensives.\n2. **Dyslipidemia**: Elevated LDL cholesterol; manage with statins.\n3. **Diabetes mellitus**: Poor glycemic control increases stroke risk; optimize HbA1c.\n4. **Atrial fibrillation**: Anticoagulation (e.g., warfarin, DOACs) reduces embolic stroke risk."
+            },
+            {
+              "stem": "Identify FOUR acute effects of marijuana use.",
+              "modelAnswer": "1. **Euphoria and relaxation**: Due to activation of cannabinoid receptors in the brain.\n2. **Altered perception**: Enhanced sensory perception (e.g., colors, sounds).\n3. **Impaired coordination and reaction time**: Increased risk of accidents.\n4. **Tachycardia and increased appetite**: Due to stimulation of the sympathetic nervous system."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "A 30-year-old female (EC) presents to the emergency department with a generalized tonic-clonic seizure that has persisted for 25 minutes despite initial benzodiazepine administration. She has a history of epilepsy but has been non-adherent to her antiepileptic medication.\n(a) Elaborate the acute management of this patient.\n(b) Elucidate FOUR principles of chronic management of EC’s condition, assuming she is now pregnant.",
+              "modelAnswer": {
+                "a": {
+                  "title": "Acute Management of Status Epilepticus",
+                  "content": [
+                    "1. **Benzodiazepine administration**: If not already given, administer IV lorazepam (0.1 mg/kg, max 4 mg) or IM midazolam (10 mg) to terminate seizure activity.\n2. **Second-line antiepileptic drug**: If seizures persist, administer IV fosphenytoin (20 PE/kg, max 1500 PE) or valproate (40 mg/kg, max 3000 mg) to prevent recurrence.\n3. **Airway and breathing support**: Ensure patent airway, administer oxygen, and prepare for intubation if respiratory depression occurs.\n4. **Circulatory support**: Monitor vital signs; administer IV fluids if hypotensive.\n5. **EEG monitoring**: Continuous EEG to assess for ongoing non-convulsive seizures.\n6. **Identify and treat underlying cause**: Check electrolytes (e.g., sodium, calcium, magnesium), glucose, and drug levels; consider neuroimaging if structural cause suspected."
+                  ]
+                },
+                "b": {
+                  "title": "Principles of Chronic Management in Pregnancy",
+                  "content": [
+                    "1. **Medication selection**: Use antiepileptic drugs with the lowest teratogenic risk (e.g., lamotrigine, levetiracetam). Avoid valproate and phenytoin due to high risk of neural tube defects and fetal hydantoin syndrome.\n2. **Dose optimization**: Maintain the lowest effective dose to minimize fetal exposure; monitor drug levels closely.\n3. **Folic acid supplementation**: Administer folic acid 5 mg/day to reduce the risk of neural tube defects, especially in the first trimester.\n4. **Multidisciplinary care**: Coordinate with obstetrics and neurology to balance seizure control with fetal safety; consider switching to monotherapy if possible."
+                  ]
+                }
+              }
+            },
+            {
+              "stem": "J.S. is a 55-year-old male (5’6”, 100 kg) who experienced a 15–20 minute episode of right arm paralysis and slurred speech yesterday. His symptoms resolved spontaneously. He has a history of smoking (25 pack-years), heavy alcohol use (3–6 beers/day), hypertension, gout, hyperlipidemia, and a carotid bruit. His BP is 165/100 mmHg, Hb 17 g/dL, hematocrit 55%, LDL cholesterol 300 mg/dL, HbA1c 10%, and Doppler ultrasound shows 90% stenosis on the left carotid artery.\n(a) Illustrate the data in J.S.’s history that is consistent with a transient ischemic attack (TIA).\n(b) Identify the initial and long-term goals in treating J.S.\n(c) Elaborate how the risk factors for J.S. can be modified to prevent further TIA.",
+              "modelAnswer": {
+                "a": {
+                  "title": "Data Consistent with TIA",
+                  "content": [
+                    "1. **Focal neurological deficit**: Right arm paralysis and slurred speech.\n2. **Transient duration**: Symptoms lasted 15–20 minutes and resolved spontaneously.\n3. **Vascular risk factors**: Hypertension, hyperlipidemia, diabetes, smoking, heavy alcohol use.\n4. **Carotid artery disease**: 90% stenosis on the left carotid artery, a common source of embolic TIAs.\n5. **Polycythemia**: Elevated Hb and hematocrit, increasing blood viscosity and stroke risk."
+                  ]
+                },
+                "b": {
+                  "title": "Initial and Long-Term Goals in Treating J.S.",
+                  "content": [
+                    "1. **Initial goals**:\n   - Stabilize the patient and prevent progression to stroke.\n   - Initiate antiplatelet therapy (e.g., aspirin + clopidogrel) and statin therapy.\n   - Control hypertension and hyperglycemia.\n   - Refer for urgent carotid endarterectomy or stenting if indicated.\n2. **Long-term goals**:\n   - Reduce the risk of recurrent TIA or stroke.\n   - Achieve optimal blood pressure (<130/80 mmHg), LDL cholesterol (<70 mg/dL), and HbA1c (<7%).\n   - Promote smoking cessation and alcohol reduction.\n   - Ensure adherence to secondary prevention medications."
+                  ]
+                },
+                "c": {
+                  "title": "Modification of Risk Factors to Prevent Further TIA",
+                  "content": [
+                    "1. **Hypertension**: Initiate antihypertensive therapy (e.g., ACE inhibitor + thiazide diuretic) and monitor BP regularly.\n2. **Hyperlipidemia**: Start high-intensity statin therapy (e.g., atorvastatin 80 mg/day) to achieve LDL <70 mg/dL.\n3. **Diabetes**: Optimize glycemic control with metformin, SGLT2 inhibitors, or GLP-1 agonists; target HbA1c <7%.\n4. **Smoking cessation**: Provide counseling, nicotine replacement therapy, or varenicline to reduce cardiovascular risk.\n5. **Alcohol reduction**: Advise reduction to <2 standard drinks/day and refer to alcohol cessation programs if needed.\n6. **Carotid revascularization**: Urgent carotid endarterectomy or stenting for 90% stenosis to reduce embolic risk.\n7. **Antiplatelet therapy**: Continue dual antiplatelet therapy (aspirin + clopidogrel) for 21 days, then switch to monotherapy (e.g., aspirin or clopidogrel) for long-term secondary prevention."
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,620 @@
+{
+  "exam-respiratory-renal": {
+    "1": {
+      "title": "Clinical Pharmacy — Respiratory & Renal",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "A 65-year-old male with a 20-pack-year smoking history presents with chronic cough, sputum production, and dyspnea on exertion. Spirometry reveals an FEV1/FVC ratio of 0.65 and an FEV1 of 55% predicted. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Asthma",
+                "Chronic obstructive pulmonary disease (COPD)",
+                "Interstitial lung disease",
+                "Pulmonary embolism",
+                "Heart failure"
+              ],
+              "answer": "Chronic obstructive pulmonary disease (COPD)",
+              "explanation": "COPD is characterized by persistent respiratory symptoms and airflow limitation due to airway and/or alveolar abnormalities, typically caused by significant exposure to noxious particles or gases (e.g., smoking)."
+            },
+            {
+              "stem": "Which of the following is the primary pathophysiological mechanism driving airflow limitation in COPD?",
+              "options": [
+                "Bronchial smooth muscle contraction",
+                "Mucus gland hypertrophy and hypersecretion",
+                "Destruction of lung parenchyma (emphysema)",
+                "Chronic inflammation of the airways",
+                "Allergic sensitization"
+              ],
+              "answer": "Destruction of lung parenchyma (emphysema)",
+              "explanation": "Emphysema, a key component of COPD, involves the destruction of alveoli and lung parenchyma, leading to loss of elastic recoil and airflow limitation."
+            },
+            {
+              "stem": "A 45-year-old female with a history of asthma presents with worsening symptoms despite using her salbutamol inhaler 3-4 times daily. She reports nighttime awakenings 3 times per week and reduced exercise tolerance. According to GINA guidelines, what is the most appropriate next step in her management?",
+              "options": [
+                "Add a leukotriene receptor antagonist",
+                "Increase salbutamol dose to 6 puffs per day",
+                "Start inhaled corticosteroids (ICS) as maintenance therapy",
+                "Prescribe oral prednisolone for 7 days",
+                "Refer for bronchial thermoplasty"
+              ],
+              "answer": "Start inhaled corticosteroids (ICS) as maintenance therapy",
+              "explanation": "GINA guidelines recommend initiating ICS as maintenance therapy for patients with asthma symptoms occurring 3-4 times weekly or nighttime awakenings ≥3 times monthly."
+            },
+            {
+              "stem": "Which of the following adverse effects is most commonly associated with long-term use of inhaled corticosteroids in asthma management?",
+              "options": [
+                "Osteoporosis",
+                "Hyperglycemia",
+                "Oral candidiasis",
+                "Tachycardia",
+                "Hypotension"
+              ],
+              "answer": "Oral candidiasis",
+              "explanation": "Inhaled corticosteroids can cause local immunosuppression in the oropharynx, leading to oral candidiasis (thrush)."
+            },
+            {
+              "stem": "A 50-year-old male with COPD (FEV1 40% predicted) is admitted with an acute exacerbation. Which of the following is the most appropriate initial pharmacological intervention?",
+              "options": [
+                "Oral prednisolone 30 mg daily for 5 days",
+                "Intravenous theophylline loading dose",
+                "Inhaled short-acting beta-agonist (SABA) + short-acting muscarinic antagonist (SAMA)",
+                "Intravenous magnesium sulfate",
+                "Oral codeine for cough suppression"
+              ],
+              "answer": "Inhaled short-acting beta-agonist (SABA) + short-acting muscarinic antagonist (SAMA)",
+              "explanation": "SABA and SAMA are first-line bronchodilators for acute COPD exacerbations to relieve bronchospasm."
+            },
+            {
+              "stem": "Which of the following statements about theophylline is FALSE?",
+              "options": [
+                "It has a narrow therapeutic index requiring therapeutic drug monitoring",
+                "It is a first-line agent for COPD due to its bronchodilatory effects",
+                "It can cause seizures and cardiac arrhythmias at toxic levels",
+                "It has significant drug interactions with cytochrome P450 inducers/inhibitors",
+                "It is metabolized hepatically and excreted renally"
+              ],
+              "answer": "It is a first-line agent for COPD due to its bronchodilatory effects",
+              "explanation": "Theophylline is no longer a first-line agent for COPD due to its narrow therapeutic index, potential for toxicity, and numerous drug interactions."
+            },
+            {
+              "stem": "A 60-year-old female with stage 3 CKD (eGFR 45 mL/min/1.73m²) presents with hypertension and edema. Which of the following diuretics is most appropriate for managing her fluid overload?",
+              "options": [
+                "Hydrochlorothiazide",
+                "Furosemide",
+                "Spironolactone",
+                "Amiloride",
+                "Mannitol"
+              ],
+              "answer": "Furosemide",
+              "explanation": "Furosemide is a loop diuretic effective in patients with moderate to severe CKD (eGFR <60 mL/min/1.73m²) for managing fluid overload."
+            },
+            {
+              "stem": "Which of the following is a key risk factor for the development of chronic kidney disease (CKD)?",
+              "options": [
+                "Hyperlipidemia",
+                "Hypothyroidism",
+                "Hypertension",
+                "Osteoarthritis",
+                "Migraine"
+              ],
+              "answer": "Hypertension",
+              "explanation": "Hypertension is a major modifiable risk factor for CKD, contributing to glomerular damage and progressive renal dysfunction."
+            },
+            {
+              "stem": "A 55-year-old male with COPD is prescribed ipratropium bromide via a metered-dose inhaler. Which of the following adverse effects is most likely to occur with this medication?",
+              "options": [
+                "Tachycardia",
+                "Hyperkalemia",
+                "Dry mouth",
+                "Hypotension",
+                "Constipation"
+              ],
+              "answer": "Dry mouth",
+              "explanation": "Ipratropium bromide is an anticholinergic agent that commonly causes dry mouth due to its parasympatholytic effects."
+            },
+            {
+              "stem": "Which of the following statements about smoking cessation therapy is TRUE?",
+              "options": [
+                "Varenicline is contraindicated in patients with a history of depression",
+                "Bupropion is a nicotine receptor partial agonist",
+                "Nicotine replacement therapy (NRT) is contraindicated in patients with cardiovascular disease",
+                "Varenicline reduces nicotine cravings by acting as a partial agonist at α4β2 nicotinic acetylcholine receptors",
+                "Bupropion is contraindicated in patients with a history of seizures"
+              ],
+              "answer": "Varenicline reduces nicotine cravings by acting as a partial agonist at α4β2 nicotinic acetylcholine receptors",
+              "explanation": "Varenicline is a partial agonist at α4β2 nicotinic acetylcholine receptors, reducing nicotine cravings and withdrawal symptoms."
+            },
+            {
+              "stem": "A 40-year-old female with asthma is prescribed a combination inhaler containing fluticasone and salmeterol. Which of the following statements best describes the rationale for this combination?",
+              "options": [
+                "Salmeterol provides rapid bronchodilation, while fluticasone reduces airway inflammation",
+                "Fluticasone provides rapid bronchodilation, while salmeterol reduces airway inflammation",
+                "The combination is more effective than either agent alone due to complementary mechanisms",
+                "Salmeterol is a rescue medication, while fluticasone is a controller medication",
+                "The combination is used only in patients with severe COPD"
+              ],
+              "answer": "The combination is more effective than either agent alone due to complementary mechanisms",
+              "explanation": "Combining an inhaled corticosteroid (fluticasone) with a long-acting beta-agonist (salmeterol) provides both anti-inflammatory and bronchodilatory effects, improving asthma control."
+            },
+            {
+              "stem": "Which of the following is the most appropriate spirometric finding in a patient with moderate asthma?",
+              "options": [
+                "FEV1/FVC ratio >0.80, FEV1 60% predicted",
+                "FEV1/FVC ratio <0.70, FEV1 85% predicted",
+                "FEV1/FVC ratio >0.80, FEV1 40% predicted",
+                "FEV1/FVC ratio <0.70, FEV1 50% predicted",
+                "FEV1/FVC ratio >0.70, FEV1 90% predicted"
+              ],
+              "answer": "FEV1/FVC ratio <0.70, FEV1 50% predicted",
+              "explanation": "Moderate asthma is characterized by an FEV1/FVC ratio <0.70 and an FEV1 between 40-69% predicted."
+            },
+            {
+              "stem": "A 70-year-old male with stage 4 CKD (eGFR 20 mL/min/1.73m²) is prescribed a medication that requires dose adjustment in renal impairment. Which of the following medications would NOT require dose adjustment in this patient?",
+              "options": [
+                "Metformin",
+                "Vancomycin",
+                "Digoxin",
+                "Amlodipine",
+                "Furosemide"
+              ],
+              "answer": "Amlodipine",
+              "explanation": "Amlodipine is metabolized hepatically and does not require dose adjustment in renal impairment."
+            },
+            {
+              "stem": "Which of the following is a key complication of chronic kidney disease (CKD) that requires monitoring and management?",
+              "options": [
+                "Hypercalcemia",
+                "Hypophosphatemia",
+                "Secondary hyperparathyroidism",
+                "Hypokalemia",
+                "Metabolic alkalosis"
+              ],
+              "answer": "Secondary hyperparathyroidism",
+              "explanation": "Secondary hyperparathyroidism is a common complication of CKD due to impaired phosphate excretion and reduced vitamin D activation, leading to hyperphosphatemia and hypocalcemia."
+            },
+            {
+              "stem": "A 55-year-old female with COPD is prescribed tiotropium bromide. Which of the following statements about tiotropium is TRUE?",
+              "options": [
+                "It is a short-acting beta-agonist",
+                "It is administered via a metered-dose inhaler twice daily",
+                "It is a long-acting muscarinic antagonist (LAMA)",
+                "It is contraindicated in patients with glaucoma",
+                "It has a rapid onset of action (within 5 minutes)"
+              ],
+              "answer": "It is a long-acting muscarinic antagonist (LAMA)",
+              "explanation": "Tiotropium is a long-acting muscarinic antagonist (LAMA) used for maintenance bronchodilation in COPD."
+            },
+            {
+              "stem": "Which of the following is the most appropriate first-line therapy for a patient presenting with an acute asthma exacerbation?",
+              "options": [
+                "Oral prednisolone 30 mg daily for 5 days",
+                "Intravenous magnesium sulfate",
+                "Inhaled short-acting beta-agonist (SABA) via nebulizer",
+                "Oral theophylline",
+                "Intramuscular adrenaline"
+              ],
+              "answer": "Inhaled short-acting beta-agonist (SABA) via nebulizer",
+              "explanation": "SABA via nebulizer is the first-line therapy for acute asthma exacerbations to provide rapid bronchodilation."
+            },
+            {
+              "stem": "A 60-year-old male with CKD stage 3 (eGFR 45 mL/min/1.73m²) is prescribed simvastatin for dyslipidemia. Which of the following monitoring parameters is most important in this patient?",
+              "options": [
+                "Serum potassium levels",
+                "Liver function tests (LFTs)",
+                "Serum magnesium levels",
+                "Serum calcium levels",
+                "Serum phosphate levels"
+              ],
+              "answer": "Liver function tests (LFTs)",
+              "explanation": "Statins, including simvastatin, can cause hepatotoxicity, so LFTs should be monitored, especially in patients with CKD."
+            },
+            {
+              "stem": "Which of the following is a key feature of the pathophysiology of asthma?",
+              "options": [
+                "Destruction of lung parenchyma",
+                "Chronic neutrophilic inflammation",
+                "Airway hyper-responsiveness",
+                "Pulmonary hypertension",
+                "Alveolar fibrosis"
+              ],
+              "answer": "Airway hyper-responsiveness",
+              "explanation": "Airway hyper-responsiveness is a hallmark of asthma, leading to bronchoconstriction and symptoms such as wheezing and dyspnea."
+            },
+            {
+              "stem": "A 45-year-old female with COPD is prescribed a combination of inhaled corticosteroids (ICS) and long-acting beta-agonists (LABA). Which of the following statements is TRUE regarding this combination?",
+              "options": [
+                "ICS alone is sufficient for managing COPD",
+                "LABA alone is sufficient for managing COPD",
+                "The combination reduces exacerbations and improves lung function in COPD",
+                "The combination is contraindicated in patients with asthma",
+                "The combination is only used in patients with severe asthma"
+              ],
+              "answer": "The combination reduces exacerbations and improves lung function in COPD",
+              "explanation": "Combining ICS and LABA in COPD can reduce exacerbations and improve lung function, particularly in patients with frequent exacerbations or severe airflow limitation."
+            },
+            {
+              "stem": "Which of the following is the most appropriate intervention for a patient with CKD who develops hyperkalemia (serum potassium 6.0 mEq/L)?",
+              "options": [
+                "Administer intravenous calcium gluconate",
+                "Administer oral potassium supplements",
+                "Administer intravenous insulin and glucose",
+                "Administer oral sodium polystyrene sulfonate",
+                "Administer intravenous furosemide"
+              ],
+              "answer": "Administer intravenous insulin and glucose",
+              "explanation": "Intravenous insulin and glucose can rapidly shift potassium intracellularly, reducing serum potassium levels in hyperkalemia."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "List the key components of a comprehensive asthma management plan according to GINA guidelines.",
+              "modelAnswer": "1. Assessment and monitoring of asthma control and risk factors.\n2. Patient education on asthma, its triggers, and the importance of adherence.\n3. Development of a personalized asthma action plan (including daily controller medications and rescue medications).\n4. Identification and avoidance of asthma triggers (e.g., allergens, smoke, cold air).\n5. Use of inhaled corticosteroids (ICS) as the cornerstone of maintenance therapy.\n6. Addition of long-acting beta-agonists (LABA) or other controllers (e.g., leukotriene modifiers) for patients not controlled on ICS alone.\n7. Regular follow-up and adjustment of therapy based on asthma control.\n8. Vaccination against influenza and pneumococcal disease.\n9. Management of comorbidities (e.g., allergic rhinitis, GERD).\n10. Smoking cessation support if applicable."
+            },
+            {
+              "stem": "Outline the steps involved in the accurate use of a dry powder inhaler (DPI) for asthma management.",
+              "modelAnswer": "1. Remove the cap and load the dose (if required).\n2. Hold the inhaler upright and exhale fully to empty the lungs.\n3. Seal lips tightly around the mouthpiece.\n4. Inhale deeply and forcefully through the mouth (do not inhale through the nose).\n5. Hold breath for 5-10 seconds to allow medication deposition in the lungs.\n6. Exhale slowly through the nose.\n7. Replace the cap and rinse mouth (if using corticosteroids) to reduce the risk of oral candidiasis.\n8. Clean the inhaler as per manufacturer instructions.\n9. Check the dose counter (if available) to ensure the correct number of doses remain.\n10. Store the inhaler in a dry place away from moisture."
+            },
+            {
+              "stem": "What are the key complications of chronic obstructive pulmonary disease (COPD)?",
+              "modelAnswer": "1. **Acute exacerbations**: Sudden worsening of symptoms (e.g., increased dyspnea, sputum volume, or purulence), often requiring hospitalization.\n2. **Respiratory failure**: Hypoxemia (PaO2 <60 mmHg) and/or hypercapnia (PaCO2 >50 mmHg), leading to acute or chronic respiratory failure.\n3. **Cor pulmonale**: Right ventricular hypertrophy and failure due to pulmonary hypertension from chronic hypoxia.\n4. **Secondary polycythemia**: Increased red blood cell production due to chronic hypoxia.\n5. **Pneumothorax**: Rupture of emphysematous bullae, leading to lung collapse.\n6. **Pulmonary hypertension**: Increased pulmonary artery pressure due to hypoxic vasoconstriction and vascular remodeling.\n7. **Infections**: Increased susceptibility to respiratory infections (e.g., pneumonia, bronchitis).\n8. **Cachexia and muscle wasting**: Due to increased metabolic demand and reduced nutritional intake.\n9. **Depression and anxiety**: Common due to the chronic and debilitating nature of the disease.\n10. **Osteoporosis**: Due to chronic steroid use, reduced mobility, and vitamin D deficiency."
+            },
+            {
+              "stem": "What monitoring parameters are required for the effective follow-up of patients with asthma?",
+              "modelAnswer": "1. **Symptom control**: Frequency of daytime/nighttime symptoms, reliever use, and activity limitation.\n2. **Lung function**: Spirometry (FEV1, FVC, FEV1/FVC ratio) and peak expiratory flow (PEF) monitoring.\n3. **Exacerbations**: Number and severity of acute exacerbations requiring oral corticosteroids or hospitalization.\n4. **Adherence**: Assessment of medication adherence and inhaler technique.\n5. **Side effects**: Monitoring for adverse effects of medications (e.g., oral candidiasis with ICS, tremor with SABA).\n6. **Comorbidities**: Assessment and management of conditions that may worsen asthma (e.g., allergic rhinitis, GERD, obesity).\n7. **Quality of life**: Impact of asthma on daily activities, work, and sleep.\n8. **Vaccination status**: Up-to-date influenza and pneumococcal vaccination.\n9. **Environmental triggers**: Identification and avoidance of triggers (e.g., allergens, smoke, occupational exposures).\n10. **Biomarkers**: Fractional exhaled nitric oxide (FeNO) in selected patients to assess eosinophilic inflammation."
+            },
+            {
+              "stem": "Briefly discuss the management of a common cold.",
+              "modelAnswer": "1. **Supportive care**: Rest, hydration, and symptomatic relief (e.g., analgesia for headache or sore throat).\n2. **Antipyretics/analgesics**: Paracetamol or NSAIDs (e.g., ibuprofen) for fever, headache, or myalgia.\n3. **Decongestants**: Oral (e.g., pseudoephedrine) or topical (e.g., oxymetazoline) for nasal congestion (use topical for ≤3 days to avoid rebound congestion).\n4. **Antihistamines**: First-generation (e.g., diphenhydramine) for rhinorrhea and sneezing, but may cause sedation.\n5. **Intranasal corticosteroids**: (e.g., fluticasone) for allergic rhinitis symptoms if present.\n6. **Antitussives**: (e.g., dextromethorphan) for dry, non-productive cough.\n7. **Expectorants**: (e.g., guaifenesin) for productive cough to thin mucus.\n8. **Avoid antibiotics**: Common cold is viral; antibiotics are ineffective and may contribute to resistance.\n9. **Zinc lozenges**: May reduce duration of symptoms if taken early.\n10. **Hand hygiene and infection control**: Prevent spread of the virus."
+            },
+            {
+              "stem": "Briefly discuss the clinical presentation of chronic renal failure.",
+              "modelAnswer": "1. **Early symptoms (often non-specific)**: Fatigue, weakness, malaise, and reduced exercise tolerance.\n2. **Fluid and electrolyte imbalances**: Edema, hypertension, hyperkalemia (palpitations, muscle weakness), metabolic acidosis (nausea, vomiting, hyperventilation).\n3. **Uremic symptoms**: Nausea, vomiting, anorexia, metallic taste in mouth, pruritus, and confusion (due to accumulation of uremic toxins).\n4. **Cardiovascular manifestations**: Hypertension, heart failure, pericarditis (chest pain, friction rub), and arrhythmias (due to electrolyte imbalances).\n5. **Hematological abnormalities**: Anemia (pallor, fatigue) due to reduced erythropoietin production, and bleeding tendencies (e.g., epistaxis, easy bruising).\n6. **Neurological symptoms**: Peripheral neuropathy (tingling, numbness), restless legs syndrome, and seizures (in advanced stages).\n7. **Gastrointestinal symptoms**: Anorexia, nausea, vomiting, and hiccups.\n8. **Dermatological manifestations**: Dry skin, pruritus, and uremic frost (crystallized urea on skin in advanced CKD).\n9. **Endocrine abnormalities**: Secondary hyperparathyroidism (bone pain, fractures), insulin resistance, and menstrual irregularities.\n10. **Laboratory findings**: Elevated serum creatinine and urea, hyperkalemia, metabolic acidosis, hypocalcemia, hyperphosphatemia, and anemia."
+            },
+            {
+              "stem": "Briefly discuss the management of acute respiratory distress syndrome (ARDS).",
+              "modelAnswer": "1. **Identify and treat the underlying cause**: Sepsis, pneumonia, trauma, or aspiration.\n2. **Supportive care**: Oxygen therapy (initially via nasal cannula or mask, escalate to high-flow nasal cannula or noninvasive ventilation if needed).\n3. **Mechanical ventilation**: Lung-protective ventilation (low tidal volume 6 mL/kg ideal body weight, plateau pressure ≤30 cm H2O) to avoid ventilator-induced lung injury.\n4. **Prone positioning**: For severe ARDS (PaO2/FiO2 <150 mmHg) to improve oxygenation.\n5. **Fluid management**: Conservative fluid strategy to avoid fluid overload (use diuretics if necessary).\n6. **Vasopressors**: (e.g., norepinephrine) for hypotension or shock.\n7. **Nutritional support**: Early enteral nutrition (preferred) or parenteral nutrition if enteral is contraindicated.\n8. **Sedation and analgesia**: To facilitate mechanical ventilation and reduce oxygen consumption.\n9. **Pharmacological interventions**: Consider neuromuscular blockade (e.g., cisatracurium) for severe ARDS to improve ventilator synchrony.\n10. **Monitoring**: Continuous monitoring of oxygenation (SpO2, PaO2/FiO2 ratio), hemodynamics, and complications (e.g., barotrauma, ventilator-associated pneumonia)."
+            },
+            {
+              "stem": "Briefly discuss the management of acute renal failure (ARF).",
+              "modelAnswer": "1. **Identify and treat the underlying cause**: Prerenal (e.g., hypovolemia, shock), intrinsic (e.g., acute tubular necrosis, glomerulonephritis), or postrenal (e.g., urinary obstruction).\n2. **Fluid resuscitation**: IV fluids (e.g., normal saline) for prerenal causes to restore renal perfusion.\n3. **Discontinue nephrotoxic drugs**: (e.g., NSAIDs, ACE inhibitors, aminoglycosides, contrast agents).\n4. **Monitor and correct electrolyte imbalances**: Hyperkalemia (e.g., insulin/glucose, calcium gluconate, sodium polystyrene sulfonate), metabolic acidosis (e.g., sodium bicarbonate), and hyperphosphatemia.\n5. **Diuretics**: Loop diuretics (e.g., furosemide) for fluid overload, but avoid in prerenal azotemia unless volume overload is present.\n6. **Renal replacement therapy (RRT)**: Indicated for severe hyperkalemia, metabolic acidosis, fluid overload, uremic symptoms, or refractory electrolyte imbalances.\n7. **Nutritional support**: Restrict protein intake (0.6-0.8 g/kg/day) in non-dialysis patients to reduce uremic toxin production; consider early enteral nutrition.\n8. **Monitoring**: Daily serum creatinine, urea, electrolytes, fluid balance, and urine output. Assess for complications (e.g., infections, bleeding).\n9. **Avoidance of further injury**: Ensure adequate hydration before procedures involving contrast agents; use isotonic saline or sodium bicarbonate for prophylaxis.\n10. **Follow-up**: Transition to chronic kidney disease management if ARF does not resolve."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "Mr. Barasa, a 45-year-old road works contractor, presents with a one-month history of daily cough, wheezing, dyspnea, and chest tightness. He reports nighttime symptoms twice weekly and uses his salbutamol inhaler for relief. He also occasionally uses oral salbutamol tablets and prednisolone tablets but experiences tremors and palpitations. Last night, his inhaler was ineffective, and he had a troublesome night.\n\n1. What condition is Mr. Barasa suffering from? (2 Marks)\n2. How would you classify the condition and why? (2 Marks)\n3. Giving examples, describe the classes of medication that Mr. Barasa would benefit from? (8 Marks)\n4. What interventions would you make with regards to his current medication? (3 Marks)\n5. What side effects would you counsel the patient on before starting them on your choice of medication? (5 Marks)",
+              "modelAnswer": "### 1. Diagnosis\nMr. Barasa is suffering from **asthma**, characterized by chronic airway inflammation, reversible airflow limitation, and symptoms such as wheezing, dyspnea, chest tightness, and cough, which vary over time and intensity.\n\n### 2. Classification and Rationale\nMr. Barasa’s asthma is **moderate persistent** based on:\n- **Symptoms**: Daily symptoms (cough, wheezing, dyspnea) and nighttime awakenings ≥2 times per week.\n- **Lung function**: Likely reduced FEV1 (though spirometry results are not provided, his symptoms suggest airflow limitation).\n- **Impact on daily life**: Symptoms interfere with work and daily activities.\n- **Rescue medication use**: Frequent use of salbutamol inhaler (indicating poor control).\n\nAccording to GINA guidelines, moderate persistent asthma is defined by daily symptoms, nighttime awakenings ≥1 time per week, and some limitation in normal activity.\n\n### 3. Classes of Medication Beneficial for Mr. Barasa\nMr. Barasa would benefit from the following classes of medications, tailored to his moderate persistent asthma:\n\n#### **Controller Medications (Daily Use)**\n1. **Inhaled Corticosteroids (ICS)**:\n   - **Examples**: Fluticasone, budesonide, beclomethasone.\n   - **Rationale**: ICS are the cornerstone of asthma maintenance therapy, reducing airway inflammation and preventing exacerbations. For moderate persistent asthma, a low-to-medium dose ICS (e.g., fluticasone 100–250 mcg twice daily) is recommended.\n   - **Advantages**: Reduce symptoms, improve lung function, and decrease the risk of exacerbations.\n\n2. **Long-Acting Beta-Agonists (LABA)**:\n   - **Examples**: Salmeterol, formoterol.\n   - **Rationale**: LABAs are used in combination with ICS for patients not controlled on ICS alone. They provide sustained bronchodilation (e.g., salmeterol/fluticasone combination inhaler).\n   - **Advantages**: Improve symptom control and reduce exacerbations when used with ICS.\n\n3. **Leukotriene Receptor Antagonists (LTRA)**:\n   - **Examples**: Montelukast.\n   - **Rationale**: LTRA can be used as an alternative or add-on therapy for patients with mild-to-moderate asthma, particularly those with allergic components or exercise-induced symptoms.\n   - **Advantages**: Oral administration, useful for patients with poor inhaler technique.\n\n#### **Reliever Medication (As Needed)**\n4. **Short-Acting Beta-Agonists (SABA)**:\n   - **Examples**: Salbutamol (albuterol), terbutaline.\n   - **Rationale**: SABA provides rapid bronchodilation for acute symptom relief (e.g., salbutamol 100–200 mcg via metered-dose inhaler as needed).\n   - **Advantages**: Rapid onset of action (within minutes).\n\n#### **Additional Considerations**\n5. **Oral Corticosteroids (Short Burst)**:\n   - **Examples**: Prednisolone (20–40 mg daily for 5–7 days).\n   - **Rationale**: Used for acute exacerbations or severe symptoms unresponsive to inhaled therapy.\n   - **Advantages**: Rapid anti-inflammatory effects.\n\n6. **Biologics (if indicated)**:\n   - **Examples**: Omalizumab (anti-IgE), mepolizumab (anti-IL-5).\n   - **Rationale**: For severe asthma with specific phenotypes (e.g., allergic asthma or eosinophilic asthma) unresponsive to standard therapy.\n\n### 4. Interventions Regarding Current Medication\n1. **Discontinue oral salbutamol and prednisolone**: These are not recommended for routine use in asthma due to systemic side effects (e.g., tremors, palpitations, and long-term risks of oral corticosteroids).\n2. **Initiate ICS + LABA combination therapy**: Prescribe a fixed-dose combination inhaler (e.g., fluticasone/salmeterol 100/50 mcg twice daily) for maintenance therapy.\n3. **Provide a SABA inhaler for rescue use**: Prescribe salbutamol 100 mcg metered-dose inhaler, 1–2 puffs as needed for acute symptoms.\n4. **Educate on proper inhaler technique**: Ensure Mr. Barasa can demonstrate correct use of the metered-dose inhaler or dry powder inhaler.\n5. **Develop an asthma action plan**: Provide clear instructions on when to increase therapy (e.g., doubling ICS dose) or seek medical help during exacerbations.\n\n### 5. Side Effects to Counsel the Patient On\nBefore starting ICS + LABA combination therapy, counsel Mr. Barasa on the following side effects:\n\n#### **Inhaled Corticosteroids (ICS)**\n- **Oral candidiasis (thrush)**: Rinse mouth with water after each use and use a spacer device to reduce deposition in the oropharynx.\n- **Hoarseness or throat irritation**: Use a spacer and rinse mouth after inhalation.\n- **Systemic effects (rare with inhaled use)**: Adrenal suppression, osteoporosis, and cataracts with long-term high-dose use.\n\n#### **Long-Acting Beta-Agonists (LABA)**\n- **Tremors**: Due to beta-2 receptor stimulation in skeletal muscle.\n- **Palpitations or tachycardia**: Monitor heart rate; report if severe or persistent.\n- **Hypokalemia**: Rare but possible with high doses or in combination with other beta-agonists.\n- **Paradoxical bronchospasm**: Rare; discontinue and seek medical help if wheezing worsens after inhalation.\n\n#### **General Counseling Points**\n- **Adherence**: Emphasize the importance of daily use of controller medications, even when asymptomatic.\n- **Monitoring**: Teach him to monitor his symptoms and peak expiratory flow (PEF) to assess control.\n- **When to seek help**: Instruct him to seek medical attention if symptoms worsen, if rescue medication use increases, or if nighttime symptoms persist.\n- **Avoid triggers**: Identify and avoid triggers such as dust, smoke, cold air, and respiratory infections.\n- **Vaccinations**: Recommend annual influenza vaccination and pneumococcal vaccination (if not up to date)."
+            },
+            {
+              "stem": "Catherine, a 50-year-old cook, presents with a 6-month history of cough, severe dyspnea, and production of copious amounts of sputum. On examination, she has cyanosis, tachypnea, digital clubbing, and uses accessory muscles to breathe. She sells githeri and uji to construction workers around her home.\n\n1. What is Catherine likely to be suffering from? (2 Marks)\n2. What are some of the investigations that you would request for Catherine? (5 Marks)\n3. What classes of medication would you recommend for Catherine? (8 Marks)\n4. What non-pharmacological interventions would you recommend for the patient? (5 Marks)",
+              "modelAnswer": "### 1. Likely Diagnosis\nCatherine is likely suffering from **chronic obstructive pulmonary disease (COPD)**, specifically **chronic bronchitis with emphysema**. This is supported by:\n- **Chronic productive cough** for 6 months (meeting the definition of chronic bronchitis).\n- **Severe dyspnea** and **copious sputum production**.\n- **Cyanosis** (indicating hypoxia) and **use of accessory muscles** (indicating respiratory distress).\n- **Digital clubbing** (a sign of chronic hypoxia and lung disease).\n- **Occupational history**: Exposure to biomass fuel smoke (from cooking with githeri and uji for construction workers) is a significant risk factor for COPD.\n\n### 2. Investigations\nTo confirm the diagnosis and assess the severity of COPD, the following investigations are recommended:\n\n1. **Spirometry**:\n   - **FEV1/FVC ratio <0.70** (post-bronchodilator) confirms persistent airflow limitation.\n   - **FEV1 % predicted**: To classify the severity of COPD (e.g., mild: FEV1 ≥80%; moderate: 50–79%; severe: 30–49%; very severe: <30%).\n\n2. **Chest X-ray**:\n   - To rule out other conditions (e.g., pneumonia, lung cancer) and assess for signs of COPD (e.g., hyperinflation, flattened diaphragm, increased retrosternal space).\n\n3. **Arterial Blood Gas (ABG) Analysis**:\n   - To assess for **hypoxemia (PaO2 <60 mmHg)** and **hypercapnia (PaCO2 >50 mmHg)**, indicating respiratory failure.\n\n4. **Complete Blood Count (CBC)**:\n   - To assess for **polycythemia** (elevated hemoglobin/hematocrit due to chronic hypoxia).\n\n5. **Alpha-1 Antitrypsin (AAT) Levels**:\n   - If there is a family history of COPD or early-onset COPD, to rule out AAT deficiency.\n\n6. **Electrocardiogram (ECG)**:\n   - To assess for **cor pulmonale** (right ventricular hypertrophy or strain due to pulmonary hypertension).\n\n7. **Echocardiogram**:\n   - To evaluate cardiac function and assess for **pulmonary hypertension** or **right heart failure**.\n\n8. **Sputum Culture and Sensitivity**:\n   - To identify bacterial pathogens in the event of an acute exacerbation.\n\n9. **Pulse Oximetry**:\n   - To assess oxygen saturation (SpO2). A value <90% may indicate the need for long-term oxygen therapy (LTOT).\n\n10. **Body Mass Index (BMI) and Nutritional Assessment**:\n    - To assess for **cachexia** or malnutrition, common in advanced COPD.\n\n### 3. Classes of Medication Recommended for Catherine\nCatherine’s management should focus on **symptom relief, improving quality of life, reducing exacerbations, and slowing disease progression**. The following classes of medications are recommended:\n\n#### **Bronchodilators (Cornerstone of COPD Management)**\n1. **Long-Acting Muscarinic Antagonists (LAMA)**:\n   - **Examples**: Tiotropium, aclidinium.\n   - **Rationale**: LAMA provide sustained bronchodilation by blocking muscarinic receptors, reducing cholinergic-mediated bronchoconstriction. Tiotropium is preferred for maintenance therapy in COPD.\n   - **Advantages**: Once-daily dosing, reduces exacerbations, and improves symptoms and lung function.\n\n2. **Long-Acting Beta-Agonists (LABA)**:\n   - **Examples**: Formoterol, salmeterol, indacaterol.\n   - **Rationale**: LABA provide sustained bronchodilation by stimulating beta-2 receptors in the airways. Can be used alone or in combination with LAMA.\n   - **Advantages**: Improve symptoms, exercise tolerance, and reduce exacerbations.\n\n3. **Combination LAMA/LABA**:\n   - **Examples**: Tiotropium/olodaterol, umeclidinium/vilanterol.\n   - **Rationale**: Combination therapy may provide greater bronchodilation and symptom relief than monotherapy.\n\n#### **Inhaled Corticosteroids (ICS)**\n4. **ICS + LABA Combination**:\n   - **Examples**: Fluticasone/salmeterol, budesonide/formoterol.\n   - **Rationale**: ICS are added to LABA in patients with **frequent exacerbations** (e.g., ≥2 per year) or those with **asthma-COPD overlap (ACO)**. ICS reduce airway inflammation and exacerbations.\n   - **Caution**: ICS monotherapy is **not recommended** in COPD due to increased risk of pneumonia.\n\n#### **Phosphodiesterase-4 Inhibitors**\n5. **Roflumilast**:\n   - **Rationale**: For patients with **severe COPD (FEV1 <50% predicted)** and a history of **frequent exacerbations** (e.g., ≥2 per year), particularly with chronic bronchitis.\n   - **Mechanism**: Reduces inflammation by inhibiting phosphodiesterase-4.\n   - **Advantages**: Reduces exacerbations and improves lung function.\n   - **Side effects**: Diarrhea, weight loss, nausea, and psychiatric effects (e.g., insomnia, anxiety).\n\n#### **Mucolytics**\n6. **N-Acetylcysteine (NAC) or Carbocysteine**:\n   - **Rationale**: For patients with **chronic productive cough** to thin mucus and improve expectoration.\n   - **Advantages**: May reduce exacerbations in some patients.\n   - **Side effects**: Nausea, vomiting, and diarrhea.\n\n#### **Oxygen Therapy**\n7. **Long-Term Oxygen Therapy (LTOT)**:\n   - **Criteria**: For patients with **chronic hypoxemia (PaO2 <55 mmHg or <60 mmHg with cor pulmonale or polycythemia)**.\n   - **Rationale**: LTOT improves survival and quality of life in hypoxemic patients.\n   - **Administration**: 15–19 hours/day via nasal cannula or oxygen concentrator.\n\n#### **Vaccinations**\n8. **Influenza and Pneumococcal Vaccination**:\n   - **Rationale**: Reduces the risk of respiratory infections, which are a common trigger for COPD exacerbations.\n\n#### **Rescue Medications**\n9. **Short-Acting Beta-Agonists (SABA) or Short-Acting Muscarinic Antagonists (SAMA)**:\n   - **Examples**: Salbutamol (SABA), ipratropium (SAMA).\n   - **Rationale**: For acute symptom relief during exacerbations.\n   - **Advantages**: Rapid onset of action.\n\n### 4. Non-Pharmacological Interventions\nNon-pharmacological interventions are critical for managing COPD and improving Catherine’s quality of life:\n\n1. **Smoking Cessation**:\n   - **Intervention**: Provide counseling, nicotine replacement therapy (NRT), varenicline, or bupropion.\n   - **Rationale**: Smoking cessation is the **most effective intervention** to slow disease progression and reduce exacerbations.\n\n2. **Pulmonary Rehabilitation**:\n   - **Components**: Exercise training, education, nutritional counseling, and psychological support.\n   - **Benefits**: Improves exercise capacity, reduces dyspnea, and enhances quality of life.\n   - **Recommendation**: Refer Catherine to a pulmonary rehabilitation program.\n\n3. **Nutritional Support**:\n   - **Intervention**: Assess nutritional status and provide dietary counseling.\n   - **Rationale**: Malnutrition is common in advanced COPD and contributes to muscle wasting and weakness.\n   - **Recommendation**: High-calorie, high-protein diet with small, frequent meals. Consider nutritional supplements if needed.\n\n4. **Breathing Techniques and Physiotherapy**:\n   - **Interventions**: Pursed-lip breathing, diaphragmatic breathing, and airway clearance techniques (e.g., postural drainage, percussion).\n   - **Benefits**: Improves oxygenation, reduces dyspnea, and enhances mucus clearance.\n\n5. **Avoidance of Triggers**:\n   - **Intervention**: Identify and avoid environmental triggers (e.g., biomass fuel smoke, dust, cold air, respiratory infections).\n   - **Rationale**: Reduces exacerbations and symptom burden.\n   - **Recommendation**: Use a mask when cooking, ensure proper ventilation, and avoid exposure to smoke and pollutants.\n\n6. **Psychosocial Support**:\n   - **Intervention**: Provide counseling or support groups for anxiety and depression.\n   - **Rationale**: COPD can lead to significant psychological distress.\n   - **Recommendation**: Refer Catherine to a psychologist or support group if needed.\n\n7. **Hydration**:\n   - **Intervention**: Encourage adequate fluid intake.\n   - **Rationale**: Helps thin mucus and improve expectoration.\n\n8. **Regular Follow-Up**:\n   - **Intervention**: Schedule regular follow-up visits to assess symptoms, lung function, and medication adherence.\n   - **Rationale**: Ensures timely adjustments to therapy and early intervention for exacerbations.\n\n9. **End-of-Life Planning (if applicable)**:\n   - **Intervention**: Discuss advance care planning and palliative care options for advanced COPD.\n   - **Rationale**: Ensures Catherine’s preferences are respected and quality of life is optimized."
+            },
+            {
+              "stem": "J.B., a 65-year-old male, presents with a 5-year history of a pulmonary condition characterized by cough, dyspnea, pursed-lip breathing, and speaks in short jerky sentences. He is on oxygen therapy and reports feeling comfortable only when on oxygen. On examination, he has barrel chest, reduced breath sounds, and prolonged expiratory phase.\n\n1. What could J.B. be suffering from? (Support your answer) (2 Marks)\n2. What risk factors are associated with this condition? (5 Marks)\n3. What medication should J.B. be using that would help to manage the disease and slow down the disease progression? (8 Marks)\n4. What parameters would you use as part of pharmaceutical care to monitor this patient in subsequent visits? (5 Marks)",
+              "modelAnswer": "### 1. Likely Diagnosis and Supporting Evidence\nJ.B. is most likely suffering from **chronic obstructive pulmonary disease (COPD), specifically emphysema-predominant COPD**. This is supported by:\n- **Chronic cough and dyspnea** for 5 years.\n- **Pursed-lip breathing**: A compensatory mechanism to increase airway pressure and prevent airway collapse during expiration.\n- **Short jerky sentences**: Indicative of severe dyspnea and difficulty speaking in long sentences.\n- **Oxygen dependency**: Suggests chronic hypoxemia requiring long-term oxygen therapy (LTOT).\n- **Physical examination findings**: Barrel chest (due to hyperinflation), reduced breath sounds (due to loss of lung elastic recoil), and prolonged expiratory phase (due to airflow limitation).\n\nThe clinical presentation is consistent with **severe emphysema**, a subtype of COPD characterized by destruction of alveoli and loss of lung elastic recoil, leading to air trapping and hyperinflation.\n\n### 2. Risk Factors Associated with COPD\nThe risk factors associated with J.B.’s COPD include:\n\n1. **Smoking**: The primary risk factor for COPD, contributing to 80–90% of cases. Smoking causes oxidative stress, inflammation, and destruction of lung parenchyma.\n\n2. **Occupational Exposures**: Long-term exposure to dust, chemicals, and biomass fuel smoke (e.g., from cooking or heating) can contribute to COPD.\n\n3. **Air Pollution**: Exposure to indoor and outdoor air pollution (e.g., biomass fuel smoke, vehicle emissions, industrial pollutants) increases the risk of COPD.\n\n4. **Genetic Factors**: Alpha-1 antitrypsin (AAT) deficiency is a rare genetic condition that predisposes individuals to early-onset emphysema, particularly in non-smokers.\n\n5. **Age**: COPD is more common in individuals >40 years old due to cumulative exposure to risk factors and age-related decline in lung function.\n\n6. **Recurrent Respiratory Infections**: Chronic or recurrent respiratory infections (e.g., pneumonia, bronchitis) can accelerate lung damage and contribute to COPD.\n\n7. **Socioeconomic Status**: Low socioeconomic status is associated with higher exposure to risk factors (e.g., smoking, indoor air pollution) and limited access to healthcare.\n\n8. **Chronic Bronchitis**: A history of chronic bronchitis (productive cough for ≥3 months in 2 consecutive years) can progress to COPD.\n\n### 3. Medications to Manage J.B.’s COPD and Slow Disease Progression\nJ.B.’s management should focus on **symptom relief, reducing exacerbations, improving quality of life, and slowing disease progression**. The following medications are recommended:\n\n#### **Bronchodilators (Cornerstone of COPD Management)**\n1. **Long-Acting Muscarinic Antagonists (LAMA)**:\n   - **Examples**: Tiotropium (Spiriva), aclidinium (Eklira).\n   - **Rationale**: LAMA provide sustained bronchodilation by blocking muscarinic receptors, reducing cholinergic-mediated bronchoconstriction. Tiotropium is preferred for maintenance therapy in COPD.\n   - **Dose**: Tiotropium 18 mcg once daily via HandiHaler or Respimat.\n   - **Benefits**: Reduces exacerbations, improves symptoms, and lung function. Once-daily dosing improves adherence.\n\n2. **Long-Acting Beta-Agonists (LABA)**:\n   - **Examples**: Formoterol (Foradil), salmeterol (Serevent), indacaterol (Onbrez).\n   - **Rationale**: LABA provide sustained bronchodilation by stimulating beta-2 receptors in the airways. Can be used alone or in combination with LAMA.\n   - **Dose**: Formoterol 12 mcg twice daily or indacaterol 150 mcg once daily.\n   - **Benefits**: Improves symptoms, exercise tolerance, and reduces exacerbations.\n\n3. **Combination LAMA/LABA**:\n   - **Examples**: Tiotropium/olodaterol (Spiolto Respimat), umeclidinium/vilanterol (Anoro Ellipta).\n   - **Rationale**: Combination therapy may provide greater bronchodilation and symptom relief than monotherapy.\n   - **Dose**: Tiotropium/olodaterol 5/5 mcg once daily.\n   - **Benefits**: Superior to monotherapy in improving lung function and reducing exacerbations.\n\n#### **Inhaled Corticosteroids (ICS)**\n4. **ICS + LABA Combination**:\n   - **Examples**: Fluticasone/salmeterol (Seretide), budesonide/formoterol (Symbicort).\n   - **Rationale**: ICS are added to LABA in patients with **frequent exacerbations** (e.g., ≥2 per year) or those with **asthma-COPD overlap (ACO)**. ICS reduce airway inflammation and exacerbations.\n   - **Caution**: ICS monotherapy is **not recommended** in COPD due to increased risk of pneumonia.\n   - **Dose**: Fluticasone/salmeterol 500/50 mcg twice daily or budesonide/formoterol 400/12 mcg twice daily.\n   - **Benefits**: Reduces exacerbations and improves symptoms in patients with frequent exacerbations.\n\n#### **Phosphodiesterase-4 Inhibitors**\n5. **Roflumilast**:\n   - **Rationale**: For patients with **severe COPD (FEV1 <50% predicted)** and a history of **frequent exacerbations** (e.g., ≥2 per year), particularly with chronic bronchitis.\n   - **Mechanism**: Reduces inflammation by inhibiting phosphodiesterase-4.\n   - **Dose**: 500 mcg once daily.\n   - **Benefits**: Reduces exacerbations and improves lung function.\n   - **Side effects**: Diarrhea, weight loss, nausea, and psychiatric effects (e.g., insomnia, anxiety).\n   - **Caution**: Not recommended for patients with a history of depression or suicidal ideation.\n\n#### **Mucolytics**\n6. **N-Acetylcysteine (NAC)**:\n   - **Rationale**: For patients with **chronic productive cough** to thin mucus and improve expectoration.\n   - **Dose**: 600 mg once or twice daily.\n   - **Benefits**: May reduce exacerbations in some patients.\n   - **Side effects**: Nausea, vomiting, and diarrhea.\n\n#### **Oxygen Therapy**\n7. **Long-Term Oxygen Therapy (LTOT)**:\n   - **Criteria**: For patients with **chronic hypoxemia (PaO2 <55 mmHg or <60 mmHg with cor pulmonale or polycythemia)**.\n   - **Rationale**: LTOT improves survival and quality of life in hypoxemic patients.\n   - **Administration**: 15–19 hours/day via nasal cannula or oxygen concentrator.\n   - **Monitoring**: Regular ABG analysis to assess oxygenation and adjust oxygen flow rate.\n\n#### **Vaccinations**\n8. **Influenza and Pneumococcal Vaccination**:\n   - **Rationale**: Reduces the risk of respiratory infections, which are a common trigger for COPD exacerbations.\n   - **Recommendation**: Annual influenza vaccination and pneumococcal vaccination (if not up to date).\n\n#### **Rescue Medications**\n9. **Short-Acting Beta-Agonists (SABA) or Short-Acting Muscarinic Antagonists (SAMA)**:\n   - **Examples**: Salbutamol (SABA), ipratropium (SAMA).\n   - **Rationale**: For acute symptom relief during exacerbations.\n   - **Dose**: Salbutamol 100–200 mcg via metered-dose inhaler as needed or ipratropium 20–40 mcg via metered-dose inhaler as needed.\n   - **Benefits**: Rapid onset of action.\n\n### 4. Pharmaceutical Care Parameters for Monitoring J.B.\nPharmaceutical care for J.B. should focus on **assessing medication effectiveness, adherence, side effects, and disease progression**. The following parameters should be monitored in subsequent visits:\n\n#### **Clinical Parameters**\n1. **Symptom Control**:\n   - **Dyspnea**: Assess using the modified Medical Research Council (mMRC) dyspnea scale.\n   - **Cough and sputum production**: Frequency, volume, and color (e.g., purulent sputum may indicate infection).\n   - **Exacerbations**: Number and severity of acute exacerbations requiring medical intervention (e.g., oral corticosteroids, antibiotics, or hospitalization).\n\n2. **Lung Function**:\n   - **Spirometry**: FEV1, FVC, and FEV1/FVC ratio to assess airflow limitation and disease progression.\n   - **Peak Expiratory Flow (PEF)**: To monitor daily variability in airflow limitation.\n\n3. **Oxygenation**:\n   - **Arterial Blood Gas (ABG) Analysis**: PaO2, PaCO2, and pH to assess for hypoxemia, hypercapnia, and respiratory acidosis.\n   - **Pulse Oximetry**: SpO2 to monitor oxygen saturation.\n\n4. **Exercise Tolerance**:\n   - **6-Minute Walk Test (6MWT)**: To assess functional capacity and response to therapy.\n   - **Dyspnea during activities of daily living (ADLs)**: Monitor for improvement or worsening.\n\n#### **Medication-Related Parameters**\n5. **Adherence**:\n   - **Inhaler Technique**: Assess J.B.’s ability to use his inhalers correctly (e.g., metered-dose inhaler with spacer, dry powder inhaler).\n   - **Medication Adherence**: Review prescription refill history and patient-reported adherence.\n   - **Barriers to Adherence**: Identify and address barriers (e.g., cost, side effects, forgetfulness).\n\n6. **Side Effects**:\n   - **LAMA/LABA**: Monitor for dry mouth, constipation, urinary retention, tremors, palpitations, or paradoxical bronchospasm.\n   - **ICS**: Monitor for oral candidiasis, hoarseness, and systemic effects (e.g., adrenal suppression, osteoporosis) with long-term use.\n   - **Roflumilast**: Monitor for diarrhea, weight loss, nausea, insomnia, or psychiatric effects.\n   - **Oxygen Therapy**: Monitor for nasal dryness, skin irritation, or oxygen toxicity (rare with LTOT).\n\n7. **Drug Interactions**:\n   - **Review J.B.’s medication list** for potential interactions (e.g., beta-blockers, which can antagonize LABA effects).\n\n#### **Laboratory Parameters**\n8. **Renal and Hepatic Function**:\n   - **Serum creatinine and eGFR**: To assess renal function, particularly if J.B. is on medications that require dose adjustment in renal impairment (e.g., theophylline, certain antibiotics).\n   - **Liver function tests (LFTs)**: If J.B. is on medications metabolized hepatically (e.g., roflumilast, certain statins).\n\n9. **Electrolytes**:\n   - **Serum potassium**: To monitor for hypokalemia (e.g., with high-dose beta-agonists or diuretics).\n   - **Serum bicarbonate**: To assess for metabolic acidosis or alkalosis.\n\n10. **Infection Markers**:\n    - **CBC with differential**: To assess for leukocytosis or eosinophilia, which may indicate infection or inflammation.\n    - **C-reactive protein (CRP) or procalcitonin**: If an exacerbation is suspected, to differentiate between bacterial and viral causes.\n\n#### **Quality of Life and Functional Status**\n11. **Quality of Life Questionnaires**:\n    - **COPD Assessment Test (CAT)**: To assess the impact of COPD on J.B.’s health status.\n    - **St. George’s Respiratory Questionnaire (SGRQ)**: To assess symptoms, activity limitations, and psychosocial impact.\n\n12. **Nutritional Status**:\n    - **Body Mass Index (BMI)**: To assess for malnutrition or obesity.\n    - **Serum albumin or prealbumin**: To assess nutritional status.\n\n13. **Psychosocial Well-Being**:\n    - **Depression and Anxiety Screening**: Use tools like the Patient Health Questionnaire-9 (PHQ-9) or Generalized Anxiety Disorder-7 (GAD-7).\n    - **Social Support**: Assess J.B.’s support system and access to healthcare resources.\n\n#### **Immunization Status**\n14. **Vaccination Status**:\n    - **Influenza and pneumococcal vaccination**: Ensure J.B. is up to date.\n\n#### **Patient Education and Counseling**\n15. **Education on COPD and Medications**:\n    - Reinforce the importance of **adherence** to controller medications.\n    - Educate on **proper inhaler technique** and **cleaning of devices**.\n    - Discuss **symptom recognition** and **when to seek medical help** (e.g., worsening dyspnea, increased sputum purulence, or signs of respiratory failure).\n\n16. **Smoking Cessation Support**:\n    - If J.B. is still smoking, provide **counseling, nicotine replacement therapy (NRT), varenicline, or bupropion** to support cessation.\n\n17. **Pulmonary Rehabilitation**:\n    - Assess J.B.’s eligibility for **pulmonary rehabilitation** and refer if appropriate.\n\n#### **Follow-Up Schedule**\n18. **Frequency of Visits**:\n    - **Stable COPD**: Every 3–6 months.\n    - **During exacerbations**: More frequent visits to assess response to treatment.\n    - **After initiating new medications**: Follow up within 4–6 weeks to assess efficacy and side effects.\n\nBy monitoring these parameters, healthcare providers can optimize J.B.’s COPD management, reduce exacerbations, and improve his quality of life."
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Clinical Pharmacy — Respiratory & Renal",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "A 65-year-old male with a 20-pack-year smoking history presents with chronic cough, sputum production, and dyspnea on exertion. Spirometry reveals FEV1/FVC ratio of 0.65 and FEV1 55% predicted. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Asthma",
+                "Chronic bronchitis",
+                "Chronic obstructive pulmonary disease (COPD)",
+                "Bronchiectasis",
+                "Interstitial lung disease"
+              ],
+              "answer": "Chronic obstructive pulmonary disease (COPD)",
+              "explanation": "COPD is characterized by persistent airflow limitation due to chronic bronchitis and/or emphysema, with FEV1/FVC <0.70 and FEV1 <80% predicted."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism of action of inhaled corticosteroids in the management of asthma?",
+              "options": [
+                "Direct bronchodilation",
+                "Inhibition of mast cell degranulation",
+                "Reduction of airway inflammation",
+                "Stimulation of beta-2 receptors",
+                "Blockade of leukotriene receptors"
+              ],
+              "answer": "Reduction of airway inflammation",
+              "explanation": "Inhaled corticosteroids reduce airway inflammation by suppressing eosinophilic infiltration, cytokine production, and mucus secretion."
+            },
+            {
+              "stem": "A 45-year-old female with COPD (GOLD stage 3) reports persistent dyspnea despite maximal inhaled therapy. Which of the following is the most appropriate next step?",
+              "options": [
+                "Add oral theophylline",
+                "Initiate long-term oxygen therapy",
+                "Start oral prednisolone 30mg daily",
+                "Add roflumilast",
+                "Refer for lung volume reduction surgery"
+              ],
+              "answer": "Add roflumilast",
+              "explanation": "Roflumilast, a PDE-4 inhibitor, is recommended for severe COPD with chronic bronchitis and a history of frequent exacerbations."
+            },
+            {
+              "stem": "Which of the following adverse effects is most commonly associated with ipratropium bromide use?",
+              "options": [
+                "Hyperkalemia",
+                "Oral candidiasis",
+                "Dry mouth",
+                "Tachycardia",
+                "Hypotension"
+              ],
+              "answer": "Dry mouth",
+              "explanation": "Antimuscarinic agents like ipratropium commonly cause dry mouth due to inhibition of salivary gland secretion."
+            },
+            {
+              "stem": "A 30-year-old male with asthma uses salbutamol MDI 2 puffs as needed but reports increased nocturnal symptoms. Which of the following is the most appropriate adjustment to his therapy?",
+              "options": [
+                "Increase salbutamol to 4 puffs as needed",
+                "Add oral prednisolone 10mg daily",
+                "Initiate inhaled fluticasone 250mcg twice daily",
+                "Switch to oral theophylline",
+                "Add montelukast 10mg daily"
+              ],
+              "answer": "Initiate inhaled fluticasone 250mcg twice daily",
+              "explanation": "Low-dose inhaled corticosteroids are the cornerstone of asthma maintenance therapy to reduce inflammation and prevent exacerbations."
+            },
+            {
+              "stem": "Which of the following is a contraindication to the use of varenicline in smoking cessation?",
+              "options": [
+                "History of depression",
+                "Severe renal impairment",
+                "Concurrent use of nicotine replacement therapy",
+                "History of seizures",
+                "Age >65 years"
+              ],
+              "answer": "Severe renal impairment",
+              "explanation": "Varenicline is primarily renally eliminated; dose adjustment is required in moderate-severe renal impairment, and it is contraindicated in severe impairment."
+            },
+            {
+              "stem": "A 55-year-old male with COPD and cor pulmonale presents with worsening edema and dyspnea. Which of the following is the most appropriate diuretic to initiate?",
+              "options": [
+                "Hydrochlorothiazide",
+                "Spironolactone",
+                "Furosemide",
+                "Amiloride",
+                "Mannitol"
+              ],
+              "answer": "Furosemide",
+              "explanation": "Loop diuretics like furosemide are preferred for fluid overload in cor pulmonale due to their potent natriuretic effect."
+            },
+            {
+              "stem": "Which of the following is the primary goal of theophylline therapy in COPD?",
+              "options": [
+                "Bronchodilation",
+                "Anti-inflammatory effect",
+                "Mucolytic activity",
+                "Antimicrobial prophylaxis",
+                "Diuresis"
+              ],
+              "answer": "Bronchodilation",
+              "explanation": "Theophylline provides bronchodilation via PDE-3 inhibition, though its use is limited by a narrow therapeutic index and drug interactions."
+            },
+            {
+              "stem": "A 60-year-old female with stage 4 CKD (eGFR 20 mL/min/1.73m²) requires analgesia for osteoarthritis. Which of the following is the safest option?",
+              "options": [
+                "Ibuprofen 400mg TDS",
+                "Naproxen 500mg BD",
+                "Paracetamol 1g QDS",
+                "Celecoxib 200mg OD",
+                "Diclofenac 50mg BD"
+              ],
+              "answer": "Paracetamol 1g QDS",
+              "explanation": "Paracetamol is preferred in CKD due to minimal renal elimination and lack of nephrotoxicity, unlike NSAIDs which can worsen renal function."
+            },
+            {
+              "stem": "Which of the following is the most appropriate monitoring parameter for a patient on long-term inhaled corticosteroid therapy?",
+              "options": [
+                "Serum potassium levels",
+                "Bone mineral density",
+                "Serum theophylline levels",
+                "24-hour urine protein",
+                "Serum creatinine"
+              ],
+              "answer": "Bone mineral density",
+              "explanation": "Long-term inhaled corticosteroids may increase osteoporosis risk; monitoring bone mineral density is recommended in high-risk patients."
+            },
+            {
+              "stem": "A 40-year-old male with asthma reports using his salbutamol inhaler 4-5 times daily for symptom control. Which of the following best describes his asthma control?",
+              "options": [
+                "Well controlled",
+                "Partly controlled",
+                "Uncontrolled",
+                "Requires step-down therapy",
+                "Requires oral corticosteroids"
+              ],
+              "answer": "Uncontrolled",
+              "explanation": "Using a SABA >2 times weekly indicates uncontrolled asthma, requiring step-up therapy (e.g., add inhaled corticosteroid)."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism of action of tiotropium in COPD?",
+              "options": [
+                "Beta-2 receptor agonism",
+                "Leukotriene receptor antagonism",
+                "Muscarinic receptor antagonism",
+                "Corticosteroid receptor agonism",
+                "Phosphodiesterase inhibition"
+              ],
+              "answer": "Muscarinic receptor antagonism",
+              "explanation": "Tiotropium is a long-acting muscarinic antagonist (LAMA) that blocks M3 receptors, reducing bronchoconstriction."
+            },
+            {
+              "stem": "A 50-year-old female with COPD (GOLD stage 2) develops acute exacerbation with purulent sputum. Which of the following is the most appropriate antibiotic choice?",
+              "options": [
+                "Amoxicillin",
+                "Doxycycline",
+                "Ciprofloxacin",
+                "Clarithromycin",
+                "Metronidazole"
+              ],
+              "answer": "Amoxicillin",
+              "explanation": "Amoxicillin is a first-line option for acute exacerbation of COPD with purulent sputum, targeting common pathogens like H. influenzae."
+            },
+            {
+              "stem": "Which of the following is a key adverse effect of systemic corticosteroids in asthma management?",
+              "options": [
+                "Hyperkalemia",
+                "Hypoglycemia",
+                "Osteoporosis",
+                "Bradycardia",
+                "Hypotension"
+              ],
+              "answer": "Osteoporosis",
+              "explanation": "Prolonged systemic corticosteroid use increases osteoporosis risk due to reduced bone formation and increased resorption."
+            },
+            {
+              "stem": "A 35-year-old male with CKD stage 3 (eGFR 45 mL/min/1.73m²) requires antihypertensive therapy. Which of the following is contraindicated?",
+              "options": [
+                "Amlodipine",
+                "Enalapril",
+                "Bisoprolol",
+                "Hydrochlorothiazide",
+                "Losartan"
+              ],
+              "answer": "Hydrochlorothiazide",
+              "explanation": "Thiazide diuretics are ineffective in CKD stage 3 (eGFR <60 mL/min/1.73m²) and may worsen renal function; loop diuretics are preferred."
+            },
+            {
+              "stem": "Which of the following is the primary indication for theophylline in asthma?",
+              "options": [
+                "Acute severe exacerbation",
+                "Exercise-induced bronchospasm",
+                "Mild persistent asthma",
+                "Severe persistent asthma uncontrolled on inhaled corticosteroids",
+                "Nocturnal asthma"
+              ],
+              "answer": "Severe persistent asthma uncontrolled on inhaled corticosteroids",
+              "explanation": "Theophylline is a third-line add-on therapy for severe asthma not controlled on inhaled corticosteroids and LABA."
+            },
+            {
+              "stem": "A 65-year-old male with COPD presents with acute confusion and tremor. His medications include tiotropium, salmeterol, and theophylline. Which of the following is the most likely cause?",
+              "options": [
+                "Tiotropium toxicity",
+                "Salmeterol overdose",
+                "Theophylline toxicity",
+                "CO2 retention",
+                "Hypoxemia"
+              ],
+              "answer": "Theophylline toxicity",
+              "explanation": "Theophylline has a narrow therapeutic index; symptoms like tremor, confusion, and tachycardia suggest toxicity, often due to drug interactions or renal impairment."
+            },
+            {
+              "stem": "Which of the following is the primary goal of smoking cessation pharmacotherapy?",
+              "options": [
+                "Complete nicotine replacement",
+                "Prevent withdrawal symptoms",
+                "Induce aversion to smoking",
+                "Block nicotine receptors",
+                "Stimulate dopamine release"
+              ],
+              "answer": "Prevent withdrawal symptoms",
+              "explanation": "Smoking cessation pharmacotherapy (e.g., NRT, varenicline, bupropion) aims to reduce withdrawal symptoms and cravings."
+            },
+            {
+              "stem": "A 50-year-old female with asthma reports using her inhaler correctly but still experiences symptoms. Spirometry shows FEV1 60% predicted. Which of the following is the most appropriate next step?",
+              "options": [
+                "Increase salbutamol dose",
+                "Add oral prednisolone",
+                "Initiate inhaled fluticasone/salmeterol combination",
+                "Switch to oral theophylline",
+                "Add montelukast"
+              ],
+              "answer": "Initiate inhaled fluticasone/salmeterol combination",
+              "explanation": "For asthma not controlled on low-dose inhaled corticosteroids, adding a LABA (e.g., salmeterol) or increasing ICS dose is recommended."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism of action of bupropion in smoking cessation?",
+              "options": [
+                "Nicotine receptor agonism",
+                "Dopamine and norepinephrine reuptake inhibition",
+                "GABA receptor agonism",
+                "Muscarinic receptor antagonism",
+                "Leukotriene receptor antagonism"
+              ],
+              "answer": "Dopamine and norepinephrine reuptake inhibition",
+              "explanation": "Bupropion reduces cravings and withdrawal symptoms by inhibiting dopamine and norepinephrine reuptake in the brain."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "List FIVE key components of a comprehensive asthma management plan.",
+              "modelAnswer": "1. Patient education on asthma, triggers, and medication use. 2. Written action plan for symptom control and exacerbation management. 3. Controller therapy (e.g., inhaled corticosteroids) for long-term control. 4. Reliever therapy (e.g., salbutamol) for acute symptoms. 5. Regular monitoring of symptoms, peak flow, and lung function. 6. Avoidance of triggers (e.g., allergens, smoke). 7. Annual influenza vaccination."
+            },
+            {
+              "stem": "Outline the steps involved in the accurate use of a dry powder inhaler (DPI).",
+              "modelAnswer": "1. Open the inhaler and load the dose (if required). 2. Exhale fully to empty lungs. 3. Seal lips around the mouthpiece. 4. Inhale deeply and forcefully to ensure powder dispersion. 5. Hold breath for 5-10 seconds to allow deposition. 6. Exhale slowly. 7. Close the inhaler and rinse mouth if using corticosteroids."
+            },
+            {
+              "stem": "List FIVE complications of chronic kidney disease (CKD).",
+              "modelAnswer": "1. Anemia (due to reduced erythropoietin). 2. Mineral and bone disorder (hyperphosphatemia, hypocalcemia, secondary hyperparathyroidism). 3. Cardiovascular disease (hypertension, heart failure, pericarditis). 4. Fluid and electrolyte imbalances (hyperkalemia, metabolic acidosis). 5. Uremia (nausea, pruritus, encephalopathy). 6. Malnutrition (due to protein-energy wasting)."
+            },
+            {
+              "stem": "What are the key monitoring parameters for a patient on long-term inhaled corticosteroid therapy?",
+              "modelAnswer": "1. Symptom control and lung function (FEV1, peak flow). 2. Adherence to therapy. 3. Adverse effects (e.g., oral candidiasis, hoarseness). 4. Bone mineral density (if high-dose or prolonged use). 5. Ophthalmic examination (cataracts, glaucoma risk). 6. Growth in children (if applicable)."
+            },
+            {
+              "stem": "List FIVE risk factors for the development of chronic obstructive pulmonary disease (COPD).",
+              "modelAnswer": "1. Tobacco smoking (primary risk factor). 2. Occupational exposure to dust, chemicals, or fumes. 3. Air pollution (indoor and outdoor). 4. Genetic factors (e.g., alpha-1 antitrypsin deficiency). 5. Recurrent respiratory infections. 6. Low socioeconomic status (linked to poor healthcare access)."
+            },
+            {
+              "stem": "What are the clinical features of an acute exacerbation of COPD?",
+              "modelAnswer": "1. Worsening dyspnea. 2. Increased sputum volume and/or purulence. 3. Increased cough. 4. Chest tightness. 5. Signs of respiratory distress (e.g., tachypnea, use of accessory muscles). 6. Hypoxemia and/or hypercapnia. 7. Possible fever (if infectious cause)."
+            },
+            {
+              "stem": "Outline the management of a patient with stage 3 CKD (eGFR 30-59 mL/min/1.73m²).",
+              "modelAnswer": "1. Blood pressure control (target <130/80 mmHg; ACEi/ARB preferred). 2. Glycemic control in diabetics (target HbA1c ~7%). 3. Dietary modifications (protein restriction, sodium/potassium/phosphate restriction). 4. Correction of anemia (erythropoietin-stimulating agents, iron supplementation). 5. Management of mineral and bone disorder (phosphate binders, vitamin D analogs). 6. Monitoring of renal function, electrolytes, and fluid balance. 7. Avoidance of nephrotoxic drugs (e.g., NSAIDs, aminoglycosides)."
+            },
+            {
+              "stem": "What are the key adverse effects of theophylline therapy, and how can they be minimized?",
+              "modelAnswer": "Key adverse effects: 1. Gastrointestinal (nausea, vomiting). 2. Cardiovascular (tachycardia, arrhythmias). 3. Neurological (tremor, seizures, insomnia). 4. Metabolic (hypokalemia, hyperglycemia). Minimization strategies: 1. Use lowest effective dose. 2. Monitor serum levels (target 10-20 mcg/mL). 3. Avoid drug interactions (e.g., ciprofloxacin, erythromycin). 4. Adjust dose in renal/hepatic impairment. 5. Educate patients on signs of toxicity."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 68-year-old male with stage 4 CKD (eGFR 25 mL/min/1.73m²) is admitted to the hospital with uremic symptoms (nausea, pruritus, confusion) and fluid overload (pulmonary edema, bilateral leg edema). His medications include amlodipine 5 mg daily, metformin 500 mg BD, and atorvastatin 20 mg nocte. His blood pressure is 180/100 mmHg, and his serum potassium is 5.8 mEq/L.\n\n1. Outline the immediate management of this patient’s hyperkalemia and fluid overload.\n2. Discuss the adjustments required to his antihypertensive therapy.\n3. What long-term strategies would you recommend for managing his CKD?",
+              "modelAnswer": {
+                "1. Immediate management of hyperkalemia and fluid overload:\n   - **Hyperkalemia (K+ 5.8 mEq/L):**\n     - **Stabilize cardiac membrane:** Administer IV calcium gluconate 10% 10 mL over 2-5 minutes to antagonize the effects of hyperkalemia on cardiac conduction.\n     - **Shift potassium intracellularly:**\n       - Administer IV insulin 10 units with 50 mL of 50% dextrose to drive potassium into cells.\n       - Administer nebulized salbutamol 10-20 mg over 10 minutes to promote intracellular potassium shift.\n     - **Remove potassium from the body:**\n       - Administer oral sodium polystyrene sulfonate (SPS) 15-30 g or IV furosemide 40-80 mg to promote renal potassium excretion (if urine output is adequate).\n       - Consider hemodialysis if hyperkalemia is severe or refractory.\n   - **Fluid overload (pulmonary edema):**\n     - **Diuretics:** Administer IV furosemide 40-80 mg bolus, followed by continuous infusion if needed.\n     - **Oxygen therapy:** Administer high-flow oxygen to maintain SpO2 >94%.\n     - **Vasodilators:** Consider IV nitroglycerin or nitroprusside if hypertensive to reduce preload/afterload.\n     - **Monitoring:** Continuous cardiac monitoring, frequent reassessment of fluid status (weight, urine output, electrolytes), and fluid balance.\n\n2. Adjustments to antihypertensive therapy:\n   - **Discontinue metformin:** Metformin is contraindicated in CKD stage 4 due to the risk of lactic acidosis.\n   - **Optimize blood pressure control:**\n     - **ACE inhibitors/ARBs:** These are renoprotective but require careful monitoring of renal function and potassium levels. Continue if tolerated, but reduce dose if eGFR declines further.\n     - **Calcium channel blockers:** Amlodipine is safe in CKD but may require dose adjustment if renal function worsens.\n     - **Beta-blockers:** Consider adding a cardioselective beta-blocker (e.g., bisoprolol) if hypertension is uncontrolled or the patient has heart failure.\n     - **Diuretics:** Loop diuretics (e.g., furosemide) are preferred for volume control in CKD stage 4.\n   - **Avoid nephrotoxic drugs:** Discontinue or avoid NSAIDs, aminoglycosides, and other nephrotoxic agents.\n\n3. Long-term strategies for managing CKD:\n   - **Blood pressure control:** Target BP <130/80 mmHg using ACEi/ARB as first-line agents (monitor renal function and potassium).\n   - **Glycemic control:** Target HbA1c ~7% in diabetics, using agents safe in CKD (e.g., insulin, DPP-4 inhibitors like linagliptin).\n   - **Mineral and bone disorder (MBD) management:**\n     - **Phosphate binders:** Start if serum phosphate >4.5 mg/dL (e.g., sevelamer, calcium acetate).\n     - **Vitamin D analogs:** Use if 25-hydroxyvitamin D is low or parathyroid hormone (PTH) is elevated (e.g., calcitriol).\n     - **Calcimimetics:** Consider cinacalcet if PTH remains elevated despite phosphate control.\n   - **Anemia management:**\n     - **Erythropoiesis-stimulating agents (ESAs):** Use if Hb <10 g/dL (e.g., darbepoetin alfa).\n     - **Iron supplementation:** Ensure adequate iron stores (IV iron if oral ineffective).\n   - **Dietary modifications:**\n     - **Protein restriction:** 0.8 g/kg/day to reduce nitrogenous waste.\n     - **Sodium restriction:** <2 g/day to control blood pressure and fluid overload.\n     - **Potassium restriction:** If hyperkalemia is persistent.\n     - **Phosphate restriction:** Limit high-phosphate foods (e.g., dairy, nuts).\n   - **Monitoring:**\n     - **Renal function:** Serum creatinine, eGFR, and cystatin C every 3-6 months.\n     - **Electrolytes:** Sodium, potassium, bicarbonate, calcium, phosphate, and magnesium every 1-3 months.\n     - **Cardiovascular risk:** Lipid profile, HbA1c, and blood pressure every 3-6 months.\n     - **Bone health:** Bone mineral density (DEXA scan) if high risk of osteoporosis.\n   - **Patient education:**\n     - **Medication adherence:** Emphasize the importance of taking medications as prescribed.\n     - **Symptom recognition:** Teach the patient to recognize signs of fluid overload, hyperkalemia, and uremia.\n     - **Lifestyle modifications:** Encourage smoking cessation, regular exercise, and a balanced diet.\n   - **Advanced care planning:** Discuss options for renal replacement therapy (e.g., hemodialysis, peritoneal dialysis) and kidney transplantation if appropriate.": ""
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

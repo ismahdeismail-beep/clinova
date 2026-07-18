@@ -1,0 +1,1262 @@
+{
+  "exam-endo-onc-rheum": {
+    "1": {
+      "title": "Clinical Pharmacy — Endocrinology, Joint & Oncology",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 60,
+          "questions": [
+            {
+              "stem": "A 68-year-old woman with newly diagnosed primary hypothyroidism has a history of chronic kidney disease (eGFR 45 mL/min/1.73m²) and type 2 diabetes mellitus. Her current medications include metformin 1000 mg twice daily, lisinopril 10 mg daily, and atorvastatin 20 mg at bedtime. Which of the following is the most appropriate initial levothyroxine starting dose for this patient?",
+              "options": [
+                "25 mcg daily",
+                "50 mcg daily",
+                "75 mcg daily",
+                "100 mcg daily"
+              ],
+              "answer": "25 mcg daily",
+              "explanation": "In elderly patients with comorbidities such as CKD, a lower starting dose of levothyroxine (25 mcg daily) is recommended to avoid cardiac complications and excessive thyroid hormone levels."
+            },
+            {
+              "stem": "A patient with hypothyroidism is started on levothyroxine 50 mcg daily. Which of the following medications should be separated from levothyroxine by at least 4 hours to avoid impaired absorption?",
+              "options": [
+                "Amlodipine",
+                "Ferrous sulfate",
+                "Omeprazole",
+                "Simvastatin"
+              ],
+              "answer": "Ferrous sulfate",
+              "explanation": "Ferrous sulfate can bind levothyroxine in the gastrointestinal tract, reducing its absorption. Separating administration by several hours minimizes this interaction."
+            },
+            {
+              "stem": "A 55-year-old male with type 2 diabetes mellitus and hypertension is prescribed cisplatin for metastatic bladder cancer. Which of the following is a dose-limiting adverse effect of cisplatin that requires proactive monitoring?",
+              "options": [
+                "Nephrotoxicity",
+                "Ototoxicity",
+                "Cardiotoxicity",
+                "Pulmonary fibrosis"
+              ],
+              "answer": "Ototoxicity",
+              "explanation": "Cisplatin is associated with significant ototoxicity, which can be irreversible. Audiometry monitoring is recommended before and during treatment to detect early changes."
+            },
+            {
+              "stem": "A 42-year-old female with type 1 diabetes mellitus is using a basal-bolus insulin regimen (glargine once daily and lispro before meals). Her fasting glucose is 6.8 mmol/L, but her post-prandial glucose at 2 hours after dinner is consistently 14.2 mmol/L. Which adjustment is most appropriate?",
+              "options": [
+                "Increase the evening glargine dose",
+                "Increase the pre-dinner lispro dose",
+                "Decrease the morning glargine dose",
+                "Switch to a premixed insulin regimen"
+              ],
+              "answer": "Increase the pre-dinner lispro dose",
+              "explanation": "Elevated post-prandial glucose suggests the need to increase the rapid-acting insulin dose at the meal preceding the high glucose reading."
+            },
+            {
+              "stem": "Which of the following is NOT a recognized risk factor for type 2 diabetes mellitus?",
+              "options": [
+                "First-degree relative with diabetes",
+                "Physical inactivity",
+                "Hypertension (BP ≥ 140/90 mmHg)",
+                "Body mass index (BMI) < 25 kg/m²"
+              ],
+              "answer": "Body mass index (BMI) < 25 kg/m²",
+              "explanation": "Obesity (BMI ≥ 25 kg/m²) is a major risk factor for type 2 diabetes. A BMI < 25 kg/m² is not associated with increased risk."
+            },
+            {
+              "stem": "A 70-year-old woman presents with epigastric pain and heartburn. Her medications include levothyroxine 75 mcg daily, metformin 500 mg twice daily, and ibuprofen 400 mg three times daily for osteoarthritis. Which drug therapy problem is most likely contributing to her symptoms?",
+              "options": [
+                "Metformin-induced lactic acidosis",
+                "Ibuprofen-induced gastrointestinal bleeding",
+                "Levothyroxine malabsorption",
+                "Metformin-associated hypoglycemia"
+              ],
+              "answer": "Ibuprofen-induced gastrointestinal bleeding",
+              "explanation": "Chronic NSAID use without gastroprotection increases the risk of GI bleeding and peptic ulcer disease, particularly in elderly patients."
+            },
+            {
+              "stem": "A 60-year-old male with type 2 diabetes mellitus presents to the pharmacy with a blood glucose reading of 2.9 mmol/L and confusion. His wife asks for advice. What is the most appropriate immediate action?",
+              "options": [
+                "Administer 15–20 grams of oral glucose and retest in 15 minutes",
+                "Give a carbohydrate-rich meal and retest in 1 hour",
+                "Administer 1 unit of glucagon subcutaneously",
+                "Call emergency services immediately"
+              ],
+              "answer": "Administer 15–20 grams of oral glucose and retest in 15 minutes",
+              "explanation": "For conscious patients with hypoglycemia, oral glucose (15–20 grams) is the first-line treatment, followed by retesting in 15 minutes."
+            },
+            {
+              "stem": "A 65-year-old male with chronic kidney disease (eGFR 30 mL/min/1.73m²) and gout is prescribed naproxen 500 mg twice daily for an acute gout attack. Which of the following is a contraindication to naproxen in this patient?",
+              "options": [
+                "Concurrent use of allopurinol",
+                "History of peptic ulcer disease",
+                "Chronic kidney disease",
+                "Age > 60 years"
+              ],
+              "answer": "Chronic kidney disease",
+              "explanation": "NSAIDs, including naproxen, are contraindicated in patients with significant renal impairment due to the risk of further decline in kidney function."
+            },
+            {
+              "stem": "Following resolution of an acute gout attack, a patient is started on allopurinol for long-term urate-lowering therapy. Which of the following counseling points should be emphasized?",
+              "options": [
+                "Take allopurinol on an empty stomach to enhance absorption",
+                "Increase fluid intake to at least 2 liters daily",
+                "Limit exposure to sunlight due to photosensitivity",
+                "Discontinue if a rash develops"
+              ],
+              "answer": "Increase fluid intake to at least 2 liters daily",
+              "explanation": "Adequate hydration helps prevent uric acid crystallization in the urinary tract and reduces the risk of kidney stones."
+            },
+            {
+              "stem": "A community pharmacist is designing a diabetes education program for newly diagnosed patients. Which of the following topics is LEAST relevant for this group?",
+              "options": [
+                "Strategies to minimize cardiac risk factors",
+                "Technique for mixing insulins",
+                "Appropriate dietary recommendations",
+                "Surgical management of diabetes"
+              ],
+              "answer": "Surgical management of diabetes",
+              "explanation": "Surgical interventions (e.g., bariatric surgery) are not typically part of initial diabetes education for newly diagnosed patients."
+            },
+            {
+              "stem": "Which of the following scenarios is an appropriate reason to temporarily withhold metformin?",
+              "options": [
+                "Receipt of oral contrast for a CT scan",
+                "Mild upper respiratory tract infection",
+                "New diagnosis of stage I hypertension",
+                "Post-prandial glucose > 10 mmol/L"
+              ],
+              "answer": "Receipt of oral contrast for a CT scan",
+              "explanation": "Metformin should be withheld before and for 48 hours after iodinated contrast procedures due to the risk of lactic acidosis."
+            },
+            {
+              "stem": "A 55-year-old male with hypertension and gout asks about the use of thiazide diuretics. Which of the following conditions is a contraindication to thiazide diuretics as first-line therapy?",
+              "options": [
+                "Hyperlipidemia",
+                "Heart failure with reduced ejection fraction",
+                "Chronic obstructive pulmonary disease",
+                "Gout"
+              ],
+              "answer": "Gout",
+              "explanation": "Thiazide diuretics can increase uric acid levels and precipitate gout attacks, making them unsuitable as first-line therapy in patients with gout."
+            },
+            {
+              "stem": "Patients taking sulfonylureas should be counseled about which of the following risks?",
+              "options": [
+                "Weight loss and nausea",
+                "Hypoglycemia and its recognition",
+                "Photosensitivity reactions",
+                "Hyperkalemia"
+              ],
+              "answer": "Hypoglycemia and its recognition",
+              "explanation": "Sulfonylureas stimulate insulin secretion and carry a significant risk of hypoglycemia, which patients must be educated to recognize and manage."
+            },
+            {
+              "stem": "Amiodarone is associated with which endocrine adverse effect?",
+              "options": [
+                "Hyperthyroidism",
+                "Hypothyroidism",
+                "Diabetes insipidus",
+                "Cushing's syndrome"
+              ],
+              "answer": "Hypothyroidism",
+              "explanation": "Amiodarone can cause hypothyroidism due to its high iodine content and direct toxic effects on the thyroid gland."
+            },
+            {
+              "stem": "A 50-year-old woman with type 2 diabetes mellitus has an HbA1c of 9.5%, AST of 250 IU/L, and serum creatinine of 2.2 mg/dL. Which antidiabetic agent is contraindicated in this patient?",
+              "options": [
+                "Insulin",
+                "Metformin",
+                "Pioglitazone",
+                "Empagliflozin"
+              ],
+              "answer": "Metformin",
+              "explanation": "Metformin is contraindicated in patients with significant renal impairment (eGFR < 30 mL/min/1.73m²) due to the risk of lactic acidosis."
+            },
+            {
+              "stem": "A 28-year-old woman presents with palpitations, weight loss, heat intolerance, and a fine tremor. Thyroid function tests confirm hyperthyroidism. Which of the following is the most appropriate initial treatment?",
+              "options": [
+                "Propranolol 20 mg four times daily",
+                "Propylthiouracil 300 mg three times daily",
+                "Radioactive iodine (131I) 100 mCi",
+                "Potassium iodide (SSKI) 10 drops three times daily"
+              ],
+              "answer": "Propranolol 20 mg four times daily",
+              "explanation": "Beta-blockers (e.g., propranolol) are used initially to control adrenergic symptoms while awaiting definitive therapy."
+            },
+            {
+              "stem": "A 26-year-old pregnant woman is diagnosed with Graves' disease. Which of the following is the preferred antithyroid drug for this patient?",
+              "options": [
+                "Methimazole",
+                "Propylthiouracil",
+                "Radioactive iodine",
+                "Levothyroxine"
+              ],
+              "answer": "Propylthiouracil",
+              "explanation": "Propylthiouracil is preferred in the first trimester of pregnancy due to a lower risk of teratogenicity compared to methimazole."
+            },
+            {
+              "stem": "Iodides (e.g., Lugol's solution) are used preoperatively in hyperthyroid patients to:",
+              "options": [
+                "Inhibit thyroid hormone synthesis",
+                "Decrease thyroid gland vascularity",
+                "Block peripheral conversion of T4 to T3",
+                "Ameliorate thyrotoxic symptoms"
+              ],
+              "answer": "Decrease thyroid gland vascularity",
+              "explanation": "Iodides reduce thyroid gland vascularity, making surgery safer by minimizing bleeding risk."
+            },
+            {
+              "stem": "A 58-year-old male presents with polyuria, polydipsia, and polyphagia but no urinary urgency or dysuria. His symptoms have been present for 2 months. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Urinary tract infection",
+                "Benign prostatic hyperplasia",
+                "Type 2 diabetes mellitus",
+                "Renal complications of hypertension"
+              ],
+              "answer": "Type 2 diabetes mellitus",
+              "explanation": "Polyuria, polydipsia, and polyphagia are classic symptoms of uncontrolled diabetes mellitus."
+            },
+            {
+              "stem": "Which of the following cytotoxic agents requires preparation in a biological safety cabinet due to its vesicant properties and high risk of severe tissue damage?",
+              "options": [
+                "Doxorubicin",
+                "Cisplatin",
+                "Paclitaxel",
+                "5-fluorouracil"
+              ],
+              "answer": "Doxorubicin",
+              "explanation": "Doxorubicin is a vesicant and requires preparation in a biological safety cabinet to prevent exposure and severe tissue damage."
+            },
+            {
+              "stem": "A 75-year-old patient with hypothyroidism has been on levothyroxine 75 mcg daily for 6 weeks. Which parameter is most appropriate for assessing the effectiveness of therapy?",
+              "options": [
+                "Weight loss",
+                "Improved vision",
+                "Increased energy levels",
+                "Reduced frequency of angina"
+              ],
+              "answer": "Increased energy levels",
+              "explanation": "Clinical improvement in symptoms such as fatigue and energy levels is a key indicator of effective levothyroxine therapy."
+            },
+            {
+              "stem": "A 45-year-old woman with rheumatoid arthritis is started on methotrexate 7.5 mg once weekly. Which of the following should be monitored regularly to assess for toxicity?",
+              "options": [
+                "Serum creatinine",
+                "Liver function tests",
+                "Electrocardiogram",
+                "Pulmonary function tests"
+              ],
+              "answer": "Liver function tests",
+              "explanation": "Methotrexate can cause hepatotoxicity, so liver function tests (e.g., AST, ALT) should be monitored regularly."
+            },
+            {
+              "stem": "A patient receiving high-dose methotrexate for osteosarcoma is given leucovorin rescue. What is the purpose of leucovorin?",
+              "options": [
+                "Enhance methotrexate efficacy",
+                "Reduce methotrexate toxicity to normal cells",
+                "Prevent methotrexate-induced nephrotoxicity",
+                "Accelerate methotrexate clearance"
+              ],
+              "answer": "Reduce methotrexate toxicity to normal cells",
+              "explanation": "Leucovorin is a folinic acid derivative that rescues normal cells from methotrexate toxicity by bypassing the dihydrofolate reductase inhibition."
+            },
+            {
+              "stem": "A 50-year-old male with Hodgkin lymphoma develops cardiomyopathy after receiving a cumulative dose of an anticancer drug. Which drug is most likely responsible?",
+              "options": [
+                "Bleomycin",
+                "Cisplatin",
+                "Doxorubicin",
+                "Vincristine"
+              ],
+              "answer": "Doxorubicin",
+              "explanation": "Doxorubicin is associated with dose-dependent cardiotoxicity, which can lead to cardiomyopathy and heart failure."
+            },
+            {
+              "stem": "A patient receiving combination chemotherapy with doxorubicin, cyclophosphamide, and fluorouracil is given filgrastim starting 24 hours after chemotherapy. What is the primary purpose of filgrastim?",
+              "options": [
+                "Control chemotherapy-induced nausea",
+                "Reduce the risk of neutropenia and infections",
+                "Prevent doxorubicin-induced cardiotoxicity",
+                "Enhance the anticancer effects of chemotherapy"
+              ],
+              "answer": "Reduce the risk of neutropenia and infections",
+              "explanation": "Filgrastim is a granulocyte colony-stimulating factor (G-CSF) used to shorten the duration of chemotherapy-induced neutropenia."
+            },
+            {
+              "stem": "Allopurinol is administered prophylactically before chemotherapy to prevent which complication?",
+              "options": [
+                "Chemotherapy-induced nausea",
+                "Tumor lysis syndrome",
+                "Myelosuppression",
+                "Hyperuricemia"
+              ],
+              "answer": "Hyperuricemia",
+              "explanation": "Allopurinol inhibits xanthine oxidase, reducing uric acid production and preventing hyperuricemia associated with tumor lysis syndrome."
+            },
+            {
+              "stem": "Ondansetron is administered to prevent chemotherapy-induced nausea and vomiting. Which receptor does ondansetron primarily block?",
+              "options": [
+                "Dopamine D2 receptor",
+                "Serotonin 5-HT3 receptor",
+                "Histamine H1 receptor",
+                "Muscarinic acetylcholine receptor"
+              ],
+              "answer": "Serotonin 5-HT3 receptor",
+              "explanation": "Ondansetron is a selective 5-HT3 receptor antagonist used to prevent chemotherapy-induced nausea and vomiting."
+            },
+            {
+              "stem": "A 30-year-old woman with Graves' disease is treated with radioactive iodine (131I). Which of the following is a permanent effect of this treatment?",
+              "options": [
+                "Hypothyroidism",
+                "Hyperthyroidism",
+                "Thyroid storm",
+                "Thyroid nodules"
+              ],
+              "answer": "Hypothyroidism",
+              "explanation": "Radioactive iodine ablation of the thyroid gland often leads to permanent hypothyroidism, requiring lifelong levothyroxine replacement."
+            },
+            {
+              "stem": "The most reliable guide to adjusting levothyroxine dose in a patient with hypothyroidism is:",
+              "options": [
+                "Serum free T4 level",
+                "Serum TSH level",
+                "Body weight",
+                "Pulse rate"
+              ],
+              "answer": "Serum TSH level",
+              "explanation": "TSH is the most sensitive marker for assessing levothyroxine therapy adequacy, as it reflects thyroid hormone levels at the pituitary level."
+            },
+            {
+              "stem": "A major disadvantage of sulfonylureas in type 2 diabetes management is:",
+              "options": [
+                "Risk of hypoglycemia",
+                "Weight gain",
+                "High cost",
+                "Gastrointestinal intolerance"
+              ],
+              "answer": "Risk of hypoglycemia",
+              "explanation": "Sulfonylureas stimulate insulin secretion and can cause hypoglycemia, particularly in elderly or malnourished patients."
+            },
+            {
+              "stem": "In type 2 diabetes management, which of the following is NOT a rational consideration for drug choice?",
+              "options": [
+                "Patient characteristics and preferences",
+                "Efficacy and durability of glucose-lowering effect",
+                "Potential for cardiovascular and renal benefits",
+                "Color of the pill"
+              ],
+              "answer": "Color of the pill",
+              "explanation": "The color of a medication is not a clinically relevant factor in drug selection for diabetes management."
+            },
+            {
+              "stem": "Which of the following is a risk factor for type 2 diabetes mellitus?",
+              "options": [
+                "Family history of diabetes",
+                "High intake of dietary fat",
+                "Being overweight",
+                "All of the options listed"
+              ],
+              "answer": "All of the options listed",
+              "explanation": "Family history, overweight/obesity, and high dietary fat intake are all recognized risk factors for type 2 diabetes."
+            },
+            {
+              "stem": "Which statement best describes the differences between type 1 and type 2 diabetes?",
+              "options": [
+                "Type 1 diabetes is milder and requires lower insulin doses",
+                "Type 2 diabetes is associated with autoimmune destruction of beta cells",
+                "Type 1 diabetes is associated with autoimmune factors",
+                "Type 2 diabetes can be managed with oral hypoglycemic agents alone"
+              ],
+              "answer": "Type 1 diabetes is associated with autoimmune factors",
+              "explanation": "Type 1 diabetes is characterized by autoimmune destruction of pancreatic beta cells, whereas type 2 diabetes is primarily due to insulin resistance."
+            },
+            {
+              "stem": "According to diabetes prevention trials, which intervention reduces the risk of developing type 2 diabetes in high-risk individuals?",
+              "options": [
+                "Very low carbohydrate diet",
+                "Daily vigorous exercise",
+                "Weight loss of 5–7% of body weight with a hypocaloric low-fat diet and 30 minutes of daily activity",
+                "Metformin 850 mg twice daily"
+              ],
+              "answer": "Weight loss of 5–7% of body weight with a hypocaloric low-fat diet and 30 minutes of daily activity",
+              "explanation": "Lifestyle modifications, including weight loss and increased physical activity, have been shown to reduce the risk of type 2 diabetes in high-risk individuals."
+            },
+            {
+              "stem": "Which of the following is a diagnostic criterion for diabetes?",
+              "options": [
+                "Random blood glucose > 180 mg/dL (10 mmol/L) with symptoms",
+                "Fasting blood glucose > 126 mg/dL (7.0 mmol/L) on two separate occasions",
+                "2-hour plasma glucose > 200 mg/dL (11.1 mmol/L) during an OGTT",
+                "All of the options listed"
+              ],
+              "answer": "All of the options listed",
+              "explanation": "Any of these criteria can be used to diagnose diabetes if confirmed on a separate day."
+            },
+            {
+              "stem": "All of the following are clinical features of diabetic ketoacidosis EXCEPT:",
+              "options": [
+                "Abdominal pain and vomiting",
+                "Tachypnea and tachycardia",
+                "Cheyne-Stokes respiration",
+                "Kussmaul breathing"
+              ],
+              "answer": "Cheyne-Stokes respiration",
+              "explanation": "Cheyne-Stokes respiration is not typical of diabetic ketoacidosis; Kussmaul breathing (deep, rapid respirations) is characteristic."
+            },
+            {
+              "stem": "What is the first step in the management of diabetic ketoacidosis?",
+              "options": [
+                "Administer intravenous insulin",
+                "Administer intravenous fluids",
+                "Administer bicarbonate",
+                "Administer potassium"
+              ],
+              "answer": "Administer intravenous fluids",
+              "explanation": "Fluid resuscitation is the first priority in DKA to restore intravascular volume and improve tissue perfusion."
+            },
+            {
+              "stem": "Which of the following is an example of autonomic neuropathy in diabetes?",
+              "options": [
+                "Gastroparesis and silent myocardial infarction",
+                "Foot ulcers and skin infections",
+                "Excessive perspiration on lower extremities",
+                "Decreased taste and smell sensation"
+              ],
+              "answer": "Gastroparesis and silent myocardial infarction",
+              "explanation": "Autonomic neuropathy can affect gastrointestinal motility (gastroparesis) and cardiac autonomic function (silent MI)."
+            },
+            {
+              "stem": "A 77-year-old diabetic patient on IV insulin (7 IU/h) and 0.9% saline develops a plasma glucose of 3.2 mmol/L. The insulin infusion is continued, and 5% dextrose is started at 250 mL/h. What is the next appropriate step?",
+              "options": [
+                "Decrease insulin infusion to 4 IU/h",
+                "Stop insulin infusion and start subcutaneous insulin",
+                "Continue insulin infusion at 7 IU/h",
+                "Increase insulin infusion to 10 IU/h"
+              ],
+              "answer": "Continue insulin infusion at 7 IU/h",
+              "explanation": "Insulin infusion should be continued to maintain glucose control, with dextrose added to prevent hypoglycemia."
+            },
+            {
+              "stem": "Which statement about hyperosmolar hyperglycemic state (HHS) is true?",
+              "options": [
+                "Mortality rate is approximately 1%",
+                "Precipitating events include myocardial infarction",
+                "Patients usually have normal renal function",
+                "Hyperglycemia is due to excessive oral carbohydrate intake"
+              ],
+              "answer": "Precipitating events include myocardial infarction",
+              "explanation": "Myocardial infarction, infection, and other acute illnesses are common precipitating factors for HHS."
+            },
+            {
+              "stem": "Which statement about HHS is false?",
+              "options": [
+                "Altered mental status is the most common reason for hospital presentation",
+                "In a comatose patient with effective serum osmolality < 320 mOsm/kg, another cause of impaired mental state should be sought",
+                "Patients with HHS usually have an increased anion gap metabolic acidosis",
+                "Insulin therapy lowers potassium and may cause severe hypokalemia"
+              ],
+              "answer": "Patients with HHS usually have an increased anion gap metabolic acidosis",
+              "explanation": "HHS is characterized by hyperosmolarity and hyperglycemia without significant ketoacidosis (normal anion gap)."
+            },
+            {
+              "stem": "All of the following are predisposing factors for hypoglycemia in insulin-treated patients EXCEPT:",
+              "options": [
+                "Renal failure",
+                "Older age",
+                "Alcohol ingestion",
+                "Concomitant use of chlorthalidone"
+              ],
+              "answer": "Older age",
+              "explanation": "Older age is not a direct predisposing factor for hypoglycemia; renal failure, alcohol, and certain medications (e.g., chlorthalidone) are."
+            },
+            {
+              "stem": "Which statement about metformin is correct?",
+              "options": [
+                "Metformin is contraindicated in all patients with serum creatinine > 1.4 mg/dL (123.8 µmol/L)",
+                "Metformin can be used safely in patients hospitalized for heart failure",
+                "Metformin is contraindicated in patients with GFR < 30 mL/min/1.73m²",
+                "Metformin is contraindicated in patients with chronic stable angina"
+              ],
+              "answer": "Metformin is contraindicated in patients with GFR < 30 mL/min/1.73m²",
+              "explanation": "Metformin is contraindicated in severe renal impairment (eGFR < 30 mL/min/1.73m²) due to the risk of lactic acidosis."
+            },
+            {
+              "stem": "Which statement about cerebral edema in DKA is correct?",
+              "options": [
+                "Cerebral edema never occurs before fluid administration",
+                "Treatment includes discontinuation of insulin",
+                "Cerebral edema is more frequent in younger patients with new-onset type 1 diabetes",
+                "Patients present with tachycardia"
+              ],
+              "answer": "Cerebral edema is more frequent in younger patients with new-onset type 1 diabetes",
+              "explanation": "Cerebral edema is a rare but serious complication of DKA, more common in children and adolescents with new-onset type 1 diabetes."
+            },
+            {
+              "stem": "A 52-year-old woman presents with acute gout affecting the first metatarsophalangeal joint. Colchicine is prescribed for pain relief. Which adverse effect is most likely with high-dose colchicine?",
+              "options": [
+                "Behavioral changes including psychosis",
+                "Severe diarrhea",
+                "Hypertension",
+                "Rash"
+              ],
+              "answer": "Severe diarrhea",
+              "explanation": "High-dose colchicine commonly causes gastrointestinal adverse effects, including severe diarrhea and nausea."
+            },
+            {
+              "stem": "Which of the following is an appropriate initial methotrexate dose for rheumatoid arthritis?",
+              "options": [
+                "50 mg orally daily",
+                "50 mg orally once weekly",
+                "7.5 mg orally daily",
+                "7.5 mg orally once weekly"
+              ],
+              "answer": "7.5 mg orally once weekly",
+              "explanation": "Methotrexate for rheumatoid arthritis is typically initiated at 7.5 mg once weekly, with gradual dose escalation as tolerated."
+            },
+            {
+              "stem": "Hydroxychloroquine toxicity monitoring should include assessment for:",
+              "options": [
+                "Increased frequency of urination",
+                "Visual changes",
+                "Dry mouth",
+                "Drowsiness"
+              ],
+              "answer": "Visual changes",
+              "explanation": "Hydroxychloroquine can cause retinal toxicity; regular ophthalmologic monitoring is essential to detect early changes."
+            },
+            {
+              "stem": "Which virus does NOT cause cancer as a result of chronic infection?",
+              "options": [
+                "Herpes simplex virus (HSV)",
+                "Human papillomavirus (HPV)",
+                "Hepatitis B virus (HBV)",
+                "Epstein-Barr virus (EBV)"
+              ],
+              "answer": "Herpes simplex virus (HSV)",
+              "explanation": "HSV is not associated with chronic infection leading to cancer, unlike HPV, HBV, and EBV."
+            },
+            {
+              "stem": "Which patient is at highest risk for cervical cancer?",
+              "options": [
+                "A 21-year-old with first sexual partner at age 14 and 10+ sexual partners",
+                "A 32-year-old in a monogamous relationship who declined the HPV vaccine",
+                "A 60-year-old with a history of syphilis and cigarette smoking",
+                "None of the patients are at risk"
+              ],
+              "answer": "A 21-year-old with first sexual partner at age 14 and 10+ sexual partners",
+              "explanation": "Multiple sexual partners and early sexual debut increase the risk of HPV infection, the primary cause of cervical cancer."
+            },
+            {
+              "stem": "Which of the following is a hormonal agent used in breast cancer chemotherapy?",
+              "options": [
+                "Tamoxifen citrate",
+                "Ifosfamide",
+                "Carmustine",
+                "Methotrexate"
+              ],
+              "answer": "Tamoxifen citrate",
+              "explanation": "Tamoxifen is a selective estrogen receptor modulator used in the treatment and prevention of hormone receptor-positive breast cancer."
+            },
+            {
+              "stem": "The wasting syndrome associated with cancer is termed:",
+              "options": [
+                "Achalasia",
+                "Cachexia",
+                "Atelexis",
+                "Cacoguesia"
+              ],
+              "answer": "Cachexia",
+              "explanation": "Cachexia is a multifactorial syndrome characterized by severe body weight, muscle, and fat loss, often seen in advanced cancer."
+            },
+            {
+              "stem": "Chronic myelogenous leukemia (CML) is characterized by a chromosomal abnormality that is a target for targeted therapy. Which drug is the treatment of choice?",
+              "options": [
+                "Bleomycin",
+                "Imatinib",
+                "Mechlorethamine",
+                "Tamoxifen"
+              ],
+              "answer": "Imatinib",
+              "explanation": "Imatinib is a tyrosine kinase inhibitor that targets the BCR-ABL fusion protein in CML, making it the treatment of choice."
+            },
+            {
+              "stem": "Intrathecal methotrexate is administered to children with acute lymphoblastic leukemia (ALL) for:",
+              "options": [
+                "CNS prophylaxis",
+                "Increase systemic drug levels",
+                "Reduce toxicity",
+                "Enhance compliance"
+              ],
+              "answer": "CNS prophylaxis",
+              "explanation": "Intrathecal methotrexate is used to prevent or treat CNS leukemia, as systemic chemotherapy does not adequately penetrate the blood-brain barrier."
+            },
+            {
+              "stem": "A patient receiving ABVD chemotherapy for Hodgkin lymphoma presents with shortness of breath and a dry cough. Chest X-ray shows pulmonary infiltrates. Which drug in the regimen is most likely responsible?",
+              "options": [
+                "Bleomycin",
+                "Dacarbazine",
+                "Doxorubicin",
+                "Vinblastine"
+              ],
+              "answer": "Bleomycin",
+              "explanation": "Bleomycin is associated with pulmonary toxicity, including pneumonitis and pulmonary fibrosis, which can present with cough and dyspnea."
+            },
+            {
+              "stem": "A 43-year-old man treated for Hodgkin lymphoma with MOPP followed by ABVD develops cardiomyopathy and congestive heart failure 4 years later. Which drug is most likely responsible?",
+              "options": [
+                "Adriamycin (doxorubicin)",
+                "Bleomycin",
+                "Dacarbazine",
+                "Mechlorethamine"
+              ],
+              "answer": "Adriamycin (doxorubicin)",
+              "explanation": "Doxorubicin is a anthracycline with dose-dependent cardiotoxicity, which can manifest years after treatment."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "A 72-year-old woman with type 2 diabetes mellitus (HbA1c 10.2%) is reluctant to start insulin despite maximal oral therapy. Identify two treatment goals for this patient.",
+              "modelAnswer": "1. Achieve glycemic control (target HbA1c < 7% or individualized based on patient factors).\n2. Prevent or delay microvascular and macrovascular complications (e.g., retinopathy, nephropathy, cardiovascular disease)."
+            },
+            {
+              "stem": "Explain how you would escalate treatment in this patient as per the AACE treatment algorithm.",
+              "modelAnswer": "1. Assess patient’s willingness and barriers to insulin therapy.\n2. Consider initiating basal insulin (e.g., glargine or detemir) with or without oral agents, starting at a low dose (e.g., 10 units or 0.1–0.2 units/kg/day) and titrating based on fasting glucose levels.\n3. If basal insulin is insufficient, consider adding rapid-acting insulin before meals or switching to a premixed insulin regimen.\n4. Provide education on insulin administration, monitoring, and hypoglycemia recognition."
+            },
+            {
+              "stem": "Elaborate on three patient counseling points regarding the new medication this patient requires.",
+              "modelAnswer": "1. Insulin administration technique: Demonstrate proper injection site rotation, needle disposal, and pen device use.\n2. Hypoglycemia recognition and management: Teach symptoms (e.g., sweating, shakiness) and actions (e.g., 15–20 grams of oral glucose, retest in 15 minutes).\n3. Importance of adherence and follow-up: Emphasize regular glucose monitoring, scheduled follow-up visits, and lifestyle modifications (diet, exercise)."
+            },
+            {
+              "stem": "J.K is a 68-year-old farmer with primary hyperthyroidism, congestive heart failure, and current medications of furosemide 40 mg daily and lisinopril 10 mg daily. (a) Elaborate on three causes of primary hyperthyroidism.",
+              "modelAnswer": "1. Graves’ disease: Autoimmune disorder causing diffuse goiter and hyperthyroidism.\n2. Toxic multinodular goiter: Autonomous thyroid nodules producing excess thyroid hormone.\n3. Toxic adenoma: Single autonomous thyroid nodule causing hyperthyroidism."
+            },
+            {
+              "stem": "Describe two parameters that should be monitored while treating J.K’s hyperthyroidism.",
+              "modelAnswer": "1. Thyroid function tests (TSH, free T4): Monitor every 4–6 weeks initially to assess response to therapy and adjust antithyroid drug doses.\n2. Cardiac function: Monitor for worsening heart failure, arrhythmias (e.g., atrial fibrillation), and tachycardia due to hyperthyroidism."
+            },
+            {
+              "stem": "T.M is a 53-year-old lady with 9 weeks of joint pain and stiffness. As the pharmacist developing her pharmaceutical care plan: List four questions you would ask about her joint pain and stiffness.",
+              "modelAnswer": "1. Location and symmetry of joint involvement (e.g., small vs. large joints, symmetric vs. asymmetric).\n2. Duration and pattern of stiffness (e.g., morning stiffness > 1 hour suggests inflammatory arthritis).\n3. Presence of systemic symptoms (e.g., fever, fatigue, weight loss).\n4. History of trauma, recent infections, or family history of autoimmune diseases."
+            },
+            {
+              "stem": "The attending medical officer requests several tests. A diagnosis of rheumatoid arthritis is made. Propose a pharmaceutical care plan for the management of T.M.",
+              "modelAnswer": "1. Pharmacologic therapy: Start methotrexate 7.5–15 mg once weekly with folic acid supplementation. Consider adding a short course of glucocorticoids (e.g., prednisone 5–10 mg daily) for symptom control.\n2. Monitoring: Baseline and regular liver function tests, CBC, and renal function. Monitor for methotrexate toxicity (e.g., stomatitis, cytopenias).\n3. Patient education: Counsel on methotrexate administration, potential adverse effects, and the importance of adherence. Advise on contraception (methotrexate is teratogenic).\n4. Non-pharmacologic interventions: Recommend physical therapy, exercise, and joint protection strategies. Provide resources for support groups and occupational therapy."
+            },
+            {
+              "stem": "Identify one regimen used for the management of Hodgkin lymphoma.",
+              "modelAnswer": "ABVD regimen: Doxorubicin (Adriamycin) 25 mg/m², Bleomycin 10 units/m², Vinblastine 6 mg/m², Dacarbazine 375 mg/m², administered on days 1 and 15 of a 28-day cycle."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "A.M is a 24-year-old patient admitted to the HDU with polyuria, polydipsia, lower abdominal pain for 2 weeks, confusion, and vital signs showing BP 88/56 mmHg, PR 100 bpm, RR 25/min, and temperature 40°C. Laboratory results: RBS 24 mmol/L, K+ 4.5 mEq/L, Na+ 143 mEq/L, pH 7.1, anion gap 18, HCO3- 16 mEq/L. (i) Identify the most likely diagnosis. (ii) Suggest two reasons for your answer. (iii) Using the information provided, identify the most likely trigger for this condition. (iv) Describe the stepwise acute management for this patient.",
+              "modelAnswer": {
+                "Diagnosis": "Diabetic ketoacidosis (DKA) with possible hyperosmolar component.",
+                "Reasons": "1. Hyperglycemia (RBS 24 mmol/L) with metabolic acidosis (pH 7.1, anion gap 18) and reduced bicarbonate (HCO3- 16 mEq/L) consistent with ketoacidosis.\n2. Clinical presentation of polyuria, polydipsia, confusion, and hypotension is typical of DKA.",
+                "Trigger": "Most likely an acute infection (e.g., urinary tract infection, pneumonia) given the presence of fever (40°C) and lower abdominal pain.",
+                "Management": {
+                  "Step 1: Fluid resuscitation": "Administer 0.9% normal saline 1–1.5 L over the first hour to restore intravascular volume and improve tissue perfusion. Subsequent fluids based on hydration status and electrolytes (e.g., switch to 0.45% saline if sodium is high).",
+                  "Step 2: Insulin therapy": "Start regular insulin infusion at 0.1 units/kg/h (e.g., 7–10 units/h for a 70 kg patient) after confirming potassium > 3.3 mEq/L. Target glucose reduction of 3–5 mmol/L/h.",
+                  "Step 3: Potassium replacement": "If serum potassium is < 5.3 mEq/L and urine output is adequate, add potassium chloride to IV fluids (e.g., 20–40 mEq/L) to maintain potassium 4–5 mEq/L.",
+                  "Step 4: Monitor and correct acidosis": "Bicarbonate is rarely needed unless pH < 6.9 or severe hyperkalemia. Monitor pH and anion gap to assess resolution of acidosis.",
+                  "Step 5: Identify and treat precipitating factors": "Investigate and treat underlying causes (e.g., infection) with appropriate antibiotics if indicated.",
+                  "Step 6: Transition to subcutaneous insulin": "Once acidosis resolves (pH > 7.3, bicarbonate > 18 mEq/L, anion gap < 12), transition to basal-bolus insulin regimen and monitor for resolution of ketosis."
+                }
+              }
+            },
+            {
+              "stem": "Elucidate the treatment and prevention of the following toxicities associated with cancer chemotherapy: (i) Febrile neutropenia, (ii) Chemotherapy-induced nausea and vomiting (for highly emetogenic and moderately emetogenic regimens), (iii) Extravasation of paclitaxel, nitrogen mustard, and mitomycin.",
+              "modelAnswer": {
+                "Febrile neutropenia": {
+                  "Prevention": "1. Use of granulocyte colony-stimulating factors (G-CSFs) such as filgrastim or pegfilgrastim in patients at high risk (e.g., chemotherapy with >20% risk of febrile neutropenia).\n2. Antimicrobial prophylaxis (e.g., fluoroquinolones) in select high-risk patients.\n3. Dose reduction or delay of chemotherapy if appropriate.",
+                  "Treatment": "1. Empiric broad-spectrum antibiotics (e.g., piperacillin-tazobactam or carbapenem) within 1 hour of presentation.\n2. Monitor for sepsis and escalate care as needed (e.g., ICU admission for septic shock).\n3. Consider antifungal or antiviral prophylaxis if neutropenia persists >7 days."
+                },
+                "Chemotherapy-induced nausea and vomiting (CINV)": {
+                  "Highly emetogenic regimens (e.g., cisplatin)**: ": 1.4,
+                  "  1.4  0.05  0.05  0.05  0.05  0.05  0.05  0.05  0.05  0.05  0.05  0.05  0.05  0.05  ": "1. Serotonin 5-HT3 receptor antagonist (e.g., ondansetron 16–24 mg IV or palonosetron 0.25 mg IV) on day 1.\n2. Neurokinin-1 (NK1) receptor antagonist (e.g., aprepitant 125 mg PO on day 1, then 80 mg PO on days 2–3).\n3. Dexamethasone 12 mg IV on day 1, then 8 mg PO/IV on days 2–4.\n4. Consider olanzapine 5–10 mg PO on days 1–4 for additional antiemetic coverage.",
+                  "Moderately emetogenic regimens (e.g., carboplatin)**: ": 1.4,
+                  "  1.4  0.05  0.05  0.05  0.05  0.05  0.05  0.05  0.05  0.05  ": "1. Serotonin 5-HT3 receptor antagonist (e.g., ondansetron 8–16 mg IV or granisetron 1 mg IV) on day 1.\n2. Dexamethasone 8–12 mg IV on day 1.\n3. Consider NK1 receptor antagonist (e.g., aprepitant) for select regimens.\n4. Provide take-home antiemetics (e.g., metoclopramide, prochlorperazine) for breakthrough nausea."
+                },
+                "Extravasation management": {
+                  "Paclitaxel": "1. Stop infusion immediately and disconnect IV line (leave cannula in place).\n2. Aspirate residual drug from the IV line.\n3. Administer hyaluronidase 150–250 units subcutaneously around the extravasation site to enhance drug dispersion.\n4. Apply warm compresses and elevate the limb.\n5. Monitor for tissue necrosis and consider plastic surgery consultation if severe.",
+                  "Nitrogen mustard (e.g., mechlorethamine)**: ": 1.4,
+                  "  1.4  0.05  0.05  0.05  0.05  0.05  0.05  0.05  0.05  ": "1. Stop infusion immediately and disconnect IV line.\n2. Aspirate residual drug and administer sodium thiosulfate 1/6 M solution subcutaneously around the site to neutralize the drug.\n3. Apply cold compresses to reduce inflammation.\n4. Monitor for tissue necrosis and consider surgical debridement if severe.",
+                  "Mitomycin": "1. Stop infusion immediately and disconnect IV line.\n2. Aspirate residual drug and administer dimethyl sulfoxide (DMSO) 99% topically to the site to reduce tissue damage.\n3. Apply cold compresses.\n4. Monitor for delayed tissue necrosis and consider surgical intervention if severe."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Clinical Pharmacy — Endocrinology, Joint & Oncology",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 60,
+          "questions": [
+            {
+              "stem": "A 68-year-old male with newly diagnosed hypothyroidism (TSH 12 mU/L, free T4 8 pmol/L) is started on levothyroxine 50 mcg daily. Which of the following factors is the primary reason for initiating therapy at this low dose?",
+              "options": [
+                "a. Age-related decrease in drug clearance",
+                "b. Presence of coronary artery disease",
+                "c. Concurrent use of atorvastatin",
+                "d. History of chronic constipation"
+              ],
+              "answer": "b. Presence of coronary artery disease",
+              "explanation": "Levothyroxine initiation in elderly patients with coronary artery disease should begin at low doses (25–50 mcg) to avoid precipitating angina or arrhythmias due to increased myocardial oxygen demand."
+            },
+            {
+              "stem": "A patient with hypothyroidism is advised to take levothyroxine on an empty stomach 30–60 minutes before breakfast. Which of the following is the primary reason for this instruction?",
+              "options": [
+                "a. Enhance absorption by reducing gastric pH",
+                "b. Minimize interaction with dietary fiber",
+                "c. Prevent degradation by stomach acid",
+                "d. Avoid chelation with divalent cations"
+              ],
+              "answer": "d. Avoid chelation with divalent cations",
+              "explanation": "Levothyroxine absorption is impaired by food and divalent cations (e.g., calcium, iron). Taking it on an empty stomach maximizes bioavailability."
+            },
+            {
+              "stem": "A 55-year-old female with type 2 diabetes mellitus and chronic kidney disease (eGFR 45 mL/min/1.73m²) is admitted for a CT scan with contrast. Which of the following is the most appropriate action regarding her metformin therapy?",
+              "options": [
+                "a. Continue metformin as usual",
+                "b. Withhold metformin for 48 hours post-procedure",
+                "c. Switch to insulin temporarily",
+                "d. Reduce metformin dose by 50%"
+              ],
+              "answer": "b. Withhold metformin for 48 hours post-procedure",
+              "explanation": "Metformin should be withheld 48 hours before and after iodinated contrast administration due to the risk of lactic acidosis, especially in patients with renal impairment."
+            },
+            {
+              "stem": "A 42-year-old male with type 1 diabetes mellitus presents with recurrent hypoglycemia (glucose 3.2 mmol/L) despite reducing his basal insulin dose. Which of the following is the most likely cause?",
+              "options": [
+                "a. Increased physical activity",
+                "b. Concurrent use of metformin",
+                "c. Development of renal impairment",
+                "d. Poor absorption of insulin"
+              ],
+              "answer": "a. Increased physical activity",
+              "explanation": "Increased physical activity increases insulin sensitivity, leading to a higher risk of hypoglycemia in insulin-dependent patients."
+            },
+            {
+              "stem": "A 60-year-old female with a history of gout is prescribed allopurinol 100 mg daily. Which of the following counseling points is most critical to prevent acute gout flares during initiation?",
+              "options": [
+                "a. Take with food to reduce GI upset",
+                "b. Maintain high fluid intake",
+                "c. Use NSAIDs or colchicine for 1–2 weeks",
+                "d. Limit purine-rich foods indefinitely"
+              ],
+              "answer": "c. Use NSAIDs or colchicine for 1–2 weeks",
+              "explanation": "Allopurinol initiation can precipitate acute gout flares due to rapid urate mobilization; prophylactic NSAIDs or colchicine for 1–2 weeks is recommended."
+            },
+            {
+              "stem": "A 70-year-old male with hypertension, diabetes, and CKD (eGFR 30 mL/min/1.73m²) is prescribed ibuprofen 400 mg TID for osteoarthritis. Which of the following is the most significant risk associated with this regimen?",
+              "options": [
+                "a. Hyperkalemia",
+                "b. Acute kidney injury",
+                "c. Hypoglycemia",
+                "d. Bradycardia"
+              ],
+              "answer": "b. Acute kidney injury",
+              "explanation": "NSAIDs, especially in elderly patients with CKD, increase the risk of acute kidney injury due to prostaglandin inhibition and reduced renal perfusion."
+            },
+            {
+              "stem": "A 50-year-old female with metastatic breast cancer is receiving doxorubicin and cyclophosphamide. Which of the following is the most appropriate monitoring parameter to assess for doxorubicin-induced cardiotoxicity?",
+              "options": [
+                "a. Serum troponin levels",
+                "b. Left ventricular ejection fraction (LVEF)",
+                "c. Serum potassium",
+                "d. Electrocardiogram (ECG)"
+              ],
+              "answer": "b. Left ventricular ejection fraction (LVEF)",
+              "explanation": "Doxorubicin is associated with dose-dependent cardiotoxicity; LVEF monitoring (e.g., echocardiogram) is essential to detect early cardiac dysfunction."
+            },
+            {
+              "stem": "A 35-year-old male with Hodgkin lymphoma is receiving ABVD chemotherapy (doxorubicin, bleomycin, vinblastine, dacarbazine). Which of the following adverse effects is most specific to bleomycin?",
+              "options": [
+                "a. Myelosuppression",
+                "b. Pulmonary fibrosis",
+                "c. Nephrotoxicity",
+                "d. Peripheral neuropathy"
+              ],
+              "answer": "b. Pulmonary fibrosis",
+              "explanation": "Bleomycin is uniquely associated with pulmonary toxicity, including pulmonary fibrosis and interstitial pneumonitis, which requires baseline and serial pulmonary function tests."
+            },
+            {
+              "stem": "A 65-year-old female with rheumatoid arthritis is started on methotrexate 7.5 mg weekly. Which of the following is the most important baseline investigation before initiating therapy?",
+              "options": [
+                "a. Serum ferritin",
+                "b. Chest X-ray",
+                "c. Serum creatinine",
+                "d. Electrocardiogram"
+              ],
+              "answer": "b. Chest X-ray",
+              "explanation": "Methotrexate can cause pulmonary toxicity (e.g., pneumonitis); a baseline chest X-ray is recommended to rule out pre-existing lung disease."
+            },
+            {
+              "stem": "A 40-year-old male with type 2 diabetes mellitus has an HbA1c of 9.5% despite metformin and glibenclamide. The physician decides to add insulin glargine. Which of the following is the most appropriate starting dose?",
+              "options": [
+                "a. 0.1 units/kg/day",
+                "b. 0.2 units/kg/day",
+                "c. 10 units/day",
+                "d. 20 units/day"
+              ],
+              "answer": "a. 0.1 units/kg/day",
+              "explanation": "For patients transitioning to basal insulin, a conservative starting dose of 0.1–0.2 units/kg/day is recommended to minimize hypoglycemia risk."
+            },
+            {
+              "stem": "A 55-year-old female with hyperthyroidism is started on carbimazole 15 mg daily. Which of the following is the most serious adverse effect requiring immediate discontinuation?",
+              "options": [
+                "a. Mild rash",
+                "b. Agranulocytosis",
+                "c. Mild leukopenia",
+                "d. Headache"
+              ],
+              "answer": "b. Agranulocytosis",
+              "explanation": "Agranulocytosis is a rare but life-threatening adverse effect of thionamides (e.g., carbimazole, methimazole); immediate discontinuation and urgent hematology review are required."
+            },
+            {
+              "stem": "A 72-year-old male with prostate cancer is receiving goserelin (LHRH agonist) therapy. Which of the following is the most likely long-term adverse effect?",
+              "options": [
+                "a. Hypercalcemia",
+                "b. Osteoporosis",
+                "c. Hypoglycemia",
+                "d. Hypertension"
+              ],
+              "answer": "b. Osteoporosis",
+              "explanation": "LHRH agonists (e.g., goserelin) suppress testosterone, leading to decreased bone mineral density and increased risk of osteoporosis and fractures."
+            },
+            {
+              "stem": "A 45-year-old female with metastatic colorectal cancer is receiving FOLFOX (5-fluorouracil, leucovorin, oxaliplatin). Which of the following is the most appropriate premedication to prevent oxaliplatin-induced neuropathy?",
+              "options": [
+                "a. Dexamethasone",
+                "b. Calcium gluconate and magnesium sulfate",
+                "c. Ondansetron",
+                "d. Lorazepam"
+              ],
+              "answer": "b. Calcium gluconate and magnesium sulfate",
+              "explanation": "Oxaliplatin-induced neurotoxicity (e.g., cold-induced dysesthesia) can be mitigated by calcium and magnesium infusions before and after chemotherapy."
+            },
+            {
+              "stem": "A 60-year-old male with type 2 diabetes mellitus and CKD (eGFR 25 mL/min/1.73m²) is admitted with lactic acidosis. Which of the following antidiabetic agents is most likely responsible?",
+              "options": [
+                "a. Metformin",
+                "b. Glibenclamide",
+                "c. Pioglitazone",
+                "d. Insulin glargine"
+              ],
+              "answer": "a. Metformin",
+              "explanation": "Metformin is contraindicated in severe renal impairment (eGFR <30 mL/min/1.73m²) due to the risk of lactic acidosis."
+            },
+            {
+              "stem": "A 50-year-old female with breast cancer is receiving tamoxifen. Which of the following is the most important monitoring parameter for this patient?",
+              "options": [
+                "a. Serum calcium",
+                "b. Endometrial thickness (transvaginal ultrasound)",
+                "c. Serum potassium",
+                "d. Liver function tests"
+              ],
+              "answer": "b. Endometrial thickness (transvaginal ultrasound)",
+              "explanation": "Tamoxifen is associated with an increased risk of endometrial cancer; regular gynecological surveillance (e.g., transvaginal ultrasound) is recommended."
+            },
+            {
+              "stem": "A 30-year-old female with Graves' disease is treated with radioactive iodine (131I). Which of the following is the most appropriate post-treatment counseling point?",
+              "options": [
+                "a. Avoid close contact with children for 1 week",
+                "b. Expect immediate resolution of hyperthyroidism",
+                "c. Use contraception for at least 6 months",
+                "d. Expect transient hypothyroidism followed by euthyroidism"
+              ],
+              "answer": "a. Avoid close contact with children for 1 week",
+              "explanation": "Radioactive iodine emits radiation; patients should avoid close contact with children and pregnant women for 1 week post-treatment to minimize radiation exposure."
+            },
+            {
+              "stem": "A 65-year-old male with hypertension and gout is prescribed hydrochlorothiazide. Which of the following is the most likely effect of this therapy on his gout?",
+              "options": [
+                "a. Reduced risk of gout flares",
+                "b. Increased risk of gout flares",
+                "c. No effect on gout",
+                "d. Reduced uric acid levels"
+              ],
+              "answer": "b. Increased risk of gout flares",
+              "explanation": "Thiazide diuretics (e.g., hydrochlorothiazide) increase serum uric acid levels by reducing renal excretion, thereby increasing the risk of gout flares."
+            },
+            {
+              "stem": "A 40-year-old female with type 2 diabetes mellitus is started on empagliflozin. Which of the following is the most important patient counseling point?",
+              "options": [
+                "a. Take with food to reduce GI upset",
+                "b. Monitor for signs of hypoglycemia",
+                "c. Increase fluid intake to prevent dehydration",
+                "d. Avoid grapefruit juice"
+              ],
+              "answer": "c. Increase fluid intake to prevent dehydration",
+              "explanation": "SGLT2 inhibitors (e.g., empagliflozin) cause osmotic diuresis, increasing the risk of dehydration and hypotension; adequate fluid intake is essential."
+            },
+            {
+              "stem": "A 55-year-old male with metastatic prostate cancer is receiving abiraterone. Which of the following is the most important baseline investigation before initiating therapy?",
+              "options": [
+                "a. Serum testosterone",
+                "b. Liver function tests",
+                "c. Electrocardiogram (ECG)",
+                "d. Serum potassium"
+              ],
+              "answer": "b. Liver function tests",
+              "explanation": "Abiraterone is hepatotoxic; baseline and regular liver function tests are required to monitor for hepatotoxicity."
+            },
+            {
+              "stem": "A 60-year-old female with rheumatoid arthritis is started on hydroxychloroquine. Which of the following is the most important monitoring parameter for this patient?",
+              "options": [
+                "a. Serum creatinine",
+                "b. Visual acuity and retinal examination",
+                "c. Serum potassium",
+                "d. Liver function tests"
+              ],
+              "answer": "b. Visual acuity and retinal examination",
+              "explanation": "Hydroxychloroquine can cause irreversible retinal toxicity; baseline and annual ophthalmologic examinations are recommended."
+            },
+            {
+              "stem": "A 45-year-old male with type 2 diabetes mellitus and CKD (eGFR 40 mL/min/1.73m²) is prescribed linagliptin. Which of the following is the primary advantage of linagliptin in this patient?",
+              "options": [
+                "a. Does not require dose adjustment in renal impairment",
+                "b. Causes significant weight loss",
+                "c. Reduces cardiovascular risk",
+                "d. Does not cause hypoglycemia"
+              ],
+              "answer": "a. Does not require dose adjustment in renal impairment",
+              "explanation": "Linagliptin is primarily excreted via the biliary system, making it suitable for patients with renal impairment without dose adjustment."
+            },
+            {
+              "stem": "A 50-year-old female with metastatic breast cancer is receiving paclitaxel. Which of the following is the most appropriate premedication to prevent hypersensitivity reactions?",
+              "options": [
+                "a. Dexamethasone and diphenhydramine",
+                "b. Ondansetron and aprepitant",
+                "c. Lorazepam and metoclopramide",
+                "d. Ranitidine and famotidine"
+              ],
+              "answer": "a. Dexamethasone and diphenhydramine",
+              "explanation": "Paclitaxel can cause severe hypersensitivity reactions; premedication with dexamethasone and diphenhydramine is standard to prevent these reactions."
+            },
+            {
+              "stem": "A 65-year-old male with type 2 diabetes mellitus is prescribed semaglutide. Which of the following is the most important patient counseling point?",
+              "options": [
+                "a. Inject subcutaneously into the abdomen",
+                "b. Take with food to enhance absorption",
+                "c. Monitor for signs of pancreatitis",
+                "d. Expect immediate weight loss"
+              ],
+              "answer": "c. Monitor for signs of pancreatitis",
+              "explanation": "GLP-1 receptor agonists (e.g., semaglutide) are associated with an increased risk of pancreatitis; patients should be advised to report severe abdominal pain."
+            },
+            {
+              "stem": "A 70-year-old female with osteoporosis is prescribed alendronate. Which of the following is the most appropriate administration instruction?",
+              "options": [
+                "a. Take with food to reduce GI upset",
+                "b. Take at bedtime to enhance absorption",
+                "c. Take with a full glass of water and remain upright for 30 minutes",
+                "d. Take with calcium supplements to enhance efficacy"
+              ],
+              "answer": "c. Take with a full glass of water and remain upright for 30 minutes",
+              "explanation": "Bisphosphonates (e.g., alendronate) must be taken with a full glass of water and the patient should remain upright for 30–60 minutes to reduce the risk of esophageal irritation."
+            },
+            {
+              "stem": "A 55-year-old male with type 2 diabetes mellitus is started on canagliflozin. Which of the following is the most significant adverse effect associated with this therapy?",
+              "options": [
+                "a. Hypoglycemia",
+                "b. Hyperkalemia",
+                "c. Genital mycotic infections",
+                "d. Weight gain"
+              ],
+              "answer": "c. Genital mycotic infections",
+              "explanation": "SGLT2 inhibitors (e.g., canagliflozin) increase urinary glucose excretion, predisposing patients to genital mycotic infections (e.g., candidiasis)."
+            },
+            {
+              "stem": "A 60-year-old female with metastatic colorectal cancer is receiving FOLFIRI (5-fluorouracil, leucovorin, irinotecan). Which of the following is the most appropriate premedication to prevent irinotecan-induced diarrhea?",
+              "options": [
+                "a. Dexamethasone",
+                "b. Atropine",
+                "c. Ondansetron",
+                "d. Loperamide"
+              ],
+              "answer": "b. Atropine",
+              "explanation": "Irinotecan can cause early-onset diarrhea due to cholinergic effects; atropine is administered as premedication to prevent this adverse effect."
+            },
+            {
+              "stem": "A 45-year-old male with type 1 diabetes mellitus is admitted with diabetic ketoacidosis (DKA). Which of the following is the most appropriate initial fluid therapy?",
+              "options": [
+                "a. 0.9% normal saline",
+                "b. 0.45% normal saline",
+                "c. 5% dextrose",
+                "d. Hartmann's solution"
+              ],
+              "answer": "a. 0.9% normal saline",
+              "explanation": "Initial fluid resuscitation in DKA is with 0.9% normal saline (1–1.5 L in the first hour) to restore intravascular volume and improve tissue perfusion."
+            },
+            {
+              "stem": "A 50-year-old female with rheumatoid arthritis is started on tofacitinib. Which of the following is the most important baseline investigation before initiating therapy?",
+              "options": [
+                "a. Serum creatinine",
+                "b. Liver function tests",
+                "c. Complete blood count (CBC)",
+                "d. Chest X-ray"
+              ],
+              "answer": "c. Complete blood count (CBC)",
+              "explanation": "Tofacitinib is associated with myelosuppression; baseline and regular CBC monitoring is required to detect neutropenia or anemia."
+            },
+            {
+              "stem": "A 65-year-old male with hypertension and diabetes is prescribed chlorthalidone. Which of the following is the most significant adverse effect associated with this therapy?",
+              "options": [
+                "a. Hyperkalemia",
+                "b. Hypoglycemia",
+                "c. Hyperuricemia",
+                "d. Bradycardia"
+              ],
+              "answer": "c. Hyperuricemia",
+              "explanation": "Thiazide diuretics (e.g., chlorthalidone) increase serum uric acid levels by reducing renal excretion, thereby increasing the risk of gout flares."
+            },
+            {
+              "stem": "A 55-year-old female with metastatic breast cancer is receiving trastuzumab. Which of the following is the most important monitoring parameter for this patient?",
+              "options": [
+                "a. Serum calcium",
+                "b. Left ventricular ejection fraction (LVEF)",
+                "c. Serum potassium",
+                "d. Electrocardiogram (ECG)"
+              ],
+              "answer": "b. Left ventricular ejection fraction (LVEF)",
+              "explanation": "Trastuzumab is associated with cardiotoxicity; LVEF monitoring (e.g., echocardiogram) is essential to detect early cardiac dysfunction."
+            },
+            {
+              "stem": "A 40-year-old male with type 2 diabetes mellitus is started on dulaglutide. Which of the following is the most important patient counseling point?",
+              "options": [
+                "a. Inject subcutaneously into the thigh",
+                "b. Take with food to enhance absorption",
+                "c. Monitor for signs of thyroid tumors",
+                "d. Expect immediate weight loss"
+              ],
+              "answer": "c. Monitor for signs of thyroid tumors",
+              "explanation": "GLP-1 receptor agonists (e.g., dulaglutide) have a warning for thyroid C-cell tumors; patients should be advised to report neck lumps or difficulty swallowing."
+            },
+            {
+              "stem": "A 60-year-old female with osteoporosis is prescribed denosumab. Which of the following is the most appropriate administration instruction?",
+              "options": [
+                "a. Take with food to reduce GI upset",
+                "b. Take at bedtime to enhance absorption",
+                "c. Administer subcutaneously every 6 months",
+                "d. Take with calcium supplements to enhance efficacy"
+              ],
+              "answer": "c. Administer subcutaneously every 6 months",
+              "explanation": "Denosumab is administered subcutaneously every 6 months for the treatment of osteoporosis."
+            },
+            {
+              "stem": "A 55-year-old male with type 2 diabetes mellitus is prescribed empagliflozin. Which of the following is the most significant cardiovascular benefit associated with this therapy?",
+              "options": [
+                "a. Reduced risk of hypoglycemia",
+                "b. Reduced risk of heart failure hospitalization",
+                "c. Increased weight loss",
+                "d. Reduced risk of pancreatitis"
+              ],
+              "answer": "b. Reduced risk of heart failure hospitalization",
+              "explanation": "Empagliflozin has been shown to reduce the risk of heart failure hospitalization in patients with type 2 diabetes mellitus and established cardiovascular disease."
+            },
+            {
+              "stem": "A 65-year-old female with metastatic breast cancer is receiving capecitabine. Which of the following is the most appropriate monitoring parameter for this patient?",
+              "options": [
+                "a. Serum calcium",
+                "b. Hand-foot syndrome",
+                "c. Serum potassium",
+                "d. Electrocardiogram (ECG)"
+              ],
+              "answer": "b. Hand-foot syndrome",
+              "explanation": "Capecitabine is associated with hand-foot syndrome (palmar-plantar erythrodysesthesia); patients should be monitored for this adverse effect and advised on preventive measures."
+            },
+            {
+              "stem": "A 45-year-old male with type 2 diabetes mellitus is started on pioglitazone. Which of the following is the most significant adverse effect associated with this therapy?",
+              "options": [
+                "a. Hypoglycemia",
+                "b. Weight gain",
+                "c. Hyperkalemia",
+                "d. Bradycardia"
+              ],
+              "answer": "b. Weight gain",
+              "explanation": "Thiazolidinediones (e.g., pioglitazone) are associated with weight gain due to fluid retention and increased subcutaneous fat deposition."
+            },
+            {
+              "stem": "A 50-year-old female with rheumatoid arthritis is started on leflunomide. Which of the following is the most important baseline investigation before initiating therapy?",
+              "options": [
+                "a. Serum creatinine",
+                "b. Liver function tests",
+                "c. Complete blood count (CBC)",
+                "d. Chest X-ray"
+              ],
+              "answer": "b. Liver function tests",
+              "explanation": "Leflunomide is hepatotoxic; baseline and regular liver function tests are required to monitor for hepatotoxicity."
+            },
+            {
+              "stem": "A 60-year-old male with type 2 diabetes mellitus is prescribed sitagliptin. Which of the following is the primary advantage of sitagliptin in this patient?",
+              "options": [
+                "a. Does not cause hypoglycemia",
+                "b. Causes significant weight loss",
+                "c. Reduces cardiovascular risk",
+                "d. Does not require dose adjustment in renal impairment"
+              ],
+              "answer": "a. Does not cause hypoglycemia",
+              "explanation": "DPP-4 inhibitors (e.g., sitagliptin) rarely cause hypoglycemia when used as monotherapy, making them a safer option for patients prone to hypoglycemia."
+            },
+            {
+              "stem": "A 55-year-old female with metastatic colorectal cancer is receiving cetuximab. Which of the following is the most important baseline investigation before initiating therapy?",
+              "options": [
+                "a. Serum calcium",
+                "b. RAS mutation status",
+                "c. Serum potassium",
+                "d. Electrocardiogram (ECG)"
+              ],
+              "answer": "b. RAS mutation status",
+              "explanation": "Cetuximab is only effective in patients with wild-type KRAS and NRAS tumors; RAS mutation status must be determined before initiating therapy."
+            },
+            {
+              "stem": "A 40-year-old male with type 2 diabetes mellitus is started on dapagliflozin. Which of the following is the most significant adverse effect associated with this therapy?",
+              "options": [
+                "a. Hypoglycemia",
+                "b. Hyperkalemia",
+                "c. Genital mycotic infections",
+                "d. Weight gain"
+              ],
+              "answer": "c. Genital mycotic infections",
+              "explanation": "SGLT2 inhibitors (e.g., dapagliflozin) increase urinary glucose excretion, predisposing patients to genital mycotic infections (e.g., candidiasis)."
+            },
+            {
+              "stem": "A 65-year-old female with osteoporosis is prescribed risedronate. Which of the following is the most appropriate administration instruction?",
+              "options": [
+                "a. Take with food to reduce GI upset",
+                "b. Take at bedtime to enhance absorption",
+                "c. Take with a full glass of water and remain upright for 30 minutes",
+                "d. Take with calcium supplements to enhance efficacy"
+              ],
+              "answer": "c. Take with a full glass of water and remain upright for 30 minutes",
+              "explanation": "Bisphosphonates (e.g., risedronate) must be taken with a full glass of water and the patient should remain upright for 30–60 minutes to reduce the risk of esophageal irritation."
+            },
+            {
+              "stem": "A 50-year-old male with type 2 diabetes mellitus is prescribed liraglutide. Which of the following is the most important patient counseling point?",
+              "options": [
+                "a. Inject subcutaneously into the abdomen",
+                "b. Take with food to enhance absorption",
+                "c. Monitor for signs of pancreatitis",
+                "d. Expect immediate weight loss"
+              ],
+              "answer": "c. Monitor for signs of pancreatitis",
+              "explanation": "GLP-1 receptor agonists (e.g., liraglutide) are associated with an increased risk of pancreatitis; patients should be advised to report severe abdominal pain."
+            },
+            {
+              "stem": "A 60-year-old female with metastatic breast cancer is receiving everolimus. Which of the following is the most important monitoring parameter for this patient?",
+              "options": [
+                "a. Serum calcium",
+                "b. Mucositis",
+                "c. Serum potassium",
+                "d. Electrocardiogram (ECG)"
+              ],
+              "answer": "b. Mucositis",
+              "explanation": "Everolimus is associated with mucositis/stomatitis; patients should be monitored for this adverse effect and advised on oral hygiene and symptomatic management."
+            },
+            {
+              "stem": "A 45-year-old male with type 2 diabetes mellitus is started on ertugliflozin. Which of the following is the most significant cardiovascular benefit associated with this therapy?",
+              "options": [
+                "a. Reduced risk of hypoglycemia",
+                "b. Reduced risk of heart failure hospitalization",
+                "c. Increased weight loss",
+                "d. Reduced risk of pancreatitis"
+              ],
+              "answer": "b. Reduced risk of heart failure hospitalization",
+              "explanation": "SGLT2 inhibitors (e.g., ertugliflozin) have been shown to reduce the risk of heart failure hospitalization in patients with type 2 diabetes mellitus and established cardiovascular disease."
+            },
+            {
+              "stem": "A 55-year-old female with rheumatoid arthritis is started on baricitinib. Which of the following is the most important baseline investigation before initiating therapy?",
+              "options": [
+                "a. Serum creatinine",
+                "b. Liver function tests",
+                "c. Complete blood count (CBC)",
+                "d. Chest X-ray"
+              ],
+              "answer": "c. Complete blood count (CBC)",
+              "explanation": "Baricitinib is associated with myelosuppression; baseline and regular CBC monitoring is required to detect neutropenia or anemia."
+            },
+            {
+              "stem": "A 60-year-old male with type 2 diabetes mellitus is prescribed alogliptin. Which of the following is the primary advantage of alogliptin in this patient?",
+              "options": [
+                "a. Does not cause hypoglycemia",
+                "b. Causes significant weight loss",
+                "c. Reduces cardiovascular risk",
+                "d. Does not require dose adjustment in renal impairment"
+              ],
+              "answer": "a. Does not cause hypoglycemia",
+              "explanation": "DPP-4 inhibitors (e.g., alogliptin) rarely cause hypoglycemia when used as monotherapy, making them a safer option for patients prone to hypoglycemia."
+            },
+            {
+              "stem": "A 50-year-old female with metastatic breast cancer is receiving bevacizumab. Which of the following is the most important monitoring parameter for this patient?",
+              "options": [
+                "a. Serum calcium",
+                "b. Blood pressure",
+                "c. Serum potassium",
+                "d. Electrocardiogram (ECG)"
+              ],
+              "answer": "b. Blood pressure",
+              "explanation": "Bevacizumab is associated with hypertension; blood pressure should be monitored closely and managed aggressively to prevent complications."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "A 68-year-old male with type 2 diabetes mellitus (HbA1c 8.5%) and CKD (eGFR 45 mL/min/1.73m²) is admitted for a CT scan with contrast. Outline the steps you would take to manage his diabetes medications peri-procedurally.",
+              "modelAnswer": "1. Withhold metformin 48 hours before and after the procedure due to the risk of lactic acidosis with iodinated contrast.\n2. Ensure adequate hydration with intravenous fluids (e.g., 0.9% normal saline) before and after the procedure to maintain renal perfusion.\n3. Monitor serum creatinine and electrolytes pre- and post-procedure to assess for contrast-induced nephropathy.\n4. Consider temporary use of short-acting insulin (e.g., insulin aspart) for glycemic control during hospitalization, with close monitoring of blood glucose levels.\n5. Resume metformin only after confirming normal renal function (eGFR >45 mL/min/1.73m²) and absence of contrast-induced nephropathy."
+            },
+            {
+              "stem": "A 55-year-old female with rheumatoid arthritis is started on methotrexate 7.5 mg weekly. List four essential baseline investigations and explain their relevance.",
+              "modelAnswer": "1. **Chest X-ray**: To assess for pre-existing lung disease (e.g., interstitial lung disease) as methotrexate can exacerbate or cause pulmonary toxicity.\n2. **Liver function tests (LFTs)**: To establish baseline liver function, as methotrexate is hepatotoxic and requires regular monitoring.\n3. **Complete blood count (CBC)**: To assess for baseline cytopenias (e.g., anemia, leukopenia, thrombocytopenia) as methotrexate can cause myelosuppression.\n4. **Renal function tests (serum creatinine, eGFR)**: To assess renal function, as methotrexate is renally excreted and dose adjustment may be required in renal impairment."
+            },
+            {
+              "stem": "A 60-year-old male with type 2 diabetes mellitus is prescribed empagliflozin. Outline three key patient counseling points regarding this medication.",
+              "modelAnswer": "1. **Hydration**: Emphasize the importance of maintaining adequate fluid intake to prevent dehydration and hypotension, as empagliflozin causes osmotic diuresis.\n2. **Genital hygiene**: Advise on the increased risk of genital mycotic infections (e.g., candidiasis) and the importance of good genital hygiene and prompt treatment if symptoms occur.\n3. **Monitoring for adverse effects**: Instruct the patient to monitor for signs of diabetic ketoacidosis (e.g., nausea, vomiting, abdominal pain, difficulty breathing) and to seek medical attention immediately if these occur."
+            },
+            {
+              "stem": "A 50-year-old female with metastatic breast cancer is receiving doxorubicin and cyclophosphamide. Outline the steps you would take to monitor and prevent doxorubicin-induced cardiotoxicity.",
+              "modelAnswer": "1. **Baseline assessment**: Perform a baseline echocardiogram or multigated acquisition (MUGA) scan to assess left ventricular ejection fraction (LVEF) before initiating therapy.\n2. **Regular monitoring**: Repeat LVEF assessment after every 2–3 cycles of therapy or if the cumulative dose approaches 300 mg/m².\n3. **Cumulative dose limit**: Ensure the total cumulative dose does not exceed 450–550 mg/m² to minimize the risk of cardiotoxicity.\n4. **Cardiology referral**: Refer the patient to a cardiologist if LVEF declines by >10% from baseline or falls below 50%.\n5. **Symptom monitoring**: Advise the patient to report symptoms of heart failure (e.g., shortness of breath, fatigue, peripheral edema) promptly."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 20,
+          "questions": [
+            {
+              "stem": "A 45-year-old male with type 1 diabetes mellitus presents to the emergency department with confusion, polyuria, polydipsia, and a blood glucose level of 28 mmol/L. His arterial blood gas shows pH 7.1, bicarbonate 12 mmol/L, and anion gap 20. Outline the stepwise management of this patient, including initial resuscitation, insulin therapy, electrolyte management, and monitoring.",
+              "modelAnswer": "**Step 1: Initial Resuscitation**\n- Administer 0.9% normal saline 1–1.5 L over the first hour to restore intravascular volume and improve tissue perfusion.\n- Assess for signs of shock (e.g., hypotension, tachycardia) and consider vasopressor support if necessary.\n\n**Step 2: Insulin Therapy**\n- Administer intravenous (IV) regular insulin at 0.1 units/kg bolus, followed by a continuous infusion of 0.1 units/kg/hour.\n- Target blood glucose reduction: 3–5 mmol/L/hour to avoid rapid shifts in osmolality and cerebral edema.\n- Monitor blood glucose every 1–2 hours and adjust insulin infusion rate accordingly.\n\n**Step 3: Electrolyte Management**\n- **Potassium (K+)**: Monitor serum potassium every 2–4 hours. If serum K+ <3.3 mmol/L, withhold insulin and administer IV potassium chloride 20–40 mmol/hour until K+ >3.3 mmol/L.\n- **Phosphate**: Monitor serum phosphate; replace if <0.32 mmol/L with IV potassium phosphate.\n- **Bicarbonate**: Avoid routine bicarbonate administration unless pH <6.9 or severe hyperkalemia is present, as it may increase the risk of cerebral edema.\n\n**Step 4: Monitoring and Transition to Subcutaneous Insulin**\n- Monitor blood glucose, electrolytes (K+, Na+, phosphate), and acid-base status every 2–4 hours during the acute phase.\n- Transition to subcutaneous basal-bolus insulin regimen once the patient is stable, eating, and ketosis has resolved (e.g., bicarbonate >18 mmol/L, anion gap <12).\n- Provide patient education on sick-day management, insulin administration, and recognition of hypoglycemia.\n\n**Step 5: Prevention of Complications**\n- Assess for and manage precipitating factors (e.g., infection, missed insulin doses).\n- Consider thromboprophylaxis (e.g., low-molecular-weight heparin) if no contraindications, as DKA increases the risk of venous thromboembolism."
+            },
+            {
+              "stem": "A 60-year-old female with metastatic breast cancer is receiving FEC (5-fluorouracil, epirubicin, cyclophosphamide) chemotherapy. Outline the management of chemotherapy-induced nausea and vomiting (CINV) for this highly emetogenic regimen, including antiemetic selection, dosing, timing, and monitoring.",
+              "modelAnswer": "**Step 1: Antiemetic Selection**\n- **Pre-chemotherapy (Day 1)**: Administer a triple antiemetic regimen:\n  - **Neurokinin-1 (NK1) receptor antagonist**: Aprepitant 125 mg orally 1 hour before chemotherapy.\n  - **5-HT3 receptor antagonist**: Ondansetron 16–24 mg IV or palonosetron 0.25 mg IV 30 minutes before chemotherapy.\n  - **Corticosteroid**: Dexamethasone 12 mg IV 30 minutes before chemotherapy.\n\n**Step 2: Post-chemotherapy (Days 2–4)**\n- **Day 2**: Aprepitant 80 mg orally once daily in the morning.\n- **Days 3–4**: If aprepitant is not tolerated, consider metoclopramide 10–20 mg orally every 6 hours as needed.\n\n**Step 3: Rescue Antiemetics**\n- For breakthrough nausea/vomiting, administer:\n  - **Dopamine antagonist**: Metoclopramide 10–20 mg IV every 6 hours or prochlorperazine 10 mg IV every 6 hours.\n  - **Alternative**: Olanzapine 5–10 mg orally daily for 2–3 days.\n\n**Step 4: Monitoring and Supportive Care**\n- Monitor for signs of dehydration, electrolyte imbalances (e.g., hypokalemia, hypomagnesemia), and aspiration risk.\n- Ensure adequate hydration with IV fluids if necessary.\n- Provide patient education on the importance of adherence to antiemetic therapy and when to seek medical attention for uncontrolled nausea/vomiting.\n\n**Step 5: Dose Adjustments and Contraindications**\n- Adjust antiemetic doses for renal or hepatic impairment as needed.\n- Avoid metoclopramide in patients with Parkinson’s disease or a history of extrapyramidal symptoms.\n- Consider lorazepam 0.5–1 mg orally or sublingually for anticipatory nausea/vomiting."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -359,22 +359,22 @@ export default function DrugIndexScreen() {
           {/* ── Global Search Bar (only when not in a category) ── */}
           {!monograph && !selectedCategory && (
             <div className="relative" ref={searchRef}>
-              <form onSubmit={handleSearchSubmit} className="flex gap-3 bg-[var(--surface)] p-2 rounded-xl border border-[var(--border)] shadow-sm">
-                <div className="flex-1 flex items-center gap-3 px-3">
-                  <Search size={20} className="text-[var(--text-dim)]" />
+              <form onSubmit={handleSearchSubmit} className="flex flex-col sm:flex-row gap-2 sm:gap-3 bg-[var(--surface)] p-2 rounded-xl border border-[var(--border)] shadow-sm w-full">
+                <div className="flex-1 min-w-0 flex items-center gap-3 px-3">
+                  <Search size={20} className="text-[var(--text-dim)] shrink-0" />
                   <input
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     onFocus={() => !searchQuery.trim() && setShowSearchDropdown(true)}
                     placeholder="Search by generic (e.g., Ceftriaxone, Amoxicillin) or brand name..."
-                    className="flex-1 bg-transparent border-none outline-none text-[var(--text)] text-sm focus:ring-0"
+                    className="flex-1 min-w-0 bg-transparent border-none outline-none text-[var(--text)] text-sm focus:ring-0"
                   />
                 </div>
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="px-5 py-2.5 bg-[var(--primary)] hover:opacity-90 transition-opacity text-[var(--primary-foreground)] rounded-lg text-sm font-semibold flex items-center gap-2 cursor-pointer"
+                  className="shrink-0 w-full sm:w-auto px-5 py-2.5 bg-[var(--primary)] hover:opacity-90 transition-opacity text-[var(--primary-foreground)] rounded-lg text-sm font-semibold flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap"
                 >
                   {isLoading ? <Loader2 size={16} className="animate-spin" /> : <Search size={16} />}
                   Search

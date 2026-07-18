@@ -1,11 +1,11 @@
-import React, { useState, useRef, useEffect, useMemo } from 'react';
+﻿import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { 
   BookOpen, ChevronRight, Search, Activity, Accessibility, Dna, FlaskConical, 
   Droplets, Flame, Beaker, HeartPulse, Bug, Skull, Heart, Award, FileText,
   Briefcase, HelpCircle, Layers, Headphones, FileArchive, Calendar, BrainCircuit,
   Bookmark, Download, History, ChevronLeft, Bot, Play, List, Sparkles, CheckCircle2, Clock, Database, Mic,
-  FolderPlus, Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star, ArrowUpRight,
+  FolderPlus, Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star, ArrowUpRight, Flag,
   Compass, FileDown, MoreHorizontal, ArrowLeft, ArrowRight
 } from 'lucide-react';
 import Markdown from 'react-markdown';
@@ -363,7 +363,7 @@ export default function EducationHubScreen() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto shrink-0">
-            {/* Grid vs Graph Toggles — admin only */}
+            {/* Grid vs Graph Toggles â€” admin only */}
             {isAdmin && !selectedModule && (
               <div className="flex bg-[var(--surface-dim)] p-1 rounded-2xl border border-[var(--border)] shrink-0 w-full sm:w-auto justify-center">
                 <button
@@ -395,7 +395,7 @@ export default function EducationHubScreen() {
         </div>
         )}
 
-        {/* Breadcrumb Navigation — only at top level; drill-in view has its own header/breadcrumb */}
+        {/* Breadcrumb Navigation â€” only at top level; drill-in view has its own header/breadcrumb */}
         {!selectedModule && (
           <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] overflow-x-auto pb-2 whitespace-nowrap border-b border-[var(--border)]/40">
             <button onClick={handleBackToModules} className="text-[var(--text)] font-bold flex items-center gap-1">
@@ -407,7 +407,7 @@ export default function EducationHubScreen() {
         {/* Content Area */}
         <div className="pb-20 sm:pb-24">
           
-          {/* Level 1: Modules — CurriculumGraph admin-only */}
+          {/* Level 1: Modules â€” CurriculumGraph admin-only */}
           {isAdmin && !selectedModule && viewMode === 'graph' && (
             <div className="animate-in fade-in duration-300">
               <CurriculumGraph />
@@ -720,6 +720,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
   const [isCreatingFolder, setIsCreatingFolder] = useState(false);
   const [folderError, setFolderError] = useState<string | null>(null);
   const [showTabs, setShowTabs] = useState(true);
+  const [diseaseOpen, setDiseaseOpen] = useState(false);
 
   const handleWorkspaceBack = () => {
     if (folderStack.length > 0) {
@@ -1028,6 +1029,16 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
     ? tabs.filter(t => t.id === 'disease-notes')
     : tabs;
 
+  // When a disease note is open, present it as a full standalone page:
+  // no folder navigation, tabs, or export chrome â€” only the disease's own nav.
+  if (diseaseOpen) {
+    return (
+      <div className="animate-in fade-in duration-300 max-w-4xl mx-auto">
+        <DiseaseNotesView unit={unit} onOpenDisease={() => setDiseaseOpen(true)} onCloseDisease={() => setDiseaseOpen(false)} />
+      </div>
+    );
+  }
+
   return (
     <div className="animate-in fade-in slide-in-from-bottom-4 duration-300">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
@@ -1225,7 +1236,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
           {activeTab === 'mcqs' && <WorkspaceQuizzes unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
         </div>
 
-        {/* Bottom Tabs — retractable */}
+        {/* Bottom Tabs â€” retractable */}
         <div className="border-t border-[var(--border)] bg-[var(--surface-dim)]/40">
           <button
             onClick={() => setShowTabs(!showTabs)}
@@ -1429,7 +1440,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
                         <div className="my-8 py-4 px-6 border-y border-slate-200 inline-block mx-auto max-w-md">
                           <p className="text-xs text-slate-400 font-bold uppercase tracking-wider mb-1">Path Context</p>
                           <p className="text-xs font-extrabold text-slate-800">
-                            {unit.title} {folderStack.map(f => ` → ${f.title}`)}
+                            {unit.title} {folderStack.map(f => ` â†’ ${f.title}`)}
                           </p>
                         </div>
 
@@ -1905,7 +1916,7 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
       console.error('Error asking tutor:', error);
       setTutorChat([...newChat, { 
         role: 'assistant', 
-        content: `⚠️ Sorry, there was an error connecting to the Clinical Coach service. Please verify your connection or try again.` 
+        content: `âš ï¸ Sorry, there was an error connecting to the Clinical Coach service. Please verify your connection or try again.` 
       }]);
     } finally {
       setIsTutorThinking(false);
@@ -1984,9 +1995,9 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
 }
 
 // ==========================================
-// DISEASE NOTES — full-page detail view
+// DISEASE NOTES â€” full-page detail view
 // ==========================================
-function DiseaseNotesView({ unit }: { unit: EducationModuleUnit }) {
+function DiseaseNotesView({ unit, onOpenDisease, onCloseDisease }: { unit: EducationModuleUnit; onOpenDisease?: () => void; onCloseDisease?: () => void }) {
   const [notes, setNotes] = useState<DiseaseNote[]>([])
   const [loading, setLoading] = useState(true)
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null)
@@ -2002,6 +2013,11 @@ function DiseaseNotesView({ unit }: { unit: EducationModuleUnit }) {
     })
     return () => { cancelled = true }
   }, [unit.id])
+
+  useEffect(() => {
+    if (selectedIdx !== null) onOpenDisease?.()
+    else onCloseDisease?.()
+  }, [selectedIdx])
 
   if (loading) {
     return (
@@ -2072,35 +2088,52 @@ function DiseaseNotesView({ unit }: { unit: EducationModuleUnit }) {
   )
 }
 
-// ── Reusable section primitives for the Standard Disease Discussion Template ──
+// â”€â”€ Reusable section primitives for the Standard Disease Discussion Template â”€â”€
 function Section({
+  num,
   title,
   children,
   tone = 'default',
   icon,
 }: {
+  num?: string
   title: string
   children: React.ReactNode
-  tone?: 'default' | 'green' | 'amber' | 'rose' | 'violet'
+  tone?: 'default' | 'green' | 'amber' | 'rose' | 'violet' | 'blue'
   icon?: React.ReactNode
 }) {
   const tones: Record<string, string> = {
     default: 'border-[var(--border)]',
-    green: 'border-green-200/40 bg-green-500/5',
-    amber: 'border-amber-200/30 bg-amber-500/5',
-    rose: 'border-rose-200/40 bg-rose-500/5',
-    violet: 'border-purple-200/40 bg-purple-500/5',
+    green: 'border-emerald-300/50 bg-emerald-500/[0.06]',
+    amber: 'border-amber-300/50 bg-amber-500/[0.06]',
+    rose: 'border-rose-300/50 bg-rose-500/[0.06]',
+    violet: 'border-violet-300/50 bg-violet-500/[0.06]',
+    blue: 'border-blue-300/50 bg-blue-500/[0.06]',
   }
   const titleColors: Record<string, string> = {
     default: 'text-[var(--primary)]',
-    green: 'text-green-600',
-    amber: 'text-amber-600',
-    rose: 'text-rose-600',
-    violet: 'text-purple-600',
+    green: 'text-emerald-700 dark:text-emerald-400',
+    amber: 'text-amber-700 dark:text-amber-400',
+    rose: 'text-rose-700 dark:text-rose-400',
+    violet: 'text-violet-700 dark:text-violet-400',
+    blue: 'text-blue-700 dark:text-blue-400',
+  }
+  const badgeBg: Record<string, string> = {
+    default: 'bg-[var(--primary)]/10 text-[var(--primary)]',
+    green: 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400',
+    amber: 'bg-amber-500/15 text-amber-700 dark:text-amber-400',
+    rose: 'bg-rose-500/15 text-rose-700 dark:text-rose-400',
+    violet: 'bg-violet-500/15 text-violet-700 dark:text-violet-400',
+    blue: 'bg-blue-500/15 text-blue-700 dark:text-blue-400',
   }
   return (
     <div className={`bg-[var(--surface)] border ${tones[tone]} rounded-2xl p-5 sm:p-6 shadow-sm`}>
-      <h3 className={`text-xs font-black uppercase tracking-wider ${titleColors[tone]} mb-3 flex items-center gap-1.5`}>
+      <h3 className={`text-xs font-black uppercase tracking-wider ${titleColors[tone]} mb-3 flex items-center gap-2`}>
+        {num && (
+          <span className={`inline-flex items-center justify-center w-5 h-5 rounded-md text-[10px] font-black ${badgeBg[tone]}`}>
+            {num}
+          </span>
+        )}
         {icon}
         {title}
       </h3>
@@ -2123,6 +2156,17 @@ function Bullets({ items, tone = 'default' }: { items: string[]; tone?: 'default
   )
 }
 
+// Ensure each inline SVG's marker/defs ids are unique so multiple diagrams on
+// the same page don't collide (which caused arrows to render in the wrong place).
+let diagramUid = 0
+function sanitizeDiagramIds(html: string): string {
+  diagramUid += 1
+  const uid = `dg${diagramUid}`
+  return html
+    .replace(/id="(am|amR)"/g, `id="$1-${uid}"`)
+    .replace(/url\(#(am|amR)\)/g, `url(#$1-${uid})`)
+}
+
 function DefinitionList({ rows }: { rows: { label: string; value: string }[] }) {
   return (
     <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
@@ -2138,41 +2182,48 @@ function DefinitionList({ rows }: { rows: { label: string; value: string }[] }) 
 
 function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: { note: DiseaseNote; onBack: () => void; hasPrev?: boolean; hasNext?: boolean; onPrev?: () => void; onNext?: () => void }) {
   return (
-    <div className="w-full space-y-5 sm:space-y-8 py-2">
+    <div className="w-full space-y-5 sm:space-y-7 py-2">
       {/* Header */}
-      <div className="flex items-center gap-2">
-        <button
-          onClick={onBack}
-          className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer"
-          title="Back to list"
-        >
-          <ChevronLeft size={18} className="text-[var(--text)]" />
-        </button>
-        <button
-          onClick={onPrev}
-          disabled={!hasPrev}
-          className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
-          title="Previous disease"
-        >
-          <ArrowLeft size={16} className="text-[var(--text)]" />
-        </button>
-        <button
-          onClick={onNext}
-          disabled={!hasNext}
-          className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
-          title="Next disease"
-        >
-          <ArrowRight size={16} className="text-[var(--text)]" />
-        </button>
-        <div>
-          <h2 className="text-2xl font-extrabold text-[var(--text)]">{note.name}</h2>
-          <p className="text-xs text-[var(--text-muted)] font-semibold mt-0.5">{note.specialty}</p>
+      <div className="flex flex-col gap-3">
+        <div className="flex items-center gap-2">
+          <button
+            onClick={onBack}
+            className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer shrink-0"
+            title="Back to list"
+          >
+            <ChevronLeft size={18} className="text-[var(--text)]" />
+          </button>
+          <button
+            onClick={onPrev}
+            disabled={!hasPrev}
+            className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer shrink-0"
+            title="Previous disease"
+          >
+            <ArrowLeft size={16} className="text-[var(--text)]" />
+          </button>
+          <button
+            onClick={onNext}
+            disabled={!hasNext}
+            className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer shrink-0"
+            title="Next disease"
+          >
+            <ArrowRight size={16} className="text-[var(--text)]" />
+          </button>
+          <div className="min-w-0">
+            <h2 className="text-2xl font-extrabold text-[var(--text)] truncate">{note.name}</h2>
+            <p className="text-xs text-[var(--text-muted)] font-semibold mt-0.5">{note.specialty}</p>
+          </div>
         </div>
+        {note.overview && (
+          <div className="bg-gradient-to-br from-[var(--primary)]/10 to-transparent border border-[var(--primary)]/20 rounded-2xl p-4">
+            <p className="text-sm text-[var(--text)] leading-relaxed font-medium">{note.overview}</p>
+          </div>
+        )}
       </div>
 
-      {/* §1 Disease Identification */}
+      {/* Â§1 Disease Identification */}
       {(note.alternativeNames?.length || note.icd10 || note.icd11) && (
-        <Section title="Disease Identification">
+        <Section num="1" title="Disease Identification">
           <DefinitionList
             rows={[
               ...(note.alternativeNames?.length ? [{ label: 'Alternative Names', value: note.alternativeNames.join(', ') }] : []),
@@ -2183,35 +2234,30 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       )}
 
-      {/* §2 Definition */}
+      {/* Â§2 Definition */}
       {note.definition && (
-        <Section title="Definition">
+        <Section num="2" title="Definition">
           <p className="text-sm text-[var(--text)] leading-relaxed">{note.definition}</p>
         </Section>
       )}
 
-      {/* Overview (always present) */}
-      <Section title="Overview">
-        <p className="text-sm text-[var(--text)] leading-relaxed">{note.overview}</p>
-      </Section>
-
-      {/* §3 Epidemiology */}
+      {/* Â§3 Epidemiology */}
       {note.epidemiology && (
-        <Section title="Epidemiology">
+        <Section num="3" title="Epidemiology">
           <p className="text-sm text-[var(--text)] leading-relaxed">{note.epidemiology}</p>
         </Section>
       )}
 
-      {/* §4 Etiology */}
+      {/* Â§4 Etiology */}
       {note.etiology?.length ? (
-        <Section title="Etiology (Causes)">
+        <Section num="4" title="Etiology (Causes)">
           <Bullets items={note.etiology} />
         </Section>
       ) : null}
 
-      {/* §5 Risk Factors */}
+      {/* Â§5 Risk Factors */}
       {note.riskFactors && (note.riskFactors.nonModifiable?.length || note.riskFactors.modifiable?.length) ? (
-        <Section title="Risk Factors">
+        <Section num="5" title="Risk Factors">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {note.riskFactors.nonModifiable?.length ? (
               <div>
@@ -2221,7 +2267,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
             ) : null}
             {note.riskFactors.modifiable?.length ? (
               <div>
-                <h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2">Modifiable</h4>
+                <h4 className="text-[11px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400 mb-2">Modifiable</h4>
                 <Bullets items={note.riskFactors.modifiable} tone="amber" />
               </div>
             ) : null}
@@ -2229,51 +2275,51 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       ) : null}
 
-      {/* §6 Pathophysiology */}
+      {/* Â§6 Pathophysiology */}
       {note.pathophysiology && (
-        <Section title="Pathophysiology & Mechanism">
+        <Section num="6" title="Pathophysiology & Mechanism">
           <p className="text-sm text-[var(--text)] leading-relaxed">{note.pathophysiology}</p>
         </Section>
       )}
 
-      {/* §7 Classification */}
+      {/* Â§7 Classification */}
       {note.classification?.length ? (
-        <Section title="Classification">
+        <Section num="7" title="Classification">
           <Bullets items={note.classification} />
         </Section>
       ) : null}
 
-      {/* §8 Clinical Features */}
+      {/* Â§8 Clinical Features */}
       {note.clinicalFeatures?.length ? (
-        <Section title="Clinical Features">
+        <Section num="8" title="Clinical Features">
           <Bullets items={note.clinicalFeatures} />
         </Section>
       ) : null}
 
-      {/* §9 Signs */}
+      {/* Â§9 Signs */}
       {note.signs?.length ? (
-        <Section title="Signs">
+        <Section num="9" title="Signs">
           <Bullets items={note.signs} />
         </Section>
       ) : null}
 
-      {/* §10 Red Flag Features */}
+      {/* Â§10 Red Flag Features */}
       {note.redFlags?.length ? (
-        <Section title="Red Flag Features" tone="rose">
+        <Section num="10" title="Red Flag Features" tone="rose">
           <Bullets items={note.redFlags} tone="rose" />
         </Section>
       ) : null}
 
-      {/* §11 Complications */}
+      {/* Â§11 Complications */}
       {note.complications?.length ? (
-        <Section title="Complications">
+        <Section num="11" title="Complications">
           <Bullets items={note.complications} />
         </Section>
       ) : null}
 
-      {/* §12 Differential Diagnosis */}
+      {/* Â§12 Differential Diagnosis */}
       {note.differential?.length ? (
-        <Section title="Differential Diagnosis">
+        <Section num="12" title="Differential Diagnosis">
           <div className="space-y-3">
             {note.differential.map((d, i) => (
               <div key={i} className="border border-[var(--border)]/40 rounded-xl p-3">
@@ -2286,181 +2332,209 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       ) : null}
 
-      {/* §15 Investigations */}
+      {/* Â§15 Investigations */}
       {note.investigations?.length ? (
-        <Section title="Investigations">
+        <Section num="15" title="Investigations">
           <Bullets items={note.investigations} />
         </Section>
       ) : null}
 
-      {/* §16 Diagnosis */}
+      {/* Â§16 Diagnosis */}
       {note.diagnosis && (
-        <Section title="Diagnosis">
+        <Section num="16" title="Diagnosis">
           <p className="text-sm text-[var(--text)] leading-relaxed">{note.diagnosis}</p>
         </Section>
       )}
 
-      {/* §17 Disease Severity Scores */}
+      {/* Â§17 Disease Severity Scores */}
       {note.severityScores?.length ? (
-        <Section title="Disease Severity Scores">
+        <Section num="17" title="Disease Severity Scores">
           <Bullets items={note.severityScores} />
         </Section>
       ) : null}
 
-      {/* §18 Management */}
+      {/* Â§18 Management */}
       {note.management && (note.management.goals || note.management.immediate || note.management.definitive || note.management.longTerm) ? (
-        <Section title="Management">
+        <Section num="18" title="Management">
           <div className="space-y-3">
             {note.management.goals && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Goals of Treatment</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.management.goals}</p></div>}
-            {note.management.immediate && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Immediate / Emergency</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.management.immediate}</p></div>}
-            {note.management.definitive && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Definitive Treatment</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.management.definitive}</p></div>}
-            {note.management.longTerm && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Long-Term Management</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.management.longTerm}</p></div>}
+            {note.management.immediate && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-rose-700 dark:text-rose-400 mb-1">Immediate / Emergency</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.management.immediate}</p></div>}
+            {note.management.definitive && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400 mb-1">Definitive Treatment</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.management.definitive}</p></div>}
+            {note.management.longTerm && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-1">Long-Term Management</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.management.longTerm}</p></div>}
           </div>
         </Section>
       ) : null}
 
-      {/* §19 Non-Pharmacological Management */}
+      {/* Â§19 Non-Pharmacological Management */}
       {note.nonPharmacological?.length ? (
-        <Section title="Non-Pharmacological Management">
+        <Section num="19" title="Non-Pharmacological Management">
           <Bullets items={note.nonPharmacological} tone="amber" />
         </Section>
       ) : null}
 
       {/* Kenyan Context (special callout) */}
       {note.kenyaContext && (
-        <Section title="Kenyan Context" tone="green" icon={<span aria-hidden>🇰🇪</span>}>
+        <Section num="KE" title="Kenyan Context" tone="green" icon={<Flag size={14} className="text-emerald-600 dark:text-emerald-400" />}>
           <p className="text-sm text-[var(--text)] leading-relaxed">{note.kenyaContext}</p>
         </Section>
       )}
 
-      {/* §20 Pharmacological Management — Key Drugs */}
-      <Section title="Pharmacological Management">
-        <div className="overflow-x-auto rounded-xl border border-[var(--border)]/40">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="bg-[var(--surface-dim)] text-[var(--text-muted)] font-bold uppercase text-[11px] tracking-wider">
-                <th className="px-4 py-3 text-left w-[24%]">Drug</th>
-                <th className="px-4 py-3 text-left w-[16%]">Class</th>
-                <th className="px-4 py-3 text-left w-[16%]">Key Info</th>
-                <th className="px-4 py-3 text-left">Side Effects</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-[var(--border)]/30">
-              {note.keyDrugs.map((d, i) => (
-                <tr key={i} className="hover:bg-[var(--surface-dim)]/30 align-top">
-                  <td className="px-4 py-3 font-bold text-[var(--text)]">{d.drug}</td>
-                  <td className="px-4 py-3 text-[var(--text-muted)]">{d.class}</td>
-                  <td className="px-4 py-3 text-[var(--text-muted)] text-xs leading-relaxed">
-                    {d.dose && <div><span className="font-semibold">Dose:</span> {d.dose}</div>}
-                    {d.mechanism && <div className="mt-1"><span className="font-semibold">MoA:</span> {d.mechanism}</div>}
-                    {d.monitoring && <div className="mt-1"><span className="font-semibold">Monitor:</span> {d.monitoring}</div>}
-                    {d.contraindications && <div className="mt-1"><span className="font-semibold text-rose-600">Avoid:</span> {d.contraindications}</div>}
-                  </td>
-                  <td className="px-4 py-3">
-                    <div className="flex flex-wrap gap-1">
-                      {d.sideEffects.map((se, j) => (
-                        <span key={j} className="text-[11px] px-2 py-0.5 rounded-md bg-red-50 dark:bg-red-950/30 text-red-600 dark:text-red-400 border border-red-200/40 font-semibold">{se}</span>
-                      ))}
-                    </div>
-                  </td>
+      {/* Â§20 Pharmacological Management â€” Key Drugs (responsive) */}
+      {note.keyDrugs?.length ? (
+        <Section num="20" title="Pharmacological Management">
+          {/* Desktop table */}
+          <div className="hidden md:block overflow-x-auto rounded-xl border border-[var(--border)]/40">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-[var(--surface-dim)] text-[var(--text-muted)] font-bold uppercase text-[11px] tracking-wider">
+                  <th className="px-4 py-3 text-left w-[22%]">Drug</th>
+                  <th className="px-4 py-3 text-left w-[15%]">Class</th>
+                  <th className="px-4 py-3 text-left w-[33%]">Key Info</th>
+                  <th className="px-4 py-3 text-left">Side Effects</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </Section>
+              </thead>
+              <tbody className="divide-y divide-[var(--border)]/30">
+                {note.keyDrugs.map((d, i) => (
+                  <tr key={i} className="hover:bg-[var(--surface-dim)]/30 align-top">
+                    <td className="px-4 py-3 font-bold text-[var(--text)]">{d.drug}</td>
+                    <td className="px-4 py-3 text-[var(--text-muted)]">{d.class}</td>
+                    <td className="px-4 py-3 text-[var(--text-muted)] text-xs leading-relaxed">
+                      {d.dose && <div><span className="font-semibold">Dose:</span> {d.dose}</div>}
+                      {d.mechanism && <div className="mt-1"><span className="font-semibold">MoA:</span> {d.mechanism}</div>}
+                      {d.monitoring && <div className="mt-1"><span className="font-semibold">Monitor:</span> {d.monitoring}</div>}
+                      {d.contraindications && <div className="mt-1"><span className="font-semibold text-rose-600">Avoid:</span> {d.contraindications}</div>}
+                    </td>
+                    <td className="px-4 py-3">
+                      <div className="flex flex-wrap gap-1">
+                        {d.sideEffects.map((se, j) => (
+                          <span key={j} className="text-[11px] px-2 py-0.5 rounded-md bg-rose-100 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border border-rose-200/50 font-semibold">{se}</span>
+                        ))}
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
 
-      {/* §21 Surgical Management */}
+          {/* Mobile stacked cards */}
+          <div className="md:hidden space-y-3">
+            {note.keyDrugs.map((d, i) => (
+              <div key={i} className="border border-[var(--border)]/50 rounded-xl p-3 bg-[var(--surface-dim)]/30">
+                <div className="flex items-center justify-between gap-2 mb-2">
+                  <span className="font-bold text-[var(--text)] text-sm">{d.drug}</span>
+                  <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] shrink-0">{d.class}</span>
+                </div>
+                <div className="space-y-1.5 text-xs text-[var(--text)] leading-relaxed">
+                  {d.dose && <div><span className="font-semibold text-[var(--text-muted)]">Dose: </span>{d.dose}</div>}
+                  {d.mechanism && <div><span className="font-semibold text-[var(--text-muted)]">MoA: </span>{d.mechanism}</div>}
+                  {d.monitoring && <div><span className="font-semibold text-[var(--text-muted)]">Monitor: </span>{d.monitoring}</div>}
+                  {d.contraindications && <div><span className="font-semibold text-rose-600">Avoid: </span>{d.contraindications}</div>}
+                </div>
+                {d.sideEffects.length > 0 && (
+                  <div className="flex flex-wrap gap-1 mt-2">
+                    {d.sideEffects.map((se, j) => (
+                      <span key={j} className="text-[11px] px-2 py-0.5 rounded-md bg-rose-100 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 border border-rose-200/50 font-semibold">{se}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </Section>
+      ) : null}
+
+      {/* Â§21 Surgical Management */}
       {note.surgical && (
-        <Section title="Surgical Management">
+        <Section num="21" title="Surgical Management">
           <p className="text-sm text-[var(--text)] leading-relaxed">{note.surgical}</p>
         </Section>
       )}
 
-      {/* §22 Monitoring */}
-      <Section title="Monitoring Parameters" tone="amber">
-        <p className="text-sm text-[var(--text)] leading-relaxed">{note.monitoring}</p>
-      </Section>
+      {/* Â§22 Monitoring */}
+      {note.monitoring && (
+        <Section num="22" title="Monitoring Parameters" tone="amber">
+          <p className="text-sm text-[var(--text)] leading-relaxed">{note.monitoring}</p>
+        </Section>
+      )}
 
-      {/* §23 Prevention */}
+      {/* Â§23 Prevention */}
       {note.prevention?.length ? (
-        <Section title="Prevention">
+        <Section num="23" title="Prevention">
           <Bullets items={note.prevention} />
         </Section>
       ) : null}
 
-      {/* §24 Prognosis */}
+      {/* Â§24 Prognosis */}
       {note.prognosis && (
-        <Section title="Prognosis">
+        <Section num="24" title="Prognosis">
           <p className="text-sm text-[var(--text)] leading-relaxed">{note.prognosis}</p>
         </Section>
       )}
 
-      {/* §25 Patient Counseling */}
+      {/* Â§25 Patient Counseling */}
       {note.counseling?.length ? (
-        <Section title="Patient Counseling">
+        <Section num="25" title="Patient Counseling">
           <Bullets items={note.counseling} tone="amber" />
         </Section>
       ) : null}
 
-      {/* §26 Special Populations */}
+      {/* Â§26 Special Populations */}
       {note.specialPopulations?.length ? (
-        <Section title="Special Populations">
+        <Section num="26" title="Special Populations">
           <Bullets items={note.specialPopulations} />
         </Section>
       ) : null}
 
-      {/* §27 Clinical Pearls */}
+      {/* Â§27 Clinical Pearls */}
       {note.clinicalPearls?.length ? (
-        <Section title="Clinical Pearls" tone="violet">
+        <Section num="27" title="Clinical Pearls" tone="violet">
           <Bullets items={note.clinicalPearls} />
         </Section>
       ) : null}
 
-      {/* §28 Common Mistakes */}
+      {/* Â§28 Common Mistakes */}
       {note.commonMistakes?.length ? (
-        <Section title="Common Mistakes" tone="rose">
+        <Section num="28" title="Common Mistakes" tone="rose">
           <Bullets items={note.commonMistakes} tone="rose" />
         </Section>
       ) : null}
 
-      {/* §29 Drug Therapy Problems */}
+      {/* Â§29 Drug Therapy Problems */}
       {note.drugTherapyProblems?.length ? (
-        <Section title="Drug Therapy Problems (Clinical Pharmacy)">
+        <Section num="29" title="Drug Therapy Problems (Clinical Pharmacy)">
           <Bullets items={note.drugTherapyProblems} />
         </Section>
       ) : null}
 
-      {/* §30 Evidence-Based Guidelines */}
+      {/* Â§30 Evidence-Based Guidelines */}
       {note.guidelines?.length ? (
-        <Section title="Evidence-Based Guidelines">
+        <Section num="30" title="Evidence-Based Guidelines">
           <Bullets items={note.guidelines} />
         </Section>
       ) : null}
 
       {/* Diagram (treatment algorithm) */}
       {note.diagram && (
-        <div className="bg-white border border-[var(--border)] rounded-2xl p-4 sm:p-6 shadow-sm overflow-x-auto flex justify-center">
-          <div dangerouslySetInnerHTML={{ __html: note.diagram }} className="[&_svg]:w-full [&_svg]:h-auto max-w-full" />
+        <div className="bg-white border border-[var(--border)] rounded-2xl p-4 sm:p-6 shadow-sm overflow-hidden">
+          <div className="diagram-host" dangerouslySetInnerHTML={{ __html: sanitizeDiagramIds(note.diagram) }} />
         </div>
       )}
 
       {/* Pathophysiology / mechanism diagram */}
       {note.pathophysiologyDiagram && (
-        <div className="bg-gradient-to-br from-[var(--surface-dim)]/40 to-transparent border border-[var(--border)] rounded-2xl p-4 sm:p-6 shadow-sm overflow-x-auto flex justify-center">
-          <div className="w-full">
-            <div className="flex items-center gap-2 mb-3">
-              <div className="w-1 h-4 bg-[var(--primary)] rounded-full" />
-              <h4 className="text-xs font-black uppercase tracking-wider text-[var(--primary)]">Mechanism & Pathophysiology</h4>
-            </div>
-            <div dangerouslySetInnerHTML={{ __html: note.pathophysiologyDiagram }} className="[&_svg]:w-full [&_svg]:h-auto max-w-full" />
+        <div className="bg-gradient-to-br from-[var(--surface-dim)]/40 to-transparent border border-[var(--border)] rounded-2xl p-4 sm:p-6 shadow-sm overflow-hidden">
+          <div className="flex items-center gap-2 mb-3">
+            <div className="w-1 h-4 bg-[var(--primary)] rounded-full" />
+            <h4 className="text-xs font-black uppercase tracking-wider text-[var(--primary)]">Mechanism &amp; Pathophysiology</h4>
           </div>
+          <div className="diagram-host" dangerouslySetInnerHTML={{ __html: sanitizeDiagramIds(note.pathophysiologyDiagram) }} />
         </div>
       )}
 
-      {/* §32 FAQ */}
+      {/* Â§32 FAQ */}
       {note.faq?.length ? (
-        <Section title="Frequently Asked Questions">
+        <Section num="32" title="Frequently Asked Questions">
           <div className="space-y-3">
             {note.faq.map((f, i) => (
               <div key={i} className="border border-[var(--border)]/40 rounded-xl p-3">
@@ -2472,9 +2546,9 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       ) : null}
 
-      {/* §33 Clinical Case Example */}
+      {/* Â§33 Clinical Case Example */}
       {note.caseExample && (
-        <Section title="Clinical Case Example">
+        <Section num="33" title="Clinical Case Example">
           <div className="space-y-2">
             {note.caseExample.presentation && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Presentation</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.presentation}</p></div>}
             {note.caseExample.examination && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Examination</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.examination}</p></div>}
@@ -2487,9 +2561,9 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       )}
 
-      {/* §34 Self-Assessment (MCQs) */}
+      {/* Â§34 Self-Assessment (MCQs) */}
       {note.mcqs?.length ? (
-        <Section title="Self-Assessment Questions">
+        <Section num="34" title="Self-Assessment Questions">
           <div className="space-y-6">
             {note.mcqs.map((mcq, i) => (
               <MCQBlock key={i} mcq={mcq} index={i} />
@@ -2498,9 +2572,9 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       ) : null}
 
-      {/* §35 References */}
+      {/* Â§35 References */}
       {note.references?.length ? (
-        <Section title="References">
+        <Section num="35" title="References">
           <ol className="space-y-1.5 list-decimal list-inside">
             {note.references.map((r, i) => (
               <li key={i} className="text-xs text-[var(--text-muted)] leading-relaxed">{r}</li>
@@ -2509,9 +2583,9 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
         </Section>
       ) : null}
 
-      {/* §36 Metadata */}
+      {/* Â§36 Metadata */}
       {note.metadata && (
-        <Section title="Metadata">
+        <Section num="36" title="Metadata">
           <DefinitionList
             rows={[
               ...(note.metadata.lastUpdated ? [{ label: 'Last Updated', value: note.metadata.lastUpdated }] : []),
@@ -2526,7 +2600,6 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
     </div>
   )
 }
-
 function MCQBlock({ mcq, index }: { mcq: DiseaseNote['mcqs'][number]; index: number }) {
   const [selected, setSelected] = useState<string | null>(null)
   const [answered, setAnswered] = useState(false)
@@ -2592,7 +2665,7 @@ function MCQBlock({ mcq, index }: { mcq: DiseaseNote['mcqs'][number]; index: num
       ) : (
         <div className="space-y-2">
           <div className={`text-xs font-semibold ${selected?.charAt(0) === correctLetter ? 'text-emerald-600' : 'text-red-600'}`}>
-            {selected?.charAt(0) === correctLetter ? 'Correct' : `Incorrect — Answer: ${correctLetter}`}
+            {selected?.charAt(0) === correctLetter ? 'Correct' : `Incorrect â€” Answer: ${correctLetter}`}
           </div>
           <p className="text-[11px] text-[var(--text-muted)] leading-relaxed bg-[var(--surface-dim)]/50 rounded-lg p-3 border border-[var(--border)]/30">
             {mcq.explanation}
@@ -2780,19 +2853,19 @@ function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName,
                     onClick={() => handleRateDifficulty('hard')}
                     className={`flex-1 py-2 rounded-xl text-xs font-bold border cursor-pointer transition-all ${cards[currentIndex].difficulty === 'hard' ? 'bg-red-500 border-red-500 text-white' : 'border-red-200 text-red-500 hover:bg-red-50 dark:border-red-950 dark:hover:bg-red-950/30'}`}
                   >
-                    🟥 Hard (Review soon)
+                    ðŸŸ¥ Hard (Review soon)
                   </button>
                   <button
                     onClick={() => handleRateDifficulty('medium')}
                     className={`flex-1 py-2 rounded-xl text-xs font-bold border cursor-pointer transition-all ${cards[currentIndex].difficulty === 'medium' ? 'bg-amber-500 border-amber-500 text-white' : 'border-amber-200 text-amber-500 hover:bg-amber-50 dark:border-amber-950 dark:hover:bg-amber-950/30'}`}
                   >
-                    🟨 Medium (Daily recall)
+                    ðŸŸ¨ Medium (Daily recall)
                   </button>
                   <button
                     onClick={() => handleRateDifficulty('easy')}
                     className={`flex-1 py-2 rounded-xl text-xs font-bold border cursor-pointer transition-all ${cards[currentIndex].difficulty === 'easy' ? 'bg-emerald-500 border-emerald-500 text-white' : 'border-emerald-200 text-emerald-500 hover:bg-emerald-50 dark:border-emerald-950 dark:hover:bg-emerald-950/30'}`}
                   >
-                    🟩 Easy (Passed!)
+                    ðŸŸ© Easy (Passed!)
                   </button>
                 </div>
               </div>
@@ -3114,7 +3187,7 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName, us
               <div className="max-w-xs mx-auto p-4 bg-[var(--surface-dim)]/50 border border-[var(--border)]/40 rounded-2xl">
                 <span className="text-[10px] font-black uppercase tracking-wider text-[var(--text-muted)] block mb-1">Clinical Assessment Result:</span>
                 <span className="text-sm font-black text-[var(--text)]">
-                  {score === quizzes.length ? '🌟 Exemplary Diagnostic Accuracy!' : score >= 3 ? '📚 Solid Pharmacological Foundation' : '📖 Review Guidelines & Re-examine'}
+                  {score === quizzes.length ? 'ðŸŒŸ Exemplary Diagnostic Accuracy!' : score >= 3 ? 'ðŸ“š Solid Pharmacological Foundation' : 'ðŸ“– Review Guidelines & Re-examine'}
                 </span>
               </div>
 <div className="flex gap-4">
@@ -3347,7 +3420,7 @@ function WorkspaceResources({ unit, currentFolderId, currentFolderName }: { unit
                 </div>
                 {res.publisherUrl && (
                   <a href={res.publisherUrl} target="_blank" rel="noopener noreferrer" className="mt-2 w-full py-1.5 text-center text-[10px] font-bold text-[var(--primary)] bg-[var(--primary)]/5 hover:bg-[var(--primary)]/10 rounded-xl transition-colors" title="Open resource">
-                    Access Resource →
+                    Access Resource â†’
                   </a>
                 )}
               </div>

@@ -15,7 +15,6 @@ const OnlineLibraryScreen = React.lazy(() => import('./screens/OnlineLibraryScre
 const SettingsScreen = React.lazy(() => import('./screens/SettingsScreen'));
 const LoginScreen = React.lazy(() => import('./screens/LoginScreen'));
 const LandingScreen = React.lazy(() => import('./screens/LandingScreen'));
-const FormBuilderScreen = React.lazy(() => import('./screens/FormBuilderScreen'));
 
 import { useAuth } from './contexts/AuthContext';
 import ClinovaLogo from './components/ClinovaLogo';
@@ -242,7 +241,6 @@ function AppContent() {
               <Route path="/board-exam" element={<BoardExamScreen />} />
               <Route path="/board-exam/:setId" element={<BoardExamScreen />} />
               <Route path="/library" element={<OnlineLibraryScreen />} />
-              <Route path="/forms" element={<FormBuilderScreen />} />
               <Route path="/settings" element={<SettingsScreen />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>

@@ -270,7 +270,7 @@ export default function ClinicalCasesScreen() {
 
   const getInitials = (name?: string) => {
     if (!name) return ''
-    return name.split(' ').filter(Boolean).map(w => w[0]).join('').toUpperCase().slice(0, 3)
+    return name.split(' ').filter(Boolean).map(w => w[0].toUpperCase()).join('.') + '.'
   }
 
   const previewOf = (content: string) => {

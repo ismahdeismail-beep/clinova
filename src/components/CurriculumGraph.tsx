@@ -9,6 +9,13 @@ import {
 import { EDUCATION_MODULES as MODULES, getModuleUnits } from '../data/educationHubData';
 import { INITIAL_CASES, DISEASES_BY_SPECIALTY } from '../data/clinicalCasesData';
 
+const toInitials = (name?: string) => {
+  if (!name) return 'Anonymous';
+  const parts = name.trim().split(/\s+/).filter(Boolean);
+  if (parts.length === 0) return 'Anonymous';
+  return parts.map((w) => w[0].toUpperCase() + '.').join(' ');
+};
+
 // Define Node and Link interfaces for D3 Graph
 interface GraphNode extends d3.SimulationNodeDatum {
   id: string;
@@ -180,7 +187,7 @@ export default function CurriculumGraph() {
       
       nodes.push({
         id: c.id,
-        label: `${c.patientName} (${c.difficulty})`,
+        label: `${toInitials(c.patientName)} (${c.difficulty})`,
         type: 'case',
         description: `Patient Case study: ${c.title}. Chief Complaint: ${c.chiefComplaint}`,
         group: 'cases',
@@ -788,7 +795,7 @@ export default function CurriculumGraph() {
                             }}
                             className="p-2 border border-rose-200/50 hover:border-rose-400/60 bg-rose-500/[0.02] rounded-lg cursor-pointer flex justify-between items-center transition-colors group"
                           >
-                            <span className="text-[11px] font-extrabold text-slate-700 truncate">{c.patientName} ({c.difficulty})</span>
+                            <span className="text-[11px] font-extrabold text-slate-700 truncate">{toInitials(c.patientName)} ({c.difficulty})</span>
                             <ChevronRight size={12} className="text-rose-400 group-hover:translate-x-0.5 transition-all shrink-0" />
                           </div>
                         ))}
@@ -802,7 +809,7 @@ export default function CurriculumGraph() {
                       
                       <div className="flex justify-between text-[11px] border-b border-[var(--border)] pb-1.5">
                         <span className="text-[var(--text-muted)] font-extrabold">Patient:</span>
-                        <span className="text-[var(--text)] font-extrabold">{selectedNode.data.patientName}</span>
+                        <span className="text-[var(--text)] font-extrabold">{toInitials(selectedNode.data.patientName)}</span>
                       </div>
                       <div className="flex justify-between text-[11px] border-b border-[var(--border)] pb-1.5">
                         <span className="text-[var(--text-muted)] font-extrabold">Demographics:</span>

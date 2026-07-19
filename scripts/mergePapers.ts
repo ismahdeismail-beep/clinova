@@ -14,8 +14,9 @@ for (const f of files) {
 const out = `// AUTO-GENERATED mock exam papers (do not edit by hand).
 // Grounded in the real crawled past papers (src/data/examPrepCrawled.ts) plus the Clinova
 // clinical-case bank and KDI drug monographs, generated via Mistral (mistral-small-latest).
-// 8 clinical-pharmacy subjects x 2 papers each. Titles mirror the real past-paper names
-// (e.g. "Clinical Pharmacy — Respiratory & Renal"). No unit codes or school name included.
+// 8 clinical-pharmacy subjects x 3 papers each (standard format A=30 / B=40 / C=30 = 100 marks).
+// Titles mirror the real past-paper names (e.g. "Clinical Pharmacy — Respiratory & Renal").
+// No unit codes or school name included.
 import { type ExamUnitSpec } from './examPrepData';
 
 export interface GeneratedQuestion {

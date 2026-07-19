@@ -61,17 +61,25 @@ function buildSupport(s: any): string {
 
 function buildPrompt(s: any, variant: number, crawled: string, support: string) {
   const variantNote =
-    variant === 2
-      ? 'This is PAPER 2 — a SECOND, DISTINCT mock paper. Use DIFFERENT stems, vignettes, and distractors from Paper 1. Do not repeat Paper 1 questions.'
-      : 'This is PAPER 1 (the first mock paper).';
+    variant === 3
+      ? 'This is PAPER 3 — a THIRD, DISTINCT mock paper. Use DIFFERENT stems, vignettes, and distractors from Paper 1 and Paper 2. Do not repeat any earlier questions.'
+      : variant === 2
+        ? 'This is PAPER 2 — a SECOND, DISTINCT mock paper. Use DIFFERENT stems, vignettes, and distractors from Paper 1. Do not repeat Paper 1 questions.'
+        : 'This is PAPER 1 (the first mock paper).';
   const structureText = s.structure
     .map((x: any) => `SECTION ${x.letter}: ${x.name} - ${x.count} question(s), ${x.marks} marks. Instruction: ${x.instruction}`)
     .join('\n');
   const topicsText = s.topics.map((t: string, i: number) => `${i + 1}. ${t}`).join('\n');
   return `You are a senior clinical-pharmacy examiner. Generate a complete, realistic mock examination paper for: "${s.title}".
 
-EXAM STRUCTURE (follow EXACTLY — same sections, same question counts, same marks):
+EXAM STRUCTURE (follow EXACTLY — same sections, same question counts, same marks). This is the fixed standard format (total 100 marks):
 ${structureText}
+
+MANDATORY FORMAT RULES:
+- Section A: Multiple Choice Questions worth 30 marks total (provide 30 MCQs, each with exactly 4 options and one correct answer).
+- Section B: Short Answer Questions worth 40 marks total — provide EXACTLY 8 questions (5 marks each). A question MAY contain labelled subsections (e.g. a, b, c).
+- Section C: Long Answer Questions worth 30 marks total — provide EXACTLY 2 questions (15 marks each). Each question MAY contain labelled subsections (e.g. a, b, c) with mark allocations.
+- Do NOT deviate from these section marks or question counts.
 
 TOPIC AREAS THE PAPER MUST COVER (draw questions from these, weighted to the unit):
 ${topicsText}
@@ -131,7 +139,7 @@ const outDir = './scripts/out';
 if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true });
 
 const result: any = { [spec.id]: {} };
-for (const v of [1, 2]) {
+for (const v of [1, 2, 3]) {
   result[spec.id][v] = await generate(v);
   console.log(`OK ${spec.id} paper ${v}`);
 }

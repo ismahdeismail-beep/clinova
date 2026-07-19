@@ -12,6 +12,9 @@ import {
   X,
   PlusCircle,
   ArrowRight,
+  Mail,
+  MessageCircle,
+  Handshake,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
@@ -337,183 +340,54 @@ export default function DashboardScreen() {
 
             {/* Right Column */}
             <div className="space-y-4 md:space-y-8">
-              {/* Clinical Focus Profile & Preferences Adjuster */}
-              {userData && (
-                <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden backdrop-blur-md">
-                  <div className="p-5 border-b border-[var(--border)] flex items-center justify-between">
-                    <button onClick={() => navigate('/settings')} className="font-semibold text-[var(--text)] flex items-center gap-2 hover:text-[var(--primary)] transition-colors cursor-pointer text-left">
-                      <GraduationCap size={18} className="text-[var(--primary)]" />
-                      Clinical Focus Profile
-                    </button>
-                    <button 
-                      onClick={() => {
-                        setPrefLevel(userData.academicLevel || 'Year 1: Basic Medical Sciences');
-                        setPrefTopics(userData.clinicalInterests || ['Cardiology', 'Nephrology']);
-                        setIsEditingPrefs(!isEditingPrefs);
-                      }}
-                      className="text-xs font-bold text-[var(--primary)] hover:underline flex items-center gap-1 cursor-pointer"
-                    >
-                      {isEditingPrefs ? 'Cancel' : 'Adjust Focus ⚙️'}
-                    </button>
-                  </div>
-                  
-                  {!isEditingPrefs ? (
-                    <div className="p-5 space-y-4">
-                      <div>
-                        <p className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-semibold">Academic Stage</p>
-                        <p className="text-sm font-bold text-[var(--text)] mt-0.5">{userData.academicLevel || 'Year 1: Basic Medical Sciences'}</p>
-                      </div>
-                      <div>
-                        <p className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-semibold mb-1.5">Clinical Interests</p>
-                        <div className="flex flex-wrap gap-1.5">
-                          {userData.clinicalInterests && userData.clinicalInterests.length > 0 ? (
-                            Array.from(new Set(userData.clinicalInterests)).map((interest) => (
-                              <span key={interest} className="text-xs bg-[var(--primary-container)]/50 text-[var(--primary)] px-2.5 py-1 rounded-xl font-medium border border-[var(--primary)]/10">
-                                {interest}
-                              </span>
-                            ))
-                          ) : (
-                            <span className="text-xs text-[var(--text-muted)]">No systems selected. Click adjust to personalize.</span>
-                          )}
-                        </div>
-                      </div>
-                      <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
-                        Clinova dynamically filters rotation scenarios, Care Plan guidelines, and reference booklets based on these preferences.
-                      </p>
-                    </div>
-                  ) : (
-                    <div className="p-5 space-y-4 bg-[var(--surface-dim)]/50 animate-in fade-in duration-200">
-                      <div>
-                        <label className="text-xs font-bold text-[var(--text)] block mb-1">Academic Stage</label>
-                        <select 
-                          value={prefLevel} 
-                          onChange={(e) => setPrefLevel(e.target.value)}
-                          className="w-full text-xs p-2.5 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-[var(--text)] focus:border-[var(--primary)] outline-none cursor-pointer"
-                        >
-                          <option value="Year 1: Basic Medical Sciences">Year 1: Basic Medical Sciences</option>
-                          <option value="Year 2: Foundational Pharmacology">Year 2: Foundational Pharmacology</option>
-                          <option value="Year 3: Systems & Clinical Intro">Year 3: Systems Pharmacology &amp; Clinical Practice</option>
-                          <option value="Year 4: Advanced Systems & ID">Year 4: Advanced Systems &amp; Infectious Diseases</option>
-                          <option value="Year 5: Specialty &amp; Toxicology">Year 5: Specialty Therapeutics &amp; Clinical Practice</option>
-                          <option value="Graduate / Clinical Pharmacist">Graduate / Healthcare Professional</option>
-                        </select>
-                      </div>
-                      
-                       <div>
-                        <label className="text-xs font-bold text-[var(--text)] block mb-1">Clinical Systems &amp; Topics</label>
-                        
-                        {/* Interactive Search for Clinical Interests */}
-                        <div className="space-y-2.5">
-                          <div className="relative">
-                            <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" />
-                            <input
-                              type="text"
-                              value={prefsSearchQuery}
-                              onChange={(e) => setPrefsSearchQuery(e.target.value)}
-                              placeholder="Search or type custom focus..."
-                              className="w-full text-xs pl-8 pr-8 py-2 bg-[var(--surface)] border border-[var(--border)] focus:border-[var(--primary)] outline-none rounded-xl text-[var(--text)]"
-                            />
-                            {prefsSearchQuery && (
-                              <button
-                                type="button"
-                                onClick={() => setPrefsSearchQuery('')}
-                                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)] hover:text-[var(--text)] p-0.5 rounded-full hover:bg-[var(--surface-dim)]"
-                              >
-                                <X size={12} />
-                              </button>
-                            )}
-                          </div>
-
-                          {/* Custom Topic Generator Prompt */}
-                          {prefsSearchQuery.trim() && !(ALL_CLINICAL_SYSTEMS.some(s => s.toLowerCase() === prefsSearchQuery.trim().toLowerCase()) || prefTopics.some(t => t.toLowerCase() === prefsSearchQuery.trim().toLowerCase())) && (
-                            <button
-                              type="button"
-                              onClick={() => {
-                                const trimmed = prefsSearchQuery.trim();
-                                const formatted = trimmed.charAt(0).toUpperCase() + trimmed.slice(1);
-                                setPrefTopics(prev => prev.includes(formatted) ? prev : [...prev, formatted]);
-                                setPrefsSearchQuery('');
-                              }}
-                              className="w-full text-left p-2.5 bg-[var(--primary-container)]/10 border border-dashed border-[var(--primary)]/30 rounded-xl text-xs font-semibold text-[var(--primary)] hover:border-[var(--primary)]/50 transition-all flex items-center justify-between group cursor-pointer"
-                            >
-                              <span className="flex items-center gap-1.5 min-w-0">
-                                <PlusCircle size={14} className="shrink-0" />
-                                <span className="truncate">Add custom: "{prefsSearchQuery.trim()}"</span>
-                              </span>
-                              <ChevronRight size={14} className="text-[var(--primary)] group-hover:translate-x-0.5 transition-transform shrink-0" />
-                            </button>
-                          )}
-
-                          {/* Active Focus Badges */}
-                          {prefTopics.length > 0 && (
-                            <div className="flex flex-wrap gap-1 items-center p-1.5 rounded-xl bg-[var(--surface)] border border-[var(--border)]/40 max-h-[100px] overflow-y-auto">
-                              {Array.from(new Set(prefTopics)).map(topic => (
-                                <span key={topic} className="inline-flex items-center gap-1 text-[10px] bg-[var(--primary-container)]/50 text-[var(--primary)] font-semibold px-2 py-0.5 rounded-lg border border-[var(--primary)]/10 animate-in zoom-in-95 duration-100">
-                                  {topic}
-                                  <button
-                                    type="button"
-                                    onClick={() => setPrefTopics(prev => prev.filter(t => t !== topic))}
-                                    className="hover:bg-[var(--primary)]/20 p-0.5 rounded-full text-[var(--primary)] transition-colors cursor-pointer"
-                                  >
-                                    <X size={8} strokeWidth={3} />
-                                  </button>
-                                </span>
-                              ))}
-                            </div>
-                          )}
-
-                          {/* Suggestions grid with matching */}
-                          <div className="grid grid-cols-2 gap-1.5 pt-1 max-h-[150px] overflow-y-auto pr-1">
-                            {Array.from(new Set([...ALL_CLINICAL_SYSTEMS, ...prefTopics]))
-                              .filter(system => {
-                                const q = prefsSearchQuery.toLowerCase();
-                                return system.toLowerCase().includes(q);
-                              })
-                              .map((system) => {
-                                const isChecked = prefTopics.includes(system);
-                                return (
-                                  <button
-                                    key={system}
-                                    type="button"
-                                    onClick={() => {
-                                      setPrefTopics(prev => 
-                                        prev.includes(system) 
-                                          ? prev.filter(t => t !== system) 
-                                          : [...prev, system]
-                                      );
-                                    }}
-                                    className={`px-2 py-1.5 rounded-lg border text-left text-[11px] font-medium transition-all cursor-pointer truncate ${
-                                      isChecked 
-                                        ? 'border-[var(--primary)] bg-[var(--primary-container)]/25 text-[var(--primary)] font-semibold' 
-                                        : 'border-[var(--border)] bg-[var(--surface)] text-[var(--text-muted)]'
-                                    }`}
-                                  >
-                                    {isChecked ? '✓ ' : ''}{system}
-                                  </button>
-                                );
-                              })}
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <button
-                        type="button"
-                        onClick={async () => {
-                          if (prefTopics.length === 0) {
-                            alert("Please select at least one clinical system/topic of interest.");
-                            return;
-                          }
-                          await updatePreferences(prefTopics, prefLevel);
-                          setIsEditingPrefs(false);
-                        }}
-                        className="w-full py-2 bg-[var(--primary)] hover:opacity-95 text-[var(--primary-foreground)] font-bold text-xs rounded-xl shadow-sm cursor-pointer transition-all"
-                      >
-                        Save Adaptations
-                      </button>
-                    </div>
-                  )}
+              {/* Contact & Feedback */}
+              <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden backdrop-blur-md">
+                <div className="p-5 border-b border-[var(--border)]">
+                  <h3 className="font-semibold text-[var(--text)] flex items-center gap-2">
+                    <MessageCircle size={18} className="text-[var(--primary)]" />
+                    Contact & Feedback
+                  </h3>
+                  <p className="text-[11px] text-[var(--text-muted)] leading-relaxed mt-1">
+                    Have a suggestion, complaint, or a collaboration / investment opportunity? Reach out to us directly.
+                  </p>
                 </div>
-              )}
+                <div className="divide-y divide-[var(--border)]">
+                  <a
+                    href="mailto:ismahdeismail@gmail.com?subject=Clinova%20Feedback"
+                    className="p-4 flex items-center gap-3 hover:bg-[var(--surface-dim)] transition-colors group"
+                  >
+                    <span className="w-9 h-9 rounded-xl bg-[var(--primary-container)]/40 text-[var(--primary)] flex items-center justify-center shrink-0">
+                      <Mail size={16} />
+                    </span>
+                    <div className="min-w-0">
+                      <p className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-semibold">Email</p>
+                      <p className="text-sm font-medium text-[var(--text)] truncate group-hover:text-[var(--primary)] transition-colors">ismahdeismail@gmail.com</p>
+                    </div>
+                  </a>
+                  <a
+                    href="https://wa.me/254115516281"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-4 flex items-center gap-3 hover:bg-[var(--surface-dim)] transition-colors group"
+                  >
+                    <span className="w-9 h-9 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0">
+                      <MessageCircle size={16} />
+                    </span>
+                    <div className="min-w-0">
+                      <p className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-semibold">WhatsApp</p>
+                      <p className="text-sm font-medium text-[var(--text)] truncate group-hover:text-[var(--primary)] transition-colors">+254 115 516 281</p>
+                    </div>
+                  </a>
+                  <div className="p-4 flex items-center gap-3">
+                    <span className="w-9 h-9 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center shrink-0">
+                      <Handshake size={16} />
+                    </span>
+                    <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
+                      Open to partnerships, collaboration, and investment opportunities.
+                    </p>
+                  </div>
+                </div>
+              </div>
               {/* Quick Clinical References */}
               <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden backdrop-blur-md">
                 <div className="p-5 border-b border-[var(--border)]">

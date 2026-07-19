@@ -1113,7 +1113,7 @@ export default function ClinicalCasesScreen() {
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-3">
                       <div>
                         <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Patient</h4>
-                        <p className="text-base font-bold text-[var(--primary)]" title={selectedCase.patientName}>{getInitials(selectedCase.patientName)}</p>
+                        <p className="text-base font-bold text-[var(--primary)]">{getInitials(selectedCase.patientName)}</p>
                       </div>
                       <div>
                         <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Facility</h4>

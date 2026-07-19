@@ -21,6 +21,65 @@ const opts = (v: any): string[] => {
   return [txt(v)];
 };
 
+// Split a bulky answer string into logical points without altering the wording.
+const toPoints = (v: any): string[] => {
+  const s = txt(v).trim();
+  if (!s) return [];
+  // Prefer existing line breaks / bullet markers.
+  let parts = s
+    .split(/\r?\n+|(?:^|\s)[•\-\u2022]\s+|\s*;\s+|\s+\d+[.)]\s+/g)
+    .map((p) => p.replace(/^[•\-\u2022\s]+/, '').trim())
+    .filter(Boolean);
+  // Fall back to sentence splitting only if it stays a single long block.
+  if (parts.length <= 1) {
+    parts = s
+      .split(/(?<=[.!?])\s+(?=[A-Z0-9])/g)
+      .map((p) => p.trim())
+      .filter(Boolean);
+  }
+  return parts.length ? parts : [s];
+};
+
+// Highlight doses, strengths and frequencies inside an answer point.
+const DOSE_RE = /(\d[\d.,]*\s?(?:mg|mcg|µg|g|kg|ml|mL|L|IU|units?|%|mmol|mEq)(?:\/(?:kg|day|dose|hr|h|min|m2|m²))?|\b(?:od|bd|tds|qds|q\d+h|prn|stat|iv|im|sc|po)\b)/gi;
+function HighlightDose({ text }: { text: string }) {
+  const nodes: React.ReactNode[] = [];
+  let last = 0;
+  let m: RegExpExecArray | null;
+  DOSE_RE.lastIndex = 0;
+  while ((m = DOSE_RE.exec(text)) !== null) {
+    if (m.index > last) nodes.push(text.slice(last, m.index));
+    nodes.push(
+      <span key={m.index} className="font-semibold text-indigo-600">
+        {m[0]}
+      </span>,
+    );
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return <>{nodes}</>;
+}
+
+function AnswerBody({ value }: { value: any }) {
+  const points = toPoints(value);
+  if (points.length <= 1) {
+    return (
+      <span className="text-emerald-700">
+        <HighlightDose text={points[0] || ''} />
+      </span>
+    );
+  }
+  return (
+    <ul className="mt-1 space-y-1 list-disc list-inside marker:text-emerald-500">
+      {points.map((p, i) => (
+        <li key={i} className="text-emerald-700 leading-relaxed">
+          <HighlightDose text={p} />
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
   const [showAnswers, setShowAnswers] = useState(false);
   const paper: GeneratedPaper | undefined = getExamPrepPaper(spec.id, variant);
@@ -62,11 +121,16 @@ function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
     );
   }
 
+  const paperLabel = variant === 1 ? 'Paper One' : variant === 2 ? 'Paper Two' : `Paper ${variant}`;
+
   return (
-    <div className="border border-[var(--border)] rounded-xl p-4 bg-[var(--surface)]">
-      <div className="flex items-center justify-between gap-3 flex-wrap">
+    <div className="border-2 border-[var(--border)] rounded-2xl bg-[var(--surface)] overflow-hidden">
+      <div className="flex items-center justify-between gap-3 flex-wrap bg-[var(--primary)]/5 border-b border-[var(--border)] px-4 py-3">
         <div className="flex items-center gap-2">
-          <span className="text-sm font-bold text-[var(--primary)]">Mock Paper {variant}</span>
+          <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold">
+            {variant}
+          </span>
+          <span className="text-sm font-bold text-[var(--primary)]">{paperLabel}</span>
           <span className="text-[11px] text-[var(--text-muted)]">
             {spec.structure.reduce((a, s) => a + s.count, 0)} questions ·{' '}
             {spec.structure.reduce((a, s) => a + s.marks, 0)} marks
@@ -110,9 +174,11 @@ function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
                     </ul>
                   )}
                   {showAnswers && (q.answer || q.modelAnswer) && (
-                    <div className="mt-1 ml-5 text-[12px] text-emerald-600">
-                      <span className="font-semibold">Answer: </span>
-                      {txt(q.answer || q.modelAnswer)}
+                    <div className="mt-1.5 ml-5 text-[12px] rounded-lg border border-emerald-500/20 bg-emerald-500/5 px-3 py-2">
+                      <span className="font-semibold text-emerald-700 uppercase tracking-wide text-[10px]">Answer</span>
+                      <div className="mt-0.5">
+                        <AnswerBody value={q.answer || q.modelAnswer} />
+                      </div>
                     </div>
                   )}
                   {showAnswers && q.explanation && (
@@ -186,9 +252,10 @@ function ExamSubjectCard({ spec }: { spec: ExamUnitSpec }) {
           </div>
 
           <div className="space-y-3">
-            <div className="text-[12px] font-bold text-[var(--text)]">Two mock papers (pre-generated)</div>
+            <div className="text-[12px] font-bold text-[var(--text)]">Three mock papers (pre-generated)</div>
             <PaperCard spec={spec} variant={1} />
             <PaperCard spec={spec} variant={2} />
+            <PaperCard spec={spec} variant={3} />
           </div>
         </div>
       )}
@@ -206,9 +273,9 @@ export default function ExamPrepView({ subjectId }: { subjectId?: string }) {
       </div>
       <p className="text-sm text-[var(--text-muted)]">
         Practice papers modelled on the real clinical-pharmacy exam pattern. Each subject shows the section
-        structure and topic areas drawn from the most recent past paper, then provides two full mock papers
-        (Section A MCQs, Section B short answers, Section C long answers) generated from that exam's content.
-        Toggle answers to self-mark.
+        structure and topic areas drawn from the most recent past paper, then provides three full mock papers
+        (Section A MCQs — 30 marks, Section B short answers — 8 questions / 40 marks, Section C long answers —
+        2 questions / 30 marks) generated from that exam's content. Toggle answers to self-mark.
       </p>
       <div className="space-y-4">
         {specs.map((spec) => (

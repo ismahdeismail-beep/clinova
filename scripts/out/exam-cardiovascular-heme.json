@@ -7,21 +7,21 @@
         {
           "letter": "A",
           "name": "Multiple Choice Questions",
-          "marks": 60,
+          "marks": 30,
           "questions": [
             {
-              "stem": "Which physical sign is most specific for detecting mild to moderate anemia in a dark-skinned patient?",
+              "stem": "Which physical sign is most specific for detecting moderate to severe anemia in a dark-skinned patient?",
               "options": [
                 "Pallor of the conjunctiva",
-                "Pallor of the sclera",
-                "Pallor of the buccal mucosa",
-                "Pallor of the tongue"
+                "Cyanosis of the lips",
+                "Yellow discoloration of the sclera",
+                "Dryness of the oral mucosa"
               ],
               "answer": "Pallor of the conjunctiva",
-              "explanation": "Conjunctival pallor is the most reliable clinical sign for detecting mild to moderate anemia, particularly in dark-skinned individuals."
+              "explanation": "Conjunctival pallor is the most reliable clinical sign for detecting moderate to severe anemia, especially in patients with darker skin tones."
             },
             {
-              "stem": "A 68-year-old male presents with a heart rate of 48 bpm. Which of the following medications is most likely responsible for his bradycardia?",
+              "stem": "Which of the following drugs is a common cause of bradycardia?",
               "options": [
                 "Amlodipine",
                 "Digoxin",
@@ -29,43 +29,43 @@
                 "Hydrochlorothiazide"
               ],
               "answer": "Digoxin",
-              "explanation": "Digoxin slows atrioventricular conduction and increases vagal tone, leading to bradycardia."
+              "explanation": "Digoxin slows atrioventricular conduction and increases vagal tone, leading to bradycardia, especially at toxic levels."
             },
             {
-              "stem": "A 55-year-old patient with a history of rheumatic heart disease presents with exertional dyspnea and fatigue. Which imaging modality is most appropriate to assess valvular structure and function?",
+              "stem": "Which investigation is most appropriate for detecting structural abnormalities of the heart valves?",
               "options": [
-                "Chest X-ray",
                 "Electrocardiogram (ECG)",
+                "Chest X-ray",
                 "Echocardiography (ECHO)",
-                "Cardiac MRI"
+                "Magnetic Resonance Imaging (MRI)"
               ],
               "answer": "Echocardiography (ECHO)",
-              "explanation": "Echocardiography is the gold standard for evaluating valvular structure, function, and hemodynamic consequences."
+              "explanation": "Echocardiography provides real-time imaging of cardiac structures, including valves, and is the gold standard for detecting valvular abnormalities."
             },
             {
-              "stem": "A patient’s blood pressure is recorded as 180/110 mmHg. What is the mean arterial pressure (MAP) in this patient?",
+              "stem": "Calculate the mean arterial pressure (MAP) for a patient with a blood pressure of 150/90 mmHg.",
               "options": [
-                "133 mmHg",
-                "140 mmHg",
-                "150 mmHg",
-                "160 mmHg"
+                "110 mmHg",
+                "120 mmHg",
+                "130 mmHg",
+                "140 mmHg"
               ],
-              "answer": "140 mmHg",
-              "explanation": "MAP = (SBP + 2×DBP)/3 = (180 + 2×110)/3 = 140 mmHg."
+              "answer": "110 mmHg",
+              "explanation": "MAP = (2 × diastolic BP + systolic BP) / 3 = (2 × 90 + 150) / 3 = 110 mmHg."
             },
             {
-              "stem": "A patient’s blood pressure is 138/92 mmHg. According to the WHO classification, this is classified as:",
+              "stem": "A patient has a blood pressure of 140/95 mmHg. According to the WHO classification, this is classified as:",
               "options": [
                 "Normal",
                 "Pre-hypertension",
-                "Stage 1 hypertension",
-                "Stage 2 hypertension"
+                "Stage I hypertension",
+                "Stage II hypertension"
               ],
-              "answer": "Stage 1 hypertension",
-              "explanation": "Stage 1 hypertension is defined as SBP 140–159 mmHg or DBP 90–99 mmHg."
+              "answer": "Stage I hypertension",
+              "explanation": "Stage I hypertension is defined as systolic BP 140–159 mmHg or diastolic BP 90–99 mmHg."
             },
             {
-              "stem": "A 52-year-old diabetic patient with nephropathy has a blood pressure of 148/88 mmHg. What is the recommended blood pressure target for this patient?",
+              "stem": "What is the recommended blood pressure target for a diabetic patient with nephropathy?",
               "options": [
                 "<140/85 mmHg",
                 "<130/80 mmHg",
@@ -73,29 +73,29 @@
                 "<140/100 mmHg"
               ],
               "answer": "<130/80 mmHg",
-              "explanation": "For diabetic patients with nephropathy, the target BP is <130/80 mmHg to reduce progression of kidney disease."
+              "explanation": "Guidelines recommend a target BP of <130/80 mmHg in diabetic patients with nephropathy to reduce progression of kidney disease."
             },
             {
               "stem": "What is the most common cause of secondary hypertension?",
               "options": [
-                "Aortic coarctation",
+                "Aortic stenosis",
+                "Drug-induced",
                 "Renoparenchymal disease",
-                "Primary hyperaldosteronism",
                 "Cushing syndrome"
               ],
               "answer": "Renoparenchymal disease",
-              "explanation": "Renoparenchymal disease (e.g., chronic kidney disease) is the most common cause of secondary hypertension."
+              "explanation": "Chronic kidney disease is the most common cause of secondary hypertension, accounting for approximately 5–10% of all hypertension cases."
             },
             {
-              "stem": "Which antihypertensive agent is contraindicated in a patient with asthma?",
+              "stem": "Which antihypertensive is contraindicated in a patient with asthma?",
               "options": [
                 "Amlodipine",
                 "Labetalol",
                 "Hydralazine",
-                "Losartan"
+                "Enalapril"
               ],
               "answer": "Labetalol",
-              "explanation": "Labetalol is a non-selective beta-blocker and can precipitate bronchospasm in asthmatic patients."
+              "explanation": "Non-selective beta-blockers like labetalol can exacerbate bronchospasm in asthmatic patients and are contraindicated."
             },
             {
               "stem": "Which diuretic is the drug of choice for reducing acute pulmonary edema in heart failure?",
@@ -106,7 +106,7 @@
                 "Amiloride"
               ],
               "answer": "Furosemide",
-              "explanation": "Furosemide is a loop diuretic that rapidly reduces fluid overload in acute pulmonary edema."
+              "explanation": "Loop diuretics like furosemide are preferred for rapid diuresis in acute pulmonary edema due to their potent natriuretic effect."
             },
             {
               "stem": "Which adverse effect is NOT associated with thiazide diuretics?",
@@ -117,18 +117,18 @@
                 "Hyperglycemia"
               ],
               "answer": "Hypoglycemia",
-              "explanation": "Thiazides can cause hyperglycemia, hyperlipidemia, and hyperuricemia, but not hypoglycemia."
+              "explanation": "Thiazides can cause hyperglycemia, hyperlipidemia, and hyperuricemia but do not typically cause hypoglycemia."
             },
             {
               "stem": "Angiotensin-converting enzyme (ACE) inhibitors are contraindicated in all of the following EXCEPT:",
               "options": [
+                "Aortic stenosis",
                 "Bilateral renal artery stenosis",
                 "First trimester of pregnancy",
-                "Aortic stenosis",
                 "Asthma"
               ],
               "answer": "Asthma",
-              "explanation": "ACE inhibitors are not contraindicated in asthma; they may even be beneficial in some cases."
+              "explanation": "ACE inhibitors are contraindicated in bilateral renal artery stenosis, aortic stenosis, and pregnancy but not specifically in asthma."
             },
             {
               "stem": "Acebutolol is classified as a:",
@@ -136,13 +136,13 @@
                 "Non-selective beta-blocker",
                 "Cardioselective beta-blocker",
                 "Beta-blocker with vasodilatory properties",
-                "Alpha-1 blocker"
+                "None of the above"
               ],
               "answer": "Cardioselective beta-blocker",
               "explanation": "Acebutolol is a cardioselective beta-1 blocker with intrinsic sympathomimetic activity."
             },
             {
-              "stem": "Which combination is most suitable for managing congestive cardiac failure?",
+              "stem": "Which combination is most appropriate for the management of congestive heart failure?",
               "options": [
                 "ACE inhibitor and furosemide",
                 "Beta-blocker and thiazide diuretic",
@@ -150,7 +150,7 @@
                 "Spironolactone and nitrate"
               ],
               "answer": "ACE inhibitor and furosemide",
-              "explanation": "ACE inhibitors reduce afterload and mortality, while loop diuretics (e.g., furosemide) reduce fluid overload."
+              "explanation": "ACE inhibitors and loop diuretics are the cornerstone of heart failure management, with beta-blockers added for long-term benefits."
             },
             {
               "stem": "Toxic effects of calcium channel blockers include:",
@@ -161,7 +161,7 @@
                 "Hyperglycemia"
               ],
               "answer": "Atrioventricular block and congestive heart failure",
-              "explanation": "Calcium channel blockers (e.g., verapamil, diltiazem) can cause AV block and negative inotropy leading to heart failure."
+              "explanation": "Calcium channel blockers can cause bradycardia, AV block, and exacerbate heart failure due to negative inotropic effects."
             },
             {
               "stem": "Reflex tachycardia is seen with the use of all EXCEPT:",
@@ -172,10 +172,10 @@
                 "Minoxidil"
               ],
               "answer": "Propranolol",
-              "explanation": "Propranolol is a beta-blocker that reduces heart rate and counteracts reflex tachycardia."
+              "explanation": "Propranolol is a beta-blocker that reduces heart rate and does not cause reflex tachycardia."
             },
             {
-              "stem": "The preferred medication for severe hypertension in pregnancy is:",
+              "stem": "Which medication is preferred for severe hypertension in pregnancy?",
               "options": [
                 "Methyldopa",
                 "Hydralazine",
@@ -183,43 +183,43 @@
                 "Enalapril"
               ],
               "answer": "Methyldopa",
-              "explanation": "Methyldopa is the drug of choice for hypertension in pregnancy due to its safety profile."
+              "explanation": "Methyldopa is the preferred antihypertensive in pregnancy due to its safety profile and established use."
             },
             {
-              "stem": "Regarding hypertensive crisis:",
+              "stem": "Regarding hypertensive crisis, which statement is TRUE?",
               "options": [
-                "Hypertensive urgencies require immediate blood pressure reduction",
-                "Hypertensive emergencies are managed with oral agents",
-                "Immediate-release nifedipine is recommended for hypertensive emergencies",
-                "Hypertensive emergencies are associated with end-organ damage"
+                "Urgencies are associated with end-organ damage",
+                "Immediate blood pressure reduction is recommended in hypertensive urgencies",
+                "Hypertensive emergency is managed using oral therapy",
+                "Immediate-release nifedipine should be avoided"
               ],
-              "answer": "Hypertensive emergencies are associated with end-organ damage",
-              "explanation": "Hypertensive emergencies require immediate BP reduction to prevent organ damage; urgencies do not."
+              "answer": "Immediate-release nifedipine should be avoided",
+              "explanation": "Immediate-release nifedipine is associated with unpredictable drops in BP and adverse events; it should be avoided in hypertensive emergencies."
             },
             {
               "stem": "Which statement about dyslipidemias is UNTRUE?",
               "options": [
-                "Diet and genetics play a role in their development",
-                "They are major contributors to atherosclerosis and plaque formation",
+                "Diet and genetics play a role",
+                "They are major players in atherosclerosis and plaque formation",
                 "Cholesterol screening should start as soon as cardiovascular disorders occur",
                 "Pediatric screening is largely based on genetics and risk factors"
               ],
               "answer": "Cholesterol screening should start as soon as cardiovascular disorders occur",
-              "explanation": "Cholesterol screening should begin in childhood (age 9–11) regardless of cardiovascular disease status."
+              "explanation": "Cholesterol screening should begin in childhood (age 9–11) and continue periodically, not only after cardiovascular disorders occur."
             },
             {
-              "stem": "Familial hypercholesterolemia is associated with:",
+              "stem": "Familial hypercholesterolemia is associated with a mutation in the gene coding for:",
               "options": [
-                "Normally functioning LDL receptors",
-                "A defect in Apolipoprotein B-100",
-                "A mutation in the gene coding for the LDL receptor",
-                "A defect in Apolipoprotein E"
+                "Apolipoprotein B-100",
+                "Apolipoprotein E",
+                "LDL receptor",
+                "HMG-CoA reductase"
               ],
-              "answer": "A mutation in the gene coding for the LDL receptor",
+              "answer": "LDL receptor",
               "explanation": "Familial hypercholesterolemia is caused by mutations in the LDL receptor gene, leading to impaired LDL clearance."
             },
             {
-              "stem": "Which drug is NOT associated with hyperlipidemia?",
+              "stem": "Which drug is NOT typically associated with hyperlipidemia?",
               "options": [
                 "Cyclosporine",
                 "Protease inhibitors",
@@ -227,7 +227,7 @@
                 "Isotretinoin"
               ],
               "answer": "Prazosin",
-              "explanation": "Prazosin is an alpha-1 blocker and is not associated with hyperlipidemia."
+              "explanation": "Prazosin is an alpha-1 blocker and is not associated with hyperlipidemia, unlike cyclosporine, protease inhibitors, and isotretinoin."
             },
             {
               "stem": "HDL levels can be increased by all EXCEPT:",
@@ -238,18 +238,18 @@
                 "Diets high in polyunsaturated fatty acids"
               ],
               "answer": "Ezetimibe",
-              "explanation": "Ezetimibe lowers LDL but does not significantly increase HDL levels."
+              "explanation": "Ezetimibe primarily lowers LDL cholesterol and does not significantly increase HDL levels."
             },
             {
-              "stem": "HMG-CoA reductase inhibitors:",
+              "stem": "HMG-CoA reductase inhibitors are characterized by all EXCEPT:",
               "options": [
-                "Bind intestinal bile acids",
-                "Are the most potent and among the best tolerated lipid-lowering agents",
-                "Can be used in pregnancy",
-                "Adverse effects include flushing and pruritus"
+                "They are the most potent and among best tolerated lipid-lowering agents",
+                "They bind intestinal bile acids",
+                "Adverse effects include myopathy and hepatotoxicity",
+                "They are contraindicated in pregnancy"
               ],
-              "answer": "Are the most potent and among the best tolerated lipid-lowering agents",
-              "explanation": "Statins are the most potent LDL-lowering agents and are generally well tolerated."
+              "answer": "They bind intestinal bile acids",
+              "explanation": "HMG-CoA reductase inhibitors (statins) inhibit cholesterol synthesis; bile acid sequestrants bind bile acids."
             },
             {
               "stem": "Which statement about angina is TRUE?",
@@ -260,7 +260,7 @@
                 "Stable angina requires hospital admission and aggressive therapy"
               ],
               "answer": "Prinzmetal’s angina occurs at rest, especially in the early morning hours",
-              "explanation": "Prinzmetal’s (variant) angina is caused by coronary artery spasm and typically occurs at rest."
+              "explanation": "Prinzmetal’s (variant) angina is caused by coronary artery spasm and typically occurs at rest, often in the early morning."
             },
             {
               "stem": "Which drug is NOT used to prevent recurrent ischemic symptoms?",
@@ -271,29 +271,29 @@
                 "Nitrates"
               ],
               "answer": "Thiazide diuretics",
-              "explanation": "Thiazides are not indicated for preventing ischemic symptoms; they are used for hypertension and edema."
+              "explanation": "Thiazide diuretics are not indicated for preventing recurrent ischemic symptoms; they are used for hypertension and edema."
             },
             {
-              "stem": "Which statement about ischemic heart disease management is UNTRUE?",
+              "stem": "Which statement about ischemic heart disease management is FALSE?",
               "options": [
-                "Pharmacotherapy targets reduction in cardiac workload",
+                "Pharmacotherapy targets a reduction in cardiac workload",
                 "Statins should only be used in patients with elevated LDL levels",
                 "ACE inhibitors have shown benefit in ischemic heart disease combined with hypertension",
                 "Control of modifiable risk factors is important"
               ],
               "answer": "Statins should only be used in patients with elevated LDL levels",
-              "explanation": "Statins are beneficial in ischemic heart disease regardless of baseline LDL levels due to pleiotropic effects."
+              "explanation": "Statins are beneficial even in patients with normal LDL levels due to their pleiotropic effects on inflammation and plaque stabilization."
             },
             {
-              "stem": "Which statement about antiplatelet drugs in angina is UNTRUE?",
+              "stem": "Which statement about antiplatelet drugs in angina is FALSE?",
               "options": [
                 "Aspirin reduces the risk of major adverse cardiac events",
-                "Aspirin doses >162 mg have no additional therapeutic benefit",
+                "Aspirin doses >162 mg have no additional benefit",
                 "Clopidogrel is preferred in aspirin allergy",
-                "Combination of aspirin and clopidogrel is recommended in patients with stents"
+                "Combination of aspirin and clopidogrel is recommended in all patients with stents"
               ],
-              "answer": "Aspirin doses >162 mg have no additional therapeutic benefit",
-              "explanation": "Higher aspirin doses (>162 mg) do not provide additional benefit and increase bleeding risk."
+              "answer": "Combination of aspirin and clopidogrel is recommended in all patients with stents",
+              "explanation": "Dual antiplatelet therapy (DAPT) is recommended for a limited duration post-stent placement (e.g., 6–12 months), not indefinitely."
             },
             {
               "stem": "Which statement about short-acting nitrates in angina is TRUE?",
@@ -301,13 +301,13 @@
                 "They have a delayed onset of action",
                 "They can be used as maintenance therapy in chronic stable angina",
                 "Adverse effects include lightheadedness",
-                "They can be used in combination with phosphodiesterase enzyme inhibitors"
+                "They can be used with phosphodiesterase-5 inhibitors"
               ],
               "answer": "Adverse effects include lightheadedness",
-              "explanation": "Short-acting nitrates cause vasodilation, leading to lightheadedness and hypotension."
+              "explanation": "Short-acting nitrates cause vasodilation, leading to lightheadedness, headache, and hypotension; they are contraindicated with PDE-5 inhibitors."
             },
             {
-              "stem": "Which statement about calcium channel blockers in angina is UNTRUE?",
+              "stem": "Which statement about calcium channel blockers in angina is FALSE?",
               "options": [
                 "They can be used with beta blockers when initial treatment is unsuccessful",
                 "They are recommended when beta blockers are contraindicated",
@@ -315,10 +315,10 @@
                 "None of the above"
               ],
               "answer": "None of the above",
-              "explanation": "All statements are true; calcium channel blockers can be combined with beta blockers for angina management."
+              "explanation": "All statements are true; calcium channel blockers can be combined with beta blockers for improved symptom control in angina."
             },
             {
-              "stem": "Symptoms of left heart failure include all EXCEPT:",
+              "stem": "Which symptom is NOT typical of left heart failure?",
               "options": [
                 "Fatigue",
                 "Nocturia",
@@ -326,10 +326,10 @@
                 "Cough"
               ],
               "answer": "Nocturia",
-              "explanation": "Nocturia is more characteristic of right heart failure due to fluid redistribution at night."
+              "explanation": "Nocturia is more common in right heart failure due to fluid redistribution when lying down, whereas left heart failure typically causes dyspnea and cough."
             },
             {
-              "stem": "Hepatomegaly in congestive cardiac failure is a sign of:",
+              "stem": "Hepatomegaly in congestive heart failure is a sign of:",
               "options": [
                 "Left heart failure",
                 "Right heart failure",
@@ -337,32 +337,32 @@
                 "Aortic incompetence"
               ],
               "answer": "Right heart failure",
-              "explanation": "Hepatomegaly occurs in right heart failure due to hepatic venous congestion."
+              "explanation": "Hepatomegaly occurs due to venous congestion from right heart failure, as the liver drains into the inferior vena cava."
             },
             {
-              "stem": "Clinical manifestations of left heart failure include:",
+              "stem": "Which is NOT a clinical manifestation of left heart failure?",
               "options": [
                 "Oedema",
                 "Dyspnea",
                 "Elevated jugular venous pressure",
-                "B and C"
+                "Orthopnea"
               ],
-              "answer": "B and C",
-              "explanation": "Dyspnea and elevated jugular venous pressure are signs of left heart failure."
+              "answer": "Elevated jugular venous pressure",
+              "explanation": "Elevated jugular venous pressure is a sign of right heart failure or elevated central venous pressure, not typically left heart failure."
             },
             {
-              "stem": "Precipitating factors for heart failure include all EXCEPT:",
+              "stem": "Which factor does NOT precipitate heart failure?",
               "options": [
                 "Anemia",
                 "Pregnancy",
                 "Well-controlled hypertension",
-                "Doxorubicin use"
+                "Use of doxorubicin"
               ],
               "answer": "Well-controlled hypertension",
-              "explanation": "Well-controlled hypertension is not a precipitating factor; uncontrolled hypertension is."
+              "explanation": "Well-controlled hypertension reduces afterload and is protective; anemia, pregnancy, and doxorubicin (cardiotoxic) can precipitate heart failure."
             },
             {
-              "stem": "Which agent can be used in combination with loop diuretics in heart failure management?",
+              "stem": "Which agent can be combined with loop diuretics in heart failure management?",
               "options": [
                 "Chlorthalidone",
                 "Ethacrynic acid",
@@ -370,32 +370,32 @@
                 "Bumetanide"
               ],
               "answer": "Metolazone",
-              "explanation": "Metolazone is a thiazide-like diuretic often combined with loop diuretics for refractory edema."
+              "explanation": "Metolazone is a thiazide-like diuretic that can be combined with loop diuretics for synergistic diuresis in resistant edema."
             },
             {
-              "stem": "A beneficial effect of spironolactone in heart failure is:",
+              "stem": "Which is NOT a beneficial effect of spironolactone in heart failure?",
               "options": [
                 "It lowers the heart rate",
                 "It increases potassium levels",
                 "It prevents ventricular remodeling",
-                "It increases blood volume"
+                "It reduces mortality"
               ],
-              "answer": "It prevents ventricular remodeling",
-              "explanation": "Spironolactone reduces aldosterone-mediated cardiac fibrosis and remodeling."
+              "answer": "It lowers the heart rate",
+              "explanation": "Spironolactone does not lower heart rate; it blocks aldosterone, preventing sodium retention, potassium loss, and ventricular remodeling."
             },
             {
-              "stem": "Effects of ACE inhibitors in heart failure include all EXCEPT:",
+              "stem": "Which effect is NOT associated with ACE inhibitors in heart failure?",
               "options": [
-                "Slow ventricular remodeling",
-                "Lower heart rate",
+                "Slow down ventricular remodeling",
+                "Lower the heart rate",
                 "Prevent myocardial fibrosis",
                 "Lower peripheral resistance"
               ],
-              "answer": "Lower heart rate",
-              "explanation": "ACE inhibitors reduce afterload and remodeling but do not directly lower heart rate."
+              "answer": "Lower the heart rate",
+              "explanation": "ACE inhibitors reduce afterload and preload, prevent remodeling, and improve survival but do not typically lower heart rate."
             },
             {
-              "stem": "Beneficial effects of beta blockers in heart failure include all EXCEPT:",
+              "stem": "Which is NOT a beneficial effect of beta blockers in heart failure?",
               "options": [
                 "Reversing left ventricular remodeling",
                 "Promoting plasma renin release",
@@ -403,21 +403,21 @@
                 "Decreasing heart rate"
               ],
               "answer": "Promoting plasma renin release",
-              "explanation": "Beta blockers reduce renin release via beta-1 blockade, which is beneficial in heart failure."
+              "explanation": "Beta blockers inhibit renin release (via beta-1 blockade), which is beneficial in heart failure by reducing RAAS activation."
             },
             {
-              "stem": "Regarding myocardial infarction:",
+              "stem": "Regarding myocardial infarction, which statement is TRUE?",
               "options": [
                 "NSTEMI involves the entire thickness of the myocardial wall",
                 "Premenopausal women are at higher risk",
                 "STEMI involves the entire thickness of the myocardial wall",
-                "None of the above is true"
+                "None of the above"
               ],
               "answer": "STEMI involves the entire thickness of the myocardial wall",
-              "explanation": "STEMI (ST-elevation MI) involves full-thickness myocardial necrosis, whereas NSTEMI does not."
+              "explanation": "STEMI (ST-elevation MI) involves full-thickness myocardial necrosis, whereas NSTEMI involves subendocardial injury."
             },
             {
-              "stem": "Regarding cardiac biomarkers:",
+              "stem": "Regarding cardiac biomarkers, which statement is TRUE?",
               "options": [
                 "Myoglobin is highly specific for cardiac injury",
                 "Troponin is highly specific for MI",
@@ -425,287 +425,61 @@
                 "None of the above"
               ],
               "answer": "Troponin is highly specific for MI",
-              "explanation": "Troponin I/T is highly specific for myocardial injury and is the preferred biomarker for MI."
-            },
-            {
-              "stem": "A 75-year-old man presents with chest pain, BP 200/105 mmHg, and symptoms lasting 10 hours. Which statement is correct?",
-              "options": [
-                "He is not having an MI",
-                "Pain could be relieved with a single dose of ASA 325 mg",
-                "Pain could be managed with morphine sulfate 2–5 mg IV q5–15min",
-                "There is no need to treat pain associated with MI"
-              ],
-              "answer": "Pain could be managed with morphine sulfate 2–5 mg IV q5–15min",
-              "explanation": "Morphine is used for severe pain in MI; ASA 325 mg is standard antiplatelet therapy."
-            },
-            {
-              "stem": "If nitroglycerin (NTG) is used for acute MI management, which statement is correct?",
-              "options": [
-                "NTG is contraindicated in MI",
-                "Sublingual NTG is contraindicated in MI",
-                "Give a single sublingual dose only on admission",
-                "Give intravenous NTG beginning with 10–20 µg/min"
-              ],
-              "answer": "Give intravenous NTG beginning with 10–20 µg/min",
-              "explanation": "IV NTG is used for ongoing ischemia in MI, starting at 10–20 µg/min and titrating."
-            },
-            {
-              "stem": "Should metoprolol be used in this patient’s MI management?",
-              "options": [
-                "Yes; it minimizes signs/symptoms of ischemia",
-                "No; it is contraindicated because he is receiving nitroglycerin",
-                "No; it is used only if the patient had received tissue plasminogen activator",
-                "No; it is contraindicated because his resting heart rate is >100 bpm"
-              ],
-              "answer": "Yes; it minimizes signs/symptoms of ischemia",
-              "explanation": "Metoprolol (beta-1 selective) reduces myocardial oxygen demand and ischemia in MI."
-            },
-            {
-              "stem": "Causes of arrhythmias include all EXCEPT:",
-              "options": [
-                "Myocardial infarction",
-                "Thyroid disorders",
-                "Young age",
-                "Excess alcohol consumption"
-              ],
-              "answer": "Young age",
-              "explanation": "Young age is not a cause of arrhythmias; aging increases risk due to structural changes."
-            },
-            {
-              "stem": "Which is a Class II antiarrhythmic agent?",
-              "options": [
-                "Sotalol",
-                "Procainamide",
-                "Diltiazem",
-                "Metoprolol"
-              ],
-              "answer": "Metoprolol",
-              "explanation": "Metoprolol is a beta-blocker (Class II) used for rate control in arrhythmias."
-            },
-            {
-              "stem": "When monitoring a patient on chronic oral amiodarone, which test is essential?",
-              "options": [
-                "Chest X-ray",
-                "Thyroid function tests",
-                "Liver function tests",
-                "Ophthalmic examinations"
-              ],
-              "answer": "Thyroid function tests",
-              "explanation": "Amiodarone causes thyroid dysfunction (hypo- or hyperthyroidism), requiring monitoring."
-            },
-            {
-              "stem": "Propafenone possesses which Vaughan-Williams classification property?",
-              "options": [
-                "Type Ib only",
-                "Types Ic and II",
-                "Type III",
-                "Types Ia and IV"
-              ],
-              "answer": "Types Ic and II",
-              "explanation": "Propafenone is a Vaughan-Williams Class Ic (sodium channel blocker) and has beta-blocking (Class II) properties."
-            },
-            {
-              "stem": "The drug of choice for terminating paroxysmal supraventricular tachycardia is:",
-              "options": [
-                "Lidocaine",
-                "Procainamide",
-                "Adenosine",
-                "Digoxin"
-              ],
-              "answer": "Adenosine",
-              "explanation": "Adenosine is the first-line agent for terminating PSVT due to its rapid onset and short duration."
-            },
-            {
-              "stem": "Anemia may present with all EXCEPT:",
-              "options": [
-                "Pallor",
-                "Tachycardia",
-                "Papilledema",
-                "Dizziness"
-              ],
-              "answer": "Papilledema",
-              "explanation": "Papilledema is not a typical sign of anemia; it suggests increased intracranial pressure."
-            },
-            {
-              "stem": "Iron deficiency anemia:",
-              "options": [
-                "May be associated with chronic intake of drugs lowering gastric pH",
-                "May lead to loss of vibration sense",
-                "May be due to chronic hemorrhage",
-                "May be due to acute hemorrhage"
-              ],
-              "answer": "May be due to chronic hemorrhage",
-              "explanation": "Chronic blood loss (e.g., GI bleeding) is a common cause of iron deficiency anemia."
-            },
-            {
-              "stem": "Management of anemia of chronic disease entails:",
-              "options": [
-                "Oral iron therapy",
-                "Blood transfusion",
-                "Treating the underlying chronic condition",
-                "None of the above"
-              ],
-              "answer": "Treating the underlying chronic condition",
-              "explanation": "Treating the underlying disease (e.g., CKD, inflammation) is the primary management strategy."
-            },
-            {
-              "stem": "Management of sideroblastic anemia is with:",
-              "options": [
-                "High doses of Vitamin C >200 mg",
-                "Desferrioxamine and low doses of Vitamin C <200 mg",
-                "Desferrioxamine and high doses of Vitamin C >200 mg",
-                "None of the above"
-              ],
-              "answer": "Desferrioxamine and low doses of Vitamin C <200 mg",
-              "explanation": "Desferrioxamine chelates iron, and low-dose Vitamin C (≤200 mg) enhances iron excretion."
-            },
-            {
-              "stem": "The principal biochemical defect in sickle hemoglobin involves the substitution of:",
-              "options": [
-                "Phenylalanine for lysine",
-                "Valine for glutamic acid",
-                "Glutamic acid for alanine",
-                "Proline for cysteine"
-              ],
-              "answer": "Valine for glutamic acid",
-              "explanation": "Sickle hemoglobin (HbS) results from a valine substitution for glutamic acid at position 6 of the beta-globin chain."
-            },
-            {
-              "stem": "The principal goal of hydroxyurea therapy is to:",
-              "options": [
-                "Decrease circulating S hemoglobin",
-                "Increase polymerization of S hemoglobin",
-                "Decrease circulating F hemoglobin",
-                "Increase adhesive properties of red cells"
-              ],
-              "answer": "Decrease circulating S hemoglobin",
-              "explanation": "Hydroxyurea increases fetal hemoglobin (HbF), which reduces HbS polymerization and sickling."
-            },
-            {
-              "stem": "In the management of hemophilia:",
-              "options": [
-                "Immunomodulators have not shown benefit",
-                "Vaccination against hepatitis A and B is done regularly",
-                "Recombinant factors are cheaper than plasma-derived concentrates",
-                "None of the above"
-              ],
-              "answer": "Vaccination against hepatitis A and B is done regularly",
-              "explanation": "Patients with hemophilia require hepatitis A and B vaccination due to frequent blood product exposure."
-            },
-            {
-              "stem": "Disseminated intravascular coagulation (DIC) is managed using all EXCEPT:",
-              "options": [
-                "Dermatan sulfate",
-                "Lepirudin",
-                "Warfarin",
-                "Heparin"
-              ],
-              "answer": "Warfarin",
-              "explanation": "Warfarin is contraindicated in DIC due to its delayed onset and risk of bleeding."
-            },
-            {
-              "stem": "Which statement is TRUE regarding prophylaxis of venous thromboembolism (VTE)?",
-              "options": [
-                "Low-dose UFH provides improved protection compared to LMWHs",
-                "Ambulation as soon as possible post-surgery lowers VTE risk significantly",
-                "Fondaparinux 2.5 mg SC daily is supported for hospitalized general/surgical patients",
-                "None of the above"
-              ],
-              "answer": "Fondaparinux 2.5 mg SC daily is supported for hospitalized general/surgical patients",
-              "explanation": "Fondaparinux is recommended for VTE prophylaxis in hospitalized patients at moderate to high risk."
-            },
-            {
-              "stem": "Graduated compression stockings are:",
-              "options": [
-                "Not well tolerated by the majority of patients",
-                "An appropriate VTE prevention strategy for patients at moderate risk",
-                "An expensive strategy for VTE prevention",
-                "Ineffective when used with pharmacologic VTE prophylaxis"
-              ],
-              "answer": "An appropriate VTE prevention strategy for patients at moderate risk",
-              "explanation": "Graduated compression stockings are recommended for moderate-risk patients and are well tolerated."
-            },
-            {
-              "stem": "In long-term management of VTE:",
-              "options": [
-                "Anticoagulation should be continued for a minimum of 6 months",
-                "UFH is safer and efficacious in cancer patients and pregnant women",
-                "Warfarin can be used alongside a parenteral agent",
-                "None of the above"
-              ],
-              "answer": "Anticoagulation should be continued for a minimum of 6 months",
-              "explanation": "Standard duration for VTE treatment is at least 3 months, with extended therapy (6+ months) for high-risk patients."
-            },
-            {
-              "stem": "Which statement about warfarin is UNTRUE?",
-              "options": [
-                "It has no effect on circulating anticoagulants that have previously been formed",
-                "It should only be administered when systematic monitoring is available",
-                "It achieves its full antithrombotic effect immediately",
-                "For general surgery, prophylaxis can be discontinued when the patient can ambulate regularly"
-              ],
-              "answer": "It achieves its full antithrombotic effect immediately",
-              "explanation": "Warfarin has a delayed onset of action (days) due to the time required to deplete vitamin K-dependent clotting factors."
-            },
-            {
-              "stem": "Which sign or symptom is NOT consistent with deep vein thrombosis (DVT)?",
-              "options": [
-                "Palpable cord in the leg",
-                "Redness and warmth in the leg",
-                "Pain on dorsiflexion of the foot (Homans’ sign)",
-                "Very swollen ankles"
-              ],
-              "answer": "Very swollen ankles",
-              "explanation": "While swelling can occur in DVT, very swollen ankles are more suggestive of chronic venous insufficiency or lymphedema."
-            },
-            {
-              "stem": "Regarding hemophilia:",
-              "options": [
-                "Female carriers have a slight bleeding tendency",
-                "It presents as nerve compression",
-                "Hemophilia A involves factor IX deficiency",
-                "Hemophilia B involves factor VIII deficiency"
-              ],
-              "answer": "Female carriers have a slight bleeding tendency",
-              "explanation": "Female carriers of hemophilia may have mild bleeding tendencies due to lyonization (X-chromosome inactivation)."
+              "explanation": "Troponin I and T are highly specific for myocardial injury and are the preferred biomarkers for diagnosing MI."
             }
           ]
         },
         {
           "letter": "B",
           "name": "Short Answer Questions",
-          "marks": 20,
+          "marks": 40,
           "questions": [
             {
               "stem": "List two classes of drugs used in dyslipidemias, stating the mode of action of each.",
-              "modelAnswer": "1. HMG-CoA reductase inhibitors (statins): Inhibit HMG-CoA reductase, reducing hepatic cholesterol synthesis and increasing LDL receptor expression, leading to enhanced LDL clearance.\n2. Fibric acid derivatives (e.g., fenofibrate): Activate peroxisome proliferator-activated receptor-alpha (PPAR-α), increasing lipoprotein lipase activity, reducing triglycerides, and increasing HDL."
+              "modelAnswer": "1. HMG-CoA reductase inhibitors (statins): Inhibit HMG-CoA reductase, reducing hepatic cholesterol synthesis and increasing LDL receptor expression, leading to enhanced LDL clearance.\n2. Ezetimibe: Inhibits intestinal cholesterol absorption by blocking Niemann-Pick C1-Like 1 (NPC1L1) protein, reducing LDL cholesterol levels."
             },
             {
               "stem": "Discuss the management of hemolytic-uremic syndrome (HUS).",
-              "modelAnswer": "Management of HUS is supportive and includes:\n- Fluid and electrolyte balance (avoid fluid overload).\n- Blood transfusions if severe anemia.\n- Dialysis for acute kidney injury (AKI) with severe uremia or electrolyte imbalances.\n- Avoid antibiotics in typical HUS (may worsen outcomes); supportive care only.\n- Monitor for complications (e.g., hypertension, seizures).\n- Plasma exchange may be considered in atypical HUS (TTP-like presentations)."
+              "modelAnswer": "Management includes:\n- Supportive care: Fluid and electrolyte balance, blood pressure control, and dialysis if needed.\n- Avoidance of antibiotics (unless clear evidence of infection) as they may worsen toxin release.\n- Plasma exchange or infusion in severe cases (e.g., atypical HUS) to remove toxins and provide ADAMTS13.\n- Monitoring for complications such as acute kidney injury, hypertension, and neurological symptoms."
             },
             {
               "stem": "Briefly describe the different types of angina.",
-              "modelAnswer": "1. Stable angina: Predictable chest pain on exertion, relieved by rest or nitrates; due to fixed coronary artery stenosis.\n2. Unstable angina: New-onset, worsening, or occurring at rest; high risk of MI; caused by plaque rupture and thrombus formation.\n3. Prinzmetal (variant) angina: Occurs at rest, often nocturnally; caused by coronary artery spasm; responds to nitrates and calcium channel blockers.\n4. Microvascular angina: Angina with normal coronary arteries; due to endothelial dysfunction and microvascular spasms."
+              "modelAnswer": "1. Stable angina: Predictable chest pain on exertion, relieved by rest or nitrates.\n2. Unstable angina: New-onset, worsening, or occurring at rest; high risk of progression to MI.\n3. Prinzmetal (variant) angina: Caused by coronary artery spasm, typically occurs at rest, often in the early morning.\n4. Microvascular angina: Chest pain due to dysfunction of small coronary arteries, often in women."
             },
             {
               "stem": "Outline the management of a patient diagnosed with iron deficiency anemia.",
-              "modelAnswer": "1. Identify and treat the underlying cause (e.g., GI bleeding, dietary deficiency).\n2. Oral iron therapy: Ferrous sulfate 325 mg (60 mg elemental iron) TID; take on empty stomach for absorption; continue for 3–6 months post-correction.\n3. Parenteral iron (e.g., iron dextran, ferric carboxymaltose) if oral therapy is ineffective or poorly tolerated.\n4. Dietary counseling: Increase iron-rich foods (meat, leafy greens) and vitamin C to enhance absorption.\n5. Monitor hemoglobin, reticulocyte count, and ferritin; assess for resolution of symptoms (fatigue, pallor)."
+              "modelAnswer": "1. Identify and treat the underlying cause (e.g., dietary deficiency, malabsorption, blood loss).\n2. Oral iron therapy: Ferrous sulfate 325 mg (60–120 mg elemental iron) daily, preferably on an empty stomach.\n3. Monitor for improvement in hemoglobin (4–8 weeks) and reticulocyte response (1 week).\n4. Address dietary factors (e.g., increase iron-rich foods, vitamin C for absorption).\n5. Consider parenteral iron if oral therapy is ineffective or malabsorption is present."
             },
             {
-              "stem": "Give two examples of angiotensin-converting enzyme (ACE) inhibitors; what are some adverse effects of this class of antihypertensives?",
-              "modelAnswer": "Examples: Enalapril, Lisinopril.\nAdverse effects:\n- Dry cough (due to bradykinin accumulation).\n- Hyperkalemia (reduced aldosterone).\n- Acute kidney injury (especially with bilateral renal artery stenosis).\n- Angioedema (rare but serious).\n- Teratogenicity (contraindicated in pregnancy)."
+              "stem": "Give two examples of angiotensin-converting enzyme (ACE) inhibitors; what are some adverse effects of this class?",
+              "modelAnswer": "Examples: Enalapril, Lisinopril.\nAdverse effects: Dry cough (due to bradykinin accumulation), hyperkalemia (reduced aldosterone), acute kidney injury (especially in bilateral renal artery stenosis), angioedema (rare but serious), and taste disturbances."
+            },
+            {
+              "stem": "a) What is the mechanism of action of digoxin in heart failure?\nb) List two key monitoring parameters for digoxin therapy.",
+              "modelAnswer": "a) Mechanism: Inhibits Na+/K+-ATPase, increasing intracellular calcium, enhancing cardiac contractility (positive inotropic effect) and slowing AV conduction (rate control in atrial fibrillation).\nb) Monitoring: Serum digoxin levels (therapeutic range 0.5–2.0 ng/mL), renal function (digoxin is renally excreted), and serum potassium (hypokalemia increases toxicity risk)."
+            },
+            {
+              "stem": "a) What are the two main types of calcium channel blockers (CCBs)?\nb) Give one example of each type and state a clinical use.",
+              "modelAnswer": "a) Dihydropyridines (e.g., amlodipine) and non-dihydropyridines (e.g., diltiazem, verapamil).\nb) Example 1: Amlodipine (dihydropyridine) — used for hypertension and chronic stable angina.\nExample 2: Diltiazem (non-dihydropyridine) — used for hypertension, angina, and rate control in atrial fibrillation."
+            },
+            {
+              "stem": "a) What is the Vaughan-Williams classification of antiarrhythmic drugs?\nb) Give one example of a Class II antiarrhythmic agent.",
+              "modelAnswer": "a) Class I: Sodium channel blockers; Class II: Beta-blockers; Class III: Potassium channel blockers; Class IV: Calcium channel blockers; Class V: Other mechanisms.\nb) Example: Metoprolol (beta-blocker, Class II)."
             }
           ]
         },
         {
           "letter": "C",
           "name": "Long Answer Questions",
-          "marks": 20,
+          "marks": 30,
           "questions": [
             {
-              "stem": "M.O, a 65-year-old known hypertensive patient with a history of coronary artery disease and type 2 diabetes mellitus, presents to hospital. His presenting complaint is breathlessness and easy fatiguability, which occur with short distances, climbing stairs, and when lying flat. He uses two pillows to sleep. On examination, his ankles are swollen, he no longer wears closed shoes, and he reports early satiety and nausea. \n\na) Based on this information, what diagnosis would you make?\n\nb) What tests would you request to confirm the diagnosis?\n\nc) What factors would precipitate symptoms of this disease?\n\nd) Outline a pharmaceutical care plan for M.O.",
-              "modelAnswer": "a) Diagnosis: Congestive heart failure (CHF) with reduced ejection fraction (HFrEF), likely due to hypertensive heart disease and coronary artery disease, complicated by volume overload (pulmonary and peripheral edema).\n\nb) Diagnostic tests:\n- Echocardiography (ECHO): To assess left ventricular ejection fraction (LVEF), valvular function, and structural abnormalities.\n- Electrocardiogram (ECG): To evaluate for ischemic changes, arrhythmias, or left ventricular hypertrophy.\n- Chest X-ray: To assess for pulmonary congestion, cardiomegaly, or pleural effusions.\n- Serum B-type natriuretic peptide (BNP) or N-terminal pro-BNP (NT-proBNP): Elevated levels support heart failure diagnosis.\n- Basic metabolic panel (BMP): To assess renal function, electrolytes (especially potassium and sodium), and rule out acute kidney injury.\n- Liver function tests (LFTs): To evaluate hepatic congestion.\n- Thyroid function tests (TFTs): To rule out thyroid dysfunction as a precipitating factor.\n- Coronary angiography (if not recently performed): To assess for ischemic cardiomyopathy.\n\nc) Precipitating factors for CHF symptoms:\n- Non-adherence to medications (e.g., ACE inhibitors, beta-blockers, diuretics).\n- Excessive sodium or fluid intake.\n- Uncontrolled hypertension.\n- Myocardial ischemia or infarction.\n- Arrhythmias (e.g., atrial fibrillation).\n- Anemia (increased cardiac workload).\n- Infections (e.g., pneumonia, sepsis).\n- Medications: NSAIDs (fluid retention), corticosteroids, or negative inotropes (e.g., verapamil).\n- Worsening renal function or electrolyte imbalances (e.g., hyperkalemia, hyponatremia).\n\nd) Pharmaceutical care plan for M.O.:\n\n1. Optimize guideline-directed medical therapy (GDMT):\n   - Continue ACE inhibitor (e.g., enalapril) or switch to ARB (e.g., losartan) if ACE inhibitor cough is intolerable; monitor renal function and potassium.\n   - Add or uptitrate beta-blocker (e.g., bisoprolol) to target dose (e.g., 10 mg daily) for HFrEF, ensuring no contraindications (e.g., acute decompensation, bradycardia).\n   - Add mineralocorticoid receptor antagonist (e.g., spironolactone 25 mg daily) if LVEF ≤35% and symptomatic despite ACE inhibitor/beta-blocker; monitor potassium and renal function.\n   - Loop diuretic (e.g., furosemide 40 mg daily) for fluid overload; adjust dose based on weight and symptoms; monitor electrolytes (potassium, magnesium).\n\n2. Address comorbidities:\n   - Optimize glycemic control in diabetes (e.g., metformin if eGFR >30 mL/min, SGLT2 inhibitor if tolerated).\n   - Manage hypertension to target BP <130/80 mmHg.\n   - Consider statin therapy for secondary prevention of coronary artery disease.\n\n3. Patient education and lifestyle modifications:\n   - Sodium restriction (<2 g/day) and fluid restriction (1.5–2 L/day if hyponatremic).\n   - Daily weight monitoring; report weight gain >2 kg in 3 days.\n   - Moderate exercise (e.g., walking) as tolerated; cardiac rehabilitation if available.\n   - Smoking cessation and alcohol moderation.\n   - Medication adherence counseling (e.g., pill organizers, blister packs).\n\n4. Monitoring and follow-up:\n   - Clinic visits every 1–3 months initially, then every 6 months if stable.\n   - Labs: BMP (including potassium, creatinine) every 3–6 months; BNP/NT-proBNP as needed.\n   - ECHO every 6–12 months or if clinical deterioration.\n   - Assess for signs of decompensation (e.g., dyspnea, edema, weight gain).\n\n5. Address barriers to care:\n   - Social support (e.g., caregiver assistance, home health services).\n   - Financial assistance for medications (e.g., patient assistance programs).\n   - Referral to cardiology or heart failure specialist if refractory symptoms or advanced disease."
+              "stem": "A 68-year-old male presents with a 3-month history of progressive breathlessness on exertion, orthopnea (requiring 3 pillows to sleep), and bilateral ankle swelling. He reports reduced exercise tolerance and early satiety. His past medical history includes hypertension, type 2 diabetes mellitus, and dyslipidemia. On examination, his blood pressure is 150/90 mmHg, heart rate is 105 bpm (irregularly irregular), and jugular venous pressure is elevated. Bibasal crackles are heard on auscultation, and there is 2+ pitting edema to the mid-shin bilaterally. Abdominal examination reveals mild distension with shifting dullness.\n\na) What is the most likely diagnosis? Justify your answer. (2 marks)\nb) Outline the investigations you would request to confirm the diagnosis and assess severity. (3 marks)\nc) List five precipitating factors that could worsen his symptoms. (5 marks)\nd) Develop a comprehensive pharmaceutical care plan for this patient. (15 marks)",
+              "modelAnswer": "a) Diagnosis: Congestive heart failure (CHF) with reduced ejection fraction (HFrEF), likely due to hypertensive heart disease and ischemic cardiomyopathy (given history of hypertension, diabetes, and dyslipidemia). The irregularly irregular pulse suggests atrial fibrillation, which can exacerbate heart failure.\n\nb) Investigations:\n- Echocardiography: To assess left ventricular ejection fraction (LVEF), valvular function, and structural abnormalities.\n- Electrocardiogram (ECG): To evaluate rhythm (e.g., atrial fibrillation), ischemia, or hypertrophy.\n- Chest X-ray: To assess for pulmonary congestion, cardiomegaly, or pleural effusions.\n- Serum B-type natriuretic peptide (BNP) or N-terminal pro-BNP (NT-proBNP): To support diagnosis and assess severity.\n- Full blood count, renal function, electrolytes, liver function tests, fasting lipid profile, and HbA1c: To evaluate comorbidities and guide therapy.\n\nc) Precipitating factors:\n1. Atrial fibrillation (rapid ventricular response increases cardiac workload).\n2. Poorly controlled hypertension (increases afterload).\n3. Non-adherence to heart failure medications (e.g., diuretics, ACE inhibitors).\n4. Dietary indiscretion (high sodium intake leading to fluid retention).\n5. Concurrent infections (e.g., pneumonia) or anemia (increases cardiac output demand).\n\n\n\n\n\n\n\n\n\nd) Pharmaceutical care plan:\n\n1. Optimize guideline-directed medical therapy (GDMT) for HFrEF:\n   - Initiate or uptitrate ACE inhibitor (e.g., enalapril) or ARB (e.g., losartan) if ACE inhibitor not tolerated, with monitoring of renal function and potassium.\n   - Start beta-blocker (e.g., bisoprolol) at low dose and uptitrate slowly, monitoring heart rate, blood pressure, and signs of worsening heart failure.\n   - Add mineralocorticoid receptor antagonist (e.g., spironolactone) if symptomatic despite ACE inhibitor and beta-blocker, with monitoring of potassium and renal function.\n   - Loop diuretic (e.g., furosemide) for symptom relief, titrated to achieve euvolemia (e.g., target weight loss of 0.5–1 kg/day).\n\n2. Rate control for atrial fibrillation:\n   - Optimize beta-blocker dose for rate control (target resting heart rate <80 bpm or <110 bpm if asymptomatic).\n   - Consider digoxin if beta-blocker is insufficient or contraindicated (monitor levels and renal function).\n\n3. Address comorbidities:\n   - Optimize diabetes control (e.g., metformin if eGFR >30 mL/min, SGLT2 inhibitor if appropriate).\n   - Statin therapy (e.g., simvastatin) for secondary prevention of cardiovascular events.\n   - Blood pressure control (target <130/80 mmHg in diabetes).\n\n4. Patient education and lifestyle modifications:\n   - Sodium restriction (<2 g/day), fluid restriction if hyponatremic (<1.5 L/day).\n   - Daily weight monitoring; instruct to report weight gain >2 kg in 3 days.\n   - Encourage moderate exercise (e.g., cardiac rehabilitation) and smoking cessation.\n   - Medication adherence counseling (e.g., blister packs, medication reminders).\n\n5. Monitoring and follow-up:\n   - Monthly visits initially to assess symptoms, weight, blood pressure, heart rate, and renal function.\n   - Adjust diuretics based on weight and symptoms; monitor for electrolyte imbalances.\n   - Annual influenza and pneumococcal vaccination.\n   - Consider referral to cardiology for advanced therapies (e.g., CRT, ICD) if LVEF remains <35% despite GDMT.\n\n6. Address barriers to adherence:\n   - Simplify medication regimen (e.g., fixed-dose combinations if available).\n   - Address cost barriers (e.g., generic formulations, patient assistance programs).\n   - Provide written instructions and involve caregivers in management."
+            },
+            {
+              "stem": "A 55-year-old female presents with a 6-month history of fatigue, pallor, and exertional dyspnea. She reports a 5 kg weight loss over the past 3 months and intermittent episodes of dizziness. Her past medical history includes hypertension and osteoarthritis. On examination, her conjunctivae are pale, and her heart rate is 110 bpm. Laboratory investigations reveal:\n- Hemoglobin: 8.5 g/dL (normal: 12–16 g/dL)\n- MCV: 72 fL (normal: 80–100 fL)\n- Serum ferritin: 8 ng/mL (normal: 15–300 ng/mL)\n- Serum iron: 12 µmol/L (normal: 10–30 µmol/L)\n- TIBC: 55 µmol/L (normal: 45–70 µmol/L)\n- Transferrin saturation: 22% (normal: 20–50%)\n\n\na) What is the most likely diagnosis? Justify your answer. (2 marks)\nb) What additional investigations would you recommend to confirm the diagnosis? (3 marks)\nc) Outline the management plan for this patient. (5 marks)\nd) List three potential causes of her condition. (5 marks)",
+              "modelAnswer": "a) Diagnosis: Iron deficiency anemia (IDA) due to microcytic hypochromic anemia (low MCV, low ferritin, low serum iron, high TIBC, and low transferrin saturation).\n\nb) Additional investigations:\n- Stool occult blood test and fecal immunochemical test (FIT) to screen for gastrointestinal bleeding.\n- Upper and lower endoscopy (if GI bleeding is suspected) to identify sources such as peptic ulcer disease, gastritis, or colorectal cancer.\n- Serum vitamin B12 and folate levels to rule out combined deficiencies.\n- C-reactive protein (CRP) and erythrocyte sedimentation rate (ESR) to assess for chronic inflammation.\n- Urinalysis and renal function tests to rule out renal causes of anemia.\n\nc) Management plan:\n1. Oral iron therapy: Ferrous sulfate 325 mg (60–120 mg elemental iron) daily, preferably taken on an empty stomach with vitamin C (e.g., orange juice) to enhance absorption. Expect a rise in hemoglobin of ~1 g/dL every 2–3 weeks.\n2. Address underlying cause: Investigate and treat the source of iron loss (e.g., GI bleeding, menorrhagia).\n3. Dietary counseling: Increase intake of iron-rich foods (e.g., red meat, leafy greens) and vitamin C to enhance absorption.\n4. Monitor response: Repeat hemoglobin and reticulocyte count in 4 weeks to assess response. Continue iron therapy for 3–6 months after normalization of hemoglobin to replenish iron stores.\n5. Consider parenteral iron if oral therapy is ineffective, contraindicated, or malabsorption is present (e.g., iron dextran or ferric carboxymaltose).\n\n\n\nd) Potential causes:\n1. Gastrointestinal bleeding (e.g., peptic ulcer disease, gastritis, colorectal cancer).\n2. Menorrhagia (heavy menstrual bleeding).\n3. Malabsorption (e.g., celiac disease, atrophic gastritis, post-gastrectomy).\n4. Chronic kidney disease (reduced erythropoietin production and iron loss during dialysis).\n5. Dietary deficiency (low iron intake, especially in vegetarians/vegans)."
             }
           ]
         }
@@ -718,10 +492,10 @@
         {
           "letter": "A",
           "name": "Multiple Choice Questions",
-          "marks": 60,
+          "marks": 30,
           "questions": [
             {
-              "stem": "A 68-year-old woman presents with fatigue and exertional dyspnea. On examination, her conjunctivae appear pale. Which of the following is the MOST reliable site for detecting anemia in this patient?",
+              "stem": "A 68-year-old male presents with fatigue and pallor. On examination, his conjunctivae appear pale. Which of the following is the MOST reliable site for detecting anemia in this patient?",
               "options": [
                 "Sclera",
                 "Conjunctiva",
@@ -729,21 +503,21 @@
                 "Retina"
               ],
               "answer": "Conjunctiva",
-              "explanation": "The conjunctiva is the most reliable site for detecting pallor due to anemia, as it is easily accessible and reflects systemic hemoglobin levels."
+              "explanation": "The conjunctiva is the most reliable site for detecting anemia due to its thin vascular structure and ease of visualization."
             },
             {
-              "stem": "Which of the following medications is MOST likely to cause bradycardia as a side effect?",
+              "stem": "Which of the following drugs is MOST likely to cause bradycardia as a side effect?",
               "options": [
                 "Amlodipine",
                 "Digoxin",
-                "Furosemide",
-                "Simvastatin"
+                "Losartan",
+                "Hydrochlorothiazide"
               ],
               "answer": "Digoxin",
-              "explanation": "Digoxin slows conduction through the atrioventricular node, leading to bradycardia, especially in toxic concentrations."
+              "explanation": "Digoxin slows conduction through the AV node, leading to bradycardia, especially in toxic doses."
             },
             {
-              "stem": "A 55-year-old man with a history of hypertension and diabetes presents with new-onset dyspnea. An echocardiogram is ordered to evaluate for valvular or structural heart disease. Which of the following is the MOST appropriate initial imaging modality for detecting valvular abnormalities?",
+              "stem": "A 55-year-old female with a history of hypertension and diabetes presents with exertional dyspnea and chest pain. Which investigation is MOST appropriate to assess for valvular or structural heart disease?",
               "options": [
                 "ECG",
                 "MRI",
@@ -751,7 +525,7 @@
                 "CXR"
               ],
               "answer": "ECHO",
-              "explanation": "Echocardiography (ECHO) is the gold standard for assessing valvular and structural heart disease due to its ability to visualize cardiac anatomy and function in real-time."
+              "explanation": "Echocardiography is the gold standard for assessing valvular and structural heart disease due to its ability to visualize cardiac anatomy and function."
             },
             {
               "stem": "A patient's blood pressure is recorded as 150/90 mmHg. What is the mean arterial pressure (MAP) in this patient?",
@@ -762,10 +536,10 @@
                 "120 mmHg"
               ],
               "answer": "110 mmHg",
-              "explanation": "MAP is calculated as diastolic BP + 1/3(pulse pressure). Here, MAP = 90 + 1/3(150-90) = 90 + 20 = 110 mmHg."
+              "explanation": "MAP = (SBP + 2*DBP)/3 = (150 + 2*90)/3 = 110 mmHg."
             },
             {
-              "stem": "A 45-year-old patient's blood pressure is recorded as 138/88 mmHg. According to the JNC 8 classification, this patient falls into which category?",
+              "stem": "A patient's blood pressure is 140/95 mmHg. According to the WHO classification of hypertension, this would be classified as:",
               "options": [
                 "Normal",
                 "Pre-hypertension",
@@ -776,7 +550,7 @@
               "explanation": "Stage I hypertension is defined as systolic BP 140-159 mmHg or diastolic BP 90-99 mmHg."
             },
             {
-              "stem": "A 60-year-old diabetic patient with nephropathy has a blood pressure of 145/85 mmHg. What is the recommended target blood pressure for this patient?",
+              "stem": "A 60-year-old diabetic patient with nephropathy presents for hypertension management. What is the recommended blood pressure target for this patient?",
               "options": [
                 "<140/85 mmHg",
                 "<130/80 mmHg",
@@ -798,40 +572,40 @@
               "explanation": "Renoparenchymal disease (e.g., chronic kidney disease) is the most common cause of secondary hypertension."
             },
             {
-              "stem": "A 50-year-old asthmatic patient requires antihypertensive therapy. Which of the following agents is CONTRAINDICATED in this patient?",
+              "stem": "Which antihypertensive agent is MOST suitable for a patient with asthma?",
               "options": [
-                "Sodium nitroprusside",
                 "Labetalol",
                 "Hydralazine",
-                "None of the above"
+                "Nifedipine",
+                "Propranolol"
               ],
-              "answer": "Labetalol",
-              "explanation": "Labetalol is a non-selective beta-blocker and is contraindicated in asthma due to the risk of bronchospasm."
+              "answer": "Nifedipine",
+              "explanation": "Nifedipine is a calcium channel blocker that does not exacerbate bronchospasm, unlike beta-blockers."
             },
             {
-              "stem": "A 70-year-old man presents with acute pulmonary edema secondary to heart failure. Which of the following is the MOST appropriate initial therapy?",
+              "stem": "A 70-year-old male presents with acute pulmonary edema. Which diuretic is the MOST appropriate for reducing fluid overload?",
               "options": [
-                "Loop diuretics",
-                "Thiazide diuretics",
-                "Potassium-sparing diuretics",
-                "Osmotic diuretics"
+                "Hydrochlorothiazide",
+                "Spironolactone",
+                "Furosemide",
+                "Amiloride"
               ],
-              "answer": "Loop diuretics",
-              "explanation": "Loop diuretics (e.g., furosemide) are the drug of choice for reducing acute pulmonary edema due to their rapid onset and potent diuretic effect."
+              "answer": "Furosemide",
+              "explanation": "Furosemide is a loop diuretic that rapidly reduces fluid overload in acute pulmonary edema."
             },
             {
-              "stem": "A patient on hydrochlorothiazide develops hyperuricemia. Which of the following is the MOST likely adverse effect of thiazide diuretics responsible for this finding?",
+              "stem": "Which of the following is NOT an adverse effect of thiazide diuretics?",
               "options": [
-                "Hyperglycemia",
-                "Hyperlipidemia",
                 "Hyperuricemia",
-                "Hypoglycemia"
+                "Hypoglycemia",
+                "Hyperlipidemia",
+                "Hyperglycemia"
               ],
-              "answer": "Hyperuricemia",
-              "explanation": "Thiazide diuretics can cause hyperuricemia by increasing uric acid reabsorption in the proximal tubule."
+              "answer": "Hypoglycemia",
+              "explanation": "Thiazide diuretics can cause hyperglycemia, hyperlipidemia, and hyperuricemia, but not hypoglycemia."
             },
             {
-              "stem": "Which of the following is NOT a contraindication for angiotensin-converting enzyme (ACE) inhibitors?",
+              "stem": "Angiotensin-converting enzyme (ACE) inhibitors are contraindicated in all of the following EXCEPT:",
               "options": [
                 "Aortic stenosis",
                 "Renal artery stenosis",
@@ -839,10 +613,10 @@
                 "Asthma"
               ],
               "answer": "Asthma",
-              "explanation": "ACE inhibitors are not contraindicated in asthma. They are contraindicated in aortic stenosis, renal artery stenosis, and pregnancy."
+              "explanation": "ACE inhibitors are contraindicated in aortic stenosis, renal artery stenosis, and pregnancy, but not in asthma."
             },
             {
-              "stem": "Acebutolol is classified as which type of beta-blocker?",
+              "stem": "Acebutolol is classified as a:",
               "options": [
                 "Cardio-selective beta-blocker",
                 "Non-selective beta-blocker",
@@ -850,21 +624,21 @@
                 "None of the above"
               ],
               "answer": "Cardio-selective beta-blocker",
-              "explanation": "Acebutolol is a cardioselective beta-blocker with partial agonist activity."
+              "explanation": "Acebutolol is a cardio-selective beta-blocker with partial agonist activity."
             },
             {
-              "stem": "A 65-year-old man with heart failure is prescribed ACE inhibitors and furosemide. Which of the following combinations is MOST appropriate for managing his condition?",
+              "stem": "Which combination is MOST suitable for managing congestive heart failure?",
               "options": [
-                "ACEI and furosemide",
-                "A beta-blocker and a thiazide diuretic",
-                "A beta-blocker and an ACEI",
-                "Spironolactone and a nitrate"
+                "ACE inhibitor and furosemide",
+                "Beta-blocker and thiazide diuretic",
+                "Beta-blocker and ACE inhibitor",
+                "Spironolactone and nitrate"
               ],
-              "answer": "ACEI and furosemide",
-              "explanation": "ACE inhibitors reduce afterload and mortality, while loop diuretics (e.g., furosemide) reduce fluid overload in heart failure."
+              "answer": "ACE inhibitor and furosemide",
+              "explanation": "ACE inhibitors reduce afterload and mortality, while loop diuretics reduce fluid overload in heart failure."
             },
             {
-              "stem": "A patient on verapamil develops bradycardia and hypotension. Which of the following is the MOST likely toxic effect of calcium channel blockers in this scenario?",
+              "stem": "Toxic effects of calcium channel blockers include:",
               "options": [
                 "Tachycardia",
                 "Atrioventricular block and congestive heart failure",
@@ -872,21 +646,21 @@
                 "Hyperglycemia"
               ],
               "answer": "Atrioventricular block and congestive heart failure",
-              "explanation": "Calcium channel blockers (e.g., verapamil) can cause AV block and negative inotropic effects, leading to bradycardia and heart failure."
+              "explanation": "Calcium channel blockers can cause AV block, bradycardia, and exacerbate heart failure."
             },
             {
-              "stem": "Reflex tachycardia is commonly seen with the use of which of the following medications?",
+              "stem": "Reflex tachycardia is seen with the use of all the following EXCEPT:",
               "options": [
                 "Hydralazine",
                 "Prazosin",
                 "Propranolol",
                 "Minoxidil"
               ],
-              "answer": "Minoxidil",
-              "explanation": "Minoxidil is a vasodilator that causes reflex tachycardia due to its potent arteriolar dilation effect."
+              "answer": "Propranolol",
+              "explanation": "Propranolol is a beta-blocker that reduces heart rate and does not cause reflex tachycardia."
             },
             {
-              "stem": "Which of the following is the PREFERRED medication for severe hypertension in pregnancy?",
+              "stem": "Which medication is PREFERRED for severe hypertension in pregnancy?",
               "options": [
                 "Methyldopa",
                 "Hydralazine",
@@ -894,10 +668,10 @@
                 "Enalapril"
               ],
               "answer": "Methyldopa",
-              "explanation": "Methyldopa is the preferred antihypertensive in pregnancy due to its safety profile and proven efficacy."
+              "explanation": "Methyldopa is the preferred antihypertensive in pregnancy due to its safety profile."
             },
             {
-              "stem": "Regarding hypertensive crisis, which of the following statements is TRUE?",
+              "stem": "Regarding hypertensive crisis, which statement is TRUE?",
               "options": [
                 "Urgencies are associated with end-organ damage",
                 "Immediate blood pressure reduction is recommended in hypertensive urgencies",
@@ -905,10 +679,10 @@
                 "Immediate-release nifedipine should be used"
               ],
               "answer": "Hypertensive emergency is managed using IV therapy",
-              "explanation": "Hypertensive emergencies require immediate BP reduction with IV agents (e.g., nitroprusside, labetalol) to prevent end-organ damage."
+              "explanation": "Hypertensive emergency requires immediate BP reduction with IV agents, while urgencies do not."
             },
             {
-              "stem": "Which of the following statements about dyslipidemias is UNTRUE?",
+              "stem": "Which statement about dyslipidemias is UNTRUE?",
               "options": [
                 "Diet and genetics play a role",
                 "They are major players in atherosclerosis and plaque formation",
@@ -916,21 +690,21 @@
                 "Pediatric screening is largely based on genetics and risk factors"
               ],
               "answer": "Cholesterol screening should start as soon as cardiovascular disorders occur",
-              "explanation": "Cholesterol screening should begin in childhood (age 9-11) and continue periodically, not only after cardiovascular disorders occur."
+              "explanation": "Cholesterol screening should begin in childhood/adolescence, not after cardiovascular disorders occur."
             },
             {
-              "stem": "Familial hypercholesterolemia is associated with a defect in which of the following?",
+              "stem": "Familial hypercholesterolemia is associated with a mutation in the gene coding for:",
               "options": [
                 "Apolipoprotein B-100",
                 "LDL receptor",
                 "Apolipoprotein E",
-                "Phenylalanine for lysine substitution"
+                "HMG-CoA reductase"
               ],
               "answer": "LDL receptor",
-              "explanation": "Familial hypercholesterolemia is caused by a mutation in the LDL receptor gene, leading to impaired LDL clearance."
+              "explanation": "Familial hypercholesterolemia results from mutations in the LDL receptor gene, impairing LDL clearance."
             },
             {
-              "stem": "Which of the following drugs is NOT associated with hyperlipidemia?",
+              "stem": "Which drug is NOT associated with hyperlipidemia?",
               "options": [
                 "Cyclosporine",
                 "Protease inhibitors",
@@ -938,21 +712,21 @@
                 "Isotretinoin"
               ],
               "answer": "Prazosin",
-              "explanation": "Prazosin is an alpha-blocker and is not associated with hyperlipidemia. Cyclosporine, protease inhibitors, and isotretinoin can cause dyslipidemias."
+              "explanation": "Prazosin is an alpha-blocker and is not associated with hyperlipidemia."
             },
             {
               "stem": "HDL levels can be increased by all of the following EXCEPT:",
               "options": [
                 "Exercise",
-                "Use of ezetimibe",
-                "Use of niacin",
+                "Ezetimibe",
+                "Niacin",
                 "Diets high in polyunsaturated fatty acids"
               ],
-              "answer": "Use of ezetimibe",
-              "explanation": "Ezetimibe lowers LDL cholesterol but does not significantly increase HDL levels. Exercise, niacin, and polyunsaturated fats can raise HDL."
+              "answer": "Ezetimibe",
+              "explanation": "Ezetimibe reduces LDL cholesterol but does not increase HDL levels."
             },
             {
-              "stem": "HMG-CoA reductase inhibitors (statins) have which of the following properties?",
+              "stem": "HMG-CoA reductase inhibitors:",
               "options": [
                 "Bind intestinal bile acids",
                 "Are the most potent and among best tolerated",
@@ -960,10 +734,10 @@
                 "Adverse effects include flushing and pruritus"
               ],
               "answer": "Are the most potent and among best tolerated",
-              "explanation": "Statins are the most potent LDL-lowering agents and are generally well-tolerated, though they can cause myopathy and hepatotoxicity."
+              "explanation": "Statins are the most potent LDL-lowering agents and are generally well tolerated."
             },
             {
-              "stem": "Which of the following statements about angina is TRUE?",
+              "stem": "Which statement about angina is TRUE?",
               "options": [
                 "Prinzmetal’s angina occurs at rest, especially in the early morning hours",
                 "Stable angina occurs at rest",
@@ -971,10 +745,10 @@
                 "Stable angina requires hospital admission and aggressive therapy"
               ],
               "answer": "Prinzmetal’s angina occurs at rest, especially in the early morning hours",
-              "explanation": "Prinzmetal’s (variant) angina is caused by coronary artery spasm and typically occurs at rest, often early in the morning."
+              "explanation": "Prinzmetal’s (variant) angina is caused by coronary vasospasm and typically occurs at rest."
             },
             {
-              "stem": "Which of the following drugs is NOT used to prevent recurrent ischemic symptoms?",
+              "stem": "Which drug is NOT used to prevent recurrent ischemic symptoms?",
               "options": [
                 "Calcium channel blockers",
                 "Beta blockers",
@@ -982,21 +756,21 @@
                 "Nitrates"
               ],
               "answer": "Thiazide diuretics",
-              "explanation": "Thiazide diuretics are not used for preventing recurrent ischemic symptoms. Calcium blockers, beta-blockers, and nitrates are used for this purpose."
+              "explanation": "Thiazide diuretics are not used for preventing recurrent ischemic symptoms."
             },
             {
-              "stem": "Which of the following statements about the clinical management of ischemic heart disease is FALSE?",
+              "stem": "Which statement about the clinical management of ischemic heart disease is UNTRUE?",
               "options": [
                 "Pharmacotherapy targets a reduction in cardiac workload",
                 "Statins should only be used in patients with elevated LDL levels",
-                "ACEIs have shown benefit in ischemic heart disease combined with hypertension",
+                "ACE inhibitors have shown benefit in ischemic heart disease combined with hypertension",
                 "Control of modifiable risk factors is important in the management of ischemic heart disease"
               ],
               "answer": "Statins should only be used in patients with elevated LDL levels",
-              "explanation": "Statins are used in all patients with ischemic heart disease, regardless of LDL levels, due to their pleiotropic effects (e.g., anti-inflammatory, plaque stabilization)."
+              "explanation": "Statins are used in ischemic heart disease regardless of LDL levels due to pleiotropic effects."
             },
             {
-              "stem": "Which of the following statements about antiplatelet drugs in angina is FALSE?",
+              "stem": "Which statement about antiplatelet drugs in angina is UNTRUE?",
               "options": [
                 "Aspirin has been shown to reduce the risk of major adverse cardiac events",
                 "Aspirin doses greater than 162 mg have therapeutic benefit",
@@ -1004,32 +778,32 @@
                 "Combination of both aspirin and clopidogrel is recommended in patients with stents to prevent in-stent thrombosis"
               ],
               "answer": "Aspirin doses greater than 162 mg have therapeutic benefit",
-              "explanation": "Higher doses of aspirin (>162 mg) do not provide additional benefit and increase bleeding risk. The optimal dose is 75-162 mg daily."
+              "explanation": "Higher aspirin doses (>162 mg) do not provide additional benefit and increase bleeding risk."
             },
             {
-              "stem": "Which of the following statements about short-acting nitrates in angina is TRUE?",
+              "stem": "Short-acting nitrates in angina:",
               "options": [
-                "They have a delayed onset of action",
-                "They can be used as maintenance therapy in chronic stable angina",
+                "Have a delayed onset of action",
+                "Can be used as maintenance therapy in chronic stable angina",
                 "Adverse effects include lightheadedness",
-                "They can be used in combination with phosphodiesterase enzyme inhibitors"
+                "Can be used in combination with phosphodiesterase enzyme inhibitors"
               ],
               "answer": "Adverse effects include lightheadedness",
-              "explanation": "Short-acting nitrates (e.g., sublingual nitroglycerin) have a rapid onset (1-5 minutes) and can cause lightheadedness due to vasodilation."
+              "explanation": "Short-acting nitrates cause lightheadedness due to vasodilation and hypotension."
             },
             {
-              "stem": "Which of the following statements about calcium channel blockers in angina is FALSE?",
+              "stem": "Calcium channel blockers in angina:",
               "options": [
-                "They can be used with beta blockers when initial treatment is unsuccessful",
-                "They are recommended when beta blockers are contraindicated",
+                "Can be used with beta blockers when initial treatment is unsuccessful",
+                "Are recommended when beta blockers are contraindicated",
                 "Combination of dihydropyridines and beta blockers may improve symptoms",
                 "None of the above"
               ],
               "answer": "None of the above",
-              "explanation": "All statements are true. Calcium channel blockers (e.g., amlodipine) can be combined with beta-blockers for angina, especially if initial therapy fails."
+              "explanation": "All statements are true; thus, 'none of the above' is incorrect."
             },
             {
-              "stem": "Which of the following is NOT a symptom of left heart failure?",
+              "stem": "Symptoms of left heart failure include all of the following EXCEPT:",
               "options": [
                 "Fatigue",
                 "Nocturia",
@@ -1037,43 +811,407 @@
                 "Cough"
               ],
               "answer": "Nocturia",
-              "explanation": "Nocturia is a symptom of right heart failure due to fluid redistribution. Left heart failure symptoms include dyspnea, cough, and fatigue."
+              "explanation": "Nocturia is more common in right heart failure due to fluid redistribution."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "a) List two classes of drugs used in dyslipidemias, stating the mode of action of each.\n\nb) Provide one example of a drug from each class.",
+              "modelAnswer": "a) Two classes of drugs used in dyslipidemias and their modes of action:\n   - HMG-CoA reductase inhibitors (statins): Inhibit HMG-CoA reductase, reducing cholesterol synthesis in the liver and increasing LDL receptor expression.\n   - Fibrates: Activate peroxisome proliferator-activated receptor-alpha (PPAR-α), increasing lipoprotein lipase activity and reducing triglycerides.\n\nb) Examples:\n   - Statins: Simvastatin\n   - Fibrates: Fenofibrate"
             },
             {
-              "stem": "Hepatomegaly in congestive cardiac failure is a sign of which type of heart failure?",
+              "stem": "Outline the management of a patient diagnosed with iron deficiency anemia.",
+              "modelAnswer": "Management of iron deficiency anemia:\n1. Identify and treat the underlying cause (e.g., dietary deficiency, malabsorption, blood loss).\n2. Oral iron therapy: Ferrous sulfate 200 mg (60 mg elemental iron) 2-3 times daily, preferably on an empty stomach.\n3. Monitor for improvement in hemoglobin (4-8 weeks) and resolution of symptoms.\n4. Address dietary deficiencies (e.g., red meat, leafy greens, fortified foods).\n5. Consider parenteral iron (e.g., iron sucrose) if oral therapy is ineffective or poorly tolerated.\n6. Treat underlying conditions (e.g., H. pylori eradication, celiac disease management)."
+            },
+            {
+              "stem": "a) Describe the different types of angina.\n\nb) Provide one distinguishing feature for each type.",
+              "modelAnswer": "a) Types of angina:\n   - Stable angina: Predictable chest pain triggered by exertion or stress, relieved by rest or nitroglycerin.\n   - Unstable angina: Chest pain at rest or with minimal exertion, increasing in frequency or severity; not relieved by rest.\n   - Prinzmetal’s (variant) angina: Chest pain at rest due to coronary vasospasm, often occurring early in the morning.\n   - Microvascular angina: Chest pain due to dysfunction of small coronary arteries, often in the absence of obstructive CAD.\n\nb) Distinguishing features:\n   - Stable angina: Relieved by rest or nitroglycerin.\n   - Unstable angina: Occurs at rest or with minimal exertion.\n   - Prinzmetal’s angina: Occurs early in the morning due to vasospasm.\n   - Microvascular angina: Normal coronary angiography but abnormal stress test."
+            },
+            {
+              "stem": "Give two examples of angiotensin-converting enzyme (ACE) inhibitors and list three adverse effects of this class.",
+              "modelAnswer": "Examples of ACE inhibitors:\n   - Enalapril\n   - Lisinopril\n\nAdverse effects of ACE inhibitors:\n   1. Dry cough (due to bradykinin accumulation)\n   2. Hyperkalemia (due to reduced aldosterone secretion)\n   3. Acute kidney injury (especially in bilateral renal artery stenosis)"
+            },
+            {
+              "stem": "a) Define secondary hypertension.\n\nb) List three common causes of secondary hypertension.",
+              "modelAnswer": "a) Secondary hypertension is high blood pressure caused by an identifiable underlying condition or medication.\n\nb) Common causes of secondary hypertension:\n   1. Renoparenchymal disease (e.g., chronic kidney disease)\n   2. Renovascular disease (e.g., renal artery stenosis)\n   3. Endocrine disorders (e.g., primary hyperaldosteronism, Cushing’s syndrome)"
+            },
+            {
+              "stem": "a) What is the mechanism of action of loop diuretics?\n\nb) List two clinical indications for loop diuretics.",
+              "modelAnswer": "a) Mechanism of action of loop diuretics:\n   - Inhibit the Na+/K+/2Cl- cotransporter in the thick ascending limb of the loop of Henle, reducing sodium reabsorption and increasing urine output.\n\nb) Clinical indications for loop diuretics:\n   1. Acute pulmonary edema\n   2. Edema associated with congestive heart failure or hepatic cirrhosis"
+            },
+            {
+              "stem": "a) What is the target blood pressure for a patient with hypertension and diabetes?\n\nb) Why is this target lower than in non-diabetic patients?",
+              "modelAnswer": "a) Target blood pressure for a patient with hypertension and diabetes: <130/80 mmHg.\n\nb) This target is lower because diabetic patients are at higher risk of microvascular complications (e.g., nephropathy, retinopathy), and intensive BP control reduces these risks."
+            },
+            {
+              "stem": "a) What is the Vaughan-Williams classification of antiarrhythmic drugs?\n\nb) Provide one example of a Class II antiarrhythmic agent.",
+              "modelAnswer": "a) Vaughan-Williams classification of antiarrhythmic drugs:\n   - Class I: Sodium channel blockers (e.g., lidocaine, flecainide)\n   - Class II: Beta-blockers (e.g., metoprolol, propranolol)\n   - Class III: Potassium channel blockers (e.g., amiodarone, sotalol)\n   - Class IV: Calcium channel blockers (e.g., verapamil, diltiazem)\n\nb) Example of a Class II antiarrhythmic agent: Metoprolol"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 65-year-old male with a history of hypertension, type 2 diabetes, and chronic kidney disease presents with a 2-week history of progressive dyspnea, orthopnea, and bilateral leg swelling. He reports using 3 pillows at night to sleep comfortably. On examination, his blood pressure is 160/95 mmHg, heart rate is 105 bpm, and respiratory rate is 22 breaths/min. Jugular venous pressure is elevated, and crackles are heard at both lung bases. His ankles are swollen with pitting edema, and his abdomen is slightly distended.\n\n\na) What is the MOST likely diagnosis? Provide two supporting clinical features.\n\nb) Outline the investigations you would request to confirm the diagnosis and assess severity.\n\nc) List three precipitating factors for this patient’s symptoms.\n\n\nd) Develop a pharmaceutical care plan for this patient, including non-pharmacological and pharmacological interventions.",
+              "modelAnswer": "a) Most likely diagnosis: Acute decompensated heart failure (ADHF) with volume overload.\n   Supporting clinical features:\n   1. Progressive dyspnea and orthopnea (signs of pulmonary congestion)\n   2. Bilateral leg swelling with pitting edema (signs of systemic congestion)\n\nb) Investigations to confirm diagnosis and assess severity:\n   - Echocardiography: To assess left ventricular ejection fraction (LVEF) and structural abnormalities.\n   - Chest X-ray: To evaluate for pulmonary edema, cardiomegaly, or pleural effusion.\n   - B-type natriuretic peptide (BNP) or N-terminal pro-BNP (NT-proBNP): Elevated levels support heart failure diagnosis.\n   - Electrocardiogram (ECG): To assess for arrhythmias, ischemia, or left ventricular hypertrophy.\n   - Serum electrolytes, renal function, and liver function tests: To assess for electrolyte imbalances, renal dysfunction, or hepatic congestion.\n   - Troponin levels: To rule out acute coronary syndrome as a precipitating factor.\n\nc) Precipitating factors for symptoms:\n   1. Poorly controlled hypertension (increased afterload)\n   2. Fluid overload due to excessive sodium intake or non-adherence to diuretics\n   3. Anemia (reduced oxygen delivery to the myocardium)\n\nd) Pharmaceutical care plan:\n   Non-pharmacological interventions:\n   - Sodium restriction (<2 g/day) to reduce fluid retention.\n   - Fluid restriction (<1.5 L/day) if hyponatremic.\n   - Daily weight monitoring to assess fluid balance.\n   - Encourage gradual physical activity (e.g., walking) as tolerated.\n   - Smoking cessation and alcohol reduction.\n\n   Pharmacological interventions:\n   - Loop diuretic (e.g., furosemide 40 mg IV initially, then titrate based on response) to reduce fluid overload.\n   - ACE inhibitor (e.g., enalapril 5 mg PO daily) to reduce afterload and improve cardiac remodeling.\n   - Beta-blocker (e.g., bisoprolol 1.25 mg PO daily) to reduce heart rate and improve cardiac function.\n   - Mineralocorticoid receptor antagonist (e.g., spironolactone 25 mg PO daily) for additional diuresis and mortality benefit.\n   - Consider digoxin if atrial fibrillation with rapid ventricular response is present.\n   - Optimize diabetes control (e.g., metformin, SGLT2 inhibitors if eGFR >30 mL/min).\n\n   Monitoring:\n   - Daily weights and fluid balance.\n   - Serum electrolytes (especially potassium) and renal function 2-3 days after diuretic initiation.\n   - Blood pressure and heart rate monitoring.\n   - Signs of worsening heart failure (e.g., increased dyspnea, edema).\n\n   Patient education:\n   - Signs and symptoms of worsening heart failure.\n   - Medication adherence and importance of follow-up.\n   - Dietary and lifestyle modifications."
+            },
+            {
+              "stem": "A 50-year-old female presents with a 3-month history of fatigue, pallor, and exertional dyspnea. She reports a history of heavy menstrual bleeding for the past year. On examination, her conjunctivae are pale, and her heart rate is 100 bpm. Laboratory investigations reveal:\n   - Hemoglobin: 9.5 g/dL (normal: 12-16 g/dL)\n   - MCV: 72 fL (normal: 80-100 fL)\n   - Serum ferritin: 10 ng/mL (normal: 20-300 ng/mL)\n   - Serum iron: 30 µg/dL (normal: 50-170 µg/dL)\n   - TIBC: 450 µg/dL (normal: 250-450 µg/dL)\n\n\na) What is the MOST likely diagnosis? Provide two supporting laboratory findings.\n\nb) Outline the management of this patient, including pharmacological and non-pharmacological interventions.\n\nc) List two potential complications if this condition is left untreated.",
+              "modelAnswer": "a) Most likely diagnosis: Iron deficiency anemia (IDA).\n   Supporting laboratory findings:\n   1. Microcytic hypochromic anemia (low MCV, low hemoglobin)\n   2. Low serum ferritin (depleted iron stores)\n\nb) Management of iron deficiency anemia:\n   Non-pharmacological interventions:\n   - Dietary modification: Increase intake of iron-rich foods (e.g., red meat, leafy greens, fortified cereals).\n   - Address underlying cause: Evaluate for menorrhagia (e.g., refer to gynecology for further assessment).\n\n   Pharmacological interventions:\n   - Oral iron therapy: Ferrous sulfate 200 mg (60 mg elemental iron) 2-3 times daily, preferably on an empty stomach.\n   - Consider parenteral iron (e.g., iron sucrose) if oral therapy is ineffective or poorly tolerated, or if rapid correction is needed.\n   - Consider proton pump inhibitor (e.g., omeprazole) if Helicobacter pylori infection is suspected.\n\n   Monitoring:\n   - Repeat hemoglobin and MCV after 4-8 weeks of therapy.\n   - Assess for symptom improvement (e.g., reduced fatigue, improved exercise tolerance).\n   - Monitor for adverse effects of iron therapy (e.g., constipation, nausea).\n\n   Patient education:\n   - Importance of medication adherence.\n   - Dietary sources of iron.\n   - Signs and symptoms of anemia and when to seek medical attention.\n\nc) Potential complications if left untreated:\n   1. Cardiovascular complications (e.g., high-output heart failure due to increased cardiac output)\n   2. Cognitive impairment or developmental delays in children (due to impaired oxygen delivery to the brain)"
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Clinical Pharmacy — Cardiovascular & Hematopoietic",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Which physical sign is MOST specific for detecting anemia in a dark-skinned patient?",
+              "options": [
+                "Pallor of the conjunctiva",
+                "Pallor of the sclera",
+                "Pallor of the buccal mucosa",
+                "Pallor of the nail beds"
+              ],
+              "answer": "Pallor of the conjunctiva",
+              "explanation": "Conjunctival pallor is the most reliable clinical sign for detecting anemia, especially in individuals with darker skin tones where mucosal surfaces are more visible."
+            },
+            {
+              "stem": "A 68-year-old patient presents with bradycardia (HR 48 bpm). Which of the following medications is MOST likely to cause this?",
+              "options": [
+                "Amlodipine",
+                "Lisinopril",
+                "Digoxin",
+                "Losartan"
+              ],
+              "answer": "Digoxin",
+              "explanation": "Digoxin slows conduction through the AV node and can cause bradycardia, especially in toxic concentrations or in patients with pre-existing conduction abnormalities."
+            },
+            {
+              "stem": "A 55-year-old male with a history of hypertension and diabetes is found to have a new murmur on auscultation. Which investigation is MOST appropriate to assess valvular/structural heart disease?",
+              "options": [
+                "Electrocardiogram (ECG)",
+                "Chest X-ray",
+                "Echocardiogram",
+                "Cardiac MRI"
+              ],
+              "answer": "Echocardiogram",
+              "explanation": "Echocardiography is the gold standard for evaluating valvular and structural heart disease, providing detailed images of cardiac anatomy and function."
+            },
+            {
+              "stem": "A patient’s blood pressure is recorded as 150/90 mmHg. What is the mean arterial pressure (MAP) in this patient?",
+              "options": [
+                "60 mmHg",
+                "70 mmHg",
+                "80 mmHg",
+                "90 mmHg"
+              ],
+              "answer": "110 mmHg",
+              "explanation": "MAP is calculated as (SBP + 2*DBP)/3 = (150 + 2*90)/3 = 110 mmHg."
+            },
+            {
+              "stem": "A 45-year-old diabetic patient with nephropathy has a blood pressure of 145/85 mmHg. What is the recommended BP target for this patient according to WHO/KDI guidelines?",
+              "options": [
+                "<140/90 mmHg",
+                "<130/80 mmHg",
+                "<125/75 mmHg",
+                "<140/80 mmHg"
+              ],
+              "answer": "<130/80 mmHg",
+              "explanation": "For diabetic patients with nephropathy, WHO/KDI guidelines recommend a target BP of <130/80 mmHg to reduce progression of renal damage."
+            },
+            {
+              "stem": "Which of the following is the MOST common cause of secondary hypertension?",
+              "options": [
+                "Aortic coarctation",
+                "Primary hyperaldosteronism",
+                "Renoparenchymal disease",
+                "Cushing syndrome"
+              ],
+              "answer": "Renoparenchymal disease",
+              "explanation": "Renoparenchymal disease (e.g., chronic kidney disease) is the most common cause of secondary hypertension, accounting for ~5-10% of all hypertension cases."
+            },
+            {
+              "stem": "A 50-year-old asthmatic patient requires antihypertensive therapy. Which of the following agents is MOST appropriate to avoid bronchospasm?",
+              "options": [
+                "Propranolol",
+                "Carvedilol",
+                "Bisoprolol",
+                "Labetalol"
+              ],
+              "answer": "Bisoprolol",
+              "explanation": "Bisoprolol is a cardioselective beta-blocker with minimal effect on bronchial beta-2 receptors, making it safer for patients with asthma."
+            },
+            {
+              "stem": "A patient with acute pulmonary edema secondary to heart failure is admitted. Which diuretic is MOST appropriate for rapid symptom relief?",
+              "options": [
+                "Hydrochlorothiazide",
+                "Spironolactone",
+                "Furosemide",
+                "Amiloride"
+              ],
+              "answer": "Furosemide",
+              "explanation": "Furosemide is a loop diuretic that provides rapid diuresis in acute pulmonary edema by reducing preload and pulmonary congestion."
+            },
+            {
+              "stem": "A 60-year-old patient on hydrochlorothiazide for hypertension develops hyperuricemia. Which adverse effect of thiazide diuretics does this represent?",
+              "options": [
+                "Hyperglycemia",
+                "Hyperlipidemia",
+                "Hyperuricemia",
+                "Hypokalemia"
+              ],
+              "answer": "Hyperuricemia",
+              "explanation": "Thiazide diuretics can cause hyperuricemia by reducing renal uric acid excretion, which may precipitate gout in susceptible individuals."
+            },
+            {
+              "stem": "Which of the following is NOT a contraindication for ACE inhibitors?",
+              "options": [
+                "Bilateral renal artery stenosis",
+                "Pregnancy",
+                "Aortic stenosis",
+                "Asthma"
+              ],
+              "answer": "Asthma",
+              "explanation": "ACE inhibitors are contraindicated in bilateral renal artery stenosis, pregnancy, and aortic stenosis, but not in asthma. Beta-blockers are contraindicated in asthma."
+            },
+            {
+              "stem": "Acebutolol is classified as which type of beta-blocker?",
+              "options": [
+                "Non-selective beta-blocker",
+                "Cardioselective beta-blocker",
+                "Beta-blocker with vasodilatory properties",
+                "Beta-blocker with intrinsic sympathomimetic activity"
+              ],
+              "answer": "Cardioselective beta-blocker",
+              "explanation": "Acebutolol is a cardioselective beta-blocker with partial agonist activity, primarily blocking beta-1 receptors."
+            },
+            {
+              "stem": "Which combination is MOST appropriate for the management of congestive cardiac failure?",
+              "options": [
+                "ACE inhibitor + thiazide diuretic",
+                "ACE inhibitor + furosemide",
+                "Beta-blocker + thiazide diuretic",
+                "Spironolactone + nitrate"
+              ],
+              "answer": "ACE inhibitor + furosemide",
+              "explanation": "ACE inhibitors (e.g., enalapril) reduce afterload and remodeling, while loop diuretics (e.g., furosemide) reduce preload and congestion in heart failure."
+            },
+            {
+              "stem": "A patient presents with bradycardia and hypotension after a suspected overdose of a calcium channel blocker. Which toxicity is MOST likely?",
+              "options": [
+                "Hyperkalemia",
+                "Tachycardia",
+                "Atrioventricular block",
+                "Hyperglycemia"
+              ],
+              "answer": "Atrioventricular block",
+              "explanation": "Calcium channel blocker toxicity (e.g., verapamil, diltiazem) typically causes bradycardia and AV block due to reduced calcium influx in cardiac conduction tissue."
+            },
+            {
+              "stem": "Reflex tachycardia is a known adverse effect of which antihypertensive agent?",
+              "options": [
+                "Propranolol",
+                "Amlodipine",
+                "Lisinopril",
+                "Losartan"
+              ],
+              "answer": "Amlodipine",
+              "explanation": "Amlodipine, a dihydropyridine calcium channel blocker, causes reflex tachycardia due to peripheral vasodilation and subsequent sympathetic activation."
+            },
+            {
+              "stem": "Which antihypertensive is MOST appropriate for severe hypertension in pregnancy?",
+              "options": [
+                "Enalapril",
+                "Losartan",
+                "Nifedipine",
+                "Propranolol"
+              ],
+              "answer": "Nifedipine",
+              "explanation": "Nifedipine (a calcium channel blocker) is safe and effective for managing severe hypertension in pregnancy, with minimal fetal risk."
+            },
+            {
+              "stem": "Which statement about hypertensive crisis is CORRECT?",
+              "options": [
+                "Hypertensive urgencies require immediate BP reduction with IV therapy",
+                "Hypertensive emergencies are associated with end-organ damage",
+                "Immediate-release nifedipine is the preferred agent for hypertensive emergencies",
+                "Hypertensive urgencies should be managed with oral agents within 24 hours"
+              ],
+              "answer": "Hypertensive emergencies are associated with end-organ damage",
+              "explanation": "Hypertensive emergencies involve acute end-organ damage (e.g., stroke, MI, aortic dissection), requiring immediate BP reduction with IV agents."
+            },
+            {
+              "stem": "Which statement about dyslipidemias is INCORRECT?",
+              "options": [
+                "Diet and genetics play a role in their development",
+                "They are major contributors to atherosclerosis and plaque formation",
+                "Cholesterol screening should start at age 20 in low-risk individuals",
+                "Pediatric screening is largely based on family history and risk factors"
+              ],
+              "answer": "Cholesterol screening should start at age 20 in low-risk individuals",
+              "explanation": "Cholesterol screening should start at age 35 for men and 45 for women in low-risk individuals, per WHO guidelines."
+            },
+            {
+              "stem": "Familial hypercholesterolemia is MOST commonly associated with a defect in which of the following?",
+              "options": [
+                "Apolipoprotein B-100",
+                "Apolipoprotein E",
+                "LDL receptor gene",
+                "HMG-CoA reductase gene"
+              ],
+              "answer": "LDL receptor gene",
+              "explanation": "Familial hypercholesterolemia is caused by mutations in the LDL receptor gene, leading to impaired LDL clearance and elevated cholesterol levels."
+            },
+            {
+              "stem": "Which drug is NOT typically associated with hyperlipidemia?",
+              "options": [
+                "Cyclosporine",
+                "Protease inhibitors",
+                "Prazosin",
+                "Isotretinoin"
+              ],
+              "answer": "Prazosin",
+              "explanation": "Prazosin (an alpha-1 blocker) is not associated with hyperlipidemia, whereas cyclosporine, protease inhibitors, and isotretinoin can cause lipid abnormalities."
+            },
+            {
+              "stem": "Which intervention does NOT increase HDL levels?",
+              "options": [
+                "Regular exercise",
+                "Niacin therapy",
+                "Ezetimibe therapy",
+                "Diets high in polyunsaturated fatty acids"
+              ],
+              "answer": "Ezetimibe therapy",
+              "explanation": "Ezetimibe reduces LDL cholesterol but does not significantly increase HDL levels. Exercise, niacin, and polyunsaturated fatty acids can raise HDL."
+            },
+            {
+              "stem": "Which statement about HMG-CoA reductase inhibitors (statins) is CORRECT?",
+              "options": [
+                "They bind intestinal bile acids",
+                "They are the most potent and well-tolerated lipid-lowering agents",
+                "They can be used safely in pregnancy",
+                "Adverse effects include flushing and pruritus"
+              ],
+              "answer": "They are the most potent and well-tolerated lipid-lowering agents",
+              "explanation": "Statins are the most potent LDL-lowering agents and are generally well-tolerated, though they can cause myopathy and require monitoring."
+            },
+            {
+              "stem": "Prinzmetal’s angina is characterized by which feature?",
+              "options": [
+                "Occurs at rest, especially in the early morning hours",
+                "Relieved by rest",
+                "Requires hospital admission and aggressive therapy",
+                "Associated with fixed coronary artery stenosis"
+              ],
+              "answer": "Occurs at rest, especially in the early morning hours",
+              "explanation": "Prinzmetal’s angina is caused by coronary artery vasospasm and typically occurs at rest, often in the early morning."
+            },
+            {
+              "stem": "Which drug is NOT used to prevent recurrent ischemic symptoms in angina?",
+              "options": [
+                "Calcium channel blockers",
+                "Beta blockers",
+                "Thiazide diuretics",
+                "Nitrates"
+              ],
+              "answer": "Thiazide diuretics",
+              "explanation": "Thiazide diuretics are not used for preventing ischemic symptoms in angina; calcium channel blockers, beta blockers, and nitrates are standard therapies."
+            },
+            {
+              "stem": "Which statement about the clinical management of ischemic heart disease is INCORRECT?",
+              "options": [
+                "Pharmacotherapy targets reduction in cardiac workload",
+                "Statins should only be used in patients with elevated LDL levels",
+                "ACE inhibitors benefit patients with ischemic heart disease and hypertension",
+                "Control of modifiable risk factors is essential"
+              ],
+              "answer": "Statins should only be used in patients with elevated LDL levels",
+              "explanation": "Statins are beneficial in ischemic heart disease regardless of baseline LDL levels, as they stabilize plaques and reduce inflammation."
+            },
+            {
+              "stem": "Which statement about antiplatelet drugs in angina is INCORRECT?",
+              "options": [
+                "Aspirin reduces the risk of major adverse cardiac events",
+                "Aspirin doses >162 mg have no additional benefit",
+                "Clopidogrel is preferred in aspirin allergy",
+                "Combination of aspirin and clopidogrel is recommended for all patients with stents"
+              ],
+              "answer": "Combination of aspirin and clopidogrel is recommended for all patients with stents",
+              "explanation": "Dual antiplatelet therapy (aspirin + clopidogrel) is recommended for 1-12 months post-stent placement, not indefinitely."
+            },
+            {
+              "stem": "Which statement about short-acting nitrates in angina is CORRECT?",
+              "options": [
+                "They have a delayed onset of action",
+                "They can be used as maintenance therapy in chronic stable angina",
+                "Adverse effects include lightheadedness",
+                "They can be safely combined with phosphodiesterase enzyme inhibitors"
+              ],
+              "answer": "Adverse effects include lightheadedness",
+              "explanation": "Short-acting nitrates (e.g., sublingual GTN) cause rapid vasodilation, leading to lightheadedness, headache, and hypotension. They should not be combined with PDE-5 inhibitors due to risk of severe hypotension."
+            },
+            {
+              "stem": "Which statement about calcium channel blockers in angina is INCORRECT?",
+              "options": [
+                "They can be used with beta blockers when initial treatment fails",
+                "They are recommended when beta blockers are contraindicated",
+                "Combination of dihydropyridines and beta blockers may improve symptoms",
+                "None of the above"
+              ],
+              "answer": "None of the above",
+              "explanation": "All statements are correct; calcium channel blockers (e.g., amlodipine) are effective alternatives or adjuncts to beta blockers in angina management."
+            },
+            {
+              "stem": "Which symptom is NOT typical of left heart failure?",
+              "options": [
+                "Fatigue",
+                "Nocturia",
+                "Dyspnea",
+                "Cough"
+              ],
+              "answer": "Nocturia",
+              "explanation": "Nocturia is more common in right heart failure due to fluid redistribution at night, whereas left heart failure typically presents with dyspnea, fatigue, and cough."
+            },
+            {
+              "stem": "Hepatomegaly in congestive cardiac failure is a sign of which condition?",
               "options": [
                 "Left heart failure",
                 "Right heart failure",
-                "Both A and B",
+                "Both left and right heart failure",
                 "Aortic incompetence"
               ],
               "answer": "Right heart failure",
-              "explanation": "Hepatomegaly occurs in right heart failure due to increased central venous pressure and hepatic congestion."
+              "explanation": "Hepatomegaly occurs in right heart failure due to venous congestion and elevated central venous pressure."
             },
             {
-              "stem": "Which of the following is NOT a clinical manifestation of left heart failure?",
-              "options": [
-                "Oedema",
-                "Dyspnoea",
-                "Elevated jugular venous pressure",
-                "A and C"
-              ],
-              "answer": "Oedema",
-              "explanation": "Oedema is a sign of right heart failure. Left heart failure manifestations include dyspnea, elevated JVP, and pulmonary congestion."
-            },
-            {
-              "stem": "Which of the following is NOT a precipitating factor for heart failure?",
+              "stem": "Which factor does NOT precipitate symptoms of heart failure?",
               "options": [
                 "Anemia",
                 "Pregnancy",
-                "Well controlled hypertension",
-                "Use of doxorubicin"
+                "Well-controlled hypertension",
+                "Doxorubicin use"
               ],
-              "answer": "Well controlled hypertension",
-              "explanation": "Well-controlled hypertension is not a precipitating factor for heart failure. Anemia, pregnancy, and doxorubicin (cardiotoxic) can precipitate heart failure."
+              "answer": "Well-controlled hypertension",
+              "explanation": "Well-controlled hypertension is not a precipitating factor for heart failure; anemia, pregnancy, and cardiotoxic drugs (e.g., doxorubicin) can exacerbate heart failure."
             },
             {
-              "stem": "Which of the following agents can be used in combination with loop diuretics in the management of heart failure?",
+              "stem": "Which agent can be combined with loop diuretics to enhance diuresis in heart failure?",
               "options": [
                 "Chlorthalidone",
                 "Ethacrynic acid",
@@ -1081,98 +1219,98 @@
                 "Bumetanide"
               ],
               "answer": "Metolazone",
-              "explanation": "Metolazone is a thiazide-like diuretic that can be combined with loop diuretics to enhance diuresis in resistant edema."
+              "explanation": "Metolazone is a thiazide-like diuretic that can be combined with loop diuretics to achieve synergistic diuresis in resistant edema."
             },
             {
-              "stem": "Which of the following is a beneficial effect of spironolactone in heart failure?",
+              "stem": "Which effect is NOT a beneficial property of spironolactone in heart failure?",
               "options": [
-                "It lowers the heart rate",
-                "It increases potassium levels",
-                "It prevents ventricular remodeling",
-                "It increases blood volume"
+                "Lowers heart rate",
+                "Increases potassium levels",
+                "Prevents ventricular remodeling",
+                "Increases blood volume"
               ],
-              "answer": "It prevents ventricular remodeling",
-              "explanation": "Spironolactone blocks aldosterone, preventing ventricular remodeling and improving survival in heart failure."
+              "answer": "Increases blood volume",
+              "explanation": "Spironolactone prevents ventricular remodeling and hyperkalemia but does not increase blood volume; it is a potassium-sparing diuretic."
             },
             {
-              "stem": "Which of the following is NOT an effect of ACE inhibitors in heart failure?",
+              "stem": "Which effect is NOT associated with ACE inhibitors in heart failure?",
               "options": [
-                "Slow down ventricular remodeling",
-                "Lower the heart rate",
+                "Slow ventricular remodeling",
+                "Lower heart rate",
                 "Prevent myocardial fibrosis",
-                "Lower the peripheral resistance"
+                "Lower peripheral resistance"
               ],
-              "answer": "Lower the heart rate",
-              "explanation": "ACE inhibitors do not lower heart rate directly. They reduce afterload, prevent remodeling, and improve symptoms in heart failure."
+              "answer": "Lower heart rate",
+              "explanation": "ACE inhibitors lower peripheral resistance and prevent remodeling/fibrosis but do not directly lower heart rate (beta blockers do)."
             },
             {
-              "stem": "Which of the following statements about beta-blockers in heart failure is FALSE?",
+              "stem": "Which effect is NOT a beneficial property of beta blockers in heart failure?",
               "options": [
-                "Reversing left ventricular remodeling",
-                "Promoting plasma renin release",
-                "Improving left ventricular systolic function",
-                "Decreasing the heart rate"
+                "Reverse left ventricular remodeling",
+                "Promote plasma renin release",
+                "Improve left ventricular systolic function",
+                "Decrease heart rate"
               ],
-              "answer": "Promoting plasma renin release",
-              "explanation": "Beta-blockers inhibit renin release (via beta-1 blockade), reducing the renin-angiotensin system activation in heart failure."
+              "answer": "Promote plasma renin release",
+              "explanation": "Beta blockers improve systolic function and reverse remodeling but suppress renin release via beta-1 blockade."
             },
             {
-              "stem": "Regarding myocardial infarction, which of the following is TRUE?",
+              "stem": "Which statement about myocardial infarction is CORRECT?",
               "options": [
                 "NSTEMI involves the entire thickness of the myocardial wall",
                 "Premenopausal women are at higher risk",
                 "STEMI involves the entire thickness of the myocardial wall",
-                "None of the above is true"
-              ],
-              "answer": "STEMI involves the entire thickness of the myocardial wall",
-              "explanation": "STEMI (ST-elevation MI) involves full-thickness myocardial necrosis, while NSTEMI involves subendocardial injury."
-            },
-            {
-              "stem": "Regarding cardiac biomarkers, which of the following is TRUE?",
-              "options": [
-                "Myoglobin is highly specific for cardiac injury",
-                "Troponin is highly specific for MI",
-                "CK-MB is more reliable than troponin",
                 "None of the above"
               ],
-              "answer": "Troponin is highly specific for MI",
-              "explanation": "Troponin is the most specific and sensitive biomarker for myocardial infarction, rising within 3-6 hours and peaking at 24 hours."
+              "answer": "STEMI involves the entire thickness of the myocardial wall",
+              "explanation": "STEMI (ST-elevation MI) involves full-thickness myocardial necrosis, whereas NSTEMI is subendocardial."
             },
             {
-              "stem": "A 75-year-old man presents with chest pain and elevated troponin. His BP is 200/105 mmHg. Which of the following is the MOST appropriate pain management?",
+              "stem": "Which cardiac biomarker is MOST specific for myocardial injury?",
               "options": [
-                "KL is not having an MI",
-                "The pain could be relieved with a single dose of ASA 325 mg",
-                "The pain could be managed with morphine sulfate 2-5 mg IV q5-15min",
-                "There is no need to treat pain associated with MI"
+                "Myoglobin",
+                "Troponin",
+                "CK-MB",
+                "BNP"
               ],
-              "answer": "The pain could be managed with morphine sulfate 2-5 mg IV q5-15min",
-              "explanation": "Morphine is used for severe chest pain in MI, reducing preload and pain, but should be used cautiously in hypotension."
+              "answer": "Troponin",
+              "explanation": "Troponin (I or T) is highly specific for myocardial injury and remains elevated for days, making it the preferred biomarker for MI diagnosis."
             },
             {
-              "stem": "Which of the following correctly describes the use of nitroglycerin (NTG) in acute MI?",
+              "stem": "A 75-year-old man presents with chest pain and BP 200/105 mmHg 10 hours after symptom onset. Which statement about pain management is CORRECT?",
               "options": [
-                "NTG is contraindicated in the management of MI",
-                "Use of sublingual NTG in particular is contraindicated in the management of MI",
-                "Give a single sublingual dose only on admission to the emergency department",
-                "Give intravenous NTG beginning with 10-20 µg/min"
+                "Pain cannot be relieved with ASA 325 mg",
+                "Pain should be managed with morphine sulfate 2-5 mg IV q5-15min",
+                "There is no need to treat pain in MI",
+                "Pain indicates the patient is not having an MI"
               ],
-              "answer": "Give intravenous NTG beginning with 10-20 µg/min",
-              "explanation": "IV NTG is used in acute MI to reduce preload and afterload, starting at 10-20 µg/min and titrating to effect."
+              "answer": "Pain should be managed with morphine sulfate 2-5 mg IV q5-15min",
+              "explanation": "Morphine is the drug of choice for severe chest pain in MI, as it reduces preload, afterload, and sympathetic tone."
             },
             {
-              "stem": "Should the patient receive metoprolol for his MI?",
+              "stem": "Which statement about nitroglycerin (NTG) use in MI is CORRECT?",
               "options": [
-                "Yes; it is useful for minimizing signs/symptoms of ischemia",
-                "No; it is contraindicated because he is receiving nitroglycerin",
-                "No; it is used only if the patient had received tissue plasminogen activator",
-                "No; it is contraindicated because his resting heart rate is greater than 100 beats/minute"
+                "NTG is contraindicated in MI",
+                "Sublingual NTG is contraindicated in MI",
+                "Give a single sublingual dose only on admission",
+                "Give IV NTG starting at 10-20 µg/min"
               ],
-              "answer": "Yes; it is useful for minimizing signs/symptoms of ischemia",
-              "explanation": "Metoprolol (beta-blocker) reduces myocardial oxygen demand and ischemia in MI, even with nitroglycerin use, unless contraindicated (e.g., bradycardia, hypotension)."
+              "answer": "Give IV NTG starting at 10-20 µg/min",
+              "explanation": "IV NTG is used in MI to reduce preload and afterload, starting at 10-20 µg/min and titrating to symptom relief and BP."
             },
             {
-              "stem": "Which of the following is NOT a cause of arrhythmias?",
+              "stem": "Should metoprolol be used in this patient’s MI management?",
+              "options": [
+                "Yes; it minimizes signs/symptoms of ischemia",
+                "No; it is contraindicated with nitroglycerin",
+                "No; it is used only if tPA is given",
+                "No; it is contraindicated if HR >100 bpm"
+              ],
+              "answer": "Yes; it minimizes signs/symptoms of ischemia",
+              "explanation": "Metoprolol (a beta-1 selective blocker) reduces myocardial oxygen demand and ischemia in MI, provided there are no contraindications (e.g., severe bradycardia, hypotension)."
+            },
+            {
+              "stem": "Which of the following is NOT a common cause of arrhythmias?",
               "options": [
                 "Myocardial infarction",
                 "Thyroid disorders",
@@ -1180,10 +1318,10 @@
                 "Excess alcohol consumption"
               ],
               "answer": "Young age",
-              "explanation": "Young age is not a cause of arrhythmias. MI, thyroid disorders, and alcohol excess can precipitate arrhythmias."
+              "explanation": "Young age is not a cause of arrhythmias; MI, thyroid disorders (hyper/hypo), and alcohol excess are common triggers."
             },
             {
-              "stem": "Which of the following is a class II antiarrhythmic agent?",
+              "stem": "Which agent is classified as a Class II antiarrhythmic?",
               "options": [
                 "Sotalol",
                 "Procainamide",
@@ -1191,32 +1329,32 @@
                 "Metoprolol"
               ],
               "answer": "Metoprolol",
-              "explanation": "Metoprolol is a class II antiarrhythmic (beta-blocker) that slows AV conduction and suppresses automaticity."
+              "explanation": "Metoprolol is a Class II antiarrhythmic (beta-blocker) that slows AV conduction and suppresses sympathetic-driven arrhythmias."
             },
             {
-              "stem": "A patient on chronic amiodarone requires monitoring for toxicities. Which test is MOST important to monitor?",
+              "stem": "A patient on chronic amiodarone requires monitoring for toxicity. Which test is MOST important?",
               "options": [
-                "Chest x-ray",
+                "Chest X-ray",
                 "Thyroid function tests",
                 "Liver function tests",
                 "Ophthalmic examinations"
               ],
               "answer": "Thyroid function tests",
-              "explanation": "Amiodarone causes thyroid dysfunction (hypo- or hyperthyroidism) in up to 20% of patients, necessitating regular thyroid function monitoring."
+              "explanation": "Amiodarone causes thyroid dysfunction (hypo/hyper) in ~20% of patients, necessitating regular TFT monitoring."
             },
             {
-              "stem": "Which of the following properties does propafenone possess?",
+              "stem": "Propafenone possesses which Vaughan-Williams classification property?",
               "options": [
-                "Vaughan-Williams type Ib only",
-                "Vaughan-Williams types Ic and II",
-                "Vaughan-Williams type III",
-                "Vaughan-Williams types Ia and IV"
+                "Type Ib only",
+                "Types Ic and II",
+                "Type III",
+                "Types Ia and IV"
               ],
-              "answer": "Vaughan-Williams types Ic and II",
-              "explanation": "Propafenone is a Vaughan-Williams class Ic antiarrhythmic (sodium channel blocker) with additional beta-blocking (class II) properties."
+              "answer": "Types Ic and II",
+              "explanation": "Propafenone is a Class Ic antiarrhythmic (sodium channel blocker) with additional beta-blocking (Class II) properties."
             },
             {
-              "stem": "The drug of choice for terminating paroxysmal supraventricular tachycardia is:",
+              "stem": "Which drug is the MOST appropriate for terminating paroxysmal supraventricular tachycardia?",
               "options": [
                 "Lidocaine",
                 "Procainamide",
@@ -1225,198 +1363,60 @@
               ],
               "answer": "Adenosine",
               "explanation": "Adenosine is the drug of choice for terminating PSVT due to its rapid onset and short half-life, causing transient AV block."
-            },
-            {
-              "stem": "Anemia may present with all of the following signs and symptoms EXCEPT:",
-              "options": [
-                "Pallor",
-                "Tachycardia",
-                "Papilledema",
-                "Dizziness"
-              ],
-              "answer": "Papilledema",
-              "explanation": "Papilledema is not a typical sign of anemia. Pallor, tachycardia, and dizziness are common symptoms."
-            },
-            {
-              "stem": "Iron deficiency anemia may be due to all of the following EXCEPT:",
-              "options": [
-                "Chronic intake of drugs causing lowered gastric pH",
-                "Chronic hemorrhage",
-                "Acute hemorrhage",
-                "Loss of vibration sense"
-              ],
-              "answer": "Loss of vibration sense",
-              "explanation": "Loss of vibration sense is a sign of vitamin B12 deficiency (neuropathy), not iron deficiency anemia."
-            },
-            {
-              "stem": "Management of anemia of chronic disease entails:",
-              "options": [
-                "Oral iron therapy",
-                "Blood transfusion",
-                "Treating the underlying chronic condition",
-                "None of the above"
-              ],
-              "answer": "Treating the underlying chronic condition",
-              "explanation": "Anemia of chronic disease is managed by treating the underlying condition (e.g., CKD, inflammation) rather than iron therapy."
-            },
-            {
-              "stem": "Management of sideroblastic anemia is with:",
-              "options": [
-                "High doses of Vitamin C, >200 mg",
-                "Desferrioxamine and low doses of Vitamin C <200 mg",
-                "Desferrioxamine and high doses of Vitamin C >200 mg",
-                "None of the above"
-              ],
-              "answer": "Desferrioxamine and low doses of Vitamin C <200 mg",
-              "explanation": "Sideroblastic anemia is managed with iron chelation (e.g., desferrioxamine) and low-dose vitamin C (<200 mg) to avoid iron overload."
-            },
-            {
-              "stem": "The principal biochemical defect in sickle hemoglobin involves the substitution of which amino acid at the sixth position of the β-polypeptide chain?",
-              "options": [
-                "Phenylalanine for lysine",
-                "Valine for glutamic acid",
-                "Glutamic acid for alanine",
-                "Proline for cysteine"
-              ],
-              "answer": "Valine for glutamic acid",
-              "explanation": "Sickle hemoglobin (HbS) results from a substitution of valine for glutamic acid at the sixth position of the β-chain."
-            },
-            {
-              "stem": "The principal goal of hydroxyurea therapy in sickle cell disease is to:",
-              "options": [
-                "Decrease the amount of circulating S hemoglobin",
-                "Increase polymerization of S hemoglobin",
-                "Decrease the amount of circulating F hemoglobin",
-                "Increase the adhesive properties of red cell"
-              ],
-              "answer": "Decrease the amount of circulating S hemoglobin",
-              "explanation": "Hydroxyurea increases fetal hemoglobin (HbF), which reduces the polymerization of HbS and decreases sickling."
-            },
-            {
-              "stem": "In the management of hemophilia, which of the following is TRUE?",
-              "options": [
-                "Immunomodulators have not shown benefit",
-                "Vaccination of hepatitis A and B is done regularly",
-                "Recombinant factors are cheaper than plasma derived concentrates",
-                "None of the above"
-              ],
-              "answer": "Vaccination of hepatitis A and B is done regularly",
-              "explanation": "Patients with hemophilia require hepatitis A and B vaccination due to the risk of transfusion-transmitted infections."
-            },
-            {
-              "stem": "Disseminated intravascular coagulation is managed using all of the following EXCEPT:",
-              "options": [
-                "Dermatan sulfate",
-                "Lepirudin",
-                "Warfarin",
-                "Heparin"
-              ],
-              "answer": "Warfarin",
-              "explanation": "Warfarin is contraindicated in DIC due to its delayed onset and risk of worsening bleeding. Heparin, lepirudin, and dermatan sulfate may be used."
-            },
-            {
-              "stem": "Which of the following is TRUE regarding prophylaxis of venous thromboembolism?",
-              "options": [
-                "Low-dose unfractionated heparin (UFH) provides improved protection compared to low molecular weight heparins (LMWHs)",
-                "Ambulation as soon as possible following surgery has been seen to significantly lower risk of VTE",
-                "For hospitalized general and surgical patients, evidence supports use of fondaparinux 2.5 mg SC daily",
-                "None of the above"
-              ],
-              "answer": "For hospitalized general and surgical patients, evidence supports use of fondaparinux 2.5 mg SC daily",
-              "explanation": "Fondaparinux 2.5 mg SC daily is recommended for VTE prophylaxis in hospitalized medical and surgical patients."
-            },
-            {
-              "stem": "Graduated compression stockings are:",
-              "options": [
-                "Not well tolerated by the majority of patients",
-                "An appropriate VTE prevention strategy for patients at moderate risk",
-                "An expensive strategy for the prevention of VTE",
-                "Ineffective when used in combination with pharmacologic VTE prophylaxis"
-              ],
-              "answer": "An appropriate VTE prevention strategy for patients at moderate risk",
-              "explanation": "Graduated compression stockings are effective and well-tolerated for VTE prevention in moderate-risk patients."
-            },
-            {
-              "stem": "In the long-term management of VTE, which of the following is TRUE?",
-              "options": [
-                "Anticoagulation therapy should be continued for a minimum of 6 months",
-                "Unfractionated heparin (UFH) is safer and efficacious in cancer patients and pregnant women",
-                "Warfarin can be used alongside a parenteral agent",
-                "None of the above"
-              ],
-              "answer": "Warfarin can be used alongside a parenteral agent",
-              "explanation": "Warfarin can be overlapped with a parenteral agent (e.g., LMWH) for 5 days until INR is therapeutic."
-            },
-            {
-              "stem": "Which of the following is UNTRUE about warfarin?",
-              "options": [
-                "It has no effect on circulating anticoagulants that have previously been formed",
-                "It should only be administered when a systematic patient monitoring system is available",
-                "It achieves its full antithrombotic effect on administration",
-                "For general surgery procedures, prophylaxis should be discontinued when the patient can ambulate regularly"
-              ],
-              "answer": "It achieves its full antithrombotic effect on administration",
-              "explanation": "Warfarin has a delayed onset of action (3-5 days) and requires bridging with parenteral anticoagulants for immediate anticoagulation."
-            },
-            {
-              "stem": "Which of the following signs or symptoms is NOT consistent with the diagnosis of deep vein thrombosis (DVT)?",
-              "options": [
-                "The examiner feels a palpable cord in the right leg",
-                "The patient's left leg appears red and feels hot",
-                "The patient complains of pain in the right leg when dorsiflexing the right foot",
-                "The patient's ankles are very swollen"
-              ],
-              "answer": "The patient's ankles are very swollen",
-              "explanation": "Swollen ankles are a sign of edema, not specifically DVT. A palpable cord, unilateral redness/heat, and Homan’s sign (pain on dorsiflexion) are suggestive of DVT."
-            },
-            {
-              "stem": "Regarding hemophilia, which of the following is TRUE?",
-              "options": [
-                "Female carriers have a slight bleeding tendency",
-                "It presents as nerve compression",
-                "Hemophilia A involves deficiency of factor IX",
-                "Hemophilia B involves deficiency of factor VIII"
-              ],
-              "answer": "Female carriers have a slight bleeding tendency",
-              "explanation": "Female carriers of hemophilia may have mild bleeding tendencies due to lyonization (random X-chromosome inactivation)."
             }
           ]
         },
         {
           "letter": "B",
           "name": "Short Answer Questions",
-          "marks": 20,
+          "marks": 40,
           "questions": [
             {
               "stem": "List two classes of drugs used in dyslipidemias, stating the mode of action of each.",
-              "modelAnswer": "1. HMG-CoA reductase inhibitors (statins): Inhibit HMG-CoA reductase, reducing cholesterol synthesis in the liver and increasing LDL receptor expression, leading to enhanced LDL clearance.\n2. Ezetimibe: Inhibits intestinal absorption of cholesterol by blocking the Niemann-Pick C1-Like 1 (NPC1L1) protein, reducing LDL cholesterol levels."
+              "modelAnswer": "1. HMG-CoA reductase inhibitors (statins): Inhibit HMG-CoA reductase, reducing cholesterol synthesis in the liver and increasing LDL receptor expression to enhance LDL clearance.\n2. Ezetimibe: Inhibits intestinal cholesterol absorption by blocking Niemann-Pick C1-Like1 (NPC1L1) protein, reducing LDL cholesterol."
             },
             {
               "stem": "Discuss the management of hemolytic-uremic syndrome (HUS).",
-              "modelAnswer": "Management of HUS includes:\n1. Supportive care: Fluid and electrolyte balance, blood pressure control, and dialysis if necessary (especially in renal failure).\n2. Avoidance of antibiotics (unless secondary infection): Antibiotics may worsen HUS by increasing toxin release in Shiga toxin-producing E. coli (STEC) cases.\n3. Plasma exchange or infusion: For severe cases (e.g., atypical HUS), plasma exchange removes autoantibodies and complements, while plasma infusion provides deficient factors.\n4. Eculizumab: A monoclonal antibody against C5, used in atypical HUS to inhibit complement-mediated hemolysis.\n5. Monitoring: Regular assessment of renal function, hemoglobin, and platelet counts."
+              "modelAnswer": "Management of HUS involves:\n- Supportive care: Fluid and electrolyte balance, blood pressure control, and dialysis if renal failure occurs.\n- Avoidance of antibiotics (unless evidence of infection), as they may worsen toxin release in Shiga toxin-producing E. coli (STEC)-associated HUS.\n- Plasma exchange or infusion in severe cases (e.g., atypical HUS or TTP overlap).\n- Monitoring for complications (e.g., seizures, AKI)."
             },
             {
               "stem": "Briefly describe the different types of angina.",
-              "modelAnswer": "1. Stable angina: Predictable chest pain occurring with exertion or stress, relieved by rest or nitroglycerin. Caused by fixed atherosclerotic plaques.\n2. Unstable angina: Chest pain at rest or with minimal exertion, increasing in frequency or severity. Indicates plaque rupture or thrombosis.\n3. Prinzmetal’s (variant) angina: Occurs at rest, often early morning, due to coronary artery spasm. Responds to nitrates and calcium channel blockers.\n4. Microvascular angina: Chest pain with normal coronary arteries, caused by endothelial dysfunction or microvascular spasms."
+              "modelAnswer": "1. Stable angina: Predictable chest pain on exertion, relieved by rest or nitrates; due to fixed coronary stenosis.\n2. Unstable angina: New-onset, worsening, or rest angina; high risk of MI; due to plaque rupture and thrombosis.\n3. Prinzmetal’s (variant) angina: Occurs at rest, often at night; caused by coronary artery vasospasm.\n4. Microvascular angina: Chest pain with normal coronary arteries; due to microvascular dysfunction."
             },
             {
               "stem": "Outline the management of a patient diagnosed with iron deficiency anemia.",
-              "modelAnswer": "1. Identify and treat the underlying cause (e.g., blood loss, malabsorption, dietary deficiency).\n2. Oral iron therapy: Ferrous sulfate 325 mg (60 mg elemental iron) TID, taken on an empty stomach for better absorption. Continue for 3-6 months to replenish stores.\n3. Parenteral iron: For patients intolerant to oral iron or with malabsorption (e.g., iron sucrose, ferric gluconate).\n4. Dietary modifications: Increase iron-rich foods (e.g., red meat, leafy greens) and vitamin C (enhances absorption).\n5. Monitor: Hemoglobin, reticulocyte count (after 1-2 weeks), and ferritin levels (after 2-3 months).\n6. Address complications: Transfusion for severe anemia or symptomatic patients."
+              "modelAnswer": "1. Identify and treat underlying cause (e.g., blood loss, malabsorption).\n2. Oral iron therapy: Ferrous sulfate 200 mg TDS (elemental iron 60 mg TDS) for 3-6 months; take on empty stomach for better absorption.\n3. Monitor Hb and reticulocyte count after 2-4 weeks; continue until Hb normalizes.\n4. Dietary advice: Increase iron-rich foods (meat, leafy greens) and vitamin C (enhances absorption).\n5. Parenteral iron (e.g., iron sucrose) if oral therapy fails or malabsorption."
             },
             {
-              "stem": "Give two examples of angiotensin-converting enzyme (ACE) inhibitors; what are some of the adverse effects of this class of antihypertensives?",
-              "modelAnswer": "Examples: Enalapril, Lisinopril.\nAdverse effects:\n1. Dry cough (due to bradykinin accumulation).\n2. Hyperkalemia (reduced aldosterone secretion).\n3. Acute kidney injury (especially in bilateral renal artery stenosis).\n4. Angioedema (rare but serious).\n5. Teratogenicity (contraindicated in pregnancy).\nMonitoring: Serum creatinine, potassium, and blood pressure."
+              "stem": "Give two examples of angiotensin-converting enzyme (ACE) inhibitors; what are some adverse effects of this class of antihypertensives?",
+              "modelAnswer": "Examples: Enalapril, Lisinopril.\nAdverse effects: Dry cough (due to bradykinin accumulation), hyperkalemia, acute kidney injury (especially in bilateral renal artery stenosis), angioedema, and first-dose hypotension."
+            },
+            {
+              "stem": "a) What is the mechanism of action of digoxin in heart failure?\nb) List two adverse effects of digoxin toxicity.",
+              "modelAnswer": "a) Mechanism: Inhibits Na+/K+-ATPase, increasing intracellular Ca2+ and contractility (positive inotropy); also slows AV conduction (rate control in AF).\nb) Adverse effects: Nausea/vomiting, arrhythmias (e.g., AV block, ventricular tachycardia), visual disturbances (yellow-green halos), and hyperkalemia."
+            },
+            {
+              "stem": "a) What is the target international normalized ratio (INR) for a patient with a mechanical heart valve?\nb) List two drug interactions that can increase INR in a patient on warfarin.",
+              "modelAnswer": "a) Target INR: 2.5–3.5 (higher than standard 2–3 due to higher thrombotic risk).\nb) Drug interactions: Trimethoprim-sulfamethoxazole (inhibits warfarin metabolism), amiodarone (inhibits CYP2C9), and fluconazole (CYP2C9 inhibitor)."
+            },
+            {
+              "stem": "a) What is the primary goal of hydroxyurea therapy in sickle cell disease?\nb) List one monitoring parameter for hydroxyurea.",
+              "modelAnswer": "a) Primary goal: Increase fetal hemoglobin (HbF) production, reducing sickling and hemolysis.\nb) Monitoring: Complete blood count (CBC) every 2–4 weeks initially to assess for myelosuppression (neutropenia, thrombocytopenia)."
             }
           ]
         },
         {
           "letter": "C",
           "name": "Long Answer Questions",
-          "marks": 20,
+          "marks": 30,
           "questions": [
             {
-              "stem": "M.O, a 65-year-old known hypertensive patient with a history of coronary artery disease and type 2 diabetes mellitus presents to hospital. His presenting complaint is a feeling of breathlessness and easy fatiguability. He reports that he experiences these symptoms when he walks for short distances, climbs stairs and when he lies down flat. He says that he has resorted to using at least 2 pillows when he goes to sleep as they offer some relief. On physical examination, you note that his ankles are swollen, to which he further informs you that he no longer wears closed shoes, as they don’t fit and he only wears open shoes. You also note slight abdominal distension, and upon the review of systems he reveals that he has difficulty finishing his meals due to a feeling of early satiety and nausea.\n\na) Based on this information, what diagnosis would you make?\n\nb) What tests would you request to confirm the diagnosis?\n\nc) What factors would precipitate symptoms of this disease?\n\nd) Outline a pharmaceutical care plan for M.O.",
-              "modelAnswer": "a) Diagnosis:\n   - **Congestive heart failure (CHF), likely left-sided with possible right-sided involvement (congestive cardiac failure).**\n   - Symptoms: Dyspnea on exertion, orthopnea (use of 2 pillows), paroxysmal nocturnal dyspnea (PND), fatigue, peripheral edema, early satiety, nausea, and abdominal distension suggest fluid overload and hepatic congestion.\n\nb) Diagnostic tests:\n   1. **Echocardiography (ECHO):** To assess left ventricular ejection fraction (LVEF), valvular function, and structural abnormalities.\n   2. **B-type natriuretic peptide (BNP) or N-terminal pro-BNP (NT-proBNP):** Elevated levels support the diagnosis of heart failure.\n   3. **Electrocardiogram (ECG):** To evaluate for ischemic changes, arrhythmias, or left ventricular hypertrophy.\n   4. **Chest X-ray:** To assess for pulmonary congestion, cardiomegaly, or pleural effusions.\n   5. **Serum electrolytes, renal function, and liver enzymes:** To evaluate for electrolyte imbalances (e.g., hyponatremia), renal impairment, or hepatic congestion.\n   6. **Complete blood count (CBC):** To assess for anemia, which can exacerbate heart failure symptoms.\n   7. **Thyroid function tests:** To rule out hyperthyroidism or hypothyroidism as a precipitating factor.\n\nc) Precipitating factors for heart failure symptoms:\n   1. **Non-adherence to medications or dietary sodium restriction:** High sodium intake increases fluid retention.\n   2. **Infection or sepsis:** Increases metabolic demand and cardiac workload.\n   3. **Uncontrolled hypertension:** Increases afterload, worsening heart failure.\n   4. **Arrhythmias (e.g., atrial fibrillation):** Reduces cardiac output and increases risk of thromboembolism.\n   5. **Myocardial ischemia or infarction:** Reduces myocardial contractility.\n   6. **Anemia:** Reduces oxygen delivery, increasing cardiac workload.\n   7. **Medication non-adherence (e.g., diuretics, ACE inhibitors):** Leads to fluid overload or worsening symptoms.\n   8. **Excessive fluid intake:** Worsens fluid overload and edema.\n   9. **Renal dysfunction:** Reduces diuretic efficacy and exacerbates volume overload.\n   10. **Alcohol or drug use:** Can cause or worsen cardiomyopathy.\n\nd) Pharmaceutical care plan for M.O.:\n   **1. Medication optimization:**\n      - **ACE inhibitor (e.g., Enalapril 5 mg PO daily):** Start low and titrate to target dose (e.g., 10-20 mg daily) to reduce afterload and mortality.\n      - **Beta-blocker (e.g., Bisoprolol 1.25 mg PO daily):** Titrate to target dose (e.g., 10 mg daily) to reduce heart rate, improve LVEF, and prevent remodeling.\n      - **Loop diuretic (e.g., Furosemide 40 mg PO daily):** Adjust dose based on fluid status (e.g., increase to 80 mg if edema persists). Monitor electrolytes (potassium, sodium) and renal function.\n      - **Aldosterone antagonist (e.g., Spironolactone 25 mg PO daily):** Add if LVEF <35% and symptomatic to reduce mortality and edema.\n      - **SGLT2 inhibitor (e.g., Empagliflozin 10 mg PO daily):** For diabetic patients with heart failure (reduces hospitalization and mortality).\n      - **Statin (e.g., Atorvastatin 40 mg PO daily):** For secondary prevention of coronary artery disease.\n      - **Antiplatelet (e.g., Aspirin 75-100 mg PO daily):** For coronary artery disease.\n\n   **2. Monitoring and follow-up:**\n      - **Weekly:** Weight, blood pressure, heart rate, and symptoms (dyspnea, edema).\n      - **Monthly:** Serum electrolytes (potassium, sodium), renal function (creatinine, eGFR), and liver enzymes.\n      - **Every 3-6 months:** BNP/NT-proBNP, lipid profile, and HbA1c (for diabetes control).\n      - **ECHO:** Repeat every 6-12 months or if clinical deterioration.\n\n   **3. Patient education:**\n      - **Diet:** Sodium restriction (<2 g/day), fluid restriction (1.5-2 L/day if hyponatremic), and heart-healthy diet (DASH diet).\n      - **Lifestyle:** Regular light exercise (e.g., walking), smoking cessation, and alcohol moderation.\n      - **Medication adherence:** Importance of taking medications as prescribed, even if asymptomatic.\n      - **Symptom recognition:** Teach signs of worsening heart failure (e.g., increased dyspnea, weight gain >2 kg in 3 days, worsening edema).\n      - **Vaccinations:** Annual influenza and pneumococcal vaccination to prevent infections.\n\n   **4. Addressing comorbidities:**\n      - **Diabetes:** Optimize glycemic control (target HbA1c <7%). Consider SGLT2 inhibitors or GLP-1 agonists with proven cardiovascular benefits.\n      - **Hypertension:** Target BP <130/80 mmHg with ACE inhibitor/ARB + beta-blocker.\n      - **Dyslipidemia:** Continue statin therapy for secondary prevention.\n\n   **5. Social and psychological support:**\n      - Referral to cardiac rehabilitation for exercise training and education.\n      - Address depression or anxiety, which can worsen outcomes.\n      - Support groups for heart failure patients.\n\n   **6. Advanced care planning:**\n      - Discuss goals of care, advance directives, and palliative care options if symptoms progress despite optimal therapy."
+              "stem": "A 65-year-old man with a history of hypertension, type 2 diabetes, and coronary artery disease presents with progressive breathlessness. He reports orthopnea (needing 3 pillows to sleep) and bilateral ankle swelling. He also has early satiety and nausea. On examination, his ankles are pitting edematous, and his abdomen is slightly distended. \n\na) What is the MOST likely diagnosis? (2 marks)\nb) What investigations would you request to confirm the diagnosis? (3 marks)\nc) What factors could precipitate or exacerbate his symptoms? (5 marks)\nd) Outline a comprehensive pharmaceutical care plan for this patient. (15 marks)",
+              "modelAnswer": "a) Diagnosis: Chronic heart failure with reduced ejection fraction (HFrEF), likely due to ischemic cardiomyopathy (given history of CAD) and hypertension. Orthopnea, peripheral edema, and abdominal distension suggest fluid overload.\n\nb) Investigations:\n- Echocardiogram: To assess ejection fraction, valvular function, and structural abnormalities.\n- BNP or NT-proBNP: Elevated levels support heart failure diagnosis.\n- ECG: To evaluate for ischemia, arrhythmias, or conduction abnormalities.\n- Chest X-ray: To assess for pulmonary congestion, cardiomegaly, or pleural effusions.\n- Serum electrolytes, renal function, and liver enzymes: To evaluate for comorbidities (e.g., hyponatremia, renal dysfunction) and guide diuretic therapy.\n\nc) Precipitating/exacerbating factors:\n- Non-adherence to medications (e.g., ACE inhibitors, beta blockers, diuretics).\n- Dietary indiscretion (high sodium intake leading to fluid retention).\n- Uncontrolled hypertension or ischemia (increased afterload).\n- Anemia (reduced oxygen delivery to myocardium).\n- Medication-related factors (e.g., NSAIDs causing fluid retention, corticosteroids worsening glycemic control).\n- Infections (e.g., pneumonia increasing cardiac workload).\n\nd) Pharmaceutical care plan:\n1. Optimize guideline-directed medical therapy (GDMT):\n   - ACE inhibitor (e.g., enalapril) or ARB (e.g., losartan) if ACE inhibitor intolerant: Start low, titrate to target dose (e.g., enalapril 10 mg BD), monitor BP, renal function, and potassium.\n   - Beta-blocker (e.g., bisoprolol): Start 1.25 mg OD, titrate to 10 mg OD if tolerated; monitor heart rate and BP.\n   - Mineralocorticoid receptor antagonist (e.g., spironolactone 25 mg OD): Monitor potassium and renal function (target K+ 4.5–5.5 mmol/L).\n   - Loop diuretic (e.g., furosemide 40 mg OD): Adjust dose based on weight, edema, and renal function; monitor electrolytes (especially potassium).\n\n2. Address comorbidities:\n   - Diabetes: Optimize glycemic control (e.g., metformin if eGFR >30 mL/min, SGLT2 inhibitor like empagliflozin if tolerated).\n   - Hypertension: Ensure BP <130/80 mmHg; consider adding hydralazine or isosorbide dinitrate if needed.\n\n3. Patient education:\n   - Fluid restriction (1.5–2 L/day) and low-sodium diet (<2 g/day).\n   - Daily weight monitoring; report >2 kg gain in 3 days.\n   - Medication adherence and side effect recognition (e.g., cough with ACE inhibitors, hyperkalemia with spironolactone).\n   - Signs of worsening heart failure (e.g., increased dyspnea, orthopnea, edema).\n\n4. Monitoring and follow-up:\n   - Clinic visits every 1–3 months initially, then every 6 months if stable.\n   - Labs: Renal function, electrolytes, BNP every 3–6 months.\n   - Echocardiogram annually or if clinical deterioration.\n   - Review medication list for drug interactions (e.g., NSAIDs, calcium channel blockers).\n\n5. Lifestyle modifications:\n   - Encourage regular, moderate exercise (e.g., walking) as tolerated.\n   - Smoking cessation and alcohol reduction.\n   - Vaccinations: Annual influenza and pneumococcal (if indicated).\n\n6. Advanced therapies (if refractory):\n   - Consider referral for device therapy (e.g., ICD, CRT) if LVEF <35% despite GDMT.\n   - Palliative care involvement for symptom management if advanced disease."
+            },
+            {
+              "stem": "A 30-year-old woman presents with fatigue, pallor, and exertional dyspnea. Laboratory results show:\n- Hb: 8.5 g/dL (low)\n- MCV: 70 fL (low)\n- Serum ferritin: 8 µg/L (low)\n- Serum iron: 5 µmol/L (low)\n- TIBC: 70 µmol/L (high)\n- Transferrin saturation: 7% (low)\n\na) What is the MOST likely type of anemia? Provide a rationale. (3 marks)\nb) List four potential causes of this anemia in this patient. (4 marks)\nc) Outline a management plan for this patient, including monitoring parameters. (8 marks)",
+              "modelAnswer": "a) Type of anemia: Microcytic hypochromic anemia due to iron deficiency (low MCV, low ferritin, low serum iron, high TIBC, low transferrin saturation).\n\nb) Potential causes:\n1. Chronic blood loss (e.g., menorrhagia, gastrointestinal bleeding from peptic ulcer disease or angiodysplasia).\n2. Malabsorption (e.g., celiac disease, post-gastric bypass surgery).\n3. Inadequate dietary iron intake (e.g., vegetarian/vegan diet, poor nutrition).\n4. Increased iron requirements (e.g., pregnancy, lactation).\n\nc) Management plan:\n1. Oral iron therapy:\n   - Ferrous sulfate 200 mg TDS (elemental iron 60 mg TDS) on an empty stomach for 3–6 months.\n   - Counsel on side effects (e.g., nausea, constipation) and stool darkening.\n   - Take with vitamin C (e.g., orange juice) to enhance absorption.\n\n2. Identify and treat underlying cause:\n   - For suspected GI bleeding: Refer for endoscopy/colonoscopy.\n   - For malabsorption: Consider celiac serology and duodenal biopsy.\n   - For menorrhagia: Refer to gynecology for evaluation.\n\n3. Dietary advice:\n   - Increase iron-rich foods (e.g., red meat, poultry, fish, lentils, spinach).\n   - Avoid calcium-rich foods/dairy with iron supplements (inhibits absorption).\n\n4. Monitoring:\n   - Repeat CBC and reticulocyte count after 2–4 weeks to assess response (Hb should rise by ~1 g/dL every 2 weeks).\n   - If no response after 4 weeks, consider poor adherence, malabsorption, or ongoing blood loss.\n   - Check ferritin at 3 months to ensure iron stores are replenished.\n   - If oral therapy fails or intolerance: Consider parenteral iron (e.g., iron sucrose 200 mg IV weekly).\n\n5. Follow-up:\n   - Repeat Hb and iron studies at 3 months to confirm resolution.\n   - Address underlying cause to prevent recurrence."
             }
           ]
         }

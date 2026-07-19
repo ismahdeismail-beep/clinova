@@ -181,7 +181,7 @@ export default function DashboardScreen() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search Knowledge Base, Guidelines, your notes, or ask a clinical question..."
+              placeholder="Search Knowledge Base, Guidelines, or ask a clinical question..."
               className="w-full pl-12 pr-4 py-3.5 md:py-4 bg-[var(--surface)] border-2 border-[var(--border)] rounded-2xl focus:border-[var(--primary)] focus:ring-4 focus:ring-[var(--primary)]/10 outline-none text-[var(--text)] text-sm md:text-base shadow-sm transition-all backdrop-blur-md"
             />
             {searchQuery.trim().length > 1 && (

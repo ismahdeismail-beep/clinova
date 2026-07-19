@@ -1079,7 +1079,7 @@ app.post('/api/gemini/assistant', async (req, res) => {
 
     res.json({ text: response.text });
   } catch (error: any) {
-    console.error('Clinical Assistant error:', error);
+    console.error('Clinova Support error:', error);
     res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'AI assistant failed' });
   }
 });
@@ -1109,13 +1109,13 @@ app.post('/api/gemini/assistant/stream', async (req, res) => {
       { model: 'gemini-flash-latest', contents, config: { systemInstruction } },
       (chunk) => { if (!closed) send({ text: chunk }); },
       undefined,
-      'Clinical Assistant'
+      'Clinova Support'
     );
 
     if (!closed) send({ done: true });
     res.end();
   } catch (error: any) {
-    console.error('Clinical Assistant stream error:', error);
+    console.error('Clinova Support stream error:', error);
     if (!closed) send({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'AI assistant failed' });
     res.end();
   }

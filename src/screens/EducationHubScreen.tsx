@@ -5,7 +5,7 @@ import {
   Droplets, Flame, Beaker, HeartPulse, Bug, Skull, Heart, Award, FileText,
   Briefcase, HelpCircle, Layers, Headphones, FileArchive, Calendar, BrainCircuit,
   Bookmark, Download, History, ChevronLeft, Bot, Play, List, Sparkles, CheckCircle2, Clock, Database, Mic,
-  FolderPlus, Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star, ArrowUpRight, Flag,
+  Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star, ArrowUpRight, Flag,
   Compass, FileDown, MoreHorizontal, ArrowLeft, ArrowRight
 } from 'lucide-react';
 import Markdown from 'react-markdown';
@@ -86,12 +86,7 @@ export default function EducationHubScreen() {
   // Custom unit management states
   const [customUnits, setCustomUnits] = useState<CustomUnit[]>([]);
   const [loadingCustom, setLoadingCustom] = useState(false);
-  const [showCreateModal, setShowCreateModal] = useState(false);
-  const [newTitle, setNewTitle] = useState('');
-  const [newDescription, setNewDescription] = useState('');
-  const [newHours, setNewHours] = useState(10);
-  const [isCreatingUnit, setIsCreatingUnit] = useState(false);
-  const [unitError, setUnitError] = useState<string | null>(null);
+
 
   // Favorite state management
   const [favoriteModules, setFavoriteModules] = useState<string[]>(() => {
@@ -231,47 +226,6 @@ export default function EducationHubScreen() {
         scrollContainerRef.current.scrollTop = scrollPositions.current.units;
       }
     }, 0);
-  };
-
-  const handleCreateUnit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const title = newTitle.trim();
-    if (!title || !userData || !selectedModule) return;
-
-    // Check for duplicate custom unit titles (case insensitive)
-    const isDuplicate = [
-      ...getModuleUnits(selectedModule.id),
-      ...customUnits
-    ].some(u => u.title.toLowerCase() === title.toLowerCase());
-
-    if (isDuplicate) {
-      setUnitError(`A unit or folder named "${title}" already exists in this module.`);
-      return;
-    }
-
-    setIsCreatingUnit(true);
-    setUnitError(null);
-    
-    try {
-      await EducationService.createCustomUnit(
-        userData.id,
-        selectedModule.id,
-        title,
-        newDescription.trim(),
-        newHours
-      );
-      setNewTitle('');
-      setNewDescription('');
-      setNewHours(10);
-      setUnitError(null);
-      setShowCreateModal(false);
-      await fetchCustomUnits();
-    } catch (err) {
-      console.error('Error creating custom unit:', err);
-      setUnitError('Failed to create custom unit. Please try again.');
-    } finally {
-      setIsCreatingUnit(false);
-    }
   };
 
   const handleDeleteUnit = async (unitId: string, e: React.MouseEvent) => {
@@ -447,18 +401,6 @@ export default function EducationHubScreen() {
                   <ModuleIcon name={selectedModule.icon} className={`text-${selectedModule.color}-500`} /> 
                   {selectedModule.title}
                 </h2>
-                
-                {userData && (
-                  <button 
-                    onClick={() => {
-                      setUnitError(null);
-                      setShowCreateModal(true);
-                    }}
-                    className="flex items-center justify-center gap-2 px-5 py-3 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-2xl hover:opacity-95 font-bold text-sm shadow-sm hover:shadow transition-all w-full sm:w-auto"
-                  >
-                    <FolderPlus size={18} /> Add Custom Unit/Folder
-                  </button>
-                )}
               </div>
 
               {selectedModule?.id === 'clinical_pharm' && (
@@ -535,9 +477,9 @@ export default function EducationHubScreen() {
                   <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mx-auto mb-4">
                     <List size={32} className="text-[var(--text-muted)]" />
                   </div>
-                  <h3 className="text-lg font-bold text-[var(--text)]">No Sub-Folders or Units Yet</h3>
+                  <h3 className="text-lg font-bold text-[var(--text)]">No Units Available Yet</h3>
                   <p className="text-sm text-[var(--text-muted)] mt-2 max-w-sm mx-auto">
-                    Create your first custom sub-folder (e.g. Anticancers, Vitamins, Autonomics) using the button above to begin organizing your study material.
+                    Units for this module will appear here once they are available.
                   </p>
                 </div>
               )}
@@ -553,105 +495,6 @@ export default function EducationHubScreen() {
           
         </div>
       </div>
-
-      {/* Folder Creation Modal */}
-      {showCreateModal && (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 z-50">
-          <div className="bg-[var(--surface)] border border-[var(--border)] rounded-3xl w-full max-w-md p-6 shadow-xl animate-in zoom-in-95 duration-200">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-xl font-bold text-[var(--text)] flex items-center gap-2">
-                <FolderPlus className="text-purple-500" /> Create Custom Folder
-              </h3>
-              <button 
-                onClick={() => {
-                  setUnitError(null);
-                  setShowCreateModal(false);
-                }}
-                className="p-1.5 hover:bg-[var(--surface-dim)] rounded-lg transition-colors text-[var(--text-muted)] hover:text-[var(--text)]"
-                disabled={isCreatingUnit}
-              >
-                <X size={20} />
-              </button>
-            </div>
-
-            {unitError && (
-              <div className="p-3 bg-red-500/10 border border-red-500/30 rounded-xl flex items-start gap-2 text-xs text-red-500 mb-4 animate-in fade-in duration-200">
-                <AlertCircle size={14} className="shrink-0 mt-0.5" />
-                <span>{unitError}</span>
-              </div>
-            )}
-            
-            <form onSubmit={handleCreateUnit} className="space-y-4">
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1.5">Folder / Unit Name</label>
-                <input
-                  type="text"
-                  required
-                  placeholder="e.g. Anticancers, Autonomic Pharmacology"
-                  value={newTitle}
-                  onChange={(e) => setNewTitle(e.target.value)}
-                  className="w-full px-4 py-2.5 bg-[var(--surface-dim)] border border-[var(--border)] rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
-                  disabled={isCreatingUnit}
-                />
-              </div>
-
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1.5">Description</label>
-                <textarea
-                  rows={3}
-                  placeholder="Summarize what slides, guidelines, or materials go into this revision unit."
-                  value={newDescription}
-                  onChange={(e) => setNewDescription(e.target.value)}
-                  className="w-full px-4 py-2.5 bg-[var(--surface-dim)] border border-[var(--border)] rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all resize-none"
-                  disabled={isCreatingUnit}
-                />
-              </div>
-
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1.5">Estimated Revision Time (Hours)</label>
-                <input
-                  type="number"
-                  min={1}
-                  max={100}
-                  required
-                  value={newHours}
-                  onChange={(e) => setNewHours(parseInt(e.target.value) || 10)}
-                  className="w-full px-4 py-2.5 bg-[var(--surface-dim)] border border-[var(--border)] rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
-                  disabled={isCreatingUnit}
-                />
-              </div>
-
-              <div className="flex gap-3 pt-2">
-                <button
-                  type="button"
-                  onClick={() => {
-                    setUnitError(null);
-                    setShowCreateModal(false);
-                  }}
-                  className="flex-1 px-4 py-2.5 border border-[var(--border)] text-[var(--text)] rounded-xl text-sm font-semibold hover:bg-[var(--surface-dim)] transition-colors"
-                  disabled={isCreatingUnit}
-                >
-                  Cancel
-                </button>
-                <button
-                  type="submit"
-                  className="flex-1 px-4 py-2.5 bg-gradient-to-r from-purple-600 to-[var(--primary)] text-white rounded-xl text-sm font-bold shadow-md hover:opacity-95 transition-opacity disabled:opacity-50 flex items-center justify-center gap-2"
-                  disabled={isCreatingUnit}
-                >
-                  {isCreatingUnit ? (
-                    <>
-                      <RotateCcw className="animate-spin" size={16} />
-                      <span>Creating...</span>
-                    </>
-                  ) : (
-                    <span>Create Folder</span>
-                  )}
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
@@ -736,11 +579,6 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
   const [subFolders, setSubFolders] = useState<SubFolder[]>([]);
   const [currentFolderId, setCurrentFolderId] = useState(unit.id);
   const [folderStack, setFolderStack] = useState<SubFolder[]>([]);
-  const [showAddFolder, setShowAddFolder] = useState(false);
-  const [newFolderName, setNewFolderName] = useState('');
-  const [newFolderDesc, setNewFolderDesc] = useState('');
-  const [isCreatingFolder, setIsCreatingFolder] = useState(false);
-  const [folderError, setFolderError] = useState<string | null>(null);
   const [showTabs, setShowTabs] = useState(true);
   const [diseaseOpen, setDiseaseOpen] = useState(false);
 
@@ -963,45 +801,6 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
     ? unit.title 
     : subFolders.find(f => f.id === currentFolderId)?.title || unit.title;
 
-  const handleCreateFolder = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const name = newFolderName.trim();
-    if (!userData || !name) return;
-
-    // Check for duplicate folder names within the current parent scope
-    const isDuplicate = subFolders.some(
-      f => f.parentId === activeParentId && f.title.toLowerCase() === name.toLowerCase()
-    );
-
-    if (isDuplicate) {
-      setFolderError(`A folder named "${name}" already exists in this directory.`);
-      return;
-    }
-
-    setIsCreatingFolder(true);
-    setFolderError(null);
-
-    try {
-      await EducationService.createSubFolder(
-        userData.id, 
-        unit.id, 
-        activeParentId, 
-        name, 
-        newFolderDesc.trim()
-      );
-      setNewFolderName('');
-      setNewFolderDesc('');
-      setFolderError(null);
-      setShowAddFolder(false);
-      await fetchFolders();
-    } catch (err) {
-      console.error('Error creating folder:', err);
-      setFolderError('Failed to create folder. Please try again.');
-    } finally {
-      setIsCreatingFolder(false);
-    }
-  };
-
   const handleDeleteFolder = async (folderId: string) => {
     if (!userData) return;
     if (window.confirm('Are you sure you want to delete this sub-folder? All nested items will be detached.')) {
@@ -1114,81 +913,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
               </React.Fragment>
             ))}
           </div>
-
-          <button
-            onClick={() => {
-              setFolderError(null);
-              setShowAddFolder(!showAddFolder);
-            }}
-            className="px-3.5 py-1.5 bg-[var(--primary)]/10 text-[var(--primary)] hover:bg-[var(--primary)]/20 rounded-xl text-xs font-extrabold transition-all flex items-center gap-1.5 cursor-pointer self-start sm:self-auto shrink-0"
-          >
-            <FolderPlus size={14} />
-            New Folder
-          </button>
         </div>
-
-        {/* Inline Create Sub-Folder Dialog */}
-        {showAddFolder && (
-          <form onSubmit={handleCreateFolder} className="p-4 bg-[var(--surface-dim)]/50 border border-[var(--border)]/40 rounded-2xl space-y-3 max-w-md animate-in slide-in-from-top-2 duration-200">
-            <h4 className="text-xs font-black text-[var(--text)] uppercase tracking-wider flex items-center gap-1">
-              <FolderPlus size={13} className="text-[var(--primary)]" /> Create Sub-folder in {currentFolderName}
-            </h4>
-            
-            {folderError && (
-              <div className="p-2.5 bg-red-500/10 border border-red-500/20 rounded-xl text-xs text-red-500 flex items-start gap-1.5 animate-in fade-in duration-200">
-                <AlertCircle size={14} className="shrink-0 mt-0.5" />
-                <span>{folderError}</span>
-              </div>
-            )}
-
-            <div className="space-y-2">
-              <input
-                type="text"
-                required
-                placeholder="Sub-folder Name (e.g. Anticancers, Vitamins, Endocrine)"
-                value={newFolderName}
-                onChange={(e) => setNewFolderName(e.target.value)}
-                className="w-full px-3.5 py-2 bg-[var(--bg)] border border-[var(--border)] rounded-xl text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[var(--primary)] text-[var(--text)]"
-                disabled={isCreatingFolder}
-              />
-              <input
-                type="text"
-                placeholder="Brief Description (e.g. Cytotoxic agents and protocols)"
-                value={newFolderDesc}
-                onChange={(e) => setNewFolderDesc(e.target.value)}
-                className="w-full px-3.5 py-2 bg-[var(--bg)] border border-[var(--border)] rounded-xl text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[var(--primary)] text-[var(--text)]"
-                disabled={isCreatingFolder}
-              />
-            </div>
-            <div className="flex gap-2">
-              <button
-                type="submit"
-                className="px-3.5 py-1.5 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-xl text-xs font-bold hover:opacity-95 transition-all cursor-pointer disabled:opacity-50 flex items-center gap-1"
-                disabled={isCreatingFolder}
-              >
-                {isCreatingFolder ? (
-                  <>
-                    <RotateCcw className="animate-spin" size={12} />
-                    <span>Creating...</span>
-                  </>
-                ) : (
-                  <span>Create</span>
-                )}
-              </button>
-              <button
-                type="button"
-                onClick={() => {
-                  setFolderError(null);
-                  setShowAddFolder(false);
-                }}
-                className="px-3.5 py-1.5 border border-[var(--border)] text-[var(--text)] rounded-xl text-xs font-bold hover:bg-[var(--surface-dim)] transition-all cursor-pointer"
-                disabled={isCreatingFolder}
-              >
-                Cancel
-              </button>
-            </div>
-          </form>
-        )}
 
         {/* Directory Contents Row/Grid */}
         {currentLevelFolders.length > 0 ? (
@@ -1231,7 +956,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
         ) : (
           <p className="text-[11px] text-[var(--text-muted)] font-semibold italic flex items-center gap-1.5">
             <Folder size={13} className="text-amber-500 opacity-60" />
-            <span>This directory has no subfolders yet. Click "New Folder" to sub-categorize your materials.</span>
+            <span>This directory has no subfolders.</span>
           </p>
         )}
       </div>
@@ -1867,7 +1592,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
               <Plus className="text-purple-500" size={18} /> Module Context
             </h3>
             <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-              This unit runs within <strong>{module.title}</strong>. Dynamic flashcards, MCQ simulators, and the tutor chat are automatically optimized based on your notes and outlines.
+              This unit runs within <strong>{module.title}</strong>. Dynamic flashcards, MCQ simulators, and the tutor chat are automatically optimized based on the curriculum content and outlines.
             </p>
           </div>
         </div>
@@ -1888,7 +1613,7 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
   // Initialize tutor message
   useEffect(() => {
     setTutorChat([
-      { role: 'assistant', content: `Hello! I am your Clinical Coach for **${currentFolderName}**. \n\nI have analyzed your revision notes for this folder. Ask me any pharmacological, therapeutic, or OSCE board exam questions regarding this topic!` }
+      { role: 'assistant', content: `Hello! I am your Clinical Coach for **${currentFolderName}**. \n\nAsk me any pharmacological, therapeutic, or OSCE board exam questions regarding this topic!` }
     ]);
   }, [currentFolderName]);
 
@@ -3099,7 +2824,7 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName, us
         </div>
         <h3 className="text-base font-bold text-[var(--text)]">Compiling Board Questions...</h3>
         <p className="text-xs text-[var(--text-muted)] mt-1 max-w-sm">
-          Generating clinical case scenarios, patient vignettes, dosage calculations, and realistic distractor choices based on your notes.
+          Generating clinical case scenarios, patient vignettes, dosage calculations, and realistic distractor choices based on the curriculum content.
         </p>
       </div>
     );
@@ -3274,7 +2999,7 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName, us
           </div>
           <h3 className="text-xl font-bold text-[var(--text)] mb-2">Clinical MCQ Board Simulator</h3>
           <p className="text-sm text-[var(--text-muted)] max-w-sm mb-4 leading-relaxed">
-            Practice board-style vignette questions, diagnostic formulas, and medication reconciliation challenges compiled from your notes.
+            Practice board-style vignette questions, diagnostic formulas, and medication reconciliation challenges compiled from the curriculum content.
           </p>
           <button 
             onClick={handleGenerateQuiz}

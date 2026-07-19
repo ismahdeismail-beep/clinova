@@ -3,7 +3,7 @@ import {
   Bot, Send, User, BrainCircuit, Library, Pill, Activity, 
   FlaskConical, FileText, CheckCircle2, ChevronDown, ChevronRight, Loader2, 
   Database, AlertCircle, Mic, MicOff, ArrowDown, X, Layers, Sparkles,
-  Download, FileDown, Copy, Check, Paperclip, Menu, Plus, Settings,
+  Download, FileDown, Copy, Check, Menu, Plus, Settings,
   Trash2, AlertTriangle
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -32,7 +32,6 @@ interface Message {
   routedTo?: string[];
   isThinking?: boolean;
   isNew?: boolean;
-  fileName?: string;
 }
 
 
@@ -267,7 +266,7 @@ export default function ClinicalAssistantScreen() {
         const sessions = await ChatService.getChatSessions(userData.id);
         setChatSessions(sessions);
       } catch (err) {
-        console.warn('[ClinicalAssistant] Failed to load chat sessions:', err);
+        console.warn('[ClinovaSupport] Failed to load chat sessions:', err);
       } finally {
         setSessionsLoading(false);
       }
@@ -288,7 +287,7 @@ export default function ClinicalAssistantScreen() {
           setChatSessions(sessions);
         }
       } catch (err) {
-        console.warn('[ClinicalAssistant] Sync failed:', err);
+        console.warn('[ClinovaSupport] Sync failed:', err);
       }
     }, 30000); // Sync every 30 seconds
     
@@ -330,7 +329,7 @@ export default function ClinicalAssistantScreen() {
       // Save to both local DB and Firestore
       saveChatSession(session);
       ChatService.saveChatSession(session).catch(err => 
-        console.warn('[ClinicalAssistant] Failed to save to Firestore:', err)
+        console.warn('[ClinovaSupport] Failed to save to Firestore:', err)
       );
     }
   }, [messages, currentSessionId, userData?.id]);
@@ -357,115 +356,10 @@ export default function ClinicalAssistantScreen() {
       await deleteChatSession(currentSessionId);
       handleNewSession();
     } catch (err) {
-      console.warn('[ClinicalAssistant] Failed to delete session:', err);
+      console.warn('[ClinovaSupport] Failed to delete session:', err);
     }
   };
   
-  interface AttachedFile {
-    id: string;
-    name: string;
-    size: number;
-    mimeType: string;
-    data: string; // base64
-    status: 'uploading' | 'extracted' | 'failed';
-    progress: number;
-    error?: string;
-    cloudinaryUrl?: string;
-    extractedContent?: {
-      patientName?: string;
-      age?: string;
-      sex?: string;
-      summary?: string;
-      diagnoses?: string[];
-      medications?: { name: string; dose?: string; frequency?: string }[];
-      carePlan?: string;
-    };
-  }
-
-  const fileInputRef = useRef<HTMLInputElement>(null);
-  const [attachedFiles, setAttachedFiles] = useState<AttachedFile[]>([]);
-
-  const triggerFileProcess = async (fileId: string, file: File) => {
-    try {
-      // 1. Convert to base64 for backup / local reference
-      const reader = new FileReader();
-      const base64Promise = new Promise<string>((resolve) => {
-        reader.onload = () => {
-          const base64 = (reader.result as string).split(',')[1];
-          resolve(base64);
-        };
-        reader.readAsDataURL(file);
-      });
-      const base64Data = await base64Promise;
-
-      setAttachedFiles(prev => prev.map(f => f.id === fileId ? { ...f, data: base64Data, progress: 30 } : f));
-
-      // 2. Trigger clinical notes extraction
-      const formData = new FormData();
-      formData.append('files', file);
-      formData.append('extractionType', 'clinical_notes');
-
-      const res = await fetch('/api/gemini/extract-file', {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (!res.ok) {
-        const errData = await res.json().catch(() => ({}));
-        throw new Error(errData.error || 'Failed to extract clinical notes.');
-      }
-
-      const extractedData = await res.json();
-
-      setAttachedFiles(prev => prev.map(f => f.id === fileId ? {
-        ...f,
-        status: 'extracted',
-        progress: 100,
-        extractedContent: extractedData
-      } : f));
-
-    } catch (err: any) {
-      console.error(`Error processing file ${file.name}:`, err);
-      setAttachedFiles(prev => prev.map(f => f.id === fileId ? {
-        ...f,
-        status: 'failed',
-        progress: 100,
-        error: err.message || 'Notes extraction failed'
-      } : f));
-    }
-  };
-
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = e.target.files;
-    if (!files || files.length === 0) return;
-
-    const newAttachedFiles: AttachedFile[] = [];
-
-    for (const file of Array.from(files)) {
-      if (file.size > 100 * 1024 * 1024) {
-        alert(`File "${file.name}" exceeds 100MB limit.`);
-        continue;
-      }
-
-      const fileId = Math.random().toString(36).substring(7);
-      const newFile: AttachedFile = {
-        id: fileId,
-        name: file.name,
-        size: file.size,
-        mimeType: file.type,
-        data: '',
-        status: 'uploading',
-        progress: 10
-      };
-
-      newAttachedFiles.push(newFile);
-      triggerFileProcess(fileId, file);
-    }
-
-    setAttachedFiles(prev => [...prev, ...newAttachedFiles]);
-    e.target.value = '';
-  };
-
   // Keyboard and dynamic viewport height tracking
   const [viewportHeight, setViewportHeight] = useState<number>(window.innerHeight);
 
@@ -689,7 +583,7 @@ export default function ClinicalAssistantScreen() {
   const [showExportMenu, setShowExportMenu] = useState(false);
 
   const handleExportMarkdown = () => {
-    let mdContent = `# Clinova Clinical Support - Session Export\n`;
+    let mdContent = `# Clinova Support - Session Export\n`;
     mdContent += `*Date/Time:* ${new Date().toLocaleString()}\n`;
     mdContent += `*Active Knowledge Bases:* ${selectedSources.join(', ')}\n`;
     mdContent += `*Verification Target:* Zero Hallucination Retrieval & Live Validation\n\n`;
@@ -697,7 +591,7 @@ export default function ClinicalAssistantScreen() {
 
     messages.forEach((msg, idx) => {
       if (msg.isThinking) return;
-      const role = msg.role === 'user' ? 'User (Clinician)' : 'Clinical Support';
+      const role = msg.role === 'user' ? 'User (Clinician)' : 'Clinova Support';
       mdContent += `### **${idx + 1}. ${role}**\n\n`;
       mdContent += `${msg.content}\n\n`;
 
@@ -753,7 +647,7 @@ export default function ClinicalAssistantScreen() {
         doc.setFont('helvetica', 'italic');
         doc.setFontSize(8);
         doc.setTextColor(150, 150, 150);
-        doc.text('Clinova Session Record - Confidential Clinical Support', margin, 12);
+        doc.text('Clinova Session Record - Confidential Clinova Support', margin, 12);
         doc.line(margin, 14, pageWidth - margin, 14);
       }
     };
@@ -768,7 +662,7 @@ export default function ClinicalAssistantScreen() {
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(12);
     doc.setTextColor(30, 41, 59);
-    doc.text('Clinical Support Session Record', margin, y);
+    doc.text('Clinova Support Session Record', margin, y);
     y += 8;
 
     // Metadata Block
@@ -798,7 +692,7 @@ export default function ClinicalAssistantScreen() {
       if (msg.isThinking) return; // skip temporary thinking states
       
       const isUser = msg.role === 'user';
-      const roleHeader = isUser ? 'User (Clinician)' : 'Clinical Support (Evidence Synthesized)';
+      const roleHeader = isUser ? 'User (Clinician)' : 'Clinova Support (Evidence Synthesized)';
 
       // Reserve space for message header
       checkPageOverflow(14);
@@ -894,7 +788,7 @@ export default function ClinicalAssistantScreen() {
   const [showScrollBottomBtn, setShowScrollBottomBtn] = useState(false);
 
   const AVAILABLE_SOURCES = [
-    'Kenya Drug Index', 'Kenya STG', 'WHO Guidelines', 'Uploaded Notes', 
+    'Kenya Drug Index', 'Kenya STG', 'WHO Guidelines',
     'Clinical Pharmacy Library', 'Pharmacotherapy Library', 'Research Evidence'
   ];
 
@@ -937,27 +831,21 @@ export default function ClinicalAssistantScreen() {
 
   const handleSend = async (textOverride?: string) => {
     const textToSend = textOverride !== undefined ? textOverride : input;
-    const hasFiles = attachedFiles.length > 0;
-    if ((!textToSend.trim() && !hasFiles) || isProcessing) return;
+    if (!textToSend.trim() || isProcessing) return;
 
-    const userQuery = textToSend.trim() || `Analyze the attached clinical files: ${attachedFiles.map(f => f.name).join(', ')}`;
+    const userQuery = textToSend.trim();
     setInput('');
     setIsProcessing(true);
 
     const userMsgId = Date.now().toString();
     const thinkingMsgId = 'think-' + Date.now();
-    
-    // Copy active attachments and reset state
-    const currentAttachments = [...attachedFiles];
-    setAttachedFiles([]);
 
     setMessages(prev => [
       ...prev, 
       { 
         id: userMsgId, 
         role: 'user', 
-        content: userQuery, 
-        fileName: currentAttachments.length > 0 ? currentAttachments.map(f => f.name).join(', ') : undefined 
+        content: userQuery
       },
       { id: thinkingMsgId, role: 'assistant', content: 'Analyzing clinical query & retrieving evidence from knowledge bases...', isThinking: true }
     ]);
@@ -979,15 +867,6 @@ export default function ClinicalAssistantScreen() {
       const savedData = localStorage.getItem('clinova_pharma_review_form');
       const parsed = savedData ? JSON.parse(savedData) : {};
 
-      // Structure extracted notes from files for direct assistant use
-      const fileExtractions = currentAttachments
-        .filter(f => f.status === 'extracted' && f.extractedContent)
-        .map(f => ({
-          fileName: f.name,
-          cloudinaryUrl: f.cloudinaryUrl,
-          extractedContent: f.extractedContent
-        }));
-
       const maxAttempts = 3;
       let success = false;
       let lastError: any = null;
@@ -1000,13 +879,11 @@ export default function ClinicalAssistantScreen() {
             // Update thinking message text to give user visual feedback about the retry
             setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
               ...m,
-              content: `Clinical Support service busy. Retrying... (Attempt ${attempt}/${maxAttempts})`
+              content: `Clinova Support service busy. Retrying... (Attempt ${attempt}/${maxAttempts})`
             } : m));
             // Staggered backoff before retrying
             await new Promise(resolve => setTimeout(resolve, 1500 * (attempt - 1)));
           }
-
-          const primaryFile = currentAttachments[0];
 
           // RETRIEVE KNOWLEDGE ENGINE CONTEXT
           try {
@@ -1036,7 +913,7 @@ export default function ClinicalAssistantScreen() {
               } : m));
             }
           } catch (e) {
-            console.warn('[ClinicalAssistant] KnowledgeEngine retrieval failed:', e);
+            console.warn('[ClinovaSupport] KnowledgeEngine retrieval failed:', e);
           }
 
           const res = await fetch('/api/gemini/assistant/stream', {
@@ -1051,19 +928,15 @@ export default function ClinicalAssistantScreen() {
                 content: m.content
               })),
               currentFormState: {
-                ...parsed,
-                extractedNotesFromAttachments: fileExtractions
-              },
-              fileData: primaryFile?.data,
-              fileType: primaryFile?.mimeType,
-              fileName: primaryFile?.name
+                ...parsed
+              }
             }),
           });
 
           // Non-streamed error (e.g. 400 validation) still returns JSON.
           if (!res.ok && (res.headers.get('content-type') || '').includes('application/json')) {
             const errorData = await res.json().catch(() => ({}));
-            throw new Error(errorData.error || `Clinical Support service failed with status ${res.status}`);
+            throw new Error(errorData.error || `Clinova Support service failed with status ${res.status}`);
           }
 
           // Stream SSE chunks live into the thinking message bubble.
@@ -1101,7 +974,7 @@ export default function ClinicalAssistantScreen() {
           success = true;
           break;
         } catch (err: any) {
-          console.warn(`[ClinicalAssistant] Attempt ${attempt} failed:`, err);
+          console.warn(`[ClinovaSupport] Attempt ${attempt} failed:`, err);
           lastError = err;
         }
       }
@@ -1206,7 +1079,7 @@ export default function ClinicalAssistantScreen() {
             </div>
             <div className="min-w-0">
               <div className="flex items-center gap-2">
-                <h2 className="text-sm sm:text-base font-bold text-[var(--text)] tracking-tight">Clinical Support</h2>
+                <h2 className="text-sm sm:text-base font-bold text-[var(--text)] tracking-tight">Clinova Support</h2>
                 <div className="flex items-center gap-1.5 text-[10px] font-bold text-[var(--primary)] bg-[var(--primary)]/10 px-2.5 py-0.5 rounded-full border border-[var(--primary)]/20 select-none">
                   <span className="relative flex h-1.5 w-1.5">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
@@ -1329,7 +1202,7 @@ export default function ClinicalAssistantScreen() {
                 
                 <div className="space-y-2">
                   <h1 className="text-xl sm:text-2xl font-bold text-[var(--text)] tracking-tight">
-                    Welcome to Clinova Clinical Support
+                    Welcome to Clinova Support
                   </h1>
                   <p className="text-sm text-[var(--text-muted)] max-w-xl mx-auto leading-relaxed">
                     A fully-equipped clinical console designed to retrieve, synthesize, and validate clinical evidence from the Kenya Drug Index (KDI), STG Guidelines, WHO, and notes.
@@ -1451,12 +1324,6 @@ export default function ClinicalAssistantScreen() {
                       }`}>
                         {isUser ? (
                           <div className="space-y-2">
-                            {msg.fileName && (
-                              <div className="flex items-center gap-1.5 text-xs bg-white/10 px-2.5 py-1.5 rounded-lg border border-white/5 max-w-xs truncate">
-                                <Paperclip size={12} className="shrink-0" />
-                                <span className="truncate">{msg.fileName}</span>
-                              </div>
-                            )}
                             <p className="whitespace-pre-wrap text-base leading-relaxed">{msg.content}</p>
                           </div>
                         ) : (
@@ -1548,7 +1415,7 @@ export default function ClinicalAssistantScreen() {
               </div>
               <div className="flex flex-col gap-2 max-w-[80%] items-start">
                 <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl rounded-tl-none px-5 py-4 shadow-md flex items-center gap-3">
-                  <span className="text-sm font-semibold text-[var(--text)]">Clinical Support is thinking</span>
+                  <span className="text-sm font-semibold text-[var(--text)]">Clinova Support is thinking</span>
                   <div className="flex gap-1 items-center justify-center mt-1">
                     <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></span>
                     <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></span>
@@ -1730,97 +1597,6 @@ export default function ClinicalAssistantScreen() {
 
           {/* Styled Floating Input Box */}
           <div className="relative flex flex-col bg-[var(--bg)] border border-[var(--border)] focus-within:ring-2 focus-within:ring-cyan-500/20 focus-within:border-[var(--primary)] focus-within:bg-[var(--bg)]/90 rounded-2xl shadow-inner transition-all overflow-hidden p-1">
-            <input 
-              type="file" 
-              ref={fileInputRef} 
-              onChange={handleFileChange} 
-              className="hidden" 
-              accept="image/*,application/pdf" 
-              multiple
-            />
-            {attachedFiles.length > 0 && (
-              <div className="flex flex-col gap-2 mx-4 mt-3 max-h-48 overflow-y-auto pr-1">
-                {attachedFiles.map((file) => (
-                  <div 
-                    key={file.id} 
-                    className="flex flex-col gap-1.5 p-3 bg-[var(--bg)]/90 border border-[var(--border)] rounded-xl text-xs text-[var(--text)] shadow-sm transition-all"
-                  >
-                    <div className="flex items-center justify-between gap-3 select-none">
-                      <div className="flex items-center gap-2 truncate min-w-0">
-                        {file.status === 'uploading' ? (
-                          <Loader2 size={13} className="text-[var(--primary)] animate-spin shrink-0" />
-                        ) : file.status === 'extracted' ? (
-                          <CheckCircle2 size={13} className="text-[var(--success)] shrink-0" />
-                        ) : (
-                          <AlertCircle size={13} className="text-red-500 shrink-0" />
-                        )}
-                        <span className="font-semibold truncate text-[var(--text)]">{file.name}</span>
-                        <span className="text-[10px] text-[var(--text-muted)] font-mono">({(file.size / 1024).toFixed(1)} KB)</span>
-                      </div>
-                      <div className="flex items-center gap-2 shrink-0">
-                        {file.status === 'uploading' && (
-                          <span className="text-[10px] text-[var(--primary)] font-bold animate-pulse">Extracting...</span>
-                        )}
-                        {file.status === 'extracted' && (
-                          <span className="text-[10px] text-[var(--success)] font-bold bg-[var(--success)]/10 px-1.5 py-0.5 rounded">Extracted</span>
-                        )}
-                        {file.status === 'failed' && (
-                          <span className="text-[10px] text-red-500 font-bold bg-red-500/10 px-1.5 py-0.5 rounded">Failed</span>
-                        )}
-                        
-                        {/* Direct Cloudinary Link */}
-                        {file.cloudinaryUrl && (
-                          <button
-                            type="button"
-                            onClick={() => {
-                              navigator.clipboard.writeText(file.cloudinaryUrl || '');
-                              alert('Direct Cloudinary URL copied to clipboard!');
-                            }}
-                            className="p-1 hover:bg-[var(--surface)] text-[var(--primary)] hover:text-cyan-300 rounded transition-colors cursor-pointer"
-                            title="Copy Direct Cloudinary URL"
-                          >
-                            <Copy size={12} />
-                          </button>
-                        )}
-
-                        <button 
-                          type="button"
-                          onClick={() => setAttachedFiles(prev => prev.filter(f => f.id !== file.id))}
-                          className="p-1 hover:bg-[var(--surface)] text-[var(--text-muted)] hover:text-red-400 rounded-lg transition-colors cursor-pointer"
-                        >
-                          <X size={13} />
-                        </button>
-                      </div>
-                    </div>
-
-                    {/* Progress Bar / Error Message */}
-                    {file.status === 'uploading' && (
-                      <div className="w-full bg-[var(--surface)] rounded-full h-1 overflow-hidden">
-                        <div 
-                          className="bg-[var(--primary)] h-full transition-all duration-300"
-                          style={{ width: `${file.progress}%` }}
-                        />
-                      </div>
-                    )}
-                    {file.status === 'failed' && file.error && (
-                      <span className="text-[10px] text-red-500 italic font-medium">{file.error}</span>
-                    )}
-
-                    {/* Quick Preview of Extracted Content */}
-                    {file.status === 'extracted' && file.extractedContent && (
-                      <div className="mt-1 p-2 bg-[var(--bg)]/60 border border-[var(--border)] rounded-lg text-[10px] text-[var(--text-muted)] leading-relaxed font-mono">
-                        {file.extractedContent.patientName && (
-                          <div><span className="text-[var(--primary)] font-semibold">Patient:</span> {file.extractedContent.patientName} ({file.extractedContent.age || 'N/A'}, {file.extractedContent.sex || 'N/A'})</div>
-                        )}
-                        {file.extractedContent.summary && (
-                          <div className="line-clamp-2 mt-0.5"><span className="text-[var(--text)] font-sans">Summary:</span> {file.extractedContent.summary}</div>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            )}
             <div className="flex items-end w-full pr-2">
               <textarea 
                 ref={textareaRef}
@@ -1832,14 +1608,6 @@ export default function ClinicalAssistantScreen() {
                 rows={1}
               />
               <div className="flex items-center gap-1.5 pb-2 shrink-0 self-end">
-                <button
-                  type="button"
-                  onClick={() => fileInputRef.current?.click()}
-                  className="p-2.5 text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--surface-dim)] rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center"
-                  title="Attach file"
-                >
-                  <Paperclip size={18} />
-                </button>
                 <button
                   onClick={toggleListening}
                   className={`p-2.5 rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center ${
@@ -1853,9 +1621,9 @@ export default function ClinicalAssistantScreen() {
                 </button>
                 <button 
                   onClick={() => handleSend()}
-                  disabled={(!input.trim() && attachedFiles.length === 0) || isProcessing || attachedFiles.some(f => f.status === 'uploading')}
+                  disabled={!input.trim() || isProcessing}
                   className={`p-2.5 rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center ${
-                    (input.trim() || attachedFiles.length > 0) && !isProcessing && !attachedFiles.some(f => f.status === 'uploading')
+                    input.trim() && !isProcessing
                       ? 'bg-[var(--primary)] text-[var(--text)] shadow-sm hover:bg-[var(--primary)]' 
                       : 'bg-[var(--surface)] text-[var(--text-muted)] cursor-not-allowed'
                   }`}

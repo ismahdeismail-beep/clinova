@@ -1004,13 +1004,52 @@ export interface EducationModule {
   /** Optional display properties for the UI */
   icon?: string;
   color?: string;
+  /** Optional sub-modules for nested navigation */
+  subModules?: EducationSubModule[];
+}
+
+export interface EducationSubModule {
+  id: string;
+  title: string;
+  description: string;
+  units: EducationModuleUnit[];
+}
+
+export interface EducationSubModule {
+  id: string;
+  title: string;
+  description: string;
+  icon?: string;
+  color?: string;
+  units: EducationModuleUnit[];
 }
 
 /** All top-level modules for the Education Hub */
 export const EDUCATION_MODULES: EducationModule[] = [
   { id: 'clinical_pharm', title: 'Clinical Pharmacy & Therapeutics', description: 'Disease management and patient care across 17 integrated therapeutic areas.', isIntegrated: true, areaId: 'clinical_pharm', icon: 'HeartPulse', color: 'red' },
   { id: 'online_books', title: 'Online Books', description: 'Pharmacy reference books, textbooks, and clinical resources.', isIntegrated: false, icon: 'BookOpen', color: 'sky' },
-  { id: 'exam_prep', title: 'Clinical Pharmacy', description: 'Mock papers modelled on the real clinical-pharmacy exam pattern across subject areas.', isIntegrated: false, icon: 'FileText', color: 'amber' },
+  { 
+    id: 'exam_prep', 
+    title: 'Clinical Pharmacy', 
+    description: 'Mock papers modelled on the real clinical-pharmacy exam pattern across subject areas.', 
+    isIntegrated: false, 
+    icon: 'FileText', 
+    color: 'amber',
+    subModules: [
+      {
+        id: 'clinical_pharmacy_exam',
+        title: 'Clinical Pharmacy',
+        description: 'Mock papers modelled on the real clinical-pharmacy exam pattern across subject areas.',
+        icon: 'FileText',
+        color: 'amber',
+        units: EXAM_PREP_UNITS.map((spec) => ({
+          id: spec.id,
+          title: spec.title,
+          description: `${spec.topics.length} topic areas · ${spec.structure.reduce((a, s) => a + s.marks, 0)} marks across ${spec.structure.length} sections`,
+        }))
+      }
+    ]
+  },
 ];
 
 export function getEducationModule(moduleId: string): EducationModule | undefined {
@@ -1019,6 +1058,19 @@ export function getEducationModule(moduleId: string): EducationModule | undefine
 
 /** All units for a given education module (derived from curriculum areas where possible) */
 export function getModuleUnits(moduleId: string): EducationModuleUnit[] {
+  const module = getEducationModule(moduleId);
+  if (!module) return [];
+  
+  // If module has sub-modules, return sub-modules as "units" for Level 2 display
+  if (module.subModules && module.subModules.length > 0) {
+    return module.subModules.map((sm) => ({
+      id: sm.id,
+      title: sm.title,
+      description: sm.description,
+      isSubModule: true, // flag to identify sub-modules
+    }));
+  }
+  
   if (moduleId === 'clinical_pharm') {
     return getIntegratedUnits().map((u) => ({
       id: u.id, title: u.title, description: u.description,
@@ -1030,8 +1082,16 @@ export function getModuleUnits(moduleId: string): EducationModuleUnit[] {
       id: u.id, title: u.title, description: u.description,
     }));
   }
-  // Non-curriculum modules (online_books, exam_prep) return units from static data
+  // Non-curriculum modules (online_books) return units from static data
   return NON_CURRICULUM_UNITS[moduleId] ?? [];
+}
+
+/** Get units for a specific sub-module (Level 3) */
+export function getSubModuleUnits(moduleId: string, subModuleId: string): EducationModuleUnit[] {
+  const module = getEducationModule(moduleId);
+  if (!module?.subModules) return [];
+  const subModule = module.subModules.find((sm) => sm.id === subModuleId);
+  return subModule?.units ?? [];
 }
 
 // Static units for non-curriculum modules

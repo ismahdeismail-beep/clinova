@@ -174,37 +174,26 @@ function QuestionCard({
             {question.type === 'mcq' ? 'Verify Answer' : 'Reveal Answer'}
           </button>
         ) : (
-          <button
-            onClick={() => {
-              setSelectedAnswer(null)
-              setIsAnswered(false)
-              setShowExplanation(false)
-            }}
-            className="px-5 py-2.5 bg-[var(--bg)] border border-[var(--border)] rounded-xl text-sm font-bold hover:border-[var(--primary)] transition-all flex items-center gap-2"
-          >
-            <RotateCcw size={14} />
-            Retry
-          </button>
-        )}
-
-        {isAnswered && isCorrect && question.type === 'mcq' && (
-          <span className="text-sm font-bold text-emerald-500 flex items-center gap-1">
-            <CheckCircle2 size={16} /> Correct
-          </span>
-        )}
-        {isAnswered && !isCorrect && question.type === 'mcq' && (
-          <span className="text-sm font-bold text-red-500 flex items-center gap-1">
-            <AlertCircle size={16} /> Incorrect
-          </span>
-        )}
-
-        {isAnswered && !isLast && (
-          <button
-            onClick={onNext}
-            className="ml-auto px-5 py-2.5 bg-[var(--primary)] text-white rounded-xl text-sm font-bold hover:opacity-90 transition-all flex items-center gap-2"
-          >
-            Next <ChevronRight size={14} />
-          </button>
+          <>
+            {isAnswered && isCorrect && question.type === 'mcq' && (
+              <span className="text-sm font-bold text-emerald-500 flex items-center gap-1">
+                <CheckCircle2 size={16} /> Correct
+              </span>
+            )}
+            {isAnswered && !isCorrect && question.type === 'mcq' && (
+              <span className="text-sm font-bold text-red-500 flex items-center gap-1">
+                <AlertCircle size={16} /> Incorrect
+              </span>
+            )}
+            {isAnswered && !isLast && (
+              <button
+                onClick={onNext}
+                className="ml-auto px-5 py-2.5 bg-[var(--primary)] text-white rounded-xl text-sm font-bold hover:opacity-90 transition-all flex items-center gap-2"
+              >
+                Next <ChevronRight size={14} />
+              </button>
+            )}
+          </>
         )}
       </div>
 

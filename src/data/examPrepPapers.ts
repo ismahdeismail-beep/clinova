@@ -18,6 +18,7 @@ export interface GeneratedSection {
   letter: string;
   name: string;
   marks: number;
+  instruction?: string;
   questions: GeneratedQuestion[];
 }
 

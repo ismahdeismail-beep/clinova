@@ -81,7 +81,7 @@ function AnswerBody({ value }: { value: any }) {
 }
 
 function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
-  const [showAnswers, setShowAnswers] = useState(false);
+  const [showAnswerKey, setShowAnswerKey] = useState(false);
   const paper: GeneratedPaper | undefined = getExamPrepPaper(spec.id, variant);
 
   const download = () => {
@@ -96,14 +96,24 @@ function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
       sec.questions.forEach((q, i) => {
         lines.push(`${i + 1}. ${q.stem}`);
         if (q.options && q.options.length) q.options.forEach((o) => lines.push(`   ${o}`));
-        if (showAnswers) {
-          lines.push(`   ANSWER: ${q.answer || q.modelAnswer || ''}`);
-          if (q.explanation) lines.push(`   NOTE: ${q.explanation}`);
-        }
         lines.push('');
       });
       lines.push('');
     });
+    if (showAnswerKey) {
+      lines.push('');
+      lines.push('ANSWER KEY');
+      lines.push('='.repeat(60));
+      paper.sections.forEach((sec) => {
+        lines.push(`SECTION ${sec.letter}: ${sec.name}`);
+        lines.push('-'.repeat(40));
+        sec.questions.forEach((q, i) => {
+          lines.push(`${i + 1}. ANSWER: ${q.answer || q.modelAnswer || ''}`);
+          if (q.explanation) lines.push(`   EXPLANATION: ${q.explanation}`);
+          lines.push('');
+        });
+      });
+    }
     const blob = new Blob([lines.join('\n')], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -138,11 +148,11 @@ function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
         </div>
         <div className="flex items-center gap-2">
           <button
-            onClick={() => setShowAnswers((v) => !v)}
+            onClick={() => setShowAnswerKey((v) => !v)}
             className="flex items-center gap-1 text-[11px] px-2 py-1 rounded-lg border border-[var(--border)] hover:bg-[var(--surface-2)]"
           >
-            {showAnswers ? <EyeOff size={13} /> : <Eye size={13} />}
-            {showAnswers ? 'Hide answers' : 'Show answers'}
+            {showAnswerKey ? <EyeOff size={13} /> : <Eye size={13} />}
+            {showAnswerKey ? 'Hide Answer Key' : 'Show Answer Key'}
           </button>
           <button
             onClick={download}
@@ -153,36 +163,27 @@ function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
         </div>
       </div>
 
-      <div className="mt-4 space-y-5">
+      {/* Questions - clean, spacious layout */}
+      <div className="p-4 sm:p-6 space-y-6">
         {paper.sections.map((sec) => (
-          <div key={sec.letter}>
-            <h4 className="text-[13px] font-bold text-[var(--text)] mb-2">
-              Section {sec.letter}: {sec.name}{' '}
-              <span className="text-[var(--text-muted)] font-normal">[{sec.marks} marks]</span>
-            </h4>
-            <ol className="space-y-3 list-decimal list-inside">
+          <div key={sec.letter} className="space-y-4">
+            <div className="border-b border-[var(--border)] pb-2">
+              <h4 className="text-[13px] font-bold text-[var(--text)]">
+                Section {sec.letter}: {sec.name}{' '}
+                <span className="text-[var(--text-muted)] font-normal">[{sec.marks} marks]</span>
+              </h4>
+              <p className="text-[11px] text-[var(--text-muted)] italic mt-0.5">{sec.instruction}</p>
+            </div>
+            <ol className="space-y-4 list-decimal list-inside">
               {sec.questions.map((q, i) => (
-                <li key={i} className="text-[13px] text-[var(--text)]">
-                  <span className="font-medium">{txt(q.stem)}</span>
+                <li key={i} className="text-[13px] text-[var(--text)] leading-relaxed">
+                  <div className="font-medium">{txt(q.stem)}</div>
                   {opts(q.options).length > 0 && (
-                    <ul className="mt-1 ml-5 list-[lower-alpha] space-y-0.5 text-[12px] text-[var(--text-muted)]">
+                    <ul className="mt-2 ml-6 list-[lower-alpha] space-y-1.5 text-[12px] text-[var(--text-muted)]">
                       {opts(q.options).map((o, oi) => (
-                        <li key={oi} className={showAnswers && txt(q.answer) === o ? 'text-emerald-600 font-semibold' : ''}>
-                          {o}
-                        </li>
+                        <li key={oi}>{o}</li>
                       ))}
                     </ul>
-                  )}
-                  {showAnswers && (q.answer || q.modelAnswer) && (
-                    <div className="mt-1.5 ml-5 text-[12px] rounded-lg border border-emerald-500/20 bg-emerald-500/5 px-3 py-2">
-                      <span className="font-semibold text-emerald-700 uppercase tracking-wide text-[10px]">Answer</span>
-                      <div className="mt-0.5">
-                        <AnswerBody value={q.answer || q.modelAnswer} />
-                      </div>
-                    </div>
-                  )}
-                  {showAnswers && q.explanation && (
-                    <div className="mt-1 ml-5 text-[12px] text-[var(--text-muted)] italic">{txt(q.explanation)}</div>
                   )}
                 </li>
               ))}
@@ -190,6 +191,42 @@ function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
           </div>
         ))}
       </div>
+
+      {/* Answer Key - separate section at the end */}
+      {showAnswerKey && (
+        <div className="border-t-2 border-[var(--primary)] bg-[var(--primary)]/5 p-4 sm:p-6 space-y-6">
+          <div className="flex items-center justify-between">
+            <h3 className="text-lg font-bold text-[var(--primary)]">Answer Key</h3>
+            <button
+              onClick={() => setShowAnswerKey(false)}
+              className="text-sm text-[var(--text-muted)] hover:text-[var(--text)]"
+            >
+              Close Answer Key
+            </button>
+          </div>
+          {paper.sections.map((sec) => (
+            <div key={sec.letter} className="space-y-3">
+              <h4 className="text-sm font-bold text-[var(--primary)] border-b border-[var(--primary)]/20 pb-1">
+                Section {sec.letter}: {sec.name}
+              </h4>
+              <ol className="space-y-3 list-decimal list-inside">
+                {sec.questions.map((q, i) => (
+                  <li key={i} className="text-[13px] text-[var(--text)] leading-relaxed">
+                    <div className="font-semibold text-emerald-700">
+                      Q{i + 1}. Answer: {txt(q.answer || q.modelAnswer || 'Not provided')}
+                    </div>
+                    {q.explanation && (
+                      <div className="mt-1 ml-5 text-[12px] text-[var(--text-muted)] italic border-l-2 border-emerald-500/30 pl-2">
+                        Explanation: {txt(q.explanation)}
+                      </div>
+                    )}
+                  </li>
+                ))}
+            </ol>
+          </div>
+        ))}
+      </div>
+      )}
     </div>
   );
 }
@@ -251,11 +288,13 @@ function ExamSubjectCard({ spec }: { spec: ExamUnitSpec }) {
             </div>
           </div>
 
-          <div className="space-y-3">
-            <div className="text-[12px] font-bold text-[var(--text)]">Three mock papers (pre-generated)</div>
-            <PaperCard spec={spec} variant={1} />
-            <PaperCard spec={spec} variant={2} />
-            <PaperCard spec={spec} variant={3} />
+          <div className="space-y-4">
+            <div className="text-[12px] font-bold text-[var(--text)]">Mock Papers</div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <PaperCard spec={spec} variant={1} />
+              <PaperCard spec={spec} variant={2} />
+              <PaperCard spec={spec} variant={3} />
+            </div>
           </div>
         </div>
       )}

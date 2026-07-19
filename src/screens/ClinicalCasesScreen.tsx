@@ -6,6 +6,7 @@ import {
   Search, BookOpen, Stethoscope, ChevronLeft, BrainCircuit,
   Loader2, Play, Sparkles,
   Award, Sliders, HelpCircle, Book, FileText, Compass, Folder, Copy, Edit3, File, Link, CheckSquare, X,
+  Building
 } from 'lucide-react';
 import Markdown from 'react-markdown';
 import { ClinicalCase, SPECIALTIES, ALL_CLINICAL_CASES } from '../data/clinicalCasesData';
@@ -18,7 +19,7 @@ import {
 import { parseVitals, parseLabs, parseDtps, toArray, toText } from '../lib/clinicalParsers';
 import { extractMedicines } from '../lib/clinicalTerms';
 
-const DISEASE_CONFIG: Record<string, { color: string, sub: string }> = {
+export const DISEASE_CONFIG: Record<string, { color: string, sub: string }> = {
   // Cardiovascular
   'Heart Failure': { color: 'rose', sub: 'Pump dysfunction & congestion' },
   'Hypertension': { color: 'rose', sub: 'Elevated systemic vascular resistance' },
@@ -183,7 +184,7 @@ const DISEASE_CONFIG: Record<string, { color: string, sub: string }> = {
   'Schizophrenia': { color: 'pink', sub: 'Psychotic disorder management' },
 }
 
-const COLOR_MAP: Record<string, { bar: string, text: string }> = {
+export const COLOR_MAP: Record<string, { bar: string, text: string }> = {
   rose: { bar: 'bg-rose-500', text: 'text-rose-600' },
   sky: { bar: 'bg-sky-500', text: 'text-sky-600' },
   amber: { bar: 'bg-amber-500', text: 'text-amber-600' },
@@ -200,9 +201,9 @@ const COLOR_MAP: Record<string, { bar: string, text: string }> = {
   slate: { bar: 'bg-slate-500', text: 'text-slate-600' },
 }
 
-const DEFAULT_DISEASE_CONFIG = { color: 'slate', sub: 'Pharmaceutical care topic' }
+export const DEFAULT_DISEASE_CONFIG = { color: 'slate', sub: 'Pharmaceutical care topic' }
 
-function getDiseaseConfig(disease: string) {
+export function getDiseaseConfig(disease: string) {
   const cfg = DISEASE_CONFIG[disease] ?? DISEASE_CONFIG[disease.replace(/^./, c => c.toUpperCase())] ?? DEFAULT_DISEASE_CONFIG
   const colors = COLOR_MAP[cfg.color] ?? COLOR_MAP.slate
   return { ...cfg, ...colors }
@@ -1018,7 +1019,7 @@ export default function ClinicalCasesScreen() {
             </div>
           )}
 
-              {/* Level 3: Cases */}
+{/* Level 3: Cases */}
               {selectedSpecialty && selectedDisease && !selectedCase && (
                 <div className="animate-in fade-in slide-in-from-right-4 duration-300">
                   <div className="flex items-center gap-3 mb-6">
@@ -1030,55 +1031,58 @@ export default function ClinicalCasesScreen() {
                     </h2>
                   </div>
 
-                  <div className="overflow-x-auto -mx-3 sm:mx-0">
-                  <div className="min-w-[400px] sm:min-w-0 border border-[var(--border)] rounded-xl overflow-hidden divide-y divide-[var(--border)]">
-                    <div className="grid grid-cols-[1fr_auto_auto] gap-2 sm:gap-3 px-3 sm:px-4 py-2 bg-[var(--surface-dim)]/50 text-[10px] font-bold uppercase text-[var(--text-muted)] tracking-wider">
-                      <span>Case Title</span>
-                      <span className="w-16 sm:w-24 text-center">Patient</span>
-                      <span className="w-16 sm:w-20 text-center">Difficulty</span>
-                    </div>
+                  <div className="space-y-4">
                     {casesForSelectedDisease.map((clinicalCase, idx) => (
                       <div 
                         key={idx}
                         onClick={() => handleCaseClick(clinicalCase)}
-                        className="grid grid-cols-[1fr_auto_auto] gap-2 sm:gap-3 px-3 sm:px-4 py-2.5 bg-[var(--surface)] hover:bg-[var(--surface-dim)]/50 cursor-pointer transition-colors group items-center"
+                        className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] hover:shadow-md rounded-2xl p-5 cursor-pointer transition-all group"
                       >
-                        <div className="min-w-0">
-                          <h3 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors truncate">
-                            {clinicalCase.title}
-                          </h3>
-                          <p className="text-[11px] text-[var(--text-muted)] truncate hidden sm:block">
-                            "{clinicalCase.chiefComplaint}"
-                          </p>
-                        </div>
-                        <div className="w-16 sm:w-24 text-center shrink-0">
-                          <p className="text-xs font-bold text-[var(--text)]">{getInitials(clinicalCase.patientName)}</p>
-                          <p className="text-[10px] text-[var(--text-muted)] truncate hidden sm:block">{clinicalCase.demographics}</p>
-                        </div>
-                        <div className="w-16 sm:w-20 text-center shrink-0">
-                          <span className={`inline-block px-1.5 sm:px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider ${
-                            clinicalCase.difficulty === 'Beginner' ? 'bg-emerald-500/10 text-emerald-600' :
-                            clinicalCase.difficulty === 'Intermediate' ? 'bg-amber-500/10 text-amber-600' :
-                            'bg-rose-500/10 text-rose-600'
-                          }`}>
-                            {clinicalCase.difficulty === 'Beginner' ? 'Beg' : clinicalCase.difficulty === 'Intermediate' ? 'Int' : 'Adv'}
-                          </span>
+                        <div className="flex items-start gap-4">
+                          <div className="w-12 h-12 rounded-xl bg-[var(--primary)]/10 flex items-center justify-center shrink-0 text-[var(--primary)]">
+                            <FileText size={20} />
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors text-base mb-1">
+                              {clinicalCase.title}
+                            </h3>
+                            <p className="text-sm text-[var(--text-muted)] line-clamp-2 mb-3">
+                              {clinicalCase.chiefComplaint}
+                            </p>
+                            <div className="flex flex-wrap items-center gap-3 text-xs">
+                              <span className="flex items-center gap-1 text-[var(--text-muted)]">
+                                <User size={12} /> {clinicalCase.demographics}
+                              </span>
+                              <span className="flex items-center gap-1 text-[var(--text-muted)]">
+                                <Building size={12} /> {clinicalCase.facilitySetting}
+                              </span>
+                              <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider ${
+                                clinicalCase.difficulty === 'Beginner' ? 'bg-emerald-500/10 text-emerald-600' :
+                                clinicalCase.difficulty === 'Intermediate' ? 'bg-amber-500/10 text-amber-600' :
+                                'bg-rose-500/10 text-rose-600'
+                              }`}>
+                                {clinicalCase.difficulty}
+                              </span>
+                            </div>
+                          </div>
+                          <ChevronRight size={20} className="text-[var(--border)] group-hover:text-[var(--primary)] group-hover:translate-x-1 transition-all shrink-0" />
                         </div>
                       </div>
                     ))}
-
                     {casesForSelectedDisease.length === 0 && (
-                      <div className="bg-[var(--surface)] p-6 text-center">
-                        <h3 className="text-sm font-bold text-[var(--text)]">No Cases Available Yet</h3>
-                        <p className="text-xs text-[var(--text-muted)] mt-1">
+                      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-12 text-center">
+                        <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mx-auto mb-4">
+                          <FileText size={32} className="text-[var(--text-muted)]" />
+                        </div>
+                        <h3 className="text-lg font-bold text-[var(--text)]">No Cases Available Yet</h3>
+                        <p className="text-sm text-[var(--text-muted)] mt-2 max-w-sm mx-auto">
                           Teaching cases for {selectedDisease} are being compiled.
                         </p>
                       </div>
                     )}
                   </div>
-                  </div>
                 </div>
-          )}
+              )}
 
           {/* Level 4: Case Details */}
           {selectedCase && (

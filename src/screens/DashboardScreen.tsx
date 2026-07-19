@@ -124,7 +124,7 @@ export default function DashboardScreen() {
   const { userData, updatePreferences } = useAuth();
 
   const [isEditingPrefs, setIsEditingPrefs] = useState(false);
-  const [prefLevel, setPrefLevel] = useState(userData?.academicLevel || 'Year 1: Basic Medical Sciences');
+  const [prefLevel, setPrefLevel] = useState('Year 1: Basic Medical Sciences');
   const [prefTopics, setPrefTopics] = useState<string[]>(userData?.clinicalInterests || ['Cardiology', 'Nephrology']);
   const [prefsSearchQuery, setPrefsSearchQuery] = useState("");
 
@@ -141,14 +141,9 @@ export default function DashboardScreen() {
             <div>
               <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-1.5 md:mb-2 tracking-tight flex items-center gap-2 flex-wrap">
                 Clinova Clinical Companion 
-                {userData?.academicLevel && (
-                  <span className="text-[9px] md:text-[10px] bg-white/20 px-2 md:px-2.5 py-0.5 rounded-full font-bold border border-white/20 uppercase tracking-wider block sm:inline-block">
-                    {userData.academicLevel}
-                  </span>
-                )}
               </h1>
               <p className="text-white/85 max-w-lg text-xs md:text-sm leading-relaxed">
-                Welcome back, {userData?.name || 'Student'}! Adapt your clinical focus to your active rotations. Your clinical hub is currently adjusted to your professional stage and interests.
+                Welcome back, {userData?.name || 'Student'}! Your clinical hub is ready for your active rotations.
               </p>
             </div>
           </div>
@@ -306,7 +301,6 @@ export default function DashboardScreen() {
                       <Sparkles size={18} className="text-[var(--primary)]" />
                       Dynamic Clinical Study Tracks
                     </h3>
-                    <span className="text-xs text-[var(--text-muted)]">Tailored for {userData.academicLevel || 'Student'}</span>
                   </div>
                   
                   <div className="grid grid-cols-1 gap-4">

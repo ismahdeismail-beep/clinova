@@ -572,24 +572,6 @@ export default function EducationHubScreen() {
                 </h2>
               </div>
 
-              {selectedModule?.id === 'clinical_pharm' && (
-                <div className="flex items-center justify-between gap-4 bg-gradient-to-r from-amber-500/10 to-red-500/10 border border-amber-500/30 rounded-2xl p-4">
-                  <div className="flex items-center gap-3">
-                    <Sparkles size={20} className="text-amber-600 shrink-0" />
-                    <div>
-                      <div className="text-sm font-bold text-[var(--text)]">Clinical Pharmacy</div>
-                      <div className="text-[11px] text-[var(--text-muted)]">Mock papers modelled on the real clinical-pharmacy exam pattern</div>
-                    </div>
-                  </div>
-                  <button
-                    onClick={() => { setExamPrepOpen(true); setSelectedUnit(null); }}
-                    className="shrink-0 flex items-center gap-2 px-4 py-2.5 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-xl font-bold text-sm hover:opacity-95 transition-all"
-                  >
-                    <FileText size={16} /> Open Clinical Pharmacy
-                  </button>
-                </div>
-              )}
-
               {sortedUnits.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {sortedUnits.map((unit) => (

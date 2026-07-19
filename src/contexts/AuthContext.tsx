@@ -20,7 +20,6 @@ interface UserData {
   role: UserRole;
   photoURL?: string;
   clinicalInterests?: string[];
-  academicLevel?: string;
   onboardingCompleted?: boolean;
 }
 
@@ -32,8 +31,8 @@ interface AuthContextType {
   loginWithGoogle: () => Promise<void>;
   loginReturning: (name: string, role: UserRole) => Promise<void>;
   loginWithEmail: (email: string, password: string) => Promise<void>;
-  signUpWithEmail: (email: string, password: string, name: string, academicLevel?: string) => Promise<void>;
-  updatePreferences: (interests: string[], level: string) => Promise<void>;
+  signUpWithEmail: (email: string, password: string, name: string) => Promise<void>;
+  updatePreferences: (interests: string[]) => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | null>(null);
@@ -127,7 +126,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
               role,
               photoURL: firebaseUser.photoURL || undefined,
               clinicalInterests,
-              academicLevel,
               onboardingCompleted
             });
           }
@@ -213,9 +211,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const signUpWithEmail = async (email: string, password: string, name: string, academicLevel?: string) => {
+  const signUpWithEmail = async (email: string, password: string, name: string) => {
     setLoading(true);
-    const hasLevel = !!academicLevel;
     try {
       const res = await createUserWithEmailAndPassword(auth, email, password);
       authLog('Email sign-up success', res.user.uid);
@@ -224,16 +221,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           name: name || email.split('@')[0],
           email: email,
           role: 'user',
-          academicLevel: academicLevel || '',
-          onboardingCompleted: hasLevel,
+          onboardingCompleted: false,
           createdAt: new Date().toISOString(),
           lastLogin: new Date().toISOString(),
         }, { merge: true });
       } catch (fsErr) {
         console.error('[Auth] Firestore write during signup failed:', fsErr);
-      }
-      if (hasLevel) {
-        localStorage.setItem(`clinova_onboarding_completed_${res.user.uid}`, 'true');
       }
     } catch (error) {
       authLog('Email sign-up failed', (error as Error)?.message);
@@ -259,12 +252,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const updatePreferences = async (interests: string[], level: string) => {
+  const updatePreferences = async (interests: string[]) => {
     if (!userData) return;
     const updated: UserData = {
       ...userData,
       clinicalInterests: interests,
-      academicLevel: level,
       onboardingCompleted: true,
     };
     
@@ -277,7 +269,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       try {
         await setDoc(doc(db, 'users', user.uid), {
           clinicalInterests: interests,
-          academicLevel: level,
           onboardingCompleted: true,
         }, { merge: true });
       } catch (e) {
@@ -315,7 +306,7 @@ export function useAuth() {
       loginReturning: async () => {},
       loginWithEmail: async () => {},
       signUpWithEmail: async () => {},
-      updatePreferences: async () => {}
+      updatePreferences: async (interests: string[]) => {}
     };
   }
   return context;

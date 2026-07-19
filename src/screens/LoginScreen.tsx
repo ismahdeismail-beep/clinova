@@ -8,11 +8,10 @@ export default function LoginScreen() {
   const { loginWithGoogle, loginWithEmail, signUpWithEmail, userData, loginAs } = useAuth();
   const navigate = useNavigate();
   
-  const [isSignUp, setIsSignUp] = useState(false);
+const [isSignUp, setIsSignUp] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [academicLevel, setAcademicLevel] = useState('1st Year');
   const [isLoading, setIsLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
@@ -29,7 +28,7 @@ export default function LoginScreen() {
     
     try {
       if (isSignUp) {
-        await signUpWithEmail(email, password, name, academicLevel);
+        await signUpWithEmail(email, password, name);
       } else {
         await loginWithEmail(email, password);
       }
@@ -111,21 +110,6 @@ export default function LoginScreen() {
                       className="w-full pl-10 pr-4 py-2.5 bg-[var(--bg)] border border-[var(--border)] rounded-xl text-xs sm:text-sm text-[var(--text)] focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)]/10 outline-none transition-all"
                     />
                   </div>
-                </div>
-
-                <div className="space-y-1">
-                  <label className="text-xs font-semibold text-[var(--text)] block">Academic Level / Year</label>
-                  <select
-                    value={academicLevel}
-                    onChange={(e) => setAcademicLevel(e.target.value)}
-                    className="w-full px-3.5 py-2.5 bg-[var(--bg)] border border-[var(--border)] rounded-xl text-xs sm:text-sm text-[var(--text)] focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)]/10 outline-none transition-all cursor-pointer"
-                  >
-                    <option value="1st Year">1st Year Medical Student</option>
-                    <option value="2nd Year">2nd Year Medical Student</option>
-                    <option value="3rd Year">3rd Year Medical Student</option>
-                    <option value="4th Year">4th Year Medical Student</option>
-                    <option value="5th Year">5th Year Medical Student</option>
-                  </select>
                 </div>
               </>
             )}

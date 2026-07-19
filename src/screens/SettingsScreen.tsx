@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import {
   ArrowLeft,
-  GraduationCap,
   Pill,
   Search,
   Sparkles,
@@ -38,16 +37,13 @@ export default function SettingsScreen() {
   const { userData, updatePreferences } = useAuth()
 
   const [saved, setSaved] = useState(false)
-  const [academicLevel, setAcademicLevel] = useState(
-    userData?.academicLevel || "Year 1: Basic Medical Sciences"
-  )
   const [clinicalInterests, setClinicalInterests] = useState<string[]>(
     userData?.clinicalInterests || ["Cardiology", "Nephrology"]
   )
   const [searchQuery, setSearchQuery] = useState("")
 
-  const handleSave = async () => {
-    await updatePreferences(clinicalInterests, academicLevel)
+const handleSave = async () => {
+    await updatePreferences(clinicalInterests)
     setSaved(true)
     setTimeout(() => setSaved(false), 2500)
   }
@@ -68,7 +64,7 @@ export default function SettingsScreen() {
               Settings
             </h1>
             <p className="text-sm text-[var(--text-muted)] mt-1">
-              Manage your profile, academic stage, and clinical focus areas
+              Manage your profile and clinical focus areas
             </p>
           </div>
         </div>
@@ -107,41 +103,7 @@ export default function SettingsScreen() {
           </div>
         </div>
 
-        {/* Academic Level */}
-        <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden">
-          <div className="p-6 border-b border-[var(--border)]">
-            <h2 className="font-bold text-[var(--text)] flex items-center gap-2">
-              <GraduationCap size={18} className="text-[var(--primary)]" />
-              Academic Stage
-            </h2>
-          </div>
-          <div className="p-6">
-            <select
-              value={academicLevel}
-              onChange={(e) => setAcademicLevel(e.target.value)}
-              className="w-full p-3 bg-[var(--bg)] border border-[var(--border)] rounded-xl text-sm text-[var(--text)] focus:border-[var(--primary)] outline-none cursor-pointer"
-            >
-              <option value="Year 1: Basic Medical Sciences">Year 1: Basic Medical Sciences</option>
-              <option value="Year 2: Foundational Pharmacology">
-                Year 2: Foundational Pharmacology
-              </option>
-              <option value="Year 3: Systems & Clinical Intro">
-                Year 3: Systems Pharmacology & Clinical Practice
-              </option>
-              <option value="Year 4: Advanced Systems & ID">
-                Year 4: Advanced Systems & Infectious Diseases
-              </option>
-              <option value="Year 5: Specialty & Toxicology">
-                Year 5: Specialty Therapeutics & Clinical Practice
-              </option>
-              <option value="Graduate / Clinical Pharmacist">
-                Graduate / Healthcare Professional
-              </option>
-            </select>
-          </div>
-        </div>
-
-        {/* Clinical Interests */}
+        
         <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden">
           <div className="p-6 border-b border-[var(--border)]">
             <h2 className="font-bold text-[var(--text)] flex items-center gap-2">

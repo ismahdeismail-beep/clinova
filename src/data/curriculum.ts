@@ -1030,25 +1030,11 @@ export const EDUCATION_MODULES: EducationModule[] = [
   { id: 'online_books', title: 'Online Books', description: 'Pharmacy reference books, textbooks, and clinical resources.', isIntegrated: false, icon: 'BookOpen', color: 'sky' },
   { 
     id: 'exam_prep', 
-    title: 'Clinical Pharmacy', 
+    title: 'Exam Prep', 
     description: 'Mock papers modelled on the real clinical-pharmacy exam pattern across subject areas.', 
     isIntegrated: false, 
     icon: 'FileText', 
     color: 'amber',
-    subModules: [
-      {
-        id: 'clinical_pharmacy_exam',
-        title: 'Clinical Pharmacy',
-        description: 'Mock papers modelled on the real clinical-pharmacy exam pattern across subject areas.',
-        icon: 'FileText',
-        color: 'amber',
-        units: EXAM_PREP_UNITS.map((spec) => ({
-          id: spec.id,
-          title: spec.title,
-          description: `${spec.topics.length} topic areas · ${spec.structure.reduce((a, s) => a + s.marks, 0)} marks across ${spec.structure.length} sections`,
-        }))
-      }
-    ]
   },
 ];
 

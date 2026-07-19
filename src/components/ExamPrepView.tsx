@@ -81,7 +81,7 @@ function AnswerBody({ value }: { value: any }) {
 }
 
 function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
-  const [showAnswerKey, setShowAnswerKey] = useState(false);
+  const [showAnswers, setShowAnswers] = useState(false);
   const paper: GeneratedPaper | undefined = getExamPrepPaper(spec.id, variant);
 
   const download = () => {
@@ -100,7 +100,7 @@ function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
       });
       lines.push('');
     });
-    if (showAnswerKey) {
+    if (showAnswers) {
       lines.push('');
       lines.push('ANSWER KEY');
       lines.push('='.repeat(60));
@@ -134,7 +134,7 @@ function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
   const paperLabel = variant === 1 ? 'Paper One' : variant === 2 ? 'Paper Two' : `Paper ${variant}`;
 
   return (
-    <div className="border-2 border-[var(--border)] rounded-2xl bg-[var(--surface)] overflow-hidden">
+    <div className="border-2 border-[var(--border)] rounded-2xl bg-[var(--surface)] overflow-hidden w-full">
       <div className="flex items-center justify-between gap-3 flex-wrap bg-[var(--primary)]/5 border-b border-[var(--border)] px-4 py-3">
         <div className="flex items-center gap-2">
           <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold">
@@ -148,11 +148,11 @@ function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
         </div>
         <div className="flex items-center gap-2">
           <button
-            onClick={() => setShowAnswerKey((v) => !v)}
+            onClick={() => setShowAnswers((v) => !v)}
             className="flex items-center gap-1 text-[11px] px-2 py-1 rounded-lg border border-[var(--border)] hover:bg-[var(--surface-2)]"
           >
-            {showAnswerKey ? <EyeOff size={13} /> : <Eye size={13} />}
-            {showAnswerKey ? 'Hide Answer Key' : 'Show Answer Key'}
+            {showAnswers ? <EyeOff size={13} /> : <Eye size={13} />}
+            {showAnswers ? 'Hide Answers' : 'Show Answers'}
           </button>
           <button
             onClick={download}
@@ -163,7 +163,7 @@ function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
         </div>
       </div>
 
-      {/* Questions - clean, spacious layout */}
+      {/* Questions with inline answers */}
       <div className="p-4 sm:p-6 space-y-6">
         {paper.sections.map((sec) => (
           <div key={sec.letter} className="space-y-4">
@@ -185,48 +185,25 @@ function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
                       ))}
                     </ul>
                   )}
+                  {showAnswers && (q.answer || q.modelAnswer) && (
+                    <div className="mt-3 ml-6 space-y-2 border-l-2 border-emerald-500/30 pl-3 bg-emerald-500/5 rounded-r">
+                      <div className="font-semibold text-emerald-700 uppercase tracking-wide text-[10px]">Answer</div>
+                      <div className="text-emerald-700">
+                        <AnswerBody value={q.answer || q.modelAnswer} />
+                      </div>
+                    </div>
+                  )}
+                  {showAnswers && q.explanation && (
+                    <div className="mt-2 ml-6 text-[12px] text-[var(--text-muted)] italic border-l-2 border-blue-500/30 pl-2">
+                      Explanation: {txt(q.explanation)}
+                    </div>
+                  )}
                 </li>
               ))}
             </ol>
           </div>
         ))}
       </div>
-
-      {/* Answer Key - separate section at the end */}
-      {showAnswerKey && (
-        <div className="border-t-2 border-[var(--primary)] bg-[var(--primary)]/5 p-4 sm:p-6 space-y-6">
-          <div className="flex items-center justify-between">
-            <h3 className="text-lg font-bold text-[var(--primary)]">Answer Key</h3>
-            <button
-              onClick={() => setShowAnswerKey(false)}
-              className="text-sm text-[var(--text-muted)] hover:text-[var(--text)]"
-            >
-              Close Answer Key
-            </button>
-          </div>
-          {paper.sections.map((sec) => (
-            <div key={sec.letter} className="space-y-3">
-              <h4 className="text-sm font-bold text-[var(--primary)] border-b border-[var(--primary)]/20 pb-1">
-                Section {sec.letter}: {sec.name}
-              </h4>
-              <ol className="space-y-3 list-decimal list-inside">
-                {sec.questions.map((q, i) => (
-                  <li key={i} className="text-[13px] text-[var(--text)] leading-relaxed">
-                    <div className="font-semibold text-emerald-700">
-                      Q{i + 1}. Answer: {txt(q.answer || q.modelAnswer || 'Not provided')}
-                    </div>
-                    {q.explanation && (
-                      <div className="mt-1 ml-5 text-[12px] text-[var(--text-muted)] italic border-l-2 border-emerald-500/30 pl-2">
-                        Explanation: {txt(q.explanation)}
-                      </div>
-                    )}
-                  </li>
-                ))}
-            </ol>
-          </div>
-        ))}
-      </div>
-      )}
     </div>
   );
 }

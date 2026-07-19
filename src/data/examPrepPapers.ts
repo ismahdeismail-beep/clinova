@@ -2,7 +2,7 @@
 // Grounded in the real crawled past papers (src/data/examPrepCrawled.ts) plus the Clinova
 // clinical-case bank and KDI drug monographs, generated via Mistral (mistral-small-latest).
 // 8 clinical-pharmacy subjects x 3 papers each (standard format A=30 / B=40 / C=30 = 100 marks).
-// Titles mirror the real past-paper names (e.g. "Clinical Pharmacy — Respiratory & Renal").
+// Titles mirror the real past-paper names (e.g. "Respiratory & Renal").
 // No unit codes or school name included.
 import { type ExamUnitSpec } from './examPrepData';
 
@@ -31,7 +31,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
 {
   "exam-antimicrobials": {
     "1": {
-      "title": "Clinical Pharmacy — Principles of Antimicrobial Therapy",
+      "title": "Principles of Antimicrobial Therapy",
       "variant": 1,
       "sections": [
         {
@@ -492,7 +492,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "2": {
-      "title": "Clinical Pharmacy — Principles of Antimicrobial Therapy",
+      "title": "Principles of Antimicrobial Therapy",
       "variant": 2,
       "sections": [
         {
@@ -959,7 +959,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "3": {
-      "title": "Clinical Pharmacy — Principles of Antimicrobial Therapy",
+      "title": "Principles of Antimicrobial Therapy",
       "variant": 3,
       "sections": [
         {
@@ -1406,7 +1406,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
   },
   "exam-cardiovascular-heme": {
     "1": {
-      "title": "Clinical Pharmacy — Cardiovascular & Hematopoietic",
+      "title": "Cardiovascular & Hematopoietic",
       "variant": 1,
       "sections": [
         {
@@ -1891,7 +1891,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "2": {
-      "title": "Clinical Pharmacy — Cardiovascular & Hematopoietic",
+      "title": "Cardiovascular & Hematopoietic",
       "variant": 2,
       "sections": [
         {
@@ -2277,7 +2277,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "3": {
-      "title": "Clinical Pharmacy — Cardiovascular & Hematopoietic",
+      "title": "Cardiovascular & Hematopoietic",
       "variant": 3,
       "sections": [
         {
@@ -2830,7 +2830,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
   },
   "exam-cns": {
     "1": {
-      "title": "Clinical Pharmacy — Central Nervous System Disorders",
+      "title": "Central Nervous System Disorders",
       "variant": 1,
       "sections": [
         {
@@ -3282,7 +3282,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "2": {
-      "title": "Clinical Pharmacy — Central Nervous System Disorders",
+      "title": "Central Nervous System Disorders",
       "variant": 2,
       "sections": [
         {
@@ -3712,7 +3712,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "3": {
-      "title": "Clinical Pharmacy — Central Nervous System Disorders",
+      "title": "Central Nervous System Disorders",
       "variant": 3,
       "sections": [
         {
@@ -4133,7 +4133,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
   },
   "exam-endo-onc-rheum": {
     "1": {
-      "title": "Clinical Pharmacy — Endocrinology, Joint & Oncology",
+      "title": "Endocrinology, Joint & Oncology",
       "variant": 1,
       "sections": [
         {
@@ -4576,7 +4576,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "2": {
-      "title": "Clinical Pharmacy — Endocrinology, Joint & Oncology",
+      "title": "Endocrinology, Joint & Oncology",
       "variant": 2,
       "sections": [
         {
@@ -5214,7 +5214,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "3": {
-      "title": "Clinical Pharmacy — Endocrinology, Joint & Oncology",
+      "title": "Endocrinology, Joint & Oncology",
       "variant": 3,
       "sections": [
         {
@@ -5619,7 +5619,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
   },
   "exam-hospital-practice": {
     "1": {
-      "title": "Clinical Pharmacy — Hospital & Clinical Pharmacy Practice",
+      "title": "Hospital & Clinical Pharmacy Practice",
       "variant": 1,
       "sections": [
         {
@@ -6012,7 +6012,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "2": {
-      "title": "Clinical Pharmacy — Hospital & Clinical Pharmacy Practice",
+      "title": "Hospital & Clinical Pharmacy Practice",
       "variant": 2,
       "sections": [
         {
@@ -6409,7 +6409,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "3": {
-      "title": "Clinical Pharmacy — Hospital & Clinical Pharmacy Practice",
+      "title": "Hospital & Clinical Pharmacy Practice",
       "variant": 3,
       "sections": [
         {
@@ -6808,7 +6808,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
   },
   "exam-infections-i": {
     "1": {
-      "title": "Clinical Pharmacy — Infections I",
+      "title": "Infections I",
       "variant": 1,
       "sections": [
         {
@@ -7350,7 +7350,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "2": {
-      "title": "Clinical Pharmacy — Infections I",
+      "title": "Infections I",
       "variant": 2,
       "sections": [
         {
@@ -7812,7 +7812,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "3": {
-      "title": "Clinical Pharmacy — Infections I",
+      "title": "Infections I",
       "variant": 3,
       "sections": [
         {
@@ -8311,7 +8311,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
   },
   "exam-infections-ii": {
     "1": {
-      "title": "Clinical Pharmacy — Infections II",
+      "title": "Infections II",
       "variant": 1,
       "sections": [
         {
@@ -8785,7 +8785,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "2": {
-      "title": "Clinical Pharmacy — Infections II",
+      "title": "Infections II",
       "variant": 2,
       "sections": [
         {
@@ -9235,7 +9235,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "3": {
-      "title": "Clinical Pharmacy — Infections II",
+      "title": "Infections II",
       "variant": 3,
       "sections": [
         {
@@ -9700,7 +9700,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
   },
   "exam-respiratory-renal": {
     "1": {
-      "title": "Clinical Pharmacy — Respiratory & Renal",
+      "title": "Respiratory & Renal",
       "variant": 1,
       "sections": [
         {
@@ -10075,7 +10075,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "2": {
-      "title": "Clinical Pharmacy — Respiratory & Renal",
+      "title": "Respiratory & Renal",
       "variant": 2,
       "sections": [
         {
@@ -10494,7 +10494,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     },
     "3": {
-      "title": "Clinical Pharmacy — Respiratory & Renal",
+      "title": "Respiratory & Renal",
       "variant": 3,
       "sections": [
         {

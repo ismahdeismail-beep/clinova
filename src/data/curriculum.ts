@@ -1010,7 +1010,7 @@ export interface EducationModule {
 export const EDUCATION_MODULES: EducationModule[] = [
   { id: 'clinical_pharm', title: 'Clinical Pharmacy & Therapeutics', description: 'Disease management and patient care across 17 integrated therapeutic areas.', isIntegrated: true, areaId: 'clinical_pharm', icon: 'HeartPulse', color: 'red' },
   { id: 'online_books', title: 'Online Books', description: 'Pharmacy reference books, textbooks, and clinical resources.', isIntegrated: false, icon: 'BookOpen', color: 'sky' },
-  { id: 'exam_prep', title: 'Exam Prep', description: 'Mock papers modelled on the real clinical-pharmacy exam pattern across subject areas.', isIntegrated: false, icon: 'FileText', color: 'amber' },
+  { id: 'exam_prep', title: 'Clinical Pharmacy', description: 'Mock papers modelled on the real clinical-pharmacy exam pattern across subject areas.', isIntegrated: false, icon: 'FileText', color: 'amber' },
 ];
 
 export function getEducationModule(moduleId: string): EducationModule | undefined {

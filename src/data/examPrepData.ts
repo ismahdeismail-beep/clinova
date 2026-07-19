@@ -48,7 +48,7 @@ export const STANDARD_EXAM_STRUCTURE: ExamSectionSpec[] = [
 export const EXAM_PREP_UNITS: ExamUnitSpec[] = [
   {
     id: 'exam-respiratory-renal',
-    title: 'Clinical Pharmacy — Respiratory & Renal',
+    title: 'Respiratory & Renal',
     mappedUnits: ['cp-resp', 'cp-renal'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -65,7 +65,7 @@ export const EXAM_PREP_UNITS: ExamUnitSpec[] = [
   },
   {
     id: 'exam-antimicrobials',
-    title: 'Clinical Pharmacy — Principles of Antimicrobial Therapy',
+    title: 'Principles of Antimicrobial Therapy',
     mappedUnits: ['cp-id'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -81,7 +81,7 @@ export const EXAM_PREP_UNITS: ExamUnitSpec[] = [
   },
   {
     id: 'exam-cardiovascular-heme',
-    title: 'Clinical Pharmacy — Cardiovascular & Hematopoietic',
+    title: 'Cardiovascular & Hematopoietic',
     mappedUnits: ['cp-cv', 'cp-onc'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -101,7 +101,7 @@ export const EXAM_PREP_UNITS: ExamUnitSpec[] = [
   },
   {
     id: 'exam-infections-i',
-    title: 'Clinical Pharmacy — Infections I',
+    title: 'Infections I',
     mappedUnits: ['cp-id'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -120,7 +120,7 @@ export const EXAM_PREP_UNITS: ExamUnitSpec[] = [
   },
   {
     id: 'exam-infections-ii',
-    title: 'Clinical Pharmacy — Infections II',
+    title: 'Infections II',
     mappedUnits: ['cp-id'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -137,7 +137,7 @@ export const EXAM_PREP_UNITS: ExamUnitSpec[] = [
   },
   {
     id: 'exam-cns',
-    title: 'Clinical Pharmacy — Central Nervous System Disorders',
+    title: 'Central Nervous System Disorders',
     mappedUnits: ['cp-neuro'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -155,7 +155,7 @@ export const EXAM_PREP_UNITS: ExamUnitSpec[] = [
   },
   {
     id: 'exam-endo-onc-rheum',
-    title: 'Clinical Pharmacy — Endocrinology, Joint & Oncology',
+    title: 'Endocrinology, Joint & Oncology',
     mappedUnits: ['cp-endo', 'cp-onc', 'cp-rheum'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -172,7 +172,7 @@ export const EXAM_PREP_UNITS: ExamUnitSpec[] = [
   },
   {
     id: 'exam-hospital-practice',
-    title: 'Clinical Pharmacy — Hospital & Clinical Pharmacy Practice',
+    title: 'Hospital & Clinical Pharmacy Practice',
     mappedUnits: ['cp-intro'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [

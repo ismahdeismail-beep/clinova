@@ -1290,7 +1290,7 @@ export default function ClinicalAssistantScreen() {
                 )}
                 
                 {/* Bubble Container - 80% limit for Assistant, 75% limit for User */}
-                <div className={`flex flex-col gap-2 ${isUser ? 'max-w-[75%]' : 'max-w-[80%]'} w-full overflow-hidden`}>
+                <div className={`flex flex-col gap-2 ${isUser ? 'max-w-[85%] sm:max-w-[75%]' : 'max-w-[85%] sm:max-w-[80%]'} w-full overflow-hidden`}>
                   
                   {/* Real-time RAG Steps Tracker */}
                   {msg.isThinking && (
@@ -1437,7 +1437,7 @@ export default function ClinicalAssistantScreen() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
               onClick={() => scrollToBottom('smooth')}
-              className="absolute right-6 bottom-36 sm:bottom-32 p-3 rounded-full bg-[var(--surface)] border border-[var(--border)] text-[var(--primary)] shadow-lg hover:bg-[var(--surface-dim)] transition-colors cursor-pointer z-10"
+              className="absolute right-4 sm:right-6 bottom-20 sm:bottom-32 p-2.5 sm:p-3 rounded-full bg-[var(--surface)] border border-[var(--border)] text-[var(--primary)] shadow-lg hover:bg-[var(--surface-dim)] transition-colors cursor-pointer z-10"
               title="Scroll to bottom"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -1448,21 +1448,21 @@ export default function ClinicalAssistantScreen() {
         </AnimatePresence>
         
         {/* Floating Interactive Input Composer Area */}
-        <div className="p-3 sm:p-4 border-t border-[var(--border)]/80 bg-[var(--surface)] shrink-0 z-10 shadow-lg">
+        <div className="p-2 sm:p-4 border-t border-[var(--border)]/80 bg-[var(--surface)] shrink-0 z-10 shadow-lg">
           <div className="max-w-3xl mx-auto w-full">
           
           {/* Active Databases Config Dropdown Panel */}
-          <div className="mb-3 relative">
+          <div className="mb-2 sm:mb-3 relative">
             <button 
               onClick={() => setShowSourceSelector(!showSourceSelector)}
-              className="flex items-center gap-1.5 text-xs font-bold text-[var(--primary)] px-3 py-1.5 hover:bg-[var(--primary)]/10 border border-[var(--primary)]/20 rounded-xl transition-all cursor-pointer select-none"
+              className="flex items-center gap-1.5 text-xs font-bold text-[var(--primary)] px-2.5 sm:px-3 py-1.5 hover:bg-[var(--primary)]/10 border border-[var(--primary)]/20 rounded-xl transition-all cursor-pointer select-none"
               aria-expanded={showSourceSelector}
               aria-haspopup="true"
               aria-label="Configure active databases"
             >
-              <Library size={13} className="text-[var(--primary)]" /> 
-              <span>Configure Active Databases ({selectedSources.length})</span>
-              <ChevronDown size={12} className={`text-[var(--primary)] transition-transform duration-200 ${showSourceSelector ? 'rotate-180' : ''}`} />
+              <Library size={13} className="text-[var(--primary)] shrink-0" /> 
+              <span className="truncate">Databases ({selectedSources.length})</span>
+              <ChevronDown size={12} className={`text-[var(--primary)] transition-transform duration-200 shrink-0 ${showSourceSelector ? 'rotate-180' : ''}`} />
             </button>
             
             <AnimatePresence>
@@ -1472,7 +1472,7 @@ export default function ClinicalAssistantScreen() {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 10, scale: 0.98 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute bottom-full left-0 mb-1 w-full sm:w-[480px] p-4 bg-[var(--surface)] border border-[var(--border)] rounded-2xl grid grid-cols-2 gap-2.5 shadow-xl z-20"
+                  className="absolute bottom-full left-0 mb-1 w-full sm:w-[480px] p-3 sm:p-4 bg-[var(--surface)] border border-[var(--border)] rounded-2xl grid grid-cols-2 gap-2 shadow-xl z-20"
                   role="menu"
                 >
                   {AVAILABLE_SOURCES.map(source => (

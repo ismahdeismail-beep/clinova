@@ -2021,12 +2021,20 @@ function DiseaseNotesView({ unit, onOpenDisease, onCloseDisease }: { unit: Educa
   useEffect(() => {
     let cancelled = false
     setLoading(true)
-    DiseaseNoteService.getNotesByUnit(unit.id).then((data) => {
-      if (!cancelled) {
-        setNotes(data)
-        setLoading(false)
-      }
-    })
+    DiseaseNoteService.getNotesByUnit(unit.id)
+      .then((data) => {
+        if (!cancelled) {
+          setNotes(data)
+          setLoading(false)
+        }
+      })
+      .catch((err) => {
+        console.error('[DiseaseNotesView] Failed to load notes:', err)
+        if (!cancelled) {
+          setNotes([])
+          setLoading(false)
+        }
+      })
     return () => { cancelled = true }
   }, [unit.id])
 
@@ -2120,11 +2128,11 @@ function Section({
 }) {
   const tones: Record<string, string> = {
     default: 'border-[var(--border)]',
-    green: 'border-emerald-300/50 bg-emerald-500/[0.06]',
-    amber: 'border-amber-300/50 bg-amber-500/[0.06]',
-    rose: 'border-rose-300/50 bg-rose-500/[0.06]',
-    violet: 'border-violet-300/50 bg-violet-500/[0.06]',
-    blue: 'border-blue-300/50 bg-blue-500/[0.06]',
+    green: 'border-emerald-400/40 bg-emerald-500/[0.08]',
+    amber: 'border-amber-400/40 bg-amber-500/[0.08]',
+    rose: 'border-rose-400/40 bg-rose-500/[0.08]',
+    violet: 'border-violet-400/40 bg-violet-500/[0.08]',
+    blue: 'border-blue-400/40 bg-blue-500/[0.08]',
   }
   const titleColors: Record<string, string> = {
     default: 'text-[var(--primary)]',
@@ -2158,14 +2166,22 @@ function Section({
   )
 }
 
-function Bullets({ items, tone = 'default' }: { items: string[]; tone?: 'default' | 'rose' | 'amber' | 'critical' }) {
-  const dot = tone === 'rose' ? 'bg-rose-500' : tone === 'amber' ? 'bg-amber-500' : tone === 'critical' ? 'bg-red-500' : 'bg-[var(--primary)]'
+function Bullets({ items, tone = 'default' }: { items: string[]; tone?: 'default' | 'green' | 'rose' | 'amber' | 'violet' | 'blue' | 'critical' }) {
+  const dotMap: Record<string, string> = {
+    default: 'bg-[var(--primary)]',
+    green: 'bg-emerald-500',
+    rose: 'bg-rose-500',
+    amber: 'bg-amber-500',
+    violet: 'bg-violet-500',
+    blue: 'bg-blue-500',
+    critical: 'bg-red-500',
+  }
   const textColor = tone === 'critical' ? 'text-red-700 dark:text-red-400 font-semibold' : 'text-[var(--text)]'
   return (
     <ul className="space-y-1.5">
       {items.map((it, i) => (
         <li key={i} className="flex items-start gap-2 text-sm leading-relaxed">
-          <span className={`w-1.5 h-1.5 rounded-full ${dot} mt-2 shrink-0`} />
+          <span className={`w-1.5 h-1.5 rounded-full ${dotMap[tone] || dotMap.default} mt-2 shrink-0`} />
           <span className={textColor}>{it}</span>
         </li>
       ))}
@@ -2216,7 +2232,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
   return (
     <div className="w-full space-y-5 sm:space-y-7 py-2">
       {/* Header - styled like a Section for consistency */}
-      <Section num="0" title="Overview" icon={<FileText size={16} className="text-[var(--primary)]" />} tone="blue">
+      <Section title="Overview" icon={<FileText size={16} className="text-[var(--primary)]" />} tone="blue">
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-2">
             <button
@@ -2550,7 +2566,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
 
       {/* Diagram (treatment algorithm) */}
       {note.diagram && (
-        <div className="bg-white border border-[var(--border)] rounded-2xl p-4 sm:p-6 shadow-sm overflow-hidden">
+        <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 sm:p-6 shadow-sm overflow-hidden">
           <div className="diagram-host" dangerouslySetInnerHTML={{ __html: sanitizeDiagramIds(note.diagram) }} />
         </div>
       )}

@@ -14,6 +14,22 @@ export interface DrugMonograph {
   interactions: string[];
   monitoring: string;
   patient_counselling: string;
+  /** Mechanism of action – molecular target, pharmacological action, clinical effect */
+  mechanism_of_action?: string;
+  /** Common brand names – Kenyan and international */
+  brand_names?: string[];
+  /** FDA/USP pregnancy category (A, B, C, D, X, N) */
+  pregnancy_category?: string;
+  /** Key warnings and precautions (e.g. pregnancy, lactation, G6PD, special populations) */
+  warnings?: string[];
+  /** Overdose management – symptoms, antidote, supportive care */
+  overdose?: string;
+  /** Pharmacokinetics – absorption, distribution, metabolism, excretion, half-life */
+  pharmacokinetics?: string;
+  /** Black box warnings */
+  black_box_warnings?: string[];
+  /** Clinical pearls and practice tips */
+  clinical_pearls?: string[];
   created_at?: string;
 }
 
@@ -33,6 +49,14 @@ function mapRow(row: any): DrugMonograph {
     interactions: row.interactions ?? [],
     monitoring: row.monitoring ?? '',
     patient_counselling: row.patient_counselling ?? '',
+    mechanism_of_action: row.mechanism_of_action ?? undefined,
+    brand_names: row.brand_names ?? undefined,
+    pregnancy_category: row.pregnancy_category ?? undefined,
+    warnings: row.warnings ?? undefined,
+    overdose: row.overdose ?? undefined,
+    pharmacokinetics: row.pharmacokinetics ?? undefined,
+    black_box_warnings: row.black_box_warnings ?? undefined,
+    clinical_pearls: row.clinical_pearls ?? undefined,
     created_at: row.created_at,
   };
 }

@@ -63,11 +63,35 @@ export function monographToMarkdown(m: DrugMonograph): string {
   // Classification
   sections.push(section('Classification', `- **Therapeutic Class:** ${m.drug_class_name || m.drug_class}`));
 
+  // Brand Names
+  if (m.brand_names && m.brand_names.length > 0) {
+    sections.push(section('Brand Names', list(m.brand_names)));
+  }
+
+  // Mechanism of Action
+  if (m.mechanism_of_action) {
+    sections.push(section('Mechanism of Action', m.mechanism_of_action));
+  }
+
+  // Pharmacokinetics
+  if (m.pharmacokinetics) {
+    sections.push(section('Pharmacokinetics', m.pharmacokinetics));
+  }
+
   // Indications
   sections.push(m.indications.length > 0 ? section('Indications', list(m.indications)) : emptySection('Indications'));
 
   // Contraindications
-  sections.push(m.contraindications.length > 0 ? section('Contraindications', list(m.contraindications)) : emptySection('Contraindications'));
+  const contraindicationItems = [...m.contraindications];
+  if (m.pregnancy_category) {
+    contraindicationItems.push(`**Pregnancy Category ${m.pregnancy_category}** — see Warnings`);
+  }
+  sections.push(contraindicationItems.length > 0 ? section('Contraindications', list(contraindicationItems)) : emptySection('Contraindications'));
+
+  // Black Box Warnings (critical — show early)
+  if (m.black_box_warnings && m.black_box_warnings.length > 0) {
+    sections.push(section('Black Box Warnings', m.black_box_warnings.map(w => `> ⚠ **${w}**`).join('\n\n')));
+  }
 
   // Dosage
   if (m.dosage && Object.keys(m.dosage).length > 0) {
@@ -105,17 +129,39 @@ export function monographToMarkdown(m: DrugMonograph): string {
     sections.push(emptySection('Dosage'));
   }
 
+  // Warnings & Precautions
+  const warningItems: string[] = [];
+  if (m.warnings && m.warnings.length > 0) {
+    warningItems.push(...m.warnings);
+  }
+  if (m.pregnancy_category) {
+    warningItems.push(`**Pregnancy Category ${m.pregnancy_category}**: Refer to manufacturer prescribing information for pregnancy and lactation guidance.`);
+  }
+  if (warningItems.length > 0) {
+    sections.push(section('Warnings & Precautions', list(warningItems)));
+  }
+
   // Adverse Effects
   sections.push(m.side_effects.length > 0 ? section('Adverse Effects', list(m.side_effects)) : emptySection('Adverse Effects'));
 
   // Drug Interactions
   sections.push(m.interactions.length > 0 ? section('Drug Interactions', list(m.interactions)) : emptySection('Drug Interactions'));
 
+  // Overdose Management
+  if (m.overdose) {
+    sections.push(section('Overdose Management', m.overdose));
+  }
+
   // Monitoring
   sections.push(m.monitoring ? section('Monitoring', m.monitoring) : emptySection('Monitoring'));
 
   // Patient Counselling
   sections.push(m.patient_counselling ? section('Patient Counselling', m.patient_counselling) : emptySection('Patient Counselling'));
+
+  // Clinical Pearls
+  if (m.clinical_pearls && m.clinical_pearls.length > 0) {
+    sections.push(section('Clinical Pearls', list(m.clinical_pearls)));
+  }
 
   // References
   sections.push('## References\n'

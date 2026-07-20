@@ -57,7 +57,7 @@ export default function LandingScreen() {
 
   const stats = [
     { value: '17', label: 'Therapeutic Areas', icon: Layers },
-    { value: '100+', label: 'Clinical Cases', icon: Stethoscope },
+    { value: '10', label: 'Clinical Cases', icon: Stethoscope },
     { value: '24', label: 'Exam Papers', icon: FileSearch },
     { value: '8', label: 'Exam Subjects', icon: BookOpen },
   ]

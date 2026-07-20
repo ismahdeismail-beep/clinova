@@ -195,7 +195,7 @@ export default function DashboardScreen() {
       {/* ── Quick Stats Row ── */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
         {[
-          { icon: BarChart3, label: 'Clinical Cases', value: '100+', color: 'text-emerald-600', bg: 'bg-emerald-500/10' },
+          { icon: BarChart3, label: 'Clinical Cases', value: '10', color: 'text-emerald-600', bg: 'bg-emerald-500/10' },
           { icon: ScrollText, label: 'Exam Papers', value: '24', color: 'text-violet-600', bg: 'bg-violet-500/10' },
           { icon: BookOpen, label: 'Subject Areas', value: '8', color: 'text-sky-600', bg: 'bg-sky-500/10' },
           { icon: TrendingUp, label: 'Therapeutic Areas', value: '17', color: 'text-rose-600', bg: 'bg-rose-500/10' },

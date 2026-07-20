@@ -11,177 +11,8 @@ import {
 import Markdown from 'react-markdown';
 import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
-import { EDUCATION_MODULES, type EducationModule, type EducationModuleUnit, getModuleUnits, getIntegratedUnitId } from '../data/educationHubData';
-import { INITIAL_CASES, ALL_CLINICAL_CASES, SPECIALTIES } from '../data/clinicalCasesData';
+import { EDUCATION_MODULES, type EducationModule, type EducationModuleUnit, getModuleUnits } from '../data/educationHubData';
 
-// Clinical cases constants (copied from ClinicalCasesScreen for CleanDiseaseView)
-const clinical_pharmacy_cases = ALL_CLINICAL_CASES;
-
-const DISEASE_CONFIG: Record<string, { color: string, sub: string }> = {
-  'Heart Failure': { color: 'rose', sub: 'Pump dysfunction & congestion' },
-  'Hypertension': { color: 'rose', sub: 'Elevated systemic vascular resistance' },
-  'Atrial Fibrillation': { color: 'rose', sub: 'Irregularly irregular rhythm' },
-  'Coronary Artery Disease': { color: 'rose', sub: 'Myocardial ischaemia burden' },
-  'Stable Angina': { color: 'rose', sub: 'Exertional chest pain' },
-  'Chronic Stable Angina': { color: 'rose', sub: 'Exertional chest pain' },
-  'Hyperlipidemia': { color: 'rose', sub: 'Dyslipidaemia management' },
-  'Anticoagulation': { color: 'rose', sub: 'Thromboembolic prophylaxis' },
-  'Anticoagulation Management': { color: 'rose', sub: 'Thromboembolic prophylaxis' },
-  'Acute Coronary Syndrome': { color: 'rose', sub: 'Acute myocardial ischaemia' },
-  'Diastolic Disorders': { color: 'rose', sub: 'Impaired ventricular filling' },
-  'Venous Thromboembolism': { color: 'rose', sub: 'Clot prevention & treatment' },
-  'Asthma': { color: 'sky', sub: 'Reversible airway obstruction' },
-  'COPD': { color: 'sky', sub: 'Chronic airflow limitation' },
-  'Pulmonary Fibrosis': { color: 'sky', sub: 'Restrictive lung disease' },
-  'Pulmonary Hypertension': { color: 'sky', sub: 'Elevated pulmonary pressure' },
-  'Allergic Rhinitis': { color: 'sky', sub: 'Nasal allergen response' },
-  'Cystic Fibrosis': { color: 'sky', sub: 'CFTR channel dysfunction' },
-  'Tuberculosis': { color: 'sky', sub: 'Mycobacterial infection' },
-  'Acute Bronchitis': { color: 'sky', sub: 'Acute airway inflammation' },
-  'Community Acquired Pneumonia': { color: 'sky', sub: 'Lung parenchyma infection' },
-  'Hospital Acquired Pneumonia': { color: 'sky', sub: 'Nosocomial lung infection' },
-  'Bronchiectasis': { color: 'sky', sub: 'Irreversible airway dilation' },
-  'Diabetic Emergencies': { color: 'amber', sub: 'Acute metabolic decompensation' },
-  'Diabetes Mellitus': { color: 'amber', sub: 'Chronic hyperglycaemia' },
-  'Type 1 Diabetes': { color: 'amber', sub: 'Insulin-dependent diabetes' },
-  'Type 2 Diabetes': { color: 'amber', sub: 'Insulin resistance diabetes' },
-  'Diabetic Ketoacidosis': { color: 'amber', sub: 'Ketone acid accumulation' },
-  'Hyperosmolar Hyperglycaemic State': { color: 'amber', sub: 'Severe hyperglycaemia' },
-  'Hyperthyroidism': { color: 'amber', sub: 'Excess thyroid hormone' },
-  'Hypothyroidism': { color: 'amber', sub: 'Thyroid hormone deficiency' },
-  'Cushing Syndrome': { color: 'amber', sub: 'Cortisol excess state' },
-  'Addison Disease': { color: 'amber', sub: 'Adrenal insufficiency' },
-  'Adrenal Insufficiency': { color: 'amber', sub: 'Cortisol deficiency' },
-  'SIADH': { color: 'amber', sub: 'Water retention hyponatraemia' },
-  'Diabetes Insipidus': { color: 'amber', sub: 'Water loss polyuria' },
-  'Osteoporosis': { color: 'amber', sub: 'Bone density loss' },
-  'Acute Kidney Injury': { color: 'teal', sub: 'Rapid renal function decline' },
-  'Chronic Kidney Disease': { color: 'teal', sub: 'Progressive renal impairment' },
-  'Nephrotic Syndrome': { color: 'teal', sub: 'Protein-losing kidney disease' },
-  'Electrolyte Imbalance': { color: 'teal', sub: 'Serum electrolyte disturbance' },
-  'Anemia of CKD': { color: 'teal', sub: 'Renal anaemia management' },
-  'Hyperkalaemia': { color: 'teal', sub: 'Elevated serum potassium' },
-  'CKD-Mineral and Bone Disorder': { color: 'teal', sub: 'Renal bone disease' },
-  'Stroke': { color: 'violet', sub: 'Cerebrovascular ischaemia/bleed' },
-  'Epilepsy': { color: 'violet', sub: 'Recurrent seizure disorder' },
-  'Parkinson Disease': { color: 'violet', sub: 'Dopamine deficiency disorder' },
-  'Dementia': { color: 'violet', sub: 'Cognitive decline syndrome' },
-  'Multiple Sclerosis': { color: 'violet', sub: 'Demyelinating CNS disease' },
-  'Migraine': { color: 'violet', sub: 'Recurrent headache disorder' },
-  'Serotonin Syndrome': { color: 'violet', sub: 'Serotonin excess toxicity' },
-  'Neuroleptic Malignant Syndrome': { color: 'violet', sub: 'Dopamine blockade crisis' },
-  'Alcohol Withdrawal': { color: 'violet', sub: 'GABA withdrawal syndrome' },
-  'Neuropathic Pain': { color: 'violet', sub: 'Nerve injury pain' },
-  'Cirrhosis': { color: 'emerald', sub: 'End-stage liver disease' },
-  'Liver Cirrhosis': { color: 'emerald', sub: 'End-stage liver disease' },
-  'Peptic Ulcer Disease': { color: 'emerald', sub: 'Gastric mucosal erosion' },
-  'Inflammatory Bowel Disease': { color: 'emerald', sub: 'Chronic gut inflammation' },
-  'Hepatitis': { color: 'emerald', sub: 'Liver inflammation' },
-  'Pancreatitis': { color: 'emerald', sub: 'Pancreatic inflammation' },
-  'Irritable Bowel Syndrome': { color: 'emerald', sub: 'Functional bowel disorder' },
-  'Gastroparesis': { color: 'emerald', sub: 'Delayed gastric emptying' },
-  'GERD': { color: 'emerald', sub: 'Acid reflux disease' },
-  'Helicobacter pylori Infection': { color: 'emerald', sub: 'Gastric bacterial infection' },
-  'C. difficile Infection': { color: 'emerald', sub: 'Antibiotic-associated colitis' },
-  'Childhood Infections': { color: 'red', sub: 'Paediatric infectious diseases' },
-  'Bacterial Infections': { color: 'red', sub: 'Bacterial pathogen management' },
-  'Sepsis': { color: 'red', sub: 'Life-threatening organ dysfunction' },
-  'Meningitis': { color: 'red', sub: 'Meningeal inflammation' },
-  'Infective Endocarditis': { color: 'red', sub: 'Valvular infection' },
-  'Urinary Tract Infection': { color: 'red', sub: 'Lower/upper UTI management' },
-  'HIV/AIDS': { color: 'red', sub: 'Retroviral disease management' },
-  'Malaria': { color: 'red', sub: 'Plasmodium parasite infection' },
-  'Typhoid Fever': { color: 'red', sub: 'Salmonella enteric fever' },
-  'Pharyngitis': { color: 'red', sub: 'Acute throat infection' },
-  'Tonsillitis': { color: 'red', sub: 'Tonsillar inflammation' },
-  'Sinusitis': { color: 'red', sub: 'Sinus cavity infection' },
-  'Otitis Media': { color: 'red', sub: 'Middle ear infection' },
-  'Tinea Capitis': { color: 'red', sub: 'Scalp fungal infection' },
-  'Solid Tumours': { color: 'indigo', sub: 'Solid organ malignancy' },
-  'Cancer': { color: 'indigo', sub: 'Malignant neoplasm' },
-  'Breast Cancer': { color: 'indigo', sub: 'Breast malignancy' },
-  'Colorectal Cancer': { color: 'indigo', sub: 'Colorectal malignancy' },
-  'Prostate Cancer': { color: 'indigo', sub: 'Prostate malignancy' },
-  'Cervical Cancer': { color: 'indigo', sub: 'Cervical malignancy' },
-  'Anemia': { color: 'indigo', sub: 'Red cell deficiency' },
-  'Iron Deficiency Anaemia': { color: 'indigo', sub: 'Iron-deficiency anaemia' },
-  'Sickle Cell Disease': { color: 'indigo', sub: 'Haemoglobinopathy crisis' },
-  'Hemophilia': { color: 'indigo', sub: 'Clotting factor deficiency' },
-  'Thrombocytopenia': { color: 'indigo', sub: 'Low platelet count' },
-  'Thrombophilia': { color: 'indigo', sub: 'Hypercoagulable state' },
-  'Folate Deficiency': { color: 'indigo', sub: 'Folic acid deficiency' },
-  'Vitamin B12 Deficiency': { color: 'indigo', sub: 'B12 deficiency anaemia' },
-  'Oncology Support': { color: 'indigo', sub: 'Cancer supportive care' },
-  'Gout': { color: 'orange', sub: 'Uric acid crystal arthritis' },
-  'Rheumatoid Arthritis': { color: 'orange', sub: 'Autoimmune inflammatory arthritis' },
-  'Osteoarthritis': { color: 'orange', sub: 'Degenerative joint disease' },
-  'Fibromyalgia': { color: 'orange', sub: 'Central pain sensitisation' },
-  'Acute Pain': { color: 'orange', sub: 'Short-term pain management' },
-  'Chronic Pain': { color: 'orange', sub: 'Persistent pain management' },
-  'Chemical Poisoning': { color: 'yellow', sub: 'Toxic chemical exposure' },
-  'Organophosphate Poisoning': { color: 'yellow', sub: 'Cholinesterase inhibitor tox' },
-  'Drug Overdose': { color: 'yellow', sub: 'Intentional/accidental overdose' },
-  'Paracetamol Overdose': { color: 'yellow', sub: 'Acetaminophen toxicity' },
-  'Snake Bites': { color: 'yellow', sub: 'Envenomation management' },
-  'Snake Envenomation': { color: 'yellow', sub: 'Venom toxin treatment' },
-  'Environmental Toxicology': { color: 'yellow', sub: 'Environmental poison exposure' },
-  'Pharmacogenomics': { color: 'slate', sub: 'Gene-guided drug therapy' },
-  'Pharmacokinetics': { color: 'slate', sub: 'Drug ADME principles' },
-  'Pharmacodynamics': { color: 'slate', sub: 'Drug-receptor interactions' },
-  'Dosing in Special Populations': { color: 'slate', sub: 'Renal/hepatic dose adjustment' },
-  'Drug-Drug Interaction': { color: 'slate', sub: 'Drug interaction management' },
-  'Protein Binding Incompatibility': { color: 'slate', sub: 'Albumin displacement risk' },
-  'Teratogenicity': { color: 'slate', sub: 'Drug-induced birth defects' },
-  'Therapeutic Duplication': { color: 'slate', sub: 'Redundant drug therapy' },
-  'Therapeutic Drug Monitoring': { color: 'slate', sub: 'Serum drug level optimisation' },
-  'Adverse Drug Reactions': { color: 'slate', sub: 'Unintended drug effects' },
-  'Adverse Drug Reaction': { color: 'slate', sub: 'Unintended drug effects' },
-  'Medication Reconciliation': { color: 'slate', sub: 'Medication accuracy check' },
-  'Intravenous Safety': { color: 'slate', sub: 'IV administration safety' },
-  'Surgical Prophylaxis': { color: 'slate', sub: 'Pre-op infection prevention' },
-  'Antimicrobial Stewardship': { color: 'slate', sub: 'Antibiotic optimisation' },
-  'Opioid Stewardship': { color: 'slate', sub: 'Safe opioid prescribing' },
-  'Polypharmacy Review': { color: 'slate', sub: 'Multiple medication review' },
-  'Inborn Error of Metabolism': { color: 'slate', sub: 'Metabolic genetic disorder' },
-  'Hypertensive Disorders of Pregnancy': { color: 'pink', sub: 'Gestational hypertension' },
-  'Glaucoma': { color: 'cyan', sub: 'Optic nerve damage' },
-  'Open Angle Glaucoma': { color: 'cyan', sub: 'Chronic open-angle glaucoma' },
-  'Primary Open-Angle Glaucoma': { color: 'cyan', sub: 'POAG management' },
-  'Bacterial Conjunctivitis': { color: 'cyan', sub: 'Ocular surface infection' },
-  'Ophthalmic Disorders': { color: 'cyan', sub: 'Eye disease management' },
-  'Acne': { color: 'green', sub: 'Acne vulgaris management' },
-  'Eczema': { color: 'green', sub: 'Atopic dermatitis' },
-  'Psoriasis': { color: 'green', sub: 'Plaque psoriasis therapy' },
-  'Hearing Disorders': { color: 'amber', sub: 'Hearing loss management' },
-  'Anaphylaxis': { color: 'rose', sub: 'Acute allergic emergency' },
-  'Anesthesiology': { color: 'rose', sub: 'Perioperative drug management' },
-  'Emergency & Critical Care': { color: 'rose', sub: 'Acute care pharmacology' },
-  'Malnutrition': { color: 'amber', sub: 'Nutritional deficiency state' },
-  'Nutritional Deficiency': { color: 'amber', sub: 'Micronutrient deficiency' },
-  'Vitamin A Deficiency': { color: 'amber', sub: 'Vitamin A deficiency' },
-  'Vitamin D Deficiency': { color: 'amber', sub: 'Vitamin D deficiency' },
-  'Depression': { color: 'pink', sub: 'Major depressive disorder' },
-  'Schizophrenia': { color: 'pink', sub: 'Psychotic disorder management' },
-};
-
-const COLOR_MAP: Record<string, { bar: string, text: string }> = {
-  rose: { bar: 'bg-rose-500', text: 'text-rose-600' },
-  sky: { bar: 'bg-sky-500', text: 'text-sky-600' },
-  amber: { bar: 'bg-amber-500', text: 'text-amber-600' },
-  teal: { bar: 'bg-teal-500', text: 'text-teal-600' },
-  violet: { bar: 'bg-violet-500', text: 'text-violet-600' },
-  emerald: { bar: 'bg-emerald-500', text: 'text-emerald-600' },
-  red: { bar: 'bg-red-500', text: 'text-red-600' },
-  indigo: { bar: 'bg-indigo-500', text: 'text-indigo-600' },
-  orange: { bar: 'bg-orange-500', text: 'text-orange-600' },
-  yellow: { bar: 'bg-yellow-500', text: 'text-yellow-600' },
-  pink: { bar: 'bg-pink-500', text: 'text-pink-600' },
-  cyan: { bar: 'bg-cyan-500', text: 'text-cyan-600' },
-  green: { bar: 'bg-green-500', text: 'text-green-600' },
-  slate: { bar: 'bg-slate-500', text: 'text-slate-600' },
-};
-
-const DEFAULT_DISEASE_CONFIG = { color: 'slate', sub: 'Pharmaceutical care topic' };
 import { useAuth } from '../contexts/AuthContext';
 import { EducationService, CustomUnit, SubFolder, SavedFlashcard, SavedQuiz } 
 from '../services/education.service';
@@ -725,48 +556,57 @@ function ModuleCard({
 // CLEAN DISEASE VIEW — Clinical Pharmacy units show only diseases
 // ==========================================
 function CleanDiseaseView({ unit, onBack }: { unit: EducationModuleUnit; onBack: () => void }) {
-  const { userData } = useAuth();
-  const [selectedDisease, setSelectedDisease] = useState<string | null>(null);
-  const [showBrainTree, setShowBrainTree] = useState(false);
-  const [selectedSubsection, setSelectedSubsection] = useState<{ id: string, title: string, category: string, content: string, cta?: string, action?: string } | null>(null);
-  const [filterSpecialty, setFilterSpecialty] = useState<string | null>(null);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [notes, setNotes] = useState<DiseaseNote[]>([])
+  const [loading, setLoading] = useState(true)
+  const [selectedIdx, setSelectedIdx] = useState<number | null>(null)
+  const [searchQuery, setSearchQuery] = useState('')
 
-  // Get diseases from the unit's mapped cases
-  const unitCases = clinical_pharmacy_cases.filter((c: any) => {
-    const unitId = getIntegratedUnitId(c.specialty);
-    return unitId === unit.id;
-  });
-  const diseasesForUnit = Array.from(new Set(unitCases.map((c: any) => c.disease).filter(Boolean))).sort();
+  useEffect(() => {
+    let cancelled = false
+    setLoading(true)
+    DiseaseNoteService.getNotesByUnit(unit.id)
+      .then((data) => {
+        if (!cancelled) {
+          setNotes(data)
+          setLoading(false)
+        }
+      })
+      .catch((err) => {
+        console.error('[CleanDiseaseView] Failed to load notes:', err)
+        if (!cancelled) {
+          setNotes([])
+          setLoading(false)
+        }
+      })
+    return () => { cancelled = true }
+  }, [unit.id])
 
-  const getDiseaseConfig = (disease: string) => {
-    const cfg = DISEASE_CONFIG[disease] ?? DEFAULT_DISEASE_CONFIG;
-    const colors = COLOR_MAP[cfg.color] ?? COLOR_MAP.slate;
-    return { ...cfg, ...colors };
-  };
-
-  const handleDiseaseClick = (disease: string) => {
-    setSelectedDisease(disease);
-    setShowBrainTree(false);
-    setSelectedSubsection(null);
-  };
-
-  const handleBackToDiseases = () => {
-    setSelectedDisease(null);
-    setSelectedSubsection(null);
-  };
-
-  if (selectedDisease) {
+  if (loading) {
     return (
-      <div className="animate-in fade-in duration-300 max-w-4xl mx-auto">
-        <DiseaseNotesView 
-          unit={unit} 
-          onOpenDisease={() => {}} 
-          onCloseDisease={handleBackToDiseases} 
-        />
+      <div className="py-12 text-center">
+        <div className="w-6 h-6 border-2 border-[var(--primary)] border-t-transparent rounded-full animate-spin mx-auto" />
       </div>
-    );
+    )
   }
+
+  if (selectedIdx !== null && notes[selectedIdx]) {
+    return (
+      <DiseaseDetailView
+        note={notes[selectedIdx]}
+        hasPrev={selectedIdx > 0}
+        hasNext={selectedIdx < notes.length - 1}
+        onPrev={() => setSelectedIdx(selectedIdx - 1)}
+        onNext={() => setSelectedIdx(selectedIdx + 1)}
+        onBack={() => setSelectedIdx(null)}
+      />
+    )
+  }
+
+  const filtered = notes.filter((n) =>
+    !searchQuery.trim() ||
+    n.name.toLowerCase().includes(searchQuery.trim().toLowerCase()) ||
+    (n.specialty ?? '').toLowerCase().includes(searchQuery.trim().toLowerCase())
+  )
 
   return (
     <div className="animate-in fade-in slide-in-from-right-4 duration-300 space-y-6">
@@ -775,7 +615,7 @@ function CleanDiseaseView({ unit, onBack }: { unit: EducationModuleUnit; onBack:
           <ChevronLeft size={18} className="text-[var(--text)]" />
         </button>
         <h2 className="text-2xl font-bold text-[var(--text)] flex items-center gap-3">
-          <Activity size={24} className="text-amber-500" /> {unit.title}
+          <FileText size={24} className="text-amber-500" /> {unit.title} <span className="text-[var(--text-muted)] text-base font-semibold">Notes</span>
         </h2>
       </div>
 
@@ -785,52 +625,52 @@ function CleanDiseaseView({ unit, onBack }: { unit: EducationModuleUnit; onBack:
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder="Search diseases..."
+          placeholder="Search notes..."
           className="w-full pl-10 pr-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl text-sm text-[var(--text)] outline-none focus:border-[var(--primary)] transition-colors"
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {diseasesForUnit
-          .filter(disease => {
-            if (filterSpecialty && disease !== filterSpecialty) return false;
-            const q = searchQuery.trim().toLowerCase();
-            if (q && !disease.toLowerCase().includes(q)) return false;
-            return true;
-          })
-          .map((disease, idx) => {
-            const casesCount = unitCases.filter(c => c.disease === disease).length;
-            const cfg = getDiseaseConfig(disease);
-            return (
-              <div 
-                key={idx}
-                onClick={() => handleDiseaseClick(disease)}
-                className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl cursor-pointer transition-all shadow-sm hover:shadow-md group flex overflow-hidden"
-              >
-                <div className={`w-1.5 shrink-0 ${cfg.bar}`} />
-                <div className="flex-1 p-4 flex items-center justify-between gap-3">
-                  <div className="min-w-0">
-                    <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">{disease}</h3>
-                    <p className={`text-[11px] font-medium mt-0.5 ${cfg.text}`}>{cfg.sub}</p>
-                    <p className="text-[10px] text-[var(--text-muted)] mt-1">{casesCount} {casesCount === 1 ? 'case' : 'cases'}</p>
-                  </div>
-                  <ChevronRight size={16} className="shrink-0 text-[var(--border)] group-hover:text-[var(--primary)] group-hover:translate-x-1 transition-all" />
-                </div>
-              </div>
-            );
-          })}
-      </div>
-
-      {diseasesForUnit.length === 0 && (
+      {filtered.length === 0 ? (
         <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-12 text-center">
           <div className="w-16 h-16 bg-[var(--surface-dim)] rounded-full flex items-center justify-center mx-auto mb-4">
-            <Activity size={32} className="text-[var(--text-muted)]" />
+            <FileText size={32} className="text-[var(--text-muted)]" />
           </div>
-          <h3 className="text-lg font-bold text-[var(--text)]">No Diseases Available Yet</h3>
+          <h3 className="text-lg font-bold text-[var(--text)]">No Notes Available Yet</h3>
           <p className="text-sm text-[var(--text-muted)] mt-2 max-w-sm mx-auto">
-            Teaching cases for this unit are being compiled.
+            Curated disease notes for this unit are being compiled.
           </p>
         </div>
+      ) : (
+        <>
+          <p className="text-[11px] font-bold text-[var(--text-muted)] uppercase tracking-wider">
+            {filtered.length} Note{filtered.length !== 1 ? 's' : ''}
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {filtered.map((note, idx) => (
+              <button
+                key={note.id}
+                onClick={() => setSelectedIdx(idx)}
+                className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-2xl p-5 text-left transition-all cursor-pointer group"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--primary)]/20 to-purple-500/20 text-[var(--primary)] flex items-center justify-center shrink-0">
+                    <FileText size={18} />
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">{note.name}</h4>
+                    <p className="text-[10px] text-[var(--text-muted)] font-semibold">{note.specialty}</p>
+                  </div>
+                </div>
+                <p className="text-xs text-[var(--text-muted)] line-clamp-2 leading-relaxed">{note.overview}</p>
+                {note.diagram && (
+                  <div className="mt-3 flex items-center gap-1 text-[10px] text-[var(--primary)] font-bold">
+                    <FileText size={11} /> Includes diagram
+                  </div>
+                )}
+              </button>
+            ))}
+          </div>
+        </>
       )}
     </div>
   );

@@ -241,16 +241,19 @@ export default function ClinicalCasesScreen() {
     loadCases();
   }, []);
 
-  // Handle deep-linking: if ?caseId=xxx is present, navigate directly to that case
+  // Sync URL searchParams ↔ drill-down state so browser back/forward works correctly.
+  // The URL (?specialty=…&disease=…&caseId=…) is the single source of truth.
   useEffect(() => {
-    const caseId = searchParams.get('caseId');
-    if (!caseId || allCases.length === 0) return;
-    const match = allCases.find((c) => c.id === caseId || c.seedId === caseId);
-    if (match) {
-      const unit = SPECIALTIES.find((s) => matchesUnit(match, s));
-      if (unit) {
-        setSelectedSpecialty(unit);
-        setSelectedDisease(match.disease);
+    const specialtyParam = searchParams.get('specialty');
+    const diseaseParam = searchParams.get('disease');
+    const caseIdParam = searchParams.get('caseId');
+
+    if (caseIdParam && allCases.length > 0) {
+      const match = allCases.find((c) => c.id === caseIdParam || c.seedId === caseIdParam);
+      if (match) {
+        const unit = SPECIALTIES.find((s) => matchesUnit(match, s));
+        setSelectedSpecialty(specialtyParam || unit || null);
+        setSelectedDisease(diseaseParam || match.disease || null);
         setSelectedCase(match);
         setTutorChat([
           {
@@ -258,8 +261,28 @@ export default function ClinicalCasesScreen() {
             content: `Welcome to the Clinical Case on **${match.title}**. I am your Clinical Coach. I have loaded the case details, patient history, guidelines for ${match.disease}, and relevant pharmacological concepts. How can I assist you with your clinical reasoning for this case?`
           }
         ]);
+        return;
       }
     }
+
+    // No case — clear it
+    setSelectedCase(null);
+
+    if (diseaseParam) {
+      setSelectedDisease(diseaseParam);
+      setSelectedSpecialty(specialtyParam);
+      return;
+    }
+
+    if (specialtyParam) {
+      setSelectedSpecialty(specialtyParam);
+      setSelectedDisease(null);
+      return;
+    }
+
+    // No params → back to root
+    setSelectedSpecialty(null);
+    setSelectedDisease(null);
   }, [searchParams, allCases]);
 
   // Disease brain subsection state
@@ -291,47 +314,48 @@ export default function ClinicalCasesScreen() {
   const chatEndRef = useRef<HTMLDivElement>(null);
 
   const handleSpecialtyClick = (specialty: string) => {
-    setSelectedSpecialty(specialty);
-    setSelectedDisease(null);
-    setSelectedCase(null);
+    navigate(`/cases?specialty=${encodeURIComponent(specialty)}`);
   };
 
   const handleDiseaseClick = (disease: string) => {
-    setSelectedDisease(disease);
-    setSelectedCase(null);
+    const params = new URLSearchParams(searchParams);
+    params.set('disease', disease);
+    params.delete('caseId');
     setShowBrainTree(false);
     setSelectedSubsection(null);
+    navigate(`/cases?${params.toString()}`);
   };
 
   const handleCaseClick = (clinicalCase: ClinicalCase) => {
     const unit = SPECIALTIES.find((s) => matchesUnit(clinicalCase, s));
-    setSelectedSpecialty(unit || null);
-    setSelectedDisease(clinicalCase.disease);
+    const params = new URLSearchParams();
+    if (unit) params.set('specialty', unit);
+    params.set('disease', clinicalCase.disease);
+    params.set('caseId', clinicalCase.id);
     setShowBrainTree(false);
-    setSelectedCase(clinicalCase);
-    setTutorChat([
-      {
-        role: 'assistant',
-        content: `Welcome to the Clinical Case on **${clinicalCase.title}**. I am your Clinical Coach. I have loaded the case details, patient history, guidelines for ${clinicalCase.disease}, and relevant pharmacological concepts. How can I assist you with your clinical reasoning for this case?`
-      }
-    ]);
+    navigate(`/cases?${params.toString()}`);
   };
 
   const handleBackToSpecialties = () => {
-    setSelectedSpecialty(null);
-    setSelectedDisease(null);
-    setSelectedCase(null);
     setSelectedSubsection(null);
+    navigate('/cases');
   };
 
   const handleBackToDiseases = () => {
-    setSelectedDisease(null);
-    setSelectedCase(null);
+    const params = new URLSearchParams();
+    const specialty = searchParams.get('specialty');
+    if (specialty) params.set('specialty', specialty);
     setSelectedSubsection(null);
+    navigate(`/cases?${params.toString()}`);
   };
 
   const handleBackToCases = () => {
-    setSelectedCase(null);
+    const params = new URLSearchParams();
+    const specialty = searchParams.get('specialty');
+    const disease = searchParams.get('disease');
+    if (specialty) params.set('specialty', specialty);
+    if (disease) params.set('disease', disease);
+    navigate(`/cases?${params.toString()}`);
   };
 
   // ── Dynamic grouping: cases are sourced from Supabase (unitId maps to the
@@ -859,7 +883,7 @@ export default function ClinicalCasesScreen() {
         {/* Breadcrumb Navigation — only shown when drilled into a specialty */}
         {selectedSpecialty && (
         <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] overflow-x-auto pb-2 whitespace-nowrap">
-          <button onClick={() => navigate('/knowledge')} className="hover:text-[var(--primary)] transition-colors flex items-center gap-1">Education Hub</button>
+          <button onClick={() => navigate('/')} className="hover:text-[var(--primary)] transition-colors flex items-center gap-1">Home</button>
           <ChevronRight size={14} />
           <button onClick={handleBackToSpecialties} className={`hover:text-[var(--primary)] transition-colors flex items-center gap-1 ${!selectedSpecialty ? 'text-[var(--text)] font-bold' : ''}`}>
             Clinical Cases

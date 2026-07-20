@@ -216,15 +216,25 @@ export default function BoardExamScreen() {
   const [selectedSet, setSelectedSet] = useState<string | null>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
 
+  // Sync URL param → selected set for back/forward navigation
+  useEffect(() => {
+    if (setId && setId !== selectedSet) {
+      setSelectedSet(setId)
+      setCurrentIndex(0)
+    } else if (!setId && selectedSet) {
+      setSelectedSet(null)
+      setCurrentIndex(0)
+    }
+  }, [setId])
+
   const setNumber = selectedSet ? SET_NUMBER[selectedSet] : null
   const questions = setNumber ? getQuestionsByPredictionSet(setNumber) : []
 
   const handleBack = () => {
     if (selectedSet) {
-      setSelectedSet(null)
-      setCurrentIndex(0)
+      navigate('/board-exam')
     } else {
-      navigate('/knowledge')
+      navigate('/')
     }
   }
 
@@ -255,7 +265,7 @@ export default function BoardExamScreen() {
       <div className="p-4 md:p-6 max-w-6xl mx-auto">
         <button onClick={handleBack} className="flex items-center gap-2 text-sm text-[var(--text-muted)] hover:text-[var(--text)] mb-6 transition-colors">
           <ArrowLeft size={16} />
-          Back to Education Hub
+          Back to Dashboard
         </button>
 
         <div className="mb-6 sm:mb-8">
@@ -291,10 +301,7 @@ export default function BoardExamScreen() {
             return (
               <button
                 key={set.id}
-                onClick={() => {
-                  setSelectedSet(set.id)
-                  setCurrentIndex(0)
-                }}
+                onClick={() => navigate('/board-exam/' + set.id)}
                 className={`text-left bg-[var(--surface)] border ${set.border} rounded-2xl p-5 hover:shadow-md transition-all group relative overflow-hidden`}
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${set.gradient} opacity-50`} />

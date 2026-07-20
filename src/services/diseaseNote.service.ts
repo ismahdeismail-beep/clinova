@@ -23,23 +23,28 @@ export const DiseaseNoteService = {
   },
 
   async getNotesByUnit(unitId: string): Promise<DiseaseNote[]> {
-    let liveNotes: DiseaseNote[] = []
+    // Local DISEASE_NOTES is the complete, curated source (includes all
+    // extended fields). Prefer it; only fall back to Supabase when a unit
+    // has no local notes (e.g. future server-authored content).
+    const local = DISEASE_NOTES.filter((n) => n.unitId === unitId)
+    if (local.length > 0) return local
+
     if (supabase) {
       const { data, error } = await supabase
         .from('disease_notes')
         .select('*')
         .eq('unit_id', unitId)
-      if (!error && data) {
-        liveNotes = data.map(mapRow)
-      } else {
-        console.warn('[DiseaseNoteService] Supabase fetch failed, using local fallback:', error?.message)
+      if (!error && data && data.length > 0) {
+        return data.map(mapRow)
       }
     }
-    if (liveNotes.length > 0) return liveNotes
-    return DISEASE_NOTES.filter((n) => n.unitId === unitId)
+    return []
   },
 
   async getNoteById(id: string): Promise<DiseaseNote | null> {
+    const local = DISEASE_NOTES.find((n) => n.id === id)
+    if (local) return local
+
     if (supabase) {
       const { data, error } = await supabase
         .from('disease_notes')
@@ -48,24 +53,22 @@ export const DiseaseNoteService = {
         .maybeSingle()
       if (!error && data) return mapRow(data)
     }
-    return DISEASE_NOTES.find((n) => n.id === id) ?? null
+    return null
   },
 
   async getAllNotes(): Promise<DiseaseNote[]> {
-    let liveNotes: DiseaseNote[] = []
+    if (DISEASE_NOTES.length > 0) return DISEASE_NOTES
+
     if (supabase) {
       const { data, error } = await supabase
         .from('disease_notes')
         .select('*')
         .order('name', { ascending: true })
-      if (!error && data) {
-        liveNotes = data.map(mapRow)
-      } else {
-        console.warn('[DiseaseNoteService] Supabase fetch failed, using local fallback:', error?.message)
+      if (!error && data && data.length > 0) {
+        return data.map(mapRow)
       }
     }
-    if (liveNotes.length > 0) return liveNotes
-    return DISEASE_NOTES
+    return []
   },
 }
 

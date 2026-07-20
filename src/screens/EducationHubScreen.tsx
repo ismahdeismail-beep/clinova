@@ -1967,12 +1967,12 @@ function Section({
   icon?: React.ReactNode
 }) {
   const tones: Record<string, string> = {
-    default: 'border-[var(--border)]',
-    green: 'border-emerald-400/40 bg-emerald-500/[0.08]',
-    amber: 'border-amber-400/40 bg-amber-500/[0.08]',
-    rose: 'border-rose-400/40 bg-rose-500/[0.08]',
-    violet: 'border-violet-400/40 bg-violet-500/[0.08]',
-    blue: 'border-blue-400/40 bg-blue-500/[0.08]',
+    default: 'border-[var(--border)] border-l-4 border-l-[var(--primary)]/60',
+    green: 'border border-emerald-400/40 bg-emerald-500/[0.08] border-l-4 border-l-emerald-500',
+    amber: 'border border-amber-400/40 bg-amber-500/[0.08] border-l-4 border-l-amber-500',
+    rose: 'border border-rose-400/40 bg-rose-500/[0.08] border-l-4 border-l-rose-500',
+    violet: 'border border-violet-400/40 bg-violet-500/[0.08] border-l-4 border-l-violet-500',
+    blue: 'border border-blue-400/40 bg-blue-500/[0.08] border-l-4 border-l-blue-500',
   }
   const titleColors: Record<string, string> = {
     default: 'text-[var(--primary)]',
@@ -2072,7 +2072,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
   return (
     <div className="w-full space-y-5 sm:space-y-7 py-2">
       {/* Header - styled like a Section for consistency */}
-      <Section title="Overview" icon={<FileText size={16} className="text-[var(--primary)]" />} tone="blue">
+      <Section title="Overview" icon={<FileText size={16} className="text-blue-500" />} tone="blue">
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-2">
             <button
@@ -2099,12 +2099,15 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
               <ArrowRight size={16} className="text-[var(--text)]" />
             </button>
             <div className="min-w-0">
-              <h2 className="text-2xl font-extrabold text-[var(--text)] truncate">{note.name}</h2>
-              <p className="text-xs text-[var(--text-muted)] font-semibold mt-0.5">{note.specialty}</p>
+              <div className="flex items-center gap-2 mb-0.5">
+                <h2 className="text-2xl font-extrabold text-[var(--text)] truncate">{note.name}</h2>
+                <span className="px-2 py-0.5 rounded-full bg-blue-500/15 text-blue-600 dark:text-blue-400 text-[10px] font-bold border border-blue-500/20 shrink-0">Overview</span>
+              </div>
+              <p className="text-xs text-[var(--text-muted)] font-semibold">{note.specialty}</p>
             </div>
           </div>
           {note.overview && (
-            <div className="bg-gradient-to-br from-[var(--primary)]/10 to-transparent border border-[var(--primary)]/20 rounded-2xl p-4">
+            <div className="bg-gradient-to-br from-blue-500/15 via-blue-500/5 to-transparent border border-blue-500/25 rounded-2xl p-5 shadow-sm">
               <p className="text-sm text-[var(--text)] leading-relaxed font-medium">{note.overview}</p>
             </div>
           )}

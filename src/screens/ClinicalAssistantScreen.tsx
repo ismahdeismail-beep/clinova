@@ -1038,7 +1038,7 @@ export default function ClinicalAssistantScreen() {
 
   return (
     <div 
-      className="fixed md:left-64 left-0 right-0 bottom-0 top-[calc(4rem+env(safe-area-inset-top,0px))] bg-[var(--bg)] text-[var(--text)] flex flex-row overflow-hidden z-20 font-sans"
+      className="fixed md:left-64 left-0 right-0 bottom-0 top-[calc(4rem+env(safe-area-inset-top,0px))] bg-[var(--bg)] text-[var(--text)] flex flex-row overflow-hidden z-30 font-sans"
       style={{
         height: `calc(${viewportHeight}px - 4rem - env(safe-area-inset-top, 0px))`
       }}
@@ -1472,7 +1472,7 @@ export default function ClinicalAssistantScreen() {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 10, scale: 0.98 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute bottom-full left-0 mb-1 w-full sm:w-[480px] p-3 sm:p-4 bg-[var(--surface)] border border-[var(--border)] rounded-2xl grid grid-cols-2 gap-2 shadow-xl z-20"
+                  className="absolute bottom-full left-0 mb-1 w-full sm:w-[480px] p-3 sm:p-4 bg-[var(--surface)] border border-[var(--border)] rounded-2xl grid grid-cols-2 gap-2 shadow-xl z-50"
                   role="menu"
                 >
                   {AVAILABLE_SOURCES.map(source => (

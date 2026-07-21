@@ -1,10 +1,11 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react';
-import { Bell, Activity, Pill, AlertTriangle } from 'lucide-react';
+import { Bell, Activity, Pill, AlertTriangle, Megaphone } from 'lucide-react';
 import { BUNDLED_DRUGS } from '../data/drugIndexData';
+import { useNavigate } from 'react-router-dom';
 
 export interface AppNotification {
   id: string;
-  type: 'alert' | 'reminder' | 'update';
+  type: 'alert' | 'reminder' | 'update' | 'info';
   title: string;
   message: string;
   time: string;
@@ -13,6 +14,7 @@ export interface AppNotification {
   iconName: string;
   color: string;
   bg: string;
+  link?: string;
 }
 
 interface NotificationContextType {
@@ -22,55 +24,107 @@ interface NotificationContextType {
   markAsRead: (id: string) => void;
   markAllAsRead: () => void;
   scheduleMedicationReminder: (patientName: string, medication: string, delayMinutes: number) => void;
+  requestNotificationPermission: () => Promise<NotificationPermission>;
 }
 
 const NotificationContext = createContext<NotificationContextType | null>(null);
 
 const DEFAULT_NOTIFICATIONS: AppNotification[] = [
   {
-    id: '1',
-    type: 'alert',
-    title: 'High Risk Interaction',
-    message: 'Warfarin and Amiodarone prescribed for Patient IP-8921.',
-    time: '10 min ago',
-    timestamp: Date.now() - 10 * 60000,
+    id: 'welcome-1',
+    type: 'info',
+    title: 'Welcome to Clinova',
+    message: 'Explore 613 drug monographs, clinical cases, and AI-powered clinical support.',
+    time: 'Welcome',
+    timestamp: Date.now(),
     read: false,
-    iconName: 'AlertTriangle',
-    color: 'text-[var(--danger)]',
-    bg: 'bg-[var(--danger-container)]'
+    iconName: 'Megaphone',
+    color: 'text-blue-500',
+    bg: 'bg-blue-500/10',
   },
   {
-    id: '2',
-    type: 'reminder',
-    title: 'Follow-up Due',
-    message: 'Check Gentamicin trough levels for Patient IP-7732.',
-    time: '1 hour ago',
-    timestamp: Date.now() - 60 * 60000,
+    id: 'welcome-2',
+    type: 'info',
+    title: '613 Drugs Now Available',
+    message: 'The Kenya Drug Index has been expanded to 613 enriched drug monographs covering all major drug classes.',
+    time: 'New',
+    timestamp: Date.now() - 3600000,
     read: false,
-    iconName: 'Activity',
-    color: 'text-[var(--primary)]',
-    bg: 'bg-[var(--primary-container)]'
+    iconName: 'Megaphone',
+    color: 'text-indigo-500',
+    bg: 'bg-indigo-500/10',
+    link: '/drugs',
+  },
+];
+
+// Feature announcements that should trigger a notification
+const FEATURE_ANNOUNCEMENTS = [
+  {
+    id: 'feat-drug-index-613',
+    title: '613 Drugs Now Available',
+    message: 'The Kenya Drug Index has been expanded to 613 enriched drug monographs covering all major drug classes.',
+    iconName: 'Megaphone',
+    color: 'text-indigo-500',
+    bg: 'bg-indigo-500/10',
+    link: '/drugs',
   },
   {
-    id: '3',
-    type: 'update',
-    title: 'Formulary Update',
-    message: 'New guidelines for empirical antibiotic therapy have been published.',
-    time: 'Yesterday',
-    timestamp: Date.now() - 24 * 60 * 60000,
-    read: true,
+    id: 'feat-drug-of-the-day',
+    title: 'Drug of the Day',
+    message: 'A new drug is spotlighted every day. Check back daily to expand your pharmacology knowledge.',
     iconName: 'Pill',
-    color: 'text-[var(--text-muted)]',
-    bg: 'bg-[var(--surface-dim)]'
-  }
+    color: 'text-emerald-500',
+    bg: 'bg-emerald-500/10',
+    link: '/drugs',
+  },
+  {
+    id: 'feat-clinical-assistant',
+    title: 'AI Clinical Assistant',
+    message: 'Get instant answers to clinical questions powered by AI, backed by Kenyan STG guidelines.',
+    iconName: 'Activity',
+    color: 'text-cyan-500',
+    bg: 'bg-cyan-500/10',
+  },
 ];
 
 export function NotificationProvider({ children }: { children: ReactNode }) {
   const [notifications, setNotifications] = useState<AppNotification[]>(DEFAULT_NOTIFICATIONS);
 
+  // Check for unseen feature announcements
+  useEffect(() => {
+    const seen = JSON.parse(localStorage.getItem('clinova_seen_announcements') || '[]') as string[];
+    const unseen = FEATURE_ANNOUNCEMENTS.filter(f => !seen.includes(f.id));
+    if (unseen.length > 0) {
+      const newNotifs: AppNotification[] = unseen.map(f => ({
+        id: `ann-${f.id}`,
+        type: 'info' as const,
+        title: f.title,
+        message: f.message,
+        time: 'New',
+        timestamp: Date.now(),
+        read: false,
+        iconName: f.iconName,
+        color: f.color,
+        bg: f.bg,
+        link: f.link,
+      }));
+      setNotifications(prev => [...newNotifs, ...prev]);
+      localStorage.setItem('clinova_seen_announcements', JSON.stringify([...seen, ...unseen.map(u => u.id)]));
+    }
+  }, []);
+
   // Request browser notification permission
+  const requestNotificationPermission = useCallback(async (): Promise<NotificationPermission> => {
+    if (!('Notification' in window)) return 'denied';
+    if (Notification.permission === 'granted') return 'granted';
+    const result = await Notification.requestPermission();
+    localStorage.setItem('clinova_push_permission', result);
+    return result;
+  }, []);
+
   useEffect(() => {
     if ('Notification' in window && Notification.permission === 'default') {
+      // Auto-request on first visit
       Notification.requestPermission();
     }
   }, []);
@@ -87,16 +141,18 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
 
     // Show browser push notification
     if ('Notification' in window && Notification.permission === 'granted') {
-      new Notification(notif.title, {
-        body: notif.message,
-        icon: '/vite.svg', // generic icon
-      });
+      try {
+        new Notification(notif.title, {
+          body: notif.message,
+          icon: '/vite.svg',
+        });
+      } catch (e) {
+        // Browser notifications may fail in some contexts
+      }
     }
   };
 
   const scheduleMedicationReminder = (patientName: string, medication: string, delayMinutes: number) => {
-    // We add a notification right away to confirm scheduling, or just schedule it
-    // For demo purposes, we will use setTimeout to trigger it after delayMinutes
     setTimeout(() => {
       addNotification({
         type: 'reminder',
@@ -109,7 +165,7 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
     }, delayMinutes * 60 * 1000);
   };
 
-  // Drug of the Day — fires at 8 AM daily
+  // Drug of the Day — fires when the drug changes (daily)
   const getDrugOfTheDay = useCallback(() => {
     const now = new Date()
     const dayOfYear = Math.floor((now.getTime() - new Date(now.getFullYear(), 0, 0).getTime()) / 86400000)
@@ -124,19 +180,20 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
       const eatNow = new Date(now.getTime() + (now.getTimezoneOffset() + 180) * 60000)
       if (eatNow.getHours() !== 8 || eatNow.getMinutes() !== 0) return
 
-      const lastNotified = localStorage.getItem('clinova_dotd_date')
+      const lastNotified = localStorage.getItem('clinova_dotd_notified')
       if (lastNotified === now.toDateString()) return
 
       const drug = getDrugOfTheDay()
-      localStorage.setItem('clinova_dotd_date', now.toDateString())
+      localStorage.setItem('clinova_dotd_notified', now.toDateString())
 
       addNotification({
         type: 'reminder',
-        title: 'Drug of the Day',
-        message: `${drug.name} (${drug.drug_class}) — ${drug.indications[0]}. Tap to view full monograph.`,
+        title: `Drug of the Day: ${drug.name}`,
+        message: `${drug.drug_class} — ${drug.indications[0]}. Tap to view full monograph.`,
         iconName: 'Pill',
         color: 'text-emerald-500',
         bg: 'bg-emerald-500/15',
+        link: `/drugs?q=${encodeURIComponent(drug.name)}`,
       })
     }
 
@@ -162,7 +219,8 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
       addNotification,
       markAsRead,
       markAllAsRead,
-      scheduleMedicationReminder
+      scheduleMedicationReminder,
+      requestNotificationPermission,
     }}>
       {children}
     </NotificationContext.Provider>

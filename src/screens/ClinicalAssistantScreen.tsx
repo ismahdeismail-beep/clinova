@@ -1216,7 +1216,7 @@ export default function ClinicalAssistantScreen() {
                     What can I do for you today?
                   </span>
                   
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                     {[
                       { icon: Pill, title: "Learn pharmacology", desc: "Action mechanisms, indications, side effects, and exact dosing" },
                       { icon: Library, title: "Get treatment guidance", desc: "Strict adherence to Kenyan STG & global guidelines" },
@@ -1225,7 +1225,7 @@ export default function ClinicalAssistantScreen() {
                     ].map((feat, idx) => {
                       const Icon = feat.icon;
                       return (
-                        <div key={idx} className="flex gap-3 p-3.5 bg-[var(--bg)]/50 border border-[var(--border)]/80 rounded-2xl">
+                        <div key={idx} className="flex gap-3 p-3.5 sm:p-4 bg-[var(--bg)]/50 border border-[var(--border)]/80 rounded-2xl">
                           <div className="w-8 h-8 rounded-lg bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/10 shrink-0">
                             <Icon size={16} />
                           </div>
@@ -1439,7 +1439,7 @@ export default function ClinicalAssistantScreen() {
         </AnimatePresence>
         
         {/* Floating Interactive Input Composer Area */}
-        <div className="p-2 sm:p-4 border-t border-[var(--border)]/80 bg-[var(--surface)] shrink-0 z-10 shadow-lg">
+        <div className="p-3 sm:p-4 border-t border-[var(--border)]/80 bg-[var(--surface)] shrink-0 z-10 shadow-lg pb-[calc(0.75rem+env(safe-area-inset-bottom,0px))]">
           <div className="max-w-3xl mx-auto w-full">
           
           {/* Active Databases Config Dropdown Panel */}

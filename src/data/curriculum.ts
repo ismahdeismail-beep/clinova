@@ -1035,6 +1035,18 @@ export const EDUCATION_MODULES: EducationModule[] = [
     isIntegrated: false, 
     icon: 'FileText', 
     color: 'amber',
+    subModules: [
+      {
+        id: 'clinical-pharmacy-exam',
+        title: 'Clinical Pharmacy',
+        description: 'Full-length mock examinations modelled on real clinical-pharmacy past papers, covering all therapeutic areas.',
+        units: EXAM_PREP_UNITS.map((spec) => ({
+          id: spec.id,
+          title: spec.title,
+          description: `${spec.topics.length} topic areas · ${spec.structure.reduce((a, s) => a + s.marks, 0)} marks across ${spec.structure.length} sections`,
+        })),
+      },
+    ],
   },
 ];
 
@@ -1082,11 +1094,6 @@ export function getSubModuleUnits(moduleId: string, subModuleId: string): Educat
 
 // Static units for non-curriculum modules
 const NON_CURRICULUM_UNITS: Record<string, EducationModuleUnit[]> = {
-  exam_prep: EXAM_PREP_UNITS.map((spec) => ({
-    id: spec.id,
-    title: spec.title,
-    description: `${spec.topics.length} topic areas · ${spec.structure.reduce((a, s) => a + s.marks, 0)} marks across ${spec.structure.length} sections`,
-  })),
   online_books: [
     { id: 'ob-textbooks', title: 'Pharmacy Textbooks', description: 'Online access to standard pharmacy and pharmacology textbooks.' },
     { id: 'ob-guidelines', title: 'Clinical Guidelines', description: 'WHO, AHA, IDSA, and national therapeutic guidelines.' },

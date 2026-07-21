@@ -280,12 +280,15 @@ function ExamSubjectCard({ spec }: { spec: ExamUnitSpec }) {
 }
 
 export default function ExamPrepView({ subjectId }: { subjectId?: string }) {
-  const specs = subjectId ? EXAM_PREP_UNITS.filter((s) => s.id === subjectId) : EXAM_PREP_UNITS;
+  const isClinicalPharmacy = subjectId === 'clinical-pharmacy-exam';
+  const specs = !subjectId || isClinicalPharmacy ? EXAM_PREP_UNITS : EXAM_PREP_UNITS.filter((s) => s.id === subjectId);
   return (
     <div className="space-y-5">
       <div className="flex items-center gap-2">
         <Sparkles size={18} className="text-[var(--primary)]" />
-        <h2 className="text-lg font-bold text-[var(--text)]">Exam Prep</h2>
+        <h2 className="text-lg font-bold text-[var(--text)]">
+          {isClinicalPharmacy ? 'Clinical Pharmacy' : specs.length === 1 ? specs[0].title : 'Exam Prep'}
+        </h2>
       </div>
       <p className="text-sm text-[var(--text-muted)]">
         Practice papers modelled on the real clinical-pharmacy exam pattern. Each subject shows the section

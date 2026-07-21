@@ -42,6 +42,13 @@ export default function SettingsScreen() {
   )
   const [searchQuery, setSearchQuery] = useState("")
 
+  // Re-sync local state when userData changes from external source (login, Firestore sync)
+  useEffect(() => {
+    if (userData?.clinicalInterests) {
+      setClinicalInterests(userData.clinicalInterests)
+    }
+  }, [userData?.clinicalInterests])
+
   // Auto-save: propagate changes to Dashboard immediately when toggled
   useEffect(() => {
     const timer = setTimeout(() => {

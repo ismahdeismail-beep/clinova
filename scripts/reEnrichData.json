@@ -1,0 +1,282 @@
+{
+  "new-ess-001": {
+    "mechanism_of_action": "Capsid inhibitor: binds to HIV-1 capsid protein, disrupting nuclear import of viral DNA, integration, capsid assembly, and viral release. First-in-class capsid inhibitor with novel mechanism.",
+    "overdose": "No specific antidote. Management: supportive care. Very long half-life (10-12 weeks) means effects are prolonged.",
+    "clinical_pearls": ["First-in-class capsid inhibitor — unique mechanism targeting HIV capsid", "SC injection every 6 months after oral loading — best for adherence-challenged patients", "Active against multidrug-resistant HIV (MDR-HIV)", "Strong CYP3A4 inducers (rifampin, St John's Wort) contraindicated", "Requires 2-week oral loading (3 tablets daily) before first SC injection"],
+    "pharmacokinetics": "Oral bioavailability: 21%. SC bioavailability: 80-87%. t1/2: 10-12 weeks (SC). Protein binding: >99%. CYP3A4 metabolism. P-gp/BCRP substrate.",
+    "patient_counselling": "SC injection given every 6 months at clinic. Complete 2-week oral loading first. Avoid St John's Wort and rifampin."
+  },
+  "new-ess-005": {
+    "mechanism_of_action": "HIF-PHI (Hypoxia-Inducible Factor Prolyl Hydroxylase Inhibitor): inhibits HIF-PH enzymes, stabilizing HIF-alpha, stimulating endogenous erythropoietin production and iron mobilization.",
+    "overdose": "No specific antidote. Management: supportive care. Monitor hemoglobin and blood pressure.",
+    "clinical_pearls": ["Oral HIF-PHI — alternative to injectable ESAs for CKD anemia", "Stimulates endogenous EPO (lower levels than ESA therapy)", "Also improves iron mobilization — may reduce IV iron needs", "Hb target 10-12 g/dL — slow titration required", "Thromboembolic events risk similar to ESAs"],
+    "pharmacokinetics": "Oral bioavailability: 61%. t1/2: 11h. CYP2C8, UGT1A1/1A3 metabolism. Protein binding: 98%. Renal/fecal excretion.",
+    "patient_counselling": "Take with food. Monitor hemoglobin regularly. Report shortness of breath or chest pain."
+  },
+  "new-ess-006": {
+    "mechanism_of_action": "Terminase inhibitor: inhibits CMV DNA terminase complex (UL56 subunit), preventing viral DNA cleavage and capsid packaging. No cross-resistance with ganciclovir/foscarnet.",
+    "overdose": "No specific antidote. Management: supportive care.",
+    "clinical_pearls": ["First-in-class terminase inhibitor — novel mechanism vs ganciclovir", "CMV prophylaxis in HSCT recipients (PEARL trial)", "No significant myelosuppression — advantage over ganciclovir", "Cyclosporine requires letermovir dose reduction to 240mg", "Mycophenolate reduces letermovir levels — avoid combination"],
+    "pharmacokinetics": "Oral bioavailability: 94%. t1/2: 12h. CYP3A4/CYP2C19 metabolism. Protein binding: >98%. Renal (93%) and fecal excretion.",
+    "patient_counselling": "Take at same time daily. Dose adjustment with cyclosporine. Monitor CMV DNA PCR weekly."
+  },
+  "new-ess-007": {
+    "mechanism_of_action": "Cap-dependent endonuclease inhibitor: inhibits influenza RNA polymerase PA subunit, blocking cap-snatching required for viral mRNA synthesis. First-in-class, distinct from neuraminidase inhibitors.",
+    "overdose": "No specific antidote. Management: supportive care.",
+    "clinical_pearls": ["Single-dose treatment — superior convenience vs oseltamivir 5-day course", "Baloxavir-A resistance in ~10% during treatment (PA/I38X mutations)", "Also approved for post-exposure prophylaxis within 48h", "Weight-based dosing: 40mg (<80kg) or 80mg (>=80kg)", "No GI side effects like oseltamivir — better tolerated"],
+    "pharmacokinetics": "Active metabolite (baloxavir acid) t1/2: 79h. Hepatobiliary excretion. Minimal CYP metabolism.",
+    "patient_counselling": "Single oral dose, with or without food. Most effective within 48h of symptom onset."
+  },
+  "new-ess-008": {
+    "mechanism_of_action": "UL97 kinase inhibitor: inhibits CMV UL97 viral kinase, preventing viral DNA phosphorylation and nuclear egress. Active against ganciclovir-resistant CMV.",
+    "overdose": "No specific antidote. Management: supportive care.",
+    "clinical_pearls": ["Active against ganciclovir-resistant CMV — UL97 mutations", "Only oral option for refractory/resistant CMV in transplant", "Take on empty stomach — food reduces absorption significantly", "Cyclosporine increases maribavir levels — monitor closely", "CMV viremia clearance ~60% in refractory cases"],
+    "pharmacokinetics": "Oral bioavailability: variable. t1/2: 4h. CYP3A4 metabolism. Protein binding: 85-97%. Fecal excretion.",
+    "patient_counselling": "Take on empty stomach (1h before or 2h after food). Taste disturbance is common. Monitor CMV DNA PCR weekly."
+  },
+  "new-ess-009": {
+    "mechanism_of_action": "Triterpenoid antifungal (first-in-class): inhibits beta-(1,3)-D-glucan synthase (Fks1 subunit), disrupting fungal cell wall. Structurally distinct from echinocandins — retains activity against some echinocandin-resistant Candida.",
+    "overdose": "No specific antidote. Management: supportive care.",
+    "clinical_pearls": ["First-in-class triterpenoid — oral alternative to IV echinocandins", "Active against echinocandin-resistant Candida and C. auris", "CYP3A4 inducers reduce levels — avoid rifampin", "Dose adjustment for moderate hepatic impairment", "Also active against dermatophytes (Tinea)"],
+    "pharmacokinetics": "Oral bioavailability: 55%. t1/2: 18h. CYP3A4, UGT1A4 metabolism. Protein binding: >99%. Fecal excretion.",
+    "patient_counselling": "Take with food. CYP3A4 strong inducers contraindicated. Monitor LFTs."
+  },
+  "new-ess-010": {
+    "mechanism_of_action": "Gwt1 inhibitor (first-in-class): inhibits GPI anchor biosynthesis, disrupting mannoprotein trafficking to fungal cell wall. Novel target active against Candida auris and azole-resistant Aspergillus.",
+    "overdose": "No specific antidote. Under investigation.",
+    "clinical_pearls": ["First-in-class Gwt1 inhibitor — entirely novel antifungal mechanism", "Active against Candida auris and azole-resistant Aspergillus", "IV and oral formulations available", "Investigational — not yet FDA approved", "Broad spectrum: Candida, Aspergillus, rare molds"],
+    "pharmacokinetics": "IV prodrug converted to active manogepix. t1/2: 18-26h. Hepatic metabolism. Renal excretion.",
+    "patient_counselling": "Investigational agent — available through clinical trials or compassionate use."
+  },
+  "new-ess-011": {
+    "mechanism_of_action": "ARNI (Angiotensin Receptor-Neprilysin Inhibitor): Sacubitril inhibits neprilysin (increasing natriuretic peptides, bradykinin). Valsartan blocks AT1 receptors. Dual mechanism reduces cardiac remodeling and mortality in HFrEF.",
+    "overdose": "No specific antidote. Symptomatic hypotension: IV normal saline, vasopressors.",
+    "clinical_pearls": ["PARADIGM-HF: 20% mortality reduction vs enalapril in HFrEF", "36-hour washout from ACE inhibitors required (angioedema risk)", "Target dose: 97/103mg BID — start low in hypotensive patients", "Hyperkalemia risk — monitor potassium closely", "Higher angioedema risk than ACE inhibitors (1-2x)"],
+    "pharmacokinetics": "Sacubitril t1/2: 1.4h (active metabolite LBQ657: 11h). Valsartan t1/2: 6h. Protein binding: 97%. Dual elimination (renal/fecal).",
+    "patient_counselling": "Do not take with ACE inhibitors (36h gap). Monitor BP and report dizziness."
+  },
+  "new-ess-012": {
+    "mechanism_of_action": "Soluble guanylate cyclase (sGC) stimulator: directly stimulates sGC independent of NO, increasing cGMP production, causing vascular smooth muscle relaxation and reducing cardiac remodeling.",
+    "overdose": "No specific antidote. Management: symptomatic treatment of hypotension.",
+    "clinical_pearls": ["VICTORIA trial: reduced CV death/HF hospitalization in worsening HF", "Start 2.5mg daily, double every 2 weeks to target 10mg", "Must take with food — doubles absorption", "PDE5 inhibitors contraindicated — additive hypotension", "Avoid nitrates — severe hypotension risk"],
+    "pharmacokinetics": "Oral bioavailability: 45-50% (with food). t1/2: 30h. CYP3A4/CYP2C19 metabolism. Protein binding: 98%.",
+    "patient_counselling": "Take with food. Avoid PDE5 inhibitors and nitrates. Report dizziness or fainting."
+  },
+  "new-ess-013": {
+    "mechanism_of_action": "Cardiac myosin activator (first-in-class): binds cardiac myosin, increasing actin-myosin cross-bridge formation during systole. Enhances systolic function without increasing intracellular calcium — no arrhythmogenicity.",
+    "overdose": "No specific antidote. Management: supportive care.",
+    "clinical_pearls": ["First-in-class cardiac myosin activator — novel mechanism", "GALACTIC-HF: reduced HF events in HFrEF, greatest benefit in lowest EF", "Does NOT increase calcium — avoids arrhythmogenicity of inotropes", "Dose adjusted by weight and hemoglobin", "Specialist dosing — used in advanced HF centers"],
+    "pharmacokinetics": "t1/2: 17-22h. Protein binding: 95% (hemoglobin-dependent). Hepatic metabolism. Renal excretion (60%).",
+    "patient_counselling": "Specialist-initiated medication. Dose adjusted by weight and Hb level."
+  },
+  "new-ess-016": {
+    "mechanism_of_action": "Anti-SARS-CoV-2 monoclonal antibody: binds conserved epitope on spike protein RBD, preventing viral entry into host cells. Retains activity against most variants.",
+    "overdose": "No known overdose. Single-dose monoclonal antibody.",
+    "clinical_pearls": ["Binds conserved epitope — retains activity against Omicron variants", "Single IV infusion 500mg over 30 minutes", "For mild-moderate COVID-19 within 5 days of symptom onset", "Can be used as pre-exposure prophylaxis in immunocompromised", "Not a substitute for vaccination"],
+    "pharmacokinetics": "IV: t1/2 27 days. Catabolism: proteolytic degradation. No CYP metabolism.",
+    "patient_counselling": "Single IV infusion at healthcare facility. Report worsening symptoms after infusion."
+  },
+  "new-ess-018": {
+    "mechanism_of_action": "Nucleotide analogue prodrug: metabolized to GS-441524-triphosphate, which competes with ATP for incorporation into viral RNA by SARS-CoV-2 RdRp, causing chain termination.",
+    "overdose": "No specific antidote. Management: supportive care. Monitor hepatic and renal function.",
+    "clinical_pearls": ["ACTT-1: reduced recovery time in hospitalized COVID-19 (10 vs 15 days)", "Early treatment most effective — within 7 days of symptom onset", "Chloroquine/hydroxychloroquine antagonize remdesivir", "Dose adjust for eGFR <30 — not recommended (metabolite accumulation)", "IV only — requires 5-10 day course depending on setting"],
+    "pharmacokinetics": "IV prodrug. Active metabolite GS-441524: t1/2 27h. Protein binding: <30%. Renal excretion.",
+    "patient_counselling": "IV infusion daily. Monitor LFTs and renal function. Early treatment is most effective."
+  },
+  "new-ess-019": {
+    "mechanism_of_action": "PARP inhibitor: inhibits PARP1/2 DNA repair enzymes. In BRCA1/2-mutated cells, inability to repair via homologous recombination + PARP inhibition = synthetic lethality and cancer cell death.",
+    "overdose": "No specific antidote. Management: supportive care. Monitor CBC for myelosuppression.",
+    "clinical_pearls": ["Synthetic lethality concept — only effective in BRCA-mutant cancers", "Germline BRCA testing required before initiation", "Myelosuppression most common — monitor CBC monthly", "MDS/AML risk ~1-2% with long-term use", "Avoid grapefruit and Seville oranges (CYP3A4 inhibition)"],
+    "pharmacokinetics": "Oral bioavailability: 30-40% (increased with food). t1/2: 14h. CYP3A4 metabolism. Protein binding: 82%. Renal (44%) and fecal (42%).",
+    "patient_counselling": "Take with food. Avoid grapefruit. Report bruising, bleeding, or fever."
+  },
+  "new-ess-020": {
+    "mechanism_of_action": "Combination: Atezolizumab (anti-PD-L1) blocks PD-L1/PD-1, restoring T-cell anti-tumor immunity. Bevacizumab (anti-VEGF) inhibits tumor angiogenesis. Synergistic anti-tumor effect.",
+    "overdose": "No specific antidote. Management: supportive care for immune-related AEs or hemorrhage.",
+    "clinical_pearls": ["IMbrave150: first-line for unresectable HCC — improved OS vs sorafenib", "Screen for varices in cirrhotic patients (bevacizumab bleeding risk)", "Immune-related AEs: colitis, hepatitis, pneumonitis, endocrinopathies", "Hepatotoxicity monitoring more frequent in HCC with cirrhosis", "Not interchangeable with individual components"],
+    "pharmacokinetics": "Atezolizumab t1/2: 27 days. Bevacizumab t1/2: 20 days. Both catabolized by proteolysis. No CYP metabolism.",
+    "patient_counselling": "IV infusion every 3 weeks. Report any new symptoms promptly (immune-related AEs)."
+  },
+  "new-ess-022": {
+    "mechanism_of_action": "JAK1/JAK3 inhibitor: blocks JAK-STAT signaling from pro-inflammatory cytokines (IL-2, IL-4, IL-7, IL-15, IL-21, IFN-gamma), reducing inflammatory and immune activation.",
+    "overdose": "No specific antidote. Management: supportive care. Monitor CBC for cytopenias.",
+    "clinical_pearls": ["ORAL Surveillance: increased MACE and malignancy vs TNF inhibitors (FDA black box)", "Vaccinate before starting — especially Shingrix for herpes zoster", "Avoid in patients >65, smokers, CV risk factors per FDA guidance", "Herpes zoster reactivation common — pre-vaccinate ALL patients", "Also approved for UC, PsA, JIA, and RA"],
+    "pharmacokinetics": "Oral bioavailability: 74%. t1/2: 3h. CYP3A4/CYP2C19 metabolism. Protein binding: 41%. Renal (30%) and fecal (70%).",
+    "patient_counselling": "Report any signs of infection immediately. Avoid live vaccines during treatment."
+  },
+  "new-ess-023": {
+    "mechanism_of_action": "Selective JAK1 inhibitor: more selective JAK1 inhibition than tofacitinib (JAK1/JAK3). Blocks IL-6, IL-7, IFN-gamma, IL-21 signaling via JAK1-STAT pathway.",
+    "overdose": "No specific antidote. Management: supportive care.",
+    "clinical_pearls": ["SELECT: superior to adalimumab in RA (ACR50: 45% vs 29%)", "FDA black box: MACE/malignancy risk (class effect for JAK inhibitors)", "Approved for RA, PsA, AD, UC, Crohn's, AS — broadest label", "Once-daily for RA/UC/Crohn's; twice-daily for AD", "CYP3A4 strong inducers reduce efficacy — avoid"],
+    "pharmacokinetics": "Oral bioavailability: 75%. t1/2: 8-14h. CYP3A4 metabolism. Protein binding: 52%. Renal (24%) and fecal (66%).",
+    "patient_counselling": "Take as directed. Report signs of infection. Avoid live vaccines."
+  },
+  "new-ess-024": {
+    "mechanism_of_action": "JAK1/JAK2 inhibitor: selectively inhibits JAK1/JAK2, blocking IL-6, IL-12, IL-23, IFN-gamma, and erythropoietin signaling. Also reduces COVID-19 inflammation.",
+    "overdose": "No specific antidote. Management: supportive care.",
+    "clinical_pearls": ["FDA black box: MACE and malignancy risk (class effect)", "Also approved for COVID-19 hospitalization (reduces mortality with dexamethasone)", "First oral treatment for alopecia areata", "OAT3 inhibitor interaction increases baricitinib exposure", "Renal elimination 75% — dose adjust for renal impairment"],
+    "pharmacokinetics": "Oral bioavailability: 75%. t1/2: 12h. Minimal CYP metabolism. Renal elimination (75%). Protein binding: 42%.",
+    "patient_counselling": "Take as directed. Monitor CBC. Report signs of infection."
+  },
+  "new-ess-025": {
+    "mechanism_of_action": "JAK1/JAK2 inhibitor: preferentially inhibits JAK1/JAK2, blocking myeloproliferative cytokine signaling (thrombopoietin, erythropoietin, G-CSF). Reduces splenomegaly and constitutional symptoms.",
+    "overdose": "No specific antidote. DO NOT STOP ABRUPTLY — cytokine rebound syndrome (fever, ARDS, hemodynamic instability).",
+    "clinical_pearls": ["First-line for myelofibrosis — COMFORT trials", "DO NOT STOP ABRUPTLY — taper over 1-2 weeks minimum", "Cytokine rebound can be fatal — gradual taper mandatory", "Also approved for polycythemia vera and GVHD", "Monitor CBC — dose-limiting thrombocytopenia and anemia"],
+    "pharmacokinetics": "Oral bioavailability: 55-70%. t1/2: 3h. CYP3A4 metabolism. Protein binding: 97%. Renal (70%) and fecal (20%).",
+    "patient_counselling": "NEVER stop suddenly. Always taper under medical supervision. Monitor CBC regularly."
+  },
+  "new-ess-027": {
+    "mechanism_of_action": "Anti-IFN-gamma monoclonal antibody: neutralizes interferon-gamma, a key cytokine driving hyperinflammation in primary hemophagocytic lymphohistiocytosis (HLH). Reduces macrophage activation.",
+    "overdose": "No known overdose data. Single-dose monoclonal antibody.",
+    "clinical_pearls": ["First-in-class anti-IFN-gamma for primary HLH", "Only approved treatment for refractory/relapsing primary HLH", "10mg/kg IV — weight-based dosing", "Monitor CBC, ferritin, triglycerides, fibrinogen", "Concomitant dexamethasone often required"],
+    "pharmacokinetics": "IV: t1/2 31 days. Catabolism: proteolytic degradation. No CYP metabolism.",
+    "patient_counselling": "IV infusion at healthcare facility. Report any new symptoms promptly."
+  },
+  "new-ess-028": {
+    "mechanism_of_action": "Anti-P-selectin monoclonal antibody: binds P-selectin on activated endothelial/platelets, blocking sickle RBC adhesion to endothelium and reducing vaso-occlusive crises.",
+    "overdose": "No known overdose data.",
+    "clinical_pearls": ["First biologic for VOC prevention in sickle cell disease", "SUSTAIN: 45% reduction in VOC rate vs placebo", "14mg/kg IV every 4 weeks after loading", "Does not affect Hb levels — only reduces VOC frequency", "First-line biologic for SCD with frequent VOCs despite hydroxyurea"],
+    "pharmacokinetics": "IV: t1/2 33 days. Catabolism: proteolytic degradation. No CYP metabolism.",
+    "patient_counselling": "IV infusion every 4 weeks. Monitor for infection. Report pain episodes."
+  },
+  "new-ess-029": {
+    "mechanism_of_action": "HbS polymerization inhibitor: increases oxygen affinity of HbS, stabilizing the R-state (oxy) conformation and preventing polymerization under deoxygenated conditions. Reduces sickling and hemolysis.",
+    "overdose": "No specific antidote. May cause methemoglobinemia. Monitor methemoglobin levels.",
+    "clinical_pearls": ["First-in-class HbS polymerization inhibitor", "HOPE: increased Hb and reduced hemolysis in SCD", "15mg/kg PO daily with food", "May interfere with HbA1c — use fructosamine for glycemic monitoring", "Can cause methemoglobinemia — monitor levels"],
+    "pharmacokinetics": "t1/2: 27h. CYP3A4 metabolism. Protein binding: 99%. Fecal excretion.",
+    "patient_counselling": "Take with food. Report blue/gray discoloration of lips or nails (methemoglobinemia)."
+  },
+  "new-ess-030": {
+    "mechanism_of_action": "Anti-alpha-4 integrin monoclonal antibody: blocks lymphocyte migration across blood-brain barrier by preventing alpha-4 integrin/VCAM-1 interaction. Reduces CNS inflammation in MS.",
+    "overdose": "No known overdose data.",
+    "clinical_pearls": ["AFFIRM: 68% reduction in MS relapse rate vs placebo", "PML risk — JCV antibody testing mandatory before initiation", "JCV index >1.5: highest PML risk — carefully weigh risk/benefit", "Withdrawal can cause severe MS rebound — transition carefully", "Monthly IV infusion after loading doses"],
+    "pharmacokinetics": "IV: t1/2 11 days. Catabolism: proteolytic degradation. No CYP metabolism.",
+    "patient_counselling": "Monthly IV infusion. JCV antibody testing required. Report new neurological symptoms."
+  },
+  "new-ess-031": {
+    "mechanism_of_action": "Anti-CD20 monoclonal antibody (fully human): binds CD20 on B lymphocytes, depleting B cells via CDC and ADCC. Fully human antibody — lower immunogenicity than rituximab (chimeric).",
+    "overdose": "No known overdose data.",
+    "clinical_pearls": ["Fully human anti-CD20 — lower immunogenicity than rituximab", "SC self-injection after loading — at-home maintenance", "ASCEND: reduced MS relapses vs teriflunomide", "JCV antibody monitoring still required", "Pre-medicate with antihistamines and corticosteroids"],
+    "pharmacokinetics": "SC: t1/2 16 days. Catabolism: proteolytic degradation. No CYP metabolism.",
+    "patient_counselling": "SC injection at home after loading doses. Pre-medicate before injections."
+  },
+  "new-ess-032": {
+    "mechanism_of_action": "Anti-CD19 monoclonal antibody: broader B-cell targeting than anti-CD20 (targets plasmablasts too). Depletes B cells via ADCC. CD19 expressed earlier in B-cell development.",
+    "overdose": "No known overdose data.",
+    "clinical_pearls": ["Anti-CD19 — broader B-cell depletion than anti-CD20", "N-MOmentum: reduced NMOSD attacks vs placebo", "First approved therapy specifically for NMOSD", "300mg IV on days 1 and 15, then every 6 months", "Pre-medicate with corticosteroids and antihistamines"],
+    "pharmacokinetics": "IV: t1/2 18 days. Catabolism: proteolytic degradation. No CYP metabolism.",
+    "patient_counselling": "IV infusion every 6 months after loading. Report any new symptoms."
+  },
+  "new-ess-033": {
+    "mechanism_of_action": "Glycoengineered anti-CD20 monoclonal antibody: afucosylation of Fc region enhances FcγRIIIa binding, resulting in superior ADCC compared to standard anti-CD20 antibodies.",
+    "overdose": "No known overdose data.",
+    "clinical_pearls": ["Glycoengineered — enhanced ADCC via afucosylation", "ULTIMATE I/II: superior to teriflunomide in RRMS", "450mg IV every 6 months after two initial doses", "One of the most potent anti-CD20 agents available", "JCV antibody monitoring required"],
+    "pharmacokinetics": "IV: t1/2 12-14 days. Catabolism: proteolytic degradation. No CYP metabolism.",
+    "patient_counselling": "IV infusion every 6 months. Pre-medicate. Monitor for infections."
+  },
+  "new-ess-034": {
+    "mechanism_of_action": "Long-acting anti-C5 complement inhibitor: cleaves C5, preventing C5a (inflammation) and C5b-9 (MAC) formation. pH-dependent FcRn recycling gives 4x longer half-life than eculizumab.",
+    "overdose": "No known overdose data.",
+    "clinical_pearls": ["4x longer half-life than eculizumab — IV every 8 weeks (vs every 2 weeks)", "PNH: non-inferior to eculizumab with less frequent dosing", "Meningococcal vaccination required at least 2 weeks before initiation", "Increases Neisseria meningitidis infection risk — prophylactic antibiotics recommended", "Also approved for atypical hemolytic uremic syndrome (aHUS)"],
+    "pharmacokinetics": "IV: t1/2 50 days (vs eculizumab 11 days). FcRn recycling prolongs half-life.",
+    "patient_counselling": "IV every 8 weeks. Keep meningococcal vaccination current. Report fever or signs of infection."
+  },
+  "new-ess-035": {
+    "mechanism_of_action": "FcRn antagonist: binds FcRn, blocking IgG recycling back to circulation. Accelerates catabolism of all IgG subclasses, reducing pathogenic autoantibodies (including AChR antibodies in MG).",
+    "overdose": "No known overdose data.",
+    "clinical_pearls": ["First-in-class FcRn antagonist", "ADVANESS: 68% of AChR-Ab+ MG patients improved vs 30% placebo", "Reduces total IgG by ~70% — not selective for pathogenic IgG", "Monitor for infections (IgG-related immune deficiency)", "SC formulation available for at-home maintenance"],
+    "pharmacokinetics": "IV: t1/2 80h. SC: t1/2 80h. Catabolism: normal IgG pathway.",
+    "patient_counselling": "IV or SC dosing. Report signs of infection. Monitor IgG levels."
+  },
+  "new-ess-036": {
+    "mechanism_of_action": "Anti-FcRn monoclonal antibody: blocks FcRn-mediated IgG recycling, accelerating pathogenic IgG autoantibody catabolism. Different molecular structure from efgartigimod (mAb vs Fc fragment).",
+    "overdose": "No known overdose data.",
+    "clinical_pearls": ["Anti-FcRn antibody — alternative to efgartigimod", "MYGARD: reduced IgG and improved MG-ADL in generalized MG", "SC weekly dosing (weight-based) — more convenient", "Reduces total IgG — monitor for infections", "Also studied in immune thrombocytopenia (ITP)"],
+    "pharmacokinetics": "SC: t1/2 8-13 days. Catabolism: proteolytic degradation. No CYP metabolism.",
+    "patient_counselling": "SC weekly injection. Report signs of infection."
+  },
+  "new-ess-037": {
+    "mechanism_of_action": "Anti-IL-6 receptor monoclonal antibody: binds soluble and membrane-bound IL-6 receptors, inhibiting IL-6-mediated B-cell differentiation and inflammatory signaling in NMOSD.",
+    "overdose": "No known overdose data.",
+    "clinical_pearls": ["Anti-IL-6 receptor — targets key cytokine in NMOSD pathogenesis", "SAkuraStar/SAkuraBento: reduced NMOSD relapses vs placebo", "SC injection every 4 weeks after loading", "IL-6 inhibitors increase infection risk — screen for TB", "Does not require pre-medication"],
+    "pharmacokinetics": "SC: t1/2 14 days. Catabolism: proteolytic degradation. No CYP metabolism.",
+    "patient_counselling": "SC injection every 4 weeks. Report signs of infection."
+  },
+  "new-ess-038": {
+    "mechanism_of_action": "Anti-CD123 monoclonal antibody: targets CD123 (IL-3 receptor alpha) on blastic plasmacytoid dendritic cell neoplasm (BPDCN) cells, engaging immune effector mechanisms.",
+    "overdose": "No specific antidote. Management: supportive care.",
+    "clinical_pearls": ["Anti-CD123 for BPDCN — rare aggressive hematologic malignancy", "CD123 highly expressed on BPDCN cells", "Capillary leak syndrome risk with anti-CD123 agents", "Investigational — clinical trials ongoing"],
+    "pharmacokinetics": "IV: variable t1/2. Catabolism: proteolytic degradation.",
+    "patient_counselling": "Investigational agent. Available through clinical trials."
+  },
+  "new-ess-039": {
+    "mechanism_of_action": "Anti-IGF-1R monoclonal antibody: blocks insulin-like growth factor-1 receptor signaling in orbital fibroblasts, reducing glycosaminoglycan production and inflammation in thyroid eye disease.",
+    "overdose": "No known overdose data.",
+    "clinical_pearls": ["First-in-class anti-IGF-1R for thyroid eye disease (TED)", "OPTIC: 83% had proptosis reduction vs 10% placebo", "70% reduction in diplopia scores — first effective TED therapy", "IV every 3 weeks x 8 infusions", "Monitor blood glucose — can cause hyperglycemia"],
+    "pharmacokinetics": "IV: t1/2 24 days. Catabolism: proteolytic degradation. No CYP metabolism.",
+    "patient_counselling": "IV infusion every 3 weeks. Monitor blood glucose. Report vision changes."
+  },
+  "new-ess-041": {
+    "mechanism_of_action": "Anti-BLyS/BAFF monoclonal antibody: binds soluble BLyS, preventing B-cell survival and differentiation. Reduces autoreactive B cells and autoantibody production in SLE.",
+    "overdose": "No known overdose data.",
+    "clinical_pearls": ["First biologic approved for SLE", "BLISS-52/76: reduced flare rate and steroid-sparing", "IV monthly or SC weekly — SC allows self-administration", "Do not use with other biologics — increased infection risk", "Also approved for lupus nephritis"],
+    "pharmacokinetics": "IV: t1/2 19 days. SC: t1/2 20 days. Catabolism: proteolytic degradation.",
+    "patient_counselling": "IV monthly or SC weekly at home. Pre-medicate for IV infusions."
+  },
+  "new-ess-042": {
+    "mechanism_of_action": "Anti-IFNAR1 monoclonal antibody: binds subunit 1 of the type I interferon receptor, blocking signaling from ALL type I interferons (IFN-alpha, -beta, -omega, -kappa). Reduces interferon-driven inflammation.",
+    "overdose": "No known overdose data.",
+    "clinical_pearls": ["First-in-class anti-type I IFN receptor for SLE", "TULIP: SRI-4 response 48% vs 31% placebo", "Targets upstream — blocks ALL type I interferons", "Higher efficacy in patients with high interferon gene signature", "SC every 4 weeks after loading"],
+    "pharmacokinetics": "IV: t1/2 26 days. SC: t1/2 26 days. Catabolism: proteolytic degradation.",
+    "patient_counselling": "SC injection every 4 weeks. Report signs of infection."
+  },
+  "new-ess-044": {
+    "mechanism_of_action": "Anti-FcRn monoclonal antibody: blocks FcRn-mediated IgG transport across placenta, reducing fetal exposure to maternal anti-Rh IgG in hemolytic disease of fetus/newborn (HDFN).",
+    "overdose": "No known overdose data.",
+    "clinical_pearls": ["Anti-FcRn for hemolytic disease of fetus/newborn (HDFN)", "REDUX-HDFN: reduced need for fetal transfusions", "Targets maternal IgG transport across placenta", "Investigational — breakthrough therapy designation", "Also studied in MG, ITP, other IgG-mediated diseases"],
+    "pharmacokinetics": "IV: variable t1/2. Catabolism: proteolytic degradation.",
+    "patient_counselling": "Investigational agent for HDFN. Available through clinical trials."
+  },
+  "new-ess-045": {
+    "mechanism_of_action": "Anti-sclerostin monoclonal antibody: blocks sclerostin (osteocyte-derived Wnt inhibitor), stimulating osteoblast bone formation AND reducing osteoclast resorption. Unique dual anabolic + antiresorptive mechanism.",
+    "overdose": "No known overdose data.",
+    "clinical_pearls": ["Dual action: stimulates bone formation AND reduces resorption", "FRAME/ARCH: superior fracture reduction vs alendronate and denosumab", "12-month anabolic window ONLY — then transition to antiresorptive", "Contraindicated: MI or stroke within past 1 year", "CV safety signal — monitor cardiovascular risk"],
+    "pharmacokinetics": "SC: t1/2 13 days. Catabolism: proteolytic degradation. No CYP metabolism.",
+    "patient_counselling": "SC injection monthly x 12 months. Then transition to bisphosphonate/denosumab. Calcium + vitamin D required."
+  },
+  "new-ess-046": {
+    "mechanism_of_action": "Anti-RANKL monoclonal antibody: binds RANKL, preventing RANKL/RANK interaction on osteoclasts. Inhibits osteoclast formation, function, and survival — potently reducing bone resorption.",
+    "overdose": "No known overdose data.",
+    "clinical_pearls": ["Most potent antiresorptive agent available", "DO NOT STOP without bridging — rebound vertebral fractures within 7-12 months", "Must transition to bisphosphonate when discontinuing", "Hypocalcemia risk — ensure adequate calcium/vitamin D before starting", "ONJ risk with dental procedures — complete dental work first"],
+    "pharmacokinetics": "SC: t1/2 26 days. Catabolism: proteolytic degradation. No CYP metabolism.",
+    "patient_counselling": "SC injection every 6 months. Never stop without bridging to a bisphosphonate. Calcium + vitamin D essential."
+  },
+  "new-ess-047": {
+    "mechanism_of_action": "Selective beta-3 adrenergic agonist: stimulates beta-3 receptors on detrusor smooth muscle, promoting bladder relaxation during filling. Increases functional bladder capacity without anticholinergic side effects.",
+    "overdose": "Symptoms: hypertension, tachycardia, palpitations. Management: cardioselective beta-blocker.",
+    "clinical_pearls": ["First oral beta-3 agonist for OAB — alternative to antimuscarinics", "No dry mouth, constipation, or cognitive effects (anticholinergic side effects)", "CYP3A4/CYP2D6 inhibitors: reduce dose to 25mg", "Monitor BP — can cause hypertension at 50mg", "Combination with solifenacin for refractory OAB"],
+    "pharmacokinetics": "Oral bioavailability: 35%. t1/2: 7-11h. CYP3A4/CYP2D6 metabolism. Protein binding: 71%. Renal (55%) and fecal (42%).",
+    "patient_counselling": "Take at same time daily. Report increased BP or palpitations."
+  },
+  "new-ess-048": {
+    "mechanism_of_action": "AAV2 gene therapy: delivers functional RPE65 gene to retinal pigment epithelium via adeno-associated virus serotype 2 vector. Restores RPE65 protein, enabling visual cycle and photoreceptor function.",
+    "overdose": "Not applicable — single-dose gene therapy.",
+    "clinical_pearls": ["First FDA-approved gene therapy for inherited retinal dystrophy", "Luxturna: improves functional vision in RPE65-mutated LCA", "Single subretinal injection per eye (separate procedures)", "Steroid eye drops for immunosuppression post-procedure", "Do not rub eyes post-procedure — retinal detachment risk"],
+    "pharmacokinetics": "Subretinal: local retinal transduction. No systemic absorption. AAV2 vector episomal — does not integrate.",
+    "patient_counselling": "Single injection per eye. Avoid rubbing eyes. Use steroid eye drops as prescribed."
+  },
+  "new-ess-049": {
+    "mechanism_of_action": "Antisense oligonucleotide: binds SMN2 pre-mRNA intron 7, modifying splicing to produce full-length functional SMN protein. Compensates for SMN1 gene deletion/mutation in SMA.",
+    "overdose": "No specific antidote. Management: supportive care.",
+    "clinical_pearls": ["ENDEAR: 51% achieved motor milestones vs 0% sham in SMA Type 1", "Requires intrathecal injection — lumbar puncture", "Loading: 4 doses over 63 days, then every 4 months", "Monitor platelets and renal function — thrombocytopenia risk", "First disease-modifying therapy for SMA (approved 2016)"],
+    "pharmacokinetics": "Intrathecal: t1/2 13-14 days in CSF. Minimal systemic absorption. Nuclease metabolism.",
+    "patient_counselling": "Intrathecal injection every 4 months. Monitor platelets. Report bleeding or bruising."
+  },
+  "new-ess-050": {
+    "mechanism_of_action": "Oral SMN2 splicing modifier: distributes throughout CNS and peripheral tissues, modifying SMN2 pre-mRNA splicing to increase full-length SMN protein. Unlike nusinersen (intrathecal), orally bioavailable.",
+    "overdose": "No specific antidote. Management: supportive care.",
+    "clinical_pearls": ["First ORAL treatment for SMA — no lumbar puncture needed", "FIREFISH/SUNFISH: improved motor function in SMA Types 1-3", "Weight-based dosing: 0.2mg/kg daily", "Separate from multivalent cations (calcium, iron, zinc) by 4 hours", "Major QoL advantage over intrathecal nusinersen"],
+    "pharmacokinetics": "t1/2: 4-7h. OAT3 substrate. Minimal CYP metabolism. Renal excretion.",
+    "patient_counselling": "Take daily oral solution. Separate from calcium/iron/zinc supplements by 4 hours."
+  }
+}

@@ -119,8 +119,10 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const checkAndNotify = () => {
+      // East Africa Time (UTC+3)
       const now = new Date()
-      if (now.getHours() !== 8 || now.getMinutes() !== 0) return
+      const eatNow = new Date(now.getTime() + (now.getTimezoneOffset() + 180) * 60000)
+      if (eatNow.getHours() !== 8 || eatNow.getMinutes() !== 0) return
 
       const lastNotified = localStorage.getItem('clinova_dotd_date')
       if (lastNotified === now.toDateString()) return

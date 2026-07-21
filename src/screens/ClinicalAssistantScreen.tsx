@@ -1317,7 +1317,7 @@ export default function ClinicalAssistantScreen() {
 {/* Bubble Content */}
                   {!msg.isThinking && (
                     <div className="flex items-start gap-2.5 max-w-full group/bubble">
-                      <div className={`rounded-3xl px-5 py-4 shadow-sm text-base leading-relaxed max-w-full overflow-x-auto scrollbar-thin ${
+                      <div className={`rounded-2xl px-4 py-3 shadow-sm text-sm leading-relaxed max-w-full break-words ${
                         isUser 
                           ? 'bg-[var(--primary)] text-[var(--primary-foreground)] rounded-tr-none shadow-md font-medium' 
                           : 'bg-[var(--surface)] border border-[var(--border)] border-l-2 border-l-[var(--primary)]/30 text-[var(--text)] rounded-tl-none shadow-xs'
@@ -1357,43 +1357,34 @@ export default function ClinicalAssistantScreen() {
 
                   {/* Verification Citations Widget */}
                   {!msg.isThinking && msg.role === 'assistant' && msg.citations && msg.citations.length > 0 && (
-                    <div className="w-full bg-[var(--surface)]/40 border border-[var(--border)] rounded-2xl p-4 text-xs mt-1 animate-in fade-in duration-300">
-                      <div className="flex items-center justify-between mb-3 border-b border-[var(--border)]/80 pb-2.5 flex-wrap gap-2">
-                        <div className="flex items-center gap-1.5 text-[var(--text)] font-bold">
-                          <CheckCircle2 size={14} className="text-[var(--success)] shrink-0" />
-                          <span>Clinical Evidence Synthesized</span>
+                    <div className="w-full bg-[var(--surface)]/40 border border-[var(--border)] rounded-xl p-3 text-[11px] mt-1 animate-in fade-in duration-300">
+                      <div className="flex items-center justify-between mb-2 border-b border-[var(--border)]/60 pb-1.5 flex-wrap gap-1">
+                        <div className="flex items-center gap-1.5 text-[var(--text)] font-bold text-[10px]">
+                          <CheckCircle2 size={12} className="text-[var(--success)] shrink-0" />
+                          <span>Evidence</span>
                         </div>
                         {msg.confidence && (
-                          <div className="flex items-center gap-1.5 font-bold">
-                            <span className="text-[var(--text-muted)]">Confidence:</span>
-                            <span className="bg-[var(--success)]/10 text-[var(--success)] px-2.5 py-0.5 rounded-full border border-emerald-500/20 font-mono tracking-tight text-[11px]">
-                              {msg.confidence}%
-                            </span>
-                          </div>
+                          <span className="text-[10px] font-bold text-[var(--success)]">{msg.confidence}%</span>
                         )}
                       </div>
                       
-                      <div className="space-y-2">
-                        <span className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-bold block">Sources Cited:</span>
-                        <ul className="space-y-2">
-                          {msg.citations.map((cite, i) => (
-                            <li key={i} className="flex items-start gap-2 text-[var(--text)]">
-                              <span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] mt-1.5 shrink-0" />
-                              <span className="leading-normal text-xs text-[var(--text)]">
-                                <span className="font-bold text-[var(--text)]">{cite.source}</span>
-                                {cite.year && <span className="text-[var(--text-muted)]"> ({cite.year})</span>}
-                                <span className="text-[var(--text-muted)]"> — {cite.document}</span>
-                              </span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                      <ul className="space-y-1">
+                        {msg.citations.map((cite, i) => (
+                          <li key={i} className="flex items-start gap-1.5 text-[var(--text)]">
+                            <span className="w-1 h-1 rounded-full bg-[var(--primary)] mt-1.5 shrink-0" />
+                            <span className="leading-normal text-[11px] text-[var(--text)]">
+                              <span className="font-bold">{cite.source}</span>
+                              {cite.year && <span className="text-[var(--text-muted)]"> ({cite.year})</span>}
+                              <span className="text-[var(--text-muted)]"> — {cite.document}</span>
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
                       
                       {msg.routedTo && (
-                        <div className="mt-3 pt-3 border-t border-[var(--border)]/80 flex flex-wrap items-center gap-2">
-                          <span className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-bold">Routing:</span>
+                        <div className="mt-2 pt-2 border-t border-[var(--border)]/60 flex flex-wrap items-center gap-1">
                           {msg.routedTo.map((route, i) => (
-                            <span key={i} className="px-2 py-0.5 bg-[var(--bg)] border border-[var(--border)] rounded-lg text-[10px] font-bold text-[var(--primary)]">
+                            <span key={i} className="px-1.5 py-0.5 bg-[var(--bg)] border border-[var(--border)] rounded text-[9px] font-bold text-[var(--primary)]">
                               {route}
                             </span>
                           ))}

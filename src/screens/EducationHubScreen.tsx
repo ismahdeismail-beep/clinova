@@ -20,9 +20,9 @@ import { AIContentService } from '../services/aiContent.service';
 import exportService from '../services/export.service';
 import CurriculumGraph from '../components/CurriculumGraph';
 import ExamPrepView from '../components/ExamPrepView';
-import { getResourcesForUnit } from '../data/unitToLibraryMapping';
+import { getResourcesForUnit, getResourcesForModule } from '../data/unitToLibraryMapping';
 import { getStaticContent } from '../data/unitStaticContent';
-import { LIBRARY, type LibraryResource } from '../data/onlineLibraryData';
+import { type DigitalLibraryResource } from '../data/digitalLibraryData';
 import { type DiseaseNote } from '../data/diseaseNotes';
 import { DiseaseNoteService } from '../services/diseaseNote.service';
 
@@ -1086,7 +1086,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
 {activeTab === 'overview' && <WorkspaceOverview unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
           {activeTab === 'disease-notes' && <DiseaseNotesView unit={unit} />}
           {activeTab === 'tutor' && <WorkspaceTutor unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
-          {activeTab === 'resources' && <WorkspaceResources unit={unit} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
+          {activeTab === 'resources' && <WorkspaceResources unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
           {activeTab === 'flashcards' && <WorkspaceFlashcards unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
           {activeTab === 'mcqs' && <WorkspaceQuizzes unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
           {activeTab === 'exam-prep' && <ExamPrepView />}
@@ -2068,6 +2068,41 @@ function CriticalAlert({ children, title = 'Critical Clinical Point' }: { childr
   )
 }
 
+/** Highlight common medical/pharmacy terms with colored badges for memory retention */
+function HighlightTerms({ text }: { text: string }) {
+  // Common drug names (add more as needed — this is a growing list)
+  const drugPattern = /\b(Amoxicillin|Paracetamol|Metformin|Atorvastatin|Omeprazole|Ceftriaxone|Metronidazole|Ciprofloxacin|Aspirin|Ibuprofen|Warfarin|Enoxaparin|Vancomycin|Gentamicin|Insulin|Furosemide|Spironolactone|Lisinopril|Enalapril|Losartan|Amlodipine|Simvastatin|Prednisolone|Dexamethasone|Salbutamol|Ipratropium|Morphine|Tramadol|Diazepam|Lorazepam|Carbamazepine|Valproate|Phenytoin|Sertraline|Fluoxetine|Haloperidol|Risperidone|Clozapine)\b/gi
+  // Dosage patterns (e.g., "5 mg", "10 mg/kg")
+  const dosagePattern = /\b(\d+(?:\.\d+)?\s*(?:mg|g|mcg|mL|IU|mg\/kg|g\/L|mmol\/L|mEq|mg\/dL))\b/gi
+  // Warning terms
+  const warningPattern = /\b(Contraindicated|Caution|Avoid|Do\s*not\s*use|Risk\s*of|Monitor|Warning|Precaution|Black\s*Box|Absolute\s*contraindication)\b/gi
+  // Numbers with clinical significance
+  const labPattern = /\b(\d{3,4}\s*(?:mg\/dL|mmHg|mEq\/L|ng\/mL|mcg\/mL))\b/gi
+
+  const parts = text.split(/(\b(?:Amoxicillin|Paracetamol|Metformin|Atorvastatin|Omeprazole|Ceftriaxone|Metronidazole|Ciprofloxacin|Aspirin|Ibuprofen|Warfarin|Enoxaparin|Vancomycin|Gentamicin|Insulin|Furosemide|Spironolactone|Lisinopril|Enalapril|Losartan|Amlodipine|Simvastatin|Prednisolone|Dexamethasone|Salbutamol|Ipratropium|Morphine|Tramadol|Diazepam|Lorazepam|Carbamazepine|Valproate|Phenytoin|Sertraline|Fluoxetine|Haloperidol|Risperidone|Clozapine)\b|\b\d+(?:\.\d+)?\s*(?:mg|g|mcg|mL|IU|mg\/kg|g\/L|mmol\/L|mEq|mg\/dL)\b|\b(?:Contraindicated|Caution|Avoid|Do\s*not\s*use|Risk\s*of|Monitor|Warning|Precaution|Black\s*Box|Absolute\s*contraindication)\b|\b\d{3,4}\s*(?:mg\/dL|mmHg|mEq\/L|ng\/mL|mcg\/mL)\b)/gi)
+
+  return (
+    <>
+      {parts.map((part, i) => {
+        if (!part) return null
+        if (drugPattern.test(part)) {
+          return <span key={i} className="inline-block px-1 py-0.5 rounded text-xs font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 mx-0.5">{part}</span>
+        }
+        if (dosagePattern.test(part)) {
+          return <span key={i} className="inline-block px-1 py-0.5 rounded text-xs font-bold font-mono bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20 mx-0.5">{part}</span>
+        }
+        if (warningPattern.test(part)) {
+          return <span key={i} className="inline-block px-1 py-0.5 rounded text-xs font-bold bg-red-500/10 text-red-600 dark:text-red-400 border border-red-500/20 mx-0.5">{part}</span>
+        }
+        if (labPattern.test(part)) {
+          return <span key={i} className="inline-block px-1 py-0.5 rounded text-xs font-bold font-mono bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 mx-0.5">{part}</span>
+        }
+        return <React.Fragment key={i}>{part}</React.Fragment>
+      })}
+    </>
+  )
+}
+
 function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: { note: DiseaseNote; onBack: () => void; hasPrev?: boolean; hasNext?: boolean; onPrev?: () => void; onNext?: () => void }) {
   return (
     <div className="w-full space-y-5 sm:space-y-7 py-2">
@@ -2108,7 +2143,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
           </div>
           {note.overview && (
             <div className="bg-gradient-to-br from-blue-500/15 via-blue-500/5 to-transparent border border-blue-500/25 rounded-2xl p-5 shadow-sm">
-              <p className="text-sm text-[var(--text)] leading-relaxed font-medium">{note.overview}</p>
+              <p className="text-sm text-[var(--text)] leading-relaxed font-medium"><HighlightTerms text={note.overview} /></p>
             </div>
           )}
         </div>
@@ -2130,14 +2165,14 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       {/* Â§2 Definition */}
       {note.definition && (
         <Section num="2" title="Definition">
-          <p className="text-sm text-[var(--text)] leading-relaxed">{note.definition}</p>
+          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.definition} /></p>
         </Section>
       )}
 
       {/* Â§3 Epidemiology */}
       {note.epidemiology && (
         <Section num="3" title="Epidemiology">
-          <p className="text-sm text-[var(--text)] leading-relaxed">{note.epidemiology}</p>
+          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.epidemiology} /></p>
         </Section>
       )}
 
@@ -2171,7 +2206,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       {/* Â§6 Pathophysiology */}
       {note.pathophysiology && (
         <Section num="6" title="Pathophysiology & Mechanism">
-          <p className="text-sm text-[var(--text)] leading-relaxed">{note.pathophysiology}</p>
+          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.pathophysiology} /></p>
         </Section>
       )}
 
@@ -2217,8 +2252,8 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
             {note.differential.map((d, i) => (
               <div key={i} className="border border-[var(--border)]/40 rounded-xl p-3">
                 <p className="text-sm font-bold text-[var(--text)]">{d.condition}</p>
-                {d.similarities && <p className="text-xs text-[var(--text)] mt-1"><span className="font-semibold text-[var(--text-muted)]">Similarities: </span>{d.similarities}</p>}
-                {d.differences && <p className="text-xs text-[var(--text)] mt-1"><span className="font-semibold text-[var(--text-muted)]">Key differences: </span>{d.differences}</p>}
+                {d.similarities && <p className="text-xs text-[var(--text)] mt-1"><span className="font-semibold text-[var(--text-muted)]">Similarities: </span><HighlightTerms text={d.similarities} /></p>}
+                {d.differences && <p className="text-xs text-[var(--text)] mt-1"><span className="font-semibold text-[var(--text-muted)]">Key differences: </span><HighlightTerms text={d.differences} /></p>}
               </div>
             ))}
           </div>
@@ -2235,7 +2270,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       {/* Â§16 Diagnosis */}
       {note.diagnosis && (
         <Section num="16" title="Diagnosis">
-          <p className="text-sm text-[var(--text)] leading-relaxed">{note.diagnosis}</p>
+          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.diagnosis} /></p>
         </Section>
       )}
 
@@ -2250,10 +2285,10 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       {note.management && (note.management.goals || note.management.immediate || note.management.definitive || note.management.longTerm) ? (
         <Section num="18" title="Management">
           <div className="space-y-3">
-            {note.management.goals && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Goals of Treatment</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.management.goals}</p></div>}
-            {note.management.immediate && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-rose-700 dark:text-rose-400 mb-1">Immediate / Emergency</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.management.immediate}</p></div>}
-            {note.management.definitive && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400 mb-1">Definitive Treatment</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.management.definitive}</p></div>}
-            {note.management.longTerm && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-1">Long-Term Management</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.management.longTerm}</p></div>}
+            {note.management.goals && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Goals of Treatment</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.management.goals} /></p></div>}
+            {note.management.immediate && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-rose-700 dark:text-rose-400 mb-1">Immediate / Emergency</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.management.immediate} /></p></div>}
+            {note.management.definitive && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400 mb-1">Definitive Treatment</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.management.definitive} /></p></div>}
+            {note.management.longTerm && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-1">Long-Term Management</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.management.longTerm} /></p></div>}
           </div>
         </Section>
       ) : null}
@@ -2268,7 +2303,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       {/* Kenyan Context (special callout) */}
       {note.kenyaContext && (
         <Section num="KE" title="Kenyan Context" tone="green" icon={<Flag size={14} className="text-emerald-600 dark:text-emerald-400" />}>
-          <p className="text-sm text-[var(--text)] leading-relaxed">{note.kenyaContext}</p>
+          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.kenyaContext} /></p>
         </Section>
       )}
 
@@ -2340,14 +2375,14 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       {/* Â§21 Surgical Management */}
       {note.surgical && (
         <Section num="21" title="Surgical Management">
-          <p className="text-sm text-[var(--text)] leading-relaxed">{note.surgical}</p>
+          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.surgical} /></p>
         </Section>
       )}
 
       {/* Â§22 Monitoring */}
       {note.monitoring && (
         <Section num="22" title="Monitoring Parameters" tone="amber">
-          <p className="text-sm text-[var(--text)] leading-relaxed">{note.monitoring}</p>
+          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.monitoring} /></p>
         </Section>
       )}
 
@@ -2361,7 +2396,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       {/* Â§24 Prognosis */}
       {note.prognosis && (
         <Section num="24" title="Prognosis">
-          <p className="text-sm text-[var(--text)] leading-relaxed">{note.prognosis}</p>
+          <p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.prognosis} /></p>
         </Section>
       )}
 
@@ -2432,7 +2467,7 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
             {note.faq.map((f, i) => (
               <div key={i} className="border border-[var(--border)]/40 rounded-xl p-3">
                 <p className="text-sm font-bold text-[var(--text)]">{f.q}</p>
-                <p className="text-xs text-[var(--text)] mt-1 leading-relaxed">{f.a}</p>
+                <p className="text-xs text-[var(--text)] mt-1 leading-relaxed"><HighlightTerms text={f.a} /></p>
               </div>
             ))}
           </div>
@@ -2443,13 +2478,13 @@ function DiseaseDetailView({ note, onBack, hasPrev, hasNext, onPrev, onNext }: {
       {note.caseExample && (
         <Section num="33" title="Clinical Case Example">
           <div className="space-y-2">
-            {note.caseExample.presentation && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Presentation</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.presentation}</p></div>}
-            {note.caseExample.examination && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Examination</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.examination}</p></div>}
-            {note.caseExample.investigations && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Investigations</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.investigations}</p></div>}
-            {note.caseExample.assessment && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Assessment</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.assessment}</p></div>}
-            {note.caseExample.management && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Management</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.management}</p></div>}
-            {note.caseExample.followUp && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Follow-Up</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.followUp}</p></div>}
-            {note.caseExample.learningPoints && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Learning Points</h4><p className="text-sm text-[var(--text)] leading-relaxed">{note.caseExample.learningPoints}</p></div>}
+            {note.caseExample.presentation && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Presentation</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.caseExample.presentation} /></p></div>}
+            {note.caseExample.examination && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Examination</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.caseExample.examination} /></p></div>}
+            {note.caseExample.investigations && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Investigations</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.caseExample.investigations} /></p></div>}
+            {note.caseExample.assessment && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Assessment</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.caseExample.assessment} /></p></div>}
+            {note.caseExample.management && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Management</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.caseExample.management} /></p></div>}
+            {note.caseExample.followUp && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Follow-Up</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.caseExample.followUp} /></p></div>}
+            {note.caseExample.learningPoints && <div><h4 className="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-1">Learning Points</h4><p className="text-sm text-[var(--text)] leading-relaxed"><HighlightTerms text={note.caseExample.learningPoints} /></p></div>}
           </div>
         </Section>
       )}
@@ -2561,7 +2596,7 @@ function MCQBlock({ mcq, index }: { mcq: DiseaseNote['mcqs'][number]; index: num
             {selected?.charAt(0) === correctLetter ? 'Correct' : `Incorrect â€” Answer: ${correctLetter}`}
           </div>
           <p className="text-[11px] text-[var(--text-muted)] leading-relaxed bg-[var(--surface-dim)]/50 rounded-lg p-3 border border-[var(--border)]/30">
-            {mcq.explanation}
+            <HighlightTerms text={mcq.explanation} />
           </p>
           <button onClick={handleReset} className="text-xs text-[var(--primary)] font-bold hover:underline cursor-pointer">
             Try Again
@@ -3161,16 +3196,17 @@ function WorkspaceQuizzes({ unit, module, currentFolderId, currentFolderName, us
 // ==========================================
 // STATIC WORKSPACE RESOURCES
 // ==========================================
-function WorkspaceResources({ unit, currentFolderId, currentFolderName }: { unit: EducationModuleUnit, currentFolderId: string, currentFolderName: string }) {
+function WorkspaceResources({ unit, module, currentFolderId, currentFolderName }: { unit: EducationModuleUnit, module: EducationModule, currentFolderId: string, currentFolderName: string }) {
   const unitResources = useMemo(() => getResourcesForUnit(unit.id), [unit.id]);
+  const moduleResources = useMemo(() => getResourcesForModule(module.id), [module.id]);
   const [isExpanded, setIsExpanded] = useState(false);
   const [bookSearch, setBookSearch] = useState('');
-  const [typeFilter, setTypeFilter] = useState<'all' | LibraryResource['type']>('all');
+  const [typeFilter, setTypeFilter] = useState<'all' | DigitalLibraryResource['type']>('all');
 
   const displayedUnit = isExpanded ? unitResources : unitResources.slice(0, 8);
 
-  const filteredBooks = useMemo(() => {
-    let books = LIBRARY
+  const filteredModuleBooks = useMemo(() => {
+    let books = moduleResources
     if (typeFilter !== 'all') {
       books = books.filter(b => b.type === typeFilter)
     }
@@ -3180,11 +3216,11 @@ function WorkspaceResources({ unit, currentFolderId, currentFolderName }: { unit
         b.title.toLowerCase().includes(q) ||
         b.authors.toLowerCase().includes(q) ||
         b.keywords.toLowerCase().includes(q) ||
-        b.subjects.some(s => s.toLowerCase().includes(q))
+        (b.subjects || []).some(s => s.toLowerCase().includes(q))
       )
     }
     return books
-  }, [bookSearch, typeFilter])
+  }, [bookSearch, typeFilter, moduleResources])
 
   const typeIcons: Record<string, React.ReactNode> = {
     textbook: <BookOpen size={16} />,
@@ -3205,7 +3241,7 @@ function WorkspaceResources({ unit, currentFolderId, currentFolderName }: { unit
             Online Clinical Library
           </h3>
           <p className="text-[11px] text-[var(--text-muted)] font-medium mt-0.5">
-            {LIBRARY.length} textbooks, guidelines, formularies & references
+            {moduleResources.length} resources matched to {module.title}
           </p>
         </div>
         <span className="text-[10px] text-[var(--primary)] font-semibold bg-[var(--primary)]/5 px-2 py-0.5 rounded-lg shrink-0">
@@ -3221,7 +3257,7 @@ function WorkspaceResources({ unit, currentFolderId, currentFolderName }: { unit
             type="text"
             value={bookSearch}
             onChange={e => setBookSearch(e.target.value)}
-            placeholder="Search all books, authors, subjects..."
+            placeholder="Search books within this module..."
             className="w-full pl-9 pr-3 py-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-xs text-[var(--text)] outline-none focus:border-[var(--primary)] transition-colors"
           />
         </div>
@@ -3278,19 +3314,19 @@ function WorkspaceResources({ unit, currentFolderId, currentFolderName }: { unit
         </div>
       )}
 
-      {/* Full Library */}
+      {/* Module resources */}
       <div className="space-y-3">
         <p className="text-[11px] font-bold text-[var(--text-muted)] uppercase tracking-wider">
-          Full Library ({filteredBooks.length} of {LIBRARY.length})
+          {module.title} Resources ({filteredModuleBooks.length} of {moduleResources.length})
         </p>
-        {filteredBooks.length === 0 ? (
+        {filteredModuleBooks.length === 0 ? (
           <div className="py-8 text-center">
             <BookOpen size={24} className="text-[var(--text-muted)] mx-auto mb-2 opacity-50" />
-            <p className="text-xs text-[var(--text-muted)]">No books match your search</p>
+            <p className="text-xs text-[var(--text-muted)]">No resources match your search for this module</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {filteredBooks.map((res) => (
+            {filteredModuleBooks.map((res) => (
               <div key={res.id} className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 flex flex-col hover:border-[var(--primary)] transition-colors group shadow-xs">
                 <div className="flex items-start gap-3 min-w-0 flex-1">
                   <div className="w-9 h-9 rounded-xl bg-[var(--surface-dim)] flex items-center justify-center text-[var(--primary)] shrink-0 mt-0.5">
@@ -3313,7 +3349,7 @@ function WorkspaceResources({ unit, currentFolderId, currentFolderName }: { unit
                 </div>
                 {res.publisherUrl && (
                   <a href={res.publisherUrl} target="_blank" rel="noopener noreferrer" className="mt-2 w-full py-1.5 text-center text-[10px] font-bold text-[var(--primary)] bg-[var(--primary)]/5 hover:bg-[var(--primary)]/10 rounded-xl transition-colors" title="Open resource">
-                    Access Resource â†’
+                    Access Resource &rarr;
                   </a>
                 )}
               </div>

@@ -1,4 +1,5 @@
 import { DIGITAL_LIBRARY, type DigitalLibraryResource } from './digitalLibraryData'
+import { getModuleUnits } from './curriculum'
 
 const LEGACY_UNIT_MAP: Record<string, string[]> = {
   // Pharmacology module
@@ -110,4 +111,25 @@ export function getResourcesForUnit(unitId: string): DigitalLibraryResource[] {
       const bScore = legacyUnits.filter((lu) => b.curriculumUnits?.includes(lu)).length
       return bScore - aScore
     })
+}
+
+/** Aggregate all DIGITAL_LIBRARY resources tagged to ANY unit in the given module */
+export function getResourcesForModule(moduleId: string): DigitalLibraryResource[] {
+  const units = getModuleUnits(moduleId)
+  if (!units || units.length === 0) return []
+
+  const seen = new Set<string>()
+  const resources: DigitalLibraryResource[] = []
+
+  for (const unit of units) {
+    const unitResources = getResourcesForUnit(unit.id)
+    for (const res of unitResources) {
+      if (!seen.has(res.id)) {
+        seen.add(res.id)
+        resources.push(res)
+      }
+    }
+  }
+
+  return resources.sort((a, b) => a.title.localeCompare(b.title))
 }

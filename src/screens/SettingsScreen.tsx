@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import {
   ArrowLeft,
@@ -41,6 +41,16 @@ export default function SettingsScreen() {
     userData?.clinicalInterests || ["Cardiology", "Nephrology"]
   )
   const [searchQuery, setSearchQuery] = useState("")
+
+  // Auto-save: propagate changes to Dashboard immediately when toggled
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      updatePreferences(clinicalInterests)
+      setSaved(true)
+      setTimeout(() => setSaved(false), 2000)
+    }, 300) // 300ms debounce for rapid toggling
+    return () => clearTimeout(timer)
+  }, [clinicalInterests]) // eslint-disable-line react-hooks/exhaustive-deps
 
 const handleSave = async () => {
     await updatePreferences(clinicalInterests)

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import {
@@ -23,10 +23,14 @@ import {
   ScrollText,
   TrendingUp,
   Clock,
+  X,
+  ChevronLeft,
 } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 import ClinovaLogo from '../components/ClinovaLogo'
 import DailySpotlight from '../components/DailySpotlight'
+import { SearchService, type UnifiedSearchResult } from '../services/search.service'
+import { useDebounce } from '../hooks/useDebounce'
 
 const STUDY_TRACKS: Record<
   string,
@@ -145,10 +149,70 @@ const QUICK_LINKS = [
   },
 ]
 
+const RESULT_ICONS: Record<string, React.ReactNode> = {
+  drug: <Pill size={14} className="text-blue-500" />,
+  disease: <Activity size={14} className="text-rose-500" />,
+  case: <Stethoscope size={14} className="text-emerald-500" />,
+}
+
+const RESULT_ROUTES: Record<string, string> = {
+  drug: '/drug-index',
+  disease: '/knowledge',
+  case: '/cases',
+}
+
 export default function DashboardScreen() {
   const navigate = useNavigate()
   const { userData } = useAuth()
   const [searchQuery, setSearchQuery] = useState('')
+  const debouncedSearch = useDebounce(searchQuery, 300)
+  const [searchResults, setSearchResults] = useState<UnifiedSearchResult[]>([])
+  const [searchLoading, setSearchLoading] = useState(false)
+  const [showResults, setShowResults] = useState(false)
+  const searchRef = useRef<HTMLDivElement>(null)
+
+  // Fetch search results when debounced value changes
+  useEffect(() => {
+    const q = debouncedSearch.trim()
+    if (q.length < 2) {
+      setSearchResults([])
+      setSearchLoading(false)
+      return
+    }
+    setSearchLoading(true)
+    SearchService.unified(q, 8).then((res) => {
+      setSearchResults(res)
+      setSearchLoading(false)
+      setShowResults(true)
+    })
+  }, [debouncedSearch])
+
+  // Close results dropdown on click outside
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      if (searchRef.current && !searchRef.current.contains(e.target as Node)) {
+        setShowResults(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClick)
+    return () => document.removeEventListener('mousedown', handleClick)
+  }, [])
+
+  const handleSearchSelect = useCallback((result: UnifiedSearchResult) => {
+    setShowResults(false)
+    setSearchQuery('')
+    const route = RESULT_ROUTES[result.result_type] || '/knowledge'
+    navigate(route)
+  }, [navigate])
+
+  const handleSearchKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' && searchResults.length > 0) {
+      handleSearchSelect(searchResults[0])
+    }
+    if (e.key === 'Escape') {
+      setShowResults(false)
+    }
+  }
 
   return (
     <div className="p-4 sm:p-6 md:p-8 max-w-full 2xl:max-w-7xl mx-auto space-y-6 md:space-y-8 pb-24">
@@ -248,18 +312,68 @@ export default function DashboardScreen() {
         </div>
       </div>
 
-      {/* ── Search ── */}
-      <div className="relative group">
-        <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+      {/* ── Global Search ── */}
+      <div ref={searchRef} className="relative group">
+        <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none z-10">
           <Search size={18} className="text-[var(--text-muted)] group-focus-within:text-[var(--primary)] transition-colors" />
         </div>
         <input
           type="text"
           value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder="Search guidelines, drugs, diseases..."
-          className="w-full pl-11 pr-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-xl focus:border-[var(--primary)] focus:ring-4 focus:ring-[var(--primary)]/10 outline-none text-[var(--text)] text-sm shadow-sm transition-all"
+          onChange={(e) => { setSearchQuery(e.target.value); setShowResults(true) }}
+          onFocus={() => { if (searchResults.length > 0) setShowResults(true) }}
+          onKeyDown={handleSearchKeyDown}
+          placeholder="Search drugs, diseases, clinical cases..."
+          className="w-full pl-11 pr-10 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-xl focus:border-[var(--primary)] focus:ring-4 focus:ring-[var(--primary)]/10 outline-none text-[var(--text)] text-sm shadow-sm transition-all"
         />
+        {searchQuery && (
+          <button
+            onClick={() => { setSearchQuery(''); setSearchResults([]); setShowResults(false) }}
+            className="absolute inset-y-0 right-4 flex items-center text-[var(--text-muted)] hover:text-[var(--text)] transition-colors z-10 cursor-pointer"
+          >
+            <X size={16} />
+          </button>
+        )}
+
+        {/* Results dropdown */}
+        {showResults && (
+          <div className="absolute top-full left-0 right-0 mt-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-xl z-50 overflow-hidden">
+            {searchLoading ? (
+              <div className="p-4 text-center text-sm text-[var(--text-muted)]">
+                <span className="animate-pulse">Searching...</span>
+              </div>
+            ) : searchResults.length > 0 ? (
+              <div className="divide-y divide-[var(--border)]/50 max-h-80 overflow-y-auto">
+                {searchResults.map((r, i) => (
+                  <button
+                    key={`${r.result_type}-${r.id}-${i}`}
+                    onClick={() => handleSearchSelect(r)}
+                    className="w-full flex items-center gap-3 px-4 py-3 hover:bg-[var(--surface-dim)] transition-colors text-left cursor-pointer"
+                  >
+                    <span className="w-7 h-7 rounded-lg bg-[var(--surface-dim)] flex items-center justify-center shrink-0">
+                      {RESULT_ICONS[r.result_type]}
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <p className="text-sm font-semibold text-[var(--text)] truncate">{r.title}</p>
+                      {r.subtitle && (
+                        <p className="text-[11px] text-[var(--text-muted)] truncate">{r.subtitle}</p>
+                      )}
+                    </div>
+                    <span className="text-[10px] uppercase font-bold px-1.5 py-0.5 rounded bg-[var(--surface-dim)] text-[var(--text-muted)] shrink-0">
+                      {r.result_type}
+                    </span>
+                  </button>
+                ))}
+              </div>
+            ) : debouncedSearch.trim().length >= 2 ? (
+              <div className="p-6 text-center">
+                <Search size={24} className="mx-auto text-[var(--text-muted)]/40 mb-2" />
+                <p className="text-sm text-[var(--text-muted)]">No results found</p>
+                <p className="text-xs text-[var(--text-muted)]/60 mt-1">Try a different search term</p>
+              </div>
+            ) : null}
+          </div>
+        )}
       </div>
 
       {/* ── Daily Spotlight ── */}

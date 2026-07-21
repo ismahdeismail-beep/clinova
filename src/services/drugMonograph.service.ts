@@ -1,4 +1,25 @@
-import { supabase } from '../lib/supabase';
+import { supabase } from '../lib/supabase'
+import { BUNDLED_DRUGS } from '../data/drugIndexData'
+
+// ── Static fallback index ──────────────────────────────────────────
+// The bundled index holds ~513 drugs (149 original + 364 AI-enriched).
+// Methods below try Supabase first, then fall back to this static data.
+// ───────────────────────────────────────────────────────────────────
+
+const STATIC_BY_NAME = new Map<string, DrugMonograph>()
+const STATIC_BY_ID = new Map<string, DrugMonograph>()
+const STATIC_ALL: DrugMonograph[] = []
+
+function buildStaticIndex() {
+  if (STATIC_ALL.length > 0) return
+  for (const d of BUNDLED_DRUGS) {
+    const key = d.name.toLowerCase().trim()
+    STATIC_BY_NAME.set(key, d)
+    STATIC_BY_ID.set(d.id, d)
+    STATIC_ALL.push(d)
+  }
+}
+buildStaticIndex()
 
 export interface DrugMonograph {
   id: string;
@@ -71,70 +92,93 @@ export interface UserMonograph {
   monograph?: DrugMonograph;
 }
 
+/** Search the static index by name or generic_name */
+function searchStatic(q: string): DrugMonograph[] {
+  if (!q) return STATIC_ALL
+  return STATIC_ALL.filter(
+    (d) =>
+      d.name.toLowerCase().includes(q) ||
+      d.generic_name.toLowerCase().includes(q),
+  )
+}
+
 export const DrugMonographService = {
   async getAll(): Promise<DrugMonograph[]> {
-    if (!supabase) return [];
+    if (!supabase) return STATIC_ALL;
     const { data, error } = await supabase
       .from('drug_monographs')
       .select('*, drug_class_info:drug_classes(name)')
       .order('name');
     if (error) throw error;
-    return (data ?? []).map(mapRow);
+    const rows = (data ?? []).map(mapRow);
+    return rows.length > 0 ? rows : STATIC_ALL;
   },
 
   async getById(id: string): Promise<DrugMonograph | null> {
-    if (!supabase) return null;
+    if (!supabase) return STATIC_BY_ID.get(id) ?? null;
     const { data, error } = await supabase
       .from('drug_monographs')
       .select('*, drug_class_info:drug_classes(name)')
       .eq('id', id)
       .single();
-    if (error) return null;
-    return data ? mapRow(data) : null;
+    if (error) return STATIC_BY_ID.get(id) ?? null;
+    return data ? mapRow(data) : STATIC_BY_ID.get(id) ?? null;
   },
 
   async getByName(name: string): Promise<DrugMonograph | null> {
-    if (!supabase) return null;
+    if (!supabase) return STATIC_BY_NAME.get(name.toLowerCase().trim()) ?? null;
     const { data, error } = await supabase
       .from('drug_monographs')
       .select('*, drug_class_info:drug_classes(name)')
       .ilike('name', name)
       .single();
-    if (error) return null;
-    return data ? mapRow(data) : null;
+    if (error) return STATIC_BY_NAME.get(name.toLowerCase().trim()) ?? null;
+    return data ? mapRow(data) : STATIC_BY_NAME.get(name.toLowerCase().trim()) ?? null;
   },
 
   async search(query: string): Promise<DrugMonograph[]> {
-    if (!supabase) return [];
+    const q = query.toLowerCase().trim()
+    if (!supabase) return searchStatic(q);
+
     const { data, error } = await supabase
       .from('drug_monographs')
       .select('*, drug_class_info:drug_classes(name)')
       .or(`name.ilike.%${query}%,generic_name.ilike.%${query}%`)
       .order('name');
     if (error) throw error;
-    return (data ?? []).map(mapRow);
+
+    const rows = (data ?? []).map(mapRow);
+    return rows.length > 0 ? rows : searchStatic(q);
   },
 
   async searchByIndication(indication: string): Promise<DrugMonograph[]> {
-    if (!supabase) return [];
+    const ind = indication.toLowerCase()
+    if (!supabase) return STATIC_ALL.filter((d) => d.indications.some((i) => i.toLowerCase().includes(ind)))
+
     const { data, error } = await supabase
       .from('drug_monographs')
       .select('*, drug_class_info:drug_classes(name)')
       .contains('indications', [indication])
       .order('name');
     if (error) throw error;
-    return (data ?? []).map(mapRow);
+
+    const rows = (data ?? []).map(mapRow);
+    return rows.length > 0 ? rows : STATIC_ALL.filter((d) => d.indications.some((i) => i.toLowerCase().includes(ind)))
   },
 
   async getByDrugClass(drugClass: string): Promise<DrugMonograph[]> {
-    if (!supabase) return [];
+    const dc = drugClass.toLowerCase()
+    if (!supabase) return STATIC_ALL.filter((d) => d.drug_class.toLowerCase().includes(dc) || d.drug_class_name.toLowerCase().includes(dc))
+
     const { data, error } = await supabase
       .from('drug_monographs')
       .select('*, drug_class_info:drug_classes(name)')
       .ilike('drug_class_info.name', `%${drugClass}%`)
       .order('name');
     if (error) throw error;
-    return (data ?? []).map(mapRow);
+
+    const rows = (data ?? []).map(mapRow);
+    return rows.length > 0 ? rows : STATIC_ALL.filter((d) => d.drug_class.toLowerCase().includes(dc) || d.drug_class_name.toLowerCase().includes(dc))
   },
 
   async getInteractingDrugs(drugName: string): Promise<{ drug: DrugMonograph; interactions: string[] }[]> {

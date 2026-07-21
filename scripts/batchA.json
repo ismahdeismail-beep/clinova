@@ -1,0 +1,382 @@
+[
+  {
+    "id": "new-4-010",
+    "name": "Semaglutide SC",
+    "generic_name": "Semaglutide",
+    "drug_class": "GLP-1 receptor agonist",
+    "drug_class_name": "Endocrine - Antidiabetics",
+    "indications": [
+      "Type 2 diabetes",
+      "Obesity (Wegovy)"
+    ],
+    "contraindications": [
+      "MTC/MEN2",
+      "Pancreatitis history"
+    ],
+    "side_effects": [
+      "Nausea",
+      "Diarrhea",
+      "Vomiting",
+      "Pancreatitis (rare)",
+      "Gallbladder disease"
+    ],
+    "dosage": {
+      "adult": "DM: 0.25mg SC weekly x4, then 0.5mg, 1mg, 2mg. Obesity: 2.4mg weekly."
+    },
+    "interactions": [
+      "Oral contraceptives",
+      "Insulin/SU"
+    ],
+    "monitoring": "LFTs, lipase if pancreatitis suspected",
+    "patient_counselling": "SC injection weekly. Start low to reduce nausea.",
+    "mechanism_of_action": "GLP-1 RA: enhances glucose-dependent insulin secretion, suppresses glucagon, delays gastric emptying. C-18 fatty diacid for albumin binding.",
+    "brand_names": [
+      "Ozempic",
+      "Wegovy"
+    ],
+    "pregnancy_category": "N/A",
+    "warnings": [
+      "Pancreatitis",
+      "Thyroid C-cell tumors",
+      "Gallbladder disease"
+    ],
+    "overdose": "Nausea, vomiting. Management: supportive.",
+    "pharmacokinetics": "SC bioavailability: 89%. t1/2: 165h (7 days). Albumin binding >99%.",
+    "black_box_warnings": [
+      "Thyroid C-cell tumor risk"
+    ],
+    "clinical_pearls": [
+      "STEP: 15-17% weight loss",
+      "SUSTAIN: superior HbA1c reduction",
+      "Once-weekly — highest patient preference",
+      "Oral form: take on empty stomach 30 min before food"
+    ]
+  },
+  {
+    "id": "new-4-012",
+    "name": "Dulaglutide",
+    "generic_name": "Dulaglutide",
+    "drug_class": "GLP-1 receptor agonist (Fc fusion)",
+    "drug_class_name": "Endocrine - Antidiabetics",
+    "indications": [
+      "Type 2 diabetes"
+    ],
+    "contraindications": [
+      "MTC/MEN2",
+      "Pancreatitis history"
+    ],
+    "side_effects": [
+      "Nausea",
+      "Diarrhea",
+      "Injection site reactions"
+    ],
+    "dosage": {
+      "adult": "0.75mg SC weekly, max 4.5mg weekly"
+    },
+    "interactions": [
+      "Insulin/SU"
+    ],
+    "monitoring": "HbA1c, LFTs",
+    "patient_counselling": "SC injection weekly. Titrate every 4 weeks.",
+    "mechanism_of_action": "Fc fusion GLP-1 RA: GLP-1 analogue fused to IgG4 Fc for extended half-life via FcRn recycling.",
+    "brand_names": [
+      "Trulicity"
+    ],
+    "pregnancy_category": "N/A",
+    "warnings": [
+      "Pancreatitis",
+      "Thyroid C-cell tumors"
+    ],
+    "overdose": "Nausea, vomiting. Management: supportive.",
+    "pharmacokinetics": "SC: t1/2 4.7 days. Weekly dosing.",
+    "black_box_warnings": [
+      "Thyroid C-cell tumor risk"
+    ],
+    "clinical_pearls": [
+      "REWIND: 12% reduction in MACE",
+      "Once-weekly",
+      "Single-dose pen — no mixing",
+      "Titrate from 0.75mg to 4.5mg"
+    ]
+  },
+  {
+    "id": "new-4-014",
+    "name": "Methimazole",
+    "generic_name": "Methimazole",
+    "drug_class": "Thionamide",
+    "drug_class_name": "Endocrine - Thyroid",
+    "indications": [
+      "Graves' disease",
+      "Hyperthyroidism pre-surgery"
+    ],
+    "contraindications": [
+      "Pregnancy first trimester (use PTU)",
+      "Agranulocytosis history"
+    ],
+    "side_effects": [
+      "Agranulocytosis (0.2-0.5%)",
+      "Rash",
+      "Arthralgia",
+      "Hepatotoxicity"
+    ],
+    "dosage": {
+      "adult": "Start 10-30mg daily, maintenance 5-10mg daily"
+    },
+    "interactions": [
+      "Warfarin (increased effect)",
+      "Lithium"
+    ],
+    "monitoring": "TSH q4-6 weeks, WBC if infection signs",
+    "patient_counselling": "Report fever, sore throat immediately (agranulocytosis).",
+    "mechanism_of_action": "Inhibits thyroid peroxidase, blocking iodine organification and T3/T4 synthesis.",
+    "brand_names": [
+      "Tapazole"
+    ],
+    "pregnancy_category": "D",
+    "warnings": [
+      "Agranulocytosis",
+      "Hepatotoxicity",
+      "Fetal malformations in first trimester"
+    ],
+    "overdose": "Hypothyroidism with chronic overdose. Management: supportive.",
+    "pharmacokinetics": "Oral bioavailability: 93%. t1/2: 4-6h. Hepatic metabolism.",
+    "black_box_warnings": [
+      "Agranulocytosis"
+    ],
+    "clinical_pearls": [
+      "First-line for Graves' disease",
+      "Check WBC if fever/sore throat develops",
+      "PTU preferred in first trimester",
+      "Also blocks peripheral T4-to-T3 conversion at high doses"
+    ]
+  },
+  {
+    "id": "new-4-018",
+    "name": "Alfacalcidol",
+    "generic_name": "Alfacalcidol",
+    "drug_class": "Active vitamin D analogue",
+    "drug_class_name": "Endocrine - Bone",
+    "indications": [
+      "Hypoparathyroidism",
+      "CKD-related osteodystrophy"
+    ],
+    "contraindications": [
+      "Hypercalcemia"
+    ],
+    "side_effects": [
+      "Hypercalcemia",
+      "Hyperphosphatemia",
+      "Soft tissue calcification"
+    ],
+    "dosage": {
+      "adult": "0.25-1 mcg daily"
+    },
+    "interactions": [
+      "Thiazides",
+      "Cardiac glycosides",
+      "Calcium supplements"
+    ],
+    "monitoring": "Serum calcium, phosphate, ALP, PTH",
+    "patient_counselling": "Monitor calcium regularly.",
+    "mechanism_of_action": "1-alpha-hydroxylated vitamin D3: requires only hepatic 25-hydroxylation (no renal activation needed).",
+    "brand_names": [
+      "Hidroferol"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Hypercalcemia"
+    ],
+    "overdose": "Hypercalcemia. Management: discontinue, hydrate, calcitonin.",
+    "pharmacokinetics": "Oral: rapid absorption. t1/2: 3-5h. Hepatic 25-hydroxylation.",
+    "black_box_warnings": [
+      "Hypercalcemia risk"
+    ],
+    "clinical_pearls": [
+      "Bypasses renal activation — useful in CKD",
+      "Preferred in CKD patients",
+      "Requires close calcium monitoring"
+    ]
+  },
+  {
+    "id": "new-4-019",
+    "name": "Calcitriol",
+    "generic_name": "Calcitriol (1,25-dihydroxyvitamin D3)",
+    "drug_class": "Active vitamin D metabolite",
+    "drug_class_name": "Endocrine - Bone",
+    "indications": [
+      "Hypoparathyroidism",
+      "CKD osteodystrophy",
+      "Psoriasis (topical)"
+    ],
+    "contraindications": [
+      "Hypercalcemia"
+    ],
+    "side_effects": [
+      "Hypercalcemia",
+      "Hyperphosphatemia"
+    ],
+    "dosage": {
+      "adult": "0.25 mcg daily, titrate. Psoriasis: topical."
+    },
+    "interactions": [
+      "Thiazides",
+      "Cardiac glycosides"
+    ],
+    "monitoring": "Serum calcium, phosphate, creatinine",
+    "patient_counselling": "Take with food.",
+    "mechanism_of_action": "Active vitamin D: binds VDR in intestine, increasing calcium and phosphate absorption.",
+    "brand_names": [
+      "Rocaltrol"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Hypercalcemia",
+      "Soft tissue calcification"
+    ],
+    "overdose": "Hypercalcemia management.",
+    "pharmacokinetics": "Oral: well absorbed. t1/2: 6-8h.",
+    "black_box_warnings": [
+      "Hypercalcemia risk"
+    ],
+    "clinical_pearls": [
+      "Most potent vitamin D metabolite",
+      "CKD patients cannot make this from native vitamin D",
+      "Low doses — monitor calcium closely",
+      "Topical (Dovonex) for psoriasis"
+    ]
+  },
+  {
+    "id": "new-4-020",
+    "name": "Ergocalciferol",
+    "generic_name": "Ergocalciferol (vitamin D2)",
+    "drug_class": "Vitamin D2",
+    "drug_class_name": "Endocrine - Bone",
+    "indications": [
+      "Vitamin D deficiency",
+      "Hypoparathyroidism"
+    ],
+    "contraindications": [
+      "Hypercalcemia"
+    ],
+    "side_effects": [
+      "Hypercalcemia (overdose)",
+      "Nausea"
+    ],
+    "dosage": {
+      "adult": "Deficiency: 50,000 IU weekly x8w, then 1000-2000 IU daily"
+    },
+    "interactions": [
+      "Phenobarbital/phenytoin (increase catabolism)",
+      "Thiazides"
+    ],
+    "monitoring": "25-OH vitamin D, calcium",
+    "patient_counselling": "Take with fatty food for best absorption.",
+    "mechanism_of_action": "Vitamin D2: requires hepatic 25-hydroxylation then renal 1-alpha-hydroxylation.",
+    "brand_names": [
+      "Drisdol"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Hypercalcemia with chronic overdose",
+      "Less effective than D3"
+    ],
+    "overdose": "Hypercalcemia. Management: discontinue.",
+    "pharmacokinetics": "Oral: well absorbed with fat. t1/2: weeks. Stored in adipose tissue.",
+    "black_box_warnings": [],
+    "clinical_pearls": [
+      "D2 less potent than D3 in raising 25-OH-D",
+      "D3 preferred unless vegan",
+      "50,000 IU weekly x8w standard loading"
+    ]
+  },
+  {
+    "id": "new-4-021",
+    "name": "Cholecalciferol",
+    "generic_name": "Cholecalciferol (vitamin D3)",
+    "drug_class": "Vitamin D3",
+    "drug_class_name": "Endocrine - Bone",
+    "indications": [
+      "Vitamin D deficiency",
+      "Osteoporosis adjunct"
+    ],
+    "contraindications": [
+      "Hypercalcemia"
+    ],
+    "side_effects": [
+      "Hypercalcemia (high doses)"
+    ],
+    "dosage": {
+      "adult": "Deficiency: 50,000 IU weekly x8-12w, then 1000-4000 IU daily"
+    },
+    "interactions": [
+      "Thiazides",
+      "Phenytoin/phenobarbital"
+    ],
+    "monitoring": "25-OH vitamin D, calcium",
+    "patient_counselling": "Take with fatty food.",
+    "mechanism_of_action": "Vitamin D3: 2-3x more potent than D2 in raising 25-OH-D levels.",
+    "brand_names": [
+      "Calcirol"
+    ],
+    "pregnancy_category": "A",
+    "warnings": [
+      "Hypercalcemia at very high doses"
+    ],
+    "overdose": "Hypercalcemia management.",
+    "pharmacokinetics": "Oral: well absorbed. t1/2: weeks.",
+    "black_box_warnings": [],
+    "clinical_pearls": [
+      "Preferred form of vitamin D supplementation",
+      "More potent and longer-lasting than D2",
+      "Safe in pregnancy (category A)"
+    ]
+  },
+  {
+    "id": "new-4-022",
+    "name": "Fludrocortisone",
+    "generic_name": "Fludrocortisone acetate",
+    "drug_class": "Mineralocorticoid",
+    "drug_class_name": "Endocrine - Adrenal",
+    "indications": [
+      "Adrenal insufficiency",
+      "Orthostatic hypotension"
+    ],
+    "contraindications": [
+      "Cushing's syndrome",
+      "Hypokalemia"
+    ],
+    "side_effects": [
+      "Hypokalemia",
+      "Edema",
+      "Hypertension"
+    ],
+    "dosage": {
+      "adult": "0.05-0.2mg daily"
+    },
+    "interactions": [
+      "Diuretics (worsen hypokalemia)",
+      "Digoxin"
+    ],
+    "monitoring": "BP, K+, Na+, weight",
+    "patient_counselling": "Take in the morning.",
+    "mechanism_of_action": "Synthetic mineralocorticoid: activates mineralocorticoid receptors, promoting Na+/water retention and K+ excretion.",
+    "brand_names": [
+      "Florinef"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Hypokalemia",
+      "Fluid retention"
+    ],
+    "overdose": "Fluid retention, hypokalemia.",
+    "pharmacokinetics": "Oral bioavailability: high.",
+    "black_box_warnings": [
+      "Hypokalemia monitoring required"
+    ],
+    "clinical_pearls": [
+      "Essential for Addison's disease",
+      "Typical dose 0.05-0.1mg daily",
+      "Also used for orthostatic hypotension"
+    ]
+  }
+]

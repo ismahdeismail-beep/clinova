@@ -1,0 +1,1608 @@
+[
+  {
+    "id": "new-b1-001",
+    "name": "Tramadol",
+    "generic_name": "Tramadol hydrochloride",
+    "drug_class": "Opioid agonist (weak)",
+    "drug_class_name": "Analgesics - Opioid Agonists",
+    "indications": [
+      "Moderate pain",
+      "Neuropathic pain"
+    ],
+    "contraindications": [
+      "Severe hepatic impairment",
+      "Concomitant MAOIs",
+      "Uncontrolled epilepsy"
+    ],
+    "side_effects": [
+      "Nausea",
+      "Dizziness",
+      "Constipation",
+      "Headache",
+      "Serotonin syndrome (risk with SSRIs)"
+    ],
+    "dosage": {
+      "adult": "50-100mg PO q4-6h (max 400mg/day)"
+    },
+    "interactions": [
+      "SSRIs/SNRIs (serotonin syndrome risk)",
+      "Carbamazepine (reduces tramadol levels)",
+      "CYP2D6 inhibitors (increase levels)"
+    ],
+    "monitoring": "Pain scores, respiratory rate, sedation level, seizure risk",
+    "patient_counselling": "Dual mechanism: weak mu-opioid + SNRI. Seizure risk at high doses. Avoid alcohol.",
+    "mechanism_of_action": "Weak mu-opioid receptor agonist + inhibits norepinephrine and serotonin reuptake, providing dual analgesic mechanism.",
+    "brand_names": [
+      "Ultram",
+      "ConZip",
+      "Ryzolt"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Seizure risk (dose-dependent)",
+      "Serotonin syndrome with serotonergic drugs",
+      "Risk of respiratory depression in CYP2D6 poor metabolizers"
+    ],
+    "overdose": "Symptoms: seizures, serotonin syndrome, respiratory depression, agitated delirium. Management: naloxone (may require higher doses), benzodiazepines for seizures.",
+    "pharmacokinetics": "Oral bioavailability: 68%. t1/2: 6h (tramadol), 7h (O-desmethyl metabolite). CYP2D6 → active metabolite (M1). Renal excretion.",
+    "black_box_warnings": [
+      "Risk of seizures",
+      "Risk of serotonin syndrome",
+      "Risk of respiratory depression"
+    ],
+    "clinical_pearls": [
+      "50x less potent than morphine",
+      "CYP2D6 ultrarapid metabolizers: higher risk of toxicity",
+      "Combined with acetaminophen in Ultracet"
+    ]
+  },
+  {
+    "id": "new-b1-006",
+    "name": "Milnacipran",
+    "generic_name": "Milnacipran hydrochloride",
+    "drug_class": "SNRI",
+    "drug_class_name": "Analgesics - SNRIs",
+    "indications": [
+      "Fibromyalgia"
+    ],
+    "contraindications": [
+      "Concomitant MAOIs",
+      "Uncontrolled narrow-angle glaucoma",
+      "Severe hepatic impairment"
+    ],
+    "side_effects": [
+      "Nausea",
+      "Headache",
+      "Constipation",
+      "Insomnia",
+      "Hypertension"
+    ],
+    "dosage": {
+      "adult": "Start 12.5mg PO daily, titrate to 25mg BID over 1 week"
+    },
+    "interactions": [
+      "MAOIs (serotonin syndrome)",
+      "Sympathomimetics (hypertensive crisis)"
+    ],
+    "monitoring": "BP, pain scores, mood, heart rate",
+    "patient_counselling": "Take with food. Do not stop abruptly. Monitor BP.",
+    "mechanism_of_action": "SNRI with greater affinity for norepinephrine than serotonin reuptake inhibition. NE:5-HT ratio approximately 3:1.",
+    "brand_names": [
+      "Savella"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Hypertension risk",
+      "Serotonin syndrome",
+      "Hepatotoxicity"
+    ],
+    "overdose": "Symptoms: serotonin syndrome, tachycardia, hypertension. Management: supportive care, cyproheptadine.",
+    "pharmacokinetics": "Oral bioavailability: 85%. t1/2: 8h. Minimal hepatic metabolism. Renal excretion (50-60%).",
+    "black_box_warnings": [
+      "Increased suicidal thinking and behavior"
+    ],
+    "clinical_pearls": [
+      "NE-predominant SNRI — better for pain than depression",
+      "Only FDA-approved for fibromyalgia (not depression in US)",
+      "Less sexual dysfunction than SSRIs"
+    ]
+  },
+  {
+    "id": "new-b1-007",
+    "name": "Capsaicin topical",
+    "generic_name": "Capsaicin",
+    "drug_class": "TRPV1 agonist (topical)",
+    "drug_class_name": "Analgesics - Topical",
+    "indications": [
+      "Neuropathic pain",
+      "Post-herpetic neuralgia",
+      "Osteoarthritis"
+    ],
+    "contraindications": [
+      "Broken or irritated skin",
+      "Hypersensitivity to capsaicin"
+    ],
+    "side_effects": [
+      "Local burning/stinging",
+      "Erythema",
+      "Cough (inhaled)"
+    ],
+    "dosage": {
+      "adult": "0.025-0.075% cream: apply TID-QID. 8% patch: single application by healthcare provider"
+    },
+    "interactions": [
+      "ACE inhibitors (increased cough risk)"
+    ],
+    "monitoring": "Pain scores, skin integrity, local reactions",
+    "patient_counselling": "Initial burning is expected and decreases with continued use. Wash hands thoroughly after application.",
+    "mechanism_of_action": "Depletes substance P from sensory neurons via TRPV1 receptor activation, reducing pain signaling. Initial activation followed by desensitization.",
+    "brand_names": [
+      "Qutenza",
+      "Zostrix"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "For external use only",
+      "Avoid eyes and mucous membranes",
+      "Initial pain increase is common"
+    ],
+    "overdose": "Symptoms: severe local burning. Management: wash with soap and olive oil (not water initially).",
+    "pharmacokinetics": "Topical absorption minimal. Local action primarily. High-dose patch (8%) provides 3 months pain relief.",
+    "black_box_warnings": [],
+    "clinical_pearls": [
+      "Qutenza 8% patch applied in clinic for PHN — single application provides 3 months relief",
+      "Initial worsening expected — counsel patients",
+      "Mechanism: defunctionalizes nociceptors by depleting substance P",
+      "Also used for diabetic peripheral neuropathy of feet"
+    ]
+  },
+  {
+    "id": "new-b1-008",
+    "name": "Lidocaine patch",
+    "generic_name": "Lidocaine 5% patch",
+    "drug_class": "Local anesthetic (topical)",
+    "drug_class_name": "Analgesics - Topical",
+    "indications": [
+      "Post-herpetic neuralgia"
+    ],
+    "contraindications": [
+      "Broken or irritated skin at application site"
+    ],
+    "side_effects": [
+      "Local skin irritation",
+      "Erythema",
+      "Pruritus"
+    ],
+    "dosage": {
+      "adult": "1-3 patches applied to intact skin for 12h on/12h off (max 3 patches/12h period)"
+    },
+    "interactions": [
+      "Class I antiarrhythmics (additive cardiac effects)"
+    ],
+    "monitoring": "Pain scores, skin integrity, plasma lidocaine levels if multiple patches",
+    "patient_counselling": "Apply to intact skin only. Remove before MRI. Can cut patches if needed.",
+    "mechanism_of_action": "Blocks voltage-gated sodium channels in peripheral sensory neurons, preventing nerve impulse generation and propagation.",
+    "brand_names": [
+      "Lidoderm",
+      "Qutenza"
+    ],
+    "pregnancy_category": "B",
+    "warnings": [
+      "For external use only",
+      "Plasma levels increase with more patches",
+      "Do not exceed recommended duration"
+    ],
+    "overdose": "Symptoms: CNS excitation then depression, cardiovascular collapse (rare with topical). Management: airway management, benzodiazepines.",
+    "pharmacokinetics": "Systemic absorption minimal (<5% of dose). Peak plasma: 13h. Duration: up to 12h after removal.",
+    "black_box_warnings": [],
+    "clinical_pearls": [
+      "Apply to area of maximum pain",
+      "Up to 3 patches can be worn simultaneously",
+      "Can cut patches to fit smaller areas",
+      "No systemic toxicity at recommended dose"
+    ]
+  },
+  {
+    "id": "new-b1-012",
+    "name": "Diclofenac topical",
+    "generic_name": "Diclofenac sodium topical gel",
+    "drug_class": "NSAID (topical)",
+    "drug_class_name": "Analgesics - Topical NSAIDs",
+    "indications": [
+      "Osteoarthritis of joints",
+      "Actinic keratosis (solaraze gel)"
+    ],
+    "contraindications": [
+      "Broken skin at application site",
+      "NSAID hypersensitivity"
+    ],
+    "side_effects": [
+      "Local irritation",
+      "Pruritus",
+      "Dry skin",
+      "Contact dermatitis"
+    ],
+    "dosage": {
+      "adult": "Apply 4g to affected joint QID (max 32g/day for knee)"
+    },
+    "interactions": [
+      "NSAIDs (additive systemic effects if combined)",
+      "Warfarin (monitor INR)"
+    ],
+    "monitoring": "Local skin reactions, pain scores",
+    "patient_counselling": "Apply to clean, dry skin. Do not use with occlusive dressings. Avoid eyes and mucous membranes.",
+    "mechanism_of_action": "Topical NSAID — inhibits COX-2 locally, reducing prostaglandin-mediated inflammation at application site.",
+    "brand_names": [
+      "Voltaren Gel",
+      "Solaraze",
+      "Pennsaid"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "For external use only",
+      "Avoid broken skin",
+      "Systemic absorption possible with large areas"
+    ],
+    "overdose": "Symptoms: local irritation. Management: wash area with water.",
+    "pharmacokinetics": "Systemic absorption <6%. Local tissue concentrations higher than plasma. Minimal systemic effects.",
+    "black_box_warnings": [],
+    "clinical_pearls": [
+      "Pennsaid: diclofenac in DMSO solution for deeper penetration",
+      "Less GI toxicity than oral NSAIDs",
+      "Good alternative for patients who cannot tolerate oral NSAIDs",
+      "Solaraze 3%: for actinic keratosis (sun-damaged skin)"
+    ]
+  },
+  {
+    "id": "new-b1-014",
+    "name": "Phenylbutazone",
+    "generic_name": "Phenylbutazone",
+    "drug_class": "NSAID (pyrazolone)",
+    "drug_class_name": "Analgesics - NSAIDs",
+    "indications": [
+      "Severe rheumatoid arthritis (refractory)",
+      "Ankylosing spondylitis",
+      "Acute gout"
+    ],
+    "contraindications": [
+      "Blood dyscrasias",
+      "Hepatic/renal impairment",
+      "Cardiac decompensation",
+      "Peptic ulcer"
+    ],
+    "side_effects": [
+      "Blood dyscrasias (agranulocytosis, aplastic anemia)",
+      "GI bleeding",
+      "Fluid retention",
+      "Hepatotoxicity"
+    ],
+    "dosage": {
+      "adult": "100mg TID with food, reduce to lowest effective dose"
+    },
+    "interactions": [
+      "Anticoagulants (increased bleeding)",
+      "Lithium (increased levels)",
+      "Phenytoin (increased levels)"
+    ],
+    "monitoring": "CBC weekly for first month, LFTs, renal function, fluid balance",
+    "patient_counselling": "Take with food. Report sore throat, fever, bruising immediately (blood dyscrasia signs).",
+    "mechanism_of_action": "Non-selective COX inhibitor with potent anti-inflammatory and uricosuric effects.",
+    "brand_names": [
+      "Butazolidin"
+    ],
+    "pregnancy_category": "D",
+    "warnings": [
+      "Agranulocytosis risk",
+      "Aplastic anemia",
+      "Hepatotoxicity",
+      "Fluid retention"
+    ],
+    "overdose": "Symptoms: nausea, vomiting, GI bleeding, CNS depression. Management: supportive care.",
+    "pharmacokinetics": "Oral bioavailability: high. t1/2: 12h (but active metabolites 3 days). Protein binding: 98%. Hepatic metabolism.",
+    "black_box_warnings": [
+      "Risk of blood dyscrasias",
+      "Risk of serious GI adverse events"
+    ],
+    "clinical_pearls": [
+      "Rarely used in humans due to toxicity profile",
+      "Still used in veterinary medicine (horses)",
+      "Uricosuric effect — useful in gout",
+      "Monitor CBC closely in first month"
+    ]
+  },
+  {
+    "id": "new-b1-016",
+    "name": "Nabumetone",
+    "generic_name": "Nabumetone",
+    "drug_class": "NSAID (prodrug)",
+    "drug_class_name": "Analgesics - NSAIDs",
+    "indications": [
+      "Osteoarthritis",
+      "Rheumatoid arthritis"
+    ],
+    "contraindications": [
+      "NSAID hypersensitivity",
+      "Active peptic ulcer",
+      "Severe renal impairment"
+    ],
+    "side_effects": [
+      "GI upset",
+      "Headache",
+      "Dizziness",
+      "Edema",
+      "Abdominal pain"
+    ],
+    "dosage": {
+      "adult": "1000mg PO daily, may increase to 2000mg/day in divided doses"
+    },
+    "interactions": [
+      "Warfarin (monitor INR)",
+      "Diuretics (reduced effect)",
+      "ACE inhibitors (reduced effect)"
+    ],
+    "monitoring": "GI symptoms, renal function, LFTs",
+    "patient_counselling": "Take with food. Prodrug — converted to active metabolite in GI wall.",
+    "mechanism_of_action": "Non-selective COX inhibitor prodrug. Converted to 6-MNA (active metabolite) in GI wall and liver.",
+    "brand_names": [
+      "Naprelan",
+      "Nabuser"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "GI ulceration",
+      "Cardiovascular risk",
+      "Renal impairment"
+    ],
+    "overdose": "Symptoms: GI upset. Management: supportive care.",
+    "pharmacokinetics": "Oral bioavailability: 35% (as active metabolite). t1/2: 22h (active metabolite). Hepatic metabolism.",
+    "black_box_warnings": [
+      "Risk of GI bleeding",
+      "Risk of cardiovascular events"
+    ],
+    "clinical_pearls": [
+      "Prodrug — less direct GI irritation",
+      "Once or twice daily dosing",
+      "Lower GI toxicity than most NSAIDs",
+      "Good choice for patients with GI sensitivity to other NSAIDs"
+    ]
+  },
+  {
+    "id": "new-b1-017",
+    "name": "Fenoprofen",
+    "generic_name": "Fenoprofen calcium",
+    "drug_class": "NSAID (propionic acid)",
+    "drug_class_name": "Analgesics - NSAIDs",
+    "indications": [
+      "Osteoarthritis",
+      "Rheumatoid arthritis",
+      "Mild to moderate pain"
+    ],
+    "contraindications": [
+      "NSAID hypersensitivity",
+      "Active peptic ulcer"
+    ],
+    "side_effects": [
+      "GI upset",
+      "Headache",
+      "Dizziness",
+      "Rash",
+      "Interstitial nephritis (rare)"
+    ],
+    "dosage": {
+      "adult": "300-600mg PO TID-QID (max 3200mg/day)"
+    },
+    "interactions": [
+      "Anticoagulants (increased bleeding)",
+      "Lithium (increased levels)"
+    ],
+    "monitoring": "Renal function, GI symptoms",
+    "patient_counselling": "Take with food or milk. Report decreased urine output.",
+    "mechanism_of_action": "Non-selective COX-1/COX-2 inhibitor reducing prostaglandin synthesis.",
+    "brand_names": [
+      "Nalfon"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "GI bleeding risk",
+      "Interstitial nephritis risk",
+      "Fluid retention"
+    ],
+    "overdose": "Symptoms: nausea, vomiting, headache. Management: supportive care.",
+    "pharmacokinetics": "Oral bioavailability: 85%. t1/2: 3h. Hepatic metabolism. Protein binding: 99%.",
+    "black_box_warnings": [
+      "Risk of GI adverse events"
+    ],
+    "clinical_pearls": [
+      "Higher protein binding than other propionic acid NSAIDs",
+      "Interstitial nephritis reported more with fenoprofen",
+      "Good analgesic for mild-moderate pain"
+    ]
+  },
+  {
+    "id": "new-b1-018",
+    "name": "Ketoprofen",
+    "generic_name": "Ketoprofen",
+    "drug_class": "NSAID (propionic acid)",
+    "drug_class_name": "Analgesics - NSAIDs",
+    "indications": [
+      "Osteoarthritis",
+      "Rheumatoid arthritis",
+      "Dysmenorrhea",
+      "Mild to moderate pain"
+    ],
+    "contraindications": [
+      "NSAID hypersensitivity",
+      "Active peptic ulcer"
+    ],
+    "side_effects": [
+      "GI upset",
+      "Headache",
+      "Dizziness",
+      "Edema"
+    ],
+    "dosage": {
+      "adult": "25-50mg PO TID-QID or 200mg ER daily"
+    },
+    "interactions": [
+      "Warfarin (increased INR)",
+      "Lithium (increased levels)",
+      "Methotrexate (toxicity)"
+    ],
+    "monitoring": "GI symptoms, renal function, LFTs",
+    "patient_counselling": "Take with food. Available as ER formulation for once-daily dosing.",
+    "mechanism_of_action": "Non-selective COX-1/COX-2 inhibitor with potent analgesic and anti-inflammatory properties.",
+    "brand_names": [
+      "Orudis",
+      "Ketoprofen"
+    ],
+    "pregnancy_category": "C (D at >30 weeks)",
+    "warnings": [
+      "GI bleeding",
+      "Cardiovascular risk",
+      "Renal impairment"
+    ],
+    "overdose": "Symptoms: GI upset, drowsiness. Management: supportive care.",
+    "pharmacokinetics": "Oral bioavailability: 90%. t1/2: 3-5h. Hepatic metabolism. Protein binding: 99%.",
+    "black_box_warnings": [
+      "Risk of GI adverse events",
+      "Risk of cardiovascular events"
+    ],
+    "clinical_pearls": [
+      "Good for dysmenorrhea",
+      "Available as topical gel (Solaraze-like formulations in some countries)",
+      "ER formulation allows once-daily dosing"
+    ]
+  },
+  {
+    "id": "new-b1-019",
+    "name": "Oxaprozin",
+    "generic_name": "Oxaprozin",
+    "drug_class": "NSAID (propionic acid)",
+    "drug_class_name": "Analgesics - NSAIDs",
+    "indications": [
+      "Osteoarthritis",
+      "Rheumatoid arthritis",
+      "Mild to moderate pain"
+    ],
+    "contraindications": [
+      "NSAID hypersensitivity",
+      "Active peptic ulcer"
+    ],
+    "side_effects": [
+      "GI upset",
+      "Headache",
+      "Dizziness",
+      "Edema",
+      "Rash"
+    ],
+    "dosage": {
+      "adult": "600-1200mg PO daily"
+    },
+    "interactions": [
+      "Anticoagulants (increased bleeding)",
+      "Lithium (increased levels)"
+    ],
+    "monitoring": "GI symptoms, renal function",
+    "patient_counselling": "Take with food. Once-daily dosing.",
+    "mechanism_of_action": "Non-selective COX-1/COX-2 inhibitor with long half-life allowing once-daily dosing.",
+    "brand_names": [
+      "Daypro"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "GI bleeding",
+      "Cardiovascular risk"
+    ],
+    "overdose": "Symptoms: GI upset. Management: supportive care.",
+    "pharmacokinetics": "Oral bioavailability: 95%. t1/2: 40-60h. Hepatic metabolism (CYP2C9). Protein binding: 99%.",
+    "black_box_warnings": [
+      "Risk of GI adverse events"
+    ],
+    "clinical_pearls": [
+      "Long half-life — once-daily dosing",
+      "Similar efficacy to naproxen",
+      "Good for compliance with chronic conditions"
+    ]
+  },
+  {
+    "id": "new-b1-020",
+    "name": "Flurbiprofen",
+    "generic_name": "Flurbiprofen",
+    "drug_class": "NSAID (propionic acid)",
+    "drug_class_name": "Analgesics - NSAIDs",
+    "indications": [
+      "Osteoarthritis",
+      "Rheumatoid arthritis",
+      "Acute pain",
+      "Dysmenorrhea"
+    ],
+    "contraindications": [
+      "NSAID hypersensitivity",
+      "Active peptic ulcer"
+    ],
+    "side_effects": [
+      "GI upset",
+      "Headache",
+      "Dizziness",
+      "Edema"
+    ],
+    "dosage": {
+      "adult": "50-100mg PO TID-QID (max 300mg/day)"
+    },
+    "interactions": [
+      "Warfarin (increased INR)",
+      "Lithium (increased levels)"
+    ],
+    "monitoring": "GI symptoms, renal function",
+    "patient_counselling": "Take with food. Available as ophthalmic solution for intraoperative miosis prevention.",
+    "mechanism_of_action": "Non-selective COX-1/COX-2 inhibitor reducing prostaglandin synthesis.",
+    "brand_names": [
+      "Ansaid",
+      "Ocufen"
+    ],
+    "pregnancy_category": "C (D at >30 weeks)",
+    "warnings": [
+      "GI bleeding",
+      "Cardiovascular risk"
+    ],
+    "overdose": "Symptoms: GI upset. Management: supportive care.",
+    "pharmacokinetics": "Oral bioavailability: 96%. t1/2: 5-6h. Hepatic metabolism. Protein binding: 99%.",
+    "black_box_warnings": [
+      "Risk of GI adverse events"
+    ],
+    "clinical_pearls": [
+      "Ophthalmic solution (Ocufen) used intraoperatively to prevent miosis",
+      "Good analgesic with moderate half-life",
+      "Propionic acid derivative — similar class to ibuprofen and naproxen"
+    ]
+  },
+  {
+    "id": "new-b1-021",
+    "name": "Sulindac",
+    "generic_name": "Sulindac",
+    "drug_class": "NSAID (prodrug, sulfinylacetic acid)",
+    "drug_class_name": "Analgesics - NSAIDs",
+    "indications": [
+      "Osteoarthritis",
+      "Rheumatoid arthritis",
+      "Ankylosing spondylitis",
+      "Familial adenomatous polyposis (chemoprevention)"
+    ],
+    "contraindications": [
+      "NSAID hypersensitivity",
+      "Active peptic ulcer",
+      "Hepatic impairment"
+    ],
+    "side_effects": [
+      "GI upset",
+      "Headache",
+      "Rash",
+      "Hepatotoxicity",
+      "Hypersensitivity reactions"
+    ],
+    "dosage": {
+      "adult": "150-200mg PO BID (max 400mg/day)"
+    },
+    "interactions": [
+      "Cyclosporine (increased nephrotoxicity)",
+      "DMSO (reduces sulindac effectiveness)",
+      "Warfarin (increased INR)"
+    ],
+    "monitoring": "LFTs, renal function, GI symptoms",
+    "patient_counselling": "Take with food. Prodrug — requires hepatic activation. Report jaundice or dark urine.",
+    "mechanism_of_action": "Prodrug converted to active sulfide metabolite, which inhibits COX. Also has COX-independent anti-tumor effects.",
+    "brand_names": [
+      "Clinoril"
+    ],
+    "pregnancy_category": "C (D at >30 weeks)",
+    "warnings": [
+      "Hepatotoxicity risk",
+      "GI bleeding",
+      "Renal papillary necrosis"
+    ],
+    "overdose": "Symptoms: GI upset, drowsiness. Management: supportive care.",
+    "pharmacokinetics": "Oral bioavailability: 50% (as active metabolite). t1/2: 7-8h (active metabolite 16h). Hepatic metabolism.",
+    "black_box_warnings": [
+      "Risk of GI adverse events"
+    ],
+    "clinical_pearls": [
+      "Prodrug — active metabolite has longer half-life",
+      "Chemopreventive properties for colorectal cancer/polyps",
+      "May reduce GI toxicity compared to non-prodrug NSAIDs",
+      "Hepatotoxicity — monitor LFTs"
+    ]
+  },
+  {
+    "id": "new-b1-022",
+    "name": "Tolmetin",
+    "generic_name": "Tolmetin sodium",
+    "drug_class": "NSAID (acetic acid)",
+    "drug_class_name": "Analgesics - NSAIDs",
+    "indications": [
+      "Osteoarthritis",
+      "Rheumatoid arthritis",
+      "Juvenile rheumatoid arthritis"
+    ],
+    "contraindications": [
+      "NSAID hypersensitivity",
+      "Active peptic ulcer"
+    ],
+    "side_effects": [
+      "GI upset",
+      "Headache",
+      "Dizziness",
+      "Edema"
+    ],
+    "dosage": {
+      "adult": "400-600mg PO TID (max 1800mg/day)"
+    },
+    "interactions": [
+      "Anticoagulants (increased bleeding)",
+      "Lithium (increased levels)"
+    ],
+    "monitoring": "GI symptoms, renal function",
+    "patient_counselling": "Take with food or milk.",
+    "mechanism_of_action": "Non-selective COX-1/COX-2 inhibitor.",
+    "brand_names": [
+      "Tolectin"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "GI bleeding",
+      "Cardiovascular risk"
+    ],
+    "overdose": "Symptoms: GI upset. Management: supportive care.",
+    "pharmacokinetics": "Oral bioavailability: high. t1/2: 1-2h. Hepatic metabolism. Protein binding: 99%.",
+    "black_box_warnings": [
+      "Risk of GI adverse events"
+    ],
+    "clinical_pearls": [
+      "Short half-life requiring TID dosing",
+      "Used in JIA",
+      "Acetic acid derivative — similar to indomethacin and diclofenac"
+    ]
+  },
+  {
+    "id": "new-b1-023",
+    "name": "Etodolac",
+    "generic_name": "Etodolac",
+    "drug_class": "NSAID (acetic acid, COX-2 preferential)",
+    "drug_class_name": "Analgesics - NSAIDs",
+    "indications": [
+      "Osteoarthritis",
+      "Rheumatoid arthritis",
+      "Acute pain",
+      "Mild to moderate pain"
+    ],
+    "contraindications": [
+      "NSAID hypersensitivity",
+      "Active peptic ulcer"
+    ],
+    "side_effects": [
+      "GI upset",
+      "Headache",
+      "Dizziness",
+      "Edema",
+      "Abdominal pain"
+    ],
+    "dosage": {
+      "adult": "200-400mg PO TID-QID (max 1200mg/day)"
+    },
+    "interactions": [
+      "Warfarin (increased INR)",
+      "Lithium (increased levels)",
+      "Digoxin (increased levels)"
+    ],
+    "monitoring": "GI symptoms, renal function, LFTs",
+    "patient_counselling": "Take with food. Short-term use preferred.",
+    "mechanism_of_action": "Preferential COX-2 inhibitor with less COX-1 inhibition, potentially lower GI toxicity.",
+    "brand_names": [
+      "Ultradol",
+      "Lodine"
+    ],
+    "pregnancy_category": "C (D at >30 weeks)",
+    "warnings": [
+      "GI bleeding risk",
+      "Cardiovascular risk",
+      "Renal impairment"
+    ],
+    "overdose": "Symptoms: GI upset. Management: supportive care.",
+    "pharmacokinetics": "Oral bioavailability: high. t1/2: 6-7h. Hepatic metabolism. Protein binding: 99%.",
+    "black_box_warnings": [
+      "Risk of GI adverse events"
+    ],
+    "clinical_pearls": [
+      "COX-2 preferential — less GI toxicity than non-selective NSAIDs",
+      "Short-term analgesic use preferred",
+      "Good option for acute pain"
+    ]
+  },
+  {
+    "id": "new-b1-024",
+    "name": "Nefopam",
+    "generic_name": "Nefopam hydrochloride",
+    "drug_class": "Non-opioid analgesic (centrally acting)",
+    "drug_class_name": "Analgesics - Centrally Acting",
+    "indications": [
+      "Moderate acute pain",
+      "Postoperative pain"
+    ],
+    "contraindications": [
+      "Epilepsy",
+      "Concomitant MAOIs",
+      "Narrow-angle glaucoma"
+    ],
+    "side_effects": [
+      "Nausea",
+      "Dizziness",
+      "Dry mouth",
+      "Sweating",
+      "Somnolence"
+    ],
+    "dosage": {
+      "adult": "20-30mg IM/IV/PO q6h (max 120mg/day)"
+    },
+    "interactions": [
+      "MAOIs (serotonin syndrome risk)",
+      "SSRIs (serotonin syndrome risk)",
+      "Opioids (additive analgesia)"
+    ],
+    "monitoring": "Pain scores, sedation, heart rate",
+    "patient_counselling": "Non-narcotic analgesic. May cause drowsiness. Avoid MAOIs.",
+    "mechanism_of_action": "Inhibits reuptake of serotonin, norepinephrine, and dopamine in CNS. Also has NMDA receptor antagonist properties.",
+    "brand_names": [
+      "Acupan",
+      "Nefopam"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Seizure risk",
+      "Serotonin syndrome with serotonergic drugs",
+      "Not available in US"
+    ],
+    "overdose": "Symptoms: seizures, serotonin syndrome, tachycardia. Management: supportive care.",
+    "pharmacokinetics": "Oral bioavailability: 36%. t1/2: 4-5h. Hepatic metabolism. Protein binding: 71%.",
+    "black_box_warnings": [
+      "Risk of seizures"
+    ],
+    "clinical_pearls": [
+      "Non-opioid, non-NSAID analgesic",
+      "Commonly used in Europe and Asia, not available in US",
+      "Good opioid-sparing agent",
+      "Intranasal formulation available"
+    ]
+  },
+  {
+    "id": "new-b1-025",
+    "name": "Paracetamol IV",
+    "generic_name": "Acetaminophen (IV formulation)",
+    "drug_class": "Non-opioid analgesic/antipyretic",
+    "drug_class_name": "Analgesics - Non-opioid",
+    "indications": [
+      "Moderate pain",
+      "Fever",
+      "As adjunct to opioids"
+    ],
+    "contraindications": [
+      "Hypersensitivity to acetaminophen",
+      "Severe hepatic impairment"
+    ],
+    "side_effects": [
+      "Hepatotoxicity (overdose)",
+      "Infusion site reactions",
+      "Hypotension (rapid infusion)"
+    ],
+    "dosage": {
+      "adult": "IV: 1000mg q6h (max 4g/day). Infuse over 15 minutes."
+    },
+    "interactions": [
+      "Warfarin (increased INR with chronic use)",
+      "CYP2E1 inducers (isoniazid — increased hepatotoxicity risk)"
+    ],
+    "monitoring": "LFTs, hepatic function, temperature, pain scores",
+    "patient_counselling": "IV formulation provides rapid onset. Monitor for signs of liver injury.",
+    "mechanism_of_action": "Inhibits COX-2 centrally and in spinal cord. Also activates descending serotonergic pathways. Exact mechanism not fully understood.",
+    "brand_names": [
+      "Ofirmev",
+      "Acetaminophen IV"
+    ],
+    "pregnancy_category": "B",
+    "warnings": [
+      "Hepatotoxicity risk especially with alcohol use or malnutrition",
+      "Rapid IV infusion may cause hypotension"
+    ],
+    "overdose": "Symptoms: nausea, vomiting, right upper quadrant pain, hepatic failure. Management: N-acetylcysteine (NAC) within 8 hours.",
+    "pharmacokinetics": "IV bioavailability: 100%. Onset: 5-10 min. t1/2: 2-3h. Hepatic metabolism (CYP2E1). Renal excretion.",
+    "black_box_warnings": [
+      "Risk of severe hepatotoxicity in overdose"
+    ],
+    "clinical_pearls": [
+      "IV formulation: 1g over 15 min",
+      "Faster onset than oral for acute pain",
+      "Max 4g/day in healthy adults, 2g/day in liver disease or alcohol use",
+      "NAC is the antidote — most effective within 8 hours of overdose"
+    ]
+  },
+  {
+    "id": "new-b1-026",
+    "name": "Aspirin (low-dose)",
+    "generic_name": "Acetylsalicylic acid (low-dose)",
+    "drug_class": "Antiplatelet (irreversible COX inhibitor)",
+    "drug_class_name": "Analgesics - Antiplatelet",
+    "indications": [
+      "Cardiovascular prophylaxis",
+      "Stroke prevention",
+      "Post-MI",
+      "Post-PCI"
+    ],
+    "contraindications": [
+      "Active peptic ulcer",
+      "Bleeding disorders",
+      "G6PD deficiency (high dose)",
+      "Children with viral illness (Reye syndrome)"
+    ],
+    "side_effects": [
+      "GI bleeding",
+      "Tinnitus (dose-dependent)",
+      "Easy bruising"
+    ],
+    "dosage": {
+      "adult": "75-325mg PO daily"
+    },
+    "interactions": [
+      "Anticoagulants (increased bleeding)",
+      "Methotrexate (reduced clearance)",
+      "ACE inhibitors (reduced effect)",
+      "Ibuprofen (may reduce cardioprotective effect)"
+    ],
+    "monitoring": "Signs of bleeding, GI symptoms, tinnitus",
+    "patient_counselling": "Take with food. Do not take ibuprofen at same time (blocks cardioprotective effect).",
+    "mechanism_of_action": "Irreversibly acetylates COX-1 in platelets, blocking thromboxane A2 synthesis and platelet aggregation for platelet lifetime (~10 days).",
+    "brand_names": [
+      "Bayer Low-Dose",
+      "Ecotrin"
+    ],
+    "pregnancy_category": "C (D at >30 weeks)",
+    "warnings": [
+      "GI bleeding",
+      "Reye syndrome in children",
+      "Tinnitus with high doses"
+    ],
+    "overdose": "Symptoms: tinnitus, hearing loss, metabolic acidosis, hyperventilation, CNS depression. Management: sodium bicarbonate, activated charcoal.",
+    "pharmacokinetics": "Oral bioavailability: 68%. t1/2: 15-20 min (aspirin), 2-3h (salicylate). Irreversible platelet inhibition.",
+    "black_box_warnings": [
+      "Risk of GI bleeding",
+      "Risk of hemorrhagic stroke (with high doses)"
+    ],
+    "clinical_pearls": [
+      "75-100mg is optimal antiplatelet dose",
+      "Higher doses needed for anti-inflammatory effect",
+      "Do NOT give to children <16 with viral illness (Reye syndrome)",
+      "Ibuprofen taken before aspirin blocks cardioprotective effect"
+    ]
+  },
+  {
+    "id": "new-b1-027",
+    "name": "Celecoxib/Acetaminophen",
+    "generic_name": "Celecoxib/Acetaminophen combination",
+    "drug_class": "COX-2 inhibitor + Non-opioid analgesic",
+    "drug_class_name": "Analgesics - Combination",
+    "indications": [
+      "Acute pain",
+      "Osteoarthritis pain"
+    ],
+    "contraindications": [
+      "Severe hepatic impairment",
+      "NSAID hypersensitivity",
+      "Sulfonamide allergy"
+    ],
+    "side_effects": [
+      "GI upset",
+      "Headache",
+      "Hepatotoxicity (with overdose)"
+    ],
+    "dosage": {
+      "adult": "Celecoxib 200mg + Acetaminophen 500mg PO BID-TID"
+    },
+    "interactions": [
+      "Warfarin (increased INR)",
+      "Hepatotoxic drugs"
+    ],
+    "monitoring": "LFTs, GI symptoms, renal function",
+    "patient_counselling": "Take with food. Do not exceed 4g acetaminophen/day from all sources.",
+    "mechanism_of_action": "Dual COX-2 inhibition (peripheral inflammation) + central analgesic (acetaminophen) providing additive pain relief.",
+    "brand_names": [
+      "Combunox"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Hepatotoxicity",
+      "GI bleeding",
+      "Cardiovascular risk"
+    ],
+    "overdose": "Symptoms: GI upset, hepatotoxicity. Management: NAC for acetaminophen component.",
+    "pharmacokinetics": "Combination product — individual pharmacokinetics apply.",
+    "black_box_warnings": [
+      "Risk of hepatotoxicity"
+    ],
+    "clinical_pearls": [
+      "Combination provides additive analgesia",
+      "Lower NSAID dose needed when combined with acetaminophen",
+      "Good for patients who need multi-modal pain management"
+    ]
+  },
+  {
+    "id": "new-b1-028",
+    "name": "Tramadol/Acetaminophen",
+    "generic_name": "Tramadol hydrochloride/Acetaminophen",
+    "drug_class": "Opioid agonist + Non-opioid analgesic",
+    "drug_class_name": "Analgesics - Combination",
+    "indications": [
+      "Moderate pain"
+    ],
+    "contraindications": [
+      "Severe hepatic impairment",
+      "Concomitant MAOIs",
+      "Uncontrolled epilepsy"
+    ],
+    "side_effects": [
+      "Nausea",
+      "Dizziness",
+      "Constipation",
+      "Somnolence",
+      "Serotonin syndrome risk"
+    ],
+    "dosage": {
+      "adult": "Tramadol 37.5mg + Acetaminophen 325mg, 1-2 tabs PO q4-6h PRN (max 8 tabs/day)"
+    },
+    "interactions": [
+      "SSRIs/SNRIs (serotonin syndrome)",
+      "Carbamazepine (reduced tramadol levels)",
+      "CYP2D6 inhibitors"
+    ],
+    "monitoring": "Pain scores, respiratory rate, sedation, liver function",
+    "patient_counselling": "Do not exceed 3g acetaminophen/day from all sources. Avoid alcohol.",
+    "mechanism_of_action": "Dual mechanism: weak mu-opioid agonist + SNRI (tramadol) combined with central COX inhibition (acetaminophen).",
+    "brand_names": [
+      "Ultracet"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Seizure risk",
+      "Serotonin syndrome",
+      "Respiratory depression",
+      "Hepatotoxicity with overdose"
+    ],
+    "overdose": "Symptoms: seizures, serotonin syndrome, hepatotoxicity. Management: naloxone, NAC.",
+    "pharmacokinetics": "Tramadol: t1/2 6h. Acetaminophen: t1/2 2-3h. Both hepatically metabolized.",
+    "black_box_warnings": [
+      "Risk of respiratory depression",
+      "Risk of seizures",
+      "Risk of serotonin syndrome"
+    ],
+    "clinical_pearls": [
+      "Reduces tramadol dose needed — less seizure risk",
+      "Common post-surgical combination",
+      "Max 8 tablets/day to limit acetaminophen intake"
+    ]
+  },
+  {
+    "id": "new-b1-029",
+    "name": "Hydrocodone/Acetaminophen",
+    "generic_name": "Hydrocodone bitartrate/Acetaminophen",
+    "drug_class": "Opioid agonist + Non-opioid analgesic",
+    "drug_class_name": "Analgesics - Combination",
+    "indications": [
+      "Moderate to severe pain"
+    ],
+    "contraindications": [
+      "Severe respiratory depression",
+      "Acute or severe GI paralytic ileus",
+      "Hepatic impairment"
+    ],
+    "side_effects": [
+      "Constipation",
+      "Nausea",
+      "Somnolence",
+      "Dizziness",
+      "Pruritus"
+    ],
+    "dosage": {
+      "adult": "Hydrocodone 2.5-10mg + Acetaminophen 300-325mg PO q4-6h PRN (max 6 tabs/day)"
+    },
+    "interactions": [
+      "Benzodiazepines (CNS depression)",
+      "MAOIs",
+      "CYP3A4 inhibitors"
+    ],
+    "monitoring": "Pain scores, respiratory rate, sedation, bowel function",
+    "patient_counselling": "Take as directed. Do not exceed 4g acetaminophen/day from all sources. Avoid alcohol.",
+    "mechanism_of_action": "Mu-opioid receptor agonist (hydrocodone) + central COX inhibition (acetaminophen).",
+    "brand_names": [
+      "Vicodin",
+      "Norco",
+      "Lortab"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Addiction/abuse risk",
+      "Respiratory depression",
+      "Hepatotoxicity (acetaminophen component)"
+    ],
+    "overdose": "Symptoms: respiratory depression, CNS depression, hepatotoxicity. Management: naloxone, NAC.",
+    "pharmacokinetics": "Hydrocodone: t1/2 4h. Acetaminophen: t1/2 2-3h. Hepatic metabolism.",
+    "black_box_warnings": [
+      "Risk of respiratory depression",
+      "Risk of addiction, abuse, and misuse",
+      "Risk of neonatal withdrawal syndrome"
+    ],
+    "clinical_pearls": [
+      "Schedule II opioid (reclassified from III in 2014)",
+      "Most prescribed opioid in US historically",
+      "Norco preferred over Vicodin (lower acetaminophen content)"
+    ]
+  },
+  {
+    "id": "new-b1-030",
+    "name": "Oxycodone/Acetaminophen",
+    "generic_name": "Oxycodone hydrochloride/Acetaminophen",
+    "drug_class": "Opioid agonist + Non-opioid analgesic",
+    "drug_class_name": "Analgesics - Combination",
+    "indications": [
+      "Moderate to severe pain"
+    ],
+    "contraindications": [
+      "Severe respiratory depression",
+      "Acute or severe GI paralytic ileus",
+      "Hepatic impairment"
+    ],
+    "side_effects": [
+      "Constipation",
+      "Nausea",
+      "Somnolence",
+      "Dizziness",
+      "Pruritus"
+    ],
+    "dosage": {
+      "adult": "Oxycodone 2.5-10mg + Acetaminophen 325mg PO q4-6h PRN (max 6 tabs/day)"
+    },
+    "interactions": [
+      "Benzodiazepines (CNS depression)",
+      "MAOIs",
+      "CYP3A4 inhibitors"
+    ],
+    "monitoring": "Pain scores, respiratory rate, sedation, bowel function",
+    "patient_counselling": "Take as directed. Do not exceed 4g acetaminophen/day. Avoid alcohol.",
+    "mechanism_of_action": "Mu-opioid receptor agonist (oxycodone) + central COX inhibition (acetaminophen).",
+    "brand_names": [
+      "Percocet",
+      "Endocet"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Addiction/abuse risk",
+      "Respiratory depression",
+      "Hepatotoxicity (acetaminophen component)"
+    ],
+    "overdose": "Symptoms: respiratory depression, hepatotoxicity. Management: naloxone, NAC.",
+    "pharmacokinetics": "Oxycodone: t1/2 3-4.5h. Acetaminophen: t1/2 2-3h. Hepatic metabolism.",
+    "black_box_warnings": [
+      "Risk of respiratory depression",
+      "Risk of addiction, abuse, and misuse"
+    ],
+    "clinical_pearls": [
+      "More potent per mg than hydrocodone",
+      "Available in generic, reducing cost",
+      "Percocet reformulated to limit tablet abuse"
+    ]
+  },
+  {
+    "id": "new-b1-031",
+    "name": "Codeine/Acetaminophen",
+    "generic_name": "Codeine phosphate/Acetaminophen",
+    "drug_class": "Opioid agonist (prodrug) + Non-opioid analgesic",
+    "drug_class_name": "Analgesics - Combination",
+    "indications": [
+      "Mild to moderate pain",
+      "Cough"
+    ],
+    "contraindications": [
+      "Children <12 years",
+      "CYP2D6 ultrarapid metabolizers",
+      "Severe respiratory depression",
+      "Acute abdomen"
+    ],
+    "side_effects": [
+      "Constipation",
+      "Nausea",
+      "Somnolence",
+      "Dizziness"
+    ],
+    "dosage": {
+      "adult": "Codeine 15-60mg + Acetaminophen 300-500mg PO q4-6h PRN"
+    },
+    "interactions": [
+      "SSRIs (serotonin syndrome risk)",
+      "CYP2D6 inhibitors (reduced effect)",
+      "MAOIs"
+    ],
+    "monitoring": "Pain scores, respiratory rate, sedation",
+    "patient_counselling": "Prodrug — effectiveness depends on CYP2D6 metabolism. Some patients cannot convert to active morphine.",
+    "mechanism_of_action": "Codeine (prodrug) → CYP2D6 → morphine (active) for mu-opioid agonism. Acetaminophen provides central analgesia.",
+    "brand_names": [
+      "Tylenol with Codeine",
+      "Capital with Codeine"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Respiratory depression in CYP2D6 ultrarapid metabolizers",
+      "Not recommended in children <12",
+      "Dependence risk"
+    ],
+    "overdose": "Symptoms: respiratory depression, hepatotoxicity. Management: naloxone, NAC.",
+    "pharmacokinetics": "Codeine: t1/2 3h. Prodrug → morphine via CYP2D6. Acetaminophen: t1/2 2-3h.",
+    "black_box_warnings": [
+      "Risk of respiratory depression",
+      "Risk of addiction"
+    ],
+    "clinical_pearls": [
+      "CYP2D6 polymorphism makes response unpredictable",
+      "FDA black box: not recommended in children <12 for pain",
+      "30% of population are CYP2D6 poor metabolizers — codeine ineffective",
+      "6-7% are ultrarapid metabolizers — risk of toxicity"
+    ]
+  },
+  {
+    "id": "new-b1-032",
+    "name": "Tramadol/Sumatriptan",
+    "generic_name": "Tramadol/Sumatriptan combination",
+    "drug_class": "Opioid agonist + 5-HT1B/1D agonist",
+    "drug_class_name": "Analgesics - Combination",
+    "indications": [
+      "Migraine"
+    ],
+    "contraindications": [
+      "Concomitant MAOIs",
+      "Uncontrolled hypertension",
+      "Ischemic heart disease",
+      "Concomitant SSRIs/SNRIs"
+    ],
+    "side_effects": [
+      "Serotonin syndrome",
+      "Nausea",
+      "Dizziness",
+      "Somnolence"
+    ],
+    "dosage": {
+      "adult": "As formulated in clinical trials (investigational combination)"
+    },
+    "interactions": [
+      "SSRIs/SNRIs (serotonin syndrome)",
+      "MAOIs (contraindicated)",
+      "Triptans (additive vasoconstriction)"
+    ],
+    "monitoring": "BP, neurological status, serotonin syndrome signs",
+    "patient_counselling": "Avoid alcohol. Report chest pain, shortness of breath.",
+    "mechanism_of_action": "Dual 5-HT agonism (sumatriptan) + opioid agonism/SNRI (tramadol) targeting multiple migraine pathways.",
+    "brand_names": [
+      "Investigational"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Serotonin syndrome risk",
+      "Cardiovascular events",
+      "Not widely available"
+    ],
+    "overdose": "Symptoms: serotonin syndrome, respiratory depression. Management: supportive care.",
+    "pharmacokinetics": "Both hepatically metabolized.",
+    "black_box_warnings": [
+      "Risk of serotonin syndrome"
+    ],
+    "clinical_pearls": [
+      "Combination targets both vascular and central migraine mechanisms",
+      "Investigational combination",
+      "Similar concept to Cafergot (ergotamine/caffeine)"
+    ]
+  },
+  {
+    "id": "new-b1-033",
+    "name": "Butorphanol",
+    "generic_name": "Butorphanol tartrate",
+    "drug_class": "Mixed opioid agonist-antagonist",
+    "drug_class_name": "Analgesics - Mixed Agonist-Antagonist",
+    "indications": [
+      "Moderate to severe pain",
+      "Migraine (nasal spray)",
+      "Preoperative analgesia",
+      "Post-surgical pain"
+    ],
+    "contraindications": [
+      "Narcotic dependence",
+      "Severe respiratory depression"
+    ],
+    "side_effects": [
+      "Somnolence",
+      "Dizziness",
+      "Nausea",
+      "Sweating",
+      "Hallucinations (high doses)"
+    ],
+    "dosage": {
+      "adult": "IM/IV: 1-4mg q3-4h PRN. Nasal: 1mg q3-4h (max 4 doses/day)"
+    },
+    "interactions": [
+      "CNS depressants (additive depression)",
+      "MAOIs"
+    ],
+    "monitoring": "Pain scores, respiratory rate, sedation",
+    "patient_counselling": "Nasal spray: blow nose first, insert tip, inhale. May cause bitter taste.",
+    "mechanism_of_action": "Kappa agonist / partial mu agonist / weak mu antagonist. Provides analgesia with less respiratory depression than full agonists.",
+    "brand_names": [
+      "Stadol"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Precipitated withdrawal in opioid-dependent patients",
+      "Hallucinations at high doses",
+      "Physical dependence"
+    ],
+    "overdose": "Symptoms: respiratory depression, CNS depression. Management: naloxone.",
+    "pharmacokinetics": "IM onset: 10min. IV onset: minutes. t1/2: 4-5h. Nasal bioavailability: 60-70%. Hepatic metabolism.",
+    "black_box_warnings": [
+      "Risk of respiratory depression",
+      "Risk of precipitated withdrawal"
+    ],
+    "clinical_pearls": [
+      "Kappa agonism provides analgesia without full mu effects",
+      "Nasal formulation useful when IV access unavailable",
+      "Less euphoria than full agonists — less abuse potential",
+      "Mixed agonist-antagonist — caution in opioid-tolerant patients"
+    ]
+  },
+  {
+    "id": "new-b1-034",
+    "name": "Pentazocine",
+    "generic_name": "Pentazocine hydrochloride",
+    "drug_class": "Mixed opioid agonist-antagonist",
+    "drug_class_name": "Analgesics - Mixed Agonist-Antagonist",
+    "indications": [
+      "Moderate to severe pain"
+    ],
+    "contraindications": [
+      "Narcotic dependence",
+      "Severe respiratory depression",
+      "Acute MI"
+    ],
+    "side_effects": [
+      "Somnolence",
+      "Dizziness",
+      "Nausea",
+      "Sweating",
+      "Psychotomimetic effects"
+    ],
+    "dosage": {
+      "adult": "50-100mg PO q3-4h PRN (max 600mg/day). IM/IV: 30-60mg q3-4h."
+    },
+    "interactions": [
+      "CNS depressants",
+      "MAOIs",
+      "Naltrexone (reduces analgesia)"
+    ],
+    "monitoring": "Pain scores, respiratory rate, sedation, psychological effects",
+    "patient_counselling": "May cause hallucinations or dysphoria. Avoid driving.",
+    "mechanism_of_action": "Kappa agonist / partial mu agonist. Produces analgesia with ceiling effect for respiratory depression.",
+    "brand_names": [
+      "Talwin"
+    ],
+    "pregnancy_category": "C (D at >30 weeks)",
+    "warnings": [
+      "Psychotomimetic effects",
+      "Physical dependence",
+      "Precipitated withdrawal"
+    ],
+    "overdose": "Symptoms: CNS depression, respiratory depression, psychotomimetic effects. Management: naloxone.",
+    "pharmacokinetics": "Oral bioavailability: 50-60%. t1/2: 2-3h. Hepatic metabolism.",
+    "black_box_warnings": [
+      "Risk of respiratory depression",
+      "Risk of psychotomimetic effects"
+    ],
+    "clinical_pearls": [
+      "Ceiling effect for respiratory depression",
+      "Kappa agonism — dysphoric and hallucinogenic effects",
+      "Less commonly used due to psychotomimetic effects",
+      "Schedule IV controlled substance"
+    ]
+  },
+  {
+    "id": "new-b1-035",
+    "name": "Meperidine",
+    "generic_name": "Meperidine hydrochloride",
+    "drug_class": "Synthetic opioid agonist",
+    "drug_class_name": "Analgesics - Opioid Agonists",
+    "indications": [
+      "Moderate to severe pain",
+      "Shivering (post-anesthesia)"
+    ],
+    "contraindications": [
+      "Concomitant MAOIs (contraindicated — fatal)",
+      "Severe respiratory depression",
+      "GI obstruction"
+    ],
+    "side_effects": [
+      "Seizures (normeperidine accumulation)",
+      "Tremor",
+      "Myoclonus",
+      "Hallucinations",
+      "Hypertension"
+    ],
+    "dosage": {
+      "adult": "50-150mg IM/PO q3-4h PRN (max 600mg/day, preferably ≤400mg)"
+    },
+    "interactions": [
+      "MAOIs (fatal — contraindicated)",
+      "CYP3A4 inhibitors (increased toxicity)",
+      "CNS depressants"
+    ],
+    "monitoring": "Pain scores, respiratory rate, seizure activity, mental status",
+    "patient_counselling": "Short-term use only. Do not use with MAOIs. Report tremors or seizures.",
+    "mechanism_of_action": "Mu-opioid receptor agonist with local anesthetic properties. Active metabolite (normeperidine) is neurotoxic.",
+    "brand_names": [
+      "Demerol"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Seizures from normeperidine accumulation",
+      "Serotonin syndrome with SSRIs/SNRIs/MAOIs",
+      "QT prolongation"
+    ],
+    "overdose": "Symptoms: seizures, respiratory depression, serotonin syndrome (if with serotonergic drugs). Management: naloxone, benzodiazepines for seizures.",
+    "pharmacokinetics": "Oral bioavailability: 50%. t1/2: 3h (meperidine), 15-30h (normeperidine). Hepatic metabolism.",
+    "black_box_warnings": [
+      "Risk of seizures",
+      "Risk of serotonin syndrome",
+      "Risk of respiratory depression"
+    ],
+    "clinical_pearls": [
+      "AVOID in chronic pain — normeperidine causes seizures",
+      "Use limited to acute setting (e.g., post-surgical shivering)",
+      "Active metabolite normeperidine accumulates with renal impairment",
+      "Not equivalent to morphine — 10mg meperidine ≈ 1.5mg morphine"
+    ]
+  },
+  {
+    "id": "new-b1-036",
+    "name": "Fentanyl sublingual",
+    "generic_name": "Fentanyl sublingual tablet",
+    "drug_class": "Synthetic opioid agonist",
+    "drug_class_name": "Analgesics - Opioid Agonists",
+    "indications": [
+      "Breakthrough cancer pain"
+    ],
+    "contraindications": [
+      "Opioid-naive patients",
+      "Severe respiratory depression",
+      "Acute or severe GI paralytic ileus"
+    ],
+    "side_effects": [
+      "Nausea",
+      "Constipation",
+      "Somnolence",
+      "Dizziness",
+      "Headache"
+    ],
+    "dosage": {
+      "adult": "200mcg SL, titrate in 200mcg increments to effective dose. Max 4 doses per breakthrough episode."
+    },
+    "interactions": [
+      "CYP3A4 inhibitors (increased fentanyl levels)",
+      "CNS depressants (additive depression)",
+      "Benzodiazepines"
+    ],
+    "monitoring": "Pain scores, respiratory rate, sedation",
+    "patient_counselling": "Place tablet under tongue until dissolved. Do not chew or swallow. Avoid eating/drinking for 10 min.",
+    "mechanism_of_action": "Synthetic mu-opioid receptor agonist, 50-100x more potent than morphine. Rapid onset via sublingual absorption.",
+    "brand_names": [
+      "Abstral",
+      "Onsolis"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Respiratory depression (potent opioid)",
+      "Not for opioid-naive patients",
+      "Risk of addiction/abuse"
+    ],
+    "overdose": "Symptoms: respiratory depression, CNS depression, miosis. Management: naloxone.",
+    "pharmacokinetics": "SL bioavailability: 51%. Onset: 5-15 min. Duration: 1-2h. Hepatic metabolism (CYP3A4).",
+    "black_box_warnings": [
+      "Risk of respiratory depression",
+      "Risk of addiction, abuse, and misuse",
+      "Risk of fatal overdose from accidental ingestion"
+    ],
+    "clinical_pearls": [
+      "50-100x more potent than morphine",
+      "Only for breakthrough cancer pain in opioid-tolerant patients",
+      "Available as sublingual tablet (Abstral) and oral film (Onsolis)",
+      "Must be opioid-tolerant (on ≥60mg morphine equivalent daily)"
+    ]
+  },
+  {
+    "id": "new-b1-038",
+    "name": "Hydromorphone",
+    "generic_name": "Hydromorphone hydrochloride",
+    "drug_class": "Opioid agonist",
+    "drug_class_name": "Analgesics - Opioid Agonists",
+    "indications": [
+      "Moderate to severe pain"
+    ],
+    "contraindications": [
+      "Severe respiratory depression",
+      "Acute or severe GI paralytic ileus",
+      "Concomitant MAOIs"
+    ],
+    "side_effects": [
+      "Constipation",
+      "Nausea",
+      "Somnolence",
+      "Dizziness",
+      "Pruritus"
+    ],
+    "dosage": {
+      "adult": "Oral: 2-4mg q4-6h PRN. IV: 0.2-1mg q2-3h PRN. ER: 8mg q12h, titrate."
+    },
+    "interactions": [
+      "CYP3A4 inhibitors (increased levels)",
+      "CNS depressants",
+      "Benzodiazepines"
+    ],
+    "monitoring": "Pain scores, respiratory rate, sedation, bowel function",
+    "patient_counselling": "More potent than morphine (4x). Do not crush ER formulation.",
+    "mechanism_of_action": "Pure mu-opioid receptor agonist. 4-8x more potent than morphine.",
+    "brand_names": [
+      "Dilaudid",
+      "Exalgo"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Respiratory depression",
+      "Addiction/abuse risk",
+      "Do not confuse with hydralazine"
+    ],
+    "overdose": "Symptoms: respiratory depression, CNS depression. Management: naloxone.",
+    "pharmacokinetics": "Oral bioavailability: 30-40%. t1/2: 2-3h. Hepatic metabolism (glucuronidation).",
+    "black_box_warnings": [
+      "Risk of respiratory depression",
+      "Risk of addiction, abuse, and misuse"
+    ],
+    "clinical_pearls": [
+      "4x more potent than morphine (oral equivalency: 1.5mg HM ≈ morphine 6mg)",
+      "Dilaudid (IV) is commonly requested by drug-seeking patients — 'Dilaudid' is a red flag term",
+      "ER formulation: Exalgo (once-daily dosing)",
+      "No active metabolites — safe in renal impairment (preferred over morphine)"
+    ]
+  },
+  {
+    "id": "new-b1-039",
+    "name": "Oxymorphone",
+    "generic_name": "Oxymorphone hydrochloride",
+    "drug_class": "Opioid agonist",
+    "drug_class_name": "Analgesics - Opioid Agonists",
+    "indications": [
+      "Moderate to severe pain"
+    ],
+    "contraindications": [
+      "Severe respiratory depression",
+      "Acute or severe GI paralytic ileus",
+      "Concomitant MAOIs"
+    ],
+    "side_effects": [
+      "Constipation",
+      "Nausea",
+      "Somnolence",
+      "Headache",
+      "Pruritus"
+    ],
+    "dosage": {
+      "adult": "IR: 5-10mg PO q4-6h. ER: 5-10mg q12h. Rectal: 5mg PR q6h."
+    },
+    "interactions": [
+      "CYP3A4 inhibitors",
+      "CNS depressants"
+    ],
+    "monitoring": "Pain scores, respiratory rate, sedation",
+    "patient_counselling": "Available as oral and rectal formulations. Do not crush ER.",
+    "mechanism_of_action": "Pure mu-opioid receptor agonist. 3-7x more potent than morphine.",
+    "brand_names": [
+      "Opana",
+      "Numorphan"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Respiratory depression",
+      "Addiction/abuse risk",
+      "Do not crush ER formulation"
+    ],
+    "overdose": "Symptoms: respiratory depression, CNS depression. Management: naloxone.",
+    "pharmacokinetics": "Oral bioavailability: 10% (high first-pass). t1/2: 7-9h. Hepatic metabolism (glucuronidation).",
+    "black_box_warnings": [
+      "Risk of respiratory depression",
+      "Risk of addiction, abuse, and misuse"
+    ],
+    "clinical_pearls": [
+      "Very high first-pass metabolism — oral bioavailability only 10%",
+      "Opana ER withdrawn from US market (2017) due to abuse via injection",
+      "Rectal formulation bypasses first-pass metabolism",
+      "Active metabolites in renal impairment — use with caution"
+    ]
+  },
+  {
+    "id": "new-b1-040",
+    "name": "Levorphanol",
+    "generic_name": "Levorphanol tartrate",
+    "drug_class": "Opioid agonist (racemic mixture — active enantiomer)",
+    "drug_class_name": "Analgesics - Opioid Agonists",
+    "indications": [
+      "Moderate to severe pain",
+      "Neuropathic pain"
+    ],
+    "contraindications": [
+      "Severe respiratory depression",
+      "Concomitant MAOIs"
+    ],
+    "side_effects": [
+      "Constipation",
+      "Nausea",
+      "Somnolence",
+      "Dizziness"
+    ],
+    "dosage": {
+      "adult": "2-4mg PO/IM/IV q4-6h PRN"
+    },
+    "interactions": [
+      "CNS depressants",
+      "MAOIs",
+      "NMDA antagonists (additive)"
+    ],
+    "monitoring": "Pain scores, respiratory rate, sedation",
+    "patient_counselling": "Available in limited supply. Long-acting analgesic.",
+    "mechanism_of_action": "Mu-opioid agonist + NMDA receptor antagonist + SNRI — triple mechanism analgesic.",
+    "brand_names": [
+      "Levo-Dromoran"
+    ],
+    "pregnancy_category": "C",
+    "warnings": [
+      "Respiratory depression",
+      "Addiction/abuse risk"
+    ],
+    "overdose": "Symptoms: respiratory depression. Management: naloxone.",
+    "pharmacokinetics": "Oral bioavailability: variable. t1/2: 12-16h. Hepatic metabolism.",
+    "black_box_warnings": [
+      "Risk of respiratory depression"
+    ],
+    "clinical_pearls": [
+      "NMDA antagonist properties — good for neuropathic pain",
+      "Long half-life — less frequent dosing",
+      "Racemic mixture — levorphanol is the active enantiomer of racemorphan",
+      "Triple mechanism: opioid + NMDA antagonist + SNRI"
+    ]
+  }
+]

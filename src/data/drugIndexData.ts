@@ -1908,4 +1908,3247 @@ export const BUNDLED_DRUGS: DrugMonograph[] = [
     {"id":"new-ess-048","name":"Voretigene neparvovec","generic_name":"Voretigene neparvovec-rzyl","drug_class":"Gene therapy (AAV vector)","drug_class_id":null,"drug_class_name":"Ophthalmology - Gene therapy","indications":["Inherited retinal dystrophy (RPE65-mediated Leber congenital amaurosis)"],"contraindications":["Ocular infection", "Severe immunocompromise"],"side_effects":["Ocular inflammation", "Conjunctival hyperemia", "Increased intraocular pressure", "Cataracts"],"dosage":{ "adult": "1.5 × 10^11 vg/mL, 0.3mL subretinal injection (single dose per eye)" },"interactions":["Immunosuppressants (may be needed post-procedure)"],"monitoring":"OCT, ERG, intraocular pressure, inflammation","patient_counselling":"Single injection per eye. Avoid rubbing eyes. Use steroid eye drops as prescribed.","mechanism_of_action":"AAV2 gene therapy: delivers functional RPE65 gene to retinal pigment epithelium via adeno-associated virus serotype 2 vector. Restores RPE65 protein, enabling visual cycle and photoreceptor function.","brand_names":["Voretigene neparvovec"],"pregnancy_category":"C","warnings":["Use with caution"],"overdose":"Not applicable — single-dose gene therapy.","pharmacokinetics":"Subretinal: local retinal transduction. No systemic absorption. AAV2 vector episomal — does not integrate.","black_box_warnings":[],"clinical_pearls":["First FDA-approved gene therapy for inherited retinal dystrophy","Luxturna: improves functional vision in RPE65-mutated LCA","Single subretinal injection per eye (separate procedures)","Steroid eye drops for immunosuppression post-procedure","Do not rub eyes post-procedure — retinal detachment risk"]},
     {"id":"new-ess-049","name":"Nusinersen","generic_name":"Nusinersen","drug_class":"Antisense oligonucleotide","drug_class_id":null,"drug_class_name":"Neurology - Rare disease","indications":["Spinal muscular atrophy (SMA) — all types"],"contraindications":["Hypersensitivity to nusinersen"],"side_effects":["Headache", "Back pain", "Nausea", "Thrombocytopenia", "Coagulopathy"],"dosage":{ "adult": "12mg IT injection loading x4 (days 0, 14, 28, 63), then q4 months" },"interactions":["Anticoagulants (increased bleeding risk with IT procedure)"],"monitoring":"SMA motor function (HFMSE, RULM), platelet count, renal function, urinalysis","patient_counselling":"Intrathecal injection every 4 months. Monitor platelets. Report bleeding or bruising.","mechanism_of_action":"Antisense oligonucleotide: binds SMN2 pre-mRNA intron 7, modifying splicing to produce full-length functional SMN protein. Compensates for SMN1 gene deletion/mutation in SMA.","brand_names":["Nusinersen"],"pregnancy_category":"C","warnings":["Use with caution"],"overdose":"No specific antidote. Management: supportive care.","pharmacokinetics":"Intrathecal: t1/2 13-14 days in CSF. Minimal systemic absorption. Nuclease metabolism.","black_box_warnings":[],"clinical_pearls":["ENDEAR: 51% achieved motor milestones vs 0% sham in SMA Type 1","Requires intrathecal injection — lumbar puncture","Loading: 4 doses over 63 days, then every 4 months","Monitor platelets and renal function — thrombocytopenia risk","First disease-modifying therapy for SMA (approved 2016)"]},
     {"id":"new-ess-050","name":"Risdiplam","generic_name":"Risdiplam","drug_class":"SMN2 splicing modifier","drug_class_id":null,"drug_class_name":"Neurology - Rare disease","indications":["Spinal muscular atrophy (SMA) — all types"],"contraindications":["Hypersensitivity to risdiplam"],"side_effects":["Diarrhea", "Rash", "Headache", "Arthralgia", "Upper respiratory infections"],"dosage":{ "adult": "5mg PO daily (weight-based)" },"interactions":["Multivalent cations (reduces absorption — separate by 4h)", "OAT3 inhibitors (increase exposure)"],"monitoring":"Motor function, CBC, renal function","patient_counselling":"Take daily oral solution. Separate from calcium/iron/zinc supplements by 4 hours.","mechanism_of_action":"Oral SMN2 splicing modifier: distributes throughout CNS and peripheral tissues, modifying SMN2 pre-mRNA splicing to increase full-length SMN protein. Unlike nusinersen (intrathecal), orally bioavailable.","brand_names":["Risdiplam"],"pregnancy_category":"C","warnings":["Use with caution"],"overdose":"No specific antidote. Management: supportive care.","pharmacokinetics":"t1/2: 4-7h. OAT3 substrate. Minimal CYP metabolism. Renal excretion.","black_box_warnings":[],"clinical_pearls":["First ORAL treatment for SMA — no lumbar puncture needed","FIREFISH/SUNFISH: improved motor function in SMA Types 1-3","Weight-based dosing: 0.2mg/kg daily","Separate from multivalent cations (calcium, iron, zinc) by 4 hours","Major QoL advantage over intrathecal nusinersen"]},
+    {
+  "id": "new-2-001",
+  "name": "Ziconotide",
+  "generic_name": "Ziconotide acetate",
+  "drug_class": "N-type calcium channel blocker (intrathecal)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Centrally Acting",
+  "indications": [
+    "Severe chronic pain (intrathecal)"
+  ],
+  "contraindications": [
+    "Hypersensitivity",
+    "Psychiatric disorders",
+    "Anticholinergic drugs"
+  ],
+  "side_effects": [
+    "Dizziness",
+    "Nausea",
+    "Confusion",
+    "Peripheral edema",
+    "Ataxia"
+  ],
+  "dosage": {
+    "adult": "Intrathecal: start 2.4mcg/day, titrate by 2.4mcg every 3-7 days (max 21.6mcg/day)"
+  },
+  "interactions": [
+    "Anticholinergics (additive confusion)",
+    "Opioids (avoid combining)"
+  ],
+  "monitoring": "Pain scores, mental status, urinary retention",
+  "patient_counselling": "Intrathecal pump only. Report confusion, hallucinations, or dizziness.",
+  "mechanism_of_action": "N-type voltage-gated calcium channel blocker: binds to Cav2.2 channels on dorsal horn neurons, blocking neurotransmitter release in pain pathways. Non-opioid — no tolerance or respiratory depression.",
+  "brand_names": [
+    "Prialt"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Psychiatric side effects (hallucinations, psychosis)",
+    "Severe dizziness",
+    "Intrathecal administration only"
+  ],
+  "overdose": "Intrathecal overdose: excessive drowsiness, confusion, ataxia. Management: reduce dose or stop infusion.",
+  "pharmacokinetics": "Intrathecal: CSF t1/2 1-3h. Minimal systemic absorption. No hepatic metabolism.",
+  "black_box_warnings": [
+    "Requires specialized pump for intrathecal administration"
+  ],
+  "clinical_pearls": [
+    "Non-opioid intrathecal analgesic — no respiratory depression or tolerance",
+    "1000x more potent than morphine intrathecally",
+    "Slow titration essential — dose-limiting neuropsychiatric effects",
+    "Used when intrathecal morphine is ineffective or causes tolerance"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-002",
+  "name": "Baclofen intrathecal",
+  "generic_name": "Baclofen (intrathecal formulation)",
+  "drug_class": "GABA-B agonist (intrathecal)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Centrally Acting",
+  "indications": [
+    "Severe spasticity (intrathecal)"
+  ],
+  "contraindications": [
+    "Hypersensitivity",
+    "Epilepsy (risk of withdrawal seizures)"
+  ],
+  "side_effects": [
+    "Hypotension",
+    "Drowsiness",
+    "Nausea",
+    "Weakness",
+    "Seizures (withdrawal)"
+  ],
+  "dosage": {
+    "adult": "Intrathecal: test dose 50-100mcg, then 100-300mcg/day continuous infusion"
+  },
+  "interactions": [
+    "CNS depressants (additive sedation)",
+    "MAOIs"
+  ],
+  "monitoring": "Spasticity scores, sedation, withdrawal symptoms",
+  "patient_counselling": "NEVER stop abruptly — risk of fatal withdrawal. Dose must be gradually reduced.",
+  "mechanism_of_action": "GABA-B receptor agonist in spinal cord: inhibits presynaptic and postsynaptic neurotransmission, reducing excitatory amino acid release and muscle tone.",
+  "brand_names": [
+    "Lioresal Intrathecal"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Fatal withdrawal syndrome if stopped abruptly",
+    "Seizure risk with sudden discontinuation"
+  ],
+  "overdose": "Symptoms: excessive sedation, hypotonia, respiratory depression. Management: stop infusion, ventilatory support.",
+  "pharmacokinetics": "Intrathecal: CSF t1/2 1-5h. Minimal systemic absorption.",
+  "black_box_warnings": [
+    "Must taper gradually — never stop abruptly due to fatal withdrawal risk"
+  ],
+  "clinical_pearls": [
+    "Must taper over 1-2 weeks minimum — abrupt stop can be fatal",
+    "Test dose before pump implantation",
+    "Withdrawal: hyperthermia, rhabdomyolysis, multi-organ failure",
+    "Pump must be refilled before empty to prevent withdrawal"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-003",
+  "name": "Capsaicin 8% patch",
+  "generic_name": "Capsaicin 8% transdermal patch",
+  "drug_class": "TRPV1 agonist (high-concentration topical)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Topical",
+  "indications": [
+    "Post-herpetic neuralgia",
+    "Diabetic peripheral neuropathy"
+  ],
+  "contraindications": [
+    "Broken skin at application site"
+  ],
+  "side_effects": [
+    "Severe application site pain (expected)",
+    "Erythema",
+    "Cough during procedure"
+  ],
+  "dosage": {
+    "adult": "Single 8% patch applied by healthcare provider, 30-minute application, may repeat every 3 months"
+  },
+  "interactions": [
+    "None significant (minimal systemic absorption)"
+  ],
+  "monitoring": "Application site, pain scores",
+  "patient_counselling": "Application causes initial severe burning (normal). Local anesthetic applied before procedure. Effects last ~3 months.",
+  "mechanism_of_action": "Defunctionalizes TRPV1-expressing nociceptors: activates then desensitizes sensory neurons via substance P depletion. Single application provides 3 months of pain relief.",
+  "brand_names": [
+    "Qutenza"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Application-site pain (expected and severe)",
+    "Healthcare provider application only"
+  ],
+  "overdose": "Local: severe burning. Management: wash with olive oil/water.",
+  "pharmacokinetics": "Minimal systemic absorption (<5%). Local action on dermal nociceptors.",
+  "black_box_warnings": [],
+  "clinical_pearls": [
+    "High-concentration patch for clinical application only",
+    "Initial burning expected — local anesthetic pre-treatment",
+    "Provides 3 months relief per application",
+    "Apply to most painful area — up to 4 patches simultaneously"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-004",
+  "name": "Diazepam topical",
+  "generic_name": "Diazepam rectal gel",
+  "drug_class": "Benzodiazepine (rectal)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Antispasmodic",
+  "indications": [
+    "Acute repetitive seizures",
+    "Status epilepticus (pre-hospital)"
+  ],
+  "contraindications": [
+    "Severe respiratory depression",
+    "Narrow-angle glaucoma",
+    "Myasthenia gravis"
+  ],
+  "side_effects": [
+    "Drowsiness",
+    "Ataxia",
+    "Respiratory depression",
+    "Hypotension"
+  ],
+  "dosage": {
+    "adult": "Rectal: 0.2mg/kg (max 20mg) x1, may repeat in 5-15 min"
+  },
+  "interactions": [
+    "CNS depressants (additive depression)",
+    "Opioids (respiratory depression risk)"
+  ],
+  "monitoring": "Respiratory rate, oxygen saturation, seizure activity, consciousness level",
+  "patient_counselling": "Rectal administration for seizures. May cause drowsiness. Do not drive for 24 hours.",
+  "mechanism_of_action": "Benzodiazepine: enhances GABA-A receptor activity, increasing chloride conductance, causing neuronal inhibition. Rapid onset via rectal absorption.",
+  "brand_names": [
+    "Diastat"
+  ],
+  "pregnancy_category": "D",
+  "warnings": [
+    "Respiratory depression risk",
+    "Do not administer to unconscious patient lying supine (aspiration risk)"
+  ],
+  "overdose": "Symptoms: CNS depression, respiratory depression, coma. Management: flumazenil, ventilatory support.",
+  "pharmacokinetics": "Rectal bioavailability: 90% (comparable to IV). Onset: 2-5 min. Duration: 15-30 min. Hepatic metabolism.",
+  "black_box_warnings": [
+    "Risk of respiratory depression",
+    "Risk of dependence with repeated use"
+  ],
+  "clinical_pearls": [
+    "Pre-hospital seizure management — alternative to IV access",
+    "Do not give to patient lying on back (aspiration risk)",
+    "Flumazenil is antidote",
+    "Also used for alcohol withdrawal in emergency setting"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-005",
+  "name": "Sumatriptan nasal",
+  "generic_name": "Sumatriptan succinate nasal spray",
+  "drug_class": "5-HT1B/1D agonist (intranasal)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Antimigraine",
+  "indications": [
+    "Acute migraine",
+    "Cluster headache"
+  ],
+  "contraindications": [
+    "Ischemic heart disease",
+    "Uncontrolled hypertension",
+    "Hemiplegic migraine",
+    "Concomitant MAOIs"
+  ],
+  "side_effects": [
+    "Taste disturbance (nasal)",
+    "Nausea",
+    "Dizziness",
+    "Chest tightness (transient)"
+  ],
+  "dosage": {
+    "adult": "Migraine: 10-20mg nasal (max 40mg/day). Cluster: 20mg nasal."
+  },
+  "interactions": [
+    "MAOIs (contraindicated)",
+    "SSRIs/SNRIs (serotonin syndrome risk)",
+    "Ergotamines (additive vasoconstriction)"
+  ],
+  "monitoring": "BP, chest pain, neurological status",
+  "patient_counselling": "Spray in one nostril. May repeat in 2 hours. Do not use >2 days/week (medication overuse).",
+  "mechanism_of_action": "Selective 5-HT1B/1D receptor agonist: causes cranial vasoconstriction and inhibits trigeminal nerve activation, reducing migraine pain.",
+  "brand_names": [
+    "Imitrex Nasal"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Cardiovascular events in patients with CAD risk factors",
+    "Medication overuse headache with frequent use"
+  ],
+  "overdose": "Symptoms: prolonged vasoconstriction, hypertension. Management: supportive care, nitroprusside for vasospasm.",
+  "pharmacokinetics": "Nasal bioavailability: 17%. Onset: 15 min. t1/2: 2h. Hepatic metabolism (MAO-A).",
+  "black_box_warnings": [
+    "Risk of serious cardiovascular events"
+  ],
+  "clinical_pearls": [
+    "Nasal spray: faster onset than oral (15 min vs 30 min)",
+    "Also effective for cluster headaches",
+    "Chest tightness is usually transient — warn patients",
+    "Max 200mg/day across all formulations"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-006",
+  "name": "Rizatriptan orally disintegrating",
+  "generic_name": "Rizatriptan benzoate ODT",
+  "drug_class": "5-HT1B/1D agonist",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Antimigraine",
+  "indications": [
+    "Acute migraine"
+  ],
+  "contraindications": [
+    "Ischemic heart disease",
+    "Concomitant MAOIs",
+    "Hemiplegic migraine"
+  ],
+  "side_effects": [
+    "Dizziness",
+    "Somnolence",
+    "Chest tightness (transient)",
+    "Fatigue"
+  ],
+  "dosage": {
+    "adult": "5-10mg ODT, dissolve on tongue (max 30mg/day)"
+  },
+  "interactions": [
+    "MAOIs (contraindicated)",
+    "Propranolol (reduces clearance — max 5mg/day)",
+    "SSRIs (serotonin syndrome risk)"
+  ],
+  "monitoring": "BP, chest pain, neurological status",
+  "patient_counselling": "Dissolve on tongue — no water needed. May repeat in 2 hours. Max 30mg/day.",
+  "mechanism_of_action": "Selective 5-HT1B/1D agonist: cranial vasoconstriction and trigeminal inhibition. Rapid absorption via oral mucosa.",
+  "brand_names": [
+    "Maxalt-MLT"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Coronary artery vasospasm risk",
+    "Do not use within 24h of other triptans"
+  ],
+  "overdose": "Symptoms: vasospasm, tachycardia. Management: supportive care.",
+  "pharmacokinetics": "ODT bioavailability: similar to tablet. Onset: 10-15 min (faster than tablet). t1/2: 2h.",
+  "black_box_warnings": [
+    "Serious cardiovascular events possible"
+  ],
+  "clinical_pearls": [
+    "ODT dissolves in seconds — no water needed",
+    "Fastest onset triptan via ODT formulation",
+    "Propranolol interaction: reduce dose to 5mg",
+    "Also available as regular tablet and injection"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-007",
+  "name": "Eletriptan",
+  "generic_name": "Eletriptan hydrobromide",
+  "drug_class": "5-HT1B/1D agonist",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Antimigraine",
+  "indications": [
+    "Acute migraine"
+  ],
+  "contraindications": [
+    "Ischemic heart disease",
+    "Concomitant MAOIs",
+    "Concomitant CYP3A4 inhibitors"
+  ],
+  "side_effects": [
+    "Dizziness",
+    "Somnolence",
+    "Nausea",
+    "Fatigue",
+    "Chest tightness"
+  ],
+  "dosage": {
+    "adult": "20-40mg PO (max 80mg/day)"
+  },
+  "interactions": [
+    "CYP3A4 inhibitors (ketoconazole, erythromycin — contraindicated)",
+    "MAOIs (contraindicated)"
+  ],
+  "monitoring": "BP, chest pain",
+  "patient_counselling": "Take at migraine onset. Do not use within 24h of other triptans.",
+  "mechanism_of_action": "Selective 5-HT1B/1D agonist with highest receptor affinity among triptans. Strong vasoconstrictor — avoid in cardiac patients.",
+  "brand_names": [
+    "Relpax"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Coronary vasospasm risk",
+    "CYP3A4 inhibitor interactions"
+  ],
+  "overdose": "Symptoms: vasospasm. Management: supportive care.",
+  "pharmacokinetics": "Oral bioavailability: 45%. t1/2: 4h (longest triptan). CYP3A4 metabolism. Protein binding: 86%.",
+  "black_box_warnings": [
+    "Serious cardiovascular events"
+  ],
+  "clinical_pearls": [
+    "Longest half-life among triptans (4h)",
+    "Highest receptor affinity — most effective triptan in some studies",
+    "Avoid with strong CYP3A4 inhibitors (ketoconazole, erythromycin)",
+    "80mg dose most effective but increases side effects"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-008",
+  "name": "Frovatriptan",
+  "generic_name": "Frovatriptan succinate",
+  "drug_class": "5-HT1B/1D agonist",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Antimigraine",
+  "indications": [
+    "Acute migraine",
+    "Menstrual migraine prophylaxis"
+  ],
+  "contraindications": [
+    "Ischemic heart disease",
+    "Concomitant MAOIs"
+  ],
+  "side_effects": [
+    "Dizziness",
+    "Fatigue",
+    "Paresthesia",
+    "Chest tightness"
+  ],
+  "dosage": {
+    "adult": "Acute migraine: 2.5mg PO (max 7.5mg/24h). Prophylaxis: 2.5mg BID during menses."
+  },
+  "interactions": [
+    "MAOIs (contraindicated)",
+    "Cimetidine (increases levels)"
+  ],
+  "monitoring": "BP, chest pain",
+  "patient_counselling": "Longest-acting triptan — best for prolonged attacks and menstrual migraine.",
+  "mechanism_of_action": "Selective 5-HT1B/1D agonist with extremely long half-life, providing sustained vasoconstriction and migraine relief.",
+  "brand_names": [
+    "Frova"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Coronary vasospasm risk",
+    "Long half-life increases accumulation risk"
+  ],
+  "overdose": "Symptoms: prolonged vasospasm. Management: supportive care.",
+  "pharmacokinetics": "Oral bioavailability: 24%. t1/2: 26h (longest triptan). Hepatic metabolism (CYP1A2). Protein binding: 15%.",
+  "black_box_warnings": [
+    "Serious cardiovascular events"
+  ],
+  "clinical_pearls": [
+    "Longest half-life triptan (26h) — once or twice daily dosing",
+    "Best for prolonged migraine attacks (>24h)",
+    "Menstrual migraine prophylaxis: 2.5mg BID for 6 days around menses",
+    "Lowest affinity but longest duration of action"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-009",
+  "name": "Naratriptan",
+  "generic_name": "Naratriptan hydrochloride",
+  "drug_class": "5-HT1B/1D agonist",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Antimigraine",
+  "indications": [
+    "Acute migraine"
+  ],
+  "contraindications": [
+    "Ischemic heart disease",
+    "Concomitant MAOIs"
+  ],
+  "side_effects": [
+    "Nausea",
+    "Dizziness",
+    "Paresthesia",
+    "Drowsiness"
+  ],
+  "dosage": {
+    "adult": "2.5mg PO (max 5mg/24h)"
+  },
+  "interactions": [
+    "MAOIs (contraindicated)",
+    "Cimetidine (increases levels 2x — avoid)"
+  ],
+  "monitoring": "BP, chest pain",
+  "patient_counselling": "Best tolerated triptan. Take at migraine onset.",
+  "mechanism_of_action": "Selective 5-HT1B/1D agonist with best GI tolerability among triptans.",
+  "brand_names": [
+    "Amerge"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Coronary vasospasm risk"
+  ],
+  "overdose": "Symptoms: vasospasm. Management: supportive care.",
+  "pharmacokinetics": "Oral bioavailability: 70% (highest). t1/2: 6h. Hepatic metabolism (CYP1A2). Protein binding: 28%.",
+  "black_box_warnings": [
+    "Serious cardiovascular events"
+  ],
+  "clinical_pearls": [
+    "Best tolerated triptan — least nausea and chest symptoms",
+    "Highest oral bioavailability (70%) among triptans",
+    "Good for patients who fail other triptans due to side effects",
+    "Cimetidine doubles levels — avoid combination"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-010",
+  "name": "Almotriptan",
+  "generic_name": "Almotriptan malate",
+  "drug_class": "5-HT1B/1D agonist",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Antimigraine",
+  "indications": [
+    "Acute migraine"
+  ],
+  "contraindications": [
+    "Ischemic heart disease",
+    "Concomitant MAOIs"
+  ],
+  "side_effects": [
+    "Nausea",
+    "Dizziness",
+    "Paresthesia",
+    "Somnolence"
+  ],
+  "dosage": {
+    "adult": "6.25-12.5mg PO (max 25mg/24h)"
+  },
+  "interactions": [
+    "MAOIs (contraindicated)",
+    "SSRIs (serotonin syndrome risk)",
+    "Ergotamines (additive vasoconstriction)"
+  ],
+  "monitoring": "BP, chest pain",
+  "patient_counselling": "Take at migraine onset. Good tolerability profile.",
+  "mechanism_of_action": "Selective 5-HT1B/1D agonist with balanced efficacy and tolerability.",
+  "brand_names": [
+    "Axert"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Coronary vasospasm risk"
+  ],
+  "overdose": "Symptoms: vasospasm. Management: supportive care.",
+  "pharmacokinetics": "Oral bioavailability: 40%. t1/2: 3-4h. Hepatic metabolism. Protein binding: 35%.",
+  "black_box_warnings": [
+    "Serious cardiovascular events"
+  ],
+  "clinical_pearls": [
+    "Good balance of efficacy and tolerability",
+    "Higher doses (12.5mg) may be needed for some patients",
+    "Multiple formulations available: tablet, ODT, injection"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-015",
+  "name": "Erenumab",
+  "generic_name": "Erenumab",
+  "drug_class": "Anti-CGRP receptor monoclonal antibody",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Antimigraine",
+  "indications": [
+    "Migraine prevention",
+    "Episodic and chronic migraine"
+  ],
+  "contraindications": [
+    "Hypersensitivity"
+  ],
+  "side_effects": [
+    "Injection site reactions",
+    "Constipation",
+    "Muscle cramps"
+  ],
+  "dosage": {
+    "adult": "70-140mg SC monthly"
+  },
+  "interactions": [
+    "No significant drug interactions"
+  ],
+  "monitoring": "Migraine frequency, injection site reactions",
+  "patient_counselling": "SC injection monthly. May take 3-6 months for full effect. Constipation common.",
+  "mechanism_of_action": "Anti-CGRP receptor monoclonal antibody: binds directly to CGRP receptor, preventing CGRP ligand binding and receptor activation. Only anti-CGRP mAb targeting the receptor (vs ligand).",
+  "brand_names": [
+    "Aimovig"
+  ],
+  "pregnancy_category": "N/A (biologic)",
+  "warnings": [
+    "Constipation (can be severe)",
+    "Hypertension (rare)"
+  ],
+  "overdose": "No known overdose data.",
+  "pharmacokinetics": "SC: t1/2 28 days. Catabolism: proteolytic degradation. No CYP metabolism.",
+  "black_box_warnings": [
+    "Severe constipation risk — monitor bowel function"
+  ],
+  "clinical_pearls": [
+    "Only anti-CGRP mAb that targets the RECEPTOR (not the ligand)",
+    "SC injection monthly — patient self-administration",
+    "Constipation is most common side effect (up to 3%)",
+    "May take 3-6 months to see full preventive effect"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-016",
+  "name": "Fremanezumab",
+  "generic_name": "Fremanezumab",
+  "drug_class": "Anti-CGRP ligand monoclonal antibody",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Antimigraine",
+  "indications": [
+    "Migraine prevention"
+  ],
+  "contraindications": [
+    "Hypersensitivity"
+  ],
+  "side_effects": [
+    "Injection site reactions",
+    "Nasopharyngitis"
+  ],
+  "dosage": {
+    "adult": "225mg SC monthly or 675mg SC quarterly"
+  },
+  "interactions": [
+    "No significant drug interactions"
+  ],
+  "monitoring": "Migraine frequency, injection site reactions",
+  "patient_counselling": "SC injection monthly or quarterly. May take 3 months for full effect.",
+  "mechanism_of_action": "Anti-CGRP ligand monoclonal antibody: binds CGRP ligand, preventing it from activating CGRP receptors. Reduces CGRP-mediated vasodilation and inflammation.",
+  "brand_names": [
+    "Ajovy"
+  ],
+  "pregnancy_category": "N/A (biologic)",
+  "warnings": [
+    "Hypersensitivity reactions"
+  ],
+  "overdose": "No known overdose data.",
+  "pharmacokinetics": "SC: t1/2 30 days. Catabolism: proteolytic degradation. No CYP metabolism.",
+  "black_box_warnings": [],
+  "clinical_pearls": [
+    "Binds CGRP ligand (not receptor) — different from erenumab",
+    "Flexible dosing: 225mg monthly OR 675mg quarterly",
+    "Fewest injection site reactions among CGRP mAbs",
+    "Low immunogenicity — very low anti-drug antibody formation"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-017",
+  "name": "Galcanezumab",
+  "generic_name": "Galcanezumab",
+  "drug_class": "Anti-CGRP ligand monoclonal antibody",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Antimigraine",
+  "indications": [
+    "Migraine prevention",
+    "Cluster headache"
+  ],
+  "contraindications": [
+    "Hypersensitivity"
+  ],
+  "side_effects": [
+    "Injection site reactions",
+    "Nasopharyngitis",
+    "Upper respiratory infection"
+  ],
+  "dosage": {
+    "adult": "Migraine: 120mg or 240mg SC monthly. Cluster: 240mg SC monthly."
+  },
+  "interactions": [
+    "No significant drug interactions"
+  ],
+  "monitoring": "Migraine/cluster frequency, injection site reactions",
+  "patient_counselling": "SC injection monthly. Loading dose may be higher.",
+  "mechanism_of_action": "Anti-CGRP ligand monoclonal antibody: binds CGRP ligand, preventing receptor activation. Also effective for cluster headache.",
+  "brand_names": [
+    "Emgality"
+  ],
+  "pregnancy_category": "N/A (biologic)",
+  "warnings": [
+    "Hypersensitivity reactions"
+  ],
+  "overdose": "No known overdose data.",
+  "pharmacokinetics": "SC: t1/2 28 days. Catabolism: proteolytic degradation.",
+  "black_box_warnings": [],
+  "clinical_pearls": [
+    "Only CGRP mAb approved for episodic cluster headache",
+    "Cluster dose: 240mg loading then 120mg monthly",
+    "Also effective for migraine prevention",
+    "Monthly injection — patient self-administration"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-018",
+  "name": "Eptinezumab",
+  "generic_name": "Eptinezumab",
+  "drug_class": "Anti-CGRP ligand monoclonal antibody",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Antimigraine",
+  "indications": [
+    "Migraine prevention"
+  ],
+  "contraindications": [
+    "Hypersensitivity"
+  ],
+  "side_effects": [
+    "Nasopharyngitis",
+    "Upper respiratory infection",
+    "Infusion site reactions"
+  ],
+  "dosage": {
+    "adult": "100mg or 300mg IV every 3 months"
+  },
+  "interactions": [
+    "No significant drug interactions"
+  ],
+  "monitoring": "Migraine frequency, infusion reactions",
+  "patient_counselling": "IV infusion every 3 months at healthcare facility. No self-administration.",
+  "mechanism_of_action": "Anti-CGRP ligand monoclonal antibody: IV administration allows immediate bioavailability for rapid preventive effect.",
+  "brand_names": [
+    "Vyepti"
+  ],
+  "pregnancy_category": "N/A (biologic)",
+  "warnings": [
+    "Hypersensitivity/infusion reactions"
+  ],
+  "overdose": "No known overdose data.",
+  "pharmacokinetics": "IV: immediate bioavailability. t1/2 26 days. Catabolism: proteolytic degradation.",
+  "black_box_warnings": [
+    "Infusion reactions — monitor during and after infusion"
+  ],
+  "clinical_pearls": [
+    "IV-only CGRP mAb — no self-administration",
+    "Fastest onset of action among CGRP mAbs (within 1 week)",
+    "100mg or 300mg IV every 3 months",
+    "Good for patients who fail SC formulations or need rapid onset"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-019",
+  "name": "Diclofenac ophthalmic",
+  "generic_name": "Diclofenac sodium ophthalmic solution",
+  "drug_class": "NSAID (topical ophthalmic)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Ophthalmic NSAIDs",
+  "indications": [
+    "Post-surgical inflammation",
+    "Cystoid macular edema",
+    "Photophobia after refractive surgery"
+  ],
+  "contraindications": [
+    "Hypersensitivity to NSAIDs",
+    "Active ocular infections"
+  ],
+  "side_effects": [
+    "Ocular stinging/burning",
+    "Keratitis",
+    "Elevated IOP"
+  ],
+  "dosage": {
+    "adult": "1 drop in affected eye TID-QID for 2 weeks"
+  },
+  "interactions": [
+    "Topical corticosteroids (delay wound healing)"
+  ],
+  "monitoring": "IOP, corneal healing, ocular inflammation",
+  "patient_counselling": "Apply drops to affected eye(s). May sting on application. Complete full course.",
+  "mechanism_of_action": "Topical ophthalmic NSAID: inhibits COX in ocular tissues, reducing prostaglandin-mediated inflammation after surgery or injury.",
+  "brand_names": [
+    "Voltaren Ophthalmic"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Corneal melting risk with epithelial defects",
+    "Not for contact lens wearers during treatment"
+  ],
+  "overdose": "Symptoms: local irritation. Management: flush eyes with water.",
+  "pharmacokinetics": "Ocular: minimal systemic absorption. Duration: 4-6h per dose.",
+  "black_box_warnings": [
+    "Corneal adverse events with prolonged use"
+  ],
+  "clinical_pearls": [
+    "Use before and after cataract surgery to prevent CME",
+    "Do not use with contact lenses",
+    "Alternative to topical steroids — less IOP elevation",
+    "Also used for photophobia after LASIK"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-020",
+  "name": "Ketorolac ophthalmic",
+  "generic_name": "Ketorolac tromethamine ophthalmic solution",
+  "drug_class": "NSAID (topical ophthalmic)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Ophthalmic NSAIDs",
+  "indications": [
+    "Post-surgical ocular pain",
+    "Allergic conjunctivitis",
+    "Photophobia"
+  ],
+  "contraindications": [
+    "Hypersensitivity to NSAIDs",
+    "Active ocular infections"
+  ],
+  "side_effects": [
+    "Ocular stinging",
+    "Keratitis",
+    "Corneal toxicity (prolonged use)"
+  ],
+  "dosage": {
+    "adult": "1 drop TID-QID for up to 2 weeks"
+  },
+  "interactions": [
+    "Topical corticosteroids"
+  ],
+  "monitoring": "Corneal integrity, ocular inflammation",
+  "patient_counselling": "Apply to affected eye(s). Complete full course. Report eye pain or vision changes.",
+  "mechanism_of_action": "Topical ophthalmic NSAID: inhibits ocular COX, reducing prostaglandin-mediated pain and inflammation.",
+  "brand_names": [
+    "Acular"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Corneal adverse events with prolonged use"
+  ],
+  "overdose": "Local irritation. Flush eyes with water.",
+  "pharmacokinetics": "Ocular: minimal systemic absorption.",
+  "black_box_warnings": [
+    "Corneal toxicity risk"
+  ],
+  "clinical_pearls": [
+    "Also effective for allergic conjunctivitis (reduces itching)",
+    "Used before/after cataract surgery",
+    "Avoid prolonged use — corneal thinning risk",
+    "Alternative to prednisolone for post-surgical inflammation"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-021",
+  "name": "Nepafenac ophthalmic",
+  "generic_name": "Nepafenac ophthalmic suspension",
+  "drug_class": "NSAID prodrug (topical ophthalmic)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Ophthalmic NSAIDs",
+  "indications": [
+    "Post-surgical pain and inflammation",
+    "Cystoid macular edema prevention"
+  ],
+  "contraindications": [
+    "Hypersensitivity to NSAIDs"
+  ],
+  "side_effects": [
+    "Ocular stinging",
+    "Elevated IOP",
+    "Corneal adverse events"
+  ],
+  "dosage": {
+    "adult": "1 drop TID starting 1 day before surgery, continue for 2 weeks"
+  },
+  "interactions": [
+    "Topical corticosteroids"
+  ],
+  "monitoring": "IOP, corneal integrity",
+  "patient_counselling": "Shake well before use. Apply drops pre-operatively. Report eye pain or vision changes.",
+  "mechanism_of_action": "NSAID prodrug: converted to amfenac (active) in ocular tissues. Inhibits COX-2 preferentially, reducing inflammation with less corneal toxicity.",
+  "brand_names": [
+    "Nevanac"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Corneal adverse events",
+    "IOP elevation"
+  ],
+  "overdose": "Local irritation. Flush eyes.",
+  "pharmacokinetics": "Ocular: prodrug converted to amfenac. t1/2: ~2.5h in aqueous humor. Minimal systemic absorption.",
+  "black_box_warnings": [
+    "Corneal adverse events with prolonged use"
+  ],
+  "clinical_pearls": [
+    "Prodrug — activated in ocular tissues",
+    "Pre-operative dosing prevents CME after cataract surgery",
+    "Less corneal toxicity than ketorolac",
+    "Can be combined with topical antibiotics"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-022",
+  "name": "Bromfenac ophthalmic",
+  "generic_name": "Bromfenac sodium ophthalmic solution",
+  "drug_class": "NSAID (topical ophthalmic)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Ophthalmic NSAIDs",
+  "indications": [
+    "Post-surgical ocular inflammation",
+    "Cystoid macular edema prevention"
+  ],
+  "contraindications": [
+    "Hypersensitivity to NSAIDs"
+  ],
+  "side_effects": [
+    "Ocular stinging",
+    "Elevated IOP"
+  ],
+  "dosage": {
+    "adult": "1 drop BID starting 1 day before surgery, continue for 2 weeks"
+  },
+  "interactions": [
+    "Topical corticosteroids"
+  ],
+  "monitoring": "IOP, corneal integrity",
+  "patient_counselling": "Apply BID. Complete course even if symptoms improve.",
+  "mechanism_of_action": "Topical ophthalmic NSAID with enhanced ocular penetration and COX-2 selectivity.",
+  "brand_names": [
+    "Bromday",
+    "Prolensa"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Corneal adverse events"
+  ],
+  "overdose": "Local irritation.",
+  "pharmacokinetics": "Ocular: t1/2 2h in aqueous humor. Enhanced corneal penetration.",
+  "black_box_warnings": [
+    "Corneal adverse events"
+  ],
+  "clinical_pearls": [
+    "Once-daily dosing (Bromday) or BID (Prolensa) — convenient",
+    "Good corneal penetration — lower concentrations needed",
+    "Also used off-label for allergic conjunctivitis",
+    "Prolensa: BID dosing; Bromday: once-daily"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-023",
+  "name": "Flurbiprofen ophthalmic",
+  "generic_name": "Flurbiprofen sodium ophthalmic solution",
+  "drug_class": "NSAID (topical ophthalmic)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Ophthalmic NSAIDs",
+  "indications": [
+    "Intraoperative miosis prevention",
+    "Post-surgical inflammation"
+  ],
+  "contraindications": [
+    "Hypersensitivity to NSAIDs"
+  ],
+  "side_effects": [
+    "Ocular stinging",
+    "Corneal toxicity"
+  ],
+  "dosage": {
+    "adult": "1 drop every 30 min starting 2h before surgery"
+  },
+  "interactions": [
+    "Topical corticosteroids"
+  ],
+  "monitoring": "Corneal integrity, ocular inflammation",
+  "patient_counselling": "Apply drops before surgery as directed by ophthalmologist.",
+  "mechanism_of_action": "Topical ophthalmic NSAID: inhibits COX in iris/ciliary body, preventing intraoperative miosis caused by surgical trauma.",
+  "brand_names": [
+    "Ocufen"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Corneal adverse events with prolonged use"
+  ],
+  "overdose": "Local irritation.",
+  "pharmacokinetics": "Ocular: minimal systemic absorption. Duration: 2-3h.",
+  "black_box_warnings": [],
+  "clinical_pearls": [
+    "Used intraoperatively to maintain mydriasis during cataract surgery",
+    "Prevents miosis from surgical prostaglandin release",
+    "Also used for post-surgical inflammation",
+    "Apply starting 2h before surgery for optimal effect"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-024",
+  "name": "Indomethacin ophthalmic",
+  "generic_name": "Indomethacin sodium trihydrate ophthalmic suspension",
+  "drug_class": "NSAID (topical ophthalmic)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Ophthalmic NSAIDs",
+  "indications": [
+    "Post-surgical inflammation",
+    "Cystoid macular edema",
+    "Intraoperative miosis prevention"
+  ],
+  "contraindications": [
+    "Hypersensitivity to NSAIDs",
+    "Herpes simplex keratitis"
+  ],
+  "side_effects": [
+    "Ocular stinging",
+    "Corneal toxicity"
+  ],
+  "dosage": {
+    "adult": "1 drop TID-QID"
+  },
+  "interactions": [
+    "Topical corticosteroids"
+  ],
+  "monitoring": "Corneal integrity, IOP",
+  "patient_counselling": "Shake well. Apply to affected eye(s). Report eye pain or vision changes.",
+  "mechanism_of_action": "Topical ophthalmic NSAID: prevents prostaglandin synthesis in ocular tissues.",
+  "brand_names": [
+    "Indocid"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Corneal adverse events",
+    "Herpes simplex keratitis risk"
+  ],
+  "overdose": "Local irritation.",
+  "pharmacokinetics": "Ocular: minimal systemic absorption. Duration: 4-6h.",
+  "black_box_warnings": [
+    "Corneal adverse events"
+  ],
+  "clinical_pearls": [
+    "Good for post-surgical CME prevention",
+    "Shake suspension before use",
+    "Avoid in herpes simplex keratitis",
+    "Also used for acute anterior uveitis (inflammation control)"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-025",
+  "name": "Diclofenac ear drops",
+  "generic_name": "Diclofenac sodium otic solution",
+  "drug_class": "NSAID (topical otic)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - Otic NSAIDs",
+  "indications": [
+    "Post-myringotomy pain",
+    "Otitis media pain"
+  ],
+  "contraindications": [
+    "Perforated tympanic membrane",
+    "Hypersensitivity to NSAIDs"
+  ],
+  "side_effects": [
+    "Ear pain/irritation",
+    "Tinnitus"
+  ],
+  "dosage": {
+    "adult": "4 drops in affected ear TID for 3-7 days"
+  },
+  "interactions": [
+    "No significant interactions"
+  ],
+  "monitoring": "Tympanic membrane integrity, pain relief",
+  "patient_counselling": "Apply drops to affected ear. Complete full course. Do not use with perforated eardrum.",
+  "mechanism_of_action": "Topical otic NSAID: inhibits COX in middle ear tissues, reducing prostaglandin-mediated pain and inflammation.",
+  "brand_names": [
+    "Otinia"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Do not use with perforated eardrum"
+  ],
+  "overdose": "Local irritation.",
+  "pharmacokinetics": "Otic: minimal systemic absorption. Local action.",
+  "black_box_warnings": [],
+  "clinical_pearls": [
+    "Alternative to oral analgesics for ear pain",
+    "Safe for post-myringotomy patients",
+    "Do not use if eardrum is perforated",
+    "May reduce need for oral NSAIDs in children"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-026",
+  "name": "Lornoxicam",
+  "generic_name": "Lornoxicam",
+  "drug_class": "NSAID (oxicam derivative)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - NSAIDs",
+  "indications": [
+    "Acute pain",
+    "Osteoarthritis",
+    "Rheumatoid arthritis",
+    "Dental pain"
+  ],
+  "contraindications": [
+    "NSAID hypersensitivity",
+    "Active peptic ulcer",
+    "Severe renal impairment"
+  ],
+  "side_effects": [
+    "GI upset",
+    "Dizziness",
+    "Edema",
+    "Hepatotoxicity"
+  ],
+  "dosage": {
+    "adult": "4-8mg PO TID (max 16mg/day)"
+  },
+  "interactions": [
+    "Anticoagulants (increased bleeding)",
+    "Lithium (increased levels)",
+    "CYP2C9 inhibitors"
+  ],
+  "monitoring": "GI symptoms, LFTs, renal function",
+  "patient_counselling": "Take with food. Short-term use preferred. Report dark stools or jaundice.",
+  "mechanism_of_action": "Non-selective COX-1/COX-2 inhibitor with relatively balanced inhibition. Oxicam derivative with moderate half-life.",
+  "brand_names": [
+    "Xefo"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "GI bleeding",
+    "Hepatotoxicity",
+    "Cardiovascular risk"
+  ],
+  "overdose": "Symptoms: GI upset, CNS depression. Management: supportive care.",
+  "pharmacokinetics": "Oral bioavailability: 90%. t1/2: 4-5h. CYP2C9 metabolism. Protein binding: 99%.",
+  "black_box_warnings": [
+    "Risk of GI and cardiovascular adverse events"
+  ],
+  "clinical_pearls": [
+    "Moderate half-life — TID dosing",
+    "Balanced COX-1/COX-2 inhibition",
+    "Good for acute dental pain",
+    "Less commonly used outside Europe"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-027",
+  "name": "Tenoxicam",
+  "generic_name": "Tenoxicam",
+  "drug_class": "NSAID (oxicam derivative)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - NSAIDs",
+  "indications": [
+    "Osteoarthritis",
+    "Rheumatoid arthritis",
+    "Acute gout",
+    "Ankylosing spondylitis"
+  ],
+  "contraindications": [
+    "NSAID hypersensitivity",
+    "Active peptic ulcer",
+    "Severe renal impairment"
+  ],
+  "side_effects": [
+    "GI upset",
+    "Headache",
+    "Edema",
+    "Rash"
+  ],
+  "dosage": {
+    "adult": "20mg PO daily (max 40mg/day initially, then 20mg/day)"
+  },
+  "interactions": [
+    "Anticoagulants (increased bleeding)",
+    "Lithium (increased levels)",
+    "Cholestyramine (reduces absorption)"
+  ],
+  "monitoring": "GI symptoms, LFTs, renal function",
+  "patient_counselling": "Take with food. Long-acting — once daily dosing.",
+  "mechanism_of_action": "Non-selective COX-1/COX-2 inhibitor with very long half-life allowing once-daily dosing.",
+  "brand_names": [
+    "Mobiflex"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "GI bleeding",
+    "Long half-life prolongs side effects"
+  ],
+  "overdose": "Symptoms: GI upset. Management: supportive care.",
+  "pharmacokinetics": "Oral bioavailability: high. t1/2: 60-75h (very long). Protein binding: 99%. Hepatic metabolism.",
+  "black_box_warnings": [
+    "GI and cardiovascular adverse events"
+  ],
+  "clinical_pearls": [
+    "Very long half-life — once-daily dosing",
+    "Advantage: compliance; disadvantage: prolonged side effects",
+    "Good for chronic conditions needing once-daily dosing",
+    "Similar to piroxicam pharmacokinetics"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-028",
+  "name": "Tinoridine",
+  "generic_name": "Tinoridine",
+  "drug_class": "NSAID (pyrrolo-pyrimidine)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - NSAIDs",
+  "indications": [
+    "Inflammation",
+    "Pain",
+    "Rheumatoid arthritis"
+  ],
+  "contraindications": [
+    "NSAID hypersensitivity",
+    "Peptic ulcer"
+  ],
+  "side_effects": [
+    "GI upset",
+    "Dizziness",
+    "Skin rash"
+  ],
+  "dosage": {
+    "adult": "200mg PO TID"
+  },
+  "interactions": [
+    "Anticoagulants"
+  ],
+  "monitoring": "GI symptoms",
+  "patient_counselling": "Take with food.",
+  "mechanism_of_action": "Non-selective COX inhibitor with additional antioxidant and membrane-stabilizing properties.",
+  "brand_names": [
+    "Entron"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "GI bleeding risk"
+  ],
+  "overdose": "Symptoms: GI upset. Management: supportive care.",
+  "pharmacokinetics": "Oral bioavailability: moderate. t1/2: 3-4h. Hepatic metabolism.",
+  "black_box_warnings": [
+    "GI adverse events"
+  ],
+  "clinical_pearls": [
+    "Additional antioxidant properties",
+    "Less commonly used NSAID",
+    "Good for patients needing anti-inflammatory with antioxidant effects"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-029",
+  "name": "Pirprofen",
+  "generic_name": "Pirprofen",
+  "drug_class": "NSAID (propionic acid)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - NSAIDs",
+  "indications": [
+    "Osteoarthritis",
+    "Rheumatoid arthritis",
+    "Ankylosing spondylitis"
+  ],
+  "contraindications": [
+    "NSAID hypersensitivity",
+    "Peptic ulcer"
+  ],
+  "side_effects": [
+    "GI upset",
+    "Headache",
+    "Edema"
+  ],
+  "dosage": {
+    "adult": "200-400mg PO TID"
+  },
+  "interactions": [
+    "Anticoagulants",
+    "Lithium"
+  ],
+  "monitoring": "GI symptoms, renal function",
+  "patient_counselling": "Take with food.",
+  "mechanism_of_action": "Non-selective COX inhibitor with dual anti-inflammatory and uricosuric effects.",
+  "brand_names": [
+    "Rheumatone"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "GI bleeding",
+    "Cardiovascular risk"
+  ],
+  "overdose": "Symptoms: GI upset. Management: supportive care.",
+  "pharmacokinetics": "Oral bioavailability: high. t1/2: 6-8h. Hepatic metabolism. Protein binding: 99%.",
+  "black_box_warnings": [
+    "GI adverse events"
+  ],
+  "clinical_pearls": [
+    "Dual mechanism: anti-inflammatory + uricosuric",
+    "Good for patients with gout and arthritis",
+    "Not widely available in all markets"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-2-030",
+  "name": "Dexketoprofen",
+  "generic_name": "Dexketoprofen trometamol",
+  "drug_class": "NSAID (propionic acid, S-enantiomer)",
+  "drug_class_id": null,
+  "drug_class_name": "Analgesics - NSAIDs",
+  "indications": [
+    "Acute pain",
+    "Renal colic",
+    "Dental pain",
+    "Post-operative pain"
+  ],
+  "contraindications": [
+    "NSAID hypersensitivity",
+    "Active peptic ulcer",
+    "Severe hepatic impairment"
+  ],
+  "side_effects": [
+    "GI upset",
+    "Dizziness",
+    "Headache"
+  ],
+  "dosage": {
+    "adult": "12.5-25mg PO/IM q4-6h (max 75mg/day)"
+  },
+  "interactions": [
+    "Anticoagulants",
+    "Lithium",
+    "Diuretics"
+  ],
+  "monitoring": "GI symptoms, LFTs, renal function",
+  "patient_counselling": "Take on empty stomach for faster onset. Short-term use only.",
+  "mechanism_of_action": "S-enantiomer of ketoprofen — more potent COX inhibition than racemic mixture. Rapid onset of analgesia.",
+  "brand_names": [
+    "Enantyum",
+    "Keral"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "GI bleeding",
+    "Renal impairment"
+  ],
+  "overdose": "Symptoms: GI upset. Management: supportive care.",
+  "pharmacokinetics": "Oral bioavailability: 90%. Onset: 30 min. t1/2: 1.5h (shortest NSAID). Protein binding: 99%.",
+  "black_box_warnings": [
+    "GI and cardiovascular adverse events"
+  ],
+  "clinical_pearls": [
+    "S-enantiomer — more potent than racemic ketoprofen",
+    "Fastest onset NSAID (30 minutes)",
+    "Shortest half-life NSAID — less accumulation",
+    "Good for acute pain situations"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-001",
+  "name": "Diltiazem ER",
+  "generic_name": "Diltiazem hydrochloride extended-release",
+  "drug_class": "Non-DHP calcium channel blocker (extended-release)",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Calcium Channel Blockers",
+  "indications": [
+    "Hypertension",
+    "Chronic stable angina",
+    "Atrial fibrillation rate control"
+  ],
+  "contraindications": [
+    "Severe bradycardia",
+    "Second/third degree heart block",
+    "Sick sinus syndrome",
+    "Decompensated HF"
+  ],
+  "side_effects": [
+    "Edema",
+    "Headache",
+    "Dizziness",
+    "Bradycardia",
+    "Constipation"
+  ],
+  "dosage": {
+    "adult": "Hypertension: 120-240mg daily. Angina: 120-360mg daily."
+  },
+  "interactions": [
+    "Beta-blockers (additive bradycardia)",
+    "Digoxin (increased levels)",
+    "CYP3A4 inhibitors (increased levels)"
+  ],
+  "monitoring": "HR, BP, ECG (PR interval), LFTs, digoxin levels",
+  "patient_counselling": "Swallow ER tablets whole — do not crush. Take with food. Avoid grapefruit.",
+  "mechanism_of_action": "Non-DHP calcium channel blocker: blocks L-type calcium channels in heart and vasodilation. Reduces heart rate, AV conduction, contractility, and vascular resistance.",
+  "brand_names": [
+    "Cardizem CD",
+    "Tiazac"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Heart failure worsening",
+    "Bradycardia",
+    "AV block"
+  ],
+  "overdose": "Symptoms: severe bradycardia, hypotension, heart block. Management: calcium, atropine, isoproterenol.",
+  "pharmacokinetics": "ER: t1/2 6-9h. CYP3A4 metabolism. Protein binding: 80%.",
+  "black_box_warnings": [
+    "Do not use with beta-blockers in HFrEF"
+  ],
+  "clinical_pearls": [
+    "Rate controls AF without digoxin — fewer drug interactions",
+    "Avoid in HFrEF — negative inotrope",
+    "ER: once daily — better compliance",
+    "CYP3A4 inhibitor interactions — monitor digoxin levels"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-002",
+  "name": "Verapamil SR",
+  "generic_name": "Verapamil hydrochloride sustained-release",
+  "drug_class": "Non-DHP calcium channel blocker (SR)",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Calcium Channel Blockers",
+  "indications": [
+    "Hypertension",
+    "Chronic stable angina",
+    "Atrial fibrillation rate control",
+    "Migraine prevention"
+  ],
+  "contraindications": [
+    "Severe bradycardia",
+    "Heart block",
+    "Decompensated HF",
+    "WPW syndrome"
+  ],
+  "side_effects": [
+    "Constipation (common)",
+    "Edema",
+    "Bradycardia",
+    "Headache",
+    "Hypotension"
+  ],
+  "dosage": {
+    "adult": "Hypertension: 180-480mg daily. AF rate control: 120-360mg daily."
+  },
+  "interactions": [
+    "Beta-blockers (severe bradycardia risk)",
+    "Digoxin (increased levels 50-75%)",
+    "CYP3A4 inhibitors",
+    "Grapefruit"
+  ],
+  "monitoring": "HR, BP, ECG, constipation, digoxin levels",
+  "patient_counselling": "Take with food. Do not crush SR. Report severe constipation.",
+  "mechanism_of_action": "Non-DHP CCB: blocks cardiac L-type calcium channels, reducing HR, contractility, and AV conduction. Also reduces vascular tone.",
+  "brand_names": [
+    "Calan SR",
+    "Verelan"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Constipation (30% of patients)",
+    "Heart block",
+    "Bradycardia"
+  ],
+  "overdose": "Symptoms: bradycardia, AV block, hypotension. Management: calcium, atropine, pacing.",
+  "pharmacokinetics": "SR: t1/2 6-10h. CYP3A4 metabolism. Protein binding: 90%.",
+  "black_box_warnings": [
+    "Do not use with IV beta-blockers",
+    "Avoid in HFrEF"
+  ],
+  "clinical_pearls": [
+    "Constipation is most common side effect (30%)",
+    "Avoid with IV beta-blockers — risk of severe bradycardia",
+    "Good for AF rate control in sedentary patients",
+    "CYP3A4 inhibitor interactions increase digoxin levels 50-75%"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-003",
+  "name": "Nifedipine XL",
+  "generic_name": "Nifedipine extended-release",
+  "drug_class": "DHP calcium channel blocker (XL)",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Calcium Channel Blockers",
+  "indications": [
+    "Hypertension",
+    "Raynaud's phenomenon"
+  ],
+  "contraindications": [
+    "Severe hypotension",
+    "Cardiogenic shock",
+    "Severe aortic stenosis"
+  ],
+  "side_effects": [
+    "Peripheral edema",
+    "Headache",
+    "Flushing",
+    "Dizziness",
+    "Tachycardia"
+  ],
+  "dosage": {
+    "adult": "Hypertension: 30-90mg daily. Raynaud's: 30-60mg daily."
+  },
+  "interactions": [
+    "CYP3A4 inhibitors (increased levels)",
+    "Grapefruit",
+    "Digoxin (increased levels)"
+  ],
+  "monitoring": "BP, HR, peripheral edema, ankle swelling",
+  "patient_counselling": "Swallow XL whole — do not split/crush. Take on empty stomach for best absorption.",
+  "mechanism_of_action": "DHP CCB: selective arterial vasodilation with minimal cardiac effects (at therapeutic doses). Reduces peripheral vascular resistance.",
+  "brand_names": [
+    "Procardia XL",
+    "Adalat CC"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Severe hypotension",
+    "Peripheral edema (dose-dependent)",
+    "Reflex tachycardia"
+  ],
+  "overdose": "Symptoms: severe hypotension, tachycardia. Management: IV fluids, vasopressors.",
+  "pharmacokinetics": "XL: t1/2 2-5h (but XL maintains levels over 24h). CYP3A4 metabolism. Protein binding: 90%.",
+  "black_box_warnings": [
+    "Risk of myocardial infarction with immediate-release formulations"
+  ],
+  "clinical_pearls": [
+    "XL formulation — once daily dosing",
+    "Avoid immediate-release nifedipine for hypertension (reflex tachycardia)",
+    "Peripheral edema is dose-dependent — not fluid overload",
+    "Good for Raynaud's phenomenon (vasodilation)"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-004",
+  "name": "Felodipine",
+  "generic_name": "Felodipine",
+  "drug_class": "DHP calcium channel blocker",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Calcium Channel Blockers",
+  "indications": [
+    "Hypertension"
+  ],
+  "contraindications": [
+    "Severe hypotension",
+    "Cardiogenic shock"
+  ],
+  "side_effects": [
+    "Peripheral edema",
+    "Headache",
+    "Flushing",
+    "Dizziness"
+  ],
+  "dosage": {
+    "adult": "5-10mg daily (max 10mg/day)"
+  },
+  "interactions": [
+    "CYP3A4 inhibitors (increased levels)",
+    "Grapefruit",
+    "Simvastatin (reduce dose to 20mg)"
+  ],
+  "monitoring": "BP, HR, peripheral edema",
+  "patient_counselling": "Take on empty stomach. Do not crush ER tablets.",
+  "mechanism_of_action": "DHP CCB: highly selective arterial vasodilation with minimal cardiac depression.",
+  "brand_names": [
+    "Plendil"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Peripheral edema",
+    "Hypotension"
+  ],
+  "overdose": "Symptoms: severe hypotension. Management: IV fluids.",
+  "pharmacokinetics": "Oral bioavailability: 15% (high first-pass). t1/2: 11-16h. CYP3A4 metabolism. Protein binding: 99%.",
+  "black_box_warnings": [],
+  "clinical_pearls": [
+    "Highly vascular-selective — minimal cardiac effects",
+    "Grapefruit increases levels significantly",
+    "Simvastatin interaction — limit to 20mg",
+    "Good add-on to ACE inhibitor/ARB"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-005",
+  "name": "Lercanidipine",
+  "generic_name": "Lercanidipine hydrochloride",
+  "drug_class": "DHP calcium channel blocker",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Calcium Channel Blockers",
+  "indications": [
+    "Hypertension"
+  ],
+  "contraindications": [
+    "Severe hypotension",
+    "Cardiogenic shock",
+    "Severe hepatic impairment"
+  ],
+  "side_effects": [
+    "Peripheral edema",
+    "Headache",
+    "Flushing",
+    "Dizziness"
+  ],
+  "dosage": {
+    "adult": "10-20mg daily"
+  },
+  "interactions": [
+    "CYP3A4 inhibitors (contraindicated with strong inhibitors)",
+    "Grapefruit",
+    "Cyclosporine (increased levels)"
+  ],
+  "monitoring": "BP, peripheral edema",
+  "patient_counselling": "Take with or without food. Do not use grapefruit.",
+  "mechanism_of_action": "DHP CCB: highly lipophilic, long-acting vasodilator with high vascular selectivity and gradual onset of action.",
+  "brand_names": [
+    "Zanidip"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Peripheral edema"
+  ],
+  "overdose": "Symptoms: hypotension. Management: supportive care.",
+  "pharmacokinetics": "Oral bioavailability: 10%. t1/2: 8-10h. CYP3A4 metabolism. Protein binding: >98%.",
+  "black_box_warnings": [],
+  "clinical_pearls": [
+    "Highly lipophilic — smooth, gradual BP reduction",
+    "Less reflex tachycardia than other DHP CCBs",
+    "Once-daily dosing",
+    "Good for elderly patients (gradual onset)"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-006",
+  "name": "Isradipine",
+  "generic_name": "Isradipine",
+  "drug_class": "DHP calcium channel blocker",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Calcium Channel Blockers",
+  "indications": [
+    "Hypertension"
+  ],
+  "contraindications": [
+    "Severe hypotension",
+    "Cardiogenic shock"
+  ],
+  "side_effects": [
+    "Headache",
+    "Flushing",
+    "Edema",
+    "Dizziness"
+  ],
+  "dosage": {
+    "adult": "2.5-10mg daily (max 20mg/day)"
+  },
+  "interactions": [
+    "CYP3A4 inhibitors",
+    "Grapefruit"
+  ],
+  "monitoring": "BP, HR",
+  "patient_counselling": "Take with food for better absorption.",
+  "mechanism_of_action": "DHP CCB: selective arterial vasodilation. Intermediate-acting.",
+  "brand_names": [
+    "DynaCirc"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Hypotension"
+  ],
+  "overdose": "Symptoms: hypotension. Management: supportive care.",
+  "pharmacokinetics": "Oral bioavailability: 15-25%. t1/2: 8h. CYP3A4 metabolism. Protein binding: 95%.",
+  "black_box_warnings": [],
+  "clinical_pearls": [
+    "Intermediate-acting DHP CCB",
+    "Less commonly used than amlodipine/nifedipine",
+    "Good for patients who need more selective vasodilation"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-007",
+  "name": "Nicardipine",
+  "generic_name": "Nicardipine hydrochloride",
+  "drug_class": "DHP calcium channel blocker (IV/oral)",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Calcium Channel Blockers",
+  "indications": [
+    "Hypertensive emergency (IV)",
+    "Hypertension (oral)"
+  ],
+  "contraindications": [
+    "Severe aortic stenosis",
+    "Cardiogenic shock"
+  ],
+  "side_effects": [
+    "Headache",
+    "Flushing",
+    "Tachycardia",
+    "Edema (oral)"
+  ],
+  "dosage": {
+    "adult": "IV: 5mg/h, titrate by 2.5mg/h every 5-15min (max 15mg/h). Oral: 20-40mg TID."
+  },
+  "interactions": [
+    "CYP3A4 inhibitors",
+    "Beta-blockers (additive hypotension)"
+  ],
+  "monitoring": "Continuous BP (arterial line preferred), HR, ECG",
+  "patient_counselling": "IV: requires continuous monitoring. Oral: TID dosing is disadvantageous.",
+  "mechanism_of_action": "DHP CCB: rapid-onset IV vasodilator for hypertensive emergencies. Reduces afterload.",
+  "brand_names": [
+    "Cardene IV"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Severe hypotension",
+    "Tachycardia (reflex)"
+  ],
+  "overdose": "Symptoms: severe hypotension. Management: IV fluids, vasopressors.",
+  "pharmacokinetics": "IV onset: 5-10 min. t1/2: 14 min (IV). Oral bioavailability: 35%. CYP3A4 metabolism.",
+  "black_box_warnings": [
+    "IV for hypertensive emergencies only — requires monitoring"
+  ],
+  "clinical_pearls": [
+    "IV formulation for hypertensive emergencies",
+    "Tachycardia is common — consider adding beta-blocker",
+    "Also available as oral (but TID dosing limits use)",
+    "Alternative to nitroprusside for hypertensive crises"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-008",
+  "name": "Clevidipine",
+  "generic_name": "Clevidipine butyrate emulsion",
+  "drug_class": "DHP calcium channel blocker (ultra-short-acting IV)",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Calcium Channel Blockers",
+  "indications": [
+    "Hypertensive emergency"
+  ],
+  "contraindications": [
+    "Soy/egg allergy (emulsion component)",
+    "Severe aortic stenosis",
+    "Uncontrolled heart failure"
+  ],
+  "side_effects": [
+    "Headache",
+    "Flushing",
+    "Hypotension",
+    "Reflex tachycardia",
+    "Triglyceride elevation"
+  ],
+  "dosage": {
+    "adult": "IV: 1-2mg/h, titrate by up to double every 2-5min (max 32mg/h)"
+  },
+  "interactions": [
+    "Beta-blockers (reduce reflex tachycardia)",
+    "Other antihypertensives"
+  ],
+  "monitoring": "Continuous arterial BP, HR, triglycerides",
+  "patient_counselling": "IV only. Ultra-short acting — effects stop within 5-15 min of stopping.",
+  "mechanism_of_action": "Ultra-short-acting DHP CCB: rapid-onset/offset arterial vasodilation via esterase hydrolysis. Ideal for precise BP control.",
+  "brand_names": [
+    "Cleviprex"
+  ],
+  "pregnancy_category": "B",
+  "warnings": [
+    "Lipid emulsion — triglyceride monitoring",
+    "Soy/egg allergy contraindication"
+  ],
+  "overdose": "Symptoms: severe hypotension. Management: stop infusion, IV fluids.",
+  "pharmacokinetics": "IV onset: 2-4 min. t1/2: 1 min (rapid esterase hydrolysis). Duration: 5-15 min after stopping.",
+  "black_box_warnings": [
+    "Lipid-based emulsion — monitor triglycerides"
+  ],
+  "clinical_pearls": [
+    "Fastest onset and offset of any IV antihypertensive",
+    "Ideal for perioperative BP control",
+    "Lipid-based emulsion — monitor triglycerides",
+    "Avoid in soy/egg allergy (emulsion components)"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-009",
+  "name": "Benazepril",
+  "generic_name": "Benazepril hydrochloride",
+  "drug_class": "ACE inhibitor",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - ACE Inhibitors",
+  "indications": [
+    "Hypertension",
+    "Heart failure",
+    "Diabetic nephropathy"
+  ],
+  "contraindications": [
+    "Angioedema history",
+    "Bilateral renal artery stenosis",
+    "Pregnancy"
+  ],
+  "side_effects": [
+    "Cough (10-15%)",
+    "Hyperkalemia",
+    "Dizziness",
+    "Angioedema (rare)"
+  ],
+  "dosage": {
+    "adult": "Hypertension: 5-40mg daily. HF: 5-20mg BID."
+  },
+  "interactions": [
+    "Potassium-sparing diuretics (hyperkalemia)",
+    "NSAIDs (reduced effect)",
+    "Lithium (increased levels)"
+  ],
+  "monitoring": "BP, K+, Cr, cough, angioedema",
+  "patient_counselling": "Take on empty stomach. Report persistent cough or facial swelling.",
+  "mechanism_of_action": "ACE inhibitor: blocks angiotensin-converting enzyme, reducing angiotensin II formation, decreasing vasoconstriction and aldosterone secretion.",
+  "brand_names": [
+    "Lotensin"
+  ],
+  "pregnancy_category": "D (2nd/3rd trimester)",
+  "warnings": [
+    "Angioedema",
+    "Hyperkalemia",
+    "Acute kidney injury in bilateral renal artery stenosis"
+  ],
+  "overdose": "Symptoms: hypotension, hyperkalemia. Management: IV fluids, sodium bicarbonate.",
+  "pharmacokinetics": "Prodrug → benazeprilat (active). t1/2: 10-11h. Renal excretion (70%).",
+  "black_box_warnings": [
+    "Fetal toxicity — discontinue when pregnancy detected"
+  ],
+  "clinical_pearls": [
+    "Prodrug — converted to active benazeprilat",
+    "Once-daily dosing for hypertension",
+    "BID dosing for heart failure",
+    "Good renal protective effects in diabetes"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-010",
+  "name": "Fosinopril",
+  "generic_name": "Fosinopril sodium",
+  "drug_class": "ACE inhibitor",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - ACE Inhibitors",
+  "indications": [
+    "Hypertension",
+    "Heart failure"
+  ],
+  "contraindications": [
+    "Angioedema history",
+    "Bilateral renal artery stenosis",
+    "Pregnancy"
+  ],
+  "side_effects": [
+    "Cough",
+    "Hyperkalemia",
+    "Dizziness",
+    "Headache"
+  ],
+  "dosage": {
+    "adult": "Hypertension: 10-40mg daily. HF: 10-20mg daily."
+  },
+  "interactions": [
+    "Potassium-sparing diuretics",
+    "NSAIDs",
+    "Lithium"
+  ],
+  "monitoring": "BP, K+, Cr, cough",
+  "patient_counselling": "Take with or without food (unique — most ACE inhibitors need empty stomach).",
+  "mechanism_of_action": "ACE inhibitor: dual elimination (renal + hepatic) — no dose adjustment needed in mild-moderate renal or hepatic impairment.",
+  "brand_names": [
+    "Monopril"
+  ],
+  "pregnancy_category": "D",
+  "warnings": [
+    "Angioedema",
+    "Hyperkalemia"
+  ],
+  "overdose": "Symptoms: hypotension. Management: IV fluids.",
+  "pharmacokinetics": "Prodrug. Active metabolite t1/2: 12h. Dual elimination (50% renal, 50% hepatic).",
+  "black_box_warnings": [
+    "Fetal toxicity"
+  ],
+  "clinical_pearls": [
+    "Unique dual elimination — no dose adjustment in mild-moderate renal/hepatic impairment",
+    "Take with or without food (most ACE inhibitors need empty stomach)",
+    "Good for patients with uncertain renal function",
+    "Once-daily dosing"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-011",
+  "name": "Quinapril",
+  "generic_name": "Quinapril hydrochloride",
+  "drug_class": "ACE inhibitor",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - ACE Inhibitors",
+  "indications": [
+    "Hypertension",
+    "Heart failure"
+  ],
+  "contraindications": [
+    "Angioedema history",
+    "Pregnancy"
+  ],
+  "side_effects": [
+    "Cough",
+    "Dizziness",
+    "Headache",
+    "Hyperkalemia"
+  ],
+  "dosage": {
+    "adult": "Hypertension: 10-40mg daily. HF: 5-20mg BID."
+  },
+  "interactions": [
+    "Potassium-sparing diuretics",
+    "NSAIDs",
+    "Lithium"
+  ],
+  "monitoring": "BP, K+, Cr, cough",
+  "patient_counselling": "Take on empty stomach for best absorption.",
+  "mechanism_of_action": "ACE inhibitor: blocks angiotensin II formation, reducing vasoconstriction and aldosterone secretion.",
+  "brand_names": [
+    "Accupril"
+  ],
+  "pregnancy_category": "D",
+  "warnings": [
+    "Angioedema",
+    "Hyperkalemia"
+  ],
+  "overdose": "Symptoms: hypotension. Management: IV fluids.",
+  "pharmacokinetics": "Prodrug → active quinaprilat. t1/2: 3h (quinaprilat). Dual renal/hepatic elimination.",
+  "black_box_warnings": [
+    "Fetal toxicity"
+  ],
+  "clinical_pearls": [
+    "High tissue ACE binding — 24-hour ACE inhibition",
+    "Dual elimination like fosinopril",
+    "Good for patients with mild-moderate renal impairment",
+    "Once-daily for hypertension, BID for HF"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-013",
+  "name": "Trandolapril",
+  "generic_name": "Trandolapril",
+  "drug_class": "ACE inhibitor",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - ACE Inhibitors",
+  "indications": [
+    "Hypertension",
+    "Heart failure",
+    "Post-MI with LV dysfunction"
+  ],
+  "contraindications": [
+    "Angioedema history",
+    "Pregnancy"
+  ],
+  "side_effects": [
+    "Cough",
+    "Dizziness",
+    "Hyperkalemia"
+  ],
+  "dosage": {
+    "adult": "Hypertension: 1-4mg daily. HF: 0.5-4mg daily. Post-MI: 0.5-4mg daily."
+  },
+  "interactions": [
+    "Potassium-sparing diuretics",
+    "NSAIDs",
+    "Lithium"
+  ],
+  "monitoring": "BP, K+, Cr, echocardiogram (LV function)",
+  "patient_counselling": "Take on empty stomach.",
+  "mechanism_of_action": "ACE inhibitor: TRACE trial showed mortality reduction in post-MI patients with LV dysfunction.",
+  "brand_names": [
+    "Mavik"
+  ],
+  "pregnancy_category": "D",
+  "warnings": [
+    "Angioedema",
+    "Hyperkalemia"
+  ],
+  "overdose": "Symptoms: hypotension. Management: IV fluids.",
+  "pharmacokinetics": "Prodrug → trandolaprilat (active). t1/2: 16-24h (longest ACE inhibitor). Hepatic/renal elimination.",
+  "black_box_warnings": [
+    "Fetal toxicity"
+  ],
+  "clinical_pearls": [
+    "TRACE trial: reduced mortality post-MI with LV dysfunction",
+    "Longest half-life ACE inhibitor — once-daily dosing",
+    "Good for post-MI patients with reduced EF",
+    "Less commonly used than enalapril/lisinopril"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-014",
+  "name": "Imidapril",
+  "generic_name": "Imidapril hydrochloride",
+  "drug_class": "ACE inhibitor",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - ACE Inhibitors",
+  "indications": [
+    "Hypertension",
+    "Heart failure"
+  ],
+  "contraindications": [
+    "Angioedema history",
+    "Pregnancy"
+  ],
+  "side_effects": [
+    "Cough",
+    "Dizziness",
+    "Headache"
+  ],
+  "dosage": {
+    "adult": "Hypertension: 5-20mg daily. HF: 5-10mg daily."
+  },
+  "interactions": [
+    "Potassium-sparing diuretics",
+    "NSAIDs",
+    "Lithium"
+  ],
+  "monitoring": "BP, K+, Cr",
+  "patient_counselling": "Take on empty stomach.",
+  "mechanism_of_action": "ACE inhibitor: blocks angiotensin II formation. Similar efficacy to enalapril.",
+  "brand_names": [
+    "Tanatril"
+  ],
+  "pregnancy_category": "D",
+  "warnings": [
+    "Angioedema",
+    "Hyperkalemia"
+  ],
+  "overdose": "Symptoms: hypotension. Management: IV fluids.",
+  "pharmacokinetics": "Prodrug → imidaprilat (active). t1/2: 8h. Renal excretion.",
+  "black_box_warnings": [
+    "Fetal toxicity"
+  ],
+  "clinical_pearls": [
+    "Similar to enalapril in efficacy",
+    "Less commonly available globally",
+    "Once-daily dosing",
+    "Good for hypertension and HF"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-015",
+  "name": "Moexipril",
+  "generic_name": "Moexipril hydrochloride",
+  "drug_class": "ACE inhibitor",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - ACE Inhibitors",
+  "indications": [
+    "Hypertension"
+  ],
+  "contraindications": [
+    "Angioedema history",
+    "Pregnancy"
+  ],
+  "side_effects": [
+    "Cough",
+    "Dizziness",
+    "Headache"
+  ],
+  "dosage": {
+    "adult": "7.5-30mg daily"
+  },
+  "interactions": [
+    "Potassium-sparing diuretics",
+    "NSAIDs",
+    "Lithium"
+  ],
+  "monitoring": "BP, K+, Cr",
+  "patient_counselling": "Take 1 hour before meals.",
+  "mechanism_of_action": "ACE inhibitor: prodrug converted to active moexiprilat.",
+  "brand_names": [
+    "Univasc"
+  ],
+  "pregnancy_category": "D",
+  "warnings": [
+    "Angioedema",
+    "Hyperkalemia"
+  ],
+  "overdose": "Symptoms: hypotension. Management: IV fluids.",
+  "pharmacokinetics": "Prodrug → moexiprilat. t1/2: 12h. Renal excretion.",
+  "black_box_warnings": [
+    "Fetal toxicity"
+  ],
+  "clinical_pearls": [
+    "Take 1 hour before meals for best absorption",
+    "Less commonly used than other ACE inhibitors",
+    "Once-daily dosing"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-016",
+  "name": "Delapril",
+  "generic_name": "Delapril hydrochloride",
+  "drug_class": "ACE inhibitor",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - ACE Inhibitors",
+  "indications": [
+    "Hypertension",
+    "Heart failure"
+  ],
+  "contraindications": [
+    "Angioedema history",
+    "Pregnancy"
+  ],
+  "side_effects": [
+    "Cough",
+    "Dizziness"
+  ],
+  "dosage": {
+    "adult": "Hypertension: 10-30mg daily. HF: 10-30mg daily."
+  },
+  "interactions": [
+    "Potassium-sparing diuretics",
+    "NSAIDs"
+  ],
+  "monitoring": "BP, K+, Cr",
+  "patient_counselling": "Take on empty stomach.",
+  "mechanism_of_action": "ACE inhibitor with balanced renal/hepatic elimination.",
+  "brand_names": [
+    "Alapril"
+  ],
+  "pregnancy_category": "D",
+  "warnings": [
+    "Angioedema"
+  ],
+  "overdose": "Symptoms: hypotension. Management: IV fluids.",
+  "pharmacokinetics": "Prodrug. t1/2: 2h (active metabolite 12h). Dual elimination.",
+  "black_box_warnings": [
+    "Fetal toxicity"
+  ],
+  "clinical_pearls": [
+    "Dual renal/hepatic elimination",
+    "Less commonly available outside Japan/Italy",
+    "Good for patients with mild renal impairment"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-020",
+  "name": "Olmesartan medoxomil",
+  "generic_name": "Olmesartan medoxomil",
+  "drug_class": "ARB",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - ARBs",
+  "indications": [
+    "Hypertension"
+  ],
+  "contraindications": [
+    "Pregnancy",
+    "Bilateral renal artery stenosis"
+  ],
+  "side_effects": [
+    "Dizziness",
+    "Diarrhea",
+    "Hyperkalemia",
+    "Sprue-like enteropathy (rare)"
+  ],
+  "dosage": {
+    "adult": "20-40mg daily (max 40mg/day)"
+  },
+  "interactions": [
+    "NSAIDs",
+    "Potassium-sparing diuretics",
+    "Lithium"
+  ],
+  "monitoring": "BP, K+, Cr, GI symptoms (for enteropathy)",
+  "patient_counselling": "Take on empty stomach. Report chronic diarrhea (sprue-like enteropathy).",
+  "mechanism_of_action": "ARB: selective AT1 receptor blockade with high binding affinity.",
+  "brand_names": [
+    "Benicar"
+  ],
+  "pregnancy_category": "D",
+  "warnings": [
+    "Sprue-like enteropathy (chronic diarrhea, weight loss)",
+    "Fetal toxicity",
+    "Hyperkalemia"
+  ],
+  "overdose": "Symptoms: hypotension. Management: IV fluids.",
+  "pharmacokinetics": "Prodrug → olmesartan (active). t1/2: 13h. Renal/biliary elimination.",
+  "black_box_warnings": [
+    "Sprue-like enteropathy — chronic diarrhea and weight loss",
+    "Fetal toxicity"
+  ],
+  "clinical_pearls": [
+    "Sprue-like enteropathy is unique to olmesartan — chronic diarrhea",
+    "High AT1 binding affinity",
+    "Once-daily dosing",
+    "Also available as olmesartan/amlodipine and olmesartan/HCTZ combinations"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-021",
+  "name": "Azilsartan medoxomil",
+  "generic_name": "Azilsartan medoxomil",
+  "drug_class": "ARB",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - ARBs",
+  "indications": [
+    "Hypertension"
+  ],
+  "contraindications": [
+    "Pregnancy",
+    "Bilateral renal artery stenosis"
+  ],
+  "side_effects": [
+    "Dizziness",
+    "Diarrhea",
+    "Hyperkalemia"
+  ],
+  "dosage": {
+    "adult": "40-80mg daily"
+  },
+  "interactions": [
+    "NSAIDs",
+    "Potassium-sparing diuretics",
+    "Lithium"
+  ],
+  "monitoring": "BP, K+, Cr",
+  "patient_counselling": "Take with or without food. Most potent ARB.",
+  "mechanism_of_action": "ARB with highest AT1 receptor binding affinity — most potent BP reduction among ARBs (CHIEF trial).",
+  "brand_names": [
+    "Edarbyclor"
+  ],
+  "pregnancy_category": "D",
+  "warnings": [
+    "Fetal toxicity",
+    "Hyperkalemia"
+  ],
+  "overdose": "Symptoms: hypotension. Management: IV fluids.",
+  "pharmacokinetics": "Prodrug → azilsartan (active). t1/2: 11h. CYP2C9 metabolism. Protein binding: >99%.",
+  "black_box_warnings": [
+    "Fetal toxicity"
+  ],
+  "clinical_pearls": [
+    "Most potent ARB — greatest BP reduction vs other ARBs",
+    "CHIEF trial: superior BP control vs olmesartan",
+    "80mg dose most effective but may cause more dizziness",
+    "Available as azilsartan/amlodipine combination"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-022",
+  "name": "Aliskiren",
+  "generic_name": "Aliskiren hemifumarate",
+  "drug_class": "Direct renin inhibitor",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Renin Inhibitors",
+  "indications": [
+    "Hypertension"
+  ],
+  "contraindications": [
+    "Pregnancy",
+    "Concomitant with ACE inhibitors/ARBs in diabetic patients",
+    "Bilateral renal artery stenosis"
+  ],
+  "side_effects": [
+    "Diarrhea",
+    "Cough",
+    "Hyperkalemia",
+    "Dizziness"
+  ],
+  "dosage": {
+    "adult": "150-300mg daily"
+  },
+  "interactions": [
+    "ACE inhibitors/ARBs (contraindicated with aliskiren in diabetics)",
+    "High-fat meals (reduce absorption)",
+    "Cyclosporine (increased levels)"
+  ],
+  "monitoring": "BP, K+, Cr, diarrhea",
+  "patient_counselling": "Take on empty stomach. Avoid with high-fat meals.",
+  "mechanism_of_action": "Direct renin inhibitor: blocks renin, the rate-limiting step of the renin-angiotensin system. First in class — blocks RAAS at its origin.",
+  "brand_names": [
+    "Tekturna"
+  ],
+  "pregnancy_category": "C (D at >20 weeks)",
+  "warnings": [
+    "Diarrhea (most common)",
+    "Hyperkalemia",
+    "Do not combine with ACEi/ARB in diabetics"
+  ],
+  "overdose": "Symptoms: hypotension. Management: IV fluids.",
+  "pharmacokinetics": "Oral bioavailability: 2.5%. t1/2: 24-40h. CYP3A4 metabolism (minor). Protein binding: 92%.",
+  "black_box_warnings": [
+    "Fetal toxicity — avoid in 2nd/3rd trimester",
+    "Do not combine with ACEi/ARB in diabetics (ALTITUDE trial)"
+  ],
+  "clinical_pearls": [
+    "First direct renin inhibitor — blocks RAAS at origin",
+    "ALTITUDE: increased adverse events with aliskiren + ACEi/ARB in diabetics",
+    "Very low oral bioavailability (2.5%)",
+    "High-fat meals reduce absorption significantly"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-023",
+  "name": "Spironolactone",
+  "generic_name": "Spironolactone",
+  "drug_class": "Mineralocorticoid receptor antagonist (non-selective)",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Diuretics",
+  "indications": [
+    "Heart failure (NYHA II-IV)",
+    "Hypertension resistant",
+    "Ascites (cirrhotic)",
+    "Primary hyperaldosteronism",
+    "Hirsutism"
+  ],
+  "contraindications": [
+    "Anuria",
+    "Hepatic coma",
+    "Severe renal impairment (K+ >5.5)"
+  ],
+  "side_effects": [
+    "Hyperkalemia (dose-limiting)",
+    "Gynecomastia (dose-dependent)",
+    "Menstrual irregularities",
+    "Dizziness",
+    "GI upset"
+  ],
+  "dosage": {
+    "adult": "HF: 12.5-25mg daily. Resistant HTN: 25-50mg daily. Ascites: 100-400mg daily."
+  },
+  "interactions": [
+    "Potassium supplements (hyperkalemia risk)",
+    "ACE inhibitors/ARBs (additive hyperkalemia)",
+    "NSAIDs (reduced effect)",
+    "Lithium (increased levels)"
+  ],
+  "monitoring": "K+ (within 3 days, then q1-3 months), Cr, Na+, gynecomastia",
+  "patient_counselling": "Take with food. Report breast tenderness, muscle weakness, or irregular heartbeat.",
+  "mechanism_of_action": "Non-selective mineralocorticoid receptor antagonist: blocks aldosterone at collecting duct. Also weakly blocks androgen receptors (causes gynecomastia) and progesterone receptors.",
+  "brand_names": [
+    "Aldactone"
+  ],
+  "pregnancy_category": "C (avoid in pregnancy)",
+  "warnings": [
+    "Hyperkalemia (life-threatening)",
+    "Gynecomastia (dose-dependent)",
+    "Endocrine effects (anti-androgen)"
+  ],
+  "overdose": "Symptoms: hyperkalemia, dehydration. Management: IV saline, calcium gluconate for hyperkalemia.",
+  "pharmacokinetics": "Oral bioavailability: 65%. t1/2: 1.4h (active metabolite canrenone: 16h). Hepatic metabolism.",
+  "black_box_warnings": [
+    "Hyperkalemia — monitor potassium closely"
+  ],
+  "clinical_pearls": [
+    "RALES: 30% mortality reduction in severe HF at 25mg/day",
+    "Gynecomastia is dose-dependent — use 12.5-25mg for HF",
+    "Also useful for resistant hypertension and hirsutism",
+    "Anti-androgen effects: gynecomastia, menstrual irregularities, decreased libido"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-025",
+  "name": "Bisoprolol",
+  "generic_name": "Bisoprolol fumarate",
+  "drug_class": "Beta-1 selective blocker",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Beta-blockers",
+  "indications": [
+    "Hypertension",
+    "Heart failure",
+    "Chronic stable angina"
+  ],
+  "contraindications": [
+    "Severe bradycardia",
+    "Second/third degree heart block",
+    "Cardiogenic shock",
+    "Decompensated HF"
+  ],
+  "side_effects": [
+    "Bradycardia",
+    "Fatigue",
+    "Dizziness",
+    "Cold extremities",
+    "Depression"
+  ],
+  "dosage": {
+    "adult": "Hypertension: 5-20mg daily. HF: start 1.25mg daily, titrate to 10mg daily."
+  },
+  "interactions": [
+    "Verapamil (additive bradycardia)",
+    "Digoxin (additive bradycardia)",
+    "CYP2D6 inhibitors"
+  ],
+  "monitoring": "HR, BP, signs of heart failure",
+  "patient_counselling": "Do not stop abruptly. Take with food. Report dizziness or fatigue.",
+  "mechanism_of_action": "Most beta-1 selective beta-blocker (beta-1:beta-2 selectivity ratio 75:1). Reduces heart rate, contractility, and myocardial oxygen demand.",
+  "brand_names": [
+    "Zebeta"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Abrupt discontinuation risk",
+    "Bradycardia",
+    "Heart failure worsening if not titrated"
+  ],
+  "overdose": "Symptoms: bradycardia, hypotension, bronchospasm. Management: atropine, isoproterenol.",
+  "pharmacokinetics": "Oral bioavailability: 90%. t1/2: 10-12h. CYP2D6 (minor). Renal (50%) and hepatic (50%) elimination.",
+  "black_box_warnings": [
+    "Do not stop abruptly in CAD/HF"
+  ],
+  "clinical_pearls": [
+    "Most beta-1 selective of all beta-blockers",
+    "CIBIS-II: reduced mortality in HF (bisoprolol, carvedilol, metoprolol succinate — the 3 evidence-based HF beta-blockers)",
+    "Renal/hepatic dual elimination",
+    "Once-daily dosing"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-026",
+  "name": "Celiprolol",
+  "generic_name": "Celiprolol hydrochloride",
+  "drug_class": "Beta-1 selective blocker + partial beta-2 agonist",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Beta-blockers",
+  "indications": [
+    "Hypertension"
+  ],
+  "contraindications": [
+    "Severe bradycardia",
+    "Heart block",
+    "Cardiogenic shock"
+  ],
+  "side_effects": [
+    "Fatigue",
+    "Dizziness",
+    "Headache",
+    "GI upset"
+  ],
+  "dosage": {
+    "adult": "200-400mg daily"
+  },
+  "interactions": [
+    "CYP3A4 inhibitors"
+  ],
+  "monitoring": "HR, BP",
+  "mechanism_of_action": "Beta-1 selective blocker with partial beta-2 agonism: reduces HR/BP while maintaining some vasodilation via beta-2. No negative inotropy.",
+  "brand_names": [
+    "Celicard"
+  ],
+  "pregnancy_category": "B",
+  "warnings": [
+    "Bradycardia"
+  ],
+  "overdose": "Symptoms: bradycardia. Management: atropine.",
+  "pharmacokinetics": "Oral bioavailability: 30-70% (food reduces by 50%). t1/2: 5-6h. Minimal CYP metabolism.",
+  "black_box_warnings": [
+    "Do not stop abruptly"
+  ],
+  "clinical_pearls": [
+    "Partial beta-2 agonism — less cold extremities",
+    "Take on empty stomach — food reduces absorption 50%",
+    "No negative inotropy — safer in mild HF",
+    "Used in France/UK, not available in US"
+  ],
+  "patient_counselling": "Consult healthcare provider for Unknown. Complete full course as prescribed. Report any adverse effects.",
+  "created_at": ""
+},
+    {
+  "id": "new-3-027",
+  "name": "Betaxolol",
+  "generic_name": "Betaxolol hydrochloride",
+  "drug_class": "Beta-1 selective blocker",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Beta-blockers",
+  "indications": [
+    "Hypertension",
+    "Glaucoma (ophthalmic)"
+  ],
+  "contraindications": [
+    "Severe bradycardia",
+    "Heart block",
+    "Cardiogenic shock"
+  ],
+  "side_effects": [
+    "Bradycardia",
+    "Fatigue",
+    "Dizziness"
+  ],
+  "dosage": {
+    "adult": "Hypertension: 10-20mg daily. Glaucoma: 1 drop BID."
+  },
+  "interactions": [
+    "Verapamil",
+    "Digoxin"
+  ],
+  "monitoring": "HR, BP, IOP (ophthalmic)",
+  "patient_counselling": "Oral or eye drop formulation. Do not stop abruptly.",
+  "mechanism_of_action": "Beta-1 selective blocker with long half-life. Ophthalmic formulation reduces aqueous humor production.",
+  "brand_names": [
+    "Kerlone",
+    "Betoptic"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Bradycardia"
+  ],
+  "overdose": "Symptoms: bradycardia. Management: atropine.",
+  "pharmacokinetics": "Oral bioavailability: 90%. t1/2: 14-22h. Hepatic metabolism. Protein binding: 50%.",
+  "black_box_warnings": [
+    "Do not stop abruptly"
+  ],
+  "clinical_pearls": [
+    "Long half-life — once-daily dosing",
+    "Ophthalmic formulation for glaucoma",
+    "Less CNS penetration than propranolol",
+    "Good for patients needing 24-hour BP control"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-028",
+  "name": "Indenolol",
+  "generic_name": "Indenolol hydrochloride",
+  "drug_class": "Non-selective beta-blocker",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Beta-blockers",
+  "indications": [
+    "Hypertension",
+    "Angina",
+    "Arrhythmias"
+  ],
+  "contraindications": [
+    "Severe bradycardia",
+    "Heart block",
+    "Asthma",
+    "Cardiogenic shock"
+  ],
+  "side_effects": [
+    "Bradycardia",
+    "Fatigue",
+    "Bronchospasm",
+    "Cold extremities",
+    "Depression"
+  ],
+  "dosage": {
+    "adult": "100-200mg daily"
+  },
+  "interactions": [
+    "Verapamil",
+    "Digoxin",
+    "Calcium channel blockers"
+  ],
+  "monitoring": "HR, BP, respiratory function",
+  "patient_counselling": "Do not stop abruptly. Report breathing difficulty.",
+  "mechanism_of_action": "Non-selective beta-blocker with additional membrane-stabilizing activity.",
+  "brand_names": [
+    "Pindolol (related compound)"
+  ],
+  "pregnancy_category": "C",
+  "warnings": [
+    "Bronchospasm in asthma",
+    "Do not stop abruptly"
+  ],
+  "overdose": "Symptoms: bradycardia, bronchospasm. Management: atropine, isoproterenol.",
+  "pharmacokinetics": "Oral bioavailability: 40-50%. t1/2: 2-4h. Hepatic metabolism.",
+  "black_box_warnings": [
+    "Do not stop abruptly"
+  ],
+  "clinical_pearls": [
+    "Non-selective — avoid in asthma/COPD",
+    "Membrane-stabilizing activity at high doses",
+    "Not commonly available in all markets"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-029",
+  "name": "Sotalol AF",
+  "generic_name": "Sotalol hydrochloride (AF formulation)",
+  "drug_class": "Class II/III antiarrhythmic",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Antiarrhythmics",
+  "indications": [
+    "Atrial fibrillation/flutter (maintenance of sinus rhythm)"
+  ],
+  "contraindications": [
+    "Baseline QTc >450ms",
+    "Severe renal impairment",
+    "Sinus bradycardia"
+  ],
+  "side_effects": [
+    "Bradycardia",
+    "QT prolongation",
+    "Fatigue",
+    "Dizziness"
+  ],
+  "dosage": {
+    "adult": "80-160mg PO BID (based on QTc)"
+  },
+  "interactions": [
+    "QT-prolonging drugs",
+    "Other antiarrhythmics",
+    "NSAIDs"
+  ],
+  "monitoring": "ECG (QTc), HR, renal function, electrolytes",
+  "patient_counselling": "Take with food. Do not stop abruptly. Report palpitations.",
+  "mechanism_of_action": "Combined beta-blocker and class III antiarrhythmic — unique dual mechanism for AF rate/rhythm control.",
+  "brand_names": [
+    "Betapace AF"
+  ],
+  "pregnancy_category": "B",
+  "warnings": [
+    "QT prolongation/Torsades de Pointes",
+    "Must be renal dose-adjusted"
+  ],
+  "overdose": "Symptoms: bradycardia, QT prolongation. Management: atropine, isoproterenol.",
+  "pharmacokinetics": "Oral bioavailability: 90-100%. t1/2: 12h. 100% renal elimination.",
+  "black_box_warnings": [
+    "Risk of Torsades de Pointes"
+  ],
+  "clinical_pearls": [
+    "Dedicated AF formulation — labeled for AF only",
+    "Must adjust for renal function",
+    "Dose based on QTc monitoring",
+    "QTc >500ms: stop or reduce dose"
+  ],
+  "created_at": ""
+},
+    {
+  "id": "new-3-030",
+  "name": "Droneaterone",
+  "generic_name": "Droneaderone",
+  "drug_class": "Class III antiarrhythmic",
+  "drug_class_id": null,
+  "drug_class_name": "Cardiovascular - Antiarrhythmics",
+  "indications": [
+    "Atrial fibrillation (maintenance of sinus rhythm)"
+  ],
+  "contraindications": [
+    "NYHA Class IV HF",
+    "Permanent AF",
+    "Severe hepatic impairment"
+  ],
+  "side_effects": [
+    "GI upset",
+    "Bradycardia",
+    "QT prolongation",
+    "Hepatotoxicity"
+  ],
+  "dosage": {
+    "adult": "400mg PO BID with meals"
+  },
+  "interactions": [
+    "CYP3A4 inhibitors (contraindicated)",
+    "Digoxin (reduce dose 50%)",
+    "Statins (reduce dose)"
+  ],
+  "monitoring": "LFTs, ECG, thyroid function",
+  "patient_counselling": "Take with meals. Avoid grapefruit. Report shortness of breath.",
+  "mechanism_of_action": "Multi-channel antiarrhythmic (K+, Na+, Ca2+ blockade) without iodine — lower thyroid/pulmonary toxicity than amiodarone.",
+  "brand_names": [
+    "Multaq"
+  ],
+  "pregnancy_category": "X",
+  "warnings": [
+    "Hepatotoxicity",
+    "NOT for permanent AF (increased mortality)",
+    "Heart failure worsening"
+  ],
+  "overdose": "Symptoms: bradycardia. Management: supportive care.",
+  "pharmacokinetics": "Oral bioavailability: 15%. t1/2: 13-19h. CYP3A4 metabolism. Protein binding: 98%.",
+  "black_box_warnings": [
+    "Do not use in permanent AF",
+    "Hepatotoxicity",
+    "Worsens heart failure"
+  ],
+  "clinical_pearls": [
+    "NOT for permanent AF — increased mortality (ATHENA subgroup)",
+    "Less toxic than amiodarone (no iodine, shorter half-life)",
+    "13-19h half-life vs amiodarone 40-55 days",
+    "400mg BID with food — not on empty stomach"
+  ],
+  "created_at": ""
+},
+    {"id":"bulk-001","name":"Nateglinide","generic_name":"Nateglinide","drug_class":"Meglitinide","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes"],"contraindications":["DKA","Type 1 diabetes"],"side_effects":["Hypoglycemia","Weight gain"],"dosage":{"adult":"60-120mg before meals (max 360mg/day)"},"interactions":["NSAIDs","CYP2C9 inhibitors"],"monitoring":"Postprandial glucose","patient_counselling":"Stimulates rapid short-duration insulin release.","mechanism_of_action":"Starlix","brand_names":["Bioavailability 73%","t1/2 1.5h"],"pregnancy_category":"Fastest onset meglitinide~60mg for elderly","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Rosiglitazone","generic_name":"Rosiglitazone","drug_class":"Thiazolidinedione","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes (limited use)"],"contraindications":["NYHA III/IV HF","Active liver disease"],"side_effects":["Weight gain","Edema","HF exacerbation"],"dosage":{"adult":"4-8mg daily"},"interactions":["Gemfibrozil (increased exposure)","Rifampin"],"monitoring":"LFTs~Signs of HF","patient_counselling":"PPAR-gamma agonist: improves insulin sensitivity.","mechanism_of_action":"Avandia","brand_names":["Bioavailability 99%","CYP2C8"],"pregnancy_category":"Restricted due to MI risk~Rarely used now","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Linagliptin","generic_name":"Linagliptin","drug_class":"DPP-4 inhibitor (hepatoexcreted)","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes"],"contraindications":["Type 1 diabetes","DKA"],"side_effects":["Nasopharyngitis","URI"],"dosage":{"adult":"5mg daily (NO renal adjustment)"},"interactions":["Rifampin (reduced levels)"],"monitoring":"HbA1c","patient_counselling":"Hepatoexcreted DPP-4 inhibitor - no renal adjustment needed.","mechanism_of_action":"Tradjenta","brand_names":["Bioavailability 30%","t1/2 >100h","80% hepatic"],"pregnancy_category":"ONLY DPP-4i with no renal adjustment~Longest half-life~Ideal for CKD/dialysis","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Saxagliptin","generic_name":"Saxagliptin","drug_class":"DPP-4 inhibitor","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes"],"contraindications":["Type 1 diabetes","DKA"],"side_effects":["URI","UTI","Pancreatitis (rare)"],"dosage":{"adult":"2.5-5mg daily (2.5mg if eGFR <=45)"},"interactions":["CYP3A4/5 inhibitors (reduce to 2.5mg)"],"monitoring":"HbA1c","patient_counselling":"DPP-4 inhibitor prolonging incretin activity.","mechanism_of_action":"Onglyza","brand_names":["Bioavailability 67%","t1/2 2.5h","CYP3A4/5"],"pregnancy_category":"SAVOR-TIMI: HF signal~Renal dose adjustment required","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Alogliptin","generic_name":"Alogliptin","drug_class":"DPP-4 inhibitor","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes"],"contraindications":["Type 1 diabetes","DKA"],"side_effects":["URI","Headache"],"dosage":{"adult":"25mg daily (12.5mg eGFR 30-45, 6.25mg <30/dialysis)"},"interactions":["Strong CYP3A4 inducers"],"monitoring":"HbA1c","patient_counselling":"Highly selective DPP-4 inhibitor.","mechanism_of_action":"Nesina","brand_names":["Bioavailability 60-70%","t1/2 21h","Renal excretion"],"pregnancy_category":"Can use in dialysis at 6.25mg~Highly selective >10000x vs DPP-8/9","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Miglitol","generic_name":"Miglitol","drug_class":"Alpha-glucosidase inhibitor","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes"],"contraindications":["IBD","CrCl <25"],"side_effects":["Flatulence","Diarrhea","LFT elevation"],"dosage":{"adult":"25mg TID with meals (max 100mg TID)"},"interactions":["Digoxin (reduced absorption)","Neomycin"],"monitoring":"Postprandial glucose~LFTs","patient_counselling":"Inhibits alpha-glucosidases in small intestine.","mechanism_of_action":"Glyset","brand_names":["Minimal systemic absorption - local gut action"],"pregnancy_category":"Similar to acarbose~Less GI effects~Monitor LFTs","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Dofetilide","generic_name":"Dofetilide","drug_class":"Class III antiarrhythmic (pure K+ blocker)","drug_class_id":null,"drug_class_name":"Cardiovascular - Antiarrhythmics","indications":["AF/flutter conversion/maintenance"],"contraindications":["Baseline QTc >440ms","Severe renal impairment","Concomitant cimetidine"],"side_effects":["QT prolongation","Torsades de Pointes","Headache","Nausea"],"dosage":{"adult":"125-500mcg BID (renal adjusted)"},"interactions":["QT-prolonging drugs","Cimetidine (contraindicated)"],"monitoring":"ECG (QTc)~Electrolytes~Renal function","patient_counselling":"Pure class III antiarrhythmic: blocks rapid delayed rectifier K+ current (Ikr), prolonging repolarization.","mechanism_of_action":"Tikosyn","brand_names":["Bioavailability 90-100%","t1/2 10h","100% renal"],"pregnancy_category":"INITIATION ONLY in hospital with continuous telemetry~QTc >500ms: hold/reduce~Risk of Torsades~Most effective for AF conversion","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Lenvatinib","generic_name":"Lenvatinib","drug_class":"Multi-kinase inhibitor (VEGFR/FGFR/PDGFR)","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["Thyroid cancer","HCC","Endometrial cancer"],"contraindications":["Severe hepatic impairment"],"side_effects":["Hypertension","Diarrhea","Fatigue","Weight loss","Proteinuria"],"dosage":{"adult":"24mg daily (thyroid) or 8-12mg daily (HCC)"},"interactions":["Strong CYP3A4 inducers (avoid)","P-gp substrates"],"monitoring":"BP~Proteinuria~LFTs~Weight","patient_counselling":"Inhibits VEGFR1-3, FGFR1-4, PDGFR, RET, KIT. Broader FGFR inhibition than other TKIs.","mechanism_of_action":"Lenvima","brand_names":["Bioavailability 59-72%","t1/2 28h","CYP3A4/P-gp"],"pregnancy_category":"Hypertension very common (68%)~Proteinuria monitor~Unique FGFR inhibition~Combination with pembrolizumab for endometrial","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Cabozantinib","generic_name":"Cabozantinib","drug_class":"Multi-kinase inhibitor (VEGFR2/MET/AXL)","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["HCC","RCC","Medullary thyroid cancer"],"contraindications":["Severe hepatic impairment"],"side_effects":["Diarrhea","Palmar-plantar erythrodysesthesia","Fatigue","Weight loss","Hypertension"],"dosage":{"adult":"60mg daily (HCC) or 140mg daily (RCC/MTC)"},"interactions":["Strong CYP3A4 inducers (avoid)"],"monitoring":"LFTs~BP~Proteinuria","patient_counselling":"Inhibits VEGFR2, MET, AXL, RET, KIT. Dual VEGFR/MET inhibition overcomes resistance.","mechanism_of_action":"Cabometyx","brand_names":["Bioavailability","t1/2 99h","CYP3A4"],"pregnancy_category":"Long half-life~Hypertension and diarrhea most common~MET inhibition overcomes resistance","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Pazopanib","generic_name":"Pazopanib","drug_class":"VEGFR/PDGFR/KIT inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["RCC","Soft tissue sarcoma"],"contraindications":["QT prolongation","Hepatic impairment"],"side_effects":["Hypertension","Diarrhea","Hair color change","Hepatotoxicity","Fatigue"],"dosage":{"adult":"800mg daily (empty stomach)"},"interactions":["CYP3A4 inducers (reduce levels)","Grapefruit (avoid)"],"monitoring":"LFTs weekly x4 then q2-4w~BP~ECG (QTc)","patient_counselling":"Inhibits VEGFR1-3, PDGFR, KIT. Anti-angiogenic TKI.","mechanism_of_action":"Votrient","brand_names":["Bioavailability","t1/2 31h","CYP3A4"],"pregnancy_category":"Take 1h before or 2h after food~Hepatotoxicity monitoring essential~Hair depigmentation unique~QTc prolongation","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Levalbuterol","generic_name":"Levalbuterol","drug_class":"Beta-2 agonist (active R-enantiomer)","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["Acute bronchospasm","Exercise-induced bronchospasm"],"contraindications":["Hypersensitivity to albuterol"],"side_effects":["Tachycardia","Tremor","Hypokalemia","Palpitations"],"dosage":{"adult":"0.63-1.25mg nebulizer TID-QID or 45-90mcg MDI"},"interactions":["Beta-blockers (antagonize effect)"],"monitoring":"HR~K+","patient_counselling":"Active R-enantiomer of albuterol. May have less cardiac effects than racemic albuterol.","mechanism_of_action":"Xopenex","brand_names":["Onset 5-15 min","Duration 6-8h"],"pregnancy_category":"R-enantiomer theoretically fewer side effects~More expensive than albuterol~Similar efficacy to albuterol","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Ipratropium","generic_name":"Ipratropium","drug_class":"Anticholinergic (SAMA)","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["COPD","Acute bronchospasm"],"contraindications":["Hypersensitivity to atropine"],"side_effects":["Dry mouth","Urinary retention","Blurred vision"],"dosage":{"adult":"2 puffs QID (MDI) or 0.5mg nebulizer QID-Q6H"},"interactions":["Anticholinergics (additive)"],"monitoring":"None significant","patient_counselling":"Blocks M3 muscarinic receptors in bronchial smooth muscle, causing bronchodilation.","mechanism_of_action":"Atrovent","brand_names":["Onset 15-30 min","Duration 4-6h"],"pregnancy_category":"Longer acting than SABAs for COPD~Less effective than SABAs in asthma~Can combine with albuterol","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Olodaterol","generic_name":"Olodaterol","drug_class":"Long-acting beta-2 agonist (LABA)","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["COPD maintenance","Asthma (with ICS)"],"contraindications":["Severe bradycardia","2nd/3rd degree block"],"side_effects":["Tachycardia","Tremor","Hypokalemia","Palpitations"],"dosage":{"adult":"5mcg inhaled daily (Respimat)"},"interactions":["CYP3A4 inhibitors","Beta-blockers"],"monitoring":"HR~K+","patient_counselling":"Once-daily LABA with 24h duration. Beta-2 selective agonist.","mechanism_of_action":"Striverdi","brand_names":["Onset 5 min","Duration 24h"],"pregnancy_category":"Once daily LABA~Must use with ICS in asthma~Respimat soft mist inhaler","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Indacaterol","generic_name":"Indacaterol","drug_class":"Once-daily LABA","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["COPD maintenance"],"contraindications":["Severe bradycardia"],"side_effects":["Cough","Headache","Nasopharyngitis","Hyperglycemia"],"dosage":{"adult":"75-300mcg inhaled daily"},"interactions":["CYP3A4 inhibitors"],"monitoring":"HR~Glucose","patient_counselling":"Once-daily LABA with 24h duration. Ultra-long acting.","mechanism_of_action":"Arcapta","brand_names":["Onset 5 min","Duration 24h"],"pregnancy_category":"Once daily LABA~COPD only (not asthma)~Good for once daily adherence","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Aclidinium","generic_name":"Aclidinium","drug_class":"Long-acting anticholinergic (LAMA)","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["COPD maintenance"],"contraindications":["Hypersensitivity to atropine"],"side_effects":["Dry mouth","Constipation","Urinary retention"],"dosage":{"adult":"400mcg inhaled BID"},"interactions":["Anticholinergics (additive)"],"monitoring":"None significant","patient_counselling":"Twice-daily LAMA for COPD bronchodilation.","mechanism_of_action":"Tudorza","brand_names":["Onset 15-30 min","Duration 12h"],"pregnancy_category":"Twice daily LAMA~Dry mouth less than tiotropium~DPI formulation","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Glycopyrrolate inhalation","generic_name":"Glycopyrronium bromide (inhalation)","drug_class":"Long-acting anticholinergic (LAMA)","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["COPD maintenance"],"contraindications":["Hypersensitivity to atropine"],"side_effects":["Dry mouth","Urinary retention"],"dosage":{"adult":"50mcg inhaled BID (Bevespi) or 12.5mcg BID (Seebri) or 9mcg daily (Incruse)"},"interactions":["Anticholinergics"],"monitoring":"None significant","patient_counselling":"LAMA available as combination (Bevespi = glycopyrrolate/formoterol) or monotherapy.","mechanism_of_action":"Incruse Ellipta~Bevespi Aerosphere","brand_names":["Onset 5-15 min","Duration 12-24h"],"pregnancy_category":"Available as monotherapy or LABA/LAMA combo~Also used IV for secretions (different formulation)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Zafirlukast","generic_name":"Zafirlukast","drug_class":"Leukotriene receptor antagonist","drug_class_id":null,"drug_class_name":"Respiratory - Leukotriene modifiers","indications":["Asthma (adjunct)"],"contraindications":["None significant"],"side_effects":["Headache","GI upset","Elevated LFTs"],"dosage":{"adult":"20mg BID"},"interactions":["Warfarin (increased INR 35%)","CYP3A4 inhibitors"],"monitoring":"LFTs","patient_counselling":"Blocks cysteinyl leukotriene receptor CysLT1.","mechanism_of_action":"Accolate","brand_names":["Bioavailability","t1/2 10h","CYP2C9/3A4"],"pregnancy_category":"Take on empty stomach~Monitor LFTs~Drug interaction with warfarin","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Zileuton","generic_name":"Zileuton","drug_class":"5-lipoxygenase inhibitor","drug_class_id":null,"drug_class_name":"Respiratory - Leukotriene modifiers","indications":["Asthma (adjunct)"],"contraindications":["Active liver disease","Elevated LFTs"],"side_effects":["Elevated LFTs (1-2% hepatitis)","Headache","Nausea"],"dosage":{"adult":"600mg QID"},"interactions":["Theophylline (increases levels 45%)","Warfarin (increases INR)"],"monitoring":"LFTs at baseline, monthly x3, then periodically","patient_counselling":"Inhibits 5-lipoxygenase enzyme, blocking leukotriene synthesis (not just receptor blockade).","mechanism_of_action":"Zyflo","brand_names":["Bioavailability","t1/2 2.1h","CYP1A2/3A4"],"pregnancy_category":"Take with food~Monitor LFTs monthly~Hepatotoxicity risk~QID dosing disadvantage","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Ambroxol","generic_name":"Ambroxol","drug_class":"Mucolytic (bromhexine metabolite)","drug_class_id":null,"drug_class_name":"Respiratory - Mucolytics","indications":["Productive cough with viscous mucus"],"contraindications":["None significant"],"side_effects":["GI upset","Rash"],"dosage":{"adult":"30mg TID (oral) or 15-30mg nebulizer TID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Mucolytic agent: reduces mucus viscosity by activating surfactant production and lysosomal enzymes.","mechanism_of_action":"Mucosolvan","brand_names":["Bioavailability 10-20%","t1/2 10h"],"pregnancy_category":"More effective than bromhexine~Reduces mucus viscosity~Also has local anesthetic effect","warnings":["Not available in US"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Benzonatate","generic_name":"Benzonatate","drug_class":"Non-narcotic antitussive","drug_class_id":null,"drug_class_name":"Respiratory - Antitussives","indications":["Cough"],"contraindications":["None significant"],"side_effects":["Drowsiness","Dizziness","GI upset","Seizures (overdose)"],"dosage":{"adult":"100-200mg TID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Suppresses cough by anesthetizing stretch receptors in pulmonary inflation reflex pathway.","mechanism_of_action":"Tessalon","brand_names":["Onset 15-20 min","Duration 3-8h"],"pregnancy_category":"Do not chew/crush - risk of fatal local anesthesia of oropharynx","warnings":["Starts working in 15-20 min"],"overdose":"Avoid in children <10 (capsule aspiration risk)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Dextromethorphan","generic_name":"Dextromethorphan","drug_class":"Sigma-1 receptor agonist/NMDA antagonist","drug_class_id":null,"drug_class_name":"Respiratory - Antitussives","indications":["Cough"],"contraindications":["MAOIs (contraindicated 2 weeks)"],"side_effects":["Drowsiness","Dizziness","Nausea","Serotonin syndrome (with SSRIs)"],"dosage":{"adult":"10-30mg q4-6h (max 120mg/day)"},"interactions":["MAOIs (contraindicated)","SSRIs/SNRIs (serotonin syndrome)","Quinidine (CYP2D6 inhibitor)"],"monitoring":"None significant","patient_counselling":"Suppresses cough center in medulla via sigma-1 receptor agonism. NMDA antagonist at high doses.","mechanism_of_action":"Robitussin DM~Delsym","brand_names":["t1/2 2-4h"],"pregnancy_category":"MAOIs absolutely contraindicated~Quinidine increases levels 10x (use therapeutically in pseudobulbar affect)","warnings":["Common in OTC products - check interactions"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Pseudoephedrine","generic_name":"Pseudoephedrine","drug_class":"Sympathomimetic (alpha/beta agonist)","drug_class_id":null,"drug_class_name":"Respiratory - Decongestants","indications":["Nasal congestion"],"contraindications":["Severe hypertension","MAOIs"],"side_effects":["Insomnia","Tachycardia","Hypertension","Anxiety"],"dosage":{"adult":"30-60mg q4-6h (max 240mg/day)"},"interactions":["MAOIs (hypertensive crisis)","Beta-blockers (paradoxical hypertension)"],"monitoring":"BP~HR","patient_counselling":"Alpha-1 and beta agonist: causes vasoconstriction in nasal mucosa reducing edema and congestion.","mechanism_of_action":"Sudafed","brand_names":["Bioavailability 50-75%","t1/2 4-8h","Renal excretion"],"pregnancy_category":"Behind pharmacy counter (pseudoephedrine law)~Avoid in uncontrolled hypertension~May worsen urinary retention in BPH~Can cause insomnia","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Oxymetazoline","generic_name":"Oxymetazoline","drug_class":"Topical alpha-1 agonist (decongestant)","drug_class_id":null,"drug_class_name":"Respiratory - Decongestants","indications":["Nasal congestion"],"contraindications":["None significant"],"side_effects":["Rebound congestion (rhinitis medicamentosa)"],"dosage":{"adult":"2-3 sprays per nostril BID x3-5 days (max)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical alpha-1 agonist: potent vasoconstriction in nasal mucosa. Do not use >3-5 days to avoid rebound congestion.","mechanism_of_action":"Afrin","brand_names":["Onset 5-10 min","Duration 12h"],"pregnancy_category":"Do NOT use >3-5 days - rebound congestion (rhinitis medicamentosa)","warnings":["Most effective topical decongestant"],"overdose":"Avoid in hypertension","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-014","name":"Xylometazoline","generic_name":"Xylometazoline","drug_class":"Topical alpha-1 agonist (decongestant)","drug_class_id":null,"drug_class_name":"Respiratory - Decongestants","indications":["Nasal congestion"],"contraindications":["None significant"],"side_effects":["Rebound congestion"],"dosage":{"adult":"1 spray per nostril BID x3-5 days"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical nasal decongestant. Similar to oxymetazoline.","mechanism_of_action":"Otrivin","brand_names":["Onset 5-10 min","Duration 6-10h"],"pregnancy_category":"Do NOT use >5 days","warnings":["Less potent than oxymetazoline"],"overdose":"Used for nasal congestion and sinusitis","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Cromolyn","generic_name":"Cromolyn sodium","drug_class":"Mast cell stabilizer","drug_class_id":null,"drug_class_name":"Respiratory - Anti-inflammatory","indications":["Asthma prophylaxis","Allergic rhinitis","Food allergy prevention"],"contraindications":["None significant"],"side_effects":["Nausea","Cough","Throat irritation"],"dosage":{"adult":"2 puffs QID (MDI) or 100mg nebulizer QID or nasal spray QID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Prevents mast cell degranulation and histamine release. Must be used prophylactically - not rescue.","mechanism_of_action":"Gastrocrom (oral)~NasalCrom (nasal)","brand_names":["Onset 2-4 weeks for full effect"],"pregnancy_category":"Preventive only - not for acute symptoms~Must use QID dosing~Very safe profile~Take 15-20 min before exercise or allergen exposure","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Nedocromil","generic_name":"Nedocromil","drug_class":"Mast cell stabilizer","drug_class_id":null,"drug_class_name":"Respiratory - Anti-inflammatory","indications":["Asthma prophylaxis"],"contraindications":["None significant"],"side_effects":["Headache","Nausea","Unpleasant taste"],"dosage":{"adult":"2 puffs BID-QID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Inhibits mast cell degranulation and inflammatory cell activation.","mechanism_of_action":"Tilade","brand_names":["Onset 2-4 weeks"],"pregnancy_category":"Similar to cromolyn~BID dosing advantage~Less commonly used~Not for acute symptoms","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-017","name":"Aminophylline","generic_name":"Aminophylline","drug_class":"Theophylline ethylenediamine","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["Status asthmaticus (adjunct)","COPD"],"contraindications":["Same as theophylline"],"side_effects":["Same as theophylline"],"dosage":{"adult":"Loading: 6mg/kg IV over 20-30min, then 0.5mg/kg/h (renal adjust)"},"interactions":["Same as theophylline"],"monitoring":"Theophylline levels","patient_counselling":"IV aminophylline (79% theophylline by weight). Used when oral theophylline not feasible.","mechanism_of_action":"Somophyllin","brand_names":["Loading = theophylline dose x 1.27"],"pregnancy_category":"Convert aminophylline to theophylline by multiplying by 0.79","warnings":["IV formulation for acute situations"],"overdose":"Loading dose based on ideal body weight","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Mianserin","generic_name":"Mianserin","drug_class":"NaSSA (noradrenergic and specific serotonergic)","drug_class_id":null,"drug_class_name":"Neurology - Antidepressants","indications":["Major depressive disorder","Insomnia"],"contraindications":["MAOIs (contraindicated)"],"side_effects":["Sedation","Weight gain","Dry mouth","Agranulocytosis (rare)"],"dosage":{"adult":"30-90mg daily (start 30mg)"},"interactions":["MAOIs","CYP2D6 substrates"],"monitoring":"CBC if infection signs","patient_counselling":"Alpha-2 antagonist and 5-HT2/5-HT3 antagonist. Similar to mirtazapine but more agranulocytosis risk.","mechanism_of_action":"Tolvon","brand_names":["Bioavailability 30%","t1/2 10-50h"],"pregnancy_category":"Not available in US~More agranulocytosis risk than mirtazapine~Used in UK/Europe/Australia","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Vortioxetine","generic_name":"Vortioxetine","drug_class":"Multimodal antidepressant","drug_class_id":null,"drug_class_name":"Neurology - Antidepressants","indications":["Major depressive disorder"],"contraindications":["MAOIs (contraindicated)"],"side_effects":["Nausea (most common)","Headache","Dizziness","Sexual dysfunction"],"dosage":{"adult":"5-20mg daily"},"interactions":["CYP2D6 inhibitors (reduce dose to 5mg)"],"monitoring":"None significant","patient_counselling":"Multimodal mechanism: SERT inhibition + 5-HT1A agonism + 5-HT1B partial agonism + 5-HT3/5-HT7/5-HT1D antagonism. Pro-cognitive effects.","mechanism_of_action":"Trintellix","brand_names":["Bioavailability 75%","t1/2 66h","CYP2D6/CYP3A4"],"pregnancy_category":"Nausea most common (30%) - take with food~Pro-cognitive benefits unique~Less sexual dysfunction than SSRIs","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Lurasidone","generic_name":"Lurasidone","drug_class":"Second-generation antipsychotic (SGA)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia","Bipolar depression"],"contraindications":["Concomitant CYP3A4 inhibitors + strong CYP2D6 inhibitors"],"side_effects":["Nausea","Akathisia","Extrapyramidal symptoms","Somnolence"],"dosage":{"adult":"40-80mg daily (with food)"},"interactions":["Strong CYP3A4 inhibitors (ketoconazole - contraindicated)","CYP3A4 inducers (reduces levels)"],"monitoring":"LFTs~Weight~Glucose~Lipids~Movement disorders","patient_counselling":"D2 and 5-HT2A antagonism. Also 5-HT7 antagonist (may improve cognition and depression).","mechanism_of_action":"Latuda","brand_names":["Bioavailability 9-19%","t1/2 18h","CYP3A4"],"pregnancy_category":"Must take with food (increases absorption 50%)~Less weight gain/ metabolic effects than olanzapine/quetiapine~5-HT7 antagonism unique","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Aripiprazole lauroxil","generic_name":"Aripiprazole lauroxil","drug_class":"Long-acting injectable SGA","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia maintenance"],"contraindications":["Hypersensitivity"],"side_effects":["Akathisia","Weight gain"],"dosage":{"adult":"441-1064mg IM monthly or 882mg q2 months"},"interactions":["Strong CYP3A4/2D6 inhibitors"],"monitoring":"Weight~Movement disorders","patient_counselling":"Long-acting prodrug of aripiprazole. Monthly or bimonthly injection for adherence.","mechanism_of_action":"Aristada","brand_names":["t1/2 15-22 days (lauroxil metabolite)"],"pregnancy_category":"Every 1-2 months injection~No daily oral required~Must have tolerated oral aripiprazole first~Initiate with oral aripiprazole overlap","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Quetiapine XR","generic_name":"Quetiapine XR","drug_class":"Second-generation antipsychotic (extended-release)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia","Bipolar depression","Adjunct MDD (150-300mg)"],"contraindications":["Same as IR quetiapine"],"side_effects":["Same as IR"],"dosage":{"adult":"150-800mg daily (evening)"},"interactions":["Same as IR"],"monitoring":"Same as IR","patient_counselling":"Same mechanism. XR formulation for once-daily dosing.","mechanism_of_action":"Seroquel XR","brand_names":["Same as IR"],"pregnancy_category":"XR: once daily dosing~Less peak-related side effects~For bipolar depression: 300-600mg XR","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Olanzapine pamoate LAI","generic_name":"Olanzapine pamoate","drug_class":"Long-acting injectable SGA","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia maintenance"],"contraindications":["Concomitant parenteral benzodiazepines (1h window)"],"side_effects":["Somnolence","Weight gain","Injection site reactions"],"dosage":{"adult":"210-405mg IM monthly (adjusted by oral dose)"},"interactions":["Same as oral olanzapine"],"monitoring":"Weight~Glucose~Lipids","patient_counselling":"IM depot formulation of olanzapine. Risk of post-injection delirium/sedation syndrome (PDSS).","mechanism_of_action":"Zyprexa Relhyprev","brand_names":["Onset 2-24h","Duration monthly"],"pregnancy_category":"Post-injection delirium/sedation syndrome (PDSS) - must observe 3h after injection~Do not co-administer IM benzodiazepines within 1h","warnings":["FDA REMS program"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Ziprasidone","generic_name":"Ziprasidone","drug_class":"Second-generation antipsychotic","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia","Bipolar disorder"],"contraindications":["Congenital QT prolongation","Recent acute MI"],"side_effects":["QT prolongation","Nausea","Dizziness","Extrapyramidal symptoms"],"dosage":{"adult":"40-80mg BID (with food)"},"interactions":["Drugs that prolong QT","CYP3A4 inhibitors"],"monitoring":"ECG (QTc)~Electrolytes","patient_counselling":"D2 and 5-HT2A antagonism with relatively balanced receptor profile. Less metabolic effects.","mechanism_of_action":"Geodon","brand_names":["Bioavailability 60%","t1/2 7h","CYP3A4"],"pregnancy_category":"Must take with food (doubles absorption)~ECG baseline and as clinically indicated~QTc prolongation~Less metabolic effects than olanzapine/quetiapine","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Thioridazine","generic_name":"Thioridazine","drug_class":"First-generation antipsychotic (low potency)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia (limited use)"],"contraindications":["QT prolongation","Concomitant QT drugs"],"side_effects":["QT prolongation (dose-dependent)","Tardive dyskinesia","Anticholinergic effects"],"dosage":{"adult":"150-800mg daily"},"interactions":["QT-prolonging drugs","CYP2D6 inhibitors"],"monitoring":"ECG (QTc)","patient_counselling":"Blocks D2 receptors with strong anticholinergic and antihistamine properties. High QTc risk.","mechanism_of_action":"Mellaril","brand_names":["Bioavailability 40%","t1/2 24h","CYP2D6"],"pregnancy_category":"Significant QTc prolongation - limited use~Tardive dyskinesia risk~Avoid in elderly (Beers criteria)","warnings":["Use only when alternatives fail"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Flupentixol","generic_name":"Flupentixol","drug_class":"First-generation antipsychotic (thioxanthene)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia (maintenance)"],"contraindications":["Agranulocytosis history"],"side_effects":["EPS","Tardive dyskinesia","Anticholinergic effects"],"dosage":{"adult":"1-20mg daily or 20-40mg IM monthly"},"interactions":["QT-prolonging drugs"],"monitoring":"Movement disorders","patient_counselling":"Thioxanthene derivative with D2 antagonism. Depot injection available.","mechanism_of_action":"Fluanxol~Depixol","brand_names":["t1/2 35h (decanoate)"],"pregnancy_category":"Monthly depot injection available~Less commonly used outside UK/Europe","warnings":["Low-dose (1-3mg) used for anxiety/depression in some countries"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Fluphenazine","generic_name":"Fluphenazine","drug_class":"First-generation antipsychotic (high potency phenothiazine)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia maintenance"],"contraindications":["Parkinson's disease"],"side_effects":["EPS","Tardive dyskinesia","NMS","QT prolongation"],"dosage":{"adult":"2.5-10mg daily or 12.5-50mg IM every 2-3 weeks"},"interactions":["CYP2D6 inhibitors"],"monitoring":"Movement disorders~ECG","patient_counselling":"Potent D2 antagonist. Available as long-acting decanoate for monthly injections.","mechanism_of_action":"Prolixin~Prolixin decanoate","brand_names":["t1/2 14-20h (decanoate 14-36 days)"],"pregnancy_category":"Decanoate: every 2-3 weeks IM~High EPS risk~Older phenothiazine","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Chlorpromazine","generic_name":"Chlorpromazine","drug_class":"First-generation antipsychotic (low potency phenothiazine)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia","Nausea/vomiting","Hiccups","Agitation"],"contraindications":["Coma","Bone marrow depression"],"side_effects":["Sedation","Hypotension","Anticholinergic","EPS","QT prolongation"],"dosage":{"adult":"25-200mg TID (PO) or 25-50mg IM/IV"},"interactions":["MAOIs","Tricyclics","Barbiturates","QT drugs"],"monitoring":"ECG~WBC","patient_counselling":"Low-potency D2 antagonist with strong alpha-1, M1, H1 blockade. Sedation and hypotension limit use.","mechanism_of_action":"Thorazine","brand_names":["Bioavailability 30-50%","t1/2 16-30h","CYP2D6"],"pregnancy_category":"Most sedating FGAs~Strong alpha-1 blockade causes orthostatic hypotension~Antiemetic at low doses~Phenothiazine class","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Linezolid","generic_name":"Linezolid","drug_class":"Oxazolidinone antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Oxazolidinones","indications":["MRSA pneumonia","VRE infections","Complicated skin infections"],"contraindications":["None significant (serotonin syndrome with serotonergic drugs)"],"side_effects":["Thrombocytopenia","Peripheral neuropathy","Optic neuritis","Serotonin syndrome (with SSRIs)"],"dosage":{"adult":"600mg IV/PO q12h"},"interactions":["Serotonergic drugs (SSRIs","MAOIs - serotonin syndrome)"],"monitoring":"CBC weekly~Visual acuity if >2 weeks","patient_counselling":"Inhibits 50S ribosomal subunit, preventing initiation of protein synthesis. Bacteriostatic (bactericidal vs some).","mechanism_of_action":"Zyvox","brand_names":["Bioavailability 100%","t1/2 5h","Non-CYP"],"pregnancy_category":"Serotonin syndrome risk with serotonergic drugs~Myelosuppression monitor weekly~Lactic acidosis (mitochondrial toxicity)~Optic/peripheral neuropathy with prolonged use","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Oritavancin","generic_name":"Oritavancin","drug_class":"Lipoglycopeptide antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Glycopeptides","indications":["ABSSSI"],"contraindications":["None significant"],"side_effects":["Nausea","Hypokalemia","Infusion reactions"],"dosage":{"adult":"Single dose 1200mg IV (or 800mg + 400mg on day 8)"},"interactions":["Warfarin (transient INR increase)"],"monitoring":"None significant","patient_counselling":"Lipoglycopeptide with long half-life allowing single-dose treatment. Inhibits cell wall synthesis and disrupts membrane integrity.","mechanism_of_action":"Orbactiv","brand_names":["t1/2 245h (extremely long)"],"pregnancy_category":"Single-dose treatment for ABSSSI~Extremely long half-life~Inhibits cell wall + disrupts membrane~Transient coagulopathy","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Dalbavancin","generic_name":"Dalbavancin","drug_class":"Lipoglycopeptide antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Glycopeptides","indications":["ABSSSI"],"contraindications":["None significant"],"side_effects":["Nausea","Headache","Diarrhea"],"dosage":{"adult":"Single dose 1500mg IV (or 1000mg + 500mg on day 8)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Lipoglycopeptide with once-weekly dosing. Long half-life allows weekly administration.","mechanism_of_action":"Dalvance","brand_names":["t1/2 346h (14 days)"],"pregnancy_category":"Once weekly dosing~Treats ABSSSI in 1-2 doses~Long-acting glycopeptide","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Trimetrexate","generic_name":"Trimetrexate","drug_class":"Dihydrofolate reductase inhibitor","drug_class_id":null,"drug_class_name":"Anti-infectives - Antifolates","indications":["PCP (Pneumocystis pneumonia) - alternative"],"contraindications":["Severe renal impairment"],"side_effects":["Neutropenia","Thrombocytopenia","Mucositis"],"dosage":{"adult":"45mg/m2 IV q24h x 21 days (with leucovorin)"},"interactions":["TMP-SMX (additive toxicity)","Dapsone","Phenytoin"],"monitoring":"CBC~LFTs","patient_counselling":"DHFRI used with leucovorin rescue for PCP in TMP-SMX intolerant patients.","mechanism_of_action":"Neutrexin","brand_names":["t1/2 12-15h"],"pregnancy_category":"Requires leucovorin rescue to protect normal cells~Alternative for TMP-SMX-intolerant PCP~Bone marrow suppressive","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Atovaquone","generic_name":"Atovaquone","drug_class":"Hydroxynaphthoquinone antiparasitic","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiparasitics","indications":["PCP prevention and treatment","Malaria prophylaxis"],"contraindications":["None significant"],"side_effects":["GI upset","Rash","Headache","Elevated LFTs"],"dosage":{"adult":"PCP treatment: 750mg BID with food. Prophylaxis: 1500mg daily with food."},"interactions":["Rifampin (reduces levels 50%)","Tetracycline (reduces levels)"],"monitoring":"LFTs","patient_counselling":"Inhibits mitochondrial electron transport at complex III. High-fat meal increases absorption.","mechanism_of_action":"Mepron (PCP)~Malarone (malaria)","brand_names":["Bioavailability","47%","t1/2 2.2-3.3 days"],"pregnancy_category":"Must take with fatty food for absorption~Very long half-life~Alternative to TMP-SMX for PCP","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Atovaquone/proguanil","generic_name":"Malarone (atovaquone 250mg/proguanil 100mg)","drug_class":"Antimalarial combination","drug_class_id":null,"drug_class_name":"Anti-infectives - Antimalarials","indications":["Malaria prophylaxis","Treatment of P. falciparum"],"contraindications":["Severe renal impairment (CrCl <30)"],"side_effects":["Abdominal pain","Nausea","Vomiting","Headache"],"dosage":{"adult":"Prophylaxis: 1 tablet daily starting 1-2 days before travel. Treatment: 4 tablets daily x3 days."},"interactions":["Warfarin (increased effect)"],"monitoring":"Renal function for proguanil component","patient_counselling":"Atovaquone inhibits mitochondrial electron transport. Proguanil inhibits dihydrofolate reductase. Synergistic antimalarial.","mechanism_of_action":"Malarone","brand_names":["Bioavailability: atovaquone 26% (increased with food)"],"pregnancy_category":"Take with food~Start 1-2 days before travel, continue 4 weeks after~One of best tolerated malaria prophylaxis","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Colistin (polymyxin E)","generic_name":"Colistin","drug_class":"Polymyxin antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Polymyxins","indications":["MDR Gram-negative infections (last resort)"],"contraindications":["None significant"],"side_effects":["Nephrotoxicity (dose-limiting)","Neurotoxicity (paresthesias)"],"dosage":{"adult":"IM/IV: 2.5-5mg/kg/day in divided doses. Inhaled: 75-150mg BID."},"interactions":["Nephrotoxic drugs (additive)"],"monitoring":"Renal function daily~BUN/Cr~Neuro symptoms","patient_counselling":"Disrupts Gram-negative outer membrane by binding LPS, causing cell death. Concentration-dependent killing.","mechanism_of_action":"Coly-Mycin M","brand_names":["t1/2 2h","Nephrotoxic"],"pregnancy_category":"Nephrotoxicity is dose-limiting~Monitor renal function daily~Inhaled form for lung infections (Pseudomonas in CF/ventilator pneumonia)~Last resort for MDR Gram-negatives","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Fosfomycin","generic_name":"Fosfomycin","drug_class":"Phosphonic acid antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Other","indications":["Uncomplicated UTI","VRE infections (combination)"],"contraindications":["None significant"],"side_effects":["Diarrhea","Nausea","Headache"],"dosage":{"adult":"UTI: 3g single dose PO. IV: for serious infections."},"interactions":["Metoclopramide (reduces absorption)"],"monitoring":"None significant","patient_counselling":"Unique mechanism: inhibits MurA (cell wall synthesis). Broad-spectrum. Low resistance development.","mechanism_of_action":"Monurol (PO)","brand_names":["Bioavailability 37-55%","t1/2 2-3h"],"pregnancy_category":"Single-dose UTI treatment~3g in water~Also available IV (investigational in US)~Synergistic with beta-lactams~Low resistance development","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Fosfomycin/tobramycin","generic_name":"Xartemis (investigational)","drug_class":"Combination antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Other","indications":["Complicated UTI"],"contraindications":["Renal impairment"],"side_effects":["Nephrotoxicity (tobramycin component)"],"dosage":{"adult":"IV combination for complicated UTI"},"interactions":["Nephrotoxic/ototoxic drugs (additive tobramycin)"],"monitoring":"Tobramycin levels~Renal function","patient_counselling":"Fosfomycin + tobramycin: synergistic activity against MDR Gram-negatives.","mechanism_of_action":"Investigational","brand_names":["Requires TDM for tobramycin component"],"pregnancy_category":"Combination for synergy against resistant organisms","warnings":["Available in some countries as IV formulation"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Esomeprazole","generic_name":"Eesomeprazole","drug_class":"Proton pump inhibitor (S-enantiomer of omeprazole)","drug_class_id":null,"drug_class_name":"Gastroenterology - PPIs","indications":["GERD","H. pylori"],"contraindications":["None significant"],"side_effects":["Headache","GI upset","Abdominal pain"],"dosage":{"adult":"20-40mg daily"},"interactions":["Clopidogrel (controversial)"],"monitoring":"Magnesium (long-term)","patient_counselling":"S-enantiomer of omeprazole: better CYP2C19 inhibition providing more consistent acid suppression.","mechanism_of_action":"Nexium","brand_names":["Bioavailability 64%","t1/2 1.5h"],"pregnancy_category":"S-enantiomer of omeprazole~More consistent acid suppression than racemic omeprazole","warnings":["Also available as IV formulation"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Famotidine","generic_name":"Famotidine","drug_class":"H2-receptor antagonist","drug_class_id":null,"drug_class_name":"Gastroenterology - H2RAs","indications":["GERD","Peptic ulcer","Zollinger-Ellison"],"contraindications":["None significant"],"side_effects":["Headache","Dizziness","Constipation"],"dosage":{"adult":"20mg BID or 40mg at bedtime"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Competitively blocks histamine H2 receptors on parietal cells, reducing basal and stimulated acid secretion.","mechanism_of_action":"Pepcid","brand_names":["Bioavailability 40-45%","t1/2 2.5-4h"],"pregnancy_category":"Good for nocturnal acid breakthrough~Less drug interactions than PPIs~Can be used IV for stress ulcer prophylaxis","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Nizatidine","generic_name":"Nizatidine","drug_class":"H2-receptor antagonist","drug_class_id":null,"drug_class_name":"Gastroenterology - H2RAs","indications":["GERD","Peptic ulcer"],"contraindications":["None significant"],"side_effects":["Headache","Dizziness"],"dosage":{"adult":"150-300mg BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"H2 receptor antagonist. Slightly less CYP inhibition than cimetidine.","mechanism_of_action":"Axid","brand_names":["Bioavailability 90-100%","t1/2 1.6h"],"pregnancy_category":"Good oral bioavailability~Fewer drug interactions than cimetidine~Also promotes gastric emptying","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Granisetron","generic_name":"Granisetron","drug_class":"5-HT3 receptor antagonist","drug_class_id":null,"drug_class_name":"Gastroenterology - Antiemetics","indications":["CINV","PONV"],"contraindications":["None significant"],"side_effects":["Headache","Constipation","QT prolongation"],"dosage":{"adult":"1mg IV/PO q12h or 2mg PO daily (Sancuso patch 72h)"},"interactions":["QT-prolonging drugs"],"monitoring":"ECG","patient_counselling":"Selective 5-HT3 antagonist. Also available as transdermal patch.","mechanism_of_action":"Kytril~Sancuso","brand_names":["Bioavailability 60%","t1/2 4-9h"],"pregnancy_category":"Transdermal patch (Sancuso) for 72h coverage~Also available as IV","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Palonosetron","generic_name":"Palonosetron","drug_class":"5-HT3 receptor antagonist (long-acting)","drug_class_id":null,"drug_class_name":"Gastroenterology - Antiemetics","indications":["CINV (delayed phase)","PONV"],"contraindications":["None significant"],"side_effects":["Headache","Constipation","QT prolongation"],"dosage":{"adult":"0.25mg IV single dose"},"interactions":["QT-prolonging drugs"],"monitoring":"ECG","patient_counselling":"Longest-acting 5-HT3 antagonist: most effective for delayed CINV. Allosteric binding causes receptor internalization.","mechanism_of_action":"Akynzeo","brand_names":["Bioavailability 25%","t1/2 40h"],"pregnancy_category":"Most effective for delayed CINV (days 2-4)","warnings":["Longest-acting 5-HT3 antagonist","Single IV dose for delayed CINV","Also in capsules with netupitant (Akynzeo)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Aprepitant","generic_name":"Aprepitant","drug_class":"NK1 receptor antagonist","drug_class_id":null,"drug_class_name":"Gastroenterology - Antiemetics","indications":["CINV (moderate/highly emetogenic) - prevention"],"contraindications":["None significant"],"side_effects":["Headache","Fatigue","Hiccups","Elevated LFTs"],"dosage":{"adult":"125mg PO day 1, then 80mg days 2-3 (with 5-HT3 antagonist + dexamethasone)"},"interactions":["Strong CYP3A4 inhibitors (reduced dose)","Dexamethasone (increase dose 50%)","Warfarin (reduced INR)"],"monitoring":"LFTs","patient_counselling":"NK1 receptor antagonist: blocks substance P in brainstem emetic center. Synergistic with 5-HT3 antagonists for CINV.","mechanism_of_action":"Emend","brand_names":["Bioavailability 60-65%","t1/2 9-13h","CYP3A4"],"pregnancy_category":"Triple therapy: aprepitant + ondansetron + dexamethasone for highly emetogenic CINV~Also available as IV (Fosaprepitant)~Day 1: 125mg, Days 2-3: 80mg","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Netupitant/palonosetron","generic_name":"Akynzeo","drug_class":"NK1 antagonist + 5-HT3 antagonist combo","drug_class_id":null,"drug_class_name":"Gastroenterology - Antiemetics","indications":["CINV prevention"],"contraindications":["None significant"],"side_effects":["Headache","Fatigue","Constipation"],"dosage":{"adult":"1 capsule PO day 1 (highly emetogenic) or 3 capsules (moderately emetogenic)"},"interactions":["Strong CYP3A4 inhibitors (avoid)"],"monitoring":"None significant","patient_counselling":"Fixed-dose combination: netupitant (NK1) + palonosetron (5-HT3). Synergistic dual mechanism.","mechanism_of_action":"Akynzeo","brand_names":["Netupitant: t1/2 5h","Palonosetron: t1/2 40h"],"pregnancy_category":"Single capsule convenience~Dual mechanism in one dose~Most effective single-agent CINV prophylaxis","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Aprepitant/fosaprepitant","generic_name":"Fosaprepitant","drug_class":"NK1 receptor antagonist (IV prodrug)","drug_class_id":null,"drug_class_name":"Gastroenterology - Antiemetics","indications":["CINV prevention (IV alternative)"],"contraindications":["Hypersensitivity to polysorbate 80"],"side_effects":["Infusion site reactions","Pain/erythema/thrombophlebitis"],"dosage":{"adult":"150mg IV single dose on day 1 (equivalent to 3-day oral aprepitant)"},"interactions":["Strong CYP3A4 inhibitors"],"monitoring":"Infusion site","patient_counselling":"IV prodrug of aprepitant. Single IV dose replaces 3-day oral regimen. Phosphorylated for water solubility.","mechanism_of_action":"Emend IV","brand_names":["Hydrolyzed to aprepitant in vivo"],"pregnancy_category":"Single IV dose for 3-day CINV coverage~Infusion site reactions common (30-50%)~Administer over 15-30 min~Pre-medicate with corticosteroid if needed","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Polyethylene glycol 3350","generic_name":"PEG 3350 (MiraLAX)","drug_class":"Osmotic laxative","drug_class_id":null,"drug_class_name":"Gastroenterology - Laxatives","indications":["Constipation"],"contraindications":["None significant"],"side_effects":["Bloating","Cramping","Diarrhea"],"dosage":{"adult":"17g in 4-8oz liquid daily"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"High molecular weight PEG: osmotically retains water in colon, softening stool and increasing motility.","mechanism_of_action":"MiraLAX","brand_names":["Not absorbed"],"pregnancy_category":"Gentle osmotic laxative~Can mix with any beverage~Onset 1-3 days~Generally well tolerated","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Sodium picosulfate","generic_name":"Sodium picosulfate","drug_class":"Stimulant laxative (prodrug)","drug_class_id":null,"drug_class_name":"Gastroenterology - Laxatives","indications":["Constipation","Bowel preparation (colonoscopy)"],"contraindications":["None significant"],"side_effects":["Cramping","Diarrhea","Electrolyte imbalance"],"dosage":{"adult":"5-10mg daily (constipation)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Prodrug: converted by colonic bacteria to active metabolite, stimulating colonic motility.","mechanism_of_action":"Prepopik (with MgCitrate)","brand_names":["Onset 6-12h"],"pregnancy_category":"Used in bowel prep combinations~Requires bacterial activation in colon~Also available with magnesium citrate (Prepopik)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Sennosides","generic_name":"Senna","drug_class":"Anthraquinone stimulant laxative","drug_class_id":null,"drug_class_name":"Gastroenterology - Laxatives","indications":["Constipation"],"contraindications":["None significant"],"side_effects":["Cramping","Diarrhea","Electrolyte imbalance (hypokalemia)"],"dosage":{"adult":"1-2 tablets at bedtime (17mg sennosides)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Anthraquinone glycosides converted by colonic bacteria to rheanthrone, stimulating peristalsis.","mechanism_of_action":"Senokot","brand_names":["Onset 6-12h"],"pregnancy_category":"Natural plant-based laxative~Take at bedtime for morning effect~Avoid long-term use (melanosis coli)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Docusate","generic_name":"Docusate sodium","drug_class":"Stool softener (surfactant)","drug_class_id":null,"drug_class_name":"Gastroenterology - Laxatives","indications":["Constipation (prevention)"],"contraindications":["None significant"],"side_effects":["None (well tolerated)"],"dosage":{"adult":"100-200mg BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Surface-active agent: lowers surface tension, allowing water and fat to penetrate stool.","mechanism_of_action":"Colace","brand_names":["Onset 12-72h"],"pregnancy_category":"Does not stimulate motility - just softens stool~Preventive not therapeutic~Often combined with stimulant laxatives","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Sodium sulfate/potassium sulfate/magnesium sulfate","generic_name":"GoLYTELY","drug_class":"Electrolyte lavage solution","drug_class_id":null,"drug_class_name":"Gastroenterology - Bowel Prep","indications":["Bowel preparation for colonoscopy"],"contraindications":["Bowel obstruction","Gastric retention","Toxic megacolon"],"side_effects":["Nausea","Bloating","Cramping","Electrolyte imbalance"],"dosage":{"adult":"1-3L over 2-4 hours (evening before procedure)"},"interactions":["None significant"],"monitoring":"Electrolytes~Fluid balance","patient_counselling":"Isotonic solution: causes voluminous watery diarrhea for complete bowel cleansing. PEG-based prep.","mechanism_of_action":"GoLYTELY~NuLYTELY","brand_names":["Onset 1-3h"],"pregnancy_category":"Start 3-4 hours before procedure~Adequate hydration essential~Contraindicated in obstruction~Many proprietary alternatives available","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-014","name":"Bictegravir","generic_name":"Bictegravir","drug_class":"Integrase strand transfer inhibitor (INSTI)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 infection (with other ARVs)"],"contraindications":["CrCl <30"],"side_effects":["Headache","Nausea","Diarrhea","Insomnia"],"dosage":{"adult":"50mg PO daily (in fixed-dose combination with TAF/FTC)"},"interactions":["Polyvalent cations (separate by 4-6h)"],"monitoring":"eGFR~HBV (if co-infected)","patient_counselling":"Blocks HIV integrase: prevents viral DNA from integrating into host genome.","mechanism_of_action":"Biktarvy","brand_names":["t1/2 17.3h","CYP unknown"],"pregnancy_category":"Available as single-tablet regimen (bictegravir/TAF/FTC)","warnings":["High barrier to resistance","Once daily","Few drug interactions"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Cabotegravir LA","generic_name":"Cabotegravir (long-acting injectable)","drug_class":"INSTI (long-acting injectable)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV treatment and prevention (PrEP)"],"contraindications":["Hypersensitivity to cabotegravir"],"side_effects":["Injection site reactions","Fever","Fatigue","Headache"],"dosage":{"adult":"Loading: 600mg IM day 1 + day 2, then 400mg IM monthly"},"interactions":["Polyvalent cations (if oral lead-in)"],"monitoring":"eGFR","patient_counselling":"Long-acting injectable INSTI: nanosuspension for IM depot, releasing drug over 1-2 months.","mechanism_of_action":"Cabenuva (treatment)~Apretude (PrEP)","brand_names":["t1/2 5.6 weeks (IM)"],"pregnancy_category":"Monthly or bimonthly injections~Eliminates daily pill burden~FDA-approved for both treatment (Cabenuva) and PrEP (Apretude)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Doravirine","generic_name":"Doravirine","drug_class":"Non-nucleoside reverse transcriptase inhibitor (NNRTI)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 infection"],"contraindications":["None significant"],"side_effects":["Nausea","Headache","Fatigue"],"dosage":{"adult":"100mg PO daily (with other ARVs)"},"interactions":["Rifampin (reduced levels)"],"monitoring":"None significant","patient_counselling":"Inhibits HIV-1 reverse transcriptase by binding to allosteric site.","mechanism_of_action":"Pifeltro","brand_names":["t1/2 15-21h","CYP3A4"],"pregnancy_category":"Newer NNRTI with fewer drug interactions than efavirenz/rilpivirine","warnings":["100mg once daily","Also available as fixed-dose (Delstrigo: doravirine/TDF/3TC)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-017","name":"Fostemsavir","generic_name":"Fostemsavir","drug_class":"Attachment inhibitor (gp120 blocker)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 (treatment-experienced, multidrug-resistant)"],"contraindications":["None significant"],"side_effects":["Nausea","Diarrhea","Headache"],"dosage":{"adult":"600mg PO BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Binds gp120 on HIV envelope, preventing initial attachment to CD4 receptors. First-in-class attachment inhibitor.","mechanism_of_action":"Rukobia","brand_names":["t1/2 11-14h (active temsavir","4h)"],"pregnancy_category":"New mechanism for treatment-experienced patients","warnings":["Oral BID dosing"],"overdose":"Prodrug of temsavir (active metabolite)","pharmacokinetics":"For heavily treatment-experienced patients","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-018","name":"Ibalizumab","generic_name":"Ibalizumab","drug_class":"Post-attachment inhibitor (CD4-directed mAb)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 (treatment-experienced, multidrug-resistant)"],"contraindications":["None significant"],"side_effects":["Diarrhea","Dizziness","Rash","Nausea"],"dosage":{"adult":"2000mg IV loading, then 800mg IV every 2 weeks"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Monoclonal antibody: binds domain 2 of CD4 receptor, blocking post-attachment steps without depleting CD4 cells.","mechanism_of_action":"Trogarzo","brand_names":["IV only: t1/2 9 days"],"pregnancy_category":"First-in-class post-attachment inhibitor","warnings":["IV every 2 weeks after loading"],"overdose":"For patients with multidrug-resistant HIV","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-019","name":"Enfuvirtide","generic_name":"Enfuvirtide","drug_class":"Fusion inhibitor (peptide)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 (treatment-experienced)"],"contraindications":["None significant"],"side_effects":["Injection site reactions (100%)","Bacterial pneumonia (increased)"],"dosage":{"adult":"90mg SC BID (with other ARVs)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Binds to HR1 region of gp41, preventing conformational change needed for membrane fusion.","mechanism_of_action":"Fuzeon","brand_names":["SC only: t1/2 3.8h"],"pregnancy_category":"SC injection BID - injection site reactions universal","warnings":["First fusion inhibitor approved"],"overdose":"For patients with multidrug-resistant HIV","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-020","name":"Didanosine","generic_name":"Didanosine","drug_class":"Nucleoside reverse transcriptase inhibitor (NRTI)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 infection (historical)"],"contraindications":["Pancreatitis history"],"side_effects":["Pancreatitis","Peripheral neuropathy","Lactic acidosis","Retinal changes"],"dosage":{"adult":"250-400mg BID (with buffer)"},"interactions":["Tenofovir (contraindicated combination)"],"monitoring":"Amylase/lipase~Lactic acid","patient_counselling":"NRTI: inhibits HIV RT. Limited use due to toxicity profile.","mechanism_of_action":"Videx","brand_names":["t1/2 1.6h"],"pregnancy_category":"Largely historical - replaced by less toxic NRTIs","warnings":["Pancreatitis and neuropathy are dose-limiting"],"overdose":"Do NOT combine with TDF (increased didanosine levels)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-021","name":"Stavudine","generic_name":"Stavudine","drug_class":"Nucleoside reverse transcriptase inhibitor (NRTI)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 infection (historical)"],"contraindications":["None significant"],"side_effects":["Peripheral neuropathy","Lactic acidosis","Lipodystrophy"],"dosage":{"adult":"30-40mg BID"},"interactions":["Zidovudine (antagonistic - do not combine)"],"monitoring":"Lactic acid","patient_counselling":"NRTI: similar to zidovudine. Limited use due to toxicity.","mechanism_of_action":"Zerit","brand_names":["t1/2 0.9-1.5h"],"pregnancy_category":"Historical NRTI - replaced by safer alternatives","warnings":["Peripheral neuropathy and lipodystrophy common"],"overdose":"Do not combine with zidovudine (antagonistic)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Posaconazole","generic_name":"Posaconazole","drug_class":"Triazole antifungal (extended spectrum)","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Prophylaxis (immunocompromised)","Invasive mucormycosis","Aspergillosis"],"contraindications":["QT prolongation","Hepatic impairment"],"side_effects":["Hepatotoxicity","QT prolongation","Headache","GI upset"],"dosage":{"adult":"300mg PO BID day 1, then 300mg daily (prophylaxis)"},"interactions":["CYP3A4 substrates (sirolimus - contraindicated)","QT drugs"],"monitoring":"LFTs~Trough levels if available","patient_counselling":"Broadest spectrum triazole: covers Aspergillus, Candida, Mucorales. Extended-release tablet for better absorption.","mechanism_of_action":"Noxafil","brand_names":["Bioavailability: solution 12% (take with fatty meal), EC tablet","50%"],"pregnancy_category":"Extended-release tablet: take with food~Avoid sirolimus and ergot alkaloids~Also available IV~Covers Mucorales (unlike other azoles)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Isavuconazole","generic_name":"Isavuconazole","drug_class":"Triazole antifungal","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Invasive aspergillosis","Mucormycosis"],"contraindications":["QT prolongation (less than voriconazole)"],"side_effects":["Hepatotoxicity","Nausea","Rash"],"dosage":{"adult":"200mg TID x 6 doses, then 200mg daily"},"interactions":["CYP3A4 substrates (sirolimus - contraindicated)"],"monitoring":"LFTs","patient_counselling":"Broad-spectrum triazole with less QT prolongation than voriconazole. Active against Mucorales.","mechanism_of_action":"Cresemba","brand_names":["Bioavailability 98%","t1/2 56h"],"pregnancy_category":"No QT prolongation (actually shortens QT - unique)","warnings":["Covers Aspergillus AND Mucorales","Long half-life once daily dosing","Better GI tolerability than voriconazole"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Micafungin","generic_name":"Micafungin","drug_class":"Echinocandin antifungal","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Invasive candidiasis","Esophageal candidiasis","Candidemia"],"contraindications":["None significant"],"side_effects":["Hepatotoxicity"],"dosage":{"adult":"100-150mg daily (candidiasis) or 50-100mg daily (prophylaxis)"},"interactions":["None significant"],"monitoring":"LFTs","patient_counselling":"Inhibits beta-(1,3)-D-glucan synthase. Longest half-life echinocandin.","mechanism_of_action":"Mycamine","brand_names":["IV only: t1/2 11-17h"],"pregnancy_category":"Longest half-life echinocandin~No significant drug interactions~Also used as antifungal prophylaxis in HSCT","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Anidulafungin","generic_name":"Anidulafungin","drug_class":"Echinocandin antifungal","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Esophageal candidiasis","Invasive candidiasis"],"contraindications":["None significant"],"side_effects":["Headache","Diarrhea"],"dosage":{"adult":"200mg IV day 1, then 100mg daily"},"interactions":["None significant"],"monitoring":"LFTs","patient_counselling":"Echinocandin: non-enzymatic degradation (no hepatic metabolism). Longest acting echinocandin.","mechanism_of_action":"Eraxis","brand_names":["IV only: t1/2 40-50h (longest echinocandin)"],"pregnancy_category":"Non-hepatic degradation - no CYP interactions~Longest half-life echinocandin~Best for esophageal candidiasis","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Amphotericin B deoxycholate","generic_name":"Amphotericin B deoxycholate","drug_class":"Polyene antifungal","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Severe systemic fungal infections (last resort)"],"contraindications":["Severe renal impairment"],"side_effects":["Nephrotoxicity (dose-limiting)","Infusion reactions (fever","chills","rigors)","Anemia","Hypokalemia"],"dosage":{"adult":"0.3-1.5 mg/kg/day IV"},"interactions":["Nephrotoxic drugs (additive)","Digoxin (hypokalemia increases toxicity)"],"monitoring":"Renal function~K+~Mg2+~CBC","patient_counselling":"Binds ergosterol in fungal cell membrane, creating pores causing cell death. Gold standard for severe mycoses.","mechanism_of_action":"Amphotec","brand_names":["IV only: t1/2 24h (but tissue effects prolonged)"],"pregnancy_category":"Most nephrotoxic antifungal~Infusion-related reactions: premedicate with acetaminophen~Electrolyte wasting (K+, Mg2+)","warnings":["Lipid formulations less nephrotoxic (AmBisome","Abelcet)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Liposomal amphotericin B","generic_name":"Liposomal amphotericin B (AmBisome)","drug_class":"Polyene antifungal (lipid formulation)","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Severe systemic fungal infections (less nephrotoxic)"],"contraindications":["None significant"],"side_effects":["Infusion reactions (less than conventional)","Nephrotoxicity (less than conventional)"],"dosage":{"adult":"3-5 mg/kg/day IV"},"interactions":["Same as conventional"],"monitoring":"Renal function~K+","patient_counselling":"Lipid formulation: reduced nephrotoxicity compared to conventional amphotericin B. Same mechanism.","mechanism_of_action":"AmBisome","brand_names":["IV only"],"pregnancy_category":"Less nephrotoxic than conventional amphotericin B~Higher doses tolerated~Same fungal spectrum~Cost is limitation","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Flucytosine","generic_name":"Flucytosine","drug_class":"Pyrimidine analogue antifungal","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Cryptococcal meningitis (with amphotericin B)"],"contraindications":["Bone marrow suppression"],"side_effects":["Bone marrow suppression","Hepatotoxicity","GI upset"],"dosage":{"adult":"100-150 mg/kg/day in 4 divided doses (with amphotericin B)"},"interactions":["Amphotericin B (increases flucytosine levels by reducing renal clearance)"],"monitoring":"CBC~Flucytosine levels (peak 25-100 mcg/mL)","patient_counselling":"Converted to 5-fluorouracil inside fungal cells. Combined with amphotericin B for synergy in cryptococcal meningitis.","mechanism_of_action":"Ancobon","brand_names":["Bioavailability 80-90%","t1/2 2.5-6h"],"pregnancy_category":"Essential component of cryptococcal meningitis treatment (with amphotericin B)","warnings":["Monitor levels and CBC","Bone marrow suppression dose-limiting","Synergy with amphotericin B"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Tavaborole","generic_name":"Tavaborole","drug_class":"Oxaborole antifungal (topical)","drug_class_id":null,"drug_class_name":"Dermatology - Antifungals","indications":["Onychomycosis (topical)"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"Apply once daily to affected nails x 48 weeks"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Inhibits fungal protein synthesis by binding to leucyl-tRNA synthetase.","mechanism_of_action":"Keratex","brand_names":["Nail penetration","topical"],"pregnancy_category":"Topical alternative to oral antifungals for nail infections","warnings":["Apply once daily for 48 weeks","No systemic side effects","Limited nail penetration (mild-moderate disease)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Efinaconazole","generic_name":"Efinaconazole","drug_class":"Topical triazole antifungal","drug_class_id":null,"drug_class_name":"Dermatology - Antifungals","indications":["Onychomycosis (topical)"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"Apply once daily to affected nails x 48 weeks"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical triazole: inhibits ergosterol synthesis. High nail penetration.","mechanism_of_action":"Jublia","brand_names":["Topical"],"pregnancy_category":"Better nail penetration than ciclopirox~Once daily application~48-week treatment course~No systemic side effects","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Ciclopirox","generic_name":"Ciclopirox","drug_class":"Hydroxypyridone antifungal","drug_class_id":null,"drug_class_name":"Dermatology - Antifungals","indications":["Onychomycosis (topical)","Dermatophyte skin infections"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"8% nail lacquer once daily x 48 weeks (nails)~Cream BID (skin)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Chelates polyvalent cations, inhibiting metal-dependent enzymes in fungi.","mechanism_of_action":"Penlac (nail)~Loprox (cream)","brand_names":["Topical"],"pregnancy_category":"Nail lacquer: once daily~Also available as cream for skin infections~No systemic absorption","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Terbinafine topical","generic_name":"Terbinafine (topical)","drug_class":"Allylamine antifungal (topical)","drug_class_id":null,"drug_class_name":"Dermatology - Antifungals","indications":["Tinea pedis","Tinea corporis"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"Apply BID x 1-2 weeks (tinea pedis)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical fungicidal: inhibits squalene epoxidase.","mechanism_of_action":"Lamisil AT","brand_names":["Topical"],"pregnancy_category":"Fungicidal topical for dermatophyte infections","warnings":["Apply BID for 1-2 weeks"],"overdose":"High cure rate for tinea pedis","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Natamycin","generic_name":"Natamycin","drug_class":"Polyene antifungal (topical ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Antifungals","indications":["Fungal keratitis"],"contraindications":["None significant"],"side_effects":["Eye irritation"],"dosage":{"adult":"1 drop q1-2h while awake x 14-21 days"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Polyene antifungal: binds ergosterol in fungal cell membranes.","mechanism_of_action":"Natacyn","brand_names":["Topical ophthalmic"],"pregnancy_category":"For fungal keratitis only~Polyene class (same as amphotericin B)","warnings":["Use frequently initially then taper","Limited corneal penetration"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Pegfilgrastim","generic_name":"Pegfilgrastim","drug_class":"Pegylated G-CSF","drug_class_id":null,"drug_class_name":"Oncology - Supportive care","indications":["Chemotherapy-induced neutropenia"],"contraindications":["None significant"],"side_effects":["Bone pain","Injection site reactions"],"dosage":{"adult":"6 mg SC once per chemo cycle (day 1 post-chemo)"},"interactions":["None significant"],"monitoring":"CBC","patient_counselling":"Pegylated filgrastim: extended half-life allows once-per-cycle dosing.","mechanism_of_action":"Neulasta","brand_names":["SC: t1/2 15-80h (extended by PEGylation)"],"pregnancy_category":"Once per cycle dosing - major convenience advantage~Start 24h after chemo~Bone pain most common~Do not use between 14 days before and 24h after chemo","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Darbepoetin alfa","generic_name":"Darbepoetin alfa","drug_class":"Erythropoiesis-stimulating agent (ESA)","drug_class_id":null,"drug_class_name":"Oncology - Supportive care","indications":["Anemia (chemotherapy-induced, CKD)"],"contraindications":["Uncontrolled hypertension","Active malignancy (increased mortality)"],"side_effects":["Hypertension","Headache","Thromboembolic events"],"dosage":{"adult":"200 IU/kg SC weekly or 500 IU/kg q3 weeks"},"interactions":["None significant"],"monitoring":"Hemoglobin (target 10-11 g/dL)~BP","patient_counselling":"Hyperglycosylated erythropoietin analogue with longer half-life. Stimulates red blood cell production.","mechanism_of_action":"Aranesp","brand_names":["SC/IV: t1/2 25.3h"],"pregnancy_category":"Longer half-life than epoetin alfa (allows less frequent dosing)~Target Hgb 10-11 g/dL (do not exceed 12)","warnings":["ESAs increase mortality in active malignancy - use lowest dose for shortest time"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Epoetin alfa","generic_name":"Epoetin alfa","drug_class":"Erythropoiesis-stimulating agent (ESA)","drug_class_id":null,"drug_class_name":"Oncology - Supportive care","indications":["Anemia (chemotherapy-induced, CKD, preoperative)"],"contraindications":["Uncontrolled hypertension"],"side_effects":["Hypertension","Headache","Thromboembolic events"],"dosage":{"adult":"10,000-40,000 IU SC/IV 3x/week"},"interactions":["None significant"],"monitoring":"Hemoglobin (target 10-11 g/dL)~BP","patient_counselling":"Recombinant human erythropoietin: stimulates erythropoiesis in bone marrow.","mechanism_of_action":"Procrit~Epogen","brand_names":["SC/IV: t1/2 4-13h"],"pregnancy_category":"Shorter half-life than darbepoetin - requires more frequent dosing~Target Hgb 10-11 g/dL~ESAs increase mortality in active malignancy","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Romiplostim","generic_name":"Romiplostim","drug_class":"Thrombopoietin receptor agonist","drug_class_id":null,"drug_class_name":"Hematology - Platelet agents","indications":["Immune thrombocytopenia (chronic)"],"contraindications":["None significant"],"side_effects":["Headache","Arthralgia","Bone marrow reticulin"],"dosage":{"adult":"1-10 mcg/kg SC weekly"},"interactions":["None significant"],"monitoring":"Platelet count qweek","patient_counselling":"TPO receptor agonist: stimulates megakaryocyte proliferation and platelet production.","mechanism_of_action":"Nplate","brand_names":["SC: t1/2 3.5 days"],"pregnancy_category":"Weekly SC injection~Titrate to platelet count 50,000-200,000~Bone marrow reticulin risk with prolonged use","warnings":["Do not use to normalize platelets"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Eltrombopag","generic_name":"Eltrombopag","drug_class":"Thrombopoietin receptor agonist (oral)","drug_class_id":null,"drug_class_name":"Hematology - Platelet agents","indications":["Immune thrombocytopenia","Aplastic anemia","Hepatitis C-associated thrombocytopenia"],"contraindications":["Hepatic impairment"],"side_effects":["Hepatotoxicity","Bone marrow reticulin","Cataracts"],"dosage":{"adult":"25-75mg PO daily (take on empty stomach)"},"interactions":["Polyvalent cations (antacids, iron, calcium - separate by 4h)"],"monitoring":"Platelet count~LFTs","patient_counselling":"Oral TPO receptor agonist: binds transmembrane domain of TPO receptor.","mechanism_of_action":"Promacta~Revolade","brand_names":["Bioavailability","30%","t1/2 21-32h"],"pregnancy_category":"Take on empty stomach (separate from polyvalent cations by 4h)","warnings":["Hepatotoxicity and bone marrow reticulin risk","Cataracts with long-term use"],"overdose":"Also used in aplastic anemia (with immunosuppressive therapy)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Lipegfilgrastim","generic_name":"Lipegfilgrastim","drug_class":"PEGylated G-CSF (biosimilar)","drug_class_id":null,"drug_class_name":"Oncology - Supportive care","indications":["Chemotherapy-induced neutropenia"],"contraindications":["None significant"],"side_effects":["Bone pain","Injection site reactions"],"dosage":{"adult":"6 mg SC once per chemo cycle"},"interactions":["None significant"],"monitoring":"CBC","patient_counselling":"Long-acting PEGylated G-CSF. Similar to pegfilgrastim.","mechanism_of_action":"Lonquex","brand_names":["SC: t1/2","32h"],"pregnancy_category":"Once per cycle dosing~Similar efficacy to pegfilgrastim~Biosimilar alternative","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Pertuzumab","generic_name":"Pertuzumab","drug_class":"Anti-HER2 monoclonal antibody (HER2 dimerization inhibitor)","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["HER2+ breast cancer (with trastuzumab)"],"contraindications":["None significant"],"side_effects":["Diarrhea","Infusion reactions","Cardiotoxicity"],"dosage":{"adult":"840 mg IV loading, then 420 mg IV q3 weeks"},"interactions":["None significant"],"monitoring":"Echocardiogram (LVEF)","patient_counselling":"Binds HER2 domain II: prevents HER2 heterodimerization with HER3/other HER receptors. Complementary to trastuzumab.","mechanism_of_action":"Perjeta","brand_names":["IV: t1/2 18 days"],"pregnancy_category":"Must be used with trastuzumab~Diarrhea most common (68%)~Cleopatra trial: improved PFS/OS in HER2+ MBC","warnings":["Less cardiotoxicity than trastuzumab"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Trastuzumab deruxtecan","generic_name":"Trastuzumab deruxtecan (T-DXd)","drug_class":"Anti-HER2 antibody-drug conjugate (ADC)","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["HER2+ and HER2-low breast cancer"],"contraindications":["None significant"],"side_effects":["Nausea","Vomiting","Alopecia","Interstitial lung disease (ILD)","Myelosuppression"],"dosage":{"adult":"5.4 mg/kg IV q3 weeks"},"interactions":["None significant"],"monitoring":"PFTs if respiratory symptoms (ILD)","patient_counselling":"Anti-HER2 ADC: trastuzumab linked to topoisomerase I inhibitor via cleavable linker. Bystander effect kills adjacent HER2-low cells.","mechanism_of_action":"Enhertu","brand_names":["IV: t1/2 14 days"],"pregnancy_category":"Bystander effect: effective even in HER2-low tumors~Interstitial lung disease risk (monitor respiratory symptoms)","warnings":["DESTINY-Breast03: superior to T-DM1 in HER2+"],"overdose":"Also effective in HER2-low breast cancer (DESTINY-Breast04)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Ado-trastuzumab emtansine","generic_name":"T-DM1 (ado-trastuzumab emtansine)","drug_class":"Anti-HER2 antibody-drug conjugate","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["HER2+ breast cancer (after progression on trastuzumab)"],"contraindications":["None significant"],"side_effects":["Hepatotoxicity","Thrombocytopenia","Peripheral neuropathy","Infusion reactions"],"dosage":{"adult":"3.6 mg/kg IV q3 weeks"},"interactions":["None significant"],"monitoring":"Platelet count~LFTs~PN assessment","patient_counselling":"Anti-HER2 ADC: trastuzumab linked to cytotoxic DM1 via non-cleavable linker.","mechanism_of_action":"Kadcyla","brand_names":["IV: t1/2 4 days"],"pregnancy_category":"Non-cleavable linker - no bystander effect (requires HER2 expression)","warnings":["Hepatotoxicity and thrombocytopenia most common","Peripheral neuropathy dose-limiting"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Olaratumab","generic_name":"Olaratumab","drug_class":"Anti-PDGFR-alpha monoclonal antibody","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["Soft tissue sarcoma (with doxorubicin)"],"contraindications":["None significant"],"side_effects":["Infusion reactions","Hemorrhage","Neutropenia"],"dosage":{"adult":"15 mg/kg IV weekly (with doxorubicin)"},"interactions":["None significant"],"monitoring":"CBC","patient_counselling":"Anti-PDGFR-alpha: blocks PDGF receptor signaling. Added to doxorubicin for advanced STS. FDA approval withdrawn due to lack of OS benefit in confirmatory trial.","mechanism_of_action":"Lartruvo","brand_names":["IV: t1/2 11 days"],"pregnancy_category":"FDA approval withdrawn (no OS benefit in phase 3)","warnings":["Was used with doxorubicin for advanced STS","Available through restricted program"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Ramucirumab","generic_name":"Ramucirumab","drug_class":"Anti-VEGFR2 monoclonal antibody","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["Gastric/GEC","NSCLC","CRC","HCC"],"contraindications":["None significant"],"side_effects":["Hypertension","Proteinuria","GI perforation","Hemorrhage"],"dosage":{"adult":"8 mg/kg IV q2 weeks (gastric) or 10 mg/kg q2 weeks (NSCLC)"},"interactions":["None significant"],"monitoring":"BP~Proteinuria","patient_counselling":"Binds VEGFR2 directly, blocking VEGF ligand binding. Alternative to bevacizumab.","mechanism_of_action":"Cyramza","brand_names":["IV: t1/2 11 days"],"pregnancy_category":"Anti-VEGFR2 (targets receptor vs ligand like bevacizumab)","warnings":["GI perforation and hemorrhage risk","Hypertension common","Also used in CRC, HCC"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Cetuximab","generic_name":"Cetuximab","drug_class":"Anti-EGFR monoclonal antibody","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["CRC (KRAS wild-type)","Head and neck SCC"],"contraindications":["None significant"],"side_effects":["Acneiform rash","Hypomagnesemia","Infusion reactions","Hypokalemia"],"dosage":{"adult":"400 mg/m2 IV loading, then 250 mg/m2 weekly (or 500 mg/m2 q2 weeks)"},"interactions":["None significant"],"monitoring":"EGFR testing (KRAS/NRAS/BRAF)~Magnesium levels","patient_counselling":"Binds EGFR, blocking downstream signaling. KRAS/NRAS wild-type required for efficacy in CRC.","mechanism_of_action":"Erbitux","brand_names":["IV: t1/2 63h"],"pregnancy_category":"REQUIRES RAS testing (KRAS/NRAS) - no benefit in mutant","warnings":["Acneiform rash correlates with efficacy","Hypomagnesemia (monitor Mg2+)","Also blocks VEGF in combo with bevacizumab"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Panitumumab","generic_name":"Panitumumab","drug_class":"Anti-EGFR monoclonal antibody (fully human)","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["CRC (RAS wild-type)"],"contraindications":["None significant"],"side_effects":["Acneiform rash","Hypomagnesemia","Hypokalemia","Fatigue"],"dosage":{"adult":"6 mg/kg IV q2 weeks"},"interactions":["None significant"],"monitoring":"EGFR testing (RAS wild-type required)","patient_counselling":"Fully human anti-EGFR: lower immunogenicity than cetuximab. Same RAS testing requirement.","mechanism_of_action":"Vectibix","brand_names":["IV: t1/2 4 days"],"pregnancy_category":"Fully human - lower infusion reaction rate than cetuximab","warnings":["Acneiform rash correlates with efficacy","Hypomagnesemia common"],"overdose":"RAS testing mandatory","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-014","name":"Atezolizumab","generic_name":"Atezolizumab","drug_class":"Anti-PD-L1 checkpoint inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Immunotherapy","indications":["NSCLC","HCC","SCLC","TNBC","UC"],"contraindications":["None significant"],"side_effects":["Immune-mediated adverse events","Fatigue","Infusion reactions"],"dosage":{"adult":"1200 mg IV q3 weeks"},"interactions":["Immunosuppressants (reduce efficacy)"],"monitoring":"TFTs~LFTs~Glucose","patient_counselling":"PD-L1 inhibitor: blocks PD-L1 on tumor cells, preventing PD-1 engagement on T cells.","mechanism_of_action":"Tecentriq","brand_names":["IV: t1/2 31 days"],"pregnancy_category":"Anti-PD-L1 (vs anti-PD-1 for nivolumab/pembrolizumab)","warnings":["Also blocks CD80/CD86 (B7 ligands) - may enhance immune response"],"overdose":"Combo with bevacizumab for HCC and NSCLC","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Ipilimumab","generic_name":"Ipilimumab","drug_class":"Anti-CTLA-4 checkpoint inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Immunotherapy","indications":["Melanoma","RCC (with nivolumab)","HCC","NSCLC"],"contraindications":["Active autoimmune disease"],"side_effects":["Immune-mediated adverse events (more severe than PD-1 inhibitors)"],"dosage":{"adult":"3 mg/kg q3 weeks x4 (melanoma) or 1 mg/kg q6 weeks (with nivolumab)"},"interactions":["Immunosuppressants (reduce efficacy)"],"monitoring":"LFTs~Colonoscopy if diarrhea","patient_counselling":"CTLA-4 inhibitor: blocks CTLA-4 inhibitory signal, enhancing T-cell activation. More toxic than PD-1 inhibitors.","mechanism_of_action":"Yervoy","brand_names":["IV: t1/2 14 days"],"pregnancy_category":"Higher rate of immune-mediated AEs than PD-1 inhibitors~Colitis is most serious (check for perforation)~Hepatitis~Endocrinopathies","warnings":["1 mg/kg with nivolumab for many tumor types (lower dose = less toxicity)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Nivolumab + ipilimumab","generic_name":"Opdivo + Yervoy","drug_class":"PD-1 + CTLA-4 combination immunotherapy","drug_class_id":null,"drug_class_name":"Oncology - Immunotherapy","indications":["RCC","Melanoma","NSCLC (PD-L1 >=1%)"],"contraindications":["None significant"],"side_effects":["Immune-mediated adverse events (more than either alone)"],"dosage":{"adult":"Nivolumab 1 mg/kg + ipilimumab 1 mg/kg q3 weeks x4, then nivolumab 240mg q2 weeks"},"interactions":["Immunosuppressants"],"monitoring":"LFTs~TFTs~Glucose~Colonoscopy if diarrhea","patient_counselling":"Dual checkpoint blockade: synergistic anti-tumor immunity by blocking both PD-1 and CTLA-4 pathways.","mechanism_of_action":"Opdivo + Yervoy","brand_names":["Same as individual agents"],"pregnancy_category":"Combination more effective but more toxic than either alone~LFTs monitoring essential (hepatotoxicity common with combination)~For many tumor types now","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-017","name":"Avelumab","generic_name":"Avelumab","drug_class":"Anti-PD-L1 checkpoint inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Immunotherapy","indications":["Merkel cell carcinoma","Urothelial carcinoma"],"contraindications":["None significant"],"side_effects":["Infusion reactions","Immune-mediated AEs","Fatigue"],"dosage":{"adult":"10 mg/kg IV q2 weeks"},"interactions":["Immunosuppressants (reduce efficacy)"],"monitoring":"TFTs~LFTs","patient_counselling":"PD-L1 inhibitor: also mediates ADCC via Fc region (unique among checkpoint inhibitors).","mechanism_of_action":"Bavencio","brand_names":["IV: t1/2 6 days"],"pregnancy_category":"ADCC capability (unique feature among checkpoint inhibitors)","warnings":["Lower potency anti-PD-L1 compared to atezolizumab"],"overdose":"Also approved with axitinib for RCC","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-018","name":"Durvalumab","generic_name":"Durvalumab","drug_class":"Anti-PD-L1 checkpoint inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Immunotherapy","indications":["NSCLC (stage III consolidation)","SCLC","BTC"],"contraindications":["None significant"],"side_effects":["Immune-mediated AEs","Pneumonitis"],"dosage":{"adult":"10 mg/kg IV q2 weeks or 1500 mg q4 weeks"},"interactions":["Immunosuppressants (reduce efficacy)"],"monitoring":"TFTs~LFTs","patient_counselling":"PD-L1 inhibitor: consolidation therapy after concurrent chemoRT in stage III NSCLC (PACIFIC trial).","mechanism_of_action":"Imfinzi","brand_names":["IV: t1/2 18 days"],"pregnancy_category":"PACIFIC trial: standard of care for stage III NSCLC after chemoRT~Also used in biliary tract cancer with gemcitabine/cisplatin","warnings":["Less pneumonitis than expected"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-019","name":"Erdafitinib","generic_name":"Erdafitinib","drug_class":"FGFR inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["Urothelial carcinoma (FGFR-altered)"],"contraindications":["None significant"],"side_effects":["Hyperphosphatemia","Stomatitis","Nail toxicity","Retinal detachment"],"dosage":{"adult":"8 mg PO daily (with food)"},"interactions":["Strong CYP3A4 inducers/inhibitors"],"monitoring":"Phosphate~LFTs~Ophthalmology","patient_counselling":"Inhibits FGFR1-4: overcomes FGFR-altered resistance in urothelial carcinoma.","mechanism_of_action":"Balversa","brand_names":["Bioavailability","t1/2 5.9h","CYP2C9/3A4"],"pregnancy_category":"Hyperphosphatemia most common (phosphate binder if >5.5)","warnings":["Ophthalmology monitoring (retinal detachment risk)"],"overdose":"Take with food daily","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-020","name":"Larotrectinib","generic_name":"Larotrectinib","drug_class":"TRK inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["TRK fusion-positive solid tumors"],"contraindications":["None significant"],"side_effects":["Dizziness","Weight gain","Nausea"],"dosage":{"adult":"100mg PO BID"},"interactions":["Strong CYP3A4 inhibitors/inducers"],"monitoring":"Tumor NGS for TRK fusion","patient_counselling":"Inhibits tropomyosin receptor kinases (TRK): effective in any tumor type with NTRK gene fusion.","mechanism_of_action":"Vitrakvi","brand_names":["Bioavailability 34-98%","t1/2 2.9h","CYP3A4"],"pregnancy_category":"Tumor-agnostic therapy: works in any cancer with TRK fusion~Response rate ~75% across tumor types","warnings":["Requires NTRK gene fusion testing"],"overdose":"Oral BID dosing","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-021","name":"Entrectinib","generic_name":"Entrectinib","drug_class":"TRK/ROS1/ALK inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["TRK fusion-positive solid tumors","ROS1+ NSCLC","ALK+ NSCLC"],"contraindications":["None significant"],"side_effects":["Dysgeusia","Fatigue","Edema","Dizziness","Weight gain"],"dosage":{"adult":"600mg PO daily"},"interactions":["Strong CYP3A4 inhibitors (reduce to 200mg)"],"monitoring":"Tumor NGS for TRK/ROS1/ALK","patient_counselling":"Inhibits TRK, ROS1, and ALK kinases. CNS-penetrant.","mechanism_of_action":"Rozlytrek","brand_names":["Bioavailability 34-98%","t1/2 5.7h","CYP3A4"],"pregnancy_category":"CNS-penetrant: effective in brain metastases~Tumor-agnostic for TRK fusions~Also covers ROS1 and ALK","warnings":["Take with or without food"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Cilostazol","generic_name":"Cilostazol","drug_class":"PDE3 inhibitor","drug_class_id":null,"drug_class_name":"Cardiovascular - Antiplatelets","indications":["Intermittent claudication"],"contraindications":["Heart failure (contraindicated)"],"side_effects":["Headache","Diarrhea","Palpitations","Dizziness"],"dosage":{"adult":"100mg BID"},"interactions":["CYP3A4 inhibitors (increased effects)"],"monitoring":"None significant","patient_counselling":"PDE3 inhibitor: inhibits platelet aggregation and causes vasodilation. Improved walking distance in claudication.","mechanism_of_action":"Pletal","brand_names":["Bioavailability 50-90%","t1/2 11-13h","CYP3A4/CYP2B6"],"pregnancy_category":"CONTRAINDICATED in heart failure (mortality signal)","warnings":["Headache most common (35%)","Improved walking distance 50-100m","Avoid with other antiplatelets if possible"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Ticlopidine","generic_name":"Ticlopidine","drug_class":"Thienopyridine antiplatelet (P2Y12 inhibitor)","drug_class_id":null,"drug_class_name":"Cardiovascular - Antiplatelets","indications":["Stent thrombosis prevention (historical)"],"contraindications":["Neutropenia/TTP"],"side_effects":["Neutropenia","TTP","Thrombocytopenia","GI upset"],"dosage":{"adult":"250mg BID"},"interactions":["None significant"],"monitoring":"CBC (risk of neutropenia/TTP)","patient_counselling":"First thienopyridine: irreversibly blocks P2Y12. Largely replaced by clopidogrel/prasugrel due to toxicity.","mechanism_of_action":"Ticlid","brand_names":["Bioavailability 20-30%","t1/2 12-25h"],"pregnancy_category":"Historical - replaced by safer alternatives~Neutropenia risk (1-2%)~TTP risk~CBC monitoring required","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Cangrelor","generic_name":"Cangrelor","drug_class":"Reversible P2Y12 inhibitor (IV)","drug_class_id":null,"drug_class_name":"Cardiovascular - Antiplatelets","indications":["PCI (platelet inhibition during procedure)"],"contraindications":["None significant"],"side_effects":["Bleeding","Dyspnea"],"dosage":{"adult":"30 mcg/kg IV bolus then 4 mcg/kg/min infusion"},"interactions":["None significant"],"monitoring":"Platelet function testing if needed","patient_counselling":"Reversible IV P2Y12 inhibitor: immediate onset, offset within 1 hour. Bridge between oral antiplatelet and procedure.","mechanism_of_action":"Kengreal","brand_names":["IV: t1/2 3-6 min"],"pregnancy_category":"Fastest onset/offset of any P2Y12 inhibitor~IV only: for periprocedural use~Offset within 60 min of stopping infusion~Bridge to oral P2Y12 inhibitor","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Vorapaxar","generic_name":"Vorapaxar","drug_class":"PAR-1 antagonist (antiplatelet)","drug_class_id":null,"drug_class_name":"Cardiovascular - Antiplatelets","indications":["Secondary prevention (prior MI/PAD)"],"contraindications":["History of stroke/TIA (contraindicated)","Active bleeding"],"side_effects":["Bleeding","GI upset"],"dosage":{"adult":"2.5mg daily"},"interactions":["None significant"],"monitoring":"Bleeding risk","patient_counselling":"PAR-1 (protease-activated receptor 1) antagonist: blocks thrombin-mediated platelet activation via a unique pathway.","mechanism_of_action":"Zontivity","brand_names":["Bioavailability","50%","t1/2 223h (extremely long)"],"pregnancy_category":"Once daily dosing~Contraindicated in prior stroke/TIA (TRA 2P-TIMI 50: increased intracranial hemorrhage)","warnings":["Unique mechanism: PAR-1 antagonist (thrombin receptor)"],"overdose":"Very long half-life","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Rasburicase","generic_name":"Rasburicase","drug_class":"Recombinant urate oxidase","drug_class_id":null,"drug_class_name":"Hematology - Supportive care","indications":["Tumor lysis syndrome (uric acid management)"],"contraindications":["Methemoglobinemia","G6PD deficiency"],"side_effects":["Hypersensitivity","Methemoglobinemia (G6PD-deficient)"],"dosage":{"adult":"0.2 mg/kg IV single dose"},"interactions":["None significant"],"monitoring":"Uric acid levels~Monitor for hypersensitivity","patient_counselling":"Converts uric acid to allantoin (more soluble and easily excreted). Prevents uric acid nephropathy in tumor lysis.","mechanism_of_action":"Elitek","brand_names":["IV: t1/2 18h"],"pregnancy_category":"Prevents uric acid nephropathy in tumor lysis~Contraindicated in G6PD deficiency (severe hemolysis risk)","warnings":["Monitor methemoglobin levels","Single dose before chemotherapy","More effective than allopurinol for acute TLS"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Pegloticase","generic_name":"Pegloticase","drug_class":"PEGylated recombinant uricase","drug_class_id":null,"drug_class_name":"Gout - Urate lowering","indications":["Chronic refractory gout"],"contraindications":["None significant"],"side_effects":["Gout flares","Infusion reactions","Anaphylaxis (risk)"],"dosage":{"adult":"8 mg IV q2 weeks"},"interactions":["None significant"],"monitoring":"Uric acid~Infusion reactions","patient_counselling":"PEGylated uricase: rapidly lowers serum uric acid. For chronic gout refractory to conventional therapy. High immunogenicity.","mechanism_of_action":"Krystexxa","brand_names":["IV: t1/2 10-14 days"],"pregnancy_category":"For severe chronic refractory gout only~High infusion reaction rate (26%)~Anaphylaxis risk (monitor)~Serum uric acid should be <6 mg/mL (if rising = immunogenicity)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Lesinurad","generic_name":"Lesinurad","drug_class":"URAT1/OAT4 inhibitor (uricosuric)","drug_class_id":null,"drug_class_name":"Gout - Urate lowering","indications":["Gout (combination with XOI)"],"contraindications":["CrCl <30","Tumor lysis","Uric acid nephrolithiasis"],"side_effects":["Headache","GERD","Elevated creatinine"],"dosage":{"adult":"200mg daily (with XOI)"},"interactions":["None significant"],"monitoring":"Uric acid~Renal function","patient_counselling":"URAT1 and OAT4 inhibitor: blocks renal uric acid reabsorption, increasing uric acid excretion. Must use with XOI.","mechanism_of_action":"Zurampic","brand_names":["Bioavailability","100%","t1/2 1h"],"pregnancy_category":"Must use with allopurinol or febuxostat (not as monotherapy)","warnings":["Renal dose adjustment: avoid if CrCl <30"],"overdose":"200mg once daily","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Benzbromarone","generic_name":"Benzbromarone","drug_class":"URAT1 inhibitor (uricosuric)","drug_class_id":null,"drug_class_name":"Gout - Urate lowering","indications":["Chronic gout (refractory)"],"contraindications":["Hepatic impairment"],"side_effects":["Hepatotoxicity","Uric acid nephrolithiasis"],"dosage":{"adult":"50-200mg daily"},"interactions":["None significant"],"monitoring":"Uric acid~LFTs","patient_counselling":"Potent URAT1 inhibitor: blocks renal uric acid reabsorption. Available outside US.","mechanism_of_action":"Urnorman (not available in US)","brand_names":["t1/2 2-4h"],"pregnancy_category":"Not available in US due to hepatotoxicity concerns","warnings":["Very effective uricosuric","Potent uric acid reduction"],"overdose":"Used in Europe/Asia","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Probenecid","generic_name":"Probenecid","drug_class":"Uricosuric agent","drug_class_id":null,"drug_class_name":"Gout - Urate lowering","indications":["Chronic gout","Renal uric acid stones"],"contraindications":["CrCl <30","Uric acid nephrolithiasis"],"side_effects":["GI upset","Rash","Headache"],"dosage":{"adult":"500mg BID, titrate to 2g daily"},"interactions":["Penicillins (increases levels - historically used to prolong PCN effect)","NSAIDs (reduced uricosuric effect)","Methotrexate (increased levels)"],"monitoring":"Uric acid~Renal function","patient_counselling":"Blocks OAT1/OAT3 and URAT1, increasing renal uric acid excretion. Historically used to boost penicillin levels.","mechanism_of_action":"Benemid","brand_names":["Bioavailability 100%","t1/2 6-12h"],"pregnancy_category":"Historically used to prolong penicillin action~NSAIDs reduce uricosuric effect~Good for overproducers of uric acid~Prevent renal uric acid stones","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Auranofin","generic_name":"Rheumatology - DMARDs","drug_class":"Gold compound (oral)","drug_class_id":null,"drug_class_name":"Auranofin","indications":["Rheumatoid arthritis (historical)"],"contraindications":["Bone marrow aplasia","Hepatic impairment"],"side_effects":["Diarrhea (most common)","Skin rash","Stomatitis"],"dosage":{"adult":"3mg BID (6mg/day)"},"interactions":["None significant"],"monitoring":"CBC~LFTs","patient_counselling":"Gold compound: modulates immune function by inhibiting thioredoxin reductase. Historical DMARD.","mechanism_of_action":"Ridaura","brand_names":["Bioavailability 15-25%"],"pregnancy_category":"Diarrhea limits tolerability~Largely replaced by biologics~Low-dose (3mg/day) better tolerated","warnings":["Gold therapy historical"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Dapsone","generic_name":"Dermatology - Antimicrobials","drug_class":"Sulfone","drug_class_id":null,"drug_class_name":"Dapsone","indications":["Leprosy (multibacillary)","Dermatitis herpetiformis","Pneumocystis pneumonia (prophylaxis)"],"contraindications":["Severe G6PD deficiency"],"side_effects":["Hemolytic anemia (G6PD)","Methemoglobinemia","Peripheral neuropathy","Hepatotoxicity"],"dosage":{"adult":"50-300mg daily (varies by indication)"},"interactions":["Dapsone (hematologic toxicity)-folic acid antagonists"],"monitoring":"CBC~Reticulocyte count~G6PD","patient_counselling":"Inhibits bacterial folate synthesis (dapsone) and modulates neutrophil chemotaxis (anti-inflammatory at low doses).","mechanism_of_action":"Aczone (topical)","brand_names":["Bioavailability 70-80%","t1/2 28h"],"pregnancy_category":"G6PD testing essential (hemolytic anemia risk)~Methemoglobinemia: check methemoglobin level","warnings":["Also used topically for acne (Aczone 5% gel)"],"overdose":"Anti-inflammatory at low doses (dermatitis herpetiformis)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Isotretinoin","generic_name":"Dermatology - Retinoid","drug_class":"Retinoid (oral)","drug_class_id":null,"drug_class_name":"Isotretinoin","indications":["Severe nodulocystic acne (refractory)"],"contraindications":["Pregnancy (teratogenic - iPLEDGE required)"],"side_effects":["Dry skin/lips","Cheilitis","Elevated LFTs","Elevated triglycerides","Depression (controversial)"],"dosage":{"adult":"0.5-1 mg/kg/day x 15-20 weeks (cumulative dose 120-150 mg/kg)"},"interactions":["Vitamin A supplements (additive toxicity)","Tetracyclines (pseudotumor cerebri risk)"],"monitoring":"LFTs~Triglycerides~Pregnancy test monthly","patient_counselling":"iPLEDGE program: must use two forms of contraception. Normalizes sebaceous gland function.","mechanism_of_action":"Absorica~Amnesteem","brand_names":["Bioavailability: variable (take with fatty food)"],"pregnancy_category":"iPLEDGE program mandatory~Teratogenic: two forms of contraception required~Monthly pregnancy tests~Dry skin/lips universal~Depression monitoring (controversial)","warnings":["Also reduces sebum production permanently"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Acitretin","generic_name":"Dermatology - Retinoid","drug_class":"Retinoid (oral)","drug_class_id":null,"drug_class_name":"Acitretin","indications":["Severe psoriasis","Ichthyosis"],"contraindications":["Pregnancy (teratogenic)"],"side_effects":["Dry skin/lips","Elevated LFTs","Elevated triglycerides","Hair loss"],"dosage":{"adult":"25-50mg daily"},"interactions":["Alcohol (prolongs elimination - avoid for 2 months after)"],"monitoring":"LFTs~Triglycerides","patient_counselling":"Systemic retinoid for severe psoriasis. Contraindicated in pregnancy.","mechanism_of_action":"Soriatane","brand_names":["Bioavailability 60%","t1/2 49h (prolonged by alcohol)"],"pregnancy_category":"Avoid alcohol during and 2 months after treatment (prolongs half-life to ~160 days)","warnings":["Teratogenic: iPLEDGE program"],"overdose":"Useful for pustular/generalized pustular psoriasis","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Tazarotene","generic_name":"Dermatology - Retinoid","drug_class":"Retinoid (topical)","drug_class_id":null,"drug_class_name":"Tazarotene","indications":["Psoriasis (plaque)","Acne","Photoaging"],"contraindications":["Pregnancy (teratogenic)"],"side_effects":["Application site irritation","Dryness","Photosensitivity"],"dosage":{"adult":"Apply once daily (cream or gel)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical retinoid: normalizes keratinization and reduces inflammation.","mechanism_of_action":"Tazorac","brand_names":["Topical"],"pregnancy_category":"More potent topical retinoid than tretinoin~Also used for acne and photoaging","warnings":["Pregnancy category X (teratopic)"],"overdose":"Apply at bedtime","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Tretinoin","generic_name":"Dermatology - Retinoid","drug_class":"Retinoid (topical)","drug_class_id":null,"drug_class_name":"Tretinoin","indications":["Acne","Photoaging","Photodamage"],"contraindications":["Pregnancy (teratogenic)"],"side_effects":["Application site irritation","Photosensitivity","Dryness"],"dosage":{"adult":"Apply once daily at bedtime (cream/gel)"},"interactions":["Benzoyl peroxide (inactivates tretinoin if applied simultaneously)","Tetracyclines"],"monitoring":"None significant","patient_counselling":"Topical retinoid: normalizes follicular keratinization, stimulates collagen synthesis.","mechanism_of_action":"Retin-A","brand_names":["Topical"],"pregnancy_category":"Apply at bedtime~Avoid simultaneous benzoyl peroxide (separate by hours)","warnings":["Sunscreen essential (photosensitivity)"],"overdose":"Also used for photoaging (Renova 0.02%)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Adapalene","generic_name":"Dermatology - Retinoid","drug_class":"Retinoid (topical, third-generation)","drug_class_id":null,"drug_class_name":"Adapalene","indications":["Acne"],"contraindications":["Pregnancy (relatively safe - category C)"],"side_effects":["Application site irritation","Dryness"],"dosage":{"adult":"Apply once daily at bedtime"},"interactions":["Benzoyl peroxide (compatible - can use together)"],"monitoring":"None significant","patient_counselling":"Third-generation topical retinoid: selective for RAR-beta and RAR-gamma receptors. Less irritating than tretinoin.","mechanism_of_action":"Differin","brand_names":["Topical"],"pregnancy_category":"Less irritating than tretinoin~Can combine with benzoyl peroxide (Epiduo)","warnings":["Category C - relatively safe in pregnancy"],"overdose":"Available OTC (0.1%)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Benzoyl peroxide","generic_name":"Dermatology - Antibacterials","drug_class":"Topical oxidizing agent","drug_class_id":null,"drug_class_name":"Benzoyl peroxide","indications":["Acne"],"contraindications":["None significant"],"side_effects":["Skin irritation","Bleaching of fabrics","Dryness"],"dosage":{"adult":"Apply BID (2.5-10% wash/gel)"},"interactions":["Tretinoin (inactivates if applied simultaneously)"],"monitoring":"None significant","patient_counselling":"Oxidizing agent: kills C. acnes via free radical formation. No antibiotic resistance.","mechanism_of_action":"PanOxyl (wash)~Clearskin","brand_names":["Topical"],"pregnancy_category":"Kills C. acnes without promoting resistance~Can bleach fabrics and hair~Separate from tretinoin application (by hours)~Start with 2.5% (less irritation)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Clindamycin topical","generic_name":"Dermatology - Antibacterials","drug_class":"Topical lincosamide","drug_class_id":null,"drug_class_name":"Clindamycin (topical)","indications":["Acne"],"contraindications":["None significant"],"side_effects":["Skin irritation","Dryness"],"dosage":{"adult":"Apply BID to affected area"},"interactions":["Erythromycin (antagonistic)"],"monitoring":"None significant","patient_counselling":"Inhibits bacterial protein synthesis. Often combined with benzoyl peroxide to reduce resistance.","mechanism_of_action":"Cleocin T","brand_names":["Topical"],"pregnancy_category":"Usually combined with benzoyl peroxide~Monitor for C. difficile if systemic absorption (rare)","warnings":["Low systemic absorption topically"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Mupirocin","generic_name":"Dermatology - Antibacterials","drug_class":"Topical antibiotic","drug_class_id":null,"drug_class_name":"Mupirocin","indications":["Impetigo","MRSA nasal decolonization"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"Apply TID to affected area (skin)~BID to nares x 5 days (decolonization)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Inhibits bacterial isoleucyl-tRNA synthetase. Bactericidal against S. aureus and Streptococcus.","mechanism_of_action":"Bactroban","brand_names":["Topical"],"pregnancy_category":"Excellent for impetigo~Nasal decolonization: BID x 5 days~Short-term use only (resistance with prolonged use)","warnings":["Also available as cream and nasal ointment"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Daptomycin topical","generic_name":"Dermatology - Antimicrobials","drug_class":"Topical lipopeptide","drug_class_id":null,"drug_class_name":"Daptomycin (topical)","indications":["Burn wound infections (investigational)"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"Topical application to infected wound"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical formulation of daptomycin for burn wound infections (investigational).","mechanism_of_action":"Investigational","brand_names":["Topical"],"pregnancy_category":"For burn wound infections (research stage)","warnings":["May complement systemic daptomycin for burn patients"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Triamcinolone acetonide","generic_name":"Dermatology - Corticosteroids","drug_class":"Topical corticosteroid (medium potency)","drug_class_id":null,"drug_class_name":"Triamcinolone acetonide","indications":["Eczema","Dermatitis","Psoriasis","Insect bites"],"contraindications":["None significant"],"side_effects":["Skin atrophy","Striae","Telangiectasia"],"dosage":{"adult":"Apply BID-QID to affected area (0.1% cream)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Medium-potency topical corticosteroid for inflammatory dermatoses. Acetonide ester enhances skin penetration.","mechanism_of_action":"Kenalog","brand_names":["Topical"],"pregnancy_category":"Medium potency - avoid face/groin~Also available as IM depot (Kenalog-40) and dental paste (Kenalog in Orabase)","warnings":["Higher potency options available for severe disease"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Betamethasone dipropionate","generic_name":"See corticosteroids section","drug_class":"See corticosteroids section","drug_class_id":null,"drug_class_name":"See corticosteroids section","indications":["See corticosteroids section"],"contraindications":["See corticosteroids section"],"side_effects":["See corticosteroids section"],"dosage":{"adult":"See corticosteroids section"},"interactions":["See corticosteroids section"],"monitoring":"See corticosteroids section","patient_counselling":"See corticosteroids section","mechanism_of_action":"See corticosteroids section","brand_names":["See corticosteroids section"],"pregnancy_category":"See corticosteroids section","warnings":["See corticosteroids section"],"overdose":"See corticosteroids section","pharmacokinetics":"See corticosteroids section","black_box_warnings":["See corticosteroids section"],"clinical_pearls":["See corticosteroids section"],"created_at":""},
+    {"id":"bulk-014","name":"Clobetasol","generic_name":"Dermatology - Corticosteroids","drug_class":"Topical corticosteroid (superpotent)","drug_class_id":null,"drug_class_name":"Clobetasol","indications":["Severe recalcitrant dermatoses"],"contraindications":["None significant"],"side_effects":["Skin atrophy","Striae","Hypothalamic-pituitary-adrenal suppression (extensive)"],"dosage":{"adult":"Apply BID x 2 weeks max (0.05% cream)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Superpotent topical corticosteroid: highest potency available. Limit use to 2 weeks.","mechanism_of_action":"Temovate","brand_names":["Topical"],"pregnancy_category":"Superpotent (Class I) - strongest available~Limit use to 2 weeks maximum~Avoid face, groin, axillae~Risk of HPA suppression if extensive use","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Hydrocortisone (topical)","generic_name":"Dermatology - Corticosteroids","drug_class":"Topical corticosteroid (low potency)","drug_class_id":null,"drug_class_name":"Hydrocortisone (topical)","indications":["Mild eczema","Dermatitis","Insect bites"],"contraindications":["None significant"],"side_effects":["Skin atrophy (minimal with low potency)"],"dosage":{"adult":"Apply BID-QID (1% cream)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Low-potency topical corticosteroid: safe for face, groin, and pediatric use.","mechanism_of_action":"Cortaid","brand_names":["Topical"],"pregnancy_category":"Lowest potency - safe for sensitive areas","warnings":["Safe for face, groin, axillae","Can be used in infants"],"overdose":"Also available OTC","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Pimecrolimus","generic_name":"Dermatology - Calcineurin inhibitors","drug_class":"Topical calcineurin inhibitor","drug_class_id":null,"drug_class_name":"Pimecrolimus","indications":["Mild-moderate eczema (face/neck)"],"contraindications":["None significant"],"side_effects":["Application site reactions","Skin burning","Herpes simplex"],"dosage":{"adult":"Apply BID to affected areas"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Selective calcineurin inhibitor: reduces T-cell mediated inflammation without skin atrophy risk.","mechanism_of_action":"Elidel","brand_names":["Topical"],"pregnancy_category":"No skin atrophy risk (unlike corticosteroids)","warnings":["Safe for face, neck, and skin folds"],"overdose":"Black box warning: theoretical lymphoma risk (not confirmed)","pharmacokinetics":"Avoid in immunocompromised","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-017","name":"Tacrolimus (topical)","generic_name":"Dermatology - Calcineurin inhibitors","drug_class":"Topical calcineurin inhibitor","drug_class_id":null,"drug_class_name":"Tacrolimus (topical)","indications":["Moderate-severe eczema"],"contraindications":["None significant"],"side_effects":["Application site burning","Skin irritation","Herpes simplex"],"dosage":{"adult":"0.1% BID (adults)~0.03% BID (children)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Calcineurin inhibitor: reduces eczema flares and steroid use. More potent than pimecrolimus.","mechanism_of_action":"Protopic","brand_names":["Topical"],"pregnancy_category":"More potent than pimecrolimus for moderate-severe eczema~Application site burning common initially (decreases with use)","warnings":["No skin atrophy risk","Steroid-sparing agent","Black box warning: theoretical lymphoma risk (not confirmed)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-018","name":"Brimonidine","generic_name":"Ophthalmology - Glaucoma","drug_class":"Alpha-2 adrenergic agonist (ophthalmic)","drug_class_id":null,"drug_class_name":"Brimonidine","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Concomitant MAOIs"],"side_effects":["Allergic conjunctivitis","Dry mouth","Drowsiness"],"dosage":{"adult":"1 drop BID"},"interactions":["MAOIs (contraindicated)"],"monitoring":"IOP","patient_counselling":"Reduces aqueous humor production and increases uveoscleral outflow.","mechanism_of_action":"Alphagan","brand_names":["Onset 1h","Duration 7-8h"],"pregnancy_category":"BID dosing~Can cause allergic follicular conjunctivitis~Less effective than prostaglandins~Can cross BBB (drowsiness)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-019","name":"Dorzolamide","generic_name":"Ophthalmology - Glaucoma","drug_class":"Carbonic anhydrase inhibitor (ophthalmic)","drug_class_id":null,"drug_class_name":"Dorzolamide","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Severe renal impairment"],"side_effects":["Ocular stinging","Bitter taste","Keratopathy"],"dosage":{"adult":"1 drop TID in affected eye(s)"},"interactions":["High-dose oral carbonic anhydrase inhibitors (additive)"],"monitoring":"None significant","patient_counselling":"Inhibits carbonic anhydrase II in ciliary body, reducing aqueous humor production.","mechanism_of_action":"Trusopt","brand_names":["Onset 2h"],"pregnancy_category":"TID dosing disadvantage~Ocular stinging common~Caution in renal impairment~Can combine with timolol (Cosopt)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-020","name":"Brinzolamide","generic_name":"Ophthalmology - Glaucoma","drug_class":"Carbonic anhydrase inhibitor (ophthalmic)","drug_class_id":null,"drug_class_name":"Brinzolamide","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Severe renal impairment"],"side_effects":["Ocular discomfort","Bitter taste"],"dosage":{"adult":"1 drop BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Carbonic anhydrase inhibitor with suspension formulation (less stinging than dorzolamide).","mechanism_of_action":"Azopt","brand_names":["Onset 2h"],"pregnancy_category":"BID dosing (vs dorzolamide TID)~Less stinging than dorzolamide~Suspension formulation","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-021","name":"Pilocarpine","generic_name":"Ophthalmology - Glaucoma","drug_class":"Cholinergic agonist (miotic)","drug_class_id":null,"drug_class_name":"Pilocarpine","indications":["Angle-closure glaucoma (emergency)","Open-angle glaucoma"],"contraindications":["None significant"],"side_effects":["Miosis","Brow ache","Blurred vision","Bradycardia (if absorbed)"],"dosage":{"adult":"1-2 drops q15-6h (varies by formulation)"},"interactions":["Anticholinergics (antagonize effect)"],"monitoring":"IOP","patient_counselling":"Contracts ciliary muscle, opening trabecular meshwork and increasing aqueous outflow. Miotic.","mechanism_of_action":"Isopto Carpine","brand_names":["Onset 15-60 min"],"pregnancy_category":"For angle-closure emergency (pupillary block)~Miosis causes brow ache and blurred vision~Short-acting: multiple daily doses~Also used for dry mouth (Salagen 5mg TID)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-022","name":"Acetazolamide","generic_name":"Ophthalmology - Glaucoma","drug_class":"Carbonic anhydrase inhibitor (oral)","drug_class_id":null,"drug_class_name":"Acetazolamide","indications":["Open-angle glaucoma","Altitude sickness","Edema (heart failure)"],"contraindications":["Severe renal impairment","Hypokalemia","Metabolic acidosis"],"side_effects":["Paresthesias","Hypokalemia","Metabolic acidosis","Anorexia","Drowsiness"],"dosage":{"adult":"250-500mg BID or 250mg SR daily"},"interactions":["High-dose aspirin (metabolic acidosis risk)"],"monitoring":"K+~Bicarbonate~Electrolytes","patient_counselling":"Inhibits carbonic anhydrase, reducing aqueous humor production and causing metabolic acidosis.","mechanism_of_action":"Diamox","brand_names":["Bioavailability 100%","t1/2 2.5-6h"],"pregnancy_category":"Paresthesias very common (tingling in fingers/toes)","warnings":["Also used for altitude sickness prophylaxis","Metabolic acidosis expected (bicarbonate supplementation if symptomatic)"],"overdose":"Also used for idiopathic intracranial hypertension","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-023","name":"Methazolamide","generic_name":"Ophthalmology - Glaucoma","drug_class":"Carbonic anhydrase inhibitor (oral)","drug_class_id":null,"drug_class_name":"Methazolamide","indications":["Open-angle glaucoma"],"contraindications":["Severe renal impairment"],"side_effects":["Metabolic acidosis","Hypokalemia","Paresthesias"],"dosage":{"adult":"25-50mg BID"},"interactions":["High-dose aspirin"],"monitoring":"K+","patient_counselling":"Carbonic anhydrase inhibitor with better ocular penetration than acetazolamide.","mechanism_of_action":"Neptazane","brand_names":["Bioavailability","t1/2 14h"],"pregnancy_category":"Longer half-life than acetazolamide (BID vs QID)","warnings":["Better ocular penetration","Less paresthesias than acetazolamide"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-024","name":"Brimonidine + timolol","generic_name":"Combigan","drug_class":"Alpha-2 agonist + beta-blocker (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Asthma/COPD","Sinus bradycardia"],"side_effects":["Ocular hyperemia","Bitter taste","Allergic conjunctivitis"],"dosage":{"adult":"1 drop BID"},"interactions":["MAOIs (contraindicated)"],"monitoring":"IOP","patient_counselling":"Fixed combination: reduces aqueous humor production via dual mechanism.","mechanism_of_action":"Combigan","brand_names":["Onset 1h"],"pregnancy_category":"BID dosing convenience~Dual mechanism better than monotherapy~Avoid in reactive airway disease","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-025","name":"Latanoprost + timolol","generic_name":"Fixtimal","drug_class":"Prostaglandin + beta-blocker (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Asthma/COPD","Sinus bradycardia"],"side_effects":["Iris pigmentation","Conjunctival hyperemia"],"dosage":{"adult":"1 drop once daily in evening"},"interactions":["MAOIs (contraindicated)"],"monitoring":"IOP","patient_counselling":"Fixed combination for maximum IOP reduction.","mechanism_of_action":"Fixtimal","brand_names":["Once daily","Dual mechanism","Iris pigmentation risk from latanoprost component"],"pregnancy_category":"C","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Oxybutynin","generic_name":"Oxybutynin","drug_class":"Antimuscarinic (anticholinergic)","drug_class_id":null,"drug_class_name":"Urology - Overactive bladder","indications":["Overactive bladder"],"contraindications":["Urinary retention","Uncontrolled narrow-angle glaucoma"],"side_effects":["Dry mouth (most common)","Constipation","Blurred vision","Drowsiness"],"dosage":{"adult":"5mg BID-TID (IR) or 5-10mg daily (XL)"},"interactions":["CYP3A4 inhibitors"],"monitoring":"None significant","patient_counselling":"Blocks M3 receptors on detrusor smooth muscle, reducing involuntary bladder contractions.","mechanism_of_action":"Ditropan","brand_names":["Bioavailability 6-30%","t1/2 2-3h"],"pregnancy_category":"IR: BID-TID dosing~XL: once daily (better tolerability)","warnings":["Patch: fewer GI effects than oral"],"overdose":"Also available as topical gel (Oxytrol)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Solifenacin","generic_name":"Solifenacin","drug_class":"Antimuscarinic (selective M3)","drug_class_id":null,"drug_class_name":"Urology - Overactive bladder","indications":["Overactive bladder"],"contraindications":["Urinary retention","Uncontrolled narrow-angle glaucoma"],"side_effects":["Dry mouth","Constipation","Blurred vision"],"dosage":{"adult":"5-10mg daily"},"interactions":["CYP3A4 inhibitors (increase levels)"],"monitoring":"None significant","patient_counselling":"Selective M3 muscarinic antagonist for bladder relaxation. Better GI tolerability than oxybutynin.","mechanism_of_action":"Vesicare","brand_names":["Bioavailability 90%","t1/2 45-68h"],"pregnancy_category":"Once daily dosing~Less dry mouth than oxybutynin~Long half-life allows once daily","warnings":["Also available with mirabegron (Vibegzon)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Fesoterodine","generic_name":"Urology - Antimuscarinics","drug_class":"Antimuscarinic (active metabolite of tolterodine)","drug_class_id":null,"drug_class_name":"Fesoterodine","indications":["Overactive bladder"],"contraindications":["Urinary retention","Uncontrolled narrow-angle glaucoma"],"side_effects":["Dry mouth","Constipation","Drowsiness"],"dosage":{"adult":"4-8mg daily"},"interactions":["CYP3A4 inhibitors (reduced to 4mg)"],"monitoring":"None significant","patient_counselling":"Prodrug converted to active metabolite (5-HMT) by esterases. Similar efficacy to tolterodine but more flexible dosing.","mechanism_of_action":"Toviaz","brand_names":["Bioavailability 52%","t1/2 7-8h (active metabolite 10-14h)"],"pregnancy_category":"Flexible dosing 4-8mg daily~Also available as ER formulation","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Darifenacin","generic_name":"Urology - Antimuscarinics","drug_class":"Antimuscarinic (M3-selective)","drug_class_id":null,"drug_class_name":"Darifenacin","indications":["Overactive bladder"],"contraindications":["Urinary retention","Uncontrolled narrow-angle glaucoma"],"side_effects":["Dry mouth","Constipation","Blurred vision"],"dosage":{"adult":"7.5mg daily, max 15mg daily"},"interactions":["CYP3A4/CYP2D6 inhibitors"],"monitoring":"None significant","patient_counselling":"Selective M3 receptor antagonist: most M3-selective antimuscarinic for OAB.","mechanism_of_action":"Enablex","brand_names":["Bioavailability 15-25%","t1/2 12-15h (active metabolite 17h)"],"pregnancy_category":"Most M3-selective antimuscarinic~CYP2D6 poor metabolizers: max 7.5mg","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Tolterodine","generic_name":"Urology - Antimuscarinics","drug_class":"Antimuscarinic","drug_class_id":null,"drug_class_name":"Tolterodine","indications":["Overactive bladder"],"contraindications":["Urinary retention","Uncontrolled narrow-angle glaucoma"],"side_effects":["Dry mouth","Constipation","Blurred vision"],"dosage":{"adult":"2mg BID (IR) or 4mg daily (XL)"},"interactions":["CYP2D6/3A4 inhibitors (reduce to 1mg BID)"],"monitoring":"None significant","patient_counselling":"Blocks muscarinic receptors on detrusor muscle. Active metabolite (5-HMT) also pharmacologically active.","mechanism_of_action":"Detrol","brand_names":["Bioavailability 30-55%","t1/2 2-4h (active metabolite 9-12h)"],"pregnancy_category":"IR: BID dosing; XL: once daily","warnings":["CYP2D6 poor metabolizers have higher levels","Also available with tolterodine LA (IM monthly)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Dutasteride","generic_name":"Dutasteride","drug_class":"5-alpha reductase inhibitor (dual type 1/2)","drug_class_id":null,"drug_class_name":"Urology - BPH","indications":["BPH (combination with tamsulosin)"],"contraindications":["Women and children (teratogenic)"],"side_effects":["Erectile dysfunction","Decreased libido","Gynecomastia"],"dosage":{"adult":"0.5mg daily"},"interactions":["CYP3A4 inhibitors"],"monitoring":"PSA (reduce by ~50%)","patient_counselling":"Dual 5-alpha reductase inhibitor (type 1 and 2): more complete DHT suppression than finasteride.","mechanism_of_action":"Avodart","brand_names":["Bioavailability 60%","t1/2 5 weeks (very long)"],"pregnancy_category":"Very long half-life: effects persist months after discontinuation","warnings":["Dual type 1+2 inhibition (vs finasteride type 2 only)"],"overdose":"Also combined with tamsulosin (Jalyn)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Alfuzosin","generic_name":"Urology - Alpha blockers","drug_class":"Alpha-1 blocker (uroselective)","drug_class_id":null,"drug_class_name":"Alfuzosin","indications":["BPH"],"contraindications":["Severe hepatic impairment"],"side_effects":["Orthostatic hypotension","Dizziness","Headache"],"dosage":{"adult":"10mg daily (ER)"},"interactions":["CYP3A4 inhibitors (avoid)"],"monitoring":"None significant","patient_counselling":"Uroselective alpha-1 antagonist with less effect on blood pressure.","mechanism_of_action":"Uroxatral","brand_names":["Bioavailability 49-64%","t1/2 8-10h"],"pregnancy_category":"Uroselective properties~Less orthostatic hypotension than non-selective alpha blockers","warnings":["10mg ER once daily"],"overdose":"Take with food","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Silodosin","generic_name":"Urology - Alpha blockers","drug_class":"Alpha-1A ultra-selective blocker","drug_class_id":null,"drug_class_name":"Silodosin","indications":["BPH"],"contraindications":["Severe hepatic impairment"],"side_effects":["Retrograde ejaculation (28%)","Orthostatic hypotension","Dizziness"],"dosage":{"adult":"8mg daily (with food)"},"interactions":["PDE5 inhibitors (additive hypotension)"],"monitoring":"None significant","patient_counselling":"Most alpha-1A selective blocker: highest rate of retrograde ejaculation but least orthostatic hypotension.","mechanism_of_action":"Rapaflo","brand_names":["Bioavailability 12.5%","t1/2 13-16h"],"pregnancy_category":"Most alpha-1A selective - retrograde ejaculation in 28% but usually tolerable","warnings":["Take with food and water"],"overdose":"No dose adjustment in renal impairment","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Doxazosin ER","generic_name":"Urology - Alpha blockers","drug_class":"Alpha-1 blocker ER","drug_class_id":null,"drug_class_name":"Doxazosin ER","indications":["BPH"],"contraindications":["Same as doxazosin IR"],"side_effects":["Same as IR"],"dosage":{"adult":"Same as IR"},"interactions":["4-8mg daily"],"monitoring":"Same as IR","patient_counselling":"None significant","mechanism_of_action":"Extended-release formulation for once-daily dosing.","brand_names":["Cardura XL"],"pregnancy_category":"t1/2 22h","warnings":["Once daily ER"],"overdose":"Start 4mg, titrate to 8mg","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Avanafil","generic_name":"Urology - PDE5 inhibitor","drug_class":"PDE5 inhibitor (most selective)","drug_class_id":null,"drug_class_name":"Avanafil","indications":["Erectile dysfunction"],"contraindications":["Nitrates (contraindicated)"],"side_effects":["Headache","Flushing","Nasal congestion","Back pain"],"dosage":{"adult":"50-200mg PRN"},"interactions":["Nitrates (contraindicated)"],"monitoring":"None significant","patient_counselling":"Most PDE5-selective inhibitor: fastest onset (15 min) and fewest visual side effects.","mechanism_of_action":"Stendra","brand_names":["Bioavailability 65%","t1/2 5h"],"pregnancy_category":"Fastest onset PDE5i (15 min)","warnings":["Fewest visual side effects"],"overdose":"Take 15-30 min before activity","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Vardenafil","generic_name":"Urology - PDE5 inhibitor","drug_class":"PDE5 inhibitor","drug_class_id":null,"drug_class_name":"Vardenafil","indications":["Erectile dysfunction"],"contraindications":["Nitrates (contraindicated)","QT prolongation"],"side_effects":["Headache","Flushing","Dizziness","QT prolongation"],"dosage":{"adult":"5-20mg PRN"},"interactions":["QT-prolonging drugs","Nitrates (contraindicated)"],"monitoring":"ECG (QTc)","patient_counselling":"PDE5 inhibitor. Also available as orally disintegrating tablet (Levitra ODT).","mechanism_of_action":"Levitra","brand_names":["Bioavailability 15%","t1/2 4-5h"],"pregnancy_category":"ODT formulation available (no water needed)","warnings":["QTc prolongation at high doses","Avoid with QT-prolonging drugs"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Oxybutynin topical","generic_name":"Urology - Antimuscarinics","drug_class":"Antimuscarinic (transdermal)","drug_class_id":null,"drug_class_name":"Oxybutynin topical","indications":["Overactive bladder"],"contraindications":["None significant"],"side_effects":["Application site reactions","Dry mouth (less than oral)"],"dosage":{"adult":"Apply to abdomen, upper arms, or buttocks daily"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Transdermal formulation: bypasses first-pass metabolism, reducing systemic side effects (especially dry mouth).","mechanism_of_action":"Oxytrol","brand_names":["Transdermal"],"pregnancy_category":"Less dry mouth than oral (27% vs 94%)~Apply to dry, intact skin~Change patch twice weekly","warnings":["Also available as topical gel"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Desmopressin nasal","generic_name":"Urology - Antidiuretic","drug_class":"Vasopressin analogue (nasal)","drug_class_id":null,"drug_class_name":"Desmopressin nasal","indications":["Nocturnal enuresis","Central diabetes insipidus"],"contraindications":["Hyponatremia"],"side_effects":["Hyponatremia","Headache"],"dosage":{"adult":"1-2 sprays at bedtime (enuresis)"},"interactions":["None significant"],"monitoring":"Sodium level","patient_counselling":"Nasal formulation: better absorption than oral for enuresis and DI.","mechanism_of_action":"DDAVP nasal","brand_names":["Bioavailability: nasal 3-5%"],"pregnancy_category":"Nasal spray for enuresis and DI","warnings":["More effective than oral for DI"],"overdose":"Monitor sodium","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-014","name":"Midodrine","generic_name":"Urology - Vasopressor","drug_class":"Alpha-1 agonist (prodrug)","drug_class_id":null,"drug_class_name":"Midodrine","indications":["Orthostatic hypotension"],"contraindications":["Severe supine hypertension"],"side_effects":["Supine hypertension","Piloerection","Urinary retention"],"dosage":{"adult":"2.5-10mg TID (take last dose before bed)"},"interactions":["None significant"],"monitoring":"BP (supine and standing)","patient_counselling":"Prodrug converted to desglymidodrine: alpha-1 agonist causing arterial/venous constriction.","mechanism_of_action":"ProAmatine","brand_names":["Bioavailability 93%","t1/2 25-30h (active metabolite 3.4h)"],"pregnancy_category":"Take during daytime only - last dose at least 4h before bedtime~Avoid supine position~Monitor supine BP","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Droxidopa","generic_name":"Urology - Vasopressor","drug_class":"Norepinephrine prodrug","drug_class_id":null,"drug_class_name":"Droxidopa","indications":["Neurogenic orthostatic hypotension (Parkinson's","MSA","POTS)"],"contraindications":["None significant"],"side_effects":["Supine hypertension","Headache","Nausea"],"dosage":{"adult":"100mg TID, titrate to max 600mg TID"},"interactions":["None significant"],"monitoring":"BP (supine and standing)","patient_counselling":"Prodrug converted to norepinephrine in vivo. Increases peripheral vascular resistance.","mechanism_of_action":"Northera","brand_names":["Bioavailability","t1/2 2-3h"],"pregnancy_category":"Take during daytime only~Avoid late evening dosing (supine hypertension)","warnings":["Also available in Japan/Europe"],"overdose":"For neurogenic orthostatic hypotension","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Ondansetron (PRV)","generic_name":"Urology - Antiemetic","drug_class":"5-HT3 antagonist (for nausea)","drug_class_id":null,"drug_class_name":"Ondansetron PRV","indications":["Chemotherapy-induced nausea"],"contraindications":["Concomitant apomorphine (contraindicated)"],"side_effects":["Headache","Constipation"],"dosage":{"adult":"4-8mg IV/PO"},"interactions":["See antiemetics section"],"monitoring":"See antiemetics section","patient_counselling":"See antiemetics section","mechanism_of_action":"See antiemetics section","brand_names":["See antiemetics section"],"pregnancy_category":"See antiemetics section","warnings":["See antiemetics section"],"overdose":"See antiemetics section","pharmacokinetics":"See antiemetics section","black_box_warnings":["See antiemetics section"],"clinical_pearls":["See antiemetics section"],"created_at":""},
+    {"id":"bulk-017","name":"Minoxidil","generic_name":"Dermatology - Hair growth","drug_class":"K+ channel opener (topical)","drug_class_id":null,"drug_class_name":"Minoxidil","indications":["Androgenetic alopecia (male/female)"],"contraindications":["None significant"],"side_effects":["Scalp irritation","Hypertrichosis (unwanted hair growth)","Dizziness"],"dosage":{"adult":"5% topical BID (men)~2-5% (women)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Opens ATP-sensitive potassium channels in hair follicles, prolonging anagen phase and stimulating growth.","mechanism_of_action":"Rogaine","brand_names":["Topical"],"pregnancy_category":"5% foam for men, 2% liquid for women~Apply BID to scalp~Results take 4-6 months~Hypertrichosis possible","warnings":["Also available as oral low-dose for refractory alopecia (off-label)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-018","name":"Spironolactone (topical)","generic_name":"Dermatology - Anti-androgen","drug_class":"Topical anti-androgen","drug_class_id":null,"drug_class_name":"Spironolactone topical","indications":["Female pattern hair loss"],"contraindications":["None significant"],"side_effects":["Contact dermatitis"],"dosage":{"adult":"Apply to affected areas BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical anti-androgen: blocks DHT receptor in hair follicle. Alternative to oral spironolactone.","mechanism_of_action":"Investigational","brand_names":["Topical"],"pregnancy_category":"For female pattern hair loss (topical formulation under investigation)","warnings":["Less systemic effects than oral spironolactone"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-019","name":"Cyproterone","generic_name":"Dermatology - Anti-androgen","drug_class":"Anti-androgen (progestogen)","drug_class_id":null,"drug_class_name":"Cyproterone","indications":["Severe hirsutism","Acne (with ethinyl estradiol)"],"contraindications":["Hepatic impairment","Meningioma"],"side_effects":["Hepatotoxicity","Hepatocellular carcinoma (rare)","Depression"],"dosage":{"adult":"50mg daily (with ethinyl estradiol in CPA/EE)"},"interactions":["None significant"],"monitoring":"LFTs","patient_counselling":"Competitive androgen receptor antagonist and progestogen. Blocks testosterone/DHT effects.","mechanism_of_action":"Androcur (not available US)","brand_names":["Bioavailability 60-80%"],"pregnancy_category":"Not available in US (hepatotoxicity concerns)","warnings":["Used in Europe for severe hirsutism and acne"],"overdose":"Combined with ethinyl estradiol as Dianette/Diane-35","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-020","name":"Eflornithine","generic_name":"Dermatology - Anti-hirsutism","drug_class":"Ornithine decarboxylase inhibitor (topical)","drug_class_id":null,"drug_class_name":"Eflornithine","indications":["Facial hirsutism (women)"],"contraindications":["None significant"],"side_effects":["Skin irritation","Acne","Folliculitis"],"dosage":{"adult":"Apply BID to affected facial areas"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Inhibits ornithine decarboxylase, reducing hair growth rate. Slows (does not remove) facial hair.","mechanism_of_action":"Vaniqa","brand_names":["Topical"],"pregnancy_category":"Apply BID - results take 8-24 weeks","warnings":["Slows hair growth (does not remove existing hair)"],"overdose":"Combine with other hair removal methods for best results","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-021","name":"Calcipotriene","generic_name":"Dermatology - Vitamin D analogue","drug_class":"Topical vitamin D analogue","drug_class_id":null,"drug_class_name":"Calcipotriene","indications":["Plaque psoriasis"],"contraindications":["None significant"],"side_effects":["Skin irritation","Calcium elevation (extensive use)"],"dosage":{"adult":"Apply BID to affected areas"},"interactions":["None significant"],"monitoring":"Calcium (if extensive use)","patient_counselling":"Synthetic vitamin D analogue: inhibits keratinocyte proliferation and promotes differentiation.","mechanism_of_action":"Dovonex","brand_names":["Topical"],"pregnancy_category":"Apply BID to affected areas~Calcium monitoring if >100g/week used~Also available as combination with betamethasone (Enstilar foam)","warnings":["Calcium elevation with extensive use"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-022","name":"Calcipotriene/betamethasone","generic_name":"Enstilar","drug_class":"Vitamin D analogue + corticosteroid (topical)","drug_class_id":null,"drug_class_name":"Dermatology - Combination","indications":["Plaque psoriasis"],"contraindications":["None significant"],"side_effects":["Skin atrophy (betamethasone component)","Irritation"],"dosage":{"adult":"Apply BID for up to 4 weeks"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Fixed combination: calcipotriene for keratinocyte normalization + betamethasone for anti-inflammation.","mechanism_of_action":"Enstilar","brand_names":["Topical"],"pregnancy_category":"Foam formulation: easy application","warnings":["Limit use to 4 weeks (corticosteroid component)"],"overdose":"Very effective combination for plaque psoriasis","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-023","name":"Tacrolimus (topical)","generic_name":"See dermatology section","drug_class":"See dermatology section","drug_class_id":null,"drug_class_name":"See dermatology section","indications":["See dermatology section"],"contraindications":["See dermatology section"],"side_effects":["See dermatology section"],"dosage":{"adult":"See dermatology section"},"interactions":["See dermatology section"],"monitoring":"See dermatology section","patient_counselling":"See dermatology section","mechanism_of_action":"See dermatology section","brand_names":["See dermatology section"],"pregnancy_category":"See dermatology section","warnings":["See dermatology section"],"overdose":"See dermatology section","pharmacokinetics":"See dermatology section","black_box_warnings":["See dermatology section"],"clinical_pearls":["See dermatology section"],"created_at":""},
+    {"id":"bulk-001","name":"Nateglinide","generic_name":"Nateglinide","drug_class":"Meglitinide","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes"],"contraindications":["DKA","Type 1 diabetes"],"side_effects":["Hypoglycemia","Weight gain"],"dosage":{"adult":"60-120mg before meals (max 360mg/day)"},"interactions":["NSAIDs","CYP2C9 inhibitors"],"monitoring":"Postprandial glucose","patient_counselling":"Stimulates rapid short-duration insulin release.","mechanism_of_action":"Starlix","brand_names":["Bioavailability 73%","t1/2 1.5h"],"pregnancy_category":"Fastest onset meglitinide~60mg for elderly","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Rosiglitazone","generic_name":"Rosiglitazone","drug_class":"Thiazolidinedione","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes (limited use)"],"contraindications":["NYHA III/IV HF","Active liver disease"],"side_effects":["Weight gain","Edema","HF exacerbation"],"dosage":{"adult":"4-8mg daily"},"interactions":["Gemfibrozil (increased exposure)","Rifampin"],"monitoring":"LFTs~Signs of HF","patient_counselling":"PPAR-gamma agonist: improves insulin sensitivity.","mechanism_of_action":"Avandia","brand_names":["Bioavailability 99%","CYP2C8"],"pregnancy_category":"Restricted due to MI risk~Rarely used now","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Linagliptin","generic_name":"Linagliptin","drug_class":"DPP-4 inhibitor (hepatoexcreted)","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes"],"contraindications":["Type 1 diabetes","DKA"],"side_effects":["Nasopharyngitis","URI"],"dosage":{"adult":"5mg daily (NO renal adjustment)"},"interactions":["Rifampin (reduced levels)"],"monitoring":"HbA1c","patient_counselling":"Hepatoexcreted DPP-4 inhibitor - no renal adjustment needed.","mechanism_of_action":"Tradjenta","brand_names":["Bioavailability 30%","t1/2 >100h","80% hepatic"],"pregnancy_category":"ONLY DPP-4i with no renal adjustment~Longest half-life~Ideal for CKD/dialysis","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Saxagliptin","generic_name":"Saxagliptin","drug_class":"DPP-4 inhibitor","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes"],"contraindications":["Type 1 diabetes","DKA"],"side_effects":["URI","UTI","Pancreatitis (rare)"],"dosage":{"adult":"2.5-5mg daily (2.5mg if eGFR <=45)"},"interactions":["CYP3A4/5 inhibitors (reduce to 2.5mg)"],"monitoring":"HbA1c","patient_counselling":"DPP-4 inhibitor prolonging incretin activity.","mechanism_of_action":"Onglyza","brand_names":["Bioavailability 67%","t1/2 2.5h","CYP3A4/5"],"pregnancy_category":"SAVOR-TIMI: HF signal~Renal dose adjustment required","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Alogliptin","generic_name":"Alogliptin","drug_class":"DPP-4 inhibitor","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes"],"contraindications":["Type 1 diabetes","DKA"],"side_effects":["URI","Headache"],"dosage":{"adult":"25mg daily (12.5mg eGFR 30-45, 6.25mg <30/dialysis)"},"interactions":["Strong CYP3A4 inducers"],"monitoring":"HbA1c","patient_counselling":"Highly selective DPP-4 inhibitor.","mechanism_of_action":"Nesina","brand_names":["Bioavailability 60-70%","t1/2 21h","Renal excretion"],"pregnancy_category":"Can use in dialysis at 6.25mg~Highly selective >10000x vs DPP-8/9","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Miglitol","generic_name":"Miglitol","drug_class":"Alpha-glucosidase inhibitor","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes"],"contraindications":["IBD","CrCl <25"],"side_effects":["Flatulence","Diarrhea","LFT elevation"],"dosage":{"adult":"25mg TID with meals (max 100mg TID)"},"interactions":["Digoxin (reduced absorption)","Neomycin"],"monitoring":"Postprandial glucose~LFTs","patient_counselling":"Inhibits alpha-glucosidases in small intestine.","mechanism_of_action":"Glyset","brand_names":["Minimal systemic absorption - local gut action"],"pregnancy_category":"Similar to acarbose~Less GI effects~Monitor LFTs","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Dofetilide","generic_name":"Dofetilide","drug_class":"Class III antiarrhythmic (pure K+ blocker)","drug_class_id":null,"drug_class_name":"Cardiovascular - Antiarrhythmics","indications":["AF/flutter conversion/maintenance"],"contraindications":["Baseline QTc >440ms","Severe renal impairment","Concomitant cimetidine"],"side_effects":["QT prolongation","Torsades de Pointes","Headache","Nausea"],"dosage":{"adult":"125-500mcg BID (renal adjusted)"},"interactions":["QT-prolonging drugs","Cimetidine (contraindicated)"],"monitoring":"ECG (QTc)~Electrolytes~Renal function","patient_counselling":"Pure class III antiarrhythmic: blocks rapid delayed rectifier K+ current (Ikr), prolonging repolarization.","mechanism_of_action":"Tikosyn","brand_names":["Bioavailability 90-100%","t1/2 10h","100% renal"],"pregnancy_category":"INITIATION ONLY in hospital with continuous telemetry~QTc >500ms: hold/reduce~Risk of Torsades~Most effective for AF conversion","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Lenvatinib","generic_name":"Lenvatinib","drug_class":"Multi-kinase inhibitor (VEGFR/FGFR/PDGFR)","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["Thyroid cancer","HCC","Endometrial cancer"],"contraindications":["Severe hepatic impairment"],"side_effects":["Hypertension","Diarrhea","Fatigue","Weight loss","Proteinuria"],"dosage":{"adult":"24mg daily (thyroid) or 8-12mg daily (HCC)"},"interactions":["Strong CYP3A4 inducers (avoid)","P-gp substrates"],"monitoring":"BP~Proteinuria~LFTs~Weight","patient_counselling":"Inhibits VEGFR1-3, FGFR1-4, PDGFR, RET, KIT. Broader FGFR inhibition than other TKIs.","mechanism_of_action":"Lenvima","brand_names":["Bioavailability 59-72%","t1/2 28h","CYP3A4/P-gp"],"pregnancy_category":"Hypertension very common (68%)~Proteinuria monitor~Unique FGFR inhibition~Combination with pembrolizumab for endometrial","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Cabozantinib","generic_name":"Cabozantinib","drug_class":"Multi-kinase inhibitor (VEGFR2/MET/AXL)","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["HCC","RCC","Medullary thyroid cancer"],"contraindications":["Severe hepatic impairment"],"side_effects":["Diarrhea","Palmar-plantar erythrodysesthesia","Fatigue","Weight loss","Hypertension"],"dosage":{"adult":"60mg daily (HCC) or 140mg daily (RCC/MTC)"},"interactions":["Strong CYP3A4 inducers (avoid)"],"monitoring":"LFTs~BP~Proteinuria","patient_counselling":"Inhibits VEGFR2, MET, AXL, RET, KIT. Dual VEGFR/MET inhibition overcomes resistance.","mechanism_of_action":"Cabometyx","brand_names":["Bioavailability","t1/2 99h","CYP3A4"],"pregnancy_category":"Long half-life~Hypertension and diarrhea most common~MET inhibition overcomes resistance","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Pazopanib","generic_name":"Pazopanib","drug_class":"VEGFR/PDGFR/KIT inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["RCC","Soft tissue sarcoma"],"contraindications":["QT prolongation","Hepatic impairment"],"side_effects":["Hypertension","Diarrhea","Hair color change","Hepatotoxicity","Fatigue"],"dosage":{"adult":"800mg daily (empty stomach)"},"interactions":["CYP3A4 inducers (reduce levels)","Grapefruit (avoid)"],"monitoring":"LFTs weekly x4 then q2-4w~BP~ECG (QTc)","patient_counselling":"Inhibits VEGFR1-3, PDGFR, KIT. Anti-angiogenic TKI.","mechanism_of_action":"Votrient","brand_names":["Bioavailability","t1/2 31h","CYP3A4"],"pregnancy_category":"Take 1h before or 2h after food~Hepatotoxicity monitoring essential~Hair depigmentation unique~QTc prolongation","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Levalbuterol","generic_name":"Levalbuterol","drug_class":"Beta-2 agonist (active R-enantiomer)","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["Acute bronchospasm","Exercise-induced bronchospasm"],"contraindications":["Hypersensitivity to albuterol"],"side_effects":["Tachycardia","Tremor","Hypokalemia","Palpitations"],"dosage":{"adult":"0.63-1.25mg nebulizer TID-QID or 45-90mcg MDI"},"interactions":["Beta-blockers (antagonize effect)"],"monitoring":"HR~K+","patient_counselling":"Active R-enantiomer of albuterol. May have less cardiac effects than racemic albuterol.","mechanism_of_action":"Xopenex","brand_names":["Onset 5-15 min","Duration 6-8h"],"pregnancy_category":"R-enantiomer theoretically fewer side effects~More expensive than albuterol~Similar efficacy to albuterol","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Ipratropium","generic_name":"Ipratropium","drug_class":"Anticholinergic (SAMA)","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["COPD","Acute bronchospasm"],"contraindications":["Hypersensitivity to atropine"],"side_effects":["Dry mouth","Urinary retention","Blurred vision"],"dosage":{"adult":"2 puffs QID (MDI) or 0.5mg nebulizer QID-Q6H"},"interactions":["Anticholinergics (additive)"],"monitoring":"None significant","patient_counselling":"Blocks M3 muscarinic receptors in bronchial smooth muscle, causing bronchodilation.","mechanism_of_action":"Atrovent","brand_names":["Onset 15-30 min","Duration 4-6h"],"pregnancy_category":"Longer acting than SABAs for COPD~Less effective than SABAs in asthma~Can combine with albuterol","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Olodaterol","generic_name":"Olodaterol","drug_class":"Long-acting beta-2 agonist (LABA)","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["COPD maintenance","Asthma (with ICS)"],"contraindications":["Severe bradycardia","2nd/3rd degree block"],"side_effects":["Tachycardia","Tremor","Hypokalemia","Palpitations"],"dosage":{"adult":"5mcg inhaled daily (Respimat)"},"interactions":["CYP3A4 inhibitors","Beta-blockers"],"monitoring":"HR~K+","patient_counselling":"Once-daily LABA with 24h duration. Beta-2 selective agonist.","mechanism_of_action":"Striverdi","brand_names":["Onset 5 min","Duration 24h"],"pregnancy_category":"Once daily LABA~Must use with ICS in asthma~Respimat soft mist inhaler","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Indacaterol","generic_name":"Indacaterol","drug_class":"Once-daily LABA","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["COPD maintenance"],"contraindications":["Severe bradycardia"],"side_effects":["Cough","Headache","Nasopharyngitis","Hyperglycemia"],"dosage":{"adult":"75-300mcg inhaled daily"},"interactions":["CYP3A4 inhibitors"],"monitoring":"HR~Glucose","patient_counselling":"Once-daily LABA with 24h duration. Ultra-long acting.","mechanism_of_action":"Arcapta","brand_names":["Onset 5 min","Duration 24h"],"pregnancy_category":"Once daily LABA~COPD only (not asthma)~Good for once daily adherence","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Aclidinium","generic_name":"Aclidinium","drug_class":"Long-acting anticholinergic (LAMA)","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["COPD maintenance"],"contraindications":["Hypersensitivity to atropine"],"side_effects":["Dry mouth","Constipation","Urinary retention"],"dosage":{"adult":"400mcg inhaled BID"},"interactions":["Anticholinergics (additive)"],"monitoring":"None significant","patient_counselling":"Twice-daily LAMA for COPD bronchodilation.","mechanism_of_action":"Tudorza","brand_names":["Onset 15-30 min","Duration 12h"],"pregnancy_category":"Twice daily LAMA~Dry mouth less than tiotropium~DPI formulation","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Glycopyrrolate inhalation","generic_name":"Glycopyrronium bromide (inhalation)","drug_class":"Long-acting anticholinergic (LAMA)","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["COPD maintenance"],"contraindications":["Hypersensitivity to atropine"],"side_effects":["Dry mouth","Urinary retention"],"dosage":{"adult":"50mcg inhaled BID (Bevespi) or 12.5mcg BID (Seebri) or 9mcg daily (Incruse)"},"interactions":["Anticholinergics"],"monitoring":"None significant","patient_counselling":"LAMA available as combination (Bevespi = glycopyrrolate/formoterol) or monotherapy.","mechanism_of_action":"Incruse Ellipta~Bevespi Aerosphere","brand_names":["Onset 5-15 min","Duration 12-24h"],"pregnancy_category":"Available as monotherapy or LABA/LAMA combo~Also used IV for secretions (different formulation)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Zafirlukast","generic_name":"Zafirlukast","drug_class":"Leukotriene receptor antagonist","drug_class_id":null,"drug_class_name":"Respiratory - Leukotriene modifiers","indications":["Asthma (adjunct)"],"contraindications":["None significant"],"side_effects":["Headache","GI upset","Elevated LFTs"],"dosage":{"adult":"20mg BID"},"interactions":["Warfarin (increased INR 35%)","CYP3A4 inhibitors"],"monitoring":"LFTs","patient_counselling":"Blocks cysteinyl leukotriene receptor CysLT1.","mechanism_of_action":"Accolate","brand_names":["Bioavailability","t1/2 10h","CYP2C9/3A4"],"pregnancy_category":"Take on empty stomach~Monitor LFTs~Drug interaction with warfarin","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Zileuton","generic_name":"Zileuton","drug_class":"5-lipoxygenase inhibitor","drug_class_id":null,"drug_class_name":"Respiratory - Leukotriene modifiers","indications":["Asthma (adjunct)"],"contraindications":["Active liver disease","Elevated LFTs"],"side_effects":["Elevated LFTs (1-2% hepatitis)","Headache","Nausea"],"dosage":{"adult":"600mg QID"},"interactions":["Theophylline (increases levels 45%)","Warfarin (increases INR)"],"monitoring":"LFTs at baseline, monthly x3, then periodically","patient_counselling":"Inhibits 5-lipoxygenase enzyme, blocking leukotriene synthesis (not just receptor blockade).","mechanism_of_action":"Zyflo","brand_names":["Bioavailability","t1/2 2.1h","CYP1A2/3A4"],"pregnancy_category":"Take with food~Monitor LFTs monthly~Hepatotoxicity risk~QID dosing disadvantage","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Ambroxol","generic_name":"Ambroxol","drug_class":"Mucolytic (bromhexine metabolite)","drug_class_id":null,"drug_class_name":"Respiratory - Mucolytics","indications":["Productive cough with viscous mucus"],"contraindications":["None significant"],"side_effects":["GI upset","Rash"],"dosage":{"adult":"30mg TID (oral) or 15-30mg nebulizer TID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Mucolytic agent: reduces mucus viscosity by activating surfactant production and lysosomal enzymes.","mechanism_of_action":"Mucosolvan","brand_names":["Bioavailability 10-20%","t1/2 10h"],"pregnancy_category":"More effective than bromhexine~Reduces mucus viscosity~Also has local anesthetic effect","warnings":["Not available in US"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Benzonatate","generic_name":"Benzonatate","drug_class":"Non-narcotic antitussive","drug_class_id":null,"drug_class_name":"Respiratory - Antitussives","indications":["Cough"],"contraindications":["None significant"],"side_effects":["Drowsiness","Dizziness","GI upset","Seizures (overdose)"],"dosage":{"adult":"100-200mg TID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Suppresses cough by anesthetizing stretch receptors in pulmonary inflation reflex pathway.","mechanism_of_action":"Tessalon","brand_names":["Onset 15-20 min","Duration 3-8h"],"pregnancy_category":"Do not chew/crush - risk of fatal local anesthesia of oropharynx","warnings":["Starts working in 15-20 min"],"overdose":"Avoid in children <10 (capsule aspiration risk)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Dextromethorphan","generic_name":"Dextromethorphan","drug_class":"Sigma-1 receptor agonist/NMDA antagonist","drug_class_id":null,"drug_class_name":"Respiratory - Antitussives","indications":["Cough"],"contraindications":["MAOIs (contraindicated 2 weeks)"],"side_effects":["Drowsiness","Dizziness","Nausea","Serotonin syndrome (with SSRIs)"],"dosage":{"adult":"10-30mg q4-6h (max 120mg/day)"},"interactions":["MAOIs (contraindicated)","SSRIs/SNRIs (serotonin syndrome)","Quinidine (CYP2D6 inhibitor)"],"monitoring":"None significant","patient_counselling":"Suppresses cough center in medulla via sigma-1 receptor agonism. NMDA antagonist at high doses.","mechanism_of_action":"Robitussin DM~Delsym","brand_names":["t1/2 2-4h"],"pregnancy_category":"MAOIs absolutely contraindicated~Quinidine increases levels 10x (use therapeutically in pseudobulbar affect)","warnings":["Common in OTC products - check interactions"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Pseudoephedrine","generic_name":"Pseudoephedrine","drug_class":"Sympathomimetic (alpha/beta agonist)","drug_class_id":null,"drug_class_name":"Respiratory - Decongestants","indications":["Nasal congestion"],"contraindications":["Severe hypertension","MAOIs"],"side_effects":["Insomnia","Tachycardia","Hypertension","Anxiety"],"dosage":{"adult":"30-60mg q4-6h (max 240mg/day)"},"interactions":["MAOIs (hypertensive crisis)","Beta-blockers (paradoxical hypertension)"],"monitoring":"BP~HR","patient_counselling":"Alpha-1 and beta agonist: causes vasoconstriction in nasal mucosa reducing edema and congestion.","mechanism_of_action":"Sudafed","brand_names":["Bioavailability 50-75%","t1/2 4-8h","Renal excretion"],"pregnancy_category":"Behind pharmacy counter (pseudoephedrine law)~Avoid in uncontrolled hypertension~May worsen urinary retention in BPH~Can cause insomnia","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Oxymetazoline","generic_name":"Oxymetazoline","drug_class":"Topical alpha-1 agonist (decongestant)","drug_class_id":null,"drug_class_name":"Respiratory - Decongestants","indications":["Nasal congestion"],"contraindications":["None significant"],"side_effects":["Rebound congestion (rhinitis medicamentosa)"],"dosage":{"adult":"2-3 sprays per nostril BID x3-5 days (max)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical alpha-1 agonist: potent vasoconstriction in nasal mucosa. Do not use >3-5 days to avoid rebound congestion.","mechanism_of_action":"Afrin","brand_names":["Onset 5-10 min","Duration 12h"],"pregnancy_category":"Do NOT use >3-5 days - rebound congestion (rhinitis medicamentosa)","warnings":["Most effective topical decongestant"],"overdose":"Avoid in hypertension","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-014","name":"Xylometazoline","generic_name":"Xylometazoline","drug_class":"Topical alpha-1 agonist (decongestant)","drug_class_id":null,"drug_class_name":"Respiratory - Decongestants","indications":["Nasal congestion"],"contraindications":["None significant"],"side_effects":["Rebound congestion"],"dosage":{"adult":"1 spray per nostril BID x3-5 days"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical nasal decongestant. Similar to oxymetazoline.","mechanism_of_action":"Otrivin","brand_names":["Onset 5-10 min","Duration 6-10h"],"pregnancy_category":"Do NOT use >5 days","warnings":["Less potent than oxymetazoline"],"overdose":"Used for nasal congestion and sinusitis","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Cromolyn","generic_name":"Cromolyn sodium","drug_class":"Mast cell stabilizer","drug_class_id":null,"drug_class_name":"Respiratory - Anti-inflammatory","indications":["Asthma prophylaxis","Allergic rhinitis","Food allergy prevention"],"contraindications":["None significant"],"side_effects":["Nausea","Cough","Throat irritation"],"dosage":{"adult":"2 puffs QID (MDI) or 100mg nebulizer QID or nasal spray QID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Prevents mast cell degranulation and histamine release. Must be used prophylactically - not rescue.","mechanism_of_action":"Gastrocrom (oral)~NasalCrom (nasal)","brand_names":["Onset 2-4 weeks for full effect"],"pregnancy_category":"Preventive only - not for acute symptoms~Must use QID dosing~Very safe profile~Take 15-20 min before exercise or allergen exposure","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Nedocromil","generic_name":"Nedocromil","drug_class":"Mast cell stabilizer","drug_class_id":null,"drug_class_name":"Respiratory - Anti-inflammatory","indications":["Asthma prophylaxis"],"contraindications":["None significant"],"side_effects":["Headache","Nausea","Unpleasant taste"],"dosage":{"adult":"2 puffs BID-QID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Inhibits mast cell degranulation and inflammatory cell activation.","mechanism_of_action":"Tilade","brand_names":["Onset 2-4 weeks"],"pregnancy_category":"Similar to cromolyn~BID dosing advantage~Less commonly used~Not for acute symptoms","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-017","name":"Aminophylline","generic_name":"Aminophylline","drug_class":"Theophylline ethylenediamine","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["Status asthmaticus (adjunct)","COPD"],"contraindications":["Same as theophylline"],"side_effects":["Same as theophylline"],"dosage":{"adult":"Loading: 6mg/kg IV over 20-30min, then 0.5mg/kg/h (renal adjust)"},"interactions":["Same as theophylline"],"monitoring":"Theophylline levels","patient_counselling":"IV aminophylline (79% theophylline by weight). Used when oral theophylline not feasible.","mechanism_of_action":"Somophyllin","brand_names":["Loading = theophylline dose x 1.27"],"pregnancy_category":"Convert aminophylline to theophylline by multiplying by 0.79","warnings":["IV formulation for acute situations"],"overdose":"Loading dose based on ideal body weight","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Mianserin","generic_name":"Mianserin","drug_class":"NaSSA (noradrenergic and specific serotonergic)","drug_class_id":null,"drug_class_name":"Neurology - Antidepressants","indications":["Major depressive disorder","Insomnia"],"contraindications":["MAOIs (contraindicated)"],"side_effects":["Sedation","Weight gain","Dry mouth","Agranulocytosis (rare)"],"dosage":{"adult":"30-90mg daily (start 30mg)"},"interactions":["MAOIs","CYP2D6 substrates"],"monitoring":"CBC if infection signs","patient_counselling":"Alpha-2 antagonist and 5-HT2/5-HT3 antagonist. Similar to mirtazapine but more agranulocytosis risk.","mechanism_of_action":"Tolvon","brand_names":["Bioavailability 30%","t1/2 10-50h"],"pregnancy_category":"Not available in US~More agranulocytosis risk than mirtazapine~Used in UK/Europe/Australia","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Vortioxetine","generic_name":"Vortioxetine","drug_class":"Multimodal antidepressant","drug_class_id":null,"drug_class_name":"Neurology - Antidepressants","indications":["Major depressive disorder"],"contraindications":["MAOIs (contraindicated)"],"side_effects":["Nausea (most common)","Headache","Dizziness","Sexual dysfunction"],"dosage":{"adult":"5-20mg daily"},"interactions":["CYP2D6 inhibitors (reduce dose to 5mg)"],"monitoring":"None significant","patient_counselling":"Multimodal mechanism: SERT inhibition + 5-HT1A agonism + 5-HT1B partial agonism + 5-HT3/5-HT7/5-HT1D antagonism. Pro-cognitive effects.","mechanism_of_action":"Trintellix","brand_names":["Bioavailability 75%","t1/2 66h","CYP2D6/CYP3A4"],"pregnancy_category":"Nausea most common (30%) - take with food~Pro-cognitive benefits unique~Less sexual dysfunction than SSRIs","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Lurasidone","generic_name":"Lurasidone","drug_class":"Second-generation antipsychotic (SGA)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia","Bipolar depression"],"contraindications":["Concomitant CYP3A4 inhibitors + strong CYP2D6 inhibitors"],"side_effects":["Nausea","Akathisia","Extrapyramidal symptoms","Somnolence"],"dosage":{"adult":"40-80mg daily (with food)"},"interactions":["Strong CYP3A4 inhibitors (ketoconazole - contraindicated)","CYP3A4 inducers (reduces levels)"],"monitoring":"LFTs~Weight~Glucose~Lipids~Movement disorders","patient_counselling":"D2 and 5-HT2A antagonism. Also 5-HT7 antagonist (may improve cognition and depression).","mechanism_of_action":"Latuda","brand_names":["Bioavailability 9-19%","t1/2 18h","CYP3A4"],"pregnancy_category":"Must take with food (increases absorption 50%)~Less weight gain/ metabolic effects than olanzapine/quetiapine~5-HT7 antagonism unique","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Aripiprazole lauroxil","generic_name":"Aripiprazole lauroxil","drug_class":"Long-acting injectable SGA","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia maintenance"],"contraindications":["Hypersensitivity"],"side_effects":["Akathisia","Weight gain"],"dosage":{"adult":"441-1064mg IM monthly or 882mg q2 months"},"interactions":["Strong CYP3A4/2D6 inhibitors"],"monitoring":"Weight~Movement disorders","patient_counselling":"Long-acting prodrug of aripiprazole. Monthly or bimonthly injection for adherence.","mechanism_of_action":"Aristada","brand_names":["t1/2 15-22 days (lauroxil metabolite)"],"pregnancy_category":"Every 1-2 months injection~No daily oral required~Must have tolerated oral aripiprazole first~Initiate with oral aripiprazole overlap","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Quetiapine XR","generic_name":"Quetiapine XR","drug_class":"Second-generation antipsychotic (extended-release)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia","Bipolar depression","Adjunct MDD (150-300mg)"],"contraindications":["Same as IR quetiapine"],"side_effects":["Same as IR"],"dosage":{"adult":"150-800mg daily (evening)"},"interactions":["Same as IR"],"monitoring":"Same as IR","patient_counselling":"Same mechanism. XR formulation for once-daily dosing.","mechanism_of_action":"Seroquel XR","brand_names":["Same as IR"],"pregnancy_category":"XR: once daily dosing~Less peak-related side effects~For bipolar depression: 300-600mg XR","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Olanzapine pamoate LAI","generic_name":"Olanzapine pamoate","drug_class":"Long-acting injectable SGA","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia maintenance"],"contraindications":["Concomitant parenteral benzodiazepines (1h window)"],"side_effects":["Somnolence","Weight gain","Injection site reactions"],"dosage":{"adult":"210-405mg IM monthly (adjusted by oral dose)"},"interactions":["Same as oral olanzapine"],"monitoring":"Weight~Glucose~Lipids","patient_counselling":"IM depot formulation of olanzapine. Risk of post-injection delirium/sedation syndrome (PDSS).","mechanism_of_action":"Zyprexa Relhyprev","brand_names":["Onset 2-24h","Duration monthly"],"pregnancy_category":"Post-injection delirium/sedation syndrome (PDSS) - must observe 3h after injection~Do not co-administer IM benzodiazepines within 1h","warnings":["FDA REMS program"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Ziprasidone","generic_name":"Ziprasidone","drug_class":"Second-generation antipsychotic","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia","Bipolar disorder"],"contraindications":["Congenital QT prolongation","Recent acute MI"],"side_effects":["QT prolongation","Nausea","Dizziness","Extrapyramidal symptoms"],"dosage":{"adult":"40-80mg BID (with food)"},"interactions":["Drugs that prolong QT","CYP3A4 inhibitors"],"monitoring":"ECG (QTc)~Electrolytes","patient_counselling":"D2 and 5-HT2A antagonism with relatively balanced receptor profile. Less metabolic effects.","mechanism_of_action":"Geodon","brand_names":["Bioavailability 60%","t1/2 7h","CYP3A4"],"pregnancy_category":"Must take with food (doubles absorption)~ECG baseline and as clinically indicated~QTc prolongation~Less metabolic effects than olanzapine/quetiapine","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Thioridazine","generic_name":"Thioridazine","drug_class":"First-generation antipsychotic (low potency)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia (limited use)"],"contraindications":["QT prolongation","Concomitant QT drugs"],"side_effects":["QT prolongation (dose-dependent)","Tardive dyskinesia","Anticholinergic effects"],"dosage":{"adult":"150-800mg daily"},"interactions":["QT-prolonging drugs","CYP2D6 inhibitors"],"monitoring":"ECG (QTc)","patient_counselling":"Blocks D2 receptors with strong anticholinergic and antihistamine properties. High QTc risk.","mechanism_of_action":"Mellaril","brand_names":["Bioavailability 40%","t1/2 24h","CYP2D6"],"pregnancy_category":"Significant QTc prolongation - limited use~Tardive dyskinesia risk~Avoid in elderly (Beers criteria)","warnings":["Use only when alternatives fail"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Flupentixol","generic_name":"Flupentixol","drug_class":"First-generation antipsychotic (thioxanthene)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia (maintenance)"],"contraindications":["Agranulocytosis history"],"side_effects":["EPS","Tardive dyskinesia","Anticholinergic effects"],"dosage":{"adult":"1-20mg daily or 20-40mg IM monthly"},"interactions":["QT-prolonging drugs"],"monitoring":"Movement disorders","patient_counselling":"Thioxanthene derivative with D2 antagonism. Depot injection available.","mechanism_of_action":"Fluanxol~Depixol","brand_names":["t1/2 35h (decanoate)"],"pregnancy_category":"Monthly depot injection available~Less commonly used outside UK/Europe","warnings":["Low-dose (1-3mg) used for anxiety/depression in some countries"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Fluphenazine","generic_name":"Fluphenazine","drug_class":"First-generation antipsychotic (high potency phenothiazine)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia maintenance"],"contraindications":["Parkinson's disease"],"side_effects":["EPS","Tardive dyskinesia","NMS","QT prolongation"],"dosage":{"adult":"2.5-10mg daily or 12.5-50mg IM every 2-3 weeks"},"interactions":["CYP2D6 inhibitors"],"monitoring":"Movement disorders~ECG","patient_counselling":"Potent D2 antagonist. Available as long-acting decanoate for monthly injections.","mechanism_of_action":"Prolixin~Prolixin decanoate","brand_names":["t1/2 14-20h (decanoate 14-36 days)"],"pregnancy_category":"Decanoate: every 2-3 weeks IM~High EPS risk~Older phenothiazine","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Chlorpromazine","generic_name":"Chlorpromazine","drug_class":"First-generation antipsychotic (low potency phenothiazine)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia","Nausea/vomiting","Hiccups","Agitation"],"contraindications":["Coma","Bone marrow depression"],"side_effects":["Sedation","Hypotension","Anticholinergic","EPS","QT prolongation"],"dosage":{"adult":"25-200mg TID (PO) or 25-50mg IM/IV"},"interactions":["MAOIs","Tricyclics","Barbiturates","QT drugs"],"monitoring":"ECG~WBC","patient_counselling":"Low-potency D2 antagonist with strong alpha-1, M1, H1 blockade. Sedation and hypotension limit use.","mechanism_of_action":"Thorazine","brand_names":["Bioavailability 30-50%","t1/2 16-30h","CYP2D6"],"pregnancy_category":"Most sedating FGAs~Strong alpha-1 blockade causes orthostatic hypotension~Antiemetic at low doses~Phenothiazine class","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Linezolid","generic_name":"Linezolid","drug_class":"Oxazolidinone antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Oxazolidinones","indications":["MRSA pneumonia","VRE infections","Complicated skin infections"],"contraindications":["None significant (serotonin syndrome with serotonergic drugs)"],"side_effects":["Thrombocytopenia","Peripheral neuropathy","Optic neuritis","Serotonin syndrome (with SSRIs)"],"dosage":{"adult":"600mg IV/PO q12h"},"interactions":["Serotonergic drugs (SSRIs","MAOIs - serotonin syndrome)"],"monitoring":"CBC weekly~Visual acuity if >2 weeks","patient_counselling":"Inhibits 50S ribosomal subunit, preventing initiation of protein synthesis. Bacteriostatic (bactericidal vs some).","mechanism_of_action":"Zyvox","brand_names":["Bioavailability 100%","t1/2 5h","Non-CYP"],"pregnancy_category":"Serotonin syndrome risk with serotonergic drugs~Myelosuppression monitor weekly~Lactic acidosis (mitochondrial toxicity)~Optic/peripheral neuropathy with prolonged use","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Oritavancin","generic_name":"Oritavancin","drug_class":"Lipoglycopeptide antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Glycopeptides","indications":["ABSSSI"],"contraindications":["None significant"],"side_effects":["Nausea","Hypokalemia","Infusion reactions"],"dosage":{"adult":"Single dose 1200mg IV (or 800mg + 400mg on day 8)"},"interactions":["Warfarin (transient INR increase)"],"monitoring":"None significant","patient_counselling":"Lipoglycopeptide with long half-life allowing single-dose treatment. Inhibits cell wall synthesis and disrupts membrane integrity.","mechanism_of_action":"Orbactiv","brand_names":["t1/2 245h (extremely long)"],"pregnancy_category":"Single-dose treatment for ABSSSI~Extremely long half-life~Inhibits cell wall + disrupts membrane~Transient coagulopathy","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Dalbavancin","generic_name":"Dalbavancin","drug_class":"Lipoglycopeptide antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Glycopeptides","indications":["ABSSSI"],"contraindications":["None significant"],"side_effects":["Nausea","Headache","Diarrhea"],"dosage":{"adult":"Single dose 1500mg IV (or 1000mg + 500mg on day 8)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Lipoglycopeptide with once-weekly dosing. Long half-life allows weekly administration.","mechanism_of_action":"Dalvance","brand_names":["t1/2 346h (14 days)"],"pregnancy_category":"Once weekly dosing~Treats ABSSSI in 1-2 doses~Long-acting glycopeptide","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Trimetrexate","generic_name":"Trimetrexate","drug_class":"Dihydrofolate reductase inhibitor","drug_class_id":null,"drug_class_name":"Anti-infectives - Antifolates","indications":["PCP (Pneumocystis pneumonia) - alternative"],"contraindications":["Severe renal impairment"],"side_effects":["Neutropenia","Thrombocytopenia","Mucositis"],"dosage":{"adult":"45mg/m2 IV q24h x 21 days (with leucovorin)"},"interactions":["TMP-SMX (additive toxicity)","Dapsone","Phenytoin"],"monitoring":"CBC~LFTs","patient_counselling":"DHFRI used with leucovorin rescue for PCP in TMP-SMX intolerant patients.","mechanism_of_action":"Neutrexin","brand_names":["t1/2 12-15h"],"pregnancy_category":"Requires leucovorin rescue to protect normal cells~Alternative for TMP-SMX-intolerant PCP~Bone marrow suppressive","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Atovaquone","generic_name":"Atovaquone","drug_class":"Hydroxynaphthoquinone antiparasitic","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiparasitics","indications":["PCP prevention and treatment","Malaria prophylaxis"],"contraindications":["None significant"],"side_effects":["GI upset","Rash","Headache","Elevated LFTs"],"dosage":{"adult":"PCP treatment: 750mg BID with food. Prophylaxis: 1500mg daily with food."},"interactions":["Rifampin (reduces levels 50%)","Tetracycline (reduces levels)"],"monitoring":"LFTs","patient_counselling":"Inhibits mitochondrial electron transport at complex III. High-fat meal increases absorption.","mechanism_of_action":"Mepron (PCP)~Malarone (malaria)","brand_names":["Bioavailability","47%","t1/2 2.2-3.3 days"],"pregnancy_category":"Must take with fatty food for absorption~Very long half-life~Alternative to TMP-SMX for PCP","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Atovaquone/proguanil","generic_name":"Malarone (atovaquone 250mg/proguanil 100mg)","drug_class":"Antimalarial combination","drug_class_id":null,"drug_class_name":"Anti-infectives - Antimalarials","indications":["Malaria prophylaxis","Treatment of P. falciparum"],"contraindications":["Severe renal impairment (CrCl <30)"],"side_effects":["Abdominal pain","Nausea","Vomiting","Headache"],"dosage":{"adult":"Prophylaxis: 1 tablet daily starting 1-2 days before travel. Treatment: 4 tablets daily x3 days."},"interactions":["Warfarin (increased effect)"],"monitoring":"Renal function for proguanil component","patient_counselling":"Atovaquone inhibits mitochondrial electron transport. Proguanil inhibits dihydrofolate reductase. Synergistic antimalarial.","mechanism_of_action":"Malarone","brand_names":["Bioavailability: atovaquone 26% (increased with food)"],"pregnancy_category":"Take with food~Start 1-2 days before travel, continue 4 weeks after~One of best tolerated malaria prophylaxis","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Colistin (polymyxin E)","generic_name":"Colistin","drug_class":"Polymyxin antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Polymyxins","indications":["MDR Gram-negative infections (last resort)"],"contraindications":["None significant"],"side_effects":["Nephrotoxicity (dose-limiting)","Neurotoxicity (paresthesias)"],"dosage":{"adult":"IM/IV: 2.5-5mg/kg/day in divided doses. Inhaled: 75-150mg BID."},"interactions":["Nephrotoxic drugs (additive)"],"monitoring":"Renal function daily~BUN/Cr~Neuro symptoms","patient_counselling":"Disrupts Gram-negative outer membrane by binding LPS, causing cell death. Concentration-dependent killing.","mechanism_of_action":"Coly-Mycin M","brand_names":["t1/2 2h","Nephrotoxic"],"pregnancy_category":"Nephrotoxicity is dose-limiting~Monitor renal function daily~Inhaled form for lung infections (Pseudomonas in CF/ventilator pneumonia)~Last resort for MDR Gram-negatives","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Fosfomycin","generic_name":"Fosfomycin","drug_class":"Phosphonic acid antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Other","indications":["Uncomplicated UTI","VRE infections (combination)"],"contraindications":["None significant"],"side_effects":["Diarrhea","Nausea","Headache"],"dosage":{"adult":"UTI: 3g single dose PO. IV: for serious infections."},"interactions":["Metoclopramide (reduces absorption)"],"monitoring":"None significant","patient_counselling":"Unique mechanism: inhibits MurA (cell wall synthesis). Broad-spectrum. Low resistance development.","mechanism_of_action":"Monurol (PO)","brand_names":["Bioavailability 37-55%","t1/2 2-3h"],"pregnancy_category":"Single-dose UTI treatment~3g in water~Also available IV (investigational in US)~Synergistic with beta-lactams~Low resistance development","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Fosfomycin/tobramycin","generic_name":"Xartemis (investigational)","drug_class":"Combination antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Other","indications":["Complicated UTI"],"contraindications":["Renal impairment"],"side_effects":["Nephrotoxicity (tobramycin component)"],"dosage":{"adult":"IV combination for complicated UTI"},"interactions":["Nephrotoxic/ototoxic drugs (additive tobramycin)"],"monitoring":"Tobramycin levels~Renal function","patient_counselling":"Fosfomycin + tobramycin: synergistic activity against MDR Gram-negatives.","mechanism_of_action":"Investigational","brand_names":["Requires TDM for tobramycin component"],"pregnancy_category":"Combination for synergy against resistant organisms","warnings":["Available in some countries as IV formulation"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Esomeprazole","generic_name":"Eesomeprazole","drug_class":"Proton pump inhibitor (S-enantiomer of omeprazole)","drug_class_id":null,"drug_class_name":"Gastroenterology - PPIs","indications":["GERD","H. pylori"],"contraindications":["None significant"],"side_effects":["Headache","GI upset","Abdominal pain"],"dosage":{"adult":"20-40mg daily"},"interactions":["Clopidogrel (controversial)"],"monitoring":"Magnesium (long-term)","patient_counselling":"S-enantiomer of omeprazole: better CYP2C19 inhibition providing more consistent acid suppression.","mechanism_of_action":"Nexium","brand_names":["Bioavailability 64%","t1/2 1.5h"],"pregnancy_category":"S-enantiomer of omeprazole~More consistent acid suppression than racemic omeprazole","warnings":["Also available as IV formulation"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Famotidine","generic_name":"Famotidine","drug_class":"H2-receptor antagonist","drug_class_id":null,"drug_class_name":"Gastroenterology - H2RAs","indications":["GERD","Peptic ulcer","Zollinger-Ellison"],"contraindications":["None significant"],"side_effects":["Headache","Dizziness","Constipation"],"dosage":{"adult":"20mg BID or 40mg at bedtime"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Competitively blocks histamine H2 receptors on parietal cells, reducing basal and stimulated acid secretion.","mechanism_of_action":"Pepcid","brand_names":["Bioavailability 40-45%","t1/2 2.5-4h"],"pregnancy_category":"Good for nocturnal acid breakthrough~Less drug interactions than PPIs~Can be used IV for stress ulcer prophylaxis","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Nizatidine","generic_name":"Nizatidine","drug_class":"H2-receptor antagonist","drug_class_id":null,"drug_class_name":"Gastroenterology - H2RAs","indications":["GERD","Peptic ulcer"],"contraindications":["None significant"],"side_effects":["Headache","Dizziness"],"dosage":{"adult":"150-300mg BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"H2 receptor antagonist. Slightly less CYP inhibition than cimetidine.","mechanism_of_action":"Axid","brand_names":["Bioavailability 90-100%","t1/2 1.6h"],"pregnancy_category":"Good oral bioavailability~Fewer drug interactions than cimetidine~Also promotes gastric emptying","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Granisetron","generic_name":"Granisetron","drug_class":"5-HT3 receptor antagonist","drug_class_id":null,"drug_class_name":"Gastroenterology - Antiemetics","indications":["CINV","PONV"],"contraindications":["None significant"],"side_effects":["Headache","Constipation","QT prolongation"],"dosage":{"adult":"1mg IV/PO q12h or 2mg PO daily (Sancuso patch 72h)"},"interactions":["QT-prolonging drugs"],"monitoring":"ECG","patient_counselling":"Selective 5-HT3 antagonist. Also available as transdermal patch.","mechanism_of_action":"Kytril~Sancuso","brand_names":["Bioavailability 60%","t1/2 4-9h"],"pregnancy_category":"Transdermal patch (Sancuso) for 72h coverage~Also available as IV","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Palonosetron","generic_name":"Palonosetron","drug_class":"5-HT3 receptor antagonist (long-acting)","drug_class_id":null,"drug_class_name":"Gastroenterology - Antiemetics","indications":["CINV (delayed phase)","PONV"],"contraindications":["None significant"],"side_effects":["Headache","Constipation","QT prolongation"],"dosage":{"adult":"0.25mg IV single dose"},"interactions":["QT-prolonging drugs"],"monitoring":"ECG","patient_counselling":"Longest-acting 5-HT3 antagonist: most effective for delayed CINV. Allosteric binding causes receptor internalization.","mechanism_of_action":"Akynzeo","brand_names":["Bioavailability 25%","t1/2 40h"],"pregnancy_category":"Most effective for delayed CINV (days 2-4)","warnings":["Longest-acting 5-HT3 antagonist","Single IV dose for delayed CINV","Also in capsules with netupitant (Akynzeo)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Aprepitant","generic_name":"Aprepitant","drug_class":"NK1 receptor antagonist","drug_class_id":null,"drug_class_name":"Gastroenterology - Antiemetics","indications":["CINV (moderate/highly emetogenic) - prevention"],"contraindications":["None significant"],"side_effects":["Headache","Fatigue","Hiccups","Elevated LFTs"],"dosage":{"adult":"125mg PO day 1, then 80mg days 2-3 (with 5-HT3 antagonist + dexamethasone)"},"interactions":["Strong CYP3A4 inhibitors (reduced dose)","Dexamethasone (increase dose 50%)","Warfarin (reduced INR)"],"monitoring":"LFTs","patient_counselling":"NK1 receptor antagonist: blocks substance P in brainstem emetic center. Synergistic with 5-HT3 antagonists for CINV.","mechanism_of_action":"Emend","brand_names":["Bioavailability 60-65%","t1/2 9-13h","CYP3A4"],"pregnancy_category":"Triple therapy: aprepitant + ondansetron + dexamethasone for highly emetogenic CINV~Also available as IV (Fosaprepitant)~Day 1: 125mg, Days 2-3: 80mg","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Netupitant/palonosetron","generic_name":"Akynzeo","drug_class":"NK1 antagonist + 5-HT3 antagonist combo","drug_class_id":null,"drug_class_name":"Gastroenterology - Antiemetics","indications":["CINV prevention"],"contraindications":["None significant"],"side_effects":["Headache","Fatigue","Constipation"],"dosage":{"adult":"1 capsule PO day 1 (highly emetogenic) or 3 capsules (moderately emetogenic)"},"interactions":["Strong CYP3A4 inhibitors (avoid)"],"monitoring":"None significant","patient_counselling":"Fixed-dose combination: netupitant (NK1) + palonosetron (5-HT3). Synergistic dual mechanism.","mechanism_of_action":"Akynzeo","brand_names":["Netupitant: t1/2 5h","Palonosetron: t1/2 40h"],"pregnancy_category":"Single capsule convenience~Dual mechanism in one dose~Most effective single-agent CINV prophylaxis","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Aprepitant/fosaprepitant","generic_name":"Fosaprepitant","drug_class":"NK1 receptor antagonist (IV prodrug)","drug_class_id":null,"drug_class_name":"Gastroenterology - Antiemetics","indications":["CINV prevention (IV alternative)"],"contraindications":["Hypersensitivity to polysorbate 80"],"side_effects":["Infusion site reactions","Pain/erythema/thrombophlebitis"],"dosage":{"adult":"150mg IV single dose on day 1 (equivalent to 3-day oral aprepitant)"},"interactions":["Strong CYP3A4 inhibitors"],"monitoring":"Infusion site","patient_counselling":"IV prodrug of aprepitant. Single IV dose replaces 3-day oral regimen. Phosphorylated for water solubility.","mechanism_of_action":"Emend IV","brand_names":["Hydrolyzed to aprepitant in vivo"],"pregnancy_category":"Single IV dose for 3-day CINV coverage~Infusion site reactions common (30-50%)~Administer over 15-30 min~Pre-medicate with corticosteroid if needed","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Polyethylene glycol 3350","generic_name":"PEG 3350 (MiraLAX)","drug_class":"Osmotic laxative","drug_class_id":null,"drug_class_name":"Gastroenterology - Laxatives","indications":["Constipation"],"contraindications":["None significant"],"side_effects":["Bloating","Cramping","Diarrhea"],"dosage":{"adult":"17g in 4-8oz liquid daily"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"High molecular weight PEG: osmotically retains water in colon, softening stool and increasing motility.","mechanism_of_action":"MiraLAX","brand_names":["Not absorbed"],"pregnancy_category":"Gentle osmotic laxative~Can mix with any beverage~Onset 1-3 days~Generally well tolerated","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Sodium picosulfate","generic_name":"Sodium picosulfate","drug_class":"Stimulant laxative (prodrug)","drug_class_id":null,"drug_class_name":"Gastroenterology - Laxatives","indications":["Constipation","Bowel preparation (colonoscopy)"],"contraindications":["None significant"],"side_effects":["Cramping","Diarrhea","Electrolyte imbalance"],"dosage":{"adult":"5-10mg daily (constipation)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Prodrug: converted by colonic bacteria to active metabolite, stimulating colonic motility.","mechanism_of_action":"Prepopik (with MgCitrate)","brand_names":["Onset 6-12h"],"pregnancy_category":"Used in bowel prep combinations~Requires bacterial activation in colon~Also available with magnesium citrate (Prepopik)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Sennosides","generic_name":"Senna","drug_class":"Anthraquinone stimulant laxative","drug_class_id":null,"drug_class_name":"Gastroenterology - Laxatives","indications":["Constipation"],"contraindications":["None significant"],"side_effects":["Cramping","Diarrhea","Electrolyte imbalance (hypokalemia)"],"dosage":{"adult":"1-2 tablets at bedtime (17mg sennosides)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Anthraquinone glycosides converted by colonic bacteria to rheanthrone, stimulating peristalsis.","mechanism_of_action":"Senokot","brand_names":["Onset 6-12h"],"pregnancy_category":"Natural plant-based laxative~Take at bedtime for morning effect~Avoid long-term use (melanosis coli)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Docusate","generic_name":"Docusate sodium","drug_class":"Stool softener (surfactant)","drug_class_id":null,"drug_class_name":"Gastroenterology - Laxatives","indications":["Constipation (prevention)"],"contraindications":["None significant"],"side_effects":["None (well tolerated)"],"dosage":{"adult":"100-200mg BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Surface-active agent: lowers surface tension, allowing water and fat to penetrate stool.","mechanism_of_action":"Colace","brand_names":["Onset 12-72h"],"pregnancy_category":"Does not stimulate motility - just softens stool~Preventive not therapeutic~Often combined with stimulant laxatives","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Sodium sulfate/potassium sulfate/magnesium sulfate","generic_name":"GoLYTELY","drug_class":"Electrolyte lavage solution","drug_class_id":null,"drug_class_name":"Gastroenterology - Bowel Prep","indications":["Bowel preparation for colonoscopy"],"contraindications":["Bowel obstruction","Gastric retention","Toxic megacolon"],"side_effects":["Nausea","Bloating","Cramping","Electrolyte imbalance"],"dosage":{"adult":"1-3L over 2-4 hours (evening before procedure)"},"interactions":["None significant"],"monitoring":"Electrolytes~Fluid balance","patient_counselling":"Isotonic solution: causes voluminous watery diarrhea for complete bowel cleansing. PEG-based prep.","mechanism_of_action":"GoLYTELY~NuLYTELY","brand_names":["Onset 1-3h"],"pregnancy_category":"Start 3-4 hours before procedure~Adequate hydration essential~Contraindicated in obstruction~Many proprietary alternatives available","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-014","name":"Bictegravir","generic_name":"Bictegravir","drug_class":"Integrase strand transfer inhibitor (INSTI)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 infection (with other ARVs)"],"contraindications":["CrCl <30"],"side_effects":["Headache","Nausea","Diarrhea","Insomnia"],"dosage":{"adult":"50mg PO daily (in fixed-dose combination with TAF/FTC)"},"interactions":["Polyvalent cations (separate by 4-6h)"],"monitoring":"eGFR~HBV (if co-infected)","patient_counselling":"Blocks HIV integrase: prevents viral DNA from integrating into host genome.","mechanism_of_action":"Biktarvy","brand_names":["t1/2 17.3h","CYP unknown"],"pregnancy_category":"Available as single-tablet regimen (bictegravir/TAF/FTC)","warnings":["High barrier to resistance","Once daily","Few drug interactions"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Cabotegravir LA","generic_name":"Cabotegravir (long-acting injectable)","drug_class":"INSTI (long-acting injectable)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV treatment and prevention (PrEP)"],"contraindications":["Hypersensitivity to cabotegravir"],"side_effects":["Injection site reactions","Fever","Fatigue","Headache"],"dosage":{"adult":"Loading: 600mg IM day 1 + day 2, then 400mg IM monthly"},"interactions":["Polyvalent cations (if oral lead-in)"],"monitoring":"eGFR","patient_counselling":"Long-acting injectable INSTI: nanosuspension for IM depot, releasing drug over 1-2 months.","mechanism_of_action":"Cabenuva (treatment)~Apretude (PrEP)","brand_names":["t1/2 5.6 weeks (IM)"],"pregnancy_category":"Monthly or bimonthly injections~Eliminates daily pill burden~FDA-approved for both treatment (Cabenuva) and PrEP (Apretude)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Doravirine","generic_name":"Doravirine","drug_class":"Non-nucleoside reverse transcriptase inhibitor (NNRTI)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 infection"],"contraindications":["None significant"],"side_effects":["Nausea","Headache","Fatigue"],"dosage":{"adult":"100mg PO daily (with other ARVs)"},"interactions":["Rifampin (reduced levels)"],"monitoring":"None significant","patient_counselling":"Inhibits HIV-1 reverse transcriptase by binding to allosteric site.","mechanism_of_action":"Pifeltro","brand_names":["t1/2 15-21h","CYP3A4"],"pregnancy_category":"Newer NNRTI with fewer drug interactions than efavirenz/rilpivirine","warnings":["100mg once daily","Also available as fixed-dose (Delstrigo: doravirine/TDF/3TC)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-017","name":"Fostemsavir","generic_name":"Fostemsavir","drug_class":"Attachment inhibitor (gp120 blocker)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 (treatment-experienced, multidrug-resistant)"],"contraindications":["None significant"],"side_effects":["Nausea","Diarrhea","Headache"],"dosage":{"adult":"600mg PO BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Binds gp120 on HIV envelope, preventing initial attachment to CD4 receptors. First-in-class attachment inhibitor.","mechanism_of_action":"Rukobia","brand_names":["t1/2 11-14h (active temsavir","4h)"],"pregnancy_category":"New mechanism for treatment-experienced patients","warnings":["Oral BID dosing"],"overdose":"Prodrug of temsavir (active metabolite)","pharmacokinetics":"For heavily treatment-experienced patients","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-018","name":"Ibalizumab","generic_name":"Ibalizumab","drug_class":"Post-attachment inhibitor (CD4-directed mAb)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 (treatment-experienced, multidrug-resistant)"],"contraindications":["None significant"],"side_effects":["Diarrhea","Dizziness","Rash","Nausea"],"dosage":{"adult":"2000mg IV loading, then 800mg IV every 2 weeks"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Monoclonal antibody: binds domain 2 of CD4 receptor, blocking post-attachment steps without depleting CD4 cells.","mechanism_of_action":"Trogarzo","brand_names":["IV only: t1/2 9 days"],"pregnancy_category":"First-in-class post-attachment inhibitor","warnings":["IV every 2 weeks after loading"],"overdose":"For patients with multidrug-resistant HIV","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-019","name":"Enfuvirtide","generic_name":"Enfuvirtide","drug_class":"Fusion inhibitor (peptide)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 (treatment-experienced)"],"contraindications":["None significant"],"side_effects":["Injection site reactions (100%)","Bacterial pneumonia (increased)"],"dosage":{"adult":"90mg SC BID (with other ARVs)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Binds to HR1 region of gp41, preventing conformational change needed for membrane fusion.","mechanism_of_action":"Fuzeon","brand_names":["SC only: t1/2 3.8h"],"pregnancy_category":"SC injection BID - injection site reactions universal","warnings":["First fusion inhibitor approved"],"overdose":"For patients with multidrug-resistant HIV","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-020","name":"Didanosine","generic_name":"Didanosine","drug_class":"Nucleoside reverse transcriptase inhibitor (NRTI)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 infection (historical)"],"contraindications":["Pancreatitis history"],"side_effects":["Pancreatitis","Peripheral neuropathy","Lactic acidosis","Retinal changes"],"dosage":{"adult":"250-400mg BID (with buffer)"},"interactions":["Tenofovir (contraindicated combination)"],"monitoring":"Amylase/lipase~Lactic acid","patient_counselling":"NRTI: inhibits HIV RT. Limited use due to toxicity profile.","mechanism_of_action":"Videx","brand_names":["t1/2 1.6h"],"pregnancy_category":"Largely historical - replaced by less toxic NRTIs","warnings":["Pancreatitis and neuropathy are dose-limiting"],"overdose":"Do NOT combine with TDF (increased didanosine levels)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-021","name":"Stavudine","generic_name":"Stavudine","drug_class":"Nucleoside reverse transcriptase inhibitor (NRTI)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 infection (historical)"],"contraindications":["None significant"],"side_effects":["Peripheral neuropathy","Lactic acidosis","Lipodystrophy"],"dosage":{"adult":"30-40mg BID"},"interactions":["Zidovudine (antagonistic - do not combine)"],"monitoring":"Lactic acid","patient_counselling":"NRTI: similar to zidovudine. Limited use due to toxicity.","mechanism_of_action":"Zerit","brand_names":["t1/2 0.9-1.5h"],"pregnancy_category":"Historical NRTI - replaced by safer alternatives","warnings":["Peripheral neuropathy and lipodystrophy common"],"overdose":"Do not combine with zidovudine (antagonistic)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Posaconazole","generic_name":"Posaconazole","drug_class":"Triazole antifungal (extended spectrum)","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Prophylaxis (immunocompromised)","Invasive mucormycosis","Aspergillosis"],"contraindications":["QT prolongation","Hepatic impairment"],"side_effects":["Hepatotoxicity","QT prolongation","Headache","GI upset"],"dosage":{"adult":"300mg PO BID day 1, then 300mg daily (prophylaxis)"},"interactions":["CYP3A4 substrates (sirolimus - contraindicated)","QT drugs"],"monitoring":"LFTs~Trough levels if available","patient_counselling":"Broadest spectrum triazole: covers Aspergillus, Candida, Mucorales. Extended-release tablet for better absorption.","mechanism_of_action":"Noxafil","brand_names":["Bioavailability: solution 12% (take with fatty meal), EC tablet","50%"],"pregnancy_category":"Extended-release tablet: take with food~Avoid sirolimus and ergot alkaloids~Also available IV~Covers Mucorales (unlike other azoles)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Isavuconazole","generic_name":"Isavuconazole","drug_class":"Triazole antifungal","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Invasive aspergillosis","Mucormycosis"],"contraindications":["QT prolongation (less than voriconazole)"],"side_effects":["Hepatotoxicity","Nausea","Rash"],"dosage":{"adult":"200mg TID x 6 doses, then 200mg daily"},"interactions":["CYP3A4 substrates (sirolimus - contraindicated)"],"monitoring":"LFTs","patient_counselling":"Broad-spectrum triazole with less QT prolongation than voriconazole. Active against Mucorales.","mechanism_of_action":"Cresemba","brand_names":["Bioavailability 98%","t1/2 56h"],"pregnancy_category":"No QT prolongation (actually shortens QT - unique)","warnings":["Covers Aspergillus AND Mucorales","Long half-life once daily dosing","Better GI tolerability than voriconazole"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Micafungin","generic_name":"Micafungin","drug_class":"Echinocandin antifungal","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Invasive candidiasis","Esophageal candidiasis","Candidemia"],"contraindications":["None significant"],"side_effects":["Hepatotoxicity"],"dosage":{"adult":"100-150mg daily (candidiasis) or 50-100mg daily (prophylaxis)"},"interactions":["None significant"],"monitoring":"LFTs","patient_counselling":"Inhibits beta-(1,3)-D-glucan synthase. Longest half-life echinocandin.","mechanism_of_action":"Mycamine","brand_names":["IV only: t1/2 11-17h"],"pregnancy_category":"Longest half-life echinocandin~No significant drug interactions~Also used as antifungal prophylaxis in HSCT","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Anidulafungin","generic_name":"Anidulafungin","drug_class":"Echinocandin antifungal","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Esophageal candidiasis","Invasive candidiasis"],"contraindications":["None significant"],"side_effects":["Headache","Diarrhea"],"dosage":{"adult":"200mg IV day 1, then 100mg daily"},"interactions":["None significant"],"monitoring":"LFTs","patient_counselling":"Echinocandin: non-enzymatic degradation (no hepatic metabolism). Longest acting echinocandin.","mechanism_of_action":"Eraxis","brand_names":["IV only: t1/2 40-50h (longest echinocandin)"],"pregnancy_category":"Non-hepatic degradation - no CYP interactions~Longest half-life echinocandin~Best for esophageal candidiasis","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Amphotericin B deoxycholate","generic_name":"Amphotericin B deoxycholate","drug_class":"Polyene antifungal","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Severe systemic fungal infections (last resort)"],"contraindications":["Severe renal impairment"],"side_effects":["Nephrotoxicity (dose-limiting)","Infusion reactions (fever","chills","rigors)","Anemia","Hypokalemia"],"dosage":{"adult":"0.3-1.5 mg/kg/day IV"},"interactions":["Nephrotoxic drugs (additive)","Digoxin (hypokalemia increases toxicity)"],"monitoring":"Renal function~K+~Mg2+~CBC","patient_counselling":"Binds ergosterol in fungal cell membrane, creating pores causing cell death. Gold standard for severe mycoses.","mechanism_of_action":"Amphotec","brand_names":["IV only: t1/2 24h (but tissue effects prolonged)"],"pregnancy_category":"Most nephrotoxic antifungal~Infusion-related reactions: premedicate with acetaminophen~Electrolyte wasting (K+, Mg2+)","warnings":["Lipid formulations less nephrotoxic (AmBisome","Abelcet)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Liposomal amphotericin B","generic_name":"Liposomal amphotericin B (AmBisome)","drug_class":"Polyene antifungal (lipid formulation)","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Severe systemic fungal infections (less nephrotoxic)"],"contraindications":["None significant"],"side_effects":["Infusion reactions (less than conventional)","Nephrotoxicity (less than conventional)"],"dosage":{"adult":"3-5 mg/kg/day IV"},"interactions":["Same as conventional"],"monitoring":"Renal function~K+","patient_counselling":"Lipid formulation: reduced nephrotoxicity compared to conventional amphotericin B. Same mechanism.","mechanism_of_action":"AmBisome","brand_names":["IV only"],"pregnancy_category":"Less nephrotoxic than conventional amphotericin B~Higher doses tolerated~Same fungal spectrum~Cost is limitation","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Flucytosine","generic_name":"Flucytosine","drug_class":"Pyrimidine analogue antifungal","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Cryptococcal meningitis (with amphotericin B)"],"contraindications":["Bone marrow suppression"],"side_effects":["Bone marrow suppression","Hepatotoxicity","GI upset"],"dosage":{"adult":"100-150 mg/kg/day in 4 divided doses (with amphotericin B)"},"interactions":["Amphotericin B (increases flucytosine levels by reducing renal clearance)"],"monitoring":"CBC~Flucytosine levels (peak 25-100 mcg/mL)","patient_counselling":"Converted to 5-fluorouracil inside fungal cells. Combined with amphotericin B for synergy in cryptococcal meningitis.","mechanism_of_action":"Ancobon","brand_names":["Bioavailability 80-90%","t1/2 2.5-6h"],"pregnancy_category":"Essential component of cryptococcal meningitis treatment (with amphotericin B)","warnings":["Monitor levels and CBC","Bone marrow suppression dose-limiting","Synergy with amphotericin B"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Tavaborole","generic_name":"Tavaborole","drug_class":"Oxaborole antifungal (topical)","drug_class_id":null,"drug_class_name":"Dermatology - Antifungals","indications":["Onychomycosis (topical)"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"Apply once daily to affected nails x 48 weeks"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Inhibits fungal protein synthesis by binding to leucyl-tRNA synthetase.","mechanism_of_action":"Keratex","brand_names":["Nail penetration","topical"],"pregnancy_category":"Topical alternative to oral antifungals for nail infections","warnings":["Apply once daily for 48 weeks","No systemic side effects","Limited nail penetration (mild-moderate disease)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Efinaconazole","generic_name":"Efinaconazole","drug_class":"Topical triazole antifungal","drug_class_id":null,"drug_class_name":"Dermatology - Antifungals","indications":["Onychomycosis (topical)"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"Apply once daily to affected nails x 48 weeks"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical triazole: inhibits ergosterol synthesis. High nail penetration.","mechanism_of_action":"Jublia","brand_names":["Topical"],"pregnancy_category":"Better nail penetration than ciclopirox~Once daily application~48-week treatment course~No systemic side effects","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Ciclopirox","generic_name":"Ciclopirox","drug_class":"Hydroxypyridone antifungal","drug_class_id":null,"drug_class_name":"Dermatology - Antifungals","indications":["Onychomycosis (topical)","Dermatophyte skin infections"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"8% nail lacquer once daily x 48 weeks (nails)~Cream BID (skin)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Chelates polyvalent cations, inhibiting metal-dependent enzymes in fungi.","mechanism_of_action":"Penlac (nail)~Loprox (cream)","brand_names":["Topical"],"pregnancy_category":"Nail lacquer: once daily~Also available as cream for skin infections~No systemic absorption","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Terbinafine topical","generic_name":"Terbinafine (topical)","drug_class":"Allylamine antifungal (topical)","drug_class_id":null,"drug_class_name":"Dermatology - Antifungals","indications":["Tinea pedis","Tinea corporis"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"Apply BID x 1-2 weeks (tinea pedis)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical fungicidal: inhibits squalene epoxidase.","mechanism_of_action":"Lamisil AT","brand_names":["Topical"],"pregnancy_category":"Fungicidal topical for dermatophyte infections","warnings":["Apply BID for 1-2 weeks"],"overdose":"High cure rate for tinea pedis","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Natamycin","generic_name":"Natamycin","drug_class":"Polyene antifungal (topical ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Antifungals","indications":["Fungal keratitis"],"contraindications":["None significant"],"side_effects":["Eye irritation"],"dosage":{"adult":"1 drop q1-2h while awake x 14-21 days"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Polyene antifungal: binds ergosterol in fungal cell membranes.","mechanism_of_action":"Natacyn","brand_names":["Topical ophthalmic"],"pregnancy_category":"For fungal keratitis only~Polyene class (same as amphotericin B)","warnings":["Use frequently initially then taper","Limited corneal penetration"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Pegfilgrastim","generic_name":"Pegfilgrastim","drug_class":"Pegylated G-CSF","drug_class_id":null,"drug_class_name":"Oncology - Supportive care","indications":["Chemotherapy-induced neutropenia"],"contraindications":["None significant"],"side_effects":["Bone pain","Injection site reactions"],"dosage":{"adult":"6 mg SC once per chemo cycle (day 1 post-chemo)"},"interactions":["None significant"],"monitoring":"CBC","patient_counselling":"Pegylated filgrastim: extended half-life allows once-per-cycle dosing.","mechanism_of_action":"Neulasta","brand_names":["SC: t1/2 15-80h (extended by PEGylation)"],"pregnancy_category":"Once per cycle dosing - major convenience advantage~Start 24h after chemo~Bone pain most common~Do not use between 14 days before and 24h after chemo","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Darbepoetin alfa","generic_name":"Darbepoetin alfa","drug_class":"Erythropoiesis-stimulating agent (ESA)","drug_class_id":null,"drug_class_name":"Oncology - Supportive care","indications":["Anemia (chemotherapy-induced, CKD)"],"contraindications":["Uncontrolled hypertension","Active malignancy (increased mortality)"],"side_effects":["Hypertension","Headache","Thromboembolic events"],"dosage":{"adult":"200 IU/kg SC weekly or 500 IU/kg q3 weeks"},"interactions":["None significant"],"monitoring":"Hemoglobin (target 10-11 g/dL)~BP","patient_counselling":"Hyperglycosylated erythropoietin analogue with longer half-life. Stimulates red blood cell production.","mechanism_of_action":"Aranesp","brand_names":["SC/IV: t1/2 25.3h"],"pregnancy_category":"Longer half-life than epoetin alfa (allows less frequent dosing)~Target Hgb 10-11 g/dL (do not exceed 12)","warnings":["ESAs increase mortality in active malignancy - use lowest dose for shortest time"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Epoetin alfa","generic_name":"Epoetin alfa","drug_class":"Erythropoiesis-stimulating agent (ESA)","drug_class_id":null,"drug_class_name":"Oncology - Supportive care","indications":["Anemia (chemotherapy-induced, CKD, preoperative)"],"contraindications":["Uncontrolled hypertension"],"side_effects":["Hypertension","Headache","Thromboembolic events"],"dosage":{"adult":"10,000-40,000 IU SC/IV 3x/week"},"interactions":["None significant"],"monitoring":"Hemoglobin (target 10-11 g/dL)~BP","patient_counselling":"Recombinant human erythropoietin: stimulates erythropoiesis in bone marrow.","mechanism_of_action":"Procrit~Epogen","brand_names":["SC/IV: t1/2 4-13h"],"pregnancy_category":"Shorter half-life than darbepoetin - requires more frequent dosing~Target Hgb 10-11 g/dL~ESAs increase mortality in active malignancy","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Romiplostim","generic_name":"Romiplostim","drug_class":"Thrombopoietin receptor agonist","drug_class_id":null,"drug_class_name":"Hematology - Platelet agents","indications":["Immune thrombocytopenia (chronic)"],"contraindications":["None significant"],"side_effects":["Headache","Arthralgia","Bone marrow reticulin"],"dosage":{"adult":"1-10 mcg/kg SC weekly"},"interactions":["None significant"],"monitoring":"Platelet count qweek","patient_counselling":"TPO receptor agonist: stimulates megakaryocyte proliferation and platelet production.","mechanism_of_action":"Nplate","brand_names":["SC: t1/2 3.5 days"],"pregnancy_category":"Weekly SC injection~Titrate to platelet count 50,000-200,000~Bone marrow reticulin risk with prolonged use","warnings":["Do not use to normalize platelets"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Eltrombopag","generic_name":"Eltrombopag","drug_class":"Thrombopoietin receptor agonist (oral)","drug_class_id":null,"drug_class_name":"Hematology - Platelet agents","indications":["Immune thrombocytopenia","Aplastic anemia","Hepatitis C-associated thrombocytopenia"],"contraindications":["Hepatic impairment"],"side_effects":["Hepatotoxicity","Bone marrow reticulin","Cataracts"],"dosage":{"adult":"25-75mg PO daily (take on empty stomach)"},"interactions":["Polyvalent cations (antacids, iron, calcium - separate by 4h)"],"monitoring":"Platelet count~LFTs","patient_counselling":"Oral TPO receptor agonist: binds transmembrane domain of TPO receptor.","mechanism_of_action":"Promacta~Revolade","brand_names":["Bioavailability","30%","t1/2 21-32h"],"pregnancy_category":"Take on empty stomach (separate from polyvalent cations by 4h)","warnings":["Hepatotoxicity and bone marrow reticulin risk","Cataracts with long-term use"],"overdose":"Also used in aplastic anemia (with immunosuppressive therapy)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Lipegfilgrastim","generic_name":"Lipegfilgrastim","drug_class":"PEGylated G-CSF (biosimilar)","drug_class_id":null,"drug_class_name":"Oncology - Supportive care","indications":["Chemotherapy-induced neutropenia"],"contraindications":["None significant"],"side_effects":["Bone pain","Injection site reactions"],"dosage":{"adult":"6 mg SC once per chemo cycle"},"interactions":["None significant"],"monitoring":"CBC","patient_counselling":"Long-acting PEGylated G-CSF. Similar to pegfilgrastim.","mechanism_of_action":"Lonquex","brand_names":["SC: t1/2","32h"],"pregnancy_category":"Once per cycle dosing~Similar efficacy to pegfilgrastim~Biosimilar alternative","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Pertuzumab","generic_name":"Pertuzumab","drug_class":"Anti-HER2 monoclonal antibody (HER2 dimerization inhibitor)","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["HER2+ breast cancer (with trastuzumab)"],"contraindications":["None significant"],"side_effects":["Diarrhea","Infusion reactions","Cardiotoxicity"],"dosage":{"adult":"840 mg IV loading, then 420 mg IV q3 weeks"},"interactions":["None significant"],"monitoring":"Echocardiogram (LVEF)","patient_counselling":"Binds HER2 domain II: prevents HER2 heterodimerization with HER3/other HER receptors. Complementary to trastuzumab.","mechanism_of_action":"Perjeta","brand_names":["IV: t1/2 18 days"],"pregnancy_category":"Must be used with trastuzumab~Diarrhea most common (68%)~Cleopatra trial: improved PFS/OS in HER2+ MBC","warnings":["Less cardiotoxicity than trastuzumab"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Trastuzumab deruxtecan","generic_name":"Trastuzumab deruxtecan (T-DXd)","drug_class":"Anti-HER2 antibody-drug conjugate (ADC)","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["HER2+ and HER2-low breast cancer"],"contraindications":["None significant"],"side_effects":["Nausea","Vomiting","Alopecia","Interstitial lung disease (ILD)","Myelosuppression"],"dosage":{"adult":"5.4 mg/kg IV q3 weeks"},"interactions":["None significant"],"monitoring":"PFTs if respiratory symptoms (ILD)","patient_counselling":"Anti-HER2 ADC: trastuzumab linked to topoisomerase I inhibitor via cleavable linker. Bystander effect kills adjacent HER2-low cells.","mechanism_of_action":"Enhertu","brand_names":["IV: t1/2 14 days"],"pregnancy_category":"Bystander effect: effective even in HER2-low tumors~Interstitial lung disease risk (monitor respiratory symptoms)","warnings":["DESTINY-Breast03: superior to T-DM1 in HER2+"],"overdose":"Also effective in HER2-low breast cancer (DESTINY-Breast04)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Ado-trastuzumab emtansine","generic_name":"T-DM1 (ado-trastuzumab emtansine)","drug_class":"Anti-HER2 antibody-drug conjugate","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["HER2+ breast cancer (after progression on trastuzumab)"],"contraindications":["None significant"],"side_effects":["Hepatotoxicity","Thrombocytopenia","Peripheral neuropathy","Infusion reactions"],"dosage":{"adult":"3.6 mg/kg IV q3 weeks"},"interactions":["None significant"],"monitoring":"Platelet count~LFTs~PN assessment","patient_counselling":"Anti-HER2 ADC: trastuzumab linked to cytotoxic DM1 via non-cleavable linker.","mechanism_of_action":"Kadcyla","brand_names":["IV: t1/2 4 days"],"pregnancy_category":"Non-cleavable linker - no bystander effect (requires HER2 expression)","warnings":["Hepatotoxicity and thrombocytopenia most common","Peripheral neuropathy dose-limiting"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Olaratumab","generic_name":"Olaratumab","drug_class":"Anti-PDGFR-alpha monoclonal antibody","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["Soft tissue sarcoma (with doxorubicin)"],"contraindications":["None significant"],"side_effects":["Infusion reactions","Hemorrhage","Neutropenia"],"dosage":{"adult":"15 mg/kg IV weekly (with doxorubicin)"},"interactions":["None significant"],"monitoring":"CBC","patient_counselling":"Anti-PDGFR-alpha: blocks PDGF receptor signaling. Added to doxorubicin for advanced STS. FDA approval withdrawn due to lack of OS benefit in confirmatory trial.","mechanism_of_action":"Lartruvo","brand_names":["IV: t1/2 11 days"],"pregnancy_category":"FDA approval withdrawn (no OS benefit in phase 3)","warnings":["Was used with doxorubicin for advanced STS","Available through restricted program"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Ramucirumab","generic_name":"Ramucirumab","drug_class":"Anti-VEGFR2 monoclonal antibody","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["Gastric/GEC","NSCLC","CRC","HCC"],"contraindications":["None significant"],"side_effects":["Hypertension","Proteinuria","GI perforation","Hemorrhage"],"dosage":{"adult":"8 mg/kg IV q2 weeks (gastric) or 10 mg/kg q2 weeks (NSCLC)"},"interactions":["None significant"],"monitoring":"BP~Proteinuria","patient_counselling":"Binds VEGFR2 directly, blocking VEGF ligand binding. Alternative to bevacizumab.","mechanism_of_action":"Cyramza","brand_names":["IV: t1/2 11 days"],"pregnancy_category":"Anti-VEGFR2 (targets receptor vs ligand like bevacizumab)","warnings":["GI perforation and hemorrhage risk","Hypertension common","Also used in CRC, HCC"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Cetuximab","generic_name":"Cetuximab","drug_class":"Anti-EGFR monoclonal antibody","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["CRC (KRAS wild-type)","Head and neck SCC"],"contraindications":["None significant"],"side_effects":["Acneiform rash","Hypomagnesemia","Infusion reactions","Hypokalemia"],"dosage":{"adult":"400 mg/m2 IV loading, then 250 mg/m2 weekly (or 500 mg/m2 q2 weeks)"},"interactions":["None significant"],"monitoring":"EGFR testing (KRAS/NRAS/BRAF)~Magnesium levels","patient_counselling":"Binds EGFR, blocking downstream signaling. KRAS/NRAS wild-type required for efficacy in CRC.","mechanism_of_action":"Erbitux","brand_names":["IV: t1/2 63h"],"pregnancy_category":"REQUIRES RAS testing (KRAS/NRAS) - no benefit in mutant","warnings":["Acneiform rash correlates with efficacy","Hypomagnesemia (monitor Mg2+)","Also blocks VEGF in combo with bevacizumab"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Panitumumab","generic_name":"Panitumumab","drug_class":"Anti-EGFR monoclonal antibody (fully human)","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["CRC (RAS wild-type)"],"contraindications":["None significant"],"side_effects":["Acneiform rash","Hypomagnesemia","Hypokalemia","Fatigue"],"dosage":{"adult":"6 mg/kg IV q2 weeks"},"interactions":["None significant"],"monitoring":"EGFR testing (RAS wild-type required)","patient_counselling":"Fully human anti-EGFR: lower immunogenicity than cetuximab. Same RAS testing requirement.","mechanism_of_action":"Vectibix","brand_names":["IV: t1/2 4 days"],"pregnancy_category":"Fully human - lower infusion reaction rate than cetuximab","warnings":["Acneiform rash correlates with efficacy","Hypomagnesemia common"],"overdose":"RAS testing mandatory","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-014","name":"Atezolizumab","generic_name":"Atezolizumab","drug_class":"Anti-PD-L1 checkpoint inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Immunotherapy","indications":["NSCLC","HCC","SCLC","TNBC","UC"],"contraindications":["None significant"],"side_effects":["Immune-mediated adverse events","Fatigue","Infusion reactions"],"dosage":{"adult":"1200 mg IV q3 weeks"},"interactions":["Immunosuppressants (reduce efficacy)"],"monitoring":"TFTs~LFTs~Glucose","patient_counselling":"PD-L1 inhibitor: blocks PD-L1 on tumor cells, preventing PD-1 engagement on T cells.","mechanism_of_action":"Tecentriq","brand_names":["IV: t1/2 31 days"],"pregnancy_category":"Anti-PD-L1 (vs anti-PD-1 for nivolumab/pembrolizumab)","warnings":["Also blocks CD80/CD86 (B7 ligands) - may enhance immune response"],"overdose":"Combo with bevacizumab for HCC and NSCLC","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Ipilimumab","generic_name":"Ipilimumab","drug_class":"Anti-CTLA-4 checkpoint inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Immunotherapy","indications":["Melanoma","RCC (with nivolumab)","HCC","NSCLC"],"contraindications":["Active autoimmune disease"],"side_effects":["Immune-mediated adverse events (more severe than PD-1 inhibitors)"],"dosage":{"adult":"3 mg/kg q3 weeks x4 (melanoma) or 1 mg/kg q6 weeks (with nivolumab)"},"interactions":["Immunosuppressants (reduce efficacy)"],"monitoring":"LFTs~Colonoscopy if diarrhea","patient_counselling":"CTLA-4 inhibitor: blocks CTLA-4 inhibitory signal, enhancing T-cell activation. More toxic than PD-1 inhibitors.","mechanism_of_action":"Yervoy","brand_names":["IV: t1/2 14 days"],"pregnancy_category":"Higher rate of immune-mediated AEs than PD-1 inhibitors~Colitis is most serious (check for perforation)~Hepatitis~Endocrinopathies","warnings":["1 mg/kg with nivolumab for many tumor types (lower dose = less toxicity)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Nivolumab + ipilimumab","generic_name":"Opdivo + Yervoy","drug_class":"PD-1 + CTLA-4 combination immunotherapy","drug_class_id":null,"drug_class_name":"Oncology - Immunotherapy","indications":["RCC","Melanoma","NSCLC (PD-L1 >=1%)"],"contraindications":["None significant"],"side_effects":["Immune-mediated adverse events (more than either alone)"],"dosage":{"adult":"Nivolumab 1 mg/kg + ipilimumab 1 mg/kg q3 weeks x4, then nivolumab 240mg q2 weeks"},"interactions":["Immunosuppressants"],"monitoring":"LFTs~TFTs~Glucose~Colonoscopy if diarrhea","patient_counselling":"Dual checkpoint blockade: synergistic anti-tumor immunity by blocking both PD-1 and CTLA-4 pathways.","mechanism_of_action":"Opdivo + Yervoy","brand_names":["Same as individual agents"],"pregnancy_category":"Combination more effective but more toxic than either alone~LFTs monitoring essential (hepatotoxicity common with combination)~For many tumor types now","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-017","name":"Avelumab","generic_name":"Avelumab","drug_class":"Anti-PD-L1 checkpoint inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Immunotherapy","indications":["Merkel cell carcinoma","Urothelial carcinoma"],"contraindications":["None significant"],"side_effects":["Infusion reactions","Immune-mediated AEs","Fatigue"],"dosage":{"adult":"10 mg/kg IV q2 weeks"},"interactions":["Immunosuppressants (reduce efficacy)"],"monitoring":"TFTs~LFTs","patient_counselling":"PD-L1 inhibitor: also mediates ADCC via Fc region (unique among checkpoint inhibitors).","mechanism_of_action":"Bavencio","brand_names":["IV: t1/2 6 days"],"pregnancy_category":"ADCC capability (unique feature among checkpoint inhibitors)","warnings":["Lower potency anti-PD-L1 compared to atezolizumab"],"overdose":"Also approved with axitinib for RCC","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-018","name":"Durvalumab","generic_name":"Durvalumab","drug_class":"Anti-PD-L1 checkpoint inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Immunotherapy","indications":["NSCLC (stage III consolidation)","SCLC","BTC"],"contraindications":["None significant"],"side_effects":["Immune-mediated AEs","Pneumonitis"],"dosage":{"adult":"10 mg/kg IV q2 weeks or 1500 mg q4 weeks"},"interactions":["Immunosuppressants (reduce efficacy)"],"monitoring":"TFTs~LFTs","patient_counselling":"PD-L1 inhibitor: consolidation therapy after concurrent chemoRT in stage III NSCLC (PACIFIC trial).","mechanism_of_action":"Imfinzi","brand_names":["IV: t1/2 18 days"],"pregnancy_category":"PACIFIC trial: standard of care for stage III NSCLC after chemoRT~Also used in biliary tract cancer with gemcitabine/cisplatin","warnings":["Less pneumonitis than expected"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-019","name":"Erdafitinib","generic_name":"Erdafitinib","drug_class":"FGFR inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["Urothelial carcinoma (FGFR-altered)"],"contraindications":["None significant"],"side_effects":["Hyperphosphatemia","Stomatitis","Nail toxicity","Retinal detachment"],"dosage":{"adult":"8 mg PO daily (with food)"},"interactions":["Strong CYP3A4 inducers/inhibitors"],"monitoring":"Phosphate~LFTs~Ophthalmology","patient_counselling":"Inhibits FGFR1-4: overcomes FGFR-altered resistance in urothelial carcinoma.","mechanism_of_action":"Balversa","brand_names":["Bioavailability","t1/2 5.9h","CYP2C9/3A4"],"pregnancy_category":"Hyperphosphatemia most common (phosphate binder if >5.5)","warnings":["Ophthalmology monitoring (retinal detachment risk)"],"overdose":"Take with food daily","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-020","name":"Larotrectinib","generic_name":"Larotrectinib","drug_class":"TRK inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["TRK fusion-positive solid tumors"],"contraindications":["None significant"],"side_effects":["Dizziness","Weight gain","Nausea"],"dosage":{"adult":"100mg PO BID"},"interactions":["Strong CYP3A4 inhibitors/inducers"],"monitoring":"Tumor NGS for TRK fusion","patient_counselling":"Inhibits tropomyosin receptor kinases (TRK): effective in any tumor type with NTRK gene fusion.","mechanism_of_action":"Vitrakvi","brand_names":["Bioavailability 34-98%","t1/2 2.9h","CYP3A4"],"pregnancy_category":"Tumor-agnostic therapy: works in any cancer with TRK fusion~Response rate ~75% across tumor types","warnings":["Requires NTRK gene fusion testing"],"overdose":"Oral BID dosing","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-021","name":"Entrectinib","generic_name":"Entrectinib","drug_class":"TRK/ROS1/ALK inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["TRK fusion-positive solid tumors","ROS1+ NSCLC","ALK+ NSCLC"],"contraindications":["None significant"],"side_effects":["Dysgeusia","Fatigue","Edema","Dizziness","Weight gain"],"dosage":{"adult":"600mg PO daily"},"interactions":["Strong CYP3A4 inhibitors (reduce to 200mg)"],"monitoring":"Tumor NGS for TRK/ROS1/ALK","patient_counselling":"Inhibits TRK, ROS1, and ALK kinases. CNS-penetrant.","mechanism_of_action":"Rozlytrek","brand_names":["Bioavailability 34-98%","t1/2 5.7h","CYP3A4"],"pregnancy_category":"CNS-penetrant: effective in brain metastases~Tumor-agnostic for TRK fusions~Also covers ROS1 and ALK","warnings":["Take with or without food"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Cilostazol","generic_name":"Cilostazol","drug_class":"PDE3 inhibitor","drug_class_id":null,"drug_class_name":"Cardiovascular - Antiplatelets","indications":["Intermittent claudication"],"contraindications":["Heart failure (contraindicated)"],"side_effects":["Headache","Diarrhea","Palpitations","Dizziness"],"dosage":{"adult":"100mg BID"},"interactions":["CYP3A4 inhibitors (increased effects)"],"monitoring":"None significant","patient_counselling":"PDE3 inhibitor: inhibits platelet aggregation and causes vasodilation. Improved walking distance in claudication.","mechanism_of_action":"Pletal","brand_names":["Bioavailability 50-90%","t1/2 11-13h","CYP3A4/CYP2B6"],"pregnancy_category":"CONTRAINDICATED in heart failure (mortality signal)","warnings":["Headache most common (35%)","Improved walking distance 50-100m","Avoid with other antiplatelets if possible"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Ticlopidine","generic_name":"Ticlopidine","drug_class":"Thienopyridine antiplatelet (P2Y12 inhibitor)","drug_class_id":null,"drug_class_name":"Cardiovascular - Antiplatelets","indications":["Stent thrombosis prevention (historical)"],"contraindications":["Neutropenia/TTP"],"side_effects":["Neutropenia","TTP","Thrombocytopenia","GI upset"],"dosage":{"adult":"250mg BID"},"interactions":["None significant"],"monitoring":"CBC (risk of neutropenia/TTP)","patient_counselling":"First thienopyridine: irreversibly blocks P2Y12. Largely replaced by clopidogrel/prasugrel due to toxicity.","mechanism_of_action":"Ticlid","brand_names":["Bioavailability 20-30%","t1/2 12-25h"],"pregnancy_category":"Historical - replaced by safer alternatives~Neutropenia risk (1-2%)~TTP risk~CBC monitoring required","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Cangrelor","generic_name":"Cangrelor","drug_class":"Reversible P2Y12 inhibitor (IV)","drug_class_id":null,"drug_class_name":"Cardiovascular - Antiplatelets","indications":["PCI (platelet inhibition during procedure)"],"contraindications":["None significant"],"side_effects":["Bleeding","Dyspnea"],"dosage":{"adult":"30 mcg/kg IV bolus then 4 mcg/kg/min infusion"},"interactions":["None significant"],"monitoring":"Platelet function testing if needed","patient_counselling":"Reversible IV P2Y12 inhibitor: immediate onset, offset within 1 hour. Bridge between oral antiplatelet and procedure.","mechanism_of_action":"Kengreal","brand_names":["IV: t1/2 3-6 min"],"pregnancy_category":"Fastest onset/offset of any P2Y12 inhibitor~IV only: for periprocedural use~Offset within 60 min of stopping infusion~Bridge to oral P2Y12 inhibitor","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Vorapaxar","generic_name":"Vorapaxar","drug_class":"PAR-1 antagonist (antiplatelet)","drug_class_id":null,"drug_class_name":"Cardiovascular - Antiplatelets","indications":["Secondary prevention (prior MI/PAD)"],"contraindications":["History of stroke/TIA (contraindicated)","Active bleeding"],"side_effects":["Bleeding","GI upset"],"dosage":{"adult":"2.5mg daily"},"interactions":["None significant"],"monitoring":"Bleeding risk","patient_counselling":"PAR-1 (protease-activated receptor 1) antagonist: blocks thrombin-mediated platelet activation via a unique pathway.","mechanism_of_action":"Zontivity","brand_names":["Bioavailability","50%","t1/2 223h (extremely long)"],"pregnancy_category":"Once daily dosing~Contraindicated in prior stroke/TIA (TRA 2P-TIMI 50: increased intracranial hemorrhage)","warnings":["Unique mechanism: PAR-1 antagonist (thrombin receptor)"],"overdose":"Very long half-life","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Rasburicase","generic_name":"Rasburicase","drug_class":"Recombinant urate oxidase","drug_class_id":null,"drug_class_name":"Hematology - Supportive care","indications":["Tumor lysis syndrome (uric acid management)"],"contraindications":["Methemoglobinemia","G6PD deficiency"],"side_effects":["Hypersensitivity","Methemoglobinemia (G6PD-deficient)"],"dosage":{"adult":"0.2 mg/kg IV single dose"},"interactions":["None significant"],"monitoring":"Uric acid levels~Monitor for hypersensitivity","patient_counselling":"Converts uric acid to allantoin (more soluble and easily excreted). Prevents uric acid nephropathy in tumor lysis.","mechanism_of_action":"Elitek","brand_names":["IV: t1/2 18h"],"pregnancy_category":"Prevents uric acid nephropathy in tumor lysis~Contraindicated in G6PD deficiency (severe hemolysis risk)","warnings":["Monitor methemoglobin levels","Single dose before chemotherapy","More effective than allopurinol for acute TLS"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Pegloticase","generic_name":"Pegloticase","drug_class":"PEGylated recombinant uricase","drug_class_id":null,"drug_class_name":"Gout - Urate lowering","indications":["Chronic refractory gout"],"contraindications":["None significant"],"side_effects":["Gout flares","Infusion reactions","Anaphylaxis (risk)"],"dosage":{"adult":"8 mg IV q2 weeks"},"interactions":["None significant"],"monitoring":"Uric acid~Infusion reactions","patient_counselling":"PEGylated uricase: rapidly lowers serum uric acid. For chronic gout refractory to conventional therapy. High immunogenicity.","mechanism_of_action":"Krystexxa","brand_names":["IV: t1/2 10-14 days"],"pregnancy_category":"For severe chronic refractory gout only~High infusion reaction rate (26%)~Anaphylaxis risk (monitor)~Serum uric acid should be <6 mg/mL (if rising = immunogenicity)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Lesinurad","generic_name":"Lesinurad","drug_class":"URAT1/OAT4 inhibitor (uricosuric)","drug_class_id":null,"drug_class_name":"Gout - Urate lowering","indications":["Gout (combination with XOI)"],"contraindications":["CrCl <30","Tumor lysis","Uric acid nephrolithiasis"],"side_effects":["Headache","GERD","Elevated creatinine"],"dosage":{"adult":"200mg daily (with XOI)"},"interactions":["None significant"],"monitoring":"Uric acid~Renal function","patient_counselling":"URAT1 and OAT4 inhibitor: blocks renal uric acid reabsorption, increasing uric acid excretion. Must use with XOI.","mechanism_of_action":"Zurampic","brand_names":["Bioavailability","100%","t1/2 1h"],"pregnancy_category":"Must use with allopurinol or febuxostat (not as monotherapy)","warnings":["Renal dose adjustment: avoid if CrCl <30"],"overdose":"200mg once daily","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Benzbromarone","generic_name":"Benzbromarone","drug_class":"URAT1 inhibitor (uricosuric)","drug_class_id":null,"drug_class_name":"Gout - Urate lowering","indications":["Chronic gout (refractory)"],"contraindications":["Hepatic impairment"],"side_effects":["Hepatotoxicity","Uric acid nephrolithiasis"],"dosage":{"adult":"50-200mg daily"},"interactions":["None significant"],"monitoring":"Uric acid~LFTs","patient_counselling":"Potent URAT1 inhibitor: blocks renal uric acid reabsorption. Available outside US.","mechanism_of_action":"Urnorman (not available in US)","brand_names":["t1/2 2-4h"],"pregnancy_category":"Not available in US due to hepatotoxicity concerns","warnings":["Very effective uricosuric","Potent uric acid reduction"],"overdose":"Used in Europe/Asia","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Probenecid","generic_name":"Probenecid","drug_class":"Uricosuric agent","drug_class_id":null,"drug_class_name":"Gout - Urate lowering","indications":["Chronic gout","Renal uric acid stones"],"contraindications":["CrCl <30","Uric acid nephrolithiasis"],"side_effects":["GI upset","Rash","Headache"],"dosage":{"adult":"500mg BID, titrate to 2g daily"},"interactions":["Penicillins (increases levels - historically used to prolong PCN effect)","NSAIDs (reduced uricosuric effect)","Methotrexate (increased levels)"],"monitoring":"Uric acid~Renal function","patient_counselling":"Blocks OAT1/OAT3 and URAT1, increasing renal uric acid excretion. Historically used to boost penicillin levels.","mechanism_of_action":"Benemid","brand_names":["Bioavailability 100%","t1/2 6-12h"],"pregnancy_category":"Historically used to prolong penicillin action~NSAIDs reduce uricosuric effect~Good for overproducers of uric acid~Prevent renal uric acid stones","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Auranofin","generic_name":"Rheumatology - DMARDs","drug_class":"Gold compound (oral)","drug_class_id":null,"drug_class_name":"Auranofin","indications":["Rheumatoid arthritis (historical)"],"contraindications":["Bone marrow aplasia","Hepatic impairment"],"side_effects":["Diarrhea (most common)","Skin rash","Stomatitis"],"dosage":{"adult":"3mg BID (6mg/day)"},"interactions":["None significant"],"monitoring":"CBC~LFTs","patient_counselling":"Gold compound: modulates immune function by inhibiting thioredoxin reductase. Historical DMARD.","mechanism_of_action":"Ridaura","brand_names":["Bioavailability 15-25%"],"pregnancy_category":"Diarrhea limits tolerability~Largely replaced by biologics~Low-dose (3mg/day) better tolerated","warnings":["Gold therapy historical"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Dapsone","generic_name":"Dermatology - Antimicrobials","drug_class":"Sulfone","drug_class_id":null,"drug_class_name":"Dapsone","indications":["Leprosy (multibacillary)","Dermatitis herpetiformis","Pneumocystis pneumonia (prophylaxis)"],"contraindications":["Severe G6PD deficiency"],"side_effects":["Hemolytic anemia (G6PD)","Methemoglobinemia","Peripheral neuropathy","Hepatotoxicity"],"dosage":{"adult":"50-300mg daily (varies by indication)"},"interactions":["Dapsone (hematologic toxicity)-folic acid antagonists"],"monitoring":"CBC~Reticulocyte count~G6PD","patient_counselling":"Inhibits bacterial folate synthesis (dapsone) and modulates neutrophil chemotaxis (anti-inflammatory at low doses).","mechanism_of_action":"Aczone (topical)","brand_names":["Bioavailability 70-80%","t1/2 28h"],"pregnancy_category":"G6PD testing essential (hemolytic anemia risk)~Methemoglobinemia: check methemoglobin level","warnings":["Also used topically for acne (Aczone 5% gel)"],"overdose":"Anti-inflammatory at low doses (dermatitis herpetiformis)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Isotretinoin","generic_name":"Dermatology - Retinoid","drug_class":"Retinoid (oral)","drug_class_id":null,"drug_class_name":"Isotretinoin","indications":["Severe nodulocystic acne (refractory)"],"contraindications":["Pregnancy (teratogenic - iPLEDGE required)"],"side_effects":["Dry skin/lips","Cheilitis","Elevated LFTs","Elevated triglycerides","Depression (controversial)"],"dosage":{"adult":"0.5-1 mg/kg/day x 15-20 weeks (cumulative dose 120-150 mg/kg)"},"interactions":["Vitamin A supplements (additive toxicity)","Tetracyclines (pseudotumor cerebri risk)"],"monitoring":"LFTs~Triglycerides~Pregnancy test monthly","patient_counselling":"iPLEDGE program: must use two forms of contraception. Normalizes sebaceous gland function.","mechanism_of_action":"Absorica~Amnesteem","brand_names":["Bioavailability: variable (take with fatty food)"],"pregnancy_category":"iPLEDGE program mandatory~Teratogenic: two forms of contraception required~Monthly pregnancy tests~Dry skin/lips universal~Depression monitoring (controversial)","warnings":["Also reduces sebum production permanently"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Acitretin","generic_name":"Dermatology - Retinoid","drug_class":"Retinoid (oral)","drug_class_id":null,"drug_class_name":"Acitretin","indications":["Severe psoriasis","Ichthyosis"],"contraindications":["Pregnancy (teratogenic)"],"side_effects":["Dry skin/lips","Elevated LFTs","Elevated triglycerides","Hair loss"],"dosage":{"adult":"25-50mg daily"},"interactions":["Alcohol (prolongs elimination - avoid for 2 months after)"],"monitoring":"LFTs~Triglycerides","patient_counselling":"Systemic retinoid for severe psoriasis. Contraindicated in pregnancy.","mechanism_of_action":"Soriatane","brand_names":["Bioavailability 60%","t1/2 49h (prolonged by alcohol)"],"pregnancy_category":"Avoid alcohol during and 2 months after treatment (prolongs half-life to ~160 days)","warnings":["Teratogenic: iPLEDGE program"],"overdose":"Useful for pustular/generalized pustular psoriasis","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Tazarotene","generic_name":"Dermatology - Retinoid","drug_class":"Retinoid (topical)","drug_class_id":null,"drug_class_name":"Tazarotene","indications":["Psoriasis (plaque)","Acne","Photoaging"],"contraindications":["Pregnancy (teratogenic)"],"side_effects":["Application site irritation","Dryness","Photosensitivity"],"dosage":{"adult":"Apply once daily (cream or gel)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical retinoid: normalizes keratinization and reduces inflammation.","mechanism_of_action":"Tazorac","brand_names":["Topical"],"pregnancy_category":"More potent topical retinoid than tretinoin~Also used for acne and photoaging","warnings":["Pregnancy category X (teratopic)"],"overdose":"Apply at bedtime","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Tretinoin","generic_name":"Dermatology - Retinoid","drug_class":"Retinoid (topical)","drug_class_id":null,"drug_class_name":"Tretinoin","indications":["Acne","Photoaging","Photodamage"],"contraindications":["Pregnancy (teratogenic)"],"side_effects":["Application site irritation","Photosensitivity","Dryness"],"dosage":{"adult":"Apply once daily at bedtime (cream/gel)"},"interactions":["Benzoyl peroxide (inactivates tretinoin if applied simultaneously)","Tetracyclines"],"monitoring":"None significant","patient_counselling":"Topical retinoid: normalizes follicular keratinization, stimulates collagen synthesis.","mechanism_of_action":"Retin-A","brand_names":["Topical"],"pregnancy_category":"Apply at bedtime~Avoid simultaneous benzoyl peroxide (separate by hours)","warnings":["Sunscreen essential (photosensitivity)"],"overdose":"Also used for photoaging (Renova 0.02%)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Adapalene","generic_name":"Dermatology - Retinoid","drug_class":"Retinoid (topical, third-generation)","drug_class_id":null,"drug_class_name":"Adapalene","indications":["Acne"],"contraindications":["Pregnancy (relatively safe - category C)"],"side_effects":["Application site irritation","Dryness"],"dosage":{"adult":"Apply once daily at bedtime"},"interactions":["Benzoyl peroxide (compatible - can use together)"],"monitoring":"None significant","patient_counselling":"Third-generation topical retinoid: selective for RAR-beta and RAR-gamma receptors. Less irritating than tretinoin.","mechanism_of_action":"Differin","brand_names":["Topical"],"pregnancy_category":"Less irritating than tretinoin~Can combine with benzoyl peroxide (Epiduo)","warnings":["Category C - relatively safe in pregnancy"],"overdose":"Available OTC (0.1%)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Benzoyl peroxide","generic_name":"Dermatology - Antibacterials","drug_class":"Topical oxidizing agent","drug_class_id":null,"drug_class_name":"Benzoyl peroxide","indications":["Acne"],"contraindications":["None significant"],"side_effects":["Skin irritation","Bleaching of fabrics","Dryness"],"dosage":{"adult":"Apply BID (2.5-10% wash/gel)"},"interactions":["Tretinoin (inactivates if applied simultaneously)"],"monitoring":"None significant","patient_counselling":"Oxidizing agent: kills C. acnes via free radical formation. No antibiotic resistance.","mechanism_of_action":"PanOxyl (wash)~Clearskin","brand_names":["Topical"],"pregnancy_category":"Kills C. acnes without promoting resistance~Can bleach fabrics and hair~Separate from tretinoin application (by hours)~Start with 2.5% (less irritation)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Clindamycin topical","generic_name":"Dermatology - Antibacterials","drug_class":"Topical lincosamide","drug_class_id":null,"drug_class_name":"Clindamycin (topical)","indications":["Acne"],"contraindications":["None significant"],"side_effects":["Skin irritation","Dryness"],"dosage":{"adult":"Apply BID to affected area"},"interactions":["Erythromycin (antagonistic)"],"monitoring":"None significant","patient_counselling":"Inhibits bacterial protein synthesis. Often combined with benzoyl peroxide to reduce resistance.","mechanism_of_action":"Cleocin T","brand_names":["Topical"],"pregnancy_category":"Usually combined with benzoyl peroxide~Monitor for C. difficile if systemic absorption (rare)","warnings":["Low systemic absorption topically"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Mupirocin","generic_name":"Dermatology - Antibacterials","drug_class":"Topical antibiotic","drug_class_id":null,"drug_class_name":"Mupirocin","indications":["Impetigo","MRSA nasal decolonization"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"Apply TID to affected area (skin)~BID to nares x 5 days (decolonization)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Inhibits bacterial isoleucyl-tRNA synthetase. Bactericidal against S. aureus and Streptococcus.","mechanism_of_action":"Bactroban","brand_names":["Topical"],"pregnancy_category":"Excellent for impetigo~Nasal decolonization: BID x 5 days~Short-term use only (resistance with prolonged use)","warnings":["Also available as cream and nasal ointment"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Daptomycin topical","generic_name":"Dermatology - Antimicrobials","drug_class":"Topical lipopeptide","drug_class_id":null,"drug_class_name":"Daptomycin (topical)","indications":["Burn wound infections (investigational)"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"Topical application to infected wound"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical formulation of daptomycin for burn wound infections (investigational).","mechanism_of_action":"Investigational","brand_names":["Topical"],"pregnancy_category":"For burn wound infections (research stage)","warnings":["May complement systemic daptomycin for burn patients"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Triamcinolone acetonide","generic_name":"Dermatology - Corticosteroids","drug_class":"Topical corticosteroid (medium potency)","drug_class_id":null,"drug_class_name":"Triamcinolone acetonide","indications":["Eczema","Dermatitis","Psoriasis","Insect bites"],"contraindications":["None significant"],"side_effects":["Skin atrophy","Striae","Telangiectasia"],"dosage":{"adult":"Apply BID-QID to affected area (0.1% cream)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Medium-potency topical corticosteroid for inflammatory dermatoses. Acetonide ester enhances skin penetration.","mechanism_of_action":"Kenalog","brand_names":["Topical"],"pregnancy_category":"Medium potency - avoid face/groin~Also available as IM depot (Kenalog-40) and dental paste (Kenalog in Orabase)","warnings":["Higher potency options available for severe disease"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Betamethasone dipropionate","generic_name":"See corticosteroids section","drug_class":"See corticosteroids section","drug_class_id":null,"drug_class_name":"See corticosteroids section","indications":["See corticosteroids section"],"contraindications":["See corticosteroids section"],"side_effects":["See corticosteroids section"],"dosage":{"adult":"See corticosteroids section"},"interactions":["See corticosteroids section"],"monitoring":"See corticosteroids section","patient_counselling":"See corticosteroids section","mechanism_of_action":"See corticosteroids section","brand_names":["See corticosteroids section"],"pregnancy_category":"See corticosteroids section","warnings":["See corticosteroids section"],"overdose":"See corticosteroids section","pharmacokinetics":"See corticosteroids section","black_box_warnings":["See corticosteroids section"],"clinical_pearls":["See corticosteroids section"],"created_at":""},
+    {"id":"bulk-014","name":"Clobetasol","generic_name":"Dermatology - Corticosteroids","drug_class":"Topical corticosteroid (superpotent)","drug_class_id":null,"drug_class_name":"Clobetasol","indications":["Severe recalcitrant dermatoses"],"contraindications":["None significant"],"side_effects":["Skin atrophy","Striae","Hypothalamic-pituitary-adrenal suppression (extensive)"],"dosage":{"adult":"Apply BID x 2 weeks max (0.05% cream)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Superpotent topical corticosteroid: highest potency available. Limit use to 2 weeks.","mechanism_of_action":"Temovate","brand_names":["Topical"],"pregnancy_category":"Superpotent (Class I) - strongest available~Limit use to 2 weeks maximum~Avoid face, groin, axillae~Risk of HPA suppression if extensive use","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Hydrocortisone (topical)","generic_name":"Dermatology - Corticosteroids","drug_class":"Topical corticosteroid (low potency)","drug_class_id":null,"drug_class_name":"Hydrocortisone (topical)","indications":["Mild eczema","Dermatitis","Insect bites"],"contraindications":["None significant"],"side_effects":["Skin atrophy (minimal with low potency)"],"dosage":{"adult":"Apply BID-QID (1% cream)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Low-potency topical corticosteroid: safe for face, groin, and pediatric use.","mechanism_of_action":"Cortaid","brand_names":["Topical"],"pregnancy_category":"Lowest potency - safe for sensitive areas","warnings":["Safe for face, groin, axillae","Can be used in infants"],"overdose":"Also available OTC","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Pimecrolimus","generic_name":"Dermatology - Calcineurin inhibitors","drug_class":"Topical calcineurin inhibitor","drug_class_id":null,"drug_class_name":"Pimecrolimus","indications":["Mild-moderate eczema (face/neck)"],"contraindications":["None significant"],"side_effects":["Application site reactions","Skin burning","Herpes simplex"],"dosage":{"adult":"Apply BID to affected areas"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Selective calcineurin inhibitor: reduces T-cell mediated inflammation without skin atrophy risk.","mechanism_of_action":"Elidel","brand_names":["Topical"],"pregnancy_category":"No skin atrophy risk (unlike corticosteroids)","warnings":["Safe for face, neck, and skin folds"],"overdose":"Black box warning: theoretical lymphoma risk (not confirmed)","pharmacokinetics":"Avoid in immunocompromised","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-017","name":"Tacrolimus (topical)","generic_name":"Dermatology - Calcineurin inhibitors","drug_class":"Topical calcineurin inhibitor","drug_class_id":null,"drug_class_name":"Tacrolimus (topical)","indications":["Moderate-severe eczema"],"contraindications":["None significant"],"side_effects":["Application site burning","Skin irritation","Herpes simplex"],"dosage":{"adult":"0.1% BID (adults)~0.03% BID (children)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Calcineurin inhibitor: reduces eczema flares and steroid use. More potent than pimecrolimus.","mechanism_of_action":"Protopic","brand_names":["Topical"],"pregnancy_category":"More potent than pimecrolimus for moderate-severe eczema~Application site burning common initially (decreases with use)","warnings":["No skin atrophy risk","Steroid-sparing agent","Black box warning: theoretical lymphoma risk (not confirmed)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-018","name":"Brimonidine","generic_name":"Ophthalmology - Glaucoma","drug_class":"Alpha-2 adrenergic agonist (ophthalmic)","drug_class_id":null,"drug_class_name":"Brimonidine","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Concomitant MAOIs"],"side_effects":["Allergic conjunctivitis","Dry mouth","Drowsiness"],"dosage":{"adult":"1 drop BID"},"interactions":["MAOIs (contraindicated)"],"monitoring":"IOP","patient_counselling":"Reduces aqueous humor production and increases uveoscleral outflow.","mechanism_of_action":"Alphagan","brand_names":["Onset 1h","Duration 7-8h"],"pregnancy_category":"BID dosing~Can cause allergic follicular conjunctivitis~Less effective than prostaglandins~Can cross BBB (drowsiness)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-019","name":"Dorzolamide","generic_name":"Ophthalmology - Glaucoma","drug_class":"Carbonic anhydrase inhibitor (ophthalmic)","drug_class_id":null,"drug_class_name":"Dorzolamide","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Severe renal impairment"],"side_effects":["Ocular stinging","Bitter taste","Keratopathy"],"dosage":{"adult":"1 drop TID in affected eye(s)"},"interactions":["High-dose oral carbonic anhydrase inhibitors (additive)"],"monitoring":"None significant","patient_counselling":"Inhibits carbonic anhydrase II in ciliary body, reducing aqueous humor production.","mechanism_of_action":"Trusopt","brand_names":["Onset 2h"],"pregnancy_category":"TID dosing disadvantage~Ocular stinging common~Caution in renal impairment~Can combine with timolol (Cosopt)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-020","name":"Brinzolamide","generic_name":"Ophthalmology - Glaucoma","drug_class":"Carbonic anhydrase inhibitor (ophthalmic)","drug_class_id":null,"drug_class_name":"Brinzolamide","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Severe renal impairment"],"side_effects":["Ocular discomfort","Bitter taste"],"dosage":{"adult":"1 drop BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Carbonic anhydrase inhibitor with suspension formulation (less stinging than dorzolamide).","mechanism_of_action":"Azopt","brand_names":["Onset 2h"],"pregnancy_category":"BID dosing (vs dorzolamide TID)~Less stinging than dorzolamide~Suspension formulation","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-021","name":"Pilocarpine","generic_name":"Ophthalmology - Glaucoma","drug_class":"Cholinergic agonist (miotic)","drug_class_id":null,"drug_class_name":"Pilocarpine","indications":["Angle-closure glaucoma (emergency)","Open-angle glaucoma"],"contraindications":["None significant"],"side_effects":["Miosis","Brow ache","Blurred vision","Bradycardia (if absorbed)"],"dosage":{"adult":"1-2 drops q15-6h (varies by formulation)"},"interactions":["Anticholinergics (antagonize effect)"],"monitoring":"IOP","patient_counselling":"Contracts ciliary muscle, opening trabecular meshwork and increasing aqueous outflow. Miotic.","mechanism_of_action":"Isopto Carpine","brand_names":["Onset 15-60 min"],"pregnancy_category":"For angle-closure emergency (pupillary block)~Miosis causes brow ache and blurred vision~Short-acting: multiple daily doses~Also used for dry mouth (Salagen 5mg TID)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-022","name":"Acetazolamide","generic_name":"Ophthalmology - Glaucoma","drug_class":"Carbonic anhydrase inhibitor (oral)","drug_class_id":null,"drug_class_name":"Acetazolamide","indications":["Open-angle glaucoma","Altitude sickness","Edema (heart failure)"],"contraindications":["Severe renal impairment","Hypokalemia","Metabolic acidosis"],"side_effects":["Paresthesias","Hypokalemia","Metabolic acidosis","Anorexia","Drowsiness"],"dosage":{"adult":"250-500mg BID or 250mg SR daily"},"interactions":["High-dose aspirin (metabolic acidosis risk)"],"monitoring":"K+~Bicarbonate~Electrolytes","patient_counselling":"Inhibits carbonic anhydrase, reducing aqueous humor production and causing metabolic acidosis.","mechanism_of_action":"Diamox","brand_names":["Bioavailability 100%","t1/2 2.5-6h"],"pregnancy_category":"Paresthesias very common (tingling in fingers/toes)","warnings":["Also used for altitude sickness prophylaxis","Metabolic acidosis expected (bicarbonate supplementation if symptomatic)"],"overdose":"Also used for idiopathic intracranial hypertension","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-023","name":"Methazolamide","generic_name":"Ophthalmology - Glaucoma","drug_class":"Carbonic anhydrase inhibitor (oral)","drug_class_id":null,"drug_class_name":"Methazolamide","indications":["Open-angle glaucoma"],"contraindications":["Severe renal impairment"],"side_effects":["Metabolic acidosis","Hypokalemia","Paresthesias"],"dosage":{"adult":"25-50mg BID"},"interactions":["High-dose aspirin"],"monitoring":"K+","patient_counselling":"Carbonic anhydrase inhibitor with better ocular penetration than acetazolamide.","mechanism_of_action":"Neptazane","brand_names":["Bioavailability","t1/2 14h"],"pregnancy_category":"Longer half-life than acetazolamide (BID vs QID)","warnings":["Better ocular penetration","Less paresthesias than acetazolamide"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-024","name":"Brimonidine + timolol","generic_name":"Combigan","drug_class":"Alpha-2 agonist + beta-blocker (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Asthma/COPD","Sinus bradycardia"],"side_effects":["Ocular hyperemia","Bitter taste","Allergic conjunctivitis"],"dosage":{"adult":"1 drop BID"},"interactions":["MAOIs (contraindicated)"],"monitoring":"IOP","patient_counselling":"Fixed combination: reduces aqueous humor production via dual mechanism.","mechanism_of_action":"Combigan","brand_names":["Onset 1h"],"pregnancy_category":"BID dosing convenience~Dual mechanism better than monotherapy~Avoid in reactive airway disease","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-025","name":"Latanoprost + timolol","generic_name":"Fixtimal","drug_class":"Prostaglandin + beta-blocker (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Asthma/COPD","Sinus bradycardia"],"side_effects":["Iris pigmentation","Conjunctival hyperemia"],"dosage":{"adult":"1 drop once daily in evening"},"interactions":["MAOIs (contraindicated)"],"monitoring":"IOP","patient_counselling":"Fixed combination for maximum IOP reduction.","mechanism_of_action":"Fixtimal","brand_names":["Once daily","Dual mechanism","Iris pigmentation risk from latanoprost component"],"pregnancy_category":"C","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Oxybutynin","generic_name":"Oxybutynin","drug_class":"Antimuscarinic (anticholinergic)","drug_class_id":null,"drug_class_name":"Urology - Overactive bladder","indications":["Overactive bladder"],"contraindications":["Urinary retention","Uncontrolled narrow-angle glaucoma"],"side_effects":["Dry mouth (most common)","Constipation","Blurred vision","Drowsiness"],"dosage":{"adult":"5mg BID-TID (IR) or 5-10mg daily (XL)"},"interactions":["CYP3A4 inhibitors"],"monitoring":"None significant","patient_counselling":"Blocks M3 receptors on detrusor smooth muscle, reducing involuntary bladder contractions.","mechanism_of_action":"Ditropan","brand_names":["Bioavailability 6-30%","t1/2 2-3h"],"pregnancy_category":"IR: BID-TID dosing~XL: once daily (better tolerability)","warnings":["Patch: fewer GI effects than oral"],"overdose":"Also available as topical gel (Oxytrol)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Solifenacin","generic_name":"Solifenacin","drug_class":"Antimuscarinic (selective M3)","drug_class_id":null,"drug_class_name":"Urology - Overactive bladder","indications":["Overactive bladder"],"contraindications":["Urinary retention","Uncontrolled narrow-angle glaucoma"],"side_effects":["Dry mouth","Constipation","Blurred vision"],"dosage":{"adult":"5-10mg daily"},"interactions":["CYP3A4 inhibitors (increase levels)"],"monitoring":"None significant","patient_counselling":"Selective M3 muscarinic antagonist for bladder relaxation. Better GI tolerability than oxybutynin.","mechanism_of_action":"Vesicare","brand_names":["Bioavailability 90%","t1/2 45-68h"],"pregnancy_category":"Once daily dosing~Less dry mouth than oxybutynin~Long half-life allows once daily","warnings":["Also available with mirabegron (Vibegzon)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Fesoterodine","generic_name":"Urology - Antimuscarinics","drug_class":"Antimuscarinic (active metabolite of tolterodine)","drug_class_id":null,"drug_class_name":"Fesoterodine","indications":["Overactive bladder"],"contraindications":["Urinary retention","Uncontrolled narrow-angle glaucoma"],"side_effects":["Dry mouth","Constipation","Drowsiness"],"dosage":{"adult":"4-8mg daily"},"interactions":["CYP3A4 inhibitors (reduced to 4mg)"],"monitoring":"None significant","patient_counselling":"Prodrug converted to active metabolite (5-HMT) by esterases. Similar efficacy to tolterodine but more flexible dosing.","mechanism_of_action":"Toviaz","brand_names":["Bioavailability 52%","t1/2 7-8h (active metabolite 10-14h)"],"pregnancy_category":"Flexible dosing 4-8mg daily~Also available as ER formulation","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Darifenacin","generic_name":"Urology - Antimuscarinics","drug_class":"Antimuscarinic (M3-selective)","drug_class_id":null,"drug_class_name":"Darifenacin","indications":["Overactive bladder"],"contraindications":["Urinary retention","Uncontrolled narrow-angle glaucoma"],"side_effects":["Dry mouth","Constipation","Blurred vision"],"dosage":{"adult":"7.5mg daily, max 15mg daily"},"interactions":["CYP3A4/CYP2D6 inhibitors"],"monitoring":"None significant","patient_counselling":"Selective M3 receptor antagonist: most M3-selective antimuscarinic for OAB.","mechanism_of_action":"Enablex","brand_names":["Bioavailability 15-25%","t1/2 12-15h (active metabolite 17h)"],"pregnancy_category":"Most M3-selective antimuscarinic~CYP2D6 poor metabolizers: max 7.5mg","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Tolterodine","generic_name":"Urology - Antimuscarinics","drug_class":"Antimuscarinic","drug_class_id":null,"drug_class_name":"Tolterodine","indications":["Overactive bladder"],"contraindications":["Urinary retention","Uncontrolled narrow-angle glaucoma"],"side_effects":["Dry mouth","Constipation","Blurred vision"],"dosage":{"adult":"2mg BID (IR) or 4mg daily (XL)"},"interactions":["CYP2D6/3A4 inhibitors (reduce to 1mg BID)"],"monitoring":"None significant","patient_counselling":"Blocks muscarinic receptors on detrusor muscle. Active metabolite (5-HMT) also pharmacologically active.","mechanism_of_action":"Detrol","brand_names":["Bioavailability 30-55%","t1/2 2-4h (active metabolite 9-12h)"],"pregnancy_category":"IR: BID dosing; XL: once daily","warnings":["CYP2D6 poor metabolizers have higher levels","Also available with tolterodine LA (IM monthly)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Dutasteride","generic_name":"Dutasteride","drug_class":"5-alpha reductase inhibitor (dual type 1/2)","drug_class_id":null,"drug_class_name":"Urology - BPH","indications":["BPH (combination with tamsulosin)"],"contraindications":["Women and children (teratogenic)"],"side_effects":["Erectile dysfunction","Decreased libido","Gynecomastia"],"dosage":{"adult":"0.5mg daily"},"interactions":["CYP3A4 inhibitors"],"monitoring":"PSA (reduce by ~50%)","patient_counselling":"Dual 5-alpha reductase inhibitor (type 1 and 2): more complete DHT suppression than finasteride.","mechanism_of_action":"Avodart","brand_names":["Bioavailability 60%","t1/2 5 weeks (very long)"],"pregnancy_category":"Very long half-life: effects persist months after discontinuation","warnings":["Dual type 1+2 inhibition (vs finasteride type 2 only)"],"overdose":"Also combined with tamsulosin (Jalyn)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Alfuzosin","generic_name":"Urology - Alpha blockers","drug_class":"Alpha-1 blocker (uroselective)","drug_class_id":null,"drug_class_name":"Alfuzosin","indications":["BPH"],"contraindications":["Severe hepatic impairment"],"side_effects":["Orthostatic hypotension","Dizziness","Headache"],"dosage":{"adult":"10mg daily (ER)"},"interactions":["CYP3A4 inhibitors (avoid)"],"monitoring":"None significant","patient_counselling":"Uroselective alpha-1 antagonist with less effect on blood pressure.","mechanism_of_action":"Uroxatral","brand_names":["Bioavailability 49-64%","t1/2 8-10h"],"pregnancy_category":"Uroselective properties~Less orthostatic hypotension than non-selective alpha blockers","warnings":["10mg ER once daily"],"overdose":"Take with food","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Silodosin","generic_name":"Urology - Alpha blockers","drug_class":"Alpha-1A ultra-selective blocker","drug_class_id":null,"drug_class_name":"Silodosin","indications":["BPH"],"contraindications":["Severe hepatic impairment"],"side_effects":["Retrograde ejaculation (28%)","Orthostatic hypotension","Dizziness"],"dosage":{"adult":"8mg daily (with food)"},"interactions":["PDE5 inhibitors (additive hypotension)"],"monitoring":"None significant","patient_counselling":"Most alpha-1A selective blocker: highest rate of retrograde ejaculation but least orthostatic hypotension.","mechanism_of_action":"Rapaflo","brand_names":["Bioavailability 12.5%","t1/2 13-16h"],"pregnancy_category":"Most alpha-1A selective - retrograde ejaculation in 28% but usually tolerable","warnings":["Take with food and water"],"overdose":"No dose adjustment in renal impairment","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Doxazosin ER","generic_name":"Urology - Alpha blockers","drug_class":"Alpha-1 blocker ER","drug_class_id":null,"drug_class_name":"Doxazosin ER","indications":["BPH"],"contraindications":["Same as doxazosin IR"],"side_effects":["Same as IR"],"dosage":{"adult":"Same as IR"},"interactions":["4-8mg daily"],"monitoring":"Same as IR","patient_counselling":"None significant","mechanism_of_action":"Extended-release formulation for once-daily dosing.","brand_names":["Cardura XL"],"pregnancy_category":"t1/2 22h","warnings":["Once daily ER"],"overdose":"Start 4mg, titrate to 8mg","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Avanafil","generic_name":"Urology - PDE5 inhibitor","drug_class":"PDE5 inhibitor (most selective)","drug_class_id":null,"drug_class_name":"Avanafil","indications":["Erectile dysfunction"],"contraindications":["Nitrates (contraindicated)"],"side_effects":["Headache","Flushing","Nasal congestion","Back pain"],"dosage":{"adult":"50-200mg PRN"},"interactions":["Nitrates (contraindicated)"],"monitoring":"None significant","patient_counselling":"Most PDE5-selective inhibitor: fastest onset (15 min) and fewest visual side effects.","mechanism_of_action":"Stendra","brand_names":["Bioavailability 65%","t1/2 5h"],"pregnancy_category":"Fastest onset PDE5i (15 min)","warnings":["Fewest visual side effects"],"overdose":"Take 15-30 min before activity","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Vardenafil","generic_name":"Urology - PDE5 inhibitor","drug_class":"PDE5 inhibitor","drug_class_id":null,"drug_class_name":"Vardenafil","indications":["Erectile dysfunction"],"contraindications":["Nitrates (contraindicated)","QT prolongation"],"side_effects":["Headache","Flushing","Dizziness","QT prolongation"],"dosage":{"adult":"5-20mg PRN"},"interactions":["QT-prolonging drugs","Nitrates (contraindicated)"],"monitoring":"ECG (QTc)","patient_counselling":"PDE5 inhibitor. Also available as orally disintegrating tablet (Levitra ODT).","mechanism_of_action":"Levitra","brand_names":["Bioavailability 15%","t1/2 4-5h"],"pregnancy_category":"ODT formulation available (no water needed)","warnings":["QTc prolongation at high doses","Avoid with QT-prolonging drugs"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Oxybutynin topical","generic_name":"Urology - Antimuscarinics","drug_class":"Antimuscarinic (transdermal)","drug_class_id":null,"drug_class_name":"Oxybutynin topical","indications":["Overactive bladder"],"contraindications":["None significant"],"side_effects":["Application site reactions","Dry mouth (less than oral)"],"dosage":{"adult":"Apply to abdomen, upper arms, or buttocks daily"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Transdermal formulation: bypasses first-pass metabolism, reducing systemic side effects (especially dry mouth).","mechanism_of_action":"Oxytrol","brand_names":["Transdermal"],"pregnancy_category":"Less dry mouth than oral (27% vs 94%)~Apply to dry, intact skin~Change patch twice weekly","warnings":["Also available as topical gel"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Desmopressin nasal","generic_name":"Urology - Antidiuretic","drug_class":"Vasopressin analogue (nasal)","drug_class_id":null,"drug_class_name":"Desmopressin nasal","indications":["Nocturnal enuresis","Central diabetes insipidus"],"contraindications":["Hyponatremia"],"side_effects":["Hyponatremia","Headache"],"dosage":{"adult":"1-2 sprays at bedtime (enuresis)"},"interactions":["None significant"],"monitoring":"Sodium level","patient_counselling":"Nasal formulation: better absorption than oral for enuresis and DI.","mechanism_of_action":"DDAVP nasal","brand_names":["Bioavailability: nasal 3-5%"],"pregnancy_category":"Nasal spray for enuresis and DI","warnings":["More effective than oral for DI"],"overdose":"Monitor sodium","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-014","name":"Midodrine","generic_name":"Urology - Vasopressor","drug_class":"Alpha-1 agonist (prodrug)","drug_class_id":null,"drug_class_name":"Midodrine","indications":["Orthostatic hypotension"],"contraindications":["Severe supine hypertension"],"side_effects":["Supine hypertension","Piloerection","Urinary retention"],"dosage":{"adult":"2.5-10mg TID (take last dose before bed)"},"interactions":["None significant"],"monitoring":"BP (supine and standing)","patient_counselling":"Prodrug converted to desglymidodrine: alpha-1 agonist causing arterial/venous constriction.","mechanism_of_action":"ProAmatine","brand_names":["Bioavailability 93%","t1/2 25-30h (active metabolite 3.4h)"],"pregnancy_category":"Take during daytime only - last dose at least 4h before bedtime~Avoid supine position~Monitor supine BP","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Droxidopa","generic_name":"Urology - Vasopressor","drug_class":"Norepinephrine prodrug","drug_class_id":null,"drug_class_name":"Droxidopa","indications":["Neurogenic orthostatic hypotension (Parkinson's","MSA","POTS)"],"contraindications":["None significant"],"side_effects":["Supine hypertension","Headache","Nausea"],"dosage":{"adult":"100mg TID, titrate to max 600mg TID"},"interactions":["None significant"],"monitoring":"BP (supine and standing)","patient_counselling":"Prodrug converted to norepinephrine in vivo. Increases peripheral vascular resistance.","mechanism_of_action":"Northera","brand_names":["Bioavailability","t1/2 2-3h"],"pregnancy_category":"Take during daytime only~Avoid late evening dosing (supine hypertension)","warnings":["Also available in Japan/Europe"],"overdose":"For neurogenic orthostatic hypotension","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Ondansetron (PRV)","generic_name":"Urology - Antiemetic","drug_class":"5-HT3 antagonist (for nausea)","drug_class_id":null,"drug_class_name":"Ondansetron PRV","indications":["Chemotherapy-induced nausea"],"contraindications":["Concomitant apomorphine (contraindicated)"],"side_effects":["Headache","Constipation"],"dosage":{"adult":"4-8mg IV/PO"},"interactions":["See antiemetics section"],"monitoring":"See antiemetics section","patient_counselling":"See antiemetics section","mechanism_of_action":"See antiemetics section","brand_names":["See antiemetics section"],"pregnancy_category":"See antiemetics section","warnings":["See antiemetics section"],"overdose":"See antiemetics section","pharmacokinetics":"See antiemetics section","black_box_warnings":["See antiemetics section"],"clinical_pearls":["See antiemetics section"],"created_at":""},
+    {"id":"bulk-017","name":"Minoxidil","generic_name":"Dermatology - Hair growth","drug_class":"K+ channel opener (topical)","drug_class_id":null,"drug_class_name":"Minoxidil","indications":["Androgenetic alopecia (male/female)"],"contraindications":["None significant"],"side_effects":["Scalp irritation","Hypertrichosis (unwanted hair growth)","Dizziness"],"dosage":{"adult":"5% topical BID (men)~2-5% (women)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Opens ATP-sensitive potassium channels in hair follicles, prolonging anagen phase and stimulating growth.","mechanism_of_action":"Rogaine","brand_names":["Topical"],"pregnancy_category":"5% foam for men, 2% liquid for women~Apply BID to scalp~Results take 4-6 months~Hypertrichosis possible","warnings":["Also available as oral low-dose for refractory alopecia (off-label)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-018","name":"Spironolactone (topical)","generic_name":"Dermatology - Anti-androgen","drug_class":"Topical anti-androgen","drug_class_id":null,"drug_class_name":"Spironolactone topical","indications":["Female pattern hair loss"],"contraindications":["None significant"],"side_effects":["Contact dermatitis"],"dosage":{"adult":"Apply to affected areas BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical anti-androgen: blocks DHT receptor in hair follicle. Alternative to oral spironolactone.","mechanism_of_action":"Investigational","brand_names":["Topical"],"pregnancy_category":"For female pattern hair loss (topical formulation under investigation)","warnings":["Less systemic effects than oral spironolactone"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-019","name":"Cyproterone","generic_name":"Dermatology - Anti-androgen","drug_class":"Anti-androgen (progestogen)","drug_class_id":null,"drug_class_name":"Cyproterone","indications":["Severe hirsutism","Acne (with ethinyl estradiol)"],"contraindications":["Hepatic impairment","Meningioma"],"side_effects":["Hepatotoxicity","Hepatocellular carcinoma (rare)","Depression"],"dosage":{"adult":"50mg daily (with ethinyl estradiol in CPA/EE)"},"interactions":["None significant"],"monitoring":"LFTs","patient_counselling":"Competitive androgen receptor antagonist and progestogen. Blocks testosterone/DHT effects.","mechanism_of_action":"Androcur (not available US)","brand_names":["Bioavailability 60-80%"],"pregnancy_category":"Not available in US (hepatotoxicity concerns)","warnings":["Used in Europe for severe hirsutism and acne"],"overdose":"Combined with ethinyl estradiol as Dianette/Diane-35","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-020","name":"Eflornithine","generic_name":"Dermatology - Anti-hirsutism","drug_class":"Ornithine decarboxylase inhibitor (topical)","drug_class_id":null,"drug_class_name":"Eflornithine","indications":["Facial hirsutism (women)"],"contraindications":["None significant"],"side_effects":["Skin irritation","Acne","Folliculitis"],"dosage":{"adult":"Apply BID to affected facial areas"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Inhibits ornithine decarboxylase, reducing hair growth rate. Slows (does not remove) facial hair.","mechanism_of_action":"Vaniqa","brand_names":["Topical"],"pregnancy_category":"Apply BID - results take 8-24 weeks","warnings":["Slows hair growth (does not remove existing hair)"],"overdose":"Combine with other hair removal methods for best results","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-021","name":"Calcipotriene","generic_name":"Dermatology - Vitamin D analogue","drug_class":"Topical vitamin D analogue","drug_class_id":null,"drug_class_name":"Calcipotriene","indications":["Plaque psoriasis"],"contraindications":["None significant"],"side_effects":["Skin irritation","Calcium elevation (extensive use)"],"dosage":{"adult":"Apply BID to affected areas"},"interactions":["None significant"],"monitoring":"Calcium (if extensive use)","patient_counselling":"Synthetic vitamin D analogue: inhibits keratinocyte proliferation and promotes differentiation.","mechanism_of_action":"Dovonex","brand_names":["Topical"],"pregnancy_category":"Apply BID to affected areas~Calcium monitoring if >100g/week used~Also available as combination with betamethasone (Enstilar foam)","warnings":["Calcium elevation with extensive use"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-022","name":"Calcipotriene/betamethasone","generic_name":"Enstilar","drug_class":"Vitamin D analogue + corticosteroid (topical)","drug_class_id":null,"drug_class_name":"Dermatology - Combination","indications":["Plaque psoriasis"],"contraindications":["None significant"],"side_effects":["Skin atrophy (betamethasone component)","Irritation"],"dosage":{"adult":"Apply BID for up to 4 weeks"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Fixed combination: calcipotriene for keratinocyte normalization + betamethasone for anti-inflammation.","mechanism_of_action":"Enstilar","brand_names":["Topical"],"pregnancy_category":"Foam formulation: easy application","warnings":["Limit use to 4 weeks (corticosteroid component)"],"overdose":"Very effective combination for plaque psoriasis","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-023","name":"Tacrolimus (topical)","generic_name":"See dermatology section","drug_class":"See dermatology section","drug_class_id":null,"drug_class_name":"See dermatology section","indications":["See dermatology section"],"contraindications":["See dermatology section"],"side_effects":["See dermatology section"],"dosage":{"adult":"See dermatology section"},"interactions":["See dermatology section"],"monitoring":"See dermatology section","patient_counselling":"See dermatology section","mechanism_of_action":"See dermatology section","brand_names":["See dermatology section"],"pregnancy_category":"See dermatology section","warnings":["See dermatology section"],"overdose":"See dermatology section","pharmacokinetics":"See dermatology section","black_box_warnings":["See dermatology section"],"clinical_pearls":["See dermatology section"],"created_at":""},
+    {"id":"bulk-001","name":"Cidofovir","generic_name":"Antiviral (nucleotide analogue)","drug_class":"CMV DNA polymerase inhibitor","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["CMV retinitis (immunocompromised)"],"contraindications":["Severe renal impairment"],"side_effects":["Nephrotoxicity (dose-limiting)","Neutropenia"],"dosage":{"adult":"5 mg/kg IV weekly x2, then q2 weeks (with probenecid and hydration)"},"interactions":["NSAIDs (nephrotoxicity potentiation)"],"monitoring":"Renal function~Creatinine","patient_counselling":"Nucleotide analogue: does not require viral kinase for activation. Active against CMV and adenovirus.","mechanism_of_action":"Vistide","brand_names":["IV: t1/2 2.6h (but intracellular t1/2 much longer)"],"pregnancy_category":"Probenecid pre-treatment required (reduces nephrotoxicity)","warnings":["Aggressive hydration essential"],"overdose":"Nephrotoxic: monitor renal function closely","pharmacokinetics":"For CMV retinitis in AIDS patients","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Foscarnet","generic_name":"Antiviral (pyrophosphate analogue)","drug_class":"CMV DNA polymerase inhibitor","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["CMV retinitis (ganciclovir-resistant)","Acyclovir-resistant HSV"],"contraindications":["Severe renal impairment"],"side_effects":["Nephrotoxicity","Electrolyte abnormalities (hypocalcemia","hypokalemia","hypomagnesemia)","Seizures"],"dosage":{"adult":"60mg/kg IV q8h or 90mg/kg q12h"},"interactions":["Pentamidine (nephrotoxicity potentiation)"],"monitoring":"Renal function~Electrolytes~Ionized calcium","patient_counselling":"Directly inhibits viral DNA polymerase without requiring phosphorylation. Pyrophosphate analogue.","mechanism_of_action":"Foscavir","brand_names":["IV: t1/2 3.3h"],"pregnancy_category":"Does not require viral thymidine kinase for activation (active against TK-deficient strains)","warnings":["Electrolyte monitoring essential (Ca2+, K+, Mg2+)"],"overdose":"Nephrotoxic: aggressive hydration","pharmacokinetics":"For ganciclovir-resistant CMV","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Entecavir","generic_name":"Antiviral (nucleoside analogue)","drug_class":"HBV DNA polymerase reverse transcriptase inhibitor","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Chronic hepatitis B"],"contraindications":["None significant"],"side_effects":["Headache","Fatigue","Nausea"],"dosage":{"adult":"0.5mg daily (lamivudine-naive) or 1mg daily (lamivudine-resistant)"},"interactions":["None significant"],"monitoring":"HBV DNA~LFTs~Renal function","patient_counselling":"Potent nucleoside analogue: inhibits all three activities of HBV polymerase (base priming, reverse transcription, DNA synthesis).","mechanism_of_action":"Baraclude","brand_names":["Oral bioavailability 100%","t1/2 15h (intracellular","15h)"],"pregnancy_category":"More potent than lamivudine","warnings":["Low barrier to resistance (if lamivudine-resistant: 1mg daily)"],"overdose":"Renal dose adjustment needed","pharmacokinetics":"First-line for chronic hepatitis B","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Tenofovir (for HBV)","generic_name":"See antiretrovirals section","drug_class":"See antiretrovirals section","drug_class_id":null,"drug_class_name":"See antiretrovirals section","indications":["See antiretrovirals section"],"contraindications":["See antiretrovirals section"],"side_effects":["See antiretrovirals section"],"dosage":{"adult":"See antiretrovirals section"},"interactions":["See antiretrovirals section"],"monitoring":"See antiretrovirals section","patient_counselling":"See antiretrovirals section","mechanism_of_action":"See antiretrovirals section","brand_names":["See antiretrovirals section"],"pregnancy_category":"See antiretrovirals section","warnings":["See antiretrovirals section"],"overdose":"See antiretrovirals section","pharmacokinetics":"See antiretrovirals section","black_box_warnings":["See antiretrovirals section"],"clinical_pearls":["See antiretrovirals section"],"created_at":""},
+    {"id":"bulk-005","name":"Pegylated interferon alpha","generic_name":"Immunomodulator (pegylated)","drug_class":"Immune response modifier","drug_class_id":null,"drug_class_name":"Infectious disease - Immunomodulators","indications":["Chronic hepatitis B","Chronic hepatitis C (historical)"],"contraindications":["Decompensated cirrhosis","Autoimmune disease"],"side_effects":["Flu-like symptoms","Depression","Neutropenia","Thrombocytopenia","Hypothyroidism"],"dosage":{"adult":"180mcg SC weekly (HCV) or 12-18mcg/kg weekly (HBV)"},"interactions":["Myelosuppressive drugs"],"monitoring":"CBC~TFTs~LFTs","patient_counselling":"Pegylated interferon-alpha: stimulates innate and adaptive immune response against hepatitis virus.","mechanism_of_action":"Pegasys (alfa-2a)~PegIntron (alfa-2b)","brand_names":["SC: t1/2 80h (alfa-2a)","50h (alfa-2b)"],"pregnancy_category":"Pegylation extends half-life to allow weekly dosing","warnings":["Flu-like symptoms very common (manage with acetaminophen)"],"overdose":"Depression screening important","pharmacokinetics":"Mostly historical for HCV (replaced by DAAs)","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Sofosbuvir/velpatasvir","generic_name":"Antiviral combination (HCV NS5B + NS5A)","drug_class":"Direct-acting antiviral combination","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Hepatitis C (all genotypes)"],"contraindications":["None significant"],"side_effects":["Nausea","Fatigue","Headache","Anemia (with ribavirin)"],"dosage":{"adult":"400/100mg daily x12 weeks (with or without ribavirin)"},"interactions":["Amiodarone (severe bradycardia risk)"],"monitoring":"None significant","patient_counselling":"Sofosbuvir: NS5B polymerase inhibitor. Velpatasvir: NS5A inhibitor. Pan-genotypic cure.","mechanism_of_action":"Epclusa","brand_names":["Bioavailability: sofosbuvir 70%","t1/2: sofosbuvir 0.5h (prodrug), active metabolite 25h"],"pregnancy_category":"Pan-genotypic HCV cure (95%+ SVR)","warnings":["Amiodarone interaction: severe bradycardia - avoid combination"],"overdose":"12 weeks standard, 16 weeks with ribavirin for cirrhosis","pharmacokinetics":"First pan-genotypic DAA combination","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Glecaprevir/pibrentasvir","generic_name":"Antiviral combination (HCV NS3/4A + NS5A)","drug_class":"Direct-acting antiviral combination","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Hepatitis C (all genotypes, non-cirrhotic)"],"contraindications":["Child-Pugh C (contraindicated)"],"side_effects":["Nausea","Headache","Fatigue"],"dosage":{"adult":"300/125mg TID x8 weeks (non-cirrhotic)"},"interactions":["P-gp/strong CYP3A4 inhibitors"],"monitoring":"None significant","patient_counselling":"Glecaprevir: NS3/4A protease inhibitor. Pibrentasvir: NS5A inhibitor (pan-genotypic). High barrier to resistance.","mechanism_of_action":"Mavyret","brand_names":["Bioavailability: glecaprevir 21%","pibrentasvir 77%"],"pregnancy_category":"Pan-genotypic: 8 weeks for non-cirrhotic treatment-naive","warnings":["Contraindicated in Child-Pugh C cirrhosis"],"overdose":"TID dosing (3 tablets with food)","pharmacokinetics":"High SVR rates across all genotypes","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Voxilaprevir/sofosbuvir/velpatasvir","generic_name":"Antiviral combination (HCV NS5A/NS5B/NS3)","drug_class":"DAA triple combination","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Hepatitis C (treatment-experienced with NS5A resistance)"],"contraindications":["Child-Pugh B/C"],"side_effects":["Diarrhea","Nausea","Headache"],"dosage":{"adult":"Viekira Pak XR: see separately"},"interactions":["Strong CYP3A4 inducers"],"monitoring":"None significant","patient_counselling":"Triple DAA combination for treatment-experienced patients with NS5A resistance.","mechanism_of_action":"Vosevi","brand_names":["Bioavailability varies"],"pregnancy_category":"For retreatment of HCV after prior DAA failure","warnings":["NS3/4A + NS5A + NS5B inhibitors combined"],"overdose":"12 weeks standard","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Ledipasvir/sofosbuvir","generic_name":"Antiviral combination (HCV NS5A + NS5B)","drug_class":"Direct-acting antiviral combination","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Hepatitis C genotype 1"],"contraindications":["None significant"],"side_effects":["Fatigue","Headache","Nausea","Anemia (with ribavirin)"],"dosage":{"adult":"90/400mg daily x12 weeks"},"interactions":["Amiodarone (bradycardia risk)"],"monitoring":"None significant","patient_counselling":"Ledipasvir: NS5A inhibitor. Sofosbuvir: NS5B polymerase inhibitor. Effective for GT1.","mechanism_of_action":"Harvoni","brand_names":["Bioavailability: similar to sofosbuvir"],"pregnancy_category":"First combination single-tablet DAA cure for HCV GT1","warnings":["Amiodarone interaction: severe bradycardia"],"overdose":"Also effective for GT4, GT5, GT6 (pan-genotypic now superseded by Epclusa)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Daclatasvir/sofosbuvir","generic_name":"Antiviral combination (HCV NS5A + NS5B)","drug_class":"Direct-acting antiviral combination","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Hepatitis C (all genotypes)"],"contraindications":["None significant"],"side_effects":["Fatigue","Headache","Nausea"],"dosage":{"adult":"60/400mg daily x12 weeks"},"interactions":["CYP3A4 inducers (reduce daclatasvir dose to 30mg)"],"monitoring":"None significant","patient_counselling":"Daclatasvir: NS5A inhibitor. Sofosbuvir: NS5B inhibitor. Pan-genotypic combination.","mechanism_of_action":"Daklinza + Sovaldi","brand_names":["CYP3A4 interaction"],"pregnancy_category":"Less commonly used now (superseded by fixed-dose combinations)","warnings":["CYP3A4 inducers: reduce daclatasvir to 30mg"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Elbasvir/grazoprevir","generic_name":"Antiviral combination (HCV NS5A + NS3/4A)","drug_class":"Direct-acting antiviral combination","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Hepatitis C genotype 1, 4"],"contraindications":["Child-Pugh B/C"],"side_effects":["Nausea","Fatigue","Headache","ALT elevation"],"dosage":{"adult":"50/100mg daily x12-16 weeks"},"interactions":["CYP3A4 inhibitors (reduce dose)","PPIs (reduce grazoprevir absorption)"],"monitoring":"ALT monitoring","patient_counselling":"Elbasvir: NS5A inhibitor. Grazoprevir: NS3/4A protease inhibitor. Effective for GT1/4.","mechanism_of_action":"Zepatier","brand_names":["Bioavailability: 20-30%"],"pregnancy_category":"For HCV GT1 and GT4","warnings":["ALT monitoring recommended"],"overdose":"12-16 weeks (16 weeks if GT1a with NS5A resistance-associated substitutions)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Ombitasvir/paritaprevir/ritonavir + dasabuvir","generic_name":"Antiviral combination (HCV NS5A/NS3/4A/NS5B)","drug_class":"3D/2D regimen","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Hepatitis C genotype 1"],"contraindications":["Child-Pugh B/C"],"side_effects":["Nausea","Fatigue","Anemia (with ribavirin)"],"dosage":{"adult":"2 tablets + 1 dasabuvir BID x12-16 weeks"},"interactions":["Strong CYP3A4 inhibitors"],"monitoring":"None significant","patient_counselling":"Ombitasvir: NS5A. Paritaprevir: NS3/4A (boosted by ritonavir). Dasabuvir: NS5B (non-nucleoside).","mechanism_of_action":"Viekira Pak","brand_names":["CYP3A4 interaction"],"pregnancy_category":"2D regimen without dasabuvir for GT1b","warnings":["Anemia with ribavirin component"],"overdose":"12-16 weeks","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Dorzavir/ritonavir","generic_name":"HIV protease inhibitor (boosted)","drug_class":"Protease inhibitor (boosted)","drug_class_id":null,"drug_class_name":"See antiretrovirals section","indications":["See antiretrovirals section"],"contraindications":["See antiretrovirals section"],"side_effects":["See antiretrovirals section"],"dosage":{"adult":"See antiretrovirals section"},"interactions":["See antiretrovirals section"],"monitoring":"See antiretrovirals section","patient_counselling":"See antiretrovirals section","mechanism_of_action":"See antiretrovirals section","brand_names":["See antiretrovirals section"],"pregnancy_category":"See antiretrovirals section","warnings":["See antiretrovirals section"],"overdose":"See antiretrovirals section","pharmacokinetics":"See antiretrovirals section","black_box_warnings":["See antiretrovirals section"],"clinical_pearls":["See antiretrovirals section"],"created_at":""},
+    {"id":"bulk-014","name":"Cyclopentolate","generic_name":"Ophthalmology - Mydriatic","drug_class":"Anticholinergic (ophthalmic, short-acting)","drug_class_id":null,"drug_class_name":"Ophthalmology - Mydriatics","indications":["Mydriasis for refraction","Cycloplegia (pediatric)"],"contraindications":["Narrow-angle glaucoma"],"side_effects":["Blurred vision","Behavioral changes (children)"],"dosage":{"adult":"1-2 drops 0.5-1% 20-30 min before exam"},"interactions":["Anticholinergics"],"monitoring":"IOP","patient_counselling":"Short-acting mydriatic/cycloplegic for refraction. Effects wear off in 24-48h.","mechanism_of_action":"Cyclogyl","brand_names":["Onset 20-30 min","Duration 24-48h"],"pregnancy_category":"Shorter acting than atropine","warnings":["Good for refraction in children"],"overdose":"Behavioral changes in young children (irritability)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Phenylephrine","generic_name":"Ophthalmology - Mydriatic","drug_class":"Alpha-1 agonist (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Mydriatics","indications":["Mydriasis (without cycloplegia)"],"contraindications":["Severe hypertension","Severe CAD"],"side_effects":["Reactive miosis (if weak solution)"],"dosage":{"adult":"1-2 drops 2.5-10% 10-15 min before exam"},"interactions":["MAOIs (hypertensive crisis risk)"],"monitoring":"None significant","patient_counselling":"Alpha-1 agonist: contracts dilator pupillae causing pupil dilation without cycloplegia.","mechanism_of_action":"Neo-Synephrine","brand_names":["Onset 10-15 min","Duration 2-3h"],"pregnancy_category":"Mydriasis WITHOUT cycloplegia (advantage for retinal exam)","warnings":["10% concentration more common in US"],"overdose":"Caution in hypertension, elderly","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Prostaglandin analogues (class)","generic_name":"Ophthalmology - Glaucoma","drug_class":"Prostaglandin analogues (class overview)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma (first-line)"],"contraindications":["None significant"],"side_effects":["Iris pigmentation","Conjunctival hyperemia","Eyelash growth"],"dosage":{"adult":"Varies by agent"},"interactions":["None significant"],"monitoring":"IOP","patient_counselling":"Class: increases uveoscleral outflow. First-line for glaucoma. Includes latanoprost, bimatoprost, travoprost, tafluprost.","mechanism_of_action":"Various","brand_names":["IOP reduction 25-33%"],"pregnancy_category":"Once daily dosing advantage","warnings":["Iris pigmentation change is irreversible"],"overdose":"First-line for most open-angle glaucoma patients","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-017","name":"Bimatoprost","generic_name":"Ophthalmology - Glaucoma","drug_class":"Prostaglandin F2alpha analogue","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma","Hypotrichosis (eyelashes)"],"contraindications":["None significant"],"side_effects":["Iris pigmentation","Conjunctival hyperemia","Periorbital fat atrophy (rare)"],"dosage":{"adult":"1 drop in affected eye(s) once daily in the evening"},"interactions":["None significant"],"monitoring":"IOP","patient_counselling":"Prostaglandin analogue: increases uveoscleral outflow. Also promotes eyelash growth.","mechanism_of_action":"Lumigan (glaucoma)~Latisse (eyelashes)","brand_names":["IOP reduction 25-33%"],"pregnancy_category":"Once daily dosing","warnings":["Periorbital fat atrophy (rare but reported)"],"overdose":"Also used cosmetically for eyelash growth (Latisse)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-018","name":"Travoprost","generic_name":"Ophthalmology - Glaucoma","drug_class":"Prostaglandin F2alpha analogue","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma"],"contraindications":["None significant"],"side_effects":["Iris pigmentation","Conjunctival hyperemia"],"dosage":{"adult":"1 drop in affected eye(s) once daily in the evening"},"interactions":["None significant"],"monitoring":"IOP","patient_counselling":"Prostaglandin analogue: selective FP receptor agonist.","mechanism_of_action":"Travatan","brand_names":["IOP reduction 25-33%"],"pregnancy_category":"Once daily dosing","warnings":["BAK-free formulation available (Travatan Z)"],"overdose":"Iris pigmentation risk","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-019","name":"Tafluprost","generic_name":"Ophthalmology - Glaucoma","drug_class":"Prostaglandin F2alpha analogue (preservative-free)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma"],"contraindications":["None significant"],"side_effects":["Iris pigmentation","Conjunctival hyperemia"],"dosage":{"adult":"1 drop in affected eye(s) once daily"},"interactions":["None significant"],"monitoring":"IOP","patient_counselling":"Preservative-free prostaglandin analogue. Better for ocular surface disease.","mechanism_of_action":"Zioptan","brand_names":["IOP reduction 25-33%"],"pregnancy_category":"Preservative-free single-use vials","warnings":["Better for patients with ocular surface disease"],"overdose":"Once daily dosing","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-020","name":"Brimonidine/timolol","generic_name":"See glaucoma section","drug_class":"See glaucoma section","drug_class_id":null,"drug_class_name":"See glaucoma section","indications":["See glaucoma section"],"contraindications":["See glaucoma section"],"side_effects":["See glaucoma section"],"dosage":{"adult":"See glaucoma section"},"interactions":["See glaucoma section"],"monitoring":"See glaucoma section","patient_counselling":"See glaucoma section","mechanism_of_action":"See glaucoma section","brand_names":["See glaucoma section"],"pregnancy_category":"See glaucoma section","warnings":["See glaucoma section"],"overdose":"See glaucoma section","pharmacokinetics":"See glaucoma section","black_box_warnings":["See glaucoma section"],"clinical_pearls":["See glaucoma section"],"created_at":""},
+    {"id":"bulk-021","name":"Dorzolamide/timolol","generic_name":"Cosopt","drug_class":"Carbonic anhydrase inhibitor + beta-blocker","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma"],"contraindications":["Asthma/COPD","Sinus bradycardia"],"side_effects":["Ocular stinging","Bitter taste","Burning"],"dosage":{"adult":"1 drop BID"},"interactions":["None significant"],"monitoring":"IOP","patient_counselling":"Fixed combination: CAI (dorzolamide) + beta-blocker (timolol). Dual mechanism IOP reduction.","mechanism_of_action":"Cosopt","brand_names":["BID dosing convenience","Dual mechanism better than monotherapy"],"pregnancy_category":"Ocular stinging common initially","warnings":["Avoid in reactive airway disease (timolol component)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-022","name":"Netarsudil","generic_name":"Ophthalmology - Glaucoma","drug_class":"Rho-kinase inhibitor","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma"],"contraindications":["None significant"],"side_effects":["Conjunctival hyperemia","Cornea verticillata","IOP elevation (paradoxical)"],"dosage":{"adult":"1 drop in affected eye(s) once daily in the evening"},"interactions":["None significant"],"monitoring":"IOP","patient_counselling":"Inhibits Rho kinase/ROCK: increases conventional outflow through trabecular meshwork.","mechanism_of_action":"Rhopressa","brand_names":["IOP reduction 15-18%"],"pregnancy_category":"Once daily dosing","warnings":["Novel mechanism: targets trabecular meshwork directly"],"overdose":"Cornea verticillata: monitor (usually benign)","pharmacokinetics":"Also available as combination with latanoprost (Rocklatan)","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-023","name":"Netarsudil/latanoprost","generic_name":"Rocklatan","drug_class":"Rho-kinase inhibitor + prostaglandin analogue","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma"],"contraindications":["None significant"],"side_effects":["Conjunctival hyperemia","Iris pigmentation","Cornea verticillata"],"dosage":{"adult":"1 drop in affected eye(s) once daily in the evening"},"interactions":["None significant"],"monitoring":"IOP","patient_counselling":"Triple mechanism: increased uveoscleral outflow + trabecular meshwork + decreased aqueous production.","mechanism_of_action":"Rocklatan","brand_names":["IOP reduction 20-25%"],"pregnancy_category":"Once daily dosing","warnings":["Triple mechanism in single drop"],"overdose":"Most effective fixed combination for IOP reduction","pharmacokinetics":"Contains netarsudil + latanoprost","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-024","name":"Levobunolol","generic_name":"Ophthalmology - Glaucoma","drug_class":"Non-selective beta-blocker (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Asthma/COPD","Sinus bradycardia"],"side_effects":["Bronchospasm","Bradycardia","Fatigue"],"dosage":{"adult":"1 drop BID in affected eye(s)"},"interactions":["Oral beta-blockers (additive)"],"monitoring":"IOP","patient_counselling":"Non-selective beta-blocker: reduces aqueous humor production.","mechanism_of_action":"Betagan","brand_names":["Onset 30 min","Duration 12-24h"],"pregnancy_category":"Similar to timolol but less commonly used","warnings":["Once daily available (0.25% formulation)"],"overdose":"Avoid in reactive airway disease","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-025","name":"Metipranolol","generic_name":"Ophthalmology - Glaucoma","drug_class":"Non-selective beta-blocker (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma"],"contraindications":["Asthma/COPD","Sinus bradycardia"],"side_effects":["Bradycardia","Fatigue"],"dosage":{"adult":"1 drop BID"},"interactions":["Oral beta-blockers"],"monitoring":"IOP","patient_counselling":"Non-selective beta-blocker. Less commonly used.","mechanism_of_action":"OptiPranolol","brand_names":["IOP reduction similar to timolol"],"pregnancy_category":"Less commonly used than timolol","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-026","name":"Carteolol","generic_name":"Ophthalmology - Glaucoma","drug_class":"Non-selective beta-blocker with ISA (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma"],"contraindications":["Asthma/COPD","Sinus bradycardia"],"side_effects":["Bradycardia"],"dosage":{"adult":"1 drop BID"},"interactions":["Oral beta-blockers"],"monitoring":"IOP","patient_counselling":"Non-selective beta-blocker with intrinsic sympathomimetic activity: less bradycardia than other beta-blockers.","mechanism_of_action":"Ocupress","brand_names":["IOP reduction similar to timolol"],"pregnancy_category":"ISA property: less effect on heart rate","warnings":["BID dosing"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-027","name":"Levocabastine","generic_name":"Ophthalmology - Allergic","drug_class":"H1 antihistamine (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Allergy","indications":["Allergic conjunctivitis"],"contraindications":["None significant"],"side_effects":["Burning/stinging","Headache"],"dosage":{"adult":"1 drop BID-QID in affected eye(s)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Selective H1 receptor antagonist: blocks histamine-mediated allergic eye symptoms.","mechanism_of_action":"Livostin","brand_names":["Onset 15 min"],"pregnancy_category":"Fast onset for acute allergic symptoms","warnings":["Can use with other eye drops (wait 5 min)"],"overdose":"Non-steroidal alternative","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-028","name":"Emadastine","generic_name":"Ophthalmology - Allergic","drug_class":"H1 antihistamine (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Allergy","indications":["Allergic conjunctivitis"],"contraindications":["None significant"],"side_effects":["Burning/stinging"],"dosage":{"adult":"1 drop BID in affected eye(s)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Selective H1 antagonist with mast cell stabilizing properties.","mechanism_of_action":"Emadine","brand_names":["Onset 15 min"],"pregnancy_category":"Fast onset","warnings":["Non-steroidal"],"overdose":"Can use with mast cell stabilizers","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-029","name":"Azelastine (ophthalmic)","generic_name":"Ophthalmology - Allergic","drug_class":"H1 antihistamine (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Allergy","indications":["Allergic conjunctivitis"],"contraindications":["None significant"],"side_effects":["Burning/stinging","Bitter taste"],"dosage":{"adult":"1 drop BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"H1 antagonist and mast cell stabilizer. Also available as nasal spray.","mechanism_of_action":"Optivar","brand_names":["Onset 30 min"],"pregnancy_category":"Dual mechanism: antihistamine + mast cell stabilizer","warnings":["Less bitter than earlier generations"],"overdose":"Also available as nasal spray (Astelin)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-030","name":"Olopatadine (ophthalmic)","generic_name":"Ophthalmology - Allergic","drug_class":"H1 antihistamine (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Allergy","indications":["Allergic conjunctivitis"],"contraindications":["None significant"],"side_effects":["Headache","Burning/stinging"],"dosage":{"adult":"1 drop BID (Patanol) or QD (Pataday)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"H1 antagonist with mast cell stabilizing properties.","mechanism_of_action":"Patanol (BID)~Pataday (QD)","brand_names":["Onset 30 min"],"pregnancy_category":"Once daily available (Pataday)","warnings":["Dual mechanism: antihistamine + mast cell stabilizer"],"overdose":"Non-steroidal","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-031","name":"Ketotifen (ophthalmic)","generic_name":"Ophthalmology - Allergic","drug_class":"H1 antihistamine + mast cell stabilizer (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Allergy","indications":["Allergic conjunctivitis","Prevention"],"contraindications":["None significant"],"side_effects":["Burning/stinging"],"dosage":{"adult":"1 drop BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"H1 antagonist and mast cell stabilizer. Available OTC.","mechanism_of_action":"Zaditor (Rx)~Alaway (OTC)","brand_names":["Onset 15-30 min"],"pregnancy_category":"Also available as oral (Ketotifen oral for mastocytosis)","warnings":["Dual mechanism"],"overdose":"Good for allergic eye symptoms","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-032","name":"Pemirolast","generic_name":"Ophthalmology - Allergic","drug_class":"Mast cell stabilizer (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Allergy","indications":["Allergic conjunctivitis"],"contraindications":["None significant"],"side_effects":["Burning/stinging"],"dosage":{"adult":"1 drop QID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Prevents mast cell degranulation and histamine release.","mechanism_of_action":"Alamast","brand_names":["Onset 15 min"],"pregnancy_category":"QID dosing (more frequent than alternatives)","warnings":["Non-steroidal"],"overdose":"Prophylactic - use before allergen exposure","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-033","name":"Nepenthes","generic_name":"Ophthalmology - Other","drug_class":"Artificial tears","drug_class_id":null,"drug_class_name":"Ophthalmology - Dry eye","indications":["Dry eye syndrome"],"contraindications":["None significant"],"side_effects":["Temporary blurred vision (from vehicle)"],"dosage":{"adult":"1-2 drops PRN"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Lubricant eye drops: provide temporary relief of dry eye symptoms. Various formulations available.","mechanism_of_action":"Various brands (Refresh~Systane~TheraTears)","brand_names":["Onset immediate"],"pregnancy_category":"Use as needed","warnings":["Artificial tears: various formulations (aqueous, gel, ointment)"],"overdose":"Nighttime ointment for severe dry eye","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-034","name":"Hydroxypropyl methylcellulose","generic_name":"Ophthalmology - Other","drug_class":"Artificial tears (lubricant)","drug_class_id":null,"drug_class_name":"Ophthalmology - Dry eye","indications":["Dry eye syndrome"],"contraindications":["None significant"],"side_effects":["Temporary blurred vision"],"dosage":{"adult":"1-2 drops PRN"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Viscous lubricant: provides longer lasting relief than aqueous drops.","mechanism_of_action":"Various (Tears Naturale","brand_names":["Onset immediate"],"pregnancy_category":"More viscous than saline drops","warnings":["Good for moderate dry eye"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-035","name":"Carmellose sodium","generic_name":"Ophthalmology - Other","drug_class":"Artificial tears (lubricant)","drug_class_id":null,"drug_class_name":"Ophthalmology - Dry eye","indications":["Dry eye syndrome"],"contraindications":["None significant"],"side_effects":["Temporary blurred vision"],"dosage":{"adult":"1-2 drops PRN"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Cellulose derivative: lubricates and protects ocular surface.","mechanism_of_action":"Various brands","brand_names":["Onset immediate"],"pregnancy_category":"Good for moderate to severe dry eye","warnings":["Also available as preservative-free unit dose"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-036","name":"Polyvinyl alcohol","generic_name":"Ophthalmology - Other","drug_class":"Artificial tears (lubricant)","drug_class_id":null,"drug_class_name":"Ophthalmology - Dry eye","indications":["Dry eye syndrome"],"contraindications":["None significant"],"side_effects":["Temporary blurred vision"],"dosage":{"adult":"1-2 drops PRN"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Viscoelastic polymer: provides temporary relief of dry eye symptoms.","mechanism_of_action":"Various (Refresh brand)","brand_names":["Onset immediate"],"pregnancy_category":"Lowest viscosity artificial tears","warnings":["Use frequently as needed"],"overdose":"Good for mild dry eye","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-037","name":"Sodium hyaluronate","generic_name":"Ophthalmology - Other","drug_class":"Viscoelastic lubricant","drug_class_id":null,"drug_class_name":"Ophthalmology - Dry eye","indications":["Dry eye syndrome"],"contraindications":["None significant"],"side_effects":["Temporary blurred vision"],"dosage":{"adult":"1-2 drops PRN"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Highly hydrophilic polymer: binds water and provides long-lasting hydration of ocular surface.","mechanism_of_action":"Various (Hylan G-F 20)","brand_names":["Onset immediate"],"pregnancy_category":"Binds water effectively","warnings":["Longer lasting than simple lubricants"],"overdose":"Good for moderate to severe dry eye","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Nateglinide","generic_name":"Nateglinide","drug_class":"Meglitinide","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes"],"contraindications":["DKA","Type 1 diabetes"],"side_effects":["Hypoglycemia","Weight gain"],"dosage":{"adult":"60-120mg before meals (max 360mg/day)"},"interactions":["NSAIDs","CYP2C9 inhibitors"],"monitoring":"Postprandial glucose","patient_counselling":"Stimulates rapid short-duration insulin release.","mechanism_of_action":"Starlix","brand_names":["Bioavailability 73%","t1/2 1.5h"],"pregnancy_category":"Fastest onset meglitinide~60mg for elderly","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Rosiglitazone","generic_name":"Rosiglitazone","drug_class":"Thiazolidinedione","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes (limited use)"],"contraindications":["NYHA III/IV HF","Active liver disease"],"side_effects":["Weight gain","Edema","HF exacerbation"],"dosage":{"adult":"4-8mg daily"},"interactions":["Gemfibrozil (increased exposure)","Rifampin"],"monitoring":"LFTs~Signs of HF","patient_counselling":"PPAR-gamma agonist: improves insulin sensitivity.","mechanism_of_action":"Avandia","brand_names":["Bioavailability 99%","CYP2C8"],"pregnancy_category":"Restricted due to MI risk~Rarely used now","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Linagliptin","generic_name":"Linagliptin","drug_class":"DPP-4 inhibitor (hepatoexcreted)","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes"],"contraindications":["Type 1 diabetes","DKA"],"side_effects":["Nasopharyngitis","URI"],"dosage":{"adult":"5mg daily (NO renal adjustment)"},"interactions":["Rifampin (reduced levels)"],"monitoring":"HbA1c","patient_counselling":"Hepatoexcreted DPP-4 inhibitor - no renal adjustment needed.","mechanism_of_action":"Tradjenta","brand_names":["Bioavailability 30%","t1/2 >100h","80% hepatic"],"pregnancy_category":"ONLY DPP-4i with no renal adjustment~Longest half-life~Ideal for CKD/dialysis","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Saxagliptin","generic_name":"Saxagliptin","drug_class":"DPP-4 inhibitor","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes"],"contraindications":["Type 1 diabetes","DKA"],"side_effects":["URI","UTI","Pancreatitis (rare)"],"dosage":{"adult":"2.5-5mg daily (2.5mg if eGFR <=45)"},"interactions":["CYP3A4/5 inhibitors (reduce to 2.5mg)"],"monitoring":"HbA1c","patient_counselling":"DPP-4 inhibitor prolonging incretin activity.","mechanism_of_action":"Onglyza","brand_names":["Bioavailability 67%","t1/2 2.5h","CYP3A4/5"],"pregnancy_category":"SAVOR-TIMI: HF signal~Renal dose adjustment required","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Alogliptin","generic_name":"Alogliptin","drug_class":"DPP-4 inhibitor","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes"],"contraindications":["Type 1 diabetes","DKA"],"side_effects":["URI","Headache"],"dosage":{"adult":"25mg daily (12.5mg eGFR 30-45, 6.25mg <30/dialysis)"},"interactions":["Strong CYP3A4 inducers"],"monitoring":"HbA1c","patient_counselling":"Highly selective DPP-4 inhibitor.","mechanism_of_action":"Nesina","brand_names":["Bioavailability 60-70%","t1/2 21h","Renal excretion"],"pregnancy_category":"Can use in dialysis at 6.25mg~Highly selective >10000x vs DPP-8/9","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Miglitol","generic_name":"Miglitol","drug_class":"Alpha-glucosidase inhibitor","drug_class_id":null,"drug_class_name":"Endocrine - Antidiabetics","indications":["Type 2 diabetes"],"contraindications":["IBD","CrCl <25"],"side_effects":["Flatulence","Diarrhea","LFT elevation"],"dosage":{"adult":"25mg TID with meals (max 100mg TID)"},"interactions":["Digoxin (reduced absorption)","Neomycin"],"monitoring":"Postprandial glucose~LFTs","patient_counselling":"Inhibits alpha-glucosidases in small intestine.","mechanism_of_action":"Glyset","brand_names":["Minimal systemic absorption - local gut action"],"pregnancy_category":"Similar to acarbose~Less GI effects~Monitor LFTs","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Dofetilide","generic_name":"Dofetilide","drug_class":"Class III antiarrhythmic (pure K+ blocker)","drug_class_id":null,"drug_class_name":"Cardiovascular - Antiarrhythmics","indications":["AF/flutter conversion/maintenance"],"contraindications":["Baseline QTc >440ms","Severe renal impairment","Concomitant cimetidine"],"side_effects":["QT prolongation","Torsades de Pointes","Headache","Nausea"],"dosage":{"adult":"125-500mcg BID (renal adjusted)"},"interactions":["QT-prolonging drugs","Cimetidine (contraindicated)"],"monitoring":"ECG (QTc)~Electrolytes~Renal function","patient_counselling":"Pure class III antiarrhythmic: blocks rapid delayed rectifier K+ current (Ikr), prolonging repolarization.","mechanism_of_action":"Tikosyn","brand_names":["Bioavailability 90-100%","t1/2 10h","100% renal"],"pregnancy_category":"INITIATION ONLY in hospital with continuous telemetry~QTc >500ms: hold/reduce~Risk of Torsades~Most effective for AF conversion","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Lenvatinib","generic_name":"Lenvatinib","drug_class":"Multi-kinase inhibitor (VEGFR/FGFR/PDGFR)","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["Thyroid cancer","HCC","Endometrial cancer"],"contraindications":["Severe hepatic impairment"],"side_effects":["Hypertension","Diarrhea","Fatigue","Weight loss","Proteinuria"],"dosage":{"adult":"24mg daily (thyroid) or 8-12mg daily (HCC)"},"interactions":["Strong CYP3A4 inducers (avoid)","P-gp substrates"],"monitoring":"BP~Proteinuria~LFTs~Weight","patient_counselling":"Inhibits VEGFR1-3, FGFR1-4, PDGFR, RET, KIT. Broader FGFR inhibition than other TKIs.","mechanism_of_action":"Lenvima","brand_names":["Bioavailability 59-72%","t1/2 28h","CYP3A4/P-gp"],"pregnancy_category":"Hypertension very common (68%)~Proteinuria monitor~Unique FGFR inhibition~Combination with pembrolizumab for endometrial","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Cabozantinib","generic_name":"Cabozantinib","drug_class":"Multi-kinase inhibitor (VEGFR2/MET/AXL)","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["HCC","RCC","Medullary thyroid cancer"],"contraindications":["Severe hepatic impairment"],"side_effects":["Diarrhea","Palmar-plantar erythrodysesthesia","Fatigue","Weight loss","Hypertension"],"dosage":{"adult":"60mg daily (HCC) or 140mg daily (RCC/MTC)"},"interactions":["Strong CYP3A4 inducers (avoid)"],"monitoring":"LFTs~BP~Proteinuria","patient_counselling":"Inhibits VEGFR2, MET, AXL, RET, KIT. Dual VEGFR/MET inhibition overcomes resistance.","mechanism_of_action":"Cabometyx","brand_names":["Bioavailability","t1/2 99h","CYP3A4"],"pregnancy_category":"Long half-life~Hypertension and diarrhea most common~MET inhibition overcomes resistance","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Pazopanib","generic_name":"Pazopanib","drug_class":"VEGFR/PDGFR/KIT inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["RCC","Soft tissue sarcoma"],"contraindications":["QT prolongation","Hepatic impairment"],"side_effects":["Hypertension","Diarrhea","Hair color change","Hepatotoxicity","Fatigue"],"dosage":{"adult":"800mg daily (empty stomach)"},"interactions":["CYP3A4 inducers (reduce levels)","Grapefruit (avoid)"],"monitoring":"LFTs weekly x4 then q2-4w~BP~ECG (QTc)","patient_counselling":"Inhibits VEGFR1-3, PDGFR, KIT. Anti-angiogenic TKI.","mechanism_of_action":"Votrient","brand_names":["Bioavailability","t1/2 31h","CYP3A4"],"pregnancy_category":"Take 1h before or 2h after food~Hepatotoxicity monitoring essential~Hair depigmentation unique~QTc prolongation","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Levalbuterol","generic_name":"Levalbuterol","drug_class":"Beta-2 agonist (active R-enantiomer)","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["Acute bronchospasm","Exercise-induced bronchospasm"],"contraindications":["Hypersensitivity to albuterol"],"side_effects":["Tachycardia","Tremor","Hypokalemia","Palpitations"],"dosage":{"adult":"0.63-1.25mg nebulizer TID-QID or 45-90mcg MDI"},"interactions":["Beta-blockers (antagonize effect)"],"monitoring":"HR~K+","patient_counselling":"Active R-enantiomer of albuterol. May have less cardiac effects than racemic albuterol.","mechanism_of_action":"Xopenex","brand_names":["Onset 5-15 min","Duration 6-8h"],"pregnancy_category":"R-enantiomer theoretically fewer side effects~More expensive than albuterol~Similar efficacy to albuterol","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Ipratropium","generic_name":"Ipratropium","drug_class":"Anticholinergic (SAMA)","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["COPD","Acute bronchospasm"],"contraindications":["Hypersensitivity to atropine"],"side_effects":["Dry mouth","Urinary retention","Blurred vision"],"dosage":{"adult":"2 puffs QID (MDI) or 0.5mg nebulizer QID-Q6H"},"interactions":["Anticholinergics (additive)"],"monitoring":"None significant","patient_counselling":"Blocks M3 muscarinic receptors in bronchial smooth muscle, causing bronchodilation.","mechanism_of_action":"Atrovent","brand_names":["Onset 15-30 min","Duration 4-6h"],"pregnancy_category":"Longer acting than SABAs for COPD~Less effective than SABAs in asthma~Can combine with albuterol","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Olodaterol","generic_name":"Olodaterol","drug_class":"Long-acting beta-2 agonist (LABA)","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["COPD maintenance","Asthma (with ICS)"],"contraindications":["Severe bradycardia","2nd/3rd degree block"],"side_effects":["Tachycardia","Tremor","Hypokalemia","Palpitations"],"dosage":{"adult":"5mcg inhaled daily (Respimat)"},"interactions":["CYP3A4 inhibitors","Beta-blockers"],"monitoring":"HR~K+","patient_counselling":"Once-daily LABA with 24h duration. Beta-2 selective agonist.","mechanism_of_action":"Striverdi","brand_names":["Onset 5 min","Duration 24h"],"pregnancy_category":"Once daily LABA~Must use with ICS in asthma~Respimat soft mist inhaler","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Indacaterol","generic_name":"Indacaterol","drug_class":"Once-daily LABA","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["COPD maintenance"],"contraindications":["Severe bradycardia"],"side_effects":["Cough","Headache","Nasopharyngitis","Hyperglycemia"],"dosage":{"adult":"75-300mcg inhaled daily"},"interactions":["CYP3A4 inhibitors"],"monitoring":"HR~Glucose","patient_counselling":"Once-daily LABA with 24h duration. Ultra-long acting.","mechanism_of_action":"Arcapta","brand_names":["Onset 5 min","Duration 24h"],"pregnancy_category":"Once daily LABA~COPD only (not asthma)~Good for once daily adherence","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Aclidinium","generic_name":"Aclidinium","drug_class":"Long-acting anticholinergic (LAMA)","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["COPD maintenance"],"contraindications":["Hypersensitivity to atropine"],"side_effects":["Dry mouth","Constipation","Urinary retention"],"dosage":{"adult":"400mcg inhaled BID"},"interactions":["Anticholinergics (additive)"],"monitoring":"None significant","patient_counselling":"Twice-daily LAMA for COPD bronchodilation.","mechanism_of_action":"Tudorza","brand_names":["Onset 15-30 min","Duration 12h"],"pregnancy_category":"Twice daily LAMA~Dry mouth less than tiotropium~DPI formulation","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Glycopyrrolate inhalation","generic_name":"Glycopyrronium bromide (inhalation)","drug_class":"Long-acting anticholinergic (LAMA)","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["COPD maintenance"],"contraindications":["Hypersensitivity to atropine"],"side_effects":["Dry mouth","Urinary retention"],"dosage":{"adult":"50mcg inhaled BID (Bevespi) or 12.5mcg BID (Seebri) or 9mcg daily (Incruse)"},"interactions":["Anticholinergics"],"monitoring":"None significant","patient_counselling":"LAMA available as combination (Bevespi = glycopyrrolate/formoterol) or monotherapy.","mechanism_of_action":"Incruse Ellipta~Bevespi Aerosphere","brand_names":["Onset 5-15 min","Duration 12-24h"],"pregnancy_category":"Available as monotherapy or LABA/LAMA combo~Also used IV for secretions (different formulation)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Zafirlukast","generic_name":"Zafirlukast","drug_class":"Leukotriene receptor antagonist","drug_class_id":null,"drug_class_name":"Respiratory - Leukotriene modifiers","indications":["Asthma (adjunct)"],"contraindications":["None significant"],"side_effects":["Headache","GI upset","Elevated LFTs"],"dosage":{"adult":"20mg BID"},"interactions":["Warfarin (increased INR 35%)","CYP3A4 inhibitors"],"monitoring":"LFTs","patient_counselling":"Blocks cysteinyl leukotriene receptor CysLT1.","mechanism_of_action":"Accolate","brand_names":["Bioavailability","t1/2 10h","CYP2C9/3A4"],"pregnancy_category":"Take on empty stomach~Monitor LFTs~Drug interaction with warfarin","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Zileuton","generic_name":"Zileuton","drug_class":"5-lipoxygenase inhibitor","drug_class_id":null,"drug_class_name":"Respiratory - Leukotriene modifiers","indications":["Asthma (adjunct)"],"contraindications":["Active liver disease","Elevated LFTs"],"side_effects":["Elevated LFTs (1-2% hepatitis)","Headache","Nausea"],"dosage":{"adult":"600mg QID"},"interactions":["Theophylline (increases levels 45%)","Warfarin (increases INR)"],"monitoring":"LFTs at baseline, monthly x3, then periodically","patient_counselling":"Inhibits 5-lipoxygenase enzyme, blocking leukotriene synthesis (not just receptor blockade).","mechanism_of_action":"Zyflo","brand_names":["Bioavailability","t1/2 2.1h","CYP1A2/3A4"],"pregnancy_category":"Take with food~Monitor LFTs monthly~Hepatotoxicity risk~QID dosing disadvantage","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Ambroxol","generic_name":"Ambroxol","drug_class":"Mucolytic (bromhexine metabolite)","drug_class_id":null,"drug_class_name":"Respiratory - Mucolytics","indications":["Productive cough with viscous mucus"],"contraindications":["None significant"],"side_effects":["GI upset","Rash"],"dosage":{"adult":"30mg TID (oral) or 15-30mg nebulizer TID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Mucolytic agent: reduces mucus viscosity by activating surfactant production and lysosomal enzymes.","mechanism_of_action":"Mucosolvan","brand_names":["Bioavailability 10-20%","t1/2 10h"],"pregnancy_category":"More effective than bromhexine~Reduces mucus viscosity~Also has local anesthetic effect","warnings":["Not available in US"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Benzonatate","generic_name":"Benzonatate","drug_class":"Non-narcotic antitussive","drug_class_id":null,"drug_class_name":"Respiratory - Antitussives","indications":["Cough"],"contraindications":["None significant"],"side_effects":["Drowsiness","Dizziness","GI upset","Seizures (overdose)"],"dosage":{"adult":"100-200mg TID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Suppresses cough by anesthetizing stretch receptors in pulmonary inflation reflex pathway.","mechanism_of_action":"Tessalon","brand_names":["Onset 15-20 min","Duration 3-8h"],"pregnancy_category":"Do not chew/crush - risk of fatal local anesthesia of oropharynx","warnings":["Starts working in 15-20 min"],"overdose":"Avoid in children <10 (capsule aspiration risk)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Dextromethorphan","generic_name":"Dextromethorphan","drug_class":"Sigma-1 receptor agonist/NMDA antagonist","drug_class_id":null,"drug_class_name":"Respiratory - Antitussives","indications":["Cough"],"contraindications":["MAOIs (contraindicated 2 weeks)"],"side_effects":["Drowsiness","Dizziness","Nausea","Serotonin syndrome (with SSRIs)"],"dosage":{"adult":"10-30mg q4-6h (max 120mg/day)"},"interactions":["MAOIs (contraindicated)","SSRIs/SNRIs (serotonin syndrome)","Quinidine (CYP2D6 inhibitor)"],"monitoring":"None significant","patient_counselling":"Suppresses cough center in medulla via sigma-1 receptor agonism. NMDA antagonist at high doses.","mechanism_of_action":"Robitussin DM~Delsym","brand_names":["t1/2 2-4h"],"pregnancy_category":"MAOIs absolutely contraindicated~Quinidine increases levels 10x (use therapeutically in pseudobulbar affect)","warnings":["Common in OTC products - check interactions"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Pseudoephedrine","generic_name":"Pseudoephedrine","drug_class":"Sympathomimetic (alpha/beta agonist)","drug_class_id":null,"drug_class_name":"Respiratory - Decongestants","indications":["Nasal congestion"],"contraindications":["Severe hypertension","MAOIs"],"side_effects":["Insomnia","Tachycardia","Hypertension","Anxiety"],"dosage":{"adult":"30-60mg q4-6h (max 240mg/day)"},"interactions":["MAOIs (hypertensive crisis)","Beta-blockers (paradoxical hypertension)"],"monitoring":"BP~HR","patient_counselling":"Alpha-1 and beta agonist: causes vasoconstriction in nasal mucosa reducing edema and congestion.","mechanism_of_action":"Sudafed","brand_names":["Bioavailability 50-75%","t1/2 4-8h","Renal excretion"],"pregnancy_category":"Behind pharmacy counter (pseudoephedrine law)~Avoid in uncontrolled hypertension~May worsen urinary retention in BPH~Can cause insomnia","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Oxymetazoline","generic_name":"Oxymetazoline","drug_class":"Topical alpha-1 agonist (decongestant)","drug_class_id":null,"drug_class_name":"Respiratory - Decongestants","indications":["Nasal congestion"],"contraindications":["None significant"],"side_effects":["Rebound congestion (rhinitis medicamentosa)"],"dosage":{"adult":"2-3 sprays per nostril BID x3-5 days (max)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical alpha-1 agonist: potent vasoconstriction in nasal mucosa. Do not use >3-5 days to avoid rebound congestion.","mechanism_of_action":"Afrin","brand_names":["Onset 5-10 min","Duration 12h"],"pregnancy_category":"Do NOT use >3-5 days - rebound congestion (rhinitis medicamentosa)","warnings":["Most effective topical decongestant"],"overdose":"Avoid in hypertension","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-014","name":"Xylometazoline","generic_name":"Xylometazoline","drug_class":"Topical alpha-1 agonist (decongestant)","drug_class_id":null,"drug_class_name":"Respiratory - Decongestants","indications":["Nasal congestion"],"contraindications":["None significant"],"side_effects":["Rebound congestion"],"dosage":{"adult":"1 spray per nostril BID x3-5 days"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical nasal decongestant. Similar to oxymetazoline.","mechanism_of_action":"Otrivin","brand_names":["Onset 5-10 min","Duration 6-10h"],"pregnancy_category":"Do NOT use >5 days","warnings":["Less potent than oxymetazoline"],"overdose":"Used for nasal congestion and sinusitis","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Cromolyn","generic_name":"Cromolyn sodium","drug_class":"Mast cell stabilizer","drug_class_id":null,"drug_class_name":"Respiratory - Anti-inflammatory","indications":["Asthma prophylaxis","Allergic rhinitis","Food allergy prevention"],"contraindications":["None significant"],"side_effects":["Nausea","Cough","Throat irritation"],"dosage":{"adult":"2 puffs QID (MDI) or 100mg nebulizer QID or nasal spray QID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Prevents mast cell degranulation and histamine release. Must be used prophylactically - not rescue.","mechanism_of_action":"Gastrocrom (oral)~NasalCrom (nasal)","brand_names":["Onset 2-4 weeks for full effect"],"pregnancy_category":"Preventive only - not for acute symptoms~Must use QID dosing~Very safe profile~Take 15-20 min before exercise or allergen exposure","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Nedocromil","generic_name":"Nedocromil","drug_class":"Mast cell stabilizer","drug_class_id":null,"drug_class_name":"Respiratory - Anti-inflammatory","indications":["Asthma prophylaxis"],"contraindications":["None significant"],"side_effects":["Headache","Nausea","Unpleasant taste"],"dosage":{"adult":"2 puffs BID-QID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Inhibits mast cell degranulation and inflammatory cell activation.","mechanism_of_action":"Tilade","brand_names":["Onset 2-4 weeks"],"pregnancy_category":"Similar to cromolyn~BID dosing advantage~Less commonly used~Not for acute symptoms","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-017","name":"Aminophylline","generic_name":"Aminophylline","drug_class":"Theophylline ethylenediamine","drug_class_id":null,"drug_class_name":"Respiratory - Bronchodilators","indications":["Status asthmaticus (adjunct)","COPD"],"contraindications":["Same as theophylline"],"side_effects":["Same as theophylline"],"dosage":{"adult":"Loading: 6mg/kg IV over 20-30min, then 0.5mg/kg/h (renal adjust)"},"interactions":["Same as theophylline"],"monitoring":"Theophylline levels","patient_counselling":"IV aminophylline (79% theophylline by weight). Used when oral theophylline not feasible.","mechanism_of_action":"Somophyllin","brand_names":["Loading = theophylline dose x 1.27"],"pregnancy_category":"Convert aminophylline to theophylline by multiplying by 0.79","warnings":["IV formulation for acute situations"],"overdose":"Loading dose based on ideal body weight","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Mianserin","generic_name":"Mianserin","drug_class":"NaSSA (noradrenergic and specific serotonergic)","drug_class_id":null,"drug_class_name":"Neurology - Antidepressants","indications":["Major depressive disorder","Insomnia"],"contraindications":["MAOIs (contraindicated)"],"side_effects":["Sedation","Weight gain","Dry mouth","Agranulocytosis (rare)"],"dosage":{"adult":"30-90mg daily (start 30mg)"},"interactions":["MAOIs","CYP2D6 substrates"],"monitoring":"CBC if infection signs","patient_counselling":"Alpha-2 antagonist and 5-HT2/5-HT3 antagonist. Similar to mirtazapine but more agranulocytosis risk.","mechanism_of_action":"Tolvon","brand_names":["Bioavailability 30%","t1/2 10-50h"],"pregnancy_category":"Not available in US~More agranulocytosis risk than mirtazapine~Used in UK/Europe/Australia","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Vortioxetine","generic_name":"Vortioxetine","drug_class":"Multimodal antidepressant","drug_class_id":null,"drug_class_name":"Neurology - Antidepressants","indications":["Major depressive disorder"],"contraindications":["MAOIs (contraindicated)"],"side_effects":["Nausea (most common)","Headache","Dizziness","Sexual dysfunction"],"dosage":{"adult":"5-20mg daily"},"interactions":["CYP2D6 inhibitors (reduce dose to 5mg)"],"monitoring":"None significant","patient_counselling":"Multimodal mechanism: SERT inhibition + 5-HT1A agonism + 5-HT1B partial agonism + 5-HT3/5-HT7/5-HT1D antagonism. Pro-cognitive effects.","mechanism_of_action":"Trintellix","brand_names":["Bioavailability 75%","t1/2 66h","CYP2D6/CYP3A4"],"pregnancy_category":"Nausea most common (30%) - take with food~Pro-cognitive benefits unique~Less sexual dysfunction than SSRIs","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Lurasidone","generic_name":"Lurasidone","drug_class":"Second-generation antipsychotic (SGA)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia","Bipolar depression"],"contraindications":["Concomitant CYP3A4 inhibitors + strong CYP2D6 inhibitors"],"side_effects":["Nausea","Akathisia","Extrapyramidal symptoms","Somnolence"],"dosage":{"adult":"40-80mg daily (with food)"},"interactions":["Strong CYP3A4 inhibitors (ketoconazole - contraindicated)","CYP3A4 inducers (reduces levels)"],"monitoring":"LFTs~Weight~Glucose~Lipids~Movement disorders","patient_counselling":"D2 and 5-HT2A antagonism. Also 5-HT7 antagonist (may improve cognition and depression).","mechanism_of_action":"Latuda","brand_names":["Bioavailability 9-19%","t1/2 18h","CYP3A4"],"pregnancy_category":"Must take with food (increases absorption 50%)~Less weight gain/ metabolic effects than olanzapine/quetiapine~5-HT7 antagonism unique","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Aripiprazole lauroxil","generic_name":"Aripiprazole lauroxil","drug_class":"Long-acting injectable SGA","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia maintenance"],"contraindications":["Hypersensitivity"],"side_effects":["Akathisia","Weight gain"],"dosage":{"adult":"441-1064mg IM monthly or 882mg q2 months"},"interactions":["Strong CYP3A4/2D6 inhibitors"],"monitoring":"Weight~Movement disorders","patient_counselling":"Long-acting prodrug of aripiprazole. Monthly or bimonthly injection for adherence.","mechanism_of_action":"Aristada","brand_names":["t1/2 15-22 days (lauroxil metabolite)"],"pregnancy_category":"Every 1-2 months injection~No daily oral required~Must have tolerated oral aripiprazole first~Initiate with oral aripiprazole overlap","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Quetiapine XR","generic_name":"Quetiapine XR","drug_class":"Second-generation antipsychotic (extended-release)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia","Bipolar depression","Adjunct MDD (150-300mg)"],"contraindications":["Same as IR quetiapine"],"side_effects":["Same as IR"],"dosage":{"adult":"150-800mg daily (evening)"},"interactions":["Same as IR"],"monitoring":"Same as IR","patient_counselling":"Same mechanism. XR formulation for once-daily dosing.","mechanism_of_action":"Seroquel XR","brand_names":["Same as IR"],"pregnancy_category":"XR: once daily dosing~Less peak-related side effects~For bipolar depression: 300-600mg XR","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Olanzapine pamoate LAI","generic_name":"Olanzapine pamoate","drug_class":"Long-acting injectable SGA","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia maintenance"],"contraindications":["Concomitant parenteral benzodiazepines (1h window)"],"side_effects":["Somnolence","Weight gain","Injection site reactions"],"dosage":{"adult":"210-405mg IM monthly (adjusted by oral dose)"},"interactions":["Same as oral olanzapine"],"monitoring":"Weight~Glucose~Lipids","patient_counselling":"IM depot formulation of olanzapine. Risk of post-injection delirium/sedation syndrome (PDSS).","mechanism_of_action":"Zyprexa Relhyprev","brand_names":["Onset 2-24h","Duration monthly"],"pregnancy_category":"Post-injection delirium/sedation syndrome (PDSS) - must observe 3h after injection~Do not co-administer IM benzodiazepines within 1h","warnings":["FDA REMS program"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Ziprasidone","generic_name":"Ziprasidone","drug_class":"Second-generation antipsychotic","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia","Bipolar disorder"],"contraindications":["Congenital QT prolongation","Recent acute MI"],"side_effects":["QT prolongation","Nausea","Dizziness","Extrapyramidal symptoms"],"dosage":{"adult":"40-80mg BID (with food)"},"interactions":["Drugs that prolong QT","CYP3A4 inhibitors"],"monitoring":"ECG (QTc)~Electrolytes","patient_counselling":"D2 and 5-HT2A antagonism with relatively balanced receptor profile. Less metabolic effects.","mechanism_of_action":"Geodon","brand_names":["Bioavailability 60%","t1/2 7h","CYP3A4"],"pregnancy_category":"Must take with food (doubles absorption)~ECG baseline and as clinically indicated~QTc prolongation~Less metabolic effects than olanzapine/quetiapine","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Thioridazine","generic_name":"Thioridazine","drug_class":"First-generation antipsychotic (low potency)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia (limited use)"],"contraindications":["QT prolongation","Concomitant QT drugs"],"side_effects":["QT prolongation (dose-dependent)","Tardive dyskinesia","Anticholinergic effects"],"dosage":{"adult":"150-800mg daily"},"interactions":["QT-prolonging drugs","CYP2D6 inhibitors"],"monitoring":"ECG (QTc)","patient_counselling":"Blocks D2 receptors with strong anticholinergic and antihistamine properties. High QTc risk.","mechanism_of_action":"Mellaril","brand_names":["Bioavailability 40%","t1/2 24h","CYP2D6"],"pregnancy_category":"Significant QTc prolongation - limited use~Tardive dyskinesia risk~Avoid in elderly (Beers criteria)","warnings":["Use only when alternatives fail"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Flupentixol","generic_name":"Flupentixol","drug_class":"First-generation antipsychotic (thioxanthene)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia (maintenance)"],"contraindications":["Agranulocytosis history"],"side_effects":["EPS","Tardive dyskinesia","Anticholinergic effects"],"dosage":{"adult":"1-20mg daily or 20-40mg IM monthly"},"interactions":["QT-prolonging drugs"],"monitoring":"Movement disorders","patient_counselling":"Thioxanthene derivative with D2 antagonism. Depot injection available.","mechanism_of_action":"Fluanxol~Depixol","brand_names":["t1/2 35h (decanoate)"],"pregnancy_category":"Monthly depot injection available~Less commonly used outside UK/Europe","warnings":["Low-dose (1-3mg) used for anxiety/depression in some countries"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Fluphenazine","generic_name":"Fluphenazine","drug_class":"First-generation antipsychotic (high potency phenothiazine)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia maintenance"],"contraindications":["Parkinson's disease"],"side_effects":["EPS","Tardive dyskinesia","NMS","QT prolongation"],"dosage":{"adult":"2.5-10mg daily or 12.5-50mg IM every 2-3 weeks"},"interactions":["CYP2D6 inhibitors"],"monitoring":"Movement disorders~ECG","patient_counselling":"Potent D2 antagonist. Available as long-acting decanoate for monthly injections.","mechanism_of_action":"Prolixin~Prolixin decanoate","brand_names":["t1/2 14-20h (decanoate 14-36 days)"],"pregnancy_category":"Decanoate: every 2-3 weeks IM~High EPS risk~Older phenothiazine","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Chlorpromazine","generic_name":"Chlorpromazine","drug_class":"First-generation antipsychotic (low potency phenothiazine)","drug_class_id":null,"drug_class_name":"Psychiatry - Antipsychotics","indications":["Schizophrenia","Nausea/vomiting","Hiccups","Agitation"],"contraindications":["Coma","Bone marrow depression"],"side_effects":["Sedation","Hypotension","Anticholinergic","EPS","QT prolongation"],"dosage":{"adult":"25-200mg TID (PO) or 25-50mg IM/IV"},"interactions":["MAOIs","Tricyclics","Barbiturates","QT drugs"],"monitoring":"ECG~WBC","patient_counselling":"Low-potency D2 antagonist with strong alpha-1, M1, H1 blockade. Sedation and hypotension limit use.","mechanism_of_action":"Thorazine","brand_names":["Bioavailability 30-50%","t1/2 16-30h","CYP2D6"],"pregnancy_category":"Most sedating FGAs~Strong alpha-1 blockade causes orthostatic hypotension~Antiemetic at low doses~Phenothiazine class","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Linezolid","generic_name":"Linezolid","drug_class":"Oxazolidinone antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Oxazolidinones","indications":["MRSA pneumonia","VRE infections","Complicated skin infections"],"contraindications":["None significant (serotonin syndrome with serotonergic drugs)"],"side_effects":["Thrombocytopenia","Peripheral neuropathy","Optic neuritis","Serotonin syndrome (with SSRIs)"],"dosage":{"adult":"600mg IV/PO q12h"},"interactions":["Serotonergic drugs (SSRIs","MAOIs - serotonin syndrome)"],"monitoring":"CBC weekly~Visual acuity if >2 weeks","patient_counselling":"Inhibits 50S ribosomal subunit, preventing initiation of protein synthesis. Bacteriostatic (bactericidal vs some).","mechanism_of_action":"Zyvox","brand_names":["Bioavailability 100%","t1/2 5h","Non-CYP"],"pregnancy_category":"Serotonin syndrome risk with serotonergic drugs~Myelosuppression monitor weekly~Lactic acidosis (mitochondrial toxicity)~Optic/peripheral neuropathy with prolonged use","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Oritavancin","generic_name":"Oritavancin","drug_class":"Lipoglycopeptide antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Glycopeptides","indications":["ABSSSI"],"contraindications":["None significant"],"side_effects":["Nausea","Hypokalemia","Infusion reactions"],"dosage":{"adult":"Single dose 1200mg IV (or 800mg + 400mg on day 8)"},"interactions":["Warfarin (transient INR increase)"],"monitoring":"None significant","patient_counselling":"Lipoglycopeptide with long half-life allowing single-dose treatment. Inhibits cell wall synthesis and disrupts membrane integrity.","mechanism_of_action":"Orbactiv","brand_names":["t1/2 245h (extremely long)"],"pregnancy_category":"Single-dose treatment for ABSSSI~Extremely long half-life~Inhibits cell wall + disrupts membrane~Transient coagulopathy","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Dalbavancin","generic_name":"Dalbavancin","drug_class":"Lipoglycopeptide antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Glycopeptides","indications":["ABSSSI"],"contraindications":["None significant"],"side_effects":["Nausea","Headache","Diarrhea"],"dosage":{"adult":"Single dose 1500mg IV (or 1000mg + 500mg on day 8)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Lipoglycopeptide with once-weekly dosing. Long half-life allows weekly administration.","mechanism_of_action":"Dalvance","brand_names":["t1/2 346h (14 days)"],"pregnancy_category":"Once weekly dosing~Treats ABSSSI in 1-2 doses~Long-acting glycopeptide","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Trimetrexate","generic_name":"Trimetrexate","drug_class":"Dihydrofolate reductase inhibitor","drug_class_id":null,"drug_class_name":"Anti-infectives - Antifolates","indications":["PCP (Pneumocystis pneumonia) - alternative"],"contraindications":["Severe renal impairment"],"side_effects":["Neutropenia","Thrombocytopenia","Mucositis"],"dosage":{"adult":"45mg/m2 IV q24h x 21 days (with leucovorin)"},"interactions":["TMP-SMX (additive toxicity)","Dapsone","Phenytoin"],"monitoring":"CBC~LFTs","patient_counselling":"DHFRI used with leucovorin rescue for PCP in TMP-SMX intolerant patients.","mechanism_of_action":"Neutrexin","brand_names":["t1/2 12-15h"],"pregnancy_category":"Requires leucovorin rescue to protect normal cells~Alternative for TMP-SMX-intolerant PCP~Bone marrow suppressive","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Atovaquone","generic_name":"Atovaquone","drug_class":"Hydroxynaphthoquinone antiparasitic","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiparasitics","indications":["PCP prevention and treatment","Malaria prophylaxis"],"contraindications":["None significant"],"side_effects":["GI upset","Rash","Headache","Elevated LFTs"],"dosage":{"adult":"PCP treatment: 750mg BID with food. Prophylaxis: 1500mg daily with food."},"interactions":["Rifampin (reduces levels 50%)","Tetracycline (reduces levels)"],"monitoring":"LFTs","patient_counselling":"Inhibits mitochondrial electron transport at complex III. High-fat meal increases absorption.","mechanism_of_action":"Mepron (PCP)~Malarone (malaria)","brand_names":["Bioavailability","47%","t1/2 2.2-3.3 days"],"pregnancy_category":"Must take with fatty food for absorption~Very long half-life~Alternative to TMP-SMX for PCP","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Atovaquone/proguanil","generic_name":"Malarone (atovaquone 250mg/proguanil 100mg)","drug_class":"Antimalarial combination","drug_class_id":null,"drug_class_name":"Anti-infectives - Antimalarials","indications":["Malaria prophylaxis","Treatment of P. falciparum"],"contraindications":["Severe renal impairment (CrCl <30)"],"side_effects":["Abdominal pain","Nausea","Vomiting","Headache"],"dosage":{"adult":"Prophylaxis: 1 tablet daily starting 1-2 days before travel. Treatment: 4 tablets daily x3 days."},"interactions":["Warfarin (increased effect)"],"monitoring":"Renal function for proguanil component","patient_counselling":"Atovaquone inhibits mitochondrial electron transport. Proguanil inhibits dihydrofolate reductase. Synergistic antimalarial.","mechanism_of_action":"Malarone","brand_names":["Bioavailability: atovaquone 26% (increased with food)"],"pregnancy_category":"Take with food~Start 1-2 days before travel, continue 4 weeks after~One of best tolerated malaria prophylaxis","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Colistin (polymyxin E)","generic_name":"Colistin","drug_class":"Polymyxin antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Polymyxins","indications":["MDR Gram-negative infections (last resort)"],"contraindications":["None significant"],"side_effects":["Nephrotoxicity (dose-limiting)","Neurotoxicity (paresthesias)"],"dosage":{"adult":"IM/IV: 2.5-5mg/kg/day in divided doses. Inhaled: 75-150mg BID."},"interactions":["Nephrotoxic drugs (additive)"],"monitoring":"Renal function daily~BUN/Cr~Neuro symptoms","patient_counselling":"Disrupts Gram-negative outer membrane by binding LPS, causing cell death. Concentration-dependent killing.","mechanism_of_action":"Coly-Mycin M","brand_names":["t1/2 2h","Nephrotoxic"],"pregnancy_category":"Nephrotoxicity is dose-limiting~Monitor renal function daily~Inhaled form for lung infections (Pseudomonas in CF/ventilator pneumonia)~Last resort for MDR Gram-negatives","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Fosfomycin","generic_name":"Fosfomycin","drug_class":"Phosphonic acid antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Other","indications":["Uncomplicated UTI","VRE infections (combination)"],"contraindications":["None significant"],"side_effects":["Diarrhea","Nausea","Headache"],"dosage":{"adult":"UTI: 3g single dose PO. IV: for serious infections."},"interactions":["Metoclopramide (reduces absorption)"],"monitoring":"None significant","patient_counselling":"Unique mechanism: inhibits MurA (cell wall synthesis). Broad-spectrum. Low resistance development.","mechanism_of_action":"Monurol (PO)","brand_names":["Bioavailability 37-55%","t1/2 2-3h"],"pregnancy_category":"Single-dose UTI treatment~3g in water~Also available IV (investigational in US)~Synergistic with beta-lactams~Low resistance development","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Fosfomycin/tobramycin","generic_name":"Xartemis (investigational)","drug_class":"Combination antibiotic","drug_class_id":null,"drug_class_name":"Anti-infectives - Other","indications":["Complicated UTI"],"contraindications":["Renal impairment"],"side_effects":["Nephrotoxicity (tobramycin component)"],"dosage":{"adult":"IV combination for complicated UTI"},"interactions":["Nephrotoxic/ototoxic drugs (additive tobramycin)"],"monitoring":"Tobramycin levels~Renal function","patient_counselling":"Fosfomycin + tobramycin: synergistic activity against MDR Gram-negatives.","mechanism_of_action":"Investigational","brand_names":["Requires TDM for tobramycin component"],"pregnancy_category":"Combination for synergy against resistant organisms","warnings":["Available in some countries as IV formulation"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Esomeprazole","generic_name":"Eesomeprazole","drug_class":"Proton pump inhibitor (S-enantiomer of omeprazole)","drug_class_id":null,"drug_class_name":"Gastroenterology - PPIs","indications":["GERD","H. pylori"],"contraindications":["None significant"],"side_effects":["Headache","GI upset","Abdominal pain"],"dosage":{"adult":"20-40mg daily"},"interactions":["Clopidogrel (controversial)"],"monitoring":"Magnesium (long-term)","patient_counselling":"S-enantiomer of omeprazole: better CYP2C19 inhibition providing more consistent acid suppression.","mechanism_of_action":"Nexium","brand_names":["Bioavailability 64%","t1/2 1.5h"],"pregnancy_category":"S-enantiomer of omeprazole~More consistent acid suppression than racemic omeprazole","warnings":["Also available as IV formulation"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Famotidine","generic_name":"Famotidine","drug_class":"H2-receptor antagonist","drug_class_id":null,"drug_class_name":"Gastroenterology - H2RAs","indications":["GERD","Peptic ulcer","Zollinger-Ellison"],"contraindications":["None significant"],"side_effects":["Headache","Dizziness","Constipation"],"dosage":{"adult":"20mg BID or 40mg at bedtime"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Competitively blocks histamine H2 receptors on parietal cells, reducing basal and stimulated acid secretion.","mechanism_of_action":"Pepcid","brand_names":["Bioavailability 40-45%","t1/2 2.5-4h"],"pregnancy_category":"Good for nocturnal acid breakthrough~Less drug interactions than PPIs~Can be used IV for stress ulcer prophylaxis","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Nizatidine","generic_name":"Nizatidine","drug_class":"H2-receptor antagonist","drug_class_id":null,"drug_class_name":"Gastroenterology - H2RAs","indications":["GERD","Peptic ulcer"],"contraindications":["None significant"],"side_effects":["Headache","Dizziness"],"dosage":{"adult":"150-300mg BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"H2 receptor antagonist. Slightly less CYP inhibition than cimetidine.","mechanism_of_action":"Axid","brand_names":["Bioavailability 90-100%","t1/2 1.6h"],"pregnancy_category":"Good oral bioavailability~Fewer drug interactions than cimetidine~Also promotes gastric emptying","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Granisetron","generic_name":"Granisetron","drug_class":"5-HT3 receptor antagonist","drug_class_id":null,"drug_class_name":"Gastroenterology - Antiemetics","indications":["CINV","PONV"],"contraindications":["None significant"],"side_effects":["Headache","Constipation","QT prolongation"],"dosage":{"adult":"1mg IV/PO q12h or 2mg PO daily (Sancuso patch 72h)"},"interactions":["QT-prolonging drugs"],"monitoring":"ECG","patient_counselling":"Selective 5-HT3 antagonist. Also available as transdermal patch.","mechanism_of_action":"Kytril~Sancuso","brand_names":["Bioavailability 60%","t1/2 4-9h"],"pregnancy_category":"Transdermal patch (Sancuso) for 72h coverage~Also available as IV","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Palonosetron","generic_name":"Palonosetron","drug_class":"5-HT3 receptor antagonist (long-acting)","drug_class_id":null,"drug_class_name":"Gastroenterology - Antiemetics","indications":["CINV (delayed phase)","PONV"],"contraindications":["None significant"],"side_effects":["Headache","Constipation","QT prolongation"],"dosage":{"adult":"0.25mg IV single dose"},"interactions":["QT-prolonging drugs"],"monitoring":"ECG","patient_counselling":"Longest-acting 5-HT3 antagonist: most effective for delayed CINV. Allosteric binding causes receptor internalization.","mechanism_of_action":"Akynzeo","brand_names":["Bioavailability 25%","t1/2 40h"],"pregnancy_category":"Most effective for delayed CINV (days 2-4)","warnings":["Longest-acting 5-HT3 antagonist","Single IV dose for delayed CINV","Also in capsules with netupitant (Akynzeo)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Aprepitant","generic_name":"Aprepitant","drug_class":"NK1 receptor antagonist","drug_class_id":null,"drug_class_name":"Gastroenterology - Antiemetics","indications":["CINV (moderate/highly emetogenic) - prevention"],"contraindications":["None significant"],"side_effects":["Headache","Fatigue","Hiccups","Elevated LFTs"],"dosage":{"adult":"125mg PO day 1, then 80mg days 2-3 (with 5-HT3 antagonist + dexamethasone)"},"interactions":["Strong CYP3A4 inhibitors (reduced dose)","Dexamethasone (increase dose 50%)","Warfarin (reduced INR)"],"monitoring":"LFTs","patient_counselling":"NK1 receptor antagonist: blocks substance P in brainstem emetic center. Synergistic with 5-HT3 antagonists for CINV.","mechanism_of_action":"Emend","brand_names":["Bioavailability 60-65%","t1/2 9-13h","CYP3A4"],"pregnancy_category":"Triple therapy: aprepitant + ondansetron + dexamethasone for highly emetogenic CINV~Also available as IV (Fosaprepitant)~Day 1: 125mg, Days 2-3: 80mg","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Netupitant/palonosetron","generic_name":"Akynzeo","drug_class":"NK1 antagonist + 5-HT3 antagonist combo","drug_class_id":null,"drug_class_name":"Gastroenterology - Antiemetics","indications":["CINV prevention"],"contraindications":["None significant"],"side_effects":["Headache","Fatigue","Constipation"],"dosage":{"adult":"1 capsule PO day 1 (highly emetogenic) or 3 capsules (moderately emetogenic)"},"interactions":["Strong CYP3A4 inhibitors (avoid)"],"monitoring":"None significant","patient_counselling":"Fixed-dose combination: netupitant (NK1) + palonosetron (5-HT3). Synergistic dual mechanism.","mechanism_of_action":"Akynzeo","brand_names":["Netupitant: t1/2 5h","Palonosetron: t1/2 40h"],"pregnancy_category":"Single capsule convenience~Dual mechanism in one dose~Most effective single-agent CINV prophylaxis","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Aprepitant/fosaprepitant","generic_name":"Fosaprepitant","drug_class":"NK1 receptor antagonist (IV prodrug)","drug_class_id":null,"drug_class_name":"Gastroenterology - Antiemetics","indications":["CINV prevention (IV alternative)"],"contraindications":["Hypersensitivity to polysorbate 80"],"side_effects":["Infusion site reactions","Pain/erythema/thrombophlebitis"],"dosage":{"adult":"150mg IV single dose on day 1 (equivalent to 3-day oral aprepitant)"},"interactions":["Strong CYP3A4 inhibitors"],"monitoring":"Infusion site","patient_counselling":"IV prodrug of aprepitant. Single IV dose replaces 3-day oral regimen. Phosphorylated for water solubility.","mechanism_of_action":"Emend IV","brand_names":["Hydrolyzed to aprepitant in vivo"],"pregnancy_category":"Single IV dose for 3-day CINV coverage~Infusion site reactions common (30-50%)~Administer over 15-30 min~Pre-medicate with corticosteroid if needed","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Polyethylene glycol 3350","generic_name":"PEG 3350 (MiraLAX)","drug_class":"Osmotic laxative","drug_class_id":null,"drug_class_name":"Gastroenterology - Laxatives","indications":["Constipation"],"contraindications":["None significant"],"side_effects":["Bloating","Cramping","Diarrhea"],"dosage":{"adult":"17g in 4-8oz liquid daily"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"High molecular weight PEG: osmotically retains water in colon, softening stool and increasing motility.","mechanism_of_action":"MiraLAX","brand_names":["Not absorbed"],"pregnancy_category":"Gentle osmotic laxative~Can mix with any beverage~Onset 1-3 days~Generally well tolerated","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Sodium picosulfate","generic_name":"Sodium picosulfate","drug_class":"Stimulant laxative (prodrug)","drug_class_id":null,"drug_class_name":"Gastroenterology - Laxatives","indications":["Constipation","Bowel preparation (colonoscopy)"],"contraindications":["None significant"],"side_effects":["Cramping","Diarrhea","Electrolyte imbalance"],"dosage":{"adult":"5-10mg daily (constipation)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Prodrug: converted by colonic bacteria to active metabolite, stimulating colonic motility.","mechanism_of_action":"Prepopik (with MgCitrate)","brand_names":["Onset 6-12h"],"pregnancy_category":"Used in bowel prep combinations~Requires bacterial activation in colon~Also available with magnesium citrate (Prepopik)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Sennosides","generic_name":"Senna","drug_class":"Anthraquinone stimulant laxative","drug_class_id":null,"drug_class_name":"Gastroenterology - Laxatives","indications":["Constipation"],"contraindications":["None significant"],"side_effects":["Cramping","Diarrhea","Electrolyte imbalance (hypokalemia)"],"dosage":{"adult":"1-2 tablets at bedtime (17mg sennosides)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Anthraquinone glycosides converted by colonic bacteria to rheanthrone, stimulating peristalsis.","mechanism_of_action":"Senokot","brand_names":["Onset 6-12h"],"pregnancy_category":"Natural plant-based laxative~Take at bedtime for morning effect~Avoid long-term use (melanosis coli)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Docusate","generic_name":"Docusate sodium","drug_class":"Stool softener (surfactant)","drug_class_id":null,"drug_class_name":"Gastroenterology - Laxatives","indications":["Constipation (prevention)"],"contraindications":["None significant"],"side_effects":["None (well tolerated)"],"dosage":{"adult":"100-200mg BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Surface-active agent: lowers surface tension, allowing water and fat to penetrate stool.","mechanism_of_action":"Colace","brand_names":["Onset 12-72h"],"pregnancy_category":"Does not stimulate motility - just softens stool~Preventive not therapeutic~Often combined with stimulant laxatives","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Sodium sulfate/potassium sulfate/magnesium sulfate","generic_name":"GoLYTELY","drug_class":"Electrolyte lavage solution","drug_class_id":null,"drug_class_name":"Gastroenterology - Bowel Prep","indications":["Bowel preparation for colonoscopy"],"contraindications":["Bowel obstruction","Gastric retention","Toxic megacolon"],"side_effects":["Nausea","Bloating","Cramping","Electrolyte imbalance"],"dosage":{"adult":"1-3L over 2-4 hours (evening before procedure)"},"interactions":["None significant"],"monitoring":"Electrolytes~Fluid balance","patient_counselling":"Isotonic solution: causes voluminous watery diarrhea for complete bowel cleansing. PEG-based prep.","mechanism_of_action":"GoLYTELY~NuLYTELY","brand_names":["Onset 1-3h"],"pregnancy_category":"Start 3-4 hours before procedure~Adequate hydration essential~Contraindicated in obstruction~Many proprietary alternatives available","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-014","name":"Bictegravir","generic_name":"Bictegravir","drug_class":"Integrase strand transfer inhibitor (INSTI)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 infection (with other ARVs)"],"contraindications":["CrCl <30"],"side_effects":["Headache","Nausea","Diarrhea","Insomnia"],"dosage":{"adult":"50mg PO daily (in fixed-dose combination with TAF/FTC)"},"interactions":["Polyvalent cations (separate by 4-6h)"],"monitoring":"eGFR~HBV (if co-infected)","patient_counselling":"Blocks HIV integrase: prevents viral DNA from integrating into host genome.","mechanism_of_action":"Biktarvy","brand_names":["t1/2 17.3h","CYP unknown"],"pregnancy_category":"Available as single-tablet regimen (bictegravir/TAF/FTC)","warnings":["High barrier to resistance","Once daily","Few drug interactions"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Cabotegravir LA","generic_name":"Cabotegravir (long-acting injectable)","drug_class":"INSTI (long-acting injectable)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV treatment and prevention (PrEP)"],"contraindications":["Hypersensitivity to cabotegravir"],"side_effects":["Injection site reactions","Fever","Fatigue","Headache"],"dosage":{"adult":"Loading: 600mg IM day 1 + day 2, then 400mg IM monthly"},"interactions":["Polyvalent cations (if oral lead-in)"],"monitoring":"eGFR","patient_counselling":"Long-acting injectable INSTI: nanosuspension for IM depot, releasing drug over 1-2 months.","mechanism_of_action":"Cabenuva (treatment)~Apretude (PrEP)","brand_names":["t1/2 5.6 weeks (IM)"],"pregnancy_category":"Monthly or bimonthly injections~Eliminates daily pill burden~FDA-approved for both treatment (Cabenuva) and PrEP (Apretude)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Doravirine","generic_name":"Doravirine","drug_class":"Non-nucleoside reverse transcriptase inhibitor (NNRTI)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 infection"],"contraindications":["None significant"],"side_effects":["Nausea","Headache","Fatigue"],"dosage":{"adult":"100mg PO daily (with other ARVs)"},"interactions":["Rifampin (reduced levels)"],"monitoring":"None significant","patient_counselling":"Inhibits HIV-1 reverse transcriptase by binding to allosteric site.","mechanism_of_action":"Pifeltro","brand_names":["t1/2 15-21h","CYP3A4"],"pregnancy_category":"Newer NNRTI with fewer drug interactions than efavirenz/rilpivirine","warnings":["100mg once daily","Also available as fixed-dose (Delstrigo: doravirine/TDF/3TC)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-017","name":"Fostemsavir","generic_name":"Fostemsavir","drug_class":"Attachment inhibitor (gp120 blocker)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 (treatment-experienced, multidrug-resistant)"],"contraindications":["None significant"],"side_effects":["Nausea","Diarrhea","Headache"],"dosage":{"adult":"600mg PO BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Binds gp120 on HIV envelope, preventing initial attachment to CD4 receptors. First-in-class attachment inhibitor.","mechanism_of_action":"Rukobia","brand_names":["t1/2 11-14h (active temsavir","4h)"],"pregnancy_category":"New mechanism for treatment-experienced patients","warnings":["Oral BID dosing"],"overdose":"Prodrug of temsavir (active metabolite)","pharmacokinetics":"For heavily treatment-experienced patients","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-018","name":"Ibalizumab","generic_name":"Ibalizumab","drug_class":"Post-attachment inhibitor (CD4-directed mAb)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 (treatment-experienced, multidrug-resistant)"],"contraindications":["None significant"],"side_effects":["Diarrhea","Dizziness","Rash","Nausea"],"dosage":{"adult":"2000mg IV loading, then 800mg IV every 2 weeks"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Monoclonal antibody: binds domain 2 of CD4 receptor, blocking post-attachment steps without depleting CD4 cells.","mechanism_of_action":"Trogarzo","brand_names":["IV only: t1/2 9 days"],"pregnancy_category":"First-in-class post-attachment inhibitor","warnings":["IV every 2 weeks after loading"],"overdose":"For patients with multidrug-resistant HIV","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-019","name":"Enfuvirtide","generic_name":"Enfuvirtide","drug_class":"Fusion inhibitor (peptide)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 (treatment-experienced)"],"contraindications":["None significant"],"side_effects":["Injection site reactions (100%)","Bacterial pneumonia (increased)"],"dosage":{"adult":"90mg SC BID (with other ARVs)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Binds to HR1 region of gp41, preventing conformational change needed for membrane fusion.","mechanism_of_action":"Fuzeon","brand_names":["SC only: t1/2 3.8h"],"pregnancy_category":"SC injection BID - injection site reactions universal","warnings":["First fusion inhibitor approved"],"overdose":"For patients with multidrug-resistant HIV","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-020","name":"Didanosine","generic_name":"Didanosine","drug_class":"Nucleoside reverse transcriptase inhibitor (NRTI)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 infection (historical)"],"contraindications":["Pancreatitis history"],"side_effects":["Pancreatitis","Peripheral neuropathy","Lactic acidosis","Retinal changes"],"dosage":{"adult":"250-400mg BID (with buffer)"},"interactions":["Tenofovir (contraindicated combination)"],"monitoring":"Amylase/lipase~Lactic acid","patient_counselling":"NRTI: inhibits HIV RT. Limited use due to toxicity profile.","mechanism_of_action":"Videx","brand_names":["t1/2 1.6h"],"pregnancy_category":"Largely historical - replaced by less toxic NRTIs","warnings":["Pancreatitis and neuropathy are dose-limiting"],"overdose":"Do NOT combine with TDF (increased didanosine levels)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-021","name":"Stavudine","generic_name":"Stavudine","drug_class":"Nucleoside reverse transcriptase inhibitor (NRTI)","drug_class_id":null,"drug_class_name":"Anti-infectives - Antiretrovirals","indications":["HIV-1 infection (historical)"],"contraindications":["None significant"],"side_effects":["Peripheral neuropathy","Lactic acidosis","Lipodystrophy"],"dosage":{"adult":"30-40mg BID"},"interactions":["Zidovudine (antagonistic - do not combine)"],"monitoring":"Lactic acid","patient_counselling":"NRTI: similar to zidovudine. Limited use due to toxicity.","mechanism_of_action":"Zerit","brand_names":["t1/2 0.9-1.5h"],"pregnancy_category":"Historical NRTI - replaced by safer alternatives","warnings":["Peripheral neuropathy and lipodystrophy common"],"overdose":"Do not combine with zidovudine (antagonistic)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Posaconazole","generic_name":"Posaconazole","drug_class":"Triazole antifungal (extended spectrum)","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Prophylaxis (immunocompromised)","Invasive mucormycosis","Aspergillosis"],"contraindications":["QT prolongation","Hepatic impairment"],"side_effects":["Hepatotoxicity","QT prolongation","Headache","GI upset"],"dosage":{"adult":"300mg PO BID day 1, then 300mg daily (prophylaxis)"},"interactions":["CYP3A4 substrates (sirolimus - contraindicated)","QT drugs"],"monitoring":"LFTs~Trough levels if available","patient_counselling":"Broadest spectrum triazole: covers Aspergillus, Candida, Mucorales. Extended-release tablet for better absorption.","mechanism_of_action":"Noxafil","brand_names":["Bioavailability: solution 12% (take with fatty meal), EC tablet","50%"],"pregnancy_category":"Extended-release tablet: take with food~Avoid sirolimus and ergot alkaloids~Also available IV~Covers Mucorales (unlike other azoles)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Isavuconazole","generic_name":"Isavuconazole","drug_class":"Triazole antifungal","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Invasive aspergillosis","Mucormycosis"],"contraindications":["QT prolongation (less than voriconazole)"],"side_effects":["Hepatotoxicity","Nausea","Rash"],"dosage":{"adult":"200mg TID x 6 doses, then 200mg daily"},"interactions":["CYP3A4 substrates (sirolimus - contraindicated)"],"monitoring":"LFTs","patient_counselling":"Broad-spectrum triazole with less QT prolongation than voriconazole. Active against Mucorales.","mechanism_of_action":"Cresemba","brand_names":["Bioavailability 98%","t1/2 56h"],"pregnancy_category":"No QT prolongation (actually shortens QT - unique)","warnings":["Covers Aspergillus AND Mucorales","Long half-life once daily dosing","Better GI tolerability than voriconazole"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Micafungin","generic_name":"Micafungin","drug_class":"Echinocandin antifungal","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Invasive candidiasis","Esophageal candidiasis","Candidemia"],"contraindications":["None significant"],"side_effects":["Hepatotoxicity"],"dosage":{"adult":"100-150mg daily (candidiasis) or 50-100mg daily (prophylaxis)"},"interactions":["None significant"],"monitoring":"LFTs","patient_counselling":"Inhibits beta-(1,3)-D-glucan synthase. Longest half-life echinocandin.","mechanism_of_action":"Mycamine","brand_names":["IV only: t1/2 11-17h"],"pregnancy_category":"Longest half-life echinocandin~No significant drug interactions~Also used as antifungal prophylaxis in HSCT","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Anidulafungin","generic_name":"Anidulafungin","drug_class":"Echinocandin antifungal","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Esophageal candidiasis","Invasive candidiasis"],"contraindications":["None significant"],"side_effects":["Headache","Diarrhea"],"dosage":{"adult":"200mg IV day 1, then 100mg daily"},"interactions":["None significant"],"monitoring":"LFTs","patient_counselling":"Echinocandin: non-enzymatic degradation (no hepatic metabolism). Longest acting echinocandin.","mechanism_of_action":"Eraxis","brand_names":["IV only: t1/2 40-50h (longest echinocandin)"],"pregnancy_category":"Non-hepatic degradation - no CYP interactions~Longest half-life echinocandin~Best for esophageal candidiasis","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Amphotericin B deoxycholate","generic_name":"Amphotericin B deoxycholate","drug_class":"Polyene antifungal","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Severe systemic fungal infections (last resort)"],"contraindications":["Severe renal impairment"],"side_effects":["Nephrotoxicity (dose-limiting)","Infusion reactions (fever","chills","rigors)","Anemia","Hypokalemia"],"dosage":{"adult":"0.3-1.5 mg/kg/day IV"},"interactions":["Nephrotoxic drugs (additive)","Digoxin (hypokalemia increases toxicity)"],"monitoring":"Renal function~K+~Mg2+~CBC","patient_counselling":"Binds ergosterol in fungal cell membrane, creating pores causing cell death. Gold standard for severe mycoses.","mechanism_of_action":"Amphotec","brand_names":["IV only: t1/2 24h (but tissue effects prolonged)"],"pregnancy_category":"Most nephrotoxic antifungal~Infusion-related reactions: premedicate with acetaminophen~Electrolyte wasting (K+, Mg2+)","warnings":["Lipid formulations less nephrotoxic (AmBisome","Abelcet)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Liposomal amphotericin B","generic_name":"Liposomal amphotericin B (AmBisome)","drug_class":"Polyene antifungal (lipid formulation)","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Severe systemic fungal infections (less nephrotoxic)"],"contraindications":["None significant"],"side_effects":["Infusion reactions (less than conventional)","Nephrotoxicity (less than conventional)"],"dosage":{"adult":"3-5 mg/kg/day IV"},"interactions":["Same as conventional"],"monitoring":"Renal function~K+","patient_counselling":"Lipid formulation: reduced nephrotoxicity compared to conventional amphotericin B. Same mechanism.","mechanism_of_action":"AmBisome","brand_names":["IV only"],"pregnancy_category":"Less nephrotoxic than conventional amphotericin B~Higher doses tolerated~Same fungal spectrum~Cost is limitation","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Flucytosine","generic_name":"Flucytosine","drug_class":"Pyrimidine analogue antifungal","drug_class_id":null,"drug_class_name":"Infectious disease - Antifungals","indications":["Cryptococcal meningitis (with amphotericin B)"],"contraindications":["Bone marrow suppression"],"side_effects":["Bone marrow suppression","Hepatotoxicity","GI upset"],"dosage":{"adult":"100-150 mg/kg/day in 4 divided doses (with amphotericin B)"},"interactions":["Amphotericin B (increases flucytosine levels by reducing renal clearance)"],"monitoring":"CBC~Flucytosine levels (peak 25-100 mcg/mL)","patient_counselling":"Converted to 5-fluorouracil inside fungal cells. Combined with amphotericin B for synergy in cryptococcal meningitis.","mechanism_of_action":"Ancobon","brand_names":["Bioavailability 80-90%","t1/2 2.5-6h"],"pregnancy_category":"Essential component of cryptococcal meningitis treatment (with amphotericin B)","warnings":["Monitor levels and CBC","Bone marrow suppression dose-limiting","Synergy with amphotericin B"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Tavaborole","generic_name":"Tavaborole","drug_class":"Oxaborole antifungal (topical)","drug_class_id":null,"drug_class_name":"Dermatology - Antifungals","indications":["Onychomycosis (topical)"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"Apply once daily to affected nails x 48 weeks"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Inhibits fungal protein synthesis by binding to leucyl-tRNA synthetase.","mechanism_of_action":"Keratex","brand_names":["Nail penetration","topical"],"pregnancy_category":"Topical alternative to oral antifungals for nail infections","warnings":["Apply once daily for 48 weeks","No systemic side effects","Limited nail penetration (mild-moderate disease)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Efinaconazole","generic_name":"Efinaconazole","drug_class":"Topical triazole antifungal","drug_class_id":null,"drug_class_name":"Dermatology - Antifungals","indications":["Onychomycosis (topical)"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"Apply once daily to affected nails x 48 weeks"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical triazole: inhibits ergosterol synthesis. High nail penetration.","mechanism_of_action":"Jublia","brand_names":["Topical"],"pregnancy_category":"Better nail penetration than ciclopirox~Once daily application~48-week treatment course~No systemic side effects","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Ciclopirox","generic_name":"Ciclopirox","drug_class":"Hydroxypyridone antifungal","drug_class_id":null,"drug_class_name":"Dermatology - Antifungals","indications":["Onychomycosis (topical)","Dermatophyte skin infections"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"8% nail lacquer once daily x 48 weeks (nails)~Cream BID (skin)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Chelates polyvalent cations, inhibiting metal-dependent enzymes in fungi.","mechanism_of_action":"Penlac (nail)~Loprox (cream)","brand_names":["Topical"],"pregnancy_category":"Nail lacquer: once daily~Also available as cream for skin infections~No systemic absorption","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Terbinafine topical","generic_name":"Terbinafine (topical)","drug_class":"Allylamine antifungal (topical)","drug_class_id":null,"drug_class_name":"Dermatology - Antifungals","indications":["Tinea pedis","Tinea corporis"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"Apply BID x 1-2 weeks (tinea pedis)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical fungicidal: inhibits squalene epoxidase.","mechanism_of_action":"Lamisil AT","brand_names":["Topical"],"pregnancy_category":"Fungicidal topical for dermatophyte infections","warnings":["Apply BID for 1-2 weeks"],"overdose":"High cure rate for tinea pedis","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Natamycin","generic_name":"Natamycin","drug_class":"Polyene antifungal (topical ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Antifungals","indications":["Fungal keratitis"],"contraindications":["None significant"],"side_effects":["Eye irritation"],"dosage":{"adult":"1 drop q1-2h while awake x 14-21 days"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Polyene antifungal: binds ergosterol in fungal cell membranes.","mechanism_of_action":"Natacyn","brand_names":["Topical ophthalmic"],"pregnancy_category":"For fungal keratitis only~Polyene class (same as amphotericin B)","warnings":["Use frequently initially then taper","Limited corneal penetration"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Pegfilgrastim","generic_name":"Pegfilgrastim","drug_class":"Pegylated G-CSF","drug_class_id":null,"drug_class_name":"Oncology - Supportive care","indications":["Chemotherapy-induced neutropenia"],"contraindications":["None significant"],"side_effects":["Bone pain","Injection site reactions"],"dosage":{"adult":"6 mg SC once per chemo cycle (day 1 post-chemo)"},"interactions":["None significant"],"monitoring":"CBC","patient_counselling":"Pegylated filgrastim: extended half-life allows once-per-cycle dosing.","mechanism_of_action":"Neulasta","brand_names":["SC: t1/2 15-80h (extended by PEGylation)"],"pregnancy_category":"Once per cycle dosing - major convenience advantage~Start 24h after chemo~Bone pain most common~Do not use between 14 days before and 24h after chemo","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Darbepoetin alfa","generic_name":"Darbepoetin alfa","drug_class":"Erythropoiesis-stimulating agent (ESA)","drug_class_id":null,"drug_class_name":"Oncology - Supportive care","indications":["Anemia (chemotherapy-induced, CKD)"],"contraindications":["Uncontrolled hypertension","Active malignancy (increased mortality)"],"side_effects":["Hypertension","Headache","Thromboembolic events"],"dosage":{"adult":"200 IU/kg SC weekly or 500 IU/kg q3 weeks"},"interactions":["None significant"],"monitoring":"Hemoglobin (target 10-11 g/dL)~BP","patient_counselling":"Hyperglycosylated erythropoietin analogue with longer half-life. Stimulates red blood cell production.","mechanism_of_action":"Aranesp","brand_names":["SC/IV: t1/2 25.3h"],"pregnancy_category":"Longer half-life than epoetin alfa (allows less frequent dosing)~Target Hgb 10-11 g/dL (do not exceed 12)","warnings":["ESAs increase mortality in active malignancy - use lowest dose for shortest time"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Epoetin alfa","generic_name":"Epoetin alfa","drug_class":"Erythropoiesis-stimulating agent (ESA)","drug_class_id":null,"drug_class_name":"Oncology - Supportive care","indications":["Anemia (chemotherapy-induced, CKD, preoperative)"],"contraindications":["Uncontrolled hypertension"],"side_effects":["Hypertension","Headache","Thromboembolic events"],"dosage":{"adult":"10,000-40,000 IU SC/IV 3x/week"},"interactions":["None significant"],"monitoring":"Hemoglobin (target 10-11 g/dL)~BP","patient_counselling":"Recombinant human erythropoietin: stimulates erythropoiesis in bone marrow.","mechanism_of_action":"Procrit~Epogen","brand_names":["SC/IV: t1/2 4-13h"],"pregnancy_category":"Shorter half-life than darbepoetin - requires more frequent dosing~Target Hgb 10-11 g/dL~ESAs increase mortality in active malignancy","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Romiplostim","generic_name":"Romiplostim","drug_class":"Thrombopoietin receptor agonist","drug_class_id":null,"drug_class_name":"Hematology - Platelet agents","indications":["Immune thrombocytopenia (chronic)"],"contraindications":["None significant"],"side_effects":["Headache","Arthralgia","Bone marrow reticulin"],"dosage":{"adult":"1-10 mcg/kg SC weekly"},"interactions":["None significant"],"monitoring":"Platelet count qweek","patient_counselling":"TPO receptor agonist: stimulates megakaryocyte proliferation and platelet production.","mechanism_of_action":"Nplate","brand_names":["SC: t1/2 3.5 days"],"pregnancy_category":"Weekly SC injection~Titrate to platelet count 50,000-200,000~Bone marrow reticulin risk with prolonged use","warnings":["Do not use to normalize platelets"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Eltrombopag","generic_name":"Eltrombopag","drug_class":"Thrombopoietin receptor agonist (oral)","drug_class_id":null,"drug_class_name":"Hematology - Platelet agents","indications":["Immune thrombocytopenia","Aplastic anemia","Hepatitis C-associated thrombocytopenia"],"contraindications":["Hepatic impairment"],"side_effects":["Hepatotoxicity","Bone marrow reticulin","Cataracts"],"dosage":{"adult":"25-75mg PO daily (take on empty stomach)"},"interactions":["Polyvalent cations (antacids, iron, calcium - separate by 4h)"],"monitoring":"Platelet count~LFTs","patient_counselling":"Oral TPO receptor agonist: binds transmembrane domain of TPO receptor.","mechanism_of_action":"Promacta~Revolade","brand_names":["Bioavailability","30%","t1/2 21-32h"],"pregnancy_category":"Take on empty stomach (separate from polyvalent cations by 4h)","warnings":["Hepatotoxicity and bone marrow reticulin risk","Cataracts with long-term use"],"overdose":"Also used in aplastic anemia (with immunosuppressive therapy)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Lipegfilgrastim","generic_name":"Lipegfilgrastim","drug_class":"PEGylated G-CSF (biosimilar)","drug_class_id":null,"drug_class_name":"Oncology - Supportive care","indications":["Chemotherapy-induced neutropenia"],"contraindications":["None significant"],"side_effects":["Bone pain","Injection site reactions"],"dosage":{"adult":"6 mg SC once per chemo cycle"},"interactions":["None significant"],"monitoring":"CBC","patient_counselling":"Long-acting PEGylated G-CSF. Similar to pegfilgrastim.","mechanism_of_action":"Lonquex","brand_names":["SC: t1/2","32h"],"pregnancy_category":"Once per cycle dosing~Similar efficacy to pegfilgrastim~Biosimilar alternative","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Pertuzumab","generic_name":"Pertuzumab","drug_class":"Anti-HER2 monoclonal antibody (HER2 dimerization inhibitor)","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["HER2+ breast cancer (with trastuzumab)"],"contraindications":["None significant"],"side_effects":["Diarrhea","Infusion reactions","Cardiotoxicity"],"dosage":{"adult":"840 mg IV loading, then 420 mg IV q3 weeks"},"interactions":["None significant"],"monitoring":"Echocardiogram (LVEF)","patient_counselling":"Binds HER2 domain II: prevents HER2 heterodimerization with HER3/other HER receptors. Complementary to trastuzumab.","mechanism_of_action":"Perjeta","brand_names":["IV: t1/2 18 days"],"pregnancy_category":"Must be used with trastuzumab~Diarrhea most common (68%)~Cleopatra trial: improved PFS/OS in HER2+ MBC","warnings":["Less cardiotoxicity than trastuzumab"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Trastuzumab deruxtecan","generic_name":"Trastuzumab deruxtecan (T-DXd)","drug_class":"Anti-HER2 antibody-drug conjugate (ADC)","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["HER2+ and HER2-low breast cancer"],"contraindications":["None significant"],"side_effects":["Nausea","Vomiting","Alopecia","Interstitial lung disease (ILD)","Myelosuppression"],"dosage":{"adult":"5.4 mg/kg IV q3 weeks"},"interactions":["None significant"],"monitoring":"PFTs if respiratory symptoms (ILD)","patient_counselling":"Anti-HER2 ADC: trastuzumab linked to topoisomerase I inhibitor via cleavable linker. Bystander effect kills adjacent HER2-low cells.","mechanism_of_action":"Enhertu","brand_names":["IV: t1/2 14 days"],"pregnancy_category":"Bystander effect: effective even in HER2-low tumors~Interstitial lung disease risk (monitor respiratory symptoms)","warnings":["DESTINY-Breast03: superior to T-DM1 in HER2+"],"overdose":"Also effective in HER2-low breast cancer (DESTINY-Breast04)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Ado-trastuzumab emtansine","generic_name":"T-DM1 (ado-trastuzumab emtansine)","drug_class":"Anti-HER2 antibody-drug conjugate","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["HER2+ breast cancer (after progression on trastuzumab)"],"contraindications":["None significant"],"side_effects":["Hepatotoxicity","Thrombocytopenia","Peripheral neuropathy","Infusion reactions"],"dosage":{"adult":"3.6 mg/kg IV q3 weeks"},"interactions":["None significant"],"monitoring":"Platelet count~LFTs~PN assessment","patient_counselling":"Anti-HER2 ADC: trastuzumab linked to cytotoxic DM1 via non-cleavable linker.","mechanism_of_action":"Kadcyla","brand_names":["IV: t1/2 4 days"],"pregnancy_category":"Non-cleavable linker - no bystander effect (requires HER2 expression)","warnings":["Hepatotoxicity and thrombocytopenia most common","Peripheral neuropathy dose-limiting"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Olaratumab","generic_name":"Olaratumab","drug_class":"Anti-PDGFR-alpha monoclonal antibody","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["Soft tissue sarcoma (with doxorubicin)"],"contraindications":["None significant"],"side_effects":["Infusion reactions","Hemorrhage","Neutropenia"],"dosage":{"adult":"15 mg/kg IV weekly (with doxorubicin)"},"interactions":["None significant"],"monitoring":"CBC","patient_counselling":"Anti-PDGFR-alpha: blocks PDGF receptor signaling. Added to doxorubicin for advanced STS. FDA approval withdrawn due to lack of OS benefit in confirmatory trial.","mechanism_of_action":"Lartruvo","brand_names":["IV: t1/2 11 days"],"pregnancy_category":"FDA approval withdrawn (no OS benefit in phase 3)","warnings":["Was used with doxorubicin for advanced STS","Available through restricted program"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Ramucirumab","generic_name":"Ramucirumab","drug_class":"Anti-VEGFR2 monoclonal antibody","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["Gastric/GEC","NSCLC","CRC","HCC"],"contraindications":["None significant"],"side_effects":["Hypertension","Proteinuria","GI perforation","Hemorrhage"],"dosage":{"adult":"8 mg/kg IV q2 weeks (gastric) or 10 mg/kg q2 weeks (NSCLC)"},"interactions":["None significant"],"monitoring":"BP~Proteinuria","patient_counselling":"Binds VEGFR2 directly, blocking VEGF ligand binding. Alternative to bevacizumab.","mechanism_of_action":"Cyramza","brand_names":["IV: t1/2 11 days"],"pregnancy_category":"Anti-VEGFR2 (targets receptor vs ligand like bevacizumab)","warnings":["GI perforation and hemorrhage risk","Hypertension common","Also used in CRC, HCC"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Cetuximab","generic_name":"Cetuximab","drug_class":"Anti-EGFR monoclonal antibody","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["CRC (KRAS wild-type)","Head and neck SCC"],"contraindications":["None significant"],"side_effects":["Acneiform rash","Hypomagnesemia","Infusion reactions","Hypokalemia"],"dosage":{"adult":"400 mg/m2 IV loading, then 250 mg/m2 weekly (or 500 mg/m2 q2 weeks)"},"interactions":["None significant"],"monitoring":"EGFR testing (KRAS/NRAS/BRAF)~Magnesium levels","patient_counselling":"Binds EGFR, blocking downstream signaling. KRAS/NRAS wild-type required for efficacy in CRC.","mechanism_of_action":"Erbitux","brand_names":["IV: t1/2 63h"],"pregnancy_category":"REQUIRES RAS testing (KRAS/NRAS) - no benefit in mutant","warnings":["Acneiform rash correlates with efficacy","Hypomagnesemia (monitor Mg2+)","Also blocks VEGF in combo with bevacizumab"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Panitumumab","generic_name":"Panitumumab","drug_class":"Anti-EGFR monoclonal antibody (fully human)","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["CRC (RAS wild-type)"],"contraindications":["None significant"],"side_effects":["Acneiform rash","Hypomagnesemia","Hypokalemia","Fatigue"],"dosage":{"adult":"6 mg/kg IV q2 weeks"},"interactions":["None significant"],"monitoring":"EGFR testing (RAS wild-type required)","patient_counselling":"Fully human anti-EGFR: lower immunogenicity than cetuximab. Same RAS testing requirement.","mechanism_of_action":"Vectibix","brand_names":["IV: t1/2 4 days"],"pregnancy_category":"Fully human - lower infusion reaction rate than cetuximab","warnings":["Acneiform rash correlates with efficacy","Hypomagnesemia common"],"overdose":"RAS testing mandatory","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-014","name":"Atezolizumab","generic_name":"Atezolizumab","drug_class":"Anti-PD-L1 checkpoint inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Immunotherapy","indications":["NSCLC","HCC","SCLC","TNBC","UC"],"contraindications":["None significant"],"side_effects":["Immune-mediated adverse events","Fatigue","Infusion reactions"],"dosage":{"adult":"1200 mg IV q3 weeks"},"interactions":["Immunosuppressants (reduce efficacy)"],"monitoring":"TFTs~LFTs~Glucose","patient_counselling":"PD-L1 inhibitor: blocks PD-L1 on tumor cells, preventing PD-1 engagement on T cells.","mechanism_of_action":"Tecentriq","brand_names":["IV: t1/2 31 days"],"pregnancy_category":"Anti-PD-L1 (vs anti-PD-1 for nivolumab/pembrolizumab)","warnings":["Also blocks CD80/CD86 (B7 ligands) - may enhance immune response"],"overdose":"Combo with bevacizumab for HCC and NSCLC","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Ipilimumab","generic_name":"Ipilimumab","drug_class":"Anti-CTLA-4 checkpoint inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Immunotherapy","indications":["Melanoma","RCC (with nivolumab)","HCC","NSCLC"],"contraindications":["Active autoimmune disease"],"side_effects":["Immune-mediated adverse events (more severe than PD-1 inhibitors)"],"dosage":{"adult":"3 mg/kg q3 weeks x4 (melanoma) or 1 mg/kg q6 weeks (with nivolumab)"},"interactions":["Immunosuppressants (reduce efficacy)"],"monitoring":"LFTs~Colonoscopy if diarrhea","patient_counselling":"CTLA-4 inhibitor: blocks CTLA-4 inhibitory signal, enhancing T-cell activation. More toxic than PD-1 inhibitors.","mechanism_of_action":"Yervoy","brand_names":["IV: t1/2 14 days"],"pregnancy_category":"Higher rate of immune-mediated AEs than PD-1 inhibitors~Colitis is most serious (check for perforation)~Hepatitis~Endocrinopathies","warnings":["1 mg/kg with nivolumab for many tumor types (lower dose = less toxicity)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Nivolumab + ipilimumab","generic_name":"Opdivo + Yervoy","drug_class":"PD-1 + CTLA-4 combination immunotherapy","drug_class_id":null,"drug_class_name":"Oncology - Immunotherapy","indications":["RCC","Melanoma","NSCLC (PD-L1 >=1%)"],"contraindications":["None significant"],"side_effects":["Immune-mediated adverse events (more than either alone)"],"dosage":{"adult":"Nivolumab 1 mg/kg + ipilimumab 1 mg/kg q3 weeks x4, then nivolumab 240mg q2 weeks"},"interactions":["Immunosuppressants"],"monitoring":"LFTs~TFTs~Glucose~Colonoscopy if diarrhea","patient_counselling":"Dual checkpoint blockade: synergistic anti-tumor immunity by blocking both PD-1 and CTLA-4 pathways.","mechanism_of_action":"Opdivo + Yervoy","brand_names":["Same as individual agents"],"pregnancy_category":"Combination more effective but more toxic than either alone~LFTs monitoring essential (hepatotoxicity common with combination)~For many tumor types now","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-017","name":"Avelumab","generic_name":"Avelumab","drug_class":"Anti-PD-L1 checkpoint inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Immunotherapy","indications":["Merkel cell carcinoma","Urothelial carcinoma"],"contraindications":["None significant"],"side_effects":["Infusion reactions","Immune-mediated AEs","Fatigue"],"dosage":{"adult":"10 mg/kg IV q2 weeks"},"interactions":["Immunosuppressants (reduce efficacy)"],"monitoring":"TFTs~LFTs","patient_counselling":"PD-L1 inhibitor: also mediates ADCC via Fc region (unique among checkpoint inhibitors).","mechanism_of_action":"Bavencio","brand_names":["IV: t1/2 6 days"],"pregnancy_category":"ADCC capability (unique feature among checkpoint inhibitors)","warnings":["Lower potency anti-PD-L1 compared to atezolizumab"],"overdose":"Also approved with axitinib for RCC","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-018","name":"Durvalumab","generic_name":"Durvalumab","drug_class":"Anti-PD-L1 checkpoint inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Immunotherapy","indications":["NSCLC (stage III consolidation)","SCLC","BTC"],"contraindications":["None significant"],"side_effects":["Immune-mediated AEs","Pneumonitis"],"dosage":{"adult":"10 mg/kg IV q2 weeks or 1500 mg q4 weeks"},"interactions":["Immunosuppressants (reduce efficacy)"],"monitoring":"TFTs~LFTs","patient_counselling":"PD-L1 inhibitor: consolidation therapy after concurrent chemoRT in stage III NSCLC (PACIFIC trial).","mechanism_of_action":"Imfinzi","brand_names":["IV: t1/2 18 days"],"pregnancy_category":"PACIFIC trial: standard of care for stage III NSCLC after chemoRT~Also used in biliary tract cancer with gemcitabine/cisplatin","warnings":["Less pneumonitis than expected"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-019","name":"Erdafitinib","generic_name":"Erdafitinib","drug_class":"FGFR inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["Urothelial carcinoma (FGFR-altered)"],"contraindications":["None significant"],"side_effects":["Hyperphosphatemia","Stomatitis","Nail toxicity","Retinal detachment"],"dosage":{"adult":"8 mg PO daily (with food)"},"interactions":["Strong CYP3A4 inducers/inhibitors"],"monitoring":"Phosphate~LFTs~Ophthalmology","patient_counselling":"Inhibits FGFR1-4: overcomes FGFR-altered resistance in urothelial carcinoma.","mechanism_of_action":"Balversa","brand_names":["Bioavailability","t1/2 5.9h","CYP2C9/3A4"],"pregnancy_category":"Hyperphosphatemia most common (phosphate binder if >5.5)","warnings":["Ophthalmology monitoring (retinal detachment risk)"],"overdose":"Take with food daily","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-020","name":"Larotrectinib","generic_name":"Larotrectinib","drug_class":"TRK inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["TRK fusion-positive solid tumors"],"contraindications":["None significant"],"side_effects":["Dizziness","Weight gain","Nausea"],"dosage":{"adult":"100mg PO BID"},"interactions":["Strong CYP3A4 inhibitors/inducers"],"monitoring":"Tumor NGS for TRK fusion","patient_counselling":"Inhibits tropomyosin receptor kinases (TRK): effective in any tumor type with NTRK gene fusion.","mechanism_of_action":"Vitrakvi","brand_names":["Bioavailability 34-98%","t1/2 2.9h","CYP3A4"],"pregnancy_category":"Tumor-agnostic therapy: works in any cancer with TRK fusion~Response rate ~75% across tumor types","warnings":["Requires NTRK gene fusion testing"],"overdose":"Oral BID dosing","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-021","name":"Entrectinib","generic_name":"Entrectinib","drug_class":"TRK/ROS1/ALK inhibitor","drug_class_id":null,"drug_class_name":"Oncology - Targeted therapy","indications":["TRK fusion-positive solid tumors","ROS1+ NSCLC","ALK+ NSCLC"],"contraindications":["None significant"],"side_effects":["Dysgeusia","Fatigue","Edema","Dizziness","Weight gain"],"dosage":{"adult":"600mg PO daily"},"interactions":["Strong CYP3A4 inhibitors (reduce to 200mg)"],"monitoring":"Tumor NGS for TRK/ROS1/ALK","patient_counselling":"Inhibits TRK, ROS1, and ALK kinases. CNS-penetrant.","mechanism_of_action":"Rozlytrek","brand_names":["Bioavailability 34-98%","t1/2 5.7h","CYP3A4"],"pregnancy_category":"CNS-penetrant: effective in brain metastases~Tumor-agnostic for TRK fusions~Also covers ROS1 and ALK","warnings":["Take with or without food"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Cilostazol","generic_name":"Cilostazol","drug_class":"PDE3 inhibitor","drug_class_id":null,"drug_class_name":"Cardiovascular - Antiplatelets","indications":["Intermittent claudication"],"contraindications":["Heart failure (contraindicated)"],"side_effects":["Headache","Diarrhea","Palpitations","Dizziness"],"dosage":{"adult":"100mg BID"},"interactions":["CYP3A4 inhibitors (increased effects)"],"monitoring":"None significant","patient_counselling":"PDE3 inhibitor: inhibits platelet aggregation and causes vasodilation. Improved walking distance in claudication.","mechanism_of_action":"Pletal","brand_names":["Bioavailability 50-90%","t1/2 11-13h","CYP3A4/CYP2B6"],"pregnancy_category":"CONTRAINDICATED in heart failure (mortality signal)","warnings":["Headache most common (35%)","Improved walking distance 50-100m","Avoid with other antiplatelets if possible"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Ticlopidine","generic_name":"Ticlopidine","drug_class":"Thienopyridine antiplatelet (P2Y12 inhibitor)","drug_class_id":null,"drug_class_name":"Cardiovascular - Antiplatelets","indications":["Stent thrombosis prevention (historical)"],"contraindications":["Neutropenia/TTP"],"side_effects":["Neutropenia","TTP","Thrombocytopenia","GI upset"],"dosage":{"adult":"250mg BID"},"interactions":["None significant"],"monitoring":"CBC (risk of neutropenia/TTP)","patient_counselling":"First thienopyridine: irreversibly blocks P2Y12. Largely replaced by clopidogrel/prasugrel due to toxicity.","mechanism_of_action":"Ticlid","brand_names":["Bioavailability 20-30%","t1/2 12-25h"],"pregnancy_category":"Historical - replaced by safer alternatives~Neutropenia risk (1-2%)~TTP risk~CBC monitoring required","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Cangrelor","generic_name":"Cangrelor","drug_class":"Reversible P2Y12 inhibitor (IV)","drug_class_id":null,"drug_class_name":"Cardiovascular - Antiplatelets","indications":["PCI (platelet inhibition during procedure)"],"contraindications":["None significant"],"side_effects":["Bleeding","Dyspnea"],"dosage":{"adult":"30 mcg/kg IV bolus then 4 mcg/kg/min infusion"},"interactions":["None significant"],"monitoring":"Platelet function testing if needed","patient_counselling":"Reversible IV P2Y12 inhibitor: immediate onset, offset within 1 hour. Bridge between oral antiplatelet and procedure.","mechanism_of_action":"Kengreal","brand_names":["IV: t1/2 3-6 min"],"pregnancy_category":"Fastest onset/offset of any P2Y12 inhibitor~IV only: for periprocedural use~Offset within 60 min of stopping infusion~Bridge to oral P2Y12 inhibitor","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Vorapaxar","generic_name":"Vorapaxar","drug_class":"PAR-1 antagonist (antiplatelet)","drug_class_id":null,"drug_class_name":"Cardiovascular - Antiplatelets","indications":["Secondary prevention (prior MI/PAD)"],"contraindications":["History of stroke/TIA (contraindicated)","Active bleeding"],"side_effects":["Bleeding","GI upset"],"dosage":{"adult":"2.5mg daily"},"interactions":["None significant"],"monitoring":"Bleeding risk","patient_counselling":"PAR-1 (protease-activated receptor 1) antagonist: blocks thrombin-mediated platelet activation via a unique pathway.","mechanism_of_action":"Zontivity","brand_names":["Bioavailability","50%","t1/2 223h (extremely long)"],"pregnancy_category":"Once daily dosing~Contraindicated in prior stroke/TIA (TRA 2P-TIMI 50: increased intracranial hemorrhage)","warnings":["Unique mechanism: PAR-1 antagonist (thrombin receptor)"],"overdose":"Very long half-life","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Rasburicase","generic_name":"Rasburicase","drug_class":"Recombinant urate oxidase","drug_class_id":null,"drug_class_name":"Hematology - Supportive care","indications":["Tumor lysis syndrome (uric acid management)"],"contraindications":["Methemoglobinemia","G6PD deficiency"],"side_effects":["Hypersensitivity","Methemoglobinemia (G6PD-deficient)"],"dosage":{"adult":"0.2 mg/kg IV single dose"},"interactions":["None significant"],"monitoring":"Uric acid levels~Monitor for hypersensitivity","patient_counselling":"Converts uric acid to allantoin (more soluble and easily excreted). Prevents uric acid nephropathy in tumor lysis.","mechanism_of_action":"Elitek","brand_names":["IV: t1/2 18h"],"pregnancy_category":"Prevents uric acid nephropathy in tumor lysis~Contraindicated in G6PD deficiency (severe hemolysis risk)","warnings":["Monitor methemoglobin levels","Single dose before chemotherapy","More effective than allopurinol for acute TLS"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Pegloticase","generic_name":"Pegloticase","drug_class":"PEGylated recombinant uricase","drug_class_id":null,"drug_class_name":"Gout - Urate lowering","indications":["Chronic refractory gout"],"contraindications":["None significant"],"side_effects":["Gout flares","Infusion reactions","Anaphylaxis (risk)"],"dosage":{"adult":"8 mg IV q2 weeks"},"interactions":["None significant"],"monitoring":"Uric acid~Infusion reactions","patient_counselling":"PEGylated uricase: rapidly lowers serum uric acid. For chronic gout refractory to conventional therapy. High immunogenicity.","mechanism_of_action":"Krystexxa","brand_names":["IV: t1/2 10-14 days"],"pregnancy_category":"For severe chronic refractory gout only~High infusion reaction rate (26%)~Anaphylaxis risk (monitor)~Serum uric acid should be <6 mg/mL (if rising = immunogenicity)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Lesinurad","generic_name":"Lesinurad","drug_class":"URAT1/OAT4 inhibitor (uricosuric)","drug_class_id":null,"drug_class_name":"Gout - Urate lowering","indications":["Gout (combination with XOI)"],"contraindications":["CrCl <30","Tumor lysis","Uric acid nephrolithiasis"],"side_effects":["Headache","GERD","Elevated creatinine"],"dosage":{"adult":"200mg daily (with XOI)"},"interactions":["None significant"],"monitoring":"Uric acid~Renal function","patient_counselling":"URAT1 and OAT4 inhibitor: blocks renal uric acid reabsorption, increasing uric acid excretion. Must use with XOI.","mechanism_of_action":"Zurampic","brand_names":["Bioavailability","100%","t1/2 1h"],"pregnancy_category":"Must use with allopurinol or febuxostat (not as monotherapy)","warnings":["Renal dose adjustment: avoid if CrCl <30"],"overdose":"200mg once daily","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Benzbromarone","generic_name":"Benzbromarone","drug_class":"URAT1 inhibitor (uricosuric)","drug_class_id":null,"drug_class_name":"Gout - Urate lowering","indications":["Chronic gout (refractory)"],"contraindications":["Hepatic impairment"],"side_effects":["Hepatotoxicity","Uric acid nephrolithiasis"],"dosage":{"adult":"50-200mg daily"},"interactions":["None significant"],"monitoring":"Uric acid~LFTs","patient_counselling":"Potent URAT1 inhibitor: blocks renal uric acid reabsorption. Available outside US.","mechanism_of_action":"Urnorman (not available in US)","brand_names":["t1/2 2-4h"],"pregnancy_category":"Not available in US due to hepatotoxicity concerns","warnings":["Very effective uricosuric","Potent uric acid reduction"],"overdose":"Used in Europe/Asia","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Probenecid","generic_name":"Probenecid","drug_class":"Uricosuric agent","drug_class_id":null,"drug_class_name":"Gout - Urate lowering","indications":["Chronic gout","Renal uric acid stones"],"contraindications":["CrCl <30","Uric acid nephrolithiasis"],"side_effects":["GI upset","Rash","Headache"],"dosage":{"adult":"500mg BID, titrate to 2g daily"},"interactions":["Penicillins (increases levels - historically used to prolong PCN effect)","NSAIDs (reduced uricosuric effect)","Methotrexate (increased levels)"],"monitoring":"Uric acid~Renal function","patient_counselling":"Blocks OAT1/OAT3 and URAT1, increasing renal uric acid excretion. Historically used to boost penicillin levels.","mechanism_of_action":"Benemid","brand_names":["Bioavailability 100%","t1/2 6-12h"],"pregnancy_category":"Historically used to prolong penicillin action~NSAIDs reduce uricosuric effect~Good for overproducers of uric acid~Prevent renal uric acid stones","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Auranofin","generic_name":"Rheumatology - DMARDs","drug_class":"Gold compound (oral)","drug_class_id":null,"drug_class_name":"Auranofin","indications":["Rheumatoid arthritis (historical)"],"contraindications":["Bone marrow aplasia","Hepatic impairment"],"side_effects":["Diarrhea (most common)","Skin rash","Stomatitis"],"dosage":{"adult":"3mg BID (6mg/day)"},"interactions":["None significant"],"monitoring":"CBC~LFTs","patient_counselling":"Gold compound: modulates immune function by inhibiting thioredoxin reductase. Historical DMARD.","mechanism_of_action":"Ridaura","brand_names":["Bioavailability 15-25%"],"pregnancy_category":"Diarrhea limits tolerability~Largely replaced by biologics~Low-dose (3mg/day) better tolerated","warnings":["Gold therapy historical"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Dapsone","generic_name":"Dermatology - Antimicrobials","drug_class":"Sulfone","drug_class_id":null,"drug_class_name":"Dapsone","indications":["Leprosy (multibacillary)","Dermatitis herpetiformis","Pneumocystis pneumonia (prophylaxis)"],"contraindications":["Severe G6PD deficiency"],"side_effects":["Hemolytic anemia (G6PD)","Methemoglobinemia","Peripheral neuropathy","Hepatotoxicity"],"dosage":{"adult":"50-300mg daily (varies by indication)"},"interactions":["Dapsone (hematologic toxicity)-folic acid antagonists"],"monitoring":"CBC~Reticulocyte count~G6PD","patient_counselling":"Inhibits bacterial folate synthesis (dapsone) and modulates neutrophil chemotaxis (anti-inflammatory at low doses).","mechanism_of_action":"Aczone (topical)","brand_names":["Bioavailability 70-80%","t1/2 28h"],"pregnancy_category":"G6PD testing essential (hemolytic anemia risk)~Methemoglobinemia: check methemoglobin level","warnings":["Also used topically for acne (Aczone 5% gel)"],"overdose":"Anti-inflammatory at low doses (dermatitis herpetiformis)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Isotretinoin","generic_name":"Dermatology - Retinoid","drug_class":"Retinoid (oral)","drug_class_id":null,"drug_class_name":"Isotretinoin","indications":["Severe nodulocystic acne (refractory)"],"contraindications":["Pregnancy (teratogenic - iPLEDGE required)"],"side_effects":["Dry skin/lips","Cheilitis","Elevated LFTs","Elevated triglycerides","Depression (controversial)"],"dosage":{"adult":"0.5-1 mg/kg/day x 15-20 weeks (cumulative dose 120-150 mg/kg)"},"interactions":["Vitamin A supplements (additive toxicity)","Tetracyclines (pseudotumor cerebri risk)"],"monitoring":"LFTs~Triglycerides~Pregnancy test monthly","patient_counselling":"iPLEDGE program: must use two forms of contraception. Normalizes sebaceous gland function.","mechanism_of_action":"Absorica~Amnesteem","brand_names":["Bioavailability: variable (take with fatty food)"],"pregnancy_category":"iPLEDGE program mandatory~Teratogenic: two forms of contraception required~Monthly pregnancy tests~Dry skin/lips universal~Depression monitoring (controversial)","warnings":["Also reduces sebum production permanently"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Acitretin","generic_name":"Dermatology - Retinoid","drug_class":"Retinoid (oral)","drug_class_id":null,"drug_class_name":"Acitretin","indications":["Severe psoriasis","Ichthyosis"],"contraindications":["Pregnancy (teratogenic)"],"side_effects":["Dry skin/lips","Elevated LFTs","Elevated triglycerides","Hair loss"],"dosage":{"adult":"25-50mg daily"},"interactions":["Alcohol (prolongs elimination - avoid for 2 months after)"],"monitoring":"LFTs~Triglycerides","patient_counselling":"Systemic retinoid for severe psoriasis. Contraindicated in pregnancy.","mechanism_of_action":"Soriatane","brand_names":["Bioavailability 60%","t1/2 49h (prolonged by alcohol)"],"pregnancy_category":"Avoid alcohol during and 2 months after treatment (prolongs half-life to ~160 days)","warnings":["Teratogenic: iPLEDGE program"],"overdose":"Useful for pustular/generalized pustular psoriasis","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Tazarotene","generic_name":"Dermatology - Retinoid","drug_class":"Retinoid (topical)","drug_class_id":null,"drug_class_name":"Tazarotene","indications":["Psoriasis (plaque)","Acne","Photoaging"],"contraindications":["Pregnancy (teratogenic)"],"side_effects":["Application site irritation","Dryness","Photosensitivity"],"dosage":{"adult":"Apply once daily (cream or gel)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical retinoid: normalizes keratinization and reduces inflammation.","mechanism_of_action":"Tazorac","brand_names":["Topical"],"pregnancy_category":"More potent topical retinoid than tretinoin~Also used for acne and photoaging","warnings":["Pregnancy category X (teratopic)"],"overdose":"Apply at bedtime","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Tretinoin","generic_name":"Dermatology - Retinoid","drug_class":"Retinoid (topical)","drug_class_id":null,"drug_class_name":"Tretinoin","indications":["Acne","Photoaging","Photodamage"],"contraindications":["Pregnancy (teratogenic)"],"side_effects":["Application site irritation","Photosensitivity","Dryness"],"dosage":{"adult":"Apply once daily at bedtime (cream/gel)"},"interactions":["Benzoyl peroxide (inactivates tretinoin if applied simultaneously)","Tetracyclines"],"monitoring":"None significant","patient_counselling":"Topical retinoid: normalizes follicular keratinization, stimulates collagen synthesis.","mechanism_of_action":"Retin-A","brand_names":["Topical"],"pregnancy_category":"Apply at bedtime~Avoid simultaneous benzoyl peroxide (separate by hours)","warnings":["Sunscreen essential (photosensitivity)"],"overdose":"Also used for photoaging (Renova 0.02%)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Adapalene","generic_name":"Dermatology - Retinoid","drug_class":"Retinoid (topical, third-generation)","drug_class_id":null,"drug_class_name":"Adapalene","indications":["Acne"],"contraindications":["Pregnancy (relatively safe - category C)"],"side_effects":["Application site irritation","Dryness"],"dosage":{"adult":"Apply once daily at bedtime"},"interactions":["Benzoyl peroxide (compatible - can use together)"],"monitoring":"None significant","patient_counselling":"Third-generation topical retinoid: selective for RAR-beta and RAR-gamma receptors. Less irritating than tretinoin.","mechanism_of_action":"Differin","brand_names":["Topical"],"pregnancy_category":"Less irritating than tretinoin~Can combine with benzoyl peroxide (Epiduo)","warnings":["Category C - relatively safe in pregnancy"],"overdose":"Available OTC (0.1%)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Benzoyl peroxide","generic_name":"Dermatology - Antibacterials","drug_class":"Topical oxidizing agent","drug_class_id":null,"drug_class_name":"Benzoyl peroxide","indications":["Acne"],"contraindications":["None significant"],"side_effects":["Skin irritation","Bleaching of fabrics","Dryness"],"dosage":{"adult":"Apply BID (2.5-10% wash/gel)"},"interactions":["Tretinoin (inactivates if applied simultaneously)"],"monitoring":"None significant","patient_counselling":"Oxidizing agent: kills C. acnes via free radical formation. No antibiotic resistance.","mechanism_of_action":"PanOxyl (wash)~Clearskin","brand_names":["Topical"],"pregnancy_category":"Kills C. acnes without promoting resistance~Can bleach fabrics and hair~Separate from tretinoin application (by hours)~Start with 2.5% (less irritation)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Clindamycin topical","generic_name":"Dermatology - Antibacterials","drug_class":"Topical lincosamide","drug_class_id":null,"drug_class_name":"Clindamycin (topical)","indications":["Acne"],"contraindications":["None significant"],"side_effects":["Skin irritation","Dryness"],"dosage":{"adult":"Apply BID to affected area"},"interactions":["Erythromycin (antagonistic)"],"monitoring":"None significant","patient_counselling":"Inhibits bacterial protein synthesis. Often combined with benzoyl peroxide to reduce resistance.","mechanism_of_action":"Cleocin T","brand_names":["Topical"],"pregnancy_category":"Usually combined with benzoyl peroxide~Monitor for C. difficile if systemic absorption (rare)","warnings":["Low systemic absorption topically"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Mupirocin","generic_name":"Dermatology - Antibacterials","drug_class":"Topical antibiotic","drug_class_id":null,"drug_class_name":"Mupirocin","indications":["Impetigo","MRSA nasal decolonization"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"Apply TID to affected area (skin)~BID to nares x 5 days (decolonization)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Inhibits bacterial isoleucyl-tRNA synthetase. Bactericidal against S. aureus and Streptococcus.","mechanism_of_action":"Bactroban","brand_names":["Topical"],"pregnancy_category":"Excellent for impetigo~Nasal decolonization: BID x 5 days~Short-term use only (resistance with prolonged use)","warnings":["Also available as cream and nasal ointment"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Daptomycin topical","generic_name":"Dermatology - Antimicrobials","drug_class":"Topical lipopeptide","drug_class_id":null,"drug_class_name":"Daptomycin (topical)","indications":["Burn wound infections (investigational)"],"contraindications":["None significant"],"side_effects":["Application site reactions"],"dosage":{"adult":"Topical application to infected wound"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical formulation of daptomycin for burn wound infections (investigational).","mechanism_of_action":"Investigational","brand_names":["Topical"],"pregnancy_category":"For burn wound infections (research stage)","warnings":["May complement systemic daptomycin for burn patients"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Triamcinolone acetonide","generic_name":"Dermatology - Corticosteroids","drug_class":"Topical corticosteroid (medium potency)","drug_class_id":null,"drug_class_name":"Triamcinolone acetonide","indications":["Eczema","Dermatitis","Psoriasis","Insect bites"],"contraindications":["None significant"],"side_effects":["Skin atrophy","Striae","Telangiectasia"],"dosage":{"adult":"Apply BID-QID to affected area (0.1% cream)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Medium-potency topical corticosteroid for inflammatory dermatoses. Acetonide ester enhances skin penetration.","mechanism_of_action":"Kenalog","brand_names":["Topical"],"pregnancy_category":"Medium potency - avoid face/groin~Also available as IM depot (Kenalog-40) and dental paste (Kenalog in Orabase)","warnings":["Higher potency options available for severe disease"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Betamethasone dipropionate","generic_name":"See corticosteroids section","drug_class":"See corticosteroids section","drug_class_id":null,"drug_class_name":"See corticosteroids section","indications":["See corticosteroids section"],"contraindications":["See corticosteroids section"],"side_effects":["See corticosteroids section"],"dosage":{"adult":"See corticosteroids section"},"interactions":["See corticosteroids section"],"monitoring":"See corticosteroids section","patient_counselling":"See corticosteroids section","mechanism_of_action":"See corticosteroids section","brand_names":["See corticosteroids section"],"pregnancy_category":"See corticosteroids section","warnings":["See corticosteroids section"],"overdose":"See corticosteroids section","pharmacokinetics":"See corticosteroids section","black_box_warnings":["See corticosteroids section"],"clinical_pearls":["See corticosteroids section"],"created_at":""},
+    {"id":"bulk-014","name":"Clobetasol","generic_name":"Dermatology - Corticosteroids","drug_class":"Topical corticosteroid (superpotent)","drug_class_id":null,"drug_class_name":"Clobetasol","indications":["Severe recalcitrant dermatoses"],"contraindications":["None significant"],"side_effects":["Skin atrophy","Striae","Hypothalamic-pituitary-adrenal suppression (extensive)"],"dosage":{"adult":"Apply BID x 2 weeks max (0.05% cream)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Superpotent topical corticosteroid: highest potency available. Limit use to 2 weeks.","mechanism_of_action":"Temovate","brand_names":["Topical"],"pregnancy_category":"Superpotent (Class I) - strongest available~Limit use to 2 weeks maximum~Avoid face, groin, axillae~Risk of HPA suppression if extensive use","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Hydrocortisone (topical)","generic_name":"Dermatology - Corticosteroids","drug_class":"Topical corticosteroid (low potency)","drug_class_id":null,"drug_class_name":"Hydrocortisone (topical)","indications":["Mild eczema","Dermatitis","Insect bites"],"contraindications":["None significant"],"side_effects":["Skin atrophy (minimal with low potency)"],"dosage":{"adult":"Apply BID-QID (1% cream)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Low-potency topical corticosteroid: safe for face, groin, and pediatric use.","mechanism_of_action":"Cortaid","brand_names":["Topical"],"pregnancy_category":"Lowest potency - safe for sensitive areas","warnings":["Safe for face, groin, axillae","Can be used in infants"],"overdose":"Also available OTC","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Pimecrolimus","generic_name":"Dermatology - Calcineurin inhibitors","drug_class":"Topical calcineurin inhibitor","drug_class_id":null,"drug_class_name":"Pimecrolimus","indications":["Mild-moderate eczema (face/neck)"],"contraindications":["None significant"],"side_effects":["Application site reactions","Skin burning","Herpes simplex"],"dosage":{"adult":"Apply BID to affected areas"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Selective calcineurin inhibitor: reduces T-cell mediated inflammation without skin atrophy risk.","mechanism_of_action":"Elidel","brand_names":["Topical"],"pregnancy_category":"No skin atrophy risk (unlike corticosteroids)","warnings":["Safe for face, neck, and skin folds"],"overdose":"Black box warning: theoretical lymphoma risk (not confirmed)","pharmacokinetics":"Avoid in immunocompromised","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-017","name":"Tacrolimus (topical)","generic_name":"Dermatology - Calcineurin inhibitors","drug_class":"Topical calcineurin inhibitor","drug_class_id":null,"drug_class_name":"Tacrolimus (topical)","indications":["Moderate-severe eczema"],"contraindications":["None significant"],"side_effects":["Application site burning","Skin irritation","Herpes simplex"],"dosage":{"adult":"0.1% BID (adults)~0.03% BID (children)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Calcineurin inhibitor: reduces eczema flares and steroid use. More potent than pimecrolimus.","mechanism_of_action":"Protopic","brand_names":["Topical"],"pregnancy_category":"More potent than pimecrolimus for moderate-severe eczema~Application site burning common initially (decreases with use)","warnings":["No skin atrophy risk","Steroid-sparing agent","Black box warning: theoretical lymphoma risk (not confirmed)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-018","name":"Brimonidine","generic_name":"Ophthalmology - Glaucoma","drug_class":"Alpha-2 adrenergic agonist (ophthalmic)","drug_class_id":null,"drug_class_name":"Brimonidine","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Concomitant MAOIs"],"side_effects":["Allergic conjunctivitis","Dry mouth","Drowsiness"],"dosage":{"adult":"1 drop BID"},"interactions":["MAOIs (contraindicated)"],"monitoring":"IOP","patient_counselling":"Reduces aqueous humor production and increases uveoscleral outflow.","mechanism_of_action":"Alphagan","brand_names":["Onset 1h","Duration 7-8h"],"pregnancy_category":"BID dosing~Can cause allergic follicular conjunctivitis~Less effective than prostaglandins~Can cross BBB (drowsiness)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-019","name":"Dorzolamide","generic_name":"Ophthalmology - Glaucoma","drug_class":"Carbonic anhydrase inhibitor (ophthalmic)","drug_class_id":null,"drug_class_name":"Dorzolamide","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Severe renal impairment"],"side_effects":["Ocular stinging","Bitter taste","Keratopathy"],"dosage":{"adult":"1 drop TID in affected eye(s)"},"interactions":["High-dose oral carbonic anhydrase inhibitors (additive)"],"monitoring":"None significant","patient_counselling":"Inhibits carbonic anhydrase II in ciliary body, reducing aqueous humor production.","mechanism_of_action":"Trusopt","brand_names":["Onset 2h"],"pregnancy_category":"TID dosing disadvantage~Ocular stinging common~Caution in renal impairment~Can combine with timolol (Cosopt)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-020","name":"Brinzolamide","generic_name":"Ophthalmology - Glaucoma","drug_class":"Carbonic anhydrase inhibitor (ophthalmic)","drug_class_id":null,"drug_class_name":"Brinzolamide","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Severe renal impairment"],"side_effects":["Ocular discomfort","Bitter taste"],"dosage":{"adult":"1 drop BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Carbonic anhydrase inhibitor with suspension formulation (less stinging than dorzolamide).","mechanism_of_action":"Azopt","brand_names":["Onset 2h"],"pregnancy_category":"BID dosing (vs dorzolamide TID)~Less stinging than dorzolamide~Suspension formulation","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-021","name":"Pilocarpine","generic_name":"Ophthalmology - Glaucoma","drug_class":"Cholinergic agonist (miotic)","drug_class_id":null,"drug_class_name":"Pilocarpine","indications":["Angle-closure glaucoma (emergency)","Open-angle glaucoma"],"contraindications":["None significant"],"side_effects":["Miosis","Brow ache","Blurred vision","Bradycardia (if absorbed)"],"dosage":{"adult":"1-2 drops q15-6h (varies by formulation)"},"interactions":["Anticholinergics (antagonize effect)"],"monitoring":"IOP","patient_counselling":"Contracts ciliary muscle, opening trabecular meshwork and increasing aqueous outflow. Miotic.","mechanism_of_action":"Isopto Carpine","brand_names":["Onset 15-60 min"],"pregnancy_category":"For angle-closure emergency (pupillary block)~Miosis causes brow ache and blurred vision~Short-acting: multiple daily doses~Also used for dry mouth (Salagen 5mg TID)","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-022","name":"Acetazolamide","generic_name":"Ophthalmology - Glaucoma","drug_class":"Carbonic anhydrase inhibitor (oral)","drug_class_id":null,"drug_class_name":"Acetazolamide","indications":["Open-angle glaucoma","Altitude sickness","Edema (heart failure)"],"contraindications":["Severe renal impairment","Hypokalemia","Metabolic acidosis"],"side_effects":["Paresthesias","Hypokalemia","Metabolic acidosis","Anorexia","Drowsiness"],"dosage":{"adult":"250-500mg BID or 250mg SR daily"},"interactions":["High-dose aspirin (metabolic acidosis risk)"],"monitoring":"K+~Bicarbonate~Electrolytes","patient_counselling":"Inhibits carbonic anhydrase, reducing aqueous humor production and causing metabolic acidosis.","mechanism_of_action":"Diamox","brand_names":["Bioavailability 100%","t1/2 2.5-6h"],"pregnancy_category":"Paresthesias very common (tingling in fingers/toes)","warnings":["Also used for altitude sickness prophylaxis","Metabolic acidosis expected (bicarbonate supplementation if symptomatic)"],"overdose":"Also used for idiopathic intracranial hypertension","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-023","name":"Methazolamide","generic_name":"Ophthalmology - Glaucoma","drug_class":"Carbonic anhydrase inhibitor (oral)","drug_class_id":null,"drug_class_name":"Methazolamide","indications":["Open-angle glaucoma"],"contraindications":["Severe renal impairment"],"side_effects":["Metabolic acidosis","Hypokalemia","Paresthesias"],"dosage":{"adult":"25-50mg BID"},"interactions":["High-dose aspirin"],"monitoring":"K+","patient_counselling":"Carbonic anhydrase inhibitor with better ocular penetration than acetazolamide.","mechanism_of_action":"Neptazane","brand_names":["Bioavailability","t1/2 14h"],"pregnancy_category":"Longer half-life than acetazolamide (BID vs QID)","warnings":["Better ocular penetration","Less paresthesias than acetazolamide"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-024","name":"Brimonidine + timolol","generic_name":"Combigan","drug_class":"Alpha-2 agonist + beta-blocker (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Asthma/COPD","Sinus bradycardia"],"side_effects":["Ocular hyperemia","Bitter taste","Allergic conjunctivitis"],"dosage":{"adult":"1 drop BID"},"interactions":["MAOIs (contraindicated)"],"monitoring":"IOP","patient_counselling":"Fixed combination: reduces aqueous humor production via dual mechanism.","mechanism_of_action":"Combigan","brand_names":["Onset 1h"],"pregnancy_category":"BID dosing convenience~Dual mechanism better than monotherapy~Avoid in reactive airway disease","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-025","name":"Latanoprost + timolol","generic_name":"Fixtimal","drug_class":"Prostaglandin + beta-blocker (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Asthma/COPD","Sinus bradycardia"],"side_effects":["Iris pigmentation","Conjunctival hyperemia"],"dosage":{"adult":"1 drop once daily in evening"},"interactions":["MAOIs (contraindicated)"],"monitoring":"IOP","patient_counselling":"Fixed combination for maximum IOP reduction.","mechanism_of_action":"Fixtimal","brand_names":["Once daily","Dual mechanism","Iris pigmentation risk from latanoprost component"],"pregnancy_category":"C","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Oxybutynin","generic_name":"Oxybutynin","drug_class":"Antimuscarinic (anticholinergic)","drug_class_id":null,"drug_class_name":"Urology - Overactive bladder","indications":["Overactive bladder"],"contraindications":["Urinary retention","Uncontrolled narrow-angle glaucoma"],"side_effects":["Dry mouth (most common)","Constipation","Blurred vision","Drowsiness"],"dosage":{"adult":"5mg BID-TID (IR) or 5-10mg daily (XL)"},"interactions":["CYP3A4 inhibitors"],"monitoring":"None significant","patient_counselling":"Blocks M3 receptors on detrusor smooth muscle, reducing involuntary bladder contractions.","mechanism_of_action":"Ditropan","brand_names":["Bioavailability 6-30%","t1/2 2-3h"],"pregnancy_category":"IR: BID-TID dosing~XL: once daily (better tolerability)","warnings":["Patch: fewer GI effects than oral"],"overdose":"Also available as topical gel (Oxytrol)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Solifenacin","generic_name":"Solifenacin","drug_class":"Antimuscarinic (selective M3)","drug_class_id":null,"drug_class_name":"Urology - Overactive bladder","indications":["Overactive bladder"],"contraindications":["Urinary retention","Uncontrolled narrow-angle glaucoma"],"side_effects":["Dry mouth","Constipation","Blurred vision"],"dosage":{"adult":"5-10mg daily"},"interactions":["CYP3A4 inhibitors (increase levels)"],"monitoring":"None significant","patient_counselling":"Selective M3 muscarinic antagonist for bladder relaxation. Better GI tolerability than oxybutynin.","mechanism_of_action":"Vesicare","brand_names":["Bioavailability 90%","t1/2 45-68h"],"pregnancy_category":"Once daily dosing~Less dry mouth than oxybutynin~Long half-life allows once daily","warnings":["Also available with mirabegron (Vibegzon)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Fesoterodine","generic_name":"Urology - Antimuscarinics","drug_class":"Antimuscarinic (active metabolite of tolterodine)","drug_class_id":null,"drug_class_name":"Fesoterodine","indications":["Overactive bladder"],"contraindications":["Urinary retention","Uncontrolled narrow-angle glaucoma"],"side_effects":["Dry mouth","Constipation","Drowsiness"],"dosage":{"adult":"4-8mg daily"},"interactions":["CYP3A4 inhibitors (reduced to 4mg)"],"monitoring":"None significant","patient_counselling":"Prodrug converted to active metabolite (5-HMT) by esterases. Similar efficacy to tolterodine but more flexible dosing.","mechanism_of_action":"Toviaz","brand_names":["Bioavailability 52%","t1/2 7-8h (active metabolite 10-14h)"],"pregnancy_category":"Flexible dosing 4-8mg daily~Also available as ER formulation","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Darifenacin","generic_name":"Urology - Antimuscarinics","drug_class":"Antimuscarinic (M3-selective)","drug_class_id":null,"drug_class_name":"Darifenacin","indications":["Overactive bladder"],"contraindications":["Urinary retention","Uncontrolled narrow-angle glaucoma"],"side_effects":["Dry mouth","Constipation","Blurred vision"],"dosage":{"adult":"7.5mg daily, max 15mg daily"},"interactions":["CYP3A4/CYP2D6 inhibitors"],"monitoring":"None significant","patient_counselling":"Selective M3 receptor antagonist: most M3-selective antimuscarinic for OAB.","mechanism_of_action":"Enablex","brand_names":["Bioavailability 15-25%","t1/2 12-15h (active metabolite 17h)"],"pregnancy_category":"Most M3-selective antimuscarinic~CYP2D6 poor metabolizers: max 7.5mg","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Tolterodine","generic_name":"Urology - Antimuscarinics","drug_class":"Antimuscarinic","drug_class_id":null,"drug_class_name":"Tolterodine","indications":["Overactive bladder"],"contraindications":["Urinary retention","Uncontrolled narrow-angle glaucoma"],"side_effects":["Dry mouth","Constipation","Blurred vision"],"dosage":{"adult":"2mg BID (IR) or 4mg daily (XL)"},"interactions":["CYP2D6/3A4 inhibitors (reduce to 1mg BID)"],"monitoring":"None significant","patient_counselling":"Blocks muscarinic receptors on detrusor muscle. Active metabolite (5-HMT) also pharmacologically active.","mechanism_of_action":"Detrol","brand_names":["Bioavailability 30-55%","t1/2 2-4h (active metabolite 9-12h)"],"pregnancy_category":"IR: BID dosing; XL: once daily","warnings":["CYP2D6 poor metabolizers have higher levels","Also available with tolterodine LA (IM monthly)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Dutasteride","generic_name":"Dutasteride","drug_class":"5-alpha reductase inhibitor (dual type 1/2)","drug_class_id":null,"drug_class_name":"Urology - BPH","indications":["BPH (combination with tamsulosin)"],"contraindications":["Women and children (teratogenic)"],"side_effects":["Erectile dysfunction","Decreased libido","Gynecomastia"],"dosage":{"adult":"0.5mg daily"},"interactions":["CYP3A4 inhibitors"],"monitoring":"PSA (reduce by ~50%)","patient_counselling":"Dual 5-alpha reductase inhibitor (type 1 and 2): more complete DHT suppression than finasteride.","mechanism_of_action":"Avodart","brand_names":["Bioavailability 60%","t1/2 5 weeks (very long)"],"pregnancy_category":"Very long half-life: effects persist months after discontinuation","warnings":["Dual type 1+2 inhibition (vs finasteride type 2 only)"],"overdose":"Also combined with tamsulosin (Jalyn)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Alfuzosin","generic_name":"Urology - Alpha blockers","drug_class":"Alpha-1 blocker (uroselective)","drug_class_id":null,"drug_class_name":"Alfuzosin","indications":["BPH"],"contraindications":["Severe hepatic impairment"],"side_effects":["Orthostatic hypotension","Dizziness","Headache"],"dosage":{"adult":"10mg daily (ER)"},"interactions":["CYP3A4 inhibitors (avoid)"],"monitoring":"None significant","patient_counselling":"Uroselective alpha-1 antagonist with less effect on blood pressure.","mechanism_of_action":"Uroxatral","brand_names":["Bioavailability 49-64%","t1/2 8-10h"],"pregnancy_category":"Uroselective properties~Less orthostatic hypotension than non-selective alpha blockers","warnings":["10mg ER once daily"],"overdose":"Take with food","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Silodosin","generic_name":"Urology - Alpha blockers","drug_class":"Alpha-1A ultra-selective blocker","drug_class_id":null,"drug_class_name":"Silodosin","indications":["BPH"],"contraindications":["Severe hepatic impairment"],"side_effects":["Retrograde ejaculation (28%)","Orthostatic hypotension","Dizziness"],"dosage":{"adult":"8mg daily (with food)"},"interactions":["PDE5 inhibitors (additive hypotension)"],"monitoring":"None significant","patient_counselling":"Most alpha-1A selective blocker: highest rate of retrograde ejaculation but least orthostatic hypotension.","mechanism_of_action":"Rapaflo","brand_names":["Bioavailability 12.5%","t1/2 13-16h"],"pregnancy_category":"Most alpha-1A selective - retrograde ejaculation in 28% but usually tolerable","warnings":["Take with food and water"],"overdose":"No dose adjustment in renal impairment","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Doxazosin ER","generic_name":"Urology - Alpha blockers","drug_class":"Alpha-1 blocker ER","drug_class_id":null,"drug_class_name":"Doxazosin ER","indications":["BPH"],"contraindications":["Same as doxazosin IR"],"side_effects":["Same as IR"],"dosage":{"adult":"Same as IR"},"interactions":["4-8mg daily"],"monitoring":"Same as IR","patient_counselling":"None significant","mechanism_of_action":"Extended-release formulation for once-daily dosing.","brand_names":["Cardura XL"],"pregnancy_category":"t1/2 22h","warnings":["Once daily ER"],"overdose":"Start 4mg, titrate to 8mg","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Avanafil","generic_name":"Urology - PDE5 inhibitor","drug_class":"PDE5 inhibitor (most selective)","drug_class_id":null,"drug_class_name":"Avanafil","indications":["Erectile dysfunction"],"contraindications":["Nitrates (contraindicated)"],"side_effects":["Headache","Flushing","Nasal congestion","Back pain"],"dosage":{"adult":"50-200mg PRN"},"interactions":["Nitrates (contraindicated)"],"monitoring":"None significant","patient_counselling":"Most PDE5-selective inhibitor: fastest onset (15 min) and fewest visual side effects.","mechanism_of_action":"Stendra","brand_names":["Bioavailability 65%","t1/2 5h"],"pregnancy_category":"Fastest onset PDE5i (15 min)","warnings":["Fewest visual side effects"],"overdose":"Take 15-30 min before activity","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Vardenafil","generic_name":"Urology - PDE5 inhibitor","drug_class":"PDE5 inhibitor","drug_class_id":null,"drug_class_name":"Vardenafil","indications":["Erectile dysfunction"],"contraindications":["Nitrates (contraindicated)","QT prolongation"],"side_effects":["Headache","Flushing","Dizziness","QT prolongation"],"dosage":{"adult":"5-20mg PRN"},"interactions":["QT-prolonging drugs","Nitrates (contraindicated)"],"monitoring":"ECG (QTc)","patient_counselling":"PDE5 inhibitor. Also available as orally disintegrating tablet (Levitra ODT).","mechanism_of_action":"Levitra","brand_names":["Bioavailability 15%","t1/2 4-5h"],"pregnancy_category":"ODT formulation available (no water needed)","warnings":["QTc prolongation at high doses","Avoid with QT-prolonging drugs"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Oxybutynin topical","generic_name":"Urology - Antimuscarinics","drug_class":"Antimuscarinic (transdermal)","drug_class_id":null,"drug_class_name":"Oxybutynin topical","indications":["Overactive bladder"],"contraindications":["None significant"],"side_effects":["Application site reactions","Dry mouth (less than oral)"],"dosage":{"adult":"Apply to abdomen, upper arms, or buttocks daily"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Transdermal formulation: bypasses first-pass metabolism, reducing systemic side effects (especially dry mouth).","mechanism_of_action":"Oxytrol","brand_names":["Transdermal"],"pregnancy_category":"Less dry mouth than oral (27% vs 94%)~Apply to dry, intact skin~Change patch twice weekly","warnings":["Also available as topical gel"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Desmopressin nasal","generic_name":"Urology - Antidiuretic","drug_class":"Vasopressin analogue (nasal)","drug_class_id":null,"drug_class_name":"Desmopressin nasal","indications":["Nocturnal enuresis","Central diabetes insipidus"],"contraindications":["Hyponatremia"],"side_effects":["Hyponatremia","Headache"],"dosage":{"adult":"1-2 sprays at bedtime (enuresis)"},"interactions":["None significant"],"monitoring":"Sodium level","patient_counselling":"Nasal formulation: better absorption than oral for enuresis and DI.","mechanism_of_action":"DDAVP nasal","brand_names":["Bioavailability: nasal 3-5%"],"pregnancy_category":"Nasal spray for enuresis and DI","warnings":["More effective than oral for DI"],"overdose":"Monitor sodium","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-014","name":"Midodrine","generic_name":"Urology - Vasopressor","drug_class":"Alpha-1 agonist (prodrug)","drug_class_id":null,"drug_class_name":"Midodrine","indications":["Orthostatic hypotension"],"contraindications":["Severe supine hypertension"],"side_effects":["Supine hypertension","Piloerection","Urinary retention"],"dosage":{"adult":"2.5-10mg TID (take last dose before bed)"},"interactions":["None significant"],"monitoring":"BP (supine and standing)","patient_counselling":"Prodrug converted to desglymidodrine: alpha-1 agonist causing arterial/venous constriction.","mechanism_of_action":"ProAmatine","brand_names":["Bioavailability 93%","t1/2 25-30h (active metabolite 3.4h)"],"pregnancy_category":"Take during daytime only - last dose at least 4h before bedtime~Avoid supine position~Monitor supine BP","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Droxidopa","generic_name":"Urology - Vasopressor","drug_class":"Norepinephrine prodrug","drug_class_id":null,"drug_class_name":"Droxidopa","indications":["Neurogenic orthostatic hypotension (Parkinson's","MSA","POTS)"],"contraindications":["None significant"],"side_effects":["Supine hypertension","Headache","Nausea"],"dosage":{"adult":"100mg TID, titrate to max 600mg TID"},"interactions":["None significant"],"monitoring":"BP (supine and standing)","patient_counselling":"Prodrug converted to norepinephrine in vivo. Increases peripheral vascular resistance.","mechanism_of_action":"Northera","brand_names":["Bioavailability","t1/2 2-3h"],"pregnancy_category":"Take during daytime only~Avoid late evening dosing (supine hypertension)","warnings":["Also available in Japan/Europe"],"overdose":"For neurogenic orthostatic hypotension","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Ondansetron (PRV)","generic_name":"Urology - Antiemetic","drug_class":"5-HT3 antagonist (for nausea)","drug_class_id":null,"drug_class_name":"Ondansetron PRV","indications":["Chemotherapy-induced nausea"],"contraindications":["Concomitant apomorphine (contraindicated)"],"side_effects":["Headache","Constipation"],"dosage":{"adult":"4-8mg IV/PO"},"interactions":["See antiemetics section"],"monitoring":"See antiemetics section","patient_counselling":"See antiemetics section","mechanism_of_action":"See antiemetics section","brand_names":["See antiemetics section"],"pregnancy_category":"See antiemetics section","warnings":["See antiemetics section"],"overdose":"See antiemetics section","pharmacokinetics":"See antiemetics section","black_box_warnings":["See antiemetics section"],"clinical_pearls":["See antiemetics section"],"created_at":""},
+    {"id":"bulk-017","name":"Minoxidil","generic_name":"Dermatology - Hair growth","drug_class":"K+ channel opener (topical)","drug_class_id":null,"drug_class_name":"Minoxidil","indications":["Androgenetic alopecia (male/female)"],"contraindications":["None significant"],"side_effects":["Scalp irritation","Hypertrichosis (unwanted hair growth)","Dizziness"],"dosage":{"adult":"5% topical BID (men)~2-5% (women)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Opens ATP-sensitive potassium channels in hair follicles, prolonging anagen phase and stimulating growth.","mechanism_of_action":"Rogaine","brand_names":["Topical"],"pregnancy_category":"5% foam for men, 2% liquid for women~Apply BID to scalp~Results take 4-6 months~Hypertrichosis possible","warnings":["Also available as oral low-dose for refractory alopecia (off-label)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-018","name":"Spironolactone (topical)","generic_name":"Dermatology - Anti-androgen","drug_class":"Topical anti-androgen","drug_class_id":null,"drug_class_name":"Spironolactone topical","indications":["Female pattern hair loss"],"contraindications":["None significant"],"side_effects":["Contact dermatitis"],"dosage":{"adult":"Apply to affected areas BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Topical anti-androgen: blocks DHT receptor in hair follicle. Alternative to oral spironolactone.","mechanism_of_action":"Investigational","brand_names":["Topical"],"pregnancy_category":"For female pattern hair loss (topical formulation under investigation)","warnings":["Less systemic effects than oral spironolactone"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-019","name":"Cyproterone","generic_name":"Dermatology - Anti-androgen","drug_class":"Anti-androgen (progestogen)","drug_class_id":null,"drug_class_name":"Cyproterone","indications":["Severe hirsutism","Acne (with ethinyl estradiol)"],"contraindications":["Hepatic impairment","Meningioma"],"side_effects":["Hepatotoxicity","Hepatocellular carcinoma (rare)","Depression"],"dosage":{"adult":"50mg daily (with ethinyl estradiol in CPA/EE)"},"interactions":["None significant"],"monitoring":"LFTs","patient_counselling":"Competitive androgen receptor antagonist and progestogen. Blocks testosterone/DHT effects.","mechanism_of_action":"Androcur (not available US)","brand_names":["Bioavailability 60-80%"],"pregnancy_category":"Not available in US (hepatotoxicity concerns)","warnings":["Used in Europe for severe hirsutism and acne"],"overdose":"Combined with ethinyl estradiol as Dianette/Diane-35","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-020","name":"Eflornithine","generic_name":"Dermatology - Anti-hirsutism","drug_class":"Ornithine decarboxylase inhibitor (topical)","drug_class_id":null,"drug_class_name":"Eflornithine","indications":["Facial hirsutism (women)"],"contraindications":["None significant"],"side_effects":["Skin irritation","Acne","Folliculitis"],"dosage":{"adult":"Apply BID to affected facial areas"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Inhibits ornithine decarboxylase, reducing hair growth rate. Slows (does not remove) facial hair.","mechanism_of_action":"Vaniqa","brand_names":["Topical"],"pregnancy_category":"Apply BID - results take 8-24 weeks","warnings":["Slows hair growth (does not remove existing hair)"],"overdose":"Combine with other hair removal methods for best results","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-021","name":"Calcipotriene","generic_name":"Dermatology - Vitamin D analogue","drug_class":"Topical vitamin D analogue","drug_class_id":null,"drug_class_name":"Calcipotriene","indications":["Plaque psoriasis"],"contraindications":["None significant"],"side_effects":["Skin irritation","Calcium elevation (extensive use)"],"dosage":{"adult":"Apply BID to affected areas"},"interactions":["None significant"],"monitoring":"Calcium (if extensive use)","patient_counselling":"Synthetic vitamin D analogue: inhibits keratinocyte proliferation and promotes differentiation.","mechanism_of_action":"Dovonex","brand_names":["Topical"],"pregnancy_category":"Apply BID to affected areas~Calcium monitoring if >100g/week used~Also available as combination with betamethasone (Enstilar foam)","warnings":["Calcium elevation with extensive use"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-022","name":"Calcipotriene/betamethasone","generic_name":"Enstilar","drug_class":"Vitamin D analogue + corticosteroid (topical)","drug_class_id":null,"drug_class_name":"Dermatology - Combination","indications":["Plaque psoriasis"],"contraindications":["None significant"],"side_effects":["Skin atrophy (betamethasone component)","Irritation"],"dosage":{"adult":"Apply BID for up to 4 weeks"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Fixed combination: calcipotriene for keratinocyte normalization + betamethasone for anti-inflammation.","mechanism_of_action":"Enstilar","brand_names":["Topical"],"pregnancy_category":"Foam formulation: easy application","warnings":["Limit use to 4 weeks (corticosteroid component)"],"overdose":"Very effective combination for plaque psoriasis","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-023","name":"Tacrolimus (topical)","generic_name":"See dermatology section","drug_class":"See dermatology section","drug_class_id":null,"drug_class_name":"See dermatology section","indications":["See dermatology section"],"contraindications":["See dermatology section"],"side_effects":["See dermatology section"],"dosage":{"adult":"See dermatology section"},"interactions":["See dermatology section"],"monitoring":"See dermatology section","patient_counselling":"See dermatology section","mechanism_of_action":"See dermatology section","brand_names":["See dermatology section"],"pregnancy_category":"See dermatology section","warnings":["See dermatology section"],"overdose":"See dermatology section","pharmacokinetics":"See dermatology section","black_box_warnings":["See dermatology section"],"clinical_pearls":["See dermatology section"],"created_at":""},
+    {"id":"bulk-001","name":"Cidofovir","generic_name":"Antiviral (nucleotide analogue)","drug_class":"CMV DNA polymerase inhibitor","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["CMV retinitis (immunocompromised)"],"contraindications":["Severe renal impairment"],"side_effects":["Nephrotoxicity (dose-limiting)","Neutropenia"],"dosage":{"adult":"5 mg/kg IV weekly x2, then q2 weeks (with probenecid and hydration)"},"interactions":["NSAIDs (nephrotoxicity potentiation)"],"monitoring":"Renal function~Creatinine","patient_counselling":"Nucleotide analogue: does not require viral kinase for activation. Active against CMV and adenovirus.","mechanism_of_action":"Vistide","brand_names":["IV: t1/2 2.6h (but intracellular t1/2 much longer)"],"pregnancy_category":"Probenecid pre-treatment required (reduces nephrotoxicity)","warnings":["Aggressive hydration essential"],"overdose":"Nephrotoxic: monitor renal function closely","pharmacokinetics":"For CMV retinitis in AIDS patients","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Foscarnet","generic_name":"Antiviral (pyrophosphate analogue)","drug_class":"CMV DNA polymerase inhibitor","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["CMV retinitis (ganciclovir-resistant)","Acyclovir-resistant HSV"],"contraindications":["Severe renal impairment"],"side_effects":["Nephrotoxicity","Electrolyte abnormalities (hypocalcemia","hypokalemia","hypomagnesemia)","Seizures"],"dosage":{"adult":"60mg/kg IV q8h or 90mg/kg q12h"},"interactions":["Pentamidine (nephrotoxicity potentiation)"],"monitoring":"Renal function~Electrolytes~Ionized calcium","patient_counselling":"Directly inhibits viral DNA polymerase without requiring phosphorylation. Pyrophosphate analogue.","mechanism_of_action":"Foscavir","brand_names":["IV: t1/2 3.3h"],"pregnancy_category":"Does not require viral thymidine kinase for activation (active against TK-deficient strains)","warnings":["Electrolyte monitoring essential (Ca2+, K+, Mg2+)"],"overdose":"Nephrotoxic: aggressive hydration","pharmacokinetics":"For ganciclovir-resistant CMV","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Entecavir","generic_name":"Antiviral (nucleoside analogue)","drug_class":"HBV DNA polymerase reverse transcriptase inhibitor","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Chronic hepatitis B"],"contraindications":["None significant"],"side_effects":["Headache","Fatigue","Nausea"],"dosage":{"adult":"0.5mg daily (lamivudine-naive) or 1mg daily (lamivudine-resistant)"},"interactions":["None significant"],"monitoring":"HBV DNA~LFTs~Renal function","patient_counselling":"Potent nucleoside analogue: inhibits all three activities of HBV polymerase (base priming, reverse transcription, DNA synthesis).","mechanism_of_action":"Baraclude","brand_names":["Oral bioavailability 100%","t1/2 15h (intracellular","15h)"],"pregnancy_category":"More potent than lamivudine","warnings":["Low barrier to resistance (if lamivudine-resistant: 1mg daily)"],"overdose":"Renal dose adjustment needed","pharmacokinetics":"First-line for chronic hepatitis B","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Tenofovir (for HBV)","generic_name":"See antiretrovirals section","drug_class":"See antiretrovirals section","drug_class_id":null,"drug_class_name":"See antiretrovirals section","indications":["See antiretrovirals section"],"contraindications":["See antiretrovirals section"],"side_effects":["See antiretrovirals section"],"dosage":{"adult":"See antiretrovirals section"},"interactions":["See antiretrovirals section"],"monitoring":"See antiretrovirals section","patient_counselling":"See antiretrovirals section","mechanism_of_action":"See antiretrovirals section","brand_names":["See antiretrovirals section"],"pregnancy_category":"See antiretrovirals section","warnings":["See antiretrovirals section"],"overdose":"See antiretrovirals section","pharmacokinetics":"See antiretrovirals section","black_box_warnings":["See antiretrovirals section"],"clinical_pearls":["See antiretrovirals section"],"created_at":""},
+    {"id":"bulk-005","name":"Pegylated interferon alpha","generic_name":"Immunomodulator (pegylated)","drug_class":"Immune response modifier","drug_class_id":null,"drug_class_name":"Infectious disease - Immunomodulators","indications":["Chronic hepatitis B","Chronic hepatitis C (historical)"],"contraindications":["Decompensated cirrhosis","Autoimmune disease"],"side_effects":["Flu-like symptoms","Depression","Neutropenia","Thrombocytopenia","Hypothyroidism"],"dosage":{"adult":"180mcg SC weekly (HCV) or 12-18mcg/kg weekly (HBV)"},"interactions":["Myelosuppressive drugs"],"monitoring":"CBC~TFTs~LFTs","patient_counselling":"Pegylated interferon-alpha: stimulates innate and adaptive immune response against hepatitis virus.","mechanism_of_action":"Pegasys (alfa-2a)~PegIntron (alfa-2b)","brand_names":["SC: t1/2 80h (alfa-2a)","50h (alfa-2b)"],"pregnancy_category":"Pegylation extends half-life to allow weekly dosing","warnings":["Flu-like symptoms very common (manage with acetaminophen)"],"overdose":"Depression screening important","pharmacokinetics":"Mostly historical for HCV (replaced by DAAs)","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Sofosbuvir/velpatasvir","generic_name":"Antiviral combination (HCV NS5B + NS5A)","drug_class":"Direct-acting antiviral combination","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Hepatitis C (all genotypes)"],"contraindications":["None significant"],"side_effects":["Nausea","Fatigue","Headache","Anemia (with ribavirin)"],"dosage":{"adult":"400/100mg daily x12 weeks (with or without ribavirin)"},"interactions":["Amiodarone (severe bradycardia risk)"],"monitoring":"None significant","patient_counselling":"Sofosbuvir: NS5B polymerase inhibitor. Velpatasvir: NS5A inhibitor. Pan-genotypic cure.","mechanism_of_action":"Epclusa","brand_names":["Bioavailability: sofosbuvir 70%","t1/2: sofosbuvir 0.5h (prodrug), active metabolite 25h"],"pregnancy_category":"Pan-genotypic HCV cure (95%+ SVR)","warnings":["Amiodarone interaction: severe bradycardia - avoid combination"],"overdose":"12 weeks standard, 16 weeks with ribavirin for cirrhosis","pharmacokinetics":"First pan-genotypic DAA combination","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Glecaprevir/pibrentasvir","generic_name":"Antiviral combination (HCV NS3/4A + NS5A)","drug_class":"Direct-acting antiviral combination","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Hepatitis C (all genotypes, non-cirrhotic)"],"contraindications":["Child-Pugh C (contraindicated)"],"side_effects":["Nausea","Headache","Fatigue"],"dosage":{"adult":"300/125mg TID x8 weeks (non-cirrhotic)"},"interactions":["P-gp/strong CYP3A4 inhibitors"],"monitoring":"None significant","patient_counselling":"Glecaprevir: NS3/4A protease inhibitor. Pibrentasvir: NS5A inhibitor (pan-genotypic). High barrier to resistance.","mechanism_of_action":"Mavyret","brand_names":["Bioavailability: glecaprevir 21%","pibrentasvir 77%"],"pregnancy_category":"Pan-genotypic: 8 weeks for non-cirrhotic treatment-naive","warnings":["Contraindicated in Child-Pugh C cirrhosis"],"overdose":"TID dosing (3 tablets with food)","pharmacokinetics":"High SVR rates across all genotypes","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Voxilaprevir/sofosbuvir/velpatasvir","generic_name":"Antiviral combination (HCV NS5A/NS5B/NS3)","drug_class":"DAA triple combination","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Hepatitis C (treatment-experienced with NS5A resistance)"],"contraindications":["Child-Pugh B/C"],"side_effects":["Diarrhea","Nausea","Headache"],"dosage":{"adult":"Viekira Pak XR: see separately"},"interactions":["Strong CYP3A4 inducers"],"monitoring":"None significant","patient_counselling":"Triple DAA combination for treatment-experienced patients with NS5A resistance.","mechanism_of_action":"Vosevi","brand_names":["Bioavailability varies"],"pregnancy_category":"For retreatment of HCV after prior DAA failure","warnings":["NS3/4A + NS5A + NS5B inhibitors combined"],"overdose":"12 weeks standard","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Ledipasvir/sofosbuvir","generic_name":"Antiviral combination (HCV NS5A + NS5B)","drug_class":"Direct-acting antiviral combination","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Hepatitis C genotype 1"],"contraindications":["None significant"],"side_effects":["Fatigue","Headache","Nausea","Anemia (with ribavirin)"],"dosage":{"adult":"90/400mg daily x12 weeks"},"interactions":["Amiodarone (bradycardia risk)"],"monitoring":"None significant","patient_counselling":"Ledipasvir: NS5A inhibitor. Sofosbuvir: NS5B polymerase inhibitor. Effective for GT1.","mechanism_of_action":"Harvoni","brand_names":["Bioavailability: similar to sofosbuvir"],"pregnancy_category":"First combination single-tablet DAA cure for HCV GT1","warnings":["Amiodarone interaction: severe bradycardia"],"overdose":"Also effective for GT4, GT5, GT6 (pan-genotypic now superseded by Epclusa)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Daclatasvir/sofosbuvir","generic_name":"Antiviral combination (HCV NS5A + NS5B)","drug_class":"Direct-acting antiviral combination","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Hepatitis C (all genotypes)"],"contraindications":["None significant"],"side_effects":["Fatigue","Headache","Nausea"],"dosage":{"adult":"60/400mg daily x12 weeks"},"interactions":["CYP3A4 inducers (reduce daclatasvir dose to 30mg)"],"monitoring":"None significant","patient_counselling":"Daclatasvir: NS5A inhibitor. Sofosbuvir: NS5B inhibitor. Pan-genotypic combination.","mechanism_of_action":"Daklinza + Sovaldi","brand_names":["CYP3A4 interaction"],"pregnancy_category":"Less commonly used now (superseded by fixed-dose combinations)","warnings":["CYP3A4 inducers: reduce daclatasvir to 30mg"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Elbasvir/grazoprevir","generic_name":"Antiviral combination (HCV NS5A + NS3/4A)","drug_class":"Direct-acting antiviral combination","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Hepatitis C genotype 1, 4"],"contraindications":["Child-Pugh B/C"],"side_effects":["Nausea","Fatigue","Headache","ALT elevation"],"dosage":{"adult":"50/100mg daily x12-16 weeks"},"interactions":["CYP3A4 inhibitors (reduce dose)","PPIs (reduce grazoprevir absorption)"],"monitoring":"ALT monitoring","patient_counselling":"Elbasvir: NS5A inhibitor. Grazoprevir: NS3/4A protease inhibitor. Effective for GT1/4.","mechanism_of_action":"Zepatier","brand_names":["Bioavailability: 20-30%"],"pregnancy_category":"For HCV GT1 and GT4","warnings":["ALT monitoring recommended"],"overdose":"12-16 weeks (16 weeks if GT1a with NS5A resistance-associated substitutions)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Ombitasvir/paritaprevir/ritonavir + dasabuvir","generic_name":"Antiviral combination (HCV NS5A/NS3/4A/NS5B)","drug_class":"3D/2D regimen","drug_class_id":null,"drug_class_name":"Infectious disease - Antivirals","indications":["Hepatitis C genotype 1"],"contraindications":["Child-Pugh B/C"],"side_effects":["Nausea","Fatigue","Anemia (with ribavirin)"],"dosage":{"adult":"2 tablets + 1 dasabuvir BID x12-16 weeks"},"interactions":["Strong CYP3A4 inhibitors"],"monitoring":"None significant","patient_counselling":"Ombitasvir: NS5A. Paritaprevir: NS3/4A (boosted by ritonavir). Dasabuvir: NS5B (non-nucleoside).","mechanism_of_action":"Viekira Pak","brand_names":["CYP3A4 interaction"],"pregnancy_category":"2D regimen without dasabuvir for GT1b","warnings":["Anemia with ribavirin component"],"overdose":"12-16 weeks","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Dorzavir/ritonavir","generic_name":"HIV protease inhibitor (boosted)","drug_class":"Protease inhibitor (boosted)","drug_class_id":null,"drug_class_name":"See antiretrovirals section","indications":["See antiretrovirals section"],"contraindications":["See antiretrovirals section"],"side_effects":["See antiretrovirals section"],"dosage":{"adult":"See antiretrovirals section"},"interactions":["See antiretrovirals section"],"monitoring":"See antiretrovirals section","patient_counselling":"See antiretrovirals section","mechanism_of_action":"See antiretrovirals section","brand_names":["See antiretrovirals section"],"pregnancy_category":"See antiretrovirals section","warnings":["See antiretrovirals section"],"overdose":"See antiretrovirals section","pharmacokinetics":"See antiretrovirals section","black_box_warnings":["See antiretrovirals section"],"clinical_pearls":["See antiretrovirals section"],"created_at":""},
+    {"id":"bulk-014","name":"Cyclopentolate","generic_name":"Ophthalmology - Mydriatic","drug_class":"Anticholinergic (ophthalmic, short-acting)","drug_class_id":null,"drug_class_name":"Ophthalmology - Mydriatics","indications":["Mydriasis for refraction","Cycloplegia (pediatric)"],"contraindications":["Narrow-angle glaucoma"],"side_effects":["Blurred vision","Behavioral changes (children)"],"dosage":{"adult":"1-2 drops 0.5-1% 20-30 min before exam"},"interactions":["Anticholinergics"],"monitoring":"IOP","patient_counselling":"Short-acting mydriatic/cycloplegic for refraction. Effects wear off in 24-48h.","mechanism_of_action":"Cyclogyl","brand_names":["Onset 20-30 min","Duration 24-48h"],"pregnancy_category":"Shorter acting than atropine","warnings":["Good for refraction in children"],"overdose":"Behavioral changes in young children (irritability)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Phenylephrine","generic_name":"Ophthalmology - Mydriatic","drug_class":"Alpha-1 agonist (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Mydriatics","indications":["Mydriasis (without cycloplegia)"],"contraindications":["Severe hypertension","Severe CAD"],"side_effects":["Reactive miosis (if weak solution)"],"dosage":{"adult":"1-2 drops 2.5-10% 10-15 min before exam"},"interactions":["MAOIs (hypertensive crisis risk)"],"monitoring":"None significant","patient_counselling":"Alpha-1 agonist: contracts dilator pupillae causing pupil dilation without cycloplegia.","mechanism_of_action":"Neo-Synephrine","brand_names":["Onset 10-15 min","Duration 2-3h"],"pregnancy_category":"Mydriasis WITHOUT cycloplegia (advantage for retinal exam)","warnings":["10% concentration more common in US"],"overdose":"Caution in hypertension, elderly","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Prostaglandin analogues (class)","generic_name":"Ophthalmology - Glaucoma","drug_class":"Prostaglandin analogues (class overview)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma (first-line)"],"contraindications":["None significant"],"side_effects":["Iris pigmentation","Conjunctival hyperemia","Eyelash growth"],"dosage":{"adult":"Varies by agent"},"interactions":["None significant"],"monitoring":"IOP","patient_counselling":"Class: increases uveoscleral outflow. First-line for glaucoma. Includes latanoprost, bimatoprost, travoprost, tafluprost.","mechanism_of_action":"Various","brand_names":["IOP reduction 25-33%"],"pregnancy_category":"Once daily dosing advantage","warnings":["Iris pigmentation change is irreversible"],"overdose":"First-line for most open-angle glaucoma patients","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-017","name":"Bimatoprost","generic_name":"Ophthalmology - Glaucoma","drug_class":"Prostaglandin F2alpha analogue","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma","Hypotrichosis (eyelashes)"],"contraindications":["None significant"],"side_effects":["Iris pigmentation","Conjunctival hyperemia","Periorbital fat atrophy (rare)"],"dosage":{"adult":"1 drop in affected eye(s) once daily in the evening"},"interactions":["None significant"],"monitoring":"IOP","patient_counselling":"Prostaglandin analogue: increases uveoscleral outflow. Also promotes eyelash growth.","mechanism_of_action":"Lumigan (glaucoma)~Latisse (eyelashes)","brand_names":["IOP reduction 25-33%"],"pregnancy_category":"Once daily dosing","warnings":["Periorbital fat atrophy (rare but reported)"],"overdose":"Also used cosmetically for eyelash growth (Latisse)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-018","name":"Travoprost","generic_name":"Ophthalmology - Glaucoma","drug_class":"Prostaglandin F2alpha analogue","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma"],"contraindications":["None significant"],"side_effects":["Iris pigmentation","Conjunctival hyperemia"],"dosage":{"adult":"1 drop in affected eye(s) once daily in the evening"},"interactions":["None significant"],"monitoring":"IOP","patient_counselling":"Prostaglandin analogue: selective FP receptor agonist.","mechanism_of_action":"Travatan","brand_names":["IOP reduction 25-33%"],"pregnancy_category":"Once daily dosing","warnings":["BAK-free formulation available (Travatan Z)"],"overdose":"Iris pigmentation risk","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-019","name":"Tafluprost","generic_name":"Ophthalmology - Glaucoma","drug_class":"Prostaglandin F2alpha analogue (preservative-free)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma"],"contraindications":["None significant"],"side_effects":["Iris pigmentation","Conjunctival hyperemia"],"dosage":{"adult":"1 drop in affected eye(s) once daily"},"interactions":["None significant"],"monitoring":"IOP","patient_counselling":"Preservative-free prostaglandin analogue. Better for ocular surface disease.","mechanism_of_action":"Zioptan","brand_names":["IOP reduction 25-33%"],"pregnancy_category":"Preservative-free single-use vials","warnings":["Better for patients with ocular surface disease"],"overdose":"Once daily dosing","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-020","name":"Brimonidine/timolol","generic_name":"See glaucoma section","drug_class":"See glaucoma section","drug_class_id":null,"drug_class_name":"See glaucoma section","indications":["See glaucoma section"],"contraindications":["See glaucoma section"],"side_effects":["See glaucoma section"],"dosage":{"adult":"See glaucoma section"},"interactions":["See glaucoma section"],"monitoring":"See glaucoma section","patient_counselling":"See glaucoma section","mechanism_of_action":"See glaucoma section","brand_names":["See glaucoma section"],"pregnancy_category":"See glaucoma section","warnings":["See glaucoma section"],"overdose":"See glaucoma section","pharmacokinetics":"See glaucoma section","black_box_warnings":["See glaucoma section"],"clinical_pearls":["See glaucoma section"],"created_at":""},
+    {"id":"bulk-021","name":"Dorzolamide/timolol","generic_name":"Cosopt","drug_class":"Carbonic anhydrase inhibitor + beta-blocker","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma"],"contraindications":["Asthma/COPD","Sinus bradycardia"],"side_effects":["Ocular stinging","Bitter taste","Burning"],"dosage":{"adult":"1 drop BID"},"interactions":["None significant"],"monitoring":"IOP","patient_counselling":"Fixed combination: CAI (dorzolamide) + beta-blocker (timolol). Dual mechanism IOP reduction.","mechanism_of_action":"Cosopt","brand_names":["BID dosing convenience","Dual mechanism better than monotherapy"],"pregnancy_category":"Ocular stinging common initially","warnings":["Avoid in reactive airway disease (timolol component)"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-022","name":"Netarsudil","generic_name":"Ophthalmology - Glaucoma","drug_class":"Rho-kinase inhibitor","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma"],"contraindications":["None significant"],"side_effects":["Conjunctival hyperemia","Cornea verticillata","IOP elevation (paradoxical)"],"dosage":{"adult":"1 drop in affected eye(s) once daily in the evening"},"interactions":["None significant"],"monitoring":"IOP","patient_counselling":"Inhibits Rho kinase/ROCK: increases conventional outflow through trabecular meshwork.","mechanism_of_action":"Rhopressa","brand_names":["IOP reduction 15-18%"],"pregnancy_category":"Once daily dosing","warnings":["Novel mechanism: targets trabecular meshwork directly"],"overdose":"Cornea verticillata: monitor (usually benign)","pharmacokinetics":"Also available as combination with latanoprost (Rocklatan)","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-023","name":"Netarsudil/latanoprost","generic_name":"Rocklatan","drug_class":"Rho-kinase inhibitor + prostaglandin analogue","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma"],"contraindications":["None significant"],"side_effects":["Conjunctival hyperemia","Iris pigmentation","Cornea verticillata"],"dosage":{"adult":"1 drop in affected eye(s) once daily in the evening"},"interactions":["None significant"],"monitoring":"IOP","patient_counselling":"Triple mechanism: increased uveoscleral outflow + trabecular meshwork + decreased aqueous production.","mechanism_of_action":"Rocklatan","brand_names":["IOP reduction 20-25%"],"pregnancy_category":"Once daily dosing","warnings":["Triple mechanism in single drop"],"overdose":"Most effective fixed combination for IOP reduction","pharmacokinetics":"Contains netarsudil + latanoprost","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-024","name":"Levobunolol","generic_name":"Ophthalmology - Glaucoma","drug_class":"Non-selective beta-blocker (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma","Ocular hypertension"],"contraindications":["Asthma/COPD","Sinus bradycardia"],"side_effects":["Bronchospasm","Bradycardia","Fatigue"],"dosage":{"adult":"1 drop BID in affected eye(s)"},"interactions":["Oral beta-blockers (additive)"],"monitoring":"IOP","patient_counselling":"Non-selective beta-blocker: reduces aqueous humor production.","mechanism_of_action":"Betagan","brand_names":["Onset 30 min","Duration 12-24h"],"pregnancy_category":"Similar to timolol but less commonly used","warnings":["Once daily available (0.25% formulation)"],"overdose":"Avoid in reactive airway disease","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-025","name":"Metipranolol","generic_name":"Ophthalmology - Glaucoma","drug_class":"Non-selective beta-blocker (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma"],"contraindications":["Asthma/COPD","Sinus bradycardia"],"side_effects":["Bradycardia","Fatigue"],"dosage":{"adult":"1 drop BID"},"interactions":["Oral beta-blockers"],"monitoring":"IOP","patient_counselling":"Non-selective beta-blocker. Less commonly used.","mechanism_of_action":"OptiPranolol","brand_names":["IOP reduction similar to timolol"],"pregnancy_category":"Less commonly used than timolol","warnings":[],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-026","name":"Carteolol","generic_name":"Ophthalmology - Glaucoma","drug_class":"Non-selective beta-blocker with ISA (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Glaucoma","indications":["Open-angle glaucoma"],"contraindications":["Asthma/COPD","Sinus bradycardia"],"side_effects":["Bradycardia"],"dosage":{"adult":"1 drop BID"},"interactions":["Oral beta-blockers"],"monitoring":"IOP","patient_counselling":"Non-selective beta-blocker with intrinsic sympathomimetic activity: less bradycardia than other beta-blockers.","mechanism_of_action":"Ocupress","brand_names":["IOP reduction similar to timolol"],"pregnancy_category":"ISA property: less effect on heart rate","warnings":["BID dosing"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-027","name":"Levocabastine","generic_name":"Ophthalmology - Allergic","drug_class":"H1 antihistamine (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Allergy","indications":["Allergic conjunctivitis"],"contraindications":["None significant"],"side_effects":["Burning/stinging","Headache"],"dosage":{"adult":"1 drop BID-QID in affected eye(s)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Selective H1 receptor antagonist: blocks histamine-mediated allergic eye symptoms.","mechanism_of_action":"Livostin","brand_names":["Onset 15 min"],"pregnancy_category":"Fast onset for acute allergic symptoms","warnings":["Can use with other eye drops (wait 5 min)"],"overdose":"Non-steroidal alternative","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-028","name":"Emadastine","generic_name":"Ophthalmology - Allergic","drug_class":"H1 antihistamine (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Allergy","indications":["Allergic conjunctivitis"],"contraindications":["None significant"],"side_effects":["Burning/stinging"],"dosage":{"adult":"1 drop BID in affected eye(s)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Selective H1 antagonist with mast cell stabilizing properties.","mechanism_of_action":"Emadine","brand_names":["Onset 15 min"],"pregnancy_category":"Fast onset","warnings":["Non-steroidal"],"overdose":"Can use with mast cell stabilizers","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-029","name":"Azelastine (ophthalmic)","generic_name":"Ophthalmology - Allergic","drug_class":"H1 antihistamine (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Allergy","indications":["Allergic conjunctivitis"],"contraindications":["None significant"],"side_effects":["Burning/stinging","Bitter taste"],"dosage":{"adult":"1 drop BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"H1 antagonist and mast cell stabilizer. Also available as nasal spray.","mechanism_of_action":"Optivar","brand_names":["Onset 30 min"],"pregnancy_category":"Dual mechanism: antihistamine + mast cell stabilizer","warnings":["Less bitter than earlier generations"],"overdose":"Also available as nasal spray (Astelin)","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-030","name":"Olopatadine (ophthalmic)","generic_name":"Ophthalmology - Allergic","drug_class":"H1 antihistamine (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Allergy","indications":["Allergic conjunctivitis"],"contraindications":["None significant"],"side_effects":["Headache","Burning/stinging"],"dosage":{"adult":"1 drop BID (Patanol) or QD (Pataday)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"H1 antagonist with mast cell stabilizing properties.","mechanism_of_action":"Patanol (BID)~Pataday (QD)","brand_names":["Onset 30 min"],"pregnancy_category":"Once daily available (Pataday)","warnings":["Dual mechanism: antihistamine + mast cell stabilizer"],"overdose":"Non-steroidal","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-031","name":"Ketotifen (ophthalmic)","generic_name":"Ophthalmology - Allergic","drug_class":"H1 antihistamine + mast cell stabilizer (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Allergy","indications":["Allergic conjunctivitis","Prevention"],"contraindications":["None significant"],"side_effects":["Burning/stinging"],"dosage":{"adult":"1 drop BID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"H1 antagonist and mast cell stabilizer. Available OTC.","mechanism_of_action":"Zaditor (Rx)~Alaway (OTC)","brand_names":["Onset 15-30 min"],"pregnancy_category":"Also available as oral (Ketotifen oral for mastocytosis)","warnings":["Dual mechanism"],"overdose":"Good for allergic eye symptoms","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-032","name":"Pemirolast","generic_name":"Ophthalmology - Allergic","drug_class":"Mast cell stabilizer (ophthalmic)","drug_class_id":null,"drug_class_name":"Ophthalmology - Allergy","indications":["Allergic conjunctivitis"],"contraindications":["None significant"],"side_effects":["Burning/stinging"],"dosage":{"adult":"1 drop QID"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Prevents mast cell degranulation and histamine release.","mechanism_of_action":"Alamast","brand_names":["Onset 15 min"],"pregnancy_category":"QID dosing (more frequent than alternatives)","warnings":["Non-steroidal"],"overdose":"Prophylactic - use before allergen exposure","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-033","name":"Nepenthes","generic_name":"Ophthalmology - Other","drug_class":"Artificial tears","drug_class_id":null,"drug_class_name":"Ophthalmology - Dry eye","indications":["Dry eye syndrome"],"contraindications":["None significant"],"side_effects":["Temporary blurred vision (from vehicle)"],"dosage":{"adult":"1-2 drops PRN"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Lubricant eye drops: provide temporary relief of dry eye symptoms. Various formulations available.","mechanism_of_action":"Various brands (Refresh~Systane~TheraTears)","brand_names":["Onset immediate"],"pregnancy_category":"Use as needed","warnings":["Artificial tears: various formulations (aqueous, gel, ointment)"],"overdose":"Nighttime ointment for severe dry eye","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-034","name":"Hydroxypropyl methylcellulose","generic_name":"Ophthalmology - Other","drug_class":"Artificial tears (lubricant)","drug_class_id":null,"drug_class_name":"Ophthalmology - Dry eye","indications":["Dry eye syndrome"],"contraindications":["None significant"],"side_effects":["Temporary blurred vision"],"dosage":{"adult":"1-2 drops PRN"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Viscous lubricant: provides longer lasting relief than aqueous drops.","mechanism_of_action":"Various (Tears Naturale","brand_names":["Onset immediate"],"pregnancy_category":"More viscous than saline drops","warnings":["Good for moderate dry eye"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-035","name":"Carmellose sodium","generic_name":"Ophthalmology - Other","drug_class":"Artificial tears (lubricant)","drug_class_id":null,"drug_class_name":"Ophthalmology - Dry eye","indications":["Dry eye syndrome"],"contraindications":["None significant"],"side_effects":["Temporary blurred vision"],"dosage":{"adult":"1-2 drops PRN"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Cellulose derivative: lubricates and protects ocular surface.","mechanism_of_action":"Various brands","brand_names":["Onset immediate"],"pregnancy_category":"Good for moderate to severe dry eye","warnings":["Also available as preservative-free unit dose"],"overdose":"","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-036","name":"Polyvinyl alcohol","generic_name":"Ophthalmology - Other","drug_class":"Artificial tears (lubricant)","drug_class_id":null,"drug_class_name":"Ophthalmology - Dry eye","indications":["Dry eye syndrome"],"contraindications":["None significant"],"side_effects":["Temporary blurred vision"],"dosage":{"adult":"1-2 drops PRN"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Viscoelastic polymer: provides temporary relief of dry eye symptoms.","mechanism_of_action":"Various (Refresh brand)","brand_names":["Onset immediate"],"pregnancy_category":"Lowest viscosity artificial tears","warnings":["Use frequently as needed"],"overdose":"Good for mild dry eye","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-037","name":"Sodium hyaluronate","generic_name":"Ophthalmology - Other","drug_class":"Viscoelastic lubricant","drug_class_id":null,"drug_class_name":"Ophthalmology - Dry eye","indications":["Dry eye syndrome"],"contraindications":["None significant"],"side_effects":["Temporary blurred vision"],"dosage":{"adult":"1-2 drops PRN"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Highly hydrophilic polymer: binds water and provides long-lasting hydration of ocular surface.","mechanism_of_action":"Various (Hylan G-F 20)","brand_names":["Onset immediate"],"pregnancy_category":"Binds water effectively","warnings":["Longer lasting than simple lubricants"],"overdose":"Good for moderate to severe dry eye","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-001","name":"Vedolizumab","generic_name":"Immunosuppressant (anti-integrin)","drug_class":"Alpha-4-beta-7 integrin inhibitor","drug_class_id":null,"drug_class_name":"Gastroenterology - IBD","indications":["Ulcerative colitis","Crohn's disease (moderate-severe)"],"contraindications":["Active infections (TB","HBV)"],"side_effects":["Infusion reactions","Headache","Nausea","Arthralgia"],"dosage":{"adult":"300mg IV at weeks 0~2~6 then q8 weeks"},"interactions":["Live vaccines (contraindicated)"],"monitoring":"Hepatitis B screening before initiation","patient_counselling":"Blocks gut-specific alpha-4-beta-7 integrin: prevents lymphocyte trafficking to gut. Gut-selective immunosuppression.","mechanism_of_action":"Entyvio","brand_names":["SC bioavailability 62%","t1/2","25 days"],"pregnancy_category":"Gut-selective: lower infection risk than systemic immunosuppressants","warnings":["SC formulation available for maintenance"],"overdose":"Hepatitis B screening mandatory","pharmacokinetics":"Pre-medication may reduce infusion reactions","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-002","name":"Mirikizumab","generic_name":"Immunosuppressant (anti-IL-23)","drug_class":"IL-23 p19 inhibitor","drug_class_id":null,"drug_class_name":"Gastroenterology - IBD","indications":["Ulcerative colitis (moderate-severe)"],"contraindications":["Active infections (TB","HBV)"],"side_effects":["Injection site reactions","Nausea","Arthralgia"],"dosage":{"adult":"300mg SC at weeks 0~4~8, then 100mg q4 weeks"},"interactions":["Live vaccines (contraindicated)"],"monitoring":"Hepatitis B screening","patient_counselling":"Selective IL-23 p19 inhibitor: targets pathogenic Th17 cells. More selective than ustekinumab.","mechanism_of_action":"Omvoh","brand_names":["SC: t1/2","31 days"],"pregnancy_category":"Selective IL-23: more targeted than ustekinumab","warnings":["Long half-life allows q4 week maintenance"],"overdose":"First selective IL-23 for UC","pharmacokinetics":"Hepatitis B screening required","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-003","name":"Filgotinib","generic_name":"Janus kinase (JAK) inhibitor","drug_class":"JAK1 selective inhibitor","drug_class_id":null,"drug_class_name":"Gastroenterology - IBD","indications":["Ulcerative colitis (moderate-severe)"],"contraindications":["Active infections (TB","HBV)","Severe hepatic impairment"],"side_effects":["Headache","Nausea","Herpes zoster"],"dosage":{"adult":"200mg daily (induction and maintenance)"},"interactions":["Strong CYP3A4 inducers"],"monitoring":"Lipid panel~CBC~Hepatitis B screening","patient_counselling":"Selective JAK1 inhibitor: preferentially targets JAK1-mediated signaling. Potentially fewer off-target effects than non-selective JAK inhibitors.","mechanism_of_action":"Jyseleca","brand_names":["t1/2","11h"],"pregnancy_category":"Selective JAK1: potentially better safety profile","warnings":["BID dosing alternative: 100mg BID"],"overdose":"Hepatitis B screening required","pharmacokinetics":"Not available in US (EU/Japan approval)","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-004","name":"Ozanimod","generic_name":"Sphingosine-1-phosphate (S1P) receptor modulator","drug_class":"S1P1/S1P5 receptor modulator","drug_class_id":null,"drug_class_name":"Gastroenterology - IBD","indications":["Ulcerative colitis (moderate-severe)"],"contraindications":["Severe hepatic impairment","Recent MI (within 6 months)","Unstable angina"],"side_effects":["Headache","Hepatotoxicity","Bradyarrhythmia","Macular edema"],"dosage":{"adult":"0.92mg daily x7 days, then 0.92mg daily maintenance"},"interactions":["CYP3A4 inhibitors (increase exposure)"],"monitoring":"EKG~LFTs~Ophthalmologic exam~Hepatitis B screening","patient_counselling":"S1P receptor modulator: sequesters lymphocytes in lymph nodes, preventing gut inflammation. Oral small molecule.","mechanism_of_action":"Zeposia","brand_names":["t1/2","90h (active metabolite)"],"pregnancy_category":"Oral S1P modulator for UC","warnings":["First-dose heart rate monitoring (titration reduces bradycardia)"],"overdose":"Ophthalmologic exam: macular edema risk","pharmacokinetics":"Also effective for relapsing MS","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-005","name":"Ponesimod","generic_name":"Sphingosine-1-phosphate (S1P) receptor modulator","drug_class":"S1P1 receptor modulator","drug_class_id":null,"drug_class_name":"Gastroenterology - IBD","indications":["Ulcerative colitis (moderate-severe)"],"contraindications":["Severe hepatic impairment"],"side_effects":["Bradycardia","Hepatotoxicity","Macular edema"],"dosage":{"adult":"20mg daily (with dose titration)"},"interactions":["None significant"],"monitoring":"EKG~LFTs~Ophthalmologic exam","patient_counselling":"Selective S1P1 modulator: sequesters lymphocytes. Alternative to ozanimod.","mechanism_of_action":"Ponvory","brand_names":["t1/2","36h"],"pregnancy_category":"Selective S1P1: newer agent","warnings":["Titration over 6 weeks required"],"overdose":"Also effective for relapsing MS","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-006","name":"Vonoprazan","generic_name":"Potassium-competitive acid blocker (P-CAB)","drug_class":"Competitive K+-ATPase inhibitor","drug_class_id":null,"drug_class_name":"Gastroenterology - Acid-related","indications":["GERD","Erosive esophagitis","H. pylori (combination)"],"contraindications":["None significant"],"side_effects":["Headache","Nausea","Abdominal pain"],"dosage":{"adult":"10-20mg daily (GERD)~20mg BID (H. pylori with antibiotics)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"P-CAB: competitively inhibits H+/K+-ATPase. Faster onset, more potent acid suppression than PPIs. No CYP2C19 dependence.","mechanism_of_action":"Voquezna","brand_names":["Onset 30 min","t1/2","7-9h"],"pregnancy_category":"Faster onset and more potent than PPIs","warnings":["No CYP2C19 polymorphism effects (consistent response)"],"overdose":"Available as triple therapy for H. pylori","pharmacokinetics":"Also available as single-agent for GERD","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-007","name":"Tegoprazan","generic_name":"Potassium-competitive acid blocker (P-CAB)","drug_class":"Competitive K+-ATPase inhibitor","drug_class_id":null,"drug_class_name":"Gastroenterology - Acid-related","indications":["GERD","Erosive esophagitis"],"contraindications":["None significant"],"side_effects":["Headache","Diarrhea","Nausea"],"dosage":{"adult":"50-100mg daily"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"P-CAB: competitively inhibits H+/K+-ATPase. Korean approval. Faster onset than PPIs.","mechanism_of_action":"K-CAB","brand_names":["t1/2","4h"],"pregnancy_category":"P-CAB class agent","warnings":["Available in South Korea"],"overdose":"Faster onset than PPIs","pharmacokinetics":"","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-008","name":"Voclosporin","generic_name":"Calcineurin inhibitor (immunosuppressant)","drug_class":"Calcineurin inhibitor (specifically for LN)","drug_class_id":null,"drug_class_name":"Nephrology - Lupus nephritis","indications":["Lupus nephritis (moderate-severe)"],"contraindications":["Uncontrolled hypertension","Active infections"],"side_effects":["Nephrotoxicity","Hypertension","Hyperkalemia","Tremor"],"dosage":{"adult":"23.7mg BID (with mycophenolate)"},"interactions":["CYP3A4 inhibitors/inducers"],"monitoring":"Renal function~K+~Blood pressure~Trough levels","patient_counselling":"Calcineurin inhibitor: blocks T-cell activation. Lupus nephritis-specific (combined with MMF).","mechanism_of_action":"Lupkynis","brand_names":["t1/2","9h"],"pregnancy_category":"Combined with mycophenolate for lupus nephritis","warnings":["Nephrotoxicity: monitor renal function closely"],"overdose":"More specific for LN than systemic CsA","pharmacokinetics":"Part of low-dose multi-target therapy (LDT)","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-009","name":"Sparsentan","generic_name":"Dual endothelin/angiotensin receptor antagonist","drug_class":"Endothelin receptor + AT1 receptor antagonist","drug_class_id":null,"drug_class_name":"Nephrology - IgA nephropathy","indications":["IgAN with proteinuria"],"contraindications":["Pregnancy (teratogenic)"],"side_effects":["Hepatotoxicity","Hypotension","Hyperkalemia","Peripheral edema"],"dosage":{"adult":"400mg daily (with titration from 200mg)"},"interactions":["Strong CYP3A4 inhibitors"],"monitoring":"LFTs~BP~K+~Proteinuria","patient_counselling":"Dual receptor antagonist: blocks both endothelin-1 (ETA) and angiotensin II (AT1). Reduces proteinuria.","mechanism_of_action":"Sparsentan","brand_names":["t1/2","8h"],"pregnancy_category":"Dual mechanism: more proteinuria reduction than RAS blockade alone","warnings":["Hepatotoxicity: monitor LFTs monthly"],"overdose":"Pregnancy contraindicated (teratogenic)","pharmacokinetics":"Also in trials for FSGS","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-010","name":"Atrasentan","generic_name":"Endothelin receptor antagonist (selective ETA)","drug_class":"Selective endothelin receptor A antagonist","drug_class_id":null,"drug_class_name":"Nephrology - Diabetic kidney disease","indications":["Diabetic kidney disease with albuminuria"],"contraindications":["Pregnancy (teratogenic)","Severe hepatic impairment"],"side_effects":["Fluid retention","Hepatotoxicity"],"dosage":{"adult":"0.75mg daily"},"interactions":["Strong CYP3A4 inhibitors"],"monitoring":"LFTs~Fluid status~BP","patient_counselling":"Selective ETA antagonist: reduces proteinuria and inflammation in diabetic kidney disease.","mechanism_of_action":"Sinskendan","brand_names":["t1/2","27h"],"pregnancy_category":"Selective ETA: less fluid retention than dual ETA/ETB antagonists","warnings":["Fluid retention: monitor weight and edema"],"overdose":"Also in trials for IgA nephropathy","pharmacokinetics":"Pregnancy contraindicated","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-011","name":"Dapagliflozin (for CKD)","generic_name":"SGLT2 inhibitor","drug_class":"Sodium-glucose cotransporter 2 inhibitor","drug_class_id":null,"drug_class_name":"Nephrology - Chronic kidney disease","indications":["CKD (eGFR 20-75 with albuminuria)"],"contraindications":["Type 1 diabetes (DKA risk)"],"side_effects":["Genital mycotic infections","UTI","Hypotension"],"dosage":{"adult":"10mg daily (for CKD, regardless of diabetes)"},"interactions":["Insulin/sulfonylureas (hypoglycemia risk)"],"monitoring":"eGFR~BP~Volume status","patient_counselling":"Inhibits SGLT2: reduces intraglomerular pressure, tubuloglomerular feedback. Renal and CV benefits independent of diabetes.","mechanism_of_action":"Farxiga","brand_names":["Onset 1-2 weeks for glucose; 4-12 weeks for renal benefits"],"pregnancy_category":"SGLT2 inhibitor with proven renal benefits","warnings":["Stop if eGFR <20 (or <25 per some guidelines)"],"overdose":"Genital mycotic infections common","pharmacokinetics":"CV benefits (HF hospitalization reduction)","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-012","name":"Empagliflozin (for CKD)","generic_name":"SGLT2 inhibitor","drug_class":"Sodium-glucose cotransporter 2 inhibitor","drug_class_id":null,"drug_class_name":"Nephrology - Chronic kidney disease","indications":["CKD with albuminuria"],"contraindications":["Type 1 diabetes (DKA risk)"],"side_effects":["Genital mycotic infections","UTI","Hypotension"],"dosage":{"adult":"10mg daily (for CKD)"},"interactions":["Insulin/sulfonylureas (hypoglycemia risk)"],"monitoring":"eGFR~BP~Volume status","patient_counselling":"Inhibits SGLT2: similar renal benefits to dapagliflozin.","mechanism_of_action":"Jardiance","brand_names":["Onset similar to dapagliflozin"],"pregnancy_category":"SGLT2 inhibitor with proven renal and CV benefits","warnings":["Genital mycotic infections common"],"overdose":"Also effective for heart failure","pharmacokinetics":"CV mortality reduction (EMPA-REG)","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-013","name":"Bexagliflozin","generic_name":"SGLT2 inhibitor","drug_class":"Sodium-glucose cotransporter 2 inhibitor","drug_class_id":null,"drug_class_name":"Endocrine - Diabetes (novel)","indications":["Type 2 diabetes"],"contraindications":["Type 1 diabetes (DKA risk)"],"side_effects":["Genital mycotic infections","UTI","Polyuria"],"dosage":{"adult":"20mg daily"},"interactions":["Insulin/sulfonylureas (hypoglycemia risk)"],"monitoring":"None significant","patient_counselling":"SGLT2 inhibitor: reduces glucose reabsorption in proximal tubule. Novel structural class.","mechanism_of_action":"Brenzavvy","brand_names":["Onset 1-2 weeks"],"pregnancy_category":"SGLT2 inhibitor with unique chemical structure","warnings":["Similar efficacy to empagliflozin/dapagliflozin"],"overdose":"Genital mycotic infections common","pharmacokinetics":"FDA approved for T2DM","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-014","name":"Sotagliflozin","generic_name":"Dual SGLT1/SGLT2 inhibitor","drug_class":"Sodium-glucose cotransporter 1 and 2 inhibitor","drug_class_id":null,"drug_class_name":"Endocrine - Diabetes (novel)","indications":["Type 1 diabetes (adjunct to insulin)","Type 2 diabetes"],"contraindications":["Severe renal impairment (eGFR <15)"],"side_effects":["Diabetic ketoacidosis (higher risk than other SGLT2i)","Genital mycotic infections","Diarrhea (SGLT1)"],"dosage":{"adult":"200mg daily (T1DM, with insulin)"},"interactions":["Insulin (reduce dose to prevent hypoglycemia)"],"monitoring":"eGFR~Ketones during illness","patient_counselling":"Dual SGLT1/2 inhibitor: blocks intestinal glucose absorption (SGLT1) + renal glucose reabsorption (SGLT2). Unique for T1DM.","mechanism_of_action":"Inpefa","brand_names":["t1/2","3h"],"pregnancy_category":"Dual SGLT1/2: only SGLT inhibitor approved for T1DM","warnings":["Higher DKA risk: strict ketone monitoring during illness"],"overdose":"Stop 3 days before surgery","pharmacokinetics":"Also reduces heart failure hospitalization","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-015","name":"Survodutide","generic_name":"GLP-1/glucagon receptor dual agonist","drug_class":"GLP-1 + glucagon receptor dual agonist","drug_class_id":null,"drug_class_name":"Endocrine - Obesity/Diabetes (investigational)","indications":["Type 2 diabetes","Obesity (phase 3)"],"contraindications":["None significant"],"side_effects":["Nausea","Vomiting","Diarrhea"],"dosage":{"adult":"Variable (investigational)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Dual GLP-1/glucagon agonist: glucagon receptor activation increases energy expenditure and fat oxidation. Promising phase 3 data.","mechanism_of_action":"Survodutide","brand_names":["t1/2","variable"],"pregnancy_category":"Dual GLP-1/glucagon: potentially superior to GLP-1 alone for weight loss","warnings":["Glucagon component may increase hepatic fat oxidation"],"overdose":"In phase 3 for obesity","pharmacokinetics":"Also being studied for MASH (metabolic dysfunction-associated steatohepatitis)","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-016","name":"Orforglipron","generic_name":"Oral non-peptide GLP-1 receptor agonist","drug_class":"GLP-1 receptor agonist (oral, small molecule)","drug_class_id":null,"drug_class_name":"Endocrine - Obesity/Diabetes (investigational)","indications":["Type 2 diabetes","Obesity"],"contraindications":["None significant"],"side_effects":["Nausea","Vomiting","Diarrhea"],"dosage":{"adult":"Variable (investigational, 7-45mg daily)"},"interactions":["CYP3A4 inhibitors/inducers"],"monitoring":"None significant","patient_counselling":"Oral non-peptide GLP-1 agonist: first oral GLP-1 in advanced trials. No peptide degradation issues.","mechanism_of_action":"Orforglipron","brand_names":["t1/2","variable"],"pregnancy_category":"Oral GLP-1: major convenience advantage over injectable","warnings":["No food effect on absorption"],"overdose":"Phase 3 trials ongoing","pharmacokinetics":"If approved: first oral non-peptide GLP-1 for obesity/T2DM","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-017","name":"Danuglipron","generic_name":"Oral non-peptide GLP-1 receptor agonist","drug_class":"GLP-1 receptor agonist (oral, small molecule)","drug_class_id":null,"drug_class_name":"Endocrine - Obesity/Diabetes (investigational)","indications":["Type 2 diabetes"],"contraindications":["None significant"],"side_effects":["Nausea","Vomiting","Diarrhea"],"dosage":{"adult":"Variable (investigational, BID dosing)"},"interactions":["CYP3A4 inhibitors/inducers"],"monitoring":"None significant","patient_counselling":"Oral non-peptide GLP-1 agonist: BID dosing with food.","mechanism_of_action":"Danuglipron","brand_names":["t1/2","variable"],"pregnancy_category":"Oral GLP-1 with BID dosing","warnings":["Pfizer candidate"],"overdose":"Phase 2 data promising","pharmacokinetics":"Similar mechanism to orforglipron","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-018","name":"Efinopegdutide","generic_name":"GLP-1 receptor agonist (PEGylated, long-acting)","drug_class":"PEGylated GLP-1 receptor agonist","drug_class_id":null,"drug_class_name":"Endocrine - MASH (investigational)","indications":["MASH (metabolic dysfunction-associated steatohepatitis)"],"contraindications":["None significant"],"side_effects":["Nausea","Vomiting","Diarrhea"],"dosage":{"adult":"7mg SC weekly"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Long-acting PEGylated GLP-1 agonist: reduces liver fat and inflammation in MASH.","mechanism_of_action":"Efinopegdutide","brand_names":["t1/2","variable"],"pregnancy_category":"PEGylation extends half-life for weekly dosing","warnings":["MASH-specific approval pathway"],"overdose":"Phase 3 data pending","pharmacokinetics":"Also reduces body weight and HbA1c","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-019","name":"Semaglutide (for MASH)","generic_name":"See GLP-1 section","drug_class":"See GLP-1 section","drug_class_id":null,"drug_class_name":"See GLP-1 section","indications":["See GLP-1 section"],"contraindications":["See GLP-1 section"],"side_effects":["See GLP-1 section"],"dosage":{"adult":"See GLP-1 section"},"interactions":["See GLP-1 section"],"monitoring":"See GLP-1 section","patient_counselling":"See GLP-1 section","mechanism_of_action":"See GLP-1 section","brand_names":["See GLP-1 section"],"pregnancy_category":"See GLP-1 section","warnings":["See GLP-1 section"],"overdose":"See GLP-1 section","pharmacokinetics":"See GLP-1 section","black_box_warnings":["See GLP-1 section"],"clinical_pearls":["See GLP-1 section"],"created_at":""},
+    {"id":"bulk-020","name":"Lanifibranor","generic_name":"Pan-PPAR agonist","drug_class":"Pan-PPAR (alpha~delta~gamma) agonist","drug_class_id":null,"drug_class_name":"Endocrine - MASH (investigational)","indications":["MASH (metabolic dysfunction-associated steatohepatitis)"],"contraindications":["Severe hepatic impairment"],"side_effects":["Weight gain","Edema","Hepatotoxicity (rare)"],"dosage":{"adult":"1200mg daily"},"interactions":["None significant"],"monitoring":"LFTs~Weight~Lipid panel","patient_counselling":"Pan-PPAR agonist: activates PPARα/δ/γ. Reduces liver fibrosis and inflammation. NASH resolution.","mechanism_of_action":"Lanifibranor","brand_names":["t1/2","variable"],"pregnancy_category":"Pan-PPAR agonist: addresses multiple metabolic pathways","warnings":["First drug to show fibrosis improvement in MASH phase 2b"],"overdose":"Also reduces triglycerides and increases HDL","pharmacokinetics":"NASH resolution in 48% (vs 29% placebo)","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-021","name":"Resmetirom","generic_name":"Thyroid hormone receptor beta (THR-β) agonist","drug_class":"Selective THR-β agonist","drug_class_id":null,"drug_class_name":"Endocrine - MASH (approved)","indications":["MASH with moderate-to-advanced fibrosis (F2-F3)"],"contraindications":["Severe hepatic impairment"],"side_effects":["Nausea","Diarrhea","Hepatotoxicity (rare)"],"dosage":{"adult":"60mg daily x72 weeks (trial duration)"},"interactions":["Strong CYP2C8 inhibitors"],"monitoring":"TSH~LFTs~Lipid panel","patient_counselling":"Selective THR-β agonist: activates hepatic thyroid hormone receptor to reduce liver fat and inflammation. First FDA-approved MASH drug.","mechanism_of_action":"Rezdiffra","brand_names":["t1/2","variable"],"pregnancy_category":"First FDA-approved drug for MASH with fibrosis (March 2024)","warnings":["Reduces liver fat by 35-45%"],"overdose":"NASH resolution in 25-30%","pharmacokinetics":"Also reduces LDL cholesterol and triglycerides","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-022","name":"Tirzepatide (for MASH)","generic_name":"See GLP-1 section","drug_class":"See GLP-1 section","drug_class_id":null,"drug_class_name":"See GLP-1 section","indications":["See GLP-1 section"],"contraindications":["See GLP-1 section"],"side_effects":["See GLP-1 section"],"dosage":{"adult":"See GLP-1 section"},"interactions":["See GLP-1 section"],"monitoring":"See GLP-1 section","patient_counselling":"See GLP-1 section","mechanism_of_action":"See GLP-1 section","brand_names":["See GLP-1 section"],"pregnancy_category":"See GLP-1 section","warnings":["See GLP-1 section"],"overdose":"See GLP-1 section","pharmacokinetics":"See GLP-1 section","black_box_warnings":["See GLP-1 section"],"clinical_pearls":["See GLP-1 section"],"created_at":""},
+    {"id":"bulk-023","name":"CagriSema","generic_name":"GLP-1 + amylin analogue combination","drug_class":"Semaglutide + cagrilintide (amylin analogue)","drug_class_id":null,"drug_class_name":"Endocrine - Obesity/Diabetes (investigational)","indications":["Obesity","Type 2 diabetes"],"contraindications":["None significant"],"side_effects":["Nausea","Vomiting","Diarrhea","Constipation"],"dosage":{"adult":"Variable (investigational, weekly SC)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"Combination of semaglutide (GLP-1) + cagrilintide (amylin analogue): complementary appetite suppression. Greater weight loss than semaglutide alone.","mechanism_of_action":"CagriSema","brand_names":["t1/2","variable"],"pregnancy_category":"Amylin analogue + GLP-1: dual appetite suppression","warnings":["Phase 3 trials ongoing (REDEFINE program)"],"overdose":"Up to 23% weight loss in phase 2","pharmacokinetics":"Also reduces HbA1c significantly","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-024","name":"Survodutide (MASH)","generic_name":"See above","drug_class":"See above","drug_class_id":null,"drug_class_name":"See above","indications":["See above"],"contraindications":["See above"],"side_effects":["See above"],"dosage":{"adult":"See above"},"interactions":["See above"],"monitoring":"See above","patient_counselling":"See above","mechanism_of_action":"See above","brand_names":["See above"],"pregnancy_category":"See above","warnings":["See above"],"overdose":"See above","pharmacokinetics":"See above","black_box_warnings":["See above"],"clinical_pearls":["See above"],"created_at":""},
+    {"id":"bulk-025","name":"Pegozafermin","generic_name":"FGF21 analogue","drug_class":"Fibroblast growth factor 21 analogue","drug_class_id":null,"drug_class_name":"Endocrine - MASH (investigational)","indications":["MASH (metabolic dysfunction-associated steatohepatitis)"],"contraindications":["None significant"],"side_effects":["Nausea","Diarrhea","Vomiting"],"dosage":{"adult":"Variable (investigational, SC weekly or biweekly)"},"interactions":["None significant"],"monitoring":"None significant","patient_counselling":"FGF21 analogue: improves metabolic parameters, reduces liver fat and fibrosis. Novel mechanism.","mechanism_of_action":"Pegozafermin","brand_names":["t1/2","variable"],"pregnancy_category":"FGF21 analogue: novel mechanism for MASH","warnings":["Phase 2b data: NASH resolution + fibrosis improvement"],"overdose":"Also reduces triglycerides and body weight","pharmacokinetics":"Different mechanism from GLP-1 agonists","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-026","name":"Lerodalcibep","generic_name":"PCSK9 inhibitor (fusion protein)","drug_class":"PCSK9 inhibitor (adnectin-albumin fusion)","drug_class_id":null,"drug_class_name":"Cardiovascular - Lipids","indications":["Familial hypercholesterolemia","ASCVD"],"contraindications":["None significant"],"side_effects":["Injection site reactions","Nasopharyngitis"],"dosage":{"adult":"300mg SC every 4 weeks"},"interactions":["None significant"],"monitoring":"Lipid panel","patient_counselling":"PCSK9 inhibitor: binds and inhibits PCSK9, increasing LDL receptor recycling. Longer half-life than evolocumab/alirocumab.","mechanism_of_action":"Lerodalcibep","brand_names":["t1/2","10-12 days"],"pregnancy_category":"Fusion protein with albumin: extended half-life","warnings":["Every 4 weeks dosing (less frequent than alternatives)"],"overdose":"Also reduces Lp(a) significantly","pharmacokinetics":"Phase 3 trials positive","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-027","name":"Inclisiran","generic_name":"siRNA targeting PCSK9","drug_class":"Small interfering RNA targeting PCSK9","drug_class_id":null,"drug_class_name":"Cardiovascular - Lipids","indications":["Familial hypercholesterolemia","ASCVD"],"contraindications":["None significant"],"side_effects":["Injection site reactions","Arthralgia","Urinary tract infection"],"dosage":{"adult":"284mg SC at months 0~3, then q6 months"},"interactions":["None significant"],"monitoring":"Lipid panel","patient_counselling":"siRNA: silences PCSK9 mRNA in hepatocytes. Twice-yearly dosing for sustained LDL reduction.","mechanism_of_action":"Leqvio","brand_names":["Onset 2 weeks (max effect 1 month)"],"pregnancy_category":"siRNA mechanism: longest-acting lipid-lowering therapy","warnings":["Twice-yearly SC dosing after initial loading"],"overdose":"LDL reduction 50%","pharmacokinetics":"Also reduces Lp(a) and apoB","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-028","name":"Bempedoic acid","generic_name":"ACL inhibitor","drug_class":"ATP citrate lyase inhibitor","drug_class_id":null,"drug_class_name":"Cardiovascular - Lipids","indications":["ASCVD","Familial hypercholesterolemia (statin-intolerant)"],"contraindications":["None significant"],"side_effects":["Hyperuricemia","Gout","Tendon rupture (rare)"],"dosage":{"adult":"100mg daily"},"interactions":["Statins (additive LDL reduction)"],"monitoring":"Uric acid~LFTs","patient_counselling":"Inhibits ACL: upstream of HMG-CoA reductase. Reduces cholesterol synthesis without muscle-related side effects (not activated in muscle).","mechanism_of_action":"Nexletol","brand_names":["t1/2","21h"],"pregnancy_category":"Prodrug activated in liver (not muscle): avoids myalgia","warnings":["Once daily dosing"],"overdose":"Uric acid elevation: monitor and manage gout risk","pharmacokinetics":"Also available as fixed-dose with ezetimibe (Nexlizet)","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-029","name":"Bempedoic acid/ezetimibe","generic_name":"Fixed-dose combination (ACL inhibitor + cholesterol absorption inhibitor)","drug_class":"ACL inhibitor + cholesterol absorption inhibitor","drug_class_id":null,"drug_class_name":"Cardiovascular - Lipids","indications":["ASCVD","Familial hypercholesterolemia"],"contraindications":["None significant"],"side_effects":["Hyperuricemia","Gout"],"dosage":{"adult":"180/10 mg daily"},"interactions":["Statins (additive LDL reduction)"],"monitoring":"Uric acid~LFTs","patient_counselling":"Dual mechanism: reduces cholesterol synthesis (bempedoic acid) + absorption (ezetimibe). Additive LDL reduction.","mechanism_of_action":"Nexlizet","brand_names":["t1/2 variable"],"pregnancy_category":"Fixed-dose combination for statin-intolerant or add-on therapy","warnings":["Uric acid monitoring essential"],"overdose":"Gout prophylaxis if elevated uric acid","pharmacokinetics":"LDL reduction 30-40%","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-030","name":"Pemafibrate","generic_name":"Selective PPARα modulator (SPPARMα)","drug_class":"Selective PPARα modulator","drug_class_id":null,"drug_class_name":"Cardiovascular - Lipids","indications":["Severe hypertriglyceridemia"],"contraindications":["Severe hepatic impairment"],"side_effects":["Nausea","Hepatotoxicity (rare)"],"dosage":{"adult":"0.2mg BID"},"interactions":["Statins (additive effects)"],"monitoring":"LFTs~Lipid panel","patient_counselling":"Selective PPARα modulator: activates PPARα with improved safety vs fibrates. Potent triglyceride reduction.","mechanism_of_action":"Pemafibrate","brand_names":["t1/2","variable"],"pregnancy_category":"Selective SPPARMα: improved safety over gemfibrozil/fenofibrate","warnings":["Potent TG reduction (50-60%)"],"overdose":"Also increases HDL and reduces apoC-III","pharmacokinetics":"Japanese approval; FDA trials ongoing","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-031","name":"Icosapent ethyl","generic_name":"Purified EPA (omega-3 fatty acid)","drug_class":"Purified eicosapentaenoic acid","drug_class_id":null,"drug_class_name":"Cardiovascular - Lipids","indications":["ASCVD (adjunct to statins)","Severe hypertriglyceridemia"],"contraindications":["None significant"],"side_effects":["Arthralgia","Rash","Nausea"],"dosage":{"adult":"2g BID (4g/day)"},"interactions":["None significant"],"monitoring":"Lipid panel","patient_counselling":"Purified EPA: reduces triglycerides, inflammation, and CV events. REDUCE-IT trial: 25% relative risk reduction in MACE.","mechanism_of_action":"Vascepa","brand_names":["Onset 4-8 weeks for lipid effects"],"pregnancy_category":"Purified EPA: distinct from fish oil (contains EPA+DHA)","warnings":["CV benefit proven in REDUCE-IT (controversial mineral oil placebo)"],"overdose":"Also reduces hsCRP and inflammatory markers","pharmacokinetics":"Take with food","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-032","name":"Omacor","generic_name":"See omega-3 section","drug_class":"See omega-3 section","drug_class_id":null,"drug_class_name":"See omega-3 section","indications":["See omega-3 section"],"contraindications":["See omega-3 section"],"side_effects":["See omega-3 section"],"dosage":{"adult":"See omega-3 section"},"interactions":["See omega-3 section"],"monitoring":"See omega-3 section","patient_counselling":"See omega-3 section","mechanism_of_action":"See omega-3 section","brand_names":["See omega-3 section"],"pregnancy_category":"See omega-3 section","warnings":["See omega-3 section"],"overdose":"See omega-3 section","pharmacokinetics":"See omega-3 section","black_box_warnings":["See omega-3 section"],"clinical_pearls":["See omega-3 section"],"created_at":""},
+    {"id":"bulk-033","name":"Volanesorsen","generic_name":"Antisense oligonucleotide targeting apoC-III","drug_class":"Apolipoprotein C-III (apoC-III) inhibitor","drug_class_id":null,"drug_class_name":"Cardiovascular - Lipids","indications":["Familial chylomicronemia syndrome (severe HTG)"],"contraindications":["None significant"],"side_effects":["Injection site reactions","Thrombocytopenia","Hyperglycemia"],"dosage":{"adult":"300mg SC weekly x4 weeks, then 300mg q2 weeks"},"interactions":["None significant"],"monitoring":"Triglycerides~Platelet count~FPG","patient_counselling":"Antisense oligonucleotide: inhibits apoC-III synthesis. ApoC-III inhibits lipoprotein lipase; reducing it accelerates TG clearance.","mechanism_of_action":"Waylivra","brand_names":["t1/2","2-3 days"],"pregnancy_category":"Antisense mechanism: reduces apoC-III levels by 70-80%","warnings":["Potent TG reduction (80% in FCS)"],"overdose":"Thrombocytopenia: monitor platelets","pharmacokinetics":"For severe FCS (TG >500 mg/dL despite fibrates)","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-034","name":"Olezarsen","generic_name":"Antisense oligonucleotide targeting apoC-III","drug_class":"Apolipoprotein C-III inhibitor (next generation)","drug_class_id":null,"drug_class_name":"Cardiovascular - Lipids","indications":["Severe hypertriglyceridemia"],"contraindications":["None significant"],"side_effects":["Injection site reactions"],"dosage":{"adult":"Variable (investigational, higher dose q4 weeks)"},"interactions":["None significant"],"monitoring":"Triglycerides~Platelet count","patient_counselling":"Next-gen apoC-III inhibitor: less frequent dosing than volanesorsen. Higher potency.","mechanism_of_action":"Olezarsen","brand_names":["t1/2","variable"],"pregnancy_category":"Next-gen ASO: q4 week dosing (vs q2 weeks volanesorsen)","warnings":["Phase 3 trials ongoing"],"overdose":"Higher dose: 80mg q4 weeks","pharmacokinetics":"For severe HTG and FCS","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-035","name":"Lomitapide","generic_name":"MTP inhibitor","drug_class":"Microsomal triglyceride transfer protein inhibitor","drug_class_id":null,"drug_class_name":"Cardiovascular - Lipids","indications":["Familial hypercholesterolemia (homozyolous)"],"contraindications":["Severe hepatic impairment"],"side_effects":["Hepatotoxicity","Steatosis","GI side effects"],"dosage":{"adult":"5-60mg daily (with titration)"},"interactions":["Statins (additive)"],"monitoring":"LFTs~Lipid panel","patient_counselling":"MTP inhibitor: blocks VLDL assembly in liver and chylomicron assembly in intestine. Reduces LDL independently of LDL receptors.","mechanism_of_action":"Juxtapid","brand_names":["t1/2","40h"],"pregnancy_category":"For HoFH: reduces LDL by 40-50%","warnings":["Hepatotoxicity: monitor LFTs monthly"],"overdose":"Take with fat-containing meal (increases absorption)","pharmacokinetics":"For homozygous FH (rare)","black_box_warnings":[],"clinical_pearls":[],"created_at":""},
+    {"id":"bulk-036","name":"Ezetimibe (monotherapy)","generic_name":"See statins section","drug_class":"See statins section","drug_class_id":null,"drug_class_name":"See statins section","indications":["See statins section"],"contraindications":["See statins section"],"side_effects":["See statins section"],"dosage":{"adult":"See statins section"},"interactions":["See statins section"],"monitoring":"See statins section","patient_counselling":"See statins section","mechanism_of_action":"See statins section","brand_names":["See statins section"],"pregnancy_category":"See statins section","warnings":["See statins section"],"overdose":"See statins section","pharmacokinetics":"See statins section","black_box_warnings":["See statins section"],"clinical_pearls":["See statins section"],"created_at":""},
 ];
+
+
+
+

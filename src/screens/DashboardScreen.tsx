@@ -31,6 +31,10 @@ import ClinovaLogo from '../components/ClinovaLogo'
 import DailySpotlight from '../components/DailySpotlight'
 import { SearchService, type UnifiedSearchResult } from '../services/search.service'
 import { useDebounce } from '../hooks/useDebounce'
+import { BUNDLED_DRUGS } from '../data/drugIndexData'
+import { supabase } from '../lib/supabase'
+import { INTEGRATED_UNITS_MAP } from '../data/curriculum'
+import { EXAM_PREP_UNITS } from '../data/examPrepData'
 
 const STUDY_TRACKS: Record<
   string,
@@ -171,6 +175,17 @@ export default function DashboardScreen() {
   const [showResults, setShowResults] = useState(false)
   const searchRef = useRef<HTMLDivElement>(null)
 
+  // Live stats
+  const [caseCount, setCaseCount] = useState<number | null>(null)
+  useEffect(() => {
+    if (!supabase) { setCaseCount(0); return }
+    supabase.from('clinical_cases').select('id', { count: 'exact', head: true }).eq('status', 'published')
+      .then(({ count }: any) => setCaseCount((count as number) ?? 0), () => setCaseCount(0))
+  }, [])
+
+  const drugCount = BUNDLED_DRUGS.length
+  const therapeuticAreaCount = Object.keys(INTEGRATED_UNITS_MAP).length
+
   // Fetch search results when debounced value changes
   useEffect(() => {
     const q = debouncedSearch.trim()
@@ -265,10 +280,10 @@ export default function DashboardScreen() {
       {/* ── Quick Stats Row ── */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
         {[
-          { icon: BarChart3, label: 'Clinical Cases', value: '10', color: 'text-emerald-600', bg: 'bg-emerald-500/10' },
-          { icon: ScrollText, label: 'Exam Papers', value: '24', color: 'text-violet-600', bg: 'bg-violet-500/10' },
-          { icon: BookOpen, label: 'Subject Areas', value: '8', color: 'text-sky-600', bg: 'bg-sky-500/10' },
-          { icon: TrendingUp, label: 'Therapeutic Areas', value: '17', color: 'text-rose-600', bg: 'bg-rose-500/10' },
+          { icon: Pill, label: 'Drug Monographs', value: String(drugCount), color: 'text-blue-600', bg: 'bg-blue-500/10' },
+          { icon: BarChart3, label: 'Clinical Cases', value: caseCount !== null ? String(caseCount) : '…', color: 'text-emerald-600', bg: 'bg-emerald-500/10' },
+          { icon: ScrollText, label: 'Exam Papers', value: String(EXAM_PREP_UNITS.length), color: 'text-violet-600', bg: 'bg-violet-500/10' },
+          { icon: TrendingUp, label: 'Therapeutic Areas', value: String(therapeuticAreaCount), color: 'text-rose-600', bg: 'bg-rose-500/10' },
         ].map((stat, idx) => {
           const Icon = stat.icon
           return (

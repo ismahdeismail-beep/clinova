@@ -3,19 +3,28 @@ import { Link, useNavigate } from 'react-router-dom'
 import {
   ArrowRight, Sparkles, CheckCircle2, Bot, BookOpen, GraduationCap,
   FileSearch, Shield, Brain, Stethoscope, Library, Target,
-  ChevronRight, Star, Users, BarChart3, Layers,
+  ChevronRight, Star, Users, BarChart3, Layers, Pill,
 } from 'lucide-react'
 import ClinovaLogo from '../components/ClinovaLogo'
+import { BUNDLED_DRUGS } from '../data/drugIndexData'
+import { EXAM_PREP_UNITS } from '../data/examPrepData'
+import { INTEGRATED_UNITS_MAP } from '../data/curriculum'
+import { INITIAL_CASES } from '../data/clinicalCasesData'
 
 export default function LandingScreen() {
   const navigate = useNavigate()
+
+  const drugCount = BUNDLED_DRUGS.length
+  const caseCount = INITIAL_CASES.length
+  const therapeuticAreaCount = Object.keys(INTEGRATED_UNITS_MAP).length
+  const examSubjectCount = EXAM_PREP_UNITS.length
 
   const features = [
     {
       icon: Stethoscope,
       title: 'Clinical Cases',
       description:
-        'Work through real-world clinical scenarios across 17 therapeutic areas. Build diagnostic reasoning and treatment planning skills with guided feedback.',
+        `Work through real-world clinical scenarios across ${therapeuticAreaCount} therapeutic areas. Build diagnostic reasoning and treatment planning skills with guided feedback.`,
       gradient: 'from-emerald-500 to-teal-600',
     },
     {
@@ -29,7 +38,7 @@ export default function LandingScreen() {
       icon: GraduationCap,
       title: 'Exam Prep Suite',
       description:
-        'Practice with mock papers modelled on the real clinical-pharmacy exam. 8 subject areas, 24 full-length papers in standard 30/40/30 format.',
+        `Practice with mock papers modelled on the real clinical-pharmacy exam. ${examSubjectCount} subject areas, full-length papers in standard 30/40/30 format.`,
       gradient: 'from-violet-500 to-purple-600',
     },
     {
@@ -56,10 +65,10 @@ export default function LandingScreen() {
   ]
 
   const stats = [
-    { value: '17', label: 'Therapeutic Areas', icon: Layers },
-    { value: '10', label: 'Clinical Cases', icon: Stethoscope },
-    { value: '24', label: 'Exam Papers', icon: FileSearch },
-    { value: '8', label: 'Exam Subjects', icon: BookOpen },
+    { value: String(therapeuticAreaCount), label: 'Therapeutic Areas', icon: Layers },
+    { value: String(caseCount), label: 'Clinical Cases', icon: Stethoscope },
+    { value: String(drugCount), label: 'Drug Monographs', icon: Pill },
+    { value: String(examSubjectCount), label: 'Exam Subjects', icon: FileSearch },
   ]
 
   const steps = [

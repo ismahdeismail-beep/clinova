@@ -126,7 +126,7 @@ const QUICK_LINKS = [
   {
     to: '/board-exam',
     icon: GraduationCap,
-    label: 'Exam Prep',
+    label: 'Board Exam',
     desc: 'Mock papers with instant feedback & scoring',
     gradient: 'from-violet-500 to-violet-600',
   },

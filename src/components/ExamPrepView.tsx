@@ -6,11 +6,27 @@ import { getExamPrepPaper, type GeneratedPaper } from '../data/examPrepPapers';
 const txt = (v: any): string => {
   if (v == null) return '';
   if (typeof v === 'string') return v;
-  if (Array.isArray(v)) return v.map((x) => (typeof x === 'string' ? x : JSON.stringify(x))).join('\n');
+  if (Array.isArray(v)) return v.map((x: any) => (typeof x === 'string' ? x : JSON.stringify(x))).join('\n');
   if (typeof v === 'object') {
+    // Handle nested { title, content } objects (common in Section B/C)
+    if ('title' in v || 'content' in v) {
+      const obj = v as Record<string, any>;
+      const title = obj.title || '';
+      const content = Array.isArray(obj.content) ? obj.content.join('\n') : (obj.content || '');
+      return title ? `${title}\n${content}` : content;
+    }
     return Object.entries(v)
-      .map(([k, val]) => `${k}: ${typeof val === 'object' ? JSON.stringify(val) : val}`)
-      .join('\n');
+      .map(([k, val]) => {
+        // Handle nested { title, content } objects as values
+        if (val && typeof val === 'object' && ('title' in val || 'content' in val)) {
+          const obj = val as Record<string, any>;
+          const title = obj.title || k;
+          const content = Array.isArray(obj.content) ? obj.content.join('\n') : (obj.content || '');
+          return `${title}\n${content}`;
+        }
+        return `${k}: ${typeof val === 'object' ? JSON.stringify(val) : val}`;
+      })
+      .join('\n\n');
   }
   return String(v);
 };

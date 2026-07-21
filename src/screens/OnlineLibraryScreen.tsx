@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useState, useMemo } from 'react'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import {
   BookOpen, Search, ExternalLink, Globe, BookMarked,
-  FileText, ChevronRight, Sparkles, GraduationCap
+  FileText, ChevronRight, Sparkles, GraduationCap, ArrowLeft
 } from 'lucide-react'
 import { LIBRARY, type LibraryResource } from '../data/onlineLibraryData'
+import { getBooksForModule, groupBooksByType } from '../data/libraryModuleMapping'
 
 const TYPE_ICONS: Record<LibraryResource['type'], React.ReactNode> = {
   textbook: <BookOpen size={16} />,
@@ -26,7 +27,8 @@ const TYPE_LABELS: Record<LibraryResource['type'], string> = {
   formulary: 'Formulary',
 }
 
-const SECTIONS: { title: string; description: string; ids: string[] }[] = [
+/** Sections shown when no module/unit context is given */
+const ALL_SECTIONS: { title: string; description: string; ids: string[] }[] = [
   {
     title: 'Core Textbooks',
     description: 'Essential pharmacology and therapeutics texts for the Brain Tree curriculum',
@@ -54,47 +56,162 @@ const SECTIONS: { title: string; description: string; ids: string[] }[] = [
   },
 ]
 
+/** Unit-context label overrides */
+const UNIT_LABELS: Record<string, { title: string; description: string }> = {
+  'ob-textbooks': { title: 'Pharmacy Textbooks', description: 'Core pharmacology and therapeutics textbooks' },
+  'ob-guidelines': { title: 'Clinical Guidelines', description: 'Standard-of-care guidelines from international bodies' },
+  'ob-monographs': { title: 'Drug Monographs & Formularies', description: 'BNF, Martindale, and hospital formulary resources' },
+  'ob-journals': { title: 'Journals & Research', description: 'Open-access pharmacy and medical research resources' },
+  'ob-references': { title: 'Reference Tools', description: 'Calculators, conversion tools, and clinical reference apps' },
+}
+
+/** Books shown per unit context */
+const UNIT_BOOKS: Record<string, string[]> = {
+  'ob-textbooks': ['lib_katzung', 'lib_goodman', 'lib_rang_dale', 'lib_whalen', 'lib_dipiro', 'lib_shargel', 'lib_winter', 'lib_toxicology', 'lib_oer_pharma1', 'lib_oer_ncbi', 'lib_oer_merck'],
+  'ob-guidelines': ['lib_gina', 'lib_gold', 'lib_esc_guidelines', 'lib_aha_guidelines', 'lib_ada', 'lib_thyroid', 'lib_kdigo', 'lib_nccn', 'lib_asco', 'lib_nice_cns', 'lib_who_pain', 'lib_who_antibiotic', 'lib_bsg', 'lib_ash', 'lib_nice_derm', 'lib_aaoo', 'lib_ktg', 'lib_kenya_tb', 'lib_kenya_malaria', 'lib_kenya_hiv'],
+  'ob-monographs': ['lib_bnf', 'lib_who_formulary', 'lib_sanford', 'lib_drug_interactions', 'lib_kenya_eml', 'lib_pharmacy_kenya', 'lib_kenya_pharmacopoeia', 'lib_ktg'],
+  'ob-journals': ['lib_oer_ncbi', 'lib_oer_merck', 'lib_brain_tree'],
+  'ob-references': ['lib_oer_merck', 'lib_brain_tree', 'lib_winter', 'lib_shargel', 'lib_toxicology', 'lib_kenya_poison'],
+}
+
 export default function OnlineLibraryScreen() {
   const navigate = useNavigate()
+  const [searchParams] = useSearchParams()
   const [searchQuery, setSearchQuery] = useState('')
+
+  const moduleId = searchParams.get('module')
+  const unitId = searchParams.get('unit')
 
   const allResources = LIBRARY
   const resourcesById = Object.fromEntries(allResources.map((r) => [r.id, r]))
 
-  const filteredSections = SECTIONS.map((section) => {
-    const books = section.ids
-      .map((id) => resourcesById[id])
-      .filter(Boolean) as LibraryResource[]
+  const { pageTitle, pageDescription, filteredGroups } = useMemo(() => {
+    // Module/unit context — show filtered books grouped by type
+    if (moduleId && unitId) {
+      const unitLabel = UNIT_LABELS[unitId]
+      const unitBookIds = UNIT_BOOKS[unitId] ?? []
+      // Also include module books for good measure
+      const moduleBookIds = getBooksForModule(moduleId).map((b) => b.id)
+      const mergedIds = [...new Set([...unitBookIds, ...moduleBookIds])]
 
-    if (!searchQuery.trim()) return { ...section, books }
+      let books = mergedIds
+        .map((id) => resourcesById[id])
+        .filter(Boolean) as LibraryResource[]
 
-    const q = searchQuery.toLowerCase()
-    const matched = books.filter(
-      (r) =>
-        r.title.toLowerCase().includes(q) ||
-        r.authors.toLowerCase().includes(q) ||
-        r.keywords.toLowerCase().includes(q) ||
-        r.subjects.some((s) => s.toLowerCase().includes(q)),
-    )
-    return { ...section, books: matched }
-  }).filter((s) => s.books.length > 0)
+      if (searchQuery.trim()) {
+        const q = searchQuery.toLowerCase()
+        books = books.filter(
+          (r) =>
+            r.title.toLowerCase().includes(q) ||
+            r.authors.toLowerCase().includes(q) ||
+            r.keywords.toLowerCase().includes(q) ||
+            r.subjects.some((s) => s.toLowerCase().includes(q)),
+        )
+      }
+
+      const groups = groupBooksByType(books)
+      return {
+        pageTitle: unitLabel?.title ?? 'Online Library',
+        pageDescription: unitLabel?.description ?? '',
+        filteredGroups: groups,
+      }
+    }
+
+    // Module context only — filter by module
+    if (moduleId) {
+      let books = getBooksForModule(moduleId)
+
+      if (searchQuery.trim()) {
+        const q = searchQuery.toLowerCase()
+        books = books.filter(
+          (r) =>
+            r.title.toLowerCase().includes(q) ||
+            r.authors.toLowerCase().includes(q) ||
+            r.keywords.toLowerCase().includes(q) ||
+            r.subjects.some((s) => s.toLowerCase().includes(q)),
+        )
+      }
+
+      const groups = groupBooksByType(books)
+      return {
+        pageTitle: 'Online Library',
+        pageDescription: 'Resources relevant to this module',
+        filteredGroups: groups,
+      }
+    }
+
+    // No context — show all sections
+    const sections = ALL_SECTIONS.map((section) => {
+      const books = section.ids
+        .map((id) => resourcesById[id])
+        .filter(Boolean) as LibraryResource[]
+
+      if (!searchQuery.trim()) return { ...section, books }
+
+      const q = searchQuery.toLowerCase()
+      const matched = books.filter(
+        (r) =>
+          r.title.toLowerCase().includes(q) ||
+          r.authors.toLowerCase().includes(q) ||
+          r.keywords.toLowerCase().includes(q) ||
+          r.subjects.some((s) => s.toLowerCase().includes(q)),
+      )
+      return { ...section, books: matched }
+    }).filter((s) => s.books.length > 0)
+
+    return {
+      pageTitle: 'Online Library',
+      pageDescription: 'Curated textbooks, guidelines, and references for clinical pharmacy — aligned to the Brain Tree International Pharmacy Curriculum and Kenyan practice.',
+      filteredGroups: sections.map((s) => ({ title: s.title, books: s.books })),
+    }
+  }, [moduleId, unitId, searchQuery, resourcesById])
 
   return (
     <div className="flex-1 bg-[var(--bg)] min-h-screen overflow-y-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-6 sm:space-y-8">
 
+        {/* Breadcrumb */}
+        <div className="flex items-center gap-2 text-xs font-medium text-[var(--text-muted)]">
+          {unitId ? (
+            <>
+              <button onClick={() => navigate('/knowledge')} className="hover:text-[var(--primary)] transition-colors">Education Hub</button>
+              <ChevronRight size={14} />
+              <button onClick={() => navigate('/library?module=online_books')} className="hover:text-[var(--primary)] transition-colors">Online Library</button>
+              <ChevronRight size={14} />
+              <span className="text-[var(--text)] font-bold">{UNIT_LABELS[unitId]?.title ?? 'Books'}</span>
+            </>
+          ) : moduleId ? (
+            <>
+              <button onClick={() => navigate('/knowledge')} className="hover:text-[var(--primary)] transition-colors">Education Hub</button>
+              <ChevronRight size={14} />
+              <span className="text-[var(--text)] font-bold">Online Library</span>
+            </>
+          ) : (
+            <>
+              <button onClick={() => navigate('/knowledge')} className="hover:text-[var(--primary)] transition-colors">Education Hub</button>
+              <ChevronRight size={14} />
+              <span className="text-[var(--text)] font-bold">Online Library</span>
+            </>
+          )}
+        </div>
+
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
-            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--primary)] mb-2">
-              <BookOpen size={16} /> Online Library
-            </div>
+            {unitId ? (
+              <button
+                onClick={() => navigate('/library?module=online_books')}
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-[var(--primary)] hover:underline mb-2"
+              >
+                <ArrowLeft size={14} /> Back to Library
+              </button>
+            ) : null}
             <h1 className="text-2xl sm:text-4xl font-extrabold text-[var(--text)] tracking-tight leading-tight">
-              Clinova <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-purple-500">Library</span>
+              {pageTitle}
             </h1>
-            <p className="text-sm text-[var(--text-muted)] mt-2 max-w-2xl leading-relaxed">
-              Curated textbooks, guidelines, and references for clinical pharmacy — aligned to the Brain Tree International Pharmacy Curriculum and Kenyan practice.
-            </p>
+            {pageDescription && (
+              <p className="text-sm text-[var(--text-muted)] mt-2 max-w-2xl leading-relaxed">{pageDescription}</p>
+            )}
           </div>
           <div className="relative w-full md:w-80">
             <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" size={18} />
@@ -108,24 +225,16 @@ export default function OnlineLibraryScreen() {
           </div>
         </div>
 
-        {/* Breadcrumb */}
-        <div className="flex items-center gap-2 text-xs font-medium text-[var(--text-muted)]">
-          <button onClick={() => navigate('/knowledge')} className="hover:text-[var(--primary)] transition-colors">Education Hub</button>
-          <ChevronRight size={14} />
-          <span className="text-[var(--text)] font-bold">Online Library</span>
-        </div>
-
-        {/* Book Sections */}
-        {filteredSections.length > 0 ? (
+        {/* Book groups */}
+        {filteredGroups.length > 0 ? (
           <div className="space-y-10">
-            {filteredSections.map((section) => (
-              <section key={section.title}>
+            {filteredGroups.map((group) => (
+              <section key={group.title}>
                 <div className="mb-4">
-                  <h2 className="text-sm font-black text-[var(--text)] uppercase tracking-wider">{section.title}</h2>
-                  <p className="text-xs text-[var(--text-muted)] mt-1">{section.description}</p>
+                  <h2 className="text-sm font-black text-[var(--text)] uppercase tracking-wider">{group.title}</h2>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-                  {section.books.map((resource) => (
+                  {group.books.map((resource) => (
                     <div
                       key={resource.id}
                       className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 sm:p-5 hover:shadow-md hover:border-[var(--primary)] transition-all group"

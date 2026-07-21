@@ -205,7 +205,7 @@ export default function EducationHubScreen() {
       scrollPositions.current.units = scrollContainerRef.current.scrollTop;
     }
     if (selectedModule?.id === 'online_books') {
-      navigate('/library');
+      navigate(`/library?module=${selectedModule.id}&unit=${unit.id}`);
       return;
     }
     setSelectedUnit(unit);

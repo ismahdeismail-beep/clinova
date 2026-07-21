@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { DrugMonographService, type DrugMonograph, type UserMonograph } from '../services/drugMonograph.service';
+import { getDrugClassConfig } from '../data/drugClassColors';
 
 interface SavedMonographsPanelProps {
   onNavigateToDrug?: (name: string) => void;
@@ -173,9 +174,16 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
                       {item.monograph?.name ?? 'Unknown Monograph'}
                     </button>
                     <div className="flex items-center gap-2 mt-0.5">
-                      <span className="text-[10px] text-[var(--text-muted)] font-mono">
-                        {item.monograph?.drug_class_name ?? item.monograph?.drug_class ?? ''}
-                      </span>
+                      {(item.monograph?.drug_class_name || item.monograph?.drug_class) && (() => {
+                        const cc = getDrugClassConfig(item.monograph?.drug_class_name || item.monograph?.drug_class || '');
+                        return (
+                          <span className={`inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border}`}>
+                            {cc.subtitle && <span className="opacity-70">{cc.subtitle}</span>}
+                            <span className="font-bold">·</span>
+                            {item.monograph?.drug_class_name || item.monograph?.drug_class}
+                          </span>
+                        );
+                      })()}
                       <span className="text-[9px] text-[var(--text-dim)]">
                         {new Date(item.saved_at).toLocaleDateString()}
                       </span>
@@ -224,7 +232,16 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
                       </div>
                       <div>
                         <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">Drug Class</span>
-                        <p className="text-[var(--text)] font-medium mt-0.5">{item.monograph.drug_class_name || item.monograph.drug_class}</p>
+                        {(() => {
+                          const cc = getDrugClassConfig(item.monograph.drug_class_name || item.monograph.drug_class || '');
+                          return (
+                            <span className={`mt-0.5 inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border}`}>
+                              {cc.subtitle && <span className="opacity-70">{cc.subtitle}</span>}
+                              <span className="font-bold">·</span>
+                              {item.monograph.drug_class_name || item.monograph.drug_class}
+                            </span>
+                          );
+                        })()}
                       </div>
                     </div>
                     <div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { BookOpen, ArrowRight, Download, Pill, Database, Sparkles, ShieldCheck } from 'lucide-react';
+import { getDrugClassConfig } from '../data/drugClassColors';
 
 interface DrugMonographViewProps {
   content: string;
@@ -30,11 +31,16 @@ export function DrugMonographView({
 }: DrugMonographViewProps) {
   // Strip a leading "# Title" so the header card doesn't duplicate the drug name.
   const body = content.replace(/^#\s+.*\n+/, '').trim();
+  const classConfig = drugClass ? getDrugClassConfig(drugClass) : null;
 
   return (
     <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden animate-in fade-in duration-300">
       {/* ── Header ── */}
-      <div className="relative bg-gradient-to-br from-[var(--primary-container)]/70 to-transparent border-b border-[var(--border)] px-4 sm:px-6 md:px-8 py-4 sm:py-5">
+      <div className={`relative bg-gradient-to-br ${classConfig ? `from-${classConfig.color}-500/10 to-${classConfig.color}-500/5` : 'from-[var(--primary-container)]/70 to-transparent'} border-b border-[var(--border)] px-4 sm:px-6 md:px-8 py-4 sm:py-5`}>
+        {/* Color accent bar */}
+        {classConfig && (
+          <div className={`absolute top-0 left-0 right-0 h-1 ${classConfig.bar}`} />
+        )}
         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
           <div className="flex items-start gap-3 min-w-0">
             <div className="w-11 h-11 shrink-0 rounded-xl bg-[var(--primary-container)] flex items-center justify-center text-[var(--primary)] shadow-sm">
@@ -49,7 +55,17 @@ export function DrugMonographView({
                   <span className="font-medium">Generic:</span> {genericName}
                 </p>
               )}
-              {drugClass && (
+              {drugClass && classConfig && (
+                <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold mt-2 pointer-events-none border ${classConfig.badge} ${classConfig.border}`}>
+                  <Pill size={13} />
+                  {classConfig.subtitle && (
+                    <span className="opacity-70">{classConfig.subtitle}</span>
+                  )}
+                  <span className="font-bold">·</span>
+                  {drugClass}
+                </span>
+              )}
+              {drugClass && !classConfig && (
                 <span className="cl-pill cl-pill-medicine mt-2 pointer-events-none">
                   <Pill size={13} />
                   {drugClass}

@@ -10,6 +10,7 @@ import { DrugMonographService, type DrugMonograph } from '../services/drugMonogr
 import { monographToMarkdown } from '../lib/monographToMarkdown';
 import SavedMonographsPanel, { SaveMonographButton } from '../components/SavedMonographsPanel';
 import { BUNDLED_DRUGS } from '../data/drugIndexData';
+import { getDrugClassConfig } from '../data/drugClassColors';
 
 const QUICK_DRUGS: { name: string; category: string }[] = [
   { name: 'Ceftriaxone', category: 'Anti-infectives' },
@@ -552,11 +553,16 @@ export default function DrugIndexScreen() {
                                 {m.generic_name && m.generic_name !== m.name && (
                                   <div className="text-xs text-[var(--text-muted)] truncate mt-0.5">{m.generic_name}</div>
                                 )}
-                                {m.drug_class_name && (
-                                  <div className="mt-2 inline-block text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded bg-[var(--surface-dim)] text-[var(--text-secondary)]">
-                                    {m.drug_class_name}
-                                  </div>
-                                )}
+                                {m.drug_class_name && (() => {
+                                  const cc = getDrugClassConfig(m.drug_class_name);
+                                  return (
+                                    <span className={`mt-2 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border}`}>
+                                      {cc.subtitle && <span className="opacity-70">{cc.subtitle}</span>}
+                                      <span className="font-bold">·</span>
+                                      {m.drug_class_name}
+                                    </span>
+                                  );
+                                })()}
                               </button>
                               <div className="px-4 pb-3 flex justify-end">
                                 <LikeButton monographId={m.id} />
@@ -678,11 +684,16 @@ export default function DrugIndexScreen() {
                               {m.generic_name && m.generic_name !== m.name && (
                                 <div className="text-xs text-[var(--text-muted)] truncate">{m.generic_name}</div>
                               )}
-                              {m.drug_class_name && (
-                                <div className="mt-2 inline-block text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded bg-[var(--surface-dim)] text-[var(--text-secondary)]">
-                                  {m.drug_class_name}
-                                </div>
-                              )}
+                              {m.drug_class_name && (() => {
+                                const cc = getDrugClassConfig(m.drug_class_name);
+                                return (
+                                  <span className={`mt-2 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border}`}>
+                                    {cc.subtitle && <span className="opacity-70">{cc.subtitle}</span>}
+                                    <span className="font-bold">·</span>
+                                    {m.drug_class_name}
+                                  </span>
+                                );
+                              })()}
                             </button>
                             <div className="px-4 pb-3 flex justify-end">
                               <LikeButton monographId={m.id} />

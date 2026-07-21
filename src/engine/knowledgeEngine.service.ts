@@ -1,5 +1,6 @@
 import { supabase } from '../lib/supabase';
 import { DrugMonographService, type DrugMonograph } from '../services/drugMonograph.service';
+import { BUNDLED_DRUGS } from '../data/drugIndexData';
 
 export type QueryIntent = 'drug_info' | 'drug_interaction' | 'disease_info' | 'case_lookup' | 'guideline' | 'general';
 
@@ -50,21 +51,49 @@ function detectIntent(query: string): QueryIntent {
   return 'general';
 }
 
+/** Build a fast lookup set of all known drug names (from static index + hardcoded list) */
+function buildDrugNameSet(): Set<string> {
+  const names = new Set<string>()
+  for (const d of BUNDLED_DRUGS) {
+    names.add(d.name.toLowerCase())
+    if (d.generic_name) names.add(d.generic_name.toLowerCase())
+  }
+  // Additional common names / brand-name variants
+  const extras = [
+    'co-trimoxazole', 'sodium valproate', 'ferrous sulphate', 'ferrous sulfate',
+  ]
+  for (const e of extras) names.add(e)
+  return names
+}
+
+const ALL_DRUG_NAMES = buildDrugNameSet()
+
 function extractDrugNames(query: string): string[] {
-  const knownDrugs = [
-    'gliclazide', 'levothyroxine', 'hydrocortisone', 'ferrous sulphate', 'ferrous sulfate',
-    'folic acid', 'cyanocobalamin', 'gentamicin', 'cloxacillin', 'paracetamol', 'ibuprofen',
-    'diazepam', 'albendazole', 'digoxin', 'furosemide', 'spironolactone', 'atenolol',
-    'methyldopa', 'hydralazine', 'enalapril', 'losartan', 'metformin', 'insulin',
-    'atorvastatin', 'warfarin', 'azithromycin', 'ciprofloxacin', 'cephalexin', 'doxycycline',
-    'artemether', 'lumefantrine', 'metronidazole', 'lithium', 'sodium valproate',
-    'carbamazepine', 'haloperidol', 'risperidone', 'tenofovir', 'dolutegravir',
-    'rifampicin', 'isoniazid', 'fluconazole', 'co-trimoxazole', 'prednisolone',
-    'omeprazole', 'ondansetron', 'lactulose', 'chlorphenamine', 'morphine',
-    'amlodipine', 'ceftriaxone', 'enoxaparin', 'salbutamol',
-  ];
-  const q = query.toLowerCase();
-  return knownDrugs.filter(d => q.includes(d));
+  const q = query.toLowerCase()
+  const found: string[] = []
+
+  // Multi-word names first (longest match wins)
+  const multiWord: string[] = []
+  for (const name of ALL_DRUG_NAMES) {
+    if (name.includes(' ') && q.includes(name)) multiWord.push(name)
+  }
+  multiWord.sort((a, b) => b.length - a.length) // longest first
+  found.push(...multiWord)
+
+  // Single-word names
+  const words = q.split(/\s+/)
+  for (const w of words) {
+    if (ALL_DRUG_NAMES.has(w) && !found.includes(w)) found.push(w)
+  }
+
+  // If nothing matched by exact name, try partial match
+  if (found.length === 0) {
+    for (const name of ALL_DRUG_NAMES) {
+      if (q.includes(name)) found.push(name)
+    }
+  }
+
+  return found
 }
 
 export const KnowledgeEngine = {

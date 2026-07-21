@@ -202,7 +202,13 @@ export default function DashboardScreen() {
     setShowResults(false)
     setSearchQuery('')
     const route = RESULT_ROUTES[result.result_type] || '/knowledge'
-    navigate(route)
+    const params = new URLSearchParams()
+    if (result.result_type === 'drug') {
+      params.set('q', result.title)
+      navigate(`${route}?${params.toString()}`)
+    } else {
+      navigate(route)
+    }
   }, [navigate])
 
   const handleSearchKeyDown = (e: React.KeyboardEvent) => {

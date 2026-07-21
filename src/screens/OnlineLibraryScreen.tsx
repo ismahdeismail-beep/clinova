@@ -86,15 +86,12 @@ export default function OnlineLibraryScreen() {
   const resourcesById = Object.fromEntries(allResources.map((r) => [r.id, r]))
 
   const { pageTitle, pageDescription, filteredGroups } = useMemo(() => {
-    // Module/unit context — show filtered books grouped by type
+    // Module/unit context — show ONLY the unit's books (no module-wide merge)
     if (moduleId && unitId) {
       const unitLabel = UNIT_LABELS[unitId]
       const unitBookIds = UNIT_BOOKS[unitId] ?? []
-      // Also include module books for good measure
-      const moduleBookIds = getBooksForModule(moduleId).map((b) => b.id)
-      const mergedIds = [...new Set([...unitBookIds, ...moduleBookIds])]
 
-      let books = mergedIds
+      let books = unitBookIds
         .map((id) => resourcesById[id])
         .filter(Boolean) as LibraryResource[]
 

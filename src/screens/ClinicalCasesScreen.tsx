@@ -219,6 +219,18 @@ export default function ClinicalCasesScreen() {
   const [isLoadingDbCases, setIsLoadingDbCases] = useState(false);
   const [searchParams] = useSearchParams();
 
+  /** Strip full names from demographics, keep only clinical identifiers */
+  const anonymizeDemographics = (d: string): string => {
+    if (!d) return '—'
+    // Remove leading "FirstName LastName, " pattern — "John Doe, 50-year-old male" → "50-year-old male"
+    const noName = d.replace(/^[A-Z][a-zà-ü]+(?:\s+[A-Z][a-zà-ü]+)*,\s*/, '')
+    // Remove "Mother/Father/Guardian: Full Name" suffix
+    const cleaned = noName.replace(/\.?\s*(Mother|Father|Guardian|Parent|Spouse|Caregiver):\s*[A-Z][a-z]+\s*[A-Z][a-z]+.*/i, '')
+      .replace(/\.?\s*Name:\s*[A-Z][a-z]+\s*[A-Z][a-z]+.*/i, '')
+      .trim()
+    return cleaned || d.split(/[,;]/)[0]?.trim() || '—'
+  }
+
   useEffect(() => {
     const loadCases = async () => {
       setIsLoadingDbCases(true);
@@ -1075,7 +1087,7 @@ export default function ClinicalCasesScreen() {
                             </p>
                             <div className="flex flex-wrap items-center gap-3 text-xs">
                               <span className="flex items-center gap-1 text-[var(--text-muted)]">
-                                <User size={12} /> {clinicalCase.demographics}
+                                <User size={12} /> {anonymizeDemographics(clinicalCase.demographics)}
                               </span>
                               <span className="flex items-center gap-1 text-[var(--text-muted)]">
                                 <Building size={12} /> {clinicalCase.facilitySetting}
@@ -1140,16 +1152,16 @@ export default function ClinicalCasesScreen() {
                   <Section id="presentation" title="Clinical Presentation" icon={<User size={16} />}>
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-3">
                       <div>
-                        <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Patient</h4>
-                        <p className="text-base font-bold text-[var(--primary)]">{selectedCase.patientName || '—'}</p>
+                        <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Age/Sex</h4>
+                        <p className="text-sm text-[var(--text)]">{anonymizeDemographics(selectedCase.demographics)}</p>
                       </div>
                       <div>
                         <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Facility</h4>
                         <p className="text-sm text-[var(--text)] font-medium">{selectedCase.facilitySetting}</p>
                       </div>
                       <div>
-                        <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Demographics</h4>
-                        <p className="text-sm text-[var(--text)]">{selectedCase.demographics}</p>
+                        <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Setting</h4>
+                        <p className="text-sm text-[var(--text)]">{selectedCase.facilitySetting === 'Tertiary Hospital' ? 'Inpatient' : selectedCase.facilitySetting || '—'}</p>
                       </div>
                       <div>
                         <h4 className="text-[10px] font-bold uppercase text-[var(--text-muted)] mb-0.5">Chief Complaint</h4>

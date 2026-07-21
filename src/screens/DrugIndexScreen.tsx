@@ -706,22 +706,7 @@ export default function DrugIndexScreen() {
                   fetchDrugProfile(name);
                 }}
               />
-              <div className="mt-8 bg-gradient-to-br from-violet-50 to-indigo-50 dark:from-violet-950/20 dark:to-indigo-950/20 border border-violet-200 dark:border-violet-800/30 rounded-2xl p-6 text-center">
-                <div className="flex items-center justify-center gap-2 mb-2">
-                  <Sparkles size={20} className="text-violet-600" />
-                  <h3 className="text-base font-bold text-violet-800 dark:text-violet-300">Need a monograph not in the library?</h3>
-                </div>
-                <p className="text-sm text-violet-600/80 dark:text-violet-400/80 mb-4 max-w-lg mx-auto">
-                  Ask Clinova Support to search, generate, and save any drug monograph for you.
-                </p>
-                <a
-                  href="/assistant"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-violet-600 text-white text-sm font-semibold rounded-xl hover:bg-violet-700 transition-colors"
-                >
-                  <Sparkles size={16} />
-                  Ask Clinova Support
-                </a>
-              </div>
+
             </div>
           )}
         </>

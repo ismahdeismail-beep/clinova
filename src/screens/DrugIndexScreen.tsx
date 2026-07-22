@@ -158,13 +158,14 @@ export default function DrugIndexScreen() {
     try {
       const searchName = query || categoryName || '';
 
-      // Try locally loaded catalog first (lenient match)
+      // Try locally loaded catalog first (lenient match — name, generic, brand)
       if (searchName) {
         const localMatch = catalog.find(m =>
           (m.name && m.name.toLowerCase() === searchName.toLowerCase()) ||
           (m.generic_name && m.generic_name.toLowerCase() === searchName.toLowerCase()) ||
           (m.name && m.name.toLowerCase().includes(searchName.toLowerCase())) ||
-          (m.generic_name && m.generic_name.toLowerCase().includes(searchName.toLowerCase()))
+          (m.generic_name && m.generic_name.toLowerCase().includes(searchName.toLowerCase())) ||
+          (m.brand_names || []).some(bn => bn.toLowerCase().includes(searchName.toLowerCase()))
         );
         const hasClinicalContent = localMatch && (
           (localMatch.indications?.length ?? 0) > 0 ||
@@ -188,6 +189,34 @@ export default function DrugIndexScreen() {
           setMonographKey(searchName.toLowerCase());
           setCurrentMonographId(seeded.id);
           setSelectedDrugName(seeded.name || searchName);
+          setIsLoading(false);
+          return;
+        }
+      }
+
+      // Try fuzzy match: find closest drug name if no exact match
+      if (searchName && catalog.length > 0) {
+        const lower = searchName.toLowerCase();
+        let bestMatch = catalog[0];
+        let bestScore = 0;
+        for (const m of catalog) {
+          const name = (m.name || '').toLowerCase();
+          const generic = (m.generic_name || '').toLowerCase();
+          // Simple scoring: exact substring match is best, then prefix, then partial
+          let score = 0;
+          if (name === lower || generic === lower) score = 100;
+          else if (name.startsWith(lower) || generic.startsWith(lower)) score = 80;
+          else if (name.includes(lower) || generic.includes(lower)) score = 60;
+          else {
+            // Check brand names
+            for (const bn of (m.brand_names || [])) {
+              if (bn.toLowerCase().includes(lower)) { score = 50; break; }
+            }
+          }
+          if (score > bestScore) { bestScore = score; bestMatch = m; }
+        }
+        if (bestScore >= 50) {
+          openSeeded(bestMatch);
           setIsLoading(false);
           return;
         }
@@ -277,7 +306,8 @@ export default function DrugIndexScreen() {
       list = list.filter(m =>
         (m.name || '').toLowerCase().includes(q) ||
         (m.generic_name || '').toLowerCase().includes(q) ||
-        (m.drug_class_name || '').toLowerCase().includes(q)
+        (m.drug_class_name || '').toLowerCase().includes(q) ||
+        (m.brand_names || []).some(bn => bn.toLowerCase().includes(q))
       );
     }
     if (selectedLetter) {

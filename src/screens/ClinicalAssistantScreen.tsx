@@ -844,7 +844,6 @@ export default function ClinicalAssistantScreen() {
       const maxAttempts = 3;
       let success = false;
       let lastError: any = null;
-      let relevantKbContext = '';
       let engineSources: any[] = [];
 
       for (let attempt = 1; attempt <= maxAttempts; attempt++) {
@@ -859,7 +858,8 @@ export default function ClinicalAssistantScreen() {
             await new Promise(resolve => setTimeout(resolve, 1500 * (attempt - 1)));
           }
 
-          // RETRIEVE KNOWLEDGE ENGINE CONTEXT
+          // RETRIEVE KNOWLEDGE ENGINE CONTEXT (for citation widget only)
+          // Server-side RAG in buildAssistantRequest handles the actual context injection
           try {
             setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
               ...m,
@@ -872,10 +872,6 @@ export default function ClinicalAssistantScreen() {
             const engineResult = await KnowledgeEngine.process(userQuery);
             if (engineResult.hasData) {
               engineSources = engineResult.sources;
-              const contextFromRag = RAGRouter.buildContextForAi(engineResult);
-              if (contextFromRag) {
-                relevantKbContext = "\n\n" + contextFromRag;
-              }
               setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
                 ...m,
                 content: `Found ${engineSources.length} relevant sources. Generating clinical response...`
@@ -896,7 +892,7 @@ export default function ClinicalAssistantScreen() {
               'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-              userMessage: relevantKbContext ? userQuery + "\n" + relevantKbContext : userQuery,
+              userMessage: userQuery,
               chatHistory: messages.filter(m => !m.isThinking).map(m => ({
                 role: m.role,
                 content: m.content

@@ -105,9 +105,26 @@ export const RAGRouter = {
       context += `### Drug Monographs (${monographs.length})\n\n`;
       for (const m of monographs) {
         context += `**${m.name}** (${m.drug_class_name || m.drug_class})\n`;
-        context += `- Indications: ${m.indications.slice(0, 3).join('; ')}\n`;
+        if (m.brand_names && m.brand_names.length > 0) {
+          context += `- Brand names: ${m.brand_names.slice(0, 3).join(', ')}\n`;
+        }
+        context += `- Indications: ${m.indications.slice(0, 5).join('; ')}\n`;
         context += `- Contraindications: ${m.contraindications.slice(0, 3).join('; ')}\n`;
-        context += `- Key interactions: ${m.interactions.slice(0, 3).join('; ')}\n\n`;
+        context += `- Side effects: ${m.side_effects.slice(0, 3).join('; ')}\n`;
+        context += `- Key interactions: ${m.interactions.slice(0, 4).join('; ')}\n`;
+        if (m.dosage) {
+          const dosageEntries = Object.entries(m.dosage).slice(0, 3);
+          if (dosageEntries.length > 0) {
+            context += `- Dosage: ${dosageEntries.map(([k, v]) => `${k}: ${typeof v === 'string' ? v : JSON.stringify(v)}`).join('; ')}\n`;
+          }
+        }
+        if (m.mechanism_of_action) {
+          context += `- Mechanism: ${m.mechanism_of_action.slice(0, 150)}\n`;
+        }
+        if (m.monitoring) {
+          context += `- Monitoring: ${m.monitoring.slice(0, 200)}\n`;
+        }
+        context += '\n';
       }
     }
 
@@ -115,7 +132,16 @@ export const RAGRouter = {
     if (cases.length > 0) {
       context += `### Related Clinical Cases (${cases.length})\n\n`;
       for (const c of cases.slice(0, 5)) {
-        context += `- ${c.title}\n`;
+        context += `- ${c.title}\n  ${c.content}\n`;
+      }
+      context += '\n';
+    }
+
+    const diseases = engineResult.sources.filter(s => s.type === 'disease');
+    if (diseases.length > 0) {
+      context += `### Disease Information (${diseases.length})\n\n`;
+      for (const d of diseases.slice(0, 3)) {
+        context += `- **${d.title}**: ${d.content}\n`;
       }
       context += '\n';
     }

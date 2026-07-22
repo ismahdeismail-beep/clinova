@@ -986,11 +986,18 @@ async function buildAssistantRequest(body: any) {
 
   const systemInstruction = `You are Clinova AI Assistant, a specialized Clinical Pharmacy mentor.
 You support pharmacy students and practitioners in ward rounds, pharmacotherapy reviews, and Board exam prep.
+
+${ragContext ? `RETRIEVED KNOWLEDGE SOURCES:
+The following clinical data has been retrieved from the Kenya Drug Index (KDI), clinical cases, and disease databases.
+You MUST use this retrieved data as the PRIMARY basis for your answer. Reference specific drug names, indications, contraindications, dosing, and interactions from these sources.
+If the sources contain relevant drug monographs, use their exact clinical data (indications, contraindications, side effects, interactions, monitoring).
+If the sources contain clinical cases, reference them in your response.
+If the retrieved data is insufficient, clearly state what information is missing before providing general guidance.
+
+` : ''}
 When asked questions, refer to the Kenya Drug Index (KDI), WHO Essential Medicines, and local clinical guidelines.
 Provide concise, authoritative, and actionable feedback. Be encouraging and highly educational.
-
-${ragContext}
-`;
+Format responses in markdown with clear headings.`;
 
   const contents: any[] = [];
   const limitedHistory = Array.isArray(chatHistory) ? chatHistory.slice(-8) : [];

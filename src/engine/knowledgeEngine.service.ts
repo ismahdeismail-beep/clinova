@@ -1,6 +1,7 @@
 import { supabase } from '../lib/supabase';
 import { DrugMonographService, type DrugMonograph } from '../services/drugMonograph.service';
 import { BUNDLED_DRUGS } from '../data/drugIndexData';
+import { ALL_CLINICAL_CASES } from '../data/clinicalCasesData';
 
 export type QueryIntent = 'drug_info' | 'drug_interaction' | 'disease_info' | 'case_lookup' | 'guideline' | 'general';
 
@@ -28,23 +29,31 @@ function detectIntent(query: string): QueryIntent {
     return 'drug_interaction';
   }
 
-  if (q.includes('dose') || q.includes('dosage') || q.includes('side effect') ||
+  if (q.includes('dose') || q.includes('dosage') || q.includes('dosing') || q.includes('side effect') ||
       q.includes('contraindication') || q.includes('monitoring') || q.includes('counselling') ||
-      q.includes('mg') || q.includes('drug') || q.includes('medicine') || q.includes('pharmacology')) {
+      q.includes('counseling') || q.includes('mg') || q.includes('mcg') || q.includes('drug') || q.includes('medicine') ||
+      q.includes('pharmacology') || q.includes('mechanism') || q.includes('antibiotic') ||
+      q.includes('analgesic') || q.includes('antihypertensive') || q.includes('antidiabetic') ||
+      q.includes('injection') || q.includes('tablet') || q.includes('syrup') || q.includes('infusion')) {
     return 'drug_info';
   }
 
   if (q.includes('disease') || q.includes('condition') || q.includes('pathophysiology') ||
-      q.includes('aetiology') || q.includes('epidemiology')) {
+      q.includes('aetiology') || q.includes('etiology') || q.includes('epidemiology') ||
+      q.includes('diagnosis') || q.includes('signs') || q.includes('symptoms') ||
+      q.includes('presentation') || q.includes('clinical features')) {
     return 'disease_info';
   }
 
-  if (q.includes('case') || q.includes('scenario') || q.includes('patient') || q.includes('presentation')) {
+  if (q.includes('case') || q.includes('scenario') || q.includes('patient') ||
+      q.includes('management') || q.includes('treatment of') || q.includes('how to manage') ||
+      q.includes('approach to')) {
     return 'case_lookup';
   }
 
   if (q.includes('guideline') || q.includes('protocol') || q.includes('first-line') ||
-      q.includes('stg') || q.includes('who') || q.includes('standard treatment')) {
+      q.includes('first line') || q.includes('stg') || q.includes('who') ||
+      q.includes('standard treatment') || q.includes('regimen') || q.includes('stepwise')) {
     return 'guideline';
   }
 
@@ -57,16 +66,55 @@ function buildDrugNameSet(): Set<string> {
   for (const d of BUNDLED_DRUGS) {
     names.add(d.name.toLowerCase())
     if (d.generic_name) names.add(d.generic_name.toLowerCase())
+    // Also index brand names for lookups
+    if (d.brand_names) {
+      for (const bn of d.brand_names) names.add(bn.toLowerCase())
+    }
   }
   // Additional common names / brand-name variants
   const extras = [
     'co-trimoxazole', 'sodium valproate', 'ferrous sulphate', 'ferrous sulfate',
+    'augmentin', 'panadol', 'brufen', 'flagyl', 'nexium', 'ventolin',
   ]
   for (const e of extras) names.add(e)
   return names
 }
 
+/** Build an indication → drug name map for indication-based search */
+function buildIndicationMap(): Map<string, string[]> {
+  const map = new Map<string, string[]>()
+  for (const d of BUNDLED_DRUGS) {
+    if (!d.indications) continue
+    for (const ind of d.indications) {
+      const key = ind.toLowerCase()
+      const existing = map.get(key) || []
+      existing.push(d.name)
+      map.set(key, existing)
+    }
+  }
+  return map
+}
+
 const ALL_DRUG_NAMES = buildDrugNameSet()
+const INDICATION_MAP = buildIndicationMap()
+
+/** Simple Levenshtein distance for fuzzy matching */
+function levenshtein(a: string, b: string): number {
+  const m = a.length, n = b.length
+  const dp: number[][] = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0))
+  for (let i = 0; i <= m; i++) dp[i][0] = i
+  for (let j = 0; j <= n; j++) dp[0][j] = j
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1,
+        dp[i][j - 1] + 1,
+        dp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1),
+      )
+    }
+  }
+  return dp[m][n]
+}
 
 function extractDrugNames(query: string): string[] {
   const q = query.toLowerCase()
@@ -86,14 +134,67 @@ function extractDrugNames(query: string): string[] {
     if (ALL_DRUG_NAMES.has(w) && !found.includes(w)) found.push(w)
   }
 
-  // If nothing matched by exact name, try partial match
+  // If nothing matched by exact name, try partial + fuzzy match
   if (found.length === 0) {
+    // Partial match first (substring)
     for (const name of ALL_DRUG_NAMES) {
-      if (q.includes(name)) found.push(name)
+      if (q.includes(name) && !found.includes(name)) found.push(name)
+    }
+
+    // Fuzzy match (Levenshtein distance ≤ 2 for short names, ≤ 3 for longer)
+    if (found.length === 0) {
+      const queryWords = q.split(/\s+/).filter(w => w.length >= 3)
+      for (const qw of queryWords) {
+        let bestMatch = ''
+        let bestDist = Infinity
+        for (const name of ALL_DRUG_NAMES) {
+          const nameParts = name.split(/\s+/)
+          for (const np of nameParts) {
+            if (np.length < 3) continue
+            const threshold = np.length <= 5 ? 2 : 3
+            const dist = levenshtein(qw, np)
+            if (dist <= threshold && dist < bestDist) {
+              bestDist = dist
+              bestMatch = name
+            }
+          }
+        }
+        if (bestMatch && !found.includes(bestMatch)) found.push(bestMatch)
+      }
     }
   }
 
   return found
+}
+
+/** Search for drugs by indication keywords (e.g. "UTI", "hypertension") */
+function searchByIndication(query: string): string[] {
+  const q = query.toLowerCase()
+  const matchedDrugs = new Set<string>()
+
+  for (const [indication, drugs] of INDICATION_MAP) {
+    if (q.includes(indication) || indication.includes(q)) {
+      for (const d of drugs) matchedDrugs.add(d)
+    }
+  }
+
+  // Also check disease names from clinical cases for cross-reference
+  if (matchedDrugs.size === 0) {
+    for (const c of ALL_CLINICAL_CASES) {
+      const disease = (c.disease || '').toLowerCase()
+      const specialty = (c.specialty || '').toLowerCase()
+      if (q.includes(disease) || disease.includes(q) || q.includes(specialty)) {
+        // Find drugs that treat this disease via indications
+        for (const [indication, drugs] of INDICATION_MAP) {
+          if (indication.includes(disease) || disease.includes(indication)) {
+            for (const d of drugs) matchedDrugs.add(d)
+          }
+        }
+      }
+    }
+  }
+
+  return Array.from(matchedDrugs).slice(0, 10)
 }
 
 export const KnowledgeEngine = {
@@ -153,10 +254,38 @@ export const KnowledgeEngine = {
             }
           }
         }
+      } else if (intent === 'drug_info') {
+        // No drug names extracted — try indication-based search
+        const indicationDrugs = searchByIndication(query);
+        if (indicationDrugs.length > 0) {
+          for (const name of indicationDrugs) {
+            const mono = await DrugMonographService.getByName(name);
+            if (mono) {
+              drugMonographs = drugMonographs || [];
+              drugMonographs.push(mono);
+              const parts: string[] = [];
+              parts.push(`CLASS: ${mono.drug_class_name || mono.drug_class}`);
+              parts.push(`INDICATIONS: ${mono.indications.slice(0, 3).join('; ')}`);
+              parts.push(`CONTRAINDICATIONS: ${mono.contraindications.slice(0, 3).join('; ')}`);
+              parts.push(`KEY SIDE EFFECTS: ${mono.side_effects.slice(0, 3).join('; ')}`);
+              if (mono.interactions.length > 0) {
+                parts.push(`INTERACTIONS: ${mono.interactions.slice(0, 4).join('; ')}`);
+              }
+              parts.push(`MONITORING: ${mono.monitoring.slice(0, 200)}`);
+              sources.push({
+                type: 'drug_monograph',
+                id: mono.id,
+                title: mono.name,
+                content: parts.join('\n'),
+                relevance: 0.85,
+              });
+            }
+          }
+        }
       }
     }
 
-    if (client && (intent === 'case_lookup' || intent === 'general')) {
+    if (client && (intent === 'case_lookup' || intent === 'general' || intent === 'disease_info' || intent === 'guideline')) {
       const searchTerm = drugNames.length > 0 ? drugNames[0] : query;
       const { data: cases } = await client
         .from('clinical_cases')

@@ -82,24 +82,25 @@ export const SearchService = {
   },
 }
 
-/** Search the static 513-drug index */
+/** Search the static drug index */
 function searchStatic(term: string, limit: number): UnifiedSearchResult[] {
   const q = term.toLowerCase()
   const results: UnifiedSearchResult[] = []
 
   for (const d of BUNDLED_DRUGS) {
     if (results.length >= limit) break
-    if (
-      d.name.toLowerCase().includes(q) ||
-      d.generic_name.toLowerCase().includes(q) ||
-      d.drug_class.toLowerCase().includes(q)
-    ) {
+    const nameMatch = d.name.toLowerCase().includes(q)
+    const genericMatch = d.generic_name.toLowerCase().includes(q)
+    const classMatch = d.drug_class.toLowerCase().includes(q) || d.drug_class_name.toLowerCase().includes(q)
+    const brandMatch = (d.brand_names || []).some(bn => bn.toLowerCase().includes(q))
+    
+    if (nameMatch || genericMatch || classMatch || brandMatch) {
       results.push({
         result_type: 'drug',
         id: d.id,
         title: d.name,
         subtitle: d.drug_class_name,
-        relevance: 0.4,
+        relevance: nameMatch ? 0.6 : genericMatch ? 0.55 : brandMatch ? 0.5 : 0.4,
       })
     }
   }

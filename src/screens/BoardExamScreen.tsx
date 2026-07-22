@@ -234,7 +234,7 @@ export default function BoardExamScreen() {
     if (selectedSet) {
       navigate('/exam/board-exam')
     } else {
-      navigate('/')
+      navigate('/exam')
     }
   }
 
@@ -265,7 +265,7 @@ export default function BoardExamScreen() {
       <div className="p-4 md:p-6 max-w-6xl mx-auto">
         <button onClick={handleBack} className="flex items-center gap-2 text-sm text-[var(--text-muted)] hover:text-[var(--text)] mb-6 transition-colors">
           <ArrowLeft size={16} />
-          Back to Dashboard
+          Back to Exam Hub
         </button>
 
         <div className="mb-6 sm:mb-8">

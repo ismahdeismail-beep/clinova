@@ -312,82 +312,104 @@ function SectionCard({ title, children }: { title: string; children: React.React
 function OverviewTab({ plan }: { plan: any }) {
   return (
     <div className="space-y-4">
-      <SectionCard title="Pathophysiology">
-        <p className="text-sm text-[var(--text-muted)] leading-relaxed">{plan.pathophysiology}</p>
-      </SectionCard>
+      {/* Pathophysiology */}
+      <div className="bg-[var(--surface)] border border-[var(--border)] border-l-4 border-l-blue-500 rounded-2xl p-5 sm:p-6 shadow-sm">
+        <h3 className="text-xs font-black text-blue-600 dark:text-blue-400 mb-2 uppercase tracking-wider flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-blue-500" /> Pathophysiology
+        </h3>
+        <p className="text-sm text-[var(--text)] leading-relaxed">{plan.pathophysiology}</p>
+      </div>
 
       {plan.commonCauses && (
-        <SectionCard title="Common Causes">
-          <ul className="space-y-1.5">
+        <div className="bg-[var(--surface)] border border-[var(--border)] border-l-4 border-l-amber-500 rounded-2xl p-5 sm:p-6 shadow-sm">
+          <h3 className="text-xs font-black text-amber-600 dark:text-amber-400 mb-3 uppercase tracking-wider flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-amber-500" /> Common Causes
+          </h3>
+          <ul className="space-y-2">
             {plan.commonCauses.map((c: string, i: number) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-[var(--text-muted)]">
-                <span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] mt-1.5 shrink-0" />
+              <li key={i} className="flex items-start gap-2 text-sm text-[var(--text)] bg-amber-500/5 border border-amber-500/20 rounded-xl p-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 shrink-0" />
                 {c}
               </li>
             ))}
           </ul>
-        </SectionCard>
+        </div>
       )}
 
       {plan.riskFactors && (
-        <SectionCard title="Risk Factors">
-          <ul className="space-y-1.5">
+        <div className="bg-[var(--surface)] border border-[var(--border)] border-l-4 border-l-purple-500 rounded-2xl p-5 sm:p-6 shadow-sm">
+          <h3 className="text-xs font-black text-purple-600 dark:text-purple-400 mb-3 uppercase tracking-wider flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-purple-500" /> Risk Factors
+          </h3>
+          <ul className="space-y-2">
             {plan.riskFactors.map((r: string, i: number) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-[var(--text-muted)]">
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-1.5 shrink-0" />
+              <li key={i} className="flex items-start gap-2 text-sm text-[var(--text)] bg-purple-500/5 border border-purple-500/20 rounded-xl p-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 shrink-0" />
                 {r}
               </li>
             ))}
           </ul>
-        </SectionCard>
+        </div>
       )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <SectionCard title="Subjective Data">
-          <ul className="space-y-1.5">
+        <div className="bg-[var(--surface)] border border-[var(--border)] border-l-4 border-l-cyan-500 rounded-2xl p-5 sm:p-6 shadow-sm">
+          <h3 className="text-xs font-black text-cyan-600 dark:text-cyan-400 mb-3 uppercase tracking-wider flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-cyan-500" /> Subjective Data
+          </h3>
+          <ul className="space-y-2">
             {plan.subjectiveData.map((s: string, i: number) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-[var(--text-muted)]">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 shrink-0" />
+              <li key={i} className="flex items-start gap-2 text-sm text-[var(--text)] bg-cyan-500/5 border border-cyan-500/20 rounded-xl p-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-cyan-500 mt-2 shrink-0" />
                 {s}
               </li>
             ))}
           </ul>
-        </SectionCard>
-        <SectionCard title="Objective Data">
-          <ul className="space-y-1.5">
+        </div>
+        <div className="bg-[var(--surface)] border border-[var(--border)] border-l-4 border-l-emerald-500 rounded-2xl p-5 sm:p-6 shadow-sm">
+          <h3 className="text-xs font-black text-emerald-600 dark:text-emerald-400 mb-3 uppercase tracking-wider flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-500" /> Objective Data
+          </h3>
+          <ul className="space-y-2">
             {plan.objectiveData.map((o: string, i: number) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-[var(--text-muted)]">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-1.5 shrink-0" />
+              <li key={i} className="flex items-start gap-2 text-sm text-[var(--text)] bg-emerald-500/5 border border-emerald-500/20 rounded-xl p-2.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 shrink-0" />
                 {o}
               </li>
             ))}
           </ul>
-        </SectionCard>
+        </div>
       </div>
 
       {plan.complications && (
-        <SectionCard title="Potential Complications">
+        <div className="bg-[var(--surface)] border border-[var(--border)] border-l-4 border-l-rose-500 rounded-2xl p-5 sm:p-6 shadow-sm">
+          <h3 className="text-xs font-black text-rose-600 dark:text-rose-400 mb-3 uppercase tracking-wider flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-rose-500" /> Potential Complications
+          </h3>
           <div className="flex flex-wrap gap-2">
             {plan.complications.map((c: string, i: number) => (
-              <span key={i} className="px-3 py-1 bg-rose-500/10 text-rose-600 border border-rose-200/40 rounded-full text-xs font-semibold">
+              <span key={i} className="px-3 py-1.5 bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/30 rounded-xl text-xs font-bold shadow-xs">
                 {c}
               </span>
             ))}
           </div>
-        </SectionCard>
+        </div>
       )}
 
       {plan.nursingNotes && (
-        <SectionCard title="Nursing Notes">
+        <div className="bg-[var(--surface)] border border-[var(--border)] border-l-4 border-l-amber-500 rounded-2xl p-5 sm:p-6 shadow-sm">
+          <h3 className="text-xs font-black text-amber-600 dark:text-amber-400 mb-3 uppercase tracking-wider flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-amber-500" /> Nursing Notes
+          </h3>
           <ul className="space-y-2">
             {plan.nursingNotes.map((n: string, i: number) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-[var(--text-muted)] bg-amber-500/5 border border-amber-200/30 rounded-xl p-3">
-                <span className="text-amber-600 shrink-0 mt-0.5">💡</span>
+              <li key={i} className="flex items-start gap-2.5 text-sm text-[var(--text)] bg-amber-500/10 border border-amber-500/30 rounded-xl p-3.5">
+                <span className="text-amber-600 shrink-0 mt-0.5 font-bold">💡</span>
                 {n}
               </li>
             ))}
           </ul>
-        </SectionCard>
+        </div>
       )}
     </div>
   );

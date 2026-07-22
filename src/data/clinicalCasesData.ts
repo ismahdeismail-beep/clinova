@@ -963,7 +963,7 @@ export function getCurriculumCasesForUnit(unitNumber: number): ClinicalCase[] {
         }
         return mappedDisease;
       })(),
-      title: `${i + 1}. ${template.title}`,
+      title: `${patientName}, ${age}yo ${i % 2 === 0 ? 'M' : 'F'}: Management of ${template.disease} — ${template.dtp}`,
       difficulty: difficulty,
       patientName: patientName,
       facilitySetting: facility,

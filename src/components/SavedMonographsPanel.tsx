@@ -174,13 +174,13 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
                       {item.monograph?.name ?? 'Unknown Monograph'}
                     </button>
                     <div className="flex items-center gap-2 mt-0.5">
-                      {(item.monograph?.drug_class_name || item.monograph?.drug_class) && (() => {
-                        const cc = getDrugClassConfig(item.monograph?.drug_class_name || item.monograph?.drug_class || '');
+                      {(item.monograph?.drug_class || item.monograph?.drug_class_name) && (() => {
+                        const cc = getDrugClassConfig(item.monograph?.drug_class || item.monograph?.drug_class_name || '');
                         return (
-                          <span className={`inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border}`}>
-                            {cc.subtitle && <span className="opacity-70">{cc.subtitle}</span>}
-                            <span className="font-bold">·</span>
-                            {item.monograph?.drug_class_name || item.monograph?.drug_class}
+                          <span className={`inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}>
+                            {cc.subtitle && <span className="opacity-70 shrink-0">{cc.subtitle}</span>}
+                            <span className="font-bold shrink-0">·</span>
+                            <span className="truncate">{item.monograph?.drug_class || item.monograph?.drug_class_name}</span>
                           </span>
                         );
                       })()}
@@ -233,12 +233,12 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
                       <div>
                         <span className="font-bold text-[var(--text-muted)] uppercase text-[9px] tracking-wider">Drug Class</span>
                         {(() => {
-                          const cc = getDrugClassConfig(item.monograph.drug_class_name || item.monograph.drug_class || '');
+                          const cc = getDrugClassConfig(item.monograph.drug_class || item.monograph.drug_class_name || '');
                           return (
-                            <span className={`mt-0.5 inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border}`}>
-                              {cc.subtitle && <span className="opacity-70">{cc.subtitle}</span>}
-                              <span className="font-bold">·</span>
-                              {item.monograph.drug_class_name || item.monograph.drug_class}
+                            <span className={`mt-0.5 inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}>
+                              {cc.subtitle && <span className="opacity-70 shrink-0">{cc.subtitle}</span>}
+                              <span className="font-bold shrink-0">·</span>
+                              <span className="truncate">{item.monograph.drug_class || item.monograph.drug_class_name}</span>
                             </span>
                           );
                         })()}

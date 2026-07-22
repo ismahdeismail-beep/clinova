@@ -175,6 +175,18 @@ export default function DashboardScreen() {
   const [showResults, setShowResults] = useState(false)
   const searchRef = useRef<HTMLDivElement>(null)
 
+  // First-time user detection
+  const [isFirstTime, setIsFirstTime] = useState(false)
+  useEffect(() => {
+    if (!userData?.id) return
+    const key = `clinova_welcomed_${userData.id}`
+    const hasVisited = localStorage.getItem(key)
+    if (!hasVisited) {
+      setIsFirstTime(true)
+      localStorage.setItem(key, '1')
+    }
+  }, [userData?.id])
+
   // Live stats
   const [caseCount, setCaseCount] = useState<number | null>(null)
   useEffect(() => {
@@ -250,10 +262,12 @@ export default function DashboardScreen() {
             </div>
             <div>
               <h1 className="text-xl md:text-2xl lg:text-3xl font-bold tracking-tight mb-1">
-                Welcome back, {userData?.name || 'Student'}
+                {isFirstTime ? `Welcome to Clinova, ${userData?.name || 'Student'}` : `Welcome back, ${userData?.name || 'Student'}`}
               </h1>
               <p className="text-white/80 text-sm max-w-xl leading-relaxed">
-                Your clinical pharmacy companion — study cases, practice exams, and master therapeutics.
+                {isFirstTime
+                  ? 'Your clinical pharmacy companion — explore cases, practice exams, and master therapeutics all in one place.'
+                  : 'Your clinical pharmacy companion — study cases, practice exams, and master therapeutics.'}
               </p>
             </div>
           </div>

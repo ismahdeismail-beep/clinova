@@ -360,32 +360,6 @@ export default function ClinicalAssistantScreen() {
     }
   };
   
-  // Keyboard and dynamic viewport height tracking
-  const [viewportHeight, setViewportHeight] = useState<number>(window.innerHeight);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.visualViewport) {
-        setViewportHeight(window.visualViewport.height);
-      } else {
-        setViewportHeight(window.innerHeight);
-      }
-    };
-
-    window.visualViewport?.addEventListener('resize', handleResize);
-    window.visualViewport?.addEventListener('scroll', handleResize);
-    window.addEventListener('resize', handleResize);
-
-    // Initial trigger
-    handleResize();
-
-    return () => {
-      window.visualViewport?.removeEventListener('resize', handleResize);
-      window.visualViewport?.removeEventListener('scroll', handleResize);
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   // Textarea auto-height adjustment
   useEffect(() => {
     if (textareaRef.current) {
@@ -1038,10 +1012,7 @@ export default function ClinicalAssistantScreen() {
 
   return (
     <div 
-      className="fixed md:left-64 left-0 right-0 bottom-0 top-[calc(4rem+env(safe-area-inset-top,0px))] bg-[var(--bg)] text-[var(--text)] flex flex-row overflow-hidden z-30 font-sans"
-      style={{
-        height: `calc(${viewportHeight}px - 4rem - env(safe-area-inset-top, 0px))`
-      }}
+      className="fixed inset-0 md:left-64 md:top-[calc(4rem+env(safe-area-inset-top,0px))] md:bottom-0 md:right-0 bg-[var(--bg)] text-[var(--text)] flex flex-row overflow-hidden z-30 font-sans"
     >
       
       {/* Sidebar for Mobile & Desktop */}
@@ -1066,21 +1037,21 @@ export default function ClinicalAssistantScreen() {
       <div className="flex-1 flex flex-col h-full overflow-hidden bg-[var(--bg)] relative">
         
         {/* Chat Header */}
-        <div className="h-16 border-b border-[var(--border)]/80 px-4 sm:px-6 bg-[var(--surface)] flex items-center justify-between z-10 shrink-0">
-          <div className="flex items-center gap-3 min-w-0">
+        <div className="h-14 sm:h-16 border-b border-[var(--border)]/80 px-3 sm:px-6 bg-[var(--surface)] flex items-center justify-between z-10 shrink-0">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
             <button 
               className="md:hidden p-2 rounded-xl border border-[var(--border)] hover:bg-[var(--surface-dim)] transition-all cursor-pointer"
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
             >
               <Menu size={18} className="text-[var(--text)]" />
             </button>
-            <div className="w-10 h-10 rounded-full bg-[var(--primary)]/15 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20 shadow-inner shrink-0">
-              <Bot size={22} className="animate-pulse" />
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[var(--primary)]/15 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20 shadow-inner shrink-0">
+              <Bot size={20} className="animate-pulse" />
             </div>
             <div className="min-w-0">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 sm:gap-2">
                 <h2 className="text-sm sm:text-base font-bold text-[var(--text)] tracking-tight">Clinova Support</h2>
-                <div className="flex items-center gap-1.5 text-[10px] font-bold text-[var(--primary)] bg-[var(--primary)]/10 px-2.5 py-0.5 rounded-full border border-[var(--primary)]/20 select-none">
+                <div className="hidden sm:flex items-center gap-1.5 text-[10px] font-bold text-[var(--primary)] bg-[var(--primary)]/10 px-2.5 py-0.5 rounded-full border border-[var(--primary)]/20 select-none">
                   <span className="relative flex h-1.5 w-1.5">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[var(--primary)]"></span>
@@ -1088,11 +1059,11 @@ export default function ClinicalAssistantScreen() {
                   <span>● Online</span>
                 </div>
               </div>
-              <p className="text-xs text-[var(--text-muted)] truncate hidden xs:block mt-0.5">Clinical Decision Support</p>
+              <p className="text-xs text-[var(--text-muted)] truncate hidden sm:block mt-0.5">Clinical Decision Support</p>
             </div>
           </div>
           
-          <div className="flex items-center gap-2 shrink-0">
+          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
             {/* Quick New Chat Button */}
             <button
               onClick={handleNewSession}
@@ -1100,13 +1071,13 @@ export default function ClinicalAssistantScreen() {
               title="Start New Session"
             >
               <Plus size={14} className="text-[var(--primary)]" />
-              <span className="hidden sm:inline">New Session</span>
+              <span className="hidden md:inline">New Session</span>
             </button>
 
-            {/* Delete Current Conversation */}
+            {/* Delete Current Conversation - hidden on mobile */}
             <button
               onClick={handleDeleteCurrentSession}
-              className="p-2 sm:px-3 sm:py-2 rounded-xl border border-[var(--border)] hover:border-red-400/40 bg-[var(--bg)]/40 hover:bg-red-500/10 text-[var(--text-muted)] hover:text-red-500 transition-all cursor-pointer"
+              className="hidden sm:flex p-2 sm:px-3 sm:py-2 rounded-xl border border-[var(--border)] hover:border-red-400/40 bg-[var(--bg)]/40 hover:bg-red-500/10 text-[var(--text-muted)] hover:text-red-500 transition-all cursor-pointer"
               title="Delete current conversation"
             >
               <Trash2 size={14} />
@@ -1116,7 +1087,7 @@ export default function ClinicalAssistantScreen() {
             <div className="relative">
               <button
                 onClick={() => setShowExportMenu(!showExportMenu)}
-                className="flex items-center gap-1.5 text-xs font-bold text-[var(--text)] bg-[var(--bg)]/40 hover:bg-[var(--bg)]/80 px-3 py-2 rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/40 transition-all cursor-pointer select-none"
+                className="flex items-center gap-1.5 text-xs font-bold text-[var(--text)] bg-[var(--bg)]/40 hover:bg-[var(--bg)]/80 sm:px-3 py-2 rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/40 transition-all cursor-pointer select-none"
                 title="Export current conversation for records"
                 id="export-chat-button"
                 aria-expanded={showExportMenu}
@@ -1124,7 +1095,7 @@ export default function ClinicalAssistantScreen() {
                 aria-label="Export chat"
               >
                 <Download size={14} className="text-[var(--text-muted)]" />
-                <span className="hidden xs:inline">Export</span>
+                <span className="hidden sm:inline">Export</span>
                 <ChevronDown size={12} className={`text-[var(--text-muted)] transition-transform duration-200 ${showExportMenu ? 'rotate-180' : ''}`} />
               </button>
               
@@ -1184,20 +1155,20 @@ export default function ClinicalAssistantScreen() {
         <div 
           ref={chatContainerRef}
           onScroll={handleScroll}
-          className="flex-1 overflow-y-auto p-4 md:p-6 scrollbar-thin scroll-smooth"
+          className="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6 scrollbar-thin scroll-smooth"
         >
-          <div className="max-w-3xl mx-auto w-full flex flex-col gap-6">
+          <div className="max-w-3xl mx-auto w-full flex flex-col gap-4 sm:gap-6">
             {/* Welcome State / Initial Empty State */}
           {messages.length === 0 && (
-            <div className="max-w-3xl mx-auto py-4 sm:py-8 px-2">
+            <div className="max-w-3xl mx-auto py-3 sm:py-8 px-2">
               <motion.div 
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
-                className="bg-[var(--surface)] border border-[var(--border)] rounded-3xl p-6 sm:p-8 shadow-md text-center flex flex-col items-center gap-5"
+                className="bg-[var(--surface)] border border-[var(--border)] rounded-3xl p-4 sm:p-8 shadow-md text-center flex flex-col items-center gap-3 sm:gap-5"
               >
-                <div className="w-14 h-14 rounded-2xl bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20 shadow-inner">
-                  <Sparkles size={32} className="text-[var(--primary)]" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20 shadow-inner">
+                  <Sparkles size={28} className="text-[var(--primary)]" />
                 </div>
                 
                 <div className="space-y-2">
@@ -1225,7 +1196,7 @@ export default function ClinicalAssistantScreen() {
                     ].map((feat, idx) => {
                       const Icon = feat.icon;
                       return (
-                        <div key={idx} className="flex gap-3 p-3.5 sm:p-4 bg-[var(--bg)]/50 border border-[var(--border)]/80 rounded-2xl">
+                        <div key={idx} className="flex gap-2.5 sm:gap-3 p-3 sm:p-4 bg-[var(--bg)]/50 border border-[var(--border)]/80 rounded-2xl">
                           <div className="w-8 h-8 rounded-lg bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/10 shrink-0">
                             <Icon size={16} />
                           </div>
@@ -1245,7 +1216,7 @@ export default function ClinicalAssistantScreen() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.4 }}
-                className="mt-8 space-y-3"
+                className="mt-4 sm:mt-8 space-y-2 sm:space-y-3"
               >
                 <div className="flex items-center gap-2 px-1">
                   <Sparkles size={14} className="text-[var(--primary)]" />
@@ -1263,7 +1234,7 @@ export default function ClinicalAssistantScreen() {
                     <button
                       key={i}
                       onClick={() => handleSuggestionClick(sug.text)}
-                      className="text-left px-4 py-3 bg-[var(--surface)] hover:bg-[var(--surface-dim)] border border-[var(--border)]/80 hover:border-[var(--border)] rounded-xl text-xs sm:text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-all cursor-pointer shadow-xs flex items-center justify-between select-none"
+                      className="text-left px-3 sm:px-4 py-2.5 sm:py-3 bg-[var(--surface)] hover:bg-[var(--surface-dim)] border border-[var(--border)]/80 hover:border-[var(--border)] rounded-xl text-xs sm:text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-all cursor-pointer shadow-xs flex items-center justify-between select-none"
                     >
                       <span className="truncate">{sug.label}</span>
                       <ChevronRight size={14} className="text-[var(--text-muted)] shrink-0 ml-2" />
@@ -1344,7 +1315,7 @@ export default function ClinicalAssistantScreen() {
                         )}
                       </div>
 {!isUser && (
-                          <div className="mt-1.5 flex items-center gap-1.5 opacity-0 group-hover/bubble:opacity-100 transition-opacity duration-200">
+                          <div className="mt-1.5 flex items-center gap-1.5 opacity-100 sm:opacity-0 sm:group-hover/bubble:opacity-100 transition-opacity duration-200">
                             <CopyButton text={msg.content} />
                             <DownloadButton 
                               content={msg.content} 
@@ -1398,8 +1369,8 @@ export default function ClinicalAssistantScreen() {
             );
           })}
 
-          {/* Typing Indicator if processing */}
-          {isProcessing && (
+          {/* Typing Indicator — only when no thinking message already exists */}
+          {isProcessing && !messages.some(m => m.isThinking) && (
             <div className="flex gap-3 sm:gap-4 items-start animate-in fade-in duration-200">
               <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[var(--surface)] text-[var(--primary)] border border-[var(--border)] shrink-0 shadow-xs mt-1">
                 <Bot size={15} />
@@ -1439,11 +1410,11 @@ export default function ClinicalAssistantScreen() {
         </AnimatePresence>
         
         {/* Floating Interactive Input Composer Area */}
-        <div className="p-3 sm:p-4 border-t border-[var(--border)]/80 bg-[var(--surface)] shrink-0 z-10 shadow-lg pb-[calc(0.75rem+env(safe-area-inset-bottom,0px))]">
+        <div className="p-2.5 sm:p-4 border-t border-[var(--border)]/80 bg-[var(--surface)] shrink-0 z-10 shadow-lg pb-[calc(0.625rem+env(safe-area-inset-bottom,0px))]">
           <div className="max-w-3xl mx-auto w-full">
           
           {/* Active Databases Config Dropdown Panel */}
-          <div className="mb-2 sm:mb-3 relative">
+          <div className="mb-1.5 sm:mb-3 relative">
             <button 
               onClick={() => setShowSourceSelector(!showSourceSelector)}
               className="flex items-center gap-1.5 text-xs font-bold text-[var(--primary)] px-2.5 sm:px-3 py-1.5 hover:bg-[var(--primary)]/10 border border-[var(--primary)]/20 rounded-xl transition-all cursor-pointer select-none"
@@ -1463,7 +1434,7 @@ export default function ClinicalAssistantScreen() {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 10, scale: 0.98 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute bottom-full left-0 mb-1 w-full sm:w-[480px] p-3 sm:p-4 bg-[var(--surface)] border border-[var(--border)] rounded-2xl grid grid-cols-2 gap-2 shadow-xl z-50"
+                  className="absolute bottom-full left-0 mb-1 w-full sm:w-[480px] p-3 sm:p-4 bg-[var(--surface)] border border-[var(--border)] rounded-2xl grid grid-cols-2 gap-2 shadow-xl z-50 max-h-[50vh] overflow-y-auto"
                   role="menu"
                 >
                   {AVAILABLE_SOURCES.map(source => (
@@ -1489,7 +1460,7 @@ export default function ClinicalAssistantScreen() {
                 initial={{ opacity: 0, height: 0, y: 10 }}
                 animate={{ opacity: 1, height: 'auto', y: 0 }}
                 exit={{ opacity: 0, height: 0, y: 10 }}
-                className="overflow-hidden mb-3 bg-[var(--primary)]/5 border border-[var(--primary)]/15 rounded-2xl p-4 shadow-sm"
+                className="overflow-hidden mb-2 sm:mb-3 bg-[var(--primary)]/5 border border-[var(--primary)]/15 rounded-2xl p-3 sm:p-4 shadow-sm"
               >
                 <div className="flex items-center justify-between gap-3 mb-2 flex-wrap">
                   <div className="flex items-center gap-2">

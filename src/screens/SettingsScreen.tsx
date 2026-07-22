@@ -13,8 +13,14 @@ import {
   Shield,
   Save,
   CheckCircle2,
+  Bell,
+  BellOff,
+  BellRing,
+  CheckCheck,
+  LogOut,
 } from "lucide-react"
 import { useAuth } from "../contexts/AuthContext"
+import { useNotifications } from "../contexts/NotificationContext"
 
 const ALL_CLINICAL_SYSTEMS = [
   "Cardiology",
@@ -34,13 +40,25 @@ const ALL_CLINICAL_SYSTEMS = [
 
 export default function SettingsScreen() {
   const navigate = useNavigate()
-  const { userData, updatePreferences } = useAuth()
+  const { userData, updatePreferences, logout } = useAuth()
+  const {
+    notifications,
+    unreadCount,
+    markAsRead,
+    markAllAsRead,
+    requestNotificationPermission,
+  } = useNotifications()
 
   const [saved, setSaved] = useState(false)
   const [clinicalInterests, setClinicalInterests] = useState<string[]>(
     userData?.clinicalInterests || ["Cardiology", "Nephrology"]
   )
   const [searchQuery, setSearchQuery] = useState("")
+  const [pushEnabled, setPushEnabled] = useState(() => {
+    if (!("Notification" in window)) return false
+    return Notification.permission === "granted"
+  })
+  const [loggingOut, setLoggingOut] = useState(false)
 
   // Re-sync local state when userData changes from external source (login, Firestore sync)
   useEffect(() => {
@@ -63,6 +81,16 @@ const handleSave = async () => {
     await updatePreferences(clinicalInterests)
     setSaved(true)
     setTimeout(() => setSaved(false), 2500)
+  }
+
+  const handleTogglePush = async () => {
+    const result = await requestNotificationPermission()
+    setPushEnabled(result === "granted")
+  }
+
+  const handleLogout = async () => {
+    setLoggingOut(true)
+    await logout()
   }
 
   return (
@@ -229,6 +257,118 @@ const handleSave = async () => {
                   )
                 })}
             </div>
+          </div>
+        </div>
+
+        {/* ── Notifications Section ── */}
+        <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden">
+          <div className="p-6 border-b border-[var(--border)]">
+            <h2 className="font-bold text-[var(--text)] flex items-center gap-2">
+              <Bell size={18} className="text-[var(--primary)]" />
+              Notifications
+            </h2>
+          </div>
+          <div className="divide-y divide-[var(--border)]">
+            {/* Push Notifications Toggle */}
+            <div className="p-5 flex items-center justify-between gap-4">
+              <div className="min-w-0">
+                <p className="text-sm font-semibold text-[var(--text)]">Push Notifications</p>
+                <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                  Receive browser alerts for drug of the day and reminders
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={handleTogglePush}
+                className={`relative inline-flex h-7 w-12 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 ${
+                  pushEnabled ? "bg-[var(--primary)]" : "bg-[var(--border)]"
+                }`}
+              >
+                <span
+                  className={`pointer-events-none inline-block h-6 w-6 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out ${
+                    pushEnabled ? "translate-x-5" : "translate-x-0"
+                  }`}
+                />
+              </button>
+            </div>
+
+            {/* Recent Notifications */}
+            <div className="p-5">
+              <div className="flex items-center justify-between mb-3">
+                <p className="text-sm font-semibold text-[var(--text)]">Recent Notifications</p>
+                {unreadCount > 0 && (
+                  <button
+                    type="button"
+                    onClick={markAllAsRead}
+                    className="text-xs font-semibold text-[var(--primary)] hover:underline flex items-center gap-1 cursor-pointer"
+                  >
+                    <CheckCheck size={14} />
+                    Mark all read
+                  </button>
+                )}
+              </div>
+              {notifications.length === 0 ? (
+                <p className="text-sm text-[var(--text-muted)] py-4 text-center">No notifications yet</p>
+              ) : (
+                <div className="space-y-2 max-h-72 overflow-y-auto pr-1">
+                  {notifications.slice(0, 10).map((n) => (
+                    <div
+                      key={n.id}
+                      onClick={() => !n.read && markAsRead(n.id)}
+                      className={`flex items-start gap-3 p-3 rounded-xl border transition-all cursor-pointer ${
+                        n.read
+                          ? "bg-[var(--bg)]/50 border-[var(--border)]/40 opacity-60"
+                          : "bg-[var(--primary)]/5 border-[var(--primary)]/15 hover:border-[var(--primary)]/30"
+                      }`}
+                    >
+                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 ${n.bg}`}>
+                        <BellRing size={14} className={n.color} />
+                      </div>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-center gap-2">
+                          <p className="text-sm font-semibold text-[var(--text)] truncate">{n.title}</p>
+                          {!n.read && (
+                            <span className="w-2 h-2 rounded-full bg-[var(--primary)] shrink-0" />
+                          )}
+                        </div>
+                        <p className="text-xs text-[var(--text-muted)] leading-relaxed mt-0.5 line-clamp-2">{n.message}</p>
+                        <p className="text-[10px] text-[var(--text-muted)] mt-1 font-medium">{n.time}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+
+        {/* ── Account Section ── */}
+        <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden">
+          <div className="p-6 border-b border-[var(--border)]">
+            <h2 className="font-bold text-[var(--text)] flex items-center gap-2">
+              <Shield size={18} className="text-[var(--primary)]" />
+              Account
+            </h2>
+          </div>
+          <div className="p-5">
+            <button
+              type="button"
+              onClick={handleLogout}
+              disabled={loggingOut}
+              className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl text-sm font-semibold text-[var(--destructive)] border border-[var(--destructive)]/20 hover:bg-[var(--destructive)]/10 transition-all disabled:opacity-50 cursor-pointer"
+            >
+              {loggingOut ? (
+                <span className="flex items-center gap-2">
+                  <span className="w-4 h-4 border-2 border-[var(--destructive)]/30 border-t-[var(--destructive)] rounded-full animate-spin" />
+                  Signing out...
+                </span>
+              ) : (
+                <>
+                  <LogOut size={16} />
+                  Sign Out
+                </>
+              )}
+            </button>
           </div>
         </div>
 

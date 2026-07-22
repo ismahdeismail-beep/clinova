@@ -209,9 +209,11 @@ function CopyButton({ text }: { text: string }) {
 
 function DownloadButton({ content, filename }: { content: string; filename: string }) {
   const [downloading, setDownloading] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const handleDownload = async (format: 'pdf' | 'txt' | 'md') => {
     setDownloading(true);
+    setShowMenu(false);
     try {
       await exportService.exportAndDownload({
         title: filename.replace(/\.[^/.]+$/, ''),
@@ -227,25 +229,51 @@ function DownloadButton({ content, filename }: { content: string; filename: stri
   };
 
   return (
-    <div className="flex items-center gap-1">
+    <div className="relative">
       <button
-        onClick={() => handleDownload('pdf')}
+        onClick={() => setShowMenu(!showMenu)}
         disabled={downloading}
-        className="p-1.5 rounded-lg border border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] transition-all cursor-pointer disabled:opacity-50 min-h-[36px] min-w-[36px] flex items-center justify-center"
-        title="Download as PDF"
+        className="p-1.5 rounded-lg border border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--primary)] transition-all cursor-pointer disabled:opacity-50 min-h-[32px] min-w-[32px] flex items-center justify-center"
+        title="Download this message"
       >
-        <FileDown size={14} />
+        {downloading ? <Loader2 size={13} className="animate-spin" /> : <Download size={13} />}
       </button>
-      <div className="relative">
-        <button
-          onClick={() => handleDownload('md')}
-          disabled={downloading}
-          className="p-1.5 rounded-lg border border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] transition-all cursor-pointer disabled:opacity-50 min-h-[36px] min-w-[36px] flex items-center justify-center"
-          title="Download as Markdown"
-        >
-          <FileText size={14} />
-        </button>
-      </div>
+      <AnimatePresence>
+        {showMenu && (
+          <>
+            <div className="fixed inset-0 z-30" onClick={() => setShowMenu(false)} />
+            <motion.div
+              initial={{ opacity: 0, y: 4, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 4, scale: 0.95 }}
+              transition={{ duration: 0.12 }}
+              className="absolute bottom-full right-0 mb-1 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-lg z-40 p-1 min-w-[120px]"
+            >
+              <button
+                onClick={() => handleDownload('pdf')}
+                className="w-full flex items-center gap-2 px-2.5 py-1.5 text-[11px] font-medium text-[var(--text)] hover:bg-[var(--surface-dim)] rounded-lg transition-colors cursor-pointer text-left"
+              >
+                <FileDown size={12} className="text-red-400 shrink-0" />
+                PDF Document
+              </button>
+              <button
+                onClick={() => handleDownload('md')}
+                className="w-full flex items-center gap-2 px-2.5 py-1.5 text-[11px] font-medium text-[var(--text)] hover:bg-[var(--surface-dim)] rounded-lg transition-colors cursor-pointer text-left"
+              >
+                <FileText size={12} className="text-[var(--primary)] shrink-0" />
+                Markdown
+              </button>
+              <button
+                onClick={() => handleDownload('txt')}
+                className="w-full flex items-center gap-2 px-2.5 py-1.5 text-[11px] font-medium text-[var(--text)] hover:bg-[var(--surface-dim)] rounded-lg transition-colors cursor-pointer text-left"
+              >
+                <FileText size={12} className="text-[var(--text-muted)] shrink-0" />
+                Plain Text
+              </button>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
@@ -1070,10 +1098,10 @@ export default function ClinicalAssistantScreen() {
               <span className="hidden md:inline">New Session</span>
             </button>
 
-            {/* Delete Current Conversation - hidden on mobile */}
+            {/* Delete Current Conversation */}
             <button
               onClick={handleDeleteCurrentSession}
-              className="hidden sm:flex p-2 sm:px-3 sm:py-2 rounded-xl border border-[var(--border)] hover:border-red-400/40 bg-[var(--bg)]/40 hover:bg-red-500/10 text-[var(--text-muted)] hover:text-red-500 transition-all cursor-pointer"
+              className="p-2 sm:px-3 sm:py-2 rounded-xl border border-[var(--border)] hover:border-red-400/40 bg-[var(--bg)]/40 hover:bg-red-500/10 text-[var(--text-muted)] hover:text-red-500 transition-all cursor-pointer"
               title="Delete current conversation"
             >
               <Trash2 size={14} />
@@ -1315,7 +1343,7 @@ export default function ClinicalAssistantScreen() {
                             <CopyButton text={msg.content} />
                             <DownloadButton 
                               content={msg.content} 
-                              filename={`clinova-consultation-${Date.now()}`}
+                              filename={`clinova-response-${new Date().toISOString().slice(0,10)}.md`}
                             />
                           </div>
                         )}

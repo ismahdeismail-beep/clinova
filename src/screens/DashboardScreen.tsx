@@ -33,6 +33,7 @@ import { useDebounce } from '../hooks/useDebounce'
 import { BUNDLED_DRUGS } from '../data/drugIndexData'
 import { supabase } from '../lib/supabase'
 import { INTEGRATED_UNITS_MAP } from '../data/curriculum'
+import { getAllCarePlanDiseases } from '../data/carePlanData'
 
 const STUDY_TRACKS: Record<
   string,
@@ -301,7 +302,7 @@ export default function DashboardScreen() {
         {[
           { icon: Pill, label: 'Drug Monographs', value: String(drugCount), color: 'text-blue-600', bg: 'bg-blue-500/10' },
           { icon: BarChart3, label: 'Clinical Cases', value: caseCount !== null ? String(caseCount) : '…', color: 'text-emerald-600', bg: 'bg-emerald-500/10' },
-          { icon: ClipboardCheck, label: 'Care Plans', value: '10', color: 'text-teal-600', bg: 'bg-teal-500/10' },
+          { icon: ClipboardCheck, label: 'Care Plans', value: String(getAllCarePlanDiseases().length), color: 'text-teal-600', bg: 'bg-teal-500/10' },
           { icon: TrendingUp, label: 'Therapeutic Areas', value: String(therapeuticAreaCount), color: 'text-rose-600', bg: 'bg-rose-500/10' },
         ].map((stat, idx) => {
           const Icon = stat.icon

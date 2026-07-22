@@ -23,6 +23,7 @@ import {
   ScrollText,
   TrendingUp,
   Clock,
+  ClipboardCheck,
   X,
   ChevronLeft,
 } from 'lucide-react'
@@ -129,6 +130,13 @@ const QUICK_LINKS = [
     label: 'Exam',
     desc: 'Board exam papers & practice prep',
     gradient: 'from-violet-500 to-violet-600',
+  },
+  {
+    to: '/care-plan',
+    icon: ClipboardCheck,
+    label: 'Care Plan',
+    desc: 'Nursing care plans & management for all clinical areas',
+    gradient: 'from-teal-500 to-teal-600',
   },
   {
     to: '/drugs',

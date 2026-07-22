@@ -192,7 +192,7 @@ export default function EducationHubScreen() {
       return;
     }
     if (mod.id === 'board_exam') {
-      navigate('/exam/board-exam');
+      navigate('/exam');
       return;
     }
     setSelectedModule(mod);

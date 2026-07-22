@@ -1,6 +1,6 @@
 import {
   BookOpen, FolderOpen, Pill,
-  GraduationCap, ClipboardList, ClipboardCheck,
+  GraduationCap, ClipboardList,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -29,9 +29,4 @@ export const NAV_GROUPS: NavGroup[] = [
       { to: '/assistant', label: 'Clinova Support', icon: ClipboardList },
     ],
   },
-]
-
-export const EXAM_SUB_ITEMS: NavItem[] = [
-  { to: '/exam/board-exam', label: 'Board Exam', icon: GraduationCap },
-  { to: '/exam/prep', label: 'Exam Prep', icon: ClipboardCheck },
 ]

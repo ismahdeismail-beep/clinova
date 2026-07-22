@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate, Navigate } from 'react-router-dom';
 import {
   Menu, Search,
-  X, LogOut, ChevronDown,
+  X, LogOut,
 } from 'lucide-react';
 
 const DashboardScreen = React.lazy(() => import('./screens/DashboardScreen'));
@@ -12,6 +12,7 @@ const ClinicalAssistantScreen = React.lazy(() => import('./screens/ClinicalAssis
 const EducationHubScreen = React.lazy(() => import('./screens/EducationHubScreen'));
 const BoardExamScreen = React.lazy(() => import('./screens/BoardExamScreen'));
 const ExamPrepScreen = React.lazy(() => import('./screens/ExamPrepScreen'));
+const ExamScreen = React.lazy(() => import('./screens/ExamScreen'));
 const OnlineLibraryScreen = React.lazy(() => import('./screens/OnlineLibraryScreen'));
 const SettingsScreen = React.lazy(() => import('./screens/SettingsScreen'));
 const LoginScreen = React.lazy(() => import('./screens/LoginScreen'));
@@ -20,7 +21,7 @@ const LandingScreen = React.lazy(() => import('./screens/LandingScreen'));
 import { useAuth } from './contexts/AuthContext';
 import ClinovaLogo from './components/ClinovaLogo';
 import ThemeToggle from './components/ThemeToggle';
-import { NAV_GROUPS, EXAM_SUB_ITEMS, type NavGroup } from './data/navigationConfig';
+import { NAV_GROUPS, type NavGroup } from './data/navigationConfig';
 import { InstallPWA } from './components/InstallPWA';
 
 function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
@@ -88,13 +89,6 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
 function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolean) => void }) {
   const location = useLocation();
   const { userData, logout } = useAuth();
-  const [expandedGroup, setExpandedGroup] = useState<string | null>(() => {
-    // Auto-expand Exam group if user is on an exam route
-    if (location.pathname.startsWith('/exam')) return 'exam';
-    return null;
-  });
-
-  const isExamRoute = location.pathname.startsWith('/exam');
 
   return (
     <>
@@ -125,57 +119,7 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (v: boolea
                   location.pathname === item.to ||
                   (item.to !== '/' && location.pathname.startsWith(item.to + '/'))
                 const ItemIcon = item.icon
-                const isExamGroup = item.to === '/exam';
-                const isExpanded = isExamGroup && expandedGroup === 'exam';
 
-                // Render collapsible Exam group
-                if (isExamGroup) {
-                  return (
-                    <div key={item.to}>
-                      <button
-                        onClick={() => setExpandedGroup(isExpanded ? null : 'exam')}
-                        className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 cursor-pointer ${
-                          isExamRoute
-                            ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm'
-                            : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]'
-                        }`}
-                      >
-                        <div className={`flex items-center justify-center w-8 h-8 rounded-lg transition-colors ${
-                          isExamRoute ? 'bg-[var(--primary-foreground)]/20' : ''
-                        }`}>
-                          <ItemIcon size={18} className={isExamRoute ? 'text-[var(--primary-foreground)]' : ''} />
-                        </div>
-                        <span className="truncate flex-1 text-left">{item.label}</span>
-                        <ChevronDown size={14} className={`transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`} />
-                      </button>
-                      {isExpanded && (
-                        <div className="ml-4 mt-0.5 space-y-0.5 border-l-2 border-[var(--border)] pl-3">
-                          {EXAM_SUB_ITEMS.map((sub) => {
-                            const subActive = location.pathname === sub.to || location.pathname.startsWith(sub.to + '/');
-                            const SubIcon = sub.icon;
-                            return (
-                              <Link
-                                key={sub.to}
-                                to={sub.to}
-                                onClick={() => setIsOpen(false)}
-                                className={`flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-150 ${
-                                  subActive
-                                    ? 'bg-[var(--primary)]/10 text-[var(--primary)] font-bold'
-                                    : 'text-[var(--text-muted)] hover:bg-[var(--surface-dim)] hover:text-[var(--text)]'
-                                }`}
-                              >
-                                <SubIcon size={14} />
-                                <span className="truncate">{sub.label}</span>
-                              </Link>
-                            );
-                          })}
-                        </div>
-                      )}
-                    </div>
-                  );
-                }
-
-                // Normal nav item
                 return (
                   <Link
                     key={item.to}
@@ -296,7 +240,7 @@ function AppContent() {
               <Route path="/knowledge" element={<EducationHubScreen />} />
               <Route path="/knowledge/:moduleId" element={<EducationHubScreen />} />
               <Route path="/knowledge/:moduleId/:unitId" element={<EducationHubScreen />} />
-              <Route path="/exam" element={<ExamPrepScreen />} />
+              <Route path="/exam" element={<ExamScreen />} />
               <Route path="/exam/prep" element={<ExamPrepScreen />} />
               <Route path="/exam/board-exam" element={<BoardExamScreen />} />
               <Route path="/exam/board-exam/:setId" element={<BoardExamScreen />} />

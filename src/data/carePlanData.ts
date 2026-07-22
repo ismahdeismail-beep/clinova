@@ -1885,6 +1885,1298 @@ export const CARE_PLAN_DISEASES: Record<string, DiseaseCarePlan> = {
     },
     complications: ['Multi-organ failure', 'ARDS', 'DIC', 'Acute kidney injury', 'Hepatic dysfunction', 'Death'],
   },
+
+  // ═══════════════════════════════════════════════════════════════
+  // GASTROINTESTINAL
+  // ═══════════════════════════════════════════════════════════════
+
+  'Peptic Ulcer Disease': {
+    id: 'cp-pud',
+    disease: 'Peptic Ulcer Disease',
+    specialty: 'Gastrointestinal Care',
+    overview: 'Peptic ulcer disease (PUD) involves mucosal erosion in the stomach (gastric ulcer) or duodenum (duodenal ulcer) extending through the muscularis mucosae. Common presentations include epigastric pain, nausea, and haematemesis. H. pylori infection and NSAID use are the leading causes.',
+    pathophysiology: 'Imbalance between aggressive factors (acid, pepsin, H. pylori, NSAIDs) and protective factors (mucus, bicarbonate, prostaglandins, mucosal blood flow). H. pylori削弱sthe mucosal barrier via urease production and chronic inflammation. NSAIDs inhibit COX-1, reducing protective prostaglandin synthesis.',
+    commonCauses: ['H. pylori infection (60-70% of duodenal, 50-60% of gastric ulcers)', 'NSAID use', 'Smoking', 'Physiological stress (Curling/Cushing ulcers)', 'Zollinger-Ellison syndrome (rare)'],
+    riskFactors: ['H. pylori infection', 'NSAID / aspirin use', 'Smoking', 'Alcohol use', 'Older age', 'Family history of PUD', 'Corticosteroid use', 'Anticoagulant therapy'],
+    subjectiveData: [
+      'Burning or gnawing epigastric pain, often worse on empty stomach (duodenal) or after eating (gastric)',
+      'Nausea, bloating, early satiety',
+      'Haematemesis (vomiting bright red blood or coffee-ground material)',
+      'Melaena (black, tarry stools)',
+      'History of NSAID use or known H. pylori infection',
+    ],
+    objectiveData: [
+      'Epigastric tenderness on palpation',
+      'Tachycardia, hypotension if actively bleeding',
+      'Pallor if chronic blood loss / anaemia',
+      'Positive faecal occult blood test',
+      'H. pylori positive on urea breath test or stool antigen',
+      'Haemoglobin may be low (chronic blood loss)',
+    ],
+    nursingDiagnoses: [
+      {
+        id: 'nd-pud-1',
+        diagnosis: 'Acute Pain related to mucosal erosion and exposure to gastric acid as evidenced by verbal report of epigastric pain and guarding',
+        relatedFactors: ['Mucosal erosion by acid/pepsin', 'H. pylori-induced inflammation', 'NSAID-induced prostaglandin depletion'],
+        definingCharacteristics: ['Epigastric burning pain', 'Pain worsened by fasting or eating', 'Guarding of abdomen'],
+      },
+      {
+        id: 'nd-pud-2',
+        diagnosis: 'Risk for Deficient Fluid Volume related to active gastrointestinal bleeding',
+        relatedFactors: ['Haematemesis', 'Melaena', 'NPO status'],
+        definingCharacteristics: ['Coffee-ground emesis', 'Black tarry stools', 'Tachycardia', 'Orthostatic hypotension'],
+      },
+      {
+        id: 'nd-pud-3',
+        diagnosis: 'Imbalanced Nutrition: Less Than Body Requirements related to pain-induced anorexia and dietary restrictions',
+        definingCharacteristics: ['Weight loss', 'Poor appetite', 'Early satiety'],
+      },
+    ],
+    goals: [
+      {
+        id: 'g-pud-1',
+        shortTerm: 'Pain reduced to ≤ 3/10 within 24 hours of initiating PPI therapy and dietary modification.',
+        longTerm: 'Complete ulcer healing confirmed on endoscopy at 6–8 weeks. Pain-free between meals.',
+      },
+    ],
+    interventions: [
+      { id: 'i-pud-1', category: 'dependent', action: 'Administer proton pump inhibitor (PPI) as prescribed (e.g. omeprazole 40 mg OD for 8 weeks). Time doses 30 min before breakfast.', rationale: 'PPIs reduce gastric acid secretion, creating optimal pH for ulcer healing.', frequency: 'Once daily' },
+      { id: 'i-pud-2', category: 'dependent', action: 'Administer H. pylori eradication regimen if positive: PPI + clarithromycin + amoxicillin (or metronidazole) for 14 days (quadruple therapy if penicillin-allergic).', rationale: 'Eradication of H. pylori reduces ulcer recurrence from 60% to < 5%.', frequency: 'As prescribed (14-day course)' },
+      { id: 'i-pud-3', category: 'independent', action: 'Assess pain character, location, severity (0–10 scale), and relationship to meals. Document patterns.', rationale: 'Pain patterns help differentiate gastric vs duodenal ulcer and monitor treatment response.', frequency: 'Every shift' },
+      { id: 'i-pud-4', category: 'independent', action: 'Monitor for signs of bleeding: haematemesis, melaena, tachycardia, hypotension, falling haemoglobin. Weigh stools if visible blood.', rationale: 'PUD complicated by bleeding carries 5–10% mortality; early detection is critical.', frequency: 'Every shift; continuously if active bleed' },
+      { id: 'i-pud-5', category: 'independent', action: 'Provide small, frequent bland meals (6 per day). Avoid spicy, acidic, and fried foods. No alcohol or caffeine.', rationale: 'Small meals reduce gastric acid stimulation. Dietary modification reduces mucosal irritation.', frequency: 'With each meal' },
+      { id: 'i-pud-6', category: 'independent', action: 'Elevate head of bed 15–20 cm. Avoid lying flat within 2 hours of eating.', rationale: 'Reduces gastric acid reflux and aspiration risk, especially in gastric ulcer.', frequency: 'With meals and at night' },
+      { id: 'i-pud-7', category: 'independent', action: 'Encourage smoking cessation. Provide nicotine replacement or counselling referral.', rationale: 'Smoking delays ulcer healing, increases acid secretion, and doubles recurrence risk.', frequency: 'Daily' },
+      { id: 'i-pud-8', category: 'collaborative', action: 'Review all medications with medical team. Discontinue or substitute NSAIDs. If NSAID essential, co-prescribe PPI.', rationale: 'NSAIDs are the second most common cause of PUD and significantly impair healing.', frequency: 'On admission and with any medication change' },
+    ],
+    evaluation: [
+      { id: 'e-pud-1', expected: 'Epigastric pain ≤ 3/10 or resolved within 48–72 hours of PPI initiation.', status: 'met' },
+      { id: 'e-pud-2', expected: 'No signs of GI bleeding (stable vitals, Hb stable, no haematemesis/melaena).', status: 'met' },
+      { id: 'e-pud-3', expected: 'Tolerating small frequent meals without exacerbation of pain.', status: 'met' },
+    ],
+    patientEducation: [
+      {
+        topic: 'Medication Adherence',
+        keyPoints: [
+          'Take your PPI 30 minutes before breakfast — do not skip doses.',
+          'Complete the full 14-day course of H. pylori antibiotics even if you feel better.',
+          'Avoid NSAIDs (ibuprofen, diclofenac) unless your doctor says it is safe.',
+          'If you need pain relief, use paracetamol instead.',
+        ],
+        method: 'Verbal + written leaflet',
+      },
+      {
+        topic: 'Diet and Lifestyle',
+        keyPoints: [
+          'Eat small, frequent meals. Avoid spicy, acidic, and fried foods.',
+          'Do not drink alcohol — it delays healing and increases bleeding risk.',
+          'Stop smoking — it doubles the chance of ulcer recurrence.',
+          'Manage stress through relaxation techniques.',
+        ],
+      },
+    ],
+    dischargePlanning: {
+      checklist: [
+        'PPI prescription dispensed with clear instructions',
+        'H. pylori eradication regimen provided (if positive)',
+        'Follow-up urea breath test scheduled at 4 weeks post-treatment',
+        'Smoking cessation referral (if applicable)',
+        'No NSAIDs without medical advice',
+        'Dietary advice provided',
+      ],
+      followUp: 'GP within 2–4 weeks. Repeat H. pylori testing at 4 weeks post-eradication. Endoscopy at 6–8 weeks if gastric ulcer (to confirm healing and exclude malignancy).',
+      referrals: ['Gastroenterology (if complicated or gastric ulcer)', 'Smoking Cessation', 'Dietitian'],
+      warningSigns: [
+        'Vomiting blood or coffee-ground material',
+        'Black, tarry, or bloody stools',
+        'Severe worsening abdominal pain',
+        'Feeling faint, dizzy, or very weak',
+        'Unexplained weight loss',
+      ],
+    },
+    complications: ['GI haemorrhage (15–20%)', 'Perforation', 'Gastric outlet obstruction', 'Penetration into adjacent organ', 'Mortality 5–10% with complicated bleeding'],
+  },
+
+  'Cirrhosis': {
+    id: 'cp-cirrhosis',
+    disease: 'Cirrhosis',
+    specialty: 'Gastrointestinal Care',
+    overview: 'Cirrhosis is irreversible fibrosis of the liver leading to disrupted architecture, portal hypertension, and progressive hepatic insufficiency. Common complications include ascites, variceal bleeding, hepatic encephalopathy, and hepatorenal syndrome.',
+    pathophysiology: 'Chronic liver injury (alcohol, viral hepatitis, NASH) → hepatocyte death → fibrosis → regenerative nodules → distorted architecture → portal hypertension → decreased synthetic function (albumin, clotting factors) and detoxification (ammonia).',
+    commonCauses: ['Chronic alcohol use (most common in Kenya)', 'Chronic hepatitis B / C', 'Non-alcoholic steatohepatitis (NASH)', 'Autoimmune hepatitis', 'Primary biliary cholangitis'],
+    riskFactors: ['Chronic alcohol use', 'Hepatitis B / C infection', 'Obesity / metabolic syndrome', 'Family history of liver disease', 'IV drug use', 'Tattoos / body piercings'],
+    subjectiveData: [
+      'Fatigue, weakness, anorexia',
+      'Abdominal distension (ascites)',
+      'Easy bruising or bleeding',
+      'Confusion, difficulty concentrating (encephalopathy)',
+      'Pruritus',
+      'Jaundice (yellow skin/eyes)',
+      'History of alcohol use or viral hepatitis',
+    ],
+    objectiveData: [
+      'Jaundice, spider naevi, palmar erythema',
+      'Ascites (shifting dullness, fluid thrill)',
+      'Hepatosplenomegaly or shrunken liver',
+      'Asterixis (flapping tremour) in encephalopathy',
+      'Caput medusae (distended periumbilical veins)',
+      'Elevated bilirubin, INR; low albumin, platelets',
+      'Low serum sodium (dilutional hyponatraemia)',
+    ],
+    nursingDiagnoses: [
+      {
+        id: 'nd-cir-1',
+        diagnosis: 'Excess Fluid Volume related to portal hypertension and decreased albumin synthesis as evidenced by ascites and peripheral oedema',
+        relatedFactors: ['Portal hypertension', 'Hypoalbuminaemia', 'Sodium and water retention'],
+        definingCharacteristics: ['Abdominal distension', 'Peripheral oedema', 'Weight gain', 'Shifting dullness positive'],
+      },
+      {
+        id: 'nd-cir-2',
+        diagnosis: 'Impaired Mental Status related to hepatic encephalopathy and elevated serum ammonia levels',
+        relatedFactors: ['Inability to convert ammonia to urea', 'Portosystemic shunting'],
+        definingCharacteristics: ['Confusion', 'Asterixis', 'Altered sleep-wake cycle', 'Coarse flapping tremour'],
+      },
+      {
+        id: 'nd-cir-3',
+        diagnosis: 'Risk for Bleeding related to coagulopathy and portal hypertension',
+        relatedFactors: ['Decreased clotting factor synthesis', 'Thrombocytopenia', 'Oesophageal varices'],
+        definingCharacteristics: ['Elevated INR', 'Low platelets', 'Easy bruising'],
+      },
+    ],
+    goals: [
+      {
+        id: 'g-cir-1',
+        shortTerm: 'Abdominal girth reduced by ≥ 2 cm within 48 hours of diuretic therapy. No respiratory compromise from ascites.',
+        longTerm: 'Stable fluid balance without recurrent tense ascites. INR < 1.5. No variceal bleeding episode.',
+      },
+    ],
+    interventions: [
+      { id: 'i-cir-1', category: 'independent', action: 'Monitor fluid balance: daily weight, strict intake/output, abdominal girth measurement at same level and time.', rationale: 'Accurate fluid balance guides diuretic dosing and detects fluid overload early.', frequency: 'Every shift (weight daily before breakfast)' },
+      { id: 'i-cir-2', category: 'dependent', action: 'Administer spironolactone (100 mg OD) ± furosemide (40 mg OD) as prescribed. Monitor electrolytes (K+, Na+, creatinine).', rationale: 'Diuretics mobilise ascitic fluid. Spironolactone counters aldosterone-mediated sodium retention. K+ monitoring prevents hyperkalaemia.', frequency: 'Once daily' },
+      { id: 'i-cir-3', category: 'independent', action: 'Assess mental status every shift: orientation, asterixis, ability to follow commands. Use West Haven scale for encephalopathy grading.', rationale: 'Hepatic encephalopathy may progress rapidly. Early detection allows timely lactulose adjustment.', frequency: 'Every shift' },
+      { id: 'i-cir-4', category: 'dependent', action: 'Administer lactulose (15–30 mL TDS) titrated to 2–3 soft stools per day. Add rifaximin 550 mg BD if recurrent encephalopathy.', rationale: 'Lactulose acidifies the colon, converting NH3 to NH4+ (non-absorbable). Rifaximin reduces ammonia-producing bacteria.', frequency: 'TDS (lactulose); BD (rifaximin)' },
+      { id: 'i-cir-5', category: 'independent', action: 'Restrict sodium to < 2 g/day. Restrict fluid to 1–1.5 L/day if hyponatraemic (Na+ < 130). Provide dietitian referral.', rationale: 'Sodium restriction is the cornerstone of ascites management. Fluid restriction prevents dilutional hyponatraemia.', frequency: 'Ongoing' },
+      { id: 'i-cir-6', category: 'independent', action: 'Monitor for signs of variceal bleeding: haematemesis, melaena, tachycardia, hypotension. Keep blood products on standby if high risk.', rationale: 'Variceal haemorrhage has 20–30% mortality. Early detection enables emergent endoscopy.', frequency: 'Every shift' },
+      { id: 'i-cir-7', category: 'collaborative', action: 'Administer antibiotic prophylaxis (norfloxacin or ciprofloxacin) if ascitic fluid PMN > 250/mm³ (spontaneous bacterial peritonitis).', rationale: 'SBP carries 20% in-hospital mortality. Empiric antibiotics pending culture results are life-saving.', frequency: 'As prescribed' },
+      { id: 'i-cir-8', category: 'independent', action: 'Provide meticulous skin care. Avoid trauma. Use electric razor. Apply gentle pressure after venepuncture for ≥ 5 minutes.', rationale: 'Coagulopathy and thrombocytopenia increase bleeding risk from minor trauma.', frequency: 'Ongoing' },
+    ],
+    evaluation: [
+      { id: 'e-cir-1', expected: 'Abdominal girth reduced, weight trending down, no respiratory compromise.', status: 'met' },
+      { id: 'e-cir-2', expected: 'Mental status clear and oriented. Asterixis resolved. West Haven grade ≤ 1.', status: 'met' },
+      { id: 'e-cir-3', expected: 'No active bleeding. INR improving. Platelets stable.', status: 'met' },
+    ],
+    patientEducation: [
+      {
+        topic: 'Alcohol Cessation',
+        keyPoints: [
+          'Complete alcohol abstinence is essential — even small amounts accelerate liver damage.',
+          'Counselling and support groups can help.',
+          'Some medications can help with cravings — ask your doctor.',
+        ],
+        method: 'Verbal + written leaflet + referral',
+      },
+      {
+        topic: 'Ascites and Fluid Management',
+        keyPoints: [
+          'Weigh yourself every morning before breakfast. Report a gain of > 1 kg in 2 days.',
+          'Follow your low-salt diet strictly — avoid processed foods, canned soups, and salt.',
+          'Take your diuretics exactly as prescribed.',
+          'Report increased abdominal swelling, difficulty breathing, or ankle swelling.',
+        ],
+      },
+    ],
+    dischargePlanning: {
+      checklist: [
+        'Diuretic prescriptions with clear dosing schedule',
+        'Lactulose prescription with titration instructions',
+        'Low-sodium diet plan provided',
+        'Alcohol cessation support arranged',
+        'Daily weight monitoring equipment provided',
+        'Follow-up bloods (LFTs, U&E, INR) scheduled at 1 week',
+        'Contact details for liver clinic',
+      ],
+      followUp: 'Liver clinic within 1–2 weeks. Repeat bloods at 1 week. Endoscopy for variceal screening if not done. Hepatology referral for transplant assessment if decompensated.',
+      referrals: ['Hepatology', 'Alcohol Cessation Service', 'Dietitian', 'Social Work', 'Palliative Care (if end-stage)'],
+      warningSigns: [
+        'Vomiting blood or passing black stools',
+        'Sudden increase in abdominal swelling',
+        'Confusion, drowsiness, or difficulty waking',
+        'Fever or abdominal pain (possible SBP)',
+        'Severe ankle swelling or breathlessness',
+        'Yellowing of skin or eyes worsening',
+      ],
+    },
+    complications: ['Variceal haemorrhage', 'Spontaneous bacterial peritonitis', 'Hepatorenal syndrome', 'Hepatocellular carcinoma', 'Hepatic encephalopathy', 'Death (5-year survival 35–50%)'],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // RENAL
+  // ═══════════════════════════════════════════════════════════════
+
+  'Acute Kidney Injury': {
+    id: 'cp-aki',
+    disease: 'Acute Kidney Injury',
+    specialty: 'Renal & Electrolyte Care',
+    overview: 'Acute kidney injury (AKI) is a rapid decline in renal function over hours to days, manifesting as rising serum creatinine and/or reduced urine output. It is classified by KDIGO stages and may be prerenal, intrinsic renal, or postrenal in origin.',
+    pathophysiology: 'Prerenal: reduced renal perfusion (dehydration, heart failure, sepsis). Intrinsic: direct tubular damage (ATN from ischaemia/toxins), glomerulonephritis, interstitial nephritis. Postrenal: urinary obstruction. Most cases (60–70%) are prerenal and reversible if treated promptly.',
+    commonCauses: ['Sepsis (most common cause of AKI in hospital)', 'Dehydration / hypovolaemia', 'Nephrotoxic drugs (NSAIDs, aminoglycosides, contrast)', 'Urinary obstruction (BPH, stones)', 'Acute tubular necrosis', 'Heart failure'],
+    riskFactors: ['Advanced age', 'Chronic kidney disease', 'Diabetes mellitus', 'Heart failure', 'Sepsis', 'Nephrotoxic medications', 'Dehydration', 'Major surgery'],
+    subjectiveData: [
+      'Reduced urine output (oliguria < 400 mL/day or anuria < 100 mL/day)',
+      'Fatigue, lethargy, confusion',
+      'Nausea, vomiting, anorexia',
+      'Shortness of breath (fluid overload)',
+      'Pruritus',
+      'Flank pain (obstructive causes)',
+    ],
+    objectiveData: [
+      'Rising serum creatinine (≥ 26.5 µmol/L within 48 hours or ≥ 1.5× baseline)',
+      'Oliguria or anuria',
+      'Fluid overload: peripheral oedema, pulmonary crackles, raised JVP',
+      'Hyperkalaemia (ECG changes: peaked T waves, widened QRS)',
+      'Metabolic acidosis (low bicarbonate, high anion gap)',
+      'Uraemic signs: asterixis, pericardial friction rub',
+    ],
+    nursingDiagnoses: [
+      {
+        id: 'nd-aki-1',
+        diagnosis: 'Risk for Impaired Urinary Elimination related to acute tubular necrosis and reduced renal perfusion',
+        definingCharacteristics: ['Oliguria', 'Rising creatinine', 'Elevated urea'],
+      },
+      {
+        id: 'nd-aki-2',
+        diagnosis: 'Excess Fluid Volume related to decreased glomerular filtration as evidenced by peripheral oedema and pulmonary crackles',
+        relatedFactors: ['Decreased urine output', 'IV fluid overload', 'Impaired sodium excretion'],
+        definingCharacteristics: ['Weight gain', 'Peripheral oedema', 'Dyspnoea', 'Crackles on auscultation'],
+      },
+      {
+        id: 'nd-aki-3',
+        diagnosis: 'Risk for Cardiac Arrhythmia related to hyperkalaemia',
+        definingCharacteristics: ['K+ > 5.5 mmol/L', 'Peaked T waves on ECG', 'Muscle weakness'],
+      },
+    ],
+    goals: [
+      {
+        id: 'g-aki-1',
+        shortTerm: 'Urine output ≥ 0.5 mL/kg/hr maintained. K+ < 5.5 mmol/L. No fluid overload symptoms within 24 hours.',
+        longTerm: 'Creatinine returns to baseline. Independence from renal replacement therapy. No residual renal impairment.',
+      },
+    ],
+    interventions: [
+      { id: 'i-aki-1', category: 'independent', action: 'Monitor strict intake and output hourly. Weigh patient daily. Measure urine output via indwelling catheter if oliguric.', rationale: 'Accurate I&O guides fluid management and detects worsening renal function early.', frequency: 'Hourly (I&O); daily (weight)' },
+      { id: 'i-aki-2', category: 'dependent', action: 'Administer IV fluids (0.9% NaCl or Plasmalyte) for prerenal AKI. Restrict fluids if overload. Target urine output ≥ 0.5 mL/kg/hr.', rationale: 'Volume resuscitation corrects prerenal causes. Fluid restriction prevents pulmonary oedema in established AKI.', frequency: 'As prescribed' },
+      { id: 'i-aki-3', category: 'dependent', action: 'Manage hyperkalaemia: calcium gluconate 10% IV (cardioprotection), insulin/dextrose IV, salbutamol nebs, sodium zirconium cyclosilicate or calcium resonium PO.', rationale: 'Severe hyperkalaemia (K+ > 6.5 or ECG changes) is a medical emergency requiring immediate treatment.', frequency: 'Emergency; then as prescribed' },
+      { id: 'i-aki-4', category: 'independent', action: 'Withhold nephrotoxic drugs: NSAIDs, aminoglycosides, ACE inhibitors/ARBs (in acute phase), IV contrast. Review all medications with pharmacy.', rationale: 'Nephrotoxins worsen AKI and delay recovery. Drug review is a key nursing intervention.', frequency: 'On admission and daily review' },
+      { id: 'i-aki-5', category: 'collaborative', action: 'Monitor for referral to nephrology for renal replacement therapy (RRT) if: refractory hyperkalaemia, severe acidosis, fluid overload unresponsive to diuretics, or uraemic symptoms.', rationale: 'RRT is life-saving when conservative measures fail. Early nephrology involvement improves outcomes.', frequency: 'As needed' },
+      { id: 'i-aki-6', category: 'independent', action: 'Monitor electrolytes (K+, Na+, Ca2+, PO4) and ABGs every 6–12 hours. Report K+ > 5.5 or pH < 7.2 immediately.', rationale: 'Electrolyte and acid-base disturbances in AKI can be fatal if not corrected promptly.', frequency: 'Every 6–12 hours' },
+    ],
+    evaluation: [
+      { id: 'e-aki-1', expected: 'Urine output ≥ 0.5 mL/kg/hr. Creatinine stable or improving. K+ within normal range.', status: 'met' },
+      { id: 'e-aki-2', expected: 'No fluid overload (clear lung fields, no peripheral oedema, stable weight).', status: 'met' },
+    ],
+    patientEducation: [
+      {
+        topic: 'Kidney Recovery',
+        keyPoints: [
+          'AKI is often reversible if the cause is treated early.',
+          'Drink adequate fluids (unless your doctor restricts them).',
+          'Avoid NSAIDs (ibuprofen, diclofenac) and check with your pharmacist before taking any new medicines.',
+          'Report any reduction in urine output immediately.',
+        ],
+        method: 'Verbal + written leaflet',
+      },
+    ],
+    dischargePlanning: {
+      checklist: [
+        'Renal function tests scheduled at 1 and 2 weeks post-discharge',
+        'Nephrotoxic medications avoided or dose-adjusted',
+        'Fluid and dietary advice provided',
+        'Nephrology follow-up arranged if incomplete recovery',
+        'Medication reconciliation completed',
+      ],
+      followUp: 'Nephrology or GP within 1 week. Repeat U&E at 1 and 2 weeks. Renal ultrasound if obstruction suspected. Monitor for CKD development at 3 months.',
+      referrals: ['Nephrology', 'Pharmacy (medication review)', 'Dietitian (renal diet if persistent impairment)'],
+      warningSigns: [
+        'Reduced urine output',
+        'Severe fatigue or confusion',
+        'Swelling of legs or breathlessness',
+        'Nausea and vomiting',
+        'Muscle cramps or twitching',
+      ],
+    },
+    complications: ['Progression to CKD', 'Refractory hyperkalaemia', 'Pulmonary oedema', 'Uraemic encephalopathy', 'Pericarditis', 'Need for dialysis', 'Death'],
+  },
+
+  'Chronic Kidney Disease': {
+    id: 'cp-ckd',
+    disease: 'Chronic Kidney Disease',
+    specialty: 'Renal & Electrolyte Care',
+    overview: 'Chronic kidney disease (CKD) is a progressive, irreversible loss of renal function lasting > 3 months, classified in 5 stages by GFR. Management focuses on slowing progression, managing complications, and preparing for renal replacement therapy (RRT) when indicated.',
+    pathophysiology: 'Progressive nephron loss → compensatory hyperfiltration of remaining nephrons → glomerulosclerosis → further nephron loss (vicious cycle). Leads to retention of uraemic toxins, fluid overload, electrolyte imbalances, metabolic acidosis, and secondary hyperparathyroidism.',
+    commonCauses: ['Diabetic nephropathy (most common globally)', 'Hypertensive nephrosclerosis', 'Chronic glomerulonephritis', 'Polycystic kidney disease', 'Obstructive uropathy'],
+    riskFactors: ['Diabetes mellitus', 'Hypertension', 'Obesity', 'Smoking', 'Family history of kidney disease', 'Age > 60', 'ACE inhibitor/ARB use (may slow progression)', 'Low birth weight'],
+    subjectiveData: [
+      'Fatigue, reduced energy (anaemia)',
+      'Nocturia, polyuria (early) → oliguria (late)',
+      'Pruritus (uraemic toxin accumulation)',
+      'Anorexia, nausea, metallic taste',
+      'Peripheral oedema, dyspnoea on exertion',
+      'Bone pain (renal osteodystrophy)',
+      'Difficulty concentrating, restless legs',
+    ],
+    objectiveData: [
+      'GFR < 60 mL/min/1.73m² (stages 3–5)',
+      'Elevated creatinine, urea',
+      'Proteinuria (ACR > 3 mg/mmol)',
+      'Anaemia (low Hb, low reticulocytes)',
+      'Hyperkalaemia, hyperphosphataemia, hypocalcaemia',
+      'Metabolic acidosis',
+      'Renal osteodystrophy on X-ray (late)',
+      'Small, echogenic kidneys on ultrasound',
+    ],
+    nursingDiagnoses: [
+      {
+        id: 'nd-ckd-1',
+        diagnosis: 'Fatigue related to anaemia and uraemic toxin accumulation as evidenced by reduced activity tolerance and verbal report of tiredness',
+        relatedFactors: ['Anaemia (decreased erythropoietin)', 'Uraemic toxins', 'Sleep disturbance'],
+        definingCharacteristics: ['Reduced activity tolerance', 'Pallor', 'Lethargy'],
+      },
+      {
+        id: 'nd-ckd-2',
+        diagnosis: 'Imbalanced Nutrition: Less Than Body Requirements related to uraemic anorexia, nausea, and dietary restrictions',
+        definingCharacteristics: ['Weight loss', 'Anorexia', 'Nausea', 'Altered taste'],
+      },
+      {
+        id: 'nd-ckd-3',
+        diagnosis: 'Risk for Decreased Cardiac Output related to fluid overload and hyperkalaemia',
+        definingCharacteristics: ['Peripheral oedema', 'Elevated K+', 'BP fluctuations'],
+      },
+    ],
+    goals: [
+      {
+        id: 'g-ckd-1',
+        shortTerm: 'Hb ≥ 100 g/L with ESA therapy. Electrolytes within acceptable range. Fluid balance maintained.',
+        longTerm: 'GFR decline slowed (stable creatinine). Patient prepared for and transitioned to RRT if needed. Quality of life maintained.',
+      },
+    ],
+    interventions: [
+      { id: 'i-ckd-1', category: 'dependent', action: 'Administer erythropoiesis-stimulating agent (ESA) — darbepoetin or epoetin — as prescribed. Monitor Hb target 100–120 g/L. Administer IV iron if ferritin < 200 µg/L.', rationale: 'Anaemia is the main cause of fatigue in CKD. ESAs stimulate red cell production. Iron is needed for ESA efficacy.', frequency: 'Weekly to monthly per protocol' },
+      { id: 'i-ckd-2', category: 'independent', action: 'Monitor fluid status: daily weight, I&O, oedema assessment, lung sounds. Restrict fluids if oliguric. Low-sodium diet (< 2 g/day).', rationale: 'Fluid overload is a major cause of morbidity in CKD. Sodium restriction reduces thirst and fluid retention.', frequency: 'Daily weight; every shift (oedema)' },
+      { id: 'i-ckd-3', category: 'dependent', action: 'Administer phosphate binders (calcium acetate, sevelamer, or lanthanum) with meals. Administer calcitriol or vitamin D analogues as prescribed.', rationale: 'Phosphate binders prevent hyperphosphataemia and secondary hyperparathyroidism. Vitamin D manages bone disease.', frequency: 'With each meal' },
+      { id: 'i-ckd-4', category: 'independent', action: 'Monitor potassium intake. Avoid high-K+ foods (bananas, oranges, tomatoes, dried fruit). Teach patient to read food labels.', rationale: 'Hyperkalaemia is life-threatening in CKD due to reduced renal K+ excretion.', frequency: 'Ongoing dietary education' },
+      { id: 'i-ckd-5', category: 'collaborative', action: 'Prepare patient for RRT if GFR < 15 mL/min or symptomatic uraemia: vascular access planning (AV fistula creation 6 months before dialysis), transplant workup, peritoneal dialysis education.', rationale: 'Timely RRT preparation reduces emergency dialysis and improves outcomes. AV fistula needs time to mature.', frequency: 'CKD stage 4 onwards' },
+      { id: 'i-ckd-6', category: 'independent', action: 'Administer sodium bicarbonate if serum HCO3- < 22 mmol/L. Target serum bicarbonate ≥ 22 mmol/L.', rationale: 'Metabolic acidosis accelerates muscle wasting and bone disease in CKD.', frequency: 'As prescribed' },
+    ],
+    evaluation: [
+      { id: 'e-ckd-1', expected: 'Hb ≥ 100 g/L with reduced fatigue. Electrolytes (K+, PO4, Ca2+) within acceptable range.', status: 'met' },
+      { id: 'e-ckd-2', expected: 'Patient demonstrates dietary knowledge. Fluid balance maintained. GFR decline slowed.', status: 'met' },
+    ],
+    patientEducation: [
+      {
+        topic: 'CKD Self-Management',
+        keyPoints: [
+          'CKD is chronic but you can slow it down with good control of diabetes, BP, and diet.',
+          'Follow your low-salt, low-potassium diet. A dietitian will help you.',
+          'Take your phosphate binders with every meal — they work by binding phosphorus in food.',
+          'Weigh yourself daily. Report sudden weight gain (> 1 kg/day or > 2 kg/week).',
+          'Avoid NSAIDs and check with your pharmacist before taking new medications.',
+        ],
+        method: 'Verbal + written + dietitian session',
+      },
+      {
+        topic: 'Preparing for Dialysis',
+        keyPoints: [
+          'If your kidneys continue to lose function, dialysis may become necessary.',
+          'An AV fistula (connection between an artery and vein in your arm) is the best access for haemodialysis — it should be created months before you need dialysis.',
+          'Peritoneal dialysis can be done at home.',
+          'Kidney transplant is the best option if you are eligible.',
+        ],
+      },
+    ],
+    dischargePlanning: {
+      checklist: [
+        'ESA and phosphate binder prescriptions with clear instructions',
+        'Dietitian referral completed',
+        'AV fistula surgical referral (if GFR < 20)',
+        'Bloods scheduled at 1 month (U&E, Ca2+, PO4, PTH, Hb)',
+        'BP monitoring at home arranged',
+        'Patient education on fluid and dietary restrictions',
+      ],
+      followUp: 'Nephrology every 1–3 months (stage 3–4) or every 1–4 weeks (stage 5). Bloods every 1–3 months. Renal ultrasound if cause unknown. Transplant assessment if eligible.',
+      referrals: ['Nephrology', 'Dietitian', 'Vascular Surgery (AV fistula)', 'Transplant Centre', 'Palliative Care (if conservative pathway)'],
+      warningSigns: [
+        'Severe fatigue or drowsiness',
+        'Very reduced or absent urine output',
+        'Severe nausea and vomiting',
+        'Swelling of legs or difficulty breathing',
+        'Muscle twitching or seizures',
+        'Chest pain',
+      ],
+    },
+    complications: ['Cardiovascular disease (leading cause of death in CKD)', 'Hyperkalaemia', 'Metabolic acidosis', 'Renal osteodystrophy', 'Anaemia', 'Uraemic pericarditis', 'Progression to ESRD'],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // HAEMATOLOGY & ONCOLOGY
+  // ═══════════════════════════════════════════════════════════════
+
+  'Sickle Cell Disease': {
+    id: 'cp-scd',
+    disease: 'Sickle Cell Disease',
+    specialty: 'Haematology & Oncology Care',
+    overview: 'Sickle cell disease (SCD) is an inherited haemoglobinopathy where abnormal haemoglobin S (HbS) polymerises under deoxygenation, causing red blood cells to sickle. This leads to chronic haemolytic anaemia, vaso-occlusive crises, organ damage, and increased infection risk. SCD is highly prevalent in Kenya and sub-Saharan Africa.',
+    pathophysiology: 'HbS polymerisation under low O2 → rigid sickle-shaped RBCs → microvascular occlusion → tissue ischaemia and infarction. Chronic haemolysis releases free Hb, scavenging nitric oxide → endothelial dysfunction. Vaso-occlusion causes the hallmark painful crises and progressive organ damage (spleen, kidneys, lungs, brain).',
+    commonCauses: ['Inherited (autosomal recessive) — HbSS is the most severe form', 'HbSC, HbSβ-thalassaemia (intermediate severity)', 'High prevalence in malaria-endemic regions (heterozygote advantage)'],
+    riskFactors: ['HbSS genotype (most severe)', 'Dehydration', 'Hypoxia (altitude, anaesthesia, sleep apnoea)', 'Infection', 'Cold exposure', 'Strenuous exercise', 'Acidosis', 'Pregnancy'],
+    subjectiveData: [
+      'Severe bone/joint/chest pain (vaso-occlusive crisis)',
+      'Fever (infection or sequestration)',
+      'Fatigue, pallor (chronic anaemia)',
+      'Abdominal pain (splenic sequestration, hepatic crisis)',
+      'Headache, visual changes, seizures (stroke)',
+      'Priapism (in males)',
+      'History of previous crises and transfusions',
+    ],
+    objectiveData: [
+      'Pallor, jaundice (chronic haemolysis)',
+      'Tachycardia, flow murmur (anaemia)',
+      'Fever ≥ 38°C (infection)',
+      'Splenomegaly (children) or autosplenectomy (adults)',
+      'Hb 50–90 g/L (baseline varies)',
+      'Raised reticulocytes, LDH, unconjugated bilirubin',
+      'Low Hb electrophoresis (HbS predominant)',
+      'Dactylitis, joint swelling in children',
+    ],
+    nursingDiagnoses: [
+      {
+        id: 'nd-scd-1',
+        diagnosis: 'Acute Pain related to vaso-occlusion and tissue ischaemia as evidenced by severe pain report and guarding',
+        relatedFactors: ['HbS polymerisation', 'Microvascular occlusion', 'Tissue hypoxia'],
+        definingCharacteristics: ['Severe bone/joint pain', 'Guarding', 'Restlessness', 'Tachycardia'],
+      },
+      {
+        id: 'nd-scd-2',
+        diagnosis: 'Risk for Infection related to functional asplenia and impaired immune response',
+        relatedFactors: ['Splenic infarction (autosplenectomy)', 'Impaired complement function'],
+        definingCharacteristics: ['Fever', 'Absent splenic palpation', 'Raised WCC'],
+      },
+      {
+        id: 'nd-scd-3',
+        diagnosis: 'Deficient Fluid Volume related to increased metabolic demands, fever, and decreased oral intake during crisis',
+        definingCharacteristics: ['Dehydration', 'Dry mucous membranes', 'Reduced urine output', 'Tachycardia'],
+      },
+    ],
+    goals: [
+      {
+        id: 'g-scd-1',
+        shortTerm: 'Pain controlled to ≤ 3/10 within 1–2 hours of analgesic administration. Adequate hydration maintained. Fever resolved within 48 hours if infectious.',
+        longTerm: 'Reduced crisis frequency. Hb stable at baseline. Patient demonstrates self-management skills for crisis prevention.',
+      },
+    ],
+    interventions: [
+      { id: 'i-scd-1', category: 'dependent', action: 'Administer analgesics per WHO ladder: paracetamol + NSAID (mild), codeine/tramadol (moderate), morphine PCA or titrated IV (severe). Reassess pain 30 min after each dose.', rationale: 'Prompt, adequate analgesia is the cornerstone of vaso-occlusive crisis management. Delayed treatment increases suffering and prolongs admission.', frequency: 'As prescribed; pain reassessment every 1–2 hours' },
+      { id: 'i-scd-2', category: 'independent', action: 'Aggressive hydration: IV 0.9% NaCl at 1.5–2× maintenance. Encourage oral fluids ≥ 3 L/day if able. Monitor I&O and urine specific gravity.', rationale: 'Dehydration worsens HbS polymerisation and sickling. Adequate hydration improves blood flow and reduces crisis severity.', frequency: 'Continuous IV; hourly intake monitoring' },
+      { id: 'i-scd-3', category: 'dependent', action: 'Administer exchange transfusion if: severe crisis unresponsive to analgesia, acute chest syndrome, stroke, or Hb > 150 g/L post-simple transfusion (to avoid hyperviscosity).', rationale: 'Exchange transfusion replaces sickle cells with normal HbS, improving oxygen delivery and reducing sickling.', frequency: 'As prescribed' },
+      { id: 'i-scd-4', category: 'independent', action: 'Administer pneumococcal and influenza vaccines. Administer prophylactic antibiotics (penicillin V 250 mg BD) from 2 months to at least 5 years. Folic acid 5 mg daily.', rationale: 'Infection is a leading cause of death in SCD, especially in children. Prophylactic penicillin reduces pneumococcal sepsis by 84%. Folic acid supports erythropoiesis.', frequency: 'Daily (penicillin, folic acid); per schedule (vaccines)' },
+      { id: 'i-scd-5', category: 'independent', action: 'Monitor for complications: fever > 38°C (emergent — blood cultures + empirical IV antibiotics within 1 hour), signs of stroke (neuro exam), acute chest syndrome (chest pain, fever, hypoxia, infiltrate on CXR), splenic sequestration (rapid splenomegaly, falling Hb).', rationale: 'These complications are life-threatening and require immediate intervention. Early detection saves lives.', frequency: 'Every shift; continuously during crisis' },
+      { id: 'i-scd-6', category: 'independent', action: 'Warm compresses to painful areas. Encourage gentle movement and repositioning every 2 hours. Avoid cold exposure.', rationale: 'Warmth promotes vasodilation and blood flow. Immobility increases stasis and worsening of vaso-occlusion.', frequency: 'Every 2 hours' },
+    ],
+    evaluation: [
+      { id: 'e-scd-1', expected: 'Pain ≤ 3/10 within 2 hours of analgesic. Patient comfortable and resting.', status: 'met' },
+      { id: 'e-scd-2', expected: 'Adequate hydration (urine output > 0.5 mL/kg/hr, moist mucous membranes). No fever.', status: 'met' },
+    ],
+    patientEducation: [
+      {
+        topic: 'Crisis Prevention',
+        keyPoints: [
+          'Drink plenty of fluids every day (at least 2–3 litres) — dehydration triggers crises.',
+          'Avoid extreme cold and hot temperatures.',
+          'Take your folic acid and penicillin every day.',
+          'Keep all vaccination appointments.',
+          'Avoid strenuous exercise but stay gently active.',
+          'Learn to recognise early signs of a crisis and seek treatment promptly.',
+        ],
+        method: 'Verbal + written + clinic follow-up',
+      },
+    ],
+    dischargePlanning: {
+      checklist: [
+        'Oral analgesics prescribed for breakthrough pain',
+        'Folic acid and penicillin prescriptions dispensed',
+        'Vaccination schedule reviewed and up to date',
+        'Hydration advice provided',
+        'Follow-up haematology appointment scheduled (2–4 weeks)',
+        'Crisis action plan documented',
+        'Genetic counselling referral (if family planning)',
+      ],
+      followUp: 'Haematology every 1–3 months. Hb electrophoresis every 6 months. Annual transcranial Doppler (children). Renal, cardiac, and ophthalmology screening annually.',
+      referrals: ['Haematology', 'Genetic Counselling', 'Psychology', 'Social Work', 'Pain Management Clinic'],
+      warningSigns: [
+        'Fever > 38°C (seek emergency care immediately)',
+        'Severe pain not responding to oral analgesics at home',
+        'Sudden weakness, numbness, or difficulty speaking (stroke)',
+        'Chest pain or difficulty breathing (acute chest syndrome)',
+        'Sudden increase in abdominal swelling (splenic sequestration)',
+        'Priapism lasting > 2 hours',
+      ],
+    },
+    complications: ['Acute chest syndrome', 'Stroke', 'Splenic sequestration', 'Aplastic crisis (parvovirus B19)', 'Osteomyelitis', 'Avascular necrosis', 'Renal papillary necrosis', 'Leg ulcers', 'Increased mortality'],
+  },
+
+  'Iron Deficiency Anaemia': {
+    id: 'cp-ida',
+    disease: 'Iron Deficiency Anaemia',
+    specialty: 'Haematology & Oncology Care',
+    overview: 'Iron deficiency anaemia (IDA) is the most common anaemia worldwide, caused by insufficient iron for haemoglobin synthesis. It results in microcytic, hypochromic red blood cells. In Kenya, causes include dietary insufficiency, hookworm infestation, menorrhagia, and chronic GI blood loss.',
+    pathophysiology: 'Depleted iron stores (ferritin < 15 µg/L) → insufficient iron for erythropoiesis → microcytic, hypochromic RBCs → reduced oxygen-carrying capacity → tissue hypoxia symptoms (fatigue, dyspnoea, tachycardia).',
+    commonCauses: ['Chronic menstrual blood loss (most common in women of reproductive age)', 'Dietary insufficiency (low bioavailability plant-based diets)', 'Hookworm and other intestinal parasites', 'Chronic GI blood loss (ulcers, cancer, NSAIDs)', 'Pregnancy and lactation', 'Growth in children and adolescents'],
+    riskFactors: ['Female sex (menstruation)', 'Pregnancy', 'Low socioeconomic status', 'Vegetarian/vegan diet', 'History of GI disease', 'Hookworm endemic areas', 'Frequent blood donation'],
+    subjectiveData: [
+      'Fatigue, weakness, reduced exercise tolerance',
+      'Dyspnoea on exertion',
+      'Dizziness, lightheadedness',
+      'Pica (craving non-food items: ice, clay, soil)',
+      'Angular cheilosis (sore corners of mouth)',
+      'Brittle nails, hair loss',
+      'Pica, restless legs',
+    ],
+    objectiveData: [
+      'Pallor (conjunctivae, nail beds, palmar creases)',
+      'Tachycardia, flow murmur',
+      'Koilonychia (spoon nails), angular stomatitis',
+      'Glossitis (smooth, red tongue)',
+      'Hb low, MCV low (< 80 fL), MCH low',
+      'Ferritin low (< 15 µg/L) — most specific test',
+      'Iron studies: low ferritin, low iron, high TIBC, low transferrin saturation',
+    ],
+    nursingDiagnoses: [
+      {
+        id: 'nd-ida-1',
+        diagnosis: 'Fatigue related to decreased oxygen-carrying capacity of blood as evidenced by reduced activity tolerance and verbal report of tiredness',
+        relatedFactors: ['Low haemoglobin', 'Tissue hypoxia', 'Nutritional deficiency'],
+        definingCharacteristics: ['Reduced activity tolerance', 'Pallor', 'Tachycardia on exertion'],
+      },
+      {
+        id: 'nd-ida-2',
+        diagnosis: 'Imbalanced Nutrition: Less Than Body Requirements related to inadequate iron intake and/or chronic blood loss',
+        definingCharacteristics: ['Pica', 'Poor dietary intake', 'Angular cheilosis', 'Low ferritin'],
+      },
+    ],
+    goals: [
+      {
+        id: 'g-ida-1',
+        shortTerm: 'Hb rising (≥ 10 g/L increase in 2–4 weeks). Reduced fatigue. No adverse effects from iron therapy.',
+        longTerm: 'Hb normalised (> 120 g/L women, > 130 g/L men). Ferritin > 50 µg/L. Underlying cause identified and treated.',
+      },
+    ],
+    interventions: [
+      { id: 'i-ida-1', category: 'dependent', action: 'Administer oral iron (ferrous sulfate 200 mg 2–3 times daily) on an empty stomach with vitamin C (orange juice) to enhance absorption. If intolerant, try every-other-day dosing.', rationale: 'Oral iron is first-line. Vitamin C enhances non-haeme iron absorption by 2–3×. Alternate-day dosing improves absorption and reduces GI side effects.', frequency: '2–3 times daily' },
+      { id: 'i-ida-2', category: 'independent', action: 'Educate patient on dietary iron sources: red meat, liver, beans, lentils, spinach, fortified cereals. Separate iron-rich foods from tea, coffee, and calcium (which inhibit absorption).', rationale: 'Dietary education addresses the root cause. Understanding food interactions maximises absorption.', frequency: 'On admission and at discharge' },
+      { id: 'i-ida-3', category: 'independent', action: 'Monitor for GI side effects of oral iron: constipation, nausea, dark stools (expected). Educate that dark stools are normal and not blood.', rationale: 'GI side effects are the main reason for non-compliance. Reassurance about dark stools prevents unnecessary concern.', frequency: 'Daily' },
+      { id: 'i-ida-4', category: 'collaborative', action: 'Investigate and treat underlying cause: menstrual history, stool for occult blood and oesophagostomiasis, GI endoscopy if indicated.', rationale: 'Treating the cause is essential — iron replacement alone is insufficient if blood loss continues.', frequency: 'As indicated' },
+      { id: 'i-ida-5', category: 'dependent', action: 'Administer IV iron (ferric carboxymaltose or iron sucrose) if oral iron is not tolerated, not absorbed, or rapid correction is needed (e.g. third trimester pregnancy, pre-surgery).', rationale: 'IV iron bypasses GI absorption issues and rapidly replenishes stores.', frequency: 'As prescribed' },
+    ],
+    evaluation: [
+      { id: 'e-ida-1', expected: 'Hb rising by ≥ 10 g/L in 2–4 weeks. Ferritin > 50 µg/L at 3 months.', status: 'met' },
+      { id: 'e-ida-2', expected: 'Patient reports improved energy and exercise tolerance. No GI intolerance.', status: 'met' },
+    ],
+    patientEducation: [
+      {
+        topic: 'Iron Replacement Therapy',
+        keyPoints: [
+          'Take iron tablets with vitamin C (orange juice) on an empty stomach for best absorption.',
+          'Dark or black stools are normal — this is not blood.',
+          'If tablets upset your stomach, take them with a small amount of food or try every other day.',
+          'Avoid tea, coffee, and calcium supplements within 2 hours of taking iron.',
+          'Continue iron for 3–6 months after Hb normalises to rebuild stores.',
+        ],
+        method: 'Verbal + written leaflet',
+      },
+    ],
+    dischargePlanning: {
+      checklist: [
+        'Iron supplement prescription with clear dosing instructions',
+        'Dietary advice sheet provided',
+        'Follow-up bloods (FBC, ferritin) at 4–6 weeks',
+        'Underlying cause investigation plan documented',
+        'Return if symptoms worsen or new symptoms develop',
+      ],
+      followUp: 'GP or haematology at 4–6 weeks for repeat FBC and ferritin. Continue iron for 3–6 months after normalisation. Repeat ferritin at 3 months.',
+      referrals: ['Gynaecology (if menorrhagia)', 'Gastroenterology (if GI source suspected)', 'Dietitian', 'Parasitology (if hookworm suspected)'],
+      warningSigns: [
+        'Worsening fatigue or breathlessness',
+        'Chest pain or palpitations',
+        'Severe constipation unresponsive to laxatives',
+        'Blood in stools (different from the expected dark colour)',
+        'Fainting or severe dizziness',
+      ],
+    },
+    complications: ['Severe anaemia (Hb < 60 g/L) requiring transfusion', 'Heart failure from chronic anaemia', 'Pica-related complications (lead poisoning from paint/soil)', 'Impaired growth in children', 'Increased perioperative risk'],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // PAEDIATRIC
+  // ═══════════════════════════════════════════════════════════════
+
+  'Paediatric Asthma': {
+    id: 'cp-paeds-asthma',
+    disease: 'Paediatric Asthma',
+    specialty: 'Paediatric Care',
+    overview: 'Paediatric asthma is a chronic inflammatory airway disease characterised by reversible airflow obstruction, bronchial hyperresponsiveness, and recurrent episodes of wheezing, cough, and dyspnoea. It is the most common chronic disease of childhood and a leading cause of school absenteeism and hospital admission.',
+    pathophysiology: 'Allergen/trigger exposure → IgE-mediated mast cell degranulation → release of histamine, leukotrienes → bronchial smooth muscle contraction → mucosal oedema → mucus hypersecretion → airway obstruction. Chronic inflammation leads to airway remodelling.',
+    commonCauses: ['Viral respiratory infections (most common trigger in children)', 'Allergens (dust mites, pet dander, cockroach, mould)', 'Exercise', 'Cold air', 'Tobacco smoke exposure', 'Emotional stress'],
+    riskFactors: ['Atopic triad (asthma, eczema, allergic rhinitis)', 'Family history of asthma/atopy', 'Exposure to tobacco smoke', 'Obesity', 'Viral bronchiolitis in infancy', 'Low socioeconomic status'],
+    subjectiveData: [
+      'Recurrent wheezing, especially at night or with exercise',
+      'Cough (worse at night, with colds, or with exercise)',
+      'Chest tightness (older children)',
+      'Shortness of breath',
+      'Difficulty sleeping due to cough/wheeze',
+      'Parental report of "noisy chest" during illness',
+    ],
+    objectiveData: [
+      'Expiratory wheeze on auscultation',
+      'Prolonged expiratory phase',
+      'Tachypnoea, tachycardia during exacerbation',
+      'Use of accessory muscles (older children)',
+      'Reduced air entry bilaterally (severe — "silent chest")',
+      'SpO2 < 94% during exacerbation',
+      'Peak flow < 80% predicted (school-age children)',
+    ],
+    nursingDiagnoses: [
+      {
+        id: 'nd-paeds-asthma-1',
+        diagnosis: 'Ineffective Airway Clearance related to bronchospasm, mucosal oedema, and mucus hypersecretion as evidenced by wheezing and cough',
+        relatedFactors: ['Bronchospasm', 'Airway inflammation', 'Mucus production'],
+        definingCharacteristics: ['Wheezing', 'Cough', 'Prolonged expiration', 'Tachypnoea'],
+      },
+      {
+        id: 'nd-paeds-asthma-2',
+        diagnosis: 'Impaired Gas Exchange related to airway obstruction as evidenced by SpO2 < 94% and tachypnoea',
+        definingCharacteristics: ['Low SpO2', 'Tachypnoea', 'Tachycardia', 'Irritability'],
+      },
+    ],
+    goals: [
+      {
+        id: 'g-paeds-asthma-1',
+        shortTerm: 'Wheezing resolved or minimal. SpO2 ≥ 94%. Child comfortable and able to speak in full sentences. RR and HR within normal range for age.',
+        longTerm: 'Child maintains well-controlled asthma (no daytime symptoms > 1×/week, no night symptoms, no exacerbations). Correct inhaler technique demonstrated.',
+      },
+    ],
+    interventions: [
+      { id: 'i-paeds-asthma-1', category: 'dependent', action: 'Administer salbutamol via MDI + spacer (4–8 puffs every 20 min for 1 hour in acute exacerbation). For mild-moderate: 2–4 puffs every 4–6 hours PRN.', rationale: 'Salbutamol (SABA) is first-line for acute relief. Spacer device improves lung deposition in children who cannot use a dry powder inhaler.', frequency: 'PRN (mild); every 20 min (acute)' },
+      { id: 'i-paeds-asthma-2', category: 'dependent', action: 'Administer preventer: inhaled corticosteroid (ICS) — beclometasone 100–200 mcg BD or fluticasone 50–100 mcg BD. Step up/down per GINA/BNF-c guidelines.', rationale: 'ICS is the cornerstone of preventer therapy, reducing airway inflammation and exacerbation frequency by 40–50%.', frequency: 'Twice daily (preventer)' },
+      { id: 'i-paeds-asthma-3', category: 'independent', action: 'Teach and assess inhaler technique: MDI + spacer with mask (under 4 years) or mouthpiece (≥ 4 years). Hold breath 10 seconds or 6 tidal breaths.', rationale: 'Up to 80% of children use inhalers incorrectly. Spacer with mask is essential for preschool children.', frequency: 'Every visit' },
+      { id: 'i-paeds-asthma-4', category: 'independent', action: 'Develop a written Asthma Action Plan with parent: Green (well), Yellow (worsening), Red (emergency). Include specific medication doses for each zone.', rationale: 'Written action plans reduce hospitalisations and emergency visits by up to 40%.', frequency: 'At diagnosis and reviewed every visit' },
+      { id: 'i-paeds-asthma-5', category: 'independent', action: 'Educate parents on trigger avoidance: no smoking in the home, dust mite reduction (mattress covers, hot wash bedding), avoid pet dander if sensitised.', rationale: 'Trigger avoidance reduces symptom frequency and medication requirements.', frequency: 'At every clinic visit' },
+    ],
+    evaluation: [
+      { id: 'e-paeds-asthma-1', expected: 'SpO2 ≥ 94%. Wheezing resolved. Child comfortable and active.', status: 'met' },
+      { id: 'e-paeds-asthma-2', expected: 'Parent demonstrates correct inhaler technique and can explain the asthma action plan.', status: 'met' },
+    ],
+    patientEducation: [
+      {
+        topic: 'Asthma Management for Parents',
+        keyPoints: [
+          'Asthma cannot be cured but can be well controlled with daily preventer medication.',
+          'Give the preventer inhaler every day, even when your child feels well.',
+          'The reliever inhaler (blue) is for symptoms only — if needed more than 2×/week, see the doctor.',
+          'Learn the traffic-light action plan: Green = well, Yellow = worsening, Red = emergency.',
+          'Keep a peak flow diary if your child is old enough.',
+        ],
+        method: 'Verbal + written action plan + demonstration',
+      },
+    ],
+    dischargePlanning: {
+      checklist: [
+        'Preventer and reliever prescriptions with clear dosing',
+        'Written Asthma Action Plan provided and understood',
+        'Inhaler technique demonstrated and assessed',
+        'Spacer device provided (with mask if < 4 years)',
+        'Trigger avoidance advice provided',
+        'Follow-up scheduled within 2–4 weeks',
+      ],
+      followUp: 'Paediatric respiratory clinic or GP within 2–4 weeks. Review every 3–6 months. Spirometry at school age. Step-up or step-down therapy as needed.',
+      referrals: ['Paediatric Respiratory', 'Asthma Nurse Specialist', 'Allergist (if severe/uncontrolled)', 'School health service'],
+      warningSigns: [
+        'Reliever needed more than 2 times per week',
+        'Night-time cough waking the child',
+        'Difficulty speaking in full sentences',
+        'Blue lips or fingernails',
+        'Reliever not helping within 15 minutes',
+      ],
+    },
+    complications: ['Status asthmaticus', 'Pneumothorax', 'Respiratory failure', 'Hospital admission', 'Impaired quality of life', 'Growth suppression from high-dose ICS (rare)'],
+  },
+
+  'Malnutrition': {
+    id: 'cp-malnutrition',
+    disease: 'Malnutrition',
+    specialty: 'Paediatric Care',
+    overview: 'Malnutrition in children encompasses undernutrition (stunting, wasting, underweight), micronutrient deficiencies, and in older children, overnutrition. Severe acute malnutrition (SAM) is a medical emergency with high mortality. Kenya has a high burden of childhood malnutrition, particularly in arid and semi-arid regions.',
+    pathophysiology: 'Inadequate nutrient intake or absorption → catabolism of fat and muscle stores → impaired immune function → increased infection risk → further anorexia and malabsorption (vicious cycle). SAM leads to oedematous (kwashiorkor) or marasmic presentations.',
+    commonCauses: ['Inadequate dietary intake (poverty, food insecurity)', 'Repeated infections (diarrhoea, pneumonia, malaria)', 'Malabsorption (coeliac disease, parasites)', 'Chronic disease (HIV,TB, cardiac disease)', 'Poor feeding practices (early cessation of breastfeeding, inappropriate complementary feeding)'],
+    riskFactors: ['Poverty and food insecurity', 'HIV-positive mother/child', 'Low birth weight', 'Exclusive breastfeeding < 6 months', 'Poor sanitation and water', 'Maternal malnutrition', 'Lack of breast-feeding knowledge'],
+    subjectiveData: [
+      'Weight loss or failure to gain weight',
+      'Reduced appetite, poor feeding',
+      'Lethargy, irritability',
+      'Delayed developmental milestones',
+      'Recurrent infections',
+      'Mother reports poor dietary intake',
+    ],
+    objectiveData: [
+      'Weight-for-age Z-score < -2 (underweight)',
+      'Height-for-age Z-score < -2 (stunting)',
+      'Weight-for-height Z-score < -2 (wasting) or < -3 (SAM)',
+      'Bilateral pitting oedema (kwashiorkor)',
+      'Visible wasting of muscles, loss of subcutaneous fat',
+      'Thin, dry, flaky skin; sparse, depigmented hair',
+      'Moon face, distended abdomen (kwashiorkor)',
+      'MUAC < 11.5 cm (6–59 months) = SAM',
+    ],
+    nursingDiagnoses: [
+      {
+        id: 'nd-malnutrition-1',
+        diagnosis: 'Imbalanced Nutrition: Less Than Body Requirements related to inadequate nutrient intake and/or absorption as evidenced by weight loss and low MUAC',
+        relatedFactors: ['Inadequate dietary intake', 'Infections', 'Poverty', 'Poor feeding practices'],
+        definingCharacteristics: ['Weight loss', 'Low MUAC', 'Visible wasting', 'Oedema'],
+      },
+      {
+        id: 'nd-malnutrition-2',
+        diagnosis: 'Risk for Infection related to malnutrition-induced immune suppression',
+        definingCharacteristics: ['Lymphopenia', 'Impaired skin integrity', 'Recurrent infections'],
+      },
+    ],
+    goals: [
+      {
+        id: 'g-malnutrition-1',
+        shortTerm: 'Weight gain ≥ 5–10 g/kg/day during inpatient rehabilitation. Oedema resolving. Appetite improving. No active infection.',
+        longTerm: 'Weight-for-height Z-score > -2. No oedema. Developmental milestones age-appropriate. Sustainable feeding plan in place.',
+      },
+    ],
+    interventions: [
+      { id: 'i-malnutrition-1', category: 'dependent', action: 'Initiate therapeutic feeding per WHO guidelines: F-75 (phase 1, stabilisation) → F-100 (phase 2, rehabilitation) → Ready-to-Use Therapeutic Food (RUTF). Start at 10 mL/kg/hr on day 1, increasing gradually.', rationale: 'Refeeding too quickly can cause refeeding syndrome (hypophosphataemia, hypokalaemia, fluid overload). Gradual escalation is life-saving.', frequency: 'Every 2–3 hours (F-75); 3 meals + 1 snack (RUTF)' },
+      { id: 'i-malnutrition-2', category: 'independent', action: 'Monitor for refeeding syndrome: electrolytes (K+, PO4, Mg2+) daily for first 3 days, then twice weekly. Supplement thiamine before starting feeds.', rationale: 'Refeeding syndrome occurs in malnourished patients when feeding is restarted — it can cause cardiac arrhythmias and death.', frequency: 'Daily (electrolytes); once (thiamine)' },
+      { id: 'i-malnutrition-3', category: 'dependent', action: 'Treat concurrent infections: empirical antibiotics per WHO (amoxicillin + gentamicin for SAM with complications). Treat dehydration cautiously (reduced volume, slower rate).', rationale: 'Infections are the leading cause of death in SAM. Treat aggressively but fluid overload is a risk.', frequency: 'As prescribed' },
+      { id: 'i-malnutrition-4', category: 'independent', action: 'Provide warmth (hypothermia prevention). Skin-to-skin contact (kangaroo mother care if infant). Monitor temperature 4-hourly.', rationale: 'Hypothermia is a common and dangerous complication of malnutrition. Maintaining体温 is critical.', frequency: 'Every 4 hours' },
+      { id: 'i-malnutrition-5', category: 'independent', action: 'Growth monitoring: daily weight, weekly MUAC, weekly length/height. Plot on Road-to-Health chart. Track weight gain velocity.', rationale: 'Growth monitoring is the primary measure of treatment response and guides feeding adjustments.', frequency: 'Daily (weight); weekly (MUAC, length)' },
+      { id: 'i-malnutrition-6', category: 'independent', action: 'Stimulate development: encourage play, interaction, and age-appropriate activities. Refer to early childhood development programme.', rationale: 'Malnutrition impairs brain development. Early stimulation supports cognitive and motor recovery.', frequency: 'Daily' },
+    ],
+    evaluation: [
+      { id: 'e-malnutrition-1', expected: 'Weight gain ≥ 5–10 g/kg/day. Oedema resolved. Appetite returning.', status: 'met' },
+      { id: 'e-malnutrition-2', expected: 'No active infection. Temperature stable. Electrolytes normal.', status: 'met' },
+    ],
+    patientEducation: [
+      {
+        topic: 'Feeding and Nutrition',
+        keyPoints: [
+          'Continue breastfeeding — it is the best food for your child.',
+          'Give small, frequent meals. A malnourished child\'s stomach is small.',
+          'RUTF (Plumpy\'Nut) is a high-energy paste — give as prescribed.',
+          'Wash hands before preparing food and before feeding.',
+          'Do not give herbal remedies for feeding — they can be harmful.',
+        ],
+        method: 'Verbal + demonstration + caregiver practice',
+      },
+    ],
+    dischargePlanning: {
+      checklist: [
+        'RUTF supply for home-based therapeutic feeding (≥ 1 month)',
+        'Growth monitoring appointment scheduled (within 1 week)',
+        'Mothers\' support group or community health volunteer linked',
+        'Vaccinations up to date',
+        'Deworming given (if > 12 months)',
+        'Safe water and sanitation advice provided',
+      ],
+      followUp: 'Community health volunteer (weekly MUAC check). Outpatient therapeutic programme (weekly weight). Hospital review if no weight gain after 2 weeks.',
+      referrals: ['Community Health Volunteer', 'Mothers\' Support Group', 'WASH Programme', 'HIV Testing (if not done)', 'Early Childhood Development'],
+      warningSigns: [
+        'Child stops eating or drinking',
+        'Fever or cough worsening',
+        'Watery stools increasing',
+        'Lethargy or inability to suck/drink',
+        'New oedema developing',
+        'No weight gain after 2 weeks of treatment',
+      ],
+    },
+    complications: ['Hypothermia', 'Hypoglycaemia', 'Refeeding syndrome', 'Dehydration', 'Infections (pneumonia, UTI, sepsis)', 'Death (mortality 3–40% for SAM depending on setting)'],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // GERIATRIC
+  // ═══════════════════════════════════════════════════════════════
+
+  'Dementia': {
+    id: 'cp-dementia',
+    disease: 'Dementia',
+    specialty: 'Geriatric Care',
+    overview: 'Dementia is a progressive syndrome of cognitive decline that interferes with daily functioning. Alzheimer\'s disease (60–70%) and vascular dementia (20–30%) are the most common types. Management focuses on maintaining function, managing behavioural symptoms, and supporting caregivers.',
+    pathophysiology: 'Alzheimer\'s: amyloid-beta plaques and tau neurofibrillary tangles → neuronal loss → brain atrophy (hippocampus first). Vascular: cerebrovascular disease → stepwise cognitive decline. Both lead to progressive loss of memory, executive function, language, and behaviour regulation.',
+    commonCauses: ['Alzheimer\'s disease (60–70%)', 'Vascular dementia (20–30%)', 'Dementia with Lewy bodies', 'Frontotemporal dementia', 'Mixed dementia', 'Reversible causes: B12 deficiency, hypothyroidism, normal pressure hydrocephalus'],
+    riskFactors: ['Advanced age (> 65)', 'Low education level', 'Cardiovascular risk factors (hypertension, diabetes, smoking)', 'Family history of dementia', 'Depression', 'Social isolation', 'Hearing loss'],
+    subjectiveData: [
+      'Progressive memory loss (especially recent events)',
+      'Difficulty with familiar tasks (cooking, managing finances)',
+      'Word-finding difficulties',
+      'Confusion about time and place',
+      'Personality or behavioural changes',
+      'Wandering, agitation, aggression',
+      'Caregiver reports of functional decline',
+    ],
+    objectiveData: [
+      'MMSE < 24 / MoCA < 26 (cognitive impairment)',
+      'Disoriented to time, place, or person',
+      'Impaired recall (3-word test failure)',
+      'Apraxia, agnosia, executive dysfunction',
+      'Behavioural disturbances: agitation, wandering, sundowning',
+      'Functional decline in ADLs and IADLs',
+      'CT/MRI: cortical atrophy, ventricular enlargement (Alzheimer\'s)',
+    ],
+    nursingDiagnoses: [
+      {
+        id: 'nd-dementia-1',
+        diagnosis: 'Chronic Confusion related to progressive cognitive decline as evidenced by disorientation and impaired memory',
+        relatedFactors: ['Neurodegenerative process', 'Neuronal loss', 'Cerebrovascular disease'],
+        definingCharacteristics: ['Disorientation', 'Memory impairment', 'Difficulty with familiar tasks', 'Impaired judgement'],
+      },
+      {
+        id: 'nd-dementia-2',
+        diagnosis: 'Risk for Injury related to wandering, impaired judgement, and disorientation',
+        definingCharacteristics: ['Wandering', 'Falls', 'Inability to recognise hazards', 'Leaving home unsupervised'],
+      },
+      {
+        id: 'nd-dementia-3',
+        diagnosis: 'Caregiver Role Strain related to progressive nature of disease and increasing care demands',
+        definingCharacteristics: ['Caregiver exhaustion', 'Social isolation', 'Emotional distress'],
+      },
+    ],
+    goals: [
+      {
+        id: 'g-dementia-1',
+        shortTerm: 'Patient safe from injury. Behavioural symptoms managed without resorting to restraint. Caregiver coping strategies identified.',
+        longTerm: 'Maintenance of remaining function for as long as possible. Safe living environment established. Caregiver supported and connected to services.',
+      },
+    ],
+    interventions: [
+      { id: 'i-dementia-1', category: 'independent', action: 'Provide structured daily routine: same wake time, meals, activities, bedtime. Use visual schedules and calendars. Keep familiar objects in the environment.', rationale: 'Routine and familiarity reduce confusion and anxiety. Environmental consistency provides safety and orientation.', frequency: 'Daily' },
+      { id: 'i-dementia-2', category: 'dependent', action: 'Administer cholinesterase inhibitors (donepezil 5–10 mg, rivastigmine, galantamine) for mild-moderate Alzheimer\'s. Memantine 10–20 mg for moderate-severe.', rationale: 'Cholinesterase inhibitors modestly improve cognitive function and delay functional decline. Memantine has a different mechanism (NMDA antagonist).', frequency: 'Once daily (donepezil); twice daily (memantine)' },
+      { id: 'i-dementia-3', category: 'independent', action: 'Use non-pharmacological strategies for behavioural symptoms: music therapy, reminiscence, redirection, calming environment. Avoid physical/chemical restraint.', rationale: 'Non-drug approaches are first-line for behavioural symptoms. Restraints increase confusion, falls, and mortality.', frequency: 'As needed' },
+      { id: 'i-dementia-4', category: 'independent', action: 'Fall prevention: remove hazards (rugs, clutter), adequate lighting, bed rails down, non-slip footwear, call bell within reach. Assess fall risk using validated tool.', rationale: 'Dementia patients have 2–3× higher fall risk. Falls cause fractures, head injuries, and loss of independence.', frequency: 'Ongoing' },
+      { id: 'i-dementia-5', category: 'independent', action: 'Support caregiver: educate about disease progression, provide respite care information, connect to Alzheimer\'s support groups, screen for caregiver depression.', rationale: 'Caregiver burnout is common and leads to poorer patient outcomes. Support services reduce institutionalisation.', frequency: 'Weekly' },
+      { id: 'i-dementia-6', category: 'independent', action: 'Manage nutrition: offer finger foods for late-stage patients, maintain pleasant mealtime atmosphere, monitor weight monthly, assess swallowing if weight loss > 5%.', rationale: 'Dysphagia and weight loss are common in advanced dementia. Nutritional support maintains quality of life.', frequency: 'Every meal' },
+    ],
+    evaluation: [
+      { id: 'e-dementia-1', expected: 'No falls or injuries. Patient safe in structured environment.', status: 'met' },
+      { id: 'e-dementia-2', expected: 'Behavioural symptoms managed without restraint. Caregiver reports reduced stress.', status: 'met' },
+    ],
+    patientEducation: [
+      {
+        topic: 'Living with Dementia',
+        keyPoints: [
+          'Dementia is progressive, but good care can maintain quality of life.',
+          'Keep a daily routine — it reduces confusion and anxiety.',
+          'Safety-proof the home: remove trip hazards, install grab bars, keep doors locked.',
+          'Label rooms and use visual cues to help with orientation.',
+          'Join a support group — you are not alone.',
+        ],
+        method: 'Verbal + written + caregiver session',
+      },
+    ],
+    dischargePlanning: {
+      checklist: [
+        'Medications prescribed with clear instructions for caregiver',
+        'Home safety assessment completed',
+        'Caregiver education and support plan in place',
+        'Alzheimer\'s/dementia support group details provided',
+        'Power of attorney / advance directive discussed',
+        'Follow-up with memory clinic or GP',
+      ],
+      followUp: 'Memory clinic or GP every 3–6 months. Repeat cognitive assessment annually. Review medications quarterly. Caregiver assessment at each visit.',
+      referrals: ['Memory Clinic', 'Social Work', 'Occupational Therapy (home assessment)', 'Alzheimer\'s Kenya', 'Respite Care', 'Palliative Care (advanced stage)'],
+      warningSigns: [
+        'Sudden worsening of confusion (may indicate infection, dehydration, medication issue)',
+        'Falls or injuries',
+        'Refusal to eat or drink',
+        'Severe agitation or aggression',
+        'Caregiver crisis (burnout, abuse risk)',
+      ],
+    },
+    complications: ['Aspiration pneumonia', 'Pressure ulcers', 'Falls and fractures', 'Malnutrition', 'Urinary incontinence', 'Caregiver depression', 'Premature institutionalisation', 'Death'],
+  },
+
+  'Falls': {
+    id: 'cp-falls',
+    disease: 'Falls',
+    specialty: 'Geriatric Care',
+    overview: 'Falls are the leading cause of injury-related morbidity and mortality in older adults. A single fall can result in fractures (especially hip), head injury, loss of independence, fear of falling, and institutionalisation. Falls are multifactorial — 30% of community-dwelling and 50% of institutionalised older adults fall annually.',
+    pathophysiology: 'Falls result from the interaction of intrinsic factors (muscle weakness, visual impairment, postural hypotension, polypharmacy, cognitive impairment) and extrinsic factors (wet floors, poor lighting, inappropriate footwear). The consequence spectrum ranges from no injury to hip fracture, head injury, or death.',
+    commonCauses: ['Muscle weakness and deconditioning', 'Postural hypotension', 'Visual impairment', 'Polypharmacy (≥ 4 medications)', 'Cognitive impairment', 'Environmental hazards', 'Gait and balance disorders', 'Foot problems'],
+    riskFactors: ['Age > 65', 'History of previous falls', 'Polypharmacy (especially sedatives, antihypertensives)', 'Visual impairment', 'Cognitive impairment', 'Muscle weakness', 'Postural hypotension', 'Urinary incontinence', 'Depression'],
+    subjectiveData: [
+      'History of falls (number, circumstances, injuries)',
+      'Dizziness or lightheadedness on standing',
+      'Difficulty walking or maintaining balance',
+      'Visual changes',
+      'Fear of falling',
+      'Taking ≥ 4 medications (especially sedatives, antihypertensives)',
+    ],
+    objectiveData: [
+      'Positive Timed Up and Go test (> 12 seconds)',
+      'Impaired balance on Romberg or Tinetti assessment',
+      'Postural hypotension (> 20 mmHg systolic drop)',
+      'Muscle weakness (MRC grading < 4/5)',
+      'Visual acuity impairment',
+      'Appropriate footwear not being used',
+      'Environmental hazards present (rugs, poor lighting)',
+    ],
+    nursingDiagnoses: [
+      {
+        id: 'nd-falls-1',
+        diagnosis: 'Risk for Falls related to age-related physiological changes, polypharmacy, and environmental hazards',
+        definingCharacteristics: ['History of falls', 'Impaired balance', 'Muscle weakness', 'Postural hypotension'],
+      },
+      {
+        id: 'nd-falls-2',
+        diagnosis: 'Fear of Falling related to previous fall experience as evidenced by activity restriction and anxiety',
+        definingCharacteristics: ['Avoidance of activities', 'Anxiety about walking', 'Reluctance to leave home'],
+      },
+    ],
+    goals: [
+      {
+        id: 'g-falls-1',
+        shortTerm: 'Patient identified as high/low fall risk. Modifiable risk factors addressed. Safe environment established.',
+        longTerm: 'No further falls during admission or within 6 months of discharge. Patient demonstrates safe mobility techniques. Fear of falling reduced.',
+      },
+    ],
+    interventions: [
+      { id: 'i-falls-1', category: 'independent', action: 'Conduct fall risk assessment on admission (Morse Fall Scale, STRATIFY, or Tinetti). Reassess weekly and after any fall.', rationale: 'Validated fall risk tools identify high-risk patients and guide targeted interventions.', frequency: 'On admission, weekly, and post-fall' },
+      { id: 'i-falls-2', category: 'independent', action: 'Medication review: identify and minimise fall-risk drugs (sedatives, antihypertensives, anticholinergics, opioids). Recommend dose reduction or discontinuation where safe.', rationale: 'Polypharmacy is a major modifiable risk factor. Sedatives increase fall risk by 40–60%.', frequency: 'On admission and with any medication change' },
+      { id: 'i-falls-3', category: 'independent', action: 'Implement environmental safety measures: non-slip footwear, night lights, grab bars in bathroom, remove loose rugs, keep pathways clear, bed at lowest height.', rationale: 'Environmental modification reduces fall risk by 20–30%. Simple measures are highly effective.', frequency: 'Ongoing' },
+      { id: 'i-falls-4', category: 'independent', action: 'Encourage and assist with mobility and strength exercises: sit-to-stand, heel raises, walking aid assessment. Physiotherapy referral.', rationale: 'Progressive resistance exercise reduces falls by 20–30% in older adults. Muscle strength is the strongest modifiable predictor.', frequency: 'Daily' },
+      { id: 'i-falls-5', category: 'dependent', action: 'Correct postural hypotension: adequate hydration, compression stockings, gradual position changes, review antihypertensives.', rationale: 'Postural hypotension causes 20–30% of falls in older adults.', frequency: 'Ongoing' },
+      { id: 'i-falls-6', category: 'independent', action: 'Address fear of falling: graded exposure to activity, balance confidence training, cognitive behavioural strategies, encouragement.', rationale: 'Fear of falling leads to self-imposed activity restriction → deconditioning → increased fall risk (vicious cycle).', frequency: 'Daily' },
+    ],
+    evaluation: [
+      { id: 'e-falls-1', expected: 'No falls during admission. Environment assessed and hazards removed. Medications optimised.', status: 'met' },
+      { id: 'e-falls-2', expected: 'Patient demonstrates safe mobility techniques. Fear of falling reduced. Exercise programme in place.', status: 'met' },
+    ],
+    patientEducation: [
+      {
+        topic: 'Fall Prevention',
+        keyPoints: [
+          'Always wear well-fitting, non-slip footwear — not loose slippers or bare feet.',
+          'Use night lights. Get up slowly from bed or chair — sit for 1 minute first.',
+          'Remove loose rugs, clutter, and tripping hazards from your home.',
+          'Keep frequently used items within easy reach.',
+          'Tell your doctor if you feel dizzy or unsteady — many medications can be adjusted.',
+          'Exercise regularly — even gentle walking and standing exercises help.',
+        ],
+        method: 'Verbal + written + home assessment',
+      },
+    ],
+    dischargePlanning: {
+      checklist: [
+        'Fall risk assessment documented and communicated to GP',
+        'Medications reviewed and fall-risk drugs reduced/stopped',
+        'Home safety assessment completed (or referred to OT)',
+        'Walking aid provided and demonstrated (if needed)',
+        'Exercise programme initiated',
+        'Follow-up falls clinic appointment scheduled',
+        'Emergency call system considered (pendant alarm)',
+      ],
+      followUp: 'Falls clinic or GP within 2–4 weeks. Repeat fall risk assessment at 1 and 3 months. Physiotherapy review at 4 weeks. Occupational therapy home visit if high risk.',
+      referrals: ['Physiotherapy', 'Occupational Therapy', 'Falls Clinic', 'Optometry (visual assessment)', 'Podiatry (foot care)'],
+      warningSigns: [
+        'Dizziness or lightheadedness on standing',
+        'New unsteadiness or difficulty walking',
+        'Pain in joints or back limiting mobility',
+        'Vision changes',
+        'Feeling faint or losing consciousness',
+      ],
+    },
+    complications: ['Hip fracture (30% of fall-related injuries)', 'Head injury / subdural haematoma', 'Soft tissue injuries', 'Loss of independence', 'Institutionalisation', 'Prolonged hospital stay', 'Mortality (hip fracture: 20–30% 1-year mortality in frail elderly)'],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // DERMATOLOGY
+  // ═══════════════════════════════════════════════════════════════
+
+  'Eczema': {
+    id: 'cp-eczema',
+    disease: 'Eczema',
+    specialty: 'Dermatology Care',
+    overview: 'Eczema (atopic dermatitis) is a chronic, relapsing inflammatory skin condition characterised by dry, itchy, erythematous skin with papules, vesicles, and lichenification. It affects 10–20% of children and 3–7% of adults, significantly impacting quality of life.',
+    pathophysiology: 'Genetic barrier dysfunction (filaggrin mutations) → impaired skin barrier → transepidermal water loss → dry skin → allergen/pathogen penetration → Th2-mediated immune activation → inflammation → pruritus → scratching → further barrier damage (itch-scratch cycle).',
+    commonCauses: ['Genetic predisposition (filaggrin mutations)', 'Allergens (dust mites, food in children)', 'Irritants (soaps, detergents, wool)', 'Dry skin / low humidity', 'Stress', 'Infection (S. aureus)'],
+    riskFactors: ['Personal or family history of atopy (asthma, allergic rhinitis)', 'Low socioeconomic status', 'Urban living', 'Low humidity climate', 'Occupational exposure to irritants'],
+    subjectiveData: [
+      'Intense pruritus (often worse at night)',
+      'Dry, scaly skin',
+      'Burning or stinging on application of emollients',
+      'Sleep disturbance due to itching',
+      'Social and psychological impact',
+    ],
+    objectiveData: [
+      'Dry, erythematous, scaly plaques',
+      'Papules, vesicles, oozing in acute flares',
+      'Lichenification (thickened skin) in chronic areas',
+      'Distribution: flexural (elbows, knees, neck) in adults; extensor (knees, elbows) in infants',
+      'Excoriation marks from scratching',
+      'Secondary infection: honey-coloured crusting (impetiginisation)',
+      'Positive skin prick tests or elevated IgE (atopic individuals)',
+    ],
+    nursingDiagnoses: [
+      {
+        id: 'nd-eczema-1',
+        diagnosis: 'Impaired Skin Integrity related to inflammatory process and scratching as evidenced by erythema, scaling, and excoriation',
+        relatedFactors: ['Barrier dysfunction', 'Th2-mediated inflammation', 'Scratching'],
+        definingCharacteristics: ['Erythema', 'Scaling', 'Excoriation', 'Lichenification'],
+      },
+      {
+        id: 'nd-eczema-2',
+        diagnosis: 'Disturbed Sleep Pattern related to nocturnal pruritus',
+        definingCharacteristics: ['Sleep disruption', 'Night-time scratching', 'Fatigue'],
+      },
+    ],
+    goals: [
+      {
+        id: 'g-eczema-1',
+        shortTerm: 'Pruritus controlled to tolerable level. Skin barrier improved (reduced dryness and erythema). Sleep not disrupted.',
+        longTerm: 'Flare-free periods maintained for ≥ 3 months. Emollient and treatment regimen established. Patient/family self-managing.',
+      },
+    ],
+    interventions: [
+      { id: 'i-eczema-1', category: 'independent', action: 'Emollient therapy: liberal application of emollient (white soft paraffin, Cetraben, Diprobase) at least twice daily and within 3 minutes of bathing ("soak and seal").', rationale: 'Emollients restore the skin barrier, reduce water loss, and decrease flares by 50%. Must be applied generously and consistently.', frequency: 'At least twice daily' },
+      { id: 'i-eczema-2', category: 'dependent', action: 'Administer topical corticosteroids (TCS) during flares: mild (hydrocortisone 1%) for face/folds, moderate (betamethasone valerate 0.1%) for body, potent (clobetasol) for thickened areas. Apply once daily for 7–14 days.', rationale: 'TCS are first-line anti-inflammatory treatment. Potency should match severity and body site. Short courses prevent skin atrophy.', frequency: 'Once daily during flares' },
+      { id: 'i-eczema-3', category: 'independent', action: 'Teach emollient technique: apply in direction of hair growth, avoid broken skin, use separate pot for each family member to prevent infection.', rationale: 'Correct technique maximises effectiveness and prevents infection from shared containers.', frequency: 'At every consultation' },
+      { id: 'i-eczema-4', category: 'independent', action: 'Identify and avoid triggers: recommend fragrance-free products, soft cotton clothing, avoid wool, use mild soap substitutes, lukewarm baths.', rationale: 'Trigger avoidance reduces flare frequency and medication requirements.', frequency: 'Ongoing' },
+      { id: 'i-eczema-5', category: 'dependent', action: 'For moderate-severe eczema unresponsive to TCS: consider second-line agents — tacrolimus/pimecrolimus (calcineurin inhibitors), dupilumab (anti-IL-4/IL-13) for adults.', rationale: 'Steroid-sparing agents are useful for sensitive areas (face, eyelids) and chronic disease.', frequency: 'As prescribed' },
+      { id: 'i-eczema-6', category: 'independent', action: 'Manage secondary infection: if signs of bacterial infection (honey crusting, weeping), add topical mupirocin or oral flucloxacillin/emmetrazine.', rationale: 'S. aureus colonisation/infection occurs in 90% of eczema flares and worsens inflammation.', frequency: 'As needed' },
+    ],
+    evaluation: [
+      { id: 'e-eczema-1', expected: 'Pruritus reduced. Skin smoother, less erythematous. Sleep quality improved.', status: 'met' },
+      { id: 'e-eczema-2', expected: 'Patient/family demonstrates correct emollient and TCS application technique.', status: 'met' },
+    ],
+    patientEducation: [
+      {
+        topic: 'Eczema Self-Management',
+        keyPoints: [
+          'Emollients are the most important treatment — apply every day, even when skin looks clear.',
+          'Use the "soak and seal" method: bath in lukewarm water, pat dry gently, apply emollient within 3 minutes.',
+          'Topical steroids are safe when used correctly — they are not "strong" steroids for the body.',
+          'Avoid triggers: fragranced products, wool, harsh soaps, overheating.',
+          'Keep fingernails short to reduce scratching damage.',
+        ],
+        method: 'Verbal + written + demonstration',
+      },
+    ],
+    dischargePlanning: {
+      checklist: [
+        'Emollient prescribed in adequate quantity (500 g/week for adults)',
+        'Topical steroid prescribed with clear instructions on potency and duration',
+        'Written eczema action plan provided',
+        'Trigger avoidance advice documented',
+        'Follow-up scheduled in 2–4 weeks (or sooner if flaring)',
+      ],
+      followUp: 'Dermatology or GP within 2–4 weeks. Review and step down TCS. Referral to eczema nurse specialist if available. Patch testing if contact allergy suspected.',
+      referrals: ['Dermatology', 'Eczema Nurse Specialist', 'Allergy Clinic (if food allergy suspected)', 'Psychology (if significant QoL impact)'],
+      warningSigns: [
+        'Signs of infection (oozing, yellow crusts, fever, increasing redness)',
+        'Eczema not improving despite treatment',
+        'Steroid phobia leading to non-compliance',
+        'Significant impact on sleep, school, or work',
+        'Widespread red, hot, painful skin (erythroderma — seek emergency care)',
+      ],
+    },
+    complications: ['Secondary bacterial infection (impetigo)', 'Eczema herpeticum (HSV — emergency)', 'Sleep disturbance', 'Psychological impact (anxiety, depression)', 'Skin lichenification', 'Erythroderma (rare, life-threatening)'],
+  },
+
+  'Psoriasis': {
+    id: 'cp-psoriasis',
+    disease: 'Psoriasis',
+    specialty: 'Dermatology Care',
+    overview: 'Psoriasis is a chronic, immune-mediated inflammatory skin disease characterised by well-demarcated, erythematous plaques with silvery scales. It affects 2–3% of the global population and is associated with psoriatic arthritis, cardiovascular disease, and significant psychosocial burden.',
+    pathophysiology: 'T-cell-mediated autoimmune disease → IL-23/IL-17 axis activation → keratinocyte hyperproliferation (turnover accelerated from 28 to 3–4 days) → accumulation of immature keratinocytes → thick, scaly plaques. Genetically influenced (HLA-Cw6) and triggered by environmental factors.',
+    commonCauses: ['Genetic predisposition (HLA-Cw6)', 'Stress', 'Infection (streptococcal pharyngitis → guttate psoriasis)', 'Skin trauma (Koebner phenomenon)', 'Certain medications (lithium, beta-blockers, antimalarials)', 'Alcohol', 'Smoking'],
+    riskFactors: ['Family history (30% have affected relative)', 'HIV infection', 'Obesity', 'Smoking', 'Stress', 'Northern European descent (higher prevalence)'],
+    subjectiveData: [
+      'Visible plaques on elbows, knees, scalp, trunk',
+      'Pruritus (mild to severe)',
+      'Pain or soreness of plaques',
+      'Emotional distress, embarrassment',
+      'Joint pain (psoriatic arthritis in 30%)',
+      'Nail changes (pitting, discolouration)',
+    ],
+    objectiveData: [
+      'Well-demarcated, erythematous plaques with silvery-white scales',
+      'Classic distribution: extensor surfaces (elbows, knees), scalp, lumbosacral area',
+      'Auspitz sign (pinpoint bleeding on scale removal)',
+      'Nail changes: pitting, onycholysis, oil-drop sign',
+      'Koebner phenomenon (new lesions at trauma sites)',
+      'Erythrodermic psoriasis (rare, severe — generalised redness)',
+    ],
+    nursingDiagnoses: [
+      {
+        id: 'nd-psoriasis-1',
+        diagnosis: 'Impaired Skin Integrity related to autoimmune-mediated keratinocyte hyperproliferation as evidenced by scaly plaques',
+        relatedFactors: ['T-cell mediated inflammation', 'Keratinocyte hyperproliferation', 'Impaired skin barrier'],
+        definingCharacteristics: ['Erythematous plaques', 'Silvery scales', 'Pruritus', 'Skin cracking/bleeding'],
+      },
+      {
+        id: 'nd-psoriasis-2',
+        diagnosis: 'Disturbed Body Image related to visible skin lesions as evidenced by social withdrawal and verbal expression of embarrassment',
+        definingCharacteristics: ['Social avoidance', 'Covering skin', 'Low self-esteem', 'Depression symptoms'],
+      },
+    ],
+    goals: [
+      {
+        id: 'g-psoriasis-1',
+        shortTerm: 'Plaques softened and reduced in thickness. Pruritus controlled. Patient comfortable and able to apply treatments independently.',
+        longTerm: 'PASI 75 response (75% improvement) maintained. Quality of life improved. No progression to psoriatic arthritis.',
+      },
+    ],
+    interventions: [
+      { id: 'i-psoriasis-1', category: 'independent', action: 'Emollient therapy: apply liberally twice daily to hydrate plaques and reduce scaling. Urea-based or salicylic acid-based emollients for thick plaques.', rationale: 'Emollients soften scales, reduce itching, and enhance penetration of topical treatments.', frequency: 'Twice daily' },
+      { id: 'i-psoriasis-2', category: 'dependent', action: 'Administer topical treatments: corticosteroids (calcipotriol + betamethasone combination first-line), vitamin D analogues (calcipotriol), coal tar preparations. Rotate to avoid tachyphylaxis.', rationale: 'Combination topical therapy is more effective than monotherapy. Steroid-sparing agents prevent skin atrophy.', frequency: 'Once to twice daily as prescribed' },
+      { id: 'i-psoriasis-3', category: 'independent', action: 'Scalp psoriasis management: medicated shampoos (coal tar, selenium sulphide, ketoconazole), topical solutions (clobetasol solution, calcipotriol solution).', rationale: 'Scalp psoriasis is the most common site and often most distressing to patients.', frequency: '2–3 times per week (shampoo); daily (solution)' },
+      { id: 'i-psoriasis-4', category: 'collaborative', action: 'For moderate-severe psoriasis (PASI > 10): refer for phototherapy (UVB) or systemic therapy (methotrexate, ciclosporin, acitretin, biologics).', rationale: 'Systemic therapy is needed when topical treatment fails or psoriasis significantly impacts quality of life.', frequency: 'As referred' },
+      { id: 'i-psoriasis-5', category: 'independent', action: 'Screen for psoriatic arthritis: ask about joint pain, stiffness (especially morning), dactylitis, nail changes. Refer to rheumatology if suspected.', rationale: 'Psoriatic arthritis affects 30% of psoriasis patients and requires early treatment to prevent joint destruction.', frequency: 'Every visit' },
+      { id: 'i-psoriasis-6', category: 'independent', action: 'Provide psychological support: acknowledge visible nature of disease, address stigma, screen for depression/anxiety, provide support group information.', rationale: 'Psoriasis has a profound psychosocial impact — depression rates are 2× higher than general population.', frequency: 'Every visit' },
+    ],
+    evaluation: [
+      { id: 'e-psoriasis-1', expected: 'Plaques reduced in thickness and extent. Pruritus controlled. Skin smoother.', status: 'met' },
+      { id: 'e-psoriasis-2', expected: 'Patient applies treatments correctly. Reports improved quality of life and reduced embarrassment.', status: 'met' },
+    ],
+    patientEducation: [
+      {
+        topic: 'Psoriasis Self-Management',
+        keyPoints: [
+          'Psoriasis is a chronic condition — it cannot be cured but can be well controlled.',
+          'Emollients are essential — use them every day even when plaques look clear.',
+          'Apply topical treatments as directed, not "as needed".',
+          'Identify and manage your personal triggers (stress, infection, skin injury).',
+          'Avoid picking scales — this worsens plaques (Koebner phenomenon).',
+          'Seek help for emotional wellbeing — psoriasis affects mental health.',
+        ],
+        method: 'Verbal + written leaflet',
+      },
+    ],
+    dischargePlanning: {
+      checklist: [
+        'Topical treatments prescribed with clear instructions',
+        'Emollient prescribed in adequate quantity',
+        'Scalp treatment prescribed if scalp involved',
+        'Follow-up scheduled in 6–8 weeks',
+        'Phototherapy or systemic referral if moderate-severe',
+        'Psoriatic arthritis screening documented',
+      ],
+      followUp: 'Dermatology every 6–8 weeks initially, then every 3–6 months. PASI scoring at each visit. Rheumatology referral if joint symptoms. Cardiovascular risk assessment annually.',
+      referrals: ['Dermatology', 'Rheumatology (if psoriatic arthritis)', 'Psychology', 'Phototherapy Unit', 'Psoriasis Support Group'],
+      warningSigns: [
+        'Sudden worsening or widespread redness (erythroderma — emergency)',
+        'Joint pain, swelling, or stiffness',
+        'Skin infection (increased redness, warmth, pus)',
+        'Significant emotional distress or depression',
+        'New medications that may worsen psoriasis',
+      ],
+    },
+    complications: ['Psoriatic arthritis (30%)', 'Cardiovascular disease', 'Metabolic syndrome', 'Depression and anxiety', 'Erythrodermic psoriasis (emergency)', 'Secondary infection', 'Social isolation'],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // OPHTHALMOLOGY
+  // ═══════════════════════════════════════════════════════════════
+
+  'Glaucoma': {
+    id: 'cp-glaucoma',
+    disease: 'Glaucoma',
+    specialty: 'Ophthalmology Care',
+    overview: 'Glaucoma is a progressive optic neuropathy characterised by optic disc cupping and visual field loss, typically associated with elevated intraocular pressure (IOP). It is the second leading cause of blindness worldwide (after cataract) and the leading cause of irreversible blindness. Open-angle glaucoma (OAG) accounts for 70–80% of cases.',
+    pathophysiology: 'Elevated IOP (or normal IOP in normal-tension glaucoma) → mechanical compression and ischaemia of the optic nerve head → retinal ganglion cell death → progressive, irreversible visual field loss starting peripherally. Angle-closure glaucoma involves physical obstruction of the drainage angle.',
+    commonCauses: ['Open-angle glaucoma: trabecular meshwork dysfunction → reduced aqueous outflow', 'Angle-closure glaucoma: pupillary block → iris bowed forward → angle closure', 'Secondary: trauma, steroids, uveitis, neovascularisation'],
+    riskFactors: ['Age > 40 (OAG)', 'High myopia', 'Family history (4× risk)', 'African descent (higher prevalence, more severe)', 'Diabetes', 'Hypertension', 'Steroid use', 'High IOP', 'Thin central cornea'],
+    subjectiveData: [
+      'Usually asymptomatic in early OAG (silent thief of sight)',
+      'Gradual peripheral vision loss (often unnoticed until advanced)',
+      'Tunnel vision in advanced disease',
+      'Acute angle-closure: sudden painful red eye, blurred vision, halos around lights, nausea/vomiting',
+      'History of family members with glaucoma',
+    ],
+    objectiveData: [
+      'Elevated IOP (> 21 mmHg — though normal-tension glaucoma exists)',
+      'Optic disc cupping (cup:disc ratio > 0.6 or asymmetry > 0.2)',
+      'Visual field defects: arcuate scotoma, nasal step',
+      'Thinned retinal nerve fibre layer on OCT',
+      'Shallow anterior chamber (angle-closure)',
+      'Corneal oedema, fixed dilated pupil, conjunctival injection (acute attack)',
+    ],
+    nursingDiagnoses: [
+      {
+        id: 'nd-glaucoma-1',
+        diagnosis: 'Sensory/Perceptual Alterations (Visual) related to progressive optic nerve damage as evidenced by visual field loss',
+        relatedFactors: ['Elevated IOP', 'Optic nerve ischaemia', 'Retinal ganglion cell death'],
+        definingCharacteristics: ['Peripheral vision loss', 'Tunnel vision', 'Difficulty navigating unfamiliar environments'],
+      },
+      {
+        id: 'nd-glaucoma-2',
+        diagnosis: 'Risk for Unstable Vital Signs related to acute angle-closure attack (nausea, vomiting, severe pain)',
+        definingCharacteristics: ['Nausea', 'Vomiting', 'Severe eye pain', 'Tachycardia'],
+      },
+    ],
+    goals: [
+      {
+        id: 'g-glaucoma-1',
+        shortTerm: 'IOP reduced to target range (typically < 18 mmHg or 30% reduction). Eye pain relieved (angle-closure). Patient tolerating eye drops.',
+        longTerm: 'IOP maintained at target. Visual field stable. No further optic nerve deterioration. Patient adherent to lifelong treatment.',
+      },
+    ],
+    interventions: [
+      { id: 'i-glaucoma-1', category: 'dependent', action: 'Administer topical hypotensive drops: prostaglandin analogues (latanoprost OD — first-line), beta-blockers (timolol BD), alpha-agonists (brimonidine BD), CAIs (dorzolamide TID).', rationale: 'Topical drops reduce IOP by increasing outflow or decreasing aqueous production. Prostaglandin analogues have best efficacy and adherence (once daily).', frequency: 'As prescribed (1–3 times daily)' },
+      { id: 'i-glaucoma-2', category: 'independent', action: 'Teach correct eye drop technique: tilt head back, pull down lower lid, drop into conjunctival sac, close eye for 1–2 minutes, press nasolacrimal duct for 1 minute (to reduce systemic absorption).', rationale: 'Correct technique ensures therapeutic effect. Nasolacrimal compression reduces systemic side effects (especially with beta-blockers).', frequency: 'At every visit' },
+      { id: 'i-glaucoma-3', category: 'dependent', action: 'For acute angle-closure: emergency treatment — pilocarpine 2% (constricts pupil), IV acetazolamide 500 mg, topical timolol, prednisolone eye drops. Laser peripheral iridotomy when stable.', rationale: 'Acute angle-closure is an ophthalmic emergency. Rapid IOP reduction prevents permanent optic nerve damage.', frequency: 'Emergency' },
+      { id: 'i-glaucoma-4', category: 'independent', action: 'Monitor IOP at each visit. Perform visual field testing every 6–12 months. OCT of RNFL annually.', rationale: 'Regular monitoring detects progression early. Visual field loss is irreversible — early detection is critical.', frequency: 'Per schedule' },
+      { id: 'i-glaucoma-5', category: 'independent', action: 'Adherence counselling: emphasise lifelong nature of treatment, asymptomatic early disease, consequences of stopping drops. Use pill Organisers, phone reminders, involve family.', rationale: 'Non-adherence is the leading cause of treatment failure in glaucoma. Up to 50% of patients are non-adherent within 1 year.', frequency: 'Every visit' },
+      { id: 'i-glaucoma-6', category: 'independent', action: 'Lifestyle advice: regular exercise (moderate — may lower IOP), avoid head-down positions, limit caffeine, avoid tight clothing around neck, protect eyes from injury.', rationale: 'These measures may modestly reduce IOP and protect the optic nerve.', frequency: 'At discharge and follow-up' },
+    ],
+    evaluation: [
+      { id: 'e-glaucoma-1', expected: 'IOP at target (< 18 mmHg or 30% reduction). Eye drops administered correctly.', status: 'met' },
+      { id: 'e-glaucoma-2', expected: 'Visual field stable. Patient adherent to treatment regimen.', status: 'met' },
+    ],
+    patientEducation: [
+      {
+        topic: 'Glaucoma — Living with the Condition',
+        keyPoints: [
+          'Glaucoma has no cure, but treatment prevents further vision loss. Early treatment is essential.',
+          'You will need eye drops for life — stopping them allows IOP to rise and vision to worsen.',
+          'Put drops in correctly: close your eye and press the corner for 1 minute after each drop.',
+          'Have regular eye check-ups — even if your vision feels fine.',
+          'Tell your optometrist/ophthalmologist about all your medications (some worsen glaucoma).',
+          'Glaucoma can run in families — encourage relatives to get screened.',
+        ],
+        method: 'Verbal + written leaflet + drop technique demonstration',
+      },
+    ],
+    dischargePlanning: {
+      checklist: [
+        'Eye drop prescriptions dispensed with clear instructions',
+        'Drop technique demonstrated and patient can replicate',
+        'Follow-up appointment scheduled (2–4 weeks after initiation)',
+        'Visual field and OCT testing scheduled',
+        'Medication adherence plan in place',
+        'Family screening encouraged',
+      ],
+      followUp: 'Ophthalmology every 3–6 months initially, then every 6–12 months if stable. IOP check at each visit. Visual field every 6–12 months. OCT annually.',
+      referrals: ['Ophthalmology', 'Low Vision Services (if significant field loss)', 'Support Group', 'Optometry (community monitoring)'],
+      warningSigns: [
+        'Sudden painful red eye with blurred vision (acute attack — emergency)',
+        'New visual field defects or difficulty seeing in dim light',
+        'Side effects from eye drops (redness, stinging, breathing difficulty with beta-blockers)',
+        'Missed appointments or running out of medication',
+      ],
+    },
+    complications: ['Irreversible blindness (if untreated)', 'Visual field progression', 'Surgical failure', 'Cataract (especially after glaucoma surgery)', 'Chronic eye discomfort from drops', 'Psychosocial impact of vision loss'],
+  },
 }
 
 // ── Helper functions ──────────────────────────────────────────────

@@ -19,7 +19,6 @@ from '../services/education.service';
 import { AIContentService } from '../services/aiContent.service';
 import exportService from '../services/export.service';
 import CurriculumGraph from '../components/CurriculumGraph';
-import ExamPrepView from '../components/ExamPrepView';
 import { getResourcesForUnit, getResourcesForModule } from '../data/unitToLibraryMapping';
 import { getStaticContent } from '../data/unitStaticContent';
 import { type DigitalLibraryResource } from '../data/digitalLibraryData';
@@ -470,11 +469,9 @@ export default function EducationHubScreen() {
 
           {/* Level 3: Learning Workspace / Clean Disease View */}
           {selectedModule && selectedUnit && (
-            selectedModule.id === 'exam_prep'
-              ? <ExamPrepView subjectId={selectedUnit.id} />
-              : selectedModule.id === 'clinical_pharm'
-                ? <CleanDiseaseView unit={selectedUnit} onBack={handleBackToUnits} />
-                : <LearningWorkspace unit={selectedUnit} module={selectedModule} onBack={handleBackToUnits} />
+            selectedModule.id === 'clinical_pharm'
+              ? <CleanDiseaseView unit={selectedUnit} onBack={handleBackToUnits} />
+              : <LearningWorkspace unit={selectedUnit} module={selectedModule} onBack={handleBackToUnits} />
           )}
           
         </div>
@@ -955,7 +952,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
 
   const isClinicalPharm = module.id === 'clinical_pharm'
   const workspaceTabs = isClinicalPharm
-    ? tabs.filter(t => t.id === 'disease-notes' || t.id === 'exam-prep')
+    ? tabs.filter(t => t.id === 'disease-notes')
     : tabs;
 
   // When a disease note is open, present it as a full standalone page:
@@ -1089,7 +1086,6 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
           {activeTab === 'resources' && <WorkspaceResources unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} />}
           {activeTab === 'flashcards' && <WorkspaceFlashcards unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
           {activeTab === 'mcqs' && <WorkspaceQuizzes unit={unit} module={module} currentFolderId={currentFolderId} currentFolderName={currentFolderName} userData={userData} />}
-          {activeTab === 'exam-prep' && <ExamPrepView />}
         </div>
 
         {/* Bottom Tabs â€” retractable */}

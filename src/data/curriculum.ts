@@ -16,8 +16,6 @@
 // and AI Skills all read from here so nothing is duplicated.
 // ================================================================
 
-import { EXAM_PREP_UNITS } from './examPrepData';
-
 export type Difficulty = 'Beginner' | 'Intermediate' | 'Advanced';
 
 export interface LearningObjective {
@@ -1028,26 +1026,6 @@ export interface EducationSubModule {
 export const EDUCATION_MODULES: EducationModule[] = [
   { id: 'clinical_pharm', title: 'Clinical Pharmacy & Therapeutics', description: 'Disease management and patient care across 17 integrated therapeutic areas.', isIntegrated: true, areaId: 'clinical_pharm', icon: 'HeartPulse', color: 'red' },
   { id: 'online_books', title: 'Online Books', description: 'Pharmacy reference books, textbooks, and clinical resources.', isIntegrated: false, icon: 'BookOpen', color: 'sky' },
-  { 
-    id: 'exam_prep', 
-    title: 'Exam Prep', 
-    description: 'Mock papers modelled on the real clinical-pharmacy exam pattern across subject areas.', 
-    isIntegrated: false, 
-    icon: 'FileText', 
-    color: 'amber',
-    subModules: [
-      {
-        id: 'clinical-pharmacy-exam',
-        title: 'Clinical Pharmacy',
-        description: 'Full-length mock examinations modelled on real clinical-pharmacy past papers, covering all therapeutic areas.',
-        units: EXAM_PREP_UNITS.map((spec) => ({
-          id: spec.id,
-          title: spec.title,
-          description: `${spec.topics.length} topic areas · ${spec.structure.reduce((a, s) => a + s.marks, 0)} marks across ${spec.structure.length} sections`,
-        })),
-      },
-    ],
-  },
 ];
 
 export function getEducationModule(moduleId: string): EducationModule | undefined {

@@ -1,8 +1,12 @@
 ## 2026-07-22
 
 ### Added
-- **Nursing Care Plans module**: 15 specialties, 32 fully detailed care plans with NANDA/NIC/NOC structure, 3-level navigation (specialty → disease → full care plan with 5 tabs). Routes: `/care-plan`, `/care-plan/:specialtyId`, `/care-plan/:specialtyId/:disease`.
+- **Nursing Care Plans module**: 19 specialties, 47 fully detailed care plans with NANDA/NIC/NOC structure, 3-level navigation (specialty → disease → full care plan with 5 tabs). Routes: `/care-plan`, `/care-plan/:specialtyId`, `/care-plan/:specialtyId/:disease`.
 - **Fundamental Nursing specialty**: 9 comprehensive care plans for essential nursing procedures — Wound Dressing, IV Therapy, Urinary Catheter Care, Oxygen Therapy, Post-Operative Care, Blood Transfusion, NG Tube Care, Pressure Injury Prevention, Chest Drain Management.
+- **Critical Care & ICU specialty**: 4 care plans — Mechanical Ventilation, ARDS, Sepsis Management, Multi-Organ Dysfunction.
+- **Burns Care specialty**: 4 care plans — Minor Burns, Major Burns, Inhalation Injury, Burn Wound Sepsis.
+- **Community & Public Health specialty**: 3 care plans — Immunisation Programme, Community Chronic Disease Management, Health Promotion & Disease Prevention.
+- **Perioperative & Surgical Nursing specialty**: 4 care plans — Pre-Operative Assessment, Intra-Operative Care, Post-Anaesthesia Recovery, Surgical Site Infection Prevention.
 - **Mobile bottom navigation bar**: 5-tab bottom nav (Home, Education Hub, Drug Index, Exam, Care Plan) with active route detection, backdrop blur, and safe-area-inset support. Mobile-only (`md:hidden`).
 - **Landing page upgrade**: Updated to reflect current module structure — Education Hub, Exam & Board Exam, Nursing Care Plans. Added "Nursing & Allied Health" audience card.
 - **Settings — Notifications section**: Push notification toggle, recent notifications list with read/unread status, mark-all-read button.
@@ -10,7 +14,7 @@
 - **Vercel Analytics + Speed Insights**: Privacy-friendly web analytics and Core Web Vitals tracking integrated at app root.
 
 ### Changed
-- **Dashboard**: Replaced "Exam Papers" stat with "Care Plans" (32). Added Care Plan to Continue Learning quick actions.
+- **Dashboard**: Replaced "Exam Papers" stat with "Care Plans" (47). Added Care Plan to Continue Learning quick actions.
 - **Education Hub**: Removed Exam Prep module (now lives in dedicated Exam tab). Removed `ExamPrepView` import and dead `exam-prep` tab code from `EducationHubScreen`.
 - **Navigation**: Exam is now a single sidebar nav link (no collapsible group). `EXAM_SUB_ITEMS` removed from `navigationConfig.ts`.
 - **README.md**: Comprehensive rewrite reflecting all current modules, tech stack updates (PWA, Analytics), and project structure.

@@ -124,7 +124,7 @@ const QUICK_LINKS = [
     gradient: 'from-sky-500 to-sky-600',
   },
   {
-    to: '/board-exam',
+    to: '/exam/board-exam',
     icon: GraduationCap,
     label: 'Board Exam',
     desc: 'Mock papers with instant feedback & scoring',
@@ -260,7 +260,7 @@ export default function DashboardScreen() {
 
           <div className="flex flex-wrap items-center gap-3">
             <Link
-              to="/board-exam"
+              to="/exam/board-exam"
               className="flex items-center gap-2 px-4 py-2.5 bg-white/15 hover:bg-white/25 text-white rounded-xl font-semibold backdrop-blur-sm transition-all text-sm"
             >
               <GraduationCap size={16} />
@@ -466,7 +466,7 @@ export default function DashboardScreen() {
                 <Stethoscope size={14} /> Browse Cases
               </Link>
               <Link
-                to="/board-exam"
+                to="/exam/board-exam"
                 className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-[var(--primary)]/10 text-[var(--primary)] text-xs font-bold hover:bg-[var(--primary)]/20 transition-colors"
               >
                 <GraduationCap size={14} /> Practice Exams

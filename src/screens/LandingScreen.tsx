@@ -2,12 +2,12 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import {
   ArrowRight, Sparkles, CheckCircle2, Bot, BookOpen, GraduationCap,
-  FileSearch, Shield, Brain, Stethoscope, Library, Target,
+  FileText, Shield, Brain, Stethoscope, Library, Target,
   ChevronRight, Star, Users, BarChart3, Layers, Pill,
+  ClipboardCheck,
 } from 'lucide-react'
 import ClinovaLogo from '../components/ClinovaLogo'
 import { BUNDLED_DRUGS } from '../data/drugIndexData'
-import { EXAM_PREP_UNITS } from '../data/examPrepData'
 import { INTEGRATED_UNITS_MAP } from '../data/curriculum'
 import { INITIAL_CASES } from '../data/clinicalCasesData'
 
@@ -17,7 +17,6 @@ export default function LandingScreen() {
   const drugCount = BUNDLED_DRUGS.length
   const caseCount = INITIAL_CASES.length
   const therapeuticAreaCount = Object.keys(INTEGRATED_UNITS_MAP).length
-  const examSubjectCount = EXAM_PREP_UNITS.length
 
   const features = [
     {
@@ -29,24 +28,24 @@ export default function LandingScreen() {
     },
     {
       icon: BookOpen,
-      title: 'Online Library',
+      title: 'Education Hub',
       description:
-        'Access curated pharmacy reference books, textbooks, and clinical resources organised by module for quick lookup and study.',
+        'Integrated clinical pharmacy curriculum with disease monographs, study guides, tutor sessions, flashcards, and curated online pharmacy resources.',
       gradient: 'from-sky-500 to-blue-600',
     },
     {
       icon: GraduationCap,
-      title: 'Exam Prep Suite',
+      title: 'Exam & Board Exam',
       description:
-        `Practice with mock papers modelled on the real clinical-pharmacy exam. ${examSubjectCount} subject areas, full-length papers in standard 30/40/30 format.`,
+        'Mock papers modelled on the real clinical-pharmacy exam in standard 30/40/30 format, plus a dedicated Board Exam module for focused preparation.',
       gradient: 'from-violet-500 to-purple-600',
     },
     {
-      icon: Brain,
-      title: 'Disease Discussions',
+      icon: ClipboardCheck,
+      title: 'Nursing Care Plans',
       description:
-        'In-depth monographs covering pathophysiology, clinical presentation, evidence-based management, and monitoring for every major disease.',
-      gradient: 'from-rose-500 to-pink-600',
+        'Structured NANDA, NIC, and NOC care plans across 14 specialties with 10 fully detailed plans covering pathophysiology, goals, interventions, and rationales.',
+      gradient: 'from-teal-500 to-cyan-600',
     },
     {
       icon: Bot,
@@ -68,20 +67,20 @@ export default function LandingScreen() {
     { value: String(therapeuticAreaCount), label: 'Therapeutic Areas', icon: Layers },
     { value: String(caseCount), label: 'Clinical Cases', icon: Stethoscope },
     { value: String(drugCount), label: 'Drug Monographs', icon: Pill },
-    { value: String(examSubjectCount), label: 'Exam Subjects', icon: FileSearch },
+    { value: '10', label: 'Care Plans', icon: ClipboardCheck },
   ]
 
   const steps = [
     {
       step: '01',
       title: 'Choose Your Focus',
-      desc: 'Select a therapeutic area, clinical case, or exam subject that matches your learning goals.',
+      desc: 'Pick a therapeutic area, clinical case, exam paper, or care plan specialty that matches your learning goals.',
       color: 'from-emerald-500 to-teal-500',
     },
     {
       step: '02',
       title: 'Learn & Practice',
-      desc: 'Review disease monographs, work through cases, or attempt timed mock papers with instant feedback.',
+      desc: 'Review disease monographs, work through cases, attempt timed mock papers, or study structured care plans.',
       color: 'from-sky-500 to-blue-500',
     },
     {
@@ -95,7 +94,7 @@ export default function LandingScreen() {
   const audiences = [
     {
       title: 'Pharmacy Students',
-      desc: 'Prepare for clinical pharmacy exams with mock papers, case-based learning, and comprehensive disease reviews.',
+      desc: 'Prepare for clinical pharmacy exams with mock papers, case-based learning, care plans, and comprehensive disease reviews.',
       icon: GraduationCap,
     },
     {
@@ -104,9 +103,9 @@ export default function LandingScreen() {
       icon: Stethoscope,
     },
     {
-      title: 'Pharmacy Educators',
-      desc: 'Use structured clinical cases and curriculum-aligned content to supplement teaching and assessment.',
-      icon: Library,
+      title: 'Nursing & Allied Health',
+      desc: 'Access structured nursing care plans with NANDA/NIC/NOC standards across 14 clinical specialties.',
+      icon: ClipboardCheck,
     },
   ]
 
@@ -159,8 +158,8 @@ export default function LandingScreen() {
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl text-[var(--text-muted)] max-w-2xl font-normal leading-relaxed mb-10">
-            Master clinical pharmacy with integrated case-based learning, mock exam papers,
-            disease monographs, and AI-powered clinical support — all in one platform.
+            Master clinical pharmacy with integrated case-based learning, structured nursing care plans,
+            mock exam papers, disease monographs, and AI-powered clinical support — all in one platform.
           </p>
 
           {/* CTA */}
@@ -213,7 +212,7 @@ export default function LandingScreen() {
               Everything you need to excel
             </h2>
             <p className="text-[var(--text-muted)] text-lg max-w-2xl mx-auto">
-              A complete clinical pharmacy study ecosystem — from case-based learning to exam preparation.
+              A complete clinical pharmacy study ecosystem — from care plans to exam preparation.
             </p>
           </div>
 

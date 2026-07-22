@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react'
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import {
@@ -24,6 +24,13 @@ import {
   ClipboardCheck,
   X,
   ChevronLeft,
+  Clock,
+  Send,
+  Newspaper,
+  Heart,
+  Users,
+  Shield,
+  Lock,
 } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 import ClinovaLogo from '../components/ClinovaLogo'
@@ -78,7 +85,7 @@ const STUDY_TRACKS: Record<
     badge: 'ID',
     color: 'border-emerald-500/20 bg-emerald-500/[0.03]',
     points: [
-      'Guideline check: For CURB-65 ≥ 2, initiate Ceftriaxone + Azithromycin/Clarithromycin.',
+      'Guideline check: For CURB-65 >= 2, initiate Ceftriaxone + Azithromycin/Clarithromycin.',
       'Kenya Drug Index check: Avoid Ceftriaxone in neonates receiving IV Calcium solutions.',
       'Dosage pearl: Vancomycin trough targets are 15-20 mcg/mL for severe MRSA infections.',
     ],
@@ -133,7 +140,7 @@ const QUICK_LINKS = [
     to: '/care-plan',
     icon: ClipboardCheck,
     label: 'Care Plan',
-    desc: 'Nursing care plans & management for all clinical areas',
+    desc: 'NANDA nursing care plans across 19 specialties',
     gradient: 'from-teal-500 to-teal-600',
   },
   {
@@ -156,6 +163,59 @@ const QUICK_LINKS = [
     label: 'Online Library',
     desc: 'Clinical reference books & textbooks',
     gradient: 'from-cyan-500 to-cyan-600',
+  },
+]
+
+const COMING_SOON_FEATURES = [
+  {
+    icon: Users,
+    label: 'InContact',
+    desc: 'Connect with fellow pharmacy students, clinicians & mentors across Kenya.',
+    gradient: 'from-blue-500 to-indigo-500',
+  },
+  {
+    icon: Newspaper,
+    label: 'Clinova Info',
+    desc: 'Stay updated with the latest clinical guidelines, pharmacovigilance alerts & health news.',
+    gradient: 'from-emerald-500 to-teal-500',
+  },
+  {
+    icon: Send,
+    label: 'Add Research',
+    desc: 'Publish your clinical research, case reports & pharmacy articles. Have work to share? Send it to us — we will feature it.',
+    gradient: 'from-rose-500 to-orange-500',
+    action: 'mailto:ismahdeismail@gmail.com?subject=Clinova%20Research%20Submission',
+  },
+]
+
+const DAILY_ARTICLES = [
+  {
+    title: 'Antimicrobial Stewardship in Resource-Limited Settings',
+    summary: 'A practical framework for implementing antimicrobial stewardship programs in sub-Saharan Africa. Covers rapid diagnostic integration, empiric therapy guidelines, and community pharmacist engagement strategies.',
+    category: 'Infectious Disease',
+    readTime: '6 min read',
+    badge: 'Featured',
+  },
+  {
+    title: 'Pharmacovigilance: Reporting Adverse Drug Reactions in Kenya',
+    summary: 'Understanding the Kenya Pharmacy and Poisons Board (PPB) yellow card system. Learn how to identify, document, and report ADRs to strengthen post-market surveillance.',
+    category: 'Public Health',
+    readTime: '4 min read',
+    badge: 'Essential',
+  },
+  {
+    title: 'NANDA-NIC-NOC: Structured Nursing Care Plans for Clinical Practice',
+    summary: "An overview of the standardized nursing language system powering Clinova's new Care Plan module. Includes 19 specialties and 47 evidence-based care plans for common clinical conditions.",
+    category: 'Nursing Care',
+    readTime: '5 min read',
+    badge: 'New',
+  },
+  {
+    title: 'Renal Dose Adjustments: A Pharmacist\'s Quick Reference',
+    summary: 'CrCl-based dosing pearls for the most commonly renally-cleared medications. Includes aminoglycosides, DOACs, antifungals, and antimicrobials with practical bedside tables.',
+    category: 'Nephrology',
+    readTime: '3 min read',
+    badge: 'High-Yield',
   },
 ]
 
@@ -193,16 +253,53 @@ export default function DashboardScreen() {
     }
   }, [userData?.id])
 
-  // Live stats
-  const [caseCount, setCaseCount] = useState<number | null>(null)
+  // ── Stable stats (fetched once, cached in localStorage) ──
+  const [caseCount, setCaseCount] = useState<number>(() => {
+    const cached = localStorage.getItem('clinova_stat_cases')
+    return cached ? Number(cached) : 0
+  })
+  const [drugCount, setDrugCount] = useState<number>(() => {
+    const cached = localStorage.getItem('clinova_stat_drugs')
+    return cached ? Number(cached) : BUNDLED_DRUGS.length
+  })
+
   useEffect(() => {
-    if (!supabase) { setCaseCount(0); return }
-    supabase.from('clinical_cases').select('id', { count: 'exact', head: true }).eq('status', 'published')
-      .then(({ count }: any) => setCaseCount((count as number) ?? 0), () => setCaseCount(0))
+    if (!supabase) return
+    // Fetch case count once
+    ;(async () => {
+      try {
+        const { count } = await supabase
+          .from('clinical_cases')
+          .select('id', { count: 'exact', head: true })
+          .eq('status', 'published')
+        const n = (count as number) ?? 0
+        if (n > 0) {
+          setCaseCount(n)
+          localStorage.setItem('clinova_stat_cases', String(n))
+        }
+      } catch { /* ignore */ }
+
+      try {
+        const { count } = await supabase
+          .from('drug_monographs')
+          .select('id', { count: 'exact', head: true })
+        const n = (count as number) ?? 0
+        if (n > 0) {
+          setDrugCount(n)
+          localStorage.setItem('clinova_stat_drugs', String(n))
+        }
+      } catch { /* ignore */ }
+    })()
   }, [])
 
-  const drugCount = BUNDLED_DRUGS.length
   const therapeuticAreaCount = Object.keys(INTEGRATED_UNITS_MAP).length
+  const carePlanCount = useMemo(() => getAllCarePlanDiseases().length, [])
+
+  // Featured article index (rotates daily)
+  const [currentArticleIdx, setCurrentArticleIdx] = useState(() => {
+    const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000)
+    return dayOfYear % DAILY_ARTICLES.length
+  })
 
   // Fetch search results when debounced value changes
   useEffect(() => {
@@ -253,6 +350,8 @@ export default function DashboardScreen() {
     }
   }
 
+  const currentArticle = DAILY_ARTICLES[currentArticleIdx]
+
   return (
     <div className="p-4 sm:p-6 md:p-8 max-w-full 2xl:max-w-7xl mx-auto space-y-6 md:space-y-8 pb-24">
       {/* ── Welcome Banner ── */}
@@ -272,8 +371,8 @@ export default function DashboardScreen() {
               </h1>
               <p className="text-white/80 text-sm max-w-xl leading-relaxed">
                 {isFirstTime
-                  ? 'Your clinical pharmacy companion — explore cases, practice exams, and master therapeutics all in one place.'
-                  : 'Your clinical pharmacy companion — study cases, practice exams, and master therapeutics.'}
+                  ? 'Your all-in-one clinical pharmacy & nursing companion — explore cases, care plans, practice exams, and master therapeutics.'
+                  : 'Your clinical pharmacy & nursing companion — study cases, review care plans, and master therapeutics.'}
               </p>
             </div>
           </div>
@@ -293,6 +392,13 @@ export default function DashboardScreen() {
               <Stethoscope size={16} />
               Clinical Cases
             </Link>
+            <Link
+              to="/care-plan"
+              className="flex items-center gap-2 px-4 py-2.5 bg-white/15 hover:bg-white/25 text-white rounded-xl font-semibold backdrop-blur-sm transition-all text-sm"
+            >
+              <ClipboardCheck size={16} />
+              Care Plans
+            </Link>
           </div>
         </div>
       </div>
@@ -300,9 +406,9 @@ export default function DashboardScreen() {
       {/* ── Quick Stats Row ── */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
         {[
-          { icon: Pill, label: 'Drug Monographs', value: String(drugCount), color: 'text-blue-600', bg: 'bg-blue-500/10' },
-          { icon: BarChart3, label: 'Clinical Cases', value: caseCount !== null ? String(caseCount) : '…', color: 'text-emerald-600', bg: 'bg-emerald-500/10' },
-          { icon: ClipboardCheck, label: 'Care Plans', value: String(getAllCarePlanDiseases().length), color: 'text-teal-600', bg: 'bg-teal-500/10' },
+          { icon: Pill, label: 'Drug Monographs', value: drugCount > 0 ? String(drugCount) : String(BUNDLED_DRUGS.length), color: 'text-blue-600', bg: 'bg-blue-500/10' },
+          { icon: BarChart3, label: 'Clinical Cases', value: caseCount > 0 ? String(caseCount) : '—', color: 'text-emerald-600', bg: 'bg-emerald-500/10' },
+          { icon: ClipboardCheck, label: 'Care Plans', value: String(carePlanCount), color: 'text-teal-600', bg: 'bg-teal-500/10' },
           { icon: TrendingUp, label: 'Therapeutic Areas', value: String(therapeuticAreaCount), color: 'text-rose-600', bg: 'bg-rose-500/10' },
         ].map((stat, idx) => {
           const Icon = stat.icon
@@ -329,7 +435,7 @@ export default function DashboardScreen() {
           <Target size={16} className="text-[var(--primary)]" />
           Quick Access
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3">
           {QUICK_LINKS.map((link, idx) => {
             const Icon = link.icon
             return (
@@ -420,6 +526,45 @@ export default function DashboardScreen() {
       {/* ── Daily Spotlight ── */}
       <DailySpotlight />
 
+      {/* ── Featured Article ── */}
+      <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] shadow-sm overflow-hidden">
+        <div className="p-4 sm:p-5 border-b border-[var(--border)] flex items-center justify-between">
+          <h3 className="font-bold text-sm text-[var(--text)] flex items-center gap-2">
+            <Newspaper size={15} className="text-[var(--primary)]" />
+            Today's Reading
+          </h3>
+          <div className="flex items-center gap-1.5">
+            <button
+              onClick={() => setCurrentArticleIdx(prev => (prev - 1 + DAILY_ARTICLES.length) % DAILY_ARTICLES.length)}
+              className="p-1 rounded-lg hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors cursor-pointer"
+            >
+              <ChevronLeft size={16} />
+            </button>
+            <button
+              onClick={() => setCurrentArticleIdx(prev => (prev + 1) % DAILY_ARTICLES.length)}
+              className="p-1 rounded-lg hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors cursor-pointer"
+            >
+              <ChevronRight size={16} />
+            </button>
+          </div>
+        </div>
+        <div className="p-4 sm:p-5">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] uppercase tracking-wider">
+              {currentArticle.badge}
+            </span>
+            <span className="text-[10px] text-[var(--text-muted)] font-medium">{currentArticle.category}</span>
+            <span className="text-[10px] text-[var(--text-muted)]">·</span>
+            <span className="text-[10px] text-[var(--text-muted)] flex items-center gap-1">
+              <Clock size={10} />
+              {currentArticle.readTime}
+            </span>
+          </div>
+          <h4 className="font-bold text-[var(--text)] text-sm sm:text-base mb-1.5">{currentArticle.title}</h4>
+          <p className="text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed">{currentArticle.summary}</p>
+        </div>
+      </div>
+
       {/* ── Main Content Grid ── */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Left Column — 2/3 */}
@@ -475,8 +620,8 @@ export default function DashboardScreen() {
               Continue Learning
             </h3>
             <p className="text-sm text-[var(--text-muted)] leading-relaxed">
-              Pick up where you left off — dive into clinical cases, review disease monographs, or attempt
-              the next exam paper in your study plan.
+              Pick up where you left off — dive into clinical cases, review disease monographs, attempt
+              the next exam paper, or explore nursing care plans in your study plan.
             </p>
             <div className="flex flex-wrap gap-2 mt-3">
               <Link
@@ -503,12 +648,66 @@ export default function DashboardScreen() {
               >
                 <BookOpen size={14} /> Education Hub
               </Link>
+              <Link
+                to="/drugs"
+                className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-[var(--primary)]/10 text-[var(--primary)] text-xs font-bold hover:bg-[var(--primary)]/20 transition-colors"
+              >
+                <Pill size={14} /> Drug Index
+              </Link>
             </div>
           </div>
         </div>
 
         {/* Right Column — 1/3 */}
         <div className="space-y-4">
+          {/* Coming Soon */}
+          <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] shadow-sm overflow-hidden">
+            <div className="p-4 border-b border-[var(--border)]">
+              <h3 className="font-bold text-sm text-[var(--text)] flex items-center gap-2">
+                <Sparkles size={15} className="text-amber-500" />
+                Coming Soon
+              </h3>
+              <p className="text-[11px] text-[var(--text-muted)] leading-relaxed mt-1">
+                Exciting features on the way — stay tuned.
+              </p>
+            </div>
+            <div className="divide-y divide-[var(--border)]">
+              {COMING_SOON_FEATURES.map((feature) => {
+                const Icon = feature.icon
+                const Wrapper: React.FC<{ children: React.ReactNode }> = feature.action
+                  ? ({ children }) => (
+                      <a href={feature.action} target="_blank" rel="noopener noreferrer" className="block">
+                        {children}
+                      </a>
+                    )
+                  : ({ children }) => <div>{children}</div>
+                return (
+                  <Wrapper key={feature.label}>
+                    <div className="p-3.5 flex items-start gap-3 hover:bg-[var(--surface-dim)] transition-colors">
+                      <span className={`w-8 h-8 rounded-lg bg-gradient-to-br ${feature.gradient} text-white flex items-center justify-center shrink-0 shadow-sm`}>
+                        <Icon size={14} />
+                      </span>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-center gap-2">
+                          <p className="text-xs font-bold text-[var(--text)]">{feature.label}</p>
+                          <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-amber-500/10 text-amber-600 uppercase tracking-wider">
+                            Soon
+                          </span>
+                        </div>
+                        <p className="text-[11px] text-[var(--text-muted)] leading-relaxed mt-0.5">{feature.desc}</p>
+                        {feature.action && (
+                          <p className="text-[10px] text-[var(--primary)] font-semibold mt-1 flex items-center gap-1">
+                            <Send size={9} /> Submit your work
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  </Wrapper>
+                )
+              })}
+            </div>
+          </div>
+
           {/* Contact & Feedback */}
           <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] shadow-sm overflow-hidden">
             <div className="p-4 border-b border-[var(--border)]">

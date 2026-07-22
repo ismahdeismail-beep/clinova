@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import {
   Menu, Search,
-  X, LogOut,
+  X, LogOut, Bell, BellRing,
 } from 'lucide-react';
 
 const DashboardScreen = React.lazy(() => import('./screens/DashboardScreen'));
@@ -22,6 +22,7 @@ const LoginScreen = React.lazy(() => import('./screens/LoginScreen'));
 const LandingScreen = React.lazy(() => import('./screens/LandingScreen'));
 
 import { useAuth } from './contexts/AuthContext';
+import { useNotifications } from './contexts/NotificationContext';
 import ClinovaLogo from './components/ClinovaLogo';
 import ThemeToggle from './components/ThemeToggle';
 import { NAV_GROUPS, type NavGroup } from './data/navigationConfig';
@@ -30,7 +31,19 @@ import BottomNav from './components/BottomNav';
 
 function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
   const { userData } = useAuth();
-  
+  const { notifications, unreadCount, markAsRead, markAllAsRead } = useNotifications();
+  const [showNotifPanel, setShowNotifPanel] = React.useState(false);
+  const notifRef = React.useRef<HTMLDivElement>(null);
+
+  // Close on outside click
+  React.useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (notifRef.current && !notifRef.current.contains(e.target as Node)) setShowNotifPanel(false);
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
   return (
     <div className="fixed top-0 left-0 right-0 z-30 md:z-50 md:left-64 flex justify-center pointer-events-none pt-[env(safe-area-inset-top,0px)] bg-[var(--surface)]/80 backdrop-blur-md border-b border-[var(--border)]">
       <header className="pointer-events-auto flex items-center justify-between bg-transparent h-16 w-full px-4 lg:px-8">
@@ -72,6 +85,72 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
 
         <div className="flex items-center gap-1 sm:gap-2 shrink-0">
           <ThemeToggle />
+
+          {/* Notification Bell */}
+          <div className="relative" ref={notifRef}>
+            <button
+              onClick={() => setShowNotifPanel(!showNotifPanel)}
+              className="relative p-2 rounded-full text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)] transition-all cursor-pointer"
+              aria-label="Notifications"
+            >
+              {unreadCount > 0 ? <BellRing size={18} className="text-[var(--primary)]" /> : <Bell size={18} />}
+              {unreadCount > 0 && (
+                <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-red-500 text-white text-[9px] font-bold rounded-full flex items-center justify-center shadow-sm">
+                  {unreadCount > 9 ? '9+' : unreadCount}
+                </span>
+              )}
+            </button>
+
+            {showNotifPanel && (
+              <div className="absolute right-0 top-full mt-2 w-80 sm:w-96 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-xl z-50 overflow-hidden">
+                <div className="p-3 border-b border-[var(--border)] flex items-center justify-between">
+                  <h4 className="font-bold text-sm text-[var(--text)]">Notifications</h4>
+                  {unreadCount > 0 && (
+                    <button
+                      onClick={() => { markAllAsRead(); }}
+                      className="text-[10px] font-bold text-[var(--primary)] hover:underline cursor-pointer"
+                    >
+                      Mark all read
+                    </button>
+                  )}
+                </div>
+                <div className="max-h-80 overflow-y-auto divide-y divide-[var(--border)]/50">
+                  {notifications.length === 0 ? (
+                    <div className="p-6 text-center">
+                      <Bell size={20} className="mx-auto text-[var(--text-muted)]/40 mb-2" />
+                      <p className="text-xs text-[var(--text-muted)]">No notifications yet</p>
+                    </div>
+                  ) : (
+                    notifications.slice(0, 10).map((n) => (
+                      <button
+                        key={n.id}
+                        onClick={() => {
+                          markAsRead(n.id);
+                          if (n.link) {
+                            window.location.href = n.link;
+                          }
+                          setShowNotifPanel(false);
+                        }}
+                        className={`w-full p-3 flex items-start gap-3 hover:bg-[var(--surface-dim)] transition-colors text-left cursor-pointer ${!n.read ? 'bg-[var(--primary)]/[0.03]' : ''}`}
+                      >
+                        <span className={`w-7 h-7 rounded-lg ${n.bg} flex items-center justify-center shrink-0 mt-0.5`}>
+                          <BellRing size={12} className={n.color} />
+                        </span>
+                        <div className="min-w-0 flex-1">
+                          <p className="text-xs font-bold text-[var(--text)]">{n.title}</p>
+                          <p className="text-[11px] text-[var(--text-muted)] leading-relaxed mt-0.5 line-clamp-2">{n.message}</p>
+                          <p className="text-[9px] text-[var(--text-muted)]/60 mt-1">{n.time}</p>
+                        </div>
+                        {!n.read && (
+                          <span className="w-2 h-2 rounded-full bg-[var(--primary)] shrink-0 mt-1.5" />
+                        )}
+                      </button>
+                    ))
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
           
           <div className="h-8 w-px bg-[var(--border)] mx-1 hidden sm:block"></div>
           

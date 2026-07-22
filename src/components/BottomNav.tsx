@@ -12,6 +12,9 @@ const NAV_ITEMS = [
 export default function BottomNav() {
   const location = useLocation()
 
+  // Hide BottomNav on the Clinova Support route — it uses its own fixed layout
+  if (location.pathname === '/assistant') return null
+
   const isActive = (to: string) => {
     if (to === '/') return location.pathname === '/'
     return location.pathname === to || location.pathname.startsWith(to + '/')

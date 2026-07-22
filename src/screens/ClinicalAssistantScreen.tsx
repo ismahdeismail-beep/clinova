@@ -914,11 +914,16 @@ export default function ClinicalAssistantScreen() {
             console.warn('[ClinovaSupport] KnowledgeEngine retrieval failed:', e);
           }
 
+          // Use AbortController to prevent endless loading if server hangs
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), 60000); // 60s timeout
+          try {
           const res = await fetch('/api/gemini/assistant/stream', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },
+            signal: controller.signal,
             body: JSON.stringify({
               userMessage: userQuery,
               chatHistory: messages.filter(m => !m.isThinking).map(m => ({
@@ -971,6 +976,9 @@ export default function ClinicalAssistantScreen() {
           responseContent = streamedText || 'No response received.';
           success = true;
           break;
+        } finally {
+          clearTimeout(timeoutId);
+        }
         } catch (err: any) {
           console.warn(`[ClinovaSupport] Attempt ${attempt} failed:`, err);
           lastError = err;
@@ -1036,7 +1044,7 @@ export default function ClinicalAssistantScreen() {
 
   return (
     <div 
-      className="fixed inset-0 md:left-64 md:top-[calc(4rem+env(safe-area-inset-top,0px))] md:bottom-0 md:right-0 bg-[var(--bg)] text-[var(--text)] flex flex-row overflow-hidden z-30 font-sans"
+      className="fixed inset-0 md:left-64 md:top-[calc(4rem+env(safe-area-inset-top,0px))] md:bottom-0 md:right-0 bg-[var(--bg)] text-[var(--text)] flex flex-row overflow-hidden z-50 font-sans"
     >
       
       {/* Sidebar for Mobile & Desktop */}

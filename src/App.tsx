@@ -24,6 +24,7 @@ import ClinovaLogo from './components/ClinovaLogo';
 import ThemeToggle from './components/ThemeToggle';
 import { NAV_GROUPS, type NavGroup } from './data/navigationConfig';
 import { InstallPWA } from './components/InstallPWA';
+import BottomNav from './components/BottomNav';
 
 function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
   const { userData } = useAuth();
@@ -223,7 +224,7 @@ function AppContent() {
       <TopNavigation onMenuClick={() => setIsSidebarOpen(!isSidebarOpen)} />
       <div className="flex-1 flex overflow-hidden relative">
         <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
-        <main id="main-scroll-area" className="flex-1 md:pl-64 overflow-y-auto pt-[calc(4rem+env(safe-area-inset-top,0px))]">
+        <main id="main-scroll-area" className="flex-1 md:pl-64 overflow-y-auto pt-[calc(4rem+env(safe-area-inset-top,0px))] pb-16 md:pb-0">
           <React.Suspense fallback={
             <div className="h-full flex flex-col items-center justify-center p-8 text-center">
               <div className="flex flex-col items-center gap-5 animate-pulse">
@@ -259,6 +260,7 @@ function AppContent() {
           <InstallPWA />
         </main>
       </div>
+      <BottomNav />
     </div>
   );
 }

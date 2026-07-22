@@ -1,3 +1,23 @@
+## 2026-07-22
+
+### Added
+- **Nursing Care Plans module**: 14 specialties, 10 fully detailed care plans with NANDA/NIC/NOC structure, 3-level navigation (specialty → disease → full care plan with 5 tabs). Routes: `/care-plan`, `/care-plan/:specialtyId`, `/care-plan/:specialtyId/:disease`.
+- **Mobile bottom navigation bar**: 5-tab bottom nav (Home, Education Hub, Drug Index, Exam, Care Plan) with active route detection, backdrop blur, and safe-area-inset support. Mobile-only (`md:hidden`).
+- **Landing page upgrade**: Updated to reflect current module structure — Education Hub, Exam & Board Exam, Nursing Care Plans. Added "Nursing & Allied Health" audience card.
+- **Settings — Notifications section**: Push notification toggle, recent notifications list with read/unread status, mark-all-read button.
+- **Settings — Account section**: Sign out button with loading spinner.
+- **Vercel Analytics + Speed Insights**: Privacy-friendly web analytics and Core Web Vitals tracking integrated at app root.
+
+### Changed
+- **Dashboard**: Replaced "Exam Papers" stat with "Care Plans" (10). Added Care Plan to Continue Learning quick actions.
+- **Education Hub**: Removed Exam Prep module (now lives in dedicated Exam tab). Removed `ExamPrepView` import and dead `exam-prep` tab code from `EducationHubScreen`.
+- **Navigation**: Exam is now a single sidebar nav link (no collapsible group). `EXAM_SUB_ITEMS` removed from `navigationConfig.ts`.
+- **README.md**: Comprehensive rewrite reflecting all current modules, tech stack updates (PWA, Analytics), and project structure.
+
+### Removed
+- Exam Prep module from Education Hub (`curriculum.ts` EDUCATION_MODULES).
+- Unused imports: `EXAM_PREP_UNITS`, `ScrollText`, `Clock`, `ExamPrepView` from DashboardScreen, EducationHubScreen, curriculum.
+
 ## 2026-07-12
 
 ### Fixed

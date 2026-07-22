@@ -101,7 +101,17 @@ const FEATURE_ANNOUNCEMENTS = [
 ];
 
 export function NotificationProvider({ children }: { children: ReactNode }) {
-  const [notifications, setNotifications] = useState<AppNotification[]>(DEFAULT_NOTIFICATIONS);
+  const [notifications, setNotifications] = useState<AppNotification[]>(() => {
+    const saved = localStorage.getItem('clinova_notifications');
+    if (saved) {
+      try { return JSON.parse(saved); } catch { /* ignore */ }
+    }
+    return DEFAULT_NOTIFICATIONS;
+  });
+
+  useEffect(() => {
+    localStorage.setItem('clinova_notifications', JSON.stringify(notifications));
+  }, [notifications]);
 
   // Check for unseen feature announcements
   useEffect(() => {
@@ -216,11 +226,19 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
   }, [addNotification, getDrugOfTheDay])
 
   const markAsRead = (id: string) => {
-    setNotifications(prev => prev.map(n => n.id === id ? { ...n, read: true } : n));
+    setNotifications(prev => {
+      const updated = prev.map(n => n.id === id ? { ...n, read: true } : n);
+      localStorage.setItem('clinova_notifications', JSON.stringify(updated));
+      return updated;
+    });
   };
 
   const markAllAsRead = () => {
-    setNotifications(prev => prev.map(n => ({ ...n, read: true })));
+    setNotifications(prev => {
+      const updated = prev.map(n => ({ ...n, read: true }));
+      localStorage.setItem('clinova_notifications', JSON.stringify(updated));
+      return updated;
+    });
   };
 
   const unreadCount = notifications.filter(n => !n.read).length;

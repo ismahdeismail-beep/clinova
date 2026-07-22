@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate, Navigate 
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import {
-  Menu, Search,
+  Menu, Search, Bot,
   X, LogOut, Bell, BellRing,
 } from 'lucide-react';
 
@@ -83,7 +83,16 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
           </div>
         </div>
 
-        <div className="flex items-center gap-1 sm:gap-2 shrink-0">
+        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+          <Link
+            to="/assistant"
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-[var(--primary)]/10 hover:bg-[var(--primary)]/20 text-[var(--primary)] rounded-full text-xs font-bold transition-all cursor-pointer"
+            title="Clinova Support AI"
+          >
+            <Bot size={16} />
+            <span className="hidden sm:inline">Clinova Support</span>
+          </Link>
+
           <ThemeToggle />
 
           {/* Notification Bell */}

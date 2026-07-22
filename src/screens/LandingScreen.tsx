@@ -9,13 +9,13 @@ import {
 import ClinovaLogo from '../components/ClinovaLogo'
 import { BUNDLED_DRUGS } from '../data/drugIndexData'
 import { INTEGRATED_UNITS_MAP } from '../data/curriculum'
-import { INITIAL_CASES } from '../data/clinicalCasesData'
+import { INITIAL_CASES, ALL_CLINICAL_CASES } from '../data/clinicalCasesData'
 
 export default function LandingScreen() {
   const navigate = useNavigate()
 
-  const drugCount = BUNDLED_DRUGS.length
-  const caseCount = INITIAL_CASES.length
+  const drugCount = 355
+  const caseCount = ALL_CLINICAL_CASES.length
   const therapeuticAreaCount = Object.keys(INTEGRATED_UNITS_MAP).length
 
   const features = [
@@ -44,7 +44,7 @@ export default function LandingScreen() {
       icon: ClipboardCheck,
       title: 'Nursing Care Plans',
       description:
-        'Structured NANDA, NIC, and NOC care plans across 14 specialties with 10 fully detailed plans covering pathophysiology, goals, interventions, and rationales.',
+        'Structured NANDA, NIC, and NOC care plans across 19 specialties with 94 fully detailed care plans covering pathophysiology, diagnoses, interventions, and discharge planning.',
       gradient: 'from-teal-500 to-cyan-600',
     },
     {
@@ -67,7 +67,7 @@ export default function LandingScreen() {
     { value: String(therapeuticAreaCount), label: 'Therapeutic Areas', icon: Layers },
     { value: String(caseCount), label: 'Clinical Cases', icon: Stethoscope },
     { value: String(drugCount), label: 'Drug Monographs', icon: Pill },
-    { value: '10', label: 'Care Plans', icon: ClipboardCheck },
+    { value: '94', label: 'Care Plans', icon: ClipboardCheck },
   ]
 
   const steps = [

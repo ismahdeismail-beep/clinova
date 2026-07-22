@@ -24,6 +24,8 @@
     "@tailwindcss/vite": "^4.1.14",
     "@tanstack/react-virtual": "^3.14.6",
     "@types/d3": "^7.4.3",
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "@vitejs/plugin-react": "^5.0.4",
     "@xyflow/react": "^12.11.0",
     "browser-image-compression": "^2.0.2",

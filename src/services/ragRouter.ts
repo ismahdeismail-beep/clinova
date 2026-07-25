@@ -87,11 +87,14 @@ export const RAGRouter = {
     const intent = this.analyzeIntent(query, engineResult);
     const targetAgent = getAgent(intent);
 
+    // Always run RAG — the KnowledgeEngine searches all sources for every query.
+    // Even when hasData is false, the engine performed the search and we should
+    // report that to the AI so it knows the database was checked.
     return {
       intent,
       targetAgent,
       engineResult,
-      requiresRag: engineResult.hasData || intent !== 'general',
+      requiresRag: true,
     };
   },
 
@@ -144,6 +147,13 @@ export const RAGRouter = {
         context += `- **${d.title}**: ${d.content}\n`;
       }
       context += '\n';
+    }
+
+    // Fallback: if the formatted sections are empty but contextSummary exists, use it
+    if (context.trim() === '## Retrieved Knowledge Sources\n\nIntent: ' + engineResult.intent) {
+      if (engineResult.contextSummary) {
+        context += engineResult.contextSummary + '\n';
+      }
     }
 
     return context;

@@ -1,10 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
   Bot, Send, User, BrainCircuit, Library, Pill, Activity, 
   FlaskConical, FileText, CheckCircle2, ChevronDown, ChevronRight, Loader2, 
   Database, AlertCircle, Mic, MicOff, ArrowDown, X, Layers, Sparkles,
   Download, FileDown, Copy, Check, Menu, Plus, Settings,
-  Trash2, AlertTriangle
+  Trash2, AlertTriangle, Stethoscope, GraduationCap, HeartPulse
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { RAGRouter } from '../services/ragRouter';
@@ -279,6 +280,7 @@ function DownloadButton({ content, filename }: { content: string; filename: stri
 }
 
 export default function ClinicalAssistantScreen() {
+  const navigate = useNavigate();
   const { userData } = useAuth();
   const [currentSessionId, setCurrentSessionId] = useState<string>('session-' + Date.now());
   const [chatSessions, setChatSessions] = useState<ChatSession[]>([]);
@@ -1240,6 +1242,42 @@ export default function ClinicalAssistantScreen() {
                       );
                     })}
                   </div>
+                </div>
+              </motion.div>
+
+              {/* Quick Navigation */}
+              <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.1, duration: 0.4 }}
+                className="mt-4 sm:mt-8 space-y-2 sm:space-y-3"
+              >
+                <div className="flex items-center gap-2 px-1">
+                  <Layers size={14} className="text-[var(--primary)]" />
+                  <span className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Quick Navigation</span>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                  {[
+                    { icon: Pill, label: 'Drug Index', desc: '355 monographs', path: '/drug-index' },
+                    { icon: Stethoscope, label: 'Clinical Cases', desc: '300+ simulations', path: '/clinical-cases' },
+                    { icon: GraduationCap, label: 'Exam Prep', desc: 'Mock papers & topics', path: '/exam' },
+                    { icon: HeartPulse, label: 'Care Plans', desc: '94 NANDA/NIC/NOC', path: '/care-plans' },
+                  ].map((nav, i) => {
+                    const Icon = nav.icon;
+                    return (
+                      <button
+                        key={i}
+                        onClick={() => navigate(nav.path)}
+                        className="flex flex-col items-center gap-1.5 p-3 sm:p-4 bg-[var(--surface)] hover:bg-[var(--primary)]/5 border border-[var(--border)]/80 hover:border-[var(--primary)]/30 rounded-xl text-center transition-all cursor-pointer group"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/10 group-hover:bg-[var(--primary)]/15 transition-colors">
+                          <Icon size={18} />
+                        </div>
+                        <span className="text-xs font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">{nav.label}</span>
+                        <span className="text-[10px] text-[var(--text-muted)] leading-tight">{nav.desc}</span>
+                      </button>
+                    );
+                  })}
                 </div>
               </motion.div>
 

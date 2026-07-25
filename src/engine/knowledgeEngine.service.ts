@@ -22,56 +22,95 @@ export interface KnowledgeEngineResult {
   hasData: boolean;
 }
 
+// -- Stop words stripped during keyword extraction --
+const STOP_WORDS = new Set([
+  'a', 'an', 'the', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
+  'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
+  'should', 'may', 'might', 'can', 'shall', 'to', 'of', 'in', 'for',
+  'on', 'with', 'at', 'by', 'from', 'as', 'into', 'through', 'during',
+  'before', 'after', 'above', 'below', 'between', 'out', 'off', 'over',
+  'under', 'again', 'further', 'then', 'once', 'here', 'there', 'when',
+  'where', 'why', 'how', 'all', 'both', 'each', 'few', 'more', 'most',
+  'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 'same',
+  'so', 'than', 'too', 'very', 'just', 'about', 'what', 'which', 'who',
+  'whom', 'this', 'that', 'these', 'those', 'and', 'but', 'if', 'or',
+  'because', 'until', 'while', 'its', 'it', 'they', 'them', 'their',
+  'we', 'our', 'you', 'your', 'he', 'she', 'his', 'her', 'my', 'me',
+  'i', 'am', 'get', 'got', 'let', 'say', 'said', 'tell', 'told',
+  'give', 'take', 'make', 'know', 'think', 'see', 'come', 'go',
+  'want', 'look', 'use', 'find', 'ask', 'work', 'seem', 'feel',
+  'try', 'leave', 'call', 'need', 'become', 'keep', 'mean', 'set',
+  'help', 'show', 'hear', 'play', 'run', 'move', 'live', 'believe',
+  'bring', 'happen', 'must', 'write', 'provide', 'hold', 'turn',
+  'present', 'explain', 'discuss', 'describe', 'review', 'compare',
+  'list', 'outline', 'summarize', 'define', 'identify', 'state',
+  'mention', 'note', 'patient', 'patients', 'case', 'cases',
+  'scenario', 'scenarios', 'manage', 'managed', 'managing',
+  'treatment', 'treat', 'treated', 'clinical', 'clinically',
+  'medical', 'medication', 'medications', 'prescribe', 'prescribed',
+  'dosing', 'dose', 'dosage', 'drug', 'drugs', 'medicine', 'medicines',
+  'disease', 'diseases', 'condition', 'conditions', 'health',
+  'hospital', 'ward', 'admission', 'admit', 'discharge',
+]);
+
+// -- Known disease names for direct matching --
+const KNOWN_DISEASES = new Set<string>();
+for (const c of ALL_CLINICAL_CASES) {
+  if (c.disease) KNOWN_DISEASES.add(c.disease.toLowerCase());
+}
+
 function detectIntent(query: string): QueryIntent {
   const q = query.toLowerCase();
 
-  if (q.includes('interaction') || q.includes('interact with') || q.includes('combine') || q.includes('take with')) {
+  if (q.includes('interaction') || q.includes('interact with') || q.includes('combine') ||
+      q.includes('take with') || q.includes('co-prescrib') || q.includes('together with')) {
     return 'drug_interaction';
   }
 
   if (q.includes('dose') || q.includes('dosage') || q.includes('dosing') || q.includes('side effect') ||
       q.includes('contraindication') || q.includes('monitoring') || q.includes('counselling') ||
-      q.includes('counseling') || q.includes('mg') || q.includes('mcg') || q.includes('drug') || q.includes('medicine') ||
-      q.includes('pharmacology') || q.includes('mechanism') || q.includes('antibiotic') ||
-      q.includes('analgesic') || q.includes('antihypertensive') || q.includes('antidiabetic') ||
-      q.includes('injection') || q.includes('tablet') || q.includes('syrup') || q.includes('infusion')) {
+      q.includes('counseling') || q.includes('mg') || q.includes('mcg') || q.includes('pharmacology') ||
+      q.includes('mechanism') || q.includes('antibiotic') || q.includes('analgesic') ||
+      q.includes('antihypertensive') || q.includes('antidiabetic') || q.includes('injection') ||
+      q.includes('tablet') || q.includes('syrup') || q.includes('infusion') ||
+      q.includes('prescri') || q.includes('formulary') || q.includes('dispensing')) {
     return 'drug_info';
   }
 
   if (q.includes('disease') || q.includes('condition') || q.includes('pathophysiology') ||
       q.includes('aetiology') || q.includes('etiology') || q.includes('epidemiology') ||
-      q.includes('diagnosis') || q.includes('signs') || q.includes('symptoms') ||
-      q.includes('presentation') || q.includes('clinical features')) {
+      q.includes('signs') || q.includes('symptoms') || q.includes('clinical features') ||
+      q.includes('presentation') || q.includes('classify') || q.includes('classification') ||
+      q.includes('complications') || q.includes('prognosis')) {
     return 'disease_info';
-  }
-
-  if (q.includes('case') || q.includes('scenario') || q.includes('patient') ||
-      q.includes('management') || q.includes('treatment of') || q.includes('how to manage') ||
-      q.includes('approach to')) {
-    return 'case_lookup';
   }
 
   if (q.includes('guideline') || q.includes('protocol') || q.includes('first-line') ||
       q.includes('first line') || q.includes('stg') || q.includes('who') ||
-      q.includes('standard treatment') || q.includes('regimen') || q.includes('stepwise')) {
+      q.includes('standard treatment') || q.includes('regimen') || q.includes('stepwise') ||
+      q.includes('kenya') || q.includes('national')) {
     return 'guideline';
+  }
+
+  if (q.includes('case') || q.includes('scenario') || q.includes('management') ||
+      q.includes('treatment of') || q.includes('how to manage') || q.includes('approach to') ||
+      q.includes('workup') || q.includes('investigation') || q.includes('diagnosis')) {
+    return 'case_lookup';
   }
 
   return 'general';
 }
 
-/** Build a fast lookup set of all known drug names (from static index + hardcoded list) */
+// -- Drug name index --
 function buildDrugNameSet(): Set<string> {
   const names = new Set<string>()
   for (const d of BUNDLED_DRUGS) {
     names.add(d.name.toLowerCase())
     if (d.generic_name) names.add(d.generic_name.toLowerCase())
-    // Also index brand names for lookups
     if (d.brand_names) {
       for (const bn of d.brand_names) names.add(bn.toLowerCase())
     }
   }
-  // Additional common names / brand-name variants
   const extras = [
     'co-trimoxazole', 'sodium valproate', 'ferrous sulphate', 'ferrous sulfate',
     'augmentin', 'panadol', 'brufen', 'flagyl', 'nexium', 'ventolin',
@@ -80,7 +119,6 @@ function buildDrugNameSet(): Set<string> {
   return names
 }
 
-/** Build an indication → drug name map for indication-based search */
 function buildIndicationMap(): Map<string, string[]> {
   const map = new Map<string, string[]>()
   for (const d of BUNDLED_DRUGS) {
@@ -98,7 +136,6 @@ function buildIndicationMap(): Map<string, string[]> {
 const ALL_DRUG_NAMES = buildDrugNameSet()
 const INDICATION_MAP = buildIndicationMap()
 
-/** Simple Levenshtein distance for fuzzy matching */
 function levenshtein(a: string, b: string): number {
   const m = a.length, n = b.length
   const dp: number[][] = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0))
@@ -116,6 +153,53 @@ function levenshtein(a: string, b: string): number {
   return dp[m][n]
 }
 
+/** Extract meaningful medical keywords, stripping NLP filler */
+function extractKeywords(query: string): string[] {
+  const q = query.toLowerCase()
+    .replace(/[^\w\s\-\/]/g, ' ')
+    .replace(/\b\d+\b/g, ' ')
+    .trim()
+
+  const words = q.split(/\s+/).filter(w =>
+    w.length >= 2 && !STOP_WORDS.has(w)
+  )
+
+  const seen = new Set<string>()
+  const unique: string[] = []
+  for (const w of words) {
+    if (!seen.has(w)) {
+      seen.add(w)
+      unique.push(w)
+    }
+  }
+  return unique
+}
+
+/** Extract the most relevant disease/topic term(s) from a query for DB search */
+function extractDiseaseKeywords(query: string): string[] {
+  const q = query.toLowerCase()
+  const keywords: string[] = []
+
+  // Try exact disease name match from known diseases
+  for (const disease of KNOWN_DISEASES) {
+    if (q.includes(disease)) {
+      keywords.push(disease)
+    }
+  }
+  if (keywords.length > 0) return keywords
+
+  // Strip clinical NLP noise and return extracted keywords
+  const stripped = q
+    .replace(/\b(explain|describe|discuss|what|how|why|when|which|tell|me|about|the|a|an|is|are|was|were|do|does|did|can|could|would|should|for|in|with|of|on|at|to|from|and|or|but|not|this|that|it|its|my|your|our|their|we|you|they|he|she|his|her)\b/gi, ' ')
+    .replace(/\b(treatment|management|pathophysiology|aetiology|etiology|epidemiology|diagnosis|signs|symptoms|clinical|features|presentation|complications|overview|guideline|protocol|pharmacology|drug|therapy|therapeutics|approach to)\b/gi, ' ')
+    .replace(/[^\w\s\-]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+
+  const extracted = extractKeywords(stripped)
+  return extracted.length > 0 ? extracted : extractKeywords(query)
+}
+
 function extractDrugNames(query: string): string[] {
   const q = query.toLowerCase()
   const found: string[] = []
@@ -125,7 +209,7 @@ function extractDrugNames(query: string): string[] {
   for (const name of ALL_DRUG_NAMES) {
     if (name.includes(' ') && q.includes(name)) multiWord.push(name)
   }
-  multiWord.sort((a, b) => b.length - a.length) // longest first
+  multiWord.sort((a, b) => b.length - a.length)
   found.push(...multiWord)
 
   // Single-word names
@@ -134,14 +218,12 @@ function extractDrugNames(query: string): string[] {
     if (ALL_DRUG_NAMES.has(w) && !found.includes(w)) found.push(w)
   }
 
-  // If nothing matched by exact name, try partial + fuzzy match
+  // Partial + fuzzy match if nothing found
   if (found.length === 0) {
-    // Partial match first (substring)
     for (const name of ALL_DRUG_NAMES) {
       if (q.includes(name) && !found.includes(name)) found.push(name)
     }
 
-    // Fuzzy match (Levenshtein distance ≤ 2 for short names, ≤ 3 for longer)
     if (found.length === 0) {
       const queryWords = q.split(/\s+/).filter(w => w.length >= 3)
       for (const qw of queryWords) {
@@ -164,30 +246,31 @@ function extractDrugNames(query: string): string[] {
     }
   }
 
-  return found
+  return found.slice(0, 10)
 }
 
-/** Search for drugs by indication keywords (e.g. "UTI", "hypertension") */
-function searchByIndication(query: string): string[] {
-  const q = query.toLowerCase()
+/** Search drugs by indication keywords using substring matching */
+function searchByIndication(keywords: string[]): string[] {
   const matchedDrugs = new Set<string>()
 
-  for (const [indication, drugs] of INDICATION_MAP) {
-    if (q.includes(indication) || indication.includes(q)) {
-      for (const d of drugs) matchedDrugs.add(d)
+  for (const kw of keywords) {
+    const lower = kw.toLowerCase()
+    for (const [indication, drugs] of INDICATION_MAP) {
+      if (indication.includes(lower) || lower.includes(indication)) {
+        for (const d of drugs) matchedDrugs.add(d)
+      }
     }
   }
 
-  // Also check disease names from clinical cases for cross-reference
+  // Cross-reference with clinical case disease names
   if (matchedDrugs.size === 0) {
-    for (const c of ALL_CLINICAL_CASES) {
-      const disease = (c.disease || '').toLowerCase()
-      const specialty = (c.specialty || '').toLowerCase()
-      if (q.includes(disease) || disease.includes(q) || q.includes(specialty)) {
-        // Find drugs that treat this disease via indications
-        for (const [indication, drugs] of INDICATION_MAP) {
-          if (indication.includes(disease) || disease.includes(indication)) {
-            for (const d of drugs) matchedDrugs.add(d)
+    for (const disease of KNOWN_DISEASES) {
+      for (const kw of keywords) {
+        if (disease.includes(kw.toLowerCase()) || kw.toLowerCase().includes(disease)) {
+          for (const [indication, drugs] of INDICATION_MAP) {
+            if (indication.includes(disease) || disease.includes(indication)) {
+              for (const d of drugs) matchedDrugs.add(d)
+            }
           }
         }
       }
@@ -197,173 +280,199 @@ function searchByIndication(query: string): string[] {
   return Array.from(matchedDrugs).slice(0, 10)
 }
 
+/** Format a drug monograph into a concise knowledge source */
+function formatDrugSource(m: DrugMonograph, relevance: number): KnowledgeSource {
+  const parts: string[] = []
+  parts.push(`CLASS: ${m.drug_class_name || m.drug_class}`)
+  if (m.mechanism_of_action) parts.push(`MECHANISM: ${m.mechanism_of_action.slice(0, 200)}`)
+  parts.push(`INDICATIONS: ${m.indications.slice(0, 5).join('; ')}`)
+  if (m.dosage) {
+    const dosageEntries = Object.entries(m.dosage).slice(0, 3)
+    if (dosageEntries.length > 0) {
+      parts.push(`DOSAGE: ${dosageEntries.map(([k, v]) => `${k}: ${typeof v === 'string' ? v : JSON.stringify(v)}`).join('; ')}`)
+    }
+  }
+  parts.push(`CONTRAINDICATIONS: ${m.contraindications.slice(0, 4).join('; ')}`)
+  parts.push(`SIDE EFFECTS: ${m.side_effects.slice(0, 5).join('; ')}`)
+  if (m.interactions.length > 0) parts.push(`INTERACTIONS: ${m.interactions.slice(0, 5).join('; ')}`)
+  if (m.monitoring) parts.push(`MONITORING: ${m.monitoring.slice(0, 300)}`)
+  if (m.patient_counselling) parts.push(`COUNSELLING: ${m.patient_counselling.slice(0, 200)}`)
+  if (m.pregnancy_category) parts.push(`PREGNANCY: ${m.pregnancy_category}`)
+  if (m.overdose) parts.push(`OVERDOSE: ${m.overdose.slice(0, 200)}`)
+
+  return {
+    type: 'drug_monograph',
+    id: m.id,
+    title: m.name,
+    content: parts.join('\n'),
+    relevance,
+  }
+}
+
 export const KnowledgeEngine = {
   async process(query: string, customClient?: any): Promise<KnowledgeEngineResult> {
-    const intent = detectIntent(query);
-    const drugNames = extractDrugNames(query);
+    const intent = detectIntent(query)
+    const drugNames = extractDrugNames(query)
+    const keywords = extractKeywords(query)
+    const diseaseKeywords = extractDiseaseKeywords(query)
 
-    const sources: KnowledgeSource[] = [];
-    let drugMonographs: DrugMonograph[] | undefined;
-    
-    // Use the provided customClient (admin client) or fallback to the browser client
-    const client = customClient || supabase;
+    const sources: KnowledgeSource[] = []
+    let drugMonographs: DrugMonograph[] | undefined
 
-    if (intent === 'drug_info' || intent === 'drug_interaction' || drugNames.length > 0) {
-      if (drugNames.length > 0) {
-        const results: DrugMonograph[] = [];
-        for (const name of drugNames) {
-          const mono = await DrugMonographService.getByName(name);
-          if (mono) results.push(mono);
-        }
-        if (results.length === 0) {
-          results.push(...await DrugMonographService.search(query));
-        }
-        drugMonographs = results;
+    const client = customClient || supabase
 
+    // -- 1. Drug monograph search: ALWAYS attempted --
+    if (drugNames.length > 0) {
+      const results: DrugMonograph[] = []
+      for (const name of drugNames) {
+        const mono = await DrugMonographService.getByName(name)
+        if (mono) results.push(mono)
+      }
+      if (results.length === 0) {
+        results.push(...await DrugMonographService.search(drugNames[0]))
+      }
+      drugMonographs = results
+
+      for (const m of results) {
+        sources.push(formatDrugSource(m, 0.95))
+      }
+
+      if (intent === 'drug_interaction' && results.length > 0) {
         for (const m of results) {
-          const parts: string[] = [];
-          parts.push(`CLASS: ${m.drug_class_name || m.drug_class}`);
-          parts.push(`INDICATIONS: ${m.indications.slice(0, 3).join('; ')}`);
-          parts.push(`CONTRAINDICATIONS: ${m.contraindications.slice(0, 3).join('; ')}`);
-          parts.push(`KEY SIDE EFFECTS: ${m.side_effects.slice(0, 3).join('; ')}`);
-          if (m.interactions.length > 0) {
-            parts.push(`INTERACTIONS: ${m.interactions.slice(0, 4).join('; ')}`);
-          }
-          parts.push(`MONITORING: ${m.monitoring.slice(0, 200)}`);
-
-          sources.push({
-            type: 'drug_monograph',
-            id: m.id,
-            title: m.name,
-            content: parts.join('\n'),
-            relevance: 0.95,
-          });
-        }
-
-        if (intent === 'drug_interaction' && results.length > 0) {
-          for (const m of results) {
-            const interacting = await DrugMonographService.getInteractingDrugs(m.name);
-            for (const { drug: d, interactions: inter } of interacting) {
-              sources.push({
-                type: 'drug_monograph',
-                id: d.id,
-                title: `${m.name} ↔ ${d.name}`,
-                content: `INTERACTION: ${inter.join('; ')}`,
-                relevance: 0.98,
-              });
-            }
-          }
-        }
-      } else if (intent === 'drug_info') {
-        // No drug names extracted — try indication-based search
-        const indicationDrugs = searchByIndication(query);
-        if (indicationDrugs.length > 0) {
-          for (const name of indicationDrugs) {
-            const mono = await DrugMonographService.getByName(name);
-            if (mono) {
-              drugMonographs = drugMonographs || [];
-              drugMonographs.push(mono);
-              const parts: string[] = [];
-              parts.push(`CLASS: ${mono.drug_class_name || mono.drug_class}`);
-              parts.push(`INDICATIONS: ${mono.indications.slice(0, 3).join('; ')}`);
-              parts.push(`CONTRAINDICATIONS: ${mono.contraindications.slice(0, 3).join('; ')}`);
-              parts.push(`KEY SIDE EFFECTS: ${mono.side_effects.slice(0, 3).join('; ')}`);
-              if (mono.interactions.length > 0) {
-                parts.push(`INTERACTIONS: ${mono.interactions.slice(0, 4).join('; ')}`);
-              }
-              parts.push(`MONITORING: ${mono.monitoring.slice(0, 200)}`);
-              sources.push({
-                type: 'drug_monograph',
-                id: mono.id,
-                title: mono.name,
-                content: parts.join('\n'),
-                relevance: 0.85,
-              });
-            }
+          const interacting = await DrugMonographService.getInteractingDrugs(m.name)
+          for (const { drug: d, interactions: inter } of interacting) {
+            sources.push({
+              type: 'drug_monograph',
+              id: d.id,
+              title: `${m.name} <-> ${d.name}`,
+              content: `INTERACTION: ${inter.join('; ')}`,
+              relevance: 0.98,
+            })
           }
         }
       }
     }
 
-    if (client && (intent === 'case_lookup' || intent === 'general' || intent === 'disease_info' || intent === 'guideline')) {
-      const searchTerm = drugNames.length > 0 ? drugNames[0] : query;
-      const { data: cases } = await client
-        .from('clinical_cases')
-        .select('id, title, disease, diagnosis, specialty, difficulty')
-        .or(`title.ilike.%${searchTerm}%,disease.ilike.%${searchTerm}%,diagnosis.ilike.%${searchTerm}%`)
-        .eq('status', 'published')
-        .limit(5);
+    // Always try indication-based search if no drug monographs found yet
+    if (drugMonographs === undefined || drugMonographs.length === 0) {
+      const indicationDrugs = searchByIndication(diseaseKeywords.length > 0 ? diseaseKeywords : keywords)
+      if (indicationDrugs.length > 0) {
+        drugMonographs = []
+        for (const name of indicationDrugs.slice(0, 5)) {
+          const mono = await DrugMonographService.getByName(name)
+          if (mono) {
+            drugMonographs.push(mono)
+            sources.push(formatDrugSource(mono, 0.85))
+          }
+        }
+      }
+    }
 
-      if (cases) {
-        for (const c of cases) {
+    // -- 2. Clinical case search: ALWAYS attempted --
+    // Use extracted disease keywords, NOT the raw natural-language query
+    const searchTerms = diseaseKeywords.length > 0 ? diseaseKeywords : keywords
+    if (searchTerms.length > 0 && client) {
+      const orParts: string[] = []
+      for (const term of searchTerms.slice(0, 5)) {
+        orParts.push(`title.ilike.%${term}%`)
+        orParts.push(`disease.ilike.%${term}%`)
+        orParts.push(`diagnosis.ilike.%${term}%`)
+        orParts.push(`chief_complaint.ilike.%${term}%`)
+      }
+
+      if (orParts.length > 0) {
+        const { data: cases } = await client
+          .from('clinical_cases')
+          .select('id, title, disease, diagnosis, specialty, difficulty, chief_complaint')
+          .or(orParts.join(','))
+          .eq('status', 'published')
+          .limit(8)
+
+        if (cases && cases.length > 0) {
+          for (const c of cases) {
+            sources.push({
+              type: 'clinical_case',
+              id: c.id,
+              title: c.title,
+              content: `Disease: ${c.disease}\nSpecialty: ${c.specialty}\nDifficulty: ${c.difficulty}\nDiagnosis: ${c.diagnosis}${c.chief_complaint ? '\nChief Complaint: ' + c.chief_complaint : ''}`,
+              relevance: 0.8,
+            })
+          }
+        }
+      }
+    }
+
+    // Also search bundled clinical cases for additional context
+    for (const keyword of searchTerms.slice(0, 3)) {
+      const lower = keyword.toLowerCase()
+      for (const c of ALL_CLINICAL_CASES.slice(0, 50)) {
+        const diseaseMatch = (c.disease || '').toLowerCase().includes(lower)
+        const titleMatch = (c.title || '').toLowerCase().includes(lower)
+        if ((diseaseMatch || titleMatch) && !sources.some(s => s.id === c.id)) {
           sources.push({
             type: 'clinical_case',
             id: c.id,
             title: c.title,
-            content: `Disease: ${c.disease}\nSpecialty: ${c.specialty}\nDifficulty: ${c.difficulty}\nDiagnosis: ${c.diagnosis}`,
-            relevance: 0.8,
-          });
+            content: `Disease: ${c.disease}\nSpecialty: ${c.specialty}\nDifficulty: ${c.difficulty}`,
+            relevance: diseaseMatch ? 0.78 : 0.7,
+          })
         }
       }
     }
 
-    if (client && intent === 'disease_info') {
-      const searchTerm = query.replace(/disease|condition|pathophysiology|aetiology|epidemiology/gi, '').trim();
-      if (searchTerm) {
+    // -- 3. Disease database search: ALWAYS attempted --
+    if (client && searchTerms.length > 0) {
+      const diseaseOrParts: string[] = []
+      for (const term of searchTerms.slice(0, 5)) {
+        diseaseOrParts.push(`name.ilike.%${term}%`)
+        diseaseOrParts.push(`aliases.ilike.%${term}%`)
+      }
+
+      if (diseaseOrParts.length > 0) {
         const { data: diseases } = await client
           .from('diseases')
           .select('id, name, aliases, icd10_code, specialty')
-          .or(`name.ilike.%${searchTerm}%,aliases.ilike.%${searchTerm}%`)
-          .limit(5);
+          .or(diseaseOrParts.join(','))
+          .limit(5)
 
-        if (diseases) {
-          const name = diseases[0]?.name ?? searchTerm;
-          const { data: cases } = await client
-            .from('clinical_cases')
-            .select('id, title, disease, specialty, difficulty')
-            .eq('disease', name)
-            .eq('status', 'published')
-            .limit(5);
-
+        if (diseases && diseases.length > 0) {
           for (const d of diseases) {
             sources.push({
               type: 'disease',
               id: d.id,
               title: d.name,
-              content: `ICD-10: ${d.icd10_code ?? 'N/A'}\nSpecialty: ${d.specialty ?? 'N/A'}\nAliases: ${d.aliases ?? 'N/A'}`,
-              relevance: 0.9,
-            });
-          }
-
-          if (cases) {
-            for (const c of cases) {
-              sources.push({
-                type: 'clinical_case',
-                id: c.id,
-                title: c.title,
-                content: `Difficulty: ${c.difficulty}\nSpecialty: ${c.specialty}`,
-                relevance: 0.75,
-              });
-            }
+              content: `ICD-10: ${d.icd10_code ?? 'N/A'}\nSpecialty: ${d.specialty ?? 'N/A'}${d.aliases ? '\nAliases: ' + d.aliases : ''}`,
+              relevance: 0.88,
+            })
           }
         }
       }
     }
 
-    sources.sort((a, b) => b.relevance - a.relevance);
+    // -- 4. Deduplicate sources --
+    const seenIds = new Set<string>()
+    const uniqueSources: KnowledgeSource[] = []
+    for (const s of sources) {
+      if (!seenIds.has(s.id)) {
+        seenIds.add(s.id)
+        uniqueSources.push(s)
+      }
+    }
 
-    const contextSummary = sources.length > 0
-      ? sources.map(s => `[${s.type.toUpperCase()}] ${s.title}\n${s.content}`).join('\n\n')
-      : '';
+    uniqueSources.sort((a, b) => b.relevance - a.relevance)
+
+    const contextSummary = uniqueSources.length > 0
+      ? uniqueSources.map(s => `[${s.type.toUpperCase()}] ${s.title}\n${s.content}`).join('\n\n')
+      : ''
 
     return {
       query,
       intent,
-      sources,
+      sources: uniqueSources,
       contextSummary,
       drugMonographs,
-      hasData: sources.length > 0,
-    };
+      hasData: uniqueSources.length > 0,
+    }
   },
 
   async buildPrompt(query: string): Promise<{ systemInstruction: string; context: string; sources: KnowledgeSource[] }> {
@@ -373,7 +482,7 @@ export const KnowledgeEngine = {
 
 INSTRUCTIONS:
 - Answer based STRICTLY on the retrieved knowledge sources provided below.
-- If the sources don't contain enough information, say so honestly — do not fabricate.
+- If the sources don't contain enough information, say so honestly -- do not fabricate.
 - Use the drug monograph data (indications, contraindications, dosing, interactions, monitoring) when answering drug-related queries.
 - Reference specific clinical cases when discussing patient scenarios.
 - For drug interactions, always state the mechanism, severity, and clinical action needed.
@@ -384,6 +493,6 @@ INSTRUCTIONS:
       systemInstruction,
       context: result.contextSummary,
       sources: result.sources,
-    };
+    }
   },
 };

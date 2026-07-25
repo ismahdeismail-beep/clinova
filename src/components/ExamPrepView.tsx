@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Sparkles, Eye, EyeOff, Download, BookOpen, FileText, CheckCircle2 } from 'lucide-react';
-import { EXAM_PREP_UNITS, type ExamUnitSpec } from '../data/examPrepData';
+import { Sparkles, Eye, EyeOff, Download, BookOpen, FileText, CheckCircle2, Award, Clock, Target } from 'lucide-react';
+import { EXAM_PREP_UNITS, STANDARD_EXAM_STRUCTURE, type ExamUnitSpec } from '../data/examPrepData';
 import { getExamPrepPaper, type GeneratedPaper } from '../data/examPrepPapers';
 
 const txt = (v: any): string => {
@@ -309,9 +309,54 @@ export default function ExamPrepView({ subjectId }: { subjectId?: string }) {
       <p className="text-sm text-[var(--text-muted)]">
         Practice papers modelled on the real clinical-pharmacy exam pattern. Each subject shows the section
         structure and topic areas drawn from the most recent past paper, then provides three full mock papers
-        (Section A MCQs — 30 marks, Section B short answers — 8 questions / 40 marks, Section C long answers —
-        2 questions / 30 marks) generated from that exam's content. Toggle answers to self-mark.
+        generated from that exam's content. Toggle answers to self-mark.
       </p>
+
+      {/* Clinical Pharmacy Overview — shown before unit exams */}
+      {isClinicalPharmacy && (
+        <div className="border-2 border-[var(--primary)]/20 rounded-2xl bg-[var(--primary)]/5 overflow-hidden">
+          <div className="px-5 py-4 border-b border-[var(--border)]">
+            <div className="flex items-center gap-2 mb-1">
+              <Award size={16} className="text-[var(--primary)]" />
+              <h3 className="text-sm font-bold text-[var(--text)]">Clinical Pharmacy Exam Overview</h3>
+            </div>
+            <p className="text-[11px] text-[var(--text-muted)]">Standard format across all unit exams — 100 marks total</p>
+          </div>
+          <div className="p-5 space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {STANDARD_EXAM_STRUCTURE.map((sec) => (
+                <div key={sec.letter} className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-3.5">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold">
+                      {sec.letter}
+                    </span>
+                    <span className="text-lg font-bold text-[var(--primary)]">{sec.marks}<span className="text-[10px] font-normal text-[var(--text-muted)] ml-0.5">marks</span></span>
+                  </div>
+                  <div className="text-[13px] font-semibold text-[var(--text)]">{sec.name}</div>
+                  <div className="text-[11px] text-[var(--text-muted)] mt-1">{sec.count} {sec.count === 1 ? 'question' : 'questions'}</div>
+                  <div className="text-[10px] text-[var(--text-muted)] mt-1 italic">{sec.instruction}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap gap-3 text-[11px] text-[var(--text-muted)]">
+              <div className="flex items-center gap-1.5">
+                <Target size={13} className="text-[var(--primary)]" />
+                <span><strong className="text-[var(--text)]">Total:</strong> 100 marks</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <Clock size={13} className="text-[var(--primary)]" />
+                <span><strong className="text-[var(--text)]">Duration:</strong> 3 hours</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <BookOpen size={13} className="text-[var(--primary)]" />
+                <span><strong className="text-[var(--text)]">Units:</strong> {specs.length} subject areas below</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="space-y-4">
         {specs.map((spec) => (
           <ExamSubjectCard key={spec.id} spec={spec} />

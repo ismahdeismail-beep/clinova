@@ -549,18 +549,18 @@
 
 /* Prose/Markdown clinical rendering */
 .prose-clinova {
-  font-size: 0.95rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.75;
   color: var(--text);
   max-width: none;
 }
-.prose-clinova p { margin-bottom: 0.8rem; }
-.prose-clinova h1 { font-size: 1.4rem; font-weight: 700; margin: 1.5rem 0 0.75rem; padding-bottom: 0.4rem; border-bottom: 2px solid var(--border); color: var(--text); }
-.prose-clinova h2 { font-size: 1.2rem; font-weight: 600; margin: 1.3rem 0 0.5rem; color: var(--text); }
-.prose-clinova h3 { font-size: 1.05rem; font-weight: 600; margin: 1.1rem 0 0.4rem; color: var(--text); }
-.prose-clinova ul { list-style: disc; padding-left: 1.3rem; margin: 0.8rem 0; }
-.prose-clinova ol { list-style: decimal; padding-left: 1.3rem; margin: 0.8rem 0; }
-.prose-clinova li { margin-bottom: 0.3rem; }
+.prose-clinova p { margin-bottom: 1rem; }
+.prose-clinova h1 { font-size: 1.5rem; font-weight: 700; margin: 1.75rem 0 0.85rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); color: var(--text); }
+.prose-clinova h2 { font-size: 1.3rem; font-weight: 600; margin: 1.5rem 0 0.6rem; color: var(--text); }
+.prose-clinova h3 { font-size: 1.15rem; font-weight: 600; margin: 1.25rem 0 0.5rem; color: var(--text); }
+.prose-clinova ul { list-style: disc; padding-left: 1.5rem; margin: 1rem 0; }
+.prose-clinova ol { list-style: decimal; padding-left: 1.5rem; margin: 1rem 0; }
+.prose-clinova li { margin-bottom: 0.4rem; line-height: 1.7; }
 .prose-clinova strong { font-weight: 600; color: var(--text); }
 .prose-clinova em { font-style: italic; }
 .prose-clinova code { font-family: var(--font-mono); font-size: 0.85em; background: var(--surface-dim); border: 1px solid var(--border); padding: 0.125rem 0.35rem; border-radius: 0.25rem; color: var(--primary); }

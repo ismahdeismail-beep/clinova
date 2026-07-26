@@ -111,18 +111,18 @@ function renderMarkdown(text: string) {
         tr: ({ children }) => <tr className="hover:bg-[var(--surface-dim)] transition-colors">{children}</tr>,
         th: ({ children }) => <th className="p-3.5 font-semibold text-[var(--text)] uppercase tracking-wider text-xs">{children}</th>,
         td: ({ children }) => <td className="p-3.5 text-[var(--text-muted)] leading-relaxed">{children}</td>,
-        h1: ({ children }) => <h1 className="text-xl font-bold text-[var(--text)] mt-6 mb-3 tracking-tight border-b-2 border-[var(--primary)]/30 pb-2">{children}</h1>,
+        h1: ({ children }) => <h1 className="text-xl font-bold text-[var(--text)] mt-7 mb-4 tracking-tight border-b-2 border-[var(--primary)]/30 pb-2">{children}</h1>,
         h2: ({ children }) => (
-          <div className="flex items-center gap-2 mt-6 mb-3">
-            <div className="w-1 h-5 bg-[var(--primary)] rounded-full shrink-0" />
+          <div className="flex items-center gap-2.5 mt-6 mb-3">
+            <div className="w-1.5 h-6 bg-[var(--primary)] rounded-full shrink-0" />
             <h2 className="text-lg font-bold text-[var(--text)] tracking-tight">{children}</h2>
           </div>
         ),
-        h3: ({ children }) => <h3 className="text-base font-bold text-[var(--text)] mt-5 mb-2 tracking-tight border-l-2 border-[var(--primary)]/40 pl-3">{children}</h3>,
+        h3: ({ children }) => <h3 className="text-base font-bold text-[var(--text)] mt-5 mb-2.5 tracking-tight border-l-2 border-[var(--primary)]/40 pl-3">{children}</h3>,
         p: ({ children }) => <p className="text-base leading-relaxed text-[var(--text)] mb-4 last:mb-0">{processChildren(children)}</p>,
-        ul: ({ children }) => <ul className="space-y-2 mb-5">{children}</ul>,
-        ol: ({ children }) => <ol className="space-y-2 mb-5">{children}</ol>,
-        li: ({ children }) => <li className="flex items-start gap-2 text-base leading-relaxed"><span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)]/60 mt-2 shrink-0" />{processChildren(children)}</li>,
+        ul: ({ children }) => <ul className="space-y-2.5 mb-5">{children}</ul>,
+        ol: ({ children }) => <ol className="space-y-2.5 mb-5">{children}</ol>,
+        li: ({ children }) => <li className="flex items-start gap-2.5 text-base leading-relaxed"><span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)]/60 mt-2.5 shrink-0" />{processChildren(children)}</li>,
         blockquote: ({ children }) => (
           <div className="bg-[var(--surface-dim)]/60 border-l-4 border-[var(--primary)]/50 rounded-r-xl px-5 py-4 my-5 text-base text-[var(--text)] shadow-sm">
             {children}
@@ -161,7 +161,7 @@ function AssistantMessageBubble({
   }, [isNew, onComplete, onTick]);
 
   return (
-    <div className="prose prose-sm prose-clinova max-w-none break-words text-[var(--text)] leading-relaxed">
+    <div className="prose prose-clinova max-w-none break-words text-[var(--text)] leading-relaxed">
       {renderMarkdown(content)}
     </div>
   );
@@ -1371,8 +1371,8 @@ export default function ClinicalAssistantScreen() {
                   </div>
                 )}
                 
-                {/* Bubble Container - 80% limit for Assistant, 75% limit for User */}
-                <div className={`flex flex-col gap-2 ${isUser ? 'max-w-[85%] sm:max-w-[75%]' : 'max-w-[85%] sm:max-w-[80%]'} w-full overflow-hidden`}>
+                {/* Bubble Container - wider for assistant to prevent cramped text */}
+                <div className={`flex flex-col gap-2 ${isUser ? 'max-w-[85%] sm:max-w-[75%]' : 'max-w-[92%] sm:max-w-[88%]'} w-full overflow-hidden`}>
                   
                   {/* Real-time RAG Steps Tracker */}
                   {msg.isThinking && (
@@ -1399,7 +1399,7 @@ export default function ClinicalAssistantScreen() {
 {/* Bubble Content */}
                   {!msg.isThinking && (
                     <div className="flex items-start gap-2.5 max-w-full group/bubble">
-                      <div className={`rounded-2xl px-4 py-3 shadow-sm text-sm leading-relaxed max-w-full break-words ${
+                      <div className={`rounded-2xl px-5 py-4 shadow-sm text-base leading-relaxed max-w-full break-words ${
                         isUser 
                           ? 'bg-[var(--primary)] text-[var(--primary-foreground)] rounded-tr-none shadow-md font-medium' 
                           : 'bg-[var(--surface)] border border-[var(--border)] border-l-2 border-l-[var(--primary)]/30 text-[var(--text)] rounded-tl-none shadow-xs'

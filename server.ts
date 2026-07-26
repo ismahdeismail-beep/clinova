@@ -1121,6 +1121,10 @@ app.post('/api/gemini/assistant/stream', async (req, res) => {
 
     const { contents, systemInstruction } = await buildAssistantRequest(req.body);
 
+    // Log context size for diagnosis
+    const instrLen = (systemInstruction || '').length;
+    console.log(`[Clinova Support] System instruction: ${instrLen} chars, Contents: ${contents.length} parts`);
+
     // First attempt: full RAG context
     let textReceived = false;
     const onChunk = (chunk: string) => {

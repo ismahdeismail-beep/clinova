@@ -169,25 +169,12 @@ for (const [name, meta] of Object.entries(DRUG_REGISTRY_META)) {
   REGISTRY_CLASS_MAP.set(name, meta.therapeuticClass)
 }
 
-// Build an expanded indication map that includes therapeutic class → condition associations
-function buildExpandedIndicationMap(): Map<string, string[]> {
-  const map = buildIndicationMap()
-
-  // For every drug in the registry, add its therapeutic class conditions
-  for (const [name, therapeuticClass] of REGISTRY_CLASS_MAP) {
-    const conditions = CLASS_CONDITION_MAP[therapeuticClass] || []
-    for (const cond of conditions) {
-      const key = cond.toLowerCase()
-      const existing = map.get(key) || []
-      if (!existing.includes(name)) existing.push(name)
-      map.set(key, existing)
-    }
-  }
-  return map
-}
-
 const ALL_DRUG_NAMES = buildDrugNameSet()
-const INDICATION_MAP = buildExpandedIndicationMap()
+// Use the original curated indication map from BUNDLED_DRUGS only.
+// The expanded map was too broad — mapping every condition to ALL drugs in a
+// therapeutic class (e.g. "diabetes" → 100+ endocrine drugs), causing massive
+// context overflow and empty AI responses.
+const INDICATION_MAP = buildIndicationMap()
 
 function levenshtein(a: string, b: string): number {
   const m = a.length, n = b.length
@@ -512,30 +499,14 @@ export const KnowledgeEngine = {
       if (indicationDrugs.length > 0) {
         drugMonographs = []
         let indicationMonographsFound = 0
-        for (const name of indicationDrugs.slice(0, 10)) {
+        for (const name of indicationDrugs.slice(0, 5)) {
           const mono = await queryDrugByName(client, name)
           if (mono) {
             drugMonographs.push(mono)
             sources.push(formatDrugSource(mono, 0.85))
             indicationMonographsFound++
           }
-          if (indicationMonographsFound >= 5) break
-        }
-        // If no indication drugs had monographs, provide top registry entries as context
-        if (indicationMonographsFound === 0) {
-          const conditionTerms = diseaseKeywords.length > 0 ? diseaseKeywords : keywords
-          sources.push({
-            type: 'drug_registry',
-            id: `registry-indication-${conditionTerms[0] || 'general'}`,
-            title: `Drugs for: ${conditionTerms.join(', ')}`,
-            content: [
-              `CONDITION QUERY: ${query}`,
-              `MATCHED DRUGS (therapeutic class-based): ${indicationDrugs.slice(0, 8).join('; ')}`,
-              `Note: Full monographs not available for these drugs in the database.`,
-              `Use clinical knowledge to answer. Reference WHO guidelines and KEML where applicable.`,
-            ].join('\n'),
-            relevance: 0.75,
-          })
+          if (indicationMonographsFound >= 3) break
         }
       }
     }

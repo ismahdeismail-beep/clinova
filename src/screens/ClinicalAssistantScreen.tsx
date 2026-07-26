@@ -967,9 +967,17 @@ export default function ClinicalAssistantScreen() {
                     streamedText += evt.text;
                     setMessages(prev => prev.map(m => m.id === thinkingMsgId ? { ...m, content: streamedText } : m));
                   } else if (evt.error) {
+                    // Server sent an error — propagate it so the retry loop can handle it
                     throw new Error(evt.error);
+                  } else if (evt.done) {
+                    // Server signals stream complete
+                    break;
                   }
-                } catch (parseErr) {
+                } catch (parseErr: any) {
+                  // Re-throw server-sent errors (not JSON parse failures)
+                  if (parseErr?.message && !parseErr.message.includes('JSON')) {
+                    throw parseErr;
+                  }
                   /* ignore keep-alive / partial frames */
                 }
               }

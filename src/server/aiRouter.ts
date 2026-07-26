@@ -420,6 +420,10 @@ export async function streamGenerateContent(
           onChunk(t);
         }
       }
+      console.log(`[AI Gateway] Gemini stream completed: ${full.length} chars`);
+      if (full.length === 0) {
+        console.warn('[AI Gateway] Gemini returned empty response — possible safety filter or oversized prompt');
+      }
       return full;
     } catch (err: any) {
       console.warn(`[AI Gateway] Gemini stream failed, falling back to buffered call: ${err.message}`);

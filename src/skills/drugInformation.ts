@@ -9,6 +9,7 @@ import { generateContentWithFallback } from '../server/aiRouter';
 import { searchLibrary } from '../data/onlineLibraryData';
 import { KnowledgeEngine } from '../engine/knowledgeEngine.service';
 import { DrugMonographService } from '../services/drugMonograph.service';
+import { adminSupabase } from '../server/adminClient';
 
 export const drugInformationSkill: Skill = {
   definition: {
@@ -40,7 +41,7 @@ export const drugInformationSkill: Skill = {
     const drugName = context.educationalContext.drug || context.query;
 
     try {
-      const engineResult = await KnowledgeEngine.process(drugName);
+      const engineResult = await KnowledgeEngine.process(drugName, adminSupabase ?? undefined);
       const monograph = engineResult.drugMonographs?.[0];
       const hasGroundedData = engineResult.hasData;
 
@@ -100,7 +101,7 @@ ${monograph.patient_counselling}
 ---
 *Source: Clinova Drug Monograph Database. Always verify against current BNF/KEML guidelines.*`;
       } else {
-        const { systemInstruction, context: ragContext } = await KnowledgeEngine.buildPrompt(drugName);
+        const { systemInstruction, context: ragContext } = await KnowledgeEngine.buildPrompt(drugName, adminSupabase ?? undefined);
 
         const response = await generateContentWithFallback(
           {

@@ -10,6 +10,7 @@ import { generateContentWithFallback } from '../server/aiRouter';
 import { searchLibrary } from '../data/onlineLibraryData';
 import { ALL_CLINICAL_CASES } from '../data/clinicalCasesData';
 import { KnowledgeEngine } from '../engine/knowledgeEngine.service';
+import { adminSupabase } from '../server/adminClient';
 
 export const knowledgeRetrievalSkill: Skill = {
   definition: {
@@ -32,7 +33,7 @@ export const knowledgeRetrievalSkill: Skill = {
     const start = Date.now();
     const query = context.query;
 
-    const engineResult = await KnowledgeEngine.process(query);
+    const engineResult = await KnowledgeEngine.process(query, adminSupabase ?? undefined);
 
     const lib = searchLibrary(query, {}).slice(0, 5);
     const cases = ALL_CLINICAL_CASES.filter((c) =>

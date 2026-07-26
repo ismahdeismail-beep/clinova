@@ -28,16 +28,7 @@ import { getPrompts, updatePrompt, resetPrompts } from './src/server/promptRegis
 import { fetchOpenFdaLabel, resolveRxCui, fetchRxNormInteractions } from './src/server/externalMedicinesApi.js';
 import { crawlSource, crawlMany, searchLibrary } from './src/server/bookCrawler.service.js';
 import { LIBRARY_CATEGORY, isSupermemoryConfigured } from './src/server/supermemory.service.js';
-import { createClient } from '@supabase/supabase-js';
-
-// Server-side Supabase client (service role) for privileged clinical-case writes.
-// Uses the service-role key (never exposed to the browser) so RLS policies that
-// block anonymous inserts do not prevent admin-authored cases from being persisted.
-const SUPABASE_URL = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL || '';
-const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || '';
-const adminSupabase = SUPABASE_URL && SUPABASE_SERVICE_ROLE_KEY
-  ? createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, { auth: { persistSession: false } })
-  : null;
+import { adminSupabase } from './src/server/adminClient.js';
 
 // Load environment variables
 dotenv.config();

@@ -1,11 +1,5 @@
-import { createClient } from '@supabase/supabase-js';
 import { embedText } from './aiRouter';
-
-const SUPABASE_URL = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL || '';
-const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || '';
-const adminSupabase = SUPABASE_URL && SUPABASE_SERVICE_ROLE_KEY
-  ? createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, { auth: { persistSession: false } })
-  : null;
+import { adminSupabase } from './adminClient';
 
 export type JobRow = {
   id: string;

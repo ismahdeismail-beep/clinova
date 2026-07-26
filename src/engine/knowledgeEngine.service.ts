@@ -309,6 +309,70 @@ function formatDrugSource(m: DrugMonograph, relevance: number): KnowledgeSource 
   }
 }
 
+/** Map a raw Supabase row to a DrugMonograph */
+function mapDrugRow(row: any): DrugMonograph {
+  const drugClassInfo = row.drug_class_info
+  return {
+    id: row.id,
+    name: row.name,
+    generic_name: row.generic_name ?? '',
+    drug_class: row.drug_class ?? '',
+    drug_class_id: row.drug_class_id ?? null,
+    drug_class_name: drugClassInfo?.name ?? row.drug_class ?? '',
+    indications: row.indications ?? [],
+    contraindications: row.contraindications ?? [],
+    side_effects: row.side_effects ?? [],
+    dosage: row.dosage ?? {},
+    interactions: row.interactions ?? [],
+    monitoring: row.monitoring ?? '',
+    patient_counselling: row.patient_counselling ?? '',
+    mechanism_of_action: row.mechanism_of_action ?? undefined,
+    brand_names: row.brand_names ?? undefined,
+    pregnancy_category: row.pregnancy_category ?? undefined,
+    warnings: row.warnings ?? undefined,
+    overdose: row.overdose ?? undefined,
+    pharmacokinetics: row.pharmacokinetics ?? undefined,
+    black_box_warnings: row.black_box_warnings ?? undefined,
+    clinical_pearls: row.clinical_pearls ?? undefined,
+    created_at: row.created_at,
+  }
+}
+
+/**
+ * Query drugs via the provided Supabase client (service-role on server, anon on client).
+ * Falls back to DrugMonographService when no client is available.
+ * This ensures the server-side KnowledgeEngine can reach the full 355-drug Supabase
+ * index instead of being limited to the 149 bundled drugs.
+ */
+async function queryDrugByName(client: any, name: string): Promise<DrugMonograph | null> {
+  if (client) {
+    try {
+      const { data, error } = await client
+        .from('drug_monographs')
+        .select('*, drug_class_info:drug_classes(name)')
+        .ilike('name', name)
+        .single()
+      if (!error && data) return mapDrugRow(data)
+    } catch { /* fall through to DrugMonographService */ }
+  }
+  return DrugMonographService.getByName(name)
+}
+
+async function queryDrugBySearch(client: any, query: string): Promise<DrugMonograph[]> {
+  if (client) {
+    try {
+      const { data, error } = await client
+        .from('drug_monographs')
+        .select('*, drug_class_info:drug_classes(name)')
+        .or(`name.ilike.%${query}%,generic_name.ilike.%${query}%`)
+        .order('name')
+        .limit(5)
+      if (!error && data && data.length > 0) return data.map(mapDrugRow)
+    } catch { /* fall through to DrugMonographService */ }
+  }
+  return DrugMonographService.search(query)
+}
+
 export const KnowledgeEngine = {
   async process(query: string, customClient?: any): Promise<KnowledgeEngineResult> {
     const intent = detectIntent(query)
@@ -322,14 +386,15 @@ export const KnowledgeEngine = {
     const client = customClient || supabase
 
     // -- 1. Drug monograph search: ALWAYS attempted --
+    // Uses client (service-role on server, anon on client) to reach full Supabase index
     if (drugNames.length > 0) {
       const results: DrugMonograph[] = []
       for (const name of drugNames) {
-        const mono = await DrugMonographService.getByName(name)
+        const mono = await queryDrugByName(client, name)
         if (mono) results.push(mono)
       }
       if (results.length === 0) {
-        results.push(...await DrugMonographService.search(drugNames[0]))
+        results.push(...await queryDrugBySearch(client, drugNames[0]))
       }
       drugMonographs = results
 
@@ -359,7 +424,7 @@ export const KnowledgeEngine = {
       if (indicationDrugs.length > 0) {
         drugMonographs = []
         for (const name of indicationDrugs.slice(0, 5)) {
-          const mono = await DrugMonographService.getByName(name)
+          const mono = await queryDrugByName(client, name)
           if (mono) {
             drugMonographs.push(mono)
             sources.push(formatDrugSource(mono, 0.85))
@@ -421,31 +486,32 @@ export const KnowledgeEngine = {
     }
 
     // -- 3. Disease database search: ALWAYS attempted --
+    // Note: diseases table has id, name, aliases (TEXT[]), created_at only.
+    // aliases is a PostgreSQL array — use a text-cast search instead of ilike.
     if (client && searchTerms.length > 0) {
-      const diseaseOrParts: string[] = []
-      for (const term of searchTerms.slice(0, 5)) {
-        diseaseOrParts.push(`name.ilike.%${term}%`)
-        diseaseOrParts.push(`aliases.ilike.%${term}%`)
-      }
-
-      if (diseaseOrParts.length > 0) {
+      try {
         const { data: diseases } = await client
           .from('diseases')
-          .select('id, name, aliases, icd10_code, specialty')
-          .or(diseaseOrParts.join(','))
+          .select('id, name, aliases')
+          .or(searchTerms.slice(0, 5).map(t => `name.ilike.%${t}%`).join(','))
           .limit(5)
 
         if (diseases && diseases.length > 0) {
           for (const d of diseases) {
+            const aliasText = Array.isArray(d.aliases) && d.aliases.length > 0
+              ? '\nAliases: ' + d.aliases.join(', ')
+              : ''
             sources.push({
               type: 'disease',
               id: d.id,
               title: d.name,
-              content: `ICD-10: ${d.icd10_code ?? 'N/A'}\nSpecialty: ${d.specialty ?? 'N/A'}${d.aliases ? '\nAliases: ' + d.aliases : ''}`,
+              content: `Specialty: Clinical Pharmacy${aliasText}`,
               relevance: 0.88,
             })
           }
         }
+      } catch {
+        // Disease table may not exist or schema may differ — fail silently
       }
     }
 
@@ -475,8 +541,8 @@ export const KnowledgeEngine = {
     }
   },
 
-  async buildPrompt(query: string): Promise<{ systemInstruction: string; context: string; sources: KnowledgeSource[] }> {
-    const result = await KnowledgeEngine.process(query);
+  async buildPrompt(query: string, customClient?: any): Promise<{ systemInstruction: string; context: string; sources: KnowledgeSource[] }> {
+    const result = await KnowledgeEngine.process(query, customClient);
 
     const systemInstruction = `You are Clinova's Clinical Decision Support AI. You are a clinical pharmacy educator assisting healthcare students and professionals.
 

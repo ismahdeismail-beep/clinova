@@ -2,6 +2,7 @@ import { supabase } from '../lib/supabase';
 import { DrugMonographService, type DrugMonograph } from '../services/drugMonograph.service';
 import { BUNDLED_DRUGS } from '../data/drugIndexData';
 import { ALL_CLINICAL_CASES } from '../data/clinicalCasesData';
+import { REGISTRY_DRUG_NAMES } from '../data/drugRegistryNames';
 
 export type QueryIntent = 'drug_info' | 'drug_interaction' | 'disease_info' | 'case_lookup' | 'guideline' | 'general';
 
@@ -101,9 +102,10 @@ function detectIntent(query: string): QueryIntent {
   return 'general';
 }
 
-// -- Drug name index --
+// -- Drug name index (bundled 149 + full 1000-drug registry) --
 function buildDrugNameSet(): Set<string> {
   const names = new Set<string>()
+  // Bundled drug details (brand names, generic names)
   for (const d of BUNDLED_DRUGS) {
     names.add(d.name.toLowerCase())
     if (d.generic_name) names.add(d.generic_name.toLowerCase())
@@ -111,9 +113,16 @@ function buildDrugNameSet(): Set<string> {
       for (const bn of d.brand_names) names.add(bn.toLowerCase())
     }
   }
+  // Full 1000-drug registry names
+  for (const name of REGISTRY_DRUG_NAMES) {
+    names.add(name.toLowerCase())
+  }
+  // Common aliases
   const extras = [
     'co-trimoxazole', 'sodium valproate', 'ferrous sulphate', 'ferrous sulfate',
     'augmentin', 'panadol', 'brufen', 'flagyl', 'nexium', 'ventolin',
+    'noradrenaline', 'epinephrine', 'nitroglycerin', 'glyceryl trinitrate',
+    'prednisone', 'methyldopa', 'ringer\'s lactate', 'normal saline',
   ]
   for (const e of extras) names.add(e)
   return names

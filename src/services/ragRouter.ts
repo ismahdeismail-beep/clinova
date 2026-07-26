@@ -131,6 +131,16 @@ export const RAGRouter = {
       }
     }
 
+    // Registry-only entries: drugs recognized by name but no full monograph available
+    const registrySources = engineResult.sources.filter(s => s.type === 'drug_registry');
+    if (registrySources.length > 0) {
+      context += `### Drug Registry Entries (${registrySources.length}) — no full monograph available, use clinical knowledge\n\n`;
+      for (const r of registrySources) {
+        context += `- ${r.content}\n`;
+      }
+      context += '\n';
+    }
+
     const cases = engineResult.sources.filter(s => s.type === 'clinical_case');
     if (cases.length > 0) {
       context += `### Related Clinical Cases (${cases.length})\n\n`;
@@ -154,6 +164,12 @@ export const RAGRouter = {
       if (engineResult.contextSummary) {
         context += engineResult.contextSummary + '\n';
       }
+    }
+
+    // Cap context to prevent oversized prompts that may cause empty AI responses
+    const MAX_CONTEXT_CHARS = 8000;
+    if (context.length > MAX_CONTEXT_CHARS) {
+      context = context.slice(0, MAX_CONTEXT_CHARS) + '\n\n[Context truncated for brevity — focus on the most relevant sources above]\n';
     }
 
     return context;

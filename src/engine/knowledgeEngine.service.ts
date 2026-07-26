@@ -3,11 +3,12 @@ import { DrugMonographService, type DrugMonograph } from '../services/drugMonogr
 import { BUNDLED_DRUGS } from '../data/drugIndexData';
 import { ALL_CLINICAL_CASES } from '../data/clinicalCasesData';
 import { REGISTRY_DRUG_NAMES } from '../data/drugRegistryNames';
+import { DRUG_REGISTRY_META, type DrugRegistryMeta } from '../data/drugRegistryMeta';
 
 export type QueryIntent = 'drug_info' | 'drug_interaction' | 'disease_info' | 'case_lookup' | 'guideline' | 'general';
 
 export interface KnowledgeSource {
-  type: 'drug_monograph' | 'clinical_case' | 'disease' | 'guideline';
+  type: 'drug_monograph' | 'drug_registry' | 'clinical_case' | 'disease' | 'guideline';
   id: string;
   title: string;
   content: string;
@@ -142,8 +143,51 @@ function buildIndicationMap(): Map<string, string[]> {
   return map
 }
 
+// Therapeutic class → common conditions (used when drug is recognized but no monograph found)
+const CLASS_CONDITION_MAP: Record<string, string[]> = {
+  'Anti-infectives': ['infection', 'bacterial', 'pneumonia', 'meningitis', 'sepsis', 'uti', 'uti', 'otitis', 'sinusitis', 'tuberculosis', 'malaria', 'fungal', 'viral', 'sexually transmitted', 'std', 'wound infection', 'abscess', 'cellulitis', 'gastroenteritis', 'hepatitis', 'conjunctivitis', 'osteomyelitis', 'endocarditis'],
+  'Cardiovascular': ['hypertension', 'heart failure', 'angina', 'arrhythmia', 'atrial fibrillation', 'myocardial infarction', 'stroke', 'thrombosis', 'embolism', 'hyperlipidemia', 'atherosclerosis', 'cardiac', 'cardiovascular', 'hypotension', 'shock', 'edema', 'dvt', 'pe', 'peripheral vascular'],
+  'CNS': ['depression', 'anxiety', 'epilepsy', 'seizure', 'psychosis', 'schizophrenia', 'bipolar', 'insomnia', 'pain', 'neuropathic', 'migraine', 'parkinson', 'alzheimer', 'adhd', 'mania', 'obsessive', 'ocd', 'panic', 'ptsd', 'cognitive', 'sedation', 'anaesthesia', 'anaesthetic', 'sedative'],
+  'Endocrine': ['diabetes', 'thyroid', 'adrenal', 'cushing', 'addison', 'hypothyroid', 'hyperthyroid', 'diabetes mellitus', 'insulin', 'oral hypoglycemic', 'steroid', 'corticosteroid', 'hormone', 'growth hormone', 'osteoporosis', 'metabolic'],
+  'Immunology': ['allergy', 'autoimmune', 'immunosuppression', 'transplant', 'rheumatoid', 'lupus', 'psoriasis', 'inflammatory', 'asthma', 'anaphylaxis', 'hay fever', 'urticaria', 'celiac', 'immunodeficiency'],
+  'Respiratory': ['asthma', 'copd', 'bronchitis', 'pneumonia', 'respiratory', 'bronchospasm', 'cough', 'bronchodilator', 'inhaler', 'pulmonary', 'emphysema', 'pneumothorax', 'tb', 'tuberculosis', 'pleural'],
+  'Gastrointestinal': ['ulcer', 'gastritis', 'gerd', 'reflux', 'nausea', 'vomiting', 'diarrhea', 'constipation', 'ibd', 'crohn', 'ulcerative colitis', 'liver', 'hepatic', 'cirrhosis', 'pancreatitis', 'gi bleed', 'gastrointestinal', 'dyspepsia', 'helicobacter'],
+  'Analgesics': ['pain', 'analgesic', 'opioid', 'anti-inflammatory', 'nsaid', 'fever', 'antipyretic', 'postoperative', 'chronic pain', 'palliative', 'cancer pain', 'musculoskeletal', 'headache', 'migraine', 'arthralgia', 'myalgia'],
+  'Haematology': ['anemia', 'haemophilia', 'coagulation', 'bleeding', 'thrombocytopenia', 'sickle cell', 'thalassemia', 'iron deficiency', 'vitamin b12', 'folate', 'clotting', 'anticoagulant', 'antiplatelet', 'hematologic'],
+  'Oncology': ['cancer', 'tumor', 'chemotherapy', 'neoplasm', 'malignant', 'metastasis', 'leukemia', 'lymphoma', 'sarcoma', 'carcinoma', 'immunotherapy', 'radiotherapy', 'palliative', 'oncology'],
+  'Dermatology': ['skin', 'dermatitis', 'eczema', 'acne', 'psoriasis', 'fungal skin', 'wound', 'burn', 'ulcer', 'topical', 'dermatological'],
+  'Nutrition/Vitamins': ['deficiency', 'vitamin', 'supplement', 'nutrition', 'malnutrition', 'electrolyte', 'rehydration', 'parenteral', 'enteral'],
+  'Toxicology/Antidotes': ['poisoning', 'overdose', 'toxic', 'antidote', 'envenomation', 'snake bite', 'methanol', 'paracetamol overdose', 'opioid overdose', 'organophosphate'],
+  'Renal/Electrolytes': ['renal', 'kidney', 'electrolyte', 'potassium', 'sodium', 'calcium', 'phosphate', 'diuretic', 'dialysis', 'acute kidney', 'chronic kidney', 'ckd', 'edema', 'fluid'],
+  'Ophthalmology': ['eye', 'glaucoma', 'conjunctivitis', 'ocular', 'ophthalmic', 'retinal', 'corneal', 'visual'],
+  'Other': [],
+};
+
+// Map drug names from the registry to their therapeutic classes
+const REGISTRY_CLASS_MAP: Map<string, string> = new Map()
+for (const [name, meta] of Object.entries(DRUG_REGISTRY_META)) {
+  REGISTRY_CLASS_MAP.set(name, meta.therapeuticClass)
+}
+
+// Build an expanded indication map that includes therapeutic class → condition associations
+function buildExpandedIndicationMap(): Map<string, string[]> {
+  const map = buildIndicationMap()
+
+  // For every drug in the registry, add its therapeutic class conditions
+  for (const [name, therapeuticClass] of REGISTRY_CLASS_MAP) {
+    const conditions = CLASS_CONDITION_MAP[therapeuticClass] || []
+    for (const cond of conditions) {
+      const key = cond.toLowerCase()
+      const existing = map.get(key) || []
+      if (!existing.includes(name)) existing.push(name)
+      map.set(key, existing)
+    }
+  }
+  return map
+}
+
 const ALL_DRUG_NAMES = buildDrugNameSet()
-const INDICATION_MAP = buildIndicationMap()
+const INDICATION_MAP = buildExpandedIndicationMap()
 
 function levenshtein(a: string, b: string): number {
   const m = a.length, n = b.length
@@ -396,14 +440,27 @@ export const KnowledgeEngine = {
 
     // -- 1. Drug monograph search: ALWAYS attempted --
     // Uses client (service-role on server, anon on client) to reach full Supabase index
+    // When no monograph is found, falls back to registry metadata (therapeutic class, KEML status)
+    const unmatchedDrugNames: string[] = []
+
     if (drugNames.length > 0) {
       const results: DrugMonograph[] = []
       for (const name of drugNames) {
         const mono = await queryDrugByName(client, name)
-        if (mono) results.push(mono)
+        if (mono) {
+          results.push(mono)
+        } else {
+          unmatchedDrugNames.push(name)
+        }
       }
-      if (results.length === 0) {
-        results.push(...await queryDrugBySearch(client, drugNames[0]))
+      if (results.length === 0 && drugNames.length > 0) {
+        const searchResults = await queryDrugBySearch(client, drugNames[0])
+        results.push(...searchResults)
+        // Remove matched names from unmatched list
+        for (const sr of searchResults) {
+          const idx = unmatchedDrugNames.indexOf(sr.name.toLowerCase())
+          if (idx >= 0) unmatchedDrugNames.splice(idx, 1)
+        }
       }
       drugMonographs = results
 
@@ -427,17 +484,58 @@ export const KnowledgeEngine = {
       }
     }
 
+    // Fallback: for drug names recognized from registry but no monograph found,
+    // create a registry-only source with therapeutic class info so the AI has context
+    for (const name of unmatchedDrugNames) {
+      const meta = DRUG_REGISTRY_META[name] || DRUG_REGISTRY_META[name.toLowerCase()]
+      if (meta) {
+        const conditions = CLASS_CONDITION_MAP[meta.therapeuticClass] || []
+        sources.push({
+          type: 'drug_registry',
+          id: `registry-${name}`,
+          title: name,
+          content: [
+            `DRUG: ${name}`,
+            `THERAPEUTIC CLASS: ${meta.therapeuticClass}`,
+            `SOURCE: ${meta.source} (${meta.priority})`,
+            `COMMON INDICATIONS FOR CLASS: ${conditions.slice(0, 8).join('; ')}`,
+            `[Note: Full monograph not available in database. Use clinical knowledge to answer.]`,
+          ].join('\n'),
+          relevance: 0.80,
+        })
+      }
+    }
+
     // Always try indication-based search if no drug monographs found yet
     if (drugMonographs === undefined || drugMonographs.length === 0) {
       const indicationDrugs = searchByIndication(diseaseKeywords.length > 0 ? diseaseKeywords : keywords)
       if (indicationDrugs.length > 0) {
         drugMonographs = []
-        for (const name of indicationDrugs.slice(0, 5)) {
+        let indicationMonographsFound = 0
+        for (const name of indicationDrugs.slice(0, 10)) {
           const mono = await queryDrugByName(client, name)
           if (mono) {
             drugMonographs.push(mono)
             sources.push(formatDrugSource(mono, 0.85))
+            indicationMonographsFound++
           }
+          if (indicationMonographsFound >= 5) break
+        }
+        // If no indication drugs had monographs, provide top registry entries as context
+        if (indicationMonographsFound === 0) {
+          const conditionTerms = diseaseKeywords.length > 0 ? diseaseKeywords : keywords
+          sources.push({
+            type: 'drug_registry',
+            id: `registry-indication-${conditionTerms[0] || 'general'}`,
+            title: `Drugs for: ${conditionTerms.join(', ')}`,
+            content: [
+              `CONDITION QUERY: ${query}`,
+              `MATCHED DRUGS (therapeutic class-based): ${indicationDrugs.slice(0, 8).join('; ')}`,
+              `Note: Full monographs not available for these drugs in the database.`,
+              `Use clinical knowledge to answer. Reference WHO guidelines and KEML where applicable.`,
+            ].join('\n'),
+            relevance: 0.75,
+          })
         }
       }
     }
@@ -556,13 +654,15 @@ export const KnowledgeEngine = {
     const systemInstruction = `You are Clinova's Clinical Decision Support AI. You are a clinical pharmacy educator assisting healthcare students and professionals.
 
 INSTRUCTIONS:
-- Answer based STRICTLY on the retrieved knowledge sources provided below.
-- If the sources don't contain enough information, say so honestly -- do not fabricate.
-- Use the drug monograph data (indications, contraindications, dosing, interactions, monitoring) when answering drug-related queries.
-- Reference specific clinical cases when discussing patient scenarios.
+- Answer based on the retrieved knowledge sources provided below.
+- When a drug monograph is available: cite exact indications, contraindications, dosing, interactions, and monitoring from the monograph data.
+- When only REGISTRY metadata is available (drug recognized but no full monograph): use the therapeutic class info as context and provide a clinically accurate answer from your training. Clearly note: "No full monograph available — answer based on clinical knowledge."
+- When NO drug data is available in the database: answer from your clinical knowledge, referencing WHO guidelines and standard practice where applicable. Do NOT say "I don't have data" — provide the best clinical answer you can.
 - For drug interactions, always state the mechanism, severity, and clinical action needed.
-- Cite your sources using brackets like [DRUG_MONOGRAPH: Drug Name] or [CASE: Case Title].
-- Format responses in markdown with clear headings for readability.`;
+- Reference specific clinical cases when discussing patient scenarios.
+- Cite your sources using brackets like [DRUG_MONOGRAPH: Drug Name], [DRUG_REGISTRY: Drug Name], or [CASE: Case Title].
+- Format responses in markdown with clear headings for readability.
+- Always use Kenyan/East African clinical context where relevant (KEML, local guidelines).`;
 
     return {
       systemInstruction,

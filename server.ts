@@ -987,14 +987,15 @@ ${ragContext}
 
 INSTRUCTIONS FOR USING RETRIEVED DATA:
 1. Use the retrieved data as the PRIMARY basis for your answer — do not override it with generic knowledge when the data is present.
-2. For drug queries: cite exact indications, contraindications, side effects, interactions, dosing, and monitoring from the monographs above.
-3. For clinical cases: reference the specific case title, disease, and specialty in your response.
-4. For disease queries: use the disease information above (ICD-10, specialty) as context.
-5. Always cite your sources using brackets like [DRUG: Amoxicillin] or [CASE: Patient J.K.] or [DISEASE: Pneumonia].
-6. If retrieved data is partially relevant, use it as context and supplement with your knowledge — clearly noting what came from the database vs general clinical knowledge.
-7. If retrieved data is insufficient or absent, say so honestly and provide general clinical guidance without fabricating database-specific data.
+2. For drug monographs: cite exact indications, contraindications, side effects, interactions, dosing, and monitoring from the monographs above.
+3. For DRUG REGISTRY entries (no full monograph): use the therapeutic class info as context and provide a clinically accurate answer from your training. The drug name and class are confirmed from KEML/FDA — you may reference standard dosing, indications, and interactions from clinical guidelines.
+4. For clinical cases: reference the specific case title, disease, and specialty in your response.
+5. For disease queries: use the disease information above (ICD-10, specialty) as context.
+6. Always cite your sources using brackets like [DRUG: Amoxicillin], [DRUG_REGISTRY: Drug Name], [CASE: Patient J.K.], or [DISEASE: Pneumonia].
+7. If retrieved data is partially relevant, use it as context and supplement with your knowledge — clearly noting what came from the database vs general clinical knowledge.
+8. ALWAYS provide a clinically useful answer. Do NOT say "I don't have enough data" — use the retrieved context as a springboard and your clinical training to give a complete, actionable answer.
 
-` : `NO SPECIFIC DATABASE MATCHES found for this query. Provide general clinical guidance based on your training, referencing WHO guidelines and standard clinical practice where applicable.
+` : `NO SPECIFIC DATABASE MATCHES found for this query. Provide general clinical guidance based on your training, referencing WHO guidelines and standard clinical practice where applicable. Always give a complete, actionable clinical answer — never refuse to answer due to missing database data.
 
 `}
 
@@ -1120,12 +1121,36 @@ app.post('/api/gemini/assistant/stream', async (req, res) => {
 
     const { contents, systemInstruction } = await buildAssistantRequest(req.body);
 
+    // First attempt: full RAG context
+    let textReceived = false;
+    const onChunk = (chunk: string) => {
+      if (!closed && chunk) {
+        textReceived = true;
+        send({ text: chunk });
+      }
+    };
+
     await streamGenerateContent(
       { model: 'gemini-flash-latest', contents, config: { systemInstruction } },
-      (chunk) => { if (!closed) send({ text: chunk }); },
+      onChunk,
       undefined,
       'Clinova Support'
     );
+
+    // Retry: if no text was received, try with a simplified prompt (no RAG context)
+    if (!textReceived && !closed) {
+      console.warn('[Clinova Support] Empty response from full RAG prompt, retrying with simplified context');
+      const simplifiedInstruction = `You are Clinova AI Assistant, a Clinical Pharmacy mentor for healthcare students in Kenya and East Africa. Answer the user's clinical question using your knowledge. Be concise, accurate, and helpful. Always provide a complete clinical answer.`;
+      const retryContents = contents.filter((c: any) => c.role === 'user').slice(-1);
+      if (retryContents.length > 0) {
+        await streamGenerateContent(
+          { model: 'gemini-flash-latest', contents: retryContents, config: { systemInstruction: simplifiedInstruction } },
+          onChunk,
+          undefined,
+          'Clinova Support Retry'
+        );
+      }
+    }
 
     if (!closed) send({ done: true });
     res.end();

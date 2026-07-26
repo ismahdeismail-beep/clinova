@@ -987,13 +987,46 @@ export default function ClinicalAssistantScreen() {
         }
       }
 
+      // If streaming returned empty text, retry with the non-streaming buffered endpoint
+      if (responseContent === 'No response received.') {
+        try {
+          console.warn('[ClinovaSupport] Streaming returned empty, retrying with buffered endpoint');
+          setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
+            ...m,
+            content: 'Retrying with alternative AI model...'
+          } : m));
+          const savedData2 = localStorage.getItem('clinova_pharma_review_form');
+          const parsed2 = savedData2 ? JSON.parse(savedData2) : {};
+          const fallbackRes = await fetch('/api/gemini/assistant', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              userMessage: userQuery,
+              chatHistory: messages.filter(m => !m.isThinking).map(m => ({
+                role: m.role,
+                content: m.content
+              })),
+              currentFormState: parsed2,
+            }),
+          });
+          if (fallbackRes.ok) {
+            const fallbackData = await fallbackRes.json();
+            if (fallbackData.text && fallbackData.text.trim()) {
+              responseContent = fallbackData.text;
+            }
+          }
+        } catch (fallbackErr) {
+          console.warn('[ClinovaSupport] Buffered fallback also failed:', fallbackErr);
+        }
+      }
+
       if (!success) {
         throw lastError || new Error('Failed to reach assistant after multiple attempts');
       }
       
       if (engineSources.length > 0) {
         citations = engineSources.slice(0, 4).map((s: any) => ({
-          source: s.type === 'drug_monograph' ? 'Kenya Drug Index' : s.type === 'clinical_case' ? 'Clinical Cases' : s.type === 'disease' ? 'Disease Knowledge' : 'Knowledge Base',
+          source: s.type === 'drug_monograph' ? 'Kenya Drug Index' : s.type === 'drug_registry' ? 'Kenya Drug Index' : s.type === 'clinical_case' ? 'Clinical Cases' : s.type === 'disease' ? 'Disease Knowledge' : 'Knowledge Base',
           document: s.title,
           year: '2024'
         }));

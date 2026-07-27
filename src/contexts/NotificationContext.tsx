@@ -58,7 +58,7 @@ const DEFAULT_NOTIFICATIONS: AppNotification[] = [
   {
     id: 'welcome-3',
     type: 'info',
-    title: 'AI Clinical Assistant',
+    title: 'AI Clinova Support',
     message: 'Get instant answers to clinical questions powered by AI, backed by Kenyan STG guidelines.',
     time: 'Feature',
     timestamp: Date.now() - 7200000,
@@ -91,8 +91,8 @@ const FEATURE_ANNOUNCEMENTS = [
     link: '/drugs',
   },
   {
-    id: 'feat-clinical-assistant',
-    title: 'AI Clinical Assistant',
+    id: 'feat-clinova-support',
+    title: 'AI Clinova Support',
     message: 'Get instant answers to clinical questions powered by AI, backed by Kenyan STG guidelines.',
     iconName: 'Activity',
     color: 'text-cyan-500',

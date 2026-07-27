@@ -281,7 +281,7 @@ function DownloadButton({ content, filename }: { content: string; filename: stri
   );
 }
 
-export default function ClinicalAssistantScreen() {
+export default function ClinovaSupportScreen() {
   const navigate = useNavigate();
   const { userData } = useAuth();
   const [currentSessionId, setCurrentSessionId] = useState<string>('session-' + Date.now());
@@ -619,7 +619,7 @@ export default function ClinicalAssistantScreen() {
       mdContent += `\n---\n\n`;
     });
 
-    mdContent += `\n*End of clinical assistant record. Clinova is an assistive reasoning engine. Standard protocols should always be cross-referenced with official local policies and drug guidelines.*`;
+    mdContent += `\n*End of Clinova Support record. Clinova is an assistive reasoning engine. Standard protocols should always be cross-referenced with official local policies and drug guidelines.*`;
 
     const blob = new Blob([mdContent], { type: 'text/markdown;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
@@ -1301,10 +1301,13 @@ export default function ClinicalAssistantScreen() {
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                   {[
-                    { icon: Pill, label: 'Drug Index', desc: '1000 monographs', path: '/drug-index' },
-                    { icon: Stethoscope, label: 'Clinical Cases', desc: '300+ simulations', path: '/clinical-cases' },
+                    { icon: BrainCircuit, label: 'Education Hub', desc: 'Study modules & units', path: '/knowledge' },
+                    { icon: Pill, label: 'Drug Index', desc: '1000 monographs', path: '/drugs' },
+                    { icon: Stethoscope, label: 'Clinical Cases', desc: '300+ simulations', path: '/cases' },
                     { icon: GraduationCap, label: 'Exam Prep', desc: 'Mock papers & topics', path: '/exam' },
-                    { icon: HeartPulse, label: 'Care Plans', desc: '94 NANDA/NIC/NOC', path: '/care-plans' },
+                    { icon: HeartPulse, label: 'Care Plans', desc: '94 NANDA/NIC/NOC', path: '/care-plan' },
+                    { icon: Library, label: 'Library', desc: 'Clinical references', path: '/library' },
+                    { icon: Settings, label: 'Settings', desc: 'App preferences', path: '/settings' },
                   ].map((nav, i) => {
                     const Icon = nav.icon;
                     return (

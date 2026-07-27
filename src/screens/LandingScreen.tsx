@@ -51,7 +51,7 @@ export default function LandingScreen() {
       icon: Bot,
       title: 'Clinova Support',
       description:
-        'AI-powered clinical assistant to audit regimens, answer drug questions, and suggest evidence-based optimisations from trusted references.',
+        'AI-powered clinical decision support — audit regimens, answer drug questions, and suggest evidence-based optimisations from trusted references.',
       gradient: 'from-amber-500 to-orange-600',
     },
     {

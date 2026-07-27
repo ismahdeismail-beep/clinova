@@ -10,7 +10,7 @@ import {
 const DashboardScreen = React.lazy(() => import('./screens/DashboardScreen'));
 const ClinicalCasesScreen = React.lazy(() => import('./screens/ClinicalCasesScreen'));
 const DrugIndexScreen = React.lazy(() => import('./screens/DrugIndexScreen'));
-const ClinicalAssistantScreen = React.lazy(() => import('./screens/ClinicalAssistantScreen'));
+const ClinovaSupportScreen = React.lazy(() => import('./screens/ClinovaSupportScreen'));
 const EducationHubScreen = React.lazy(() => import('./screens/EducationHubScreen'));
 const BoardExamScreen = React.lazy(() => import('./screens/BoardExamScreen'));
 const ExamPrepScreen = React.lazy(() => import('./screens/ExamPrepScreen'));
@@ -328,7 +328,7 @@ function AppContent() {
               <Route path="/" element={<DashboardScreen />} />
               <Route path="/cases" element={<ClinicalCasesScreen />} />
               <Route path="/drugs" element={<DrugIndexScreen />} />
-              <Route path="/assistant" element={<ClinicalAssistantScreen />} />
+              <Route path="/assistant" element={<ClinovaSupportScreen />} />
               <Route path="/knowledge" element={<EducationHubScreen />} />
               <Route path="/knowledge/:moduleId" element={<EducationHubScreen />} />
               <Route path="/knowledge/:moduleId/:unitId" element={<EducationHubScreen />} />

@@ -1234,7 +1234,7 @@ export default function ClinovaSupportScreen() {
           onScroll={handleScroll}
           className="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6 scrollbar-thin scroll-smooth"
         >
-          <div className="max-w-3xl mx-auto w-full flex flex-col gap-4 sm:gap-6">
+          <div className="w-full flex flex-col gap-4 sm:gap-6">
             {/* Welcome State / Initial Empty State */}
           {messages.length === 0 && (
             <div className="max-w-3xl mx-auto py-3 sm:py-8 px-2">
@@ -1527,9 +1527,7 @@ export default function ClinovaSupportScreen() {
         
         {/* Floating Interactive Input Composer Area */}
         <div className="p-2.5 sm:p-4 border-t border-[var(--border)]/80 bg-[var(--surface)] shrink-0 z-10 shadow-lg pb-[calc(0.625rem+env(safe-area-inset-bottom,0px))]">
-          <div className="max-w-3xl mx-auto w-full">
-          
-          {/* Active Databases Config Dropdown Panel */}
+          <div className="max-w-5xl mx-auto w-full">
           <div className="mb-1.5 sm:mb-3 relative">
             <button 
               onClick={() => setShowSourceSelector(!showSourceSelector)}

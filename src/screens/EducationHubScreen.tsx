@@ -11,7 +11,7 @@ import {
 import Markdown from 'react-markdown';
 import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
-import { EDUCATION_MODULES, type EducationModule, type EducationModuleUnit, getModuleUnits } from '../data/educationHubData';
+import { EDUCATION_MODULES, type EducationModule, type EducationModuleUnit, type EducationSubModule, getModuleUnits, getSubModuleUnits, findSubModule } from '../data/educationHubData';
 
 import { useAuth } from '../contexts/AuthContext';
 import { EducationService, CustomUnit, SubFolder, SavedFlashcard, SavedQuiz } 
@@ -74,6 +74,7 @@ export default function EducationHubScreen() {
   const { userData } = useAuth();
   
   const [selectedModule, setSelectedModule] = useState<EducationModule | null>(null);
+  const [selectedSubModule, setSelectedSubModule] = useState<EducationSubModule | null>(null);
   const [selectedUnit, setSelectedUnit] = useState<EducationModuleUnit | null>(null);
   const [examPrepOpen, setExamPrepOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
@@ -138,10 +139,11 @@ export default function EducationHubScreen() {
 
   // Fetch custom sub-folders/units from Firestore
   const fetchCustomUnits = async () => {
-    if (userData && selectedModule) {
+    const fetchModuleId = selectedSubModule ? selectedSubModule.id : selectedModule?.id;
+    if (userData && fetchModuleId) {
       setLoadingCustom(true);
       try {
-        const units = await EducationService.getCustomUnits(userData.id, selectedModule.id);
+        const units = await EducationService.getCustomUnits(userData.id, fetchModuleId);
         setCustomUnits(units);
       } catch (err) {
         console.error('Error fetching custom units:', err);
@@ -153,28 +155,50 @@ export default function EducationHubScreen() {
 
   useEffect(() => {
     fetchCustomUnits();
-  }, [userData, selectedModule]);
+  }, [userData, selectedModule, selectedSubModule]);
 
   // Sync state from URL params (deep-link, refresh, browser back/forward)
   useEffect(() => {
     if (!moduleId) {
       if (selectedModule) setSelectedModule(null);
+      if (selectedSubModule) setSelectedSubModule(null);
       if (selectedUnit) setSelectedUnit(null);
       return;
     }
+    // Check if moduleId is a top-level module
     const mod = EDUCATION_MODULES.find(m => m.id === moduleId) || null;
-    if (mod && mod.id !== selectedModule?.id) {
-      setSelectedModule(mod);
+    // Check if moduleId is a sub-module (e.g. clinical_pharm under exam_prep)
+    const subMatch = !mod ? findSubModule(moduleId) : undefined;
+    
+    if (mod) {
+      if (mod.id !== selectedModule?.id) setSelectedModule(mod);
+      if (selectedSubModule) setSelectedSubModule(null);
+    } else if (subMatch) {
+      // Navigate to a sub-module: set parent as selectedModule, sub-module as selectedSubModule
+      if (subMatch.module.id !== selectedModule?.id) setSelectedModule(subMatch.module);
+      if (subMatch.subModule.id !== selectedSubModule?.id) setSelectedSubModule(subMatch.subModule);
+    } else {
+      if (selectedModule) setSelectedModule(null);
+      if (selectedSubModule) setSelectedSubModule(null);
     }
-    if (!mod) return;
+    
+    if (!mod && !subMatch) return;
+    
     if (!unitId) {
       if (selectedUnit) setSelectedUnit(null);
       return;
     }
-    const units = [
-      ...getModuleUnits(mod.id),
-      ...customUnits.map(cu => ({ ...cu, isCustom: true } as unknown as EducationModuleUnit)),
-    ];
+    
+    // Resolve units from the appropriate level
+    const units = selectedSubModule
+      ? [
+          ...getSubModuleUnits(selectedModule!.id, selectedSubModule.id).map(u => ({ ...u, isCustom: false })),
+          ...customUnits.map(cu => ({ ...cu, isCustom: true } as unknown as EducationModuleUnit)),
+        ]
+      : [
+          ...getModuleUnits((mod || subMatch!.module).id).map(u => ({ ...u, isCustom: false })),
+          ...customUnits.map(cu => ({ ...cu, isCustom: true } as unknown as EducationModuleUnit)),
+        ];
     const unit = units.find(u => u.id === unitId) || null;
     if (unit && unit.id !== selectedUnit?.id) {
       setSelectedUnit(unit);
@@ -195,8 +219,17 @@ export default function EducationHubScreen() {
       return;
     }
     setSelectedModule(mod);
+    setSelectedSubModule(null);
     setSelectedUnit(null);
     navigate(`/knowledge/${mod.id}`);
+  };
+
+  // Handle sub-module click (Level 2 → Level 3)
+  const handleSubModuleClick = (subMod: EducationModuleUnit) => {
+    // Sub-modules are returned by getModuleUnits with isSubModule flag
+    // Navigate to /knowledge/{subModuleId} — the URL sync will detect it's a sub-module
+    setSelectedUnit(null);
+    navigate(`/knowledge/${subMod.id}`);
   };
 
   const handleUnitClick = (unit: EducationModuleUnit) => {
@@ -208,16 +241,20 @@ export default function EducationHubScreen() {
       return;
     }
     setSelectedUnit(unit);
-    if (selectedModule) navigate(`/knowledge/${selectedModule.id}/${unit.id}`);
+    // Use sub-module ID in URL when inside a sub-module for clean deep-linking
+    const routeBase = selectedSubModule ? selectedSubModule.id : selectedModule?.id;
+    if (routeBase) navigate(`/knowledge/${routeBase}/${unit.id}`);
   };
 
   const handleBackToModules = () => {
     setSelectedModule(null);
+    setSelectedSubModule(null);
     setSelectedUnit(null);
     navigate('/knowledge');
   };
 
-  const handleBackToUnits = () => {
+  const handleBackToSubModules = () => {
+    setSelectedSubModule(null);
     setSelectedUnit(null);
     if (selectedModule) navigate(`/knowledge/${selectedModule.id}`);
     setTimeout(() => {
@@ -227,13 +264,26 @@ export default function EducationHubScreen() {
     }, 0);
   };
 
+  const handleBackToUnits = () => {
+    setSelectedUnit(null);
+    // Navigate back to the sub-module or module level
+    const routeBase = selectedSubModule ? selectedSubModule.id : selectedModule?.id;
+    if (routeBase) navigate(`/knowledge/${routeBase}`);
+    setTimeout(() => {
+      if (scrollContainerRef.current && scrollPositions.current.units > 0) {
+        scrollContainerRef.current.scrollTop = scrollPositions.current.units;
+      }
+    }, 0);
+  };
+
   const handleDeleteUnit = async (unitId: string, e: React.MouseEvent) => {
     e.stopPropagation();
-    if (!userData || !selectedModule) return;
+    const fetchModuleId = selectedSubModule ? selectedSubModule.id : selectedModule?.id;
+    if (!userData || !fetchModuleId) return;
     
     if (window.confirm('Are you sure you want to delete this custom folder and all its associated materials? This action is irreversible.')) {
       try {
-        await EducationService.deleteCustomUnit(userData.id, selectedModule.id, unitId);
+        await EducationService.deleteCustomUnit(userData.id, fetchModuleId, unitId);
         fetchCustomUnits();
       } catch (err) {
         console.error('Error deleting custom unit:', err);
@@ -242,12 +292,17 @@ export default function EducationHubScreen() {
   };
 
   // Combine static and custom units, search and sort by favorites
-  const rawUnits = selectedModule
+  const rawUnits = selectedSubModule && selectedModule
     ? [
-        ...getModuleUnits(selectedModule.id).map(u => ({ ...u, isCustom: false })),
+        ...getSubModuleUnits(selectedModule.id, selectedSubModule.id).map(u => ({ ...u, isCustom: false })),
         ...customUnits.map(cu => ({ ...cu, isCustom: true }))
       ]
-    : [];
+    : selectedModule
+      ? [
+          ...getModuleUnits(selectedModule.id).map(u => ({ ...u, isCustom: false })),
+          ...customUnits.map(cu => ({ ...cu, isCustom: true }))
+        ]
+      : [];
 
   const filteredUnits = searchQuery 
     ? rawUnits.filter(u => 
@@ -268,8 +323,15 @@ export default function EducationHubScreen() {
   const filteredMods = EDUCATION_MODULES.filter(m => {
     if (!searchQuery) return true;
     const q = searchQuery.toLowerCase();
+    // Also search sub-module titles and their units
+    const subModuleMatch = m.subModules?.some(sm =>
+      sm.title.toLowerCase().includes(q) ||
+      sm.description.toLowerCase().includes(q) ||
+      sm.units?.some(u => u.title.toLowerCase().includes(q) || (u.description || '').toLowerCase().includes(q))
+    );
     return m.title.toLowerCase().includes(q) ||
            m.description.toLowerCase().includes(q) ||
+           subModuleMatch ||
            getModuleUnits(m.id).some(u => u.title.toLowerCase().includes(q) || (u.description || '').toLowerCase().includes(q));
   });
 
@@ -290,16 +352,24 @@ export default function EducationHubScreen() {
         {/* Header Section */}
         {selectedModule ? (
           <div className="flex items-center gap-3">
-            <button onClick={handleBackToModules} className="flex items-center gap-1.5 px-3 py-1.5 bg-[var(--surface)] border border-[var(--border)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] rounded-xl text-xs font-black shadow-xs transition-all cursor-pointer">
+            <button onClick={selectedSubModule ? handleBackToSubModules : handleBackToModules} className="flex items-center gap-1.5 px-3 py-1.5 bg-[var(--surface)] border border-[var(--border)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] rounded-xl text-xs font-black shadow-xs transition-all cursor-pointer">
               <ChevronLeft size={14} />
               Back
             </button>
             <span className="text-sm text-[var(--text-muted)]">
               {selectedUnit ? (
                 <>
-                  <button onClick={handleBackToUnits} className="hover:text-[var(--primary)] transition-colors">{selectedModule.title}</button>
+                  <button onClick={handleBackToUnits} className="hover:text-[var(--primary)] transition-colors">
+                    {selectedSubModule ? selectedSubModule.title : selectedModule.title}
+                  </button>
                   <ChevronRight size={14} className="inline mx-1" />
                   <span className="text-[var(--text)] font-semibold">{selectedUnit.title}</span>
+                </>
+              ) : selectedSubModule ? (
+                <>
+                  <button onClick={handleBackToSubModules} className="hover:text-[var(--primary)] transition-colors">{selectedModule.title}</button>
+                  <ChevronRight size={14} className="inline mx-1" />
+                  <span className="text-[var(--text)] font-semibold">{selectedSubModule.title}</span>
                 </>
               ) : (
                 <span className="text-[var(--text)] font-semibold">{selectedModule.title}</span>
@@ -340,7 +410,7 @@ export default function EducationHubScreen() {
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]" size={18} />
               <input
                 type="text"
-                placeholder={selectedModule ? "Search units..." : "Search modules & units..."}
+                placeholder={selectedSubModule ? "Search units..." : selectedModule ? "Search sub-modules & units..." : "Search modules & units..."}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full pl-10 pr-4 py-3 bg-[var(--surface)] border border-[var(--border)] rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] transition-all"
@@ -391,14 +461,14 @@ export default function EducationHubScreen() {
             </div>
           )}
 
-          {/* Level 2: Units */}
+          {/* Level 2: Sub-Modules or Units */}
           {selectedModule && !selectedUnit && (
             <div className="animate-in fade-in slide-in-from-right-4 duration-300 space-y-6">
               
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <h2 className="text-2xl font-bold text-[var(--text)] flex items-center gap-3">
-                  <ModuleIcon name={selectedModule.icon} className={`text-${selectedModule.color}-500`} /> 
-                  {selectedModule.title}
+                  <ModuleIcon name={selectedSubModule?.icon || selectedModule.icon} className={`text-${selectedSubModule?.color || selectedModule.color}-500`} /> 
+                  {selectedSubModule ? selectedSubModule.title : selectedModule.title}
                 </h2>
               </div>
 
@@ -407,11 +477,16 @@ export default function EducationHubScreen() {
                   {sortedUnits.map((unit) => (
                     <div 
                       key={unit.id}
-                      onClick={() => handleUnitClick(unit)}
-                      className={`relative bg-[var(--surface)] border rounded-2xl p-5 cursor-pointer transition-all shadow-sm hover:shadow-md group flex justify-between items-start ${unit.isCustom ? 'border-purple-500/30 bg-purple-500/[0.01] hover:border-purple-500' : 'border-[var(--border)] hover:border-[var(--primary)]'}`}
+                      onClick={() => (unit as any).isSubModule ? handleSubModuleClick(unit) : handleUnitClick(unit)}
+                      className={`relative bg-[var(--surface)] border rounded-2xl p-5 cursor-pointer transition-all shadow-sm hover:shadow-md group flex justify-between items-start ${(unit as any).isCustom ? 'border-purple-500/30 bg-purple-500/[0.01] hover:border-purple-500' : (unit as any).isSubModule ? 'border-[var(--border)] hover:border-[var(--primary)] bg-gradient-to-br from-[var(--surface)] to-[var(--surface-dim)]' : 'border-[var(--border)] hover:border-[var(--primary)]'}`}
                     >
                       <div className="flex-1 min-w-0 pr-4">
                         <div className="flex items-center gap-2 mb-1.5 flex-wrap">
+                          {(unit as any).isSubModule ? (
+                            <div className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 bg-gradient-to-br from-${(unit as any).color || 'primary'}-500/20 to-${(unit as any).color || 'primary'}-500/5`}>
+                              <ModuleIcon name={(unit as any).icon} className={`text-${(unit as any).color || 'primary'}-500`} />
+                            </div>
+                          ) : (
                           <button
                             onClick={(e) => toggleUnitFavorite(unit.id, e)}
                             className={`p-1 hover:bg-[var(--surface-dim)] rounded-lg transition-all shrink-0 ${favoriteUnits.includes(unit.id) ? 'text-amber-500 fill-amber-500' : 'text-[var(--text-muted)] hover:text-amber-500'}`}
@@ -419,8 +494,9 @@ export default function EducationHubScreen() {
                           >
                             <Star size={14} className="transition-transform hover:scale-110" />
                           </button>
-                          <h3 className={`font-bold text-base whitespace-normal break-words transition-colors ${unit.isCustom ? 'group-hover:text-purple-600' : 'group-hover:text-[var(--primary)]'}`}>{unit.title}</h3>
-                          {unit.isCustom && (
+                          )}
+                          <h3 className={`font-bold text-base whitespace-normal break-words transition-colors ${(unit as any).isCustom ? 'group-hover:text-purple-600' : 'group-hover:text-[var(--primary)]'}`}>{unit.title}</h3>
+                          {(unit as any).isCustom && (
                             <span className="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded-full bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300 flex items-center gap-1 shrink-0">
                               <Sparkles size={10} /> Custom Folder
                             </span>
@@ -469,7 +545,7 @@ export default function EducationHubScreen() {
 
           {/* Level 3: Learning Workspace / Clean Disease View */}
           {selectedModule && selectedUnit && (
-            selectedModule.id === 'clinical_pharm'
+            (selectedSubModule?.id === 'clinical_pharm' || selectedModule.id === 'clinical_pharm')
               ? <CleanDiseaseView unit={selectedUnit} onBack={handleBackToUnits} />
               : <LearningWorkspace unit={selectedUnit} module={selectedModule} onBack={handleBackToUnits} />
           )}

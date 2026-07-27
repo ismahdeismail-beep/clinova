@@ -1010,6 +1010,10 @@ export interface EducationSubModule {
   id: string;
   title: string;
   description: string;
+  icon?: string;
+  color?: string;
+  /** Parent module id for breadcrumb navigation */
+  parentModuleId?: string;
   units: EducationModuleUnit[];
 }
 
@@ -1019,12 +1023,22 @@ export interface EducationSubModule {
   description: string;
   icon?: string;
   color?: string;
+  /** Parent module id for breadcrumb navigation */
+  parentModuleId?: string;
   units: EducationModuleUnit[];
 }
 
 /** All top-level modules for the Education Hub */
 export const EDUCATION_MODULES: EducationModule[] = [
-  { id: 'clinical_pharm', title: 'Clinical Pharmacy & Therapeutics', description: 'Disease management and patient care across 17 integrated therapeutic areas.', isIntegrated: true, areaId: 'clinical_pharm', icon: 'HeartPulse', color: 'red' },
+  { id: 'exam_prep', title: 'Exam Prep', description: 'Structured exam preparation across clinical pharmacy, pharmacology, and more.', isIntegrated: false, icon: 'Award', color: 'amber',
+    subModules: [
+      { id: 'clinical_pharm', title: 'Clinical Pharmacy', description: 'Disease management and patient care across 20 integrated therapeutic areas.', icon: 'HeartPulse', color: 'red', parentModuleId: 'exam_prep',
+        units: getArea('clinical_pharm')?.units.map(u => ({ id: u.id, title: u.title, description: u.description, estimatedHours: u.estimatedHours } as EducationModuleUnit)) ?? [],
+      },
+      // Future sub-modules can be added here, e.g.:
+      // { id: 'pharmacology', title: 'Pharmacology', description: '...', icon: 'FlaskConical', color: 'blue', units: [...] },
+    ],
+  },
   { id: 'online_books', title: 'Online Books', description: 'Pharmacy reference books, textbooks, and clinical resources.', isIntegrated: false, icon: 'BookOpen', color: 'sky' },
 ];
 
@@ -1068,6 +1082,16 @@ export function getSubModuleUnits(moduleId: string, subModuleId: string): Educat
   if (!module?.subModules) return [];
   const subModule = module.subModules.find((sm) => sm.id === subModuleId);
   return subModule?.units ?? [];
+}
+
+/** Find a sub-module by its ID across all top-level modules */
+export function findSubModule(subModuleId: string): { module: EducationModule; subModule: EducationSubModule } | undefined {
+  for (const mod of EDUCATION_MODULES) {
+    if (!mod.subModules) continue;
+    const sm = mod.subModules.find((s) => s.id === subModuleId);
+    if (sm) return { module: mod, subModule: sm };
+  }
+  return undefined;
 }
 
 // Static units for non-curriculum modules

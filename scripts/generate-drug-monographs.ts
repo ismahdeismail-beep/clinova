@@ -10,6 +10,8 @@ interface CanonicalDrug {
   therapeuticClass: string;
   sourceMentions: number;
   status: 'seeded' | 'new';
+  source?: string;
+  priority?: string;
 }
 
 interface DrugMonograph {
@@ -23,9 +25,88 @@ interface DrugMonograph {
   interactions: string[];
   monitoring: string;
   patient_counselling: string;
+  mechanism_of_action: string;
+  brand_names: string[];
+  warnings: string[];
+  pregnancy_category: string;
+  overdose: string;
+  pharmacokinetics: string;
+  black_box_warnings: string[];
+  clinical_pearls: string[];
+}
+
+interface OpenFdaLabel {
+  openfda?: {
+    generic_name?: string[];
+    brand_name?: string[];
+    substance_name?: string[];
+   /pharm_class_epc?: string[];
+  };
+  indications_and_usage?: string[];
+  dosage_and_administration?: string[];
+  contraindications?: string[];
+  warnings?: string[];
+  adverse_reactions?: string[];
+  drug_interactions?: string[];
+  boxed_warning?: string[];
+  description?: string[];
+  mechanism_of_action?: string[];
+  pharmacokinetics?: string[];
+  pregnancy?: string[];
+  overdose?: string[];
 }
 
 function capitalize(s: string): string { return s.charAt(0).toUpperCase() + s.slice(1); }
+
+function sleep(ms: number): Promise<void> { return new Promise(r => setTimeout(r, ms)); }
+
+/** Parse CLI flags */
+function parseFlags(): { fdaOnly: boolean; dryRun: boolean; limit: number | null; offset: number } {
+  const args = process.argv.slice(2);
+  return {
+    fdaOnly: args.includes('--fda-only'),
+    dryRun: args.includes('--dry-run'),
+    limit: args.includes('--limit') ? parseInt(args[args.indexOf('--limit') + 1]) || null : null,
+    offset: args.includes('--offset') ? parseInt(args[args.indexOf('--offset') + 1]) || 0 : 0,
+  };
+}
+
+/** Fetch drug label data from OpenFDA */
+async function fetchOpenFdaLabel(drugName: string): Promise<OpenFdaLabel | null> {
+  try {
+    const url = `https://api.fda.gov/drug/label.json?search=openfda.generic_name:"${encodeURIComponent(drugName)}"+OR+openfda.brand_name:"${encodeURIComponent(drugName)}"&limit=1`;
+    const res = await fetch(url);
+    if (!res.ok) {
+      const fbUrl = `https://api.fda.gov/drug/label.json?search=search="${encodeURIComponent(drugName)}"&limit=1`;
+      const fbRes = await fetch(fbUrl);
+      if (!fbRes.ok) return null;
+      const fbData = await fbRes.json();
+      return fbData?.results?.[0] ?? null;
+    }
+    const data = await res.json();
+    return data?.results?.[0] ?? null;
+  } catch { return null; }
+}
+
+/** Extract first paragraph from FDA text field, cleaning bracket notation */
+function fdaText(field: string[] | undefined): string {
+  if (!field?.length) return '';
+  return field[0]
+    .replace(/\[.*?\]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/** Extract array from FDA text field by splitting on semicolons, periods, or newlines */
+function fdaArray(field: string[] | undefined): string[] {
+  if (!field?.length) return [];
+  const raw = field.join(' ').replace(/\s+/g, ' ').trim();
+  if (!raw) return [];
+  return raw
+    .split(/(?:;|(?:\.\s+)|(?:\r?\n))/)
+    .map(s => s.replace(/\[.*?\]/g, '').trim())
+    .filter(s => s.length > 3 && s.length < 500);
+}
 
 const CLASS_SPECIFIC_CONTENT: Record<string, {
   drugClass: string;
@@ -47,9 +128,9 @@ const CLASS_SPECIFIC_CONTENT: Record<string, {
     classSE: [
       'Gastrointestinal disturbances: nausea, vomiting, diarrhoea (common; usually self-limiting)',
       'Allergic reactions: skin rash, urticaria, pruritus; rarely anaphylaxis (discontinue immediately)',
-      'Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) â€” report persistent diarrhoea',
-      'QT prolongation (certain classes) â€” ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities',
-      'Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening â€” discontinue if rash with blistering or mucosal involvement)',
+      'Antimicrobial-associated diarrhoea / Clostridioides difficile infection (pseudomembranous colitis) — report persistent diarrhoea',
+      'QT prolongation (certain classes) — ECG monitoring if concurrent QT-prolonging drugs or electrolyte abnormalities',
+      'Hypersensitivity reactions: Stevens-Johnson syndrome / toxic epidermal necrolysis (rare but life-threatening — discontinue if rash with blistering or mucosal involvement)',
     ],
     classCI: [
       'Hypersensitivity to active substance or any excipient in the formulation',
@@ -57,9 +138,9 @@ const CLASS_SPECIFIC_CONTENT: Record<string, {
       'Severe hepatic impairment (dose adjustment or contraindication depending on hepatic metabolism)',
     ],
     classInteractions: [
-      'Warfarin / DOACs â€” many antimicrobials alter INR; monitor coagulation closely',
-      'Oral contraceptives â€” reduced efficacy during and 7 days after therapy; advise additional barrier contraception',
-      'Antacids / iron / calcium / magnesium / milk products â€” reduced absorption of tetracyclines and fluoroquinolones; space dosing 2â€“4 hours apart',
+      'Warfarin / DOACs — many antimicrobials alter INR; monitor coagulation closely',
+      'Oral contraceptives — reduced efficacy during and 7 days after therapy; advise additional barrier contraception',
+      'Antacids / iron / calcium / magnesium / milk products — reduced absorption of tetracyclines and fluoroquinolones; space dosing 2–4 hours apart',
     ],
     monitoring: 'Monitor for signs of hypersensitivity, renal and hepatic function at baseline and during prolonged therapy, complete blood count for prolonged courses. Therapeutic drug monitoring required for aminoglycosides and vancomycin.',
     counselling: 'Complete the full course as prescribed even if symptoms improve. Do not share with others. Report any rash, severe diarrhoea, or signs of superinfection. Take at evenly spaced intervals to maintain effective drug levels.',
@@ -74,10 +155,10 @@ const CLASS_SPECIFIC_CONTENT: Record<string, {
     ],
     classSE: [
       'Dizziness, headache, fatigue (common during initial titration; usually resolve)',
-      'Postural hypotension (especially elderly) â€” advise rising slowly from sitting/lying',
-      'Bradycardia / heart block (rate-slowing agents) â€” monitor pulse; report syncope or presyncope',
-      'Peripheral oedema (dihydropyridine calcium channel blockers) â€” usually dose-dependent',
-      'Dry cough (ACE inhibitors) â€” consider ARB if intolerable',
+      'Postural hypotension (especially elderly) — advise rising slowly from sitting/lying',
+      'Bradycardia / heart block (rate-slowing agents) — monitor pulse; report syncope or presyncope',
+      'Peripheral oedema (dihydropyridine calcium channel blockers) — usually dose-dependent',
+      'Dry cough (ACE inhibitors) — consider ARB if intolerable',
     ],
     classCI: [
       'Hypersensitivity to active substance',
@@ -86,10 +167,10 @@ const CLASS_SPECIFIC_CONTENT: Record<string, {
       'Severe hypotension (systolic BP <90 mmHg)',
     ],
     classInteractions: [
-      'NSAIDs â€” reduce antihypertensive efficacy; avoid chronic use if possible',
-      'Beta-blockers / calcium channel blockers (verapamil, diltiazem) â€” additive bradycardia; caution when combining',
-      'Diuretics â€” additive hypotension; monitor BP and electrolytes',
-      'Digoxin â€” increased digoxin levels with some cardiovascular agents; monitor levels',
+      'NSAIDs — reduce antihypertensive efficacy; avoid chronic use if possible',
+      'Beta-blockers / calcium channel blockers (verapamil, diltiazem) — additive bradycardia; caution when combining',
+      'Diuretics — additive hypotension; monitor BP and electrolytes',
+      'Digoxin — increased digoxin levels with some cardiovascular agents; monitor levels',
     ],
     monitoring: 'Monitor blood pressure, heart rate, ECG at baseline and during titration. Check renal function and electrolytes (especially with ACEi/ARB and diuretics). Monitor for signs of fluid overload or decompensation in heart failure patients.',
     counselling: 'Take medication at the same time each day. Do not stop suddenly without consulting your doctor (risk of rebound hypertension/tachycardia). Rise slowly from sitting to prevent falls. Avoid excessive salt intake. Report significant dizziness, syncope, or palpitations.',
@@ -104,9 +185,9 @@ const CLASS_SPECIFIC_CONTENT: Record<string, {
     ],
     classSE: [
       'Drowsiness, sedation, cognitive dulling (especially during initial titration)',
-      'Psychomotor impairment â€” avoid driving and operating heavy machinery until effect is known',
+      'Psychomotor impairment — avoid driving and operating heavy machinery until effect is known',
       'Weight gain / metabolic changes (certain antipsychotics and mood stabilizers)',
-      'Extrapyramidal symptoms (antipsychotics) â€” dystonia, parkinsonism, akathisia, tardive dyskinesia',
+      'Extrapyramidal symptoms (antipsychotics) — dystonia, parkinsonism, akathisia, tardive dyskinesia',
       'Headache, dizziness, gastrointestinal disturbances (common; usually self-limiting)',
     ],
     classCI: [
@@ -116,13 +197,13 @@ const CLASS_SPECIFIC_CONTENT: Record<string, {
       'MAOI co-administration or recent discontinuation (certain antidepressants)',
     ],
     classInteractions: [
-      'Alcohol / other CNS depressants â€” additive sedation; avoid concurrent use',
-      'MAOIs â€” hypertensive crisis risk with certain antidepressants; washout period required',
-      'Warfarin â€” altered metabolism with certain CNS agents; monitor INR',
-      'Serotonergic drugs (triptans, tramadol, St John\'s Wort) â€” serotonin syndrome risk; avoid combination',
+      'Alcohol / other CNS depressants — additive sedation; avoid concurrent use',
+      'MAOIs — hypertensive crisis risk with certain antidepressants; washout period required',
+      'Warfarin — altered metabolism with certain CNS agents; monitor INR',
+      "Serotonergic drugs (triptans, tramadol, St John's Wort) — serotonin syndrome risk; avoid combination",
     ],
     monitoring: 'Monitor mental state, suicidal ideation (especially in young adults during early treatment), weight, metabolic parameters, ECG (QT interval for certain agents), liver function, renal function, and drug levels where applicable (lithium, valproate, carbamazepine).',
-    counselling: 'May cause drowsiness â€” avoid driving until you know how it affects you. Take as prescribed â€” do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.',
+    counselling: 'May cause drowsiness — avoid driving until you know how it affects you. Take as prescribed — do not adjust dose or stop suddenly. Report any worsening of mood, suicidal thoughts, or unusual behavioural changes immediately. Avoid alcohol. Regular follow-up appointments are essential for monitoring.',
   },
   'Analgesics': {
     drugClass: 'Analgesic agent',
@@ -135,9 +216,9 @@ const CLASS_SPECIFIC_CONTENT: Record<string, {
     classSE: [
       'Gastrointestinal: nausea, vomiting, dyspepsia, constipation (especially opioids)',
       'Sedation, dizziness (centrally-acting agents)',
-      'Gastric ulceration / bleeding (NSAIDs) â€” risk increases with duration and dose',
-      'Hepatotoxicity (paracetamol overdose) â€” adhere to maximum daily dose',
-      'Respiratory depression (opioids) â€” risk highest in opioid-naÃ¯ve, elderly, or those with respiratory compromise',
+      'Gastric ulceration / bleeding (NSAIDs) — risk increases with duration and dose',
+      'Hepatotoxicity (paracetamol overdose) — adhere to maximum daily dose',
+      'Respiratory depression (opioids) — risk highest in opioid-naive, elderly, or those with respiratory compromise',
     ],
     classCI: [
       'Hypersensitivity to active substance or NSAIDs (including aspirin-exacerbated respiratory disease)',
@@ -147,13 +228,13 @@ const CLASS_SPECIFIC_CONTENT: Record<string, {
       'Concurrent anticoagulation (NSAIDs)',
     ],
     classInteractions: [
-      'Anticoagulants (warfarin, DOACs, heparin) â€” increased bleeding risk with NSAIDs; avoid combination',
-      'Methotrexate â€” reduced clearance and increased toxicity with NSAIDs',
-      'CNS depressants (alcohol, benzodiazepines) â€” additive sedation with opioids',
-      'ACE inhibitors / diuretics â€” reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs',
+      'Anticoagulants (warfarin, DOACs, heparin) — increased bleeding risk with NSAIDs; avoid combination',
+      'Methotrexate — reduced clearance and increased toxicity with NSAIDs',
+      'CNS depressants (alcohol, benzodiazepines) — additive sedation with opioids',
+      'ACE inhibitors / diuretics — reduced antihypertensive efficacy and increased nephrotoxicity with NSAIDs',
     ],
     monitoring: 'Monitor pain scores, renal function (especially with NSAIDs in elderly/dehydrated), liver function (paracetamol), signs of bleeding/anaemia (NSAIDs), respiratory rate and sedation score (opioids), and bowel function (opioid-induced constipation).',
-    counselling: 'Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence â€” use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).',
+    counselling: 'Use the lowest effective dose for the shortest duration. Do not exceed maximum daily dose (especially paracetamol). Avoid alcohol. NSAIDs should be taken with food. Opioids may cause dependence — use exactly as prescribed. Report severe abdominal pain, black stools, or vomiting blood (NSAIDs).',
   },
   'Gastrointestinal': {
     drugClass: 'Gastrointestinal agent',
@@ -177,196 +258,162 @@ const CLASS_SPECIFIC_CONTENT: Record<string, {
       'Severe hepatic impairment (hepatically metabolized agents)',
     ],
     classInteractions: [
-      'Antacids / sucralfate â€” reduced absorption of PPIs, H2RAs, and some other GI agents; separate dosing',
-      'Clopidogrel â€” potential reduced efficacy with some PPIs (especially omeprazole, esomeprazole)',
-      'CNS depressants â€” additive sedation with certain antiemetics',
-      'Digoxin, thyroxine â€” reduced absorption with some GI agents; monitor levels',
+      'PPIs — reduced absorption of ketoconazole, iron salts, digoxin, mycophenolate; separate dosing',
+      'H2 receptor antagonists — absorption altered with pH-dependent drugs',
+      'Antiemetics (metoclopramide, domperidone) — additive prokinetic effect; QT prolongation with domperidone',
+      'Methotrexate — PPIs may reduce clearance; monitor for toxicity',
     ],
-    monitoring: 'Monitor symptom response, endoscopy findings where applicable, electrolytes (prolonged PPI use), renal function, liver function. For IBD patients: monitor inflammatory markers, faecal calprotectin, and nutritional status.',
-    counselling: 'Take PPIs 30â€“60 minutes before breakfast for optimal effect. Avoid trigger foods, alcohol, and smoking. Report black/tarry stools, haematemesis, or severe abdominal pain. Do not use antacids within 2 hours of other medications.',
+    monitoring: 'Monitor symptoms (dyspepsia, abdominal pain, bowel habit), renal function, magnesium levels with prolonged PPI use, vitamin B12 status (long-term PPI), signs of GI bleeding (stool occult blood). For IBD: inflammatory markers (CRP, ESR), faecal calprotectin.',
+    counselling: 'PPIs should be taken 30–60 minutes before meals. Antacids should be taken as needed but not within 2 hours of other medications. Stay hydrated during diarrhoeal illness. Report persistent vomiting, blood in stools, or unexplained weight loss.',
   },
-  'Endocrine': {
+  'Endocrine/Metabolic': {
     drugClass: 'Endocrine / metabolic agent',
     classIndications: [
-      'Management of diabetes mellitus (type 1 and type 2)',
-      'Thyroid disorders (hypothyroidism, hyperthyroidism)',
-      'Bone metabolism disorders (osteoporosis, Paget\'s disease)',
-      'Adrenal insufficiency / corticosteroid replacement therapy',
+      'Diabetes mellitus management (Type 1 and Type 2)',
+      'Thyroid disorder management (hypo- and hyperthyroidism)',
+      'Corticosteroid replacement therapy (adrenal insufficiency)',
+      'Metabolic syndrome / dyslipidaemia management',
     ],
     classSE: [
-      'Hypoglycaemia (antidiabetic agents) â€” educate on recognition and management',
-      'Weight changes (weight gain with insulin, sulfonylureas; weight loss with metformin, SGLT2i, GLP-1 RA)',
-      'GI intolerance (metformin: diarrhoea, nausea â€” start low and titrate slowly)',
-      'Bone/jaw pain, atypical femoral fractures (bisphosphonates)',
-      'Adrenal suppression (corticosteroids) â€” taper withdrawal, stress dosing',
+      'Hypoglycaemia (insulin, sulfonylureas) — educate on recognition and management',
+      'Weight gain (certain antidiabetics, corticosteroids, insulin)',
+      'GI disturbances: nausea, diarrhoea (metformin, GLP-1 agonists)',
+      'Osteoporosis with prolonged corticosteroid use',
+      'Adrenal suppression with chronic corticosteroid therapy',
     ],
     classCI: [
       'Hypersensitivity to active substance',
-      'Diabetic ketoacidosis (metformin, SGLT2i)',
-      'Severe renal impairment (certain antidiabetic agents; metformin: eGFR <30)',
-      'Osteonecrosis of the jaw / recent dental extraction (bisphosphonates)',
-      'Uncontrolled severe infection / surgery (SGLT2i â€” temporarily discontinue)',
+      'Severe renal impairment (metformin, certain antidiabetics)',
+      'Active diabetic ketoacidosis (metformin — discontinue)',
+      'Uncontrolled heart failure ( certain agents)',
     ],
     classInteractions: [
-      'Corticosteroids â€” hyperglycaemic effect; may require increased antidiabetic doses',
-      'Beta-blockers â€” mask hypoglycaemia symptoms; educate on alternative symptom recognition',
-      'Diuretics â€” hyperglycaemic effect (thiazides); monitor blood glucose',
-      'Warfarin â€” altered anticoagulation with thyroid medications; frequent INR monitoring',
+      'Alcohol — increased risk of hypoglycaemia with insulin and sulfonylureas; disulfiram-like reaction with metformin',
+      'Corticosteroids — reduce antidiabetic efficacy; monitor blood glucose',
+      'Warfarin — thyroid hormones and certain antidiabetics alter INR',
+      'Beta-blockers — mask hypoglycaemic symptoms',
     ],
-    monitoring: 'Monitor blood glucose (HbA1c, fasting/postprandial, self-monitoring), renal function, liver function, bone density (DXA for osteoporosis), thyroid function (TSH, FT4), adrenal function during stress/illness, and weight/BMI.',
-    counselling: 'Monitor blood glucose regularly. Recognize and treat hypoglycaemia (15g fast-acting glucose then long-acting carbohydrate). Do not skip meals. Carry identification stating your condition and medications. Annual retinal, renal, and foot checks required.',
+    monitoring: 'Monitor blood glucose (self-monitoring and HbA1c every 3 months), renal function, liver function, lipid profile, bone density with prolonged corticosteroid use, thyroid function tests (TSH, free T4), electrolytes, weight, and signs of hypoglycaemia or hyperglycaemia.',
+    counselling: 'Diabetes: rotate injection sites (insulin), never skip meals on sulfonylureas, recognise signs of hypoglycaemia (shakiness, sweating, confusion). Thyroid: take on empty stomach (levothyroxine). Corticosteroids: do not stop abruptly — taper under medical guidance. Report any unusual symptoms.',
   },
   'Respiratory': {
     drugClass: 'Respiratory agent',
     classIndications: [
-      'Asthma management (preventer and reliever therapy)',
-      'COPD management (bronchodilators, inhaled corticosteroids)',
-      'Allergic rhinitis (intranasal corticosteroids, antihistamines)',
-      'Pulmonary fibrosis / interstitial lung disease (antifibrotic agents)',
+      'Asthma management (maintenance and rescue therapy)',
+      'COPD management (maintenance therapy and exacerbation prevention)',
+      'Allergic rhinitis treatment',
+      'Cough and cold symptom management',
     ],
     classSE: [
-      'Oropharyngeal candidiasis and dysphonia (inhaled corticosteroids) â€” rinse mouth after use',
-      'Tremor, palpitations, tachycardia (beta-2 agonists) â€” dose-dependent; usually self-limiting',
-      'Dry mouth, throat irritation, cough (inhaled therapies)',
-      'Headache, dizziness, nausea (systemic effects)',
-      'Paradoxical bronchospasm (rare â€” discontinue and use alternative)',
-    ],
-    classCI: [
-      'Hypersensitivity to active substance or excipients',
-      'Acute severe asthma / status asthmaticus (long-acting beta-agonists without concomitant ICS)',
-      'Cardiac arrhythmias (certain bronchodilators â€” caution)',
-    ],
-    classInteractions: [
-      'Beta-blockers (including ophthalmic) â€” antagonist effects on beta-agonists; avoid if possible',
-      'Potassium-depleting diuretics â€” increased risk of hypokalaemia with beta-2 agonists',
-      'MAOIs / tricyclic antidepressants â€” increased cardiovascular effects with beta-2 agonists',
-      'CYP3A4 inhibitors (certain ICS) â€” increased systemic exposure; monitor for adrenal suppression',
-    ],
-    monitoring: 'Monitor peak expiratory flow (PEF), FEV1, symptom scores, inhaler technique at every visit, exacerbation frequency, oral corticosteroid use, bone density (long-term ICS), growth velocity in children, and adrenal function in high-dose ICS.',
-    counselling: 'Rinse mouth with water after each inhaler use (not swallowing) to prevent thrush. Use your inhaler correctly â€” demonstrate technique at every visit. Know the difference between preventer (daily) and reliever (as needed). Have an action plan. Seek urgent care if reliever not lasting 4 hours or symptoms worsening.',
-  },
-  'Anticoagulants': {
-    drugClass: 'Anticoagulant / antithrombotic agent',
-    classIndications: [
-      'Atrial fibrillation (stroke prevention)',
-      'Venous thromboembolism treatment and prophylaxis (DVT, PE)',
-      'Mechanical heart valve thromboprophylaxis',
-      'Acute coronary syndrome (dual antiplatelet therapy)',
-    ],
-    classSE: [
-      'Bleeding (major: intracranial, GI, retroperitoneal; minor: epistaxis, bruising, haematuria, gingival)',
-      'Heparin-induced thrombocytopenia (HIT) â€” immune-mediated; monitor platelets',
-      'Osteoporosis (long-term heparin use)',
-      'Skin necrosis / purple toe syndrome (warfarin)',
-      'Dyspepsia, GI disturbances (antiplatelets)',
-    ],
-    classCI: [
-      'Active pathological bleeding / bleeding diathesis',
-      'Severe uncontrolled hypertension',
-      'Recent intracranial haemorrhage / spinal surgery / CNS tumour',
-      'Severe hepatic impairment with coagulopathy',
-      'Concurrent anticoagulant therapy (changeover protocols only)',
-      'Pregnancy (warfarin teratogenic; LMWH preferred)',
-    ],
-    classInteractions: [
-      'NSAIDs / aspirin â€” significantly increased bleeding risk; avoid combination',
-      'Antiplatelets (clopidogrel, ticagrelor) â€” additive bleeding risk; use only if clearly indicated',
-      'Antifungals (azoles) â€” altered anticoagulant metabolism',
-      'Antibiotics â€” altered gut flora (warfarin) â€” increased INR; frequent monitoring',
-      'Herbal: St John\'s Wort (reduced efficacy), ginkgo, ginger, garlic (increased bleeding risk)',
-    ],
-    monitoring: 'Warfarin: INR monitoring at least weekly until stable, then every 4â€“6 weeks. DOACs: renal function at baseline and annually (more frequent if eGFR <60). Antiplatelets: bleeding risk assessment. All: Hb, signs of occult blood loss. HIT screening (heparin/LMWH â€” platelets every 2â€“3 days).',
-    counselling: 'Watch for signs of bleeding: unusual bruising, blood in urine/stool, black tarry stools, prolonged bleeding from cuts, coughing blood. Seek immediate help for severe headache, vision changes, or weakness (possible intracranial bleed). Carry anticoagulant card. Avoid NSAIDs. Consistent vitamin K intake for warfarin. Do not double dose if missed (DOACs: take if within 12 hours of missed dose).',
-  },
-  'Oncology': {
-    drugClass: 'Antineoplastic / chemotherapeutic agent',
-    classIndications: [
-      'Adjuvant and neoadjuvant therapy for solid tumours',
-      'Palliative chemotherapy for advanced/metastatic disease',
-      'Haematological malignancies (leukaemia, lymphoma, myeloma)',
-      'Targeted therapy for specific molecular subtypes',
-    ],
-    classSE: [
-      'Myelosuppression: neutropenia (infection risk), anaemia (fatigue), thrombocytopenia (bleeding risk) â€” nadir typically 7â€“14 days post-treatment',
-      'Nausea and vomiting (acute, delayed, anticipatory) â€” prophylactic antiemetics essential',
-      'Alopecia (variable depending on agent) â€” usually reversible',
-      'Mucositis / stomatitis â€” oral care protocol',
-      'Cardiotoxicity (anthracyclines, trastuzumab) â€” baseline and serial echo',
+      'Oral thrush (inhaled corticosteroids) — rinse mouth after use',
+      'Tremor, tachycardia (beta-agonists)',
+      'Hoarseness, throat irritation (inhaled corticosteroids)',
+      'Systemic effects with high-dose inhaled corticosteroids (adrenal suppression, osteoporosis)',
+      'Paradoxical bronchospasm (rare with inhalers)',
     ],
     classCI: [
       'Hypersensitivity to active substance',
-      'Severe myelosuppression (unless planned treatment of leukaemia with supportive care)',
-      'Severe hepatic or renal impairment (dose adjustment or contraindication depending on drug)',
-      'Pregnancy (teratogenic) â€” effective contraception required',
-      'Live vaccines during and up to 6 months after chemotherapy',
+      'Acute severe asthma (oral corticosteroids indicated — do not rely on reliever alone)',
+      'Severe cardiac arrhythmias (systemic sympathomimetics)',
     ],
     classInteractions: [
-      'CYP450 inducers/inhibitors â€” may alter chemo efficacy/toxicity',
-      'Nephrotoxic drugs (aminoglycosides, NSAIDs, contrast) â€” additive nephrotoxicity with platinum agents',
-      'Cardiotoxic drugs (anthracyclines + trastuzumab) â€” cumulative cardiotoxicity',
-      'Anticoagulants â€” thrombocytopenia increases bleeding risk',
+      'Beta-blockers — may antagonize bronchodilation; avoid in asthma',
+      'MAOIs — risk of hypertensive crisis with sympathomimetics',
+      'CYP3A4 inhibitors (ritonavir, ketoconazole) — increase systemic corticosteroid levels',
+      'Diuretics — hypokalaemia risk with high-dose beta-agonists',
     ],
-    monitoring: 'Full blood count with differential at baseline and before each cycle. Renal function, liver function, electrolytes. Cardiac function (echo/MUGA) for cardiotoxic agents. Tumour markers and imaging for response assessment. Nutritional status. Performance status (ECOG/KPS). Adverse events graded per CTCAE criteria.',
-    counselling: 'Use effective contraception during and for 6 months after treatment (both men and women). Report fever >38Â°C immediately (neutropenic sepsis â€” life-threatening emergency). Maintain oral hygiene. Avoid crowds and sick contacts during nadir. Eat small frequent meals. You will need regular blood tests before each cycle.',
+    monitoring: 'Monitor peak expiratory flow rate (PEFR), FEV1, symptom control (ACT/CAT scores), inhaler technique, growth in children (inhaled corticosteroids), adrenal function with high-dose inhaled or oral corticosteroids, bone density with prolonged corticosteroid use.',
+    counselling: 'Rinse mouth after inhaled corticosteroids to prevent thrush. Use reliever inhaler only as needed — overuse indicates poor control. Shake metered-dose inhalers well. Use spacer device with MDIs. Report worsening symptoms or increased reliever use.',
   },
-  'Dermatology': {
-    drugClass: 'Dermatological agent',
+  'Haematology/Oncology': {
+    drugClass: 'Haematological / oncological agent',
     classIndications: [
-      'Management of inflammatory skin conditions (eczema, psoriasis, dermatitis)',
-      'Treatment of skin infections (bacterial, fungal, viral)',
-      'Acne vulgaris management',
-      'Skin barrier repair and protection',
+      'Solid tumour chemotherapy',
+      'Haematological malignancy treatment',
+      'Thromboembolic disease prevention and treatment',
+      'Supportive care during chemotherapy (antiemetics, growth factors)',
     ],
     classSE: [
-      'Local irritation, burning, stinging, pruritus at application site',
-      'Skin atrophy, striae, telangiectasia (prolonged topical corticosteroid use)',
-      'Photosensitivity â€” use sun protection during treatment',
-      'Contact dermatitis / allergic sensitization',
-      'Skin discolouration (post-inflammatory hypo- or hyperpigmentation)',
+      'Myelosuppression (neutropenia, thrombocytopenia, anaemia) — monitor FBC regularly',
+      'Nausea, vomiting, mucositis (chemotherapy)',
+      'Alopecia (certain cytotoxic agents)',
+      'Peripheral neuropathy (taxanes, platinum agents, vinca alkaloids)',
+      'Cardiotoxicity (anthracyclines) — cumulative dose-dependent',
     ],
     classCI: [
-      'Hypersensitivity to active substance or excipients',
-      'Untreated bacterial/fungal/viral infections at application site (corticosteroids)',
-      'Skin ulceration / wounds (certain topical agents)',
-      'Pregnancy and lactation (certain systemic agents: acitretin, isotretinoin)',
+      'Severe myelosuppression (active neutropenia, thrombocytopenia)',
+      'Severe hepatic or renal impairment (dose adjustment required)',
+      'Pregnancy (most cytotoxic agents are teratogenic)',
+      'Active uncontrolled infection (for immunosuppressive agents)',
     ],
     classInteractions: [
-      'Concurrent topical therapies â€” apply at different times to avoid interactions',
-      'Systemic corticosteroids â€” additive HPA axis suppression with potent topical steroids',
-      'Photosensitizing drugs â€” increased photosensitivity risk',
+      'Live vaccines — contraindicated during immunosuppressive chemotherapy',
+      'CYP450 substrates — many chemotherapy agents are CYP substrates/inhibitors',
+      'Anticoagulants — increased bleeding risk with thrombocytopenia',
+      'Nephrotoxic drugs — additive nephrotoxicity with platinum agents',
     ],
-    monitoring: 'Assess skin condition (body surface area affected, severity scores like PASI, EASI). Monitor for skin atrophy with prolonged steroid use. Assess for signs of secondary infection. Monitor growth velocity in children on potent topical steroids. For systemic agents: FBC, LFT, U&E, lipids at baseline and periodically.',
-    counselling: 'Apply a thin layer to affected areas only. Avoid the face, groin, and axillae for potent steroids unless specifically directed. Wash hands after application. Do not use more than prescribed amount. Use emollients regularly for maintenance. Report any skin thinning, bruising, or new lesions.',
+    monitoring: 'Monitor FBC with differential (before each cycle), renal function, liver function, tumour markers as appropriate, cardiac function (echocardiogram with anthracyclines), neurological assessment (peripheral neuropathy scoring), nutritional status, and signs of infection.',
+    counselling: 'Report fever >38°C immediately (neutropenic sepsis risk). Maintain adequate hydration. Avoid live vaccines and contact with infectious individuals. Use effective contraception during and after treatment. Report mouth sores, unusual bleeding/bruising, or signs of infection.',
   },
-  'Immunology': {
-    drugClass: 'Immunomodulatory / biologic agent',
+  'Musculoskeletal': {
+    drugClass: 'Musculoskeletal agent',
     classIndications: [
-      'Autoimmune inflammatory conditions (rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis)',
-      'Inflammatory bowel disease (Crohn\'s disease, ulcerative colitis)',
-      'Psoriasis and hidradenitis suppurativa',
-      'Organ transplant rejection prophylaxis',
+      'Rheumatoid arthritis and other inflammatory joint diseases',
+      'Osteoarthritis pain management',
+      'Gout (acute flares and urate-lowering therapy)',
+      'Osteoporosis prevention and treatment',
     ],
     classSE: [
+      'GI disturbance (NSAIDs, DMARDs)',
+      'Hepatotoxicity (methotrexate, leflunomide) — monitor LFTs',
+      'Bone marrow suppression (methotrexate, leflunomide, ciclosporin)',
+      'Injection site reactions (biologic DMARDs)',
+      'Increased infection risk (immunosuppressive DMARDs)',
+    ],
+    classCI: [
+      'Active severe infection',
+      'Severe hepatic or renal impairment',
+      'Pregnancy and lactation (many DMARDs are teratogenic)',
+      'Live vaccines during immunosuppressive therapy',
+    ],
+    classInteractions: [
+      'NSAIDs — increased GI bleeding risk with corticosteroids and DMARDs',
+      'Methotrexate — increased toxicity with trimethoprim/sulfamethoxazole, penicillins',
+      'Live vaccines — contraindicated with immunosuppressive doses',
+      'Warfarin — altered INR with NSAIDs and certain DMARDs',
+    ],
+    monitoring: 'Monitor disease activity scores (DAS28 for RA), FBC, LFT, U&E at baseline and regularly during DMARD therapy. Screen for TB before biologic therapy. Monitor for injection site reactions and infusion reactions. Assess bone density with prolonged corticosteroid use.',
+    counselling: 'Take DMARDs regularly even if feeling well — they prevent disease progression. Report signs of infection immediately. Methotrexate: take once weekly with folic acid supplementation. Avoid pregnancy during and after DMARD therapy (check washout periods).',
+  },
+  'Immunology/Allergy': {
+    drugClass: 'Immunological / anti-allergic agent',
+    classIndications: [
+      'Allergic rhinitis and urticaria management',
+      'Autoimmune disease management (immunosuppressants)',
+      'Transplant rejection prophylaxis',
+      'Hypersensitivity reactions (desensitization protocols)',
+    ],
+    classSE: [
+      'Drowsiness, sedation (first-generation antihistamines)',
+      'Dry mouth, urinary retention (anticholinergic effects)',
+      'Increased infection risk (immunosuppressants)',
       'Increased infection risk (especially reactivation of TB, hepatitis B, and opportunistic infections)',
       'Injection site reactions (pain, erythema, swelling)',
-      'Infusion reactions (fever, chills, hypotension â€” during IV administration)',
-      'Hypersensitivity / anaphylaxis (rare)',
-      'Malignancy risk (long-term immunosuppression)',
     ],
     classCI: [
-      'Active severe infection (treat infection before starting biologic)',
+      'Active severe infection',
       'Untreated latent TB / active TB',
-      'Active hepatitis B infection (prophylaxis or defer treatment)',
-      'Severe heart failure (certain TNF inhibitors)',
-      'Demyelinating disorders (relative contraindication for TNF inhibitors)',
+      'Severe heart failure (certain biologics)',
+      'Hypersensitivity to active substance',
     ],
     classInteractions: [
-      'Live vaccines â€” contraindicated during treatment and for variable period after (check product monograph)',
-      'Immunosuppressants (methotrexate, azathioprine, ciclosporin) â€” additive immunosuppression',
-      'CYP450 substrates â€” IL-6 inhibitors may alter metabolism of CYP substrates (e.g., warfarin, statins)',
+      'Live vaccines — contraindicated during treatment and for variable period after',
+      'Immunosuppressants — additive immunosuppression',
+      'CNS depressants — additive sedation with first-generation antihistamines',
+      'CYP450 substrates — IL-6 inhibitors may alter metabolism of CYP substrates',
     ],
-    monitoring: 'Screen for latent TB (IGRA/PPD), hepatitis B/C, HIV before initiation. FBC, LFT, U&E at baseline and periodically. Monitor for signs of infection at every visit. Assess disease activity scores (DAS28, PASI, HBI). Review vaccination status and update appropriate non-live vaccines before starting.',
-    counselling: 'Increased risk of infections â€” report any fever, cough, unusual symptoms immediately. Stay up to date with vaccinations (avoid live vaccines while on treatment). Carry a treatment alert card. Do not stop or miss doses without consulting your specialist. Regular blood tests are required for monitoring.',
+    monitoring: 'Screen for latent TB (IGRA/PPD), hepatitis B/C, HIV before initiating immunosuppressive therapy. FBC, LFT, U&E at baseline and periodically. Monitor for signs of infection at every visit. Assess disease activity scores. Review vaccination status before starting.',
+    counselling: 'Increased risk of infections — report any fever, cough, unusual symptoms immediately. Stay up to date with vaccinations (avoid live vaccines while on treatment). Carry a treatment alert card. Do not stop or miss doses without consulting your specialist.',
   },
   'Renal/Electrolytes': {
     drugClass: 'Renal / electrolyte agent',
@@ -386,14 +433,14 @@ const CLASS_SPECIFIC_CONTENT: Record<string, {
     classCI: [
       'Hypercalcaemia / hypermagnesaemia / hypernatraemia (for respective replacement therapies)',
       'Severe renal impairment with oliguria/anuria',
-      'Digitalis toxicity (calcium IV â€” risk of cardiac arrest)',
-      'Extravasation risk (calcium solutions â€” IV access must be secure)',
+      'Digitalis toxicity (calcium IV — risk of cardiac arrest)',
+      'Extravasation risk (calcium solutions — IV access must be secure)',
     ],
     classInteractions: [
-      'Digoxin â€” hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels',
-      'Diuretics â€” increased electrolyte loss; monitor levels regularly',
-      'ACE inhibitors / ARBs â€” hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)',
-      'Corticosteroids â€” increased sodium retention and potassium loss',
+      'Digoxin — hypokalaemia/hypomagnesaemia increase digoxin toxicity; maintain normal levels',
+      'Diuretics — increased electrolyte loss; monitor levels regularly',
+      'ACE inhibitors / ARBs — hyperkalaemia risk (especially with potassium-sparing diuretics or K supplements)',
+      'Corticosteroids — increased sodium retention and potassium loss',
     ],
     monitoring: 'Monitor serum electrolytes (Na, K, Ca, Mg, PO4), renal function (Cr, eGFR, BUN), fluid balance (input/output chart), ECG (for electrolyte-related arrhythmias), acid-base status (pH, bicarbonate, base excess), and signs of volume overload (oedema, JVP, lung auscultation).',
     counselling: 'Report any muscle cramps, weakness, palpitations, or shortness of breath. Take electrolyte supplements exactly as prescribed. Do not take additional potassium-containing products without consulting your doctor. Regular blood tests are essential for safe therapy.',
@@ -415,17 +462,17 @@ const CLASS_SPECIFIC_CONTENT: Record<string, {
     ],
     classCI: [
       'Hypersensitivity (for specific antidotes)',
-      'Ileus / GI obstruction (activated charcoal â€” risk of aspiration and obstruction)',
-      'Caustic ingestion (activated charcoal â€” contraindicated; endoscopy required)',
-      'Petroleum distillate ingestion (activated charcoal â€” aspiration risk)',
+      'Ileus / GI obstruction (activated charcoal — risk of aspiration and obstruction)',
+      'Caustic ingestion (activated charcoal — contraindicated; endoscopy required)',
+      'Petroleum distillate ingestion (activated charcoal — aspiration risk)',
     ],
     classInteractions: [
-      'Activated charcoal â€” reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours',
-      'Naloxone â€” concurrent use of other opioid antagonists',
-      'Antivenoms â€” may interfere with vaccine efficacy',
+      'Activated charcoal — reduces absorption of ALL oral medications; separate all oral drugs by at least 2 hours',
+      'Naloxone — concurrent use of other opioid antagonists',
+      'Antivenoms — may interfere with vaccine efficacy',
       'Multiple antidote interactions depending on specific toxins',
     ],
-    monitoring: 'Monitor vital signs continuously (BP, HR, SpO2, RR, GCS). Cardiac monitoring (ECG for toxin-induced arrhythmias). Serial toxin levels where available (paracetamol, salicylate, lithium, digoxin, theophylline, iron, carboxyhaemoglobin, methaemoglobin). Electrolytes, renal function, liver function, coagulation. Needle-stick and sharps precautions during administration.',
+    monitoring: 'Monitor vital signs continuously (BP, HR, SpO2, RR, GCS). Cardiac monitoring (ECG for toxin-induced arrhythmias). Serial toxin levels where available (paracetamol, salicylate, lithium, digoxin, theophylline, iron). Electrolytes, renal function, liver function, coagulation.',
     counselling: 'Poisoning is a medical emergency. Provide details of substance ingested, quantity, and time of ingestion to medical staff. Do not induce vomiting unless specifically directed. Bring containers/packaging to hospital. Antidotes work best when given early after exposure.',
   },
   'Nutrition/Vitamins': {
@@ -445,18 +492,18 @@ const CLASS_SPECIFIC_CONTENT: Record<string, {
     ],
     classCI: [
       'Hypercalcaemia / hypervitaminosis D (vitamin D and calcium supplements)',
-      'Iron overload (haemochromatosis, haemosiderosis â€” iron supplements contraindicated)',
+      'Iron overload (haemochromatosis, haemosiderosis — iron supplements contraindicated)',
       'Severe renal impairment (certain electrolyte/vitamin formulations)',
       'Galactosaemia (lactose-containing formulations)',
     ],
     classInteractions: [
-      'Tetracyclines / fluoroquinolones â€” absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2â€“4 hours',
-      'Thyroxine â€” absorption reduced by calcium, iron; separate dosing by 4 hours',
-      'Warfarin â€” vitamin K reverses anticoagulation; consistent dietary intake important',
-      'PPIs â€” reduced absorption of calcium, vitamin B12, magnesium',
+      'Tetracyclines / fluoroquinolones — absorption reduced by iron, calcium, magnesium, zinc; separate dosing by 2–4 hours',
+      'Thyroxine — absorption reduced by calcium, iron; separate dosing by 4 hours',
+      'Warfarin — vitamin K reverses anticoagulation; consistent dietary intake important',
+      'PPIs — reduced absorption of calcium, vitamin B12, magnesium',
     ],
-    monitoring: 'Monitor serum levels of the specific nutrient being supplemented (unless prophylactic/therapeutic dietary supplementation). Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices. Clinical signs of deficiency or toxicity.',
-    counselling: 'Supplements are not a substitute for a balanced diet. Iron: take with vitamin C (orange juice) to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity (nausea, vomiting, confusion, muscle weakness).',
+    monitoring: 'Monitor serum levels of the specific nutrient being supplemented. Iron studies (ferritin, Fe, TIBC, transferrin saturation) for iron therapy. Vitamin D levels (25-OH vitamin D). Calcium, phosphate, ALP. Full blood count and red cell indices.',
+    counselling: 'Supplements are not a substitute for a balanced diet. Iron: take with vitamin C to enhance absorption; avoid tea/coffee within 1 hour. Calcium supplements may cause constipation; stay well hydrated. Report any symptoms suggestive of toxicity.',
   },
   'Anaesthesia': {
     drugClass: 'Anaesthetic agent',
@@ -467,27 +514,27 @@ const CLASS_SPECIFIC_CONTENT: Record<string, {
       'Muscle relaxation for intubation and surgery',
     ],
     classSE: [
-      'Respiratory depression (dose-dependent) â€” require airway management and ventilatory support',
+      'Respiratory depression (dose-dependent) — require airway management and ventilatory support',
       'Hypotension / haemodynamic instability (many anaesthetic agents)',
       'Post-operative nausea and vomiting (PONV)',
-      'Malignant hyperthermia (volatile anaesthetics + suxamethonium) â€” MH protocol emergency',
+      'Malignant hyperthermia (volatile anaesthetics + suxamethonium)',
       'Allergic reactions / anaphylaxis (neuromuscular blocking agents most commonly implicated)',
     ],
     classCI: [
       'Hypersensitivity to active substance',
-      'Malignant hyperthermia susceptibility (triggering agents: volatile anaesthetics, suxamethonium)',
+      'Malignant hyperthermia susceptibility (triggering agents)',
       'Severe cardiovascular instability / uncompensated shock',
       'Raised intracranial pressure (certain agents)',
       'Porphyria (barbiturates, etomidate)',
     ],
     classInteractions: [
-      'Opioids / benzodiazepines â€” synergistic respiratory depression and sedation',
-      'Volatile anaesthetics â€” sensitize myocardium to catecholamines (arrhythmia risk)',
-      'Antihypertensives â€” exaggerated hypotension with anaesthetic induction agents',
-      'Neuromuscular blocking agents â€” potentiated by volatile anaesthetics, aminoglycosides, magnesium',
+      'Opioids / benzodiazepines — synergistic respiratory depression and sedation',
+      'Volatile anaesthetics — sensitize myocardium to catecholamines (arrhythmia risk)',
+      'Antihypertensives — exaggerated hypotension with anaesthetic induction agents',
+      'Neuromuscular blocking agents — potentiated by volatile anaesthetics, aminoglycosides, magnesium',
     ],
-    monitoring: 'Continuous ECG, non-invasive BP (every 1â€“5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Monitored by anaesthetist throughout procedure. Recovery monitoring: Aldrete / Steward score.',
-    counselling: 'Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24â€“48 hours after anaesthesia. Report any post-procedure complications: persistent numbness/weakness (regional anaesthesia), fever, severe headache.',
+    monitoring: 'Continuous ECG, non-invasive BP (every 1–5 min), SpO2, end-tidal CO2 (capnography), anaesthetic gas agent concentration, temperature, neuromuscular blockade monitoring (train-of-four), urine output. Recovery monitoring: Aldrete / Steward score.',
+    counselling: 'Do not eat or drink before surgery as instructed (fasting guidelines). Arrange transportation home after day surgery. Do not drive, operate machinery, or make important decisions for 24–48 hours after anaesthesia.',
   },
   'Ophthalmology': {
     drugClass: 'Ophthalmic agent',
@@ -506,18 +553,17 @@ const CLASS_SPECIFIC_CONTENT: Record<string, {
     ],
     classCI: [
       'Hypersensitivity to active substance or preservatives',
-      'Narrow-angle glaucoma (mydriatics/cycloplegics â€” risk of acute angle closure)',
+      'Narrow-angle glaucoma (mydriatics/cycloplegics — risk of acute angle closure)',
       'Severe asthma / COPD (topical beta-blockers)',
       'Sinus bradycardia / heart block (topical beta-blockers)',
     ],
     classInteractions: [
-      'Beta-blockers (oral) â€” additive systemic beta-blockade with topical beta-blockers; monitor pulse/BP',
-      'Calcium channel blockers / digoxin â€” additive cardiac effects with topical beta-blockers',
-      'Adrenaline (topical) â€” mydriasis with anticholinergics',
-      'Multiple eye drops â€” separate by at least 5 minutes to prevent washout',
+      'Beta-blockers (oral) — additive systemic beta-blockade with topical beta-blockers',
+      'Calcium channel blockers / digoxin — additive cardiac effects with topical beta-blockers',
+      'Multiple eye drops — separate by at least 5 minutes to prevent washout',
     ],
-    monitoring: 'Monitor intraocular pressure (tonometry), visual acuity, visual fields, optic disc assessment. For inflammatory conditions: anterior chamber activity (cells, flare). Corneal examination (slit lamp). Systemic effects: pulse, BP (especially with beta-blockers), lung auscultation in asthmatics.',
-    counselling: 'Remove contact lenses before instilling drops (wait 15 minutes before reinserting). Apply pressure to the inner corner of the eye (nasolacrimal occlusion) for 1 minute after drops to reduce systemic absorption. Do not touch the dropper tip to your eye or any surface. Separate different eye drops by 5 minutes. Discard any solution that changes colour or becomes cloudy.',
+    monitoring: 'Monitor intraocular pressure (tonometry), visual acuity, visual fields, optic disc assessment. Corneal examination (slit lamp). Systemic effects: pulse, BP (especially with beta-blockers).',
+    counselling: 'Remove contact lenses before instilling drops (wait 15 minutes before reinserting). Apply pressure to the inner corner of the eye for 1 minute after drops. Do not touch the dropper tip to your eye. Separate different eye drops by 5 minutes.',
   },
   'Other': {
     drugClass: 'Therapeutic agent',
@@ -542,36 +588,58 @@ const CLASS_SPECIFIC_CONTENT: Record<string, {
     ],
     classInteractions: [
       'CYP450 interactions: potential for altered metabolism with CYP inducers/inhibitors',
-      'Anticoagulants â€” may affect INR or bleeding risk',
-      'Antihypertensives â€” additive hypotensive effects',
-      'Alcohol â€” avoid or limit during therapy',
+      'Anticoagulants — may affect INR or bleeding risk',
+      'Antihypertensives — additive hypotensive effects',
+      'Alcohol — avoid or limit during therapy',
     ],
-    monitoring: 'Monitor clinical response to therapy, renal function, liver function, full blood count as appropriate. Monitor for adverse effects based on specific drug profile. Therapeutic drug monitoring where applicable. Regular follow-up assessments to evaluate treatment efficacy and tolerability.',
-    counselling: 'Take medication exactly as prescribed. Do not stop or adjust dose without consulting your doctor. Report any unusual symptoms, persistent side effects, or lack of therapeutic response. Keep all follow-up appointments for monitoring. Maintain a list of all medications you take.',
+    monitoring: 'Monitor clinical response to therapy, renal function, liver function, full blood count as appropriate. Monitor for adverse effects based on specific drug profile. Therapeutic drug monitoring where applicable.',
+    counselling: 'Take medication exactly as prescribed. Do not stop or adjust dose without consulting your doctor. Report any unusual symptoms, persistent side effects, or lack of therapeutic response. Keep all follow-up appointments for monitoring.',
   },
 };
 
-function generateMonograph(drug: CanonicalDrug): DrugMonograph {
+function generateMonograph(drug: CanonicalDrug, fdaData: OpenFdaLabel | null): DrugMonograph {
   const template = CLASS_SPECIFIC_CONTENT[drug.therapeuticClass] || CLASS_SPECIFIC_CONTENT['Other'];
   const n = drug.name;
 
+  // Use FDA data where available, fall back to class-specific content
+  const fdaIndications = fdaArray(fdaData?.indications_and_usage);
+  const fdaSE = fdaArray(fdaData?.adverse_reactions);
+  const fdaCI = fdaArray(fdaData?.contraindications);
+  const fdaInteractions = fdaArray(fdaData?.drug_interactions);
+  const fdaWarnings = fdaArray(fdaData?.warnings);
+  const fdaBBW = fdaArray(fdaData?.boxed_warning);
+  const fdaMOA = fdaText(fdaData?.mechanism_of_action) || fdaText(fdaData?.description);
+  const fdaPK = fdaText(fdaData?.pharmacokinetics);
+  const fdaOverdose = fdaText(fdaData?.overdose);
+  const fdaPregnancy = fdaText(fdaData?.pregnancy);
+  const fdaGeneric = fdaData?.openfda?.generic_name?.[0] || n;
+  const fdaBrands = fdaData?.openfda?.brand_name?.slice(0, 5) || [];
+
   return {
     name: n,
-    generic_name: n,
-    drug_class: template.drugClass,
-    indications: template.classIndications,
-    contraindications: template.classCI,
-    side_effects: template.classSE,
+    generic_name: fdaGeneric !== n ? fdaGeneric : n,
+    drug_class: fdaData?.openfda?.pharm_class_epc?.[0] || template.drugClass,
+    indications: fdaIndications.length > 0 ? fdaIndications : template.classIndications,
+    contraindications: fdaCI.length > 0 ? fdaCI : template.classCI,
+    side_effects: fdaSE.length > 0 ? fdaSE : template.classSE,
     dosage: {
       adult: { 'Standard dosing (adult)': 'Refer to current prescribing guidelines / summary of product characteristics for indication-specific dosing. Consider renal and hepatic function, age, weight, comorbidities, and concurrent medications.' },
       paediatric: { 'Standard dosing (paediatric)': 'Refer to current paediatric prescribing guidelines. Doses are typically weight-based (mg/kg) and age-adjusted. Verify all paediatric doses independently.' },
-      geriatric: { 'Standard dosing (geriatric)': 'Start at lower end of dosing range; titrate slowly based on response and tolerability. Monitor renal function (CrCl) closely; many drugs require dose adjustment in elderly patients with reduced renal reserve.' },
-      renalAdjustment: 'Dose adjustment may be required depending on the drug\'s elimination pathway and degree of renal impairment. Check current prescribing guidelines. General principle: reduce dose or extend interval if eGFR <30 mL/min for renally cleared drugs.',
-      hepaticAdjustment: 'Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C). Avoid hepatotoxic drugs in pre-existing liver disease where possible.',
+      geriatric: { 'Standard dosing (geriatric)': 'Start at lower end of dosing range; titrate slowly based on response and tolerability. Monitor renal function (CrCl) closely.' },
+      renalAdjustment: "Dose adjustment may be required depending on the drug's elimination pathway and degree of renal impairment. Check current prescribing guidelines.",
+      hepaticAdjustment: 'Dose adjustment may be required for hepatically metabolized drugs in moderate-to-severe hepatic impairment (Child-Pugh B or C).',
     },
-    interactions: template.classInteractions.map(s => s.replace(/{drug}/g, n)),
-    monitoring: template.monitoring.replace(/{drug}/g, n),
+    interactions: fdaInteractions.length > 0 ? fdaInteractions : template.classInteractions.map(s => s.replace(/{drug}/g, n)),
+    monitoring: fdaData ? `${template.monitoring.replace(/{drug}/g, n)} FDA-specific monitoring data available in prescribing information.` : template.monitoring.replace(/{drug}/g, n),
     patient_counselling: template.counselling.replace(/{drug}/g, n),
+    mechanism_of_action: fdaMOA || `Mechanism of action for ${n} (${template.drugClass}). Refer to prescribing information for detailed pharmacological properties.`,
+    brand_names: fdaBrands.length > 0 ? fdaBrands : [],
+    warnings: fdaWarnings.length > 0 ? fdaWarnings : [],
+    pregnancy_category: fdaPregnancy ? fdaPregnancy.slice(0, 200) : 'Consult current prescribing information',
+    overdose: fdaOverdose ? fdaOverdose.slice(0, 500) : `Seek immediate medical attention in case of overdose. Symptoms and management depend on the specific drug. No specific antidote available for most agents.`,
+    pharmacokinetics: fdaPK ? fdaPK.slice(0, 500) : 'Refer to prescribing information for detailed pharmacokinetic data including absorption, distribution, metabolism, and elimination.',
+    black_box_warnings: fdaBBW.length > 0 ? fdaBBW : [],
+    clinical_pearls: [],
   };
 }
 
@@ -581,7 +649,7 @@ function generateBatchFile(monographs: DrugMonograph[], batchNumber: number, out
     `/**`,
     ` * seed-drug-monographs-batch${batchNumber}.ts`,
     ` * Auto-generated batch of drug monograph seed data`,
-    ` * Generated from canonical drug registry`,
+    ` * Generated from canonical drug registry with OpenFDA enrichment`,
     ` */`,
     ``,
     `import 'dotenv/config';`,
@@ -608,6 +676,14 @@ function generateBatchFile(monographs: DrugMonograph[], batchNumber: number, out
     `  interactions: string[];`,
     `  monitoring: string;`,
     `  patient_counselling: string;`,
+    `  mechanism_of_action: string;`,
+    `  brand_names: string[];`,
+    `  warnings: string[];`,
+    `  pregnancy_category: string;`,
+    `  overdose: string;`,
+    `  pharmacokinetics: string;`,
+    `  black_box_warnings: string[];`,
+    `  clinical_pearls: string[];`,
     `}`,
     ``,
     `const MONOGRAPHS: DrugMonograph[] = [`,
@@ -634,6 +710,14 @@ function generateBatchFile(monographs: DrugMonograph[], batchNumber: number, out
     lines.push(`    interactions: ${JSON.stringify(m.interactions, null, 6).replace(/\n\s{6}/g, ' ').replace(/\n\s{4}\]/g, ' ]')},`);
     lines.push(`    monitoring: ${JSON.stringify(m.monitoring)},`);
     lines.push(`    patient_counselling: ${JSON.stringify(m.patient_counselling)},`);
+    lines.push(`    mechanism_of_action: ${JSON.stringify(m.mechanism_of_action)},`);
+    lines.push(`    brand_names: ${JSON.stringify(m.brand_names)},`);
+    lines.push(`    warnings: ${JSON.stringify(m.warnings, null, 6).replace(/\n\s{6}/g, ' ').replace(/\n\s{4}\]/g, ' ]')},`);
+    lines.push(`    pregnancy_category: ${JSON.stringify(m.pregnancy_category)},`);
+    lines.push(`    overdose: ${JSON.stringify(m.overdose)},`);
+    lines.push(`    pharmacokinetics: ${JSON.stringify(m.pharmacokinetics)},`);
+    lines.push(`    black_box_warnings: ${JSON.stringify(m.black_box_warnings)},`);
+    lines.push(`    clinical_pearls: ${JSON.stringify(m.clinical_pearls)},`);
     lines.push(`  },`);
   }
 
@@ -669,16 +753,61 @@ function generateBatchFile(monographs: DrugMonograph[], batchNumber: number, out
 }
 
 async function main() {
+  const flags = parseFlags();
+  console.log(`Flags: FDA-only=${flags.fdaOnly}, dry-run=${flags.dryRun}, limit=${flags.limit ?? 'all'}, offset=${flags.offset}`);
+
   const registry: CanonicalDrug[] = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'drug-registry-canonical.json'), 'utf-8')
   );
 
-  const unseeded = registry.filter(d => d.status === 'new');
-  console.log(`Generating monographs for ${unseeded.length} unseeded drugs...`);
+  let candidates = registry.filter(d => d.status === 'new');
+  if (flags.offset > 0) candidates = candidates.slice(flags.offset);
+  if (flags.limit) candidates = candidates.slice(0, flags.limit);
 
-  const monographs = unseeded.map(d => generateMonograph(d));
+  console.log(`Processing ${candidates.length} drugs (of ${registry.filter(d => d.status === 'new').length} unseeded total)...`);
+
+  const monographs: DrugMonograph[] = [];
+  let fdaHits = 0;
+
+  for (let i = 0; i < candidates.length; i++) {
+    const drug = candidates[i];
+    process.stdout.write(`[${i + 1}/${candidates.length}] ${drug.name} ... `);
+
+    const fdaData = await fetchOpenFdaLabel(drug.name);
+    if (fdaData) {
+      fdaHits++;
+      console.log(`FDA ✓`);
+    } else {
+      console.log(`FDA ✗ (using class template)`);
+    }
+
+    if (flags.fdaOnly && !fdaData) continue;
+
+    monographs.push(generateMonograph(drug, fdaData));
+
+    // Rate limit: 300ms between requests
+    if (i < candidates.length - 1) await sleep(300);
+  }
+
+  console.log(`\nFDA data found for ${fdaHits}/${candidates.length} drugs (${monographs.length} monographs generated)`);
+
+  if (flags.dryRun) {
+    console.log('\n--- DRY RUN: Output to console ---');
+    for (const m of monographs.slice(0, 5)) {
+      console.log(`\n${m.name} (${m.drug_class})`);
+      console.log(`  Generic: ${m.generic_name}`);
+      console.log(`  Brands: ${m.brand_names.join(', ') || 'N/A'}`);
+      console.log(`  Indications: ${m.indications.slice(0, 3).join('; ')}`);
+      console.log(`  MOA: ${m.mechanism_of_action.slice(0, 100)}...`);
+      console.log(`  BBW: ${m.black_box_warnings.length > 0 ? m.black_box_warnings.join('; ') : 'None'}`);
+    }
+    console.log(`\n... and ${monographs.length - 5} more. Use without --dry-run to write files.`);
+    return;
+  }
+
+  // Generate batch files
   const BATCH_SIZE = 40;
-  let batchNum = 10; // Start from 10 (after existing batch1-8, plus we'll count batch9 if it exists)
+  let batchNum = 1;
 
   // Find highest existing batch number
   const existingBatches = fs.readdirSync(__dirname).filter(f => f.match(/seed-drug-monographs-batch(\d+)\.ts/));
@@ -691,7 +820,7 @@ async function main() {
     batchNum++;
   }
 
-  console.log(`\nDone. Generated monographs for ${monographs.length} drugs across ${Math.ceil(monographs.length / BATCH_SIZE)} batch files.`);
+  console.log(`\nDone. Generated ${monographs.length} monographs across ${Math.ceil(monographs.length / BATCH_SIZE)} batch files.`);
 }
 
 main().catch(console.error);

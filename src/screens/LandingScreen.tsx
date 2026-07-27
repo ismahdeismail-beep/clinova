@@ -14,7 +14,7 @@ import { INITIAL_CASES, ALL_CLINICAL_CASES } from '../data/clinicalCasesData'
 export default function LandingScreen() {
   const navigate = useNavigate()
 
-  const drugCount = 355
+  const drugCount = 1000
   const caseCount = ALL_CLINICAL_CASES.length
   const therapeuticAreaCount = Object.keys(INTEGRATED_UNITS_MAP).length
 

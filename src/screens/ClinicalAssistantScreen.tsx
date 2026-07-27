@@ -110,27 +110,29 @@ function renderMarkdown(text: string) {
         tbody: ({ children }) => <tbody className="divide-y divide-[var(--border)]">{children}</tbody>,
         tr: ({ children }) => <tr className="hover:bg-[var(--surface-dim)] transition-colors">{children}</tr>,
         th: ({ children }) => <th className="p-3.5 font-semibold text-[var(--text)] uppercase tracking-wider text-xs">{children}</th>,
-        td: ({ children }) => <td className="p-3.5 text-[var(--text-muted)] leading-relaxed">{children}</td>,
-        h1: ({ children }) => <h1 className="text-xl font-bold text-[var(--text)] mt-7 mb-4 tracking-tight border-b-2 border-[var(--primary)]/30 pb-2">{children}</h1>,
+        td: ({ children }) => <td className="p-3.5 text-[var(--text)] leading-relaxed">{children}</td>,
+        h1: ({ children }) => <h1 className="text-xl font-bold text-[var(--text)] mt-6 mb-3 tracking-tight border-b-2 border-[var(--primary)]/30 pb-2" style={{ letterSpacing: '-0.025em' }}>{children}</h1>,
         h2: ({ children }) => (
-          <div className="flex items-center gap-2.5 mt-6 mb-3">
-            <div className="w-1.5 h-6 bg-[var(--primary)] rounded-full shrink-0" />
-            <h2 className="text-lg font-bold text-[var(--text)] tracking-tight">{children}</h2>
-          </div>
-        ),
-        h3: ({ children }) => <h3 className="text-base font-bold text-[var(--text)] mt-5 mb-2.5 tracking-tight border-l-2 border-[var(--primary)]/40 pl-3">{children}</h3>,
-        p: ({ children }) => <p className="text-base leading-relaxed text-[var(--text)] mb-4 last:mb-0">{processChildren(children)}</p>,
-        ul: ({ children }) => <ul className="space-y-2.5 mb-5">{children}</ul>,
-        ol: ({ children }) => <ol className="space-y-2.5 mb-5">{children}</ol>,
-        li: ({ children }) => <li className="flex items-start gap-2.5 text-base leading-relaxed"><span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)]/60 mt-2.5 shrink-0" />{processChildren(children)}</li>,
-        blockquote: ({ children }) => (
-          <div className="bg-[var(--surface-dim)]/60 border-l-4 border-[var(--primary)]/50 rounded-r-xl px-5 py-4 my-5 text-base text-[var(--text)] shadow-sm">
+          <h2 className="flex items-center gap-2 text-lg font-bold mt-6 mb-3 tracking-tight" style={{ color: 'var(--primary)', letterSpacing: '-0.02em' }}>
+            <span className="w-1.5 h-5 rounded-full shrink-0" style={{ background: 'linear-gradient(180deg, var(--primary), var(--medicine))' }} />
             {children}
+          </h2>
+        ),
+        h3: ({ children }) => <h3 className="text-base font-semibold mt-5 mb-2 tracking-tight pl-3" style={{ color: 'var(--disease)', borderLeft: '3px solid color-mix(in srgb, var(--disease) 45%, transparent)' }}>{children}</h3>,
+        p: ({ children }) => <p className="text-base leading-relaxed mb-3 last:mb-0" style={{ color: 'var(--text)', opacity: 0.92 }}>{processChildren(children)}</p>,
+        ul: ({ children }) => <ul className="pl-1 mb-4" style={{ listStyleType: 'none' }}>{children}</ul>,
+        ol: ({ children }) => <ol className="pl-6 mb-4" style={{ listStyleType: 'decimal' }}>{children}</ol>,
+        li: ({ children }) => <li className="flex items-start gap-2.5 text-base leading-relaxed mb-1" style={{ color: 'var(--text)', opacity: 0.92 }}><span className="w-2 h-2 mt-2 shrink-0 rounded-sm rotate-45" style={{ background: 'linear-gradient(135deg, var(--primary), var(--medicine))' }} />{processChildren(children)}</li>,
+        blockquote: ({ children }) => (
+          <div className="rounded-r-xl px-5 py-4 my-4 text-base shadow-sm" style={{ borderLeft: '4px solid var(--info)', background: 'color-mix(in srgb, var(--info) 8%, transparent)', color: 'var(--text)' }}>
+            <em>{children}</em>
           </div>
         ),
+        strong: ({ children }) => <strong className="font-bold px-1 rounded" style={{ color: 'var(--medicine)', background: 'color-mix(in srgb, var(--medicine) 10%, transparent)' }}>{children}</strong>,
+        em: ({ children }) => <em style={{ color: 'var(--disease)' }}>{children}</em>,
         code: ({ inline, className, children, ...props }: any) => {
           return (
-            <code className="bg-[var(--surface-dim)] border border-[var(--border)] text-[var(--primary)] px-1.5 py-0.5 rounded text-sm font-mono" {...props}>
+            <code className="font-mono text-sm font-semibold px-1.5 py-0.5 rounded" style={{ fontFamily: 'var(--font-mono)', background: 'var(--medicine-container)', border: '1px solid color-mix(in srgb, var(--medicine) 25%, transparent)', color: 'var(--medicine)' }} {...props}>
               {children}
             </code>
           );
@@ -161,7 +163,7 @@ function AssistantMessageBubble({
   }, [isNew, onComplete, onTick]);
 
   return (
-    <div className="prose prose-clinova max-w-none break-words text-[var(--text)] leading-relaxed">
+    <div className="markdown-body break-words text-[var(--text)]">
       {renderMarkdown(content)}
     </div>
   );
@@ -1299,7 +1301,7 @@ export default function ClinicalAssistantScreen() {
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                   {[
-                    { icon: Pill, label: 'Drug Index', desc: '355 monographs', path: '/drug-index' },
+                    { icon: Pill, label: 'Drug Index', desc: '1000 monographs', path: '/drug-index' },
                     { icon: Stethoscope, label: 'Clinical Cases', desc: '300+ simulations', path: '/clinical-cases' },
                     { icon: GraduationCap, label: 'Exam Prep', desc: 'Mock papers & topics', path: '/exam' },
                     { icon: HeartPulse, label: 'Care Plans', desc: '94 NANDA/NIC/NOC', path: '/care-plans' },
@@ -1371,8 +1373,8 @@ export default function ClinicalAssistantScreen() {
                   </div>
                 )}
                 
-                {/* Bubble Container - wider for assistant to prevent cramped text */}
-                <div className={`flex flex-col gap-2 ${isUser ? 'max-w-[85%] sm:max-w-[75%]' : 'max-w-[92%] sm:max-w-[88%]'} w-full overflow-hidden`}>
+                {/* Bubble Container */}
+                <div className={`flex flex-col gap-2 ${isUser ? 'max-w-[85%] sm:max-w-[75%]' : 'flex-1 min-w-0'} w-full overflow-hidden`}>
                   
                   {/* Real-time RAG Steps Tracker */}
                   {msg.isThinking && (
@@ -1398,8 +1400,8 @@ export default function ClinicalAssistantScreen() {
 
 {/* Bubble Content */}
                   {!msg.isThinking && (
-                    <div className="flex items-start gap-2.5 max-w-full group/bubble">
-                      <div className={`rounded-2xl px-5 py-4 shadow-sm text-base leading-relaxed max-w-full break-words ${
+                    <div className={`flex items-start gap-2.5 max-w-full group/bubble ${isUser ? '' : 'w-full'}`}>
+                      <div className={`rounded-2xl px-5 py-4 shadow-sm text-base leading-relaxed max-w-full break-words w-full ${
                         isUser 
                           ? 'bg-[var(--primary)] text-[var(--primary-foreground)] rounded-tr-none shadow-md font-medium' 
                           : 'bg-[var(--surface)] border border-[var(--border)] border-l-2 border-l-[var(--primary)]/30 text-[var(--text)] rounded-tl-none shadow-xs'

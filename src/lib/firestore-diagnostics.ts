@@ -1,4 +1,4 @@
-import { getBrowserClient } from './supabaseOptimized';
+import { auth } from './firebase';
 
 export enum OperationType {
   CREATE = 'create',
@@ -16,30 +16,33 @@ export interface FirestoreErrorInfo {
   authInfo: {
     userId?: string | null;
     email?: string | null;
+    emailVerified?: boolean | null;
+    isAnonymous?: boolean | null;
+    tenantId?: string | null;
+    providerInfo?: {
+      providerId?: string | null;
+      email?: string | null;
+    }[];
   };
 }
 
 export function handleFirestoreError(error: unknown, operationType: OperationType, path: string | null) {
-  let userId: string | null = null;
-  let email: string | null = null;
-
-  try {
-    const client = getBrowserClient();
-    // Attempt to read session inline (property exists at runtime on the auth client)
-    const auth = client.auth as any;
-    userId = auth?.currentSession?.user?.id || null;
-    email = auth?.currentSession?.user?.email || null;
-  } catch {
-    // Supabase client not available — skip auth info
-  }
-
   const errInfo: FirestoreErrorInfo = {
     error: error instanceof Error ? error.message : String(error),
-    authInfo: { userId, email },
+    authInfo: {
+      userId: auth.currentUser?.uid,
+      email: auth.currentUser?.email,
+      emailVerified: auth.currentUser?.emailVerified,
+      isAnonymous: auth.currentUser?.isAnonymous,
+      tenantId: auth.currentUser?.tenantId,
+      providerInfo: auth.currentUser?.providerData?.map(provider => ({
+        providerId: provider.providerId,
+        email: provider.email,
+      })) || []
+    },
     operationType,
-    path,
+    path
   };
-
   console.error('Firestore Error: ', JSON.stringify(errInfo));
   throw new Error(JSON.stringify(errInfo));
 }

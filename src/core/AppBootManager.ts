@@ -1,7 +1,7 @@
 import { EventBus } from '../engine/EventBus';
 
 export type BootPhase = 'initializing' | 'configuring' | 'connecting' | 'ready' | 'error';
-export type BootService = 'auth' | 'sync' | 'storage' | 'workflow';
+export type BootService = 'firebase' | 'sync' | 'storage' | 'workflow';
 
 interface BootTask {
   name: BootService;
@@ -12,7 +12,7 @@ interface BootTask {
 const BOOT_TIMEOUT = 15000;
 
 const BOOT_SEQUENCE: BootTask[] = [
-  { name: 'auth', timeout: 8000, critical: true },
+  { name: 'firebase', timeout: 8000, critical: true },
   { name: 'storage', timeout: 5000, critical: false },
   { name: 'sync', timeout: 5000, critical: false },
   { name: 'workflow', timeout: 5000, critical: false },

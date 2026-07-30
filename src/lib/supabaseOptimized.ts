@@ -59,7 +59,11 @@ function getAdminClient(): SupabaseClient {
   return adminClient;
 }
 
-export const supabase = getBrowserClient();
+// Lazy singleton accessors — safe to import without env vars being set
+export function getSupabase(): SupabaseClient {
+  return getBrowserClient();
+}
+
 export const supabaseAdmin = (() => {
   try {
     return getAdminClient();
@@ -147,12 +151,12 @@ export function useRealtimeSubscription(
     if (!enabled) return;
 
     let isMounted = true;
-    let channelRef: ReturnType<typeof supabase.channel> | null = null;
+    let channelRef: ReturnType<SupabaseClient['channel']> | null = null;
 
     const connect = async () => {
       try {
         const client = getBrowserClient();
-        channelRef = supabase
+        channelRef = client
           .channel(`realtime:${table}`)
           .on(
             'postgres_changes' as any,
@@ -307,7 +311,7 @@ export function useRealtimeQuery<T>(
 
   useEffect(() => {
     let isMounted = true;
-    let channelRef: ReturnType<typeof supabase.channel> | null = null;
+    let channelRef: ReturnType<SupabaseClient['channel']> | null = null;
 
     const fetchInitialData = async () => {
       try {
@@ -348,7 +352,8 @@ export function useRealtimeQuery<T>(
 
     fetchInitialData();
 
-    channelRef = supabase
+    const client = getBrowserClient();
+    channelRef = client
       .channel(`realtime:${table}`)
       .on(
         'postgres_changes' as any,

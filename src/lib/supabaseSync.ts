@@ -1,25 +1,34 @@
-import { getBrowserClient } from './supabaseOptimized';
-import type { SupabaseClient } from '@supabase/supabase-js';
+import { createClient } from '@supabase/supabase-js';
+import { auth } from './firebase';
+import { onAuthStateChanged } from 'firebase/auth';
 
-// ── Supabase client (lazy, with graceful fallback) ────────────────────────────
+// Use optional chaining and fallback gracefully if environment variables are not set yet
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
 
-let _supabase: SupabaseClient | null = null;
+// Detect generic or invalid placeholder values in env
+const isPlaceholder = (val: string) => {
+  const v = val.toLowerCase();
+  return !v || 
+         v.includes('placeholder') || 
+         v.includes('your_') || 
+         v.includes('your-') || 
+         v === 'url' || 
+         v === 'key' || 
+         v.includes('<') || 
+         v.includes('>');
+};
 
-try {
-  _supabase = getBrowserClient();
-} catch {
-  // Env vars not configured — sync disabled
-}
+export const supabase = (supabaseUrl && supabaseAnonKey && !isPlaceholder(supabaseUrl) && !isPlaceholder(supabaseAnonKey) && supabaseUrl.startsWith('https://'))
+  ? createClient(supabaseUrl, supabaseAnonKey)
+  : null;
 
-export const supabase = _supabase;
-
-// ── State ─────────────────────────────────────────────────────────────────────
-
+// Track the current user ID to store their corresponding cloud backups
 let currentUserId: string | null = null;
 let isSyncingFromSupabase = false;
 let isSyncDisabled = false;
 
-// Keys to synchronise with Supabase
+// Keys we want to synchronize with Supabase (medical reflections, forms, triage, user preferences, etc.)
 const SYNCABLE_KEYS = [
   'clinova_reflections',
   'clinova_revealed',
@@ -27,48 +36,56 @@ const SYNCABLE_KEYS = [
   'clinova_pharma_review_form',
   'clinova_assistant_input',
   'clinova_theme',
-  'clinova-role',
+  'clinova-role'
 ];
 
+// Keep original localStorage methods
 const originalGetItem = localStorage.getItem.bind(localStorage);
 const originalSetItem = localStorage.setItem.bind(localStorage);
 const originalRemoveItem = localStorage.removeItem.bind(localStorage);
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
-
+// Check if error is related to authentication / API keys
 function checkAuthError(error: any) {
   if (!error) return false;
   const msg = error.message || '';
   const status = error.status;
-  if (msg.includes('API key') || msg.includes('invalid') || msg.includes('JWT') || status === 401 || status === 403) {
+  if (
+    msg.includes('API key') || 
+    msg.includes('invalid') || 
+    msg.includes('JWT') || 
+    status === 401 || 
+    status === 403
+  ) {
     isSyncDisabled = true;
-    console.warn(
-      '[Supabase Sync] Disabling cloud sync: the Supabase API key or URL is invalid or unauthorized. Local Storage continues to work.',
-    );
+    console.warn('[Supabase Sync] Disabling cloud synchronization because the Supabase API key or URL is invalid or unauthorized. Local Storage will continue to work perfectly.');
     return true;
   }
   return false;
 }
 
+// Synchronizes a specific key-value pair to the Supabase database
 async function syncToSupabase(key: string, value: string) {
   if (!supabase || !currentUserId || isSyncingFromSupabase || isSyncDisabled) return;
   if (!SYNCABLE_KEYS.includes(key)) return;
 
   try {
-    const { error } = await supabase.from('user_local_storage').upsert(
-      {
+    const { error } = await supabase
+      .from('user_local_storage')
+      .upsert({
         user_id: currentUserId,
-        key,
-        value,
-        updated_at: new Date().toISOString(),
-      },
-      { onConflict: 'user_id,key' },
-    );
+        key: key,
+        value: value,
+        updated_at: new Date().toISOString()
+      }, {
+        onConflict: 'user_id,key'
+      });
 
     if (error) {
       if (!checkAuthError(error)) {
         console.warn('[Supabase Sync] Error upserting to Supabase:', error.message);
       }
+    } else {
+      console.log(`[Supabase Sync] Synced ${key} to Supabase`);
     }
   } catch (err: any) {
     if (!checkAuthError(err)) {
@@ -77,6 +94,7 @@ async function syncToSupabase(key: string, value: string) {
   }
 }
 
+// Removes a key-value pair from Supabase when removed locally
 async function removeFromSupabase(key: string) {
   if (!supabase || !currentUserId || isSyncingFromSupabase || isSyncDisabled) return;
   if (!SYNCABLE_KEYS.includes(key)) return;
@@ -92,6 +110,8 @@ async function removeFromSupabase(key: string) {
       if (!checkAuthError(error)) {
         console.warn('[Supabase Sync] Error deleting from Supabase:', error.message);
       }
+    } else {
+      console.log(`[Supabase Sync] Removed ${key} from Supabase`);
     }
   } catch (err: any) {
     if (!checkAuthError(err)) {
@@ -100,11 +120,13 @@ async function removeFromSupabase(key: string) {
   }
 }
 
+// Pulls all synchronized keys from Supabase and restores them to localStorage
 export async function pullFromSupabase(userId: string) {
   if (!supabase || isSyncDisabled) return;
 
   isSyncingFromSupabase = true;
   try {
+    console.log(`[Supabase Sync] Restoring application state from Supabase for user: ${userId}...`);
     const { data, error } = await supabase
       .from('user_local_storage')
       .select('key, value')
@@ -130,12 +152,15 @@ export async function pullFromSupabase(userId: string) {
       });
 
       if (updatedAny) {
+        console.log(`[Supabase Sync] Restored ${data.length} keys from Supabase cloud backup.`);
+        // Dispatch event to update active React components
         window.dispatchEvent(new Event('storage'));
         window.dispatchEvent(new CustomEvent('clinova-storage-synced'));
       }
     } else {
-      // Push current local state up to Supabase
-      SYNCABLE_KEYS.forEach((key) => {
+      console.log('[Supabase Sync] No existing cloud backup found. Syncing current states up.');
+      // Push any current local storage states up to Supabase
+      SYNCABLE_KEYS.forEach(key => {
         const localVal = originalGetItem(key);
         if (localVal) {
           syncToSupabase(key, localVal);
@@ -149,67 +174,59 @@ export async function pullFromSupabase(userId: string) {
   }
 }
 
-// ── Init ──────────────────────────────────────────────────────────────────────
-
+// Initializes the synchronization mechanism by hijacking localStorage
 export function initSupabaseSync() {
   if (!supabase) {
-    console.log(
-      '%c[Supabase Sync] Supabase client unavailable. Add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY to your .env to enable sync.',
-      'color: #f59e0b; font-weight: bold;',
-    );
+    console.log('%c[Supabase Sync] Supabase client environment variables are not set. Add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY to your .env to enable synchronization.', 'color: #f59e0b; font-weight: bold;');
     return;
   }
 
-  console.log(
-    '%c[Supabase Sync] Active! Syncing local storage data to Supabase.',
-    'color: #10b981; font-weight: bold;',
-  );
+  console.log('%c[Supabase Sync] Active! Listening and auto-syncing local storage data to Supabase.', 'color: #10b981; font-weight: bold;');
 
   // Override localStorage.setItem
-  localStorage.setItem = function (key: string, value: string) {
+  localStorage.setItem = function(key: string, value: string) {
     const oldValue = originalGetItem(key);
-    if (oldValue === value) return;
+    if (oldValue === value) return; // Prevent unnecessary writes or feedback loops
+
     originalSetItem(key, value);
     if (SYNCABLE_KEYS.includes(key)) {
       syncToSupabase(key, value);
     }
-  } as typeof localStorage.setItem;
+  };
 
   // Override localStorage.removeItem
-  localStorage.removeItem = function (key: string) {
+  localStorage.removeItem = function(key: string) {
     originalRemoveItem(key);
     if (SYNCABLE_KEYS.includes(key)) {
       removeFromSupabase(key);
     }
-  } as typeof localStorage.removeItem;
+  };
 
-  // Listen to Supabase auth state changes (replaces previous Firebase onAuthStateChanged)
-  const {
-    data: { subscription },
-  } = supabase.auth.onAuthStateChange((event, session) => {
-    if (session?.user) {
-      currentUserId = session.user.id;
-      pullFromSupabase(session.user.id);
+  // Monitor user login changes (Firebase and Mock sessions)
+  onAuthStateChanged(auth, async (firebaseUser) => {
+    if (firebaseUser) {
+      currentUserId = firebaseUser.uid;
+      await pullFromSupabase(firebaseUser.uid);
     } else {
-      // Check for mock/demo sessions in localStorage
+      // Look for custom demo/mock sessions
       const mockSession = originalGetItem('clinova-mock-user');
       if (mockSession) {
         try {
           const parsed = JSON.parse(mockSession);
           if (parsed && parsed.id) {
             currentUserId = parsed.id;
-            pullFromSupabase(parsed.id);
+            await pullFromSupabase(parsed.id);
             return;
           }
-        } catch {
-          /* ignore */
+        } catch (e) {
+          // ignore parsing error
         }
       }
       currentUserId = null;
     }
   });
 
-  // Keep sync across mock user logins detected via storage events
+  // Keep synced across mock user logins or role transitions
   window.addEventListener('storage', async () => {
     const mockSession = originalGetItem('clinova-mock-user');
     if (mockSession) {
@@ -219,14 +236,9 @@ export function initSupabaseSync() {
           currentUserId = parsed.id;
           await pullFromSupabase(parsed.id);
         }
-      } catch {
-        /* ignore */
+      } catch (e) {
+        // ignore parsing error
       }
     }
   });
-
-  // Unsubscribe on cleanup (stored for potential teardown)
-  return () => {
-    subscription.unsubscribe();
-  };
 }

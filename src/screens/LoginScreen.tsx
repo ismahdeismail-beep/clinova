@@ -35,18 +35,15 @@ const [isSignUp, setIsSignUp] = useState(false);
       navigate('/', { replace: true });
     } catch (err: any) {
       console.error(err);
-      const msg = err?.message || String(err) || '';
-      let friendlyMessage = 'Authentication failed. Please check your details.';
-      if (msg.includes('User already registered')) {
+      let friendlyMessage = err?.message || 'Authentication failed. Please check your details.';
+      if (err?.code === 'auth/email-already-in-use') {
         friendlyMessage = 'This email is already registered. Please sign in instead.';
-      } else if (msg.includes('Password should be at least')) {
+      } else if (err?.code === 'auth/weak-password') {
         friendlyMessage = 'Password must be at least 6 characters.';
-      } else if (msg.includes('Invalid login credentials')) {
+      } else if (err?.code === 'auth/invalid-credential' || err?.code === 'auth/user-not-found' || err?.code === 'auth/wrong-password') {
         friendlyMessage = 'Incorrect email or password.';
-      } else if (msg.includes('Invalid email') || msg.includes('invalid email')) {
+      } else if (err?.code === 'auth/invalid-email') {
         friendlyMessage = 'Please enter a valid email address.';
-      } else if (msg.includes('Email not confirmed')) {
-        friendlyMessage = 'Please confirm your email before signing in.';
       }
       setErrorMsg(friendlyMessage);
       setIsLoading(false);
@@ -61,12 +58,11 @@ const [isSignUp, setIsSignUp] = useState(false);
       navigate('/', { replace: true });
     } catch (err: any) {
       console.error(err);
-      const msg = err?.message || String(err) || '';
       let errMsg = 'Google sign-in failed. Please use Email/Password or the Quick Demo Sign-In below.';
-      if (msg.includes('popup') || msg.includes('Popup')) {
+      if (err?.code === 'auth/unauthorized-domain') {
+        errMsg = 'Google Sign-in is currently unavailable in this environment. Please use standard Email/Password or click "Quick Demo Sign-In" below.';
+      } else if (err?.code === 'auth/popup-blocked') {
         errMsg = 'The sign-in popup was blocked. Please allow popups or try the Quick Demo Sign-In.';
-      } else if (msg.includes('security') || msg.includes('unauthorized')) {
-        errMsg = 'Google sign-in failed. Please try Email/Password or the Quick Demo Sign-In.';
       }
       setErrorMsg(errMsg);
       setIsLoading(false);

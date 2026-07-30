@@ -199,13 +199,12 @@ const CLINICAL_PHARMACY_UNITS: ExamUnitSpec[] = [
 ];
 
 // ====================================================================
-// MODULE 2 — PHARMACOLOGY (8 units, built from Kabarak University
-//             past papers: PHAM 3101 through PHAM 5314)
+// MODULE 2 — PHARMACOLOGY (8 units)
 // ====================================================================
 const PHARMACOLOGY_UNITS: ExamUnitSpec[] = [
   {
     id: 'pharm-general',
-    title: 'General Pharmacology',
+    title: 'General Principles',
     mappedUnits: ['pharm-general'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -225,7 +224,7 @@ const PHARMACOLOGY_UNITS: ExamUnitSpec[] = [
   },
   {
     id: 'pharm-autonomic',
-    title: 'Autonomic Pharmacology',
+    title: 'Autonomic Nervous System',
     mappedUnits: ['pharm-autonomic'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -245,7 +244,7 @@ const PHARMACOLOGY_UNITS: ExamUnitSpec[] = [
   },
   {
     id: 'pharm-autacoids-cns',
-    title: 'Autacoids, Inflammation & CNS Pharmacology',
+    title: 'Autacoids, Inflammation & CNS',
     mappedUnits: ['pharm-autacoids', 'pharm-cns'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -265,7 +264,7 @@ const PHARMACOLOGY_UNITS: ExamUnitSpec[] = [
   },
   {
     id: 'pharm-cvs',
-    title: 'Cardiovascular Pharmacology',
+    title: 'Cardiovascular System',
     mappedUnits: ['pharm-cvs'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -285,7 +284,7 @@ const PHARMACOLOGY_UNITS: ExamUnitSpec[] = [
   },
   {
     id: 'pharm-resp-renal-git',
-    title: 'Respiratory, Renal & GIT Pharmacology',
+    title: 'Respiratory, Renal & GIT',
     mappedUnits: ['pharm-resp-renal', 'pharm-git'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -325,7 +324,7 @@ const PHARMACOLOGY_UNITS: ExamUnitSpec[] = [
   },
   {
     id: 'pharm-anticancer-endo',
-    title: 'Anticancer, Endocrine & Vitamin Pharmacology',
+    title: 'Anticancer, Endocrine & Vitamins',
     mappedUnits: ['pharm-anticancer', 'pharm-endo'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -378,7 +377,7 @@ export const EXAM_PREP_MODULES: ExamModuleSpec[] = [
   {
     id: 'pharmacology-exam',
     title: 'Pharmacology',
-    description: 'Practice papers covering systematic pharmacology from general principles through chemotherapy and toxicology. Based on Kabarak University PHAM past-paper patterns.',
+    description: 'Practice papers covering systematic pharmacology from general principles through chemotherapy and toxicology.',
     units: PHARMACOLOGY_UNITS,
   },
 ];

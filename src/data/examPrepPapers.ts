@@ -10889,7 +10889,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
 ,
   "pharm-general": {
     "1": {
-        "title": "General Pharmacology",
+        "title": "General Principles",
         "variant": 1,
         "sections": [
             {
@@ -11288,7 +11288,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
   },
   "pharm-autonomic": {
     "1": {
-        "title": "Autonomic Pharmacology",
+        "title": "Autonomic Nervous System",
         "variant": 1,
         "sections": [
             {
@@ -11687,7 +11687,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
   },
   "pharm-autacoids-cns": {
     "1": {
-      "title": "Autacoids, Inflammation & CNS Pharmacology",
+      "title": "Autacoids, Inflammation & CNS",
       "variant": 1,
       "sections": [
         {
@@ -11756,7 +11756,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
   },
   "pharm-cvs": {
     "1": {
-      "title": "Cardiovascular Pharmacology",
+      "title": "Cardiovascular System",
       "variant": 1,
       "sections": [
         {
@@ -11825,7 +11825,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
   },
   "pharm-resp-renal-git": {
     "1": {
-      "title": "Respiratory, Renal & GIT Pharmacology",
+      "title": "Respiratory, Renal & GIT",
       "variant": 1,
       "sections": [
         {
@@ -11963,7 +11963,7 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
   },
   "pharm-anticancer-endo": {
     "1": {
-      "title": "Anticancer, Endocrine & Vitamin Pharmacology",
+      "title": "Anticancer, Endocrine & Vitamins",
       "variant": 1,
       "sections": [
         {

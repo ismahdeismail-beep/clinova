@@ -10886,6 +10886,1219 @@ export const EXAM_PREP_PAPERS: Record<string, Record<number, GeneratedPaper>> =
       ]
     }
   }
+,
+  "pharm-general": {
+    "1": {
+        "title": "General Pharmacology",
+        "variant": 1,
+        "sections": [
+            {
+                "letter": "A",
+                "name": "Multiple Choice Questions",
+                "marks": 30,
+                "questions": [
+                    {
+                        "stem": "Which of the following is a prodrug?",
+                        "options": [
+                            "Enalapril",
+                            "Alternative treatment for prodrugs",
+                            "Incorrect mechanism for prodrugs",
+                            "Side effect of prodrugs therapy"
+                        ],
+                        "answer": "Enalapril",
+                        "explanation": "Prodrugs require biotransformation to become active. Enalapril is hydrolysed to enalaprilat."
+                    },
+                    {
+                        "stem": "Which of the following drugs is an inhibitor of cytochrome P450 enzymes?",
+                        "options": [
+                            "Ketoconazole",
+                            "Alternative treatment for cyp450 inhibition",
+                            "Incorrect mechanism for cyp450 inhibition",
+                            "Side effect of cyp450 inhibition therapy"
+                        ],
+                        "answer": "Ketoconazole",
+                        "explanation": "Ketoconazole is a potent CYP450 inhibitor, while rifampicin and phenytoin are inducers."
+                    },
+                    {
+                        "stem": "CYP-450 inducers include all of the following EXCEPT:",
+                        "options": [
+                            "Cimetidine",
+                            "Alternative treatment for cyp450 induction",
+                            "Incorrect mechanism for cyp450 induction",
+                            "Side effect of cyp450 induction therapy"
+                        ],
+                        "answer": "Cimetidine",
+                        "explanation": "Cimetidine is a CYP450 inhibitor, not an inducer. Rifampicin, phenobarbitone, and DDT are inducers."
+                    },
+                    {
+                        "stem": "Volume of distribution of drugs is altered in all of the following EXCEPT:",
+                        "options": [
+                            "Athletes",
+                            "Alternative treatment for volume of distribution",
+                            "Incorrect mechanism for volume of distribution",
+                            "Side effect of volume of distribution therapy"
+                        ],
+                        "answer": "Athletes",
+                        "explanation": "Obesity, pregnancy, and neonates all show altered Vd. Athletic training does not significantly alter Vd."
+                    },
+                    {
+                        "stem": "Drugs with high plasma protein binding have:",
+                        "options": [
+                            "Lower volumes of distribution",
+                            "Alternative treatment for protein binding",
+                            "Incorrect mechanism for protein binding",
+                            "Side effect of protein binding therapy"
+                        ],
+                        "answer": "Lower volumes of distribution",
+                        "explanation": "Highly protein-bound drugs remain in plasma, resulting in a lower Vd."
+                    },
+                    {
+                        "stem": "Redistribution phenomenon is seen with which of the following drugs?",
+                        "options": [
+                            "Thiopentone",
+                            "Alternative treatment for redistribution",
+                            "Incorrect mechanism for redistribution",
+                            "Side effect of redistribution therapy"
+                        ],
+                        "answer": "Thiopentone",
+                        "explanation": "Thiopentone is highly lipid-soluble; it rapidly enters the brain then redistributes to fat and muscle."
+                    },
+                    {
+                        "stem": "Sulphonamide is conjugated with:",
+                        "options": [
+                            "Acetylation",
+                            "Alternative treatment for drug metabolism",
+                            "Incorrect mechanism for drug metabolism",
+                            "Side effect of drug metabolism therapy"
+                        ],
+                        "answer": "Acetylation",
+                        "explanation": "Sulphonamides undergo N-acetylation in the liver as a major metabolic pathway."
+                    },
+                    {
+                        "stem": "Loading dose of a drug is given to:",
+                        "options": [
+                            "Achieve steady state concentration in a short time",
+                            "Alternative treatment for loading dose",
+                            "Incorrect mechanism for loading dose",
+                            "Side effect of loading dose therapy"
+                        ],
+                        "answer": "Achieve steady state concentration in a short time",
+                        "explanation": "A loading dose rapidly achieves therapeutic levels without waiting for steady state."
+                    },
+                    {
+                        "stem": "The clearance of a drug means:",
+                        "options": [
+                            "Volume of plasma cleared of drug per unit time",
+                            "Alternative treatment for clearance",
+                            "Incorrect mechanism for clearance",
+                            "Side effect of clearance therapy"
+                        ],
+                        "answer": "Volume of plasma cleared of drug per unit time",
+                        "explanation": "Clearance describes the efficiency of drug removal from the body."
+                    },
+                    {
+                        "stem": "Elimination after 4 half-lives in first-order kinetics is approximately:",
+                        "options": [
+                            "93%",
+                            "Alternative treatment for half-life",
+                            "Incorrect mechanism for half-life",
+                            "Side effect of half-life therapy"
+                        ],
+                        "answer": "93%",
+                        "explanation": "After 4 half-lives, ~93.75% of drug is eliminated in first-order kinetics."
+                    },
+                    {
+                        "stem": "Which of the following routes of administration completely bypasses hepatic first-pass metabolism?",
+                        "options": [
+                            "Rectal",
+                            "Alternative treatment for first-pass effect",
+                            "Incorrect mechanism for first-pass effect",
+                            "Side effect of first-pass effect therapy"
+                        ],
+                        "answer": "Rectal",
+                        "explanation": "Rectal administration partially bypasses first-pass, as does sublingual."
+                    },
+                    {
+                        "stem": "Grapefruit juice affects drug metabolism by acting as a(n):",
+                        "options": [
+                            "Enzyme inhibitor",
+                            "Alternative treatment for grapefruit juice",
+                            "Incorrect mechanism for grapefruit juice",
+                            "Side effect of grapefruit juice therapy"
+                        ],
+                        "answer": "Enzyme inhibitor",
+                        "explanation": "Grapefruit juice inhibits CYP3A4, increasing bioavailability of affected drugs."
+                    },
+                    {
+                        "stem": "A partial agonist has:",
+                        "options": [
+                            "High affinity but low intrinsic activity",
+                            "Alternative treatment for partial agonist",
+                            "Incorrect mechanism for partial agonist",
+                            "Side effect of partial agonist therapy"
+                        ],
+                        "answer": "High affinity but low intrinsic activity",
+                        "explanation": "Partial agonists bind receptors with high affinity but produce a submaximal response."
+                    },
+                    {
+                        "stem": "Weak acids are absorbed efficiently:",
+                        "options": [
+                            "Across the cells of the stomach",
+                            "Alternative treatment for drug absorption",
+                            "Incorrect mechanism for drug absorption",
+                            "Side effect of drug absorption therapy"
+                        ],
+                        "answer": "Across the cells of the stomach",
+                        "explanation": "Weak acids are non-ionised in acidic gastric pH, favouring passive diffusion."
+                    },
+                    {
+                        "stem": "The therapeutic index refers to:",
+                        "options": [
+                            "The ratio of toxic dose to therapeutic dose",
+                            "Alternative treatment for therapeutic index",
+                            "Incorrect mechanism for therapeutic index",
+                            "Side effect of therapeutic index therapy"
+                        ],
+                        "answer": "The ratio of toxic dose to therapeutic dose",
+                        "explanation": "TI = TD50/ED50, indicating drug safety margin."
+                    },
+                    {
+                        "stem": "Bioavailability is defined as:",
+                        "options": [
+                            "Fraction of administered dose reaching systemic circulation unchanged",
+                            "Alternative treatment for bioavailability",
+                            "Incorrect mechanism for bioavailability",
+                            "Side effect of bioavailability therapy"
+                        ],
+                        "answer": "Fraction of administered dose reaching systemic circulation unchanged",
+                        "explanation": "Bioavailability accounts for first-pass metabolism and absorption factors."
+                    },
+                    {
+                        "stem": "In first-order kinetics, the rate of elimination is:",
+                        "options": [
+                            "Proportional to drug concentration",
+                            "Alternative treatment for first-order kinetics",
+                            "Incorrect mechanism for first-order kinetics",
+                            "Side effect of first-order kinetics therapy"
+                        ],
+                        "answer": "Proportional to drug concentration",
+                        "explanation": "A constant fraction of drug is eliminated per unit time."
+                    },
+                    {
+                        "stem": "Zero-order kinetics is characterised by:",
+                        "options": [
+                            "Constant rate of elimination regardless of concentration",
+                            "Alternative treatment for zero-order kinetics",
+                            "Incorrect mechanism for zero-order kinetics",
+                            "Side effect of zero-order kinetics therapy"
+                        ],
+                        "answer": "Constant rate of elimination regardless of concentration",
+                        "explanation": "Examples include ethanol and phenytoin at high doses."
+                    },
+                    {
+                        "stem": "P-glycoprotein functions as:",
+                        "options": [
+                            "An efflux transporter limiting drug absorption",
+                            "Alternative treatment for drug transporters",
+                            "Incorrect mechanism for drug transporters",
+                            "Side effect of drug transporters therapy"
+                        ],
+                        "answer": "An efflux transporter limiting drug absorption",
+                        "explanation": "P-gp pumps drugs out of cells, affecting absorption and distribution."
+                    },
+                    {
+                        "stem": "Phase I drug metabolism involves:",
+                        "options": [
+                            "Oxidation, reduction, and hydrolysis",
+                            "Alternative treatment for phase i reactions",
+                            "Incorrect mechanism for phase i reactions",
+                            "Side effect of phase i reactions therapy"
+                        ],
+                        "answer": "Oxidation, reduction, and hydrolysis",
+                        "explanation": "Phase I introduces functional groups, often via CYP450 enzymes."
+                    },
+                    {
+                        "stem": "Phase II conjugation reactions result in:",
+                        "options": [
+                            "More water-soluble metabolites",
+                            "Alternative treatment for phase ii reactions",
+                            "Incorrect mechanism for phase ii reactions",
+                            "Side effect of phase ii reactions therapy"
+                        ],
+                        "answer": "More water-soluble metabolites",
+                        "explanation": "Conjugation (e.g. glucuronidation) increases polarity for excretion."
+                    },
+                    {
+                        "stem": "Enterohepatic recirculation tends to:",
+                        "options": [
+                            "Prolong drug half-life",
+                            "Alternative treatment for enterohepatic recirculation",
+                            "Incorrect mechanism for enterohepatic recirculation",
+                            "Side effect of enterohepatic recirculation therapy"
+                        ],
+                        "answer": "Prolong drug half-life",
+                        "explanation": "Drug excreted in bile is reabsorbed from the intestine, extending duration."
+                    },
+                    {
+                        "stem": "Drugs cross the placenta primarily by:",
+                        "options": [
+                            "Simple diffusion",
+                            "Alternative treatment for placental transfer",
+                            "Incorrect mechanism for placental transfer",
+                            "Side effect of placental transfer therapy"
+                        ],
+                        "answer": "Simple diffusion",
+                        "explanation": "Lipid-soluble, non-ionised drugs readily cross the placental barrier."
+                    },
+                    {
+                        "stem": "Displacement from plasma proteins results in:",
+                        "options": [
+                            "Increased free drug concentration",
+                            "Alternative treatment for protein binding displacement",
+                            "Incorrect mechanism for protein binding displacement",
+                            "Side effect of protein binding displacement therapy"
+                        ],
+                        "answer": "Increased free drug concentration",
+                        "explanation": "Displaced drug becomes pharmacologically active and may cause toxicity."
+                    },
+                    {
+                        "stem": "CYP450 enzyme induction typically takes:",
+                        "options": [
+                            "Several days to weeks",
+                            "Alternative treatment for enzyme induction time",
+                            "Incorrect mechanism for enzyme induction time",
+                            "Side effect of enzyme induction time therapy"
+                        ],
+                        "answer": "Several days to weeks",
+                        "explanation": "Induction requires new protein synthesis, so onset is delayed."
+                    },
+                    {
+                        "stem": "CYP450 enzyme inhibition is typically:",
+                        "options": [
+                            "Rapid in onset",
+                            "Alternative treatment for enzyme inhibition",
+                            "Incorrect mechanism for enzyme inhibition",
+                            "Side effect of enzyme inhibition therapy"
+                        ],
+                        "answer": "Rapid in onset",
+                        "explanation": "Inhibition occurs as soon as the inhibitor reaches sufficient concentration."
+                    },
+                    {
+                        "stem": "Which factor favours renal excretion of a drug?",
+                        "options": [
+                            "High water solubility",
+                            "Alternative treatment for renal excretion",
+                            "Incorrect mechanism for renal excretion",
+                            "Side effect of renal excretion therapy"
+                        ],
+                        "answer": "High water solubility",
+                        "explanation": "Water-soluble drugs are more readily excreted by the kidneys."
+                    },
+                    {
+                        "stem": "A drug with a very large volume of distribution (>100L) indicates:",
+                        "options": [
+                            "Extensive tissue binding",
+                            "Alternative treatment for volume of distribution",
+                            "Incorrect mechanism for volume of distribution",
+                            "Side effect of volume of distribution therapy"
+                        ],
+                        "answer": "Extensive tissue binding",
+                        "explanation": "Large Vd suggests drug concentrates in tissues rather than plasma."
+                    },
+                    {
+                        "stem": "Steady state is reached after approximately:",
+                        "options": [
+                            "5 half-lives",
+                            "Alternative treatment for steady state",
+                            "Incorrect mechanism for steady state",
+                            "Side effect of steady state therapy"
+                        ],
+                        "answer": "5 half-lives",
+                        "explanation": "After 5 half-lives, ~97% of steady state concentration is achieved."
+                    },
+                    {
+                        "stem": "Therapeutic drug monitoring is MOST important for drugs with:",
+                        "options": [
+                            "Narrow therapeutic index",
+                            "Alternative treatment for drug monitoring",
+                            "Incorrect mechanism for drug monitoring",
+                            "Side effect of drug monitoring therapy"
+                        ],
+                        "answer": "Narrow therapeutic index",
+                        "explanation": "TDM ensures efficacy while avoiding toxicity for narrow-TI drugs."
+                    }
+                ]
+            },
+            {
+                "letter": "B",
+                "name": "Short Answer Questions",
+                "marks": 40,
+                "questions": [
+                    {
+                        "stem": "Define bioavailability and explain three factors that affect it.",
+                        "modelAnswer": "Bioavailability (F) = fraction of dose reaching systemic circulation. Factors: (1) First-pass metabolism \u2014 drugs metabolised in liver/gut have lower F; (2) Physicochemical properties \u2014 solubility, stability; (3) Formulation \u2014 dissolution rate, excipients; (4) Physiological factors \u2014 gastric pH, motility, food effects."
+                    },
+                    {
+                        "stem": "Explain the clinical significance of plasma protein binding in drug therapy. Give two examples.",
+                        "modelAnswer": "High protein binding (>90%) means: (1) Low Vd \u2014 drug stays in plasma; (2) Long duration \u2014 slow elimination; (3) Displacement interactions \u2014 e.g. warfarin displaced by NSAIDs \u2192 bleeding risk; (4) Saturable binding \u2014 dose-dependent kinetics. Examples: warfarin (99% bound), phenytoin (90% bound)."
+                    },
+                    {
+                        "stem": "Compare and contrast first-order and zero-order kinetics with examples.",
+                        "modelAnswer": "First-order: rate proportional to concentration, constant t\u00bd, e.g. most drugs at therapeutic doses. Zero-order: constant rate regardless of concentration, saturable, e.g. ethanol, phenytoin at high doses, aspirin. Clinical significance: zero-order drugs accumulate rapidly with dose increases, risk of toxicity."
+                    },
+                    {
+                        "stem": "Describe the role of cytochrome P450 enzymes in drug metabolism and list three clinically significant drug interactions involving CYP450.",
+                        "modelAnswer": "CYP450 (especially CYP3A4, 2D6, 2C9) catalyses Phase I reactions. Interactions: (1) Ketoconazole (CYP3A4 inhibitor) + terfenadine \u2192 cardiac arrhythmias; (2) Rifampicin (CYP inducer) + oral contraceptives \u2192 contraceptive failure; (3) Grapefruit juice (CYP3A4 inhibitor) + statins \u2192 myopathy risk."
+                    },
+                    {
+                        "stem": "What is a prodrug? Give three examples and explain the clinical rationale for each.",
+                        "modelAnswer": "A prodrug is an inactive compound that requires biotransformation to become active. Examples: (1) Enalapril \u2192 enalaprilat (improved oral absorption); (2) Levodopa \u2192 dopamine (crosses BBB); (3) Codeine \u2192 morphine (prodrug for pain). Rationale: improved bioavailability, targeted delivery, reduced side effects."
+                    },
+                    {
+                        "stem": "Explain the concept of therapeutic drug monitoring (TDM). Which drugs require TDM and why?",
+                        "modelAnswer": "TDM measures drug levels to optimise therapy. Indications: narrow TI drugs (theophylline, digoxin, lithium, phenytoin, aminoglycosides), variable PK, renal/hepatic impairment, suspected toxicity, non-response. Benefits: maximise efficacy, minimise toxicity, individualise dosing."
+                    },
+                    {
+                        "stem": "Discuss factors that affect drug absorption after oral administration.",
+                        "modelAnswer": "Factors: (1) Gastric pH \u2014 weak acids absorbed in stomach; (2) Gastric emptying rate \u2014 faster = quicker absorption; (3) Food \u2014 can delay or enhance; (4) First-pass metabolism \u2014 reduces bioavailability; (5) Drug formulation \u2014 immediate vs sustained release; (6) Intestinal surface area \u2014 large area favours absorption; (7) Blood flow to GI tract."
+                    },
+                    {
+                        "stem": "A 55-year-old patient on warfarin develops gastrointestinal bleeding after being prescribed ibuprofen. Explain the pharmacological basis of this interaction.",
+                        "modelAnswer": "Mechanism: (1) Ibuprofen displaces warfarin from albumin \u2192 increased free warfarin \u2192 enhanced anticoagulation; (2) Ibuprofen inhibits COX-1 \u2192 reduced gastroprotective prostaglandins \u2192 increased bleeding risk; (3) Both drugs affect haemostasis (warfarin \u2192 clotting factor inhibition, ibuprofen \u2192 platelet inhibition). Management: avoid concurrent use, monitor INR closely."
+                    }
+                ]
+            },
+            {
+                "letter": "C",
+                "name": "Long Answer Questions",
+                "marks": 30,
+                "questions": [
+                    {
+                        "stem": "A pharmaceutical company is developing a new drug candidate. Describe the complete process of drug discovery and development from target identification to market approval. Include the phases of clinical trials.",
+                        "modelAnswer": "Drug development process:\n\n1. DRUG DISCOVERY (2-5 years)\n- Target identification \u2014 find biological target involved in disease\n- Lead identification \u2014 screen compounds for activity\n- Lead optimisation \u2014 improve potency, selectivity, PK properties\n- Preclinical testing \u2014 in vitro assays, animal studies (PK, toxicity, efficacy)\n\n2. CLINICAL DEVELOPMENT (6-10 years)\n- Phase I: 20-100 healthy volunteers; safety, tolerability, PK; ~70% pass\n- Phase II: 100-500 patients; efficacy, dose-ranging, side effects; ~33% pass\n- Phase III: 1000-5000 patients; confirm efficacy, compare with standard, monitor ADRs; ~25-60% pass\n\n3. REGULATORY APPROVAL (1-3 years)\n- NDA/MA submission to FDA/EMA\n- Review by regulatory authorities\n- Post-marketing surveillance (Phase IV)\n\nKEY CONCEPTS: Therapeutic index = TD50/ED50; ADME properties; First-pass effect; Bioavailability; Half-life considerations."
+                    },
+                    {
+                        "stem": "Explain the clinical pharmacokinetics of a drug with high protein binding and a narrow therapeutic index. Discuss how changes in protein binding, hepatic function, and renal function affect its dosing. Use phenytoin as an example.",
+                        "modelAnswer": "PHENYTOIN PHARMACOKINETICS:\n\n1. PROTEIN BINDING (~90% bound to albumin)\n- Only free fraction is pharmacologically active\n- In hypoalbuminaemia (liver disease, nephrotic syndrome): more free drug \u2192 toxicity risk\n- Displacement by other drugs (valproate, NSAIDs): increased free fraction\n- Total phenytoin levels may be misleading \u2014 measure free levels\n\n2. NONLINEAR (SATURABLE) KINETICS\n- At therapeutic concentrations, CYP2C9 becomes saturated\n- Small dose increases \u2192 large increase in steady-state concentration\n- t\u00bd increases with dose (from ~24h to >48h)\n\n3. HEPATIC IMPAIRMENT\n- Reduced metabolism \u2192 accumulation \u2192 toxicity\n- Dose reduction required\n\n4. RENAL IMPAIRMENT\n- Minimal renal excretion of unchanged drug\n- But uraemia displaces phenytoin from albumin \u2192 increased free fraction\n\nDOSING STRATEGY: Start low, go slow. TDM target: total 10-20 \u00b5g/mL (free 1-2 \u00b5g/mL). Adjust based on clinical response and levels."
+                    }
+                ]
+            }
+        ]
+    }
+  },
+  "pharm-autonomic": {
+    "1": {
+        "title": "Autonomic Pharmacology",
+        "variant": 1,
+        "sections": [
+            {
+                "letter": "A",
+                "name": "Multiple Choice Questions",
+                "marks": 30,
+                "questions": [
+                    {
+                        "stem": "Which drug is given orally for post-operative urinary retention?",
+                        "options": [
+                            "Bethanechol",
+                            "Alternative treatment for cholinergic agonist",
+                            "Incorrect mechanism for cholinergic agonist",
+                            "Side effect of cholinergic agonist therapy"
+                        ],
+                        "answer": "Bethanechol",
+                        "explanation": "Bethanechol is a cholinergic agonist that stimulates bladder contraction."
+                    },
+                    {
+                        "stem": "Maintenance therapy for myasthenia gravis uses:",
+                        "options": [
+                            "Pyridostigmine",
+                            "Alternative treatment for myasthenia gravis",
+                            "Incorrect mechanism for myasthenia gravis",
+                            "Side effect of myasthenia gravis therapy"
+                        ],
+                        "answer": "Pyridostigmine",
+                        "explanation": "Pyridostigmine is an oral cholinesterase inhibitor that does not cross the BBB."
+                    },
+                    {
+                        "stem": "Which drug is used for the diagnosis of myasthenia gravis?",
+                        "options": [
+                            "Edrophonium",
+                            "Alternative treatment for myasthenia diagnosis",
+                            "Incorrect mechanism for myasthenia diagnosis",
+                            "Side effect of myasthenia diagnosis therapy"
+                        ],
+                        "answer": "Edrophonium",
+                        "explanation": "Edrophonium is a short-acting IV cholinesterase inhibitor used for the Tensilon test."
+                    },
+                    {
+                        "stem": "The initial drug of choice for organophosphate poisoning is:",
+                        "options": [
+                            "Atropine",
+                            "Alternative treatment for organophosphate",
+                            "Incorrect mechanism for organophosphate",
+                            "Side effect of organophosphate therapy"
+                        ],
+                        "answer": "Atropine",
+                        "explanation": "Atropine blocks muscarinic effects; pralidoxime reactivates inhibited AChE."
+                    },
+                    {
+                        "stem": "Which of the following has high anticholinergic property?",
+                        "options": [
+                            "Diphenhydramine",
+                            "Alternative treatment for anticholinergic",
+                            "Incorrect mechanism for anticholinergic",
+                            "Side effect of anticholinergic therapy"
+                        ],
+                        "answer": "Diphenhydramine",
+                        "explanation": "First-generation antihistamines like diphenhydramine have significant anticholinergic effects."
+                    },
+                    {
+                        "stem": "Metoprolol differs from propranolol in that metoprolol:",
+                        "options": [
+                            "Is more cardioselective (beta1)",
+                            "Alternative treatment for beta blocker selectivity",
+                            "Incorrect mechanism for beta blocker selectivity",
+                            "Side effect of beta blocker selectivity therapy"
+                        ],
+                        "answer": "Is more cardioselective (beta1)",
+                        "explanation": "Metoprolol primarily blocks beta1-receptors, while propranolol blocks both beta1 and beta2."
+                    },
+                    {
+                        "stem": "Clonidine reduces blood pressure by:",
+                        "options": [
+                            "Central alpha2-adrenoceptor agonism",
+                            "Alternative treatment for alpha2 agonist",
+                            "Incorrect mechanism for alpha2 agonist",
+                            "Side effect of alpha2 agonist therapy"
+                        ],
+                        "answer": "Central alpha2-adrenoceptor agonism",
+                        "explanation": "Clonidine stimulates central alpha2-receptors, reducing sympathetic outflow."
+                    },
+                    {
+                        "stem": "Dantrolene is the drug of choice for malignant hyperthermia because it:",
+                        "options": [
+                            "Blocks calcium release from SR",
+                            "Alternative treatment for malignant hyperthermia",
+                            "Incorrect mechanism for malignant hyperthermia",
+                            "Side effect of malignant hyperthermia therapy"
+                        ],
+                        "answer": "Blocks calcium release from SR",
+                        "explanation": "Dantrolene inhibits ryanodine receptors, preventing sarcoplasmic reticulum calcium release."
+                    },
+                    {
+                        "stem": "Prolonged effects of succinylcholine may be due to:",
+                        "options": [
+                            "Plasma cholinesterase deficiency",
+                            "Alternative treatment for neuromuscular blockade",
+                            "Incorrect mechanism for neuromuscular blockade",
+                            "Side effect of neuromuscular blockade therapy"
+                        ],
+                        "answer": "Plasma cholinesterase deficiency",
+                        "explanation": "Genetic deficiency of pseudocholinesterase prolongs succinylcholine action."
+                    },
+                    {
+                        "stem": "Which beta-blocker is used to reduce intraocular pressure in glaucoma?",
+                        "options": [
+                            "Timolol",
+                            "Alternative treatment for glaucoma",
+                            "Incorrect mechanism for glaucoma",
+                            "Side effect of glaucoma therapy"
+                        ],
+                        "answer": "Timolol",
+                        "explanation": "Timolol is a non-selective beta-blocker used topically for glaucoma."
+                    },
+                    {
+                        "stem": "Stimulation of beta2-adrenoceptors causes:",
+                        "options": [
+                            "Bronchodilation",
+                            "Alternative treatment for adrenergic receptors",
+                            "Incorrect mechanism for adrenergic receptors",
+                            "Side effect of adrenergic receptors therapy"
+                        ],
+                        "answer": "Bronchodilation",
+                        "explanation": "Beta2-receptors in bronchial smooth muscle mediate relaxation."
+                    },
+                    {
+                        "stem": "Phenylephrine is a selective:",
+                        "options": [
+                            "Alpha1-adrenoceptor agonist",
+                            "Alternative treatment for phenylephrine",
+                            "Incorrect mechanism for phenylephrine",
+                            "Side effect of phenylephrine therapy"
+                        ],
+                        "answer": "Alpha1-adrenoceptor agonist",
+                        "explanation": "Phenylephrine causes vasoconstriction and is used as a decongestant."
+                    },
+                    {
+                        "stem": "Which drug distinguishes cholinergic crisis from myasthenic crisis?",
+                        "options": [
+                            "Edrophonium",
+                            "Alternative treatment for cholinergic crisis",
+                            "Incorrect mechanism for cholinergic crisis",
+                            "Side effect of cholinergic crisis therapy"
+                        ],
+                        "answer": "Edrophonium",
+                        "explanation": "Edrophonium improves myasthenic crisis but worsens cholinergic crisis."
+                    },
+                    {
+                        "stem": "Mecamylamine is classified as a:",
+                        "options": [
+                            "Ganglionic nicotinic antagonist",
+                            "Alternative treatment for ganglionic blocker",
+                            "Incorrect mechanism for ganglionic blocker",
+                            "Side effect of ganglionic blocker therapy"
+                        ],
+                        "answer": "Ganglionic nicotinic antagonist",
+                        "explanation": "Mecamylamine blocks both sympathetic and parasympathetic ganglia."
+                    },
+                    {
+                        "stem": "Pilocarpine causes:",
+                        "options": [
+                            "Miosis (pupil constriction)",
+                            "Alternative treatment for miosis",
+                            "Incorrect mechanism for miosis",
+                            "Side effect of miosis therapy"
+                        ],
+                        "answer": "Miosis (pupil constriction)",
+                        "explanation": "Pilocarpine is a muscarinic agonist used in glaucoma to constrict the pupil."
+                    },
+                    {
+                        "stem": "Bethanechol is used in all EXCEPT:",
+                        "options": [
+                            "Hypertension",
+                            "Alternative treatment for bethanechol uses",
+                            "Incorrect mechanism for bethanechol uses",
+                            "Side effect of bethanechol uses therapy"
+                        ],
+                        "answer": "Hypertension",
+                        "explanation": "Bethanechol is used for urinary retention, ileus, and GERD."
+                    },
+                    {
+                        "stem": "Prazosin is an alpha1-blocker used for:",
+                        "options": [
+                            "Hypertension and BPH",
+                            "Alternative treatment for alpha blocker",
+                            "Incorrect mechanism for alpha blocker",
+                            "Side effect of alpha blocker therapy"
+                        ],
+                        "answer": "Hypertension and BPH",
+                        "explanation": "Prazosin blocks alpha1-receptors, reducing vascular tone and prostatic smooth muscle."
+                    },
+                    {
+                        "stem": "Non-selective beta-blockers are contraindicated in:",
+                        "options": [
+                            "Asthma",
+                            "Alternative treatment for beta blocker side effects",
+                            "Incorrect mechanism for beta blocker side effects",
+                            "Side effect of beta blocker side effects therapy"
+                        ],
+                        "answer": "Asthma",
+                        "explanation": "Beta2-blockade can precipitate bronchoconstriction in asthmatics."
+                    },
+                    {
+                        "stem": "Which cholinesterase inhibitor is used in Alzheimer disease?",
+                        "options": [
+                            "Donepezil",
+                            "Alternative treatment for cholinesterase inhibitors",
+                            "Incorrect mechanism for cholinesterase inhibitors",
+                            "Side effect of cholinesterase inhibitors therapy"
+                        ],
+                        "answer": "Donepezil",
+                        "explanation": "Donepezil is a centrally-acting ChE inhibitor for mild-moderate Alzheimer disease."
+                    },
+                    {
+                        "stem": "Atropine is contraindicated in:",
+                        "options": [
+                            "Narrow-angle glaucoma",
+                            "Alternative treatment for atropine",
+                            "Incorrect mechanism for atropine",
+                            "Side effect of atropine therapy"
+                        ],
+                        "answer": "Narrow-angle glaucoma",
+                        "explanation": "Atropine dilates the pupil and may precipitate acute angle-closure glaucoma."
+                    },
+                    {
+                        "stem": "Isoprenaline is a:",
+                        "options": [
+                            "Non-selective beta-agonist",
+                            "Alternative treatment for isoprenaline",
+                            "Incorrect mechanism for isoprenaline",
+                            "Side effect of isoprenaline therapy"
+                        ],
+                        "answer": "Non-selective beta-agonist",
+                        "explanation": "Isoprenaline stimulates both beta1 and beta2 receptors."
+                    },
+                    {
+                        "stem": "Dobutamine is primarily a:",
+                        "options": [
+                            "Beta1-adrenoceptor agonist",
+                            "Alternative treatment for dobutamine",
+                            "Incorrect mechanism for dobutamine",
+                            "Side effect of dobutamine therapy"
+                        ],
+                        "answer": "Beta1-adrenoceptor agonist",
+                        "explanation": "Dobutamine increases cardiac contractility with minimal chronotropic effect."
+                    },
+                    {
+                        "stem": "Salbutamol is a selective:",
+                        "options": [
+                            "Beta2-adrenoceptor agonist",
+                            "Alternative treatment for salbutamol",
+                            "Incorrect mechanism for salbutamol",
+                            "Side effect of salbutamol therapy"
+                        ],
+                        "answer": "Beta2-adrenoceptor agonist",
+                        "explanation": "Salbutamol causes bronchodilation with minimal cardiac effects."
+                    },
+                    {
+                        "stem": "Ipratropium is a:",
+                        "options": [
+                            "Muscarinic antagonist",
+                            "Alternative treatment for ipratropium",
+                            "Incorrect mechanism for ipratropium",
+                            "Side effect of ipratropium therapy"
+                        ],
+                        "answer": "Muscarinic antagonist",
+                        "explanation": "Ipratropium blocks cholinergic bronchoconstriction in COPD."
+                    },
+                    {
+                        "stem": "Alpha-methyldopa acts as an agonist at:",
+                        "options": [
+                            "Central alpha2-adrenoceptors",
+                            "Alternative treatment for alpha methyldopa",
+                            "Incorrect mechanism for alpha methyldopa",
+                            "Side effect of alpha methyldopa therapy"
+                        ],
+                        "answer": "Central alpha2-adrenoceptors",
+                        "explanation": "Alpha-methyldopa is metabolised to methyl-noradrenaline, activating central alpha2-receptors."
+                    },
+                    {
+                        "stem": "Clonidine is also used for:",
+                        "options": [
+                            "Opioid withdrawal",
+                            "Alternative treatment for clonidine uses",
+                            "Incorrect mechanism for clonidine uses",
+                            "Side effect of clonidine uses therapy"
+                        ],
+                        "answer": "Opioid withdrawal",
+                        "explanation": "Clonidine reduces sympathetic outflow, alleviating withdrawal symptoms."
+                    },
+                    {
+                        "stem": "Tamsulosin is a selective:",
+                        "options": [
+                            "Alpha1a-adrenoceptor antagonist",
+                            "Alternative treatment for tamsulosin",
+                            "Incorrect mechanism for tamsulosin",
+                            "Side effect of tamsulosin therapy"
+                        ],
+                        "answer": "Alpha1a-adrenoceptor antagonist",
+                        "explanation": "Tamsulosin selectively blocks alpha1a-receptors in the prostate."
+                    },
+                    {
+                        "stem": "Glycopyrrolate does NOT cross the BBB because:",
+                        "options": [
+                            "It is a quaternary ammonium compound",
+                            "Alternative treatment for glycopyrrolate",
+                            "Incorrect mechanism for glycopyrrolate",
+                            "Side effect of glycopyrrolate therapy"
+                        ],
+                        "answer": "It is a quaternary ammonium compound",
+                        "explanation": "Quaternary ammonium compounds are poorly lipid-soluble and do not cross the BBB."
+                    },
+                    {
+                        "stem": "Neostigmine is classified as a:",
+                        "options": [
+                            "Reversible cholinesterase inhibitor",
+                            "Alternative treatment for neostigmine",
+                            "Incorrect mechanism for neostigmine",
+                            "Side effect of neostigmine therapy"
+                        ],
+                        "answer": "Reversible cholinesterase inhibitor",
+                        "explanation": "Neostigmine is a carbamate ChE inhibitor with a quaternary ammonium structure."
+                    },
+                    {
+                        "stem": "Pralidoxime reactivates AChE by:",
+                        "options": [
+                            "Removing the phosphoryl group from the active site",
+                            "Alternative treatment for pralidoxime",
+                            "Incorrect mechanism for pralidoxime",
+                            "Side effect of pralidoxime therapy"
+                        ],
+                        "answer": "Removing the phosphoryl group from the active site",
+                        "explanation": "Pralidoxime is most effective if given within hours before aging occurs."
+                    }
+                ]
+            },
+            {
+                "letter": "B",
+                "name": "Short Answer Questions",
+                "marks": 40,
+                "questions": [
+                    {
+                        "stem": "Compare and contrast the mechanisms of action, clinical uses, and adverse effects of atropine and pralidoxime in organophosphate poisoning.",
+                        "modelAnswer": "ATROPINE: Antimuscarinic \u2014 blocks ACh at muscarinic receptors. Reverses salivation, lacrimation, bradycardia, bronchospasm. Given IV in large doses. Does not affect nicotinic symptoms.\n\nPRALIDOXIME: Reactivates AChE by removing phosphate group. Effective only if given before aging (within 24-48h). Reverses nicotinic and some muscarinic effects. Does not cross BBB.\n\nCombined therapy = standard of care for OP poisoning."
+                    },
+                    {
+                        "stem": "A 70-year-old male with BPH and hypertension is started on prazosin. Explain the pharmacodynamics, expected clinical effects, and key counselling points.",
+                        "modelAnswer": "Prazosin: selective alpha1-blocker \u2192 reduces peripheral vascular resistance \u2192 \u2193 BP. Also relaxes prostatic smooth muscle \u2192 improves urinary flow.\n\nKEY COUNSELLING: (1) First-dose phenomenon \u2014 significant postural hypotension, take at bedtime; (2) Rise slowly from sitting/lying; (3) May cause dizziness, headache, palpitations; (4) Avoid alcohol.\n\nAdverse effects: orthostatic hypotension, reflex tachycardia, nasal congestion."
+                    },
+                    {
+                        "stem": "Discuss the pharmacological management of myasthenia gravis, including drug classes, mechanisms, and monitoring parameters.",
+                        "modelAnswer": "1. Cholinesterase inhibitors: pyridostigmine (maintenance), neostigmine (acute), edrophonium (diagnosis). Mechanism: inhibit ACh breakdown at NMJ \u2192 increased ACh \u2192 improved muscle contraction. Side effects: muscarinic (salivation, diarrhoea, bradycardia) \u2014 managed with atropine.\n\n2. Immunosuppressants: prednisolone, azathioprine, mycophenolate, cyclosporine. Used for moderate-severe disease. Require monitoring for bone marrow suppression, hepatotoxicity.\n\n3. Monoclonal antibodies: rituximab (refractory cases), eculizumab (anti-AChR antibody-positive). Expensive, reserved for severe disease.\n\nMONITORING: Muscle strength, respiratory function, swallowing, ChE inhibitor side effects, immunosuppressant levels."
+                    },
+                    {
+                        "stem": "Explain the mechanism of action of beta-blockers and describe the differences between cardioselective and non-selective beta-blockers. Give two clinical scenarios where the choice matters.",
+                        "modelAnswer": "Mechanism: competitive antagonism of beta-adrenoceptors. Beta1 (heart, kidney) \u2192 \u2193 HR, \u2193 contractility, \u2193 renin. Beta2 (bronchi, vessels, uterus) \u2192 bronchoconstriction, vasoconstriction.\n\nCARDIOSELECTIVE (beta1): atenolol, metoprolol, bisoprolol \u2014 safer in asthma/COPD.\nNON-SELECTIVE: propranolol, timolol \u2014 block both beta1 and beta2. Used for migraine prophylaxis, essential tremor, thyrotoxicosis.\n\nSCENARIOS: (1) Asthmatic with hypertension \u2192 use cardioselective (bisoprolol/metoprolol); (2) Migraine prophylaxis \u2192 propranolol (non-selective)."
+                    },
+                    {
+                        "stem": "Describe the mechanism of neuromuscular blocking agents. Differentiate between depolarising and non-depolarising types with examples.",
+                        "modelAnswer": "NMJ PHYSIOLOGY: ACh released from motor neuron \u2192 binds nicotinic Nm receptors \u2192 muscle depolarisation \u2192 contraction.\n\nDEPOLARISING (succinylcholine): Mimics ACh \u2192 persistent depolarisation \u2192 initial fasciculations then paralysis. Hydrolysed by plasma cholinesterase. Duration ~5 min. Used for rapid sequence intubation.\n\nNON-DEPOLARISING (pancuronium, vecuronium, rocuronium): Competitive antagonist at Nm receptor \u2192 prevents ACh binding \u2192 flaccid paralysis. Reversed by neostigmine. Longer duration (30-60 min).\n\nSide effects: succinylcholine \u2192 malignant hyperthermia, hyperkalaemia; non-depolarising \u2192 histamine release, prolonged block in renal/hepatic failure."
+                    },
+                    {
+                        "stem": "A 45-year-old woman presents with palpitations, sweating, and hypertension. On examination, she has a thyroid bruit and exophthalmos. Propranolol is prescribed. Explain the rationale.",
+                        "modelAnswer": "Propranolol is a non-selective beta-blocker used in thyrotoxicosis for:\n\n1. Symptom control: \u2193 HR (beta1), \u2193 tremor (beta2), \u2193 palpitations, \u2193 anxiety\n2. \u2193 Peripheral conversion of T4 to T3 (inhibits deiodinase)\n3. Rapid onset of action (hours) compared to antithyroid drugs (weeks)\n\nPropranolol does not treat the underlying hyperthyroidism but provides symptomatic relief while antithyroid therapy takes effect.\n\nCautions: asthma, heart block, bradycardia."
+                    },
+                    {
+                        "stem": "Explain the role of alpha2-adrenoceptor agonists in clinical practice with examples.",
+                        "modelAnswer": "Alpha2-agonists (clonidine, alpha-methyldopa, dexmedetomidine, tizanidine) act on presynaptic alpha2-receptors in the CNS \u2192 \u2193 sympathetic outflow.\n\nCLINICAL USES:\n- Clonidine: hypertension, opioid withdrawal, ADHD, hot flashes\n- Alpha-methyldopa: hypertension in pregnancy (safe)\n- Dexmedetomidine: ICU sedation (minimal respiratory depression)\n- Tizanidine: muscle spasticity\n\nAdverse effects: dry mouth, sedation, rebound hypertension on abrupt withdrawal."
+                    },
+                    {
+                        "stem": "Compare the mechanisms of action, uses, and adverse effects of glycopyrrolate and atropine.",
+                        "modelAnswer": "GLYCOPYRROLATE: Quaternary ammonium \u2192 does NOT cross BBB or placenta. Longer duration. Used: pre-anaesthetic to reduce secretions, peptic ulcer, COPD. Fewer CNS effects.\n\nATROPINE: Tertiary amine \u2192 crosses BBB. Shorter duration. Used: organophosphate poisoning, bradycardia, pre-anaesthetic, mydriasis. CNS effects: delirium, agitation.\n\nBoth: antimuscarinic, block ACh at muscarinic receptors. Contraindicated in narrow-angle glaucoma, paralytic ileus."
+                    }
+                ]
+            },
+            {
+                "letter": "C",
+                "name": "Long Answer Questions",
+                "marks": 30,
+                "questions": [
+                    {
+                        "stem": "A 35-year-old farmer is brought to the emergency department after accidental exposure to an organophosphate pesticide. Describe the pathophysiology, clinical presentation, and step-by-step pharmacological management of organophosphate poisoning.",
+                        "modelAnswer": "PATHOPHYSIOLOGY: Organophosphates irreversibly inhibit AChE \u2192 ACh accumulation at synapses \u2192 cholinergic crisis (muscarinic, nicotinic, CNS effects).\n\nCLINICAL: SLUDGE syndrome (Salivation, Lacrimation, Urination, Defecation, GI upset, Emesis). Plus: miosis, bradycardia, bronchospasm, muscle fasciculations, weakness, confusion, seizures.\n\nMANAGEMENT:\n1. ABCDE approach \u2014 secure airway, breathing, circulation\n2. Decontamination \u2014 remove clothing, wash skin\n3. ATROPINE \u2014 1-2 mg IV every 5-15 min until atropinisation (drying of secretions, HR >80)\n4. PRALIDOXIME \u2014 1-2 g IV over 30 min, repeat after 1h then q6-12h. Reactivates AChE. Most effective within 24-48h (before aging).\n5. Benzodiazepines \u2014 for seizures (diazepam/lorazepam)\n6. Supportive care \u2014 ventilation, fluids, monitoring\n\nMONITORING: AChE levels, respiratory status, cardiac monitoring, atropine toxicity."
+                    },
+                    {
+                        "stem": "A 60-year-old male with a 20-year history of hypertension and newly diagnosed benign prostatic hyperplasia presents to clinic. Discuss the pharmacological considerations for choosing an antihypertensive in this patient, including drug classes that benefit both conditions and those to avoid.",
+                        "modelAnswer": "DUAL-BENEFIT DRUGS:\n1. Alpha1-blockers (prazosin, doxazosin, tamsulosin): Treat both hypertension and BPH by relaxing vascular and prostatic smooth muscle. First-dose orthostatic hypotension is a concern.\n\n2. Calcium channel blockers (nifedipine, amlodipine): Effective antihypertensives. Do not worsen BPH. But may cause peripheral oedema.\n\nDRUGS TO USE WITH CAUTION:\n- Diuretics: may worsen urinary frequency in BPH\n- Beta-blockers: may cause fatigue, sexual dysfunction (non-selective more than cardioselective)\n\nDRUGS PREFERRED:\n- Alpha1-blocker + ACE-I/ARB combination\n- Tamsulosin + amlodipine if monotherapy insufficient\n\nCOUNSELLING: Take alpha-blockers at bedtime, rise slowly, monitor BP and urinary symptoms."
+                    }
+                ]
+            }
+        ]
+    }
+  },
+  "pharm-autacoids-cns": {
+    "1": {
+      "title": "Autacoids, Inflammation & CNS Pharmacology",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {"stem": "Autacoids differ from hormones in that they:", "options": ["Act locally at the site of generation and release", "Are transported in blood to distant targets", "Are always involved in pathological states", "Have specific cells of origin"], "answer": "Act locally at the site of generation and release", "explanation": "Autacoids (e.g. histamine, serotonin) act locally at their site of synthesis and release, unlike hormones which are transported in blood."},
+            {"stem": "Which of the following is a selective H1 receptor agonist?", "options": ["2-Thiazolyl ethylamine", "Histamine", "Betahistine", "Diphenhydramine"], "answer": "2-Thiazolyl ethylamine", "explanation": "2-Thiazolyl ethylamine is a selective H1 receptor agonist used experimentally."},
+            {"stem": "Which H1 antihistamine has additional anti-5-HT, anticholinergic, sedative and appetite-stimulating properties?", "options": ["Cyproheptadine", "Loratadine", "Fexofenadine", "Cetirizine"], "answer": "Cyproheptadine", "explanation": "Cyproheptadine is a first-generation antihistamine with additional anti-serotonin, anticholinergic, sedative, and appetite-stimulating effects."},
+            {"stem": "Which second-generation antihistamine is LEAST likely to produce ventricular arrhythmias when given with ketoconazole?", "options": ["Fexofenadine", "Terfenadine", "Astemizole", "Ebastine"], "answer": "Fexofenadine", "explanation": "Fexofenadine is not metabolised by CYP3A4 and does not block cardiac K+ channels, so it is safe with CYP3A4 inhibitors."},
+            {"stem": "Erythromycin should not be given with terfenadine because:", "options": ["Dangerous ventricular arrhythmias can occur", "Erythromycin induces terfenadine metabolism", "Terfenadine inhibits erythromycin metabolism", "Terfenadine antagonises erythromycin"], "answer": "Dangerous ventricular arrhythmias can occur", "explanation": "Erythromycin inhibits CYP3A4, increasing terfenadine levels leading to QT prolongation and risk of torsades de pointes."},
+            {"stem": "Which 5-HT receptor is NOT a G protein-coupled receptor?", "options": ["5-HT3", "5-HT1", "5-HT2", "5-HT4"], "answer": "5-HT3", "explanation": "5-HT3 is a ligand-gated ion channel, while all other 5-HT receptors are G protein-coupled."},
+            {"stem": "Methysergide has lost popularity for migraine prophylaxis mainly due to:", "options": ["Risk of visceral fibrosis", "Cardiotoxicity", "Hepatotoxicity", "Nephrotoxicity"], "answer": "Risk of visceral fibrosis", "explanation": "Methysergide can cause retroperitoneal, pleural, and pericardial fibrosis with long-term use."},
+            {"stem": "Which benzodiazepine is used as an antidote for benzodiazepine overdose?", "options": ["Flumazenil", "Naloxone", "Naltrexone", "Flumazepam"], "answer": "Flumazenil", "explanation": "Flumazenil is a competitive benzodiazepine receptor antagonist used to reverse BZD overdose."},
+            {"stem": "Barbiturates differ from benzodiazepines in that they:", "options": ["Directly activate the GABA-A receptor chloride channel", "Only potentiate GABA effects", "Have a higher therapeutic index", "Are safer in overdose"], "answer": "Directly activate the GABA-A receptor chloride channel", "explanation": "Barbiturates directly open GABA-A chloride channels at high concentrations, while BZDs only potentiate GABA effects."},
+            {"stem": "The atypical antipsychotic with the lowest risk of extrapyramidal side effects is:", "options": ["Clozapine", "Haloperidol", "Risperidone", "Chlorpromazine"], "answer": "Clozapine", "explanation": "Clozapine has minimal EPS risk but requires WBC monitoring due to agranulocytosis risk."},
+            {"stem": "Selective serotonin reuptake inhibitors (SSRIs) should not be combined with MAOIs due to risk of:", "options": ["Serotonin syndrome", "Hypertensive crisis", "Neuroleptic malignant syndrome", "Extrapyramidal symptoms"], "answer": "Serotonin syndrome", "explanation": "Combining SSRIs with MAOIs leads to excessive serotonin activity causing hyperthermia, clonus, agitation, and hyperreflexia."},
+            {"stem": "Which antiepileptic drug is first-line for absence seizures?", "options": ["Ethosuximide", "Phenytoin", "Carbamazepine", "Valproic acid"], "answer": "Ethosuximide", "explanation": "Ethosuximide is the drug of choice for absence seizures; it blocks T-type calcium channels in thalamic neurons."},
+            {"stem": "Sumatriptan exerts its anti-migraine effect by:", "options": ["Agonism at 5-HT1B/1D receptors causing cranial vasoconstriction", "Blockade of dopamine D2 receptors", "Inhibition of COX-2", "Blockade of calcium channels"], "answer": "Agonism at 5-HT1B/1D receptors causing cranial vasoconstriction", "explanation": "Triptans are 5-HT1B/1D agonists that constrict dilated cranial blood vessels and inhibit neuropeptide release."},
+            {"stem": "The main advantage of second-generation antipsychotics over first-generation is:", "options": ["Lower risk of extrapyramidal symptoms", "Higher efficacy for positive symptoms", "Faster onset of action", "Lower cost"], "answer": "Lower risk of extrapyramidal symptoms", "explanation": "Second-generation (atypical) antipsychotics have lower EPS risk due to weaker D2 blockade and additional 5-HT2A antagonism."},
+            {"stem": "Lithium monitoring should include regular assessment of:", "options": ["Thyroid function and renal function", "Liver function and cardiac function", "Full blood count and iron studies", "Blood glucose and HbA1c"], "answer": "Thyroid function and renal function", "explanation": "Lithium can cause hypothyroidism and nephrogenic diabetes insipidus; TFTs and renal function should be monitored every 6-12 months."},
+            {"stem": "Which of the following is a 5-HT3 antagonist used as an antiemetic?", "options": ["Ondansetron", "Metoclopramide", "Domperidone", "Prochlorperazine"], "answer": "Ondansetron", "explanation": "Ondansetron is a selective 5-HT3 antagonist used for chemotherapy and post-operative nausea and vomiting."},
+            {"stem": "What is the mechanism of action of valproic acid?", "options": ["Blocks voltage-gated sodium channels and increases GABA", "Blocks calcium channels only", "Inhibits GABA transaminase only", "Blocks glutamate receptors"], "answer": "Blocks voltage-gated sodium channels and increases GABA", "explanation": "Valproate has multiple mechanisms: Na channel blockade and increased GABA synthesis."},
+            {"stem": "Ergotamine is contraindicated with triptans due to risk of:", "options": ["Additive vasospasm", "Serotonin syndrome", " Hypertensive crisis", "Cardiac arrhythmias"], "answer": "Additive vasospasm", "explanation": "Both ergotamine and triptans cause vasoconstriction; combined use risks coronary and peripheral vasospasm."},
+            {"stem": "Akathisia is best managed by:", "options": ["Dose reduction or beta-blocker", "Anticholinergic drugs", "Benzodiazepines", "Dopamine agonists"], "answer": "Dose reduction or beta-blocker", "explanation": "Akathisia (restlessness) from antipsychotics responds to dose reduction, beta-blockers (propranolol), or benzodiazepines."},
+            {"stem": "Which of the following is a prodrug used in Parkinson disease?", "options": ["Levodopa", "Carbidopa", "Pramipexole", "Selegiline"], "answer": "Levodopa", "explanation": "Levodopa is a prodrug that crosses the BBB and is converted to dopamine by DOPA decarboxylase."},
+            {"stem": "The first-line treatment for acute mania in bipolar disorder is:", "options": ["Lithium or valproate", "Carbamazepine", "Lamotrigine", "Olanzapine monotherapy"], "answer": "Lithium or valproate", "explanation": "Lithium and valproate are first-line mood stabilisers for acute mania. Lamotrigine is better for bipolar depression."},
+            {"stem": "Selegiline is classified as a:", "options": ["MAO-B inhibitor", "MAO-A inhibitor", "COMT inhibitor", "Dopamine agonist"], "answer": "MAO-B inhibitor", "explanation": "Selegiline selectively inhibits MAO-B, reducing dopamine metabolism in the brain, used in Parkinson disease."},
+            {"stem": "Which of the following antiepileptic drugs causes hirsutism and gingival hyperplasia?", "options": ["Phenytoin", "Carbamazepine", "Valproic acid", "Lamotrigine"], "answer": "Phenytoin", "explanation": "Phenytoin causes gingival hyperplasia, hirsutism, and coarsening of facial features."},
+            {"stem": "Tardive dyskinesia is MOST associated with:", "options": ["Long-term antipsychotic use", "Short-term antipsychotic use", "SSRI therapy", "Benzodiazepine withdrawal"], "answer": "Long-term antipsychotic use", "explanation": "TD is a late-onset movement disorder from chronic D2 receptor blockade, more common with typical antipsychotics."},
+            {"stem": "Mirtazapine is unique among antidepressants because it:", "options": ["Increases noradrenergic and serotonergic transmission via alpha2 antagonism", "Is a selective serotonin reuptake inhibitor", "Is an MAO inhibitor", "Is a dopamine reuptake inhibitor"], "answer": "Increases noradrenergic and serotonergic transmission via alpha2 antagonism", "explanation": "Mirtazapine blocks alpha2-autoreceptors and alpha2-heteroreceptors, increasing NE and 5-HT release."},
+            {"stem": "The primary mechanism of action of topiramate includes:", "options": ["Multiple: Na channel block, GABA potentiation, kainate antagonism", "Selective serotonin reuptake inhibition", "Dopamine D2 blockade", "Calcium channel agonism"], "answer": "Multiple: Na channel block, GABA potentiation, kainate antagonism", "explanation": "Topiramate has multiple mechanisms, making it effective for epilepsy and migraine prophylaxis."},
+            {"stem": "Which of the following drugs causes dry mouth, constipation, and urinary retention as dose-limiting anticholinergic effects?", "options": ["Amitriptyline", "Fluoxetine", "Sertraline", "Venlafaxine"], "answer": "Amitriptyline", "explanation": "Amitriptyline is a tricyclic antidepressant with significant anticholinergic side effects."},
+            {"stem": "Pimozide is an antipsychotic used specifically for:", "options": ["Tourette syndrome", "Schizophrenia", "Bipolar mania", "Depression"], "answer": "Tourette syndrome", "explanation": "Pimozide is a typical antipsychotic indicated for Tourette syndrome and resistant tics."},
+            {"stem": "Zolpidem differs from benzodiazepines in that it:", "options": ["Selectively binds to alpha1 subunit of GABA-A receptor", "Has longer half-life", "Causes more dependence", "Has anticonvulsant properties"], "answer": "Selectively binds to alpha1 subunit of GABA-A receptor", "explanation": "Zolpidem is a non-benzodiazepine hypnotic that selectively targets the alpha1 subunit, primarily producing hypnotic effects."},
+            {"stem": "Donepezil is used in Alzheimer disease because it:", "options": ["Inhibits acetylcholinesterase in the CNS", "Blocks NMDA receptors", "Increases dopamine levels", "Blocks serotonin reuptake"], "answer": "Inhibits acetylcholinesterase in the CNS", "explanation": "Donepezil is a centrally-acting reversible cholinesterase inhibitor that increases ACh levels in the brain."}
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {"stem": "Describe the differences between first-generation and second-generation H1 antihistamines.", "modelAnswer": "First-gen: sedating, anticholinergic, cross BBB (e.g. diphenhydramine, chlorpheniramine). Second-gen: non-sedating, no anticholinergic, do not cross BBB (e.g. loratadine, cetirizine, fexofenadine). Second-gen preferred for long-term use. First-gen still used for motion sickness, insomnia."},
+            {"stem": "Explain the role of 5-HT3 receptor antagonists in clinical practice.", "modelAnswer": "5-HT3 antagonists (ondansetron, granisetron) block serotonin receptors in the CTZ and GI tract. Used for chemotherapy-induced nausea/vomiting, post-operative nausea. Well-tolerated; main side effect is headache and constipation."},
+            {"stem": "Discuss the pharmacological management of migraine, including acute and prophylactic therapy.", "modelAnswer": "ACUTE: triptans (sumatriptan, rizatriptan) — 5-HT1B/1D agonists; NSAIDs; antiemetics. PROPHYLAXIS: propranolol, amitriptyline, topiramate, valproate. Avoid ergotamine with triptans."},
+            {"stem": "Compare the mechanisms of benzodiazepines and barbiturates as sedative-hypnotics.", "modelAnswer": "BZDs: potentiate GABA at GABA-A receptor; high therapeutic index; antidote flumazenil. Barbiturates: directly activate GABA-A receptor; low TI; respiratory depression; CYP450 induction; high abuse potential."},
+            {"stem": "Describe the extrapyramidal side effects of antipsychotic drugs and their management.", "modelAnswer": "EPS include: acute dystonia, akathisia, parkinsonism, tardive dyskinesia. Typical antipsychotics (haloperidol) > atypicals (clozapine, olanzapine). Management: dose reduction, anticholinergics (benztropine), switch to atypical."},
+            {"stem": "Explain the mechanism of action of SSRIs in the treatment of depression.", "modelAnswer": "SSRIs (fluoxetine, sertraline) selectively inhibit serotonin reuptake at the presynaptic terminal \u2192 increased synaptic 5-HT. Onset 2-4 weeks. Side effects: nausea, sexual dysfunction, insomnia. Avoid with MAOIs (serotonin syndrome)."},
+            {"stem": "What is serotonin syndrome? List the causative drugs and key clinical features.", "modelAnswer": "Caused by excessive 5-HT activity, typically from MAOI + SSRI/SNRI combination. Features: hyperthermia, clonus, agitation, hyperreflexia, tremor, diaphoresis. Management: stop offending agents, supportive care, cyproheptadine."},
+            {"stem": "Discuss the clinical uses and adverse effects of valproic acid.", "modelAnswer": "Uses: epilepsy (generalised tonic-clonic, absence), bipolar disorder, migraine prophylaxis. Adverse: hepatotoxicity (monitor LFTs), teratogenicity (neural tube defects), thrombocytopenia, weight gain, tremor."}
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {"stem": "Compare and contrast the pharmacological management of epilepsy with that of bipolar disorder. Discuss the drugs that are used in both conditions and their mechanisms of action.", "modelAnswer": "EPILEPSY MANAGEMENT:\nFirst-line: lamotrigine, levetiracetam, valproate for generalised; carbamazepine, oxcarbazepine for focal. Mechanisms: Na channel blockade (phenytoin, carbamazepine), GABA potentiation (benzodiazepines, valproate), Ca channel blockade (ethosuximide, gabapentin).\n\nBIPOLAR MANAGEMENT:\nAcute mania: lithium, valproate, antipsychotics. Maintenance: lithium (gold standard), valproate, lamotrigine (for depression). Mechanisms: lithium (inositol depletion, GSK3 inhibition), valproate (GABA, Na channels).\n\nOVERLAPPING DRUGS:\nValproate and lamotrigine are effective in both conditions. Carbamazepine has limited bipolar efficacy."},
+            {"stem": "A 28-year-old woman with a history of migraine without aura presents to the clinic requesting prophylactic therapy. She has tried sumatriptan for acute attacks but finds she needs it more than 10 days per month. Discuss the pharmacological approach to migraine prophylaxis, including drug selection, mechanism of action, adverse effects, and monitoring.", "modelAnswer": "MIGRAINE PROPHYLAXIS APPROACH:\n\nINDICATIONS FOR PROPHYLAXIS:\n- \u22654 attacks/month or \u22658 headache days/month\n- Acute therapy contraindicated or ineffective\n- Medication-overuse headache risk\n\nFIRST-LINE OPTIONS:\n1. Propranolol (80-240 mg daily): non-selective beta-blocker; mechanism unknown but likely central. Adverse: fatigue, bradycardia, contraindicated in asthma.\n2. Amitriptyline (25-100 mg nocte): TCA; inhibits 5-HT/NE reuptake. Start low, titrate. Adverse: sedation, dry mouth, weight gain.\n3. Topiramate (50-200 mg daily): multiple mechanisms. Adverse: cognitive slowing, weight loss, renal stones, teratogenic.\n\nSECOND-LINE:\n4. Valproate (500-1500 mg daily): not in women of childbearing potential.\n5. Candesartan, flunarizine, botulinum toxin A (chronic migraine).\n\nMONITORING: headache diary, side effects, BP (propranolol), weight, pregnancy prevention.\n\nNON-PHARMACOLOGICAL: trigger identification, sleep hygiene, biofeedback, acupuncture."}
+          ]
+        }
+      ]
+    }
+  },
+  "pharm-cvs": {
+    "1": {
+      "title": "Cardiovascular Pharmacology",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {"stem": "ACE inhibitors exert their antihypertensive effect primarily by:", "options": ["Inhibiting angiotensin converting enzyme, reducing angiotensin II formation", "Blocking beta-adrenergic receptors", "Blocking calcium channels", "Increasing renal sodium excretion"], "answer": "Inhibiting angiotensin converting enzyme, reducing angiotensin II formation", "explanation": "ACE-I inhibit conversion of Ang I to Ang II, leading to vasodilation and reduced aldosterone secretion."},
+            {"stem": "Which of the following is a common side effect of ACE inhibitors?", "options": ["Dry cough", "Bradycardia", "Constipation", "Hyperkalaemia"], "answer": "Dry cough", "explanation": "ACE-I increase bradykinin levels, causing dry cough in up to 20% of patients. ARBs are an alternative."},
+            {"stem": "The antihypertensive drug of choice in pregnancy is:", "options": ["Alpha-methyldopa", "ACE inhibitor", "ARB", "Atenolol"], "answer": "Alpha-methyldopa", "explanation": "Alpha-methyldopa is the antihypertensive of choice in pregnancy due to proven safety. ACE-I and ARBs are teratogenic."},
+            {"stem": "Loop diuretics act on which part of the nephron?", "options": ["Thick ascending limb of loop of Henle", "Proximal convoluted tubule", "Distal convoluted tubule", "Collecting duct"], "answer": "Thick ascending limb of loop of Henle", "explanation": "Loop diuretics (furosemide) inhibit the Na-K-2Cl cotransporter in the thick ascending limb."},
+            {"stem": "Spironolactone is a:", "options": ["Potassium-sparing diuretic", "Loop diuretic", "Thiazide diuretic", "Carbonic anhydrase inhibitor"], "answer": "Potassium-sparing diuretic", "explanation": "Spironolactone is an aldosterone antagonist that promotes Na excretion while retaining K."},
+            {"stem": "Digoxin toxicity is potentiated by:", "options": ["Hypokalaemia", "Hyperkalaemia", "Hypernatraemia", "Hypocalcaemia"], "answer": "Hypokalaemia", "explanation": "Low potassium increases digoxin binding to Na/K-ATPase, precipitating toxicity."},
+            {"stem": "Which class of antiarrhythmic drug does amiodarone belong to?", "options": ["Class III", "Class I", "Class II", "Class IV"], "answer": "Class III", "explanation": "Amiodarone is a Class III antiarrhythmic that blocks potassium channels, prolonging repolarisation."},
+            {"stem": "Warfarin acts by:", "options": ["Inhibiting vitamin K-dependent clotting factor synthesis", "Potentiating antithrombin III", "Inhibiting factor Xa directly", "Inhibiting platelet aggregation"], "answer": "Inhibiting vitamin K-dependent clotting factor synthesis", "explanation": "Warfarin inhibits vitamin K epoxide reductase, reducing synthesis of factors II, VII, IX, X."},
+            {"stem": "Heparin is reversed by:", "options": ["Protamine sulfate", "Vitamin K", "Fresh frozen plasma", "Naloxone"], "answer": "Protamine sulfate", "explanation": "Protamine binds heparin forming an inactive complex, reversing its anticoagulant effect."},
+            {"stem": "Atorvastatin primarily lowers:", "options": ["LDL cholesterol", "HDL cholesterol", "Triglycerides", "VLDL cholesterol"], "answer": "LDL cholesterol", "explanation": "Statins inhibit HMG-CoA reductase, reducing hepatic cholesterol synthesis and upregulating LDL receptors."},
+            {"stem": "Verapamil is contraindicated in patients with:", "options": ["Heart failure and AV block", "Asthma", "Diabetes", "Peptic ulcer disease"], "answer": "Heart failure and AV block", "explanation": "Verapamil has negative inotropic and chronotropic effects, worsening heart failure and AV block."},
+            {"stem": "The mechanism of action of nitroglycerin in angina is:", "options": ["Venodilation reducing preload and coronary vasodilation", "Positive inotropy", "Beta-receptor blockade", "Calcium channel blockade"], "answer": "Venodilation reducing preload and coronary vasodilation", "explanation": "Nitrates are converted to NO which dilates veins (preload) and coronary arteries."},
+            {"stem": "Which antihypertensive class is preferred in diabetic patients with proteinuria?", "options": ["ACE inhibitors or ARBs", "Beta-blockers", "Thiazide diuretics", "Calcium channel blockers"], "answer": "ACE inhibitors or ARBs", "explanation": "ACE-I/ARBs reduce intraglomerular pressure and proteinuria, slowing diabetic nephropathy progression."},
+            {"stem": "Flecainide is classified as which class of antiarrhythmic?", "options": ["Class Ic", "Class Ia", "Class Ib", "Class III"], "answer": "Class Ic", "explanation": "Flecainide is a Class Ic antiarrhythmic that potently blocks sodium channels with slow dissociation kinetics."},
+            {"stem": "The most serious adverse effect of amiodarone is:", "options": ["Pulmonary fibrosis", "Nephrotoxicity", "Hepatotoxicity", "Cardiotoxicity"], "answer": "Pulmonary fibrosis", "explanation": "Amiodarone accumulates in lung tissue, causing interstitial pneumonitis and pulmonary fibrosis."},
+            {"stem": "Torsades de pointes is associated with:", "options": ["QT prolongation", "PR prolongation", "QRS widening", "ST elevation"], "answer": "QT prolongation", "explanation": "QT prolongation from drugs (e.g. class III antiarrhythmics) predisposes to torsades de pointes."},
+            {"stem": "Metformin is preferred over sulfonylureas in type 2 diabetes because:", "options": ["It does not cause weight gain or hypoglycaemia", "It has faster onset", "It produces more insulin", "It is safer in renal impairment"], "answer": "It does not cause weight gain or hypoglycaemia", "explanation": "Metformin improves insulin sensitivity without stimulating insulin release, avoiding weight gain and hypoglycaemia."},
+            {"stem": "Which beta-blocker is cardioselective?", "options": ["Metoprolol", "Propranolol", "Timolol", "Sotalol"], "answer": "Metoprolol", "explanation": "Metoprolol, atenolol, and bisoprolol are cardioselective (beta1), safer in asthma/COPD."},
+            {"stem": "The anticoagulant that does NOT require routine monitoring is:", "options": ["Rivaroxaban", "Warfarin", "Heparin", "Enoxaparin"], "answer": "Rivaroxaban", "explanation": "DOACs (rivaroxaban, apixaban) have predictable PK and do not require routine coagulation monitoring."},
+            {"stem": "Amlodipine belongs to which drug class?", "options": ["Dihydropyridine calcium channel blocker", "Non-dihydropyridine CCB", "Thiazide diuretic", "Beta-blocker"], "answer": "Dihydropyridine calcium channel blocker", "explanation": "Amlodipine is a dihydropyridine CCB that preferentially vasodilates, with minimal cardiac effects."},
+            {"stem": "Hydrochlorothiazide acts primarily on:", "options": ["Distal convoluted tubule", "Proximal tubule", "Loop of Henle", "Collecting duct"], "answer": "Distal convoluted tubule", "explanation": "Thiazides inhibit Na-Cl cotransporter in the distal convoluted tubule."},
+            {"stem": "Adverse effects of beta-blockers include all EXCEPT:", "options": ["Tachycardia", "Fatigue", "Cold extremities", "Bronchospasm"], "answer": "Tachycardia", "explanation": "Beta-blockers cause bradycardia, not tachycardia. They reduce heart rate by blocking beta1 receptors."},
+            {"stem": "Rhabdomyolysis is a serious adverse effect associated with:", "options": ["Statins especially with fibrates", "ACE inhibitors", "Calcium channel blockers", "Thiazide diuretics"], "answer": "Statins especially with fibrates", "explanation": "Statin-fibrate combinations increase risk of myopathy and rhabdomyolysis."},
+            {"stem": "SGLT2 inhibitors lower blood glucose by:", "options": ["Increasing urinary glucose excretion", "Increasing insulin secretion", "Decreasing insulin resistance", "Inhibiting carbohydrate absorption"], "answer": "Increasing urinary glucose excretion", "explanation": "SGLT2 inhibitors (empagliflozin, dapagliflozin) block renal glucose reabsorption, causing glycosuria."},
+            {"stem": "The antianginal effect of beta-blockers results from:", "options": ["Decreased myocardial oxygen demand", "Coronary vasodilation", "Increased contractility", "Decreased preload"], "answer": "Decreased myocardial oxygen demand", "explanation": "Beta-blockers reduce HR and contractility, decreasing myocardial O2 demand and improving angina."},
+            {"stem": "Which diuretic is most effective in patients with GFR <30 mL/min?", "options": ["Furosemide (loop diuretic)", "Hydrochlorothiazide", "Spironolactone", "Amiloride"], "answer": "Furosemide (loop diuretic)", "explanation": "Loop diuretics retain efficacy in renal impairment, while thiazides lose effectiveness at GFR <30 mL/min."},
+            {"stem": "Clopidogrel is an:", "options": ["P2Y12 platelet inhibitor", "COX-1 inhibitor", "GP IIb/IIIa inhibitor", "Thrombin inhibitor"], "answer": "P2Y12 platelet inhibitor", "explanation": "Clopidogrel irreversibly blocks the P2Y12 receptor, inhibiting platelet aggregation."},
+            {"stem": "Digoxin has a narrow therapeutic index. Its target plasma level is:", "options": ["0.5-2 ng/mL", "5-10 ng/mL", "10-20 ng/mL", "20-50 ng/mL"], "answer": "0.5-2 ng/mL", "explanation": "The therapeutic range for digoxin is 0.5-2 ng/mL; toxicity occurs above 2 ng/mL."},
+            {"stem": "Fibrates act primarily by:", "options": ["Activating PPAR-alpha", "Inhibiting HMG-CoA reductase", "Blocking cholesterol absorption", "Increasing LDL receptor expression"], "answer": "Activating PPAR-alpha", "explanation": "Fibrates (bezafibrate, fenofibrate) activate PPAR-alpha, increasing HDL and reducing triglycerides."},
+            {"stem": "The combination of ACE inhibitor and ARB is generally avoided because:", "options": ["Increased risk of hyperkalaemia and renal impairment", "They are antagonistic", "Increased risk of cough", "Increased risk of angioedema"], "answer": "Increased risk of hyperkalaemia and renal impairment", "explanation": "Dual RAAS blockade increases adverse effects without additional cardiovascular benefit."}
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {"stem": "Explain the mechanisms of action of ACE inhibitors and ARBs. How do they differ?", "modelAnswer": "ACE-I (enalapril, lisinopril): inhibit ACE \u2192 \u2193 Ang II \u2192 vasodilation, \u2193 aldosterone. Also \u2191 bradykinin \u2192 cough. ARBs (losartan, valsartan): block AT1 receptor \u2192 same haemodynamic effects without cough. Both: \u2193 BP, \u2193 proteinuria, \u2193 HF progression."},
+            {"stem": "Compare loop diuretics, thiazide diuretics, and potassium-sparing diuretics.", "modelAnswer": "LOOP (furosemide): inhibit Na-K-2Cl in ascending limb; potent; short-acting. THIAZIDE (HCTZ): inhibit Na-Cl in DCT; milder, longer. K-SPARING (spironolactone): aldosterone antagonist; weak diuretic; risk of hyperkalaemia."},
+            {"stem": "Describe the Vaughan Williams classification of antiarrhythmic drugs with examples.", "modelAnswer": "Class I: Na channel blockers (Ia: quinidine, Ib: lidocaine, Ic: flecainide). Class II: beta-blockers (propranolol). Class III: K channel blockers (amiodarone). Class IV: Ca channel blockers (verapamil, diltiazem)."},
+            {"stem": "Explain the mechanism of action of digoxin and the signs of digoxin toxicity.", "modelAnswer": "Mechanism: inhibits Na/K-ATPase \u2192 \u2191 intracellular Na \u2192 \u2191 Ca via Na/Ca exchanger \u2192 \u2191 contractility (positive inotrope). Also vagomimetic. Toxicity: arrhythmias (PVCs, AV block), nausea, visual disturbances (yellow-green halos). Risk: hypokalaemia, renal impairment."},
+            {"stem": "Discuss the pharmacological management of stable angina.", "modelAnswer": "1. Nitrates (GTN, ISMN): venodilator \u2192 \u2193 preload; coronary vasodilation. 2. Beta-blockers: \u2193 HR, \u2193 contractility \u2192 \u2193 O2 demand. 3. CCBs (amlodipine): vasodilation. 4. Aspirin + statin for secondary prevention. Revascularisation if refractory."},
+            {"stem": "Compare heparin and warfarin in terms of mechanism, monitoring, and reversal.", "modelAnswer": "HEPARIN: potentiates antithrombin III; monitor aPTT; reverse with protamine. WARFARIN: inhibits vitamin K-dependent clotting factors (II, VII, IX, X); monitor INR; reverse with vitamin K / FFP. Heparin used for acute/rapid anticoagulation; warfarin for long-term."},
+            {"stem": "Describe the clinical uses and adverse effects of statins.", "modelAnswer": "Statins (atorvastatin, simvastatin): inhibit HMG-CoA reductase \u2192 \u2193 LDL-C. Uses: primary/secondary CVD prevention. Adverse: myopathy, rhabdomyolysis (\u2191 risk with fibrates, CYP3A4 inhibitors), hepatotoxicity, new-onset diabetes. Monitor CK and LFTs."},
+            {"stem": "Explain the stepped-care approach to hypertension management according to current guidelines.", "modelAnswer": "Step 1: ACE-I/ARB or CCB (monotherapy). Step 2: ACE-I/ARB + CCB (or thiazide). Step 3: triple therapy (ACE-I + CCB + thiazide). Step 4: add spironolactone or other agents. Aim: <140/90 (<130/80 in diabetes/CKD). Lifestyle modification throughout."}
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {"stem": "A 65-year-old male with a history of hypertension, type 2 diabetes, and chronic kidney disease (stage 3) presents with BP 165/95 mmHg on amlodipine 10 mg daily. His medications include metformin, atorvastatin, and aspirin. Discuss the pharmacological management of his hypertension, including drug selection rationale, target BP, and monitoring.", "modelAnswer": "MANAGEMENT PLAN:\n\nCurrent: amlodipine 10 mg (CCB). BP 165/95 not at target.\n\nStep 2: Add ACE-I or ARB (e.g. ramipril 2.5 mg or losartan 50 mg). Rationale: ACE-I/ARBs reduce proteinuria, slow CKD progression, have synergistic effect with CCB.\n\nTARGET BP: <130/80 mmHg (diabetes + CKD).\n\nMONITORING:\n- Renal function (creatinine, eGFR) 1-2 weeks after ACE-I initiation\n- Serum potassium (risk of hyperkalaemia with ACE-I in CKD)\n- Urine ACR for proteinuria\n- Blood glucose and HbA1c\n\nIF NOT AT TARGET: Add thiazide-like diuretic (indapamide) or beta-blocker (cardioselective, e.g. bisoprolol).\n\nCAUTIONS: Avoid NSAIDs (worsen renal function, raise BP). Avoid K-sparing diuretics with ACE-I in CKD."},
+            {"stem": "A 55-year-old woman presents with acute onset of palpitations and lightheadedness. ECG shows atrial fibrillation with rapid ventricular response (HR 145 bpm). She is haemodynamically stable. Discuss the acute and long-term pharmacological management of atrial fibrillation.", "modelAnswer": "ACUTE MANAGEMENT (haemodynamically stable):\n\nRATE CONTROL (preferred in most patients):\n1. Beta-blocker (metoprolol 5 mg IV) or rate-slowing CCB (diltiazem IV)\n2. Digoxin if HR not controlled (especially in HF)\n3. Target HR <110 bpm (lenient) or <80 bpm (strict)\n\nRHYTHM CONTROL (if symptomatic despite rate control):\n1. Electrical cardioversion (if haemodynamically unstable)\n2. Pharmacological: amiodarone, flecainide (no structural heart disease)\n\nANTICOAGULATION (stroke prevention):\nAssess CHA2DS2-VASc score. If \u22652: anticoagulate with DOAC (apixaban, rivaroxaban) or warfarin (INR 2-3). Exclude contraindications (active bleeding, severe renal impairment).\n\nLONG-TERM:\n- Continue rate/rhythm control as needed\n- Anticoagulation based on CHA2DS2-VASc\n- Monitor for bleeding (HAS-BLED score)\n- Manage underlying conditions: HTN, HF, diabetes, sleep apnoea"}
+          ]
+        }
+      ]
+    }
+  },
+  "pharm-resp-renal-git": {
+    "1": {
+      "title": "Respiratory, Renal & GIT Pharmacology",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {"stem": "Salbutamol is a selective agonist at which receptor?", "options": ["Beta2-adrenoceptor", "Beta1-adrenoceptor", "Muscarinic M3 receptor", "Histamine H1 receptor"], "answer": "Beta2-adrenoceptor", "explanation": "Salbutamol selectively stimulates beta2 receptors, causing bronchodilation with minimal cardiac effects."},
+            {"stem": "Ipratropium bromide acts as:", "options": ["A muscarinic receptor antagonist", "A beta2 agonist", "A leukotriene receptor antagonist", "A mast cell stabiliser"], "answer": "A muscarinic receptor antagonist", "explanation": "Ipratropium blocks muscarinic receptors in the airways, reducing cholinergic bronchoconstriction."},
+            {"stem": "Theophylline has a narrow therapeutic index. Its target plasma level is:", "options": ["10-20 mcg/mL", "5-10 mcg/mL", "20-30 mcg/mL", "1-5 mcg/mL"], "answer": "10-20 mcg/mL", "explanation": "Theophylline therapeutic range is 55-110 mmol/L (10-20 mcg/mL). Toxicity occurs above 20 mcg/mL."},
+            {"stem": "Which of the following is a leukotriene receptor antagonist used in asthma?", "options": ["Montelukast", "Salmeterol", "Budesonide", "Sodium cromoglycate"], "answer": "Montelukast", "explanation": "Montelukast blocks cysteinyl leukotriene receptors, reducing bronchoconstriction and inflammation."},
+            {"stem": "The mechanism of action of omeprazole is:", "options": ["Irreversible inhibition of H+/K+-ATPase", "Blockade of H2 receptors", "Neutralisation of gastric acid", "Inhibition of acetylcholine release"], "answer": "Irreversible inhibition of H+/K+-ATPase", "explanation": "PPIs covalently bind to the proton pump in gastric parietal cells, providing potent and long-lasting acid suppression."},
+            {"stem": "Ondansetron exerts its antiemetic effect by blocking:", "options": ["5-HT3 receptors", "Dopamine D2 receptors", "Histamine H1 receptors", "Muscarinic M1 receptors"], "answer": "5-HT3 receptors", "explanation": "Ondansetron is a selective 5-HT3 antagonist blocking serotonin at the CTZ and vagal nerve terminals."},
+            {"stem": "Metoclopramide has which combination of pharmacological actions?", "options": ["D2 antagonist + 5-HT4 agonist", "5-HT3 antagonist + D2 agonist", "H1 antagonist + D2 agonist", "Muscarinic antagonist + H1 antagonist"], "answer": "D2 antagonist + 5-HT4 agonist", "explanation": "Metoclopramide blocks D2 receptors (antiemetic) and stimulates 5-HT4 receptors (prokinetic)."},
+            {"stem": "The first-line treatment for H. pylori eradication is:", "options": ["Triple therapy: PPI + amoxicillin + clarithromycin", "PPI monotherapy", "Amoxicillin + metronidazole", "Bismuth subsalicylate"], "answer": "Triple therapy: PPI + amoxicillin + clarithromycin", "explanation": "Standard triple therapy for 7-14 days achieves >85% eradication. Alternative if macrolide resistance: bismuth quadruple therapy."},
+            {"stem": "Which of the following is an osmotic laxative?", "options": ["Lactulose", "Bisacodyl", "Senna", "Docusate sodium"], "answer": "Lactulose", "explanation": "Lactulose is an osmotic laxative that draws water into the colon, softening stools and stimulating bowel movements."},
+            {"stem": "Loperamide acts by:", "options": ["Stimulating mu-opioid receptors in the GI tract", "Blocking 5-HT3 receptors", "Inhibiting prostaglandin synthesis", "Blocking muscarinic receptors"], "answer": "Stimulating mu-opioid receptors in the GI tract", "explanation": "Loperamide is a peripheral mu-opioid agonist that slows GI motility without CNS effects."},
+            {"stem": "Corticosteroids in asthma work primarily through:", "options": ["Anti-inflammatory effects: reduced eosinophils, cytokines, and airway hyperresponsiveness", "Bronchodilation", "Mast cell stabilisation", "Leukotriene inhibition"], "answer": "Anti-inflammatory effects: reduced eosinophils, cytokines, and airway hyperresponsiveness", "explanation": "ICS suppress airway inflammation by reducing inflammatory cell infiltration, cytokine production, and vascular permeability."},
+            {"stem": "Bisphosphonate therapy for osteoporosis requires:", "options": ["Taking on an empty stomach with water and staying upright", "Taking with calcium supplements", "Taking with food to reduce GI upset", "Taking at bedtime"], "answer": "Taking on an empty stomach with water and staying upright", "explanation": "Bisphosphonates have poor oral absorption; must be taken fasting with water and remain upright to prevent oesophagitis."},
+            {"stem": "Sodium cromoglycate prevents asthma attacks by:", "options": ["Stabilising mast cells, preventing degranulation", "Blocking leukotriene receptors", "Inhibiting phosphodiesterase", "Blocking muscarinic receptors"], "answer": "Stabilising mast cells, preventing degranulation", "explanation": "Cromoglycate stabilises mast cell membranes, preventing release of histamine and other mediators."},
+            {"stem": "Which antidiarrhoeal agent is a 5-HT3 antagonist?", "options": ["Ondansetron", "Loperamide", "Bismuth subsalicylate", "Diphenoxylate"], "answer": "Ondansetron", "explanation": "Ondansetron is a 5-HT3 antagonist; it is primarily used as an antiemetic but also reduces GI motility."},
+            {"stem": "Misoprostol is a synthetic analogue of:", "options": ["Prostaglandin E1", "Prostaglandin F2", "Thromboxane A2", "Prostacyclin"], "answer": "Prostaglandin E1", "explanation": "Misoprostol is a PGE1 analogue used for NSAID-induced ulcer prevention and medical abortion."},
+            {"stem": "Sucralfate protects the gastric mucosa by:", "options": ["Forming a protective barrier over ulcer sites", "Neutralising gastric acid", "Inhibiting H. pylori growth", "Increasing mucus secretion"], "answer": "Forming a protective barrier over ulcer sites", "explanation": "Sucralfate polymerises at acidic pH to form a gel that adheres to ulcerated mucosa."},
+            {"stem": "Which of the following drugs may cause drowsiness due to H1 antihistamine activity?", "options": ["Diphenhydramine", "Omeprazole", "Ondansetron", "Metoclopramide"], "answer": "Diphenhydramine", "explanation": "Diphenhydramine is a first-generation H1 antihistamine that crosses the BBB and causes sedation."},
+            {"stem": "The primary adverse effect of long-term PPI use includes:", "options": ["Increased risk of Clostridium difficile infection", "Nephrotoxicity", "Hepatotoxicity", "Cardiotoxicity"], "answer": "Increased risk of Clostridium difficile infection", "explanation": "Long-term acid suppression increases risk of enteric infections including C. difficile, as well as osteoporosis and B12 deficiency."},
+            {"stem": "Bisacodyl is classified as a:", "options": ["Stimulant laxative", "Osmotic laxative", "Bulk-forming laxative", "Stool softener"], "answer": "Stimulant laxative", "explanation": "Bisacodyl stimulates colonic peristalsis by irritating the colonic mucosa."},
+            {"stem": "Ranitidine is a:", "options": ["H2 receptor antagonist", "H1 receptor antagonist", "Proton pump inhibitor", "Anticholinergic"], "answer": "H2 receptor antagonist", "explanation": "Ranitidine competitively blocks H2 receptors on gastric parietal cells, reducing acid secretion."},
+            {"stem": "Which bronchodilator is preferred for acute asthma exacerbations?", "options": ["Inhaled short-acting beta2 agonist (salbutamol)", "Inhaled long-acting beta2 agonist (salmeterol)", "Oral theophylline", "Ipratropium bromide"], "answer": "Inhaled short-acting beta2 agonist (salbutamol)", "explanation": "SABA is first-line for acute asthma exacerbations due to rapid onset (within 5 minutes) and potent bronchodilation."},
+            {"stem": "The prokinetic effect of metoclopramide is due to:", "options": ["5-HT4 receptor agonism", "Dopamine D2 antagonism", "5-HT3 antagonism", "Motilin receptor agonism"], "answer": "5-HT4 receptor agonism", "explanation": "Metoclopramide stimulates 5-HT4 receptors in the GI tract, enhancing ACh release and increasing GI motility."},
+            {"stem": "Psyllium is classified as a:", "options": ["Bulk-forming laxative", "Stimulant laxative", "Osmotic laxative", "Stool softener"], "answer": "Bulk-forming laxative", "explanation": "Psyllium is a soluble fibre that absorbs water and increases stool bulk, promoting natural bowel movements."},
+            {"stem": "Pantoprazole is a:", "options": ["Proton pump inhibitor", "H2 receptor antagonist", "Antacid", "Prostaglandin analogue"], "answer": "Proton pump inhibitor", "explanation": "Pantoprazole irreversibly inhibits gastric H+/K+-ATPase, providing superior acid suppression compared to H2RAs."},
+            {"stem": "Which of the following is a mast cell stabiliser used prophylactically in asthma?", "options": ["Sodium cromoglycate", "Salbutamol", "Budesonide", "Montelukast"], "answer": "Sodium cromoglycate", "explanation": "Cromoglycate prevents mast cell degranulation and is used as a prophylactic, not for acute attacks."},
+            {"stem": "Tiotropium is preferred over ipratropium in COPD because:", "options": ["Longer duration of action (24h) allowing once-daily dosing", "Greater bronchodilator efficacy", "Fewer side effects", "Oral bioavailability"], "answer": "Longer duration of action (24h) allowing once-daily dosing", "explanation": "Tiotropium is a long-acting muscarinic antagonist (LAMA) with once-daily dosing, improving adherence."},
+            {"stem": "The antiemetic mechanism of prochlorperazine is:", "options": ["Dopamine D2 receptor blockade in CTZ", "5-HT3 receptor blockade", "H1 receptor blockade", "Muscarinic M1 blockade"], "answer": "Dopamine D2 receptor blockade in CTZ", "explanation": "Prochlorperazine is a phenothiazine antipsychotic that blocks D2 receptors in the chemoreceptor trigger zone."},
+            {"stem": "Docusate sodium acts as a:", "options": ["Stool softener (surfactant laxative)", "Stimulant laxative", "Osmotic laxative", "Bulk-forming laxative"], "answer": "Stool softener (surfactant laxative)", "explanation": "Docusate lowers surface tension of stool, allowing water to penetrate and soften the faecal mass."},
+            {"stem": "Which drug is used for hyperkalaemia by shifting potassium intracellularly?", "options": ["Salbutamol (nebulised)", "Calcium gluconate", "Sodium polystyrene sulfonate", "Furosemide"], "answer": "Salbutamol (nebulised)", "explanation": "Beta2 agonists stimulate Na/K-ATPase, shifting K intracellularly. Used with insulin + glucose for acute hyperkalaemia."},
+            {"stem": "Formoterol is classified as a:", "options": ["Long-acting beta2 agonist (LABA)", "Short-acting beta2 agonist (SABA)", "Long-acting muscarinic antagonist (LAMA)", "Inhaled corticosteroid (ICS)"], "answer": "Long-acting beta2 agonist (LABA)", "explanation": "Formoterol is a LABA with rapid onset (within 5 min) and 12h duration."}
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {"stem": "Compare the mechanisms of action of SABA, LABA, and LAMA bronchodilators.", "modelAnswer": "SABA (salbutamol): short-acting beta2-agonist; relief of acute symptoms. LABA (salmeterol): long-acting beta2-agonist; maintenance. LAMA (tiotropium): long-acting muscarinic antagonist; blocks cholinergic bronchoconstriction; first-line in COPD."},
+            {"stem": "Explain the role of inhaled corticosteroids in asthma management.", "modelAnswer": "ICS (budesonide, fluticasone) reduce airway inflammation, decrease hyperresponsiveness, prevent exacerbations. Used as step 2+ controller therapy. Side effects: oral candidiasis, dysphonia (reduce with spacer + mouth rinse). Not for acute attacks."},
+            {"stem": "Describe the mechanism of action of proton pump inhibitors and their clinical uses.", "modelAnswer": "PPIs (omeprazole, esomeprazole, lansoprazole): irreversibly inhibit H+/K+-ATPase in gastric parietal cells \u2192 profound acid suppression. Uses: GERD, peptic ulcer, H. pylori eradication (with antibiotics), NSAID prophylaxis, Zollinger-Ellison."},
+            {"stem": "Compare H2 receptor antagonists and PPIs for the treatment of peptic ulcer disease.", "modelAnswer": "H2RAs (ranitidine, famotidine): block histamine H2 receptors \u2192 \u2193 acid secretion. Faster onset but less effective than PPIs. Tachyphylaxis develops. PPIs: more potent, longer duration. PPIs preferred for severe GERD, erosive oesophagitis, and PUD."},
+            {"stem": "Discuss the pharmacological management of chemotherapy-induced nausea and vomiting.", "modelAnswer": "Acute: 5-HT3 antagonist (ondansetron) + dexamethasone. Delayed: aprepitant (NK1 antagonist) + dexamethasone. Breakthrough: metoclopramide, prochlorperazine. High emetic risk: quadruple therapy (5-HT3 + DEX + aprepitant + olanzapine)."},
+            {"stem": "Explain the mechanism of action and clinical uses of metoclopramide.", "modelAnswer": "Metoclopramide: dopamine D2 antagonist (CTZ) + 5-HT4 agonist (GI) \u2192 antiemetic + prokinetic. Uses: gastroparesis, chemotherapy-induced nausea, GERD. Side effects: extrapyramidal symptoms, tardive dyskinesia (long-term), hyperprolactinaemia."},
+            {"stem": "Describe the different classes of laxatives with examples.", "modelAnswer": "1. Bulk-forming (psyllium, methylcellulose): increase stool mass. 2. Osmotic (lactulose, PEG): draw water into colon. 3. Stimulant (bisacodyl, senna): stimulate peristalsis. 4. Stool softeners (docusate). Chronic constipation: bulk-forming or osmotic preferred."},
+            {"stem": "Discuss the principles of diuretic therapy in chronic kidney disease.", "modelAnswer": "In CKD, loop diuretics preferred (thiazides lose efficacy at GFR <30). Higher doses often needed due to reduced tubular secretion. Monitor: electrolytes (K, Na), volume status, BP. Combine with ACE-I/ARB for renoprotection. Avoid K-sparing if hyperkalaemia."}
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {"stem": "A 45-year-old woman with a 10-year history of asthma presents with progressively worsening symptoms despite using salbutamol as needed. She reports nocturnal awakenings 3 times per week and uses her inhaler almost daily. Outline a stepwise pharmacological management plan according to GINA guidelines, including drug classes, doses, and monitoring parameters.", "modelAnswer": "GINA STEPWISE MANAGEMENT:\n\nCurrent: Step 1 (SABA only) \u2014 inadequate control (nocturnal symptoms, daily use).\n\nSTEP 2 (MILD PERSISTENT): Low-dose ICS + as-needed SABA.\ne.g. Budesonide 200 mcg daily + salbutamol PRN.\n\nSTEP 3 (MODERATE): Low-dose ICS-LABA combination.\ne.g. Budesonide/formoterol 160/4.5 mcg 1-2 puffs daily + as needed.\n\nSTEP 4 (SEVERE): Medium-dose ICS-LABA.\ne.g. Fluticasone/salmeterol 250/50 mcg 1-2 puffs BD.\n\nSTEP 5 (REFRACTORY): High-dose ICS-LABA + add-on.\ne.g. Tiotropium (LAMA), montelukast (LTRA), oral corticosteroid (prednisolone), biologic (omalizumab, mepolizumab) if eosinophilic.\n\nMONITORING: Symptom diary, PEF, spirometry, ACT score, inhaler technique, exacerbation history, side effects."},
+            {"stem": "A 60-year-old man presents with dyspepsia and heartburn for 4 months. Upper GI endoscopy reveals erosive oesophagitis (LA Grade C). Discuss the pharmacological management including drug selection, duration, and long-term considerations.", "modelAnswer": "DIAGNOSIS: Erosive oesophagitis LA Grade C (severe).\n\nINITIAL MANAGEMENT:\n1. PPI therapy first-line: e.g. esomeprazole 40 mg daily or pantoprazole 40 mg daily for 8 weeks.\n2. Healing rates >90% with PPIs at 8 weeks.\n\nLONG-TERM MANAGEMENT:\n- Maintenance PPI (lowest effective dose) if relapse risk.\n- Step-down: reduce to lowest dose controlling symptoms.\n- Consider H. pylori test and treat if positive.\n\nLIFESTYLE MODIFICATION:\n- Weight loss, elevate head of bed, avoid large meals before lying down.\n- Avoid triggers (fatty/spicy foods, alcohol, caffeine, smoking).\n\nSURGERY: Nissen fundoplication if PPI refractory or patient preference.\n\nMONITORING: Symptom control, endoscopy if alarm features (dysphagia, weight loss, anaemia), bone density if long-term high-dose PPI.\n\nCOMPLICATIONS: Barrett oesophagus (surveillance every 3-5 years), stricture, aspiration pneumonia risk."}
+          ]
+        }
+      ]
+    }
+  },
+  "pharm-chemo": {
+    "1": {
+      "title": "Chemotherapeutic Agents",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {"stem": "Penicillins exert their antibacterial effect by:", "options": ["Inhibiting bacterial cell wall synthesis", "Inhibiting protein synthesis", "Inhibiting DNA gyrase", "Disrupting cell membrane"], "answer": "Inhibiting bacterial cell wall synthesis", "explanation": "Beta-lactams inhibit transpeptidase enzymes involved in peptidoglycan cross-linking."},
+            {"stem": "All of the following are macrolide antibiotics EXCEPT:", "options": ["Ampicillin", "Erythromycin", "Azithromycin", "Clarithromycin"], "answer": "Ampicillin", "explanation": "Ampicillin is a beta-lactam (aminopenicillin), not a macrolide."},
+            {"stem": "Aminoglycosides are effective mainly against:", "options": ["Aerobic Gram-negative bacilli", "Anaerobic bacteria", "Gram-positive cocci", "Atypical bacteria"], "answer": "Aerobic Gram-negative bacilli", "explanation": "Aminoglycosides require oxygen for uptake, making them effective against aerobic Gram-negative organisms."},
+            {"stem": "The dose-limiting toxicity of gentamicin is:", "options": ["Nephrotoxicity and ototoxicity", "Hepatotoxicity", "Cardiotoxicity", "Bone marrow suppression"], "answer": "Nephrotoxicity and ototoxicity", "explanation": "Aminoglycosides accumulate in renal proximal tubules and cochlear/vestibular hair cells causing nephrotoxicity and ototoxicity."},
+            {"stem": "Vancomycin is active against:", "options": ["Methicillin-resistant Staphylococcus aureus (MRSA)", "Pseudomonas aeruginosa", "Escherichia coli", "Bacteroides fragilis"], "answer": "Methicillin-resistant Staphylococcus aureus (MRSA)", "explanation": "Vancomycin is a glycopeptide antibiotic reserved for Gram-positive infections including MRSA."},
+            {"stem": "Rifampicin acts by inhibiting:", "options": ["Bacterial RNA polymerase", "DNA gyrase", "Cell wall synthesis", "Protein synthesis"], "answer": "Bacterial RNA polymerase", "explanation": "Rifampicin binds to DNA-dependent RNA polymerase, blocking RNA transcription."},
+            {"stem": "Fluconazole is an antifungal that acts by:", "options": ["Inhibiting ergosterol synthesis", "Binding ergosterol in the cell membrane", "Inhibiting beta-glucan synthase", "Inhibiting DNA synthesis"], "answer": "Inhibiting ergosterol synthesis", "explanation": "Azoles inhibit 14-alpha-demethylase, blocking conversion of lanosterol to ergosterol."},
+            {"stem": "The drug of choice for neurosyphilis is:", "options": ["Penicillin G", "Doxycycline", "Ceftriaxone", "Azithromycin"], "answer": "Penicillin G", "explanation": "IV penicillin G is the DOC for neurosyphilis. Alternatives include ceftriaxone or doxycycline."},
+            {"stem": "First-line treatment for uncomplicated malaria in Kenya is:", "options": ["Artemether-lumefantrine", "Chloroquine", "Sulfadoxine-pyrimethamine", "Quinine"], "answer": "Artemether-lumefantrine", "explanation": "ACT (artemether-lumefantrine) is first-line for uncomplicated malaria in Kenya due to widespread chloroquine resistance."},
+            {"stem": "Metronidazole is effective against:", "options": ["Anaerobic bacteria and protozoa", "Aerobic Gram-negative bacteria", "Fungi", "Viruses"], "answer": "Anaerobic bacteria and protozoa", "explanation": "Metronidazole is activated in anaerobic conditions, damaging DNA of anaerobic organisms and protozoa."},
+            {"stem": "The drug of choice for methicillin-sensitive S. aureus (MSSA) is:", "options": ["Cloxacillin", "Vancomycin", "Clindamycin", "Ceftriaxone"], "answer": "Cloxacillin", "explanation": "Cloxacillin (beta-lactamase-resistant penicillin) is DOC for MSSA. Vancomycin reserved for MRSA."},
+            {"stem": "Which antibiotic requires monitoring of peak and trough levels?", "options": ["Gentamicin", "Amoxicillin", "Ceftriaxone", "Azithromycin"], "answer": "Gentamicin", "explanation": "Aminoglycosides require TDM (peak and trough) to ensure efficacy and avoid toxicity."},
+            {"stem": "Clarithromycin + omeprazole + amoxicillin is a regimen for:", "options": ["H. pylori eradication", "Tuberculosis", "Malaria", "Fungal infection"], "answer": "H. pylori eradication", "explanation": "Triple therapy with PPI, clarithromycin, and amoxicillin/metronidazole is standard for H. pylori."},
+            {"stem": "The following is a prodrug that requires activation by viral thymidine kinase:", "options": ["Acyclovir", "Oseltamivir", "Zidovudine", "Ribavirin"], "answer": "Acyclovir", "explanation": "Acyclovir is phosphorylated by viral thymidine kinase (first step) then cellular kinases to acyclovir triphosphate."},
+            {"stem": "Which of the following cephalosporins has anti-Pseudomonal activity?", "options": ["Ceftazidime", "Cephalexin", "Cefuroxime", "Cefotaxime"], "answer": "Ceftazidime", "explanation": "Ceftazidime (third-gen) has activity against Pseudomonas aeruginosa."},
+            {"stem": "Resistance to methicillin in S. aureus is due to:", "options": ["Altered penicillin-binding protein (PBP2a)", "Beta-lactamase production", "Efflux pump", "Porin loss"], "answer": "Altered penicillin-binding protein (PBP2a)", "explanation": "MRSA produces PBP2a encoded by mecA gene, with low affinity for beta-lactams."},
+            {"stem": "Chloramphenicol use is limited due to:", "options": ["Dose-dependent bone marrow suppression", "Nephrotoxicity", "Ototoxicity", "Hepatotoxicity"], "answer": "Dose-dependent bone marrow suppression", "explanation": "Chloramphenicol inhibits mitochondrial protein synthesis causing reversible bone marrow suppression and rare aplastic anaemia."},
+            {"stem": "Ciprofloxacin acts by inhibiting:", "options": ["DNA gyrase (topoisomerase II)", "RNA polymerase", "Cell wall synthesis", "Protein synthesis"], "answer": "DNA gyrase (topoisomerase II)", "explanation": "Fluoroquinolones inhibit DNA gyrase and topoisomerase IV, preventing bacterial DNA replication."},
+            {"stem": "Which antitubercular drug causes optic neuritis?", "options": ["Ethambutol", "Rifampicin", "Isoniazid", "Pyrazinamide"], "answer": "Ethambutol", "explanation": "Ethambutol causes dose-related optic neuritis (reduced visual acuity, colour blindness). Monitor visual acuity monthly."},
+            {"stem": "Pyridoxine is co-administered with isoniazid to prevent:", "options": ["Peripheral neuropathy", "Hepatotoxicity", "Optic neuritis", "Hypersensitivity reactions"], "answer": "Peripheral neuropathy", "explanation": "INH interferes with pyridoxine metabolism, causing peripheral neuropathy; pyridoxine 25 mg daily prevents this."},
+            {"stem": "Amphotericin B causes dose-limiting:", "options": ["Nephrotoxicity", "Ototoxicity", "Hepatotoxicity", "Cardiotoxicity"], "answer": "Nephrotoxicity", "explanation": "Amphotericin B binds to renal tubular cell membranes causing nephrotoxicity; monitor renal function and electrolytes."},
+            {"stem": "Which of the following is a first-line anti-TB drug?", "options": ["Rifampicin", "Ciprofloxacin", "Streptomycin", "Ethionamide"], "answer": "Rifampicin", "explanation": "First-line anti-TB drugs: isoniazid, rifampicin, pyrazinamide, ethambutol (RIPE therapy)."},
+            {"stem": "Oseltamivir is used for:", "options": ["Influenza A and B", "Herpes simplex", "HIV", "Hepatitis C"], "answer": "Influenza A and B", "explanation": "Oseltamivir is a neuraminidase inhibitor active against influenza A and B. Effective within 48h of symptom onset."},
+            {"stem": "Clindamycin is associated with risk of:", "options": ["Clostridium difficile colitis", "Nephrotoxicity", "Ototoxicity", "Photosensitivity"], "answer": "Clostridium difficile colitis", "explanation": "Clindamycin disrupts colonic flora, predisposing to C. difficile overgrowth and pseudomembranous colitis."},
+            {"stem": "Doxycycline differs from other tetracyclines in that it:", "options": ["Can be taken with food and has longer half-life", "Is contraindicated in renal failure", "Causes more photosensitivity", "Is bacteriostatic"], "answer": "Can be taken with food and has longer half-life", "explanation": "Doxycycline absorption is less affected by food, and its long half-life allows once-daily dosing."},
+            {"stem": "Sulfonamides act by:", "options": ["Competitive inhibition of dihydropteroate synthase", "Inhibiting dihydrofolate reductase", "Inhibiting cell wall synthesis", "Inhibiting protein synthesis"], "answer": "Competitive inhibition of dihydropteroate synthase", "explanation": "Sulfonamides are structural analogues of PABA that competitively inhibit folate synthesis."},
+            {"stem": "Trimethoprim inhibits:", "options": ["Dihydrofolate reductase", "Dihydropteroate synthase", "DNA gyrase", "RNA polymerase"], "answer": "Dihydrofolate reductase", "explanation": "Trimethoprim inhibits DHFR, blocking conversion of dihydrofolate to tetrahydrofolate."},
+            {"stem": "Nitrofurantoin is used primarily for:", "options": ["Uncomplicated urinary tract infections", "Respiratory tract infections", "Skin infections", "Bone infections"], "answer": "Uncomplicated urinary tract infections", "explanation": "Nitrofurantoin concentrates in urine and is effective for acute uncomplicated UTIs."},
+            {"stem": "Which antimalarial drug is used for prophylaxis in pregnancy?", "options": ["Proguanil", "Doxycycline", "Mefloquine", "Primaquine"], "answer": "Proguanil", "explanation": "Proguanil (with chloroquine or atovaquone) is safe in pregnancy for malaria prophylaxis."},
+            {"stem": "The drug of choice for Pneumocystis jirovecii pneumonia is:", "options": ["Trimethoprim-sulfamethoxazole", "Pentamidine", "Dapsone", "Atovaquone"], "answer": "Trimethoprim-sulfamethoxazole", "explanation": "TMP-SMX is first-line for PCP prophylaxis and treatment; alternatives include pentamidine, dapsone, and atovaquone."}
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {"stem": "Describe the mechanisms of action of the four main classes of antibiotics by cell wall, protein synthesis, nucleic acid, and membrane targets.", "modelAnswer": "CELL WALL: beta-lactams (penicillins, cephalosporins) inhibit transpeptidase; vancomycin blocks peptidoglycan polymerisation. PROTEIN SYNTHESIS: macrolides (50S), tetracyclines (30S), aminoglycosides (30S). NUCLEIC ACID: quinolones (DNA gyrase), rifampicin (RNA polymerase). MEMBRANE: polymyxins, daptomycin."},
+            {"stem": "Explain the concept of antimicrobial resistance and describe three mechanisms by which bacteria develop resistance.", "modelAnswer": "Mechanisms: (1) Enzymatic inactivation \u2014 beta-lactamases (ESBL, carbapenemases) hydrolyse beta-lactams; (2) Target modification \u2014 MRSA (altered PBP2a), vancomycin resistance (VanA/VanB); (3) Efflux pumps \u2014 tetracycline, macrolide resistance; (4) Reduced permeability \u2014 porin loss in Gram-negatives."},
+            {"stem": "Describe the pharmacological management of tuberculosis including the standard RHZE regimen.", "modelAnswer": "RHZE regimen: Rifampicin (R), Isoniazid (H), Pyrazinamide (Z), Ethambutol (E). Intensive phase (2 months): RHZE daily. Continuation phase (4 months): RH daily. DOT recommended. Monitor: LFTs (hepatotoxicity), visual acuity (ethambutol), peripheral neuropathy (pyridoxine with INH)."},
+            {"stem": "Discuss the mechanism of action and adverse effects of aminoglycoside antibiotics.", "modelAnswer": "Mechanism: bind 30S ribosomal subunit \u2192 misreading of mRNA \u2192 defective proteins \u2192 bacterial death. Concentration-dependent killing. Post-antibiotic effect. Adverse: nephrotoxicity (proximal tubule), ototoxicity (vestibular/cochlear), neuromuscular blockade. TDM: peak/trough monitoring."},
+            {"stem": "Compare the antifungal mechanisms of azoles, polyenes, and echinocandins.", "modelAnswer": "AZOLES (fluconazole, voriconazole): inhibit 14\u03b1-demethylase (ergosterol synthesis). POLYENES (amphotericin B): bind ergosterol \u2192 pore formation. ECHINOCANDINS (caspofungin): inhibit \u03b2-glucan synthase (cell wall). Azoles: fungistatic; Amphotericin: fungicidal, nephrotoxic; Echinocandins: fungicidal against Candida."},
+            {"stem": "Explain the mechanisms of antiviral drugs, using acyclovir as an example.", "modelAnswer": "Acyclovir: guanosine analogue \u2192 phosphorylated by viral thymidine kinase \u2192 acyclovir triphosphate inhibits viral DNA polymerase. Selective for HSV/VZV-infected cells. Uses: herpes simplex, varicella zoster. Oral/IV/topical. Resistance: TK-deficient mutants (immunocompromised)."},
+            {"stem": "Describe the antimalarial drugs used for prophylaxis and treatment of uncomplicated malaria.", "modelAnswer": "UNCOMPLICATED: artemisinin-based combination therapy (ACT) \u2014 artemether-lumefantrine, artesunate-amodiaquine. PROPHYLAXIS: atovaquone-proguanil, doxycycline, mefloquine (depending on resistance). Chloroquine: only for sensitive P. falciparum. Severe malaria: IV artesunate."},
+            {"stem": "Discuss the principles of antimicrobial stewardship and its importance in combating resistance.", "modelAnswer": "Stewardship: coordinated interventions to optimise antimicrobial use \u2014 right drug, dose, duration, de-escalation based on cultures. Components: formulary restriction, pre-authorisation, prospective audit, education, guidelines. Benefits: \u2193 resistance, \u2193 C. diff, \u2193 costs, \u2193 adverse effects."}
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {"stem": "A 35-year-old man presents with a 3-week history of cough, night sweats, weight loss, and haemoptysis. Chest X-ray shows cavitary lesions in the right upper lobe. Sputum smear is positive for acid-fast bacilli. Discuss the complete pharmacological management of tuberculosis, including the drug regimen, phases of treatment, monitoring, and management of adverse effects.", "modelAnswer": "DIAGNOSIS: Pulmonary tuberculosis (smear-positive).\n\nINITIAL REGIMEN (RHZE):\n- Rifampicin 600 mg daily (CYP450 inducer)\n- Isoniazid 300 mg daily (give pyridoxine 25 mg to prevent neuropathy)\n- Pyrazinamide 1.5-2 g daily (hepatotoxic, monitor uric acid)\n- Ethambutol 15-20 mg/kg daily (monitor visual acuity)\n\nINTENSIVE PHASE: 2 months of RHZE daily (DOT preferred).\n\nCONTINUATION PHASE: 4 months of RH daily.\n\nMONITORING:\n- Monthly sputum smear and culture\n- LFTs at baseline and monthly (especially INH/RIF hepatotoxicity)\n- Visual acuity (ethambutol optic neuritis)\n- Renal function, uric acid (pyrazinamide)\n- HIV test (co-management if positive)\n\nADVERSE EFFECTS:\n- Hepatitis: stop all drugs, reintroduce one by one after LFT normalises\n- Rash: antihistamines, rechallenge\n- Peripheral neuropathy: pyridoxine 50-100 mg\n- Orange-red secretions (RIF): counsel patient\n\nTREATMENT FAILURE: Check adherence, drug sensitivity, consider MDR-TB regimen."},
+            {"stem": "A 28-year-old woman presents with dysuria, frequency, and urgency. Urinalysis shows nitrites and leukocyte esterase. Discuss the pharmacological management of uncomplicated urinary tract infection, including drug selection, duration, and considerations for special populations.", "modelAnswer": "DIAGNOSIS: Uncomplicated UTI (cystitis).\n\nFIRST-LINE (low resistance risk):\n- Nitrofurantoin 100 mg BD x 5 days\nOR\n- Trimethoprim-sulfamethoxazole 160/800 mg BD x 3 days (if local resistance <20%)\n\nALTERNATIVES:\n- Fosfomycin 3 g single dose\n- Pivmecillinam 400 mg TDS x 3-5 days\n- Amoxicillin-clavulanate 500/125 mg TDS x 5-7 days\n\nCONSIDERATIONS:\n- Avoid fluoroquinolones as first-line due to resistance and side effects\n- Urine culture if recurrent UTI, pregnancy, or failed treatment\n\nPREGNANCY:\n- Nitrofurantoin (avoid in 3rd trimester) or cephalexin x 7 days\n- Avoid TMP-SMX (1st and 3rd trimester)\n\nRECURRENT UTIs:\n- Prophylaxis: nitrofurantoin 50 mg or TMP-SMX 40/200 mg nocte\n- Post-coital prophylaxis if related to sexual activity\n- Non-pharmacological: increased fluid intake, void after intercourse, cranberry products\n\nFOLLOW-UP: Symptoms should resolve in 48-72h. If not, culture and treat based on sensitivities."}
+          ]
+        }
+      ]
+    }
+  },
+  "pharm-anticancer-endo": {
+    "1": {
+      "title": "Anticancer, Endocrine & Vitamin Pharmacology",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {"stem": "Cisplatin exerts its anticancer effect by:", "options": ["Crosslinking DNA strands", "Inhibiting topoisomerase II", "Inhibiting microtubule formation", "Blocking nucleotide synthesis"], "answer": "Crosslinking DNA strands", "explanation": "Cisplatin forms intrastrand and interstrand DNA crosslinks, inhibiting replication and transcription."},
+            {"stem": "The dose-limiting toxicity of doxorubicin is:", "options": ["Cardiomyopathy", "Nephrotoxicity", "Pulmonary fibrosis", "Peripheral neuropathy"], "answer": "Cardiomyopathy", "explanation": "Doxorubicin causes cumulative dose-dependent cardiotoxicity via free radical formation. Cumulative limit ~450-550 mg/m\u00b2."},
+            {"stem": "Methotrexate acts by inhibiting:", "options": ["Dihydrofolate reductase", "Thymidylate synthase", "Ribonucleotide reductase", "Topoisomerase"], "answer": "Dihydrofolate reductase", "explanation": "Methotrexate inhibits DHFR, depleting tetrahydrofolate required for purine and pyrimidine synthesis."},
+            {"stem": "5-Fluorouracil (5-FU) is classified as:", "options": ["An antimetabolite", "An alkylating agent", "A plant alkaloid", "An antibiotic"], "answer": "An antimetabolite", "explanation": "5-FU is a pyrimidine analogue that inhibits thymidylate synthase, blocking DNA synthesis."},
+            {"stem": "Tamoxifen acts by:", "options": ["Blocking oestrogen receptors in breast tissue", "Inhibiting aromatase", "Antagonising progesterone receptors", "Inhibiting HER2"], "answer": "Blocking oestrogen receptors in breast tissue", "explanation": "Tamoxifen is a selective oestrogen receptor modulator (SERM) with antagonist activity in breast tissue."},
+            {"stem": "Which of the following is a taxane chemotherapeutic agent?", "options": ["Paclitaxel", "Vincristine", "Etoposide", "Bleomycin"], "answer": "Paclitaxel", "explanation": "Paclitaxel stabilises microtubules, preventing depolymerisation and inhibiting mitotic cell division."},
+            {"stem": "Levothyroxine is the treatment for:", "options": ["Hypothyroidism", "Hyperthyroidism", "Thyroid cancer", "Goitre"], "answer": "Hypothyroidism", "explanation": "Levothyroxine (T4) replaces deficient thyroid hormone in hypothyroidism. Dosing: 1.6 mcg/kg daily."},
+            {"stem": "Carbimazole acts by:", "options": ["Inhibiting thyroid peroxidase", "Blocking TSH receptors", "Inhibiting T4 to T3 conversion", "Depleting thyroid hormone stores"], "answer": "Inhibiting thyroid peroxidase", "explanation": "Carbimazole (metabolised to methimazole) inhibits thyroid peroxidase, reducing thyroid hormone synthesis."},
+            {"stem": "Metformin is contraindicated in:", "options": ["eGFR <30 mL/min due to lactic acidosis risk", "Pregnancy", "Type 1 diabetes", "Obesity"], "answer": "eGFR <30 mL/min due to lactic acidosis risk", "explanation": "Metformin accumulates in severe renal impairment, increasing risk of lactic acidosis. Withhold before contrast studies."},
+            {"stem": "Insulin glargine is classified as:", "options": ["Long-acting insulin analogue", "Short-acting insulin", "Rapid-acting insulin", "Intermediate-acting insulin"], "answer": "Long-acting insulin analogue", "explanation": "Glargine forms microprecipitates at injection site providing a smooth, peakless basal insulin profile for 24h."},
+            {"stem": "Prednisolone is classified as:", "options": ["A glucocorticoid with anti-inflammatory and immunosuppressant properties", "A mineralocorticoid", "An anabolic steroid", "An oestrogen receptor modulator"], "answer": "A glucocorticoid with anti-inflammatory and immunosuppressant properties", "explanation": "Prednisolone is a synthetic glucocorticoid that suppresses inflammation and immune responses."},
+            {"stem": "Which vitamin deficiency causes night blindness?", "options": ["Vitamin A", "Vitamin D", "Vitamin E", "Vitamin K"], "answer": "Vitamin A", "explanation": "Vitamin A (retinol) is essential for rhodopsin synthesis in retinal rod cells; deficiency causes night blindness."},
+            {"stem": "Alendronate is a drug used for:", "options": ["Osteoporosis", "Hypothyroidism", "Diabetes", "Hyperlipidaemia"], "answer": "Osteoporosis", "explanation": "Alendronate is a bisphosphonate that inhibits osteoclast-mediated bone resorption."},
+            {"stem": "Cyclophosphamide is associated with:", "options": ["Haemorrhagic cystitis", "Cardiotoxicity", "Pulmonary fibrosis", "Peripheral neuropathy"], "answer": "Haemorrhagic cystitis", "explanation": "Cyclophosphamide metabolite (acrolein) causes haemorrhagic cystitis; prevent with adequate hydration and mesna."},
+            {"stem": "Imatinib is a tyrosine kinase inhibitor used for:", "options": ["Chronic myeloid leukaemia (CML)", "Breast cancer", "Lung cancer", "Colon cancer"], "answer": "Chronic myeloid leukaemia (CML)", "explanation": "Imatinib inhibits BCR-ABL tyrosine kinase, the driver mutation in CML."},
+            {"stem": "Bleomycin causes dose-limiting:", "options": ["Pulmonary fibrosis", "Cardiotoxicity", "Nephrotoxicity", "Myelosuppression"], "answer": "Pulmonary fibrosis", "explanation": "Bleomycin accumulates in lung tissue causing pneumonitis and fibrosis. Cumulative lifetime dose limit ~400 units."},
+            {"stem": "Vitamin K is essential for:", "options": ["Synthesis of clotting factors II, VII, IX, X", "Calcium absorption", "Collagen synthesis", "Antioxidant defence"], "answer": "Synthesis of clotting factors II, VII, IX, X", "explanation": "Vitamin K is a cofactor for gamma-carboxylation of vitamin K-dependent clotting factors."},
+            {"stem": "Gliclazide is a:", "options": ["Sulfonylurea that stimulates insulin secretion", "Biguanide that reduces gluconeogenesis", "DPP-4 inhibitor", "SGLT2 inhibitor"], "answer": "Sulfonylurea that stimulates insulin secretion", "explanation": "Sulfonylureas (gliclazide, glibenclamide) bind to K-ATP channels on beta cells, stimulating insulin release."},
+            {"stem": "Propylthiouracil is preferred over carbimazole in:", "options": ["First trimester of pregnancy", "Breastfeeding", "Children", "Elderly"], "answer": "First trimester of pregnancy", "explanation": "PTU is preferred in first trimester due to lower risk of teratogenic effects compared to carbimazole."},
+            {"stem": "Vincristine causes dose-limiting:", "options": ["Peripheral neuropathy", "Myelosuppression", "Cardiotoxicity", "Nephrotoxicity"], "answer": "Peripheral neuropathy", "explanation": "Vincristine binds to tubulin, causing axonal microtubule disruption leading to peripheral neuropathy."},
+            {"stem": "Aromatase inhibitors (anastrozole) are used in:", "options": ["Postmenopausal breast cancer", "Premenopausal breast cancer", "Prostate cancer", "Colon cancer"], "answer": "Postmenopausal breast cancer", "explanation": "Aromatase inhibitors reduce oestrogen synthesis in peripheral tissues and are effective in postmenopausal women."},
+            {"stem": "Sitagliptin is classified as a:", "options": ["DPP-4 inhibitor", "SGLT2 inhibitor", "GLP-1 receptor agonist", "Thiazolidinedione"], "answer": "DPP-4 inhibitor", "explanation": "Sitagliptin inhibits DPP-4, increasing endogenous GLP-1 levels leading to glucose-dependent insulin secretion."},
+            {"stem": "Hypercalcaemia of malignancy can be treated with:", "options": ["Bisphosphonates (zoledronic acid)", "Vitamin D", "Calcium gluconate", "Calcitonin"], "answer": "Bisphosphonates (zoledronic acid)", "explanation": "IV bisphosphonates inhibit osteoclast bone resorption, effectively lowering serum calcium in malignancy."},
+            {"stem": "Calcitriol is the active form of:", "options": ["Vitamin D", "Vitamin A", "Vitamin E", "Vitamin K"], "answer": "Vitamin D", "explanation": "Calcitriol (1,25-dihydroxycholecalciferol) is the hormonally active form of vitamin D."},
+            {"stem": "The target HbA1c for most adults with diabetes is:", "options": ["<7% (53 mmol/mol)", "<6%", "<8%", "<9%"], "answer": "<7% (53 mmol/mol)", "explanation": "ADA/EASD recommend HbA1c <7% for most adults. Individualise based on age, comorbidities, and hypoglycaemia risk."},
+            {"stem": "Liothyronine (T3) differs from levothyroxine (T4) in that:", "options": ["It has a faster onset and shorter duration", "It is more stable", "It has higher oral bioavailability", "It is the preferred maintenance therapy"], "answer": "It has a faster onset and shorter duration", "explanation": "T3 has rapid onset (hours) and short duration, used in myxoedema coma or when rapid effect needed."},
+            {"stem": "Myelosuppression is the dose-limiting toxicity of:", "options": ["Most cytotoxic chemotherapy agents", "Bleomycin", "Vincristine", "Cisplatin"], "answer": "Most cytotoxic chemotherapy agents", "explanation": "Bone marrow suppression (neutropenia, thrombocytopenia, anaemia) is dose-limiting for many cytotoxic drugs."},
+            {"stem": "Trastuzumab is a monoclonal antibody used for:", "options": ["HER2-positive breast cancer", "EGFR-mutant lung cancer", "CD20-positive lymphoma", "VEGF inhibition"], "answer": "HER2-positive breast cancer", "explanation": "Trastuzumab (Herceptin) targets HER2 receptor, used in HER2-amplified breast and gastric cancers."},
+            {"stem": "Raloxifene is a SERM used for:", "options": ["Prevention of osteoporosis in postmenopausal women", "Treatment of breast cancer", "Induction of ovulation", "Contraception"], "answer": "Prevention of osteoporosis in postmenopausal women", "explanation": "Raloxifene has oestrogen agonist effects on bone (preventing resorption) and antagonist effects on breast."},
+            {"stem": "The major adverse effect of long-term systemic corticosteroids is:", "options": ["Osteoporosis", "Hypoglycaemia", "Hypotension", "Hypokalaemia"], "answer": "Osteoporosis", "explanation": "Long-term steroids inhibit bone formation and increase resorption, leading to osteoporosis. Calcium + vitamin D + bisphosphonate for prevention."}
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {"stem": "Describe the mechanisms of action of the major classes of cytotoxic chemotherapy.", "modelAnswer": "ALKYLATING AGENTS (cyclophosphamide): crosslink DNA. ANTIMETABOLITES (methotrexate, 5-FU): inhibit nucleotide synthesis. PLANT ALKALOIDS (vincristine, paclitaxel): mitotic inhibitors. ANTIBIOTICS (doxorubicin): intercalate DNA, topoisomerase II inhibition. PLATINUM (cisplatin): DNA crosslinking."},
+            {"stem": "Explain the dose-limiting toxicities of commonly used chemotherapeutic agents.", "modelAnswer": "Cisplatin: nephrotoxicity, ototoxicity. Doxorubicin: cardiotoxicity (cumulative). Bleomycin: pulmonary fibrosis. Vincristine: peripheral neuropathy. Cyclophosphamide: haemorrhagic cystitis. Methotrexate: mucositis, myelosuppression. 5-FU: diarrhoea, hand-foot syndrome."},
+            {"stem": "Discuss the pharmacological management of diabetes mellitus type 2.", "modelAnswer": "Step 1: metformin (\u2193 hepatic gluconeogenesis, \u2191 insulin sensitivity). Step 2: add sulfonylurea, DPP-4 inhibitor, SGLT2 inhibitor, or GLP-1 agonist. Step 3: insulin therapy. Target HbA1c <7%. Individualise based on comorbidities."},
+            {"stem": "Compare the mechanisms of action of insulin and oral hypoglycaemic agents.", "modelAnswer": "INSULIN: replaces endogenous insulin; regulates glucose uptake. ORAL: metformin (AMPK activator), sulfonylureas (\u2191 insulin secretion), DPP-4 inhibitors (\u2191 GLP-1), SGLT2 inhibitors (\u2191 urinary glucose)."},
+            {"stem": "Describe the pharmacology of thyroid hormones and antithyroid drugs.", "modelAnswer": "THYROID HORMONES: levothyroxine (T4) \u2192 converted to T3 \u2192 binds nuclear receptors \u2192 \u2191 metabolism. ANTITHYROID: carbimazole (\u2193 thyroid peroxidase), propylthiouracil (also \u2193 T4\u2192T3 conversion). Beta-blockers for symptom control."},
+            {"stem": "Explain the clinical uses and adverse effects of systemic corticosteroids.", "modelAnswer": "Uses: anti-inflammatory (asthma, RA, IBD), immunosuppression (transplant, allergy), endocrine (adrenal insufficiency). Adverse: osteoporosis, hyperglycaemia, weight gain, immunosuppression, adrenal suppression, Cushing syndrome. Taper to discontinue."},
+            {"stem": "Discuss the fat-soluble vitamins, their functions, and deficiency states.", "modelAnswer": "VIT A: vision, immune; deficiency \u2192 night blindness. VIT D: Ca homeostasis; deficiency \u2192 rickets/osteomalacia. VIT E: antioxidant; deficiency \u2192 haemolytic anaemia, neuropathy. VIT K: clotting factors; deficiency \u2192 bleeding."},
+            {"stem": "Describe the role of bisphosphonates in the management of osteoporosis.", "modelAnswer": "Bisphosphonates (alendronate, risedronate, zoledronic acid): inhibit osteoclast-mediated bone resorption. Indications: osteoporosis, Paget disease, hypercalcaemia. Dosing: weekly oral or yearly IV. Side effects: GI upset, osteonecrosis of jaw, atypical fractures."}
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {"stem": "A 58-year-old postmenopausal woman is diagnosed with hormone receptor-positive, HER2-negative invasive breast cancer. Discuss the principles of adjuvant endocrine therapy including drug classes, mechanisms, and adverse effects.", "modelAnswer": "ADJUVANT ENDOCRINE THERAPY:\n\nIn postmenopausal women:\n1. Aromatase inhibitors (AI) first-line:\n   - Anastrozole, letrozole, exemestane\n   - Mechanism: inhibit peripheral conversion of androgens to oestrogens\n   - Duration: 5 years (extend to 10 in high-risk)\n   - Adverse: arthralgia, osteoporosis, hot flashes, hypercholesterolaemia\n\n2. Tamoxifen (SERM):\n   - Alternative if AI intolerant or contraindicated\n   - Mechanism: blocks ER in breast tissue\n   - Adverse: hot flashes, VTE, endometrial cancer (rare)\n\n3. Switch strategy: 2-3 years of AI then tamoxifen to complete 5 years\n\nMONITORING:\n- Bone density at baseline and 1-2 yearly (AI patients)\n- Gynaecological review (tamoxifen)\n- Adherence assessment\n\nSURGICAL OPTIONS: Oophorectomy or ovarian suppression if premenopausal.\n\nTARGETED THERAPY: CDK4/6 inhibitors (palbociclib) if advanced disease. BRCA testing for PARP inhibitor eligibility."},
+            {"stem": "A 45-year-old woman presents with weight loss, palpitations, heat intolerance, and tremor. Examination shows diffuse goitre, tachycardia, and lid lag. TSH is suppressed (<0.01 mIU/L) and free T4 is elevated (35 pmol/L). Discuss the complete pharmacological management of hyperthyroidism.", "modelAnswer": "DIAGNOSIS: Graves disease (diffuse toxic goitre).\n\nMANAGEMENT:\n\n1. SYMPTOM CONTROL (rapid relief):\n   - Propranolol 40-80 mg TDS (non-selective beta-blocker): reduces palpitations, tremor, anxiety, and peripheral T4\u2192T3 conversion.\n\n2. ANTITHYROID DRUGS:\n   - Carbimazole 30-60 mg daily (or methimazole)\n     - Mechanism: inhibits thyroid peroxidase\n     - Monitor: FBC (agranulocytosis risk), LFTs\n   - Propylthiouracil if first trimester of pregnancy\n\n   Dose titration: adjust based on TFTs every 4-6 weeks. Maintenance 5-15 mg daily.\n   Duration: 12-18 months then trial off. Remission rate ~50%.\n\n3. DEFINITIVE THERAPY (if relapse after ATD course):\n   - Radioiodine (I-131): contraindicated in pregnancy, active Graves ophthalmopathy\n   - Thyroidectomy: subtotal or total\n\n4. MONITORING:\n   - TFTs every 4-6 weeks until euthyroid, then 3-6 monthly\n   - FBC (agranulocytosis: fever, sore throat \u2192 stop ATD)\n   - Liver function\n   - Ophthalmology referral if eye symptoms\n\nCOMPLICATIONS OF UNTREATED: thyroid storm, AF, osteoporosis, miscarriage."}
+          ]
+        }
+      ]
+    }
+  },
+  "pharm-toxicology": {
+    "1": {
+      "title": "Toxicology & Drug Discovery",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {"stem": "The antidote for paracetamol poisoning is:", "options": ["N-acetylcysteine", "Naloxone", "Flumazenil", "Activated charcoal"], "answer": "N-acetylcysteine", "explanation": "NAC replenishes hepatic glutathione, binding the toxic metabolite NAPQI. Most effective within 8 hours of ingestion."},
+            {"stem": "Activated charcoal is most effective when given within:", "options": ["1 hour of ingestion", "6 hours of ingestion", "12 hours of ingestion", "24 hours of ingestion"], "answer": "1 hour of ingestion", "explanation": "Activated charcoal adsorbs drugs in the GI tract; efficacy decreases significantly after 1 hour."},
+            {"stem": "Flumazenil is the specific antidote for:", "options": ["Benzodiazepine overdose", "Opioid overdose", "Tricyclic antidepressant overdose", "Paracetamol overdose"], "answer": "Benzodiazepine overdose", "explanation": "Flumazenil is a competitive benzodiazepine receptor antagonist. Use cautiously due to risk of seizures."},
+            {"stem": "The chelating agent for acute lead poisoning is:", "options": ["BAL (dimercaprol) + EDTA", "Penicillamine", "Deferoxamine", "DMSA (succimer)"], "answer": "BAL (dimercaprol) + EDTA", "explanation": "Combination therapy: BAL first then EDTA for symptomatic lead poisoning. DMSA used for milder cases."},
+            {"stem": "Desferrioxamine is used for:", "options": ["Iron poisoning", "Lead poisoning", "Mercury poisoning", "Arsenic poisoning"], "answer": "Iron poisoning", "explanation": "Desferrioxamine chelates iron, forming ferrioxamine which is excreted in urine. Used for acute iron overdose."},
+            {"stem": "Methanol poisoning is treated with:", "options": ["Fomepizole or ethanol", "N-acetylcysteine", "Sodium nitrite", "Atropine"], "answer": "Fomepizole or ethanol", "explanation": "Fomepizole (or ethanol) competitively inhibits alcohol dehydrogenase, preventing formation of toxic formic acid."},
+            {"stem": "The clinical triad of opioid overdose includes:", "options": ["Miosis, respiratory depression, coma", "Mydriasis, tachycardia, seizures", "Miosis, hypertension, agitation", "Mydriasis, respiratory depression, coma"], "answer": "Miosis, respiratory depression, coma", "explanation": "Opioid overdose presents with pinpoint pupils, respiratory depression, and decreased consciousness (opioid triad)."},
+            {"stem": "Naloxone has a shorter half-life than most opioids, which means:", "options": ["Repeated doses or infusion may be needed", "A single dose is always sufficient", "It should be given orally", "It causes prolonged withdrawal"], "answer": "Repeated doses or infusion may be needed", "explanation": "Naloxone half-life (30-60 min) is shorter than most opioids, so patients may relapse after initial reversal."},
+            {"stem": "The drug of choice for cyanide poisoning is:", "options": ["Hydroxocobalamin or sodium nitrite + sodium thiosulfate", "N-acetylcysteine", "Flumazenil", "Naloxone"], "answer": "Hydroxocobalamin or sodium nitrite + sodium thiosulfate", "explanation": "Hydroxocobalamin binds cyanide forming cyanocobalamin. Sodium nitrite induces methaemoglobinaemia; sodium thiosulfate converts CN to thiocyanate."},
+            {"stem": "Organophosphate poisoning causes cholinergic excess because:", "options": ["AChE is irreversibly inhibited", "ACh receptors are overstimulated", "ACh synthesis is increased", "ACh release is enhanced"], "answer": "AChE is irreversibly inhibited", "explanation": "Organophosphates phosphorylate the active site of AChE, causing irreversible inhibition and ACh accumulation."},
+            {"stem": "The therapeutic index (TI) is calculated as:", "options": ["TD50/ED50", "ED50/TD50", "LD50/ED50", "ED50/LD50"], "answer": "TD50/ED50", "explanation": "TI = toxic dose in 50% / effective dose in 50%. Higher TI = safer drug."},
+            {"stem": "Phase I clinical trials primarily assess:", "options": ["Safety and tolerability in healthy volunteers", "Efficacy in patients", "Long-term safety", "Comparative effectiveness"], "answer": "Safety and tolerability in healthy volunteers", "explanation": "Phase I (20-100 healthy subjects) determines safety, tolerability, and pharmacokinetics."},
+            {"stem": "In drug development, the 'lead optimisation' phase involves:", "options": ["Improving potency, selectivity, and PK properties", "Identifying the biological target", "Testing in patients", "Submitting to regulatory authorities"], "answer": "Improving potency, selectivity, and PK properties", "explanation": "Lead optimisation modifies lead compounds to improve efficacy, safety, and drug-like properties."},
+            {"stem": "The Declarations of Helsinki governs:", "options": ["Ethical principles for medical research involving human subjects", "Good manufacturing practice", "Animal research ethics", "Drug pricing regulations"], "answer": "Ethical principles for medical research involving human subjects", "explanation": "The Declaration of Helsinki is a set of ethical principles for research involving human subjects."},
+            {"stem": "Which of the following is a prodrug requiring bioactivation?", "options": ["Enalapril", "Cimetidine", "Aspirin", "Paracetamol"], "answer": "Enalapril", "explanation": "Enalapril is hydrolysed to enalaprilat (active ACE inhibitor) by hepatic esterases."},
+            {"stem": "Salicylate poisoning is treated with:", "options": ["Urinary alkalinisation and haemodialysis", "N-acetylcysteine", "Flumazenil", "Activated charcoal only"], "answer": "Urinary alkalinisation and haemodialysis", "explanation": "Urinary alkalinisation (sodium bicarbonate IV) enhances salicylate excretion. Haemodialysis for severe toxicity."},
+            {"stem": "The antidote for ethylene glycol poisoning is:", "options": ["Fomepizole", "Naloxone", "Flumazenil", "N-acetylcysteine"], "answer": "Fomepizole", "explanation": "Fomepizole inhibits alcohol dehydrogenase, preventing formation of oxalic acid (causes renal failure)."},
+            {"stem": "A drug with a low therapeutic index requires:", "options": ["Therapeutic drug monitoring", "Once-daily dosing", "Oral administration", "Renal dose adjustment"], "answer": "Therapeutic drug monitoring", "explanation": "Narrow TI drugs (warfarin, digoxin, lithium, theophylline) require TDM to maintain efficacy and avoid toxicity."},
+            {"stem": "Multiple-dose activated charcoal enhances elimination of:", "options": ["Theophylline, phenobarbital, and carbamazepine", "Paracetamol", "Methanol", "Iron"], "answer": "Theophylline, phenobarbital, and carbamazepine", "explanation": "Multiple-dose charcoal enhances elimination of drugs with enterohepatic recirculation by interrupting reabsorption."},
+            {"stem": "Tricyclic antidepressant overdose is characterised by:", "options": ["Wide QRS, seizures, and arrhythmias", "Miosis and respiratory depression", "Hyperthermia and rigidity", "Bradycardia and hypotension"], "answer": "Wide QRS, seizures, and arrhythmias", "explanation": "TCA overdose blocks Na channels causing QRS widening, seizures, and ventricular arrhythmias. Treat with sodium bicarbonate."},
+            {"stem": "Lithium toxicity is exacerbated by:", "options": ["Dehydration and thiazide diuretics", "Loop diuretics", "ACE inhibitors", "Beta-blockers"], "answer": "Dehydration and thiazide diuretics", "explanation": "Thiazides reduce lithium clearance; dehydration also increases lithium reabsorption, precipitating toxicity."},
+            {"stem": "The treatment for digoxin-induced arrhythmias is:", "options": ["Digoxin-specific Fab antibody fragments", "Lidocaine", "Amiodarone", "Cardioversion"], "answer": "Digoxin-specific Fab antibody fragments", "explanation": "Digibind (Fab fragments) binds digoxin, neutralising its effect. Indicated for life-threatening digoxin toxicity."},
+            {"stem": "Chronic lead poisoning causes:", "options": ["Peripheral neuropathy, abdominal pain, and encephalopathy", "Hepatocellular carcinoma", "Pulmonary fibrosis", "Cardiomyopathy"], "answer": "Peripheral neuropathy, abdominal pain, and encephalopathy", "explanation": "Lead poisoning affects multiple systems: neurologic (neuropathy, encephalopathy), haematologic (microcytic anaemia), and GI (colic)."},
+            {"stem": "The rate-limiting step in drug development is often:", "options": ["Clinical trials", "Target identification", "Lead discovery", "Regulatory approval"], "answer": "Clinical trials", "explanation": "Clinical trials (especially Phase III) are the longest and most expensive phase, taking 6-10+ years."},
+            {"stem": "About what percentage of drugs entering Phase I trials eventually receive FDA approval?", "options": ["~10%", "~50%", "~70%", "~90%"], "answer": "~10%", "explanation": "Only about 10% of drugs entering Phase I eventually gain approval, mainly due to efficacy or safety failures."},
+            {"stem": "Which chelator is used for Wilson disease (copper accumulation)?", "options": ["Penicillamine", "BAL (dimercaprol)", "EDTA", "Deferasirox"], "answer": "Penicillamine", "explanation": "Penicillamine chelates copper and is used for Wilson disease. Alternatives: trientine, zinc acetate."},
+            {"stem": "The most common cause of acute poisoning deaths worldwide is:", "options": ["Paracetamol", "Opioids", "Organophosphates", "Carbon monoxide"], "answer": "Paracetamol", "explanation": "Paracetamol is the most common cause of acute liver failure from overdose in many countries."},
+            {"stem": "Phase IV clinical trials are also known as:", "options": ["Post-marketing surveillance", "Preclinical testing", "First-in-human studies", "Dose-ranging studies"], "answer": "Post-marketing surveillance", "explanation": "Phase IV monitors long-term safety and rare adverse effects after drug approval and marketing."},
+            {"stem": "The LD50 is defined as:", "options": ["The dose lethal to 50% of animals", "The dose effective in 50% of humans", "The dose toxic to 50% of patients", "The lethal dose for 50 kg human"], "answer": "The dose lethal to 50% of animals", "explanation": "LD50 is a preclinical measure of acute toxicity determined in animal studies."},
+            {"stem": "Good Clinical Practice (GCP) guidelines cover:", "options": ["Standards for conducting clinical trials", "Laboratory animal care", "Drug manufacturing standards", "Pharmacy dispensing practices"], "answer": "Standards for conducting clinical trials", "explanation": "GCP is an international ethical and scientific quality standard for designing, conducting, and reporting clinical trials."}
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {"stem": "Describe the stepwise management of acute paracetamol poisoning.", "modelAnswer": "1. Assess time and dose ingested. 2. Rumack-Matthew nomogram to assess risk. 3. N-acetylcysteine (NAC) IV within 8 hours \u2014 150 mg/kg over 1h, then 50 mg/kg over 4h, then 100 mg/kg over 16h. NAC replenishes glutathione, binds NAPQI. Monitor LFTs, INR."},
+            {"stem": "Explain the chelation therapy for heavy metal poisoning. Give examples.", "modelAnswer": "Chelators: BAL (dimercaprol) \u2014 arsenic, mercury, lead (acute). EDTA \u2014 lead. Penicillamine \u2014 copper, lead, mercury. DMSA (succimer) \u2014 lead, mercury (oral). Desferrioxamine \u2014 iron. Each has specific indications, routes, and adverse effects."},
+            {"stem": "Discuss the clinical features and management of organophosphate poisoning.", "modelAnswer": "Features: cholinergic crisis (SLUDGE: salivation, lacrimation, urination, defecation, GI, emesis), miosis, bradycardia, fasciculations, weakness. Management: ABCDE, decontamination, atropine (2 mg IV q5-15min), pralidoxime (1-2 g IV), diazepam for seizures."},
+            {"stem": "Describe the toxicokinetic principles of drug overdose management.", "modelAnswer": "Principles: (1) Prevention of absorption \u2014 activated charcoal within 1h; (2) Enhanced elimination \u2014 multiple-dose charcoal, urinary alkalinisation, haemodialysis; (3) Antidote administration \u2014 specific reversal agents."},
+            {"stem": "Explain the management of cyanide poisoning.", "modelAnswer": "Sources: smoke inhalation, industrial. Features: headache, confusion, seizures, cardiovascular collapse. Management: ABC, 100% O2. Antidotes: sodium nitrite (methaemoglobinaemia), sodium thiosulfate (CN\u2192thiocyanate). Hydroxocobalamin \u2014 preferred for smoke inhalation."},
+            {"stem": "Discuss the clinical stages and management of acute iron poisoning.", "modelAnswer": "STAGES: 1) GI phase (30 min-6h): vomiting, diarrhoea; 2) Latent phase (6-24h): apparent improvement; 3) Shock/metabolic acidosis; 4) Hepatic failure (2-5 days). Management: ABC, desferrioxamine IV/IM if serum Fe >500 mcg/dL."},
+            {"stem": "Describe the treatment of methanol and ethylene glycol poisoning.", "modelAnswer": "Both cause metabolic acidosis with high anion gap. Methanol: visual disturbances. Ethylene glycol: oxalate crystals, renal failure. Treatment: fomepizole (alcohol dehydrogenase inhibitor) or ethanol. Haemodialysis for severe cases. Folinic acid for methanol."},
+            {"stem": "Explain the phases of clinical trials in drug development and their objectives.", "modelAnswer": "Phase I: 20-100 healthy volunteers; safety, PK/PD; ~70% pass. Phase II: 100-500 patients; efficacy, dose-ranging; ~33% pass. Phase III: 1000-5000 patients; confirm efficacy; ~25-60% pass. Phase IV: post-marketing surveillance; long-term safety."}
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {"stem": "A 22-year-old university student is brought to the emergency department 4 hours after ingesting an unknown quantity of paracetamol (acetaminophen) in a suicide attempt. He is drowsy but rousable. Discuss the complete management of paracetamol poisoning, including assessment, treatment, and monitoring.", "modelAnswer": "ASSESSMENT:\n- Confirm time, dose, and formulation ingested\n- History: any other co-ingestants, alcohol use\n- Blood: paracetamol level at 4h post-ingestion (plot on Rumack-Matthew nomogram)\n- LFTs, INR, creatinine, bicarbonate, lactate\n\nTREATMENT:\n1. ABCDE assessment\n2. Activated charcoal 50 g if within 1h of ingestion\n3. N-acetylcysteine (NAC) IV if paracetamol level above treatment line:\n   - 150 mg/kg in 200 mL D5W over 60 min (loading)\n   - 50 mg/kg in 500 mL D5W over 4 hours (second)\n   - 100 mg/kg in 1000 mL D5W over 16 hours (maintenance)\n\nMONITORING:\n- LFTs, INR, creatinine, glucose at baseline and daily\n- Signs of hepatotoxicity (RUQ pain, encephalopathy, coagulopathy)\n- NAC adverse effects (anaphylactoid reaction: rash, wheeze)\n\nPROGNOSIS:\n- Good if NAC within 8h of ingestion\n- Poor prognostic factors (King's College criteria): pH <7.3, INR >6.5, creatinine >300, encephalopathy\n- Discuss with liver transplant centre if severe hepatotoxicity develops\n\nDISCHARGE: psychiatric assessment and follow-up before discharge."},
+            {"stem": "Describe the complete process of drug discovery and development from target identification through to market approval. Include the stages, typical timelines, costs, and reasons for failure at each stage.", "modelAnswer": "DRUG DISCOVERY & DEVELOPMENT PIPELINE:\n\n1. TARGET IDENTIFICATION (1-2 years)\n- Identify biological target (receptor, enzyme, gene) involved in disease\n- Validate target's role in disease pathophysiology\n- Cost: $10-50M\n\n2. LEAD DISCOVERY (1-3 years)\n- High-throughput screening of compound libraries\n- Identify hit compounds\n- Cost: $50-100M\n\n3. LEAD OPTIMISATION (2-4 years)\n- Medicinal chemistry to improve potency, selectivity, PK, toxicity profile\n- SAR studies, in vitro ADME\n- Cost: $100-200M\n\n4. PRECLINICAL DEVELOPMENT (1-2 years)\n- In vivo efficacy, toxicology (acute, chronic, reproductive)\n- Formulation development\n- IND/CTA filing\n- Cost: $50-100M\n- Failure rate: ~40%\n\n5. CLINICAL TRIALS (6-10 years)\n- Phase I (1-2 yrs): 20-100 healthy volunteers; safety, PK; ~70% pass\n- Phase II (2-3 yrs): 100-500 patients; efficacy, dose-ranging; ~33% pass\n- Phase III (3-7 yrs): 1000-5000 patients; confirm efficacy, safety; ~50-60% pass\n- Cost: $500M-$2B\n\n6. REGULATORY APPROVAL (1-3 years)\n- NDA/MA submission to FDA/EMA\n- Review by regulatory authorities\n- Cost: $50-100M\n\n7. POST-MARKETING (Phase IV, ongoing)\n- Long-term safety surveillance\n- Pharmacovigilance\n\nOVERALL: Average ~12-15 years, $1-2.6B per approved drug. Only ~10% of Phase I candidates reach market. Main reasons for failure: lack of efficacy (~50%), safety concerns (~30%), commercial reasons (~20%)."}
+          ]
+        }
+      ]
+    }
+  },
 };
 
 export function getExamPrepPaper(unitId: string, variant: number): GeneratedPaper | undefined {

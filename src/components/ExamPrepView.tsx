@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Sparkles, Eye, EyeOff, Download, BookOpen, FileText, CheckCircle2, Award, Clock, Target } from 'lucide-react';
-import { EXAM_PREP_UNITS, STANDARD_EXAM_STRUCTURE, type ExamUnitSpec } from '../data/examPrepData';
+import { Sparkles, Eye, EyeOff, Download, BookOpen, FileText, CheckCircle2, Award, Clock, Target, FlaskConical, Pill, ArrowRight } from 'lucide-react';
+import { EXAM_PREP_MODULES, STANDARD_EXAM_STRUCTURE, getExamPrepModule, type ExamUnitSpec, type ExamModuleSpec } from '../data/examPrepData';
 import { getExamPrepPaper, type GeneratedPaper } from '../data/examPrepPapers';
 
 const txt = (v: any): string => {
@@ -295,30 +295,138 @@ function ExamSubjectCard({ spec }: { spec: ExamUnitSpec }) {
   );
 }
 
-export default function ExamPrepView({ subjectId }: { subjectId?: string }) {
-  const isClinicalPharmacy = subjectId === 'clinical-pharmacy-exam';
-  const specs = !subjectId || isClinicalPharmacy ? EXAM_PREP_UNITS : EXAM_PREP_UNITS.filter((s) => s.id === subjectId);
+function ModuleCard({ mod, onSelect }: { mod: ExamModuleSpec; onSelect: (id: string) => void }) {
+  const Icon = mod.id === 'clinical-pharmacy-exam' ? Award : FlaskConical;
+  return (
+    <button
+      onClick={() => onSelect(mod.id)}
+      className="w-full border-2 border-[var(--border)] rounded-2xl overflow-hidden bg-[var(--surface)] hover:border-[var(--primary)]/40 transition-all group text-left"
+    >
+      <div className="p-6 space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-12 h-12 rounded-xl bg-[var(--primary)]/10 flex items-center justify-center">
+            <Icon size={24} className="text-[var(--primary)]" />
+          </div>
+          <div className="flex-1">
+            <h3 className="text-lg font-bold text-[var(--text)]">{mod.title}</h3>
+            <p className="text-[12px] text-[var(--text-muted)]">{mod.units.length} units · 3 mock papers each</p>
+          </div>
+          <ArrowRight size={20} className="text-[var(--text-muted)] group-hover:text-[var(--primary)] transition-colors" />
+        </div>
+        <p className="text-sm text-[var(--text-muted)] leading-relaxed">{mod.description}</p>
+        <div className="flex flex-wrap gap-2">
+          {mod.units.map((u) => (
+            <span key={u.id} className="text-[11px] px-2.5 py-1 rounded-full bg-[var(--surface-2)] border border-[var(--border)] text-[var(--text-muted)]">
+              {u.title}
+            </span>
+          ))}
+        </div>
+      </div>
+    </button>
+  );
+}
+
+export default function ExamPrepView({ moduleId: initialModuleId, subjectId }: { moduleId?: string; subjectId?: string }) {
+  // support both new moduleId and legacy subjectId
+  const effectiveId = initialModuleId || (subjectId === 'clinical-pharmacy-exam' ? 'clinical-pharmacy-exam' : undefined);
+  const [selectedModuleId, setSelectedModuleId] = useState<string | undefined>(effectiveId);
+  const selectedModule = selectedModuleId ? getExamPrepModule(selectedModuleId) : undefined;
+  const specs = selectedModule?.units ?? [];
+
+  // Module picker
+  if (!selectedModuleId) {
+    return (
+      <div className="space-y-6">
+        <div className="flex items-center gap-2">
+          <Sparkles size={20} className="text-[var(--primary)]" />
+          <h2 className="text-xl font-bold text-[var(--text)]">Exam Prep</h2>
+        </div>
+        <p className="text-sm text-[var(--text-muted)]">
+          Choose a module to start practising. Each unit has three full mock papers with answers.
+        </p>
+        <div className="grid gap-4">
+          {EXAM_PREP_MODULES.map((mod) => (
+            <ModuleCard key={mod.id} mod={mod} onSelect={setSelectedModuleId} />
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  const moduleIcon = selectedModuleId === 'clinical-pharmacy-exam' ? Award : FlaskConical;
+  const ModuleIcon = moduleIcon;
+  const isClinicalPharmacy = selectedModuleId === 'clinical-pharmacy-exam';
+
   return (
     <div className="space-y-5">
+      {/* Back button */}
+      <button
+        onClick={() => setSelectedModuleId(undefined)}
+        className="flex items-center gap-1.5 text-[12px] text-[var(--text-muted)] hover:text-[var(--primary)] transition-colors"
+      >
+        <span>&larr;</span> All modules
+      </button>
+
       <div className="flex items-center gap-2">
-        <Sparkles size={18} className="text-[var(--primary)]" />
-        <h2 className="text-lg font-bold text-[var(--text)]">
-          {isClinicalPharmacy ? 'Clinical Pharmacy' : specs.length === 1 ? specs[0].title : 'Exam Prep'}
-        </h2>
+        <ModuleIcon size={18} className="text-[var(--primary)]" />
+        <h2 className="text-lg font-bold text-[var(--text)]">{selectedModule?.title ?? 'Exam Prep'}</h2>
       </div>
       <p className="text-sm text-[var(--text-muted)]">
-        Practice papers modelled on the real clinical-pharmacy exam pattern. Each subject shows the section
-        structure and topic areas drawn from the most recent past paper, then provides three full mock papers
-        generated from that exam's content. Toggle answers to self-mark.
+        {selectedModule?.description}
       </p>
 
-      {/* Clinical Pharmacy Overview — shown before unit exams */}
+      {/* Overview — shown before unit exams */}
       {isClinicalPharmacy && (
         <div className="border-2 border-[var(--primary)]/20 rounded-2xl bg-[var(--primary)]/5 overflow-hidden">
           <div className="px-5 py-4 border-b border-[var(--border)]">
             <div className="flex items-center gap-2 mb-1">
               <Award size={16} className="text-[var(--primary)]" />
               <h3 className="text-sm font-bold text-[var(--text)]">Clinical Pharmacy Exam Overview</h3>
+            </div>
+            <p className="text-[11px] text-[var(--text-muted)]">Standard format across all unit exams — 100 marks total</p>
+          </div>
+          <div className="p-5 space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {STANDARD_EXAM_STRUCTURE.map((sec) => (
+                <div key={sec.letter} className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-3.5">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold">
+                      {sec.letter}
+                    </span>
+                    <span className="text-lg font-bold text-[var(--primary)]">{sec.marks}<span className="text-[10px] font-normal text-[var(--text-muted)] ml-0.5">marks</span></span>
+                  </div>
+                  <div className="text-[13px] font-semibold text-[var(--text)]">{sec.name}</div>
+                  <div className="text-[11px] text-[var(--text-muted)] mt-1">{sec.count} {sec.count === 1 ? 'question' : 'questions'}</div>
+                  <div className="text-[10px] text-[var(--text-muted)] mt-1 italic">{sec.instruction}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap gap-3 text-[11px] text-[var(--text-muted)]">
+              <div className="flex items-center gap-1.5">
+                <Target size={13} className="text-[var(--primary)]" />
+                <span><strong className="text-[var(--text)]">Total:</strong> 100 marks</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <Clock size={13} className="text-[var(--primary)]" />
+                <span><strong className="text-[var(--text)]">Duration:</strong> 3 hours</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <BookOpen size={13} className="text-[var(--primary)]" />
+                <span><strong className="text-[var(--text)]">Units:</strong> {specs.length} subject areas below</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Pharmacology overview */}
+      {!isClinicalPharmacy && (
+        <div className="border-2 border-[var(--primary)]/20 rounded-2xl bg-[var(--primary)]/5 overflow-hidden">
+          <div className="px-5 py-4 border-b border-[var(--border)]">
+            <div className="flex items-center gap-2 mb-1">
+              <Pill size={16} className="text-[var(--primary)]" />
+              <h3 className="text-sm font-bold text-[var(--text)]">Pharmacology Exam Overview</h3>
             </div>
             <p className="text-[11px] text-[var(--text-muted)]">Standard format across all unit exams — 100 marks total</p>
           </div>

@@ -1,17 +1,13 @@
 // ================================================================
-// Exam Prep — Clinical Pharmacy past-paper bank
+// Exam Prep — Clinical Pharmacy & Pharmacology past-paper bank
 // ----------------------------------------------------------------
-// Built by crawling a set of clinical-pharmacy past examination
-// papers, grouping them by subject, selecting the latest/most
-// complete paper in each set, and studying its structure + topics.
+// Built from real past examination papers, grouped by module
+// (Clinical Pharmacy / Pharmacology), each with units that record
+// the section structure (counts + marks) and topic areas.
 //
-// Each entry records the section structure (counts + marks) and
-// the topic areas the paper actually examines, plus the Education
-// Hub curriculum unit(s) it maps to.
-//
-// This drives the Education Hub "Exam Prep" feature: per subject it
-// shows the real exam pattern + topics, then generates two mock
-// papers that mirror the structure using these topics.
+// This drives the Education Hub "Exam Prep" feature: per module it
+// shows the real exam pattern + topics, then generates three mock
+// papers that mirror the structure.
 // ================================================================
 
 export interface ExamSectionSpec {
@@ -30,6 +26,13 @@ export interface ExamUnitSpec {
   topics: string[];
 }
 
+export interface ExamModuleSpec {
+  id: string;
+  title: string;
+  description: string;
+  units: ExamUnitSpec[];
+}
+
 // ----------------------------------------------------------------
 // STANDARD EXAM FORMAT (applies to every subject henceforth):
 //   Section A — MCQs                — 30 marks
@@ -45,7 +48,10 @@ export const STANDARD_EXAM_STRUCTURE: ExamSectionSpec[] = [
   { letter: 'C', name: 'Long Answer Questions', count: 2, marks: 30, instruction: 'Answer BOTH questions. Questions may contain subsections. Begin each in a new page.' },
 ];
 
-export const EXAM_PREP_UNITS: ExamUnitSpec[] = [
+// ====================================================================
+// MODULE 1 — CLINICAL PHARMACY (8 units)
+// ====================================================================
+const CLINICAL_PHARMACY_UNITS: ExamUnitSpec[] = [
   {
     id: 'exam-respiratory-renal',
     title: 'Respiratory & Renal',
@@ -124,7 +130,7 @@ export const EXAM_PREP_UNITS: ExamUnitSpec[] = [
     mappedUnits: ['cp-id'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
-      'Viral hepatitis A–E — transmission, vaccination schedules',
+      'Viral hepatitis A\u2013E — transmission, vaccination schedules',
       'HIV — vertical transmission risk, antiretrovirals (NNRTI/NRTI/INSTI)',
       'Meningitis — bacterial (Listeria, TB, HSV), CSF findings',
       'Urethritis — ceftriaxone, Chlamydia co-treatment',
@@ -192,6 +198,201 @@ export const EXAM_PREP_UNITS: ExamUnitSpec[] = [
   },
 ];
 
+// ====================================================================
+// MODULE 2 — PHARMACOLOGY (8 units, built from Kabarak University
+//             past papers: PHAM 3101 through PHAM 5314)
+// ====================================================================
+const PHARMACOLOGY_UNITS: ExamUnitSpec[] = [
+  {
+    id: 'pharm-general',
+    title: 'General Pharmacology',
+    mappedUnits: ['pharm-general'],
+    structure: STANDARD_EXAM_STRUCTURE,
+    topics: [
+      'Prodrugs — enalapril, dipivefrine, mercaptopurine, concept and examples',
+      'CYP450 enzyme inhibition — ketoconazole, cimetidine; induction — rifampicin, phenytoin, phenobarbitone',
+      'Volume of distribution — altered in obesity, pregnancy, neonate; effect of protein binding',
+      'Plasma protein binding — high binding = lower Vd, longer duration, drug interactions',
+      'Redistribution phenomenon — thiopentone, highly lipid-soluble anaesthetics',
+      'Drug metabolism — acetylation (sulphonamide, isoniazid), rapid vs slow acetylators',
+      'Loading dose — purpose, achieving steady state rapidly',
+      'Clearance — definition, significance for drug elimination',
+      'Half-life — first-order kinetics, elimination after 4 half-lives (~93%)',
+      'First-pass metabolism — rectal route bypass, bioavailability',
+      'Grapefruit juice — CYP3A4 inhibition, effect on drug metabolism',
+      'Drug absorption — weak acids in stomach, weak bases in intestine, factors affecting',
+    ],
+  },
+  {
+    id: 'pharm-autonomic',
+    title: 'Autonomic Pharmacology',
+    mappedUnits: ['pharm-autonomic'],
+    structure: STANDARD_EXAM_STRUCTURE,
+    topics: [
+      'Cholinergic agonists — bethanechol (urinary retention), pilocarpine, methacholine',
+      'Cholinesterase inhibitors — neostigmine, pyridostigmine, physostigmine, edrophonium',
+      'Myasthenia gravis — diagnosis (edrophonium test), maintenance (pyridostigmine)',
+      'Anticholinergics — atropine, tolterodine, glycopyrrolate; clinical uses',
+      'Organophosphate poisoning — atropine + pralidoxime management',
+      'Adrenergic agonists — epinephrine, norepinephrine, phenylephrine, methoxamine',
+      'Beta-blockers — metoprolol (cardioselective) vs propranolol (non-selective)',
+      'Alpha-blockers — prazosin, phentolamine; pharmacological effects',
+      'Alpha2-agonists — clonidine, alpha-methyldopa; central antihypertensive action',
+      'Neuromuscular blockers — succinylcholine, dantrolene (malignant hyperthermia)',
+      'Plasma cholinesterase deficiency — prolonged succinylcholine effect',
+      'Adrenergic receptor distribution — beta1 (heart), beta2 (bronchi, vessels)',
+    ],
+  },
+  {
+    id: 'pharm-autacoids-cns',
+    title: 'Autacoids, Inflammation & CNS Pharmacology',
+    mappedUnits: ['pharm-autacoids', 'pharm-cns'],
+    structure: STANDARD_EXAM_STRUCTURE,
+    topics: [
+      'Autacoids vs hormones — local action, no specific cell of origin',
+      'Histamine — H1/H2/H3 receptors, H1 agonists (2-thiazolyl ethylamine)',
+      'H1 antihistamines — first-gen (diphenhydramine, chlorpheniramine) vs second-gen (loratadine, cetirizine)',
+      'H1 antihistamine properties — anticholinergic, anti-5-HT, sedative, appetite-stimulating',
+      'Cardiotoxicity — terfenadine/astemizole + CYP3A4 inhibitors (ketoconazole, erythromycin)',
+      '5-Hydroxytryptamine (serotonin) — 5-HT3 receptor (emesis), 5-HT1 (migraine)',
+      'Migraine prophylaxis — methysergide (visceral fibrosis risk), propranolol, amitriptyline',
+      'Ergot alkaloids — ergotamine, DHE; oxytocic property, ergotism',
+      'Sedative-hypnotics — benzodiazepines, barbiturates, Z-drugs',
+      'Benzodiazepines — mechanism (GABA-A potentiation), antidote (flumazenil)',
+      'Barbiturates — CYP450 induction, tolerance, dependence',
+      'Antipsychotics — typical vs atypical, extrapyramidal side effects, metabolic syndrome',
+    ],
+  },
+  {
+    id: 'pharm-cvs',
+    title: 'Cardiovascular Pharmacology',
+    mappedUnits: ['pharm-cvs'],
+    structure: STANDARD_EXAM_STRUCTURE,
+    topics: [
+      'Antihypertensives — ACE inhibitors, ARBs, CCBs, beta-blockers, diuretics',
+      'ACE inhibitors — mechanism, cough side effect, contraindications (pregnancy, renal artery stenosis)',
+      'Angiotensin receptor blockers — losartan, valsartan; alternative when ACE-I intolerant',
+      'Calcium channel blockers — verapamil, nifedipine, diltiazem; reflex tachycardia',
+      'Beta-blockers — cardioselective (atenolol, metoprolol) vs non-selective (propranolol)',
+      'Diuretics — loop (furosemide), thiazide (HCTZ), K-sparing (spironolactone)',
+      'Cardiac glycosides — digoxin; mechanism, toxicity, TDM',
+      'Antiarrhythmics — Vaughan Williams classification, class I–IV',
+      'Antianginal drugs — nitrates, beta-blockers, CCBs',
+      'Heart failure management — ACE-I + beta-blocker + diuretic + digoxin',
+      'Lipid-lowering drugs — statins, fibrates, ezetimibe',
+      'Anticoagulants — warfarin, heparin, LMWH, NOACs; monitoring, reversal',
+    ],
+  },
+  {
+    id: 'pharm-resp-renal-git',
+    title: 'Respiratory, Renal & GIT Pharmacology',
+    mappedUnits: ['pharm-resp-renal', 'pharm-git'],
+    structure: STANDARD_EXAM_STRUCTURE,
+    topics: [
+      'Bronchodilators — beta2-agonists (salbutamol), anticholinergics (ipratropium), theophylline',
+      'Corticosteroids in respiratory disease — inhaled (budesonide, fluticasone), systemic',
+      'Leukotriene receptor antagonists — montelukast, zafirlukast',
+      'Mast cell stabilisers — sodium cromoglycate, nedocromil',
+      'Theophylline — TDM, narrow therapeutic index, CYP450 interactions',
+      'Diuretics in renal disease — loop diuretics, mechanism, adverse effects',
+      'Antacids — aluminium/magnesium combinations, drug interactions',
+      'H2 receptor antagonists — cimetidine, ranitidine, famotidine',
+      'Proton pump inhibitors — omeprazole, esomeprazole; long-term concerns',
+      'Antiemetics — ondansetron (5-HT3), metoclopramide, prochlorperazine',
+      'Laxatives — bulk-forming, stimulant (bisacodyl, senna), osmotic (lactulose)',
+      'Antidiarrhoeals — loperamide, oral rehydration salts',
+    ],
+  },
+  {
+    id: 'pharm-chemo',
+    title: 'Chemotherapeutic Agents',
+    mappedUnits: ['pharm-chemo'],
+    structure: STANDARD_EXAM_STRUCTURE,
+    topics: [
+      'Antibacterial mechanisms — cell wall (beta-lactams), protein synthesis (macrolides, tetracyclines)',
+      'Beta-lactam antibiotics — penicillins, cephalosporins, carbapenems; spectrum, resistance',
+      'Penicillin allergy — cross-reactivity with cephalosporins, alternative agents',
+      'Macrolides — erythromycin, azithromycin; mechanism, CYP3A4 inhibition',
+      'Tetracyclines — doxycycline, minocycline; indications, photosensitivity',
+      'Aminoglycosides — gentamicin, amikacin; ototoxicity, nephrotoxicity, TDM',
+      'Fluoroquinolones — ciprofloxacin, levofloxacin; tendon toxicity',
+      'Antifungals — azoles (fluconazole), polyenes (amphotericin B), echinocandins',
+      'Antivirals — acyclovir (herpes), oseltamivir (influenza), mechanism',
+      'Tuberculosis — RHZE regimen, mechanism of action, hepatotoxicity monitoring',
+      'Antimalarials — chloroquine, artemisinin combinations, resistance',
+      'Antimicrobial resistance — mechanisms, MRSA, ESBL, stewardship',
+    ],
+  },
+  {
+    id: 'pharm-anticancer-endo',
+    title: 'Anticancer, Endocrine & Vitamin Pharmacology',
+    mappedUnits: ['pharm-anticancer', 'pharm-endo'],
+    structure: STANDARD_EXAM_STRUCTURE,
+    topics: [
+      'Cytotoxic chemotherapy — alkylating agents, antimetabolites, plant alkaloids',
+      'Anticancer drug toxicity — cisplatin (ototoxicity, nephrotoxicity), doxorubicin (cardiotoxicity)',
+      'Immunosuppressants — cyclosporine, tacrolimus, mycophenolate; TDM',
+      'Dermatological pharmacology — topical corticosteroids, antifungals, retinoids',
+      'Ocular pharmacology — beta-blockers (timolol), prostaglandin analogues (latanoprost) in glaucoma',
+      'Thyroid hormones — levothyroxine; antithyroid drugs (carbimazole, propylthiouracil)',
+      'Insulin preparations — rapid, short, intermediate, long-acting; regimens',
+      'Oral hypoglycaemics — metformin, sulfonylureas, DPP-4 inhibitors, SGLT2 inhibitors',
+      'Corticosteroids — prednisolone, dexamethasone; anti-inflammatory, immunosuppressive',
+      'Vitamins — water-soluble (B complex, C) and fat-soluble (A, D, E, K); deficiency states',
+      'Vitamin supplementation — indications, toxicity (hypervitaminosis)',
+      'Bone pharmacology — calcium, vitamin D, bisphosphonates',
+    ],
+  },
+  {
+    id: 'pharm-toxicology',
+    title: 'Toxicology & Drug Discovery',
+    mappedUnits: ['pharm-toxicology'],
+    structure: STANDARD_EXAM_STRUCTURE,
+    topics: [
+      'Heavy metal poisoning — lead, mercury, arsenic; sources, clinical features',
+      'Chelating agents — BAL (dimercaprol), EDTA, penicillamine, DMSA',
+      'Paracetamol poisoning — NAPQI, glutathione depletion, N-acetylcysteine',
+      'Organophosphate/carbamate poisoning — cholinergic crisis, atropine + pralidoxime',
+      'Drug overdose management — ABCDE approach, activated charcoal, antidotes',
+      'Cyanide poisoning — sodium nitrite, sodium thiosulfate, hydroxocobalamin',
+      'Iron poisoning — desferrioxamine, dose, monitoring',
+      'Alcohol toxicity — methanol, ethylene glycol; fomepizole, ethanol therapy',
+      'Drug discovery pipeline — target identification, lead optimisation, preclinical testing',
+      'Clinical trial phases — Phase I–IV, endpoints, ethics (Declaration of Helsinki)',
+      'Toxicokinetics — LD50, therapeutic index, safety margin',
+      'Adverse drug reactions — classification (Type A–F), pharmacovigilance',
+    ],
+  },
+];
+
+// ====================================================================
+// MODULE REGISTRY — both modules
+// ====================================================================
+export const EXAM_PREP_MODULES: ExamModuleSpec[] = [
+  {
+    id: 'clinical-pharmacy-exam',
+    title: 'Clinical Pharmacy',
+    description: 'Practice papers modelled on the real clinical-pharmacy exam pattern. Each subject shows the section structure and topic areas drawn from the most recent past paper, then provides three full mock papers.',
+    units: CLINICAL_PHARMACY_UNITS,
+  },
+  {
+    id: 'pharmacology-exam',
+    title: 'Pharmacology',
+    description: 'Practice papers covering systematic pharmacology from general principles through chemotherapy and toxicology. Based on Kabarak University PHAM past-paper patterns.',
+    units: PHARMACOLOGY_UNITS,
+  },
+];
+
+// Flat list for direct access (backwards-compatible)
+export const EXAM_PREP_UNITS: ExamUnitSpec[] = [
+  ...CLINICAL_PHARMACY_UNITS,
+  ...PHARMACOLOGY_UNITS,
+];
+
 export function getExamPrepUnit(id: string): ExamUnitSpec | undefined {
   return EXAM_PREP_UNITS.find((u) => u.id === id);
+}
+
+export function getExamPrepModule(id: string): ExamModuleSpec | undefined {
+  return EXAM_PREP_MODULES.find((m) => m.id === id);
 }

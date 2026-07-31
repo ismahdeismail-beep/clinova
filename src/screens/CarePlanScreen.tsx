@@ -4,6 +4,7 @@ import {
   HeartPulse, Stethoscope, Bug, FlaskConical, Activity, Droplets,
   BrainCircuit, FileText, Heart, Users, Siren, Scan, Eye,
   ChevronRight, ChevronLeft, Search, ClipboardCheck,
+  LayoutDashboard, List, Clipboard, BookOpen, Home,
 } from 'lucide-react';
 import {
   getCarePlanSpecialties, getDiseasesForSpecialty,
@@ -238,11 +239,11 @@ function CarePlanDetail({
   const [activeTab, setActiveTab] = useState<'overview' | 'diagnoses' | 'interventions' | 'education' | 'discharge'>('overview');
 
   const tabs = [
-    { id: 'overview' as const, label: 'Overview' },
-    { id: 'diagnoses' as const, label: 'Diagnoses & Goals' },
-    { id: 'interventions' as const, label: 'Interventions' },
-    { id: 'education' as const, label: 'Patient Education' },
-    { id: 'discharge' as const, label: 'Discharge' },
+    { id: 'overview' as const, label: 'Overview', icon: LayoutDashboard },
+    { id: 'diagnoses' as const, label: 'Diagnoses & Goals', icon: List },
+    { id: 'interventions' as const, label: 'Interventions', icon: Clipboard },
+    { id: 'education' as const, label: 'Patient Education', icon: BookOpen },
+    { id: 'discharge' as const, label: 'Discharge', icon: Home },
   ];
 
   return (
@@ -270,19 +271,24 @@ function CarePlanDetail({
 
         {/* Tabs */}
         <div className="flex gap-1 bg-[var(--surface)] p-1 rounded-2xl border border-[var(--border)] overflow-x-auto">
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap cursor-pointer ${
-                activeTab === tab.id
-                  ? 'bg-[var(--primary)] text-white shadow-sm'
-                  : 'text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)]'
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
+          {tabs.map((tab) => {
+            const Icon = tab.icon;
+            const isActive = activeTab === tab.id;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap cursor-pointer ${
+                  isActive
+                    ? 'bg-[var(--primary)] text-[var(--primary-foreground)] shadow-sm'
+                    : 'text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)]'
+                }`}
+              >
+                <Icon size={14} />
+                {tab.label}
+              </button>
+            );
+          })}
         </div>
 
         {/* Tab Content */}

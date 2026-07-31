@@ -1,0 +1,574 @@
+{
+  "code": "4108",
+  "title": "Pharmacology VIII — Gastrointestinal Pharmacology",
+  "sections": {
+    "A": [
+      {
+        "stem": "The plasma levels of ketoconazole are lower than normal following its oral absorption in patients treated with lansoprazole. What is the reason for this?",
+        "options": [
+          "The induction of enzymes that metabolize ketoconazole",
+          "Ketoconazole requires an acid environment for its oral absorption",
+          "Lansoprazole binds acidic drugs in the gastrointestinal tract",
+          "Increased gastrointestinal transit time because of the prokinetic effects of lansoprazole"
+        ]
+      },
+      {
+        "stem": "The widely used anticoagulant warfarin is often implicated in drug interactions. If a patient takes warfarin but later begins self-medicating for ulcer pain, what drug useful for ulcers would increase the risk for bleeding?",
+        "options": [
+          "Ranitidine",
+          "Sucralfate",
+          "Misoprostol",
+          "Cimetidine"
+        ]
+      },
+      {
+        "stem": "Which statement concerning nausea and vomiting is the most accurate?",
+        "options": [
+          "Afferents from the stomach to the vomiting centre inhibit vomiting when stimulated.",
+          "Selective 5-HT3 receptor antagonists are effective against motion sickness.",
+          "Nabilone is derived from a psychoactive component of cannabis.",
+          "Stimulation of neurokinin 1 (NK1) receptors in the CTZ inhibits nausea."
+        ]
+      },
+      {
+        "stem": "Which of the following statements about Helicobacter pylori is the least accurate?",
+        "options": [
+          "H. pylori infection in the gastric antrum reduces acid secretion.",
+          "H. pylori infection can be found in the duodenum in people with duodenal ulcers.",
+          "If H. pylori is not eliminated; a duodenal ulcer is likely to recur.",
+          "H. pylori is a risk factor for the development of gastric cancer."
+        ]
+      },
+      {
+        "stem": "Choose the most accurate statement concerning irritable bowel disease (IBD) drugs",
+        "options": [
+          "5-Aminosalicylic acid given orally or rectally is well absorbed.",
+          "Balsalazide comprises two molecules of 5-ASA joined by an azo bond.",
+          "Adalimumab is an antibody directed against interleukin-6.",
+          "Metronidazole can be used in the treatment of inflammatory bowel disease."
+        ]
+      },
+      {
+        "stem": "Choose the correct statement below concerning laxatives.",
+        "options": [
+          "Bulk laxative use should be accompanied by drinking plenty of water.",
+          "Magnesium sulphate inhibits cholecystokinin release.",
+          "Lactulose acts by stimulating the enteric nerves.",
+          "Aluminium hydroxide can cause diarrhea."
+        ]
+      },
+      {
+        "stem": "Which of the following statements about diarrhea is incorrect?",
+        "options": [
+          "Rotavirus is an uncommon cause of diarrhea in adults",
+          "Kaolin is not recommended for acute diarrhea",
+          "Loperamide should not be used for dysentery",
+          "Loperamide decreases the gut residence time of the infective organism"
+        ]
+      },
+      {
+        "stem": "A 45-year-old woman had been self-medicating for heartburn. The preparation she was using was a combination of magnesium hydroxide and aluminum hydroxide. Which of the following reasons best explains why many antacid preparations on the market contain a combination of these two antacids instead of a single product?",
+        "options": [
+          "To achieve a bactericidal effect on Helicobacter pylori",
+          "To decrease the occurrence of constipation or diarrhea",
+          "To avoid interaction with other drugs given concomitantly",
+          "To facilitate gastric emptying"
+        ]
+      },
+      {
+        "stem": "A 76-year-old woman who underwent surgery to remove a colon polyp complained of epigastric pain the day after the operation. Her general condition rapidly deteriorated, and she was transferred to the intensive care unit because of septic shock. Which of the following therapeutic regimens would be appropriate to prevent stress-related mucosal bleeding in this patient?",
+        "options": [
+          "Ondansetron by IV infusion",
+          "Sucralfate by nasogastric tube",
+          "Misoprostol by nasogastric tube",
+          "Famotidine by IV infusion"
+        ]
+      },
+      {
+        "stem": "A 61-year-old man with newly diagnosed lung cancer was scheduled to receive his first course of chemotherapy. A prophylactic antiemetic treatment was planned that included ondansetron. Which of the following brain regions represent a site of the antiemetic action of the drug?",
+        "options": [
+          "Nucleus tractus solitarius",
+          "Putamen",
+          "Locus ceruleus",
+          "Nucleus accumbens",
+          "Medial forebrain bundle"
+        ]
+      },
+      {
+        "stem": "A 70-year-old woman complained to her physician of obstinate constipation. The physician prescribed a laxative that acts in the colon by absorbing water into the fecal contents, thus promoting peristalsis about 1 or 2 days after administration. Which of the following drugs was most likely prescribed?",
+        "options": [
+          "Castor oil",
+          "Docusate",
+          "Magnesium sulfate",
+          "Methylcellulose"
+        ]
+      },
+      {
+        "stem": "A 58-year-old alcoholic man suffering from hepatic cirrhosis was admitted to the hospital because of drowsiness and disorientation in time and place. Further exams led to the diagnosis of portal-systemic encephalopathy. Which of the following drugs would be appropriate to eliminate toxic enteric products in this patient?",
+        "options": [
+          "Omeprazole",
+          "Lactulose",
+          "Loperamide",
+          "Sucralfate"
+        ]
+      },
+      {
+        "stem": "A 65-year-old woman suffering from chronic heartburn was routinely taking a large amount of an antacid preparation containing aluminum hydroxide. Lab exams of this patient would most likely show which of the following results?",
+        "options": [
+          "Hypercalcemia",
+          "Hypernatremia",
+          "Hypokalemia",
+          "Hypophosphatemia"
+        ]
+      },
+      {
+        "stem": "A 45-year-old woman presented to her physician because of a 2-week history of painless diarrhea that was urgent and usually occurred during meals. After physical examination, lab tests, and colonoscopy, a diagnosis of irritable bowel syndrome was made, and the woman was prescribed an appropriate therapy that included loperamide. Direct activation of which of the following receptors most likely mediated the therapeutic effect of the drug in this patient?",
+        "options": [
+          "Beta-2 adrenergic",
+          "5-HT3 serotonergic",
+          "Mu opioid",
+          "M3 cholinergic"
+        ]
+      },
+      {
+        "stem": "An 18-year-old man traveling on vacation in Mexico noted some mild abdominal cramps and three or four unformed stools over the past 24 hours. No blood was seen in the stool. Which of the following drugs would be appropriate to treat the patient’s diarrhea?",
+        "options": [
+          "Magnesium sulfate",
+          "Bismuth subsalicylate",
+          "Vancomycin",
+          "Erythromycin"
+        ]
+      },
+      {
+        "stem": "A 45-year-old man recently diagnosed with mild colonic Crohn disease had been receiving sulfasalazine for 4 weeks, but remission was not achieved. Prednisone was added for another 2 weeks, but improvement was negligible, and the gastroenterologist decided to add a third drug to the therapy. Which of the following drugs would be appropriate for the patient at this time?",
+        "options": [
+          "Mesalamine",
+          "Daclizumab",
+          "Dexamethasone",
+          "Infliximab"
+        ]
+      },
+      {
+        "stem": "Which of the following best describes the mechanism of action of antacids?",
+        "options": [
+          "Inhibition of pepsin and hydrochloric acid secretion",
+          "Stimulation of bicarbonate secretion by epithelial cells",
+          "Reaction with hydrochloric acid in the stomach lumen",
+          "Binding to necrotic ulcer tissue"
+        ]
+      },
+      {
+        "stem": "A 50-year-old woman complained to her physician of regurgitation of foul-tasting fluid into her mouth and occasional nausea and vomiting. The physician prescribed a drug that can both prevent nausea and vomiting and promote upper gastrointestinal motility. Blockade of which of the following receptors most likely contributed to the therapeutic effect\nof the drug in the patient’s disease?",
+        "options": [
+          "M3 cholinergic",
+          "Beta-2 adrenergic",
+          "H2 histaminergic",
+          "D2 dopaminergic"
+        ]
+      },
+      {
+        "stem": "A 44-year-old man who has been receiving his first course of chemotherapy for a non-Hodgkin lymphoma still complains of recurrent nausea and vomiting despite antiemetic medication with ondansetron, dexamethasone, and aprepitant. Which of the following drugs would be appropriate to add to the patient’s antiemetic regimen at this time?",
+        "options": [
+          "Famotidine",
+          "Omeprazole",
+          "Loperamide",
+          "Dronabinol"
+        ]
+      },
+      {
+        "stem": "A 64-year-old woman suffering from episodic heartburn routinely took an over-the-counter medication as needed. The drug acts by inhibiting the action of an endogenous compound released from enterochromaffin-like cells of the stomach. Which of the following drugs did the patient most likely take?",
+        "options": [
+          "Misoprostol",
+          "Famotidine",
+          "Loratadine",
+          "Sucralfate"
+        ]
+      },
+      {
+        "stem": "A 36-year-old man complained to his physician of dizziness and drowsiness. The man, recently diagnosed with gastroesophageal reflux disease, had started an appropriate treatment 2 weeks earlier. Laboratory findings showed an increase of the patient’s prolactin levels. Which of the following drugs could have caused the signs and symptoms of this patient?",
+        "options": [
+          "Ranitidine",
+          "Omeprazole",
+          "Sucralfate",
+          "Metoclopramide"
+        ]
+      },
+      {
+        "stem": "A 60-year-old man suffering from recurrent heartburn routinely took large quantities of different antacid preparations. Which of the following antacids had the highest risk of metabolic alkalosis in this patient?",
+        "options": [
+          "NaHCO3",
+          "CaCO3",
+          "Al(OH)3",
+          "Mg(OH)2"
+        ]
+      },
+      {
+        "stem": "A 67-year-old man complained to his physician of nervousness, insomnia, palpitations, and stomachache. The man had a long history of chronic obstructive pulmonary disease currently treated with inhaled ipratropium and oral theophylline. He told the physician that he had started taking cimetidine for heartburn 3 days ago. Which of the following best explains the reason for the patient’s current complaints?",
+        "options": [
+          "Cimetidine increased the clearance of theophylline.",
+          "Cimetidine decreased the clearance of theophylline.",
+          "Cimetidine increased the clearance of ipratropium.",
+          "Theophylline increased the clearance of cimetidine."
+        ]
+      },
+      {
+        "stem": "A 71-year-old man with terminal metastatic lung cancer had been hospitalized for 3 months. His renal function had deteriorated, and laboratory results showed serum creatinine 4.5 mg/dL (normal 0.9−1.2 mg/dL) and blood urea nitrogen (BUN) 75 mg/dL (normal 6−20 mg/dL). Because of poor food intake, immobility, and requirement for an opioid analgesia, the patient was severely constipated and required daily laxative therapy. Which of the following would be a suitable laxative for this patient?",
+        "options": [
+          "Lactulose",
+          "Castor oil",
+          "Magnesium hydroxide",
+          "Sodium phosphate"
+        ]
+      },
+      {
+        "stem": "A 74-year-old patient suffering from chronic constipation complained of very loose stools after a treatment with bisacodyl, one tablet daily for 1 week. Which of the following would be the best advice to give to this patient?",
+        "options": [
+          "There is no cause for alarm; the situation is self-limiting.",
+          "Continue bisacodyl, but take the medication with a small snack.",
+          "Continue bisacodyl, and add lactulose.",
+          "Discontinue bisacodyl, and increase fiber and fluid intake."
+        ]
+      },
+      {
+        "stem": "A 43-year-old man recently diagnosed with testicular cancer was in the hospital for his second cycle of chemotherapy. A three-drug combination was given to prevent chemotherapy-induced nausea and vomiting. The combination included a drug that blocks NK1 neurokinin receptors in the area postrema. Which of the following drugs has this molecular mechanism of action?",
+        "options": [
+          "Ondansetron",
+          "Dronabinol",
+          "Aprepitant",
+          "Metoclopramide"
+        ]
+      },
+      {
+        "stem": "A 34-year-old hospitalized male patient complained of torticollis, grimacing, and spasm of the ocular muscles 1 day after surgery. The man had received an intravenous drug soon after surgery to treat nausea and vomiting. Which of the following antiemetic drugs most likely caused the patient’s symptoms?",
+        "options": [
+          "Ondansetron",
+          "Scopolamine",
+          "Dexamethasone",
+          "Metoclopramide"
+        ]
+      },
+      {
+        "stem": "A 24-year-old woman in her second trimester of pregnancy complained of constipation at a routine prenatal visit. The physician instructed the woman to maintain bowel function by drinking plenty of water, increasing bulk in the diet with vegetables, and taking a laxative daily. Which of the following laxatives would be most appropriate for this patient?",
+        "options": [
+          "Castor oil",
+          "Bisacodyl",
+          "Senna",
+          "Docusate"
+        ]
+      },
+      {
+        "stem": "A 63-year-old man suffering from a small cell carcinoma of the lung was hospitalized for his first cycle of chemotherapy. Which of the following three-drug regimens would be the best to prevent nausea and vomiting in this patient?",
+        "options": [
+          "Ranitidine, diazepam, dexamethasone",
+          "Scopolamine, dexamethasone, ondansetron",
+          "Ondansetron, aprepitant, dexamethasone",
+          "Aprepitant, scopolamine, loperamide"
+        ]
+      },
+      {
+        "stem": "A 68-year-old patient with cardiac failure is diagnosed with ovarian cancer. She begins using cisplatin but becomes nauseous and suffers from severe vomiting. Which of the following medications would be most effective to counteract the emesis in this patient without exacerbating her cardiac problem?",
+        "options": [
+          "Droperidol.",
+          "Dolasetron.",
+          "Prochlorperazine.",
+          "Palonosetron."
+        ]
+      },
+      {
+        "stem": "Which of the following drugs has been known to cause discoloration of the tongue?",
+        "options": [
+          "Amoxicillin.",
+          "Omeprazole.",
+          "Bismuth compounds.",
+          "Lubiprostone"
+        ]
+      },
+      {
+        "stem": "All of the following drugs are generally well tolerated for the treatment of constipation except:",
+        "options": [
+          "Castor oil.",
+          "Methylcellulose.",
+          "Polyethylene glycol.",
+          "Docusate."
+        ]
+      },
+      {
+        "stem": "An elderly woman with a recent history of myocardial infarction is seeking a medication to help treat her occasional heartburn. She is currently taking several medications, including aspirin, Clopidogrel, simvastatin, metoprolol, and lisinopril. Which of the following choices should be avoided in this patient?",
+        "options": [
+          "Calcium citrate.",
+          "Famotidine.",
+          "Omeprazole.",
+          "Ranitidine."
+        ]
+      },
+      {
+        "stem": "Extrapyramidal symptoms (EPS) have been associated with which of the following drugs?",
+        "options": [
+          "Metoclopramide.",
+          "Alprazolam.",
+          "Aprepitant.",
+          "Loperamide."
+        ]
+      },
+      {
+        "stem": "Which of the following medications for gastrointestinal problems is contraindicated in pregnancy?",
+        "options": [
+          "Calcium carbonate.",
+          "Famotidine.",
+          "Lansoprazole.",
+          "Misoprostol"
+        ]
+      },
+      {
+        "stem": "For healing duodenal ulcer, the usual duration of H2 blocker therapy is at least:",
+        "options": [
+          "4 weeks",
+          "6 weeks",
+          "8 weeks",
+          "12 weeks"
+        ]
+      },
+      {
+        "stem": "Gynaecomastia can occur as a side effect of:",
+        "options": [
+          "Bromocriptine",
+          "Cimetidine",
+          "Famotidine",
+          "Levodopa"
+        ]
+      },
+      {
+        "stem": "The widely used anticoagulant warfarin is often implicated in drug interactions. If a patient takes warfarin but later begins self-medicating for ulcer pain, what drug useful for ulcers would increase the risk for bleeding?",
+        "options": [
+          "Ranitidine",
+          "Sucralfate",
+          "Misoprostol",
+          "Cimetidine"
+        ]
+      },
+      {
+        "stem": "Which one of the following is likely to be used in motion sickness, and nausea and vomiting of pregnancy?",
+        "options": [
+          "Loratadine",
+          "Ondansetron",
+          "Meclizine",
+          "Fexofenadine"
+        ]
+      },
+      {
+        "stem": "Constipation i s highly unlikely to occur with the use of which of the following?",
+        "options": [
+          "Diphenhydramine",
+          "Docusate",
+          "Promethazine",
+          "Loperamide"
+        ]
+      },
+      {
+        "stem": "A 55-year-old woman with type 1 diabetes of 40 years’ duration complains of severe bloating and abdominal distress, especially after meals. Evaluation is consistent with diabetic gastroparesis. Which of the following is a prokinetic drug that could be used in this situation?",
+        "options": [
+          "Alosetron",
+          "Cimetidine",
+          "Loperamide",
+          "Metoclopramide"
+        ]
+      },
+      {
+        "stem": "A patient who is taking verapamil for hypertension and angina has become constipated. Which of the following drugs is an osmotic laxative that could be used to treat the patient’s constipation?",
+        "options": [
+          "Aluminum hydroxide",
+          "Diphenoxylate",
+          "Magnesium hydroxide",
+          "Metoclopramide"
+        ]
+      },
+      {
+        "stem": "Which drug accumulates in parietal cell canaliculi and undergoes conversion to a derivative that irreversibly inhibits H+/K+ ATPase?",
+        "options": [
+          "Cimetidine",
+          "Diphenoxylate",
+          "Esomeprazole",
+          "Metoclopramide"
+        ]
+      },
+      {
+        "stem": "All of the following agents intensify the secretion of gastric glands EXCEPT?",
+        "options": [
+          "Pepsin",
+          "Gastrin",
+          "Histamine",
+          "Carbonate mineral waters"
+        ]
+      },
+      {
+        "stem": "A 34-year-old woman has irritable bowel syndrome with diarrhea that is not responsive to conventional therapies. Despite the small risk of severe constipation and ischemic colitis, the patient decides to begin therapy with alosetron. Alosetron has which of the following receptor actions?",
+        "options": [
+          "5-HT3 receptor antagonist",
+          "5-HT4 receptor agonist",
+          "D2 receptor antagonist",
+          "NK1 receptor antagonist"
+        ]
+      },
+      {
+        "stem": "A 45-year-old man with a duodenal ulcer was treated with a combination of drugs intended to heal the mucosal damage and to eradicate Helicobacter pylori. Which of the following antibacterial drugs is used commonly to eradicate intestinal Helicobacter pylori?",
+        "options": [
+          "Cefazolin",
+          "Ciprofloxacin",
+          "Clarithromycin",
+          "Clindamycin"
+        ]
+      },
+      {
+        "stem": "Gastric acid secretion is under the control of the following agents EXCEPT?",
+        "options": [
+          "Histamine",
+          "Acetylcholine",
+          "Serotonin",
+          "Gastrin"
+        ]
+      },
+      {
+        "stem": "Select the drug stimulating the protective function of the mucous barrier and the stability of the mucous membrane against damaging factors:",
+        "options": [
+          "Bismuth Subcitrate",
+          "Sucralfate",
+          "Misoprostol",
+          "Omeprazole"
+        ]
+      },
+      {
+        "stem": "Which among the following drugs causes constipation?",
+        "options": [
+          "Sodium bicarbonate",
+          "Aluminium hydroxide",
+          "Calcium carbonate",
+          "Magnesium oxide"
+        ]
+      },
+      {
+        "stem": "The mechanism of stimulant purgatives is:",
+        "options": [
+          "Increasing the volume of non-absorbable solid residue",
+          "Increasing motility and secretion",
+          "Altering the consistency of the feces",
+          "Increasing the water content"
+        ]
+      },
+      {
+        "stem": "Ranitidine differs from cimetidine in the following respect:",
+        "options": [
+          "It is less potent",
+          "It is shorter acting",
+          "It does not have antiandrogenic action",
+          "It produces more CNS side effects"
+        ]
+      },
+      {
+        "stem": "The ‘acid neutralizing capacity’ of an antacid is governed by:",
+        "options": [
+          "The equivalent weight of the antacid",
+          "The pH of 1N solution of the antacid",
+          "The rate at which the antacid reacts with HCl",
+          "Both ‘A’ and ‘C’"
+        ]
+      },
+      {
+        "stem": "Antacids administered concurrently reduce efficacy of the following antipeptic ulcer drug:",
+        "options": [
+          "Cimetidine",
+          "Colloidal bismuth",
+          "Sucralfate",
+          "Pirenzepine"
+        ]
+      },
+      {
+        "stem": "The most dependable emetic used to expel ingested poisons is:",
+        "options": [
+          "Intramuscular emetine",
+          "Oral syrup ipecacuanha",
+          "Intramuscular apomorphine",
+          "Oral bromocriptine"
+        ]
+      },
+      {
+        "stem": "The most effective anti motion sickness drug suitable for short brisk journies is:",
+        "options": [
+          "Promethazine theoclate",
+          "Cinnarizine",
+          "Prochlorperazine",
+          "Hyoscine"
+        ]
+      },
+      {
+        "stem": "Metoclopramide has the following actions except:",
+        "options": [
+          "Increases lower esophageal sphincter tone",
+          "Increases tone of pyloric sphincter",
+          "Increases gastric peristalsis",
+          "Increases intestinal peristalsis"
+        ]
+      },
+      {
+        "stem": "The following prokinetic drug has been implicated in causing serious ventricular arrhythmias, particularly in patients concurrently receiving erythromycin or ketoconazole:",
+        "options": [
+          "Domperidone",
+          "Cisapride",
+          "Mosapride",
+          "Metoclopramide"
+        ]
+      },
+      {
+        "stem": "Used as a laxative, liquid paraffin has the following drawbacks except?",
+        "options": [
+          "It interferes with absorption of fat soluble vitamins",
+          "It is unpleasant to swallow",
+          "It causes griping",
+          "It can produce foreign body granulomas"
+        ]
+      },
+      {
+        "stem": "Stimulant purgatives are contraindicated in the following:",
+        "options": [
+          "Bed ridden patients",
+          "Before abdominal radiography",
+          "Spastic constipation",
+          "Atonic constipation"
+        ]
+      },
+      {
+        "stem": "The therapeutic effect of sulfasalazine in ulcerative colitis is exerted by:",
+        "options": [
+          "Inhibitory action of the unabsorbed drug on the abnormal colonic flora",
+          "Breakdown of the drug in colon to release 5-aminosalicylic acid which suppresses inflammation locally",
+          "Release of sulfapyridine having antibacterial property",
+          "Systemic immunomodulatory action of the drug"
+        ]
+      }
+    ],
+    "B": [
+      {
+        "stem": "Match each gastrointestinal drug with the appropriate description (7 Marks)\nDrugs: Erythromycin, omeprazole, Magnesium hydroxide, Misoprostol, Sucralfate, metoclopramide, Docusate, Aprepitant, Aluminium hydroxide, Ranitidine, Mesalamine, Bisacodyl\nDescriptions:\n1. A drug that can increase intestinal peristalsis by activating motilin receptors\n2. An antiulcer agent that can inhibit 24-hour gastric acid secretion up to 95%\n3. A salicylate derivative used in inflammatory bowel diseases\n4. An antiemetic drug used primarily for chemotherapy-induced vomiting\n5. An antacid that also has laxative properties\n6. A prostaglandin E1 analogue that can have a cytoprotective effect on gastric mucosa\n7. An antiulcer agent that binds to necrotic peptic ulcer tissue, thus acting as a barrier to gastric juice (This is a small molecule that polymerizes in stomach acid and coats the ulcer bed, resulting in accelerated healing and reduction of symptoms.)"
+      },
+      {
+        "stem": "Using a suitable example illustrate the mode of action and clinical use of one emetic agent (3 Marks)"
+      },
+      {
+        "stem": "A patient who has been diabetic for the last 25 years is diagnosed with gastroparesis. Recommend an antibiotic drug that could be used to manage this condition and describe the mode of action of this drug (3 Marks)"
+      },
+      {
+        "stem": "A patient travelling from Japan visits Nakuru and is diagnosed with traveler’s diarrhea. Identify and explain the mechanism of action of a drug that you would recommend to reduce the number of bowel movements (3 Marks)"
+      },
+      {
+        "stem": "S.W is a 32-year-old lady who is 5 months pregnant. She calls you for advice regarding her heartburn which seems to be worsening. Currently she is not on any medication. With reason(s), identify the antacids you would advise her to chew and the one(s) you would advise her to avoid. (4 Marks)"
+      }
+    ],
+    "C": [
+      {
+        "stem": "O.M, a 35-year-old man was diagnosed with non-Hodgkin’s lymphoma requiring many sessions of treatment with combined cytotoxic therapy, including cyclophosphamide and vincristine.\nExplain why O.M was likely to experience nausea and vomiting? (1 Mark)\nNausea and vomiting started several hours after each course of treatment and continued for 4–5 days. Identify a planned antiemetic treatment prior to the first course of chemotherapy that would be beneficial? (2 Marks)\nDescribe how the treatments you have chosen work? (4 Marks)\nO.M became very distressed by the severity of the nausea and vomiting and developed intense nausea and vomiting prior to the administration of the chemotherapeutic agents. Identify what treatment could be given to reduce the anticipatory nausea and vomiting? (2 Marks)\nThree days after the 3rd cycle of chemotherapy, O.M experiences severe pain and returns to his oncologist. He is put on PO morphine syrup. After 3 days of taking the morphine, OM hasn’t had a bowel movement and he now complains of bloating and abdominal discomfort. Recommend a drug that would help relieve O.M (2 Marks)\nDescribe the mechanism of action), two adverse effects and one contraindication of the drug suggested in (E) above (5 Marks)\nAfter achieving full cancer remission O.M was diagnosed with peptic ulcer disease. Devise a treatment regimen that you would recommend for radical eradication of H.pylori Infection and cure of the ulcers (4 Marks)"
+      },
+      {
+        "stem": "A 35-year-old man presented with a 3-week period of frequent diarrhea with mucus but no blood in the stool. Stool analysis for infective agents was negative. Sigmoidoscopy indicated gross thickening of the mucosa, with inflammation and linear ulcers. Changes were present in restricted areas (skip lesions) with intervening normal mucosa. Histology was diagnostic of Crohn’s disease and investigation suggested that the condition was confined to the sigmoid and part of the ascending colon.\nDescribe the cause of Crohn’s disease? (2 Marks)\nPropose the initial pharmacological therapy for this patient? (2 Marks)\nExplain the mode(s) of action of the drug that you have proposed in (B) above\n(2 Marks)\nDevise an appropriate pharmacological therapy that could be used to maintain remission in this man? (2 Marks)\nOutline the mode of action of the drug you have suggested in (D) above\n(2 Marks)\nIllustrate 4 adverse effects of the drug you have suggested in (D) above\n(4 Marks)\nRecommend an alternative therapy can be given to try and reduce the risk of dependence on the drug you suggested in (B) above? (2 Marks)\nExamine the mode of action and 2 adverse effects of the drug you suggested in (G) above. (4 Marks)"
+      }
+    ]
+  }
+}

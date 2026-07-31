@@ -1,0 +1,1427 @@
+{
+  "pharm-new-autonomic": {
+    "1": {
+      "title": "Autonomic Nervous System",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 45-year-old farmer is brought to the emergency department with symptoms of excessive salivation, lacrimation, urination, diarrhea, and pinpoint pupils after accidental exposure to an insecticide. Which of the following is the most appropriate immediate treatment?",
+              "options": [
+                "Atropine",
+                "Neostigmine",
+                "Pralidoxime",
+                "Physostigmine"
+              ],
+              "answer": "Atropine",
+              "explanation": "Atropine is the first-line antidote for organophosphate poisoning, counteracting muscarinic effects such as salivation, lacrimation, and bradycardia."
+            },
+            {
+              "stem": "A 58-year-old male with a history of urinary retention secondary to benign prostatic hyperplasia is prescribed a cholinergic agonist to improve bladder emptying. Which drug is most suitable for this patient?",
+              "options": [
+                "Atropine",
+                "Bethanechol",
+                "Pilocarpine",
+                "Scopolamine"
+              ],
+              "answer": "Bethanechol",
+              "explanation": "Bethanechol is a muscarinic agonist used to treat urinary retention by stimulating bladder contraction."
+            },
+            {
+              "stem": "A 32-year-old female with a diagnosis of myasthenia gravis presents with ptosis and generalized muscle weakness that worsens with activity. Which diagnostic test involves the administration of a short-acting cholinesterase inhibitor to confirm the diagnosis?",
+              "options": [
+                "Neostigmine test",
+                "Edrophonium test",
+                "Pyridostigmine test",
+                "Physostigmine test"
+              ],
+              "answer": "Edrophonium test",
+              "explanation": "Edrophonium is a short-acting cholinesterase inhibitor used in the edrophonium test to transiently improve muscle strength in myasthenia gravis."
+            },
+            {
+              "stem": "Which of the following drugs is preferred for maintenance therapy in myasthenia gravis due to its lack of central nervous system penetration?",
+              "options": [
+                "Physostigmine",
+                "Pyridostigmine",
+                "Edrophonium",
+                "Neostigmine"
+              ],
+              "answer": "Pyridostigmine",
+              "explanation": "Pyridostigmine is a long-acting cholinesterase inhibitor that does not cross the blood-brain barrier, making it suitable for chronic use in myasthenia gravis."
+            },
+            {
+              "stem": "A patient develops bradycardia after administration of methoxamine. Which drug can prevent this bradycardic effect?",
+              "options": [
+                "Phentolamine",
+                "Mecamylamine",
+                "Atropine",
+                "All of the choices"
+              ],
+              "answer": "Atropine",
+              "explanation": "Atropine blocks muscarinic receptors, preventing the reflex bradycardia induced by methoxamine, an alpha-1 agonist."
+            },
+            {
+              "stem": "How does metoprolol differ from propranolol in its pharmacological profile?",
+              "options": [
+                "Metoprolol is used for hypertension management",
+                "Metoprolol has selectivity for beta-2 adrenoceptors",
+                "Metoprolol is less likely to reduce cardiac output",
+                "Metoprolol is less likely to precipitate bronchoconstriction"
+              ],
+              "answer": "Metoprolol is less likely to precipitate bronchoconstriction",
+              "explanation": "Metoprolol is cardioselective (beta-1 selective), reducing the risk of bronchoconstriction compared to non-selective propranolol."
+            },
+            {
+              "stem": "A patient with a history of hypertension presents with a severe drop in blood pressure after receiving epinephrine. Which drug might the patient have taken that could explain this paradoxical response?",
+              "options": [
+                "Cocaine",
+                "Prazosin",
+                "Atropine",
+                "Guanethidine"
+              ],
+              "answer": "Prazosin",
+              "explanation": "Prazosin is an alpha-1 blocker that can convert the pressor effect of epinephrine to a depressor effect by unopposed beta-2 stimulation."
+            },
+            {
+              "stem": "A drug that stimulates both beta-1 and beta-2 adrenoceptors is expected to cause which of the following effects?",
+              "options": [
+                "A decrease in heart rate",
+                "A decrease in total peripheral resistance",
+                "A constriction of airway smooth muscle",
+                "A decrease in renin release"
+              ],
+              "answer": "A decrease in total peripheral resistance",
+              "explanation": "Beta-2 stimulation causes vasodilation, reducing total peripheral resistance."
+            },
+            {
+              "stem": "Which drug increases both the magnitude of the blood pressure increase due to phenylephrine and the heart rate decrease due to methacholine?",
+              "options": [
+                "Timolol",
+                "Clonidine",
+                "Atropine",
+                "Mecamylamine"
+              ],
+              "answer": "Atropine",
+              "explanation": "Atropine blocks muscarinic receptors, enhancing the pressor effect of phenylephrine and preventing the bradycardic effect of methacholine."
+            },
+            {
+              "stem": "Which of the following drugs can be used to reduce intraocular pressure in the treatment of glaucoma?",
+              "options": [
+                "Pilocarpine",
+                "Acetazolamide",
+                "Timolol",
+                "All of the above"
+              ],
+              "answer": "All of the above",
+              "explanation": "Pilocarpine (cholinergic agonist), acetazolamide (carbonic anhydrase inhibitor), and timolol (beta-blocker) all reduce intraocular pressure."
+            },
+            {
+              "stem": "Dantrolene is the drug of choice for treating malignant hyperthermia caused by succinylcholine because it:",
+              "options": [
+                "Blocks calcium release from the sarcoplasmic reticulum",
+                "Induces contraction of skeletal muscle",
+                "Increases the rate of succinylcholine metabolism",
+                "Antagonizes succinylcholine binding to nicotinic receptors"
+              ],
+              "answer": "Blocks calcium release from the sarcoplasmic reticulum",
+              "explanation": "Dantrolene inhibits calcium release from the sarcoplasmic reticulum, preventing the hypermetabolic state in malignant hyperthermia."
+            },
+            {
+              "stem": "A 65-year-old male presents with optic nerve cupping and increased intraocular pressure. Which drug was most likely administered to improve his condition?",
+              "options": [
+                "Scopolamine",
+                "Atenolol",
+                "Phentolamine",
+                "Timolol"
+              ],
+              "answer": "Timolol",
+              "explanation": "Timolol is a non-selective beta-blocker used topically to reduce intraocular pressure in glaucoma."
+            },
+            {
+              "stem": "Hereditary deficiency of which enzyme can lead to prolonged effects of succinylcholine?",
+              "options": [
+                "Glucose-6-phosphate dehydrogenase",
+                "Plasma cholinesterase",
+                "Cytochrome oxidase",
+                "Liver transaminase"
+              ],
+              "answer": "Plasma cholinesterase",
+              "explanation": "Plasma cholinesterase metabolizes succinylcholine; deficiency prolongs its neuromuscular blocking effects."
+            },
+            {
+              "stem": "Drug X causes an increase in blood pressure and a decrease in heart rate when administered intravenously. If a ganglionic nicotinic receptor antagonist is administered first, Drug X causes an increase in blood pressure and an increase in heart rate. Drug X is most likely:",
+              "options": [
+                "Propranolol",
+                "Isoproterenol",
+                "Norepinephrine",
+                "Tubocurarine"
+              ],
+              "answer": "Norepinephrine",
+              "explanation": "Norepinephrine's alpha-1 mediated vasoconstriction increases blood pressure, while reflex bradycardia occurs; ganglionic blockade removes the reflex, allowing tachycardia."
+            },
+            {
+              "stem": "Clonidine and alpha-methyldopa act as agonists at alpha-2 adrenoceptors to cause:",
+              "options": [
+                "A sustained increase in mean arterial pressure",
+                "An increase in intestinal motility",
+                "A CNS-mediated decrease in blood pressure",
+                "An increase in myocardial contractility"
+              ],
+              "answer": "A CNS-mediated decrease in blood pressure",
+              "explanation": "Alpha-2 agonists reduce sympathetic outflow from the CNS, lowering blood pressure."
+            },
+            {
+              "stem": "Nicotine mimics acetylcholine at which of the following sites?",
+              "options": [
+                "Adrenal medullary chromaffin cells",
+                "Urinary bladder smooth muscle cells",
+                "Iris circular (constrictor) muscle",
+                "Heart sinoatrial pacemaker cells"
+              ],
+              "answer": "Adrenal medullary chromaffin cells",
+              "explanation": "Nicotine stimulates nicotinic receptors on adrenal medullary cells, causing catecholamine release."
+            },
+            {
+              "stem": "Which drug decreases the release of norepinephrine from noradrenergic nerves?",
+              "options": [
+                "Prazosin",
+                "Atropine",
+                "Phenylephrine",
+                "Clonidine"
+              ],
+              "answer": "Clonidine",
+              "explanation": "Clonidine is an alpha-2 agonist that reduces norepinephrine release via presynaptic inhibition."
+            },
+            {
+              "stem": "Adverse effects that limit the use of adrenoceptor blockers include which one of the following?",
+              "options": [
+                "Bronchoconstriction from alpha-blocking agents",
+                "Acute heart failure exacerbation from beta-blockers",
+                "Impaired blood sugar response with alpha-blockers",
+                "Increased intraocular pressure with beta-blockers"
+              ],
+              "answer": "Acute heart failure exacerbation from beta-blockers",
+              "explanation": "Beta-blockers can precipitate or worsen heart failure in susceptible patients."
+            },
+            {
+              "stem": "Muscarinic cholinoceptor agonists may induce vasodilation largely by causing the release of endothelial:",
+              "options": [
+                "Acetylcholine",
+                "Nitric oxide",
+                "Histamine",
+                "Norepinephrine"
+              ],
+              "answer": "Nitric oxide",
+              "explanation": "Muscarinic agonists stimulate endothelial nitric oxide synthase, leading to vasodilation."
+            },
+            {
+              "stem": "The reflex change in heart rate associated with administration of a low dose of metaproterenol could be blocked by which agent?",
+              "options": [
+                "Atropine",
+                "Prazosin",
+                "Propranolol",
+                "Physostigmine"
+              ],
+              "answer": "Propranolol",
+              "explanation": "Propranolol blocks beta-1 receptors, preventing the reflex tachycardia induced by metaproterenol (a beta-2 agonist)."
+            },
+            {
+              "stem": "In an experiment, drug X is added to a muscle bath containing guinea pig intestinal smooth muscle. Acetylcholine increases muscle tension. Which drug is most likely to mimic drug X’s effects?",
+              "options": [
+                "Alpha-1 adrenergic antagonist",
+                "Beta-adrenergic antagonist",
+                "Cholinesterase inhibitor",
+                "Muscarinic antagonist"
+              ],
+              "answer": "Cholinesterase inhibitor",
+              "explanation": "A cholinesterase inhibitor would potentiate acetylcholine’s effect by preventing its breakdown."
+            },
+            {
+              "stem": "A 72-year-old woman with a history of smoking develops shortness of breath after using eyedrops for glaucoma. Which drug is the most likely cause?",
+              "options": [
+                "Phenylephrine",
+                "Apraclonidine",
+                "Epinephrine",
+                "Timolol"
+              ],
+              "answer": "Timolol",
+              "explanation": "Timolol is a non-selective beta-blocker that can exacerbate bronchospasm in patients with asthma or COPD."
+            },
+            {
+              "stem": "A patient presents with marked perspiration, excessive tearing, nausea, drooling, pinpoint pupils, and bradycardia after consuming a salad containing wild mushrooms. Which active ingredient explains these symptoms?",
+              "options": [
+                "Atropine",
+                "Cocaine",
+                "Muscarine",
+                "Scopolamine"
+              ],
+              "answer": "Muscarine",
+              "explanation": "Muscarine is a muscarinic agonist found in certain mushrooms, causing cholinergic symptoms."
+            },
+            {
+              "stem": "A 5-year-old boy presents with confusion, delusions, fever, tachycardia, dilated pupils, and flushed skin after ingesting berries. The berries likely contain a substance similar to:",
+              "options": [
+                "Atropine",
+                "Pilocarpine",
+                "Reserpine",
+                "Tyramine"
+              ],
+              "answer": "Atropine",
+              "explanation": "Atropine-like substances (antimuscarinics) cause central anticholinergic syndrome with agitation, fever, and dilated pupils."
+            },
+            {
+              "stem": "A 23-year-old asthmatic patient cannot tolerate the CNS side effects of inhaled salbutamol. Which alternative would you prescribe?",
+              "options": [
+                "Ipratropium",
+                "Atropine",
+                "Bethanechol",
+                "Pyridostigmine"
+              ],
+              "answer": "Ipratropium",
+              "explanation": "Ipratropium is an inhaled anticholinergic bronchodilator that avoids CNS side effects."
+            },
+            {
+              "stem": "A 52-year-old man develops dry mouth after neck radiotherapy. Which drug could treat this condition?",
+              "options": [
+                "Atropine",
+                "Diphenhydramine",
+                "Nicotine",
+                "Pilocarpine"
+              ],
+              "answer": "Pilocarpine",
+              "explanation": "Pilocarpine is a muscarinic agonist that stimulates salivary gland secretion."
+            },
+            {
+              "stem": "To protect troops from nerve gas exposure, which oral medication is administered prophylactically?",
+              "options": [
+                "Atropine",
+                "Echothiophate",
+                "Pralidoxime",
+                "Pyridostigmine"
+              ],
+              "answer": "Pyridostigmine",
+              "explanation": "Pyridostigmine is a reversible cholinesterase inhibitor used as prophylaxis against nerve agent exposure."
+            },
+            {
+              "stem": "Exposure to the nerve gas Sarin requires treatment with:",
+              "options": [
+                "Atropine + pralidoxime",
+                "Atropine + trimethaphan",
+                "Pilocarpine + pralidoxime",
+                "Tubocurarine + trimethaphan"
+              ],
+              "answer": "Atropine + pralidoxime",
+              "explanation": "Atropine counteracts muscarinic effects, and pralidoxime reactivates inhibited cholinesterase."
+            },
+            {
+              "stem": "A severely hypertensive patient given trimethaphan intravenously will experience which additional effect?",
+              "options": [
+                "Blunting of all baroreceptor reflexes",
+                "Bradycardia",
+                "Increased GI motility and diarrhea",
+                "Sweating"
+              ],
+              "answer": "Blunting of all baroreceptor reflexes",
+              "explanation": "Trimethaphan is a ganglionic blocker that inhibits baroreceptor reflexes, leading to orthostatic hypotension and reflex tachycardia."
+            },
+            {
+              "stem": "A 22-year-old patient requires rapid sequence intubation. Which neuromuscular blocking agent is most likely used?",
+              "options": [
+                "Atropine",
+                "Neostigmine",
+                "Succinylcholine",
+                "Tubocurarine"
+              ],
+              "answer": "Succinylcholine",
+              "explanation": "Succinylcholine is a depolarizing neuromuscular blocker with rapid onset and short duration, ideal for rapid sequence intubation."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 60-year-old male patient with hypertension and benign prostatic hyperplasia presents to the hospital.\n\na) Which drug would you recommend for this patient? (1 mark)\n\nb) What is the mode of action of the drug mentioned in a)? (2 marks)\n\nc) State four side effects of the drug mentioned in a). (2 marks)",
+              "modelAnswer": {
+                "a": "Prazosin or Tamsulosin (alpha-1 blocker).",
+                "b": "Alpha-1 blockers inhibit postsynaptic alpha-1 adrenergic receptors on vascular smooth muscle and prostate smooth muscle, reducing peripheral vascular resistance and relieving bladder outlet obstruction.",
+                "c": "Orthostatic hypotension, dizziness, reflex tachycardia, nasal congestion, and ejaculatory dysfunction."
+              }
+            },
+            {
+              "stem": "State any two adjuncts of general anesthesia that target the autonomic nervous system.\n\na) What is their role in general anesthesia? (2 marks)\n\nb) What is the mode of action of the drugs mentioned in a)? (4 marks)\n\nc) State any three side effects of each of the drugs mentioned in a). (3 marks)\n\nd) How would you manage cases of overdose with the drugs mentioned in a)? (2 marks)\n\ne) State any four drugs that can be used in the treatment of an acute asthmatic attack. (2 marks)",
+              "modelAnswer": {
+                "a": "Atropine and glycopyrrolate.",
+                "b": "Atropine: Competitive muscarinic antagonist blocking parasympathetic effects. Glycopyrrolate: Synthetic muscarinic antagonist with minimal CNS penetration, reducing secretions and preventing bradycardia.",
+                "c": "Atropine: Tachycardia, dry mouth, urinary retention, blurred vision, constipation. Glycopyrrolate: Tachycardia, dry mouth, urinary retention, constipation, mydriasis.",
+                "d": "Supportive care; for atropine overdose, physostigmine (crosses BBB) may be used cautiously; for glycopyrrolate, supportive measures and monitoring.",
+                "e": "Salbutamol, ipratropium, hydrocortisone, magnesium sulfate."
+              }
+            },
+            {
+              "stem": "A 45-year-old patient presents with symptoms of organophosphate poisoning after accidental exposure to an insecticide.\n\na) List the key clinical features of organophosphate poisoning. (2 marks)\n\nb) Outline the stepwise management of this patient. (3 marks)",
+              "modelAnswer": {
+                "a": "Muscarinic effects: salivation, lacrimation, urination, diarrhea, miosis, bronchospasm, bradycardia. Nicotinic effects: muscle fasciculations, weakness. Central effects: confusion, seizures, coma.",
+                "b": "1) Remove contaminated clothing and decontaminate skin. 2) Administer atropine 2–5 mg IV every 5–15 minutes until muscarinic symptoms resolve. 3) Administer pralidoxime 1–2 g IV over 30 minutes, followed by infusion if needed. 4) Supportive care: oxygen, airway management, benzodiazepines for seizures."
+              }
+            },
+            {
+              "stem": "Compare and contrast the pharmacological profiles of metoprolol and propranolol.\n\na) Mechanism of action. (2 marks)\n\nb) Clinical uses. (2 marks)\n\nc) Adverse effects. (1 mark)",
+              "modelAnswer": {
+                "a": "Metoprolol: Selective beta-1 antagonist. Propranolol: Non-selective beta-1 and beta-2 antagonist.",
+                "b": "Metoprolol: Hypertension, angina, heart failure, post-MI. Propranolol: Hypertension, angina, arrhythmias, tremor, migraine prophylaxis, thyrotoxicosis.",
+                "c": "Metoprolol: Bradycardia, fatigue, hypotension, less bronchospasm risk. Propranolol: Bradycardia, fatigue, hypotension, bronchospasm, cold extremities, CNS effects."
+              }
+            },
+            {
+              "stem": "A 30-year-old female with myasthenia gravis presents with worsening ptosis and generalized weakness.\n\na) What is the first-line diagnostic test for myasthenia gravis? (1 mark)\n\nb) Outline the management of this patient. (4 marks)",
+              "modelAnswer": {
+                "a": "Edrophonium test (Tensilon test).",
+                "b": "1) Pyridostigmine (cholinesterase inhibitor) for maintenance therapy. 2) Immunotherapy: corticosteroids, azathioprine, or mycophenolate. 3) Thymectomy if thymoma or refractory disease. 4) Monitor for cholinergic crisis and adjust dose accordingly."
+              }
+            },
+            {
+              "stem": "A 50-year-old male with a dissecting aortic aneurysm requires rapid blood pressure control.\n\na) Which autonomic drug is used for rapid blood pressure lowering? (1 mark)\n\nb) What is the mechanism of action of this drug? (2 marks)\n\nc) What are the key adverse effects to monitor? (2 marks)",
+              "modelAnswer": {
+                "a": "Trimethaphan.",
+                "b": "Ganglionic nicotinic receptor antagonist, blocking both sympathetic and parasympathetic transmission.",
+                "c": "Orthostatic hypotension, blurred vision, urinary retention, constipation, and loss of baroreceptor reflexes."
+              }
+            },
+            {
+              "stem": "A 25-year-old patient is scheduled for surgery and requires neuromuscular blockade.\n\na) What are the two main classes of neuromuscular blocking agents? (2 marks)\n\nb) Provide one example of each class and describe their mechanisms of action. (2 marks)\n\nc) What is the reversal agent for non-depolarizing neuromuscular blockers? (1 mark)",
+              "modelAnswer": {
+                "a": "Depolarizing and non-depolarizing neuromuscular blocking agents.",
+                "b": "Depolarizing: Succinylcholine (agonist at nicotinic receptors causing prolonged depolarization). Non-depolarizing: Atracurium (competitive antagonist at nicotinic receptors).",
+                "c": "Neostigmine (with atropine to prevent muscarinic effects)."
+              }
+            },
+            {
+              "stem": "A 65-year-old patient with glaucoma is prescribed timolol eye drops.\n\na) What is the mechanism of action of timolol in glaucoma? (2 marks)\n\nb) What are the potential systemic adverse effects of topical timolol? (2 marks)\n\nc) What precaution should be taken before administering timolol eye drops? (1 mark)",
+              "modelAnswer": {
+                "a": "Timolol is a non-selective beta-blocker that reduces aqueous humor production by the ciliary body, lowering intraocular pressure.",
+                "b": "Bradycardia, hypotension, bronchospasm, fatigue, and depression.",
+                "c": "Measure intraocular pressure to exclude angle-closure glaucoma, as mydriatic drops can precipitate acute glaucoma in susceptible individuals."
+              }
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Describe ATROPINE under the following headings:\n\na) Mode of action (2 marks)\n\nb) Any five clinical applications (5 marks)\n\nc) Any ten side effects (5 marks)\n\nd) Any three drug-drug interactions (6 marks)\n\ne) Contraindications (2 marks)",
+              "modelAnswer": {
+                "a": "Atropine is a competitive muscarinic acetylcholine receptor antagonist, blocking parasympathetic effects on muscarinic receptors in smooth muscle, glands, and the CNS.",
+                "b": "1) Bradyarrhythmias (e.g., sinus bradycardia, AV block). 2) Organophosphate or carbamate poisoning. 3) Pre-anesthetic medication to reduce secretions. 4) Mydriasis and cycloplegia for eye examinations. 5) Antispasmodic for gastrointestinal or genitourinary colic.",
+                "c": "Dry mouth, blurred vision, photophobia, tachycardia, urinary retention, constipation, anhidrosis, confusion, hallucinations, hyperthermia, and acute angle-closure glaucoma.",
+                "d": "1) Digoxin: Increased risk of digoxin toxicity due to enhanced AV conduction. 2) Haloperidol: Increased anticholinergic effects and risk of neuroleptic malignant syndrome. 3) Tricyclic antidepressants: Additive anticholinergic effects leading to delirium or urinary retention.",
+                "e": "Closed-angle glaucoma, myasthenia gravis, paralytic ileus, severe ulcerative colitis, and known hypersensitivity to atropine."
+              }
+            },
+            {
+              "stem": "Describe PROPRANOLOL under the following headings:\n\na) Mode of action (2 marks)\n\nb) Any seven clinical applications (7 marks)\n\nc) Any six side effects (3 marks)\n\nd) Any three drug-drug interactions (6 marks)\n\ne) Contraindications (2 marks)",
+              "modelAnswer": {
+                "a": "Propranolol is a non-selective beta-adrenergic antagonist blocking beta-1 and beta-2 receptors, reducing heart rate, contractility, renin release, and sympathetic-mediated vasodilation.",
+                "b": "1) Hypertension. 2) Angina pectoris. 3) Supraventricular arrhythmias. 4) Post-myocardial infarction to reduce mortality. 5) Migraine prophylaxis. 6) Essential tremor. 7) Thyrotoxicosis (symptom control). 8) Portal hypertension (reduces variceal bleeding risk). 9) Performance anxiety.",
+                "c": "Bradycardia, hypotension, bronchospasm, cold extremities, fatigue, depression, and masking of hypoglycemic symptoms.",
+                "d": "1) Calcium channel blockers (e.g., verapamil, diltiazem): Increased risk of bradycardia, AV block, and heart failure. 2) Insulin or oral hypoglycemics: Prolonged hypoglycemia due to masked tachycardia and enhanced insulin sensitivity. 3) Digoxin: Increased risk of bradycardia and AV block.",
+                "e": "Severe bradycardia, high-grade AV block, cardiogenic shock, severe asthma or COPD, and uncontrolled heart failure."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Autonomic Nervous System",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 65-year-old male with a history of COPD presents with acute urinary retention. Which of the following drugs would be most appropriate for treating his urinary retention while minimizing respiratory side effects?",
+              "options": [
+                "Atropine",
+                "Bethanechol",
+                "Pilocarpine",
+                "Tolterodine"
+              ],
+              "answer": "Bethanechol",
+              "explanation": "Bethanechol is a muscarinic agonist that increases bladder detrusor muscle contraction, useful for urinary retention. It has minimal CNS penetration and limited respiratory effects compared to other options."
+            },
+            {
+              "stem": "A 30-year-old female with myasthenia gravis presents with worsening ptosis and diplopia. She is currently on pyridostigmine 60mg TDS. Which of the following would be the most appropriate next step to confirm the diagnosis of myasthenia gravis?",
+              "options": [
+                "Edrophonium test",
+                "Neostigmine injection",
+                "Electromyography",
+                "Anti-acetylcholine receptor antibody test"
+              ],
+              "answer": "Edrophonium test",
+              "explanation": "Edrophonium is a short-acting cholinesterase inhibitor used in the edrophonium (Tensilon) test to temporarily improve muscle strength in myasthenia gravis, confirming the diagnosis."
+            },
+            {
+              "stem": "A 45-year-old male presents with organophosphate poisoning after accidental exposure to an insecticide. Which of the following drug combinations is the most appropriate initial treatment?",
+              "options": [
+                "Atropine alone",
+                "Pralidoxime alone",
+                "Atropine + pralidoxime",
+                "Physostigmine + pralidoxime"
+              ],
+              "answer": "Atropine + pralidoxime",
+              "explanation": "Atropine reverses muscarinic symptoms, while pralidoxime reactivates acetylcholinesterase, making this combination the standard treatment for organophosphate poisoning."
+            },
+            {
+              "stem": "A 50-year-old male with hypertension and benign prostatic hyperplasia (BPH) is prescribed an alpha-1 blocker. Which of the following drugs would be most appropriate for his BPH?",
+              "options": [
+                "Clonidine",
+                "Prazosin",
+                "Propranolol",
+                "Methyldopa"
+              ],
+              "answer": "Prazosin",
+              "explanation": "Prazosin is an alpha-1 selective blocker that relaxes smooth muscle in the prostate and bladder neck, improving urinary symptoms in BPH while also lowering blood pressure."
+            },
+            {
+              "stem": "A 25-year-old female with a history of asthma presents with acute anaphylaxis. Which of the following drugs is the first-line treatment for anaphylaxis?",
+              "options": [
+                "Diphenhydramine",
+                "Hydrocortisone",
+                "Epinephrine",
+                "Albuterol"
+              ],
+              "answer": "Epinephrine",
+              "explanation": "Epinephrine is the first-line treatment for anaphylaxis due to its rapid onset and ability to counteract bronchospasm, vasodilation, and other anaphylactic symptoms."
+            },
+            {
+              "stem": "A 60-year-old male with a history of heart failure is prescribed a beta-blocker. Which of the following beta-blockers is cardioselective and preferred in this patient?",
+              "options": [
+                "Propranolol",
+                "Metoprolol",
+                "Carvedilol",
+                "Labetalol"
+              ],
+              "answer": "Metoprolol",
+              "explanation": "Metoprolol is a cardioselective beta-1 blocker, making it safer for patients with heart failure compared to non-selective beta-blockers like propranolol."
+            },
+            {
+              "stem": "A 35-year-old male presents with acute angle-closure glaucoma. Which of the following drugs would be most appropriate to reduce intraocular pressure?",
+              "options": [
+                "Atropine",
+                "Pilocarpine",
+                "Timolol",
+                "Scopolamine"
+              ],
+              "answer": "Pilocarpine",
+              "explanation": "Pilocarpine is a muscarinic agonist that causes miosis, opening the trabecular meshwork and improving aqueous humor outflow, reducing intraocular pressure in glaucoma."
+            },
+            {
+              "stem": "A 70-year-old male with a history of hypertension is prescribed clonidine for blood pressure control. Which of the following best describes the mechanism of action of clonidine?",
+              "options": [
+                "Alpha-1 adrenergic receptor agonist",
+                "Alpha-2 adrenergic receptor agonist",
+                "Beta-1 adrenergic receptor antagonist",
+                "Beta-2 adrenergic receptor agonist"
+              ],
+              "answer": "Alpha-2 adrenergic receptor agonist",
+              "explanation": "Clonidine is an alpha-2 adrenergic receptor agonist that reduces sympathetic outflow from the CNS, leading to decreased blood pressure."
+            },
+            {
+              "stem": "A 20-year-old male is brought to the emergency department with muscle rigidity, hyperthermia, and tachycardia after receiving succinylcholine during intubation. Which of the following drugs should be administered immediately?",
+              "options": [
+                "Neostigmine",
+                "Dantrolene",
+                "Atropine",
+                "Pralidoxime"
+              ],
+              "answer": "Dantrolene",
+              "explanation": "Dantrolene is the antidote for malignant hyperthermia, a rare but life-threatening reaction to succinylcholine, by inhibiting calcium release from the sarcoplasmic reticulum."
+            },
+            {
+              "stem": "A 55-year-old female with a history of depression is prescribed an antidepressant that also has anticholinergic side effects. Which of the following drugs is most likely responsible for her symptoms of dry mouth and blurred vision?",
+              "options": [
+                "Fluoxetine",
+                "Sertraline",
+                "Amitriptyline",
+                "Venlafaxine"
+              ],
+              "answer": "Amitriptyline",
+              "explanation": "Amitriptyline is a tricyclic antidepressant with significant anticholinergic effects, including dry mouth and blurred vision, due to its blockade of muscarinic receptors."
+            },
+            {
+              "stem": "A 40-year-old male presents with post-operative urinary retention after abdominal surgery. Which of the following drugs would be most appropriate for treating his condition?",
+              "options": [
+                "Oxybutynin",
+                "Tolterodine",
+                "Bethanechol",
+                "Atropine"
+              ],
+              "answer": "Bethanechol",
+              "explanation": "Bethanechol is a muscarinic agonist that stimulates bladder detrusor muscle contraction, making it useful for post-operative urinary retention."
+            },
+            {
+              "stem": "A 30-year-old female with myasthenia gravis is admitted for a myasthenic crisis. Which of the following drugs would be most appropriate for maintenance therapy?",
+              "options": [
+                "Edrophonium",
+                "Neostigmine",
+                "Pyridostigmine",
+                "Physostigmine"
+              ],
+              "answer": "Pyridostigmine",
+              "explanation": "Pyridostigmine is a long-acting cholinesterase inhibitor used for maintenance therapy in myasthenia gravis due to its prolonged duration of action and minimal CNS penetration."
+            },
+            {
+              "stem": "A 65-year-old male with a history of hypertension and BPH is prescribed an alpha-blocker. Which of the following side effects is most likely to occur with this drug?",
+              "options": [
+                "Bradycardia",
+                "Orthostatic hypotension",
+                "Hyperglycemia",
+                "Constipation"
+              ],
+              "answer": "Orthostatic hypotension",
+              "explanation": "Alpha-blockers like prazosin can cause orthostatic hypotension due to their vasodilatory effects, especially upon standing, leading to dizziness or syncope."
+            },
+            {
+              "stem": "A 25-year-old male presents with acute asthma exacerbation. Which of the following drugs would be most appropriate for bronchodilation?",
+              "options": [
+                "Propranolol",
+                "Metoprolol",
+                "Albuterol",
+                "Atenolol"
+              ],
+              "answer": "Albuterol",
+              "explanation": "Albuterol is a beta-2 adrenergic receptor agonist that causes bronchodilation, making it the first-line treatment for acute asthma exacerbations."
+            },
+            {
+              "stem": "A 50-year-old female with a history of hypertension is prescribed a beta-blocker. Which of the following beta-blockers is non-selective and should be avoided in patients with asthma?",
+              "options": [
+                "Metoprolol",
+                "Atenolol",
+                "Propranolol",
+                "Bisoprolol"
+              ],
+              "answer": "Propranolol",
+              "explanation": "Propranolol is a non-selective beta-blocker that blocks beta-2 receptors in the lungs, potentially causing bronchoconstriction and worsening asthma symptoms."
+            },
+            {
+              "stem": "A 45-year-old male presents with acute angle-closure glaucoma. Which of the following drugs would be most appropriate to reduce intraocular pressure by decreasing aqueous humor production?",
+              "options": [
+                "Pilocarpine",
+                "Timolol",
+                "Atropine",
+                "Scopolamine"
+              ],
+              "answer": "Timolol",
+              "explanation": "Timolol is a non-selective beta-blocker that reduces aqueous humor production, lowering intraocular pressure in glaucoma."
+            },
+            {
+              "stem": "A 30-year-old female with a history of depression is prescribed an MAO inhibitor. Which of the following foods should she avoid to prevent a hypertensive crisis?",
+              "options": [
+                "Bananas",
+                "Grapes",
+                "Cheese",
+                "Apples"
+              ],
+              "answer": "Cheese",
+              "explanation": "MAO inhibitors can cause a hypertensive crisis when combined with tyramine-rich foods like aged cheese, leading to excessive norepinephrine release."
+            },
+            {
+              "stem": "A 60-year-old male with a history of heart failure is prescribed a beta-blocker. Which of the following beta-blockers is most likely to be prescribed for heart failure?",
+              "options": [
+                "Propranolol",
+                "Metoprolol",
+                "Carvedilol",
+                "Atenolol"
+              ],
+              "answer": "Carvedilol",
+              "explanation": "Carvedilol is a non-selective beta-blocker with alpha-1 blocking activity, shown to improve survival in patients with heart failure."
+            },
+            {
+              "stem": "A 25-year-old male presents with acute anaphylaxis. Which of the following routes of administration is preferred for epinephrine in this setting?",
+              "options": [
+                "Oral",
+                "Intravenous",
+                "Intramuscular",
+                "Subcutaneous"
+              ],
+              "answer": "Intramuscular",
+              "explanation": "Intramuscular administration of epinephrine is preferred in anaphylaxis due to its rapid absorption and effectiveness in reversing severe allergic reactions."
+            },
+            {
+              "stem": "A 50-year-old female with a history of hypertension is prescribed a centrally acting alpha-2 agonist. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Clonidine",
+                "Prazosin",
+                "Propranolol",
+                "Methyldopa"
+              ],
+              "answer": "Clonidine",
+              "explanation": "Clonidine is a centrally acting alpha-2 agonist that reduces sympathetic outflow, lowering blood pressure."
+            },
+            {
+              "stem": "A 35-year-old male presents with symptoms of cholinergic toxicity after exposure to an insecticide. Which of the following drugs would be most appropriate to reverse his symptoms?",
+              "options": [
+                "Atropine",
+                "Pralidoxime",
+                "Neostigmine",
+                "Physostigmine"
+              ],
+              "answer": "Atropine",
+              "explanation": "Atropine is a muscarinic antagonist that reverses the muscarinic symptoms of cholinergic toxicity, such as salivation, lacrimation, and bronchospasm."
+            },
+            {
+              "stem": "A 40-year-old female with a history of hypertension is prescribed an alpha-blocker. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Clonidine",
+                "Prazosin",
+                "Propranolol",
+                "Methyldopa"
+              ],
+              "answer": "Prazosin",
+              "explanation": "Prazosin is an alpha-1 selective blocker used to treat hypertension and benign prostatic hyperplasia by relaxing vascular and smooth muscle."
+            },
+            {
+              "stem": "A 25-year-old male presents with acute asthma exacerbation. Which of the following drugs would be most appropriate for bronchodilation?",
+              "options": [
+                "Ipratropium",
+                "Tiotropium",
+                "Albuterol",
+                "Theophylline"
+              ],
+              "answer": "Albuterol",
+              "explanation": "Albuterol is a short-acting beta-2 agonist that provides rapid bronchodilation in acute asthma exacerbations."
+            },
+            {
+              "stem": "A 60-year-old male with a history of hypertension is prescribed a beta-blocker. Which of the following side effects is most likely to occur with this drug?",
+              "options": [
+                "Bradycardia",
+                "Tachycardia",
+                "Hyperglycemia",
+                "Hypokalemia"
+              ],
+              "answer": "Bradycardia",
+              "explanation": "Beta-blockers can cause bradycardia by reducing heart rate through blockade of beta-1 receptors in the heart."
+            },
+            {
+              "stem": "A 30-year-old female with myasthenia gravis is admitted for a myasthenic crisis. Which of the following drugs would be most appropriate for immediate treatment?",
+              "options": [
+                "Edrophonium",
+                "Neostigmine",
+                "Pyridostigmine",
+                "Physostigmine"
+              ],
+              "answer": "Neostigmine",
+              "explanation": "Neostigmine is a cholinesterase inhibitor used for immediate treatment of myasthenic crisis due to its rapid onset and intermediate duration of action."
+            },
+            {
+              "stem": "A 55-year-old male presents with acute angle-closure glaucoma. Which of the following drugs would be most appropriate to reduce intraocular pressure by causing miosis?",
+              "options": [
+                "Timolol",
+                "Pilocarpine",
+                "Atropine",
+                "Scopolamine"
+              ],
+              "answer": "Pilocarpine",
+              "explanation": "Pilocarpine causes miosis by stimulating muscarinic receptors, which opens the trabecular meshwork and improves aqueous humor outflow."
+            },
+            {
+              "stem": "A 40-year-old male presents with organophosphate poisoning. Which of the following drugs would be most appropriate to reactivate acetylcholinesterase?",
+              "options": [
+                "Atropine",
+                "Pralidoxime",
+                "Neostigmine",
+                "Physostigmine"
+              ],
+              "answer": "Pralidoxime",
+              "explanation": "Pralidoxime reactivates acetylcholinesterase by removing the organophosphate from the enzyme, reversing cholinergic toxicity."
+            },
+            {
+              "stem": "A 25-year-old male presents with acute anaphylaxis. Which of the following drugs is the first-line treatment for anaphylaxis?",
+              "options": [
+                "Diphenhydramine",
+                "Hydrocortisone",
+                "Epinephrine",
+                "Albuterol"
+              ],
+              "answer": "Epinephrine",
+              "explanation": "Epinephrine is the first-line treatment for anaphylaxis due to its rapid onset and ability to counteract bronchospasm, vasodilation, and other anaphylactic symptoms."
+            },
+            {
+              "stem": "A 60-year-old female with a history of hypertension is prescribed a beta-blocker. Which of the following beta-blockers is cardioselective?",
+              "options": [
+                "Propranolol",
+                "Metoprolol",
+                "Carvedilol",
+                "Labetalol"
+              ],
+              "answer": "Metoprolol",
+              "explanation": "Metoprolol is a cardioselective beta-1 blocker, making it safer for patients with hypertension and respiratory conditions."
+            },
+            {
+              "stem": "A 35-year-old male presents with symptoms of anticholinergic toxicity after ingesting a plant. Which of the following drugs would be most appropriate to reverse his symptoms?",
+              "options": [
+                "Physostigmine",
+                "Neostigmine",
+                "Pralidoxime",
+                "Atropine"
+              ],
+              "answer": "Physostigmine",
+              "explanation": "Physostigmine is a cholinesterase inhibitor that can cross the blood-brain barrier and reverse central anticholinergic toxicity."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 55-year-old male with a history of hypertension and benign prostatic hyperplasia (BPH) presents to your clinic. He is currently on hydrochlorothiazide 25mg daily and lisinopril 10mg daily for hypertension.",
+              "modelAnswer": {
+                "a": "Recommended drug: Tamsulosin (1 mark).",
+                "b": "Mode of action: Tamsulosin is an alpha-1 adrenergic receptor antagonist that selectively blocks alpha-1 receptors in the prostate and bladder neck, reducing smooth muscle tone and improving urinary flow in BPH. It also has minimal effect on blood pressure compared to non-selective alpha-blockers (2 marks).",
+                "c": "Side effects: Orthostatic hypotension, dizziness, retrograde ejaculation, nasal congestion (2 marks)."
+              }
+            },
+            {
+              "stem": "A 30-year-old female with myasthenia gravis presents to the emergency department with worsening ptosis, diplopia, and difficulty swallowing. She is currently on pyridostigmine 60mg TDS.",
+              "modelAnswer": {
+                "a": "Diagnostic test: Edrophonium (Tensilon) test (1 mark).",
+                "b": "Mechanism: Edrophonium is a short-acting cholinesterase inhibitor that temporarily increases acetylcholine levels at the neuromuscular junction, leading to transient improvement in muscle strength if myasthenia gravis is present (2 marks).",
+                "c": "Management: Increase pyridostigmine dose, consider adding corticosteroids or other immunosuppressants, and monitor for cholinergic crisis (2 marks)."
+              }
+            },
+            {
+              "stem": "A 45-year-old male presents to the emergency department with symptoms of organophosphate poisoning after accidental exposure to an insecticide. He has excessive salivation, lacrimation, urination, diarrhea, and muscle fasciculations.",
+              "modelAnswer": {
+                "a": "Initial treatment: Atropine + pralidoxime (2 marks).",
+                "b": "Role of atropine: Reverses muscarinic symptoms by competitively blocking muscarinic receptors (1 mark).",
+                "c": "Role of pralidoxime: Reactivates acetylcholinesterase by removing the organophosphate from the enzyme (1 mark).",
+                "d": "Monitoring: Continuous cardiac monitoring, oxygen saturation, and frequent reassessment of symptoms (1 mark)."
+              }
+            },
+            {
+              "stem": "A 60-year-old female with a history of hypertension and COPD presents with acute urinary retention. She is unable to void despite a full bladder.",
+              "modelAnswer": {
+                "a": "Recommended drug: Bethanechol (1 mark).",
+                "b": "Mode of action: Bethanechol is a muscarinic agonist that stimulates detrusor muscle contraction in the bladder, promoting urination (2 marks).",
+                "c": "Side effects: Bradycardia, hypotension, diarrhea, abdominal cramps, and bronchoconstriction (2 marks)."
+              }
+            },
+            {
+              "stem": "A 25-year-old male presents to the emergency department with acute anaphylaxis after eating peanuts. He has difficulty breathing, urticaria, and hypotension.",
+              "modelAnswer": {
+                "a": "First-line treatment: Intramuscular epinephrine (1 mark).",
+                "b": "Mechanism: Epinephrine stimulates alpha-1, beta-1, and beta-2 receptors, causing vasoconstriction, increased cardiac output, and bronchodilation (2 marks).",
+                "c": "Additional treatments: IV fluids, antihistamines (e.g., diphenhydramine), corticosteroids (e.g., hydrocortisone), and oxygen (2 marks)."
+              }
+            },
+            {
+              "stem": "A 50-year-old male with a history of heart failure is prescribed a beta-blocker. He is currently on enalapril 10mg daily and furosemide 40mg daily.",
+              "modelAnswer": {
+                "a": "Recommended beta-blocker: Carvedilol (1 mark).",
+                "b": "Mechanism: Carvedilol is a non-selective beta-blocker with alpha-1 blocking activity, reducing heart rate, contractility, and afterload, improving survival in heart failure (2 marks).",
+                "c": "Side effects: Bradycardia, hypotension, fatigue, dizziness, and worsening heart failure if not titrated properly (2 marks)."
+              }
+            },
+            {
+              "stem": "A 35-year-old female with a history of depression is prescribed an MAO inhibitor. She asks about dietary restrictions to avoid a hypertensive crisis.",
+              "modelAnswer": {
+                "a": "Avoid tyramine-rich foods: Aged cheese, cured meats, fermented foods, soy sauce, tap beer, and red wine (2 marks).",
+                "b": "Mechanism: MAO inhibitors prevent the breakdown of tyramine, leading to excessive norepinephrine release and a hypertensive crisis (2 marks).",
+                "c": "Alternative drugs: Consider SSRIs or SNRIs if dietary restrictions are not feasible (1 mark)."
+              }
+            },
+            {
+              "stem": "A 65-year-old male with a history of hypertension and BPH is prescribed an alpha-blocker. He reports dizziness upon standing.",
+              "modelAnswer": {
+                "a": "Recommended drug: Doxazosin (1 mark).",
+                "b": "Mechanism: Doxazosin is an alpha-1 selective blocker that relaxes vascular and smooth muscle, reducing blood pressure and improving urinary symptoms in BPH (2 marks).",
+                "c": "Management of dizziness: Advise the patient to rise slowly from a sitting or lying position, monitor blood pressure regularly, and consider dose reduction if symptoms persist (2 marks)."
+              }
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Describe ATROPINE under the following headings:",
+              "modelAnswer": {
+                "Mode of action": "Atropine is a competitive muscarinic acetylcholine receptor antagonist. It blocks the action of acetylcholine at muscarinic receptors, leading to decreased parasympathetic activity and increased sympathetic dominance (2 marks).",
+                "Clinical applications": [
+                  "Pre-anesthetic medication to reduce secretions and prevent bradycardia (1 mark).",
+                  "Treatment of bradycardia and heart block by increasing heart rate (1 mark).",
+                  "Reversal of muscarinic toxicity (e.g., organophosphate poisoning) (1 mark).",
+                  "Mydriasis and cycloplegia for eye examinations (1 mark).",
+                  "Adjunct in the treatment of peptic ulcer disease to reduce gastric acid secretion (1 mark)."
+                ],
+                "Side effects": [
+                  "Dry mouth (xerostomia) (1 mark).",
+                  "Blurred vision and photophobia due to mydriasis (1 mark).",
+                  "Urinary retention (1 mark).",
+                  "Constipation (1 mark).",
+                  "Tachycardia (1 mark).",
+                  "Confusion and delirium in elderly patients (1 mark).",
+                  "Hyperthermia due to reduced sweating (1 mark).",
+                  "Flushing of the skin (1 mark).",
+                  "Increased intraocular pressure in glaucoma patients (1 mark).",
+                  "Paradoxical bradycardia in low doses (1 mark)."
+                ],
+                "Drug-drug interactions": [
+                  "Enhances the effects of other anticholinergics (e.g., scopolamine, tricyclic antidepressants) (2 marks).",
+                  "May reduce the efficacy of cholinesterase inhibitors (e.g., neostigmine, pyridostigmine) (2 marks).",
+                  "Potentiates the effects of sympathomimetics (e.g., epinephrine) due to unopposed sympathetic activity (2 marks)."
+                ],
+                "Contraindications": [
+                  "Glaucoma (especially angle-closure glaucoma) (1 mark).",
+                  "Prostatic hypertrophy with urinary retention (1 mark)."
+                ]
+              }
+            },
+            {
+              "stem": "Describe PROPRANOLOL under the following headings:",
+              "modelAnswer": {
+                "Mode of action": "Propranolol is a non-selective beta-adrenergic receptor antagonist. It blocks beta-1 receptors in the heart and beta-2 receptors in the lungs and other tissues, reducing heart rate, contractility, and renin release (2 marks).",
+                "Clinical applications": [
+                  "Hypertension (1 mark).",
+                  "Angina pectoris (1 mark).",
+                  "Arrhythmias (e.g., supraventricular tachycardia) (1 mark).",
+                  "Post-myocardial infarction to reduce mortality (1 mark).",
+                  "Migraine prophylaxis (1 mark).",
+                  "Essential tremor (1 mark).",
+                  "Thyrotoxicosis (to control symptoms) (1 mark)."
+                ],
+                "Side effects": [
+                  "Bradycardia (1 mark).",
+                  "Hypotension (1 mark).",
+                  "Fatigue and lethargy (1 mark).",
+                  "Bronchospasm in patients with asthma or COPD (1 mark).",
+                  "Cold extremities due to reduced peripheral perfusion (1 mark).",
+                  "Masking of hypoglycemic symptoms in diabetic patients (1 mark)."
+                ],
+                "Drug-drug interactions": [
+                  "Enhances the effects of other antihypertensives (e.g., ACE inhibitors, calcium channel blockers) (2 marks).",
+                  "May potentiate the effects of insulin and oral hypoglycemics, increasing the risk of hypoglycemia (2 marks).",
+                  "Concurrent use with calcium channel blockers (e.g., verapamil) may cause severe bradycardia or heart block (2 marks)."
+                ],
+                "Contraindications": [
+                  "Severe bradycardia (1 mark).",
+                  "Second- or third-degree heart block (1 mark)."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Autonomic Nervous System",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 58-year-old male with a history of type 2 diabetes mellitus and hypertension presents with urinary retention post-prostatectomy. Which of the following drugs would be most appropriate to improve bladder emptying by stimulating cholinergic receptors in the detrusor muscle?",
+              "options": [
+                "Atropine",
+                "Bethanechol",
+                "Glycopyrrolate",
+                "Tolterodine"
+              ],
+              "answer": "Bethanechol",
+              "explanation": "Bethanechol is a direct-acting muscarinic agonist that stimulates detrusor muscle contraction, improving bladder emptying in postoperative urinary retention."
+            },
+            {
+              "stem": "A patient with myasthenia gravis presents with worsening ptosis and generalized muscle weakness. Which of the following drugs is used for the diagnosis of myasthenia gravis due to its rapid, transient improvement of symptoms?",
+              "options": [
+                "Neostigmine",
+                "Edrophonium",
+                "Pyridostigmine",
+                "Physostigmine"
+              ],
+              "answer": "Edrophonium",
+              "explanation": "Edrophonium is a short-acting cholinesterase inhibitor used in the edrophonium (Tensilon) test to diagnose myasthenia gravis by transiently improving muscle weakness."
+            },
+            {
+              "stem": "A 34-year-old farmer is brought to the emergency department with symptoms of excessive salivation, lacrimation, urination, diarrhea, and miosis after accidental exposure to an organophosphate insecticide. Which of the following is the first-line antidote for this poisoning?",
+              "options": [
+                "Atropine",
+                "Pralidoxime",
+                "Physostigmine",
+                "Neostigmine"
+              ],
+              "answer": "Atropine",
+              "explanation": "Atropine is the first-line antidote for organophosphate poisoning, as it competitively blocks muscarinic receptors to counteract cholinergic excess."
+            },
+            {
+              "stem": "A 62-year-old female with hypertension and benign prostatic hyperplasia is prescribed an alpha-1 blocker for symptom relief. Which of the following drugs is an alpha-1 selective antagonist commonly used for this indication?",
+              "options": [
+                "Clonidine",
+                "Prazosin",
+                "Propranolol",
+                "Methoxamine"
+              ],
+              "answer": "Prazosin",
+              "explanation": "Prazosin is a selective alpha-1 adrenergic antagonist used to treat hypertension and benign prostatic hyperplasia by relaxing vascular and prostatic smooth muscle."
+            },
+            {
+              "stem": "During a surgical procedure, a patient develops malignant hyperthermia following administration of succinylcholine. Which of the following drugs is the specific antidote for this condition?",
+              "options": [
+                "Neostigmine",
+                "Dantrolene",
+                "Atropine",
+                "Pralidoxime"
+              ],
+              "answer": "Dantrolene",
+              "explanation": "Dantrolene is the drug of choice for malignant hyperthermia as it inhibits calcium release from the sarcoplasmic reticulum, reducing muscle rigidity and hyperthermia."
+            },
+            {
+              "stem": "A 28-year-old male presents with acute anaphylaxis following a bee sting, with symptoms of bronchospasm, hypotension, and urticaria. Which of the following drugs is the first-line treatment for this life-threatening condition?",
+              "options": [
+                "Norepinephrine",
+                "Epinephrine",
+                "Phenylephrine",
+                "Isoproterenol"
+              ],
+              "answer": "Epinephrine",
+              "explanation": "Epinephrine is the first-line treatment for anaphylaxis due to its alpha-1 and beta-2 adrenergic effects, which reverse bronchospasm and hypotension."
+            },
+            {
+              "stem": "A 55-year-old male with a history of asthma is prescribed a beta-blocker for hypertension. Which of the following beta-blockers is relatively cardioselective and less likely to exacerbate bronchospasm?",
+              "options": [
+                "Propranolol",
+                "Metoprolol",
+                "Timolol",
+                "Carvedilol"
+              ],
+              "answer": "Metoprolol",
+              "explanation": "Metoprolol is a cardioselective beta-1 blocker that is less likely to cause bronchoconstriction compared to non-selective beta-blockers like propranolol."
+            },
+            {
+              "stem": "A patient with glaucoma is prescribed a topical drug that reduces intraocular pressure by decreasing aqueous humor production. Which of the following drugs acts via this mechanism?",
+              "options": [
+                "Pilocarpine",
+                "Timolol",
+                "Atropine",
+                "Bethanechol"
+              ],
+              "answer": "Timolol",
+              "explanation": "Timolol is a non-selective beta-blocker that reduces intraocular pressure by decreasing aqueous humor production in the ciliary body."
+            },
+            {
+              "stem": "A 45-year-old female with hypertension is prescribed clonidine for blood pressure control. Which of the following best describes the mechanism of action of clonidine?",
+              "options": [
+                "Alpha-1 adrenergic agonist",
+                "Alpha-2 adrenergic agonist",
+                "Beta-1 adrenergic antagonist",
+                "Beta-2 adrenergic agonist"
+              ],
+              "answer": "Alpha-2 adrenergic agonist",
+              "explanation": "Clonidine is a centrally acting alpha-2 adrenergic agonist that reduces sympathetic outflow, leading to decreased blood pressure."
+            },
+            {
+              "stem": "A patient with plasma cholinesterase deficiency undergoes surgery and receives succinylcholine for neuromuscular blockade. Which of the following is the most likely consequence of this drug choice?",
+              "options": [
+                "Prolonged apnea",
+                "Hypertension",
+                "Tachycardia",
+                "Bronchospasm"
+              ],
+              "answer": "Prolonged apnea",
+              "explanation": "Plasma cholinesterase deficiency leads to delayed metabolism of succinylcholine, resulting in prolonged neuromuscular blockade and apnea."
+            },
+            {
+              "stem": "A 30-year-old male with a history of hypertension is prescribed an alpha-2 agonist for blood pressure control. Which of the following drugs is an alpha-2 agonist used as a centrally acting antihypertensive?",
+              "options": [
+                "Prazosin",
+                "Clonidine",
+                "Doxazosin",
+                "Phentolamine"
+              ],
+              "answer": "Clonidine",
+              "explanation": "Clonidine is an alpha-2 adrenergic agonist that reduces sympathetic outflow from the central nervous system, lowering blood pressure."
+            },
+            {
+              "stem": "A patient with urinary incontinence is prescribed an anticholinergic drug to reduce detrusor overactivity. Which of the following drugs is a muscarinic antagonist commonly used for this indication?",
+              "options": [
+                "Bethanechol",
+                "Tolterodine",
+                "Pilocarpine",
+                "Neostigmine"
+              ],
+              "answer": "Tolterodine",
+              "explanation": "Tolterodine is a muscarinic antagonist used to treat urinary incontinence by reducing detrusor muscle overactivity."
+            },
+            {
+              "stem": "A 60-year-old male with a history of myocardial infarction is prescribed a beta-blocker for secondary prevention. Which of the following beta-blockers is non-selective and blocks both beta-1 and beta-2 receptors?",
+              "options": [
+                "Metoprolol",
+                "Atenolol",
+                "Propranolol",
+                "Bisoprolol"
+              ],
+              "answer": "Propranolol",
+              "explanation": "Propranolol is a non-selective beta-blocker that blocks both beta-1 and beta-2 receptors, making it less suitable for patients with asthma or COPD."
+            },
+            {
+              "stem": "A patient with organophosphate poisoning is treated with atropine and pralidoxime. Which of the following is the primary role of pralidoxime in this scenario?",
+              "options": [
+                "To reverse muscarinic effects",
+                "To reactivate acetylcholinesterase",
+                "To block nicotinic receptors",
+                "To prevent seizures"
+              ],
+              "answer": "To reactivate acetylcholinesterase",
+              "explanation": "Pralidoxime reactivates acetylcholinesterase by displacing the organophosphate from the enzyme, restoring normal cholinergic transmission."
+            },
+            {
+              "stem": "A 25-year-old female with myasthenia gravis is prescribed pyridostigmine for maintenance therapy. Which of the following best describes the mechanism of action of pyridostigmine?",
+              "options": [
+                "Direct muscarinic agonist",
+                "Indirect muscarinic agonist (cholinesterase inhibitor)",
+                "Muscarinic antagonist",
+                "Nicotinic antagonist"
+              ],
+              "answer": "Indirect muscarinic agonist (cholinesterase inhibitor)",
+              "explanation": "Pyridostigmine is a reversible cholinesterase inhibitor that increases acetylcholine levels at the neuromuscular junction, improving muscle strength in myasthenia gravis."
+            },
+            {
+              "stem": "A patient with hypertension and benign prostatic hyperplasia is prescribed an alpha-1 blocker. Which of the following side effects is most commonly associated with alpha-1 blockers?",
+              "options": [
+                "Bradycardia",
+                "First-dose syncope",
+                "Hyperkalemia",
+                "Hypoglycemia"
+              ],
+              "answer": "First-dose syncope",
+              "explanation": "Alpha-1 blockers can cause first-dose syncope due to a rapid drop in blood pressure, particularly with the first dose."
+            },
+            {
+              "stem": "A 40-year-old male with a history of asthma is prescribed a beta-2 agonist for bronchodilation. Which of the following drugs is a selective beta-2 agonist used for this purpose?",
+              "options": [
+                "Epinephrine",
+                "Norepinephrine",
+                "Salbutamol",
+                "Phenylephrine"
+              ],
+              "answer": "Salbutamol",
+              "explanation": "Salbutamol is a selective beta-2 adrenergic agonist used for bronchodilation in patients with asthma."
+            },
+            {
+              "stem": "A patient with glaucoma is prescribed a topical drug that increases aqueous humor outflow. Which of the following drugs acts via this mechanism?",
+              "options": [
+                "Pilocarpine",
+                "Timolol",
+                "Brimonidine",
+                "Latanoprost"
+              ],
+              "answer": "Pilocarpine",
+              "explanation": "Pilocarpine is a muscarinic agonist that increases aqueous humor outflow by contracting the ciliary muscle and opening the trabecular meshwork."
+            },
+            {
+              "stem": "A 50-year-old male with hypertension is prescribed an alpha-2 agonist. Which of the following drugs is an alpha-2 agonist used as a centrally acting antihypertensive?",
+              "options": [
+                "Prazosin",
+                "Clonidine",
+                "Doxazosin",
+                "Phentolamine"
+              ],
+              "answer": "Clonidine",
+              "explanation": "Clonidine is an alpha-2 adrenergic agonist that reduces sympathetic outflow from the central nervous system, lowering blood pressure."
+            },
+            {
+              "stem": "A patient with urinary retention is prescribed bethanechol. Which of the following is the primary mechanism of action of bethanechol?",
+              "options": [
+                "Muscarinic antagonist",
+                "Nicotinic agonist",
+                "Muscarinic agonist",
+                "Cholinesterase inhibitor"
+              ],
+              "answer": "Muscarinic agonist",
+              "explanation": "Bethanechol is a direct-acting muscarinic agonist that stimulates cholinergic receptors in the detrusor muscle, promoting bladder emptying."
+            },
+            {
+              "stem": "A 35-year-old female with hypertension is prescribed an alpha-blocker. Which of the following drugs is an alpha-1 selective antagonist commonly used for hypertension?",
+              "options": [
+                "Clonidine",
+                "Prazosin",
+                "Propranolol",
+                "Methoxamine"
+              ],
+              "answer": "Prazosin",
+              "explanation": "Prazosin is a selective alpha-1 adrenergic antagonist used to treat hypertension by relaxing vascular smooth muscle."
+            },
+            {
+              "stem": "A patient with myasthenia gravis is prescribed pyridostigmine for maintenance therapy. Which of the following is the primary advantage of pyridostigmine over physostigmine in this setting?",
+              "options": [
+                "Crosses the blood-brain barrier",
+                "Does not cross the blood-brain barrier",
+                "Longer duration of action",
+                "Faster onset of action"
+              ],
+              "answer": "Does not cross the blood-brain barrier",
+              "explanation": "Pyridostigmine does not cross the blood-brain barrier, reducing the risk of central nervous system side effects compared to physostigmine."
+            },
+            {
+              "stem": "A 65-year-old male with a history of myocardial infarction is prescribed a beta-blocker for secondary prevention. Which of the following beta-blockers is cardioselective and less likely to exacerbate bronchospasm?",
+              "options": [
+                "Propranolol",
+                "Metoprolol",
+                "Timolol",
+                "Carvedilol"
+              ],
+              "answer": "Metoprolol",
+              "explanation": "Metoprolol is a cardioselective beta-1 blocker that is less likely to cause bronchoconstriction compared to non-selective beta-blockers."
+            },
+            {
+              "stem": "A patient with organophosphate poisoning is treated with atropine. Which of the following is the primary role of atropine in this scenario?",
+              "options": [
+                "To reactivate acetylcholinesterase",
+                "To reverse muscarinic effects",
+                "To block nicotinic receptors",
+                "To prevent seizures"
+              ],
+              "answer": "To reverse muscarinic effects",
+              "explanation": "Atropine reverses muscarinic effects of organophosphate poisoning by competitively blocking muscarinic receptors."
+            },
+            {
+              "stem": "A 45-year-old female with hypertension is prescribed an alpha-2 agonist. Which of the following best describes the mechanism of action of alpha-2 agonists in lowering blood pressure?",
+              "options": [
+                "Vasodilation via alpha-1 blockade",
+                "Reduction of sympathetic outflow from the CNS",
+                "Direct vasodilation of blood vessels",
+                "Inhibition of renin release"
+              ],
+              "answer": "Reduction of sympathetic outflow from the CNS",
+              "explanation": "Alpha-2 agonists reduce sympathetic outflow from the central nervous system, leading to decreased blood pressure."
+            },
+            {
+              "stem": "A patient with glaucoma is prescribed a topical beta-blocker to reduce intraocular pressure. Which of the following drugs is a non-selective beta-blocker used for this purpose?",
+              "options": [
+                "Pilocarpine",
+                "Timolol",
+                "Brimonidine",
+                "Latanoprost"
+              ],
+              "answer": "Timolol",
+              "explanation": "Timolol is a non-selective beta-blocker that reduces intraocular pressure by decreasing aqueous humor production."
+            },
+            {
+              "stem": "A 30-year-old male with a history of hypertension is prescribed an alpha-1 blocker. Which of the following is the primary indication for alpha-1 blockers in hypertension?",
+              "options": [
+                "To reduce heart rate",
+                "To relax vascular and prostatic smooth muscle",
+                "To increase renin release",
+                "To block beta-2 receptors"
+              ],
+              "answer": "To relax vascular and prostatic smooth muscle",
+              "explanation": "Alpha-1 blockers relax vascular and prostatic smooth muscle, reducing blood pressure and improving symptoms of benign prostatic hyperplasia."
+            },
+            {
+              "stem": "A patient with myasthenia gravis is prescribed pyridostigmine for maintenance therapy. Which of the following is the primary mechanism of action of pyridostigmine?",
+              "options": [
+                "Direct muscarinic agonist",
+                "Indirect muscarinic agonist (cholinesterase inhibitor)",
+                "Muscarinic antagonist",
+                "Nicotinic antagonist"
+              ],
+              "answer": "Indirect muscarinic agonist (cholinesterase inhibitor)",
+              "explanation": "Pyridostigmine is a reversible cholinesterase inhibitor that increases acetylcholine levels at the neuromuscular junction, improving muscle strength in myasthenia gravis."
+            },
+            {
+              "stem": "A 55-year-old male with hypertension and benign prostatic hyperplasia is prescribed an alpha-1 blocker. Which of the following side effects is most commonly associated with alpha-1 blockers?",
+              "options": [
+                "Bradycardia",
+                "First-dose syncope",
+                "Hyperkalemia",
+                "Hypoglycemia"
+              ],
+              "answer": "First-dose syncope",
+              "explanation": "Alpha-1 blockers can cause first-dose syncope due to a rapid drop in blood pressure, particularly with the first dose."
+            },
+            {
+              "stem": "A patient with urinary incontinence is prescribed an anticholinergic drug. Which of the following drugs is a muscarinic antagonist commonly used for this indication?",
+              "options": [
+                "Bethanechol",
+                "Tolterodine",
+                "Pilocarpine",
+                "Neostigmine"
+              ],
+              "answer": "Tolterodine",
+              "explanation": "Tolterodine is a muscarinic antagonist used to treat urinary incontinence by reducing detrusor muscle overactivity."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "1. A 55-year-old male with a history of hypertension and benign prostatic hyperplasia (BPH) presents to the clinic. His blood pressure is 150/90 mmHg, and he complains of urinary hesitancy and incomplete bladder emptying.",
+              "modelAnswer": {
+                "a": "Recommended drug: Prazosin (or any selective alpha-1 blocker such as doxazosin or terazosin).",
+                "b": "Mode of action: Prazosin selectively blocks alpha-1 adrenergic receptors on vascular and prostatic smooth muscle, leading to vasodilation and relaxation of the prostate and bladder neck, which improves urinary flow and reduces blood pressure.",
+                "c": "Side effects: Orthostatic hypotension, dizziness, headache, first-dose syncope, and reflex tachycardia."
+              }
+            },
+            {
+              "stem": "2. A 28-year-old female with a history of myasthenia gravis presents with worsening ptosis, diplopia, and generalized muscle weakness. She reports that her symptoms worsen with activity and improve with rest.",
+              "modelAnswer": {
+                "a": "Diagnostic test: Edrophonium (Tensilon) test.",
+                "b": "Role: Edrophonium is a short-acting cholinesterase inhibitor that transiently improves muscle strength in myasthenia gravis, confirming the diagnosis.",
+                "c": "Maintenance therapy: Pyridostigmine (or neostigmine).",
+                "d": "Mode of action: Pyridostigmine inhibits acetylcholinesterase, increasing acetylcholine levels at the neuromuscular junction, thereby improving muscle strength.",
+                "e": "Side effects of pyridostigmine: Cholinergic crisis (nausea, vomiting, diarrhea, abdominal cramps), bradycardia, excessive salivation, and muscle fasciculations."
+              }
+            },
+            {
+              "stem": "3. A 45-year-old farmer is brought to the emergency department with symptoms of excessive salivation, lacrimation, urination, diarrhea, miosis, and bronchospasm after accidental exposure to an organophosphate insecticide.",
+              "modelAnswer": {
+                "a": "Two adjuncts of general anesthesia targeting the autonomic nervous system: Atropine and glycopyrrolate.",
+                "b": "Role in general anesthesia: Atropine and glycopyrrolate are used to prevent or treat bradycardia and excessive secretions (e.g., during intubation or surgery).",
+                "c": "Mode of action: Both drugs are muscarinic antagonists that block acetylcholine at muscarinic receptors, reducing parasympathetic effects such as bradycardia and secretions.",
+                "d": "Side effects of atropine: Tachycardia, dry mouth, urinary retention, constipation, blurred vision, and confusion (especially in the elderly).",
+                "e": "Side effects of glycopyrrolate: Similar to atropine but with a lower risk of central nervous system effects due to its quaternary ammonium structure.",
+                "f": "Management of overdose: Supportive care, discontinuation of the drug, and administration of physostigmine (a cholinesterase inhibitor) in severe cases.",
+                "g": "Four drugs for acute asthmatic attack: Salbutamol (short-acting beta-2 agonist), ipratropium (anticholinergic), prednisolone (corticosteroid), and magnesium sulfate (adjunct therapy)."
+              }
+            },
+            {
+              "stem": "4. A 30-year-old male with a history of hypertension is prescribed clonidine for blood pressure control. He asks about the mechanism of action and potential side effects of the drug.",
+              "modelAnswer": {
+                "a": "Mechanism of action: Clonidine is a centrally acting alpha-2 adrenergic agonist that reduces sympathetic outflow from the central nervous system, leading to decreased blood pressure.",
+                "b": "Side effects: Dry mouth, sedation, dizziness, orthostatic hypotension, bradycardia, and rebound hypertension upon abrupt discontinuation."
+              }
+            },
+            {
+              "stem": "5. A 50-year-old female with glaucoma is prescribed timolol eye drops to reduce intraocular pressure. She asks about the mechanism of action and potential side effects of the drug.",
+              "modelAnswer": {
+                "a": "Mechanism of action: Timolol is a non-selective beta-blocker that reduces intraocular pressure by decreasing aqueous humor production in the ciliary body.",
+                "b": "Side effects: Ocular stinging, blurred vision, dry eyes, systemic absorption leading to bradycardia, hypotension, and bronchospasm (in patients with asthma or COPD)."
+              }
+            },
+            {
+              "stem": "6. A 60-year-old male with a history of myocardial infarction is prescribed metoprolol for secondary prevention. He asks about the mechanism of action and potential side effects of the drug.",
+              "modelAnswer": {
+                "a": "Mechanism of action: Metoprolol is a cardioselective beta-1 adrenergic antagonist that reduces heart rate, contractility, and renin release, thereby decreasing myocardial oxygen demand.",
+                "b": "Side effects: Bradycardia, hypotension, fatigue, dizziness, cold extremities, and exacerbation of heart failure in susceptible patients."
+              }
+            },
+            {
+              "stem": "7. A 25-year-old female with myasthenia gravis is prescribed pyridostigmine for maintenance therapy. She asks about the mechanism of action and potential side effects of the drug.",
+              "modelAnswer": {
+                "a": "Mechanism of action: Pyridostigmine is a reversible cholinesterase inhibitor that increases acetylcholine levels at the neuromuscular junction, improving muscle strength.",
+                "b": "Side effects: Cholinergic crisis (nausea, vomiting, diarrhea, abdominal cramps), bradycardia, excessive salivation, and muscle fasciculations."
+              }
+            },
+            {
+              "stem": "8. A 40-year-old male with a history of hypertension and benign prostatic hyperplasia is prescribed tamsulosin. He asks about the mechanism of action and potential side effects of the drug.",
+              "modelAnswer": {
+                "a": "Mechanism of action: Tamsulosin is a selective alpha-1A adrenergic antagonist that relaxes smooth muscle in the prostate and bladder neck, improving urinary flow and reducing symptoms of BPH.",
+                "b": "Side effects: Orthostatic hypotension, dizziness, headache, retrograde ejaculation, and nasal congestion."
+              }
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "1. Describe ATROPINE under the following headings:",
+              "modelAnswer": {
+                "Mode of action": "Atropine is a competitive muscarinic antagonist that blocks acetylcholine at muscarinic receptors (M1, M2, M3), leading to inhibition of parasympathetic effects such as bradycardia, secretions, and smooth muscle contraction.",
+                "Clinical applications": [
+                  "Bradyarrhythmias: Treatment of symptomatic bradycardia or heart block (e.g., during anesthesia or myocardial infarction).",
+                  "Pre-anesthetic medication: To reduce secretions and prevent bradycardia during surgery.",
+                  "Organophosphate poisoning: To counteract muscarinic effects (e.g., salivation, lacrimation, urination, diarrhea, miosis).",
+                  "Antispasmodic: Relief of gastrointestinal or genitourinary smooth muscle spasms (e.g., irritable bowel syndrome).",
+                  "Ophthalmology: To dilate pupils for fundoscopic examination (though rarely used due to long duration of action)."
+                ],
+                "Side effects": [
+                  "Dry mouth, blurred vision, photophobia, and increased intraocular pressure.",
+                  "Urinary retention and constipation.",
+                  "Tachycardia and palpitations.",
+                  "Confusion, agitation, and hallucinations (especially in the elderly).",
+                  "Hyperthermia due to reduced sweating.",
+                  "Flushing of the skin (atropine flush).",
+                  "Paradoxical bradycardia in low doses.",
+                  "Acute angle-closure glaucoma in susceptible individuals.",
+                  "Worsening of urinary retention in men with BPH.",
+                  "Gastroesophageal reflux due to reduced lower esophageal sphincter tone."
+                ],
+                "Drug-drug interactions": [
+                  "Enhances the effects of other anticholinergics (e.g., tricyclic antidepressants, antihistamines), increasing the risk of toxicity.",
+                  "May reduce the efficacy of cholinesterase inhibitors (e.g., pyridostigmine) used in myasthenia gravis.",
+                  "Concomitant use with potassium chloride tablets may increase the risk of gastrointestinal ulceration due to reduced gastric acid secretion."
+                ],
+                "Contraindications": [
+                  "Glaucoma (especially angle-closure glaucoma).",
+                  "Urinary retention (e.g., in men with BPH).",
+                  "Gastrointestinal obstruction or ileus.",
+                  "Severe ulcerative colitis.",
+                  "Myasthenia gravis (may exacerbate symptoms)."
+                ]
+              }
+            },
+            {
+              "stem": "2. Describe PROPRANOLOL under the following headings:",
+              "modelAnswer": {
+                "Mode of action": "Propranolol is a non-selective beta-adrenergic antagonist that blocks both beta-1 and beta-2 receptors, reducing heart rate, contractility, renin release, and bronchodilation.",
+                "Clinical applications": [
+                  "Hypertension: Reduces blood pressure by decreasing cardiac output and renin release.",
+                  "Angina pectoris: Reduces myocardial oxygen demand by decreasing heart rate and contractility.",
+                  "Arrhythmias: Suppresses supraventricular and ventricular arrhythmias (e.g., atrial fibrillation, ventricular tachycardia).",
+                  "Post-myocardial infarction: Reduces mortality and reinfarction risk by decreasing myocardial oxygen demand.",
+                  "Migraine prophylaxis: Reduces the frequency and severity of migraine headaches.",
+                  "Hyperthyroidism: Controls symptoms such as tachycardia, palpitations, and tremor.",
+                  "Essential tremor: Reduces tremor amplitude and frequency."
+                ],
+                "Side effects": [
+                  "Bradycardia and heart block.",
+                  "Hypotension and dizziness.",
+                  "Fatigue and lethargy.",
+                  "Cold extremities and exacerbation of Raynaud's phenomenon.",
+                  "Bronchospasm (due to beta-2 blockade, contraindicated in asthma/COPD).",
+                  "Masking of hypoglycemia symptoms (e.g., tachycardia, tremor) in diabetic patients."
+                ],
+                "Drug-drug interactions": [
+                  "Concomitant use with calcium channel blockers (e.g., verapamil, diltiazem) may cause severe bradycardia or heart block.",
+                  "Concomitant use with digoxin may increase the risk of bradycardia or heart block.",
+                  "Concomitant use with insulin or oral hypoglycemics may mask hypoglycemic symptoms and delay recovery."
+                ],
+                "Contraindications": [
+                  "Severe bradycardia or heart block (second- or third-degree).",
+                  "Cardiogenic shock or severe heart failure.",
+                  "Severe asthma or COPD (due to risk of bronchospasm).",
+                  "Uncontrolled hypertension.",
+                  "Severe peripheral vascular disease (may exacerbate symptoms)."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1195 @@
+{
+  "pharm-new-chemo-anti": {
+    "1": {
+      "title": "Chemotherapy & Antimicrobials",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 68-year-old male with a history of penicillin-induced anaphylaxis requires empiric therapy for suspected gram-negative bacteremia. Which of the following is the most appropriate beta-lactam option?",
+              "options": [
+                "Ceftriaxone",
+                "Cefazolin",
+                "Aztreonam",
+                "Imipenem"
+              ],
+              "answer": "Aztreonam",
+              "explanation": "Aztreonam is a monobactam with gram-negative activity and no cross-reactivity with penicillins."
+            },
+            {
+              "stem": "Which of the following antibiotics is most likely to cause ototoxicity and nephrotoxicity, necessitating therapeutic drug monitoring?",
+              "options": [
+                "Ciprofloxacin",
+                "Gentamicin",
+                "Doxycycline",
+                "Clindamycin"
+              ],
+              "answer": "Gentamicin",
+              "explanation": "Gentamicin is an aminoglycoside associated with ototoxicity and nephrotoxicity, requiring TDM."
+            },
+            {
+              "stem": "A 22-year-old female presents with community-acquired pneumonia. She reports a history of anaphylaxis to penicillin. Which of the following macrolides is preferred due to its lower risk of CYP3A4-mediated drug interactions?",
+              "options": [
+                "Erythromycin",
+                "Clarithromycin",
+                "Azithromycin",
+                "Telithromycin"
+              ],
+              "answer": "Azithromycin",
+              "explanation": "Azithromycin has minimal CYP3A4 inhibition compared to erythromycin and clarithromycin."
+            },
+            {
+              "stem": "Which of the following statements about tetracyclines is INCORRECT?",
+              "options": [
+                "Doxycycline is contraindicated in children under 8 years due to effects on bone and teeth.",
+                "Minocycline is associated with vestibular toxicity.",
+                "Tetracyclines are bacteriostatic and inhibit protein synthesis by binding to the 30S ribosomal subunit.",
+                "Photosensitivity is a common adverse effect of doxycycline."
+              ],
+              "answer": "Doxycycline is contraindicated in children under 8 years due to effects on bone and teeth.",
+              "explanation": "Doxycycline is generally safe in children under 8 years for short courses, unlike tetracycline."
+            },
+            {
+              "stem": "A 34-year-old male with a history of intravenous drug use presents with infective endocarditis. Blood cultures grow methicillin-resistant Staphylococcus aureus (MRSA). Which of the following is the most appropriate therapy?",
+              "options": [
+                "Vancomycin",
+                "Ceftriaxone",
+                "Amoxicillin",
+                "Ciprofloxacin"
+              ],
+              "answer": "Vancomycin",
+              "explanation": "Vancomycin is the drug of choice for MRSA infections, including infective endocarditis."
+            },
+            {
+              "stem": "Which of the following antibiotics is most likely to cause tendon rupture, particularly in elderly patients on concurrent corticosteroids?",
+              "options": [
+                "Amoxicillin",
+                "Ciprofloxacin",
+                "Clindamycin",
+                "Metronidazole"
+              ],
+              "answer": "Ciprofloxacin",
+              "explanation": "Fluoroquinolones, including ciprofloxacin, are associated with tendon rupture and other musculoskeletal toxicities."
+            },
+            {
+              "stem": "A 55-year-old female with a history of chronic obstructive pulmonary disease (COPD) presents with an acute exacerbation. Sputum culture grows Pseudomonas aeruginosa. Which of the following is the most appropriate empiric therapy?",
+              "options": [
+                "Ceftriaxone",
+                "Piperacillin-tazobactam",
+                "Clindamycin",
+                "Vancomycin"
+              ],
+              "answer": "Piperacillin-tazobactam",
+              "explanation": "Piperacillin-tazobactam provides broad-spectrum coverage, including Pseudomonas aeruginosa."
+            },
+            {
+              "stem": "Which of the following antifungals is associated with infusion-related reactions, including fever, chills, and hypotension, necessitating premedication?",
+              "options": [
+                "Fluconazole",
+                "Amphotericin B",
+                "Caspofungin",
+                "Voriconazole"
+              ],
+              "answer": "Amphotericin B",
+              "explanation": "Amphotericin B is associated with infusion-related reactions, often requiring premedication with antipyretics and antihistamines."
+            },
+            {
+              "stem": "A 40-year-old male with HIV presents with cryptococcal meningitis. Which of the following is the most appropriate induction therapy?",
+              "options": [
+                "Fluconazole monotherapy",
+                "Amphotericin B plus flucytosine",
+                "Caspofungin",
+                "Voriconazole"
+              ],
+              "answer": "Amphotericin B plus flucytosine",
+              "explanation": "Amphotericin B plus flucytosine is the recommended induction therapy for cryptococcal meningitis in HIV patients."
+            },
+            {
+              "stem": "Which of the following antivirals is a neuraminidase inhibitor used for the treatment of influenza?",
+              "options": [
+                "Acyclovir",
+                "Oseltamivir",
+                "Ribavirin",
+                "Ganciclovir"
+              ],
+              "answer": "Oseltamivir",
+              "explanation": "Oseltamivir is a neuraminidase inhibitor used for the treatment and prophylaxis of influenza."
+            },
+            {
+              "stem": "A 28-year-old female with a history of penicillin allergy presents with gonorrhea. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Ceftriaxone",
+                "Azithromycin",
+                "Doxycycline",
+                "Ciprofloxacin"
+              ],
+              "answer": "Ceftriaxone",
+              "explanation": "Ceftriaxone is the recommended therapy for gonorrhea, with azithromycin added for chlamydia co-infection."
+            },
+            {
+              "stem": "Which of the following statements about vancomycin is CORRECT?",
+              "options": [
+                "Vancomycin is bactericidal and inhibits cell wall synthesis by binding to penicillin-binding proteins.",
+                "Vancomycin is primarily eliminated via hepatic metabolism.",
+                "Red man syndrome is an IgE-mediated hypersensitivity reaction.",
+                "Vancomycin has excellent oral bioavailability."
+              ],
+              "answer": "Red man syndrome is an IgE-mediated hypersensitivity reaction.",
+              "explanation": "Red man syndrome is a non-IgE-mediated reaction caused by histamine release, not a true allergic reaction."
+            },
+            {
+              "stem": "A 60-year-old male with a history of tuberculosis presents with jaundice and elevated liver enzymes after starting antituberculosis therapy. Which of the following drugs is most likely responsible?",
+              "options": [
+                "Isoniazid",
+                "Rifampin",
+                "Ethambutol",
+                "Pyrazinamide"
+              ],
+              "answer": "Isoniazid",
+              "explanation": "Isoniazid is associated with hepatotoxicity, particularly in older adults."
+            },
+            {
+              "stem": "Which of the following antimalarials is contraindicated in patients with G6PD deficiency due to the risk of hemolytic anemia?",
+              "options": [
+                "Chloroquine",
+                "Artemether-lumefantrine",
+                "Primaquine",
+                "Quinine"
+              ],
+              "answer": "Primaquine",
+              "explanation": "Primaquine can cause hemolytic anemia in G6PD-deficient patients."
+            },
+            {
+              "stem": "A 30-year-old female with a history of recurrent urinary tract infections presents with fever and flank pain. Urine culture grows Escherichia coli resistant to trimethoprim-sulfamethoxazole. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Nitrofurantoin",
+                "Ciprofloxacin",
+                "Amoxicillin",
+                "Clindamycin"
+              ],
+              "answer": "Ciprofloxacin",
+              "explanation": "Ciprofloxacin provides broad-spectrum coverage for resistant gram-negative organisms."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of beta-lactam antibiotics is CORRECT?",
+              "options": [
+                "Beta-lactams inhibit bacterial DNA gyrase.",
+                "Beta-lactams bind to the 50S ribosomal subunit.",
+                "Beta-lactams inhibit bacterial cell wall synthesis by binding to penicillin-binding proteins.",
+                "Beta-lactams inhibit bacterial protein synthesis by interfering with tRNA binding."
+              ],
+              "answer": "Beta-lactams inhibit bacterial cell wall synthesis by binding to penicillin-binding proteins.",
+              "explanation": "Beta-lactams inhibit bacterial cell wall synthesis by binding to penicillin-binding proteins."
+            },
+            {
+              "stem": "A 45-year-old male with a history of alcohol use disorder presents with confusion, ataxia, and ophthalmoplegia. Thiamine deficiency is suspected. Which of the following antibiotics is most likely to cause this syndrome?",
+              "options": [
+                "Metronidazole",
+                "Doxycycline",
+                "Ciprofloxacin",
+                "Clindamycin"
+              ],
+              "answer": "Metronidazole",
+              "explanation": "Metronidazole can cause a disulfiram-like reaction and neurotoxicity, including confusion and ataxia."
+            },
+            {
+              "stem": "Which of the following statements about the pharmacokinetics of benzylpenicillin is CORRECT?",
+              "options": [
+                "Benzylpenicillin is well absorbed orally.",
+                "Benzylpenicillin is primarily eliminated via hepatic metabolism.",
+                "Benzylpenicillin does not cross the blood-brain barrier.",
+                "Benzylpenicillin is excreted unchanged in the urine."
+              ],
+              "answer": "Benzylpenicillin is excreted unchanged in the urine.",
+              "explanation": "Benzylpenicillin is primarily excreted unchanged in the urine."
+            },
+            {
+              "stem": "A 25-year-old female with a history of penicillin allergy presents with syphilis. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Doxycycline",
+                "Azithromycin",
+                "Ceftriaxone",
+                "Vancomycin"
+              ],
+              "answer": "Doxycycline",
+              "explanation": "Doxycycline is an alternative for penicillin-allergic patients with syphilis."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of macrolides is CORRECT?",
+              "options": [
+                "Macrolides inhibit bacterial DNA synthesis.",
+                "Macrolides bind to the 30S ribosomal subunit.",
+                "Macrolides inhibit bacterial protein synthesis by binding to the 50S ribosomal subunit.",
+                "Macrolides inhibit bacterial cell wall synthesis."
+              ],
+              "answer": "Macrolides inhibit bacterial protein synthesis by binding to the 50S ribosomal subunit.",
+              "explanation": "Macrolides inhibit bacterial protein synthesis by binding to the 50S ribosomal subunit."
+            },
+            {
+              "stem": "A 50-year-old male with a history of chronic kidney disease presents with fever and chills after receiving chemotherapy. Blood cultures grow Enterococcus faecium resistant to vancomycin. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Linezolid",
+                "Daptomycin",
+                "Tigecycline",
+                "Ceftaroline"
+              ],
+              "answer": "Linezolid",
+              "explanation": "Linezolid is active against vancomycin-resistant Enterococcus faecium."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of fluoroquinolones is CORRECT?",
+              "options": [
+                "Fluoroquinolones inhibit bacterial cell wall synthesis.",
+                "Fluoroquinolones inhibit bacterial DNA gyrase and topoisomerase IV.",
+                "Fluoroquinolones bind to the 30S ribosomal subunit.",
+                "Fluoroquinolones inhibit bacterial protein synthesis."
+              ],
+              "answer": "Fluoroquinolones inhibit bacterial DNA gyrase and topoisomerase IV.",
+              "explanation": "Fluoroquinolones inhibit bacterial DNA gyrase and topoisomerase IV."
+            },
+            {
+              "stem": "A 35-year-old female with a history of recurrent vaginal candidiasis presents with a new episode. She is currently taking oral contraceptives. Which of the following antifungals is most likely to interact with her contraceptives?",
+              "options": [
+                "Fluconazole",
+                "Amphotericin B",
+                "Nystatin",
+                "Caspofungin"
+              ],
+              "answer": "Fluconazole",
+              "explanation": "Fluconazole is a CYP3A4 inhibitor and can reduce the efficacy of oral contraceptives."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of sulfonamides is CORRECT?",
+              "options": [
+                "Sulfonamides inhibit bacterial cell wall synthesis.",
+                "Sulfonamides inhibit bacterial DNA gyrase.",
+                "Sulfonamides inhibit bacterial dihydrofolate reductase.",
+                "Sulfonamides inhibit bacterial folic acid synthesis by competing with PABA."
+              ],
+              "answer": "Sulfonamides inhibit bacterial folic acid synthesis by competing with PABA.",
+              "explanation": "Sulfonamides inhibit bacterial folic acid synthesis by competing with PABA."
+            },
+            {
+              "stem": "A 40-year-old male with a history of HIV presents with Pneumocystis jirovecii pneumonia. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Trimethoprim-sulfamethoxazole",
+                "Dapsone",
+                "Pentamidine",
+                "Atovaquone"
+              ],
+              "answer": "Trimethoprim-sulfamethoxazole",
+              "explanation": "Trimethoprim-sulfamethoxazole is the first-line therapy for Pneumocystis jirovecii pneumonia."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of acyclovir is CORRECT?",
+              "options": [
+                "Acyclovir inhibits viral DNA polymerase by competing with deoxyguanosine triphosphate.",
+                "Acyclovir inhibits viral reverse transcriptase.",
+                "Acyclovir inhibits viral RNA polymerase.",
+                "Acyclovir inhibits viral protein synthesis."
+              ],
+              "answer": "Acyclovir inhibits viral DNA polymerase by competing with deoxyguanosine triphosphate.",
+              "explanation": "Acyclovir inhibits viral DNA polymerase by competing with deoxyguanosine triphosphate."
+            },
+            {
+              "stem": "A 20-year-old female with a history of recurrent genital herpes presents with a new outbreak. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Acyclovir",
+                "Oseltamivir",
+                "Ribavirin",
+                "Ganciclovir"
+              ],
+              "answer": "Acyclovir",
+              "explanation": "Acyclovir is the drug of choice for the treatment of genital herpes."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of amphotericin B is CORRECT?",
+              "options": [
+                "Amphotericin B inhibits ergosterol synthesis.",
+                "Amphotericin B binds to ergosterol in the fungal cell membrane, creating pores.",
+                "Amphotericin B inhibits fungal cell wall synthesis.",
+                "Amphotericin B inhibits fungal protein synthesis."
+              ],
+              "answer": "Amphotericin B binds to ergosterol in the fungal cell membrane, creating pores.",
+              "explanation": "Amphotericin B binds to ergosterol in the fungal cell membrane, creating pores."
+            },
+            {
+              "stem": "A 50-year-old male with a history of diabetes presents with a severe soft tissue infection. Blood cultures grow methicillin-resistant Staphylococcus aureus (MRSA). Which of the following is the most appropriate therapy?",
+              "options": [
+                "Vancomycin",
+                "Ceftriaxone",
+                "Clindamycin",
+                "Ciprofloxacin"
+              ],
+              "answer": "Vancomycin",
+              "explanation": "Vancomycin is the drug of choice for MRSA infections."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of echinocandins is CORRECT?",
+              "options": [
+                "Echinocandins inhibit ergosterol synthesis.",
+                "Echinocandins inhibit fungal cell wall synthesis by inhibiting beta-glucan synthase.",
+                "Echinocandins bind to ergosterol in the fungal cell membrane.",
+                "Echinocandins inhibit fungal protein synthesis."
+              ],
+              "answer": "Echinocandins inhibit fungal cell wall synthesis by inhibiting beta-glucan synthase.",
+              "explanation": "Echinocandins inhibit fungal cell wall synthesis by inhibiting beta-glucan synthase."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "Explain the rationale behind the combination of antibiotics in the treatment of tuberculosis. Provide two examples of such combinations.",
+              "modelAnswer": "Combination therapy in tuberculosis is used to prevent the emergence of drug-resistant strains and to enhance antimicrobial activity. Examples include:\n1. RHZE (Rifampicin, Isoniazid, Pyrazinamide, Ethambutol): Used in the initial phase of treatment to rapidly reduce the bacterial load and prevent resistance.\n2. Rifampicin and Isoniazid: Used in the continuation phase to eliminate residual bacteria and prevent relapse."
+            },
+            {
+              "stem": "Describe five general mechanisms through which bacteria develop resistance against antibiotics.",
+              "modelAnswer": "1. Enzymatic inactivation: Bacteria produce enzymes (e.g., beta-lactamases) that inactivate antibiotics.\n2. Alteration of target sites: Mutations or modifications in bacterial targets (e.g., penicillin-binding proteins) reduce antibiotic binding.\n3. Efflux pumps: Bacteria actively pump antibiotics out of the cell, reducing intracellular concentrations.\n4. Reduced permeability: Changes in bacterial cell membranes or porins limit antibiotic entry.\n5. Biofilm formation: Bacteria form biofilms that protect them from antibiotics and immune responses."
+            },
+            {
+              "stem": "Explain the four generations of cephalosporins, clearly showing the spectrum of antimicrobial activity of each generation.",
+              "modelAnswer": "1. First-generation (e.g., Cefazolin): Primarily active against gram-positive bacteria (e.g., Staphylococcus aureus) and some gram-negative bacteria (e.g., Escherichia coli).\n2. Second-generation (e.g., Cefuroxime): Expanded gram-negative coverage, including some anaerobes (e.g., Haemophilus influenzae, Klebsiella pneumoniae).\n3. Third-generation (e.g., Ceftriaxone): Broad-spectrum activity against gram-negative bacteria, including Pseudomonas aeruginosa, and some gram-positive bacteria.\n4. Fourth-generation (e.g., Cefepime): Broad-spectrum activity against both gram-positive and gram-negative bacteria, including Pseudomonas aeruginosa and some beta-lactamase-producing organisms."
+            },
+            {
+              "stem": "a) Explain the mechanism of action of sulfonamides.\n\nb) Outline three adverse effects of sulfonamides.",
+              "modelAnswer": "a) Sulfonamides inhibit bacterial folic acid synthesis by competing with para-aminobenzoic acid (PABA) for the enzyme dihydropteroate synthase.\n\nb) 1. Hypersensitivity reactions (e.g., rash, Stevens-Johnson syndrome).\n2. Hemolytic anemia in G6PD-deficient patients.\n3. Crystalluria and nephrotoxicity (rare with modern sulfonamides)."
+            },
+            {
+              "stem": "a) Explain the mechanism of action of aminoglycosides.\n\nb) Outline three adverse effects of aminoglycosides.",
+              "modelAnswer": "a) Aminoglycosides inhibit bacterial protein synthesis by binding to the 30S ribosomal subunit, leading to misreading of mRNA and premature termination of protein synthesis.\n\nb) 1. Ototoxicity (vestibular and cochlear damage).\n2. Nephrotoxicity (acute tubular necrosis).\n3. Neuromuscular blockade (rare, but can cause respiratory paralysis)."
+            },
+            {
+              "stem": "You are discussing the microbiological results of a fecal sample with the hospital microbiologist. They report that the patient has acquired a Clostridium difficile infection.\n\na) What is meant by the term 'broad-spectrum antibiotics'?\n\nb) Identify two antibiotics in different classes that are associated with an increased risk of developing pseudomembranous colitis as a result of infection with C. difficile.\n\nc) Name two antibiotics (include the preferred route of administration) that can be used to manage this infection.",
+              "modelAnswer": "a) Broad-spectrum antibiotics are agents that cover a wide range of bacterial species, including both gram-positive and gram-negative bacteria, as well as anaerobes.\n\nb) 1. Clindamycin (lincosamide class).\n2. Ceftriaxone (third-generation cephalosporin).\n\nc) 1. Vancomycin (oral route).\n2. Metronidazole (oral or intravenous route)."
+            },
+            {
+              "stem": "List two adverse effects and two therapeutic uses associated with metronidazole.",
+              "modelAnswer": "Adverse effects:\n1. Peripheral neuropathy (with prolonged use).\n2. Disulfiram-like reaction (with alcohol consumption).\n\nTherapeutic uses:\n1. Treatment of anaerobic bacterial infections (e.g., intra-abdominal infections).\n2. Treatment of protozoal infections (e.g., trichomoniasis, giardiasis)."
+            },
+            {
+              "stem": "A 59-year-old woman presents to an urgent care clinic with a 4-day history of frequent and painful urination. She has had fevers, chills, and flank pain for the past 2 days. Her urine dipstick test is positive for leukocyte esterase. Urinalysis and urine culture are ordered. Her past medical history is significant for three urinary tract infections in the past year. Each episode was uncomplicated, treated with trimethoprim-sulfamethoxazole, and promptly resolved. She also has osteoporosis for which she takes a daily calcium supplement. The decision is made to treat her with oral antibiotics for a complicated urinary tract infection with close follow-up.\n\na) Give three reasonable empiric antibiotics for this patient.\n\nb) Depending on the antibiotic choice, are there potential drug interactions? Explain.",
+              "modelAnswer": "a) 1. Ciprofloxacin.\n2. Nitrofurantoin (if renal function is adequate).\n3. Amoxicillin-clavulanate.\n\nb) Yes, potential drug interactions:\n1. Ciprofloxacin can interact with calcium supplements, reducing its absorption. It should be taken 2 hours before or 6 hours after calcium supplements.\n2. Nitrofurantoin can interact with probenecid, increasing its serum concentrations.\n3. Amoxicillin-clavulanate can interact with oral contraceptives, reducing their efficacy."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Discuss the penicillin antibiotics under the following sub-topics:\n\na) The mechanism of action of Benzyl penicillin.\n\nb) The spectrum of antimicrobial activity of Amoxicillin.\n\nc) Six pharmacokinetic properties of benzyl penicillin.\n\nd) Three clinical uses of benzyl penicillin.\n\ne) Adverse effects associated with benzyl penicillin.",
+              "modelAnswer": "a) Mechanism of action of Benzyl penicillin:\nBenzyl penicillin (penicillin G) is a beta-lactam antibiotic that inhibits bacterial cell wall synthesis. It binds to penicillin-binding proteins (PBPs) in the bacterial cell wall, leading to the inhibition of peptidoglycan cross-linking. This results in bacterial cell lysis and death.\n\nb) Spectrum of antimicrobial activity of Amoxicillin:\nAmoxicillin is a broad-spectrum penicillin with activity against:\n- Gram-positive bacteria: Streptococcus pneumoniae, Streptococcus pyogenes, Enterococcus faecalis.\n- Gram-negative bacteria: Haemophilus influenzae, Escherichia coli, Proteus mirabilis.\n- Some anaerobes: Clostridium species (not C. difficile).\nIt is also used in combination with clavulanate to extend its spectrum against beta-lactamase-producing organisms.\n\nc) Six pharmacokinetic properties of benzyl penicillin:\n1. Administration: Primarily administered intravenously or intramuscularly (poor oral bioavailability).\n2. Distribution: Widely distributed in body tissues and fluids, including the cerebrospinal fluid (CSF) in the presence of inflammation.\n3. Protein binding: Approximately 60% protein-bound.\n4. Metabolism: Minimal hepatic metabolism.\n5. Excretion: Primarily excreted unchanged in the urine via tubular secretion and glomerular filtration.\n6. Half-life: Short half-life (~30 minutes), requiring frequent dosing.\n\n\nd) Three clinical uses of benzyl penicillin:\n1. Treatment of infections caused by susceptible gram-positive bacteria (e.g., Streptococcus pneumoniae, Streptococcus pyogenes).\n2. Treatment of syphilis (caused by Treponema pallidum).\n3. Prophylaxis for rheumatic fever and bacterial endocarditis.\n\n\ne) Adverse effects associated with benzyl penicillin:\n1. Hypersensitivity reactions: Rash, urticaria, anaphylaxis (IgE-mediated).\n2. Gastrointestinal disturbances: Nausea, vomiting, diarrhea.\n3. Electrolyte imbalances: Hyperkalemia (with high-dose intravenous penicillin G potassium).\n4. Neurotoxicity: Seizures (with high doses or in patients with renal impairment).\n5. Jarisch-Herxheimer reaction: Fever, chills, and exacerbation of symptoms during treatment of syphilis."
+            },
+            {
+              "stem": "Mr. SD is a 25-year-old man with a history of drug use, for which he is prescribed daily supervised methadone. He was released from prison 2 years ago. He also has a history of chronic alcohol consumption and previous treatment for pulmonary tuberculosis with unclear history on completion of treatment. He has been referred to a chest physician with a cough productive of sputum and fever (2 months in duration). A sputum sample, obtained by his primary care doctor, is positive for acid-fast bacilli, and a chest radiograph shows right upper lobe cavities. Gene Expert studies show that Mycobacterium TB is resistant to Rifampicin.\n\na) Elucidate a probable effective five-drug regimen that would be used for the treatment of multi-drug resistant TB in Mr. SD.\n\nb) For each of the drugs in (a) above, explain the mechanism of action.\n\nc) For each drug suggested in (a) above, identify at least one adverse effect associated with it.",
+              "modelAnswer": "a) Probable effective five-drug regimen for multi-drug resistant TB (MDR-TB):\n1. Bedaquiline\n2. Linezolid\n3. Levofloxacin\n4. Clofazimine\n5. Pyrazinamide (if susceptible)\n\nb) Mechanism of action for each drug:\n1. Bedaquiline: Inhibits mycobacterial ATP synthase, disrupting energy production.\n2. Linezolid: Inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit.\n3. Levofloxacin: Inhibits bacterial DNA gyrase and topoisomerase IV, preventing DNA replication.\n4. Clofazimine: Binds to bacterial DNA, inhibiting replication and transcription.\n5. Pyrazinamide: Disrupts mycobacterial cell membrane metabolism and energy production.\n\nc) Adverse effects for each drug:\n1. Bedaquiline: QT prolongation, hepatotoxicity.\n2. Linezolid: Myelosuppression (thrombocytopenia), peripheral neuropathy.\n3. Levofloxacin: Tendon rupture, QT prolongation, CNS toxicity (e.g., seizures).\n4. Clofazimine: Skin discoloration (reddish-brown), gastrointestinal disturbances.\n5. Pyrazinamide: Hepatotoxicity, hyperuricemia (gout)."
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Chemotherapy & Antimicrobials",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 68-year-old male with a history of type 2 diabetes and chronic kidney disease (eGFR 30 mL/min) presents with a severe urinary tract infection. Blood cultures grow ESBL-producing Escherichia coli. Which of the following antibiotics is most appropriate for this patient?",
+              "options": [
+                "Ceftriaxone",
+                "Ciprofloxacin",
+                "Meropenem",
+                "Piperacillin-tazobactam"
+              ],
+              "answer": "Meropenem",
+              "explanation": "Meropenem is a carbapenem with broad-spectrum activity against ESBL-producing organisms and is stable against most beta-lactamases. It is the drug of choice in this scenario due to the ESBL production and the patient's renal impairment, which limits the use of renally-excreted agents."
+            },
+            {
+              "stem": "A 25-year-old female presents with community-acquired pneumonia. She reports a history of anaphylaxis to penicillin. Which of the following antibiotics is contraindicated in this patient?",
+              "options": [
+                "Azithromycin",
+                "Cefazolin",
+                "Clarithromycin",
+                "Doxycycline"
+              ],
+              "answer": "Cefazolin",
+              "explanation": "Cefazolin is a first-generation cephalosporin with a high risk of cross-reactivity in patients with a history of anaphylaxis to penicillin. Azithromycin, clarithromycin, and doxycycline are safe alternatives."
+            },
+            {
+              "stem": "A 45-year-old male with a prosthetic heart valve is admitted with infective endocarditis caused by methicillin-resistant Staphylococcus aureus (MRSA). Which of the following antibiotics is the most appropriate choice for this patient?",
+              "options": [
+                "Ceftriaxone",
+                "Clindamycin",
+                "Vancomycin",
+                "Gentamicin"
+              ],
+              "answer": "Vancomycin",
+              "explanation": "Vancomycin is the drug of choice for MRSA infections, including infective endocarditis involving prosthetic valves. It is bactericidal against gram-positive organisms and has good tissue penetration."
+            },
+            {
+              "stem": "A 30-year-old female with a history of rheumatoid arthritis presents with a severe flare. She is currently on methotrexate and prednisone. She is diagnosed with a complicated urinary tract infection caused by Pseudomonas aeruginosa. Which of the following antibiotics is most likely to interact with her current medications?",
+              "options": [
+                "Ciprofloxacin",
+                "Amikacin",
+                "Piperacillin-tazobactam",
+                "Meropenem"
+              ],
+              "answer": "Ciprofloxacin",
+              "explanation": "Ciprofloxacin is a fluoroquinolone that can inhibit CYP1A2, potentially increasing the levels of methotrexate and prednisone, leading to toxicity. The other options have minimal interactions with these drugs."
+            },
+            {
+              "stem": "A 50-year-old male with a history of gout is started on allopurinol for chronic management. He develops a severe bacterial infection requiring empiric antibiotic therapy. Which of the following antibiotics should be avoided due to a potential interaction with allopurinol?",
+              "options": [
+                "Amoxicillin",
+                "Ceftriaxone",
+                "Azithromycin",
+                "Trimethoprim-sulfamethoxazole"
+              ],
+              "answer": "Trimethoprim-sulfamethoxazole",
+              "explanation": "Trimethoprim-sulfamethoxazole can increase the risk of hyperkalemia when used with allopurinol, especially in patients with renal impairment. Amoxicillin, ceftriaxone, and azithromycin do not have this interaction."
+            },
+            {
+              "stem": "A 70-year-old female with a history of atrial fibrillation on warfarin presents with a severe lower respiratory tract infection. Which of the following antibiotics is most likely to potentiate the effects of warfarin?",
+              "options": [
+                "Azithromycin",
+                "Ceftriaxone",
+                "Ciprofloxacin",
+                "Doxycycline"
+              ],
+              "answer": "Ciprofloxacin",
+              "explanation": "Ciprofloxacin can inhibit CYP2C9, the enzyme responsible for metabolizing warfarin, leading to increased warfarin levels and a higher risk of bleeding. The other options have minimal effects on warfarin metabolism."
+            },
+            {
+              "stem": "A 20-year-old male presents with a 3-day history of fever, sore throat, and cervical lymphadenopathy. A rapid strep test is positive for group A Streptococcus. He reports a history of anaphylaxis to penicillin. Which of the following antibiotics is the most appropriate choice?",
+              "options": [
+                "Cefazolin",
+                "Clarithromycin",
+                "Azithromycin",
+                "Doxycycline"
+              ],
+              "answer": "Clarithromycin",
+              "explanation": "Clarithromycin is a macrolide with activity against group A Streptococcus and is a safe alternative in patients with penicillin allergy. Azithromycin is also an option but clarithromycin is preferred due to its better tissue penetration."
+            },
+            {
+              "stem": "A 35-year-old female with a history of epilepsy on phenytoin presents with a severe skin and soft tissue infection caused by methicillin-sensitive Staphylococcus aureus (MSSA). Which of the following antibiotics is most likely to decrease the efficacy of phenytoin?",
+              "options": [
+                "Vancomycin",
+                "Ceftriaxone",
+                "Clindamycin",
+                "Trimethoprim-sulfamethoxazole"
+              ],
+              "answer": "Trimethoprim-sulfamethoxazole",
+              "explanation": "Trimethoprim-sulfamethoxazole can inhibit the metabolism of phenytoin, leading to increased phenytoin levels and potential toxicity. The other options do not have this interaction."
+            },
+            {
+              "stem": "A 40-year-old male with a history of HIV on antiretroviral therapy presents with a severe case of Pneumocystis jirovecii pneumonia. Which of the following antibiotics is the most appropriate choice for this patient?",
+              "options": [
+                "Trimethoprim-sulfamethoxazole",
+                "Pentamidine",
+                "Clindamycin",
+                "Primaquine"
+              ],
+              "answer": "Trimethoprim-sulfamethoxazole",
+              "explanation": "Trimethoprim-sulfamethoxazole is the first-line treatment for Pneumocystis jirovecii pneumonia in patients with HIV. It is effective and well-tolerated in this population."
+            },
+            {
+              "stem": "A 55-year-old female with a history of hypertension and chronic kidney disease presents with a severe case of pyelonephritis. Urine culture grows Escherichia coli resistant to fluoroquinolones and trimethoprim-sulfamethoxazole. Which of the following antibiotics is the most appropriate choice?",
+              "options": [
+                "Ceftriaxone",
+                "Amikacin",
+                "Meropenem",
+                "Piperacillin-tazobactam"
+              ],
+              "answer": "Meropenem",
+              "explanation": "Meropenem is a carbapenem with broad-spectrum activity against gram-negative organisms, including those resistant to fluoroquinolones and trimethoprim-sulfamethoxazole. It is the drug of choice in this scenario."
+            },
+            {
+              "stem": "A 28-year-old female with a history of asthma presents with a severe case of community-acquired pneumonia. She is started on empiric therapy with ceftriaxone and azithromycin. Which of the following adverse effects is most commonly associated with azithromycin?",
+              "options": [
+                "Nephrotoxicity",
+                "Ototoxicity",
+                "QT prolongation",
+                "Hepatotoxicity"
+              ],
+              "answer": "QT prolongation",
+              "explanation": "Azithromycin is a macrolide that can prolong the QT interval, increasing the risk of torsades de pointes, especially in patients with underlying cardiac conditions or electrolyte imbalances."
+            },
+            {
+              "stem": "A 60-year-old male with a history of type 2 diabetes and chronic obstructive pulmonary disease (COPD) presents with a severe case of bacterial pneumonia. He is started on empiric therapy with piperacillin-tazobactam and vancomycin. Which of the following adverse effects is most commonly associated with vancomycin?",
+              "options": [
+                "Red man syndrome",
+                "Nephrotoxicity",
+                "Ototoxicity",
+                "Hepatotoxicity"
+              ],
+              "answer": "Red man syndrome",
+              "explanation": "Red man syndrome is a non-allergic reaction characterized by flushing, pruritus, and erythema, typically occurring with rapid infusion of vancomycin. It is not a true allergy and can be managed by slowing the infusion rate."
+            },
+            {
+              "stem": "A 32-year-old female with a history of systemic lupus erythematosus on hydroxychloroquine presents with a severe case of bacterial meningitis. Which of the following antibiotics is most likely to interact with hydroxychloroquine?",
+              "options": [
+                "Ceftriaxone",
+                "Vancomycin",
+                "Meropenem",
+                "Ampicillin"
+              ],
+              "answer": "Meropenem",
+              "explanation": "Meropenem can lower the seizure threshold, which may interact with hydroxychloroquine, a drug known to lower the seizure threshold as well. The other options do not have this interaction."
+            },
+            {
+              "stem": "A 45-year-old male with a history of schizophrenia on clozapine presents with a severe case of bacterial pneumonia. Which of the following antibiotics is most likely to increase the risk of agranulocytosis when combined with clozapine?",
+              "options": [
+                "Ceftriaxone",
+                "Vancomycin",
+                "Trimethoprim-sulfamethoxazole",
+                "Azithromycin"
+              ],
+              "answer": "Trimethoprim-sulfamethoxazole",
+              "explanation": "Trimethoprim-sulfamethoxazole can increase the risk of agranulocytosis when used with clozapine, a drug known to cause this adverse effect. The other options do not have this interaction."
+            },
+            {
+              "stem": "A 50-year-old female with a history of breast cancer on tamoxifen presents with a severe case of bacterial vaginosis. Which of the following antibiotics is most likely to decrease the efficacy of tamoxifen?",
+              "options": [
+                "Metronidazole",
+                "Clindamycin",
+                "Azithromycin",
+                "Doxycycline"
+              ],
+              "answer": "Metronidazole",
+              "explanation": "Metronidazole can induce CYP3A4, the enzyme responsible for metabolizing tamoxifen, leading to decreased efficacy of tamoxifen. The other options do not have this interaction."
+            },
+            {
+              "stem": "A 30-year-old male with a history of intravenous drug use presents with infective endocarditis caused by methicillin-resistant Staphylococcus aureus (MRSA). He is started on vancomycin. Which of the following monitoring parameters is most important for this patient?",
+              "options": [
+                "Serum creatinine",
+                "Serum potassium",
+                "Serum magnesium",
+                "Serum calcium"
+              ],
+              "answer": "Serum creatinine",
+              "explanation": "Vancomycin is nephrotoxic, and serum creatinine should be monitored regularly to assess renal function. Dose adjustments may be necessary based on renal function."
+            },
+            {
+              "stem": "A 40-year-old female with a history of hypertension and chronic kidney disease presents with a severe case of pyelonephritis. Urine culture grows Escherichia coli resistant to fluoroquinolones and trimethoprim-sulfamethoxazole. She is started on meropenem. Which of the following adverse effects is most commonly associated with meropenem?",
+              "options": [
+                "Nephrotoxicity",
+                "Seizures",
+                "Hepatotoxicity",
+                "Ototoxicity"
+              ],
+              "answer": "Seizures",
+              "explanation": "Meropenem can lower the seizure threshold, especially in patients with renal impairment or a history of seizures. The other options are less commonly associated with meropenem."
+            },
+            {
+              "stem": "A 25-year-old female with a history of asthma presents with a severe case of community-acquired pneumonia. She is started on empiric therapy with ceftriaxone and azithromycin. Which of the following adverse effects is most commonly associated with ceftriaxone?",
+              "options": [
+                "Nephrotoxicity",
+                "Hypersensitivity reactions",
+                "QT prolongation",
+                "Hepatotoxicity"
+              ],
+              "answer": "Hypersensitivity reactions",
+              "explanation": "Ceftriaxone is a beta-lactam antibiotic and can cause hypersensitivity reactions, including anaphylaxis, in patients with a history of penicillin allergy. The other options are less commonly associated with ceftriaxone."
+            },
+            {
+              "stem": "A 60-year-old male with a history of type 2 diabetes and chronic kidney disease presents with a severe case of bacterial pneumonia. He is started on empiric therapy with piperacillin-tazobactam and vancomycin. Which of the following adverse effects is most commonly associated with piperacillin-tazobactam?",
+              "options": [
+                "Nephrotoxicity",
+                "Hypersensitivity reactions",
+                "Electrolyte imbalances",
+                "Hepatotoxicity"
+              ],
+              "answer": "Electrolyte imbalances",
+              "explanation": "Piperacillin-tazobactam can cause electrolyte imbalances, including hyperkalemia and hypokalemia, especially in patients with renal impairment. The other options are less commonly associated with this combination."
+            },
+            {
+              "stem": "A 35-year-old female with a history of rheumatoid arthritis on methotrexate presents with a severe case of bacterial pneumonia. She is started on empiric therapy with ceftriaxone and azithromycin. Which of the following adverse effects is most commonly associated with methotrexate?",
+              "options": [
+                "Nephrotoxicity",
+                "Hepatotoxicity",
+                "Ototoxicity",
+                "QT prolongation"
+              ],
+              "answer": "Hepatotoxicity",
+              "explanation": "Methotrexate is hepatotoxic and can cause liver enzyme elevations, fibrosis, and cirrhosis with prolonged use. The other options are less commonly associated with methotrexate."
+            },
+            {
+              "stem": "A 45-year-old male with a history of HIV on antiretroviral therapy presents with a severe case of Pneumocystis jirovecii pneumonia. He is started on trimethoprim-sulfamethoxazole. Which of the following adverse effects is most commonly associated with trimethoprim-sulfamethoxazole?",
+              "options": [
+                "Nephrotoxicity",
+                "Hypersensitivity reactions",
+                "Hyperkalemia",
+                "QT prolongation"
+              ],
+              "answer": "Hyperkalemia",
+              "explanation": "Trimethoprim can cause hyperkalemia by inhibiting the renal excretion of potassium, especially in patients with renal impairment. The other options are less commonly associated with trimethoprim-sulfamethoxazole."
+            },
+            {
+              "stem": "A 50-year-old female with a history of hypertension and chronic kidney disease presents with a severe case of pyelonephritis. Urine culture grows Escherichia coli resistant to fluoroquinolones and trimethoprim-sulfamethoxazole. She is started on meropenem. Which of the following adverse effects is most commonly associated with meropenem?",
+              "options": [
+                "Nephrotoxicity",
+                "Seizures",
+                "Hepatotoxicity",
+                "Ototoxicity"
+              ],
+              "answer": "Seizures",
+              "explanation": "Meropenem can lower the seizure threshold, especially in patients with renal impairment or a history of seizures. The other options are less commonly associated with meropenem."
+            },
+            {
+              "stem": "A 28-year-old female with a history of asthma presents with a severe case of community-acquired pneumonia. She is started on empiric therapy with ceftriaxone and azithromycin. Which of the following adverse effects is most commonly associated with azithromycin?",
+              "options": [
+                "Nephrotoxicity",
+                "Ototoxicity",
+                "QT prolongation",
+                "Hepatotoxicity"
+              ],
+              "answer": "QT prolongation",
+              "explanation": "Azithromycin is a macrolide that can prolong the QT interval, increasing the risk of torsades de pointes, especially in patients with underlying cardiac conditions or electrolyte imbalances."
+            },
+            {
+              "stem": "A 60-year-old male with a history of type 2 diabetes and chronic obstructive pulmonary disease (COPD) presents with a severe case of bacterial pneumonia. He is started on empiric therapy with piperacillin-tazobactam and vancomycin. Which of the following adverse effects is most commonly associated with vancomycin?",
+              "options": [
+                "Red man syndrome",
+                "Nephrotoxicity",
+                "Ototoxicity",
+                "Hepatotoxicity"
+              ],
+              "answer": "Red man syndrome",
+              "explanation": "Red man syndrome is a non-allergic reaction characterized by flushing, pruritus, and erythema, typically occurring with rapid infusion of vancomycin. It is not a true allergy and can be managed by slowing the infusion rate."
+            },
+            {
+              "stem": "A 32-year-old female with a history of systemic lupus erythematosus on hydroxychloroquine presents with a severe case of bacterial meningitis. Which of the following antibiotics is most likely to interact with hydroxychloroquine?",
+              "options": [
+                "Ceftriaxone",
+                "Vancomycin",
+                "Meropenem",
+                "Ampicillin"
+              ],
+              "answer": "Meropenem",
+              "explanation": "Meropenem can lower the seizure threshold, which may interact with hydroxychloroquine, a drug known to lower the seizure threshold as well. The other options do not have this interaction."
+            },
+            {
+              "stem": "A 45-year-old male with a history of schizophrenia on clozapine presents with a severe case of bacterial pneumonia. Which of the following antibiotics is most likely to increase the risk of agranulocytosis when combined with clozapine?",
+              "options": [
+                "Ceftriaxone",
+                "Vancomycin",
+                "Trimethoprim-sulfamethoxazole",
+                "Azithromycin"
+              ],
+              "answer": "Trimethoprim-sulfamethoxazole",
+              "explanation": "Trimethoprim-sulfamethoxazole can increase the risk of agranulocytosis when used with clozapine, a drug known to cause this adverse effect. The other options do not have this interaction."
+            },
+            {
+              "stem": "A 50-year-old female with a history of breast cancer on tamoxifen presents with a severe case of bacterial vaginosis. Which of the following antibiotics is most likely to decrease the efficacy of tamoxifen?",
+              "options": [
+                "Metronidazole",
+                "Clindamycin",
+                "Azithromycin",
+                "Doxycycline"
+              ],
+              "answer": "Metronidazole",
+              "explanation": "Metronidazole can induce CYP3A4, the enzyme responsible for metabolizing tamoxifen, leading to decreased efficacy of tamoxifen. The other options do not have this interaction."
+            },
+            {
+              "stem": "A 30-year-old male with a history of intravenous drug use presents with infective endocarditis caused by methicillin-resistant Staphylococcus aureus (MRSA). He is started on vancomycin. Which of the following monitoring parameters is most important for this patient?",
+              "options": [
+                "Serum creatinine",
+                "Serum potassium",
+                "Serum magnesium",
+                "Serum calcium"
+              ],
+              "answer": "Serum creatinine",
+              "explanation": "Vancomycin is nephrotoxic, and serum creatinine should be monitored regularly to assess renal function. Dose adjustments may be necessary based on renal function."
+            },
+            {
+              "stem": "A 40-year-old female with a history of hypertension and chronic kidney disease presents with a severe case of pyelonephritis. Urine culture grows Escherichia coli resistant to fluoroquinolones and trimethoprim-sulfamethoxazole. She is started on meropenem. Which of the following adverse effects is most commonly associated with meropenem?",
+              "options": [
+                "Nephrotoxicity",
+                "Seizures",
+                "Hepatotoxicity",
+                "Ototoxicity"
+              ],
+              "answer": "Seizures",
+              "explanation": "Meropenem can lower the seizure threshold, especially in patients with renal impairment or a history of seizures. The other options are less commonly associated with meropenem."
+            },
+            {
+              "stem": "A 25-year-old female with a history of asthma presents with a severe case of community-acquired pneumonia. She is started on empiric therapy with ceftriaxone and azithromycin. Which of the following adverse effects is most commonly associated with ceftriaxone?",
+              "options": [
+                "Nephrotoxicity",
+                "Hypersensitivity reactions",
+                "QT prolongation",
+                "Hepatotoxicity"
+              ],
+              "answer": "Hypersensitivity reactions",
+              "explanation": "Ceftriaxone is a beta-lactam antibiotic and can cause hypersensitivity reactions, including anaphylaxis, in patients with a history of penicillin allergy. The other options are less commonly associated with ceftriaxone."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 55-year-old male with a history of type 2 diabetes and chronic kidney disease presents with a severe case of pyelonephritis. Urine culture grows Escherichia coli resistant to fluoroquinolones and trimethoprim-sulfamethoxazole. Outline the rationale for using a carbapenem in this patient.",
+              "modelAnswer": "Carbapenems (e.g., meropenem) are broad-spectrum beta-lactam antibiotics with activity against many gram-negative organisms, including those producing extended-spectrum beta-lactamases (ESBLs). They are stable against most beta-lactamases and have good tissue penetration, making them suitable for severe infections like pyelonephritis caused by resistant organisms. In this patient with renal impairment, meropenem is preferred due to its efficacy and the limited alternatives available."
+            },
+            {
+              "stem": "a) Explain the mechanism of action of sulfonamides (2 Marks)\nb) Outline 3 adverse effects of sulfonamides (3 Marks)",
+              "modelAnswer": "a) Sulfonamides are structural analogs of para-aminobenzoic acid (PABA) and competitively inhibit dihydropteroate synthase, an enzyme essential for bacterial folate synthesis. This inhibits bacterial DNA and RNA synthesis.\n\nb) Adverse effects of sulfonamides include:\n1. Hypersensitivity reactions (e.g., rash, Stevens-Johnson syndrome).\n2. Hematological toxicity (e.g., agranulocytosis, hemolytic anemia in G6PD deficiency).\n3. Crystalluria leading to nephrotoxicity (rare with modern formulations)."
+            },
+            {
+              "stem": "A 30-year-old female with a history of rheumatoid arthritis on methotrexate presents with a severe case of bacterial pneumonia. She is started on empiric therapy with ceftriaxone and azithromycin. Outline the potential drug interactions and monitoring considerations for this patient.",
+              "modelAnswer": "1. Methotrexate and azithromycin: Azithromycin can inhibit CYP3A4, potentially increasing methotrexate levels and toxicity (e.g., bone marrow suppression, hepatotoxicity). Monitor methotrexate levels and liver function tests.\n2. Methotrexate and ceftriaxone: No significant interaction, but both drugs can cause nephrotoxicity. Monitor renal function.\n3. Azithromycin and methotrexate: Azithromycin can prolong the QT interval, increasing the risk of arrhythmias in patients on methotrexate (which can also cause electrolyte imbalances). Monitor ECG and electrolytes."
+            },
+            {
+              "stem": "a) Explain the mechanism of action of aminoglycosides (2 Marks)\nb) Outline 3 adverse effects of aminoglycosides (3 Marks)",
+              "modelAnswer": "a) Aminoglycosides bind to the 30S ribosomal subunit, inhibiting bacterial protein synthesis. They are bactericidal and exhibit concentration-dependent killing.\n\nb) Adverse effects of aminoglycosides include:\n1. Nephrotoxicity (acute tubular necrosis, reversible with discontinuation).\n2. Ototoxicity (vestibular and cochlear damage, often irreversible).\n3. Neuromuscular blockade (rare, but can cause respiratory paralysis)."
+            },
+            {
+              "stem": "A 45-year-old male with a history of HIV on antiretroviral therapy presents with a severe case of Pneumocystis jirovecii pneumonia. He is started on trimethoprim-sulfamethoxazole. Outline the rationale for using this combination and the monitoring considerations.",
+              "modelAnswer": "Trimethoprim-sulfamethoxazole is the first-line treatment for Pneumocystis jirovecii pneumonia due to its synergistic inhibition of folate synthesis (trimethoprim inhibits dihydrofolate reductase, and sulfamethoxazole inhibits dihydropteroate synthase). Monitoring considerations include:\n1. Renal function (trimethoprim can cause hyperkalemia and nephrotoxicity).\n2. Complete blood count (risk of bone marrow suppression).\n3. Electrolytes (monitor potassium levels).\n4. Drug interactions with antiretrovirals (e.g., CYP3A4 inhibitors may increase sulfamethoxazole levels)."
+            },
+            {
+              "stem": "You are discussing the microbiological results of a fecal sample with the hospital microbiologist. They report that the patient has acquired a Clostridium difficile infection (CDI).\na) Define 'broad-spectrum antibiotics' (1 Mark)\nb) Identify two antibiotics in different classes that are associated with an increased risk of CDI (2 Marks)\nc) Name two antibiotics (include the preferred route of administration) that can be used to manage CDI (2 Marks)",
+              "modelAnswer": "a) Broad-spectrum antibiotics are agents with activity against a wide range of bacteria, including both gram-positive and gram-negative organisms, and often anaerobic bacteria.\n\nb) Two antibiotics associated with an increased risk of CDI:\n1. Clindamycin (lincosamide class).\n2. Cephalosporins (e.g., ceftriaxone, beta-lactam class).\n\nc) Two antibiotics for managing CDI:\n1. Oral vancomycin (preferred route for mild to moderate CDI).\n2. Oral fidaxomicin (preferred for recurrent CDI or in patients with multiple recurrences)."
+            },
+            {
+              "stem": "List 2 adverse effects and 2 therapeutic uses associated with metronidazole.",
+              "modelAnswer": "Adverse effects:\n1. Peripheral neuropathy (with prolonged use).\n2. Disulfiram-like reaction (when combined with alcohol).\n\nTherapeutic uses:\n1. Treatment of anaerobic bacterial infections (e.g., intra-abdominal infections, bacterial vaginosis).\n2. Treatment of protozoal infections (e.g., giardiasis, trichomoniasis)."
+            },
+            {
+              "stem": "A 59-year-old woman presents to an urgent care clinic with a 4-day history of frequent and painful urination. She has had fevers, chills, and flank pain for the past 2 days. Her physician advised her to come immediately to the clinic for evaluation. In the clinic she is febrile (38.5°C) but otherwise stable and states she is not experiencing any nausea or vomiting. Her urine dipstick test is positive for leukocyte esterase. Urinalysis and urine culture are ordered. Her past medical history is significant for three urinary tract infections in the past year. Each episode was uncomplicated, treated with trimethoprim-sulfamethoxazole, and promptly resolved. She also has osteoporosis for which she takes a daily calcium supplement. The decision is made to treat her with oral antibiotics for a complicated urinary tract infection with close follow-up.\na) Give 3 reasonable empiric antibiotics for this patient (3 Marks)\nb) Depending on the antibiotic choice, are there potential drug interactions? Explain (2 Marks)",
+              "modelAnswer": "a) Three reasonable empiric antibiotics for complicated urinary tract infection:\n1. Ciprofloxacin (fluoroquinolone, good gram-negative coverage).\n2. Cefuroxime (second-generation cephalosporin, broader gram-negative coverage).\n3. Amoxicillin-clavulanate (if Enterococcus is suspected, though less common in complicated UTI).\n\nb) Potential drug interactions:\n1. Ciprofloxacin and calcium supplements: Calcium can chelate fluoroquinolones, reducing their absorption. Advise the patient to take ciprofloxacin 2 hours before or 6 hours after calcium supplements.\n2. Cefuroxime and warfarin: Cefuroxime can enhance the effects of warfarin, increasing the risk of bleeding. Monitor INR closely.\n3. Amoxicillin-clavulanate and methotrexate: Amoxicillin can increase methotrexate levels, increasing the risk of toxicity. Monitor methotrexate levels and adjust dose as needed."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 25-year-old male with a history of intravenous drug use presents with infective endocarditis caused by methicillin-resistant Staphylococcus aureus (MRSA). He is started on vancomycin.\na) Outline the mechanism of action of vancomycin (3 Marks)\nb) Describe the spectrum of activity of vancomycin (3 Marks)\nc) Outline the pharmacokinetic properties of vancomycin (3 Marks)\nd) Discuss the adverse effects associated with vancomycin (3 Marks)\ne) Outline the monitoring considerations for this patient (3 Marks)",
+              "modelAnswer": "a) Mechanism of action: Vancomycin is a glycopeptide antibiotic that inhibits bacterial cell wall synthesis by binding to the D-alanyl-D-alanine terminus of peptidoglycan precursors, preventing cross-linking and weakening the cell wall.\n\nb) Spectrum of activity: Vancomycin is primarily active against gram-positive organisms, including:\n- Methicillin-resistant Staphylococcus aureus (MRSA).\n- Methicillin-sensitive Staphylococcus aureus (MSSA).\n- Coagulase-negative staphylococci (e.g., Staphylococcus epidermidis).\n- Enterococcus species (though resistance is increasing).\n- Streptococcus species (e.g., Streptococcus pneumoniae, Streptococcus pyogenes).\n- Clostridium difficile (for oral administration in CDI).\n\nc) Pharmacokinetic properties:\n- Absorption: Poor oral absorption; administered intravenously for systemic infections.\n- Distribution: Widely distributed in tissues, including bone and synovial fluid; poor penetration into the cerebrospinal fluid (CSF) unless meninges are inflamed.\n- Metabolism: Minimal hepatic metabolism; primarily excreted unchanged in urine.\n- Half-life: 6–10 hours in patients with normal renal function; prolonged in renal impairment.\n- Protein binding: Approximately 55%.\n\n\nd) Adverse effects:\n1. Red man syndrome: Non-allergic reaction characterized by flushing, pruritus, and erythema, typically occurring with rapid infusion. Managed by slowing the infusion rate or premedicating with antihistamines.\n2. Nephrotoxicity: Acute tubular necrosis, especially with prolonged use or high doses. Monitor renal function and adjust dose based on creatinine clearance.\n3. Ototoxicity: Vestibular and cochlear damage, often irreversible. Monitor for symptoms such as tinnitus or hearing loss.\n4. Hematological toxicity: Neutropenia or thrombocytopenia, especially with prolonged therapy.\n\n\ne) Monitoring considerations:\n1. Renal function: Monitor serum creatinine and calculate creatinine clearance regularly to adjust vancomycin dose.\n2. Serum vancomycin levels: Trough levels should be monitored to ensure therapeutic efficacy (target: 10–20 mg/L for most infections; 15–20 mg/L for severe infections like endocarditis or osteomyelitis).\n3. Signs of ototoxicity: Monitor for tinnitus, hearing loss, or vestibular symptoms.\n4. Signs of red man syndrome: Administer vancomycin slowly (over at least 60 minutes) and premedicate with antihistamines if necessary.\n5. Complete blood count: Monitor for hematological toxicity, especially with prolonged therapy."
+            },
+            {
+              "stem": "A 65-year-old male with a history of type 2 diabetes, hypertension, and chronic kidney disease (eGFR 45 mL/min) presents with a severe case of bacterial pneumonia. He is started on empiric therapy with piperacillin-tazobactam and vancomycin.\na) Outline the rationale for using piperacillin-tazobactam in this patient (5 Marks)\nb) Describe the mechanism of action of piperacillin-tazobactam (5 Marks)\nc) Outline the adverse effects associated with piperacillin-tazobactam (5 Marks)",
+              "modelAnswer": "a) Rationale for using piperacillin-tazobactam:\n1. Broad-spectrum activity: Piperacillin-tazobactam has activity against a wide range of gram-negative and gram-positive organisms, including Pseudomonas aeruginosa, which is a common cause of severe bacterial pneumonia.\n2. Beta-lactamase inhibition: Tazobactam is a beta-lactamase inhibitor that extends the spectrum of piperacillin to include beta-lactamase-producing organisms, such as many strains of Escherichia coli and Klebsiella pneumoniae.\n3. Empiric therapy: Given the severity of the infection and the patient's comorbidities (diabetes, chronic kidney disease), empiric therapy with a broad-spectrum agent is appropriate to cover likely pathogens while awaiting culture results.\n4. Renal adjustment: Piperacillin-tazobactam is primarily renally excreted, and dose adjustments are required in patients with renal impairment (e.g., eGFR 45 mL/min).\n5. Synergy with vancomycin: Piperacillin-tazobactam and vancomycin have complementary spectra of activity, covering both gram-negative and gram-positive organisms, which is important in severe pneumonia where polymicrobial infection is possible.\n\n\nb) Mechanism of action:\n1. Piperacillin: A broad-spectrum penicillin that inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins (PBPs), leading to cell wall weakening and bacterial lysis. It is bactericidal.\n2. Tazobactam: A beta-lactamase inhibitor that irreversibly binds to and inactivates beta-lactamases produced by bacteria, protecting piperacillin from degradation and extending its spectrum of activity.\n\n\nc) Adverse effects:\n1. Hypersensitivity reactions: Beta-lactam antibiotics can cause allergic reactions, ranging from rash to anaphylaxis. Monitor for signs of hypersensitivity.\n2. Electrolyte imbalances: Piperacillin-tazobactam can cause hyperkalemia and hypokalemia, especially in patients with renal impairment. Monitor electrolytes regularly.\n3. Nephrotoxicity: Piperacillin-tazobactam can cause acute kidney injury, especially when combined with other nephrotoxic agents (e.g., vancomycin). Monitor renal function closely.\n4. Hematological toxicity: Thrombocytopenia, neutropenia, or bleeding disorders can occur with prolonged use. Monitor complete blood count.\n5. Clostridium difficile infection: Broad-spectrum antibiotics like piperacillin-tazobactam can disrupt the normal gut flora, increasing the risk of CDI. Monitor for diarrhea and other symptoms of CDI."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Chemotherapy & Antimicrobials",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 68-year-old male with a history of chronic obstructive pulmonary disease (COPD) and recent hospitalization develops a severe hospital-acquired pneumonia. The sputum culture reveals a multidrug-resistant Pseudomonas aeruginosa. Which of the following antibiotics is the most appropriate choice for this patient?",
+              "options": [
+                "Amoxicillin-clavulanate",
+                "Ceftriaxone",
+                "Piperacillin-tazobactam",
+                "Vancomycin"
+              ],
+              "answer": "Piperacillin-tazobactam",
+              "explanation": "Piperacillin-tazobactam provides broad-spectrum coverage against Pseudomonas aeruginosa, including many multidrug-resistant strains, making it suitable for hospital-acquired pneumonia."
+            },
+            {
+              "stem": "A 32-year-old female with a documented severe penicillin allergy (anaphylaxis) presents with acute bacterial sinusitis. Which of the following antibiotics is the safest alternative for her?",
+              "options": [
+                "Cefazolin",
+                "Ceftriaxone",
+                "Aztreonam",
+                "Cefepime"
+              ],
+              "answer": "Aztreonam",
+              "explanation": "Aztreonam is a monobactam with no cross-reactivity to penicillins or cephalosporins, making it a safe option for patients with severe penicillin allergies."
+            },
+            {
+              "stem": "Which of the following antibiotics inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit and is known to cause QT prolongation?",
+              "options": [
+                "Doxycycline",
+                "Gentamicin",
+                "Clarithromycin",
+                "Ciprofloxacin"
+              ],
+              "answer": "Clarithromycin",
+              "explanation": "Clarithromycin is a macrolide that binds to the 50S ribosomal subunit, inhibiting protein synthesis. It is also associated with QT prolongation, particularly at high doses or in patients with other risk factors."
+            },
+            {
+              "stem": "A 24-year-old male with a history of intravenous drug use presents with infective endocarditis caused by methicillin-resistant Staphylococcus aureus (MRSA). Which of the following antibiotics is the drug of choice for this infection?",
+              "options": [
+                "Ceftriaxone",
+                "Vancomycin",
+                "Clindamycin",
+                "Daptomycin"
+              ],
+              "answer": "Vancomycin",
+              "explanation": "Vancomycin is the drug of choice for MRSA infections, including infective endocarditis, due to its activity against methicillin-resistant staphylococci."
+            },
+            {
+              "stem": "Which of the following statements about tetracyclines is correct?",
+              "options": [
+                "They are bactericidal antibiotics.",
+                "They should be avoided in children under 8 years of age due to the risk of teeth discoloration.",
+                "They are primarily eliminated via hepatic metabolism.",
+                "They have excellent activity against Pseudomonas aeruginosa."
+              ],
+              "answer": "They should be avoided in children under 8 years of age due to the risk of teeth discoloration.",
+              "explanation": "Tetracyclines, such as doxycycline, can cause permanent discoloration of teeth and affect bone growth in children under 8 years of age, making them contraindicated in this population."
+            },
+            {
+              "stem": "A 50-year-old female with a history of type 2 diabetes mellitus presents with a severe urinary tract infection caused by extended-spectrum beta-lactamase (ESBL)-producing Escherichia coli. Which of the following antibiotics is the most appropriate choice?",
+              "options": [
+                "Ceftriaxone",
+                "Ciprofloxacin",
+                "Meropenem",
+                "Amoxicillin-clavulanate"
+              ],
+              "answer": "Meropenem",
+              "explanation": "Meropenem is a carbapenem with broad-spectrum activity against ESBL-producing organisms, making it a suitable choice for severe infections caused by these resistant bacteria."
+            },
+            {
+              "stem": "Which of the following antibiotics is associated with the highest risk of Clostridioides difficile infection?",
+              "options": [
+                "Azithromycin",
+                "Metronidazole",
+                "Clindamycin",
+                "Trimethoprim-sulfamethoxazole"
+              ],
+              "answer": "Clindamycin",
+              "explanation": "Clindamycin has a high association with Clostridioides difficile infection due to its broad-spectrum activity and disruption of the normal gut microbiota."
+            },
+            {
+              "stem": "A 70-year-old male with a history of chronic kidney disease (CKD) stage 4 presents with a severe community-acquired pneumonia. Which of the following antibiotics requires dose adjustment in this patient?",
+              "options": [
+                "Ceftriaxone",
+                "Levofloxacin",
+                "Azithromycin",
+                "Vancomycin"
+              ],
+              "answer": "Vancomycin",
+              "explanation": "Vancomycin is primarily eliminated renally, and dose adjustment is required in patients with chronic kidney disease to avoid accumulation and toxicity."
+            },
+            {
+              "stem": "Which of the following antibiotics is a first-line treatment for uncomplicated urinary tract infections caused by Escherichia coli?",
+              "options": [
+                "Nitrofurantoin",
+                "Ciprofloxacin",
+                "Amoxicillin-clavulanate",
+                "Ceftriaxone"
+              ],
+              "answer": "Nitrofurantoin",
+              "explanation": "Nitrofurantoin is a first-line treatment for uncomplicated urinary tract infections due to its activity against common uropathogens, including Escherichia coli, and its favorable safety profile."
+            },
+            {
+              "stem": "A 28-year-old female with a history of recurrent genital herpes simplex virus (HSV) infections presents for suppressive therapy. Which of the following antiviral agents is the most appropriate choice?",
+              "options": [
+                "Oseltamivir",
+                "Acyclovir",
+                "Ribavirin",
+                "Zanamivir"
+              ],
+              "answer": "Acyclovir",
+              "explanation": "Acyclovir is the drug of choice for suppressive therapy in patients with recurrent genital HSV infections due to its efficacy and safety profile."
+            },
+            {
+              "stem": "Which of the following antifungal agents is associated with nephrotoxicity as a dose-limiting adverse effect?",
+              "options": [
+                "Fluconazole",
+                "Itraconazole",
+                "Amphotericin B",
+                "Caspofungin"
+              ],
+              "answer": "Amphotericin B",
+              "explanation": "Amphotericin B is associated with significant nephrotoxicity, which is a dose-limiting adverse effect. Liposomal formulations reduce this risk but do not eliminate it."
+            },
+            {
+              "stem": "A 45-year-old male with a history of HIV infection presents with a CD4 count of 50 cells/mm³ and symptoms of cryptococcal meningitis. Which of the following antifungal agents is the most appropriate choice for induction therapy?",
+              "options": [
+                "Fluconazole",
+                "Amphotericin B + flucytosine",
+                "Caspofungin",
+                "Itraconazole"
+              ],
+              "answer": "Amphotericin B + flucytosine",
+              "explanation": "Amphotericin B combined with flucytosine is the recommended induction therapy for cryptococcal meningitis in patients with HIV, as it provides synergistic activity and improves outcomes."
+            },
+            {
+              "stem": "Which of the following antibiotics is a narrow-spectrum agent primarily used for the treatment of infections caused by gram-positive organisms, including methicillin-resistant Staphylococcus aureus (MRSA)?",
+              "options": [
+                "Ceftriaxone",
+                "Vancomycin",
+                "Ciprofloxacin",
+                "Amoxicillin-clavulanate"
+              ],
+              "answer": "Vancomycin",
+              "explanation": "Vancomycin is a narrow-spectrum antibiotic with activity primarily against gram-positive organisms, including MRSA, making it a key agent for treating these infections."
+            },
+            {
+              "stem": "A 30-year-old female with a history of tuberculosis presents with symptoms of peripheral neuropathy after completing a 6-month course of isoniazid. Which of the following vitamins should be administered to prevent or treat this adverse effect?",
+              "options": [
+                "Vitamin B1 (Thiamine)",
+                "Vitamin B6 (Pyridoxine)",
+                "Vitamin B12 (Cobalamin)",
+                "Vitamin D"
+              ],
+              "answer": "Vitamin B6 (Pyridoxine)",
+              "explanation": "Isoniazid can cause peripheral neuropathy due to its interference with pyridoxine metabolism. Co-administration of pyridoxine (vitamin B6) is recommended to prevent this adverse effect."
+            },
+            {
+              "stem": "Which of the following statements about fluoroquinolones is correct?",
+              "options": [
+                "They are primarily bacteriostatic.",
+                "They are contraindicated in children under 18 years of age due to the risk of tendon rupture.",
+                "They have excellent activity against anaerobic bacteria.",
+                "They are safe to use in patients with myasthenia gravis."
+              ],
+              "answer": "They are contraindicated in children under 18 years of age due to the risk of tendon rupture.",
+              "explanation": "Fluoroquinolones are contraindicated in children under 18 years of age due to the risk of tendon rupture and potential damage to growing cartilage."
+            },
+            {
+              "stem": "A 55-year-old male with a history of chronic alcohol use presents with symptoms of Wernicke-Korsakoff syndrome. Which of the following antibiotics could contribute to this condition by depleting thiamine levels?",
+              "options": [
+                "Metronidazole",
+                "Doxycycline",
+                "Ciprofloxacin",
+                "Amoxicillin"
+              ],
+              "answer": "Metronidazole",
+              "explanation": "Metronidazole can deplete thiamine levels, particularly in patients with chronic alcohol use, contributing to the development of Wernicke-Korsakoff syndrome."
+            },
+            {
+              "stem": "Which of the following antibiotics is associated with the highest risk of causing ototoxicity?",
+              "options": [
+                "Ceftriaxone",
+                "Gentamicin",
+                "Clarithromycin",
+                "Doxycycline"
+              ],
+              "answer": "Gentamicin",
+              "explanation": "Gentamicin, an aminoglycoside, is associated with a high risk of ototoxicity, including both cochlear and vestibular damage, particularly with prolonged or high-dose therapy."
+            },
+            {
+              "stem": "A 60-year-old female with a history of atrial fibrillation presents with a severe lower respiratory tract infection. Her current medications include warfarin and digoxin. Which of the following antibiotics may increase the risk of bleeding due to its interaction with warfarin?",
+              "options": [
+                "Azithromycin",
+                "Ciprofloxacin",
+                "Amoxicillin-clavulanate",
+                "Doxycycline"
+              ],
+              "answer": "Ciprofloxacin",
+              "explanation": "Ciprofloxacin can potentiate the effects of warfarin by inhibiting its metabolism, increasing the risk of bleeding in patients on anticoagulant therapy."
+            },
+            {
+              "stem": "Which of the following antifungal agents is a first-line treatment for invasive aspergillosis?",
+              "options": [
+                "Fluconazole",
+                "Itraconazole",
+                "Voriconazole",
+                "Caspofungin"
+              ],
+              "answer": "Voriconazole",
+              "explanation": "Voriconazole is the drug of choice for invasive aspergillosis due to its broad-spectrum activity against Aspergillus species and favorable pharmacokinetic profile."
+            },
+            {
+              "stem": "A 25-year-old male with a history of intravenous drug use presents with infective endocarditis caused by methicillin-sensitive Staphylococcus aureus (MSSA). Which of the following antibiotics is the most appropriate choice for this infection?",
+              "options": [
+                "Vancomycin",
+                "Ceftriaxone",
+                "Clindamycin",
+                "Daptomycin"
+              ],
+              "answer": "Ceftriaxone",
+              "explanation": "Ceftriaxone is a third-generation cephalosporin with excellent activity against methicillin-sensitive Staphylococcus aureus and is a suitable choice for infective endocarditis caused by this organism."
+            },
+            {
+              "stem": "Which of the following statements about aminoglycosides is correct?",
+              "options": [
+                "They are primarily bacteriostatic.",
+                "They are safe to use in patients with myasthenia gravis.",
+                "They require therapeutic drug monitoring (TDM) to prevent toxicity.",
+                "They have excellent oral bioavailability."
+              ],
+              "answer": "They require therapeutic drug monitoring (TDM) to prevent toxicity.",
+              "explanation": "Aminoglycosides require therapeutic drug monitoring to optimize efficacy and minimize toxicity, particularly ototoxicity and nephrotoxicity."
+            },
+            {
+              "stem": "A 40-year-old female with a history of recurrent urinary tract infections presents with symptoms of a complicated urinary tract infection. The urine culture reveals a multidrug-resistant Escherichia coli. Which of the following antibiotics is the most appropriate choice?",
+              "options": [
+                "Nitrofurantoin",
+                "Ciprofloxacin",
+                "Meropenem",
+                "Amoxicillin-clavulanate"
+              ],
+              "answer": "Meropenem",
+              "explanation": "Meropenem is a carbapenem with broad-spectrum activity against multidrug-resistant gram-negative organisms, making it a suitable choice for complicated urinary tract infections caused by these bacteria."
+            },
+            {
+              "stem": "Which of the following antibiotics is associated with the highest risk of causing Clostridioides difficile infection?",
+              "options": [
+                "Azithromycin",
+                "Metronidazole",
+                "Clindamycin",
+                "Trimethoprim-sulfamethoxazole"
+              ],
+              "answer": "Clindamycin",
+              "explanation": "Clindamycin has a high association with Clostridioides difficile infection due to its broad-spectrum activity and disruption of the normal gut microbiota."
+            },
+            {
+              "stem": "A 50-year-old male with a history of chronic kidney disease (CKD) stage 3 presents with a severe community-acquired pneumonia. Which of the following antibiotics requires dose adjustment in this patient?",
+              "options": [
+                "Ceftriaxone",
+                "Levofloxacin",
+                "Azithromycin",
+                "Vancomycin"
+              ],
+              "answer": "Vancomycin",
+              "explanation": "Vancomycin is primarily eliminated renally, and dose adjustment is required in patients with chronic kidney disease to avoid accumulation and toxicity."
+            },
+            {
+              "stem": "Which of the following antibiotics is a first-line treatment for uncomplicated urinary tract infections caused by Escherichia coli?",
+              "options": [
+                "Nitrofurantoin",
+                "Ciprofloxacin",
+                "Amoxicillin-clavulanate",
+                "Ceftriaxone"
+              ],
+              "answer": "Nitrofurantoin",
+              "explanation": "Nitrofurantoin is a first-line treatment for uncomplicated urinary tract infections due to its activity against common uropathogens, including Escherichia coli, and its favorable safety profile."
+            },
+            {
+              "stem": "A 28-year-old female with a history of recurrent genital herpes simplex virus (HSV) infections presents for suppressive therapy. Which of the following antiviral agents is the most appropriate choice?",
+              "options": [
+                "Oseltamivir",
+                "Acyclovir",
+                "Ribavirin",
+                "Zanamivir"
+              ],
+              "answer": "Acyclovir",
+              "explanation": "Acyclovir is the drug of choice for suppressive therapy in patients with recurrent genital HSV infections due to its efficacy and safety profile."
+            },
+            {
+              "stem": "Which of the following antifungal agents is associated with nephrotoxicity as a dose-limiting adverse effect?",
+              "options": [
+                "Fluconazole",
+                "Itraconazole",
+                "Amphotericin B",
+                "Caspofungin"
+              ],
+              "answer": "Amphotericin B",
+              "explanation": "Amphotericin B is associated with significant nephrotoxicity, which is a dose-limiting adverse effect. Liposomal formulations reduce this risk but do not eliminate it."
+            },
+            {
+              "stem": "A 45-year-old male with a history of HIV infection presents with a CD4 count of 50 cells/mm³ and symptoms of cryptococcal meningitis. Which of the following antifungal agents is the most appropriate choice for induction therapy?",
+              "options": [
+                "Fluconazole",
+                "Amphotericin B + flucytosine",
+                "Caspofungin",
+                "Itraconazole"
+              ],
+              "answer": "Amphotericin B + flucytosine",
+              "explanation": "Amphotericin B combined with flucytosine is the recommended induction therapy for cryptococcal meningitis in patients with HIV, as it provides synergistic activity and improves outcomes."
+            },
+            {
+              "stem": "Which of the following antibiotics is a narrow-spectrum agent primarily used for the treatment of infections caused by gram-positive organisms, including methicillin-resistant Staphylococcus aureus (MRSA)?",
+              "options": [
+                "Ceftriaxone",
+                "Vancomycin",
+                "Ciprofloxacin",
+                "Amoxicillin-clavulanate"
+              ],
+              "answer": "Vancomycin",
+              "explanation": "Vancomycin is a narrow-spectrum antibiotic with activity primarily against gram-positive organisms, including MRSA, making it a key agent for treating these infections."
+            },
+            {
+              "stem": "A 30-year-old female with a history of tuberculosis presents with symptoms of peripheral neuropathy after completing a 6-month course of isoniazid. Which of the following vitamins should be administered to prevent or treat this adverse effect?",
+              "options": [
+                "Vitamin B1 (Thiamine)",
+                "Vitamin B6 (Pyridoxine)",
+                "Vitamin B12 (Cobalamin)",
+                "Vitamin D"
+              ],
+              "answer": "Vitamin B6 (Pyridoxine)",
+              "explanation": "Isoniazid can cause peripheral neuropathy due to its interference with pyridoxine metabolism. Co-administration of pyridoxine (vitamin B6) is recommended to prevent this adverse effect."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 35-year-old male with a history of type 2 diabetes mellitus presents with a severe diabetic foot infection. The wound culture reveals a polymicrobial infection with Staphylococcus aureus, Pseudomonas aeruginosa, and Bacteroides fragilis. Describe the rationale for using combination antibiotic therapy in this patient.",
+              "modelAnswer": "Combination antibiotic therapy is used in this patient for the following reasons:\n1. **Polymicrobial infection**: The infection involves multiple organisms with different susceptibility patterns, requiring agents with broad-spectrum activity.\n2. **Synergistic effects**: Combining antibiotics can enhance bacterial killing, particularly in severe infections where monotherapy may be insufficient.\n3. **Prevention of resistance**: Using agents with different mechanisms of action reduces the likelihood of selecting for resistant organisms.\n4. **Empiric coverage**: Combination therapy provides empiric coverage for likely pathogens while awaiting culture results, ensuring appropriate initial treatment.\n5. **Polymicrobial synergy**: Some combinations (e.g., beta-lactam + aminoglycoside) can act synergistically against certain organisms, improving outcomes.\n\nExample regimen: Piperacillin-tazobactam (for gram-negative and anaerobic coverage) + vancomycin (for MRSA coverage) + metronidazole (for anaerobic coverage)."
+            },
+            {
+              "stem": "Describe five general mechanisms through which bacteria develop resistance against antibiotics.",
+              "modelAnswer": "Bacteria develop resistance to antibiotics through the following mechanisms:\n1. **Enzymatic inactivation**: Production of enzymes that degrade or modify the antibiotic (e.g., beta-lactamases that hydrolyze beta-lactam rings in penicillins and cephalosporins).\n2. **Alteration of target sites**: Modification of the bacterial target that the antibiotic binds to, reducing its affinity (e.g., altered penicillin-binding proteins in methicillin-resistant Staphylococcus aureus).\n3. **Reduced permeability**: Changes in the bacterial cell membrane or porins that limit the entry of the antibiotic into the cell (e.g., decreased porin expression in gram-negative bacteria reducing fluoroquinolone uptake).\n4. **Efflux pumps**: Active removal of the antibiotic from the bacterial cell via efflux pumps, reducing intracellular concentrations (e.g., efflux pumps in Pseudomonas aeruginosa that expel multiple antibiotic classes).\n5. **Bypass pathways**: Development of alternative metabolic pathways that bypass the inhibited step targeted by the antibiotic (e.g., bacteria producing alternative dihydrofolate reductase enzymes resistant to trimethoprim)."
+            },
+            {
+              "stem": "Explain the four generations of cephalosporins, clearly showing the spectrum of antimicrobial activity for each generation.",
+              "modelAnswer": "Cephalosporins are classified into four generations based on their spectrum of activity:\n\n1. **First-generation cephalosporins (e.g., cefazolin, cephalexin)**:\n   - **Spectrum**: Primarily active against gram-positive organisms (e.g., Staphylococcus aureus, Streptococcus pneumoniae) and some gram-negative organisms (e.g., Escherichia coli, Klebsiella pneumoniae).\n   - **Clinical use**: Skin and soft tissue infections, surgical prophylaxis, and urinary tract infections.\n   - **Limitation**: Poor activity against gram-negative organisms like Pseudomonas aeruginosa and anaerobic bacteria.\n\n2. **Second-generation cephalosporins (e.g., cefuroxime, cefoxitin)**:\n   - **Spectrum**: Expanded activity against gram-negative organisms (e.g., Haemophilus influenzae, Moraxella catarrhalis) while retaining activity against gram-positive organisms.\n   - **Clinical use**: Community-acquired pneumonia, sinusitis, and intra-abdominal infections.\n   - **Limitation**: Still limited activity against Pseudomonas aeruginosa and some anaerobes.\n\n3. **Third-generation cephalosporins (e.g., ceftriaxone, cefotaxime)**:\n   - **Spectrum**: Broad-spectrum activity against gram-negative organisms, including many Enterobacteriaceae and Pseudomonas aeruginosa (e.g., ceftazidime). Retains activity against gram-positive organisms.\n   - **Clinical use**: Serious infections like meningitis, pneumonia, and complicated urinary tract infections.\n   - **Limitation**: Increased risk of selecting for extended-spectrum beta-lactamase (ESBL)-producing organisms.\n\n4. **Fourth-generation cephalosporins (e.g., cefepime)**:\n   - **Spectrum**: Broad-spectrum activity against both gram-positive and gram-negative organisms, including Pseudomonas aeruginosa and many ESBL-producing organisms.\n   - **Clinical use**: Empiric therapy for severe hospital-acquired infections, febrile neutropenia, and infections caused by multidrug-resistant organisms.\n   - **Limitation**: Higher cost and potential for selecting for resistant organisms with prolonged use."
+            },
+            {
+              "stem": "a) Explain the mechanism of action of sulfonamides.\n\nb) Outline three adverse effects of sulfonamides.",
+              "modelAnswer": "a) **Mechanism of action**: Sulfonamides are structural analogs of para-aminobenzoic acid (PABA) and competitively inhibit the enzyme dihydropteroate synthetase (DHPS). This enzyme is essential for the synthesis of folic acid in bacteria. By inhibiting DHPS, sulfonamides prevent the formation of tetrahydrofolic acid, a critical precursor for DNA, RNA, and protein synthesis in bacteria. Mammalian cells lack this pathway, as they obtain folic acid from dietary sources, making sulfonamides selectively toxic to bacteria.\n\nb) **Adverse effects of sulfonamides**:\n1. **Hypersensitivity reactions**: Including skin rashes, urticaria, and severe reactions like Stevens-Johnson syndrome or toxic epidermal necrolysis.\n2. **Hematologic toxicity**: Such as hemolytic anemia (especially in patients with glucose-6-phosphate dehydrogenase deficiency), agranulocytosis, and aplastic anemia.\n3. **Crystalluria**: Sulfonamides can precipitate in the urine, leading to crystalluria, hematuria, and potential renal damage. Adequate hydration is essential to prevent this."
+            },
+            {
+              "stem": "a) Explain the mechanism of action of aminoglycosides.\n\nb) Outline three adverse effects of aminoglycosides.",
+              "modelAnswer": "a) **Mechanism of action**: Aminoglycosides are bactericidal antibiotics that inhibit bacterial protein synthesis by binding to the 30S ribosomal subunit. This binding interferes with the initiation of translation, causes misreading of mRNA, and leads to the production of nonfunctional proteins. The disruption of protein synthesis ultimately results in bacterial cell death.\n\nb) **Adverse effects of aminoglycosides**:\n1. **Ototoxicity**: Damage to the cochlear and vestibular portions of the inner ear, leading to hearing loss (cochlear toxicity) or balance disturbances (vestibular toxicity). Risk factors include prolonged therapy, high doses, and pre-existing renal impairment.\n2. **Nephrotoxicity**: Acute tubular necrosis due to accumulation of aminoglycosides in the renal cortex. Risk factors include prolonged therapy, high doses, dehydration, and pre-existing renal disease. Monitoring of renal function and therapeutic drug monitoring (TDM) are essential.\n3. **Neuromuscular blockade**: Rare but potentially life-threatening effect due to inhibition of acetylcholine release at the neuromuscular junction. Risk factors include rapid intravenous administration, concurrent use of neuromuscular blocking agents, and myasthenia gravis."
+            },
+            {
+              "stem": "You are discussing the microbiological results of a fecal sample with the hospital microbiologist. They report that the patient has acquired a Clostridioides difficile infection (CDI).\n\na) Describe what is meant by the term 'broad-spectrum antibiotics'.\n\nb) Identify two antibiotics in different classes that are associated with an increased risk of developing pseudomembranous colitis as a result of infection with C. difficile.\n\nc) Name two antibiotics (include the preferred route of administration) that can be used to manage this infection.",
+              "modelAnswer": "a) **Broad-spectrum antibiotics** are agents that have activity against a wide range of bacterial species, including both gram-positive and gram-negative organisms, as well as anaerobic bacteria. These antibiotics are often used empirically to cover a broad range of potential pathogens but can disrupt the normal gut microbiota, increasing the risk of opportunistic infections like Clostridioides difficile.\n\nb) **Antibiotics associated with increased risk of CDI**:\n1. **Clindamycin**: A lincosamide antibiotic with excellent activity against anaerobic bacteria, but it has a high association with CDI due to its disruption of the gut microbiota.\n2. **Third-generation cephalosporins (e.g., ceftriaxone)**: These agents have broad-spectrum activity and are commonly associated with CDI, particularly in hospitalized patients.\n\nc) **Antibiotics for managing CDI**:\n1. **Vancomycin (oral)**: The preferred route for CDI is oral, as it achieves high concentrations in the colon where the infection resides. Vancomycin is bactericidal against C. difficile and is the drug of choice for severe or recurrent infections.\n2. **Metronidazole (oral or intravenous)**: An alternative for mild to moderate CDI, particularly in resource-limited settings. Metronidazole is effective against anaerobic bacteria and is well-absorbed orally, achieving therapeutic concentrations in the colon."
+            },
+            {
+              "stem": "List two adverse effects and two therapeutic uses associated with metronidazole.",
+              "modelAnswer": "**Therapeutic uses of metronidazole**:\n1. **Anaerobic bacterial infections**: Metronidazole is highly effective against anaerobic bacteria, including Bacteroides fragilis, Clostridioides difficile, and anaerobic streptococci. It is used for intra-abdominal infections, pelvic inflammatory disease, and CDI.\n2. **Protozoal infections**: Metronidazole is the drug of choice for infections caused by protozoa such as Giardia lamblia, Entamoeba histolytica, and Trichomonas vaginalis.\n\n**Adverse effects of metronidazole**:\n1. **Gastrointestinal effects**: Including nausea, vomiting, diarrhea, metallic taste, and abdominal discomfort.\n2. **Neurotoxicity**: Such as peripheral neuropathy (with prolonged use), seizures, and encephalopathy. Disulfiram-like reactions can occur when combined with alcohol, leading to flushing, tachycardia, and hypotension."
+            },
+            {
+              "stem": "A 59-year-old woman presents to an urgent care clinic with a 4-day history of frequent and painful urination. She has had fevers, chills, and flank pain for the past 2 days. Her physician advised her to come immediately to the clinic for evaluation. In the clinic, she is febrile (38.5°C) but otherwise stable and states she is not experiencing any nausea or vomiting. Her urine dipstick test is positive for leukocyte esterase. Urinalysis and urine culture are ordered. Her past medical history is significant for three urinary tract infections in the past year. Each episode was uncomplicated, treated with trimethoprim-sulfamethoxazole, and promptly resolved. She also has osteoporosis for which she takes a daily calcium supplement. The decision is made to treat her with oral antibiotics for a complicated urinary tract infection with close follow-up.\n\na) Give three reasonable empiric antibiotics for this patient.\n\nb) Depending on the antibiotic choice, are there potential drug interactions? Explain.",
+              "modelAnswer": "a) **Reasonable empiric antibiotics for complicated urinary tract infection**:\n1. **Ciprofloxacin**: A fluoroquinolone with excellent activity against gram-negative organisms, including Escherichia coli, which is a common cause of urinary tract infections. It achieves high concentrations in the urine and is suitable for empiric therapy.\n2. **Ceftriaxone (intravenous) followed by oral cefixime**: A third-generation cephalosporin with broad-spectrum activity against gram-negative organisms. Intravenous ceftriaxone may be used initially for severe infections, followed by oral cefixime for step-down therapy.\n3. **Amoxicillin-clavulanate**: A beta-lactam/beta-lactamase inhibitor combination with activity against gram-positive and gram-negative organisms, including some beta-lactamase-producing strains. It is a reasonable choice for empiric therapy, particularly if local resistance patterns support its use.\n\nb) **Potential drug interactions**:\n1. **Ciprofloxacin**:\n   - **Calcium supplements**: Ciprofloxacin can chelate with divalent cations like calcium, reducing its absorption. Patients should be advised to take ciprofloxacin at least 2 hours before or 6 hours after calcium supplements.\n   - **Warfarin**: Ciprofloxacin can potentiate the effects of warfarin by inhibiting its metabolism, increasing the risk of bleeding. INR monitoring is essential.\n   - **NSAIDs**: Concurrent use with ciprofloxacin may increase the risk of CNS stimulation and seizures.\n\n2. **Amoxicillin-clavulanate**:\n   - **Probenecid**: Probenecid can increase the serum concentrations of amoxicillin by inhibiting renal tubular secretion, potentially leading to toxicity.\n   - **Allopurinol**: Concurrent use with amoxicillin may increase the risk of ampicillin-induced skin rashes.\n\n3. **Ceftriaxone**:\n   - **Calcium-containing solutions**: Ceftriaxone should not be administered simultaneously with calcium-containing solutions (e.g., Ringer's solution) due to the risk of ceftriaxone-calcium precipitate formation, which can be fatal in neonates. This interaction is less relevant for oral step-down therapy."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Discuss the principles of chemotherapy under the following sub-topics:\n\na) Cell-cycle specificity of chemotherapeutic agents (3 marks)\n\nb) Rationale for combination chemotherapy (3 marks)\n\nc) Mechanisms of drug resistance in cancer chemotherapy (3 marks)\n\nd) Principles of dose intensity and dose density in chemotherapy (3 marks)\n\ne) Adverse effects of chemotherapy and their management (3 marks)",
+              "modelAnswer": "### a) Cell-cycle specificity of chemotherapeutic agents\nChemotherapeutic agents can be classified based on their activity during specific phases of the cell cycle:\n- **Cell-cycle specific (CCS) agents**: These drugs are effective only during a particular phase of the cell cycle. Examples include:\n  - **S-phase specific**: Antimetabolites (e.g., methotrexate, 5-fluorouracil) inhibit DNA synthesis during the S phase.\n  - **M-phase specific**: Vinca alkaloids (e.g., vincristine, vinblastine) and taxanes (e.g., paclitaxel) disrupt microtubule function during mitosis.\n  - **G2-phase specific**: Bleomycin causes DNA strand breaks during the G2 phase.\n- **Cell-cycle non-specific (CCNS) agents**: These drugs can kill cells regardless of the phase they are in. Examples include alkylating agents (e.g., cyclophosphamide, cisplatin) and anthracyclines (e.g., doxorubicin).\n\n**Clinical relevance**: CCS agents are more effective against rapidly dividing tumors, while CCNS agents are useful for both dividing and non-dividing cells. Combination regimens often include both types to maximize efficacy.\n\n---\n\n### b) Rationale for combination chemotherapy\nCombination chemotherapy is used for the following reasons:\n1. **Maximize efficacy**: Combining agents with different mechanisms of action increases the likelihood of killing a higher proportion of tumor cells, including those resistant to single agents.\n2. **Prevent resistance**: Using multiple agents with different targets reduces the likelihood of selecting for resistant clones.\n3. **Reduce toxicity**: By using lower doses of each agent in combination, the overall toxicity can be minimized while maintaining efficacy.\n4. **Target heterogeneous tumors**: Tumors often contain subpopulations of cells with varying sensitivities to different drugs. Combination therapy ensures coverage of these diverse populations.\n5. **Synergistic effects**: Some drug combinations exhibit synergistic activity, enhancing tumor cell kill beyond what is achievable with single agents.\n\n**Example**: The CHOP regimen (cyclophosphamide, doxorubicin, vincristine, prednisone) is used for non-Hodgkin lymphoma and combines alkylating agents, anthracyclines, vinca alkaloids, and corticosteroids to target different phases of the cell cycle and mechanisms of action.\n\n---\n\n### c) Mechanisms of drug resistance in cancer chemotherapy\nCancer cells develop resistance to chemotherapeutic agents through several mechanisms:\n1. **Decreased drug uptake**: Reduced expression of drug transporters (e.g., folate carriers for methotrexate) limits intracellular drug concentrations.\n2. **Increased drug efflux**: Overexpression of ATP-binding cassette (ABC) transporters (e.g., P-glycoprotein) pumps drugs out of the cell, reducing their intracellular concentration.\n3. **Altered drug targets**: Mutations or modifications in the target of the drug (e.g., dihydrofolate reductase for methotrexate) reduce drug binding and efficacy.\n4. **Enhanced DNA repair**: Increased activity of DNA repair enzymes (e.g., alkyltransferase for alkylating agents) can counteract the effects of DNA-damaging drugs.\n5. **Metabolic inactivation**: Enhanced expression of drug-metabolizing enzymes (e.g., glutathione S-transferases for platinum agents) can detoxify drugs before they exert their effects.\n6. **Apoptosis evasion**: Mutations in pro-apoptotic genes (e.g., p53, Bcl-2 family) or overexpression of anti-apoptotic proteins can prevent drug-induced cell death.\n7. **Tumor microenvironment**: Hypoxia, acidic pH, and interactions with stromal cells can protect tumor cells from drug effects.\n\n---\n\n### d) Principles of dose intensity and dose density in chemotherapy\n- **Dose intensity**: Refers to the amount of drug delivered per unit time (e.g., mg/m²/week). Higher dose intensity is associated with improved tumor response and survival in many cancers. Strategies to maintain dose intensity include:\n  - Using the maximum tolerated dose (MTD) of each agent.\n  - Avoiding dose reductions unless absolutely necessary.\n  - Managing toxicities aggressively to prevent delays in treatment.\n- **Dose density**: Refers to the frequency of drug administration (e.g., every 2 weeks instead of every 3 weeks). Increasing dose density (e.g., dose-dense chemotherapy) can improve outcomes by reducing tumor regrowth between cycles. This approach is particularly useful in aggressive cancers like breast cancer and lymphoma.\n\n**Clinical example**: The CALGB 9741 trial demonstrated that dose-dense AC→TH (doxorubicin/cyclophosphamide followed by docetaxel/trastuzumab) every 2 weeks improved disease-free survival compared to the standard 3-week schedule in early-stage breast cancer.\n\n---\n\n### e) Adverse effects of chemotherapy and their management\nChemotherapeutic agents are associated with a wide range of adverse effects due to their effects on rapidly dividing normal cells and other tissues. Common adverse effects and their management include:\n\n1. **Myelosuppression (neutropenia, anemia, thrombocytopenia)**:\n   - **Management**: Use of growth factors (e.g., filgrastim for neutropenia, erythropoietin for anemia), dose reductions, or delays in therapy. Transfusions may be required for severe anemia or thrombocytopenia.\n\n2. **Nausea and vomiting**:\n   - **Management**: Use of antiemetics such as 5-HT3 receptor antagonists (e.g., ondansetron), NK1 receptor antagonists (e.g., aprepitant), and corticosteroids (e.g., dexamethasone). Prophylactic antiemetics are recommended for highly emetogenic regimens.\n\n3. **Mucositis**:\n   - **Management**: Oral hygiene, topical anesthetics (e.g., lidocaine mouthwash), and systemic analgesics. Palifermin (keratinocyte growth factor) can reduce the severity of mucositis in some settings.\n\n4. **Peripheral neuropathy**:\n   - **Management**: Dose reductions or discontinuation of neurotoxic agents (e.g., vinca alkaloids, taxanes, platinum agents). Symptomatic management with gabapentin, pregabalin, or duloxetine may be helpful.\n\n5. **Cardiotoxicity (e.g., doxorubicin-induced cardiomyopathy)**:\n   - **Management**: Use of dexrazoxane (a cardioprotective agent), limiting cumulative doses of anthracyclines, and monitoring with echocardiography or MUGA scans.\n\n6. **Nephrotoxicity (e.g., cisplatin-induced nephrotoxicity)**:\n   - **Management**: Aggressive hydration, use of nephroprotective agents (e.g., amifostine), and dose adjustments based on renal function.\n\n7. **Hepatotoxicity**:\n   - **Management**: Monitoring liver function tests, dose adjustments, and use of hepatoprotective agents (e.g., ursodeoxycholic acid) if necessary.\n\n8. **Secondary malignancies**:\n   - **Management**: Long-term surveillance for secondary cancers, particularly with alkylating agents and topoisomerase II inhibitors. Avoiding unnecessary exposure to carcinogenic agents.\n\n**Preventive strategies**: Dose adjustments based on renal/hepatic function, hydration, use of protective agents, and patient education about managing adverse effects."
+            },
+            {
+              "stem": "Mr. SD is a 25-year-old man with a history of drug use, for which he is prescribed daily supervised methadone. He was released from prison 2 years ago. He also has a history of chronic alcohol consumption and previous treatment for pulmonary tuberculosis with unclear history on completion of treatment. He has been referred to a chest physician with a cough productive of sputum and fever (2 months in duration). A sputum sample, obtained by his primary care doctor, is positive for acid-fast bacilli, and a chest radiograph shows right upper lobe cavities. Gene Expert studies show that Mycobacterium tuberculosis is resistant to rifampicin.\n\n\na) Elucidate a probable effective five-drug regimen that would be used for the treatment of multidrug-resistant tuberculosis (MDR-TB) in Mr. SD. (5 marks)\n\nb) For each drug in (a) above, explain the mechanism of action. (5 marks)\n\nc) For each drug suggested in (a) above, identify at least one adverse effect associated with it. (5 marks)",
+              "modelAnswer": "### a) Probable effective five-drug regimen for MDR-TB in Mr. SD\nGiven the resistance to rifampicin (a key first-line drug), Mr. SD requires a regimen tailored to multidrug-resistant tuberculosis (MDR-TB). A typical regimen for MDR-TB includes:\n\n1. **Bedaquiline**\n2. **Linezolid**\n3. **Levofloxacin**\n4. **Clofazimine**\n5. **Pyrazinamide** (if susceptibility is confirmed)\n\n**Rationale**: This regimen combines drugs with different mechanisms of action to maximize efficacy and minimize the risk of further resistance. Bedaquiline and linezolid are newer agents with activity against MDR-TB, while levofloxacin provides fluoroquinolone coverage. Clofazimine is a bacteriostatic agent with activity against mycobacteria, and pyrazinamide is included if susceptibility testing confirms its effectiveness.\n\n---\n\n### b) Mechanism of action for each drug\n\n1. **Bedaquiline**:\n   - **Mechanism**: Bedaquiline is a diarylquinoline that inhibits the proton pump of mycobacterial ATP synthase (atpE gene), disrupting bacterial energy production. It is bactericidal against actively replicating and non-replicating Mycobacterium tuberculosis.\n\n2. **Linezolid**:\n   - **Mechanism**: Linezolid is an oxazolidinone that binds to the 50S ribosomal subunit, inhibiting bacterial protein synthesis. It is bacteriostatic against Mycobacterium tuberculosis.\n\n3. **Levofloxacin**:\n   - **Mechanism**: Levofloxacin is a fluoroquinolone that inhibits bacterial DNA gyrase and topoisomerase IV, preventing DNA replication and transcription. It is bactericidal against Mycobacterium tuberculosis.\n\n4. **Clofazimine**:\n   - **Mechanism**: Clofazimine is a phenazine dye that binds to bacterial DNA, inhibiting replication and transcription. It also has immunomodulatory effects, reducing inflammation in tuberculosis.\n\n5. **Pyrazinamide**:\n   - **Mechanism**: Pyrazinamide is a prodrug that is converted to pyrazinoic acid by the bacterial enzyme pyrazinamidase (pncA gene). Pyrazinoic acid disrupts bacterial cell membrane energetics and inhibits fatty acid synthesis, leading to bacterial cell death. It is particularly effective against semi-dormant bacilli in acidic environments.\n\n---\n\n### c) Adverse effects for each drug\n\n1. **Bedaquiline**:\n   - **Adverse effect**: **QT prolongation and increased risk of ventricular arrhythmias**, particularly when combined with other QT-prolonging drugs. Regular ECG monitoring is essential.\n   - **Additional effects**: Hepatotoxicity, arthralgia, and headache.\n\n2. **Linezolid**:\n   - **Adverse effect**: **Myelosuppression**, including anemia, leukopenia, and thrombocytopenia. Long-term use (>2 weeks) increases the risk of these effects.\n   - **Additional effects**: Peripheral neuropathy, optic neuritis, and lactic acidosis (rare but serious).\n\n3. **Levofloxacin**:\n   - **Adverse effect**: **Tendon rupture**, particularly of the Achilles tendon. Risk factors include age >60 years, concurrent corticosteroid use, and renal impairment.\n   - **Additional effects**: QT prolongation, CNS effects (e.g., seizures, confusion), and Clostridioides difficile infection.\n\n4. **Clofazimine**:\n   - **Adverse effect**: **Skin discoloration**, ranging from red to brownish-black, due to drug deposition in the skin. This effect is reversible upon discontinuation but can be distressing for patients.\n   - **Additional effects**: Gastrointestinal intolerance (nausea, vomiting, diarrhea), and QT prolongation.\n\n5. **Pyrazinamide**:\n   - **Adverse effect**: **Hepatotoxicity**, including asymptomatic elevations in liver enzymes and fulminant hepatitis. Regular monitoring of liver function tests is essential.\n   - **Additional effects**: Hyperuricemia (can precipitate gout), arthralgia, and gastrointestinal intolerance (nausea, vomiting)."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

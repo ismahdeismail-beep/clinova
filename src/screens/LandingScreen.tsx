@@ -4,7 +4,7 @@ import {
   ArrowRight, Sparkles, CheckCircle2, Bot, BookOpen, GraduationCap,
   FileText, Shield, Brain, Stethoscope, Library, Target,
   ChevronRight, Star, Users, BarChart3, Layers, Pill,
-  ClipboardCheck,
+  ClipboardCheck, Image,
 } from 'lucide-react'
 import ClinovaLogo from '../components/ClinovaLogo'
 import { BUNDLED_DRUGS } from '../data/drugIndexData'
@@ -37,7 +37,7 @@ export default function LandingScreen() {
       icon: GraduationCap,
       title: 'Exam & Board Exam',
       description:
-        'Mock papers modelled on the real clinical-pharmacy exam in standard 30/40/30 format, plus a dedicated Board Exam module for focused preparation.',
+        'Mock papers modelled on the real clinical-pharmacy exam in standard 30/40/30 format, plus a dedicated Board Exam module for focused preparation. Covers both clinical pharmacy and pharmacology curricula.',
       gradient: 'from-violet-500 to-purple-600',
     },
     {
@@ -60,6 +60,13 @@ export default function LandingScreen() {
       description:
         'Comprehensive drug monographs with dosing, interactions, contraindications, adverse effects, and therapeutic monitoring parameters.',
       gradient: 'from-cyan-500 to-indigo-600',
+    },
+    {
+      icon: Image,
+      title: 'Drug Visuals',
+      description:
+        'Thousands of medicine images — tablets, injections, and dosage forms — embedded in drug monographs for visual identification and safe prescribing.',
+      gradient: 'from-rose-500 to-pink-600',
     },
   ]
 

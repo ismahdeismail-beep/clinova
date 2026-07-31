@@ -1,0 +1,209 @@
+﻿
+KABARAK UNIVERSITY
+UNIVERSITY EXAMINATIONS
+MAIN CAMPUS
+SECOND SEMESTER 2020/2021 ACADEMIC YEAR
+EXAMINATION FOR THE DEGREE OF BACHELOR OF PHARMACY
+
+PHAM 4109: PHARMACOLOGY IX (CHEMOTHERAPEUTIC AGENTS)
+
+STREAM:Y4/S1- REGULAR      TIME: 9:00-11:00AM
+EXAMINATION SESSION: MAY â€“ AUGUST          DATE: 23/08/2021
+
+INSTRUCTIONS TO CANDIDATES
+The exaMination paper has THREE (3) sections.          [Total 100 Marks]
+Answer ALL questions in sections A, B and C. 
+SECTION A has 30 Marks [Multiple Choice Questions]
+SECTION B has 40 Marks [Short Answer Questions]
+SECTION C has 30 Marks [Essays]
+Adhere to the University exaMination rules and regulations.
+
+SECTION A: ANSWER ALL QUESTIONS                                                         (30 MARKS)
+Which of the following antiMicrobial therapies is appropriate for broad graM-negative coverage for a patient with a history of anaphylaxis reaction to penicillin?
+RifaMpin
+Any third-generation cephalosporin
+VancoMycin
+A MonobactaM
+Which of the following is not considered a "drug of choice" for the organisM indicated?
+Methicillin-sensitive Staphylococcus aureus: nafcillin
+Enterococcus faeciuM: aMpicillin and gentaMicin
+PseudoMonas aeruginosa: piperacillin and aMinoglycoside
+Enterobacter spp.: iMipeneM
+Which of the following is false concerning the MiniMuM inhibitory concentration (MIC)?
+It quantifies the in vitro activity of an antiMicrobial versus a test organisM.
+Microdilution MICs can help detect sMall nuMbers of antiMicrobial-resistant subpopulations.
+Microdilution MICs are the Most coMMon susceptibility test Method used in the clinical Microbiology laboratory.
+The use of agar dilution MICs is declining in favor of More rapid testing Methods such as PCR.
+Which of the following does not bind to the 50S ribosoMal subunit?
+Tetracyclines
+lincosaMides
+Macrolides
+chloraMphenicol
+Which of these antibiotics have useful clinical activity against pseudoMonas?
+Ciprofloxacin
+Co-aMoxiclav
+Cefazolin
+CefotaxiMe
+Each of the following antiMicrobial agents is paired with a relevant adverse effect EXCEPT:
+VancoMycin - red Man syndroMe.
+Benzylpenicillin G - grey baby syndroMe in preMature neonates.
+ChloraMphenicol - aplastic aneMia.
+Tetracycline - affects growing teeth and bone.
+The following antibiotic passes easily norMal blood-brain barriers:
+Benzylpenicillin 
+Cephalexin 
+ChloraMphenicol
+ErythroMycin
+The following antibiotic has an anti-ADH action, useful in the treatMent of syndroMe of inappropriate ADH secretion (SIADH), and can cause diabetes insipidus-like adverse effect;
+DeMeclocycline. 
+StreptograMins. 
+Linezolid.
+Teicoplanin
+Regarding erythroMycin, the following stateMent is INCORRECT:
+It is the drug of choice in the treatMent of whooping cough and diphtheria in children.
+lt is used in sexually transMitted diseases in pregnant feMales.
+lt has a prokinetic effect through the stiMulation of Motilin receptors.
+lt induces CYP 450 enzyMes and decreases plasMa level of theophylline
+All of the following are recognized adverse effects of isoniazid EXCEPT
+Hepatitis
+Retrobulbar neuritis
+Decreased phenytoin MetabolisM â€“ increased phenytoin blood levels /toxicity
+CNS toxicity
+
+Which one of the following agents is narrow-spectruM antibiotics? 
+AMinoglycosides 
+CotriMoxazole 
+Fluoroquinolones 
+VancoMycin
+TriMethopriM inhibits bacteria without affecting MaMMalian cells because:
+It does not penetrate MaMMalian cells
+It has a high affinity for bacterial but low affinity for MaMMalian dihydrofolate reductase enzyMe
+It inhibits bacterial folate synthetase as well as dihydrofolate reductase enzyMes
+It is highly charged thus it doesnâ€™t penetrate the huMan cell wall
+Select the sulfonaMide drug which is active against PseudoMonas and is used by topical application for prophylaxis of infection in burn cases:
+Sulfadiazine
+Silver sulfadiazine
+Sulfadoxine
+SulfaMethoxazole
+Which of the following stateMents about beta-lactaM antibiotics is false?
+Cephalexin and other first-generation cephalosporins do not cross the blood-brain barrier
+Ceftriaxone and nafcillin are both eliMinated Mainly via biliary secretion
+Instability of penicillins in gastric acid can liMit their oral absorption
+Renal tubular reabsorption of aMoxicillin is inhibited by probenecid
+
+Which stateMent about vancoMycin is accurate?
+Active against Methicillin-resistant staphylococci
+Bacteriostatic
+Binds to PBPs
+Hepatic MetabolisM
+A 4-year-old child is brought to the hospital after ingesting pills that a parent had used for bacterial dysentery when traveling to South Sudan. The child has been voMiting for More than 24 h and has had diarrhea with green stools. She is now lethargic with an ashen color. Other signs and syMptoMs include hypotherMia, hypotension, and abdoMinal distention. The drug Most likely to be the cause of this probleM is
+AMpicillin
+AzithroMycin
+ChloraMphenicol
+Doxycycline
+The Most iMportant MechanisM of concurrent acquisition of Multidrug resistance aMong bacteria is:
+Mutation
+Conjugation
+Transduction
+TransforMation
+Methicillin-resistant staphylococci do not respond to Î²-lactaM antibiotics because:
+They produce a Î²-lactaMase which destroys Methicillin and related drugs
+They elaborate an aMidase which destroys Methicillin and related drugs
+They have acquired penicillin-binding protein which has low affinity for Î²-lactaM antibiotics
+They are less perMeable to Î²-lactaM antibiotics
+The MechanisM of antibacterial action of tetracycline involves
+AntagonisM of bacterial translocase activity
+Binding to a coMponent of the 50S ribosoMal subunit
+Inhibition of DNA-dependent RNA polyMerase
+Interference with the binding of aMinoacyl-tRNA to bacterial ribosoMes
+
+The following strategy will proMote rather than curb the eMergence of antibiotic-resistant MicroorganisMs:
+Whenever possible use broad-spectruM antibiotics
+Prefer a narrow-spectruM antibiotic to a broad spectruM one if both are equally effective
+Prefer short and intensive courses of antibiotics
+Use antibiotic coMbinations for prolonged therapy
+ClarithroMycin and erythroMycin have very siMilar spectra of antiMicrobial activity. The Major advantage of clarithroMycin is that it
+Does not inhibit hepatic drug-Metabolizing enzyMes
+Eradicates MycoplasMal infections in a single dose
+Has greater activity against H pylori
+Is active against Methicillin-resistant strains of staphylococci
+A 24-year-old woMan coMes to a clinic with coMplaints of dry cough, headache, fever, and Malaise, which have lasted 3days.The physician Makes an initial diagnosis of coMMunity-acquired pneuMonia. If this patient were to be treated with erythroMycin, she should:
+Avoid exposure to sunlight
+Avoid taking suppleMentary iron tablets
+Decrease her intake of caffeinated beverages
+Have her plasMa urea nitrogen or creatinine checked before treatMent
+A 24-year-old woMan coMes to a clinic with coMplaints of dry cough, headache, fever, and Malaise, which have lasted 3 or 4 days.  The physician Makes an initial diagnosis of coMMunity-acquired pneuMonia. A 5-day course of treatMent for coMMunity-acquired pneuMonia would be effective in this patient with little risk of drug interactions if the drug prescribed were
+AzithroMycin
+ClindaMycin
+Doxycycline
+ErythroMycin
+
+Concerning quinupristin-dalfopristin, which stateMent is accurate?
+Active in the treatMent of infections caused by E. faecalis
+An effective drug in the treatMent of Multidrug-resistant streptococcal infections
+Bacteriostatic
+Hepatotoxicity has led to FDA drug alerts
+All of the following stateMents about the clinical uses of the aMinoglycosides are accurate except
+Effective in the treatMent of infections caused by anaerobes such as Bacteroides fragilis
+GentaMicin is used with aMpicillin for synergistic effects in the treatMent of enterococcal endocarditis
+Often used with cephalosporins in the eMpiric treatMent of life-threatening bacterial infections
+Owing to their polar nature, aMinoglycosides are not absorbed after oral adMinistration
+Select the antibiotic whose dose Must be reduced in patients with renal insufficiency:
+AMpicillin
+ChloraMphenicol
+TobraMycin
+ErythroMycin
+Your 23-year-old feMale patient is pregnant and has gonorrhea. The Medical history includes anaphylaxis following exposure to aMoxicillin. The Most appropriate drug to use is
+AzithroMycin
+CefixiMe
+Ceftriaxone
+Ciprofloxacin
+
+A 65-year-old woMan has returned froM a vacation abroad suffering froM travelerâ€™s diarrhea, and her probleM has not responded to antidiarrheal drugs. A pathogenic graM-negative bacillus is suspected. Which drug is Most likely to be effective in the treatMent of this patient?
+AMpicillin
+Ofloxacin
+Sulfadiazine
+TriMethopriM
+Which drug is effective in the treatMent of nocardiosis and, in coMbination with pyriMethaMine, is prophylactic against PneuMocystis jirovecii infections in AIDS patients?
+AMoxicillin
+ErythroMycin
+Sulfadiazine
+TriMethopriM
+A 29-year-old feMale patient is being treated with RHZE for drug-sensitive TB.  On her release froM the hospital, the patient is advised not to rely solely on oral contraceptives to prevent pregnancy because they May be less effective while she is being Maintained on antiMycobacterial drugs. The agent Most likely to interfere with the action of oral contraceptives is:
+RifaMpin
+EthaMbutol
+Isoniazid
+PyrazinaMide
+
+SECTION B: ANSWER ALL QUESTIONS (40MARKS)
+Giving exaMples, explain the rationale behind coMbination of antibiotics (5 Marks)
+Describe 5 general MechanisMs through which bacteria develop resistance against antibiotics(5 Marks)
+Explain the 4 different generations of cephalosporins clearly showing the spectruM of anti-Microbial activity of each generation             (8 Marks)
+a) Explain the MechanisM of action of sulfonaMides  (2 Marks)
+b) Outline 3 adverse effects of sulfonaMides 
+a) Explain the MechanisM of action of aMinoglycosides  (2 Marks)
+b) Outline 3 adverse effects of aMinoglycosides  (3 Marks)
+You are discussing the Microbiological results of a fecal saMple with the hospital Microbiologist.  They are reporting that the patient has acquired a C. difficile infection.
+ClostridiuM difficile infection (CDI) is often precipitated by the use of broad spectruM antibiotics. Describe what is Meant by the terM â€˜broad-spectruMâ€™ antibiotics(1 Mark)
+Identify two antibiotics in different classes that are associated with an increased risk of developing pseudoMeMbranous colitis as a result of infection with C. difficile (2 Marks)
+(c) NaMe 2 antibiotics (include the preferred route of adMinistration) that can be used to Manage this infection  (2 Marks)
+
+List 2 adverse effects and 2 therapeutic uses associated with Metronidazole (2Marks)
+
+A 59-year-old woMan presents to an urgent care clinic with a 4-day history of frequent and painful urination. She has had fevers, chills, and flank pain for the past 2 days. Her physician advised her to coMe iMMediately to the clinic for evaluation. In the clinic she is febrile (38.5Â°C ) but otherwise stable and states she is not experiencing any nausea or voMiting. Her urine dipstick test is positive for leukocyte esterase. Urinalysis and urine culture are ordered. Her past Medical history is significant for three urinary tract infections in the past year. Each episode was uncoMplicated, treated with triMethopriM-sulfaMethoxazole, and proMptly resolved. She also has osteoporosis for which she takes a daily calciuM suppleMent. The decision is Made to treat her with oral antibiotics for a coMplicated urinary tract infection with close follow-up. 
+Give 3 reasonable eMpiric antibiotics for this patient(3 Marks) 
+Depending on the antibiotic choice are there potential drug interactions?Explain        (2 Marks)
+SECTION C: ANSWER ALL QUESTIONS (30MARKS)
+Discuss the Penicillin antibiotics under the following sub-topics:
+The MechanisM of action of Benzyl penicillin                    (3 Marks)
+The spectruM of antiMicrobial activity of AMoxicillin                   (3 Marks)
+Six pharMacokinetic properties of benzyl penicillin                   (3 Marks)
+Three Clinical uses of benzyl penicillin                   (3 Marks)
+Adverse effects associated with benzyl penicillin                     (3 Marks)
+
+Mr. SD is a 25-year-old Man with a history of drug use, for which he is prescribed daily supervised Methadone. He was released froM prison 2 years ago. He also has a history of chronic alcohol consuMption and previous treatMent for pulMonary tuberculosis with unclear history on coMpletion of treatMent.  He has been referred to a chest physician with a cough productive of sputuM and fever (2 Months in duration). A sputuM saMple, obtained by his priMary care doctor, is positive for acid, alcohol-fast bacilli, and a chest radiograph shows right upper lobe cavities. Gene Expert studies show that MycobacteriuM TB is resistant to RifaMpicin 
+Elucidate a probable effective five drug regiMen that would be used for the treatMent of Multi-drug resistant TB in Mr. SD       (5 Marks)
+For each of the drug in (a) above, explain the MechanisM of action        (5 Marks)
+ (b) For each drug suggested in (a) above identify at least one adverse effect associated with it         (5 Marks) 
+
+

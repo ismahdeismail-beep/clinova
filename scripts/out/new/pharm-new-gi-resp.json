@@ -1,0 +1,1195 @@
+{
+  "pharm-new-gi-resp": {
+    "1": {
+      "title": "Gastrointestinal & Respiratory Pharmacology",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 65-year-old man with COPD is prescribed ipratropium bromide via a metered-dose inhaler. Which of the following is the primary mechanism of action of ipratropium in this patient?",
+              "options": [
+                "Stimulation of beta-2 adrenergic receptors in bronchial smooth muscle",
+                "Inhibition of muscarinic cholinergic receptors in bronchial smooth muscle",
+                "Stabilization of mast cell membranes preventing degranulation",
+                "Inhibition of leukotriene synthesis in the respiratory tract"
+              ],
+              "answer": "Inhibition of muscarinic cholinergic receptors in bronchial smooth muscle",
+              "explanation": "Ipratropium is an anticholinergic agent that inhibits muscarinic receptors, reducing bronchoconstriction mediated by acetylcholine."
+            },
+            {
+              "stem": "A 28-year-old woman with mild persistent asthma is prescribed fluticasone propionate via a dry powder inhaler. Which of the following best describes the primary mechanism of action of inhaled corticosteroids in asthma?",
+              "options": [
+                "Direct bronchodilation by relaxing bronchial smooth muscle",
+                "Reduction of airway inflammation by inhibiting cytokine production",
+                "Stabilization of mast cells to prevent histamine release",
+                "Inhibition of leukotriene receptors to reduce bronchospasm"
+              ],
+              "answer": "Reduction of airway inflammation by inhibiting cytokine production",
+              "explanation": "Inhaled corticosteroids reduce airway inflammation by suppressing the transcription of inflammatory cytokines and other mediators."
+            },
+            {
+              "stem": "A 52-year-old man with a history of peptic ulcer disease is started on omeprazole for symptom control. Which of the following best describes the mechanism of action of omeprazole?",
+              "options": [
+                "Neutralization of gastric acid by reacting with hydrochloric acid",
+                "Inhibition of the H+/K+ ATPase pump in parietal cells",
+                "Blockade of histamine H2 receptors in gastric parietal cells",
+                "Stimulation of prostaglandin E2 synthesis in the gastric mucosa"
+              ],
+              "answer": "Inhibition of the H+/K+ ATPase pump in parietal cells",
+              "explanation": "Omeprazole is a proton pump inhibitor that irreversibly inhibits the H+/K+ ATPase enzyme, reducing gastric acid secretion."
+            },
+            {
+              "stem": "A 34-year-old man with a duodenal ulcer tests positive for Helicobacter pylori infection. Which of the following is the recommended first-line triple therapy regimen for H. pylori eradication?",
+              "options": [
+                "Omeprazole, amoxicillin, clarithromycin",
+                "Ranitidine, metronidazole, tetracycline",
+                "Misoprostol, bismuth subsalicylate, doxycycline",
+                "Famotidine, levofloxacin, tinidazole"
+              ],
+              "answer": "Omeprazole, amoxicillin, clarithromycin",
+              "explanation": "The standard triple therapy for H. pylori eradication includes a proton pump inhibitor (e.g., omeprazole) plus two antibiotics (e.g., amoxicillin and clarithromycin)."
+            },
+            {
+              "stem": "A 45-year-old woman with chronic constipation is prescribed polyethylene glycol. Which of the following best describes the mechanism of action of polyethylene glycol as a laxative?",
+              "options": [
+                "Stimulation of intestinal peristalsis by activating enteric nerves",
+                "Increase in stool water content by osmotic retention of fluid",
+                "Direct stimulation of colonic smooth muscle contraction",
+                "Inhibition of water absorption in the small intestine"
+              ],
+              "answer": "Increase in stool water content by osmotic retention of fluid",
+              "explanation": "Polyethylene glycol is an osmotic laxative that retains water in the intestinal lumen, increasing stool volume and facilitating bowel movements."
+            },
+            {
+              "stem": "A 60-year-old man with COPD is prescribed theophylline for symptom control. Which of the following is the primary mechanism of action of theophylline in COPD?",
+              "options": [
+                "Inhibition of phosphodiesterase enzymes, increasing cAMP levels",
+                "Stimulation of beta-2 adrenergic receptors in bronchial smooth muscle",
+                "Blockade of muscarinic cholinergic receptors in bronchial smooth muscle",
+                "Inhibition of leukotriene receptors to reduce bronchospasm"
+              ],
+              "answer": "Inhibition of phosphodiesterase enzymes, increasing cAMP levels",
+              "explanation": "Theophylline inhibits phosphodiesterase enzymes, leading to increased intracellular cAMP levels, which results in bronchodilation and anti-inflammatory effects."
+            },
+            {
+              "stem": "A 22-year-old woman with motion sickness is prescribed meclizine. Which of the following best describes the primary mechanism of action of meclizine in this patient?",
+              "options": [
+                "Blockade of histamine H1 receptors in the vestibular system",
+                "Stimulation of muscarinic cholinergic receptors in the vestibular system",
+                "Inhibition of dopamine D2 receptors in the chemoreceptor trigger zone",
+                "Stimulation of serotonin 5-HT3 receptors in the vomiting center"
+              ],
+              "answer": "Blockade of histamine H1 receptors in the vestibular system",
+              "explanation": "Meclizine is a first-generation antihistamine that blocks histamine H1 receptors in the vestibular system, reducing motion sickness symptoms."
+            },
+            {
+              "stem": "A 58-year-old man with a history of hypertension and GERD is prescribed ranitidine. Which of the following best describes the primary mechanism of action of ranitidine in this patient?",
+              "options": [
+                "Inhibition of the H+/K+ ATPase pump in parietal cells",
+                "Blockade of histamine H2 receptors in gastric parietal cells",
+                "Neutralization of gastric acid by reacting with hydrochloric acid",
+                "Stimulation of prostaglandin E2 synthesis in the gastric mucosa"
+              ],
+              "answer": "Blockade of histamine H2 receptors in gastric parietal cells",
+              "explanation": "Ranitidine is an H2 receptor antagonist that reduces gastric acid secretion by blocking histamine H2 receptors on parietal cells."
+            },
+            {
+              "stem": "A 30-year-old man with acute exacerbation of asthma is prescribed albuterol via a metered-dose inhaler. Which of the following best describes the primary mechanism of action of albuterol in this patient?",
+              "options": [
+                "Inhibition of muscarinic cholinergic receptors in bronchial smooth muscle",
+                "Stimulation of beta-2 adrenergic receptors in bronchial smooth muscle",
+                "Stabilization of mast cell membranes preventing degranulation",
+                "Inhibition of leukotriene synthesis in the respiratory tract"
+              ],
+              "answer": "Stimulation of beta-2 adrenergic receptors in bronchial smooth muscle",
+              "explanation": "Albuterol is a short-acting beta-2 agonist that stimulates beta-2 adrenergic receptors, leading to relaxation of bronchial smooth muscle and bronchodilation."
+            },
+            {
+              "stem": "A 40-year-old woman with irritable bowel syndrome with diarrhea is prescribed loperamide. Which of the following best describes the primary mechanism of action of loperamide in this patient?",
+              "options": [
+                "Stimulation of intestinal peristalsis by activating enteric nerves",
+                "Inhibition of water absorption in the small intestine",
+                "Direct stimulation of colonic smooth muscle contraction",
+                "Activation of mu-opioid receptors in the intestinal wall"
+              ],
+              "answer": "Activation of mu-opioid receptors in the intestinal wall",
+              "explanation": "Loperamide is an opioid receptor agonist that activates mu-opioid receptors in the intestinal wall, reducing intestinal motility and increasing water absorption."
+            },
+            {
+              "stem": "A 65-year-old man with COPD is prescribed budesonide/formoterol via a dry powder inhaler. Which of the following best describes the primary mechanism of action of formoterol in this patient?",
+              "options": [
+                "Inhibition of muscarinic cholinergic receptors in bronchial smooth muscle",
+                "Stimulation of beta-2 adrenergic receptors in bronchial smooth muscle",
+                "Stabilization of mast cell membranes preventing degranulation",
+                "Inhibition of leukotriene receptors to reduce bronchospasm"
+              ],
+              "answer": "Stimulation of beta-2 adrenergic receptors in bronchial smooth muscle",
+              "explanation": "Formoterol is a long-acting beta-2 agonist that stimulates beta-2 adrenergic receptors, leading to prolonged bronchodilation."
+            },
+            {
+              "stem": "A 50-year-old woman with a history of peptic ulcer disease is prescribed sucralfate. Which of the following best describes the primary mechanism of action of sucralfate in this patient?",
+              "options": [
+                "Inhibition of the H+/K+ ATPase pump in parietal cells",
+                "Blockade of histamine H2 receptors in gastric parietal cells",
+                "Binding to necrotic ulcer tissue, forming a protective barrier",
+                "Stimulation of prostaglandin E2 synthesis in the gastric mucosa"
+              ],
+              "answer": "Binding to necrotic ulcer tissue, forming a protective barrier",
+              "explanation": "Sucralfate is a cytoprotective agent that binds to necrotic ulcer tissue, forming a physical barrier that protects the ulcer from gastric acid and pepsin."
+            },
+            {
+              "stem": "A 25-year-old man with exercise-induced bronchospasm is prescribed montelukast. Which of the following best describes the primary mechanism of action of montelukast in this patient?",
+              "options": [
+                "Inhibition of leukotriene D4 receptors in bronchial smooth muscle",
+                "Stimulation of beta-2 adrenergic receptors in bronchial smooth muscle",
+                "Inhibition of muscarinic cholinergic receptors in bronchial smooth muscle",
+                "Stabilization of mast cell membranes preventing degranulation"
+              ],
+              "answer": "Inhibition of leukotriene D4 receptors in bronchial smooth muscle",
+              "explanation": "Montelukast is a leukotriene receptor antagonist that inhibits leukotriene D4 receptors, reducing bronchoconstriction and inflammation."
+            },
+            {
+              "stem": "A 70-year-old man with COPD is prescribed tiotropium bromide via a dry powder inhaler. Which of the following best describes the primary advantage of tiotropium over ipratropium in this patient?",
+              "options": [
+                "Tiotropium has a shorter duration of action",
+                "Tiotropium is a selective beta-2 agonist",
+                "Tiotropium has a longer duration of action due to slow dissociation from muscarinic receptors",
+                "Tiotropium is administered orally"
+              ],
+              "answer": "Tiotropium has a longer duration of action due to slow dissociation from muscarinic receptors",
+              "explanation": "Tiotropium is a long-acting anticholinergic agent that dissociates slowly from muscarinic receptors, providing a prolonged duration of action compared to ipratropium."
+            },
+            {
+              "stem": "A 35-year-old woman with GERD is prescribed esomeprazole. Which of the following is a potential long-term adverse effect of esomeprazole use?",
+              "options": [
+                "Hyperkalemia",
+                "Osteoporosis due to reduced calcium absorption",
+                "Hypoglycemia",
+                "Bradycardia"
+              ],
+              "answer": "Osteoporosis due to reduced calcium absorption",
+              "explanation": "Long-term use of proton pump inhibitors like esomeprazole can reduce calcium absorption, increasing the risk of osteoporosis."
+            },
+            {
+              "stem": "A 45-year-old man with a history of hypertension and GERD is prescribed cimetidine. Which of the following is a potential drug interaction associated with cimetidine?",
+              "options": [
+                "Increased clearance of warfarin due to CYP450 enzyme induction",
+                "Decreased clearance of warfarin due to CYP450 enzyme inhibition",
+                "Increased clearance of theophylline due to CYP450 enzyme induction",
+                "Decreased clearance of theophylline due to CYP450 enzyme inhibition"
+              ],
+              "answer": "Decreased clearance of theophylline due to CYP450 enzyme inhibition",
+              "explanation": "Cimetidine is a potent inhibitor of CYP450 enzymes, which can decrease the clearance of drugs metabolized by these enzymes, such as theophylline."
+            },
+            {
+              "stem": "A 28-year-old woman with mild persistent asthma is prescribed fluticasone propionate via a dry powder inhaler. Which of the following is a potential adverse effect of inhaled corticosteroids?",
+              "options": [
+                "Hyperkalemia",
+                "Oral candidiasis",
+                "Bradycardia",
+                "Hypoglycemia"
+              ],
+              "answer": "Oral candidiasis",
+              "explanation": "Inhaled corticosteroids can cause local immunosuppression in the oropharynx, increasing the risk of oral candidiasis."
+            },
+            {
+              "stem": "A 55-year-old man with COPD is prescribed theophylline. Which of the following is a potential adverse effect of theophylline?",
+              "options": [
+                "Hypokalemia",
+                "Bradycardia",
+                "Seizures at high plasma concentrations",
+                "Hypoglycemia"
+              ],
+              "answer": "Seizures at high plasma concentrations",
+              "explanation": "Theophylline has a narrow therapeutic index, and high plasma concentrations can cause seizures and other central nervous system adverse effects."
+            },
+            {
+              "stem": "A 30-year-old woman with irritable bowel syndrome with constipation is prescribed lactulose. Which of the following best describes the mechanism of action of lactulose as a laxative?",
+              "options": [
+                "Stimulation of intestinal peristalsis by activating enteric nerves",
+                "Increase in stool water content by osmotic retention of fluid",
+                "Direct stimulation of colonic smooth muscle contraction",
+                "Inhibition of water absorption in the small intestine"
+              ],
+              "answer": "Increase in stool water content by osmotic retention of fluid",
+              "explanation": "Lactulose is an osmotic laxative that increases stool water content by retaining fluid in the intestinal lumen, facilitating bowel movements."
+            },
+            {
+              "stem": "A 60-year-old man with a history of peptic ulcer disease is prescribed misoprostol. Which of the following best describes the primary mechanism of action of misoprostol in this patient?",
+              "options": [
+                "Inhibition of the H+/K+ ATPase pump in parietal cells",
+                "Blockade of histamine H2 receptors in gastric parietal cells",
+                "Stimulation of prostaglandin E1 receptors in gastric mucosa",
+                "Neutralization of gastric acid by reacting with hydrochloric acid"
+              ],
+              "answer": "Stimulation of prostaglandin E1 receptors in gastric mucosa",
+              "explanation": "Misoprostol is a prostaglandin E1 analogue that stimulates prostaglandin E1 receptors in the gastric mucosa, reducing gastric acid secretion and enhancing mucosal defense."
+            },
+            {
+              "stem": "A 40-year-old woman with motion sickness is prescribed scopolamine. Which of the following best describes the primary mechanism of action of scopolamine in this patient?",
+              "options": [
+                "Blockade of muscarinic cholinergic receptors in the vestibular system",
+                "Stimulation of beta-2 adrenergic receptors in bronchial smooth muscle",
+                "Inhibition of dopamine D2 receptors in the chemoreceptor trigger zone",
+                "Stimulation of serotonin 5-HT3 receptors in the vomiting center"
+              ],
+              "answer": "Blockade of muscarinic cholinergic receptors in the vestibular system",
+              "explanation": "Scopolamine is an anticholinergic agent that blocks muscarinic cholinergic receptors in the vestibular system, reducing motion sickness symptoms."
+            },
+            {
+              "stem": "A 50-year-old man with a history of hypertension and GERD is prescribed omeprazole. Which of the following is a potential drug interaction associated with omeprazole?",
+              "options": [
+                "Increased clearance of warfarin due to CYP450 enzyme induction",
+                "Decreased clearance of warfarin due to CYP450 enzyme inhibition",
+                "Increased clearance of clopidogrel due to CYP2C19 enzyme induction",
+                "Decreased activation of clopidogrel due to CYP2C19 enzyme inhibition"
+              ],
+              "answer": "Decreased activation of clopidogrel due to CYP2C19 enzyme inhibition",
+              "explanation": "Omeprazole is an inhibitor of CYP2C19, which can reduce the activation of clopidogrel, a prodrug metabolized by this enzyme."
+            },
+            {
+              "stem": "A 35-year-old woman with COPD is prescribed budesonide/formoterol via a dry powder inhaler. Which of the following best describes the primary advantage of combining budesonide and formoterol in this patient?",
+              "options": [
+                "Synergistic anti-inflammatory and bronchodilatory effects",
+                "Reduced risk of oral candidiasis",
+                "Increased risk of systemic corticosteroid adverse effects",
+                "Decreased duration of action of formoterol"
+              ],
+              "answer": "Synergistic anti-inflammatory and bronchodilatory effects",
+              "explanation": "Combining an inhaled corticosteroid (budesonide) with a long-acting beta-2 agonist (formoterol) provides both anti-inflammatory and bronchodilatory effects, improving asthma/COPD control."
+            },
+            {
+              "stem": "A 65-year-old man with a history of peptic ulcer disease is prescribed aluminum hydroxide. Which of the following is a potential adverse effect of aluminum hydroxide?",
+              "options": [
+                "Diarrhea",
+                "Constipation",
+                "Hyperkalemia",
+                "Bradycardia"
+              ],
+              "answer": "Constipation",
+              "explanation": "Aluminum hydroxide is an antacid that can cause constipation as an adverse effect."
+            },
+            {
+              "stem": "A 45-year-old woman with a history of hypertension and GERD is prescribed famotidine. Which of the following best describes the primary advantage of famotidine over cimetidine in this patient?",
+              "options": [
+                "Famotidine is a more potent H2 receptor antagonist",
+                "Famotidine has a shorter duration of action",
+                "Famotidine does not have antiandrogenic effects",
+                "Famotidine is administered via the oral route only"
+              ],
+              "answer": "Famotidine does not have antiandrogenic effects",
+              "explanation": "Famotidine is a second-generation H2 receptor antagonist that does not have the antiandrogenic adverse effects associated with cimetidine."
+            },
+            {
+              "stem": "A 30-year-old man with acute exacerbation of asthma is prescribed ipratropium bromide via a nebulizer. Which of the following best describes the primary advantage of ipratropium over albuterol in this patient?",
+              "options": [
+                "Ipratropium has a shorter duration of action",
+                "Ipratropium is a selective beta-2 agonist",
+                "Ipratropium is less likely to cause tachycardia",
+                "Ipratropium is administered orally"
+              ],
+              "answer": "Ipratropium is less likely to cause tachycardia",
+              "explanation": "Ipratropium is an anticholinergic agent that is less likely to cause tachycardia compared to beta-2 agonists like albuterol."
+            },
+            {
+              "stem": "A 55-year-old woman with a history of hypertension and GERD is prescribed magnesium hydroxide. Which of the following is a potential adverse effect of magnesium hydroxide?",
+              "options": [
+                "Constipation",
+                "Diarrhea",
+                "Hyperkalemia",
+                "Bradycardia"
+              ],
+              "answer": "Diarrhea",
+              "explanation": "Magnesium hydroxide is an antacid that can cause diarrhea as an adverse effect."
+            },
+            {
+              "stem": "A 40-year-old man with a history of COPD is prescribed theophylline. Which of the following is a potential drug interaction associated with theophylline?",
+              "options": [
+                "Increased clearance of theophylline due to CYP450 enzyme induction by rifampin",
+                "Decreased clearance of theophylline due to CYP450 enzyme inhibition by cimetidine",
+                "Increased clearance of theophylline due to CYP450 enzyme induction by phenytoin",
+                "All of the above"
+              ],
+              "answer": "All of the above",
+              "explanation": "Theophylline is metabolized by CYP450 enzymes, and its clearance can be increased by enzyme inducers (e.g., rifampin, phenytoin) or decreased by enzyme inhibitors (e.g., cimetidine)."
+            },
+            {
+              "stem": "A 35-year-old woman with irritable bowel syndrome with diarrhea is prescribed loperamide. Which of the following is a potential adverse effect of loperamide?",
+              "options": [
+                "Hypertension",
+                "Constipation",
+                "Hyperkalemia",
+                "Bradycardia"
+              ],
+              "answer": "Constipation",
+              "explanation": "Loperamide is an opioid receptor agonist that can cause constipation as an adverse effect."
+            },
+            {
+              "stem": "A 60-year-old man with a history of peptic ulcer disease is prescribed bismuth subsalicylate. Which of the following best describes the primary mechanism of action of bismuth subsalicylate in this patient?",
+              "options": [
+                "Inhibition of the H+/K+ ATPase pump in parietal cells",
+                "Blockade of histamine H2 receptors in gastric parietal cells",
+                "Binding to necrotic ulcer tissue, forming a protective barrier",
+                "Antibacterial effect against Helicobacter pylori"
+              ],
+              "answer": "Antibacterial effect against Helicobacter pylori",
+              "explanation": "Bismuth subsalicylate has antibacterial effects against Helicobacter pylori and can also bind to necrotic ulcer tissue, forming a protective barrier."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "1. Match each gastrointestinal or respiratory drug with the appropriate description (8 marks). Drugs: Albuterol, Budesonide, Omeprazole, Lactulose, Metoclopramide, Misoprostol, Tiotropium, Loperamide. Descriptions: a) A long-acting anticholinergic bronchodilator; b) A proton pump inhibitor that irreversibly inhibits H+/K+ ATPase; c) A laxative that increases stool water content by osmotic retention; d) A dopamine D2 receptor antagonist used to treat gastroparesis; e) A prostaglandin E1 analogue that reduces gastric acid secretion and enhances mucosal defense; f) A selective beta-2 agonist used for acute bronchospasm; g) An opioid receptor agonist used to treat diarrhea; h) An inhaled corticosteroid used for maintenance therapy in asthma.",
+              "modelAnswer": "a) Tiotropium; b) Omeprazole; c) Lactulose; d) Metoclopramide; e) Misoprostol; f) Albuterol; g) Loperamide; h) Budesonide."
+            },
+            {
+              "stem": "2. A 45-year-old man with a history of COPD is prescribed theophylline. Describe the mechanism of action of theophylline in COPD and outline two potential adverse effects (5 marks).",
+              "modelAnswer": "Mechanism of action: Theophylline inhibits phosphodiesterase enzymes, increasing intracellular cAMP levels, which results in bronchodilation and anti-inflammatory effects. Adverse effects: 1) Seizures at high plasma concentrations due to its narrow therapeutic index; 2) Tachycardia and palpitations due to stimulation of cardiac beta-1 receptors."
+            },
+            {
+              "stem": "3. A 30-year-old woman with mild persistent asthma is prescribed fluticasone propionate via a dry powder inhaler. Explain the mechanism of action of inhaled corticosteroids in asthma and describe two potential adverse effects (5 marks).",
+              "modelAnswer": "Mechanism of action: Inhaled corticosteroids reduce airway inflammation by suppressing the transcription of inflammatory cytokines and other mediators, such as IL-4, IL-5, and TNF-alpha. Adverse effects: 1) Oral candidiasis due to local immunosuppression in the oropharynx; 2) Hoarseness due to myopathy of laryngeal muscles."
+            },
+            {
+              "stem": "4. A 55-year-old man with a history of peptic ulcer disease is prescribed sucralfate. Describe the mechanism of action of sucralfate and outline two potential adverse effects (5 marks).",
+              "modelAnswer": "Mechanism of action: Sucralfate binds to necrotic ulcer tissue, forming a physical barrier that protects the ulcer from gastric acid and pepsin. Adverse effects: 1) Constipation due to its aluminum content; 2) Bezoar formation in patients with delayed gastric emptying."
+            },
+            {
+              "stem": "5. A 28-year-old woman with irritable bowel syndrome with diarrhea is prescribed loperamide. Explain the mechanism of action of loperamide and describe two potential adverse effects (5 marks).",
+              "modelAnswer": "Mechanism of action: Loperamide is an opioid receptor agonist that activates mu-opioid receptors in the intestinal wall, reducing intestinal motility and increasing water absorption. Adverse effects: 1) Constipation due to reduced intestinal motility; 2) Abdominal cramping due to increased smooth muscle tone."
+            },
+            {
+              "stem": "6. A 60-year-old man with COPD is prescribed budesonide/formoterol via a dry powder inhaler. Describe the rationale for combining an inhaled corticosteroid with a long-acting beta-2 agonist in COPD and outline two potential adverse effects of this combination (5 marks).",
+              "modelAnswer": "Rationale: Combining an inhaled corticosteroid (budesonide) with a long-acting beta-2 agonist (formoterol) provides both anti-inflammatory and bronchodilatory effects, improving COPD control and reducing exacerbations. Adverse effects: 1) Increased risk of pneumonia due to immunosuppression from the corticosteroid; 2) Tremors and palpitations due to beta-2 receptor stimulation."
+            },
+            {
+              "stem": "7. A 40-year-old woman with GERD is prescribed omeprazole. Explain the mechanism of action of omeprazole and describe two potential long-term adverse effects (5 marks).",
+              "modelAnswer": "Mechanism of action: Omeprazole is a proton pump inhibitor that irreversibly inhibits the H+/K+ ATPase enzyme in parietal cells, reducing gastric acid secretion. Long-term adverse effects: 1) Increased risk of Clostridium difficile infection due to alterations in gut microbiota; 2) Osteoporosis due to reduced calcium absorption."
+            },
+            {
+              "stem": "8. A 35-year-old man with a history of hypertension and GERD is prescribed ranitidine. Describe the mechanism of action of ranitidine and outline two potential drug interactions (5 marks).",
+              "modelAnswer": "Mechanism of action: Ranitidine is an H2 receptor antagonist that reduces gastric acid secretion by blocking histamine H2 receptors on parietal cells. Drug interactions: 1) Decreased activation of clopidogrel due to CYP2C19 enzyme inhibition; 2) Increased plasma levels of drugs metabolized by CYP450 enzymes (e.g., theophylline) due to enzyme inhibition."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "1. A 65-year-old man with a history of COPD and GERD presents to the emergency department with worsening dyspnea, cough, and wheezing. He reports poor adherence to his prescribed medications and admits to self-medicating with over-the-counter antacids for his GERD symptoms. a) Outline the stepwise management of acute exacerbation of COPD in this patient, including the rationale for each intervention (5 marks). b) Discuss the potential drug interactions between antacids and COPD medications, and outline the clinical significance of these interactions (5 marks). c) Describe the mechanism of action, adverse effects, and monitoring parameters for theophylline in this patient (5 marks).",
+              "modelAnswer": "a) Stepwise management of acute exacerbation of COPD: 1) Oxygen therapy to maintain SpO2 88-92% to avoid hypercapnia; 2) Short-acting beta-2 agonist (e.g., salbutamol) via nebulizer for bronchodilation; 3) Short-acting anticholinergic (e.g., ipratropium) via nebulizer for additional bronchodilation; 4) Systemic corticosteroids (e.g., prednisolone) to reduce airway inflammation; 5) Consider antibiotics if signs of infection (e.g., amoxicillin/clavulanate). Rationale: These interventions target bronchoconstriction, inflammation, and infection to improve symptoms and prevent complications.\n\nb) Drug interactions between antacids and COPD medications: 1) Antacids can reduce the absorption of medications that require an acidic environment (e.g., ketoconazole, itraconazole); 2) Antacids can bind to and reduce the absorption of fluoroquinolones (e.g., ciprofloxacin); 3) Antacids can alter the pH of the gastrointestinal tract, affecting the dissolution and absorption of enteric-coated medications (e.g., theophylline). Clinical significance: These interactions can lead to subtherapeutic drug levels, reduced efficacy, and treatment failure. For example, reduced absorption of theophylline can result in inadequate bronchodilation and symptom control.\n\nc) Mechanism of action, adverse effects, and monitoring parameters for theophylline: Mechanism of action: Theophylline inhibits phosphodiesterase enzymes, increasing intracellular cAMP levels, which results in bronchodilation and anti-inflammatory effects. Adverse effects: 1) Gastrointestinal: nausea, vomiting, diarrhea; 2) Cardiovascular: tachycardia, palpitations, arrhythmias; 3) Central nervous system: headache, insomnia, seizures (at high plasma concentrations); 4) Metabolic: hypokalemia, hyperglycemia. Monitoring parameters: 1) Plasma theophylline levels (therapeutic range: 5-15 mg/L); 2) Heart rate and rhythm; 3) Electrolyte levels (e.g., potassium); 4) Blood glucose levels; 5) Signs and symptoms of toxicity (e.g., nausea, vomiting, seizures)."
+            },
+            {
+              "stem": "2. A 40-year-old woman with a history of peptic ulcer disease presents to the clinic with complaints of epigastric pain, bloating, and occasional nausea. She reports poor adherence to her prescribed medications and admits to self-medicating with over-the-counter antacids. a) Outline the stepwise management of peptic ulcer disease in this patient, including the rationale for each intervention (5 marks). b) Discuss the role of Helicobacter pylori eradication therapy in this patient, including the recommended regimens and rationale (5 marks). c) Describe the mechanism of action, adverse effects, and monitoring parameters for proton pump inhibitors (PPIs) in this patient (5 marks).",
+              "modelAnswer": "a) Stepwise management of peptic ulcer disease: 1) Confirm diagnosis with endoscopy and biopsy to rule out malignancy and test for Helicobacter pylori; 2) Discontinue NSAIDs and other ulcerogenic medications; 3) Start acid suppression therapy with a proton pump inhibitor (e.g., omeprazole) to promote ulcer healing; 4) Test for and eradicate Helicobacter pylori if present; 5) Provide lifestyle modifications (e.g., avoid smoking, alcohol, and spicy foods). Rationale: These interventions target the underlying causes of peptic ulcer disease (e.g., H. pylori infection, NSAID use, acid hypersecretion) to promote healing and prevent recurrence.\n\nb) Role of Helicobacter pylori eradication therapy: Helicobacter pylori infection is a major cause of peptic ulcer disease. Eradication therapy is recommended to promote ulcer healing, prevent recurrence, and reduce the risk of complications (e.g., bleeding, perforation). Recommended regimens: 1) Triple therapy: PPI (e.g., omeprazole) + amoxicillin + clarithromycin for 10-14 days; 2) Quadruple therapy: PPI + bismuth subsalicylate + tetracycline + metronidazole for 10-14 days (used in regions with high clarithromycin resistance). Rationale: These regimens target H. pylori with antibiotics and reduce gastric acid secretion with a PPI to promote ulcer healing.\n\nc) Mechanism of action, adverse effects, and monitoring parameters for proton pump inhibitors (PPIs): Mechanism of action: PPIs (e.g., omeprazole) irreversibly inhibit the H+/K+ ATPase enzyme in parietal cells, reducing gastric acid secretion. Adverse effects: 1) Gastrointestinal: nausea, vomiting, diarrhea, abdominal pain; 2) Central nervous system: headache, dizziness; 3) Metabolic: hypomagnesemia, osteoporosis (long-term use); 4) Increased risk of Clostridium difficile infection and other gastrointestinal infections (long-term use). Monitoring parameters: 1) Symptoms of acid reflux and ulcer healing; 2) Electrolyte levels (e.g., magnesium); 3) Bone mineral density (long-term use); 4) Signs and symptoms of infection (e.g., diarrhea, fever)."
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Gastrointestinal & Respiratory Pharmacology",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 58-year-old man with COPD is prescribed inhaled ipratropium bromide for maintenance therapy. Which of the following statements best describes the mechanism of action of ipratropium in this context?",
+              "options": [
+                "It directly stimulates beta-2 adrenergic receptors to cause bronchodilation.",
+                "It competitively antagonizes muscarinic M3 receptors, reducing bronchoconstriction.",
+                "It inhibits phosphodiesterase, leading to increased intracellular cAMP and bronchodilation.",
+                "It stabilizes mast cells, preventing the release of histamine and leukotrienes."
+              ],
+              "answer": "It competitively antagonizes muscarinic M3 receptors, reducing bronchoconstriction.",
+              "explanation": "Ipratropium is an anticholinergic agent that blocks muscarinic M3 receptors in the airways, reducing bronchoconstriction mediated by acetylcholine."
+            },
+            {
+              "stem": "A 65-year-old woman with a history of hypertension and type 2 diabetes presents with persistent dry cough and wheezing. She is currently taking lisinopril, metformin, and atorvastatin. Which of the following drugs is most likely responsible for her respiratory symptoms?",
+              "options": [
+                "Lisinopril",
+                "Metformin",
+                "Atorvastatin",
+                "None of the above"
+              ],
+              "answer": "Lisinopril",
+              "explanation": "ACE inhibitors like lisinopril can cause a persistent dry cough and, in rare cases, bronchospasm due to increased bradykinin levels."
+            },
+            {
+              "stem": "A 42-year-old man with severe asthma is prescribed a long-acting beta-2 agonist (LABA) for maintenance therapy. Which of the following statements is true regarding the use of LABAs in asthma management?",
+              "options": [
+                "LABAs should be used as monotherapy for long-term control of persistent asthma.",
+                "LABAs are recommended as monotherapy for patients with mild intermittent asthma.",
+                "LABAs should always be combined with an inhaled corticosteroid to reduce the risk of severe exacerbations.",
+                "LABAs are contraindicated in all patients with asthma due to the risk of paradoxical bronchospasm."
+              ],
+              "answer": "LABAs should always be combined with an inhaled corticosteroid to reduce the risk of severe exacerbations.",
+              "explanation": "LABAs should never be used as monotherapy in asthma due to the increased risk of severe exacerbations and asthma-related deaths. They must be combined with an inhaled corticosteroid."
+            },
+            {
+              "stem": "A 30-year-old woman with a history of allergic rhinitis and mild asthma is prescribed montelukast. Which of the following best describes the mechanism of action of montelukast?",
+              "options": [
+                "It inhibits the 5-lipoxygenase enzyme, reducing leukotriene synthesis.",
+                "It blocks leukotriene D4 receptors, preventing leukotriene-mediated bronchoconstriction.",
+                "It stabilizes mast cells, preventing the release of histamine and leukotrienes.",
+                "It directly stimulates beta-2 adrenergic receptors to cause bronchodilation."
+              ],
+              "answer": "It blocks leukotriene D4 receptors, preventing leukotriene-mediated bronchoconstriction.",
+              "explanation": "Montelukast is a leukotriene receptor antagonist that selectively blocks leukotriene D4 receptors, reducing bronchoconstriction and inflammation."
+            },
+            {
+              "stem": "A 70-year-old man with COPD exacerbation is prescribed oral theophylline. Which of the following statements is true regarding theophylline therapy?",
+              "options": [
+                "Theophylline has a wide therapeutic index, making it safe for use without monitoring.",
+                "Theophylline is primarily metabolized by the kidney, so dose adjustments are rarely needed.",
+                "Theophylline levels should be monitored regularly due to its narrow therapeutic index and potential for toxicity.",
+                "Theophylline is contraindicated in patients with hepatic impairment due to its renal clearance."
+              ],
+              "answer": "Theophylline levels should be monitored regularly due to its narrow therapeutic index and potential for toxicity.",
+              "explanation": "Theophylline has a narrow therapeutic index (5-15 mg/L), and its metabolism is highly variable, necessitating regular monitoring to avoid toxicity."
+            },
+            {
+              "stem": "A 55-year-old woman with a history of peptic ulcer disease is prescribed omeprazole. Which of the following statements best describes the mechanism of action of omeprazole?",
+              "options": [
+                "It competitively antagonizes H2 receptors, reducing gastric acid secretion.",
+                "It irreversibly inhibits the H+/K+ ATPase pump in parietal cells, reducing acid secretion.",
+                "It neutralizes gastric acid by reacting with hydrochloric acid in the stomach lumen.",
+                "It stimulates bicarbonate secretion by epithelial cells in the stomach."
+              ],
+              "answer": "It irreversibly inhibits the H+/K+ ATPase pump in parietal cells, reducing acid secretion.",
+              "explanation": "Omeprazole is a proton pump inhibitor (PPI) that irreversibly inhibits the H+/K+ ATPase pump in parietal cells, leading to a marked reduction in gastric acid secretion."
+            },
+            {
+              "stem": "A 40-year-old man with a duodenal ulcer tests positive for H. pylori infection. Which of the following regimens is recommended for H. pylori eradication?",
+              "options": [
+                "Omeprazole + amoxicillin + clarithromycin",
+                "Ranitidine + metronidazole + bismuth subsalicylate",
+                "Famotidine + tetracycline + metronidazole",
+                "Esomeprazole + levofloxacin + doxycycline"
+              ],
+              "answer": "Omeprazole + amoxicillin + clarithromycin",
+              "explanation": "The standard triple therapy for H. pylori eradication includes a PPI (e.g., omeprazole) combined with two antibiotics (e.g., amoxicillin and clarithromycin)."
+            },
+            {
+              "stem": "A 60-year-old man with chronic constipation is prescribed lactulose. Which of the following best describes the mechanism of action of lactulose?",
+              "options": [
+                "It stimulates intestinal motility by directly activating enteric nerves.",
+                "It increases stool water content by drawing water into the colon via osmotic effects.",
+                "It binds to bile acids, reducing their reabsorption and stimulating colonic motility.",
+                "It inhibits chloride channels, reducing water reabsorption in the colon."
+              ],
+              "answer": "It increases stool water content by drawing water into the colon via osmotic effects.",
+              "explanation": "Lactulose is an osmotic laxative that increases stool water content by drawing water into the colon, promoting peristalsis and bowel movements."
+            },
+            {
+              "stem": "A 35-year-old woman with irritable bowel syndrome with diarrhea (IBS-D) is prescribed loperamide. Which of the following receptors mediates the therapeutic effect of loperamide in this context?",
+              "options": [
+                "Mu opioid receptors",
+                "5-HT3 serotonergic receptors",
+                "Dopaminergic D2 receptors",
+                "Muscarinic M3 receptors"
+              ],
+              "answer": "Mu opioid receptors",
+              "explanation": "Loperamide is an opioid receptor agonist that acts on mu opioid receptors in the gut, reducing intestinal motility and increasing fluid absorption."
+            },
+            {
+              "stem": "A 50-year-old man with a history of GERD is prescribed ranitidine. Which of the following statements best describes the mechanism of action of ranitidine?",
+              "options": [
+                "It irreversibly inhibits the H+/K+ ATPase pump in parietal cells.",
+                "It competitively antagonizes H2 receptors, reducing gastric acid secretion.",
+                "It neutralizes gastric acid by reacting with hydrochloric acid in the stomach lumen.",
+                "It stimulates bicarbonate secretion by epithelial cells in the stomach."
+              ],
+              "answer": "It competitively antagonizes H2 receptors, reducing gastric acid secretion.",
+              "explanation": "Ranitidine is an H2 receptor antagonist that competitively blocks H2 receptors on parietal cells, reducing gastric acid secretion."
+            },
+            {
+              "stem": "A 28-year-old woman with mild persistent asthma is prescribed an inhaled corticosteroid (ICS) for maintenance therapy. Which of the following statements is true regarding the use of ICS in asthma?",
+              "options": [
+                "ICS are primarily used for the relief of acute bronchospasm.",
+                "ICS reduce airway inflammation and are the cornerstone of long-term asthma control.",
+                "ICS should be used as monotherapy for patients with severe asthma.",
+                "ICS have no systemic adverse effects due to their inhaled route of administration."
+              ],
+              "answer": "ICS reduce airway inflammation and are the cornerstone of long-term asthma control.",
+              "explanation": "Inhaled corticosteroids reduce airway inflammation and are the cornerstone of long-term asthma control, reducing the frequency and severity of exacerbations."
+            },
+            {
+              "stem": "A 65-year-old man with COPD is prescribed inhaled budesonide. Which of the following adverse effects is most commonly associated with inhaled corticosteroids?",
+              "options": [
+                "Osteoporosis",
+                "Oral candidiasis",
+                "Hyperkalemia",
+                "Hypotension"
+              ],
+              "answer": "Oral candidiasis",
+              "explanation": "Inhaled corticosteroids can cause oral candidiasis (thrush) due to local immunosuppression in the oropharynx."
+            },
+            {
+              "stem": "A 45-year-old man with a history of peptic ulcer disease is prescribed sucralfate. Which of the following statements best describes the mechanism of action of sucralfate?",
+              "options": [
+                "It irreversibly inhibits the H+/K+ ATPase pump in parietal cells.",
+                "It competitively antagonizes H2 receptors, reducing gastric acid secretion.",
+                "It binds to necrotic ulcer tissue, forming a protective barrier against gastric acid.",
+                "It neutralizes gastric acid by reacting with hydrochloric acid in the stomach lumen."
+              ],
+              "answer": "It binds to necrotic ulcer tissue, forming a protective barrier against gastric acid.",
+              "explanation": "Sucralfate is a mucosal protective agent that binds to necrotic ulcer tissue, forming a protective barrier against gastric acid and pepsin."
+            },
+            {
+              "stem": "A 30-year-old woman with a history of motion sickness is prescribed scopolamine. Which of the following statements best describes the mechanism of action of scopolamine in this context?",
+              "options": [
+                "It blocks muscarinic receptors in the vestibular system, reducing nausea and vomiting.",
+                "It stimulates dopamine D2 receptors in the chemoreceptor trigger zone (CTZ).",
+                "It antagonizes 5-HT3 receptors in the nucleus tractus solitarius.",
+                "It inhibits the H+/K+ ATPase pump in parietal cells."
+              ],
+              "answer": "It blocks muscarinic receptors in the vestibular system, reducing nausea and vomiting.",
+              "explanation": "Scopolamine is an anticholinergic agent that blocks muscarinic receptors in the vestibular system, reducing nausea and vomiting associated with motion sickness."
+            },
+            {
+              "stem": "A 55-year-old man with a history of chronic bronchitis is prescribed theophylline. Which of the following drugs is most likely to increase theophylline levels by inhibiting its metabolism?",
+              "options": [
+                "Ranitidine",
+                "Omeprazole",
+                "Ciprofloxacin",
+                "Metformin"
+              ],
+              "answer": "Ciprofloxacin",
+              "explanation": "Ciprofloxacin is a potent inhibitor of CYP1A2, the enzyme responsible for theophylline metabolism, leading to increased theophylline levels and potential toxicity."
+            },
+            {
+              "stem": "A 40-year-old woman with a history of GERD is prescribed esomeprazole. Which of the following statements is true regarding the long-term use of PPIs like esomeprazole?",
+              "options": [
+                "Long-term use of PPIs is associated with an increased risk of osteoporosis and fractures.",
+                "Long-term use of PPIs is associated with a decreased risk of Clostridioides difficile infection.",
+                "Long-term use of PPIs is associated with an increased risk of hyperkalemia.",
+                "Long-term use of PPIs is associated with a decreased risk of vitamin B12 deficiency."
+              ],
+              "answer": "Long-term use of PPIs is associated with an increased risk of osteoporosis and fractures.",
+              "explanation": "Long-term use of PPIs is associated with an increased risk of osteoporosis and fractures due to reduced calcium absorption and potential effects on bone metabolism."
+            },
+            {
+              "stem": "A 60-year-old man with a history of constipation-predominant IBS is prescribed linaclotide. Which of the following best describes the mechanism of action of linaclotide?",
+              "options": [
+                "It stimulates intestinal motility by directly activating enteric nerves.",
+                "It increases stool water content by drawing water into the colon via osmotic effects.",
+                "It activates guanylate cyclase-C receptors, increasing intestinal fluid secretion and transit.",
+                "It inhibits chloride channels, reducing water reabsorption in the colon."
+              ],
+              "answer": "It activates guanylate cyclase-C receptors, increasing intestinal fluid secretion and transit.",
+              "explanation": "Linaclotide is a guanylate cyclase-C agonist that activates guanylate cyclase-C receptors in the intestinal epithelium, increasing intestinal fluid secretion and transit."
+            },
+            {
+              "stem": "A 35-year-old man with a history of asthma is prescribed zileuton. Which of the following statements best describes the mechanism of action of zileuton?",
+              "options": [
+                "It blocks leukotriene D4 receptors, preventing leukotriene-mediated bronchoconstriction.",
+                "It inhibits the 5-lipoxygenase enzyme, reducing leukotriene synthesis.",
+                "It stabilizes mast cells, preventing the release of histamine and leukotrienes.",
+                "It directly stimulates beta-2 adrenergic receptors to cause bronchodilation."
+              ],
+              "answer": "It inhibits the 5-lipoxygenase enzyme, reducing leukotriene synthesis.",
+              "explanation": "Zileuton is a 5-lipoxygenase inhibitor that reduces the synthesis of leukotrienes, which are mediators of bronchoconstriction and inflammation in asthma."
+            },
+            {
+              "stem": "A 50-year-old woman with a history of peptic ulcer disease is prescribed misoprostol. Which of the following statements best describes the mechanism of action of misoprostol?",
+              "options": [
+                "It irreversibly inhibits the H+/K+ ATPase pump in parietal cells.",
+                "It competitively antagonizes H2 receptors, reducing gastric acid secretion.",
+                "It is a prostaglandin E1 analogue that has a cytoprotective effect on gastric mucosa.",
+                "It neutralizes gastric acid by reacting with hydrochloric acid in the stomach lumen."
+              ],
+              "answer": "It is a prostaglandin E1 analogue that has a cytoprotective effect on gastric mucosa.",
+              "explanation": "Misoprostol is a prostaglandin E1 analogue that has a cytoprotective effect on the gastric mucosa, reducing acid secretion and enhancing mucosal defense mechanisms."
+            },
+            {
+              "stem": "A 45-year-old man with a history of COPD exacerbation is prescribed oral prednisone. Which of the following statements is true regarding the use of systemic corticosteroids in COPD exacerbations?",
+              "options": [
+                "Systemic corticosteroids should be avoided in COPD exacerbations due to the risk of osteoporosis.",
+                "Systemic corticosteroids reduce airway inflammation and improve lung function in COPD exacerbations.",
+                "Systemic corticosteroids should be used only in patients with severe asthma, not COPD.",
+                "Systemic corticosteroids have no role in the management of COPD exacerbations."
+              ],
+              "answer": "Systemic corticosteroids reduce airway inflammation and improve lung function in COPD exacerbations.",
+              "explanation": "Systemic corticosteroids reduce airway inflammation and improve lung function in COPD exacerbations, leading to faster recovery and reduced risk of relapse."
+            },
+            {
+              "stem": "A 30-year-old woman with a history of allergic rhinitis and mild asthma is prescribed cromolyn sodium. Which of the following statements best describes the mechanism of action of cromolyn sodium?",
+              "options": [
+                "It blocks leukotriene D4 receptors, preventing leukotriene-mediated bronchoconstriction.",
+                "It inhibits the 5-lipoxygenase enzyme, reducing leukotriene synthesis.",
+                "It stabilizes mast cells, preventing the release of histamine and leukotrienes.",
+                "It directly stimulates beta-2 adrenergic receptors to cause bronchodilation."
+              ],
+              "answer": "It stabilizes mast cells, preventing the release of histamine and leukotrienes.",
+              "explanation": "Cromolyn sodium is a mast cell stabilizer that prevents the release of histamine and leukotrienes from mast cells, reducing bronchoconstriction and inflammation."
+            },
+            {
+              "stem": "A 65-year-old man with a history of chronic constipation is prescribed polyethylene glycol (PEG). Which of the following best describes the mechanism of action of PEG?",
+              "options": [
+                "It stimulates intestinal motility by directly activating enteric nerves.",
+                "It increases stool water content by drawing water into the colon via osmotic effects.",
+                "It binds to bile acids, reducing their reabsorption and stimulating colonic motility.",
+                "It inhibits chloride channels, reducing water reabsorption in the colon."
+              ],
+              "answer": "It increases stool water content by drawing water into the colon via osmotic effects.",
+              "explanation": "PEG is an osmotic laxative that increases stool water content by drawing water into the colon, promoting peristalsis and bowel movements."
+            },
+            {
+              "stem": "A 40-year-old woman with a history of GERD is prescribed famotidine. Which of the following statements is true regarding the use of famotidine in GERD?",
+              "options": [
+                "Famotidine is a proton pump inhibitor that irreversibly inhibits the H+/K+ ATPase pump.",
+                "Famotidine is an H2 receptor antagonist that competitively blocks H2 receptors on parietal cells.",
+                "Famotidine neutralizes gastric acid by reacting with hydrochloric acid in the stomach lumen.",
+                "Famotidine stimulates bicarbonate secretion by epithelial cells in the stomach."
+              ],
+              "answer": "Famotidine is an H2 receptor antagonist that competitively blocks H2 receptors on parietal cells.",
+              "explanation": "Famotidine is an H2 receptor antagonist that competitively blocks H2 receptors on parietal cells, reducing gastric acid secretion."
+            },
+            {
+              "stem": "A 55-year-old man with a history of COPD is prescribed inhaled fluticasone. Which of the following adverse effects is most commonly associated with inhaled corticosteroids?",
+              "options": [
+                "Osteoporosis",
+                "Oral candidiasis",
+                "Hyperkalemia",
+                "Hypotension"
+              ],
+              "answer": "Oral candidiasis",
+              "explanation": "Inhaled corticosteroids can cause oral candidiasis (thrush) due to local immunosuppression in the oropharynx."
+            },
+            {
+              "stem": "A 35-year-old woman with a history of traveler's diarrhea is prescribed bismuth subsalicylate. Which of the following best describes the mechanism of action of bismuth subsalicylate in this context?",
+              "options": [
+                "It stimulates intestinal motility by directly activating enteric nerves.",
+                "It increases stool water content by drawing water into the colon via osmotic effects.",
+                "It has antimicrobial effects against enteric pathogens and anti-secretory properties.",
+                "It inhibits chloride channels, reducing water reabsorption in the colon."
+              ],
+              "answer": "It has antimicrobial effects against enteric pathogens and anti-secretory properties.",
+              "explanation": "Bismuth subsalicylate has antimicrobial effects against enteric pathogens and anti-secretory properties, reducing stool frequency and duration of diarrhea."
+            },
+            {
+              "stem": "A 60-year-old man with a history of peptic ulcer disease is prescribed aluminum hydroxide. Which of the following statements best describes the mechanism of action of aluminum hydroxide?",
+              "options": [
+                "It irreversibly inhibits the H+/K+ ATPase pump in parietal cells.",
+                "It competitively antagonizes H2 receptors, reducing gastric acid secretion.",
+                "It neutralizes gastric acid by reacting with hydrochloric acid in the stomach lumen.",
+                "It stimulates bicarbonate secretion by epithelial cells in the stomach."
+              ],
+              "answer": "It neutralizes gastric acid by reacting with hydrochloric acid in the stomach lumen.",
+              "explanation": "Aluminum hydroxide is an antacid that neutralizes gastric acid by reacting with hydrochloric acid in the stomach lumen."
+            },
+            {
+              "stem": "A 45-year-old man with a history of asthma is prescribed theophylline. Which of the following drugs is most likely to decrease theophylline levels by inducing its metabolism?",
+              "options": [
+                "Rifampicin",
+                "Ciprofloxacin",
+                "Erythromycin",
+                "Omeprazole"
+              ],
+              "answer": "Rifampicin",
+              "explanation": "Rifampicin is a potent inducer of CYP1A2, the enzyme responsible for theophylline metabolism, leading to decreased theophylline levels and potential loss of efficacy."
+            },
+            {
+              "stem": "A 50-year-old woman with a history of GERD is prescribed omeprazole. Which of the following statements is true regarding the use of PPIs like omeprazole in GERD?",
+              "options": [
+                "PPIs should be taken with food to enhance their absorption.",
+                "PPIs irreversibly inhibit the H+/K+ ATPase pump, providing prolonged suppression of gastric acid secretion.",
+                "PPIs are contraindicated in patients with a history of Clostridioides difficile infection.",
+                "PPIs have no role in the maintenance therapy of GERD."
+              ],
+              "answer": "PPIs irreversibly inhibit the H+/K+ ATPase pump, providing prolonged suppression of gastric acid secretion.",
+              "explanation": "PPIs irreversibly inhibit the H+/K+ ATPase pump in parietal cells, providing prolonged suppression of gastric acid secretion and healing of erosive esophagitis."
+            },
+            {
+              "stem": "A 30-year-old man with a history of chronic constipation is prescribed senna. Which of the following best describes the mechanism of action of senna?",
+              "options": [
+                "It stimulates intestinal motility by directly activating enteric nerves.",
+                "It increases stool water content by drawing water into the colon via osmotic effects.",
+                "It binds to bile acids, reducing their reabsorption and stimulating colonic motility.",
+                "It inhibits chloride channels, reducing water reabsorption in the colon."
+              ],
+              "answer": "It stimulates intestinal motility by directly activating enteric nerves.",
+              "explanation": "Senna is a stimulant laxative that stimulates intestinal motility by directly activating enteric nerves, promoting bowel movements."
+            },
+            {
+              "stem": "A 65-year-old woman with a history of COPD exacerbation is prescribed oral dexamethasone. Which of the following statements is true regarding the use of systemic corticosteroids in COPD exacerbations?",
+              "options": [
+                "Systemic corticosteroids should be avoided in COPD exacerbations due to the risk of osteoporosis.",
+                "Systemic corticosteroids reduce airway inflammation and improve lung function in COPD exacerbations.",
+                "Systemic corticosteroids should be used only in patients with severe asthma, not COPD.",
+                "Systemic corticosteroids have no role in the management of COPD exacerbations."
+              ],
+              "answer": "Systemic corticosteroids reduce airway inflammation and improve lung function in COPD exacerbations.",
+              "explanation": "Systemic corticosteroids reduce airway inflammation and improve lung function in COPD exacerbations, leading to faster recovery and reduced risk of relapse."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "1. a) Outline the mechanism of action of proton pump inhibitors (PPIs) in the treatment of peptic ulcer disease. (2 marks)\nb) Provide two examples of PPIs and describe their clinical uses. (2 marks)\nc) Discuss two potential long-term adverse effects of PPI therapy. (1 mark)",
+              "modelAnswer": "a) PPIs irreversibly inhibit the H+/K+ ATPase pump (proton pump) in parietal cells, reducing gastric acid secretion by up to 95%.\nb) Examples: Omeprazole (used for GERD, peptic ulcer disease, H. pylori eradication), Esomeprazole (used for erosive esophagitis, Zollinger-Ellison syndrome).\nc) Long-term adverse effects: Increased risk of osteoporosis and fractures (due to reduced calcium absorption), Increased risk of Clostridioides difficile infection (due to altered gut microbiota)."
+            },
+            {
+              "stem": "2. a) Describe the mechanism of action of ondansetron in the prevention of chemotherapy-induced nausea and vomiting. (2 marks)\nb) Identify two other antiemetic drugs with different mechanisms of action and briefly describe their mechanisms. (2 marks)\nc) Discuss one adverse effect associated with ondansetron. (1 mark)",
+              "modelAnswer": "a) Ondansetron is a selective 5-HT3 receptor antagonist that blocks 5-HT3 receptors in the chemoreceptor trigger zone (CTZ) and vagal afferents, reducing nausea and vomiting.\nb) Metoclopramide (D2 dopaminergic receptor antagonist in the CTZ), Aprepitant (NK1 neurokinin receptor antagonist in the area postrema).\nc) Adverse effect: Headache, constipation, or QT prolongation (rare)."
+            },
+            {
+              "stem": "3. a) Outline the mechanism of action of bulk-forming laxatives in the treatment of constipation. (2 marks)\nb) Provide two examples of bulk-forming laxatives and describe their clinical uses. (2 marks)\nc) Discuss one potential adverse effect of bulk-forming laxatives. (1 mark)",
+              "modelAnswer": "a) Bulk-forming laxatives increase stool bulk and water content by absorbing water, stimulating peristalsis and bowel movements.\nb) Examples: Psyllium (used for chronic constipation, IBS), Methylcellulose (used for chronic constipation, diverticulosis).\nc) Adverse effect: Bloating, flatulence, or intestinal obstruction (if not taken with adequate water)."
+            },
+            {
+              "stem": "4. a) Describe the mechanism of action of inhaled corticosteroids (ICS) in the management of asthma. (2 marks)\nb) Identify two examples of ICS and describe their clinical uses. (2 marks)\nc) Discuss one potential adverse effect of ICS therapy. (1 mark)",
+              "modelAnswer": "a) ICS reduce airway inflammation by inhibiting the release of inflammatory mediators, suppressing eosinophil recruitment, and reducing airway hyperresponsiveness.\nb) Examples: Fluticasone (used for maintenance therapy in asthma, COPD), Budesonide (used for maintenance therapy in asthma, Crohn's disease).\nc) Adverse effect: Oral candidiasis (thrush) due to local immunosuppression in the oropharynx."
+            },
+            {
+              "stem": "5. a) Outline the mechanism of action of loperamide in the treatment of diarrhea. (2 marks)\nb) Discuss two clinical scenarios where loperamide should be avoided. (2 marks)\nc) Identify one potential adverse effect of loperamide. (1 mark)",
+              "modelAnswer": "a) Loperamide is an opioid receptor agonist that acts on mu opioid receptors in the gut, reducing intestinal motility and increasing fluid absorption.\nb) Avoid in: Infectious diarrhea (risk of prolonged infection), Inflammatory bowel disease (risk of toxic megacolon).\nc) Adverse effect: Constipation."
+            },
+            {
+              "stem": "6. a) Describe the mechanism of action of H2 receptor antagonists in the treatment of peptic ulcer disease. (2 marks)\nb) Provide two examples of H2 receptor antagonists and describe their clinical uses. (2 marks)\nc) Discuss one potential adverse effect of H2 receptor antagonists. (1 mark)",
+              "modelAnswer": "a) H2 receptor antagonists competitively block H2 receptors on parietal cells, reducing gastric acid secretion.\nb) Examples: Ranitidine (used for GERD, peptic ulcer disease, stress ulcer prophylaxis), Famotidine (used for GERD, peptic ulcer disease, Zollinger-Ellison syndrome).\nc) Adverse effect: Headache, dizziness, or rarely bradycardia (with intravenous administration)."
+            },
+            {
+              "stem": "7. a) Outline the mechanism of action of leukotriene receptor antagonists in the management of asthma. (2 marks)\nb) Provide two examples of leukotriene receptor antagonists and describe their clinical uses. (2 marks)\nc) Discuss one potential adverse effect of leukotriene receptor antagonists. (1 mark)",
+              "modelAnswer": "a) Leukotriene receptor antagonists block leukotriene D4 receptors, reducing bronchoconstriction and inflammation.\nb) Examples: Montelukast (used for maintenance therapy in asthma, allergic rhinitis), Zafirlukast (used for maintenance therapy in asthma, aspirin-induced asthma).\nc) Adverse effect: Headache, dizziness, or rarely eosinophilic vasculitis (with zafirlukast)."
+            },
+            {
+              "stem": "8. a) Describe the mechanism of action of osmotic laxatives in the treatment of constipation. (2 marks)\nb) Provide two examples of osmotic laxatives and describe their clinical uses. (2 marks)\nc) Discuss one potential adverse effect of osmotic laxatives. (1 mark)",
+              "modelAnswer": "a) Osmotic laxatives increase stool water content by drawing water into the colon via osmotic effects, promoting peristalsis and bowel movements.\nb) Examples: Lactulose (used for chronic constipation, hepatic encephalopathy), Polyethylene glycol (PEG) (used for chronic constipation, bowel preparation for colonoscopy).\nc) Adverse effect: Bloating, flatulence, or electrolyte imbalances (with prolonged use)."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 45-year-old man with a history of COPD exacerbation is admitted to the hospital. He is currently taking inhaled salbutamol and ipratropium bromide for maintenance therapy. He reports worsening dyspnea, cough, and increased sputum production over the past 3 days.\n\n1. a) Explain the pathophysiology of COPD exacerbation and why this patient is experiencing worsening symptoms. (3 marks)\nb) Outline the pharmacological management of this patient's COPD exacerbation, including the rationale for each drug class used. (5 marks)\nc) Discuss the role of oxygen therapy in this patient and the potential risks of inappropriate oxygen administration. (3 marks)\nd) Identify two potential adverse effects of systemic corticosteroids in this patient and describe how you would monitor for these effects. (4 marks)",
+              "modelAnswer": "a) COPD exacerbation is characterized by worsening dyspnea, cough, and sputum production, often due to increased airway inflammation, bronchoconstriction, and mucus hypersecretion. In this patient, the exacerbation is likely triggered by an acute respiratory infection or environmental pollutants, leading to increased airway resistance and reduced airflow.\n\nb) Pharmacological management:\n- Short-acting beta-2 agonists (e.g., salbutamol): Provide rapid bronchodilation by stimulating beta-2 adrenergic receptors, reducing bronchospasm and improving airflow.\n- Short-acting anticholinergics (e.g., ipratropium bromide): Provide bronchodilation by blocking muscarinic M3 receptors, reducing bronchoconstriction.\n- Systemic corticosteroids (e.g., prednisone): Reduce airway inflammation and improve lung function by suppressing the immune response.\n- Antibiotics (e.g., amoxicillin-clavulanate): Treat bacterial infections that may be contributing to the exacerbation.\n- Oxygen therapy: Maintain oxygen saturation (SpO2) between 88-92% to prevent hypoxia while avoiding hypercapnia.\n\nc) Oxygen therapy is crucial in COPD exacerbations to correct hypoxia, but inappropriate administration (e.g., high-flow oxygen) can lead to hypercapnia and respiratory acidosis due to reduced hypoxic drive and worsening ventilation-perfusion mismatch. Oxygen should be titrated to maintain SpO2 between 88-92%.\n\nd) Potential adverse effects of systemic corticosteroids:\n- Hyperglycemia: Monitor blood glucose levels, especially in patients with diabetes or prediabetes.\n- Osteoporosis: Monitor bone mineral density in patients requiring long-term corticosteroid therapy.\n- Adrenal suppression: Taper corticosteroids gradually to avoid adrenal crisis.\n- Increased risk of infections: Monitor for signs of infection and consider prophylactic measures in high-risk patients."
+            },
+            {
+              "stem": "A 30-year-old woman with a history of mild persistent asthma is prescribed an inhaled corticosteroid (ICS) for maintenance therapy. She reports good control of her symptoms but is concerned about potential adverse effects of long-term ICS use.\n\n1. a) Describe the mechanism of action of ICS in the management of asthma. (3 marks)\nb) Outline the potential systemic and local adverse effects of long-term ICS therapy. (5 marks)\nc) Discuss the role of leukotriene receptor antagonists as an adjunct to ICS in the management of asthma. (3 marks)\nd) Identify two strategies to minimize the risk of adverse effects associated with ICS therapy. (4 marks)",
+              "modelAnswer": "a) Mechanism of action of ICS: ICS reduce airway inflammation by inhibiting the release of inflammatory mediators (e.g., cytokines, leukotrienes), suppressing eosinophil recruitment, and reducing airway hyperresponsiveness. They also decrease mucus production and vascular permeability.\n\nb) Potential adverse effects of long-term ICS therapy:\n- Local adverse effects: Oral candidiasis (thrush), hoarseness, throat irritation.\n- Systemic adverse effects: Adrenal suppression (with high doses), osteoporosis, cataracts, glaucoma, growth suppression in children (with prolonged high-dose therapy).\n\nc) Role of leukotriene receptor antagonists: Leukotriene receptor antagonists (e.g., montelukast) block leukotriene D4 receptors, reducing bronchoconstriction and inflammation. They are used as an adjunct to ICS in patients with persistent symptoms or allergic rhinitis, particularly in exercise-induced or aspirin-exacerbated asthma.\n\nd) Strategies to minimize adverse effects:\n- Use the lowest effective dose of ICS.\n- Use a spacer device with metered-dose inhalers to reduce oropharyngeal deposition.\n- Rinse the mouth after inhalation to reduce the risk of oral candidiasis.\n- Monitor for signs of systemic adverse effects (e.g., adrenal suppression, osteoporosis) in patients requiring high-dose or prolonged ICS therapy."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Gastrointestinal & Respiratory Pharmacology",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 62-year-old man with COPD is prescribed inhaled ipratropium bromide. Which of the following best describes the primary mechanism of action of ipratropium in this patient?",
+              "options": [
+                "Stimulation of beta-2 adrenergic receptors to relax bronchial smooth muscle",
+                "Inhibition of muscarinic M3 receptors to reduce bronchoconstriction",
+                "Blockade of histamine H1 receptors to prevent allergic bronchospasm",
+                "Inhibition of leukotriene synthesis to reduce airway inflammation"
+              ],
+              "answer": "Inhibition of muscarinic M3 receptors to reduce bronchoconstriction",
+              "explanation": "Ipratropium is a muscarinic antagonist that blocks M3 receptors in bronchial smooth muscle, reducing vagally-mediated bronchoconstriction."
+            },
+            {
+              "stem": "A 28-year-old woman with mild intermittent asthma uses salbutamol as needed. Which of the following adverse effects is most likely to occur with excessive use of this medication?",
+              "options": [
+                "Hyperkalemia",
+                "Tachycardia",
+                "Constipation",
+                "Metabolic alkalosis"
+              ],
+              "answer": "Tachycardia",
+              "explanation": "Salbutamol is a beta-2 agonist with some beta-1 activity at higher doses, leading to tachycardia and palpitations."
+            },
+            {
+              "stem": "A 45-year-old man with chronic cough is prescribed codeine. Which of the following receptors mediates the antitussive effect of codeine?",
+              "options": [
+                "Mu opioid receptors",
+                "Dopamine D2 receptors",
+                "Serotonin 5-HT3 receptors",
+                "GABA-A receptors"
+              ],
+              "answer": "Mu opioid receptors",
+              "explanation": "Codeine acts centrally as a mu opioid receptor agonist to suppress the cough reflex."
+            },
+            {
+              "stem": "A 55-year-old woman with GERD is prescribed omeprazole. Which of the following best describes the mechanism of action of omeprazole?",
+              "options": [
+                "Reversible inhibition of H2 histamine receptors in parietal cells",
+                "Irreversible inhibition of H+/K+ ATPase in parietal cells",
+                "Neutralization of gastric acid by forming a protective barrier",
+                "Stimulation of prostaglandin E2 synthesis in gastric mucosa"
+              ],
+              "answer": "Irreversible inhibition of H+/K+ ATPase in parietal cells",
+              "explanation": "Omeprazole is a proton pump inhibitor that irreversibly inhibits the H+/K+ ATPase enzyme in parietal cells, reducing gastric acid secretion."
+            },
+            {
+              "stem": "A 30-year-old man with H. pylori-positive duodenal ulcer is prescribed a triple therapy regimen. Which of the following combinations is most appropriate for H. pylori eradication?",
+              "options": [
+                "Omeprazole, amoxicillin, clarithromycin",
+                "Ranitidine, metronidazole, tetracycline",
+                "Famotidine, amoxicillin, metronidazole",
+                "Esomeprazole, doxycycline, bismuth subsalicylate"
+              ],
+              "answer": "Omeprazole, amoxicillin, clarithromycin",
+              "explanation": "Standard triple therapy for H. pylori eradication includes a PPI (omeprazole), and two antibiotics (amoxicillin and clarithromycin)."
+            },
+            {
+              "stem": "A 60-year-old man with COPD is prescribed theophylline. Which of the following is the primary reason for monitoring serum theophylline levels in this patient?",
+              "options": [
+                "To ensure therapeutic efficacy in preventing bronchospasm",
+                "To prevent toxicity due to its narrow therapeutic index",
+                "To assess renal clearance of the drug",
+                "To monitor drug interactions with inhaled corticosteroids"
+              ],
+              "answer": "To prevent toxicity due to its narrow therapeutic index",
+              "explanation": "Theophylline has a narrow therapeutic index, and serum levels must be monitored to avoid toxicity (e.g., seizures, arrhythmias)."
+            },
+            {
+              "stem": "A 25-year-old woman with IBS-D is prescribed loperamide. Which of the following best describes the mechanism of action of loperamide?",
+              "options": [
+                "Stimulation of mu opioid receptors in the intestinal smooth muscle",
+                "Inhibition of 5-HT3 receptors in the gut",
+                "Blockade of dopamine D2 receptors in the chemoreceptor trigger zone",
+                "Stimulation of chloride channels in the intestinal epithelium"
+              ],
+              "answer": "Stimulation of mu opioid receptors in the intestinal smooth muscle",
+              "explanation": "Loperamide is a synthetic opioid that acts on mu opioid receptors in the gut to reduce intestinal motility and increase transit time."
+            },
+            {
+              "stem": "A 70-year-old man with chronic constipation is prescribed lactulose. Which of the following best describes the mechanism of action of lactulose?",
+              "options": [
+                "Stimulation of chloride channels in the intestinal epithelium",
+                "Osmotic effect drawing water into the colon",
+                "Stimulation of intestinal smooth muscle contraction",
+                "Inhibition of opioid receptors in the gut"
+              ],
+              "answer": "Osmotic effect drawing water into the colon",
+              "explanation": "Lactulose is an osmotic laxative that increases water retention in the colon, softening stool and promoting bowel movements."
+            },
+            {
+              "stem": "A 40-year-old woman with motion sickness is prescribed hyoscine (scopolamine). Which of the following best describes the mechanism of action of hyoscine?",
+              "options": [
+                "Blockade of muscarinic M1 receptors in the vestibular system",
+                "Stimulation of dopamine D2 receptors in the chemoreceptor trigger zone",
+                "Inhibition of histamine H1 receptors in the vomiting center",
+                "Stimulation of serotonin 5-HT3 receptors in the gut"
+              ],
+              "answer": "Blockade of muscarinic M1 receptors in the vestibular system",
+              "explanation": "Hyoscine is a muscarinic antagonist that blocks M1 receptors in the vestibular system, reducing motion sickness."
+            },
+            {
+              "stem": "A 50-year-old man with peptic ulcer disease is prescribed sucralfate. Which of the following best describes the mechanism of action of sucralfate?",
+              "options": [
+                "Neutralization of gastric acid by forming a protective barrier",
+                "Inhibition of H+/K+ ATPase in parietal cells",
+                "Binding to ulcerated tissue and forming a protective gel",
+                "Stimulation of prostaglandin synthesis in gastric mucosa"
+              ],
+              "answer": "Binding to ulcerated tissue and forming a protective gel",
+              "explanation": "Sucralfate binds to positively charged proteins in ulcerated tissue, forming a protective barrier against acid and pepsin."
+            },
+            {
+              "stem": "A 35-year-old woman with asthma is prescribed montelukast. Which of the following best describes the mechanism of action of montelukast?",
+              "options": [
+                "Inhibition of leukotriene D4 receptors",
+                "Stimulation of beta-2 adrenergic receptors",
+                "Blockade of histamine H1 receptors",
+                "Inhibition of cyclooxygenase enzymes"
+              ],
+              "answer": "Inhibition of leukotriene D4 receptors",
+              "explanation": "Montelukast is a leukotriene receptor antagonist that blocks leukotriene D4 receptors, reducing bronchoconstriction and inflammation."
+            },
+            {
+              "stem": "A 65-year-old man with COPD is prescribed inhaled budesonide. Which of the following best describes the primary mechanism of action of inhaled corticosteroids in COPD?",
+              "options": [
+                "Bronchodilation by stimulating beta-2 receptors",
+                "Reduction of airway inflammation by inhibiting cytokine production",
+                "Inhibition of muscarinic receptors to reduce bronchoconstriction",
+                "Stimulation of chloride channels to improve mucociliary clearance"
+              ],
+              "answer": "Reduction of airway inflammation by inhibiting cytokine production",
+              "explanation": "Inhaled corticosteroids reduce airway inflammation by inhibiting the production of pro-inflammatory cytokines and mediators."
+            },
+            {
+              "stem": "A 22-year-old man with allergic rhinitis is prescribed cetirizine. Which of the following best describes the mechanism of action of cetirizine?",
+              "options": [
+                "Blockade of histamine H1 receptors",
+                "Inhibition of leukotriene synthesis",
+                "Stimulation of beta-2 adrenergic receptors",
+                "Inhibition of mast cell degranulation"
+              ],
+              "answer": "Blockade of histamine H1 receptors",
+              "explanation": "Cetirizine is a second-generation H1 antihistamine that blocks histamine H1 receptors, reducing allergic symptoms."
+            },
+            {
+              "stem": "A 55-year-old woman with chronic cough is prescribed dextromethorphan. Which of the following best describes the mechanism of action of dextromethorphan?",
+              "options": [
+                "Stimulation of mu opioid receptors in the cough center",
+                "Blockade of NMDA receptors in the cough center",
+                "Inhibition of 5-HT3 receptors in the gut",
+                "Stimulation of beta-2 adrenergic receptors in the lungs"
+              ],
+              "answer": "Blockade of NMDA receptors in the cough center",
+              "explanation": "Dextromethorphan is a non-opioid antitussive that acts centrally by blocking NMDA receptors in the medullary cough center."
+            },
+            {
+              "stem": "A 45-year-old man with GERD is prescribed ranitidine. Which of the following best describes the mechanism of action of ranitidine?",
+              "options": [
+                "Irreversible inhibition of H+/K+ ATPase in parietal cells",
+                "Reversible inhibition of H2 histamine receptors in parietal cells",
+                "Neutralization of gastric acid by forming a protective barrier",
+                "Stimulation of prostaglandin synthesis in gastric mucosa"
+              ],
+              "answer": "Reversible inhibition of H2 histamine receptors in parietal cells",
+              "explanation": "Ranitidine is an H2 receptor antagonist that reversibly inhibits H2 receptors in parietal cells, reducing gastric acid secretion."
+            },
+            {
+              "stem": "A 30-year-old woman with IBS-C is prescribed linaclotide. Which of the following best describes the mechanism of action of linaclotide?",
+              "options": [
+                "Stimulation of guanylate cyclase-C receptors to increase intestinal fluid secretion",
+                "Inhibition of chloride channels in the intestinal epithelium",
+                "Stimulation of opioid receptors in the gut",
+                "Blockade of dopamine D2 receptors in the chemoreceptor trigger zone"
+              ],
+              "answer": "Stimulation of guanylate cyclase-C receptors to increase intestinal fluid secretion",
+              "explanation": "Linaclotide is a guanylate cyclase-C agonist that increases intestinal fluid secretion and transit time, relieving constipation."
+            },
+            {
+              "stem": "A 60-year-old man with COPD is prescribed roflumilast. Which of the following best describes the mechanism of action of roflumilast?",
+              "options": [
+                "Inhibition of phosphodiesterase-4 to reduce airway inflammation",
+                "Stimulation of beta-2 adrenergic receptors to relax bronchial smooth muscle",
+                "Blockade of muscarinic M3 receptors to reduce bronchoconstriction",
+                "Inhibition of leukotriene synthesis to reduce airway inflammation"
+              ],
+              "answer": "Inhibition of phosphodiesterase-4 to reduce airway inflammation",
+              "explanation": "Roflumilast is a phosphodiesterase-4 inhibitor that reduces airway inflammation in COPD by increasing cAMP levels."
+            },
+            {
+              "stem": "A 40-year-old woman with nausea and vomiting after chemotherapy is prescribed ondansetron. Which of the following best describes the mechanism of action of ondansetron?",
+              "options": [
+                "Blockade of dopamine D2 receptors in the chemoreceptor trigger zone",
+                "Inhibition of 5-HT3 receptors in the vomiting center and gut",
+                "Stimulation of muscarinic M1 receptors in the vestibular system",
+                "Blockade of histamine H1 receptors in the vomiting center"
+              ],
+              "answer": "Inhibition of 5-HT3 receptors in the vomiting center and gut",
+              "explanation": "Ondansetron is a 5-HT3 receptor antagonist that blocks 5-HT3 receptors in the vomiting center and gut, reducing nausea and vomiting."
+            },
+            {
+              "stem": "A 55-year-old man with chronic constipation is prescribed prucalopride. Which of the following best describes the mechanism of action of prucalopride?",
+              "options": [
+                "Stimulation of 5-HT4 receptors to increase intestinal motility",
+                "Inhibition of chloride channels in the intestinal epithelium",
+                "Stimulation of opioid receptors in the gut",
+                "Blockade of dopamine D2 receptors in the chemoreceptor trigger zone"
+              ],
+              "answer": "Stimulation of 5-HT4 receptors to increase intestinal motility",
+              "explanation": "Prucalopride is a selective 5-HT4 receptor agonist that stimulates intestinal motility and transit."
+            },
+            {
+              "stem": "A 35-year-old woman with asthma is prescribed fluticasone. Which of the following adverse effects is most likely to occur with long-term use of inhaled fluticasone?",
+              "options": [
+                "Oral candidiasis",
+                "Hyperkalemia",
+                "Metabolic alkalosis",
+                "Bradycardia"
+              ],
+              "answer": "Oral candidiasis",
+              "explanation": "Long-term use of inhaled corticosteroids like fluticasone can lead to oral candidiasis due to local immunosuppression in the oropharynx."
+            },
+            {
+              "stem": "A 60-year-old man with COPD is prescribed a combination of inhaled salmeterol and fluticasone. Which of the following best describes the rationale for combining these two drugs?",
+              "options": [
+                "Salmeterol provides bronchodilation, while fluticasone reduces airway inflammation",
+                "Salmeterol reduces airway inflammation, while fluticasone provides bronchodilation",
+                "Salmeterol stimulates mucus secretion, while fluticasone inhibits it",
+                "Salmeterol and fluticasone act synergistically to neutralize gastric acid"
+              ],
+              "answer": "Salmeterol provides bronchodilation, while fluticasone reduces airway inflammation",
+              "explanation": "Salmeterol is a long-acting beta-2 agonist that provides bronchodilation, while fluticasone is an inhaled corticosteroid that reduces airway inflammation."
+            },
+            {
+              "stem": "A 45-year-old woman with GERD is prescribed esomeprazole. Which of the following is a potential long-term adverse effect of esomeprazole?",
+              "options": [
+                "Hypercalcemia",
+                "Increased risk of osteoporosis",
+                "Metabolic acidosis",
+                "Hypokalemia"
+              ],
+              "answer": "Increased risk of osteoporosis",
+              "explanation": "Long-term use of PPIs like esomeprazole can reduce calcium absorption, increasing the risk of osteoporosis and fractures."
+            },
+            {
+              "stem": "A 30-year-old man with H. pylori-negative duodenal ulcer is prescribed misoprostol. Which of the following best describes the mechanism of action of misoprostol?",
+              "options": [
+                "Stimulation of prostaglandin E1 receptors to protect gastric mucosa",
+                "Inhibition of H+/K+ ATPase in parietal cells",
+                "Neutralization of gastric acid by forming a protective barrier",
+                "Blockade of histamine H2 receptors in parietal cells"
+              ],
+              "answer": "Stimulation of prostaglandin E1 receptors to protect gastric mucosa",
+              "explanation": "Misoprostol is a prostaglandin E1 analogue that stimulates prostaglandin receptors in gastric mucosa, protecting against acid and pepsin damage."
+            },
+            {
+              "stem": "A 50-year-old woman with chronic cough is prescribed acetylcysteine. Which of the following best describes the mechanism of action of acetylcysteine?",
+              "options": [
+                "Breaking disulfide bonds in mucus to reduce viscosity",
+                "Stimulation of beta-2 adrenergic receptors to relax bronchial smooth muscle",
+                "Inhibition of leukotriene synthesis to reduce airway inflammation",
+                "Blockade of histamine H1 receptors to reduce allergic symptoms"
+              ],
+              "answer": "Breaking disulfide bonds in mucus to reduce viscosity",
+              "explanation": "Acetylcysteine is a mucolytic agent that breaks disulfide bonds in mucus, reducing its viscosity and facilitating expectoration."
+            },
+            {
+              "stem": "A 40-year-old man with COPD is prescribed tiotropium. Which of the following best describes the primary advantage of tiotropium over ipratropium in COPD management?",
+              "options": [
+                "Longer duration of action",
+                "Faster onset of action",
+                "Lower risk of systemic adverse effects",
+                "Stimulation of beta-2 adrenergic receptors"
+              ],
+              "answer": "Longer duration of action",
+              "explanation": "Tiotropium is a long-acting muscarinic antagonist with a duration of action of 24 hours, making it more convenient for once-daily dosing in COPD."
+            },
+            {
+              "stem": "A 55-year-old woman with IBS-D is prescribed alosetron. Which of the following best describes the mechanism of action of alosetron?",
+              "options": [
+                "Blockade of 5-HT3 receptors to reduce intestinal motility",
+                "Stimulation of opioid receptors in the gut",
+                "Inhibition of chloride channels in the intestinal epithelium",
+                "Stimulation of 5-HT4 receptors to increase intestinal motility"
+              ],
+              "answer": "Blockade of 5-HT3 receptors to reduce intestinal motility",
+              "explanation": "Alosetron is a selective 5-HT3 receptor antagonist that reduces intestinal motility and secretions, relieving diarrhea in IBS-D."
+            },
+            {
+              "stem": "A 60-year-old man with peptic ulcer disease is prescribed bismuth subsalicylate. Which of the following best describes the mechanism of action of bismuth subsalicylate?",
+              "options": [
+                "Neutralization of gastric acid by forming a protective barrier",
+                "Stimulation of prostaglandin synthesis in gastric mucosa",
+                "Binding to ulcerated tissue and forming a protective gel",
+                "Inhibition of H+/K+ ATPase in parietal cells"
+              ],
+              "answer": "Binding to ulcerated tissue and forming a protective gel",
+              "explanation": "Bismuth subsalicylate binds to ulcerated tissue, forming a protective barrier against acid and pepsin, and has antimicrobial effects against H. pylori."
+            },
+            {
+              "stem": "A 35-year-old woman with asthma is prescribed zileuton. Which of the following best describes the mechanism of action of zileuton?",
+              "options": [
+                "Inhibition of 5-lipoxygenase to reduce leukotriene synthesis",
+                "Blockade of leukotriene D4 receptors",
+                "Stimulation of beta-2 adrenergic receptors",
+                "Inhibition of phosphodiesterase-4 to reduce airway inflammation"
+              ],
+              "answer": "Inhibition of 5-lipoxygenase to reduce leukotriene synthesis",
+              "explanation": "Zileuton is a 5-lipoxygenase inhibitor that reduces the synthesis of leukotrienes, which are key mediators of bronchoconstriction and inflammation in asthma."
+            },
+            {
+              "stem": "A 45-year-old man with GERD is prescribed famotidine. Which of the following is a potential adverse effect of famotidine?",
+              "options": [
+                "Hypercalcemia",
+                "Bradycardia",
+                "Thrombocytopenia",
+                "Metabolic alkalosis"
+              ],
+              "answer": "Thrombocytopenia",
+              "explanation": "Famotidine, like other H2 receptor antagonists, can rarely cause thrombocytopenia as an idiosyncratic reaction."
+            },
+            {
+              "stem": "A 50-year-old woman with chronic constipation is prescribed polyethylene glycol. Which of the following best describes the mechanism of action of polyethylene glycol?",
+              "options": [
+                "Osmotic effect drawing water into the colon",
+                "Stimulation of chloride channels in the intestinal epithelium",
+                "Inhibition of opioid receptors in the gut",
+                "Stimulation of intestinal smooth muscle contraction"
+              ],
+              "answer": "Osmotic effect drawing water into the colon",
+              "explanation": "Polyethylene glycol is an osmotic laxative that increases water retention in the colon, softening stool and promoting bowel movements."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "1. A 45-year-old man with COPD is prescribed inhaled salbutamol and ipratropium bromide. Explain the mechanism of action of each drug and why they are often used together in COPD management.",
+              "modelAnswer": "Salbutamol is a short-acting beta-2 agonist that stimulates beta-2 adrenergic receptors in bronchial smooth muscle, leading to bronchodilation. Ipratropium bromide is a muscarinic antagonist that blocks M3 receptors in bronchial smooth muscle, reducing vagally-mediated bronchoconstriction. They are often used together in COPD because they act via different mechanisms to produce bronchodilation, providing additive or synergistic effects. Beta-2 agonists act quickly but may cause systemic adverse effects at high doses, while anticholinergics have a slower onset but longer duration and fewer systemic effects."
+            },
+            {
+              "stem": "2. A 30-year-old woman with asthma is prescribed fluticasone and montelukast. Explain the mechanism of action of each drug and why they are used together in asthma management.",
+              "modelAnswer": "Fluticasone is an inhaled corticosteroid that reduces airway inflammation by inhibiting the production of pro-inflammatory cytokines and mediators. Montelukast is a leukotriene receptor antagonist that blocks leukotriene D4 receptors, reducing bronchoconstriction and inflammation. They are used together because inhaled corticosteroids reduce chronic airway inflammation, while leukotriene receptor antagonists provide additional bronchodilation and anti-inflammatory effects, particularly in exercise-induced and aspirin-exacerbated asthma."
+            },
+            {
+              "stem": "3. A 50-year-old man with GERD is prescribed omeprazole. Explain the mechanism of action of omeprazole and describe two potential long-term adverse effects.",
+              "modelAnswer": "Omeprazole is a proton pump inhibitor that irreversibly inhibits the H+/K+ ATPase enzyme in parietal cells, reducing gastric acid secretion. Long-term use may lead to increased risk of osteoporosis due to reduced calcium absorption, and increased risk of Clostridioides difficile infection due to altered gut microbiota."
+            },
+            {
+              "stem": "4. A 40-year-old woman with IBS-D is prescribed loperamide. Explain the mechanism of action of loperamide and describe two potential adverse effects.",
+              "modelAnswer": "Loperamide is a synthetic opioid that acts on mu opioid receptors in the intestinal smooth muscle, reducing intestinal motility and increasing transit time. Adverse effects include constipation and abdominal cramping. Due to its opioid-like effects, it should be used with caution in patients with active inflammatory bowel disease or severe hepatic impairment."
+            },
+            {
+              "stem": "5. A 60-year-old man with H. pylori-positive duodenal ulcer is prescribed a triple therapy regimen. Identify the three drugs typically used in this regimen and explain the rationale for each.",
+              "modelAnswer": "Triple therapy typically includes: (1) A proton pump inhibitor (e.g., omeprazole) to reduce gastric acid secretion, creating a favorable environment for antibiotic action; (2) Amoxicillin, a broad-spectrum antibiotic that eradicates H. pylori; (3) Clarithromycin, a macrolide antibiotic that also targets H. pylori. This combination is effective in eradicating H. pylori, promoting ulcer healing, and reducing recurrence."
+            },
+            {
+              "stem": "6. A 35-year-old woman with asthma is prescribed theophylline. Explain the mechanism of action of theophylline and describe why serum theophylline levels must be monitored.",
+              "modelAnswer": "Theophylline is a methylxanthine that inhibits phosphodiesterase enzymes, increasing intracellular cAMP levels, leading to bronchodilation and anti-inflammatory effects. It also acts as an adenosine receptor antagonist. Serum levels must be monitored due to its narrow therapeutic index (5-15 mg/L), as levels above this range can cause toxicity (e.g., seizures, arrhythmias), while subtherapeutic levels may lead to inadequate symptom control."
+            },
+            {
+              "stem": "7. A 55-year-old man with chronic constipation is prescribed lactulose. Explain the mechanism of action of lactulose and describe two potential adverse effects.",
+              "modelAnswer": "Lactulose is an osmotic laxative that increases water retention in the colon by drawing water into the lumen via osmotic effects, softening stool and promoting bowel movements. Adverse effects include flatulence and abdominal cramping. Overuse can lead to electrolyte imbalances, particularly in elderly or debilitated patients."
+            },
+            {
+              "stem": "8. A 40-year-old woman with motion sickness is prescribed hyoscine (scopolamine). Explain the mechanism of action of hyoscine and describe two potential adverse effects.",
+              "modelAnswer": "Hyoscine is a muscarinic antagonist that blocks muscarinic M1 receptors in the vestibular system, reducing motion sickness. Adverse effects include dry mouth and drowsiness. It may also cause blurred vision, urinary retention, and constipation due to its antimuscarinic properties."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "1. A 55-year-old man with COPD is admitted to the hospital with an acute exacerbation. He is prescribed inhaled salbutamol, ipratropium bromide, and oral prednisolone. \n\na) Explain the mechanism of action of each of the three drugs prescribed. (6 marks)\nb) Describe the rationale for using a combination of salbutamol and ipratropium bromide in COPD. (3 marks)\nc) Outline the potential adverse effects of oral prednisolone in this patient. (3 marks)\nd) The patient is discharged on inhaled fluticasone and formoterol. Explain the mechanism of action of each drug and why they are used together in COPD management. (3 marks)",
+              "modelAnswer": "a) Mechanism of action:\n- Salbutamol: A short-acting beta-2 agonist that stimulates beta-2 adrenergic receptors in bronchial smooth muscle, leading to bronchodilation via increased cAMP production.\n- Ipratropium bromide: A muscarinic antagonist that blocks M3 receptors in bronchial smooth muscle, reducing vagally-mediated bronchoconstriction by inhibiting acetylcholine-induced smooth muscle contraction.\n- Prednisolone: A systemic corticosteroid that reduces airway inflammation by inhibiting the production of pro-inflammatory cytokines (e.g., IL-1, TNF-alpha) and mediators (e.g., prostaglandins, leukotrienes), and by suppressing immune cell activation and migration.\n\nb) Rationale for combination:\nSalbutamol and ipratropium bromide act via different mechanisms to produce bronchodilation. Salbutamol provides rapid onset of action, while ipratropium has a slower onset but longer duration. Their combined use provides additive or synergistic bronchodilation, improving symptom control in COPD with fewer systemic adverse effects than using higher doses of either drug alone.\n\nc) Adverse effects of oral prednisolone:\n- Systemic: Hyperglycemia (especially in diabetics), hypertension, fluid retention, weight gain, and increased risk of infections.\n- Gastrointestinal: Peptic ulcer disease, gastritis, and increased risk of GI bleeding (especially with NSAIDs).\n- Musculoskeletal: Osteoporosis, muscle weakness, and avascular necrosis.\n- Ophthalmic: Cataracts and glaucoma.\n- Psychiatric: Mood changes, insomnia, and psychosis.\n- Endocrine: Adrenal suppression, Cushing's syndrome.\n\nd) Mechanism of action and rationale for combination:\n- Fluticasone: An inhaled corticosteroid that reduces airway inflammation by inhibiting pro-inflammatory cytokine production and immune cell activation.\n- Formoterol: A long-acting beta-2 agonist that provides sustained bronchodilation by stimulating beta-2 receptors in bronchial smooth muscle.\nThey are used together because inhaled corticosteroids reduce chronic airway inflammation, while long-acting beta-2 agonists provide sustained bronchodilation. This combination improves lung function, reduces exacerbations, and is more effective than either drug alone in COPD management."
+            },
+            {
+              "stem": "2. A 40-year-old woman with peptic ulcer disease is prescribed omeprazole and amoxicillin for H. pylori eradication. She also has GERD and is advised to take antacids as needed. \n\na) Explain the mechanism of action of omeprazole and amoxicillin in this patient. (4 marks)\nb) Describe the rationale for using omeprazole in H. pylori eradication therapy. (3 marks)\nc) Outline the potential drug interactions between omeprazole and antacids. (3 marks)\nd) Describe the mechanism of action of antacids and provide two examples. (3 marks)\ne) Explain why antacids should be taken separately from other medications. (2 marks)",
+              "modelAnswer": "a) Mechanism of action:\n- Omeprazole: A proton pump inhibitor that irreversibly inhibits the H+/K+ ATPase enzyme in parietal cells, reducing gastric acid secretion by up to 95%.\n- Amoxicillin: A broad-spectrum beta-lactam antibiotic that inhibits bacterial cell wall synthesis, leading to bacterial cell lysis and death. It is effective against H. pylori due to its ability to penetrate the gastric mucus layer.\n\nb) Rationale for using omeprazole in H. pylori eradication:\nOmeprazole reduces gastric acid secretion, increasing the pH of the gastric environment. This creates a favorable condition for amoxicillin to act against H. pylori, as the bacteria are more susceptible to antibiotics in a less acidic environment. Additionally, omeprazole has direct antimicrobial effects against H. pylori and may enhance the efficacy of antibiotics by reducing bacterial adherence to the gastric mucosa.\n\nc) Potential drug interactions between omeprazole and antacids:\n- Antacids can reduce the absorption of omeprazole by increasing the gastric pH, which may decrease its bioavailability. Omeprazole should be taken at least 30-60 minutes before antacids to minimize this interaction.\n- Antacids containing aluminum or magnesium can bind to omeprazole in the gastrointestinal tract, reducing its absorption. Separating administration by 2 hours can mitigate this effect.\n\nd) Mechanism of action of antacids and examples:\nAntacids neutralize gastric acid by reacting with hydrochloric acid in the stomach lumen, forming water and a salt. This increases the pH of the gastric contents, reducing acidity and providing symptomatic relief in GERD and peptic ulcer disease.\nExamples:\n- Aluminum hydroxide: Forms aluminum chloride and water, providing slow but sustained acid neutralization.\n- Magnesium hydroxide: Forms magnesium chloride and water, providing rapid acid neutralization but may cause diarrhea.\n\ne) Why antacids should be taken separately from other medications:\nAntacids can bind to and reduce the absorption of other medications by forming insoluble complexes in the gastrointestinal tract. To minimize this interaction, antacids should be taken at least 2 hours before or after other medications. This is particularly important for drugs with a narrow therapeutic index or those that require acidic conditions for absorption (e.g., ketoconazole, digoxin)."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

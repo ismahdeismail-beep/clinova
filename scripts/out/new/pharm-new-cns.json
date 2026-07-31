@@ -1,0 +1,1306 @@
+{
+  "pharm-new-cns": {
+    "1": {
+      "title": "Central Nervous System Pharmacology",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Which of the following drugs does NOT enhance GABAergic neurotransmission via the GABA-A receptor complex?",
+              "options": [
+                "Diazepam",
+                "Phenobarbitone",
+                "Ethanol",
+                "Baclofen"
+              ],
+              "answer": "Baclofen",
+              "explanation": "Baclofen is a selective GABA-B receptor agonist and does not act at the GABA-A receptor complex."
+            },
+            {
+              "stem": "Which statement about GABAergic neurotransmission is INCORRECT?",
+              "options": [
+                "GABA opens receptor-operated chloride channels leading to hyperpolarization and reduced likelihood of epileptic firing.",
+                "Benzodiazepines and barbiturates bind at distinct allosteric sites on the GABA-A receptor to enhance GABA activity.",
+                "Vigabatrin irreversibly inhibits GABA transaminase, increasing synaptic GABA levels.",
+                "Tiagabine inhibits presynaptic GABA reuptake, prolonging synaptic GABA availability.",
+                "Diazepam may cause respiratory depression in overdose."
+              ],
+              "answer": "Benzodiazepines and barbiturates bind at distinct allosteric sites on the GABA-A receptor to enhance GABA activity.",
+              "explanation": "Benzodiazepines and barbiturates bind at different allosteric sites on the GABA-A receptor but both enhance GABAergic activity."
+            },
+            {
+              "stem": "A 45-year-old male with chronic alcohol dependence presents with elevated liver enzymes and peripheral neuropathy. Which complication is NOT directly attributable to chronic alcohol use?",
+              "options": [
+                "Angina",
+                "Heart failure",
+                "Pulmonary hypertension",
+                "CNS tumors",
+                "Renal impairment"
+              ],
+              "answer": "Angina",
+              "explanation": "Chronic alcohol use is not a known cause of angina; it is associated with cardiomyopathy and arrhythmias."
+            },
+            {
+              "stem": "Which drug is NOT effective for the treatment of absence seizures?",
+              "options": [
+                "Ethosuximide",
+                "Clonazepam",
+                "Clobazam",
+                "Valproate",
+                "Phenytoin"
+              ],
+              "answer": "Phenytoin",
+              "explanation": "Phenytoin is ineffective for absence seizures and may worsen them; ethosuximide is first-line."
+            },
+            {
+              "stem": "Which drug is NOT recommended for the treatment of simple partial seizures?",
+              "options": [
+                "Valproic acid",
+                "Carbamazepine",
+                "Felbamate",
+                "Phenytoin",
+                "Vigabatrin"
+              ],
+              "answer": "Vigabatrin",
+              "explanation": "Vigabatrin is reserved for refractory complex partial seizures due to risk of irreversible visual field defects."
+            },
+            {
+              "stem": "A patient presents with a generalized tonic-clonic seizure lasting 3 minutes. Which action is contraindicated?",
+              "options": [
+                "Call for emergency help if the seizure persists beyond 5 minutes.",
+                "Insert a tongue depressor to prevent tongue biting.",
+                "Turn the patient’s head to the side to prevent aspiration.",
+                "Ease the patient to the floor and loosen restrictive clothing.",
+                "b and c"
+              ],
+              "answer": "Insert a tongue depressor to prevent tongue biting.",
+              "explanation": "Inserting objects into the mouth during a seizure is contraindicated due to risk of oral trauma."
+            },
+            {
+              "stem": "Which principle is NOT part of optimal antiepileptic drug therapy?",
+              "options": [
+                "Elimination of polypharmacy where possible.",
+                "Dosage adjustment should prioritize seizure control over adverse effects.",
+                "Accurate diagnosis is essential for drug selection.",
+                "Patient pharmacokinetic profiles should be monitored during titration.",
+                "Add a second antiepileptic drug if the first fails to achieve adequate control."
+              ],
+              "answer": "Dosage adjustment should prioritize seizure control over adverse effects.",
+              "explanation": "Dosage should balance seizure control with tolerability; adverse effects must be considered."
+            },
+            {
+              "stem": "Dantrolene sodium reduces skeletal muscle tone primarily by:",
+              "options": [
+                "Reducing acetylcholine release from motor nerve endings.",
+                "Suppressing spinal polysynaptic reflexes.",
+                "Inhibiting the generation of muscle action potentials.",
+                "Reducing calcium release from the sarcoplasmic reticulum in muscle fibers.",
+                "All of the above."
+              ],
+              "answer": "Reducing calcium release from the sarcoplasmic reticulum in muscle fibers.",
+              "explanation": "Dantrolene inhibits ryanodine receptor-mediated calcium release from the sarcoplasmic reticulum."
+            },
+            {
+              "stem": "Which antiepileptic drug is most likely to impair learning and memory in children?",
+              "options": [
+                "Valproic acid",
+                "Phenobarbitone",
+                "Phenytoin",
+                "Ethosuximide",
+                "Carbamazepine"
+              ],
+              "answer": "Phenobarbitone",
+              "explanation": "Phenobarbitone is associated with cognitive impairment, particularly in pediatric patients."
+            },
+            {
+              "stem": "The characteristic pharmacokinetic feature of phenytoin is:",
+              "options": [
+                "High first-pass metabolism.",
+                "Non-saturable kinetics at therapeutic concentrations.",
+                "Capacity-limited metabolism that saturates at higher concentrations.",
+                "Extrahepatic metabolism.",
+                "Linear pharmacokinetics across all dose ranges."
+              ],
+              "answer": "Capacity-limited metabolism that saturates at higher concentrations.",
+              "explanation": "Phenytoin exhibits Michaelis-Menten kinetics, with saturation at therapeutic concentrations."
+            },
+            {
+              "stem": "Which adverse effect of phenytoin is directly related to high plasma drug concentrations?",
+              "options": [
+                "Ataxia",
+                "Hirsutism",
+                "Gingival hyperplasia",
+                "All of the above",
+                "None of the above"
+              ],
+              "answer": "All of the above",
+              "explanation": "Ataxia, hirsutism, and gingival hyperplasia are dose-related adverse effects of phenytoin."
+            },
+            {
+              "stem": "Which muscle relaxant is indicated for spasticity associated with upper motor neuron paralysis?",
+              "options": [
+                "Vecuronium",
+                "Succinylcholine",
+                "Chlorzoxazone",
+                "Baclofen",
+                "Rocuronium"
+              ],
+              "answer": "Baclofen",
+              "explanation": "Baclofen is a centrally acting muscle relaxant used for spasticity due to upper motor neuron lesions."
+            },
+            {
+              "stem": "Diazepam is indicated for all EXCEPT:",
+              "options": [
+                "Generalized tonic-clonic seizures",
+                "Febrile convulsions",
+                "Cardiac catheterization",
+                "Status epilepticus",
+                "Generalized anxiety disorder"
+              ],
+              "answer": "Cardiac catheterization",
+              "explanation": "Diazepam is not used for procedural sedation in cardiac catheterization; midazolam is preferred."
+            },
+            {
+              "stem": "Which principle does NOT apply to the use of hypnotics?",
+              "options": [
+                "Hypnotics may be used intermittently for 2–3 weeks in short-term insomnia due to emotional stress.",
+                "In chronic insomnia, hypnotics should be used regularly to maintain efficacy.",
+                "All hypnotics aggravate sleep apnea.",
+                "A hypnotic with slow elimination is preferred in patients with early morning awakening.",
+                "Benzodiazepine receptor agonists should be tapered to avoid withdrawal."
+              ],
+              "answer": "In chronic insomnia, hypnotics should be used regularly to maintain efficacy.",
+              "explanation": "Chronic hypnotic use should be avoided due to tolerance, dependence, and adverse effects."
+            },
+            {
+              "stem": "Which drug displaces phenytoin from plasma protein binding and inhibits its metabolism?",
+              "options": [
+                "Carbamazepine",
+                "Sodium valproate",
+                "Cimetidine",
+                "Chloramphenicol",
+                "Rifampicin"
+              ],
+              "answer": "Sodium valproate",
+              "explanation": "Valproate displaces phenytoin from plasma proteins and inhibits its hepatic metabolism."
+            },
+            {
+              "stem": "Which antiepileptic drug is also effective in manic-depressive illness?",
+              "options": [
+                "Ethosuximide",
+                "Primidone",
+                "Phenobarbitone",
+                "Carbamazepine",
+                "Gabapentin"
+              ],
+              "answer": "Carbamazepine",
+              "explanation": "Carbamazepine is approved for bipolar disorder and has mood-stabilizing properties."
+            },
+            {
+              "stem": "Sodium valproate exerts its antiepileptic effects by:",
+              "options": [
+                "Prolonging neuronal sodium channel inactivation.",
+                "Attenuating T-type calcium currents in neurons.",
+                "Inhibiting GABA transaminase.",
+                "a and c",
+                "All of the above."
+              ],
+              "answer": "All of the above.",
+              "explanation": "Valproate blocks sodium channels, reduces T-type calcium currents, and inhibits GABA degradation."
+            },
+            {
+              "stem": "Which drug is used therapeutically for attention deficit hyperactivity disorder (ADHD) in children?",
+              "options": [
+                "Tyramine",
+                "Methylphenidate",
+                "Cocaine",
+                "Phenoxybenzamine",
+                "Ephedrine"
+              ],
+              "answer": "Methylphenidate",
+              "explanation": "Methylphenidate is a first-line stimulant for ADHD, enhancing dopamine and norepinephrine activity."
+            },
+            {
+              "stem": "Cocaine produces its CNS and peripheral effects primarily by:",
+              "options": [
+                "Activating α2-adrenergic receptors, increasing norepinephrine release.",
+                "Blocking norepinephrine and dopamine reuptake via the amine pump.",
+                "Directly activating postsynaptic α- and β-adrenergic receptors.",
+                "Inhibiting monoamine oxidase, increasing intraneuronal norepinephrine levels.",
+                "Preventing norepinephrine exocytosis."
+              ],
+              "answer": "Blocking norepinephrine and dopamine reuptake via the amine pump.",
+              "explanation": "Cocaine inhibits monoamine transporters, leading to increased synaptic catecholamines."
+            },
+            {
+              "stem": "Carbidopa is co-administered with levodopa to:",
+              "options": [
+                "Increase levodopa absorption in the gut.",
+                "Inhibit peripheral dopa decarboxylase, increasing levodopa availability to the brain.",
+                "Stimulate dopamine receptors directly.",
+                "Inhibit catechol-O-methyltransferase (COMT) to prevent levodopa metabolism.",
+                "Enhance levodopa conversion to dopamine in the periphery."
+              ],
+              "answer": "Inhibit peripheral dopa decarboxylase, increasing levodopa availability to the brain.",
+              "explanation": "Carbidopa inhibits peripheral dopa decarboxylase, reducing levodopa metabolism outside the CNS."
+            },
+            {
+              "stem": "Which drug inhibits catechol-O-methyltransferase (COMT) to increase levodopa bioavailability?",
+              "options": [
+                "Donepezil",
+                "Entacapone",
+                "Selegiline",
+                "Tacrine",
+                "Trihexyphenidyl"
+              ],
+              "answer": "Entacapone",
+              "explanation": "Entacapone is a selective COMT inhibitor used to prolong levodopa effects in Parkinson disease."
+            },
+            {
+              "stem": "Which adverse effect is NOT associated with chronic benzodiazepine use?",
+              "options": [
+                "Tolerance",
+                "Dependence",
+                "Paradoxical excitation",
+                "Hypertension",
+                "Cognitive impairment"
+              ],
+              "answer": "Hypertension",
+              "explanation": "Benzodiazepines may cause hypotension or orthostatic hypotension, not hypertension."
+            },
+            {
+              "stem": "Which anticonvulsant is contraindicated in patients with a history of pancreatitis?",
+              "options": [
+                "Carbamazepine",
+                "Valproate",
+                "Phenytoin",
+                "Lamotrigine",
+                "Ethosuximide"
+              ],
+              "answer": "Valproate",
+              "explanation": "Valproate is associated with pancreatitis, particularly in pediatric patients."
+            },
+            {
+              "stem": "Which drug is a non-benzodiazepine hypnotic with a short half-life and minimal residual sedation?",
+              "options": [
+                "Zolpidem",
+                "Diazepam",
+                "Flurazepam",
+                "Chlordiazepoxide",
+                "Temazepam"
+              ],
+              "answer": "Zolpidem",
+              "explanation": "Zolpidem is a Z-drug with a short half-life and minimal next-day sedation."
+            },
+            {
+              "stem": "Which opioid analgesic is associated with serotonin syndrome when combined with serotonergic drugs?",
+              "options": [
+                "Morphine",
+                "Pethidine",
+                "Methadone",
+                "Fentanyl",
+                "Codeine"
+              ],
+              "answer": "Pethidine",
+              "explanation": "Pethidine inhibits serotonin reuptake and may precipitate serotonin syndrome when combined with SSRIs or MAOIs."
+            },
+            {
+              "stem": "Which drug is used to reverse benzodiazepine overdose?",
+              "options": [
+                "Naloxone",
+                "Flumazenil",
+                "Naltrexone",
+                "Atropine",
+                "Physostigmine"
+              ],
+              "answer": "Flumazenil",
+              "explanation": "Flumazenil is a competitive benzodiazepine receptor antagonist used to reverse overdose."
+            },
+            {
+              "stem": "Which antiemetic acts as a selective 5-HT3 receptor antagonist?",
+              "options": [
+                "Metoclopramide",
+                "Prochlorperazine",
+                "Ondansetron",
+                "Dimenhydrinate",
+                "Scopolamine"
+              ],
+              "answer": "Ondansetron",
+              "explanation": "Ondansetron selectively blocks 5-HT3 receptors, preventing chemotherapy-induced nausea."
+            },
+            {
+              "stem": "Which drug is a dopamine agonist used in Parkinson disease?",
+              "options": [
+                "Levodopa",
+                "Carbidopa",
+                "Selegiline",
+                "Pramipexole",
+                "Amantadine"
+              ],
+              "answer": "Pramipexole",
+              "explanation": "Pramipexole is a non-ergot dopamine agonist used in Parkinson disease."
+            },
+            {
+              "stem": "Which drug is used for alcohol dependence by inhibiting aldehyde dehydrogenase?",
+              "options": [
+                "Naltrexone",
+                "Disulfiram",
+                "Acamprosate",
+                "Benzodiazepines",
+                "Naloxone"
+              ],
+              "answer": "Disulfiram",
+              "explanation": "Disulfiram inhibits aldehyde dehydrogenase, causing acetaldehyde accumulation and aversive reactions."
+            },
+            {
+              "stem": "Which triptan is contraindicated in patients with ischemic heart disease?",
+              "options": [
+                "Sumatriptan",
+                "Naratriptan",
+                "Eletriptan",
+                "All triptans",
+                "None of the triptans"
+              ],
+              "answer": "All triptans",
+              "explanation": "Triptans are contraindicated in patients with ischemic heart disease due to vasoconstrictive effects."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 30-year-old female patient presents with status epilepticus. She is currently on no antiepileptic drugs.",
+              "modelAnswer": {
+                "a": "Administer intravenous lorazepam (0.1 mg/kg, max 4 mg) or diazepam (0.15–0.2 mg/kg). Mode of action: Enhances GABA-A receptor activity via allosteric modulation, increasing chloride ion influx and neuronal hyperpolarization, reducing seizure activity. (3 marks)",
+                "b": "Initiate maintenance therapy with oral levetiracetam or phenytoin (or valproate if no contraindications). (1 mark)",
+                "c": "Monitor for sedation, respiratory depression, hypotension, and injection-site reactions. Phenytoin may cause gingival hyperplasia, hirsutism, or ataxia. Levetiracetam may cause behavioral changes or irritability. (2 marks)"
+              }
+            },
+            {
+              "stem": "A 70-year-old Kenyan patient presents with hypertension (BP 160/95 mmHg) and newly diagnosed Parkinson disease.",
+              "modelAnswer": {
+                "a": "Target BP reduction to <140/90 mmHg (or <130/80 mmHg if diabetes or renal disease present). (1 mark)",
+                "b": "Start amlodipine or hydrochlorothiazide (avoid beta-blockers unless compelling indication). (1 mark)",
+                "c": "Start levodopa-carbidopa combination therapy. (1 mark)",
+                "d": "Amlodipine: Blocks L-type calcium channels, reducing vascular smooth muscle contraction. Levodopa-carbidopa: Levodopa crosses BBB and converts to dopamine; carbidopa inhibits peripheral dopa decarboxylase, increasing levodopa availability to the brain. (4 marks)",
+                "e": "Amlodipine: Peripheral edema, flushing, headache, dizziness. Levodopa-carbidopa: Nausea, orthostatic hypotension, dyskinesias, psychosis, wearing-off phenomenon. (4 marks)"
+              }
+            },
+            {
+              "stem": "A patient is diagnosed with chronic insomnia.",
+              "modelAnswer": {
+                "a": "Prescribe zolpidem (non-benzodiazepine hypnotic) or melatonin (if circadian rhythm disorder). (1 mark)",
+                "b": "Zolpidem: Selective agonist at the benzodiazepine-1 (BZ1) receptor subtype on GABA-A receptors, enhancing inhibitory neurotransmission. (2 marks)",
+                "c": "Daytime drowsiness, dizziness, headache, paradoxical excitation, sleep-related behaviors (e.g., sleepwalking), tolerance with prolonged use. (3 marks)"
+              }
+            },
+            {
+              "stem": "GABA is a major inhibitory neurotransmitter in the CNS. Describe four distinct mechanisms by which drugs can target GABAergic neurotransmission, providing an example for each.",
+              "modelAnswer": {
+                "answer": "1) Enhance GABA-A receptor activity via allosteric modulation (e.g., benzodiazepines like diazepam). 2) Directly activate GABA-B receptors (e.g., baclofen). 3) Inhibit GABA transaminase, increasing synaptic GABA (e.g., vigabatrin). 4) Inhibit GABA reuptake, prolonging synaptic GABA (e.g., tiagabine). (4 marks)"
+              }
+            },
+            {
+              "stem": "Several anticonvulsants are used in the management of bipolar disorder. Provide three examples and describe their mechanisms of action.",
+              "modelAnswer": {
+                "answer": "1) Valproate: Blocks voltage-gated sodium channels, attenuates T-type calcium currents, and increases GABA synthesis. 2) Carbamazepine: Blocks voltage-gated sodium channels, reducing neuronal excitability. 3) Lamotrigine: Blocks voltage-gated sodium channels and inhibits glutamate release. (6 marks)"
+              }
+            },
+            {
+              "stem": "Provide two examples of hallucinogens and describe their mechanisms of action.",
+              "modelAnswer": {
+                "answer": "1) LSD (lysergic acid diethylamide): Partial agonist at 5-HT2A receptors, disrupting cortical and thalamic processing. 2) Psilocybin: Metabolized to psilocin, a 5-HT2A receptor agonist, altering perception and cognition. (4 marks)"
+              }
+            },
+            {
+              "stem": "What are the pharmacological actions of methylxanthines (e.g., caffeine)?",
+              "modelAnswer": {
+                "answer": "1) CNS stimulation: Antagonism of adenosine A1 and A2A receptors, increasing neuronal firing and alertness. 2) Cardiac stimulation: Positive chronotropic and inotropic effects via adenosine receptor blockade. 3) Smooth muscle relaxation: Bronchodilation (e.g., theophylline) and vasodilation. (3 marks)"
+              }
+            },
+            {
+              "stem": "A 45-year-old male with a history of opioid dependence is admitted for elective surgery. Outline the perioperative management of his pain and risk of withdrawal.",
+              "modelAnswer": {
+                "answer": "1) Continue methadone or buprenorphine at pre-admission dose to prevent withdrawal. 2) Use multimodal analgesia: non-opioid analgesics (paracetamol, NSAIDs) and regional anesthesia where possible. 3) If additional opioid analgesia is required, use short-acting opioids (e.g., fentanyl) at reduced doses, with close monitoring for respiratory depression. 4) Avoid partial agonists (e.g., pentazocine) due to risk of precipitating withdrawal. 5) Postoperatively, resume methadone/buprenorphine promptly and titrate additional analgesia as needed. (5 marks)"
+              }
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Describe DIAZEPAM in terms of:",
+              "modelAnswer": {
+                "a) Mode of action": "Benzodiazepine that enhances GABA-A receptor activity via allosteric modulation at the benzodiazepine binding site, increasing chloride ion influx and neuronal hyperpolarization, reducing neuronal excitability. (2 marks)",
+                "b) Clinical applications": "1) Anxiety disorders (short-term). 2) Insomnia (short-term). 3) Seizure disorders (status epilepticus, febrile convulsions, myoclonic seizures). 4) Muscle spasms (e.g., tetanus). 5) Alcohol withdrawal (prevention of delirium tremens). 6) Premedication for medical/surgical procedures (e.g., endoscopy). (5 marks)",
+                "c) Side effects": "Drowsiness, sedation, confusion, cognitive impairment, paradoxical excitation, respiratory depression (especially with opioids or alcohol), dependence, withdrawal symptoms (anxiety, insomnia, seizures), tolerance. (3 marks)",
+                "d) Drug-drug interactions": "1) Enhanced sedation with alcohol, opioids, antipsychotics, or tricyclic antidepressants. 2) CYP3A4 inhibitors (e.g., ketoconazole) may increase diazepam levels. 3) CYP3A4 inducers (e.g., rifampicin) may decrease diazepam levels. 4) Additive respiratory depression with other CNS depressants. (3 marks)",
+                "e) Contraindications": "1) Severe respiratory insufficiency (e.g., COPD exacerbation). 2) Severe hepatic impairment (risk of encephalopathy). 3) Myasthenia gravis. 4) Acute narrow-angle glaucoma. 5) History of substance abuse (risk of dependence). 6) Pregnancy (Category D; risk of neonatal withdrawal or floppy infant syndrome). (3 marks)",
+                "f) Pharmacokinetics": "1) Oral bioavailability: ~100%. 2) Onset of action: 30–60 minutes (oral), 1–5 minutes (IV). 3) Duration of action: 6–8 hours (metabolites have longer half-lives). 4) Metabolism: Hepatic via CYP3A4 to active metabolites (desmethyldiazepam, oxazepam). 5) Elimination: Renal (primarily as glucuronides). 6) Protein binding: ~99%. (4 marks)"
+              }
+            },
+            {
+              "stem": "Compare and contrast BACLOFEN and DANTROLENE in terms of:",
+              "modelAnswer": {
+                "a) Mode of action": "Baclofen: Selective GABA-B receptor agonist, reducing excitatory neurotransmitter release in the spinal cord and brain. Dantrolene: Direct-acting skeletal muscle relaxant; inhibits ryanodine receptor-mediated calcium release from the sarcoplasmic reticulum, reducing muscle contraction. (4 marks)",
+                "b) Clinical applications": "Baclofen: Spasticity due to upper motor neuron lesions (e.g., multiple sclerosis, spinal cord injury, cerebral palsy), trigeminal neuralgia. Dantrolene: Malignant hyperthermia, neuroleptic malignant syndrome, spasticity (less commonly used due to hepatotoxicity). (4 marks)",
+                "c) Side effects": "Baclofen: Drowsiness, dizziness, confusion, nausea, hypotension, withdrawal symptoms (seizures, hallucinations), urinary retention. Dantrolene: Muscle weakness, hepatotoxicity (monitor LFTs), diarrhea, pleural effusion, photosensitivity. (6 marks)",
+                "d) Contraindications": "Baclofen: Hypersensitivity, severe renal impairment. Dantrolene: Active hepatic disease, severe cardiac or pulmonary dysfunction. (3 marks)",
+                "e) Drug-drug interactions": "Baclofen: Enhanced CNS depression with alcohol or benzodiazepines; additive hypotensive effects with antihypertensives. Dantrolene: Increased risk of hepatotoxicity with estrogens or other hepatotoxic drugs; may potentiate vecuronium-induced neuromuscular blockade. (3 marks)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Central Nervous System Pharmacology",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 55-year-old male with chronic insomnia is prescribed a hypnotic agent. Which of the following drugs is most likely to cause rebound insomnia upon abrupt discontinuation?",
+              "options": [
+                "Zolpidem",
+                "Phenobarbital",
+                "Diazepam",
+                "Trazodone"
+              ],
+              "answer": "Zolpidem",
+              "explanation": "Zolpidem is a non-benzodiazepine hypnotic (Z-drug) with a short half-life, and abrupt discontinuation can lead to rebound insomnia due to its rapid offset."
+            },
+            {
+              "stem": "Which of the following benzodiazepines has the longest elimination half-life, making it suitable for long-term management of generalized anxiety disorder?",
+              "options": [
+                "Lorazepam",
+                "Midazolam",
+                "Clonazepam",
+                "Triazolam"
+              ],
+              "answer": "Clonazepam",
+              "explanation": "Clonazepam has a long elimination half-life (~30-40 hours), making it suitable for long-term anxiolytic therapy."
+            },
+            {
+              "stem": "A 30-year-old female presents with symptoms of opioid withdrawal after abrupt cessation of chronic oxycodone use. Which of the following agents is most appropriate for managing her withdrawal symptoms?",
+              "options": [
+                "Buprenorphine",
+                "Naloxone",
+                "Methadone",
+                "Naltrexone"
+              ],
+              "answer": "Buprenorphine",
+              "explanation": "Buprenorphine is a partial opioid agonist used for opioid dependence and withdrawal management due to its ability to reduce withdrawal symptoms while blocking full agonist effects."
+            },
+            {
+              "stem": "Which of the following adverse effects is most commonly associated with long-term use of typical antipsychotics?",
+              "options": [
+                "Hyperprolactinemia",
+                "Weight gain",
+                "QT prolongation",
+                "Neuroleptic malignant syndrome"
+              ],
+              "answer": "Hyperprolactinemia",
+              "explanation": "Typical antipsychotics (e.g., haloperidol) block dopamine D2 receptors in the pituitary, leading to increased prolactin secretion and hyperprolactinemia."
+            },
+            {
+              "stem": "A 45-year-old male with bipolar disorder is stabilized on lithium. Which of the following electrolyte abnormalities is most likely to increase his risk of lithium toxicity?",
+              "options": [
+                "Hypernatremia",
+                "Hyponatremia",
+                "Hyperkalemia",
+                "Hypokalemia"
+              ],
+              "answer": "Hyponatremia",
+              "explanation": "Lithium is reabsorbed in the proximal renal tubule, and hyponatremia increases lithium reabsorption, raising plasma lithium levels and risk of toxicity."
+            },
+            {
+              "stem": "Which of the following antiepileptic drugs is most likely to cause Stevens-Johnson syndrome as a severe idiosyncratic reaction?",
+              "options": [
+                "Levetiracetam",
+                "Lamotrigine",
+                "Topiramate",
+                "Gabapentin"
+              ],
+              "answer": "Lamotrigine",
+              "explanation": "Lamotrigine has a well-documented association with Stevens-Johnson syndrome, particularly when titrated too rapidly or combined with valproate."
+            },
+            {
+              "stem": "A 60-year-old male with Parkinson’s disease develops hallucinations while on levodopa-carbidopa therapy. Which of the following agents is most appropriate to manage his hallucinations?",
+              "options": [
+                "Quetiapine",
+                "Haloperidol",
+                "Risperidone",
+                "Chlorpromazine"
+              ],
+              "answer": "Quetiapine",
+              "explanation": "Quetiapine is an atypical antipsychotic with low D2 receptor affinity, making it less likely to worsen Parkinsonian motor symptoms while managing hallucinations."
+            },
+            {
+              "stem": "Which of the following drugs acts by inhibiting the reuptake of both serotonin and norepinephrine?",
+              "options": [
+                "Fluoxetine",
+                "Venlafaxine",
+                "Bupropion",
+                "Mirtazapine"
+              ],
+              "answer": "Venlafaxine",
+              "explanation": "Venlafaxine is a serotonin-norepinephrine reuptake inhibitor (SNRI), increasing synaptic levels of both neurotransmitters."
+            },
+            {
+              "stem": "A 25-year-old female with migraine is prescribed sumatriptan. Which of the following mechanisms best explains its therapeutic effect?",
+              "options": [
+                "5-HT1B/1D receptor agonist",
+                "5-HT2 receptor antagonist",
+                "Dopamine D2 receptor antagonist",
+                "NMDA receptor antagonist"
+              ],
+              "answer": "5-HT1B/1D receptor agonist",
+              "explanation": "Sumatriptan is a 5-HT1B/1D receptor agonist that causes vasoconstriction of intracranial blood vessels and inhibits trigeminal nerve activation."
+            },
+            {
+              "stem": "Which of the following drugs is most likely to cause extrapyramidal symptoms when used in high doses?",
+              "options": [
+                "Clozapine",
+                "Olanzapine",
+                "Risperidone",
+                "Quetiapine"
+              ],
+              "answer": "Risperidone",
+              "explanation": "Risperidone has a high D2 receptor affinity, increasing the risk of extrapyramidal symptoms (e.g., parkinsonism, akathisia) at higher doses."
+            },
+            {
+              "stem": "A 70-year-old male with a history of alcohol dependence is admitted for alcohol withdrawal. Which of the following agents is most appropriate for preventing withdrawal seizures?",
+              "options": [
+                "Lorazepam",
+                "Diazepam",
+                "Chlordiazepoxide",
+                "Phenobarbital"
+              ],
+              "answer": "Chlordiazepoxide",
+              "explanation": "Chlordiazepoxide is a long-acting benzodiazepine commonly used in alcohol withdrawal due to its efficacy in preventing seizures and its gradual tapering profile."
+            },
+            {
+              "stem": "Which of the following drugs is a dopamine agonist used in the treatment of Parkinson’s disease?",
+              "options": [
+                "Selegiline",
+                "Entacapone",
+                "Pramipexole",
+                "Amantadine"
+              ],
+              "answer": "Pramipexole",
+              "explanation": "Pramipexole is a non-ergot dopamine agonist that directly stimulates D2 receptors, improving motor symptoms in Parkinson’s disease."
+            },
+            {
+              "stem": "A 35-year-old female with generalized anxiety disorder is prescribed buspirone. Which of the following statements about buspirone is correct?",
+              "options": [
+                "It has a rapid onset of action similar to benzodiazepines.",
+                "It acts as a 5-HT1A partial agonist.",
+                "It is associated with significant sedation and cognitive impairment.",
+                "It is effective in managing acute anxiety episodes."
+              ],
+              "answer": "It acts as a 5-HT1A partial agonist.",
+              "explanation": "Buspirone is a 5-HT1A partial agonist with a slow onset of action (1-2 weeks) and minimal sedation, making it unsuitable for acute anxiety."
+            },
+            {
+              "stem": "Which of the following antiepileptic drugs is most likely to cause hepatotoxicity as a serious adverse effect?",
+              "options": [
+                "Phenytoin",
+                "Carbamazepine",
+                "Valproate",
+                "Lamotrigine"
+              ],
+              "answer": "Valproate",
+              "explanation": "Valproate is associated with hepatotoxicity, particularly in children under 2 years of age or with mitochondrial disorders."
+            },
+            {
+              "stem": "A 40-year-old male with schizophrenia is started on clozapine. Which of the following monitoring parameters is essential due to the risk of agranulocytosis?",
+              "options": [
+                "Liver function tests",
+                "White blood cell count",
+                "Electrocardiogram",
+                "Serum electrolytes"
+              ],
+              "answer": "White blood cell count",
+              "explanation": "Clozapine requires regular monitoring of white blood cell count due to the risk of agranulocytosis, a potentially fatal adverse effect."
+            },
+            {
+              "stem": "Which of the following drugs is a selective serotonin reuptake inhibitor (SSRI)?",
+              "options": [
+                "Amitriptyline",
+                "Trazodone",
+                "Sertraline",
+                "Mirtazapine"
+              ],
+              "answer": "Sertraline",
+              "explanation": "Sertraline is an SSRI that selectively inhibits serotonin reuptake, increasing synaptic serotonin levels."
+            },
+            {
+              "stem": "A 50-year-old female with bipolar disorder is stabilized on lithium. Which of the following drugs is most likely to increase her lithium levels and risk of toxicity?",
+              "options": [
+                "Hydrochlorothiazide",
+                "Losartan",
+                "Metformin",
+                "Atorvastatin"
+              ],
+              "answer": "Hydrochlorothiazide",
+              "explanation": "Thiazide diuretics reduce renal lithium clearance by increasing proximal tubular reabsorption, raising plasma lithium levels."
+            },
+            {
+              "stem": "Which of the following drugs is a non-benzodiazepine hypnotic that acts as an orexin receptor antagonist?",
+              "options": [
+                "Zolpidem",
+                "Suvorexant",
+                "Ramelteon",
+                "Doxepin"
+              ],
+              "answer": "Suvorexant",
+              "explanation": "Suvorexant is an orexin receptor antagonist that promotes sleep by inhibiting wakefulness-promoting orexin neurons."
+            },
+            {
+              "stem": "A 28-year-old male with opioid dependence is started on methadone maintenance therapy. Which of the following statements about methadone is correct?",
+              "options": [
+                "It has a short duration of action requiring multiple daily doses.",
+                "It is a partial opioid agonist.",
+                "It is metabolized by CYP3A4 and may interact with other drugs.",
+                "It does not cross the blood-brain barrier."
+              ],
+              "answer": "It is metabolized by CYP3A4 and may interact with other drugs.",
+              "explanation": "Methadone is metabolized by CYP3A4, making it susceptible to drug interactions that can alter its plasma levels."
+            },
+            {
+              "stem": "Which of the following drugs is a tricyclic antidepressant (TCA) that is also used for migraine prophylaxis?",
+              "options": [
+                "Fluoxetine",
+                "Amitriptyline",
+                "Venlafaxine",
+                "Bupropion"
+              ],
+              "answer": "Amitriptyline",
+              "explanation": "Amitriptyline is a TCA with proven efficacy in migraine prophylaxis, likely due to its effects on serotonin and norepinephrine."
+            },
+            {
+              "stem": "A 65-year-old male with Parkinson’s disease develops dyskinesias while on levodopa-carbidopa therapy. Which of the following agents is most appropriate to manage his dyskinesias?",
+              "options": [
+                "Entacapone",
+                "Selegiline",
+                "Amantadine",
+                "Ropinirole"
+              ],
+              "answer": "Amantadine",
+              "explanation": "Amantadine is an NMDA receptor antagonist that reduces levodopa-induced dyskinesias by modulating glutamatergic transmission."
+            },
+            {
+              "stem": "Which of the following drugs is a monoamine oxidase inhibitor (MAOI) used in the treatment of depression?",
+              "options": [
+                "Fluoxetine",
+                "Phenelzine",
+                "Venlafaxine",
+                "Mirtazapine"
+              ],
+              "answer": "Phenelzine",
+              "explanation": "Phenelzine is a non-selective MAOI that irreversibly inhibits monoamine oxidase, increasing synaptic levels of monoamines."
+            },
+            {
+              "stem": "A 30-year-old female with schizophrenia is started on risperidone. Which of the following adverse effects is most likely to occur at therapeutic doses?",
+              "options": [
+                "Agranulocytosis",
+                "Hyperprolactinemia",
+                "Hepatotoxicity",
+                "Neuroleptic malignant syndrome"
+              ],
+              "answer": "Hyperprolactinemia",
+              "explanation": "Risperidone blocks D2 receptors in the pituitary, leading to increased prolactin secretion and hyperprolactinemia."
+            },
+            {
+              "stem": "Which of the following drugs is a GABA-B receptor agonist used for spasticity?",
+              "options": [
+                "Baclofen",
+                "Dantrolene",
+                "Tizanidine",
+                "Cyclobenzaprine"
+              ],
+              "answer": "Baclofen",
+              "explanation": "Baclofen is a selective GABA-B receptor agonist that reduces spasticity by inhibiting excitatory neurotransmitter release in the spinal cord."
+            },
+            {
+              "stem": "A 45-year-old male with epilepsy is stabilized on carbamazepine. Which of the following adverse effects is most likely to occur due to carbamazepine’s enzyme-inducing properties?",
+              "options": [
+                "Hypothyroidism",
+                "Hyponatremia",
+                "Hypercalcemia",
+                "Hyperglycemia"
+              ],
+              "answer": "Hyponatremia",
+              "explanation": "Carbamazepine induces CYP3A4 and other enzymes, increasing the metabolism of thyroid hormones and leading to secondary hypothyroidism and hyponatremia."
+            },
+            {
+              "stem": "Which of the following drugs is a dopamine reuptake inhibitor used for attention-deficit/hyperactivity disorder (ADHD)?",
+              "options": [
+                "Methylphenidate",
+                "Atomoxetine",
+                "Guanfacine",
+                "Modafinil"
+              ],
+              "answer": "Methylphenidate",
+              "explanation": "Methylphenidate is a dopamine and norepinephrine reuptake inhibitor that increases synaptic levels of these neurotransmitters, improving focus and attention."
+            },
+            {
+              "stem": "A 55-year-old female with bipolar disorder is started on valproate. Which of the following monitoring parameters is essential due to the risk of pancreatitis?",
+              "options": [
+                "Serum amylase and lipase",
+                "Liver function tests",
+                "Thyroid function tests",
+                "Electrocardiogram"
+              ],
+              "answer": "Serum amylase and lipase",
+              "explanation": "Valproate is associated with pancreatitis, and monitoring serum amylase and lipase levels is essential to detect this adverse effect early."
+            },
+            {
+              "stem": "Which of the following drugs is a serotonin 5-HT3 receptor antagonist used for chemotherapy-induced nausea and vomiting?",
+              "options": [
+                "Metoclopramide",
+                "Ondansetron",
+                "Prochlorperazine",
+                "Aprepitant"
+              ],
+              "answer": "Ondansetron",
+              "explanation": "Ondansetron is a selective 5-HT3 receptor antagonist that blocks serotonin-mediated emesis, particularly effective for chemotherapy-induced nausea and vomiting."
+            },
+            {
+              "stem": "A 60-year-old male with Parkinson’s disease develops orthostatic hypotension while on levodopa-carbidopa therapy. Which of the following agents is most appropriate to manage his orthostatic hypotension?",
+              "options": [
+                "Midodrine",
+                "Losartan",
+                "Amlodipine",
+                "Hydrochlorothiazide"
+              ],
+              "answer": "Midodrine",
+              "explanation": "Midodrine is an alpha-1 adrenergic agonist that increases vascular tone, reducing orthostatic hypotension in Parkinson’s disease."
+            },
+            {
+              "stem": "Which of the following drugs is a non-benzodiazepine hypnotic that acts as a melatonin receptor agonist?",
+              "options": [
+                "Zolpidem",
+                "Ramelteon",
+                "Suvorexant",
+                "Doxepin"
+              ],
+              "answer": "Ramelteon",
+              "explanation": "Ramelteon is a melatonin receptor agonist (MT1 and MT2) that regulates the sleep-wake cycle by mimicking the action of endogenous melatonin."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 28-year-old male presents to the emergency department with acute alcohol intoxication and agitation. He is at risk of alcohol withdrawal seizures.",
+              "modelAnswer": {
+                "a": "Benzodiazepines (e.g., diazepam or chlordiazepoxide) are the drugs of choice for preventing alcohol withdrawal seizures. They act by enhancing GABA-A receptor activity, reducing neuronal excitability and seizure risk.",
+                "b": "Thiamine (vitamin B1) should be administered to prevent Wernicke-Korsakoff syndrome.",
+                "c": "Monitor for sedation, respiratory depression, and hypotension. Ensure airway protection and provide supportive care."
+              }
+            },
+            {
+              "stem": "A 45-year-old female with bipolar disorder is stabilized on lithium but develops tremor and polyuria.",
+              "modelAnswer": {
+                "a": "Tremor and polyuria are common adverse effects of lithium, often due to its effects on renal concentrating mechanisms and fine motor control.",
+                "b": "Reduce lithium dose or switch to an alternative mood stabilizer (e.g., valproate). Ensure adequate hydration and monitor serum lithium levels.",
+                "c": "Monitor serum lithium levels, renal function (creatinine, eGFR), thyroid function (TSH), and electrolytes (sodium, potassium)."
+              }
+            },
+            {
+              "stem": "A 50-year-old male with Parkinson’s disease develops wearing-off phenomenon while on levodopa-carbidopa therapy.",
+              "modelAnswer": {
+                "a": "Wearing-off phenomenon refers to the re-emergence of Parkinsonian symptoms as levodopa levels decline before the next dose.",
+                "b": "Add a dopamine agonist (e.g., pramipexole), COMT inhibitor (e.g., entacapone), or MAO-B inhibitor (e.g., selegiline) to prolong levodopa effects.",
+                "c": "Monitor for dyskinesias, hallucinations, orthostatic hypotension, and impulse control disorders."
+              }
+            },
+            {
+              "stem": "A 30-year-old female with generalized anxiety disorder is prescribed buspirone but reports no improvement after 2 weeks.",
+              "modelAnswer": {
+                "a": "Buspirone has a slow onset of action (1-2 weeks) and may not be effective for acute anxiety.",
+                "b": "Consider switching to a benzodiazepine (e.g., lorazepam) for acute symptom control or a selective serotonin reuptake inhibitor (SSRI) for long-term management.",
+                "c": "Monitor for serotonin syndrome, sedation, and cognitive impairment."
+              }
+            },
+            {
+              "stem": "A 60-year-old male with epilepsy is stabilized on phenytoin but develops gingival hyperplasia.",
+              "modelAnswer": {
+                "a": "Gingival hyperplasia is a dose-related adverse effect of phenytoin, likely due to increased collagen synthesis and fibroblast proliferation.",
+                "b": "Maintain good oral hygiene and consider switching to an alternative antiepileptic (e.g., levetiracetam, lamotrigine) if severe.",
+                "c": "Monitor serum phenytoin levels, liver function tests, and complete blood count."
+              }
+            },
+            {
+              "stem": "A 40-year-old female with schizophrenia is started on clozapine but develops fever and leukopenia.",
+              "modelAnswer": {
+                "a": "Clozapine-induced agranulocytosis is a medical emergency requiring immediate discontinuation of clozapine.",
+                "b": "Administer broad-spectrum antibiotics and consider colony-stimulating factors (e.g., filgrastim) if severe neutropenia.",
+                "c": "Monitor white blood cell count weekly for the first 6 months, then every 2 weeks thereafter."
+              }
+            },
+            {
+              "stem": "A 55-year-old male with Parkinson’s disease develops hallucinations while on levodopa-carbidopa therapy.",
+              "modelAnswer": {
+                "a": "Hallucinations in Parkinson’s disease are often due to excessive dopaminergic stimulation or cholinergic deficiency.",
+                "b": "Reduce levodopa dose or switch to an atypical antipsychotic (e.g., quetiapine, clozapine) with low D2 receptor affinity.",
+                "c": "Monitor for worsening motor symptoms, orthostatic hypotension, and metabolic adverse effects."
+              }
+            },
+            {
+              "stem": "A 35-year-old female with migraine is prescribed propranolol for prophylaxis but develops bradycardia.",
+              "modelAnswer": {
+                "a": "Propranolol is a non-selective beta-blocker that reduces migraine frequency by modulating vascular tone and neuronal excitability.",
+                "b": "Switch to an alternative prophylactic agent (e.g., topiramate, valproate, or a calcium channel blocker like verapamil) if bradycardia persists.",
+                "c": "Monitor heart rate, blood pressure, and liver function tests."
+              }
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Describe LITHIUM in terms of the following:",
+              "modelAnswer": {
+                "a) Mode of action": "Lithium’s primary mechanism of action is unclear but likely involves inhibition of inositol monophosphatase and glycogen synthase kinase-3β (GSK-3β), modulating neurotransmitter systems (e.g., serotonin, dopamine) and neuroprotective effects.",
+                "b) Clinical applications": "Lithium is used for acute mania, maintenance therapy in bipolar disorder, and as an adjunct in treatment-resistant depression. It is also used for schizoaffective disorder and impulse control disorders.",
+                "c) Side effects": "Common side effects include tremor, polyuria, polydipsia, weight gain, hypothyroidism, and hyperparathyroidism. Serious adverse effects include nephrotoxicity, cardiac arrhythmias, and lithium toxicity (e.g., confusion, seizures, coma).",
+                "d) Drug-drug interactions": "Lithium interacts with diuretics (e.g., thiazides, loop diuretics) that reduce renal clearance, NSAIDs (e.g., ibuprofen) that increase lithium reabsorption, and ACE inhibitors/ARBs that reduce lithium excretion. It may also interact with antipsychotics, antidepressants, and antiepileptics.",
+                "e) Contraindications": "Lithium is contraindicated in severe renal impairment, significant cardiac disease, dehydration, hyponatremia, and during pregnancy (especially first trimester) due to risk of congenital cardiac malformations.",
+                "f) Pharmacokinetics": "Lithium is orally absorbed, has no protein binding, distributes into total body water, is not metabolized, and is excreted renally. It has a narrow therapeutic index (0.6–1.2 mmol/L), requiring regular monitoring of serum levels."
+              }
+            },
+            {
+              "stem": "Compare and contrast CARBAMAZEPINE and VALPROATE in terms of the following:",
+              "modelAnswer": {
+                "a) Mode of action": "Carbamazepine blocks voltage-gated sodium channels, reducing neuronal excitability and preventing seizure propagation. Valproate blocks voltage-gated sodium channels, enhances GABAergic transmission, and may inhibit T-type calcium channels.",
+                "b) Clinical applications": "Carbamazepine is used for focal (partial) seizures, generalized tonic-clonic seizures, trigeminal neuralgia, and bipolar disorder. Valproate is used for generalized seizures (absence, myoclonic, tonic-clonic), bipolar disorder, and migraine prophylaxis.",
+                "c) Side effects": "Carbamazepine: dizziness, diplopia, hyponatremia (SIADH), leukopenia, hepatotoxicity, and Stevens-Johnson syndrome. Valproate: tremor, weight gain, hepatotoxicity, pancreatitis, thrombocytopenia, and teratogenicity (neural tube defects).",
+                "d) Contraindications": "Carbamazepine: hypersensitivity to carbamazepine or tricyclic antidepressants, bone marrow suppression, and porphyria. Valproate: hepatic impairment, mitochondrial disorders, and pregnancy (teratogenic risk).",
+                "e) Drug-drug interactions": "Carbamazepine is a potent enzyme inducer (CYP3A4, UGT), reducing levels of oral contraceptives, warfarin, and other drugs. Valproate is an enzyme inhibitor (CYP2C9, UGT), increasing levels of lamotrigine, phenytoin, and warfarin."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Central Nervous System Pharmacology",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 65-year-old male with chronic obstructive pulmonary disease (COPD) and insomnia is prescribed a sedative-hypnotic. Which of the following drugs is contraindicated due to its respiratory depressant effects?",
+              "options": [
+                "Zolpidem",
+                "Temazepam",
+                "Chloral hydrate",
+                "Ramelteon"
+              ],
+              "answer": "Chloral hydrate",
+              "explanation": "Chloral hydrate is a sedative-hypnotic with significant respiratory depressant effects, making it inappropriate for patients with COPD."
+            },
+            {
+              "stem": "Which of the following benzodiazepines has the shortest duration of action due to its rapid hepatic metabolism?",
+              "options": [
+                "Diazepam",
+                "Lorazepam",
+                "Midazolam",
+                "Clonazepam"
+              ],
+              "answer": "Midazolam",
+              "explanation": "Midazolam is metabolized rapidly to inactive metabolites, resulting in a short duration of action."
+            },
+            {
+              "stem": "A 30-year-old female with generalized anxiety disorder is prescribed a benzodiazepine for short-term relief. Which of the following is the most appropriate choice due to its intermediate half-life and lack of active metabolites?",
+              "options": [
+                "Diazepam",
+                "Alprazolam",
+                "Lorazepam",
+                "Clonazepam"
+              ],
+              "answer": "Lorazepam",
+              "explanation": "Lorazepam has an intermediate half-life and no active metabolites, making it suitable for short-term anxiety management."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism of action of barbiturates?",
+              "options": [
+                "GABA-A receptor potentiation via benzodiazepine site",
+                "Direct activation of GABA-A receptors",
+                "Inhibition of GABA transaminase",
+                "Blockade of glutamate NMDA receptors"
+              ],
+              "answer": "Direct activation of GABA-A receptors",
+              "explanation": "Barbiturates enhance GABAergic transmission by directly activating GABA-A receptors, unlike benzodiazepines which potentiate GABA effects."
+            },
+            {
+              "stem": "A 45-year-old male with a history of alcohol dependence is admitted for detoxification. Which of the following drugs is used to prevent alcohol withdrawal seizures?",
+              "options": [
+                "Naltrexone",
+                "Disulfiram",
+                "Chlordiazepoxide",
+                "Acamprosate"
+              ],
+              "answer": "Chlordiazepoxide",
+              "explanation": "Chlordiazepoxide, a long-acting benzodiazepine, is used to prevent alcohol withdrawal seizures due to its GABAergic effects."
+            },
+            {
+              "stem": "Which of the following antipsychotics is most likely to cause extrapyramidal symptoms (EPS) due to its high D2 receptor antagonism?",
+              "options": [
+                "Clozapine",
+                "Olanzapine",
+                "Haloperidol",
+                "Quetiapine"
+              ],
+              "answer": "Haloperidol",
+              "explanation": "Haloperidol is a typical antipsychotic with high D2 receptor antagonism, increasing the risk of EPS."
+            },
+            {
+              "stem": "A 25-year-old female with bipolar disorder is prescribed lithium. Which of the following is the most appropriate monitoring parameter for lithium toxicity?",
+              "options": [
+                "Serum potassium levels",
+                "Serum lithium levels",
+                "Serum sodium levels",
+                "Serum magnesium levels"
+              ],
+              "answer": "Serum lithium levels",
+              "explanation": "Serum lithium levels are critical for monitoring lithium toxicity, with a therapeutic range of 0.6–1.2 mmol/L."
+            },
+            {
+              "stem": "Which of the following antidepressants is most likely to cause serotonin syndrome when combined with a monoamine oxidase inhibitor (MAOI)?",
+              "options": [
+                "Fluoxetine",
+                "Amitriptyline",
+                "Mirtazapine",
+                "Trazodone"
+              ],
+              "answer": "Fluoxetine",
+              "explanation": "Fluoxetine, an SSRI, increases serotonin levels and poses a high risk of serotonin syndrome when combined with MAOIs."
+            },
+            {
+              "stem": "A 50-year-old male with Parkinson’s disease is prescribed levodopa/carbidopa. Which of the following adverse effects is most likely to occur due to peripheral dopamine formation?",
+              "options": [
+                "Orthostatic hypotension",
+                "Dyskinesia",
+                "Hallucinations",
+                "Nausea"
+              ],
+              "answer": "Nausea",
+              "explanation": "Peripheral dopamine formation from levodopa can stimulate the chemoreceptor trigger zone, causing nausea."
+            },
+            {
+              "stem": "Which of the following antiepileptics is most effective for absence seizures due to its inhibition of T-type calcium channels?",
+              "options": [
+                "Phenytoin",
+                "Carbamazepine",
+                "Ethosuximide",
+                "Lamotrigine"
+              ],
+              "answer": "Ethosuximide",
+              "explanation": "Ethosuximide selectively inhibits T-type calcium channels in thalamic neurons, making it effective for absence seizures."
+            },
+            {
+              "stem": "A 35-year-old male with chronic pain is prescribed methadone for opioid dependence. Which of the following is the primary advantage of methadone over morphine?",
+              "options": [
+                "Longer duration of action",
+                "Lower risk of respiratory depression",
+                "No risk of dependence",
+                "Faster onset of action"
+              ],
+              "answer": "Longer duration of action",
+              "explanation": "Methadone has a longer duration of action (24–36 hours) compared to morphine, making it suitable for opioid maintenance therapy."
+            },
+            {
+              "stem": "Which of the following general anesthetics is most likely to cause hypotension due to its myocardial depressant effects?",
+              "options": [
+                "Propofol",
+                "Thiopentone",
+                "Ketamine",
+                "Sevoflurane"
+              ],
+              "answer": "Propofol",
+              "explanation": "Propofol causes dose-dependent myocardial depression and hypotension, particularly in hypovolemic patients."
+            },
+            {
+              "stem": "A 20-year-old female with migraine is prescribed sumatriptan. Which of the following is the primary mechanism of action of triptans?",
+              "options": [
+                "5-HT1B/1D receptor agonism",
+                "Dopamine receptor antagonism",
+                "GABA-A receptor potentiation",
+                "NMDA receptor antagonism"
+              ],
+              "answer": "5-HT1B/1D receptor agonism",
+              "explanation": "Triptans act as 5-HT1B/1D receptor agonists, causing vasoconstriction and inhibiting neurogenic inflammation."
+            },
+            {
+              "stem": "Which of the following drugs is used to reverse benzodiazepine overdose?",
+              "options": [
+                "Naloxone",
+                "Flumazenil",
+                "Atropine",
+                "Physostigmine"
+              ],
+              "answer": "Flumazenil",
+              "explanation": "Flumazenil is a benzodiazepine receptor antagonist used to reverse benzodiazepine overdose."
+            },
+            {
+              "stem": "A 40-year-old male with schizophrenia is prescribed clozapine. Which of the following is the most serious adverse effect associated with clozapine?",
+              "options": [
+                "Extrapyramidal symptoms",
+                "Neuroleptic malignant syndrome",
+                "Agranulocytosis",
+                "Tardive dyskinesia"
+              ],
+              "answer": "Agranulocytosis",
+              "explanation": "Clozapine carries a high risk of agranulocytosis, requiring regular hematological monitoring."
+            },
+            {
+              "stem": "Which of the following opioids is most likely to cause seizures due to its metabolite normeperidine?",
+              "options": [
+                "Morphine",
+                "Pethidine",
+                "Fentanyl",
+                "Oxycodone"
+              ],
+              "answer": "Pethidine",
+              "explanation": "Pethidine is metabolized to normeperidine, which can accumulate and cause seizures, especially in renal impairment."
+            },
+            {
+              "stem": "A 55-year-old female with bipolar disorder is prescribed valproate. Which of the following is the primary mechanism of action of valproate?",
+              "options": [
+                "Inhibition of GABA transaminase",
+                "Blockade of sodium channels",
+                "Antagonism of NMDA receptors",
+                "Inhibition of inositol monophosphatase"
+              ],
+              "answer": "Inhibition of GABA transaminase",
+              "explanation": "Valproate increases GABA levels by inhibiting GABA transaminase, contributing to its anticonvulsant and mood-stabilizing effects."
+            },
+            {
+              "stem": "Which of the following drugs is most likely to cause metabolic syndrome, including weight gain and dyslipidemia?",
+              "options": [
+                "Haloperidol",
+                "Risperidone",
+                "Aripiprazole",
+                "Quetiapine"
+              ],
+              "answer": "Quetiapine",
+              "explanation": "Quetiapine, an atypical antipsychotic, is associated with a high risk of metabolic syndrome, including weight gain and dyslipidemia."
+            },
+            {
+              "stem": "A 30-year-old male with opioid dependence is prescribed naltrexone. Which of the following is the primary mechanism of action of naltrexone?",
+              "options": [
+                "Mu-opioid receptor agonism",
+                "Mu-opioid receptor antagonism",
+                "Dopamine reuptake inhibition",
+                "Serotonin reuptake inhibition"
+              ],
+              "answer": "Mu-opioid receptor antagonism",
+              "explanation": "Naltrexone is a mu-opioid receptor antagonist used to block the effects of opioids in dependence treatment."
+            },
+            {
+              "stem": "Which of the following antiepileptics is most likely to cause Stevens-Johnson syndrome due to its aromatic structure?",
+              "options": [
+                "Levetiracetam",
+                "Topiramate",
+                "Carbamazepine",
+                "Gabapentin"
+              ],
+              "answer": "Carbamazepine",
+              "explanation": "Carbamazepine, an aromatic antiepileptic, carries a high risk of Stevens-Johnson syndrome, particularly in HLA-B*1502 carriers."
+            },
+            {
+              "stem": "A 25-year-old female with depression is prescribed venlafaxine. Which of the following is the primary mechanism of action of venlafaxine?",
+              "options": [
+                "Selective serotonin reuptake inhibition",
+                "Serotonin and norepinephrine reuptake inhibition",
+                "Dopamine reuptake inhibition",
+                "Monoamine oxidase inhibition"
+              ],
+              "answer": "Serotonin and norepinephrine reuptake inhibition",
+              "explanation": "Venlafaxine is an SNRI that inhibits the reuptake of both serotonin and norepinephrine."
+            },
+            {
+              "stem": "Which of the following drugs is used to prevent alcohol relapse by causing a disulfiram-like reaction?",
+              "options": [
+                "Naltrexone",
+                "Acamprosate",
+                "Disulfiram",
+                "Baclofen"
+              ],
+              "answer": "Disulfiram",
+              "explanation": "Disulfiram inhibits aldehyde dehydrogenase, causing a disulfiram-like reaction (flushing, nausea) when alcohol is consumed."
+            },
+            {
+              "stem": "A 60-year-old male with Parkinson’s disease is prescribed selegiline. Which of the following is the primary mechanism of action of selegiline?",
+              "options": [
+                "Dopamine receptor agonism",
+                "Monoamine oxidase-B inhibition",
+                "COMT inhibition",
+                "Dopamine reuptake inhibition"
+              ],
+              "answer": "Monoamine oxidase-B inhibition",
+              "explanation": "Selegiline selectively inhibits MAO-B, increasing dopamine levels in the brain and reducing Parkinson’s symptoms."
+            },
+            {
+              "stem": "Which of the following antiemetics acts primarily by blocking D2 dopamine receptors in the chemoreceptor trigger zone?",
+              "options": [
+                "Ondansetron",
+                "Metoclopramide",
+                "Prochlorperazine",
+                "Aprepitant"
+              ],
+              "answer": "Prochlorperazine",
+              "explanation": "Prochlorperazine is a phenothiazine antiemetic that blocks D2 dopamine receptors in the chemoreceptor trigger zone."
+            },
+            {
+              "stem": "A 45-year-old male with insomnia is prescribed zopiclone. Which of the following is the primary mechanism of action of zopiclone?",
+              "options": [
+                "GABA-A receptor potentiation via benzodiazepine site",
+                "Melatonin receptor agonism",
+                "Histamine H1 receptor antagonism",
+                "Orexin receptor antagonism"
+              ],
+              "answer": "GABA-A receptor potentiation via benzodiazepine site",
+              "explanation": "Zopiclone is a non-benzodiazepine hypnotic that potentiates GABA-A receptors via the benzodiazepine site."
+            },
+            {
+              "stem": "Which of the following drugs is most likely to cause tardive dyskinesia due to its high D2 receptor antagonism?",
+              "options": [
+                "Clozapine",
+                "Olanzapine",
+                "Haloperidol",
+                "Aripiprazole"
+              ],
+              "answer": "Haloperidol",
+              "explanation": "Haloperidol, a typical antipsychotic, has high D2 receptor antagonism, increasing the risk of tardive dyskinesia."
+            },
+            {
+              "stem": "A 30-year-old female with bipolar disorder is prescribed lamotrigine. Which of the following is the primary mechanism of action of lamotrigine?",
+              "options": [
+                "Inhibition of voltage-gated sodium channels",
+                "Blockade of calcium channels",
+                "Enhancement of GABAergic transmission",
+                "Antagonism of NMDA receptors"
+              ],
+              "answer": "Inhibition of voltage-gated sodium channels",
+              "explanation": "Lamotrigine stabilizes neuronal membranes by inhibiting voltage-gated sodium channels, reducing excitatory neurotransmitter release."
+            },
+            {
+              "stem": "Which of the following opioids is most likely to cause serotonin syndrome when combined with SSRIs?",
+              "options": [
+                "Morphine",
+                "Pethidine",
+                "Fentanyl",
+                "Oxycodone"
+              ],
+              "answer": "Pethidine",
+              "explanation": "Pethidine inhibits serotonin reuptake, increasing the risk of serotonin syndrome when combined with SSRIs."
+            },
+            {
+              "stem": "A 50-year-old male with epilepsy is prescribed phenytoin. Which of the following is the primary pharmacokinetic characteristic of phenytoin?",
+              "options": [
+                "First-order elimination",
+                "Zero-order elimination",
+                "Linear pharmacokinetics",
+                "High oral bioavailability"
+              ],
+              "answer": "Zero-order elimination",
+              "explanation": "Phenytoin exhibits zero-order elimination at therapeutic concentrations, leading to nonlinear pharmacokinetics."
+            },
+            {
+              "stem": "Which of the following drugs is used to treat opioid overdose by reversing respiratory depression?",
+              "options": [
+                "Flumazenil",
+                "Naloxone",
+                "Atropine",
+                "Physostigmine"
+              ],
+              "answer": "Naloxone",
+              "explanation": "Naloxone is a mu-opioid receptor antagonist used to reverse opioid-induced respiratory depression."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 40-year-old male with a history of alcohol dependence presents to the emergency department with confusion, ataxia, and ophthalmoplegia. He is diagnosed with Wernicke’s encephalopathy.",
+              "modelAnswer": "a) Thiamine (vitamin B1) should be administered immediately to prevent progression to Korsakoff’s syndrome. Thiamine is a cofactor for enzymes involved in glucose metabolism in the brain, and deficiency leads to neuronal damage. (3 marks)\nb) Long-term thiamine supplementation and abstinence from alcohol are essential to prevent recurrence. (1 mark)\nc) Monitor for signs of thiamine toxicity (rare) and ensure gradual correction of electrolyte imbalances (e.g., hypomagnesemia) to avoid refeeding syndrome. (2 marks)"
+            },
+            {
+              "stem": "A 35-year-old female with bipolar disorder is prescribed lithium. She asks about the monitoring required for lithium therapy.",
+              "modelAnswer": "a) Serum lithium levels should be monitored regularly to ensure therapeutic levels (0.6–1.2 mmol/L) and avoid toxicity (>1.5 mmol/L). (1 mark)\nb) Renal function (serum creatinine, eGFR) and thyroid function (TSH) should be monitored due to lithium’s effects on the kidney and thyroid. (1 mark)\nc) Electrolyte balance (sodium, potassium) should be monitored, as lithium can cause electrolyte disturbances. (1 mark)\nd) Baseline and periodic ECG may be considered in patients with cardiac risk factors. (1 mark)\ne) Monitor for signs of lithium toxicity (e.g., tremor, confusion, polyuria) and adjust dose accordingly. (1 mark)"
+            },
+            {
+              "stem": "A 50-year-old male with Parkinson’s disease is prescribed levodopa/carbidopa. He experiences nausea and dizziness after starting the medication.",
+              "modelAnswer": "a) The nausea is likely due to peripheral dopamine formation stimulating the chemoreceptor trigger zone. (1 mark)\nb) The dizziness may be due to orthostatic hypotension caused by dopamine-induced vasodilation. (1 mark)\nc) To manage nausea, administer levodopa/carbidopa with food (but avoid high-protein meals, which reduce absorption). (1 mark)\nd) To manage dizziness, ensure gradual dose titration and monitor blood pressure. (1 mark)\ne) Consider domperidone (a peripheral dopamine antagonist) if nausea persists, as it does not cross the blood-brain barrier. (1 mark)"
+            },
+            {
+              "stem": "A 25-year-old female with generalized anxiety disorder is prescribed diazepam. Describe the mechanism of action of benzodiazepines and their adverse effects.",
+              "modelAnswer": "a) Benzodiazepines enhance GABAergic transmission by binding to the benzodiazepine site on the GABA-A receptor, increasing chloride ion influx and hyperpolarizing neurons. (2 marks)\nb) Adverse effects include sedation, cognitive impairment, paradoxical excitation, respiratory depression (especially with opioids or alcohol), and dependence/withdrawal. (3 marks)"
+            },
+            {
+              "stem": "A 40-year-old male with epilepsy is prescribed carbamazepine. List three drugs that interact with carbamazepine and describe the nature of the interaction.",
+              "modelAnswer": "a) Phenytoin: Carbamazepine induces CYP3A4, increasing phenytoin metabolism and reducing its levels. (1 mark)\nb) Warfarin: Carbamazepine induces CYP2C9, reducing warfarin’s anticoagulant effect. (1 mark)\nc) Oral contraceptives: Carbamazepine induces CYP3A4, reducing contraceptive efficacy. (1 mark)\nd) Erythromycin: Erythromycin inhibits CYP3A4, increasing carbamazepine levels and risk of toxicity. (1 mark)\ne) Valproate: Valproate inhibits carbamazepine metabolism, increasing carbamazepine levels. (1 mark)"
+            },
+            {
+              "stem": "A 30-year-old female with schizophrenia is prescribed clozapine. Describe the monitoring required for clozapine therapy.",
+              "modelAnswer": "a) Regular full blood count (FBC) monitoring is required due to the risk of agranulocytosis (weekly for the first 18 weeks, then every 2 weeks). (2 marks)\nb) Monitor for signs of myocarditis (e.g., chest pain, dyspnea) and perform baseline ECG and troponin levels. (1 mark)\nc) Monitor metabolic parameters (weight, glucose, lipids) due to the risk of metabolic syndrome. (1 mark)\nd) Monitor for seizures, as clozapine lowers the seizure threshold. (1 mark)"
+            },
+            {
+              "stem": "A 55-year-old male with chronic pain is prescribed morphine. Describe the mechanism of action of opioids and their adverse effects.",
+              "modelAnswer": "a) Opioids act as mu-opioid receptor agonists, inhibiting pain transmission in the spinal cord and brain by reducing neurotransmitter release (e.g., substance P) and hyperpolarizing neurons. (2 marks)\nb) Adverse effects include respiratory depression, constipation, nausea, sedation, pruritus, and dependence. (3 marks)"
+            },
+            {
+              "stem": "A 20-year-old female with migraine is prescribed sumatriptan. Describe the mechanism of action of triptans and their contraindications.",
+              "modelAnswer": "a) Triptans are 5-HT1B/1D receptor agonists that cause vasoconstriction of intracranial blood vessels and inhibit neurogenic inflammation. (2 marks)\nb) Contraindications include ischemic heart disease, uncontrolled hypertension, hemiplegic or basilar migraine, and recent use of ergotamine or another triptan (within 24 hours). (3 marks)"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Describe PROPOFOL in terms of the following:",
+              "modelAnswer": "a) Mode of action: Propofol is a short-acting intravenous anesthetic that enhances GABA-A receptor activity, leading to hyperpolarization of neurons and CNS depression. (2 marks)\nb) Clinical applications: Induction and maintenance of general anesthesia, sedation in mechanically ventilated patients, procedural sedation (e.g., endoscopy), and treatment of refractory status epilepticus. (5 marks)\nc) Side effects: Hypotension (due to myocardial depression and vasodilation), respiratory depression, pain on injection, propofol infusion syndrome (PRIS: metabolic acidosis, rhabdomyolysis, cardiac failure), and hypertriglyceridemia (due to lipid emulsion formulation). (3 marks)\nd) Drug-drug interactions: Enhanced sedation with opioids, benzodiazepines, or other CNS depressants; reduced propofol requirements with inhaled anesthetics. (3 marks)\ne) Contraindications: Hypersensitivity to propofol or egg/soy products, severe cardiac disease, and caution in elderly or hypovolemic patients. (3 marks)\nf) Pharmacokinetics: Rapid onset (30–60 seconds), short duration (5–10 minutes), hepatic metabolism (CYP2B6), and renal excretion of inactive metabolites. (4 marks)"
+            },
+            {
+              "stem": "Compare and contrast LEVODOPA and SELEGILINE in the management of Parkinson’s disease.",
+              "modelAnswer": "a) Mode of action:\n   - Levodopa: A dopamine precursor that crosses the blood-brain barrier and is converted to dopamine in the brain by aromatic L-amino acid decarboxylase (AADC). (2 marks)\n   - Selegiline: A selective monoamine oxidase-B (MAO-B) inhibitor that reduces dopamine metabolism in the brain, increasing dopamine availability. (2 marks)\n\nb) Clinical applications:\n   - Levodopa: First-line treatment for Parkinson’s disease, especially in patients with significant motor symptoms. Often combined with carbidopa to reduce peripheral metabolism. (2 marks)\n   - Selegiline: Adjunctive therapy in early Parkinson’s disease to delay the need for levodopa or reduce levodopa dose. May also have neuroprotective effects. (2 marks)\n\nc) Side effects:\n   - Levodopa: Nausea, vomiting, orthostatic hypotension, dyskinesia, hallucinations, and motor fluctuations (wearing-off, on-off phenomena). (3 marks)\n   - Selegiline: Nausea, insomnia, hallucinations, and hypertensive crises (if combined with tyramine-rich foods or sympathomimetics). (3 marks)\n\nd) Contraindications:\n   - Levodopa: Hypersensitivity to levodopa, narrow-angle glaucoma, and caution in patients with psychosis or severe cardiac disease. (1.5 marks)\n   - Selegiline: Hypersensitivity to selegiline, concurrent use of meperidine or other MAOIs, and caution in patients with peptic ulcer disease or hypertension. (1.5 marks)\n\ne) Drug-drug interactions:\n   - Levodopa: Reduced absorption with high-protein meals; increased risk of dyskinesia with dopamine agonists; hypertensive crises with MAOIs. (2 marks)\n   - Selegiline: Hypertensive crises with tyramine-rich foods or sympathomimetics; serotonin syndrome with SSRIs or TCAs. (2 marks)"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

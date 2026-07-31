@@ -1,0 +1,300 @@
+{
+  "code": "3101",
+  "title": "Pharmacology I — General Principles of Pharmacology",
+  "sections": {
+    "A": [
+      {
+        "stem": "Loading dose of a drug is given:",
+        "options": [
+          "To achieve steady state concentration in short time",
+          "For drugs with short t½",
+          "To reduce complications",
+          "All of the above"
+        ]
+      },
+      {
+        "stem": "Which of the following parameters signifiesthe effective drug removal from the body?",
+        "options": [
+          "Clearance",
+          "Bioavailability",
+          "Safety",
+          "Volume of distribution"
+        ]
+      },
+      {
+        "stem": "Elimination after 4 half-lives in first order kinetic is:",
+        "options": [
+          "84%",
+          "93%",
+          "80.5%",
+          "75%"
+        ]
+      },
+      {
+        "stem": "Which of the following is an effect of grapefruit juice on drug metabolism?",
+        "options": [
+          "Enzyme inducer",
+          "Enzyme inhibitor",
+          "Inhibits tubular secretion",
+          "Inhibits tubular re absorption"
+        ]
+      },
+      {
+        "stem": "Which of the following statements is correct?",
+        "options": [
+          "Rectally administered drugs bypass completely the hepatic first pass.",
+          "Weak acids are absorbed efficiently across the cells of the stomach.",
+          "Most drugs are absorbed in the distal part of the small intestine.",
+          "Increased protein binding enhances drug absorption."
+        ]
+      },
+      {
+        "stem": "Drugs A and B have a high affinity for albumin. Drug A is administered in amounts that do not exceed the binding capacity of albumin. If drug B is added in amounts100 times the binding capacity of albumin, which of the following occurs after administration of drug B?",
+        "options": [
+          "A decrease in the bioavailability of drug A",
+          "A decrease in the half-life of drug A",
+          "A decrease in the volume of distribution of drug A",
+          "An increase in the tissue concentrations of drug A"
+        ]
+      },
+      {
+        "stem": "One of these may decrease drug metabolism:",
+        "options": [
+          "Cheese",
+          "cabbage",
+          "brussels",
+          "charcoal-broiled food"
+        ]
+      },
+      {
+        "stem": "A deficiency in protein may lead to:",
+        "options": [
+          "shorter drug half-life",
+          "lower rate of biotransformation",
+          "poor drug absorption",
+          "high volume of distribution"
+        ]
+      },
+      {
+        "stem": "Rapid acetylators of isoniazid are prone to develop:",
+        "options": [
+          "Peripheral neuropathy",
+          "Drug- induced hepatitis",
+          "Cardiotoxicity",
+          "Rheumatoid arthritis"
+        ]
+      },
+      {
+        "stem": "Physiological processes mediated by the intracellular second messenger, cyclic AMP: Except?",
+        "options": [
+          "carbohydrate breakdown by the liver",
+          "decreased heart rate",
+          "smooth muscle relaxation",
+          "triglyceride breakdown"
+        ]
+      },
+      {
+        "stem": "An example of an agent that exerts much of its effects through intracellular receptors that in complex form binds to DNA response elements:",
+        "options": [
+          "acetylcholine",
+          "dopamine",
+          "corticosteroids",
+          "diltiazem"
+        ]
+      },
+      {
+        "stem": "Which one of the following drug receptor classes have been best described and characterized?",
+        "options": [
+          "enzymes",
+          "structural proteins",
+          "transport proteins",
+          "regulatory proteins"
+        ]
+      },
+      {
+        "stem": "Which one of the statements best describes an \"orphan\" receptor?",
+        "options": [
+          "A receptor for which the function is unknown.",
+          "A receptor for which no naturally occurring (endogenous) agent has been identified.",
+          "A receptor associated with a rare disease?",
+          "A receptor which is associated with disease but which has not attracted significant research interest?"
+        ]
+      },
+      {
+        "stem": "The pharmacological action of this agent is not mediated by a \"macromolecular\" receptor molecule.",
+        "options": [
+          "Propranolol",
+          "Mannitol",
+          "Prazosin",
+          "Atenolol"
+        ]
+      },
+      {
+        "stem": "Which of the following cytochrome P450 isoenzymes is involved in the metabolism of largest number of drugs in human beings and has been implicated in some dangerous drug interactions:",
+        "options": [
+          "CYP 3A4",
+          "CYP 2C9",
+          "CYP 2E1",
+          "CYP 1A2"
+        ]
+      },
+      {
+        "stem": "The following is not true of the cytochrome P450 isoenzyme CYP2D6:",
+        "options": [
+          "It generates the hepatotoxic metabolite N-acetyl benzoquinone imine from paracetamol",
+          "It is involved in demethylation of codeine into morphine",
+          "Its altered form is responsible for poor capacity to hydroxylate many drugs including metoprolol",
+          "It is inhibited by quinidine"
+        ]
+      },
+      {
+        "stem": "Microsomal enzyme induction can be a cause of:",
+        "options": [
+          "Tolerance",
+          "Physical dependence",
+          "Psychological dependence",
+          "Idiosyncrasy"
+        ]
+      },
+      {
+        "stem": "The following drug metabolizing reaction is entirely non-microsomal:",
+        "options": [
+          "Glucuronide conjugation",
+          "Acetylation",
+          "Oxidation",
+          "Reduction"
+        ]
+      },
+      {
+        "stem": "Azithromycin, an antibiotic, has an apparent volume of distribution (Vd) of approximately 30 L/kg. The best interpretation of this information is that azithromycin is which of the following?",
+        "options": [
+          "Effective only when given intravenously",
+          "Eliminated mainly by renal excretion, without prior metabolism",
+          "Extensively distributed to sites outside the vascular and interstitial spaces",
+          "Unable to cross the blood-brain or placental barriers"
+        ]
+      },
+      {
+        "stem": "We want to estimate, following drug administration, some measure that most reliably reflects the total amount of drug reaching the target tissue(s), over time. We’re giving the drug orally. Which of the following would provide that measure best?",
+        "options": [
+          "Area under the blood concentration-time curve (AUC)",
+          "Peak (maximum) blood concentration",
+          "Product of the Vd and the first-order rate constant",
+          "Time-to-peak blood concentration"
+        ]
+      },
+      {
+        "stem": "Which of the following is the term used to describe the elimination rate via metabolism catalyzed by alcohol dehydrogenase when the enzyme is saturated?",
+        "options": [
+          "Zero-order kinetics",
+          "First-order elimination",
+          "Clearance",
+          "Redistribution"
+        ]
+      },
+      {
+        "stem": "Erythromycin is prescribed ‘‘qid,’’ or four times daily, because of its short half-life. The rationale for such a frequent dosing schedule is",
+        "options": [
+          "To achieve the steady-state plasma concentration of the drug",
+          "To aid more complete distribution of the drug",
+          "To inhibit the first-pass metabolism of the drug",
+          "To ensure that the drug concentration remains constant over time"
+        ]
+      },
+      {
+        "stem": "If the oral dosing rate of a drug is held constant, what will be the effect of increasing the bioavailability of the preparation?",
+        "options": [
+          "Increase the half-life for first-order elimination",
+          "Decrease the first-order elimination rate constant",
+          "Increase the steady-state plasma concentration",
+          "Decrease the total body clearance"
+        ]
+      },
+      {
+        "stem": "A drug is administered in the form of an inactive pro-drug. The pro-drug increases the expression of a cytochrome P-450 that converts the pro-drug to its active form. With chronic, long-term administration of the pro-drug, which of the following will be observed?",
+        "options": [
+          "The potency will decrease",
+          "The potency will increase",
+          "The efficacy will decrease",
+          "The efficacy will increase"
+        ]
+      },
+      {
+        "stem": "A drug is administered in the form of an inactive pro-drug. The pro-drug increases the expression of a cytochrome P-450 that converts the pro-drug to its active form. With chronic, long-term administration of the pro-drug, which of the following will be observed?",
+        "options": [
+          "The potency will decrease",
+          "The potency will increase",
+          "The efficacy will decrease",
+          "The efficacy will increase"
+        ]
+      },
+      {
+        "stem": "Thiopentone is used for induction of anaesthesia. It shows marked redistribution which is a characteristic of:",
+        "options": [
+          "Highly lipid soluble drugs",
+          "Highly water-soluble drugs",
+          "Weak electrolytes",
+          "Highly plasma protein bound drugs"
+        ]
+      },
+      {
+        "stem": "Which does not induce microsomal enzymes?",
+        "options": [
+          "Cimetidine",
+          "Griseofulvin",
+          "Rifampicin",
+          "Phenobarbitone"
+        ]
+      },
+      {
+        "stem": "Apparent volume of distribution (Vd) of a drug exceeds total body fluid volume, if a drug is:",
+        "options": [
+          "Sequestrated in body tissues",
+          "Slowly eliminated from body",
+          "Poorly soluble in plasma",
+          "Highly bound to plasma proteins"
+        ]
+      },
+      {
+        "stem": "Which of the following drugs binds to albumin?",
+        "options": [
+          "Penicillin",
+          "Lidocaine",
+          "Propanolol",
+          "Verapamil"
+        ]
+      },
+      {
+        "stem": "A drug is being administered that has a high first pass effect. The Doctor has changed the route from IV (Intravenous) to PO (Oral). Which of the following would you expect for the new oral dose?",
+        "options": [
+          "It would be higher because of the first pass effect",
+          "It would be lower because of the first pass effect",
+          "It would be the same as the IV dose",
+          "No effect will be experienced"
+        ]
+      }
+    ],
+    "B": [
+      {
+        "stem": "Give the term that BEST defines the following terminologies (2 Marks each):\n1. is a science that deals with evolving a quantitative relationship between exposure to the drug (pharmacokinetics) and its response (pharmacodynamics), derived by constructing mathematical models based on few observations\n2. are drugs meant for the diagnosis, prevention or treatment of rare diseases.\n3. A pharmacologic antagonist that can be overcome by increasing the concentration of agonist\n4. A pharmacologic antagonist that cannot be overcome by increasing agonist concentration\n5. A drug that counters the effects of another by binding the agonist drug (not the receptor)\n6. The dose required to achieve a specific plasma drug concentration level with a single administration.\n7. The dose required for regular administration to maintain a target plasma level.\n8. The ratio of the amount of drug in the body to the drug concentration in the plasma or blood\n9. The ratio of the rate of elimination of a drug to the concentration of the drug in the plasma or blood\n10. represents the maximal ability of a drug to accomplish a particular type of effect.\n11. Reflects the amount of drug (the dose) required to cause a specific amount of effect.\n12. Reactions that convert the parent drug to a more polar (water-soluble) or more reactive product by unmasking or inserting a polar functional group\n13. Reactions that increase water solubility by conjugation of the drug molecule with a polar moiety"
+      },
+      {
+        "stem": "COVID-19 Pandemic has had a huge Global impact, Central to the fight against Covid-19 is the clinical development of drugs. You have been tasked as a drug Specialist to assist in undertaking Pharmacovigilance. Give a description of the SIX manifestations of Adverse Drug Reactions. (12 Marks)"
+      },
+      {
+        "stem": "500 mg of a drug is administered orally, 70% of the drug is absorbed. The hepatic extraction ratio is 65%. What is the overall bioavailability for this drug? (2 Marks)"
+      }
+    ],
+    "C": [
+      {
+        "stem": "A patient presents to your Pharmacy Drug Store with a prescription. Unfortunately, you do not have the drug prescribed. You however wish to change the Generic Drug prescribed with a branded drug available. The Patient does not understand this and thus you ought to explain to him to understand.\na) How will you explain and distinguish between: Branded Drug and Generic Drug? (8 Marks)\nb) The patient further asks you what is a Chemical Name. (2 Marks)\nc) Discuss five ideal properties of drugs. (5 Marks)"
+      },
+      {
+        "stem": "Discuss any 3 sources of drugs. (3 Marks)"
+      },
+      {
+        "stem": "COVID-19 Pandemic has had a huge Global impact, Central to the fight against Covid-19 is the clinical development of drugs. You have been tasked as a drug Specialist to assist in undertaking research on New Drug Development. Give a description of the four Clinical phases of New Drug Development. (12 Marks)"
+      }
+    ]
+  }
+}

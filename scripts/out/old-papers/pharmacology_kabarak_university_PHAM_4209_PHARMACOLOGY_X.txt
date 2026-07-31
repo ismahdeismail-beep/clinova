@@ -1,0 +1,354 @@
+﻿
+250507534290
+
+KABARAK                            UNIVERSITY
+UNIVERSITY EXAMINATIONS
+MAIN CAMPUS
+FIRST SEMESTER, 2020/2021 ACADEMIC YEAR
+EXAMINATION FOR BACHELOR DEGREE IN PHARMACY
+
+PHAM 4209: PHARMACOLOGY X(CHEMOTHERAPY II)
+
+STREAM: Y4S2   TIME: 9:00-11:00AM
+EXAMINATION SESSION: SEPT-DEC    DATE: 09/02/2021      
+
+READ INSTRUCTIONS CAREFULLY
+The examination paper has THREE (3) sections.                                  [Total 100 Marks]
+ANSWER ALL questions in section A and section B. Answer any ONE question in section C
+SECTION A has SIXTY Multiple Choice Questions.              [60 Marks]
+SECTION B has Short ANSWER Questions.                 [20 Marks]
+SECTION C has a Long ANSWER Question.  Answer any ONE question in section C[20 Marks]
+Adhere to the University examination rules and regulations.
+
+SECTION A: MULTIPLE ANSWER QUESTIONS                                             (60MARKS)
+Which of the following is a polyene macrolide only used topically, due to systemic toxicity; active against most Candida species--most commonly used for suppression of local candidal infection?
+Clotrimazole
+Terbinafine
+Amphotericin B
+Nystatin
+Which of the following is most likely to cause increased arrhythmogenic effects of astemizole?
+Ketoconazole
+Terbinafine
+Fluconazole
+Griseofulvin
+Which of the following is most likely to get into the cerebrospinal fluid?
+Ketoconazole
+Itraconazole
+Fluconazole
+Griseofulvin
+Which of the following is likely to promote drug-drug interactions because of interactions with cytochrome P-450 drug metabolizing systems?
+Saquinavir
+Indinavir
+Ritonavir
+All of the above
+Which of the following is most likely to change serum concentrations of fluoxetine?
+Didanosine
+Ritonavir
+Amantadine
+Lamivudine
+
+First-pass metabolism of this drug results in the active form, penciclovir?
+Acyclovir
+Famciclovir
+Ganciclovir
+Cidofovir
+Nephrotoxicity, the major dose-limiting toxicity associated with i.v. use of this drug can be prevented by probenecid?
+Foscarnet
+Famciclovir
+Cidofovir
+Vidarabine
+Monophosphorylation of this antiviral drug is catalyzed by virus-specified protein kinase phophotransferase in CMV-infected cells and by viral thymidine kinase in HSV-infected cells?
+Ganciclovir
+Foscarnet
+Valacyclovir 
+Cidofovir
+Mainly eliminated by renal mechanisms as the hypoxanthine metabolite, this antiviral agent is effective for treating acute keratoconjunctivitis (ointment) and HSV encephalitis (i.v.)? 
+Vidarabine
+Ganciclovir
+Foscarnet
+Zidovudine
+The drug of choice for Schistosoma hematobium is?
+Praziquantel
+Mebendazole 
+Metronidazole
+Diethylcarbamazine
+
+Which of the following would you recommend for a patient who is infested with Taenia saginata?
+Mebendazole
+Ivermectin
+Metrifonate 
+Niclosamide
+A 60-year old male with AIDS develops a systemic fungal infection treated with fluconazole. What is the mechanism of action of fluconazole?
+It inhibits peptidoglycan synthesis
+It inhibits DNA synthesis
+It inhibits ergosterol synthesis
+It inhibits cell wall synthesis
+A 26-year old female patient with a history of AIDS develops a herpes simplex keratitis. Which of the following should be administered in this case?
+Zanamivir
+Trifluridine
+Amantadine
+Indinavir
+A 35-year old female complains of itching in the vulval area. Hanging-drop examination of the urine reveals trichomonads. What is the preferred treatment for trichomoniasis?
+Metronidazole
+Emetine 
+Pentamidine
+Pyrimethamine
+Select the drug that is most effective against Ascaris Lumbricoides?
+Praziquantel
+Niclosamide
+Pyrantel pamoate
+Ivermectin 
+
+Select the drug that is most effective against Wuchereria bancrofti?
+Praziquantel
+Pyrantel pamoate
+Bithionol 
+Diethylcarbamazine
+An infant with severe respiratory syncytial virus bronchiolitis is best treated with
+Amantadine
+Ribavirin
+Famciclovir 
+Indinavir 
+A tourist who recently returned from a visit to the Kisumu develops the signs and symptoms of malaria (fever, chills, muscle aches & fatigue). Blood tests reveal the presence of chloroquine-sensitive P. falciparum. Chloroquine therapy is initiated, resulting in a gradual disappearance of malarial symptoms. What is the primary antimalarial mechanism of action of this drug?
+Alkalization of plasmodium vacuole pH
+Disrupting mitochondrial electron transport
+Inhibition of dihydrofolate reductase
+Inhibition of protein synthesis
+Shortly after returning from a medical mission in Kilifi, a 25-year-old medical student develops flu-like symptoms including fever, chills, headache, and sweating. Blood samples are positive for the presence of chloroquine-resistant P. vivax. Prior to initiating combination drug therapy, the WHO recommends that a blood test for G6PD be performed in order to avoid producing a potentially fatal drug-induced hemolytic anemia. Which of the following drugs, if used in treatment, would MOST LIKELY cause this serious side effect?
+Atovaquone
+Mefloquine
+Primaquine
+Proguanil
+
+The patient suffering from infection with P. vivax recovers from malarial symptoms, but then suffers a relapse several months later after discontinuation of drug therapy. A decision is made to initiate therapy to specifically target the hepatic stage of the parasite. Which of following medications would be the most appropriate choice?
+Artemether - Lumefantine
+Primaquine
+Quinolones
+Doxycycline
+A patient on multi-drug therapy for P. falciparum malaria seeks medical attention in the Emergency Department of University Hospital for an episode of vertigo, dizziness, nausea & vomiting. Examination of the patient's ECG reveals a markedly prolonged QTc interval. Which of the following drugs in the patient's drug regimen is most likely responsible for these side effects?
+Atovaquone
+Chloroquine
+Primaquine
+Quinine
+An HIV-positive patient is being initialized on combination antiretroviral therapy (cART). One of the drugs included is a drug that has no direct antiviral effect, but inhibits CYP3A4. Inclusion of this drug prolongs the duration of action of other CYP3A substrates (such as protease inhibitors), which reduces the daily pill burden. Which drug serves this purpose?
+Cobicistat
+Ritonavir
+Efavirenz
+Raltegravir
+
+You are caring for a patient recently diagnosed with HIV infection, and plan to initiate therapy with an effective cART regimen. Two components of the drug regimen to be implemented include a combination of a protease inhibitor and pharmacokinetic booster (lopinavir + ritonavir) and a nucleoside reverse transcriptase inhibitor (zidovudine). What other additional drugmay also be included to provide the most effective treatment?
+Atazanavir
+Emtricitabine
+Nevirapine
+Raltegravir 
+When designing an effective cART regimen for treating a patient's HIV infection, there are certain drug combinations that should be avoided due to either a higher incidence of toxic side effects, or antagonism of each other's effects on HIV replication. If a patient's drug regimen included the NRTI zidovudine, what other drug should be avoided?
+Lamivudine
+Nelfinavir
+Nevirapine
+Stavudine
+Patients on cART can experience drug toxicities that are common for most drugs within the same class. Which toxicity would be expected for a non-nucleoside reverse transcriptase inhibitor?
+Insulin resistance
+Lipodystrophy syndrome
+Mitochondrial toxicity
+Skin rashes
+Most formulations of cART contain a protease inhibitor (PI). Which of the following side effects is commonly observed in patients following initiation of therapy with this class of drug?
+Lipodystrophy
+Myelosuppression
+Pancreatitis
+Peripheral sensory neuropathy
+NRTIs are considered the backbone of cART. This class of drugs can cause a variety of side effects & toxicity including neuropathy, pancreatitis, cardiomyopathy, hepatic steatosis & lactic acidosis. What molecular mechanism is the most likely cause for these adverse effects?
+Altered gene expression
+Ion channel blockade
+Inhibition of DNA gyrase
+Mitochondrial toxicity
+Not all inhibitors of viral reverse transcriptase require intracellular phosphorylation to an active triphosphate form. Which of the following is an example of a RT inhibitor that does not require intracellular activation, and binds to a different site compared to those that do?
+Indinavir
+Lamivudine
+Nevirapine
+Stavudine
+Entry inhibitors are frequently added as a component of cART for treatment-experienced patients who have persistent HIV-1 replication, despite ongoing therapy. One such agent binds selectively to the CCR5 host protein, one of two cytokine receptors necessary for the entrance of HIV into CD4+ cells. Its use is limited to patients that have a strain of HIV that utilizes CCR5 exclusively for cell entry, and do not utilize CXCR4 or other chemokine receptors. Which agent is this?
+Efavirenz
+Enfuvirtide
+Maraviroc
+Tenofovir
+Several drugs used to treat the flu work by blocking the viral endonuclease. Which drug works by this mechanism?
+Baloxavir marboxil
+Oseltamivir
+Ribavirin
+Rimantadine
+Michael is an 8-year-old boy who is brought to the emergency department by his mother after he returns home from school complaining of flu-like symptoms. Because he has difficulty swallowing tablets (like many children under the age of 10), you decide to prescribe a flu medication that can be inhaled, instead of swallowed. What is the active ingredient for the medication you will prescribe?
+Salbutamol
+Amantadine
+Oseltamivir
+Zanamivir
+An HIV immune compromised patient develops a severe case of CMV retinitis that requires treatment. Before prescribing the drug of choice, you explain to your patient that it needs to be taken orally twice daily, and that a follow-up visit for blood tests is needed to monitor for possible decreased levels of red cells, white cells, and platelets. The drug having this pharmacologic profile is:
+Foscarnet
+Trifluridine
+Valacyclovir
+Valganciclovir
+Foscarnet is sometimes used to treat CMV retinitis in HIV patients who have become immune compromised. A primary dose-limiting side effect of this drug includes:
+Bone marrow toxicity
+Deterioration of respiratory function
+Flu-like symptoms
+Nephrotoxicity
+An "anti-influenza" medication no longer recommended by the CDC as a treatment for the flu due to the development of high levels of drug resistance.
+Adefovir
+Amantadine
+Entecavir
+Oseltamivir
+
+A 42 year hospitalized patient with an indwelling central venous catheter develops a life-threating infection by a drug-resistant form of Candida albicans. A decision is made to treat the patient with a liposomal infusion containing an antifungal drug that acts by binding to ergosterol, creating large pores in the fungal cell membrane that cause leakage of cellular components, resulting in cell death. Which antifungal drug was used to treat this patient's resistant infection?
+Amphotericin B
+Clotrimazole
+Nystatin
+Terbinafine
+A debilitated cancer patient who has undergone several rounds of chemotherapy is given a series of antibiotics to treat a presumed bacterial infection. When symptoms of infection persist, a fresh blood sample is taken for analysis, and comes back positive for Candida albicans. The patient is given an i.v. infusion of an antifungal drugs, and shortly thereafter develops chills, fever, vomiting and hypotension. What antifungal drug was most likely given?
+Amphotericin B
+Caspofungin
+Fluconazole
+Flucytosine
+
+JH is a 21-year-old-woman who comes to your Ob/Gyn clinic with a chief complaint of vaginal soreness and a burning discomfort during urination. A pelvic exam reveals signs of inflammation and discharge. A quick microscopic exam of the discharge indicates the presence of a yeast infection. You review the list of JH's current medications, which include an estrogen/progesterone oral contraceptive, and a daily multivitamin. You the administer an oral dose of 150 mg fluconazole to treat her infection. For what reason did you review her current list of medications?
+Fluconazole's bioavailability is low, and may be affected by other drugs
+Fluconazole can induce cyp P-450 and increase the hepatic clearance of other drugs
+Fluconazole is a CYP P-450 inhibitor, and can decrease the metabolism of other drugs
+Fluconazole enhances the renal clearance of several drugs by inhibiting p-glycoprotein.
+A patient suffering from severe cryptococcal pneumonia is given combination therapy with flucytosine and amphotericin B. Other than the integrity of the fungal cell membrane, what other molecular target is affected by this drug combination?
+DNA synthesis
+Ergosterol synthesis
+Fungal cell wall
+RNA synthesis
+A 65-year-old patient presents with a chief complaint of discolored toenails that have recently begun to cause mild pain and discomfort. Histological analysis of an under-nail swab is positive for Trichophyton rubrum. What oral medication would be the best choice to treat this infection?
+Amphotericin B
+Caspofungin
+Ketoconazole
+Terbinafine
+
+A 57-year-old woman who has been on chronic therapy with corticosteroids for arteritis presents with a high fever, severe headache and neck stiffness. She also admits to feeling confused and irritable, and having felt nauseous over the past 24 hours. A lumbar puncture is used to obtain a sample of CSF, which reveals the presence of Cryptococcus neoformans in culture. The patient is admitted to hospital and you start an induction antifungal protocol with i.v. amphotericin B plus flucytosine for 2 weeks. Her condition slowly improves and you decide to switch her to an oral maintenance therapy which she will likely need to continue for up to a year after discharge from the hospital. Which agent would be the best choice for maintenance therapy?
+Fluconazole
+Itraconazole
+Griseofulvin
+Ketoconazole
+An immunocompromised patient suffering from HIV is diagnosed with subacute invasive pulmonary aspergillosis caused by Aspergillus fumigatus. Which drug would be the best choice for monotherapy?
+Amphotericin B
+Fluconazole
+Griseofulvin
+Voriconazole
+An elderly man with a 20 yr history of atrial fibrillation arrives to your clinic complaining of weakness and recent episodes of bloody stool. When taking his medical history, he mentions having to watch his dietary intake of leafy vegetables (such as spinach), and having recently seen a dermatologist who placed him on fluconazole therapy for a skin infection (mucocutaneous candidiasis). What is the most likely explanation for this patient's most recent symptoms?
+A drug-drug interaction
+An idiosyncratic drug reaction
+Fluconazole-related GI toxicity
+Worsening of the infection by Candida spp
+
+Rationale for the use of leucovorin calcium in combination with pyrimethamine +trisulfapyrimidines in treating Toxoplasmosis:
+Increases pyrimethamine efficacy
+Decreases pyrimethamine cardiotoxicity
+Decreases pyrimethamine hematological toxicities
+Increases trisulfapyrimidines efficacy
+Concerning sulfonamides & sulfones and antimalarial activity: they 
+Have blood schizonticidal activity against P falciparum (some species)
+Have significant effects against blood schizonts of P vivax
+Are active against immunocytes or liver stages of P falciparumor P vivax
+Have a rapid onset of action
+A Kenyan is sent to work in ageographic region of a Central American country whereOnchocerca volvulus is endemic. Infections resulting fromthis tissue nematode (onchocerciasis) are a cause of â€œriverblindness,â€ because microfilariae migrate through subcutaneoustissues and concentrate in the eyes. Which drug should beused prophylactically to prevent onchocerciasis?
+Albendazole
+Diethylcarbamazine
+Ivermectin
+Oxamniquine
+A nonindigenous person who develops onchocerciasis inan endemic region and receives drug treatment is likely toexperience a severe reaction. Symptoms include headache,weakness, rash, muscle aches, hypotension, and peripheraledema. Which statement concerning this reaction isaccurate?
+Bithionol was prescribed
+Extensive fluid replacement is essential
+The reaction is due to drug toxicity
+The reaction is due to killing of microfilariae
+Which statement about pyrantel pamoate is accurate?
+Acts as an antagonist at GABA receptors
+Equivalent in efficacy to niclosamide in the treatment oftapeworm infections
+Kills adult worms in the colon but not the eggs
+Synergistic with praziquantel in fluke infections
+A student studying pharmacy at Kabarak university develops fever, chills, and diarrhea resulting from S mansoni, and oxamniquine is prescribed. Which statement about the proposed drug therapy is accurate?
+If the patient has a history of seizure disorders, hospitalizationis recommended during treatment
+It is not effective in the late stages of the disease
+Oxamniquine is safe to use in pregnancy
+The drug is also effective in tapeworm infections
+Which helminthic infection does not respond to treatmentwith praziquantel?
+Hydatid disease
+Opisthorchiasis
+Pork tapeworm infection
+Schistosomiasis
+Which drug causes muscle paralysis in nematodes by enhancingthe actions of GABA?
+Albendazole
+Diethylcarbamazine
+Ivermectin
+Pyrantel pamoate
+Which parasite is susceptible to niclosamide?
+Ascaris lumbricoides
+Echinococcus granulosus
+Fasciola hepatica
+Taenia solium
+A malnourished 12-year-old child who lives in Nakuru presents with weakness, fever,cough, abdominal pain, and eosinophilia. His mother tellsyou that she has seen long, thin worms in the childâ€™s stools,sometimes with blood. A presumptive diagnosis of ascariasisis confirmed by the presence of the ova of A lumbricoides inthe stools. However, microscopy also reveals that the stoolscontain the eggs of Necator americanus. The drug most likelyto be effective in the treatment of this child is
+Albendazole
+Ivermectin
+Niclosamide
+Praziquantel
+JCis a 72 year-old nursing home resident that arrives in your pharmacy complaining that many of his fellow residents have come down with the flu. This has occurred even though all residents where he lives were vaccinated several months ago. To provide additional & appropriate antiviral protection for JC, the best choice would be to write a prescription for:
+Rimantadine
+Foscarnet
+Ganciclovir
+Oseltamivir
+John Doe, a 38-year-old man arrives at your free clinic with the chief complaint of irritating small blisters on his genitals. A swab from his sores is taken and sent to the lab for analysis. Based upon the appearance of his sores, a tentative diagnosis of genital herpes is made. Which of the following should you prescribe for treatment, at least until the lab results come back in 3-4 days?
+Lamivudine
+Ribavarin
+Valacyclovir
+Zanamivir
+A 40-year-old woman presents to your clinic with complaints of chronic anorexia, nausea, fatigue, a low grade fever, and difficulty sleeping. When taking her history, she admits to having had unprotected intercourse with several men over the past few years. Her lab results indicate high levels of aminotransferase (ALT & AST) of 1000-2000 IU/ml. A liver biopsy is taken and hepatocytes stain positive for hepatitis B antigen. The best choice for treating her condition would be:
+Acyclovir
+Interferon alfa
+Zidovudine
+Telaprevir
+
+A young man who has been experiencing a severe episode of cough, runny nose and conjunctivitis for the past week arrives at your clinic seeking medical attention. A 30-minute rapid antigen-capture assay is positive for RSV. You prescribe an inhaled nucleoside analog that is considered a drug of choice for this type of infection. Which drug best fits this description?
+Entecavir
+Lamivudine
+Palivizumab
+Ribavirin
+A 36-year-old woman with a history of iv drug abuse seeks medical attention complaining of low-grade fever, nausea and vomiting. Lab tests indicate the presence of elevated liver enzymes, and both Hep C antibody & viral RNA. A diagnosis of active HCV infection is made. Which drug combination would be the best choice for treatment?
+Amantadine + acyclovir
+Foscarnet + vidarabine
+PEG-interferon alfa + ribavirin
+Lopinavir + ritonavir
+Jane, a 22-year-old medical student arrives at the Student Health Clinic with a breakout of shingles following a week of second year block exams. His medical records confirm that he has a medical history of infection by Varicella zoster. To best alleviate his symptoms, you write a prescription for oral tablets (bid) containing the active ingredient:
+Foscarnet
+Interferon alfa
+Oseltamivir
+Valacyclovir
+
+A 36-year-old man with HIV who has been on a HAART drug regimen for several years arrives at your pharmacy complaining of feeling unusually fatigued and drained of energy for the past two weeks. Upon examination his lymph nodes are found to be enlarged, and he is running a low-grade fever. Lab tests are positive for CMV antibody and DNA. A drug of choice for treating this newly diagnosed infection is:
+Acyclovir
+Foscarnet
+Valganciclovir
+Zanamivir
+Tenofovir+ Lamivudine + Dolutegravir is not used:
+As first-line antiretroviral therapy for HIV positive male adults in Kenya
+To reduce the incidence of opportunistic infections in AIDS patients
+For prevention of mother to child transmission
+To increase survival time in AIDS patients
+
+SECTION B SHORT ANSWER QUESTIONS                                                        20 MARKS
+A 40-year old female newly diagnosed HIV patient develops uncomplicated malaria and cryptococcal meningitis. 
+How would you manage the patient?                   (4 Marks)
+Describe the mode of action of each of the drugs mentioned in a) above.                                           (8 Marks)
+Mention one side effect of each of the drugs the patient is taking.       (4 Marks)
+Why is atazanavir combined with ritonavir?       (2 Marks)
+State any four clinical applications of albendazole       (2 Marks)
+
+SECTION C: LONG ANSWER QUESTION                                                          20 MARKS. 
+Describe the general life cycle of viruses and with an example in each case, how drugs target different phases of the life cycle?                                                                            (10 Marks)
+State the clinical applications of each of the drugs mentioned in a) above.     ( 5 Marks) 
+Describe any two adverse effects of each of the drugs mentioned in a) above.  (5 Marks) 
+Ergosterol is an important component in fungi.
+Describe with examples how drugs can target ergosterol                    (6 Marks)
+Describe the clinical applications of the drugs mentioned in a) above       (4 Marks) 
+Describe any two side effects of each of the drugs mentioned in a) above       (6 Marks)
+Describe any two drug-drug interaction that can affect drugs mentioned in a) above                              (4 Marks)
+
+

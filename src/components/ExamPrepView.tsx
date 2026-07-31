@@ -3,6 +3,16 @@ import { Sparkles, Eye, EyeOff, Download, BookOpen, FileText, CheckCircle2, Awar
 import { EXAM_PREP_MODULES, STANDARD_EXAM_STRUCTURE, getExamPrepModule, type ExamUnitSpec, type ExamModuleSpec } from '../data/examPrepData';
 import { getExamPrepPaper, type GeneratedPaper } from '../data/examPrepPapers';
 
+// Count available paper variants for a unit (mock units have 3, real/OLD units have 1)
+const getPaperCount = (spec: ExamUnitSpec): number => {
+  const isReal = spec.source === 'real';
+  return isReal ? 1 : 3;
+};
+
+// Total papers across all units in a module
+const getModulePaperCount = (mod: ExamModuleSpec): number =>
+  mod.units.reduce((sum, u) => sum + getPaperCount(u), 0);
+
 const txt = (v: any): string => {
   if (v == null) return '';
   if (typeof v === 'string') return v;
@@ -103,7 +113,8 @@ function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
   const download = () => {
     if (!paper) return;
     const lines: string[] = [];
-    lines.push(`${paper.title} — Mock Paper ${paper.variant || variant}`);
+    const paperType = spec.source === 'real' ? 'Past Paper' : `Mock Paper ${paper.variant || variant}`;
+    lines.push(`${paper.title} — ${paperType}`);
     lines.push('='.repeat(60));
     lines.push('');
     paper.sections.forEach((sec) => {
@@ -142,12 +153,14 @@ function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
   if (!paper) {
     return (
       <div className="border border-[var(--border)] rounded-xl p-4 bg-[var(--surface)] text-xs text-[var(--text-muted)]">
-        Mock Paper {variant} is not available yet.
+        {spec.source === 'real' ? `Past Paper is not available` : `Mock Paper ${variant} is not available yet.`}
       </div>
     );
   }
 
-  const paperLabel = variant === 1 ? 'Paper One' : variant === 2 ? 'Paper Two' : `Paper ${variant}`;
+  const paperLabel = spec.source === 'real'
+    ? 'Past Paper'
+    : (variant === 1 ? 'Paper One' : variant === 2 ? 'Paper Two' : `Paper ${variant}`);
 
   return (
     <div className="border-2 border-[var(--border)] rounded-2xl bg-[var(--surface)] overflow-hidden w-full">
@@ -282,11 +295,19 @@ function ExamSubjectCard({ spec }: { spec: ExamUnitSpec }) {
           </div>
 
           <div className="space-y-4">
-            <div className="text-[12px] font-bold text-[var(--text)]">Mock Papers</div>
+            <div className="text-[12px] font-bold text-[var(--text)]">
+              {spec.source === 'real' ? 'Past Paper' : 'Mock Papers'}
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              <PaperCard spec={spec} variant={1} />
-              <PaperCard spec={spec} variant={2} />
-              <PaperCard spec={spec} variant={3} />
+              {spec.source === 'real' ? (
+                <PaperCard spec={spec} variant={1} />
+              ) : (
+                <>
+                  <PaperCard spec={spec} variant={1} />
+                  <PaperCard spec={spec} variant={2} />
+                  <PaperCard spec={spec} variant={3} />
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -309,7 +330,7 @@ function ModuleCard({ mod, onSelect }: { mod: ExamModuleSpec; onSelect: (id: str
           </div>
           <div className="flex-1">
             <h3 className="text-lg font-bold text-[var(--text)]">{mod.title}</h3>
-            <p className="text-[12px] text-[var(--text-muted)]">{mod.units.length} units · 3 mock papers each</p>
+            <p className="text-[12px] text-[var(--text-muted)]">{mod.units.length} units · {getModulePaperCount(mod)} papers</p>
           </div>
           <ArrowRight size={20} className="text-[var(--text-muted)] group-hover:text-[var(--primary)] transition-colors" />
         </div>
@@ -341,9 +362,9 @@ export default function ExamPrepView({ moduleId: initialModuleId, subjectId }: {
           <Sparkles size={20} className="text-[var(--primary)]" />
           <h2 className="text-xl font-bold text-[var(--text)]">Exam Prep</h2>
         </div>
-        <p className="text-sm text-[var(--text-muted)]">
-          Choose a module to start practising. Each unit has three full mock papers with answers.
-        </p>
+          <p className="text-sm text-[var(--text-muted)]">
+            Choose a module to start practising. Each unit has mock papers with answers; past papers are also available.
+          </p>
         <div className="grid gap-4">
           {EXAM_PREP_MODULES.map((mod) => (
             <ModuleCard key={mod.id} mod={mod} onSelect={setSelectedModuleId} />

@@ -1,0 +1,368 @@
+﻿
+2466975-608330
+KABARAK                            UNIVERSITY
+UNIVERSITY EXAMINATIONS
+MAIN CAMPUS
+FIRST SEMESTER, 2020/2021 ACADEMIC YEAR
+EXAMINATION FOR BACHELOR DEGREE IN PHARMACY
+
+PHAM 4117: CLINICAL PHARMACY III (PRINCIPLES OF 
+ANTIMICROBIAL THERAPY)
+
+STREAM: Y4S1   TIME: 9:00-11:00AM
+EXAMINATION SESSION: SEPT-DEC       DATE: 05/02/2021 
+
+READ INSTRUCTIONS CAREFULLY
+The examination paper has THREE (3) sections.                                [Total 100 Marks]
+Answer ALL questions in sections A&B and ONLY one in  C
+SECTION A has SIXTY Multiple Choice Questions.                                       [60 Marks]
+SECTION B has FOUR Short Answer Questions.                                             [20 Marks]
+SECTION C has TWO Long Answer Questions.                                                [20 Marks]
+Answer questions in the BOOKLET provided. Begin each of the questions in a new page of the answer booklet. 
+Adhere to the University examination rules and regulations
+Do not write anything on the question paper.
+
+SECTION A: ANSWER ALL THE QUESTIONS (60 marks)
+Selection of presumptive antimicrobial therapy is based on all the followingÂ except?
+Local susceptibility data.
+National susceptibility data.
+Patient host factors
+Drug factors
+The utility of an antibiogram is that it shows antimicrobial susceptibility trends
+Over a large geographic area.
+For an individual patient.
+In research laboratory strains.
+In a localized population.
+Which of the following is a possible reason for antimicrobial failure?
+Patient experienced drug toxicity
+Use of nonsynergistic antimicrobial drug combination therapy
+Surgical drainage of the infected site
+Development of antimicrobial drug resistance
+One of the following statements is most appropriate regarding a hospital antibiotic formulary
+Usually determined by the director of pharmacy
+Results in increased resistance rates.
+Is switched every year depending on drug cost.
+Encourages familiarity with core antimicrobials.
+Which of the following combinations would most likely contribute to the development of a superinfection?
+long-term use of narrow-spectrum antimicrobials
+long-term use of broad-spectrum antimicrobials
+short-term use of narrow-spectrum antimicrobials
+short-term use of broad-spectrum antimicrobials
+
+Â The consequences of antimicrobial resistance include all the following except?
+Higher risk for disability and death
+Higher healthcare cost
+Longer length of stay in hospital
+Increased usage of narrow spectrum antibiotics
+Which of the following is NOT effective in preventing the emergence or spread of antibiotic resistant pathogens
+Adherence to hand hygiene
+Contact isolation during hospitalisation for patients colonised with MRSA
+Treating infections for a longer duration
+Avoiding the use of antibiotics for viral infections
+Which is the MOST important action in combating antimicrobial resistance?
+Improving antibiotic use/ antibiotic stewardship
+Developing newer antibiotics and diagnostic tests
+Immunization
+Handwashing
+A 38 year old male was recently diagnosed with active tuberculosis while incarcerated He was started on standard four drug therapy (RHZE). Baseline lab values were ALT (SGPT) 42 units/L and AST (SGOT) 63 units/L. He was released from jail and his care was transferred to the local health department where an assessment revealed a social history of previous alcohol and cocaine use, bipolar disorder, and homelessness. What increases his risk of hepatotoxicity while taking TB medications?
+Alcohol use
+Cocaine use
+Bipolar disorder
+Homelessness
+A 38-year-old male was recently diagnosed with active tuberculosis while incarcerated He was started on standard four drug therapy (RHZE). Baseline lab values were ALT (SGPT) 42 units/L and AST (SGOT) 63 units/L. He was released from jail and his care was transferred to the local health department where an assessment revealed a social history of previous alcohol and cocaine use, bipolar disorder, and homelessness. During his follow up visit the patient complained that he was not feeling well. He admitted that he was still taking alcohol. His laboratory results revealed an increase in the ALT to 304 U/L and AST to 245 U/L. He was evaluated by the local health department physician, TB medications were stopped, he was instructed to return to the clinic for repeat labs, and he was re-educated to abstain from alcohol. What is the best approach to continue TB treatment?
+Restart all the TB medications once LFTs are normal.
+A drug rechallenge should be initiated once the ALT returns to < 2x the upper limit of normal.
+Discontinue TB treatment and have the patient follow-up every six months for symptoms of TB.
+Refer the patient to an alcohol rehabilitation center and restart all TB medications.
+A definitive diagnosis of tuberculosis is made with a:
+Chest x-ray
+Sputum smear
+Sputum culture
+Genexpert
+A patient is admitted with pneumonia. Sputum cultures show that the patient is infected with a gram positive bacterium. The patient is allergic to Penicillin. Which medication would the patient most likely be prescribed?*
+Macrolide
+Cephalosporins
+Pencillin G
+Amoxicillin
+
+A person with Legionella pneumophila pneumonia can be best treated with:
+Vancomycin.
+linezolid.
+Erythromycin.
+ceftazidime.
+Choose the most common organism which causes lobar pneumonia in children:
+Staphylococcus aureus
+Haemophilus influenzae
+Klebsiella pneumoniae
+Streptococcus pneumonia
+Mohan is a 53-year-old man who visits your office with a month of productive cough, 8 kilograms of weight loss, and night sweats. He has type II diabetes, for which he takes glyburide 5mg twice a day. He has a pleasant demeanor and you learn he is an avid cricket fan. In your initial investigation, you find that a chest X-ray shows a right upper lobe infiltrate, and sputum microscopy shows 2+ acid fast bacilli. He denies ever having had TB previously. You diagnose Mohan with pulmonary tuberculosis (TB) and decide to initiate him on once-daily treatment with isoniazid, rifampicin, pyrazinamide, and ethambutol (RHZE). He weighs 53 kilograms at the time of your initial evaluation. As you start Mohan on TB therapy, which of the following IS NOT a counseling point you should provide to counter potential medication adverse effects and to minimize drug-drug interactions, so that he is more likely to adhere and complete therapy?
+Advise him that he should not worry if his urine or tears turn red-orange color while on therapy
+Tell him that his TB medications should only be taken at bedtime
+Prescribe pyridoxine (vitamin B6) 50mg by mouth daily
+Advise him to visit his diabetes doctor soon after starting TB therapy, due to a risk of poorer blood sugar control while on TB therapy
+
+Mycobacterium tuberculosis bacteria avoid innate immunity by
+Interference with phagosome-lysosome fusion
+Presence of a polysaccharide capsule
+Destruction of complement components
+Living in an immuno-privileged tissue site
+One of the following is a feature of community acquired pneumonia (CAP)
+Contracted by a person with little contact with the healthcare system.
+Usually caused by Pseudomonas aeruginosa.
+Most cases are caused by Streptococcus pneumoniae.
+The most common cause is Haemophilus influenzae Type B (HIB)
+ The difference between latent TB infection and active TB disease is that:
+People with latent TB infection are not infectious whereas people with TB disease are sometimes infectious
+Only TB disease can be detected by a tuberculin skin test; latent TB infection cannot
+People with latent TB infection are infectious whereas people with TB disease are not
+Latent TB infection is curable but TB disease is not
+The most common early symptoms of pulmonary TB are
+Dry cough.
+Rales and rhonchi.
+Chest pain upon inspiration.
+Productive cough, malaise, and weight loss.
+The traditional approach of anti-Pseudomonal drugs combination while treating HAP is:
+Antipseudomonal Beta lactam with a Fluoroquinolone
+Antipseudomonal Beta lactam with Aminoglycoside 
+Antipseudomonal Beta lactam with a penicillin
+Antipseudomonal Beta lactam with a quinolone
+
+Typical bacterial pneumonia is caused by one of the following:
+Mycoplasma pneumonia
+Legionnaires pneumonia
+Pneumocystis carinii
+Staphylococcus aureus
+Which of the following is true regarding CURB-65 score:
+Respiratory rate scores higher than hypotension
+Hypoxaemia is a core adverse prognostic factor
+A Score of 3 to 5 mandates admission to the intensive care unit
+Antibiotics should be considered if the score is .2
+Which of the following medical conditions places a person at the highest risk of developing TB disease after becoming infected:
+HIV infection
+Diabetes
+Less than ideal body weight
+Pneumonia
+Which of the following statements is true of hepatotoxicity induced by antiTB drugs?
+Drug-induced hepatitis is the most frequent serious adverse reaction of the first-line drugs.
+Other causes of abnormal liver tests must be excluded before diagnosing drug-induced hepatitis.
+If LFTs are consistent with hepatotoxicity, all hepatotoxic drugs-must be stopped.
+All the statements are true
+Which of the following would be the most appropriate therapy for the treatment of Mycoplasma pneumonia in a patient with compliance issues and currently receiving theophylline?
+Erythromycin
+Azithromycin
+Clindamycin
+Clarithromycin
+Which of the following would you use for aspiration pneumonia with an intention to cover anaerobes?
+Piperacillin-Tazobactam
+Cefepime
+Ampicillin-sulbactam
+Cefazolin
+Within the body, TB organisms:
+Are engulfed and killed by macrophages.
+Reside indefinitely in an active stage in the body.
+Are walled off by macrophages in encapsulated granulomas called tubercles.
+Replicate and gain access to lymphatic channels through the bloodstream.
+According to the Jones Criteria, which one of the following sets of symptoms would indicate a positive diagnosis for Rheumatic fever?
+Carditis, fever, and an elevated WBC count
+Positive strep throat culture, arthritis, chorea
+Elevated ESR, Carditis, fever, and arthralgia
+Elevated C-reactive protein, Carditis, and fever
+Acute rheumatic fever (ARF) is
+suppurative sequel of group A streptococcus infection
+Heart disease that occurs two to four days after group A streptococcus pharyngitis.
+Heart disease that occurs 2- 4 weeks after group A streptococcus pharyngitis.
+heart disease that occurs 2- 4 weeks following group B streptococcus pharyngitis
+Prevention of initial attack of rheumatic fever (primary prevention) is accomplished through all the following interventions EXCEPT?
+Prompt diagnosis
+Appropriate choice of antibiotic treatment of group A streptococcal tonsillopharyngitis
+Appropriate duration of antibiotic treatment for group A streptococcal tonsillopharyngitis
+Using antibiotics to treat viral tonsillopharyngitis
+Regarding infective endocarditis which among the following is the most common bacteria in drug abusers?
+S. Epidermidis
+S. viridans
+S. Aureus
+S. pyogenes
+Rheumatic.Fever (RF) usually follows an infection with:
+Streptococcus group A
+Staphylococcus aureus
+Streptococcus viridans
+H.influenza
+Sub-Acute endocarditis usually follows an infection with:
+Streptococcus group A
+Staphylococcus aureus
+Streptococcus viridans
+H.influenza
+The minor criteria of rheumatic fever includes?
+Migratory arthralgia
+Carditis and valvulitis
+Erythema marginatum
+Subcutaneous nodules
+The probability of acute rheumatic fever is high when there is___________
+Group A streptococcal infection followed by two major manifestations or one major and two minor manifestations
+Two major manifestations
+One major and two minor manifestations.
+Two minor manifestations
+
+To diagnose a patient with R.F, The patient should have at least:
+One major, two minor
+Two major , one minor
+One major , one minor
+Two major, two minor
+Which of the following antibiotic regimens would be the most appropriate for a patient with viridans group streptococcal IE (penicillin MIC < 0.0125 mcg/mL [0.0125 mg/L]) in a patient reported allergy to penicillin (rash)?
+Ampicillin
+Penicillin G
+Cefazolin
+Ceftriaxone
+Which of the following is considered major criteria in the diagnosis of IE?
+A pre-existing murmur which has now become significantly worse
+A patient with an endocardial abscess
+A positive blood culture with Klebsiella pneumoniae in two separate blood cultures drawn 12 hours apart
+A patient who has a history of IV drug abuse for the past 5 years
+Which of the following is one of Joneâ€™s major criteria?
+Pancarditis
+Fever
+Elevated ESR
+Previous RF
+Which of the following is the best synergistic combination for treatment of a native-valve enterococcal endocarditis caused by strains susceptible to penicillin, aminoglycosides, and vancomycin?
+Ampicillin plus gentamicin
+Ampicillin plus tobramycin
+Ampicillin plus rifampin
+Vancomycin plus rifampin
+Which of the following is the most common manifestation of rheumatic fever
+Carditis
+arthritis
+chorea
+Subcutaneous nodules
+Which of the following patients should be recommended a prophylactic regimen prior to undergoing a major dental procedure involving manipulation of gingival tissue?
+A 4-year-old patient with repaired congenital heart defect at age 2
+A patient with a cardiac pacemaker
+A patient who recently received coronary artery stents after a heart attack
+A patient who had streptococcal endocarditis 20 years ago
+Which of the following statements BEST characterizes arthritis in Rheumatic fever?
+A) Inflammation affecting single joint only
+B) Inflammation affects several joints; each joint inflammation lasts for few days to a week.
+C) Always associated with subcutaneous nodules
+D) Non-migratory.
+Which of the following statements is FALSE regarding infective endocarditis (IE)?
+Coagulase-negative staphylococci are the predominant organism causing prosthetic valve endocarditis (PVE).
+Patients with HACEK organisms present acutely.
+IVDUs are at an increased risk of developing IE caused by less common organisms.
+A patient is more likely to present as a culture-negative if recently received antimicrobials.
+Which of the following treatments would be the MOST appropriate empiric treatment regimen for a PVE (prosthetic valve endocarditis) with S. aureus?
+Penicillin G plus gentamicin plus rifampin for 6 weeks
+Nafcillin plus gentamicin for 4 weeks plus surgery
+Vancomycin plus gentamicin for 4 weeks plus rifampin for 2 weeks
+Vancomycin plus rifampin for 6 weeks plus gentamicin for 2 weeks
+
+Which of the following valves is mostly affected in drug abusers?
+Aortic
+Mitral
+Tricuspid
+Bicuspid
+Which valves are commonly affected by R.F?
+Tricuspid, mitral
+Mitral, Aortic
+Tricuspid, pulmonary
+Aortic, pulmonary
+Why is Prophylaxis against group A streptococcal (GAS) infection important?
+To prevent recurrent rheumatic cardiac disease
+To prevent recurrence of tonsillitis
+To prevent joints deformity
+To prevent arthritis
+A 30 year old pregnant woman develops tuberculosis. Which of the following antitubercular drugs should not be used:
+INH
+Rifampicin
+Streptomycin
+Ethambutol
+ Which of the following are considered first-line drugs for TB?
+Isoniazid and clarithromycin
+Rifampin and clofazimine
+Ethambutol and isoniazid
+Streptomycin and cycloserine
+
+ All the following are the symptoms of active TB EXCEPT?
+Weight loss
+Night sweats
+Loss of appetite
+Haematemesis
+ An 82-year-old patient with documented pneumococcal pneumonia is unresponsive to 3 days of ceftriaxone. Gram-positive diplococci are present. Which action is most appropriate to take?
+Increase the dose of ceftriaxone
+Initiate Vancomycin Therapy
+Initiate Cefazolin
+Initiate Ampicillin/Sulbactam
+ A previously healthy 10-month-old patient was diagnosed for the first time with acute otitis media and was treated with amoxicillin 90 mg/kg daily. After 72 hours, the patient's fever and irritability persist. On examination, the right tympanic membrane is still bulging, red, and inflamed. Which treatment is most appropriate at this time?
+Continue amoxicillin 90mg/kg/day
+Change to amoxicillin/clavulanic acid (amoxicillin dosed at 90mg/kg/day)
+Change to Ceftriaxone 50mg/kg/day
+Change to levofloxacin
+ Haemophilus influenzae is responsible for meningitis in which category of people?
+Neonates
+Extremely aged people
+Infants and children
+Young Adults
+Classic symptoms of meningitis usually include;
+Fever, Headache, Stiff neck
+Backache, Hallucination, Indigestion
+Rash, Inner ear pain, Itching
+Dry skin, Dehydration, Cold sores 
+ A 19-year old architectural student is admitted from university halls of residence with a 24-hour history of headache, nausea, vomiting and listlessness. There is neck stiffness on physical examination. Which physical sign would preclude the taking of a cerebrospinal fluid via lumbar puncture?
+A positive Kernigâ€™s sign
+Tachycardia, i.e. heart rate above 150 per minute, and hypotension
+Purpuric skin rash
+Blurred disc on ophthalmoscopy
+Meningitis caused by Listeria monocytogenes is most likely in which category of patient?
+Cystic fibrosis
+Hodgkinâ€™s disease
+Recent travel abroad to the Tropics
+Ingestion of bioactive yogurt in the preceding 24 hours
+Rifampicin is administered as prophylaxis to close contacts of meningitis caused by which organism?
+Streptococcus pneumoniae
+Listeria monocytogenes
+Neisseria meningitidis group C
+Mycobacterium tuberculosis
+Which of the following is used in the treatment of meningococcal meningitis in patients allergic to penicillin?
+Ciprofloxacin
+Teicoplanin
+Meropenem
+Chloramphenicol 
+
+Which of the following is false regarding the Gram stain test?
+It is a complicated and time-consuming procedure.
+In conjunction with microscopic examination, it provides presumptive diagnosis and some identification of the potential bacterial pathogen.
+It is performed routinely on cerebral spinal fluid, urethral smears, and abscess, effusion, and sputum specimens.
+The procedure is one of the first tests run on a specimen brought to the laboratory.
+ ___________is the most common and most important bacteria responsible for pharyngitis?
+Corynebacterium diphtheriae
+Haemophilus influenzae (type B)
+Streptococcal tonsillitis
+Strep. Pyogenes (group A B-hemolytic)
+
+SECTION B: SHORT ANSWER ALL THE QUESTIONS (20 MARKS)
+Outline any four minor manifestations used in the diagnosis of acute rheumatic fever            
+                                                                                                                                      (4 Marks)
+Illustrate 4 symptoms and signs that should raise suspicion of pharyngitis of viral etiology             
+                                                                                                                                     (4 Marks)
+A 38-year old patient with a positive history of treatment for PTB 5 years ago presents to the chest clinic with chief complaints of malaise for the last 3 weeks, excessive sweating at night and unintended weight loss. Sputum for Gene Expert tests positive for rifampicin resistant MTB. Identify the diagnosis and design a five-drug treatment plan for this patient  (6 Marks)
+Describe any six core elements of establishing an antimicrobial stewardship program                 
+                                    (6 Marks)
+
+SECTION C: LONG ESSAY QUESTIONS (ANSWER ANY ONE QUESTION ONLY) (20 MARKS)
+A 19-year-old college student is brought to the emergency department with confusion. According to the roommate the patient began vomiting and complaining of a headache about 18-24 hours ago. She has no medical problems or sick contacts. She has no history of smoking but drinks alcohol moderately on weekends. Her temperature is 390C, her pulse is 117/min, RR is 14/min and blood pressure is 94/56 mmHg. She is lethargic and is oriented to self but not to time or location. Her pupils are bilaterally equal in size and reactive to light. Nuchal rigidity is present. Her extremities are somewhat cool to touch and her wrists and lower legs show petechiae. Physical examination reveals no other abnormality. Within 24 hours of admission into the critical care unit, the petechial rash on her extremities has developed into widespread purple lesions on her extremities, trunk and face.
+Identify the most probable diagnosis and the likely causative agent             (2 Marks)
+Justify your answer in (a) above.                                                                    (3 Marks)
+Describe (3) THREE investigations that you would recommend in order to support your diagnosis                                                                                                 (3 Marks)
+Review (5) FIVE  patient related factors that you would consider while selecting empirical antimicrobial therapy for this patient                                              (5 Marks)
+Propose an appropriate treatment plan for this patient                                   (4 Marks)
+List TWO (2) complications that you would be worried about in this patient(1 Mark)
+Explain how you would deal with the contacts of this patient                       (2 Marks)
+
+Mr. JW, age 40 years, lives at home and was previously healthy, but saw his physician one day ago, 5 days after returning from a conference abroad, where he had stayed in a large hotel and indulged his passion for frequent whirlpool baths. He Presented with dyspnea, pleuritic chest pain and sudden development of fever and cough, producing rusty sputum. He was disorientated. His respiratory rate was 33/min and SpO2 was 85%. His temperature was 38.80C. His urea was 8.5mmol/L. His BP was 100/68 mmHg and PR of 110B/min.
+Identify the most likely diagnosis including the most likely causative organism            
+           (2 Marks)
+Justify your answer in (a) above                                      (6 points @0.5 marks each)
+outline (2) TWO additional investigations that you would recommend      (2 Marks)
+Evaluate whether you would recommend treating this patient as an outpatient, inpatient (general ward) or in an intensive care unit. Justify your answer.   (4 Marks)
+Formulate a treatment plan for this patient                                                  (5 Marks)
+Using appropriate examples examine how you would monitor for response to treatment                                                                                                       (4 Marks)
+
+

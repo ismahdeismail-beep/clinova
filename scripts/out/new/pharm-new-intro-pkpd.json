@@ -1,0 +1,1275 @@
+{
+  "pharm-new-intro-pkpd": {
+    "1": {
+      "title": "General Principles: Intro, PK & PD",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A prodrug is best described as:",
+              "options": [
+                "A drug that is biologically inactive until metabolized in the body",
+                "A drug that directly binds to DNA response elements",
+                "A drug that is eliminated unchanged in urine",
+                "A drug that is highly protein-bound in plasma"
+              ],
+              "answer": "A drug that is biologically inactive until metabolized in the body",
+              "explanation": "Prodrugs require metabolic activation to exert their pharmacological effect, as seen with enalapril converting to enalaprilat."
+            },
+            {
+              "stem": "Which of the following drugs is an example of a prodrug metabolized by CYP3A4 to its active form?",
+              "options": [
+                "Enalapril",
+                "Morphine",
+                "Paracetamol",
+                "Aspirin"
+              ],
+              "answer": "Enalapril",
+              "explanation": "Enalapril is a prodrug hydrolyzed by esterases to its active metabolite enalaprilat, with CYP3A4 involvement in some pathways."
+            },
+            {
+              "stem": "Grapefruit juice primarily affects drug metabolism by:",
+              "options": [
+                "Inducing CYP3A4 in the liver",
+                "Inhibiting CYP3A4 in the intestinal wall",
+                "Inhibiting renal tubular secretion",
+                "Increasing gastric pH"
+              ],
+              "answer": "Inhibiting CYP3A4 in the intestinal wall",
+              "explanation": "Grapefruit juice irreversibly inhibits intestinal CYP3A4, reducing first-pass metabolism of drugs like simvastatin."
+            },
+            {
+              "stem": "Which of the following drugs is most likely to exhibit a high volume of distribution (Vd > total body water)?",
+              "options": [
+                "Gentamicin",
+                "Warfarin",
+                "Digoxin",
+                "Insulin"
+              ],
+              "answer": "Digoxin",
+              "explanation": "Digoxin has a high Vd (~500 L) due to extensive tissue binding, particularly in skeletal muscle."
+            },
+            {
+              "stem": "The phenomenon of drug redistribution is most characteristic of:",
+              "options": [
+                "Highly water-soluble drugs",
+                "Highly lipid-soluble drugs with rapid tissue uptake",
+                "Drugs with high plasma protein binding",
+                "Drugs excreted unchanged in urine"
+              ],
+              "answer": "Highly lipid-soluble drugs with rapid tissue uptake",
+              "explanation": "Redistribution occurs with highly lipid-soluble drugs like thiopentone, which rapidly move from blood to brain and then to muscle/fat."
+            },
+            {
+              "stem": "Which of the following drugs is primarily metabolized by acetylation, with clinical significance in slow vs. rapid acetylators?",
+              "options": [
+                "Isoniazid",
+                "Warfarin",
+                "Phenytoin",
+                "Propranolol"
+              ],
+              "answer": "Isoniazid",
+              "explanation": "Isoniazid undergoes N-acetylation by NAT2; slow acetylators are at higher risk of toxicity."
+            },
+            {
+              "stem": "The loading dose of a drug is calculated to achieve:",
+              "options": [
+                "Steady-state concentration rapidly",
+                "Peak plasma concentration immediately",
+                "Avoid first-pass metabolism",
+                "Minimize adverse effects"
+              ],
+              "answer": "Steady-state concentration rapidly",
+              "explanation": "Loading doses are used for drugs with long half-lives to reach therapeutic concentrations quickly."
+            },
+            {
+              "stem": "Clearance of a drug is best defined as:",
+              "options": [
+                "The volume of plasma cleared of drug per unit time",
+                "The time taken for plasma concentration to reduce by half",
+                "The fraction of drug absorbed after oral administration",
+                "The ratio of drug in tissues to plasma"
+              ],
+              "answer": "The volume of plasma cleared of drug per unit time",
+              "explanation": "Clearance (CL) = rate of elimination / plasma concentration, representing the body's efficiency in drug removal."
+            },
+            {
+              "stem": "After 4 half-lives of a drug following first-order elimination, approximately what percentage of the drug remains in the body?",
+              "options": [
+                "6.25%",
+                "12.5%",
+                "25%",
+                "50%"
+              ],
+              "answer": "6.25%",
+              "explanation": "After 4 half-lives, ~93.75% of the drug is eliminated, leaving ~6.25% remaining."
+            },
+            {
+              "stem": "Which of the following routes of administration can partially bypass first-pass metabolism?",
+              "options": [
+                "Oral",
+                "Sublingual",
+                "Intravenous",
+                "Intramuscular"
+              ],
+              "answer": "Sublingual",
+              "explanation": "Sublingual administration allows direct absorption into systemic circulation, avoiding hepatic first-pass metabolism."
+            },
+            {
+              "stem": "CYP450 enzyme induction by rifampicin typically results in:",
+              "options": [
+                "Increased drug efficacy",
+                "Decreased drug half-life",
+                "Increased risk of toxicity",
+                "Reduced bioavailability"
+              ],
+              "answer": "Decreased drug half-life",
+              "explanation": "Enzyme induction (e.g., rifampicin) increases drug metabolism, reducing half-life and therapeutic effect."
+            },
+            {
+              "stem": "Which of the following drugs is a known inhibitor of CYP3A4?",
+              "options": [
+                "Rifampicin",
+                "Phenytoin",
+                "Ketoconazole",
+                "Carbamazepine"
+              ],
+              "answer": "Ketoconazole",
+              "explanation": "Ketoconazole is a potent CYP3A4 inhibitor, increasing plasma levels of drugs like cyclosporine."
+            },
+            {
+              "stem": "Weak acids are more readily absorbed in the:",
+              "options": [
+                "Stomach (pH ~1-3)",
+                "Duodenum (pH ~5-6)",
+                "Ileum (pH ~7-8)",
+                "Colon (pH ~5-7)"
+              ],
+              "answer": "Stomach (pH ~1-3)",
+              "explanation": "Weak acids (e.g., aspirin) are non-ionized in acidic environments, favoring absorption."
+            },
+            {
+              "stem": "A drug with a high therapeutic index indicates:",
+              "options": [
+                "A wide margin of safety between effective and toxic doses",
+                "A narrow margin of safety requiring TDM",
+                "High potency but low efficacy",
+                "Poor bioavailability"
+              ],
+              "answer": "A wide margin of safety between effective and toxic doses",
+              "explanation": "Therapeutic index (TI) = TD50/ED50; a high TI means a larger dose can be given without toxicity."
+            },
+            {
+              "stem": "Which of the following is an example of a competitive antagonist?",
+              "options": [
+                "Naloxone at opioid receptors",
+                "Propranolol at beta-adrenergic receptors",
+                "Atropine at muscarinic receptors",
+                "Phenoxybenzamine at alpha-adrenergic receptors"
+              ],
+              "answer": "Atropine at muscarinic receptors",
+              "explanation": "Atropine competitively blocks muscarinic receptors, reversing acetylcholine effects."
+            },
+            {
+              "stem": "The volume of distribution (Vd) of a drug is 50 L in a 70 kg adult. This suggests the drug is:",
+              "options": [
+                "Confined to plasma",
+                "Distributed in extracellular fluid",
+                "Distributed throughout total body water",
+                "Sequestered in tissues"
+              ],
+              "answer": "Distributed in extracellular fluid",
+              "explanation": "Vd of 50 L (~0.7 L/kg) indicates distribution in extracellular fluid (plasma + interstitial space)."
+            },
+            {
+              "stem": "Which of the following drugs is highly bound to plasma proteins (>90%)?",
+              "options": [
+                "Warfarin",
+                "Gentamicin",
+                "Metformin",
+                "Atenolol"
+              ],
+              "answer": "Warfarin",
+              "explanation": "Warfarin is ~99% bound to albumin, affecting its distribution and drug interactions."
+            },
+            {
+              "stem": "A drug with a high first-pass metabolism will have:",
+              "options": [
+                "Low oral bioavailability",
+                "High oral bioavailability",
+                "No effect on dosing",
+                "Reduced renal clearance"
+              ],
+              "answer": "Low oral bioavailability",
+              "explanation": "High first-pass metabolism (e.g., propranolol) reduces the fraction of drug reaching systemic circulation."
+            },
+            {
+              "stem": "Which of the following is a phase II drug metabolism reaction?",
+              "options": [
+                "Oxidation by CYP450",
+                "Hydrolysis by esterases",
+                "Glucuronidation",
+                "Reduction by aldehyde reductase"
+              ],
+              "answer": "Glucuronidation",
+              "explanation": "Phase II reactions (e.g., glucuronidation) involve conjugation to increase water solubility."
+            },
+            {
+              "stem": "The redistribution phenomenon is clinically relevant for:",
+              "options": [
+                "Drugs with long half-lives",
+                "Highly lipid-soluble anaesthetics",
+                "Drugs with high plasma protein binding",
+                "Drugs excreted unchanged in urine"
+              ],
+              "answer": "Highly lipid-soluble anaesthetics",
+              "explanation": "Redistribution is critical for drugs like thiopentone, where initial CNS effects diminish as the drug moves to peripheral tissues."
+            },
+            {
+              "stem": "Which of the following drugs is metabolized by CYP2D6, and its efficacy is affected by genetic polymorphism?",
+              "options": [
+                "Warfarin",
+                "Codeine",
+                "Phenytoin",
+                "Isoniazid"
+              ],
+              "answer": "Codeine",
+              "explanation": "Codeine is a prodrug metabolized by CYP2D6 to morphine; poor metabolizers have reduced analgesic effect."
+            },
+            {
+              "stem": "A drug with a half-life of 4 hours is administered every 8 hours. What percentage of steady-state concentration is achieved after 24 hours?",
+              "options": [
+                "75%",
+                "87.5%",
+                "93.75%",
+                "96.875%"
+              ],
+              "answer": "87.5%",
+              "explanation": "After 3 half-lives (12 hours), ~87.5% of steady-state is achieved; additional doses approach 93.75% by 24 hours."
+            },
+            {
+              "stem": "Which of the following is a characteristic of a partial agonist?",
+              "options": [
+                "Binds irreversibly to the receptor",
+                "Produces a submaximal response even at high concentrations",
+                "Blocks the action of full agonists",
+                "Has higher efficacy than a full agonist"
+              ],
+              "answer": "Produces a submaximal response even at high concentrations",
+              "explanation": "Partial agonists (e.g., buprenorphine) activate receptors but cannot achieve maximal response."
+            },
+            {
+              "stem": "The area under the curve (AUC) in a drug concentration-time graph primarily reflects:",
+              "options": [
+                "Peak plasma concentration",
+                "Total drug exposure over time",
+                "Time to peak concentration",
+                "Drug absorption rate"
+              ],
+              "answer": "Total drug exposure over time",
+              "explanation": "AUC represents the total amount of drug that reaches systemic circulation."
+            },
+            {
+              "stem": "Which of the following drugs is an example of a drug that undergoes enterohepatic circulation?",
+              "options": [
+                "Digoxin",
+                "Paracetamol",
+                "Morphine",
+                "Aspirin"
+              ],
+              "answer": "Morphine",
+              "explanation": "Morphine undergoes enterohepatic circulation, prolonging its duration of action."
+            },
+            {
+              "stem": "A drug with a volume of distribution (Vd) of 3 L/kg in a 70 kg adult is most likely:",
+              "options": [
+                "Confined to plasma",
+                "Distributed in extracellular fluid",
+                "Highly tissue-bound",
+                "Excreted unchanged in urine"
+              ],
+              "answer": "Highly tissue-bound",
+              "explanation": "Vd of 210 L (~3 L/kg) suggests extensive tissue distribution, typical of lipid-soluble drugs."
+            },
+            {
+              "stem": "Which of the following drugs is a known substrate of P-glycoprotein (P-gp)?",
+              "options": [
+                "Digoxin",
+                "Warfarin",
+                "Metformin",
+                "Paracetamol"
+              ],
+              "answer": "Digoxin",
+              "explanation": "Digoxin is a P-gp substrate; inhibitors (e.g., verapamil) increase its bioavailability."
+            },
+            {
+              "stem": "The term 'spare receptors' refers to:",
+              "options": [
+                "Receptors that are not occupied at maximal drug response",
+                "Receptors that bind irreversibly to antagonists",
+                "Receptors that are only activated by partial agonists",
+                "Receptors that are down-regulated by chronic drug exposure"
+              ],
+              "answer": "Receptors that are not occupied at maximal drug response",
+              "explanation": "Spare receptors allow maximal response even when only a fraction of receptors are occupied."
+            },
+            {
+              "stem": "Which of the following is a pharmacodynamic interaction?",
+              "options": [
+                "Warfarin and amiodarone increasing INR",
+                "Probenecid increasing penicillin levels",
+                "Grapefruit juice inhibiting simvastatin metabolism",
+                "Rifampicin inducing warfarin metabolism"
+              ],
+              "answer": "Warfarin and amiodarone increasing INR",
+              "explanation": "Pharmacodynamic interactions involve additive or synergistic effects on drug response (e.g., amiodarone enhances warfarin's anticoagulant effect)."
+            },
+            {
+              "stem": "A drug with a high plasma protein binding (>95%) will have:",
+              "options": [
+                "A larger volume of distribution",
+                "A longer duration of action",
+                "Increased renal clearance",
+                "Reduced bioavailability"
+              ],
+              "answer": "A longer duration of action",
+              "explanation": "High plasma protein binding prolongs drug duration by reducing free drug available for metabolism/excretion."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "Define the following pharmacokinetic terms (1 mark each):",
+              "modelAnswer": {
+                "a": "Volume of Distribution (Vd): The theoretical volume that would be required to contain the total amount of drug in the body at the same concentration as in plasma.",
+                "b": "Clearance (CL): The volume of plasma cleared of drug per unit time, representing the body's efficiency in drug elimination.",
+                "c": "Half-life (t½): The time required for plasma drug concentration to decrease by 50% after reaching pseudo-steady state.",
+                "d": "Bioavailability (F): The fraction of an administered dose that reaches systemic circulation unchanged.",
+                "e": "First-pass metabolism: The metabolism of a drug during its first passage through the gut wall and liver, reducing the amount reaching systemic circulation."
+              }
+            },
+            {
+              "stem": "Explain the clinical significance of CYP450 enzyme induction and inhibition with examples (5 marks).",
+              "modelAnswer": "CYP450 induction (e.g., rifampicin, phenytoin) increases drug metabolism, reducing plasma levels and efficacy of substrates (e.g., warfarin, oral contraceptives). Inhibition (e.g., ketoconazole, grapefruit juice) decreases metabolism, increasing plasma levels and risk of toxicity (e.g., simvastatin-induced myopathy). Clinically, these interactions necessitate dose adjustments or alternative therapies."
+            },
+            {
+              "stem": "A patient is prescribed enalapril for hypertension. Enalapril is a prodrug. Describe its activation, mechanism of action, and clinical considerations (5 marks).",
+              "modelAnswer": "Enalapril is hydrolyzed by hepatic esterases to enalaprilat, its active metabolite. Enalaprilat inhibits ACE, reducing angiotensin II formation and aldosterone secretion, lowering BP. Clinical considerations: monitor for hyperkalemia, cough, angioedema; avoid in pregnancy; adjust dose in renal impairment."
+            },
+            {
+              "stem": "Compare and contrast pharmacodynamic and pharmacokinetic drug interactions with examples (5 marks).",
+              "modelAnswer": {
+                "Pharmacodynamic interactions": "Involve additive, synergistic, or antagonistic effects on drug response (e.g., warfarin + amiodarone increases INR).",
+                "Pharmacokinetic interactions": "Affect drug absorption, distribution, metabolism, or excretion (e.g., rifampicin induces warfarin metabolism, reducing INR)."
+              }
+            },
+            {
+              "stem": "A drug has a volume of distribution (Vd) of 0.6 L/kg in a 70 kg adult. Calculate its Vd and interpret its distribution characteristics (5 marks).",
+              "modelAnswer": "Vd = 0.6 L/kg × 70 kg = 42 L. This suggests the drug is distributed in extracellular fluid (plasma + interstitial space), typical of moderately protein-bound drugs (e.g., gentamicin)."
+            },
+            {
+              "stem": "List five factors that can alter drug absorption from the gastrointestinal tract (5 marks).",
+              "modelAnswer": {
+                "a": "Gastric pH (affects ionization of weak acids/bases)",
+                "b": "Gut motility (e.g., diarrhea reduces absorption)",
+                "c": "Food (e.g., high-fat meals delay absorption of some drugs)",
+                "d": "Drug formulation (e.g., enteric coating, sustained-release)",
+                "e": "Presence of other drugs (e.g., antacids, cholestyramine)"
+              }
+            },
+            {
+              "stem": "Explain the concept of 'redistribution' in pharmacokinetics with an example (5 marks).",
+              "modelAnswer": "Redistribution occurs when a highly lipid-soluble drug (e.g., thiopentone) rapidly moves from blood to highly perfused tissues (e.g., brain) and then redistributes to less perfused tissues (e.g., muscle, fat). Clinically, this shortens the duration of CNS effects despite a long elimination half-life."
+            },
+            {
+              "stem": "A patient is a rapid acetylator of isoniazid. What are the clinical implications of this phenotype (5 marks)?",
+              "modelAnswer": "Rapid acetylators metabolize isoniazid quickly, reducing plasma levels and efficacy against tuberculosis. They are less prone to peripheral neuropathy (a dose-related toxicity) but may require higher doses for therapeutic effect. Monitoring for treatment failure is essential."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 65-year-old patient presents with a prescription for methotrexate 10 mg weekly for rheumatoid arthritis. The patient asks you to explain the difference between the brand-name drug (e.g., Rheumatrex) and the generic version (methotrexate sodium).",
+              "modelAnswer": {
+                "a": "Branded vs. Generic Drugs (8 marks):",
+                "b": "Chemical Name (2 marks):",
+                "c": "Five Ideal Properties of Drugs (5 marks):"
+              }
+            },
+            {
+              "stem": "Discuss the four phases of clinical drug development, including their objectives, design, and key outcomes (15 marks).",
+              "modelAnswer": {
+                "a": "Phase I: Objectives and Design (3 marks)",
+                "b": "Phase II: Objectives and Design (3 marks)",
+                "c": "Phase III: Objectives and Design (3 marks)",
+                "d": "Phase IV: Objectives and Design (3 marks)",
+                "e": "Key Outcomes and Regulatory Implications (3 marks)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "General Principles: Intro, PK & PD",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A patient with hypertension is prescribed enalapril, a prodrug. Which of the following best describes the mechanism of action of enalapril?",
+              "options": [
+                "Directly inhibits angiotensin II receptors",
+                "Converted to enalaprilat by hepatic esterases to inhibit ACE",
+                "Blocks calcium channels in vascular smooth muscle",
+                "Stimulates renin release from the kidneys"
+              ],
+              "answer": "Converted to enalaprilat by hepatic esterases to inhibit ACE",
+              "explanation": "Enalapril is a prodrug that is hydrolyzed by hepatic esterases to its active metabolite, enalaprilat, which inhibits angiotensin-converting enzyme (ACE)."
+            },
+            {
+              "stem": "A patient with glaucoma is prescribed dipivefrin eye drops. Which of the following best explains the rationale for using a prodrug in this context?",
+              "options": [
+                "Dipivefrin has higher systemic bioavailability than epinephrine",
+                "Dipivefrin is more lipophilic and penetrates the cornea better than epinephrine",
+                "Dipivefrin directly stimulates beta-2 receptors in the eye",
+                "Dipivefrin is less likely to cause systemic adverse effects"
+              ],
+              "answer": "Dipivefrin is more lipophilic and penetrates the cornea better than epinephrine",
+              "explanation": "Dipivefrin is a prodrug of epinephrine designed to enhance corneal penetration due to its increased lipophilicity."
+            },
+            {
+              "stem": "Which of the following drugs is most likely to have its metabolism inhibited by grapefruit juice?",
+              "options": [
+                "Warfarin",
+                "Metformin",
+                "Simvastatin",
+                "Paracetamol"
+              ],
+              "answer": "Simvastatin",
+              "explanation": "Grapefruit juice inhibits CYP3A4, which metabolizes simvastatin, leading to increased plasma concentrations and risk of toxicity."
+            },
+            {
+              "stem": "A patient is prescribed cimetidine for peptic ulcer disease. Which of the following pharmacokinetic effects is most likely to occur when cimetidine is co-administered with a drug metabolized by CYP3A4?",
+              "options": [
+                "Increased clearance of the CYP3A4 substrate",
+                "Decreased half-life of the CYP3A4 substrate",
+                "Increased plasma concentration of the CYP3A4 substrate",
+                "Decreased volume of distribution of the CYP3A4 substrate"
+              ],
+              "answer": "Increased plasma concentration of the CYP3A4 substrate",
+              "explanation": "Cimetidine is a potent inhibitor of CYP3A4, leading to reduced metabolism and increased plasma concentrations of drugs metabolized by this enzyme."
+            },
+            {
+              "stem": "Which of the following drugs is most likely to induce CYP450 enzymes?",
+              "options": [
+                "Ketoconazole",
+                "Cimetidine",
+                "Rifampicin",
+                "Erythromycin"
+              ],
+              "answer": "Rifampicin",
+              "explanation": "Rifampicin is a well-known inducer of CYP450 enzymes, particularly CYP3A4 and CYP2C9, leading to increased drug metabolism."
+            },
+            {
+              "stem": "A neonate is prescribed a drug with a high degree of plasma protein binding. Which of the following pharmacokinetic parameters is most likely to be affected?",
+              "options": [
+                "Increased volume of distribution",
+                "Decreased half-life",
+                "Increased clearance",
+                "Decreased free drug concentration"
+              ],
+              "answer": "Increased volume of distribution",
+              "explanation": "Neonates have lower plasma protein concentrations, leading to decreased protein binding and an increased volume of distribution for highly protein-bound drugs."
+            },
+            {
+              "stem": "A drug with a high volume of distribution is most likely to be characterized by which of the following properties?",
+              "options": [
+                "Highly water-soluble",
+                "Extensively bound to plasma proteins",
+                "Highly lipid-soluble and tissue-bound",
+                "Rapidly eliminated by the kidneys"
+              ],
+              "answer": "Highly lipid-soluble and tissue-bound",
+              "explanation": "A high volume of distribution typically indicates that a drug is highly lipid-soluble and extensively distributed into tissues."
+            },
+            {
+              "stem": "Thiopentone, a highly lipid-soluble anesthetic, demonstrates marked redistribution. Which of the following best explains this phenomenon?",
+              "options": [
+                "Rapid renal elimination",
+                "High plasma protein binding",
+                "Initial distribution to highly perfused tissues followed by redistribution to less perfused tissues",
+                "Extensive hepatic metabolism"
+              ],
+              "answer": "Initial distribution to highly perfused tissues followed by redistribution to less perfused tissues",
+              "explanation": "Thiopentone's high lipid solubility leads to rapid initial distribution to the brain and other highly perfused tissues, followed by redistribution to less perfused tissues, causing its short duration of action."
+            },
+            {
+              "stem": "A patient with tuberculosis is prescribed isoniazid. Which of the following best describes the clinical significance of rapid acetylators of isoniazid?",
+              "options": [
+                "Increased risk of hepatotoxicity",
+                "Increased risk of peripheral neuropathy",
+                "Decreased efficacy due to rapid metabolism",
+                "Increased risk of drug-induced lupus"
+              ],
+              "answer": "Decreased efficacy due to rapid metabolism",
+              "explanation": "Rapid acetylators of isoniazid metabolize the drug more quickly, potentially reducing its therapeutic efficacy."
+            },
+            {
+              "stem": "Which of the following best describes the purpose of a loading dose?",
+              "options": [
+                "To achieve steady-state concentration rapidly",
+                "To minimize adverse effects",
+                "To reduce the total dose required",
+                "To prolong the duration of action"
+              ],
+              "answer": "To achieve steady-state concentration rapidly",
+              "explanation": "A loading dose is administered to quickly achieve a therapeutic plasma concentration, particularly for drugs with long half-lives."
+            },
+            {
+              "stem": "Which of the following best defines drug clearance?",
+              "options": [
+                "The volume of plasma from which a drug is completely removed per unit time",
+                "The time required for the plasma concentration of a drug to decrease by 50%",
+                "The ratio of the amount of drug in the body to the plasma concentration",
+                "The fraction of an orally administered dose that reaches systemic circulation"
+              ],
+              "answer": "The volume of plasma from which a drug is completely removed per unit time",
+              "explanation": "Clearance is defined as the volume of plasma from which a drug is completely removed per unit time, representing the body's efficiency in eliminating the drug."
+            },
+            {
+              "stem": "After how many half-lives is approximately 93% of a drug eliminated from the body in first-order kinetics?",
+              "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+              ],
+              "answer": "4",
+              "explanation": "In first-order kinetics, approximately 93% of a drug is eliminated after 4 half-lives."
+            },
+            {
+              "stem": "Which of the following routes of administration can partially bypass first-pass metabolism?",
+              "options": [
+                "Oral",
+                "Sublingual",
+                "Rectal",
+                "Intravenous"
+              ],
+              "answer": "Sublingual",
+              "explanation": "The sublingual route allows drugs to be absorbed directly into systemic circulation, partially bypassing first-pass hepatic metabolism."
+            },
+            {
+              "stem": "A drug with a high first-pass effect is administered orally. Which of the following adjustments is most likely required to achieve the same systemic exposure as an intravenous dose?",
+              "options": [
+                "Administer a higher oral dose",
+                "Administer a lower oral dose",
+                "Administer the same oral dose",
+                "Administer the drug rectally"
+              ],
+              "answer": "Administer a higher oral dose",
+              "explanation": "Due to first-pass metabolism, a higher oral dose is required to achieve the same systemic exposure as an intravenous dose."
+            },
+            {
+              "stem": "Which of the following best describes the effect of increased plasma protein binding on a drug's volume of distribution?",
+              "options": [
+                "Increases volume of distribution",
+                "Decreases volume of distribution",
+                "No effect on volume of distribution",
+                "Increases clearance"
+              ],
+              "answer": "Decreases volume of distribution",
+              "explanation": "Increased plasma protein binding reduces the free fraction of the drug available for distribution, thereby decreasing the volume of distribution."
+            },
+            {
+              "stem": "Which of the following drugs is most likely to have a high volume of distribution?",
+              "options": [
+                "Gentamicin",
+                "Warfarin",
+                "Digoxin",
+                "Insulin"
+              ],
+              "answer": "Digoxin",
+              "explanation": "Digoxin is highly lipid-soluble and extensively distributed into tissues, resulting in a high volume of distribution."
+            },
+            {
+              "stem": "A drug is administered as a prodrug that is converted to its active form by CYP2D6. Which of the following is most likely to occur in a poor metabolizer of CYP2D6?",
+              "options": [
+                "Increased therapeutic efficacy",
+                "Decreased therapeutic efficacy",
+                "Increased risk of toxicity",
+                "No change in efficacy"
+              ],
+              "answer": "Decreased therapeutic efficacy",
+              "explanation": "Poor metabolizers of CYP2D6 have reduced conversion of the prodrug to its active form, leading to decreased therapeutic efficacy."
+            },
+            {
+              "stem": "Which of the following best describes the phenomenon of drug redistribution?",
+              "options": [
+                "Movement of a drug from the bloodstream into tissues",
+                "Movement of a drug from tissues back into the bloodstream after initial distribution",
+                "Elimination of a drug via renal excretion",
+                "Metabolism of a drug in the liver"
+              ],
+              "answer": "Movement of a drug from tissues back into the bloodstream after initial distribution",
+              "explanation": "Redistribution refers to the movement of a drug from highly perfused tissues back into the bloodstream, particularly after initial distribution."
+            },
+            {
+              "stem": "A drug with a half-life of 6 hours is administered every 6 hours. How long will it take to reach steady-state concentration?",
+              "options": [
+                "12 hours",
+                "24 hours",
+                "30 hours",
+                "36 hours"
+              ],
+              "answer": "30 hours",
+              "explanation": "Steady-state concentration is typically achieved after approximately 5 half-lives, which is 30 hours for a drug with a 6-hour half-life."
+            },
+            {
+              "stem": "Which of the following best describes the effect of enzyme induction on drug metabolism?",
+              "options": [
+                "Decreased drug clearance",
+                "Increased drug clearance",
+                "No effect on drug clearance",
+                "Decreased half-life"
+              ],
+              "answer": "Increased drug clearance",
+              "explanation": "Enzyme induction increases the activity of drug-metabolizing enzymes, leading to increased drug clearance and reduced plasma concentrations."
+            },
+            {
+              "stem": "A patient is prescribed phenytoin, a drug metabolized by CYP2C9. Which of the following is most likely to occur if the patient starts taking rifampicin concurrently?",
+              "options": [
+                "Increased phenytoin levels",
+                "Decreased phenytoin levels",
+                "No change in phenytoin levels",
+                "Increased risk of phenytoin toxicity"
+              ],
+              "answer": "Decreased phenytoin levels",
+              "explanation": "Rifampicin is an inducer of CYP2C9, which metabolizes phenytoin, leading to decreased phenytoin levels and potential loss of efficacy."
+            },
+            {
+              "stem": "Which of the following best describes the effect of obesity on the volume of distribution of a lipophilic drug?",
+              "options": [
+                "Decreased volume of distribution",
+                "Increased volume of distribution",
+                "No effect on volume of distribution",
+                "Decreased clearance"
+              ],
+              "answer": "Increased volume of distribution",
+              "explanation": "Obesity increases the adipose tissue mass, which can sequester lipophilic drugs, leading to an increased volume of distribution."
+            },
+            {
+              "stem": "A drug has a high degree of plasma protein binding. Which of the following is most likely to occur if the patient develops hypoalbuminemia?",
+              "options": [
+                "Increased free drug concentration",
+                "Decreased free drug concentration",
+                "Increased volume of distribution",
+                "Decreased clearance"
+              ],
+              "answer": "Increased free drug concentration",
+              "explanation": "Hypoalbuminemia reduces plasma protein binding, leading to an increased free fraction of the drug and potential toxicity."
+            },
+            {
+              "stem": "Which of the following best describes the effect of first-pass metabolism on drug bioavailability?",
+              "options": [
+                "Increases bioavailability",
+                "Decreases bioavailability",
+                "No effect on bioavailability",
+                "Increases volume of distribution"
+              ],
+              "answer": "Decreases bioavailability",
+              "explanation": "First-pass metabolism reduces the fraction of an orally administered dose that reaches systemic circulation, thereby decreasing bioavailability."
+            },
+            {
+              "stem": "A drug is administered as a prodrug that is converted to its active form by a specific enzyme. Chronic administration of the prodrug leads to induction of the enzyme. Which of the following is most likely to occur?",
+              "options": [
+                "Decreased potency of the active drug",
+                "Increased potency of the active drug",
+                "Decreased efficacy of the active drug",
+                "Increased efficacy of the active drug"
+              ],
+              "answer": "Increased efficacy of the active drug",
+              "explanation": "Enzyme induction increases the conversion of the prodrug to its active form, leading to increased efficacy of the active drug."
+            },
+            {
+              "stem": "Which of the following best describes the effect of a competitive antagonist on a dose-response curve?",
+              "options": [
+                "Shifts the curve to the left",
+                "Shifts the curve to the right",
+                "Decreases the maximum response",
+                "Increases the maximum response"
+              ],
+              "answer": "Shifts the curve to the right",
+              "explanation": "A competitive antagonist binds reversibly to the receptor, requiring a higher concentration of the agonist to achieve the same effect, shifting the dose-response curve to the right."
+            },
+            {
+              "stem": "A drug has a narrow therapeutic index. Which of the following best describes the clinical significance of this property?",
+              "options": [
+                "Wide margin of safety",
+                "Narrow margin of safety",
+                "No effect on dosing",
+                "Increased efficacy"
+              ],
+              "answer": "Narrow margin of safety",
+              "explanation": "A narrow therapeutic index indicates a small difference between the therapeutic dose and the toxic dose, requiring careful dosing and monitoring."
+            },
+            {
+              "stem": "Which of the following best describes the effect of a non-competitive antagonist on a dose-response curve?",
+              "options": [
+                "Shifts the curve to the left",
+                "Shifts the curve to the right",
+                "Decreases the maximum response",
+                "Increases the maximum response"
+              ],
+              "answer": "Decreases the maximum response",
+              "explanation": "A non-competitive antagonist binds irreversibly to the receptor, reducing the maximum response achievable by the agonist."
+            },
+            {
+              "stem": "A drug is administered intravenously. Which of the following best describes its bioavailability?",
+              "options": [
+                "0%",
+                "50%",
+                "100%",
+                "Depends on the drug"
+              ],
+              "answer": "100%",
+              "explanation": "Intravenous administration delivers the drug directly into systemic circulation, resulting in 100% bioavailability."
+            },
+            {
+              "stem": "Which of the following best describes the effect of a partial agonist on a dose-response curve?",
+              "options": [
+                "Shifts the curve to the left",
+                "Shifts the curve to the right",
+                "Produces a lower maximum response than a full agonist",
+                "Increases the maximum response"
+              ],
+              "answer": "Produces a lower maximum response than a full agonist",
+              "explanation": "A partial agonist binds to the receptor but produces a lower maximum response compared to a full agonist."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "Define the following pharmacokinetic terms (2 marks each):",
+              "modelAnswer": {
+                "a": "Volume of distribution (Vd): The theoretical volume that would be necessary to contain the total amount of an administered drug at the same concentration that is observed in the blood plasma.",
+                "b": "Clearance (CL): The volume of plasma from which a drug is completely removed per unit time, representing the body's efficiency in eliminating the drug.",
+                "c": "Bioavailability (F): The fraction of an administered dose of drug that reaches the systemic circulation unchanged.",
+                "d": "Half-life (t½): The time required for the plasma concentration of a drug to decrease by 50%."
+              }
+            },
+            {
+              "stem": "Describe the four types of adverse drug reactions (ADRs) according to the Rawlins–Thompson classification (10 marks).",
+              "modelAnswer": {
+                "Type A (Augmented) reactions": "Dose-dependent and predictable, often extensions of the drug's pharmacological effects (e.g., bleeding with warfarin).",
+                "Type B (Bizarre) reactions": "Idiosyncratic and unpredictable, not related to the drug's pharmacological effects (e.g., anaphylaxis with penicillin).",
+                "Type C (Chronic) reactions": "Related to prolonged drug use (e.g., osteoporosis with long-term corticosteroid use).",
+                "Type D (Delayed) reactions": "Occur long after drug administration (e.g., carcinogenesis with alkylating agents)."
+              }
+            },
+            {
+              "stem": "A 65-year-old male patient is prescribed warfarin for atrial fibrillation. He is also taking simvastatin for hyperlipidemia. Grapefruit juice is a known inhibitor of CYP3A4. Explain the potential pharmacokinetic interaction between simvastatin and grapefruit juice (5 marks).",
+              "modelAnswer": "Grapefruit juice inhibits CYP3A4, an enzyme responsible for metabolizing simvastatin. This inhibition reduces the clearance of simvastatin, leading to increased plasma concentrations of the drug. Higher simvastatin levels increase the risk of adverse effects, such as myopathy and rhabdomyolysis. Clinically, this interaction may necessitate dose reduction of simvastatin or avoidance of grapefruit juice."
+            },
+            {
+              "stem": "Explain the concept of enzyme induction and provide two examples of drugs that induce CYP450 enzymes (5 marks).",
+              "modelAnswer": {
+                "Concept": "Enzyme induction refers to the increase in the activity of drug-metabolizing enzymes (e.g., CYP450) due to exposure to certain drugs or substances. This leads to enhanced metabolism of substrates, reducing their plasma concentrations and potentially decreasing their therapeutic efficacy.",
+                "Examples": [
+                  "Rifampicin (induces CYP3A4, CYP2C9, and others)",
+                  "Phenytoin (induces CYP3A4 and CYP2C9)"
+                ]
+              }
+            },
+            {
+              "stem": "A patient with rheumatoid arthritis is prescribed methotrexate. Methotrexate is a substrate for the enzyme dihydrofolate reductase and is metabolized via hepatic enzymes. Explain the clinical significance of methotrexate's high plasma protein binding (5 marks).",
+              "modelAnswer": "Methotrexate is highly bound to plasma proteins (primarily albumin). High plasma protein binding limits the free fraction of the drug available for distribution and pharmacological activity. However, displacement of methotrexate from plasma proteins by other highly protein-bound drugs (e.g., sulfonamides, NSAIDs) can increase the free drug concentration, leading to toxicity. Monitoring for signs of methotrexate toxicity (e.g., bone marrow suppression, mucositis) is essential in such cases."
+            },
+            {
+              "stem": "Define the terms potency and efficacy in the context of dose-response curves (5 marks).",
+              "modelAnswer": {
+                "Potency": "The amount of drug required to produce a given effect. It is represented by the position of the dose-response curve along the x-axis (dose). A more potent drug requires a lower dose to achieve the same effect.",
+                "Efficacy": "The maximum effect that a drug can produce, regardless of dose. It is represented by the height of the dose-response curve on the y-axis (effect). A drug with higher efficacy produces a greater maximum effect."
+              }
+            },
+            {
+              "stem": "A 30-year-old female patient is prescribed lamotrigine for epilepsy. Lamotrigine is metabolized primarily by glucuronidation. Explain the clinical significance of genetic variability in glucuronidation enzymes (e.g., UGT1A4) (5 marks).",
+              "modelAnswer": "Genetic variability in glucuronidation enzymes (e.g., UGT1A4) can lead to differences in lamotrigine metabolism. Poor metabolizers may have higher plasma concentrations of lamotrigine, increasing the risk of adverse effects (e.g., rash, dizziness). Conversely, rapid metabolizers may have subtherapeutic drug levels, leading to reduced seizure control. Therapeutic drug monitoring (TDM) and dose adjustments may be necessary to optimize therapy."
+            },
+            {
+              "stem": "Calculate the bioavailability of a drug administered orally if 70% of the dose is absorbed and the hepatic extraction ratio is 0.4 (2 marks).",
+              "modelAnswer": "Bioavailability (F) = Fraction absorbed × (1 - Hepatic extraction ratio) = 0.7 × (1 - 0.4) = 0.7 × 0.6 = 0.42 or 42%."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A patient presents to your pharmacy with a prescription for a branded drug that is not in stock. The patient is unfamiliar with generic drugs and asks for an explanation. Additionally, the patient inquires about the chemical name of a drug and the ideal properties of drugs.",
+              "modelAnswer": {
+                "a": "Explain and distinguish between branded drugs and generic drugs (8 marks):",
+                "subsections": {
+                  "Ideal properties": [
+                    {
+                      "Property": "Effectiveness",
+                      "Description": "The drug should produce the desired therapeutic effect in the target population."
+                    },
+                    {
+                      "Property": "Safety",
+                      "Description": "The drug should have a wide therapeutic index, with minimal risk of adverse effects at therapeutic doses."
+                    },
+                    {
+                      "Property": "Selectivity",
+                      "Description": "The drug should selectively target the desired biological pathway or receptor, minimizing off-target effects."
+                    },
+                    {
+                      "Property": "Predictability",
+                      "Description": "The drug's pharmacokinetics and pharmacodynamics should be predictable, allowing for consistent dosing and therapeutic outcomes."
+                    },
+                    {
+                      "Property": "Chemical stability",
+                      "Description": "The drug should be chemically stable under typical storage conditions, ensuring a long shelf life and consistent potency."
+                    }
+                  ]
+                },
+                "b": "Explain what a chemical name is (2 marks):",
+                "c": "Discuss five ideal properties of drugs (5 marks):"
+              }
+            },
+            {
+              "stem": "Discuss three sources of drugs and provide examples for each (3 marks for sources, 12 marks for discussion).",
+              "modelAnswer": {
+                "a": "Sources of drugs (3 marks):",
+                "subsections": {
+                  "Natural sources": "Natural sources have been used for centuries to derive medicinal compounds. Plants, in particular, have provided many important drugs, such as morphine (analgesic) and digoxin (cardiac glycoside). However, natural sources can have limitations, such as variability in compound concentration, difficulty in standardization, and potential for contamination or adulteration. Additionally, some natural compounds may have narrow therapeutic indices or significant adverse effects.",
+                  "Synthetic sources": "Synthetic drugs offer several advantages, including consistency in compound purity, potency, and formulation. They can be designed to optimize pharmacokinetic and pharmacodynamic properties, such as improved bioavailability or reduced adverse effects. Synthetic drugs also allow for the development of novel compounds that may not exist in nature. However, synthetic drugs may require extensive research and development, and some may have complex synthesis processes that increase costs.",
+                  "Biotechnology sources": "Biotechnology has revolutionized drug development, particularly in the fields of oncology, immunology, and endocrinology. Drugs produced using biotechnology, such as monoclonal antibodies and recombinant proteins, offer high specificity and targeted therapy. These drugs can be designed to interact with specific molecular targets, reducing off-target effects and improving efficacy. However, biotech drugs are often expensive to produce and may require specialized administration (e.g., intravenous infusion). Additionally, immunogenicity (e.g., development of anti-drug antibodies) can be a concern with some biotech drugs."
+                },
+                "b": "Discussion of sources (12 marks):"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "General Principles: Intro, PK & PD",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 45-year-old male with hypertension is prescribed enalapril, a prodrug. Which enzyme is primarily responsible for converting enalapril to its active form, enalaprilat?",
+              "options": [
+                "Alcohol dehydrogenase",
+                "Xanthine oxidase",
+                "Angiotensin-converting enzyme (ACE)",
+                "Dipeptidyl peptidase-4 (DPP-4)"
+              ],
+              "answer": "Angiotensin-converting enzyme (ACE)",
+              "explanation": "Enalapril is a prodrug that is hydrolyzed by ACE in the liver to its active metabolite, enalaprilat."
+            },
+            {
+              "stem": "A patient with glaucoma is prescribed dipivefrine, a prodrug of epinephrine. Which of the following best describes the rationale for using a prodrug in this context?",
+              "options": [
+                "To increase systemic absorption",
+                "To reduce ocular irritation and improve corneal penetration",
+                "To prolong the duration of action",
+                "To enhance renal elimination"
+              ],
+              "answer": "To reduce ocular irritation and improve corneal penetration",
+              "explanation": "Dipivefrine is a lipophilic prodrug of epinephrine designed to enhance corneal penetration and reduce local irritation."
+            },
+            {
+              "stem": "A 60-year-old female with rheumatoid arthritis is started on azathioprine. She is a known slow acetylator. Which of the following adverse effects is she at higher risk for developing?",
+              "options": [
+                "Peripheral neuropathy",
+                "Hepatotoxicity",
+                "Cardiotoxicity",
+                "Nephrotoxicity"
+              ],
+              "answer": "Hepatotoxicity",
+              "explanation": "Slow acetylators are at increased risk of hepatotoxicity due to accumulation of the active metabolite, 6-mercaptopurine."
+            },
+            {
+              "stem": "A 30-year-old male is prescribed ketoconazole for a fungal infection. Which cytochrome P450 enzyme is primarily inhibited by ketoconazole, leading to significant drug interactions?",
+              "options": [
+                "CYP2D6",
+                "CYP3A4",
+                "CYP2C9",
+                "CYP1A2"
+              ],
+              "answer": "CYP3A4",
+              "explanation": "Ketoconazole is a potent inhibitor of CYP3A4, which metabolizes many drugs, leading to elevated plasma levels and potential toxicity."
+            },
+            {
+              "stem": "A 55-year-old female with epilepsy is stabilized on phenytoin. She is also started on rifampicin for tuberculosis. What is the expected effect of rifampicin on phenytoin levels?",
+              "options": [
+                "Increased phenytoin levels due to enzyme inhibition",
+                "Decreased phenytoin levels due to enzyme induction",
+                "No change in phenytoin levels",
+                "Increased phenytoin absorption"
+              ],
+              "answer": "Decreased phenytoin levels due to enzyme induction",
+              "explanation": "Rifampicin is a potent inducer of CYP3A4 and other enzymes, increasing phenytoin metabolism and reducing its plasma levels."
+            },
+            {
+              "stem": "A 28-year-old pregnant female with a history of epilepsy requires antiepileptic therapy. Which of the following pharmacokinetic changes is most likely to occur in pregnancy?",
+              "options": [
+                "Increased volume of distribution due to increased plasma protein binding",
+                "Decreased volume of distribution due to increased total body water",
+                "Increased clearance due to increased hepatic enzyme activity",
+                "Decreased clearance due to reduced renal blood flow"
+              ],
+              "answer": "Increased clearance due to increased hepatic enzyme activity",
+              "explanation": "Pregnancy increases hepatic enzyme activity, leading to increased drug clearance for many medications."
+            },
+            {
+              "stem": "A 70-year-old male with chronic kidney disease is prescribed a highly protein-bound drug. Which of the following changes in pharmacokinetics is most likely to occur in this patient?",
+              "options": [
+                "Increased volume of distribution due to reduced protein binding",
+                "Decreased volume of distribution due to increased protein binding",
+                "Increased half-life due to reduced clearance",
+                "Decreased half-life due to increased clearance"
+              ],
+              "answer": "Increased volume of distribution due to reduced protein binding",
+              "explanation": "Reduced protein binding in chronic kidney disease increases the free fraction of the drug, leading to a larger volume of distribution."
+            },
+            {
+              "stem": "A 40-year-old male is administered thiopentone for induction of anesthesia. Which of the following best explains the rapid recovery from anesthesia despite the drug's long elimination half-life?",
+              "options": [
+                "Rapid renal excretion",
+                "Redistribution from the brain to peripheral tissues",
+                "Metabolism by plasma cholinesterase",
+                "High plasma protein binding"
+              ],
+              "answer": "Redistribution from the brain to peripheral tissues",
+              "explanation": "Thiopentone is highly lipid-soluble and redistributes rapidly from the brain to peripheral tissues, leading to a quick offset of action."
+            },
+            {
+              "stem": "A 50-year-old female is prescribed a drug with a narrow therapeutic index. Which of the following pharmacokinetic parameters is most critical for monitoring to avoid toxicity?",
+              "options": [
+                "Volume of distribution",
+                "Clearance",
+                "Half-life",
+                "Bioavailability"
+              ],
+              "answer": "Clearance",
+              "explanation": "Clearance determines the rate of drug elimination and is critical for maintaining drug concentrations within the therapeutic range."
+            },
+            {
+              "stem": "A 35-year-old male is administered a drug with first-order elimination kinetics. After 4 half-lives, what percentage of the drug has been eliminated from the body?",
+              "options": [
+                "84%",
+                "93%",
+                "80.5%",
+                "75%"
+              ],
+              "answer": "93%",
+              "explanation": "After 4 half-lives, approximately 93% of the drug has been eliminated from the body in first-order kinetics."
+            },
+            {
+              "stem": "A 45-year-old female is prescribed a drug that undergoes significant first-pass metabolism. Which route of administration would bypass first-pass metabolism?",
+              "options": [
+                "Oral",
+                "Sublingual",
+                "Rectal",
+                "Intramuscular"
+              ],
+              "answer": "Sublingual",
+              "explanation": "Sublingual administration allows the drug to be absorbed directly into the systemic circulation, bypassing first-pass metabolism."
+            },
+            {
+              "stem": "A 60-year-old male is prescribed simvastatin for hyperlipidemia. He is advised to avoid grapefruit juice. Which enzyme is inhibited by grapefruit juice, leading to increased simvastatin levels?",
+              "options": [
+                "CYP2D6",
+                "CYP3A4",
+                "CYP2C9",
+                "CYP1A2"
+              ],
+              "answer": "CYP3A4",
+              "explanation": "Grapefruit juice inhibits CYP3A4, which metabolizes simvastatin, leading to elevated plasma levels and increased risk of myopathy."
+            },
+            {
+              "stem": "A 25-year-old female is prescribed a weak acid drug for a urinary tract infection. Which of the following best describes the absorption of weak acids in the stomach?",
+              "options": [
+                "Absorbed efficiently in the acidic environment of the stomach",
+                "Absorbed poorly in the acidic environment of the stomach",
+                "Absorbed efficiently in the alkaline environment of the intestine",
+                "Absorbed poorly in the alkaline environment of the intestine"
+              ],
+              "answer": "Absorbed efficiently in the acidic environment of the stomach",
+              "explanation": "Weak acids are non-ionized in acidic environments, allowing efficient absorption across the gastric mucosa."
+            },
+            {
+              "stem": "A 55-year-old male is prescribed two drugs with similar mechanisms of action. Drug A has a higher potency than Drug B. Which of the following statements is correct?",
+              "options": [
+                "Drug A produces a greater maximal effect than Drug B",
+                "Drug A requires a lower dose to achieve the same effect as Drug B",
+                "Drug A has a higher efficacy than Drug B",
+                "Drug A has a narrower therapeutic index than Drug B"
+              ],
+              "answer": "Drug A requires a lower dose to achieve the same effect as Drug B",
+              "explanation": "Potency refers to the amount of drug required to produce a given effect; a higher potency means a lower dose is needed."
+            },
+            {
+              "stem": "A 40-year-old female is prescribed a drug that binds to a receptor and produces a maximal effect even when only a fraction of the receptors are occupied. Which of the following terms describes this phenomenon?",
+              "options": [
+                "Competitive antagonism",
+                "Spare receptors",
+                "Partial agonism",
+                "Irreversible antagonism"
+              ],
+              "answer": "Spare receptors",
+              "explanation": "Spare receptors allow a maximal response to be achieved with less than full receptor occupancy, increasing the sensitivity of the system."
+            },
+            {
+              "stem": "A 30-year-old male is prescribed a beta-blocker for hypertension. Which of the following best describes the mechanism of action of a beta-blocker?",
+              "options": [
+                "Agonist at beta-adrenergic receptors",
+                "Antagonist at beta-adrenergic receptors",
+                "Partial agonist at beta-adrenergic receptors",
+                "Inverse agonist at beta-adrenergic receptors"
+              ],
+              "answer": "Antagonist at beta-adrenergic receptors",
+              "explanation": "Beta-blockers are competitive antagonists at beta-adrenergic receptors, blocking the effects of catecholamines."
+            },
+            {
+              "stem": "A 50-year-old female is prescribed a drug that binds to intracellular receptors and regulates gene expression. Which of the following drug classes is most likely to act through this mechanism?",
+              "options": [
+                "Beta-agonists",
+                "Opioids",
+                "Corticosteroids",
+                "Proton pump inhibitors"
+              ],
+              "answer": "Corticosteroids",
+              "explanation": "Corticosteroids bind to intracellular glucocorticoid receptors, forming a complex that regulates gene transcription."
+            },
+            {
+              "stem": "A 45-year-old male is prescribed a drug that acts as a pharmacological antagonist. Which of the following best describes a pharmacological antagonist?",
+              "options": [
+                "A drug that binds to the same receptor as the agonist and produces the opposite effect",
+                "A drug that binds to a different receptor and produces the opposite effect",
+                "A drug that binds to the agonist and prevents it from acting",
+                "A drug that binds to the receptor and produces a submaximal effect"
+              ],
+              "answer": "A drug that binds to the same receptor as the agonist and produces the opposite effect",
+              "explanation": "A pharmacological antagonist binds to the same receptor as the agonist but does not activate it, blocking the agonist's effect."
+            },
+            {
+              "stem": "A 35-year-old female is prescribed a drug that is a substrate for CYP2D6. She is also started on quinidine, a known inhibitor of CYP2D6. What is the expected effect on the drug's metabolism?",
+              "options": [
+                "Increased metabolism and reduced drug levels",
+                "Decreased metabolism and increased drug levels",
+                "No change in metabolism",
+                "Increased renal excretion"
+              ],
+              "answer": "Decreased metabolism and increased drug levels",
+              "explanation": "Quinidine inhibits CYP2D6, reducing the metabolism of drugs that are substrates for this enzyme, leading to elevated plasma levels."
+            },
+            {
+              "stem": "A 60-year-old male is prescribed phenobarbitone for seizure control. Which of the following best describes the effect of phenobarbitone on drug metabolism?",
+              "options": [
+                "Enzyme inhibition",
+                "Enzyme induction",
+                "Reduced renal excretion",
+                "Increased plasma protein binding"
+              ],
+              "answer": "Enzyme induction",
+              "explanation": "Phenobarbitone is a potent inducer of hepatic enzymes, increasing the metabolism of many drugs."
+            },
+            {
+              "stem": "A 28-year-old female is prescribed a drug with a volume of distribution (Vd) of 0.6 L/kg. Which of the following best describes the distribution of this drug?",
+              "options": [
+                "Confined to the vascular compartment",
+                "Distributed throughout total body water",
+                "Highly bound to plasma proteins",
+                "Sequestered in body tissues"
+              ],
+              "answer": "Confined to the vascular compartment",
+              "explanation": "A Vd of 0.6 L/kg approximates the plasma volume, indicating the drug is largely confined to the vascular compartment."
+            },
+            {
+              "stem": "A 55-year-old male is prescribed a drug that is 98% bound to plasma proteins. Which of the following changes is most likely to occur if the patient develops hypoalbuminemia?",
+              "options": [
+                "Increased volume of distribution",
+                "Decreased volume of distribution",
+                "Increased half-life",
+                "Decreased half-life"
+              ],
+              "answer": "Increased volume of distribution",
+              "explanation": "Reduced plasma protein binding increases the free fraction of the drug, leading to a larger volume of distribution."
+            },
+            {
+              "stem": "A 40-year-old female is prescribed a drug that undergoes acetylation as part of its metabolism. Which of the following drugs is metabolized by acetylation?",
+              "options": [
+                "Warfarin",
+                "Isoniazid",
+                "Digoxin",
+                "Lidocaine"
+              ],
+              "answer": "Isoniazid",
+              "explanation": "Isoniazid is metabolized by N-acetyltransferase (NAT), an enzyme involved in acetylation reactions."
+            },
+            {
+              "stem": "A 30-year-old male is prescribed a loading dose of a drug with a long half-life. Which of the following best describes the purpose of a loading dose?",
+              "options": [
+                "To achieve steady-state concentration rapidly",
+                "To reduce the risk of adverse effects",
+                "To prolong the duration of action",
+                "To enhance renal excretion"
+              ],
+              "answer": "To achieve steady-state concentration rapidly",
+              "explanation": "A loading dose is used to quickly achieve therapeutic drug concentrations, especially for drugs with long half-lives."
+            },
+            {
+              "stem": "A 50-year-old female is prescribed a drug with a clearance of 5 L/h. Which of the following best describes clearance?",
+              "options": [
+                "The volume of plasma from which the drug is completely removed per unit time",
+                "The time required for the drug concentration to decrease by 50%",
+                "The ratio of drug in the body to drug in the plasma",
+                "The fraction of the drug absorbed after oral administration"
+              ],
+              "answer": "The volume of plasma from which the drug is completely removed per unit time",
+              "explanation": "Clearance is defined as the volume of plasma cleared of drug per unit time, reflecting the efficiency of drug elimination."
+            },
+            {
+              "stem": "A 45-year-old male is prescribed a drug that is eliminated by zero-order kinetics at high doses. Which of the following best describes zero-order kinetics?",
+              "options": [
+                "The rate of elimination is proportional to the drug concentration",
+                "The rate of elimination is constant and independent of drug concentration",
+                "The drug is completely eliminated after 4 half-lives",
+                "The drug is extensively metabolized by the liver"
+              ],
+              "answer": "The rate of elimination is constant and independent of drug concentration",
+              "explanation": "Zero-order kinetics occurs when the elimination process is saturated, leading to a constant rate of drug removal regardless of concentration."
+            },
+            {
+              "stem": "A 35-year-old female is prescribed a drug with a bioavailability of 20% after oral administration. Which of the following routes of administration would result in 100% bioavailability?",
+              "options": [
+                "Oral",
+                "Sublingual",
+                "Intramuscular",
+                "Intravenous"
+              ],
+              "answer": "Intravenous",
+              "explanation": "Intravenous administration delivers the drug directly into the systemic circulation, resulting in 100% bioavailability."
+            },
+            {
+              "stem": "A 60-year-old male is prescribed a drug that is a prodrug activated by CYP3A4. He is also started on carbamazepine, a known enzyme inducer. What is the expected effect on the prodrug's activation?",
+              "options": [
+                "Increased activation due to increased enzyme activity",
+                "Decreased activation due to decreased enzyme activity",
+                "No change in activation",
+                "Increased renal excretion"
+              ],
+              "answer": "Increased activation due to increased enzyme activity",
+              "explanation": "Carbamazepine induces CYP3A4, increasing the metabolism of the prodrug and its conversion to the active form."
+            },
+            {
+              "stem": "A 25-year-old female is prescribed a drug that is highly lipid-soluble. Which of the following best describes the redistribution phenomenon observed with such drugs?",
+              "options": [
+                "Rapid movement from the brain to peripheral tissues",
+                "Slow movement from the brain to peripheral tissues",
+                "Rapid renal excretion",
+                "Slow hepatic metabolism"
+              ],
+              "answer": "Rapid movement from the brain to peripheral tissues",
+              "explanation": "Highly lipid-soluble drugs redistribute rapidly from the brain to peripheral tissues, leading to a quick offset of action."
+            },
+            {
+              "stem": "A 55-year-old male is prescribed a drug that is extensively metabolized by the liver. Which of the following factors is most likely to increase the drug's bioavailability?",
+              "options": [
+                "Increased hepatic blood flow",
+                "Decreased hepatic enzyme activity",
+                "Increased plasma protein binding",
+                "Decreased renal clearance"
+              ],
+              "answer": "Decreased hepatic enzyme activity",
+              "explanation": "Reduced hepatic enzyme activity decreases first-pass metabolism, increasing the fraction of the drug that reaches systemic circulation."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "1. Define the following pharmacokinetic terms (5 marks):\n   a) Volume of distribution (Vd) (1 mark)\n   b) Clearance (1 mark)\n   c) Bioavailability (1 mark)\n   d) Half-life (t½) (1 mark)\n   e) First-pass metabolism (1 mark)",
+              "modelAnswer": "a) Volume of distribution (Vd): The theoretical volume that would be required to contain the total amount of drug in the body at the same concentration as in the plasma.\nb) Clearance: The volume of plasma from which the drug is completely removed per unit time, reflecting the efficiency of drug elimination.\nc) Bioavailability: The fraction of an administered dose of drug that reaches the systemic circulation unchanged.\nd) Half-life (t½): The time required for the plasma concentration of a drug to decrease by 50% after absorption and distribution are complete.\ne) First-pass metabolism: The metabolism of a drug during its first passage through the liver after absorption from the gastrointestinal tract, reducing the amount of active drug reaching systemic circulation."
+            },
+            {
+              "stem": "2. A 30-year-old male is prescribed a drug with a volume of distribution (Vd) of 25 L. The drug is 90% bound to plasma proteins. Calculate the apparent volume of distribution of the free (unbound) drug (5 marks).",
+              "modelAnswer": "The apparent volume of distribution of the free drug is calculated as follows:\nVd_free = Vd_total / (1 - fraction bound)\nFraction bound = 0.90\nVd_free = 25 L / (1 - 0.90) = 25 L / 0.10 = 250 L\nThe apparent volume of distribution of the free drug is 250 L."
+            },
+            {
+              "stem": "3. Describe the six types of adverse drug reactions (ADRs) as classified by Rawlins and Thompson (5 marks).",
+              "modelAnswer": "1) Type A (Augmented): Dose-dependent and predictable reactions, often extensions of the drug's pharmacological effects (e.g., bleeding with warfarin).\n2) Type B (Bizarre): Idiosyncratic, unpredictable reactions not related to dose (e.g., anaphylaxis with penicillin).\n3) Type C (Chronic): Reactions associated with long-term drug use (e.g., osteoporosis with long-term corticosteroid use).\n4) Type D (Delayed): Reactions that occur long after drug exposure (e.g., carcinogenesis with alkylating agents).\n5) Type E (End of use): Withdrawal reactions (e.g., rebound hypertension after stopping clonidine).\n6) Type F (Failure): Unexpected failure of therapy (e.g., antibiotic resistance)."
+            },
+            {
+              "stem": "4. Explain the difference between pharmacodynamic and pharmacokinetic drug interactions. Provide one example of each (5 marks).",
+              "modelAnswer": "Pharmacodynamic interactions: These occur when one drug alters the response of another drug at its site of action, without affecting its concentration. Example: The additive sedative effects of alcohol and benzodiazepines.\nPharmacokinetic interactions: These occur when one drug alters the absorption, distribution, metabolism, or excretion of another drug. Example: Rifampicin induces CYP3A4, increasing the metabolism of oral contraceptives and reducing their efficacy."
+            },
+            {
+              "stem": "5. A 45-year-old female is prescribed a prodrug that is activated by CYP3A4. She is also started on a drug that inhibits CYP3A4. Describe the expected effect on the prodrug's activation and the clinical implications (5 marks).",
+              "modelAnswer": "The CYP3A4 inhibitor will reduce the metabolism of the prodrug, leading to decreased activation and lower plasma levels of the active drug. This may result in subtherapeutic drug levels and reduced efficacy. Clinically, this could lead to treatment failure or the need to adjust the dose of the prodrug or switch to an alternative therapy."
+            },
+            {
+              "stem": "6. Define the following terms related to drug receptors (5 marks):\n   a) Agonist (1 mark)\n   b) Antagonist (1 mark)\n   c) Partial agonist (1 mark)\n   d) Inverse agonist (1 mark)\n   e) Spare receptors (1 mark)",
+              "modelAnswer": "a) Agonist: A drug that binds to a receptor and produces a biological response.\nb) Antagonist: A drug that binds to a receptor but does not produce a biological response; it blocks or reduces the response to an agonist.\nc) Partial agonist: A drug that binds to a receptor and produces a submaximal response, even at full receptor occupancy.\nd) Inverse agonist: A drug that binds to a receptor and produces an effect opposite to that of an agonist.\ne) Spare receptors: Receptors that are not required to be occupied to achieve a maximal biological response; their presence increases the sensitivity of the system to the drug."
+            },
+            {
+              "stem": "7. A 50-year-old male is prescribed a drug with a narrow therapeutic index. Describe the importance of therapeutic drug monitoring (TDM) in this patient (5 marks).",
+              "modelAnswer": "Therapeutic drug monitoring (TDM) is essential for drugs with a narrow therapeutic index to ensure that drug concentrations are maintained within the therapeutic range. This helps to maximize efficacy while minimizing the risk of toxicity. TDM involves measuring drug concentrations in the blood at specific times to adjust dosing as needed. It is particularly important for drugs with significant interpatient variability in pharmacokinetics, such as phenytoin, digoxin, and lithium."
+            },
+            {
+              "stem": "8. A 30-year-old female is prescribed a drug that undergoes hepatic metabolism via CYP2D6. She is a known poor metabolizer of CYP2D6. Describe the expected effect on the drug's pharmacokinetics and clinical implications (5 marks).",
+              "modelAnswer": "As a poor metabolizer, the patient will have reduced CYP2D6 activity, leading to decreased metabolism of the drug. This will result in higher plasma concentrations, a longer half-life, and an increased risk of adverse effects or toxicity. Clinically, this may necessitate dose reduction or the use of an alternative drug that is not metabolized by CYP2D6."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "1. A 60-year-old male presents to your pharmacy with a prescription for a branded drug that is not in stock. You decide to substitute it with a generic equivalent that is available. The patient is confused and asks for clarification on the differences between branded and generic drugs.\n\n   a) Explain the difference between a branded drug and a generic drug, including their regulatory requirements and bioequivalence (8 marks).\n   b) Define the term 'chemical name' of a drug (2 marks).\n   c) Discuss five ideal properties of a drug (5 marks).",
+              "modelAnswer": "a) Branded vs. Generic Drugs:\n- Branded drugs: Developed and marketed by a pharmaceutical company under a proprietary name (e.g., Lipitor for atorvastatin). They are protected by patents for a period (typically 20 years) during which no other company can market the same drug. Branded drugs undergo extensive clinical trials to establish safety, efficacy, and quality before regulatory approval.\n- Generic drugs: Copies of branded drugs that are marketed after the patent expires. They contain the same active pharmaceutical ingredient (API) as the branded drug and are required to demonstrate bioequivalence (similar rate and extent of absorption) to the branded drug. Generic drugs are generally less expensive due to reduced development costs and competition.\nRegulatory requirements for generics include proof of bioequivalence, adherence to Good Manufacturing Practices (GMP), and compliance with pharmacopoeial standards.\n\nb) Chemical name: The chemical name of a drug is a precise description of its molecular structure, based on chemical nomenclature rules (e.g., N-(4-hydroxyphenyl)acetamide for paracetamol). It is not used in clinical practice but is important for chemical identification and synthesis.\n\nc) Five ideal properties of a drug:\n1) Effectiveness: The drug should produce the desired therapeutic effect in the target population.\n2) Safety: The drug should have a favorable benefit-risk ratio, with minimal adverse effects at therapeutic doses.\n3) Selectivity: The drug should act on specific targets (e.g., receptors, enzymes) to minimize off-target effects.\n4) Predictability: The drug's pharmacokinetics and pharmacodynamics should be consistent and predictable across patients.\n5) Chemical stability: The drug should be stable under normal storage conditions to maintain potency and safety."
+            },
+            {
+              "stem": "2. Discuss the sources of drugs, providing examples for each source (15 marks).",
+              "modelAnswer": "Sources of Drugs:\n\n1) Natural Sources:\n   - Plants: Many drugs are derived from plant sources, such as morphine (from Papaver somniferum), digoxin (from Digitalis lanata), and atropine (from Atropa belladonna). These drugs are often extracted from plant parts (e.g., leaves, roots, bark) and purified for clinical use.\n   - Animals: Some drugs are obtained from animal sources, such as insulin (from porcine or bovine pancreas), heparin (from porcine intestinal mucosa), and thyroid hormones (from animal thyroid glands).\n   - Microorganisms: Antibiotics and other drugs are derived from microorganisms, such as penicillin (from Penicillium fungi), streptomycin (from Streptomyces bacteria), and cyclosporine (from Tolypocladium fungi).\n   - Minerals: Inorganic compounds are used as drugs, such as lithium (for bipolar disorder), magnesium sulfate (as a laxative and anticonvulsant), and iron (for anemia).\n\n2) Synthetic Sources:\n   - Many drugs are synthesized chemically in the laboratory, such as aspirin (acetylsalicylic acid), paracetamol (acetaminophen), and most modern antibiotics (e.g., ciprofloxacin). Synthetic drugs are designed to mimic natural compounds or to have specific pharmacological properties.\n\n3) Semi-synthetic Sources:\n   - These drugs are derived from natural sources but are chemically modified to improve their properties. Examples include:\n     - Amoxicillin (derived from penicillin but modified to improve oral absorption).\n     - Heroin (diacetylmorphine, derived from morphine but modified to increase lipid solubility).\n     - Ethinylestradiol (a synthetic derivative of estradiol used in oral contraceptives).\n\n4) Biotechnology/Recombinant DNA Technology:\n   - Modern biotechnology has enabled the production of drugs using recombinant DNA technology. Examples include:\n     - Insulin (human insulin produced by genetically modified bacteria or yeast).\n     - Erythropoietin (used to treat anemia, produced by recombinant DNA technology).\n     - Monoclonal antibodies (e.g., infliximab, used in autoimmune diseases).\n\n5) Marine Sources:\n   - Some drugs are derived from marine organisms, such as:\n     - Ziconotide (Prialt®, derived from a marine cone snail, used for chronic pain).\n     - Cytarabine (a chemotherapy drug derived from a Caribbean sea sponge).\n\n6) Synthetic Peptides and Proteins:\n   - Peptides and proteins can be synthesized chemically or produced using recombinant DNA technology. Examples include:\n     - Oxytocin (a peptide hormone used to induce labor).\n     - Growth hormone (somatropin, used to treat growth disorders).\n\nEach source has its advantages and limitations, and the choice of source depends on factors such as availability, cost, efficacy, and safety."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

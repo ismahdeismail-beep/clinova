@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { GraduationCap, ClipboardCheck, ChevronRight } from 'lucide-react';
+import { EXAM_PREP_UNITS } from '../data/examPrepData';
 
 const EXAM_MODULES = [
   {
@@ -21,7 +22,7 @@ const EXAM_MODULES = [
     color: 'from-violet-500/10 to-violet-500/20',
     iconColor: 'text-violet-600',
     route: '/exam/prep',
-    count: '8 Subjects',
+    count: `${EXAM_PREP_UNITS.length} Units`,
   },
 ];
 

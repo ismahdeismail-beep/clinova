@@ -1,0 +1,235 @@
+{
+  "code": "3305",
+  "title": "Pharmacology V — Central Nervous System Pharmacology",
+  "sections": {
+    "A": [
+      {
+        "stem": "The following drugs act by modulating GABA allosterically at GABA-A receptor except:",
+        "options": [
+          "Diazepam",
+          "Phenobarbitone",
+          "Ethanol",
+          "Baclofen",
+          "Propofol"
+        ]
+      },
+      {
+        "stem": "Which of the following is not true?",
+        "options": [
+          "GABA opens receptor-operated chloride channels that lead to hyperpolarization and make epileptic firing less likely to occur",
+          "Benzodiazepines and barbiturates bind at the same site on the neuron and enhance the activity of GABA.",
+          "Vigabatrin is an irreversible inhibitor of GABA transaminase",
+          "Tiagabine inhibits neuronal reuptake of GABA.",
+          "Diazepam may cause respiratory depression."
+        ]
+      },
+      {
+        "stem": "A 40 year old male was under alcoholism and apart from an increased risk of severe liver disease, he may be at an increased risk for:",
+        "options": [
+          "Angina",
+          "Heart failure",
+          "Pulmonary hypertension",
+          "CNS tumors",
+          "Renal impairment"
+        ]
+      },
+      {
+        "stem": "The following drugs are used for treatment of absence seizures except:",
+        "options": [
+          "Ethosuximide",
+          "Clonazepam",
+          "Clobazam",
+          "Valproate",
+          "Lamotrigine"
+        ]
+      },
+      {
+        "stem": "Which of the following drugs should not be used for simple partial seizures?",
+        "options": [
+          "Valproic acid",
+          "Carbamazepine",
+          "Felbamate",
+          "Phenytoin",
+          "Vigabatrin"
+        ]
+      },
+      {
+        "stem": "Which of the following would you not do if a patient has generalized tonic-clonic seizure in your presence:",
+        "options": [
+          "Get emergency help if the seizure persists",
+          "Insert a tongue depressor to prevent the patient from biting the tongue",
+          "Turn the patient’s head to the side",
+          "Ease the patient to the floor and loose restrictive clothing",
+          "b and c"
+        ]
+      },
+      {
+        "stem": "Which of the following is not a known principle of antiepileptic drug therapy",
+        "options": [
+          "Elimination of poly-pharmacy as much as possible",
+          "Dosage of the antiepileptic drug should be adjusted to optimize seizure control regardless of the side effects",
+          "Proper diagnosis is essential for proper selection of antiepileptic drug.",
+          "Patient’s pharmacokinetic profile for the drugs being administered should be monitored during titration period.",
+          "Another antiepileptic drug may be added to the first drug if the first drug given does not achieve optimum seizure control."
+        ]
+      },
+      {
+        "stem": "Dantrolene sodium reduces skeletal muscle tone by:",
+        "options": [
+          "Reducing acetylcholine release from motor nerve endings",
+          "Suppressing spinal polysynaptic reflexes",
+          "Inhibiting the generation of muscle action potential",
+          "Reducing Ca2+ release from sarcoplasmic reticulum in the muscle fibre",
+          "All of the above"
+        ]
+      },
+      {
+        "stem": "The following antiepileptic drug is most likely to impair learning and memory, and produce behavioral abnormalities in children:",
+        "options": [
+          "Valproic acid",
+          "Phenobarbitone",
+          "Phenytoin",
+          "Ethosuximide"
+        ]
+      },
+      {
+        "stem": "The characteristic feature of phenytoin pharmacokinetics is:",
+        "options": [
+          "High first pass metabolism",
+          "Nonsaturation kinetics of metabolism",
+          "Capacity limited metabolism saturating at higher therapeutic concentration range",
+          "Extrahepatic metabolism"
+        ]
+      },
+      {
+        "stem": "The following adverse effect(s) of phenytoin is/are related to high plasma drug concentration:",
+        "options": [
+          "Ataxia",
+          "Hirsutism",
+          "Gum hyperplasia",
+          "All of the above"
+        ]
+      },
+      {
+        "stem": "Select the muscle relaxant that is used to control spasticity associated with upper motor neuron paralysis:",
+        "options": [
+          "Vecuronium",
+          "Succinylcholine",
+          "Chlorzoxazone",
+          "Baclofen"
+        ]
+      },
+      {
+        "stem": "Diazepam is indicated in the following conditions except:",
+        "options": [
+          "Generalized tonic clonic seizures",
+          "Febrile convulsions",
+          "Cardiac catheterization",
+          "Status epilepticus",
+          "Generalized anxiety disorder"
+        ]
+      },
+      {
+        "stem": "The general principles in the use of hypnotics include the following except:",
+        "options": [
+          "A hypnotic may be used intermittently for upto 2-3 weeks in short-term insomnia due to emotional stress",
+          "In patients with chronic insomnia a hypnotic should be used regularly",
+          "All hypnotics aggravate sleep apnea",
+          "A hypnotic with slow elimination is preferred in patients with early morning awakening"
+        ]
+      },
+      {
+        "stem": "The following drug displaces plasma protein bound phenytoin as well as decreases its metabolism:",
+        "options": [
+          "Carbamazepine",
+          "Sodium valproate",
+          "Cimetidine",
+          "Chloramphenicol"
+        ]
+      },
+      {
+        "stem": "Select the antiepileptic drug that is effective in manic – depressive illness as well:",
+        "options": [
+          "Ethosuximide",
+          "Primidone",
+          "Phenobarbitone",
+          "Carbamazepine"
+        ]
+      },
+      {
+        "stem": "Sodium valproate has been shown to:",
+        "options": [
+          "Prolong neuronal Na+ channel inactivation",
+          "Attenuate ‘T’ type Ca2+ current in neurons",
+          "Inhibit degradation of GABA by GABA-transaminase",
+          "a) and c)",
+          "All of the above"
+        ]
+      },
+      {
+        "stem": "Which of the following is used therapeutically for treatment of attention deficit hyperkinesia in children:",
+        "options": [
+          "Tyramine",
+          "Methylphenidate",
+          "Cocaine",
+          "Phenoxybenzamine",
+          "Ephedrine"
+        ]
+      },
+      {
+        "stem": "A substance abuser self-administers cocaine and experiences a variety of significant changes in cardiovascular function, in addition to the CNS-stimulating effects for which the drug was used. What statement describes the mechanism by which the cocaine caused its main peripheral and CNS effects?",
+        "options": [
+          "Activates α2-adrenergic receptors leading to increased NE release",
+          "Blocks NE (and dopamine, in the CNS) reuptake via the amine pump",
+          "Directly activates postsynaptic α- and β-adrenergic receptors , leading to sympathomimetic responses",
+          "Inhibits MAO, leading to increased intraneuronal NE levels",
+          "Prevents NE exocytosis"
+        ]
+      },
+      {
+        "stem": "When carbidopa is administered along with levodopa for Parkinson disease, we increase the bioavailability of levodopa by inhibiting the formation of dopamine in the gut. However, the carbidopa -induced inhibition of dopa decarboxylase favors the peripheral metabolism of levodopa to another metabolite that competes with levodopa for transport a cross the blood-brain barrier. This is catalyzed by catechol –O methyl transferase (COMT). If your goal is to inhibit COMT, and so increase the central bio-availability and effects of levodopa , what drug would you choose?",
+        "options": [
+          "Donepezil",
+          "Entacapone",
+          "Selegiline",
+          "Tacrine",
+          "Trihexyphenidyl"
+        ]
+      }
+    ],
+    "B": [
+      {
+        "stem": "A 30 year old female patient suffering from status epilepticus is admitted in the hospital.\na) Which drug would you recommend she be given and what is the mode of action of this drug? (3 marks)\nb) After 4 days, she might be discharged, which drug would you recommend she be given? (1 mark)\nc) What are the side effects you would look out for the drug mentioned in b above? (2 marks)"
+      },
+      {
+        "stem": "A 70 year old Kenyan patient presents to the hospital and the BP is 160/95. He is also diagnosed of parkinsonism.\na) What is your target when reducing the blood pressure? (1 mark)\nb) Which drug would you give him for the hypertension? (1 mark)\nc) Which drug would you give him for the parkinsonism? (1 mark)\nd) What is the mode of action of the drugs mentioned in b and c above? (4 marks)\ne) What are the side effects that you should look out for? (4 marks)"
+      },
+      {
+        "stem": "A patient is diagnosed of INSOMNIA.\na) Which drug should you give him (1 mark)\nb) What is the mode of action of the above drug? (2 marks)\nc) What are the side effects that you should look out for? (3 marks)"
+      },
+      {
+        "stem": "GABA is a target for different drugs. Describe with an example in each case how drugs can target GABA. (4 marks)"
+      },
+      {
+        "stem": "Some anticonvulsants are used in bipolar disorder. Give 3 examples of anticonvulsants used in bipolar disorder and describe their mode action. (6 marks)"
+      },
+      {
+        "stem": "Give 2 examples of hallucinogens and describe their mode of action. (4 marks)"
+      },
+      {
+        "stem": "What are the pharmacological actions of methylxanthines (3 marks)"
+      }
+    ],
+    "C": [
+      {
+        "stem": "Describe DIAZEPAM in terms of the\na) mode of action (2 marks)\nb) clinical applications (5 marks)\nc) side effects (3 marks)\nd) drug-drug interactions (3 marks)\ne) contraindications (3 marks)\nf) pharmacokinetics (4 marks)"
+      },
+      {
+        "stem": "Compare and contrast Baclofen and Dantrolene in terms of the\na) mode of action (4 marks)\nb) clinical applications (4 marks)\nc) side effects (6 marks)\nd) contraindications (3 marks)\ne) drug-drug interactions (3 marks)"
+      },
+      {
+        "stem": "Describe DRUGS USED IN MANAGEMENT OF PARKINSONISM in terms of\na) Classes and examples (4 marks)\nb) mode of action (6 marks)\nc) Side effects (6 marks)\nd) Drug-drug interactions (4 marks)"
+      }
+    ]
+  }
+}

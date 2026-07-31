@@ -1,0 +1,380 @@
+﻿
+2400300-171450
+
+KABARAK                         UNIVERSITY
+UNIVERSITY EXAMINATIONS
+MAIN CAMPUS
+FIRST SEMESTER, 2020/2021 ACADEMIC YEAR
+EXAMINATION FOR BACHELOR DEGREE IN PHARMACY
+
+PHAM 3203: PHARMACOLOGY III (AUTACOIDS & INFLAMMATION)
+
+STREAM: Y3S2TIME: 9:00-11:00AM
+EXAMINATION SESSION: SEPT-DECDATE: 02/02/2021
+
+READ INSTRUCTIONS CAREFULLY
+The examination paper has THREE (3) sections.                                   [Total 100 Marks]
+Answer ALL questions in sections A and B and one in C
+SECTION A has sixty Multiple Choice Questions.                                           [60 Marks]
+SECTION B has Four Short Answer Questions.                                               [20 Marks]
+SECTION C has two Long Answer Questions.                                                 [20 Marks]
+Answer questions in the BOOKLET provided. Begin each of the questions in a new page of the answer booklet. 
+Adhere to the University examination rules and regulations
+Do not write anything on the question paper.
+
+SECTION A: ANSWER ALL THE QUESTIONS                                              (60 MARKS)
+Autacoids differ from hormones in that:
+Autacoids are involved only in the causation of pathological states
+Autacoids do not have a specific cell/tissue of origin
+Autacoids generally act locally at the site of generation and release
+Both â€˜Bâ€™ and â€˜Câ€™ are correct
+Which of the following is a selective H1 receptor agonist?
+4-methyl histamine
+Impromidine
+2-Thiazolyl ethylamine
+Chlorpheniramine
+The action of histamine that is not mediated through H1 receptors is:
+Release of EDRF from vascular endothelium resulting in vasodilation
+Direct action on vascular smooth muscle causing vasodilation
+Bronchoconstriction
+Release of catecholamines from adrenal medulla
+High anticholinergic property is present in the following antihistaminic:
+Diphenhydramine
+Astemizole
+Cetirizine
+Terfenadine
+The following H1 antihistaminic has additional anti 5-HT, anticholinergic, sedative and appetite stimulating properties:
+Promethazine
+Terfenadine
+Cyproheptadine
+Hydroxyzine
+
+The conventional H1 antihistamines possess the following additional properties except:
+Local anaesthetic
+Vasopressor
+Antiarrhythmic
+Catecholamine potentiating
+The following second generation antihistamine IS NOT likely to produce ventricular arrhythmias when administered along with ketoconazole:
+Mizolastine
+Ebastine
+Terfenadine
+Astemizole
+Select the antihistaminic which blocks cardiac K+ channels when given in high doses or along with drugs that inhibit CYP3A4 isoenzyme:
+Chlorpheniramine
+Promethazine
+Astemizole
+Loratadine
+Erythromycin should not be given to a patient being treated with terfenadine because:
+Erythromycin induces the metabolism of terfenadine
+Dangerous ventricular arrhythmias can occur
+Terfenadineinhibits metabolism of erythromycin
+Terfenadine antagonizes the antimicrobial action of erythromycin
+Benefit afforded by certain H1 antihistamines in the following condition is not based on antagonism of histamine:
+Dermographism
+Insect bite
+Common cold
+Seasonal hay fever
+
+The following action of 5-Hydroxy tryptamine is mediated by the 5-HT3 receptor:
+Vasoconstriction
+Bradycardia
+EDRF release
+Platelet aggregation
+Which one of the following 5-HT receptors is not a G protein coupled receptor?
+5-HT1
+5-HT2
+5-HT3
+5-HT4 
+Methysergide has lost popularity as a prophylactic drug for migraine mainly because of its:
+Poor efficacy
+Potential to cause visceral fibrosis
+Oxytocic action
+Potential to aggravate ischaemic heart Disease
+Dihydroergotamine (DHE) differs from ergotamine in the following respect:
+It is a more potent oxytocic
+It has antiemetic property
+It has high oral bioavailability
+It is a more potent Î± adrenergic blocker and less potent vasoconstrictor
+Ergotamine relieves migraine by:
+Blocking vascular Î± adrenergic receptors
+Blocking vascular 5-HT2 receptors
+Dilating cranial arterio-venous shunt channels
+Constricting cranial vessels and reducing perivascular neurogenic inflammation
+The most important risk in the use of sumatriptan for treatment of migraine is:
+Precipitation of seizures
+Precipitation of psychosis
+Development of hypertension
+Coronary vasospasm
+Which of the following drugs is most commonly used for prophylaxis of migraine?
+Ergotamine
+Propranolol
+Methysergide
+Sumatriptan
+The cyclooxygenase isoenzymes COX-1 and COX-2 differ from each other in that:
+They catalyse different pathways in prostanoid biosynthesis
+COX-1 is inhibited by aspirin but not COX-2
+COX-2 is inhibited by ibuprofen but not COX-1
+COX-1 is constitutive while COX-2 is largely inducible
+Which of the following is an irreversible inhibitor of cyclooxygenase?
+Aspirin
+Phenylbutazone
+Indomethacin
+Piroxicam
+Actions of prostaglandin E2 include the following except:
+Fall in blood pressure
+Bronchoconstriction
+Uterine contraction
+Inhibition of gastric acid secretion
+Prostaglandins play pathophysiological role in the following except:
+Patency of ductus arteriosus
+Regulation of renal tubular salt absorption
+Ventricular remodeling after myocardial infarction
+Initiation of labour
+
+Aspirin in low doses produces long lasting inhibition of platelet cyclooxygenase (COX) because:
+Platelets contain low quantity of COX
+Platelets cannot synthesize fresh COX molecules
+Platelets bind aspirin with high affinity
+Platelet COX is inducible
+The early pregnancy uterus is sensitive to the following oxytocic:
+Oxytocin
+Methylergometrine
+Prostaglandin F2Î±
+Both â€˜Aâ€™ and â€˜Bâ€™ are correct
+Aspirin produces analgesia by:
+Preventing sensitization of peripheral pain receptors
+Affecting gating of pain impulses at spinal level
+Raising pain threshold at subcortical level
+Both â€˜Aâ€™ and â€˜Câ€™ are correct
+Inhibitors of prostaglandin synthesis share the following features except:
+Prolongation of bleeding time
+Prolongation of prothrombin time
+Prolongation of labour
+Gastric mucosal damage 
+Selective COX-2 inhibitors differ from nonselective COX-1/COX-2 inhibitors in that they:
+Are antiinflammatory but not analgesic
+Do not bring down fever
+Have no renal effects
+Do not inhibit platelet aggregation
+
+The isoenzyme cyclooxygenase-2 (COX-2) is expressed constitutively at the following site:
+Gastric mucosa
+Neutrophils
+Blood platelets
+Juxtaglomerular apparatus
+A 64-year-old male presents with mild to moderate musculoskeletal back pain after playing golf. He states he has tried acetaminophen and that it did not help. His past medical history includes diabetes, hypertension, hyperlipidemia, gastric ulcer (resolved), and coronary artery disease. Which of the following is the most appropriate NSAID regimen to treat this patientâ€™s pain?
+Celecoxib.
+Indomethacin and omeprazole.
+Naproxen and omeprazole.
+Naproxen.
+Which of the following correctly represents the mechanism of action of tofacitinib in the treatment of RA?
+TNF-Î± inhibitor.
+Inhibitor of Janus kinases.
+IL-6 receptor blocker.
+Dihydrofolate reductase inhibitor.
+A 64-year-old male presents with signs and symptoms of an acute gouty flare. His doctor wishes to treat him accordingly to improve his symptoms. Which of the following strategies would be the LEAST likely to acutely improve his gout symptoms and pain?
+Naproxen.
+Colchicine.
+Probenecid.
+Prednisone.
+
+Which of the following drugs for headache is contraindicated in patients with peripheral vascular disease?
+Ergotamine.
+Aspirin.
+Acetaminophen.
+Naproxen
+A 43-year-old heavy machine operator complains of seasonal allergies. Which one of the following medications would be most appropriate for management of his allergy symptoms?
+Cyclizine.
+Doxylamine.
+Hydroxyzine.
+Fexofenadine.
+Which one of the following statements concerning H1 antihistamines is correct?
+Second-generation H1 antihistamines are relatively free of adverse effects.
+Because of the established long-term safety of first-generation H1 antihistamines, they are the first choice for allergic rhinitis.
+H1 antihistamines can be used in the treatment of acute anaphylaxis.
+Both first- and second-generation H1 antihistamines readily penetrate the bloodâ€“brain barrier.
+A patient is going on a deep sea fishing trip and is worried about motion sickness. Which of the following would be the most appropriate?
+Dimenhydrinate 1 hour prior to departure.
+Desloratadine 1 hour prior to departure.
+Doxylamine 1 hour prior to departure.
+Meclizine at onset of symptoms.
+
+A patient has a severe ear infection that is associated with significant vertigo. Which of the following might be helpful?
+Azelastine.
+Brompheniramine.
+Meclizine.
+Olopatadine.
+A young woman is brought into the emergency room. She is unconscious, and she has pupillary constriction and depressed respiration. Based on reports, an opioid overdose is almost certain. Which of the listed phenanthrene opioids will exhibit a full and immediate response to treatment with naloxone?
+Meperidine.
+Morphine.
+Buprenorphine.
+Fentanyl.
+A 76-year-old female with renal insufficiency presents to the clinic with severe pain secondary to a compression fracture in the lumbar spine. She reports that the pain has been uncontrolled with tramadol, and it is decided to start treatment with an opioid. Which of the following is the best opioid for this patient?
+Meperidine.
+Fentanyl transdermal patch.
+Hydrocodone.
+Morphine.
+Which of the following statements about fentanyl is correct?
+Fentanyl is 100 times more potent than morphine.
+Its withdrawal symptoms can be relieved by naloxone.
+The active metabolites of fentanyl can cause seizures.
+It is most effective by oral administration
+A 56-year-old patient who has suffered with severe chronic pain with radiculopathy secondary to spinal stenosis for years presents to the clinic for pain management. Over the years, this patient has failed to receive relief from the neuropathic pain from the radiculopathy with traditional agents such as tricyclics or anticonvulsants. Based on the mechanism of action, which opioid might be beneficial in this patient to treat both nociceptive and neuropathic pain?
+Meperidine.
+Oxymorphone.
+Morphine.
+Methadone.
+A 64-year-old male is preparing for a total knee replacement. He is taking many medications that are metabolized by the CYP450 enzyme system and is worried about drug interactions with the pain medication that will be used following his surgery. Which of the following opioids would have the lowest chance of interacting with his medications that are metabolized by the CYP450 enzyme system?
+Methadone.
+Oxymorphone.
+Oxycodone.
+Hydrocodone.
+Chemical mediators in the nociceptive pathway are all of the following EXCEPT:
+Enkephalins
+Kinins
+Prostaglandins
+Substance P
+Mu (Î¼) receptors are associated with:
+Analgesia, euphoria, respiratory depression, physical dependence
+Spinal analgesia, mydriasis, sedation, physical dependence
+Dysphoria, hallucinations, respiratory and vasomotor stimulation
+Analgesia, euphoria, respiratory stimulation, physical dependence
+Which of the following opioid analgesics can produce an increase in the pulmonary arterial pressure and myocardial work?
+Morphine
+Pentazocine
+Meperidine
+Methadone
+Morphine causes the following effects EXCEPT:
+Constipation
+Dilatation of the biliary duct
+Urinary retention
+Bronchiolar constriction
+Which of the following opioid analgesics is used in the treatment of acute pulmonary edema?
+Morphine
+Codeine
+Fentanyl
+Loperamide
+The diagnostic triad of opioid overdose is:
+Mydriasis, coma and hyperventilation
+Coma, depressed respiration and miosis
+Mydriasis, chills and abdominal cramps
+Miosis, tremor and vomiting
+Which one of the following non-narcotic agents inhibits mainly cyclooxygenase (COX) in CNS?
+Paracetamol
+Ketorolac
+Acetylsalicylic acid
+Ibuprofen
+
+Characteristic findings of salicylism include:
+Headache, mental confusion and drowsiness
+Tinnitus and difficulty in hearing
+Hyperthermia, sweating, thirst, hyperventilation, vomiting and diarrhea
+All of the above
+The main advantage of ketorolac over aspirin is that ketorolac
+Can be combined more safely with an opioid such as codeine
+Can be obtained as an over-the-counter agent
+Does not prolong the bleeding time
+Is available in a parenteral formulation that can be injected intramuscularly or intravenously
+A 54-year-old woman presented with signs and symptoms consistent with an early stage of rheumatoid arthritis. The decision was made to initiate NSAID therapy. Which of the following patient characteristics is the most compelling reason for avoiding celecoxib in the treatment of her arthritis?
+History of alcohol abuse
+History of gout
+History of myocardial infarction
+History of osteoporosis
+A 2-year-old child is brought into the emergency department in convulsions. According to her mother, she had ingested most of a bottle of "sleeping pills," an over-the-counter preparation. What do the sleeping pills she ingested probably contain?
+Caffeine
+Chlorpromazine
+Diphenhydramine
+Meperidine
+
+In a person who regularly consumes ethanol daily, the potential for hepatotoxicity due to acetaminophen is greater than normal. What is the most likely explanation for this?
+Cirrhosis of the liver
+Ethanol inhibits the metabolism of acetaminophen
+Most beer drinkers are smokers, and nicotine sensitizes the liver to toxins
+Ethanol induces P450 enzymes that form a toxic metabolite
+Which one of the following is able to effectively lower intraocular pressure?
+Latanoprost
+Ergonovine
+Atropine
+Morphine
+A reasonable explanation for the therapeutic effects of ibuprofen or naproxen in primary dysmenorrhea is that these drugs
+â†“ PGE2 and PGF2Î±
+selectively inhibit COX 2
+â†“ LTB4
+inhibit PLA2
+For temporary maintenance of patent ductus arteriosus prior to cardiac surgery in an infant, what is the drug of choice?
+Alprostadil
+Indomethacin
+Epoprostenol
+Celecoxib
+
+A patient with RA is being treated with ibuprofen, but joint pain and stiffness are increasing. His physician prescribes another drug to be used with ibuprofen that may slow progression of the disease. Unfortunately, side effects develop, including dizziness, tinnitus, blurred vision, and pruritus. Ocular examination reveals corneal deposits and slight retinal pigmentation.
+What is the drug?
+Gold salts
+Etanercept
+Hydroxychloroquine
+Methotrexate
+A mother calls the clinic to ask what medication to give her 5-year-old child for a fever during a bout of chickenpox. The nurse's best response would be:
+"Your child is 5 years old, so it would be okay to use children's aspirin to treat his fever."
+"Start with acetaminophen or ibuprofen, but if these do not work, then you can try aspirin."
+"You can use children's doses of acetaminophen or ibuprofen, but aspirin is not recommended."
+"It is best to wait to let the fever break on its own without medication."
+Acute poisoning with acetaminophen often requires the use of a specific antidote. The beneficial property of this antidote is that it
+supplies sulfhydryl groups to detoxify a reactive metabolite
+induces P450 enzymes to enhance elimination
+blocks the metabolism of acetaminophen
+enhances renal clearance of acetaminophen
+What is true of tolerance occurring in regular opium abusers? 
+Tolerance develops to all actions of morphine
+No tolerance occurs to euphoric and sedative actions of morphine
+No tolerance occurs to constipating and meiotic actions of morphine
+Lethal dose of morphine is not significantly Increased
+
+Which action of morphine is incompletely reversed by naloxone?
+Analgesia
+Respiratory depression
+Sedation
+Miosis
+SECTION B: SAQS; ANSWER ALL THE QUESTIONS                             (20 MARKS)
+(a) Using a suitable flow chart illustrate the metabolic pathway of acetaminophen that is associated with toxic metabolite (4 Marks)
+(b) Explain why you would be less concerned if a mother reports to you that her 18-month old son took an overdose of paracetamol syrup. (2 Marks)
+Y.S is a 19-year-old college student who is brought to the health Centre where you are currently doing your community health rotation. The Chief complaint is breathing difficulties, generalized body swelling and fainting after being stung severally by bees. Formulate a stepwise management plan for this patient (4 Marks) 
+PQ is a 67-year-old retired labour officer who recently was diagnosed with prinzmetal angina. She has a long standing history of sporadic migraine attacks. She is brought at night to a hospital where you are the drug information pharmacist. The MO on call wants to find out which classes of drug effective for acute migraine attack will be safe for her. 
+Using suitable examples identify two classes of drugs that are contraindicated in such a patient. (2 Marks)
+Illustrate using suitable examples 3 classes of drugs that you would recommend for migraine prophylaxis in that patient (3 Marks)
+For each numbered item in category A, select the one lettered option in category B that is most closely associated with it (each lettered option can be selected once, more than once, or not at all). (5 Marks)
+
+Category A
+A partial agonist at Î¼ (mu) opioid receptors and antagonist at Îº (kappa) opioid receptors 
+A full opioid agonist with the highest oral bioavailability 
+A drug with very weak opioid activity used in the treatment of diarrhea 
+A partial agonist at Î¼ (mu) opioid receptors and full agonist at Îº (kappa) opioid receptors
+ A drug with high affinity but no intrinsic activity at opioid receptors 
+Category B
+Codeine
+Buprenorphine
+Fentanyl
+Loperamide
+Methadone
+Morphine
+Naloxone
+Pentazocine
+
+SECTION C: LONG ESSAY QUESTIONS (ANSWER ONE QUESTION ONLY)             (20 MARKS)
+D.W, a 48-year old man with a history of hay fever is diagnosed with CKD stage 2. He has been complaining of poor appetite for the last 3 weeks which has seen him lose 2 kgs. The senior house officer calls you regarding a drug that would work for both his hay fever and Appetite. 
+Identify a drug that you would recommend       (2 Marks)
+Describe the mechanism of action of this drug       (2 Marks)
+Using suitable examples, examine 2 other different clinical applications of H1 receptor antagonists      (2 Marks)
+Outline three adverse effects and two drug-drug interactions associated with the drug you identified in (a) above
+After careful history taking D.W is also diagnosed with Migraine headaches. He admits that he has been taking a drug which had been prescribed by a neurologist for prophylaxis against his headaches. He is also complaining of dyspnea, tightness and pain in the chest. Examination findings reveal; pleural friction rubs, aortic murmur and pleural effusion. These findings (fibrotic changes in the pleuropulmonary & cardiac regions) are confirmed by chest x-ray and echo. 
+Identify and classify the most likely drug that he was using which is associated with these fibrotic changes         (3 Marks)
+Outline 3 other adverse effects and 3 contraindications of the drug in (i) above         (6 Marks)
+ AW is a 42-year old patient with advanced liver disease. She is involved in a road traffic accident and sustains a fractured tibia of her left leg. Her eGFR is about 28 mL/min/1.73 m2 (Normal 90 to 120 mL/min/1.73 m2). She is in severe pain and required an analgesic to relieve her pain. 
+Identify a suitable opioid analgesic that you would recommend which wouldnâ€™t require dose adjustment and which could be used for induction of anesthesia, maintenance of anaesthesia and analgesic in immediate postoperative period       
+                       (2 Marks)
+List two other opioids that could be considered safe for use in this patient but require dose adjustment         (1 Mark)
+Outline the mode of action of the drug you identified in (a) above        (2 Marks)
+Using appropriate examples Examine 3 other clinical applications, 3 adverse effects and 3 contraindications of opioid analgesics,         (9 Marks)
+After surgery, the orthopedic surgeon notices that A. Wâ€™s leg is inflamed and thus she requires a short course of an NSAID. 
+Identify one NSAID considered relatively safe in renal insufficiency that you would recommend        (2 Marks)
+Outline two drug-drug interactions and two contraindications of the drug you have identified in (i) above.                                                                                                                    (4 Marks)
+

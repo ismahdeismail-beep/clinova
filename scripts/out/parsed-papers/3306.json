@@ -1,0 +1,309 @@
+{
+  "code": "3306",
+  "title": "Pharmacology VI — Cardiovascular Pharmacology",
+  "sections": {
+    "A": [
+      {
+        "stem": "A 52-year-old man is brought to the emergency department 30 minutes after he had an episode of chest pain radiating to his jaw while shoveling snow. His pulse is 80/min, and his blood pressure is 130/70 mm Hg. The lungs are clear to auscultation. Cardiac examination shows an S4. While undergoing an ECG, the patient says that he feels the chest pain returning. The most appropriate immediate treatment is a drug with which of the following mechanisms of action?",
+        "options": [
+          "Increases cAMP concentration",
+          "Increases nitric oxide concentration",
+          "Inhibits potassium flux",
+          "Inhibits sodium flux"
+        ]
+      },
+      {
+        "stem": "Warfarin is administered to a 56-year-old man following the placement of a prosthetic cardiac valve. The warfarin dosage is adjusted to maintain an INR of 2.5. Subsequently, trimethoprim-sulfamethoxazole therapy is begun for a recurring urinary tract infection. In addition to monitoring prothrombin time, which of the following actions should the physician take to maintain adequate anticoagulation?",
+        "options": [
+          "Begin therapy with vitamin K",
+          "Increase the dosage of warfarin",
+          "Make no alterations in the dosage of warfarin",
+          "Decrease the dosage of warfarin"
+        ]
+      },
+      {
+        "stem": "A 48-year old woman was diagnosed with essential hypertension and was commenced on treatment 3 months ago. She presents with a dry cough which is not responding to cough suppressants. Which of the following medications is responsible for this symptom?",
+        "options": [
+          "Amlodipine",
+          "Lisinopril",
+          "Metolazone",
+          "Atenolol"
+        ]
+      },
+      {
+        "stem": "A 40-year old female is to have angioplasty following an acute MI. As part of her treatment, she is given intravenously eptifibatide. What is the mechanism of action of eptifibatide?",
+        "options": [
+          "Inhibit platelet thromboxane production",
+          "ADP receptor antagonism",
+          "Glycoprotein IIa/IIIb antagonism",
+          "Activation of plasminogen to plasmin"
+        ]
+      },
+      {
+        "stem": "A 30-year-old woman being treated for hypertension has a sudden onset of fever and malaise. Her temperature is 38.3°C (101°F), and her blood pressure is 120/80 mm Hg. Physical examination shows a malar rash, swelling, and tenderness of the wrists and knees, and a friction rub at the lower left sternal border. Which of the following drugs is the most likely cause of these findings?",
+        "options": [
+          "Captopril",
+          "Hydralazine",
+          "Minoxidil",
+          "Nitroprusside"
+        ]
+      },
+      {
+        "stem": "PG is a 67-year-old man with HTN, asthma, and atrial fibrillation. He is able to walk 6 blocks before stopping to rest, and his echo shows an EF of 57%. His rhythm is irregularly irregular, with a ventricular response between 110-160/min. Which of the following agents would be the safest in treating his HTN and controlling his ventricular response?",
+        "options": [
+          "Atenolol",
+          "Benazepril",
+          "Hydrochlorothiazide",
+          "Verapamil"
+        ]
+      },
+      {
+        "stem": "HK is a 51-year-old woman who has been on antihypertensive drug therapy for the past 3 months. During her most recent visit, her fasting blood glucose level was found to be 112 mg/dL (above normal). Which agent is an antihypertensive drug regimen that would be most likely to have caused her glucose intolerance?",
+        "options": [
+          "Diltiazem",
+          "Hydrochlorothiazide",
+          "Lisinopril",
+          "Minoxidil"
+        ]
+      },
+      {
+        "stem": "A 65-year-old patient admitted to the hospital for severe chest pain is diagnosed with severe hypertension and a dissecting aorta. What i.v. medication would you choose to manage his condition?",
+        "options": [
+          "Atenolol",
+          "Furosemide",
+          "Phenylephrine",
+          "Sodium nitroprusside"
+        ]
+      },
+      {
+        "stem": "A definite contraindication for the use of ACE inhibitors and ARBs includes:",
+        "options": [
+          "Asthma",
+          "Bilateral renal stenosis",
+          "Diabetes",
+          "Hypokalemia"
+        ]
+      },
+      {
+        "stem": "A 69-year-old man presents with symptoms of nausea, vomiting, weakness, psychic dreams & a yellow-hued change in color perception. His ECG indicates sinus bradycardia with the presence of a 2nd degree AV conduction block. The patient's history indicates that he is taking digoxin 0.25 mg/day and hydrochlorothiazide 25 mg/day for systolic heart failure & both warfarin & amiodarone 400 mg qid for atrial fibrillation. This patient's symptoms are most consistent with toxicity caused by elevated levels of:",
+        "options": [
+          "Amiodarone",
+          "Digoxin",
+          "Hydrochlorothiazide",
+          "Warfarin"
+        ]
+      },
+      {
+        "stem": "A 63-year-old patient with a history of atrial arrhythmias arrives in the Emergency Department with complaints of tinnitus, visual disturbances, hearing loss & severe diarrhea. The patient is given oxygen by nasal cannula, and ECG leads, pulse oximeter and an automated blood pressure cuff are applied. The patient cries out and faints immediately. His ECG indicates the presence of a multifocal ventricular tachycardia with a \"twisting of the points\" (continuous change in QRS electrical axis). Which of the following drugs is most likely responsible for this patient's symptoms?",
+        "options": [
+          "Amiodarone",
+          "Lidocaine",
+          "Propranolol",
+          "Quinidine"
+        ]
+      },
+      {
+        "stem": "A 43-year-old man being treated for a recent myocardial infarction develops symptoms of arthralgia, myalgia, fever & pleuritis. Upon exam, the patient is found to have a high titer of antinuclear antibodies. Which of the following medications is most likely responsible for these symptoms?",
+        "options": [
+          "Amiodarone",
+          "Propranolol",
+          "Procainamide",
+          "Quinidine"
+        ]
+      },
+      {
+        "stem": "KT is a 78-year-old woman who has been treated for atrial fibrillation for the past year. She has a history of systolic HF and has been on a combination of digoxin, angiotensin receptor blocker, beta-blocker and thiazide diuretic for the past 10 years. During her routine checkup, KT complains of increased lethargy over the past 6 months. She comments that during a recent eye exam they found evidence of corneal microdeposits, but her eye doc assured her that this was not a clinical concern. Her lab work indicates elevated transaminase & TSH levels, and reduced T4 level. Her ECG shows an increased QTc. The most likely drug causing these symptoms is:",
+        "options": [
+          "Amiodarone",
+          "Digoxin",
+          "Losartan",
+          "Metoprolol"
+        ]
+      },
+      {
+        "stem": "A 65-year-old man suffering from chest pain and difficulty breathing for the past 20 minutes is brought to the Emergency Department of a small rural community hospital. He is given a chewable aspirin while his history is taken. His ECG indicates ST-segment elevation (STEMI). Which of the following would be the best choice to improve blood flow to the ischemic region of the heart if angioplasty (PCI) is not immediately available?",
+        "options": [
+          "Dabigatran",
+          "Enoxaparin",
+          "Abciximab",
+          "Reteplase"
+        ]
+      },
+      {
+        "stem": "A patient is brought into the emergency room suffering from shock-like symptoms resulting from internal hemorrhage. The patient’s history indicates they have been taking an orally effective anticoagulant for the prevention of DVT. The ER physician administers an antidote. What anticoagulant had this patient most likely been taking?",
+        "options": [
+          "Clopidogrel",
+          "Dabigatran",
+          "Enoxaparin",
+          "Heparin"
+        ]
+      },
+      {
+        "stem": "A 23-year-old pregnant woman is referred by her obstetrician for evaluation of anemia. She is in her 4th month of pregnancy. Her grandfather had pernicious anemia. Her hemoglobin is 10 g/dL (normal for women is 12-14 g/dL). She is diagnosed with macrocytic (megaloblastic) anemia. Her serum ferritin and vitamin B12 plasma levels are in the normal range. What is the most likely deficiency causing her anemia?",
+        "options": [
+          "Cobalamin",
+          "Erythropoietin",
+          "Folic acid",
+          "Iron"
+        ]
+      },
+      {
+        "stem": "A 70-year-old man is diagnosed with chronic kidney disease. Which of the following would most likely be required in the treatment of this condition?",
+        "options": [
+          "Deferoxamine",
+          "Erythropoietin",
+          "Iron",
+          "Vitamin B12"
+        ]
+      },
+      {
+        "stem": "A 50-year-old man who recently began combination therapy for dyslipidemia (high LDL, low HDL, high triglycerides) arrives in your clinic suffering from flushing, diarrhea, itchiness, dry skin, and a rapid pulse. Which of the following agents is most likely responsible for these side effects?",
+        "options": [
+          "Cholestyramine",
+          "Ezetimibe",
+          "Lovastatin",
+          "Niacin"
+        ]
+      },
+      {
+        "stem": "A patient diagnosed with very levels of LDL-C caused by familial hypercholesterolemia is treated with combination drug therapy in order to reduce their likelihood of developing early-onset atherosclerotic cardiovascular disease. The patient's therapy includes a statin, ezetimibe, and a PCSK9 antibody. What is the mechanism of action of this antibody?",
+        "options": [
+          "Decreased cholesterol synthesis",
+          "Decreased dietary cholesterol absorption",
+          "Increased synthesis of LDL receptors",
+          "Reduced rate of LDL receptor degradation"
+        ]
+      },
+      {
+        "stem": "A 47-year-old patient recently diagnosed with high LDL-C (190 mg/dL) caused by heterozygous familial hypercholesterolemia is initiated on hypolipidemic mono-therapy to try and achieve an LDL-C goal of <70 mg/dL, before considering the need for combination drug therapy. Within a week after initiating drug therapy the patient returns to your clinic complaining of severe shoulder pain, difficulty moving their arms and legs, and dark brown urine. Which of the following agents is most likely responsible for producing these side effects?",
+        "options": [
+          "Bile acid-binding resin",
+          "Fibric acid derivative",
+          "Nicotinic acid",
+          "Statin"
+        ]
+      },
+      {
+        "stem": "A 64-year-old man with a history of systolic HF develops pulmonary edema with difficulty breathing. Which drug is the best choice to acutely increase cardiac output in this patient within the next 30 mins?",
+        "options": [
+          "Captopril",
+          "Digoxin",
+          "Dobutamine",
+          "Epinephrine"
+        ]
+      },
+      {
+        "stem": "A 56-year-old man with a history of exertional angina presents to the Emergency Department with blurred vision, low blood pressure, bradycardia & confusion. During his history taking, you learn that he took three tablets of his \"heart medicine\" (metoprolol) after forgetting to take them for 3 days. Which drug of choice should be given to reverse his cardiovascular symptoms by increasing heart rate & myocardial contractility, and thereby blood pressure as well?",
+        "options": [
+          "Atropine",
+          "Glucagon",
+          "Insulin",
+          "Isoproterenol"
+        ]
+      },
+      {
+        "stem": "A 57-year-old man with a history of atrial fibrillation is diagnosed with classic angina. Which of the following would be contraindicated in this patient?",
+        "options": [
+          "Diltiazem",
+          "Metoprolol",
+          "Nifedipine",
+          "Warfarin"
+        ]
+      },
+      {
+        "stem": "A 73-year-old woman with a history of diabetes & angina of effort presents to the emergency department with the chief complaint of prolonged chest pain of 40 mins duration that developed while she was watching TV. She is given oxygen by nasal cannula, a chewable aspirin & a sublingual nitroglycerin tablet while her ABCs are assessed. Her ECG indicates an elevated heart rate with normal (non-elevated) ST segments. Her cardiac enzymes (troponin I & CK-MB) are within the normal range. The next best course of action would be to give:",
+        "options": [
+          "Lovastatin",
+          "Clopidogrel",
+          "Alteplase",
+          "Warfarin"
+        ]
+      },
+      {
+        "stem": "Which of the following anemias would be treated by cyanocobalamin?",
+        "options": [
+          "Anemias in infants undergoing rapid growth",
+          "Anemias associated with cheilosis, dysphagia, gastritis and hypochlorhydria",
+          "Anemia associated with small, bizarre cells poorly filled with hemoglobin",
+          "Anemia associated with infestation by Diphyllobothrium latum"
+        ]
+      },
+      {
+        "stem": "A positive Coombs’ test and hemolytic anemia may follow administration of which of the following antihypertensive drug?",
+        "options": [
+          "Methyldopa",
+          "Clonidine",
+          "Doxazosin",
+          "Captopril"
+        ]
+      },
+      {
+        "stem": "Absorption of oral iron preparations can be facilitated by co-administering:",
+        "options": [
+          "Antacids",
+          "Tetracyclines",
+          "Phosphates",
+          "Ascorbic acid"
+        ]
+      },
+      {
+        "stem": "Streptokinase therapy of myocardial infarction is contraindicated in the presence of the following EXCEPT:",
+        "options": [
+          "Peptic ulcer",
+          "Ventricular extrasystoles",
+          "History of recent trauma",
+          "Severe hypertension"
+        ]
+      },
+      {
+        "stem": "Tranexamic acid is a specific antidote of:",
+        "options": [
+          "Fibrinolytic drugs",
+          "Organophosphates",
+          "Barbiturates",
+          "Heparin"
+        ]
+      },
+      {
+        "stem": "Ticlopidine is recommended for the following EXCEPT:",
+        "options": [
+          "To reduce neurological sequelae of stroke",
+          "Transient ischemic attacks",
+          "To prevent occlusion of coronary artery bypass graft",
+          "Intermittent claudication"
+        ]
+      }
+    ],
+    "B": [
+      {
+        "stem": "A patient is diagnosed with atrial fibrillation.\na) State THREE (3) drugs that you can give in management of this patient. (3 marks)\nb) Explain the mode of action of each of the drugs mentioned in a) above. (6 marks)"
+      },
+      {
+        "stem": "A 70-year-old Kenyan patient presents to the hospital and the BP is 160/95. He has also been diagnosed with gout and diabetes mellitus.\na) Recommend an appropriate drug that you would give him for management of hypertension. (1 mark)\nb) State any other TWO (2) clinical applications of the drug mentioned in a) above. (2 marks)\nc) Outline any FOUR (4) side effects that you would look out for. (2 marks)"
+      },
+      {
+        "stem": "Aspirin is an antiplatelet and an anti-inflammatory. Compare and contrast its mode of action as an antiplatelet and as an anti-inflammatory. (4 marks)"
+      },
+      {
+        "stem": "Identify TWO (2) fibrinolytic drugs and TWO (2) antifibrinolytic drugs and describe their mechanism of action. (8 marks)"
+      },
+      {
+        "stem": "Atorvastatin is a popular medicine. Elucidate THREE (3) clinical applications and THREE (3) side effects of atorvastatin. (6 marks)"
+      },
+      {
+        "stem": "Propose TWO (2) drugs that can be used for management of microcytic hypochromic anemia. (2 marks)"
+      },
+      {
+        "stem": "Mention the different types of angina and recommend a drug for management of each type of angina. (6 marks)"
+      }
+    ],
+    "C": [
+      {
+        "stem": "A 70-year old Kenyan patient presents to the hospital and the average BP is 160/95. He is also diagnosed with STEMI.\na) Formulate a pharmaceutical plan for this patient. (3 marks)\nb) Describe the mode of action of the SIX (6) drugs you recommended in a) above (8 marks)\nc) State TWO (2) side effects for each drug that you would look out for. (4 marks)"
+      },
+      {
+        "stem": "A patient suffering from Deep Venous Thrombosis is admitted in the public hospital you are working at.\na) Propose a drug that you would recommend for this patient. (1 mark)\nb) Describe the mode of action of the drug mentioned in a) above (2 marks)\nc) The patient develops bleeding which is caused by the drug given. Propose an antidote that would counteract the bleeding. (1 mark)\nd) Describe the mechanism of action of the antidote mentioned in c) above. (2 marks)\ne) After 4 days, she might be discharged, propose a drug that you would recommend for this patient. (1 mark)\nf) Describe the mode of action of the drug mentioned in e) above (2 marks)\ng) Outline any FOUR (4) side effects of the drug mentioned in e) above (2 marks)\nh) Describe any TWO (2) drug-drug interactions that may occur when given with the drug mentioned in e) (4 marks)"
+      }
+    ]
+  }
+}

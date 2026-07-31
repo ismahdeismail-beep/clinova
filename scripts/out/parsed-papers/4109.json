@@ -1,0 +1,312 @@
+{
+  "code": "4109",
+  "title": "Pharmacology IX — Chemotherapeutic Agents",
+  "sections": {
+    "A": [
+      {
+        "stem": "Which of the following antimicrobial therapies is appropriate for broad gram-negative coverage for a patient with a history of anaphylaxis reaction to penicillin?",
+        "options": [
+          "Rifampin",
+          "Any third-generation cephalosporin",
+          "Vancomycin",
+          "A monobactam"
+        ]
+      },
+      {
+        "stem": "Which of the following is not considered a \"drug of choice\" for the organism indicated?",
+        "options": [
+          "Methicillin-sensitive Staphylococcus aureus: nafcillin",
+          "Enterococcus faecium: ampicillin and gentamicin",
+          "Pseudomonas aeruginosa: piperacillin and aminoglycoside",
+          "Enterobacter spp.: imipenem"
+        ]
+      },
+      {
+        "stem": "Which of the following is false concerning the minimum inhibitory concentration (MIC)?",
+        "options": [
+          "It quantifies the in vitro activity of an antimicrobial versus a test organism.",
+          "MicrodilutionMICs can help detect small numbers of antimicrobial-resistant subpopulations.",
+          "MicrodilutionMICs are the most common susceptibility test method used in the clinical microbiology laboratory.",
+          "The use of agar dilution MICs is declining in favor of more rapid testing methods such as PCR."
+        ]
+      },
+      {
+        "stem": "Which of the following does not bind to the 50S ribosomal subunit?",
+        "options": [
+          "Tetracyclines",
+          "lincosamides",
+          "macrolides",
+          "chloramphenicol"
+        ]
+      },
+      {
+        "stem": "Which of these antibiotics have useful clinical activity against pseudomonas?",
+        "options": [
+          "Ciprofloxacin",
+          "Co-amoxiclav",
+          "Cefazolin",
+          "Cefotaxime"
+        ]
+      },
+      {
+        "stem": "Each of the following antimicrobial agents is paired with a relevant adverse effect EXCEPT:",
+        "options": [
+          "Vancomycin - red man syndrome.",
+          "Benzylpenicillin G - grey baby syndrome in premature neonates.",
+          "Chloramphenicol - aplastic anemia.",
+          "Tetracycline - affects growing teeth and bone."
+        ]
+      },
+      {
+        "stem": "The following antibiotic passes easily normal blood-brain barriers:",
+        "options": [
+          "Benzylpenicillin",
+          "Cephalexin",
+          "Chloramphenicol",
+          "Erythromycin"
+        ]
+      },
+      {
+        "stem": "The following antibiotic has an anti-ADH action, useful in the treatment of syndrome of inappropriate ADH secretion (SIADH), and can cause diabetes insipidus-like adverse effect;",
+        "options": [
+          "Demeclocycline.",
+          "Streptogramins.",
+          "Linezolid.",
+          "Teicoplanin"
+        ]
+      },
+      {
+        "stem": "Regarding erythromycin, the following statement is INCORRECT:",
+        "options": [
+          "It is the drug of choice in the treatment of whooping cough and diphtheria in children.",
+          "It is used in sexually transmitted diseases in pregnant females.",
+          "It has a prokinetic effect through the stimulation of motilin receptors.",
+          "It induces CYP 450 enzymes and decreases plasma level of theophylline"
+        ]
+      },
+      {
+        "stem": "All of the following are recognized adverse effects of isoniazid EXCEPT",
+        "options": [
+          "Hepatitis",
+          "Retrobulbar neuritis",
+          "Decreased phenytoin metabolism – increased phenytoin blood levels /toxicity",
+          "CNS toxicity"
+        ]
+      },
+      {
+        "stem": "Which one of the following agents is narrow-spectrum antibiotics?",
+        "options": [
+          "Aminoglycosides",
+          "Cotrimoxazole",
+          "Fluoroquinolones",
+          "Vancomycin"
+        ]
+      },
+      {
+        "stem": "Trimethoprim inhibits bacteria without affecting mammalian cells because:",
+        "options": [
+          "It does not penetrate mammalian cells",
+          "It has a high affinity for bacterial but low affinity for mammalian dihydrofolatereductase enzyme",
+          "It inhibits bacterial folatesynthetase as well as dihydrofolatereductase enzymes",
+          "It is highly charged thus it doesn’t penetrate the human cell wall"
+        ]
+      },
+      {
+        "stem": "Select the sulfonamide drug which is active against Pseudomonas and is used by topical application for prophylaxis of infection in burn cases:",
+        "options": [
+          "Sulfadiazine",
+          "Silver sulfadiazine",
+          "Sulfadoxine",
+          "Sulfamethoxazole"
+        ]
+      },
+      {
+        "stem": "Which of the following statements about beta-lactam antibiotics is false?",
+        "options": [
+          "Cephalexin and other first-generation cephalosporins do not cross the blood-brain barrier",
+          "Ceftriaxone and nafcillin are both eliminated mainly via biliary secretion",
+          "Instability of penicillins in gastric acid can limit their oral absorption",
+          "Renal tubular reabsorption of amoxicillin is inhibited by probenecid"
+        ]
+      },
+      {
+        "stem": "Which statement about vancomycin is accurate?",
+        "options": [
+          "Active against methicillin-resistant staphylococci",
+          "Bacteriostatic",
+          "Binds to PBPs",
+          "Hepatic metabolism"
+        ]
+      },
+      {
+        "stem": "A 4-year-old child is brought to the hospital after ingesting pills that a parent had used for bacterial dysentery when traveling to South Sudan. The child has been vomiting for more than 24 h and has had diarrhea with green stools. She is now lethargic with an ashen color. Other signs and symptoms include hypothermia, hypotension, and abdominal distention. The drug most likely to be the cause of this problem is",
+        "options": [
+          "Ampicillin",
+          "Azithromycin",
+          "Chloramphenicol",
+          "Doxycycline"
+        ]
+      },
+      {
+        "stem": "The most important mechanism of concurrent acquisition of multidrug resistance among bacteria is:",
+        "options": [
+          "Mutation",
+          "Conjugation",
+          "Transduction",
+          "Transformation"
+        ]
+      },
+      {
+        "stem": "Methicillin-resistant staphylococci do not respond to β-lactam antibiotics because:",
+        "options": [
+          "They produce a β-lactamase which destroys methicillin and related drugs",
+          "They elaborate an amidase which destroys methicillin and related drugs",
+          "They have acquired penicillin-binding protein which has low affinity for β-lactam antibiotics",
+          "They are less permeable to β-lactam antibiotics"
+        ]
+      },
+      {
+        "stem": "The mechanism of antibacterial action of tetracycline involves",
+        "options": [
+          "Antagonism of bacterial translocase activity",
+          "Binding to a component of the 50S ribosomal subunit",
+          "Inhibition of DNA-dependent RNA polymerase",
+          "Interference with the binding of aminoacyl-tRNA to bacterial ribosomes"
+        ]
+      },
+      {
+        "stem": "The following strategy will promote rather than curb the emergence of antibiotic-resistant microorganisms:",
+        "options": [
+          "Whenever possible use broad-spectrum antibiotics",
+          "Prefer a narrow-spectrum antibiotic to a broad spectrum one if both are equally effective",
+          "Prefer short and intensive courses of antibiotics",
+          "Use antibiotic combinations for prolonged therapy"
+        ]
+      },
+      {
+        "stem": "Clarithromycin and erythromycin have very similar spectra of antimicrobial activity. The major advantage of clarithromycin is that it",
+        "options": [
+          "Does not inhibit hepatic drug-metabolizing enzymes",
+          "Eradicates mycoplasmal infections in a single dose",
+          "Has greater activity against H pylori",
+          "Is active against methicillin-resistant strains of staphylococci"
+        ]
+      },
+      {
+        "stem": "A 24-year-old woman comes to a clinic with complaints of dry cough, headache, fever, and malaise, which have lasted 3days.The physician makes an initial diagnosis of community-acquired pneumonia. If this patient were to be treated with erythromycin, she should:",
+        "options": [
+          "Avoid exposure to sunlight",
+          "Avoid taking supplementary iron tablets",
+          "Decrease her intake of caffeinated beverages",
+          "Have her plasma urea nitrogen or creatinine checked before treatment"
+        ]
+      },
+      {
+        "stem": "A 24-year-old woman comes to a clinic with complaints of dry cough, headache, fever, and malaise, which have lasted 3 or 4 days. The physician makes an initial diagnosis of community-acquired pneumonia. A 5-day course of treatment for community-acquired pneumonia would be effective in this patient with little risk of drug interactions if the drug prescribed were",
+        "options": [
+          "Azithromycin",
+          "Clindamycin",
+          "Doxycycline",
+          "Erythromycin"
+        ]
+      },
+      {
+        "stem": "Concerning quinupristin-dalfopristin, which statement is accurate?",
+        "options": [
+          "Active in the treatment of infections caused by E. faecalis",
+          "An effective drug in the treatment of multidrug-resistant streptococcal infections",
+          "Bacteriostatic",
+          "Hepatotoxicity has led to FDA drug alerts"
+        ]
+      },
+      {
+        "stem": "All of the following statements about the clinical uses of the aminoglycosides are accurate except",
+        "options": [
+          "Effective in the treatment of infections caused by anaerobes such as Bacteroidesfragilis",
+          "Gentamicin is used with ampicillin for synergistic effects in the treatment of enterococcal endocarditis",
+          "Often used with cephalosporins in the empiric treatment of life-threatening bacterial infections",
+          "Owing to their polar nature, aminoglycosides are not absorbed after oral administration"
+        ]
+      },
+      {
+        "stem": "Select the antibiotic whose dose must be reduced in patients with renal insufficiency:",
+        "options": [
+          "Ampicillin",
+          "Chloramphenicol",
+          "Tobramycin",
+          "Erythromycin"
+        ]
+      },
+      {
+        "stem": "Your 23-year-old female patient is pregnant and has gonorrhea. The medical history includes anaphylaxis following exposure to amoxicillin. The most appropriate drug to use is",
+        "options": [
+          "Azithromycin",
+          "Cefixime",
+          "Ceftriaxone",
+          "Ciprofloxacin"
+        ]
+      },
+      {
+        "stem": "A 65-year-old woman has returned from a vacation abroad suffering from traveler’s diarrhea, and her problem has not responded to antidiarrheal drugs. A pathogenic gram-negative bacillus is suspected. Which drug is most likely to be effective in the treatment of this patient?",
+        "options": [
+          "Ampicillin",
+          "Ofloxacin",
+          "Sulfadiazine",
+          "Trimethoprim"
+        ]
+      },
+      {
+        "stem": "Which drug is effective in the treatment of nocardiosis and, in combination with pyrimethamine, is prophylactic against Pneumocystis jirovecii infections in AIDS patients?",
+        "options": [
+          "Amoxicillin",
+          "Erythromycin",
+          "Sulfadiazine",
+          "Trimethoprim"
+        ]
+      },
+      {
+        "stem": "A 29-year-old female patient is being treated with RHZE for drug-sensitive TB. On her release from the hospital, the patient is advised not to rely solely on oral contraceptives to prevent pregnancy because they may be less effective while she is being maintained on antimycobacterial drugs. The agent most likely to interfere with the action of oral contraceptives is:",
+        "options": [
+          "Rifampin",
+          "Ethambutol",
+          "Isoniazid",
+          "Pyrazinamide"
+        ]
+      }
+    ],
+    "B": [
+      {
+        "stem": "Giving examples, explain the rationale behind combination of antibiotics (5 Marks)"
+      },
+      {
+        "stem": "Describe 5 general mechanisms through which bacteria develop resistance against antibiotics (5 Marks)"
+      },
+      {
+        "stem": "Explain the 4 different generations of cephalosporins clearly showing the spectrum of anti-microbial activity of each generation (8 Marks)"
+      },
+      {
+        "stem": "a) Explain the mechanism of action of sulfonamides (2 Marks)\nb) Outline 3 adverse effects of sulfonamides"
+      },
+      {
+        "stem": "a) Explain the mechanism of action of aminoglycosides (2 Marks)\nb) Outline 3 adverse effects of aminoglycosides (3 Marks)"
+      },
+      {
+        "stem": "You are discussing the microbiological results of a fecal sample with the hospital microbiologist. They are reporting that the patient has acquired a C. difficile infection.\na) Clostridium difficile infection (CDI) is often precipitated by the use of broad spectrum antibiotics. Describe what is meant by the term ‘broad-spectrum’ antibiotics (1 Mark)\nb) Identify two antibiotics in different classes that are associated with an increased risk of developing pseudomembranous colitis as a result of infection with C. difficile (2 Marks)\nc) Name 2 antibiotics (include the preferred route of administration) that can be used to manage this infection (2 Marks)"
+      },
+      {
+        "stem": "List 2 adverse effects and 2 therapeutic uses associated with metronidazole (2 Marks)"
+      },
+      {
+        "stem": "A 59-year-old woman presents to an urgent care clinic with a 4-day history of frequent and painful urination. She has had fevers, chills, and flank pain for the past 2 days. Her physician advised her to come immediately to the clinic for evaluation. In the clinic she is febrile (38.5°C) but otherwise stable and states she is not experiencing any nausea or vomiting. Her urine dipstick test is positive for leukocyte esterase. Urinalysis and urine culture are ordered. Her past medical history is significant for three urinary tract infections in the past year. Each episode was uncomplicated, treated with trimethoprim-sulfamethoxazole, and promptly resolved. She also has osteoporosis for which she takes a daily calcium supplement. The decision is made to treat her with oral antibiotics for a complicated urinary tract infection with close follow-up.\na) Give 3 reasonable empiric antibiotics for this patient (3 Marks)\nb) Depending on the antibiotic choice are there potential drug interactions? Explain (2 Marks)"
+      }
+    ],
+    "C": [
+      {
+        "stem": "Discuss the Penicillin antibiotics under the following sub-topics:\nThe mechanism of action of Benzyl penicillin(3 Marks)\nThe spectrum of antimicrobial activity of Amoxicillin(3 Marks)\nSix pharmacokinetic properties of benzyl penicillin(3 Marks)\nThree Clinical uses of benzyl penicillin(3 Marks)\nAdverse effects associated with benzyl penicillin (3 Marks)"
+      },
+      {
+        "stem": "Mr. SD is a 25-year-old man with a history of drug use, for which he is prescribed daily supervised methadone. He was released from prison 2 years ago. He also has a history of chronic alcohol consumption and previous treatment for pulmonary tuberculosis with unclear history on completion of treatment. He has been referred to a chest physician with a cough productive of sputum and fever (2 months in duration). A sputum sample, obtained by his primary care doctor, is positive for acid, alcohol-fast bacilli, and a chest radiograph shows right upper lobe cavities. Gene Expert studies show that Mycobacterium TB is resistant to Rifampicin\nElucidate a probable effective five drug regimen that would be used for the treatment of multi-drug resistant TB in Mr. SD (5 Marks)\nFor each of the drug in (a) above, explain the mechanism of action (5 Marks)\n(b) For each drug suggested in (a) above identify at least one adverse effect associated with it (5 Marks)"
+      }
+    ]
+  }
+}

@@ -1035,8 +1035,9 @@ export const EDUCATION_MODULES: EducationModule[] = [
       { id: 'clinical_pharm', title: 'Clinical Pharmacy', description: 'Disease management and patient care across 17 integrated therapeutic areas.', icon: 'HeartPulse', color: 'red', parentModuleId: 'exam_prep',
         units: getArea('clinical_pharm')?.units.map(u => ({ id: u.id, title: u.title, description: u.description, estimatedHours: u.estimatedHours } as EducationModuleUnit)) ?? [],
       },
-      // Future sub-modules can be added here, e.g.:
-      // { id: 'pharmacology', title: 'Pharmacology', description: '...', icon: 'FlaskConical', color: 'blue', units: [...] },
+      { id: 'pharmacology', title: 'Pharmacology', description: 'Systematic pharmacology from general principles through chemotherapy and toxicology.', icon: 'FlaskConical', color: 'blue', parentModuleId: 'exam_prep',
+        units: getArea('pharmacology')?.units.map(u => ({ id: u.id, title: u.title, description: u.description, estimatedHours: u.estimatedHours } as EducationModuleUnit)) ?? [],
+      },
     ],
   },
   { id: 'online_books', title: 'Online Books', description: 'Pharmacy reference books, textbooks, and clinical resources.', isIntegrated: false, icon: 'BookOpen', color: 'sky' },

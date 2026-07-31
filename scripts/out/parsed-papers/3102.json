@@ -1,0 +1,564 @@
+{
+  "code": "3102",
+  "title": "Pharmacology II — Autonomic Pharmacology",
+  "sections": {
+    "A": [
+      {
+        "stem": "John presents to the hospital with confusion, delusions & inappropriate laughter. A physical exam reveals that John has a fever, elevated heart rate, dilated pupils, blurry vision, and an unusual pink flush color on his skin. He explains that he ingested some berries growing on a shrub near his home. Which of the following is the best drug for alleviating his symptoms?",
+        "options": [
+          "Physiostigmine",
+          "Neostigmine",
+          "Pralidoxime",
+          "Atropine"
+        ]
+      },
+      {
+        "stem": "A 43-year-old patient is recovering from abdominal surgery and develops post-operative urinary retention. A drug that you could give orally to treat this condition is?",
+        "options": [
+          "Tolterodine",
+          "Clonidine",
+          "Bethanechol",
+          "Neostigmine"
+        ]
+      },
+      {
+        "stem": "Brian is a 40-year-old patient with a previously diagnosed thymus gland disorder who presents with muscle weakness around the eyes (ptosis), as well as generalized muscle fatigue that gets worse with physical exertion. His symptoms are less severe after periods of rest. You suspect that he may have myasthenia gravis. To make a more definitive diagnosis, you run blood tests for elevated antibodies, and administer a drug that will likely produce a rapid transient reversal of his symptoms (e.g. improvement of his ptosis) if he indeed has myasthenia gravis. The drug you administer for your test is:",
+        "options": [
+          "Neostigmine",
+          "Succinylcholine",
+          "Edrophonium",
+          "Echothiophate"
+        ]
+      },
+      {
+        "stem": "A drug that would be a good choice for maintenance therapy of myasthenia gravis, and would not cross the blood-brain barrier is?",
+        "options": [
+          "Pyridostigmine",
+          "Physiostigmine",
+          "Edrophonium",
+          "Glycopyrrolate"
+        ]
+      },
+      {
+        "stem": "Methoxamine-induced bradycardia can be prevented by:",
+        "options": [
+          "Phentolamine",
+          "Mecamylamine",
+          "Atropine",
+          "All of the choices"
+        ]
+      },
+      {
+        "stem": "In which of the following ways does metopropol differ from propranolol?",
+        "options": [
+          "Metoprolol is used for the management of hypertension",
+          "Metoprolol has some selectivity for beta2-adrenoceptors",
+          "Metoprolol is less likely to reduce cardiac output",
+          "Metoprolol is less likely to precipitate bronchoconstriction"
+        ]
+      },
+      {
+        "stem": "Administration of a moderately high dose of epinephrine to a patient resultsin a severe decrease in blood pressure. Which of the following drugs might the patient have previously taken that could account for this unexpected effect?",
+        "options": [
+          "Cocaine",
+          "Prazosin",
+          "Atropine",
+          "Guanethidine"
+        ]
+      },
+      {
+        "stem": "A drug that stimulates beta1- and beta2-adreneceptors can be expected to cause:",
+        "options": [
+          "A decrease in heart rate",
+          "A decrease in total peripheral resistance",
+          "A constriction of airway smooth muscle resistance",
+          "A decrease in renin release"
+        ]
+      },
+      {
+        "stem": "Which of the following increases both magnitude of the blood pressure increase due to phenylephrine and the heart rate decrease due to methacholine?",
+        "options": [
+          "Timolol",
+          "Clonidine",
+          "Atropine",
+          "Mecamylamine"
+        ]
+      },
+      {
+        "stem": "Which of the following drugs can be used to reduce intraocular pressure in the treatment of glaucoma?",
+        "options": [
+          "Pilocarpine",
+          "Acetazolamide",
+          "Timolol",
+          "All of the above"
+        ]
+      },
+      {
+        "stem": "Dantrolene is the drug of choice to treat malignant hyperthermia caused by succinylcholine because:",
+        "options": [
+          "Dantrolene blocks calcium release from SR",
+          "Dantrolene induces contraction of skeletal muscle",
+          "Dantrolene increases the rate of succinylcholine metabolism",
+          "Succinylcholine binding to nicotinic receptors is antagonized by dantrolene"
+        ]
+      },
+      {
+        "stem": "A 65-year old male complains of losing his vision. Retinal examination reveals optic nerve cupping. Peripheral vision loss is observed on visual field tests, and his intraocular pressure is increased. Following treatment with a drug, he has improved visual acuity and decreased intraocular pressure. Which drug was he given?",
+        "options": [
+          "Scopolamine",
+          "Atenolol",
+          "Phentolamine",
+          "Timolol"
+        ]
+      },
+      {
+        "stem": "Hereditary deficiency of which of the following enzymes can lead to prolonged effects of succinylcholine?",
+        "options": [
+          "Glucose-6-phosphate dehydrogenase",
+          "Plasma cholinesterase",
+          "Cytochrome oxidase",
+          "Liver transaminase"
+        ]
+      },
+      {
+        "stem": "Drug X causes an increase in blood pressure and a decrease in heart rate when administered iv. If an antagonist at ganglionic nicotinic receptors is administered first, drug X causes an increase in blood pressure and an increase in heart rate. Drug X most likely is?",
+        "options": [
+          "Propranolol",
+          "Isoproterenol",
+          "Norepinephrine",
+          "Tubocurarine"
+        ]
+      },
+      {
+        "stem": "Clonidine and alpha-methyldopa act as agonists at alpha2-adrenoceptors to cause:",
+        "options": [
+          "A sustained increase in mean arterial pressure",
+          "An increase in intestinal motility",
+          "A CNS-mediated decrease in blood pressure",
+          "An increase in myocardial contractility"
+        ]
+      },
+      {
+        "stem": "Receptor actions of acetylcholine are mimicked by nicotine at which of the following sites?",
+        "options": [
+          "Adrenal medullary chromaffin cells",
+          "Urinary bladder smooth muscle cells",
+          "Iris circular (constrictor) muscle",
+          "Heart sinoatrial pacemaker cells"
+        ]
+      },
+      {
+        "stem": "Which one of the following drugs would decrease release of norepinephrine from noradrenergic nerves?",
+        "options": [
+          "Prazosin.",
+          "Atropine.",
+          "Phenylephrine.",
+          "Clonidine."
+        ]
+      },
+      {
+        "stem": "Clinical studies have shown that adrenoceptor blockers have many useful effects in patients. However, a number of drug toxicities have been documented. Adverse effects that limit the use of adrenoceptor blockers include which one of the following?",
+        "options": [
+          "Bronchoconstriction from α-blocking agents",
+          "Acute heart failure exacerbation from β blockers",
+          "Impaired blood sugar response with α blockers",
+          "Increased intraocular pressure with β blockers"
+        ]
+      },
+      {
+        "stem": "Muscarinic cholinoceptor agonists may induce vasodilation largely by causing the release of endothelial:",
+        "options": [
+          "Acetylcholine",
+          "Nitric oxide",
+          "Histamine",
+          "Norepinephrine"
+        ]
+      },
+      {
+        "stem": "The reflex change in heart rate associated with administration of a low dose of metaproterenol could be blocked by administration of which one of the following agents?",
+        "options": [
+          "Atropine",
+          "Prazosin",
+          "Propranolol",
+          "Physostigmine"
+        ]
+      },
+      {
+        "stem": "During an experiment, drug X is added to a muscle bath containing a strip of guinea pig intestinal smooth muscle. Acetylcholine is added to the bath, and the resultant effects on muscle tension are recorded. The muscle tension increases on administration of acetylcholine. Which of the following types of drugs is most likely to produce effects most similar to those of drug X?",
+        "options": [
+          "α1-Adrenergic antagonist",
+          "β-Adrenergic antagonist",
+          "Cholinesterase inhibitor",
+          "Muscarinic antagonist"
+        ]
+      },
+      {
+        "stem": "A 72-year-old woman who has smoked 20 cigarettes daily for the past 38 years begins using eyedrops for glaucoma. Three days later, she has a marked increase in shortness of breath while walking up a flight of stairs. Which of the following drugs is the most likely cause of the development of shortness of breath in this patient?",
+        "options": [
+          "Phenylephrine",
+          "Apraclonidine",
+          "Epinephrine",
+          "Timolol"
+        ]
+      },
+      {
+        "stem": "Ms CM, a 65-year-old retired woman, reports to the Nakuru PGH Emergency Department after becoming suddenly ill following her evening meal. Her presenting features include marked perspiration, excessive tear formation, nausea, drooling, pinpoint pupils & bradycardia. When asked about her recent history, she mentions having made a salad for dinner containing store-bought lettuce, tomatoes, vinegar & oil dressing, and some wild mushrooms that she hand-picked from the overgrown section of her garden. Assuming she is suffering from food poisoning, what active ingredient would best explain her signs & symptoms?",
+        "options": [
+          "Atropine",
+          "Cocaine",
+          "Muscarine",
+          "Scopolamine"
+        ]
+      },
+      {
+        "stem": "Mikey is a 5-year-old boy brought to the hospital by his parents with an initial complaint of a ~24-hour recent history of odd behavior consisting of confusion, delusions & inappropriate laughter. A physical exam reveals that Mikey has a fever, elevated heart rate, dilated pupils, blurry vision, and an unusual pink flush color on his skin. His blood pressure is relatively normal. His parents mention that Mikey has seemed unusually thirsty, and has been drinking a large amount of water & juice over the past 12 hours. Upon further questioning, Mikey mentions that he recently consumed some berries growing on a shrub near their home. Based upon Mikey's symptoms, the active ingredient(s) in these berries have properties similar to:",
+        "options": [
+          "Atropine",
+          "Pilocarpine",
+          "Reserpine",
+          "Tyramine"
+        ]
+      },
+      {
+        "stem": "A 23-year-old patient recently diagnosed with asthma cannot tolerate the CNS side effects of his inhaled salbutamol. Which of the following would you prescribe as an alternative?",
+        "options": [
+          "Ipratropium",
+          "Atropine",
+          "Bethanechol",
+          "Pyridostigmine"
+        ]
+      },
+      {
+        "stem": "A 52-year-old man undergoes radiotherapy to treat a tumor in his neck. A side effect of his treatment is the development of salivary gland hypofunction, with associated dry mouth. A drug that could be used to treat this patient's condition is:",
+        "options": [
+          "Atropine",
+          "Diphenhydramine",
+          "Nicotine",
+          "Pilocarpine"
+        ]
+      },
+      {
+        "stem": "As a pharmacist in the Kenya Army, you are given orders to lead your troops into an area where there is a high probability of exposure to the nerve gas Soman. To protect you and your troops, you order them to take an oral medication approximately 8 hours before departure. This medication is:",
+        "options": [
+          "Atropine",
+          "Echothiophate",
+          "Pralidoxime",
+          "Pyridostigmine"
+        ]
+      },
+      {
+        "stem": "While on a medical mission in Syria, you are exposed to the nerve gas Sarin. Effective treatment typically involves the i.m. administration of:",
+        "options": [
+          "Atropine + pralidoxime",
+          "Atropine + trimethaphan",
+          "Pilocarpine + pralidoxime",
+          "Tubocurarine + trimethaphan"
+        ]
+      },
+      {
+        "stem": "A severely hypertensive man suffering from a dissecting aortic aneurysm is given trimethaphani.v. in order to rapidly lower his blood pressure. In addition to lowering of blood pressure, what other physiological effect would this drug produce?",
+        "options": [
+          "Blunting of all baroreceptor reflexes",
+          "Bradycardia",
+          "Increased GI motility & diarrhea",
+          "Sweating"
+        ]
+      },
+      {
+        "stem": "A 22-year-old patient involved in a alcohol-related car accident is brought into the hospital. Due to the patient's severe injuries and high risk for gastric aspiration, the physician decides to initiate a rapid sequence intubation to maintain and protect his airway prior to surgery. An intravenous line is placed in the patients arm, and the patient is given a bolus of propofol (general anesthetic), followed immediately by a bolus of a rapidly acting depolarizing neuromuscular blocking agent. Shortly thereafter, an endotracheal tube is inserted, and mechanical ventilation is initiated. The most likely drug given to produce skeletal muscle relaxation was:",
+        "options": [
+          "Atropine",
+          "Neostigmine",
+          "Succinylcholine",
+          "Tubocurarine"
+        ]
+      },
+      {
+        "stem": "John J is a 32-year-old man about to undergo surgery to remove his inflammed appendix. John has a family history of malignant hyperthermia, as well as a genetic disorder causing resulting in very low atypical pseudocholinesterase activity. Based on his medical history, John's surgeon uses caution when selecting both the type of general anesthetic and skeletal muscle relaxant prior to starting the procedure. What skeletal muscle relaxant should John's surgeon avoid using?",
+        "options": [
+          "Atracurium",
+          "Pancuronium",
+          "Rocuronium",
+          "Suxamethonium"
+        ]
+      },
+      {
+        "stem": "Succinylcholine has some significant side effects, one of which limits its use in patients suffering from major burns. This side effect is:",
+        "options": [
+          "Difficulty breathing",
+          "Ganglionic blockade",
+          "Histamine release",
+          "Hyperkalemia"
+        ]
+      },
+      {
+        "stem": "A relatively old woman places some home-made botanical eye drops in each eye before an upcoming date. Shortly thereafter her pupils become dilated & unresponsive to light. Later that evening she also discovers that she has extreme difficulty reading the restaurant menu. Regardless, her date finds her mysteriously attractive. What active ingredient did her eye drops most likely contain?",
+        "options": [
+          "Atropine",
+          "Bethanechol",
+          "Echothiophate",
+          "Pilocarpine"
+        ]
+      },
+      {
+        "stem": "Most patients 50 years and older are advised to have yearly eye exams. Part of the normal procedure for such eye exams involves administering eye drops to dilate the patient's pupils. What test would a good eye doctor perform prior to administering such eye drops?",
+        "options": [
+          "Blood pressure & body weight",
+          "Credit history",
+          "Intraocular pressure",
+          "Temperature"
+        ]
+      },
+      {
+        "stem": "Your 54-year-old patient undergoes intra-abdominal surgery for appendicitis. During his post-operative recovery, he develops constipation and abdominal discomfort due to a paralytic ileus (paralysis of the bowel) that can result from surgical manipulation of the intestines. From the list of options below, which would best treat his condition?",
+        "options": [
+          "Neostigmine",
+          "Physostigmine",
+          "Scopolamine",
+          "Tubocurarine"
+        ]
+      },
+      {
+        "stem": "A 2-year old child is brought into the emergency department by her parents suffering from signs and symptoms including altered mental status, drooling, sweating, nausea, diarrhea, urination, vomiting, pinpoint pupils, wheezing and apparent seizure-like jerking movements. The child's mother states that they found their child in their garage an hour ago next to an open container of Sevin ®, a commercial carbamate insecticide. What treatment option would be contraindicated (and ineffective) in the treatment of this patient?",
+        "options": [
+          "Activated charcoal lavage",
+          "Atropine",
+          "Diazepam (benzodiazepine)",
+          "Pralidoxime"
+        ]
+      },
+      {
+        "stem": "Karl is a 65-year old man with severe hypertension who has not achieved his therapeutic goal for controlling his blood pressure after treatment with a combination of 4 different antihypertensive drugs for the past 6 months. Having exhausted the list of the most highly recommended drugs, his physician elects to add reserpine to his drug regimen. The molecular target for this antihypertensive drug is inhibition of:",
+        "options": [
+          "Alpha-adrenergic receptors",
+          "Beta-adrenergic receptors",
+          "Ganglionic nicotinic receptors",
+          "Vesicular monoamine transporter"
+        ]
+      },
+      {
+        "stem": "What side effects would develop if reserpine is prescribed?",
+        "options": [
+          "Depression and sedation",
+          "Hyperthermia",
+          "Mydriasis",
+          "Seizures"
+        ]
+      },
+      {
+        "stem": "As a cardiovascular drug, dopamine can produce remarkedly different effects depending on the dose administered. At high doses the predominant effect of dopamine would be to cause vasoconstriction by stimulating:",
+        "options": [
+          "Alpha-adrenergic receptors",
+          "Beta-1 adrenergic receptors",
+          "Beta-2 adrenergic receptors",
+          "Dopamine receptors"
+        ]
+      },
+      {
+        "stem": "During fight or flight situations the adrenal gland releases significant amounts of epinephrine into the bloodstream. Epinephrine in turn stimulates a variety of adrenergic receptors. Which vascular receptor subtype is not normally innervated, but when stimulated by epinephrine results in vasodilation & increased regional blood flow to skeletal muscle?",
+        "options": [
+          "Alpha-1",
+          "Alpha-2",
+          "Beta-1",
+          "Beta-2"
+        ]
+      },
+      {
+        "stem": "Cocaine is an example of a drug that interferes with the major mechanism of termination of synaptically released norepinephrine. What is the cellular target that is inhibited by this drug?",
+        "options": [
+          "Catechol-O-methyltransferase (COMT)",
+          "Monoamine Oxidase (MAO)",
+          "Norepinephrine Transporter (NET)",
+          "Tyrosine Hydroxylase (TH)"
+        ]
+      },
+      {
+        "stem": "This adrenergic receptor subtype is expressed on vascular smooth muscle at sites some distance away from sympathetic nerve terminals, and produces vasoconstrictor responses when stimulated by circulating catecholamines such as epinephrine.",
+        "options": [
+          "Alpha-1",
+          "Alpha-2",
+          "Beta-2",
+          "Dopamine"
+        ]
+      },
+      {
+        "stem": "You are suddenly frightened by a neighborhood dog while jogging through your neighborhood. Which physiological response will likely occur?",
+        "options": [
+          "Constriction of skeletal muscle arterioles",
+          "Decrease in pain threshold",
+          "Decreased fat metabolism",
+          "Stimulation of glycogen breakdown by the liver"
+        ]
+      },
+      {
+        "stem": "A patient suffering from a severe AV heart conduction disturbance is given an i.v. bolus of isoproterenol. A recording of the patient's blood pressure shows a fall in blood pressure. Stimulation of which adrenergic receptor subtype is responsible for producing the fall in diastolic blood pressure?",
+        "options": [
+          "Alpha-1",
+          "Alpha-2",
+          "Beta-1",
+          "Beta-2"
+        ]
+      },
+      {
+        "stem": "Stimulation of which receptor subtype is directly responsible for producing the increase in pulse pressure following i.v. administration of isoproterenol?",
+        "options": [
+          "Alpha-1",
+          "Alpha-2",
+          "Beta-1",
+          "Beta-2"
+        ]
+      },
+      {
+        "stem": "An i.v. bolus of tyramine produced a rise in mean arterial blood pressure. At the same time, tyramine produced little or no change in arterial pulse pressure. What receptor subtype is most likely responsible for producing the rise in mean arterial blood pressure?",
+        "options": [
+          "Alpha-1",
+          "Alpha-2",
+          "Beta-1",
+          "Nicotinic (ganglionic)"
+        ]
+      },
+      {
+        "stem": "Patients with atypical depression (who have signs & symptoms of depression, but eat too much & sleep too much) are sometimes treated with MAO inhibitors such as phenelzine. What food substance(s) if consumed could produce a hypertensive crisis if consumed by patients on this type of drug therapy?",
+        "options": [
+          "Bananas",
+          "Grapes",
+          "Octopamine",
+          "Red wine & cheese"
+        ]
+      },
+      {
+        "stem": "Both norepinephrine and epinephrine (noradrenaline & adrenaline) can be given i.v. to produce pressor responses. While both work equally well in many cases, what receptor subtype is stimulated by epinephrine, but is not stimulated by norepinephrine?",
+        "options": [
+          "Alpha-1",
+          "Alpha-2",
+          "Beta-1",
+          "Beta-2"
+        ]
+      },
+      {
+        "stem": "In humans, the release of acetylcholine is responsible for which of the following postganglionic sympathetic responses?",
+        "options": [
+          "Activation of sweat glands",
+          "Constriction of cutaneous blood vessels",
+          "Decreased gastrointestinal motility",
+          "Increased ventricular contractility"
+        ]
+      },
+      {
+        "stem": "A patient takes a stimulant that produces euphoria, as well as an increase in heart rate and blood pressure. To exert its effects, this drug must be taken up into nerve terminals where it stimulates the release of norepinephrine & dopamine from their vesicular storage sites. This drug is:",
+        "options": [
+          "Amphetamine",
+          "Cocaine",
+          "Nicotine",
+          "Yohimbine"
+        ]
+      },
+      {
+        "stem": "During a prolonged surgical procedure performed under halothane general anesthesia, a patient experiences a fall in blood pressure. The anesthesiologist administers a pressor agent by s.c. injection that does not stimulate cardiac beta-1 receptors. This drug was:",
+        "options": [
+          "Doxazosin",
+          "Isoproterenol",
+          "Phentolamine",
+          "Phenylephrine"
+        ]
+      },
+      {
+        "stem": "A 27-year-old woman with a history of hypertension comes to your office to discuss her drug therapy for hypertension. Her blood pressure is currently well controlled (BP<130/85) by a combination of enalapril (an ACE inhibitor) and hydrochlorothiazide (a thiazide-type diuretic). The reason for her visit is that she is planning to become pregnant in the near future, and she is aware that ACE inhibitors are contraindicated in pregnancy. After discussing her therapeutic options, you decide to replace her ACE inhibitor with a drug that is considered relatively safe in pregnancy and is believed to exert its effects by multiple mechanisms including working as a false neurotransmitter. This drug is.",
+        "options": [
+          "Salbutamol",
+          "Labetalol",
+          "Methyldopa",
+          "Prazosin"
+        ]
+      },
+      {
+        "stem": "Several drugs used to treat non-cardiovascular conditions have alpha-blocking \"side effects\". If epinephrine is injected into such patients, it will likely produce a change in blood pressure resembling that produced by:",
+        "options": [
+          "Dobutamine",
+          "Norepinephrine",
+          "Isoproterenol",
+          "Phenylephrine"
+        ]
+      },
+      {
+        "stem": "A 16-year-old patient arrives in the emergency department suffering from an anaphylactic reaction. The patient is having difficulty breathing, has severe urticaria, and is hypotensive. Which of the following is a drug of choice for treating this patient's potentially life-threatening condition?",
+        "options": [
+          "Epinephrine",
+          "Isoproterenol",
+          "Norepinephrine",
+          "Phenylephrine"
+        ]
+      },
+      {
+        "stem": "A drug that produces a pressor response is administered repeatedly by i.v. injection over a short period of time. After several injections, a tachyphylaxis occurs. What drug was most likely administered?",
+        "options": [
+          "Ephedrine",
+          "Epinephrine",
+          "Norepinephrine",
+          "Phenylephrine"
+        ]
+      },
+      {
+        "stem": "Which one of the following drugs generally should NOT be administered to a patient with asthma?",
+        "options": [
+          "Physiostigmine",
+          "Atropine",
+          "Isoproterenol",
+          "Norepinephrine"
+        ]
+      },
+      {
+        "stem": "A 55-year-old man develops a loss of visual accommodation while taking an antidepressant drug. The most likely cause is the blockade of which of the following receptors?",
+        "options": [
+          "α-Adrenergic",
+          "β-Adrenergic",
+          "Histaminergic",
+          "Muscarinic"
+        ]
+      },
+      {
+        "stem": "The pressor effect of epinephrine can be converted to a depressor effect by prior administration of which of the following agents??",
+        "options": [
+          "Prazosin",
+          "Propranolol",
+          "Atropine",
+          "Reserpine"
+        ]
+      },
+      {
+        "stem": "Topical application of timolol to the eye would be expected to induce which of the following?",
+        "options": [
+          "Miosis",
+          "Mydriasis",
+          "Decreased formation of aqueous humor",
+          "Increased outflow of aqueous humor"
+        ]
+      },
+      {
+        "stem": "Phenylephrine is applied to the nasal mucosa in order to?",
+        "options": [
+          "block histamine receptors",
+          "block beta-adrenergic receptors",
+          "induce vasodilation",
+          "induce vasoconstriction"
+        ]
+      }
+    ],
+    "B": [
+      {
+        "stem": "A 60-year old male patient suffering from hypertension and benign prostatic hyperplasia presents to the hospital.\nWhich drug would you recommend for this patient?(1 Mark)\nWhat is the mode of action of the drugs mentioned in a) above?(2 Marks)\nState 4 side effects of the drug mentioned in a) above.(2 Marks)"
+      },
+      {
+        "stem": "State any two adjuncts of general anaesthesia that target the autonomic nervous system?(2 Marks)\nWhat is their role in general anaesthesia?(2 Marks)\nWhat is the mode of action of the drugs mentioned in a) above? (4 Marks)\nState any three side effects of each of the drugs mentioned in a) above. (3 Marks\nHow would you manage cases of overdose with the drugs mentioned in a) above?(2 Marks)\nState any four drugs that can be used in treatment of an acute asthmatic attack.(2 Marks)"
+      }
+    ],
+    "C": [
+      {
+        "stem": "Describe ATROPINE under the following headings:\nMode of action (2 Marks)\nAny five Clinical applications (5 Marks)\nAny TEN side effects(5 Marks)\nany three drug-drug interactions(6 Marks)\nContraindications(2 Marks)"
+      },
+      {
+        "stem": "Describe PROPRANOLOL under the following headings:\nMode of action(2 Marks)\nAny seven Clinical applications(7 Marks)\nAny six side effects(3 Marks)\nany three drug-drug interactions(6 Marks)\nContraindications(2 Marks)"
+      }
+    ]
+  }
+}

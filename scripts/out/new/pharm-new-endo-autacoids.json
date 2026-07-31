@@ -1,0 +1,1195 @@
+{
+  "pharm-new-endo-autacoids": {
+    "1": {
+      "title": "Endocrine & Autacoid Pharmacology",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Which of the following is the primary mechanism by which histamine H1 receptor antagonists alleviate allergic rhinitis symptoms?",
+              "options": [
+                "Stimulation of H1 receptors to increase vascular permeability",
+                "Inhibition of histamine release from mast cells",
+                "Competitive antagonism of H1 receptors on vascular endothelial cells",
+                "Enhancement of leukotriene synthesis to reduce inflammation"
+              ],
+              "answer": "Competitive antagonism of H1 receptors on vascular endothelial cells",
+              "explanation": "H1 antihistamines block H1 receptors, preventing histamine-mediated vasodilation, increased vascular permeability, and pruritus in allergic rhinitis."
+            },
+            {
+              "stem": "A 35-year-old patient with chronic urticaria is prescribed a second-generation H1 antihistamine. Which of the following is LEAST likely to cause sedation at therapeutic doses?",
+              "options": [
+                "Diphenhydramine",
+                "Chlorpheniramine",
+                "Loratadine",
+                "Cetirizine"
+              ],
+              "answer": "Loratadine",
+              "explanation": "Second-generation H1 antihistamines (loratadine, cetirizine) are less lipophilic and do not cross the blood-brain barrier significantly, minimizing sedation."
+            },
+            {
+              "stem": "Which of the following adverse effects is MOST commonly associated with first-generation H1 antihistamines due to their anticholinergic properties?",
+              "options": [
+                "Bradycardia",
+                "Urinary retention",
+                "Hyperkalemia",
+                "Hypotension"
+              ],
+              "answer": "Urinary retention",
+              "explanation": "First-generation H1 antihistamines (e.g., diphenhydramine) have anticholinergic effects, leading to urinary retention, dry mouth, and blurred vision."
+            },
+            {
+              "stem": "Terfenadine and astemizole were withdrawn from the market due to their association with which of the following cardiotoxic effects?",
+              "options": [
+                "QT prolongation and torsades de pointes",
+                "Hypertension",
+                "Myocardial infarction",
+                "Cardiac arrest"
+              ],
+              "answer": "QT prolongation and torsades de pointes",
+              "explanation": "Terfenadine and astemizole prolong the QT interval, especially when metabolized by CYP3A4 inhibitors (e.g., ketoconazole), increasing the risk of torsades de pointes."
+            },
+            {
+              "stem": "A 45-year-old patient with a history of hypertension and diabetes presents with flushing, diarrhea, and bronchospasm. Which autacoid is MOST likely responsible for these symptoms?",
+              "options": [
+                "Histamine",
+                "Serotonin",
+                "Bradykinin",
+                "Prostaglandin E2"
+              ],
+              "answer": "Serotonin",
+              "explanation": "Carcinoid syndrome, caused by serotonin-secreting tumors, presents with flushing, diarrhea, and bronchospasm due to serotonin's effects on 5-HT receptors."
+            },
+            {
+              "stem": "Which of the following serotonin receptor subtypes is primarily involved in the emetic response and is targeted by ondansetron?",
+              "options": [
+                "5-HT1",
+                "5-HT2",
+                "5-HT3",
+                "5-HT4"
+              ],
+              "answer": "5-HT3",
+              "explanation": "5-HT3 receptors in the chemoreceptor trigger zone and vagal afferents mediate nausea and vomiting, making them the target of 5-HT3 antagonists like ondansetron."
+            },
+            {
+              "stem": "A 30-year-old female patient with migraines is prescribed a drug that acts as a 5-HT1B/1D receptor agonist. Which of the following drugs is she MOST likely taking?",
+              "options": [
+                "Propranolol",
+                "Amitriptyline",
+                "Sumatriptan",
+                "Methysergide"
+              ],
+              "answer": "Sumatriptan",
+              "explanation": "Triptans (e.g., sumatriptan) are 5-HT1B/1D receptor agonists used for acute migraine treatment by constricting intracranial blood vessels and inhibiting neuropeptide release."
+            },
+            {
+              "stem": "Which of the following adverse effects is MOST commonly associated with methysergide, a serotonin antagonist used for migraine prophylaxis?",
+              "options": [
+                "Hypotension",
+                "Retroperitoneal fibrosis",
+                "Hyperkalemia",
+                "Bradycardia"
+              ],
+              "answer": "Retroperitoneal fibrosis",
+              "explanation": "Methysergide, a serotonin antagonist, can cause visceral fibrosis, including retroperitoneal fibrosis, limiting its long-term use."
+            },
+            {
+              "stem": "A 50-year-old patient with severe migraine is prescribed ergotamine. Which of the following is a key pharmacologic property of ergotamine?",
+              "options": [
+                "Selective vasodilation of cerebral arteries",
+                "Oxytocic effect on the uterus",
+                "Stimulation of gastric acid secretion",
+                "Inhibition of platelet aggregation"
+              ],
+              "answer": "Oxytocic effect on the uterus",
+              "explanation": "Ergot alkaloids (e.g., ergotamine) have oxytocic properties, stimulating uterine contractions, which can lead to ergotism in overdose."
+            },
+            {
+              "stem": "Which of the following eicosanoids is primarily responsible for mediating pain and inflammation in rheumatoid arthritis?",
+              "options": [
+                "Prostaglandin E2",
+                "Leukotriene B4",
+                "Thromboxane A2",
+                "Prostacyclin"
+              ],
+              "answer": "Prostaglandin E2",
+              "explanation": "Prostaglandin E2 sensitizes nociceptors and mediates inflammation, making it a key target for NSAIDs in conditions like rheumatoid arthritis."
+            },
+            {
+              "stem": "A 60-year-old patient with osteoarthritis is prescribed a COX-2 selective inhibitor. Which of the following is a potential advantage of COX-2 inhibitors over non-selective NSAIDs?",
+              "options": [
+                "Increased risk of peptic ulcer disease",
+                "Reduced risk of cardiovascular events",
+                "Lower incidence of renal toxicity",
+                "Decreased risk of gastrointestinal bleeding"
+              ],
+              "answer": "Decreased risk of gastrointestinal bleeding",
+              "explanation": "COX-2 inhibitors (e.g., celecoxib) selectively inhibit COX-2, reducing gastrointestinal toxicity compared to non-selective NSAIDs, though cardiovascular risks remain."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism of action of levothyroxine in hypothyroidism?",
+              "options": [
+                "Inhibition of thyroid peroxidase",
+                "Stimulation of thyroid-stimulating hormone (TSH) secretion",
+                "Replacement of endogenous thyroid hormone",
+                "Blockade of thyroid hormone receptors"
+              ],
+              "answer": "Replacement of endogenous thyroid hormone",
+              "explanation": "Levothyroxine is a synthetic T4 analog that replaces deficient thyroid hormone in hypothyroidism, restoring normal metabolic function."
+            },
+            {
+              "stem": "A 40-year-old patient with Graves' disease is prescribed propylthiouracil. Which of the following is the primary mechanism of action of propylthiouracil?",
+              "options": [
+                "Inhibition of thyroid hormone release",
+                "Blockade of thyroid hormone receptors",
+                "Inhibition of thyroid peroxidase and peripheral conversion of T4 to T3",
+                "Stimulation of thyroid-stimulating hormone (TSH) secretion"
+              ],
+              "answer": "Inhibition of thyroid peroxidase and peripheral conversion of T4 to T3",
+              "explanation": "Propylthiouracil inhibits thyroid peroxidase, reducing thyroid hormone synthesis, and also inhibits peripheral deiodination of T4 to T3."
+            },
+            {
+              "stem": "Which of the following insulin preparations has the fastest onset of action and is typically used for meal-time glycemic control?",
+              "options": [
+                "Insulin glargine",
+                "Insulin detemir",
+                "Insulin lispro",
+                "NPH insulin"
+              ],
+              "answer": "Insulin lispro",
+              "explanation": "Rapid-acting insulins (e.g., lispro, aspart) have an onset of action within 15 minutes and are used for meal-time glycemic control."
+            },
+            {
+              "stem": "A 55-year-old patient with type 2 diabetes and chronic kidney disease is prescribed metformin. Which of the following is a contraindication to metformin use in this patient?",
+              "options": [
+                "Hypoglycemia",
+                "Elevated serum creatinine (>1.5 mg/dL in males)",
+                "Hyperlipidemia",
+                "Hypertension"
+              ],
+              "answer": "Elevated serum creatinine (>1.5 mg/dL in males)",
+              "explanation": "Metformin is contraindicated in patients with significant renal impairment (e.g., serum creatinine >1.5 mg/dL in males) due to the risk of lactic acidosis."
+            },
+            {
+              "stem": "Which of the following oral hypoglycemic agents works primarily by increasing insulin secretion from pancreatic beta cells?",
+              "options": [
+                "Metformin",
+                "Pioglitazone",
+                "Glipizide",
+                "Sitagliptin"
+              ],
+              "answer": "Glipizide",
+              "explanation": "Sulfonylureas (e.g., glipizide) stimulate insulin secretion from pancreatic beta cells by closing KATP channels, leading to depolarization and insulin release."
+            },
+            {
+              "stem": "A 60-year-old patient with type 2 diabetes is prescribed empagliflozin. Which of the following is the primary mechanism of action of empagliflozin?",
+              "options": [
+                "Inhibition of alpha-glucosidase",
+                "Stimulation of insulin secretion",
+                "Inhibition of sodium-glucose cotransporter 2 (SGLT2) in the proximal renal tubule",
+                "Activation of peroxisome proliferator-activated receptor gamma (PPARγ)"
+              ],
+              "answer": "Inhibition of sodium-glucose cotransporter 2 (SGLT2) in the proximal renal tubule",
+              "explanation": "SGLT2 inhibitors (e.g., empagliflozin) reduce renal glucose reabsorption, increasing urinary glucose excretion and lowering blood glucose."
+            },
+            {
+              "stem": "Which of the following corticosteroids has the highest glucocorticoid potency and is commonly used for anti-inflammatory and immunosuppressive effects?",
+              "options": [
+                "Hydrocortisone",
+                "Prednisone",
+                "Dexamethasone",
+                "Cortisone"
+              ],
+              "answer": "Dexamethasone",
+              "explanation": "Dexamethasone has a glucocorticoid potency 25-30 times that of hydrocortisone and is used for potent anti-inflammatory and immunosuppressive effects."
+            },
+            {
+              "stem": "A 45-year-old patient with rheumatoid arthritis is prescribed prednisolone. Which of the following adverse effects is MOST likely to occur with long-term use?",
+              "options": [
+                "Hyperkalemia",
+                "Osteoporosis",
+                "Hypoglycemia",
+                "Bradycardia"
+              ],
+              "answer": "Osteoporosis",
+              "explanation": "Long-term corticosteroid use (e.g., prednisolone) suppresses osteoblast activity and increases bone resorption, leading to osteoporosis and increased fracture risk."
+            },
+            {
+              "stem": "Which of the following is a key adverse effect of tamoxifen, a selective estrogen receptor modulator (SERM) used in breast cancer?",
+              "options": [
+                "Endometrial hyperplasia",
+                "Hypercalcemia",
+                "Hypothyroidism",
+                "Bradycardia"
+              ],
+              "answer": "Endometrial hyperplasia",
+              "explanation": "Tamoxifen has estrogenic effects on the endometrium, increasing the risk of endometrial hyperplasia, polyps, and carcinoma."
+            },
+            {
+              "stem": "A 35-year-old patient with endometriosis is prescribed a progestin-only contraceptive. Which of the following is the primary mechanism of action of progestins in this context?",
+              "options": [
+                "Stimulation of ovulation",
+                "Inhibition of follicle-stimulating hormone (FSH) secretion",
+                "Thickening of cervical mucus to prevent sperm penetration",
+                "Direct inhibition of endometrial proliferation"
+              ],
+              "answer": "Direct inhibition of endometrial proliferation",
+              "explanation": "Progestins inhibit endometrial proliferation, making the endometrium less receptive to implantation and reducing symptoms of endometriosis."
+            },
+            {
+              "stem": "Which of the following is a key adverse effect of long-term glucocorticoid therapy that is typically irreversible?",
+              "options": [
+                "Moon facies",
+                "Avascular necrosis of the femoral head",
+                "Hyperglycemia",
+                "Hypertension"
+              ],
+              "answer": "Avascular necrosis of the femoral head",
+              "explanation": "Avascular necrosis of the femoral head is a rare but irreversible adverse effect of long-term glucocorticoid therapy, often requiring surgical intervention."
+            },
+            {
+              "stem": "A 50-year-old patient with type 2 diabetes and heart failure is prescribed a drug that inhibits dipeptidyl peptidase-4 (DPP-4). Which of the following drugs is she MOST likely taking?",
+              "options": [
+                "Metformin",
+                "Sitagliptin",
+                "Glipizide",
+                "Pioglitazone"
+              ],
+              "answer": "Sitagliptin",
+              "explanation": "DPP-4 inhibitors (e.g., sitagliptin) increase incretin hormone levels (GLP-1, GIP), enhancing glucose-dependent insulin secretion and reducing glucagon release."
+            },
+            {
+              "stem": "Which of the following is a key adverse effect of sulfonylureas, such as glibenclamide, in elderly patients?",
+              "options": [
+                "Hypercalcemia",
+                "Hypoglycemia",
+                "Hyperkalemia",
+                "Hypertension"
+              ],
+              "answer": "Hypoglycemia",
+              "explanation": "Sulfonylureas stimulate insulin secretion and can cause hypoglycemia, particularly in elderly patients with reduced renal or hepatic function."
+            },
+            {
+              "stem": "A 40-year-old patient with Cushing's syndrome is prescribed ketoconazole. Which of the following is the primary mechanism of action of ketoconazole in this context?",
+              "options": [
+                "Inhibition of cortisol synthesis by blocking 11β-hydroxylase",
+                "Stimulation of cortisol metabolism",
+                "Blockade of glucocorticoid receptors",
+                "Inhibition of adrenocorticotropic hormone (ACTH) secretion"
+              ],
+              "answer": "Inhibition of cortisol synthesis by blocking 11β-hydroxylase",
+              "explanation": "Ketoconazole inhibits adrenal steroid synthesis by blocking 11β-hydroxylase, reducing cortisol production in Cushing's syndrome."
+            },
+            {
+              "stem": "Which of the following is a key adverse effect of long-term levothyroxine therapy in patients with hypothyroidism?",
+              "options": [
+                "Hyperthyroidism",
+                "Hypocalcemia",
+                "Hyperkalemia",
+                "Hypoglycemia"
+              ],
+              "answer": "Hyperthyroidism",
+              "explanation": "Over-replacement with levothyroxine can lead to iatrogenic hyperthyroidism, causing symptoms such as palpitations, tremors, and heat intolerance."
+            },
+            {
+              "stem": "A 30-year-old patient with type 1 diabetes is prescribed pramlintide, an amylin analog. Which of the following is the primary mechanism of action of pramlintide?",
+              "options": [
+                "Stimulation of insulin secretion",
+                "Inhibition of glucagon secretion and delayed gastric emptying",
+                "Enhancement of renal glucose excretion",
+                "Activation of peroxisome proliferator-activated receptor gamma (PPARγ)"
+              ],
+              "answer": "Inhibition of glucagon secretion and delayed gastric emptying",
+              "explanation": "Pramlintide, an amylin analog, suppresses postprandial glucagon secretion and slows gastric emptying, reducing postprandial glucose excursions."
+            },
+            {
+              "stem": "Which of the following is a key adverse effect of metformin, particularly in patients with renal impairment?",
+              "options": [
+                "Lactic acidosis",
+                "Hypoglycemia",
+                "Hyperkalemia",
+                "Hypercalcemia"
+              ],
+              "answer": "Lactic acidosis",
+              "explanation": "Metformin inhibits hepatic gluconeogenesis and can cause lactic acidosis, especially in patients with renal impairment or hypoxia."
+            },
+            {
+              "stem": "A 55-year-old patient with type 2 diabetes is prescribed canagliflozin, an SGLT2 inhibitor. Which of the following is a key adverse effect of canagliflozin?",
+              "options": [
+                "Hypoglycemia",
+                "Genital mycotic infections",
+                "Hyperkalemia",
+                "Bradycardia"
+              ],
+              "answer": "Genital mycotic infections",
+              "explanation": "SGLT2 inhibitors increase urinary glucose excretion, creating a glucose-rich environment in the genital tract that predisposes to mycotic infections."
+            },
+            {
+              "stem": "Which of the following is a key adverse effect of long-term glucocorticoid therapy that is reversible upon discontinuation?",
+              "options": [
+                "Avascular necrosis of the femoral head",
+                "Moon facies",
+                "Osteoporosis",
+                "Cataracts"
+              ],
+              "answer": "Moon facies",
+              "explanation": "Moon facies is a reversible adverse effect of long-term glucocorticoid therapy, characterized by fat redistribution in the face."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "a) List the four primary classes of histamine receptors and their principal physiologic roles. (2 marks)\nb) Compare the pharmacologic properties of first-generation and second-generation H1 antihistamines with respect to sedation and anticholinergic effects. (3 marks)",
+              "modelAnswer": "a) The four primary classes of histamine receptors are:\n- H1: Mediates allergic responses (vasodilation, increased vascular permeability, pruritus, bronchoconstriction).\n- H2: Stimulates gastric acid secretion and regulates cardiac contractility.\n- H3: Modulates neurotransmitter release in the central nervous system (CNS) and peripheral nerves.\n- H4: Regulates immune cell function and inflammation.\n\nb) First-generation H1 antihistamines (e.g., diphenhydramine, chlorpheniramine) are highly lipophilic and cross the blood-brain barrier, causing significant sedation and anticholinergic effects (e.g., dry mouth, urinary retention, blurred vision). Second-generation H1 antihistamines (e.g., loratadine, cetirizine) are less lipophilic, do not cross the blood-brain barrier significantly, and thus have minimal sedation and anticholinergic effects."
+            },
+            {
+              "stem": "a) Outline the mechanism of action of ergot alkaloids in the treatment of migraine. (2 marks)\nb) Describe two key adverse effects associated with ergot alkaloids. (3 marks)",
+              "modelAnswer": "a) Ergot alkaloids (e.g., ergotamine, dihydroergotamine) are partial agonists at 5-HT1B/1D receptors, leading to vasoconstriction of intracranial blood vessels and inhibition of neurogenic inflammation. They also have oxytocic effects on the uterus.\n\nb) Key adverse effects of ergot alkaloids include:\n- Ergotism: A syndrome characterized by vasoconstriction, ischemia, and potential gangrene due to excessive vasoconstriction.\n- Retroperitoneal, pleural, or cardiac fibrosis: A rare but serious adverse effect associated with chronic use, particularly of methysergide (a derivative of ergotamine)."
+            },
+            {
+              "stem": "a) List the three primary eicosanoids derived from arachidonic acid metabolism. (1.5 marks)\nb) Describe the role of these eicosanoids in inflammation and pain. (2 marks)\nc) Explain why COX-2 selective inhibitors are preferred over non-selective NSAIDs in patients with gastrointestinal risk. (1.5 marks)",
+              "modelAnswer": "a) The three primary eicosanoids derived from arachidonic acid metabolism are:\n- Prostaglandins (e.g., PGE2, PGI2)\n- Thromboxane A2 (TXA2)\n- Leukotrienes (e.g., LTB4, LTC4)\n\nb) Prostaglandins (e.g., PGE2) sensitize nociceptors, increase vascular permeability, and mediate inflammation and pain. Thromboxane A2 promotes platelet aggregation and vasoconstriction. Leukotrienes (e.g., LTB4) are potent chemoattractants for neutrophils and contribute to inflammation.\n\nc) COX-2 selective inhibitors (e.g., celecoxib) preferentially inhibit COX-2, which is induced at sites of inflammation, while sparing COX-1, which protects the gastric mucosa. This reduces the risk of peptic ulcer disease and gastrointestinal bleeding compared to non-selective NSAIDs."
+            },
+            {
+              "stem": "a) List the two primary thyroid hormones secreted by the thyroid gland. (1 mark)\nb) Describe the mechanism of action of levothyroxine in hypothyroidism. (2 marks)\nc) State two potential drug-drug interactions with levothyroxine. (2 marks)",
+              "modelAnswer": "a) The two primary thyroid hormones secreted by the thyroid gland are:\n- Thyroxine (T4)\n- Triiodothyronine (T3)\n\nb) Levothyroxine (T4) is a synthetic analog of thyroxine that replaces deficient thyroid hormone in hypothyroidism. It is converted to the active T3 in peripheral tissues by deiodinase enzymes, restoring normal metabolic function.\n\nc) Potential drug-drug interactions with levothyroxine include:\n- Calcium or iron supplements: Can bind levothyroxine in the gastrointestinal tract, reducing absorption.\n- Proton pump inhibitors (e.g., omeprazole): Can reduce levothyroxine absorption by increasing gastric pH."
+            },
+            {
+              "stem": "a) List the four primary classes of insulin preparations based on their duration of action. (2 marks)\nb) Provide one example of each class. (2 marks)\nc) Describe the rationale for using a basal-bolus insulin regimen in type 1 diabetes. (1 mark)",
+              "modelAnswer": "a) The four primary classes of insulin preparations based on duration of action are:\n- Rapid-acting\n- Short-acting\n- Intermediate-acting\n- Long-acting\n\nb) Examples of each class:\n- Rapid-acting: Insulin lispro, insulin aspart\n- Short-acting: Regular insulin\n- Intermediate-acting: NPH insulin\n- Long-acting: Insulin glargine, insulin detemir\n\nc) A basal-bolus insulin regimen mimics the natural pattern of insulin secretion, with basal insulin providing continuous background coverage and bolus insulin covering meal-time glucose excursions. This regimen improves glycemic control and reduces the risk of hypoglycemia in type 1 diabetes."
+            },
+            {
+              "stem": "a) List the four primary classes of oral hypoglycemic agents used in type 2 diabetes. (2 marks)\nb) Provide one example of each class. (2 marks)\nc) Describe the mechanism of action of metformin. (1 mark)",
+              "modelAnswer": "a) The four primary classes of oral hypoglycemic agents used in type 2 diabetes are:\n- Biguanides\n- Sulfonylureas\n- Thiazolidinediones (TZDs)\n- DPP-4 inhibitors\n\nb) Examples of each class:\n- Biguanides: Metformin\n- Sulfonylureas: Glipizide, glibenclamide\n- Thiazolidinediones: Pioglitazone\n- DPP-4 inhibitors: Sitagliptin, saxagliptin\n\nc) Metformin primarily reduces hepatic gluconeogenesis and increases insulin-mediated glucose uptake in peripheral tissues, improving insulin sensitivity and lowering blood glucose."
+            },
+            {
+              "stem": "a) List the three primary classes of corticosteroids based on their duration of action. (1.5 marks)\nb) Provide one example of each class. (1.5 marks)\nc) Describe the mechanism of action of corticosteroids in inflammation. (2 marks)",
+              "modelAnswer": "a) The three primary classes of corticosteroids based on duration of action are:\n- Short-acting (e.g., hydrocortisone)\n- Intermediate-acting (e.g., prednisone, prednisolone)\n- Long-acting (e.g., dexamethasone)\n\nb) Examples of each class:\n- Short-acting: Hydrocortisone\n- Intermediate-acting: Prednisone, prednisolone\n- Long-acting: Dexamethasone\n\nc) Corticosteroids inhibit inflammation by:\n- Inhibiting phospholipase A2, reducing arachidonic acid release and eicosanoid synthesis.\n- Suppressing the expression of pro-inflammatory cytokines (e.g., IL-1, IL-6, TNF-α).\n- Reducing the migration and activation of immune cells (e.g., neutrophils, macrophages)."
+            },
+            {
+              "stem": "a) List the two primary female sex hormones and their primary sources. (2 marks)\nb) Describe the mechanism of action of combined oral contraceptives. (3 marks)",
+              "modelAnswer": "a) The two primary female sex hormones and their primary sources are:\n- Estrogen (primarily estradiol): Secreted by the ovaries.\n- Progestin (primarily progesterone): Secreted by the ovaries and placenta.\n\nb) Combined oral contraceptives contain both estrogen (e.g., ethinyl estradiol) and progestin (e.g., levonorgestrel). They act through the following mechanisms:\n- Suppression of gonadotropin-releasing hormone (GnRH) from the hypothalamus, reducing follicle-stimulating hormone (FSH) and luteinizing hormone (LH) secretion, which inhibits ovulation.\n- Thickening of cervical mucus, preventing sperm penetration.\n- Inhibition of endometrial proliferation, making the endometrium less receptive to implantation."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "a) Describe the classification of insulin preparations, including examples, onset of action, peak effect, and duration of action. (8 marks)\nb) Discuss the clinical applications of insulin in diabetes management. (4 marks)\nc) Outline the adverse effects of insulin therapy. (3 marks)",
+              "modelAnswer": "a) Classification of insulin preparations:\n\n1. **Rapid-acting insulins** (e.g., insulin lispro, insulin aspart, insulin glulisine)\n   - Onset: 10–30 minutes\n   - Peak: 30–90 minutes\n   - Duration: 3–5 hours\n   - Used for meal-time glycemic control.\n\n2. **Short-acting insulin** (e.g., regular insulin)\n   - Onset: 30–60 minutes\n   - Peak: 2–4 hours\n   - Duration: 5–8 hours\n   - Used for meal-time glycemic control and intravenous therapy in emergencies.\n\n3. **Intermediate-acting insulin** (e.g., NPH insulin)\n   - Onset: 1–3 hours\n   - Peak: 4–10 hours\n   - Duration: 10–16 hours\n   - Used for basal insulin coverage, often in combination with rapid-acting insulins.\n\n4. **Long-acting insulins** (e.g., insulin glargine, insulin detemir, insulin degludec)\n   - Onset: 1–2 hours (glargine, detemir); 30–90 minutes (degludec)\n   - Peak: Minimal or no peak (glargine, detemir); 8–12 hours (degludec)\n   - Duration: 20–24 hours (glargine, detemir); up to 42 hours (degludec)\n   - Used for basal insulin coverage, providing steady glucose control over 24 hours.\n\nb) Clinical applications of insulin in diabetes management:\n- **Type 1 diabetes**: Essential for survival, as patients have absolute insulin deficiency. Basal-bolus regimens are standard to mimic natural insulin secretion.\n- **Type 2 diabetes**: Used when oral hypoglycemic agents fail to achieve glycemic targets or in acute settings (e.g., hyperglycemic crises, surgery, or pregnancy).\n- **Gestational diabetes**: Insulin is the preferred therapy if lifestyle modifications are insufficient, as oral agents may cross the placenta.\n- **Hyperglycemic crises**: Intravenous regular insulin is used in diabetic ketoacidosis (DKA) or hyperosmolar hyperglycemic state (HHS).\n- **Other indications**: Insulin may be used in patients with severe insulin resistance, post-pancreatectomy, or in certain cases of hyperkalemia.\n\nc) Adverse effects of insulin therapy:\n- **Hypoglycemia**: The most common and serious adverse effect, particularly with rapid-acting or excessive doses. Symptoms include sweating, tremors, confusion, and loss of consciousness.\n- **Weight gain**: Due to the anabolic effects of insulin and reduced glycosuria.\n- **Lipodystrophy**: Localized fat atrophy or hypertrophy at injection sites, which can be minimized by rotating injection sites.\n- **Allergic reactions**: Rare but can occur, ranging from local skin reactions to systemic anaphylaxis.\n- **Hypokalemia**: Insulin drives potassium into cells, which can lead to hypokalemia, particularly in patients with renal impairment or those receiving high doses."
+            },
+            {
+              "stem": "a) Describe the classification of corticosteroids, including examples and their relative glucocorticoid and mineralocorticoid potencies. (5 marks)\nb) Explain the mechanism of action of corticosteroids in inflammation and immune suppression. (5 marks)\nc) Discuss the clinical applications of corticosteroids. (3 marks)\nd) Outline the contraindications and key drug-drug interactions of corticosteroids. (2 marks)",
+              "modelAnswer": "a) Classification of corticosteroids:\n\nCorticosteroids are classified based on their duration of action and relative glucocorticoid (anti-inflammatory) and mineralocorticoid (salt-retaining) potencies. Examples include:\n\n1. **Short-acting corticosteroids** (e.g., hydrocortisone)\n   - Glucocorticoid potency: 1\n   - Mineralocorticoid potency: 1\n   - Duration: 8–12 hours\n\n2. **Intermediate-acting corticosteroids** (e.g., prednisone, prednisolone, methylprednisolone)\n   - Glucocorticoid potency: 4 (prednisone/prednisolone), 5 (methylprednisolone)\n   - Mineralocorticoid potency: 0.8 (prednisone/prednisolone), 0.5 (methylprednisolone)\n   - Duration: 12–36 hours\n\n3. **Long-acting corticosteroids** (e.g., dexamethasone, betamethasone)\n   - Glucocorticoid potency: 25–30 (dexamethasone), 25–40 (betamethasone)\n   - Mineralocorticoid potency: 0 (dexamethasone), 0 (betamethasone)\n   - Duration: 36–72 hours\n\nb) Mechanism of action of corticosteroids in inflammation and immune suppression:\nCorticosteroids exert their effects by binding to glucocorticoid receptors in the cytoplasm, forming a complex that translocates to the nucleus and modulates gene transcription. Key mechanisms include:\n- **Inhibition of phospholipase A2**: Reduces the release of arachidonic acid from membrane phospholipids, decreasing the synthesis of prostaglandins, thromboxanes, and leukotrienes.\n- **Suppression of pro-inflammatory cytokines**: Inhibits the transcription of genes encoding IL-1, IL-2, IL-6, TNF-α, and IFN-γ, reducing immune cell activation and proliferation.\n- **Reduction of immune cell migration**: Inhibits the expression of adhesion molecules (e.g., ICAM-1), reducing the migration of neutrophils, monocytes, and lymphocytes to sites of inflammation.\n- **Stabilization of lysosomal membranes**: Reduces the release of lysosomal enzymes, limiting tissue damage.\n- **Upregulation of anti-inflammatory mediators**: Increases the synthesis of lipocortin-1 (annexin A1), which inhibits phospholipase A2 and has anti-inflammatory effects.\n\nc) Clinical applications of corticosteroids:\n- **Inflammatory diseases**: Rheumatoid arthritis, systemic lupus erythematosus (SLE), inflammatory bowel disease (IBD), and asthma.\n- **Autoimmune diseases**: Multiple sclerosis, myasthenia gravis, and autoimmune hemolytic anemia.\n- **Allergic reactions**: Severe allergic reactions (e.g., anaphylaxis), allergic rhinitis, and drug hypersensitivity reactions.\n- **Organ transplantation**: Prevention and treatment of graft rejection.\n- **Dermatologic conditions**: Psoriasis, eczema, and severe drug eruptions.\n- **Endocrine disorders**: Adrenal insufficiency (Addison's disease), congenital adrenal hyperplasia.\n- **Respiratory diseases**: Chronic obstructive pulmonary disease (COPD) exacerbations, severe asthma.\n- **Neoplastic diseases**: Palliative treatment in certain cancers (e.g., lymphomas, leukemias).\n- **Neurologic conditions**: Cerebral edema (e.g., dexamethasone in brain tumors or meningitis).\n\nd) Contraindications and key drug-drug interactions:\n**Contraindications:**\n- Systemic fungal infections (risk of exacerbation).\n- Live vaccines (risk of disseminated infection).\n- Systemic corticosteroids are relatively contraindicated in patients with peptic ulcer disease, osteoporosis, uncontrolled hypertension, or diabetes mellitus.\n\n**Key drug-drug interactions:**\n- **NSAIDs**: Increased risk of peptic ulcer disease and gastrointestinal bleeding.\n- **Diuretics (e.g., loop or thiazide diuretics)**: Increased risk of hypokalemia.\n- **Anticoagulants (e.g., warfarin)**: Corticosteroids may enhance or reduce the effects of anticoagulants, requiring close monitoring.\n- **CYP3A4 inducers (e.g., rifampin, phenytoin)**: Accelerate the metabolism of corticosteroids, reducing their efficacy.\n- **CYP3A4 inhibitors (e.g., ketoconazole, ritonavir)**: Inhibit the metabolism of corticosteroids, increasing the risk of adverse effects."
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Endocrine & Autacoid Pharmacology",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 45-year-old man with chronic urticaria is prescribed a second-generation H1 antihistamine. Which of the following properties is most characteristic of second-generation H1 antihistamines compared to first-generation agents?",
+              "options": [
+                "Highly lipophilic, readily crossing the blood-brain barrier",
+                "Significant anticholinergic effects leading to urinary retention",
+                "Minimal sedation due to reduced CNS penetration",
+                "Potent inhibition of gastric acid secretion via H2 receptors"
+              ],
+              "answer": "Minimal sedation due to reduced CNS penetration",
+              "explanation": "Second-generation H1 antihistamines (e.g., loratadine, cetirizine) are designed to have reduced CNS penetration, minimizing sedation compared to first-generation agents."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism by which histamine H2 receptor antagonists reduce gastric acid secretion?",
+              "options": [
+                "Inhibition of histamine release from enterochromaffin-like cells",
+                "Competitive antagonism at H2 receptors on parietal cells",
+                "Blockade of muscarinic M3 receptors on parietal cells",
+                "Inhibition of the H+/K+ ATPase pump"
+              ],
+              "answer": "Competitive antagonism at H2 receptors on parietal cells",
+              "explanation": "H2 receptor antagonists (e.g., ranitidine, famotidine) competitively block H2 receptors on parietal cells, reducing gastric acid secretion."
+            },
+            {
+              "stem": "A 30-year-old woman with a history of migraine headaches is prescribed a drug that selectively activates 5-HT1B/1D receptors. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Sumatriptan",
+                "Ondansetron",
+                "Cyproheptadine",
+                "Buspirone"
+              ],
+              "answer": "Sumatriptan",
+              "explanation": "Sumatriptan is a 5-HT1B/1D receptor agonist used for acute migraine treatment by causing vasoconstriction of intracranial blood vessels."
+            },
+            {
+              "stem": "Which of the following adverse effects is most commonly associated with the use of ergotamine for migraine prophylaxis?",
+              "options": [
+                "Hyperkalemia",
+                "Peripheral vasoconstriction leading to ischemia",
+                "Hypoglycemia",
+                "Hypercalcemia"
+              ],
+              "answer": "Peripheral vasoconstriction leading to ischemia",
+              "explanation": "Ergotamine can cause severe peripheral vasoconstriction, leading to ischemia and potential tissue necrosis (ergotism)."
+            },
+            {
+              "stem": "A 55-year-old man with type 2 diabetes and hypertension is started on a drug that inhibits the sodium-glucose cotransporter 2 (SGLT2) in the proximal renal tubule. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Metformin",
+                "Glipizide",
+                "Empagliflozin",
+                "Pioglitazone"
+              ],
+              "answer": "Empagliflozin",
+              "explanation": "Empagliflozin is an SGLT2 inhibitor that reduces renal glucose reabsorption, increasing urinary glucose excretion and lowering blood glucose."
+            },
+            {
+              "stem": "Which of the following corticosteroids has the highest glucocorticoid potency relative to its mineralocorticoid activity?",
+              "options": [
+                "Hydrocortisone",
+                "Prednisone",
+                "Dexamethasone",
+                "Fludrocortisone"
+              ],
+              "answer": "Dexamethasone",
+              "explanation": "Dexamethasone has a high glucocorticoid potency (25-30 times that of hydrocortisone) with negligible mineralocorticoid activity."
+            },
+            {
+              "stem": "A 28-year-old woman with Graves' disease is prescribed a drug that inhibits thyroid peroxidase, reducing thyroid hormone synthesis. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Levothyroxine",
+                "Methimazole",
+                "Potassium iodide",
+                "Propranolol"
+              ],
+              "answer": "Methimazole",
+              "explanation": "Methimazole inhibits thyroid peroxidase, blocking thyroid hormone synthesis and is commonly used in Graves' disease."
+            },
+            {
+              "stem": "Which of the following is a key adverse effect of long-term use of levothyroxine?",
+              "options": [
+                "Hypercalcemia",
+                "Osteoporosis",
+                "Hypokalemia",
+                "Hyponatremia"
+              ],
+              "answer": "Osteoporosis",
+              "explanation": "Chronic overtreatment with levothyroxine can lead to increased bone turnover and osteoporosis due to excessive thyroid hormone."
+            },
+            {
+              "stem": "A 60-year-old man with type 2 diabetes and chronic kidney disease is started on a drug that increases insulin sensitivity by activating PPAR-γ receptors. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Metformin",
+                "Glipizide",
+                "Pioglitazone",
+                "Acarbose"
+              ],
+              "answer": "Pioglitazone",
+              "explanation": "Pioglitazone is a thiazolidinedione (TZD) that activates PPAR-γ receptors, improving insulin sensitivity in peripheral tissues."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism by which NSAIDs reduce inflammation?",
+              "options": [
+                "Inhibition of cyclooxygenase (COX) enzymes",
+                "Blockade of leukotriene receptors",
+                "Stimulation of cortisol release",
+                "Inhibition of phospholipase A2"
+              ],
+              "answer": "Inhibition of cyclooxygenase (COX) enzymes",
+              "explanation": "NSAIDs inhibit COX enzymes (COX-1 and COX-2), reducing prostaglandin synthesis and inflammation."
+            },
+            {
+              "stem": "A 40-year-old woman with a history of breast cancer is prescribed a drug that selectively modulates estrogen receptors in breast tissue. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Raloxifene",
+                "Tamoxifen",
+                "Clomiphene",
+                "Anastrozole"
+              ],
+              "answer": "Tamoxifen",
+              "explanation": "Tamoxifen is a selective estrogen receptor modulator (SERM) used in breast cancer to block estrogen receptors in breast tissue."
+            },
+            {
+              "stem": "Which of the following is a key adverse effect of long-term use of oral contraceptives containing estrogen?",
+              "options": [
+                "Hyperkalemia",
+                "Increased risk of venous thromboembolism",
+                "Hypocalcemia",
+                "Bradycardia"
+              ],
+              "answer": "Increased risk of venous thromboembolism",
+              "explanation": "Estrogen-containing oral contraceptives increase the risk of venous thromboembolism due to procoagulant effects."
+            },
+            {
+              "stem": "A 50-year-old man with a history of gout is prescribed a drug that inhibits xanthine oxidase, reducing uric acid production. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Probenecid",
+                "Allopurinol",
+                "Colchicine",
+                "Indomethacin"
+              ],
+              "answer": "Allopurinol",
+              "explanation": "Allopurinol inhibits xanthine oxidase, reducing uric acid synthesis and is used for chronic gout management."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism by which metformin lowers blood glucose?",
+              "options": [
+                "Stimulation of insulin secretion from pancreatic beta cells",
+                "Inhibition of hepatic gluconeogenesis",
+                "Inhibition of alpha-glucosidase in the gut",
+                "Increase in renal glucose excretion"
+              ],
+              "answer": "Inhibition of hepatic gluconeogenesis",
+              "explanation": "Metformin primarily reduces hepatic gluconeogenesis, lowering fasting blood glucose levels."
+            },
+            {
+              "stem": "A 35-year-old woman with a history of infertility is prescribed a drug that stimulates ovulation by acting as a selective estrogen receptor modulator (SERM). Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Clomiphene",
+                "Letrozole",
+                "Leuprolide",
+                "Danazol"
+              ],
+              "answer": "Clomiphene",
+              "explanation": "Clomiphene is a SERM that stimulates ovulation by blocking estrogen receptors in the hypothalamus, increasing GnRH and gonadotropin release."
+            },
+            {
+              "stem": "Which of the following is a key adverse effect of long-term use of systemic corticosteroids?",
+              "options": [
+                "Hypercalcemia",
+                "Adrenal suppression",
+                "Hypoglycemia",
+                "Hyperkalemia"
+              ],
+              "answer": "Adrenal suppression",
+              "explanation": "Chronic systemic corticosteroid use suppresses the hypothalamic-pituitary-adrenal axis, leading to adrenal suppression."
+            },
+            {
+              "stem": "A 25-year-old man with a history of allergic rhinitis is prescribed a drug that selectively blocks H1 histamine receptors. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Famotidine",
+                "Loratadine",
+                "Omeprazole",
+                "Ranitidine"
+              ],
+              "answer": "Loratadine",
+              "explanation": "Loratadine is a second-generation H1 antihistamine used for allergic rhinitis with minimal sedation."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism by which insulin glargine provides a prolonged duration of action?",
+              "options": [
+                "Rapid absorption and renal clearance",
+                "Formation of a subcutaneous depot due to precipitation at neutral pH",
+                "Inhibition of insulin degradation by the liver",
+                "Stimulation of endogenous insulin secretion"
+              ],
+              "answer": "Formation of a subcutaneous depot due to precipitation at neutral pH",
+              "explanation": "Insulin glargine forms a subcutaneous depot due to its low solubility at neutral pH, providing a prolonged duration of action."
+            },
+            {
+              "stem": "A 65-year-old man with type 2 diabetes and heart failure is prescribed a drug that inhibits the sodium-glucose cotransporter 2 (SGLT2) and has been shown to reduce cardiovascular mortality. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Metformin",
+                "Empagliflozin",
+                "Glipizide",
+                "Pioglitazone"
+              ],
+              "answer": "Empagliflozin",
+              "explanation": "Empagliflozin is an SGLT2 inhibitor with proven cardiovascular benefits in patients with type 2 diabetes and heart failure."
+            },
+            {
+              "stem": "Which of the following is a key adverse effect of long-term use of levothyroxine in elderly patients?",
+              "options": [
+                "Hypercalcemia",
+                "Atrial fibrillation",
+                "Hypokalemia",
+                "Bradycardia"
+              ],
+              "answer": "Atrial fibrillation",
+              "explanation": "Chronic overtreatment with levothyroxine in elderly patients increases the risk of atrial fibrillation due to excessive thyroid hormone."
+            },
+            {
+              "stem": "A 45-year-old woman with a history of osteoporosis is prescribed a drug that inhibits bone resorption by acting as a selective estrogen receptor modulator (SERM). Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Alendronate",
+                "Raloxifene",
+                "Teriparatide",
+                "Calcitonin"
+              ],
+              "answer": "Raloxifene",
+              "explanation": "Raloxifene is a SERM that inhibits bone resorption and is used for osteoporosis prevention and treatment."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism by which NSAIDs reduce fever?",
+              "options": [
+                "Inhibition of prostaglandin synthesis in the hypothalamus",
+                "Stimulation of cortisol release",
+                "Blockade of leukotriene receptors",
+                "Inhibition of phospholipase A2"
+              ],
+              "answer": "Inhibition of prostaglandin synthesis in the hypothalamus",
+              "explanation": "NSAIDs reduce fever by inhibiting prostaglandin synthesis in the hypothalamus, which resets the body's temperature set point."
+            },
+            {
+              "stem": "A 30-year-old woman with a history of anaphylaxis is prescribed an auto-injector containing a drug that acts as a physiological antagonist of histamine. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Diphenhydramine",
+                "Epinephrine",
+                "Prednisone",
+                "Montelukast"
+              ],
+              "answer": "Epinephrine",
+              "explanation": "Epinephrine is a physiological antagonist of histamine, used in anaphylaxis to counteract histamine-mediated effects."
+            },
+            {
+              "stem": "Which of the following is a key adverse effect of long-term use of oral contraceptives containing progestin?",
+              "options": [
+                "Hypercalcemia",
+                "Weight gain and acne",
+                "Hypoglycemia",
+                "Bradycardia"
+              ],
+              "answer": "Weight gain and acne",
+              "explanation": "Progestin-containing oral contraceptives can cause weight gain and acne due to androgenic effects."
+            },
+            {
+              "stem": "A 55-year-old man with type 2 diabetes and chronic kidney disease is prescribed a drug that increases insulin secretion by closing ATP-sensitive potassium channels in pancreatic beta cells. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Metformin",
+                "Glipizide",
+                "Pioglitazone",
+                "Acarbose"
+              ],
+              "answer": "Glipizide",
+              "explanation": "Glipizide is a sulfonylurea that increases insulin secretion by closing ATP-sensitive potassium channels in pancreatic beta cells."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism by which corticosteroids reduce inflammation?",
+              "options": [
+                "Inhibition of phospholipase A2 and COX-2 expression",
+                "Stimulation of insulin secretion",
+                "Blockade of leukotriene receptors",
+                "Inhibition of xanthine oxidase"
+              ],
+              "answer": "Inhibition of phospholipase A2 and COX-2 expression",
+              "explanation": "Corticosteroids reduce inflammation by inhibiting phospholipase A2 and COX-2 expression, reducing prostaglandin and leukotriene synthesis."
+            },
+            {
+              "stem": "A 40-year-old woman with a history of breast cancer is prescribed a drug that inhibits aromatase, reducing estrogen synthesis. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Tamoxifen",
+                "Anastrozole",
+                "Clomiphene",
+                "Raloxifene"
+              ],
+              "answer": "Anastrozole",
+              "explanation": "Anastrozole is an aromatase inhibitor that reduces estrogen synthesis and is used in postmenopausal women with breast cancer."
+            },
+            {
+              "stem": "Which of the following is a key adverse effect of long-term use of metformin?",
+              "options": [
+                "Hypercalcemia",
+                "Lactic acidosis",
+                "Hypokalemia",
+                "Bradycardia"
+              ],
+              "answer": "Lactic acidosis",
+              "explanation": "Metformin can rarely cause lactic acidosis, particularly in patients with renal impairment or hypoxia."
+            },
+            {
+              "stem": "A 35-year-old man with a history of allergic asthma is prescribed a drug that selectively blocks leukotriene D4 receptors. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Montelukast",
+                "Zileuton",
+                "Omalizumab",
+                "Cromolyn sodium"
+              ],
+              "answer": "Montelukast",
+              "explanation": "Montelukast is a leukotriene receptor antagonist that blocks leukotriene D4 receptors, reducing bronchoconstriction in asthma."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism by which insulin detemir provides a prolonged duration of action?",
+              "options": [
+                "Rapid absorption and renal clearance",
+                "Self-association at the injection site and albumin binding",
+                "Inhibition of insulin degradation by the liver",
+                "Stimulation of endogenous insulin secretion"
+              ],
+              "answer": "Self-association at the injection site and albumin binding",
+              "explanation": "Insulin detemir provides a prolonged duration of action by self-associating at the injection site and binding to albumin."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 30-year-old woman presents with a 6-month history of episodic flushing, diarrhea, and wheezing. Investigations reveal elevated urinary 5-hydroxyindoleacetic acid (5-HIAA) levels. a) What is the most likely diagnosis? (1 mark) b) Outline the mechanism of action of the drug of choice for this condition. (2 marks) c) State two adverse effects of the drug of choice. (2 marks)",
+              "modelAnswer": "a) Carcinoid syndrome. b) Octreotide is a somatostatin analog that inhibits the release of serotonin and other vasoactive peptides from carcinoid tumors by binding to somatostatin receptors. c) Adverse effects: gallstones (due to inhibition of gallbladder contractility) and hyperglycemia (due to inhibition of insulin secretion)."
+            },
+            {
+              "stem": "A 55-year-old man with type 2 diabetes and hypertension is prescribed empagliflozin. a) Describe the mechanism of action of empagliflozin. (2 marks) b) State two potential benefits of empagliflozin beyond glycemic control. (2 marks) c) State two contraindications to the use of empagliflozin. (1 mark)",
+              "modelAnswer": "a) Empagliflozin inhibits the sodium-glucose cotransporter 2 (SGLT2) in the proximal renal tubule, reducing renal glucose reabsorption and increasing urinary glucose excretion. b) Cardiovascular benefits (reduced risk of heart failure hospitalization and cardiovascular death) and renal benefits (slowed progression of kidney disease). c) Severe renal impairment (eGFR <30 mL/min/1.73 m²) and history of diabetic ketoacidosis."
+            },
+            {
+              "stem": "A 40-year-old woman with Graves' disease is prescribed methimazole. a) Describe the mechanism of action of methimazole. (2 marks) b) State two potential adverse effects of methimazole. (2 marks) c) State one drug that may interact with methimazole and the nature of the interaction. (1 mark)",
+              "modelAnswer": "a) Methimazole inhibits thyroid peroxidase, blocking the oxidation of iodide and the coupling of iodotyrosines to form thyroid hormones (T3 and T4). b) Agranulocytosis (rare but serious) and hepatotoxicity. c) Warfarin: methimazole may enhance the anticoagulant effect of warfarin by inhibiting its metabolism."
+            },
+            {
+              "stem": "A 50-year-old man with a history of gout is prescribed allopurinol. a) Describe the mechanism of action of allopurinol. (2 marks) b) State two potential adverse effects of allopurinol. (2 marks) c) State one drug that may interact with allopurinol and the nature of the interaction. (1 mark)",
+              "modelAnswer": "a) Allopurinol is a xanthine oxidase inhibitor that reduces the production of uric acid by inhibiting the conversion of hypoxanthine to xanthine and xanthine to uric acid. b) Hypersensitivity reactions (including Stevens-Johnson syndrome) and bone marrow suppression. c) Azathioprine: allopurinol inhibits xanthine oxidase, reducing the metabolism of azathioprine and increasing its toxicity."
+            },
+            {
+              "stem": "A 35-year-old woman with a history of infertility is prescribed clomiphene. a) Describe the mechanism of action of clomiphene. (2 marks) b) State two potential adverse effects of clomiphene. (2 marks) c) State one contraindication to the use of clomiphene. (1 mark)",
+              "modelAnswer": "a) Clomiphene is a selective estrogen receptor modulator (SERM) that blocks estrogen receptors in the hypothalamus, leading to increased secretion of gonadotropin-releasing hormone (GnRH) and gonadotropins (FSH and LH). b) Hot flashes and visual disturbances (rare). c) Liver disease or abnormal liver function tests."
+            },
+            {
+              "stem": "A 60-year-old man with type 2 diabetes and heart failure is prescribed empagliflozin. a) State two mechanisms by which empagliflozin may reduce cardiovascular risk. (2 marks) b) State two potential adverse effects of empagliflozin. (2 marks) c) State one monitoring parameter for a patient on empagliflozin. (1 mark)",
+              "modelAnswer": "a) Empagliflozin reduces cardiovascular risk by improving glycemic control (reducing hyperglycemia-induced oxidative stress) and by causing osmotic diuresis (reducing preload and afterload). b) Genital mycotic infections and urinary tract infections. c) Renal function (eGFR) and volume status."
+            },
+            {
+              "stem": "A 45-year-old woman with a history of breast cancer is prescribed tamoxifen. a) Describe the mechanism of action of tamoxifen. (2 marks) b) State two potential adverse effects of tamoxifen. (2 marks) c) State one drug that may interact with tamoxifen and the nature of the interaction. (1 mark)",
+              "modelAnswer": "a) Tamoxifen is a selective estrogen receptor modulator (SERM) that blocks estrogen receptors in breast tissue, inhibiting the growth of estrogen-dependent breast cancer. b) Hot flashes and increased risk of venous thromboembolism. c) Warfarin: tamoxifen may enhance the anticoagulant effect of warfarin by inhibiting its metabolism."
+            },
+            {
+              "stem": "A 55-year-old man with a history of allergic rhinitis is prescribed loratadine. a) Describe the mechanism of action of loratadine. (2 marks) b) State two advantages of loratadine over first-generation H1 antihistamines. (2 marks) c) State one potential adverse effect of loratadine. (1 mark)",
+              "modelAnswer": "a) Loratadine is a second-generation H1 antihistamine that selectively blocks H1 histamine receptors, reducing allergic symptoms. b) Minimal sedation (due to reduced CNS penetration) and longer duration of action. c) Headache."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "a) Describe the classes of insulin preparations, providing examples for each class. (4 marks) b) Outline the mechanism of action of insulin. (3 marks) c) State three clinical applications of insulin. (3 marks) d) State three adverse effects of insulin therapy. (3 marks) e) State two contraindications to insulin therapy. (2 marks)",
+              "modelAnswer": "a) Classes of insulin preparations: 1) Rapid-acting (e.g., insulin lispro, insulin aspart), 2) Short-acting (e.g., regular insulin), 3) Intermediate-acting (e.g., NPH insulin), 4) Long-acting (e.g., insulin glargine, insulin detemir), 5) Premixed insulins (e.g., 70/30 insulin). b) Mechanism of action: Insulin binds to insulin receptors on target cells (e.g., liver, muscle, adipose tissue), activating tyrosine kinase and promoting glucose uptake, glycogen synthesis, and inhibition of gluconeogenesis. c) Clinical applications: Type 1 diabetes, Type 2 diabetes (when oral agents are insufficient), gestational diabetes, and diabetic ketoacidosis. d) Adverse effects: Hypoglycemia, weight gain, and lipodystrophy at injection sites. e) Contraindications: Hypersensitivity to insulin and hypoglycemia."
+            },
+            {
+              "stem": "a) Describe the classes of corticosteroids, providing examples for each class. (3 marks) b) Outline the mechanism of action of corticosteroids. (3 marks) c) State four clinical applications of corticosteroids. (4 marks) d) State two contraindications to corticosteroid therapy. (2 marks) e) State three drug-drug interactions involving corticosteroids. (3 marks)",
+              "modelAnswer": "a) Classes of corticosteroids: 1) Short-acting (e.g., hydrocortisone), 2) Intermediate-acting (e.g., prednisone, prednisolone), 3) Long-acting (e.g., dexamethasone, betamethasone). b) Mechanism of action: Corticosteroids bind to glucocorticoid receptors, translocate to the nucleus, and modulate gene transcription, reducing the expression of pro-inflammatory cytokines (e.g., IL-1, IL-6, TNF-α) and increasing the expression of anti-inflammatory proteins (e.g., lipocortin-1). c) Clinical applications: Inflammatory conditions (e.g., rheumatoid arthritis, asthma), autoimmune diseases (e.g., systemic lupus erythematosus), allergic reactions (e.g., anaphylaxis), and adrenal insufficiency. d) Contraindications: Systemic fungal infections and live virus vaccination. e) Drug-drug interactions: 1) NSAIDs (increased risk of peptic ulcer disease), 2) Diuretics (increased risk of hypokalemia), 3) Warfarin (enhanced anticoagulant effect)."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Endocrine & Autacoid Pharmacology",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 45-year-old woman with chronic urticaria presents with persistent symptoms despite twice-daily cetirizine. Which of the following is the MOST appropriate next-step antihistamine strategy?",
+              "options": [
+                "Switch to diphenhydramine 25 mg at night to improve sedation-related symptom relief",
+                "Add ranitidine 150 mg twice daily to block H2 receptors in the gut",
+                "Increase cetirizine to 20 mg twice daily for enhanced H1 receptor blockade",
+                "Add montelukast 10 mg daily for leukotriene-mediated urticaria"
+              ],
+              "answer": "Add montelukast 10 mg daily for leukotriene-mediated urticaria",
+              "explanation": "Leukotriene receptor antagonists like montelukast are effective adjuncts in chronic urticaria, particularly when H1 antihistamines are insufficient."
+            },
+            {
+              "stem": "Which of the following H1 antihistamines is MOST likely to cause significant sedation due to its high lipophilicity and CNS penetration?",
+              "options": [
+                "Loratadine",
+                "Fexofenadine",
+                "Chlorpheniramine",
+                "Cetirizine"
+              ],
+              "answer": "Chlorpheniramine",
+              "explanation": "Chlorpheniramine is a first-generation H1 antihistamine with high CNS penetration, leading to significant sedation."
+            },
+            {
+              "stem": "A 30-year-old man develops torsades de pointes after taking an over-the-counter antihistamine for allergic rhinitis. Which of the following drugs is MOST likely responsible?",
+              "options": [
+                "Loratadine",
+                "Cetirizine",
+                "Astemizole",
+                "Fexofenadine"
+              ],
+              "answer": "Astemizole",
+              "explanation": "Astemizole, a second-generation H1 antihistamine, is associated with QT prolongation and torsades de pointes, especially when combined with CYP3A4 inhibitors."
+            },
+            {
+              "stem": "Which of the following is the PRIMARY mechanism by which H1 antihistamines reduce allergic symptoms?",
+              "options": [
+                "Inhibition of histamine release from mast cells",
+                "Competitive antagonism at H1 receptors on vascular endothelial cells",
+                "Stimulation of H2 receptors to counteract histamine effects",
+                "Inhibition of leukotriene synthesis"
+              ],
+              "answer": "Competitive antagonism at H1 receptors on vascular endothelial cells",
+              "explanation": "H1 antihistamines primarily act by competitively antagonizing H1 receptors, preventing histamine-mediated vasodilation, increased vascular permeability, and pruritus."
+            },
+            {
+              "stem": "A 25-year-old woman with seasonal allergic rhinitis experiences significant weight gain after starting an H1 antihistamine. Which of the following drugs is MOST likely responsible?",
+              "options": [
+                "Cetirizine",
+                "Loratadine",
+                "Diphenhydramine",
+                "Fexofenadine"
+              ],
+              "answer": "Diphenhydramine",
+              "explanation": "Diphenhydramine has significant anticholinergic and appetite-stimulating effects, leading to weight gain in some patients."
+            },
+            {
+              "stem": "Which of the following is a SELECTIVE H2 receptor agonist used clinically?",
+              "options": [
+                "2-Thiazolyl ethylamine",
+                "Betahistine",
+                "Impromidine",
+                "Doxepin"
+              ],
+              "answer": "Impromidine",
+              "explanation": "Impromidine is a selective H2 receptor agonist used in research and some clinical settings to stimulate gastric acid secretion."
+            },
+            {
+              "stem": "A 60-year-old man with a history of peptic ulcer disease presents with flushing, diarrhea, and bronchospasm after eating aged cheese. Which of the following is the MOST likely mediator responsible for his symptoms?",
+              "options": [
+                "Histamine",
+                "Serotonin",
+                "Prostaglandin E2",
+                "Leukotriene C4"
+              ],
+              "answer": "Serotonin",
+              "explanation": "The described symptoms are consistent with carcinoid syndrome, where serotonin is the primary mediator causing flushing, diarrhea, and bronchospasm."
+            },
+            {
+              "stem": "Which of the following is the PRIMARY mechanism by which ondansetron reduces chemotherapy-induced nausea and vomiting?",
+              "options": [
+                "Antagonism at 5-HT3 receptors in the chemoreceptor trigger zone",
+                "Stimulation of dopamine D2 receptors",
+                "Inhibition of substance P release",
+                "Blockade of H1 receptors in the vestibular system"
+              ],
+              "answer": "Antagonism at 5-HT3 receptors in the chemoreceptor trigger zone",
+              "explanation": "Ondansetron is a selective 5-HT3 receptor antagonist that blocks serotonin-mediated activation of the chemoreceptor trigger zone, reducing nausea and vomiting."
+            },
+            {
+              "stem": "A 35-year-old woman with a history of migraines presents with worsening symptoms despite propranolol therapy. Which of the following drugs could be added as a prophylactic agent with a different mechanism of action?",
+              "options": [
+                "Sumatriptan",
+                "Amitriptyline",
+                "Ibuprofen",
+                "Metoclopramide"
+              ],
+              "answer": "Amitriptyline",
+              "explanation": "Amitriptyline, a tricyclic antidepressant, is effective for migraine prophylaxis and works via modulation of serotonin and norepinephrine pathways."
+            },
+            {
+              "stem": "Which of the following ergot alkaloids is MOST commonly associated with retroperitoneal fibrosis as a long-term adverse effect?",
+              "options": [
+                "Ergotamine",
+                "Dihydroergotamine (DHE)",
+                "Methysergide",
+                "Bromocriptine"
+              ],
+              "answer": "Methysergide",
+              "explanation": "Methysergide is associated with retroperitoneal, pleural, and cardiac fibrosis with prolonged use, limiting its clinical utility."
+            },
+            {
+              "stem": "A 40-year-old man with severe migraine is prescribed ergotamine tartrate. Which of the following is the PRIMARY mechanism of action of ergotamine?",
+              "options": [
+                "Selective 5-HT1B/1D receptor agonism",
+                "Non-selective alpha-adrenergic agonism",
+                "Dopamine D2 receptor antagonism",
+                "Inhibition of prostaglandin synthesis"
+              ],
+              "answer": "Selective 5-HT1B/1D receptor agonism",
+              "explanation": "Ergotamine acts as a partial agonist at 5-HT1B/1D receptors, causing vasoconstriction of intracranial blood vessels and reducing migraine pain."
+            },
+            {
+              "stem": "Which of the following is the PRIMARY adverse effect of long-term use of ergotamine?",
+              "options": [
+                "Hypotension",
+                "Ergotism (vasospasm leading to ischemia)",
+                "Hyperglycemia",
+                "Osteoporosis"
+              ],
+              "answer": "Ergotism (vasospasm leading to ischemia)",
+              "explanation": "Long-term ergotamine use can lead to ergotism, characterized by vasospasm, ischemia, and potential tissue necrosis."
+            },
+            {
+              "stem": "A 50-year-old woman with rheumatoid arthritis develops peptic ulcer disease while on long-term NSAID therapy. Which of the following eicosanoids is MOST responsible for gastric mucosal protection?",
+              "options": [
+                "Prostaglandin E2",
+                "Leukotriene B4",
+                "Thromboxane A2",
+                "Prostacyclin (PGI2)"
+              ],
+              "answer": "Prostaglandin E2",
+              "explanation": "Prostaglandin E2 plays a key role in maintaining gastric mucosal integrity by stimulating mucus and bicarbonate secretion and increasing mucosal blood flow."
+            },
+            {
+              "stem": "Which of the following NSAIDs is MOST selective for COX-2 and associated with a lower risk of gastrointestinal bleeding?",
+              "options": [
+                "Ibuprofen",
+                "Naproxen",
+                "Celecoxib",
+                "Aspirin"
+              ],
+              "answer": "Celecoxib",
+              "explanation": "Celecoxib is a selective COX-2 inhibitor, sparing COX-1 in the gastric mucosa and reducing the risk of peptic ulcer disease and bleeding."
+            },
+            {
+              "stem": "A 65-year-old man with hypothyroidism presents with fatigue, cold intolerance, and constipation. His thyroid function tests reveal elevated TSH and low free T4. Which of the following is the MOST appropriate initial therapy?",
+              "options": [
+                "Liothyronine",
+                "Levothyroxine",
+                "Propylthiouracil",
+                "Methimazole"
+              ],
+              "answer": "Levothyroxine",
+              "explanation": "Levothyroxine is the standard of care for hypothyroidism due to its long half-life, stable conversion to T3, and ease of once-daily dosing."
+            },
+            {
+              "stem": "Which of the following is the PRIMARY mechanism by which levothyroxine exerts its therapeutic effect?",
+              "options": [
+                "Direct stimulation of thyroid hormone receptors",
+                "Conversion to T3 and activation of nuclear thyroid hormone receptors",
+                "Inhibition of thyroid peroxidase",
+                "Stimulation of TSH secretion"
+              ],
+              "answer": "Conversion to T3 and activation of nuclear thyroid hormone receptors",
+              "explanation": "Levothyroxine is a prohormone that is peripherally converted to T3, which then binds to nuclear thyroid hormone receptors to exert its effects."
+            },
+            {
+              "stem": "A 30-year-old woman with Graves' disease is started on methimazole. Which of the following is the PRIMARY mechanism of action of methimazole?",
+              "options": [
+                "Inhibition of thyroid hormone release from the thyroid gland",
+                "Blockade of thyroid hormone receptors",
+                "Inhibition of thyroid peroxidase, reducing thyroid hormone synthesis",
+                "Stimulation of TSH secretion to regulate thyroid function"
+              ],
+              "answer": "Inhibition of thyroid peroxidase, reducing thyroid hormone synthesis",
+              "explanation": "Methimazole inhibits thyroid peroxidase, blocking the oxidation of iodide and the coupling of iodotyrosines, thereby reducing thyroid hormone synthesis."
+            },
+            {
+              "stem": "Which of the following insulin preparations has the MOST rapid onset of action and shortest duration?",
+              "options": [
+                "Insulin glargine",
+                "NPH insulin",
+                "Regular insulin",
+                "Insulin aspart"
+              ],
+              "answer": "Insulin aspart",
+              "explanation": "Insulin aspart is a rapid-acting insulin analog with an onset of action within 10-20 minutes and a duration of 3-5 hours, making it suitable for meal-time coverage."
+            },
+            {
+              "stem": "A 45-year-old man with type 2 diabetes presents with persistent hyperglycemia despite metformin therapy. Which of the following oral hypoglycemic agents would be MOST appropriate to add due to its low risk of hypoglycemia and potential weight loss benefit?",
+              "options": [
+                "Glipizide",
+                "Pioglitazone",
+                "Sitagliptin",
+                "Empagliflozin"
+              ],
+              "answer": "Empagliflozin",
+              "explanation": "Empagliflozin is an SGLT2 inhibitor that reduces renal glucose reabsorption, leading to glucosuria, weight loss, and a low risk of hypoglycemia."
+            },
+            {
+              "stem": "Which of the following is the PRIMARY mechanism of action of metformin?",
+              "options": [
+                "Stimulation of insulin secretion from pancreatic beta cells",
+                "Inhibition of hepatic gluconeogenesis and enhancement of insulin sensitivity",
+                "Blockade of alpha-glucosidase in the intestinal brush border",
+                "Inhibition of DPP-4, prolonging incretin action"
+              ],
+              "answer": "Inhibition of hepatic gluconeogenesis and enhancement of insulin sensitivity",
+              "explanation": "Metformin primarily reduces hepatic glucose production and improves insulin sensitivity in peripheral tissues, without stimulating insulin secretion."
+            },
+            {
+              "stem": "A 55-year-old woman with type 2 diabetes and chronic kidney disease (eGFR 30 mL/min/1.73m²) requires additional glycemic control. Which of the following drugs should be AVOIDED due to its renal elimination and risk of lactic acidosis?",
+              "options": [
+                "Glipizide",
+                "Pioglitazone",
+                "Metformin",
+                "Linagliptin"
+              ],
+              "answer": "Metformin",
+              "explanation": "Metformin is contraindicated in patients with significant renal impairment (eGFR <30 mL/min/1.73m²) due to the risk of lactic acidosis."
+            },
+            {
+              "stem": "Which of the following corticosteroids has the GREATEST mineralocorticoid activity?",
+              "options": [
+                "Dexamethasone",
+                "Prednisolone",
+                "Hydrocortisone",
+                "Triamcinolone"
+              ],
+              "answer": "Hydrocortisone",
+              "explanation": "Hydrocortisone has significant mineralocorticoid activity, similar to endogenous cortisol, making it useful for adrenal insufficiency but also associated with sodium and water retention."
+            },
+            {
+              "stem": "A 40-year-old woman with systemic lupus erythematosus is started on prednisolone. Which of the following is the PRIMARY mechanism by which prednisolone exerts its anti-inflammatory effects?",
+              "options": [
+                "Inhibition of phospholipase A2 and leukotriene synthesis",
+                "Stimulation of glucocorticoid receptors, reducing pro-inflammatory cytokine production",
+                "Blockade of histamine H1 receptors",
+                "Inhibition of COX-2 expression"
+              ],
+              "answer": "Stimulation of glucocorticoid receptors, reducing pro-inflammatory cytokine production",
+              "explanation": "Prednisolone binds to glucocorticoid receptors, inhibiting the transcription of pro-inflammatory genes (e.g., IL-1, TNF-alpha) and promoting anti-inflammatory mediators."
+            },
+            {
+              "stem": "Which of the following is the MOST common adverse effect of long-term systemic corticosteroid therapy?",
+              "options": [
+                "Hyperkalemia",
+                "Osteoporosis",
+                "Hypoglycemia",
+                "Bradycardia"
+              ],
+              "answer": "Osteoporosis",
+              "explanation": "Long-term systemic corticosteroid use leads to osteoporosis by inhibiting osteoblast activity, increasing bone resorption, and reducing calcium absorption."
+            },
+            {
+              "stem": "A 35-year-old woman with estrogen receptor-positive breast cancer is started on tamoxifen. Which of the following is the PRIMARY mechanism of action of tamoxifen?",
+              "options": [
+                "Inhibition of estrogen synthesis via aromatase inhibition",
+                "Selective estrogen receptor modulation (SERM), blocking estrogen receptors in breast tissue",
+                "Stimulation of estrogen receptors to counteract tamoxifen resistance",
+                "Inhibition of progesterone receptors"
+              ],
+              "answer": "Selective estrogen receptor modulation (SERM), blocking estrogen receptors in breast tissue",
+              "explanation": "Tamoxifen is a SERM that acts as an estrogen receptor antagonist in breast tissue, reducing estrogen-stimulated tumor growth."
+            },
+            {
+              "stem": "Which of the following progestins is MOST commonly used in combined oral contraceptives due to its low androgenic activity?",
+              "options": [
+                "Norethindrone",
+                "Levonorgestrel",
+                "Drospirenone",
+                "Medroxyprogesterone acetate"
+              ],
+              "answer": "Drospirenone",
+              "explanation": "Drospirenone is a progestin with anti-androgenic and antimineralocorticoid properties, making it suitable for use in combined oral contraceptives with reduced androgenic side effects."
+            },
+            {
+              "stem": "A 28-year-old woman with polycystic ovary syndrome (PCOS) is prescribed spironolactone. Which of the following is the PRIMARY mechanism of action of spironolactone in this context?",
+              "options": [
+                "Inhibition of 5-alpha-reductase, reducing dihydrotestosterone synthesis",
+                "Antagonism at androgen receptors, reducing hirsutism and acne",
+                "Stimulation of progesterone receptors",
+                "Inhibition of ovarian estrogen production"
+              ],
+              "answer": "Antagonism at androgen receptors, reducing hirsutism and acne",
+              "explanation": "Spironolactone acts as an androgen receptor antagonist, reducing the effects of androgens in PCOS and improving symptoms such as hirsutism and acne."
+            },
+            {
+              "stem": "Which of the following is the PRIMARY adverse effect of long-term spironolactone therapy?",
+              "options": [
+                "Hyperkalemia",
+                "Hypocalcemia",
+                "Hyperglycemia",
+                "Hyponatremia"
+              ],
+              "answer": "Hyperkalemia",
+              "explanation": "Spironolactone is a potassium-sparing diuretic that can cause hyperkalemia, especially in patients with renal impairment or those taking ACE inhibitors or ARBs."
+            },
+            {
+              "stem": "A 50-year-old man with advanced prostate cancer is started on leuprolide. Which of the following is the PRIMARY mechanism of action of leuprolide?",
+              "options": [
+                "Direct antagonism at androgen receptors",
+                "Stimulation of GnRH receptors, leading to initial testosterone surge followed by downregulation",
+                "Inhibition of 5-alpha-reductase, reducing dihydrotestosterone synthesis",
+                "Blockade of estrogen receptors"
+              ],
+              "answer": "Stimulation of GnRH receptors, leading to initial testosterone surge followed by downregulation",
+              "explanation": "Leuprolide is a GnRH agonist that initially stimulates gonadotropin release and testosterone production, but with continuous administration, it downregulates GnRH receptors, reducing testosterone to castrate levels."
+            },
+            {
+              "stem": "Which of the following is the PRIMARY clinical use of octreotide in endocrine disorders?",
+              "options": [
+                "Treatment of acromegaly by inhibiting growth hormone release",
+                "Stimulation of insulin secretion in type 2 diabetes",
+                "Inhibition of prolactin secretion in hyperprolactinemia",
+                "Stimulation of gastric acid secretion"
+              ],
+              "answer": "Treatment of acromegaly by inhibiting growth hormone release",
+              "explanation": "Octreotide is a somatostatin analog used to inhibit growth hormone release in acromegaly and other conditions associated with excessive GH secretion."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "a) List the four primary classes of histamine receptors and their primary physiological roles. (2 marks)\nb) A patient with allergic rhinitis is prescribed an H1 antihistamine. Explain the mechanism by which this drug class reduces symptoms such as sneezing, itching, and rhinorrhea. (3 marks)",
+              "modelAnswer": "a) The four primary classes of histamine receptors are:\n- H1 receptors: Mediate allergic responses (vasodilation, increased vascular permeability, pruritus, bronchoconstriction, and stimulation of sensory nerves).\n- H2 receptors: Stimulate gastric acid secretion in parietal cells and have roles in cardiac function and immune modulation.\n- H3 receptors: Primarily act as presynaptic autoreceptors in the central nervous system, regulating neurotransmitter release.\n- H4 receptors: Expressed on immune cells (mast cells, eosinophils, dendritic cells), mediating chemotaxis and cytokine release.\n\nb) H1 antihistamines reduce allergic symptoms by competitively antagonizing H1 receptors on vascular endothelial cells, smooth muscle cells, and sensory nerves. This blockade prevents histamine from binding to H1 receptors, thereby:\n- Reducing vasodilation and vascular permeability, which decreases nasal congestion and rhinorrhea.\n- Inhibiting stimulation of sensory nerves, reducing itching and sneezing.\n- Preventing bronchoconstriction in the airways, although they are less effective for this purpose compared to other agents like beta-2 agonists."
+            },
+            {
+              "stem": "a) Compare and contrast the pharmacokinetics of first-generation and second-generation H1 antihistamines. (3 marks)\nb) Provide an example of a first-generation and a second-generation H1 antihistamine and explain why second-generation agents are preferred in most clinical scenarios. (2 marks)",
+              "modelAnswer": "a) Pharmacokinetics of H1 antihistamines:\n- First-generation agents (e.g., diphenhydramine, chlorpheniramine):\n  - Highly lipophilic, readily cross the blood-brain barrier, leading to significant CNS penetration and sedation.\n  - Metabolized by hepatic enzymes (CYP3A4, CYP2D6), with variable half-lives (4-12 hours).\n  - Often require multiple daily dosing due to shorter half-lives.\n  - Undergo extensive first-pass metabolism.\n- Second-generation agents (e.g., loratadine, cetirizine, fexofenadine):\n  - Less lipophilic, with reduced CNS penetration and minimal sedation.\n  - Metabolized by CYP3A4 and CYP2D6, with longer half-lives (12-24 hours), allowing once-daily dosing.\n  - Fexofenadine is excreted largely unchanged in bile and urine, reducing drug-drug interaction potential.\n  - Generally have a slower onset of action but longer duration of effect.\n\nb) Example:\n- First-generation: Diphenhydramine (sedating, short-acting).\n- Second-generation: Loratadine (non-sedating, long-acting).\n\nSecond-generation agents are preferred due to their lack of sedation, reduced anticholinergic effects, and lower risk of drug-drug interactions (e.g., with CYP3A4 inhibitors), making them safer for chronic use and in elderly patients."
+            },
+            {
+              "stem": "a) Outline the role of serotonin (5-HT) in the pathophysiology of migraine. (2 marks)\nb) Describe the mechanism of action of triptans in the treatment of acute migraine attacks. (3 marks)",
+              "modelAnswer": "a) Role of serotonin in migraine pathophysiology:\n- Serotonin (5-HT) is implicated in the pathogenesis of migraine through its effects on cerebral blood vessels and neuronal pathways.\n- During a migraine attack, plasma serotonin levels initially rise (causing vasoconstriction) and then fall (leading to vasodilation and neurogenic inflammation).\n- 5-HT1B/1D receptors are located on intracranial blood vessels and trigeminal nerve endings. Activation of these receptors by serotonin contributes to vasoconstriction and inhibition of neuropeptide release (e.g., CGRP, substance P), reducing neurogenic inflammation and pain.\n- Dysregulation of serotonin pathways is thought to play a key role in the initiation and propagation of migraine attacks.\n\nb) Mechanism of action of triptans:\n- Triptans (e.g., sumatriptan, rizatriptan) are selective 5-HT1B/1D receptor agonists.\n- They act by:\n  1. Constricting dilated intracranial blood vessels via 5-HT1B receptor agonism, reducing neurogenic inflammation and pain.\n  2. Inhibiting the release of pro-inflammatory neuropeptides (e.g., CGRP, substance P) from trigeminal nerve endings via 5-HT1D receptor agonism, reducing neurogenic inflammation.\n  3. Modulating central pain pathways in the brainstem, further reducing migraine pain."
+            },
+            {
+              "stem": "a) List FIVE clinical uses of corticosteroids in endocrine disorders. (2.5 marks)\nb) Describe the mechanism by which corticosteroids suppress the hypothalamic-pituitary-adrenal (HPA) axis. (2.5 marks)",
+              "modelAnswer": "a) Five clinical uses of corticosteroids in endocrine disorders:\n1. Replacement therapy in adrenal insufficiency (e.g., Addison's disease).\n2. Treatment of congenital adrenal hyperplasia (suppressing ACTH secretion to reduce adrenal androgen production).\n3. Management of thyroid storm (adjunctive therapy to reduce inflammation and inhibit peripheral conversion of T4 to T3).\n4. Treatment of hypercalcemia in patients with malignancy (e.g., dexamethasone to reduce vitamin D-mediated calcium absorption).\n5. Suppression of inflammation in subacute thyroiditis or painful thyroiditis.\n\nb) Mechanism of HPA axis suppression by corticosteroids:\n- Exogenous corticosteroids (e.g., prednisone, hydrocortisone) suppress the HPA axis by negative feedback inhibition.\n- High circulating levels of corticosteroids inhibit the secretion of corticotropin-releasing hormone (CRH) from the hypothalamus and adrenocorticotropic hormone (ACTH) from the anterior pituitary.\n- Reduced ACTH secretion leads to adrenal cortical atrophy and decreased endogenous cortisol production.\n- Sudden withdrawal of corticosteroids can precipitate adrenal crisis due to prolonged HPA axis suppression, necessitating gradual tapering to allow recovery of the HPA axis."
+            },
+            {
+              "stem": "a) Compare and contrast the mechanisms of action of metformin and sulfonylureas in the management of type 2 diabetes. (3 marks)\nb) Outline TWO potential adverse effects of each drug class. (2 marks)",
+              "modelAnswer": "a) Mechanisms of action:\n- Metformin:\n  - Primary mechanism: Inhibits hepatic gluconeogenesis by activating AMP-activated protein kinase (AMPK), reducing hepatic glucose output.\n  - Enhances insulin sensitivity in peripheral tissues (muscle, adipose) by increasing glucose uptake and utilization.\n  - Reduces intestinal absorption of glucose.\n  - Does not stimulate insulin secretion.\n- Sulfonylureas (e.g., glipizide, gliclazide):\n  - Primary mechanism: Stimulate insulin secretion from pancreatic beta cells by closing ATP-sensitive potassium (KATP) channels, leading to cell depolarization and calcium influx.\n  - Enhance tissue sensitivity to insulin (secondary effect).\n  - Bind to sulfonylurea receptors (SUR1) on beta cells, increasing insulin release in a glucose-dependent manner.\n\nb) Adverse effects:\n- Metformin:\n  1. Gastrointestinal disturbances (nausea, diarrhea, abdominal discomfort).\n  2. Lactic acidosis (rare but serious, particularly in patients with renal impairment or hypoxia).\n- Sulfonylureas:\n  1. Hypoglycemia (due to excessive insulin secretion).\n  2. Weight gain (secondary to increased insulin secretion and appetite stimulation)."
+            },
+            {
+              "stem": "a) List FOUR classes of oral hypoglycemic agents used in the management of type 2 diabetes. (2 marks)\nb) For each class, provide an example drug and describe its primary mechanism of action. (3 marks)",
+              "modelAnswer": "a) Four classes of oral hypoglycemic agents:\n1. Biguanides\n2. Sulfonylureas\n3. DPP-4 inhibitors\n4. SGLT2 inhibitors\n\nb) Examples and mechanisms:\n1. Biguanides (e.g., Metformin):\n   - Mechanism: Inhibits hepatic gluconeogenesis via activation of AMP-activated protein kinase (AMPK), enhances insulin sensitivity in peripheral tissues, and reduces intestinal glucose absorption.\n2. Sulfonylureas (e.g., Glipizide):\n   - Mechanism: Stimulates insulin secretion from pancreatic beta cells by closing ATP-sensitive potassium (KATP) channels, leading to cell depolarization and calcium influx.\n3. DPP-4 inhibitors (e.g., Sitagliptin):\n   - Mechanism: Inhibits dipeptidyl peptidase-4 (DPP-4), prolonging the action of incretin hormones (GLP-1 and GIP), which enhance glucose-dependent insulin secretion and suppress glucagon release.\n4. SGLT2 inhibitors (e.g., Empagliflozin):\n   - Mechanism: Inhibits sodium-glucose cotransporter 2 (SGLT2) in the proximal renal tubule, reducing renal glucose reabsorption and increasing urinary glucose excretion, leading to improved glycemic control and weight loss."
+            },
+            {
+              "stem": "a) Describe the role of prostaglandins in the pathogenesis of inflammation. (2 marks)\nb) Explain how NSAIDs exert their anti-inflammatory effects. (3 marks)",
+              "modelAnswer": "a) Role of prostaglandins in inflammation:\n- Prostaglandins (PGs) are lipid mediators derived from arachidonic acid via the cyclooxygenase (COX) pathway.\n- They play a key role in the inflammatory response by:\n  1. Increasing vascular permeability, leading to edema.\n  2. Causing vasodilation, contributing to erythema and heat.\n  3. Sensitizing nociceptors, enhancing pain perception.\n  4. Promoting leukocyte chemotaxis and activation.\n- Prostaglandins such as PGE2 and PGI2 are particularly important in mediating the cardinal signs of inflammation (rubor, calor, tumor, dolor).\n\nb) Mechanism of NSAID anti-inflammatory effects:\n- NSAIDs (e.g., ibuprofen, naproxen) exert their anti-inflammatory effects primarily by inhibiting the cyclooxygenase (COX) enzyme, which catalyzes the conversion of arachidonic acid to prostaglandin precursors (PGG2 and PGH2).\n- This inhibition reduces the synthesis of prostaglandins (e.g., PGE2, PGI2), thereby:\n  1. Decreasing vasodilation and vascular permeability, reducing edema and erythema.\n  2. Attenuating nociceptor sensitization, reducing pain.\n  3. Limiting leukocyte activation and chemotaxis.\n- NSAIDs also inhibit the production of thromboxane A2, reducing platelet aggregation and vasoconstriction."
+            },
+            {
+              "stem": "a) List FIVE adverse effects of long-term systemic corticosteroid therapy. (2.5 marks)\nb) Describe the rationale for tapering corticosteroids when discontinuing therapy. (2.5 marks)",
+              "modelAnswer": "a) Five adverse effects of long-term systemic corticosteroid therapy:\n1. Osteoporosis (due to inhibition of osteoblast activity and increased bone resorption).\n2. Hyperglycemia and insulin resistance (leading to steroid-induced diabetes).\n3. Hypertension (due to sodium and water retention and increased vascular sensitivity to catecholamines).\n4. Adrenal suppression (HPA axis suppression, risk of adrenal crisis).\n5. Immunosuppression (increased risk of infections, delayed wound healing).\n\nb) Rationale for tapering corticosteroids:\n- Sudden discontinuation of systemic corticosteroids can precipitate adrenal crisis due to prolonged suppression of the HPA axis.\n- The adrenal glands require time to resume endogenous cortisol production after exogenous corticosteroid suppression.\n- Tapering allows the HPA axis to gradually recover, reducing the risk of adrenal insufficiency symptoms (e.g., hypotension, hypoglycemia, fatigue).\n- The tapering schedule is individualized based on the duration and dose of corticosteroid therapy, with slower tapers for longer or higher-dose regimens."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "a) Describe the classification of insulin preparations, providing examples for each class and their pharmacokinetic profiles. (6 marks)\nb) Outline the clinical applications of insulin therapy in diabetes management. (4 marks)\nc) Discuss the adverse effects of insulin therapy and strategies to mitigate these effects. (5 marks)",
+              "modelAnswer": "a) Classification of insulin preparations:\n1. Rapid-acting insulins (e.g., insulin lispro, insulin aspart, insulin glulisine):\n   - Onset: 10-20 minutes\n   - Peak: 1-2 hours\n   - Duration: 3-5 hours\n   - Used for meal-time coverage; designed to mimic postprandial insulin secretion.\n2. Short-acting insulins (e.g., regular insulin):\n   - Onset: 30-60 minutes\n   - Peak: 2-4 hours\n   - Duration: 5-8 hours\n   - Used for meal-time coverage or intravenous infusion in acute settings (e.g., diabetic ketoacidosis).\n3. Intermediate-acting insulins (e.g., NPH insulin):\n   - Onset: 1-2 hours\n   - Peak: 4-12 hours\n   - Duration: 12-18 hours\n   - Used for basal insulin coverage; often combined with rapid- or short-acting insulins.\n4. Long-acting insulins (e.g., insulin glargine, insulin detemir, insulin degludec):\n   - Onset: 1-2 hours (glargine, detemir); 30-90 minutes (degludec)\n   - Peak: Minimal peak (glargine, degludec); small peak (detemir)\n   - Duration: 20-24 hours (glargine, detemir); up to 42 hours (degludec)\n   - Used for basal insulin coverage with a steady, prolonged effect.\n5. Premixed insulins (e.g., 70/30 NPH/regular, 75/25 lispro protamine/lispro):\n   - Combination of intermediate- and rapid-/short-acting insulins\n   - Used for patients requiring both basal and prandial insulin coverage in a single injection.\n\nb) Clinical applications of insulin therapy:\n1. Type 1 diabetes mellitus: Essential for survival due to absolute insulin deficiency.\n2. Type 2 diabetes mellitus: Used when oral hypoglycemic agents are insufficient to achieve glycemic control, particularly in advanced disease or during stress (e.g., surgery, infection).\n3. Gestational diabetes: Used when lifestyle modifications and oral agents are inadequate to maintain glycemic control.\n4. Diabetic ketoacidosis (DKA) and hyperosmolar hyperglycemic state (HHS): Intravenous regular insulin is the cornerstone of treatment.\n5. Hyperkalemia: Insulin (with glucose) shifts potassium intracellularly, used in emergency management.\n6. Stress hyperglycemia: In hospitalized patients with stress-induced hyperglycemia (e.g., post-surgical, critical illness).\n\nc) Adverse effects of insulin therapy and mitigation strategies:\n1. Hypoglycemia:\n   - Symptoms: Tremors, sweating, palpitations, confusion, seizures, coma.\n   - Risk factors: Excessive dose, missed meals, increased physical activity, renal impairment.\n   - Mitigation: Educate patients on recognizing and treating hypoglycemia (e.g., glucose tablets, glucagon), adjust insulin doses, and monitor blood glucose regularly.\n2. Weight gain:\n   - Due to anabolic effects of insulin and reduced glycosuria.\n   - Mitigation: Encourage lifestyle modifications (diet, exercise), consider insulin analogs with lower weight gain potential (e.g., insulin detemir).\n3. Lipodystrophy:\n   - Localized fat atrophy or hypertrophy at injection sites.\n   - Mitigation: Rotate injection sites, use fine-gauge needles, consider insulin analogs (less immunogenic).\n4. Insulin allergy:\n   - Rare IgE-mediated reactions (e.g., urticaria, anaphylaxis).\n   - Mitigation: Use human insulin (less antigenic than animal-derived insulin), desensitization protocols if necessary.\n5. Hypokalemia:\n   - Due to insulin-mediated intracellular potassium shift.\n   - Mitigation: Monitor serum potassium, especially in patients with renal impairment or those receiving potassium-wasting diuretics."
+            },
+            {
+              "stem": "a) Describe the classification of corticosteroids, providing examples for each class and their relative glucocorticoid and mineralocorticoid potencies. (5 marks)\nb) Outline the mechanisms by which corticosteroids exert their anti-inflammatory and immunosuppressive effects. (5 marks)\nc) Discuss the clinical applications and contraindications of corticosteroids in endocrine disorders. (5 marks)",
+              "modelAnswer": "a) Classification of corticosteroids:\n1. Short-acting corticosteroids (e.g., hydrocortisone, cortisone):\n   - Glucocorticoid potency: 1 (relative to hydrocortisone)\n   - Mineralocorticoid potency: High (hydrocortisone: 1; cortisone: 0.8)\n   - Duration of action: 8-12 hours\n   - Used for adrenal insufficiency replacement therapy.\n2. Intermediate-acting corticosteroids (e.g., prednisone, prednisolone, methylprednisolone, triamcinolone):\n   - Glucocorticoid potency: 4 (prednisone/prednisolone), 5 (methylprednisolone), 5 (triamcinolone)\n   - Mineralocorticoid potency: Low (prednisone/prednisolone: 0.8; methylprednisolone: 0; triamcinolone: 0)\n   - Duration of action: 12-36 hours\n   - Widely used for anti-inflammatory and immunosuppressive therapy.\n3. Long-acting corticosteroids (e.g., dexamethasone, betamethasone):\n   - Glucocorticoid potency: 25-30\n   - Mineralocorticoid potency: Negligible\n   - Duration of action: 36-72 hours\n   - Used for potent anti-inflammatory effects (e.g., cerebral edema, severe allergic reactions).\n\nb) Mechanisms of anti-inflammatory and immunosuppressive effects:\n1. Genomic mechanisms (slow onset, hours to days):\n   - Corticosteroids bind to glucocorticoid receptors in the cytoplasm, forming a complex that translocates to the nucleus.\n   - They inhibit the transcription of pro-inflammatory genes (e.g., IL-1, IL-6, TNF-alpha, COX-2) by:\n     - Preventing the release of inflammatory mediators.\n     - Reducing the expression of adhesion molecules (e.g., ICAM-1), limiting leukocyte migration.\n   - They upregulate the transcription of anti-inflammatory genes (e.g., lipocortin-1, IL-10).\n2. Non-genomic mechanisms (rapid onset, minutes to hours):\n   - Corticosteroids stabilize lysosomal membranes, reducing the release of proteolytic enzymes.\n   - They inhibit the release of arachidonic acid from membrane phospholipids, reducing prostaglandin and leukotriene synthesis.\n   - They reduce capillary permeability and edema formation.\n   - They inhibit the function of immune cells (e.g., macrophages, lymphocytes) by reducing cytokine production and antigen presentation.\n\nc) Clinical applications and contraindications in endocrine disorders:\nClinical applications:\n1. Adrenal insufficiency (Addison's disease): Hydrocortisone (glucocorticoid) and fludrocortisone (mineralocorticoid) for replacement therapy.\n2. Congenital adrenal hyperplasia: Suppression of ACTH secretion with dexamethasone or hydrocortisone to reduce adrenal androgen production.\n3. Thyroid storm: High-dose dexamethasone to inhibit peripheral conversion of T4 to T3 and reduce inflammation.\n4. Subacute thyroiditis: Prednisone to reduce inflammation and pain.\n5. Hypercalcemia of malignancy: Dexamethasone to reduce vitamin D-mediated calcium absorption and bone resorption.\n\nContraindications:\n1. Systemic fungal infections (risk of exacerbation due to immunosuppression).\n2. Live vaccines (risk of disseminated infection).\n3. Systemic corticosteroid therapy is relatively contraindicated in:\n   - Uncontrolled hypertension (risk of exacerbation).\n   - Uncontrolled diabetes (risk of hyperglycemia).\n   - Peptic ulcer disease (risk of perforation).\n   - Osteoporosis (risk of further bone loss).\n   - Psychiatric disorders (risk of mood disturbances).\n4. Pregnancy: Use only if clearly indicated (e.g., adrenal insufficiency); prednisone is preferred as it is metabolized by the placenta to inactive forms."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

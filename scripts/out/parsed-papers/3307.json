@@ -1,0 +1,222 @@
+{
+  "code": "3307",
+  "title": "Pharmacology VII — Endocrine & Respiratory Pharmacology",
+  "sections": {
+    "A": [
+      {
+        "stem": "The following is true regarding the clinical uses of beta-2 agonists EXCEPT:",
+        "options": [
+          "They inhibit release of bronchoconstricting mediators from mast cells",
+          "They inhibit microvascular leakage and increase mucociliary transport by increasing ciliary activity",
+          "The long acting agents can be used as monotherapy for asthma",
+          "All β2 – agonists are more broncho-selective when administered by the aerosol route"
+        ]
+      },
+      {
+        "stem": "The primary mechanism by which antidiuretic hormone reduces urine volume is:",
+        "options": [
+          "Decrease in glomerular filtration rate",
+          "Decreased renal blood flow",
+          "Decreased water permeability of descending limb of loop of Henle",
+          "Increased water permeability of collecting duct cells"
+        ]
+      },
+      {
+        "stem": "Which of the following peptides is a selective vasopressin V2 receptor agonist:",
+        "options": [
+          "Arginine vasopressin",
+          "Desmopressin",
+          "Lypessin",
+          "Terlipressin"
+        ]
+      },
+      {
+        "stem": "Regarding the pharmacokinetics of methylxanthines, the following statements are true EXCEPT:",
+        "options": [
+          "Theophylline has antiasthma effects other than bronchodilation below 10 mg/L, so the therapeutic range is now taken as 5–15 mg/L",
+          "Methylxanthines are effective by aerosol route and can be administered as inhalers or nebulizing solutions",
+          "Aminophylline is an ethylene diamine ester of theophylline that is water soluble",
+          "Theophylline is rapidly and completely absorbed, but there are large interindividual variations in clearance due to differences in hepatic metabolism"
+        ]
+      },
+      {
+        "stem": "Adverse effects of beta-2 agonists include all of the following EXCEPT:",
+        "options": [
+          "Hyperkalemia",
+          "Skeletal muscle tremors",
+          "Palpitations",
+          "Nervousness"
+        ]
+      },
+      {
+        "stem": "The following factors influence the effectiveness of the inhaled route of drug delivery EXCEPT:",
+        "options": [
+          "Geometry of the airways",
+          "Pattern of breathing",
+          "Drug particle size",
+          "All the above"
+        ]
+      },
+      {
+        "stem": "The following statements regarding anticholinergic agents are correct EXCEPT",
+        "options": [
+          "They have a greater bronchodilation with less toxicity from systemic absorption as compared to the prototype atropine",
+          "They are administered via the oral route",
+          "Antimuscarinic drugs appear to be slightly less effective than B2-agonist agents in reversing asthmatic bronchospasm",
+          "The addition of ipratropium enhances the bronchodilation produced by nebulized salbutamol in acute severe asthma"
+        ]
+      },
+      {
+        "stem": "The following are adverse effects of theophylline EXCEPT:",
+        "options": [
+          "Can precipitate cardiac arrhythmias",
+          "Lowers the threshold for seizure activity",
+          "Abdominal discomfort",
+          "Renal toxicity"
+        ]
+      },
+      {
+        "stem": "Nonsteroidal anti-inflammatory drugs reduce the diuretic action of furosemide by:",
+        "options": [
+          "Preventing prostaglandin mediated intrarenal haemodynamic actions",
+          "Blocking the action in ascending limb of loop of Henle.",
+          "Enhancing salt and water reabsorption in distal tubule",
+          "Increasing aldosterone secretion"
+        ]
+      },
+      {
+        "stem": "Select the diuretic that can cause gynaecomastia, hirsutism and menstrual disturbance as a side effect on long-term use:",
+        "options": [
+          "Amiloride",
+          "Spironolactone",
+          "Metolazone",
+          "Acetazolamide"
+        ]
+      },
+      {
+        "stem": "The following statements are correct regarding leukotriene pathway inhibitors EXCEPT:",
+        "options": [
+          "Leukotriene antagonists play an important role in asprin induced asthma",
+          "They are available via the inhalational route",
+          "have been shown to improve asthma control and to reduce the frequency of asthma exacerbations in outpatient clinical trials",
+          "Zafirlukast causes hepatotoxicity and eosinophilicvasculitis"
+        ]
+      },
+      {
+        "stem": "The following statements are true regarding the pharmacokinetics of corticosteroids EXCEPT:",
+        "options": [
+          "The rate of secretion of cortisol follows a circadian rhythm governed by pulses of ACTH that peak in the early morning hours and after meals",
+          "In plasma, cortisol is highly bound to albumin and the bound cortisol is unavailable for pharmacologic activity",
+          "The half-life of cortisol in the circulation is normally about 60–90 minutes and is increased when hydrocortisone is administered in large amounts or when stress, hypothyroidism, or liver disease is present",
+          "Only 1% of cortisol is excreted unchanged in the urine as free cortisol"
+        ]
+      },
+      {
+        "stem": "The following statements are true regarding the clinical use of corticosteroids EXCEPT:",
+        "options": [
+          "Inhalational treatment is the most effective way to avoid the systemic adverse effects of corticosteroid therapy",
+          "For severe asthma exacerbations, urgent treatment is often begun with an oral or parenteral dose",
+          "It is not necessary to taper the dose when switching patients from chronic oral to inhaled corticosteroid therapy",
+          "High doses of inhaled steroids cause mild adrenal suppression, the risks of systemic toxicity from their chronic use are negligible compared with those of the oral corticosteroid therapy"
+        ]
+      },
+      {
+        "stem": "The following are clinical uses of cromolyn sodium &nedocromil sodium EXCEPT:",
+        "options": [
+          "prophylaxis of mild persistent asthma",
+          "prevention of seasonal allergic rhinitis",
+          "management of acute asthma exacerbations",
+          "exercise induced asthma"
+        ]
+      },
+      {
+        "stem": "The following are adverse effects of cromolyn EXCEPT:",
+        "options": [
+          "Throat irritation",
+          "Chest tightness",
+          "Dry mouth",
+          "Glaucoma"
+        ]
+      },
+      {
+        "stem": "The following statements are correct regarding leukotriene pathway inhibitors EXCEPT",
+        "options": [
+          "Zileuton is a 5-lipoxygenase enzyme inhibitor",
+          "Zafirlukast is a 5-lipoxygenase enzyme inhibitor",
+          "Montelukast is a leukotriene receptor antagonist",
+          "Zileuton is administered four times a day"
+        ]
+      },
+      {
+        "stem": "The following drug can worsen underlying asthma:",
+        "options": [
+          "Adrenaline",
+          "Paracetamol",
+          "Diclofenac",
+          "Isoproterenol"
+        ]
+      },
+      {
+        "stem": "The following is an Anti IgE Monoclonal Antibodies:",
+        "options": [
+          "Rituximab",
+          "Omalizumab",
+          "Pentostam",
+          "Sorafenib"
+        ]
+      },
+      {
+        "stem": "The current therapeutic indication of acetazolamide is:",
+        "options": [
+          "Congestive heart failure",
+          "Renal insufficiency",
+          "Cirrhosis of liver",
+          "Glaucoma"
+        ]
+      },
+      {
+        "stem": "Furosemide acts by inhibiting the following in the renal tubular cell:",
+        "options": [
+          "Na+-K+-2Cl– cotransporter",
+          "Na+-Cl– symporter",
+          "Na+-H+ antiporter",
+          "Na+ K+ ATPase"
+        ]
+      }
+    ],
+    "B": [
+      {
+        "stem": "Briefly discuss the pathogenesis of asthma (8 Marks)"
+      },
+      {
+        "stem": "Outline the adverse effects of systemic corticosteroid use (8 Marks)"
+      },
+      {
+        "stem": "Outline any 4 synergistic combinations of anti asthma agents (4 Marks)"
+      },
+      {
+        "stem": "Briefly discuss the possible triggers of asthma (5marks)"
+      },
+      {
+        "stem": "Briefly discuss the pharmacodynamic effects of methylxanthines(5marks)"
+      },
+      {
+        "stem": "Outline any 5 clinical uses of diuretics (5marks)"
+      },
+      {
+        "stem": "Describe the factors that contribute to the decline in the use of methylxanthines as first line agents in the management of asthma(5marks)"
+      }
+    ],
+    "C": [
+      {
+        "stem": "a) Discuss the mechanism of action of the following drugs used in asthma (10marks)\nBeta agonists\nAnticholinergics\nCorticosteroids\nLeukotriene antagonists\nMast cell stabilisers\nFor each of the classes outlined in (a) above, describe the adverse effects (10marks)"
+      },
+      {
+        "stem": "a) Discuss the mechanism of action of any 5 classes of diuretic agents(10marks)\nb) For each class outlined in (a) above, briefly discuss the adverse effects(10marks)"
+      },
+      {
+        "stem": "a) Discuss the mechanism of action of methylxanthines (10marks)\nDiscuss the mechanism of action of any 5 drugs used as cough remedies(10marks)"
+      }
+    ]
+  }
+}

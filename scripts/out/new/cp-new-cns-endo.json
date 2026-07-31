@@ -1,0 +1,1195 @@
+{
+  "cp-new-cns-endo": {
+    "1": {
+      "title": "CNS & Endocrine Therapeutics",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 32-year-old woman with a history of bipolar disorder presents with acute agitation, pressured speech, and decreased need for sleep. Which of the following is the most appropriate immediate pharmacological intervention?",
+              "options": [
+                "Lorazepam 2 mg orally",
+                "Haloperidol 5 mg intramuscularly",
+                "Lithium carbonate 600 mg orally",
+                "Valproate sodium 500 mg orally"
+              ],
+              "answer": "Lorazepam 2 mg orally",
+              "explanation": "Benzodiazepines like lorazepam are first-line for acute agitation in bipolar disorder due to rapid onset and safety profile."
+            },
+            {
+              "stem": "A 65-year-old man with Parkinson’s disease develops sudden motor fluctuations with 'off' periods despite optimal levodopa-carbidopa therapy. Which adjunctive therapy is most likely to reduce these fluctuations?",
+              "options": [
+                "Selegiline",
+                "Ropinirole",
+                "Entacapone",
+                "Benztropine"
+              ],
+              "answer": "Entacapone",
+              "explanation": "Entacapone is a COMT inhibitor that prolongs levodopa’s duration of action, reducing motor fluctuations."
+            },
+            {
+              "stem": "A 28-year-old woman with generalized anxiety disorder experiences palpitations, sweating, and dyspnea during panic attacks. Which class of antidepressants is most appropriate for long-term management?",
+              "options": [
+                "Tricyclic antidepressants (TCAs)",
+                "Selective serotonin reuptake inhibitors (SSRIs)",
+                "Monoamine oxidase inhibitors (MAOIs)",
+                "Benzodiazepines"
+              ],
+              "answer": "Selective serotonin reuptake inhibitors (SSRIs)",
+              "explanation": "SSRIs are first-line for long-term management of generalized anxiety disorder due to efficacy and tolerability."
+            },
+            {
+              "stem": "A 45-year-old man with type 2 diabetes mellitus presents with persistent hyperglycemia despite metformin monotherapy. His HbA1c is 8.5%. Which of the following is the most appropriate next step?",
+              "options": [
+                "Increase metformin dose",
+                "Add a sulfonylurea",
+                "Start insulin therapy",
+                "Add a DPP-4 inhibitor"
+              ],
+              "answer": "Add a DPP-4 inhibitor",
+              "explanation": "Adding a DPP-4 inhibitor is a rational step to improve glycemic control with low hypoglycemia risk."
+            },
+            {
+              "stem": "A 50-year-old woman with hypothyroidism develops angina during levothyroxine initiation. Which of the following adjustments is most appropriate?",
+              "options": [
+                "Discontinue levothyroxine",
+                "Reduce levothyroxine dose and titrate slowly",
+                "Switch to liothyronine",
+                "Add a beta-blocker"
+              ],
+              "answer": "Reduce levothyroxine dose and titrate slowly",
+              "explanation": "Reducing the dose and titrating slowly minimizes cardiac stress in patients with coronary artery disease."
+            },
+            {
+              "stem": "A 30-year-old man with schizophrenia experiences akathisia after starting risperidone. Which of the following is the most appropriate management?",
+              "options": [
+                "Reduce risperidone dose",
+                "Switch to clozapine",
+                "Add propranolol",
+                "Add benztropine"
+              ],
+              "answer": "Add propranolol",
+              "explanation": "Propranolol is effective for akathisia induced by antipsychotics."
+            },
+            {
+              "stem": "A 60-year-old woman with osteoporosis presents with new vertebral fractures despite calcium and vitamin D supplementation. Which of the following is the most appropriate next step?",
+              "options": [
+                "Increase calcium intake",
+                "Add alendronate",
+                "Switch to raloxifene",
+                "Add teriparatide"
+              ],
+              "answer": "Add alendronate",
+              "explanation": "Bisphosphonates like alendronate are first-line for osteoporosis treatment to reduce fracture risk."
+            },
+            {
+              "stem": "A 25-year-old woman with migraines experiences aura before headaches. Which of the following is the most appropriate acute treatment?",
+              "options": [
+                "Ibuprofen 400 mg",
+                "Sumatriptan 50 mg orally",
+                "Propranolol 40 mg daily",
+                "Amitriptyline 25 mg nightly"
+              ],
+              "answer": "Sumatriptan 50 mg orally",
+              "explanation": "Triptans are first-line for acute migraine with aura."
+            },
+            {
+              "stem": "A 70-year-old man with type 2 diabetes develops chronic kidney disease (eGFR 30 mL/min/1.73m²). Which of the following antidiabetic agents should be avoided?",
+              "options": [
+                "Metformin",
+                "Empagliflozin",
+                "Linagliptin",
+                "Glipizide"
+              ],
+              "answer": "Metformin",
+              "explanation": "Metformin is contraindicated in significant renal impairment due to lactic acidosis risk."
+            },
+            {
+              "stem": "A 40-year-old woman with bipolar disorder becomes pregnant. Which mood stabilizer is safest to continue?",
+              "options": [
+                "Lithium",
+                "Valproate",
+                "Carbamazepine",
+                "Lamotrigine"
+              ],
+              "answer": "Lamotrigine",
+              "explanation": "Lamotrigine has the lowest teratogenic risk among mood stabilizers."
+            },
+            {
+              "stem": "A 55-year-old man with Parkinson’s disease develops hallucinations while on levodopa-carbidopa. Which of the following is the most appropriate intervention?",
+              "options": [
+                "Reduce levodopa dose",
+                "Add quetiapine",
+                "Switch to pramipexole",
+                "Add donepezil"
+              ],
+              "answer": "Add quetiapine",
+              "explanation": "Quetiapine is an atypical antipsychotic with low extrapyramidal side effects, suitable for Parkinson’s-related hallucinations."
+            },
+            {
+              "stem": "A 35-year-old woman with depression fails to respond to two SSRIs. Which class of antidepressants is most appropriate next?",
+              "options": [
+                "Tricyclic antidepressants (TCAs)",
+                "Serotonin-norepinephrine reuptake inhibitors (SNRIs)",
+                "Monoamine oxidase inhibitors (MAOIs)",
+                "Bupropion"
+              ],
+              "answer": "Serotonin-norepinephrine reuptake inhibitors (SNRIs)",
+              "explanation": "SNRIs are a rational next step for treatment-resistant depression."
+            },
+            {
+              "stem": "A 65-year-old man with type 2 diabetes and heart failure (EF 35%) presents with hyperglycemia. Which of the following antidiabetic agents is contraindicated?",
+              "options": [
+                "Empagliflozin",
+                "Pioglitazone",
+                "Linagliptin",
+                "Glipizide"
+              ],
+              "answer": "Pioglitazone",
+              "explanation": "Thiazolidinediones like pioglitazone worsen heart failure and are contraindicated."
+            },
+            {
+              "stem": "A 22-year-old man with schizophrenia experiences severe extrapyramidal symptoms after haloperidol. Which of the following is the most appropriate management?",
+              "options": [
+                "Reduce haloperidol dose",
+                "Add benztropine",
+                "Switch to olanzapine",
+                "Add propranolol"
+              ],
+              "answer": "Add benztropine",
+              "explanation": "Benztropine is an anticholinergic that treats extrapyramidal symptoms induced by antipsychotics."
+            },
+            {
+              "stem": "A 50-year-old woman with hypothyroidism and atrial fibrillation requires levothyroxine therapy. Which of the following adjustments is most appropriate?",
+              "options": [
+                "Start levothyroxine at full replacement dose",
+                "Start levothyroxine at 25 mcg daily and titrate",
+                "Avoid levothyroxine due to arrhythmia risk",
+                "Use liothyronine instead"
+              ],
+              "answer": "Start levothyroxine at 25 mcg daily and titrate",
+              "explanation": "Starting at a low dose and titrating slowly minimizes cardiac stress in patients with atrial fibrillation."
+            },
+            {
+              "stem": "A 45-year-old man with type 2 diabetes and obesity (BMI 35 kg/m²) fails metformin monotherapy. Which of the following is the most appropriate next step?",
+              "options": [
+                "Add insulin",
+                "Add liraglutide",
+                "Add glimepiride",
+                "Add acarbose"
+              ],
+              "answer": "Add liraglutide",
+              "explanation": "GLP-1 receptor agonists like liraglutide promote weight loss and improve glycemic control."
+            },
+            {
+              "stem": "A 30-year-old woman with bipolar disorder experiences lithium toxicity (level 2.1 mEq/L). Which of the following is the most appropriate management?",
+              "options": [
+                "Increase fluid intake",
+                "Administer sodium polystyrene sulfonate",
+                "Administer intravenous fluids and monitor",
+                "Administer hemodialysis"
+              ],
+              "answer": "Administer intravenous fluids and monitor",
+              "explanation": "IV fluids and monitoring are first-line for lithium toxicity; hemodialysis is reserved for severe cases."
+            },
+            {
+              "stem": "A 60-year-old man with Parkinson’s disease develops dyskinesias while on levodopa-carbidopa. Which of the following adjustments is most appropriate?",
+              "options": [
+                "Reduce levodopa dose",
+                "Add amantadine",
+                "Switch to selegiline",
+                "Add entacapone"
+              ],
+              "answer": "Add amantadine",
+              "explanation": "Amantadine is effective for levodopa-induced dyskinesias."
+            },
+            {
+              "stem": "A 28-year-old woman with depression and insomnia requires antidepressant therapy. Which of the following is the most appropriate choice?",
+              "options": [
+                "Fluoxetine",
+                "Trazodone",
+                "Amitriptyline",
+                "Venlafaxine"
+              ],
+              "answer": "Trazodone",
+              "explanation": "Trazodone has sedative properties and is suitable for depression with insomnia."
+            },
+            {
+              "stem": "A 55-year-old man with type 2 diabetes and chronic kidney disease (eGFR 25 mL/min/1.73m²) requires glycemic control. Which of the following is the most appropriate agent?",
+              "options": [
+                "Metformin",
+                "Glipizide",
+                "Pioglitazone",
+                "Empagliflozin"
+              ],
+              "answer": "Glipizide",
+              "explanation": "Sulfonylureas like glipizide are safe in moderate renal impairment."
+            },
+            {
+              "stem": "A 40-year-old woman with schizophrenia experiences weight gain and metabolic syndrome on olanzapine. Which of the following is the most appropriate intervention?",
+              "options": [
+                "Switch to ziprasidone",
+                "Add metformin",
+                "Reduce olanzapine dose",
+                "Add aripiprazole"
+              ],
+              "answer": "Switch to ziprasidone",
+              "explanation": "Ziprasidone has a lower metabolic risk profile compared to olanzapine."
+            },
+            {
+              "stem": "A 65-year-old man with type 2 diabetes and heart failure (EF 40%) requires glycemic control. Which of the following is contraindicated?",
+              "options": [
+                "Empagliflozin",
+                "Linagliptin",
+                "Pioglitazone",
+                "Glipizide"
+              ],
+              "answer": "Pioglitazone",
+              "explanation": "Thiazolidinediones worsen heart failure and are contraindicated."
+            },
+            {
+              "stem": "A 35-year-old woman with bipolar disorder and pregnancy desires treatment. Which of the following is safest?",
+              "options": [
+                "Lithium",
+                "Valproate",
+                "Carbamazepine",
+                "Lamotrigine"
+              ],
+              "answer": "Lamotrigine",
+              "explanation": "Lamotrigine has the lowest teratogenic risk among mood stabilizers."
+            },
+            {
+              "stem": "A 50-year-old man with Parkinson’s disease develops orthostatic hypotension on levodopa-carbidopa. Which of the following is the most appropriate management?",
+              "options": [
+                "Reduce levodopa dose",
+                "Add midodrine",
+                "Switch to pramipexole",
+                "Add fludrocortisone"
+              ],
+              "answer": "Add fludrocortisone",
+              "explanation": "Fludrocortisone increases blood volume and treats orthostatic hypotension."
+            },
+            {
+              "stem": "A 45-year-old woman with depression fails SSRIs and SNRIs. Which of the following is the most appropriate next step?",
+              "options": [
+                "Add bupropion",
+                "Switch to a TCA",
+                "Add mirtazapine",
+                "Switch to MAOI"
+              ],
+              "answer": "Add mirtazapine",
+              "explanation": "Mirtazapine has a different mechanism and is suitable for treatment-resistant depression."
+            },
+            {
+              "stem": "A 60-year-old man with type 2 diabetes and obesity (BMI 32 kg/m²) fails metformin and lifestyle changes. Which of the following is the most appropriate next step?",
+              "options": [
+                "Add insulin",
+                "Add liraglutide",
+                "Add glimepiride",
+                "Add acarbose"
+              ],
+              "answer": "Add liraglutide",
+              "explanation": "GLP-1 receptor agonists like liraglutide promote weight loss and improve glycemic control."
+            },
+            {
+              "stem": "A 30-year-old woman with schizophrenia experiences tardive dyskinesia on haloperidol. Which of the following is the most appropriate management?",
+              "options": [
+                "Reduce haloperidol dose",
+                "Switch to clozapine",
+                "Add vitamin E",
+                "Add benztropine"
+              ],
+              "answer": "Switch to clozapine",
+              "explanation": "Clozapine has a low risk of tardive dyskinesia and is suitable for resistant cases."
+            },
+            {
+              "stem": "A 55-year-old man with hypothyroidism and coronary artery disease requires levothyroxine. Which of the following is most appropriate?",
+              "options": [
+                "Start levothyroxine at full replacement dose",
+                "Start levothyroxine at 25 mcg daily and titrate",
+                "Avoid levothyroxine due to cardiac risk",
+                "Use liothyronine instead"
+              ],
+              "answer": "Start levothyroxine at 25 mcg daily and titrate",
+              "explanation": "Starting at a low dose and titrating slowly minimizes cardiac stress."
+            },
+            {
+              "stem": "A 40-year-old woman with bipolar disorder experiences lithium-induced tremor. Which of the following is the most appropriate management?",
+              "options": [
+                "Reduce lithium dose",
+                "Add propranolol",
+                "Switch to valproate",
+                "Add clonazepam"
+              ],
+              "answer": "Add propranolol",
+              "explanation": "Propranolol is effective for lithium-induced tremor."
+            },
+            {
+              "stem": "A 65-year-old man with type 2 diabetes and heart failure (EF 30%) requires glycemic control. Which of the following is contraindicated?",
+              "options": [
+                "Empagliflozin",
+                "Linagliptin",
+                "Pioglitazone",
+                "Glipizide"
+              ],
+              "answer": "Pioglitazone",
+              "explanation": "Thiazolidinediones worsen heart failure and are contraindicated."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 72-year-old woman with type 2 diabetes mellitus presents with HbA1c 9.5%, BMI 32 kg/m², and hypertension. She is currently on metformin 1000 mg BID and lisinopril 10 mg daily.",
+              "modelAnswer": "a) Identify two treatment goals for this patient: (2 marks)\n   - Achieve HbA1c < 7% to reduce microvascular complications.\n   - Reduce BMI to < 30 kg/m² through lifestyle modifications and pharmacotherapy.\n\nb) Explain two pharmacological strategies to achieve these goals: (2 marks)\n   - Add a GLP-1 receptor agonist (e.g., liraglutide) to improve glycemic control and promote weight loss.\n   - Consider adding an SGLT2 inhibitor (e.g., empagliflozin) to reduce cardiovascular risk and aid weight loss.\n\nc) List two non-pharmacological strategies: (1 mark)\n   - Implement a hypocaloric diet with reduced carbohydrate and fat intake.\n   - Encourage 150 minutes of moderate-intensity exercise weekly."
+            },
+            {
+              "stem": "A 65-year-old man with Parkinson’s disease presents with worsening motor symptoms despite optimal levodopa-carbidopa therapy. He also reports constipation and orthostatic hypotension.",
+              "modelAnswer": "a) Identify two non-motor symptoms of Parkinson’s disease: (2 marks)\n   - Constipation (due to autonomic dysfunction).\n   - Orthostatic hypotension (due to autonomic dysfunction).\n\nb) Explain two strategies to manage levodopa-associated motor fluctuations: (2 marks)\n   - Add a COMT inhibitor (e.g., entacapone) to prolong levodopa’s duration of action.\n   - Consider switching to a controlled-release levodopa formulation or adding a dopamine agonist (e.g., pramipexole).\n\nc) Describe two strategies to manage orthostatic hypotension: (1 mark)\n   - Increase fluid and salt intake to expand blood volume.\n   - Add fludrocortisone or midodrine if symptoms persist."
+            },
+            {
+              "stem": "A 45-year-old woman with bipolar disorder presents with lithium toxicity (serum level 2.1 mEq/L). She is confused and has coarse tremors.",
+              "modelAnswer": "a) Identify two immediate management steps: (2 marks)\n   - Withhold lithium and administer intravenous fluids (0.9% saline) to enhance lithium excretion.\n   - Monitor serum lithium levels every 6–12 hours until levels fall below 1.5 mEq/L.\n\nb) Describe two long-term strategies to prevent recurrence: (2 marks)\n   - Reduce lithium dose and titrate slowly to achieve therapeutic levels (0.6–1.2 mEq/L).\n   - Consider switching to an alternative mood stabilizer (e.g., lamotrigine) if toxicity recurs.\n\nc) List two monitoring parameters: (1 mark)\n   - Serum lithium levels (target: 0.6–1.2 mEq/L).\n   - Renal function (creatinine, eGFR) and thyroid function (TSH)."
+            },
+            {
+              "stem": "A 50-year-old man with type 2 diabetes mellitus and chronic kidney disease (eGFR 25 mL/min/1.73m²) presents with HbA1c 8.2%. He is currently on metformin 500 mg BID.",
+              "modelAnswer": "a) Identify two modifiable risk factors for diabetic nephropathy progression: (2 marks)\n   - Poor glycemic control (HbA1c > 7%).\n   - Hypertension (BP > 130/80 mmHg).\n\nb) Explain two pharmacological adjustments for this patient: (2 marks)\n   - Discontinue metformin due to renal impairment and switch to a sulfonylurea (e.g., glipizide).\n   - Add an ACE inhibitor (e.g., lisinopril) to reduce intraglomerular pressure and slow nephropathy progression.\n\nc) Describe two non-pharmacological strategies: (1 mark)\n   - Implement a low-protein diet (0.8 g/kg/day).\n   - Encourage smoking cessation and weight loss if overweight."
+            },
+            {
+              "stem": "A 35-year-old woman with schizophrenia experiences weight gain and metabolic syndrome on olanzapine. She is concerned about her cardiovascular risk.",
+              "modelAnswer": "a) Identify two metabolic adverse effects of olanzapine: (2 marks)\n   - Weight gain (due to increased appetite and metabolic effects).\n   - Dyslipidemia (elevated triglycerides and LDL cholesterol).\n\nb) Explain two strategies to mitigate these effects: (2 marks)\n   - Switch to an antipsychotic with a lower metabolic risk (e.g., ziprasidone or aripiprazole).\n   - Implement lifestyle modifications: hypocaloric diet and 150 minutes of weekly exercise.\n\nc) Describe two monitoring parameters: (1 mark)\n   - Fasting lipid profile (target: LDL < 100 mg/dL, triglycerides < 150 mg/dL).\n   - HbA1c and fasting glucose to screen for diabetes."
+            },
+            {
+              "stem": "A 60-year-old woman with osteoporosis presents with a new vertebral fracture despite calcium and vitamin D supplementation.",
+              "modelAnswer": "a) Identify two non-pharmacological strategies to reduce fracture risk: (2 marks)\n   - Implement a fall-prevention program (e.g., balance exercises, home safety modifications).\n   - Ensure adequate protein and vitamin K intake to support bone health.\n\nb) Explain two pharmacological strategies: (2 marks)\n   - Add a bisphosphonate (e.g., alendronate) to reduce fracture risk.\n   - Consider teriparatide for high-risk patients with multiple fractures.\n\nc) Describe two monitoring parameters: (1 mark)\n   - Bone mineral density (DEXA scan) annually to assess treatment response.\n   - Serum calcium and vitamin D levels to ensure adequacy."
+            },
+            {
+              "stem": "A 40-year-old man with type 2 diabetes mellitus and obesity (BMI 35 kg/m²) fails metformin monotherapy. He is reluctant to start insulin.",
+              "modelAnswer": "a) Identify two patient counseling points for initiating liraglutide: (2 marks)\n   - Liraglutide may cause nausea initially; start with a low dose and titrate slowly.\n   - Monitor for signs of pancreatitis (severe abdominal pain radiating to the back).\n\nb) Explain two advantages of liraglutide over sulfonylureas: (2 marks)\n   - Liraglutide promotes weight loss, whereas sulfonylureas cause weight gain.\n   - Liraglutide has a lower risk of hypoglycemia compared to sulfonylureas.\n\nc) Describe two lifestyle modifications to support therapy: (1 mark)\n   - Implement a hypocaloric diet with reduced carbohydrate and fat intake.\n   - Encourage 150 minutes of moderate-intensity exercise weekly."
+            },
+            {
+              "stem": "A 55-year-old man with Parkinson’s disease develops hallucinations while on levodopa-carbidopa. He is otherwise stable.",
+              "modelAnswer": "a) Identify two potential causes of hallucinations in Parkinson’s disease: (2 marks)\n   - Dopaminergic medications (e.g., levodopa, dopamine agonists).\n   - Underlying dementia or Lewy body pathology.\n\nb) Explain two management strategies: (2 marks)\n   - Reduce the dose of dopaminergic medications if possible.\n   - Add an atypical antipsychotic with low extrapyramidal risk (e.g., quetiapine or clozapine).\n\nc) Describe two monitoring parameters: (1 mark)\n   - Monitor for worsening motor symptoms after dose reduction.\n   - Assess for signs of orthostatic hypotension or sedation with antipsychotic therapy."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 35-year-old woman (EC) presents to the emergency department with a generalized tonic-clonic seizure lasting 25 minutes. She has a history of epilepsy since age 17, poorly controlled on multiple antiepileptic drugs. She is currently on carbamazepine 400 mg BID and valproate 500 mg BID. She is 8 weeks pregnant.",
+              "modelAnswer": "**a) Acute management of status epilepticus (6 marks):**\n   - **Immediate stabilization:** Ensure airway, breathing, and circulation (ABCs). Position patient in left lateral decubitus to prevent aspiration.\n   - **Benzodiazepine administration:** Give IV lorazepam 4 mg (0.1 mg/kg) over 2 minutes; repeat once if seizure persists after 5 minutes.\n   - **Second-line antiepileptic:** If seizures persist, administer IV fosphenytoin 20 mg PE/kg (max 1500 mg PE) or IV valproate 20–40 mg/kg loading dose.\n   - **Monitoring:** Continuous EEG if available; monitor vital signs, oxygen saturation, and cardiac rhythm.\n   - **Consider reversible causes:** Check electrolytes (Na+, Ca2+, Mg2+), glucose, and drug levels (carbamazepine, valproate).\n   - **Intubation and ICU admission:** If seizures persist beyond 30 minutes or respiratory compromise occurs.\n\n**b) Principles of chronic management during pregnancy (4 marks):**\n   - **Monotherapy:** Optimize single-agent therapy (e.g., lamotrigine or levetiracetam) to minimize fetal exposure to multiple antiepileptics.\n   - **Dose adjustments:** Monitor drug levels monthly; adjust doses as pregnancy progresses (increased clearance due to hepatic enzyme induction).\n   - **Folate supplementation:** Start folic acid 5 mg daily preconception and throughout pregnancy to reduce neural tube defect risk.\n   - **Teratogen counseling:** Discuss risks of antiepileptic drugs (e.g., valproate increases spina bifida risk); consider switching to safer alternatives (e.g., lamotrigine).\n\n**c) Patient counseling points (5 marks):**\n   - **Medication adherence:** Emphasize the importance of taking antiepileptic drugs as prescribed to prevent breakthrough seizures.\n   - **Fetal monitoring:** Schedule regular obstetric visits and fetal ultrasound to monitor for congenital anomalies.\n   - **Seizure precautions:** Advise against activities with high risk of injury (e.g., swimming, driving) until seizures are controlled.\n   - **Breastfeeding considerations:** Discuss the benefits/risks of breastfeeding while on antiepileptic drugs (e.g., lamotrigine is compatible).\n   - **Emergency plan:** Provide a rescue medication plan (e.g., rectal diazepam) for prolonged seizures and educate family members on its use."
+            },
+            {
+              "stem": "A 65-year-old man (J.S.) presents with a 15-minute episode of right arm paralysis and slurred speech, resolving spontaneously. His medical history includes type 2 diabetes, hypertension, hyperlipidemia, and a 25-pack-year smoking history. Current medications: metformin 1000 mg BID, atorvastatin 40 mg nightly, lisinopril 10 mg daily, and aspirin 81 mg daily. Doppler ultrasound reveals 90% left carotid stenosis.",
+              "modelAnswer": "**a) Data consistent with transient ischemic attack (TIA) (5 marks):**\n   - **Focal neurological deficit:** Right arm paralysis and slurred speech (consistent with left carotid territory ischemia).\n   - **Duration:** Symptoms lasted 15 minutes, resolving spontaneously (typical of TIA).\n   - **Vascular risk factors:** Hypertension, diabetes, hyperlipidemia, and smoking history.\n   - **Carotid stenosis:** 90% left carotid stenosis predisposes to embolic stroke.\n   - **Age:** 65 years (increased risk of atherosclerotic disease).\n\n**b) Initial and long-term goals in treating J.S. (3 marks):**\n   - **Initial goals:** Prevent stroke recurrence; initiate antiplatelet therapy (e.g., clopidogrel) and statin therapy.\n   - **Long-term goals:** Reduce cardiovascular risk (BP < 130/80 mmHg, LDL < 70 mg/dL); optimize glycemic control (HbA1c < 7%).\n   - **Surgical intervention:** Consider carotid endarterectomy or stenting for 90% stenosis to reduce stroke risk.\n\n**c) Modifiable risk factors and interventions (7 marks):**\n   - **Hypertension:** Optimize antihypertensive therapy (e.g., add amlodipine or increase lisinopril dose); target BP < 130/80 mmHg.\n   - **Diabetes:** Intensify glycemic control (e.g., add SGLT2 inhibitor or GLP-1 receptor agonist); target HbA1c < 7%.\n   - **Hyperlipidemia:** Intensify statin therapy (e.g., switch to high-intensity atorvastatin 80 mg daily); target LDL < 70 mg/dL.\n   - **Smoking cessation:** Refer to smoking cessation program; consider nicotine replacement therapy or varenicline.\n   - **Antiplatelet therapy:** Switch from aspirin to dual antiplatelet therapy (aspirin + clopidogrel) for 21 days, then long-term clopidogrel monotherapy.\n   - **Lifestyle modifications:** Implement Mediterranean diet, increase physical activity (150 minutes weekly), and limit alcohol intake.\n   - **Carotid revascularization:** Urgent carotid endarterectomy or stenting for 90% stenosis to reduce stroke risk."
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "CNS & Endocrine Therapeutics",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 32-year-old female with a history of bipolar disorder presents with acute mania. She is started on valproate and risperidone. Which of the following laboratory parameters should be monitored most closely in this patient?",
+              "options": [
+                "Serum potassium levels",
+                "White blood cell count",
+                "Liver function tests",
+                "Serum creatinine"
+              ],
+              "answer": "Liver function tests",
+              "explanation": "Valproate is associated with hepatotoxicity, necessitating close monitoring of liver function tests."
+            },
+            {
+              "stem": "A 65-year-old male with Parkinson’s disease is started on levodopa-carbidopa. Which of the following adverse effects is most likely to occur early in therapy?",
+              "options": [
+                "Dyskinesias",
+                "Orthostatic hypotension",
+                "Hallucinations",
+                "Motor fluctuations"
+              ],
+              "answer": "Orthostatic hypotension",
+              "explanation": "Orthostatic hypotension is a common early adverse effect of levodopa-carbidopa due to peripheral dopamine effects."
+            },
+            {
+              "stem": "A 28-year-old female with a history of depression is prescribed fluoxetine. Which of the following counseling points should be emphasized to minimize the risk of serotonin syndrome?",
+              "options": [
+                "Avoid grapefruit juice",
+                "Limit alcohol intake",
+                "Avoid concurrent use of tramadol",
+                "Take the medication with food"
+              ],
+              "answer": "Avoid concurrent use of tramadol",
+              "explanation": "Tramadol, a serotonin-norepinephrine reuptake inhibitor, increases the risk of serotonin syndrome when combined with SSRIs."
+            },
+            {
+              "stem": "A 45-year-old male with type 2 diabetes mellitus is started on metformin. Which of the following is a contraindication to metformin therapy?",
+              "options": [
+                "Chronic kidney disease (eGFR 45 mL/min/1.73m²)",
+                "Hypertension",
+                "Obesity",
+                "Hyperlipidemia"
+              ],
+              "answer": "Chronic kidney disease (eGFR 45 mL/min/1.73m²)",
+              "explanation": "Metformin is contraindicated in patients with significant renal impairment due to the risk of lactic acidosis."
+            },
+            {
+              "stem": "A 50-year-old female with a history of migraine presents with frequent attacks. She is started on propranolol for prophylaxis. Which of the following is a common adverse effect of propranolol?",
+              "options": [
+                "Weight gain",
+                "Bradycardia",
+                "Hyperglycemia",
+                "Insomnia"
+              ],
+              "answer": "Bradycardia",
+              "explanation": "Beta-blockers like propranolol commonly cause bradycardia as an adverse effect."
+            },
+            {
+              "stem": "A 70-year-old male with hypothyroidism is started on levothyroxine. Which of the following medications may decrease the absorption of levothyroxine?",
+              "options": [
+                "Calcium carbonate",
+                "Omeprazole",
+                "Simvastatin",
+                "Metformin"
+              ],
+              "answer": "Calcium carbonate",
+              "explanation": "Calcium carbonate can bind levothyroxine in the gastrointestinal tract, reducing its absorption."
+            },
+            {
+              "stem": "A 30-year-old female with schizophrenia is started on olanzapine. Which of the following metabolic parameters should be monitored closely?",
+              "options": [
+                "Serum potassium",
+                "Fasting blood glucose",
+                "Serum sodium",
+                "Serum magnesium"
+              ],
+              "answer": "Fasting blood glucose",
+              "explanation": "Olanzapine is associated with weight gain and insulin resistance, necessitating monitoring of fasting blood glucose."
+            },
+            {
+              "stem": "A 22-year-old male with epilepsy is started on carbamazepine. Which of the following is a rare but serious adverse effect of carbamazepine?",
+              "options": [
+                "Agranulocytosis",
+                "Hypoglycemia",
+                "Hypercalcemia",
+                "Bradycardia"
+              ],
+              "answer": "Agranulocytosis",
+              "explanation": "Carbamazepine can cause agranulocytosis, a rare but serious hematologic adverse effect."
+            },
+            {
+              "stem": "A 55-year-old female with osteoporosis is started on alendronate. Which of the following instructions should be given to maximize absorption and minimize adverse effects?",
+              "options": [
+                "Take with a full glass of water and remain upright for 30 minutes",
+                "Take with food to reduce gastrointestinal irritation",
+                "Take at bedtime to minimize nausea",
+                "Take with orange juice to enhance absorption"
+              ],
+              "answer": "Take with a full glass of water and remain upright for 30 minutes",
+              "explanation": "Alendronate should be taken with a full glass of water and the patient should remain upright to minimize esophageal irritation."
+            },
+            {
+              "stem": "A 40-year-old male with neuropathic pain is started on gabapentin. Which of the following is a common adverse effect of gabapentin?",
+              "options": [
+                "Dry mouth",
+                "Sedation",
+                "Hypertension",
+                "Hypokalemia"
+              ],
+              "answer": "Sedation",
+              "explanation": "Gabapentin commonly causes sedation, especially at higher doses."
+            },
+            {
+              "stem": "A 60-year-old female with bipolar disorder is stabilized on lithium. Which of the following is a key monitoring parameter for lithium therapy?",
+              "options": [
+                "Serum sodium",
+                "Serum lithium level",
+                "Serum calcium",
+                "Serum magnesium"
+              ],
+              "answer": "Serum lithium level",
+              "explanation": "Serum lithium levels must be monitored to ensure therapeutic efficacy and avoid toxicity."
+            },
+            {
+              "stem": "A 35-year-old male with type 1 diabetes mellitus is started on insulin glargine. Which of the following is a key advantage of insulin glargine over neutral protamine Hagedorn (NPH) insulin?",
+              "options": [
+                "Faster onset of action",
+                "Longer duration of action",
+                "Lower risk of hypoglycemia",
+                "Lower cost"
+              ],
+              "answer": "Lower risk of hypoglycemia",
+              "explanation": "Insulin glargine provides a more consistent and prolonged duration of action, reducing the risk of hypoglycemia."
+            },
+            {
+              "stem": "A 25-year-old female with depression is started on venlafaxine. Which of the following is a common adverse effect of venlafaxine?",
+              "options": [
+                "Hypertension",
+                "Hypoglycemia",
+                "Hypercalcemia",
+                "Bradycardia"
+              ],
+              "answer": "Hypertension",
+              "explanation": "Venlafaxine, an SNRI, can cause dose-dependent increases in blood pressure."
+            },
+            {
+              "stem": "A 75-year-old male with Parkinson’s disease is started on rasagiline. Which of the following dietary restrictions should be emphasized?",
+              "options": [
+                "Avoid tyramine-rich foods",
+                "Limit potassium intake",
+                "Avoid grapefruit juice",
+                "Limit sodium intake"
+              ],
+              "answer": "Avoid tyramine-rich foods",
+              "explanation": "Rasagiline is a monoamine oxidase inhibitor, and tyramine-rich foods can precipitate hypertensive crises."
+            },
+            {
+              "stem": "A 42-year-old female with schizophrenia is started on clozapine. Which of the following is a key monitoring parameter for clozapine therapy?",
+              "options": [
+                "Serum potassium",
+                "White blood cell count",
+                "Liver function tests",
+                "Serum creatinine"
+              ],
+              "answer": "White blood cell count",
+              "explanation": "Clozapine is associated with agranulocytosis, necessitating regular monitoring of white blood cell counts."
+            },
+            {
+              "stem": "A 50-year-old male with type 2 diabetes mellitus is started on empagliflozin. Which of the following is a key adverse effect of empagliflozin?",
+              "options": [
+                "Hypoglycemia",
+                "Hyperkalemia",
+                "Genital mycotic infections",
+                "Weight gain"
+              ],
+              "answer": "Genital mycotic infections",
+              "explanation": "SGLT2 inhibitors like empagliflozin increase urinary glucose excretion, predisposing to genital mycotic infections."
+            },
+            {
+              "stem": "A 30-year-old female with epilepsy is started on levetiracetam. Which of the following is a common adverse effect of levetiracetam?",
+              "options": [
+                "Alopecia",
+                "Irritability",
+                "Hypercalcemia",
+                "Bradycardia"
+              ],
+              "answer": "Irritability",
+              "explanation": "Levetiracetam is associated with neuropsychiatric adverse effects, including irritability and mood changes."
+            },
+            {
+              "stem": "A 65-year-old male with hypothyroidism is started on levothyroxine. Which of the following is a key counseling point regarding levothyroxine administration?",
+              "options": [
+                "Take with food to enhance absorption",
+                "Take at bedtime to minimize insomnia",
+                "Take on an empty stomach with a full glass of water",
+                "Take with calcium carbonate to reduce gastrointestinal irritation"
+              ],
+              "answer": "Take on an empty stomach with a full glass of water",
+              "explanation": "Levothyroxine should be taken on an empty stomach with a full glass of water to maximize absorption."
+            },
+            {
+              "stem": "A 40-year-old female with bipolar disorder is started on lamotrigine. Which of the following is a key adverse effect of lamotrigine?",
+              "options": [
+                "Hepatotoxicity",
+                "Stevens-Johnson syndrome",
+                "Hypercalcemia",
+                "Bradycardia"
+              ],
+              "answer": "Stevens-Johnson syndrome",
+              "explanation": "Lamotrigine is associated with a risk of Stevens-Johnson syndrome, necessitating slow titration."
+            },
+            {
+              "stem": "A 55-year-old male with type 2 diabetes mellitus is started on sitagliptin. Which of the following is a key advantage of sitagliptin over sulfonylureas?",
+              "options": [
+                "Lower risk of hypoglycemia",
+                "Faster onset of action",
+                "Lower cost",
+                "Longer duration of action"
+              ],
+              "answer": "Lower risk of hypoglycemia",
+              "explanation": "Sitagliptin, a DPP-4 inhibitor, has a lower risk of hypoglycemia compared to sulfonylureas."
+            },
+            {
+              "stem": "A 30-year-old female with depression is started on bupropion. Which of the following is a key advantage of bupropion over SSRIs?",
+              "options": [
+                "Lower risk of sexual dysfunction",
+                "Faster onset of action",
+                "Lower cost",
+                "Longer duration of action"
+              ],
+              "answer": "Lower risk of sexual dysfunction",
+              "explanation": "Bupropion is associated with a lower risk of sexual dysfunction compared to SSRIs."
+            },
+            {
+              "stem": "A 60-year-old male with Parkinson’s disease is started on pramipexole. Which of the following is a key adverse effect of pramipexole?",
+              "options": [
+                "Hypotension",
+                "Hypercalcemia",
+                "Hypertension",
+                "Bradycardia"
+              ],
+              "answer": "Hypotension",
+              "explanation": "Dopamine agonists like pramipexole can cause orthostatic hypotension."
+            },
+            {
+              "stem": "A 45-year-old female with osteoporosis is started on denosumab. Which of the following is a key monitoring parameter for denosumab therapy?",
+              "options": [
+                "Serum calcium",
+                "Serum potassium",
+                "Liver function tests",
+                "Serum sodium"
+              ],
+              "answer": "Serum calcium",
+              "explanation": "Denosumab can cause hypocalcemia, necessitating monitoring of serum calcium levels."
+            },
+            {
+              "stem": "A 35-year-old male with type 1 diabetes mellitus is started on insulin aspart. Which of the following is a key advantage of insulin aspart over regular insulin?",
+              "options": [
+                "Faster onset of action",
+                "Longer duration of action",
+                "Lower cost",
+                "Lower risk of hypoglycemia"
+              ],
+              "answer": "Faster onset of action",
+              "explanation": "Insulin aspart is a rapid-acting insulin with a faster onset of action compared to regular insulin."
+            },
+            {
+              "stem": "A 50-year-old female with schizophrenia is started on aripiprazole. Which of the following is a key advantage of aripiprazole over other antipsychotics?",
+              "options": [
+                "Lower risk of metabolic adverse effects",
+                "Faster onset of action",
+                "Lower cost",
+                "Longer duration of action"
+              ],
+              "answer": "Lower risk of metabolic adverse effects",
+              "explanation": "Aripiprazole is associated with a lower risk of metabolic adverse effects compared to other antipsychotics."
+            },
+            {
+              "stem": "A 40-year-old male with epilepsy is started on topiramate. Which of the following is a key adverse effect of topiramate?",
+              "options": [
+                "Weight gain",
+                "Hyperkalemia",
+                "Metabolic acidosis",
+                "Bradycardia"
+              ],
+              "answer": "Metabolic acidosis",
+              "explanation": "Topiramate can cause metabolic acidosis due to carbonic anhydrase inhibition."
+            },
+            {
+              "stem": "A 65-year-old female with hypothyroidism is started on levothyroxine. Which of the following medications may increase the requirement for levothyroxine?",
+              "options": [
+                "Ferrous sulfate",
+                "Omeprazole",
+                "Simvastatin",
+                "Metformin"
+              ],
+              "answer": "Ferrous sulfate",
+              "explanation": "Ferrous sulfate can bind levothyroxine in the gastrointestinal tract, increasing the requirement for levothyroxine."
+            },
+            {
+              "stem": "A 30-year-old female with bipolar disorder is started on quetiapine. Which of the following is a key monitoring parameter for quetiapine therapy?",
+              "options": [
+                "Serum potassium",
+                "Fasting blood glucose",
+                "Serum sodium",
+                "Serum magnesium"
+              ],
+              "answer": "Fasting blood glucose",
+              "explanation": "Quetiapine is associated with weight gain and insulin resistance, necessitating monitoring of fasting blood glucose."
+            },
+            {
+              "stem": "A 55-year-old male with type 2 diabetes mellitus is started on liraglutide. Which of the following is a key adverse effect of liraglutide?",
+              "options": [
+                "Hypoglycemia",
+                "Pancreatitis",
+                "Hypercalcemia",
+                "Bradycardia"
+              ],
+              "answer": "Pancreatitis",
+              "explanation": "GLP-1 receptor agonists like liraglutide are associated with an increased risk of pancreatitis."
+            },
+            {
+              "stem": "A 40-year-old female with depression is started on mirtazapine. Which of the following is a key advantage of mirtazapine over SSRIs?",
+              "options": [
+                "Lower risk of sexual dysfunction",
+                "Faster onset of action",
+                "Lower cost",
+                "Longer duration of action"
+              ],
+              "answer": "Lower risk of sexual dysfunction",
+              "explanation": "Mirtazapine is associated with a lower risk of sexual dysfunction compared to SSRIs."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 65-year-old male with Parkinson’s disease presents with worsening motor symptoms despite treatment with levodopa-carbidopa. (a) List four non-motor symptoms of Parkinson’s disease. (2 marks) (b) Explain two strategies to manage motor fluctuations in this patient. (3 marks)",
+              "modelAnswer": "a) Non-motor symptoms of Parkinson’s disease include: (1) Cognitive impairment/dementia, (2) Depression/anxiety, (3) Autonomic dysfunction (e.g., orthostatic hypotension, constipation), (4) Sleep disturbances (e.g., REM sleep behavior disorder).\n\nb) Strategies to manage motor fluctuations: (1) Adjust levodopa-carbidopa dosing by increasing frequency or using controlled-release formulations to maintain steady plasma levels, (2) Add a dopamine agonist (e.g., pramipexole) or COMT inhibitor (e.g., entacapone) to prolong levodopa’s effects."
+            },
+            {
+              "stem": "A 30-year-old female with a history of migraine presents with frequent attacks. (a) List four differences between tension-type headaches and migraine headaches. (2 marks) (b) Explain two acute treatment options for migraine. (3 marks)",
+              "modelAnswer": "a) Differences between tension-type headaches and migraine headaches: (1) Tension-type headaches are bilateral, while migraines are typically unilateral, (2) Tension-type headaches are pressing/tightening in quality, while migraines are throbbing, (3) Tension-type headaches are not aggravated by routine physical activity, while migraines are, (4) Migraines are often associated with nausea/vomiting and photophobia/phonophobia, which are absent in tension-type headaches.\n\nb) Acute treatment options for migraine: (1) Triptans (e.g., sumatriptan) for moderate-severe attacks, (2) NSAIDs (e.g., ibuprofen) or acetaminophen for mild-moderate attacks."
+            },
+            {
+              "stem": "A 45-year-old male with type 2 diabetes mellitus presents with persistent hyperglycemia despite metformin therapy. (a) List four modifiable risk factors for cardiovascular disease in this patient. (2 marks) (b) Explain two strategies to reduce cardiovascular risk in this patient. (3 marks)",
+              "modelAnswer": "a) Modifiable risk factors for cardiovascular disease: (1) Hypertension, (2) Dyslipidemia, (3) Obesity, (4) Smoking.\n\nb) Strategies to reduce cardiovascular risk: (1) Initiate an ACE inhibitor or ARB for blood pressure control and renal protection, (2) Add a statin (e.g., atorvastatin) to manage dyslipidemia and reduce LDL cholesterol."
+            },
+            {
+              "stem": "A 50-year-old female with schizophrenia is started on olanzapine. (a) List four metabolic parameters that should be monitored in this patient. (2 marks) (b) Explain two strategies to mitigate metabolic adverse effects of olanzapine. (3 marks)",
+              "modelAnswer": "a) Metabolic parameters to monitor: (1) Fasting blood glucose, (2) HbA1c, (3) Lipid profile (total cholesterol, LDL, HDL, triglycerides), (4) Body weight/waist circumference.\n\nb) Strategies to mitigate metabolic adverse effects: (1) Encourage lifestyle modifications (diet and exercise) to promote weight loss, (2) Consider switching to a lower-risk antipsychotic (e.g., aripiprazole) if metabolic adverse effects are severe."
+            },
+            {
+              "stem": "A 60-year-old male with epilepsy is started on carbamazepine. (a) List four adverse effects of carbamazepine. (2 marks) (b) Explain two strategies to minimize the risk of carbamazepine-induced adverse effects. (3 marks)",
+              "modelAnswer": "a) Adverse effects of carbamazepine: (1) Dizziness/drowsiness, (2) Hyponatremia, (3) Rash/Stevens-Johnson syndrome, (4) Bone marrow suppression (e.g., agranulocytosis).\n\nb) Strategies to minimize adverse effects: (1) Start with a low dose and titrate slowly to reduce CNS adverse effects, (2) Monitor serum sodium and complete blood counts regularly to detect hyponatremia and bone marrow suppression early."
+            },
+            {
+              "stem": "A 35-year-old female with bipolar disorder is stabilized on lithium. (a) List four monitoring parameters for lithium therapy. (2 marks) (b) Explain two strategies to manage lithium toxicity. (3 marks)",
+              "modelAnswer": "a) Monitoring parameters for lithium therapy: (1) Serum lithium levels, (2) Renal function (serum creatinine, eGFR), (3) Thyroid function tests (TSH, free T4), (4) Electrolytes (sodium, potassium).\n\nb) Strategies to manage lithium toxicity: (1) Withhold lithium and administer intravenous fluids to enhance renal excretion, (2) Consider hemodialysis in severe cases with lithium levels >4 mEq/L or impaired renal function."
+            },
+            {
+              "stem": "A 55-year-old male with type 2 diabetes mellitus is started on empagliflozin. (a) List four adverse effects of SGLT2 inhibitors. (2 marks) (b) Explain two strategies to mitigate the risk of genital mycotic infections with empagliflozin. (3 marks)",
+              "modelAnswer": "a) Adverse effects of SGLT2 inhibitors: (1) Genital mycotic infections, (2) Urinary tract infections, (3) Hypotension, (4) Increased urination.\n\nb) Strategies to mitigate genital mycotic infections: (1) Encourage good genital hygiene and prompt treatment of infections, (2) Consider prophylactic antifungal therapy in high-risk patients."
+            },
+            {
+              "stem": "A 40-year-old female with depression is started on venlafaxine. (a) List four counseling points for venlafaxine therapy. (2 marks) (b) Explain two strategies to manage venlafaxine-induced hypertension. (3 marks)",
+              "modelAnswer": "a) Counseling points for venlafaxine: (1) Take with food to reduce gastrointestinal upset, (2) Rise slowly from sitting/lying positions to minimize orthostatic hypotension, (3) Avoid abrupt discontinuation to prevent withdrawal symptoms, (4) Monitor blood pressure regularly.\n\nb) Strategies to manage venlafaxine-induced hypertension: (1) Switch to a lower-risk antidepressant (e.g., sertraline) if hypertension is severe, (2) Add an antihypertensive (e.g., ACE inhibitor) if blood pressure remains uncontrolled."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 50-year-old male with a history of type 2 diabetes mellitus presents with a 2-week history of progressive numbness, tingling, and burning pain in his feet. He reports difficulty sleeping due to the pain. His current medications include metformin 1000 mg twice daily and atorvastatin 20 mg at bedtime. (a) Outline the pathophysiology of diabetic peripheral neuropathy. (5 marks) (b) Propose a pharmacological management plan for this patient’s neuropathic pain. (5 marks) (c) List four non-pharmacological strategies to manage diabetic peripheral neuropathy. (5 marks)",
+              "modelAnswer": "a) Pathophysiology of diabetic peripheral neuropathy:\n   - Chronic hyperglycemia leads to oxidative stress, advanced glycation end-products (AGEs), and activation of protein kinase C (PKC), which damage peripheral nerves.\n   - Microvascular damage and endothelial dysfunction reduce nerve blood flow, exacerbating nerve damage.\n   - Metabolic derangements (e.g., sorbitol accumulation) and neuroinflammation contribute to nerve fiber loss and dysfunction.\n   - Small fiber neuropathy (affecting A-delta and C fibers) causes pain, while large fiber neuropathy leads to sensory loss and motor weakness.\n\nb) Pharmacological management plan:\n   - First-line: Gabapentin (start at 300 mg at bedtime, titrate to 900–1800 mg/day in divided doses) or pregabalin (start at 75 mg twice daily, titrate to 300 mg/day).\n   - Second-line: Duloxetine (start at 30 mg daily, titrate to 60 mg/day) or amitriptyline (start at 10 mg at bedtime, titrate to 25–75 mg/day).\n   - Adjunctive: Topical lidocaine 5% patch or capsaicin 0.075% cream for localized pain.\n   - Monitor for adverse effects (e.g., sedation, dizziness) and adjust doses as needed.\n\nc) Non-pharmacological strategies:\n   - Blood glucose control: Optimize diabetes management to slow progression of neuropathy.\n   - Foot care: Daily inspection, proper footwear, and avoidance of pressure points to prevent ulcers.\n   - Physical therapy: Exercises to improve balance and reduce fall risk.\n   - Dietary modifications: Mediterranean diet or low-glycemic-index foods to reduce inflammation."
+            },
+            {
+              "stem": "A 35-year-old female with bipolar disorder is admitted to the psychiatric unit for acute mania. She is started on lithium 300 mg three times daily and risperidone 2 mg twice daily. On day 3 of admission, she develops severe nausea, vomiting, and diarrhea. Her serum lithium level is 2.1 mEq/L (therapeutic range: 0.6–1.2 mEq/L). (a) Outline the acute management of lithium toxicity. (5 marks) (b) Propose a long-term management plan for this patient’s bipolar disorder. (5 marks) (c) List four monitoring parameters for lithium therapy. (5 marks)",
+              "modelAnswer": "a) Acute management of lithium toxicity:\n   - Withhold lithium immediately and assess severity of toxicity.\n   - Administer intravenous fluids (e.g., 0.9% normal saline) to enhance renal excretion and correct dehydration.\n   - Consider gastric lavage if ingestion was recent (<1 hour) and patient is alert.\n   - Monitor serum lithium levels every 2–4 hours until levels fall below 1.0 mEq/L.\n   - In severe cases (lithium level >4 mEq/L or impaired renal function), initiate hemodialysis.\n\nb) Long-term management plan for bipolar disorder:\n   - Continue lithium at a lower dose (e.g., 300 mg twice daily) with gradual titration to achieve therapeutic levels (0.6–0.8 mEq/L).\n   - Add valproate (e.g., 500 mg twice daily) as an adjunct for mood stabilization if lithium monotherapy is insufficient.\n   - Implement psychotherapy (e.g., cognitive behavioral therapy) to improve coping strategies and medication adherence.\n   - Educate patient on early signs of mania/hypomania and the importance of regular monitoring.\n\nc) Monitoring parameters for lithium therapy:\n   - Serum lithium levels: Check 5–7 days after initiation or dose change, then every 3–6 months.\n   - Renal function: Serum creatinine and eGFR every 6–12 months.\n   - Thyroid function: TSH and free T4 every 6–12 months.\n   - Electrolytes: Sodium and potassium levels every 6–12 months."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "CNS & Endocrine Therapeutics",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 28-year-old female with a history of generalized tonic-clonic seizures presents to the clinic. She reports breakthrough seizures despite taking valproate 1000 mg/day. Her current dose was titrated to a serum level of 60 mcg/mL. Which of the following is the MOST appropriate next step in management?",
+              "options": [
+                "Increase valproate dose to achieve a serum level of 100 mcg/mL",
+                "Add levetiracetam 500 mg twice daily",
+                "Switch to carbamazepine 200 mg twice daily",
+                "Add lamotrigine 25 mg daily with slow titration"
+              ],
+              "answer": "Add levetiracetam 500 mg twice daily",
+              "explanation": "Levetiracetam is a second-line agent with broad-spectrum efficacy and minimal drug interactions, making it suitable for adjunctive therapy in refractory generalized seizures."
+            },
+            {
+              "stem": "A 72-year-old male with Parkinson’s disease (PD) on levodopa-carbidopa 25/100 mg three times daily presents with worsening motor fluctuations and dyskinesias. His neurologist plans to add a COMT inhibitor. Which of the following is the MOST appropriate choice?",
+              "options": [
+                "Entacapone 200 mg with each levodopa dose",
+                "Tolcapone 100 mg three times daily",
+                "Selegiline 5 mg twice daily",
+                "Rasagiline 1 mg daily"
+              ],
+              "answer": "Entacapone 200 mg with each levodopa dose",
+              "explanation": "Entacapone is a peripherally acting COMT inhibitor that increases levodopa bioavailability and reduces motor fluctuations without the hepatotoxicity risk of tolcapone."
+            },
+            {
+              "stem": "A 35-year-old female with bipolar disorder type I is stabilized on lithium carbonate 900 mg/day (serum level 0.8 mEq/L). She is planning pregnancy. Which of the following is the MOST appropriate management?",
+              "options": [
+                "Continue lithium and monitor serum levels monthly",
+                "Switch to valproate 500 mg twice daily",
+                "Switch to lamotrigine 100 mg daily",
+                "Discontinue all mood stabilizers and monitor closely"
+              ],
+              "answer": "Switch to lamotrigine 100 mg daily",
+              "explanation": "Lamotrigine is the preferred mood stabilizer in pregnancy due to its lower teratogenic risk compared to lithium or valproate."
+            },
+            {
+              "stem": "A 45-year-old male with schizophrenia is started on risperidone 2 mg twice daily. After 2 weeks, he develops akathisia and parkinsonism. Which of the following is the MOST appropriate management?",
+              "options": [
+                "Increase risperidone dose to 4 mg twice daily",
+                "Add propranolol 10 mg three times daily",
+                "Switch to clozapine 25 mg at bedtime",
+                "Add benztropine 1 mg twice daily"
+              ],
+              "answer": "Add benztropine 1 mg twice daily",
+              "explanation": "Benztropine is an anticholinergic that effectively treats extrapyramidal symptoms (EPS) induced by antipsychotics like risperidone."
+            },
+            {
+              "stem": "A 22-year-old female presents with a 6-month history of episodic headaches characterized by unilateral throbbing pain, photophobia, and nausea. She reports that these episodes are triggered by stress and menstruation. Which of the following is the MOST appropriate acute treatment?",
+              "options": [
+                "Ibuprofen 400 mg orally",
+                "Sumatriptan 50 mg orally",
+                "Propranolol 40 mg daily",
+                "Amitriptyline 25 mg at bedtime"
+              ],
+              "answer": "Sumatriptan 50 mg orally",
+              "explanation": "Sumatriptan is a triptan effective for acute migraine attacks with aura or without aura, especially when oral therapy is tolerated."
+            },
+            {
+              "stem": "A 55-year-old male with type 2 diabetes mellitus (T2DM) has an HbA1c of 9.2% despite metformin 1000 mg twice daily. His eGFR is 65 mL/min/1.73m². Which of the following is the MOST appropriate add-on therapy?",
+              "options": [
+                "Glimepiride 2 mg daily",
+                "Pioglitazone 30 mg daily",
+                "Empagliflozin 10 mg daily",
+                "Insulin glargine 10 units at bedtime"
+              ],
+              "answer": "Empagliflozin 10 mg daily",
+              "explanation": "Empagliflozin is an SGLT2 inhibitor with proven cardiovascular and renal benefits in T2DM, making it a preferred add-on agent in this patient."
+            },
+            {
+              "stem": "A 60-year-old female with osteoporosis presents with a T-score of -3.2 at the lumbar spine. She is currently on calcium carbonate 500 mg twice daily and vitamin D 800 IU daily. Which of the following is the MOST appropriate next step?",
+              "options": [
+                "Increase vitamin D to 2000 IU daily",
+                "Add alendronate 70 mg weekly",
+                "Switch to raloxifene 60 mg daily",
+                "Add teriparatide 20 mcg daily"
+              ],
+              "answer": "Add alendronate 70 mg weekly",
+              "explanation": "Alendronate is a first-line bisphosphonate for osteoporosis with proven efficacy in reducing fracture risk and improving bone mineral density."
+            },
+            {
+              "stem": "A 30-year-old male with a history of depression presents with persistent symptoms despite 8 weeks of sertraline 100 mg daily. He reports insomnia and fatigue. Which of the following is the MOST appropriate management?",
+              "options": [
+                "Increase sertraline to 150 mg daily",
+                "Add bupropion 150 mg daily",
+                "Switch to venlafaxine 75 mg daily",
+                "Add mirtazapine 15 mg at bedtime"
+              ],
+              "answer": "Add mirtazapine 15 mg at bedtime",
+              "explanation": "Mirtazapine’s sedating and appetite-stimulating properties make it a suitable adjunct for depression with insomnia and weight loss."
+            },
+            {
+              "stem": "A 40-year-old female with type 1 diabetes mellitus (T1DM) presents with recurrent hypoglycemia despite adjusting her insulin regimen. Her HbA1c is 6.8%. Which of the following is the MOST likely cause?",
+              "options": [
+                "Excessive carbohydrate intake",
+                "Impaired counter-regulatory hormone response",
+                "Overuse of insulin pens",
+                "Chronic kidney disease"
+              ],
+              "answer": "Impaired counter-regulatory hormone response",
+              "explanation": "In T1DM, recurrent hypoglycemia can lead to hypoglycemia unawareness and impaired counter-regulatory responses (e.g., glucagon and epinephrine), increasing hypoglycemia risk."
+            },
+            {
+              "stem": "A 25-year-old male with a history of opioid use disorder is started on methadone 30 mg daily. He reports constipation. Which of the following is the MOST appropriate management?",
+              "options": [
+                "Increase methadone dose to 40 mg daily",
+                "Add polyethylene glycol 17 g daily",
+                "Switch to buprenorphine 8 mg daily",
+                "Add docusate sodium 100 mg twice daily"
+              ],
+              "answer": "Add polyethylene glycol 17 g daily",
+              "explanation": "Methadone-induced constipation is common and managed with osmotic laxatives like polyethylene glycol, which is safe and effective."
+            },
+            {
+              "stem": "A 50-year-old female with hypothyroidism (TSH 12 mIU/L) is started on levothyroxine 50 mcg daily. She also takes ferrous sulfate 325 mg daily for iron deficiency anemia. Which of the following is the MOST appropriate counseling point?",
+              "options": [
+                "Take levothyroxine and ferrous sulfate together with breakfast",
+                "Take levothyroxine 4 hours apart from ferrous sulfate",
+                "Increase levothyroxine dose to 100 mcg daily immediately",
+                "Monitor TSH every 2 weeks until stable"
+              ],
+              "answer": "Take levothyroxine 4 hours apart from ferrous sulfate",
+              "explanation": "Ferrous sulfate can impair levothyroxine absorption; separating doses by 4 hours minimizes this interaction."
+            },
+            {
+              "stem": "A 65-year-old male with a history of hypertension and T2DM presents with a 2-week history of burning pain in his feet. His HbA1c is 7.8%. Which of the following is the MOST appropriate initial therapy?",
+              "options": [
+                "Amitriptyline 25 mg at bedtime",
+                "Gabapentin 300 mg three times daily",
+                "Pregabalin 75 mg twice daily",
+                "Duloxetine 30 mg daily"
+              ],
+              "answer": "Gabapentin 300 mg three times daily",
+              "explanation": "Gabapentin is a first-line agent for painful diabetic neuropathy, with proven efficacy and tolerability in this setting."
+            },
+            {
+              "stem": "A 35-year-old female with bipolar disorder is stabilized on lithium 900 mg/day (serum level 0.9 mEq/L). She develops polyuria and polydipsia. Which of the following is the MOST appropriate management?",
+              "options": [
+                "Reduce lithium dose to 600 mg/day",
+                "Add hydrochlorothiazide 12.5 mg daily",
+                "Switch to valproate 500 mg twice daily",
+                "Increase fluid intake to 3 L/day"
+              ],
+              "answer": "Reduce lithium dose to 600 mg/day",
+              "explanation": "Polyuria and polydipsia are common adverse effects of lithium; reducing the dose often alleviates symptoms while maintaining mood stability."
+            },
+            {
+              "stem": "A 40-year-old male with schizophrenia is started on olanzapine 10 mg daily. After 4 weeks, he gains 5 kg. Which of the following is the MOST appropriate management?",
+              "options": [
+                "Switch to aripiprazole 15 mg daily",
+                "Add metformin 500 mg twice daily",
+                "Continue olanzapine and monitor weight",
+                "Add topiramate 25 mg daily"
+              ],
+              "answer": "Add metformin 500 mg twice daily",
+              "explanation": "Metformin is effective in mitigating olanzapine-induced weight gain and improving insulin resistance in patients with schizophrenia."
+            },
+            {
+              "stem": "A 28-year-old female with epilepsy on carbamazepine 400 mg twice daily presents with a seizure. Her serum carbamazepine level is 6 mcg/mL (therapeutic range 4–12 mcg/mL). Which of the following is the MOST appropriate next step?",
+              "options": [
+                "Increase carbamazepine to 600 mg twice daily",
+                "Add levetiracetam 500 mg twice daily",
+                "Switch to phenytoin 300 mg daily",
+                "Add valproate 500 mg twice daily"
+              ],
+              "answer": "Add levetiracetam 500 mg twice daily",
+              "explanation": "Adding a second antiepileptic drug with a different mechanism (e.g., levetiracetam) is appropriate for breakthrough seizures on monotherapy."
+            },
+            {
+              "stem": "A 55-year-old male with Parkinson’s disease on levodopa-carbidopa 25/100 mg three times daily develops hallucinations. Which of the following is the MOST appropriate management?",
+              "options": [
+                "Increase levodopa-carbidopa dose",
+                "Add quetiapine 25 mg at bedtime",
+                "Switch to pramipexole 0.5 mg three times daily",
+                "Add benztropine 1 mg twice daily"
+              ],
+              "answer": "Add quetiapine 25 mg at bedtime",
+              "explanation": "Quetiapine is an atypical antipsychotic with low risk of worsening Parkinson’s motor symptoms and is effective for levodopa-induced hallucinations."
+            },
+            {
+              "stem": "A 30-year-old female with a history of migraines presents with a new-onset aura consisting of flashing lights and zigzag lines. She has no prior history of aura. Which of the following is the MOST appropriate management?",
+              "options": [
+                "Continue current acute migraine therapy",
+                "Add topiramate 25 mg daily for prophylaxis",
+                "Switch to propranolol 40 mg twice daily",
+                "Discontinue all migraine medications"
+              ],
+              "answer": "Add topiramate 25 mg daily for prophylaxis",
+              "explanation": "Topiramate is a first-line prophylactic agent for migraine with aura, reducing both frequency and severity of attacks."
+            },
+            {
+              "stem": "A 60-year-old female with T2DM and chronic kidney disease (eGFR 30 mL/min/1.73m²) presents with an HbA1c of 8.5%. Which of the following is the MOST appropriate therapy?",
+              "options": [
+                "Metformin 1000 mg twice daily",
+                "Empagliflozin 10 mg daily",
+                "Glipizide 5 mg daily",
+                "Insulin glargine 10 units at bedtime"
+              ],
+              "answer": "Insulin glargine 10 units at bedtime",
+              "explanation": "Insulin is the safest and most effective option in T2DM with moderate-to-severe CKD, as metformin and SGLT2 inhibitors are contraindicated or less effective."
+            },
+            {
+              "stem": "A 45-year-old male with schizophrenia is started on risperidone 2 mg twice daily. After 2 weeks, he develops gynecomastia and galactorrhea. Which of the following is the MOST likely cause?",
+              "options": [
+                "Hyperprolactinemia due to dopamine D2 blockade",
+                "Weight gain and metabolic syndrome",
+                "Serotonin syndrome",
+                "Neuroleptic malignant syndrome"
+              ],
+              "answer": "Hyperprolactinemia due to dopamine D2 blockade",
+              "explanation": "Risperidone is a high-affinity D2 antagonist, leading to hyperprolactinemia and associated symptoms like gynecomastia and galactorrhea."
+            },
+            {
+              "stem": "A 50-year-old female with bipolar disorder is stabilized on lithium 900 mg/day (serum level 0.8 mEq/L). She develops tremors and ataxia. Which of the following is the MOST appropriate management?",
+              "options": [
+                "Reduce lithium dose to 600 mg/day",
+                "Add propranolol 10 mg three times daily",
+                "Switch to valproate 500 mg twice daily",
+                "Increase fluid intake to 3 L/day"
+              ],
+              "answer": "Reduce lithium dose to 600 mg/day",
+              "explanation": "Tremors and ataxia are common signs of lithium toxicity; reducing the dose often resolves symptoms while maintaining mood stability."
+            },
+            {
+              "stem": "A 25-year-old male with T1DM presents with recurrent episodes of hypoglycemia despite adjusting his insulin regimen. His HbA1c is 6.5%. Which of the following is the MOST likely cause?",
+              "options": [
+                "Excessive carbohydrate intake",
+                "Impaired counter-regulatory hormone response",
+                "Overuse of insulin pens",
+                "Chronic kidney disease"
+              ],
+              "answer": "Impaired counter-regulatory hormone response",
+              "explanation": "In T1DM, recurrent hypoglycemia can lead to hypoglycemia unawareness and impaired counter-regulatory responses (e.g., glucagon and epinephrine), increasing hypoglycemia risk."
+            },
+            {
+              "stem": "A 60-year-old male with osteoporosis presents with a T-score of -2.8 at the femoral neck. He is currently on alendronate 70 mg weekly. Which of the following is the MOST appropriate next step?",
+              "options": [
+                "Increase alendronate to 140 mg weekly",
+                "Add denosumab 60 mg every 6 months",
+                "Switch to raloxifene 60 mg daily",
+                "Add teriparatide 20 mcg daily"
+              ],
+              "answer": "Add denosumab 60 mg every 6 months",
+              "explanation": "Denosumab is a second-line agent for osteoporosis with proven efficacy in reducing fracture risk, especially in patients with high fracture risk or intolerance to bisphosphonates."
+            },
+            {
+              "stem": "A 35-year-old female with depression is started on fluoxetine 20 mg daily. After 4 weeks, she reports no improvement. Which of the following is the MOST appropriate next step?",
+              "options": [
+                "Increase fluoxetine to 40 mg daily",
+                "Switch to venlafaxine 75 mg daily",
+                "Add bupropion 150 mg daily",
+                "Continue fluoxetine and reassess in 4 weeks"
+              ],
+              "answer": "Continue fluoxetine and reassess in 4 weeks",
+              "explanation": "Antidepressants may take 4–6 weeks to achieve full therapeutic effect; continuing the current regimen and reassessing is appropriate before switching."
+            },
+            {
+              "stem": "A 50-year-old male with schizophrenia is started on olanzapine 10 mg daily. After 4 weeks, he gains 5 kg. Which of the following is the MOST appropriate management?",
+              "options": [
+                "Switch to aripiprazole 15 mg daily",
+                "Add metformin 500 mg twice daily",
+                "Continue olanzapine and monitor weight",
+                "Add topiramate 25 mg daily"
+              ],
+              "answer": "Add metformin 500 mg twice daily",
+              "explanation": "Metformin is effective in mitigating olanzapine-induced weight gain and improving insulin resistance in patients with schizophrenia."
+            },
+            {
+              "stem": "A 28-year-old female with epilepsy on carbamazepine 400 mg twice daily presents with a seizure. Her serum carbamazepine level is 6 mcg/mL (therapeutic range 4–12 mcg/mL). Which of the following is the MOST appropriate next step?",
+              "options": [
+                "Increase carbamazepine to 600 mg twice daily",
+                "Add levetiracetam 500 mg twice daily",
+                "Switch to phenytoin 300 mg daily",
+                "Add valproate 500 mg twice daily"
+              ],
+              "answer": "Add levetiracetam 500 mg twice daily",
+              "explanation": "Adding a second antiepileptic drug with a different mechanism (e.g., levetiracetam) is appropriate for breakthrough seizures on monotherapy."
+            },
+            {
+              "stem": "A 55-year-old male with Parkinson’s disease on levodopa-carbidopa 25/100 mg three times daily develops hallucinations. Which of the following is the MOST appropriate management?",
+              "options": [
+                "Increase levodopa-carbidopa dose",
+                "Add quetiapine 25 mg at bedtime",
+                "Switch to pramipexole 0.5 mg three times daily",
+                "Add benztropine 1 mg twice daily"
+              ],
+              "answer": "Add quetiapine 25 mg at bedtime",
+              "explanation": "Quetiapine is an atypical antipsychotic with low risk of worsening Parkinson’s motor symptoms and is effective for levodopa-induced hallucinations."
+            },
+            {
+              "stem": "A 30-year-old female with a history of migraines presents with a new-onset aura consisting of flashing lights and zigzag lines. She has no prior history of aura. Which of the following is the MOST appropriate management?",
+              "options": [
+                "Continue current acute migraine therapy",
+                "Add topiramate 25 mg daily for prophylaxis",
+                "Switch to propranolol 40 mg twice daily",
+                "Discontinue all migraine medications"
+              ],
+              "answer": "Add topiramate 25 mg daily for prophylaxis",
+              "explanation": "Topiramate is a first-line prophylactic agent for migraine with aura, reducing both frequency and severity of attacks."
+            },
+            {
+              "stem": "A 60-year-old female with T2DM and chronic kidney disease (eGFR 30 mL/min/1.73m²) presents with an HbA1c of 8.5%. Which of the following is the MOST appropriate therapy?",
+              "options": [
+                "Metformin 1000 mg twice daily",
+                "Empagliflozin 10 mg daily",
+                "Glipizide 5 mg daily",
+                "Insulin glargine 10 units at bedtime"
+              ],
+              "answer": "Insulin glargine 10 units at bedtime",
+              "explanation": "Insulin is the safest and most effective option in T2DM with moderate-to-severe CKD, as metformin and SGLT2 inhibitors are contraindicated or less effective."
+            },
+            {
+              "stem": "A 45-year-old male with schizophrenia is started on risperidone 2 mg twice daily. After 2 weeks, he develops gynecomastia and galactorrhea. Which of the following is the MOST likely cause?",
+              "options": [
+                "Hyperprolactinemia due to dopamine D2 blockade",
+                "Weight gain and metabolic syndrome",
+                "Serotonin syndrome",
+                "Neuroleptic malignant syndrome"
+              ],
+              "answer": "Hyperprolactinemia due to dopamine D2 blockade",
+              "explanation": "Risperidone is a high-affinity D2 antagonist, leading to hyperprolactinemia and associated symptoms like gynecomastia and galactorrhea."
+            },
+            {
+              "stem": "A 50-year-old female with bipolar disorder is stabilized on lithium 900 mg/day (serum level 0.8 mEq/L). She develops tremors and ataxia. Which of the following is the MOST appropriate management?",
+              "options": [
+                "Reduce lithium dose to 600 mg/day",
+                "Add propranolol 10 mg three times daily",
+                "Switch to valproate 500 mg twice daily",
+                "Increase fluid intake to 3 L/day"
+              ],
+              "answer": "Reduce lithium dose to 600 mg/day",
+              "explanation": "Tremors and ataxia are common signs of lithium toxicity; reducing the dose often resolves symptoms while maintaining mood stability."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "a) List four (4) non-motor symptoms of Parkinson’s disease. (4 marks)\n\nb) Explain two (2) mechanisms by which these symptoms arise. (6 marks)",
+              "modelAnswer": "a) Non-motor symptoms of Parkinson’s disease include:\n1. Cognitive impairment/dementia\n2. Depression and anxiety\n3. Sleep disturbances (e.g., REM sleep behavior disorder, insomnia)\n4. Autonomic dysfunction (e.g., orthostatic hypotension, constipation, urinary incontinence)\n5. Sensory symptoms (e.g., pain, paresthesia)\n6. Fatigue\n\nb) Mechanisms underlying non-motor symptoms:\n1. **Neurodegeneration beyond dopaminergic neurons**: Parkinson’s disease involves progressive loss of neurons in non-dopaminergic systems (e.g., serotonergic, noradrenergic, cholinergic), contributing to mood disorders, sleep disturbances, and cognitive impairment.\n2. **Alpha-synuclein pathology**: Lewy body accumulation in limbic and cortical regions disrupts neural circuits, leading to cognitive decline, psychiatric symptoms, and autonomic dysfunction.\n3. **Neuroinflammation and oxidative stress**: Chronic neuroinflammation and mitochondrial dysfunction may exacerbate neuronal damage in non-dopaminergic pathways, worsening non-motor symptoms."
+            },
+            {
+              "stem": "a) Compare and contrast tension-type headache and migraine headache in terms of clinical presentation. (4 marks)\n\nb) Identify two (2) abortive therapies for tension-type headache and two (2) for migraine. (4 marks)\n\nc) Explain why triptans are contraindicated in patients with coronary artery disease. (2 marks)",
+              "modelAnswer": "a) Clinical presentation differences:\n- **Tension-type headache**: Typically bilateral, pressing/tightening quality, mild-to-moderate intensity, not aggravated by routine physical activity, no nausea/vomiting, and no photophobia/phonophobia.\n- **Migraine headache**: Usually unilateral, throbbing/pulsating quality, moderate-to-severe intensity, aggravated by routine physical activity, associated with nausea/vomiting, and photophobia/phonophobia. May include aura (e.g., visual disturbances).\n\nb) Abortive therapies:\n- **Tension-type headache**:\n  1. Ibuprofen 400–800 mg orally\n  2. Acetaminophen 1000 mg orally\n- **Migraine headache**:\n  1. Sumatriptan 50–100 mg orally\n  2. Rizatriptan 10 mg orally\n\nc) Triptans are contraindicated in coronary artery disease because they are selective serotonin 5-HT1B/1D agonists that cause vasoconstriction. This can exacerbate coronary vasospasm or ischemia, increasing the risk of angina, myocardial infarction, or other cardiovascular events."
+            },
+            {
+              "stem": "a) List four (4) strategies used in the management of raised intracranial pressure (ICP) associated with traumatic brain injury (TBI). (4 marks)\n\nb) Explain the rationale for each strategy. (8 marks)",
+              "modelAnswer": "a) Strategies for managing raised ICP in TBI:\n1. Head elevation to 30 degrees\n2. Mannitol 20% 0.25–1 g/kg IV bolus\n3. Hypertonic saline (e.g., 3% NaCl 250 mL IV)\n4. Hyperventilation (target PaCO2 30–35 mmHg)\n5. Barbiturate coma (e.g., pentobarbital)\n6. Surgical decompression (e.g., hemicraniectomy)\n\nb) Rationale for each strategy:\n1. **Head elevation**: Improves venous drainage from the brain, reducing cerebral blood volume and ICP.\n2. **Mannitol**: Osmotic diuretic that draws water from brain parenchyma into the intravascular space, reducing ICP. Requires monitoring for renal function and electrolyte imbalances.\n3. **Hypertonic saline**: Creates an osmotic gradient to reduce brain water content and improve cerebral perfusion pressure (CPP). More effective in patients with hyponatremia.\n4. **Hyperventilation**: Reduces PaCO2, causing cerebral vasoconstriction and decreased cerebral blood volume, thereby lowering ICP. Short-term use only due to risk of cerebral ischemia.\n5. **Barbiturate coma**: Induces cerebral metabolic suppression, reducing cerebral oxygen demand and blood flow, which lowers ICP. Requires ICU monitoring for hypotension and infection risk.\n6. **Surgical decompression**: Removes a portion of the skull to allow brain expansion, reducing ICP in refractory cases."
+            },
+            {
+              "stem": "a) Identify four (4) modifiable risk factors for ischemic stroke. (4 marks)\n\nb) Explain how each risk factor contributes to stroke risk. (8 marks)",
+              "modelAnswer": "a) Modifiable risk factors for ischemic stroke:\n1. Hypertension\n2. Diabetes mellitus\n3. Dyslipidemia\n4. Atrial fibrillation\n5. Tobacco smoking\n6. Obesity\n7. Physical inactivity\n\nb) Contribution to stroke risk:\n1. **Hypertension**: Chronic high blood pressure damages cerebral arteries, leading to atherosclerosis, lacunar infarcts, and hypertensive hemorrhages.\n2. **Diabetes mellitus**: Hyperglycemia promotes endothelial dysfunction, atherosclerosis, and hypercoagulability, increasing the risk of thromboembolic events.\n3. **Dyslipidemia**: Elevated LDL cholesterol and low HDL contribute to atherosclerosis in cerebral arteries, increasing the risk of plaque rupture and thrombosis.\n4. **Atrial fibrillation**: Promotes blood stasis in the left atrium, leading to clot formation and embolization to cerebral arteries.\n5. **Tobacco smoking**: Damages endothelial cells, increases platelet aggregation, and promotes atherosclerosis, all of which elevate stroke risk.\n6. **Obesity**: Contributes to hypertension, diabetes, and dyslipidemia, all of which are independent risk factors for ischemic stroke.\n7. **Physical inactivity**: Reduces cardiovascular fitness, promotes obesity, and worsens metabolic risk factors, indirectly increasing stroke risk."
+            },
+            {
+              "stem": "a) List four (4) acute effects of marijuana use. (4 marks)\n\nb) Explain the mechanism underlying each effect. (8 marks)",
+              "modelAnswer": "a) Acute effects of marijuana use:\n1. Euphoria and relaxation\n2. Altered perception (e.g., time distortion, enhanced sensory perception)\n3. Impaired short-term memory and cognitive function\n4. Increased appetite (\"the munchies\")\n5. Dry mouth and red eyes\n6. Tachycardia and increased blood pressure\n7. Coordination impairment and slowed reaction time\n\nb) Mechanisms underlying these effects:\n1. **Euphoria and relaxation**: Δ9-tetrahydrocannabinol (THC) binds to CB1 receptors in the brain’s reward system (e.g., ventral tegmental area, nucleus accumbens), increasing dopamine release and producing pleasurable effects.\n2. **Altered perception**: THC modulates activity in the prefrontal cortex and sensory processing areas, leading to distortions in time perception, sensory enhancement, and hallucinations at high doses.\n3. **Impaired short-term memory**: THC disrupts hippocampal function by inhibiting glutamate release and reducing synaptic plasticity, impairing memory encoding and recall.\n4. **Increased appetite**: THC activates CB1 receptors in the hypothalamus, stimulating the release of ghrelin (hunger hormone) and increasing food intake.\n5. **Dry mouth and red eyes**: THC reduces saliva production by inhibiting parasympathetic activity in salivary glands and causes vasodilation in conjunctival blood vessels, leading to red eyes.\n6. **Tachycardia and increased blood pressure**: THC stimulates the sympathetic nervous system and inhibits parasympathetic activity, leading to increased heart rate and blood pressure.\n7. **Coordination impairment**: THC disrupts cerebellar function by interfering with GABAergic and glutamatergic neurotransmission, impairing motor coordination and reaction time."
+            },
+            {
+              "stem": "a) Identify four (4) key differences between type 1 and type 2 diabetes mellitus. (4 marks)\n\nb) Explain the pathophysiological basis for each difference. (8 marks)",
+              "modelAnswer": "a) Key differences between type 1 and type 2 diabetes mellitus:\n1. **Age of onset**: Type 1 typically presents in childhood/adolescence; type 2 in adulthood (often >40 years).\n2. **Autoimmunity**: Type 1 is autoimmune-mediated (anti-islet antibodies); type 2 is not autoimmune.\n3. **Insulin dependence**: Type 1 requires lifelong insulin therapy; type 2 may initially be managed with oral agents.\n4. **Body habitus**: Type 1 is often lean; type 2 is typically obese or overweight.\n5. **Ketoacidosis risk**: Type 1 has high risk of diabetic ketoacidosis (DKA); type 2 has low risk unless severely stressed.\n6. **Genetic predisposition**: Type 1 has weaker genetic links; type 2 has strong familial clustering.\n\nb) Pathophysiological basis:\n1. **Age of onset**: Type 1 results from autoimmune destruction of pancreatic β-cells, leading to absolute insulin deficiency; type 2 arises from insulin resistance and relative β-cell dysfunction, which develops over time.\n2. **Autoimmunity**: Type 1 involves T-cell-mediated destruction of β-cells (e.g., presence of anti-GAD65, anti-IA2, or anti-insulin antibodies); type 2 lacks autoimmune markers and is driven by metabolic factors (e.g., obesity, inflammation).\n3. **Insulin dependence**: Type 1 leads to near-total β-cell loss, necessitating exogenous insulin; type 2 initially retains some β-cell function, allowing oral agents to improve insulin sensitivity or secretion.\n4. **Body habitus**: Type 1 is not associated with obesity; type 2 is strongly linked to insulin resistance, which is exacerbated by adiposity (especially visceral fat).\n5. **Ketoacidosis risk**: Type 1 lacks insulin, leading to unopposed lipolysis and ketone production; type 2 retains some insulin, which suppresses ketogenesis even in hyperglycemia.\n6. **Genetic predisposition**: Type 1 has HLA-DR3/DR4 associations; type 2 involves polygenic risk factors (e.g., TCF7L2, PPARG) and environmental triggers (e.g., diet, sedentary lifestyle)."
+            },
+            {
+              "stem": "a) List four (4) adverse effects of long-term corticosteroid use. (4 marks)\n\nb) Explain the mechanism underlying each adverse effect. (8 marks)",
+              "modelAnswer": "a) Adverse effects of long-term corticosteroid use:\n1. Osteoporosis and increased fracture risk\n2. Hyperglycemia and diabetes mellitus\n3. Hypertension\n4. Cataracts and glaucoma\n5. Adrenal suppression\n6. Weight gain and central obesity\n7. Immunosuppression and increased infection risk\n8. Skin thinning and easy bruising\n\nb) Mechanisms underlying these adverse effects:\n1. **Osteoporosis**: Corticosteroids inhibit osteoblast activity, increase osteoclast survival, and reduce calcium absorption in the gut, leading to bone loss and increased fracture risk.\n2. **Hyperglycemia**: Corticosteroids antagonize insulin action, promote gluconeogenesis in the liver, and reduce glucose uptake in peripheral tissues, leading to insulin resistance and hyperglycemia.\n3. **Hypertension**: Corticosteroids enhance sodium and water retention by the kidneys, increase vascular sensitivity to catecholamines, and promote vasoconstriction, raising blood pressure.\n4. **Cataracts and glaucoma**: Corticosteroids accumulate in the lens and trabecular meshwork, leading to protein denaturation (cataracts) and reduced aqueous humor outflow (glaucoma).\n5. **Adrenal suppression**: Chronic corticosteroid use suppresses hypothalamic-pituitary-adrenal (HPA) axis function, reducing endogenous cortisol production and leading to adrenal insufficiency during stress or withdrawal.\n6. **Weight gain and central obesity**: Corticosteroids stimulate appetite (via hypothalamic effects) and promote lipogenesis in visceral fat depots, leading to central obesity and weight gain.\n7. **Immunosuppression**: Corticosteroids inhibit immune cell proliferation, cytokine production, and antigen presentation, increasing susceptibility to infections (e.g., bacterial, fungal, viral).\n8. **Skin thinning and easy bruising**: Corticosteroids reduce collagen synthesis in the skin, leading to atrophy, reduced tensile strength, and increased fragility."
+            },
+            {
+              "stem": "a) Identify four (4) counseling points for a patient starting on metformin for type 2 diabetes mellitus. (4 marks)\n\nb) Explain the rationale for each counseling point. (8 marks)",
+              "modelAnswer": "a) Counseling points for metformin:\n1. Take metformin with meals to reduce gastrointestinal (GI) side effects.\n2. Start with a low dose (e.g., 500 mg once or twice daily) and titrate slowly to minimize GI upset.\n3. Monitor for symptoms of lactic acidosis (e.g., muscle pain, difficulty breathing, drowsiness) and seek medical attention if they occur.\n4. Avoid excessive alcohol consumption to reduce the risk of lactic acidosis.\n5. Regularly monitor blood glucose and HbA1c as directed by your healthcare provider.\n6. Maintain a healthy diet and exercise regimen to optimize metformin’s effects.\n7. Report any persistent GI symptoms (e.g., nausea, diarrhea) to your healthcare provider.\n\nb) Rationale for each counseling point:\n1. **Take with meals**: Metformin’s GI side effects (e.g., nausea, diarrhea) are dose-related and can be minimized by taking it with food.\n2. **Start low and titrate**: Slow titration reduces the incidence and severity of GI side effects, improving tolerability and adherence.\n3. **Monitor for lactic acidosis**: Metformin can rarely cause lactic acidosis, especially in patients with renal impairment, hypoxia, or sepsis. Early recognition and intervention are critical.\n4. **Avoid excessive alcohol**: Alcohol increases the risk of lactic acidosis by impairing lactate metabolism and promoting dehydration.\n5. **Monitor blood glucose and HbA1c**: Regular monitoring ensures the medication is effective and allows for dose adjustments as needed.\n6. **Healthy diet and exercise**: Lifestyle modifications enhance metformin’s glucose-lowering effects and reduce the risk of complications.\n7. **Report persistent GI symptoms**: Persistent GI side effects may necessitate dose adjustment, formulation change, or alternative therapy."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 42-year-old male with a history of poorly controlled type 2 diabetes mellitus (T2DM) presents to the emergency department with confusion, polyuria, and polydipsia. His capillary blood glucose is 35 mmol/L, and his serum bicarbonate is 12 mmol/L. His blood pressure is 90/60 mmHg, heart rate is 120 bpm, and respiratory rate is 28 breaths/minute. His temperature is 37.2°C. He reports no recent illness or medication changes. His current medications include metformin 1000 mg twice daily, gliclazide 80 mg twice daily, and atorvastatin 20 mg at bedtime.\n\na) What is the most likely diagnosis? Provide three (3) supporting clinical features. (6 marks)\n\nb) Outline the immediate management plan for this patient, including fluid resuscitation, insulin therapy, and electrolyte monitoring. (9 marks)",
+              "modelAnswer": "a) Most likely diagnosis: **Hyperosmolar Hyperglycemic State (HHS)**.\n\nSupporting clinical features:\n1. **Severe hyperglycemia (35 mmol/L)**: Indicates profound insulin deficiency and osmotic diuresis, leading to dehydration and hyperosmolarity.\n2. **Serum bicarbonate 12 mmol/L**: Mild metabolic acidosis suggests lactic acidosis secondary to tissue hypoperfusion and hypoxia, rather than diabetic ketoacidosis (DKA), which typically presents with a bicarbonate <15 mmol/L and ketonemia.\n3. **Hypotension (90/60 mmHg) and tachycardia (120 bpm)**: Reflects hypovolemia and compensatory sympathetic activation due to osmotic diuresis and dehydration.\n\nb) Immediate management plan:\n\n**1. Fluid resuscitation:**\n- **Initial bolus**: 0.9% normal saline (NS) 1000 mL over 1 hour (if hypotensive or severe dehydration).\n- **Subsequent fluids**: 0.9% NS at 250–500 mL/hour, adjusted based on hemodynamic status and serum sodium.\n- **Goal**: Achieve euvolemia within 24–48 hours. Avoid rapid correction to prevent cerebral edema.\n- **Monitor**: Vital signs, urine output, and fluid balance.\n\n**2. Insulin therapy:**\n- **Initial**: Regular insulin 0.1 units/kg IV bolus (e.g., 7 units for a 70 kg patient), followed by 0.1 units/kg/hour continuous IV infusion.\n- **Target**: Reduce blood glucose by 3–5 mmol/L/hour until <14 mmol/L, then transition to subcutaneous insulin.\n- **Monitor**: Blood glucose every 1–2 hours initially, then every 4–6 hours once stable.\n- **Caution**: Avoid insulin bolus in patients with HHS due to risk of rapid osmolar shifts and cerebral edema.\n\n**3. Electrolyte monitoring and correction:**\n- **Potassium (K+)**: Monitor every 2–4 hours. Replace K+ if serum K+ <5.0 mmol/L (e.g., 20–40 mmol/L in each liter of IV fluid if urine output is adequate).\n- **Phosphate**: Monitor and replace if <0.5 mmol/L (e.g., potassium phosphate 20–30 mmol/L in IV fluids).\n- **Magnesium**: Monitor and replace if <0.7 mmol/L (e.g., magnesium sulfate 2–4 g IV over 4–6 hours).\n- **Sodium**: Monitor serum sodium and osmolality. Avoid rapid correction to prevent osmotic demyelination syndrome.\n\n**4. Additional considerations:**\n- **Identify and treat precipitating factors**: E.g., infection, myocardial infarction, or medication non-adherence.\n- **Thromboprophylaxis**: Consider low-molecular-weight heparin (e.g., enoxaparin 40 mg subcut daily) due to hypercoagulable state.\n- **Monitor for complications**: E.g., cerebral edema, acute kidney injury, or arrhythmias.\n- **Transition to oral therapy**: Once hemodynamically stable and blood glucose <11 mmol/L, transition to subcutaneous insulin or oral agents (e.g., metformin, if renal function allows)."
+            },
+            {
+              "stem": "A 65-year-old female with a history of bipolar disorder presents to the clinic for follow-up. She has been stabilized on lithium carbonate 900 mg/day (serum level 0.8 mEq/L) for 5 years. She reports increased thirst, frequent urination, and occasional tremors. Her serum creatinine is 1.4 mg/dL (eGFR 45 mL/min/1.73m²), and her thyroid-stimulating hormone (TSH) is 6.2 mIU/L (normal 0.4–4.0 mIU/L). She also reports a 5 kg weight gain over the past 6 months.\n\na) Identify three (3) potential adverse effects of lithium therapy in this patient. (6 marks)\n\nb) Outline a monitoring plan for this patient, including laboratory tests and clinical assessments. (9 marks)",
+              "modelAnswer": "a) Potential adverse effects of lithium therapy:\n1. **Nephrogenic diabetes insipidus (NDI)**: Lithium impairs the action of antidiuretic hormone (ADH) in the collecting ducts, leading to polyuria, polydipsia, and dilute urine. Chronic NDI can result in chronic kidney disease (CKD).\n2. **Hypothyroidism**: Lithium inhibits thyroid hormone synthesis and release, leading to elevated TSH and clinical hypothyroidism (e.g., fatigue, weight gain, cold intolerance).\n3. **Tremor**: Fine hand tremor is a common early adverse effect of lithium, often dose-related. It may worsen with toxicity or interactions with other medications.\n4. **Chronic kidney disease (CKD)**: Long-term lithium use can lead to interstitial nephritis and reduced glomerular filtration rate (GFR), as evidenced by her elevated serum creatinine (1.4 mg/dL).\n5. **Weight gain**: Lithium can cause metabolic changes, including increased appetite and weight gain, contributing to her 5 kg increase.\n\n\nb) Monitoring plan for this patient:\n\n**1. Laboratory monitoring:**\n- **Serum lithium levels**: Monitor every 3–6 months or after dose adjustments. Target therapeutic range: 0.6–1.2 mEq/L (lower range for maintenance).\n- **Renal function**: Monitor serum creatinine and eGFR every 6–12 months to assess for CKD progression.\n- **Thyroid function**: Monitor TSH, free T4, and free T3 every 6–12 months to screen for hypothyroidism.\n- **Electrolytes**: Monitor sodium, potassium, and calcium levels annually or as indicated.\n- **Urinalysis**: Check for proteinuria, glycosuria, or signs of urinary tract infection (UTI) annually.\n\n**2. Clinical assessments:**\n- **Symptom review**: Assess for polyuria, polydipsia, tremor, weight changes, and mood stability at each visit.\n- **Blood pressure**: Monitor for hypertension, which may indicate CKD progression.\n- **Neurological examination**: Check for signs of lithium toxicity (e.g., ataxia, confusion, hyperreflexia).\n- **Body weight**: Monitor weight at each visit to assess for metabolic changes or fluid retention.\n\n**3. Additional considerations:**\n- **Dietary counseling**: Advise adequate hydration (2–3 L/day) to mitigate polyuria and reduce the risk of CKD progression.\n- **Medication review**: Evaluate for drug interactions (e.g., NSAIDs, diuretics) that may increase lithium levels or worsen renal function.\n- **Patient education**: Counsel on signs of lithium toxicity (e.g., nausea, diarrhea, tremor, confusion) and the importance of regular monitoring.\n- **Consider dose reduction or alternative therapy**: If CKD progresses (e.g., eGFR <30 mL/min/1.73m²) or lithium toxicity occurs, consider reducing the dose or switching to an alternative mood stabilizer (e.g., lamotrigine)."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

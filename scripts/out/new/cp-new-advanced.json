@@ -1,0 +1,1227 @@
+{
+  "cp-new-advanced": {
+    "1": {
+      "title": "Advanced Clinical Pharmacy: Oncology & Toxicology",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 62-year-old male with metastatic colorectal cancer is started on FOLFOX regimen (5-fluorouracil, leucovorin, oxaliplatin). Which of the following is the primary mechanism of action of 5-fluorouracil?",
+              "options": [
+                "a. Inhibits dihydrofolate reductase, disrupting purine synthesis",
+                "b. Forms covalent bonds with DNA, causing strand breaks",
+                "c. Inhibits thymidylate synthase, blocking pyrimidine synthesis",
+                "d. Binds to tubulin, inhibiting microtubule assembly"
+              ],
+              "answer": "c. Inhibits thymidylate synthase, blocking pyrimidine synthesis",
+              "explanation": "5-fluorouracil is a pyrimidine analog that inhibits thymidylate synthase, thereby blocking DNA synthesis and repair."
+            },
+            {
+              "stem": "A patient receiving doxorubicin for breast cancer develops progressive dyspnea and peripheral edema. Echocardiography reveals an ejection fraction of 40%. Which of the following is the most likely cause of this cardiotoxicity?",
+              "options": [
+                "a. Acute hypersensitivity reaction",
+                "b. Cumulative dose-related cardiomyopathy",
+                "c. Drug-induced QT prolongation",
+                "d. Pericardial effusion secondary to radiation"
+              ],
+              "answer": "b. Cumulative dose-related cardiomyopathy",
+              "explanation": "Doxorubicin causes dose-dependent cardiotoxicity due to oxidative stress and mitochondrial damage, leading to irreversible cardiomyopathy."
+            },
+            {
+              "stem": "A 55-year-old female with non-Hodgkin lymphoma receives rituximab as part of her chemotherapy. Which of the following is the primary target of rituximab?",
+              "options": [
+                "a. CD3 antigen on T-cells",
+                "b. CD20 antigen on B-cells",
+                "c. HER2 receptor on breast cancer cells",
+                "d. VEGF receptor on endothelial cells"
+              ],
+              "answer": "b. CD20 antigen on B-cells",
+              "explanation": "Rituximab is a monoclonal antibody targeting CD20, a cell surface protein expressed on B-cells, leading to their depletion."
+            },
+            {
+              "stem": "A patient receiving cisplatin for testicular cancer develops tinnitus and hearing loss. Which of the following is the most appropriate management strategy?",
+              "options": [
+                "a. Discontinue cisplatin immediately and switch to carboplatin",
+                "b. Administer high-dose dexamethasone to reduce ototoxicity",
+                "c. Perform audiometry and reduce cisplatin dose if ototoxicity is confirmed",
+                "d. Administer amifostine as a chemoprotectant"
+              ],
+              "answer": "c. Perform audiometry and reduce cisplatin dose if ototoxicity is confirmed",
+              "explanation": "Cisplatin-induced ototoxicity is dose-dependent; audiometry should be performed to assess severity, and dose reduction or discontinuation may be necessary."
+            },
+            {
+              "stem": "A 48-year-old male with metastatic prostate cancer is started on abiraterone. Which of the following is the primary mechanism of action of abiraterone?",
+              "options": [
+                "a. Inhibits androgen receptor directly",
+                "b. Inhibits CYP17A1, reducing androgen synthesis",
+                "c. Blocks estrogen receptors in prostate tissue",
+                "d. Inhibits 5-alpha-reductase, reducing dihydrotestosterone levels"
+              ],
+              "answer": "b. Inhibits CYP17A1, reducing androgen synthesis",
+              "explanation": "Abiraterone inhibits CYP17A1, an enzyme critical for androgen biosynthesis, thereby reducing testosterone and dihydrotestosterone levels."
+            },
+            {
+              "stem": "A patient receiving high-dose methotrexate for osteosarcoma develops mucositis and myelosuppression. Which of the following is the most appropriate rescue therapy?",
+              "options": [
+                "a. Filgrastim to stimulate neutrophil recovery",
+                "b. Leucovorin to rescue normal cells from methotrexate toxicity",
+                "c. Dexamethasone to reduce inflammation",
+                "d. Amifostine to protect against mucositis"
+              ],
+              "answer": "b. Leucovorin to rescue normal cells from methotrexate toxicity",
+              "explanation": "Leucovorin is a folinic acid derivative that rescues normal cells from methotrexate-induced toxicity by bypassing the inhibited dihydrofolate reductase."
+            },
+            {
+              "stem": "A 30-year-old female with acute lymphoblastic leukemia receives vincristine. Which of the following is the most likely adverse effect of vincristine?",
+              "options": [
+                "a. Nephrotoxicity",
+                "b. Peripheral neuropathy",
+                "c. Cardiotoxicity",
+                "d. Pulmonary fibrosis"
+              ],
+              "answer": "b. Peripheral neuropathy",
+              "explanation": "Vincristine, a vinca alkaloid, causes dose-dependent peripheral neuropathy due to disruption of microtubule function in sensory and motor nerves."
+            },
+            {
+              "stem": "A patient receiving cyclophosphamide develops hemorrhagic cystitis. Which of the following is the most appropriate management strategy?",
+              "options": [
+                "a. Administer mesna to neutralize acrolein, the toxic metabolite",
+                "b. Discontinue cyclophosphamide and switch to ifosfamide",
+                "c. Administer furosemide to increase urine output",
+                "d. Administer allopurinol to reduce uric acid levels"
+              ],
+              "answer": "a. Administer mesna to neutralize acrolein, the toxic metabolite",
+              "explanation": "Mesna is a chemoprotectant that binds acrolein, the toxic metabolite of cyclophosphamide, reducing the risk of hemorrhagic cystitis."
+            },
+            {
+              "stem": "A 60-year-old male with chronic myeloid leukemia receives imatinib. Which of the following is the primary mechanism of action of imatinib?",
+              "options": [
+                "a. Inhibits BCR-ABL tyrosine kinase, blocking proliferation",
+                "b. Inhibits topoisomerase II, causing DNA strand breaks",
+                "c. Binds to estrogen receptors, reducing tumor growth",
+                "d. Inhibits dihydrofolate reductase, disrupting purine synthesis"
+              ],
+              "answer": "a. Inhibits BCR-ABL tyrosine kinase, blocking proliferation",
+              "explanation": "Imatinib is a tyrosine kinase inhibitor that specifically targets the BCR-ABL fusion protein, a hallmark of chronic myeloid leukemia."
+            },
+            {
+              "stem": "A patient receiving paclitaxel for ovarian cancer develops severe neutropenia. Which of the following is the most appropriate supportive care measure?",
+              "options": [
+                "a. Administer filgrastim to stimulate neutrophil recovery",
+                "b. Administer pegfilgrastim to reduce the duration of neutropenia",
+                "c. Discontinue paclitaxel and switch to docetaxel",
+                "d. Administer dexamethasone to reduce inflammation"
+              ],
+              "answer": "b. Administer pegfilgrastim to reduce the duration of neutropenia",
+              "explanation": "Pegfilgrastim is a long-acting granulocyte colony-stimulating factor (G-CSF) that reduces the duration of chemotherapy-induced neutropenia."
+            },
+            {
+              "stem": "A 50-year-old female with metastatic breast cancer receives trastuzumab. Which of the following is the primary mechanism of action of trastuzumab?",
+              "options": [
+                "a. Inhibits estrogen receptors",
+                "b. Binds to HER2 receptors, inhibiting tumor growth",
+                "c. Inhibits aromatase, reducing estrogen synthesis",
+                "d. Blocks VEGF receptors, reducing angiogenesis"
+              ],
+              "answer": "b. Binds to HER2 receptors, inhibiting tumor growth",
+              "explanation": "Trastuzumab is a monoclonal antibody that targets HER2, a receptor overexpressed in certain breast cancers, inhibiting tumor cell proliferation."
+            },
+            {
+              "stem": "A patient receiving bleomycin for Hodgkin lymphoma develops pulmonary toxicity. Which of the following is the most appropriate management strategy?",
+              "options": [
+                "a. Discontinue bleomycin immediately and switch to doxorubicin",
+                "b. Administer corticosteroids to reduce inflammation",
+                "c. Perform pulmonary function tests and reduce bleomycin dose if toxicity is confirmed",
+                "d. Administer amifostine as a chemoprotectant"
+              ],
+              "answer": "c. Perform pulmonary function tests and reduce bleomycin dose if toxicity is confirmed",
+              "explanation": "Bleomycin-induced pulmonary toxicity is dose-dependent; pulmonary function tests should be performed to assess severity, and dose reduction or discontinuation may be necessary."
+            },
+            {
+              "stem": "A 45-year-old male with metastatic melanoma receives ipilimumab. Which of the following is the primary mechanism of action of ipilimumab?",
+              "options": [
+                "a. Inhibits BRAF kinase, blocking tumor growth",
+                "b. Binds to CTLA-4, enhancing T-cell activation",
+                "c. Inhibits MEK kinase, reducing cell proliferation",
+                "d. Blocks PD-1 receptors, preventing immune evasion"
+              ],
+              "answer": "b. Binds to CTLA-4, enhancing T-cell activation",
+              "explanation": "Ipilimumab is a monoclonal antibody that binds to CTLA-4, a negative regulator of T-cell activation, thereby enhancing the immune response against tumor cells."
+            },
+            {
+              "stem": "A patient receiving carboplatin develops severe thrombocytopenia. Which of the following is the most appropriate management strategy?",
+              "options": [
+                "a. Administer oprelvekin to stimulate platelet recovery",
+                "b. Administer eltrombopag to increase platelet count",
+                "c. Discontinue carboplatin and switch to cisplatin",
+                "d. Administer dexamethasone to reduce inflammation"
+              ],
+              "answer": "a. Administer oprelvekin to stimulate platelet recovery",
+              "explanation": "Oprelvekin is a recombinant interleukin-11 that stimulates megakaryocyte proliferation and platelet production, reducing the duration of chemotherapy-induced thrombocytopenia."
+            },
+            {
+              "stem": "A 55-year-old female with metastatic colorectal cancer receives bevacizumab. Which of the following is the primary mechanism of action of bevacizumab?",
+              "options": [
+                "a. Inhibits VEGF, reducing angiogenesis",
+                "b. Binds to EGFR, blocking tumor growth",
+                "c. Inhibits topoisomerase I, causing DNA strand breaks",
+                "d. Blocks estrogen receptors, reducing tumor proliferation"
+              ],
+              "answer": "a. Inhibits VEGF, reducing angiogenesis",
+              "explanation": "Bevacizumab is a monoclonal antibody that targets VEGF, a key mediator of angiogenesis, thereby inhibiting tumor growth and metastasis."
+            },
+            {
+              "stem": "A patient receiving ifosfamide develops neurotoxicity. Which of the following is the most appropriate management strategy?",
+              "options": [
+                "a. Administer methylene blue to reduce neurotoxicity",
+                "b. Discontinue ifosfamide and switch to cyclophosphamide",
+                "c. Administer dexamethasone to reduce inflammation",
+                "d. Perform EEG and reduce ifosfamide dose if toxicity is confirmed"
+              ],
+              "answer": "a. Administer methylene blue to reduce neurotoxicity",
+              "explanation": "Methylene blue is an antidote for ifosfamide-induced neurotoxicity, which is caused by the accumulation of chloroacetaldehyde, a toxic metabolite."
+            },
+            {
+              "stem": "A 60-year-old male with metastatic prostate cancer receives enzalutamide. Which of the following is the primary mechanism of action of enzalutamide?",
+              "options": [
+                "a. Inhibits androgen receptor directly",
+                "b. Inhibits CYP17A1, reducing androgen synthesis",
+                "c. Blocks estrogen receptors in prostate tissue",
+                "d. Inhibits 5-alpha-reductase, reducing dihydrotestosterone levels"
+              ],
+              "answer": "a. Inhibits androgen receptor directly",
+              "explanation": "Enzalutamide is an androgen receptor inhibitor that blocks the binding of androgens to their receptor, thereby inhibiting tumor growth."
+            },
+            {
+              "stem": "A patient receiving etoposide develops secondary leukemia. Which of the following is the most likely mechanism underlying this adverse effect?",
+              "options": [
+                "a. DNA strand breaks leading to chromosomal translocations",
+                "b. Inhibition of topoisomerase II, causing DNA damage",
+                "c. Disruption of microtubule assembly, leading to aneuploidy",
+                "d. Inhibition of dihydrofolate reductase, disrupting purine synthesis"
+              ],
+              "answer": "a. DNA strand breaks leading to chromosomal translocations",
+              "explanation": "Etoposide, a topoisomerase II inhibitor, causes DNA strand breaks that can lead to chromosomal translocations, increasing the risk of secondary malignancies."
+            },
+            {
+              "stem": "A 50-year-old female with metastatic breast cancer receives everolimus. Which of the following is the primary mechanism of action of everolimus?",
+              "options": [
+                "a. Inhibits mTOR, blocking cell growth and proliferation",
+                "b. Binds to HER2 receptors, inhibiting tumor growth",
+                "c. Inhibits aromatase, reducing estrogen synthesis",
+                "d. Blocks VEGF receptors, reducing angiogenesis"
+              ],
+              "answer": "a. Inhibits mTOR, blocking cell growth and proliferation",
+              "explanation": "Everolimus is an mTOR inhibitor that blocks the mTOR signaling pathway, thereby inhibiting cell growth, proliferation, and angiogenesis."
+            },
+            {
+              "stem": "A patient receiving topotecan develops severe diarrhea. Which of the following is the most appropriate management strategy?",
+              "options": [
+                "a. Administer loperamide to control diarrhea",
+                "b. Discontinue topotecan and switch to irinotecan",
+                "c. Administer dexamethasone to reduce inflammation",
+                "d. Perform stool culture and treat underlying infection"
+              ],
+              "answer": "a. Administer loperamide to control diarrhea",
+              "explanation": "Topotecan-induced diarrhea is a common adverse effect; loperamide can be used to control symptoms, but severe cases may require dose reduction or discontinuation."
+            },
+            {
+              "stem": "A 40-year-old male with metastatic melanoma receives pembrolizumab. Which of the following is the primary mechanism of action of pembrolizumab?",
+              "options": [
+                "a. Inhibits BRAF kinase, blocking tumor growth",
+                "b. Binds to PD-1 receptors, enhancing T-cell activation",
+                "c. Inhibits MEK kinase, reducing cell proliferation",
+                "d. Blocks CTLA-4 receptors, preventing immune evasion"
+              ],
+              "answer": "b. Binds to PD-1 receptors, enhancing T-cell activation",
+              "explanation": "Pembrolizumab is a monoclonal antibody that binds to PD-1 receptors on T-cells, blocking the interaction with PD-L1/PD-L2 on tumor cells and enhancing the immune response."
+            },
+            {
+              "stem": "A patient receiving daunorubicin develops cardiomyopathy. Which of the following is the most appropriate management strategy?",
+              "options": [
+                "a. Discontinue daunorubicin immediately and switch to idarubicin",
+                "b. Administer dexrazoxane as a cardioprotectant",
+                "c. Perform echocardiogram and reduce daunorubicin dose if toxicity is confirmed",
+                "d. Administer amifostine to reduce oxidative stress"
+              ],
+              "answer": "b. Administer dexrazoxane as a cardioprotectant",
+              "explanation": "Dexrazoxane is a cardioprotectant that reduces the risk of anthracycline-induced cardiomyopathy by chelating iron and reducing oxidative stress."
+            },
+            {
+              "stem": "A 55-year-old female with metastatic breast cancer receives palbociclib. Which of the following is the primary mechanism of action of palbociclib?",
+              "options": [
+                "a. Inhibits CDK4/6, blocking cell cycle progression",
+                "b. Binds to HER2 receptors, inhibiting tumor growth",
+                "c. Inhibits aromatase, reducing estrogen synthesis",
+                "d. Blocks VEGF receptors, reducing angiogenesis"
+              ],
+              "answer": "a. Inhibits CDK4/6, blocking cell cycle progression",
+              "explanation": "Palbociclib is a cyclin-dependent kinase 4/6 inhibitor that blocks the cell cycle at the G1/S transition, thereby inhibiting tumor cell proliferation."
+            },
+            {
+              "stem": "A patient receiving cytarabine develops cerebellar toxicity. Which of the following is the most appropriate management strategy?",
+              "options": [
+                "a. Discontinue cytarabine immediately and switch to fludarabine",
+                "b. Perform neurological examination and reduce cytarabine dose if toxicity is confirmed",
+                "c. Administer dexamethasone to reduce inflammation",
+                "d. Administer amifostine to protect against neurotoxicity"
+              ],
+              "answer": "b. Perform neurological examination and reduce cytarabine dose if toxicity is confirmed",
+              "explanation": "Cytarabine-induced cerebellar toxicity is dose-dependent; neurological examination should be performed to assess severity, and dose reduction or discontinuation may be necessary."
+            },
+            {
+              "stem": "A 60-year-old male with metastatic prostate cancer receives apalutamide. Which of the following is the primary mechanism of action of apalutamide?",
+              "options": [
+                "a. Inhibits androgen receptor directly",
+                "b. Inhibits CYP17A1, reducing androgen synthesis",
+                "c. Blocks estrogen receptors in prostate tissue",
+                "d. Inhibits 5-alpha-reductase, reducing dihydrotestosterone levels"
+              ],
+              "answer": "a. Inhibits androgen receptor directly",
+              "explanation": "Apalutamide is an androgen receptor inhibitor that blocks the binding of androgens to their receptor, thereby inhibiting tumor growth."
+            },
+            {
+              "stem": "A patient receiving bortezomib develops peripheral neuropathy. Which of the following is the most appropriate management strategy?",
+              "options": [
+                "a. Discontinue bortezomib immediately and switch to carfilzomib",
+                "b. Administer gabapentin to control neuropathic pain",
+                "c. Perform nerve conduction studies and reduce bortezomib dose if toxicity is confirmed",
+                "d. Administer dexamethasone to reduce inflammation"
+              ],
+              "answer": "c. Perform nerve conduction studies and reduce bortezomib dose if toxicity is confirmed",
+              "explanation": "Bortezomib-induced peripheral neuropathy is dose-dependent; nerve conduction studies should be performed to assess severity, and dose reduction or discontinuation may be necessary."
+            },
+            {
+              "stem": "A 50-year-old female with metastatic breast cancer receives olaparib. Which of the following is the primary mechanism of action of olaparib?",
+              "options": [
+                "a. Inhibits PARP, blocking DNA repair",
+                "b. Binds to HER2 receptors, inhibiting tumor growth",
+                "c. Inhibits aromatase, reducing estrogen synthesis",
+                "d. Blocks VEGF receptors, reducing angiogenesis"
+              ],
+              "answer": "a. Inhibits PARP, blocking DNA repair",
+              "explanation": "Olaparib is a PARP inhibitor that blocks the repair of single-strand DNA breaks, leading to the accumulation of double-strand breaks and tumor cell death."
+            },
+            {
+              "stem": "A patient receiving 5-fluorouracil develops hand-foot syndrome. Which of the following is the most appropriate management strategy?",
+              "options": [
+                "a. Discontinue 5-fluorouracil immediately and switch to capecitabine",
+                "b. Administer pyridoxine to reduce symptoms",
+                "c. Perform dermatological examination and reduce 5-fluorouracil dose if toxicity is confirmed",
+                "d. Administer dexamethasone to reduce inflammation"
+              ],
+              "answer": "c. Perform dermatological examination and reduce 5-fluorouracil dose if toxicity is confirmed",
+              "explanation": "5-fluorouracil-induced hand-foot syndrome is dose-dependent; dermatological examination should be performed to assess severity, and dose reduction or discontinuation may be necessary."
+            },
+            {
+              "stem": "A 45-year-old male with metastatic melanoma receives dabrafenib. Which of the following is the primary mechanism of action of dabrafenib?",
+              "options": [
+                "a. Inhibits BRAF kinase, blocking tumor growth",
+                "b. Binds to PD-1 receptors, enhancing T-cell activation",
+                "c. Inhibits MEK kinase, reducing cell proliferation",
+                "d. Blocks CTLA-4 receptors, preventing immune evasion"
+              ],
+              "answer": "a. Inhibits BRAF kinase, blocking tumor growth",
+              "explanation": "Dabrafenib is a BRAF kinase inhibitor that blocks the MAPK signaling pathway, thereby inhibiting tumor cell proliferation."
+            },
+            {
+              "stem": "A patient receiving irinotecan develops delayed diarrhea. Which of the following is the most appropriate management strategy?",
+              "options": [
+                "a. Administer loperamide at the first sign of diarrhea",
+                "b. Discontinue irinotecan immediately and switch to topotecan",
+                "c. Administer dexamethasone to reduce inflammation",
+                "d. Perform stool culture and treat underlying infection"
+              ],
+              "answer": "a. Administer loperamide at the first sign of diarrhea",
+              "explanation": "Irinotecan-induced delayed diarrhea is a common adverse effect; loperamide should be administered at the first sign of diarrhea to control symptoms."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 58-year-old male with metastatic colorectal cancer is receiving FOLFOX regimen (5-fluorouracil, leucovorin, oxaliplatin). He develops grade 3 neutropenia and grade 2 peripheral neuropathy after the second cycle. (a) List two supportive care measures to manage his neutropenia. (b) Outline two strategies to manage his peripheral neuropathy.",
+              "modelAnswer": {
+                "a": "Supportive care measures for grade 3 neutropenia:\n- Administer pegfilgrastim or filgrastim to stimulate neutrophil recovery.\n- Consider dose reduction of oxaliplatin or 5-fluorouracil in subsequent cycles.",
+                "b": "Strategies to manage peripheral neuropathy:\n- Perform dose reduction or delay of oxaliplatin to prevent worsening of symptoms.\n- Administer gabapentin or pregabalin for neuropathic pain management."
+              }
+            },
+            {
+              "stem": "A 45-year-old female with HER2-positive metastatic breast cancer is receiving trastuzumab and pertuzumab in combination with docetaxel. (a) Explain the rationale for using trastuzumab and pertuzumab in this regimen. (b) List two monitoring parameters for cardiotoxicity associated with trastuzumab.",
+              "modelAnswer": {
+                "a": "Rationale for using trastuzumab and pertuzumab:\n- Trastuzumab targets HER2, inhibiting tumor cell proliferation and survival.\n- Pertuzumab binds to a different epitope of HER2, enhancing the anti-tumor effect and overcoming resistance to trastuzumab.",
+                "b": "Monitoring parameters for cardiotoxicity:\n- Perform baseline and periodic echocardiograms to assess left ventricular ejection fraction (LVEF).\n- Monitor for signs and symptoms of heart failure, such as dyspnea, peripheral edema, and fatigue."
+              }
+            },
+            {
+              "stem": "A 60-year-old male with chronic myeloid leukemia receives imatinib. (a) Explain the mechanism of action of imatinib. (b) List two common adverse effects of imatinib and their management.",
+              "modelAnswer": {
+                "a": "Mechanism of action of imatinib:\n- Imatinib is a tyrosine kinase inhibitor that specifically targets the BCR-ABL fusion protein, a hallmark of chronic myeloid leukemia, thereby blocking proliferation and survival of leukemic cells.",
+                "b": "Common adverse effects and their management:\n- Myelosuppression: Monitor CBC and consider dose reduction or temporary interruption of imatinib.\n- Fluid retention: Administer diuretics and consider dose reduction or temporary interruption of imatinib."
+              }
+            },
+            {
+              "stem": "A 50-year-old female with metastatic melanoma receives pembrolizumab. (a) Explain the mechanism of action of pembrolizumab. (b) List two immune-related adverse effects of pembrolizumab and their management.",
+              "modelAnswer": {
+                "a": "Mechanism of action of pembrolizumab:\n- Pembrolizumab is a monoclonal antibody that binds to PD-1 receptors on T-cells, blocking the interaction with PD-L1/PD-L2 on tumor cells and enhancing the immune response against tumor cells.",
+                "b": "Immune-related adverse effects and their management:\n- Immune-related colitis: Administer corticosteroids and consider temporary interruption or discontinuation of pembrolizumab.\n- Immune-related pneumonitis: Administer corticosteroids and consider temporary interruption or discontinuation of pembrolizumab."
+              }
+            },
+            {
+              "stem": "A 65-year-old male with metastatic prostate cancer receives abiraterone. (a) Explain the mechanism of action of abiraterone. (b) List two common adverse effects of abiraterone and their management.",
+              "modelAnswer": {
+                "a": "Mechanism of action of abiraterone:\n- Abiraterone inhibits CYP17A1, an enzyme critical for androgen biosynthesis, thereby reducing testosterone and dihydrotestosterone levels and inhibiting tumor growth.",
+                "b": "Common adverse effects and their management:\n- Hypertension: Monitor blood pressure and consider antihypertensive therapy.\n- Hypokalemia: Monitor serum potassium levels and consider potassium supplementation."
+              }
+            },
+            {
+              "stem": "A 55-year-old female with metastatic breast cancer receives palbociclib in combination with letrozole. (a) Explain the rationale for using palbociclib in this regimen. (b) List two common adverse effects of palbociclib and their management.",
+              "modelAnswer": {
+                "a": "Rationale for using palbociclib in this regimen:\n- Palbociclib is a cyclin-dependent kinase 4/6 inhibitor that blocks the cell cycle at the G1/S transition, thereby inhibiting tumor cell proliferation in combination with letrozole, an aromatase inhibitor.",
+                "b": "Common adverse effects and their management:\n- Neutropenia: Monitor CBC and consider dose reduction or temporary interruption of palbociclib.\n- Fatigue: Provide supportive care and consider dose reduction or temporary interruption of palbociclib."
+              }
+            },
+            {
+              "stem": "A 40-year-old male with acute lymphoblastic leukemia receives vincristine as part of his chemotherapy regimen. (a) Explain the mechanism of action of vincristine. (b) List two common adverse effects of vincristine and their management.",
+              "modelAnswer": {
+                "a": "Mechanism of action of vincristine:\n- Vincristine is a vinca alkaloid that binds to tubulin, inhibiting microtubule assembly and disrupting mitosis, thereby inhibiting tumor cell proliferation.",
+                "b": "Common adverse effects and their management:\n- Peripheral neuropathy: Perform dose reduction or delay of vincristine to prevent worsening of symptoms; administer gabapentin or pregabalin for neuropathic pain management.\n- Constipation: Administer stool softeners and consider dose reduction or delay of vincristine."
+              }
+            },
+            {
+              "stem": "A 60-year-old female with metastatic ovarian cancer receives carboplatin and paclitaxel. (a) Explain the rationale for using carboplatin and paclitaxel in this regimen. (b) List two common adverse effects of carboplatin and their management.",
+              "modelAnswer": {
+                "a": "Rationale for using carboplatin and paclitaxel in this regimen:\n- Carboplatin is a platinum agent that forms covalent bonds with DNA, causing strand breaks and inhibiting tumor cell proliferation.\n- Paclitaxel is a taxane that binds to tubulin, stabilizing microtubules and disrupting mitosis, thereby inhibiting tumor cell proliferation.",
+                "b": "Common adverse effects and their management:\n- Myelosuppression: Monitor CBC and consider dose reduction or temporary interruption of carboplatin and paclitaxel.\n- Peripheral neuropathy: Perform dose reduction or delay of paclitaxel to prevent worsening of symptoms; administer gabapentin or pregabalin for neuropathic pain management."
+              }
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 55-year-old male with metastatic non-small cell lung cancer (NSCLC) receives pembrolizumab in combination with chemotherapy. (a) Explain the mechanism of action of pembrolizumab and its role in the treatment of NSCLC. (b) Outline the management of immune-related adverse effects associated with pembrolizumab. (c) Discuss the role of pharmacogenomics in optimizing the use of pembrolizumab in NSCLC.",
+              "modelAnswer": {
+                "a": "Mechanism of action and role in NSCLC:\n- Pembrolizumab is a monoclonal antibody that binds to PD-1 receptors on T-cells, blocking the interaction with PD-L1/PD-L2 on tumor cells and enhancing the immune response against tumor cells.\n- In NSCLC, pembrolizumab is used as first-line therapy in patients with PD-L1 expression ≥50% or in combination with chemotherapy regardless of PD-L1 status, based on clinical trial data showing improved survival outcomes.",
+                "b": "Management of immune-related adverse effects:\n- Immune-related colitis: Administer corticosteroids (e.g., prednisone 1-2 mg/kg/day) and consider temporary interruption or discontinuation of pembrolizumab. If refractory, consider infliximab or vedolizumab.\n- Immune-related pneumonitis: Administer corticosteroids and consider temporary interruption or discontinuation of pembrolizumab. If refractory, consider infliximab.\n- Immune-related hepatitis: Administer corticosteroids and consider temporary interruption or discontinuation of pembrolizumab. If refractory, consider mycophenolate mofetil.\n- Immune-related endocrinopathies (e.g., hypothyroidism, hyperthyroidism): Administer hormone replacement therapy as needed and consider temporary interruption or discontinuation of pembrolizumab.",
+                "c": "Role of pharmacogenomics:\n- PD-L1 expression: Tumor PD-L1 expression is a predictive biomarker for response to pembrolizumab, with higher expression levels associated with improved outcomes.\n- Tumor mutational burden (TMB): High TMB is associated with improved response to pembrolizumab, as it correlates with increased neoantigen load and immune recognition.\n- Germline pharmacogenomics: Polymorphisms in genes involved in immune response (e.g., HLA genes) may influence the efficacy and toxicity of pembrolizumab, although further research is needed to elucidate these associations."
+              }
+            },
+            {
+              "stem": "A 60-year-old female with metastatic breast cancer receives trastuzumab deruxtecan. (a) Explain the mechanism of action of trastuzumab deruxtecan and its advantages over trastuzumab. (b) Outline the management of adverse effects associated with trastuzumab deruxtecan. (c) Discuss the role of pharmacovigilance in monitoring the safety of trastuzumab deruxtecan.",
+              "modelAnswer": {
+                "a": "Mechanism of action and advantages over trastuzumab:\n- Trastuzumab deruxtecan is an antibody-drug conjugate (ADC) consisting of trastuzumab, a cleavable linker, and deruxtecan, a topoisomerase I inhibitor.\n- Mechanism of action: Trastuzumab binds to HER2 on tumor cells, facilitating internalization of the ADC; deruxtecan is then released intracellularly, causing DNA damage and tumor cell death.\n- Advantages over trastuzumab: Trastuzumab deruxtecan has a higher drug-to-antibody ratio (8:1 vs. 1:1 for trastuzumab) and a more potent cytotoxic payload, leading to improved efficacy in HER2-positive breast cancer, including patients with low HER2 expression (HER2-low).",
+                "b": "Management of adverse effects:\n- Interstitial lung disease (ILD)/pneumonitis: Perform baseline and periodic chest imaging; discontinue trastuzumab deruxtecan permanently if ILD/pneumonitis is confirmed. Administer corticosteroids for grade ≥2 ILD/pneumonitis.\n- Myelosuppression: Monitor CBC and consider dose reduction or temporary interruption of trastuzumab deruxtecan for grade ≥3 neutropenia or thrombocytopenia.\n- Nausea and vomiting: Administer antiemetics (e.g., ondansetron) prophylactically and as needed.\n- Fatigue: Provide supportive care and consider dose reduction or temporary interruption of trastuzumab deruxtecan.",
+                "c": "Role of pharmacovigilance:\n- Post-marketing surveillance: Monitor for rare but serious adverse effects (e.g., ILD/pneumonitis) through spontaneous reporting systems (e.g., VigiBase) and pharmacovigilance programs.\n- Signal detection: Analyze adverse event reports to identify potential safety signals and assess causality.\n- Risk minimization: Implement risk minimization measures (e.g., educational materials, dose modifications) to reduce the risk of adverse effects.\n- Real-world evidence: Utilize real-world data (e.g., electronic health records, claims data) to assess the safety and effectiveness of trastuzumab deruxtecan in diverse patient populations."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Advanced Clinical Pharmacy: Oncology & Toxicology",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 62-year-old male with metastatic colorectal cancer is started on FOLFOX regimen (folinic acid, 5-fluorouracil, oxaliplatin). Which of the following is the primary dose-limiting toxicity of oxaliplatin that requires pre-emptive management?",
+              "options": [
+                "a. Myelosuppression",
+                "b. Peripheral sensory neuropathy",
+                "c. Cardiotoxicity",
+                "d. Nephrotoxicity"
+              ],
+              "answer": "b. Peripheral sensory neuropathy",
+              "explanation": "Oxaliplatin is associated with cumulative peripheral sensory neuropathy, which is often dose-limiting and requires dose modification or discontinuation."
+            },
+            {
+              "stem": "A 48-year-old female with HER2-positive breast cancer is receiving adjuvant therapy with docetaxel, carboplatin, and trastuzumab. Which of the following is the most appropriate cardiac monitoring strategy during trastuzumab therapy?",
+              "options": [
+                "a. Baseline and periodic echocardiography",
+                "b. Routine ECG monitoring",
+                "c. Serum troponin levels every 3 months",
+                "d. Chest X-ray annually"
+              ],
+              "answer": "a. Baseline and periodic echocardiography",
+              "explanation": "Trastuzumab is associated with cardiotoxicity, necessitating baseline and periodic assessment of left ventricular ejection fraction (LVEF) via echocardiography."
+            },
+            {
+              "stem": "A 55-year-old male with small-cell lung cancer develops cisplatin-induced nephrotoxicity. Which of the following interventions is most appropriate to prevent further renal damage?",
+              "options": [
+                "a. Administer cisplatin with hypertonic saline",
+                "b. Use amifostine as a chemoprotectant",
+                "c. Increase fluid intake and administer mannitol",
+                "d. Switch to carboplatin, which is less nephrotoxic"
+              ],
+              "answer": "b. Use amifostine as a chemoprotectant",
+              "explanation": "Amifostine is a cytoprotective agent that reduces cisplatin-induced nephrotoxicity by scavenging free radicals."
+            },
+            {
+              "stem": "A 30-year-old female with acute promyelocytic leukemia (APL) is started on all-trans retinoic acid (ATRA). Which of the following is a serious adverse effect requiring immediate intervention?",
+              "options": [
+                "a. Hypercalcemia",
+                "b. Retinoic acid syndrome",
+                "c. Hypothyroidism",
+                "d. Peripheral edema"
+              ],
+              "answer": "b. Retinoic acid syndrome",
+              "explanation": "Retinoic acid syndrome is a life-threatening complication characterized by fever, dyspnea, weight gain, and pulmonary infiltrates, requiring immediate corticosteroids and supportive care."
+            },
+            {
+              "stem": "A 70-year-old male with metastatic prostate cancer is receiving abiraterone acetate. Which of the following laboratory parameters must be monitored closely due to abiraterone’s mechanism of action?",
+              "options": [
+                "a. Serum potassium",
+                "b. Serum testosterone",
+                "c. Serum calcium",
+                "d. Serum magnesium"
+              ],
+              "answer": "b. Serum testosterone",
+              "explanation": "Abiraterone inhibits CYP17A1, leading to reduced testosterone production, necessitating monitoring of serum testosterone levels."
+            },
+            {
+              "stem": "A 25-year-old female with Hodgkin lymphoma is treated with ABVD (doxorubicin, bleomycin, vinblastine, dacarbazine). Which of the following is the most appropriate supportive care measure to prevent bleomycin-induced pulmonary toxicity?",
+              "options": [
+                "a. Administer bleomycin with cisplatin to reduce toxicity",
+                "b. Limit cumulative bleomycin dose to ≤400 units",
+                "c. Use high-flow oxygen during chemotherapy",
+                "d. Administer bleomycin with granulocyte colony-stimulating factor (G-CSF)"
+              ],
+              "answer": "b. Limit cumulative bleomycin dose to ≤400 units",
+              "explanation": "Bleomycin-induced pulmonary toxicity is dose-dependent, and limiting the cumulative dose to ≤400 units reduces the risk."
+            },
+            {
+              "stem": "A 60-year-old male with metastatic renal cell carcinoma is started on pazopanib. Which of the following is a common adverse effect requiring patient counseling?",
+              "options": [
+                "a. Hypothyroidism",
+                "b. Hyperthyroidism",
+                "c. Hypocalcemia",
+                "d. Hypercalcemia"
+              ],
+              "answer": "a. Hypothyroidism",
+              "explanation": "Pazopanib is associated with hypothyroidism, necessitating baseline and periodic thyroid function monitoring."
+            },
+            {
+              "stem": "A 45-year-old female with breast cancer develops febrile neutropenia after receiving dose-dense AC-T (doxorubicin, cyclophosphamide, paclitaxel). Which of the following is the most appropriate initial antibiotic regimen?",
+              "options": [
+                "a. Ceftriaxone monotherapy",
+                "b. Piperacillin-tazobactam plus vancomycin",
+                "c. Ciprofloxacin monotherapy",
+                "d. Amoxicillin-clavulanate plus gentamicin"
+              ],
+              "answer": "b. Piperacillin-tazobactam plus vancomycin",
+              "explanation": "Febrile neutropenia requires broad-spectrum empiric antibiotics covering Gram-negative and Gram-positive organisms, including Pseudomonas aeruginosa."
+            },
+            {
+              "stem": "A 50-year-old male with multiple myeloma receives high-dose melphalan followed by autologous stem cell transplant. Which of the following is the primary supportive care measure to prevent mucositis?",
+              "options": [
+                "a. Palifermin (keratinocyte growth factor)",
+                "b. Granisetron for nausea control",
+                "c. Dexamethasone mouthwash",
+                "d. Acyclovir prophylaxis"
+              ],
+              "answer": "a. Palifermin (keratinocyte growth factor)",
+              "explanation": "Palifermin reduces the incidence and duration of severe oral mucositis in patients receiving high-dose chemotherapy."
+            },
+            {
+              "stem": "A 35-year-old female with metastatic melanoma is started on ipilimumab. Which of the following is a serious immune-related adverse event requiring immediate intervention?",
+              "options": [
+                "a. Hypotension",
+                "b. Immune-mediated colitis",
+                "c. Hyperglycemia",
+                "d. Bradycardia"
+              ],
+              "answer": "b. Immune-mediated colitis",
+              "explanation": "Ipilimumab can cause immune-related adverse events, including severe colitis, requiring corticosteroids and potentially infliximab."
+            },
+            {
+              "stem": "A 65-year-old male with chronic lymphocytic leukemia (CLL) is treated with ibrutinib. Which of the following is a common adverse effect requiring monitoring?",
+              "options": [
+                "a. Hypertension",
+                "b. Hypotension",
+                "c. Hyperkalemia",
+                "d. Hypocalcemia"
+              ],
+              "answer": "a. Hypertension",
+              "explanation": "Ibrutinib is associated with hypertension, necessitating baseline and periodic blood pressure monitoring."
+            },
+            {
+              "stem": "A 40-year-old female with ovarian cancer is receiving carboplatin and paclitaxel. Which of the following is the most appropriate antiemetic regimen for highly emetogenic chemotherapy?",
+              "options": [
+                "a. Ondansetron alone",
+                "b. Aprepitant, dexamethasone, and ondansetron",
+                "c. Metoclopramide alone",
+                "d. Lorazepam alone"
+              ],
+              "answer": "b. Aprepitant, dexamethasone, and ondansetron",
+              "explanation": "Carboplatin is highly emetogenic, and a three-drug regimen (NK1 receptor antagonist, 5-HT3 antagonist, and dexamethasone) is recommended."
+            },
+            {
+              "stem": "A 55-year-old male with colorectal cancer develops irinotecan-induced delayed diarrhea. Which of the following is the most appropriate management?",
+              "options": [
+                "a. Loperamide 4 mg initially, then 2 mg every 2 hours",
+                "b. Diphenoxylate-atropine",
+                "c. Octreotide 100 mcg subcutaneously",
+                "d. Cholestyramine"
+              ],
+              "answer": "a. Loperamide 4 mg initially, then 2 mg every 2 hours",
+              "explanation": "Irinotecan-induced delayed diarrhea is managed with high-dose loperamide, with escalation to octreotide if refractory."
+            },
+            {
+              "stem": "A 70-year-old female with metastatic breast cancer is started on fulvestrant. Which of the following is a common adverse effect requiring patient counseling?",
+              "options": [
+                "a. Hot flashes",
+                "b. Hypotension",
+                "c. Hypercalcemia",
+                "d. Bradycardia"
+              ],
+              "answer": "a. Hot flashes",
+              "explanation": "Fulvestrant, a selective estrogen receptor degrader, commonly causes hot flashes due to its estrogen receptor antagonism."
+            },
+            {
+              "stem": "A 40-year-old male with testicular cancer is treated with BEP (bleomycin, etoposide, cisplatin). Which of the following is the primary dose-limiting toxicity of bleomycin?",
+              "options": [
+                "a. Myelosuppression",
+                "b. Pulmonary toxicity",
+                "c. Nephrotoxicity",
+                "d. Cardiotoxicity"
+              ],
+              "answer": "b. Pulmonary toxicity",
+              "explanation": "Bleomycin’s primary dose-limiting toxicity is pulmonary fibrosis, necessitating cumulative dose limits and pulmonary function monitoring."
+            },
+            {
+              "stem": "A 60-year-old female with metastatic non-small-cell lung cancer (NSCLC) is started on pembrolizumab. Which of the following is a serious immune-related adverse event requiring immediate intervention?",
+              "options": [
+                "a. Hypothyroidism",
+                "b. Immune-mediated pneumonitis",
+                "c. Hypercalcemia",
+                "d. Bradycardia"
+              ],
+              "answer": "b. Immune-mediated pneumonitis",
+              "explanation": "Pembrolizumab can cause immune-mediated pneumonitis, requiring corticosteroids and potentially discontinuation of therapy."
+            },
+            {
+              "stem": "A 50-year-old male with metastatic prostate cancer is receiving enzalutamide. Which of the following is a common adverse effect requiring monitoring?",
+              "options": [
+                "a. Hyperkalemia",
+                "b. Seizures",
+                "c. Hypocalcemia",
+                "d. Bradycardia"
+              ],
+              "answer": "b. Seizures",
+              "explanation": "Enzalutamide lowers the seizure threshold, necessitating caution in patients with a history of seizures or predisposing factors."
+            },
+            {
+              "stem": "A 30-year-old female with acute myeloid leukemia (AML) is treated with cytarabine. Which of the following is the primary dose-limiting toxicity of high-dose cytarabine?",
+              "options": [
+                "a. Cardiotoxicity",
+                "b. Neurotoxicity (cerebellar syndrome)",
+                "c. Nephrotoxicity",
+                "d. Hepatotoxicity"
+              ],
+              "answer": "b. Neurotoxicity (cerebellar syndrome)",
+              "explanation": "High-dose cytarabine is associated with cerebellar toxicity, necessitating dose adjustments and neurological monitoring."
+            },
+            {
+              "stem": "A 65-year-old male with chronic myeloid leukemia (CML) is treated with imatinib. Which of the following is a common adverse effect requiring patient counseling?",
+              "options": [
+                "a. Hypothyroidism",
+                "b. Fluid retention and edema",
+                "c. Hypercalcemia",
+                "d. Bradycardia"
+              ],
+              "answer": "b. Fluid retention and edema",
+              "explanation": "Imatinib commonly causes fluid retention and peripheral edema, necessitating monitoring and dose adjustments."
+            },
+            {
+              "stem": "A 45-year-old female with metastatic breast cancer is started on capecitabine. Which of the following is a common adverse effect requiring dose modification?",
+              "options": [
+                "a. Hypertension",
+                "b. Hand-foot syndrome",
+                "c. Hypercalcemia",
+                "d. Bradycardia"
+              ],
+              "answer": "b. Hand-foot syndrome",
+              "explanation": "Capecitabine is associated with hand-foot syndrome, which may require dose reductions or treatment interruptions."
+            },
+            {
+              "stem": "A 55-year-old male with multiple myeloma receives bortezomib. Which of the following is a common adverse effect requiring monitoring?",
+              "options": [
+                "a. Hypercalcemia",
+                "b. Peripheral neuropathy",
+                "c. Hypotension",
+                "d. Hyperkalemia"
+              ],
+              "answer": "b. Peripheral neuropathy",
+              "explanation": "Bortezomib is associated with peripheral neuropathy, necessitating dose modifications and neurological monitoring."
+            },
+            {
+              "stem": "A 35-year-old female with Hodgkin lymphoma is treated with BEACOPP (bleomycin, etoposide, doxorubicin, cyclophosphamide, vincristine, procarbazine, prednisone). Which of the following is the primary dose-limiting toxicity of doxorubicin in this regimen?",
+              "options": [
+                "a. Myelosuppression",
+                "b. Cardiotoxicity",
+                "c. Pulmonary toxicity",
+                "d. Neurotoxicity"
+              ],
+              "answer": "b. Cardiotoxicity",
+              "explanation": "Doxorubicin’s primary dose-limiting toxicity is cardiotoxicity, necessitating cumulative dose limits and cardiac monitoring."
+            },
+            {
+              "stem": "A 60-year-old male with metastatic colorectal cancer is started on trifluridine-tipiracil. Which of the following is a common adverse effect requiring monitoring?",
+              "options": [
+                "a. Hypercalcemia",
+                "b. Myelosuppression",
+                "c. Hyperkalemia",
+                "d. Bradycardia"
+              ],
+              "answer": "b. Myelosuppression",
+              "explanation": "Trifluridine-tipiracil is associated with myelosuppression, necessitating regular CBC monitoring."
+            },
+            {
+              "stem": "A 40-year-old female with metastatic melanoma is treated with dabrafenib and trametinib. Which of the following is a serious adverse effect requiring immediate intervention?",
+              "options": [
+                "a. Hypotension",
+                "b. Pyrexia (febrile syndrome)",
+                "c. Hypercalcemia",
+                "d. Bradycardia"
+              ],
+              "answer": "b. Pyrexia (febrile syndrome)",
+              "explanation": "Dabrafenib and trametinib can cause pyrexia, which may require dose interruptions and corticosteroids."
+            },
+            {
+              "stem": "A 55-year-old male with metastatic prostate cancer is started on radium-223. Which of the following is a common adverse effect requiring monitoring?",
+              "options": [
+                "a. Hypercalcemia",
+                "b. Myelosuppression",
+                "c. Hyperkalemia",
+                "d. Bradycardia"
+              ],
+              "answer": "b. Myelosuppression",
+              "explanation": "Radium-223 is associated with myelosuppression, necessitating regular CBC monitoring."
+            },
+            {
+              "stem": "A 30-year-old female with acute lymphoblastic leukemia (ALL) is treated with vincristine. Which of the following is the primary dose-limiting toxicity of vincristine?",
+              "options": [
+                "a. Cardiotoxicity",
+                "b. Peripheral neuropathy",
+                "c. Nephrotoxicity",
+                "d. Hepatotoxicity"
+              ],
+              "answer": "b. Peripheral neuropathy",
+              "explanation": "Vincristine’s primary dose-limiting toxicity is peripheral neuropathy, necessitating dose modifications and neurological monitoring."
+            },
+            {
+              "stem": "A 65-year-old male with metastatic renal cell carcinoma is started on sunitinib. Which of the following is a common adverse effect requiring patient counseling?",
+              "options": [
+                "a. Hypothyroidism",
+                "b. Hyperthyroidism",
+                "c. Hypercalcemia",
+                "d. Bradycardia"
+              ],
+              "answer": "a. Hypothyroidism",
+              "explanation": "Sunitinib is associated with hypothyroidism, necessitating baseline and periodic thyroid function monitoring."
+            },
+            {
+              "stem": "A 45-year-old female with metastatic breast cancer is treated with everolimus. Which of the following is a common adverse effect requiring monitoring?",
+              "options": [
+                "a. Hypercalcemia",
+                "b. Stomatitis and mucositis",
+                "c. Hypotension",
+                "d. Bradycardia"
+              ],
+              "answer": "b. Stomatitis and mucositis",
+              "explanation": "Everolimus is associated with stomatitis and mucositis, necessitating supportive care and dose modifications."
+            },
+            {
+              "stem": "A 50-year-old male with metastatic prostate cancer is started on abiraterone acetate. Which of the following laboratory parameters must be monitored closely due to abiraterone’s mechanism of action?",
+              "options": [
+                "a. Serum potassium",
+                "b. Serum testosterone",
+                "c. Serum calcium",
+                "d. Serum magnesium"
+              ],
+              "answer": "b. Serum testosterone",
+              "explanation": "Abiraterone inhibits CYP17A1, leading to reduced testosterone production, necessitating monitoring of serum testosterone levels."
+            },
+            {
+              "stem": "A 35-year-old female with Hodgkin lymphoma is treated with ABVD (doxorubicin, bleomycin, vinblastine, dacarbazine). Which of the following is the most appropriate supportive care measure to prevent bleomycin-induced pulmonary toxicity?",
+              "options": [
+                "a. Administer bleomycin with cisplatin to reduce toxicity",
+                "b. Limit cumulative bleomycin dose to ≤400 units",
+                "c. Use high-flow oxygen during chemotherapy",
+                "d. Administer bleomycin with granulocyte colony-stimulating factor (G-CSF)"
+              ],
+              "answer": "b. Limit cumulative bleomycin dose to ≤400 units",
+              "explanation": "Bleomycin-induced pulmonary toxicity is dose-dependent, and limiting the cumulative dose to ≤400 units reduces the risk."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 58-year-old male with newly diagnosed metastatic colorectal cancer is started on FOLFOX regimen (folinic acid, 5-fluorouracil, oxaliplatin).",
+              "modelAnswer": "a. Identify two dose-limiting toxicities of oxaliplatin (2 marks):\n   - Peripheral sensory neuropathy\n   - Myelosuppression (particularly neutropenia)\n\nb. Outline the recommended pre-emptive management for oxaliplatin-induced neuropathy (3 marks):\n   - Dose reduction or interruption if grade ≥2 neuropathy occurs\n   - Use of neuroprotective agents (e.g., calcium/magnesium infusions) during oxaliplatin administration\n   - Patient counseling on avoiding cold exposure (e.g., cold drinks, ice packs) to reduce acute neuropathy"
+            },
+            {
+              "stem": "A 42-year-old female with HER2-positive metastatic breast cancer is receiving adjuvant therapy with docetaxel, carboplatin, and trastuzumab.",
+              "modelAnswer": "a. List three cardiac monitoring parameters required during trastuzumab therapy (3 marks):\n   - Baseline and periodic echocardiography (LVEF assessment)\n   - Serum troponin levels (if available)\n   - Clinical assessment for signs/symptoms of heart failure (e.g., dyspnea, edema)\n\nb. State the maximum cumulative dose of trastuzumab to minimize cardiotoxicity (2 marks):\n   - No strict maximum dose, but therapy should be discontinued if LVEF drops by ≥10% from baseline or to <50%."
+            },
+            {
+              "stem": "A 65-year-old male with metastatic renal cell carcinoma is started on pazopanib.",
+              "modelAnswer": "a. Identify three common adverse effects of pazopanib requiring patient counseling (3 marks):\n   - Hypertension\n   - Hypothyroidism\n   - Hand-foot syndrome\n\nb. Outline the recommended monitoring schedule for thyroid function in this patient (2 marks):\n   - Baseline TSH, free T4, and T3\n   - Repeat TSH and free T4 every 8–12 weeks during therapy"
+            },
+            {
+              "stem": "A 30-year-old female with acute promyelocytic leukemia (APL) is started on all-trans retinoic acid (ATRA).",
+              "modelAnswer": "a. List three clinical features of retinoic acid syndrome (3 marks):\n   - Fever\n   - Dyspnea\n   - Weight gain\n   - Pulmonary infiltrates\n\nb. State the immediate management for retinoic acid syndrome (2 marks):\n   - Discontinue ATRA temporarily\n   - Administer dexamethasone 10 mg IV every 12 hours until resolution"
+            },
+            {
+              "stem": "A 55-year-old male with metastatic prostate cancer is receiving enzalutamide.",
+              "modelAnswer": "a. Identify two serious adverse effects of enzalutamide requiring monitoring (2 marks):\n   - Seizures (due to lowered seizure threshold)\n   - Falls and fractures (due to increased bone loss)\n\nb. Outline the recommended bone health management strategy for this patient (3 marks):\n   - Baseline and periodic bone mineral density (DEXA) scans\n   - Calcium and vitamin D supplementation\n   - Consider bisphosphonate (e.g., zoledronic acid) or denosumab if high risk of fractures"
+            },
+            {
+              "stem": "A 40-year-old female with metastatic melanoma is treated with dabrafenib and trametinib.",
+              "modelAnswer": "a. List three serious adverse effects of dabrafenib/trametinib requiring immediate intervention (3 marks):\n   - Pyrexia (febrile syndrome)\n   - Uveitis/iritis\n   - QT prolongation\n\nb. State the recommended management for dabrafenib/trametinib-induced pyrexia (2 marks):\n   - Temporary interruption of therapy\n   - Administration of corticosteroids (e.g., prednisone 10–20 mg daily) if severe"
+            },
+            {
+              "stem": "A 60-year-old male with multiple myeloma receives bortezomib.",
+              "modelAnswer": "a. Identify three strategies to prevent or manage bortezomib-induced peripheral neuropathy (3 marks):\n   - Dose modification or interruption if grade ≥2 neuropathy occurs\n   - Use of subcutaneous bortezomib instead of intravenous to reduce neuropathy risk\n   - Patient counseling on avoiding cold exposure and using neuropathic pain medications (e.g., gabapentin) if needed\n\nb. State the recommended monitoring schedule for neuropathy in this patient (2 marks):\n   - Baseline neurological assessment\n   - Repeat assessment before each cycle of therapy"
+            },
+            {
+              "stem": "A 50-year-old female with metastatic breast cancer is started on capecitabine.",
+              "modelAnswer": "a. List three common adverse effects of capecitabine requiring dose modification (3 marks):\n   - Hand-foot syndrome\n   - Diarrhea\n   - Myelosuppression\n\nb. Outline the recommended management for capecitabine-induced hand-foot syndrome (2 marks):\n   - Dose reduction or interruption if grade ≥2 occurs\n   - Use of topical urea or corticosteroids for symptomatic relief"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 65-year-old male with metastatic non-small-cell lung cancer (NSCLC) is started on pembrolizumab monotherapy.",
+              "modelAnswer": "a. Describe the mechanism of action of pembrolizumab (3 marks):\n   - Pembrolizumab is a humanized monoclonal antibody that binds to the programmed death-1 (PD-1) receptor on T-cells.\n   - It blocks the interaction between PD-1 and its ligands (PD-L1 and PD-L2), thereby restoring anti-tumor T-cell activity.\n   - This enhances the immune system’s ability to recognize and attack tumor cells.\n\nb. List five immune-related adverse events (irAEs) associated with pembrolizumab and their management (12 marks):\n   1. Immune-mediated pneumonitis:\n      - Management: Hold pembrolizumab; administer corticosteroids (e.g., prednisone 1–2 mg/kg/day); consider infliximab if refractory.\n   2. Immune-mediated colitis:\n      - Management: Hold pembrolizumab; administer corticosteroids; consider infliximab if severe.\n   3. Immune-mediated hepatitis:\n      - Management: Hold pembrolizumab; administer corticosteroids; consider mycophenolate if refractory.\n   4. Immune-mediated endocrinopathies (e.g., hypothyroidism, hyperthyroidism):\n      - Management: Hormone replacement therapy (e.g., levothyroxine for hypothyroidism); antithyroid drugs (e.g., methimazole) for hyperthyroidism.\n   5. Immune-mediated dermatitis:\n      - Management: Hold pembrolizumab; administer topical corticosteroids for mild cases; systemic corticosteroids for severe cases.\n\nc. Outline the recommended monitoring schedule for this patient (5 marks):\n   - Baseline: Chest X-ray, liver function tests (LFTs), thyroid function tests (TFTs), cortisol, ACTH.\n   - During therapy: LFTs and TFTs every 4–6 weeks; clinical assessment for signs/symptoms of irAEs at each visit.\n   - If irAEs occur: More frequent monitoring and intervention as above."
+            },
+            {
+              "stem": "A 45-year-old female with metastatic colorectal cancer is started on FOLFOX regimen (folinic acid, 5-fluorouracil, oxaliplatin) and bevacizumab.",
+              "modelAnswer": "a. Describe the mechanism of action of bevacizumab (3 marks):\n   - Bevacizumab is a humanized monoclonal antibody that binds to vascular endothelial growth factor (VEGF).\n   - It inhibits VEGF, thereby blocking angiogenesis and reducing tumor blood supply.\n   - This leads to tumor starvation and inhibition of growth and metastasis.\n\nb. List five serious adverse effects of bevacizumab and their management (12 marks):\n   1. Hypertension:\n      - Management: Initiate or escalate antihypertensive therapy (e.g., ACE inhibitors, calcium channel blockers); hold bevacizumab if severe.\n   2. Proteinuria:\n      - Management: Monitor urine protein/creatinine ratio; hold bevacizumab if ≥2+ proteinuria or nephrotic syndrome.\n   3. Hemorrhage:\n      - Management: Hold bevacizumab permanently if grade ≥3 hemorrhage occurs; surgical intervention if needed.\n   4. Arterial thromboembolic events (e.g., stroke, myocardial infarction):\n      - Management: Hold bevacizumab permanently; initiate anticoagulation or antiplatelet therapy as appropriate.\n   5. Gastrointestinal perforation:\n      - Management: Hold bevacizumab permanently; surgical intervention if needed.\n\nc. Outline the recommended monitoring schedule for this patient (5 marks):\n   - Baseline: Blood pressure, urinalysis (protein/creatinine ratio), CBC, coagulation profile.\n   - During therapy: Blood pressure every 2–4 weeks; urinalysis every 2–4 weeks; clinical assessment for signs/symptoms of adverse effects at each visit.\n   - If adverse effects occur: More frequent monitoring and intervention as above."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Advanced Clinical Pharmacy: Oncology & Toxicology",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 62-year-old male with metastatic colorectal cancer is started on FOLFOX regimen (fluorouracil, leucovorin, oxaliplatin). Which of the following adverse effects is most specifically associated with oxaliplatin?",
+              "options": [
+                "a. Hand-foot syndrome",
+                "b. Ototoxicity",
+                "c. Cold-induced peripheral neuropathy",
+                "d. Pulmonary fibrosis"
+              ],
+              "answer": "c. Cold-induced peripheral neuropathy",
+              "explanation": "Oxaliplatin is associated with acute and chronic neurotoxicity, particularly cold-induced peripheral neuropathy due to its effects on voltage-gated sodium channels."
+            },
+            {
+              "stem": "A patient receiving high-dose methotrexate for osteosarcoma develops mucositis and bone marrow suppression. Which antidote is indicated to rescue normal cells from methotrexate toxicity?",
+              "options": [
+                "a. Deferoxamine",
+                "b. Leucovorin",
+                "c. N-acetylcysteine",
+                "d. Sodium bicarbonate"
+              ],
+              "answer": "b. Leucovorin",
+              "explanation": "Leucovorin (folinic acid) is used to rescue normal cells from methotrexate toxicity by bypassing the dihydrofolate reductase inhibition."
+            },
+            {
+              "stem": "A 55-year-old female with HER2-positive breast cancer is prescribed trastuzumab. Which of the following monitoring parameters is most critical during therapy?",
+              "options": [
+                "a. Serum potassium levels",
+                "b. Left ventricular ejection fraction (LVEF)",
+                "c. Serum creatinine",
+                "d. Hemoglobin levels"
+              ],
+              "answer": "b. Left ventricular ejection fraction (LVEF)",
+              "explanation": "Trastuzumab is associated with cardiotoxicity, so LVEF monitoring is essential to detect early signs of heart failure."
+            },
+            {
+              "stem": "A patient with acute myeloid leukemia receives cytarabine as part of induction chemotherapy. Which of the following adverse effects is most commonly associated with high-dose cytarabine?",
+              "options": [
+                "a. Hemorrhagic cystitis",
+                "b. Cerebellar toxicity",
+                "c. Ototoxicity",
+                "d. Nephrotoxicity"
+              ],
+              "answer": "b. Cerebellar toxicity",
+              "explanation": "High-dose cytarabine can cause cerebellar toxicity, manifesting as ataxia, dysarthria, and nystagmus."
+            },
+            {
+              "stem": "A 48-year-old male presents to the emergency department with confusion, flushing, and hypotension after accidental ingestion of a rodenticide containing warfarin. Which antidote should be administered immediately?",
+              "options": [
+                "a. Protamine sulfate",
+                "b. Vitamin K",
+                "c. N-acetylcysteine",
+                "d. Atropine"
+              ],
+              "answer": "b. Vitamin K",
+              "explanation": "Vitamin K is the antidote for warfarin toxicity, as it reverses the anticoagulant effect by promoting clotting factor synthesis."
+            },
+            {
+              "stem": "A patient with metastatic melanoma is started on ipilimumab. Which of the following immune-related adverse effects is most commonly associated with this therapy?",
+              "options": [
+                "a. Hypothyroidism",
+                "b. Hypercalcemia",
+                "c. Hypokalemia",
+                "d. Hypernatremia"
+              ],
+              "answer": "a. Hypothyroidism",
+              "explanation": "Ipilimumab can cause immune-related adverse effects, including hypothyroidism due to autoimmune thyroiditis."
+            },
+            {
+              "stem": "A 30-year-old female with acute promyelocytic leukemia is treated with all-trans retinoic acid (ATRA). Which of the following is a serious adverse effect of ATRA therapy?",
+              "options": [
+                "a. Tumor lysis syndrome",
+                "b. Differentiation syndrome",
+                "c. Hemolytic anemia",
+                "d. Pulmonary embolism"
+              ],
+              "answer": "b. Differentiation syndrome",
+              "explanation": "Differentiation syndrome is a serious adverse effect of ATRA, characterized by fever, dyspnea, weight gain, and pulmonary infiltrates."
+            },
+            {
+              "stem": "A patient with metastatic prostate cancer is started on abiraterone. Which of the following laboratory parameters should be monitored closely during therapy?",
+              "options": [
+                "a. Serum potassium",
+                "b. Serum calcium",
+                "c. Serum magnesium",
+                "d. Serum phosphate"
+              ],
+              "answer": "a. Serum potassium",
+              "explanation": "Abiraterone can cause hypokalemia due to mineralocorticoid excess, so serum potassium levels should be monitored closely."
+            },
+            {
+              "stem": "A 60-year-old male with chronic lymphocytic leukemia develops severe neutropenia after receiving fludarabine. Which growth factor is most appropriate to administer?",
+              "options": [
+                "a. Epoetin alfa",
+                "b. Filgrastim",
+                "c. Oprelvekin",
+                "d. Sargramostim"
+              ],
+              "answer": "b. Filgrastim",
+              "explanation": "Filgrastim is a granulocyte colony-stimulating factor (G-CSF) used to accelerate neutrophil recovery in patients with chemotherapy-induced neutropenia."
+            },
+            {
+              "stem": "A patient with metastatic renal cell carcinoma is started on sunitinib. Which of the following adverse effects is most commonly associated with this therapy?",
+              "options": [
+                "a. Hypothyroidism",
+                "b. Hyperthyroidism",
+                "c. Hypercalcemia",
+                "d. Hypocalcemia"
+              ],
+              "answer": "a. Hypothyroidism",
+              "explanation": "Sunitinib is associated with hypothyroidism due to its effects on thyroid hormone synthesis and metabolism."
+            },
+            {
+              "stem": "A 50-year-old female with breast cancer develops extravasation of doxorubicin. Which of the following is the most appropriate immediate intervention?",
+              "options": [
+                "a. Apply ice packs to the site",
+                "b. Administer hyaluronidase",
+                "c. Administer sodium thiosulfate",
+                "d. Apply warm compresses to the site"
+              ],
+              "answer": "a. Apply ice packs to the site",
+              "explanation": "For doxorubicin extravasation, cold compresses are recommended to minimize tissue damage, along with local antidote administration if available."
+            },
+            {
+              "stem": "A patient with acute iron poisoning presents with vomiting, diarrhea, and metabolic acidosis. Which antidote is indicated for this patient?",
+              "options": [
+                "a. Deferoxamine",
+                "b. N-acetylcysteine",
+                "c. Sodium bicarbonate",
+                "d. Calcium gluconate"
+              ],
+              "answer": "a. Deferoxamine",
+              "explanation": "Deferoxamine is the antidote for acute iron poisoning, as it chelates free iron and promotes its excretion."
+            },
+            {
+              "stem": "A 45-year-old male with metastatic colorectal cancer is started on bevacizumab. Which of the following adverse effects is most commonly associated with this therapy?",
+              "options": [
+                "a. Hypertension",
+                "b. Hypotension",
+                "c. Hyperglycemia",
+                "d. Hypocalcemia"
+              ],
+              "answer": "a. Hypertension",
+              "explanation": "Bevacizumab is associated with hypertension due to its effects on vascular endothelial growth factor (VEGF) inhibition."
+            },
+            {
+              "stem": "A patient with acute methanol poisoning presents with visual disturbances and metabolic acidosis. Which antidote is indicated for this patient?",
+              "options": [
+                "a. N-acetylcysteine",
+                "b. Ethanol or fomepizole",
+                "c. Sodium bicarbonate",
+                "d. Atropine"
+              ],
+              "answer": "b. Ethanol or fomepizole",
+              "explanation": "Ethanol or fomepizole inhibits alcohol dehydrogenase, preventing the formation of toxic metabolites in methanol poisoning."
+            },
+            {
+              "stem": "A 35-year-old female with metastatic breast cancer is started on palbociclib. Which of the following laboratory parameters should be monitored closely during therapy?",
+              "options": [
+                "a. Serum potassium",
+                "b. Serum calcium",
+                "c. Complete blood count (CBC)",
+                "d. Serum creatinine"
+              ],
+              "answer": "c. Complete blood count (CBC)",
+              "explanation": "Palbociclib can cause neutropenia and other hematologic toxicities, so CBC monitoring is essential."
+            },
+            {
+              "stem": "A patient with acute organophosphate poisoning presents with miosis, bradycardia, and excessive salivation. Which antidote is indicated for this patient?",
+              "options": [
+                "a. Atropine",
+                "b. N-acetylcysteine",
+                "c. Sodium bicarbonate",
+                "d. Protamine sulfate"
+              ],
+              "answer": "a. Atropine",
+              "explanation": "Atropine is the antidote for organophosphate poisoning, as it blocks muscarinic receptors and reverses cholinergic symptoms."
+            },
+            {
+              "stem": "A 65-year-old male with metastatic prostate cancer is started on enzalutamide. Which of the following adverse effects is most commonly associated with this therapy?",
+              "options": [
+                "a. Hypothyroidism",
+                "b. Hyperthyroidism",
+                "c. Seizures",
+                "d. Hypertension"
+              ],
+              "answer": "c. Seizures",
+              "explanation": "Enzalutamide is associated with an increased risk of seizures, particularly in patients with predisposing factors."
+            },
+            {
+              "stem": "A patient with acute acetaminophen poisoning presents with nausea, vomiting, and right upper quadrant pain. Which antidote is indicated for this patient?",
+              "options": [
+                "a. N-acetylcysteine",
+                "b. Deferoxamine",
+                "c. Sodium bicarbonate",
+                "d. Atropine"
+              ],
+              "answer": "a. N-acetylcysteine",
+              "explanation": "N-acetylcysteine is the antidote for acetaminophen poisoning, as it replenishes glutathione stores and prevents liver toxicity."
+            },
+            {
+              "stem": "A 50-year-old female with metastatic melanoma is started on pembrolizumab. Which of the following immune-related adverse effects is most commonly associated with this therapy?",
+              "options": [
+                "a. Hypothyroidism",
+                "b. Hyperthyroidism",
+                "c. Pneumonitis",
+                "d. Nephritis"
+              ],
+              "answer": "a. Hypothyroidism",
+              "explanation": "Pembrolizumab can cause immune-related hypothyroidism due to autoimmune thyroiditis."
+            },
+            {
+              "stem": "A patient with acute cyanide poisoning presents with altered mental status, lactic acidosis, and cherry-red skin. Which antidote is indicated for this patient?",
+              "options": [
+                "a. Sodium nitrite and sodium thiosulfate",
+                "b. N-acetylcysteine",
+                "c. Atropine",
+                "d. Protamine sulfate"
+              ],
+              "answer": "a. Sodium nitrite and sodium thiosulfate",
+              "explanation": "Sodium nitrite induces methemoglobinemia, which binds cyanide, and sodium thiosulfate converts cyanide to thiocyanate for renal excretion."
+            },
+            {
+              "stem": "A 40-year-old male with metastatic colorectal cancer is started on regorafenib. Which of the following adverse effects is most commonly associated with this therapy?",
+              "options": [
+                "a. Hypothyroidism",
+                "b. Hand-foot syndrome",
+                "c. Hypercalcemia",
+                "d. Hypokalemia"
+              ],
+              "answer": "b. Hand-foot syndrome",
+              "explanation": "Regorafenib is associated with hand-foot syndrome, characterized by painful erythema and swelling of the palms and soles."
+            },
+            {
+              "stem": "A patient with acute lead poisoning presents with abdominal pain, constipation, and anemia. Which antidote is indicated for this patient?",
+              "options": [
+                "a. Deferoxamine",
+                "b. Succimer",
+                "c. Sodium bicarbonate",
+                "d. N-acetylcysteine"
+              ],
+              "answer": "b. Succimer",
+              "explanation": "Succimer is an oral chelating agent used for the treatment of lead poisoning in children and adults."
+            },
+            {
+              "stem": "A 55-year-old female with metastatic breast cancer is started on everolimus. Which of the following laboratory parameters should be monitored closely during therapy?",
+              "options": [
+                "a. Serum potassium",
+                "b. Serum calcium",
+                "c. Fasting lipid profile",
+                "d. Serum creatinine"
+              ],
+              "answer": "c. Fasting lipid profile",
+              "explanation": "Everolimus can cause hyperlipidemia, so fasting lipid profiles should be monitored during therapy."
+            },
+            {
+              "stem": "A patient with acute arsenic poisoning presents with gastrointestinal symptoms, hypotension, and QT prolongation. Which antidote is indicated for this patient?",
+              "options": [
+                "a. Deferoxamine",
+                "b. Dimercaprol",
+                "c. Sodium bicarbonate",
+                "d. N-acetylcysteine"
+              ],
+              "answer": "b. Dimercaprol",
+              "explanation": "Dimercaprol is a chelating agent used for the treatment of arsenic poisoning, as it binds arsenic and promotes its excretion."
+            },
+            {
+              "stem": "A 60-year-old male with metastatic prostate cancer is started on radium-223. Which of the following adverse effects is most commonly associated with this therapy?",
+              "options": [
+                "a. Myelosuppression",
+                "b. Nephrotoxicity",
+                "c. Hepatotoxicity",
+                "d. Ototoxicity"
+              ],
+              "answer": "a. Myelosuppression",
+              "explanation": "Radium-223 is a radiopharmaceutical that can cause myelosuppression due to its effects on bone marrow."
+            },
+            {
+              "stem": "A patient with acute carbon monoxide poisoning presents with headache, dizziness, and cherry-red skin. Which antidote is indicated for this patient?",
+              "options": [
+                "a. Oxygen",
+                "b. N-acetylcysteine",
+                "c. Sodium bicarbonate",
+                "d. Atropine"
+              ],
+              "answer": "a. Oxygen",
+              "explanation": "Oxygen is the primary antidote for carbon monoxide poisoning, as it displaces carbon monoxide from hemoglobin and promotes its elimination."
+            },
+            {
+              "stem": "A 45-year-old female with metastatic breast cancer is started on ribociclib. Which of the following laboratory parameters should be monitored closely during therapy?",
+              "options": [
+                "a. Serum potassium",
+                "b. Serum calcium",
+                "c. Fasting glucose",
+                "d. Serum creatinine"
+              ],
+              "answer": "c. Fasting glucose",
+              "explanation": "Ribociclib can cause hyperglycemia, so fasting glucose levels should be monitored during therapy."
+            },
+            {
+              "stem": "A patient with acute mercury poisoning presents with gastrointestinal symptoms, metallic taste, and renal failure. Which antidote is indicated for this patient?",
+              "options": [
+                "a. Deferoxamine",
+                "b. Dimercaprol",
+                "c. Succimer",
+                "d. N-acetylcysteine"
+              ],
+              "answer": "c. Succimer",
+              "explanation": "Succimer is an oral chelating agent used for the treatment of mercury poisoning, as it binds mercury and promotes its excretion."
+            },
+            {
+              "stem": "A 50-year-old male with metastatic renal cell carcinoma is started on cabozantinib. Which of the following adverse effects is most commonly associated with this therapy?",
+              "options": [
+                "a. Hypothyroidism",
+                "b. Hand-foot syndrome",
+                "c. Hypertension",
+                "d. Hypercalcemia"
+              ],
+              "answer": "c. Hypertension",
+              "explanation": "Cabozantinib is associated with hypertension due to its effects on vascular endothelial growth factor (VEGF) inhibition."
+            },
+            {
+              "stem": "A patient with acute ethylene glycol poisoning presents with metabolic acidosis and calcium oxalate crystals in the urine. Which antidote is indicated for this patient?",
+              "options": [
+                "a. Ethanol or fomepizole",
+                "b. Sodium bicarbonate",
+                "c. N-acetylcysteine",
+                "d. Atropine"
+              ],
+              "answer": "a. Ethanol or fomepizole",
+              "explanation": "Ethanol or fomepizole inhibits alcohol dehydrogenase, preventing the formation of toxic metabolites in ethylene glycol poisoning."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 68-year-old male with metastatic prostate cancer is started on abiraterone. Outline a pharmaceutical care plan for this patient, including key monitoring parameters and patient counseling points.",
+              "modelAnswer": "1. **Monitoring Parameters**:\n   - Serum potassium (risk of hypokalemia due to mineralocorticoid excess).\n   - Liver function tests (risk of hepatotoxicity).\n   - Blood pressure (risk of hypertension).\n   - Signs of adrenal insufficiency (fatigue, hypotension, hyponatremia).\n\n2. **Patient Counseling Points**:\n   - Take abiraterone on an empty stomach (1 hour before or 2 hours after meals) with water.\n   - Avoid grapefruit and St. John’s wort, as they can increase abiraterone levels.\n   - Report symptoms of hypokalemia (muscle weakness, cramps) or liver dysfunction (jaundice, dark urine).\n   - Ensure concurrent prednisone therapy to prevent adrenal insufficiency.\n\n3. **Drug Interactions**:\n   - Avoid strong CYP3A4 inducers (e.g., rifampin, carbamazepine) and inhibitors (e.g., ketoconazole)."
+            },
+            {
+              "stem": "A 55-year-old female with HER2-positive breast cancer is prescribed trastuzumab. Describe the mechanism of action, key adverse effects, and monitoring recommendations for this therapy.",
+              "modelAnswer": "1. **Mechanism of Action**:\n   - Trastuzumab is a monoclonal antibody that binds to the HER2 receptor, inhibiting tumor cell proliferation and promoting immune-mediated cell death.\n\n2. **Key Adverse Effects**:\n   - Cardiotoxicity (reduced LVEF, heart failure).\n   - Infusion-related reactions (fever, chills, dyspnea).\n   - Pulmonary toxicity (rare, but can cause interstitial lung disease).\n\n3. **Monitoring Recommendations**:\n   - Baseline and periodic LVEF assessment (echocardiogram or MUGA scan).\n   - Monitor for signs of heart failure (dyspnea, edema, fatigue).\n   - Assess for infusion-related reactions and premedicate if necessary.\n   - Educate patients on reporting symptoms of cardiotoxicity or pulmonary toxicity."
+            },
+            {
+              "stem": "A 40-year-old male presents to the emergency department with confusion, flushing, and hypotension after accidental ingestion of a rodenticide containing warfarin. Outline the management steps for this patient, including antidote selection and monitoring.",
+              "modelAnswer": "1. **Initial Management**:\n   - Stabilize the patient (airway, breathing, circulation).\n   - Obtain a detailed history of ingestion (time, amount, co-ingestants).\n   - Perform a physical examination (signs of bleeding, mental status).\n\n2. **Antidote Selection**:\n   - Administer vitamin K (phytonadione) 10 mg IV or orally, depending on the severity of bleeding.\n   - Consider fresh frozen plasma (FFP) or prothrombin complex concentrate (PCC) for life-threatening bleeding.\n\n3. **Monitoring**:\n   - Monitor INR/PT regularly (goal: normalize within 24–48 hours).\n   - Assess for signs of bleeding (hematuria, melena, epistaxis).\n   - Provide supportive care (IV fluids, blood transfusions if necessary).\n\n4. **Patient Counseling**:\n   - Educate on the importance of avoiding future exposure to rodenticides.\n   - Advise on the need for long-term vitamin K therapy if indicated."
+            },
+            {
+              "stem": "A 35-year-old female with metastatic melanoma is started on pembrolizumab. Describe the immune-related adverse effects (irAEs) associated with this therapy and outline a monitoring plan for this patient.",
+              "modelAnswer": "1. **Common irAEs**:\n   - Endocrinopathies (hypothyroidism, hyperthyroidism, adrenal insufficiency).\n   - Dermatologic toxicities (rash, pruritus).\n   - Gastrointestinal toxicities (colitis, diarrhea).\n   - Hepatotoxicity (elevated liver enzymes).\n   - Pneumonitis (cough, dyspnea).\n\n2. **Monitoring Plan**:\n   - Baseline and periodic thyroid function tests (TSH, free T4).\n   - Liver function tests (AST, ALT, bilirubin) every 4–6 weeks.\n   - Renal function tests (creatinine, BUN).\n   - Assess for dermatologic, gastrointestinal, and pulmonary symptoms.\n\n3. **Management of irAEs**:\n   - Hold pembrolizumab for grade ≥2 toxicities.\n   - Administer corticosteroids (e.g., prednisone 1–2 mg/kg/day) for moderate to severe toxicities.\n   - Consider additional immunosuppressive agents (e.g., infliximab for colitis) if refractory."
+            },
+            {
+              "stem": "A 60-year-old male with metastatic colorectal cancer is started on regorafenib. Outline the key adverse effects of this therapy and describe the pharmaceutical care interventions to mitigate these effects.",
+              "modelAnswer": "1. **Key Adverse Effects**:\n   - Hand-foot syndrome (painful erythema, swelling of palms/soles).\n   - Hypertension (due to VEGF inhibition).\n   - Hepatotoxicity (elevated liver enzymes).\n   - Fatigue and diarrhea.\n\n2. **Pharmaceutical Care Interventions**:\n   - **Hand-foot syndrome**:\n     - Advise patients to use emollients and avoid hot water.\n     - Consider dose reduction or temporary interruption for severe cases.\n   - **Hypertension**:\n     - Monitor blood pressure regularly and initiate antihypertensive therapy if necessary.\n   - **Hepatotoxicity**:\n     - Monitor liver function tests (AST, ALT, bilirubin) every 2 weeks.\n     - Hold regorafenib for grade ≥3 hepatotoxicity.\n   - **Diarrhea**:\n     - Advise patients to maintain hydration and use antidiarrheal agents (e.g., loperamide) as needed.\n   - **Patient Counseling**:\n     - Educate on the importance of adherence and symptom reporting.\n     - Provide strategies for managing fatigue (e.g., pacing activities)."
+            },
+            {
+              "stem": "A 50-year-old female with metastatic breast cancer is started on everolimus. Describe the mechanism of action, key adverse effects, and monitoring recommendations for this therapy.",
+              "modelAnswer": "1. **Mechanism of Action**:\n   - Everolimus is an mTOR inhibitor that blocks the PI3K/AKT/mTOR pathway, inhibiting tumor cell growth and proliferation.\n\n2. **Key Adverse Effects**:\n   - Hyperlipidemia (elevated LDL, triglycerides).\n   - Hyperglycemia (insulin resistance).\n   - Stomatitis (mouth ulcers).\n   - Pneumonitis (rare, but can cause cough and dyspnea).\n   - Myelosuppression (mild, but possible).\n\n3. **Monitoring Recommendations**:\n   - Fasting lipid profile (baseline and every 6–12 months).\n   - Fasting glucose and HbA1c (baseline and every 3–6 months).\n   - Liver function tests (AST, ALT, bilirubin).\n   - Renal function tests (creatinine, BUN).\n   - Assess for signs of pneumonitis or stomatitis.\n\n4. **Patient Counseling**:\n   - Advise on dietary modifications to manage hyperlipidemia and hyperglycemia.\n   - Educate on oral hygiene to prevent stomatitis.\n   - Report symptoms of pneumonitis (cough, shortness of breath)."
+            },
+            {
+              "stem": "A 45-year-old male with metastatic renal cell carcinoma is started on cabozantinib. Outline the key adverse effects of this therapy and describe the pharmaceutical care interventions to mitigate these effects.",
+              "modelAnswer": "1. **Key Adverse Effects**:\n   - Hypertension (due to VEGF inhibition).\n   - Hand-foot syndrome (painful erythema, swelling).\n   - Diarrhea.\n   - Hypothyroidism.\n   - Fatigue.\n\n2. **Pharmaceutical Care Interventions**:\n   - **Hypertension**:\n     - Monitor blood pressure regularly and initiate antihypertensive therapy (e.g., ACE inhibitors, calcium channel blockers).\n   - **Hand-foot syndrome**:\n     - Advise patients to use emollients and avoid hot water.\n     - Consider dose reduction or temporary interruption for severe cases.\n   - **Diarrhea**:\n     - Advise patients to maintain hydration and use antidiarrheal agents (e.g., loperamide) as needed.\n   - **Hypothyroidism**:\n     - Monitor thyroid function tests (TSH, free T4) every 6–8 weeks.\n     - Initiate levothyroxine if hypothyroidism develops.\n   - **Patient Counseling**:\n     - Educate on the importance of adherence and symptom reporting.\n     - Provide strategies for managing fatigue (e.g., pacing activities)."
+            },
+            {
+              "stem": "A 30-year-old female with acute promyelocytic leukemia is treated with all-trans retinoic acid (ATRA). Describe the differentiation syndrome associated with this therapy and outline the management steps for this adverse effect.",
+              "modelAnswer": "1. **Differentiation Syndrome**:\n   - Characterized by fever, dyspnea, weight gain, pulmonary infiltrates, and hypotension.\n   - Occurs due to rapid differentiation of promyelocytes into mature myeloid cells, leading to cytokine release and capillary leak.\n\n2. **Management Steps**:\n   - **Immediate Management**:\n     - Hold ATRA temporarily.\n     - Administer dexamethasone 10 mg IV every 12 hours until symptoms resolve.\n   - **Supportive Care**:\n     - Provide oxygen therapy for hypoxia.\n     - Monitor fluid balance and administer diuretics if necessary.\n     - Consider leukapheresis if leukocytosis is severe.\n   - **Reinitiation of ATRA**:\n     - Resume ATRA at a reduced dose once symptoms resolve.\n     - Monitor closely for recurrence of differentiation syndrome.\n\n3. **Patient Counseling**:\n   - Educate on the signs and symptoms of differentiation syndrome.\n   - Emphasize the importance of reporting symptoms immediately."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 55-year-old female with metastatic breast cancer is started on a combination of doxorubicin, cyclophosphamide, and paclitaxel. Outline a comprehensive pharmaceutical care plan for this patient, including supportive care measures, monitoring parameters, and patient counseling points.",
+              "modelAnswer": "### **Pharmaceutical Care Plan for Metastatic Breast Cancer Patient on Doxorubicin, Cyclophosphamide, and Paclitaxel**\n\n---\n\n#### **1. Chemotherapy Regimen Overview**\n- **Doxorubicin**: Anthracycline; mechanism: topoisomerase II inhibition, DNA intercalation; adverse effects: cardiotoxicity, myelosuppression, mucositis, alopecia.\n- **Cyclophosphamide**: Alkylating agent; mechanism: DNA cross-linking; adverse effects: hemorrhagic cystitis, myelosuppression, nausea/vomiting.\n- **Paclitaxel**: Taxane; mechanism: microtubule stabilization; adverse effects: peripheral neuropathy, myelosuppression, hypersensitivity reactions.\n\n---\n\n#### **2. Supportive Care Measures**\n\n**A. Antiemetic Therapy**\n- **Regimen**: Ondansetron (5-HT3 antagonist) + dexamethasone + aprepitant (NK1 antagonist) for acute and delayed nausea/vomiting.\n- **Rationale**: Highly emetogenic chemotherapy (HEC) requires triple therapy to prevent acute and delayed CINV.\n- **Monitoring**: Assess for breakthrough nausea/vomiting and adjust antiemetics as needed.\n\n**B. Cardiotoxicity Prevention**\n- **Baseline Assessment**: Echocardiogram (LVEF >50% required before doxorubicin).\n- **Cardioprotection**: Consider dexrazoxane if cumulative doxorubicin dose >300 mg/m².\n- **Monitoring**: Repeat echocardiogram after every 2–3 cycles or if symptoms of heart failure (dyspnea, edema) develop.\n\n**C. Myelosuppression Management**\n- **Growth Factor Support**: Filgrastim (G-CSF) for neutropenia prophylaxis (if risk >20%).\n- **Monitoring**: CBC with differential every 1–2 weeks during therapy.\n- **Dose Adjustments**: Hold chemotherapy for ANC <1.5 x 10⁹/L or platelets <100 x 10⁹/L.\n\n**D. Mucositis Prevention**\n- **Oral Care**: Chlorhexidine mouthwash, saline rinses, and topical lidocaine for pain.\n- **Dietary Advice**: Avoid spicy, acidic, or rough-textured foods.\n\n**E. Hemorrhagic Cystitis Prevention**\n- **Hydration**: Ensure adequate fluid intake (3 L/day) before and after cyclophosphamide.\n- **Mesna**: Administer if high-dose cyclophosphamide (>1 g/m²) is used.\n\n**F. Hypersensitivity Reactions (Paclitaxel)**\n- **Premedication**: Dexamethasone, diphenhydramine, and ranitidine 30–60 minutes before paclitaxel.\n- **Monitoring**: Observe for 30–60 minutes post-infusion for signs of hypersensitivity (rash, bronchospasm, hypotension).\n\n---\n\n#### **3. Monitoring Parameters**\n\n| **Parameter**               | **Frequency**               | **Action Threshold**                     |\n|-----------------------------|-----------------------------|------------------------------------------|\n| LVEF (Echocardiogram)       | Baseline, every 2–3 cycles | Hold doxorubicin if LVEF drops >10%      |\n| CBC with Differential       | Weekly during therapy       | Hold chemotherapy if ANC <1.5 x 10⁹/L   |\n| Liver Function Tests (LFTs) | Baseline, before each cycle | Hold if AST/ALT >3x ULN                  |\n| Renal Function Tests        | Baseline, before each cycle | Adjust cyclophosphamide dose if CrCl <30 mL/min |\n| Blood Pressure              | Before each cycle          | Initiate antihypertensives if >140/90 mmHg |\n| Neurologic Assessment       | Before each cycle          | Hold paclitaxel if grade ≥2 neuropathy   |\n\n---\n\n#### **4. Patient Counseling Points**\n\n**A. General Counseling**\n- **Adherence**: Emphasize the importance of attending all scheduled chemotherapy cycles.\n- **Symptom Reporting**: Educate on reporting fever (>38°C), severe fatigue, or signs of infection immediately.\n\n**B. Specific Adverse Effects**\n- **Cardiotoxicity**: Report shortness of breath, chest pain, or swelling.\n- **Neuropathy**: Avoid cold exposure to reduce symptoms; use gabapentin if needed.\n- **Mucositis**: Maintain oral hygiene and use prescribed mouthwashes.\n- **Nausea/Vomiting**: Take antiemetics as prescribed and report breakthrough symptoms.\n\n**C. Lifestyle Modifications**\n- **Diet**: Encourage a balanced diet rich in protein and calories to combat weight loss.\n- **Exercise**: Light to moderate exercise (e.g., walking) to reduce fatigue.\n- **Contraception**: Advise on avoiding pregnancy during therapy (teratogenic risk).\n\n**D. Drug Interactions**\n- **Avoid**: Grapefruit juice (inhibits CYP3A4, increasing paclitaxel levels).\n- **Caution**: Concurrent use of nephrotoxic or hepatotoxic drugs (e.g., NSAIDs, certain antibiotics).\n\n---\n\n#### **5. Follow-Up and Transition to Survivorship**\n- **Survivorship Care Plan**: Develop a plan for long-term monitoring (e.g., annual mammograms, cardiac assessments).\n- **Psychosocial Support**: Refer to counseling or support groups for emotional well-being.\n- **Bone Health**: Consider bisphosphonates or denosumab if at risk for osteoporosis (due to aromatase inhibitor use post-chemotherapy).\n\n---\n\n**Conclusion**:\nThis comprehensive pharmaceutical care plan ensures optimal management of chemotherapy-related toxicities while supporting the patient’s overall well-being. Regular monitoring and patient education are critical to achieving the best possible outcomes."
+            },
+            {
+              "stem": "A 40-year-old male presents to the emergency department with altered mental status, vomiting, and a fruity odor on his breath after ingesting an unknown substance. Laboratory results reveal severe metabolic acidosis with an elevated anion gap. Outline a step-by-step management plan for this patient, including differential diagnosis, antidote selection, and monitoring.",
+              "modelAnswer": "### **Management Plan for Toxic Alcohol Poisoning (Methanol or Ethylene Glycol)**\n\n---\n\n#### **1. Initial Assessment and Stabilization**\n\n**A. Primary Survey (ABCs)**\n- **Airway**: Ensure patent airway; intubate if necessary (e.g., severe respiratory depression).\n- **Breathing**: Administer oxygen if hypoxic; monitor SpO₂ and ABGs.\n- **Circulation**: Establish IV access; monitor blood pressure and heart rate.\n- **Disability**: Assess Glasgow Coma Scale (GCS); consider naloxone if opioid co-ingestion suspected.\n\n**B. History and Physical Examination**\n- **History**: Obtain details of ingestion (time, amount, co-ingestants, intent).\n- **Physical Exam**:\n  - **Methanol**: Visual disturbances (blurred vision, \"snowstorm\" appearance), optic disc hyperemia.\n  - **Ethylene Glycol**: Flank pain, oliguria, calcium oxalate crystals in urine (envelope-shaped).\n  - **General**: Fruity odor on breath (ketones or toxic alcohols), altered mental status.\n\n**C. Differential Diagnosis**\n- **Toxic Alcohols**: Methanol, ethylene glycol, isopropanol.\n- **Other Causes of Anion Gap Metabolic Acidosis**: Diabetic ketoacidosis (DKA), lactic acidosis, salicylate poisoning, uremia.\n- **Co-ingestions**: Ethanol, benzodiazepines, opioids.\n\n---\n\n#### **2. Laboratory Investigations**\n\n**A. Critical Labs**\n- **Arterial Blood Gas (ABG)**: Confirms metabolic acidosis (pH <7.35, HCO₃⁻ <20 mEq/L, elevated anion gap).\n- **Serum Electrolytes**: Sodium, potassium, chloride, bicarbonate, anion gap calculation.\n- **Serum Osmolality**: Elevated in toxic alcohol ingestion (osmolal gap >10 mOsm/kg).\n- **Ethanol Level**: Rule out co-ingestion.\n- **Toxic Alcohol Levels**: Methanol or ethylene glycol levels (if available).\n- **Urinalysis**: Check for calcium oxalate crystals (ethylene glycol) or myoglobinuria (rhabdomyolysis).\n- **Lactate Level**: Rule out lactic acidosis (e.g., metformin, sepsis).\n- **Ketones**: Negative in methanol/ethylene glycol poisoning (distinguishes from DKA).\n\n**B. Imaging**\n- **CT Head**: Rule out intracranial pathology if altered mental status persists.\n- **Chest X-ray**: Assess for aspiration pneumonia or pulmonary edema.\n\n---\n\n#### **3. Antidote Selection and Administration**\n\n**A. Ethanol or Fomepizole (First-Line Antidotes)**\n- **Mechanism**: Inhibits alcohol dehydrogenase, preventing the formation of toxic metabolites (formic acid for methanol, glycolic acid for ethylene glycol).\n- **Indications**:\n  - Suspected toxic alcohol ingestion with metabolic acidosis (pH <7.3) OR\n  - Serum methanol/ethylene glycol level >20 mg/dL OR\n  - Osmolal gap >10 mOsm/kg with high clinical suspicion.\n\n**B. Dosing Regimens**\n\n| **Antidote**       | **Loading Dose**               | **Maintenance Dose**               | **Monitoring**                     |\n|--------------------|--------------------------------|------------------------------------|------------------------------------|\n| **Ethanol (IV)**   | 10 mL/kg of 10% ethanol IV over 30 min | 1.5–2 mL/kg/h IV to maintain serum ethanol 100–150 mg/dL | Serum ethanol levels every 2–4 hours |\n| **Ethanol (PO)**   | 2 mL/kg of 40% ethanol (vodka) | 0.2–0.4 mL/kg/h to maintain serum ethanol 100–150 mg/dL | Serum ethanol levels every 2–4 hours |\n| **Fomepizole (IV)**| 15 mg/kg IV over 30 min        | 10 mg/kg IV every 12 hours (after 12 hours, increase to 15 mg/kg) | Serum fomepizole levels (if available) |\n\n**C. Choice of Antidote**\n- **Fomepizole Preferred**: Safer, no CNS depression, easier to titrate.\n- **Ethanol Alternative**: Use if fomepizole unavailable; monitor closely for CNS depression.\n\n---\n\n#### **4. Adjunctive Therapies**\n\n**A. Sodium Bicarbonate (for Severe Acidosis)**\n- **Dose**: 1–2 mEq/kg IV bolus, then titrate to maintain pH >7.3.\n- **Rationale**: Corrects acidosis, improves tissue oxygenation, and enhances renal elimination of toxic metabolites.\n- **Monitoring**: ABGs every 2–4 hours.\n\n**B. Folinic Acid (Leucovorin) for Methanol Poisoning**\n- **Dose**: 50 mg IV every 6 hours.\n- **Rationale**: Enhances formic acid metabolism and reduces optic nerve toxicity.\n\n**C. Thiamine and Pyridoxine for Ethylene Glycol Poisoning**\n- **Thiamine**: 100 mg IV daily (enhances metabolism of glycolic acid to non-toxic metabolites).\n- **Pyridoxine**: 50 mg IV every 6 hours (cofactor for ethylene glycol metabolism).\n\n**D. Hemodialysis (Indications)**\n- **Criteria**:\n  - Severe acidosis (pH <7.25) unresponsive to bicarbonate.\n  - Renal failure or electrolyte imbalances (e.g., hyperkalemia).\n  - Serum methanol/ethylene glycol level >50 mg/dL.\n  - Visual disturbances (methanol) or renal failure (ethylene glycol).\n- **Duration**: Continue until methanol/ethylene glycol level <20 mg/dL and acidosis resolves.\n\n---\n\n#### **5. Monitoring and Follow-Up**\n\n**A. Serial Labs**\n- **ABGs**: Every 2–4 hours until acidosis resolves.\n- **Electrolytes**: Every 4–6 hours (correct hypokalemia, hyperkalemia, or other imbalances).\n- **Renal Function**: BUN, creatinine, urine output (ethylene glycol).\n- **Liver Function**: AST, ALT, bilirubin (methanol-induced hepatic injury).\n- **Toxic Alcohol Levels**: Every 4–6 hours until <20 mg/dL.\n\n**B. Clinical Monitoring**\n- **Neurologic Status**: Assess GCS, pupillary response (methanol toxicity).\n- **Cardiopulmonary Status**: Monitor for arrhythmias, pulmonary edema.\n- **Renal Output**: Ensure adequate urine output (>0.5 mL/kg/h).\n\n**C. Disposition**\n- **ICU Admission**: For severe poisoning, hemodynamic instability, or need for hemodialysis.\n- **Psychiatric Evaluation**: If intentional ingestion (suicide attempt).\n- **Follow-Up**: Arrange outpatient toxicology or nephrology follow-up if renal injury persists.\n\n---\n\n#### **6. Patient and Family Counseling**\n\n**A. Immediate Counseling**\n- **Explain Diagnosis**: Clarify the cause of poisoning and the rationale for antidote therapy.\n- **Prognosis**: Discuss potential outcomes (e.g., visual loss in methanol poisoning, renal failure in ethylene glycol poisoning).\n\n**B. Long-Term Counseling**\n- **Avoidance**: Educate on avoiding toxic alcohols (e.g., windshield washer fluid, antifreeze).\n- **Safe Storage**: Advise on secure storage of household chemicals.\n- **Support Services**: Refer to counseling or social work if intentional ingestion.\n\n---\n\n#### **7. Special Considerations**\n\n**A. Pregnancy**\n- **Methanol/Ethylene Glycol**: Both are teratogenic; consider early hemodialysis to reduce fetal exposure.\n- **Fomepizole**: Preferred over ethanol in pregnancy (safer profile).\n\n**B. Pediatric Patients**\n- **Dosing**: Adjust antidote doses for weight.\n- **Presentation**: May present with nonspecific symptoms (e.g., vomiting, lethargy).\n\n**C. Co-Ingestions**\n- **Ethanol**: May delay toxic alcohol metabolism; monitor closely.\n- **Benzodiazepines/Opioids**: May exacerbate CNS depression; consider naloxone if indicated.\n\n---\n\n**Conclusion**:\nThis step-by-step management plan ensures rapid stabilization, correct antidote selection, and close monitoring to optimize outcomes in toxic alcohol poisoning. Early intervention with fomepizole or ethanol, correction of acidosis, and consideration of hemodialysis are critical to preventing permanent organ damage."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

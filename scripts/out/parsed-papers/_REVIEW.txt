@@ -1,0 +1,3874 @@
+==========================================================================================
+3101 — Pharmacology I — General Principles of Pharmacology
+==========================================================================================
+
+
+SECTION A (30)
+----------------------------------------
+### A1
+Loading dose of a drug is given:
+A. To achieve steady state concentration in short time
+B. For drugs with short t½
+C. To reduce complications
+D. All of the above
+
+### A2
+Which of the following parameters signifiesthe effective drug removal from the body?
+A. Clearance
+B. Bioavailability
+C. Safety
+D. Volume of distribution
+
+### A3
+Elimination after 4 half-lives in first order kinetic is:
+A. 84%
+B. 93%
+C. 80.5%
+D. 75%
+
+### A4
+Which of the following is an effect of grapefruit juice on drug metabolism?
+A. Enzyme inducer
+B. Enzyme inhibitor
+C. Inhibits tubular secretion
+D. Inhibits tubular re absorption
+
+### A5
+Which of the following statements is correct?
+A. Rectally administered drugs bypass completely the hepatic first pass.
+B. Weak acids are absorbed efficiently across the cells of the stomach.
+C. Most drugs are absorbed in the distal part of the small intestine.
+D. Increased protein binding enhances drug absorption.
+
+### A6
+Drugs A and B have a high affinity for albumin. Drug A is administered in amounts that do not exceed the binding capacity of albumin. If drug B is added in amounts100 times the binding capacity of albumin, which of the following occurs after administration of drug B?
+A. A decrease in the bioavailability of drug A
+B. A decrease in the half-life of drug A
+C. A decrease in the volume of distribution of drug A
+D. An increase in the tissue concentrations of drug A
+
+### A7
+One of these may decrease drug metabolism:
+A. Cheese
+B. cabbage
+C. brussels
+D. charcoal-broiled food
+
+### A8
+A deficiency in protein may lead to:
+A. shorter drug half-life
+B. lower rate of biotransformation
+C. poor drug absorption
+D. high volume of distribution
+
+### A9
+Rapid acetylators of isoniazid are prone to develop:
+A. Peripheral neuropathy
+B. Drug- induced hepatitis
+C. Cardiotoxicity
+D. Rheumatoid arthritis
+
+### A10
+Physiological processes mediated by the intracellular second messenger, cyclic AMP: Except?
+A. carbohydrate breakdown by the liver
+B. decreased heart rate
+C. smooth muscle relaxation
+D. triglyceride breakdown
+
+### A11
+An example of an agent that exerts much of its effects through intracellular receptors that in complex form binds to DNA response elements:
+A. acetylcholine
+B. dopamine
+C. corticosteroids
+D. diltiazem
+
+### A12
+Which one of the following drug receptor classes have been best described and characterized?
+A. enzymes
+B. structural proteins
+C. transport proteins
+D. regulatory proteins
+
+### A13
+Which one of the statements best describes an "orphan" receptor?
+A. A receptor for which the function is unknown.
+B. A receptor for which no naturally occurring (endogenous) agent has been identified.
+C. A receptor associated with a rare disease?
+D. A receptor which is associated with disease but which has not attracted significant research interest?
+
+### A14
+The pharmacological action of this agent is not mediated by a "macromolecular" receptor molecule.
+A. Propranolol
+B. Mannitol
+C. Prazosin
+D. Atenolol
+
+### A15
+Which of the following cytochrome P450 isoenzymes is involved in the metabolism of largest number of drugs in human beings and has been implicated in some dangerous drug interactions:
+A. CYP 3A4
+B. CYP 2C9
+C. CYP 2E1
+D. CYP 1A2
+
+### A16
+The following is not true of the cytochrome P450 isoenzyme CYP2D6:
+A. It generates the hepatotoxic metabolite N-acetyl benzoquinone imine from paracetamol
+B. It is involved in demethylation of codeine into morphine
+C. Its altered form is responsible for poor capacity to hydroxylate many drugs including metoprolol
+D. It is inhibited by quinidine
+
+### A17
+Microsomal enzyme induction can be a cause of:
+A. Tolerance
+B. Physical dependence
+C. Psychological dependence
+D. Idiosyncrasy
+
+### A18
+The following drug metabolizing reaction is entirely non-microsomal:
+A. Glucuronide conjugation
+B. Acetylation
+C. Oxidation
+D. Reduction
+
+### A19
+Azithromycin, an antibiotic, has an apparent volume of distribution (Vd) of approximately 30 L/kg. The best interpretation of this information is that azithromycin is which of the following?
+A. Effective only when given intravenously
+B. Eliminated mainly by renal excretion, without prior metabolism
+C. Extensively distributed to sites outside the vascular and interstitial spaces
+D. Unable to cross the blood-brain or placental barriers
+
+### A20
+We want to estimate, following drug administration, some measure that most reliably reflects the total amount of drug reaching the target tissue(s), over time. We’re giving the drug orally. Which of the following would provide that measure best?
+A. Area under the blood concentration-time curve (AUC)
+B. Peak (maximum) blood concentration
+C. Product of the Vd and the first-order rate constant
+D. Time-to-peak blood concentration
+
+### A21
+Which of the following is the term used to describe the elimination rate via metabolism catalyzed by alcohol dehydrogenase when the enzyme is saturated?
+A. Zero-order kinetics
+B. First-order elimination
+C. Clearance
+D. Redistribution
+
+### A22
+Erythromycin is prescribed ‘‘qid,’’ or four times daily, because of its short half-life. The rationale for such a frequent dosing schedule is
+A. To achieve the steady-state plasma concentration of the drug
+B. To aid more complete distribution of the drug
+C. To inhibit the first-pass metabolism of the drug
+D. To ensure that the drug concentration remains constant over time
+
+### A23
+If the oral dosing rate of a drug is held constant, what will be the effect of increasing the bioavailability of the preparation?
+A. Increase the half-life for first-order elimination
+B. Decrease the first-order elimination rate constant
+C. Increase the steady-state plasma concentration
+D. Decrease the total body clearance
+
+### A24
+A drug is administered in the form of an inactive pro-drug. The pro-drug increases the expression of a cytochrome P-450 that converts the pro-drug to its active form. With chronic, long-term administration of the pro-drug, which of the following will be observed?
+A. The potency will decrease
+B. The potency will increase
+C. The efficacy will decrease
+D. The efficacy will increase
+
+### A25
+A drug is administered in the form of an inactive pro-drug. The pro-drug increases the expression of a cytochrome P-450 that converts the pro-drug to its active form. With chronic, long-term administration of the pro-drug, which of the following will be observed?
+A. The potency will decrease
+B. The potency will increase
+C. The efficacy will decrease
+D. The efficacy will increase
+
+### A26
+Thiopentone is used for induction of anaesthesia. It shows marked redistribution which is a characteristic of:
+A. Highly lipid soluble drugs
+B. Highly water-soluble drugs
+C. Weak electrolytes
+D. Highly plasma protein bound drugs
+
+### A27
+Which does not induce microsomal enzymes?
+A. Cimetidine
+B. Griseofulvin
+C. Rifampicin
+D. Phenobarbitone
+
+### A28
+Apparent volume of distribution (Vd) of a drug exceeds total body fluid volume, if a drug is:
+A. Sequestrated in body tissues
+B. Slowly eliminated from body
+C. Poorly soluble in plasma
+D. Highly bound to plasma proteins
+
+### A29
+Which of the following drugs binds to albumin?
+A. Penicillin
+B. Lidocaine
+C. Propanolol
+D. Verapamil
+
+### A30
+A drug is being administered that has a high first pass effect. The Doctor has changed the route from IV (Intravenous) to PO (Oral). Which of the following would you expect for the new oral dose?
+A. It would be higher because of the first pass effect
+B. It would be lower because of the first pass effect
+C. It would be the same as the IV dose
+D. No effect will be experienced
+
+
+SECTION B (3)
+----------------------------------------
+### B1
+Give the term that BEST defines the following terminologies (2 Marks each):
+1. is a science that deals with evolving a quantitative relationship between exposure to the drug (pharmacokinetics) and its response (pharmacodynamics), derived by constructing mathematical models based on few observations
+2. are drugs meant for the diagnosis, prevention or treatment of rare diseases.
+3. A pharmacologic antagonist that can be overcome by increasing the concentration of agonist
+4. A pharmacologic antagonist that cannot be overcome by increasing agonist concentration
+5. A drug that counters the effects of another by binding the agonist drug (not the receptor)
+6. The dose required to achieve a specific plasma drug concentration level with a single administration.
+7. The dose required for regular administration to maintain a target plasma level.
+8. The ratio of the amount of drug in the body to the drug concentration in the plasma or blood
+9. The ratio of the rate of elimination of a drug to the concentration of the drug in the plasma or blood
+10. represents the maximal ability of a drug to accomplish a particular type of effect.
+11. Reflects the amount of drug (the dose) required to cause a specific amount of effect.
+12. Reactions that convert the parent drug to a more polar (water-soluble) or more reactive product by unmasking or inserting a polar functional group
+13. Reactions that increase water solubility by conjugation of the drug molecule with a polar moiety
+
+### B2
+COVID-19 Pandemic has had a huge Global impact, Central to the fight against Covid-19 is the clinical development of drugs. You have been tasked as a drug Specialist to assist in undertaking Pharmacovigilance. Give a description of the SIX manifestations of Adverse Drug Reactions. (12 Marks)
+
+### B3
+500 mg of a drug is administered orally, 70% of the drug is absorbed. The hepatic extraction ratio is 65%. What is the overall bioavailability for this drug? (2 Marks)
+
+
+SECTION C (3)
+----------------------------------------
+### C1
+A patient presents to your Pharmacy Drug Store with a prescription. Unfortunately, you do not have the drug prescribed. You however wish to change the Generic Drug prescribed with a branded drug available. The Patient does not understand this and thus you ought to explain to him to understand.
+a) How will you explain and distinguish between: Branded Drug and Generic Drug? (8 Marks)
+b) The patient further asks you what is a Chemical Name. (2 Marks)
+c) Discuss five ideal properties of drugs. (5 Marks)
+
+### C2
+Discuss any 3 sources of drugs. (3 Marks)
+
+### C3
+COVID-19 Pandemic has had a huge Global impact, Central to the fight against Covid-19 is the clinical development of drugs. You have been tasked as a drug Specialist to assist in undertaking research on New Drug Development. Give a description of the four Clinical phases of New Drug Development. (12 Marks)
+
+==========================================================================================
+3102 — Pharmacology II — Autonomic Pharmacology
+==========================================================================================
+
+
+SECTION A (60)
+----------------------------------------
+### A1
+John presents to the hospital with confusion, delusions & inappropriate laughter. A physical exam reveals that John has a fever, elevated heart rate, dilated pupils, blurry vision, and an unusual pink flush color on his skin. He explains that he ingested some berries growing on a shrub near his home. Which of the following is the best drug for alleviating his symptoms?
+A. Physiostigmine
+B. Neostigmine
+C. Pralidoxime
+D. Atropine
+
+### A2
+A 43-year-old patient is recovering from abdominal surgery and develops post-operative urinary retention. A drug that you could give orally to treat this condition is?
+A. Tolterodine
+B. Clonidine
+C. Bethanechol
+D. Neostigmine
+
+### A3
+Brian is a 40-year-old patient with a previously diagnosed thymus gland disorder who presents with muscle weakness around the eyes (ptosis), as well as generalized muscle fatigue that gets worse with physical exertion. His symptoms are less severe after periods of rest. You suspect that he may have myasthenia gravis. To make a more definitive diagnosis, you run blood tests for elevated antibodies, and administer a drug that will likely produce a rapid transient reversal of his symptoms (e.g. improvement of his ptosis) if he indeed has myasthenia gravis. The drug you administer for your test is:
+A. Neostigmine
+B. Succinylcholine
+C. Edrophonium
+D. Echothiophate
+
+### A4
+A drug that would be a good choice for maintenance therapy of myasthenia gravis, and would not cross the blood-brain barrier is?
+A. Pyridostigmine
+B. Physiostigmine
+C. Edrophonium
+D. Glycopyrrolate
+
+### A5
+Methoxamine-induced bradycardia can be prevented by:
+A. Phentolamine
+B. Mecamylamine
+C. Atropine
+D. All of the choices
+
+### A6
+In which of the following ways does metopropol differ from propranolol?
+A. Metoprolol is used for the management of hypertension
+B. Metoprolol has some selectivity for beta2-adrenoceptors
+C. Metoprolol is less likely to reduce cardiac output
+D. Metoprolol is less likely to precipitate bronchoconstriction
+
+### A7
+Administration of a moderately high dose of epinephrine to a patient resultsin a severe decrease in blood pressure. Which of the following drugs might the patient have previously taken that could account for this unexpected effect?
+A. Cocaine
+B. Prazosin
+C. Atropine
+D. Guanethidine
+
+### A8
+A drug that stimulates beta1- and beta2-adreneceptors can be expected to cause:
+A. A decrease in heart rate
+B. A decrease in total peripheral resistance
+C. A constriction of airway smooth muscle resistance
+D. A decrease in renin release
+
+### A9
+Which of the following increases both magnitude of the blood pressure increase due to phenylephrine and the heart rate decrease due to methacholine?
+A. Timolol
+B. Clonidine
+C. Atropine
+D. Mecamylamine
+
+### A10
+Which of the following drugs can be used to reduce intraocular pressure in the treatment of glaucoma?
+A. Pilocarpine
+B. Acetazolamide
+C. Timolol
+D. All of the above
+
+### A11
+Dantrolene is the drug of choice to treat malignant hyperthermia caused by succinylcholine because:
+A. Dantrolene blocks calcium release from SR
+B. Dantrolene induces contraction of skeletal muscle
+C. Dantrolene increases the rate of succinylcholine metabolism
+D. Succinylcholine binding to nicotinic receptors is antagonized by dantrolene
+
+### A12
+A 65-year old male complains of losing his vision. Retinal examination reveals optic nerve cupping. Peripheral vision loss is observed on visual field tests, and his intraocular pressure is increased. Following treatment with a drug, he has improved visual acuity and decreased intraocular pressure. Which drug was he given?
+A. Scopolamine
+B. Atenolol
+C. Phentolamine
+D. Timolol
+
+### A13
+Hereditary deficiency of which of the following enzymes can lead to prolonged effects of succinylcholine?
+A. Glucose-6-phosphate dehydrogenase
+B. Plasma cholinesterase
+C. Cytochrome oxidase
+D. Liver transaminase
+
+### A14
+Drug X causes an increase in blood pressure and a decrease in heart rate when administered iv. If an antagonist at ganglionic nicotinic receptors is administered first, drug X causes an increase in blood pressure and an increase in heart rate. Drug X most likely is?
+A. Propranolol
+B. Isoproterenol
+C. Norepinephrine
+D. Tubocurarine
+
+### A15
+Clonidine and alpha-methyldopa act as agonists at alpha2-adrenoceptors to cause:
+A. A sustained increase in mean arterial pressure
+B. An increase in intestinal motility
+C. A CNS-mediated decrease in blood pressure
+D. An increase in myocardial contractility
+
+### A16
+Receptor actions of acetylcholine are mimicked by nicotine at which of the following sites?
+A. Adrenal medullary chromaffin cells
+B. Urinary bladder smooth muscle cells
+C. Iris circular (constrictor) muscle
+D. Heart sinoatrial pacemaker cells
+
+### A17
+Which one of the following drugs would decrease release of norepinephrine from noradrenergic nerves?
+A. Prazosin.
+B. Atropine.
+C. Phenylephrine.
+D. Clonidine.
+
+### A18
+Clinical studies have shown that adrenoceptor blockers have many useful effects in patients. However, a number of drug toxicities have been documented. Adverse effects that limit the use of adrenoceptor blockers include which one of the following?
+A. Bronchoconstriction from α-blocking agents
+B. Acute heart failure exacerbation from β blockers
+C. Impaired blood sugar response with α blockers
+D. Increased intraocular pressure with β blockers
+
+### A19
+Muscarinic cholinoceptor agonists may induce vasodilation largely by causing the release of endothelial:
+A. Acetylcholine
+B. Nitric oxide
+C. Histamine
+D. Norepinephrine
+
+### A20
+The reflex change in heart rate associated with administration of a low dose of metaproterenol could be blocked by administration of which one of the following agents?
+A. Atropine
+B. Prazosin
+C. Propranolol
+D. Physostigmine
+
+### A21
+During an experiment, drug X is added to a muscle bath containing a strip of guinea pig intestinal smooth muscle. Acetylcholine is added to the bath, and the resultant effects on muscle tension are recorded. The muscle tension increases on administration of acetylcholine. Which of the following types of drugs is most likely to produce effects most similar to those of drug X?
+A. α1-Adrenergic antagonist
+B. β-Adrenergic antagonist
+C. Cholinesterase inhibitor
+D. Muscarinic antagonist
+
+### A22
+A 72-year-old woman who has smoked 20 cigarettes daily for the past 38 years begins using eyedrops for glaucoma. Three days later, she has a marked increase in shortness of breath while walking up a flight of stairs. Which of the following drugs is the most likely cause of the development of shortness of breath in this patient?
+A. Phenylephrine
+B. Apraclonidine
+C. Epinephrine
+D. Timolol
+
+### A23
+Ms CM, a 65-year-old retired woman, reports to the Nakuru PGH Emergency Department after becoming suddenly ill following her evening meal. Her presenting features include marked perspiration, excessive tear formation, nausea, drooling, pinpoint pupils & bradycardia. When asked about her recent history, she mentions having made a salad for dinner containing store-bought lettuce, tomatoes, vinegar & oil dressing, and some wild mushrooms that she hand-picked from the overgrown section of her garden. Assuming she is suffering from food poisoning, what active ingredient would best explain her signs & symptoms?
+A. Atropine
+B. Cocaine
+C. Muscarine
+D. Scopolamine
+
+### A24
+Mikey is a 5-year-old boy brought to the hospital by his parents with an initial complaint of a ~24-hour recent history of odd behavior consisting of confusion, delusions & inappropriate laughter. A physical exam reveals that Mikey has a fever, elevated heart rate, dilated pupils, blurry vision, and an unusual pink flush color on his skin. His blood pressure is relatively normal. His parents mention that Mikey has seemed unusually thirsty, and has been drinking a large amount of water & juice over the past 12 hours. Upon further questioning, Mikey mentions that he recently consumed some berries growing on a shrub near their home. Based upon Mikey's symptoms, the active ingredient(s) in these berries have properties similar to:
+A. Atropine
+B. Pilocarpine
+C. Reserpine
+D. Tyramine
+
+### A25
+A 23-year-old patient recently diagnosed with asthma cannot tolerate the CNS side effects of his inhaled salbutamol. Which of the following would you prescribe as an alternative?
+A. Ipratropium
+B. Atropine
+C. Bethanechol
+D. Pyridostigmine
+
+### A26
+A 52-year-old man undergoes radiotherapy to treat a tumor in his neck. A side effect of his treatment is the development of salivary gland hypofunction, with associated dry mouth. A drug that could be used to treat this patient's condition is:
+A. Atropine
+B. Diphenhydramine
+C. Nicotine
+D. Pilocarpine
+
+### A27
+As a pharmacist in the Kenya Army, you are given orders to lead your troops into an area where there is a high probability of exposure to the nerve gas Soman. To protect you and your troops, you order them to take an oral medication approximately 8 hours before departure. This medication is:
+A. Atropine
+B. Echothiophate
+C. Pralidoxime
+D. Pyridostigmine
+
+### A28
+While on a medical mission in Syria, you are exposed to the nerve gas Sarin. Effective treatment typically involves the i.m. administration of:
+A. Atropine + pralidoxime
+B. Atropine + trimethaphan
+C. Pilocarpine + pralidoxime
+D. Tubocurarine + trimethaphan
+
+### A29
+A severely hypertensive man suffering from a dissecting aortic aneurysm is given trimethaphani.v. in order to rapidly lower his blood pressure. In addition to lowering of blood pressure, what other physiological effect would this drug produce?
+A. Blunting of all baroreceptor reflexes
+B. Bradycardia
+C. Increased GI motility & diarrhea
+D. Sweating
+
+### A30
+A 22-year-old patient involved in a alcohol-related car accident is brought into the hospital. Due to the patient's severe injuries and high risk for gastric aspiration, the physician decides to initiate a rapid sequence intubation to maintain and protect his airway prior to surgery. An intravenous line is placed in the patients arm, and the patient is given a bolus of propofol (general anesthetic), followed immediately by a bolus of a rapidly acting depolarizing neuromuscular blocking agent. Shortly thereafter, an endotracheal tube is inserted, and mechanical ventilation is initiated. The most likely drug given to produce skeletal muscle relaxation was:
+A. Atropine
+B. Neostigmine
+C. Succinylcholine
+D. Tubocurarine
+
+### A31
+John J is a 32-year-old man about to undergo surgery to remove his inflammed appendix. John has a family history of malignant hyperthermia, as well as a genetic disorder causing resulting in very low atypical pseudocholinesterase activity. Based on his medical history, John's surgeon uses caution when selecting both the type of general anesthetic and skeletal muscle relaxant prior to starting the procedure. What skeletal muscle relaxant should John's surgeon avoid using?
+A. Atracurium
+B. Pancuronium
+C. Rocuronium
+D. Suxamethonium
+
+### A32
+Succinylcholine has some significant side effects, one of which limits its use in patients suffering from major burns. This side effect is:
+A. Difficulty breathing
+B. Ganglionic blockade
+C. Histamine release
+D. Hyperkalemia
+
+### A33
+A relatively old woman places some home-made botanical eye drops in each eye before an upcoming date. Shortly thereafter her pupils become dilated & unresponsive to light. Later that evening she also discovers that she has extreme difficulty reading the restaurant menu. Regardless, her date finds her mysteriously attractive. What active ingredient did her eye drops most likely contain?
+A. Atropine
+B. Bethanechol
+C. Echothiophate
+D. Pilocarpine
+
+### A34
+Most patients 50 years and older are advised to have yearly eye exams. Part of the normal procedure for such eye exams involves administering eye drops to dilate the patient's pupils. What test would a good eye doctor perform prior to administering such eye drops?
+A. Blood pressure & body weight
+B. Credit history
+C. Intraocular pressure
+D. Temperature
+
+### A35
+Your 54-year-old patient undergoes intra-abdominal surgery for appendicitis. During his post-operative recovery, he develops constipation and abdominal discomfort due to a paralytic ileus (paralysis of the bowel) that can result from surgical manipulation of the intestines. From the list of options below, which would best treat his condition?
+A. Neostigmine
+B. Physostigmine
+C. Scopolamine
+D. Tubocurarine
+
+### A36
+A 2-year old child is brought into the emergency department by her parents suffering from signs and symptoms including altered mental status, drooling, sweating, nausea, diarrhea, urination, vomiting, pinpoint pupils, wheezing and apparent seizure-like jerking movements. The child's mother states that they found their child in their garage an hour ago next to an open container of Sevin ®, a commercial carbamate insecticide. What treatment option would be contraindicated (and ineffective) in the treatment of this patient?
+A. Activated charcoal lavage
+B. Atropine
+C. Diazepam (benzodiazepine)
+D. Pralidoxime
+
+### A37
+Karl is a 65-year old man with severe hypertension who has not achieved his therapeutic goal for controlling his blood pressure after treatment with a combination of 4 different antihypertensive drugs for the past 6 months. Having exhausted the list of the most highly recommended drugs, his physician elects to add reserpine to his drug regimen. The molecular target for this antihypertensive drug is inhibition of:
+A. Alpha-adrenergic receptors
+B. Beta-adrenergic receptors
+C. Ganglionic nicotinic receptors
+D. Vesicular monoamine transporter
+
+### A38
+What side effects would develop if reserpine is prescribed?
+A. Depression and sedation
+B. Hyperthermia
+C. Mydriasis
+D. Seizures
+
+### A39
+As a cardiovascular drug, dopamine can produce remarkedly different effects depending on the dose administered. At high doses the predominant effect of dopamine would be to cause vasoconstriction by stimulating:
+A. Alpha-adrenergic receptors
+B. Beta-1 adrenergic receptors
+C. Beta-2 adrenergic receptors
+D. Dopamine receptors
+
+### A40
+During fight or flight situations the adrenal gland releases significant amounts of epinephrine into the bloodstream. Epinephrine in turn stimulates a variety of adrenergic receptors. Which vascular receptor subtype is not normally innervated, but when stimulated by epinephrine results in vasodilation & increased regional blood flow to skeletal muscle?
+A. Alpha-1
+B. Alpha-2
+C. Beta-1
+D. Beta-2
+
+### A41
+Cocaine is an example of a drug that interferes with the major mechanism of termination of synaptically released norepinephrine. What is the cellular target that is inhibited by this drug?
+A. Catechol-O-methyltransferase (COMT)
+B. Monoamine Oxidase (MAO)
+C. Norepinephrine Transporter (NET)
+D. Tyrosine Hydroxylase (TH)
+
+### A42
+This adrenergic receptor subtype is expressed on vascular smooth muscle at sites some distance away from sympathetic nerve terminals, and produces vasoconstrictor responses when stimulated by circulating catecholamines such as epinephrine.
+A. Alpha-1
+B. Alpha-2
+C. Beta-2
+D. Dopamine
+
+### A43
+You are suddenly frightened by a neighborhood dog while jogging through your neighborhood. Which physiological response will likely occur?
+A. Constriction of skeletal muscle arterioles
+B. Decrease in pain threshold
+C. Decreased fat metabolism
+D. Stimulation of glycogen breakdown by the liver
+
+### A44
+A patient suffering from a severe AV heart conduction disturbance is given an i.v. bolus of isoproterenol. A recording of the patient's blood pressure shows a fall in blood pressure. Stimulation of which adrenergic receptor subtype is responsible for producing the fall in diastolic blood pressure?
+A. Alpha-1
+B. Alpha-2
+C. Beta-1
+D. Beta-2
+
+### A45
+Stimulation of which receptor subtype is directly responsible for producing the increase in pulse pressure following i.v. administration of isoproterenol?
+A. Alpha-1
+B. Alpha-2
+C. Beta-1
+D. Beta-2
+
+### A46
+An i.v. bolus of tyramine produced a rise in mean arterial blood pressure. At the same time, tyramine produced little or no change in arterial pulse pressure. What receptor subtype is most likely responsible for producing the rise in mean arterial blood pressure?
+A. Alpha-1
+B. Alpha-2
+C. Beta-1
+D. Nicotinic (ganglionic)
+
+### A47
+Patients with atypical depression (who have signs & symptoms of depression, but eat too much & sleep too much) are sometimes treated with MAO inhibitors such as phenelzine. What food substance(s) if consumed could produce a hypertensive crisis if consumed by patients on this type of drug therapy?
+A. Bananas
+B. Grapes
+C. Octopamine
+D. Red wine & cheese
+
+### A48
+Both norepinephrine and epinephrine (noradrenaline & adrenaline) can be given i.v. to produce pressor responses. While both work equally well in many cases, what receptor subtype is stimulated by epinephrine, but is not stimulated by norepinephrine?
+A. Alpha-1
+B. Alpha-2
+C. Beta-1
+D. Beta-2
+
+### A49
+In humans, the release of acetylcholine is responsible for which of the following postganglionic sympathetic responses?
+A. Activation of sweat glands
+B. Constriction of cutaneous blood vessels
+C. Decreased gastrointestinal motility
+D. Increased ventricular contractility
+
+### A50
+A patient takes a stimulant that produces euphoria, as well as an increase in heart rate and blood pressure. To exert its effects, this drug must be taken up into nerve terminals where it stimulates the release of norepinephrine & dopamine from their vesicular storage sites. This drug is:
+A. Amphetamine
+B. Cocaine
+C. Nicotine
+D. Yohimbine
+
+### A51
+During a prolonged surgical procedure performed under halothane general anesthesia, a patient experiences a fall in blood pressure. The anesthesiologist administers a pressor agent by s.c. injection that does not stimulate cardiac beta-1 receptors. This drug was:
+A. Doxazosin
+B. Isoproterenol
+C. Phentolamine
+D. Phenylephrine
+
+### A52
+A 27-year-old woman with a history of hypertension comes to your office to discuss her drug therapy for hypertension. Her blood pressure is currently well controlled (BP<130/85) by a combination of enalapril (an ACE inhibitor) and hydrochlorothiazide (a thiazide-type diuretic). The reason for her visit is that she is planning to become pregnant in the near future, and she is aware that ACE inhibitors are contraindicated in pregnancy. After discussing her therapeutic options, you decide to replace her ACE inhibitor with a drug that is considered relatively safe in pregnancy and is believed to exert its effects by multiple mechanisms including working as a false neurotransmitter. This drug is.
+A. Salbutamol
+B. Labetalol
+C. Methyldopa
+D. Prazosin
+
+### A53
+Several drugs used to treat non-cardiovascular conditions have alpha-blocking "side effects". If epinephrine is injected into such patients, it will likely produce a change in blood pressure resembling that produced by:
+A. Dobutamine
+B. Norepinephrine
+C. Isoproterenol
+D. Phenylephrine
+
+### A54
+A 16-year-old patient arrives in the emergency department suffering from an anaphylactic reaction. The patient is having difficulty breathing, has severe urticaria, and is hypotensive. Which of the following is a drug of choice for treating this patient's potentially life-threatening condition?
+A. Epinephrine
+B. Isoproterenol
+C. Norepinephrine
+D. Phenylephrine
+
+### A55
+A drug that produces a pressor response is administered repeatedly by i.v. injection over a short period of time. After several injections, a tachyphylaxis occurs. What drug was most likely administered?
+A. Ephedrine
+B. Epinephrine
+C. Norepinephrine
+D. Phenylephrine
+
+### A56
+Which one of the following drugs generally should NOT be administered to a patient with asthma?
+A. Physiostigmine
+B. Atropine
+C. Isoproterenol
+D. Norepinephrine
+
+### A57
+A 55-year-old man develops a loss of visual accommodation while taking an antidepressant drug. The most likely cause is the blockade of which of the following receptors?
+A. α-Adrenergic
+B. β-Adrenergic
+C. Histaminergic
+D. Muscarinic
+
+### A58
+The pressor effect of epinephrine can be converted to a depressor effect by prior administration of which of the following agents??
+A. Prazosin
+B. Propranolol
+C. Atropine
+D. Reserpine
+
+### A59
+Topical application of timolol to the eye would be expected to induce which of the following?
+A. Miosis
+B. Mydriasis
+C. Decreased formation of aqueous humor
+D. Increased outflow of aqueous humor
+
+### A60
+Phenylephrine is applied to the nasal mucosa in order to?
+A. block histamine receptors
+B. block beta-adrenergic receptors
+C. induce vasodilation
+D. induce vasoconstriction
+
+
+SECTION B (2)
+----------------------------------------
+### B1
+A 60-year old male patient suffering from hypertension and benign prostatic hyperplasia presents to the hospital.
+Which drug would you recommend for this patient?(1 Mark)
+What is the mode of action of the drugs mentioned in a) above?(2 Marks)
+State 4 side effects of the drug mentioned in a) above.(2 Marks)
+
+### B2
+State any two adjuncts of general anaesthesia that target the autonomic nervous system?(2 Marks)
+What is their role in general anaesthesia?(2 Marks)
+What is the mode of action of the drugs mentioned in a) above? (4 Marks)
+State any three side effects of each of the drugs mentioned in a) above. (3 Marks
+How would you manage cases of overdose with the drugs mentioned in a) above?(2 Marks)
+State any four drugs that can be used in treatment of an acute asthmatic attack.(2 Marks)
+
+
+SECTION C (2)
+----------------------------------------
+### C1
+Describe ATROPINE under the following headings:
+Mode of action (2 Marks)
+Any five Clinical applications (5 Marks)
+Any TEN side effects(5 Marks)
+any three drug-drug interactions(6 Marks)
+Contraindications(2 Marks)
+
+### C2
+Describe PROPRANOLOL under the following headings:
+Mode of action(2 Marks)
+Any seven Clinical applications(7 Marks)
+Any six side effects(3 Marks)
+any three drug-drug interactions(6 Marks)
+Contraindications(2 Marks)
+
+==========================================================================================
+3203 — Pharmacology III — Autacoids
+==========================================================================================
+
+
+SECTION A (60)
+----------------------------------------
+### A1
+Autacoids differ from hormones in that:
+A. Autacoids are involved only in the causation of pathological states
+B. Autacoids do not have a specific cell/tissue of origin
+C. Autacoids generally act locally at the site of generation and release
+D. Both ‘B’ and ‘C’ are correct
+
+### A2
+Which of the following is a selective H1 receptor agonist?
+A. 4-methyl histamine
+B. Impromidine
+C. 2-Thiazolyl ethylamine
+D. Chlorpheniramine
+
+### A3
+The action of histamine that is not mediated through H1 receptors is:
+A. Release of EDRF from vascular endothelium resulting in vasodilation
+B. Direct action on vascular smooth muscle causing vasodilation
+C. Bronchoconstriction
+D. Release of catecholamines from adrenal medulla
+
+### A4
+High anticholinergic property is present in the following antihistaminic:
+A. Diphenhydramine
+B. Astemizole
+C. Cetirizine
+D. Terfenadine
+
+### A5
+The following H1 antihistaminic has additional anti 5-HT, anticholinergic, sedative and appetite stimulating properties:
+A. Promethazine
+B. Terfenadine
+C. Cyproheptadine
+D. Hydroxyzine
+
+### A6
+The conventional H1 antihistamines possess the following additional properties except:
+A. Local anaesthetic
+B. Vasopressor
+C. Antiarrhythmic
+D. Catecholamine potentiating
+
+### A7
+The following second generation antihistamine IS NOT likely to produce ventricular arrhythmias when administered along with ketoconazole:
+A. Mizolastine
+B. Ebastine
+C. Terfenadine
+D. Astemizole
+
+### A8
+Select the antihistaminic which blocks cardiac K+ channels when given in high doses or along with drugs that inhibit CYP3A4 isoenzyme:
+A. Chlorpheniramine
+B. Promethazine
+C. Astemizole
+D. Loratadine
+
+### A9
+Erythromycin should not be given to a patient being treated with terfenadine because:
+A. Erythromycin induces the metabolism of terfenadine
+B. Dangerous ventricular arrhythmias can occur
+C. Terfenadineinhibits metabolism of erythromycin
+D. Terfenadine antagonizes the antimicrobial action of erythromycin
+
+### A10
+Benefit afforded by certain H1 antihistamines in the following condition is not based on antagonism of histamine:
+A. Dermographism
+B. Insect bite
+C. Common cold
+D. Seasonal hay fever
+
+### A11
+The following action of 5-Hydroxy tryptamine is mediated by the 5-HT3 receptor:
+A. Vasoconstriction
+B. Bradycardia
+C. EDRF release
+D. Platelet aggregation
+
+### A12
+Which one of the following 5-HT receptors is not a G protein coupled receptor?
+A. 5-HT1
+B. 5-HT2
+C. 5-HT3
+D. 5-HT4
+
+### A13
+Methysergide has lost popularity as a prophylactic drug for migraine mainly because of its:
+A. Poor efficacy
+B. Potential to cause visceral fibrosis
+C. Oxytocic action
+D. Potential to aggravate ischaemic heart Disease
+
+### A14
+Dihydroergotamine (DHE) differs from ergotamine in the following respect:
+A. It is a more potent oxytocic
+B. It has antiemetic property
+C. It has high oral bioavailability
+D. It is a more potent α adrenergic blocker and less potent vasoconstrictor
+
+### A15
+Ergotamine relieves migraine by:
+A. Blocking vascular α adrenergic receptors
+B. Blocking vascular 5-HT2 receptors
+C. Dilating cranial arterio-venous shunt channels
+D. Constricting cranial vessels and reducing perivascular neurogenic inflammation
+
+### A16
+The most important risk in the use of sumatriptan for treatment of migraine is:
+A. Precipitation of seizures
+B. Precipitation of psychosis
+C. Development of hypertension
+D. Coronary vasospasm
+
+### A17
+Which of the following drugs is most commonly used for prophylaxis of migraine?
+A. Ergotamine
+B. Propranolol
+C. Methysergide
+D. Sumatriptan
+
+### A18
+The cyclooxygenase isoenzymes COX-1 and COX-2 differ from each other in that:
+A. They catalyse different pathways in prostanoid biosynthesis
+B. COX-1 is inhibited by aspirin but not COX-2
+C. COX-2 is inhibited by ibuprofen but not COX-1
+D. COX-1 is constitutive while COX-2 is largely inducible
+
+### A19
+Which of the following is an irreversible inhibitor of cyclooxygenase?
+A. Aspirin
+B. Phenylbutazone
+C. Indomethacin
+D. Piroxicam
+
+### A20
+Actions of prostaglandin E2 include the following except:
+A. Fall in blood pressure
+B. Bronchoconstriction
+C. Uterine contraction
+D. Inhibition of gastric acid secretion
+
+### A21
+Prostaglandins play pathophysiological role in the following except:
+A. Patency of ductus arteriosus
+B. Regulation of renal tubular salt absorption
+C. Ventricular remodeling after myocardial infarction
+D. Initiation of labour
+
+### A22
+Aspirin in low doses produces long lasting inhibition of platelet cyclooxygenase (COX) because:
+A. Platelets contain low quantity of COX
+B. Platelets cannot synthesize fresh COX molecules
+C. Platelets bind aspirin with high affinity
+D. Platelet COX is inducible
+
+### A23
+The early pregnancy uterus is sensitive to the following oxytocic:
+A. Oxytocin
+B. Methylergometrine
+C. Prostaglandin F2α
+D. Both ‘A’ and ‘B’ are correct
+
+### A24
+Aspirin produces analgesia by:
+A. Preventing sensitization of peripheral pain receptors
+B. Affecting gating of pain impulses at spinal level
+C. Raising pain threshold at subcortical level
+D. Both ‘A’ and ‘C’ are correct
+
+### A25
+Inhibitors of prostaglandin synthesis share the following features except:
+A. Prolongation of bleeding time
+B. Prolongation of prothrombin time
+C. Prolongation of labour
+D. Gastric mucosal damage
+
+### A26
+Selective COX-2 inhibitors differ from nonselective COX-1/COX-2 inhibitors in that they:
+A. Are antiinflammatory but not analgesic
+B. Do not bring down fever
+C. Have no renal effects
+D. Do not inhibit platelet aggregation
+
+### A27
+The isoenzyme cyclooxygenase-2 (COX-2) is expressed constitutively at the following site:
+A. Gastric mucosa
+B. Neutrophils
+C. Blood platelets
+D. Juxtaglomerular apparatus
+
+### A28
+A 64-year-old male presents with mild to moderate musculoskeletal back pain after playing golf. He states he has tried acetaminophen and that it did not help. His past medical history includes diabetes, hypertension, hyperlipidemia, gastric ulcer (resolved), and coronary artery disease. Which of the following is the most appropriate NSAID regimen to treat this patient’s pain?
+A. Celecoxib.
+B. Indomethacin and omeprazole.
+C. Naproxen and omeprazole.
+D. Naproxen.
+
+### A29
+Which of the following correctly represents the mechanism of action of tofacitinib in the treatment of RA?
+A. TNF-α inhibitor.
+B. Inhibitor of Janus kinases.
+C. IL-6 receptor blocker.
+D. Dihydrofolate reductase inhibitor.
+
+### A30
+A 64-year-old male presents with signs and symptoms of an acute gouty flare. His doctor wishes to treat him accordingly to improve his symptoms. Which of the following strategies would be the LEAST likely to acutely improve his gout symptoms and pain?
+A. Naproxen.
+B. Colchicine.
+C. Probenecid.
+D. Prednisone.
+
+### A31
+Which of the following drugs for headache is contraindicated in patients with peripheral vascular disease?
+A. Ergotamine.
+B. Aspirin.
+C. Acetaminophen.
+D. Naproxen
+
+### A32
+A 43-year-old heavy machine operator complains of seasonal allergies. Which one of the following medications would be most appropriate for management of his allergy symptoms?
+A. Cyclizine.
+B. Doxylamine.
+C. Hydroxyzine.
+D. Fexofenadine.
+
+### A33
+Which one of the following statements concerning H1 antihistamines is correct?
+A. Second-generation H1 antihistamines are relatively free of adverse effects.
+B. Because of the established long-term safety of first-generation H1 antihistamines, they are the first choice for allergic rhinitis.
+C. H1 antihistamines can be used in the treatment of acute anaphylaxis.
+D. Both first- and second-generation H1 antihistamines readily penetrate the blood–brain barrier.
+
+### A34
+A patient is going on a deep sea fishing trip and is worried about motion sickness. Which of the following would be the most appropriate?
+A. Dimenhydrinate 1 hour prior to departure.
+B. Desloratadine 1 hour prior to departure.
+C. Doxylamine 1 hour prior to departure.
+D. Meclizine at onset of symptoms.
+
+### A35
+A patient has a severe ear infection that is associated with significant vertigo. Which of the following might be helpful?
+A. Azelastine.
+B. Brompheniramine.
+C. Meclizine.
+D. Olopatadine.
+
+### A36
+A young woman is brought into the emergency room. She is unconscious, and she has pupillary constriction and depressed respiration. Based on reports, an opioid overdose is almost certain. Which of the listed phenanthrene opioids will exhibit a full and immediate response to treatment with naloxone?
+A. Meperidine.
+B. Morphine.
+C. Buprenorphine.
+D. Fentanyl.
+
+### A37
+A 76-year-old female with renal insufficiency presents to the clinic with severe pain secondary to a compression fracture in the lumbar spine. She reports that the pain has been uncontrolled with tramadol, and it is decided to start treatment with an opioid. Which of the following is the best opioid for this patient?
+A. Meperidine.
+B. Fentanyl transdermal patch.
+C. Hydrocodone.
+D. Morphine.
+
+### A38
+Which of the following statements about fentanyl is correct?
+A. Fentanyl is 100 times more potent than morphine.
+B. Its withdrawal symptoms can be relieved by naloxone.
+C. The active metabolites of fentanyl can cause seizures.
+D. It is most effective by oral administration
+
+### A39
+A 56-year-old patient who has suffered with severe chronic pain with radiculopathy secondary to spinal stenosis for years presents to the clinic for pain management. Over the years, this patient has failed to receive relief from the neuropathic pain from the radiculopathy with traditional agents such as tricyclics or anticonvulsants. Based on the mechanism of action, which opioid might be beneficial in this patient to treat both nociceptive and neuropathic pain?
+A. Meperidine.
+B. Oxymorphone.
+C. Morphine.
+D. Methadone.
+
+### A40
+A 64-year-old male is preparing for a total knee replacement. He is taking many medications that are metabolized by the CYP450 enzyme system and is worried about drug interactions with the pain medication that will be used following his surgery. Which of the following opioids would have the lowest chance of interacting with his medications that are metabolized by the CYP450 enzyme system?
+A. Methadone.
+B. Oxymorphone.
+C. Oxycodone.
+D. Hydrocodone.
+
+### A41
+Chemical mediators in the nociceptive pathway are all of the following EXCEPT:
+A. Enkephalins
+B. Kinins
+C. Prostaglandins
+D. Substance P
+
+### A42
+Mu (μ) receptors are associated with:
+A. Analgesia, euphoria, respiratory depression, physical dependence
+B. Spinal analgesia, mydriasis, sedation, physical dependence
+C. Dysphoria, hallucinations, respiratory and vasomotor stimulation
+D. Analgesia, euphoria, respiratory stimulation, physical dependence
+
+### A43
+Which of the following opioid analgesics can produce an increase in the pulmonary arterial pressure and myocardial work?
+A. Morphine
+B. Pentazocine
+C. Meperidine
+D. Methadone
+
+### A44
+Morphine causes the following effects EXCEPT:
+A. Constipation
+B. Dilatation of the biliary duct
+C. Urinary retention
+D. Bronchiolar constriction
+
+### A45
+Which of the following opioid analgesics is used in the treatment of acute pulmonary edema?
+A. Morphine
+B. Codeine
+C. Fentanyl
+D. Loperamide
+
+### A46
+The diagnostic triad of opioid overdose is:
+A. Mydriasis, coma and hyperventilation
+B. Coma, depressed respiration and miosis
+C. Mydriasis, chills and abdominal cramps
+D. Miosis, tremor and vomiting
+
+### A47
+Which one of the following non-narcotic agents inhibits mainly cyclooxygenase (COX) in CNS?
+A. Paracetamol
+B. Ketorolac
+C. Acetylsalicylic acid
+D. Ibuprofen
+
+### A48
+Characteristic findings of salicylism include:
+A. Headache, mental confusion and drowsiness
+B. Tinnitus and difficulty in hearing
+C. Hyperthermia, sweating, thirst, hyperventilation, vomiting and diarrhea
+D. All of the above
+
+### A49
+The main advantage of ketorolac over aspirin is that ketorolac
+A. Can be combined more safely with an opioid such as codeine
+B. Can be obtained as an over-the-counter agent
+C. Does not prolong the bleeding time
+D. Is available in a parenteral formulation that can be injected intramuscularly or intravenously
+
+### A50
+A 54-year-old woman presented with signs and symptoms consistent with an early stage of rheumatoid arthritis. The decision was made to initiate NSAID therapy. Which of the following patient characteristics is the most compelling reason for avoiding celecoxib in the treatment of her arthritis?
+A. History of alcohol abuse
+B. History of gout
+C. History of myocardial infarction
+D. History of osteoporosis
+
+### A51
+A 2-year-old child is brought into the emergency department in convulsions. According to her mother, she had ingested most of a bottle of "sleeping pills," an over-the-counter preparation. What do the sleeping pills she ingested probably contain?
+A. Caffeine
+B. Chlorpromazine
+C. Diphenhydramine
+D. Meperidine
+
+### A52
+In a person who regularly consumes ethanol daily, the potential for hepatotoxicity due to acetaminophen is greater than normal. What is the most likely explanation for this?
+A. Cirrhosis of the liver
+B. Ethanol inhibits the metabolism of acetaminophen
+C. Most beer drinkers are smokers, and nicotine sensitizes the liver to toxins
+D. Ethanol induces P450 enzymes that form a toxic metabolite
+
+### A53
+Which one of the following is able to effectively lower intraocular pressure?
+A. Latanoprost
+B. Ergonovine
+C. Atropine
+D. Morphine
+
+### A54
+A reasonable explanation for the therapeutic effects of ibuprofen or naproxen in primary dysmenorrhea is that these drugs
+A. ↓ PGE2 and PGF2α
+B. selectively inhibit COX 2
+C. ↓ LTB4
+D. inhibit PLA2
+
+### A55
+For temporary maintenance of patent ductus arteriosus prior to cardiac surgery in an infant, what is the drug of choice?
+A. Alprostadil
+B. Indomethacin
+C. Epoprostenol
+D. Celecoxib
+
+### A56
+A patient with RA is being treated with ibuprofen, but joint pain and stiffness are increasing. His physician prescribes another drug to be used with ibuprofen that may slow progression of the disease. Unfortunately, side effects develop, including dizziness, tinnitus, blurred vision, and pruritus. Ocular examination reveals corneal deposits and slight retinal pigmentation.
+What is the drug?
+A. Gold salts
+B. Etanercept
+C. Hydroxychloroquine
+D. Methotrexate
+
+### A57
+A mother calls the clinic to ask what medication to give her 5-year-old child for a fever during a bout of chickenpox. The nurse's best response would be:
+A. "Your child is 5 years old, so it would be okay to use children's aspirin to treat his fever."
+B. "Start with acetaminophen or ibuprofen, but if these do not work, then you can try aspirin."
+C. "You can use children's doses of acetaminophen or ibuprofen, but aspirin is not recommended."
+D. "It is best to wait to let the fever break on its own without medication."
+
+### A58
+Acute poisoning with acetaminophen often requires the use of a specific antidote. The beneficial property of this antidote is that it
+A. supplies sulfhydryl groups to detoxify a reactive metabolite
+B. induces P450 enzymes to enhance elimination
+C. blocks the metabolism of acetaminophen
+D. enhances renal clearance of acetaminophen
+
+### A59
+What is true of tolerance occurring in regular opium abusers?
+A. Tolerance develops to all actions of morphine
+B. No tolerance occurs to euphoric and sedative actions of morphine
+C. No tolerance occurs to constipating and meiotic actions of morphine
+D. Lethal dose of morphine is not significantly Increased
+
+### A60
+Which action of morphine is incompletely reversed by naloxone?
+A. Analgesia
+B. Respiratory depression
+C. Sedation
+D. Miosis
+
+
+SECTION B (4)
+----------------------------------------
+### B1
+a) Using a suitable flow chart illustrate the metabolic pathway of acetaminophen that is associated with toxic metabolite (4 Marks)
+b) Explain why you would be less concerned if a mother reports to you that her 18-month old son took an overdose of paracetamol syrup. (2 Marks)
+
+### B2
+Y.S is a 19-year-old college student who is brought to the health Centre where you are currently doing your community health rotation. The Chief complaint is breathing difficulties, generalized body swelling and fainting after being stung severally by bees. Formulate a stepwise management plan for this patient (4 Marks)
+
+### B3
+PQ is a 67-year-old retired labour officer who recently was diagnosed with prinzmetal angina. She has a long standing history of sporadic migraine attacks. She is brought at night to a hospital where you are the drug information pharmacist. The MO on call wants to find out which classes of drug effective for acute migraine attack will be safe for her.
+a) Using suitable examples identify two classes of drugs that are contraindicated in such a patient. (2 Marks)
+b) Illustrate using suitable examples 3 classes of drugs that you would recommend for migraine prophylaxis in that patient (3 Marks)
+
+### B4
+For each numbered item in category A, select the one lettered option in category B that is most closely associated with it (each lettered option can be selected once, more than once, or not at all). (5 Marks)
+Category A
+1. A partial agonist at μ (mu) opioid receptors and antagonist at κ (kappa) opioid receptors
+2. A full opioid agonist with the highest oral bioavailability
+3. A drug with very weak opioid activity used in the treatment of diarrhea
+4. A partial agonist at μ (mu) opioid receptors and full agonist at κ (kappa) opioid receptors
+5. A drug with high affinity but no intrinsic activity at opioid receptors
+Category B
+Codeine, Buprenorphine, Fentanyl, Loperamide, Methadone, Morphine, Naloxone, Pentazocine
+
+
+SECTION C (3)
+----------------------------------------
+### C1
+D.W, a 48-year old man with a history of hay fever is diagnosed with CKD stage 2. He has been complaining of poor appetite for the last 3 weeks which has seen him lose 2 kgs. The senior house officer calls you regarding a drug that would work for both his hay fever and Appetite.
+a) Identify a drug that you would recommend (2 Marks)
+b) Describe the mechanism of action of this drug (2 Marks)
+c) Using suitable examples, examine 2 other different clinical applications of H1 receptor antagonists (2 Marks)
+d) Outline three adverse effects and two drug-drug interactions associated with the drug you identified in (a) above
+
+### C2
+After careful history taking D.W is also diagnosed with Migraine headaches. He admits that he has been taking a drug which had been prescribed by a neurologist for prophylaxis against his headaches. He is also complaining of dyspnea, tightness and pain in the chest. Examination findings reveal; pleural friction rubs, aortic murmur and pleural effusion. These findings (fibrotic changes in the pleuropulmonary & cardiac regions) are confirmed by chest x-ray and echo.
+a) Identify and classify the most likely drug that he was using which is associated with these fibrotic changes (3 Marks)
+b) Outline 3 other adverse effects and 3 contraindications of the drug in (a) above (6 Marks)
+
+### C3
+AW is a 42-year old patient with advanced liver disease. She is involved in a road traffic accident and sustains a fractured tibia of her left leg. Her eGFR is about 28 mL/min/1.73 m2 (Normal 90 to 120 mL/min/1.73 m2). She is in severe pain and required an analgesic to relieve her pain.
+a) Identify a suitable opioid analgesic that you would recommend which would not require dose adjustment and which could be used for induction of anesthesia, maintenance of anaesthesia and analgesic in immediate postoperative period (2 Marks)
+b) List two other opioids that could be considered safe for use in this patient but require dose adjustment (1 Mark)
+c) Outline the mode of action of the drug you identified in (a) above (2 Marks)
+d) Using appropriate examples Examine 3 other clinical applications, 3 adverse effects and 3 contraindications of opioid analgesics (9 Marks)
+After surgery, the orthopedic surgeon notices that A.W’s leg is inflamed and thus she requires a short course of an NSAID.
+e) Identify one NSAID considered relatively safe in renal insufficiency that you would recommend (2 Marks)
+f) Outline two drug-drug interactions and two contraindications of the drug you have identified in (e) above (4 Marks)
+
+==========================================================================================
+3305 — Pharmacology V — Central Nervous System Pharmacology
+==========================================================================================
+
+
+SECTION A (20)
+----------------------------------------
+### A1
+The following drugs act by modulating GABA allosterically at GABA-A receptor except:
+A. Diazepam
+B. Phenobarbitone
+C. Ethanol
+D. Baclofen
+E. Propofol
+
+### A2
+Which of the following is not true?
+A. GABA opens receptor-operated chloride channels that lead to hyperpolarization and make epileptic firing less likely to occur
+B. Benzodiazepines and barbiturates bind at the same site on the neuron and enhance the activity of GABA.
+C. Vigabatrin is an irreversible inhibitor of GABA transaminase
+D. Tiagabine inhibits neuronal reuptake of GABA.
+E. Diazepam may cause respiratory depression.
+
+### A3
+A 40 year old male was under alcoholism and apart from an increased risk of severe liver disease, he may be at an increased risk for:
+A. Angina
+B. Heart failure
+C. Pulmonary hypertension
+D. CNS tumors
+E. Renal impairment
+
+### A4
+The following drugs are used for treatment of absence seizures except:
+A. Ethosuximide
+B. Clonazepam
+C. Clobazam
+D. Valproate
+E. Lamotrigine
+
+### A5
+Which of the following drugs should not be used for simple partial seizures?
+A. Valproic acid
+B. Carbamazepine
+C. Felbamate
+D. Phenytoin
+E. Vigabatrin
+
+### A6
+Which of the following would you not do if a patient has generalized tonic-clonic seizure in your presence:
+A. Get emergency help if the seizure persists
+B. Insert a tongue depressor to prevent the patient from biting the tongue
+C. Turn the patient’s head to the side
+D. Ease the patient to the floor and loose restrictive clothing
+E. b and c
+
+### A7
+Which of the following is not a known principle of antiepileptic drug therapy
+A. Elimination of poly-pharmacy as much as possible
+B. Dosage of the antiepileptic drug should be adjusted to optimize seizure control regardless of the side effects
+C. Proper diagnosis is essential for proper selection of antiepileptic drug.
+D. Patient’s pharmacokinetic profile for the drugs being administered should be monitored during titration period.
+E. Another antiepileptic drug may be added to the first drug if the first drug given does not achieve optimum seizure control.
+
+### A8
+Dantrolene sodium reduces skeletal muscle tone by:
+A. Reducing acetylcholine release from motor nerve endings
+B. Suppressing spinal polysynaptic reflexes
+C. Inhibiting the generation of muscle action potential
+D. Reducing Ca2+ release from sarcoplasmic reticulum in the muscle fibre
+E. All of the above
+
+### A9
+The following antiepileptic drug is most likely to impair learning and memory, and produce behavioral abnormalities in children:
+A. Valproic acid
+B. Phenobarbitone
+C. Phenytoin
+D. Ethosuximide
+
+### A10
+The characteristic feature of phenytoin pharmacokinetics is:
+A. High first pass metabolism
+B. Nonsaturation kinetics of metabolism
+C. Capacity limited metabolism saturating at higher therapeutic concentration range
+D. Extrahepatic metabolism
+
+### A11
+The following adverse effect(s) of phenytoin is/are related to high plasma drug concentration:
+A. Ataxia
+B. Hirsutism
+C. Gum hyperplasia
+D. All of the above
+
+### A12
+Select the muscle relaxant that is used to control spasticity associated with upper motor neuron paralysis:
+A. Vecuronium
+B. Succinylcholine
+C. Chlorzoxazone
+D. Baclofen
+
+### A13
+Diazepam is indicated in the following conditions except:
+A. Generalized tonic clonic seizures
+B. Febrile convulsions
+C. Cardiac catheterization
+D. Status epilepticus
+E. Generalized anxiety disorder
+
+### A14
+The general principles in the use of hypnotics include the following except:
+A. A hypnotic may be used intermittently for upto 2-3 weeks in short-term insomnia due to emotional stress
+B. In patients with chronic insomnia a hypnotic should be used regularly
+C. All hypnotics aggravate sleep apnea
+D. A hypnotic with slow elimination is preferred in patients with early morning awakening
+
+### A15
+The following drug displaces plasma protein bound phenytoin as well as decreases its metabolism:
+A. Carbamazepine
+B. Sodium valproate
+C. Cimetidine
+D. Chloramphenicol
+
+### A16
+Select the antiepileptic drug that is effective in manic – depressive illness as well:
+A. Ethosuximide
+B. Primidone
+C. Phenobarbitone
+D. Carbamazepine
+
+### A17
+Sodium valproate has been shown to:
+A. Prolong neuronal Na+ channel inactivation
+B. Attenuate ‘T’ type Ca2+ current in neurons
+C. Inhibit degradation of GABA by GABA-transaminase
+D. a) and c)
+E. All of the above
+
+### A18
+Which of the following is used therapeutically for treatment of attention deficit hyperkinesia in children:
+A. Tyramine
+B. Methylphenidate
+C. Cocaine
+D. Phenoxybenzamine
+E. Ephedrine
+
+### A19
+A substance abuser self-administers cocaine and experiences a variety of significant changes in cardiovascular function, in addition to the CNS-stimulating effects for which the drug was used. What statement describes the mechanism by which the cocaine caused its main peripheral and CNS effects?
+A. Activates α2-adrenergic receptors leading to increased NE release
+B. Blocks NE (and dopamine, in the CNS) reuptake via the amine pump
+C. Directly activates postsynaptic α- and β-adrenergic receptors , leading to sympathomimetic responses
+D. Inhibits MAO, leading to increased intraneuronal NE levels
+E. Prevents NE exocytosis
+
+### A20
+When carbidopa is administered along with levodopa for Parkinson disease, we increase the bioavailability of levodopa by inhibiting the formation of dopamine in the gut. However, the carbidopa -induced inhibition of dopa decarboxylase favors the peripheral metabolism of levodopa to another metabolite that competes with levodopa for transport a cross the blood-brain barrier. This is catalyzed by catechol –O methyl transferase (COMT). If your goal is to inhibit COMT, and so increase the central bio-availability and effects of levodopa , what drug would you choose?
+A. Donepezil
+B. Entacapone
+C. Selegiline
+D. Tacrine
+E. Trihexyphenidyl
+
+
+SECTION B (7)
+----------------------------------------
+### B1
+A 30 year old female patient suffering from status epilepticus is admitted in the hospital.
+a) Which drug would you recommend she be given and what is the mode of action of this drug? (3 marks)
+b) After 4 days, she might be discharged, which drug would you recommend she be given? (1 mark)
+c) What are the side effects you would look out for the drug mentioned in b above? (2 marks)
+
+### B2
+A 70 year old Kenyan patient presents to the hospital and the BP is 160/95. He is also diagnosed of parkinsonism.
+a) What is your target when reducing the blood pressure? (1 mark)
+b) Which drug would you give him for the hypertension? (1 mark)
+c) Which drug would you give him for the parkinsonism? (1 mark)
+d) What is the mode of action of the drugs mentioned in b and c above? (4 marks)
+e) What are the side effects that you should look out for? (4 marks)
+
+### B3
+A patient is diagnosed of INSOMNIA.
+a) Which drug should you give him (1 mark)
+b) What is the mode of action of the above drug? (2 marks)
+c) What are the side effects that you should look out for? (3 marks)
+
+### B4
+GABA is a target for different drugs. Describe with an example in each case how drugs can target GABA. (4 marks)
+
+### B5
+Some anticonvulsants are used in bipolar disorder. Give 3 examples of anticonvulsants used in bipolar disorder and describe their mode action. (6 marks)
+
+### B6
+Give 2 examples of hallucinogens and describe their mode of action. (4 marks)
+
+### B7
+What are the pharmacological actions of methylxanthines (3 marks)
+
+
+SECTION C (3)
+----------------------------------------
+### C1
+Describe DIAZEPAM in terms of the
+a) mode of action (2 marks)
+b) clinical applications (5 marks)
+c) side effects (3 marks)
+d) drug-drug interactions (3 marks)
+e) contraindications (3 marks)
+f) pharmacokinetics (4 marks)
+
+### C2
+Compare and contrast Baclofen and Dantrolene in terms of the
+a) mode of action (4 marks)
+b) clinical applications (4 marks)
+c) side effects (6 marks)
+d) contraindications (3 marks)
+e) drug-drug interactions (3 marks)
+
+### C3
+Describe DRUGS USED IN MANAGEMENT OF PARKINSONISM in terms of
+a) Classes and examples (4 marks)
+b) mode of action (6 marks)
+c) Side effects (6 marks)
+d) Drug-drug interactions (4 marks)
+
+==========================================================================================
+3306 — Pharmacology VI — Cardiovascular Pharmacology
+==========================================================================================
+
+
+SECTION A (30)
+----------------------------------------
+### A1
+A 52-year-old man is brought to the emergency department 30 minutes after he had an episode of chest pain radiating to his jaw while shoveling snow. His pulse is 80/min, and his blood pressure is 130/70 mm Hg. The lungs are clear to auscultation. Cardiac examination shows an S4. While undergoing an ECG, the patient says that he feels the chest pain returning. The most appropriate immediate treatment is a drug with which of the following mechanisms of action?
+A. Increases cAMP concentration
+B. Increases nitric oxide concentration
+C. Inhibits potassium flux
+D. Inhibits sodium flux
+
+### A2
+Warfarin is administered to a 56-year-old man following the placement of a prosthetic cardiac valve. The warfarin dosage is adjusted to maintain an INR of 2.5. Subsequently, trimethoprim-sulfamethoxazole therapy is begun for a recurring urinary tract infection. In addition to monitoring prothrombin time, which of the following actions should the physician take to maintain adequate anticoagulation?
+A. Begin therapy with vitamin K
+B. Increase the dosage of warfarin
+C. Make no alterations in the dosage of warfarin
+D. Decrease the dosage of warfarin
+
+### A3
+A 48-year old woman was diagnosed with essential hypertension and was commenced on treatment 3 months ago. She presents with a dry cough which is not responding to cough suppressants. Which of the following medications is responsible for this symptom?
+A. Amlodipine
+B. Lisinopril
+C. Metolazone
+D. Atenolol
+
+### A4
+A 40-year old female is to have angioplasty following an acute MI. As part of her treatment, she is given intravenously eptifibatide. What is the mechanism of action of eptifibatide?
+A. Inhibit platelet thromboxane production
+B. ADP receptor antagonism
+C. Glycoprotein IIa/IIIb antagonism
+D. Activation of plasminogen to plasmin
+
+### A5
+A 30-year-old woman being treated for hypertension has a sudden onset of fever and malaise. Her temperature is 38.3°C (101°F), and her blood pressure is 120/80 mm Hg. Physical examination shows a malar rash, swelling, and tenderness of the wrists and knees, and a friction rub at the lower left sternal border. Which of the following drugs is the most likely cause of these findings?
+A. Captopril
+B. Hydralazine
+C. Minoxidil
+D. Nitroprusside
+
+### A6
+PG is a 67-year-old man with HTN, asthma, and atrial fibrillation. He is able to walk 6 blocks before stopping to rest, and his echo shows an EF of 57%. His rhythm is irregularly irregular, with a ventricular response between 110-160/min. Which of the following agents would be the safest in treating his HTN and controlling his ventricular response?
+A. Atenolol
+B. Benazepril
+C. Hydrochlorothiazide
+D. Verapamil
+
+### A7
+HK is a 51-year-old woman who has been on antihypertensive drug therapy for the past 3 months. During her most recent visit, her fasting blood glucose level was found to be 112 mg/dL (above normal). Which agent is an antihypertensive drug regimen that would be most likely to have caused her glucose intolerance?
+A. Diltiazem
+B. Hydrochlorothiazide
+C. Lisinopril
+D. Minoxidil
+
+### A8
+A 65-year-old patient admitted to the hospital for severe chest pain is diagnosed with severe hypertension and a dissecting aorta. What i.v. medication would you choose to manage his condition?
+A. Atenolol
+B. Furosemide
+C. Phenylephrine
+D. Sodium nitroprusside
+
+### A9
+A definite contraindication for the use of ACE inhibitors and ARBs includes:
+A. Asthma
+B. Bilateral renal stenosis
+C. Diabetes
+D. Hypokalemia
+
+### A10
+A 69-year-old man presents with symptoms of nausea, vomiting, weakness, psychic dreams & a yellow-hued change in color perception. His ECG indicates sinus bradycardia with the presence of a 2nd degree AV conduction block. The patient's history indicates that he is taking digoxin 0.25 mg/day and hydrochlorothiazide 25 mg/day for systolic heart failure & both warfarin & amiodarone 400 mg qid for atrial fibrillation. This patient's symptoms are most consistent with toxicity caused by elevated levels of:
+A. Amiodarone
+B. Digoxin
+C. Hydrochlorothiazide
+D. Warfarin
+
+### A11
+A 63-year-old patient with a history of atrial arrhythmias arrives in the Emergency Department with complaints of tinnitus, visual disturbances, hearing loss & severe diarrhea. The patient is given oxygen by nasal cannula, and ECG leads, pulse oximeter and an automated blood pressure cuff are applied. The patient cries out and faints immediately. His ECG indicates the presence of a multifocal ventricular tachycardia with a "twisting of the points" (continuous change in QRS electrical axis). Which of the following drugs is most likely responsible for this patient's symptoms?
+A. Amiodarone
+B. Lidocaine
+C. Propranolol
+D. Quinidine
+
+### A12
+A 43-year-old man being treated for a recent myocardial infarction develops symptoms of arthralgia, myalgia, fever & pleuritis. Upon exam, the patient is found to have a high titer of antinuclear antibodies. Which of the following medications is most likely responsible for these symptoms?
+A. Amiodarone
+B. Propranolol
+C. Procainamide
+D. Quinidine
+
+### A13
+KT is a 78-year-old woman who has been treated for atrial fibrillation for the past year. She has a history of systolic HF and has been on a combination of digoxin, angiotensin receptor blocker, beta-blocker and thiazide diuretic for the past 10 years. During her routine checkup, KT complains of increased lethargy over the past 6 months. She comments that during a recent eye exam they found evidence of corneal microdeposits, but her eye doc assured her that this was not a clinical concern. Her lab work indicates elevated transaminase & TSH levels, and reduced T4 level. Her ECG shows an increased QTc. The most likely drug causing these symptoms is:
+A. Amiodarone
+B. Digoxin
+C. Losartan
+D. Metoprolol
+
+### A14
+A 65-year-old man suffering from chest pain and difficulty breathing for the past 20 minutes is brought to the Emergency Department of a small rural community hospital. He is given a chewable aspirin while his history is taken. His ECG indicates ST-segment elevation (STEMI). Which of the following would be the best choice to improve blood flow to the ischemic region of the heart if angioplasty (PCI) is not immediately available?
+A. Dabigatran
+B. Enoxaparin
+C. Abciximab
+D. Reteplase
+
+### A15
+A patient is brought into the emergency room suffering from shock-like symptoms resulting from internal hemorrhage. The patient’s history indicates they have been taking an orally effective anticoagulant for the prevention of DVT. The ER physician administers an antidote. What anticoagulant had this patient most likely been taking?
+A. Clopidogrel
+B. Dabigatran
+C. Enoxaparin
+D. Heparin
+
+### A16
+A 23-year-old pregnant woman is referred by her obstetrician for evaluation of anemia. She is in her 4th month of pregnancy. Her grandfather had pernicious anemia. Her hemoglobin is 10 g/dL (normal for women is 12-14 g/dL). She is diagnosed with macrocytic (megaloblastic) anemia. Her serum ferritin and vitamin B12 plasma levels are in the normal range. What is the most likely deficiency causing her anemia?
+A. Cobalamin
+B. Erythropoietin
+C. Folic acid
+D. Iron
+
+### A17
+A 70-year-old man is diagnosed with chronic kidney disease. Which of the following would most likely be required in the treatment of this condition?
+A. Deferoxamine
+B. Erythropoietin
+C. Iron
+D. Vitamin B12
+
+### A18
+A 50-year-old man who recently began combination therapy for dyslipidemia (high LDL, low HDL, high triglycerides) arrives in your clinic suffering from flushing, diarrhea, itchiness, dry skin, and a rapid pulse. Which of the following agents is most likely responsible for these side effects?
+A. Cholestyramine
+B. Ezetimibe
+C. Lovastatin
+D. Niacin
+
+### A19
+A patient diagnosed with very levels of LDL-C caused by familial hypercholesterolemia is treated with combination drug therapy in order to reduce their likelihood of developing early-onset atherosclerotic cardiovascular disease. The patient's therapy includes a statin, ezetimibe, and a PCSK9 antibody. What is the mechanism of action of this antibody?
+A. Decreased cholesterol synthesis
+B. Decreased dietary cholesterol absorption
+C. Increased synthesis of LDL receptors
+D. Reduced rate of LDL receptor degradation
+
+### A20
+A 47-year-old patient recently diagnosed with high LDL-C (190 mg/dL) caused by heterozygous familial hypercholesterolemia is initiated on hypolipidemic mono-therapy to try and achieve an LDL-C goal of <70 mg/dL, before considering the need for combination drug therapy. Within a week after initiating drug therapy the patient returns to your clinic complaining of severe shoulder pain, difficulty moving their arms and legs, and dark brown urine. Which of the following agents is most likely responsible for producing these side effects?
+A. Bile acid-binding resin
+B. Fibric acid derivative
+C. Nicotinic acid
+D. Statin
+
+### A21
+A 64-year-old man with a history of systolic HF develops pulmonary edema with difficulty breathing. Which drug is the best choice to acutely increase cardiac output in this patient within the next 30 mins?
+A. Captopril
+B. Digoxin
+C. Dobutamine
+D. Epinephrine
+
+### A22
+A 56-year-old man with a history of exertional angina presents to the Emergency Department with blurred vision, low blood pressure, bradycardia & confusion. During his history taking, you learn that he took three tablets of his "heart medicine" (metoprolol) after forgetting to take them for 3 days. Which drug of choice should be given to reverse his cardiovascular symptoms by increasing heart rate & myocardial contractility, and thereby blood pressure as well?
+A. Atropine
+B. Glucagon
+C. Insulin
+D. Isoproterenol
+
+### A23
+A 57-year-old man with a history of atrial fibrillation is diagnosed with classic angina. Which of the following would be contraindicated in this patient?
+A. Diltiazem
+B. Metoprolol
+C. Nifedipine
+D. Warfarin
+
+### A24
+A 73-year-old woman with a history of diabetes & angina of effort presents to the emergency department with the chief complaint of prolonged chest pain of 40 mins duration that developed while she was watching TV. She is given oxygen by nasal cannula, a chewable aspirin & a sublingual nitroglycerin tablet while her ABCs are assessed. Her ECG indicates an elevated heart rate with normal (non-elevated) ST segments. Her cardiac enzymes (troponin I & CK-MB) are within the normal range. The next best course of action would be to give:
+A. Lovastatin
+B. Clopidogrel
+C. Alteplase
+D. Warfarin
+
+### A25
+Which of the following anemias would be treated by cyanocobalamin?
+A. Anemias in infants undergoing rapid growth
+B. Anemias associated with cheilosis, dysphagia, gastritis and hypochlorhydria
+C. Anemia associated with small, bizarre cells poorly filled with hemoglobin
+D. Anemia associated with infestation by Diphyllobothrium latum
+
+### A26
+A positive Coombs’ test and hemolytic anemia may follow administration of which of the following antihypertensive drug?
+A. Methyldopa
+B. Clonidine
+C. Doxazosin
+D. Captopril
+
+### A27
+Absorption of oral iron preparations can be facilitated by co-administering:
+A. Antacids
+B. Tetracyclines
+C. Phosphates
+D. Ascorbic acid
+
+### A28
+Streptokinase therapy of myocardial infarction is contraindicated in the presence of the following EXCEPT:
+A. Peptic ulcer
+B. Ventricular extrasystoles
+C. History of recent trauma
+D. Severe hypertension
+
+### A29
+Tranexamic acid is a specific antidote of:
+A. Fibrinolytic drugs
+B. Organophosphates
+C. Barbiturates
+D. Heparin
+
+### A30
+Ticlopidine is recommended for the following EXCEPT:
+A. To reduce neurological sequelae of stroke
+B. Transient ischemic attacks
+C. To prevent occlusion of coronary artery bypass graft
+D. Intermittent claudication
+
+
+SECTION B (7)
+----------------------------------------
+### B1
+A patient is diagnosed with atrial fibrillation.
+a) State THREE (3) drugs that you can give in management of this patient. (3 marks)
+b) Explain the mode of action of each of the drugs mentioned in a) above. (6 marks)
+
+### B2
+A 70-year-old Kenyan patient presents to the hospital and the BP is 160/95. He has also been diagnosed with gout and diabetes mellitus.
+a) Recommend an appropriate drug that you would give him for management of hypertension. (1 mark)
+b) State any other TWO (2) clinical applications of the drug mentioned in a) above. (2 marks)
+c) Outline any FOUR (4) side effects that you would look out for. (2 marks)
+
+### B3
+Aspirin is an antiplatelet and an anti-inflammatory. Compare and contrast its mode of action as an antiplatelet and as an anti-inflammatory. (4 marks)
+
+### B4
+Identify TWO (2) fibrinolytic drugs and TWO (2) antifibrinolytic drugs and describe their mechanism of action. (8 marks)
+
+### B5
+Atorvastatin is a popular medicine. Elucidate THREE (3) clinical applications and THREE (3) side effects of atorvastatin. (6 marks)
+
+### B6
+Propose TWO (2) drugs that can be used for management of microcytic hypochromic anemia. (2 marks)
+
+### B7
+Mention the different types of angina and recommend a drug for management of each type of angina. (6 marks)
+
+
+SECTION C (2)
+----------------------------------------
+### C1
+A 70-year old Kenyan patient presents to the hospital and the average BP is 160/95. He is also diagnosed with STEMI.
+a) Formulate a pharmaceutical plan for this patient. (3 marks)
+b) Describe the mode of action of the SIX (6) drugs you recommended in a) above (8 marks)
+c) State TWO (2) side effects for each drug that you would look out for. (4 marks)
+
+### C2
+A patient suffering from Deep Venous Thrombosis is admitted in the public hospital you are working at.
+a) Propose a drug that you would recommend for this patient. (1 mark)
+b) Describe the mode of action of the drug mentioned in a) above (2 marks)
+c) The patient develops bleeding which is caused by the drug given. Propose an antidote that would counteract the bleeding. (1 mark)
+d) Describe the mechanism of action of the antidote mentioned in c) above. (2 marks)
+e) After 4 days, she might be discharged, propose a drug that you would recommend for this patient. (1 mark)
+f) Describe the mode of action of the drug mentioned in e) above (2 marks)
+g) Outline any FOUR (4) side effects of the drug mentioned in e) above (2 marks)
+h) Describe any TWO (2) drug-drug interactions that may occur when given with the drug mentioned in e) (4 marks)
+
+==========================================================================================
+3307 — Pharmacology VII — Endocrine & Respiratory Pharmacology
+==========================================================================================
+
+
+SECTION A (20)
+----------------------------------------
+### A1
+The following is true regarding the clinical uses of beta-2 agonists EXCEPT:
+A. They inhibit release of bronchoconstricting mediators from mast cells
+B. They inhibit microvascular leakage and increase mucociliary transport by increasing ciliary activity
+C. The long acting agents can be used as monotherapy for asthma
+D. All β2 – agonists are more broncho-selective when administered by the aerosol route
+
+### A2
+The primary mechanism by which antidiuretic hormone reduces urine volume is:
+A. Decrease in glomerular filtration rate
+B. Decreased renal blood flow
+C. Decreased water permeability of descending limb of loop of Henle
+D. Increased water permeability of collecting duct cells
+
+### A3
+Which of the following peptides is a selective vasopressin V2 receptor agonist:
+A. Arginine vasopressin
+B. Desmopressin
+C. Lypessin
+D. Terlipressin
+
+### A4
+Regarding the pharmacokinetics of methylxanthines, the following statements are true EXCEPT:
+A. Theophylline has antiasthma effects other than bronchodilation below 10 mg/L, so the therapeutic range is now taken as 5–15 mg/L
+B. Methylxanthines are effective by aerosol route and can be administered as inhalers or nebulizing solutions
+C. Aminophylline is an ethylene diamine ester of theophylline that is water soluble
+D. Theophylline is rapidly and completely absorbed, but there are large interindividual variations in clearance due to differences in hepatic metabolism
+
+### A5
+Adverse effects of beta-2 agonists include all of the following EXCEPT:
+A. Hyperkalemia
+B. Skeletal muscle tremors
+C. Palpitations
+D. Nervousness
+
+### A6
+The following factors influence the effectiveness of the inhaled route of drug delivery EXCEPT:
+A. Geometry of the airways
+B. Pattern of breathing
+C. Drug particle size
+D. All the above
+
+### A7
+The following statements regarding anticholinergic agents are correct EXCEPT
+A. They have a greater bronchodilation with less toxicity from systemic absorption as compared to the prototype atropine
+B. They are administered via the oral route
+C. Antimuscarinic drugs appear to be slightly less effective than B2-agonist agents in reversing asthmatic bronchospasm
+D. The addition of ipratropium enhances the bronchodilation produced by nebulized salbutamol in acute severe asthma
+
+### A8
+The following are adverse effects of theophylline EXCEPT:
+A. Can precipitate cardiac arrhythmias
+B. Lowers the threshold for seizure activity
+C. Abdominal discomfort
+D. Renal toxicity
+
+### A9
+Nonsteroidal anti-inflammatory drugs reduce the diuretic action of furosemide by:
+A. Preventing prostaglandin mediated intrarenal haemodynamic actions
+B. Blocking the action in ascending limb of loop of Henle.
+C. Enhancing salt and water reabsorption in distal tubule
+D. Increasing aldosterone secretion
+
+### A10
+Select the diuretic that can cause gynaecomastia, hirsutism and menstrual disturbance as a side effect on long-term use:
+A. Amiloride
+B. Spironolactone
+C. Metolazone
+D. Acetazolamide
+
+### A11
+The following statements are correct regarding leukotriene pathway inhibitors EXCEPT:
+A. Leukotriene antagonists play an important role in asprin induced asthma
+B. They are available via the inhalational route
+C. have been shown to improve asthma control and to reduce the frequency of asthma exacerbations in outpatient clinical trials
+D. Zafirlukast causes hepatotoxicity and eosinophilicvasculitis
+
+### A12
+The following statements are true regarding the pharmacokinetics of corticosteroids EXCEPT:
+A. The rate of secretion of cortisol follows a circadian rhythm governed by pulses of ACTH that peak in the early morning hours and after meals
+B. In plasma, cortisol is highly bound to albumin and the bound cortisol is unavailable for pharmacologic activity
+C. The half-life of cortisol in the circulation is normally about 60–90 minutes and is increased when hydrocortisone is administered in large amounts or when stress, hypothyroidism, or liver disease is present
+D. Only 1% of cortisol is excreted unchanged in the urine as free cortisol
+
+### A13
+The following statements are true regarding the clinical use of corticosteroids EXCEPT:
+A. Inhalational treatment is the most effective way to avoid the systemic adverse effects of corticosteroid therapy
+B. For severe asthma exacerbations, urgent treatment is often begun with an oral or parenteral dose
+C. It is not necessary to taper the dose when switching patients from chronic oral to inhaled corticosteroid therapy
+D. High doses of inhaled steroids cause mild adrenal suppression, the risks of systemic toxicity from their chronic use are negligible compared with those of the oral corticosteroid therapy
+
+### A14
+The following are clinical uses of cromolyn sodium &nedocromil sodium EXCEPT:
+A. prophylaxis of mild persistent asthma
+B. prevention of seasonal allergic rhinitis
+C. management of acute asthma exacerbations
+D. exercise induced asthma
+
+### A15
+The following are adverse effects of cromolyn EXCEPT:
+A. Throat irritation
+B. Chest tightness
+C. Dry mouth
+D. Glaucoma
+
+### A16
+The following statements are correct regarding leukotriene pathway inhibitors EXCEPT
+A. Zileuton is a 5-lipoxygenase enzyme inhibitor
+B. Zafirlukast is a 5-lipoxygenase enzyme inhibitor
+C. Montelukast is a leukotriene receptor antagonist
+D. Zileuton is administered four times a day
+
+### A17
+The following drug can worsen underlying asthma:
+A. Adrenaline
+B. Paracetamol
+C. Diclofenac
+D. Isoproterenol
+
+### A18
+The following is an Anti IgE Monoclonal Antibodies:
+A. Rituximab
+B. Omalizumab
+C. Pentostam
+D. Sorafenib
+
+### A19
+The current therapeutic indication of acetazolamide is:
+A. Congestive heart failure
+B. Renal insufficiency
+C. Cirrhosis of liver
+D. Glaucoma
+
+### A20
+Furosemide acts by inhibiting the following in the renal tubular cell:
+A. Na+-K+-2Cl– cotransporter
+B. Na+-Cl– symporter
+C. Na+-H+ antiporter
+D. Na+ K+ ATPase
+
+
+SECTION B (7)
+----------------------------------------
+### B1
+Briefly discuss the pathogenesis of asthma (8 Marks)
+
+### B2
+Outline the adverse effects of systemic corticosteroid use (8 Marks)
+
+### B3
+Outline any 4 synergistic combinations of anti asthma agents (4 Marks)
+
+### B4
+Briefly discuss the possible triggers of asthma (5marks)
+
+### B5
+Briefly discuss the pharmacodynamic effects of methylxanthines(5marks)
+
+### B6
+Outline any 5 clinical uses of diuretics (5marks)
+
+### B7
+Describe the factors that contribute to the decline in the use of methylxanthines as first line agents in the management of asthma(5marks)
+
+
+SECTION C (3)
+----------------------------------------
+### C1
+a) Discuss the mechanism of action of the following drugs used in asthma (10marks)
+Beta agonists
+Anticholinergics
+Corticosteroids
+Leukotriene antagonists
+Mast cell stabilisers
+For each of the classes outlined in (a) above, describe the adverse effects (10marks)
+
+### C2
+a) Discuss the mechanism of action of any 5 classes of diuretic agents(10marks)
+b) For each class outlined in (a) above, briefly discuss the adverse effects(10marks)
+
+### C3
+a) Discuss the mechanism of action of methylxanthines (10marks)
+Discuss the mechanism of action of any 5 drugs used as cough remedies(10marks)
+
+==========================================================================================
+4108 — Pharmacology VIII — Gastrointestinal Pharmacology
+==========================================================================================
+
+
+SECTION A (60)
+----------------------------------------
+### A1
+The plasma levels of ketoconazole are lower than normal following its oral absorption in patients treated with lansoprazole. What is the reason for this?
+A. The induction of enzymes that metabolize ketoconazole
+B. Ketoconazole requires an acid environment for its oral absorption
+C. Lansoprazole binds acidic drugs in the gastrointestinal tract
+D. Increased gastrointestinal transit time because of the prokinetic effects of lansoprazole
+
+### A2
+The widely used anticoagulant warfarin is often implicated in drug interactions. If a patient takes warfarin but later begins self-medicating for ulcer pain, what drug useful for ulcers would increase the risk for bleeding?
+A. Ranitidine
+B. Sucralfate
+C. Misoprostol
+D. Cimetidine
+
+### A3
+Which statement concerning nausea and vomiting is the most accurate?
+A. Afferents from the stomach to the vomiting centre inhibit vomiting when stimulated.
+B. Selective 5-HT3 receptor antagonists are effective against motion sickness.
+C. Nabilone is derived from a psychoactive component of cannabis.
+D. Stimulation of neurokinin 1 (NK1) receptors in the CTZ inhibits nausea.
+
+### A4
+Which of the following statements about Helicobacter pylori is the least accurate?
+A. H. pylori infection in the gastric antrum reduces acid secretion.
+B. H. pylori infection can be found in the duodenum in people with duodenal ulcers.
+C. If H. pylori is not eliminated; a duodenal ulcer is likely to recur.
+D. H. pylori is a risk factor for the development of gastric cancer.
+
+### A5
+Choose the most accurate statement concerning irritable bowel disease (IBD) drugs
+A. 5-Aminosalicylic acid given orally or rectally is well absorbed.
+B. Balsalazide comprises two molecules of 5-ASA joined by an azo bond.
+C. Adalimumab is an antibody directed against interleukin-6.
+D. Metronidazole can be used in the treatment of inflammatory bowel disease.
+
+### A6
+Choose the correct statement below concerning laxatives.
+A. Bulk laxative use should be accompanied by drinking plenty of water.
+B. Magnesium sulphate inhibits cholecystokinin release.
+C. Lactulose acts by stimulating the enteric nerves.
+D. Aluminium hydroxide can cause diarrhea.
+
+### A7
+Which of the following statements about diarrhea is incorrect?
+A. Rotavirus is an uncommon cause of diarrhea in adults
+B. Kaolin is not recommended for acute diarrhea
+C. Loperamide should not be used for dysentery
+D. Loperamide decreases the gut residence time of the infective organism
+
+### A8
+A 45-year-old woman had been self-medicating for heartburn. The preparation she was using was a combination of magnesium hydroxide and aluminum hydroxide. Which of the following reasons best explains why many antacid preparations on the market contain a combination of these two antacids instead of a single product?
+A. To achieve a bactericidal effect on Helicobacter pylori
+B. To decrease the occurrence of constipation or diarrhea
+C. To avoid interaction with other drugs given concomitantly
+D. To facilitate gastric emptying
+
+### A9
+A 76-year-old woman who underwent surgery to remove a colon polyp complained of epigastric pain the day after the operation. Her general condition rapidly deteriorated, and she was transferred to the intensive care unit because of septic shock. Which of the following therapeutic regimens would be appropriate to prevent stress-related mucosal bleeding in this patient?
+A. Ondansetron by IV infusion
+B. Sucralfate by nasogastric tube
+C. Misoprostol by nasogastric tube
+D. Famotidine by IV infusion
+
+### A10
+A 61-year-old man with newly diagnosed lung cancer was scheduled to receive his first course of chemotherapy. A prophylactic antiemetic treatment was planned that included ondansetron. Which of the following brain regions represent a site of the antiemetic action of the drug?
+A. Nucleus tractus solitarius
+B. Putamen
+C. Locus ceruleus
+D. Nucleus accumbens
+E. Medial forebrain bundle
+
+### A11
+A 70-year-old woman complained to her physician of obstinate constipation. The physician prescribed a laxative that acts in the colon by absorbing water into the fecal contents, thus promoting peristalsis about 1 or 2 days after administration. Which of the following drugs was most likely prescribed?
+A. Castor oil
+B. Docusate
+C. Magnesium sulfate
+D. Methylcellulose
+
+### A12
+A 58-year-old alcoholic man suffering from hepatic cirrhosis was admitted to the hospital because of drowsiness and disorientation in time and place. Further exams led to the diagnosis of portal-systemic encephalopathy. Which of the following drugs would be appropriate to eliminate toxic enteric products in this patient?
+A. Omeprazole
+B. Lactulose
+C. Loperamide
+D. Sucralfate
+
+### A13
+A 65-year-old woman suffering from chronic heartburn was routinely taking a large amount of an antacid preparation containing aluminum hydroxide. Lab exams of this patient would most likely show which of the following results?
+A. Hypercalcemia
+B. Hypernatremia
+C. Hypokalemia
+D. Hypophosphatemia
+
+### A14
+A 45-year-old woman presented to her physician because of a 2-week history of painless diarrhea that was urgent and usually occurred during meals. After physical examination, lab tests, and colonoscopy, a diagnosis of irritable bowel syndrome was made, and the woman was prescribed an appropriate therapy that included loperamide. Direct activation of which of the following receptors most likely mediated the therapeutic effect of the drug in this patient?
+A. Beta-2 adrenergic
+B. 5-HT3 serotonergic
+C. Mu opioid
+D. M3 cholinergic
+
+### A15
+An 18-year-old man traveling on vacation in Mexico noted some mild abdominal cramps and three or four unformed stools over the past 24 hours. No blood was seen in the stool. Which of the following drugs would be appropriate to treat the patient’s diarrhea?
+A. Magnesium sulfate
+B. Bismuth subsalicylate
+C. Vancomycin
+D. Erythromycin
+
+### A16
+A 45-year-old man recently diagnosed with mild colonic Crohn disease had been receiving sulfasalazine for 4 weeks, but remission was not achieved. Prednisone was added for another 2 weeks, but improvement was negligible, and the gastroenterologist decided to add a third drug to the therapy. Which of the following drugs would be appropriate for the patient at this time?
+A. Mesalamine
+B. Daclizumab
+C. Dexamethasone
+D. Infliximab
+
+### A17
+Which of the following best describes the mechanism of action of antacids?
+A. Inhibition of pepsin and hydrochloric acid secretion
+B. Stimulation of bicarbonate secretion by epithelial cells
+C. Reaction with hydrochloric acid in the stomach lumen
+D. Binding to necrotic ulcer tissue
+
+### A18
+A 50-year-old woman complained to her physician of regurgitation of foul-tasting fluid into her mouth and occasional nausea and vomiting. The physician prescribed a drug that can both prevent nausea and vomiting and promote upper gastrointestinal motility. Blockade of which of the following receptors most likely contributed to the therapeutic effect
+of the drug in the patient’s disease?
+A. M3 cholinergic
+B. Beta-2 adrenergic
+C. H2 histaminergic
+D. D2 dopaminergic
+
+### A19
+A 44-year-old man who has been receiving his first course of chemotherapy for a non-Hodgkin lymphoma still complains of recurrent nausea and vomiting despite antiemetic medication with ondansetron, dexamethasone, and aprepitant. Which of the following drugs would be appropriate to add to the patient’s antiemetic regimen at this time?
+A. Famotidine
+B. Omeprazole
+C. Loperamide
+D. Dronabinol
+
+### A20
+A 64-year-old woman suffering from episodic heartburn routinely took an over-the-counter medication as needed. The drug acts by inhibiting the action of an endogenous compound released from enterochromaffin-like cells of the stomach. Which of the following drugs did the patient most likely take?
+A. Misoprostol
+B. Famotidine
+C. Loratadine
+D. Sucralfate
+
+### A21
+A 36-year-old man complained to his physician of dizziness and drowsiness. The man, recently diagnosed with gastroesophageal reflux disease, had started an appropriate treatment 2 weeks earlier. Laboratory findings showed an increase of the patient’s prolactin levels. Which of the following drugs could have caused the signs and symptoms of this patient?
+A. Ranitidine
+B. Omeprazole
+C. Sucralfate
+D. Metoclopramide
+
+### A22
+A 60-year-old man suffering from recurrent heartburn routinely took large quantities of different antacid preparations. Which of the following antacids had the highest risk of metabolic alkalosis in this patient?
+A. NaHCO3
+B. CaCO3
+C. Al(OH)3
+D. Mg(OH)2
+
+### A23
+A 67-year-old man complained to his physician of nervousness, insomnia, palpitations, and stomachache. The man had a long history of chronic obstructive pulmonary disease currently treated with inhaled ipratropium and oral theophylline. He told the physician that he had started taking cimetidine for heartburn 3 days ago. Which of the following best explains the reason for the patient’s current complaints?
+A. Cimetidine increased the clearance of theophylline.
+B. Cimetidine decreased the clearance of theophylline.
+C. Cimetidine increased the clearance of ipratropium.
+D. Theophylline increased the clearance of cimetidine.
+
+### A24
+A 71-year-old man with terminal metastatic lung cancer had been hospitalized for 3 months. His renal function had deteriorated, and laboratory results showed serum creatinine 4.5 mg/dL (normal 0.9−1.2 mg/dL) and blood urea nitrogen (BUN) 75 mg/dL (normal 6−20 mg/dL). Because of poor food intake, immobility, and requirement for an opioid analgesia, the patient was severely constipated and required daily laxative therapy. Which of the following would be a suitable laxative for this patient?
+A. Lactulose
+B. Castor oil
+C. Magnesium hydroxide
+D. Sodium phosphate
+
+### A25
+A 74-year-old patient suffering from chronic constipation complained of very loose stools after a treatment with bisacodyl, one tablet daily for 1 week. Which of the following would be the best advice to give to this patient?
+A. There is no cause for alarm; the situation is self-limiting.
+B. Continue bisacodyl, but take the medication with a small snack.
+C. Continue bisacodyl, and add lactulose.
+D. Discontinue bisacodyl, and increase fiber and fluid intake.
+
+### A26
+A 43-year-old man recently diagnosed with testicular cancer was in the hospital for his second cycle of chemotherapy. A three-drug combination was given to prevent chemotherapy-induced nausea and vomiting. The combination included a drug that blocks NK1 neurokinin receptors in the area postrema. Which of the following drugs has this molecular mechanism of action?
+A. Ondansetron
+B. Dronabinol
+C. Aprepitant
+D. Metoclopramide
+
+### A27
+A 34-year-old hospitalized male patient complained of torticollis, grimacing, and spasm of the ocular muscles 1 day after surgery. The man had received an intravenous drug soon after surgery to treat nausea and vomiting. Which of the following antiemetic drugs most likely caused the patient’s symptoms?
+A. Ondansetron
+B. Scopolamine
+C. Dexamethasone
+D. Metoclopramide
+
+### A28
+A 24-year-old woman in her second trimester of pregnancy complained of constipation at a routine prenatal visit. The physician instructed the woman to maintain bowel function by drinking plenty of water, increasing bulk in the diet with vegetables, and taking a laxative daily. Which of the following laxatives would be most appropriate for this patient?
+A. Castor oil
+B. Bisacodyl
+C. Senna
+D. Docusate
+
+### A29
+A 63-year-old man suffering from a small cell carcinoma of the lung was hospitalized for his first cycle of chemotherapy. Which of the following three-drug regimens would be the best to prevent nausea and vomiting in this patient?
+A. Ranitidine, diazepam, dexamethasone
+B. Scopolamine, dexamethasone, ondansetron
+C. Ondansetron, aprepitant, dexamethasone
+D. Aprepitant, scopolamine, loperamide
+
+### A30
+A 68-year-old patient with cardiac failure is diagnosed with ovarian cancer. She begins using cisplatin but becomes nauseous and suffers from severe vomiting. Which of the following medications would be most effective to counteract the emesis in this patient without exacerbating her cardiac problem?
+A. Droperidol.
+B. Dolasetron.
+C. Prochlorperazine.
+D. Palonosetron.
+
+### A31
+Which of the following drugs has been known to cause discoloration of the tongue?
+A. Amoxicillin.
+B. Omeprazole.
+C. Bismuth compounds.
+D. Lubiprostone
+
+### A32
+All of the following drugs are generally well tolerated for the treatment of constipation except:
+A. Castor oil.
+B. Methylcellulose.
+C. Polyethylene glycol.
+D. Docusate.
+
+### A33
+An elderly woman with a recent history of myocardial infarction is seeking a medication to help treat her occasional heartburn. She is currently taking several medications, including aspirin, Clopidogrel, simvastatin, metoprolol, and lisinopril. Which of the following choices should be avoided in this patient?
+A. Calcium citrate.
+B. Famotidine.
+C. Omeprazole.
+D. Ranitidine.
+
+### A34
+Extrapyramidal symptoms (EPS) have been associated with which of the following drugs?
+A. Metoclopramide.
+B. Alprazolam.
+C. Aprepitant.
+D. Loperamide.
+
+### A35
+Which of the following medications for gastrointestinal problems is contraindicated in pregnancy?
+A. Calcium carbonate.
+B. Famotidine.
+C. Lansoprazole.
+D. Misoprostol
+
+### A36
+For healing duodenal ulcer, the usual duration of H2 blocker therapy is at least:
+A. 4 weeks
+B. 6 weeks
+C. 8 weeks
+D. 12 weeks
+
+### A37
+Gynaecomastia can occur as a side effect of:
+A. Bromocriptine
+B. Cimetidine
+C. Famotidine
+D. Levodopa
+
+### A38
+The widely used anticoagulant warfarin is often implicated in drug interactions. If a patient takes warfarin but later begins self-medicating for ulcer pain, what drug useful for ulcers would increase the risk for bleeding?
+A. Ranitidine
+B. Sucralfate
+C. Misoprostol
+D. Cimetidine
+
+### A39
+Which one of the following is likely to be used in motion sickness, and nausea and vomiting of pregnancy?
+A. Loratadine
+B. Ondansetron
+C. Meclizine
+D. Fexofenadine
+
+### A40
+Constipation i s highly unlikely to occur with the use of which of the following?
+A. Diphenhydramine
+B. Docusate
+C. Promethazine
+D. Loperamide
+
+### A41
+A 55-year-old woman with type 1 diabetes of 40 years’ duration complains of severe bloating and abdominal distress, especially after meals. Evaluation is consistent with diabetic gastroparesis. Which of the following is a prokinetic drug that could be used in this situation?
+A. Alosetron
+B. Cimetidine
+C. Loperamide
+D. Metoclopramide
+
+### A42
+A patient who is taking verapamil for hypertension and angina has become constipated. Which of the following drugs is an osmotic laxative that could be used to treat the patient’s constipation?
+A. Aluminum hydroxide
+B. Diphenoxylate
+C. Magnesium hydroxide
+D. Metoclopramide
+
+### A43
+Which drug accumulates in parietal cell canaliculi and undergoes conversion to a derivative that irreversibly inhibits H+/K+ ATPase?
+A. Cimetidine
+B. Diphenoxylate
+C. Esomeprazole
+D. Metoclopramide
+
+### A44
+All of the following agents intensify the secretion of gastric glands EXCEPT?
+A. Pepsin
+B. Gastrin
+C. Histamine
+D. Carbonate mineral waters
+
+### A45
+A 34-year-old woman has irritable bowel syndrome with diarrhea that is not responsive to conventional therapies. Despite the small risk of severe constipation and ischemic colitis, the patient decides to begin therapy with alosetron. Alosetron has which of the following receptor actions?
+A. 5-HT3 receptor antagonist
+B. 5-HT4 receptor agonist
+C. D2 receptor antagonist
+D. NK1 receptor antagonist
+
+### A46
+A 45-year-old man with a duodenal ulcer was treated with a combination of drugs intended to heal the mucosal damage and to eradicate Helicobacter pylori. Which of the following antibacterial drugs is used commonly to eradicate intestinal Helicobacter pylori?
+A. Cefazolin
+B. Ciprofloxacin
+C. Clarithromycin
+D. Clindamycin
+
+### A47
+Gastric acid secretion is under the control of the following agents EXCEPT?
+A. Histamine
+B. Acetylcholine
+C. Serotonin
+D. Gastrin
+
+### A48
+Select the drug stimulating the protective function of the mucous barrier and the stability of the mucous membrane against damaging factors:
+A. Bismuth Subcitrate
+B. Sucralfate
+C. Misoprostol
+D. Omeprazole
+
+### A49
+Which among the following drugs causes constipation?
+A. Sodium bicarbonate
+B. Aluminium hydroxide
+C. Calcium carbonate
+D. Magnesium oxide
+
+### A50
+The mechanism of stimulant purgatives is:
+A. Increasing the volume of non-absorbable solid residue
+B. Increasing motility and secretion
+C. Altering the consistency of the feces
+D. Increasing the water content
+
+### A51
+Ranitidine differs from cimetidine in the following respect:
+A. It is less potent
+B. It is shorter acting
+C. It does not have antiandrogenic action
+D. It produces more CNS side effects
+
+### A52
+The ‘acid neutralizing capacity’ of an antacid is governed by:
+A. The equivalent weight of the antacid
+B. The pH of 1N solution of the antacid
+C. The rate at which the antacid reacts with HCl
+D. Both ‘A’ and ‘C’
+
+### A53
+Antacids administered concurrently reduce efficacy of the following antipeptic ulcer drug:
+A. Cimetidine
+B. Colloidal bismuth
+C. Sucralfate
+D. Pirenzepine
+
+### A54
+The most dependable emetic used to expel ingested poisons is:
+A. Intramuscular emetine
+B. Oral syrup ipecacuanha
+C. Intramuscular apomorphine
+D. Oral bromocriptine
+
+### A55
+The most effective anti motion sickness drug suitable for short brisk journies is:
+A. Promethazine theoclate
+B. Cinnarizine
+C. Prochlorperazine
+D. Hyoscine
+
+### A56
+Metoclopramide has the following actions except:
+A. Increases lower esophageal sphincter tone
+B. Increases tone of pyloric sphincter
+C. Increases gastric peristalsis
+D. Increases intestinal peristalsis
+
+### A57
+The following prokinetic drug has been implicated in causing serious ventricular arrhythmias, particularly in patients concurrently receiving erythromycin or ketoconazole:
+A. Domperidone
+B. Cisapride
+C. Mosapride
+D. Metoclopramide
+
+### A58
+Used as a laxative, liquid paraffin has the following drawbacks except?
+A. It interferes with absorption of fat soluble vitamins
+B. It is unpleasant to swallow
+C. It causes griping
+D. It can produce foreign body granulomas
+
+### A59
+Stimulant purgatives are contraindicated in the following:
+A. Bed ridden patients
+B. Before abdominal radiography
+C. Spastic constipation
+D. Atonic constipation
+
+### A60
+The therapeutic effect of sulfasalazine in ulcerative colitis is exerted by:
+A. Inhibitory action of the unabsorbed drug on the abnormal colonic flora
+B. Breakdown of the drug in colon to release 5-aminosalicylic acid which suppresses inflammation locally
+C. Release of sulfapyridine having antibacterial property
+D. Systemic immunomodulatory action of the drug
+
+
+SECTION B (5)
+----------------------------------------
+### B1
+Match each gastrointestinal drug with the appropriate description (7 Marks)
+Drugs: Erythromycin, omeprazole, Magnesium hydroxide, Misoprostol, Sucralfate, metoclopramide, Docusate, Aprepitant, Aluminium hydroxide, Ranitidine, Mesalamine, Bisacodyl
+Descriptions:
+1. A drug that can increase intestinal peristalsis by activating motilin receptors
+2. An antiulcer agent that can inhibit 24-hour gastric acid secretion up to 95%
+3. A salicylate derivative used in inflammatory bowel diseases
+4. An antiemetic drug used primarily for chemotherapy-induced vomiting
+5. An antacid that also has laxative properties
+6. A prostaglandin E1 analogue that can have a cytoprotective effect on gastric mucosa
+7. An antiulcer agent that binds to necrotic peptic ulcer tissue, thus acting as a barrier to gastric juice (This is a small molecule that polymerizes in stomach acid and coats the ulcer bed, resulting in accelerated healing and reduction of symptoms.)
+
+### B2
+Using a suitable example illustrate the mode of action and clinical use of one emetic agent (3 Marks)
+
+### B3
+A patient who has been diabetic for the last 25 years is diagnosed with gastroparesis. Recommend an antibiotic drug that could be used to manage this condition and describe the mode of action of this drug (3 Marks)
+
+### B4
+A patient travelling from Japan visits Nakuru and is diagnosed with traveler’s diarrhea. Identify and explain the mechanism of action of a drug that you would recommend to reduce the number of bowel movements (3 Marks)
+
+### B5
+S.W is a 32-year-old lady who is 5 months pregnant. She calls you for advice regarding her heartburn which seems to be worsening. Currently she is not on any medication. With reason(s), identify the antacids you would advise her to chew and the one(s) you would advise her to avoid. (4 Marks)
+
+
+SECTION C (2)
+----------------------------------------
+### C1
+O.M, a 35-year-old man was diagnosed with non-Hodgkin’s lymphoma requiring many sessions of treatment with combined cytotoxic therapy, including cyclophosphamide and vincristine.
+Explain why O.M was likely to experience nausea and vomiting? (1 Mark)
+Nausea and vomiting started several hours after each course of treatment and continued for 4–5 days. Identify a planned antiemetic treatment prior to the first course of chemotherapy that would be beneficial? (2 Marks)
+Describe how the treatments you have chosen work? (4 Marks)
+O.M became very distressed by the severity of the nausea and vomiting and developed intense nausea and vomiting prior to the administration of the chemotherapeutic agents. Identify what treatment could be given to reduce the anticipatory nausea and vomiting? (2 Marks)
+Three days after the 3rd cycle of chemotherapy, O.M experiences severe pain and returns to his oncologist. He is put on PO morphine syrup. After 3 days of taking the morphine, OM hasn’t had a bowel movement and he now complains of bloating and abdominal discomfort. Recommend a drug that would help relieve O.M (2 Marks)
+Describe the mechanism of action), two adverse effects and one contraindication of the drug suggested in (E) above (5 Marks)
+After achieving full cancer remission O.M was diagnosed with peptic ulcer disease. Devise a treatment regimen that you would recommend for radical eradication of H.pylori Infection and cure of the ulcers (4 Marks)
+
+### C2
+A 35-year-old man presented with a 3-week period of frequent diarrhea with mucus but no blood in the stool. Stool analysis for infective agents was negative. Sigmoidoscopy indicated gross thickening of the mucosa, with inflammation and linear ulcers. Changes were present in restricted areas (skip lesions) with intervening normal mucosa. Histology was diagnostic of Crohn’s disease and investigation suggested that the condition was confined to the sigmoid and part of the ascending colon.
+Describe the cause of Crohn’s disease? (2 Marks)
+Propose the initial pharmacological therapy for this patient? (2 Marks)
+Explain the mode(s) of action of the drug that you have proposed in (B) above
+(2 Marks)
+Devise an appropriate pharmacological therapy that could be used to maintain remission in this man? (2 Marks)
+Outline the mode of action of the drug you have suggested in (D) above
+(2 Marks)
+Illustrate 4 adverse effects of the drug you have suggested in (D) above
+(4 Marks)
+Recommend an alternative therapy can be given to try and reduce the risk of dependence on the drug you suggested in (B) above? (2 Marks)
+Examine the mode of action and 2 adverse effects of the drug you suggested in (G) above. (4 Marks)
+
+==========================================================================================
+4109 — Pharmacology IX — Chemotherapeutic Agents
+==========================================================================================
+
+
+SECTION A (30)
+----------------------------------------
+### A1
+Which of the following antimicrobial therapies is appropriate for broad gram-negative coverage for a patient with a history of anaphylaxis reaction to penicillin?
+A. Rifampin
+B. Any third-generation cephalosporin
+C. Vancomycin
+D. A monobactam
+
+### A2
+Which of the following is not considered a "drug of choice" for the organism indicated?
+A. Methicillin-sensitive Staphylococcus aureus: nafcillin
+B. Enterococcus faecium: ampicillin and gentamicin
+C. Pseudomonas aeruginosa: piperacillin and aminoglycoside
+D. Enterobacter spp.: imipenem
+
+### A3
+Which of the following is false concerning the minimum inhibitory concentration (MIC)?
+A. It quantifies the in vitro activity of an antimicrobial versus a test organism.
+B. MicrodilutionMICs can help detect small numbers of antimicrobial-resistant subpopulations.
+C. MicrodilutionMICs are the most common susceptibility test method used in the clinical microbiology laboratory.
+D. The use of agar dilution MICs is declining in favor of more rapid testing methods such as PCR.
+
+### A4
+Which of the following does not bind to the 50S ribosomal subunit?
+A. Tetracyclines
+B. lincosamides
+C. macrolides
+D. chloramphenicol
+
+### A5
+Which of these antibiotics have useful clinical activity against pseudomonas?
+A. Ciprofloxacin
+B. Co-amoxiclav
+C. Cefazolin
+D. Cefotaxime
+
+### A6
+Each of the following antimicrobial agents is paired with a relevant adverse effect EXCEPT:
+A. Vancomycin - red man syndrome.
+B. Benzylpenicillin G - grey baby syndrome in premature neonates.
+C. Chloramphenicol - aplastic anemia.
+D. Tetracycline - affects growing teeth and bone.
+
+### A7
+The following antibiotic passes easily normal blood-brain barriers:
+A. Benzylpenicillin
+B. Cephalexin
+C. Chloramphenicol
+D. Erythromycin
+
+### A8
+The following antibiotic has an anti-ADH action, useful in the treatment of syndrome of inappropriate ADH secretion (SIADH), and can cause diabetes insipidus-like adverse effect;
+A. Demeclocycline.
+B. Streptogramins.
+C. Linezolid.
+D. Teicoplanin
+
+### A9
+Regarding erythromycin, the following statement is INCORRECT:
+A. It is the drug of choice in the treatment of whooping cough and diphtheria in children.
+B. It is used in sexually transmitted diseases in pregnant females.
+C. It has a prokinetic effect through the stimulation of motilin receptors.
+D. It induces CYP 450 enzymes and decreases plasma level of theophylline
+
+### A10
+All of the following are recognized adverse effects of isoniazid EXCEPT
+A. Hepatitis
+B. Retrobulbar neuritis
+C. Decreased phenytoin metabolism – increased phenytoin blood levels /toxicity
+D. CNS toxicity
+
+### A11
+Which one of the following agents is narrow-spectrum antibiotics?
+A. Aminoglycosides
+B. Cotrimoxazole
+C. Fluoroquinolones
+D. Vancomycin
+
+### A12
+Trimethoprim inhibits bacteria without affecting mammalian cells because:
+A. It does not penetrate mammalian cells
+B. It has a high affinity for bacterial but low affinity for mammalian dihydrofolatereductase enzyme
+C. It inhibits bacterial folatesynthetase as well as dihydrofolatereductase enzymes
+D. It is highly charged thus it doesn’t penetrate the human cell wall
+
+### A13
+Select the sulfonamide drug which is active against Pseudomonas and is used by topical application for prophylaxis of infection in burn cases:
+A. Sulfadiazine
+B. Silver sulfadiazine
+C. Sulfadoxine
+D. Sulfamethoxazole
+
+### A14
+Which of the following statements about beta-lactam antibiotics is false?
+A. Cephalexin and other first-generation cephalosporins do not cross the blood-brain barrier
+B. Ceftriaxone and nafcillin are both eliminated mainly via biliary secretion
+C. Instability of penicillins in gastric acid can limit their oral absorption
+D. Renal tubular reabsorption of amoxicillin is inhibited by probenecid
+
+### A15
+Which statement about vancomycin is accurate?
+A. Active against methicillin-resistant staphylococci
+B. Bacteriostatic
+C. Binds to PBPs
+D. Hepatic metabolism
+
+### A16
+A 4-year-old child is brought to the hospital after ingesting pills that a parent had used for bacterial dysentery when traveling to South Sudan. The child has been vomiting for more than 24 h and has had diarrhea with green stools. She is now lethargic with an ashen color. Other signs and symptoms include hypothermia, hypotension, and abdominal distention. The drug most likely to be the cause of this problem is
+A. Ampicillin
+B. Azithromycin
+C. Chloramphenicol
+D. Doxycycline
+
+### A17
+The most important mechanism of concurrent acquisition of multidrug resistance among bacteria is:
+A. Mutation
+B. Conjugation
+C. Transduction
+D. Transformation
+
+### A18
+Methicillin-resistant staphylococci do not respond to β-lactam antibiotics because:
+A. They produce a β-lactamase which destroys methicillin and related drugs
+B. They elaborate an amidase which destroys methicillin and related drugs
+C. They have acquired penicillin-binding protein which has low affinity for β-lactam antibiotics
+D. They are less permeable to β-lactam antibiotics
+
+### A19
+The mechanism of antibacterial action of tetracycline involves
+A. Antagonism of bacterial translocase activity
+B. Binding to a component of the 50S ribosomal subunit
+C. Inhibition of DNA-dependent RNA polymerase
+D. Interference with the binding of aminoacyl-tRNA to bacterial ribosomes
+
+### A20
+The following strategy will promote rather than curb the emergence of antibiotic-resistant microorganisms:
+A. Whenever possible use broad-spectrum antibiotics
+B. Prefer a narrow-spectrum antibiotic to a broad spectrum one if both are equally effective
+C. Prefer short and intensive courses of antibiotics
+D. Use antibiotic combinations for prolonged therapy
+
+### A21
+Clarithromycin and erythromycin have very similar spectra of antimicrobial activity. The major advantage of clarithromycin is that it
+A. Does not inhibit hepatic drug-metabolizing enzymes
+B. Eradicates mycoplasmal infections in a single dose
+C. Has greater activity against H pylori
+D. Is active against methicillin-resistant strains of staphylococci
+
+### A22
+A 24-year-old woman comes to a clinic with complaints of dry cough, headache, fever, and malaise, which have lasted 3days.The physician makes an initial diagnosis of community-acquired pneumonia. If this patient were to be treated with erythromycin, she should:
+A. Avoid exposure to sunlight
+B. Avoid taking supplementary iron tablets
+C. Decrease her intake of caffeinated beverages
+D. Have her plasma urea nitrogen or creatinine checked before treatment
+
+### A23
+A 24-year-old woman comes to a clinic with complaints of dry cough, headache, fever, and malaise, which have lasted 3 or 4 days. The physician makes an initial diagnosis of community-acquired pneumonia. A 5-day course of treatment for community-acquired pneumonia would be effective in this patient with little risk of drug interactions if the drug prescribed were
+A. Azithromycin
+B. Clindamycin
+C. Doxycycline
+D. Erythromycin
+
+### A24
+Concerning quinupristin-dalfopristin, which statement is accurate?
+A. Active in the treatment of infections caused by E. faecalis
+B. An effective drug in the treatment of multidrug-resistant streptococcal infections
+C. Bacteriostatic
+D. Hepatotoxicity has led to FDA drug alerts
+
+### A25
+All of the following statements about the clinical uses of the aminoglycosides are accurate except
+A. Effective in the treatment of infections caused by anaerobes such as Bacteroidesfragilis
+B. Gentamicin is used with ampicillin for synergistic effects in the treatment of enterococcal endocarditis
+C. Often used with cephalosporins in the empiric treatment of life-threatening bacterial infections
+D. Owing to their polar nature, aminoglycosides are not absorbed after oral administration
+
+### A26
+Select the antibiotic whose dose must be reduced in patients with renal insufficiency:
+A. Ampicillin
+B. Chloramphenicol
+C. Tobramycin
+D. Erythromycin
+
+### A27
+Your 23-year-old female patient is pregnant and has gonorrhea. The medical history includes anaphylaxis following exposure to amoxicillin. The most appropriate drug to use is
+A. Azithromycin
+B. Cefixime
+C. Ceftriaxone
+D. Ciprofloxacin
+
+### A28
+A 65-year-old woman has returned from a vacation abroad suffering from traveler’s diarrhea, and her problem has not responded to antidiarrheal drugs. A pathogenic gram-negative bacillus is suspected. Which drug is most likely to be effective in the treatment of this patient?
+A. Ampicillin
+B. Ofloxacin
+C. Sulfadiazine
+D. Trimethoprim
+
+### A29
+Which drug is effective in the treatment of nocardiosis and, in combination with pyrimethamine, is prophylactic against Pneumocystis jirovecii infections in AIDS patients?
+A. Amoxicillin
+B. Erythromycin
+C. Sulfadiazine
+D. Trimethoprim
+
+### A30
+A 29-year-old female patient is being treated with RHZE for drug-sensitive TB. On her release from the hospital, the patient is advised not to rely solely on oral contraceptives to prevent pregnancy because they may be less effective while she is being maintained on antimycobacterial drugs. The agent most likely to interfere with the action of oral contraceptives is:
+A. Rifampin
+B. Ethambutol
+C. Isoniazid
+D. Pyrazinamide
+
+
+SECTION B (8)
+----------------------------------------
+### B1
+Giving examples, explain the rationale behind combination of antibiotics (5 Marks)
+
+### B2
+Describe 5 general mechanisms through which bacteria develop resistance against antibiotics (5 Marks)
+
+### B3
+Explain the 4 different generations of cephalosporins clearly showing the spectrum of anti-microbial activity of each generation (8 Marks)
+
+### B4
+a) Explain the mechanism of action of sulfonamides (2 Marks)
+b) Outline 3 adverse effects of sulfonamides
+
+### B5
+a) Explain the mechanism of action of aminoglycosides (2 Marks)
+b) Outline 3 adverse effects of aminoglycosides (3 Marks)
+
+### B6
+You are discussing the microbiological results of a fecal sample with the hospital microbiologist. They are reporting that the patient has acquired a C. difficile infection.
+a) Clostridium difficile infection (CDI) is often precipitated by the use of broad spectrum antibiotics. Describe what is meant by the term ‘broad-spectrum’ antibiotics (1 Mark)
+b) Identify two antibiotics in different classes that are associated with an increased risk of developing pseudomembranous colitis as a result of infection with C. difficile (2 Marks)
+c) Name 2 antibiotics (include the preferred route of administration) that can be used to manage this infection (2 Marks)
+
+### B7
+List 2 adverse effects and 2 therapeutic uses associated with metronidazole (2 Marks)
+
+### B8
+A 59-year-old woman presents to an urgent care clinic with a 4-day history of frequent and painful urination. She has had fevers, chills, and flank pain for the past 2 days. Her physician advised her to come immediately to the clinic for evaluation. In the clinic she is febrile (38.5°C) but otherwise stable and states she is not experiencing any nausea or vomiting. Her urine dipstick test is positive for leukocyte esterase. Urinalysis and urine culture are ordered. Her past medical history is significant for three urinary tract infections in the past year. Each episode was uncomplicated, treated with trimethoprim-sulfamethoxazole, and promptly resolved. She also has osteoporosis for which she takes a daily calcium supplement. The decision is made to treat her with oral antibiotics for a complicated urinary tract infection with close follow-up.
+a) Give 3 reasonable empiric antibiotics for this patient (3 Marks)
+b) Depending on the antibiotic choice are there potential drug interactions? Explain (2 Marks)
+
+
+SECTION C (2)
+----------------------------------------
+### C1
+Discuss the Penicillin antibiotics under the following sub-topics:
+The mechanism of action of Benzyl penicillin(3 Marks)
+The spectrum of antimicrobial activity of Amoxicillin(3 Marks)
+Six pharmacokinetic properties of benzyl penicillin(3 Marks)
+Three Clinical uses of benzyl penicillin(3 Marks)
+Adverse effects associated with benzyl penicillin (3 Marks)
+
+### C2
+Mr. SD is a 25-year-old man with a history of drug use, for which he is prescribed daily supervised methadone. He was released from prison 2 years ago. He also has a history of chronic alcohol consumption and previous treatment for pulmonary tuberculosis with unclear history on completion of treatment. He has been referred to a chest physician with a cough productive of sputum and fever (2 months in duration). A sputum sample, obtained by his primary care doctor, is positive for acid, alcohol-fast bacilli, and a chest radiograph shows right upper lobe cavities. Gene Expert studies show that Mycobacterium TB is resistant to Rifampicin
+Elucidate a probable effective five drug regimen that would be used for the treatment of multi-drug resistant TB in Mr. SD (5 Marks)
+For each of the drug in (a) above, explain the mechanism of action (5 Marks)
+(b) For each drug suggested in (a) above identify at least one adverse effect associated with it (5 Marks)
+
+==========================================================================================
+4209 — Pharmacology X — Chemotherapy of Infections
+==========================================================================================
+
+
+SECTION A (60)
+----------------------------------------
+### A1
+Which of the following is a polyene macrolide only used topically, due to systemic toxicity; active against most Candida species--most commonly used for suppression of local candidal infection?
+A. Clotrimazole
+B. Terbinafine
+C. Amphotericin B
+D. Nystatin
+
+### A2
+Which of the following is most likely to cause increased arrhythmogenic effects of astemizole?
+A. Ketoconazole
+B. Terbinafine
+C. Fluconazole
+D. Griseofulvin
+
+### A3
+Which of the following is most likely to get into the cerebrospinal fluid?
+A. Ketoconazole
+B. Itraconazole
+C. Fluconazole
+D. Griseofulvin
+
+### A4
+Which of the following is likely to promote drug-drug interactions because of interactions with cytochrome P-450 drug metabolizing systems?
+A. Saquinavir
+B. Indinavir
+C. Ritonavir
+D. All of the above
+
+### A5
+Which of the following is most likely to change serum concentrations of fluoxetine?
+A. Didanosine
+B. Ritonavir
+C. Amantadine
+D. Lamivudine
+
+### A6
+First-pass metabolism of this drug results in the active form, penciclovir?
+A. Acyclovir
+B. Famciclovir
+C. Ganciclovir
+D. Cidofovir
+
+### A7
+Nephrotoxicity, the major dose-limiting toxicity associated with i.v. use of this drug can be prevented by probenecid?
+A. Foscarnet
+B. Famciclovir
+C. Cidofovir
+D. Vidarabine
+
+### A8
+Monophosphorylation of this antiviral drug is catalyzed by virus-specified protein kinase phophotransferase in CMV-infected cells and by viral thymidine kinase in HSV-infected cells?
+A. Ganciclovir
+B. Foscarnet
+C. Valacyclovir
+D. Cidofovir
+
+### A9
+Mainly eliminated by renal mechanisms as the hypoxanthine metabolite, this antiviral agent is effective for treating acute keratoconjunctivitis (ointment) and HSV encephalitis (i.v.)?
+A. Vidarabine
+B. Ganciclovir
+C. Foscarnet
+D. Zidovudine
+
+### A10
+The drug of choice for Schistosoma hematobium is?
+A. Praziquantel
+B. Mebendazole
+C. Metronidazole
+D. Diethylcarbamazine
+
+### A11
+Which of the following would you recommend for a patient who is infested with Taenia saginata?
+A. Mebendazole
+B. Ivermectin
+C. Metrifonate
+D. Niclosamide
+
+### A12
+A 60-year old male with AIDS develops a systemic fungal infection treated with fluconazole. What is the mechanism of action of fluconazole?
+A. It inhibits peptidoglycan synthesis
+B. It inhibits DNA synthesis
+C. It inhibits ergosterol synthesis
+D. It inhibits cell wall synthesis
+
+### A13
+A 26-year old female patient with a history of AIDS develops a herpes simplex keratitis. Which of the following should be administered in this case?
+A. Zanamivir
+B. Trifluridine
+C. Amantadine
+D. Indinavir
+
+### A14
+A 35-year old female complains of itching in the vulval area. Hanging-drop examination of the urine reveals trichomonads. What is the preferred treatment for trichomoniasis?
+A. Metronidazole
+B. Emetine
+C. Pentamidine
+D. Pyrimethamine
+
+### A15
+Select the drug that is most effective against Ascaris Lumbricoides?
+A. Praziquantel
+B. Niclosamide
+C. Pyrantel pamoate
+D. Ivermectin
+
+### A16
+Select the drug that is most effective against Wuchereria bancrofti?
+A. Praziquantel
+B. Pyrantel pamoate
+C. Bithionol
+D. Diethylcarbamazine
+
+### A17
+An infant with severe respiratory syncytial virus bronchiolitis is best treated with
+A. Amantadine
+B. Ribavirin
+C. Famciclovir
+D. Indinavir
+
+### A18
+A tourist who recently returned from a visit to the Kisumu develops the signs and symptoms of malaria (fever, chills, muscle aches & fatigue). Blood tests reveal the presence of chloroquine-sensitive P. falciparum. Chloroquine therapy is initiated, resulting in a gradual disappearance of malarial symptoms. What is the primary antimalarial mechanism of action of this drug?
+A. Alkalization of plasmodium vacuole pH
+B. Disrupting mitochondrial electron transport
+C. Inhibition of dihydrofolate reductase
+D. Inhibition of protein synthesis
+
+### A19
+Shortly after returning from a medical mission in Kilifi, a 25-year-old medical student develops flu-like symptoms including fever, chills, headache, and sweating. Blood samples are positive for the presence of chloroquine-resistant P. vivax. Prior to initiating combination drug therapy, the WHO recommends that a blood test for G6PD be performed in order to avoid producing a potentially fatal drug-induced hemolytic anemia. Which of the following drugs, if used in treatment, would MOST LIKELY cause this serious side effect?
+A. Atovaquone
+B. Mefloquine
+C. Primaquine
+D. Proguanil
+
+### A20
+The patient suffering from infection with P. vivax recovers from malarial symptoms, but then suffers a relapse several months later after discontinuation of drug therapy. A decision is made to initiate therapy to specifically target the hepatic stage of the parasite. Which of following medications would be the most appropriate choice?
+A. Artemether - Lumefantine
+B. Primaquine
+C. Quinolones
+D. Doxycycline
+
+### A21
+A patient on multi-drug therapy for P. falciparum malaria seeks medical attention in the Emergency Department of University Hospital for an episode of vertigo, dizziness, nausea & vomiting. Examination of the patient's ECG reveals a markedly prolonged QTc interval. Which of the following drugs in the patient's drug regimen is most likely responsible for these side effects?
+A. Atovaquone
+B. Chloroquine
+C. Primaquine
+D. Quinine
+
+### A22
+An HIV-positive patient is being initialized on combination antiretroviral therapy (cART). One of the drugs included is a drug that has no direct antiviral effect, but inhibits CYP3A4. Inclusion of this drug prolongs the duration of action of other CYP3A substrates (such as protease inhibitors), which reduces the daily pill burden. Which drug serves this purpose?
+A. Cobicistat
+B. Ritonavir
+C. Efavirenz
+D. Raltegravir
+
+### A23
+You are caring for a patient recently diagnosed with HIV infection, and plan to initiate therapy with an effective cART regimen. Two components of the drug regimen to be implemented include a combination of a protease inhibitor and pharmacokinetic booster (lopinavir + ritonavir) and a nucleoside reverse transcriptase inhibitor (zidovudine). What other additional drugmay also be included to provide the most effective treatment?
+A. Atazanavir
+B. Emtricitabine
+C. Nevirapine
+D. Raltegravir
+
+### A24
+When designing an effective cART regimen for treating a patient's HIV infection, there are certain drug combinations that should be avoided due to either a higher incidence of toxic side effects, or antagonism of each other's effects on HIV replication. If a patient's drug regimen included the NRTI zidovudine, what other drug should be avoided?
+A. Lamivudine
+B. Nelfinavir
+C. Nevirapine
+D. Stavudine
+
+### A25
+Patients on cART can experience drug toxicities that are common for most drugs within the same class. Which toxicity would be expected for a non-nucleoside reverse transcriptase inhibitor?
+A. Insulin resistance
+B. Lipodystrophy syndrome
+C. Mitochondrial toxicity
+D. Skin rashes
+
+### A26
+Most formulations of cART contain a protease inhibitor (PI). Which of the following side effects is commonly observed in patients following initiation of therapy with this class of drug?
+A. Lipodystrophy
+B. Myelosuppression
+C. Pancreatitis
+D. Peripheral sensory neuropathy
+
+### A27
+NRTIs are considered the backbone of cART. This class of drugs can cause a variety of side effects & toxicity including neuropathy, pancreatitis, cardiomyopathy, hepatic steatosis & lactic acidosis. What molecular mechanism is the most likely cause for these adverse effects?
+A. Altered gene expression
+B. Ion channel blockade
+C. Inhibition of DNA gyrase
+D. Mitochondrial toxicity
+
+### A28
+Not all inhibitors of viral reverse transcriptase require intracellular phosphorylation to an active triphosphate form. Which of the following is an example of a RT inhibitor that does not require intracellular activation, and binds to a different site compared to those that do?
+A. Indinavir
+B. Lamivudine
+C. Nevirapine
+D. Stavudine
+
+### A29
+Entry inhibitors are frequently added as a component of cART for treatment-experienced patients who have persistent HIV-1 replication, despite ongoing therapy. One such agent binds selectively to the CCR5 host protein, one of two cytokine receptors necessary for the entrance of HIV into CD4+ cells. Its use is limited to patients that have a strain of HIV that utilizes CCR5 exclusively for cell entry, and do not utilize CXCR4 or other chemokine receptors. Which agent is this?
+A. Efavirenz
+B. Enfuvirtide
+C. Maraviroc
+D. Tenofovir
+
+### A30
+Several drugs used to treat the flu work by blocking the viral endonuclease. Which drug works by this mechanism?
+A. Baloxavir marboxil
+B. Oseltamivir
+C. Ribavirin
+D. Rimantadine
+
+### A31
+Michael is an 8-year-old boy who is brought to the emergency department by his mother after he returns home from school complaining of flu-like symptoms. Because he has difficulty swallowing tablets (like many children under the age of 10), you decide to prescribe a flu medication that can be inhaled, instead of swallowed. What is the active ingredient for the medication you will prescribe?
+A. Salbutamol
+B. Amantadine
+C. Oseltamivir
+D. Zanamivir
+
+### A32
+An HIV immune compromised patient develops a severe case of CMV retinitis that requires treatment. Before prescribing the drug of choice, you explain to your patient that it needs to be taken orally twice daily, and that a follow-up visit for blood tests is needed to monitor for possible decreased levels of red cells, white cells, and platelets. The drug having this pharmacologic profile is:
+A. Foscarnet
+B. Trifluridine
+C. Valacyclovir
+D. Valganciclovir
+
+### A33
+Foscarnet is sometimes used to treat CMV retinitis in HIV patients who have become immune compromised. A primary dose-limiting side effect of this drug includes:
+A. Bone marrow toxicity
+B. Deterioration of respiratory function
+C. Flu-like symptoms
+D. Nephrotoxicity
+
+### A34
+An "anti-influenza" medication no longer recommended by the CDC as a treatment for the flu due to the development of high levels of drug resistance.
+A. Adefovir
+B. Amantadine
+C. Entecavir
+D. Oseltamivir
+
+### A35
+A 42 year hospitalized patient with an indwelling central venous catheter develops a life-threating infection by a drug-resistant form of Candida albicans. A decision is made to treat the patient with a liposomal infusion containing an antifungal drug that acts by binding to ergosterol, creating large pores in the fungal cell membrane that cause leakage of cellular components, resulting in cell death. Which antifungal drug was used to treat this patient's resistant infection?
+A. Amphotericin B
+B. Clotrimazole
+C. Nystatin
+D. Terbinafine
+
+### A36
+A debilitated cancer patient who has undergone several rounds of chemotherapy is given a series of antibiotics to treat a presumed bacterial infection. When symptoms of infection persist, a fresh blood sample is taken for analysis, and comes back positive for Candida albicans. The patient is given an i.v. infusion of an antifungal drugs, and shortly thereafter develops chills, fever, vomiting and hypotension. What antifungal drug was most likely given?
+A. Amphotericin B
+B. Caspofungin
+C. Fluconazole
+D. Flucytosine
+
+### A37
+JH is a 21-year-old-woman who comes to your Ob/Gyn clinic with a chief complaint of vaginal soreness and a burning discomfort during urination. A pelvic exam reveals signs of inflammation and discharge. A quick microscopic exam of the discharge indicates the presence of a yeast infection. You review the list of JH's current medications, which include an estrogen/progesterone oral contraceptive, and a daily multivitamin. You the administer an oral dose of 150 mg fluconazole to treat her infection. For what reason did you review her current list of medications?
+A. Fluconazole's bioavailability is low, and may be affected by other drugs
+B. Fluconazole can induce cyp P-450 and increase the hepatic clearance of other drugs
+C. Fluconazole is a CYP P-450 inhibitor, and can decrease the metabolism of other drugs
+D. Fluconazole enhances the renal clearance of several drugs by inhibiting p-glycoprotein.
+
+### A38
+A patient suffering from severe cryptococcal pneumonia is given combination therapy with flucytosine and amphotericin B. Other than the integrity of the fungal cell membrane, what other molecular target is affected by this drug combination?
+A. DNA synthesis
+B. Ergosterol synthesis
+C. Fungal cell wall
+D. RNA synthesis
+
+### A39
+A 65-year-old patient presents with a chief complaint of discolored toenails that have recently begun to cause mild pain and discomfort. Histological analysis of an under-nail swab is positive for Trichophyton rubrum. What oral medication would be the best choice to treat this infection?
+A. Amphotericin B
+B. Caspofungin
+C. Ketoconazole
+D. Terbinafine
+
+### A40
+A 57-year-old woman who has been on chronic therapy with corticosteroids for arteritis presents with a high fever, severe headache and neck stiffness. She also admits to feeling confused and irritable, and having felt nauseous over the past 24 hours. A lumbar puncture is used to obtain a sample of CSF, which reveals the presence of Cryptococcus neoformans in culture. The patient is admitted to hospital and you start an induction antifungal protocol with i.v. amphotericin B plus flucytosine for 2 weeks. Her condition slowly improves and you decide to switch her to an oral maintenance therapy which she will likely need to continue for up to a year after discharge from the hospital. Which agent would be the best choice for maintenance therapy?
+A. Fluconazole
+B. Itraconazole
+C. Griseofulvin
+D. Ketoconazole
+
+### A41
+An immunocompromised patient suffering from HIV is diagnosed with subacute invasive pulmonary aspergillosis caused by Aspergillus fumigatus. Which drug would be the best choice for monotherapy?
+A. Amphotericin B
+B. Fluconazole
+C. Griseofulvin
+D. Voriconazole
+
+### A42
+An elderly man with a 20 yr history of atrial fibrillation arrives to your clinic complaining of weakness and recent episodes of bloody stool. When taking his medical history, he mentions having to watch his dietary intake of leafy vegetables (such as spinach), and having recently seen a dermatologist who placed him on fluconazole therapy for a skin infection (mucocutaneous candidiasis). What is the most likely explanation for this patient's most recent symptoms?
+A. A drug-drug interaction
+B. An idiosyncratic drug reaction
+C. Fluconazole-related GI toxicity
+D. Worsening of the infection by Candida spp
+
+### A43
+Rationale for the use of leucovorin calcium in combination with pyrimethamine +trisulfapyrimidines in treating Toxoplasmosis:
+A. Increases pyrimethamine efficacy
+B. Decreases pyrimethamine cardiotoxicity
+C. Decreases pyrimethamine hematological toxicities
+D. Increases trisulfapyrimidines efficacy
+
+### A44
+Concerning sulfonamides & sulfones and antimalarial activity: they
+A. Have blood schizonticidal activity against P falciparum (some species)
+B. Have significant effects against blood schizonts of P vivax
+C. Are active against immunocytes or liver stages of P falciparumor P vivax
+D. Have a rapid onset of action
+
+### A45
+A Kenyan is sent to work in ageographic region of a Central American country whereOnchocerca volvulus is endemic. Infections resulting fromthis tissue nematode (onchocerciasis) are a cause of “riverblindness,” because microfilariae migrate through subcutaneoustissues and concentrate in the eyes. Which drug should beused prophylactically to prevent onchocerciasis?
+A. Albendazole
+B. Diethylcarbamazine
+C. Ivermectin
+D. Oxamniquine
+
+### A46
+A nonindigenous person who develops onchocerciasis inan endemic region and receives drug treatment is likely toexperience a severe reaction. Symptoms include headache,weakness, rash, muscle aches, hypotension, and peripheraledema. Which statement concerning this reaction isaccurate?
+A. Bithionol was prescribed
+B. Extensive fluid replacement is essential
+C. The reaction is due to drug toxicity
+D. The reaction is due to killing of microfilariae
+
+### A47
+Which statement about pyrantel pamoate is accurate?
+A. Acts as an antagonist at GABA receptors
+B. Equivalent in efficacy to niclosamide in the treatment oftapeworm infections
+C. Kills adult worms in the colon but not the eggs
+D. Synergistic with praziquantel in fluke infections
+
+### A48
+A student studying pharmacy at Kabarak university develops fever, chills, and diarrhea resulting from S mansoni, and oxamniquine is prescribed. Which statement about the proposed drug therapy is accurate?
+A. If the patient has a history of seizure disorders, hospitalizationis recommended during treatment
+B. It is not effective in the late stages of the disease
+C. Oxamniquine is safe to use in pregnancy
+D. The drug is also effective in tapeworm infections
+
+### A49
+Which helminthic infection does not respond to treatmentwith praziquantel?
+A. Hydatid disease
+B. Opisthorchiasis
+C. Pork tapeworm infection
+D. Schistosomiasis
+
+### A50
+Which drug causes muscle paralysis in nematodes by enhancingthe actions of GABA?
+A. Albendazole
+B. Diethylcarbamazine
+C. Ivermectin
+D. Pyrantel pamoate
+
+### A51
+Which parasite is susceptible to niclosamide?
+A. Ascaris lumbricoides
+B. Echinococcus granulosus
+C. Fasciola hepatica
+D. Taenia solium
+
+### A52
+A malnourished 12-year-old child who lives in Nakuru presents with weakness, fever,cough, abdominal pain, and eosinophilia. His mother tellsyou that she has seen long, thin worms in the child’s stools,sometimes with blood. A presumptive diagnosis of ascariasisis confirmed by the presence of the ova of A lumbricoides inthe stools. However, microscopy also reveals that the stoolscontain the eggs of Necator americanus. The drug most likelyto be effective in the treatment of this child is
+A. Albendazole
+B. Ivermectin
+C. Niclosamide
+D. Praziquantel
+
+### A53
+JCis a 72 year-old nursing home resident that arrives in your pharmacy complaining that many of his fellow residents have come down with the flu. This has occurred even though all residents where he lives were vaccinated several months ago. To provide additional & appropriate antiviral protection for JC, the best choice would be to write a prescription for:
+A. Rimantadine
+B. Foscarnet
+C. Ganciclovir
+D. Oseltamivir
+
+### A54
+John Doe, a 38-year-old man arrives at your free clinic with the chief complaint of irritating small blisters on his genitals. A swab from his sores is taken and sent to the lab for analysis. Based upon the appearance of his sores, a tentative diagnosis of genital herpes is made. Which of the following should you prescribe for treatment, at least until the lab results come back in 3-4 days?
+A. Lamivudine
+B. Ribavarin
+C. Valacyclovir
+D. Zanamivir
+
+### A55
+A 40-year-old woman presents to your clinic with complaints of chronic anorexia, nausea, fatigue, a low grade fever, and difficulty sleeping. When taking her history, she admits to having had unprotected intercourse with several men over the past few years. Her lab results indicate high levels of aminotransferase (ALT & AST) of 1000-2000 IU/ml. A liver biopsy is taken and hepatocytes stain positive for hepatitis B antigen. The best choice for treating her condition would be:
+A. Acyclovir
+B. Interferon alfa
+C. Zidovudine
+D. Telaprevir
+
+### A56
+A young man who has been experiencing a severe episode of cough, runny nose and conjunctivitis for the past week arrives at your clinic seeking medical attention. A 30-minute rapid antigen-capture assay is positive for RSV. You prescribe an inhaled nucleoside analog that is considered a drug of choice for this type of infection. Which drug best fits this description?
+A. Entecavir
+B. Lamivudine
+C. Palivizumab
+D. Ribavirin
+
+### A57
+A 36-year-old woman with a history of iv drug abuse seeks medical attention complaining of low-grade fever, nausea and vomiting. Lab tests indicate the presence of elevated liver enzymes, and both Hep C antibody & viral RNA. A diagnosis of active HCV infection is made. Which drug combination would be the best choice for treatment?
+A. Amantadine + acyclovir
+B. Foscarnet + vidarabine
+C. PEG-interferon alfa + ribavirin
+D. Lopinavir + ritonavir
+
+### A58
+Jane, a 22-year-old medical student arrives at the Student Health Clinic with a breakout of shingles following a week of second year block exams. His medical records confirm that he has a medical history of infection by Varicella zoster. To best alleviate his symptoms, you write a prescription for oral tablets (bid) containing the active ingredient:
+A. Foscarnet
+B. Interferon alfa
+C. Oseltamivir
+D. Valacyclovir
+
+### A59
+A 36-year-old man with HIV who has been on a HAART drug regimen for several years arrives at your pharmacy complaining of feeling unusually fatigued and drained of energy for the past two weeks. Upon examination his lymph nodes are found to be enlarged, and he is running a low-grade fever. Lab tests are positive for CMV antibody and DNA. A drug of choice for treating this newly diagnosed infection is:
+A. Acyclovir
+B. Foscarnet
+C. Valganciclovir
+D. Zanamivir
+
+### A60
+Tenofovir+ Lamivudine + Dolutegravir is not used:
+A. As first-line antiretroviral therapy for HIV positive male adults in Kenya
+B. To reduce the incidence of opportunistic infections in AIDS patients
+C. For prevention of mother to child transmission
+D. To increase survival time in AIDS patients
+
+
+SECTION B (1)
+----------------------------------------
+### B1
+A 40-year old female newly diagnosed HIV patient develops uncomplicated malaria and cryptococcal meningitis.
+How would you manage the patient? (4 Marks)
+Describe the mode of action of each of the drugs mentioned in a) above. (8 Marks)
+Mention one side effect of each of the drugs the patient is taking. (4 Marks)
+Why is atazanavir combined with ritonavir? (2 Marks)
+State any four clinical applications of albendazole (2 Marks)
+
+
+SECTION C (2)
+----------------------------------------
+### C1
+Describe the general life cycle of viruses and with an example in each case, how drugs target different phases of the life cycle? (10 Marks)
+State the clinical applications of each of the drugs mentioned in a) above. ( 5 Marks)
+Describe any two adverse effects of each of the drugs mentioned in a) above. (5 Marks)
+
+### C2
+Ergosterol is an important component in fungi.
+Describe with examples how drugs can target ergosterol (6 Marks)
+Describe the clinical applications of the drugs mentioned in a) above (4 Marks)
+Describe any two side effects of each of the drugs mentioned in a) above (6 Marks)
+Describe any two drug-drug interaction that can affect drugs mentioned in a) above (4 Marks)
+
+==========================================================================================
+5111 — Pharmacology XI — Anticancer, Dermatological & Ocular Drugs
+==========================================================================================
+
+
+SECTION A (30)
+----------------------------------------
+### A1
+A 64-year-old man with non-Hodgkin lymphoma comes to the physician because of a 3-week history of progressive numbness in his hands and feet and weakness in his legs when he stands. He received his third course of chemotherapy 4 weeks ago. Physical examination shows areflexia. Which of the following drugs is the most likely cause of these adverse effects?
+A. Bleomycin
+B. Cyclophosphamide
+C. Doxorubicin
+D. Vincristine
+
+### A2
+A 72-year-old woman who has smoked 20 cigarettes daily for the past 38 years begins using eye drops for glaucoma. Three days later, she has a marked increase in shortness of breath while walking up a flight of stairs. Which of the following drugs is the most likely cause of the development of shortness of breath in this patient?
+A. Apraclonidine
+B. Epinephrine
+C. Latanoprost
+D. Timolol
+
+### A3
+A 51-year-old woman with multiple risk factors is placed on the raloxifene for prophylaxis against breast cancer and post-menopausal osteoporosis. Before writing her prescription you warn her about the risks associated with many SERMs, which includes an increased risk of:
+A. Infections
+B. Severe nausea and vomiting
+C. Secondary leukemia
+D. Thromboembolic events
+
+### A4
+A plant product that "enhances" tubulin polymerization, which thereby inhibits the depolymerisation of tubulin, resulting in mitotic phase arrest.
+A. Etoposide
+B. Paclitaxel
+C. Topotecan
+D. Vincristine
+
+### A5
+A 19-year-old boy presents to his pediatrician with a chief complaint of a pain in his right thigh. On evaluation his right thigh is found to have a swollen area that extends a length of 15 cm. X-ray of the thigh reveals extensive bony destruction and the presence of a bony tumor that is diagnosed as an osteogenic sarcoma. He is offered a limb salvage treatment that includes neoadjuvant chemotherapy (doxorubicin + cisplatin + high dose methotrexate) as well as radiotherapy prior to tumor resection & bone grafting. He is also given leucovorin to rescue normal cells from the toxicity of
+A. Cisplatin
+B. Doxorubicin
+C. Methotrexate
+D. Radiotherapy
+
+### A6
+A 33-year-old woman who is 4 months’ postpartum presents with tender swelling of the breast. A biopsy reveals cells with an S phase fraction of 11% (for normal cells it should be ~1%). The cells are estrogen & progesterone receptor negative, but there is over-expression of the Her2/neu oncogene. There is no evidence for metastasis. The patient is initially treated with 4 courses of doxorubicin & cyclophosphamide. G-CSF was also given when the granulocyte count dipped below 500. Chemotherapy was followed by a modified radical mastectomy. Following surgery, the patient was treated with adjuvant therapy consisting of 4 cycles of paclitaxel. Other than alopecia and nausea & vomiting, which additional side effect should you warn your patient to look for since it is frequently associated with this type of adjuvant therapy?
+A. Heart failure
+B. Hemorrhagic cystitis
+C. Nephrotoxicity
+D. Peripheral neuropathy
+
+### A7
+The development of drug resistance to multiple cancer chemotherapeutic drugs is most likely caused by:
+A. Amplification of metabolizing enzymes
+B. Amplification of target enzymes
+C. Increased cellular efflux of drugs
+D. Increased repair of DNA damage
+
+### A8
+One of the most common forms of leukemia is Chronic Myelogenous Leukemia (CML). In most cases these leukemic cells contain a chromosomal abnormality that is a "target" for drug therapy that is not seen in non-leukemic white blood cells. A current treatment of choice for this form of cancer is:
+A. Busulfan
+B. imatinib
+C. Cyclophosphamide
+D. Trastuzumab
+
+### A9
+An anticancer drug that intercalates with DNA and causes single & double strand breaks following interaction with iron to form free radicals.
+A. Bleomycin
+B. Cisplatin
+C. Lomustine
+D. Doxorubicin
+
+### A10
+Which of the following drugs is commonly used topically and once a day in the treatment of open glaucoma?
+A. Pilocarpine
+B. Tropicamide
+C. Latanoprost
+D. Carteolol
+
+### A11
+Which targeted therapeutic agent used in the treatment of melanoma can produce vitiligo as a side effect?
+A. Trametinib
+B. Nivolumab
+C. Ipilimumab
+D. Vemurafenib
+
+### A12
+In my Fundoscopic examination, the ophthalmologist used tropicamide. When I left I could not see my watch and I developed light sensitivity. Which one of the following drugs should the doctors use to counteract these symptoms?
+A. Pilocarpine
+B. Phenylephrine
+C. Apraclonidine
+D. Timolol
+
+### A13
+Which one of the following is the most appropriate initial treatment for a patient presenting with palmar psoriasis?
+A. Betamethasone valerate ointment
+B. Hydrocortisone 1% ointment
+C. Oral prednisolone
+D. Regular emollients
+
+### A14
+A plant product useful in treating a variety of cancers that has significant side effects including peripheral neuropathy, significant alopecia, but relatively little nausea, vomiting or bone marrow suppression.
+A. Cytarabine
+B. Etoposide
+C. Vinblastine
+D. Vincristine
+
+### A15
+Tumors require a blood supply and the ability to promote angiogenesis in order to grow and proliferate. A targeted drug therapy that inhibits this process is:
+A. Anastrozole
+B. Bevacizumab
+C. Exemestane
+D. Imatinib
+
+### A16
+Which of the following is an alkylating agent and preferred for management of chronic myeloid leukemia?
+A. Busulfan
+B. Cyclophosphamide
+C. Imatinib
+D. Dacarbazine
+
+### A17
+Which of the following is the major toxicity of alkylating agents?
+A. Alopecia
+B. Myelosuppression
+C. Renal failure
+D. Hepatotoxicity
+
+### A18
+Which of the following is the most common mechanism of resistance to both 6-MP (6-mercaptopurine) and 6-TG (6-thioguanine)?
+A. Increased levels of dihydrofolate reductase (DHFR)
+B. Increased drug efflux from the cells by increased active transport
+C. Decreased HPRT activity
+D. Decreased polyglutamate formation
+
+### A19
+A patient with fluorouracil-unresponsive colon cancer is given a prodrug which following activation is a topoisomerase I inhibitor. Following administration, the patient experiences very severe diarrhea which causes hypovolemia. This drug probably was:
+A. Vincristine
+B. Irinotecan
+C. Paclitaxel
+D. Docetaxel
+
+### A20
+Which of the following is a chemotherapeutic (anticancer) dosing principle?
+A. Drug should be administered at low doses but with increased frequency
+B. Drug should be administered infrequently to minimize side effects
+C. Drugs more beneficial if major toxicities are non-overlapping
+D. Drugs rarely effective in combination
+
+### A21
+Which of the following is most preferred for pityriasis versicolor?
+A. Selenium sulphide shampoo
+B. Permethrin lotion
+C. Benzyl benzoate cream
+D. Amphotericin B iv
+
+### A22
+Which of the following is not used for eczema?
+A. Urea cream
+B. Tacrolimus ointment
+C. Betamethasone cream
+D. Imiquimod cream
+
+### A23
+Which of the following agents is a monoclonal antibody used for treatment of macular degeneration?
+A. Alemtuzumab
+B. Bevacizumab
+C. Pegaptanib
+D. Panitumumab
+
+### A24
+Mr. William Short is a 27-year-old stock clerk who you have been treating for the past 2 years after he was diagnosed with CHF caused by a viral cardiomyopathy. After being maintained on drug therapy for a year, Mr. Short underwent a heart transplant procedure, and is now being maintained on an immunosuppressive drug regimen consisting of cyclosporine, azathioprine and prednisone. Which drug in this regimen exerts its therapeutic effects by selectively interfering with activation of transcription factors involved in stimulating the transcription and production of IL-2?
+A. Azathioprine
+B. Cyclosporine
+C. Valganciclovir
+D. Prednisone
+
+### A25
+Sometimes the level of immunosuppression achieved with a combination of a calcineurin inhibitor and an antimetabolite is not sufficient following an organ transplant. In this case adding an mTOR inhibitor can be beneficial because of their different mechanisms of action, which can produce a synergistic effect. An example of this drug class is:
+A. Alemtuzumab
+B. Azathioprine
+C. Everolimus
+D. Tacrolimus
+
+### A26
+Patients who are taking allopurinol, or express a mutation resulting in a non-functional form of thiopurine S-methyltransferase (TPMT) can exhibit extreme bone marrow suppression and other forms of drug toxicity when exposed to:
+A. Alemtuzumab
+B. Azathioprine
+C. Cyclosporine
+D. Mycophenolate mofetil
+
+### A27
+The maintenance dose of this immunosuppressant drug is typically tapered down over the first year of therapy because it can cause permanent side effects such as aseptic necrosis of femur heads, cataracts, and other serious side effects including hypertension, ulcers, diabetes & osteoporosis. This agent is:
+A. Azathioprine
+B. Cyclosporine
+C. Everolimus
+D. Prednisone
+
+### A28
+A patient on immunosuppressive therapy is given tacrolimus as part of their drug regimen. Which side effect is most likely to occur with this drug?
+A. Hypoglycemia
+B. Hypokalemia
+C. Profound myelosuppression
+D. Renal toxicity
+
+### A29
+There are several general principles that must be considered when designing an immunosuppressive drug regimen for a patient undergoing an organ transplant. Which of the following is a side effect common to all immunosuppressant drugs that limits the dosages that can safely be used for long term maintenance therapy?
+A. Hypertension
+B. Increased risk of infections and neoplasia
+C. Osteoporosis
+D. Pancreatitis
+
+### A30
+Which of the following can be administered topically for treatment of blepharitis?
+A. Bacitracin
+B. Trifluridine
+C. Ciprofloxacin
+D. Natamycin
+
+
+SECTION B (5)
+----------------------------------------
+### B1
+A patient is diagnosed with Hodgkin’s lymphoma. He is prescribed ABVD.
+a) What are the drugs represented by ABVD? (2 marks)
+b) Describe the mode of action of each of the drugs in a) above (8 marks)
+c) Outline any TWO (2) side effects of each of the drugs mentioned in a) above (8 marks)
+
+### B2
+Outline any TWO (2) topical drugs that can be used for management of acne and describe their mode of action. (6 marks)
+
+### B3
+Apraclonidine and pilocarpine can be used for glaucoma. Compare and contrast their mode of action in management of glaucoma (4 marks)
+
+### B4
+Describe the mode of action of the following drugs:
+a) Sirolimus (2 marks)
+b) Azathioprine (2 marks)
+c) Mycophenolate mofetil (2 marks)
+
+### B5
+Checkpoint inhibitors are relatively new anticancer agents.
+a) Mention any THREE (3) classes of checkpoint inhibitors with one example in each case. (3 marks)
+b) State any two side effects of each of the drugs mentioned in a) above (3 marks)
+
+
+SECTION C (2)
+----------------------------------------
+### C1
+A patient diagnosed with HER-2 positive breast cancer is given cyclophosphamide, methotrexate, 5-fluorouracil and trastuzumab.
+Describe the mode of action of the above mentioned drugs?(8 marks)
+MESNA and Leucovorin were also given to this patient. Propose the reasons necessitating administration of MESNA and leucovorin.(3 marks)
+If the patient was HER2 negative, which drug mentioned above would not have been prescribed and why?(2 marks)
+If the patient was diagnosed with ER-positive breast cancer instead of HER-2 positive breast cancer,
+Which other drug should have been administered to this patient?(1 mark)
+Give ONE reason for administering the drug in i) above.(1 mark)
+
+### C2
+For fundoscopic examination, the ophthalmologist decided to use atropine eye drops.
+Describe the mode of action of atropine in this scenario?(2 marks)
+Mention any FOUR (4) drugs that can also be used for fundoscopic examination.(4 marks)
+Outline other SIX (6) clinical applications of atropine.(6 marks)
+List SIX (6) side effects of atropine(3 marks)
+
+==========================================================================================
+5112 — Pharmacology XII — Vitamins, Hormones & Endocrine Pharmacology
+==========================================================================================
+
+
+SECTION A (30)
+----------------------------------------
+### A1
+Patients who are on long-term therapy with glucocorticoids can experience a number of significant side effects. Most side effects are reversible when drug therapy is tapered to levels physiologically equivalent to normal cortisol. Which effect, if it developed, would NOT be reversible?
+A. avascular necrosis of femoral heads
+B. increased blood pressure
+C. increased likelihood for infections
+D. moon face appearance
+
+### A2
+A 29-year-old woman is prescribed carbamazepine for trigeminal neuralgia. She has a strong family history of osteoporosis. As a result, the physician also advises her to increase her intake of vitamin D. The most likely reason for this recommendation is that carbamazepine may affect which of the following pharmacokinetic processes?
+A. Absorption
+B. Distribution
+C. Excretion
+D. Metabolism
+
+### A3
+A 73-year-old woman comes to the physician because of a 2-month history of diffuse weakness and tingling of her arms and legs. Neurologic examination shows weakness of the extensor and flexor muscles of the lower extremities. Knee- and ankle-deep tendon reflexes are exaggerated. Sensation to vibration and position is decreased in all extremities, but the decrease is more prominent in the lower extremities than in the upper extremities. This patient most likely has a deficiency of which of the following vitamins?
+A. Vitamin B1 (thiamine)
+B. Vitamin B2 (riboflavin)
+C. Vitamin B6 (pyridoxine)
+D. Vitamin B12 (cyanocobalamin)
+
+### A4
+A 15-year-old girl who is a ballet dancer has not had a menstrual period for the past 3 months. Menses were previously regular at 29-day intervals. She has lost weight over the past year; her weight is 70% of that expected for her height. She is afebrile and has purpuric lesions on her extremities and trunk. Platelet, absolute neutrophil, and lymphocyte counts are below the reference range. She has macrocytic anemia. The most likely cause of these symptoms is a deficiency of which of the following nutrients?
+A. Folic acid
+B. Iron
+C. Vitamin B6
+D. Vitamin K
+
+### A5
+A 16-year-old girl has hirsutism, deepening of the voice, and cessation of menses. She swims in competitions. Which of the following drugs is most likely to have caused these findings?
+A. Ethinyl estradiol
+B. Leuprolide
+C. Medroxyprogesterone
+D. Nandrolone
+
+### A6
+A 21-year-old woman comes to the physician for counseling prior to conception. She delivered a female newborn with anencephaly 1 year ago. The newborn died at the age of 4 days. She asks the physician if she can take any vitamins to decrease her risk for conceiving a fetus with anencephaly. It is most appropriate for the physician to recommend which of the following vitamins?
+A. Biotin
+B. Folic acid
+C. Vitamin B1 (thiamine)
+D. Vitamin B2 (riboflavin)
+
+### A7
+A 38-year-old woman with an 18-year history of type 1 diabetes mellitus and progressive renal failure is being considered for dialysis. Laboratory studies show normocytic, normochromic anemia. Which of the following medications is most appropriate to treat the anemia in this patient?
+A. Erythropoietin
+B. Folic acid
+C. Vitamin B1 (thiamine)
+D. Vitamin B12 (cyanocobalamin)
+
+### A8
+A 63-year-old man develops paresthesias and ataxia. He has a history of hypertension, type 2 diabetes, gastroesophageal reflux disease, hypercholesterolemia, and glaucoma. He drinks a glass of wine every night with dinner. Laboratory studies show elevated levels of plasma homocysteine. Physical examination shows a positive Romberg test. Which of the following is the most likely etiology for this patient’s symptoms?
+A. Alcohol
+B. Enalapril
+C. Metformin
+D. Omeprazole
+
+### A9
+A recently married 38-year-old woman who recently recovered from a pulmonary embolism is seeking a prescription for contraception. Which of the following would be contraindicated?
+A. combination oral contraceptive pills
+B. depo medroxyprogesterone acetate
+C. implanon implant
+D. levonorgestrel releasing IUD
+
+### A10
+A patient with type 1 diabetes who is suffering from diabetic ketoacidosis requires insulin therapy with a form of insulin that is both soluble, and will have a short (vs delayed) onset of action. Which of the following types of insulin has these properties?
+A. Insulin detemir
+B. insulin glargine
+C. NPH insulin
+D. regular insulin
+
+### A11
+A 47-year-old man comes into your office complaining of anorexia, nausea and abdominal pain. During the taking of his history, he states that he was recently diagnosed with Type 2 diabetes, and began drug therapy two weeks ago after first trying to control his blood sugar with diet and exercise. His respiratory rate is increased, and lab analysis of an arterial blood sample indicate: pH =7.2 (normal 7.35-7.45), pO2 = 92 mm Hg (normal); pCO2 = 29 mm Hg (normal 33-44); NaHCO3 =14 mEq/L (normal: 22-28). Which of the following antidiabetic drugs is most likely responsible for these abnormal findings?
+A. Metformin
+B. Sitagliptin
+C. Pioglitazone
+D. Chlorpropamide
+
+### A12
+Alvin is a 56-year-old man who has been newly diagnosed with Type 2 diabetes. He has a history of cigarette smoking (1/2 pack a day for >30 years), hypertension (5 yrs.), and alcoholism (heavy drinker for >15 yrs.) with recent evidence of cirrhosis. Which of the following would be contraindicated for treatment of his diabetes?
+A. Acarbose
+B. Metformin
+C. Chlorpropamide
+D. Insulin
+
+### A13
+A 54-year-old man with Type 2 diabetes has not achieved his glycemic goal despite changes in diet, increased exercise, and a year of combination drug therapy with metformin, a glitazone (TZD) and a sulfonylurea. After discussing therapeutic options, you decide to add an additional drug to his treatment regimen that can improve glycemic control by resetting his circadian rhythm. This drug is a(n):
+A. Amylin analog
+B. Dopamine agonist
+C. DPP-4 inhibitor
+D. SGLT-2 inhibitor
+
+### A14
+JT is a 280 lb. 5'8'' 34-year-old man who is brought into the Emergency Department by his parents who complain that JT has been feeling nauseated, shaky & feverous the past few hours. Upon examination, JT appears to be sweating abnormally, and to have difficulty speaking and concentrating during a conversation. While taking his history, JT admits to having recently changed his diabetic medications. Which of the following would be the most likely cause of JT's recent onset of symptoms?
+A. Glyburide
+B. Acarbose
+C. Metformin
+D. Pioglitazone
+
+### A15
+James D is an obese 52-year-old Type 2 diabetic (280 lbs., 5'10"), currently being treated with both glyburide and metformin who comes to your office complaining about frequent episodes of hypoglycemia. After discussing the need for lifestyle changes, and the different possible therapeutic options, you decide to replace his glyburide with an agent that is less likely to produce hypoglycemia, and more likely to produce weight loss, which is
+A. Exenatide
+B. Sitagliptin
+C. Pioglitazone
+D. Glimepiride
+
+### A16
+A 59-year-old man with a history of atrial fibrillation, insulin-dependent diabetes, and hypertension presents with signs of hypothyroidism. Which of the medications listed below is the most likely cause for his hypothyroid symptoms?
+A. Amiodarone
+B. Metoprolol
+C. Insulin
+D. Hydrochlorothiazide
+
+### A17
+A patient who has recently suffered from weight gain, chronic fatigue, cold intolerance, and myxedema is diagnosed with hypothyroidism. Which of the following would be the best treatment choice for this patient?
+A. Liothyronine
+B. Levothyroxine
+C. Propylthiouracil
+D. Methimazole
+
+### A18
+Regina is a 56-year-old woman that has been on long term treatment for a chronic health condition. Her recent health check-up indicated that compared to her baseline health status a few years ago, she has developed increased hypertension, hyperglycemia, and osteoporosis. Which of the following is MOST LIKELY responsible for causing her symptoms?
+A. Inhaled fluticasone for asthma
+B. Hydrocortisone po twice daily for Addison’s disease
+C. Oral prednisolone for SLE
+D. Topical dexamethasone for skin inflammatory conditions
+
+### A19
+Which of the following is not a complication of mineralocorticoid treatment?
+A. Hypokalemia
+B. Hypertension
+C. Hepatotoxicity
+D. Congestive heart failure
+
+### A20
+At recommended dosages, which of the following is the most common complication of glucocorticoid therapy for Addison's disease?
+A. Hypokalemia
+B. Gastritis
+C. Hypertension
+D. Hepatotoxicity
+
+### A21
+Which of the following is not a mechanism for glucocorticoid anti-inflammatory and anti-immune effects?
+A. Inhibition of COX-II expression
+B. Inhibition of kinin and bacterial endotoxin activity
+C. Decreased leukocyte responsiveness to mitogens/antigens
+D. Increased macrophage phagocytic action
+
+### A22
+John is a 52-year-old Type 2 diabetic patient who has been treated with corticosteroids for severe inflammatory bowel disease (IBD) for the past few months. Recently he has found to have normal morning (pre-breakfast) fasting blood glucose levels, but progressively elevated pre-lunch and pre-dinner glucose levels. Which of the following would be the most appropriate drug to treat this patient’s hyperglycemia?
+A. Aspart
+B. Detemir
+C. Glargine
+D. Glyburide
+
+### A23
+A 30-year-old semi-pro athlete who recently acknowledged that he had abused anabolic steroids for the past decade arrives in your clinic for a comprehensive medical exam. Based upon his medical history, which signs or symptoms would be consistent with his previous drug abuse?
+A. Hypotension
+B. Increased ALT & AST plasma levels
+C. Increased HDL
+D. Increased sperm count
+
+### A24
+When considering an appropriate treatment for your hyperthyroid patient, you decide to prescribe a drug that can produce a relatively rapid inhibition of thyroid hormone release, but should not be given for more than a few weeks. Which drug has these characteristics?
+A. Levothyroxine
+B. Methimazole
+C. Potassium iodide
+D. Propylthiouracil
+
+### A25
+You prescribe a drug that selectively inhibits thyroid peroxidase, and requires several weeks of treatment to produce a euthyroid state in your patient with Grave's disease. Which drug did you prescribe?
+A. Levothyroxine
+B. Methimazole
+C. Potassium iodide
+D. Propranolol
+
+### A26
+Which of the following produces CNS-mediated effects to decrease hunger and delay gastric emptying, suppresses the release of glucagon, and can be used along with insulin in BOTH Type1 and Type 2 diabetic patients?
+A. Exenatide
+B. Acarbose
+C. Pramlintide
+D. Saxagliptin
+
+### A27
+Which of the following is not a clinical use of progestins?
+A. Treatment of endometriosis
+B. Treatment of prostate cancer
+C. Treatment of hirsutism
+D. Treating premenstrual syndrome
+
+### A28
+Which of the following is not a clinical use of octreotide?
+A. Acute bleeding control from esophageal varices
+B. Carcinoid syndrome symptoms
+C. Gastrinoma symptoms
+D. Dwarfism
+
+### A29
+A 23-year-old woman is prescribed a progestin-only mini pill for contraception. Which advice would you consider most appropriate before writing her prescription?
+A. Taking these pills for more than a year in duration frequently results in sterility.
+B. It is imperative that progestin mini pills be taken at the same time each day
+C. These pills can help with acne
+D. These pills are potent suppressors of ovulation, and have a 2-week grace period before pregnancy is likely to occur if a pill is missed.
+
+### A30
+A 38-year-old woman with 20 year of cigarette smoking (1/2 pack per day) is seeking a prescription for contraception. Which of the following would have the greatest contraindication for use in this patient?
+A. depo medroxyprogesterone
+B. implanon implant
+C. levonorgestrel releasing IUD
+D. transdermal patch
+
+
+SECTION B (6)
+----------------------------------------
+### B1
+A pregnant lady in her first trimester is diagnosed with hyperthyroidism.
+Recommend a drug to be given to this patient.(1 mark)
+Describe the mode of action of the drug mentioned in a) above.(2 marks)
+State 2 potential drug-drug interactions that can occur for this medication. (2 marks)
+
+### B2
+Outline SEVEN (7) side effects of corticosteroids(7 marks)
+
+### B3
+A 35-year-old patient is diagnosed with type II diabetes, hypertension and heart failure.
+Propose 4 drugs that you would recommend to be administered to this patient.(4 marks)
+Describe the mode of action of the drugs mentioned in a) above.(8 marks)
+Describe TWO (2) potential drug-drug interactions that you would be concerned about.(4 marks)
+
+### B4
+Compare and contrast somatostatin and somatotropin in terms of clinical applications and adverse effects. (4 marks)
+
+### B5
+Vitamins can be used clinically. State 4 vitamins and their clinical applications.(4 marks)
+
+### B6
+Compare and contrast the pharmacokinetics and clinical application of regular insulin and neutral protamine hagedorn insulin. (4 marks)
+
+
+SECTION C (2)
+----------------------------------------
+### C1
+Describe INSULIN in terms of the
+Classes and examples(4 marks)
+mode of action,(2 marks)
+clinical applications,(3 marks)
+side effects,(3 marks)
+contraindications(3 marks)
+
+### C2
+Describe CORTICOSTEROIDS in terms of
+Classes and examples(3 marks)
+mode of action(3 marks)
+clinical applications(4 marks)
+Contraindications(2 marks)
+Drug-drug interactions(3 marks)
+
+==========================================================================================
+5314 — Pharmacology XIV — Toxicology & Drug Discovery
+==========================================================================================
+
+
+SECTION A (30)
+----------------------------------------
+### A1
+You are stuck in traffic in Nairobi in January for 3 or 4 hours and you begin to get a headache, a feeling of tightness in the temporal region, and an increased pulse rate. What is the antidote based on the most likely cause of these effects?
+A. Activated charcoal
+B. Atropine
+C. Fomepizole
+D. Oxygen
+
+### A2
+A farm worker was accidentally in the field during the aerial spraying with parathion. He was brought to the emergency department. Which of the following is most appropriate in the treatment of this patient?
+A. Antiseizure drugs
+B. Atropine and pralidoxime
+C. Hemodialysis
+D. Hyperbaric oxygen
+
+### A3
+A compound that is toxic to bone marrow cells in the early stages of development and that may also be leukemogenic is
+A. Benzene
+B. Carbon monoxide
+C. Glyphosate
+D. DDT
+
+### A4
+Chemical warfare agents that had been manufactured in the 1950s were being stored at a military installation. Several civilian workers at the facility began to feel unwell, with symptoms that included dyspnea, abdominal cramps, and diarrhea. They also had copious nasal and tracheobronchial secretions. Which type of toxic compound is most likely to be the cause of these effects?
+A. Aliphatic hydrocarbons
+B. Botulinum toxins
+C. Nitrogen mustards
+D. Organophosphates
+
+### A5
+Asthma is often exacerbated in patients exposed to this reducing agent when concentrations in the air are as low as 1–2 ppm. It is formed mainly from combustion of fossil fuels.
+A. Paraquat
+B. Nitrogen dioxide
+C. Rotenone
+D. Sulfur dioxide
+
+### A6
+A 2-year-old child was brought to the emergency department 1 h after ingestion of tablets he had managed to obtain from a bottle on top of the refrigerator. His symptoms included marked gastrointestinal distress, vomiting (with hematemesis), and epigastric pain. Metabolic acidosis and leukocytosis were also present. This patient is most likely to have ingested tablets containing
+A. Acetaminophen
+B. Aspirin
+C. Diphenhydramine
+D. Iron
+
+### A7
+A small child is brought to a hospital emergency department suffering from severe gastrointestinal distress and abdominal colic. If this patient has severe acute lead poisoning with signs and symptoms of encephalopathy, treatment should be instituted immediately with
+A. Acetylcysteine
+B. Deferoxamine
+C. EDTA
+D. Succimer
+
+### A8
+A young engineer involved in the smelting process of cobalt and gold presented with severe GI discomfort, rice water stools, and a sweet garlicky breath. Acute inorganic arsenic poisoning was diagnosed. Which of the following drugs should be included in the management of this patient?
+A. Dimercaprol
+B. EDTA
+C. Penicillamine
+D. Succimer
+
+### A9
+This agent is used in the treatment of Wilson’s disease and has been reported to cause lupus erythematosus and haemolytic anemia.
+A. Deferasirox
+B. Dimercaprol
+C. Penicillamine
+D. Succimer
+
+### A10
+High doses of this agent can cause histamine release and extreme vasodilation.
+A. Dimercaprol
+B. Penicillamine
+C. Deferoxamine
+D. Succimer
+
+### A11
+A large pharmaceutical company has conducted extensive animal testing of a new drug for the treatment of advanced prostate cancer. The chief of research and development recommends that the company now submits an investigational new drug (IND) application in order to start clinical trials. Which of the following statements is most correct regarding clinical trials of new drugs?
+A. Phase 1 involves the study of a small number of normal volunteers by highly trained clinical pharmacologists
+B. Phase 2 involves the use of the new drug in a large number of patients (1000–5000) who have the disease to be treated under conditions of proposed use (eg, outpatients)
+C. Phase 4 involves the detailed study of toxic effects that have been discovered in phase 3
+D. Phase 2 requires the use of a positive control (a known effective drug) and a placebo
+
+### A12
+Which of the following would probably not be included in an optimal phase 3 clinical trial of a new analgesic drug for SEVERE pain?
+A. A negative control (placebo)
+B. A positive control (current standard analgesic therapy)
+C. Double-blind protocol (in which neither the patient nor immediate observers of the patient know which agent is active
+D. A group of 1000–5000 subjects with a clinical condition requiring analgesia
+
+### A13
+Which of the following statements about the testing of new compounds for potential therapeutic use in the treatment of hypertension is most correct?
+A. Animal tests cannot be used to predict the types of clinical toxicities that may occur because there is no correlation with human toxicity
+B. Human studies in normal individuals will be done before the drug is used in individuals with hypertension
+C. The degree of risk must be assessed in at least 3 species of animals, including 1 primate species
+D. The animal therapeutic index must be known before trial of the agents in humans
+
+### A14
+The “dominant lethal” test involves the treatment of a male adult animal with a chemical before mating; the pregnant female is later examined for fetal death and abnormalities. The dominant lethal test therefore is a test of
+A. Teratogenicity
+B. Mutagenicity
+C. Carcinogenicity
+D. Sperm viability
+
+### A15
+The Ames test is frequently carried out before clinical trials are begun. The Ames test is a method that detects
+A. Carcinogenesis in primates
+B. Carcinogenesis in rodents
+C. Mutagenesis in bacteria
+D. Teratogenesis in any mammalian species
+
+### A16
+A patient suffering from a depressive disorder is being treated with imipramine. If he uses diphenhydramine for allergic rhinitis, a drug interaction is likely to occur because
+A. Both drugs block muscarinic receptors
+B. Diphenhydramine inhibits imipramine metabolism
+C. Imipramine inhibits the metabolism of diphenhydramine
+D. Each drugs inhibit the renal excretion of the other drug
+
+### A17
+AJ is a 45-year-old homeless man participating in a drug rehabilitation program that supplies daily methadone. AJ reports that he needs more methadone to avoid withdrawal, since he started treatment for his tuberculosis. Which of the following drugs might have caused this scenario?
+A. Ciprofloxacin
+B. Erythromycin
+C. Rifampin
+D. Tetracycline
+
+### A18
+A 43-year-old woman with type 2 diabetes and hypertension visits your clinic. Her current blood pressure (measured 3 times) is not at target: 155/98 mm Hg, despite the fact that she is taking hydrochlorothiazide and captopril. The antihypertensive effects of captopril can be antagonized (reduced) by which of the following?
+A. Angiotensin II receptor blockers
+B. Loop diuretics
+C. NSAIDs
+D. Sulfonylurea hypoglycemics
+
+### A19
+Which drug has resulted in severe hematotoxicity when administered to a patient being treated with azathioprine?
+A. Allopurinol
+B. Cholestyramine
+C. Digoxin
+D. Lithium
+
+### A20
+In patients with HIV infection, the inhibitory action of this agent on drug metabolism has clinical value.
+A. Phenelzine
+B. Rifampin
+C. Ritonavir
+D. Theophylline
+
+### A21
+This drug enhances the toxicity of methotrexate by decreasing its renal clearance.
+A. Digoxin
+B. Erythromycin
+C. Fluoxetine
+D. Ibuprofen
+
+### A22
+Which of the following agents is likely to increase the likelihood of bleeding if concomitantly used with warfarin.
+A. Ritonavir
+B. Paracetamol
+C. Hydrochlorothiazide
+D. Aspirin
+
+### A23
+Which of the following commonly used herbs may enhance the blood thinning effect of warfarin
+A. Grapefruit juice
+B. Garlic
+C. Coriander
+D. Rosemary
+
+### A24
+Which of the following medications is relatively safe to use in the third trimester of pregnancy?
+A. Acetaminophen
+B. Nonsteroidal anti-inflammatory drugs
+C. Warfarin
+D. Aspirin
+
+### A25
+When selecting a benzodiazepine product for a woman who has chronic panic disorder, all of the following drug properties are desirable for breastfeeding her 8-month-old infant who was born at term except
+A. Hepatic metabolism to inactive metabolites.
+B. A short half-life.
+C. A rapid onset of action.
+D. High lipid solubility
+
+### A26
+Although the total body water content of an adult accounts for approximately 60% of body weight, the total body water content of a healthy newborn is
+A. 40%.
+B. 50%.
+C. 70%.
+D. 80%.
+
+### A27
+Administration of a sulfonamide antibiotic may displace bilirubin from binding sites on which of the following substances, leading to passage of bilirubin into the brain and the development of kernicterus?
+A. α1-acid glycoprotein
+B. Albumin
+C. Uridine 5’-diphosphate glucuronosyltransferase
+D. Sulfotransferase
+
+### A28
+Caffeine administered to neonates for the treatment of apnea of prematurity undergoes metabolism through which of the following cytochrome P450 enzymes, also the last major drug-metabolizing enzyme to develop after birth?
+A. CYP1A2
+B. CYP2C19
+C. CYP2D6
+D. CYP3A4
+
+### A29
+Both glomerular filtration and tubular secretion rates are reduced in infants compared to adults. Which list of drugs is the most likely to have prolonged clearance during infancy because of immature renal function alone?
+A. Amikacin, caffeine, and retinoic acid
+B. Acetaminophen, benzyl alcohol, and vancomycin
+C. Amikacin, gentamicin, and vancomycin
+D. Atomoxetine, lopinavir, and vancomycin
+
+### A30
+Which of the following variables will most likely be used to calculate doses for antibiotics prescribed for a pre-mature infant with presumed sepsis?
+A. Height
+B. Hepatic function
+C. Weight
+D. Age
+
+
+SECTION B (7)
+----------------------------------------
+### B1
+Give six approaches that could be used in the discovery of drugs (6 marks)
+
+### B2
+Describe five fundamental points of good laboratory practices (GLP) to be considered during pre-clinical safety testing (10 marks)
+
+### B3
+Giving examples, describe the concepts of bioaccumulation and biomagnification in relation to environmental pollutants (4 marks)
+
+### B4
+Give the common clinical effect expected to be observed in the following cases of poisoning (5 marks)
+a) Acute SO2 inhalation
+b) Acute chloroform inhalation
+c) Chronic benzene exposure
+d) Acute NO2 inhalation
+e) Chronic asbestos exposure
+
+### B5
+Give three examples of botanical pesticides of toxicological importance (3 marks)
+
+### B6
+Describe the four phases of clinical studies during drug development (8 marks)
+
+### B7
+Z.T. is a 53 year old male patient who was started on warfarin (5 m.g. o.d) one month ago following an episode of deep venous thrombosis in his left femoral vein which he developed during when he was admitted for acute complications of T.B. that was the cause of the above admission. He is visiting your anticoagulation clinic for international normalized ratio (INR) monitoring. The INR is 1.2 (desired target 2-3). A doppler ultra sound of the affected region shows no change in clot size from baseline. Swelling of the left lower limb has also not reduced. He reports that he is faithfully taking his anti-TB medication and attends TB clinic.
+a) Describe the drug-drug interaction that is likely to be at play in Z.T. (2 marks)
+b) Describe two interventions that you could initiate to overcome or avoid the above interaction (2 marks)
+
+
+SECTION C (3)
+----------------------------------------
+### C1
+S.K. is a 16 year old male patient admitted to your in-patient unit with altered consciousness and several episodes of seizures. His caregivers report that he drank a bottle-full of insecticide whose container they carried. He is producing copious secretions from his mouth and nose and eyes, has emptied his bowels and bladder several times and vomited. Wheezing is audible on chest auscultation. The musculoskeletal examination reveals profound weakness in his arms and legs; muscle twitches are also present. His respiratory muscle effort is also diminished. On admission the heart rate was 51 beats per minute and the respiratory rate was 10 breaths per minute. Other vital signs are within the normal range. After establishing that his airway is clear and instituting supportive care to stabilize vitals and fluid status you are able to identify chlorpyrifos (an organophosphate) as the active agent.
+a) Describe the mechanism of anticholinesterase insecticides (both organophosphates and carbamate) (3 marks)
+b) Outline the clinical effects of anticholinesterase insecticide poisoning on S.K. based on Ach activity on each of the following receptors
+Muscarinic (5 marks)
+CNS receptors (mixed type) (2 marks)
+Nicotinic-neuromuscular neurons (2 marks)
+Nicotinic-sympathetic (2 marks)
+c) State the antidote that is likely to improve symptoms of muscle weakness in S.K. (1 mark)
+
+### C2
+Describe seven problems likely to be encountered during drug administration to pediatric patients through the intravenous route and suggest solutions (13 marks)
+
+### C3
+Define the role of compound optimization and the end product of this process in the drug development process (2 marks)
+

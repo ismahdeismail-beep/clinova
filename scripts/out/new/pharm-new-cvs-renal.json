@@ -1,0 +1,1272 @@
+{
+  "pharm-new-cvs-renal": {
+    "1": {
+      "title": "Cardiovascular & Renal Pharmacology",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 58-year-old man presents with acute pulmonary edema secondary to acute decompensated heart failure. Which of the following drugs would provide the fastest relief by reducing preload and afterload?",
+              "options": [
+                "Digoxin",
+                "Furosemide",
+                "Metoprolol",
+                "Spironolactone"
+              ],
+              "answer": "Furosemide",
+              "explanation": "Furosemide is a loop diuretic that rapidly reduces intravascular volume and venous return, thereby decreasing preload and pulmonary congestion in acute pulmonary edema."
+            },
+            {
+              "stem": "A 62-year-old woman with hypertension and chronic kidney disease (eGFR 45 mL/min/1.73m²) is started on an antihypertensive. She develops a persistent dry cough. Which drug class is most likely responsible?",
+              "options": [
+                "Angiotensin-converting enzyme (ACE) inhibitors",
+                "Angiotensin II receptor blockers (ARBs)",
+                "Calcium channel blockers (CCBs)",
+                "Thiazide diuretics"
+              ],
+              "answer": "Angiotensin-converting enzyme (ACE) inhibitors",
+              "explanation": "ACE inhibitors are associated with a dry cough due to bradykinin accumulation, which is a common adverse effect and may necessitate switching to an ARB."
+            },
+            {
+              "stem": "A 70-year-old man with atrial fibrillation and a CHA₂DS₂-VASc score of 4 is started on warfarin for stroke prevention. Which of the following is the most appropriate target INR range?",
+              "options": [
+                "1.5–2.0",
+                "2.0–3.0",
+                "2.5–3.5",
+                "3.0–4.0"
+              ],
+              "answer": "2.0–3.0",
+              "explanation": "For patients with atrial fibrillation, the target INR range for warfarin therapy is 2.0–3.0 to balance stroke prevention and bleeding risk."
+            },
+            {
+              "stem": "A 55-year-old man with hypertension and type 2 diabetes is started on hydrochlorothiazide. Which of the following metabolic adverse effects is most likely?",
+              "options": [
+                "Hyperkalemia",
+                "Hypercalcemia",
+                "Hyperglycemia",
+                "Hyperuricemia"
+              ],
+              "answer": "Hyperglycemia",
+              "explanation": "Thiazide diuretics can cause hyperglycemia by impairing insulin secretion and increasing insulin resistance, which is particularly concerning in diabetic patients."
+            },
+            {
+              "stem": "A 45-year-old woman with hypertension and angina is prescribed verapamil. Which of the following adverse effects is most commonly associated with verapamil?",
+              "options": [
+                "Reflex tachycardia",
+                "Peripheral edema",
+                "Constipation",
+                "Hypertrichosis"
+              ],
+              "answer": "Constipation",
+              "explanation": "Verapamil, a non-dihydropyridine calcium channel blocker, commonly causes constipation due to its effects on gastrointestinal smooth muscle."
+            },
+            {
+              "stem": "A 68-year-old man with heart failure with reduced ejection fraction (HFrEF) is started on carvedilol. Which of the following best describes the mechanism of action of carvedilol?",
+              "options": [
+                "Selective β1-adrenergic blockade",
+                "Non-selective β-adrenergic blockade with α1-blockade",
+                "Calcium channel blockade",
+                "Angiotensin II receptor blockade"
+              ],
+              "answer": "Non-selective β-adrenergic blockade with α1-blockade",
+              "explanation": "Carvedilol is a third-generation beta-blocker with non-selective β-adrenergic blockade and additional α1-blocking activity, which contributes to its beneficial effects in heart failure."
+            },
+            {
+              "stem": "A 50-year-old man with a history of myocardial infarction is prescribed atorvastatin. Which of the following is the primary mechanism of action of atorvastatin?",
+              "options": [
+                "Inhibition of cholesterol absorption in the gut",
+                "Inhibition of HMG-CoA reductase",
+                "Inhibition of lipoprotein lipase",
+                "Inhibition of PCSK9"
+              ],
+              "answer": "Inhibition of HMG-CoA reductase",
+              "explanation": "Atorvastatin is a statin that inhibits HMG-CoA reductase, the rate-limiting enzyme in cholesterol synthesis, thereby reducing LDL cholesterol levels."
+            },
+            {
+              "stem": "A 72-year-old woman with hypertension and chronic obstructive pulmonary disease (COPD) is prescribed a beta-blocker. Which of the following beta-blockers is most appropriate for this patient?",
+              "options": [
+                "Atenolol",
+                "Metoprolol",
+                "Propranolol",
+                "Nebivolol"
+              ],
+              "answer": "Nebivolol",
+              "explanation": "Nebivolol is a cardioselective beta-blocker with additional nitric oxide-mediated vasodilatory effects, making it a safer choice in patients with COPD."
+            },
+            {
+              "stem": "A 60-year-old man with hypertension and benign prostatic hyperplasia (BPH) is started on doxazosin. Which of the following adverse effects is most likely?",
+              "options": [
+                "Bradycardia",
+                "First-dose syncope",
+                "Hyperkalemia",
+                "Hypoglycemia"
+              ],
+              "answer": "First-dose syncope",
+              "explanation": "Doxazosin, an alpha-1 blocker, can cause first-dose syncope due to its vasodilatory effects, particularly in patients with volume depletion or elderly individuals."
+            },
+            {
+              "stem": "A 55-year-old woman with hypertension and osteoporosis is prescribed hydrochlorothiazide. Which of the following is a beneficial effect of hydrochlorothiazide in this patient?",
+              "options": [
+                "Increased calcium excretion",
+                "Decreased calcium excretion",
+                "Increased sodium excretion",
+                "Decreased potassium excretion"
+              ],
+              "answer": "Decreased calcium excretion",
+              "explanation": "Thiazide diuretics reduce urinary calcium excretion, which can be beneficial in patients with osteoporosis by promoting calcium retention."
+            },
+            {
+              "stem": "A 65-year-old man with atrial fibrillation is started on digoxin for rate control. Which of the following is the primary mechanism of action of digoxin?",
+              "options": [
+                "Inhibition of the sodium-potassium ATPase pump",
+                "Blockade of calcium channels",
+                "Blockade of potassium channels",
+                "Stimulation of beta-adrenergic receptors"
+              ],
+              "answer": "Inhibition of the sodium-potassium ATPase pump",
+              "explanation": "Digoxin inhibits the sodium-potassium ATPase pump, leading to increased intracellular calcium and positive inotropic effects, as well as enhanced vagal tone for rate control."
+            },
+            {
+              "stem": "A 48-year-old woman with hypertension is prescribed losartan. Which of the following is a contraindication to the use of losartan?",
+              "options": [
+                "Pregnancy",
+                "Hyperkalemia",
+                "Chronic kidney disease",
+                "Diabetes mellitus"
+              ],
+              "answer": "Pregnancy",
+              "explanation": "Losartan, an angiotensin II receptor blocker (ARB), is contraindicated in pregnancy due to the risk of fetal renal damage and other teratogenic effects."
+            },
+            {
+              "stem": "A 70-year-old man with hypertension and chronic kidney disease (eGFR 30 mL/min/1.73m²) is started on ramipril. Which of the following laboratory parameters should be monitored closely?",
+              "options": [
+                "Serum potassium and creatinine",
+                "Serum sodium and chloride",
+                "Serum calcium and phosphate",
+                "Serum magnesium and bicarbonate"
+              ],
+              "answer": "Serum potassium and creatinine",
+              "explanation": "ACE inhibitors like ramipril can cause hyperkalemia and increase serum creatinine, particularly in patients with chronic kidney disease, necessitating close monitoring."
+            },
+            {
+              "stem": "A 55-year-old man with hypertension and type 2 diabetes is prescribed lisinopril. Which of the following is a beneficial effect of lisinopril in this patient?",
+              "options": [
+                "Reduction in proteinuria",
+                "Increase in LDL cholesterol",
+                "Hyperkalemia",
+                "Hyperglycemia"
+              ],
+              "answer": "Reduction in proteinuria",
+              "explanation": "ACE inhibitors like lisinopril reduce proteinuria and slow the progression of diabetic nephropathy by decreasing intraglomerular pressure."
+            },
+            {
+              "stem": "A 60-year-old woman with hypertension and angina is prescribed amlodipine. Which of the following adverse effects is most commonly associated with amlodipine?",
+              "options": [
+                "Bradycardia",
+                "Peripheral edema",
+                "Hyperkalemia",
+                "Hypoglycemia"
+              ],
+              "answer": "Peripheral edema",
+              "explanation": "Amlodipine, a dihydropyridine calcium channel blocker, commonly causes peripheral edema due to preferential dilation of precapillary arterioles."
+            },
+            {
+              "stem": "A 75-year-old man with hypertension and heart failure with preserved ejection fraction (HFpEF) is prescribed spironolactone. Which of the following is the primary mechanism of action of spironolactone?",
+              "options": [
+                "Inhibition of the renin-angiotensin-aldosterone system (RAAS)",
+                "Blockade of aldosterone receptors",
+                "Inhibition of sodium reabsorption in the proximal tubule",
+                "Inhibition of sodium reabsorption in the loop of Henle"
+              ],
+              "answer": "Blockade of aldosterone receptors",
+              "explanation": "Spironolactone is a potassium-sparing diuretic that acts as an aldosterone receptor antagonist, reducing sodium reabsorption and potassium excretion in the collecting ducts."
+            },
+            {
+              "stem": "A 50-year-old man with hypertension and gout is prescribed indapamide. Which of the following is a potential adverse effect of indapamide?",
+              "options": [
+                "Hyperuricemia",
+                "Hypouricemia",
+                "Hypercalcemia",
+                "Hypocalcemia"
+              ],
+              "answer": "Hyperuricemia",
+              "explanation": "Indapamide, a thiazide-like diuretic, can increase serum uric acid levels, potentially exacerbating gout in susceptible patients."
+            },
+            {
+              "stem": "A 65-year-old woman with hypertension and osteoporosis is prescribed aliskiren. Which of the following is the primary mechanism of action of aliskiren?",
+              "options": [
+                "Inhibition of renin",
+                "Blockade of angiotensin II receptors",
+                "Inhibition of ACE",
+                "Blockade of aldosterone receptors"
+              ],
+              "answer": "Inhibition of renin",
+              "explanation": "Aliskiren is a direct renin inhibitor that blocks the conversion of angiotensinogen to angiotensin I, thereby reducing the activity of the renin-angiotensin-aldosterone system (RAAS)."
+            },
+            {
+              "stem": "A 70-year-old man with hypertension and chronic kidney disease (eGFR 25 mL/min/1.73m²) is started on perindopril. Which of the following is a potential adverse effect of perindopril in this patient?",
+              "options": [
+                "Hyperkalemia",
+                "Hypokalemia",
+                "Hypercalcemia",
+                "Hypocalcemia"
+              ],
+              "answer": "Hyperkalemia",
+              "explanation": "ACE inhibitors like perindopril can cause hyperkalemia, particularly in patients with chronic kidney disease, due to reduced aldosterone secretion and impaired potassium excretion."
+            },
+            {
+              "stem": "A 55-year-old man with hypertension and type 2 diabetes is prescribed captopril. Which of the following is a beneficial effect of captopril in this patient?",
+              "options": [
+                "Reduction in proteinuria",
+                "Increase in LDL cholesterol",
+                "Hyperkalemia",
+                "Hyperglycemia"
+              ],
+              "answer": "Reduction in proteinuria",
+              "explanation": "ACE inhibitors like captopril reduce proteinuria and slow the progression of diabetic nephropathy by decreasing intraglomerular pressure."
+            },
+            {
+              "stem": "A 60-year-old woman with hypertension and angina is prescribed diltiazem. Which of the following adverse effects is most commonly associated with diltiazem?",
+              "options": [
+                "Bradycardia",
+                "Tachycardia",
+                "Peripheral edema",
+                "Hyperkalemia"
+              ],
+              "answer": "Bradycardia",
+              "explanation": "Diltiazem, a non-dihydropyridine calcium channel blocker, commonly causes bradycardia due to its negative chronotropic effects on the sinoatrial node."
+            },
+            {
+              "stem": "A 72-year-old man with hypertension and benign prostatic hyperplasia (BPH) is prescribed terazosin. Which of the following is the primary mechanism of action of terazosin?",
+              "options": [
+                "Blockade of alpha-1 adrenergic receptors",
+                "Blockade of beta-1 adrenergic receptors",
+                "Inhibition of ACE",
+                "Blockade of angiotensin II receptors"
+              ],
+              "answer": "Blockade of alpha-1 adrenergic receptors",
+              "explanation": "Terazosin is an alpha-1 blocker that relaxes smooth muscle in the prostate and bladder neck, improving urinary symptoms in BPH while also lowering blood pressure."
+            },
+            {
+              "stem": "A 50-year-old woman with hypertension and osteoporosis is prescribed hydrochlorothiazide. Which of the following is a potential beneficial effect of hydrochlorothiazide in this patient?",
+              "options": [
+                "Increased calcium excretion",
+                "Decreased calcium excretion",
+                "Increased sodium excretion",
+                "Decreased potassium excretion"
+              ],
+              "answer": "Decreased calcium excretion",
+              "explanation": "Thiazide diuretics reduce urinary calcium excretion, which can be beneficial in patients with osteoporosis by promoting calcium retention."
+            },
+            {
+              "stem": "A 65-year-old man with hypertension and heart failure with reduced ejection fraction (HFrEF) is started on enalapril. Which of the following is the primary mechanism of action of enalapril?",
+              "options": [
+                "Inhibition of ACE",
+                "Blockade of angiotensin II receptors",
+                "Inhibition of renin",
+                "Blockade of aldosterone receptors"
+              ],
+              "answer": "Inhibition of ACE",
+              "explanation": "Enalapril is an ACE inhibitor that blocks the conversion of angiotensin I to angiotensin II, reducing vasoconstriction and aldosterone secretion."
+            },
+            {
+              "stem": "A 70-year-old woman with hypertension and chronic kidney disease (eGFR 35 mL/min/1.73m²) is prescribed valsartan. Which of the following laboratory parameters should be monitored closely?",
+              "options": [
+                "Serum potassium and creatinine",
+                "Serum sodium and chloride",
+                "Serum calcium and phosphate",
+                "Serum magnesium and bicarbonate"
+              ],
+              "answer": "Serum potassium and creatinine",
+              "explanation": "ARBs like valsartan can cause hyperkalemia and increase serum creatinine, particularly in patients with chronic kidney disease, necessitating close monitoring."
+            },
+            {
+              "stem": "A 55-year-old man with hypertension and type 2 diabetes is prescribed irbesartan. Which of the following is a beneficial effect of irbesartan in this patient?",
+              "options": [
+                "Reduction in proteinuria",
+                "Increase in LDL cholesterol",
+                "Hyperkalemia",
+                "Hyperglycemia"
+              ],
+              "answer": "Reduction in proteinuria",
+              "explanation": "ARBs like irbesartan reduce proteinuria and slow the progression of diabetic nephropathy by decreasing intraglomerular pressure."
+            },
+            {
+              "stem": "A 60-year-old woman with hypertension and angina is prescribed nifedipine. Which of the following adverse effects is most commonly associated with nifedipine?",
+              "options": [
+                "Bradycardia",
+                "Reflex tachycardia",
+                "Peripheral edema",
+                "Hyperkalemia"
+              ],
+              "answer": "Reflex tachycardia",
+              "explanation": "Nifedipine, a dihydropyridine calcium channel blocker, commonly causes reflex tachycardia due to its potent vasodilatory effects and subsequent sympathetic activation."
+            },
+            {
+              "stem": "A 75-year-old man with hypertension and heart failure with preserved ejection fraction (HFpEF) is prescribed eplerenone. Which of the following is the primary mechanism of action of eplerenone?",
+              "options": [
+                "Inhibition of the renin-angiotensin-aldosterone system (RAAS)",
+                "Blockade of aldosterone receptors",
+                "Inhibition of sodium reabsorption in the proximal tubule",
+                "Inhibition of sodium reabsorption in the loop of Henle"
+              ],
+              "answer": "Blockade of aldosterone receptors",
+              "explanation": "Eplerenone is a selective aldosterone receptor antagonist that reduces sodium reabsorption and potassium excretion in the collecting ducts, with fewer endocrine adverse effects than spironolactone."
+            },
+            {
+              "stem": "A 50-year-old man with hypertension and gout is prescribed chlorthalidone. Which of the following is a potential adverse effect of chlorthalidone?",
+              "options": [
+                "Hyperuricemia",
+                "Hypouricemia",
+                "Hypercalcemia",
+                "Hypocalcemia"
+              ],
+              "answer": "Hyperuricemia",
+              "explanation": "Chlorthalidone, a thiazide diuretic, can increase serum uric acid levels, potentially exacerbating gout in susceptible patients."
+            },
+            {
+              "stem": "A 65-year-old woman with hypertension and osteoporosis is prescribed fosinopril. Which of the following is a potential beneficial effect of fosinopril in this patient?",
+              "options": [
+                "Reduction in proteinuria",
+                "Increase in LDL cholesterol",
+                "Hyperkalemia",
+                "Hyperglycemia"
+              ],
+              "answer": "Reduction in proteinuria",
+              "explanation": "ACE inhibitors like fosinopril reduce proteinuria and slow the progression of diabetic nephropathy by decreasing intraglomerular pressure."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 65-year-old man presents with a blood pressure of 170/100 mmHg and a history of type 2 diabetes mellitus. He has no other comorbidities.",
+              "modelAnswer": "a) Recommended antihypertensive drug: Lisinopril (ACE inhibitor).\n\nb) Other clinical applications of lisinopril:\n   1. Heart failure with reduced ejection fraction (HFrEF).\n   2. Post-myocardial infarction to reduce mortality.\n   3. Diabetic nephropathy to reduce proteinuria and slow progression.\n\nc) Four side effects to monitor:\n   1. Dry cough (due to bradykinin accumulation).\n   2. Hyperkalemia (due to reduced aldosterone secretion).\n   3. Acute kidney injury (due to reduced glomerular filtration pressure).\n   4. Angioedema (rare but serious)."
+            },
+            {
+              "stem": "A 55-year-old woman with atrial fibrillation is started on digoxin for rate control.",
+              "modelAnswer": "a) Three drugs for atrial fibrillation management:\n   1. Digoxin (rate control).\n   2. Metoprolol (rate control).\n   3. Apixaban (anticoagulation).\n\nb) Mode of action of each drug:\n   1. Digoxin: Inhibits the sodium-potassium ATPase pump, increasing intracellular calcium (positive inotropy) and enhancing vagal tone (negative chronotropy).\n   2. Metoprolol: Selective β1-adrenergic blockade, reducing heart rate and contractility.\n   3. Apixaban: Direct factor Xa inhibitor, blocking thrombin generation and preventing thromboembolism."
+            },
+            {
+              "stem": "Compare and contrast the mode of action of aspirin as an antiplatelet and as an anti-inflammatory agent.",
+              "modelAnswer": "Aspirin inhibits cyclooxygenase (COX) enzymes by irreversibly acetylating serine residues at the active site.\n\nAs an antiplatelet agent:\n- Aspirin inhibits COX-1 in platelets, reducing the production of thromboxane A2 (TXA2), a potent platelet activator and vasoconstrictor.\n- This leads to decreased platelet aggregation and reduced risk of arterial thrombosis.\n\nAs an anti-inflammatory agent:\n- Aspirin inhibits both COX-1 and COX-2, reducing the production of prostaglandins (PGs) and thromboxanes.\n- COX-2 inhibition reduces the synthesis of prostaglandins involved in inflammation, pain, and fever.\n- Higher doses are typically required for anti-inflammatory effects compared to antiplatelet effects."
+            },
+            {
+              "stem": "Identify TWO fibrinolytic drugs and TWO antifibrinolytic drugs, and describe their mechanisms of action.",
+              "modelAnswer": "Fibrinolytic drugs:\n1. Alteplase: Recombinant tissue plasminogen activator (tPA) that binds to fibrin in a thrombus and converts plasminogen to plasmin, leading to clot dissolution.\n2. Reteplase: A modified recombinant tPA with a longer half-life, also converting plasminogen to plasmin to dissolve clots.\n\nAntifibrinolytic drugs:\n1. Tranexamic acid: Competitively inhibits plasminogen activation, preventing plasmin formation and reducing fibrinolysis.\n2. Aminocaproic acid: Similar to tranexamic acid, it inhibits plasminogen activation and is used to control bleeding."
+            },
+            {
+              "stem": "Atorvastatin is a popular medicine. Elucidate THREE clinical applications and THREE side effects of atorvastatin.",
+              "modelAnswer": "Clinical applications:\n1. Primary and secondary prevention of atherosclerotic cardiovascular disease (e.g., myocardial infarction, stroke).\n2. Treatment of hypercholesterolemia (reducing LDL cholesterol).\n3. Treatment of mixed dyslipidemia (reducing LDL and triglycerides, increasing HDL).\n\nSide effects:\n1. Myalgia and myopathy (including rare rhabdomyolysis).\n2. Elevated liver enzymes (transaminases).\n3. Gastrointestinal disturbances (e.g., nausea, diarrhea)."
+            },
+            {
+              "stem": "Propose TWO drugs that can be used for the management of microcytic hypochromic anemia.",
+              "modelAnswer": "1. Ferrous sulfate (oral iron supplementation).\n2. Iron dextran (parenteral iron therapy, if oral iron is ineffective or poorly tolerated)."
+            },
+            {
+              "stem": "Mention the different types of angina and recommend a drug for the management of each type.",
+              "modelAnswer": "Types of angina:\n1. Stable angina: Predictable chest pain on exertion.\n   - Drug: Metoprolol (beta-blocker) or amlodipine (calcium channel blocker).\n\n2. Unstable angina: Chest pain at rest or with minimal exertion, often due to plaque rupture.\n   - Drug: Clopidogrel (antiplatelet) + enoxaparin (anticoagulant) + nitroglycerin (vasodilator).\n\n3. Variant (Prinzmetal) angina: Chest pain due to coronary artery spasm.\n   - Drug: Diltiazem (calcium channel blocker) or nitroglycerin (vasodilator)."
+            },
+            {
+              "stem": "A 60-year-old man with hypertension and chronic kidney disease (eGFR 30 mL/min/1.73m²) is started on furosemide.",
+              "modelAnswer": "a) Site of action of furosemide: Thick ascending limb of the loop of Henle.\n\nb) Mechanism of action:\n   - Furosemide inhibits the Na⁺-K⁺-2Cl⁻ cotransporter (NKCC2) in the thick ascending limb, reducing sodium reabsorption and increasing urine output.\n\nc) Four side effects to monitor:\n   1. Hypokalemia (due to increased potassium excretion).\n   2. Hypomagnesemia (due to increased magnesium excretion).\n   3. Ototoxicity (rare, but can occur with high doses).\n   4. Hyperuricemia (can exacerbate gout)."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 70-year-old Kenyan patient presents to the hospital with an average blood pressure of 160/95 mmHg. He is also diagnosed with ST-elevation myocardial infarction (STEMI).",
+              "modelAnswer": "a) Pharmaceutical plan for this patient:\n   1. Aspirin 300 mg (chewed) for antiplatelet effect.\n   2. Clopidogrel 600 mg loading dose, then 75 mg daily for dual antiplatelet therapy.\n   3. Atorvastatin 80 mg daily for lipid lowering and plaque stabilization.\n   4. Metoprolol 25–50 mg twice daily for rate control and reduction of myocardial oxygen demand.\n   5. Lisinopril 5 mg daily for afterload reduction and prevention of ventricular remodeling.\n   6. Enoxaparin 1 mg/kg subcutaneously twice daily for anticoagulation.\n   7. Morphine 2–5 mg IV for pain relief (if needed).\n   8. Oxygen if SpO₂ <90%.\n\nb) Mode of action of the six drugs recommended in a):\n   1. Aspirin: Irreversibly inhibits COX-1 in platelets, reducing thromboxane A2 production and platelet aggregation.\n   2. Clopidogrel: ADP receptor antagonist, inhibiting platelet activation and aggregation.\n   3. Atorvastatin: Inhibits HMG-CoA reductase, reducing cholesterol synthesis and LDL levels, with pleiotropic effects on plaque stabilization.\n   4. Metoprolol: Selective β1-adrenergic blockade, reducing heart rate, contractility, and myocardial oxygen demand.\n   5. Lisinopril: ACE inhibitor, reducing angiotensin II formation, leading to vasodilation, reduced aldosterone secretion, and decreased afterload.\n   6. Enoxaparin: Low-molecular-weight heparin (LMWH) that binds to antithrombin III, enhancing its inhibition of factor Xa and thrombin, thereby preventing thrombus formation.\n\nc) Two side effects for each drug:\n   1. Aspirin: Gastrointestinal bleeding, tinnitus.\n   2. Clopidogrel: Bleeding, thrombotic thrombocytopenic purpura (rare).\n   3. Atorvastatin: Myalgia, elevated liver enzymes.\n   4. Metoprolol: Bradycardia, fatigue.\n   5. Lisinopril: Dry cough, hyperkalemia.\n   6. Enoxaparin: Bleeding, thrombocytopenia."
+            },
+            {
+              "stem": "A patient suffering from deep venous thrombosis (DVT) is admitted to the public hospital where you are working.",
+              "modelAnswer": "a) Drug recommended for this patient: Enoxaparin (LMWH).\n\nb) Mode of action of enoxaparin:\n   - Enoxaparin binds to antithrombin III, enhancing its inhibition of factor Xa and thrombin, thereby preventing thrombus formation and propagation.\n\nc) Antidote to counteract bleeding: Protamine sulfate.\n\nd) Mechanism of action of protamine sulfate:\n   - Protamine is a positively charged peptide that binds to the negatively charged heparin molecules, forming a stable complex that neutralizes heparin's anticoagulant activity.\n\ne) Drug recommended for discharge: Apixaban.\n\nf) Mode of action of apixaban:\n   - Apixaban is a direct factor Xa inhibitor, blocking the conversion of prothrombin to thrombin and preventing thrombus formation.\n\ng) Four side effects of apixaban:\n   1. Bleeding (e.g., gastrointestinal, intracranial).\n   2. Easy bruising.\n   3. Nausea.\n   4. Anemia.\n\nh) Two drug-drug interactions with apixaban:\n   1. Warfarin: Increased bleeding risk due to additive anticoagulant effects.\n   2. Clarithromycin: May increase apixaban levels by inhibiting CYP3A4, increasing bleeding risk."
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Cardiovascular & Renal Pharmacology",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 62-year-old man with a history of hypertension and type 2 diabetes mellitus presents with a blood pressure of 158/94 mmHg. His current medications include metformin and atorvastatin. Which of the following antihypertensive agents is most likely to worsen his glycemic control?",
+              "options": [
+                "Amlodipine",
+                "Hydrochlorothiazide",
+                "Lisinopril",
+                "Losartan"
+              ],
+              "answer": "Hydrochlorothiazide",
+              "explanation": "Thiazide diuretics like hydrochlorothiazide can cause hyperglycemia and worsen glycemic control in diabetic patients."
+            },
+            {
+              "stem": "A 58-year-old woman with chronic kidney disease (eGFR 35 mL/min/1.73m²) and hypertension is currently on amlodipine 10 mg daily. Her blood pressure remains elevated at 150/90 mmHg. Which of the following agents would be contraindicated for further blood pressure control?",
+              "options": [
+                "Enalapril",
+                "Furosemide",
+                "Metoprolol",
+                "Valsartan"
+              ],
+              "answer": "Enalapril",
+              "explanation": "ACE inhibitors like enalapril are contraindicated in bilateral renal artery stenosis or severe unilateral stenosis, which may be present in CKD."
+            },
+            {
+              "stem": "A 45-year-old man with a history of myocardial infarction is started on a beta-blocker for secondary prevention. Which of the following beta-blockers is considered cardioselective and preferred in this patient?",
+              "options": [
+                "Atenolol",
+                "Carvedilol",
+                "Labetalol",
+                "Propranolol"
+              ],
+              "answer": "Atenolol",
+              "explanation": "Atenolol is a cardioselective beta-1 blocker with less risk of bronchospasm compared to non-selective agents like propranolol."
+            },
+            {
+              "stem": "A 72-year-old woman with heart failure with reduced ejection fraction (HFrEF) presents with worsening dyspnea and peripheral edema. Her current medications include furosemide and carvedilol. Which of the following agents would be most appropriate to add for further diuresis?",
+              "options": [
+                "Bumetanide",
+                "Hydrochlorothiazide",
+                "Metolazone",
+                "Spironolactone"
+              ],
+              "answer": "Spironolactone",
+              "explanation": "Spironolactone is a potassium-sparing diuretic that reduces mortality in patients with HFrEF when added to standard therapy."
+            },
+            {
+              "stem": "A 60-year-old man with hypertension and benign prostatic hyperplasia (BPH) is started on doxazosin. Which of the following adverse effects is most commonly associated with this agent?",
+              "options": [
+                "Bradycardia",
+                "Hyperkalemia",
+                "Orthostatic hypotension",
+                "Tinnitus"
+              ],
+              "answer": "Orthostatic hypotension",
+              "explanation": "Doxazosin is an alpha-1 blocker that can cause first-dose orthostatic hypotension, especially in elderly patients."
+            },
+            {
+              "stem": "A 55-year-old woman with atrial fibrillation is started on digoxin for rate control. Which of the following electrolyte abnormalities is most likely to increase her risk of digoxin toxicity?",
+              "options": [
+                "Hypercalcemia",
+                "Hyperkalemia",
+                "Hypocalcemia",
+                "Hypokalemia"
+              ],
+              "answer": "Hypokalemia",
+              "explanation": "Hypokalemia enhances digoxin binding to Na+/K+-ATPase, increasing the risk of toxicity (e.g., arrhythmias)."
+            },
+            {
+              "stem": "A 68-year-old man with a history of hypertension and chronic obstructive pulmonary disease (COPD) is admitted with a hypertensive emergency. Which of the following agents would be contraindicated due to its bronchospastic effects?",
+              "options": [
+                "Atenolol",
+                "Captopril",
+                "Nifedipine",
+                "Sodium nitroprusside"
+              ],
+              "answer": "Atenolol",
+              "explanation": "Atenolol is a cardioselective beta-1 blocker but can still cause bronchospasm in COPD patients, making it less ideal in this scenario."
+            },
+            {
+              "stem": "A 40-year-old woman with hypertension is started on losartan. Which of the following is a key advantage of losartan over lisinopril in this patient?",
+              "options": [
+                "Less risk of angioedema",
+                "More potent antihypertensive effect",
+                "No risk of hyperkalemia",
+                "Once-daily dosing"
+              ],
+              "answer": "Less risk of angioedema",
+              "explanation": "ARBs like losartan have a lower risk of angioedema compared to ACE inhibitors like lisinopril."
+            },
+            {
+              "stem": "A 70-year-old man with heart failure with preserved ejection fraction (HFpEF) and hypertension is started on verapamil. Which of the following adverse effects is most likely to occur with this agent?",
+              "options": [
+                "Hypertrichosis",
+                "Peripheral edema",
+                "Reflex tachycardia",
+                "Sinus bradycardia"
+              ],
+              "answer": "Sinus bradycardia",
+              "explanation": "Verapamil is a non-dihydropyridine calcium channel blocker that slows heart rate by depressing AV nodal conduction."
+            },
+            {
+              "stem": "A 50-year-old man with a history of myocardial infarction is started on ticagrelor for secondary prevention. Which of the following is a key advantage of ticagrelor over clopidogrel?",
+              "options": [
+                "Lower risk of bleeding",
+                "More rapid onset of action",
+                "Once-daily dosing",
+                "Reversible binding to P2Y12 receptor"
+              ],
+              "answer": "Reversible binding to P2Y12 receptor",
+              "explanation": "Ticagrelor is a reversible P2Y12 inhibitor, allowing for more predictable platelet inhibition and shorter offset of action."
+            },
+            {
+              "stem": "A 65-year-old woman with hypertension and osteoporosis is started on hydrochlorothiazide. Which of the following laboratory abnormalities is most likely to occur with this agent?",
+              "options": [
+                "Hypercalcemia",
+                "Hyperkalemia",
+                "Hyperuricemia",
+                "Hyponatremia"
+              ],
+              "answer": "Hyperuricemia",
+              "explanation": "Thiazide diuretics like hydrochlorothiazide can increase uric acid levels, precipitating gout in susceptible individuals."
+            },
+            {
+              "stem": "A 55-year-old man with hypertension and chronic kidney disease (eGFR 25 mL/min/1.73m²) is started on furosemide. Which of the following is a key monitoring parameter for this patient?",
+              "options": [
+                "Calcium levels",
+                "Magnesium levels",
+                "Phosphate levels",
+                "Potassium levels"
+              ],
+              "answer": "Potassium levels",
+              "explanation": "Loop diuretics like furosemide increase potassium excretion, increasing the risk of hypokalemia, especially in CKD."
+            },
+            {
+              "stem": "A 45-year-old woman with hypertension is started on amlodipine. Which of the following adverse effects is most commonly associated with this agent?",
+              "options": [
+                "Bradycardia",
+                "Constipation",
+                "Peripheral edema",
+                "Tinnitus"
+              ],
+              "answer": "Peripheral edema",
+              "explanation": "Amlodipine, a dihydropyridine calcium channel blocker, commonly causes peripheral edema due to preferential dilation of precapillary arterioles."
+            },
+            {
+              "stem": "A 60-year-old man with hypertension and type 2 diabetes mellitus is started on perindopril. Which of the following is a key renal protective effect of this agent?",
+              "options": [
+                "Decreased glomerular filtration rate",
+                "Increased proteinuria",
+                "Reduced intraglomerular pressure",
+                "Worsening renal function"
+              ],
+              "answer": "Reduced intraglomerular pressure",
+              "explanation": "ACE inhibitors like perindopril reduce intraglomerular pressure by dilating efferent arterioles, slowing diabetic nephropathy progression."
+            },
+            {
+              "stem": "A 75-year-old woman with hypertension and atrial fibrillation is started on diltiazem for rate control. Which of the following is a key advantage of diltiazem over metoprolol in this patient?",
+              "options": [
+                "Less risk of bronchospasm",
+                "More potent negative inotropic effect",
+                "Once-daily dosing",
+                "Reduced risk of bradycardia"
+              ],
+              "answer": "Less risk of bronchospasm",
+              "explanation": "Diltiazem is a non-dihydropyridine calcium channel blocker with less risk of bronchospasm compared to beta-blockers like metoprolol."
+            },
+            {
+              "stem": "A 50-year-old man with hypertension is started on spironolactone. Which of the following is a key adverse effect of this agent?",
+              "options": [
+                "Hypercalcemia",
+                "Hyperkalemia",
+                "Hypoglycemia",
+                "Hypouricemia"
+              ],
+              "answer": "Hyperkalemia",
+              "explanation": "Spironolactone is a potassium-sparing diuretic that can cause hyperkalemia, especially when combined with ACE inhibitors or ARBs."
+            },
+            {
+              "stem": "A 65-year-old woman with hypertension and heart failure with reduced ejection fraction (HFrEF) is started on sacubitril/valsartan. Which of the following is a key mechanism of action of this combination?",
+              "options": [
+                "ACE inhibition and beta-1 blockade",
+                "Angiotensin II receptor blockade and neprilysin inhibition",
+                "Calcium channel blockade and diuresis",
+                "Direct renin inhibition and vasodilation"
+              ],
+              "answer": "Angiotensin II receptor blockade and neprilysin inhibition",
+              "explanation": "Sacubitril/valsartan combines an ARB (valsartan) with a neprilysin inhibitor (sacubitril) to enhance natriuretic peptide effects."
+            },
+            {
+              "stem": "A 40-year-old man with hypertension is started on clonidine. Which of the following is a key adverse effect of this agent?",
+              "options": [
+                "Bradycardia",
+                "Hypertrichosis",
+                "Rebound hypertension",
+                "Tinnitus"
+              ],
+              "answer": "Rebound hypertension",
+              "explanation": "Clonidine can cause rebound hypertension upon abrupt discontinuation due to upregulation of alpha-2 receptors."
+            },
+            {
+              "stem": "A 55-year-old woman with hypertension and chronic kidney disease (eGFR 40 mL/min/1.73m²) is started on irbesartan. Which of the following is a key advantage of irbesartan over lisinopril in this patient?",
+              "options": [
+                "Less risk of cough",
+                "More potent antihypertensive effect",
+                "No risk of hyperkalemia",
+                "Once-daily dosing"
+              ],
+              "answer": "Less risk of cough",
+              "explanation": "ARBs like irbesartan are less likely to cause cough compared to ACE inhibitors like lisinopril."
+            },
+            {
+              "stem": "A 60-year-old man with hypertension and benign prostatic hyperplasia (BPH) is started on terazosin. Which of the following is a key adverse effect of this agent?",
+              "options": [
+                "Bradycardia",
+                "Hyperkalemia",
+                "Orthostatic hypotension",
+                "Tinnitus"
+              ],
+              "answer": "Orthostatic hypotension",
+              "explanation": "Terazosin is an alpha-1 blocker that can cause first-dose orthostatic hypotension, especially in elderly patients."
+            },
+            {
+              "stem": "A 70-year-old woman with hypertension and osteoporosis is started on chlorthalidone. Which of the following laboratory abnormalities is most likely to occur with this agent?",
+              "options": [
+                "Hypercalcemia",
+                "Hyperkalemia",
+                "Hyperuricemia",
+                "Hyponatremia"
+              ],
+              "answer": "Hypercalcemia",
+              "explanation": "Thiazide-like diuretics like chlorthalidone can increase calcium reabsorption, leading to hypercalcemia in susceptible individuals."
+            },
+            {
+              "stem": "A 55-year-old man with hypertension and heart failure with reduced ejection fraction (HFrEF) is started on bisoprolol. Which of the following is a key mechanism of action of this agent?",
+              "options": [
+                "ACE inhibition",
+                "Angiotensin II receptor blockade",
+                "Beta-1 selective blockade",
+                "Calcium channel blockade"
+              ],
+              "answer": "Beta-1 selective blockade",
+              "explanation": "Bisoprolol is a cardioselective beta-1 blocker that reduces heart rate and myocardial oxygen demand in HFrEF."
+            },
+            {
+              "stem": "A 65-year-old woman with hypertension is started on nifedipine. Which of the following adverse effects is most commonly associated with this agent?",
+              "options": [
+                "Bradycardia",
+                "Constipation",
+                "Reflex tachycardia",
+                "Sinus bradycardia"
+              ],
+              "answer": "Reflex tachycardia",
+              "explanation": "Nifedipine, a dihydropyridine calcium channel blocker, can cause reflex tachycardia due to peripheral vasodilation."
+            },
+            {
+              "stem": "A 45-year-old man with hypertension is started on eplerenone. Which of the following is a key advantage of eplerenone over spironolactone?",
+              "options": [
+                "Less risk of gynecomastia",
+                "More potent diuretic effect",
+                "Once-daily dosing",
+                "Reduced risk of hyperkalemia"
+              ],
+              "answer": "Less risk of gynecomastia",
+              "explanation": "Eplerenone is a selective aldosterone antagonist with less risk of endocrine adverse effects like gynecomastia compared to spironolactone."
+            },
+            {
+              "stem": "A 70-year-old man with hypertension and chronic kidney disease (eGFR 30 mL/min/1.73m²) is started on furosemide. Which of the following is a key monitoring parameter for this patient?",
+              "options": [
+                "Calcium levels",
+                "Magnesium levels",
+                "Phosphate levels",
+                "Uric acid levels"
+              ],
+              "answer": "Magnesium levels",
+              "explanation": "Loop diuretics like furosemide increase magnesium excretion, increasing the risk of hypomagnesemia, especially in CKD."
+            },
+            {
+              "stem": "A 50-year-old woman with hypertension is started on nebivolol. Which of the following is a key advantage of nebivolol over metoprolol?",
+              "options": [
+                "Less risk of bronchospasm",
+                "More potent negative inotropic effect",
+                "Nitric oxide-mediated vasodilation",
+                "Once-daily dosing"
+              ],
+              "answer": "Nitric oxide-mediated vasodilation",
+              "explanation": "Nebivolol has additional nitric oxide-mediated vasodilatory effects, which may improve endothelial function."
+            },
+            {
+              "stem": "A 65-year-old man with hypertension and heart failure with reduced ejection fraction (HFrEF) is started on carvedilol. Which of the following is a key mechanism of action of this agent?",
+              "options": [
+                "ACE inhibition",
+                "Angiotensin II receptor blockade",
+                "Non-selective beta blockade with alpha-1 blockade",
+                "Selective beta-1 blockade"
+              ],
+              "answer": "Non-selective beta blockade with alpha-1 blockade",
+              "explanation": "Carvedilol is a non-selective beta blocker with additional alpha-1 blocking effects, which may improve outcomes in HFrEF."
+            },
+            {
+              "stem": "A 55-year-old woman with hypertension is started on indapamide. Which of the following is a key advantage of indapamide over hydrochlorothiazide?",
+              "options": [
+                "Less risk of hypokalemia",
+                "More potent antihypertensive effect",
+                "Once-daily dosing",
+                "Reduced risk of hyperuricemia"
+              ],
+              "answer": "More potent antihypertensive effect",
+              "explanation": "Indapamide is a thiazide-like diuretic with a longer duration of action and more potent antihypertensive effects than hydrochlorothiazide."
+            },
+            {
+              "stem": "A 70-year-old man with hypertension and atrial fibrillation is started on digoxin for rate control. Which of the following is a key monitoring parameter for this patient?",
+              "options": [
+                "Calcium levels",
+                "Magnesium levels",
+                "Potassium levels",
+                "Sodium levels"
+              ],
+              "answer": "Potassium levels",
+              "explanation": "Hypokalemia increases the risk of digoxin toxicity, so potassium levels must be closely monitored in patients on digoxin."
+            },
+            {
+              "stem": "A 45-year-old man with hypertension is started on prazosin. Which of the following is a key adverse effect of this agent?",
+              "options": [
+                "Bradycardia",
+                "Hyperkalemia",
+                "Orthostatic hypotension",
+                "Tinnitus"
+              ],
+              "answer": "Orthostatic hypotension",
+              "explanation": "Prazosin is an alpha-1 blocker that can cause first-dose orthostatic hypotension, especially in elderly patients."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 68-year-old man with a history of hypertension and type 2 diabetes mellitus presents with a blood pressure of 160/95 mmHg. He is currently on metformin and atorvastatin.",
+              "modelAnswer": {
+                "a": "Recommended antihypertensive agent: Perindopril (ACE inhibitor).",
+                "b": "Other clinical applications of perindopril: Heart failure with reduced or preserved ejection fraction, coronary artery disease/stable angina, post-myocardial infarction.",
+                "c": "Side effects to monitor: Dry cough, hyperkalemia, angioedema, worsening renal function."
+              }
+            },
+            {
+              "stem": "Compare and contrast the mechanisms of action of aspirin as an antiplatelet agent versus its anti-inflammatory effects.",
+              "modelAnswer": {
+                "Antiplatelet effect": "Irreversibly inhibits cyclooxygenase-1 (COX-1) in platelets, reducing thromboxane A2 synthesis and platelet aggregation.",
+                "Anti-inflammatory effect": "Inhibits COX-1 and COX-2 in peripheral tissues, reducing prostaglandin and prostacyclin synthesis, leading to anti-inflammatory, analgesic, and antipyretic effects."
+              }
+            },
+            {
+              "stem": "Identify TWO fibrinolytic drugs and TWO antifibrinolytic drugs. Describe their mechanisms of action.",
+              "modelAnswer": {
+                "Fibrinolytic drugs": "1. Alteplase: Recombinant tissue plasminogen activator (tPA) that converts plasminogen to plasmin, promoting fibrinolysis. 2. Reteplase: Modified tPA with longer half-life, enhancing fibrinolytic activity.",
+                "Antifibrinolytic drugs": "1. Tranexamic acid: Competitively inhibits plasminogen activation, preventing fibrin degradation. 2. Aminocaproic acid: Similar to tranexamic acid, inhibits plasminogen activation."
+              }
+            },
+            {
+              "stem": "A 55-year-old woman with a history of myocardial infarction is started on atorvastatin. Outline THREE clinical applications and THREE side effects of atorvastatin.",
+              "modelAnswer": {
+                "Clinical applications": "1. Primary prevention of atherosclerotic cardiovascular disease (ASCVD) in high-risk patients. 2. Secondary prevention in patients with established ASCVD. 3. Reducing LDL cholesterol in familial hypercholesterolemia.",
+                "Side effects": "1. Myalgia and myopathy (including rhabdomyolysis). 2. Hepatotoxicity (elevated liver enzymes). 3. Gastrointestinal disturbances (nausea, diarrhea)."
+              }
+            },
+            {
+              "stem": "Propose TWO drugs that can be used for the management of microcytic hypochromic anemia. Describe their mechanisms of action.",
+              "modelAnswer": {
+                "1. Ferrous sulfate: Provides elemental iron, which is absorbed in the duodenum and incorporated into hemoglobin synthesis in erythroid precursors. 2. Ferrous gluconate: Similar to ferrous sulfate, provides elemental iron for hemoglobin synthesis.": "2"
+              }
+            },
+            {
+              "stem": "Describe the different types of angina and recommend a drug for the management of each type.",
+              "modelAnswer": {
+                "Stable angina": "Beta-blockers (e.g., metoprolol) or calcium channel blockers (e.g., diltiazem) to reduce myocardial oxygen demand.",
+                "Unstable angina": "Antiplatelet agents (e.g., aspirin, clopidogrel) and anticoagulants (e.g., heparin) to prevent thrombus formation.",
+                "Variant (Prinzmetal) angina": "Calcium channel blockers (e.g., nifedipine) or nitrates to relieve coronary artery spasm."
+              }
+            },
+            {
+              "stem": "A 70-year-old woman with hypertension and chronic kidney disease (eGFR 30 mL/min/1.73m²) is started on spironolactone.",
+              "modelAnswer": {
+                "a": "Key monitoring parameters: Serum potassium, renal function (creatinine, eGFR), and magnesium levels.",
+                "b": "Key adverse effects: Hyperkalemia, gynecomastia, and worsening renal function.",
+                "c": "Drug interactions: ACE inhibitors or ARBs (increased risk of hyperkalemia), potassium supplements (increased risk of hyperkalemia)."
+              }
+            },
+            {
+              "stem": "A 65-year-old man with hypertension and heart failure with reduced ejection fraction (HFrEF) is started on sacubitril/valsartan.",
+              "modelAnswer": {
+                "a": "Key mechanism of action: Angiotensin II receptor blockade (valsartan) and neprilysin inhibition (sacubitril), enhancing natriuretic peptide effects.",
+                "b": "Key advantages over ACE inhibitors: Lower risk of cough and angioedema, improved mortality in HFrEF.",
+                "c": "Key monitoring parameters: Blood pressure, renal function, potassium levels, and signs of angioedema."
+              }
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 72-year-old man presents to the emergency department with a blood pressure of 220/120 mmHg, severe headache, and blurred vision. He has a history of hypertension and chronic kidney disease (eGFR 45 mL/min/1.73m²).",
+              "modelAnswer": {
+                "a": "Pharmaceutical plan:\n1. Sodium nitroprusside (IV) for rapid blood pressure reduction.\n2. Labetalol (IV) for additional blood pressure control and heart rate management.\n3. Furosemide (IV) for diuresis and volume reduction.\n4. Aspirin (oral) for antiplatelet effect.\n5. Atorvastatin (oral) for lipid lowering and plaque stabilization.\n6. Oxygen therapy for symptom relief.",
+                "b": "Mechanisms of action:\n1. Sodium nitroprusside: Direct-acting vasodilator that releases nitric oxide, causing arterial and venous dilation.\n2. Labetalol: Non-selective beta-blocker with alpha-1 blocking effects, reducing heart rate and blood pressure.\n3. Furosemide: Loop diuretic that inhibits the Na+/K+/2Cl- cotransporter in the thick ascending limb of the loop of Henle, promoting diuresis.\n4. Aspirin: Irreversibly inhibits COX-1 in platelets, reducing thromboxane A2 synthesis and platelet aggregation.\n5. Atorvastatin: HMG-CoA reductase inhibitor, reducing cholesterol synthesis and LDL levels.\n6. Oxygen: Improves oxygen delivery to tissues, reducing hypoxia-related symptoms.",
+                "c": "Side effects to monitor:\n1. Sodium nitroprusside: Cyanide toxicity, hypotension, reflex tachycardia.\n2. Labetalol: Bradycardia, bronchospasm, hypotension.\n3. Furosemide: Hypokalemia, hypomagnesemia, ototoxicity.\n4. Aspirin: Bleeding, gastrointestinal irritation, tinnitus.\n5. Atorvastatin: Myalgia, hepatotoxicity, gastrointestinal disturbances.\n6. Oxygen: Oxygen toxicity (with prolonged high-dose use), respiratory depression."
+              }
+            },
+            {
+              "stem": "A 55-year-old woman is admitted to the hospital with a diagnosis of deep venous thrombosis (DVT). She has no history of bleeding disorders or recent surgery.",
+              "modelAnswer": {
+                "a": "Recommended drug: Enoxaparin (low-molecular-weight heparin).",
+                "b": "Mechanism of action: Binds to antithrombin III, enhancing its inhibition of activated factor X (Xa) and thrombin (factor IIa), preventing thrombus formation.",
+                "c": "Antidote: Protamine sulfate.",
+                "d": "Mechanism of action: Binds to heparin and enoxaparin, forming a stable complex that neutralizes their anticoagulant effects.",
+                "e": "Recommended drug for discharge: Apixaban (direct oral anticoagulant).",
+                "f": "Mechanism of action: Directly inhibits activated factor X (Xa), preventing thrombin formation and thrombus development.",
+                "g": "Side effects of apixaban:\n1. Bleeding (including gastrointestinal and intracranial hemorrhage).\n2. Bruising and easy bleeding.\n3. Nausea and vomiting.\n4. Anemia.",
+                "h": "Drug-drug interactions with apixaban:\n1. CYP3A4 inhibitors (e.g., ketoconazole, ritonavir): Increase apixaban levels, increasing bleeding risk.\n2. CYP3A4 inducers (e.g., rifampin, carbamazepine): Decrease apixaban levels, reducing efficacy."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Cardiovascular & Renal Pharmacology",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 68-year-old man with a history of hypertension and type 2 diabetes presents with a blood pressure of 180/110 mmHg and a serum creatinine of 2.3 mg/dL. Which of the following antihypertensive agents is contraindicated in this patient due to its potential to worsen renal function?",
+              "options": [
+                "Amlodipine",
+                "Lisinopril",
+                "Losartan",
+                "Hydrochlorothiazide"
+              ],
+              "answer": "Hydrochlorothiazide",
+              "explanation": "Thiazide diuretics are less effective in patients with significant renal impairment (eGFR <30 mL/min) and may worsen renal function."
+            },
+            {
+              "stem": "A 55-year-old woman with chronic stable angina is started on a new antihypertensive medication. She develops a persistent dry cough that does not improve with cough suppressants. Which of the following medications is most likely responsible?",
+              "options": [
+                "Amlodipine",
+                "Lisinopril",
+                "Metoprolol",
+                "Hydrochlorothiazide"
+              ],
+              "answer": "Lisinopril",
+              "explanation": "ACE inhibitors such as lisinopril are commonly associated with a dry, persistent cough due to increased bradykinin levels."
+            },
+            {
+              "stem": "A 72-year-old man with heart failure with reduced ejection fraction (HFrEF) is prescribed a medication that inhibits the sodium-potassium ATPase pump in cardiac myocytes. Which of the following adverse effects is most likely to occur with this drug?",
+              "options": [
+                "Hyperkalemia",
+                "Hypotension",
+                "Bradycardia",
+                "Visual disturbances"
+              ],
+              "answer": "Visual disturbances",
+              "explanation": "Digoxin, which inhibits the Na+/K+ ATPase pump, can cause visual disturbances (e.g., yellow-green halos) as a classic sign of toxicity."
+            },
+            {
+              "stem": "A 45-year-old man with atrial fibrillation is started on a rate-control medication. He develops severe bradycardia and hypotension. Which of the following drugs is most likely responsible?",
+              "options": [
+                "Verapamil",
+                "Nifedipine",
+                "Amlodipine",
+                "Diltiazem"
+              ],
+              "answer": "Verapamil",
+              "explanation": "Verapamil is a non-dihydropyridine calcium channel blocker with strong negative chronotropic and inotropic effects, increasing the risk of bradycardia and hypotension."
+            },
+            {
+              "stem": "A 60-year-old woman with hypertension and chronic kidney disease (eGFR 45 mL/min) is prescribed an antihypertensive agent. After 2 weeks, her serum potassium increases to 5.8 mEq/L. Which of the following medications is most likely responsible?",
+              "options": [
+                "Lisinopril",
+                "Losartan",
+                "Spironolactone",
+                "Hydrochlorothiazide"
+              ],
+              "answer": "Spironolactone",
+              "explanation": "Spironolactone is a potassium-sparing diuretic that can cause hyperkalemia, particularly in patients with renal impairment or those taking ACE inhibitors/ARBs."
+            },
+            {
+              "stem": "A 50-year-old man with a history of myocardial infarction is prescribed a medication to reduce his risk of recurrent cardiovascular events. He develops flushing, pruritus, and gastrointestinal discomfort. Which of the following drugs is most likely responsible?",
+              "options": [
+                "Atorvastatin",
+                "Ezetimibe",
+                "Niacin",
+                "Cholestyramine"
+              ],
+              "answer": "Niacin",
+              "explanation": "Niacin commonly causes flushing, pruritus, and gastrointestinal discomfort due to prostaglandin-mediated vasodilation."
+            },
+            {
+              "stem": "A 75-year-old woman with atrial fibrillation is started on an anticoagulant. She develops severe bleeding and requires reversal. Which of the following agents is the antidote for dabigatran?",
+              "options": [
+                "Protamine sulfate",
+                "Vitamin K",
+                "Idarucizumab",
+                "Fresh frozen plasma"
+              ],
+              "answer": "Idarucizumab",
+              "explanation": "Idarucizumab is a specific reversal agent for dabigatran, a direct thrombin inhibitor."
+            },
+            {
+              "stem": "A 62-year-old man with hypertension and benign prostatic hyperplasia is prescribed an antihypertensive agent that also improves urinary symptoms. Which of the following drugs is most likely responsible?",
+              "options": [
+                "Doxazosin",
+                "Amlodipine",
+                "Lisinopril",
+                "Metoprolol"
+              ],
+              "answer": "Doxazosin",
+              "explanation": "Doxazosin is an alpha-1 blocker that lowers blood pressure and relieves urinary symptoms in benign prostatic hyperplasia."
+            },
+            {
+              "stem": "A 58-year-old woman with hypertension and osteoporosis is prescribed a thiazide diuretic. Which of the following laboratory abnormalities is most likely to occur?",
+              "options": [
+                "Hypercalcemia",
+                "Hypocalcemia",
+                "Hyperkalemia",
+                "Hypokalemia"
+              ],
+              "answer": "Hypercalcemia",
+              "explanation": "Thiazide diuretics increase calcium reabsorption in the distal tubule, leading to hypercalcemia in susceptible individuals."
+            },
+            {
+              "stem": "A 40-year-old man with a history of deep vein thrombosis is started on an anticoagulant. He develops heparin-induced thrombocytopenia (HIT). Which of the following drugs should be used as an alternative?",
+              "options": [
+                "Warfarin",
+                "Dabigatran",
+                "Argatroban",
+                "Clopidogrel"
+              ],
+              "answer": "Argatroban",
+              "explanation": "Argatroban is a direct thrombin inhibitor used as an alternative in patients with HIT."
+            },
+            {
+              "stem": "A 65-year-old man with heart failure with preserved ejection fraction (HFpEF) is prescribed a medication that reduces preload and afterload. Which of the following drugs is most appropriate?",
+              "options": [
+                "Furosemide",
+                "Spironolactone",
+                "Enalapril",
+                "Digoxin"
+              ],
+              "answer": "Enalapril",
+              "explanation": "ACE inhibitors like enalapril reduce preload and afterload by blocking angiotensin II formation, improving symptoms in HFpEF."
+            },
+            {
+              "stem": "A 55-year-old woman with hypertension and chronic kidney disease (eGFR 35 mL/min) is prescribed an antihypertensive agent. She develops a persistent dry cough. Which of the following medications is most likely responsible?",
+              "options": [
+                "Losartan",
+                "Amlodipine",
+                "Hydrochlorothiazide",
+                "Furosemide"
+              ],
+              "answer": "Losartan",
+              "explanation": "Losartan is an ARB that does not cause cough as frequently as ACE inhibitors, making it a suitable alternative in patients intolerant to ACE inhibitors."
+            },
+            {
+              "stem": "A 70-year-old man with hypertension and chronic obstructive pulmonary disease (COPD) is prescribed an antihypertensive agent. He develops bronchospasm. Which of the following drugs is most likely responsible?",
+              "options": [
+                "Metoprolol",
+                "Amlodipine",
+                "Losartan",
+                "Hydrochlorothiazide"
+              ],
+              "answer": "Metoprolol",
+              "explanation": "Non-selective beta-blockers like propranolol can exacerbate bronchospasm in patients with COPD, while cardioselective beta-blockers like metoprolol are less likely to cause this effect."
+            },
+            {
+              "stem": "A 60-year-old woman with hypertension and hyperlipidemia is prescribed a medication that inhibits HMG-CoA reductase. Which of the following adverse effects is most likely to occur?",
+              "options": [
+                "Hypoglycemia",
+                "Myopathy",
+                "Hyperkalemia",
+                "Bradycardia"
+              ],
+              "answer": "Myopathy",
+              "explanation": "Statins, which inhibit HMG-CoA reductase, can cause myopathy, including rhabdomyolysis, as a serious adverse effect."
+            },
+            {
+              "stem": "A 50-year-old man with a history of myocardial infarction is prescribed a medication to reduce his risk of recurrent events. He develops a persistent cough and angioedema. Which of the following drugs is most likely responsible?",
+              "options": [
+                "Clopidogrel",
+                "Atorvastatin",
+                "Lisinopril",
+                "Metoprolol"
+              ],
+              "answer": "Lisinopril",
+              "explanation": "ACE inhibitors like lisinopril can cause angioedema and a persistent cough due to increased bradykinin levels."
+            },
+            {
+              "stem": "A 72-year-old woman with hypertension and atrial fibrillation is prescribed a rate-control medication. She develops QT prolongation and torsades de pointes. Which of the following drugs is most likely responsible?",
+              "options": [
+                "Amiodarone",
+                "Digoxin",
+                "Metoprolol",
+                "Diltiazem"
+              ],
+              "answer": "Amiodarone",
+              "explanation": "Amiodarone is a class III antiarrhythmic that prolongs the QT interval, increasing the risk of torsades de pointes."
+            },
+            {
+              "stem": "A 65-year-old man with hypertension and chronic kidney disease (eGFR 25 mL/min) is prescribed a loop diuretic. Which of the following laboratory abnormalities is most likely to occur?",
+              "options": [
+                "Hyperkalemia",
+                "Hypokalemia",
+                "Hypercalcemia",
+                "Hypocalcemia"
+              ],
+              "answer": "Hypokalemia",
+              "explanation": "Loop diuretics like furosemide increase potassium excretion, leading to hypokalemia, especially in patients with renal impairment."
+            },
+            {
+              "stem": "A 55-year-old woman with hypertension and osteoporosis is prescribed a thiazide diuretic. Which of the following laboratory abnormalities is most likely to occur?",
+              "options": [
+                "Hypercalcemia",
+                "Hypocalcemia",
+                "Hyperkalemia",
+                "Hypokalemia"
+              ],
+              "answer": "Hypercalcemia",
+              "explanation": "Thiazide diuretics increase calcium reabsorption in the distal tubule, leading to hypercalcemia in susceptible individuals."
+            },
+            {
+              "stem": "A 60-year-old man with hypertension and benign prostatic hyperplasia is prescribed an antihypertensive agent that also improves urinary symptoms. Which of the following drugs is most likely responsible?",
+              "options": [
+                "Doxazosin",
+                "Amlodipine",
+                "Lisinopril",
+                "Metoprolol"
+              ],
+              "answer": "Doxazosin",
+              "explanation": "Doxazosin is an alpha-1 blocker that lowers blood pressure and relieves urinary symptoms in benign prostatic hyperplasia."
+            },
+            {
+              "stem": "A 70-year-old woman with hypertension and chronic kidney disease (eGFR 30 mL/min) is prescribed an antihypertensive agent. She develops hyperkalemia. Which of the following medications is most likely responsible?",
+              "options": [
+                "Lisinopril",
+                "Losartan",
+                "Spironolactone",
+                "Hydrochlorothiazide"
+              ],
+              "answer": "Spironolactone",
+              "explanation": "Spironolactone is a potassium-sparing diuretic that can cause hyperkalemia, particularly in patients with renal impairment or those taking ACE inhibitors/ARBs."
+            },
+            {
+              "stem": "A 55-year-old man with a history of myocardial infarction is prescribed a medication to reduce his risk of recurrent cardiovascular events. He develops flushing, pruritus, and gastrointestinal discomfort. Which of the following drugs is most likely responsible?",
+              "options": [
+                "Atorvastatin",
+                "Ezetimibe",
+                "Niacin",
+                "Cholestyramine"
+              ],
+              "answer": "Niacin",
+              "explanation": "Niacin commonly causes flushing, pruritus, and gastrointestinal discomfort due to prostaglandin-mediated vasodilation."
+            },
+            {
+              "stem": "A 68-year-old man with hypertension and type 2 diabetes presents with a blood pressure of 180/110 mmHg and a serum creatinine of 2.3 mg/dL. Which of the following antihypertensive agents is contraindicated in this patient due to its potential to worsen renal function?",
+              "options": [
+                "Amlodipine",
+                "Lisinopril",
+                "Losartan",
+                "Hydrochlorothiazide"
+              ],
+              "answer": "Hydrochlorothiazide",
+              "explanation": "Thiazide diuretics are less effective in patients with significant renal impairment (eGFR <30 mL/min) and may worsen renal function."
+            },
+            {
+              "stem": "A 45-year-old man with atrial fibrillation is started on a rate-control medication. He develops severe bradycardia and hypotension. Which of the following drugs is most likely responsible?",
+              "options": [
+                "Verapamil",
+                "Nifedipine",
+                "Amlodipine",
+                "Diltiazem"
+              ],
+              "answer": "Verapamil",
+              "explanation": "Verapamil is a non-dihydropyridine calcium channel blocker with strong negative chronotropic and inotropic effects, increasing the risk of bradycardia and hypotension."
+            },
+            {
+              "stem": "A 60-year-old woman with hypertension and chronic kidney disease (eGFR 45 mL/min) is prescribed an antihypertensive agent. After 2 weeks, her serum potassium increases to 5.8 mEq/L. Which of the following medications is most likely responsible?",
+              "options": [
+                "Lisinopril",
+                "Losartan",
+                "Spironolactone",
+                "Hydrochlorothiazide"
+              ],
+              "answer": "Spironolactone",
+              "explanation": "Spironolactone is a potassium-sparing diuretic that can cause hyperkalemia, particularly in patients with renal impairment or those taking ACE inhibitors/ARBs."
+            },
+            {
+              "stem": "A 50-year-old man with a history of myocardial infarction is prescribed a medication to reduce his risk of recurrent cardiovascular events. He develops a persistent dry cough and angioedema. Which of the following drugs is most likely responsible?",
+              "options": [
+                "Clopidogrel",
+                "Atorvastatin",
+                "Lisinopril",
+                "Metoprolol"
+              ],
+              "answer": "Lisinopril",
+              "explanation": "ACE inhibitors like lisinopril can cause angioedema and a persistent cough due to increased bradykinin levels."
+            },
+            {
+              "stem": "A 72-year-old woman with hypertension and atrial fibrillation is prescribed a rate-control medication. She develops QT prolongation and torsades de pointes. Which of the following drugs is most likely responsible?",
+              "options": [
+                "Amiodarone",
+                "Digoxin",
+                "Metoprolol",
+                "Diltiazem"
+              ],
+              "answer": "Amiodarone",
+              "explanation": "Amiodarone is a class III antiarrhythmic that prolongs the QT interval, increasing the risk of torsades de pointes."
+            },
+            {
+              "stem": "A 65-year-old man with hypertension and chronic kidney disease (eGFR 25 mL/min) is prescribed a loop diuretic. Which of the following laboratory abnormalities is most likely to occur?",
+              "options": [
+                "Hyperkalemia",
+                "Hypokalemia",
+                "Hypercalcemia",
+                "Hypocalcemia"
+              ],
+              "answer": "Hypokalemia",
+              "explanation": "Loop diuretics like furosemide increase potassium excretion, leading to hypokalemia, especially in patients with renal impairment."
+            },
+            {
+              "stem": "A 58-year-old woman with hypertension and hyperlipidemia is prescribed a medication that inhibits HMG-CoA reductase. Which of the following adverse effects is most likely to occur?",
+              "options": [
+                "Hypoglycemia",
+                "Myopathy",
+                "Hyperkalemia",
+                "Bradycardia"
+              ],
+              "answer": "Myopathy",
+              "explanation": "Statins, which inhibit HMG-CoA reductase, can cause myopathy, including rhabdomyolysis, as a serious adverse effect."
+            },
+            {
+              "stem": "A 40-year-old man with a history of deep vein thrombosis is started on an anticoagulant. He develops heparin-induced thrombocytopenia (HIT). Which of the following drugs should be used as an alternative?",
+              "options": [
+                "Warfarin",
+                "Dabigatran",
+                "Argatroban",
+                "Clopidogrel"
+              ],
+              "answer": "Argatroban",
+              "explanation": "Argatroban is a direct thrombin inhibitor used as an alternative in patients with HIT."
+            },
+            {
+              "stem": "A 65-year-old man with heart failure with preserved ejection fraction (HFpEF) is prescribed a medication that reduces preload and afterload. Which of the following drugs is most appropriate?",
+              "options": [
+                "Furosemide",
+                "Spironolactone",
+                "Enalapril",
+                "Digoxin"
+              ],
+              "answer": "Enalapril",
+              "explanation": "ACE inhibitors like enalapril reduce preload and afterload by blocking angiotensin II formation, improving symptoms in HFpEF."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 65-year-old man with a history of hypertension, type 2 diabetes, and chronic kidney disease (eGFR 40 mL/min) presents with a blood pressure of 160/95 mmHg. His current medications include metformin and atorvastatin.",
+              "modelAnswer": {
+                "a": "Recommended antihypertensive agent: **Losartan** (1 mark).",
+                "b": "Other clinical applications of losartan: (2 marks)\n- Heart failure with reduced ejection fraction (HFrEF).\n- Diabetic nephropathy (reduces proteinuria and slows progression of renal disease).",
+                "c": "Four side effects to monitor: (2 marks)\n1. Hyperkalemia (due to reduced aldosterone secretion).\n2. Hypotension (especially with volume depletion or first-dose effect).\n3. Angioedema (rare but serious).\n4. Dizziness or fatigue (due to blood pressure lowering)."
+              }
+            },
+            {
+              "stem": "Compare and contrast the mechanisms of action of aspirin as an antiplatelet agent versus its mechanism as an anti-inflammatory agent.",
+              "modelAnswer": {
+                "Antiplatelet action": "Irreversibly inhibits cyclooxygenase-1 (COX-1) in platelets, reducing thromboxane A2 synthesis, which prevents platelet aggregation (2 marks).",
+                "Anti-inflammatory action": "Reversibly inhibits cyclooxygenase-1 (COX-1) and cyclooxygenase-2 (COX-2) in peripheral tissues, reducing prostaglandin and prostacyclin synthesis, which decreases inflammation and pain (2 marks)."
+              }
+            },
+            {
+              "stem": "Identify two fibrinolytic drugs and two antifibrinolytic drugs. Describe their mechanisms of action.",
+              "modelAnswer": {
+                "Fibrinolytic drugs": "(4 marks)\n1. **Alteplase**: Recombinant tissue plasminogen activator (tPA) that converts plasminogen to plasmin, which degrades fibrin clots.\n2. **Reteplase**: Modified recombinant tPA with a longer half-life, also activates plasminogen to plasmin to dissolve thrombi.",
+                "Antifibrinolytic drugs": "(4 marks)\n1. **Tranexamic acid**: Competitively inhibits plasminogen activation, preventing fibrin clot breakdown.\n2. **Aprotinin**: Serine protease inhibitor that inactivates plasmin, reducing fibrinolysis."
+              }
+            },
+            {
+              "stem": "A 50-year-old woman with heterozygous familial hypercholesterolemia is prescribed atorvastatin. Outline three clinical applications and three side effects of this medication.",
+              "modelAnswer": {
+                "Clinical applications": "(3 marks)\n1. Primary and secondary prevention of atherosclerotic cardiovascular disease (ASCVD).\n2. Reduction of LDL cholesterol in patients with familial hypercholesterolemia.\n3. Stabilization of atherosclerotic plaques to reduce risk of acute coronary syndromes.",
+                "Side effects": "(3 marks)\n1. Myopathy (including rhabdomyolysis).\n2. Hepatotoxicity (elevated liver enzymes).\n3. Gastrointestinal symptoms (nausea, diarrhea)."
+              }
+            },
+            {
+              "stem": "A 70-year-old man with a history of hypertension and chronic obstructive pulmonary disease (COPD) presents with a blood pressure of 170/90 mmHg. Recommend an appropriate antihypertensive agent and justify your choice.",
+              "modelAnswer": {
+                "Recommended agent": "**Amlodipine** (1 mark).",
+                "Justification": "Amlodipine is a dihydropyridine calcium channel blocker that effectively lowers blood pressure with minimal effect on heart rate or respiratory function, making it suitable for patients with COPD (2 marks).",
+                "Additional monitoring": "Monitor for peripheral edema and hypotension (2 marks)."
+              }
+            },
+            {
+              "stem": "Outline the different types of angina and recommend a drug for the management of each type.",
+              "modelAnswer": {
+                "Types of angina and recommended drugs": "(6 marks)\n1. **Stable angina**: Beta-blockers (e.g., metoprolol) or calcium channel blockers (e.g., diltiazem) to reduce myocardial oxygen demand.\n2. **Unstable angina**: Antiplatelet agents (e.g., aspirin, clopidogrel) and anticoagulants (e.g., enoxaparin) to prevent thrombus formation.\n3. **Variant (Prinzmetal) angina**: Calcium channel blockers (e.g., nifedipine) to prevent coronary artery spasm."
+              }
+            },
+            {
+              "stem": "A 60-year-old woman with a history of hypertension and osteoporosis is prescribed a thiazide diuretic. What laboratory abnormalities should you monitor, and why?",
+              "modelAnswer": {
+                "Laboratory abnormalities to monitor": "(5 marks)\n1. **Hypercalcemia**: Thiazide diuretics increase calcium reabsorption in the distal tubule, which can lead to hypercalcemia, especially in patients with underlying hyperparathyroidism or other risk factors.\n2. **Hypokalemia**: Thiazide diuretics increase potassium excretion, leading to hypokalemia, which can cause muscle weakness, cramps, or cardiac arrhythmias.\n3. **Hyperuricemia**: Thiazide diuretics can increase uric acid levels, precipitating gout in susceptible individuals.\n4. **Hyperglycemia**: Thiazide diuretics can impair glucose tolerance, worsening glycemic control in patients with diabetes or metabolic syndrome.\n5. **Hyponatremia**: Thiazide diuretics can cause sodium loss, leading to hyponatremia, particularly in elderly patients or those with low dietary sodium intake."
+              }
+            },
+            {
+              "stem": "A 55-year-old man with a history of myocardial infarction is prescribed clopidogrel. Describe its mechanism of action and clinical applications.",
+              "modelAnswer": {
+                "Mechanism of action": "Clopidogrel is a prodrug that is metabolized by the liver to an active metabolite, which irreversibly blocks the P2Y12 ADP receptor on platelets, preventing platelet aggregation (2 marks).",
+                "Clinical applications": "(3 marks)\n1. Secondary prevention of cardiovascular events (e.g., myocardial infarction, stroke) in patients with established ASCVD.\n2. Prevention of stent thrombosis in patients undergoing percutaneous coronary intervention (PCI).\n3. Alternative antiplatelet therapy in patients intolerant to aspirin."
+              }
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 70-year-old Kenyan man presents to the hospital with a blood pressure of 190/110 mmHg and acute pulmonary edema. He has a history of hypertension, type 2 diabetes, and chronic kidney disease (eGFR 35 mL/min). He is diagnosed with acute decompensated heart failure (ADHF) and ST-elevation myocardial infarction (STEMI).",
+              "modelAnswer": {
+                "a": "Pharmaceutical plan for this patient: (3 marks)\n1. **Furosemide** (loop diuretic) for acute relief of pulmonary edema.\n2. **Nitroglycerin** (sublingual or intravenous) for preload and afterload reduction.\n3. **Morphine** for pain relief and anxiolysis.\n4. **Aspirin** (chewable) for antiplatelet therapy.\n5. **Clopidogrel** for dual antiplatelet therapy.\n6. **Enalapril** (or another ACE inhibitor) for afterload reduction and long-term management.",
+                "b": "Mode of action of the six drugs: (8 marks)\n1. **Furosemide**: Inhibits the Na+/K+/2Cl- cotransporter in the thick ascending limb of the loop of Henle, increasing urine output and reducing preload.\n2. **Nitroglycerin**: Metabolized to nitric oxide (NO), which activates guanylate cyclase, increasing cGMP levels in vascular smooth muscle, leading to vasodilation and reduced preload/afterload.\n3. **Morphine**: Binds to opioid receptors in the central nervous system, reducing pain perception and anxiety, and causing venodilation (reducing preload).\n4. **Aspirin**: Irreversibly inhibits cyclooxygenase-1 (COX-1) in platelets, reducing thromboxane A2 synthesis and preventing platelet aggregation.\n5. **Clopidogrel**: Irreversibly blocks the P2Y12 ADP receptor on platelets, preventing platelet aggregation and reducing the risk of thrombus formation.\n6. **Enalapril**: Inhibits angiotensin-converting enzyme (ACE), reducing angiotensin II formation, which decreases vasoconstriction, aldosterone secretion, and sympathetic activity, leading to vasodilation and reduced afterload.",
+                "c": "Two side effects for each drug to monitor: (4 marks)\n1. **Furosemide**: Hypokalemia, ototoxicity (with high doses), hypotension, renal impairment.\n2. **Nitroglycerin**: Headache, hypotension, reflex tachycardia, methemoglobinemia (with high doses).\n3. **Morphine**: Respiratory depression, hypotension, sedation, nausea/vomiting.\n4. **Aspirin**: Gastrointestinal bleeding, peptic ulcer disease, tinnitus (with high doses), bronchospasm (in sensitive individuals).\n5. **Clopidogrel**: Bleeding, thrombotic thrombocytopenic purpura (TTP), gastrointestinal upset.\n6. **Enalapril**: Hyperkalemia, dry cough, angioedema, hypotension."
+              }
+            },
+            {
+              "stem": "A 45-year-old woman is admitted to the hospital with a diagnosis of deep vein thrombosis (DVT) in her left calf. She has no history of bleeding disorders or recent surgery. Her serum creatinine is 1.1 mg/dL (normal range: 0.6–1.2 mg/dL).",
+              "modelAnswer": {
+                "a": "Drug recommended for this patient: **Enoxaparin** (1 mark).",
+                "b": "Mechanism of action of enoxaparin: (2 marks)\nEnoxaparin is a low-molecular-weight heparin (LMWH) that binds to antithrombin III, enhancing its ability to inhibit activated factor X (factor Xa) and, to a lesser extent, thrombin (factor IIa), thereby preventing clot formation.",
+                "c": "Antidote for bleeding caused by enoxaparin: **Protamine sulfate** (1 mark).",
+                "d": "Mechanism of action of protamine sulfate: (2 marks)\nProtamine sulfate is a positively charged peptide that binds to the negatively charged heparin molecule, forming a stable complex that neutralizes its anticoagulant activity.",
+                "e": "Drug recommended for discharge: **Apixaban** (1 mark).",
+                "f": "Mechanism of action of apixaban: (2 marks)\nApixaban is a direct oral anticoagulant (DOAC) that selectively inhibits activated factor X (factor Xa), preventing thrombin formation and clot development.",
+                "g": "Four side effects of apixaban to monitor: (2 marks)\n1. Bleeding (e.g., gastrointestinal, intracranial).\n2. Anemia (due to chronic blood loss).\n3. Nausea or dyspepsia.\n4. Elevated liver enzymes (rare).",
+                "h": "Two drug-drug interactions with apixaban: (4 marks)\n1. **Strong CYP3A4 inhibitors** (e.g., ketoconazole, ritonavir): Increase apixaban levels, increasing bleeding risk.\n2. **Strong CYP3A4 inducers** (e.g., rifampin, carbamazepine): Decrease apixaban levels, reducing efficacy and increasing thrombotic risk."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1195 @@
+{
+  "cp-new-cvs-renal": {
+    "1": {
+      "title": "Cardiovascular & Renal Therapeutics",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 62-year-old man with hypertension and type 2 diabetes mellitus presents with a blood pressure of 158/94 mmHg. According to WHO/KDI guidelines, what is the recommended target blood pressure for this patient?",
+              "options": [
+                "Less than 140/90 mmHg",
+                "Less than 130/80 mmHg",
+                "Less than 120/80 mmHg",
+                "Less than 150/90 mmHg"
+              ],
+              "answer": "Less than 130/80 mmHg",
+              "explanation": "WHO/KDI guidelines recommend a target blood pressure of <130/80 mmHg for patients with hypertension and diabetes mellitus to reduce microvascular complications."
+            },
+            {
+              "stem": "Which of the following antihypertensive drug classes is contraindicated in a patient with bilateral renal artery stenosis?",
+              "options": [
+                "Thiazide diuretics",
+                "Angiotensin-converting enzyme inhibitors (ACEIs)",
+                "Calcium channel blockers (CCBs)",
+                "Beta-blockers"
+              ],
+              "answer": "Angiotensin-converting enzyme inhibitors (ACEIs)",
+              "explanation": "ACEIs are contraindicated in bilateral renal artery stenosis due to the risk of acute kidney injury from reduced glomerular filtration pressure."
+            },
+            {
+              "stem": "A 58-year-old woman with heart failure with reduced ejection fraction (HFrEF) is prescribed carvedilol. Which of the following is the primary mechanism of action of carvedilol in this patient?",
+              "options": [
+                "Inhibition of the renin-angiotensin-aldosterone system (RAAS)",
+                "Non-selective beta-blockade with alpha-1 blockade",
+                "Inhibition of the sodium-potassium-chloride cotransporter in the loop of Henle",
+                "Inhibition of the sodium-chloride cotransporter in the distal convoluted tubule"
+              ],
+              "answer": "Non-selective beta-blockade with alpha-1 blockade",
+              "explanation": "Carvedilol is a non-selective beta-blocker with additional alpha-1 blocking properties, which contributes to its beneficial effects in heart failure."
+            },
+            {
+              "stem": "Which of the following is the most appropriate initial therapy for a patient with acute pulmonary edema due to heart failure?",
+              "options": [
+                "Intravenous furosemide",
+                "Intravenous digoxin",
+                "Oral spironolactone",
+                "Subcutaneous enoxaparin"
+              ],
+              "answer": "Intravenous furosemide",
+              "explanation": "Intravenous furosemide is the drug of choice for rapid relief of symptoms in acute pulmonary edema due to its potent diuretic effect."
+            },
+            {
+              "stem": "A 70-year-old man with chronic kidney disease (CKD) stage 4 (eGFR 25 mL/min/1.73m²) is prescribed atorvastatin. Which of the following is the most appropriate starting dose of atorvastatin in this patient?",
+              "options": [
+                "10 mg daily",
+                "20 mg daily",
+                "40 mg daily",
+                "80 mg daily"
+              ],
+              "answer": "20 mg daily",
+              "explanation": "In CKD stage 4, the starting dose of atorvastatin should be reduced to 20 mg daily due to increased risk of myopathy and reduced drug clearance."
+            },
+            {
+              "stem": "Which of the following is the most common adverse effect of thiazide diuretics?",
+              "options": [
+                "Hyperkalemia",
+                "Hypokalemia",
+                "Hypercalcemia",
+                "Hypocalcemia"
+              ],
+              "answer": "Hypokalemia",
+              "explanation": "Thiazide diuretics increase potassium excretion in the distal tubule, leading to hypokalemia as a common adverse effect."
+            },
+            {
+              "stem": "A 65-year-old woman with atrial fibrillation is prescribed dabigatran for stroke prevention. Which of the following is the recommended reversal agent for dabigatran in case of life-threatening bleeding?",
+              "options": [
+                "Protamine sulfate",
+                "Vitamin K",
+                "Idarucizumab",
+                "Fresh frozen plasma"
+              ],
+              "answer": "Idarucizumab",
+              "explanation": "Idarucizumab is a specific reversal agent for dabigatran, approved for reversing its anticoagulant effect in emergency situations."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism of action of amiodarone in the treatment of ventricular arrhythmias?",
+              "options": [
+                "Sodium channel blockade (Class I)",
+                "Beta-adrenergic blockade (Class II)",
+                "Potassium channel blockade (Class III)",
+                "Calcium channel blockade (Class IV)"
+              ],
+              "answer": "Potassium channel blockade (Class III)",
+              "explanation": "Amiodarone primarily acts as a Class III antiarrhythmic agent by blocking potassium channels, prolonging the action potential and refractory period."
+            },
+            {
+              "stem": "A 50-year-old man with hypertension and dyslipidemia is prescribed simvastatin. Which of the following drugs is most likely to increase the risk of myopathy when co-administered with simvastatin?",
+              "options": [
+                "Amlodipine",
+                "Losartan",
+                "Clarithromycin",
+                "Metformin"
+              ],
+              "answer": "Clarithromycin",
+              "explanation": "Clarithromycin is a potent CYP3A4 inhibitor, which increases simvastatin levels and the risk of myopathy and rhabdomyolysis."
+            },
+            {
+              "stem": "Which of the following is the most appropriate first-line therapy for a patient with chronic stable angina?",
+              "options": [
+                "Nitrates",
+                "Beta-blockers",
+                "Calcium channel blockers",
+                "ACE inhibitors"
+              ],
+              "answer": "Beta-blockers",
+              "explanation": "Beta-blockers are the first-line therapy for chronic stable angina as they reduce myocardial oxygen demand and improve exercise tolerance."
+            },
+            {
+              "stem": "A 45-year-old woman with CKD stage 3 (eGFR 45 mL/min/1.73m²) is prescribed metformin for type 2 diabetes mellitus. Which of the following is the most appropriate action regarding metformin therapy?",
+              "options": [
+                "Continue metformin at the current dose",
+                "Reduce the dose of metformin by 50%",
+                "Discontinue metformin and switch to insulin",
+                "Increase the dose of metformin to improve glycemic control"
+              ],
+              "answer": "Reduce the dose of metformin by 50%",
+              "explanation": "Metformin should be dose-reduced in CKD stage 3 due to the increased risk of lactic acidosis, with a maximum recommended dose of 1000 mg daily."
+            },
+            {
+              "stem": "Which of the following is the most appropriate initial therapy for a patient with hypertensive emergency (BP >180/120 mmHg with acute target organ damage)?",
+              "options": [
+                "Oral nifedipine",
+                "Intravenous labetalol",
+                "Subcutaneous enoxaparin",
+                "Oral captopril"
+              ],
+              "answer": "Intravenous labetalol",
+              "explanation": "Intravenous labetalol is recommended for hypertensive emergencies due to its rapid onset and ability to titrate the dose to achieve target blood pressure."
+            },
+            {
+              "stem": "A 60-year-old man with heart failure with preserved ejection fraction (HFpEF) is prescribed spironolactone. Which of the following is the primary mechanism of action of spironolactone in this patient?",
+              "options": [
+                "Inhibition of the renin-angiotensin-aldosterone system (RAAS)",
+                "Inhibition of the sodium-potassium-chloride cotransporter in the loop of Henle",
+                "Antagonism of aldosterone at the mineralocorticoid receptor",
+                "Inhibition of the sodium-chloride cotransporter in the distal convoluted tubule"
+              ],
+              "answer": "Antagonism of aldosterone at the mineralocorticoid receptor",
+              "explanation": "Spironolactone acts as an aldosterone antagonist, reducing sodium and water retention and improving cardiac function in HFpEF."
+            },
+            {
+              "stem": "Which of the following is the most appropriate monitoring parameter for a patient receiving warfarin therapy?",
+              "options": [
+                "International Normalized Ratio (INR)",
+                "Activated Partial Thromboplastin Time (aPTT)",
+                "Platelet count",
+                "D-dimer"
+              ],
+              "answer": "International Normalized Ratio (INR)",
+              "explanation": "The International Normalized Ratio (INR) is the primary monitoring parameter for warfarin therapy to ensure therapeutic anticoagulation and minimize bleeding risk."
+            },
+            {
+              "stem": "A 55-year-old man with CKD stage 5 (eGFR <15 mL/min/1.73m²) on hemodialysis is prescribed cinacalcet for secondary hyperparathyroidism. Which of the following is the primary mechanism of action of cinacalcet?",
+              "options": [
+                "Inhibition of parathyroid hormone (PTH) secretion",
+                "Inhibition of calcium absorption in the gut",
+                "Inhibition of vitamin D synthesis",
+                "Inhibition of bone resorption"
+              ],
+              "answer": "Inhibition of parathyroid hormone (PTH) secretion",
+              "explanation": "Cinacalcet acts as a calcimimetic, increasing the sensitivity of the calcium-sensing receptor on the parathyroid gland, thereby reducing PTH secretion."
+            },
+            {
+              "stem": "Which of the following is the most appropriate initial therapy for a patient with hyperkalemia (serum potassium 6.5 mmol/L) with electrocardiogram (ECG) changes?",
+              "options": [
+                "Intravenous calcium gluconate",
+                "Intravenous insulin with dextrose",
+                "Oral sodium polystyrene sulfonate",
+                "Intravenous furosemide"
+              ],
+              "answer": "Intravenous calcium gluconate",
+              "explanation": "Intravenous calcium gluconate is the immediate therapy for hyperkalemia with ECG changes to stabilize the cardiac membrane and prevent arrhythmias."
+            },
+            {
+              "stem": "A 70-year-old woman with atrial fibrillation is prescribed rivaroxaban for stroke prevention. Which of the following is the recommended dose of rivaroxaban for stroke prevention in non-valvular atrial fibrillation?",
+              "options": [
+                "10 mg daily",
+                "15 mg daily",
+                "20 mg daily",
+                "30 mg daily"
+              ],
+              "answer": "20 mg daily",
+              "explanation": "The recommended dose of rivaroxaban for stroke prevention in non-valvular atrial fibrillation is 20 mg daily, taken with the evening meal."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism of action of eplerenone in the treatment of heart failure?",
+              "options": [
+                "Inhibition of the renin-angiotensin-aldosterone system (RAAS)",
+                "Inhibition of the sodium-potassium-chloride cotransporter in the loop of Henle",
+                "Antagonism of aldosterone at the mineralocorticoid receptor",
+                "Inhibition of the sodium-chloride cotransporter in the distal convoluted tubule"
+              ],
+              "answer": "Antagonism of aldosterone at the mineralocorticoid receptor",
+              "explanation": "Eplerenone is a selective aldosterone antagonist that reduces sodium and water retention, improving cardiac function in heart failure."
+            },
+            {
+              "stem": "A 60-year-old man with hypertension and CKD stage 3 (eGFR 40 mL/min/1.73m²) is prescribed lisinopril. Which of the following is the most appropriate monitoring parameter for this patient?",
+              "options": [
+                "Serum potassium and creatinine",
+                "Serum sodium and chloride",
+                "Serum calcium and phosphate",
+                "Serum magnesium and bicarbonate"
+              ],
+              "answer": "Serum potassium and creatinine",
+              "explanation": "ACE inhibitors like lisinopril can cause hyperkalemia and increase serum creatinine, so these parameters should be monitored closely in CKD."
+            },
+            {
+              "stem": "Which of the following is the most appropriate initial therapy for a patient with acute ST-elevation myocardial infarction (STEMI)?",
+              "options": [
+                "Intravenous alteplase",
+                "Intravenous metoprolol",
+                "Oral aspirin",
+                "Subcutaneous enoxaparin"
+              ],
+              "answer": "Oral aspirin",
+              "explanation": "Oral aspirin is the first-line therapy for acute STEMI to inhibit platelet aggregation and reduce the risk of further thrombosis."
+            },
+            {
+              "stem": "A 55-year-old woman with CKD stage 4 (eGFR 25 mL/min/1.73m²) is prescribed atorvastatin. Which of the following is the most appropriate starting dose of atorvastatin in this patient?",
+              "options": [
+                "10 mg daily",
+                "20 mg daily",
+                "40 mg daily",
+                "80 mg daily"
+              ],
+              "answer": "20 mg daily",
+              "explanation": "In CKD stage 4, the starting dose of atorvastatin should be reduced to 20 mg daily due to increased risk of myopathy and reduced drug clearance."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism of action of digoxin in the treatment of heart failure?",
+              "options": [
+                "Inhibition of the sodium-potassium-chloride cotransporter in the loop of Henle",
+                "Inhibition of the sodium-chloride cotransporter in the distal convoluted tubule",
+                "Inhibition of the sodium-potassium ATPase pump",
+                "Inhibition of the renin-angiotensin-aldosterone system (RAAS)"
+              ],
+              "answer": "Inhibition of the sodium-potassium ATPase pump",
+              "explanation": "Digoxin inhibits the sodium-potassium ATPase pump, increasing intracellular calcium and improving cardiac contractility in heart failure."
+            },
+            {
+              "stem": "A 65-year-old man with hypertension and type 2 diabetes mellitus is prescribed hydrochlorothiazide. Which of the following is the most common adverse effect of hydrochlorothiazide?",
+              "options": [
+                "Hyperkalemia",
+                "Hypokalemia",
+                "Hypercalcemia",
+                "Hypocalcemia"
+              ],
+              "answer": "Hypokalemia",
+              "explanation": "Thiazide diuretics like hydrochlorothiazide increase potassium excretion in the distal tubule, leading to hypokalemia as a common adverse effect."
+            },
+            {
+              "stem": "Which of the following is the most appropriate initial therapy for a patient with acute decompensated heart failure?",
+              "options": [
+                "Intravenous furosemide",
+                "Intravenous digoxin",
+                "Oral spironolactone",
+                "Subcutaneous enoxaparin"
+              ],
+              "answer": "Intravenous furosemide",
+              "explanation": "Intravenous furosemide is the drug of choice for rapid relief of symptoms in acute decompensated heart failure due to its potent diuretic effect."
+            },
+            {
+              "stem": "A 70-year-old woman with atrial fibrillation is prescribed apixaban for stroke prevention. Which of the following is the recommended dose of apixaban for stroke prevention in non-valvular atrial fibrillation?",
+              "options": [
+                "2.5 mg twice daily",
+                "5 mg twice daily",
+                "10 mg twice daily",
+                "20 mg once daily"
+              ],
+              "answer": "5 mg twice daily",
+              "explanation": "The recommended dose of apixaban for stroke prevention in non-valvular atrial fibrillation is 5 mg twice daily, unless the patient meets specific criteria for dose reduction."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism of action of sacubitril/valsartan in the treatment of heart failure?",
+              "options": [
+                "Inhibition of neprilysin and angiotensin II receptor blockade",
+                "Inhibition of the renin-angiotensin-aldosterone system (RAAS)",
+                "Inhibition of the sodium-potassium-chloride cotransporter in the loop of Henle",
+                "Inhibition of the sodium-chloride cotransporter in the distal convoluted tubule"
+              ],
+              "answer": "Inhibition of neprilysin and angiotensin II receptor blockade",
+              "explanation": "Sacubitril/valsartan combines a neprilysin inhibitor (sacubitril) with an angiotensin II receptor blocker (valsartan) to reduce cardiac workload and improve outcomes in heart failure."
+            },
+            {
+              "stem": "A 50-year-old man with hypertension and CKD stage 3 (eGFR 45 mL/min/1.73m²) is prescribed amlodipine. Which of the following is the most appropriate monitoring parameter for this patient?",
+              "options": [
+                "Serum potassium and creatinine",
+                "Blood pressure and peripheral edema",
+                "Serum calcium and phosphate",
+                "Serum magnesium and bicarbonate"
+              ],
+              "answer": "Blood pressure and peripheral edema",
+              "explanation": "Calcium channel blockers like amlodipine primarily require monitoring of blood pressure and signs of peripheral edema, which are common adverse effects."
+            },
+            {
+              "stem": "Which of the following is the most appropriate initial therapy for a patient with acute coronary syndrome (ACS)?",
+              "options": [
+                "Intravenous alteplase",
+                "Intravenous metoprolol",
+                "Oral aspirin and clopidogrel",
+                "Subcutaneous enoxaparin"
+              ],
+              "answer": "Oral aspirin and clopidogrel",
+              "explanation": "Dual antiplatelet therapy with aspirin and a P2Y12 inhibitor like clopidogrel is the cornerstone of initial therapy for acute coronary syndrome."
+            },
+            {
+              "stem": "A 60-year-old woman with CKD stage 5 (eGFR <15 mL/min/1.73m²) on hemodialysis is prescribed sevelamer for hyperphosphatemia. Which of the following is the primary mechanism of action of sevelamer?",
+              "options": [
+                "Inhibition of parathyroid hormone (PTH) secretion",
+                "Inhibition of calcium absorption in the gut",
+                "Binding of phosphate in the gastrointestinal tract",
+                "Inhibition of vitamin D synthesis"
+              ],
+              "answer": "Binding of phosphate in the gastrointestinal tract",
+              "explanation": "Sevelamer is a non-calcium, non-aluminum phosphate binder that binds dietary phosphate in the gastrointestinal tract, reducing its absorption."
+            },
+            {
+              "stem": "Which of the following is the most appropriate initial therapy for a patient with acute pulmonary embolism?",
+              "options": [
+                "Intravenous alteplase",
+                "Intravenous metoprolol",
+                "Oral warfarin",
+                "Subcutaneous enoxaparin"
+              ],
+              "answer": "Subcutaneous enoxaparin",
+              "explanation": "Low molecular weight heparin (e.g., enoxaparin) is the initial therapy for acute pulmonary embolism to achieve rapid anticoagulation and prevent further clot formation."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "1. a) List the four classes of antihypertensive drugs recommended as first-line therapy for uncomplicated hypertension according to WHO/KDI guidelines. (2 marks)\n   b) For each class, provide one example of a drug and its primary mechanism of action. (3 marks)",
+              "modelAnswer": "a) The four classes of antihypertensive drugs recommended as first-line therapy for uncomplicated hypertension are:\n   - Angiotensin-converting enzyme inhibitors (ACEIs)\n   - Angiotensin II receptor blockers (ARBs)\n   - Calcium channel blockers (CCBs)\n   - Thiazide diuretics\n\n   b) Examples and mechanisms:\n   - ACEI: Lisinopril – inhibits the conversion of angiotensin I to angiotensin II, reducing vasoconstriction and aldosterone secretion.\n   - ARB: Losartan – blocks angiotensin II receptors, reducing vasoconstriction and aldosterone secretion.\n   - CCB: Amlodipine – blocks calcium channels in vascular smooth muscle, reducing peripheral vascular resistance.\n   - Thiazide diuretic: Hydrochlorothiazide – inhibits the sodium-chloride cotransporter in the distal convoluted tubule, reducing sodium and water reabsorption."
+            },
+            {
+              "stem": "2. a) Outline the pharmacological management of a patient with heart failure with reduced ejection fraction (HFrEF) according to current guidelines. (3 marks)\n   b) List two key adverse effects of each of the following drugs used in HFrEF: carvedilol, spironolactone, and sacubitril/valsartan. (2 marks)",
+              "modelAnswer": "a) Pharmacological management of HFrEF includes:\n   - ACE inhibitors or ARBs (e.g., lisinopril, losartan) to reduce afterload and prevent cardiac remodeling.\n   - Beta-blockers (e.g., carvedilol, metoprolol) to reduce heart rate and myocardial oxygen demand.\n   - Mineralocorticoid receptor antagonists (e.g., spironolactone) to reduce sodium and water retention.\n   - Loop diuretics (e.g., furosemide) for symptom relief in fluid overload.\n   - Sacubitril/valsartan for patients who remain symptomatic despite optimal therapy.\n   - Digoxin may be considered in selected patients for rate control or symptom improvement.\n\n   b) Adverse effects:\n   - Carvedilol: Bradycardia, hypotension, fatigue.\n   - Spironolactone: Hyperkalemia, gynecomastia.\n   - Sacubitril/valsartan: Hypotension, hyperkalemia, angioedema."
+            },
+            {
+              "stem": "3. a) Define the term 'hypertensive emergency' and provide two examples of target organ damage. (2 marks)\n   b) Outline the immediate management of a patient with hypertensive emergency. (3 marks)",
+              "modelAnswer": "a) Hypertensive emergency is defined as severe hypertension (BP >180/120 mmHg) with evidence of acute target organ damage. Examples of target organ damage include:\n   - Acute kidney injury (e.g., rising serum creatinine)\n   - Acute heart failure (e.g., pulmonary edema)\n   - Acute coronary syndrome (e.g., STEMI)\n   - Hypertensive encephalopathy (e.g., seizures, confusion)\n   - Aortic dissection\n\n   b) Immediate management:\n   - Admit to a monitored setting (e.g., ICU).\n   - Use intravenous antihypertensives (e.g., labetalol, nicardipine) to gradually reduce BP by no more than 10-20% in the first hour.\n   - Avoid rapid reductions in BP to prevent cerebral hypoperfusion.\n   - Treat underlying causes (e.g., acute pulmonary edema with furosemide).\n   - Monitor for complications (e.g., renal function, ECG changes)."
+            },
+            {
+              "stem": "4. a) List the four classes of antiarrhythmic drugs according to the Vaughan Williams classification. (2 marks)\n   b) Provide one example of a drug from each class and its primary mechanism of action. (3 marks)",
+              "modelAnswer": "a) The four classes of antiarrhythmic drugs according to the Vaughan Williams classification are:\n   - Class I: Sodium channel blockers\n   - Class II: Beta-blockers\n   - Class III: Potassium channel blockers\n   - Class IV: Calcium channel blockers\n\n   b) Examples and mechanisms:\n   - Class I: Procainamide – blocks sodium channels, slowing conduction in cardiac tissue.\n   - Class II: Metoprolol – blocks beta-1 adrenergic receptors, reducing heart rate and contractility.\n   - Class III: Amiodarone – blocks potassium channels, prolonging the action potential and refractory period.\n   - Class IV: Diltiazem – blocks calcium channels, reducing conduction velocity in the atrioventricular node."
+            },
+            {
+              "stem": "5. a) Outline the pharmacological management of a patient with acute ST-elevation myocardial infarction (STEMI). (3 marks)\n   b) List two key adverse effects of each of the following drugs used in STEMI: aspirin, clopidogrel, and alteplase. (2 marks)",
+              "modelAnswer": "a) Pharmacological management of acute STEMI:\n   - Dual antiplatelet therapy: Aspirin (loading dose 162-325 mg) and a P2Y12 inhibitor (e.g., clopidogrel 600 mg loading dose).\n   - Anticoagulation: Unfractionated heparin or low molecular weight heparin (e.g., enoxaparin).\n   - Reperfusion therapy: Primary percutaneous coronary intervention (PCI) if available within 90 minutes; otherwise, fibrinolytic therapy (e.g., alteplase).\n   - Beta-blockers (e.g., metoprolol) for rate control and reduction of myocardial oxygen demand.\n   - ACE inhibitors or ARBs for long-term cardioprotection.\n   - Statins for lipid control and plaque stabilization.\n\n   b) Adverse effects:\n   - Aspirin: GI bleeding, tinnitus.\n   - Clopidogrel: Bleeding, thrombotic thrombocytopenic purpura (TTP).\n   - Alteplase: Bleeding, intracranial hemorrhage."
+            },
+            {
+              "stem": "6. a) Define the term 'nephrotoxic drug' and provide two examples of nephrotoxic drugs. (2 marks)\n   b) Outline the mechanisms by which nonsteroidal anti-inflammatory drugs (NSAIDs) can cause nephrotoxicity. (3 marks)",
+              "modelAnswer": "a) A nephrotoxic drug is a medication that can cause damage to the kidneys, either acutely or chronically. Examples include:\n   - Nonsteroidal anti-inflammatory drugs (NSAIDs) (e.g., ibuprofen)\n   - Aminoglycosides (e.g., gentamicin)\n   - Contrast media (e.g., iodinated contrast)\n\n   b) Mechanisms of NSAID-induced nephrotoxicity:\n   - Inhibition of cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis.\n   - Prostaglandins are vasodilatory in the kidney, so their inhibition leads to afferent arteriole vasoconstriction and reduced glomerular filtration rate (GFR).\n   - This can result in acute kidney injury (AKI), particularly in patients with pre-existing renal impairment, volume depletion, or heart failure.\n   - Chronic use can also lead to chronic interstitial nephritis and papillary necrosis."
+            },
+            {
+              "stem": "7. a) List the three stages of chronic kidney disease (CKD) based on estimated glomerular filtration rate (eGFR). (2 marks)\n   b) For each stage, provide the eGFR range and one key clinical consideration for drug dosing. (3 marks)",
+              "modelAnswer": "a) The three stages of CKD based on eGFR are:\n   - Stage 3: Moderate decrease in eGFR\n   - Stage 4: Severe decrease in eGFR\n   - Stage 5: Kidney failure (eGFR <15 mL/min/1.73m²)\n\n   b) eGFR ranges and clinical considerations:\n   - Stage 3 (eGFR 30-59 mL/min/1.73m²): Dose adjustments may be required for drugs primarily renally eliminated (e.g., metformin, digoxin).\n   - Stage 4 (eGFR 15-29 mL/min/1.73m²): Significant dose reductions or avoidance of nephrotoxic drugs (e.g., NSAIDs, aminoglycosides).\n   - Stage 5 (eGFR <15 mL/min/1.73m²): Dose adjustments for most drugs; consideration of renal replacement therapy (e.g., hemodialysis)."
+            },
+            {
+              "stem": "8. a) Outline the pharmacological management of a patient with iron deficiency anemia due to chronic kidney disease (CKD). (3 marks)\n   b) List two key adverse effects of each of the following drugs used in this condition: oral ferrous sulfate, intravenous iron sucrose, and erythropoiesis-stimulating agents (ESAs). (2 marks)",
+              "modelAnswer": "a) Pharmacological management of iron deficiency anemia in CKD:\n   - Oral iron therapy (e.g., ferrous sulfate 200 mg three times daily) if eGFR >30 mL/min/1.73m² and no evidence of malabsorption.\n   - Intravenous iron therapy (e.g., iron sucrose) if oral iron is ineffective, not tolerated, or in patients on hemodialysis.\n   - Erythropoiesis-stimulating agents (ESAs) (e.g., epoetin alfa) if hemoglobin remains <10 g/dL despite iron therapy.\n   - Consider blood transfusion in severe anemia or symptomatic patients unresponsive to other therapies.\n\n   b) Adverse effects:\n   - Oral ferrous sulfate: GI upset (nausea, constipation), dark stools.\n   - Intravenous iron sucrose: Hypotension, anaphylaxis (rare), iron overload.\n   - Erythropoiesis-stimulating agents (ESAs): Hypertension, increased risk of thromboembolic events."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 68-year-old man, Mr. Omondi, presents to the emergency department with a 3-day history of progressive shortness of breath, orthopnea, and bilateral leg swelling. He has a history of hypertension, type 2 diabetes mellitus, and chronic kidney disease stage 3 (eGFR 45 mL/min/1.73m²). On examination, his blood pressure is 160/95 mmHg, heart rate is 110 bpm, respiratory rate is 28 breaths/min, and oxygen saturation is 88% on room air. Jugular venous pressure is elevated, and there are bilateral crackles on lung auscultation. His legs are pitting edematous to the knees. \n\n   a) What is the most likely diagnosis for Mr. Omondi? Provide a brief justification for your answer. (2 marks)\n   b) Outline the key investigations you would request to confirm the diagnosis and assess severity. (5 marks)\n   c) List four precipitating factors for acute decompensated heart failure in this patient. (4 marks)\n   d) Outline a comprehensive pharmaceutical care plan for Mr. Omondi, including pharmacological and non-pharmacological interventions. (14 marks)",
+              "modelAnswer": "a) Most likely diagnosis: Acute decompensated heart failure (ADHF) with volume overload.\n   Justification: The patient presents with progressive dyspnea, orthopnea, leg swelling, elevated jugular venous pressure, crackles on lung auscultation, and hypoxia, consistent with acute heart failure exacerbation.\n\n   b) Key investigations:\n   - **Laboratory tests:**\n     - Serum electrolytes (sodium, potassium, chloride)\n     - Renal function tests (serum creatinine, eGFR)\n     - Liver function tests (ALT, AST, bilirubin)\n     - Complete blood count (CBC)\n     - B-type natriuretic peptide (BNP) or N-terminal pro-BNP (NT-proBNP)\n     - Troponin (to rule out acute coronary syndrome)\n   - **Imaging:**\n     - Chest X-ray (to assess for pulmonary edema, cardiomegaly, pleural effusions)\n     - Echocardiogram (to assess left ventricular ejection fraction, valvular function, and structural abnormalities)\n   - **Other tests:**\n     - Electrocardiogram (ECG) (to assess for arrhythmias, ischemia, or hypertrophy)\n     - Urinalysis (to assess for proteinuria or hematuria, which may indicate renal dysfunction)\n\n   c) Precipitating factors for ADHF in this patient:\n   - **Non-adherence to medications or dietary sodium restriction** (common in chronic conditions like hypertension and diabetes).\n   - **Acute kidney injury (AKI)** secondary to CKD stage 3, leading to fluid retention.\n   - **Uncontrolled hypertension** (BP 160/95 mmHg), increasing afterload and cardiac workload.\n   - **Cardiac ischemia or arrhythmia** (e.g., atrial fibrillation), which can precipitate heart failure exacerbation.\n\n   d) Comprehensive pharmaceutical care plan:\n   **Pharmacological interventions:**\n   - **Diuretics:** Intravenous furosemide 40-80 mg bolus, followed by continuous infusion if necessary, to achieve euvolemia. Monitor urine output and renal function.\n   - **Vasodilators:** Intravenous nitroglycerin (if SBP >100 mmHg) to reduce preload and afterload. Start at 10-20 mcg/min and titrate as tolerated.\n   - **Beta-blockers:** Once euvolemic and stable, initiate or uptitrate carvedilol (e.g., 3.125 mg twice daily) to reduce mortality and improve symptoms. Avoid in acute decompensation.\n   - **ACE inhibitors/ARBs:** If not already prescribed, initiate lisinopril (e.g., 2.5-5 mg daily) or losartan (e.g., 25-50 mg daily) for long-term cardioprotection, provided renal function and potassium are stable.\n   - **Mineralocorticoid receptor antagonists:** Spironolactone 25 mg daily may be considered in patients with persistent symptoms despite optimal therapy, with monitoring for hyperkalemia.\n   - **Statins:** Continue or initiate atorvastatin 20 mg daily for lipid control and plaque stabilization.\n   - **Anticoagulation:** If atrial fibrillation is present, initiate apixaban 5 mg twice daily for stroke prevention, with monitoring for bleeding.\n\n   **Non-pharmacological interventions:**\n   - **Fluid restriction:** Limit fluid intake to 1.5-2 L/day to reduce volume overload.\n   - **Sodium restriction:** Advise a low-sodium diet (<2 g/day) to minimize fluid retention.\n   - **Daily weight monitoring:** Instruct the patient to weigh himself daily and report a weight gain of >2 kg in 3 days.\n   - **Oxygen therapy:** Administer supplemental oxygen to maintain SpO2 >90%.\n   - **Patient education:** Counsel on adherence to medications, dietary restrictions, and signs of worsening heart failure (e.g., increased dyspnea, weight gain).\n   - **Follow-up:** Schedule a follow-up visit within 7-10 days to assess response to therapy and adjust medications as needed.\n\n   **Monitoring parameters:**\n   - **Clinical:** Blood pressure, heart rate, oxygen saturation, jugular venous pressure, lung auscultation, peripheral edema.\n   - **Laboratory:** Serum electrolytes (especially potassium and sodium), renal function (creatinine, eGFR), BNP/NT-proBNP.\n   - **Imaging:** Repeat chest X-ray if symptoms persist or worsen.\n   - **Adverse effects:** Monitor for diuretic-induced electrolyte imbalances (e.g., hypokalemia, hyponatremia), hypotension, and renal dysfunction."
+            },
+            {
+              "stem": "A 55-year-old woman, Mrs. Njeri, presents to the outpatient clinic with a 6-month history of progressive fatigue, shortness of breath on exertion, and bilateral leg swelling. She has a history of hypertension, type 2 diabetes mellitus, and chronic kidney disease stage 4 (eGFR 25 mL/min/1.73m²). On examination, her blood pressure is 150/90 mmHg, heart rate is 90 bpm, respiratory rate is 20 breaths/min, and oxygen saturation is 95% on room air. She has bilateral pitting edema to the mid-shin and mild hepatomegaly. Her hemoglobin is 10.5 g/dL, serum potassium is 5.2 mmol/L, and serum phosphate is 5.8 mg/dL. \n\n   a) What is the most likely diagnosis for Mrs. Njeri? Provide a brief justification for your answer. (2 marks)\n   b) Outline the key investigations you would request to confirm the diagnosis and assess severity. (5 marks)\n   c) List four key management goals for Mrs. Njeri. (4 marks)\n   d) Outline a comprehensive pharmaceutical care plan for Mrs. Njeri, including pharmacological and non-pharmacological interventions. (14 marks)",
+              "modelAnswer": "a) Most likely diagnosis: Anemia of chronic kidney disease (CKD) with secondary hyperparathyroidism and hyperphosphatemia.\n   Justification: The patient presents with fatigue, shortness of breath, and bilateral leg swelling, along with laboratory findings of anemia (Hb 10.5 g/dL), hyperkalemia (K 5.2 mmol/L), and hyperphosphatemia (PO4 5.8 mg/dL), consistent with CKD-related complications.\n\n   b) Key investigations:\n   - **Laboratory tests:**\n     - Complete blood count (CBC) with reticulocyte count\n     - Iron studies (serum ferritin, transferrin saturation, serum iron)\n     - Vitamin B12 and folate levels\n     - Parathyroid hormone (PTH) level\n     - Calcium and phosphate levels\n     - 25-hydroxy vitamin D level\n     - Thyroid function tests (TSH, free T4)\n   - **Imaging:**\n     - Bone mineral density scan (if indicated for secondary hyperparathyroidism)\n   - **Other tests:**\n     - Electrocardiogram (ECG) (to assess for arrhythmias or ischemic changes)\n     - Echocardiogram (to assess cardiac function and volume status)\n\n   c) Key management goals for Mrs. Njeri:\n   - Correct anemia of CKD with erythropoiesis-stimulating agents (ESAs) and iron therapy.\n   - Control secondary hyperparathyroidism and hyperphosphatemia to prevent bone disease and cardiovascular complications.\n   - Manage hypertension and fluid overload to reduce symptoms and prevent further renal deterioration.\n   - Optimize glycemic control to reduce microvascular complications.\n\n   d) Comprehensive pharmaceutical care plan:\n   **Pharmacological interventions:**\n   - **Anemia management:**\n     - **Iron therapy:** Intravenous iron sucrose 200 mg weekly for 5 doses (total 1000 mg) if oral iron is ineffective or not tolerated. Monitor for iron overload and hypersensitivity reactions.\n     - **Erythropoiesis-stimulating agents (ESAs):** Initiate darbepoetin alfa 25-50 mcg subcutaneously every 2-4 weeks to target hemoglobin 10-11 g/dL. Monitor hemoglobin levels every 2-4 weeks initially, then every 3 months once stable.\n   - **Hyperphosphatemia management:**\n     - **Phosphate binders:** Start sevelamer carbonate 800 mg three times daily with meals. Titrate dose based on serum phosphate levels. Monitor for GI adverse effects (e.g., nausea, constipation).\n   - **Secondary hyperparathyroidism management:**\n     - **Vitamin D analogs:** Initiate calcitriol 0.25 mcg daily or paricalcitol 1 mcg daily, titrating based on PTH levels. Monitor calcium and phosphate levels closely.\n     - **Calcimimetics:** Consider cinacalcet 30 mg daily if PTH remains elevated despite vitamin D therapy. Monitor for hypocalcemia and GI adverse effects.\n   - **Hypertension management:**\n     - **ACE inhibitors/ARBs:** Continue or initiate lisinopril 5 mg daily or losartan 50 mg daily, with monitoring of renal function and potassium. Target BP <130/80 mmHg.\n     - **Diuretics:** Add hydrochlorothiazide 12.5-25 mg daily if volume overload persists, with monitoring for electrolyte imbalances.\n   - **Diabetes management:**\n     - **Glycemic control:** Continue or initiate metformin with dose reduction (e.g., 500 mg daily) due to CKD stage 4. Consider insulin if glycemic control is suboptimal.\n\n   **Non-pharmacological interventions:**\n   - **Dietary modifications:**\n     - **Low-phosphorus diet:** Advise avoidance of high-phosphorus foods (e.g., dairy products, nuts, processed meats).\n     - **Low-potassium diet:** Advise avoidance of high-potassium foods (e.g., bananas, oranges, potatoes) if hyperkalemia persists.\n     - **Sodium restriction:** Advise a low-sodium diet (<2 g/day) to minimize fluid retention and hypertension.\n   - **Patient education:**\n     - Counsel on adherence to medications, dietary restrictions, and signs of worsening anemia (e.g., fatigue, pallor) or hyperparathyroidism (e.g., bone pain, pruritus).\n     - Encourage regular follow-up visits to monitor response to therapy and adjust medications as needed.\n   - **Lifestyle modifications:**\n     - Encourage regular, moderate exercise (e.g., walking) to improve cardiovascular health and reduce fatigue.\n     - Smoking cessation and alcohol moderation to reduce cardiovascular risk.\n\n   **Monitoring parameters:**\n   - **Clinical:** Blood pressure, weight, peripheral edema, signs of anemia (e.g., pallor, fatigue).\n   - **Laboratory:**\n     - Hemoglobin, iron studies (every 2-4 weeks initially, then every 3 months once stable).\n     - Serum potassium, calcium, phosphate, and PTH (every 1-3 months).\n     - Renal function (creatinine, eGFR) and electrolytes (every 1-3 months).\n   - **Adverse effects:**\n     - Monitor for ESA-related hypertension, iron-related hypersensitivity reactions, phosphate binder-related GI upset, and vitamin D analog-related hypercalcemia.\n   - **Imaging:**\n     - Repeat PTH and vitamin D levels every 3-6 months to assess response to therapy.\n     - Consider repeat echocardiogram if cardiac symptoms worsen or new arrhythmias develop."
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Cardiovascular & Renal Therapeutics",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 68-year-old man with hypertension, type 2 diabetes, and CKD stage 3 (eGFR 45 mL/min/1.73m²) presents with a BP of 158/92 mmHg. According to KDIGO guidelines, what is the most appropriate BP target for this patient?",
+              "options": [
+                "a) <130/80 mmHg",
+                "b) <140/90 mmHg",
+                "c) <150/90 mmHg",
+                "d) <160/100 mmHg"
+              ],
+              "answer": "a) <130/80 mmHg",
+              "explanation": "KDIGO 2021 guidelines recommend a target BP <130/80 mmHg in adults with diabetes and CKD."
+            },
+            {
+              "stem": "Which of the following antihypertensive classes is contraindicated in a patient with bilateral renal artery stenosis?",
+              "options": [
+                "a) Calcium channel blockers",
+                "b) ACE inhibitors",
+                "c) Thiazide diuretics",
+                "d) Beta blockers"
+              ],
+              "answer": "b) ACE inhibitors",
+              "explanation": "ACE inhibitors reduce glomerular filtration pressure by dilating the efferent arteriole, which can precipitate acute kidney injury in bilateral renal artery stenosis."
+            },
+            {
+              "stem": "A 55-year-old woman with heart failure with reduced ejection fraction (HFrEF) (LVEF 30%) is currently on carvedilol 25 mg BID, enalapril 10 mg BID, and spironolactone 25 mg daily. She remains symptomatic with NYHA class III dyspnea. Which of the following is the most appropriate next step?",
+              "options": [
+                "a) Increase carvedilol to 50 mg BID",
+                "b) Add dapagliflozin 10 mg daily",
+                "c) Switch enalapril to valsartan",
+                "d) Add digoxin 0.125 mg daily"
+              ],
+              "answer": "b) Add dapagliflozin 10 mg daily",
+              "explanation": "Dapagliflozin is an SGLT2 inhibitor with proven mortality and hospitalization benefits in HFrEF, regardless of diabetes status."
+            },
+            {
+              "stem": "A 72-year-old man with atrial fibrillation (CHA2DS2-VASc score 3) is started on apixaban 5 mg BID for stroke prevention. Which of the following is the most appropriate monitoring parameter for this patient?",
+              "options": [
+                "a) INR every 4 weeks",
+                "b) Activated partial thromboplastin time (aPTT)",
+                "c) Factor Xa activity levels",
+                "d) No routine monitoring required"
+              ],
+              "answer": "d) No routine monitoring required",
+              "explanation": "Apixaban is a direct oral anticoagulant (DOAC) with predictable pharmacokinetics; routine monitoring is not required."
+            },
+            {
+              "stem": "Which of the following is a common adverse effect of high-dose loop diuretics in patients with heart failure?",
+              "options": [
+                "a) Hyperkalemia",
+                "b) Metabolic alkalosis",
+                "c) Hypocalcemia",
+                "d) Hypermagnesemia"
+              ],
+              "answer": "b) Metabolic alkalosis",
+              "explanation": "Loop diuretics cause volume depletion and hypochloremia, leading to contraction alkalosis."
+            },
+            {
+              "stem": "A 45-year-old man with CKD stage 4 (eGFR 22 mL/min/1.73m²) is found to have a serum potassium of 5.8 mmol/L. Which of the following is the most appropriate immediate intervention?",
+              "options": [
+                "a) Start sodium polystyrene sulfonate 15 g PO",
+                "b) Administer IV calcium gluconate 10% 10 mL over 2 minutes",
+                "c) Start furosemide 40 mg IV",
+                "d) Administer insulin 10 units IV with 50 mL of 50% dextrose"
+              ],
+              "answer": "b) Administer IV calcium gluconate 10% 10 mL over 2 minutes",
+              "explanation": "IV calcium gluconate stabilizes the cardiac membrane in hyperkalemia and is the immediate priority."
+            },
+            {
+              "stem": "Which of the following drugs requires dose adjustment in CKD stage 4 (eGFR 15-29 mL/min/1.73m²)?",
+              "options": [
+                "a) Metformin",
+                "b) Atorvastatin",
+                "c) Amlodipine",
+                "d) Losartan"
+              ],
+              "answer": "a) Metformin",
+              "explanation": "Metformin is contraindicated when eGFR <30 mL/min/1.73m² due to risk of lactic acidosis."
+            },
+            {
+              "stem": "A 60-year-old woman with hypertension and osteoporosis is started on hydrochlorothiazide 25 mg daily. Which of the following adverse effects is most likely to occur?",
+              "options": [
+                "a) Hypercalcemia",
+                "b) Hyperkalemia",
+                "c) Hyperuricemia",
+                "d) Hyperglycemia"
+              ],
+              "answer": "c) Hyperuricemia",
+              "explanation": "Thiazide diuretics reduce urinary uric acid excretion, increasing the risk of hyperuricemia and gout."
+            },
+            {
+              "stem": "Which of the following is a class III antiarrhythmic agent according to the Vaughan Williams classification?",
+              "options": [
+                "a) Lidocaine",
+                "b) Metoprolol",
+                "c) Amiodarone",
+                "d) Diltiazem"
+              ],
+              "answer": "c) Amiodarone",
+              "explanation": "Amiodarone is a class III antiarrhythmic that prolongs the action potential duration and refractory period."
+            },
+            {
+              "stem": "A 58-year-old man with a history of MI 2 years ago presents with angina on exertion. His current medications include aspirin 75 mg daily, atorvastatin 40 mg nocte, and lisinopril 10 mg daily. Which of the following is the most appropriate antianginal agent to add?",
+              "options": [
+                "a) Amlodipine 5 mg daily",
+                "b) Metoprolol 50 mg BID",
+                "c) Isosorbide mononitrate 30 mg daily",
+                "d) Ranolazine 500 mg BID"
+              ],
+              "answer": "b) Metoprolol 50 mg BID",
+              "explanation": "Beta blockers are first-line antianginal agents post-MI due to their mortality benefits and reduction in oxygen demand."
+            },
+            {
+              "stem": "Which of the following is a contraindication to the use of a statin?",
+              "options": [
+                "a) Active liver disease",
+                "b) Diabetes mellitus",
+                "c) Hypertension",
+                "d) Chronic kidney disease"
+              ],
+              "answer": "a) Active liver disease",
+              "explanation": "Statins are contraindicated in patients with active liver disease or unexplained persistent elevations in liver enzymes."
+            },
+            {
+              "stem": "A 70-year-old man with CKD stage 5 (eGFR <15 mL/min/1.73m²) on hemodialysis presents with a hemoglobin of 8.5 g/dL. Which of the following is the most appropriate management?",
+              "options": [
+                "a) Start oral ferrous sulfate 325 mg TID",
+                "b) Administer IV iron sucrose 100 mg weekly for 5 doses",
+                "c) Start epoetin alfa 40,000 units weekly",
+                "d) Transfuse 2 units of packed red blood cells"
+              ],
+              "answer": "c) Start epoetin alfa 40,000 units weekly",
+              "explanation": "Erythropoiesis-stimulating agents (ESAs) are indicated for anemia of CKD in dialysis patients when hemoglobin is <10 g/dL."
+            },
+            {
+              "stem": "Which of the following electrolytes is most likely to be depleted in a patient on chronic loop diuretic therapy?",
+              "options": [
+                "a) Sodium",
+                "b) Potassium",
+                "c) Calcium",
+                "d) Magnesium"
+              ],
+              "answer": "b) Potassium",
+              "explanation": "Loop diuretics increase urinary potassium excretion, leading to hypokalemia."
+            },
+            {
+              "stem": "A 65-year-old woman with hypertension and CKD stage 3 (eGFR 48 mL/min/1.73m²) is started on lisinopril 5 mg daily. Which of the following is the most appropriate monitoring parameter?",
+              "options": [
+                "a) Serum potassium and creatinine at baseline, 1-2 weeks after initiation, and periodically thereafter",
+                "b) INR every 4 weeks",
+                "c) Liver function tests monthly",
+                "d) Urine protein-to-creatinine ratio annually"
+              ],
+              "answer": "a) Serum potassium and creatinine at baseline, 1-2 weeks after initiation, and periodically thereafter",
+              "explanation": "ACE inhibitors require monitoring of serum potassium and creatinine due to risk of hyperkalemia and acute kidney injury."
+            },
+            {
+              "stem": "Which of the following is a potassium-sparing diuretic that acts as an aldosterone antagonist?",
+              "options": [
+                "a) Hydrochlorothiazide",
+                "b) Furosemide",
+                "c) Spironolactone",
+                "d) Amiloride"
+              ],
+              "answer": "c) Spironolactone",
+              "explanation": "Spironolactone is a mineralocorticoid receptor antagonist that reduces potassium excretion."
+            },
+            {
+              "stem": "A 50-year-old man with hypertension and type 2 diabetes is found to have a LDL cholesterol of 4.2 mmol/L. Which of the following is the most appropriate lipid-lowering therapy?",
+              "options": [
+                "a) Atorvastatin 80 mg daily",
+                "b) Ezetimibe 10 mg daily",
+                "c) Fenofibrate 145 mg daily",
+                "d) Niacin 1 g TID"
+              ],
+              "answer": "a) Atorvastatin 80 mg daily",
+              "explanation": "High-intensity statin therapy (e.g., atorvastatin 40-80 mg) is recommended for patients with diabetes and LDL >2.6 mmol/L."
+            },
+            {
+              "stem": "Which of the following is a reversible direct thrombin inhibitor used for anticoagulation in patients with heparin-induced thrombocytopenia (HIT)?",
+              "options": [
+                "a) Warfarin",
+                "b) Dabigatran",
+                "c) Argatroban",
+                "d) Rivaroxaban"
+              ],
+              "answer": "c) Argatroban",
+              "explanation": "Argatroban is a direct thrombin inhibitor used for anticoagulation in HIT due to its rapid onset and short half-life."
+            },
+            {
+              "stem": "A 68-year-old woman with atrial fibrillation (CHA2DS2-VASc score 4) is started on warfarin for stroke prevention. Which of the following is the most appropriate INR target?",
+              "options": [
+                "a) 1.5-2.0",
+                "b) 2.0-3.0",
+                "c) 2.5-3.5",
+                "d) 3.0-4.0"
+              ],
+              "answer": "b) 2.0-3.0",
+              "explanation": "Warfarin therapy for atrial fibrillation targets an INR of 2.0-3.0 for optimal stroke prevention."
+            },
+            {
+              "stem": "Which of the following is a non-dihydropyridine calcium channel blocker used for rate control in atrial fibrillation?",
+              "options": [
+                "a) Amlodipine",
+                "b) Nifedipine",
+                "c) Diltiazem",
+                "d) Felodipine"
+              ],
+              "answer": "c) Diltiazem",
+              "explanation": "Diltiazem and verapamil are non-dihydropyridine calcium channel blockers used for rate control in atrial fibrillation."
+            },
+            {
+              "stem": "A 75-year-old man with CKD stage 4 (eGFR 22 mL/min/1.73m²) and hypertension is started on amlodipine 5 mg daily. Which of the following is the most appropriate monitoring parameter?",
+              "options": [
+                "a) Serum potassium",
+                "b) Serum creatinine",
+                "c) Blood pressure",
+                "d) INR"
+              ],
+              "answer": "c) Blood pressure",
+              "explanation": "Amlodipine is a calcium channel blocker used for hypertension; monitoring focuses on blood pressure control."
+            },
+            {
+              "stem": "Which of the following is a contraindication to the use of a beta blocker?",
+              "options": [
+                "a) Asthma",
+                "b) Hypertension",
+                "c) Heart failure with reduced ejection fraction",
+                "d) Post-MI"
+              ],
+              "answer": "a) Asthma",
+              "explanation": "Beta blockers are contraindicated in patients with severe asthma due to risk of bronchospasm."
+            },
+            {
+              "stem": "A 55-year-old woman with hypertension and CKD stage 3 (eGFR 45 mL/min/1.73m²) is started on losartan 50 mg daily. Which of the following is the most appropriate monitoring parameter?",
+              "options": [
+                "a) Serum potassium and creatinine at baseline, 1-2 weeks after initiation, and periodically thereafter",
+                "b) INR every 4 weeks",
+                "c) Liver function tests monthly",
+                "d) Urine protein-to-creatinine ratio annually"
+              ],
+              "answer": "a) Serum potassium and creatinine at baseline, 1-2 weeks after initiation, and periodically thereafter",
+              "explanation": "ARBs require monitoring of serum potassium and creatinine due to risk of hyperkalemia and acute kidney injury."
+            },
+            {
+              "stem": "Which of the following is a loop diuretic used for fluid overload in heart failure?",
+              "options": [
+                "a) Hydrochlorothiazide",
+                "b) Chlorthalidone",
+                "c) Furosemide",
+                "d) Spironolactone"
+              ],
+              "answer": "c) Furosemide",
+              "explanation": "Furosemide is a loop diuretic used for rapid diuresis in heart failure and fluid overload."
+            },
+            {
+              "stem": "A 60-year-old man with hypertension and CKD stage 3 (eGFR 48 mL/min/1.73m²) is found to have a serum potassium of 5.2 mmol/L. Which of the following is the most appropriate intervention?",
+              "options": [
+                "a) Start sodium polystyrene sulfonate 15 g PO",
+                "b) Administer IV calcium gluconate 10% 10 mL over 2 minutes",
+                "c) Start furosemide 40 mg IV",
+                "d) Administer insulin 10 units IV with 50 mL of 50% dextrose"
+              ],
+              "answer": "a) Start sodium polystyrene sulfonate 15 g PO",
+              "explanation": "Sodium polystyrene sulfonate is a potassium binder used for mild to moderate hyperkalemia in CKD."
+            },
+            {
+              "stem": "Which of the following is a class Ic antiarrhythmic agent?",
+              "options": [
+                "a) Lidocaine",
+                "b) Flecainide",
+                "c) Amiodarone",
+                "d) Diltiazem"
+              ],
+              "answer": "b) Flecainide",
+              "explanation": "Flecainide is a class Ic antiarrhythmic that slows conduction in cardiac tissue."
+            },
+            {
+              "stem": "A 70-year-old woman with hypertension and CKD stage 4 (eGFR 22 mL/min/1.73m²) is started on atorvastatin 40 mg daily. Which of the following is the most appropriate monitoring parameter?",
+              "options": [
+                "a) Serum potassium",
+                "b) Serum creatinine",
+                "c) Liver function tests at baseline, 6-12 weeks after initiation, and periodically thereafter",
+                "d) INR"
+              ],
+              "answer": "c) Liver function tests at baseline, 6-12 weeks after initiation, and periodically thereafter",
+              "explanation": "Statins require monitoring of liver function tests due to risk of hepatotoxicity."
+            },
+            {
+              "stem": "Which of the following is a contraindication to the use of a thiazide diuretic?",
+              "options": [
+                "a) Gout",
+                "b) Hypertension",
+                "c) Heart failure",
+                "d) Diabetes"
+              ],
+              "answer": "a) Gout",
+              "explanation": "Thiazide diuretics increase serum uric acid levels, exacerbating gout."
+            },
+            {
+              "stem": "A 55-year-old man with hypertension and CKD stage 3 (eGFR 45 mL/min/1.73m²) is started on hydrochlorothiazide 25 mg daily. Which of the following is the most appropriate monitoring parameter?",
+              "options": [
+                "a) Serum potassium and creatinine at baseline, 1-2 weeks after initiation, and periodically thereafter",
+                "b) INR every 4 weeks",
+                "c) Liver function tests monthly",
+                "d) Urine protein-to-creatinine ratio annually"
+              ],
+              "answer": "a) Serum potassium and creatinine at baseline, 1-2 weeks after initiation, and periodically thereafter",
+              "explanation": "Thiazide diuretics require monitoring of serum potassium and creatinine due to risk of hypokalemia and acute kidney injury."
+            },
+            {
+              "stem": "Which of the following is a reversible factor Xa inhibitor used for anticoagulation in patients with atrial fibrillation?",
+              "options": [
+                "a) Warfarin",
+                "b) Dabigatran",
+                "c) Rivaroxaban",
+                "d) Apixaban"
+              ],
+              "answer": "d) Apixaban",
+              "explanation": "Apixaban is a direct oral anticoagulant (DOAC) that selectively inhibits factor Xa."
+            },
+            {
+              "stem": "A 65-year-old woman with hypertension and CKD stage 3 (eGFR 48 mL/min/1.73m²) is started on amlodipine 5 mg daily. Which of the following is the most appropriate monitoring parameter?",
+              "options": [
+                "a) Serum potassium",
+                "b) Serum creatinine",
+                "c) Blood pressure",
+                "d) INR"
+              ],
+              "answer": "c) Blood pressure",
+              "explanation": "Amlodipine is a calcium channel blocker used for hypertension; monitoring focuses on blood pressure control."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "a) List the four classes of antihypertensive agents recommended as first-line therapy for uncomplicated hypertension according to the 2023 ESH/ESC guidelines. (2 marks)\nb) For each class, provide one example of a drug. (2 marks)\nc) Briefly explain why beta blockers are no longer recommended as first-line therapy in uncomplicated hypertension. (1 mark)",
+              "modelAnswer": "a) The four classes of antihypertensive agents recommended as first-line therapy for uncomplicated hypertension are:\n   - Calcium channel blockers (e.g., amlodipine)\n   - ACE inhibitors (e.g., lisinopril)\n   - Angiotensin II receptor blockers (ARBs) (e.g., losartan)\n   - Thiazide diuretics (e.g., hydrochlorothiazide)\n\nb) Examples of drugs in each class:\n   - Calcium channel blockers: Amlodipine\n   - ACE inhibitors: Lisinopril\n   - ARBs: Losartan\n   - Thiazide diuretics: Hydrochlorothiazide\n\nc) Beta blockers are no longer recommended as first-line therapy in uncomplicated hypertension due to their inferior protection against stroke and heart failure compared to other classes, and their association with increased risk of new-onset diabetes."
+            },
+            {
+              "stem": "a) List the three primary mechanisms by which loop diuretics exert their diuretic effect. (1.5 marks)\nb) Provide two examples of loop diuretics. (1 mark)\nc) Describe two adverse effects associated with chronic loop diuretic use. (2.5 marks)",
+              "modelAnswer": "a) The three primary mechanisms by which loop diuretics exert their diuretic effect are:\n   - Inhibition of the Na+-K+-2Cl- cotransporter (NKCC2) in the thick ascending limb of the loop of Henle\n   - Increased excretion of sodium, chloride, and water\n   - Increased excretion of potassium, calcium, and magnesium\n\nb) Examples of loop diuretics:\n   - Furosemide\n   - Bumetanide\n\nc) Adverse effects associated with chronic loop diuretic use:\n   - Hypokalemia: Loop diuretics increase urinary potassium excretion, leading to low serum potassium levels, which can cause muscle weakness, cramps, and cardiac arrhythmias.\n   - Metabolic alkalosis: Volume depletion and hypochloremia lead to contraction alkalosis, which can cause symptoms such as confusion, nausea, and vomiting."
+            },
+            {
+              "stem": "a) List the four classes of antiarrhythmic drugs according to the Vaughan Williams classification. (2 marks)\nb) For each class, provide one example of a drug. (2 marks)\nc) Briefly explain the mechanism of action of class III antiarrhythmics. (1 mark)",
+              "modelAnswer": "a) The four classes of antiarrhythmic drugs according to the Vaughan Williams classification are:\n   - Class I: Sodium channel blockers\n   - Class II: Beta blockers\n   - Class III: Potassium channel blockers\n   - Class IV: Calcium channel blockers\n\nb) Examples of drugs in each class:\n   - Class I: Lidocaine\n   - Class II: Metoprolol\n   - Class III: Amiodarone\n   - Class IV: Diltiazem\n\nc) The mechanism of action of class III antiarrhythmics is the blockade of potassium channels, which prolongs the action potential duration and refractory period, thereby suppressing re-entrant arrhythmias."
+            },
+            {
+              "stem": "a) List the three primary goals of therapy in the management of heart failure with reduced ejection fraction (HFrEF). (1.5 marks)\nb) Provide two examples of beta blockers used in the management of HFrEF. (1 mark)\nc) Describe two adverse effects associated with beta blocker use in HFrEF. (2.5 marks)",
+              "modelAnswer": "a) The three primary goals of therapy in the management of HFrEF are:\n   - Improve symptoms and quality of life\n   - Reduce hospitalizations\n   - Prolong survival\n\nb) Examples of beta blockers used in the management of HFrEF:\n   - Carvedilol\n   - Metoprolol succinate\n\nc) Adverse effects associated with beta blocker use in HFrEF:\n   - Bradycardia: Beta blockers slow the heart rate, which can lead to symptoms such as fatigue, dizziness, and syncope.\n   - Hypotension: Beta blockers reduce blood pressure, which can cause symptoms such as lightheadedness and syncope."
+            },
+            {
+              "stem": "a) List the four primary classes of lipid-lowering agents. (2 marks)\nb) For each class, provide one example of a drug. (2 marks)\nc) Briefly explain why statins are the first-line therapy for lipid management in most patients. (1 mark)",
+              "modelAnswer": "a) The four primary classes of lipid-lowering agents are:\n   - HMG-CoA reductase inhibitors (statins)\n   - Ezetimibe (cholesterol absorption inhibitor)\n   - PCSK9 inhibitors\n   - Fibrates\n\nb) Examples of drugs in each class:\n   - Statins: Atorvastatin\n   - Ezetimibe: Ezetimibe\n   - PCSK9 inhibitors: Alirocumab\n   - Fibrates: Fenofibrate\n\nc) Statins are the first-line therapy for lipid management in most patients due to their proven efficacy in reducing LDL cholesterol, cardiovascular events, and mortality, as well as their favorable safety profile and cost-effectiveness."
+            },
+            {
+              "stem": "a) List the three primary mechanisms by which ACE inhibitors exert their antihypertensive and cardioprotective effects. (1.5 marks)\nb) Provide two examples of ACE inhibitors. (1 mark)\nc) Describe two adverse effects associated with ACE inhibitor use. (2.5 marks)",
+              "modelAnswer": "a) The three primary mechanisms by which ACE inhibitors exert their antihypertensive and cardioprotective effects are:\n   - Inhibition of angiotensin-converting enzyme (ACE), reducing the conversion of angiotensin I to angiotensin II\n   - Decreased vasoconstriction and aldosterone secretion\n   - Reduced sodium and water retention\n\nb) Examples of ACE inhibitors:\n   - Lisinopril\n   - Enalapril\n\nc) Adverse effects associated with ACE inhibitor use:\n   - Hyperkalemia: ACE inhibitors reduce aldosterone secretion, leading to increased serum potassium levels.\n   - Dry cough: ACE inhibitors can cause a persistent dry cough due to increased bradykinin levels."
+            },
+            {
+              "stem": "a) List the three primary classes of anticoagulants. (1.5 marks)\nb) For each class, provide one example of a drug. (1.5 marks)\nc) Briefly explain the mechanism of action of direct oral anticoagulants (DOACs). (2 marks)",
+              "modelAnswer": "a) The three primary classes of anticoagulants are:\n   - Vitamin K antagonists (e.g., warfarin)\n   - Heparins (e.g., unfractionated heparin, low-molecular-weight heparin)\n   - Direct oral anticoagulants (DOACs)\n\nb) Examples of drugs in each class:\n   - Vitamin K antagonists: Warfarin\n   - Heparins: Enoxaparin\n   - DOACs: Apixaban\n\nc) The mechanism of action of DOACs is the direct inhibition of specific clotting factors:\n   - Direct thrombin inhibitors (e.g., dabigatran) inhibit thrombin (factor IIa)\n   - Factor Xa inhibitors (e.g., apixaban, rivaroxaban) inhibit factor Xa, preventing the conversion of prothrombin to thrombin."
+            },
+            {
+              "stem": "a) List the four primary classes of diuretics. (2 marks)\nb) For each class, provide one example of a drug. (2 marks)\nc) Briefly explain why potassium-sparing diuretics are often combined with loop or thiazide diuretics. (1 mark)",
+              "modelAnswer": "a) The four primary classes of diuretics are:\n   - Loop diuretics\n   - Thiazide diuretics\n   - Potassium-sparing diuretics\n   - Osmotic diuretics\n\nb) Examples of drugs in each class:\n   - Loop diuretics: Furosemide\n   - Thiazide diuretics: Hydrochlorothiazide\n   - Potassium-sparing diuretics: Spironolactone\n   - Osmotic diuretics: Mannitol\n\nc) Potassium-sparing diuretics are often combined with loop or thiazide diuretics to counteract the potassium-wasting effects of these agents, thereby reducing the risk of hypokalemia."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 68-year-old man with a history of hypertension, type 2 diabetes, and CKD stage 3 (eGFR 45 mL/min/1.73m²) presents to the emergency department with a BP of 190/110 mmHg, headache, and blurred vision. His current medications include amlodipine 10 mg daily, metformin 500 mg BID, and atorvastatin 40 mg nocte.\n\na) What is the most likely diagnosis? (2 marks)\nb) Outline the immediate management of this patient, including pharmacological and non-pharmacological interventions. (8 marks)\nc) What are the long-term management goals for this patient, and how would you monitor his progress? (5 marks)",
+              "modelAnswer": "a) The most likely diagnosis is hypertensive emergency with target organ damage (hypertensive retinopathy and possible hypertensive encephalopathy).\n\nb) Immediate management:\n   - Pharmacological interventions:\n     1. Administer IV labetalol 20 mg over 2 minutes, then 20-80 mg every 10 minutes as needed (goal: reduce MAP by 10-20% in the first hour).\n     2. Consider IV nitroglycerin or nicardipine if labetalol is contraindicated or ineffective.\n     3. Avoid sublingual nifedipine due to risk of unpredictable BP drops.\n     4. Continue home antihypertensives (amlodipine) unless contraindicated.\n     5. Monitor BP every 5-15 minutes during acute phase.\n   - Non-pharmacological interventions:\n     1. Place patient in a quiet, dark room to reduce stimulation.\n     2. Ensure continuous cardiac and BP monitoring.\n     3. Assess for signs of end-organ damage (e.g., fundoscopy for retinopathy, neurological exam).\n     4. Obtain baseline labs (serum creatinine, potassium, CBC, troponin, ECG).\n\nc) Long-term management goals and monitoring:\n   - BP target: <130/80 mmHg (KDIGO 2021 guidelines for diabetes and CKD).\n   - Glycemic control: HbA1c <7% (ADA guidelines).\n   - Lipid control: LDL <1.8 mmol/L (ESC 2019 guidelines).\n   - Renal protection: Monitor eGFR and urine albumin-to-creatinine ratio (UACR) annually.\n   - Monitoring schedule:\n     1. BP: Every 1-3 months once stable.\n     2. Renal function: Serum creatinine and eGFR every 3-6 months.\n     3. Electrolytes: Serum potassium every 3-6 months (due to ACEi/ARB use).\n     4. HbA1c: Every 3-6 months.\n     5. Lipid profile: Annually or as indicated.\n   - Medication adjustments:\n     1. Consider adding an ACE inhibitor or ARB for renal protection (e.g., lisinopril 5-10 mg daily).\n     2. Add a thiazide-like diuretic (e.g., indapamide) if BP remains uncontrolled.\n     3. Optimize diabetes management (e.g., consider SGLT2 inhibitor like empagliflozin for renal and CV benefits)."
+            },
+            {
+              "stem": "A 55-year-old woman with a history of HFrEF (LVEF 25%), hypertension, and CKD stage 3 (eGFR 42 mL/min/1.73m²) presents to the clinic with worsening dyspnea, orthopnea, and bilateral lower limb edema. Her current medications include carvedilol 25 mg BID, enalapril 10 mg BID, spironolactone 25 mg daily, and furosemide 40 mg daily. She reports adherence to her medications but continues to experience symptoms.\n\na) What is the most likely cause of her worsening symptoms? (2 marks)\nb) Outline a step-by-step approach to optimizing her pharmacotherapy, including drug adjustments and additions. (10 marks)\nc) What non-pharmacological interventions would you recommend for this patient? (3 marks)",
+              "modelAnswer": "a) The most likely cause of her worsening symptoms is decompensated heart failure, possibly due to fluid overload and suboptimal diuresis.\n\nb) Step-by-step approach to optimizing pharmacotherapy:\n   1. Assess volume status and diuretic response:\n      - Check for signs of fluid overload (e.g., weight gain, edema, crackles on lung exam).\n      - Consider increasing furosemide to 80 mg BID or adding a thiazide-like diuretic (e.g., metolazone 2.5-5 mg daily) for synergistic diuresis.\n   2. Optimize beta blocker therapy:\n      - Titrate carvedilol to the maximum tolerated dose (e.g., 50 mg BID) if heart rate and BP allow.\n      - Ensure patient is euvolemic before up-titration.\n   3. Optimize ACE inhibitor/ARB therapy:\n      - Titrate enalapril to the maximum tolerated dose (e.g., 20 mg BID) if BP allows.\n      - Consider switching to an ARB (e.g., valsartan) if ACE inhibitor is not tolerated (e.g., due to cough).\n   4. Add SGLT2 inhibitor:\n      - Start dapagliflozin 10 mg daily or empagliflozin 10 mg daily for additional diuretic and cardioprotective effects.\n   5. Consider adding an ARNI (angiotensin receptor-neprilysin inhibitor):\n      - Switch enalapril to sacubitril/valsartan 49/51 mg BID (if BP allows) for improved outcomes.\n   6. Consider adding ivabradine:\n      - If heart rate remains >70 bpm despite beta blocker optimization, add ivabradine 5 mg BID to reduce heart rate and improve symptoms.\n   7. Monitor electrolytes and renal function:\n      - Check serum potassium, creatinine, and eGFR 1-2 weeks after any medication changes.\n   8. Consider digoxin:\n      - Add digoxin 0.125 mg daily if patient remains symptomatic despite optimized therapy (use cautiously in CKD).\n\nc) Non-pharmacological interventions:\n   1. Sodium restriction: Advise a sodium-restricted diet (<2 g/day) to reduce fluid retention.\n   2. Fluid restriction: Limit fluid intake to 1.5-2 L/day if hyponatremia is present.\n   3. Daily weight monitoring: Instruct patient to weigh herself daily and report weight gain >2 kg in 3 days.\n   4. Exercise: Encourage moderate exercise (e.g., walking) as tolerated to improve functional capacity.\n   5. Smoking cessation and alcohol reduction: Advise smoking cessation and limit alcohol intake."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Cardiovascular & Renal Therapeutics",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 68-year-old male with stage 3 CKD (eGFR 45 mL/min/1.73m²) and hypertension presents with BP 158/94 mmHg. His current medications include amlodipine 10 mg daily and atorvastatin 40 mg nocte. Which of the following antihypertensives is MOST appropriate to add for BP control while minimizing renal risk?",
+              "options": [
+                "a) Lisinopril 10 mg daily",
+                "b) Hydrochlorothiazide 25 mg daily",
+                "c) Spironolactone 25 mg daily",
+                "d) Doxazosin 4 mg nocte"
+              ],
+              "answer": "a) Lisinopril 10 mg daily",
+              "explanation": "ACE inhibitors (e.g., lisinopril) are first-line for hypertension in CKD due to renoprotective effects, despite a slight initial rise in creatinine. Thiazides are less effective at eGFR <45, spironolactone risks hyperkalaemia in CKD, and doxazosin is not first-line."
+            },
+            {
+              "stem": "A 52-year-old female with NYHA class II heart failure with reduced ejection fraction (HFrEF) is currently on carvedilol 12.5 mg BD and furosemide 40 mg BD. Her BP is 102/68 mmHg, HR 58 bpm, and she reports mild dyspnoea on exertion. Which of the following is the MOST appropriate next step?",
+              "options": [
+                "a) Increase carvedilol to 25 mg BD",
+                "b) Add spironolactone 25 mg daily",
+                "c) Add digoxin 0.125 mg daily",
+                "d) Switch carvedilol to metoprolol succinate"
+              ],
+              "answer": "b) Add spironolactone 25 mg daily",
+              "explanation": "Spironolactone is recommended in HFrEF patients with persistent symptoms despite ACEI/ARB and beta-blocker therapy (NYHA II-IV) to reduce mortality and hospitalization. Increasing carvedilol risks bradycardia/ hypotension; digoxin is for rate control in AF or symptom control in HFrEF; metoprolol succinate is not superior to carvedilol."
+            },
+            {
+              "stem": "A 70-year-old male with atrial fibrillation (AF) and CHA₂DS₂-VASc score 3 is admitted for elective knee replacement. His CrCl is 55 mL/min. Which anticoagulant is MOST appropriate for thromboprophylaxis post-surgery?",
+              "options": [
+                "a) Apixaban 2.5 mg BD",
+                "b) Warfarin (INR 2–3)",
+                "c) Enoxaparin 40 mg SC daily",
+                "d) Rivaroxaban 10 mg daily"
+              ],
+              "answer": "c) Enoxaparin 40 mg SC daily",
+              "explanation": "LMWH (e.g., enoxaparin) is preferred for post-surgical thromboprophylaxis in CKD (CrCl 30–59 mL/min) due to predictable pharmacokinetics and no need for monitoring. DOACs require dose adjustment or are contraindicated in moderate CKD; warfarin is less practical perioperatively."
+            },
+            {
+              "stem": "A 45-year-old male with hypertension and type 2 diabetes presents with BP 148/92 mmHg. His HbA1c is 7.8% and LDL-C is 3.2 mmol/L. Which of the following is the MOST appropriate BP target according to KDIGO guidelines?",
+              "options": [
+                "a) <140/90 mmHg",
+                "b) <130/80 mmHg",
+                "c) <120/70 mmHg",
+                "d) <150/95 mmHg"
+              ],
+              "answer": "b) <130/80 mmHg",
+              "explanation": "KDIGO recommends a BP target of <130/80 mmHg in patients with diabetes and hypertension to reduce renal and cardiovascular risk. <140/90 is general CKD target; <120/70 is not standard; <150/95 is too lenient."
+            },
+            {
+              "stem": "A 60-year-old female with chronic AF (CHA₂DS₂-VASc 4) is started on dabigatran 150 mg BD for stroke prevention. Which of the following is the MOST appropriate monitoring parameter?",
+              "options": [
+                "a) INR every 4 weeks",
+                "b) aPTT every 6 months",
+                "c) Renal function (eGFR) every 6–12 months",
+                "d) D-dimer levels monthly"
+              ],
+              "answer": "c) Renal function (eGFR) every 6–12 months",
+              "explanation": "Dabigatran is renally excreted; monitoring eGFR is critical to adjust dose and avoid accumulation. INR is for warfarin; aPTT is not routinely monitored for DOACs; D-dimer is not relevant for AF anticoagulation."
+            },
+            {
+              "stem": "A 55-year-old male with NYHA class III HFrEF (EF 30%) is on lisinopril 20 mg daily, carvedilol 25 mg BD, and spironolactone 25 mg daily. He develops hyperkalaemia (K+ 5.8 mmol/L) and worsening renal function (eGFR 35 mL/min). Which of the following is the MOST appropriate adjustment?",
+              "options": [
+                "a) Stop spironolactone and start eplerenone",
+                "b) Reduce spironolactone to 12.5 mg daily and monitor K+",
+                "c) Switch spironolactone to amiloride 5 mg daily",
+                "d) Increase lisinopril to 40 mg daily"
+              ],
+              "answer": "b) Reduce spironolactone to 12.5 mg daily and monitor K+",
+              "explanation": "Reducing spironolactone dose and monitoring K+ is appropriate to manage hyperkalaemia while retaining some mineralocorticoid receptor antagonism benefit. Stopping spironolactone loses mortality benefit; amiloride is not equivalent; increasing lisinopril worsens hyperkalaemia."
+            },
+            {
+              "stem": "A 30-year-old female with no comorbidities presents with BP 162/104 mmHg on three separate occasions. Ambulatory BP monitoring confirms daytime average BP 158/98 mmHg. Which of the following is the MOST appropriate initial antihypertensive therapy?",
+              "options": [
+                "a) Amlodipine 5 mg daily",
+                "b) Hydrochlorothiazide 12.5 mg daily",
+                "c) Lisinopril 10 mg daily",
+                "d) Doxazosin 4 mg nocte"
+              ],
+              "answer": "a) Amlodipine 5 mg daily",
+              "explanation": "Amlodipine (CCB) is a first-line option for uncomplicated hypertension in young adults due to efficacy and tolerability. Thiazides are less effective in normovolaemic patients; ACEI is not first-line unless compelling indications (e.g., diabetes); doxazosin is not first-line."
+            },
+            {
+              "stem": "A 72-year-old male with HFrEF (EF 25%) and CKD stage 4 (eGFR 25 mL/min) is admitted with acute decompensated heart failure. His current medications include furosemide 80 mg BD and carvedilol 12.5 mg BD. Which of the following is the MOST appropriate diuretic adjustment?",
+              "options": [
+                "a) Increase furosemide to 160 mg BD",
+                "b) Add spironolactone 25 mg daily",
+                "c) Switch to bumetanide 4 mg BD",
+                "d) Add metolazone 2.5 mg daily"
+              ],
+              "answer": "d) Add metolazone 2.5 mg daily",
+              "explanation": "Adding a thiazide-like diuretic (metolazone) enhances diuresis in resistant oedema, especially in CKD where loop diuretic efficacy is reduced. Increasing furosemide may not overcome diuretic resistance; spironolactone risks hyperkalaemia in CKD; bumetanide is not superior to furosemide."
+            },
+            {
+              "stem": "A 50-year-old male with hypertension and dyslipidaemia is started on atorvastatin 40 mg nocte. His baseline LFTs are normal. Which of the following is the MOST appropriate monitoring schedule?",
+              "options": [
+                "a) LFTs at baseline and 6–12 weeks after initiation",
+                "b) LFTs monthly for 6 months",
+                "c) LFTs only if symptomatic",
+                "d) LFTs annually regardless of symptoms"
+              ],
+              "answer": "a) LFTs at baseline and 6–12 weeks after initiation",
+              "explanation": "Statins require baseline LFTs and repeat at 6–12 weeks to monitor for hepatotoxicity. Monthly monitoring is excessive; monitoring only if symptomatic may miss early elevations; annual monitoring is insufficient."
+            },
+            {
+              "stem": "A 65-year-old female with AF (CHA₂DS₂-VASc 2) and CKD stage 3 (eGFR 48 mL/min) is started on rivaroxaban 15 mg daily for stroke prevention. Which of the following is the MOST appropriate dose adjustment?",
+              "options": [
+                "a) No adjustment needed",
+                "b) Reduce to 10 mg daily",
+                "c) Increase to 20 mg daily",
+                "d) Switch to warfarin"
+              ],
+              "answer": "b) Reduce to 10 mg daily",
+              "explanation": "Rivaroxaban requires dose reduction to 15 mg daily (or 10 mg daily if eGFR 15–49 mL/min) for stroke prevention in AF. No adjustment is unsafe in CKD; increasing dose risks bleeding; switching to warfarin is not necessary."
+            },
+            {
+              "stem": "A 40-year-old male with hypertension and CKD stage 2 (eGFR 65 mL/min) is started on lisinopril 10 mg daily. His baseline creatinine is 120 µmol/L (eGFR 65 mL/min) and K+ 4.2 mmol/L. Which of the following is the MOST appropriate next step after 1 week?",
+              "options": [
+                "a) Repeat creatinine and K+ in 1–2 weeks",
+                "b) Increase lisinopril to 20 mg daily",
+                "c) Add amlodipine 5 mg daily",
+                "d) Stop lisinopril and switch to losartan"
+              ],
+              "answer": "a) Repeat creatinine and K+ in 1–2 weeks",
+              "explanation": "ACEI/ARB initiation requires monitoring of creatinine and K+ within 1–2 weeks to assess for expected small rise in creatinine and hyperkalaemia. Increasing dose prematurely risks complications; adding another antihypertensive is not necessary; switching to ARB is not indicated unless ACEI intolerance."
+            },
+            {
+              "stem": "A 55-year-old female with NYHA class II HFrEF (EF 35%) is on lisinopril 20 mg daily, carvedilol 25 mg BD, and spironolactone 25 mg daily. She develops gynaecomastia. Which of the following is the MOST appropriate alternative to spironolactone?",
+              "options": [
+                "a) Eplerenone 25 mg daily",
+                "b) Amiloride 5 mg daily",
+                "c) Furosemide 40 mg BD",
+                "d) Digoxin 0.125 mg daily"
+              ],
+              "answer": "a) Eplerenone 25 mg daily",
+              "explanation": "Eplerenone is a selective mineralocorticoid receptor antagonist with less antiandrogenic effects, making it suitable for patients intolerant to spironolactone due to gynaecomastia. Amiloride lacks mortality benefit; furosemide is not a mineralocorticoid antagonist; digoxin does not address aldosterone effects."
+            },
+            {
+              "stem": "A 68-year-old male with hypertension and CKD stage 3 (eGFR 42 mL/min) is started on hydrochlorothiazide 25 mg daily. Which of the following electrolyte abnormalities is MOST likely to occur?",
+              "options": [
+                "a) Hyperkalaemia",
+                "b) Hypercalcaemia",
+                "c) Hypokalaemia",
+                "d) Hypernatraemia"
+              ],
+              "answer": "c) Hypokalaemia",
+              "explanation": "Thiazide diuretics increase urinary potassium excretion, leading to hypokalaemia. Hyperkalaemia is unlikely unless combined with ACEI/ARB/ spironolactone; hypercalcaemia and hypernatraemia are not typical."
+            },
+            {
+              "stem": "A 70-year-old female with AF (CHA₂DS₂-VASc 3) and CKD stage 4 (eGFR 22 mL/min) is started on apixaban 5 mg BD for stroke prevention. Which of the following is the MOST appropriate monitoring parameter?",
+              "options": [
+                "a) INR monthly",
+                "b) Anti-Xa levels weekly",
+                "c) Renal function (eGFR) every 3–6 months",
+                "d) D-dimer levels monthly"
+              ],
+              "answer": "c) Renal function (eGFR) every 3–6 months",
+              "explanation": "Apixaban is renally excreted; monitoring eGFR is critical to adjust dose and avoid accumulation. INR is for warfarin; anti-Xa monitoring is not standard for DOACs; D-dimer is not relevant for AF anticoagulation."
+            },
+            {
+              "stem": "A 50-year-old male with hypertension and type 2 diabetes presents with BP 152/96 mmHg. His current medications include metformin 1 g BD and atorvastatin 40 mg nocte. Which of the following is the MOST appropriate initial antihypertensive therapy?",
+              "options": [
+                "a) Lisinopril 10 mg daily",
+                "b) Hydrochlorothiazide 12.5 mg daily",
+                "c) Amlodipine 5 mg daily",
+                "d) Doxazosin 4 mg nocte"
+              ],
+              "answer": "a) Lisinopril 10 mg daily",
+              "explanation": "ACE inhibitors (e.g., lisinopril) are first-line in diabetes due to renoprotective effects and reduction in cardiovascular events. Thiazides are less effective in normovolaemic diabetics; CCBs are second-line; doxazosin is not first-line."
+            },
+            {
+              "stem": "A 60-year-old male with HFrEF (EF 20%) and CKD stage 3 (eGFR 38 mL/min) is admitted with acute decompensated heart failure. His current medications include furosemide 80 mg BD and carvedilol 12.5 mg BD. Which of the following is the MOST appropriate inotropic agent if he remains hypotensive?",
+              "options": [
+                "a) Dobutamine",
+                "b) Digoxin",
+                "c) Milrinone",
+                "d) Levosimendan"
+              ],
+              "answer": "a) Dobutamine",
+              "explanation": "Dobutamine is a beta-1 agonist used for acute decompensated heart failure with hypotension or cardiogenic shock. Digoxin is for rate control in AF or chronic HFrEF; milrinone and levosimendan are not first-line inotropes due to risk of arrhythmias."
+            },
+            {
+              "stem": "A 45-year-old female with hypertension and CKD stage 2 (eGFR 68 mL/min) is started on losartan 50 mg daily. Her baseline creatinine is 110 µmol/L (eGFR 68 mL/min) and K+ 4.5 mmol/L. Which of the following is the MOST appropriate next step after 2 weeks?",
+              "options": [
+                "a) Repeat creatinine and K+ in 1–2 weeks",
+                "b) Increase losartan to 100 mg daily",
+                "c) Add hydrochlorothiazide 12.5 mg daily",
+                "d) Stop losartan and switch to amlodipine"
+              ],
+              "answer": "a) Repeat creatinine and K+ in 1���2 weeks",
+              "explanation": "ARB initiation requires monitoring of creatinine and K+ within 1–2 weeks to assess for expected small rise in creatinine and hyperkalaemia. Increasing dose prematurely risks complications; adding a thiazide may be considered later for BP control; switching to CCB is not necessary unless intolerance."
+            },
+            {
+              "stem": "A 55-year-old male with AF (CHA₂DS₂-VASc 4) and CKD stage 3 (eGFR 45 mL/min) is started on dabigatran 110 mg BD for stroke prevention. Which of the following is the MOST appropriate reversal agent in case of major bleeding?",
+              "options": [
+                "a) Protamine sulfate",
+                "b) Vitamin K",
+                "c) Idarucizumab",
+                "d) Andexanet alfa"
+              ],
+              "answer": "c) Idarucizumab",
+              "explanation": "Idarucizumab is a specific reversal agent for dabigatran. Protamine sulfate reverses heparin; vitamin K reverses warfarin; andexanet alfa reverses factor Xa inhibitors (e.g., rivaroxaban)."
+            },
+            {
+              "stem": "A 65-year-old female with hypertension and dyslipidaemia is started on simvastatin 40 mg nocte. Her baseline LFTs are normal. Which of the following is the MOST appropriate advice regarding grapefruit juice?",
+              "options": [
+                "a) Avoid grapefruit juice entirely",
+                "b) Limit to 1 glass daily",
+                "c) Limit to 1 glass weekly",
+                "d) No restriction needed"
+              ],
+              "answer": "a) Avoid grapefruit juice entirely",
+              "explanation": "Grapefruit juice inhibits CYP3A4, increasing simvastatin levels and risk of myopathy/rhabdomyolysis. Avoidance is recommended. Limiting intake does not eliminate risk."
+            },
+            {
+              "stem": "A 70-year-old male with HFrEF (EF 30%) and CKD stage 4 (eGFR 28 mL/min) is on lisinopril 20 mg daily, carvedilol 25 mg BD, and spironolactone 25 mg daily. He develops hyperkalaemia (K+ 5.9 mmol/L). Which of the following is the MOST appropriate immediate intervention?",
+              "options": [
+                "a) Stop spironolactone and start calcium polystyrene sulfonate",
+                "b) Reduce spironolactone to 12.5 mg daily and monitor K+",
+                "c) Administer intravenous calcium gluconate",
+                "d) Administer intravenous insulin and dextrose"
+              ],
+              "answer": "d) Administer intravenous insulin and dextrose",
+              "explanation": "For severe hyperkalaemia (K+ ≥6.0 mmol/L), immediate measures include IV insulin/dextrose to shift K+ intracellularly. Calcium gluconate is for ECG changes; reducing spironolactone is appropriate but not immediate; calcium polystyrene sulfonate is for non-urgent management."
+            },
+            {
+              "stem": "A 50-year-old male with hypertension and CKD stage 2 (eGFR 62 mL/min) is started on amlodipine 5 mg daily. Which of the following is the MOST likely adverse effect?",
+              "options": [
+                "a) Hyperkalaemia",
+                "b) Peripheral oedema",
+                "c) Hypoglycaemia",
+                "d) Bradycardia"
+              ],
+              "answer": "b) Peripheral oedema",
+              "explanation": "Amlodipine (CCB) commonly causes peripheral oedema due to vasodilation. Hyperkalaemia and bradycardia are not typical; hypoglycaemia is unrelated."
+            },
+            {
+              "stem": "A 60-year-old female with AF (CHA₂DS₂-VASc 3) and CKD stage 3 (eGFR 40 mL/min) is started on rivaroxaban 15 mg daily for stroke prevention. Which of the following is the MOST appropriate advice regarding NSAID use?",
+              "options": [
+                "a) Avoid NSAIDs entirely",
+                "b) Limit to 3 days per week",
+                "c) Use ibuprofen preferentially",
+                "d) No restriction needed"
+              ],
+              "answer": "a) Avoid NSAIDs entirely",
+              "explanation": "NSAIDs increase bleeding risk with anticoagulants and worsen renal function in CKD. Avoidance is recommended. Limiting use does not eliminate risk."
+            },
+            {
+              "stem": "A 45-year-old male with hypertension and type 2 diabetes presents with BP 148/94 mmHg. His HbA1c is 8.2% and LDL-C is 3.8 mmol/L. Which of the following is the MOST appropriate statin intensity?",
+              "options": [
+                "a) Atorvastatin 10 mg daily",
+                "b) Atorvastatin 40 mg daily",
+                "c) Rosuvastatin 5 mg daily",
+                "d) Simvastatin 20 mg daily"
+              ],
+              "answer": "b) Atorvastatin 40 mg daily",
+              "explanation": "High-intensity statin (atorvastatin 40–80 mg or rosuvastatin 20–40 mg) is recommended for patients with diabetes and additional cardiovascular risk factors. Low/moderate-intensity statins are insufficient."
+            },
+            {
+              "stem": "A 75-year-old male with HFrEF (EF 25%) and CKD stage 3 (eGFR 35 mL/min) is on lisinopril 20 mg daily, carvedilol 25 mg BD, and spironolactone 25 mg daily. He develops worsening renal function (eGFR 25 mL/min) and hyperkalaemia (K+ 5.7 mmol/L). Which of the following is the MOST appropriate adjustment?",
+              "options": [
+                "a) Stop spironolactone and start eplerenone",
+                "b) Reduce spironolactone to 12.5 mg daily and monitor K+",
+                "c) Switch spironolactone to amiloride 5 mg daily",
+                "d) Stop lisinopril and switch to amlodipine"
+              ],
+              "answer": "b) Reduce spironolactone to 12.5 mg daily and monitor K+",
+              "explanation": "Reducing spironolactone dose and monitoring K+ is appropriate to manage hyperkalaemia and worsening renal function while retaining some benefit. Stopping spironolactone loses mortality benefit; amiloride is not equivalent; stopping lisinopril risks worsening heart failure."
+            },
+            {
+              "stem": "A 55-year-old female with hypertension and CKD stage 2 (eGFR 68 mL/min) is started on hydrochlorothiazide 25 mg daily. Which of the following is the MOST likely metabolic adverse effect?",
+              "options": [
+                "a) Hyperglycaemia",
+                "b) Hypercalcaemia",
+                "c) Hyperuricaemia",
+                "d) Hypernatraemia"
+              ],
+              "answer": "c) Hyperuricaemia",
+              "explanation": "Thiazide diuretics increase uric acid reabsorption, leading to hyperuricaemia and gout risk. Hyperglycaemia is possible but less likely than hyperuricaemia; hypercalcaemia and hypernatraemia are not typical."
+            },
+            {
+              "stem": "A 60-year-old male with AF (CHA₂DS₂-VASc 4) and CKD stage 4 (eGFR 22 mL/min) is started on apixaban 5 mg BD for stroke prevention. Which of the following is the MOST appropriate advice regarding herbal supplements?",
+              "options": [
+                "a) Avoid St. John’s wort entirely",
+                "b) Limit to 1 capsule daily",
+                "c) Use garlic supplements preferentially",
+                "d) No restriction needed"
+              ],
+              "answer": "a) Avoid St. John’s wort entirely",
+              "explanation": "St. John’s wort induces CYP3A4 and P-gp, reducing apixaban levels and efficacy. Avoidance is recommended. Other supplements may also interact, but St. John’s wort is a well-known inducer."
+            },
+            {
+              "stem": "A 40-year-old male with hypertension and CKD stage 2 (eGFR 65 mL/min) is started on lisinopril 10 mg daily. His baseline creatinine is 120 µmol/L (eGFR 65 mL/min) and K+ 4.3 mmol/L. Which of the following is the MOST appropriate advice regarding potassium intake?",
+              "options": [
+                "a) Restrict dietary potassium to <2 g/day",
+                "b) No restriction needed unless K+ >5.0 mmol/L",
+                "c) Increase dietary potassium intake",
+                "d) Use potassium supplements"
+              ],
+              "answer": "b) No restriction needed unless K+ >5.0 mmol/L",
+              "explanation": "ACEI/ARB initiation does not require routine potassium restriction unless hyperkalaemia develops (K+ >5.0 mmol/L). Restriction is unnecessary and may cause harm; supplements are contraindicated."
+            },
+            {
+              "stem": "A 55-year-old female with NYHA class III HFrEF (EF 25%) is on lisinopril 20 mg daily, carvedilol 25 mg BD, and spironolactone 25 mg daily. She develops persistent dry cough. Which of the following is the MOST appropriate adjustment?",
+              "options": [
+                "a) Stop lisinopril and switch to losartan",
+                "b) Reduce carvedilol dose",
+                "c) Stop spironolactone",
+                "d) Increase lisinopril dose"
+              ],
+              "answer": "a) Stop lisinopril and switch to losartan",
+              "explanation": "ACEI-induced cough is a common adverse effect; switching to an ARB (e.g., losartan) is appropriate. Reducing carvedilol or stopping spironolactone does not address the cough; increasing lisinopril worsens symptoms."
+            },
+            {
+              "stem": "A 65-year-old male with hypertension and CKD stage 3 (eGFR 42 mL/min) is started on amlodipine 5 mg daily. Which of the following is the MOST likely adverse effect?",
+              "options": [
+                "a) Bradycardia",
+                "b) Hyperkalaemia",
+                "c) Peripheral oedema",
+                "d) Hypoglycaemia"
+              ],
+              "answer": "c) Peripheral oedema",
+              "explanation": "Amlodipine (CCB) commonly causes peripheral oedema due to vasodilation. Bradycardia and hyperkalaemia are not typical; hypoglycaemia is unrelated."
+            },
+            {
+              "stem": "A 70-year-old female with AF (CHA₂DS₂-VASc 3) and CKD stage 3 (eGFR 38 mL/min) is started on dabigatran 150 mg BD for stroke prevention. Which of the following is the MOST appropriate advice regarding alcohol consumption?",
+              "options": [
+                "a) Limit to 1 standard drink daily",
+                "b) Avoid alcohol entirely",
+                "c) Limit to 2 standard drinks weekly",
+                "d) No restriction needed"
+              ],
+              "answer": "b) Avoid alcohol entirely",
+              "explanation": "Alcohol increases bleeding risk with anticoagulants and worsens renal function in CKD. Avoidance is recommended. Limiting intake does not eliminate risk."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "a) List the four classes of drugs used as first-line antihypertensives according to WHO/KDIGO guidelines. (2 marks)\nb) For each class, provide one example of a drug and its primary mechanism of action. (3 marks)",
+              "modelAnswer": "a) The four first-line antihypertensive classes are:\n   - ACE inhibitors (ACEI)\n   - Angiotensin II receptor blockers (ARB)\n   - Calcium channel blockers (CCB)\n   - Thiazide/thiazide-like diuretics\n\nb) Examples and mechanisms:\n   - ACEI (e.g., lisinopril): Inhibits angiotensin-converting enzyme, reducing angiotensin II formation and aldosterone secretion, leading to vasodilation and natriuresis.\n   - ARB (e.g., losartan): Blocks angiotensin II type 1 receptors, preventing vasoconstriction and aldosterone release.\n   - CCB (e.g., amlodipine): Inhibits calcium influx into vascular smooth muscle, causing vasodilation.\n   - Thiazide (e.g., hydrochlorothiazide): Inhibits sodium reabsorption in the distal convoluted tubule, increasing diuresis and reducing plasma volume."
+            },
+            {
+              "stem": "a) Outline the KDIGO-recommended BP targets for patients with CKD and diabetes. (2 marks)\nb) List two classes of antihypertensives that provide renoprotective benefits in diabetes. (2 marks)\nc) Explain why ACE inhibitors are preferred over ARBs in patients with diabetes and CKD. (1 mark)",
+              "modelAnswer": "a) KDIGO recommends a BP target of <130/80 mmHg for patients with CKD and diabetes to reduce renal and cardiovascular risk.\n\nb) Two renoprotective classes in diabetes:\n   - ACE inhibitors (e.g., lisinopril)\n   - ARBs (e.g., losartan)\n\nc) ACE inhibitors are preferred over ARBs in diabetes and CKD because they reduce intraglomerular pressure more effectively by blocking angiotensin II formation (not just receptor binding), providing additional renoprotective benefits beyond BP control."
+            },
+            {
+              "stem": "a) List the four classes of antianginal drugs used in the management of stable angina. (2 marks)\nb) For each class, provide one example of a drug and its primary mechanism of action. (3 marks)",
+              "modelAnswer": "a) The four classes of antianginal drugs are:\n   - Beta-blockers\n   - Calcium channel blockers (CCB)\n   - Nitrates\n   - Ranolazine\n\nb) Examples and mechanisms:\n   - Beta-blocker (e.g., metoprolol): Reduces heart rate and contractility, decreasing myocardial oxygen demand.\n   - CCB (e.g., amlodipine): Inhibits calcium influx into vascular smooth muscle, causing coronary and peripheral vasodilation, reducing afterload and improving coronary perfusion.\n   - Nitrate (e.g., isosorbide mononitrate): Releases nitric oxide, causing venous and arterial vasodilation, reducing preload and afterload.\n   - Ranolazine: Inhibits late sodium current in cardiac myocytes, reducing diastolic tension and oxygen demand."
+            },
+            {
+              "stem": "a) List the three main types of heart failure based on left ventricular ejection fraction (LVEF). (1.5 marks)\nb) For each type, provide the LVEF range and one example of a guideline-recommended drug therapy. (3.5 marks)",
+              "modelAnswer": "a) The three main types of heart failure based on LVEF are:\n   - Heart failure with reduced ejection fraction (HFrEF)\n   - Heart failure with preserved ejection fraction (HFpEF)\n   - Heart failure with mid-range ejection fraction (HFmrEF)\n\nb) LVEF ranges and drug therapy:\n   - HFrEF (LVEF ≤40%): ACE inhibitor (e.g., lisinopril) + beta-blocker (e.g., carvedilol) + mineralocorticoid receptor antagonist (e.g., spironolactone).\n   - HFpEF (LVEF ≥50%): Diuretics (e.g., furosemide) for volume overload; no specific mortality-reducing therapy proven.\n   - HFmrEF (LVEF 41–49%): Treat as HFrEF if symptomatic; consider ACEI/ARB/beta-blocker if tolerated."
+            },
+            {
+              "stem": "a) List the four classes of antiarrhythmic drugs according to the Vaughan Williams classification. (2 marks)\nb) For each class, provide one example of a drug and its primary mechanism of action. (3 marks)",
+              "modelAnswer": "a) The four classes of antiarrhythmic drugs (Vaughan Williams classification) are:\n   - Class I (sodium channel blockers)\n   - Class II (beta-blockers)\n   - Class III (potassium channel blockers)\n   - Class IV (calcium channel blockers)\n\nb) Examples and mechanisms:\n   - Class I (e.g., flecainide): Blocks sodium channels, slowing conduction in cardiac tissue.\n   - Class II (e.g., metoprolol): Blocks beta-1 receptors, reducing heart rate and contractility.\n   - Class III (e.g., amiodarone): Blocks potassium channels, prolonging repolarization and refractory period.\n   - Class IV (e.g., verapamil): Blocks calcium channels, slowing AV node conduction and reducing heart rate."
+            },
+            {
+              "stem": "a) List the three main types of diuretics used in heart failure. (1.5 marks)\nb) For each type, provide one example of a drug and its primary site of action in the nephron. (3 marks)\nc) Explain why loop diuretics are preferred over thiazides in acute decompensated heart failure. (0.5 marks)",
+              "modelAnswer": "a) The three main types of diuretics used in heart failure are:\n   - Loop diuretics\n   - Thiazide/thiazide-like diuretics\n   - Potassium-sparing diuretics\n\nb) Examples and sites of action:\n   - Loop diuretic (e.g., furosemide): Acts on the thick ascending limb of the loop of Henle, inhibiting Na+/K+/2Cl- cotransport.\n   - Thiazide (e.g., hydrochlorothiazide): Acts on the distal convoluted tubule, inhibiting Na+/Cl- cotransport.\n   - Potassium-sparing (e.g., spironolactone): Acts on the collecting duct, blocking aldosterone receptors.\n\nc) Loop diuretics are preferred in acute decompensated heart failure because they produce a more potent diuresis, even in patients with reduced renal function, and are less affected by diuretic resistance."
+            },
+            {
+              "stem": "a) List the four main classes of drugs used for lipid modification in dyslipidaemia. (2 marks)\nb) For each class, provide one example of a drug and its primary mechanism of action. (3 marks)",
+              "modelAnswer": "a) The four main classes of lipid-modifying drugs are:\n   - HMG-CoA reductase inhibitors (statins)\n   - Ezetimibe\n   - PCSK9 inhibitors\n   - Fibrates\n\nb) Examples and mechanisms:\n   - Statin (e.g., atorvastatin): Inhibits HMG-CoA reductase, reducing cholesterol synthesis in the liver and increasing LDL receptor expression.\n   - Ezetimibe: Inhibits Niemann-Pick C1-Like 1 protein, reducing intestinal cholesterol absorption.\n   - PCSK9 inhibitor (e.g., evolocumab): Binds PCSK9, preventing LDL receptor degradation and increasing LDL clearance.\n   - Fibrate (e.g., fenofibrate): Activates PPAR-alpha, increasing lipoprotein lipase activity and reducing triglycerides."
+            },
+            {
+              "stem": "a) List the three main types of renal replacement therapy (RRT) used in end-stage kidney disease (ESKD). (1.5 marks)\nb) For each type, provide one example of a drug that requires dose adjustment in ESKD. (3 marks)\nc) Explain why vancomycin requires dose adjustment in ESKD. (0.5 marks)",
+              "modelAnswer": "a) The three main types of RRT are:\n   - Haemodialysis\n   - Peritoneal dialysis\n   - Kidney transplantation\n\nb) Examples of drugs requiring dose adjustment in ESKD:\n   - Vancomycin (for haemodialysis)\n   - Digoxin (for peritoneal dialysis)\n   - Metformin (for kidney transplantation)\n\nc) Vancomycin requires dose adjustment in ESKD because it is primarily renally excreted, and accumulation in renal failure increases the risk of nephrotoxicity and ototoxicity."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 68-year-old male with a history of hypertension, type 2 diabetes, and CKD stage 3 (eGFR 45 mL/min) presents to the emergency department with a 2-day history of progressive dyspnoea, orthopnoea, and bilateral leg oedema. He reports that he has been non-adherent to his medications for the past 3 weeks due to financial constraints. His current medications include lisinopril 10 mg daily, carvedilol 12.5 mg BD, furosemide 40 mg BD, and metformin 500 mg BD.\n\nOn examination:\n- BP 168/102 mmHg, HR 110 bpm (irregularly irregular), RR 24/min, SpO₂ 92% on room air\n- Jugular venous pressure elevated to 6 cm\n- Bibasal crackles on chest auscultation\n- Abdomen distended with shifting dullness\n- Bilateral pitting oedema to mid-shin\n\nInvestigations:\n- Hb 12.8 g/dL, WCC 8.2 x10⁹/L, Plt 210 x10⁹/L\n- Na+ 132 mmol/L, K+ 5.1 mmol/L, Creatinine 220 µmol/L (eGFR 28 mL/min), Urea 18.5 mmol/L\n- BNP 1200 pg/mL\n- ECG: AF with rapid ventricular response, no ST-segment changes\n- CXR: Pulmonary congestion, cardiomegaly\n- Echocardiogram: LVEF 35%, moderate mitral regurgitation, no significant valvular disease\n\n\na) What is the most likely diagnosis? Provide a rationale. (3 marks)\nb) Outline the immediate management priorities for this patient. (5 marks)\nc) Discuss the long-term management plan, including non-pharmacological and pharmacological strategies, to reduce hospital readmissions. (7 marks)",
+              "modelAnswer": "a) Most likely diagnosis: Acute decompensated heart failure (ADHF) with volume overload, complicated by atrial fibrillation (AF) with rapid ventricular response and CKD stage 4 (eGFR 28 mL/min).\n   Rationale:\n   - Progressive dyspnoea, orthopnoea, and bilateral leg oedema suggest volume overload.\n   - Elevated JVP, bibasal crackles, and abdominal distension confirm congestive heart failure.\n   - AF with rapid ventricular response contributes to worsening heart failure symptoms.\n   - Elevated BNP and echocardiogram findings (LVEF 35%, moderate mitral regurgitation) support ADHF.\n   - Worsening renal function (eGFR 28 mL/min) is consistent with cardiorenal syndrome.\n\nb) Immediate management priorities:\n   - Oxygen therapy (if SpO₂ <90%) to maintain oxygenation.\n   - IV furosemide 80–120 mg bolus, followed by continuous infusion if needed, to achieve euvolaemia.\n   - Rate control for AF: IV metoprolol or digoxin if beta-blockers contraindicated (e.g., severe bronchospasm). Target HR <100 bpm.\n   - Consider IV nitrates (e.g., glyceryl trinitrate) if hypertensive (SBP >140 mmHg) to reduce preload/afterload.\n   - Monitor electrolytes (K+, Mg²⁺) and renal function closely due to diuretic use and CKD.\n   - Consider IV inotropes (e.g., dobutamine) if hypotensive or cardiogenic shock.\n   - Address non-adherence: Provide social work support, medication access programs, or generic alternatives.\n\nc) Long-term management plan:\n   Pharmacological strategies:\n   - Optimise guideline-directed medical therapy (GDMT) for HFrEF:\n     • ACE inhibitor (e.g., lisinopril) or ARB (e.g., losartan) if ACEI-intolerant.\n     • Beta-blocker (e.g., carvedilol) titrated to target dose (e.g., 25 mg BD).\n     • Mineralocorticoid receptor antagonist (e.g., spironolactone 25 mg daily) if eGFR >30 mL/min and K+ <5.0 mmol/L.\n     • SGLT2 inhibitor (e.g., dapagliflozin 10 mg daily) for additional renal/cardiac protection.\n   - Rate/rhythm control for AF:\n     • Beta-blocker (e.g., metoprolol) or non-dihydropyridine CCB (e.g., diltiazem) for rate control.\n     • Consider amiodarone if rhythm control is needed (e.g., post-cardioversion).\n   - Anticoagulation for stroke prevention (CHA₂DS₂-VASc 3): DOAC (e.g., apixaban 5 mg BD) if eGFR >25 mL/min.\n   - Statin therapy (e.g., atorvastatin 40 mg nocte) for cardiovascular risk reduction.\n   - Optimise glycaemic control (e.g., switch metformin to insulin if eGFR <30 mL/min).\n\n   Non-pharmacological strategies:\n   - Sodium restriction (<2 g/day) and fluid restriction (<1.5 L/day) to reduce volume overload.\n   - Daily weight monitoring and symptom diaries to detect early decompensation.\n   - Cardiac rehabilitation program to improve functional capacity and adherence.\n   - Patient education on medication adherence, symptom recognition, and self-management.\n   - Regular follow-up with cardiology and nephrology to monitor GDMT, renal function, and adjust therapy.\n   - Address social determinants of health (e.g., medication access, transportation) to improve adherence."
+            },
+            {
+              "stem": "A 55-year-old female with a history of hypertension, CKD stage 3 (eGFR 48 mL/min), and AF (CHA₂DS₂-VASc score 4) presents to the clinic for a routine review. She is currently on rivaroxaban 15 mg daily for stroke prevention, amlodipine 5 mg daily for hypertension, and atorvastatin 20 mg nocte for dyslipidaemia. She reports no symptoms but mentions occasional bruising and fatigue.\n\nOn examination:\n- BP 142/88 mmHg, HR 72 bpm (irregularly irregular), RR 16/min, SpO₂ 98% on room air\n- No signs of volume overload or peripheral oedema\n- Mild bruising on forearms\n\nInvestigations:\n- Hb 11.5 g/dL, WCC 6.8 x10⁹/L, Plt 180 x10⁹/L\n- Na+ 138 mmol/L, K+ 4.7 mmol/L, Creatinine 150 µmol/L (eGFR 42 mL/min), Urea 8.2 mmol/L\n- INR 1.1 (not on warfarin)\n- LFTs normal\n- Urinalysis: Proteinuria 1+ (no haematuria)\n\n\na) What are the key issues in this patient’s management? (3 marks)\nb) Outline a pharmaceutical care plan to address these issues, including monitoring parameters and patient education. (12 marks)",
+              "modelAnswer": "a) Key issues in this patient’s management:\n   - Suboptimal BP control (BP 142/88 mmHg) despite amlodipine, increasing cardiovascular risk.\n   - Potential bleeding risk with rivaroxaban (occasional bruising) and CKD stage 3 (eGFR 42 mL/min).\n   - Fatigue may be related to anaemia of CKD or drug adverse effects (e.g., statin-induced myalgia).\n   - Proteinuria 1+ suggests possible progression of CKD, requiring further evaluation.\n   - AF with CHA₂DS₂-VASc score 4 requires optimal stroke prevention and rate/rhythm control.\n\nb) Pharmaceutical care plan:\n\n   Pharmacological optimisation:\n   - BP management: Add ACE inhibitor (e.g., lisinopril 5 mg daily) or ARB (e.g., losartan 25 mg daily) to amlodipine for better BP control and renoprotection. Monitor creatinine and K+ at 1–2 weeks.\n   - Anticoagulation: Continue rivaroxaban 15 mg daily (appropriate for eGFR 30–59 mL/min) but review bleeding risk. Consider switching to apixaban if bleeding concerns persist (apixaban 5 mg BD is renally adjusted to 2.5 mg BD if eGFR 15–29 mL/min).\n   - Statin therapy: Continue atorvastatin 20 mg nocte; monitor LFTs and CK if myalgia develops.\n   - Consider SGLT2 inhibitor (e.g., dapagliflozin 10 mg daily) for additional renoprotective and cardioprotective benefits (eGFR 42 mL/min is acceptable).\n   - Rate control for AF: Optimise beta-blocker (e.g., metoprolol 25 mg BD) or consider digoxin if beta-blockers are poorly tolerated.\n\n   Monitoring parameters:\n   - BP: Weekly home BP monitoring; target <130/80 mmHg.\n   - Renal function: eGFR and creatinine every 3–6 months; more frequently if ACEI/ARB initiated.\n   - Electrolytes: K+ and Na+ every 3–6 months; more frequently if ACEI/ARB or diuretics initiated.\n   - Bleeding risk: Review bruising and any signs of bleeding (e.g., GI bleeding, epistaxis).\n   - LFTs and CK: Every 6–12 months or if symptoms of myalgia.\n   - AF control: ECG or Holter monitoring if symptoms persist; target HR <100 bpm.\n\n   Patient education:\n   - Medication adherence: Emphasise the importance of taking medications as prescribed, including ACEI/ARB, beta-blocker, and anticoagulant.\n   - Bleeding precautions: Advise on avoiding NSAIDs, excessive alcohol, and high-risk activities. Report any signs of bleeding (e.g., black stools, prolonged bleeding).\n   - BP monitoring: Teach home BP monitoring technique and target values.\n   - Lifestyle modifications: Sodium restriction (<2 g/day), fluid restriction if needed, regular exercise, and smoking cessation.\n   - Symptom recognition: Educate on signs of decompensated heart failure (e.g., dyspnoea, oedema) and AF (e.g., palpitations, fatigue).\n   - Follow-up: Schedule regular clinic visits (every 3–6 months) for medication review and monitoring.\n\n   Additional considerations:\n   - Address fatigue: Evaluate for anaemia (e.g., iron studies, B12/folate) if persistent.\n   - Proteinuria: Consider nephrology referral for further evaluation (e.g., urine protein-creatinine ratio, renal biopsy if indicated).\n   - Social support: Assess for barriers to adherence (e.g., cost, transportation) and provide resources (e.g., medication access programs)."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,453 @@
+﻿
+
+240982522860
+
+KABARAK                         UNIVERSITY
+UNIVERSITY EXAMINATIONS
+MAIN CAMPUS
+FIRST SEMESTER, 2020/2021 ACADEMIC YEAR
+EXAMINATION FOR BACHELOR DEGREE IN PHARMACY
+
+PHAM 3101   : PHARMACOLOGY I
+
+STREAM: Y3S1      TIME: 9:00-11:00AM
+EXAMINATION SESSION: SEPT- DEC         DATE: 03/02/2021      __________________________________________________________________
+
+Instructions to candidates
+This paper consists of THREE sections, A, B & C. Answer all questions in Section A & B and any TWO in C
+Read instructions carefully and Observe KABU examination Regulation.  
+Do not write your name anywhere in the answer book
+Show all your workings
+Do not write on the Question Paper
+
+SECTION A. ANSWER ALL QUESTIONS \MARKS {60}Â 
+Choose the ONE best answer 1 MARK EACH
+
+Which of the following is a prodrug?
+Enalapril
+Clonidine
+Salmeterol
+Acetazolamide
+Which of the following drugs is an inhibitor of cytochrome p450 enzymes? 
+Ketoconazole
+Rifampicin
+Phenytoin
+Phenobarbitone
+Alkalinization of urine is required for decreasing the poisoning due to: 
+Barbiturates
+Amphetamine
+Alcohol
+Morphine
+CYP-450 inducers are: 
+Cimetidine
+Ketoconazole
+Phenobarbitone
+DDT
+Volume of distribution of drugs is altered in the following, except:
+obesity 
+Athletes
+Pregnancy
+Neonate
+Which of the following is not a prodrug?
+Mercaptopurine
+Dipivefrine
+Enalapril
+Phenytoin
+
+Drugs with high plasma protein binding have:
+Short duration of action 
+Less drug interactions
+Lower volumes of distribution
+High volumes of distribution
+Redistribution phenomenon is seen in: 
+Halothane
+Ether
+Thiopentone
+Paracetamo
+Sulphonamide is conjugated with: 
+Acetylation
+Methylation
+Hydroxylation
+None of the above
+Loading dose of a drug is given: 
+To achieve steady state concentration in short time
+For drugs with short tÂ½
+To reduce complications
+All of the above
+Which of the following parameters signifiesthe effective drug removal from the body? 
+Clearance 
+Bioavailability
+Safety
+Volume of distribution
+Elimination after 4 half-lives in first order kinetic is:
+84%
+93%
+80.5%
+75%
+
+The clearance of drug means: 
+Volume of plasma which is cleared of drug in unit of time
+Amount of drug excreted in urine
+Amount of drug metabolized in unit of time
+All of the above
+A partial agonist has:
+High affinity but low intrinsic activity
+High affinity but no intrinsic activity
+Low affinity but high intrinsic activity
+Low affinity and low intrinsic activity
+Which of the following is an effect of grapefruit juice on drug metabolism?
+Enzyme inducer
+Enzyme inhibitor
+Inhibits tubular secretion
+Inhibits tubular reabsorption
+This refers to the relative efficacy and safety profile of a drug
+Toxicity curve
+Therapeutic index
+ED50
+Target concentration
+If Drug A Displaces Drug B from the albumin then:
+The total concentration of Drug A is increased
+The total concentration of Drug B is decreased
+The concentration of the free Drug A is unchanged
+The concentration of the free Drug B is increased
+If 70% of a drug is bound to protein and 270 mcg/L is active, what is the total concentration of the drug?
+700 mcg/L
+800 mcg/L
+900 mcg/L
+1000 mcg/L
+
+Which of the following is involved in the passage of a drug from the site of its administration into the blood?
+Plasma protein binding                                      
+Inhalational administration                
+Hepatic cytochrome P oxidases
+glomerular filtration
+The fraction of unchanged  drug reaching systemic circulation following administration by any route is its: 
+volumeofdistribution                                       
+bioavailability                                                        
+steady stateconcentration
+maintenance dose
+The most important factor that influences drug absorptionis:
+clearance                                                               
+half-life                                                                  
+pH Partitioning
+protein binding
+Two similar drugs are therapeutically equivalent if they have comparable: 
+volume of distribution                                        
+efficacy and safety                                                
+potency
+rate of elimination
+Which of the following statements is correct?
+Rectally administered drugs by pass completely the hepatic first pass
+Weak acids are absorbed efficiently across the cell soft the stomach
+Most drugs are absorbed in the distal part of the small intestine
+Increased protein binding enhances drug absorption
+
+This route of drug administration is useful for compounds that are poorly absorbed and are extremely irritating to tissues.
+oral                                                                        
+rectal                                                                      
+intravenous
+intradermal
+Drug presence in breast milk is most likely for:
+acidic compounds                                                
+large ionized water-soluble molecules              
+lipid-soluble molecules
+drugs highly bound to plasma proteins
+Ofthefollowingorgans,adrugequilibratesslowestin:
+ muscles                                                                  
+liver                                                                        
+brain
+kidneys
+Drugs A and B have a high affinity for albumin. Drug A is administered in amounts that do not exceed the binding capacity of albumin. If drug B is added in amounts100 times the binding capacity of albumin, which of the following occurs after administration of drug B?
+A decrease in the bioavailability of drug A                      
+A decrease in the half-life of drug A                                  
+A decrease in the volume of distribution of drug A 
+An increase in the tissue concentrations of drug A
+This is TRUE regarding half-life of a drug:
+It is a function of the volume of distribution and clearance.
+It is the bodyâ€™s ability to eliminate drugs from the blood.
+It is the concentration of the drug in the plasma that is reduced to one half.
+It is applicable only to drugs with zero order kinetics.
+
+One of these may decrease drug metabolism:
+Cheese
+cabbage                                                                  
+brussels
+charcoal-broiled food 
+A deficiency in protein may lead to:
+shorter drug half-life                                          
+lower rate of biotrans formation                         
+poor drug absorption
+high volume of distribution
+Rapidacetylatorsofisoniazidareprone todevelop:
+peripheralneuropathy                                       
+drug-inducedhepatitis                                       
+cardiotoxicity
+rheumatoidarthritis
+Physiological processes mediated by the intracellular second messenger, cyclic AMP: Except?
+carbohydrate breakdown by the liver
+decreased heart rate
+smooth muscle relaxation
+triglyceride breakdown
+An example of an agent that exerts much of its effects through intracellular receptors that in complex form binds to DNA response elements:
+acetylcholine
+dopamine
+corticosteroids
+diltiazem
+
+Which one of the following drug receptor classes have been best described and characterized?
+enzymes
+structural proteins
+transport proteins
+regulatory protein
+Which one of the statements best describes an "orphan" receptor?
+A receptor for which the function is unknown.
+A receptor for which no naturally occurring (endogenous) agent has been identified.
+A receptor associated with a rare disease?
+A receptor which is associated with disease but which has not attracted significant research interest?
+The pharmacological action of this agent is not mediated by a "macromolecular" receptor molecule.
+Propranolol
+Mannitol
+Prazosin
+Atenolol
+Which of the following cytochrome P450 isoenzymes is involved in the metabolism of largest number of drugs in human beings and has been implicated in some dangerous drug interactions:
+CYP 3A4
+CYP 2C9
+CYP 2E1
+CYP 1A2
+The following is not true of the cytochrome P450 isoenzyme CYP2D6:
+It generates the hepatotoxic metabolite N-acetyl benzoquin one immine from paracetamol
+It is involved in demethylation of codeine into morphine
+Its altered form is responsible for poor capacity to hydroxylate many drugs including metoprolol
+It is inhibited by quinidine
+
+Microsomal enzyme induction can be a cause of:
+Tolerance
+Physical dependence
+Psychological dependence
+Idiosyncrasy
+The following drug metabolizing reaction is entirely non microsomal:
+Glucuronide conjugation
+Acetylation
+Oxidation
+Reduction
+Drugs which undergo high degree of first-pass metabolism in liver:
+Have low oral bioavailability
+Are excreted primarily in bile
+Are contraindicated in liver disease
+Exhibit zero order kinetics of elimination 
+When the same dose of a drug is repeated at half life intervals, the steady-state (plateau) plasma drug concentration is reached after:
+2â€“3 half lives
+4â€“5 half lives
+6â€“7 half lives
+8â€“10 half lives
+Azithromyc in, an antibiotic, has an apparent volume of distribution(Vd) of approximately 30 L/kg. The best interpretation of this information is that azithromycin is which of the following?
+Effective only when given intravenously
+Eliminated mainly by renal excretion, without prior metabolism
+Extensively distributed to sites outside the vascular and interstitial spaces
+Unable to cross the blood-brain or placental barriers
+
+Two drugs act on the same tissue or organ via activation of different receptors, resulting in effects that are qualitatively the opposite of one another. An example would be the direct effects of no repinephrine and acetylcholine on heart rate. This represents which of the following types of antagonism?
+Competitive
+Dispositional
+Pharmacologic
+Physiologic
+We want to estimate, following drug administration, some measure that most reliably reflects the total amount of drug reaching the target tissue(s), over time. Weâ€™re giving the drug orally. Which of the following would provide that measure best?
+Area under the blood concentration-time curve (AUC)
+Peak (maximum) blood concentration
+Product of the Vd and the first-order rate constant
+Time-to-peak blood concentration
+Which of the following is the term used to describe the elimination rate via metabolism catalyzed by alcohol dehydrogenase when the enzyme is saturated?
+Zero-order kinetics
+First-order elimination
+Clearance
+Redistribution
+Which of the following parameters is used to indicate the ability of a drug to produce the desired therapeutic effect relative to a toxic effect?
+Potency
+Intrinsic activity
+Therapeutic index
+Efficacy
+Glucuronidation reactions
+Require an active center as the site of conjugation
+Include the enzymatic activity of alcohol dehydrogenase
+Located in mitochondria are inducible by drugs
+Require nicotinamide adenine dinucleotide phosphate (NADPH) for the enzymatic reaction
+
+Erythromycin is prescribed â€˜â€˜qid,â€™â€™ or four times daily, because of its short half-life. The rationale for such a frequent dosing schedule is
+To achieve the steady-state plasma concentration of the drug
+To aid more complete distribution of the drug
+To inhibit the first-pass metabolism of the drug
+To ensure that the drug concentration remains constant over time
+If the oral dosing rate of a drug is held constant, what will be the effect of increasing the bioavailability of the preparation?
+Increase the half-life for first-order elimination
+Decrease the first-order elimination rate constant
+Increase the steady-state plasma concentration
+Decrease the total body clearance
+Which subfamily of cytochrome P-450s is responsible for the highest fraction of clinically important drug interactions resulting from metabolism?
+CYP1A
+CYP2A
+CYP3A
+CYP4A
+A drug is administered in the form of an inactive pro-drug. The pro-drug increases the expression of a cytochrome P-450 that converts the pro-drug to its active form. With chronic, long-term administration of the pro-drug, which of the following will be observed?
+The potency will decrease
+The potency will increase
+The efficacy will decrease
+The efficacy will increase
+A drug is administered in the form of an inactive pro-drug. The pro-drug increases the expression of a cytochrome P-450 that converts the pro-drug to its active form. With chronic,long-term administration of the pro-drug, which of the following will be observed?
+The potency will decrease
+The potency will increase
+The efficacy will decrease
+The efficacy will increase
+
+Thiopentone is used for induction of anaesthesia. It shows marked redistribution which is a characteristic of: 
+Highly lipid soluble drugs
+Highly water-soluble drugs
+Weak electrolytes
+Highly plasma protein bound drugs
+Drugs with high plasma protein binding have:
+Short duration of action 
+Less drug interactions
+Lowervolumes of distribution
+Increase volumes of distribution
+Which does not induce microsomal enzymes?
+Cimetidine 
+Griseofulvin
+Rifampicin
+Phenobarbitone
+Apparent volume of distribution (Vd) of a drug exceeds totalbodyfluidvolume, if a drug is:
+Sequestrated in body tissues
+Slowly eliminated from body
+Poorly soluble in plasma
+Highly bound to plasma proteins
+Which of the following drugs binds to albumin?
+Penicillin 
+Lidocaine
+Propanolol
+Verapamil
+Type A (augmented) adverse drug reactions are characterized by all EXCEPT:
+Qualitatively abnormal responses to the drug
+Predictable from the drugâ€™s known pharmacological or toxicological effects
+Generally, dose-dependent
+Usually common
+
+Type B adverse drug reaction is?
+Augmented effect of the drug
+Allergic effect of the drug
+Effect seen on chronic use of the drug
+Delayed effect of the drug 
+
+SECTION B. ANSWER THESE QUESTIONS            (MARKS 20Â )
+Match the biotransformation reaction with the drug: \mark {1} @
+ | 
+Number
+ | Reaction Type
+ | Number
+ | Typical Drug Substrates
+ | 
+
+ | Epoxidation
+ | 
+ | Codeine
+ | 
+
+ | N- dealkylation 
+ | 
+ | Aldrin
+ | 
+
+ | O-dealkylation
+ | 
+ | Caffeine, morphine, theophylline
+ | 
+
+ | N-oxidation 
+ | 
+ | Chlorpromazine, cimetidine, thioridazine
+ | 
+
+ | S-oxidation
+ | 
+ | Acetaminophen, nicotine
+ | 
+
+ | Deamination
+ | 
+ | Amphetamine, diazepam
+ | 
+
+ | Desulfuration
+ | 
+ | Thiopental, Parathion
+ | 
+
+ | Amine oxidation
+ | 
+ | Indomethacin, lidocaine, procainamide
+ | 
+
+ | Dehydrogenation
+ | 
+ | Epinephrine
+ | 
+
+ | Nitro Reductions
+ | 
+ | Chloral hydrate, ethanol
+ | 
+
+ | Azo reductions
+ | 
+ | Metyrapone, methadone, naloxone
+ | 
+
+ | Carbonyl reductions
+ | 
+ | Prontosil, tartrazine
+ | 
+
+ | Hydrolyses of Amides
+ | 
+ | Chloramphenicol, clonazepam, dantrolene, 
+ | 
+
+ | Water Conjugation
+ | 
+ | Acetaminophen, diazepam, digoxin, morphine, sulfamethiazole
+ | 
+
+ | Glycine conjugation
+ | 
+ | Clonazepam, dapsone, isoniazid, mescaline, sulfonamides
+ | 
+
+ | Methylation
+ | 
+ | Ethacrynic acid, reactive phase I metabolite of acetaminophen
+ | 
+
+ | Glucuronidation
+ | 
+ | Deoxycholic acid, nicotinic acid (niacin), salicylic acid
+ | 
+
+ | Glutathione conjugation
+ | 
+ | Acetaminophen, methyldopa
+ | 
+
+ | Acetylation
+ | 
+ | Dopamine, epinephrine, histamine, norepinephrine, thiouracil
+ | 
+
+ | Sulfation
+ | 
+ | Carbamazepine epoxide, Leukotriene A4
+ | 
+
+SECTION C. ANSWER ANY TWO QUESTIONS                         (MARKS 20)
+A patient presents to your Pharmacy Drug Store with a prescription. Unfortunately, you donâ€™t have the drug prescribed. You however wish to change the Generic Drug prescribed with a branded drug available. The Patient doesnâ€™t understand this and thus you ought to explain to him to understand. 
+How will you explain and distinguish between: Branded Drug and Generic Drug?        (8 Marks)
+The patient further asks you what is a Chemical Name?                     (2 Marks) 
+Discuss five ideal properties of drugs.      (10 Marks) 
+Discuss the five sources of drugs.       (10 Marks) 
+

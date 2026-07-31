@@ -1,0 +1,1220 @@
+{
+  "cp-new-infections": {
+    "1": {
+      "title": "Infectious Diseases Therapeutics",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 65-year-old male with COPD is admitted with severe community-acquired pneumonia (CAP). Sputum Gram stain shows gram-positive diplococci. Which of the following is the most appropriate empiric therapy based on local susceptibility patterns?",
+              "options": [
+                "Ceftriaxone 2g IV daily",
+                "Vancomycin 1g IV 12-hourly",
+                "Clarithromycin 500mg PO 12-hourly",
+                "Amoxicillin-clavulanate 1g/200mg IV 8-hourly"
+              ],
+              "answer": "Amoxicillin-clavulanate 1g/200mg IV 8-hourly",
+              "explanation": "Amoxicillin-clavulanate provides coverage for Streptococcus pneumoniae, the most common cause of CAP, and is active against beta-lactamase producing organisms. Local susceptibility data should guide empiric therapy."
+            },
+            {
+              "stem": "A 32-year-old female with a history of penicillin allergy (rash) presents with acute pyelonephritis. Urine culture shows Escherichia coli resistant to ampicillin but susceptible to nitrofurantoin. Which is the most appropriate oral therapy?",
+              "options": [
+                "Nitrofurantoin 100mg PO 12-hourly for 7 days",
+                "Ciprofloxacin 500mg PO 12-hourly for 7 days",
+                "Trimethoprim-sulfamethoxazole 160/800mg PO 12-hourly for 14 days",
+                "Amoxicillin 500mg PO 8-hourly for 10 days"
+              ],
+              "answer": "Ciprofloxacin 500mg PO 12-hourly for 7 days",
+              "explanation": "Ciprofloxacin is a fluoroquinolone with excellent urinary penetration and activity against most E. coli strains causing pyelonephritis. Nitrofurantoin is not suitable for pyelonephritis due to poor renal tissue penetration."
+            },
+            {
+              "stem": "A 28-year-old male with HIV (CD4 120 cells/mm³) presents with fever, cough, and dyspnea. Chest X-ray shows bilateral interstitial infiltrates. Which of the following is the most likely causative organism?",
+              "options": [
+                "Streptococcus pneumoniae",
+                "Pneumocystis jirovecii",
+                "Mycobacterium tuberculosis",
+                "Haemophilus influenzae"
+              ],
+              "answer": "Pneumocystis jirovecii",
+              "explanation": "Pneumocystis jirovecii pneumonia (PCP) is the most common opportunistic infection in HIV patients with CD4 counts <200 cells/mm³. The clinical presentation and radiographic findings are consistent with PCP."
+            },
+            {
+              "stem": "A 45-year-old female with type 2 diabetes presents with a 3-day history of fever, dysuria, and flank pain. Urinalysis shows pyuria and bacteriuria. Which of the following is the most appropriate empiric therapy?",
+              "options": [
+                "Nitrofurantoin 100mg PO 12-hourly for 5 days",
+                "Ceftriaxone 1g IV stat then oral ciprofloxacin 500mg PO 12-hourly for 10 days",
+                "Trimethoprim-sulfamethoxazole 160/800mg PO 12-hourly for 14 days",
+                "Amoxicillin 500mg PO 8-hourly for 7 days"
+              ],
+              "answer": "Ceftriaxone 1g IV stat then oral ciprofloxacin 500mg PO 12-hourly for 10 days",
+              "explanation": "This patient has pyelonephritis, which requires parenteral therapy initially due to potential for bacteremia. Ceftriaxone provides broad-spectrum coverage, followed by oral ciprofloxacin for completion."
+            },
+            {
+              "stem": "A 50-year-old male with a history of alcohol abuse presents with fever, cough, and confusion. Chest X-ray shows right upper lobe consolidation. Sputum culture grows Klebsiella pneumoniae. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Ceftriaxone 2g IV daily",
+                "Piperacillin-tazobactam 4.5g IV 8-hourly",
+                "Vancomycin 1g IV 12-hourly",
+                "Clarithromycin 500mg PO 12-hourly"
+              ],
+              "answer": "Piperacillin-tazobactam 4.5g IV 8-hourly",
+              "explanation": "Piperacillin-tazobactam provides excellent coverage for Klebsiella pneumoniae, including extended-spectrum beta-lactamase (ESBL) producing strains. It is preferred for severe infections in patients with risk factors for resistant organisms."
+            },
+            {
+              "stem": "A 22-year-old female presents with a 1-week history of fever, malaise, and a maculopapular rash on her palms and soles. She reports unprotected sexual contact 3 weeks ago. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Primary syphilis",
+                "Gonococcal infection",
+                "Chlamydia trachomatis infection",
+                "Herpes simplex virus infection"
+              ],
+              "answer": "Primary syphilis",
+              "explanation": "The clinical presentation of fever, malaise, and a maculopapular rash on the palms and soles is classic for primary syphilis. The rash typically appears 2-6 weeks after the chancre."
+            },
+            {
+              "stem": "A 60-year-old male with a history of cirrhosis presents with fever, confusion, and abdominal pain. Paracentesis shows a neutrophil count of 250 cells/mm³ in the ascitic fluid. Which of the following is the most appropriate empiric therapy?",
+              "options": [
+                "Ceftriaxone 2g IV daily",
+                "Vancomycin 1g IV 12-hourly",
+                "Metronidazole 500mg PO 8-hourly",
+                "Amoxicillin-clavulanate 1g/200mg IV 8-hourly"
+              ],
+              "answer": "Ceftriaxone 2g IV daily",
+              "explanation": "Spontaneous bacterial peritonitis (SBP) is a common complication in cirrhotic patients. Ceftriaxone is recommended as empiric therapy due to its broad-spectrum coverage against common pathogens."
+            },
+            {
+              "stem": "A 35-year-old male with a history of intravenous drug use presents with fever, chills, and a new murmur on cardiac auscultation. Blood cultures grow Staphylococcus aureus. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Vancomycin 1g IV 12-hourly for 4 weeks",
+                "Ceftriaxone 2g IV daily for 2 weeks",
+                "Gentamicin 1mg/kg IV 8-hourly for 2 weeks",
+                "Clindamycin 600mg IV 8-hourly for 4 weeks"
+              ],
+              "answer": "Vancomycin 1g IV 12-hourly for 4 weeks",
+              "explanation": "Infective endocarditis due to Staphylococcus aureus in an IV drug user requires prolonged parenteral therapy with vancomycin, as it provides coverage for methicillin-resistant strains."
+            },
+            {
+              "stem": "A 40-year-old female with a history of rheumatoid arthritis on methotrexate presents with fever, cough, and dyspnea. Chest X-ray shows bilateral ground-glass opacities. Which of the following is the most likely causative organism?",
+              "options": [
+                "Streptococcus pneumoniae",
+                "Pneumocystis jirovecii",
+                "Mycobacterium tuberculosis",
+                "Haemophilus influenzae"
+              ],
+              "answer": "Pneumocystis jirovecii",
+              "explanation": "Immunocompromised patients on immunosuppressive therapy are at high risk for Pneumocystis jirovecii pneumonia. The radiographic findings are consistent with this diagnosis."
+            },
+            {
+              "stem": "A 25-year-old male presents with a 3-day history of fever, headache, and neck stiffness. Lumbar puncture shows CSF with 500 WBC/mm³ (90% lymphocytes), glucose 2.2 mmol/L, and protein 1.5 g/L. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Bacterial meningitis",
+                "Viral meningitis",
+                "Tuberculous meningitis",
+                "Fungal meningitis"
+              ],
+              "answer": "Viral meningitis",
+              "explanation": "The CSF findings of lymphocytic pleocytosis, normal glucose, and elevated protein are characteristic of viral meningitis. Bacterial meningitis typically shows a neutrophilic pleocytosis and low glucose."
+            },
+            {
+              "stem": "A 55-year-old male with a history of COPD presents with fever, cough, and purulent sputum. Chest X-ray shows a right lower lobe infiltrate. Sputum culture grows Pseudomonas aeruginosa. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Ceftriaxone 2g IV daily",
+                "Piperacillin-tazobactam 4.5g IV 8-hourly",
+                "Vancomycin 1g IV 12-hourly",
+                "Clarithromycin 500mg PO 12-hourly"
+              ],
+              "answer": "Piperacillin-tazobactam 4.5g IV 8-hourly",
+              "explanation": "Piperacillin-tazobactam provides excellent coverage for Pseudomonas aeruginosa, a common pathogen in patients with COPD exacerbations. It is a preferred agent for this organism."
+            },
+            {
+              "stem": "A 30-year-old female with a history of HIV (CD4 350 cells/mm³) presents with a 2-week history of fever, night sweats, and weight loss. Chest X-ray shows a right upper lobe infiltrate. Sputum smear is positive for acid-fast bacilli. Which of the following is the most appropriate next step?",
+              "options": [
+                "Start empiric antituberculous therapy (RHZE)",
+                "Obtain sputum culture for Mycobacterium tuberculosis",
+                "Start broad-spectrum antibiotics for bacterial pneumonia",
+                "Perform a bronchoscopy with transbronchial biopsy"
+              ],
+              "answer": "Start empiric antituberculous therapy (RHZE)",
+              "explanation": "In a patient with HIV and a high pre-test probability for tuberculosis (fever, night sweats, weight loss, and upper lobe infiltrate), empiric therapy should be initiated while awaiting culture results."
+            },
+            {
+              "stem": "A 65-year-old male with a history of diabetes presents with a painful, erythematous, swollen area on his lower leg with clear demarcation. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Cellulitis",
+                "Erysipelas",
+                "Necrotizing fasciitis",
+                "Deep vein thrombosis"
+              ],
+              "answer": "Erysipelas",
+              "explanation": "Erysipelas is characterized by a well-demarcated, erythematous, swollen area, often with systemic symptoms. It is typically caused by Streptococcus pyogenes and is more superficial than cellulitis."
+            },
+            {
+              "stem": "A 45-year-old female with a history of recurrent UTIs presents with dysuria and frequency. Urine culture grows Escherichia coli resistant to trimethoprim-sulfamethoxazole but susceptible to nitrofurantoin. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Nitrofurantoin 100mg PO 12-hourly for 5 days",
+                "Ciprofloxacin 500mg PO 12-hourly for 7 days",
+                "Trimethoprim-sulfamethoxazole 160/800mg PO 12-hourly for 3 days",
+                "Amoxicillin 500mg PO 8-hourly for 7 days"
+              ],
+              "answer": "Nitrofurantoin 100mg PO 12-hourly for 5 days",
+              "explanation": "Nitrofurantoin is an appropriate choice for uncomplicated UTIs caused by E. coli resistant to first-line agents. It achieves high urinary concentrations and has a low resistance rate."
+            },
+            {
+              "stem": "A 30-year-old male with a history of IV drug use presents with fever, cough, and hemoptysis. Chest X-ray shows a right upper lobe cavity. Sputum culture grows Mycobacterium tuberculosis. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Isoniazid, rifampicin, pyrazinamide, ethambutol (RHZE) for 2 months, then isoniazid and rifampicin for 4 months",
+                "Isoniazid, rifampicin, ethambutol for 9 months",
+                "Rifampicin, ethambutol, pyrazinamide for 6 months",
+                "Isoniazid, rifampicin, ethambutol for 12 months"
+              ],
+              "answer": "Isoniazid, rifampicin, pyrazinamide, ethambutol (RHZE) for 2 months, then isoniazid and rifampicin for 4 months",
+              "explanation": "Standard therapy for drug-susceptible tuberculosis is a 6-month regimen: 2 months of RHZE followed by 4 months of isoniazid and rifampicin. This regimen is effective and reduces the risk of resistance."
+            },
+            {
+              "stem": "A 50-year-old male with a history of alcohol abuse presents with fever, confusion, and a productive cough. Chest X-ray shows a right lower lobe consolidation. Sputum Gram stain shows gram-negative bacilli. Which of the following is the most likely causative organism?",
+              "options": [
+                "Streptococcus pneumoniae",
+                "Klebsiella pneumoniae",
+                "Haemophilus influenzae",
+                "Moraxella catarrhalis"
+              ],
+              "answer": "Klebsiella pneumoniae",
+              "explanation": "Klebsiella pneumoniae is a common cause of pneumonia in patients with alcohol abuse. It is a gram-negative bacillus that can cause severe, necrotizing pneumonia with a high mortality rate."
+            },
+            {
+              "stem": "A 28-year-old female with a history of HIV (CD4 180 cells/mm³) presents with fever, cough, and dyspnea. Chest X-ray shows bilateral interstitial infiltrates. Sputum culture is negative. Which of the following is the most appropriate next step?",
+              "options": [
+                "Start empiric therapy for Pneumocystis jirovecii pneumonia (PCP)",
+                "Obtain a bronchoscopy with bronchoalveolar lavage",
+                "Start broad-spectrum antibiotics for bacterial pneumonia",
+                "Perform a tuberculin skin test"
+              ],
+              "answer": "Start empiric therapy for Pneumocystis jirovecii pneumonia (PCP)",
+              "explanation": "In an HIV patient with CD4 <200 cells/mm³ and bilateral interstitial infiltrates, empiric therapy for PCP should be initiated while awaiting diagnostic tests. Delaying treatment can lead to poor outcomes."
+            },
+            {
+              "stem": "A 60-year-old male with a history of diabetes presents with fever, dysuria, and flank pain. Urinalysis shows pyuria and bacteriuria. Urine culture grows Escherichia coli resistant to ampicicillin but susceptible to nitrofurantoin. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Nitrofurantoin 100mg PO 12-hourly for 7 days",
+                "Ciprofloxacin 500mg PO 12-hourly for 10 days",
+                "Trimethoprim-sulfamethoxazole 160/800mg PO 12-hourly for 14 days",
+                "Amoxicillin 500mg PO 8-hourly for 7 days"
+              ],
+              "answer": "Ciprofloxacin 500mg PO 12-hourly for 10 days",
+              "explanation": "Ciprofloxacin is the preferred agent for pyelonephritis due to its excellent urinary penetration and activity against most E. coli strains. Nitrofurantoin is not suitable for pyelonephritis."
+            },
+            {
+              "stem": "A 35-year-old male with a history of HIV (CD4 100 cells/mm³) presents with fever, headache, and confusion. CT brain scan shows no mass lesions. Lumbar puncture shows CSF with 50 WBC/mm³ (90% lymphocytes), glucose 2.5 mmol/L, and protein 1.2 g/L. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Bacterial meningitis",
+                "Viral meningitis",
+                "Cryptococcal meningitis",
+                "Tuberculous meningitis"
+              ],
+              "answer": "Cryptococcal meningitis",
+              "explanation": "Cryptococcal meningitis is common in HIV patients with low CD4 counts. The CSF findings of lymphocytic pleocytosis, low glucose, and elevated protein are consistent with this diagnosis."
+            },
+            {
+              "stem": "A 40-year-old female with a history of recurrent UTIs presents with dysuria and frequency. Urine culture grows Escherichia coli resistant to trimethoprim-sulfamethoxazole but susceptible to nitrofurantoin. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Nitrofurantoin 100mg PO 12-hourly for 5 days",
+                "Ciprofloxacin 500mg PO 12-hourly for 7 days",
+                "Trimethoprim-sulfamethoxazole 160/800mg PO 12-hourly for 3 days",
+                "Amoxicillin 500mg PO 8-hourly for 7 days"
+              ],
+              "answer": "Nitrofurantoin 100mg PO 12-hourly for 5 days",
+              "explanation": "Nitrofurantoin is an appropriate choice for uncomplicated UTIs caused by E. coli resistant to first-line agents. It achieves high urinary concentrations and has a low resistance rate."
+            },
+            {
+              "stem": "A 55-year-old male with a history of COPD presents with fever, cough, and purulent sputum. Chest X-ray shows a right lower lobe infiltrate. Sputum culture grows Pseudomonas aeruginosa. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Ceftriaxone 2g IV daily",
+                "Piperacillin-tazobactam 4.5g IV 8-hourly",
+                "Vancomycin 1g IV 12-hourly",
+                "Clarithromycin 500mg PO 12-hourly"
+              ],
+              "answer": "Piperacillin-tazobactam 4.5g IV 8-hourly",
+              "explanation": "Piperacillin-tazobactam provides excellent coverage for Pseudomonas aeruginosa, a common pathogen in patients with COPD exacerbations. It is a preferred agent for this organism."
+            },
+            {
+              "stem": "A 30-year-old female with a history of HIV (CD4 350 cells/mm³) presents with a 2-week history of fever, night sweats, and weight loss. Chest X-ray shows a right upper lobe infiltrate. Sputum smear is positive for acid-fast bacilli. Which of the following is the most appropriate next step?",
+              "options": [
+                "Start empiric antituberculous therapy (RHZE)",
+                "Obtain sputum culture for Mycobacterium tuberculosis",
+                "Start broad-spectrum antibiotics for bacterial pneumonia",
+                "Perform a bronchoscopy with transbronchial biopsy"
+              ],
+              "answer": "Start empiric antituberculous therapy (RHZE)",
+              "explanation": "In a patient with HIV and a high pre-test probability for tuberculosis (fever, night sweats, weight loss, and upper lobe infiltrate), empiric therapy should be initiated while awaiting culture results."
+            },
+            {
+              "stem": "A 65-year-old male with a history of diabetes presents with a painful, erythematous, swollen area on his lower leg with clear demarcation. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Cellulitis",
+                "Erysipelas",
+                "Necrotizing fasciitis",
+                "Deep vein thrombosis"
+              ],
+              "answer": "Erysipelas",
+              "explanation": "Erysipelas is characterized by a well-demarcated, erythematous, swollen area, often with systemic symptoms. It is typically caused by Streptococcus pyogenes and is more superficial than cellulitis."
+            },
+            {
+              "stem": "A 45-year-old female with a history of recurrent UTIs presents with dysuria and frequency. Urine culture grows Escherichia coli resistant to trimethoprim-sulfamethoxazole but susceptible to nitrofurantoin. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Nitrofurantoin 100mg PO 12-hourly for 5 days",
+                "Ciprofloxacin 500mg PO 12-hourly for 7 days",
+                "Trimethoprim-sulfamethoxazole 160/800mg PO 12-hourly for 3 days",
+                "Amoxicillin 500mg PO 8-hourly for 7 days"
+              ],
+              "answer": "Nitrofurantoin 100mg PO 12-hourly for 5 days",
+              "explanation": "Nitrofurantoin is an appropriate choice for uncomplicated UTIs caused by E. coli resistant to first-line agents. It achieves high urinary concentrations and has a low resistance rate."
+            },
+            {
+              "stem": "A 30-year-old male with a history of IV drug use presents with fever, cough, and hemoptysis. Chest X-ray shows a right upper lobe cavity. Sputum culture grows Mycobacterium tuberculosis. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Isoniazid, rifampicin, pyrazinamide, ethambutol (RHZE) for 2 months, then isoniazid and rifampicin for 4 months",
+                "Isoniazid, rifampicin, ethambutol for 9 months",
+                "Rifampicin, ethambutol, pyrazinamide for 6 months",
+                "Isoniazid, rifampicin, ethambutol for 12 months"
+              ],
+              "answer": "Isoniazid, rifampicin, pyrazinamide, ethambutol (RHZE) for 2 months, then isoniazid and rifampicin for 4 months",
+              "explanation": "Standard therapy for drug-susceptible tuberculosis is a 6-month regimen: 2 months of RHZE followed by 4 months of isoniazid and rifampicin. This regimen is effective and reduces the risk of resistance."
+            },
+            {
+              "stem": "A 50-year-old male with a history of alcohol abuse presents with fever, confusion, and a productive cough. Chest X-ray shows a right lower lobe consolidation. Sputum Gram stain shows gram-negative bacilli. Which of the following is the most likely causative organism?",
+              "options": [
+                "Streptococcus pneumoniae",
+                "Klebsiella pneumoniae",
+                "Haemophilus influenzae",
+                "Moraxella catarrhalis"
+              ],
+              "answer": "Klebsiella pneumoniae",
+              "explanation": "Klebsiella pneumoniae is a common cause of pneumonia in patients with alcohol abuse. It is a gram-negative bacillus that can cause severe, necrotizing pneumonia with a high mortality rate."
+            },
+            {
+              "stem": "A 28-year-old female with a history of HIV (CD4 180 cells/mm³) presents with fever, cough, and dyspnea. Chest X-ray shows bilateral interstitial infiltrates. Sputum culture is negative. Which of the following is the most appropriate next step?",
+              "options": [
+                "Start empiric therapy for Pneumocystis jirovecii pneumonia (PCP)",
+                "Obtain a bronchoscopy with bronchoalveolar lavage",
+                "Start broad-spectrum antibiotics for bacterial pneumonia",
+                "Perform a tuberculin skin test"
+              ],
+              "answer": "Start empiric therapy for Pneumocystis jirovecii pneumonia (PCP)",
+              "explanation": "In an HIV patient with CD4 <200 cells/mm³ and bilateral interstitial infiltrates, empiric therapy for PCP should be initiated while awaiting diagnostic tests. Delaying treatment can lead to poor outcomes."
+            },
+            {
+              "stem": "A 60-year-old male with a history of diabetes presents with fever, dysuria, and flank pain. Urinalysis shows pyuria and bacteriuria. Urine culture grows Escherichia coli resistant to ampicillin but susceptible to nitrofurantoin. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Nitrofurantoin 100mg PO 12-hourly for 7 days",
+                "Ciprofloxacin 500mg PO 12-hourly for 10 days",
+                "Trimethoprim-sulfamethoxazole 160/800mg PO 12-hourly for 14 days",
+                "Amoxicillin 500mg PO 8-hourly for 7 days"
+              ],
+              "answer": "Ciprofloxacin 500mg PO 12-hourly for 10 days",
+              "explanation": "Ciprofloxacin is the preferred agent for pyelonephritis due to its excellent urinary penetration and activity against most E. coli strains. Nitrofurantoin is not suitable for pyelonephritis."
+            },
+            {
+              "stem": "A 35-year-old male with a history of HIV (CD4 100 cells/mm³) presents with fever, headache, and confusion. CT brain scan shows no mass lesions. Lumbar puncture shows CSF with 50 WBC/mm³ (90% lymphocytes), glucose 2.5 mmol/L, and protein 1.2 g/L. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Bacterial meningitis",
+                "Viral meningitis",
+                "Cryptococcal meningitis",
+                "Tuberculous meningitis"
+              ],
+              "answer": "Cryptococcal meningitis",
+              "explanation": "Cryptococcal meningitis is common in HIV patients with low CD4 counts. The CSF findings of lymphocytic pleocytosis, low glucose, and elevated protein are consistent with this diagnosis."
+            },
+            {
+              "stem": "A 40-year-old female with a history of recurrent UTIs presents with dysuria and frequency. Urine culture grows Escherichia coli resistant to trimethoprim-sulfamethoxazole but susceptible to nitrofurantoin. Which of the following is the most appropriate therapy?",
+              "options": [
+                "Nitrofurantoin 100mg PO 12-hourly for 5 days",
+                "Ciprofloxacin 500mg PO 12-hourly for 7 days",
+                "Trimethoprim-sulfamethoxazole 160/800mg PO 12-hourly for 3 days",
+                "Amoxicillin 500mg PO 8-hourly for 7 days"
+              ],
+              "answer": "Nitrofurantoin 100mg PO 12-hourly for 5 days",
+              "explanation": "Nitrofurantoin is an appropriate choice for uncomplicated UTIs caused by E. coli resistant to first-line agents. It achieves high urinary concentrations and has a low resistance rate."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 45-year-old male with a history of alcohol abuse presents with fever, confusion, and a productive cough. Chest X-ray shows a right lower lobe consolidation. Sputum Gram stain shows gram-negative bacilli. Blood cultures are pending. Outline the key steps in the management of this patient, including empiric therapy, supportive care, and monitoring.",
+              "modelAnswer": "1. **Empiric Therapy**: Initiate piperacillin-tazobactam 4.5g IV 8-hourly to cover Pseudomonas aeruginosa and other gram-negative bacilli. Consider adding vancomycin if MRSA is suspected or if the patient is hemodynamically unstable.\n\n2. **Supportive Care**: \n   - Ensure adequate hydration and oxygenation.\n   - Monitor fluid balance and electrolytes.\n   - Provide antipyretics for fever control.\n   - Consider ICU admission if the patient shows signs of sepsis or respiratory failure.\n\n3. **Diagnostic Workup**: \n   - Obtain blood cultures and sputum culture for sensitivity testing.\n   - Perform a chest X-ray to monitor progression of pneumonia.\n   - Monitor renal and hepatic function, CBC, and inflammatory markers (CRP, procalcitonin).\n\n4. **Monitoring**: \n   - Assess clinical response to therapy within 48-72 hours.\n   - Adjust therapy based on culture results and clinical improvement.\n   - Monitor for complications such as empyema, abscess formation, or sepsis."
+            },
+            {
+              "stem": "A 30-year-old female with a history of HIV (CD4 180 cells/mm³) presents with fever, cough, and dyspnea. Chest X-ray shows bilateral interstitial infiltrates. Sputum culture is negative. Outline the steps you would take to confirm the diagnosis and initiate appropriate therapy.",
+              "modelAnswer": "1. **Diagnostic Workup**:\n   - Perform a bronchoscopy with bronchoalveolar lavage (BAL) to obtain samples for Pneumocystis jirovecii PCR and cytology.\n   - Obtain a sputum sample for AFB smear and culture to rule out tuberculosis.\n   - Perform a CD4 count and HIV viral load to assess immune status.\n\n2. **Empiric Therapy**:\n   - Initiate trimethoprim-sulfamethoxazole (TMP-SMX) 15-20 mg/kg/day IV in divided doses for 21 days for suspected Pneumocystis jirovecii pneumonia (PCP).\n   - Add prednisone 40 mg PO daily for 5 days, then taper over 10 days if the patient has severe PCP (PaO2 <70 mmHg or A-a gradient >35 mmHg).\n\n3. **Supportive Care**:\n   - Ensure adequate oxygenation and hydration.\n   - Monitor for adverse effects of TMP-SMX (e.g., rash, hyperkalemia, bone marrow suppression).\n   - Consider alternative therapy (e.g., pentamidine, atovaquone, or clindamycin + primaquine) if TMP-SMX is contraindicated or not tolerated.\n\n4. **Monitoring**:\n   - Assess clinical response within 4-8 days.\n   - Monitor oxygen saturation, inflammatory markers, and chest X-ray for improvement.\n   - Repeat CD4 count and HIV viral load after 3-6 months of ART initiation."
+            },
+            {
+              "stem": "A 50-year-old male with a history of diabetes presents with fever, dysuria, and flank pain. Urinalysis shows pyuria and bacteriuria. Urine culture grows Escherichia coli resistant to ampicillin but susceptible to nitrofurantoin. Outline the management plan for this patient, including therapy, monitoring, and patient education.",
+              "modelAnswer": "1. **Therapy**:\n   - For **uncomplicated cystitis**, prescribe nitrofurantoin 100mg PO 12-hourly for 5 days.\n   - For **pyelonephritis**, initiate ceftriaxone 1g IV stat followed by oral ciprofloxacin 500mg PO 12-hourly for 10 days.\n\n2. **Monitoring**:\n   - Repeat urinalysis and urine culture 1-2 weeks after completion of therapy to confirm eradication.\n   - Monitor renal function (serum creatinine) in patients with diabetes or risk of renal impairment.\n   - Assess for clinical improvement within 48-72 hours.\n\n3. **Patient Education**:\n   - Encourage adequate hydration (2-3 liters/day).\n   - Advise on proper hygiene (wipe front to back, avoid douching).\n   - Counsel on completing the full course of antibiotics to prevent resistance.\n   - Discuss risk factors for recurrent UTIs (e.g., sexual activity, diabetes control)."
+            },
+            {
+              "stem": "A 35-year-old male with a history of IV drug use presents with fever, chills, and a new murmur on cardiac auscultation. Blood cultures grow Staphylococcus aureus. Outline the management plan for this patient, including empiric therapy, definitive therapy, and monitoring.",
+              "modelAnswer": "1. **Empiric Therapy**:\n   - Initiate vancomycin 1g IV 12-hourly to cover methicillin-resistant Staphylococcus aureus (MRSA).\n   - Consider adding gentamicin 1mg/kg IV 8-hourly for synergy in severe infections or if prosthetic material is involved.\n\n2. **Definitive Therapy**:\n   - Adjust therapy based on susceptibility results (e.g., switch to nafcillin or cefazolin if methicillin-susceptible Staphylococcus aureus [MSSA]).\n   - Duration: 4-6 weeks for native valve endocarditis, 6 weeks for prosthetic valve endocarditis.\n\n3. **Monitoring**:\n   - Repeat blood cultures every 48-72 hours until sterile.\n   - Monitor for complications (e.g., embolic events, heart failure).\n   - Perform echocardiography (TTE/TEE) to assess valve involvement and complications.\n   - Monitor renal function and trough vancomycin levels (target: 15-20 mcg/mL)."
+            },
+            {
+              "stem": "A 28-year-old female with a history of HIV (CD4 350 cells/mm³) presents with a 2-week history of fever, night sweats, and weight loss. Chest X-ray shows a right upper lobe infiltrate. Sputum smear is positive for acid-fast bacilli. Outline the management plan for this patient, including diagnostic workup, therapy, and monitoring.",
+              "modelAnswer": "1. **Diagnostic Workup**:\n   - Obtain sputum for AFB culture and sensitivity to confirm Mycobacterium tuberculosis and assess drug resistance.\n   - Perform a tuberculin skin test (TST) or interferon-gamma release assay (IGRA) to assess for latent TB infection.\n   - Assess baseline liver function tests (ALT, AST, bilirubin) due to hepatotoxicity risk with rifampicin and isoniazid.\n\n2. **Therapy**:\n   - Initiate standard antituberculous therapy: isoniazid 5 mg/kg (max 300mg) PO daily, rifampicin 10 mg/kg (max 600mg) PO daily, pyrazinamide 25 mg/kg (max 2g) PO daily, and ethambutol 15 mg/kg (max 1.2g) PO daily for 2 months.\n   - After 2 months, continue isoniazid and rifampicin for an additional 4 months.\n   - Add pyridoxine (vitamin B6) 25-50mg PO daily to prevent isoniazid-induced neuropathy.\n\n3. **Monitoring**:\n   - Monitor liver function tests monthly during therapy.\n   - Assess clinical response (fever, weight gain, resolution of symptoms) within 2-4 weeks.\n   - Repeat sputum AFB smear and culture at 2 months and at completion of therapy to confirm cure."
+            },
+            {
+              "stem": "A 60-year-old male with a history of cirrhosis presents with fever, confusion, and abdominal pain. Paracentesis shows a neutrophil count of 250 cells/mm³ in the ascitic fluid. Outline the management plan for this patient, including empiric therapy, supportive care, and monitoring.",
+              "modelAnswer": "1. **Empiric Therapy**:\n   - Initiate empiric therapy for spontaneous bacterial peritonitis (SBP) with ceftriaxone 2g IV daily for 5-7 days.\n   - Consider adding albumin 1.5g/kg IV on day 1 and 1g/kg IV on day 3 to reduce risk of hepatorenal syndrome.\n\n2. **Supportive Care**:\n   - Ensure adequate hydration and electrolyte balance.\n   - Monitor for hepatic encephalopathy and provide lactulose as needed.\n   - Assess for signs of gastrointestinal bleeding and provide appropriate prophylaxis (e.g., PPI).\n\n3. **Monitoring**:\n   - Repeat paracentesis after 48 hours to assess response to therapy (neutrophil count should decrease by >25%).\n   - Monitor renal function, electrolytes, and inflammatory markers (CRP, procalcitonin).\n   - Consider secondary prophylaxis with norfloxacin 400mg PO daily to prevent recurrence."
+            },
+            {
+              "stem": "A 32-year-old female presents with a 3-day history of fever, dysuria, and flank pain. Urinalysis shows pyuria and bacteriuria. Urine culture grows Escherichia coli resistant to trimethoprim-sulfamethoxazole but susceptible to nitrofurantoin. Outline the management plan for this patient, including therapy, monitoring, and patient education.",
+              "modelAnswer": "1. **Therapy**:\n   - For **uncomplicated cystitis**, prescribe nitrofurantoin 100mg PO 12-hourly for 5 days.\n   - For **pyelonephritis**, initiate ceftriaxone 1g IV stat followed by oral ciprofloxacin 500mg PO 12-hourly for 10 days.\n\n2. **Monitoring**:\n   - Repeat urinalysis and urine culture 1-2 weeks after completion of therapy to confirm eradication.\n   - Monitor renal function (serum creatinine) in patients with risk of renal impairment.\n   - Assess for clinical improvement within 48-72 hours.\n\n3. **Patient Education**:\n   - Encourage adequate hydration (2-3 liters/day).\n   - Advise on proper hygiene (wipe front to back, avoid douching).\n   - Counsel on completing the full course of antibiotics to prevent resistance.\n   - Discuss risk factors for recurrent UTIs (e.g., sexual activity, diabetes control)."
+            },
+            {
+              "stem": "A 40-year-old female with a history of recurrent UTIs presents with dysuria and frequency. Urine culture grows Escherichia coli resistant to trimethoprim-sulfamethoxazole but susceptible to nitrofurantoin. Outline the key principles of antimicrobial stewardship that should guide the management of this patient.",
+              "modelAnswer": "1. **Appropriate Indication**:\n   - Confirm the diagnosis of UTI based on clinical symptoms and urinalysis (pyuria, bacteriuria).\n   - Avoid unnecessary antibiotic use in asymptomatic bacteriuria unless the patient is pregnant or undergoing urologic procedures.\n\n2. **Narrow-Spectrum Therapy**:\n   - Prescribe nitrofurantoin as first-line therapy for uncomplicated cystitis due to its narrow spectrum and low resistance rate.\n   - Avoid broad-spectrum agents (e.g., fluoroquinolones, third-generation cephalosporins) unless resistance or allergy necessitates their use.\n\n3. **Shortest Effective Duration**:\n   - Limit therapy to 3-5 days for uncomplicated cystitis and 7-14 days for pyelonephritis to reduce the risk of resistance and adverse effects.\n\n4. **Patient Education**:\n   - Counsel the patient on the importance of completing the full course of antibiotics.\n   - Discuss non-pharmacologic measures to prevent recurrent UTIs (e.g., hydration, cranberry products, post-coital voiding).\n\n5. **Follow-Up**:\n   - Repeat urinalysis and urine culture after treatment to confirm eradication.\n   - Monitor for recurrence and consider prophylactic strategies (e.g., low-dose nitrofurantoin) if recurrent UTIs are documented."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 35-year-old male with a history of intravenous drug use presents to the emergency department with fever, chills, and a new murmur on cardiac auscultation. Blood cultures grow Staphylococcus aureus. The patient is hemodynamically stable but complains of fatigue and dyspnea on exertion. Outline your management plan for this patient, including diagnostic workup, empiric and definitive therapy, monitoring, and complications to watch for.",
+              "modelAnswer": {
+                "a": "**Diagnostic Workup**:\n   - **Blood Cultures**: Repeat blood cultures every 48-72 hours until sterile to confirm clearance of bacteremia.\n   - **Echocardiography**: Perform transesophageal echocardiography (TEE) to assess for vegetations, abscesses, or valve perforation.\n   - **Additional Tests**: \n     - Chest X-ray to assess for septic emboli.\n     - Renal and hepatic function tests to assess for end-organ damage.\n     - HIV and hepatitis B/C serology to assess for underlying immunosuppression.\n\n   - **Diagnosis**: Infective endocarditis (IE) due to Staphylococcus aureus, likely involving the tricuspid valve given the history of IV drug use.\n\n",
+                "b": "**Empiric Therapy**:\n   - Initiate **vancomycin 1g IV 12-hourly** to cover methicillin-resistant Staphylococcus aureus (MRSA).\n   - Consider adding **gentamicin 1mg/kg IV 8-hourly** for synergy in severe infections or if prosthetic material is involved.\n   - Monitor vancomycin trough levels (target: 15-20 mcg/mL) to reduce the risk of nephrotoxicity and ensure efficacy.\n\n   - **Definitive Therapy**:\n     - Adjust therapy based on susceptibility results (e.g., switch to **nafcillin 2g IV 4-hourly** or **cefazolin 2g IV 8-hourly** if methicillin-susceptible Staphylococcus aureus [MSSA]).\n     - Duration: **4-6 weeks for native valve endocarditis**, **6 weeks for prosthetic valve endocarditis**.\n     - Consider **surgical intervention** if the patient develops complications (e.g., heart failure, persistent bacteremia, abscess formation).\n\n",
+                "c": "**Monitoring and Complications**:\n   - **Monitoring**:\n     - Repeat blood cultures every 48-72 hours until sterile.\n     - Perform echocardiography (TTE/TEE) at 1 week and 4-6 weeks to assess response to therapy.\n     - Monitor renal function, electrolytes, and inflammatory markers (CRP, procalcitonin).\n     - Assess for clinical improvement (fever resolution, reduction in murmur, improved functional status).\n\n   - **Complications to Watch For**:\n     - **Embolic Events**: Monitor for signs of stroke, splenic infarct, or septic pulmonary emboli.\n     - **Heart Failure**: Assess for signs of volume overload, dyspnea, and peripheral edema.\n     - **Abscess Formation**: Monitor for persistent fever, leukocytosis, or new murmurs.\n     - **Antibiotic Toxicity**: Monitor for vancomycin-induced nephrotoxicity or ototoxicity.\n\n",
+                "d": "**Patient Education and Follow-Up**:\n   - Counsel the patient on the importance of completing the full course of antibiotics.\n   - Discuss the risks of recurrent endocarditis and the importance of avoiding IV drug use.\n   - Schedule follow-up appointments to monitor for complications and assess functional status.\n   - Consider referral to addiction services for harm reduction and rehabilitation."
+              }
+            },
+            {
+              "stem": "A 28-year-old female with a history of HIV (CD4 180 cells/mm³) presents with fever, cough, and dyspnea. Chest X-ray shows bilateral interstitial infiltrates. Sputum culture is negative. The patient is hypoxic (SpO2 88% on room air) and requires supplemental oxygen. Outline your management plan for this patient, including diagnostic workup, empiric therapy, monitoring, and long-term management.",
+              "modelAnswer": {
+                "a": "**Diagnostic Workup**:\n   - **Bronchoscopy with Bronchoalveolar Lavage (BAL)**: Obtain samples for Pneumocystis jirovecii PCR, cytology, and AFB smear/culture to rule out tuberculosis.\n   - **Additional Tests**:\n     - CD4 count and HIV viral load to assess immune status.\n     - Arterial blood gas (ABG) to assess oxygenation and guide oxygen therapy.\n     - Chest CT scan if chest X-ray is inconclusive.\n   - **Differential Diagnosis**:\n     - Pneumocystis jirovecii pneumonia (PCP) is the most likely diagnosis given the clinical presentation and CD4 count.\n     - Consider other opportunistic infections (e.g., tuberculosis, cryptococcosis) or malignancies (e.g., lymphoma).\n\n",
+                "b": "**Empiric Therapy**:\n   - Initiate **trimethoprim-sulfamethoxazole (TMP-SMX) 15-20 mg/kg/day IV in divided doses** for 21 days for suspected PCP.\n   - Add **prednisone 40 mg PO daily for 5 days, then taper over 10 days** if the patient has severe PCP (PaO2 <70 mmHg or A-a gradient >35 mmHg).\n   - Consider alternative therapy if TMP-SMX is contraindicated or not tolerated:\n     - **Pentamidine 4mg/kg IV daily** (monitor for hypotension and hypoglycemia).\n     - **Atovaquone 750mg PO twice daily** (for mild-moderate PCP).\n     - **Clindamycin 600mg IV 8-hourly + primaquine 30mg PO daily** (for mild-moderate PCP).\n\n",
+                "c": "**Monitoring**:\n   - **Clinical Response**: Assess for improvement in fever, cough, and dyspnea within 4-8 days.\n   - **Oxygenation**: Monitor SpO2 and ABG to guide oxygen therapy and assess for deterioration.\n   - **Laboratory Monitoring**:\n     - CBC to assess for bone marrow suppression (TMP-SMX).\n     - Renal function and electrolytes (TMP-SMX, pentamidine).\n     - Inflammatory markers (CRP, procalcitonin) to assess response to therapy.\n   - **Imaging**: Repeat chest X-ray or CT scan at 1 week to assess for improvement.\n\n",
+                "d": "**Long-Term Management**:\n   - **Antiretroviral Therapy (ART)**: Initiate ART within 2 weeks of starting PCP therapy to restore immune function and prevent recurrence.\n     - Recommended regimen: **Tenofovir + emtricitabine + dolutegravir (TDF/FTC/DTG)** or **abacavir + lamivudine + dolutegravir (ABC/3TC/DTG)**.\n   - **Secondary Prophylaxis**:\n     - Continue TMP-SMX 160/800mg PO daily for secondary prophylaxis against PCP.\n     - Consider discontinuing secondary prophylaxis if CD4 count increases to >200 cells/mm³ for >3 months.\n   - **Patient Education**:\n     - Counsel on the importance of adherence to ART and PCP prophylaxis.\n     - Discuss risk reduction strategies (e.g., safe sex, avoiding IV drug use).\n     - Schedule regular follow-up appointments to monitor CD4 count, HIV viral load, and clinical status."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Infectious Diseases Therapeutics",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 65-year-old male with COPD is admitted with a 3-day history of worsening dyspnea, productive cough, and fever. Sputum Gram stain shows gram-positive diplococci in chains. Which of the following is the most appropriate empiric antibiotic regimen?",
+              "options": [
+                "Ceftriaxone monotherapy",
+                "Amoxicillin-clavulanate monotherapy",
+                "Vancomycin monotherapy",
+                "Azithromycin monotherapy"
+              ],
+              "answer": "Amoxicillin-clavulanate monotherapy",
+              "explanation": "Amoxicillin-clavulanate provides coverage for Streptococcus pneumoniae, the most common cause of community-acquired pneumonia in COPD patients, including penicillin-resistant strains."
+            },
+            {
+              "stem": "A 30-year-old female presents with dysuria, urinary frequency, and suprapubic pain. Urinalysis shows >100 WBC/hpf and positive nitrites. She has no known drug allergies. Which of the following is the most appropriate first-line treatment?",
+              "options": [
+                "Nitrofurantoin 100mg BD for 3 days",
+                "Ciprofloxacin 500mg BD for 7 days",
+                "Trimethoprim-sulfamethoxazole 160/800mg BD for 3 days",
+                "Amoxicillin 500mg TDS for 5 days"
+              ],
+              "answer": "Nitrofurantoin 100mg BD for 3 days",
+              "explanation": "Nitrofurantoin is a first-line agent for uncomplicated UTI in women, with excellent activity against E. coli and low resistance rates in many regions."
+            },
+            {
+              "stem": "A 45-year-old male with HIV (CD4 120 cells/mm³) presents with fever, night sweats, and weight loss. Chest X-ray shows bilateral infiltrates. Which of the following is the most likely causative organism?",
+              "options": [
+                "Streptococcus pneumoniae",
+                "Mycobacterium tuberculosis",
+                "Pneumocystis jirovecii",
+                "Haemophilus influenzae"
+              ],
+              "answer": "Pneumocystis jirovecii",
+              "explanation": "Pneumocystis pneumonia (PCP) is the most common opportunistic infection in HIV patients with CD4 counts <200 cells/mm³, presenting with bilateral infiltrates and systemic symptoms."
+            },
+            {
+              "stem": "A 25-year-old female is diagnosed with gonococcal urethritis. She has a history of anaphylaxis to penicillin. Which of the following is the most appropriate treatment?",
+              "options": [
+                "Ceftriaxone 500mg IM single dose",
+                "Azithromycin 1g PO single dose",
+                "Doxycycline 100mg BD for 7 days",
+                "Ciprofloxacin 500mg PO single dose"
+              ],
+              "answer": "Ceftriaxone 500mg IM single dose",
+              "explanation": "Ceftriaxone is the recommended treatment for gonorrhea, even in penicillin-allergic patients, as cross-reactivity with cephalosporins is low (<1%)."
+            },
+            {
+              "stem": "A 70-year-old male with diabetes presents with a 3-day history of fever, chills, and flank pain. Urinalysis shows >50 WBC/hpf and positive leukocyte esterase. Blood cultures grow gram-negative bacilli. Which of the following is the most appropriate empiric therapy?",
+              "options": [
+                "Ceftriaxone 2g IV daily",
+                "Amoxicillin 500mg PO TDS",
+                "Vancomycin 1g IV BD",
+                "Clindamycin 600mg IV TDS"
+              ],
+              "answer": "Ceftriaxone 2g IV daily",
+              "explanation": "Ceftriaxone provides broad-spectrum coverage for gram-negative bacilli causing pyelonephritis, including E. coli, and is appropriate for empiric therapy in this setting."
+            },
+            {
+              "stem": "A 50-year-old male with a history of alcohol abuse presents with fever, confusion, and nuchal rigidity. CSF analysis shows 500 WBC/mm³ (80% neutrophils), glucose 20 mg/dL, and protein 200 mg/dL. Which of the following is the most likely causative organism?",
+              "options": [
+                "Streptococcus pneumoniae",
+                "Neisseria meningitidis",
+                "Listeria monocytogenes",
+                "Haemophilus influenzae"
+              ],
+              "answer": "Streptococcus pneumoniae",
+              "explanation": "S. pneumoniae is the most common cause of bacterial meningitis in adults, particularly in those with alcohol abuse or other risk factors for aspiration."
+            },
+            {
+              "stem": "A 35-year-old female presents with a 1-week history of fever, malaise, and a macular rash on her trunk. She recently returned from a safari in Kenya. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Malaria",
+                "Typhoid fever",
+                "Dengue fever",
+                "Leptospirosis"
+              ],
+              "answer": "Malaria",
+              "explanation": "Malaria is endemic in Kenya and presents with fever, malaise, and rash, particularly in travelers returning from endemic areas."
+            },
+            {
+              "stem": "A 60-year-old male with a history of cirrhosis presents with fever, abdominal pain, and altered mental status. Paracentesis shows >250 PMN/mm³. Which of the following is the most appropriate empiric therapy?",
+              "options": [
+                "Ceftriaxone 2g IV daily",
+                "Vancomycin 1g IV BD",
+                "Metronidazole 500mg IV TDS",
+                "Amoxicillin-clavulanate 1.2g IV TDS"
+              ],
+              "answer": "Ceftriaxone 2g IV daily",
+              "explanation": "Ceftriaxone is recommended for spontaneous bacterial peritonitis (SBP) due to its broad-spectrum coverage and excellent penetration into ascitic fluid."
+            },
+            {
+              "stem": "A 20-year-old male presents with a 3-day history of fever, sore throat, and cervical lymphadenopathy. Monospot test is positive. Which of the following is the most appropriate management?",
+              "options": [
+                "Acyclovir 800mg PO 5 times daily for 7 days",
+                "Amoxicillin 500mg PO TDS for 10 days",
+                "Supportive care only",
+                "Prednisone 40mg PO daily for 7 days"
+              ],
+              "answer": "Supportive care only",
+              "explanation": "Infectious mononucleosis is caused by EBV and is managed supportively with hydration, antipyretics, and rest. Antibiotics are not indicated unless secondary bacterial infection is present."
+            },
+            {
+              "stem": "A 40-year-old female with a history of recurrent UTIs presents with fever, flank pain, and nausea. Urinalysis shows >100 WBC/hpf and positive nitrites. Blood cultures grow E. coli. Which of the following is the most appropriate treatment?",
+              "options": [
+                "Ciprofloxacin 500mg PO BD for 14 days",
+                "Nitrofurantoin 100mg PO BD for 5 days",
+                "Trimethoprim-sulfamethoxazole 160/800mg PO BD for 7 days",
+                "Amoxicillin 500mg PO TDS for 10 days"
+              ],
+              "answer": "Ciprofloxacin 500mg PO BD for 14 days",
+              "explanation": "Ciprofloxacin is recommended for complicated pyelonephritis due to its excellent tissue penetration and activity against E. coli, with a 14-day course to ensure eradication."
+            },
+            {
+              "stem": "A 55-year-old male with a history of COPD presents with a 2-week history of cough, fever, and weight loss. Chest X-ray shows a right upper lobe cavitary lesion. Sputum AFB smear is positive. Which of the following is the most appropriate initial treatment?",
+              "options": [
+                "Isoniazid, rifampin, pyrazinamide, and ethambutol (RHZE) for 2 months",
+                "Amoxicillin-clavulanate 875/125mg PO BD for 10 days",
+                "Vancomycin 1g IV BD for 14 days",
+                "Ceftriaxone 2g IV daily for 14 days"
+              ],
+              "answer": "Isoniazid, rifampin, pyrazinamide, and ethambutol (RHZE) for 2 months",
+              "explanation": "The patient's presentation is consistent with pulmonary tuberculosis, which requires immediate initiation of quadruple therapy (RHZE) for the intensive phase."
+            },
+            {
+              "stem": "A 30-year-old female presents with a 1-week history of fever, malaise, and a painless genital ulcer. She reports unprotected sexual contact 2 weeks ago. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Herpes simplex virus infection",
+                "Syphilis",
+                "Chancroid",
+                "Lymphogranuloma venereum"
+              ],
+              "answer": "Syphilis",
+              "explanation": "The painless genital ulcer is characteristic of primary syphilis, caused by Treponema pallidum, which typically presents 10-90 days after exposure."
+            },
+            {
+              "stem": "A 65-year-old male with a history of diabetes presents with a 3-day history of fever, chills, and a painful, erythematous rash on his lower leg. The rash is warm, tender, and has a sharply demarcated border. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Cellulitis",
+                "Erysipelas",
+                "Necrotizing fasciitis",
+                "Contact dermatitis"
+              ],
+              "answer": "Erysipelas",
+              "explanation": "Erysipelas is a superficial skin infection caused by Group A Streptococcus, characterized by a well-demarcated, erythematous rash with systemic symptoms."
+            },
+            {
+              "stem": "A 25-year-old male presents with a 2-week history of fever, night sweats, and weight loss. Chest X-ray shows hilar lymphadenopathy. PPD skin test is positive. Which of the following is the most appropriate next step?",
+              "options": [
+                "Start isoniazid monotherapy for latent TB",
+                "Start quadruple therapy (RHZE) for active TB",
+                "Perform a sputum AFB smear and culture",
+                "Start prednisone 40mg PO daily for 4 weeks"
+              ],
+              "answer": "Perform a sputum AFB smear and culture",
+              "explanation": "The patient's presentation is consistent with active tuberculosis, which requires microbiological confirmation via AFB smear and culture before initiating therapy."
+            },
+            {
+              "stem": "A 40-year-old female presents with a 3-day history of fever, dysuria, and urinary frequency. She has a history of recurrent UTIs. Urinalysis shows >100 WBC/hpf and positive nitrites. Which of the following is the most appropriate treatment?",
+              "options": [
+                "Nitrofurantoin 100mg PO BD for 5 days",
+                "Ciprofloxacin 500mg PO BD for 3 days",
+                "Trimethoprim-sulfamethoxazole 160/800mg PO BD for 3 days",
+                "Amoxicillin 500mg PO TDS for 7 days"
+              ],
+              "answer": "Nitrofurantoin 100mg PO BD for 5 days",
+              "explanation": "Nitrofurantoin is a first-line agent for uncomplicated UTI, with a 5-day course recommended for recurrent infections to minimize resistance development."
+            },
+            {
+              "stem": "A 50-year-old male with a history of alcohol abuse presents with fever, confusion, and nuchal rigidity. CSF analysis shows 200 WBC/mm³ (60% lymphocytes), glucose 30 mg/dL, and protein 150 mg/dL. Which of the following is the most likely causative organism?",
+              "options": [
+                "Streptococcus pneumoniae",
+                "Listeria monocytogenes",
+                "Neisseria meningitidis",
+                "Cryptococcus neoformans"
+              ],
+              "answer": "Listeria monocytogenes",
+              "explanation": "Listeria is a common cause of meningitis in immunocompromised or elderly patients, particularly those with alcohol abuse, and typically presents with lymphocytic predominance."
+            },
+            {
+              "stem": "A 30-year-old female presents with a 1-week history of fever, malaise, and a macular rash on her trunk. She recently returned from a trip to Southeast Asia. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Dengue fever",
+                "Malaria",
+                "Typhoid fever",
+                "Leptospirosis"
+              ],
+              "answer": "Dengue fever",
+              "explanation": "Dengue fever is endemic in Southeast Asia and presents with fever, malaise, and a macular rash, often with leukopenia and thrombocytopenia."
+            },
+            {
+              "stem": "A 60-year-old male with a history of cirrhosis presents with fever, abdominal pain, and altered mental status. Paracentesis shows >250 PMN/mm³. Which of the following is the most appropriate empiric therapy?",
+              "options": [
+                "Ceftriaxone 2g IV daily",
+                "Vancomycin 1g IV BD",
+                "Metronidazole 500mg IV TDS",
+                "Amoxicillin-clavulanate 1.2g IV TDS"
+              ],
+              "answer": "Ceftriaxone 2g IV daily",
+              "explanation": "Ceftriaxone is recommended for spontaneous bacterial peritonitis (SBP) due to its broad-spectrum coverage and excellent penetration into ascitic fluid."
+            },
+            {
+              "stem": "A 25-year-old male presents with a 3-day history of fever, sore throat, and cervical lymphadenopathy. Monospot test is positive. Which of the following is the most appropriate management?",
+              "options": [
+                "Acyclovir 800mg PO 5 times daily for 7 days",
+                "Amoxicillin 500mg PO TDS for 10 days",
+                "Supportive care only",
+                "Prednisone 40mg PO daily for 7 days"
+              ],
+              "answer": "Supportive care only",
+              "explanation": "Infectious mononucleosis is caused by EBV and is managed supportively with hydration, antipyretics, and rest. Antibiotics are not indicated unless secondary bacterial infection is present."
+            },
+            {
+              "stem": "A 40-year-old female with a history of recurrent UTIs presents with fever, flank pain, and nausea. Urinalysis shows >100 WBC/hpf and positive nitrites. Blood cultures grow E. coli. Which of the following is the most appropriate treatment?",
+              "options": [
+                "Ciprofloxacin 500mg PO BD for 14 days",
+                "Nitrofurantoin 100mg PO BD for 5 days",
+                "Trimethoprim-sulfamethoxazole 160/800mg PO BD for 7 days",
+                "Amoxicillin 500mg PO TDS for 10 days"
+              ],
+              "answer": "Ciprofloxacin 500mg PO BD for 14 days",
+              "explanation": "Ciprofloxacin is recommended for complicated pyelonephritis due to its excellent tissue penetration and activity against E. coli, with a 14-day course to ensure eradication."
+            },
+            {
+              "stem": "A 55-year-old male with a history of COPD presents with a 2-week history of cough, fever, and weight loss. Chest X-ray shows a right upper lobe cavitary lesion. Sputum AFB smear is positive. Which of the following is the most appropriate initial treatment?",
+              "options": [
+                "Isoniazid, rifampin, pyrazinamide, and ethambutol (RHZE) for 2 months",
+                "Amoxicillin-clavulanate 875/125mg PO BD for 10 days",
+                "Vancomycin 1g IV BD for 14 days",
+                "Ceftriaxone 2g IV daily for 14 days"
+              ],
+              "answer": "Isoniazid, rifampin, pyrazinamide, and ethambutol (RHZE) for 2 months",
+              "explanation": "The patient's presentation is consistent with pulmonary tuberculosis, which requires immediate initiation of quadruple therapy (RHZE) for the intensive phase."
+            },
+            {
+              "stem": "A 30-year-old female presents with a 1-week history of fever, malaise, and a painless genital ulcer. She reports unprotected sexual contact 2 weeks ago. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Herpes simplex virus infection",
+                "Syphilis",
+                "Chancroid",
+                "Lymphogranuloma venereum"
+              ],
+              "answer": "Syphilis",
+              "explanation": "The painless genital ulcer is characteristic of primary syphilis, caused by Treponema pallidum, which typically presents 10-90 days after exposure."
+            },
+            {
+              "stem": "A 65-year-old male with a history of diabetes presents with a 3-day history of fever, chills, and a painful, erythematous rash on his lower leg. The rash is warm, tender, and has a sharply demarcated border. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Cellulitis",
+                "Erysipelas",
+                "Necrotizing fasciitis",
+                "Contact dermatitis"
+              ],
+              "answer": "Erysipelas",
+              "explanation": "Erysipelas is a superficial skin infection caused by Group A Streptococcus, characterized by a well-demarcated, erythematous rash with systemic symptoms."
+            },
+            {
+              "stem": "A 25-year-old male presents with a 2-week history of fever, night sweats, and weight loss. Chest X-ray shows hilar lymphadenopathy. PPD skin test is positive. Which of the following is the most appropriate next step?",
+              "options": [
+                "Start isoniazid monotherapy for latent TB",
+                "Start quadruple therapy (RHZE) for active TB",
+                "Perform a sputum AFB smear and culture",
+                "Start prednisone 40mg PO daily for 4 weeks"
+              ],
+              "answer": "Perform a sputum AFB smear and culture",
+              "explanation": "The patient's presentation is consistent with active tuberculosis, which requires microbiological confirmation via AFB smear and culture before initiating therapy."
+            },
+            {
+              "stem": "A 40-year-old female presents with a 3-day history of fever, dysuria, and urinary frequency. She has a history of recurrent UTIs. Urinalysis shows >100 WBC/hpf and positive nitrites. Which of the following is the most appropriate treatment?",
+              "options": [
+                "Nitrofurantoin 100mg PO BD for 5 days",
+                "Ciprofloxacin 500mg PO BD for 3 days",
+                "Trimethoprim-sulfamethoxazole 160/800mg PO BD for 3 days",
+                "Amoxicillin 500mg PO TDS for 7 days"
+              ],
+              "answer": "Nitrofurantoin 100mg PO BD for 5 days",
+              "explanation": "Nitrofurantoin is a first-line agent for uncomplicated UTI, with a 5-day course recommended for recurrent infections to minimize resistance development."
+            },
+            {
+              "stem": "A 50-year-old male with a history of alcohol abuse presents with fever, confusion, and nuchal rigidity. CSF analysis shows 200 WBC/mm³ (60% lymphocytes), glucose 30 mg/dL, and protein 150 mg/dL. Which of the following is the most likely causative organism?",
+              "options": [
+                "Streptococcus pneumoniae",
+                "Listeria monocytogenes",
+                "Neisseria meningitidis",
+                "Cryptococcus neoformans"
+              ],
+              "answer": "Listeria monocytogenes",
+              "explanation": "Listeria is a common cause of meningitis in immunocompromised or elderly patients, particularly those with alcohol abuse, and typically presents with lymphocytic predominance."
+            },
+            {
+              "stem": "A 30-year-old female presents with a 1-week history of fever, malaise, and a macular rash on her trunk. She recently returned from a trip to Southeast Asia. Which of the following is the most likely diagnosis?",
+              "options": [
+                "Dengue fever",
+                "Malaria",
+                "Typhoid fever",
+                "Leptospirosis"
+              ],
+              "answer": "Dengue fever",
+              "explanation": "Dengue fever is endemic in Southeast Asia and presents with fever, malaise, and a macular rash, often with leukopenia and thrombocytopenia."
+            },
+            {
+              "stem": "A 60-year-old male with a history of cirrhosis presents with fever, abdominal pain, and altered mental status. Paracentesis shows >250 PMN/mm³. Which of the following is the most appropriate empiric therapy?",
+              "options": [
+                "Ceftriaxone 2g IV daily",
+                "Vancomycin 1g IV BD",
+                "Metronidazole 500mg IV TDS",
+                "Amoxicillin-clavulanate 1.2g IV TDS"
+              ],
+              "answer": "Ceftriaxone 2g IV daily",
+              "explanation": "Ceftriaxone is recommended for spontaneous bacterial peritonitis (SBP) due to its broad-spectrum coverage and excellent penetration into ascitic fluid."
+            },
+            {
+              "stem": "A 25-year-old male presents with a 3-day history of fever, sore throat, and cervical lymphadenopathy. Monospot test is positive. Which of the following is the most appropriate management?",
+              "options": [
+                "Acyclovir 800mg PO 5 times daily for 7 days",
+                "Amoxicillin 500mg PO TDS for 10 days",
+                "Supportive care only",
+                "Prednisone 40mg PO daily for 7 days"
+              ],
+              "answer": "Supportive care only",
+              "explanation": "Infectious mononucleosis is caused by EBV and is managed supportively with hydration, antipyretics, and rest. Antibiotics are not indicated unless secondary bacterial infection is present."
+            },
+            {
+              "stem": "A 40-year-old female with a history of recurrent UTIs presents with fever, flank pain, and nausea. Urinalysis shows >100 WBC/hpf and positive nitrites. Blood cultures grow E. coli. Which of the following is the most appropriate treatment?",
+              "options": [
+                "Ciprofloxacin 500mg PO BD for 14 days",
+                "Nitrofurantoin 100mg PO BD for 5 days",
+                "Trimethoprim-sulfamethoxazole 160/800mg PO BD for 7 days",
+                "Amoxicillin 500mg PO TDS for 10 days"
+              ],
+              "answer": "Ciprofloxacin 500mg PO BD for 14 days",
+              "explanation": "Ciprofloxacin is recommended for complicated pyelonephritis due to its excellent tissue penetration and activity against E. coli, with a 14-day course to ensure eradication."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 35-year-old male with HIV (CD4 80 cells/mm³) presents with fever, cough, and weight loss. Chest X-ray shows bilateral infiltrates. Sputum AFB smear is negative. a) List 4 differential diagnoses for this presentation. b) Outline the key investigations required to confirm the diagnosis.",
+              "modelAnswer": "a) Differential diagnoses: 1) Pneumocystis jirovecii pneumonia (PCP), 2) Tuberculosis, 3) Bacterial pneumonia (e.g., Streptococcus pneumoniae), 4) Fungal pneumonia (e.g., Cryptococcus). b) Key investigations: 1) Induced sputum for Pneumocystis PCR and AFB smear/culture, 2) Blood cultures for bacteria and fungi, 3) Serum cryptococcal antigen, 4) HIV viral load and CD4 count, 5) Chest CT if chest X-ray is inconclusive."
+            },
+            {
+              "stem": "A 40-year-old female presents with dysuria, urinary frequency, and suprapubic pain. Urinalysis shows >100 WBC/hpf and positive nitrites. She has no known drug allergies. a) List 4 first-line treatment options for uncomplicated cystitis. b) Outline 2 counseling points to improve adherence and reduce resistance.",
+              "modelAnswer": "a) First-line treatments: 1) Nitrofurantoin 100mg PO BD for 5 days, 2) Trimethoprim-sulfamethoxazole 160/800mg PO BD for 3 days, 3) Fosfomycin 3g PO single dose, 4) Cefalexin 500mg PO BD for 5 days. b) Counseling points: 1) Complete the full course of antibiotics even if symptoms improve, 2) Avoid unnecessary antibiotic use for viral infections to reduce resistance."
+            },
+            {
+              "stem": "A 50-year-old male with a history of alcohol abuse presents with fever, confusion, and nuchal rigidity. CSF analysis shows 500 WBC/mm³ (80% neutrophils), glucose 20 mg/dL, and protein 200 mg/dL. a) List 4 likely causative organisms. b) Outline the empiric antibiotic regimen and rationale.",
+              "modelAnswer": "a) Likely organisms: 1) Streptococcus pneumoniae, 2) Neisseria meningitidis, 3) Listeria monocytogenes, 4) Haemophilus influenzae. b) Empiric regimen: Ceftriaxone 2g IV BD + Vancomycin 1g IV BD + Ampicillin 2g IV Q4H. Rationale: Ceftriaxone covers S. pneumoniae and N. meningitidis, vancomycin covers penicillin-resistant S. pneumoniae, and ampicillin covers Listeria."
+            },
+            {
+              "stem": "A 25-year-old female presents with a 1-week history of fever, malaise, and a macular rash on her trunk. She recently returned from a trip to Kenya. a) List 4 likely diagnoses. b) Outline the key investigations required to confirm the diagnosis.",
+              "modelAnswer": "a) Likely diagnoses: 1) Malaria, 2) Dengue fever, 3) Typhoid fever, 4) Leptospirosis. b) Key investigations: 1) Malaria smear and rapid diagnostic test, 2) Dengue NS1 antigen and IgM/IgG serology, 3) Blood cultures for typhoid, 4) Leptospira serology, 5) CBC with differential (leukopenia in dengue, thrombocytopenia in malaria)."
+            },
+            {
+              "stem": "A 60-year-old male with cirrhosis presents with fever, abdominal pain, and altered mental status. Paracentesis shows >250 PMN/mm³. a) List 4 likely causative organisms. b) Outline the empiric antibiotic regimen and rationale.",
+              "modelAnswer": "a) Likely organisms: 1) Escherichia coli, 2) Klebsiella pneumoniae, 3) Enterococcus faecalis, 4) Streptococcus pneumoniae. b) Empiric regimen: Ceftriaxone 2g IV daily. Rationale: Ceftriaxone provides broad-spectrum coverage for gram-negative bacilli and enterococci, with excellent penetration into ascitic fluid."
+            },
+            {
+              "stem": "A 30-year-old female presents with a 1-week history of fever, malaise, and a painless genital ulcer. She reports unprotected sexual contact 2 weeks ago. a) List 4 likely diagnoses. b) Outline the key investigations required to confirm the diagnosis.",
+              "modelAnswer": "a) Likely diagnoses: 1) Syphilis, 2) Chancroid, 3) Herpes simplex virus infection, 4) Lymphogranuloma venereum. b) Key investigations: 1) Dark-field microscopy for Treponema pallidum, 2) Syphilis serology (RPR/VDRL and TPHA), 3) PCR for HSV and chancroid, 4) NAAT for Chlamydia trachomatis (LGV serovars)."
+            },
+            {
+              "stem": "A 45-year-old male with COPD presents with a 2-week history of cough, fever, and weight loss. Chest X-ray shows a right upper lobe cavitary lesion. Sputum AFB smear is positive. a) List 4 likely diagnoses. b) Outline the key investigations required to confirm the diagnosis.",
+              "modelAnswer": "a) Likely diagnoses: 1) Pulmonary tuberculosis, 2) Nocardiosis, 3) Fungal pneumonia (e.g., histoplasmosis), 4) Lung abscess. b) Key investigations: 1) Sputum AFB culture and sensitivity, 2) Sputum fungal culture, 3) Nocardia PCR, 4) Chest CT for cavitary lesions, 5) HIV test to assess immunocompromise."
+            },
+            {
+              "stem": "A 55-year-old male with diabetes presents with a 3-day history of fever, chills, and a painful, erythematous rash on his lower leg. The rash is warm, tender, and has a sharply demarcated border. a) List 4 likely diagnoses. b) Outline the key investigations required to confirm the diagnosis.",
+              "modelAnswer": "a) Likely diagnoses: 1) Erysipelas, 2) Cellulitis, 3) Necrotizing fasciitis, 4) Contact dermatitis. b) Key investigations: 1) Blood cultures, 2) Wound swab for Gram stain and culture, 3) CBC with differential (leukocytosis in bacterial infections), 4) Imaging (MRI or CT) if necrotizing fasciitis is suspected."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 35-year-old male presents to the emergency department with a 3-day history of fever, cough, and progressive dyspnea. He has a history of HIV (CD4 100 cells/mm³) but is not on antiretroviral therapy. On examination, he is tachypneic (RR 30/min), hypoxic (SpO2 88% on room air), and has bilateral crackles on chest auscultation. Chest X-ray shows diffuse bilateral infiltrates. a) Identify the most likely diagnosis and causative organism. b) Justify your answer with 4 clinical and laboratory findings. c) Outline a comprehensive treatment plan, including antimicrobial therapy, adjunctive treatments, and monitoring parameters. d) Propose an alternative regimen for a patient with a sulfa allergy.",
+              "modelAnswer": "a) Most likely diagnosis: Pneumocystis jirovecii pneumonia (PCP). Causative organism: Pneumocystis jirovecii. b) Justification: 1) HIV with CD4 <200 cells/mm³ is a major risk factor for PCP, 2) Progressive dyspnea and hypoxia are classic symptoms, 3) Diffuse bilateral infiltrates on chest X-ray are typical, 4) Hypoxemia (SpO2 88%) despite room air suggests severe infection. c) Treatment plan: 1) First-line therapy: Trimethoprim-sulfamethoxazole (TMP-SMX) 15-20 mg/kg/day IV in divided doses for 21 days, 2) Adjunctive therapy: Prednisone 40mg PO BD for 5 days, then 40mg PO daily for 5 days, then 20mg PO daily for 11 days (if PaO2 <70 mmHg or A-a gradient >35 mmHg), 3) Supportive care: Oxygen therapy to maintain SpO2 >90%, 4) Monitoring: Daily clinical assessment, SpO2 monitoring, CBC, renal function, and electrolytes. d) Alternative regimen: Clindamycin 600mg IV Q8H + Primaquine 30mg PO daily for 21 days (for sulfa-allergic patients)."
+            },
+            {
+              "stem": "A 40-year-old female presents with a 1-week history of fever, dysuria, urinary frequency, and suprapubic pain. She has a history of recurrent UTIs. Urinalysis shows >100 WBC/hpf, positive nitrites, and trace protein. Blood cultures are pending. a) Identify the most likely diagnosis. b) Outline 4 key investigations required to confirm the diagnosis. c) Formulate a treatment plan, including empiric therapy, adjunctive measures, and monitoring parameters. d) Propose an alternative regimen for a patient with a penicillin allergy.",
+              "modelAnswer": "a) Most likely diagnosis: Complicated urinary tract infection (pyelonephritis). b) Key investigations: 1) Urine culture and sensitivity, 2) Blood cultures (2 sets), 3) Renal ultrasound or CT if obstruction or abscess is suspected, 4) CBC with differential and CRP to assess systemic inflammation. c) Treatment plan: 1) Empiric therapy: Ciprofloxacin 500mg PO BD for 14 days (or Ceftriaxone 1g IV daily if severe), 2) Adjunctive measures: Hydration, antipyretics, and pain management, 3) Monitoring: Daily clinical assessment, urinalysis and culture at 48-72 hours, renal function, and electrolytes. d) Alternative regimen: Nitrofurantoin 100mg PO BD for 14 days (if eGFR >30 mL/min) or Fosfomycin 3g PO single dose followed by Ciprofloxacin 500mg PO BD for 7 days."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Infectious Diseases Therapeutics",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 65-year-old male with a history of COPD and recent hospitalization for exacerbation develops fever, cough, and purulent sputum 5 days after discharge. Sputum culture grows Pseudomonas aeruginosa resistant to ceftazidime but susceptible to piperacillin-tazobactam. Which of the following is the MOST appropriate empiric therapy adjustment?",
+              "options": [
+                "Continue ceftazidime and add tobramycin for synergy",
+                "Switch to piperacillin-tazobactam monotherapy",
+                "Switch to meropenem monotherapy",
+                "Add vancomycin to cover potential MRSA"
+              ],
+              "answer": "Switch to piperacillin-tazobactam monotherapy",
+              "explanation": "Piperacillin-tazobactam is active against Pseudomonas aeruginosa and is the preferred agent based on susceptibility data. Adding tobramycin or vancomycin is unnecessary unless resistance or MRSA is confirmed."
+            },
+            {
+              "stem": "A 28-year-old female presents with dysuria, urgency, and suprapubic pain. Urinalysis shows >100 WBC/hpf, positive nitrites, and leukocyte esterase. She has no fever or flank pain. Which of the following is the MOST appropriate empiric therapy?",
+              "options": [
+                "Nitrofurantoin 100 mg PO twice daily for 3 days",
+                "Ciprofloxacin 500 mg PO twice daily for 7 days",
+                "Trimethoprim-sulfamethoxazole 160/800 mg PO twice daily for 3 days",
+                "Amoxicillin-clavulanate 875/125 mg PO twice daily for 7 days"
+              ],
+              "answer": "Nitrofurantoin 100 mg PO twice daily for 3 days",
+              "explanation": "Nitrofurantoin is a first-line agent for uncomplicated cystitis in women, with a favorable resistance profile and low risk of collateral damage."
+            },
+            {
+              "stem": "A 45-year-old male with HIV (CD4 120 cells/mm³) presents with fever, headache, and confusion. MRI brain shows multiple ring-enhancing lesions. Which of the following is the MOST likely causative organism?",
+              "options": [
+                "Mycobacterium tuberculosis",
+                "Toxoplasma gondii",
+                "Cryptococcus neoformans",
+                "Streptococcus pneumoniae"
+              ],
+              "answer": "Toxoplasma gondii",
+              "explanation": "Toxoplasma gondii is a common cause of focal brain lesions in HIV patients with low CD4 counts, particularly in those not on prophylaxis."
+            },
+            {
+              "stem": "A 30-year-old female with a history of IV drug use presents with fever, chills, and a new holosystolic murmur. Blood cultures grow Staphylococcus aureus. Which of the following is the MOST appropriate empiric therapy?",
+              "options": [
+                "Vancomycin 15 mg/kg IV every 12 hours",
+                "Ceftriaxone 2 g IV daily",
+                "Penicillin G 4 million units IV every 4 hours",
+                "Clindamycin 600 mg IV every 8 hours"
+              ],
+              "answer": "Vancomycin 15 mg/kg IV every 12 hours",
+              "explanation": "Vancomycin is the empiric therapy of choice for suspected MRSA infective endocarditis in IV drug users, pending susceptibility results."
+            },
+            {
+              "stem": "A 50-year-old male with a history of chronic hepatitis C (genotype 1a) presents for treatment. Which of the following is the MOST appropriate direct-acting antiviral (DAA) regimen?",
+              "options": [
+                "Sofosbuvir/ledipasvir for 12 weeks",
+                "Ribavirin monotherapy for 24 weeks",
+                "Interferon alfa-2b monotherapy for 48 weeks",
+                "Telbivudine for 24 weeks"
+              ],
+              "answer": "Sofosbuvir/ledipasvir for 12 weeks",
+              "explanation": "Sofosbuvir/ledipasvir is a first-line DAA regimen for genotype 1a HCV infection, with high efficacy and a favorable safety profile."
+            },
+            {
+              "stem": "A 22-year-old male presents with fever, myalgia, and a maculopapular rash after returning from a hiking trip in the northeastern United States. Which of the following is the MOST likely diagnosis?",
+              "options": [
+                "Lyme disease",
+                "Rocky Mountain spotted fever",
+                "Ehrlichiosis",
+                "West Nile virus infection"
+              ],
+              "answer": "Lyme disease",
+              "explanation": "Lyme disease is endemic in the northeastern United States and presents with fever, myalgia, and a characteristic rash (erythema migrans)."
+            },
+            {
+              "stem": "A 60-year-old male with a history of diabetes and chronic kidney disease (eGFR 30 mL/min) presents with fever, dysuria, and flank pain. Urine culture grows Escherichia coli resistant to ciprofloxacin and nitrofurantoin. Which of the following is the MOST appropriate therapy?",
+              "options": [
+                "Ceftriaxone 1 g IV daily",
+                "Trimethoprim-sulfamethoxazole 160/800 mg PO twice daily",
+                "Ciprofloxacin 500 mg PO twice daily",
+                "Amoxicillin 500 mg PO three times daily"
+              ],
+              "answer": "Ceftriaxone 1 g IV daily",
+              "explanation": "Ceftriaxone is a preferred agent for pyelonephritis in patients with reduced renal function, as it achieves high urinary concentrations and is not renally eliminated."
+            },
+            {
+              "stem": "A 35-year-old female with a history of rheumatoid arthritis on methotrexate presents with fever, cough, and dyspnea. Chest X-ray shows bilateral interstitial infiltrates. Which of the following is the MOST likely opportunistic infection?",
+              "options": [
+                "Pneumocystis jirovecii pneumonia",
+                "Tuberculosis",
+                "Histoplasmosis",
+                "Aspergillosis"
+              ],
+              "answer": "Pneumocystis jirovecii pneumonia",
+              "explanation": "Pneumocystis jirovecii pneumonia is a common opportunistic infection in immunocompromised patients on immunosuppressive therapy."
+            },
+            {
+              "stem": "A 40-year-old male with a history of alcohol use disorder presents with fever, cough, and hemoptysis. Chest X-ray shows a right upper lobe cavitary lesion. Sputum smear is positive for acid-fast bacilli. Which of the following is the MOST appropriate initial therapy?",
+              "options": [
+                "Isoniazid, rifampin, pyrazinamide, and ethambutol (RHZE)",
+                "Isoniazid and rifampin only",
+                "Rifampin, pyrazinamide, and ethambutol only",
+                "Isoniazid, rifampin, and ethambutol only"
+              ],
+              "answer": "Isoniazid, rifampin, pyrazinamide, and ethambutol (RHZE)",
+              "explanation": "Standard four-drug therapy (RHZE) is recommended for initial treatment of active tuberculosis, including cavitary disease."
+            },
+            {
+              "stem": "A 25-year-old female presents with fever, jaundice, and right upper quadrant pain. Laboratory tests show elevated ALT, AST, and total bilirubin. Serology is positive for HBsAg and IgM anti-HBc. Which of the following is the MOST appropriate management?",
+              "options": [
+                "Tenofovir disoproxil fumarate (TDF) monotherapy",
+                "Entecavir monotherapy",
+                "Lamivudine monotherapy",
+                "Supportive care only"
+              ],
+              "answer": "Tenofovir disoproxil fumarate (TDF) monotherapy",
+              "explanation": "TDF is a first-line antiviral for chronic hepatitis B with active viral replication, as indicated by elevated ALT and positive HBsAg/IgM anti-HBc."
+            },
+            {
+              "stem": "A 55-year-old male with a history of COPD presents with fever, productive cough, and dyspnea. Chest X-ray shows a right lower lobe consolidation. Sputum culture grows Streptococcus pneumoniae resistant to penicillin. Which of the following is the MOST appropriate therapy?",
+              "options": [
+                "Ceftriaxone 1 g IV daily",
+                "Vancomycin 15 mg/kg IV every 12 hours",
+                "Levofloxacin 750 mg PO daily",
+                "Azithromycin 500 mg PO daily"
+              ],
+              "answer": "Ceftriaxone 1 g IV daily",
+              "explanation": "Ceftriaxone is active against penicillin-resistant Streptococcus pneumoniae and is a recommended agent for community-acquired pneumonia."
+            },
+            {
+              "stem": "A 30-year-old male presents with fever, headache, and nuchal rigidity. Lumbar puncture shows CSF with 200 WBC/mm³ (90% lymphocytes), glucose 40 mg/dL, and protein 100 mg/dL. Which of the following is the MOST likely diagnosis?",
+              "options": [
+                "Bacterial meningitis",
+                "Viral meningitis",
+                "Tuberculous meningitis",
+                "Fungal meningitis"
+              ],
+              "answer": "Viral meningitis",
+              "explanation": "Viral meningitis typically presents with lymphocytic pleocytosis, normal glucose, and elevated protein, consistent with aseptic meningitis."
+            },
+            {
+              "stem": "A 45-year-old female with a history of diabetes presents with fever, dysuria, and flank pain. Urine culture grows Escherichia coli resistant to trimethoprim-sulfamethoxazole and nitrofurantoin. Which of the following is the MOST appropriate therapy?",
+              "options": [
+                "Ciprofloxacin 500 mg PO twice daily",
+                "Ceftriaxone 1 g IV daily",
+                "Amoxicillin-clavulanate 875/125 mg PO twice daily",
+                "Doxycycline 100 mg PO twice daily"
+              ],
+              "answer": "Ceftriaxone 1 g IV daily",
+              "explanation": "Ceftriaxone is a preferred agent for pyelonephritis in patients with resistance to oral agents, as it achieves high urinary concentrations."
+            },
+            {
+              "stem": "A 28-year-old male presents with fever, cough, and weight loss. Chest X-ray shows bilateral upper lobe infiltrates. Sputum smear is positive for acid-fast bacilli. Which of the following is the MOST appropriate next step?",
+              "options": [
+                "Start isoniazid, rifampin, pyrazinamide, and ethambutol (RHZE)",
+                "Order a chest CT scan",
+                "Perform a tuberculin skin test",
+                "Start empiric therapy for bacterial pneumonia"
+              ],
+              "answer": "Start isoniazid, rifampin, pyrazinamide, and ethambutol (RHZE)",
+              "explanation": "A positive sputum smear for acid-fast bacilli is diagnostic for tuberculosis, and empiric therapy should be initiated promptly."
+            },
+            {
+              "stem": "A 50-year-old male with a history of HIV (CD4 80 cells/mm³) presents with fever, cough, and dyspnea. Chest X-ray shows diffuse bilateral infiltrates. Which of the following is the MOST likely diagnosis?",
+              "options": [
+                "Pneumocystis jirovecii pneumonia",
+                "Tuberculosis",
+                "Bacterial pneumonia",
+                "Fungal pneumonia"
+              ],
+              "answer": "Pneumocystis jirovecii pneumonia",
+              "explanation": "Pneumocystis jirovecii pneumonia is a common opportunistic infection in HIV patients with low CD4 counts, presenting with diffuse bilateral infiltrates."
+            },
+            {
+              "stem": "A 35-year-old female presents with fever, dysuria, and suprapubic pain. Urinalysis shows >100 WBC/hpf and positive leukocyte esterase. She has no fever or flank pain. Which of the following is the MOST appropriate therapy?",
+              "options": [
+                "Nitrofurantoin 100 mg PO twice daily for 3 days",
+                "Ciprofloxacin 500 mg PO twice daily for 7 days",
+                "Trimethoprim-sulfamethoxazole 160/800 mg PO twice daily for 3 days",
+                "Amoxicillin-clavulanate 875/125 mg PO twice daily for 7 days"
+              ],
+              "answer": "Nitrofurantoin 100 mg PO twice daily for 3 days",
+              "explanation": "Nitrofurantoin is a first-line agent for uncomplicated cystitis in women, with a favorable resistance profile and low risk of collateral damage."
+            },
+            {
+              "stem": "A 40-year-old male with a history of IV drug use presents with fever, chills, and a new holosystolic murmur. Blood cultures grow Staphylococcus aureus. Which of the following is the MOST appropriate empiric therapy?",
+              "options": [
+                "Vancomycin 15 mg/kg IV every 12 hours",
+                "Ceftriaxone 2 g IV daily",
+                "Penicillin G 4 million units IV every 4 hours",
+                "Clindamycin 600 mg IV every 8 hours"
+              ],
+              "answer": "Vancomycin 15 mg/kg IV every 12 hours",
+              "explanation": "Vancomycin is the empiric therapy of choice for suspected MRSA infective endocarditis in IV drug users, pending susceptibility results."
+            },
+            {
+              "stem": "A 55-year-old male with a history of chronic hepatitis C (genotype 1a) presents for treatment. Which of the following is the MOST appropriate direct-acting antiviral (DAA) regimen?",
+              "options": [
+                "Sofosbuvir/ledipasvir for 12 weeks",
+                "Ribavirin monotherapy for 24 weeks",
+                "Interferon alfa-2b monotherapy for 48 weeks",
+                "Telbivudine for 24 weeks"
+              ],
+              "answer": "Sofosbuvir/ledipasvir for 12 weeks",
+              "explanation": "Sofosbuvir/ledipasvir is a first-line DAA regimen for genotype 1a HCV infection, with high efficacy and a favorable safety profile."
+            },
+            {
+              "stem": "A 22-year-old male presents with fever, myalgia, and a maculopapular rash after returning from a hiking trip in the northeastern United States. Which of the following is the MOST likely diagnosis?",
+              "options": [
+                "Lyme disease",
+                "Rocky Mountain spotted fever",
+                "Ehrlichiosis",
+                "West Nile virus infection"
+              ],
+              "answer": "Lyme disease",
+              "explanation": "Lyme disease is endemic in the northeastern United States and presents with fever, myalgia, and a characteristic rash (erythema migrans)."
+            },
+            {
+              "stem": "A 60-year-old male with a history of diabetes and chronic kidney disease (eGFR 30 mL/min) presents with fever, dysuria, and flank pain. Urine culture grows Escherichia coli resistant to ciprofloxacin and nitrofurantoin. Which of the following is the MOST appropriate therapy?",
+              "options": [
+                "Ceftriaxone 1 g IV daily",
+                "Trimethoprim-sulfamethoxazole 160/800 mg PO twice daily",
+                "Ciprofloxacin 500 mg PO twice daily",
+                "Amoxicillin 500 mg PO three times daily"
+              ],
+              "answer": "Ceftriaxone 1 g IV daily",
+              "explanation": "Ceftriaxone is a preferred agent for pyelonephritis in patients with reduced renal function, as it achieves high urinary concentrations and is not renally eliminated."
+            },
+            {
+              "stem": "A 35-year-old female with a history of rheumatoid arthritis on methotrexate presents with fever, cough, and dyspnea. Chest X-ray shows bilateral interstitial infiltrates. Which of the following is the MOST likely opportunistic infection?",
+              "options": [
+                "Pneumocystis jirovecii pneumonia",
+                "Tuberculosis",
+                "Histoplasmosis",
+                "Aspergillosis"
+              ],
+              "answer": "Pneumocystis jirovecii pneumonia",
+              "explanation": "Pneumocystis jirovecii pneumonia is a common opportunistic infection in immunocompromised patients on immunosuppressive therapy."
+            },
+            {
+              "stem": "A 40-year-old male with a history of alcohol use disorder presents with fever, cough, and hemoptysis. Chest X-ray shows a right upper lobe cavitary lesion. Sputum smear is positive for acid-fast bacilli. Which of the following is the MOST appropriate initial therapy?",
+              "options": [
+                "Isoniazid, rifampin, pyrazinamide, and ethambutol (RHZE)",
+                "Isoniazid and rifampin only",
+                "Rifampin, pyrazinamide, and ethambutol only",
+                "Isoniazid, rifampin, and ethambutol only"
+              ],
+              "answer": "Isoniazid, rifampin, pyrazinamide, and ethambutol (RHZE)",
+              "explanation": "Standard four-drug therapy (RHZE) is recommended for initial treatment of active tuberculosis, including cavitary disease."
+            },
+            {
+              "stem": "A 25-year-old female presents with fever, jaundice, and right upper quadrant pain. Laboratory tests show elevated ALT, AST, and total bilirubin. Serology is positive for HBsAg and IgM anti-HBc. Which of the following is the MOST appropriate management?",
+              "options": [
+                "Tenofovir disoproxil fumarate (TDF) monotherapy",
+                "Entecavir monotherapy",
+                "Lamivudine monotherapy",
+                "Supportive care only"
+              ],
+              "answer": "Tenofovir disoproxil fumarate (TDF) monotherapy",
+              "explanation": "TDF is a first-line antiviral for chronic hepatitis B with active viral replication, as indicated by elevated ALT and positive HBsAg/IgM anti-HBc."
+            },
+            {
+              "stem": "A 55-year-old male with a history of COPD presents with fever, productive cough, and dyspnea. Chest X-ray shows a right lower lobe consolidation. Sputum culture grows Streptococcus pneumoniae resistant to penicillin. Which of the following is the MOST appropriate therapy?",
+              "options": [
+                "Ceftriaxone 1 g IV daily",
+                "Vancomycin 15 mg/kg IV every 12 hours",
+                "Levofloxacin 750 mg PO daily",
+                "Azithromycin 500 mg PO daily"
+              ],
+              "answer": "Ceftriaxone 1 g IV daily",
+              "explanation": "Ceftriaxone is active against penicillin-resistant Streptococcus pneumoniae and is a recommended agent for community-acquired pneumonia."
+            },
+            {
+              "stem": "A 30-year-old male presents with fever, headache, and nuchal rigidity. Lumbar puncture shows CSF with 200 WBC/mm³ (90% lymphocytes), glucose 40 mg/dL, and protein 100 mg/dL. Which of the following is the MOST likely diagnosis?",
+              "options": [
+                "Bacterial meningitis",
+                "Viral meningitis",
+                "Tuberculous meningitis",
+                "Fungal meningitis"
+              ],
+              "answer": "Viral meningitis",
+              "explanation": "Viral meningitis typically presents with lymphocytic pleocytosis, normal glucose, and elevated protein, consistent with aseptic meningitis."
+            },
+            {
+              "stem": "A 45-year-old female with a history of diabetes presents with fever, dysuria, and flank pain. Urine culture grows Escherichia coli resistant to trimethoprim-sulfamethoxazole and nitrofurantoin. Which of the following is the MOST appropriate therapy?",
+              "options": [
+                "Ciprofloxacin 500 mg PO twice daily",
+                "Ceftriaxone 1 g IV daily",
+                "Amoxicillin-clavulanate 875/125 mg PO twice daily",
+                "Doxycycline 100 mg PO twice daily"
+              ],
+              "answer": "Ceftriaxone 1 g IV daily",
+              "explanation": "Ceftriaxone is a preferred agent for pyelonephritis in patients with resistance to oral agents, as it achieves high urinary concentrations."
+            },
+            {
+              "stem": "A 28-year-old male presents with fever, cough, and weight loss. Chest X-ray shows bilateral upper lobe infiltrates. Sputum smear is positive for acid-fast bacilli. Which of the following is the MOST appropriate next step?",
+              "options": [
+                "Start isoniazid, rifampin, pyrazinamide, and ethambutol (RHZE)",
+                "Order a chest CT scan",
+                "Perform a tuberculin skin test",
+                "Start empiric therapy for bacterial pneumonia"
+              ],
+              "answer": "Start isoniazid, rifampin, pyrazinamide, and ethambutol (RHZE)",
+              "explanation": "A positive sputum smear for acid-fast bacilli is diagnostic for tuberculosis, and empiric therapy should be initiated promptly."
+            },
+            {
+              "stem": "A 50-year-old male with a history of HIV (CD4 80 cells/mm³) presents with fever, cough, and dyspnea. Chest X-ray shows diffuse bilateral infiltrates. Which of the following is the MOST likely diagnosis?",
+              "options": [
+                "Pneumocystis jirovecii pneumonia",
+                "Tuberculosis",
+                "Bacterial pneumonia",
+                "Fungal pneumonia"
+              ],
+              "answer": "Pneumocystis jirovecii pneumonia",
+              "explanation": "Pneumocystis jirovecii pneumonia is a common opportunistic infection in HIV patients with low CD4 counts, presenting with diffuse bilateral infiltrates."
+            },
+            {
+              "stem": "A 35-year-old female presents with fever, dysuria, and suprapubic pain. Urinalysis shows >100 WBC/hpf and positive leukocyte esterase. She has no fever or flank pain. Which of the following is the MOST appropriate therapy?",
+              "options": [
+                "Nitrofurantoin 100 mg PO twice daily for 3 days",
+                "Ciprofloxacin 500 mg PO twice daily for 7 days",
+                "Trimethoprim-sulfamethoxazole 160/800 mg PO twice daily for 3 days",
+                "Amoxicillin-clavulanate 875/125 mg PO twice daily for 7 days"
+              ],
+              "answer": "Nitrofurantoin 100 mg PO twice daily for 3 days",
+              "explanation": "Nitrofurantoin is a first-line agent for uncomplicated cystitis in women, with a favorable resistance profile and low risk of collateral damage."
+            },
+            {
+              "stem": "A 40-year-old male with a history of IV drug use presents with fever, chills, and a new holosystolic murmur. Blood cultures grow Staphylococcus aureus. Which of the following is the MOST appropriate empiric therapy?",
+              "options": [
+                "Vancomycin 15 mg/kg IV every 12 hours",
+                "Ceftriaxone 2 g IV daily",
+                "Penicillin G 4 million units IV every 4 hours",
+                "Clindamycin 600 mg IV every 8 hours"
+              ],
+              "answer": "Vancomycin 15 mg/kg IV every 12 hours",
+              "explanation": "Vancomycin is the empiric therapy of choice for suspected MRSA infective endocarditis in IV drug users, pending susceptibility results."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 45-year-old male with a history of type 2 diabetes presents with fever, dysuria, and flank pain. Urine culture grows Escherichia coli resistant to trimethoprim-sulfamethoxazole and nitrofurantoin. Outline the key principles of selecting an appropriate antimicrobial regimen for this patient.",
+              "modelAnswer": "1. Assess severity of infection: Pyelonephritis requires systemic therapy; consider hospitalization if severe.\n2. Review local antibiogram: Prefer agents with high susceptibility rates for E. coli in the region.\n3. Consider renal function: Avoid renally eliminated agents or adjust doses if eGFR <30 mL/min.\n4. Choose agents with good tissue penetration: Ceftriaxone achieves high urinary concentrations and is not renally eliminated.\n5. Avoid agents with high resistance potential: Avoid fluoroquinolones if resistance is documented.\n6. Monitor for adverse effects: Consider allergies, drug interactions, and organ toxicity (e.g., ceftriaxone may cause biliary sludging).\n7. Duration of therapy: Typically 7–14 days for pyelonephritis; reassess after culture results."
+            },
+            {
+              "stem": "A 30-year-old female with HIV (CD4 150 cells/mm³) presents with fever, cough, and dyspnea. Chest X-ray shows bilateral interstitial infiltrates. Outline the diagnostic approach to confirm Pneumocystis jirovecii pneumonia (PCP).",
+              "modelAnswer": "1. **Clinical suspicion**: Fever, cough, dyspnea, and bilateral infiltrates in a patient with low CD4 count.\n2. **Laboratory tests**:\n   - **Sputum induction**: Collect induced sputum for direct fluorescent antibody (DFA) staining or PCR for P. jirovecii.\n   - **Bronchoalveolar lavage (BAL)**: Perform if sputum is negative; BAL has high sensitivity (90–95%).\n   - **Blood tests**: LDH often elevated; ABG to assess hypoxia (PaO2 <70 mmHg suggests severe disease).\n3. **Imaging**: Chest X-ray shows bilateral interstitial infiltrates; CT may show ground-glass opacities.\n4. **Diagnosis confirmation**: Identification of P. jirovecii cysts/trophozoites in respiratory specimens via microscopy or PCR."
+            },
+            {
+              "stem": "A 50-year-old male with a history of alcohol use disorder presents with fever, cough, and hemoptysis. Chest X-ray shows a right upper lobe cavitary lesion. Sputum smear is positive for acid-fast bacilli. Outline the steps for initiating tuberculosis (TB) treatment in this patient.",
+              "modelAnswer": "1. **Confirm diagnosis**: Sputum smear positive for acid-fast bacilli suggests TB; confirm with GeneXpert or culture.\n2. **Assess for drug resistance**: Perform drug susceptibility testing (DST) if resistance is suspected (e.g., prior TB treatment, contact with resistant cases).\n3. **Baseline investigations**:\n   - Liver function tests (ALT, AST, bilirubin) to assess baseline hepatic function.\n   - Renal function tests (creatinine, eGFR).\n   - HIV serology (TB-HIV co-infection is common).\n   - Baseline audiometry if streptomycin is considered (ototoxicity risk).\n4. **Initiate standard four-drug therapy (RHZE)**:\n   - Isoniazid (INH) 5 mg/kg (max 300 mg) daily.\n   - Rifampicin (RIF) 10 mg/kg (max 600 mg) daily.\n   - Pyrazinamide (PZA) 25 mg/kg (max 2 g) daily.\n   - Ethambutol (EMB) 15–25 mg/kg (max 1.6 g) daily.\n5. **Monitor for adverse effects**:\n   - Hepatotoxicity (monitor LFTs monthly).\n   - Peripheral neuropathy (supplement with pyridoxine 25–50 mg daily).\n   - Visual acuity (for ethambutol).\n6. **Counseling**: Emphasize adherence, importance of completing therapy, and avoiding alcohol (increases hepatotoxicity risk)."
+            },
+            {
+              "stem": "A 28-year-old male presents with fever, dysuria, and a purulent urethral discharge. Gram stain shows intracellular gram-negative diplococci. Outline the diagnostic and treatment approach for this patient and his partner.",
+              "modelAnswer": "1. **Diagnosis**:\n   - **Clinical**: Urethritis with purulent discharge and dysuria.\n   - **Laboratory**: Gram stain shows intracellular gram-negative diplococci (suggestive of Neisseria gonorrhoeae); confirm with NAAT or culture.\n   - **Differential**: Consider Chlamydia trachomatis co-infection (perform NAAT for both).\n2. **Treatment for patient**:\n   - **First-line**: Ceftriaxone 500 mg IM single dose (for gonorrhea).\n   - **Chlamydia coverage**: Azithromycin 1 g PO single dose or doxycycline 100 mg PO twice daily for 7 days.\n3. **Partner management**:\n   - **Expedited partner therapy (EPT)**: Provide patient with medication or prescription for partner(s) without prior evaluation.\n   - **Counseling**: Advise abstinence until 7 days after treatment completion and partner treatment.\n4. **Follow-up**:\n   - **Test of cure**: Not routinely required unless symptoms persist or resistance is suspected.\n   - **Screen for other STIs**: HIV, syphilis, hepatitis B/C, and HSV if indicated."
+            },
+            {
+              "stem": "A 40-year-old female with a history of chronic hepatitis B presents for evaluation. Her labs show HBsAg positive, anti-HBc positive, anti-HBs negative, and HBV DNA 2,000,000 IU/mL. Outline the goals of therapy and preferred antiviral regimens.",
+              "modelAnswer": "1. **Goals of therapy**:\n   - Suppress HBV replication to prevent progression to cirrhosis, hepatocellular carcinoma (HCC), and liver failure.\n   - Achieve sustained virologic response (SVR) with undetectable HBV DNA.\n   - Improve liver histology and reduce risk of complications.\n2. **Indications for treatment**:\n   - Elevated ALT (>2x ULN) or evidence of liver inflammation/fibrosis.\n   - HBV DNA >2,000 IU/mL (for HBeAg-negative) or >20,000 IU/mL (for HBeAg-positive).\n3. **Preferred regimens**:\n   - **Tenofovir disoproxil fumarate (TDF)**: 300 mg PO daily; high barrier to resistance, renal monitoring required.\n   - **Entecavir**: 0.5–1 mg PO daily; high barrier to resistance, preferred in patients with renal impairment.\n   - **Tenofovir alafenamide (TAF)**: 25 mg PO daily; lower renal toxicity than TDF.\n4. **Monitoring**:\n   - **HBV DNA**: Check at baseline, 12 weeks, and every 6–12 months during therapy.\n   - **LFTs**: Monitor ALT/AST every 3–6 months.\n   - **Renal function**: Monitor creatinine/eGFR every 3–6 months (for TDF/TAF).\n   - **Bone density**: Consider in patients on long-term TDF."
+            },
+            {
+              "stem": "A 55-year-old male with a history of COPD presents with fever, productive cough, and dyspnea. Chest X-ray shows a right lower lobe consolidation. Sputum culture grows Streptococcus pneumoniae resistant to penicillin. Outline the principles of antimicrobial stewardship in this case.",
+              "modelAnswer": "1. **Appropriate specimen collection**: Ensure sputum is collected before antibiotics are started to guide therapy.\n2. **Empiric therapy**: Start with a broad-spectrum agent (e.g., ceftriaxone) based on local resistance patterns for CAP.\n3. **De-escalation**: Once culture results are available, switch to a narrower-spectrum agent if possible (e.g., penicillin if susceptible).\n4. **Duration of therapy**: Limit to 5–7 days for CAP unless complications (e.g., empyema) are present.\n5. **Avoid unnecessary antibiotics**: Do not treat colonization or asymptomatic bacteriuria.\n6. **Patient education**: Counsel on completing the full course of antibiotics and avoiding unnecessary future courses.\n7. **Monitor for resistance**: Report resistance patterns to local antibiogram to guide future empiric therapy."
+            },
+            {
+              "stem": "A 30-year-old female with a history of HIV (CD4 200 cells/mm³) presents with fever, headache, and confusion. MRI brain shows multiple ring-enhancing lesions. Outline the diagnostic approach and treatment plan for suspected toxoplasmic encephalitis.",
+              "modelAnswer": "1. **Diagnostic approach**:\n   - **Clinical**: Fever, headache, confusion, and focal neurological deficits in a patient with low CD4 count.\n   - **Imaging**: MRI brain shows ring-enhancing lesions (often multiple and bilateral).\n   - **Laboratory**: Toxoplasma IgG positive (suggests prior exposure); PCR for Toxoplasma DNA in CSF if available.\n   - **Differential**: Consider primary CNS lymphoma, tuberculosis, or cryptococcosis.\n2. **Treatment plan**:\n   - **First-line**: Pyrimethamine 200 mg PO loading dose, then 50–75 mg PO daily + sulfadiazine 1–1.5 g PO every 6 hours + leucovorin 10–25 mg PO daily (to prevent bone marrow suppression).\n   - **Alternative**: Trimethoprim-sulfamethoxazole (TMP-SMX) 10 mg/kg/day (based on TMP) if pyrimethamine is unavailable.\n   - **Duration**: Treat for at least 6 weeks, then consider secondary prophylaxis if CD4 remains <200 cells/mm³.\n3. **Monitoring**:\n   - **Clinical response**: Assess for improvement in symptoms within 10–14 days.\n   - **Adverse effects**: Monitor for bone marrow suppression (leucovorin), rash, and renal toxicity (sulfadiazine).\n   - **Imaging**: Repeat MRI after 2–4 weeks to assess response."
+            },
+            {
+              "stem": "A 45-year-old male with a history of IV drug use presents with fever, chills, and a new holosystolic murmur. Blood cultures grow Staphylococcus aureus. Outline the management of infective endocarditis (IE) in this patient.",
+              "modelAnswer": "1. **Diagnosis**:\n   - **Clinical**: Fever, murmur, and positive blood cultures for S. aureus.\n   - **Echocardiography**: Transthoracic (TTE) or transesophageal (TEE) to assess for vegetations, abscess, or valve dysfunction.\n   - **Duke criteria**: Use to confirm diagnosis (2 major, 1 major + 3 minor, or 5 minor criteria).\n2. **Treatment**:\n   - **Empiric therapy**: Vancomycin 15 mg/kg IV every 12 hours (for MRSA coverage) + gentamicin 1 mg/kg IV every 8 hours (for synergy) + rifampin 300 mg PO twice daily (for biofilm penetration in prosthetic valves).\n   - **Definitive therapy**: Adjust based on susceptibility results (e.g., nafcillin for MSSA).\n   - **Duration**: 6 weeks for native valve IE; 6 weeks for prosthetic valve IE with gentamicin for first 2 weeks.\n3. **Surgical intervention**:\n   - **Indications**: Heart failure, persistent bacteremia, abscess, or embolic events.\n4. **Monitoring**:\n   - **Blood cultures**: Repeat until negative to confirm clearance of bacteremia.\n   - **Echocardiography**: Repeat to assess response and complications.\n   - **Adverse effects**: Monitor for nephrotoxicity (gentamicin), ototoxicity, and rash (rifampin).\n5. **Counseling**:\n   - **IV drug use cessation**: Refer to addiction services.\n   - **Antimicrobial adherence**: Emphasize completing the full course of therapy."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 35-year-old male presents to the emergency department with a 3-day history of fever, headache, and confusion. He is disoriented to time and place and has a temperature of 39.5°C, heart rate of 110 bpm, and blood pressure of 100/60 mmHg. Physical examination reveals nuchal rigidity and a petechial rash on his lower extremities. Lumbar puncture shows CSF with 500 WBC/mm³ (90% neutrophils), glucose 20 mg/dL (serum glucose 100 mg/dL), and protein 200 mg/dL. Blood cultures are pending. a) Identify the most likely diagnosis and the likely causative organism. b) Justify your answer. c) Describe the investigations you would recommend to support the diagnosis. d) Review the patient-related factors to consider when selecting empiric antimicrobial therapy. e) Propose an appropriate treatment plan for this patient. f) List two complications you would be worried about in this patient. g) Explain how you would manage the contacts of this patient.",
+              "modelAnswer": {
+                "a": "Most likely diagnosis: **Meningococcal meningitis** (caused by Neisseria meningitidis).",
+                "b": "Justification:\n1. **Clinical presentation**: Fever, headache, confusion, nuchal rigidity, and petechial rash are classic for meningococcal meningitis.\n2. **CSF findings**: Neutrophilic pleocytosis, low glucose, and elevated protein are consistent with bacterial meningitis.\n3. **Epidemiology**: Meningococcal disease often presents in outbreaks or close-contact settings, and the petechial rash is characteristic of Neisseria meningitidis.",
+                "c": "Investigations to support diagnosis:\n1. **CSF Gram stain**: May show gram-negative diplococci.\n2. **CSF culture**: Gold standard for confirming N. meningitidis; also allows susceptibility testing.\n3. **Blood cultures**: Often positive in meningococcal meningitis.\n4. **PCR**: Rapid and highly sensitive for detecting N. meningitidis DNA in CSF or blood.\n5. **Latex agglutination test**: Detects meningococcal antigens in CSF.\n6. **Coagulation studies**: DIC is a potential complication of meningococcemia.",
+                "d": "Patient-related factors for empiric therapy selection:\n1. **Age**: Adult empiric therapy should cover common bacterial pathogens (e.g., S. pneumoniae, N. meningitidis, H. influenzae).\n2. **Severity**: Severe disease (e.g., hypotension, altered mental status) requires broad-spectrum empiric therapy.\n3. **Allergies**: Avoid beta-lactams if severe penicillin allergy is documented.\n4. **Renal/hepatic function**: Adjust doses for renally or hepatically eliminated agents.\n5. **Comorbidities**: Consider underlying conditions (e.g., immunosuppression) that may alter pathogen susceptibility.\n6. **Local resistance patterns**: Prefer agents with high susceptibility rates for common pathogens in the region.",
+                "e": "Treatment plan:\n1. **Empiric therapy**: Ceftriaxone 2 g IV every 12 hours (covers N. meningitidis, S. pneumoniae, and H. influenzae).\n   - **Alternative**: Meropenem 2 g IV every 8 hours if severe beta-lactam allergy.\n2. **Adjunctive therapy**:\n   - **Dexamethasone**: 10 mg IV every 6 hours for 4 days (start before or with first antibiotic dose; reduces mortality in adults with bacterial meningitis).\n   - **Fluid resuscitation**: Aggressive IV fluids for hypotension (e.g., normal saline 1–2 L bolus).\n   - **Vasopressors**: Norepinephrine if hypotension persists despite fluids.\n3. **Supportive care**:\n   - **Monitoring**: Vital signs, urine output, and neurological status.\n   - **Seizure prophylaxis**: Consider if risk factors (e.g., focal deficits, severe disease).\n   - **ICU admission**: For close monitoring and supportive care.",
+                "f": "Complications to monitor:\n1. **Septic shock/DIC**: Due to overwhelming meningococcemia.\n2. **Hydrocephalus or cerebral edema**: Secondary to inflammation and increased intracranial pressure.",
+                "g": "Management of contacts:\n1. **Chemoprophylaxis**:\n   - **Rifampin**: 600 mg PO every 12 hours for 2 days (adults) or 10 mg/kg every 12 hours for 2 days (children).\n   - **Alternative**: Ciprofloxacin 500 mg PO single dose or ceftriaxone 250 mg IM single dose.\n2. **Vaccination**:\n   - Administer meningococcal conjugate vaccine (e.g., MenACWY) to close contacts if not up to date.\n3. **Surveillance**: Monitor contacts for 10 days for symptoms of meningococcal disease."
+              }
+            },
+            {
+              "stem": "A 50-year-old male presents to the emergency department with a 1-week history of fever, cough, and progressive dyspnea. He has a history of type 2 diabetes and hypertension. On examination, he is tachypneic (RR 30/min), hypoxic (SpO2 88% on room air), and has bilateral crackles on lung auscultation. Chest X-ray shows diffuse bilateral infiltrates. Sputum Gram stain shows no organisms, and sputum culture is pending. a) Identify the most likely diagnosis and the most likely causative organism. b) Justify your answer (6 points @0.5 marks each). c) Outline two additional investigations you would recommend. d) Evaluate whether you would recommend treating this patient as an outpatient, inpatient (general ward), or in an intensive care unit. Justify your answer. e) Formulate a treatment plan for this patient. f) Using appropriate examples, examine how you would monitor for response to treatment.",
+              "modelAnswer": {
+                "a": "Most likely diagnosis: **Pneumocystis jirovecii pneumonia (PCP)**.\nMost likely causative organism: **Pneumocystis jirovecii**.",
+                "b": "Justification:\n1. **Clinical presentation**: Fever, cough, and progressive dyspnea in a patient with underlying immunosuppression (e.g., diabetes, but consider HIV if CD4 unknown).\n2. **Chest X-ray**: Diffuse bilateral infiltrates are typical of PCP.\n3. **Hypoxia**: Severe hypoxia (SpO2 88%) suggests significant lung involvement.\n4. **Sputum Gram stain**: Negative for bacteria, which is consistent with a fungal or atypical pathogen like P. jirovecii.\n5. **Underlying risk factors**: Diabetes may not directly cause immunosuppression, but consider other causes (e.g., HIV, corticosteroid use).\n6. **Severity**: Rapid progression and hypoxia indicate severe disease requiring hospitalization.",
+                "c": "Additional investigations:\n1. **Bronchoalveolar lavage (BAL)**: Collect BAL fluid for direct fluorescent antibody (DFA) staining or PCR for P. jirovecii; highly sensitive and specific.\n2. **ABG**: Assess for hypoxia (PaO2 <70 mmHg indicates severe PCP and may warrant ICU admission).\n3. **HIV testing**: Rapid HIV test to assess for underlying immunosuppression (CD4 count if positive).\n4. **LDH levels**: Often elevated in PCP; may correlate with disease severity.\n5. **Serum beta-D-glucan**: Non-specific but may support diagnosis of fungal pneumonia.",
+                "d": "Treatment setting and justification:\n- **Recommendation**: **Intensive care unit (ICU)**.\n- **Justification**:\n  1. **Severe hypoxia**: SpO2 88% on room air indicates respiratory failure requiring oxygen supplementation.\n  2. **Tachypnea**: RR 30/min suggests impending respiratory failure.\n  3. **Diffuse bilateral infiltrates**: Indicates extensive lung involvement.\n  4. **Risk of deterioration**: PCP can progress rapidly, requiring mechanical ventilation.\n  5. **Need for close monitoring**: ICU allows for continuous monitoring, frequent ABG checks, and rapid escalation of care if needed.",
+                "e": "Treatment plan:\n1. **Antimicrobial therapy**:\n   - **First-line**: Trimethoprim-sulfamethoxazole (TMP-SMX) 15–20 mg/kg/day (based on TMP) IV divided every 6–8 hours.\n   - **Alternative**: If TMP-SMX is contraindicated (e.g., severe allergy), use clindamycin 600 mg IV every 8 hours + primaquine 30 mg PO daily.\n   - **Duration**: 21 days for moderate-to-severe PCP.\n2. **Adjunctive therapy**:\n   - **Corticosteroids**: Prednisone 40 mg PO twice daily for 5 days, then taper over 10 days (start within 72 hours of PCP diagnosis if PaO2 <70 mmHg).\n   - **Oxygen therapy**: Titrate to maintain SpO2 >90%.\n   - **Fluid management**: Avoid overhydration to prevent pulmonary edema.\n3. **Supportive care**:\n   - **Monitoring**: Vital signs, oxygen saturation, and ABG every 12–24 hours initially.\n   - **Nutrition**: Ensure adequate caloric intake (consider enteral or parenteral nutrition if needed).\n   - **Infection control**: Standard precautions; no isolation needed for PCP.",
+                "f": "Monitoring for response to treatment:\n1. **Clinical improvement**:\n   - **Symptoms**: Reduction in fever, cough, and dyspnea within 5–7 days.\n   - **Oxygen requirements**: Decrease in FiO2 or improvement in SpO2.\n2. **Laboratory markers**:\n   - **LDH levels**: Should decrease with treatment response.\n   - **ABG**: Improvement in PaO2 and A-a gradient.\n3. **Imaging**:\n   - **Chest X-ray**: Resolution of infiltrates over weeks to months.\n4. **Microbiological clearance**:\n   - **Repeat BAL**: Not routinely performed, but repeat PCR/DFA if clinical deterioration suggests treatment failure.\n5. **Adverse effects**:\n   - **TMP-SMX**: Monitor for rash, bone marrow suppression (CBC weekly), and hyperkalemia.\n   - **Corticosteroids**: Monitor for hyperglycemia, hypertension, and secondary infections."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

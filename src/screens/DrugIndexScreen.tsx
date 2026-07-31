@@ -372,6 +372,8 @@ export default function DrugIndexScreen() {
             <DrugMonographView
               content={monograph}
               drugName={selectedDrugName || searchQuery || 'Medication Monograph'}
+              genericName={catalog.find(m => m.name.toLowerCase() === (selectedDrugName || searchQuery || '').toLowerCase())?.generic_name}
+              drugId={currentMonographId || undefined}
               isSeeded={!!currentMonographId}
               onBack={() => { setMonograph(null); setCurrentMonographId(null); setMonographKey(''); setSelectedDrugName(null); }}
               onPin={handlePinForOffline}

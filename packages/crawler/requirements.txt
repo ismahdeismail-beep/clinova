@@ -1,0 +1,16 @@
+scrapy>=2.11
+requests>=2.31
+beautifulsoup4>=4.12
+playwright>=1.40
+Pillow>=10.2
+opencv-python-headless>=4.9
+imagehash>=4.3
+psycopg2-binary>=2.9
+supabase>=2.0
+cloudinary>=1.35
+rich>=13.7
+loguru>=0.7
+pydantic>=2.5
+httpx>=0.26
+aiohttp>=3.9
+tenacity>=8.2

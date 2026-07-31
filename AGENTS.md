@@ -295,6 +295,15 @@ Subagents should read it before starting work. Key points:
 - Verify edits with `npm run lint` (`tsc --noEmit`) and/or `npx eslint .`.
 - Prettier: no semicolons, single quotes, trailingComma all, printWidth 100. Do not add comments unless asked.
 
+## Derived Counts (Project Rule — NEVER hardcode counts in the UI)
+
+Every count displayed in the UI must be **derived from source data at render time**.
+Whenever content is added or removed (exam units/papers, subjects, modules,
+flashcards, drugs, etc.), every display showing a related count must update
+automatically — never edit counts by hand. Load the `derived-counts` skill
+(`.opencode/skills/derived-counts/SKILL.md`) for the full table of count
+displays, paper-count logic, and the add-content checklist.
+
 ## Persistent Memory (Supermemory)
 
 The Supermemory tool provides cross-session persistent memory for subagents. It requires:

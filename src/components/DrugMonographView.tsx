@@ -2,6 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { BookOpen, ArrowRight, Download, Pill, Database, Sparkles, ShieldCheck } from 'lucide-react';
 import { getDrugClassConfig } from '../data/drugClassColors';
+import { MedicineImageGallery } from './MedicineImageGallery';
 
 interface DrugMonographViewProps {
   content: string;
@@ -9,6 +10,7 @@ interface DrugMonographViewProps {
   genericName?: string;
   drugClass?: string;
   isSeeded: boolean;
+  drugId?: string;
   onBack: () => void;
   onPin: () => void;
   saveButton?: React.ReactNode;
@@ -25,6 +27,7 @@ export function DrugMonographView({
   genericName,
   drugClass,
   isSeeded,
+  drugId,
   onBack,
   onPin,
   saveButton,
@@ -187,6 +190,16 @@ export function DrugMonographView({
             {body}
           </ReactMarkdown>
         </div>
+
+        {/* ── Medicine Image Gallery ── */}
+        {drugId && (
+          <div className="px-4 sm:px-6 md:px-8 py-4 border-t border-[var(--border)]/60">
+            <MedicineImageGallery
+              drugId={drugId}
+              genericName={genericName || drugName}
+            />
+          </div>
+        )}
       </div>
 
       {/* ── Footer ── */}

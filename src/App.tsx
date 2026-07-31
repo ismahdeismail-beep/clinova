@@ -18,6 +18,7 @@ const ExamScreen = React.lazy(() => import('./screens/ExamScreen'));
 const CarePlanScreen = React.lazy(() => import('./screens/CarePlanScreen'));
 const OnlineLibraryScreen = React.lazy(() => import('./screens/OnlineLibraryScreen'));
 const SettingsScreen = React.lazy(() => import('./screens/SettingsScreen'));
+const AdminImageManagerScreen = React.lazy(() => import('./screens/AdminImageManagerScreen'));
 const LoginScreen = React.lazy(() => import('./screens/LoginScreen'));
 const LandingScreen = React.lazy(() => import('./screens/LandingScreen'));
 
@@ -343,8 +344,9 @@ function AppContent() {
               <Route path="/board-exam" element={<Navigate to="/exam/board-exam" replace />} />
               <Route path="/board-exam/:setId" element={<Navigate to="/exam/board-exam" replace />} />
               <Route path="/library" element={<OnlineLibraryScreen />} />
-              <Route path="/settings" element={<SettingsScreen />} />
-              <Route path="*" element={<Navigate to="/" replace />} />
+               <Route path="/settings" element={<SettingsScreen />} />
+               <Route path="/admin/images" element={<AdminImageManagerScreen />} />
+               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </React.Suspense>
           <InstallPWA />

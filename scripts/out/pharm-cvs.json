@@ -1,0 +1,1319 @@
+{
+  "pharm-cvs": {
+    "1": {
+      "title": "Cardiovascular System",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 65-year-old male with hypertension and type 2 diabetes mellitus presents for routine follow-up. His current medications include metformin and atorvastatin. His blood pressure is 158/92 mmHg. Which of the following antihypertensive agents is MOST appropriate as initial therapy according to current guidelines?",
+              "options": [
+                "a) Hydrochlorothiazide 12.5 mg daily",
+                "b) Lisinopril 10 mg daily",
+                "c) Amlodipine 5 mg daily",
+                "d) Metoprolol 50 mg twice daily"
+              ],
+              "answer": "b) Lisinopril 10 mg daily",
+              "explanation": "ACE inhibitors like lisinopril are first-line agents for hypertension in patients with diabetes due to their renal protective effects and reduction in cardiovascular events."
+            },
+            {
+              "stem": "A 58-year-old female with a history of hypertension and chronic kidney disease (eGFR 45 mL/min/1.73m²) is currently taking valsartan 80 mg daily. She develops a persistent dry cough. Which of the following is the MOST appropriate next step?",
+              "options": [
+                "a) Switch to hydrochlorothiazide 25 mg daily",
+                "b) Switch to amlodipine 5 mg daily",
+                "c) Switch to losartan 50 mg daily",
+                "d) Add hydrochlorothiazide to valsartan"
+              ],
+              "answer": "c) Switch to losartan 50 mg daily",
+              "explanation": "Losartan is an ARB and does not cause the dry cough associated with ACE inhibitors, making it a suitable alternative in patients intolerant to ACE inhibitors."
+            },
+            {
+              "stem": "A 72-year-old male with hypertension and stable angina is prescribed verapamil. Which of the following adverse effects is MOST likely to occur with this medication?",
+              "options": [
+                "a) Reflex tachycardia",
+                "b) Bradycardia",
+                "c) Hyperkalemia",
+                "d) Hypoglycemia"
+              ],
+              "answer": "b) Bradycardia",
+              "explanation": "Verapamil is a non-dihydropyridine calcium channel blocker that slows atrioventricular conduction, leading to bradycardia as a common adverse effect."
+            },
+            {
+              "stem": "A 45-year-old female with hypertension and no other comorbidities is started on hydrochlorothiazide 25 mg daily. Which electrolyte abnormality is MOST likely to occur with this therapy?",
+              "options": [
+                "a) Hyperkalemia",
+                "b) Hypercalcemia",
+                "c) Hypokalemia",
+                "d) Hypernatremia"
+              ],
+              "answer": "c) Hypokalemia",
+              "explanation": "Thiazide diuretics like hydrochlorothiazide increase urinary excretion of potassium, leading to hypokalemia as a common adverse effect."
+            },
+            {
+              "stem": "A 60-year-old male with heart failure with reduced ejection fraction (HFrEF) is prescribed digoxin. Which of the following is the PRIMARY mechanism of action of digoxin in this setting?",
+              "options": [
+                "a) Inhibition of the sodium-potassium ATPase pump",
+                "b) Blockade of beta-1 adrenergic receptors",
+                "c) Inhibition of angiotensin-converting enzyme",
+                "d) Blockade of calcium channels"
+              ],
+              "answer": "a) Inhibition of the sodium-potassium ATPase pump",
+              "explanation": "Digoxin inhibits the sodium-potassium ATPase pump, increasing intracellular calcium and enhancing cardiac contractility in heart failure."
+            },
+            {
+              "stem": "A 50-year-old male with a history of atrial fibrillation is prescribed amiodarone. Which of the following is the MOST appropriate monitoring parameter for this patient?",
+              "options": [
+                "a) Serum potassium levels",
+                "b) Thyroid function tests",
+                "c) Serum creatinine levels",
+                "d) Liver function tests"
+              ],
+              "answer": "b) Thyroid function tests",
+              "explanation": "Amiodarone can cause thyroid dysfunction (both hyper- and hypothyroidism), necessitating regular thyroid function monitoring."
+            },
+            {
+              "stem": "A 35-year-old female with hypertension and no other comorbidities is prescribed propranolol. Which of the following is a potential adverse effect specific to non-selective beta-blockers like propranolol?",
+              "options": [
+                "a) Bradycardia",
+                "b) Bronchospasm",
+                "c) Hyperkalemia",
+                "d) Hypoglycemia"
+              ],
+              "answer": "b) Bronchospasm",
+              "explanation": "Non-selective beta-blockers like propranolol can cause bronchospasm by blocking beta-2 receptors in the lungs, which is a contraindication in patients with asthma."
+            },
+            {
+              "stem": "A 70-year-old male with hypertension and chronic obstructive pulmonary disease (COPD) is prescribed a beta-blocker. Which of the following beta-blockers is MOST appropriate for this patient?",
+              "options": [
+                "a) Propranolol",
+                "b) Metoprolol",
+                "c) Atenolol",
+                "d) Carvedilol"
+              ],
+              "answer": "b) Metoprolol",
+              "explanation": "Metoprolol is a cardioselective beta-1 blocker, which is less likely to cause bronchospasm compared to non-selective beta-blockers, making it safer in patients with COPD."
+            },
+            {
+              "stem": "A 68-year-old female with hypertension and heart failure with preserved ejection fraction (HFpEF) is prescribed spironolactone. Which of the following is the PRIMARY mechanism of action of spironolactone in this setting?",
+              "options": [
+                "a) Inhibition of the renin-angiotensin-aldosterone system",
+                "b) Blockade of aldosterone receptors",
+                "c) Inhibition of sodium reabsorption in the distal tubule",
+                "d) Inhibition of carbonic anhydrase"
+              ],
+              "answer": "b) Blockade of aldosterone receptors",
+              "explanation": "Spironolactone is a potassium-sparing diuretic that acts as an aldosterone receptor antagonist, reducing sodium reabsorption and potassium excretion."
+            },
+            {
+              "stem": "A 55-year-old male with hypertension and type 2 diabetes mellitus is prescribed atorvastatin. Which of the following is the PRIMARY mechanism of action of atorvastatin?",
+              "options": [
+                "a) Inhibition of cholesterol absorption in the intestine",
+                "b) Inhibition of HMG-CoA reductase",
+                "c) Inhibition of bile acid reabsorption",
+                "d) Inhibition of lipoprotein lipase"
+              ],
+              "answer": "b) Inhibition of HMG-CoA reductase",
+              "explanation": "Atorvastatin is a statin that inhibits HMG-CoA reductase, the rate-limiting enzyme in cholesterol synthesis, thereby lowering LDL cholesterol levels."
+            },
+            {
+              "stem": "A 40-year-old female with a history of deep vein thrombosis (DVT) is prescribed rivaroxaban. Which of the following is the MOST appropriate monitoring parameter for this patient?",
+              "options": [
+                "a) Activated partial thromboplastin time (aPTT)",
+                "b) International normalized ratio (INR)",
+                "c) Anti-factor Xa activity",
+                "d) No routine monitoring required"
+              ],
+              "answer": "d) No routine monitoring required",
+              "explanation": "Rivaroxaban is a direct oral anticoagulant (DOAC) that does not require routine laboratory monitoring for efficacy or safety."
+            },
+            {
+              "stem": "A 62-year-old male with atrial fibrillation is prescribed warfarin. Which of the following foods is MOST likely to affect the INR when consumed in large amounts?",
+              "options": [
+                "a) Bananas",
+                "b) Spinach",
+                "c) Chicken",
+                "d) Milk"
+              ],
+              "answer": "b) Spinach",
+              "explanation": "Spinach is high in vitamin K, which can antagonize the effects of warfarin and affect INR levels, necessitating dietary consistency."
+            },
+            {
+              "stem": "A 50-year-old male with hypertension and chronic kidney disease (eGFR 30 mL/min/1.73m²) is prescribed furosemide. Which of the following is the PRIMARY mechanism of action of furosemide?",
+              "options": [
+                "a) Inhibition of the sodium-potassium-chloride cotransporter in the loop of Henle",
+                "b) Inhibition of the sodium-chloride cotransporter in the distal tubule",
+                "c) Blockade of aldosterone receptors",
+                "d) Inhibition of carbonic anhydrase"
+              ],
+              "answer": "a) Inhibition of the sodium-potassium-chloride cotransporter in the loop of Henle",
+              "explanation": "Furosemide is a loop diuretic that inhibits the sodium-potassium-chloride cotransporter in the thick ascending limb of the loop of Henle, leading to diuresis."
+            },
+            {
+              "stem": "A 75-year-old female with hypertension and osteoporosis is prescribed chlorthalidone. Which of the following is a potential adverse effect of thiazide diuretics that may benefit this patient?",
+              "options": [
+                "a) Hypercalcemia",
+                "b) Hypocalcemia",
+                "c) Hyperkalemia",
+                "d) Hypokalemia"
+              ],
+              "answer": "a) Hypercalcemia",
+              "explanation": "Thiazide diuretics can increase calcium reabsorption in the distal tubule, leading to hypercalcemia, which may be beneficial in patients with osteoporosis."
+            },
+            {
+              "stem": "A 48-year-old male with hypertension and a history of myocardial infarction is prescribed carvedilol. Which of the following is the PRIMARY benefit of carvedilol in this patient?",
+              "options": [
+                "a) Reduction in heart rate",
+                "b) Reduction in blood pressure",
+                "c) Reduction in mortality",
+                "d) Reduction in lipid levels"
+              ],
+              "answer": "c) Reduction in mortality",
+              "explanation": "Carvedilol, a non-selective beta-blocker with alpha-1 blocking activity, has been shown to reduce mortality in patients with heart failure and post-myocardial infarction."
+            },
+            {
+              "stem": "A 60-year-old female with hypertension and chronic kidney disease (eGFR 25 mL/min/1.73m²) is prescribed irbesartan. Which of the following is a contraindication to the use of angiotensin receptor blockers (ARBs) in this patient?",
+              "options": [
+                "a) Bilateral renal artery stenosis",
+                "b) Hyperkalemia",
+                "c) Hypotension",
+                "d) Diabetes mellitus"
+              ],
+              "answer": "a) Bilateral renal artery stenosis",
+              "explanation": "Bilateral renal artery stenosis is a contraindication to the use of ARBs due to the risk of acute kidney injury and hyperkalemia."
+            },
+            {
+              "stem": "A 55-year-old male with hypertension and benign prostatic hyperplasia (BPH) is prescribed doxazosin. Which of the following is the PRIMARY mechanism of action of doxazosin in this patient?",
+              "options": [
+                "a) Blockade of alpha-1 adrenergic receptors",
+                "b) Blockade of beta-1 adrenergic receptors",
+                "c) Inhibition of angiotensin-converting enzyme",
+                "d) Inhibition of calcium channels"
+              ],
+              "answer": "a) Blockade of alpha-1 adrenergic receptors",
+              "explanation": "Doxazosin is an alpha-1 blocker that relaxes smooth muscle in the prostate and bladder neck, improving urinary symptoms in BPH."
+            },
+            {
+              "stem": "A 70-year-old female with hypertension and heart failure with reduced ejection fraction (HFrEF) is prescribed sacubitril/valsartan. Which of the following is the PRIMARY mechanism of action of sacubitril in this combination?",
+              "options": [
+                "a) Inhibition of neprilysin",
+                "b) Blockade of angiotensin II receptors",
+                "c) Inhibition of angiotensin-converting enzyme",
+                "d) Blockade of beta-1 adrenergic receptors"
+              ],
+              "answer": "a) Inhibition of neprilysin",
+              "explanation": "Sacubitril is a neprilysin inhibitor that increases levels of natriuretic peptides, leading to vasodilation and diuresis, while valsartan blocks angiotensin II receptors."
+            },
+            {
+              "stem": "A 50-year-old male with hypertension and a history of gout is prescribed indapamide. Which of the following is a potential adverse effect of thiazide diuretics that may exacerbate gout?",
+              "options": [
+                "a) Hyperkalemia",
+                "b) Hypercalcemia",
+                "c) Hyperuricemia",
+                "d) Hypocalcemia"
+              ],
+              "answer": "c) Hyperuricemia",
+              "explanation": "Thiazide diuretics can increase uric acid levels, potentially exacerbating gout in susceptible patients."
+            },
+            {
+              "stem": "A 65-year-old female with hypertension and a history of stroke is prescribed perindopril. Which of the following is the PRIMARY benefit of perindopril in this patient?",
+              "options": [
+                "a) Reduction in blood pressure",
+                "b) Reduction in stroke recurrence",
+                "c) Reduction in lipid levels",
+                "d) Reduction in heart rate"
+              ],
+              "answer": "b) Reduction in stroke recurrence",
+              "explanation": "Perindopril, an ACE inhibitor, has been shown to reduce the risk of stroke recurrence in high-risk patients."
+            },
+            {
+              "stem": "A 45-year-old male with hypertension and a history of asthma is prescribed nifedipine. Which of the following is a potential adverse effect of dihydropyridine calcium channel blockers like nifedipine?",
+              "options": [
+                "a) Bradycardia",
+                "b) Reflex tachycardia",
+                "c) Hyperkalemia",
+                "d) Hypoglycemia"
+              ],
+              "answer": "b) Reflex tachycardia",
+              "explanation": "Dihydropyridine calcium channel blockers like nifedipine can cause reflex tachycardia due to peripheral vasodilation and subsequent sympathetic activation."
+            },
+            {
+              "stem": "A 72-year-old male with hypertension and chronic kidney disease (eGFR 20 mL/min/1.73m²) is prescribed spironolactone. Which of the following is the MOST appropriate monitoring parameter for this patient?",
+              "options": [
+                "a) Serum potassium levels",
+                "b) Serum sodium levels",
+                "c) Serum creatinine levels",
+                "d) Serum magnesium levels"
+              ],
+              "answer": "a) Serum potassium levels",
+              "explanation": "Spironolactone is a potassium-sparing diuretic, and hyperkalemia is a significant risk, especially in patients with chronic kidney disease."
+            },
+            {
+              "stem": "A 55-year-old female with hypertension and a history of myocardial infarction is prescribed eplerenone. Which of the following is the PRIMARY mechanism of action of eplerenone?",
+              "options": [
+                "a) Blockade of aldosterone receptors",
+                "b) Inhibition of the renin-angiotensin-aldosterone system",
+                "c) Inhibition of sodium reabsorption in the distal tubule",
+                "d) Inhibition of carbonic anhydrase"
+              ],
+              "answer": "a) Blockade of aldosterone receptors",
+              "explanation": "Eplerenone is a selective aldosterone receptor antagonist used in patients with heart failure post-myocardial infarction to reduce mortality."
+            },
+            {
+              "stem": "A 60-year-old male with hypertension and type 2 diabetes mellitus is prescribed empagliflozin. Which of the following is the PRIMARY mechanism of action of empagliflozin?",
+              "options": [
+                "a) Inhibition of sodium-glucose cotransporter 2 (SGLT2)",
+                "b) Inhibition of HMG-CoA reductase",
+                "c) Inhibition of angiotensin-converting enzyme",
+                "d) Blockade of beta-1 adrenergic receptors"
+              ],
+              "answer": "a) Inhibition of sodium-glucose cotransporter 2 (SGLT2)",
+              "explanation": "Empagliflozin is an SGLT2 inhibitor that reduces glucose reabsorption in the proximal tubule, leading to glycosuria and improved glycemic control."
+            },
+            {
+              "stem": "A 70-year-old female with hypertension and heart failure with reduced ejection fraction (HFrEF) is prescribed digoxin. Which of the following is the MOST appropriate therapeutic drug monitoring (TDM) parameter for digoxin?",
+              "options": [
+                "a) Serum potassium levels",
+                "b) Serum digoxin levels",
+                "c) Serum creatinine levels",
+                "d) Serum magnesium levels"
+              ],
+              "answer": "b) Serum digoxin levels",
+              "explanation": "Therapeutic drug monitoring for digoxin involves measuring serum digoxin levels to ensure efficacy and minimize toxicity, typically targeting 0.5–2.0 ng/mL."
+            },
+            {
+              "stem": "A 50-year-old male with hypertension and a history of myocardial infarction is prescribed metoprolol. Which of the following is a potential adverse effect of beta-1 selective beta-blockers like metoprolol?",
+              "options": [
+                "a) Bronchospasm",
+                "b) Bradycardia",
+                "c) Hyperkalemia",
+                "d) Hypoglycemia"
+              ],
+              "answer": "b) Bradycardia",
+              "explanation": "Beta-1 selective beta-blockers like metoprolol can cause bradycardia by slowing atrioventricular conduction, necessitating heart rate monitoring."
+            },
+            {
+              "stem": "A 65-year-old female with hypertension and chronic kidney disease (eGFR 15 mL/min/1.73m²) is prescribed bumetanide. Which of the following is the PRIMARY advantage of bumetanide over furosemide in this patient?",
+              "options": [
+                "a) Longer duration of action",
+                "b) Greater potency",
+                "c) Less ototoxicity",
+                "d) Better oral bioavailability"
+              ],
+              "answer": "b) Greater potency",
+              "explanation": "Bumetanide is approximately 40 times more potent than furosemide on a milligram-per-milligram basis, making it useful in patients with severe edema or reduced renal function."
+            },
+            {
+              "stem": "A 55-year-old male with hypertension and a history of gout is prescribed allopurinol. Which of the following is the PRIMARY mechanism of action of allopurinol?",
+              "options": [
+                "a) Inhibition of xanthine oxidase",
+                "b) Inhibition of uric acid reabsorption",
+                "c) Inhibition of HMG-CoA reductase",
+                "d) Blockade of angiotensin II receptors"
+              ],
+              "answer": "a) Inhibition of xanthine oxidase",
+              "explanation": "Allopurinol inhibits xanthine oxidase, reducing the production of uric acid and preventing gout attacks."
+            },
+            {
+              "stem": "A 70-year-old female with hypertension and heart failure with preserved ejection fraction (HFpEF) is prescribed diltiazem. Which of the following is the PRIMARY mechanism of action of diltiazem in this setting?",
+              "options": [
+                "a) Inhibition of calcium influx into cardiac and vascular smooth muscle cells",
+                "b) Blockade of beta-1 adrenergic receptors",
+                "c) Inhibition of angiotensin-converting enzyme",
+                "d) Inhibition of the sodium-potassium ATPase pump"
+              ],
+              "answer": "a) Inhibition of calcium influx into cardiac and vascular smooth muscle cells",
+              "explanation": "Diltiazem is a non-dihydropyridine calcium channel blocker that inhibits calcium influx into cardiac and vascular smooth muscle cells, leading to vasodilation and reduced heart rate."
+            },
+            {
+              "stem": "A 60-year-old male with hypertension and a history of myocardial infarction is prescribed atorvastatin. Which of the following is the PRIMARY lipid-lowering effect of atorvastatin?",
+              "options": [
+                "a) Reduction in LDL cholesterol",
+                "b) Reduction in HDL cholesterol",
+                "c) Reduction in triglycerides",
+                "d) Increase in LDL cholesterol"
+              ],
+              "answer": "a) Reduction in LDL cholesterol",
+              "explanation": "Atorvastatin primarily reduces LDL cholesterol levels by inhibiting HMG-CoA reductase, the rate-limiting enzyme in cholesterol synthesis."
+            },
+            {
+              "stem": "A 55-year-old female with hypertension and a history of stroke is prescribed aspirin. Which of the following is the PRIMARY mechanism of action of aspirin in this patient?",
+              "options": [
+                "a) Irreversible inhibition of cyclooxygenase-1 (COX-1)",
+                "b) Reversible inhibition of cyclooxygenase-2 (COX-2)",
+                "c) Blockade of beta-1 adrenergic receptors",
+                "d) Inhibition of angiotensin-converting enzyme"
+              ],
+              "answer": "a) Irreversible inhibition of cyclooxygenase-1 (COX-1)",
+              "explanation": "Aspirin irreversibly inhibits COX-1, reducing platelet aggregation and thromboxane A2 production, which is beneficial in preventing secondary stroke."
+            },
+            {
+              "stem": "A 72-year-old male with hypertension and chronic kidney disease (eGFR 30 mL/min/1.73m²) is prescribed enalapril. Which of the following is the MOST appropriate monitoring parameter for this patient?",
+              "options": [
+                "a) Serum potassium levels",
+                "b) Serum sodium levels",
+                "c) Serum creatinine and potassium levels",
+                "d) Serum magnesium levels"
+              ],
+              "answer": "c) Serum creatinine and potassium levels",
+              "explanation": "ACE inhibitors like enalapril require monitoring of serum creatinine and potassium levels due to the risk of hyperkalemia and acute kidney injury, especially in patients with chronic kidney disease."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 65-year-old male with a history of hypertension, type 2 diabetes mellitus, and chronic kidney disease (eGFR 45 mL/min/1.73m²) presents to the clinic. His current medications include metformin 1000 mg twice daily, atorvastatin 40 mg at night, and amlodipine 5 mg daily. His blood pressure is 152/90 mmHg. a) What is the most appropriate antihypertensive agent to add to his regimen? b) Justify your choice. c) What monitoring parameters would you recommend?",
+              "modelAnswer": "a) Lisinopril 5 mg daily (ACE inhibitor).\nb) ACE inhibitors are first-line agents in patients with diabetes due to their renal protective effects and reduction in cardiovascular events. They slow the progression of diabetic nephropathy and reduce albuminuria.\nc) Monitor blood pressure, serum creatinine, and potassium levels at baseline and 1–2 weeks after initiation or dose adjustment. Ensure eGFR is stable before starting. Educate the patient on symptoms of hyperkalemia (e.g., muscle weakness, palpitations) and acute kidney injury (e.g., reduced urine output, swelling)."
+            },
+            {
+              "stem": "A 58-year-old female with hypertension and a history of ACE inhibitor-induced dry cough is switched to losartan. a) What is the mechanism of action of losartan? b) How does it differ from ACE inhibitors in terms of adverse effects? c) What monitoring is required for this patient?",
+              "modelAnswer": "a) Losartan is an angiotensin II receptor blocker (ARB) that selectively blocks the angiotensin II type 1 (AT1) receptor, preventing angiotensin II from binding and exerting its vasoconstrictive, aldosterone-secreting, and sodium-retaining effects.\nb) Unlike ACE inhibitors, ARBs do not inhibit bradykinin breakdown, which is responsible for the dry cough associated with ACE inhibitors. ARBs are less likely to cause angioedema but still carry a risk.\nc) Monitor blood pressure, serum creatinine, and potassium levels at baseline and periodically. Educate the patient on symptoms of hyperkalemia and hypotension. Assess for angioedema, though it is less common than with ACE inhibitors."
+            },
+            {
+              "stem": "A 70-year-old male with hypertension and stable angina is prescribed verapamil. a) What is the mechanism of action of verapamil? b) What are the primary cardiovascular effects of verapamil? c) What adverse effects should you warn the patient about?",
+              "modelAnswer": "a) Verapamil is a non-dihydropyridine calcium channel blocker that inhibits calcium influx into cardiac and vascular smooth muscle cells by blocking L-type calcium channels.\nb) Primary cardiovascular effects include negative chronotropy (reduced heart rate), negative dromotropy (slowed atrioventricular conduction), and negative inotropy (reduced contractility). It also causes peripheral and coronary vasodilation.\nc) Warn the patient about bradycardia, heart block, constipation, dizziness, and hypotension. Advise them to report symptoms such as syncope, severe dizziness, or worsening angina. Monitor heart rate and blood pressure regularly."
+            },
+            {
+              "stem": "A 45-year-old female with hypertension and no other comorbidities is prescribed hydrochlorothiazide 25 mg daily. a) What is the mechanism of action of hydrochlorothiazide? b) What are the primary adverse effects associated with hydrochlorothiazide? c) What monitoring parameters would you recommend?",
+              "modelAnswer": "a) Hydrochlorothiazide is a thiazide diuretic that inhibits the sodium-chloride cotransporter in the distal convoluted tubule, leading to increased excretion of sodium, chloride, and water.\nb) Primary adverse effects include hypokalemia, hyponatremia, hypercalcemia, hyperuricemia (which may precipitate gout), and metabolic alkalosis. It may also cause hyperglycemia and dyslipidemia.\nc) Monitor serum electrolytes (sodium, potassium, chloride), renal function (creatinine, eGFR), uric acid, fasting glucose, and lipid profile at baseline and periodically. Educate the patient on symptoms of electrolyte imbalances (e.g., muscle cramps, weakness, palpitations) and the importance of maintaining adequate hydration."
+            },
+            {
+              "stem": "A 60-year-old male with heart failure with reduced ejection fraction (HFrEF) is prescribed digoxin. a) What is the mechanism of action of digoxin in heart failure? b) What are the primary indications for digoxin in heart failure? c) What are the key monitoring parameters for digoxin therapy?",
+              "modelAnswer": "a) Digoxin inhibits the sodium-potassium ATPase pump in cardiac myocytes, leading to increased intracellular sodium and calcium. This enhances cardiac contractility (positive inotropy) and reduces sympathetic activity.\nb) Primary indications for digoxin in HFrEF include symptomatic relief in patients already on optimal therapy with ACE inhibitors/ARBs, beta-blockers, and diuretics, particularly in patients with atrial fibrillation.\nc) Key monitoring parameters include serum digoxin levels (target: 0.5–2.0 ng/mL), serum potassium (hypokalemia increases digoxin toxicity risk), renal function (digoxin is renally excreted), and heart rate/rhythm (ECG for signs of toxicity such as arrhythmias). Educate the patient on symptoms of toxicity (e.g., nausea, vomiting, visual disturbances, palpitations)."
+            },
+            {
+              "stem": "A 50-year-old male with atrial fibrillation is prescribed amiodarone. a) What is the Vaughan Williams classification of amiodarone? b) What are the primary adverse effects of amiodarone? c) What monitoring is required for this patient?",
+              "modelAnswer": "a) Amiodarone is a Class III antiarrhythmic agent according to the Vaughan Williams classification, which primarily blocks potassium channels, prolonging the action potential duration and refractory period.\nb) Primary adverse effects include thyroid dysfunction (both hyper- and hypothyroidism), pulmonary toxicity (e.g., interstitial pneumonitis), hepatotoxicity, corneal microdeposits, photosensitivity, and bradycardia or heart block. It also has a long half-life and many drug interactions.\nc) Monitor thyroid function tests (TSH, free T4) at baseline and every 3–6 months. Perform baseline and periodic chest X-rays and pulmonary function tests. Monitor liver function tests (ALT, AST, bilirubin) at baseline and every 3–6 months. Assess for pulmonary symptoms (e.g., cough, dyspnea) and visual changes. Educate the patient on sun protection and symptoms of thyroid dysfunction."
+            },
+            {
+              "stem": "A 65-year-old female with hypertension and chronic obstructive pulmonary disease (COPD) is prescribed metoprolol. a) Why is metoprolol preferred over propranolol in this patient? b) What are the primary cardiovascular effects of metoprolol? c) What monitoring parameters would you recommend?",
+              "modelAnswer": "a) Metoprolol is a cardioselective beta-1 blocker, which is less likely to cause bronchospasm compared to non-selective beta-blockers like propranolol. This makes it safer in patients with COPD.\nb) Primary cardiovascular effects include negative chronotropy (reduced heart rate), negative dromotropy (slowed atrioventricular conduction), and negative inotropy (reduced contractility). It also reduces blood pressure and myocardial oxygen demand.\nc) Monitor heart rate, blood pressure, and ECG at baseline and during titration. Assess for symptoms of bradycardia (e.g., dizziness, fatigue) or heart failure exacerbation (e.g., dyspnea, edema). Educate the patient on the importance of adherence and symptoms to report (e.g., worsening dyspnea, syncope)."
+            },
+            {
+              "stem": "A 70-year-old male with hypertension and heart failure with preserved ejection fraction (HFpEF) is prescribed spironolactone. a) What is the mechanism of action of spironolactone in HFpEF? b) What are the primary adverse effects of spironolactone? c) What monitoring is required for this patient?",
+              "modelAnswer": "a) Spironolactone is a potassium-sparing diuretic that acts as an aldosterone receptor antagonist. In HFpEF, it reduces sodium reabsorption and potassium excretion, leading to diuresis and potential reduction in fibrosis and hypertrophy.\nb) Primary adverse effects include hyperkalemia, gynecomastia (due to anti-androgenic effects), and gastrointestinal disturbances (e.g., nausea, vomiting).\nc) Monitor serum potassium and creatinine at baseline and within 3–7 days of initiation or dose adjustment, then every 3–6 months. Educate the patient on symptoms of hyperkalemia (e.g., muscle weakness, palpitations) and the importance of avoiding potassium supplements or high-potassium foods. Assess for signs of gynecomastia and discontinue if bothersome."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 68-year-old male with a history of hypertension, type 2 diabetes mellitus, and chronic kidney disease (eGFR 35 mL/min/1.73m²) presents to the clinic. His current medications include metformin 500 mg twice daily, atorvastatin 20 mg at night, and amlodipine 5 mg daily. His blood pressure is 160/95 mmHg, and his HbA1c is 7.8%. He has no symptoms of heart failure. a) Outline the stepwise approach to managing his hypertension according to current guidelines. b) Discuss the rationale for your choices, including the role of ACE inhibitors/ARBs in diabetes. c) What additional monitoring and patient education would you recommend?",
+              "modelAnswer": "a) Stepwise approach to managing hypertension:\n   1. Optimize lifestyle modifications: weight reduction, DASH diet, sodium restriction, physical activity, and alcohol moderation.\n   2. Start or titrate ACE inhibitor (e.g., lisinopril 5 mg daily) due to renal protection in diabetes and reduction in cardiovascular events. Monitor renal function and potassium.\n   3. If BP remains uncontrolled, add a thiazide-like diuretic (e.g., indapamide 1.25 mg daily) if eGFR >30 mL/min/1.73m², or switch to a loop diuretic (e.g., bumetanide) if eGFR <30 mL/min/1.73m².\n   4. If BP still uncontrolled, consider adding a calcium channel blocker (e.g., amlodipine) or beta-blocker (e.g., metoprolol) if tolerated.\n   5. Consider specialist referral if BP remains uncontrolled despite 3–4 antihypertensives.\n\nb) Rationale:\n   - ACE inhibitors/ARBs are first-line in diabetes due to their renal protective effects, reducing albuminuria and slowing the progression of diabetic nephropathy. They also reduce cardiovascular events.\n   - Thiazide-like diuretics are effective in reducing BP and cardiovascular events but require monitoring for electrolyte imbalances and renal function.\n   - Calcium channel blockers and beta-blockers are alternatives if additional BP control is needed, but beta-blockers may mask hypoglycemia in diabetes.\n\nc) Monitoring and education:\n   - Monitor BP, serum creatinine, potassium, and HbA1c every 3–6 months.\n   - Educate the patient on the importance of adherence to medications and lifestyle modifications.\n   - Teach symptoms of hyperkalemia (e.g., muscle weakness, palpitations) and acute kidney injury (e.g., reduced urine output, swelling).\n   - Advise on dietary sodium restriction, regular exercise, and avoidance of excessive alcohol.\n   - Ensure the patient understands the need for regular follow-up and monitoring."
+            },
+            {
+              "stem": "A 55-year-old female with a history of hypertension, myocardial infarction, and heart failure with reduced ejection fraction (HFrEF, LVEF 35%) presents to the clinic. Her current medications include aspirin 75 mg daily, atorvastatin 40 mg at night, carvedilol 12.5 mg twice daily, and furosemide 40 mg daily. Her blood pressure is 110/70 mmHg, and her heart rate is 65 bpm. She reports mild dyspnea on exertion and bilateral ankle swelling. a) Evaluate her current therapy for HFrEF and hypertension. b) Discuss the role of sacubitril/valsartan in her management. c) Outline the additional monitoring and patient education required.",
+              "modelAnswer": "a) Evaluation of current therapy:\n   - Aspirin and atorvastatin: Appropriate for secondary prevention post-myocardial infarction.\n   - Carvedilol: A non-selective beta-blocker with alpha-1 blocking activity, shown to reduce mortality in HFrEF. Dose is appropriate for heart rate and BP.\n   - Furosemide: Appropriate for symptom control in HFrEF but requires monitoring for electrolyte imbalances and renal function.\n   - Current therapy is suboptimal for HFrEF as it lacks an ACE inhibitor/ARB and mineralocorticoid receptor antagonist (MRA).\n\nb) Role of sacubitril/valsartan:\n   - Sacubitril/valsartan is a combination of a neprilysin inhibitor (sacubitril) and an ARB (valsartan). It is recommended as a replacement for ACE inhibitors/ARBs in patients with HFrEF who remain symptomatic despite optimal therapy.\n   - Sacubitril increases levels of natriuretic peptides, leading to vasodilation, natriuresis, and diuresis, while valsartan blocks angiotensin II receptors, reducing vasoconstriction and aldosterone secretion.\n   - Clinical trials (e.g., PARADIGM-HF) have shown sacubitril/valsartan reduces mortality and hospitalization compared to enalapril in HFrEF.\n\nc) Monitoring and education:\n   - Monitor BP, renal function (creatinine, eGFR), and potassium levels at baseline and 1–2 weeks after initiation or dose adjustment.\n   - Assess for symptoms of hypotension (e.g., dizziness, fatigue) and hyperkalemia (e.g., muscle weakness, palpitations).\n   - Educate the patient on the importance of adherence to medications and the need for regular follow-up.\n   - Advise the patient to report symptoms of worsening heart failure (e.g., increased dyspnea, edema) or angioedema (rare but serious).\n   - Ensure the patient understands the need to avoid switching between ACE inhibitors and sacubitril/valsartan without a 36-hour washout period to reduce angioedema risk."
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Cardiovascular System",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 62-year-old male with hypertension and type 2 diabetes mellitus presents with a blood pressure of 158/94 mmHg. His serum creatinine is 1.8 mg/dL (eGFR 45 mL/min/1.73m²) and potassium is 4.2 mEq/L. Which antihypertensive class is most appropriate as initial therapy?",
+              "options": [
+                "a) Thiazide diuretic (hydrochlorothiazide)",
+                "b) Loop diuretic (furosemide)",
+                "c) ACE inhibitor (lisinopril)",
+                "d) Calcium channel blocker (amlodipine)"
+              ],
+              "answer": "c) ACE inhibitor (lisinopril)",
+              "explanation": "ACE inhibitors are first-line in hypertensive patients with diabetes due to renal protection, despite mild renal impairment. Thiazides may worsen renal function in this setting."
+            },
+            {
+              "stem": "A 58-year-old female with chronic heart failure (LVEF 35%) develops a persistent dry cough after starting an ACE inhibitor. Which alternative antihypertensive class is most appropriate?",
+              "options": [
+                "a) Angiotensin receptor blocker (valsartan)",
+                "b) Beta-blocker (carvedilol)",
+                "c) Calcium channel blocker (nifedipine)",
+                "d) Thiazide diuretic (chlorthalidone)"
+              ],
+              "answer": "a) Angiotensin receptor blocker (valsartan)",
+              "explanation": "ARBs are recommended as alternatives when ACE inhibitors are not tolerated due to cough. They provide similar renoprotective and cardioprotective benefits."
+            },
+            {
+              "stem": "A 45-year-old male with hypertension and angina pectoris is started on a calcium channel blocker. He develops marked peripheral edema and flushing. Which CCB is most likely responsible?",
+              "options": [
+                "a) Verapamil",
+                "b) Diltiazem",
+                "c) Nifedipine",
+                "d) Amlodipine"
+              ],
+              "answer": "c) Nifedipine",
+              "explanation": "Dihydropyridine CCBs (e.g., nifedipine) are more likely to cause peripheral edema and flushing due to vasodilation. Verapamil and diltiazem are less likely to cause this."
+            },
+            {
+              "stem": "A 70-year-old female with hypertension and chronic obstructive pulmonary disease (COPD) requires a beta-blocker for rate control in atrial fibrillation. Which beta-blocker is most appropriate?",
+              "options": [
+                "a) Propranolol",
+                "b) Metoprolol",
+                "c) Carvedilol",
+                "d) Atenolol"
+              ],
+              "answer": "b) Metoprolol",
+              "explanation": "Cardioselective beta-blockers (e.g., metoprolol) are preferred in COPD to minimize bronchoconstriction. Non-selective agents (propranolol, carvedilol) should be avoided."
+            },
+            {
+              "stem": "A 55-year-old male with hypertension and gout is started on hydrochlorothiazide. Which electrolyte abnormality is most likely to occur?",
+              "options": [
+                "a) Hyperkalemia",
+                "b) Hypercalcemia",
+                "c) Hyperuricemia",
+                "d) Hypomagnesemia"
+              ],
+              "answer": "c) Hyperuricemia",
+              "explanation": "Thiazide diuretics increase uric acid reabsorption, worsening gout. Hyperkalemia is more common with potassium-sparing diuretics, while hypercalcemia is less likely."
+            },
+            {
+              "stem": "A 68-year-old male with heart failure (LVEF 30%) and atrial fibrillation is prescribed digoxin. Which monitoring parameter is most critical to prevent toxicity?",
+              "options": [
+                "a) Serum potassium",
+                "b) Serum sodium",
+                "c) Serum magnesium",
+                "d) Serum calcium"
+              ],
+              "answer": "a) Serum potassium",
+              "explanation": "Hypokalemia increases digoxin toxicity risk. Serum potassium should be maintained within 4.0–5.0 mEq/L in patients on digoxin."
+            },
+            {
+              "stem": "A 50-year-old female with hypertension and diabetes develops a maculopapular rash after starting an ACE inhibitor. Which alternative antihypertensive class is most appropriate?",
+              "options": [
+                "a) ARB (losartan)",
+                "b) Beta-blocker (nebivolol)",
+                "c) Calcium channel blocker (felodipine)",
+                "d) Thiazide diuretic (indapamide)"
+              ],
+              "answer": "a) ARB (losartan)",
+              "explanation": "ARBs are recommended as alternatives when ACE inhibitors cause rash or other non-cough-related adverse effects."
+            },
+            {
+              "stem": "A 60-year-old male with hypertension and chronic kidney disease (eGFR 30 mL/min/1.73m²) is started on an ACE inhibitor. Which laboratory parameter should be monitored most closely?",
+              "options": [
+                "a) Serum potassium",
+                "b) Serum sodium",
+                "c) Serum creatinine",
+                "d) Serum magnesium"
+              ],
+              "answer": "c) Serum creatinine",
+              "explanation": "ACE inhibitors can cause a reversible rise in serum creatinine, especially in renal impairment. Monitoring is essential to detect significant increases."
+            },
+            {
+              "stem": "A 40-year-old female with hypertension and no comorbidities is started on a dihydropyridine calcium channel blocker. Which adverse effect is most likely to occur?",
+              "options": [
+                "a) Bradycardia",
+                "b) Reflex tachycardia",
+                "c) Hyperkalemia",
+                "d) Hypocalcemia"
+              ],
+              "answer": "b) Reflex tachycardia",
+              "explanation": "Dihydropyridine CCBs (e.g., amlodipine) cause vasodilation, leading to reflex tachycardia. Bradycardia is more common with non-dihydropyridines (verapamil, diltiazem)."
+            },
+            {
+              "stem": "A 75-year-old male with hypertension and benign prostatic hyperplasia (BPH) is prescribed a beta-blocker. Which beta-blocker may also provide benefit for BPH?",
+              "options": [
+                "a) Metoprolol",
+                "b) Atenolol",
+                "c) Carvedilol",
+                "d) Nebivolol"
+              ],
+              "answer": "c) Carvedilol",
+              "explanation": "Carvedilol has alpha-1 blocking properties, which may provide additional benefit in BPH by relaxing smooth muscle in the prostate and bladder neck."
+            },
+            {
+              "stem": "A 52-year-old female with hypertension and osteoporosis is started on a thiazide diuretic. Which beneficial effect may occur?",
+              "options": [
+                "a) Increased calcium excretion",
+                "b) Decreased calcium excretion",
+                "c) Increased bone mineral density",
+                "d) Decreased bone mineral density"
+              ],
+              "answer": "c) Increased bone mineral density",
+              "explanation": "Thiazide diuretics reduce urinary calcium excretion, which may help preserve bone mineral density and reduce fracture risk in osteoporosis."
+            },
+            {
+              "stem": "A 65-year-old male with heart failure (LVEF 25%) and atrial fibrillation is prescribed digoxin and furosemide. Which electrolyte imbalance increases the risk of digoxin toxicity?",
+              "options": [
+                "a) Hyperkalemia",
+                "b) Hypokalemia",
+                "c) Hypermagnesemia",
+                "d) Hypocalcemia"
+              ],
+              "answer": "b) Hypokalemia",
+              "explanation": "Hypokalemia increases digoxin binding to Na+/K+ ATPase, enhancing its toxic effects. Loop diuretics (e.g., furosemide) can cause hypokalemia."
+            },
+            {
+              "stem": "A 48-year-old female with hypertension and chronic kidney disease (eGFR 25 mL/min/1.73m²) is started on an ACE inhibitor. Which contraindication should be considered?",
+              "options": [
+                "a) Bilateral renal artery stenosis",
+                "b) Mild renal impairment",
+                "c) Hyponatremia",
+                "d) Hyperkalemia"
+              ],
+              "answer": "a) Bilateral renal artery stenosis",
+              "explanation": "ACE inhibitors are contraindicated in bilateral renal artery stenosis due to risk of acute kidney injury and hyperkalemia."
+            },
+            {
+              "stem": "A 55-year-old male with hypertension and angina pectoris is prescribed a beta-blocker. Which beta-blocker is most appropriate for both hypertension and angina?",
+              "options": [
+                "a) Propranolol",
+                "b) Metoprolol",
+                "c) Carvedilol",
+                "d) Labetalol"
+              ],
+              "answer": "b) Metoprolol",
+              "explanation": "Cardioselective beta-blockers (e.g., metoprolol) are effective for both hypertension and angina by reducing heart rate and myocardial oxygen demand."
+            },
+            {
+              "stem": "A 60-year-old female with hypertension and diabetes develops hyperkalemia after starting an ACE inhibitor. Which intervention is most appropriate?",
+              "options": [
+                "a) Increase ACE inhibitor dose",
+                "b) Add a potassium-sparing diuretic",
+                "c) Discontinue ACE inhibitor and switch to an ARB",
+                "d) Administer intravenous calcium gluconate"
+              ],
+              "answer": "c) Discontinue ACE inhibitor and switch to an ARB",
+              "explanation": "Hyperkalemia is a contraindication to ACE inhibitors. Switching to an ARB may be safer, though monitoring is still required."
+            },
+            {
+              "stem": "A 70-year-old male with hypertension and heart failure (LVEF 40%) is prescribed spironolactone. Which laboratory parameter should be monitored most closely?",
+              "options": [
+                "a) Serum potassium",
+                "b) Serum sodium",
+                "c) Serum creatinine",
+                "d) Serum magnesium"
+              ],
+              "answer": "a) Serum potassium",
+              "explanation": "Spironolactone is a potassium-sparing diuretic; hyperkalemia is a major risk, especially when combined with ACE inhibitors or ARBs."
+            },
+            {
+              "stem": "A 50-year-old female with hypertension and chronic kidney disease (eGFR 40 mL/min/1.73m²) is started on a loop diuretic. Which loop diuretic is most appropriate?",
+              "options": [
+                "a) Hydrochlorothiazide",
+                "b) Chlorthalidone",
+                "c) Furosemide",
+                "d) Amiloride"
+              ],
+              "answer": "c) Furosemide",
+              "explanation": "Loop diuretics (e.g., furosemide) are more effective than thiazides in patients with moderate to severe renal impairment (eGFR < 60 mL/min/1.73m²)."
+            },
+            {
+              "stem": "A 65-year-old male with hypertension and atrial fibrillation is prescribed warfarin. Which laboratory parameter is most critical for monitoring?",
+              "options": [
+                "a) Prothrombin time (PT)",
+                "b) Activated partial thromboplastin time (aPTT)",
+                "c) International Normalized Ratio (INR)",
+                "d) Platelet count"
+              ],
+              "answer": "c) International Normalized Ratio (INR)",
+              "explanation": "Warfarin's anticoagulant effect is monitored using INR, with a target range of 2.0–3.0 for most indications, including atrial fibrillation."
+            },
+            {
+              "stem": "A 55-year-old female with hypertension and dyslipidemia is started on atorvastatin. Which adverse effect is most likely to occur?",
+              "options": [
+                "a) Hyperkalemia",
+                "b) Myopathy",
+                "c) Hypocalcemia",
+                "d) Hyperglycemia"
+              ],
+              "answer": "d) Hyperglycemia",
+              "explanation": "Statins can cause a mild increase in blood glucose and HbA1c, though the cardiovascular benefits outweigh this risk in most patients."
+            },
+            {
+              "stem": "A 45-year-old male with hypertension and stable angina is prescribed isosorbide mononitrate. Which adverse effect is most likely to occur?",
+              "options": [
+                "a) Bradycardia",
+                "b) Hypotension",
+                "c) Hyperkalemia",
+                "d) Hypercalcemia"
+              ],
+              "answer": "b) Hypotension",
+              "explanation": "Nitrates cause vasodilation, leading to hypotension, headache, and flushing. Bradycardia is less common unless combined with beta-blockers."
+            },
+            {
+              "stem": "A 60-year-old female with hypertension and heart failure (LVEF 35%) is prescribed carvedilol. Which beneficial effect is most likely to occur?",
+              "options": [
+                "a) Increased heart rate",
+                "b) Decreased myocardial oxygen demand",
+                "c) Increased blood pressure",
+                "d) Decreased renal perfusion"
+              ],
+              "answer": "b) Decreased myocardial oxygen demand",
+              "explanation": "Carvedilol reduces heart rate and contractility, decreasing myocardial oxygen demand and improving heart failure outcomes."
+            },
+            {
+              "stem": "A 70-year-old male with hypertension and chronic kidney disease (eGFR 20 mL/min/1.73m²) is started on an ACE inhibitor. Which monitoring parameter is most critical?",
+              "options": [
+                "a) Serum potassium",
+                "b) Serum sodium",
+                "c) Serum creatinine",
+                "d) Serum magnesium"
+              ],
+              "answer": "c) Serum creatinine",
+              "explanation": "ACE inhibitors can cause a reversible rise in serum creatinine, especially in advanced renal impairment. Monitoring is essential to detect significant increases."
+            },
+            {
+              "stem": "A 55-year-old female with hypertension and osteoporosis is prescribed a thiazide diuretic. Which beneficial effect may occur?",
+              "options": [
+                "a) Increased urinary calcium excretion",
+                "b) Decreased urinary calcium excretion",
+                "c) Increased bone resorption",
+                "d) Decreased bone mineral density"
+              ],
+              "answer": "b) Decreased urinary calcium excretion",
+              "explanation": "Thiazide diuretics reduce urinary calcium excretion, which may help preserve bone mineral density and reduce fracture risk in osteoporosis."
+            },
+            {
+              "stem": "A 65-year-old male with hypertension and atrial fibrillation is prescribed digoxin. Which monitoring parameter is most critical to prevent toxicity?",
+              "options": [
+                "a) Serum sodium",
+                "b) Serum potassium",
+                "c) Serum magnesium",
+                "d) Serum calcium"
+              ],
+              "answer": "b) Serum potassium",
+              "explanation": "Hypokalemia increases digoxin toxicity risk. Serum potassium should be maintained within 4.0–5.0 mEq/L in patients on digoxin."
+            },
+            {
+              "stem": "A 50-year-old female with hypertension and diabetes is started on an ACE inhibitor. Which laboratory parameter should be monitored most closely?",
+              "options": [
+                "a) Serum potassium",
+                "b) Serum sodium",
+                "c) Serum creatinine",
+                "d) Serum magnesium"
+              ],
+              "answer": "a) Serum potassium",
+              "explanation": "ACE inhibitors can cause hyperkalemia, especially in patients with diabetes or renal impairment. Monitoring is essential to detect significant increases."
+            },
+            {
+              "stem": "A 70-year-old male with hypertension and chronic obstructive pulmonary disease (COPD) is prescribed a beta-blocker. Which beta-blocker is most appropriate?",
+              "options": [
+                "a) Propranolol",
+                "b) Metoprolol",
+                "c) Carvedilol",
+                "d) Labetalol"
+              ],
+              "answer": "b) Metoprolol",
+              "explanation": "Cardioselective beta-blockers (e.g., metoprolol) are preferred in COPD to minimize bronchoconstriction. Non-selective agents should be avoided."
+            },
+            {
+              "stem": "A 60-year-old female with hypertension and heart failure (LVEF 30%) is prescribed spironolactone. Which laboratory parameter should be monitored most closely?",
+              "options": [
+                "a) Serum potassium",
+                "b) Serum sodium",
+                "c) Serum creatinine",
+                "d) Serum magnesium"
+              ],
+              "answer": "a) Serum potassium",
+              "explanation": "Spironolactone is a potassium-sparing diuretic; hyperkalemia is a major risk, especially when combined with ACE inhibitors or ARBs."
+            },
+            {
+              "stem": "A 55-year-old male with hypertension and angina pectoris is prescribed a calcium channel blocker. Which adverse effect is most likely to occur?",
+              "options": [
+                "a) Bradycardia",
+                "b) Reflex tachycardia",
+                "c) Hyperkalemia",
+                "d) Hypocalcemia"
+              ],
+              "answer": "b) Reflex tachycardia",
+              "explanation": "Dihydropyridine CCBs (e.g., amlodipine) cause vasodilation, leading to reflex tachycardia. Bradycardia is more common with non-dihydropyridines."
+            },
+            {
+              "stem": "A 65-year-old female with hypertension and chronic kidney disease (eGFR 35 mL/min/1.73m²) is started on an ACE inhibitor. Which contraindication should be considered?",
+              "options": [
+                "a) Bilateral renal artery stenosis",
+                "b) Mild renal impairment",
+                "c) Hyponatremia",
+                "d) Hyperkalemia"
+              ],
+              "answer": "a) Bilateral renal artery stenosis",
+              "explanation": "ACE inhibitors are contraindicated in bilateral renal artery stenosis due to risk of acute kidney injury and hyperkalemia."
+            },
+            {
+              "stem": "A 50-year-old male with hypertension and dyslipidemia is started on simvastatin. Which adverse effect is most likely to occur?",
+              "options": [
+                "a) Hyperkalemia",
+                "b) Myopathy",
+                "c) Hypocalcemia",
+                "d) Hyperglycemia"
+              ],
+              "answer": "d) Hyperglycemia",
+              "explanation": "Statins can cause a mild increase in blood glucose and HbA1c, though the cardiovascular benefits outweigh this risk in most patients."
+            },
+            {
+              "stem": "A 70-year-old female with hypertension and atrial fibrillation is prescribed warfarin. Which laboratory parameter is most critical for monitoring?",
+              "options": [
+                "a) Prothrombin time (PT)",
+                "b) Activated partial thromboplastin time (aPTT)",
+                "c) International Normalized Ratio (INR)",
+                "d) Platelet count"
+              ],
+              "answer": "c) International Normalized Ratio (INR)",
+              "explanation": "Warfarin's anticoagulant effect is monitored using INR, with a target range of 2.0–3.0 for most indications, including atrial fibrillation."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 65-year-old male with hypertension (BP 160/95 mmHg) and type 2 diabetes mellitus (HbA1c 7.2%) is started on lisinopril 10 mg daily. a) What is the mechanism of action of lisinopril? b) What laboratory parameters should be monitored at baseline and during therapy? c) What is the most common adverse effect of lisinopril?",
+              "modelAnswer": "a) Lisinopril is an ACE inhibitor that blocks the conversion of angiotensin I to angiotensin II, reducing vasoconstriction and aldosterone secretion. b) Baseline and monitoring parameters: serum creatinine, estimated glomerular filtration rate (eGFR), serum potassium, and blood pressure. c) The most common adverse effect is a persistent dry cough (occurs in ~5–20% of patients)."
+            },
+            {
+              "stem": "A 58-year-old female with chronic heart failure (LVEF 30%) and atrial fibrillation is prescribed carvedilol 6.25 mg twice daily. a) What is the mechanism of action of carvedilol in heart failure? b) What are the key monitoring parameters for this patient? c) What is the target heart rate for this patient?",
+              "modelAnswer": "a) Carvedilol is a non-selective beta-blocker with additional alpha-1 blocking properties. It reduces heart rate, contractility, and afterload, improving cardiac output and reducing mortality in heart failure. b) Key monitoring parameters: heart rate, blood pressure, signs of heart failure exacerbation, and renal function. c) The target heart rate is typically 55–60 bpm (or as tolerated), aiming for a resting heart rate of 60–70 bpm."
+            },
+            {
+              "stem": "A 70-year-old male with hypertension and chronic kidney disease (eGFR 30 mL/min/1.73m²) is started on furosemide 40 mg daily. a) What is the mechanism of action of furosemide? b) What are the key adverse effects of furosemide? c) What laboratory parameter should be monitored closely in this patient?",
+              "modelAnswer": "a) Furosemide is a loop diuretic that inhibits the Na+/K+/2Cl- cotransporter in the thick ascending limb of the loop of Henle, increasing urine output. b) Key adverse effects: hypokalemia, hypomagnesemia, hypocalcemia, ototoxicity (with high doses), and volume depletion. c) Serum potassium should be monitored closely, as hypokalemia is a common and potentially dangerous adverse effect."
+            },
+            {
+              "stem": "A 55-year-old female with hypertension and angina pectoris is prescribed amlodipine 5 mg daily. a) What is the mechanism of action of amlodipine? b) What are the key adverse effects of amlodipine? c) What is the most likely reason for adding a beta-blocker to this regimen?",
+              "modelAnswer": "a) Amlodipine is a dihydropyridine calcium channel blocker that inhibits calcium influx into vascular smooth muscle and cardiac cells, causing vasodilation and reduced afterload. b) Key adverse effects: peripheral edema, flushing, headache, and reflex tachycardia. c) A beta-blocker may be added to counteract reflex tachycardia and provide additional antianginal and antihypertensive effects."
+            },
+            {
+              "stem": "A 60-year-old male with heart failure (LVEF 25%) and atrial fibrillation is prescribed digoxin 0.125 mg daily. a) What is the mechanism of action of digoxin? b) What are the key monitoring parameters for digoxin therapy? c) What is the therapeutic range for digoxin in heart failure?",
+              "modelAnswer": "a) Digoxin inhibits the Na+/K+ ATPase pump, increasing intracellular calcium and enhancing cardiac contractility (positive inotropic effect). b) Key monitoring parameters: serum digoxin levels (trough levels 0.5–0.9 ng/mL), serum potassium, renal function, heart rate, and ECG (for signs of toxicity). c) The therapeutic range for digoxin in heart failure is 0.5–0.9 ng/mL (lower than the range for atrial fibrillation, which is 0.8–2.0 ng/mL)."
+            },
+            {
+              "stem": "A 48-year-old female with hypertension and dyslipidemia is started on atorvastatin 20 mg daily. a) What is the mechanism of action of atorvastatin? b) What are the key adverse effects of atorvastatin? c) What laboratory parameter should be monitored at baseline and during therapy?",
+              "modelAnswer": "a) Atorvastatin is a HMG-CoA reductase inhibitor that reduces cholesterol synthesis in the liver, increasing LDL receptor expression and lowering LDL cholesterol. b) Key adverse effects: myopathy (including rhabdomyolysis), elevated liver enzymes, and (rarely) hyperglycemia. c) Baseline and monitoring parameters: liver function tests (ALT, AST) at baseline and periodically during therapy."
+            },
+            {
+              "stem": "A 75-year-old male with hypertension and benign prostatic hyperplasia (BPH) is prescribed doxazosin 4 mg daily. a) What is the mechanism of action of doxazosin? b) What are the key adverse effects of doxazosin? c) What is the most likely reason for choosing doxazosin in this patient?",
+              "modelAnswer": "a) Doxazosin is an alpha-1 adrenergic blocker that inhibits vasoconstriction and reduces smooth muscle tone in the prostate and bladder neck. b) Key adverse effects: first-dose hypotension, dizziness, syncope, and (rarely) intraoperative floppy iris syndrome. c) Doxazosin is chosen for its dual benefit in hypertension and BPH, as it relaxes smooth muscle in both vascular and prostatic tissues."
+            },
+            {
+              "stem": "A 50-year-old female with hypertension and atrial fibrillation is prescribed apixaban 5 mg twice daily. a) What is the mechanism of action of apixaban? b) What are the key monitoring parameters for apixaban therapy? c) What is the reversal agent for apixaban in case of major bleeding?",
+              "modelAnswer": "a) Apixaban is a direct oral anticoagulant (DOAC) that selectively inhibits factor Xa, reducing thrombin generation and clot formation. b) Key monitoring parameters: clinical signs of bleeding, hemoglobin, hematocrit, and renal function (apixaban is renally excreted). c) The reversal agent for apixaban is andexanet alfa (or prothrombin complex concentrate in emergencies)."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 68-year-old male with a history of hypertension, type 2 diabetes mellitus, and chronic kidney disease (eGFR 45 mL/min/1.73m²) presents with a blood pressure of 165/98 mmHg. His current medications include metformin 500 mg twice daily and aspirin 75 mg daily. a) Outline the first-line antihypertensive therapy for this patient. Justify your choice. b) What laboratory parameters should be monitored at baseline and during therapy? c) What are the key adverse effects of the chosen therapy, and how would you manage them?",
+              "modelAnswer": "a) First-line antihypertensive therapy: ACE inhibitor (e.g., lisinopril) or ARB (e.g., losartan). Justification: ACE inhibitors/ARBs provide renal protection in patients with diabetes and chronic kidney disease by reducing intraglomerular pressure and slowing the progression of nephropathy. They are also effective in reducing cardiovascular events. b) Baseline and monitoring parameters: serum creatinine, eGFR, serum potassium, blood pressure, and HbA1c. Monitoring should occur at baseline, 1–2 weeks after initiation, and periodically thereafter. c) Key adverse effects: hyperkalemia and a rise in serum creatinine. Management: If hyperkalemia (K+ > 5.5 mEq/L) occurs, reduce the dose or discontinue the ACE inhibitor/ARB and consider switching to a non-ACE inhibitor/ARB regimen (e.g., calcium channel blocker). A rise in serum creatinine of up to 30% from baseline is acceptable; greater increases may warrant dose reduction or discontinuation."
+            },
+            {
+              "stem": "A 55-year-old female with chronic heart failure (LVEF 30%) and atrial fibrillation is admitted with worsening dyspnea, orthopnea, and peripheral edema. Her current medications include furosemide 40 mg daily and digoxin 0.125 mg daily. On examination, her blood pressure is 105/70 mmHg, heart rate is 110 bpm (irregularly irregular), and oxygen saturation is 92% on room air. a) Outline the pharmacological management of this patient’s acute decompensated heart failure. b) What are the key monitoring parameters during treatment? c) What are the potential drug interactions in this patient’s regimen, and how would you manage them?",
+              "modelAnswer": "a) Pharmacological management of acute decompensated heart failure: 1) Intravenous loop diuretic (e.g., furosemide 40–80 mg IV bolus followed by continuous infusion) to relieve congestion. 2) Intravenous vasodilator (e.g., nitroglycerin or nitroprusside) if blood pressure allows, to reduce preload and afterload. 3) Intravenous beta-blocker (e.g., metoprolol) or digoxin for rate control in atrial fibrillation (digoxin is already prescribed). 4) Consider adding an ACE inhibitor or ARB if not already prescribed, and a mineralocorticoid receptor antagonist (e.g., spironolactone) if potassium and renal function allow. b) Key monitoring parameters: heart rate, blood pressure, oxygen saturation, urine output, serum electrolytes (especially potassium and magnesium), renal function, and signs of digoxin toxicity (e.g., nausea, arrhythmias). c) Potential drug interactions: 1) Digoxin and loop diuretics: loop diuretics can cause hypokalemia, increasing the risk of digoxin toxicity. Management: monitor serum potassium and consider potassium supplementation if needed. 2) Digoxin and beta-blockers: both reduce heart rate; monitor for bradycardia or heart block. 3) ACE inhibitors/ARBs and spironolactone: risk of hyperkalemia; monitor serum potassium closely."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Cardiovascular System",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 62-year-old male with hypertension and type 2 diabetes mellitus presents for follow-up. His current medications include metformin 1000mg BD and amlodipine 5mg daily. His blood pressure is 148/92 mmHg. Which of the following is the MOST appropriate next step in antihypertensive therapy according to current guidelines?",
+              "options": [
+                "a) Increase amlodipine to 10mg daily",
+                "b) Add hydrochlorothiazide 12.5mg daily",
+                "c) Add perindopril 4mg daily",
+                "d) Add carvedilol 6.25mg BD"
+              ],
+              "answer": "c) Add perindopril 4mg daily",
+              "explanation": "ACE inhibitors (e.g., perindopril) are first-line for hypertension in patients with diabetes due to renal protection, as per WHO/KDI guidelines."
+            },
+            {
+              "stem": "A 58-year-old female with chronic kidney disease (eGFR 45 mL/min/1.73m²) and hypertension is currently taking losartan 50mg daily. Her blood pressure remains elevated at 152/94 mmHg. Which of the following is the MOST appropriate next step?",
+              "options": [
+                "a) Increase losartan to 100mg daily",
+                "b) Add amlodipine 5mg daily",
+                "c) Add spironolactone 25mg daily",
+                "d) Add furosemide 40mg daily"
+              ],
+              "answer": "b) Add amlodipine 5mg daily",
+              "explanation": "Adding a calcium channel blocker (e.g., amlodipine) is recommended when ARBs (e.g., losartan) are insufficient, especially in CKD."
+            },
+            {
+              "stem": "A 45-year-old male with hypertension and a history of gout presents for review. His current regimen is hydrochlorothiazide 25mg daily. His blood pressure is 140/88 mmHg. Which of the following is the MOST likely adverse effect of this therapy?",
+              "options": [
+                "a) Hyperkalemia",
+                "b) Hypocalcemia",
+                "c) Hyperuricemia",
+                "d) Hypoglycemia"
+              ],
+              "answer": "c) Hyperuricemia",
+              "explanation": "Thiazide diuretics (e.g., hydrochlorothiazide) can exacerbate gout by increasing uric acid levels."
+            },
+            {
+              "stem": "A 70-year-old female with heart failure with reduced ejection fraction (HFrEF) is prescribed carvedilol 6.25mg BD. Which of the following BEST describes the mechanism of action of carvedilol in this context?",
+              "options": [
+                "a) Selective β1-adrenergic receptor blockade",
+                "b) Non-selective β-adrenergic and α1-adrenergic receptor blockade",
+                "c) Calcium channel blockade",
+                "d) Angiotensin receptor blockade"
+              ],
+              "answer": "b) Non-selective β-adrenergic and α1-adrenergic receptor blockade",
+              "explanation": "Carvedilol is a non-selective beta-blocker with additional alpha-1 blocking activity, beneficial in HFrEF."
+            },
+            {
+              "stem": "A 55-year-old male with hypertension and angina pectoris is prescribed verapamil 80mg TDS. Which of the following is the MOST likely adverse effect of this therapy?",
+              "options": [
+                "a) Reflex tachycardia",
+                "b) Constipation",
+                "c) Hyperkalemia",
+                "d) Hypoglycemia"
+              ],
+              "answer": "b) Constipation",
+              "explanation": "Verapamil, a non-dihydropyridine calcium channel blocker, commonly causes constipation as an adverse effect."
+            },
+            {
+              "stem": "A 60-year-old female with hypertension and chronic obstructive pulmonary disease (COPD) is prescribed metoprolol tartrate 50mg BD. Which of the following BEST describes the rationale for choosing metoprolol over propranolol?",
+              "options": [
+                "a) Metoprolol is non-selective and blocks both β1 and β2 receptors",
+                "b) Metoprolol is cardioselective and primarily blocks β1 receptors",
+                "c) Metoprolol has intrinsic sympathomimetic activity",
+                "d) Metoprolol is a calcium channel blocker"
+              ],
+              "answer": "b) Metoprolol is cardioselective and primarily blocks β1 receptors",
+              "explanation": "Metoprolol is a cardioselective beta-blocker, preferred in patients with COPD to avoid bronchoconstriction."
+            },
+            {
+              "stem": "A 72-year-old male with heart failure with preserved ejection fraction (HFpEF) and atrial fibrillation is prescribed digoxin 0.125mg daily. Which of the following is the MOST appropriate monitoring parameter for this patient?",
+              "options": [
+                "a) Serum potassium levels",
+                "b) Serum magnesium levels",
+                "c) Serum digoxin concentration",
+                "d) Serum creatinine levels"
+              ],
+              "answer": "c) Serum digoxin concentration",
+              "explanation": "Therapeutic drug monitoring (TDM) of digoxin is essential to avoid toxicity, especially in elderly patients with renal impairment."
+            },
+            {
+              "stem": "A 50-year-old female with hypertension and a history of ACE inhibitor-induced cough is prescribed valsartan 80mg daily. Which of the following BEST describes the mechanism of action of valsartan?",
+              "options": [
+                "a) Inhibition of angiotensin-converting enzyme (ACE)",
+                "b) Blockade of angiotensin II type 1 (AT1) receptors",
+                "c) Inhibition of renin",
+                "d) Blockade of calcium channels"
+              ],
+              "answer": "b) Blockade of angiotensin II type 1 (AT1) receptors",
+              "explanation": "Valsartan is an angiotensin receptor blocker (ARB) that selectively blocks AT1 receptors, avoiding ACE inhibitor-induced cough."
+            },
+            {
+              "stem": "A 65-year-old male with hypertension and type 2 diabetes mellitus is prescribed spironolactone 25mg daily in addition to his existing regimen. Which of the following is the MOST likely adverse effect of this therapy?",
+              "options": [
+                "a) Hyperkalemia",
+                "b) Hypokalemia",
+                "c) Hypercalcemia",
+                "d) Hypocalcemia"
+              ],
+              "answer": "a) Hyperkalemia",
+              "explanation": "Spironolactone is a potassium-sparing diuretic, and hyperkalemia is a common adverse effect, especially in patients with diabetes."
+            },
+            {
+              "stem": "A 48-year-old female with hypertension and a history of myocardial infarction is prescribed atorvastatin 40mg nocte. Which of the following BEST describes the primary mechanism of action of atorvastatin?",
+              "options": [
+                "a) Inhibition of cholesterol absorption in the gut",
+                "b) Inhibition of HMG-CoA reductase",
+                "c) Inhibition of bile acid reabsorption",
+                "d) Inhibition of lipoprotein lipase"
+              ],
+              "answer": "b) Inhibition of HMG-CoA reductase",
+              "explanation": "Atorvastatin is a statin that inhibits HMG-CoA reductase, reducing cholesterol synthesis in the liver."
+            },
+            {
+              "stem": "A 75-year-old male with atrial fibrillation and a CHA₂DS₂-VASc score of 3 is prescribed apixaban 5mg BD for stroke prevention. Which of the following is the MOST appropriate monitoring parameter for this patient?",
+              "options": [
+                "a) Activated partial thromboplastin time (aPTT)",
+                "b) International normalized ratio (INR)",
+                "c) Serum creatinine and eGFR",
+                "d) Prothrombin time (PT)"
+              ],
+              "answer": "c) Serum creatinine and eGFR",
+              "explanation": "Apixaban is a direct oral anticoagulant (DOAC), and renal function monitoring is essential due to its renal excretion."
+            },
+            {
+              "stem": "A 55-year-old female with hypertension and a history of asthma is prescribed nifedipine 20mg BD. Which of the following is the MOST likely adverse effect of this therapy?",
+              "options": [
+                "a) Bradycardia",
+                "b) Reflex tachycardia",
+                "c) Hyperkalemia",
+                "d) Hypoglycemia"
+              ],
+              "answer": "b) Reflex tachycardia",
+              "explanation": "Nifedipine, a dihydropyridine calcium channel blocker, commonly causes reflex tachycardia as a compensatory mechanism."
+            },
+            {
+              "stem": "A 60-year-old male with heart failure with reduced ejection fraction (HFrEF) is prescribed furosemide 40mg BD. Which of the following BEST describes the mechanism of action of furosemide?",
+              "options": [
+                "a) Inhibition of the sodium-chloride cotransporter in the distal tubule",
+                "b) Inhibition of the sodium-potassium-chloride cotransporter in the thick ascending limb of the loop of Henle",
+                "c) Inhibition of carbonic anhydrase",
+                "d) Inhibition of the epithelial sodium channel (ENaC)"
+              ],
+              "answer": "b) Inhibition of the sodium-potassium-chloride cotransporter in the thick ascending limb of the loop of Henle",
+              "explanation": "Furosemide is a loop diuretic that inhibits the Na-K-2Cl cotransporter in the thick ascending limb of the loop of Henle."
+            },
+            {
+              "stem": "A 50-year-old female with hypertension and a history of ACE inhibitor-induced angioedema is prescribed eplerenone 25mg daily. Which of the following BEST describes the mechanism of action of eplerenone?",
+              "options": [
+                "a) Inhibition of angiotensin-converting enzyme (ACE)",
+                "b) Blockade of mineralocorticoid receptors",
+                "c) Inhibition of renin",
+                "d) Blockade of calcium channels"
+              ],
+              "answer": "b) Blockade of mineralocorticoid receptors",
+              "explanation": "Eplerenone is a selective aldosterone receptor antagonist (mineralocorticoid receptor blocker), used as an alternative in ACE inhibitor-intolerant patients."
+            },
+            {
+              "stem": "A 68-year-old male with hypertension and chronic kidney disease (eGFR 30 mL/min/1.73m²) is prescribed amlodipine 5mg daily. Which of the following is the MOST appropriate monitoring parameter for this patient?",
+              "options": [
+                "a) Serum potassium levels",
+                "b) Serum magnesium levels",
+                "c) Serum creatinine and eGFR",
+                "d) Serum digoxin concentration"
+              ],
+              "answer": "c) Serum creatinine and eGFR",
+              "explanation": "Amlodipine is metabolized hepatically, but renal function should be monitored in CKD patients to assess overall drug clearance and disease progression."
+            },
+            {
+              "stem": "A 55-year-old female with hypertension and a history of myocardial infarction is prescribed bisoprolol 5mg daily. Which of the following BEST describes the primary mechanism of action of bisoprolol?",
+              "options": [
+                "a) Non-selective β-adrenergic receptor blockade",
+                "b) Selective β1-adrenergic receptor blockade",
+                "c) Calcium channel blockade",
+                "d) Angiotensin receptor blockade"
+              ],
+              "answer": "b) Selective β1-adrenergic receptor blockade",
+              "explanation": "Bisoprolol is a cardioselective beta-blocker that primarily blocks β1-adrenergic receptors, reducing heart rate and contractility."
+            },
+            {
+              "stem": "A 70-year-old male with hypertension and benign prostatic hyperplasia (BPH) is prescribed doxazosin 4mg nocte. Which of the following BEST describes the mechanism of action of doxazosin?",
+              "options": [
+                "a) Selective β1-adrenergic receptor blockade",
+                "b) Non-selective β-adrenergic receptor blockade",
+                "c) α1-adrenergic receptor blockade",
+                "d) Angiotensin receptor blockade"
+              ],
+              "answer": "c) α1-adrenergic receptor blockade",
+              "explanation": "Doxazosin is an alpha-1 blocker used for hypertension and BPH, reducing peripheral vascular resistance and prostate smooth muscle tone."
+            },
+            {
+              "stem": "A 60-year-old female with hypertension and a history of ACE inhibitor-induced cough is prescribed irbesartan 150mg daily. Which of the following is the MOST likely adverse effect of this therapy?",
+              "options": [
+                "a) Hyperkalemia",
+                "b) Hypokalemia",
+                "c) Cough",
+                "d) Angioedema"
+              ],
+              "answer": "a) Hyperkalemia",
+              "explanation": "ARBs like irbesartan can cause hyperkalemia, especially in patients with renal impairment or those taking potassium-sparing agents."
+            },
+            {
+              "stem": "A 55-year-old male with hypertension and heart failure with reduced ejection fraction (HFrEF) is prescribed spironolactone 25mg daily in addition to his existing regimen. Which of the following is the MOST appropriate monitoring parameter for this patient?",
+              "options": [
+                "a) Serum potassium levels",
+                "b) Serum sodium levels",
+                "c) Serum magnesium levels",
+                "d) Serum calcium levels"
+              ],
+              "answer": "a) Serum potassium levels",
+              "explanation": "Spironolactone is a potassium-sparing diuretic, and hyperkalemia is a common adverse effect requiring regular monitoring."
+            },
+            {
+              "stem": "A 68-year-old female with hypertension and type 2 diabetes mellitus is prescribed empagliflozin 10mg daily. Which of the following BEST describes the primary mechanism of action of empagliflozin?",
+              "options": [
+                "a) Inhibition of sodium-glucose cotransporter 2 (SGLT2) in the proximal tubule",
+                "b) Inhibition of HMG-CoA reductase",
+                "c) Inhibition of angiotensin-converting enzyme (ACE)",
+                "d) Inhibition of dipeptidyl peptidase-4 (DPP-4)"
+              ],
+              "answer": "a) Inhibition of sodium-glucose cotransporter 2 (SGLT2) in the proximal tubule",
+              "explanation": "Empagliflozin is an SGLT2 inhibitor that reduces glucose reabsorption in the proximal tubule, lowering blood glucose and providing renal/cardiac benefits."
+            },
+            {
+              "stem": "A 50-year-old male with hypertension and a history of myocardial infarction is prescribed simvastatin 40mg nocte. Which of the following is the MOST appropriate monitoring parameter for this patient?",
+              "options": [
+                "a) Serum potassium levels",
+                "b) Serum liver enzymes (ALT/AST)",
+                "c) Serum creatinine levels",
+                "d) Serum magnesium levels"
+              ],
+              "answer": "b) Serum liver enzymes (ALT/AST)",
+              "explanation": "Statins like simvastatin can cause hepatotoxicity, requiring monitoring of liver enzymes (ALT/AST)."
+            },
+            {
+              "stem": "A 72-year-old female with hypertension and atrial fibrillation is prescribed diltiazem 120mg SR daily. Which of the following BEST describes the primary mechanism of action of diltiazem?",
+              "options": [
+                "a) Selective β1-adrenergic receptor blockade",
+                "b) Non-selective β-adrenergic receptor blockade",
+                "c) Calcium channel blockade (non-dihydropyridine)",
+                "d) Angiotensin receptor blockade"
+              ],
+              "answer": "c) Calcium channel blockade (non-dihydropyridine)",
+              "explanation": "Diltiazem is a non-dihydropyridine calcium channel blocker that reduces heart rate and contractility, useful in atrial fibrillation."
+            },
+            {
+              "stem": "A 60-year-old male with hypertension and a history of ACE inhibitor-induced cough is prescribed telmisartan 40mg daily. Which of the following is the MOST likely adverse effect of this therapy?",
+              "options": [
+                "a) Cough",
+                "b) Hyperkalemia",
+                "c) Hypokalemia",
+                "d) Bradycardia"
+              ],
+              "answer": "b) Hyperkalemia",
+              "explanation": "ARBs like telmisartan can cause hyperkalemia, especially in patients with renal impairment or those taking potassium-sparing agents."
+            },
+            {
+              "stem": "A 55-year-old female with hypertension and heart failure with reduced ejection fraction (HFrEF) is prescribed carvedilol 6.25mg BD. Which of the following is the MOST appropriate monitoring parameter for this patient?",
+              "options": [
+                "a) Serum potassium levels",
+                "b) Serum sodium levels",
+                "c) Heart rate and blood pressure",
+                "d) Serum digoxin concentration"
+              ],
+              "answer": "c) Heart rate and blood pressure",
+              "explanation": "Carvedilol is a beta-blocker, and monitoring heart rate and blood pressure is essential to assess efficacy and safety."
+            },
+            {
+              "stem": "A 68-year-old male with hypertension and chronic kidney disease (eGFR 25 mL/min/1.73m²) is prescribed perindopril 4mg daily. Which of the following is the MOST appropriate monitoring parameter for this patient?",
+              "options": [
+                "a) Serum potassium levels",
+                "b) Serum sodium levels",
+                "c) Serum creatinine and eGFR",
+                "d) Serum magnesium levels"
+              ],
+              "answer": "c) Serum creatinine and eGFR",
+              "explanation": "ACE inhibitors like perindopril require monitoring of renal function (serum creatinine and eGFR) due to the risk of renal impairment."
+            },
+            {
+              "stem": "A 50-year-old female with hypertension and a history of myocardial infarction is prescribed nebivolol 5mg daily. Which of the following BEST describes the primary mechanism of action of nebivolol?",
+              "options": [
+                "a) Non-selective β-adrenergic receptor blockade",
+                "b) Selective β1-adrenergic receptor blockade with nitric oxide-mediated vasodilation",
+                "c) Calcium channel blockade",
+                "d) Angiotensin receptor blockade"
+              ],
+              "answer": "b) Selective β1-adrenergic receptor blockade with nitric oxide-mediated vasodilation",
+              "explanation": "Nebivolol is a third-generation beta-blocker with selective β1-blockade and additional nitric oxide-mediated vasodilation."
+            },
+            {
+              "stem": "A 70-year-old male with hypertension and benign prostatic hyperplasia (BPH) is prescribed tamsulosin 0.4mg nocte. Which of the following BEST describes the mechanism of action of tamsulosin?",
+              "options": [
+                "a) Selective α1A-adrenergic receptor blockade",
+                "b) Non-selective β-adrenergic receptor blockade",
+                "c) Calcium channel blockade",
+                "d) Angiotensin receptor blockade"
+              ],
+              "answer": "a) Selective α1A-adrenergic receptor blockade",
+              "explanation": "Tamsulosin is a selective alpha-1A blocker used for BPH, reducing prostate smooth muscle tone with minimal effect on blood pressure."
+            },
+            {
+              "stem": "A 60-year-old female with hypertension and a history of ACE inhibitor-induced angioedema is prescribed eplerenone 25mg daily. Which of the following is the MOST likely adverse effect of this therapy?",
+              "options": [
+                "a) Cough",
+                "b) Hyperkalemia",
+                "c) Hypokalemia",
+                "d) Bradycardia"
+              ],
+              "answer": "b) Hyperkalemia",
+              "explanation": "Eplerenone is a selective aldosterone receptor antagonist, and hyperkalemia is a common adverse effect requiring monitoring."
+            },
+            {
+              "stem": "A 55-year-old male with hypertension and heart failure with reduced ejection fraction (HFrEF) is prescribed spironolactone 25mg daily in addition to his existing regimen. Which of the following is the MOST appropriate counseling point for this patient?",
+              "options": [
+                "a) Avoid foods high in potassium",
+                "b) Increase dietary potassium intake",
+                "c) Monitor for signs of hypokalemia",
+                "d) Avoid grapefruit juice"
+              ],
+              "answer": "a) Avoid foods high in potassium",
+              "explanation": "Spironolactone is a potassium-sparing diuretic, and patients should avoid high-potassium foods to reduce the risk of hyperkalemia."
+            },
+            {
+              "stem": "A 68-year-old female with hypertension and type 2 diabetes mellitus is prescribed empagliflozin 10mg daily. Which of the following is the MOST appropriate counseling point for this patient?",
+              "options": [
+                "a) Monitor for signs of hypoglycemia",
+                "b) Increase fluid intake to prevent dehydration",
+                "c) Monitor for signs of hyperkalemia",
+                "d) Avoid foods high in sodium"
+              ],
+              "answer": "b) Increase fluid intake to prevent dehydration",
+              "explanation": "SGLT2 inhibitors like empagliflozin increase urinary glucose excretion, leading to osmotic diuresis and potential dehydration."
+            },
+            {
+              "stem": "A 50-year-old male with hypertension and a history of myocardial infarction is prescribed simvastatin 40mg nocte. Which of the following is the MOST appropriate counseling point for this patient?",
+              "options": [
+                "a) Take with grapefruit juice to enhance absorption",
+                "b) Report any muscle pain or weakness immediately",
+                "c) Increase dietary potassium intake",
+                "d) Avoid foods high in sodium"
+              ],
+              "answer": "b) Report any muscle pain or weakness immediately",
+              "explanation": "Statins can cause myopathy and rhabdomyolysis, and patients should report muscle symptoms promptly."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 65-year-old male with hypertension and type 2 diabetes mellitus presents for review. His current medications include metformin 1000mg BD and amlodipine 5mg daily. His blood pressure is 148/92 mmHg, and his HbA1c is 7.2%.",
+              "modelAnswer": {
+                "a": "According to WHO/KDI guidelines, the next step in antihypertensive therapy is to add an ACE inhibitor (e.g., perindopril 4mg daily) due to the presence of diabetes and the need for renal protection.",
+                "b": "Monitoring parameters should include blood pressure, renal function (serum creatinine and eGFR), electrolytes (especially potassium), and HbA1c every 3–6 months.",
+                "c": "Patient counseling should include adherence to medications, dietary sodium restriction, regular exercise, and monitoring for symptoms of hypoglycemia or hypotension."
+              }
+            },
+            {
+              "stem": "A 58-year-old female with chronic kidney disease (eGFR 45 mL/min/1.73m²) and hypertension is currently taking losartan 50mg daily. Her blood pressure remains elevated at 152/94 mmHg.",
+              "modelAnswer": {
+                "a": "The most appropriate next step is to add a calcium channel blocker (e.g., amlodipine 5mg daily) to achieve target blood pressure.",
+                "b": "Monitoring parameters should include blood pressure, renal function (serum creatinine and eGFR), electrolytes (especially potassium), and urinalysis for proteinuria.",
+                "c": "Patient counseling should include the importance of medication adherence, dietary sodium restriction, and monitoring for symptoms of hyperkalemia or hypotension."
+              }
+            },
+            {
+              "stem": "A 45-year-old male with hypertension and a history of gout presents for review. His current regimen is hydrochlorothiazide 25mg daily. His blood pressure is 140/88 mmHg.",
+              "modelAnswer": {
+                "a": "The most likely adverse effect of hydrochlorothiazide in this patient is hyperuricemia, which can exacerbate gout.",
+                "b": "Alternative antihypertensive options for this patient include calcium channel blockers (e.g., amlodipine) or ACE inhibitors (e.g., perindopril), which do not worsen gout.",
+                "c": "Monitoring parameters should include blood pressure, serum uric acid levels, renal function (serum creatinine and eGFR), and electrolytes."
+              }
+            },
+            {
+              "stem": "A 70-year-old female with heart failure with reduced ejection fraction (HFrEF) is prescribed carvedilol 6.25mg BD.",
+              "modelAnswer": {
+                "a": "Carvedilol is a non-selective beta-blocker with additional alpha-1 blocking activity, beneficial in HFrEF due to its effects on reducing heart rate, contractility, and afterload.",
+                "b": "Monitoring parameters should include heart rate, blood pressure, signs of fluid overload (weight gain, edema), and renal function (serum creatinine and eGFR).",
+                "c": "Patient counseling should include the importance of gradual dose titration, adherence to medications, dietary sodium restriction, and monitoring for symptoms of bradycardia or hypotension."
+              }
+            },
+            {
+              "stem": "A 55-year-old male with hypertension and angina pectoris is prescribed verapamil 80mg TDS.",
+              "modelAnswer": {
+                "a": "Verapamil is a non-dihydropyridine calcium channel blocker that reduces heart rate and contractility, making it useful for angina and hypertension.",
+                "b": "The most likely adverse effect is constipation, which is common with verapamil due to its effects on gastrointestinal smooth muscle.",
+                "c": "Monitoring parameters should include heart rate, blood pressure, and signs of heart failure (e.g., edema, dyspnea). Patient counseling should include dietary fiber intake and hydration to prevent constipation."
+              }
+            },
+            {
+              "stem": "A 60-year-old female with hypertension and COPD is prescribed metoprolol tartrate 50mg BD.",
+              "modelAnswer": {
+                "a": "Metoprolol is a cardioselective beta-blocker that primarily blocks β1 receptors, making it safer in patients with COPD compared to non-selective beta-blockers (e.g., propranolol).",
+                "b": "Monitoring parameters should include heart rate, blood pressure, and pulmonary function tests (if indicated).",
+                "c": "Patient counseling should include the importance of adherence to medications, monitoring for symptoms of bradycardia or bronchospasm, and avoiding abrupt discontinuation."
+              }
+            },
+            {
+              "stem": "A 72-year-old male with heart failure with preserved ejection fraction (HFpEF) and atrial fibrillation is prescribed digoxin 0.125mg daily.",
+              "modelAnswer": {
+                "a": "Digoxin is a cardiac glycoside that increases cardiac contractility (positive inotrope) and slows heart rate (negative chronotrope), useful in HFpEF and atrial fibrillation.",
+                "b": "Therapeutic drug monitoring (TDM) of digoxin is essential to avoid toxicity, with target serum concentrations of 0.5–1.0 ng/mL.",
+                "c": "Monitoring parameters should include serum digoxin concentration, renal function (serum creatinine and eGFR), electrolytes (especially potassium and magnesium), and ECG for signs of toxicity (e.g., arrhythmias)."
+              }
+            },
+            {
+              "stem": "A 50-year-old female with hypertension and a history of ACE inhibitor-induced cough is prescribed valsartan 80mg daily.",
+              "modelAnswer": {
+                "a": "Valsartan is an angiotensin receptor blocker (ARB) that selectively blocks angiotensin II type 1 (AT1) receptors, avoiding ACE inhibitor-induced cough.",
+                "b": "Monitoring parameters should include blood pressure, renal function (serum creatinine and eGFR), and electrolytes (especially potassium).",
+                "c": "Patient counseling should include the importance of adherence to medications, monitoring for symptoms of hyperkalemia or hypotension, and reporting any signs of angioedema."
+              }
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 65-year-old male with hypertension, type 2 diabetes mellitus, and chronic kidney disease (eGFR 45 mL/min/1.73m²) presents for review. His current medications include metformin 1000mg BD, amlodipine 5mg daily, and atorvastatin 40mg nocte. His blood pressure is 152/94 mmHg, and his HbA1c is 7.8%.",
+              "modelAnswer": {
+                "Assessment": [
+                  "This patient has multiple cardiovascular risk factors, including hypertension, diabetes, and CKD, requiring comprehensive management.",
+                  "Target blood pressure for this patient is <130/80 mmHg (WHO/KDI guidelines for diabetes and CKD).",
+                  "Current therapy is insufficient to achieve target BP, and additional agents are needed for renal protection."
+                ],
+                "Management Plan": [
+                  "a) Add an ACE inhibitor (e.g., perindopril 4mg daily) for renal protection and blood pressure control.",
+                  "b) Consider adding a loop diuretic (e.g., furosemide 20–40mg daily) if volume overload is present.",
+                  "c) Optimize glycemic control with addition or titration of SGLT2 inhibitors (e.g., empagliflozin 10mg daily) for renal/cardiac benefits.",
+                  "d) Monitor renal function (serum creatinine and eGFR), electrolytes (especially potassium), blood pressure, and HbA1c every 3–6 months.",
+                  "e) Patient counseling: adherence to medications, dietary sodium restriction (<2g/day), regular exercise, avoidance of high-potassium foods (if ACE inhibitor/ARB added), and monitoring for symptoms of hypoglycemia or hypotension."
+                ],
+                "Monitoring": [
+                  "Renal function (serum creatinine and eGFR) at baseline and 1–2 weeks after ACE inhibitor initiation.",
+                  "Electrolytes (potassium, sodium) at baseline and 1–2 weeks after ACE inhibitor initiation.",
+                  "Blood pressure and heart rate at each visit.",
+                  "HbA1c every 3–6 months.",
+                  "Signs of ACE inhibitor-induced cough or angioedema."
+                ]
+              }
+            },
+            {
+              "stem": "A 70-year-old female with heart failure with reduced ejection fraction (HFrEF) (LVEF 30%) and atrial fibrillation presents for review. Her current medications include bisoprolol 5mg daily, furosemide 40mg BD, and digoxin 0.125mg daily. She reports increasing dyspnea on exertion and bilateral ankle edema over the past 2 weeks.",
+              "modelAnswer": {
+                "Assessment": [
+                  "This patient has worsening symptoms of heart failure (dyspnea, edema) despite current therapy, suggesting decompensation.",
+                  "Atrial fibrillation may contribute to her symptoms by reducing cardiac output and increasing heart rate.",
+                  "Current therapy includes a beta-blocker (bisoprolol), loop diuretic (furosemide), and digoxin, but optimization is needed."
+                ],
+                "Management Plan": [
+                  "a) Assess volume status and consider uptitrating furosemide (e.g., increase to 80mg BD) if volume overload is present.",
+                  "b) Ensure beta-blocker (bisoprolol) is uptitrated to target dose (e.g., 10mg daily) if tolerated, as per HFrEF guidelines.",
+                  "c) Consider adding an ACE inhibitor (e.g., perindopril 4mg daily) or ARB (e.g., valsartan 40mg BD) if not already on one, for mortality benefit.",
+                  "d) Consider adding an SGLT2 inhibitor (e.g., dapagliflozin 10mg daily) for additional renal/cardiac benefits.",
+                  "e) Rate control for atrial fibrillation: consider uptitrating beta-blocker or adding a non-dihydropyridine calcium channel blocker (e.g., diltiazem) if beta-blocker is insufficient.",
+                  "f) Monitor renal function (serum creatinine and eGFR), electrolytes (especially potassium and magnesium), digoxin concentration, and ECG for signs of toxicity."
+                ],
+                "Monitoring": [
+                  "Weight daily to assess fluid retention.",
+                  "Renal function (serum creatinine and eGFR) and electrolytes at baseline and 1–2 weeks after any medication changes.",
+                  "Digoxin concentration (target 0.5–1.0 ng/mL) if symptoms of toxicity (e.g., nausea, arrhythmias) are present.",
+                  "ECG to assess heart rate and rhythm control.",
+                  "Signs of beta-blocker toxicity (bradycardia, hypotension) or digoxin toxicity (arrhythmias, visual disturbances)."
+                ],
+                "Patient Counseling": [
+                  "Importance of medication adherence and uptitration as tolerated.",
+                  "Dietary sodium restriction (<2g/day) and fluid restriction if indicated.",
+                  "Daily weight monitoring and reporting increases >2kg in 3 days.",
+                  "Signs of heart failure decompensation (dyspnea, edema) and when to seek medical attention.",
+                  "Avoidance of NSAIDs and high-potassium foods if ACE inhibitor/ARB added."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

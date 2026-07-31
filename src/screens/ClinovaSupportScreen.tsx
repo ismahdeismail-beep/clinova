@@ -1303,9 +1303,9 @@ export default function ClinovaSupportScreen() {
                   {[
                     { icon: BrainCircuit, label: 'Education Hub', desc: 'Study modules & units', path: '/knowledge' },
                     { icon: Pill, label: 'Drug Index', desc: '1000 monographs', path: '/drugs' },
-                    { icon: Stethoscope, label: 'Clinical Cases', desc: '300+ simulations', path: '/cases' },
+                    { icon: Stethoscope, label: 'Clinical Cases', desc: '1,100+ simulations', path: '/cases' },
                     { icon: GraduationCap, label: 'Exam Prep', desc: 'Mock papers & topics', path: '/exam' },
-                    { icon: HeartPulse, label: 'Care Plans', desc: '94 NANDA/NIC/NOC', path: '/care-plan' },
+                    { icon: HeartPulse, label: 'Care Plans', desc: '92 NANDA/NIC/NOC', path: '/care-plan' },
                     { icon: Library, label: 'Library', desc: 'Clinical references', path: '/library' },
                     { icon: Settings, label: 'Settings', desc: 'App preferences', path: '/settings' },
                   ].map((nav, i) => {

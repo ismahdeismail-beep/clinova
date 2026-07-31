@@ -1,0 +1,816 @@
+"2": {
+    "title": "Autonomic Nervous System",
+    "variant": 2,
+    "sections": [
+        {
+            "letter": "A",
+            "name": "Multiple Choice Questions",
+            "marks": 30,
+            "questions": [
+                {
+                    "stem": "Methacholine is a cholinergic agonist that differs from acetylcholine primarily because it:",
+                    "options": [
+                        "Is resistant to hydrolysis by acetylcholinesterase",
+                        "Has greater nicotinic receptor selectivity",
+                        "Crosses the blood-brain barrier more readily",
+                        "Has a shorter duration of action"
+                    ],
+                    "answer": "Is resistant to hydrolysis by acetylcholinesterase",
+                    "explanation": "Methacholine is a synthetic choline ester that is poorly hydrolysed by AChE, giving it a longer duration than acetylcholine."
+                },
+                {
+                    "stem": "Pilocarpine is used clinically in the management of:",
+                    "options": [
+                        "Glaucoma (open-angle)",
+                        "Post-operative urinary retention",
+                        "Myasthenia gravis",
+                        "Paralytic ileus"
+                    ],
+                    "answer": "Glaucoma (open-angle)",
+                    "explanation": "Pilocarpine is a muscarinic agonist that constricts the pupil (miosis) and improves aqueous humour outflow in open-angle glaucoma."
+                },
+                {
+                    "stem": "Physostigmine differs from neostigmine in that physostigmine:",
+                    "options": [
+                        "Crosses the blood-brain barrier and can reverse central anticholinergic toxicity",
+                        "Is a quaternary ammonium compound",
+                        "Is used primarily for myasthenia gravis maintenance",
+                        "Does not inhibit acetylcholinesterase"
+                    ],
+                    "answer": "Crosses the blood-brain barrier and can reverse central anticholinergic toxicity",
+                    "explanation": "Physostigmine is a tertiary amine that crosses the BBB, useful for central anticholinergic syndrome (atropine overdose)."
+                },
+                {
+                    "stem": "A patient with myasthenia gravis develops sudden worsening of muscle weakness, dysphagia, and respiratory difficulty 1 hour after taking pyridostigmine. Edrophonium administration worsens the weakness. This is most consistent with:",
+                    "options": [
+                        "Cholinergic crisis due to overmedication",
+                        "Myasthenic crisis due to undermedication",
+                        "Drug-induced myasthenia gravis from penicillamine",
+                        "Lambert-Eaton myasthenic syndrome"
+                    ],
+                    "answer": "Cholinergic crisis due to overmedication",
+                    "explanation": "In cholinergic crisis, excess ACh causes depolarising blockade. Edrophonium (additional ChE inhibitor) worsens weakness, distinguishing it from myasthenic crisis."
+                },
+                {
+                    "stem": "Tolterodine is a muscarinic receptor antagonist used primarily for:",
+                    "options": [
+                        "Overactive bladder (urinary frequency and urgency)",
+                        "Peptic ulcer disease",
+                        "Parkinson disease tremor",
+                        "Motion sickness"
+                    ],
+                    "answer": "Overactive bladder (urinary frequency and urgency)",
+                    "explanation": "Tolterodine is a bladder-selective antimuscarinic that reduces detrusor muscle overactivity with fewer dry mouth side effects than older agents."
+                },
+                {
+                    "stem": "Organophosphate poisoning causes all of the following muscarinic effects EXCEPT:",
+                    "options": [
+                        "Mydriasis (pupil dilation)",
+                        "Salivation",
+                        "Bradycardia",
+                        "Bronchospasm"
+                    ],
+                    "answer": "Mydriasis (pupil dilation)",
+                    "explanation": "Organophosphates cause muscarinic excess → miosis (constricted pupils), not mydriasis. The SLUDGE syndrome includes salivation, lacrimation, urination, defecation, GI upset, emesis."
+                },
+                {
+                    "stem": "Epinephrine is preferred over norepinephrine in anaphylactic shock because epinephrine:",
+                    "options": [
+                        "Stimulates both alpha and beta2 receptors, causing bronchodilation and vasoconstriction",
+                        "Has a more potent alpha-agonistic effect",
+                        "Does not cause cardiac arrhythmias",
+                        "Can be given orally"
+                    ],
+                    "answer": "Stimulates both alpha and beta2 receptors, causing bronchodilation and vasoconstriction",
+                    "explanation": "Epinephrine (alpha1, alpha2, beta1, beta2) reverses bronchospasm (beta2) and hypotension (alpha1). Norepinephrine has minimal beta2 effect."
+                },
+                {
+                    "stem": "Which of the following is a selective alpha1-adrenoceptor agonist used as a nasal decongestant?",
+                    "options": [
+                        "Phenylephrine",
+                        "Clonidine",
+                        "Isoprenaline",
+                        "Dobutamine"
+                    ],
+                    "answer": "Phenylephrine",
+                    "explanation": "Phenylephrine selectively stimulates alpha1 receptors, causing vasoconstriction in nasal mucosa, reducing congestion."
+                },
+                {
+                    "stem": "Methoxamine is a selective alpha1-agonist that may be used for:",
+                    "options": [
+                        "Management of hypotension during spinal anaesthesia",
+                        "Treatment of hypertension",
+                        "Management of asthma exacerbation",
+                        "Reversal of beta-blocker overdose"
+                    ],
+                    "answer": "Management of hypotension during spinal anaesthesia",
+                    "explanation": "Methoxamine is a pure alpha1-agonist that raises blood pressure by vasoconstriction without cardiac stimulation, useful during spinal anaesthesia."
+                },
+                {
+                    "stem": "Norepinephrine's pressor effect is mediated primarily through:",
+                    "options": [
+                        "Alpha1-adrenoceptor-mediated vasoconstriction",
+                        "Beta1-adrenoceptor-mediated increased cardiac output",
+                        "Beta2-adrenoceptor-mediated bronchodilation",
+                        "Alpha2-adrenoceptor-mediated central sympatholysis"
+                    ],
+                    "answer": "Alpha1-adrenoceptor-mediated vasoconstriction",
+                    "explanation": "Norepinephrine is a potent alpha1-agonist causing peripheral vasoconstriction. It has minimal beta2 effects and is used in septic shock."
+                },
+                {
+                    "stem": "A 50-year-old asthmatic patient with hypertension requires a beta-blocker. Which of the following would be safest?",
+                    "options": [
+                        "Metoprolol",
+                        "Propranolol",
+                        "Nadolol",
+                        "Timolol"
+                    ],
+                    "answer": "Metoprolol",
+                    "explanation": "Metoprolol is cardioselective (beta1), with less risk of bronchoconstriction at low doses. Non-selective beta-blockers (propranolol, nadolol, timolol) block beta2 receptors and can worsen asthma."
+                },
+                {
+                    "stem": "Propranolol is contraindicated in all of the following EXCEPT:",
+                    "options": [
+                        "Essential tremor",
+                        "Asthma",
+                        "Heart block (second-degree)",
+                        "Severe bradycardia"
+                    ],
+                    "answer": "Essential tremor",
+                    "explanation": "Propranolol is a first-line treatment for essential tremor (central beta-blockade). It is contraindicated in asthma, heart block, and bradycardia."
+                },
+                {
+                    "stem": "Prazosin causes a unique adverse effect known as:",
+                    "options": [
+                        "First-dose phenomenon (severe orthostatic hypotension)",
+                        "Rebound hypertension on discontinuation",
+                        "Bronchospasm",
+                        "Hyperkalaemia"
+                    ],
+                    "answer": "First-dose phenomenon (severe orthostatic hypotension)",
+                    "explanation": "Prazosin's first-dose phenomenon causes significant postural hypotension, syncope, and dizziness. Patients should take the first dose at bedtime."
+                },
+                {
+                    "stem": "Phentolamine is a non-selective alpha-blocker used in the management of:",
+                    "options": [
+                        "Hypertensive crisis due to phaeochromocytoma",
+                        "Essential hypertension",
+                        "Benign prostatic hyperplasia",
+                        "Raynaud phenomenon"
+                    ],
+                    "answer": "Hypertensive crisis due to phaeochromocytoma",
+                    "explanation": "Phentolamine blocks both alpha1 and alpha2 receptors, used to control catecholamine-induced hypertension before phaeochromocytoma surgery."
+                },
+                {
+                    "stem": "Clonidine is used for opioid withdrawal because it:",
+                    "options": [
+                        "Reduces sympathetic overactivity by central alpha2 agonism",
+                        "Blocks opioid receptors directly",
+                        "Inhibits catecholamine synthesis",
+                        "Increases serotonin levels in the brain"
+                    ],
+                    "answer": "Reduces sympathetic overactivity by central alpha2 agonism",
+                    "explanation": "Clonidine reduces noradrenaline release from central sympathetic neurons, alleviating autonomic symptoms of opioid withdrawal (sweating, tachycardia, hypertension)."
+                },
+                {
+                    "stem": "Succinylcholine is the preferred neuromuscular blocker for rapid sequence intubation because of its:",
+                    "options": [
+                        "Rapid onset (30-60 seconds) and short duration (5 minutes)",
+                        "Long duration of action",
+                        "Reversible effect with neostigmine",
+                        "Lack of fasciculations"
+                    ],
+                    "answer": "Rapid onset (30-60 seconds) and short duration (5 minutes)",
+                    "explanation": "Succinylcholine (depolarising NMB) is rapidly hydrolysed by plasma cholinesterase, giving the shortest duration of all NMBs."
+                },
+                {
+                    "stem": "Dantrolene treats malignant hyperthermia by:",
+                    "options": [
+                        "Inhibiting calcium release from the sarcoplasmic reticulum via ryanodine receptor blockade",
+                        "Blocking voltage-gated sodium channels",
+                        "Inhibiting acetylcholinesterase",
+                        "Blocking beta-adrenergic receptors"
+                    ],
+                    "answer": "Inhibiting calcium release from the sarcoplasmic reticulum via ryanodine receptor blockade",
+                    "explanation": "Dantrolene directly inhibits the ryanodine receptor (RyR1), preventing the uncontrolled calcium release that drives malignant hyperthermia."
+                },
+                {
+                    "stem": "Beta1-adrenoceptors are predominantly located in the:",
+                    "options": [
+                        "Heart (SA node, AV node, ventricles)",
+                        "Bronchial smooth muscle",
+                        "Vascular smooth muscle",
+                        "Uterine smooth muscle"
+                    ],
+                    "answer": "Heart (SA node, AV node, ventricles)",
+                    "explanation": "Beta1 receptors increase heart rate (chronotropy), conduction velocity (dromotropy), and contractility (inotropy)."
+                },
+                {
+                    "stem": "Activation of beta2-adrenoceptors produces all of the following EXCEPT:",
+                    "options": [
+                        "Vasoconstriction",
+                        "Bronchodilation",
+                        "Uterine relaxation",
+                        "Increased glycogenolysis"
+                    ],
+                    "answer": "Vasoconstriction",
+                    "explanation": "Beta2 activation causes vasodilation (not constriction) in skeletal muscle blood vessels, along with bronchodilation, uterine relaxation, and glycogenolysis."
+                },
+                {
+                    "stem": "Which of the following is a quaternary ammonium anticholinergic that does NOT cross the BBB, making it useful for COPD?",
+                    "options": [
+                        "Ipratropium",
+                        "Atropine",
+                        "Scopolamine",
+                        "Benztropine"
+                    ],
+                    "answer": "Ipratropium",
+                    "explanation": "Ipratropium is a quaternary ammonium compound that is poorly absorbed and does not cross the BBB, minimising systemic and CNS anticholinergic effects in COPD."
+                },
+                {
+                    "stem": "A patient with Parkinson disease develops anticholinergic toxicity from benztropine. Which agent can reverse both peripheral and central effects?",
+                    "options": [
+                        "Physostigmine",
+                        "Neostigmine",
+                        "Pralidoxime",
+                        "Atropine"
+                    ],
+                    "answer": "Physostigmine",
+                    "explanation": "Physostigmine (tertiary amine) crosses the BBB and inhibits AChE centrally, reversing both peripheral and central anticholinergic syndrome."
+                },
+                {
+                    "stem": "Which of the following drugs is used as an IV antidote for beta-blocker overdose?",
+                    "options": [
+                        "Glucagon",
+                        "Atropine",
+                        "Pralidoxime",
+                        "Protamine"
+                    ],
+                    "answer": "Glucagon",
+                    "explanation": "Glucagon activates adenyl cyclase independently of beta-receptors, increasing cAMP and cardiac contractility — useful in beta-blocker overdose with refractory bradycardia."
+                },
+                {
+                    "stem": "Alpha-methyldopa is the antihypertensive of choice in pregnancy because it:",
+                    "options": [
+                        "Has a proven safety record in pregnancy and does not reduce uteroplacental blood flow",
+                        "Is more effective than other agents in pre-eclampsia",
+                        "Is excreted in breast milk in negligible amounts",
+                        "Causes fewer side effects than labetalol"
+                    ],
+                    "answer": "Has a proven safety record in pregnancy and does not reduce uteroplacental blood flow",
+                    "explanation": "Alpha-methyldopa (converted to methyl-noradrenaline, central alpha2 agonist) has extensive safety data in pregnancy and maintains placental perfusion."
+                },
+                {
+                    "stem": "The mydriatic effect of atropine is caused by:",
+                    "options": [
+                        "Blockade of muscarinic receptors in the iris sphincter muscle",
+                        "Stimulation of alpha1 receptors in the radial muscle",
+                        "Inhibition of acetylcholinesterase at the neuromuscular junction",
+                        "Blockade of nicotinic receptors in the ciliary ganglion"
+                    ],
+                    "answer": "Blockade of muscarinic receptors in the iris sphincter muscle",
+                    "explanation": "Atropine blocks M3 receptors on the iris sphincter, preventing constriction and causing unopposed radial muscle dilation (mydriasis)."
+                },
+                {
+                    "stem": "Dobutamine is preferred over dopamine in cardiogenic shock because dobutamine:",
+                    "options": [
+                        "Produces predominant beta1 stimulation with less tachycardia and arrhythmogenesis",
+                        "Causes more pronounced vasoconstriction",
+                        "Is effective orally",
+                        "Has longer half-life"
+                    ],
+                    "answer": "Produces predominant beta1 stimulation with less tachycardia and arrhythmogenesis",
+                    "explanation": "Dobutamine is primarily a beta1-agonist that increases contractility (inotrope) with less chronotropic effect and arrhythmia risk than dopamine."
+                },
+                {
+                    "stem": "Beta2-agonists such as salbutamol are used in preterm labour because they:",
+                    "options": [
+                        "Relax uterine smooth muscle by beta2 receptor activation",
+                        "Block oxytocin receptors",
+                        "Inhibit prostaglandin synthesis",
+                        "Stimulate beta1 receptors in the myometrium"
+                    ],
+                    "answer": "Relax uterine smooth muscle by beta2 receptor activation",
+                    "explanation": "Beta2-agonists activate adenylyl cyclase in uterine smooth muscle, decreasing intracellular calcium and causing tocolysis (uterine relaxation)."
+                },
+                {
+                    "stem": "A patient receiving succinylcholine develops prolonged apnoea. The most likely cause is:",
+                    "options": [
+                        "Atypical plasma cholinesterase (pseudocholinesterase deficiency)",
+                        "Myasthenia gravis",
+                        "Renal failure",
+                        "Hepatic failure"
+                    ],
+                    "answer": "Atypical plasma cholinesterase (pseudocholinesterase deficiency)",
+                    "explanation": "Genetic variants of plasma cholinesterase reduce succinylcholine hydrolysis, prolonging neuromuscular blockade from minutes to hours."
+                },
+                {
+                    "stem": "The mechanism of action of glycopyrrolate differs from atropine in that glycopyrrolate:",
+                    "options": [
+                        "Is a quaternary ammonium compound that does not cross the BBB",
+                        "Has a shorter duration of action",
+                        "Is a selective M1 receptor antagonist",
+                        "Is administered only intravenously"
+                    ],
+                    "answer": "Is a quaternary ammonium compound that does not cross the BBB",
+                    "explanation": "Glycopyrrolate's quaternary structure prevents CNS penetration, making it preferred for pre-anaesthetic use where central anticholinergic effects are undesirable."
+                },
+                {
+                    "stem": "Neostigmine is used to reverse the effects of non-depolarising neuromuscular blockers because it:",
+                    "options": [
+                        "Inhibits acetylcholinesterase, increasing ACh concentration at the NMJ",
+                        "Directly stimulates nicotinic receptors",
+                        "Displaces the blocker from the receptor",
+                        "Metabolises the neuromuscular blocker"
+                    ],
+                    "answer": "Inhibits acetylcholinesterase, increasing ACh concentration at the NMJ",
+                    "explanation": "Neostigmine inhibits AChE, allowing ACh to accumulate and compete with the non-depolarising blocker at nicotinic Nm receptors."
+                },
+                {
+                    "stem": "Pralidoxime is most effective in organophosphate poisoning when given:",
+                    "options": [
+                        "Within the first 24-48 hours before 'aging' of the AChE-inhibitor complex",
+                        "Only after all muscarinic symptoms have resolved",
+                        "As a single oral dose",
+                        "In combination with beta-blockers"
+                    ],
+                    "answer": "Within the first 24-48 hours before 'aging' of the AChE-inhibitor complex",
+                    "explanation": "Aging involves dealkylation of the organophosphate-AChE complex, making the bond irreversible. Pralidoxime is ineffective after aging occurs."
+                },
+                {
+                    "stem": "Which of the following adrenergic receptors mediates vasodilation in skeletal muscle blood vessels?",
+                    "options": [
+                        "Beta2",
+                        "Alpha1",
+                        "Alpha2",
+                        "Beta1"
+                    ],
+                    "answer": "Beta2",
+                    "explanation": "Beta2 receptors in skeletal muscle vascular smooth muscle mediate vasodilation, increasing blood flow during exercise."
+                }
+            ]
+        },
+        {
+            "letter": "B",
+            "name": "Short Answer Questions",
+            "marks": 40,
+            "questions": [
+                {
+                    "stem": "(a) Explain the mechanism of action of cholinesterase inhibitors and classify them with examples. (4 marks)\n(b) Compare the clinical uses of physostigmine and neostigmine, explaining why their CNS penetration differs. (3 marks)\n(c) A 70-year-old man with Alzheimer disease is started on donepezil. What is the rationale and what adverse effects should be monitored? (3 marks)",
+                    "modelAnswer": "a) Cholinesterase inhibitors prevent ACh breakdown by inhibiting AChE, increasing ACh concentration at synapses.\nClassification:\n(1) SHORT-ACTING: edrophonium (diagnosis of MG)\n(2) CARBAMATES (reversible): neostigmine (peripheral), physostigmine (central), pyridostigmine (oral maintenance)\n(3) ORGANOPHOSPHATES (irreversible): ecothiopate, parathion, malathion\n\nb) Neostigmine: quaternary ammonium → does NOT cross BBB → used for MG reversal of NM blockade. Physostigmine: tertiary amine → crosses BBB → used for central anticholinergic syndrome, atropine overdose. Clinical implication: physostigmine can reverse both peripheral and central anticholinergic effects; neostigmine only peripheral.\n\nc) Donepezil is a centrally acting ChE inhibitor that increases ACh levels in the brain, improving cognition in mild-to-moderate Alzheimer disease.\nAdverse effects: GI (nausea, vomiting, diarrhoea — start low, titrate slowly), bradycardia (risk of syncope), muscle cramps, insomnia (if taken at night). Monitor: HR, GI tolerance, cognitive function (MMSE). Avoid: concurrent NSAIDs (increased GI bleeding), bradycardic drugs."
+                },
+                {
+                    "stem": "(a) Describe the Tensilon (edrophonium) test. What is the result in myasthenic crisis versus cholinergic crisis? (5 marks)\n(b) A 35-year-old woman with known MG presents with respiratory distress. She has taken her pyridostigmine regularly. Outline the steps to differentiate myasthenic from cholinergic crisis. (3 marks)\n(c) How is each crisis managed? (2 marks)",
+                    "modelAnswer": "a) Tensilon test: IV edrophonium 2-10 mg given over 1-2 min while observing muscle strength (ocular, bulbar, limb muscles). Effect lasts 5-10 minutes.\n\nMYASTHENIC CRISIS: weakness due to undermedication (insufficient ACh). Edrophonium → RAPID IMPROVEMENT in muscle strength. Positive test.\n\nCHOLINERGIC CRISIS: weakness due to overmedication (excess ACh causing depolarising blockade). Edrophonium → WORSENING of weakness. Negative test.\n\nb) Steps:\n(1) Clinical assessment: fasciculations, salivation, lacrimation, bradycardia, miosis → cholinergic. Difficulty swallowing, dysarthria, ptosis → myasthenic.\n(2) Perform Tensilon test (if respiratory function permits — have resuscitation equipment ready).\n(3) Measure plasma pyridostigmine levels.\n\nc) Management:\nMYASTHENIC CRISIS: IV neostigmine, increase pyridostigmine dose, IVIG or plasmapheresis, immunosuppression (steroids, azathioprine), supportive ventilation.\nCHOLINERGIC CRISIS: stop all ChE inhibitors immediately, atropine for muscarinic symptoms, supportive ventilation until ACh levels normalise."
+                },
+                {
+                    "stem": "(a) Compare the pharmacological effects of atropine on the eye, heart, GI tract, and exocrine glands. (5 marks)\n(b) Atropine is contraindicated in narrow-angle glaucoma. Explain the pathophysiology. (2 marks)\n(c) Name two synthetic anticholinergic drugs that are preferred over atropine for specific indications. (3 marks)",
+                    "modelAnswer": "a) Atropine (competitive muscarinic antagonist) effects:\n- EYE: mydriasis (pupil dilation), cycloplegia (paralysis of accommodation) → photophobia, blurred near vision\n- HEART: initial bradycardia (central vagal stimulation) followed by tachycardia (M2 blockade in SA node)\n- GI TRACT: reduced motility, reduced tone → constipation, delayed gastric emptying, reduced acid secretion\n- EXOCRINE GLANDS: reduced secretion of saliva (dry mouth), sweat (dry skin, hyperthermia), bronchial secretions (dry cough), lacrimal glands (dry eyes)\n\nb) Narrow-angle glaucoma: the anterior chamber angle is shallow. Atropine dilates the pupil and thickens the iris, further narrowing the angle → obstructs aqueous humour outflow → acute rise in intraocular pressure → optic nerve damage, vision loss.\n\nc) (1) IPRATROPIUM: quaternary ammonium, topical (inhaled) for COPD/asthma — no systemic effects. (2) GLYCOPYRROLATE: quaternary, pre-anaesthetic to reduce secretions — does not cross BBB. (3) TOLTERODINE: bladder-selective for overactive bladder — fewer dry mouth side effects."
+                },
+                {
+                    "stem": "(a) Describe the mechanism of pralidoxime in organophosphate poisoning. (4 marks)\n(b) What is 'aging' and why does it limit the effectiveness of pralidoxime? (3 marks)\n(c) Outline the complete management protocol for a patient with moderate organophosphate poisoning. (3 marks)",
+                    "modelAnswer": "a) Pralidoxime (2-PAM) reactivates AChE by: (1) Nucleophilic attack on the phosphorus atom of the organophosphate bound to the AChE active site; (2) Forms a pralidoxime-phosphate complex that dissociates; (3) Restores AChE activity. Pralidoxime is most effective at nicotinic synapses (improves muscle strength, reverses fasciculations).\n\nb) Aging: the OP-AChE complex undergoes dealkylation (loss of an alkyl group from the OP), stabilising the bond. After aging, the OP-AChE complex is irreversible → AChE cannot be reactivated. Aging rate varies by OP: sarin ~5h, soman ~2 min, malathion ~24-48h. Pralidoxime must be given BEFORE aging occurs.\n\nc) Management:\n(1) DECONTAMINATION: remove clothing, wash skin with soap and water, activated charcoal if ingested within 1h.\n(2) ATROPINE: 1-2 mg IV every 5-15 min until atropinisation (drying of secretions, HR >80, pupil dilation). May require massive doses (100+ mg in severe cases).\n(3) PRALIDOXIME: 1-2 g IV over 30 min (loading), then 500 mg/h infusion or 1 g q6-12h for 24-48h.\n(4) BENZODIAZEPINES: diazepam 10 mg IV for seizures.\n(5) SUPPORTIVE: mechanical ventilation, fluids, monitoring of AChE levels, cardiac monitoring."
+                },
+                {
+                    "stem": "(a) Compare the receptor selectivity and clinical applications of epinephrine, norepinephrine, and phenylephrine. (5 marks)\n(b) Why is epinephrine the drug of choice for anaphylaxis? (2 marks)\n(c) A patient develops extravasation of IV norepinephrine. What is the management? (3 marks)",
+                    "modelAnswer": "a) Receptor selectivity and uses:\n\nEPINEPHRINE: alpha1, alpha2, beta1, beta2 (non-selective). Uses: anaphylaxis, cardiac arrest, severe asthma, adjunct to local anaesthetics (prolongs duration).\n\nNOREPINEPHRINE: alpha1 >> alpha2 > beta1 (minimal beta2). Uses: septic shock, hypotension (pressor of choice in distributive shock).\n\nPHENYLEPHRINE: selective alpha1. Uses: nasal decongestant, hypotension during anaesthesia, mydriasis (short-acting).\n\nb) Epinephrine in anaphylaxis:\n(1) Alpha1: reverses hypotension, reduces oedema (vasoconstriction).\n(2) Beta1: increases HR and contractility.\n(3) Beta2: bronchodilation, inhibits mast cell degranulation (reduces histamine release), decreases mediator release.\nNo other single drug provides all these effects.\n\nc) Norepinephrine extravasation: causes intense local vasoconstriction → ischaemia, necrosis, sloughing.\nManagement:\n(1) STOP infusion immediately.\n(2) Infiltrate area with PHENTOLAMINE 5-10 mg in 10-15 mL saline (alpha-blocker reverses vasoconstriction).\n(3) Warm compress, elevate limb.\n(4) Monitor for compartment syndrome, consult plastic surgery if severe."
+                },
+                {
+                    "stem": "(a) Distinguish between cardioselective and non-selective beta-blockers. Give two examples of each. (4 marks)\n(b) List three clinical indications for beta-blockers and the mechanisms mediating their benefit. (3 marks)\n(c) Explain the risk of abrupt cessation of beta-blocker therapy. (3 marks)",
+                    "modelAnswer": "a) CARDIOSELECTIVE (beta1 > beta2): atenolol, metoprolol, bisoprolol, esmolol. At low doses, they primarily block cardiac beta1 receptors. May lose selectivity at higher doses.\nNON-SELECTIVE (beta1 = beta2): propranolol, nadolol, timolol, pindolol, labetalol. Block both beta1 and beta2 receptors.\n\nb) Indications:\n(1) HYPERTENSION: decreased cardiac output (beta1), decreased renin release (beta1 from JG cells).\n(2) ANGINA PECTORIS: decreased HR, contractility, BP → reduced myocardial oxygen demand (beta1).\n(3) HEART FAILURE: bisoprolol/metoprolol/carvedilol — upregulate beta-receptors, reduce remodelling, decrease HR, improve LV function. Must be started at very low doses and titrated.\n(4) MIGRAINE PROPHYLAXIS: propranolol — central effect, reduces cortical spreading depression.\n(5) THYROTOXICOSIS: propranolol — reduces symptoms (tachycardia, tremor, anxiety), inhibits T4→T3 conversion.\n\nc) Rebound phenomenon: abrupt cessation, especially after chronic high-dose therapy, causes:\n(1) Rebound tachycardia, hypertension (can exceed pre-treatment levels)\n(2) Increased myocardial oxygen demand → angina, MI, sudden death\n(3) Upregulated beta-receptors are no longer blocked → hypersensitivity to catecholamines\nPrevention: taper over 2-4 weeks, especially in patients with IHD."
+                },
+                {
+                    "stem": "(a) Explain the mechanism of action of depolarising and non-depolarising neuromuscular blockers. (4 marks)\n(b) Why does neostigmine reverse non-depolarising but worsen depolarising blockade? (3 marks)\n(c) List three adverse effects of succinylcholine and their clinical significance. (3 marks)",
+                    "modelAnswer": "a) DEPOLARISING (succinylcholine): resembles ACh, binds to Nm receptors → initial depolarisation (fasciculations) → persistent depolarisation → receptor desensitisation → flaccid paralysis. Not reversed by anticholinesterases.\n\nNON-DEPOLARISING (rocuronium, vecuronium, pancuronium, atracurium): competitive antagonist at Nm receptors → blocks ACh binding → no depolarisation → flaccid paralysis without fasciculations. Reversed by neostigmine.\n\nb) Non-depolarising: neostigmine increases ACh at NMJ → ACh outcompetes the blocker → normal transmission restored.\nDepolarising: neostigmine increases ACh → further depolarises the already depolarised end-plate → no improvement (may worsen). Additionally, neostigmine inhibits plasma cholinesterase (which hydrolyses succinylcholine) → prolonged succinylcholine action.\n\nc) Adverse effects:\n(1) MALIGNANT HYPERTHERMIA: life-threatening hypermetabolic state in susceptible individuals (RYR1 gene mutation). Treat with dantrolene.\n(2) HYPERKALAEMIA: depolarisation causes K+ efflux from muscle cells. Risk in burns, denervation, crush injuries, muscular dystrophy (upregulated extrajunctional receptors).\n(3) MYALGIA: postoperative muscle pain, especially in ambulatory patients.\n(4) BRADYCARDIA: especially in children — pretreatment with atropine.\n(5) INCREASED INTRAOCULAR/INTRAGASTRIC PRESSURE: fasciculations increase pressure."
+                },
+                {
+                    "stem": "(a) Describe the distribution of adrenergic receptors and the effects of their activation. (5 marks)\n(b) A patient with phaeochromocytoma requires surgery. Explain the preoperative pharmacological preparation. (3 marks)\n(c) Why is propranolol never given alone before phaeochromocytoma surgery? (2 marks)",
+                    "modelAnswer": "a) Adrenergic receptor distribution and effects:\n- ALPHA1: vascular smooth muscle (vasoconstriction), prostate (contraction), pupil radial muscle (mydriasis). Effect: ↑ BP, ↑ urinary retention, mydriasis.\n- ALPHA2: presynaptic nerve terminals (inhibits NE release), CNS (reduces sympathetic outflow), platelets (aggregation), pancreatic beta cells (↓ insulin). Effect: ↓ BP (central), vasoconstriction (peripheral).\n- BETA1: heart (↑ HR, ↑ contractility, ↑ conduction), kidney JG cells (↑ renin). Effect: ↑ CO, ↑ BP.\n- BETA2: bronchial smooth muscle (relaxation → bronchodilation), vascular smooth muscle (relaxation → vasodilation), uterus (relaxation), liver (glycogenolysis, gluconeogenesis), skeletal muscle (tremor, K+ uptake).\n\nb) Preoperative preparation for phaeochromocytoma:\n(1) ALPHA-BLOCKADE FIRST: phenoxybenzamine (non-selective, irreversible alpha-blocker) 10-20 mg BID-TID, or prazosin/doxazosin. Start 7-14 days pre-op. Goal: controlled BP, reduced catecholamine symptoms.\n(2) BETA-BLOCKADE AFTER alpha-blockade: propranolol or atenolol if tachycardia occurs. Never start beta-blocker before alpha-blocker (see c).\n(3) INTRAVASCULAR VOLUME REPLETION: high-sodium diet, IV fluids — alpha-blockade causes vasodilation, volume expansion prevents post-op hypotension.\n(4) MONITOR: BP, HR, glucose (catecholamines increase glucose).\n\nc) Propranolol alone (without alpha-blockade) in phaeochromocytoma: blocking beta2-mediated vasodilation → unopposed alpha1-mediated vasoconstriction → hypertensive crisis, pulmonary oedema. Alpha-blockade must be established before beta-blocker is added."
+                }
+            ]
+        },
+        {
+            "letter": "C",
+            "name": "Long Answer Questions",
+            "marks": 30,
+            "questions": [
+                {
+                    "stem": "A 28-year-old woman with known myasthenia gravis (on pyridostigmine 60 mg TDS) presents to the emergency department with progressive weakness over 24 hours. She reports difficulty swallowing saliva, nasal regurgitation of liquids, and shortness of breath at rest. Her voice is nasal and she has bilateral ptosis. She is tachycardic (HR 110), hypertensive (BP 150/90), and sweating profusely. Her pupils are pin-point (2 mm). She has visible muscle fasciculations in her arms and legs. Her respiratory rate is 28/min, SpO2 88% on room air.\n\na) Differentiate between myasthenic crisis and cholinergic crisis in this patient based on the clinical presentation and the expected result of an edrophonium test. (8 marks)\nb) Describe the immediate and definitive pharmacological management of the identified crisis type, including drug names, doses, routes, and monitoring parameters. (10 marks)\nc) What alternative immunosuppressive therapies are available for long-term management of myasthenia gravis? Compare their mechanisms, efficacy, and adverse effect profiles. (8 marks)\nd) Explain the mechanism by which pyridostigmine improves muscle strength in myasthenia gravis and why quaternary ammonium compounds are preferred. (4 marks)",
+                    "modelAnswer": "a) Differentiation:\n\nThis patient presents with features of BOTH myasthenic and cholinergic crises (an 'overlap' presentation), but the autonomic features strongly point to CHOLINERGIC CRISIS:\n\nFeatures supporting CHOLINERGIC CRISIS (overmedication):\n- Miosis (pinpoint pupils) — muscarinic excess\n- Profuse sweating — muscarinic excess\n- Muscle fasciculations — nicotinic Nm excess at NMJ\n- Tachycardia, hypertension — nicotinic Nn excess at autonomic ganglia\n- Tachypnoea, hypoxia — possibly from aspiration or excessive secretions\n\nFeatures that could be myasthenic:\n- Dysphagia, nasal speech, ptosis — also seen in both\n- Respiratory distress — could be either\n\nEDROPHONIUM TEST:\n- Cholinergic crisis: edrophonium WORSENS weakness (additional ACh → further depolarising blockade)\n- Myasthenic crisis: edrophonium IMPROVES weakness\n\nSAFETY: In a patient with respiratory compromise (SpO2 88%), the Tensilon test should be performed with resuscitation equipment available and intubation capability ready. Given the autonomic signs (miosis, fasciculations, sweating), this is likely cholinergic crisis → edrophonium would worsen weakness → obtain IV access, prepare atropine and ventilation.\n\nb) Management of CHOLINERGIC CRISIS:\n\nIMMEDIATE (ABC):\n1. AIRWAY: suction excessive secretions, position head of bed up, consider intubation if GCS declining or SpO2 dropping\n2. BREATHING: oxygen via non-rebreather mask, prepare for mechanical ventilation (ABG, chest X-ray)\n3. CIRCULATION: IV access, cardiac monitoring, IV fluids\n\nDEFINITIVE PHARMACOLOGICAL:\n1. STOP pyridostigmine immediately\n2. ATROPINE: 0.5-1 mg IV every 5-15 min for muscarinic symptoms (secretions, bradycardia, bronchospasm). Target: drying of secretions, HR >60.\n3. PRALIDOXIME: 1-2 g IV over 30 min if organophosphate toxicity suspected (if exposure history uncertain). Not needed if crisis is purely from pyridostigmine.\n4. DIAZEPAM 5-10 mg IV PRN for fasciculations or seizures.\n\nMONITORING:\n- Continuous pulse oximetry, ECG, BP\n- Respiratory rate, tidal volume, ABGs\n- Secretion volume, pupil size, fasciculations\n- Muscle strength (quantitative MG score)\n- Pyridostigmine levels if available\n\nSUPPORTIVE:\n- Mechanical ventilation if SpO2 <90% despite O2, or if fatigue, hypercapnia\n- NG tube feeds if unable to swallow\n- Chest physiotherapy, bronchial hygiene\n\nc) LONG-TERM IMMUNOSUPPRESSIVE THERAPIES FOR MG:\n\n1. CORTICOSTEROIDS (prednisolone):\n- Mechanism: broad immunosuppression, reduces anti-AChR antibody production\n- Efficacy: 70-80% improvement, onset 2-4 weeks\n- Dosing: start low (10-20 mg/day), slowly titrate to 0.5-1 mg/kg/day (may temporarily worsen weakness)\n- Adverse effects: osteoporosis, diabetes, weight gain, hypertension, cataracts, infection risk\n\n2. AZATHIOPRINE:\n- Mechanism: purine analogue, inhibits lymphocyte proliferation\n- Efficacy: onset 6-12 months, steroid-sparing effect\n- Dosing: 2-3 mg/kg/day\n- Monitoring: TPMT genotype/activity before starting, FBC and LFTs monthly\n- Adverse effects: bone marrow suppression, hepatotoxicity, GI intolerance, infection, lymphoma risk (rare)\n\n3. MYCOPHENOLATE MOFETIL:\n- Mechanism: inhibits inosine monophosphate dehydrogenase → selective lymphocyte antiproliferative\n- Efficacy: similar to azathioprine but faster onset (3-6 months), good steroid-sparing\n- Dosing: 1-2 g/day\n- Monitoring: FBC, LFTs\n- Adverse effects: GI (diarrhoea, nausea), bone marrow suppression, infection, teratogenic\n\n4. CYCLOSPORINE:\n- Mechanism: calcineurin inhibitor → inhibits T-cell activation\n- Efficacy: effective but limited by nephrotoxicity\n- Dosing: 3-5 mg/kg/day\n- Monitoring: renal function, BP, ciclosporin levels\n\n5. RITUXIMAB (anti-CD20):\n- Mechanism: B-cell depletion → reduced antibody production\n- Efficacy: reserved for refractory, severe, or MuSK-Ab-positive MG\n- Dosing: 1 g IV × 2 (two weeks apart), repeat q6-12 months\n- Adverse effects: infusion reactions, infection (PML risk — rare), hypogammaglobulinaemia\n\n6. IVIG / PLASMAPHERESIS: acute management (not maintenance)\n- Used for crisis or preoperative optimisation\n- IVIG: 2 g/kg over 5 days\n- Plasmapheresis: 5-7 exchanges over 10-14 days\n\nd) Pyridostigmine mechanism:\n\nMyasthenia gravis: autoimmune disease where antibodies block/destroy nicotinic Nm receptors at the NMJ → reduced ACh binding → muscle weakness.\n\nPyridostigmine: reversible carbamate cholinesterase inhibitor. It binds to and inhibits AChE at the NMJ → ACh is not hydrolysed → more ACh molecules available to bind to the remaining functional Nm receptors → improved neuromuscular transmission → increased muscle strength.\n\nQuaternary ammonium preference:\n(1) Pyridostigmine is a quaternary ammonium compound → does NOT cross BBB → no central side effects (e.g., confusion, hallucinations).\n(2) Poor oral absorption → predictable GI effects (can be managed).\n(3) Longer duration (3-6 hours than neostigmine (1-2 hours) → less frequent dosing. Duration: pyridostigmine ~4h vs neostigmine ~2h.\n(4) No significant metabolism, renally excreted unchanged → predictable PK."
+                },
+                {
+                    "stem": "A 55-year-old man with hypertension (treated with metoprolol 100 mg daily) and benign prostatic hyperplasia (managed with tamsulosin 0.4 mg daily) is diagnosed with atrial fibrillation (ventricular rate 140 bpm). He also has COPD (GOLD stage 2, on tiotropium and salbutamol PRN). He is started on digoxin 0.25 mg daily and rivaroxaban 20 mg daily for stroke prevention. Three days later, he is brought to the ED with bradycardia (HR 38 bpm), hypotension (BP 70/40 mmHg), confusion, and cold, clammy skin. ECG shows sinus bradycardia with first-degree AV block. His serum digoxin level is 3.8 ng/mL (therapeutic 0.5-2.0).\n\na) Analyse all the drug-drug interactions that contributed to this patient's presentation. Focus on autonomic drug interactions. (8 marks)\nb) Explain the pharmacological basis for the bradycardia and AV block in this patient, referencing the specific receptors and drugs involved. (6 marks)\nc) Outline the step-by-step management of this patient's digoxin toxicity, including specific antidote therapy and pacing indications. (8 marks)\nd) If this patient needs rate control for his atrial fibrillation after recovery, which antiarrhythmic options would be safest in the context of his COPD, BPH, and drug interactions? Discuss the autonomic pharmacology of your chosen agents. (8 marks)",
+                    "modelAnswer": "a) Drug-drug interaction analysis:\n\n(1) METOPROLOL + DIGOXIN:\n- Metoprolol is a cardioselective beta1-blocker → reduces HR, AV conduction (negative chronotrope/dromotrope)\n- Digoxin inhibits Na/K-ATPase → increases intracellular Ca → positive inotrope, but also increases vagal tone → reduces AV conduction (negative dromotrope)\n- ADDITIVE EFFECT on AV node → bradycardia, AV block\n- Metoprolol may reduce digoxin clearance (minor effect via reduced renal blood flow)\n\n(2) TAMSULOSIN + METOPROLOL:\n- Tamsulosin (alpha1a-blocker) + metoprolol: both can cause hypotension. Tamsulosin blocks alpha1 receptors → vasodilation → postural hypotension. Metoprolol blocks beta1 → reduces cardiac output, blunts compensatory tachycardia → unmasked hypotension.\n\n(3) TIOTROPIUM + DIGOXIN:\n- Tiotropium (antimuscarinic): blocks M3 receptors in airways. Has minimal cardiac effect but may increase HR (unlikely contributor here).\n- Salbutamol (beta2-agonist): can cause tachycardia, may mask early toxicity. Once stopped (patient at home), the unmasked bradycardia becomes apparent.\n\n(4) RIVAROXABAN: no significant interaction with digoxin or metoprolol.\n\n(5) POLYPHARMACY EFFECT: caution when combining multiple drugs that affect HR, BP, and AV conduction.\n\nb) Pharmacological basis of bradycardia/AV block:\n\nAutonomic regulation of AV conduction:\n- Sympathetic (beta1): increases HR and AV conduction velocity (↑ cAMP, ↑ Ca influx into pacemaker cells).\n- Parasympathetic (M2): decreases HR and AV conduction velocity (↓ cAMP, ↑ K+ efflux, hyperpolarisation).\n\nDrugs involved:\n(1) METOPROLOL: blocks beta1 receptors on SA node, AV node, and ventricular myocardium → removes sympathetic drive → HR drops, AV conduction slows.\n(2) DIGOXIN: at toxic levels (3.8 ng/mL), digoxin causes:\n   - Enhanced vagal tone (central and peripheral) → M2 receptor activation at SA/AV nodes → further bradycardia, AV block\n   - Direct Na/K-ATPase inhibition → intracellular Ca overload → reduced resting membrane potential → delayed afterdepolarisations → risk of arrhythmias\n   - In extreme toxicity: hyperkalaemia (Na/K-ATPase inhibition in skeletal muscle → K+ efflux → extracellular K+ accumulation → further depression of conduction)\n\nCombined: beta1-blockade + M2 overstimulation + direct Na/K-pump inhibition → profound sinus bradycardia + AV block + hypotension.\n\nc) Management of digoxin toxicity:\n\nSTEP 1: ASSESS AND STABILISE\n- ABC: oxygen, IV access, monitoring (ECG, BP, SpO2)\n- STOP digoxin, metoprolol, tamsulosin\n- Check: digoxin level, electrolytes (K+, Mg2+, Ca2+), renal function, ECG\n\nSTEP 2: ELECTROLYTE CORRECTION\n- Correct hypokalaemia if present (K+ target 4.5-5.0 mmol/L) — K+ competes with digoxin for Na/K-ATPase\n- Correct hypomagnesaemia (Mg2+ target >2.0 mg/dL) — Mg2+ stabilises myocardium\n- Maintain normocalcaemia (AVOID IV calcium if possible — can potentiate digoxin toxicity)\n\nSTEP 3: SPECIFIC ANTIDOTE — DIGOXIN-SPECIFIC FAB ANTIBODY FRAGMENTS (Digibind/DigiFab)\n\nIndications in this patient:\n- Life-threatening arrhythmia (symptomatic bradycardia, AV block)\n- Severe toxicity (digoxin level >2.0 ng/mL + symptoms)\n- Haemodynamic instability (BP 70/40, confusion)\n\nDosing:\n- Acute toxicity: number of vials = (digoxin level ng/mL × weight kg) / 100\n  = (3.8 × 75) / 100 = 2.85 → 3 vials (or 120 mg Fab)\n- Or: 3-4 vials empirically for severe toxicity\n\nAdministration: IV over 30 minutes. Repeat if no response after 1h.\n\nMonitoring after Fab: free digoxin level, K+, ECG. Free digoxin becomes undetectable, but total digoxin level rises (bound Fab fragments detected by some assays — do not misinterpret).\n\nSTEP 4: BRADYCARDIA MANAGEMENT\n- ATROPINE 0.5-1 mg IV: may be ineffective if AV block is severe\n- TEMPORARY PACING: transvenous or transcutaneous pacing for symptomatic bradycardia unresponsive to atropine and Fab therapy\n- AVOID: isoprenaline (risk of ventricular arrhythmias in toxic myocardium)\n\nSTEP 5: CONSIDER HAEMODIALYSIS (only if Fab unavailable and severe renal failure — digoxin is not significantly dialysable due to large Vd)\n\nSTEP 6: MONITOR\n- Continuous ECG monitoring for at least 24h after resolution\n- Check K+, Mg2+, renal function q6-12h\n- Monitor for rebound hypokalaemia after Fab treatment\n\nd) Antiarrhythmic options post-recovery:\n\nCONTRADICTED/CAUTION:\n- VERAPAMIL/DILTIAZEM: negative inotrope + chronotrope, AV blocker — additive with metoprolol. Also CYP3A4/P-gp interactions with digoxin.\n- AMIODARONE: increases digoxin levels (P-gp inhibition) and beta-blocker levels (CYP2D6 inhibition). Also causes pulmonary toxicity (COPD), thyroid dysfunction.\n- FLECAINIDE/PROPAFENONE: class Ic — risk in structural heart disease, COPD (proarrhythmia).\n\nBEST OPTIONS:\n\nOption 1: DIGOXIN (LOW DOSE) + adjusted METOPROLOL\n- If digoxin is restarted: reduce dose (0.0625-0.125 mg daily) based on renal function.\n- Monitor digoxin levels regularly (target 0.5-1.0 ng/mL for rate control).\n- Reduce metoprolol dose (e.g., 50 mg daily).\n\nOption 2: BISOPROLOL (cardio-selective) + LOWER DOSE\n- Bisoprolol is beta1-selective, safer in COPD than non-selective.\n- Start 2.5 mg daily, titrate to HR 60-80.\n\nOption 3: DILTIAZEM (if beta-blocker cannot be used)\n- Non-dihydropyridine CCB. Negative chronotrope on AV node.\n- Caution: additive negative inotropy, avoid if LV dysfunction.\n- Dose: 120-240 mg daily (extended release).\n- Monitor for oedema, constipation.\n\nOption 4: CATHETER ABLATION (if drugs fail)\n- AV node ablation + pacemaker may be needed for refractory symptomatic AF despite rate control therapy.\n\nAUTONOMIC PHARMACOLOGY of chosen agents:\n- Digoxin: increases vagal (M2) tone → slows AV conduction. Low dose avoids toxicity.\n- Beta-blockers: compete with catecholamines at beta1 → reduced cAMP → slowed Phase 4 depolarisation in SA/AV nodes.\n- No effect on BPH (tamsulosin alternative if needed — continue or consider doxazosin).\n- COPD safety: beta1-selectivity reduces bronchospasm risk.\n\nBEST REGIMEN: low-dose bisoprolol (2.5-5 mg daily) + low-dose digoxin (0.0625 mg daily) + careful monitoring of HR, BP, digoxin levels, and pulmonary function."
+                }
+            ]
+        }
+    ]
+},
+"3": {
+    "title": "Autonomic Nervous System",
+    "variant": 3,
+    "sections": [
+        {
+            "letter": "A",
+            "name": "Multiple Choice Questions",
+            "marks": 30,
+            "questions": [
+                {
+                    "stem": "Bethanechol is contraindicated in all of the following EXCEPT:",
+                    "options": [
+                        "Urinary retention after spinal cord injury",
+                        "Asthma",
+                        "Hyperthyroidism",
+                        "Peptic ulcer disease"
+                    ],
+                    "answer": "Urinary retention after spinal cord injury",
+                    "explanation": "Bethanechol stimulates bladder contraction and is indicated for postoperative or neurogenic urinary retention. It is contraindicated in asthma, hyperthyroidism, and PUD."
+                },
+                {
+                    "stem": "Pilocarpine is used in the management of xerostomia because it:",
+                    "options": [
+                        "Stimulates muscarinic receptors on salivary glands, increasing saliva production",
+                        "Blocks muscarinic receptors on salivary glands",
+                        "Stimulates alpha1 receptors on salivary ducts",
+                        "Inhibits acetylcholinesterase in salivary glands"
+                    ],
+                    "answer": "Stimulates muscarinic receptors on salivary glands, increasing saliva production",
+                    "explanation": "Pilocarpine is a muscarinic agonist that stimulates M3 receptors on salivary glands, used for radiation-induced xerostomia and Sjögren syndrome."
+                },
+                {
+                    "stem": "Pyridostigmine is preferred over neostigmine for maintenance therapy in myasthenia gravis because:",
+                    "options": [
+                        "It has a longer duration of action (3-6 hours vs 1-2 hours)",
+                        "It has higher oral bioavailability",
+                        "It crosses the BBB more effectively",
+                        "It causes fewer muscarinic side effects"
+                    ],
+                    "answer": "It has a longer duration of action (3-6 hours vs 1-2 hours)",
+                    "explanation": "Pyridostigmine (t½ ~4h) requires less frequent dosing than neostigmine (t½ ~1h), making it more convenient for chronic MG management."
+                },
+                {
+                    "stem": "Atropine is classified as a:",
+                    "options": [
+                        "Competitive muscarinic receptor antagonist",
+                        "Irreversible muscarinic receptor antagonist",
+                        "Competitive nicotinic receptor antagonist",
+                        "Cholinesterase reactivator"
+                    ],
+                    "answer": "Competitive muscarinic receptor antagonist",
+                    "explanation": "Atropine competitively blocks ACh at all muscarinic (M1, M2, M3) receptors. Its effects are reversible by increasing local ACh concentration."
+                },
+                {
+                    "stem": "Organophosphate poisoning causes excessive salivation, lacrimation, and bronchospasm. These effects are mediated by:",
+                    "options": [
+                        "Muscarinic receptor overstimulation due to ACh accumulation",
+                        "Nicotinic receptor overstimulation at the NMJ",
+                        "Central nicotinic receptor activation",
+                        "Direct alpha1 receptor stimulation"
+                    ],
+                    "answer": "Muscarinic receptor overstimulation due to ACh accumulation",
+                    "explanation": "Organophosphates inhibit AChE, leading to ACh accumulation at muscarinic synapses, causing the SLUDGE syndrome (salivation, lacrimation, urination, defecation, GI upset, emesis) and bronchospasm."
+                },
+                {
+                    "stem": "Norepinephrine is classified as a:",
+                    "options": [
+                        "Direct-acting sympathomimetic amine",
+                        "Indirect-acting sympathomimetic amine",
+                        "Mixed-acting sympathomimetic amine",
+                        "Centrally acting alpha2 agonist"
+                    ],
+                    "answer": "Direct-acting sympathomimetic amine",
+                    "explanation": "Norepinephrine directly activates alpha and beta receptors without requiring release of endogenous catecholamines."
+                },
+                {
+                    "stem": "Metoprolol at low doses is considered cardioselective because it:",
+                    "options": [
+                        "Primarily blocks beta1 receptors with minimal beta2 blockade",
+                        "Blocks both beta1 and beta2 receptors equally",
+                        "Does not cross the blood-brain barrier",
+                        "Has additional alpha-blocking properties"
+                    ],
+                    "answer": "Primarily blocks beta1 receptors with minimal beta2 blockade",
+                    "explanation": "At low to moderate doses, metoprolol predominantly blocks beta1 receptors. At higher doses, this selectivity may be lost."
+                },
+                {
+                    "stem": "Propranolol effectively reduces symptoms in thyrotoxicosis by all of the following mechanisms EXCEPT:",
+                    "options": [
+                        "Inhibiting thyroid hormone synthesis in the thyroid gland",
+                        "Blocking beta1-mediated tachycardia",
+                        "Blocking beta2-mediated tremor",
+                        "Inhibiting peripheral conversion of T4 to T3"
+                    ],
+                    "answer": "Inhibiting thyroid hormone synthesis in the thyroid gland",
+                    "explanation": "Propranolol does NOT affect thyroid hormone synthesis (methimazole, propylthiouracil do). It provides symptomatic relief by blocking beta effects and inhibiting T4→T3 conversion."
+                },
+                {
+                    "stem": "Prazosin causes reflex tachycardia because:",
+                    "options": [
+                        "Alpha1 blockade causes vasodilation, triggering baroreceptor-mediated sympathetic activation",
+                        "It directly stimulates beta1 receptors",
+                        "It blocks presynaptic alpha2 receptors, increasing NE release",
+                        "It inhibits the baroreceptor reflex"
+                    ],
+                    "answer": "Alpha1 blockade causes vasodilation, triggering baroreceptor-mediated sympathetic activation",
+                    "explanation": "Alpha1 blockade → vasodilation → BP drop → baroreceptor reflex → increased sympathetic outflow → tachycardia. This limits prazosin use as monotherapy."
+                },
+                {
+                    "stem": "Phentolamine is a non-selective alpha-blocker that also blocks presynaptic alpha2 receptors. Blocking alpha2 receptors leads to:",
+                    "options": [
+                        "Increased norepinephrine release from nerve terminals, causing tachycardia",
+                        "Decreased norepinephrine release, reducing blood pressure further",
+                        "Inhibition of central sympathetic outflow",
+                        "Enhanced vagal tone"
+                    ],
+                    "answer": "Increased norepinephrine release from nerve terminals, causing tachycardia",
+                    "explanation": "Presynaptic alpha2 receptors normally inhibit NE release. Phentolamine blocks this feedback loop → increased NE release → tachycardia and increased contractility."
+                },
+                {
+                    "stem": "Clonidine-induced xerostomia (dry mouth) is caused by:",
+                    "options": [
+                        "Central alpha2 agonism reducing salivary parasympathetic outflow",
+                        "Direct muscarinic receptor blockade in salivary glands",
+                        "Alpha1-mediated vasoconstriction of salivary gland blood vessels",
+                        "Beta-blockade reducing salivary secretion"
+                    ],
+                    "answer": "Central alpha2 agonism reducing salivary parasympathetic outflow",
+                    "explanation": "Clonidine's central alpha2 agonist effect reduces overall autonomic outflow, including parasympathetic input to salivary glands, causing dry mouth."
+                },
+                {
+                    "stem": "Dantrolene is effective in malignant hyperthermia because it:",
+                    "options": [
+                        "Directly inhibits calcium release from the sarcoplasmic reticulum",
+                        "Blocks voltage-gated sodium channels in muscle",
+                        "Inhibits acetylcholinesterase at the NMJ",
+                        "Blocks beta-adrenergic receptors"
+                    ],
+                    "answer": "Directly inhibits calcium release from the sarcoplasmic reticulum",
+                    "explanation": "Dantrolene binds to the ryanodine receptor (RyR1), preventing calcium efflux from the SR, thereby stopping the hypermetabolic cascade."
+                },
+                {
+                    "stem": "Which of the following drugs blocks both alpha and beta adrenergic receptors?",
+                    "options": [
+                        "Labetalol",
+                        "Metoprolol",
+                        "Phentolamine",
+                        "Carvedilol"
+                    ],
+                    "answer": "Labetalol",
+                    "explanation": "Labetalol is a combined alpha1 and non-selective beta-blocker (beta:alpha blockade ratio ~3:1). Carvedilol is another combined alpha-beta blocker."
+                },
+                {
+                    "stem": "Succinylcholine produces initial muscle fasciculations because it:",
+                    "options": [
+                        "Mimics ACh, causing transient depolarisation of the motor end plate",
+                        "Blocks ACh reuptake at the presynaptic terminal",
+                        "Stimulates gamma motor neurons in the spinal cord",
+                        "Inhibits acetylcholinesterase at the NMJ"
+                    ],
+                    "answer": "Mimics ACh, causing transient depolarisation of the motor end plate",
+                    "explanation": "Succinylcholine binds to Nm receptors and depolarises the end plate, causing brief repetitive firing (fasciculations) before desensitisation and paralysis."
+                },
+                {
+                    "stem": "The effects of atropine on the heart include:",
+                    "options": [
+                        "Initial bradycardia followed by tachycardia (especially at higher doses)",
+                        "Pure tachycardia with no initial bradycardia",
+                        "Pure bradycardia at all doses",
+                        "No effect on heart rate"
+                    ],
+                    "answer": "Initial bradycardia followed by tachycardia (especially at higher doses)",
+                    "explanation": "Low-dose atropine initially blocks M1 receptors on presynaptic vagal neurons → increased ACh release → transient bradycardia. Higher doses block postsynaptic M2 receptors → tachycardia."
+                },
+                {
+                    "stem": "Glycopyrrolate is preferred over atropine in anaesthesia premedication because:",
+                    "options": [
+                        "It does not cross the BBB, avoiding central anticholinergic effects",
+                        "It has stronger antisialogogue effect",
+                        "It causes less tachycardia",
+                        "It has a shorter duration of action"
+                    ],
+                    "answer": "It does not cross the BBB, avoiding central anticholinergic effects",
+                    "explanation": "Glycopyrrolate (quaternary ammonium) is excluded from the CNS, preventing sedation, confusion, and amnesia — important in ambulatory anaesthesia."
+                },
+                {
+                    "stem": "Beta2-adrenoceptor agonists cause all of the following EXCEPT:",
+                    "options": [
+                        "Peripheral vasoconstriction",
+                        "Bronchodilation",
+                        "Uterine relaxation",
+                        "Increased glycogenolysis"
+                    ],
+                    "answer": "Peripheral vasoconstriction",
+                    "explanation": "Beta2 activation causes vasodilation (relaxation of vascular smooth muscle), not constriction. This can cause reflex tachycardia with beta2-agonists like salbutamol."
+                },
+                {
+                    "stem": "The mechanism of action of clonidine in hypertension differs from that of prazosin in that clonidine:",
+                    "options": [
+                        "Reduces central sympathetic outflow via alpha2 agonism",
+                        "Blocks peripheral alpha1 receptors on vascular smooth muscle",
+                        "Blocks both alpha1 and alpha2 receptors peripherally",
+                        "Inhibits catecholamine synthesis in the adrenal medulla"
+                    ],
+                    "answer": "Reduces central sympathetic outflow via alpha2 agonism",
+                    "explanation": "Clonidine stimulates alpha2 receptors in the medullary vasomotor centre, reducing noradrenaline release and sympathetic tone (different mechanism from peripheral alpha1-blockade)."
+                },
+                {
+                    "stem": "A patient receiving succinylcholine is at risk of malignant hyperthermia. The triggering mechanism involves:",
+                    "options": [
+                        "Uncontrolled calcium release from the sarcoplasmic reticulum",
+                        "Excessive acetylcholine release at the NMJ",
+                        "Overstimulation of beta-adrenergic receptors",
+                        "Inhibition of calcium reuptake into the sarcoplasmic reticulum"
+                    ],
+                    "answer": "Uncontrolled calcium release from the sarcoplasmic reticulum",
+                    "explanation": "MH is caused by a mutation in the ryanodine receptor (RyR1) → volatile anaesthetics/succinylcholine trigger uncontrolled Ca release from SR → sustained muscle contraction, hyperthermia, rhabdomyolysis."
+                },
+                {
+                    "stem": "Alpha-methyldopa is a prodrug that is converted to:",
+                    "options": [
+                        "Methyl-noradrenaline, which activates central alpha2 receptors",
+                        "Methyl-dopamine, which activates peripheral dopamine receptors",
+                        "Noradrenaline, which activates peripheral alpha1 receptors",
+                        "Adrenaline, which activates beta receptors"
+                    ],
+                    "answer": "Methyl-noradrenaline, which activates central alpha2 receptors",
+                    "explanation": "Alpha-methyldopa is taken up by central neurons, converted to alpha-methyl-dopamine then alpha-methyl-noradrenaline, which stimulates central alpha2 receptors to reduce sympathetic outflow."
+                },
+                {
+                    "stem": "Which of the following is a non-depolarising neuromuscular blocker?",
+                    "options": [
+                        "Rocuronium",
+                        "Succinylcholine",
+                        "Decamethonium",
+                        "Mivacurium"
+                    ],
+                    "answer": "Rocuronium",
+                    "explanation": "Rocuronium is a non-depolarising NMB (competitive nicotinic antagonist). Succinylcholine, decamethonium, and mivacurium are depolarising agents."
+                },
+                {
+                    "stem": "The cardiac effects of beta1-receptor activation include all of the following EXCEPT:",
+                    "options": [
+                        "Coronary artery vasodilation",
+                        "Increased heart rate (positive chronotropy)",
+                        "Increased contractility (positive inotropy)",
+                        "Increased AV conduction velocity (positive dromotropy)"
+                    ],
+                    "answer": "Coronary artery vasodilation",
+                    "explanation": "Coronary vasodilation is mediated by beta2 receptors and local metabolic factors (adenosine, NO), not primarily by beta1 receptors."
+                },
+                {
+                    "stem": "An asthmatic patient develops bradycardia and hypotension during surgery. Which agent would increase heart rate without causing bronchospasm?",
+                    "options": [
+                        "Glycopyrrolate",
+                        "Atropine",
+                        "Propranolol",
+                        "Phenylephrine"
+                    ],
+                    "answer": "Glycopyrrolate",
+                    "explanation": "Glycopyrrolate (antimuscarinic) increases HR by blocking vagal tone (M2 receptors) without affecting beta2 receptors, making it safe in asthma. Atropine could also be used."
+                },
+                {
+                    "stem": "Which of the following is a selective beta1-agonist used as a positive inotrope in acute heart failure?",
+                    "options": [
+                        "Dobutamine",
+                        "Isoprenaline",
+                        "Salbutamol",
+                        "Phenylephrine"
+                    ],
+                    "answer": "Dobutamine",
+                    "explanation": "Dobutamine is primarily a beta1-agonist that increases cardiac contractility with mild chronotropic effect, used in acute decompensated heart failure and cardiogenic shock."
+                },
+                {
+                    "stem": "Clonidine withdrawal syndrome is characterised by:",
+                    "options": [
+                        "Rebound hypertension, tachycardia, headache, and sweating",
+                        "Hypotension, bradycardia, and syncope",
+                        "Dry mouth, constipation, and blurred vision",
+                        "Bronchospasm and urticaria"
+                    ],
+                    "answer": "Rebound hypertension, tachycardia, headache, and sweating",
+                    "explanation": "Abrupt clonidine withdrawal causes catecholamine surge due to upregulation of central alpha2 receptors, leading to rebound hypertension exceeding pre-treatment levels."
+                },
+                {
+                    "stem": "The anticholinergic effects of first-generation antihistamines (e.g., diphenhydramine) are due to:",
+                    "options": [
+                        "Blockade of muscarinic receptors in addition to H1 receptor antagonism",
+                        "Blockade of H2 receptors in the stomach",
+                        "Inhibition of acetylcholinesterase",
+                        "Stimulation of alpha1 receptors"
+                    ],
+                    "answer": "Blockade of muscarinic receptors in addition to H1 receptor antagonism",
+                    "explanation": "First-generation antihistamines have significant affinities for muscarinic receptors, causing dry mouth, urinary retention, blurred vision, and constipation."
+                },
+                {
+                    "stem": "Which of the following statements about plasma cholinesterase is correct?",
+                    "options": [
+                        "It hydrolyses succinylcholine and is deficient in genetic variants",
+                        "It is found primarily at the neuromuscular junction",
+                        "It reactivates organophosphate-inhibited AChE",
+                        "It is activated by neostigmine"
+                    ],
+                    "answer": "It hydrolyses succinylcholine and is deficient in genetic variants",
+                    "explanation": "Plasma cholinesterase (pseudocholinesterase) hydrolyses succinylcholine in plasma. Genetic variants (atypical enzyme) prolong succinylcholine action from 5 minutes to hours."
+                },
+                {
+                    "stem": "The mechanism of pralidoxime is:",
+                    "options": [
+                        "Nucleophilic attack on the phosphorus atom of the organophosphate bound to AChE",
+                        "Competitive displacement of organophosphate from muscarinic receptors",
+                        "Irreversible blockade of muscarinic receptors",
+                        "Inhibition of further organophosphate absorption"
+                    ],
+                    "answer": "Nucleophilic attack on the phosphorus atom of the organophosphate bound to AChE",
+                    "explanation": "Pralidoxime's oxime group forms a nucleophilic attack on the phosphorus, cleaving the OP-AChE bond and restoring enzyme activity."
+                },
+                {
+                    "stem": "Which of the following drugs is a prodrug that is converted to an active alpha2 agonist?",
+                    "options": [
+                        "Alpha-methyldopa",
+                        "Clonidine",
+                        "Tizanidine",
+                        "Dexmedetomidine"
+                    ],
+                    "answer": "Alpha-methyldopa",
+                    "explanation": "Alpha-methyldopa requires conversion to methyl-noradrenaline (active metabolite) by dopa decarboxylase in central adrenergic neurons."
+                },
+                {
+                    "stem": "The initial management of suspected cholinergic crisis in a myasthenia gravis patient includes:",
+                    "options": [
+                        "Stopping all cholinesterase inhibitors and administering atropine",
+                        "Increasing the dose of pyridostigmine",
+                        "Administering edrophonium to confirm the diagnosis",
+                        "Starting IVIG immediately"
+                    ],
+                    "answer": "Stopping all cholinesterase inhibitors and administering atropine",
+                    "explanation": "Cholinergic crisis is caused by excess ChE inhibitor → stop the drug, give atropine for muscarinic symptoms, provide ventilatory support if needed."
+                },
+                {
+                    "stem": "Beta-blocker use in heart failure is based on which mechanism?",
+                    "options": [
+                        "Reducing the harmful effects of chronic sympathetic activation on the myocardium",
+                        "Increasing beta-receptor density in the failing heart",
+                        "Direct positive inotropic effect",
+                        "Increasing renal blood flow"
+                    ],
+                    "answer": "Reducing the harmful effects of chronic sympathetic activation on the myocardium",
+                    "explanation": "Chronic sympathetic activation in HF causes beta-receptor downregulation, myocyte hypertrophy, fibrosis, and arrhythmias. Beta-blockers (bisoprolol, carvedilol, metoprolol) reverse these harmful effects."
+                }
+            ]
+        },
+        {
+            "letter": "B",
+            "name": "Short Answer Questions",
+            "marks": 40,
+            "questions": [
+                {
+                    "stem": "(a) Explain the pharmacological basis for using atropine in combination with pralidoxime in organophosphate poisoning. (4 marks)\n(b) Why is atropine given in large repeated doses in OP poisoning while pralidoxime is given only as a limited course? (3 marks)\n(c) What is the concept of 'atropinisation' and how is it monitored? (3 marks)",
+                    "modelAnswer": "a) Atropine + pralidoxime have complementary roles:\nATROPINE: competitive muscarinic antagonist → blocks effects of excessive ACh at muscarinic synapses → reverses SLUDGE syndrome (secretions, bronchospasm, bradycardia, miosis). Does NOT affect nicotinic symptoms (muscle weakness, fasciculations) or reactivate AChE.\n\nPRALIDOXIME: reactivates AChE by removing the phosphate group from the enzyme's active site → restores ACh hydrolysis → reduces ACh levels at all synapses (muscarinic AND nicotinic). Most effective at nicotinic synapses (improves muscle strength).\n\nTogether: atropine provides immediate symptomatic relief, pralidoxime addresses the underlying AChE inhibition.\n\nb) Atropine in massive doses: OP poisoning causes massive ACh excess requiring very high atropine doses (sometimes hundreds of mg). Atropine is competitive — must outcompete ACh. Given every 5-15 minutes until atropinisation achieved, then tapered.\n\nPralidoxime limited course: (1) Effective only before aging occurs (typically 24-48h); (2) After aging, AChE cannot be reactivated; (3) Once new AChE is synthesised (weeks), atropine is tapered; (4) Pralidoxime has a short half-life (~2h) and requires frequent dosing for only 1-2 days.\n\nc) Atropinisation = achieving adequate muscarinic blockade. Clinical endpoints:\n- Drying of pulmonary secretions (most important — reduced wheezing, crackles)\n- Heart rate >80 bpm\n- Pupil dilation (mydriasis)\n- Dry skin (reduced sweating)\n- Reduced GI motility\nMonitoring: assess every 5-15 min during acute phase. Overshoot atropine → hyperthermia, delirium, ileus."
+                },
+                {
+                    "stem": "(a) Compare the receptor selectivity and haemodynamic effects of epinephrine and dobutamine. (4 marks)\n(b) A patient in cardiogenic shock is started on dobutamine. What monitoring parameters are essential? (3 marks)\n(c) Explain why isoprenaline is rarely used in modern clinical practice despite being a potent beta-agonist. (3 marks)",
+                    "modelAnswer": "a) EPINEPHRINE: non-selective (alpha1, alpha2, beta1, beta2). Low dose: beta2 effects dominate (vasodilation, increased HR). High dose: alpha1 effects dominate (vasoconstriction, increased BP). Used in cardiac arrest, anaphylaxis.\n\nDOBUTAMINE: primarily beta1-agonist (selective). Increases contractility (inotropy) with less increase in HR (chronotropy) than epinephrine. Causes mild beta2 vasodilation → reduced afterload. Used in acute heart failure, cardiogenic shock.\n\nb) Monitoring for dobutamine:\n(1) ECG: continuous monitoring for tachycardia, arrhythmias (increased automaticity)\n(2) BP: invasive arterial BP monitoring preferred\n(3) Cardiac output/index (if available via PAC or non-invasive monitoring)\n(4) Oxygen saturation, urine output (markers of tissue perfusion)\n(5) Serum lactate, electrolytes, K+ (beta-agonists can cause hypokalaemia)\n(6) Signs of ischaemia: chest pain, troponin, ECG changes (dobutamine increases myocardial O2 demand)\n\nc) Isoprenaline (non-selective beta-agonist, no alpha effect):\n- Causes tachycardia (beta1), vasodilation (beta2) → increased HR, decreased BP → coronary hypoperfusion\n- High arrhythmogenic potential (increases automaticity → ventricular arrhythmias)\n- Rarely used today for: (1) Temporary pacing in heart transplant (denervated heart); (2) Provocative testing for Brugada syndrome; (3) Beta-blocker overdose (but glucagon preferred)\n- Modern alternatives: dobutamine (cardiogenic shock), epinephrine (cardiac arrest), atropine/pacing (bradycardia)"
+                },
+                {
+                    "stem": "(a) Describe the pharmacological differences between succinylcholine and rocuronium. (5 marks)\n(b) How is rocuronium-induced neuromuscular blockade reversed? (2 marks)\n(c) Sugammadex is a newer reversal agent. Explain its mechanism and advantage over neostigmine. (3 marks)",
+                    "modelAnswer": "a) Differences:\n- MECHANISM: succinylcholine = depolarising (agonist); rocuronium = non-depolarising (competitive antagonist)\n- ONSET: succinylcholine 30-60 sec; rocuronium 60-90 sec\n- DURATION: succinylcholine ~5 min; rocuronium ~30-60 min\n- METABOLISM: succinylcholine by plasma cholinesterase; rocuronium by hepatic (biliary) excretion\n- REVERSAL: succinylcholine cannot be reversed (spontaneous recovery); rocuronium reversed by neostigmine or sugammadex\n- FASCICULATIONS: succinylcholine causes initial fasciculations; rocuronium does not\n\nb) Reversal of rocuronium:\n(1) NEOSTIGMINE 0.05-0.07 mg/kg IV + glycopyrrolate 0.01 mg/kg IV (to block muscarinic side effects). Mechanism: inhibits AChE → increased ACh at NMJ → competitive displacement of rocuronium.\n(2) SUGAMMADEX 2-4 mg/kg IV (depending on depth of block). Mechanism: direct encapsulation and inactivation of rocuronium.\n\nc) Sugammadex: modified gamma-cyclodextrin that encapsulates rocuronium molecules (like a cage), forming a 1:1 complex that is excreted unchanged in urine.\n\nAdvantages over neostigmine:\n(1) Faster onset (1-3 min vs 5-15 min)\n(2) No need for muscarinic antagonist (no bradycardia, no excessive secretions)\n(3) Reverses deep block that neostigmine cannot reverse (post-tetanic count 1-2)\n(4) More predictable and complete reversal\n(5) No risk of cholinergic crisis (muscarinic overload)"
+                },
+                {
+                    "stem": "(a) Explain why clonidine is used for the management of hypertension, opioid withdrawal, and ADHD — three different conditions. (5 marks)\n(b) What is the risk of abrupt clonidine cessation and its management? (3 marks)\n(c) Compare clonidine with alpha-methyldopa in terms of mechanism, uses, and adverse effects. (2 marks)",
+                    "modelAnswer": "a) Clonidine (central alpha2 agonist) reduces sympathetic outflow from the CNS → reduced noradrenaline release → diverse clinical effects:\n\n(1) HYPERTENSION: decreased sympathetic tone → vasodilation, decreased HR, decreased cardiac output → BP reduction.\n(2) OPIOID WITHDRAWAL: opioid withdrawal is characterised by sympathetic overactivity (sweating, tachycardia, hypertension, diarrhoea, piloerection). Clonidine attenuates these autonomic symptoms, making detoxification more tolerable.\n(3) ADHD: modulates prefrontal cortical function by optimising noradrenaline levels. Improves attention, reduces impulsivity and hyperactivity. Extended-release formulation (Kapvay) is FDA-approved for ADHD (6-17 years).\n\nb) Abrupt withdrawal: upregulation of central alpha2 receptors during therapy → catecholamine surge on discontinuation → rebound hypertension (may exceed pre-treatment levels), tachycardia, headache, sweating, anxiety.\n\nManagement: (1) Taper clonidine gradually over 2-4 weeks; (2) If rebound occurs: restart clonidine or administer alpha-blocker/labetalol; (3) Beta-blocker monotherapy is contraindicated (unopposed alpha1 vasoconstriction).\n\nc) Both clonidine and alpha-methyldopa are central alpha2 agonists but:\n- Clonidine: direct agonist, shorter t½ (12h), causes more rebound hypertension, used in HTN, opioid withdrawal, ADHD\n- Alpha-methyldopa: prodrug → methyl-noradrenaline (active), longer t½, preferred in pregnancy (extensive safety data), less rebound\n- Both: dry mouth, sedation, sexual dysfunction"
+                },
+                {
+                    "stem": "(a) Describe the mechanism of action of beta-blockers in the treatment of angina pectoris. (4 marks)\n(b) Why does propranolol worsen angina in a patient who is also taking a calcium channel blocker or who has Prinzmetal (variant) angina? (3 marks)\n(c) Compare the use of bisoprolol in heart failure versus its use in hypertension. (3 marks)",
+                    "modelAnswer": "a) Beta-blockers in angina:\n(1) Negative chronotropy: ↓ HR → longer diastolic filling time → increased coronary perfusion time\n(2) Negative inotropy: ↓ contractility → ↓ myocardial O2 demand\n(3) ↓ BP: ↓ afterload → ↓ wall tension → ↓ myocardial O2 demand\n(4) Overall: improved balance between myocardial O2 supply and demand → reduced angina frequency and severity\n\nb) Propranolol worsening angina:\n- Beta2 blockade in coronary vessels → unopposed alpha1-mediated coronary vasoconstriction\n- In Prinzmetal (variant) angina: coronary vasospasm is the primary mechanism. Beta-blockers (especially non-selective) can worsen vasospasm by blocking beta2-mediated vasodilation.\n- In patients on CCBs: if the CCB is a vasodilator (nifedipine), adding propranolol may cause excessive hypotension → reflex mechanisms.\n- Treatment: diltiazem/verapamil + beta-blocker may have additive negative inotropy → caution.\n\nc) BISOPROLOL in HEART FAILURE:\n- Start low (1.25 mg daily), titrate slowly upward every 2-4 weeks to target (10 mg daily)\n- Benefits: improved LVEF, reduced hospitalisations, reduced mortality (reverses sympathetic-mediated remodelling)\n- Initial worsening possible (negative inotropy at start) → require close monitoring\n- Monitoring: HR, BP, signs of fluid retention, LV function\n\nBISOPROLOL in HYPERTENSION:\n- Start at 5 mg daily, titrate to 10-20 mg daily\n- Beta1-selectivity makes it safe in mild-moderate COPD/asthma\n- Rapid effect on BP within 1-2 weeks\n- Less stringent monitoring needed"
+                },
+                {
+                    "stem": "(a) Compare the pharmacological properties of tamsulosin and prazosin as alpha1-blockers. (4 marks)\n(b) A 65-year-old man with BPH and hypertension is started on tamsulosin but develops hypotension. What alternative alpha-blocker might be considered and why? (3 marks)\n(c) Explain the role of alpha-blockers in the management of phaeochromocytoma. (3 marks)",
+                    "modelAnswer": "a) TAMSULOSIN vs PRAZOSIN:\n- RECEPTOR SELECTIVITY: tamsulosin = selective alpha1a (prostate); prazosin = non-selective alpha1 (alpha1a, alpha1b, alpha1d)\n- VASCULAR EFFECT: tamsulosin minimal effect on BP at standard dose (0.4 mg); prazosin significant BP reduction\n- FIRST-DOSE PHENOMENON: tamsulosin minimal; prazosin significant (postural hypotension, syncope)\n- INDICATION: tamsulosin primarily for BPH; prazosin for both HTN and BPH\n- ADVERSE EFFECTS: tamsulosin → abnormal ejaculation (retrograde); prazosin → dizziness, headache, nasal congestion\n\nb) Alternatives:\n(1) DOXAZOSIN: longer-acting alpha1-blocker (once daily), less first-dose effect than prazosin, treats both HTN and BPH. Start 1 mg daily, titrate slowly.\n(2) ALFUZOSIN: selective alpha1a, minimal BP effect, BPH only.\n(c) Or consider tamsulosin dose reduction (0.4 → 0.2 mg daily) + add a different antihypertensive (ACE-I/ARB).\n\nc) Alpha-blockers in phaeochromocytoma:\n(1) PHENOXYBENZAMINE: non-selective, irreversible alpha-blocker (alpha1 and alpha2). Blocks effects of excessive catecholamines. Given 7-14 days pre-op. Start 10 mg BID, increase to 20-40 mg BID.\n(2) DOXAZOSIN/PRAZOSIN: selective alpha1, reversible. Alternative to phenoxybenzamine with less reflex tachycardia.\n(3) Preoperative alpha-blockade: prevents intraoperative hypertensive crisis during tumour manipulation.\n(4) Beta-blocker added AFTER alpha-blockade if tachycardia develops."
+                },
+                {
+                    "stem": "(a) Explain the mechanism of action of tolterodine in overactive bladder. How does it achieve bladder selectivity? (4 marks)\n(b) Compare the anticholinergic side effect profiles of darifenacin, oxybutynin, and tolterodine. (3 marks)\n(c) What non-pharmacological treatments should be tried before drug therapy for overactive bladder? (3 marks)",
+                    "modelAnswer": "a) Tolterodine mechanism:\n- Competitive muscarinic receptor antagonist (M2, M3)\n- Reduces detrusor muscle overactivity during bladder filling phase\n- Bladder selectivity: tolterodine has greater selectivity for bladder over salivary glands compared to oxybutynin (fewer dry mouth complaints). The active metabolite (5-hydroxymethyl tolterodine) contributes to the effect.\n\nb) Comparison:\n- OXYBUTYNIN: highest incidence of dry mouth (up to 70%), constipation, blurred vision. Crosses BBB → cognitive effects (confusion, especially in elderly). Immediate-release > extended-release.\n- TOLTERODINE: moderate dry mouth (20-30%), less constipation, minimal CNS penetration (quaternary-like structure). Better tolerated than oxybutynin.\n- DARIFENACIN: M3-selective antagonist. Reduced dry mouth vs oxybutynin, more constipation. Minimal cognitive effects.\n\nc) Non-pharmacological treatments:\n(1) BLADDER TRAINING: scheduled voiding, urge suppression techniques, delayed voiding.\n(2) PELVIC FLOOR MUSCLE EXERCISES (Kegel exercises): strengthen pelvic floor, improve urethral closure.\n(3) FLUID MANAGEMENT: reduce caffeine, alcohol, artificial sweeteners; optimise fluid intake.\n(4) WEIGHT LOSS: reduces intra-abdominal pressure on bladder.\n(5) BIOFEEDBACK: for awareness and control of pelvic floor muscles.\n(6) ELECTRICAL STIMULATION: sacral neuromodulation (advanced)."
+                },
+                {
+                    "stem": "(a) Describe the distribution and function of beta-adrenoceptors in the respiratory system. (3 marks)\n(b) Explain why non-selective beta-blockers are contraindicated in asthma but cardioselective beta-blockers may be used with caution. (3 marks)\n(c) A patient with COPD and heart failure requires a beta-blocker. Outline the management approach, including drug selection and monitoring. (4 marks)",
+                    "modelAnswer": "a) Respiratory beta-adrenoceptors:\n- BETA2: predominant subtype in bronchial smooth muscle (90%). Activation → relaxation → bronchodilation. Also found on mast cells (inhibit mediator release), goblet cells (increase mucus secretion), alveolar cells, pulmonary vessels.\n- BETA1: minimal in airways (mostly in alveolar walls).\n- Beta2-agonists (salbutamol, formoterol, salmeterol) are first-line bronchodilators.\n\nb) Non-selective beta-blockers (propranolol, nadolol, timolol):\n- Block beta2 receptors in bronchial smooth muscle → unopposed cholinergic bronchoconstriction → can precipitate severe asthma exacerbation, even status asthmaticus\n- Also block beta2-mediated mast cell stabilisation\n- Contraindicated in asthma and moderate-severe COPD\n\nCardioselective beta-blockers (metoprolol, bisoprolol, atenolol):\n- At low doses, they primarily block beta1 receptors\n- Beta1-selectivity is dose-dependent (lost at higher doses)\n- Can be used with CAUTION in mild-moderate asthma/COPD if absolutely indicated (e.g., post-MI, HF)\n- Start at lowest possible dose, titrate slowly, monitor FEV1 and symptoms\n\nc) Management approach:\n\nDrug selection: BISOPROLOL is preferred — highest beta1-selectivity ratio. Start at 1.25 mg daily, increase slowly to target (max 10 mg daily).\n\nAlternative: METOPROLOL succinate (extended release) 25 mg daily.\n\nAvoid: propranolol, nadolol, timolol, carvedilol (non-selective).\n\nMonitoring:\n- Respiratory: symptoms (dyspnoea, wheeze), peak flow/FEV1 before and after initiation\n- Cardiac: HR, BP, signs of HF worsening (oedema, weight gain, dyspnoea)\n- If FEV1 drops >15% or symptoms worsen → stop or reduce dose, consider alternative (e.g., ivabradine for HR control)\n\nEnsure COPD is optimally treated with bronchodilators (tiotropium, LABA) before and during beta-blocker therapy."
+                }
+            ]
+        },
+        {
+            "letter": "C",
+            "name": "Long Answer Questions",
+            "marks": 30,
+            "questions": [
+                {
+                    "stem": "A 32-year-old man with a history of well-controlled asthma (on salbutamol PRN only) undergoes emergency appendicectomy. Anaesthesia is induced with propofol and succinylcholine 1 mg/kg is given for intubation. Ten minutes into the procedure, the anaesthetist notes a sudden rise in end-tidal CO2 from 35 to 65 mmHg, masseter muscle rigidity, tachycardia (HR 140), and a temperature rise from 36.5°C to 39°C. The patient's skin is mottled and his muscles appear rigid.\n\na) What is the most likely diagnosis? Describe the pathophysiology at the molecular level, including the specific receptor and ion involved. (8 marks)\nb) Outline the immediate step-by-step pharmacological and non-pharmacological management of this crisis. Include all drug names, doses, routes, and mechanisms. (12 marks)\nc) What is the role of dantrolene in this condition? Explain its mechanism of action, dosing regimen, and adverse effects. (6 marks)\nd) After recovery, what advice should be given to this patient regarding future anaesthetics and his family members? (4 marks)",
+                    "modelAnswer": "a) Diagnosis: MALIGNANT HYPERTHERMIA (MH).\n\nPathophysiology:\n- Trigger: succinylcholine (depolarising NMB) + volatile anaesthetic (the propofol is not the trigger, but volatile agents like sevoflurane, halothane, or desflurane typically are — the question may assume a volatile agent was also used or succinylcholine alone triggered it).\n- Molecular defect: mutation in RYR1 gene (ryanodine receptor type 1) on skeletal muscle sarcoplasmic reticulum (SR). Autosomal dominant.\n- Mechanism: RyR1 is a calcium release channel. In MH-susceptible individuals, triggering agents cause uncontrolled, sustained Ca2+ release from SR into the cytosol.\n- Consequences of Ca2+ overload:\n  (1) Sustained muscle contraction → rigidity, masseter spasm\n  (2) Activation of Ca2+-ATPase (SERCA) → massive ATP consumption → heat generation → hyperthermia\n  (3) Anaerobic metabolism → lactic acidosis → metabolic acidosis\n  (4) Rhabdomyolysis → CK elevation, myoglobinuria, hyperkalaemia\n  (5) Increased O2 consumption → hypoxia, increased CO2 production (ETCO2 rise)\n\nb) MANAGEMENT OF MH CRISIS:\n\nCALL FOR HELP — activate MH protocol/cart.\n\nIMMEDIATE PHARMACOLOGICAL:\n\n1. DANTROLENE SODIUM (specific antidote):\n- Dose: 2.5 mg/kg IV bolus (rapid push)\n- Repeat every 5-10 min until rigidity resolves, CO2 drops, HR/BP stabilises (max cumulative dose ~10 mg/kg, but can exceed if needed)\n- Mechanism: inhibits ryanodine receptor (RyR1) → blocks Ca2+ release from SR → stops hypermetabolic cascade\n- Preparation: each vial = 20 mg dantrolene + 3 g mannitol, reconstitute with 60 mL sterile water (without bacteriostat)\n\n2. STOP TRIGGERING AGENTS:\n- Discontinue volatile anaesthetic immediately\n- Hyperventilate with 100% O2 at high flow (10-15 L/min)\n- Change anaesthesia circuit and soda lime\n- Switch to IV anaesthesia (propofol, opioids, benzodiazepines)\n\n3. COOLING MEASURES (for hyperthermia):\n- IV cold saline (0.9% NaCl) 15 mL/kg × 2-3\n- Surface cooling: ice packs to groin, axillae, neck, head; cooling blanket\n- Gastric or bladder lavage with cold saline\n- Stop cooling when core temp <38.5°C (to avoid overshoot hypothermia)\n\n4. TREAT HYPERKALAEMIA:\n- Calcium gluconate 10%: 10-30 mg/kg IV (1-3 g) — stabilises cardiac membrane\n- Insulin + glucose: 0.1 U/kg insulin + 0.5-1 g/kg glucose IV\n- Sodium bicarbonate 8.4%: 1-2 mEq/kg IV for acidosis (also shifts K+ into cells)\n- Beta2-agonist: salbutamol neb or IV (promotes K+ uptake into cells)\n\n5. ARRHYTHMIA MANAGEMENT:\n- Standard ACLS protocols\n- AVOID calcium channel blockers (verapamil/diltiazem) — they interact with dantrolene causing severe hyperkalaemia\n\n6. MAINTAIN URINE OUTPUT:\n- Ensure urine output >2 mL/kg/h (to prevent myoglobinuric AKI)\n- Dantrolene (with mannitol) promotes diuresis\n- Consider sodium bicarbonate to alkalinise urine (prevents myoglobin precipitation)\n\nMONITORING:\n- Core temperature (continuous)\n- ETCO2, ABGs (pH, pCO2, lactate, K+, Ca2+)\n- ECG, BP, HR, SpO2\n- CK, myoglobin, renal function, coagulation (DIC risk)\n\nc) DANTROLENE mechanism and dosing:\n\nMechanism:\n- Hydantoin derivative that directly inhibits the ryanodine receptor (RyR1) on the sarcoplasmic reticulum\n- Reduces Ca2+ release from SR without affecting Ca2+ reuptake or sensitivity\n- Does NOT affect the NMJ, muscle membrane, or voltage-gated channels\n- Does NOT relax normal skeletal muscle at therapeutic doses (does not affect excitation-contraction coupling in normal muscle)\n- Also has weak effects on cardiac and smooth muscle RyR (but at much higher concentrations)\n\nDosing:\n- Initial: 2.5 mg/kg IV bolus (reconstituted 20 mg per vial, each with 3 g mannitol)\n- Repeat: q5-10 min until physiological stabilisation (falling ETCO2, decreasing rigidity, temperature plateauing)\n- Average total dose: 2.5-10 mg/kg (some severe cases require >10 mg/kg)\n- Post-crisis: 1 mg/kg IV q6h for 24-48h to prevent recurrence\n- Oral dantrolene: 4-8 mg/kg/day in 3-4 divided doses for 2-3 days post-crisis (if oral route available)\n\nAdverse effects:\n- Muscle weakness (dose-limiting at high doses)\n- Phlebitis at injection site (alkaline pH ~9.5)\n- Respiratory depression (rare at therapeutic doses)\n- Hepatotoxicity with prolonged oral use\n- Dizziness, sedation\n- Interaction: DO NOT use with verapamil (severe hyperkalaemia, cardiac depression)\n\nd) POST-RECOVERY ADVICE:\n\nTo the patient:\n(1) Avoid all future triggers: succinylcholine and ALL volatile anaesthetics (halothane, isoflurane, sevoflurane, desflurane, enflurane).\n(2) Safe alternatives: propofol (total IV anaesthesia), ketamine, etomidate, opioids, benzodiazepines, nitrous oxide, non-depolarising NMBs (rocuronium, vecuronium).\n(3) Always inform anaesthetist before any surgery or procedure.\n(4) Wear a MedicAlert bracelet or carry a card stating 'Malignant Hyperthermia Susceptible'.\n(5) Genetic testing for RYR1 mutation.\n\nTo family members:\n(1) MH susceptibility is autosomal dominant → first-degree relatives (parents, siblings, children) have 50% risk of being affected.\n(2) Recommend genetic counselling and testing for RYR1 mutation.\n(3) If genetic testing unavailable or inconclusive: referral to an MH diagnostic centre for muscle biopsy and caffeine-halothane contracture test (CHCT) — gold standard.\n(4) All tested/suspected family members should follow same precautions as the patient.\n(5) Document family history of MH."
+                },
+                {
+                    "stem": "A 60-year-old man with a 10-year history of hypertension (well-controlled on amlodipine 10 mg daily) and type 2 diabetes (metformin 1 g BID) is incidentally found to have a blood pressure of 180/110 mmHg during a routine visit. He reports headaches, palpitations, and excessive sweating over the past 2 months. Urine metanephrines are markedly elevated, and an abdominal CT reveals a 4 cm left adrenal mass. Phaeochromocytoma is confirmed.\n\na) Explain the pathophysiology of phaeochromocytoma and the rationale for preoperative alpha-blockade. (6 marks)\nb) Compare phenoxybenzamine with doxazosin for preoperative preparation. Include mechanisms, doses, adverse effects, and monitoring. (8 marks)\nc) The patient develops tachycardia (HR 115) after starting alpha-blockade. Why must a beta-blocker only be added AFTER adequate alpha-blockade? Outline the stepwise addition of beta-blocker therapy. (6 marks)\nd) Describe the intraoperative and postoperative pharmacological management during phaeochromocytoma resection, including management of hypertensive crises and potential hypotension after tumour removal. (10 marks)",
+                    "modelAnswer": "a) Pathophysiology:\nPhaeochromocytoma is a catecholamine-secreting tumour of the adrenal medulla (90%) or extra-adrenal paraganglia (10%). It secretes norepinephrine (usually predominant), epinephrine, and occasionally dopamine.\n\nPhysiological effects:\n- Alpha1 stimulation: vasoconstriction → hypertension (paroxysmal or sustained)\n- Beta1 stimulation: tachycardia, palpitations, increased contractility\n- Beta2 stimulation: (if epinephrine predominant) tremor, hyperglycaemia, diaphoresis\n- Alpha2 stimulation: inhibits insulin release → hyperglycaemia\n\nRationale for preoperative alpha-blockade:\n(1) Prevents intraoperative hypertensive crisis during tumour manipulation (catecholamine surge)\n(2) Allows intravascular volume expansion (chronic vasoconstriction causes contracted plasma volume — alpha-blockade vasodilation permits fluid repletion)\n(3) Reduces surgical risk and perioperative mortality\n(4) Prevents catecholamine-induced myocarditis, arrhythmias\n\nb) PHENOXYBENZAMINE vs DOXAZOSIN:\n\nPHENOXYBENZAMINE:\n- Mechanism: non-selective alpha1 + alpha2, IRREVERSIBLE (covalent alkylation)\n- Dose: start 10 mg BID, increase by 10-20 mg every 2-3 days to target (20-40 mg BID) for 7-14 days pre-op\n- Onset: gradual (takes 2-3 days for full effect)\n- Duration: sustained (24-48h) due to irreversible binding\n- Adverse effects: reflex tachycardia, nasal congestion, postural hypotension, fatigue, miosis\n- Advantage: stable intraoperative haemodynamics, proven efficacy\n- Disadvantage: persistent post-op hypotension (can't reverse the block)\n\nDOXAZOSIN:\n- Mechanism: selective alpha1, REVERSIBLE (competitive)\n- Dose: start 1-2 mg daily, increase to 4-8 mg daily over 7-14 days\n- Onset: fast (hours)\n- Duration: 24h (once daily dosing)\n- Adverse effects: first-dose orthostatic hypotension, dizziness, less reflex tachycardia\n- Advantage: shorter duration, can be titrated more precisely; less post-op hypotension\n- Disadvantage: less intraoperative haemodynamic stability compared to phenoxybenzamine\n\nBoth effective — phenoxybenzamine preferred in most centres for complete alpha-blockade.\n\nMONITORING for both:\n- BP and HR (lying and standing) BID\n- Frequency and severity of symptoms (headache, palpitations, sweating)\n- Signs of adequate blockade: orthostatic hypotension, nasal stuffiness, BP <160/90 mmHg\n\nc) Beta-blocker after alpha-blockade:\n\nWhy beta-blocker must NOT be given first:\n- Beta-blockade alone blocks beta2-mediated vasodilation → unopposed alpha1-mediated vasoconstriction → HYPERTENSIVE CRISIS, pulmonary oedema, CVA\n- Also blocks beta1-mediated compensatory tachycardia → severe bradycardia with vasoconstriction → reduced cardiac output\n\nStepwise addition:\n(1) Establish alpha-blockade first (7-14 days pre-op)\n(2) Check if HR >80-100 bpm or if palpitations persist despite alpha-blockade\n(3) Add beta-blocker with caution:\n   - Start propranolol 10-20 mg TID (non-selective, also blocks T4→T3 conversion) or atenolol 25-50 mg daily (cardioselective)\n   - Or labetalol 100-200 mg BID (combined alpha + beta) — useful as single agent\n(4) Start at lowest dose, titrate to target HR 60-80 bpm\n(5) Monitor both HR and BP (worsening hypertension indicates inadequate alpha-blockade)\n\nd) Intraoperative and postoperative management:\n\nINTRAOPERATIVE:\n\n1. ANAESTHETIC CHOICE:\n- Avoid: halothane (sensitises myocardium to catecholamines → arrhythmias)\n- Safe: propofol, etomidate, sevoflurane/isoflurane, opioids, non-depolarising NMBs\n\n2. MONITORING:\n- Invasive arterial BP (beat-to-beat)\n- Central venous pressure / pulmonary artery catheter (if indicated)\n- ECG, HR, SpO2, ETCO2\n- Cardiac output monitoring (if available)\n\n3. MANAGEMENT OF HYPERTENSIVE CRISIS (during tumour manipulation):\n- First-line: Phentolamine 1-5 mg IV bolus (rapid, short-acting alpha-blocker)\n- Alternative: Sodium nitroprusside 0.5-10 µg/kg/min IV infusion (potent vasodilator, titratable)\n- Alternative: Nicardipine 1-5 mg/h IV infusion (calcium channel blocker)\n- Beta-blocker (esmolol 0.5-1 mg/kg bolus then 50-200 µg/kg/min) only if tachyarrhythmia occurs after adequate alpha-blockade\n\n4. MANAGEMENT OF HYPOTENSION (after tumour vein ligated):\n- STOP all vasodilators\n- Aggressive IV fluid resuscitation (crystalloids/colloids)\n- Vasopressors if needed: norepinephrine or phenylephrine (careful titration)\n- Blood glucose monitoring: post-tumour removal → insulin surge → hypoglycaemia\n- Monitor for rebound hypoglycaemia (catecholamines inhibit insulin secretion; when tumour removed, insulin levels rebound → hypoglycaemia)\n\nPOSTOPERATIVE:\n1. ICU monitoring for 24-48h\n2. Continue arterial line, ECG\n3. Monitor BP (may remain labile for 24-48h)\n4. Alpha-blocker may be discontinued (if tumour completely resected) or tapered off over 2-3 days\n5. Monitor for hypoglycaemia, check blood glucose q4-6h\n6. Monitor for signs of haemorrhage (hypotension despite fluid resuscitation → consider surgical bleeding)\n7. Urine output monitoring (fluid shifts)\n8. Check 24h urine metanephrines at 2 weeks post-op to confirm complete resection\n9. Yearly follow-up for recurrence (10% risk)"
+                }
+            ]
+        }
+    ]
+}

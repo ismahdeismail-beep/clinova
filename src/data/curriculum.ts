@@ -1032,7 +1032,7 @@ export interface EducationSubModule {
 export const EDUCATION_MODULES: EducationModule[] = [
   { id: 'exam_prep', title: 'Exam Prep', description: 'Structured exam preparation across clinical pharmacy, pharmacology, and more.', isIntegrated: false, icon: 'Award', color: 'amber',
     subModules: [
-      { id: 'clinical_pharm', title: 'Clinical Pharmacy', description: 'Disease management and patient care across 20 integrated therapeutic areas.', icon: 'HeartPulse', color: 'red', parentModuleId: 'exam_prep',
+      { id: 'clinical_pharm', title: 'Clinical Pharmacy', description: 'Disease management and patient care across 17 integrated therapeutic areas.', icon: 'HeartPulse', color: 'red', parentModuleId: 'exam_prep',
         units: getArea('clinical_pharm')?.units.map(u => ({ id: u.id, title: u.title, description: u.description, estimatedHours: u.estimatedHours } as EducationModuleUnit)) ?? [],
       },
       // Future sub-modules can be added here, e.g.:

@@ -99,7 +99,7 @@ Real-world clinical scenarios across all therapeutic areas with guided feedback,
 diagnostic reasoning, and treatment planning exercises.
 
 ### Nursing Care Plans
-Structured **NANDA / NIC / NOC** care plans across **14 specialties** with **10 fully
+Structured **NANDA / NIC / NOC** care plans across **19 specialties** with **92 fully
 detailed plans** covering pathophysiology, nursing diagnoses, goals, interventions,
 and rationales.
 
@@ -115,9 +115,9 @@ and rationales.
 | + 7 more | GI, Renal, Oncology, Paediatric, Geriatric, Dermatology, Ophthalmology |
 
 ### Drug Index
-Comprehensive **1,198-drug** Kenya Drug Index with monographs covering dosing,
+Comprehensive **1,000-drug** Kenya Drug Index with monographs covering dosing,
 interactions, contraindications, adverse effects, and therapeutic monitoring.
-Color-coded by drug class (18 classes). Supports brand name search and fuzzy matching.
+Color-coded by drug class (16 classes). Supports brand name search and fuzzy matching.
 
 ### Exam & Board Exam
 Mock papers modelled on the real clinical-pharmacy exam in standard 30/40/30 format,
@@ -155,10 +155,10 @@ src/
     ThemeToggle.tsx
     InstallPWA.tsx
   data/              # Local clinical content
-    carePlanData.ts  # NANDA/NIC/NOC care plan data (14 specialties, 10 plans)
+    carePlanData.ts  # NANDA/NIC/NOC care plan data (19 specialties, 92 plans)
     curriculum.ts    # Education module definitions (17 therapeutic areas)
-    drugIndexData.ts # 1,198 drug monographs
-    drugClassColors.ts # 18 drug class color mappings
+    drugIndexData.ts # 1,000 drug monographs
+    drugClassColors.ts # 16 drug class color mappings
     clinicalCasesData.ts
     diseaseNotes.ts
     navigationConfig.ts

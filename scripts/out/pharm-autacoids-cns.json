@@ -1,0 +1,1195 @@
+{
+  "pharm-autacoids-cns": {
+    "1": {
+      "title": "Autacoids, Inflammation & CNS",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Which of the following best describes the primary difference between autacoids and classical hormones?",
+              "options": [
+                "Autacoids are synthesized in specific endocrine glands, whereas hormones are produced by any tissue.",
+                "Autacoids act locally at their site of synthesis, whereas hormones act at distant target organs.",
+                "Autacoids are peptides, whereas hormones are always steroid derivatives.",
+                "Autacoids require a specific cell of origin, whereas hormones do not."
+              ],
+              "answer": "Autacoids act locally at their site of synthesis, whereas hormones act at distant target organs.",
+              "explanation": "Autacoids are local mediators with brief half-lives that act near their site of release, unlike hormones which travel through the bloodstream to distant targets."
+            },
+            {
+              "stem": "A 24-year-old patient presents with acute urticaria and pruritus after eating shellfish. Which histamine receptor subtype is primarily responsible for the observed symptoms?",
+              "options": [
+                "H1 receptor",
+                "H2 receptor",
+                "H3 receptor",
+                "H4 receptor"
+              ],
+              "answer": "H1 receptor",
+              "explanation": "H1 receptors mediate allergic responses such as urticaria, pruritus, and vasodilation, making them the primary target for antihistamines in acute allergic reactions."
+            },
+            {
+              "stem": "Which of the following is a first-generation H1 antihistamine with significant anticholinergic and sedative properties?",
+              "options": [
+                "Cetirizine",
+                "Loratadine",
+                "Diphenhydramine",
+                "Fexofenadine"
+              ],
+              "answer": "Diphenhydramine",
+              "explanation": "Diphenhydramine is a classic first-generation H1 antihistamine known for its strong anticholinergic effects and sedation, unlike second-generation agents which are less sedating."
+            },
+            {
+              "stem": "A 35-year-old woman with seasonal allergic rhinitis is prescribed loratadine. Compared to first-generation H1 antihistamines, which of the following is a key advantage of loratadine?",
+              "options": [
+                "Longer duration of action allowing once-daily dosing",
+                "Reduced risk of QT prolongation",
+                "Minimal penetration of the blood-brain barrier",
+                "Direct mast cell stabilization"
+              ],
+              "answer": "Minimal penetration of the blood-brain barrier",
+              "explanation": "Second-generation H1 antihistamines like loratadine have reduced CNS penetration, resulting in less sedation compared to first-generation agents."
+            },
+            {
+              "stem": "Which of the following adverse effects is most commonly associated with first-generation H1 antihistamines due to their anticholinergic activity?",
+              "options": [
+                "Bradycardia",
+                "Dry mouth",
+                "Hypertension",
+                "Hyperglycemia"
+              ],
+              "answer": "Dry mouth",
+              "explanation": "First-generation H1 antihistamines have significant anticholinergic effects, leading to dry mouth, urinary retention, and blurred vision."
+            },
+            {
+              "stem": "A 40-year-old patient is prescribed terfenadine for allergic rhinitis but develops QT prolongation and torsades de pointes after starting ketoconazole. Which enzyme inhibition is responsible for this interaction?",
+              "options": [
+                "CYP2D6",
+                "CYP3A4",
+                "CYP1A2",
+                "CYP2C9"
+              ],
+              "answer": "CYP3A4",
+              "explanation": "Terfenadine is metabolized by CYP3A4, and inhibition by ketoconazole leads to elevated terfenadine levels, increasing the risk of QT prolongation and arrhythmias."
+            },
+            {
+              "stem": "Which serotonin receptor subtype is primarily involved in the emetic response and is targeted by ondansetron?",
+              "options": [
+                "5-HT1A",
+                "5-HT2A",
+                "5-HT3",
+                "5-HT4"
+              ],
+              "answer": "5-HT3",
+              "explanation": "5-HT3 receptors in the chemoreceptor trigger zone and vomiting center mediate nausea and vomiting, making them the target for 5-HT3 antagonists like ondansetron."
+            },
+            {
+              "stem": "A 28-year-old woman presents with a severe migraine headache. Which of the following drugs is a 5-HT1 receptor agonist used for acute migraine treatment?",
+              "options": [
+                "Sumatriptan",
+                "Propranolol",
+                "Amitriptyline",
+                "Methysergide"
+              ],
+              "answer": "Sumatriptan",
+              "explanation": "Sumatriptan is a 5-HT1B/1D receptor agonist used for acute migraine treatment by constricting cerebral blood vessels and inhibiting neuropeptide release."
+            },
+            {
+              "stem": "Which of the following is a major risk associated with long-term use of methysergide for migraine prophylaxis?",
+              "options": [
+                "Hepatotoxicity",
+                "Retroperitoneal fibrosis",
+                "Nephrotoxicity",
+                "Cardiotoxicity"
+              ],
+              "answer": "Retroperitoneal fibrosis",
+              "explanation": "Methysergide, a 5-HT2 receptor antagonist, can cause fibrotic changes in retroperitoneal tissues with prolonged use, necessitating drug holidays."
+            },
+            {
+              "stem": "A 50-year-old man with a history of hypertension is prescribed propranolol for migraine prophylaxis. Which of the following is the primary mechanism of action of propranolol in migraine prevention?",
+              "options": [
+                "5-HT2 receptor antagonism",
+                "Beta-adrenergic blockade",
+                "Calcium channel blockade",
+                "GABA-A receptor potentiation"
+              ],
+              "answer": "Beta-adrenergic blockade",
+              "explanation": "Propranolol, a non-selective beta-blocker, reduces migraine frequency by modulating vascular reactivity and central noradrenergic activity."
+            },
+            {
+              "stem": "Which ergot alkaloid is primarily used for acute migraine attacks due to its vasoconstrictive properties?",
+              "options": [
+                "Methysergide",
+                "Ergotamine",
+                "Bromocriptine",
+                "Cabergoline"
+              ],
+              "answer": "Ergotamine",
+              "explanation": "Ergotamine constricts cranial blood vessels via 5-HT1 receptor agonism and is used for acute migraine treatment, though less commonly due to side effects."
+            },
+            {
+              "stem": "A patient develops ergotism after prolonged use of ergotamine. Which of the following is a classic symptom of ergotism?",
+              "options": [
+                "Hypotension",
+                "Gangrene of extremities",
+                "Hyperglycemia",
+                "Tachycardia"
+              ],
+              "answer": "Gangrene of extremities",
+              "explanation": "Ergotism results from excessive vasoconstriction, leading to ischemia and potential gangrene in extremities, a serious complication of ergot alkaloid overuse."
+            },
+            {
+              "stem": "Which of the following benzodiazepines is most commonly used for the treatment of status epilepticus due to its rapid onset of action?",
+              "options": [
+                "Diazepam",
+                "Lorazepam",
+                "Midazolam",
+                "Clonazepam"
+              ],
+              "answer": "Lorazepam",
+              "explanation": "Lorazepam has a rapid onset and intermediate duration of action, making it the preferred benzodiazepine for status epilepticus in many guidelines."
+            },
+            {
+              "stem": "Which of the following is the mechanism of action of benzodiazepines?",
+              "options": [
+                "GABA-A receptor antagonism",
+                "GABA-A receptor agonism",
+                "GABA-B receptor agonism",
+                "GABA transaminase inhibition"
+              ],
+              "answer": "GABA-A receptor agonism",
+              "explanation": "Benzodiazepines enhance GABAergic neurotransmission by binding to the GABA-A receptor complex, increasing chloride ion influx and neuronal inhibition."
+            },
+            {
+              "stem": "A 30-year-old patient presents with benzodiazepine overdose. Which of the following is the specific antidote?",
+              "options": [
+                "Naloxone",
+                "Flumazenil",
+                "Atropine",
+                "Physostigmine"
+              ],
+              "answer": "Flumazenil",
+              "explanation": "Flumazenil is a competitive benzodiazepine receptor antagonist used to reverse benzodiazepine overdose."
+            },
+            {
+              "stem": "Which of the following adverse effects is most commonly associated with barbiturate use?",
+              "options": [
+                "Respiratory depression",
+                "Hypertension",
+                "Hyperglycemia",
+                "Bradycardia"
+              ],
+              "answer": "Respiratory depression",
+              "explanation": "Barbiturates depress the central nervous system, including the respiratory center, leading to respiratory depression, especially at high doses."
+            },
+            {
+              "stem": "A 45-year-old patient on phenobarbital for epilepsy develops unexpected bleeding. Which of the following is the most likely cause?",
+              "options": [
+                "Vitamin K deficiency due to CYP450 induction",
+                "Direct inhibition of clotting factors",
+                "Thrombocytopenia",
+                "Hepatic failure"
+              ],
+              "answer": "Vitamin K deficiency due to CYP450 induction",
+              "explanation": "Phenobarbital induces CYP450 enzymes, increasing vitamin K metabolism and leading to coagulopathy and bleeding in susceptible patients."
+            },
+            {
+              "stem": "Which of the following is a characteristic feature of barbiturate tolerance?",
+              "options": [
+                "Cross-tolerance to opioids",
+                "Increased sensitivity to pain",
+                "Reduced therapeutic index",
+                "Dependence without withdrawal symptoms"
+              ],
+              "answer": "Cross-tolerance to opioids",
+              "explanation": "Barbiturates induce tolerance not only to their own effects but also to other CNS depressants, including opioids, due to shared metabolic pathways."
+            },
+            {
+              "stem": "A 25-year-old patient with schizophrenia is started on haloperidol. Which of the following extrapyramidal symptoms is most likely to occur early in treatment?",
+              "options": [
+                "Tardive dyskinesia",
+                "Parkinsonism",
+                "Akathisia",
+                "Neuroleptic malignant syndrome"
+              ],
+              "answer": "Akathisia",
+              "explanation": "Akathisia, characterized by inner restlessness and inability to sit still, is a common early extrapyramidal symptom with typical antipsychotics like haloperidol."
+            },
+            {
+              "stem": "Which of the following atypical antipsychotics is most likely to cause metabolic syndrome, including weight gain and insulin resistance?",
+              "options": [
+                "Haloperidol",
+                "Risperidone",
+                "Clozapine",
+                "Fluphenazine"
+              ],
+              "answer": "Clozapine",
+              "explanation": "Clozapine and olanzapine are associated with the highest risk of metabolic syndrome among atypical antipsychotics due to their strong antagonism at 5-HT2C and H1 receptors."
+            },
+            {
+              "stem": "Which of the following is a key advantage of atypical antipsychotics over typical antipsychotics?",
+              "options": [
+                "Lower risk of extrapyramidal symptoms",
+                "Higher potency for D2 receptor blockade",
+                "Greater anticholinergic effects",
+                "Shorter duration of action"
+              ],
+              "answer": "Lower risk of extrapyramidal symptoms",
+              "explanation": "Atypical antipsychotics have a lower affinity for D2 receptors and additional 5-HT2A antagonism, reducing the risk of extrapyramidal symptoms compared to typical agents."
+            },
+            {
+              "stem": "A 35-year-old patient on risperidone develops gynecomastia. Which of the following is the most likely mechanism?",
+              "options": [
+                "Dopamine D2 receptor blockade",
+                "Serotonin 5-HT2A receptor blockade",
+                "Histamine H1 receptor blockade",
+                "Alpha-1 adrenergic receptor blockade"
+              ],
+              "answer": "Dopamine D2 receptor blockade",
+              "explanation": "Risperidone's D2 receptor blockade in the tuberoinfundibular pathway reduces dopamine's inhibitory effect on prolactin release, leading to hyperprolactinemia and gynecomastia."
+            },
+            {
+              "stem": "Which of the following drugs is a Z-drug used for insomnia with a mechanism similar to benzodiazepines but with less abuse potential?",
+              "options": [
+                "Zolpidem",
+                "Phenobarbital",
+                "Chloral hydrate",
+                "Sodium oxybate"
+              ],
+              "answer": "Zolpidem",
+              "explanation": "Zolpidem is a non-benzodiazepine hypnotic (Z-drug) that selectively binds to the GABA-A receptor complex, providing sedation with reduced risk of tolerance and dependence."
+            },
+            {
+              "stem": "A 50-year-old patient with insomnia is prescribed zolpidem. Which of the following is a key advantage over benzodiazepines?",
+              "options": [
+                "Longer duration of action",
+                "Lower risk of next-day sedation",
+                "Greater anxiolytic effect",
+                "Reduced risk of respiratory depression"
+              ],
+              "answer": "Lower risk of next-day sedation",
+              "explanation": "Zolpidem has a shorter half-life than many benzodiazepines, reducing the risk of residual sedation and cognitive impairment the next day."
+            },
+            {
+              "stem": "Which of the following is a characteristic feature of chloral hydrate?",
+              "options": [
+                "Rapid onset of action",
+                "High abuse potential",
+                "Minimal respiratory depression",
+                "Long half-life"
+              ],
+              "answer": "Rapid onset of action",
+              "explanation": "Chloral hydrate is a sedative-hypnotic with a rapid onset of action, making it useful for inducing sleep but also contributing to its abuse potential."
+            },
+            {
+              "stem": "A 60-year-old patient with chronic insomnia is prescribed sodium oxybate. Which of the following is a key contraindication?",
+              "options": [
+                "Hypertension",
+                "Severe depression",
+                "Obstructive sleep apnea",
+                "Diabetes mellitus"
+              ],
+              "answer": "Obstructive sleep apnea",
+              "explanation": "Sodium oxybate is contraindicated in patients with obstructive sleep apnea due to its respiratory depressant effects, which can worsen hypoxia."
+            },
+            {
+              "stem": "Which of the following is a key difference between typical and atypical antipsychotics?",
+              "options": [
+                "Typical antipsychotics have higher affinity for 5-HT2A receptors",
+                "Atypical antipsychotics have a lower risk of extrapyramidal symptoms",
+                "Typical antipsychotics are less likely to cause weight gain",
+                "Atypical antipsychotics are more likely to cause tardive dyskinesia"
+              ],
+              "answer": "Atypical antipsychotics have a lower risk of extrapyramidal symptoms",
+              "explanation": "Atypical antipsychotics, due to their broader receptor profile (including 5-HT2A antagonism), have a lower incidence of extrapyramidal symptoms compared to typical agents."
+            },
+            {
+              "stem": "A 40-year-old patient on clozapine develops agranulocytosis. Which of the following is the most appropriate management step?",
+              "options": [
+                "Continue clozapine with close monitoring",
+                "Switch to olanzapine immediately",
+                "Administer granulocyte colony-stimulating factor",
+                "Discontinue clozapine and monitor for recovery"
+              ],
+              "answer": "Discontinue clozapine and monitor for recovery",
+              "explanation": "Clozapine-induced agranulocytosis requires immediate discontinuation and monitoring, with potential use of G-CSF in severe cases."
+            },
+            {
+              "stem": "Which of the following is a key advantage of second-generation H1 antihistamines in allergic rhinitis?",
+              "options": [
+                "Longer duration of action requiring less frequent dosing",
+                "Direct mast cell stabilization",
+                "Reduced risk of QT prolongation",
+                "Enhanced sedation for nighttime use"
+              ],
+              "answer": "Reduced risk of QT prolongation",
+              "explanation": "Second-generation H1 antihistamines are less likely to cause QT prolongation compared to first-generation agents, especially when used at recommended doses."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 22-year-old male presents with acute urticaria and angioedema after eating peanuts. He has no significant past medical history.",
+              "modelAnswer": "1. Immediate management: Administer intramuscular epinephrine (0.3–0.5 mg of 1:1000 solution) for anaphylaxis. Follow with intravenous antihistamines (e.g., diphenhydramine 25–50 mg) and corticosteroids (e.g., hydrocortisone 100–200 mg IV) to reduce inflammation and prevent biphasic reaction.\n2. H1 antihistamine choice: Second-generation agents (e.g., cetirizine 10 mg orally) are preferred due to rapid onset and reduced sedation compared to first-generation agents.\n3. Monitoring: Observe for 4–6 hours for signs of respiratory compromise or worsening angioedema. Educate on avoidance of triggers and prescribe an epinephrine auto-injector for future use."
+            },
+            {
+              "stem": "Compare and contrast the pharmacology of first-generation and second-generation H1 antihistamines. Include mechanisms, adverse effects, and clinical uses in your answer.",
+              "modelAnswer": "First-generation H1 antihistamines (e.g., diphenhydramine, chlorpheniramine):\n- Mechanism: Competitive H1 receptor antagonists with additional anticholinergic, anti-serotonin, and local anesthetic effects.\n- Adverse effects: Sedation, dry mouth, urinary retention, blurred vision, and paradoxical excitation (especially in children).\n- Clinical uses: Allergic rhinitis, urticaria, motion sickness, and insomnia.\n\nSecond-generation H1 antihistamines (e.g., loratadine, cetirizine):\n- Mechanism: Selective H1 receptor antagonists with minimal anticholinergic or CNS penetration.\n- Adverse effects: Minimal sedation, lower risk of QT prolongation (except with CYP3A4 inhibitors).\n- Clinical uses: Allergic rhinitis, chronic urticaria, and allergic conjunctivitis with improved tolerability."
+            },
+            {
+              "stem": "A 30-year-old female with a history of migraine headaches is prescribed propranolol for prophylaxis. Discuss the mechanism of action, rationale for use, and monitoring requirements.",
+              "modelAnswer": "1. Mechanism: Propranolol is a non-selective beta-adrenergic antagonist that reduces migraine frequency by modulating vascular reactivity and central noradrenergic activity.\n2. Rationale: Beta-blockers are first-line for migraine prophylaxis in patients with frequent or disabling attacks, reducing attack frequency by 50% in 50% of patients.\n3. Monitoring: Check baseline heart rate, blood pressure, and ECG. Monitor for bradycardia, hypotension, fatigue, or bronchospasm. Counsel on gradual dose titration to minimize adverse effects."
+            },
+            {
+              "stem": "A 45-year-old male with schizophrenia is started on risperidone. Outline the key extrapyramidal symptoms (EPS) associated with antipsychotic use, their management, and strategies to minimize EPS.",
+              "modelAnswer": "1. Key EPS: Parkinsonism (tremor, rigidity), akathisia (restlessness), dystonia (muscle spasms), and tardive dyskinesia (involuntary movements).\n2. Management:\n   - Parkinsonism/akathisia: Reduce dose, switch to atypical antipsychotic, or add beta-blocker (e.g., propranolol) or anticholinergic (e.g., benztropine).\n   - Dystonia: Acute treatment with anticholinergics (e.g., diphenhydramine 50 mg IM) or benzodiazepines.\n   - Tardive dyskinesia: Discontinue or reduce antipsychotic; consider VMAT2 inhibitors (e.g., valbenazine).\n3. Minimization strategies: Use lowest effective dose, prefer atypical antipsychotics, and monitor regularly for early signs of EPS."
+            },
+            {
+              "stem": "A 55-year-old patient with a history of hypertension and insomnia is prescribed zolpidem for sleep. Discuss the mechanism of action, advantages over benzodiazepines, and key safety considerations.",
+              "modelAnswer": "1. Mechanism: Zolpidem is a non-benzodiazepine hypnotic (Z-drug) that selectively binds to the GABA-A receptor complex, enhancing inhibitory neurotransmission.\n2. Advantages over benzodiazepines: Shorter half-life (2–3 hours) reduces next-day sedation and cognitive impairment; lower risk of tolerance and dependence; minimal anxiolytic or muscle relaxant effects.\n3. Safety considerations: Avoid in patients with sleep apnea or severe hepatic impairment; risk of complex sleep-related behaviors (e.g., sleepwalking); potential for abuse in susceptible individuals."
+            },
+            {
+              "stem": "A 28-year-old female with a history of bipolar disorder is started on lithium. Discuss the mechanism of action, therapeutic monitoring, and key adverse effects.",
+              "modelAnswer": "1. Mechanism: Lithium stabilizes mood by modulating neurotransmitter systems (e.g., serotonin, dopamine) and second-messenger pathways (e.g., inositol monophosphatase inhibition).\n2. Therapeutic monitoring: Target serum lithium levels of 0.6–1.2 mEq/L for acute mania and 0.8–1.0 mEq/L for maintenance. Monitor levels every 1–2 weeks initially, then every 3–6 months. Check renal function, thyroid function, and electrolytes regularly.\n3. Key adverse effects: Nephrogenic diabetes insipidus, hypothyroidism, tremor, weight gain, and teratogenicity (avoid in pregnancy)."
+            },
+            {
+              "stem": "Compare the pharmacology of benzodiazepines and barbiturates. Include mechanisms, clinical uses, and key adverse effects.",
+              "modelAnswer": "Benzodiazepines (e.g., diazepam, lorazepam):\n- Mechanism: Enhance GABA-A receptor activity by increasing chloride ion influx, leading to neuronal inhibition.\n- Clinical uses: Anxiety, insomnia, seizures, muscle spasms, and alcohol withdrawal.\n- Adverse effects: Sedation, cognitive impairment, paradoxical excitation, respiratory depression (especially with opioids), and dependence.\n\nBarbiturates (e.g., phenobarbital):\n- Mechanism: Directly activate GABA-A receptors and inhibit glutamate receptors, leading to CNS depression.\n- Clinical uses: Seizures, anesthesia induction, and rarely for insomnia (e.g., phenobarbital).\n- Adverse effects: Respiratory depression, severe CNS depression, tolerance, dependence, and CYP450 induction leading to drug interactions."
+            },
+            {
+              "stem": "A 35-year-old male with a history of schizophrenia is switched from haloperidol to clozapine due to extrapyramidal symptoms. Discuss the rationale for this switch, key monitoring requirements, and potential adverse effects of clozapine.",
+              "modelAnswer": "1. Rationale: Clozapine is an atypical antipsychotic with lower D2 receptor affinity and additional 5-HT2A antagonism, reducing extrapyramidal symptoms while maintaining efficacy in treatment-resistant schizophrenia.\n2. Monitoring requirements: Weekly CBC for the first 6 months (due to agranulocytosis risk), then every 2 weeks; monitor for seizures, myocarditis, and metabolic syndrome (weight, glucose, lipids).\n3. Potential adverse effects: Agranulocytosis (1%), seizures (dose-related), myocarditis, metabolic syndrome (weight gain, diabetes), and sialorrhea."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 40-year-old female presents to the emergency department with a severe migraine headache, nausea, and photophobia. She has a history of hypertension and is currently taking lisinopril. She reports no prior migraine history but has had similar symptoms twice in the past month.\n\n(a) Outline the acute management of her migraine attack, including first-line and second-line options. Justify your choices based on mechanism of action and clinical evidence. (5 marks)\n(b) Discuss the role of triptans in migraine treatment, including their mechanism of action, contraindications, and potential adverse effects. (5 marks)\n(c) Outline a plan for migraine prophylaxis, including non-pharmacological and pharmacological options. Discuss the rationale for your choices and monitoring requirements. (5 marks)",
+              "modelAnswer": "**(a) Acute management:**\n1. First-line: Non-steroidal anti-inflammatory drugs (NSAIDs) such as ibuprofen 400–800 mg orally or diclofenac 50–100 mg orally/suppository. Mechanism: Inhibition of cyclooxygenase (COX) reduces prostaglandin-mediated inflammation and pain.\n2. Second-line: Triptans (e.g., sumatriptan 50–100 mg orally) if NSAIDs are ineffective. Mechanism: 5-HT1B/1D receptor agonists constrict cranial blood vessels and inhibit neuropeptide release.\n3. Adjunctive therapy: Metoclopramide 10 mg IV for nausea (dopamine antagonist) and to enhance absorption of oral medications.\n4. Avoid opioids due to risk of dependence and medication-overuse headache.\n\n**(b) Role of triptans:**\n1. Mechanism: Selective agonists at 5-HT1B and 5-HT1D receptors, leading to vasoconstriction of cranial blood vessels and inhibition of neurogenic inflammation.\n2. Contraindications: Ischemic heart disease, uncontrolled hypertension, cerebrovascular disease, hemiplegic or basilar migraine, and use of ergot alkaloids or MAOIs within 24 hours.\n3. Adverse effects: Chest tightness, flushing, dizziness, paresthesia, and rarely coronary vasospasm or serotonin syndrome (especially with concurrent SSRIs/SNRIs).\n4. Clinical evidence: Triptans are effective for moderate-to-severe migraines and are recommended as first-line acute treatments in guidelines.\n\n**(c) Prophylaxis plan:**\n1. Non-pharmacological: Identify and avoid triggers (e.g., stress, certain foods, sleep deprivation), regular exercise, and cognitive behavioral therapy for stress management.\n2. Pharmacological options:\n   - Beta-blockers (e.g., propranolol 40–80 mg/day): First-line due to evidence of efficacy and safety in migraine prophylaxis.\n   - Tricyclic antidepressants (e.g., amitriptyline 10–75 mg at night): Second-line, especially in patients with comorbid depression or insomnia.\n   - Anticonvulsants (e.g., topiramate 25–100 mg/day): Consider if beta-blockers are contraindicated or ineffective.\n3. Monitoring: Baseline ECG (for propranolol), blood pressure, and heart rate. Monitor for adverse effects (e.g., fatigue, bradycardia, weight gain) and titrate doses gradually. Reassess efficacy after 8–12 weeks."
+            },
+            {
+              "stem": "A 50-year-old male with a history of schizophrenia is admitted to the psychiatric unit for acute psychosis. He has been non-adherent to his antipsychotic medication for 3 months and presents with auditory hallucinations, delusions, and disorganized speech. He is started on olanzapine.\n\n(a) Discuss the pharmacology of olanzapine, including its receptor profile, advantages over typical antipsychotics, and key adverse effects. (5 marks)\n(b) Outline the monitoring plan for this patient during hospitalization, including baseline and ongoing assessments. (5 marks)\n(c) The patient develops metabolic syndrome during treatment. Discuss the management of metabolic complications associated with atypical antipsychotics, including non-pharmacological and pharmacological strategies. (5 marks)",
+              "modelAnswer": "**(a) Pharmacology of olanzapine:**\n1. Receptor profile: Olanzapine is an atypical antipsychotic with high affinity for D2, 5-HT2A, H1, alpha-1 adrenergic, and muscarinic receptors. Its broad receptor profile contributes to its efficacy and side effect profile.\n2. Advantages over typical antipsychotics: Lower risk of extrapyramidal symptoms (EPS) due to balanced D2/5-HT2A antagonism; improved efficacy in negative symptoms and cognitive dysfunction.\n3. Key adverse effects: Weight gain, sedation, anticholinergic effects (dry mouth, constipation), and metabolic syndrome (hyperglycemia, dyslipidemia).\n\n**(b) Monitoring plan:**\n1. Baseline assessments: Weight/BMI, waist circumference, blood pressure, fasting glucose, lipid panel, ECG (if indicated), and personal/family history of metabolic or cardiovascular disease.\n2. Ongoing assessments: Weekly weight checks for the first 6 weeks, then monthly; monitor glucose and lipids at 3 months, then annually or as clinically indicated. Assess for EPS, akathisia, and tardive dyskinesia regularly.\n3. Additional monitoring: Prolactin levels if symptomatic (e.g., gynecomastia, sexual dysfunction).\n\n**(c) Management of metabolic complications:**\n1. Non-pharmacological strategies: Dietary counseling (low-calorie, low-fat diet), regular exercise (150 minutes/week), and behavioral interventions for weight loss.\n2. Pharmacological strategies:\n   - Metformin: First-line for insulin resistance or prediabetes (improves insulin sensitivity and may aid weight loss).\n   - Switching antipsychotics: Consider agents with lower metabolic risk (e.g., aripiprazole, ziprasidone) if metabolic complications are severe or persistent.\n   - Lipid-lowering agents (e.g., statins) for dyslipidemia if lifestyle changes are insufficient.\n3. Monitoring: Repeat lipid panel and glucose levels every 3–6 months. Adjust medications as needed and involve endocrinology for complex cases."
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Autacoids, Inflammation & CNS",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 34-year-old woman presents with chronic urticaria unresponsive to second-generation H1 antihistamines. Her physician considers adding a first-generation H1 antihistamine. Which adverse effect is most likely to limit long-term use in this patient?",
+              "options": [
+                "a) QT prolongation",
+                "b) Sedation",
+                "c) Hyperprolactinemia",
+                "d) Weight loss"
+              ],
+              "answer": "b) Sedation",
+              "explanation": "First-generation H1 antihistamines (e.g., diphenhydramine) cross the blood-brain barrier and cause significant sedation, limiting long-term use."
+            },
+            {
+              "stem": "A 28-year-old man with allergic rhinitis is prescribed fexofenadine. Which statement best describes its mechanism of action?",
+              "options": [
+                "a) It is a selective H2 receptor antagonist",
+                "b) It is a selective H1 receptor antagonist with minimal CNS penetration",
+                "c) It is a non-selective 5-HT receptor antagonist",
+                "d) It is a leukotriene receptor antagonist"
+              ],
+              "answer": "b) It is a selective H1 receptor antagonist with minimal CNS penetration",
+              "explanation": "Fexofenadine is a second-generation H1 antihistamine with selective H1 receptor antagonism and minimal sedation due to poor CNS penetration."
+            },
+            {
+              "stem": "A 55-year-old woman with hypertension and seasonal allergies is prescribed terfenadine. She is also taking ketoconazole for a fungal infection. Which adverse effect is most likely to occur?",
+              "options": [
+                "a) Bradycardia",
+                "b) Torsades de pointes",
+                "c) Hypotension",
+                "d) Hyperkalemia"
+              ],
+              "answer": "b) Torsades de pointes",
+              "explanation": "Terfenadine is metabolized by CYP3A4; ketoconazole inhibits this enzyme, leading to elevated terfenadine levels and risk of QT prolongation and torsades de pointes."
+            },
+            {
+              "stem": "A 42-year-old man with a history of peptic ulcer disease develops severe flushing and diarrhea after consuming red wine. Which autacoid is most likely responsible for these symptoms?",
+              "options": [
+                "a) Histamine",
+                "b) Serotonin",
+                "c) Bradykinin",
+                "d) Prostaglandin"
+              ],
+              "answer": "b) Serotonin",
+              "explanation": "Serotonin release from enterochromaffin cells in the gut can cause flushing and diarrhea, especially in patients with carcinoid syndrome or after consuming tyramine-rich foods."
+            },
+            {
+              "stem": "A 60-year-old woman with a history of migraine presents with worsening headaches. Her physician considers adding methysergide for prophylaxis. Which adverse effect is most concerning with this drug?",
+              "options": [
+                "a) Hepatotoxicity",
+                "b) Retroperitoneal fibrosis",
+                "c) Agranulocytosis",
+                "d) Nephrotoxicity"
+              ],
+              "answer": "b) Retroperitoneal fibrosis",
+              "explanation": "Methysergide, a 5-HT2 receptor antagonist, is associated with retroperitoneal fibrosis and other fibrotic complications with prolonged use."
+            },
+            {
+              "stem": "A 25-year-old man with acute migraine is treated with sumatriptan. Which receptor is the primary target of this drug?",
+              "options": [
+                "a) H1 receptor",
+                "b) 5-HT1B/1D receptor",
+                "c) Dopamine D2 receptor",
+                "d) Muscarinic M3 receptor"
+              ],
+              "answer": "b) 5-HT1B/1D receptor",
+              "explanation": "Sumatriptan is a selective 5-HT1B/1D receptor agonist used for acute migraine treatment."
+            },
+            {
+              "stem": "A 30-year-old woman with schizophrenia is started on haloperidol. Which adverse effect is most likely to occur early in treatment?",
+              "options": [
+                "a) Tardive dyskinesia",
+                "b) Parkinsonism",
+                "c) Metabolic syndrome",
+                "d) Neuroleptic malignant syndrome"
+              ],
+              "answer": "b) Parkinsonism",
+              "explanation": "Haloperidol, a typical antipsychotic, commonly causes extrapyramidal symptoms such as parkinsonism early in treatment."
+            },
+            {
+              "stem": "A 40-year-old man with bipolar disorder is prescribed lithium. Which laboratory parameter should be monitored most closely?",
+              "options": [
+                "a) Serum sodium",
+                "b) Serum potassium",
+                "c) Serum creatinine",
+                "d) Serum calcium"
+              ],
+              "answer": "c) Serum creatinine",
+              "explanation": "Lithium is renally excreted; monitoring serum creatinine and renal function is essential to detect nephrotoxicity."
+            },
+            {
+              "stem": "A 50-year-old man with generalized anxiety disorder is prescribed diazepam. Which statement best describes its mechanism of action?",
+              "options": [
+                "a) It is a GABA-A receptor antagonist",
+                "b) It is a GABA-A receptor positive allosteric modulator",
+                "c) It is a dopamine D2 receptor antagonist",
+                "d) It is a serotonin reuptake inhibitor"
+              ],
+              "answer": "b) It is a GABA-A receptor positive allosteric modulator",
+              "explanation": "Diazepam enhances GABAergic neurotransmission by binding to the GABA-A receptor complex, acting as a positive allosteric modulator."
+            },
+            {
+              "stem": "A 35-year-old woman with insomnia is prescribed zolpidem. Which statement best describes its mechanism of action?",
+              "options": [
+                "a) It is a benzodiazepine receptor agonist",
+                "b) It is a non-benzodiazepine GABA-A receptor agonist with selectivity for α1 subunits",
+                "c) It is a melatonin receptor agonist",
+                "d) It is a histamine H1 receptor antagonist"
+              ],
+              "answer": "b) It is a non-benzodiazepine GABA-A receptor agonist with selectivity for α1 subunits",
+              "explanation": "Zolpidem is a Z-drug that selectively binds to the α1 subunit of the GABA-A receptor, producing sedative effects with minimal anxiolytic or muscle relaxant properties."
+            },
+            {
+              "stem": "A 28-year-old man with a history of seizures is treated with phenobarbital. Which pharmacokinetic property is most relevant to its long-term use?",
+              "options": [
+                "a) Short half-life requiring frequent dosing",
+                "b) CYP450 enzyme induction leading to drug interactions",
+                "c) High plasma protein binding limiting distribution",
+                "d) Renal excretion requiring dose adjustment in renal impairment"
+              ],
+              "answer": "b) CYP450 enzyme induction leading to drug interactions",
+              "explanation": "Phenobarbital is a potent inducer of CYP450 enzymes, leading to increased metabolism of many drugs and potential loss of efficacy."
+            },
+            {
+              "stem": "A 45-year-old woman with schizophrenia is switched from haloperidol to risperidone due to extrapyramidal symptoms. Which adverse effect is more likely with risperidone compared to haloperidol?",
+              "options": [
+                "a) Tardive dyskinesia",
+                "b) Hyperprolactinemia",
+                "c) Neuroleptic malignant syndrome",
+                "d) Acute dystonia"
+              ],
+              "answer": "b) Hyperprolactinemia",
+              "explanation": "Risperidone, an atypical antipsychotic, has a higher propensity to cause hyperprolactinemia compared to haloperidol, a typical antipsychotic."
+            },
+            {
+              "stem": "A 60-year-old man with Parkinson’s disease develops psychosis. Which antipsychotic is most appropriate to avoid worsening motor symptoms?",
+              "options": [
+                "a) Haloperidol",
+                "b) Chlorpromazine",
+                "c) Quetiapine",
+                "d) Thioridazine"
+              ],
+              "answer": "c) Quetiapine",
+              "explanation": "Quetiapine has minimal dopamine D2 receptor antagonism, making it less likely to worsen Parkinsonian motor symptoms compared to typical antipsychotics."
+            },
+            {
+              "stem": "A 30-year-old woman with a history of depression and anxiety is prescribed amitriptyline. Which receptor is primarily responsible for its anticholinergic effects?",
+              "options": [
+                "a) Muscarinic M1 receptor",
+                "b) Muscarinic M3 receptor",
+                "c) Nicotinic receptor",
+                "d) Dopamine D2 receptor"
+              ],
+              "answer": "a) Muscarinic M1 receptor",
+              "explanation": "Amitriptyline, a tricyclic antidepressant, has significant anticholinergic activity due to its blockade of muscarinic M1 receptors."
+            },
+            {
+              "stem": "A 55-year-old man with chronic obstructive pulmonary disease (COPD) and allergic rhinitis is prescribed diphenhydramine. Which adverse effect is most likely to exacerbate his COPD?",
+              "options": [
+                "a) Sedation",
+                "b) Dry mouth",
+                "c) Bronchospasm",
+                "d) Urinary retention"
+              ],
+              "answer": "c) Bronchospasm",
+              "explanation": "First-generation H1 antihistamines like diphenhydramine have anticholinergic properties that can cause bronchospasm, worsening COPD symptoms."
+            },
+            {
+              "stem": "A 25-year-old man with a history of motion sickness is prescribed meclizine. Which receptor is primarily responsible for its antiemetic effect?",
+              "options": [
+                "a) H1 receptor",
+                "b) 5-HT3 receptor",
+                "c) Dopamine D2 receptor",
+                "d) Muscarinic M3 receptor"
+              ],
+              "answer": "a) H1 receptor",
+              "explanation": "Meclizine is a first-generation H1 antihistamine with antiemetic properties due to H1 receptor antagonism in the vestibular system."
+            },
+            {
+              "stem": "A 40-year-old woman with a history of hypertension and angioedema is prescribed lisinopril. Which autacoid is most likely involved in her angioedema?",
+              "options": [
+                "a) Histamine",
+                "b) Bradykinin",
+                "c) Serotonin",
+                "d) Prostaglandin"
+              ],
+              "answer": "b) Bradykinin",
+              "explanation": "ACE inhibitors like lisinopril can cause angioedema by inhibiting bradykinin degradation, leading to elevated bradykinin levels."
+            },
+            {
+              "stem": "A 35-year-old man with a history of peptic ulcer disease is prescribed misoprostol. Which receptor is targeted by this drug?",
+              "options": [
+                "a) H2 receptor",
+                "b) Prostaglandin E2 receptor",
+                "c) Muscarinic M3 receptor",
+                "d) Dopamine D2 receptor"
+              ],
+              "answer": "b) Prostaglandin E2 receptor",
+              "explanation": "Misoprostol is a synthetic prostaglandin E1 analog that binds to prostaglandin E2 receptors, promoting gastric mucosal protection."
+            },
+            {
+              "stem": "A 50-year-old woman with rheumatoid arthritis is prescribed celecoxib. Which adverse effect is least likely compared to non-selective NSAIDs?",
+              "options": [
+                "a) Gastric ulceration",
+                "b) Renal impairment",
+                "c) Platelet dysfunction",
+                "d) Hypertension"
+              ],
+              "answer": "c) Platelet dysfunction",
+              "explanation": "Celecoxib, a selective COX-2 inhibitor, does not affect platelet function, unlike non-selective NSAIDs which inhibit COX-1."
+            },
+            {
+              "stem": "A 28-year-old man with a history of asthma is prescribed zafirlukast. Which receptor is targeted by this drug?",
+              "options": [
+                "a) Leukotriene D4 receptor",
+                "b) Histamine H1 receptor",
+                "c) 5-HT3 receptor",
+                "d) Muscarinic M3 receptor"
+              ],
+              "answer": "a) Leukotriene D4 receptor",
+              "explanation": "Zafirlukast is a leukotriene receptor antagonist that blocks leukotriene D4 receptors, reducing bronchoconstriction in asthma."
+            },
+            {
+              "stem": "A 45-year-old woman with a history of depression is prescribed fluoxetine. Which neurotransmitter system is primarily affected by this drug?",
+              "options": [
+                "a) Dopamine",
+                "b) Norepinephrine",
+                "c) Serotonin",
+                "d) GABA"
+              ],
+              "answer": "c) Serotonin",
+              "explanation": "Fluoxetine is a selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the synaptic cleft."
+            },
+            {
+              "stem": "A 30-year-old man with schizophrenia is prescribed clozapine. Which adverse effect is most concerning and requires regular monitoring?",
+              "options": [
+                "a) Tardive dyskinesia",
+                "b) Agranulocytosis",
+                "c) Hyperprolactinemia",
+                "d) Neuroleptic malignant syndrome"
+              ],
+              "answer": "b) Agranulocytosis",
+              "explanation": "Clozapine carries a significant risk of agranulocytosis, requiring regular white blood cell count monitoring."
+            },
+            {
+              "stem": "A 55-year-old woman with insomnia is prescribed suvorexant. Which receptor is targeted by this drug?",
+              "options": [
+                "a) GABA-A receptor",
+                "b) Orexin receptor",
+                "c) Melatonin receptor",
+                "d) Histamine H1 receptor"
+              ],
+              "answer": "b) Orexin receptor",
+              "explanation": "Suvorexant is an orexin receptor antagonist used for insomnia, blocking wake-promoting orexin neuropeptides."
+            },
+            {
+              "stem": "A 40-year-old man with a history of alcohol dependence is prescribed acamprosate. Which neurotransmitter system is primarily affected by this drug?",
+              "options": [
+                "a) GABA",
+                "b) Glutamate",
+                "c) Dopamine",
+                "d) Serotonin"
+              ],
+              "answer": "b) Glutamate",
+              "explanation": "Acamprosate modulates glutamate neurotransmission, reducing craving and relapse in alcohol dependence."
+            },
+            {
+              "stem": "A 35-year-old woman with a history of bipolar disorder is prescribed valproate. Which laboratory parameter should be monitored most closely?",
+              "options": [
+                "a) Serum sodium",
+                "b) Serum potassium",
+                "c) Serum liver enzymes",
+                "d) Serum calcium"
+              ],
+              "answer": "c) Serum liver enzymes",
+              "explanation": "Valproate can cause hepatotoxicity; monitoring liver enzymes is essential, especially in the first few months of therapy."
+            },
+            {
+              "stem": "A 28-year-old man with a history of panic disorder is prescribed alprazolam. Which adverse effect is most likely with long-term use?",
+              "options": [
+                "a) Hypertension",
+                "b) Tolerance and dependence",
+                "c) Hyperglycemia",
+                "d) Bradycardia"
+              ],
+              "answer": "b) Tolerance and dependence",
+              "explanation": "Benzodiazepines like alprazolam can lead to tolerance and physical dependence with prolonged use."
+            },
+            {
+              "stem": "A 50-year-old woman with chronic pain is prescribed gabapentin. Which receptor is targeted by this drug?",
+              "options": [
+                "a) GABA-A receptor",
+                "b) Voltage-gated calcium channels (α2δ subunit)",
+                "c) NMDA receptor",
+                "d) Opioid receptor"
+              ],
+              "answer": "b) Voltage-gated calcium channels (α2δ subunit)",
+              "explanation": "Gabapentin binds to the α2δ subunit of voltage-gated calcium channels, reducing excitatory neurotransmitter release."
+            },
+            {
+              "stem": "A 30-year-old man with a history of schizophrenia is prescribed olanzapine. Which metabolic adverse effect is most likely?",
+              "options": [
+                "a) Hypercalcemia",
+                "b) Weight gain and dyslipidemia",
+                "c) Hypothyroidism",
+                "d) Hyponatremia"
+              ],
+              "answer": "b) Weight gain and dyslipidemia",
+              "explanation": "Olanzapine, an atypical antipsychotic, is associated with significant weight gain and metabolic syndrome."
+            },
+            {
+              "stem": "A 45-year-old woman with a history of depression is prescribed venlafaxine. Which neurotransmitter system is primarily affected by this drug?",
+              "options": [
+                "a) Dopamine",
+                "b) Norepinephrine and serotonin",
+                "c) GABA",
+                "d) Histamine"
+              ],
+              "answer": "b) Norepinephrine and serotonin",
+              "explanation": "Venlafaxine is a serotonin-norepinephrine reuptake inhibitor (SNRI) that increases levels of both serotonin and norepinephrine."
+            },
+            {
+              "stem": "A 25-year-old man with a history of seizures is prescribed levetiracetam. Which adverse effect is most likely?",
+              "options": [
+                "a) Hepatotoxicity",
+                "b) Behavioral changes (e.g., irritability)",
+                "c) Agranulocytosis",
+                "d) Nephrotoxicity"
+              ],
+              "answer": "b) Behavioral changes (e.g., irritability)",
+              "explanation": "Levetiracetam is associated with neuropsychiatric adverse effects, including irritability and behavioral changes."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 45-year-old woman presents with chronic urticaria unresponsive to second-generation H1 antihistamines. Her physician considers adding a first-generation H1 antihistamine.\n\na) List two first-generation H1 antihistamines that could be considered. (1 mark)\nb) Explain why first-generation H1 antihistamines are generally avoided in the elderly. (2 marks)\nc) State one non-sedating alternative class of drugs that could be considered for this patient. (2 marks)",
+              "modelAnswer": "a) Two first-generation H1 antihistamines: diphenhydramine, chlorpheniramine.\nb) First-generation H1 antihistamines are generally avoided in the elderly due to their anticholinergic effects (e.g., confusion, dry mouth, urinary retention) and increased risk of falls and cognitive impairment.\nc) Non-sedating alternative: leukotriene receptor antagonists (e.g., montelukast)."
+            },
+            {
+              "stem": "A 30-year-old man with a history of hypertension and seasonal allergies is prescribed terfenadine. He is also taking ketoconazole for a fungal infection.\n\na) Explain the pharmacokinetic interaction between terfenadine and ketoconazole. (2 marks)\nb) State the most serious adverse effect that can result from this interaction. (1 mark)\nc) What is the mechanism of action of terfenadine? (2 marks)",
+              "modelAnswer": "a) Ketoconazole is a potent inhibitor of CYP3A4, the enzyme responsible for metabolizing terfenadine. This inhibition leads to elevated terfenadine levels in the blood.\nb) The most serious adverse effect is torsades de pointes, a life-threatening ventricular arrhythmia.\nc) Terfenadine is a selective H1 receptor antagonist that blocks histamine-mediated effects in allergic reactions."
+            },
+            {
+              "stem": "A 55-year-old woman with a history of migraine presents with worsening headaches. Her physician considers adding methysergide for prophylaxis.\n\na) State the primary receptor targeted by methysergide. (1 mark)\nb) List two serious adverse effects associated with long-term use of methysergide. (2 marks)\nc) Name one alternative prophylactic drug class for migraine that does not carry these risks. (2 marks)",
+              "modelAnswer": "a) Methysergide primarily targets 5-HT2 receptors.\nb) Two serious adverse effects: retroperitoneal fibrosis, endocardial fibrosis.\nc) Alternative prophylactic drug class: beta-blockers (e.g., propranolol)."
+            },
+            {
+              "stem": "A 40-year-old man with schizophrenia is prescribed haloperidol. He develops extrapyramidal symptoms shortly after starting treatment.\n\na) Name two extrapyramidal symptoms that may occur with haloperidol. (2 marks)\nb) Explain the mechanism by which haloperidol causes these symptoms. (2 marks)\nc) State one strategy to manage these symptoms. (1 mark)",
+              "modelAnswer": "a) Two extrapyramidal symptoms: parkinsonism (e.g., tremor, rigidity), acute dystonia.\nb) Haloperidol is a potent dopamine D2 receptor antagonist in the nigrostriatal pathway, leading to an imbalance in dopamine and acetylcholine, resulting in extrapyramidal symptoms.\nc) One strategy: administer an anticholinergic drug (e.g., benztropine) or switch to an atypical antipsychotic (e.g., quetiapine)."
+            },
+            {
+              "stem": "A 35-year-old woman with bipolar disorder is prescribed lithium. She is also taking hydrochlorothiazide for hypertension.\n\na) Explain why lithium levels should be monitored closely in this patient. (2 marks)\nb) State two adverse effects of lithium that require monitoring. (2 marks)\nc) Name one alternative mood stabilizer that does not require therapeutic drug monitoring. (1 mark)",
+              "modelAnswer": "a) Hydrochlorothiazide is a thiazide diuretic that can cause sodium depletion, leading to increased lithium reabsorption in the kidneys and elevated lithium levels.\nb) Two adverse effects: nephrotoxicity (monitor serum creatinine), thyroid dysfunction (monitor TSH).\nc) Alternative mood stabilizer: valproate."
+            },
+            {
+              "stem": "A 28-year-old man with generalized anxiety disorder is prescribed diazepam. He asks about the risk of dependence.\n\na) Explain the mechanism of action of diazepam. (2 marks)\nb) State two risk factors for benzodiazepine dependence. (2 marks)\nc) Name the antidote for benzodiazepine overdose. (1 mark)",
+              "modelAnswer": "a) Diazepam enhances GABAergic neurotransmission by binding to the GABA-A receptor complex, acting as a positive allosteric modulator.\nb) Two risk factors: prolonged use (>4 weeks), history of substance abuse.\nc) Antidote: flumazenil."
+            },
+            {
+              "stem": "A 50-year-old woman with chronic pain is prescribed gabapentin.\n\na) State the primary receptor targeted by gabapentin. (1 mark)\nb) Explain how gabapentin reduces chronic pain. (2 marks)\nc) Name one adverse effect of gabapentin that requires monitoring. (2 marks)",
+              "modelAnswer": "a) Gabapentin targets the α2δ subunit of voltage-gated calcium channels.\nb) Gabapentin reduces excitatory neurotransmitter release in the central nervous system, thereby decreasing pain transmission.\nc) One adverse effect: dizziness (monitor for falls, especially in the elderly)."
+            },
+            {
+              "stem": "A 30-year-old man with a history of depression is prescribed venlafaxine.\n\na) State the primary neurotransmitter systems affected by venlafaxine. (1 mark)\nb) Explain why venlafaxine is classified as an SNRI rather than an SSRI. (2 marks)\nc) Name one adverse effect of venlafaxine that is more common than with SSRIs. (2 marks)",
+              "modelAnswer": "a) Venlafaxine primarily affects norepinephrine and serotonin neurotransmitter systems.\nb) Venlafaxine inhibits the reuptake of both serotonin and norepinephrine, whereas SSRIs selectively inhibit serotonin reuptake.\nc) One adverse effect: hypertension (due to norepinephrine reuptake inhibition)."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 45-year-old woman presents with a 6-month history of chronic urticaria unresponsive to second-generation H1 antihistamines (e.g., cetirizine, loratadine). She reports significant pruritus and sleep disturbance due to symptoms. Her past medical history includes hypertension (controlled on lisinopril) and type 2 diabetes mellitus. She has no known drug allergies.\n\na) Outline a stepwise approach to managing this patient’s chronic urticaria, including non-pharmacological and pharmacological strategies. (8 marks)\nb) Discuss the rationale for avoiding first-generation H1 antihistamines in this patient, considering her comorbidities. (4 marks)\nc) State two alternative drug classes that could be considered if H1 antihistamines fail, and justify your choices. (3 marks)",
+              "modelAnswer": "a) Stepwise approach to managing chronic urticaria:\n   - Non-pharmacological strategies:\n     1. Identify and avoid triggers (e.g., heat, stress, certain foods, medications like NSAIDs).\n     2. Use cool compresses or anti-itch lotions (e.g., calamine) for symptomatic relief.\n     3. Patient education on the chronic nature of urticaria and the importance of adherence.\n   - Pharmacological strategies:\n     1. Optimize second-generation H1 antihistamine therapy (e.g., increase cetirizine to 20 mg daily or switch to fexofenadine 180 mg daily).\n     2. Consider adding a leukotriene receptor antagonist (e.g., montelukast 10 mg daily) if symptoms persist.\n     3. If still unresponsive, consider short-term use of a first-generation H1 antihistamine at night (e.g., diphenhydramine 25 mg) for sleep disturbance, with caution.\n     4. Consider omalizumab (anti-IgE monoclonal antibody) if symptoms remain uncontrolled despite above measures.\n     5. For severe refractory cases, consider short courses of oral corticosteroids (e.g., prednisone 20-30 mg daily for 5-7 days), but avoid long-term use due to adverse effects.\n\nb) Rationale for avoiding first-generation H1 antihistamines in this patient:\n   - Anticholinergic effects: First-generation H1 antihistamines (e.g., diphenhydramine) have significant anticholinergic activity, which can exacerbate dry mouth, constipation, and urinary retention—particularly problematic in a patient with diabetes.\n   - Sedation: These drugs cross the blood-brain barrier, causing sedation and impairing cognitive function, which may worsen her sleep disturbance and increase the risk of falls.\n   - Cardiovascular effects: Some first-generation H1 antihistamines (e.g., diphenhydramine) can cause tachycardia or QT prolongation, which may interact with her lisinopril (though less likely, it is still a consideration).\n   - Cognitive impairment: Elderly patients (or those with comorbidities) are at higher risk of delirium or confusion with anticholinergic drugs.\n\nc) Two alternative drug classes and justification:\n   1. Leukotriene receptor antagonists (e.g., montelukast): These drugs block leukotriene D4 receptors, reducing inflammation and pruritus in chronic urticaria. They are well-tolerated and do not cause sedation or significant anticholinergic effects, making them a safer alternative in this patient.\n   2. Omalizumab (anti-IgE monoclonal antibody): Omalizumab binds to circulating IgE, preventing its interaction with mast cells and reducing histamine release. It is highly effective in chronic spontaneous urticaria unresponsive to antihistamines and does not carry the risks associated with first-generation H1 antihistamines or corticosteroids."
+            },
+            {
+              "stem": "A 30-year-old man with a history of schizophrenia presents to the emergency department with acute dystonia (oculogyric crisis) shortly after receiving his first dose of haloperidol.\n\na) Explain the mechanism by which haloperidol causes acute dystonia. (5 marks)\nb) Outline the immediate management of this patient’s acute dystonia, including pharmacological and non-pharmacological strategies. (5 marks)\nc) Discyze the long-term management strategies to prevent recurrence of extrapyramidal symptoms in this patient, including drug selection and monitoring. (5 marks)",
+              "modelAnswer": "a) Mechanism of haloperidol-induced acute dystonia:\n   - Haloperidol is a typical antipsychotic with high potency as a dopamine D2 receptor antagonist.\n   - The nigrostriatal dopamine pathway is critical for regulating movement. Blockade of D2 receptors in this pathway disrupts the balance between dopamine and acetylcholine, leading to an excess of cholinergic activity.\n   - This cholinergic excess manifests as acute dystonia, characterized by involuntary muscle contractions (e.g., oculogyric crisis, torticollis, or limb dystonia).\n   - Acute dystonia typically occurs within the first few days of starting haloperidol or increasing the dose, as the brain’s compensatory mechanisms are overwhelmed.\n\nb) Immediate management of acute dystonia:\n   - Pharmacological strategies:\n     1. Administer an anticholinergic drug (e.g., benztropine 1-2 mg IV/IM or diphenhydramine 25-50 mg IV/IM) to restore the dopamine-acetylcholine balance. This typically resolves symptoms within minutes to hours.\n     2. If symptoms persist, consider a benzodiazepine (e.g., lorazepam 1-2 mg IV) for muscle relaxation.\n   - Non-pharmacological strategies:\n     1. Reassure the patient and provide a calm environment to reduce anxiety, which may exacerbate symptoms.\n     2. Monitor vital signs and ensure airway patency, as severe dystonia can impair breathing.\n     3. Document the event and adjust future antipsychotic dosing to minimize recurrence.\n\nc) Long-term management strategies to prevent recurrence:\n   - Drug selection:\n     1. Switch to an atypical antipsychotic with lower extrapyramidal symptom (EPS) liability (e.g., quetiapine, olanzapine, or aripiprazole). These drugs have a lower affinity for D2 receptors and a more balanced receptor profile, reducing the risk of EPS.\n     2. Consider clozapine in treatment-resistant schizophrenia, as it has negligible risk of EPS but requires strict monitoring for agranulocytosis.\n     3. If an atypical antipsychotic is not feasible, use the lowest effective dose of haloperidol and consider adjunctive anticholinergic prophylaxis (e.g., benztropine 1-2 mg daily) during initiation.\n   - Monitoring:\n     1. Regularly assess for EPS using validated scales (e.g., Simpson-Angus Scale) at each follow-up visit.\n     2. Monitor for metabolic adverse effects (e.g., weight gain, dyslipidemia, hyperglycemia) with atypical antipsychotics.\n     3. Educate the patient on recognizing early signs of EPS (e.g., stiffness, restlessness) and the importance of reporting symptoms promptly.\n   - Alternative strategies:\n     1. Consider adjunctive use of a dopamine partial agonist (e.g., aripiprazole) to balance dopamine activity and reduce EPS risk.\n     2. Explore non-pharmacological interventions (e.g., cognitive behavioral therapy) to reduce stress, which may exacerbate psychotic symptoms and EPS."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Autacoids, Inflammation & CNS",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 34-year-old woman presents with chronic urticaria unresponsive to second-generation H1 antihistamines. Which of the following H1 antihistamines has the highest anticholinergic activity among first-generation agents?",
+              "options": [
+                "a) Loratadine",
+                "b) Cetirizine",
+                "c) Diphenhydramine",
+                "d) Fexofenadine"
+              ],
+              "answer": "c) Diphenhydramine",
+              "explanation": "Diphenhydramine is a first-generation H1 antihistamine with significant anticholinergic activity, unlike second-generation agents (loratadine, cetirizine, fexofenadine)."
+            },
+            {
+              "stem": "A 28-year-old man with allergic rhinitis is prescribed a second-generation H1 antihistamine. Which of the following properties is LEAST likely to be associated with second-generation H1 antihistamines compared to first-generation agents?",
+              "options": [
+                "a) Sedation",
+                "b) Anti-5-HT activity",
+                "c) Appetite stimulation",
+                "d) Anticholinergic effects"
+              ],
+              "answer": "a) Sedation",
+              "explanation": "Second-generation H1 antihistamines (e.g., loratadine, cetirizine) are less sedating due to reduced CNS penetration compared to first-generation agents."
+            },
+            {
+              "stem": "A 45-year-old woman with seasonal allergic rhinitis is prescribed terfenadine. She is also taking ketoconazole for a fungal infection. Which of the following adverse effects is most likely to occur due to drug interaction?",
+              "options": [
+                "a) Hypertension",
+                "b) QT prolongation",
+                "c) Hypoglycemia",
+                "d) Bradycardia"
+              ],
+              "answer": "b) QT prolongation",
+              "explanation": "Terfenadine is metabolized by CYP3A4, and ketoconazole inhibits this enzyme, leading to elevated terfenadine levels and risk of QT prolongation."
+            },
+            {
+              "stem": "A 50-year-old man with a history of migraine presents with acute severe headache. Which of the following serotonin receptors is primarily targeted by triptans for migraine relief?",
+              "options": [
+                "a) 5-HT1",
+                "b) 5-HT2",
+                "c) 5-HT3",
+                "d) 5-HT4"
+              ],
+              "answer": "a) 5-HT1",
+              "explanation": "Triptans (e.g., sumatriptan) are 5-HT1B/1D receptor agonists used for acute migraine treatment."
+            },
+            {
+              "stem": "A 30-year-old woman with chronic migraine is started on propranolol for prophylaxis. Which of the following is the primary mechanism of action of propranolol in migraine prophylaxis?",
+              "options": [
+                "a) 5-HT2 receptor antagonism",
+                "b) Beta-adrenergic blockade",
+                "c) Calcium channel blockade",
+                "d) Dopamine receptor antagonism"
+              ],
+              "answer": "b) Beta-adrenergic blockade",
+              "explanation": "Propranolol, a non-selective beta-blocker, reduces migraine frequency by blocking beta-adrenergic receptors."
+            },
+            {
+              "stem": "A 60-year-old man with a history of hypertension and migraine is prescribed methysergide for prophylaxis. Which of the following adverse effects is most concerning with long-term methysergide use?",
+              "options": [
+                "a) Pulmonary fibrosis",
+                "b) Retroperitoneal fibrosis",
+                "c) Hepatic cirrhosis",
+                "d) Renal failure"
+              ],
+              "answer": "b) Retroperitoneal fibrosis",
+              "explanation": "Methysergide, a 5-HT2 receptor antagonist, is associated with retroperitoneal and pleural fibrosis with prolonged use."
+            },
+            {
+              "stem": "A 25-year-old woman with a history of severe nausea and vomiting during chemotherapy is prescribed ondansetron. Which serotonin receptor does ondansetron primarily antagonize to prevent chemotherapy-induced emesis?",
+              "options": [
+                "a) 5-HT1",
+                "b) 5-HT2",
+                "c) 5-HT3",
+                "d) 5-HT4"
+              ],
+              "answer": "c) 5-HT3",
+              "explanation": "Ondansetron is a selective 5-HT3 receptor antagonist used to prevent chemotherapy-induced nausea and vomiting."
+            },
+            {
+              "stem": "A 40-year-old man with ergotism presents with symptoms of peripheral ischemia. Which of the following ergot alkaloids is most likely responsible for his condition?",
+              "options": [
+                "a) Ergotamine",
+                "b) Sumatriptan",
+                "c) Dihydroergotamine",
+                "d) Methysergide"
+              ],
+              "answer": "a) Ergotamine",
+              "explanation": "Ergotamine, used for migraine, can cause ergotism (vasoconstriction and ischemia) with prolonged or excessive use."
+            },
+            {
+              "stem": "A 55-year-old woman with a history of hypertension and migraine is prescribed dihydroergotamine (DHE) for acute treatment. Which of the following properties of DHE is most relevant to its use in migraine?",
+              "options": [
+                "a) Oxytocic effect",
+                "b) Vasoconstrictive effect",
+                "c) Sedative effect",
+                "d) Anticholinergic effect"
+              ],
+              "answer": "b) Vasoconstrictive effect",
+              "explanation": "Dihydroergotamine is a vasoconstrictor used for acute migraine treatment, though it can cause vasospasm."
+            },
+            {
+              "stem": "A 35-year-old man with insomnia is prescribed a benzodiazepine. Which of the following is the primary mechanism of action of benzodiazepines?",
+              "options": [
+                "a) GABA-A receptor antagonism",
+                "b) GABA-A receptor potentiation",
+                "c) NMDA receptor antagonism",
+                "d) Dopamine receptor antagonism"
+              ],
+              "answer": "b) GABA-A receptor potentiation",
+              "explanation": "Benzodiazepines enhance GABAergic transmission by binding to the GABA-A receptor complex, leading to sedation."
+            },
+            {
+              "stem": "A 42-year-old woman with benzodiazepine overdose presents to the emergency department. Which of the following is the specific antidote for benzodiazepine toxicity?",
+              "options": [
+                "a) Naloxone",
+                "b) Flumazenil",
+                "c) Atropine",
+                "d) Physostigmine"
+              ],
+              "answer": "b) Flumazenil",
+              "explanation": "Flumazenil is a competitive antagonist at the benzodiazepine binding site on the GABA-A receptor, reversing benzodiazepine toxicity."
+            },
+            {
+              "stem": "A 28-year-old man with a history of seizures is prescribed phenobarbital. Which of the following is a key pharmacokinetic property of barbiturates like phenobarbital?",
+              "options": [
+                "a) CYP450 inhibition",
+                "b) CYP450 induction",
+                "c) Renal excretion unchanged",
+                "d) Minimal hepatic metabolism"
+              ],
+              "answer": "b) CYP450 induction",
+              "explanation": "Barbiturates like phenobarbital induce CYP450 enzymes, increasing the metabolism of many drugs."
+            },
+            {
+              "stem": "A 30-year-old woman with schizophrenia is started on chlorpromazine, a typical antipsychotic. Which of the following adverse effects is most likely due to its dopamine D2 receptor antagonism?",
+              "options": [
+                "a) Hyperprolactinemia",
+                "b) QT prolongation",
+                "c) Sedation",
+                "d) Weight gain"
+              ],
+              "answer": "a) Hyperprolactinemia",
+              "explanation": "Typical antipsychotics like chlorpromazine block dopamine D2 receptors, leading to hyperprolactinemia."
+            },
+            {
+              "stem": "A 45-year-old man with schizophrenia develops tardive dyskinesia after long-term antipsychotic therapy. Which class of antipsychotics is most associated with this extrapyramidal side effect?",
+              "options": [
+                "a) Atypical antipsychotics",
+                "b) Typical antipsychotics",
+                "c) Both typical and atypical",
+                "d) Neither typical nor atypical"
+              ],
+              "answer": "b) Typical antipsychotics",
+              "explanation": "Typical antipsychotics (e.g., haloperidol) are more likely to cause tardive dyskinesia due to strong D2 receptor antagonism."
+            },
+            {
+              "stem": "A 35-year-old woman with bipolar disorder is prescribed olanzapine, an atypical antipsychotic. Which of the following adverse effects is most commonly associated with atypical antipsychotics?",
+              "options": [
+                "a) Extrapyramidal symptoms",
+                "b) Metabolic syndrome",
+                "c) Neuroleptic malignant syndrome",
+                "d) Tardive dyskinesia"
+              ],
+              "answer": "b) Metabolic syndrome",
+              "explanation": "Atypical antipsychotics like olanzapine are associated with weight gain, dyslipidemia, and insulin resistance, contributing to metabolic syndrome."
+            },
+            {
+              "stem": "A 22-year-old man with a history of asthma and allergic rhinitis is prescribed a first-generation H1 antihistamine. Which of the following adverse effects is most likely to limit its use in this patient?",
+              "options": [
+                "a) Sedation",
+                "b) QT prolongation",
+                "c) Hypertension",
+                "d) Hyperglycemia"
+              ],
+              "answer": "a) Sedation",
+              "explanation": "First-generation H1 antihistamines (e.g., diphenhydramine) cause sedation, which may exacerbate asthma or impair daily activities."
+            },
+            {
+              "stem": "A 50-year-old woman with chronic idiopathic urticaria is started on cetirizine. Which of the following properties of cetirizine contributes to its lack of sedation?",
+              "options": [
+                "a) High lipophilicity",
+                "b) Low CNS penetration",
+                "c) Short half-life",
+                "d) High protein binding"
+              ],
+              "answer": "b) Low CNS penetration",
+              "explanation": "Cetirizine, a second-generation H1 antihistamine, has low CNS penetration, reducing sedation compared to first-generation agents."
+            },
+            {
+              "stem": "A 38-year-old man with a history of hypertension and migraine is prescribed verapamil for prophylaxis. Which of the following is the primary mechanism of action of verapamil in migraine prophylaxis?",
+              "options": [
+                "a) 5-HT2 receptor antagonism",
+                "b) Calcium channel blockade",
+                "c) Beta-adrenergic blockade",
+                "d) Dopamine receptor antagonism"
+              ],
+              "answer": "b) Calcium channel blockade",
+              "explanation": "Verapamil, a calcium channel blocker, is used for migraine prophylaxis by reducing vasoconstriction and neuronal excitability."
+            },
+            {
+              "stem": "A 25-year-old woman with a history of motion sickness is prescribed dimenhydrinate, a first-generation H1 antihistamine. Which of the following additional properties of dimenhydrinate contributes to its antiemetic effect?",
+              "options": [
+                "a) 5-HT3 receptor antagonism",
+                "b) Muscarinic receptor antagonism",
+                "c) Dopamine receptor antagonism",
+                "d) NMDA receptor antagonism"
+              ],
+              "answer": "b) Muscarinic receptor antagonism",
+              "explanation": "Dimenhydrinate has anticholinergic (muscarinic) activity, contributing to its antiemetic effect in motion sickness."
+            },
+            {
+              "stem": "A 40-year-old man with a history of peptic ulcer disease is prescribed nizatidine, an H2 receptor antagonist. Which of the following is the primary clinical use of H2 receptor antagonists?",
+              "options": [
+                "a) Allergic rhinitis",
+                "b) Peptic ulcer disease",
+                "c) Migraine prophylaxis",
+                "d) Insomnia"
+              ],
+              "answer": "b) Peptic ulcer disease",
+              "explanation": "H2 receptor antagonists (e.g., nizatidine) reduce gastric acid secretion and are used for peptic ulcer disease and gastroesophageal reflux."
+            },
+            {
+              "stem": "A 30-year-old woman with a history of insomnia is prescribed zolpidem, a Z-drug. Which of the following is the primary mechanism of action of zolpidem?",
+              "options": [
+                "a) GABA-A receptor antagonism",
+                "b) GABA-A receptor potentiation",
+                "c) NMDA receptor antagonism",
+                "d) Dopamine receptor antagonism"
+              ],
+              "answer": "b) GABA-A receptor potentiation",
+              "explanation": "Zolpidem, a non-benzodiazepine hypnotic, potentiates GABA-A receptor activity, similar to benzodiazepines but with a different binding site."
+            },
+            {
+              "stem": "A 55-year-old man with a history of alcohol dependence is prescribed chlordiazepoxide for alcohol withdrawal. Which of the following benzodiazepines has a long half-life and is preferred for alcohol withdrawal?",
+              "options": [
+                "a) Lorazepam",
+                "b) Diazepam",
+                "c) Midazolam",
+                "d) Alprazolam"
+              ],
+              "answer": "b) Diazepam",
+              "explanation": "Diazepam has a long half-life and active metabolites, making it suitable for gradual tapering in alcohol withdrawal."
+            },
+            {
+              "stem": "A 28-year-old woman with schizophrenia is started on risperidone, an atypical antipsychotic. Which of the following adverse effects is most likely to occur with risperidone compared to typical antipsychotics?",
+              "options": [
+                "a) Extrapyramidal symptoms",
+                "b) Tardive dyskinesia",
+                "c) Metabolic syndrome",
+                "d) Neuroleptic malignant syndrome"
+              ],
+              "answer": "c) Metabolic syndrome",
+              "explanation": "Atypical antipsychotics like risperidone are associated with metabolic adverse effects (weight gain, dyslipidemia, insulin resistance)."
+            },
+            {
+              "stem": "A 42-year-old man with a history of bipolar disorder is prescribed quetiapine, an atypical antipsychotic. Which of the following is a key advantage of quetiapine over typical antipsychotics?",
+              "options": [
+                "a) Lower risk of extrapyramidal symptoms",
+                "b) Higher risk of tardive dyskinesia",
+                "c) Greater anticholinergic activity",
+                "d) Shorter duration of action"
+              ],
+              "answer": "a) Lower risk of extrapyramidal symptoms",
+              "explanation": "Quetiapine, an atypical antipsychotic, has a lower risk of extrapyramidal symptoms compared to typical antipsychotics."
+            },
+            {
+              "stem": "A 35-year-old woman with a history of depression and insomnia is prescribed amitriptyline, a tricyclic antidepressant. Which of the following properties of amitriptyline contributes to its sedative effect?",
+              "options": [
+                "a) H1 receptor antagonism",
+                "b) 5-HT3 receptor antagonism",
+                "c) Dopamine receptor antagonism",
+                "d) NMDA receptor antagonism"
+              ],
+              "answer": "a) H1 receptor antagonism",
+              "explanation": "Amitriptyline has strong H1 receptor antagonism, contributing to its sedative and antihistaminic effects."
+            },
+            {
+              "stem": "A 50-year-old man with a history of hypertension and migraine is prescribed propranolol. Which of the following is a contraindication to propranolol use?",
+              "options": [
+                "a) Asthma",
+                "b) Diabetes",
+                "c) Hypertension",
+                "d) Migraine"
+              ],
+              "answer": "a) Asthma",
+              "explanation": "Propranolol, a non-selective beta-blocker, is contraindicated in patients with asthma due to risk of bronchospasm."
+            },
+            {
+              "stem": "A 25-year-old woman with a history of allergic rhinitis is prescribed fexofenadine. Which of the following properties of fexofenadine contributes to its lack of sedation?",
+              "options": [
+                "a) High lipophilicity",
+                "b) Low CNS penetration",
+                "c) Short half-life",
+                "d) High protein binding"
+              ],
+              "answer": "b) Low CNS penetration",
+              "explanation": "Fexofenadine, a second-generation H1 antihistamine, has low CNS penetration, reducing sedation."
+            },
+            {
+              "stem": "A 40-year-old man with a history of schizophrenia is prescribed haloperidol, a typical antipsychotic. Which of the following is a key adverse effect of haloperidol?",
+              "options": [
+                "a) Hyperprolactinemia",
+                "b) Metabolic syndrome",
+                "c) QT prolongation",
+                "d) Weight loss"
+              ],
+              "answer": "a) Hyperprolactinemia",
+              "explanation": "Haloperidol, a typical antipsychotic, blocks dopamine D2 receptors, leading to hyperprolactinemia."
+            },
+            {
+              "stem": "A 30-year-old woman with a history of insomnia is prescribed zaleplon, a Z-drug. Which of the following is a key advantage of zaleplon over benzodiazepines?",
+              "options": [
+                "a) Shorter duration of action",
+                "b) Longer half-life",
+                "c) Greater sedation",
+                "d) Higher risk of dependence"
+              ],
+              "answer": "a) Shorter duration of action",
+              "explanation": "Zaleplon has a shorter duration of action, reducing next-day sedation and dependence risk compared to benzodiazepines."
+            },
+            {
+              "stem": "A 55-year-old man with a history of hypertension and migraine is prescribed verapamil. Which of the following is a key adverse effect of verapamil?",
+              "options": [
+                "a) Hypotension",
+                "b) Hyperglycemia",
+                "c) Bradycardia",
+                "d) Tachycardia"
+              ],
+              "answer": "c) Bradycardia",
+              "explanation": "Verapamil, a calcium channel blocker, can cause bradycardia due to its negative chronotropic effects."
+            },
+            {
+              "stem": "A 28-year-old woman with a history of motion sickness is prescribed meclizine, a first-generation H1 antihistamine. Which of the following additional properties of meclizine contributes to its antiemetic effect?",
+              "options": [
+                "a) 5-HT3 receptor antagonism",
+                "b) Muscarinic receptor antagonism",
+                "c) Dopamine receptor antagonism",
+                "d) NMDA receptor antagonism"
+              ],
+              "answer": "b) Muscarinic receptor antagonism",
+              "explanation": "Meclizine has anticholinergic (muscarinic) activity, contributing to its antiemetic effect in motion sickness."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "a) Compare and contrast the mechanisms of action of H1 and H2 antihistamines. (3 marks)\nb) Provide one clinical indication for each receptor subtype. (2 marks)",
+              "modelAnswer": "a) H1 antihistamines block histamine H1 receptors, preventing histamine-mediated effects such as vasodilation, increased vascular permeability, and smooth muscle contraction. H2 antihistamines block H2 receptors, primarily reducing gastric acid secretion in parietal cells.\nb) Clinical indications: H1 antihistamines (e.g., diphenhydramine) for allergic rhinitis or urticaria; H2 antihistamines (e.g., famotidine) for peptic ulcer disease or gastroesophageal reflux."
+            },
+            {
+              "stem": "a) List three first-generation H1 antihistamines. (1.5 marks)\nb) Describe two adverse effects associated with first-generation H1 antihistamines. (2 marks)\nc) Explain why second-generation H1 antihistamines are preferred in most clinical scenarios. (1.5 marks)",
+              "modelAnswer": "a) First-generation H1 antihistamines: diphenhydramine, chlorpheniramine, promethazine.\nb) Adverse effects: sedation, anticholinergic effects (e.g., dry mouth, urinary retention), and appetite stimulation.\nc) Second-generation H1 antihistamines (e.g., loratadine, cetirizine) are preferred due to reduced sedation (lower CNS penetration), fewer anticholinergic effects, and longer duration of action."
+            },
+            {
+              "stem": "a) Explain the mechanism of action of triptans in the treatment of acute migraine. (2 marks)\nb) List two contraindications to triptan use. (2 marks)\nc) Provide one example of a triptan. (1 mark)",
+              "modelAnswer": "a) Triptans (e.g., sumatriptan) are 5-HT1B/1D receptor agonists that cause vasoconstriction of intracranial blood vessels and inhibit the release of pro-inflammatory neuropeptides.\nb) Contraindications: uncontrolled hypertension, ischemic heart disease, or history of stroke/TIA.\nc) Example: sumatriptan."
+            },
+            {
+              "stem": "a) Compare the mechanisms of action of typical and atypical antipsychotics. (3 marks)\nb) List two adverse effects more commonly associated with typical antipsychotics. (2 marks)",
+              "modelAnswer": "a) Typical antipsychotics (e.g., haloperidol) primarily block dopamine D2 receptors, leading to extrapyramidal symptoms. Atypical antipsychotics (e.g., risperidone) have a broader receptor profile, including 5-HT2A antagonism, with lower risk of extrapyramidal symptoms.\nb) Adverse effects: extrapyramidal symptoms (e.g., parkinsonism, akathisia) and tardive dyskinesia."
+            },
+            {
+              "stem": "a) Describe the mechanism of action of benzodiazepines. (2 marks)\nb) List two clinical indications for benzodiazepines. (2 marks)\nc) Explain the role of flumazenil in benzodiazepine toxicity. (1 mark)",
+              "modelAnswer": "a) Benzodiazepines enhance GABAergic transmission by binding to the GABA-A receptor complex, increasing chloride ion influx and neuronal inhibition.\nb) Clinical indications: anxiety, insomnia, seizures, alcohol withdrawal.\nc) Flumazenil is a competitive antagonist at the benzodiazepine binding site on the GABA-A receptor, reversing benzodiazepine toxicity."
+            },
+            {
+              "stem": "a) Explain the mechanism of action of barbiturates. (2 marks)\nb) List two adverse effects associated with barbiturate use. (2 marks)\nc) Describe one key pharmacokinetic property of barbiturates. (1 mark)",
+              "modelAnswer": "a) Barbiturates (e.g., phenobarbital) enhance GABAergic transmission by binding to the GABA-A receptor complex, prolonging chloride channel opening and neuronal inhibition.\nb) Adverse effects: respiratory depression, dependence, and tolerance.\nc) Barbiturates induce CYP450 enzymes, increasing the metabolism of many drugs."
+            },
+            {
+              "stem": "a) Compare the mechanisms of action of ergotamine and dihydroergotamine (DHE) in migraine treatment. (3 marks)\nb) List one adverse effect associated with ergot alkaloids. (2 marks)",
+              "modelAnswer": "a) Ergotamine and DHE are non-selective 5-HT1 receptor agonists that cause vasoconstriction of intracranial blood vessels and inhibit neurogenic inflammation. DHE has a shorter half-life and lower vasoconstrictive potency than ergotamine.\nb) Adverse effect: ergotism (vasoconstriction leading to ischemia, gangrene, or fibrosis)."
+            },
+            {
+              "stem": "a) Describe the mechanism of action of ondansetron. (2 marks)\nb) List two clinical indications for ondansetron. (2 marks)\nc) Explain why ondansetron is preferred over older antiemetics in chemotherapy-induced nausea and vomiting. (1 mark)",
+              "modelAnswer": "a) Ondansetron is a selective 5-HT3 receptor antagonist that blocks serotonin-mediated activation of the chemoreceptor trigger zone and vagal afferents.\nb) Clinical indications: chemotherapy-induced nausea and vomiting, postoperative nausea and vomiting.\nc) Ondansetron is preferred due to its high efficacy, lack of extrapyramidal effects, and minimal sedation compared to older antiemetics (e.g., metoclopramide)."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 45-year-old woman presents with a 6-month history of chronic migraine refractory to over-the-counter analgesics. She has a history of hypertension and mild asthma. Her current medications include lisinopril and a salbutamol inhaler.\n\nDiscuss the pharmacological management of her chronic migraine, including:\na) First-line prophylactic therapy and rationale. (5 marks)\nb) Alternative prophylactic options if first-line therapy is ineffective or contraindicated. (5 marks)\nc) Acute treatment options for breakthrough migraine attacks. (5 marks)",
+              "modelAnswer": "a) First-line prophylactic therapy: Propranolol (non-selective beta-blocker) is recommended as first-line prophylaxis for chronic migraine due to its efficacy in reducing migraine frequency and its cardioprotective effects in patients with hypertension. Rationale: Propranolol reduces neuronal hyperexcitability and vasoconstriction by blocking beta-adrenergic receptors. It is contraindicated in asthma, but the patient's mild asthma may allow cautious use with monitoring.\n\nb) Alternative prophylactic options:\n  - Amitriptyline (tricyclic antidepressant): Effective for migraine prophylaxis and may also improve sleep and comorbid depression. Monitor for anticholinergic effects (e.g., dry mouth, urinary retention) and sedation.\n  - Verapamil (calcium channel blocker): Alternative for patients intolerant to beta-blockers. Monitor for bradycardia and hypotension.\n  - Topiramate (anticonvulsant): Effective for migraine prophylaxis but may cause weight loss, paresthesia, or cognitive impairment. Avoid in patients with a history of kidney stones.\n  - Methysergide (5-HT2 antagonist): Reserved for refractory cases due to risk of retroperitoneal fibrosis. Requires drug holidays and close monitoring.\n\nc) Acute treatment options for breakthrough migraine attacks:\n  - Triptans (e.g., sumatriptan): First-line for acute migraine due to their efficacy in vasoconstriction and inhibition of neurogenic inflammation. Contraindicated in uncontrolled hypertension or ischemic heart disease.\n  - NSAIDs (e.g., ibuprofen, naproxen): Effective for mild-to-moderate attacks. Monitor for GI bleeding and renal impairment.\n  - Combination therapy (e.g., sumatriptan + naproxen): May be more effective than monotherapy for severe attacks.\n  - Antiemetics (e.g., metoclopramide, ondansetron): Useful for nausea and vomiting associated with migraine. Ondansetron is preferred due to fewer extrapyramidal effects."
+            },
+            {
+              "stem": "A 30-year-old man presents with a 3-month history of persistent insomnia. He reports difficulty falling asleep and frequent awakenings, with daytime fatigue affecting his work performance. He has no significant past medical history and takes no regular medications.\n\nDiscuss the pharmacological management of his insomnia, including:\na) Non-pharmacological interventions to consider before prescribing medication. (5 marks)\nb) First-line pharmacological options, including mechanisms of action and rationale. (5 marks)\nc) Adverse effects and monitoring considerations for the prescribed medications. (5 marks)",
+              "modelAnswer": "a) Non-pharmacological interventions:\n  - Sleep hygiene education: Maintain a consistent sleep schedule, avoid caffeine/alcohol/nicotine before bedtime, limit screen time before sleep, and create a relaxing bedtime routine.\n  - Cognitive behavioral therapy for insomnia (CBT-I): Gold standard for chronic insomnia, addressing maladaptive sleep behaviors and cognitive factors.\n  - Stimulus control therapy: Limit time in bed to sleep only, avoid naps, and get out of bed if unable to sleep.\n  - Sleep restriction therapy: Gradually reduce time in bed to match actual sleep time, improving sleep efficiency.\n  - Relaxation techniques: Progressive muscle relaxation, deep breathing exercises, or mindfulness meditation to reduce pre-sleep arousal.\n\nb) First-line pharmacological options:\n  - Z-drugs (e.g., zolpidem, zaleplon): Short-acting non-benzodiazepine hypnotics that potentiate GABA-A receptor activity. Preferred for sleep-onset insomnia due to rapid onset and short duration of action. Zaleplon is particularly useful for middle-of-the-night awakenings.\n  - Melatonin receptor agonists (e.g., ramelteon): Mimic the action of endogenous melatonin, regulating the sleep-wake cycle. Useful for circadian rhythm disorders but less effective for sleep maintenance insomnia.\n  - Low-dose doxepin (tricyclic antidepressant): H1 receptor antagonist with sedative properties. Useful for sleep maintenance insomnia but may cause anticholinergic effects.\n\nc) Adverse effects and monitoring considerations:\n  - Z-drugs: Risk of next-day sedation, dizziness, and complex sleep-related behaviors (e.g., sleepwalking). Monitor for dependence and tolerance. Avoid in patients with a history of substance abuse.\n  - Melatonin receptor agonists: Generally well-tolerated but may cause dizziness, fatigue, or hormonal effects (e.g., prolactin elevation with ramelteon). Monitor for drug interactions (e.g., fluvoxamine increases ramelteon levels).\n  - Low-dose doxepin: Anticholinergic effects (e.g., dry mouth, constipation, urinary retention), orthostatic hypotension, and weight gain. Monitor for QT prolongation in patients with cardiac risk factors.\n\nGeneral monitoring: Assess sleep quality and daytime functioning regularly. Review medication efficacy and adverse effects after 1-2 weeks of initiation. Consider tapering and discontinuing medication if insomnia improves to avoid dependence."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

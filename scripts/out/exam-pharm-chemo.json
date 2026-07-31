@@ -1,0 +1,798 @@
+{
+  "exam-pharm-chemo": {
+    "2": {
+      "title": "Chemotherapeutic Agents",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Which of the following antibiotics inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins (PBPs)?",
+              "options": [
+                "Erythromycin",
+                "Amoxicillin",
+                "Doxycycline",
+                "Gentamicin"
+              ],
+              "answer": "Amoxicillin",
+              "explanation": "Amoxicillin is a beta-lactam antibiotic that binds to PBPs, inhibiting transpeptidase activity required for peptidoglycan cross-linking, leading to cell lysis."
+            },
+            {
+              "stem": "A 35-year-old woman with a history of immediate-type penicillin allergy (urticaria within 1 hour) requires an antibiotic for streptococcal pharyngitis. Which of the following is the MOST appropriate alternative?",
+              "options": [
+                "Cephalexin 500 mg twice daily",
+                "Azithromycin 500 mg on day 1 then 250 mg daily for 4 days",
+                "Amoxicillin 500 mg three times daily (desensitisation)",
+                "Meropenem 1 g three times daily"
+              ],
+              "answer": "Azithromycin 500 mg on day 1 then 250 mg daily for 4 days",
+              "explanation": "In true IgE-mediated penicillin allergy, cephalosporins carry a small (1-3%) cross-reactivity risk. Macrolides (azithromycin) are recommended alternatives for streptococcal pharyngitis. Meropenem is unnecessarily broad."
+            },
+            {
+              "stem": "Which of the following mechanisms BEST describes how macrolide antibiotics inhibit bacterial growth?",
+              "options": [
+                "Inhibition of DNA gyrase",
+                "Binding to the 50S ribosomal subunit inhibiting translocation",
+                "Inhibition of folic acid synthesis",
+                "Disruption of cell membrane integrity"
+              ],
+              "answer": "Binding to the 50S ribosomal subunit inhibiting translocation",
+              "explanation": "Macrolides (e.g., erythromycin, azithromycin) bind reversibly to the 23S rRNA of the 50S ribosomal subunit, blocking the exit tunnel and inhibiting peptide chain elongation and translocation."
+            },
+            {
+              "stem": "A 65-year-old man on simvastatin 40 mg daily is prescribed clarithromycin for a respiratory tract infection. What is the MOST clinically significant interaction?",
+              "options": [
+                "Clarithromycin reduces simvastatin absorption",
+                "Clarithromycin inhibits CYP3A4 increasing simvastatin levels, raising rhabdomyolysis risk",
+                "Simvastatin induces clarithromycin metabolism reducing its efficacy",
+                "Both drugs compete for renal excretion increasing toxicity"
+              ],
+              "answer": "Clarithromycin inhibits CYP3A4 increasing simvastatin levels, raising rhabdomyolysis risk",
+              "explanation": "Clarithromycin is a potent CYP3A4 inhibitor. Simvastatin is metabolised by CYP3A4. Coadministration increases statin levels 8-10 fold, significantly increasing rhabdomyolysis risk. Azithromycin, which does not inhibit CYP3A4, is a safer alternative."
+            },
+            {
+              "stem": "A 28-year-old woman on doxycycline for acne vulgaris develops a rash after sun exposure. Which adverse effect is MOST likely?",
+              "options": [
+                "Stevens-Johnson syndrome",
+                "Photosensitivity reaction",
+                "Fixed drug eruption",
+                "Serum sickness-like reaction"
+              ],
+              "answer": "Photosensitivity reaction",
+              "explanation": "Tetracyclines (especially doxycycline and minocycline) cause photosensitivity by absorbing UV light and generating reactive oxygen species in the skin. Patients should use sun protection and avoid excessive UV exposure."
+            },
+            {
+              "stem": "Gentamicin is prescribed for a 55-year-old woman with Gram-negative sepsis. Which of the following is the MOST important monitoring parameter?",
+              "options": [
+                "Peak and trough gentamicin concentrations",
+                "White blood cell count",
+                "Serum amylase",
+                "Liver function tests"
+              ],
+              "answer": "Peak and trough gentamicin concentrations",
+              "explanation": "Aminoglycosides (gentamicin) require TDM to optimise efficacy (peak/MIC ratio >8-10) and minimise toxicity (trough <1-2 mg/L for once-daily dosing). Nephrotoxicity and ototoxicity are dose-dependent."
+            },
+            {
+              "stem": "Which of the following adverse effects is MOST specifically associated with aminoglycoside therapy?",
+              "options": [
+                "Pseudomembranous colitis",
+                "Irreversible vestibular and cochlear ototoxicity",
+                "Aplastic anaemia",
+                "Pancreatitis"
+              ],
+              "answer": "Irreversible vestibular and cochlear ototoxicity",
+              "explanation": "Aminoglycosides accumulate in inner ear hair cells causing irreversible ototoxicity (vestibular and cochlear). Risk increases with high cumulative dose, prolonged therapy, and concurrent loop diuretics."
+            },
+            {
+              "stem": "A 40-year-old man with pseudomonal urinary tract infection is started on ciprofloxacin. What tendon-related adverse effect requires immediate discontinuation?",
+              "options": [
+                "Tendon xanthomas",
+                "Tendonitis and tendon rupture (especially Achilles)",
+                "Tendon calcification",
+                "Tendon contractures"
+              ],
+              "answer": "Tendonitis and tendon rupture (especially Achilles)",
+              "explanation": "Fluoroquinolones (ciprofloxacin, levofloxacin) increase the risk of tendonitis and tendon rupture by up to 3-fold, affecting the Achilles tendon most commonly. Risk factors include age >60, concurrent corticosteroids, and renal impairment."
+            },
+            {
+              "stem": "A patient on long-term fluconazole for oropharyngeal candidiasis develops elevated liver enzymes. Which alternative antifungal class has a DIFFERENT mechanism of action and may be used?",
+              "options": [
+                "Ketoconazole",
+                "Terbinafine",
+                "Anidulafungin",
+                "Griseofulvin"
+              ],
+              "answer": "Anidulafungin",
+              "explanation": "Anidulafungin is an echinocandin that inhibits fungal cell wall synthesis (beta-glucan synthase), a different target from azoles (lanosterol 14-alpha-demethylase). It has minimal hepatotoxicity and no CYP450 interactions."
+            },
+            {
+              "stem": "Amphotericin B deoxycholate causes which common dose-limiting adverse effect?",
+              "options": [
+                "Ototoxicity",
+                "Nephrotoxicity with potassium and magnesium wasting",
+                "Peripheral neuropathy",
+                "Bone marrow suppression"
+              ],
+              "answer": "Nephrotoxicity with potassium and magnesium wasting",
+              "explanation": "Amphotericin B binds to ergosterol in fungal membranes but also to cholesterol in mammalian cells, causing acute kidney injury, hypokalaemia, and hypomagnesaemia. Saline loading before infusion reduces nephrotoxicity."
+            },
+            {
+              "stem": "Acyclovir is the treatment of choice for herpes simplex encephalitis. What is its mechanism of action?",
+              "options": [
+                "Inhibition of viral DNA polymerase after phosphorylation by viral thymidine kinase",
+                "Blockade of viral neuraminidase preventing viral release",
+                "Inhibition of HIV reverse transcriptase",
+                "Interference with viral mRNA translation"
+              ],
+              "answer": "Inhibition of viral DNA polymerase after phosphorylation by viral thymidine kinase",
+              "explanation": "Acyclovir is a guanosine analogue selectively phosphorylated by viral thymidine kinase (TK) to acyclovir triphosphate, which competitively inhibits viral DNA polymerase and causes chain termination."
+            },
+            {
+              "stem": "A 45-year-old woman with influenza-like illness presents within 48 hours of symptom onset. She has asthma and is at high risk for complications. Which antiviral is MOST appropriate?",
+              "options": [
+                "Acyclovir 400 mg five times daily",
+                "Oseltamivir 75 mg twice daily for 5 days",
+                "Ribavirin 600 mg twice daily",
+                "Amantadine 100 mg twice daily"
+              ],
+              "answer": "Oseltamivir 75 mg twice daily for 5 days",
+              "explanation": "Oseltamivir, a neuraminidase inhibitor, is effective against influenza A and B when started within 48 hours. It reduces symptom duration and complication rates in high-risk patients. Amantadine is not recommended due to widespread resistance."
+            },
+            {
+              "stem": "Which of the following is the MOST common adverse effect of the RHZE regimen for tuberculosis?",
+              "options": [
+                "Peripheral neuropathy",
+                "Hepatotoxicity",
+                "Optic neuritis",
+                "Orange discolouration of body fluids"
+              ],
+              "answer": "Hepatotoxicity",
+              "explanation": "Hepatotoxicity is the most serious common adverse effect of RHZE therapy, primarily due to isoniazid (via toxic hydrazine metabolites) and rifampicin. Baseline and monthly LFT monitoring is mandatory."
+            },
+            {
+              "stem": "Pyridoxine (vitamin B6) is co-administered with isoniazid in TB therapy to prevent which adverse effect?",
+              "options": [
+                "Optic neuritis",
+                "Peripheral neuropathy",
+                "Hepatotoxicity",
+                "Hypersensitivity reactions"
+              ],
+              "answer": "Peripheral neuropathy",
+              "explanation": "Isoniazid causes pyridoxine deficiency by inhibiting pyridoxal kinase and forming inactive hydrazones with pyridoxal phosphate. This leads to peripheral neuropathy preventable with pyridoxine 10-25 mg daily."
+            },
+            {
+              "stem": "Artemisinin-based combination therapy (ACT) is the cornerstone of uncomplicated falciparum malaria treatment. The role of the partner drug (e.g., lumefantrine) is to:",
+              "options": [
+                "Potentiate the artemisinin component via CYP450 inhibition",
+                "Clear residual parasites after artemisinin rapid action and delay resistance",
+                "Provide prophylaxis against vivax malaria relapse",
+                "Reduce the fever and symptoms of malaria"
+              ],
+              "answer": "Clear residual parasites after artemisinin rapid action and delay resistance",
+              "explanation": "Artemisinins have rapid parasite clearance but short half-lives. The long-acting partner drug (lumefantrine, amodiaquine, mefloquine) eliminates remaining parasites, providing cure and protecting the artemisinin from resistance."
+            },
+            {
+              "stem": "Which of the following is a key driver of artemisinin resistance in Southeast Asia?",
+              "options": [
+                "Use of artemisinin monotherapy",
+                "Poor patient adherence to ACT",
+                "Mutations in the PfKelch13 gene of P. falciparum",
+                "Increased vector resistance to insecticides"
+              ],
+              "answer": "Mutations in the PfKelch13 gene of P. falciparum",
+              "explanation": "Artemisinin resistance is primarily mediated by mutations in the PfKelch13 propeller domain, resulting in reduced ring-stage parasite susceptibility and delayed parasite clearance."
+            },
+            {
+              "stem": "Which of the following is the MOST appropriate empiric antibiotic for a patient with hospital-acquired pneumonia (HAP) and MRSA risk factors?",
+              "options": [
+                "Ceftriaxone 2 g daily",
+                "Piperacillin-tazobactam 4.5 g QID plus vancomycin",
+                "Azithromycin 500 mg daily",
+                "Ciprofloxacin 400 mg twice daily"
+              ],
+              "answer": "Piperacillin-tazobactam 4.5 g QID plus vancomycin",
+              "explanation": "HAP with MRSA risk factors requires broad Gram-negative coverage (piperacillin-tazobactam) plus anti-MRSA coverage (vancomycin or linezolid). Single agents with MRSA activity alone are insufficient for Gram-negative coverage."
+            },
+            {
+              "stem": "Which of the following mechanisms confers methicillin resistance in Staphylococcus aureus (MRSA)?",
+              "options": [
+                "Beta-lactamase hyperproduction",
+                "Altered PBP2a (PBP2\") encoded by mecA gene with low affinity for beta-lactams",
+                "Efflux pump overexpression",
+                "Porin channel loss in outer membrane"
+              ],
+              "answer": "Altered PBP2a (PBP2\") encoded by mecA gene with low affinity for beta-lactams",
+              "explanation": "MRSA carries the mecA gene on the staphylococcal cassette chromosome SCCmec, producing PBP2a (PBP2\"), a transpeptidase with very low affinity for all beta-lactam antibiotics, conferring resistance to the entire class."
+            },
+            {
+              "stem": "Extended-spectrum beta-lactamase (ESBL)-producing Escherichia coli is resistant to which of the following antibiotics?",
+              "options": [
+                "Meropenem",
+                "Piperacillin-tazobactam (variable)",
+                "All penicillins, cephalosporins, and aztreonam",
+                "Ciprofloxacin"
+              ],
+              "answer": "All penicillins, cephalosporins, and aztreonam",
+              "explanation": "ESBLs hydrolyse extended-spectrum cephalosporins (cefotaxime, ceftazidime), penicillins, and aztreonam. Carbapenems (meropenem, imipenem) remain the drugs of choice for serious ESBL infections."
+            },
+            {
+              "stem": "Which carbapenem antibiotic has additional activity against Acinetobacter baumannii and is often reserved for MDR Gram-negative infections?",
+              "options": [
+                "Meropenem",
+                "Imipenem-cilastatin",
+                "Ertapenem",
+                "Doripenem"
+              ],
+              "answer": "Imipenem-cilastatin",
+              "explanation": "Imipenem has potent in vitro activity against Acinetobacter baumannii and Pseudomonas aeruginosa. Cilastatin prevents renal dehydropeptidase I metabolism of imipenem. Ertapenem lacks activity against Pseudomonas and Acinetobacter."
+            },
+            {
+              "stem": "A 30-year-old woman with uncomplicated cystitis is allergic to penicillin (rash). Urine culture shows E. coli sensitive to nitrofurantoin. What is the MOST appropriate duration of therapy?",
+              "options": [
+                "Single dose",
+                "3 days",
+                "5 days",
+                "7 days"
+              ],
+              "answer": "5 days",
+              "explanation": "For uncomplicated cystitis treated with nitrofurantoin, guidelines recommend 5 days. Nitrofurantoin is a reliable option for penicillin-allergic patients as it has no cross-reactivity with beta-lactams."
+            },
+            {
+              "stem": "Which antifungal agent requires a loading dose to achieve therapeutic levels rapidly?",
+              "options": [
+                "Fluconazole",
+                "Caspofungin",
+                "Voriconazole",
+                "Terbinafine"
+              ],
+              "answer": "Voriconazole",
+              "explanation": "Voriconazole requires a loading dose (6 mg/kg IV 12-hourly for 2 doses) followed by maintenance (4 mg/kg IV 12-hourly) due to its non-linear pharmacokinetics and saturable metabolism, achieving steady state in 5-7 days without loading."
+            },
+            {
+              "stem": "The mechanism of action of oseltamivir in influenza involves:",
+              "options": [
+                "Blockade of M2 ion channel preventing viral uncoating",
+                "Inhibition of viral neuraminidase preventing release of progeny virions",
+                "Inhibition of viral RNA-dependent RNA polymerase",
+                "Inhibition of viral DNA polymerase"
+              ],
+              "answer": "Inhibition of viral neuraminidase preventing release of progeny virions",
+              "explanation": "Oseltamivir is a neuraminidase inhibitor that blocks the enzymatic cleavage of sialic acid residues on the host cell surface, preventing the release and spread of newly formed influenza virions."
+            },
+            {
+              "stem": "A 22-year-old woman with genital herpes simplex has frequent recurrences (>6/year). Which antiviral regimen is MOST appropriate for suppression?",
+              "options": [
+                "Acyclovir 400 mg twice daily",
+                "Acyclovir 200 mg five times daily for 5 days",
+                "Valacyclovir 1 g three times daily for 7 days",
+                "Famciclovir 250 mg single dose"
+              ],
+              "answer": "Acyclovir 400 mg twice daily",
+              "explanation": "For suppression of recurrent genital herpes (≥6 recurrences/year), acyclovir 400 mg twice daily or valacyclovir 500 mg once daily reduces recurrence rates by 70-80%. Episodic therapy uses higher doses for shorter duration."
+            },
+            {
+              "stem": "Which of the following statements about tetracyclines is CORRECT?",
+              "options": [
+                "They are bactericidal against Streptococcus pneumoniae",
+                "They should be avoided in children under 8 years and pregnant women due to teeth discolouration",
+                "They are effective against Pseudomonas aeruginosa",
+                "They are eliminated exclusively by hepatic metabolism"
+              ],
+              "answer": "They should be avoided in children under 8 years and pregnant women due to teeth discolouration",
+              "explanation": "Tetracyclines bind to calcium in developing teeth and bones, causing permanent yellow-brown discolouration and enamel hypoplasia. They are contraindicated in children <8 years and during pregnancy/lactation."
+            },
+            {
+              "stem": "Antimicrobial stewardship programs aim to achieve which PRIMARY outcome?",
+              "options": [
+                "Reduce antibiotic costs by 50%",
+                "Optimise antibiotic use to improve patient outcomes while minimising resistance",
+                "Eliminate all broad-spectrum antibiotic use",
+                "Restrict antibiotic prescribing to infectious disease specialists only"
+              ],
+              "answer": "Optimise antibiotic use to improve patient outcomes while minimising resistance",
+              "explanation": "Antimicrobial stewardship aims to select the optimal antibiotic, dose, route, and duration to achieve the best clinical outcome while minimising toxicity, selection of resistant organisms, and unnecessary costs."
+            },
+            {
+              "stem": "Rifampicin is a potent enzyme inducer. Which of the following is a clinically significant consequence?",
+              "options": [
+                "Increased warfarin metabolism causing subtherapeutic INR",
+                "Increased gentamicin nephrotoxicity",
+                "Reduced acyclovir oral bioavailability",
+                "Enhanced fluconazole hepatotoxicity"
+              ],
+              "answer": "Increased warfarin metabolism causing subtherapeutic INR",
+              "explanation": "Rifampicin induces CYP450 isoenzymes (CYP3A4, CYP2C9, CYP2C19), CYP induction increases warfarin clearance requiring dose increases of 2-3 fold to maintain therapeutic INR."
+            },
+            {
+              "stem": "Which of the following is a characteristic of echinocandin antifungals?",
+              "options": [
+                "They inhibit ergosterol synthesis",
+                "They inhibit beta-glucan synthase, disrupting fungal cell wall integrity",
+                "They bind to ergosterol and disrupt cell membrane",
+                "They inhibit fungal thymidylate synthase"
+              ],
+              "answer": "They inhibit beta-glucan synthase, disrupting fungal cell wall integrity",
+              "explanation": "Echinocandins (caspofungin, micafungin, anidulafungin) non-competitively inhibit beta-1,3-glucan synthase, depleting glucan polymers in the fungal cell wall, leading to osmotic instability and cell death."
+            },
+            {
+              "stem": "A 75-year-old man on warfarin for atrial fibrillation develops TB and is started on rifampicin-containing regimen. What adjustment is required?",
+              "options": [
+                "Discontinue warfarin and switch to enoxaparin",
+                "Increase warfarin dose with close INR monitoring",
+                "No change — rifampicin does not affect warfarin",
+                "Decrease warfarin dose due to additive anticoagulation"
+              ],
+              "answer": "Increase warfarin dose with close INR monitoring",
+              "explanation": "Rifampicin potently induces CYP2C9 metabolism of warfarin (S-enantiomer), significantly reducing anticoagulant effect. Warfarin dose may need to be increased 2-4 times, with daily INR monitoring during initiation and after rifampicin cessation."
+            },
+            {
+              "stem": "Which of the following is a key strategy to prevent antimicrobial resistance in healthcare settings?",
+              "options": [
+                "Routine prophylactic antibiotics for all surgical patients",
+                "De-escalation of antibiotics based on culture and sensitivity results",
+                "Rotating antibiotics monthly to prevent resistance",
+                "Using combination antibiotic therapy for all infections"
+              ],
+              "answer": "De-escalation of antibiotics based on culture and sensitivity results",
+              "explanation": "De-escalation (narrowing or stopping empiric broad-spectrum antibiotics when culture results are available) reduces selective pressure for resistance, minimises toxicity, and is a core antimicrobial stewardship strategy."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "(a) Describe the mechanism of action of beta-lactam antibiotics at the molecular level. (3 marks)\n(b) List the four main classes of beta-lactam antibiotics and give one example of each. (2 marks)\n(c) Explain the basis of penicillin cross-reactivity with cephalosporins. (2 marks)\n(d) State the approximate cross-reactivity rate between penicillins and cephalosporins. (1 mark)",
+              "modelAnswer": "(a) Beta-lactam antibiotics contain a four-membered beta-lactam ring that structurally resembles the D-alanine-D-alanine terminus of the peptidoglycan precursor. They irreversibly acylate the active-site serine residue of transpeptidases (penicillin-binding proteins, PBPs), preventing the cross-linking of peptidoglycan chains in the bacterial cell wall. This activates autolytic enzymes (autolysins), leading to cell lysis and death — hence beta-lactams are bactericidal.\n\n(b) Four classes:\n1. Penicillins: e.g., amoxicillin, flucloxacillin\n2. Cephalosporins: e.g., cephalexin (1st gen), ceftriaxone (3rd gen)\n3. Carbapenems: e.g., meropenem, imipenem\n4. Monobactams: e.g., aztreonam\n\n(c) Cross-reactivity occurs because both penicillins and cephalosporins share the beta-lactam ring structure. IgE antibodies raised against the penicillin hapten may recognise similar structural determinants on cephalosporins, particularly first-generation cephalosporins with similar R-group side chains.\n\n(d) The cross-reactivity rate between penicillins and first-generation cephalosporins is approximately 1-3% (based on skin testing and challenge studies). For third/fourth-generation cephalosporins, the rate is <1%, as these have more dissimilar R-group side chains. Current evidence suggests cephalosporins can be safely used in most patients with non-severe penicillin allergy."
+            },
+            {
+              "stem": "(a) Name the four drugs in the standard first-line RHZE regimen for tuberculosis and state the dose (adult weight-based) for each. (4 marks)\n(b) Explain why rifampicin is considered the cornerstone of TB therapy. (2 marks)\n(c) Describe the management of isoniazid-induced hepatotoxicity. (2 marks)",
+              "modelAnswer": "(a) Standard RHZE regimen (2-month intensive phase) for adults 40-65 kg:\n1. Rifampicin: 450 mg daily (or 10 mg/kg)\n2. Isoniazid: 300 mg daily (or 5 mg/kg)\n3. Pyrazinamide: 1500 mg daily (or 25 mg/kg)\n4. Ethambutol: 800 mg daily (or 15 mg/kg)\n\nFor patients >65 kg, weight-based dosing should be used: rifampicin 600 mg, isoniazid 300 mg, pyrazinamide 2000 mg, ethambutol 1200 mg.\n\n(b) Rifampicin is the cornerstone because: (1) It has potent bactericidal activity against both replicating and slowly-metabolising M. tuberculosis, (2) It achieves sterilising activity, shortening treatment duration from 12-18 months to 6 months, (3) It penetrates well into tissues, abscesses, and CSF, (4) It is active against intracellular organisms.\n\n(c) Management of isoniazid hepatotoxicity: (1) Stop all TB medications immediately if ALT >5x ULN or >3x ULN with symptoms, (2) Monitor LFTs twice weekly, (3) Once ALT normalises (<2x ULN), rechallenge sequentially — start with rifampicin and isoniazid (at reduced dose), then add pyrazinamide and ethambutol over 3-7 days, (4) If isoniazid is implicated, consider pyridoxine supplementation and use alternative regimen (e.g., moxifloxacin-based)."
+            },
+            {
+              "stem": "(a) Compare the mechanisms of action of fluconazole and amphotericin B. (3 marks)\n(b) State two advantages of lipid formulations of amphotericin B. (2 marks)\n(c) List three drug interactions of fluconazole. (2 marks)\n(d) What is the role of fluconazole in cryptococcal meningitis? (1 mark)",
+              "modelAnswer": "(a) Fluconazole: An azole antifungal that inhibits fungal cytochrome P450 14-alpha-demethylase (CYP51), blocking the conversion of lanosterol to ergosterol. This depletes ergosterol (essential for fungal cell membrane integrity) and accumulates toxic sterol precursors. Amphotericin B: A polyene that binds directly to ergosterol in the fungal cell membrane, forming transmembrane pores that allow leakage of ions (especially potassium) and macromolecules, causing rapid cell death. Amphotericin B is fungicidal; fluconazole is primarily fungistatic.\n\n(b) Advantages of lipid formulations: (1) Reduced nephrotoxicity because lipid-encapsulated amphotericin B is preferentially taken up by the reticuloendothelial system rather than accumulating in renal tubules. (2) Reduced infusion-related reactions (fever, rigours, chills) because the lipid formulation shields the amphotericin B from directly interacting with immune cells.\n\n(c) Three drug interactions: (1) Warfarin — fluconazole inhibits CYP2C9 increasing INR, (2) Sulfonylureas — fluconazole increases hypoglycaemia risk by inhibiting metabolism, (3) Tacrolimus/cyclosporine — fluconazole increases calcineurin inhibitor levels by inhibiting CYP3A4.\n\n(d) In cryptococcal meningitis, fluconazole (400-800 mg daily) is used for consolidation/suppressive therapy after initial induction with amphotericin B + flucytosine. It is also used as primary prophylaxis in HIV patients with CD4 <50 cells/mm³ in resource-limited settings."
+            },
+            {
+              "stem": "(a) Describe the mechanism of action of fluoroquinolones. (2 marks)\n(b) List three indications for ciprofloxacin. (2 marks)\n(c) State two significant adverse effects of fluoroquinolones beyond tendon toxicity. (2 marks)\n(d) Explain why ciprofloxacin is no longer recommended for uncomplicated gonorrhoea. (1 mark)\n(e) What is the clinical significance of fluoroquinolone resistance in Gram-negative bacteria? (1 mark)",
+              "modelAnswer": "(a) Fluoroquinolones (e.g., ciprofloxacin) inhibit bacterial DNA gyrase (topoisomerase II) and topoisomerase IV, enzymes essential for DNA supercoiling, replication, and decatenation. They bind to the enzyme-DNA complex, stabilising the cleaved DNA intermediate and preventing religation, ultimately leading to DNA fragmentation and cell death.\n\n(b) Three indications for ciprofloxacin: (1) Complicated urinary tract infections (including pyelonephritis) caused by Gram-negative organisms, (2) Anthrax prophylaxis and treatment (only FDA-approved indication for inhaled anthrax), (3) Invasive Pseudomonas aeruginosa infections (e.g., pseudomonal pneumonia in cystic fibrosis).\n\n(c) Two adverse effects beyond tendon toxicity: (1) CNS effects — dizziness, confusion, seizures (GABA-A receptor antagonism — more common in elderly and those on NSAIDs), (2) Aortic dissection/aneurysm (FDA warning), (3) QT prolongation, (4) Clostridioides difficile infection, (5) Phototoxicity.\n\n(d) Ciprofloxacin is no longer recommended for uncomplicated gonorrhoea due to widespread high-level resistance (>20% in most regions), mediated by mutations in DNA gyrase (gyrA) and topoisomerase IV (parC). Ceftriaxone 500 mg IM is now first-line.\n\n(e) Fluoroquinolone resistance in Gram-negative organisms (e.g., E. coli, Klebsiella, Pseudomonas) limits therapeutic options, often necessitating carbapenem use. Cross-resistance occurs via plasmid-mediated qnr genes and efflux pump overexpression, accelerating the spread of multidrug resistance."
+            },
+            {
+              "stem": "(a) Describe the mechanism of tetracycline action at the ribosomal level. (2 marks)\n(b) List three indications for doxycycline. (2 marks)\n(c) Explain the rationale for using doxycycline for malaria chemoprophylaxis. (2 marks)\n(d) State two precautions when prescribing tetracyclines. (2 marks)",
+              "modelAnswer": "(a) Tetracyclines (e.g., doxycycline) reversibly bind to the 30S ribosomal subunit, preventing the binding of aminoacyl-tRNA to the A site of the mRNA-ribosome complex. This inhibits protein synthesis. They are bacteriostatic.\n\n(b) Three indications: (1) Acne vulgaris (anti-inflammatory and antimicrobial effects), (2) Rickettsial infections (Rocky Mountain spotted fever, typhus), (3) Chlamydial infections (urethritis, cervicitis, lymphogranuloma venereum), (4) Lyme disease (alternative to amoxicillin), (5) Malaria chemoprophylaxis.\n\n(c) Doxycycline is effective for malaria chemoprophylaxis because: (1) It is active against all Plasmodium species (including chloroquine-resistant P. falciparum), (2) It targets the apicoplast of the parasite inhibiting protein synthesis and delayed parasite death, (3) It has a long half-life allowing once-daily dosing, (4) It is inexpensive and well-tolerated. The main limitation: it must be continued for 4 weeks after leaving the endemic area.\n\n(d) Two precautions: (1) Avoid in children <8 years and pregnancy/lactation — causes permanent dental discolouration and impaired bone growth, (2) Photosensitivity — advise sun avoidance and sunscreen, (3) Reduced absorption with dairy, antacids, iron supplements (chelation)."
+            },
+            {
+              "stem": "(a) Explain the rationale for using artemisinin-based combination therapy (ACT) for uncomplicated P. falciparum malaria. (3 marks)\n(b) Name two WHO-recommended ACT regimens. (2 marks)\n(c) What is the clinical significance of artemisinin resistance? (2 marks)\n(d) Describe the role of primaquine in malaria treatment. (1 mark)",
+              "modelAnswer": "(a) Rationale for ACT: (1) Artemisinins (artemether, artesunate) provide rapid and potent parasite clearance — they kill all blood-stage parasites within hours, have broad stage-specific activity (ring, trophozoite, schizont), and reduce parasite biomass by 10,000-fold per cycle. (2) The long-acting partner drug (lumefantrine, amodiaquine, mefloquine) clears the remaining parasites, ensuring complete cure. (3) The combination protects artemisinins from resistance development — if a parasite is resistant to one drug, the other kills it. ACTs achieve >95% cure rates when used correctly.\n\n(b) Two WHO-recommended ACTs: (1) Artemether-lumefantrine (Coartem) — 20/120 mg, weight-based dosing twice daily for 3 days, (2) Artesunate-amodiaquine — weight-based once daily for 3 days.\n\n(c) Clinical significance of artemisinin resistance: (1) Delayed parasite clearance time (increased half-life from <2 hours to >5 hours), (2) Increased treatment failure rates with ACT, (3) Has spread across Southeast Asia (Cambodia, Thailand, Vietnam, Myanmar), (4) Could lead to loss of the most powerful antimalarial drug class, paralleling chloroquine resistance in the 1960s which led to millions of deaths.\n\n(d) Primaquine: An 8-aminoquinoline that acts against hypnozoites (dormant liver stages) of P. vivax and P. ovale, preventing relapses (radical cure). It also has gametocytocidal activity against all Plasmodium species, reducing transmission. A single low dose (0.25 mg/kg) is used in falciparum malaria for transmission-blocking. G6PD testing is mandatory before use due to risk of haemolysis."
+            },
+            {
+              "stem": "(a) Define antimicrobial resistance and list four mechanisms by which bacteria can become resistant to antibiotics. (4 marks)\n(b) Explain the difference between intrinsic and acquired resistance with an example of each. (2 marks)\n(c) Describe the role of antimicrobial stewardship in combating resistance. (2 marks)",
+              "modelAnswer": "(a) Antimicrobial resistance (AMR) is the ability of microorganisms to survive and grow in the presence of antibiotics that would normally kill them or inhibit their growth. Four mechanisms:\n1. Enzymatic inactivation: e.g., beta-lactamases hydrolysing the beta-lactam ring of penicillins/cephalosporins.\n2. Target site modification: e.g., altered PBP2a in MRSA reducing beta-lactam binding.\n3. Reduced permeability: e.g., porin channel loss (OprD in Pseudomonas) reducing carbapenem entry.\n4. Active efflux pumps: e.g., upregulation of MexAB-OprM in Pseudomonas extruding tetracyclines and fluoroquinolones.\n\n(b) Intrinsic resistance: An inherent trait of the bacterial species, present without prior antibiotic exposure. Example: Pseudomonas aeruginosa is intrinsically resistant to vancomycin because the drug cannot penetrate the outer membrane. Acquired resistance: Develops through mutation or horizontal gene transfer (plasmids, transposons). Example: E. coli acquiring a plasmid-borne blacTX-M gene encoding an ESBL.\n\n(c) Antimicrobial stewardship combats AMR by: (1) Optimising antibiotic selection (right drug, dose, route, duration), (2) Using narrow-spectrum agents when cultures are available (de-escalation), (3) Reducing unnecessary antibiotic use (e.g., for viral infections), (4) Implementing prospective audit and feedback, (5) Reducing selection pressure for resistant organisms, (6) Lowering rates of C. difficile infection."
+            },
+            {
+              "stem": "(a) Describe the mechanism by which vancomycin exerts its antibacterial effect. (2 marks)\n(b) State three indications for vancomycin therapy. (2 marks)\n(c) What monitoring parameter is essential for vancomycin therapy and what are the target levels? (2 marks)\n(d) Explain the phenomenon of \"red man syndrome\" associated with vancomycin infusion. (2 marks)",
+              "modelAnswer": "(a) Vancomycin is a glycopeptide antibiotic that inhibits cell wall synthesis by binding with high affinity to the D-alanine-D-alanine terminus of peptidoglycan precursors on the exterior of the Gram-positive cell wall. This sterically blocks transpeptidation (cross-linking) and transglycosylation, preventing cell wall assembly. It is bactericidal against Gram-positive organisms.\n\n(b) Three indications: (1) MRSA infections (bacteraemia, endocarditis, pneumonia, osteomyelitis), (2) Serious Gram-positive infections in patients with beta-lactam allergy, (3) Clostridioides difficile infection (oral vancomycin — not absorbed systemically).\n\n(c) Monitoring: Trough vancomycin concentrations are monitored to optimise efficacy and minimise nephrotoxicity. Target trough levels: 15-20 mcg/mL for serious infections (bacteraemia, endocarditis, pneumonia, osteomyelitis); 10-15 mcg/mL for less severe infections. AUC/MIC ratio >400 is the preferred pharmacodynamic target. Monitor serum creatinine at baseline and every 48-72 hours.\n\n(d) Red man syndrome: A non-immunologic infusion reaction caused by direct vancomycin-induced mast cell and basophil degranulation, releasing histamine. It presents with erythema, flushing, pruritus, and erythematous rash on the face, neck, and upper torso. It is prevented by slow infusion rate (>1 hour) and pre-treatment with antihistamines (diphenhydramine). It is NOT a true allergic reaction and does not require discontinuation."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Mrs. Akinyi, a 68-year-old woman with type 2 diabetes (HbA1c 8.5%), hypertension, and CKD stage 3 (eGFR 38 mL/min), is admitted with a 4-day history of fever (39.2°C), rigours, right flank pain, and dysuria. Urinalysis shows abundant leucocytes and Gram-negative rods. Blood cultures grow a Gram-negative organism subsequently identified as Escherichia coli. Previous records show she was hospitalised 3 months ago for a UTI treated with ceftriaxone.\n\n(a) What clinical syndrome does Mrs. Akinyi have? (1 mark)\n(b) What empiric antibiotic regimen would you recommend and why? Consider her renal function and risk of ESBL-producing organisms. (5 marks)\n(c) The organism is confirmed as an ESBL-producing E. coli. What antibiotic should be used and at what dose adjusted for her renal function? (4 marks)\n(d) Gentamicin is being considered for combination therapy. What TDM parameters are essential and what are the risks of aminoglycoside use in this patient? (5 marks)\n(e) After 72 hours of appropriate therapy, the patient remains febrile. What are the possible causes and how would you investigate? (3 marks)\n(f) What antimicrobial stewardship interventions apply to this case? (2 marks)",
+              "modelAnswer": "(a) Acute pyelonephritis — febrile UTI with flank pain, rigours, and bacteremia (E. coli), meeting criteria for complicated UTI (diabetes, CKD, recent hospitalisation).\n\n(b) Empiric antibiotic regimen: Given the risk factors for ESBL (recent hospitalisation, prior ceftriaxone use, diabetes), empiric treatment should cover ESBL-producing organisms.\n- First-line: Meropenem 500 mg IV every 12 hours (adjusted for CrCl 30-49 mL/min: standard dose is 1 g 8-hourly, but reduce to 500 mg 12-hourly in this CKD stage).\n OR\n- Alternative if carbapenem-sparing approach is desired: Piperacillin-tazobactam 4.5 g IV every 8 hours (note: ESBL susceptibility to piperacillin-tazobactam is variable and depends on the specific ESBL type and inoculum effect — consider only if MIC is confirmed ≤8 mg/L).\nRationale: This patient has multiple risk factors for multidrug-resistant organisms and ESBL prevalence is high. A carbapenem provides the most reliable coverage for ESBL-producing Enterobacterales.\n\n(c) Confirmed ESBL-producing E. coli:\n- Drug: Meropenem 500 mg IV every 12 hours.\n- Dose adjustment: With CrCl 30-49 mL/min, the half-life of meropenem is prolonged. Recommended dose: 500 mg every 12 hours (vs 1 g 8-hourly in normal renal function).\n- Duration: At least 14 days total for complicated pyelonephritis with bacteremia.\n- Monitor: Trough levels not routinely needed for meropenem; monitor clinical response (fever curve, symptom resolution) and repeat blood cultures at 48 hours to document clearance.\n- If resistance to carbapenems is a concern: Add gentamicin for synergy (but see below).\n\n(d) Gentamicin TDM and risks:\nTDM parameters:\n1. Once-daily dosing (5-7 mg/kg ideal body weight): Measure trough level before next dose (target <1 mg/L). Peak levels 1 hour post-dose (target >20 mg/L for Gram-negative bacteremia).\n2. Monitor serum creatinine at baseline and daily during therapy.\nRisks in this patient:\n1. Nephrotoxicity: HIGH RISK — CKD stage 3 means reduced renal reserve. Aminoglycosides accumulate in proximal tubular cells causing acute tubular necrosis. Concurrent diabetes and possible dehydration further increase risk. Incidence is 10-25%.\n2. Ototoxicity: Irreversible vestibular and cochlear toxicity. Synergistic with loop diuretics. Can occur even with therapeutic levels.\n3. Neuromuscular blockade: Rare but relevant if receiving other neuromuscular blockers.\n4. Drug interactions: May worsen renal function already compromised by diabetes and hypertension.\nRecommendation: Avoid gentamicin if possible. If indispensable, monitor levels strictly, ensure adequate hydration, and limit course to 5-7 days.\n\n(e) Persistent fever after 72 hours — possible causes:\n1. Inadequate source control: Consider renal abscess, perinephric abscess, or obstructive uropathy — order renal ultrasound or CT abdomen.\n2. Drug resistance: Request full susceptibility testing (including colistin if MDR). Check that meropenem MIC is still susceptible.\n3. Secondary infection: Hospital-acquired infection (line-related, C. difficile, catheter-associated UTI).\n4. Drug fever: Exclude especially if patient otherwise improving.\n5. Endocarditis: Unlikely with E. coli but consider echocardiography if other sources ruled out.\n6. Inadequate dosing: Check renal function and re-dose interval.\n\n(f) Antimicrobial stewardship interventions:\n1. De-escalation: Once sensitivities confirm ESBL E. coli, narrow therapy (if possible — carbapenem is appropriate for ESBL).\n2. IV-to-oral switch: Not feasible for carbapenems, but if organism is sensitive to oral options (e.g., nitrofurantoin for UTI only, not pyelonephritis), consider step-down.\n3. Duration stewardship: Prescribe a defined course (14 days) with scheduled stop date.\n4. Allergy reconciliation: Document any antibiotic allergies accurately.\n5. Blood culture stewardship: Ensure repeat cultures at 48 hours to document clearance.\n6. Renal dose adjustment: Doses adjusted for eGFR — document rationale."
+            },
+            {
+              "stem": "Mr. Kimani, a 35-year-old man from a rural area, presents with a 3-week history of cough, night sweats, weight loss (5 kg), and haemoptysis. His HIV test is positive (CD4 count 180 cells/mm³). Sputum smear is positive for acid-fast bacilli (AFB 3+). Chest X-ray shows bilateral upper lobe cavitary lesions. He has no known drug allergies. He works on a farm and drinks alcohol socially.\n\n(a) What is the diagnosis? Classify the disease. (2 marks)\n(b) Outline the complete RHZE regimen with specific drug doses, route, and duration for the intensive and continuation phases. (4 marks)\n(c) What baseline investigations are needed before starting anti-TB therapy? (4 marks)\n(d) The patient develops hepatitis (ALT 340 U/L, AST 280 U/L) with nausea and jaundice after 2 weeks. Outline the complete management algorithm. (5 marks)\n(e) Given his HIV co-infection, what special considerations apply regarding timing of ART initiation, drug interactions, and immune reconstitution inflammatory syndrome (IRIS)? (5 marks)",
+              "modelAnswer": "(a) Diagnosis: Pulmonary tuberculosis (PTB), sputum smear-positive (AFB 3+ indicates high bacillary load). Bilateral upper lobe cavitary lesions are classic for reactivation TB. Classification: New case of bacteriologically confirmed pulmonary TB (no prior treatment). The cavitary disease and positive smear indicate infectious TB requiring respiratory isolation initially.\n\n(b) RHZE regimen:\nIntensive phase (2 months):\n- Rifampicin: 450 mg (weight 40-65 kg) or 600 mg (>65 kg) orally daily\n- Isoniazid: 300 mg orally daily\n- Pyrazinamide: 1500 mg (40-65 kg) or 2000 mg (>65 kg) orally daily\n- Ethambutol: 800 mg (40-65 kg) or 1200 mg (>65 kg) orally daily\nAll four drugs given as fixed-dose combination (FDC) tablets where possible, taken on an empty stomach or 1 hour before meals.\n\nContinuation phase (4 months):\n- Rifampicin: 450-600 mg orally daily\n- Isoniazid: 300 mg orally daily\nTotal duration: 6 months (2HRZE/4HR).\n\n(c) Baseline investigations:\n1. LFTs (ALT, AST, bilirubin, ALP) — essential before starting hepatotoxic drugs.\n2. Serum creatinine and eGFR — ethambutol is renally excreted.\n3. Full blood count — screen for anaemia, leucopenia.\n4. Hepatitis B and C serology — chronic HBV increases hepatotoxicity risk.\n5. CD4 count and viral load — guide timing of ART.\n6. Baseline visual acuity and colour vision testing — ethambutol optic neuritis risk.\n7. Uric acid — pyrazinamide inhibits uric acid excretion, can cause gout.\n8. Sputum culture and drug susceptibility testing (DST) — for rifampicin resistance (GeneXpert MTB/RIF).\n9. Pregnancy test (if applicable).\n\n(d) Hepatotoxicity management (ALT >5x ULN with symptoms):\nStep 1: STOP all four TB drugs immediately.\nStep 2: Admit for supportive care — IV fluids, monitor LFTs every 48 hours, check INR (prognostic marker).\nStep 3: Exclude other causes — hepatitis B/C serology, abdominal ultrasound, alcohol history.\nStep 4: Once ALT <2x ULN and symptoms resolve (usually 1-2 weeks), begin sequential rechallenge:\n  - Day 1: Start rifampicin 150 mg, increase to full dose over 3 days.\n  - Day 4: Add isoniazid 100 mg, increase to 300 mg over 3 days.\n  - Day 7: Add ethambutol (if needed — not hepatotoxic).\n  - Pyrazinamide is often the most hepatotoxic — consider omitting or rechallenging last.\nStep 5: If hepatic injury recurs, eliminate the offending drug. If isoniazid excluded: use moxifloxacin 400 mg daily as substitute in continuation phase. If rifampicin excluded: extend treatment to 12-18 months with alternative regimen.\nStep 6: In severe hepatitis (ALT >10x ULN, jaundice, coagulopathy): avoid rechallenge with isoniazid and pyrazinamide. Use rifampicin + ethambutol + moxifloxacin + streptomycin (or other injectable) for 12 months.\n\n(e) HIV co-infection considerations:\n1. Timing of ART: Start ART within 2 weeks of TB treatment initiation if CD4 <200 cells/mm³ (this patient: CD4 180). For CD4 >200, start ART within 8 weeks of TB treatment. Starting within 2 weeks reduces mortality in severe immunosuppression but increases IRIS risk.\n\n2. Drug interactions:\n  - Rifampicin: Potent CYP3A4 inducer — reduces levels of NNRTIs (nevirapine, efavirenz) and protease inhibitors. Preferred ART backbone for TB/HIV co-infection is:\n    - Tenofovir disoproxil fumarate (TDF) 300 mg + Lamivudine 300 mg + Dolutegravir 50 mg (DTG can be given with rifampicin at double dose — 50 mg BID — for the duration of rifampicin therapy OR use standard dose with careful monitoring).\n  - Alternatively, Efavirenz 600 mg (standard dose — rifampicin does not require efavirenz dose adjustment) + TDF + 3TC.\n  - Avoid protease inhibitors (significant level reduction with rifampicin).\n\n3. Immune Reconstitution Inflammatory Syndrome (IRIS):\n  - Paradoxical TB-IRIS: Clinical worsening of TB symptoms (fever, lymphadenopathy, worsening chest X-ray) after starting ART due to recovering immune system.\n  - Onset: Usually 2-4 weeks after starting ART.\n  - Risk factors: Low CD4 (<100), high bacillary load (AFB 3+), short interval between TB treatment and ART initiation, and cavitary disease.\n  - Management: NSAIDs for mild cases, prednisolone 40-60 mg daily for 2-4 weeks with taper for moderate-severe symptoms (except if life-threatening), continue both TB therapy and ART.\n  - Prevention: Starting ART at the recommended time (2 weeks in this patient) balances IRIS risk against mortality benefit.\n\n4. Co-trimoxazole prophylaxis: All HIV/TB co-infected patients should receive trimethoprim-sulfamethoxazole 960 mg daily for PCP prophylaxis, regardless of CD4 count.\n\n5. Monitoring: CD4 count and viral load at month 4 and at end of TB treatment to assess ART efficacy."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Chemotherapeutic Agents",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 70-year-old man with penicillin allergy (anaphylaxis 20 years ago) requires treatment for pneumococcal pneumonia. Which of the following is the MOST appropriate alternative?",
+              "options": [
+                "Cephalexin 500 mg twice daily",
+                "Amoxicillin 500 mg three times daily",
+                "Levofloxacin 750 mg once daily",
+                "Clindamycin 300 mg four times daily"
+              ],
+              "answer": "Levofloxacin 750 mg once daily",
+              "explanation": "Levofloxacin (respiratory fluoroquinolone) is the recommended alternative for community-acquired pneumonia in patients with severe penicillin allergy. It provides reliable coverage against S. pneumoniae and atypical pathogens."
+            },
+            {
+              "stem": "Which of the following antibiotics exerts its effect by inhibiting bacterial protein synthesis at the 30S ribosomal subunit?",
+              "options": [
+                "Penicillin G",
+                "Ciprofloxacin",
+                "Tetracycline",
+                "Vancomycin"
+              ],
+              "answer": "Tetracycline",
+              "explanation": "Tetracyclines reversibly bind to the 30S ribosomal subunit, preventing aminoacyl-tRNA binding to the A site. This inhibits protein synthesis."
+            },
+            {
+              "stem": "A 50-year-old woman develops C. difficile diarrhoea after a course of clindamycin. Which agent is MOST appropriate for her first episode?",
+              "options": [
+                "Metronidazole 500 mg three times daily for 10 days",
+                "Vancomycin 125 mg orally four times daily for 10 days",
+                "Fidaxomicin 200 mg twice daily for 10 days",
+                "Oral vancomycin 500 mg four times daily"
+              ],
+              "answer": "Vancomycin 125 mg orally four times daily for 10 days",
+              "explanation": "For a first episode of non-severe C. difficile infection, current IDSA guidelines recommend vancomycin 125 mg QDS for 10 days as first-line. Metronidazole remains an alternative only when vancomycin is unavailable."
+            },
+            {
+              "stem": "Which beta-lactam antibiotic is stable against gastric acid and can be taken orally with a reliable absorption profile?",
+              "options": [
+                "Penicillin V",
+                "Amoxicillin",
+                "Flucloxacillin",
+                "Piperacillin"
+              ],
+              "answer": "Amoxicillin",
+              "explanation": "Amoxicillin has excellent oral bioavailability (75-90%) and is stable in gastric acid. Unlike penicillin V, it is less affected by food and achieves higher serum concentrations."
+            },
+            {
+              "stem": "A 40-year-old man with a diabetic foot infection is started on piperacillin-tazobactam. The role of tazobactam in this combination is:",
+              "options": [
+                "To enhance piperacillin binding to PBPs",
+                "To inhibit beta-lactamases, protecting piperacillin from hydrolysis",
+                "To increase piperacillin's half-life by reducing renal clearance",
+                "To provide additional Gram-positive coverage"
+              ],
+              "answer": "To inhibit beta-lactamases, protecting piperacillin from hydrolysis",
+              "explanation": "Tazobactam is a beta-lactamase inhibitor (sulphone) that irreversibly binds to class A beta-lactamases (e.g., TEM, SHV), preventing them from hydrolysing piperacillin, thereby extending its spectrum."
+            },
+            {
+              "stem": "Which cephalosporin is MOST appropriate for treating a methicillin-susceptible Staphylococcus aureus (MSSA) skin abscess?",
+              "options": [
+                "Ceftriaxone (third generation)",
+                "Cefepime (fourth generation)",
+                "Cephalexin (first generation)",
+                "Ceftazidime (third generation)"
+              ],
+              "answer": "Cephalexin (first generation)",
+              "explanation": "First-generation cephalosporins (cephalexin, cefazolin) have the best activity against MSSA among all cephalosporins. Higher generations sacrifice Gram-positive coverage for expanded Gram-negative activity."
+            },
+            {
+              "stem": "Azithromycin is preferred over erythromycin for most outpatient respiratory infections because:",
+              "options": [
+                "It has a broader spectrum including Pseudomonas",
+                "It has better GI tolerability and once-daily dosing with a longer half-life",
+                "It is not metabolised by CYP450 and has no drug interactions",
+                "It achieves higher CSF penetration"
+              ],
+              "answer": "It has better GI tolerability and once-daily dosing with a longer half-life",
+              "explanation": "Azithromycin has a long half-life (68 hours), allowing once-daily dosing and shorter courses. It causes less GI upset than erythromycin (which stimulates motilin receptors causing cramping) and does not significantly inhibit CYP3A4 unlike erythromycin."
+            },
+            {
+              "stem": "A 45-year-old woman receiving gentamicin 5 mg/kg once daily should have her trough level checked at which time?",
+              "options": [
+                "30 minutes after the infusion",
+                "Just before the next dose (18-24 hours post-dose)",
+                "6 hours after the dose",
+                "At any time during the dosing interval"
+              ],
+              "answer": "Just before the next dose (18-24 hours post-dose)",
+              "explanation": "For once-daily aminoglycoside dosing, the trough level (measured just before the next dose) should be <1 mg/L to minimise toxicity. Peak levels (1 hour after end of infusion) should be >20 mg/L for Gram-negative infections."
+            },
+            {
+              "stem": "Which of the following carries the HIGHEST risk of nephrotoxicity when combined with aminoglycosides?",
+              "options": [
+                "Ceftriaxone",
+                "Vancomycin",
+                "Azithromycin",
+                "Metronidazole"
+              ],
+              "answer": "Vancomycin",
+              "explanation": "The combination of vancomycin plus an aminoglycoside (e.g., gentamicin) is synergistically nephrotoxic, with rates of acute kidney injury as high as 20-30%. Close renal monitoring and TDM of both drugs are essential."
+            },
+            {
+              "stem": "A 55-year-old man with Pseudomonas aeruginosa pneumonia is started on ciprofloxacin. The emergence of resistance during therapy is most commonly due to:",
+              "options": [
+                "Plasmid-mediated beta-lactamase acquisition",
+                "Mutations in DNA gyrase (gyrA) and efflux pump upregulation",
+                "Target site methylation altering ribosomal binding",
+                "Decreased porin channel expression in the outer membrane"
+              ],
+              "answer": "Mutations in DNA gyrase (gyrA) and efflux pump upregulation",
+              "explanation": "Fluoroquinolone resistance in Pseudomonas develops through stepwise mutations in the quinolone resistance-determining region (QRDR) of gyrA and parC, combined with upregulation of efflux pumps (MexAB-OprM)."
+            },
+            {
+              "stem": "Which antifungal agent has activity against Aspergillus species and is considered first-line therapy for invasive aspergillosis?",
+              "options": [
+                "Fluconazole",
+                "Caspofungin",
+                "Voriconazole",
+                "Amphotericin B"
+              ],
+              "answer": "Voriconazole",
+              "explanation": "Voriconazole is the recommended first-line treatment for invasive aspergillosis based on superior outcomes compared to amphotericin B in clinical trials. Fluconazole has no activity against Aspergillus."
+            },
+            {
+              "stem": "A 30-year-old immunocompetent woman presents with severe vulvovaginal candidiasis. Which oral antifungal is MOST appropriate?",
+              "options": [
+                "Amphotericin B 50 mg IV daily",
+                "Fluconazole 150 mg single oral dose",
+                "Terbinafine 250 mg daily for 7 days",
+                "Caspofungin 70 mg IV loading dose"
+              ],
+              "answer": "Fluconazole 150 mg single oral dose",
+              "explanation": "Fluconazole 150 mg as a single oral dose is the standard treatment for uncomplicated vulvovaginal candidiasis. It achieves high vaginal tissue concentrations and has cure rates >80%."
+            },
+            {
+              "stem": "A newborn is diagnosed with neonatal herpes simplex. Which antiviral is MOST appropriate?",
+              "options": [
+                "Oral valacyclovir 500 mg twice daily",
+                "Intravenous acyclovir 20 mg/kg 8-hourly for 14-21 days",
+                "Intravenous ganciclovir 5 mg/kg twice daily",
+                "Oral acyclovir 200 mg five times daily"
+              ],
+              "answer": "Intravenous acyclovir 20 mg/kg 8-hourly for 14-21 days",
+              "explanation": "Neonatal HSV is a life-threatening infection requiring high-dose IV acyclovir. The dose (20 mg/kg 8-hourly) is higher than adult doses due to altered pharmacokinetics in neonates. Duration is 14 days for skin/eye/mouth disease, 21 days for CNS disease."
+            },
+            {
+              "stem": "Which of the following statements about ethambutol is CORRECT?",
+              "options": [
+                "It inhibits mycolic acid synthesis in M. tuberculosis",
+                "It causes dose-dependent optic neuritis affecting colour and visual acuity",
+                "It is bactericidal against intracellular M. tuberculosis",
+                "It is primarily eliminated by hepatic metabolism"
+              ],
+              "answer": "It causes dose-dependent optic neuritis affecting colour and visual acuity",
+              "explanation": "Ethambutol causes retrobulbar neuritis (optic neuritis) that presents with reduced visual acuity, colour blindness (especially red-green), and visual field defects. It is dose-dependent and usually reversible if detected early. Baseline and monthly visual testing is mandatory."
+            },
+            {
+              "stem": "Pyrazinamide has unique activity against which population of M. tuberculosis?",
+              "options": [
+                "Rapidly replicating extracellular bacilli in cavities",
+                "Slowly metabolising intracellular bacilli in acidic environments",
+                "Dormant bacilli in granulomas",
+                "Extracellular bacilli in well-oxygenated tissues"
+              ],
+              "answer": "Slowly metabolising intracellular bacilli in acidic environments",
+              "explanation": "Pyrazinamide is a prodrug converted to pyrazinoic acid by pyrazinamidase, requiring an acidic pH (pH 5.5-5.8) for activity. It targets the semi-dormant population of mycobacteria in acidic intracellular environments, contributing to its sterilising activity."
+            },
+            {
+              "stem": "A 25-year-old woman travelling to a chloroquine-resistant malaria region needs chemoprophylaxis. She has a history of anxiety and depression. Which option is LEAST suitable?",
+              "options": [
+                "Atovaquone-proguanil (Malarone) 250/100 mg daily",
+                "Mefloquine 250 mg weekly",
+                "Doxycycline 100 mg daily",
+                "Primaquine 30 mg daily"
+              ],
+              "answer": "Mefloquine 250 mg weekly",
+              "explanation": "Mefloquine is contraindicated in patients with a history of psychiatric conditions (anxiety, depression, psychosis) due to its neuropsychiatric adverse effects (vivid dreams, anxiety, depression, and rarely suicide). Atovaquone-proguanil or doxycycline are safer alternatives."
+            },
+            {
+              "stem": "Which MRSA-active antibiotic should be avoided in patients at risk of serotonin syndrome?",
+              "options": [
+                "Vancomycin",
+                "Linezolid",
+                "Daptomycin",
+                "Teicoplanin"
+              ],
+              "answer": "Linezolid",
+              "explanation": "Linezolid is a weak, reversible monoamine oxidase inhibitor (MAOI). When combined with serotonergic drugs (SSRIs, SNRIs, MAOIs, tramadol), it can precipitate serotonin syndrome (agitation, hyperthermia, clonus, hyperreflexia)."
+            },
+            {
+              "stem": "A patient receiving daptomycin for MRSA bacteraemia should be monitored for which adverse effect?",
+              "options": [
+                "Interstitial nephritis",
+                "Elevated creatine phosphokinase (CPK) indicating myopathy",
+                "QT prolongation",
+                "Hepatotoxicity"
+              ],
+              "answer": "Elevated creatine phosphokinase (CPK) indicating myopathy",
+              "explanation": "Daptomycin can cause skeletal muscle toxicity (myopathy, rhabdomyolysis) with dose-dependent CPK elevation. CPK should be monitored weekly during therapy. Statins should be temporarily withheld to avoid additive myotoxicity."
+            },
+            {
+              "stem": "Which of the following is a key feature of carbapenem antibiotics?",
+              "options": [
+                "They are not effective against anaerobes",
+                "They are stable against most beta-lactamases including ESBLs and AmpC",
+                "They are only available in oral formulations",
+                "They have no activity against Pseudomonas aeruginosa"
+              ],
+              "answer": "They are stable against most beta-lactamases including ESBLs and AmpC",
+              "explanation": "Carbapenems (meropenem, imipenem, ertapenem) have the broadest spectrum of all beta-lactams due to: (1) Stability against most beta-lactamases (ESBLs, AmpC), (2) A zwitterionic structure allowing rapid penetration through porins."
+            },
+            {
+              "stem": "A 60-year-old man on clarithromycin for MAC (Mycobacterium avium complex) infection develops a metallic taste. Which adverse effect is this?",
+              "options": [
+                "Metallic taste due to zinc chelation",
+                "Dysgeusia caused by clarithromycin's effect on taste receptors",
+                "Metallic taste from clarithromycin-induced halitosis",
+                "Metallic taste due to drug-induced xerostomia"
+              ],
+              "answer": "Dysgeusia caused by clarithromycin's effect on taste receptors",
+              "explanation": "Clarithromycin commonly causes taste disturbance (dysgeusia, metallic/bitter taste) in up to 15-20% of patients at standard doses and more frequently at higher doses. It is reversible upon discontinuation."
+            },
+            {
+              "stem": "Which of the following antibiotics should be AVOIDED in pregnant women due to the risk of cartilage damage in the fetus?",
+              "options": [
+                "Nitrofurantoin",
+                "Doxycycline",
+                "Ciprofloxacin",
+                "Penicillin V"
+              ],
+              "answer": "Ciprofloxacin",
+              "explanation": "Fluoroquinolones (ciprofloxacin, levofloxacin) are generally avoided in pregnancy due to concerns about fetal cartilage damage (based on animal studies) and tendon toxicity. Safer alternatives exist for most infections."
+            },
+            {
+              "stem": "Which of the following is correctly paired with its mechanism of resistance?",
+              "options": [
+                "Vancomycin resistance in Enterococci: VanA operon modifying D-Ala-D-Ala to D-Ala-D-Lac",
+                "MRSA: mecA gene producing altered PBP with increased affinity for beta-lactams",
+                "ESBL resistance: porin loss reducing drug entry",
+                "Aminoglycoside resistance: target site methylation"
+              ],
+              "answer": "Vancomycin resistance in Enterococci: VanA operon modifying D-Ala-D-Ala to D-Ala-D-Lac",
+              "explanation": "VanA-type resistance in VRE replaces the D-alanine-D-alanine target with D-alanine-D-lactate, reducing vancomycin binding affinity by 1000-fold. The mecA gene in MRSA produces PBP2a with reduced (not increased) beta-lactam affinity."
+            },
+            {
+              "stem": "Which of the following describes the mechanism of action of linezolid?",
+              "options": [
+                "Inhibition of bacterial cell wall synthesis",
+                "Binding to the 23S rRNA of the 50S subunit preventing 70S initiation complex formation",
+                "Inhibition of bacterial DNA-dependent RNA polymerase",
+                "Disruption of the bacterial cell membrane"
+              ],
+              "answer": "Binding to the 23S rRNA of the 50S subunit preventing 70S initiation complex formation",
+              "explanation": "Linezolid (oxazolidinone) binds to the 23S rRNA of the 50S ribosomal subunit, preventing the formation of the 70S initiation complex. This unique mechanism avoids cross-resistance with other protein synthesis inhibitors."
+            },
+            {
+              "stem": "A patient on TB therapy develops orange-red discolouration of urine and tears. Which drug is responsible?",
+              "options": [
+                "Isoniazid",
+                "Rifampicin",
+                "Pyrazinamide",
+                "Ethambutol"
+              ],
+              "answer": "Rifampicin",
+              "explanation": "Rifampicin and its metabolites are orange-red and are excreted in urine, sweat, tears, and other body fluids. This is a harmless but important adverse effect that patients must be counselled about to avoid alarm."
+            },
+            {
+              "stem": "A 75-year-old man with COPD on prednisolone 10 mg daily develops pulmonary aspergillosis. Which antifungal is contraindicated due to a significant drug interaction?",
+              "options": [
+                "Caspofungin",
+                "Voriconazole",
+                "Liposomal amphotericin B",
+                "Anidulafungin"
+              ],
+              "answer": "Voriconazole",
+              "explanation": "Voriconazole inhibits CYP3A4, CYP2C9, and CYP2C19, significantly increasing prednisolone levels. Concurrent use can lead to increased glucocorticoid exposure and Cushing's syndrome. Dose reduction of prednisolone and close monitoring are required."
+            },
+            {
+              "stem": "Which antimicrobial agent requires a test dose before administration due to the risk of anaphylaxis?",
+              "options": [
+                "Vancomycin",
+                "Ceftriaxone",
+                "Amphotericin B",
+                "Clindamycin"
+              ],
+              "answer": "Amphotericin B",
+              "explanation": "Amphotericin B requires a test dose (1 mg IV over 20-30 minutes) before the full therapeutic dose due to the risk of anaphylaxis and severe infusion-related reactions. Premedication with antihistamines, antipyretics, and corticosteroids is standard."
+            },
+            {
+              "stem": "Which of the following is TRUE about clindamycin?",
+              "options": [
+                "It is a beta-lactam antibiotic with activity against MRSA",
+                "It inhibits protein synthesis at the 50S ribosomal subunit",
+                "It is first-line treatment for C. difficile infection",
+                "It achieves poor bone penetration"
+              ],
+              "answer": "It inhibits protein synthesis at the 50S ribosomal subunit",
+              "explanation": "Clindamycin binds to the 50S ribosomal subunit (overlapping the macrolide binding site) inhibiting peptide bond formation. It is associated with a high risk of C. difficile infection (up to 20%)."
+            },
+            {
+              "stem": "The mechanism by which trimethoprim-sulfamethoxazole exerts its bactericidal effect involves:",
+              "options": [
+                "Inhibition of cell wall synthesis",
+                "Sequential blockade of folic acid synthesis at two steps",
+                "Inhibition of DNA gyrase",
+                "Disruption of cell membrane integrity"
+              ],
+              "answer": "Sequential blockade of folic acid synthesis at two steps",
+              "explanation": "Sulfamethoxazole inhibits dihydropteroate synthase (DHPS) and trimethoprim inhibits dihydrofolate reductase (DHFR), providing synergistic sequential blockade of tetrahydrofolate synthesis, which is essential for DNA synthesis."
+            },
+            {
+              "stem": "Which antiviral agent is a prodrug that requires conversion to penciclovir for activity?",
+              "options": [
+                "Acyclovir",
+                "Valacyclovir",
+                "Famciclovir",
+                "Ganciclovir"
+              ],
+              "answer": "Famciclovir",
+              "explanation": "Famciclovir is the oral prodrug of penciclovir. It undergoes rapid first-pass metabolism to penciclovir, which has a similar mechanism to acyclovir (inhibits viral DNA polymerase). Valacyclovir is the prodrug of acyclovir."
+            },
+            {
+              "stem": "Which of the following is the MOST appropriate treatment for uncomplicated gonorrhoea in a patient with severe penicillin allergy?",
+              "options": [
+                "Ciprofloxacin 500 mg single dose",
+                "Ceftriaxone 500 mg intramuscular single dose",
+                "Azithromycin 2 g single dose",
+                "Doxycycline 100 mg twice daily for 7 days"
+              ],
+              "answer": "Ceftriaxone 500 mg intramuscular single dose",
+              "explanation": "Ceftriaxone 500 mg IM is the first-line treatment for uncomplicated gonorrhoea regardless of penicillin allergy history, as cross-reactivity between ceftriaxone and penicillins in patients with mild allergy is very low (<1%). For severe type I hypersensitivity, desensitisation or consulting an allergist is recommended."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "(a) Describe the mechanism of action of aminoglycoside antibiotics at the ribosomal level. (3 marks)\n(b) List three risk factors for aminoglycoside nephrotoxicity. (2 marks)\n(c) Explain the rationale for once-daily dosing of aminoglycosides. (2 marks)\n(d) State the target peak and trough levels for once-daily gentamicin. (1 mark)",
+              "modelAnswer": "(a) Aminoglycosides (e.g., gentamicin) are bactericidal antibiotics that exert concentration-dependent killing. They: (1) Bind irreversibly to the 30S ribosomal subunit (specifically the 16S rRNA helix 44), (2) Cause misreading of mRNA codons leading to incorporation of incorrect amino acids and production of non-functional proteins, (3) Disrupt the cell membrane by inserting truncated proteins into the membrane, and (4) Inhibit ribosomal translocation. The process is oxygen-dependent (ineffective against anaerobes).\n\n(b) Three risk factors: (1) Pre-existing renal impairment (CKD), (2) Advanced age (>60 years), (3) Concurrent nephrotoxins (vancomycin, amphotericin B, NSAIDs, contrast dye), (4) Prolonged therapy (>7 days), (5) Hypovolaemia/dehydration, (6) High peak and trough levels.\n\n(c) Once-daily dosing rationale: (1) Aminoglycosides exhibit concentration-dependent killing — higher peak/MIC ratios (≥8-10) correlate with better clinical outcomes, (2) The post-antibiotic effect (PAE) persists for 2-6 hours even after drug levels fall below MIC, (3) Once-daily dosing achieves higher peak concentrations while allowing drug-free intervals that reduce renal tubular accumulation (saturable uptake), thereby reducing nephrotoxicity.\n\n(d) Target levels for once-daily gentamicin: Peak (1 hour post-dose): 16-24 mg/L, Trough (just before next dose): <1 mg/L."
+            },
+            {
+              "stem": "(a) List the four-drug standard RHZE regimen for tuberculosis and state the specific role of each drug. (4 marks)\n(b) Explain the importance of directly observed therapy (DOT) in TB management. (2 marks)\n(c) What adverse effect is associated with each of the four drugs? (2 marks)",
+              "modelAnswer": "(a) Four drugs and their roles:\n1. Rifampicin: Bactericidal. Inhibits DNA-dependent RNA polymerase. Sterilises lesions rapidly — kills both actively replicating and slowly metabolising organisms. Sterilising activity allows treatment shortening to 6 months.\n2. Isoniazid: Highly bactericidal. Inhibits mycolic acid synthesis (InhA enzyme). Kills >90% of viable organisms within 48 hours. Reduces infectiousness rapidly.\n3. Pyrazinamide: Sterilising. Active against semi-dormant intracellular organisms in acidic pH. Kills the persister population that other drugs cannot reach, enabling 6-month therapy.\n4. Ethambutol: Bacteriostatic at standard doses. Inhibits arabinosyl transferase (embB) blocking arabinogalactan synthesis. Prevents emergence of rifampicin resistance during the initial intensive phase.\n\n(b) DOT is essential because: (1) TB treatment is long (6+ months) with poor adherence leading to relapse and acquired drug resistance, (2) DOT ensures every dose is consumed, achieving sustained therapeutic drug levels, (3) WHO recommends DOT for all TB patients, especially during the intensive phase. Without DOT, default rates are 20-50% vs 5-10% with DOT.\n\n(c) Adverse effects:\n1. Rifampicin: Hepatotoxicity, orange-red discolouration of body fluids, CYP450 induction (many drug interactions), flu-like syndrome (intermittent dosing).\n2. Isoniazid: Peripheral neuropathy (pyridoxine deficiency), hepatotoxicity, drug-induced lupus, hypersensitivity.\n3. Pyrazinamide: Hepatotoxicity, hyperuricaemia (gout), arthralgias, GI upset, photosensitivity.\n4. Ethambutol: Optic neuritis (dose-dependent, usually reversible), hyperuricaemia."
+            },
+            {
+              "stem": "(a) Compare the mechanisms of action of azole antifungals and polyene antifungals. (3 marks)\n(b) List three factors that determine the choice of antifungal agent for a systemic fungal infection. (2 marks)\n(c) State two advantages of echinocandins over azoles. (2 marks)\n(d) What is the role of flucytosine? (1 mark)",
+              "modelAnswer": "(a) Azoles (e.g., fluconazole, voriconazole): Inhibit fungal CYP450 14-alpha-demethylase (CYP51), blocking conversion of lanosterol to ergosterol. This depletes membrane ergosterol and accumulates toxic 14-alpha-methylated sterols, disrupting membrane function. Azoles are primarily fungistatic. Polyenes (e.g., amphotericin B): Bind directly to ergosterol in the fungal cell membrane, forming aqueous pores that cause leakage of ions (K+, Mg2+) and macromolecules, leading to rapid cell death. Polyenes are fungicidal.\n\n(b) Three factors: (1) Susceptibility of the specific fungal species — e.g., Candida krusei is intrinsically resistant to fluconazole, Aspergillus is resistant to fluconazole, (2) Site of infection — e.g., need for CSF penetration (fluconazole, voriconazole good; echinocandins poor), (3) Patient factors — renal function (amphotericin B nephrotoxic), liver function (azoles hepatotoxic), drug interactions (azoles inhibit CYP450).\n\n(c) Two advantages of echinocandins: (1) Fungicidal against Candida species (including azole-resistant strains) with excellent safety profile, (2) Minimal drug interactions (not metabolised by CYP450) and no significant nephrotoxicity or hepatotoxicity. Their mechanism (beta-glucan synthase inhibition) is unique to fungi with no human counterpart.\n\n(d) Flucytosine: A pyrimidine analogue converted to 5-fluorouracil (5-FU) within fungal cells, inhibiting fungal DNA and RNA synthesis. It is never used as monotherapy due to rapid resistance development. It is combined with amphotericin B for cryptococcal meningitis and severe candidiasis."
+            },
+            {
+              "stem": "(a) Describe the mechanism of action of acyclovir against HSV and VZV. (3 marks)\n(b) Explain why acyclovir is more toxic to virus-infected cells than uninfected cells. (2 marks)\n(c) List three clinical indications for intravenous acyclovir. (2 marks)\n(d) State two clinically significant adverse effects of IV acyclovir. (1 mark)",
+              "modelAnswer": "(a) Acyclovir is a guanosine analogue. It undergoes: (1) Selective phosphorylation by viral thymidine kinase (TK) to acyclovir monophosphate — host cell TK cannot phosphorylate acyclovir efficiently, (2) Cellular kinases convert it to acyclovir triphosphate (active form), (3) Acyclovir triphosphate competitively inhibits viral DNA polymerase and is incorporated into viral DNA, causing chain termination due to its lack of a 3'-hydroxyl group.\n\n(b) Selectivity for infected cells arises because: (1) Viral TK is 3000-fold more efficient at phosphorylating acyclovir than host cell TK, (2) The active triphosphate has 10-30 fold higher affinity for viral DNA polymerase than host DNA polymerase alpha. These two factors result in acyclovir being 10,000-fold more active against HSV-infected cells than uninfected cells.\n\n(c) Three indications for IV acyclovir: (1) Herpes simplex encephalitis — 10 mg/kg 8-hourly for 14-21 days, (2) Neonatal HSV infection — 20 mg/kg 8-hourly for 14-21 days, (3) Severe herpes zoster (shingles) in immunocompromised patients — 10 mg/kg 8-hourly for 7-10 days, (4) Severe primary genital herpes with complications.\n\n(d) IV acyclovir adverse effects: (1) Nephrotoxicity — crystalluria (acyclovir crystals obstructing renal tubules), preventable with adequate hydration and slow infusion, (2) Neurotoxicity — confusion, hallucinations, seizures (especially in elderly, renal impairment, or high doses)."
+            },
+            {
+              "stem": "(a) Explain the terms \"post-antibiotic effect\" (PAE) and \"concentration-dependent killing\" using examples. (3 marks)\n(b) How does the pharmacodynamic profile of beta-lactams differ from that of aminoglycosides? (3 marks)\n(c) What is the clinical significance of the time above MIC (T>MIC) for beta-lactam efficacy? (2 marks)",
+              "modelAnswer": "(a) Post-antibiotic effect (PAE): Persistent suppression of bacterial growth after antibiotic levels fall below the MIC. Example: Aminoglycosides have a prolonged PAE (2-6 hours) against Gram-negative bacilli, allowing once-daily dosing. Beta-lactams have minimal PAE against Gram-negative bacilli (except carbapenems).\n\nConcentration-dependent killing: Higher antibiotic concentrations kill bacteria more rapidly and to a greater extent. The key parameter is peak/MIC ratio or AUC/MIC. Example: Aminoglycosides and fluoroquinolones exhibit concentration-dependent killing — higher peaks (≥8-10× MIC) correlate with better outcomes.\n\n(b) Beta-lactams: Exhibit time-dependent killing — bactericidal effect depends on the duration the drug concentration exceeds the MIC (T>MIC). Once levels exceed MIC by 4-5×, further increases do not enhance killing. Beta-lactams have short or no PAE against Gram-negative bacilli, requiring frequent dosing (multiple times daily or continuous infusion).\n\nAminoglycosides: Exhibit concentration-dependent killing — higher peak concentrations kill more bacteria. They have a prolonged PAE allowing once-daily dosing (achieve high peak, then low trough).\n\n(c) For beta-lactams, T>MIC is the key pharmacodynamic parameter determining efficacy: (1) For penicillins and cephalosporins, T>MIC must exceed 40-50% of the dosing interval for bacteriostatic effect and 60-70% for bactericidal effect, (2) For carbapenems, T>MIC of 40% is sufficient due to prolonged PAE, (3) This drives the need for frequent dosing or continuous infusion in critically ill patients or organisms with reduced susceptibility."
+            },
+            {
+              "stem": "(a) Define an ESBL and list the antibiotic classes that ESBL-producing organisms are resistant to. (3 marks)\n(b) Explain why carbapenems are the treatment of choice for serious ESBL infections. (2 marks)\n(c) List three strategies to prevent the spread of ESBL-producing organisms in hospital settings. (2 marks)\n(d) State one scenario where a non-carbapenem option might be considered for ESBL infections. (1 mark)",
+              "modelAnswer": "(a) ESBL (Extended-Spectrum Beta-Lactamase): Plasmid-mediated beta-lactamases (TEM, SHV, CTX-M families) that hydrolyse the beta-lactam ring of penicillins, all cephalosporins (including third and fourth generation), and aztreonam. They do not hydrolyse carbapenems or cephamycins (cefoxitin). ESBL-producing organisms are resistant to: penicillins, cephalosporins (1st-4th generation), and aztreonam. They are often co-resistant to fluoroquinolones, trimethoprim-sulfamethoxazole, and aminoglycosides due to co-located resistance genes on the same plasmid.\n\n(b) Carbapenems (meropenem, imipenem, ertapenem) are the treatment of choice because: (1) They are stable against ESBL hydrolysis due to their unique trans-6-hydroxyethyl side chain configuration, (2) They have reliable in vitro activity against >95% of ESBL-producing Enterobacterales, (3) Clinical outcome data show superior outcomes with carbapenems vs non-carbapenem options for serious infections.\n\n(c) Three prevention strategies: (1) Contact precautions: Single room isolation, gloves and gowns for healthcare workers, dedicated equipment, (2) Antimicrobial stewardship: Reduce unnecessary cephalosporin and fluoroquinolone use (key drivers of ESBL selection), (3) Active surveillance cultures: Rectal swabs on admission for high-risk patients (ICU, prior hospitalisation, long-term care) with preemptive isolation.\n\n(d) Scenario for non-carbapenem options: (1) Uncomplicated cystitis caused by ESBL-producing E. coli — nitrofurantoin 100 mg BID or fosfomycin trometamol 3 g single dose may be effective and carbapenem-sparing, (2) If the ESBL MIC of piperacillin-tazobactam is ≤8 mg/L and the infection is low severity, piperacillin-tazobactam may be considered, though evidence is debated."
+            },
+            {
+              "stem": "(a) Describe three mechanisms by which bacteria acquire antimicrobial resistance genes. (3 marks)\n(b) Explain the difference between horizontal and vertical gene transmission. (2 marks)\n(c) What is a plasmid and why is it important in the spread of AMR? (2 marks)\n(d) State the WHO definition of a \"critically important antimicrobial\" for human medicine. (1 mark)",
+              "modelAnswer": "(a) Three mechanisms of resistance gene acquisition:\n1. Conjugation (plasmid transfer): Direct cell-to-cell transfer of plasmid DNA carrying resistance genes through a sex pilus. This is the most important mechanism for spreading resistance across bacterial species and genera.\n2. Transformation: Uptake of free DNA (from lysed bacteria) from the environment by competent bacteria. Example: S. pneumoniae acquiring penicillin resistance via mosaic PBP genes.\n3. Transduction: Transfer of bacterial DNA (including resistance genes) by bacteriophages between bacteria. Example: S. aureus toxin and resistance gene transfer.\n\n(b) Vertical transmission: Transfer of genetic material from parent to daughter cell during replication — resistance is inherited by all progeny. Horizontal gene transfer (HGT): Transfer of genetic material between unrelated bacterial cells (same or different species) via conjugation, transformation, or transduction. HGT allows rapid spread of resistance across different bacterial populations.\n\n(c) Plasmids are extrachromosomal, circular, self-replicating DNA molecules that: (1) Carry multiple resistance genes (often forming multi-resistance cassettes) that can be expressed in diverse bacterial hosts, (2) Transfer between bacteria via conjugation — even between Gram-negative and Gram-positive species, (3) Accumulate resistance determinants through transposons and integrons (gene capture systems), enabling bacteria to become resistant to multiple drug classes simultaneously.\n\n(d) WHO defines \"critically important antimicrobials\" (CIA) as those that are: (1) The sole or one of few available therapies for serious bacterial infections, AND (2) Used to treat infections caused by bacteria that may be transmitted from non-human sources, or where resistance genes from non-human sources may affect human health. Examples: carbapenems, fluoroquinolones, macrolides, glycopeptides."
+            },
+            {
+              "stem": "(a) Describe the mechanism of action of metronidazole. (2 marks)\n(b) List three indications for metronidazole therapy. (2 marks)\n(c) State two significant drug interactions with metronidazole. (2 marks)\n(d) Explain why metronidazole is effective against anaerobic bacteria but not aerobic bacteria. (2 marks)",
+              "modelAnswer": "(a) Metronidazole is a prodrug that undergoes reduction of its nitro group by bacterial nitroreductases (e.g., ferredoxin oxidoreductase) under anaerobic conditions. The reduced intermediate (nitro radical) is toxic and causes DNA strand breakage, leading to bacterial cell death. It is bactericidal against anaerobes.\n\n(b) Three indications: (1) Anaerobic infections — intra-abdominal infections, pelvic inflammatory disease, brain abscess, (2) Bacterial vaginosis (Gardnerella vaginalis, other anaerobes), (3) C. difficile infection (oral metronidazole — though vancomycin is preferred for first episode).\n\n(c) Two significant interactions: (1) Warfarin — metronidazole inhibits CYP450 metabolism of S-warfarin, significantly increasing INR (risk of bleeding), (2) Alcohol — metronidazole inhibits aldehyde dehydrogenase causing disulfiram-like reaction (flushing, nausea, vomiting, tachycardia) — avoid alcohol during therapy and for 48 hours after.\n\n(d) Metronidazole requires: (1) Entry into bacterial cells, which occurs by passive diffusion, (2) Reduction of the nitro group by electron transport proteins (ferredoxins) that only function at low redox potential values found in anaerobic environments, (3) In aerobic bacteria, oxygen competes for electrons and the reduced metronidazole intermediates are re-oxidised to inactive forms, preventing the drug from working."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Mr. Otieno, a 58-year-old man with hypertension and diet-controlled diabetes, presents to the emergency department with a 5-day history of worsening cough producing green sputum, high-grade fever (39.5°C), pleuritic chest pain, and confusion. On examination: RR 36/min, SpO2 85% on room air, HR 120/min, BP 95/60, temperature 39.8°C. Chest auscultation reveals bronchial breath sounds and crackles over the right lower lobe. Chest X-ray shows dense right lower lobe consolidation with possible early cavitation. His CURB-65 score is 4 (confusion, urea >7 mmol/L, RR ≥30, BP <90 systolic). His creatinine is 120 µmol/L (eGFR 55 mL/min). He reports no drug allergies.\n\n(a) Classify the severity of this pneumonia and state the likely pathogens given his CURB-65 score and cavitary findings. (3 marks)\n(b) What empiric antibiotic regimen would you start? Include drug names, doses, route, and rationale for each. (6 marks)\n(c) Sputum culture grows Klebsiella pneumoniae. What is the significance of this organism in this patient and what specific risk factors does he have? (3 marks)\n(d) The isolate is subsequently confirmed as an ESBL-producing K. pneumoniae. What antibiotic should be used and why? Detail the dose, route, and duration. (4 marks)\n(e) If the organism were instead a carbapenem-resistant K. pneumoniae (CRE), what therapeutic options exist and what are their limitations? (4 marks)",
+              "modelAnswer": "(a) Severity: Severe community-acquired pneumonia (CURB-65 ≥3 = severe, high mortality). CURB-65 of 4 indicates very severe disease requiring ICU admission. Likely pathogens: S. pneumoniae, K. pneumoniae (especially given cavitation and alcohol/diabetes risk), H. influenzae, S. aureus (including MRSA given cavitation), and Legionella pneumophila. Cavitation suggests K. pneumoniae, S. aureus, or anaerobes.\n\n(b) Empiric antibiotic regimen for severe CAP in ICU (covering all likely pathogens including MDR):\n- Anti-pseudomonal beta-lactam: Piperacillin-tazobactam 4.5 g IV every 6 hours (dose adjusted for CrCl 55 mL/min — use standard interval of 6 hours at this eGFR).\nOR Ceftriaxone 2 g IV daily + Azithromycin 500 mg IV daily if Pseudomonas risk is low.\nGiven CURB-65 4, cavitation, and diabetes: Use piperacillin-tazobactam.\n- PLUS Azithromycin 500 mg IV daily (for atypical pathogen coverage — Legionella, Mycoplasma, Chlamydia).\n- PLUS Vancomycin 25 mg/kg loading then 15 mg/kg IV 12-hourly (for MRSA coverage given cavitation).\n\nAlternative regimen: A respiratory fluoroquinolone (levofloxacin 750 mg IV daily) alone could be considered, but in severe CAP with cavitation, dual therapy with beta-lactam + macrolide is preferred.\n\n(c) Significance of K. pneumoniae: (1) A classic cause of severe CAP in patients with alcoholism, diabetes, and COPD — Mr. Otieno has diabetes, (2) Causes a characteristic \"currant jelly\" sputum (but not always present), (3) Cavitation is common, (4) Associated with higher mortality than S. pneumoniae CAP, (5) Increasingly community-acquired ESBL-producing strains.\n\nRisk factors in this patient: (1) Diabetes — immunocompromised host, (2) Recent hospitalisation not stated but risk factors for colonisation may exist, (3) Age >65 years.\n\n(d) ESBL-producing K. pneumoniae: Treatment:\n- Drug: Meropenem 1 g IV every 8 hours (standard dose — at eGFR 55 mL/min, no dose adjustment needed until CrCl <50, then 1 g 12-hourly).\n- Rationale: Carbapenems are the most reliable agents against ESBL-producing Enterobacterales. Meropenem is preferred over imipenem due to lower seizure risk.\n- Duration: Minimum 10-14 days for severe CAP with bacteremia. Longer if cavitation or slow response.\n- Additional considerations: (1) Repeat blood cultures at 48 hours, (2) Monitor LFTs and renal function, (3) Consider de-escalation when sensitivities available — if ESBL confirmed, carbapenem is appropriate.\n\n(e) Carbapenem-resistant K. pneumoniae (CRE) therapeutic options:\n1. Ceftazidime-avibactam: 2.5 g IV 8-hourly (ceftazidime + avibactam beta-lactamase inhibitor active against KPC carbapenemases). First-line for KPC-producing CRE. Limitations: No activity against NDM or VIM metallo-beta-lactamases; requires renal dose adjustment.\n2. Meropenem-vaborbactam: 4 g IV 8-hourly. Covers KPC-producing CRE. Limitations: No activity against NDM.\n3. Colistin (polymyxin E): Loading dose 9 MU then 4.5 MU 12-hourly IV. Limitations: Significant nephrotoxicity (40-60%), neurotoxicity, heteroresistance, poor lung penetration.\n4. Tigecycline: 100 mg loading then 50 mg 12-hourly IV. Limitations: Bacteriostatic, poor urinary and lung penetration, increased mortality in HAP, GI side effects.\n5. Combination therapy: Often required — e.g., ceftazidime-avibactam + aztreonam for NDM-producing strains where the aztreonam is protected from metallo-beta-lactamases.\n6. Newer agents: Imipenem-cilastatin-relebactam, cefiderocol."
+            },
+            {
+              "stem": "A 32-year-old woman presents to the infectious disease clinic with a 3-day history of high fever (40°C), chills, severe headache, myalgia, and arthralgia. She returned from a 2-week trip to rural Western Kenya 1 week ago. She took no malaria chemoprophylaxis. She is not pregnant. On examination: temperature 39.8°C, pulse 112 bpm, BP 100/65, no focal neurological signs, no jaundice. A thin blood film shows P. falciparum with a parasitaemia of 4.5% (high but does not meet hyperparasitaemia criteria of >10%). Her Hb is 11.0 g/dL, platelet count 65 × 10⁹/L (thrombocytopenia), creatinine 85 µmol/L, blood glucose 4.5 mmol/L.\n\n(a) Classify the severity of this malaria episode and justify your classification. (2 marks)\n(b) What is the recommended antimalarial regimen for this severity? Provide specific drug names, doses, route, and duration. (6 marks)\n(c) What are the key clinical and laboratory parameters to monitor during treatment? (4 marks)\n(d) The patient develops recurrent fever and parasitaemia on day 5 of treatment. What are the possible explanations? (3 marks)\n(e) What public health measures should be implemented for malaria control in the region she visited? (3 marks)\n(f) Her partner developed symptoms 3 days after her and tests positive for P. falciparum (parasitaemia 0.5%) with no complications. What regimen should he receive and why does it differ from hers? (2 marks)",
+              "modelAnswer": "(a) Severity: Severe malaria. WHO criteria for severe malaria include parasitaemia >2% (her parasitaemia is 4.5%) — this alone classifies as severe P. falciparum malaria. However, she has no signs of vital organ dysfunction (no jaundice, no impaired consciousness, no respiratory distress, no renal failure, no severe anaemia [Hb >7]). While hyperparasitaemia >10% is one criterion, parasitaemia of 4.5% in a non-immune adult also meets the threshold for severe malaria per WHO guidelines. The thrombocytopenia and high-grade fever support the diagnosis. Per WHO 2023: parasitaemia >2% in a non-immune patient = severe malaria.\n\n(b) Antimalarial regimen — three options based on local protocol:\nOption 1 (Preferred — WHO recommends IV artesunate for severe malaria):\n- IV Artesunate: 2.4 mg/kg at 0, 12, and 24 hours, then once daily until oral therapy can be tolerated.\n- Her weight ~60 kg: Dose = 144 mg IV per dose.\n- Switch to ACT once oral tolerated: Artemether-lumefantrine (20/120 mg) — weight-based dosing (4 tablets BID for 3 days for 35-65 kg).\n\nOption 2 (If IV artesunate unavailable):\n- IM Artemether: 3.2 mg/kg loading then 1.6 mg/kg daily.\n\nOption 3 (If artemisinins unavailable):\n- IV Quinine: 20 mg/kg loading over 4 hours, then 10 mg/kg 8-hourly. Requires cardiac monitoring (QT prolongation).\n\nImportant: IV artesunate is superior to quinine (reduces mortality by 34.7% in SEAQUAMAT trial and by 22.5% in AQUAMAT trial). Complete the 3-day course after conversion to oral ACT.\n\n(c) Key monitoring parameters during treatment:\n1. Parasite count: Check at 0, 12, 24, 48, and 72 hours. Should decline by >90% within 24 hours with artesunate. Persistent parasitaemia at day 3 suggests resistance.\n2. Blood glucose: Hourly during IV quinine treatment (quinine causes hyperinsulinaemic hypoglycaemia). Artesunate is not associated with hypoglycaemia.\n3. Haemoglobin and platelet count: Daily to detect haemolysis or blackwater fever.\n4. Neurological status: GCS every 4 hours — monitor for cerebral malaria (seizures, decreased LOC).\n5. Renal function (creatinine, urine output): Monitor for acute kidney injury.\n6. Bilirubin and LFTs: Monitor for jaundice and hepatic involvement.\n7. Temperature chart: Fever clearance time (expected >90% afebrile within 48 hours).\n8. ECG: If using quinine — QT prolongation risk.\n\n(d) Recurrent fever and parasitaemia on day 5 — possible explanations:\n1. Poor adherence to oral ACT: Patient may have missed doses or vomited oral therapy. Check directly observed therapy.\n2. Vomiting or malabsorption: If IV to oral switch was too early or the patient had ongoing GI symptoms.\n3. Artesunate resistance: Although rare in Africa, PfKelch13 mutations are emerging. Check for delayed parasite clearance.\n4. Reinfection: From ongoing mosquito exposure in endemic area (but day 5 is early for new infection).\n5. Inadequate dosing: Check weight-based dose was correct.\n6. Drug quality: Counterfeit or substandard artemisinins are a problem in some regions.\n7. Mixed infection: Consider P. vivax or P. ovale hypnozoite reactivation (though early for relapse, and primaquine is not yet given).\n\nManagement: Check parasite count, re-treat with IV artesunate, consider alternative ACT partner drug (e.g., artesunate-pyronaridine), send sample for PfKelch13 sequencing.\n\n(e) Public health measures for malaria control:\n1. Vector control: Insecticide-treated bed nets (ITNs), indoor residual spraying (IRS) with pyrethroids.\n2. Chemoprevention: Seasonal malaria chemoprevention (SMC) in Sahel regions for children <5 years, intermittent preventive treatment in pregnancy (IPTp) with sulfadoxine-pyrimethamine.\n3. Rapid diagnosis and ACT treatment: Ensure community health workers have RDTs and ACTs.\n4. Surveillance: Case reporting, entomological monitoring, drug resistance surveillance.\n5. Health education: Promote ITN use, early care-seeking, and adherence to complete ACT courses.\n\n(f) Partner management:\n- He has uncomplicated malaria (parasitaemia 0.5%, no severe features).\n- Regimen: Oral ACT — Artemether-lumefantrine (20/120 mg) 4 tablets twice daily for 3 days.\n- Rationale for oral therapy: He has low parasitaemia without severe features (no hyperparasitaemia, no organ dysfunction). Oral ACT achieves cure rates >95% in uncomplicated malaria. IV therapy is reserved for severe malaria to avoid unnecessary hospitalisation, IV line complications, and cost. Early treatment of the partner also reduces gametocyte carriage, contributing to transmission reduction."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,798 @@
+{
+  "exam-pharm-resp-renal-git": {
+    "2": {
+      "title": "Respiratory, Renal & GIT Pharmacology",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 34-year-old woman with acute asthma exacerbation presents with wheeze, PEFR 45% of predicted, and SpO2 93% on room air. She has not responded to two salbutamol nebulisations. Which additional bronchodilator should be administered?",
+              "options": [
+                "Aminophylline 250 mg IV slow bolus",
+                "Ipratropium bromide 500 mcg nebulised",
+                "Montelukast 10 mg PO",
+                "Formoterol 12 mcg via dry powder inhaler"
+              ],
+              "answer": "Ipratropium bromide 500 mcg nebulised",
+              "explanation": "Ipratropium bromide, a short-acting muscarinic antagonist (SAMA), is added to SABA therapy in acute severe asthma not responding to initial salbutamol, per BTS/SIGN guidelines."
+            },
+            {
+              "stem": "Which of the following adverse effects is MOST characteristic of inhaled corticosteroid therapy?",
+              "options": [
+                "Tachycardia and palpitations",
+                "Oral candidiasis and dysphonia",
+                "Peripheral neuropathy",
+                "Hyperglycaemia and weight gain"
+              ],
+              "answer": "Oral candidiasis and dysphonia",
+              "explanation": "Inhaled corticosteroids (e.g., budesonide, fluticasone) cause oropharyngeal candidiasis and dysphonia due to local immunosuppression and deposition in the oropharynx, preventable by mouth rinsing."
+            },
+            {
+              "stem": "A 10-year-old boy with exercise-induced bronchoconstriction needs prophylaxis before PE class. Which agent is MOST appropriate for this indication?",
+              "options": [
+                "Salbutamol 200 mcg inhaled 5 minutes before exercise",
+                "Sodium cromoglycate 10 mg inhaled 15–30 minutes before exercise",
+                "Fluticasone 250 mcg twice daily",
+                "Montelukast 5 mg at bedtime"
+              ],
+              "answer": "Sodium cromoglycate 10 mg inhaled 15–30 minutes before exercise",
+              "explanation": "Sodium cromoglycate, a mast cell stabiliser, is effective for prophylaxis of exercise-induced bronchoconstriction when taken shortly before exercise. SABA provides relief but is not preferred prophylaxis."
+            },
+            {
+              "stem": "A 70-year-old man on warfarin and simvastatin is started on theophylline for COPD. Which interaction is MOST clinically relevant?",
+              "options": [
+                "Theophylline increases warfarin metabolism reducing INR",
+                "Simvastatin inhibits CYP3A4 increasing theophylline levels",
+                "Theophylline induces CYP1A2 reducing warfarin efficacy",
+                "Warfarin and theophylline compete for renal excretion"
+              ],
+              "answer": "Simvastatin inhibits CYP3A4 increasing theophylline levels",
+              "explanation": "Theophylline is metabolised primarily by CYP1A2 and CYP3A4. Simvastatin inhibits CYP3A4, potentially elevating theophylline levels and increasing risk of toxicity."
+            },
+            {
+              "stem": "Which monitoring parameter is MOST critical for safe theophylline therapy?",
+              "options": [
+                "Serum potassium levels",
+                "Theophylline serum trough concentration",
+                "Peak expiratory flow rate",
+                "Blood glucose levels"
+              ],
+              "answer": "Theophylline serum trough concentration",
+              "explanation": "Theophylline has a narrow therapeutic index (10–20 mcg/mL). Trough serum concentration monitoring is essential to avoid toxicity (seizures, arrhythmias) and ensure efficacy."
+            },
+            {
+              "stem": "A 62-year-old woman with COPD and cor pulmonale develops peripheral oedema and elevated JVP. Which diuretic class is MOST appropriate?",
+              "options": [
+                "Hydrochlorothiazide 25 mg daily",
+                "Furosemide 40 mg IV",
+                "Spironolactone 25 mg daily",
+                "Acetazolamide 250 mg daily"
+              ],
+              "answer": "Furosemide 40 mg IV",
+              "explanation": "Furosemide, a loop diuretic, is indicated for volume overload in cor pulmonale. Loop diuretics provide greater natriuresis than thiazides in patients with reduced renal perfusion."
+            },
+            {
+              "stem": "Which adverse effect is MOST specifically associated with loop diuretic therapy?",
+              "options": [
+                "Hyperkalaemia and metabolic acidosis",
+                "Ototoxicity and hypokalaemia",
+                "Gynaecomastia and impotence",
+                "Pancreatitis and hyperglycaemia"
+              ],
+              "answer": "Ototoxicity and hypokalaemia",
+              "explanation": "Loop diuretics (e.g., furosemide) cause ototoxicity (dose-dependent, usually reversible) and electrolyte disturbances including hypokalaemia, hyponatremia, and hypomagnesaemia."
+            },
+            {
+              "stem": "A patient on ibuprofen for osteoarthritis develops dyspepsia. Which antacid combination is MOST appropriate for symptom relief without interfering with ibuprofen absorption?",
+              "options": [
+                "Aluminium hydroxide 500 mg + magnesium hydroxide 400 mg suspension",
+                "Sodium bicarbonate 1 g effervescent tablets",
+                "Calcium carbonate 500 mg chewable tablets",
+                "Magnesium trisilicate 500 mg tablets"
+              ],
+              "answer": "Aluminium hydroxide 500 mg + magnesium hydroxide 400 mg suspension",
+              "explanation": "Aluminium/magnesium combination antacids are preferred as they balance constipation (aluminium) and diarrhoea (magnesium). Timing should be staggered 2 hours from other drugs to minimise absorption interference."
+            },
+            {
+              "stem": "Cimetidine is started for a patient with peptic ulcer disease. Which drug interaction is of GREATEST concern?",
+              "options": [
+                "Cimetidine reduces absorption of vitamin B12",
+                "Cimetidine inhibits CYP450 increasing levels of warfarin, theophylline, and phenytoin",
+                "Cimetidine enhances renal excretion of digoxin",
+                "Cimetidine antagonises the effect of antacids"
+              ],
+              "answer": "Cimetidine inhibits CYP450 increasing levels of warfarin, theophylline, and phenytoin",
+              "explanation": "Cimetidine is a potent inhibitor of CYP1A2, CYP2C9, and CYP3A4, leading to clinically significant increases in drug levels of warfarin, theophylline, phenytoin, and many others. Famotidine and nizatidine are safer alternatives."
+            },
+            {
+              "stem": "A 55-year-old woman with GERD has been on omeprazole 20 mg daily for 4 years. She presents with concern about long-term risks. Which long-term concern is BEST supported by evidence?",
+              "options": [
+                "Increased risk of gastric adenocarcinoma",
+                "Vitamin B12 deficiency and increased fracture risk",
+                "Irreversible achlorhydria",
+                "Tolerance developing to acid suppression"
+              ],
+              "answer": "Vitamin B12 deficiency and increased fracture risk",
+              "explanation": "Long-term PPI use reduces vitamin B12 absorption (due to reduced intrinsic factor release) and increases osteoporosis-related fracture risk, especially with therapy exceeding 1 year."
+            },
+            {
+              "stem": "A 68-year-old woman receiving palliative care for advanced gastric cancer has severe nausea. Which antiemetic is MOST appropriate given her condition?",
+              "options": [
+                "Domperidone 10 mg three times daily",
+                "Ondansetron 8 mg twice daily",
+                "Hyoscine butylbromide 20 mg sublingual",
+                "Cyclizine 50 mg three times daily"
+              ],
+              "answer": "Ondansetron 8 mg twice daily",
+              "explanation": "Ondansetron, a 5-HT3 receptor antagonist, is highly effective for nausea in palliative settings, especially where emetogenic stimuli are strong. It has no sedative or extrapyramidal effects unlike metoclopramide."
+            },
+            {
+              "stem": "A 28-year-old woman with migraine develops severe nausea. Which antiemetic is preferred because it also enhances gastric motility?",
+              "options": [
+                "Ondansetron 4 mg orally disintegrating tablet",
+                "Prochlorperazine 5 mg buccal tablet",
+                "Metoclopramide 10 mg intramuscular",
+                "Cyclizine 50 mg intramuscular"
+              ],
+              "answer": "Metoclopramide 10 mg intramuscular",
+              "explanation": "Metoclopramide is a prokinetic antiemetic (dopamine D2 antagonist) that enhances gastric emptying and LES tone, making it particularly useful in migraine-associated gastroparesis."
+            },
+            {
+              "stem": "Which adverse effect of metoclopramide requires IMMEDIATE discontinuation?",
+              "options": [
+                "Dry mouth and constipation",
+                "Acute dystonic reactions including oculogyric crisis",
+                "Mild drowsiness and fatigue",
+                "Diarrhoea and abdominal cramps"
+              ],
+              "answer": "Acute dystonic reactions including oculogyric crisis",
+              "explanation": "Metoclopramide can cause acute extrapyramidal side effects, especially in young women and the elderly, due to central dopamine D2 blockade. These require immediate discontinuation and treatment with anticholinergics."
+            },
+            {
+              "stem": "A 75-year-old woman with chronic constipation is using bisacodyl 10 mg daily. Which statement BEST describes its mechanism?",
+              "options": [
+                "It acts as an osmotic agent drawing water into the colon",
+                "It stimulates colonic peristalsis by acting on enteric nerves",
+                "It softens stool by reducing surface tension",
+                "It increases faecal bulk by absorbing water"
+              ],
+              "answer": "It stimulates colonic peristalsis by acting on enteric nerves",
+              "explanation": "Bisacodyl is a stimulant laxative that is hydrolysed to its active metabolite in the colon, stimulating enteric nerve endings to increase peristalsis and water secretion."
+            },
+            {
+              "stem": "Which laxative is MOST appropriate for a patient with hepatic encephalopathy?",
+              "options": [
+                "Bisacodyl 10 mg orally",
+                "Lactulose 30 mL three times daily",
+                "Senna 15 mg at bedtime",
+                "Polyethylene glycol 3350 17 g daily"
+              ],
+              "answer": "Lactulose 30 mL three times daily",
+              "explanation": "Lactulose is the laxative of choice in hepatic encephalopathy because it acidifies the colon, trapping NH4+ as ammonium, reducing systemic ammonia absorption."
+            },
+            {
+              "stem": "A 45-year-old man with type 2 diabetes develops chronic constipation. Which bulk-forming laxative is MOST appropriate?",
+              "options": [
+                "Lactulose 30 mL daily",
+                "Ispaghula husk 3.5 g twice daily",
+                "Bisacodyl 10 mg at bedtime",
+                "Glycerol suppositories"
+              ],
+              "answer": "Ispaghula husk 3.5 g twice daily",
+              "explanation": "Ispaghula husk is a bulk-forming laxative that increases stool water content without affecting blood glucose. Lactulose can raise blood glucose and is less preferred in diabetes."
+            },
+            {
+              "stem": "A 60-year-old man on a PPI for GERD develops acute-onset watery diarrhoea. Stool tests are pending. Which empiric antidiarrhoeal is MOST appropriate?",
+              "options": [
+                "Loperamide 4 mg initially then 2 mg after each loose stool",
+                "Diphenoxylate 5 mg four times daily",
+                "Bismuth subsalicylate 524 mg every 30 minutes",
+                "Oral rehydration solution only"
+              ],
+              "answer": "Loperamide 4 mg initially then 2 mg after each loose stool",
+              "explanation": "Loperamide, an opioid receptor agonist acting on the myenteric plexus, slows peristalsis and is the first-line antidiarrhoeal in acute non-bloody diarrhoea without fever. However, if infection is suspected, cautious use is warranted."
+            },
+            {
+              "stem": "The WHO-recommended oral rehydration salts solution has an osmolality of approximately:",
+              "options": [
+                "311 mOsm/L (original formula)",
+                "245 mOsm/L (reduced osmolarity formula)",
+                "400 mOsm/L (hypertonic formula)",
+                "150 mOsm/L (isotonic formula)"
+              ],
+              "answer": "245 mOsm/L (reduced osmolarity formula)",
+              "explanation": "The current WHO reduced osmolarity ORS contains 75 mmol/L glucose and 75 mmol/L sodium with total osmolality of approximately 245 mOsm/L, reducing stool output compared to the original 311 mOsm/L formula."
+            },
+            {
+              "stem": "A 48-year-old man with NSAID-induced peptic ulcer is treated with esomeprazole 40 mg daily. Which statement about esomeprazole is CORRECT?",
+              "options": [
+                "It is the R-enantiomer of omeprazole with identical pharmacokinetics",
+                "It provides more consistent acid suppression than omeprazole due to reduced CYP2C19 metabolism",
+                "It acts by blocking histamine H2 receptors on parietal cells",
+                "It should be taken with food for optimal absorption"
+              ],
+              "answer": "It provides more consistent acid suppression than omeprazole due to reduced CYP2C19 metabolism",
+              "explanation": "Esomeprazole, the S-enantiomer of omeprazole, undergoes less CYP2C19 metabolism than omeprazole's R-enantiomer, resulting in higher and more predictable AUC and acid suppression."
+            },
+            {
+              "stem": "Aluminium hydroxide antacids can cause which clinically significant adverse effect when used long term?",
+              "options": [
+                "Metabolic alkalosis",
+                "Hypophosphataemia and osteomalacia",
+                "Hypernatraemia and fluid retention",
+                "Nephrolithiasis"
+              ],
+              "answer": "Hypophosphataemia and osteomalacia",
+              "explanation": "Aluminium binds dietary phosphate in the gut, causing hypophosphataemia. Chronic use can lead to osteomalacia due to phosphate depletion."
+            },
+            {
+              "stem": "Which H2 receptor antagonist has the HIGHEST bioavailability and longest duration of action?",
+              "options": [
+                "Cimetidine",
+                "Ranitidine",
+                "Famotidine",
+                "Nizatidine"
+              ],
+              "answer": "Famotidine",
+              "explanation": "Famotidine has approximately 40-50% bioavailability with a duration of 10-12 hours, longer than cimetidine (4-6 hours) and ranitidine (6-8 hours). It is also 20-50 times more potent than cimetidine."
+            },
+            {
+              "stem": "A 6-year-old child with acute gastroenteritis and mild dehydration (some thirst, normal skin turgor) is being managed at home. Which approach is MOST appropriate?",
+              "options": [
+                "Loperamide 2 mg after each loose stool",
+                "Oral rehydration solution 50-100 mL/kg over 4 hours plus continued feeding",
+                "Intravenous Ringer's lactate at maintenance rate",
+                "Clear fluids only for 24 hours then reintroduce feeds"
+              ],
+              "answer": "Oral rehydration solution 50-100 mL/kg over 4 hours plus continued feeding",
+              "explanation": "WHO and ESPGHAN recommend ORS for mild-moderate dehydration with early refeeding. Antidiarrhoeals are contraindicated in children due to risk of ileus and CNS depression."
+            },
+            {
+              "stem": "A patient taking montelukast for asthma should be counselled about which potential neuropsychiatric adverse effect?",
+              "options": [
+                "Euphoria and increased energy",
+                "Agitation, depression, and suicidal ideation",
+                "Parkinsonism and tremor",
+                "Sedation and cognitive impairment"
+              ],
+              "answer": "Agitation, depression, and suicidal ideation",
+              "explanation": "Montelukast carries an FDA black box warning for neuropsychiatric events including agitation, aggression, depression, and suicidal ideation. Patients and caregivers should be counselled to monitor for mood changes."
+            },
+            {
+              "stem": "A 72-year-old woman with hypertension, type 2 diabetes, and CKD stage 3 (eGFR 42 mL/min) is prescribed furosemide for oedema. What is the MOST appropriate monitoring parameter?",
+              "options": [
+                "Serum potassium and creatinine",
+                "Serum calcium and phosphate",
+                "Haemoglobin A1c",
+                "Urine protein-to-creatinine ratio"
+              ],
+              "answer": "Serum potassium and creatinine",
+              "explanation": "Loop diuretics cause hypokalaemia and can worsen renal function, especially in CKD. Monitoring serum potassium (to avoid hypokalaemia) and creatinine (to detect AKI) is essential."
+            },
+            {
+              "stem": "Which of the following drugs should be avoided or used with extreme caution in a patient with narrow-angle glaucoma?",
+              "options": [
+                "Ondansetron",
+                "Ipratropium bromide",
+                "Montelukast",
+                "Budesonide"
+              ],
+              "answer": "Ipratropium bromide",
+              "explanation": "Ipratropium bromide, an anticholinergic, can precipitate acute angle-closure glaucoma by causing mydriasis and blocking aqueous outflow. It is contraindicated in patients with narrow-angle glaucoma."
+            },
+            {
+              "stem": "A 58-year-old man with stable COPD (GOLD 2) continues to have breathlessness despite tiotropium monotherapy. According to GOLD guidelines, what is the MOST appropriate step-up therapy?",
+              "options": [
+                "Switch tiotropium to salmeterol",
+                "Add inhaled corticosteroid (ICS) to tiotropium",
+                "Add a LABA (LAMA/LABA combination)",
+                "Add theophylline 200 mg twice daily"
+              ],
+              "answer": "Add a LABA (LAMA/LABA combination)",
+              "explanation": "GOLD 2024 recommends LAMA/LABA combination as the preferred step-up from LAMA monotherapy in group B patients who remain breathless. ICS is reserved for those with exacerbations and eosinophilia."
+            },
+            {
+              "stem": "Sodium cromoglycate prevents asthma symptoms primarily through which mechanism?",
+              "options": [
+                "Beta-2 receptor agonism causing bronchodilation",
+                "Inhibition of IgE binding to mast cells",
+                "Stabilisation of mast cell membranes preventing degranulation",
+                "Antagonism of leukotriene receptors"
+              ],
+              "answer": "Stabilisation of mast cell membranes preventing degranulation",
+              "explanation": "Sodium cromoglycate stabilises mast cell membranes, preventing calcium influx and subsequent degranulation with release of histamine, leukotrienes, and other inflammatory mediators."
+            },
+            {
+              "stem": "Which of the following is a clinical sign of theophylline toxicity?",
+              "options": [
+                "Bradycardia and hypotension",
+                "Tachycardia, nausea, and seizures",
+                "Peripheral neuropathy and optic neuritis",
+                "Hyperkalemia and metabolic acidosis"
+              ],
+              "answer": "Tachycardia, nausea, and seizures",
+              "explanation": "Theophylline toxicity presents with nausea/vomiting, tachycardia, agitation, and at higher levels (>40 mcg/mL), seizures and life-threatening arrhythmias."
+            },
+            {
+              "stem": "A 40-year-old woman receiving magnesium hydroxide antacids develops diarrhoea. Which component is MOST likely responsible?",
+              "options": [
+                "The aluminium ion",
+                "The magnesium ion",
+                "The carbonate ion",
+                "The hydroxide ion"
+              ],
+              "answer": "The magnesium ion",
+              "explanation": "Magnesium salts (hydroxide, citrate, sulphate) act as osmotic laxatives drawing water into the intestinal lumen. Magnesium-induced diarrhoea is common and may require switching to an aluminium-dominant formulation."
+            },
+            {
+              "stem": "A patient with seasonal allergic rhinitis reports symptoms that interfere with sleep despite intranasal corticosteroids. Which add-on therapy is MOST appropriate?",
+              "options": [
+                "Oral prednisolone 20 mg daily for 5 days",
+                "Montelukast 10 mg at bedtime",
+                "Sodium cromoglycate nasal spray 4 times daily",
+                "Ipratropium bromide nasal spray 0.03% twice daily"
+              ],
+              "answer": "Montelukast 10 mg at bedtime",
+              "explanation": "Montelukast, a leukotriene receptor antagonist, is effective for allergic rhinitis especially when nocturnal symptoms are prominent, as it reduces both daytime and nighttime symptom scores."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "(a) Describe the mechanism of action of salbutamol at the cellular level. (3 marks)\n(b) List three adverse effects of high-dose salbutamol therapy. (2 marks)\n(c) State the dose of nebulised salbutamol for acute severe asthma in adults. (1 mark)\n(d) Explain why salbutamol is preferred over oral beta-agonists in asthma management. (2 marks)",
+              "modelAnswer": "(a) Salbutamol is a selective beta-2 adrenoceptor agonist. It activates Gs-protein-coupled receptors on airway smooth muscle cells, increasing intracellular cyclic AMP via adenylyl cyclase activation. This leads to: (i) relaxation of bronchial smooth muscle, (ii) inhibition of mast cell mediator release, (iii) enhanced mucociliary clearance, and (iv) reduced microvascular permeability.\n\n(b) Three adverse effects: (1) Fine tremor (skeletal muscle beta-2 stimulation), (2) Tachycardia and palpitations (partial beta-1 cross-reactivity and reflex response), (3) Hypokalaemia (beta-2 mediated Na+/K+ ATPase activation causing intracellular potassium shift).\n\n(c) Nebulised salbutamol 5 mg (or 2.5–5 mg) for acute severe asthma in adults, via a nebuliser driven by oxygen.\n\n(d) Salbutamol is preferred over oral beta-agonists because: (1) Inhaled route delivers drug directly to airways requiring lower doses (100-200 mcg/puff vs 2-4 mg oral), (2) Faster onset of action (5-15 minutes inhaled vs 30-60 minutes oral), (3) Significantly fewer systemic adverse effects (reduced cardiac stimulation, tremor, and hypokalaemia)."
+            },
+            {
+              "stem": "(a) Compare the mechanisms of action of loop diuretics and thiazide diuretics at the nephron level. (4 marks)\n(b) Explain why loop diuretics remain effective in patients with reduced renal function whereas thiazides become less effective. (2 marks)\n(c) State two clinically significant drug interactions of furosemide. (2 marks)",
+              "modelAnswer": "(a) Loop diuretics (e.g., furosemide) inhibit the Na+/K+/2Cl- cotransporter (NKCC2) in the thick ascending limb of the loop of Henle, blocking reabsorption of sodium, potassium, and chloride. Thiazide diuretics (e.g., hydrochlorothiazide) inhibit the Na+/Cl- cotransporter (NCC) in the distal convoluted tubule.\n\nLoop diuretics block reabsorption of 20-30% of filtered sodium (high ceiling), whereas thiazides block only 3-5%.\n\n(b) Loop diuretics remain effective in CKD because the thick ascending limb has high transport capacity and is less affected by uraemic organic acids that compete for secretion. Thiazides lose efficacy when GFR falls below 30-40 mL/min because fewer sodium ions reach the distal convoluted tubule.\n\n(c) Two significant interactions: (1) NSAIDs reduce furosemide's diuretic effect by inhibiting prostaglandin-mediated renal vasodilation, (2) Aminoglycosides: concurrent use increases risk of ototoxicity."
+            },
+            {
+              "stem": "(a) List four drug classes used for acid suppression in peptic ulcer disease and give an example of each. (4 marks)\n(b) Compare the mechanisms of action of H2 receptor antagonists and proton pump inhibitors. (3 marks)\n(c) State one drug interaction specific to cimetidine that is less problematic with famotidine, and explain why. (1 mark)",
+              "modelAnswer": "(a) Four drug classes:\n1. Antacids: e.g., aluminium hydroxide / magnesium hydroxide combination\n2. H2 receptor antagonists: e.g., famotidine\n3. Proton pump inhibitors: e.g., omeprazole\n4. Prostaglandin analogues: e.g., misoprostol\n\n(b) H2 receptor antagonists (e.g., famotidine) competitively block histamine H2 receptors on gastric parietal cells, reducing cAMP-mediated acid secretion. They inhibit only histamine-stimulated secretion (not ACh or gastrin pathways). PPIs (e.g., omeprazole) irreversibly inhibit the H+/K+ ATPase proton pump at the apical membrane of parietal cells, blocking the final common pathway of acid secretion regardless of stimulus. PPIs provide more profound and sustained acid suppression.\n\n(c) Cimetidine inhibits CYP450 isoenzymes (CYP1A2, CYP2C9, CYP3A4), increasing levels of warfarin, theophylline, and phenytoin. Famotidine does not significantly inhibit CYP450 because it has a different chemical structure (thiazole vs imidazole ring), making it a safer choice in polypharmacy patients."
+            },
+            {
+              "stem": "(a) Describe the mechanism of action of ondansetron and state its receptor target. (2 marks)\n(b) List three clinical indications for ondansetron. (2 marks)\n(c) Compare the adverse effect profile of ondansetron with that of metoclopramide. (3 marks)\n(d) State why ondansetron is preferred over metoclopramide in postoperative nausea. (1 mark)",
+              "modelAnswer": "(a) Ondansetron is a selective 5-HT3 receptor antagonist. It blocks serotonin binding at 5-HT3 receptors in the chemoreceptor trigger zone (area postrema) and on vagal nerve terminals in the GI tract, inhibiting the vomiting reflex.\n\n(b) Three indications: (1) Chemotherapy-induced nausea and vomiting (CINV), (2) Postoperative nausea and vomiting (PONV), (3) Radiation-induced nausea and vomiting.\n\n(c) Ondansetron adverse effects: headache, constipation, dizziness, QT prolongation (dose-dependent), and rarely serotonin syndrome. Metoclopramide adverse effects: extrapyramidal symptoms (acute dystonia, akathisia, Parkinsonism), tardive dyskinesia (long-term), hyperprolactinaemia (galactorrhoea, gynaecomastia), and sedation.\n\n(d) Ondansetron is preferred in PONV because it lacks the extrapyramidal side effects and sedation associated with metoclopramide, and has a more predictable efficacy in the postoperative setting."
+            },
+            {
+              "stem": "(a) Classify laxatives into three main categories with one example each. (3 marks)\n(b) Explain the mechanism of action of lactulose in the management of constipation. (2 marks)\n(c) Describe the additional therapeutic role of lactulose in hepatic encephalopathy. (2 marks)\n(d) State one precaution when using bulk-forming laxatives. (1 mark)",
+              "modelAnswer": "(a) Three categories:\n1. Bulk-forming: e.g., ispaghula husk (psyllium) or methylcellulose\n2. Osmotic: e.g., lactulose or polyethylene glycol 3350\n3. Stimulant: e.g., bisacodyl or senna\n\n(b) Lactulose is a non-absorbable disaccharide. It is broken down by colonic bacteria into lactic acid and acetic acid, which increase osmotic pressure in the colon, drawing water into the lumen and softening stool, thereby stimulating peristalsis.\n\n(c) In hepatic encephalopathy, lactulose acidifies the colonic environment (pH <5.5), which: (1) inhibits ammonia-producing bacteria (e.g., Bacteroides), (2) promotes conversion of NH3 (diffusible, toxic) to NH4+ (non-diffusible, trapped in stool), and (3) enhances nitrogen excretion in faeces.\n\n(d) Bulk-forming laxatives must be taken with at least 240 mL of water to prevent oesophageal obstruction or intestinal impaction. They are contraindicated in patients with intestinal strictures, adhesions, or dysphagia."
+            },
+            {
+              "stem": "(a) Explain the mechanism by which inhaled corticosteroids (ICS) reduce airway inflammation in asthma. (3 marks)\n(b) Compare the systemic bioavailability of budesonide and fluticasone. (1 mark)\n(c) List three strategies to minimise local adverse effects of ICS. (2 marks)\n(d) State one advantage of the prodrug ciclesonide over conventional ICS. (1 mark)",
+              "modelAnswer": "(a) Inhaled corticosteroids bind to cytoplasmic glucocorticoid receptors in airway epithelial cells and inflammatory cells. The receptor-ligand complex translocates to the nucleus where it: (1) transactivates anti-inflammatory genes (e.g., lipocortin-1, IL-10), (2) transrepresses pro-inflammatory transcription factors (NF-κB, AP-1), reducing cytokine production, (3) reduces eosinophil survival and recruitment, and (4) decreases airway hyperresponsiveness.\n\n(b) Fluticasone propionate has lower oral bioavailability (<1%) compared to budesonide (11%), because fluticasone undergoes extensive first-pass hepatic metabolism. However, both have similar lung deposition and clinical efficacy at equipotent doses.\n\n(c) Three strategies: (1) Rinse mouth with water and spit after inhalation (prevents oral candidiasis), (2) Use a spacer device (reduces oropharyngeal deposition), (3) Use the lowest effective dose (minimises systemic absorption).\n\n(d) Ciclesonide is a prodrug activated in the lungs to des-ciclesonide, with minimal oral bioavailability and reduced oropharyngeal side effects compared to budesonide or fluticasone."
+            },
+            {
+              "stem": "(a) List four clinical indications for the use of leukotriene receptor antagonists in respiratory disease. (2 marks)\n(b) Explain the mechanism by which montelukast exerts its therapeutic effect. (2 marks)\n(c) State two drug-drug interactions with zafirlukast. (1 mark)\n(d) Compare the place in therapy of montelukast versus low-dose ICS for mild persistent asthma. (2 marks)",
+              "modelAnswer": "(a) Four indications:\n1. Mild persistent asthma (alternative to low-dose ICS)\n2. Exercise-induced bronchoconstriction prophylaxis\n3. Aspirin-exacerbated respiratory disease (AERD)\n4. Allergic rhinitis (especially with nocturnal symptoms)\n\n(b) Montelukast is a selective, competitive cysteinyl leukotriene receptor 1 (CysLT1) antagonist. It blocks the binding of leukotrienes LTC4, LTD4, and LTE4 to CysLT1 receptors on airway smooth muscle, reducing bronchoconstriction, mucus secretion, oedema, and eosinophilic inflammation.\n\n(c) Zafirlukast drug interactions: (1) Warfarin — zafirlukast inhibits CYP2C9, increasing INR; (2) Theophylline — reduces zafirlukast plasma levels (but not clinically significant in most cases).\n\n(d) Low-dose ICS is the preferred first-line controller for mild persistent asthma due to superior efficacy in reducing exacerbations and airway inflammation. Montelukast is an alternative for patients who cannot or will not use ICS, or have concurrent allergic rhinitis. Montelukast has less anti-inflammatory effect than ICS."
+            },
+            {
+              "stem": "(a) Describe the mechanism of action of loperamide in the management of acute diarrhoea. (3 marks)\n(b) State two contraindications to loperamide use. (1 mark)\n(c) Explain the composition of WHO reduced osmolarity ORS and why reduced osmolarity is beneficial. (2 marks)\n(d) What is the role of zinc supplementation in acute childhood diarrhoea? (2 marks)",
+              "modelAnswer": "(a) Loperamide is an opioid receptor agonist (mu-receptor) that acts on the myenteric plexus of the intestinal wall. It: (1) inhibits peristalsis by reducing acetylcholine and prostaglandin release, (2) increases intestinal transit time allowing greater water and electrolyte absorption, (3) increases anal sphincter tone, and (4) reduces net fluid secretion.\n\n(b) Contraindications: (1) Acute dysentery (bloody diarrhoea with fever) — risk of toxic megacolon, (2) Inflammatory bowel disease (ulcerative colitis) — risk of toxic megacolon, (3) Children under 2 years, (4) Known hypersensitivity.\n\n(c) WHO reduced osmolarity ORS contains: Glucose 75 mmol/L, Sodium 75 mmol/L, Chloride 65 mmol/L, Potassium 20 mmol/L, Citrate 10 mmol/L, total osmolality ~245 mOsm/L. Reduced osmolarity is beneficial because it decreases stool output and duration of diarrhoea compared to the original 311 mOsm/L formula, and reduces the risk of hypernatraemia.\n\n(d) Zinc supplementation (10-20 mg/day for 10-14 days) reduces duration and severity of acute diarrhoea in children. It enhances intestinal epithelial repair, improves water and electrolyte absorption, and boosts immune function. WHO recommends zinc for all children with acute diarrhoea."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Mr. Ochieng, a 68-year-old retired teacher with a 45-pack-year smoking history, presents to the respiratory clinic with progressive dyspnoea (MMRC grade 3), chronic cough with white sputum, and two exacerbations requiring oral corticosteroids in the past 12 months. He has been using tiotropium 18 mcg once daily and salbutamol 200 mcg PRN. Spirometry shows FEV1/FVC 0.58, FEV1 48% predicted. He has no known drug allergies.\n\n(a) Classify Mr. Ochieng's COPD severity and GOLD group. (2 marks)\n(b) Recommend an appropriate step-up inhaler regimen citing specific drug names and doses. (4 marks)\n(c) Explain the mechanism of action of each drug in your recommended regimen. (6 marks)\n(d) What monitoring would you arrange for this patient? (4 marks)\n(e) If Mr. Ochieng develops an acute exacerbation with purulent sputum, outline the complete management plan including drug choices, doses, and duration. (4 marks)",
+              "modelAnswer": "(a) Severity: FEV1 48% predicted = GOLD 2 (moderate). With ≥2 moderate exacerbations in past year, this places him in GOLD group E (high exacerbation risk).\n\n(b) Recommended step-up: Step up from LAMA monotherapy to LAMA/LABA combination. A suitable regimen is:\n- Indacaterol 110 mcg (LABA) / Glycopyrronium 50 mcg (LAMA) fixed-dose combination — one capsule inhaled once daily via a dry powder inhaler (Ultibro Breezhaler), OR\n- Umeclidinium 62.5 mcg (LAMA) / Vilanterol 25 mcg (LABA) — one inhalation once daily (Anoro Ellipta).\n\n(c) Mechanisms:\n1. Glycopyrronium (LAMA): A quaternary ammonium anticholinergic that competitively blocks M3 muscarinic receptors on bronchial smooth muscle. This prevents acetylcholine-mediated bronchoconstriction, reduces mucus secretion, and decreases vagal tone, resulting in prolonged bronchodilation lasting >24 hours.\n\n2. Indacaterol (LABA): A selective beta-2 adrenoceptor agonist with rapid onset (5 minutes) and >24-hour duration. It activates adenylate cyclase increasing cAMP in airway smooth muscle, causing relaxation. It also inhibits mast cell mediator release and improves mucociliary clearance.\n\n3. Salbutamol PRN (SABA): Same beta-2 mechanism but short-acting (4-6 hours), used for acute symptom relief as needed.\n\n(d) Monitoring:\n1. Symptom assessment: MMRC dyspnoea scale, CAT score, diary of rescue use.\n2. Exacerbation frequency: Document and review at each visit.\n3. Spirometry: Annually or with change in symptoms.\n4. Inhaler technique: Check at every visit — incorrect technique affects outcomes.\n5. Vaccinations: Ensure influenza (annual) and pneumococcal (PPSV23 + PCV13) vaccines up to date.\n6. Oxygen saturation: Assess for long-term oxygen therapy if SpO2 persistently ≤92%.\n7. BMI and nutritional status: Weight loss correlates with poor prognosis.\n\n(e) Acute exacerbation management:\n1. Bronchodilators: Increase salbutamol (via MDI + spacer, 4 puffs every 20 minutes for first hour). Add ipratropium 500 mcg nebulised if severe.\n2. Corticosteroids: Prednisolone 30 mg orally once daily for 5-7 days (do not taper).\n3. Antibiotics (indicated by purulent sputum): Amoxicillin/clavulanic acid 625 mg three times daily for 5-7 days, OR doxycycline 200 mg loading then 100 mg daily for 5 days.\n4. Oxygen: Target SpO2 88-92%, using controlled oxygen (24-28% Venturi mask).\n5. Monitoring: Chest X-ray, sputum culture, ABG if SpO2 <90% or pH <7.35, daily weights, fluid balance.\n6. Escalation: Consider non-invasive ventilation if pH 7.25-7.35 with hypercapnia (PaCO2 >45 mmHg)."
+            },
+            {
+              "stem": "Mrs. Kamau, a 55-year-old woman with a history of hypertension (on hydrochlorothiazide 25 mg daily) and osteoarthritis (on ibuprofen 400 mg PRN), presents to the gastroenterology clinic with a 3-month history of epigastric pain, heartburn, and regurgitation. Endoscopy reveals a 1.5 cm gastric ulcer in the antrum with surrounding erythema. H. pylori stool antigen is positive. She is also noted to have constipation (3 bowel movements per week) and occasional nausea.\n\n(a) Outline a comprehensive pharmacological management plan for Mrs. Kamau's peptic ulcer disease, including H. pylori eradication regimen with specific drugs, doses, and duration. (6 marks)\n(b) What changes would you recommend to her existing medications for hypertension and osteoarthritis? (4 marks)\n(c) Recommend management for her constipation and nausea, explaining your drug choices. (4 marks)\n(d) What long-term concerns should be addressed regarding PPI therapy? (3 marks)\n(e) What drug counselling should be provided regarding timing and potential interactions? (3 marks)",
+              "modelAnswer": "(a) H. pylori eradication — triple therapy (first-line in areas with clarithromycin resistance <15%):\n- Omeprazole 20 mg twice daily for 14 days\n- Amoxicillin 1 g twice daily for 14 days\n- Clarithromycin 500 mg twice daily for 14 days\nOR if confirmed high clarithromycin resistance region:\n- Bismuth quadruple therapy: Omeprazole 20 mg twice daily + Bismuth subsalicylate 524 mg QID + Metronidazole 400 mg TDS + Tetracycline 500 mg QID for 14 days.\n\nAfter eradication: Continue PPI (omeprazole 20 mg daily) for 4-8 weeks for ulcer healing. Confirm eradication with urea breath test or stool antigen 4 weeks after completing antibiotics.\n\n(b) Medication changes:\n1. Ibuprofen: Discontinue — NSAIDs are the likely precipitant for the ulcer. Switch to paracetamol 1 g QDS for osteoarthritis pain, or if anti-inflammatory needed, consider a COX-2 selective NSAID (e.g., celecoxib 200 mg daily) with PPI co-therapy, but ideally avoid all NSAIDs until ulcer confirmed healed.\n2. Hydrochlorothiazide: Can continue initially but monitor renal function. If blood pressure control worsens with NSAID withdrawal, consider adding amlodipine 5 mg or an ACE inhibitor.\n\n(c) Constipation management:\n- Ispaghula husk 3.5 g in water twice daily with adequate fluid intake (bulk-forming laxative, suitable for long-term use).\n- If inadequate, add lactulose 15-30 mL twice daily (osmotic laxative, does not affect glucose).\n- Avoid bisacodyl or senna long term.\n\nNausea management:\n- Domperidone 10 mg three times daily before meals (anti-emetic and prokinetic, promotes gastric emptying).\n- Avoid metoclopramide in this patient (potential extrapyramidal effects, especially if elderly or prolonged treatment).\n- Avoid ondansetron unless nausea severe (constipating).\n\n(d) Long-term concerns with PPI therapy:\n1. Vitamin B12 deficiency: PPIs reduce intrinsic factor release and impair B12 absorption; risk increases after >2 years use. Monitor B12 levels and supplement if deficient.\n2. Osteoporosis and fracture risk: PPIs reduce calcium absorption; increased risk of hip, wrist, and spine fractures especially with high-dose, long-term use. Ensure adequate calcium and vitamin D intake.\n3. Clostridioides difficile infection: Acid suppression alters gut microbiome increasing susceptibility.\n4. Hypomagnesaemia: Can occur with prolonged use (usually >1 year), monitoring indicated if on diuretics.\n5. Rebound acid hypersecretion: Occurs upon abrupt discontinuation after >8 weeks; taper dose gradually.\n\n(e) Drug counselling — timing and interactions:\n1. Omeprazole: Taken 30-60 minutes before breakfast (maximal proton pump inhibition when taken before a meal). Do not crush or chew capsules. Avoid taking with antacids within 2 hours.\n2. Amoxicillin/clarithromycin: Take with food to reduce GI upset. Complete full 14-day course even if symptoms improve. Clarithromycin may cause metallic taste — reassure patient.\n3. Ispaghula husk: Mix with at least 240 mL water and drink immediately; follow with another glass of water. Take 1 hour apart from other medications to avoid affecting absorption.\n4. Domperidone: Take 15-30 minutes before meals. May cause QT prolongation — avoid exceeding 30 mg/day. Report palpitations or syncope.\n5. PPI discontinuation: Do not stop abruptly — taper gradually (e.g., reduce to 20 mg daily for 2 weeks, then every other day for 2 weeks) to avoid rebound acid hypersecretion."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Respiratory, Renal & GIT Pharmacology",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 45-year-old man with COPD uses a dry powder inhaler containing fluticasone propionate. What advice is MOST important to give regarding this medication?",
+              "options": [
+                "It should be used at the onset of breathlessness for rapid relief",
+                "Rinse mouth with water after each dose and spit it out",
+                "Shake the inhaler vigorously for 30 seconds before each use",
+                "Store the inhaler in the refrigerator to maintain potency"
+              ],
+              "answer": "Rinse mouth with water after each dose and spit it out",
+              "explanation": "Fluticasone is an inhaled corticosteroid. Rinsing the mouth after use reduces oropharyngeal deposition, preventing oral candidiasis and dysphonia."
+            },
+            {
+              "stem": "Which of the following beta-2 agonists has the FASTEST onset of action and is suitable for both acute relief and maintenance therapy?",
+              "options": [
+                "Salmeterol",
+                "Formoterol",
+                "Vilanterol",
+                "Indacaterol"
+              ],
+              "answer": "Formoterol",
+              "explanation": "Formoterol is a LABA with a rapid onset of action (1-3 minutes, similar to salbutamol) and a 12-hour duration, making it suitable for both acute relief (when used in SMART/MART regimens with budesonide) and maintenance."
+            },
+            {
+              "stem": "A patient on theophylline develops nausea, vomiting, and tachycardia. Serum theophylline level is 35 mcg/mL. What is the MOST appropriate next step?",
+              "options": [
+                "Reduce theophylline dose by 25% and recheck level in 24 hours",
+                "Withhold theophylline and administer activated charcoal",
+                "Add a beta-blocker to control tachycardia",
+                "Increase fluid intake to enhance renal clearance"
+              ],
+              "answer": "Withhold theophylline and administer activated charcoal",
+              "explanation": "At serum levels >30 mcg/mL, theophylline toxicity is significant. Activated charcoal (multiple doses) enhances non-renal clearance via gastrointestinal dialysis. Levels >60 mcg/mL may require haemodialysis."
+            },
+            {
+              "stem": "Montelukast is LEAST likely to be effective in which of the following clinical scenarios?",
+              "options": [
+                "A 12-year-old boy with mild persistent asthma and allergic rhinitis",
+                "A 35-year-old woman with aspirin-exacerbated respiratory disease",
+                "A 50-year-old man with acute severe asthma exacerbation",
+                "A 20-year-old woman with exercise-induced bronchoconstriction"
+              ],
+              "answer": "A 50-year-old man with acute severe asthma exacerbation",
+              "explanation": "Montelukast is a maintenance therapy for chronic asthma and has no role in acute exacerbations due to its slow onset (days to weeks for full effect). Acute exacerbations require SABA, ipratropium, and systemic corticosteroids."
+            },
+            {
+              "stem": "Nedocromil sodium is classified as which type of respiratory drug?",
+              "options": [
+                "Bronchodilator (beta-2 agonist)",
+                "Mast cell stabiliser",
+                "Corticosteroid",
+                "Leukotriene receptor antagonist"
+              ],
+              "answer": "Mast cell stabiliser",
+              "explanation": "Nedocromil sodium, like sodium cromoglycate, is a mast cell stabiliser. It is used for prophylaxis of asthma (especially exercise-induced) and allergic conjunctivitis."
+            },
+            {
+              "stem": "Which drug-metabolising enzyme is PRIMARILY responsible for theophylline metabolism?",
+              "options": [
+                "CYP2D6",
+                "CYP1A2",
+                "CYP3A4",
+                "CYP2C9"
+              ],
+              "answer": "CYP1A2",
+              "explanation": "Theophylline is primarily metabolised by CYP1A2 (and to a lesser extent CYP3A4). Drugs that inhibit CYP1A2 (e.g., ciprofloxacin, fluvoxamine, cimetidine) significantly increase theophylline levels."
+            },
+            {
+              "stem": "A patient with anuria (eGFR <10 mL/min) secondary to end-stage renal disease develops pulmonary oedema. Which diuretic strategy is MOST appropriate?",
+              "options": [
+                "Intravenous furosemide 80 mg bolus",
+                "Intravenous bumetanide 2 mg",
+                "Intravenous furosemide infusion 10 mg/hour",
+                "Haemodialysis with ultrafiltration"
+              ],
+              "answer": "Haemodialysis with ultrafiltration",
+              "explanation": "In anuria (eGFR <10 mL/min), loop diuretics are ineffective because they require some residual renal function to reach the tubular lumen via secretion at the proximal tubule. Ultrafiltration during haemodialysis is required to remove fluid."
+            },
+            {
+              "stem": "Which electrolyte abnormality is MOST commonly associated with loop diuretic therapy?",
+              "options": [
+                "Hyperkalaemia",
+                "Hypokalaemia",
+                "Hypercalcaemia",
+                "Hypernatraemia"
+              ],
+              "answer": "Hypokalaemia",
+              "explanation": "Loop diuretics increase delivery of sodium to the distal nephron where it is exchanged for potassium, leading to increased potassium excretion and hypokalaemia. Concurrent use of digoxin or corticosteroids increases the risk."
+            },
+            {
+              "stem": "Antacids containing aluminium hydroxide can reduce the absorption of which co-administered drug?",
+              "options": [
+                "Paracetamol",
+                "Tetracycline",
+                "Amoxicillin",
+                "Metformin"
+              ],
+              "answer": "Tetracycline",
+              "explanation": "Aluminium ions chelate tetracycline antibiotics in the gastrointestinal tract, forming insoluble complexes that are not absorbed. This significantly reduces tetracycline bioavailability. Staggering administration by at least 2 hours is recommended."
+            },
+            {
+              "stem": "A 60-year-old man with GERD is started on ranitidine 150 mg twice daily. After 2 weeks, his symptoms persist. What is the MOST appropriate next step?",
+              "options": [
+                "Increase ranitidine to 300 mg twice daily",
+                "Switch to omeprazole 20 mg once daily",
+                "Add an antacid 1 hour after meals",
+                "Add metoclopramide 10 mg before meals"
+              ],
+              "answer": "Switch to omeprazole 20 mg once daily",
+              "explanation": "PPIs provide more profound and consistent acid suppression than H2RAs. For persistent GERD symptoms on H2RA therapy, switching to a PPI is the recommended step-up approach."
+            },
+            {
+              "stem": "Long-term PPI therapy has been associated with an increased risk of which gastric pathology?",
+              "options": [
+                "Gastric adenocarcinoma",
+                "Fundic gland polyps",
+                "Gastric lymphoma",
+                "Gastric leiomyoma"
+              ],
+              "answer": "Fundic gland polyps",
+              "explanation": "Long-term PPI use (>1 year) is associated with development of benign fundic gland polyps due to hypergastrinaemia-induced parietal cell hyperplasia. The risk increases with duration and is reversible upon discontinuation."
+            },
+            {
+              "stem": "Prochlorperazine is classified as which type of antiemetic?",
+              "options": [
+                "5-HT3 receptor antagonist",
+                "Dopamine D2 receptor antagonist",
+                "NK1 receptor antagonist",
+                "Histamine H1 receptor antagonist"
+              ],
+              "answer": "Dopamine D2 receptor antagonist",
+              "explanation": "Prochlorperazine is a phenothiazine that acts primarily as a dopamine D2 receptor antagonist in the chemoreceptor trigger zone. It is used for nausea and vertigo but carries risk of extrapyramidal side effects."
+            },
+            {
+              "stem": "Which of the following is a contraindication to the use of senna as a laxative?",
+              "options": [
+                "Chronic constipation",
+                "Intestinal obstruction",
+                "Haemorrhoids",
+                "Irritable bowel syndrome with constipation"
+              ],
+              "answer": "Intestinal obstruction",
+              "explanation": "Stimulant laxatives like senna (which contains sennosides that are converted to active anthrones by colonic bacteria) are contraindicated in intestinal obstruction as increased peristalsis could precipitate perforation."
+            },
+            {
+              "stem": "A 3-year-old child with acute watery diarrhoea is brought to the clinic. The mother has been giving only water. Which intervention is MOST appropriate?",
+              "options": [
+                "Start loperamide 1 mg three times daily",
+                "Give WHO reduced osmolarity ORS at 75 mL/kg over 4 hours",
+                "Start oral amoxicillin empirically",
+                "Begin intravenous normal saline infusion"
+              ],
+              "answer": "Give WHO reduced osmolarity ORS at 75 mL/kg over 4 hours",
+              "explanation": "WHO recommends ORS for children with some dehydration (signs: thirst, restlessness). Loperamide is contraindicated in children under 2 years. Antibiotics are not indicated for acute watery diarrhoea."
+            },
+            {
+              "stem": "Ipratropium bromide differs from tiotropium primarily in which aspect?",
+              "options": [
+                "Mechanism of action (M3 antagonist vs beta-2 agonist)",
+                "Duration of action (4-6 hours vs 24+ hours)",
+                "Route of administration (oral vs inhaled)",
+                "Selectivity for muscarinic receptor subtypes"
+              ],
+              "answer": "Duration of action (4-6 hours vs 24+ hours)",
+              "explanation": "Ipratropium is a short-acting muscarinic antagonist (SAMA) with 4-6 hour duration, while tiotropium is a long-acting muscarinic antagonist (LAMA) with >24 hour duration due to its slow dissociation from M3 receptors."
+            },
+            {
+              "stem": "A patient on omeprazole 40 mg daily for Barrett's oesophagus develops iron deficiency anaemia. What is the MOST likely mechanism?",
+              "options": [
+                "PPI-induced gastric bleeding",
+                "Reduced gastric acid impairing non-haem iron absorption",
+                "PPI-induced autoimmune haemolysis",
+                "Impaired iron transport due to hypochlorhydria"
+              ],
+              "answer": "Reduced gastric acid impairing non-haem iron absorption",
+              "explanation": "Gastric acid is required to reduce ferric iron (Fe3+) to the more absorbable ferrous form (Fe2+). Chronic PPI-induced hypochlorhydria can impair non-haem iron absorption, contributing to iron deficiency."
+            },
+            {
+              "stem": "Which of the following best describes the mechanism of action of bisacodyl?",
+              "options": [
+                "Bulk-forming agent that expands stool volume",
+                "Osmotic agent creating a concentration gradient",
+                "Stimulant acting on colonic enteric nerves to increase peristalsis",
+                "Surfactant that softens stool by reducing surface tension"
+              ],
+              "answer": "Stimulant acting on colonic enteric nerves to increase peristalsis",
+              "explanation": "Bisacodyl is hydrolysed by colonic bacteria to its active metabolite bis-(p-hydroxyphenyl)-pyridyl-2-methane, which stimulates sensory nerve endings in the colonic mucosa, increasing peristaltic contractions."
+            },
+            {
+              "stem": "A 35-year-old woman with Crohn's disease develops corticosteroid-induced osteoporosis. She is started on a PPI for dyspepsia. Which bisphosphonate should be avoided due to altered pharmacokinetics?",
+              "options": [
+                "Risedronate",
+                "Alendronate",
+                "Zoledronic acid",
+                "Ibandronate"
+              ],
+              "answer": "Alendronate",
+              "explanation": "Alendronate absorption is significantly reduced by concomitant PPI use (due to reduced gastric acid needed for dissolution). However, the interaction exists for all oral bisphosphonates. IV bisphosphonates like zoledronic acid bypass this issue."
+            },
+            {
+              "stem": "H2 receptor antagonists suppress acid secretion by blocking which receptor on gastric parietal cells?",
+              "options": [
+                "M3 muscarinic receptor",
+                "H2 histamine receptor",
+                "CCK2 gastrin receptor",
+                "Prostaglandin EP3 receptor"
+              ],
+              "answer": "H2 histamine receptor",
+              "explanation": "H2RAs (e.g., famotidine) competitively block histamine H2 receptors on parietal cells, reducing cAMP-mediated acid secretion. They do not affect the direct actions of acetylcholine or gastrin."
+            },
+            {
+              "stem": "What is the primary reason theophylline has fallen out of favour as a bronchodilator in most asthma guidelines?",
+              "options": [
+                "Development of tolerance with chronic use",
+                "High cost compared to newer alternatives",
+                "Narrow therapeutic index requiring TDM, with frequent adverse effects",
+                "Inferior bronchodilator efficacy compared to SABA alone"
+              ],
+              "answer": "Narrow therapeutic index requiring TDM, with frequent adverse effects",
+              "explanation": "Theophylline's narrow therapeutic window (10-20 mcg/mL), extensive CYP450 drug interactions, and adverse effects (nausea, CNS stimulation, arrhythmias, seizures) have relegated it to a third-line add-on therapy."
+            },
+            {
+              "stem": "A 72-year-old man with Parkinson's disease develops constipation. Which laxative is MOST appropriate given his condition?",
+              "options": [
+                "Bisacodyl 10 mg daily",
+                "Senna 15 mg at bedtime",
+                "Ispaghula husk 3.5 g twice daily",
+                "Glycerol suppositories"
+              ],
+              "answer": "Ispaghula husk 3.5 g twice daily",
+              "explanation": "Bulk-forming laxatives (ispaghula husk) are first-line for chronic constipation in Parkinson's disease as they are safe, non-systemic, and do not interact with dopaminergic therapy. Stimulant laxatives may exacerbate abdominal discomfort."
+            },
+            {
+              "stem": "Which of the following drugs is a prodrug that is converted to its active form by esterases in the lung tissue?",
+              "options": [
+                "Budesonide",
+                "Fluticasone propionate",
+                "Ciclesonide",
+                "Beclomethasone dipropionate"
+              ],
+              "answer": "Ciclesonide",
+              "explanation": "Ciclesonide is a prodrug converted by esterases in the lung to des-ciclesonide (active metabolite). This activation in the lung reduces oropharyngeal side effects and systemic bioavailability."
+            },
+            {
+              "stem": "Famotidine is preferred over cimetidine in elderly patients taking multiple medications because famotidine:",
+              "options": [
+                "Has a longer half-life requiring once-daily dosing",
+                "Does not inhibit CYP450 enzymes, reducing drug interaction risk",
+                "Is more effective at suppressing nocturnal acid secretion",
+                "Has fewer anticholinergic side effects"
+              ],
+              "answer": "Does not inhibit CYP450 enzymes, reducing drug interaction risk",
+              "explanation": "Famotidine (thiazole ring) does not inhibit CYP450 unlike cimetidine (imidazole ring). This makes famotidine the safer H2RA in elderly patients on polypharmacy (e.g., warfarin, theophylline, phenytoin)."
+            },
+            {
+              "stem": "A 50-year-old woman with chronic liver disease develops ascites. Furosemide is started. Which additional diuretic is most appropriate to prevent hypokalaemia?",
+              "options": [
+                "Hydrochlorothiazide",
+                "Spironolactone",
+                "Bendroflumethiazide",
+                "Acetazolamide"
+              ],
+              "answer": "Spironolactone",
+              "explanation": "Spironolactone, a mineralocorticoid receptor antagonist, is potassium-sparing. Combined with furosemide, it counteracts hypokalaemia and is preferred in cirrhosis with ascites due to concurrent hyperaldosteronism."
+            },
+            {
+              "stem": "Which of the following is a CYP3A4 inhibitor that can significantly increase theophylline levels?",
+              "options": [
+                "Ciprofloxacin",
+                "Rifampicin",
+                "Phenobarbital",
+                "Carbamazepine"
+              ],
+              "answer": "Ciprofloxacin",
+              "explanation": "Ciprofloxacin inhibits CYP1A2 (and to a lesser extent CYP3A4), significantly reducing theophylline clearance. Theophylline dose should be reduced by 50% when ciprofloxacin is co-prescribed."
+            },
+            {
+              "stem": "Which antiemetic should be AVOIDED in a patient with suspected intestinal obstruction?",
+              "options": [
+                "Ondansetron 4 mg IV",
+                "Metoclopramide 10 mg IV",
+                "Prochlorperazine 12.5 mg IM",
+                "Cyclizine 50 mg IM"
+              ],
+              "answer": "Metoclopramide 10 mg IV",
+              "explanation": "Metoclopramide is a prokinetic that increases GI motility. In intestinal obstruction, this could increase the risk of perforation or worsen symptoms. Ondansetron and cyclizine (non-prokinetic antiemetics) are safer."
+            },
+            {
+              "stem": "A 28-year-old woman with asthma (on low-dose budesonide) develops allergic rhinitis with nasal congestion. She has a history of glaucoma. Which intranasal therapy is MOST appropriate?",
+              "options": [
+                "Ipratropium bromide 0.03% nasal spray",
+                "Beclomethasone dipropionate nasal spray",
+                "Oxymetazoline 0.05% nasal spray",
+                "Montelukast 10 mg orally"
+              ],
+              "answer": "Beclomethasone dipropionate nasal spray",
+              "explanation": "Intranasal corticosteroids are first-line for allergic rhinitis. Ipratropium (anticholinergic) is contraindicated in glaucoma. Oxymetazoline (decongestant) should be limited to 3-5 days due to rhinitis medicamentosa risk."
+            },
+            {
+              "stem": "Which electrolyte disturbance is MOST likely to result from prolonged magnesium hydroxide use?",
+              "options": [
+                "Hypernatraemia",
+                "Hypomagnesaemia",
+                "Hypermagnesaemia",
+                "Hypocalcaemia"
+              ],
+              "answer": "Hypermagnesaemia",
+              "explanation": "Prolonged use of magnesium-containing antacids can cause hypermagnesaemia, especially in patients with renal impairment. This presents with hypotension, areflexia, respiratory depression, and cardiac conduction abnormalities."
+            },
+            {
+              "stem": "A 35-year-old man with Gilbert's syndrome is well-controlled on low-dose budesonide for asthma. He develops GERD and is prescribed a PPI. Which PPI is LEAST affected by his reduced UDP-glucuronosyltransferase activity?",
+              "options": [
+                "Omeprazole",
+                "Lansoprazole",
+                "Pantoprazole",
+                "Esomeprazole"
+              ],
+              "answer": "Pantoprazole",
+              "explanation": "Pantoprazole undergoes less CYP2C19 metabolism than omeprazole, esomeprazole, or lansoprazole, relying more on CYP3A4 and sulphotransferases with cytosolic reduction. This makes it less subject to pharmacogenetic variability."
+            },
+            {
+              "stem": "Which of the following best describes the role of zinc in acute childhood diarrhoea management?",
+              "options": [
+                "Zinc acts as an antidiarrhoeal by slowing intestinal motility",
+                "Zinc reduces stool output and duration through enhanced enterocyte repair",
+                "Zinc neutralises enterotoxins produced by Vibrio cholerae",
+                "Zinc improves ORS palatability in children"
+              ],
+              "answer": "Zinc reduces stool output and duration through enhanced enterocyte repair",
+              "explanation": "Zinc supplementation (10-20 mg/day for 10-14 days) reduces diarrhoea duration and severity by improving intestinal epithelial cell regeneration, brush border enzyme activity, and immune function."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "(a) Describe the mechanism of action of ipratropium bromide. (2 marks)\n(b) List three indications for ipratropium use in respiratory disease. (2 marks)\n(c) Compare the adverse effect profile of ipratropium with that of salbutamol. (3 marks)\n(d) State why ipratropium is unsuitable for acute relief as monotherapy in asthma exacerbation. (1 mark)",
+              "modelAnswer": "(a) Ipratropium bromide is a quaternary ammonium anticholinergic that competitively blocks muscarinic acetylcholine receptors (primarily M3 subtype) on bronchial smooth muscle. This prevents acetylcholine-mediated bronchoconstriction and reduces mucus hypersecretion. Unlike atropine, it is poorly absorbed systemically due to its quaternary structure, minimising systemic anticholinergic effects.\n\n(b) Three indications: (1) Acute asthma exacerbation (in combination with SABA), (2) COPD maintenance therapy (in combination with SABA for acute relief or as LAMA for maintenance), (3) Acute bronchospasm due to beta-blocker overdose.\n\n(c) Ipratropium adverse effects: dry mouth, throat irritation, cough, bitter taste, and rarely urinary retention or glaucoma exacerbation. Salbutamol adverse effects: tremor, tachycardia, palpitations, hypokalaemia, and muscle cramps. Ipratropium causes minimal cardiovascular effects, while salbutamol frequently causes significant cardiovascular stimulation.\n\n(d) Ipratropium has a slow onset of action (30-60 minutes vs 5-15 minutes for salbutamol) and is a less potent bronchodilator than SABA. It must be used in combination with SABA in acute asthma, not as monotherapy."
+            },
+            {
+              "stem": "(a) Explain the mechanism of action of thiazide diuretics at the cellular level. (2 marks)\n(b) What is the role of thiazide diuretics in nephrolithiasis? (2 marks)\n(c) State three metabolic adverse effects of long-term thiazide therapy. (2 marks)\n(d) Compare the effect of thiazides and loop diuretics on urinary calcium excretion. (2 marks)",
+              "modelAnswer": "(a) Thiazide diuretics (e.g., hydrochlorothiazide) inhibit the Na+/Cl- cotransporter (NCC) in the distal convoluted tubule. By blocking sodium and chloride reabsorption, they increase delivery of sodium to the collecting duct, promoting potassium and hydrogen excretion via the Na+/K+ exchange mechanism.\n\n(b) Thiazides reduce urinary calcium excretion (hypocalciuric effect) by: (i) enhancing calcium reabsorption in the distal tubule secondary to sodium depletion, and (ii) direct effects on calcium transport. This makes them useful for reducing calcium oxalate stone formation in idiopathic hypercalciuria.\n\n(c) Three metabolic adverse effects: (1) Hypokalaemia (due to increased distal sodium-potassium exchange), (2) Hyponatraemia (especially in elderly women), (3) Hyperglycaemia (impaired insulin secretion), (4) Hyperuricaemia (reduced uric acid excretion), (5) Hypercalcaemia (reduced calcium excretion).\n\n(d) Thiazides decrease urinary calcium excretion (hypocalciuric effect). Loop diuretics increase urinary calcium excretion (hypercalciuric effect) by inhibiting calcium reabsorption in the thick ascending limb. This difference is used therapeutically: thiazides for hypercalciuria, loop diuretics for hypercalcaemia."
+            },
+            {
+              "stem": "(a) Describe the mechanism of action of proton pump inhibitors at the molecular level. (3 marks)\n(b) Explain why PPIs are most effective when taken 30-60 minutes before a meal. (2 marks)\n(c) List three drug interactions of omeprazole that are clinically significant. (2 marks)\n(d) State one advantage of rabeprazole over omeprazole. (1 mark)",
+              "modelAnswer": "(a) PPIs (e.g., omeprazole) are weak bases that accumulate in the acidic secretory canaliculi of active parietal cells. In this acidic environment (pH <3), they become protonated and undergo conversion to the active sulphenamide form, which forms an irreversible covalent disulphide bond with cysteine residues on the H+/K+ ATPase (proton pump). This irreversibly inhibits the enzyme until new pump molecules are synthesised (half-life ~48 hours).\n\n(b) PPIs are most effective when taken 30-60 minutes before a meal because: (1) Meals activate parietal cells, increasing the number of active proton pumps, (2) The PPI can then bind to these activated, actively secreting pumps, (3) Taking on an empty stomach ensures rapid absorption without food interference. Maximum acid suppression occurs after 3-5 days of once-daily dosing.\n\n(c) Three significant interactions: (1) Clopidogrel — omeprazole inhibits CYP2C19, reducing conversion of clopidogrel to its active metabolite (use pantoprazole instead), (2) Methotrexate — PPIs reduce renal excretion of methotrexate and its metabolite, (3) Citalopram/escitalopram — increased risk of QT prolongation due to reduced metabolism.\n\n(d) Rabeprazole has a more rapid onset of acid suppression because it undergoes non-enzymatic activation, independent of CYP2C19 genetic polymorphism. It also produces less CYP2C19 interaction than omeprazole."
+            },
+            {
+              "stem": "(a) List four clinical uses of ondansetron. (2 marks)\n(b) State the mechanism by which 5-HT3 antagonists prevent nausea and vomiting. (2 marks)\n(c) What is the concern regarding ondansetron and QT interval prolongation? (2 marks)\n(d) Compare the efficacy of ondansetron to dexamethasone in preventing chemotherapy-induced nausea. (2 marks)",
+              "modelAnswer": "(a) Four clinical uses: (1) Chemotherapy-induced nausea and vomiting (CINV), (2) Postoperative nausea and vomiting (PONV), (3) Radiation-induced nausea and vomiting, (4) Hyperemesis gravidarum (after first trimester, as second-line).\n\n(b) 5-HT3 antagonists block serotonin binding at 5-HT3 receptors located: (1) In the chemoreceptor trigger zone (CTZ) of the area postrema, (2) On vagal afferent nerves in the GI tract, and (3) In the nucleus tractus solitarius. This dual peripheral and central blockade prevents the vomiting reflex initiated by both chemotherapy agents and postoperative stimuli.\n\n(c) Ondansetron prolongs the QT interval in a dose-dependent manner by blocking cardiac hERG potassium channels. The risk is greatest with: (i) single IV doses >16 mg, (ii) in patients with electrolyte abnormalities, (iii) concurrent use of other QT-prolonging drugs. Maximum single IV dose is 16 mg.\n\n(d) For acute CINV, ondansetron and dexamethasone have different and complementary mechanisms. Combination therapy (5-HT3 antagonist + dexamethasone + NK1 antagonist) is superior to either alone. Dexamethasone adds antiemetic efficacy through prostaglandin inhibition and reduced serotonin release, while ondansetron provides direct 5-HT3 blockade."
+            },
+            {
+              "stem": "(a) Classify laxatives by mechanism and give one example of each. (4 marks)\n(b) Explain why bulk-forming laxatives are considered first-line for chronic constipation. (2 marks)\n(c) What is the mechanism of action of polyethylene glycol (PEG) 3350? (1 mark)\n(d) State two clinical scenarios where stimulant laxatives are preferred. (1 mark)",
+              "modelAnswer": "(a) Classification:\n1. Bulk-forming: Ispaghula husk (psyllium), methylcellulose, bran — increase stool mass and water content.\n2. Osmotic: Lactulose, PEG 3350, magnesium hydroxide — draw water into the bowel by osmotic gradient.\n3. Stimulant: Bisacodyl, senna, sodium picosulphate — stimulate enteric nerves to increase peristalsis.\n4. Stool softeners: Docusate sodium (reduce surface tension) — limited efficacy.\n\n(b) Bulk-forming laxatives are first-line for chronic constipation because: (1) They mimic physiological defecation by increasing stool bulk, (2) They are non-systemic and not absorbed, (3) They have the most favourable safety profile with minimal adverse effects, (4) They improve stool consistency without causing urgency or cramping, (5) They can be used long-term without developing tolerance.\n\n(c) PEG 3350 is an osmotic laxative that is not absorbed or metabolised. It acts as a hydrophilic polymer that forms hydrogen bonds with water molecules in the intestinal lumen, retaining water and increasing stool volume, which stimulates peristalsis.\n\n(d) Scenarios for stimulant laxatives: (1) Opioid-induced constipation where bulk-formers are insufficient, (2) Bowel preparation before colonoscopy or surgery, (3) Acute constipation where rapid relief is needed (short-term use only)."
+            },
+            {
+              "stem": "(a) Compare the mechanisms by which sodium cromoglycate and montelukast prevent asthma symptoms. (4 marks)\n(b) For which asthma patient phenotype is montelukast particularly effective? (2 marks)\n(c) State one clinically significant difference in the dosing schedule of zafirlukast versus montelukast. (1 mark)\n(d) How do you counsel a patient about taking montelukast? (1 mark)",
+              "modelAnswer": "(a) Sodium cromoglycate stabilises mast cell membranes by blocking chloride channels, preventing calcium influx and subsequent degranulation. This inhibits the release of histamine, leukotrienes, prostaglandins, and other inflammatory mediators from mast cells. Montelukast is a competitive, selective antagonist at the CysLT1 receptor, blocking the action of cysteinyl leukotrienes (LTC4, LTD4, LTE4) on airway smooth muscle, thus preventing bronchoconstriction, mucus secretion, and eosinophilic inflammation.\n\n(b) Montelukast is particularly effective in: (1) Aspirin-exacerbated respiratory disease (AERD) where leukotriene overproduction is a key driver, (2) Allergic rhinitis with asthma (treats both conditions), (3) Exercise-induced bronchoconstriction, and (4) Mild persistent asthma with concurrent allergic rhinitis, especially in children.\n\n(c) Zafirlukast requires twice-daily dosing (20 mg BID) and must be taken on an empty stomach as food reduces bioavailability by 40%. Montelukast is taken once daily (10 mg at bedtime for adults), with no food interaction.\n\n(d) Counselling: Take montelukast once daily in the evening (for asthma protection overnight). Continue even when asymptomatic. Report any mood changes, agitation, or suicidal thoughts immediately (neuropsychiatric effects). Effect develops over days to weeks."
+            },
+            {
+              "stem": "(a) Explain the mechanism of action of oral rehydration therapy. (3 marks)\n(b) State the composition of WHO reduced osmolarity ORS. (2 marks)\n(c) Compare the efficacy of ORS with intravenous fluids in mild-to-moderate dehydration. (2 marks)\n(d) What are the limitations of ORS? (1 mark)",
+              "modelAnswer": "(a) Oral rehydration therapy utilises the sodium-glucose cotransport mechanism (SGLT1) in the brush border of small intestinal enterocytes. Glucose and sodium are co-transported across the luminal membrane, creating an osmotic gradient that drives water absorption. This mechanism remains intact even during secretory diarrhoea (e.g., cholera). The presence of glucose (75 mmol/L) enhances sodium and water absorption by up to 250% compared to water alone.\n\n(b) WHO reduced osmolarity ORS per litre: Glucose 75 mmol (13.5 g), Sodium 75 mmol (2.6 g NaCl), Chloride 65 mmol, Potassium 20 mmol (1.5 g KCl), Citrate 10 mmol (2.9 g trisodium citrate dihydrate). Total osmolality = approximately 245 mOsm/L.\n\n(c) RCTs have shown that ORS is as effective as intravenous fluids for rehydration in mild-to-moderate dehydration across all age groups. ORS reduces the need for hospitalisation and has fewer adverse effects (no phlebitis, fluid overload, or needlestick injuries). IV fluids are reserved for severe dehydration (≥10% body weight), shock, persistent vomiting, or altered consciousness.\n\n(d) Limitations of ORS: (1) Not effective in severe dehydration where IV fluids are needed, (2) Requires the patient to be conscious and able to drink, (3) Taste may be unpalatable for some children, (4) Cannot correct electrolyte imbalances as rapidly as IV therapy in emergencies."
+            },
+            {
+              "stem": "(a) Describe the mechanism of action of glucocorticoids in the treatment of asthma. (3 marks)\n(b) Explain why inhaled corticosteroids are preferred over oral corticosteroids in asthma maintenance. (2 marks)\n(c) State three systemic adverse effects of long-term high-dose oral corticosteroids. (2 marks)\n(d) What is the role of prednisolone in acute severe asthma? (1 mark)",
+              "modelAnswer": "(a) Glucocorticoids bind to intracellular glucocorticoid receptors (GR) which translocate to the nucleus and: (1) Transrepress pro-inflammatory transcription factors (NF-κB, AP-1) via increased IκB-α synthesis, reducing cytokine (IL-4, IL-5, IL-13) and chemokine production, (2) Reduce eosinophil survival by promoting apoptosis, (3) Decrease airway microvascular leakage, (4) Reduce mucus gland secretion, (5) Reduce airway hyperresponsiveness, and (6) Upregulate beta-2 receptor expression (counteracting tachyphylaxis).\n\n(b) ICS are preferred because: (1) Direct delivery to airways achieves high local concentrations with minimal systemic absorption, (2) High first-pass metabolism of swallowed fraction reduces oral bioavailability to <1-11%, (3) Significantly fewer systemic adverse effects (no adrenal suppression, osteoporosis, or growth suppression at standard doses), (4) Better long-term safety profile for chronic therapy.\n\n(c) Three systemic adverse effects: (1) Osteoporosis with increased fracture risk, (2) Adrenal suppression (HPA axis suppression), (3) Hyperglycaemia and diabetes mellitus, (4) Skin thinning and easy bruising, (5) Proximal myopathy, (6) Increased infection risk.\n\n(d) Prednisolone (30-50 mg daily for 5-7 days, no taper needed) is the standard of care for acute severe asthma exacerbations. It reduces airway inflammation, accelerates recovery, prevents relapse, and reduces hospitalisation. The onset of action is 4-6 hours via genomic effects."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Mrs. Nyambura, a 48-year-old farmer, presents to the emergency department with severe dyspnoea and wheezing. She has a 15-year history of asthma and has been using only salbutamol PRN for symptom relief. In the past 3 weeks she has used her salbutamol more than 3 times per week and has had nighttime awakenings 4 nights in the past week. Today she developed sudden worsening dyspnoea at 6 AM and her salbutamol inhaler provided no relief. On examination: RR 32/min, SpO2 89% on room air, HR 118/min, BP 140/85, unable to complete sentences, using accessory muscles, PEFR 35% of predicted, chest auscultation reveals decreased air entry with expiratory wheeze.\n\n(a) What is the severity classification of this acute exacerbation, and give your rationale? (2 marks)\n(b) Outline the immediate pharmacological management in the first hour including drug names, doses, routes, and oxygen targets. (8 marks)\n(c) What maintenance therapy should be started upon stabilisation? Provide a specific regimen with drug names and doses. (4 marks)\n(d) What counselling would you provide to prevent future exacerbations? (4 marks)\n(e) Which step of the GINA guidelines should she have been on before this exacerbation, and how should this guide your management after recovery? (2 marks)",
+              "modelAnswer": "(a) This is a life-threatening acute asthma exacerbation: PEFR 35% predicted (<33% is life-threatening), cannot complete sentences (reduced speech), SpO2 89% (target not met with 94% target), RR 32, HR 118, using accessory muscles, and onset in early morning (morning dip).\n\n(b) Immediate management:\n1. Oxygen: High-flow oxygen via non-rebreather mask at 15 L/min to target SpO2 94-98%.\n2. Salbutamol: Nebulised 5 mg (or 2.5-5 mg) via oxygen-driven nebuliser. Repeat at 15-30 minute intervals for first hour. Continuous nebulisation (10 mg/hour) if not responding.\n3. Ipratropium bromide: Nebulised 500 mcg added to each salbutamol nebulisation for first 3 doses (every 20-30 minutes).\n4. Prednisolone: 40-50 mg orally immediately (or IV hydrocortisone 200 mg if vomiting/unable to swallow).\n5. IV magnesium sulphate: 2 g IV infusion over 20 minutes if not responding to initial therapy (PEFR <50% after 15 minutes).\n6. IV fluids: Normal saline 1 L (dehydration due to increased respiratory effort).\n7. Monitor: SpO2 continuously, PEFR after each nebuliser, chest auscultation, ABG if SpO2 persistently <92% or deteriorating.\n\n(c) Maintenance therapy (start after stabilisation):\n- Budesonide/formoterol SMART (Single Maintenance and Reliever Therapy) regimen:\n  - Budesonide 160 mcg / formoterol 4.5 mcg inhaler: one inhalation twice daily as maintenance, PLUS as-needed for symptom relief (up to 12 inhalations daily).\nOR if SMART not available:\n  - Fluticasone propionate 250 mcg / salmeterol 50 mcg — one inhalation twice daily (maintenance).\n  - Plus as-needed salbutamol 100-200 mcg for breakthrough symptoms.\n\n(d) Counselling to prevent future exacerbations:\n1. Adherence: Daily ICS maintenance therapy is essential for controlling airway inflammation — do not stop even when feeling well.\n2. Inhaler technique: Demonstrate and check technique at every visit. Use a spacer with MDI.\n3. Personalised asthma action plan (PAAP): Written plan with green (well), yellow (worsening), red (emergency) zones with specific actions.\n4. Trigger avoidance: Identify and avoid triggers (e.g., cold air, smoke, allergens, NSAIDs if sensitive).\n5. Monitor symptoms: Peak flow diary — daily home monitoring. Recognise early warning signs.\n6. Vaccination: Annual influenza vaccine and pneumococcal vaccine.\n7. SABA overuse warning: Using >2 times per week indicates poor control — seek medical review.\n\n(e) Before this exacerbation, Mrs. Nyambura was on GINA Step 1 (SABA as needed only). Her symptoms (SABA >3 times/week, nighttime awakenings 4/week) indicate she should have been on GINA Step 2 (low-dose ICS as needed with SABA) or Step 3 (low-dose ICS/LABA as needed). After recovery, step up to GINA Step 3 (low-dose ICS/formoterol as SMART regimen) given the severity of the exacerbation."
+            },
+            {
+              "stem": "Mr. Wafula, a 58-year-old diabetic (on metformin 1 g twice daily) with a history of peptic ulcer disease (omeprazole 20 mg daily), presents with a 3-day history of severe epigastric pain, vomiting, and constipation. He has been self-medicating with ibuprofen 400 mg three times daily for back pain. On examination: BP 100/65, HR 105, epigastric tenderness with guarding. He is noted to have infrequent bowel movements (1 every 3-4 days) despite using lactulose 30 mL at night. His current medications include metformin 1 g BID, omeprazole 20 mg daily, lactulose 30 mL PRN, and ibuprofen 400 mg TDS.\n\n(a) Identify the likely precipitant of his current presentation and explain the pathophysiology. (3 marks)\n(b) What changes must be made to his analgesic regimen? Provide specific alternatives with rationale. (4 marks)\n(c) Recommend a comprehensive bowel regimen for his constipation addressing his specific comorbidities. (4 marks)\n(d) Outline a complete antiemetic strategy for his vomiting, explaining why you would or would not use metoclopramide. (4 marks)\n(e) How would you optimise his diabetes management given the medication changes? (3 marks)",
+              "modelAnswer": "(a) Likely precipitant: NSAID-induced gastric ulcer exacerbation or perforation. Ibuprofen 400 mg TDS is a non-selective COX inhibitor that reduces mucosal prostaglandin synthesis (PGE2 and PGI2) in the gastric mucosa, impairing the protective mucus-bicarbonate barrier, reducing mucosal blood flow, and inhibiting epithelial repair. Despite concurrent PPI therapy, high-dose NSAIDs can still cause ulcer formation, especially with long-standing H. pylori history.\n\n(b) Analgesic regimen changes:\n1. Ibuprofen: DISCONTINUE immediately — absolute contraindication in active peptic ulcer disease.\n2. Replace with paracetamol 1 g QDS (maximum 4 g/day) as first-line for back pain.\n3. If inadequate: Consider tramadol 50-100 mg four times daily PRN (weak opioid, no ulcerogenic effect).\n4. Monitor renal function — NSAIDs may have exacerbated underlying diabetic nephropathy.\n5. For severe pain: Short course of low-dose morphine sulphate 5-10 mg orally every 4 hours PRN (monitor for constipation worsening).\n\n(c) Bowel regimen for constipation:\n1. Discontinue lactulose (can cause bloating and is less effective long-term).\n2. Start ispaghula husk 3.5 g (one sachet) in 240 mL water twice daily — bulk-forming, safe in diabetes, improves stool consistency.\n3. Add PEG 3350 (macrogol) 17 g (one sachet) once daily, titrate to response — osmotic, well-tolerated, no glucose impact.\n4. If opioid needed for pain, add prophylactic laxative: senna 15 mg at bedtime (stimulant) + docusate 100 mg twice daily (stool softener).\n5. Ensure adequate fluid intake (1.5-2 L/day unless fluid restriction indicated).\n6. Avoid bisacodyl long-term.\n\n(d) Antiemetic strategy:\n1. First-line: Ondansetron 4-8 mg IV or orally disintegrating tablet twice daily — effective for vomiting, no extrapyramidal effects, safe in diabetes.\n2. DO NOT USE METOCLOPRAMIDE — risk of extrapyramidal side effects (especially in an older diabetic with possible autonomic neuropathy), potential drug interaction with metformin and omeprazole, and risk of masking signs of perforation (prokinetic effect dangerous in suspected obstruction/perforation).\n3. Add domperidone 10 mg three times daily if needed (prokinetic but less CNS penetration due to P-gp efflux at blood-brain barrier).\n4. Monitor for electrolyte abnormalities — hypokalaemia from vomiting.\n\n(e) Diabetes management optimisation:\n1. Review metformin — temporarily hold if vomiting continues (risk of lactic acidosis if dehydrated or renal impairment).\n2. Check renal function (creatinine, eGFR) — NSAIDs may have worsened renal function.\n3. Monitor blood glucose every 4-6 hours during acute phase (stress hyperglycaemia).\n4. Consider switching to insulin during acute illness (sliding scale or basal-bolus regimen) — metformin will be temporarily held and oral intake may be unreliable.\n5. Once stable, restart metformin 500 mg BID and titrate back to 1 g BID if renal function stable.\n6. Ensure PPI (omeprazole) is taken correctly (before breakfast) to minimise interaction with metformin absorption."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

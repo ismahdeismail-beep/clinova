@@ -44,7 +44,7 @@ export default function LandingScreen() {
       icon: ClipboardCheck,
       title: 'Nursing Care Plans',
       description:
-        'Structured NANDA, NIC, and NOC care plans across 19 specialties with 94 fully detailed care plans covering pathophysiology, diagnoses, interventions, and discharge planning.',
+        'Structured NANDA, NIC, and NOC care plans across 19 specialties with 92 fully detailed care plans covering pathophysiology, diagnoses, interventions, and discharge planning.',
       gradient: 'from-teal-500 to-cyan-600',
     },
     {
@@ -67,7 +67,7 @@ export default function LandingScreen() {
     { value: String(therapeuticAreaCount), label: 'Therapeutic Areas', icon: Layers },
     { value: String(caseCount), label: 'Clinical Cases', icon: Stethoscope },
     { value: String(drugCount), label: 'Drug Monographs', icon: Pill },
-    { value: '94', label: 'Care Plans', icon: ClipboardCheck },
+    { value: '92', label: 'Care Plans', icon: ClipboardCheck },
   ]
 
   const steps = [
@@ -104,7 +104,7 @@ export default function LandingScreen() {
     },
     {
       title: 'Nursing & Allied Health',
-      desc: 'Access structured nursing care plans with NANDA/NIC/NOC standards across 14 clinical specialties.',
+      desc: 'Access structured nursing care plans with NANDA/NIC/NOC standards across 19 clinical specialties.',
       icon: ClipboardCheck,
     },
   ]

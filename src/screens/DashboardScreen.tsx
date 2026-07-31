@@ -205,7 +205,7 @@ const DAILY_ARTICLES = [
   },
   {
     title: 'NANDA-NIC-NOC: Structured Nursing Care Plans for Clinical Practice',
-    summary: "An overview of the standardized nursing language system powering Clinova's new Care Plan module. Includes 19 specialties and 47 evidence-based care plans for common clinical conditions.",
+    summary: "An overview of the standardized nursing language system powering Clinova's new Care Plan module. Includes 19 specialties and 92 evidence-based care plans for common clinical conditions.",
     category: 'Nursing Care',
     readTime: '5 min read',
     badge: 'New',

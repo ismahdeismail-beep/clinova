@@ -46,7 +46,7 @@ const DEFAULT_NOTIFICATIONS: AppNotification[] = [
     id: 'welcome-2',
     type: 'info',
     title: 'NANDA Nursing Care Plans Now Available',
-    message: '47 evidence-based care plans across 19 specialties — from Critical Care/ICU to Community Health.',
+    message: '92 evidence-based care plans across 19 specialties — from Critical Care/ICU to Community Health.',
     time: 'New',
     timestamp: Date.now() - 3600000,
     read: false,
@@ -75,7 +75,7 @@ const FEATURE_ANNOUNCEMENTS = [
   {
     id: 'feat-care-plans',
     title: 'NANDA Nursing Care Plans',
-    message: '47 evidence-based care plans across 19 specialties — from Critical Care/ICU to Community Health.',
+    message: '92 evidence-based care plans across 19 specialties — from Critical Care/ICU to Community Health.',
     iconName: 'Megaphone',
     color: 'text-teal-500',
     bg: 'bg-teal-500/10',

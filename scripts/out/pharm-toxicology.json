@@ -1,0 +1,1206 @@
+{
+  "pharm-toxicology": {
+    "1": {
+      "title": "Toxicology & Drug Discovery",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 35-year-old man presents with acute confusion, abdominal pain, and a metallic taste in his mouth. He works in a battery factory. His blood lead level is 80 µg/dL. Which of the following is the most appropriate initial chelating agent for this patient?",
+              "options": [
+                "a) Deferoxamine",
+                "b) Dimercaprol (BAL)",
+                "c) Penicillamine",
+                "d) Succimer (DMSA)"
+              ],
+              "answer": "b) Dimercaprol (BAL)",
+              "explanation": "Dimercaprol (BAL) is the preferred initial chelator for severe lead poisoning with encephalopathy due to its rapid onset and ability to cross the blood-brain barrier."
+            },
+            {
+              "stem": "A 45-year-old woman is brought to the ED with nausea, vomiting, and severe abdominal cramping after ingesting an unknown substance. She has a history of hypertension and takes lisinopril. On examination, she is diaphoretic, with pinpoint pupils and bradycardia. Which of the following is the most likely diagnosis?",
+              "options": [
+                "a) Organophosphate poisoning",
+                "b) Paracetamol overdose",
+                "c) Iron poisoning",
+                "d) Cyanide poisoning"
+              ],
+              "answer": "a) Organophosphate poisoning",
+              "explanation": "The clinical features of cholinergic crisis (pinpoint pupils, bradycardia, diaphoresis, abdominal cramping) are classic for organophosphate poisoning."
+            },
+            {
+              "stem": "A 22-year-old man is admitted with altered mental status and metabolic acidosis after ingesting a bottle of antifreeze. His serum osmolal gap is elevated. Which of the following antidotes is most appropriate for this patient?",
+              "options": [
+                "a) N-acetylcysteine",
+                "b) Fomepizole",
+                "c) Sodium thiosulfate",
+                "d) Atropine"
+              ],
+              "answer": "b) Fomepizole",
+              "explanation": "Fomepizole is the antidote of choice for ethylene glycol poisoning, inhibiting alcohol dehydrogenase and preventing toxic metabolite formation."
+            },
+            {
+              "stem": "A 60-year-old man presents with severe headache, dizziness, and visual disturbances after inhaling fumes from a gold refining process. Which of the following toxicants is most likely responsible?",
+              "options": [
+                "a) Lead",
+                "b) Mercury",
+                "c) Arsenic",
+                "d) Cadmium"
+              ],
+              "answer": "b) Mercury",
+              "explanation": "Inhalation of mercury vapor from gold refining can cause neurological symptoms including tremor, visual disturbances, and mood changes."
+            },
+            {
+              "stem": "A 19-year-old woman is brought to the ED after taking 50 paracetamol 500 mg tablets 8 hours ago. Her serum paracetamol level is 300 mg/L. Which of the following is the most appropriate management?",
+              "options": [
+                "a) Activated charcoal alone",
+                "b) N-acetylcysteine IV",
+                "c) Methionine orally",
+                "d) Supportive care only"
+              ],
+              "answer": "b) N-acetylcysteine IV",
+              "explanation": "N-acetylcysteine is indicated for paracetamol overdose when the serum level is above the treatment line on the Rumack-Matthew nomogram, especially at 8 hours post-ingestion."
+            },
+            {
+              "stem": "A 5-year-old child is brought to the ED with vomiting, diarrhea, and hematemesis after ingesting an unknown number of iron tablets. His serum iron level is 500 µg/dL. Which of the following is the most appropriate antidote?",
+              "options": [
+                "a) Deferoxamine",
+                "b) Dimercaprol",
+                "c) Penicillamine",
+                "d) Succimer"
+              ],
+              "answer": "a) Deferoxamine",
+              "explanation": "Deferoxamine is the specific antidote for iron poisoning, chelating free iron and forming ferrioxamine, which is excreted in urine."
+            },
+            {
+              "stem": "A 30-year-old man presents with confusion, lactic acidosis, and a bitter almond odor on his breath. Which of the following antidotes is most appropriate?",
+              "options": [
+                "a) Sodium nitrite",
+                "b) Hydroxocobalamin",
+                "c) Sodium thiosulfate",
+                "d) Atropine"
+              ],
+              "answer": "b) Hydroxocobalamin",
+              "explanation": "Hydroxocobalamin is the preferred antidote for cyanide poisoning, rapidly binding cyanide to form cyanocobalamin, which is renally excreted."
+            },
+            {
+              "stem": "A 40-year-old man is admitted with acute kidney injury and severe metabolic acidosis after ingesting methanol. His serum methanol level is 50 mg/dL. Which of the following is the most appropriate management?",
+              "options": [
+                "a) Hemodialysis alone",
+                "b) Ethanol therapy",
+                "c) Fomepizole and hemodialysis",
+                "d) Sodium bicarbonate alone"
+              ],
+              "answer": "c) Fomepizole and hemodialysis",
+              "explanation": "Fomepizole inhibits alcohol dehydrogenase, preventing methanol metabolism to toxic formic acid. Hemodialysis is indicated for severe methanol poisoning to remove methanol and its metabolites."
+            },
+            {
+              "stem": "A 25-year-old woman presents with acute onset of salivation, lacrimation, urination, and diarrhea after exposure to an insecticide. Which of the following is the most appropriate initial treatment?",
+              "options": [
+                "a) Atropine",
+                "b) Pralidoxime",
+                "c) Both atropine and pralidoxime",
+                "d) Activated charcoal"
+              ],
+              "answer": "c) Both atropine and pralidoxime",
+              "explanation": "Atropine reverses muscarinic symptoms, while pralidoxime reactivates acetylcholinesterase. Both are indicated in organophosphate poisoning."
+            },
+            {
+              "stem": "A 50-year-old man presents with abdominal pain, peripheral neuropathy, and Mees lines on his nails. His blood arsenic level is 20 µg/L. Which of the following chelators is most appropriate?",
+              "options": [
+                "a) Dimercaprol",
+                "b) Succimer (DMSA)",
+                "c) Penicillamine",
+                "d) EDTA"
+              ],
+              "answer": "b) Succimer (DMSA)",
+              "explanation": "Succimer (DMSA) is an oral chelator preferred for chronic arsenic poisoning due to its efficacy and lower toxicity compared to parenteral agents."
+            },
+            {
+              "stem": "A 65-year-old man with a history of alcohol use disorder presents with confusion, ataxia, and ophthalmoplegia. Which of the following vitamin deficiencies is most likely responsible?",
+              "options": [
+                "a) Vitamin B1 (thiamine)",
+                "b) Vitamin B6 (pyridoxine)",
+                "c) Vitamin B12 (cobalamin)",
+                "d) Vitamin C (ascorbic acid)"
+              ],
+              "answer": "a) Vitamin B1 (thiamine)",
+              "explanation": "Wernicke-Korsakoff syndrome is caused by thiamine deficiency, commonly seen in alcohol use disorder, characterized by confusion, ataxia, and ophthalmoplegia."
+            },
+            {
+              "stem": "A 35-year-old woman is admitted with acute salicylate toxicity after ingesting 50 aspirin tablets. Her serum salicylate level is 60 mg/dL. Which of the following is the most appropriate management?",
+              "options": [
+                "a) Activated charcoal alone",
+                "b) Sodium bicarbonate infusion",
+                "c) Hemodialysis",
+                "d) N-acetylcysteine"
+              ],
+              "answer": "b) Sodium bicarbonate infusion",
+              "explanation": "Sodium bicarbonate alkalinizes urine, enhancing salicylate excretion. It is the cornerstone of management for salicylate toxicity."
+            },
+            {
+              "stem": "A 45-year-old man presents with acute onset of chest pain, palpitations, and agitation after taking a dietary supplement. His ECG shows QT prolongation. Which of the following is the most likely causative agent?",
+              "options": [
+                "a) Ephedrine",
+                "b) St. John’s wort",
+                "c) Ginkgo biloba",
+                "d) Kava kava"
+              ],
+              "answer": "a) Ephedrine",
+              "explanation": "Ephedrine is a sympathomimetic that can cause tachycardia, palpitations, and QT prolongation, especially in overdose."
+            },
+            {
+              "stem": "A 20-year-old man is brought to the ED with severe agitation, hypertension, and tachycardia after ingesting a recreational drug. His pupils are dilated, and he is diaphoretic. Which of the following is the most likely diagnosis?",
+              "options": [
+                "a) Opioid toxicity",
+                "b) Cocaine toxicity",
+                "c) Benzodiazepine toxicity",
+                "d) Alcohol withdrawal"
+              ],
+              "answer": "b) Cocaine toxicity",
+              "explanation": "Cocaine toxicity presents with sympathomimetic symptoms including agitation, hypertension, tachycardia, and dilated pupils."
+            },
+            {
+              "stem": "A 55-year-old man presents with acute kidney injury and a serum creatinine of 4.5 mg/dL after ingesting a traditional herbal remedy. Which of the following is the most likely causative agent?",
+              "options": [
+                "a) Aristolochic acid",
+                "b) Aloe vera",
+                "c) Ginseng",
+                "d) Echinacea"
+              ],
+              "answer": "a) Aristolochic acid",
+              "explanation": "Aristolochic acid, found in some traditional herbal remedies, is nephrotoxic and can cause rapidly progressive interstitial nephritis."
+            },
+            {
+              "stem": "A 30-year-old woman is admitted with acute lithium toxicity. Her serum lithium level is 3.5 mEq/L. Which of the following is the most appropriate management?",
+              "options": [
+                "a) Hemodialysis",
+                "b) Intravenous fluids and loop diuretics",
+                "c) Activated charcoal",
+                "d) Sodium bicarbonate"
+              ],
+              "answer": "a) Hemodialysis",
+              "explanation": "Hemodialysis is indicated for severe lithium toxicity (level >3 mEq/L) to rapidly reduce lithium levels."
+            },
+            {
+              "stem": "A 40-year-old man presents with acute onset of flushing, headache, and hypotension after taking a medication for erectile dysfunction. Which of the following is the most likely causative agent?",
+              "options": [
+                "a) Sildenafil",
+                "b) Tadalafil",
+                "c) Vardenafil",
+                "d) All of the above"
+              ],
+              "answer": "d) All of the above",
+              "explanation": "Phosphodiesterase-5 inhibitors (sildenafil, tadalafil, vardenafil) can cause vasodilation, leading to flushing, headache, and hypotension."
+            },
+            {
+              "stem": "A 25-year-old woman presents with acute dystonia after taking a medication for nausea. Which of the following is the most likely causative agent?",
+              "options": [
+                "a) Metoclopramide",
+                "b) Ondansetron",
+                "c) Prochlorperazine",
+                "d) Both a and c"
+              ],
+              "answer": "d) Both a and c",
+              "explanation": "Metoclopramide and prochlorperazine are dopamine antagonists that can cause acute dystonic reactions, especially in young women."
+            },
+            {
+              "stem": "A 60-year-old man presents with acute onset of tinnitus, vertigo, and nausea after taking high-dose aspirin for osteoarthritis. Which of the following is the most likely diagnosis?",
+              "options": [
+                "a) Salicylate toxicity",
+                "b) Meniere’s disease",
+                "c) Vestibular neuritis",
+                "d) Labyrinthitis"
+              ],
+              "answer": "a) Salicylate toxicity",
+              "explanation": "High-dose aspirin can cause salicylate toxicity, presenting with tinnitus, vertigo, and nausea."
+            },
+            {
+              "stem": "A 35-year-old man is admitted with acute onset of seizures after ingesting a large quantity of a tricyclic antidepressant. Which of the following is the most appropriate initial treatment?",
+              "options": [
+                "a) Lorazepam",
+                "b) Phenytoin",
+                "c) Sodium bicarbonate",
+                "d) Activated charcoal"
+              ],
+              "answer": "c) Sodium bicarbonate",
+              "explanation": "Sodium bicarbonate is the initial treatment for tricyclic antidepressant-induced seizures due to its ability to reverse sodium channel blockade."
+            },
+            {
+              "stem": "A 45-year-old woman presents with acute onset of bradycardia, hypotension, and wheezing after taking a beta-blocker overdose. Which of the following is the most appropriate treatment?",
+              "options": [
+                "a) Glucagon",
+                "b) Atropine",
+                "c) Dopamine",
+                "d) Norepinephrine"
+              ],
+              "answer": "a) Glucagon",
+              "explanation": "Glucagon is the antidote for beta-blocker overdose, increasing heart rate and contractility via a non-adrenergic mechanism."
+            },
+            {
+              "stem": "A 20-year-old man presents with acute onset of hallucinations, tachycardia, and hypertension after ingesting a recreational drug. Which of the following is the most likely diagnosis?",
+              "options": [
+                "a) LSD toxicity",
+                "b) Cocaine toxicity",
+                "c) MDMA toxicity",
+                "d) PCP toxicity"
+              ],
+              "answer": "a) LSD toxicity",
+              "explanation": "LSD toxicity presents with hallucinations, tachycardia, and hypertension, often with perceptual distortions."
+            },
+            {
+              "stem": "A 50-year-old man presents with acute onset of chest pain and ST-segment elevation after taking sildenafil and nitrates. Which of the following is the most likely diagnosis?",
+              "options": [
+                "a) Acute myocardial infarction",
+                "b) Aortic dissection",
+                "c) Vasospastic angina",
+                "d) Drug-induced hypotension"
+              ],
+              "answer": "d) Drug-induced hypotension",
+              "explanation": "Concomitant use of sildenafil and nitrates can cause severe hypotension and reflex tachycardia, leading to chest pain and ST-segment changes."
+            },
+            {
+              "stem": "A 30-year-old woman presents with acute onset of severe abdominal pain, vomiting, and diarrhea after ingesting a traditional remedy. Her serum potassium is 2.5 mEq/L. Which of the following is the most likely causative agent?",
+              "options": [
+                "a) Aconite",
+                "b) Colchicine",
+                "c) Digoxin",
+                "d) Theophylline"
+              ],
+              "answer": "a) Aconite",
+              "explanation": "Aconite toxicity can cause severe gastrointestinal symptoms and electrolyte disturbances, including hypokalemia."
+            },
+            {
+              "stem": "A 40-year-old man presents with acute onset of confusion, ataxia, and nystagmus after taking a medication for insomnia. Which of the following is the most likely causative agent?",
+              "options": [
+                "a) Zolpidem",
+                "b) Lorazepam",
+                "c) Diphenhydramine",
+                "d) All of the above"
+              ],
+              "answer": "d) All of the above",
+              "explanation": "Benzodiazepines (lorazepam), non-benzodiazepine hypnotics (zolpidem), and anticholinergics (diphenhydramine) can all cause confusion, ataxia, and nystagmus."
+            },
+            {
+              "stem": "A 55-year-old man presents with acute onset of flushing, headache, and diarrhea after taking a medication for hypertension. Which of the following is the most likely causative agent?",
+              "options": [
+                "a) Lisinopril",
+                "b) Losartan",
+                "c) Hydralazine",
+                "d) Nifedipine"
+              ],
+              "answer": "c) Hydralazine",
+              "explanation": "Hydralazine can cause a lupus-like syndrome with flushing, headache, and diarrhea, especially in slow acetylators."
+            },
+            {
+              "stem": "A 25-year-old woman presents with acute onset of severe headache, nausea, and blurred vision after taking oral contraceptives. Which of the following is the most likely diagnosis?",
+              "options": [
+                "a) Migraine",
+                "b) Pseudotumor cerebri",
+                "c) Stroke",
+                "d) Hypertensive emergency"
+              ],
+              "answer": "b) Pseudotumor cerebri",
+              "explanation": "Oral contraceptives are a risk factor for pseudotumor cerebri, presenting with headache, nausea, and visual disturbances."
+            },
+            {
+              "stem": "A 60-year-old man presents with acute onset of muscle weakness and fasciculations after taking a medication for myasthenia gravis. Which of the following is the most likely causative agent?",
+              "options": [
+                "a) Pyridostigmine",
+                "b) Neostigmine",
+                "c) Edrophonium",
+                "d) All of the above"
+              ],
+              "answer": "d) All of the above",
+              "explanation": "Cholinesterase inhibitors (pyridostigmine, neostigmine, edrophonium) can cause cholinergic toxicity with muscle weakness and fasciculations."
+            },
+            {
+              "stem": "A 35-year-old man presents with acute onset of tinnitus, vertigo, and nausea after taking high-dose aspirin. Which of the following is the most appropriate management?",
+              "options": [
+                "a) Activated charcoal",
+                "b) Sodium bicarbonate",
+                "c) Hemodialysis",
+                "d) Supportive care only"
+              ],
+              "answer": "b) Sodium bicarbonate",
+              "explanation": "Sodium bicarbonate alkalinizes urine, enhancing salicylate excretion and is the cornerstone of management for salicylate toxicity."
+            },
+            {
+              "stem": "A 45-year-old woman presents with acute onset of confusion, ataxia, and nystagmus after taking a medication for vertigo. Which of the following is the most likely causative agent?",
+              "options": [
+                "a) Meclizine",
+                "b) Dimenhydrinate",
+                "c) Scopolamine",
+                "d) All of the above"
+              ],
+              "answer": "d) All of the above",
+              "explanation": "Anticholinergic agents (meclizine, dimenhydrinate, scopolamine) can cause confusion, ataxia, and nystagmus."
+            },
+            {
+              "stem": "A 50-year-old man presents with acute onset of chest pain and ST-segment elevation after taking sildenafil and nitrates. Which of the following is the most appropriate management?",
+              "options": [
+                "a) Nitroglycerin",
+                "b) Aspirin",
+                "c) Intravenous fluids",
+                "d) None of the above"
+              ],
+              "answer": "d) None of the above",
+              "explanation": "Concomitant use of sildenafil and nitrates is contraindicated due to risk of severe hypotension. Management involves supportive care and avoiding nitrates."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 30-year-old man presents with acute confusion, abdominal pain, and a metallic taste in his mouth. He works in a battery factory. His blood lead level is 80 µg/dL.\n\na) List the key clinical features of lead poisoning. (2 marks)\n\nb) Outline the mechanism of action of dimercaprol (BAL) in lead poisoning. (2 marks)\n\nc) What is the role of succimer (DMSA) in the management of lead poisoning? (1 mark)",
+              "modelAnswer": "a) Key clinical features of lead poisoning include:\n- Neurological: encephalopathy (confusion, seizures), peripheral neuropathy (wrist/foot drop), headache, irritability\n- Gastrointestinal: abdominal pain ('lead colic'), nausea, vomiting, metallic taste\n- Hematological: microcytic hypochromic anemia (basophilic stippling on smear), hemolysis\n- Renal: proximal tubular dysfunction (glycosuria, aminoaciduria, phosphaturia)\n- Reproductive: infertility, teratogenicity\n\nb) Mechanism of dimercaprol (BAL):\n- BAL is a dithiol chelator that forms stable, water-soluble complexes with lead ions\n- It binds lead in the bloodstream and tissues, facilitating urinary excretion\n- Crosses the blood-brain barrier, making it useful in encephalopathy\n- Administered intramuscularly due to poor oral bioavailability\n\nc) Role of succimer (DMSA):\n- Oral chelator used for mild to moderate lead poisoning or as follow-up after parenteral chelation\n- Preferred in children due to oral route and lower toxicity compared to BAL\n- Forms water-soluble lead-DMSA complexes excreted in urine"
+            },
+            {
+              "stem": "A 45-year-old woman is brought to the ED with nausea, vomiting, and severe abdominal cramping after ingesting an unknown substance. She is diaphoretic, with pinpoint pupils and bradycardia.\n\na) What is the most likely diagnosis? (1 mark)\n\nb) Outline the ABCDE approach to initial management. (3 marks)\n\nc) What is the role of pralidoxime in this scenario? (1 mark)",
+              "modelAnswer": "a) Most likely diagnosis: Organophosphate or carbamate poisoning (cholinergic crisis).\n\nb) ABCDE approach to initial management:\n- Airway: Ensure patent airway; consider intubation if respiratory failure or excessive secretions\n- Breathing: Administer oxygen; monitor respiratory effort and oxygen saturation\n- Circulation: Establish IV access; monitor heart rate and blood pressure (bradycardia may require atropine)\n- Disability: Assess mental status; consider atropine for severe symptoms\n- Exposure: Remove contaminated clothing; decontaminate skin with soap and water\n\nc) Role of pralidoxime:\n- Reactivates acetylcholinesterase by displacing organophosphate from the enzyme\n- Most effective if given early (within hours of exposure)\n- Administered as an adjunct to atropine for moderate to severe poisoning"
+            },
+            {
+              "stem": "A 22-year-old man is admitted with altered mental status and metabolic acidosis after ingesting a bottle of antifreeze. His serum osmolal gap is elevated.\n\na) What is the most likely toxic alcohol responsible? (1 mark)\n\nb) Outline the mechanism of toxicity for this alcohol. (2 marks)\n\nc) What are the key components of management? (2 marks)",
+              "modelAnswer": "a) Most likely toxic alcohol: Ethylene glycol.\n\nb) Mechanism of toxicity:\n- Ethylene glycol is metabolized by alcohol dehydrogenase to glycoaldehyde, then to glycolic acid (responsible for metabolic acidosis)\n- Further metabolism to oxalic acid leads to calcium oxalate crystal formation in kidneys (acute kidney injury)\n- Toxic metabolites cause severe metabolic acidosis (high anion gap) and osmolal gap\n\nc) Key components of management:\n- Fomepizole: Inhibits alcohol dehydrogenase, preventing toxic metabolite formation\n- Hemodialysis: Removes ethylene glycol and its metabolites; indicated for severe acidosis, renal failure, or high serum levels\n- Sodium bicarbonate: Corrects metabolic acidosis\n- Thiamine and pyridoxine: Cofactors to shunt metabolism away from toxic pathways"
+            },
+            {
+              "stem": "A 19-year-old woman is brought to the ED after taking 50 paracetamol 500 mg tablets 8 hours ago. Her serum paracetamol level is 300 mg/L.\n\na) What is the toxic metabolite of paracetamol responsible for liver injury? (1 mark)\n\nb) Explain the role of glutathione in paracetamol toxicity. (2 marks)\n\nc) Outline the management of this patient. (2 marks)",
+              "modelAnswer": "a) Toxic metabolite: N-acetyl-p-benzoquinone imine (NAPQI).\n\nb) Role of glutathione:\n- Glutathione detoxifies NAPQI by conjugation, forming a non-toxic mercapturic acid\n- In overdose, glutathione stores are depleted, allowing NAPQI to bind cellular proteins, causing hepatocellular necrosis\n- N-acetylcysteine (NAC) replenishes glutathione stores, preventing liver injury\n\nc) Management:\n- Administer N-acetylcysteine IV immediately (loading dose 150 mg/kg over 15 minutes, then 50 mg/kg over 4 hours, then 100 mg/kg over 16 hours)\n- Monitor liver function tests (ALT, AST, bilirubin, INR) and paracetamol levels\n- Consider liver transplantation if fulminant hepatic failure develops"
+            },
+            {
+              "stem": "A 5-year-old child is brought to the ED with vomiting, diarrhea, and hematemesis after ingesting an unknown number of iron tablets. His serum iron level is 500 µg/dL.\n\na) What are the stages of iron poisoning? (2 marks)\n\nb) What is the mechanism of action of deferoxamine? (2 marks)\n\nc) What monitoring is required during deferoxamine therapy? (1 mark)",
+              "modelAnswer": "a) Stages of iron poisoning:\n- Stage 1 (0–6 hours): Gastrointestinal symptoms (vomiting, diarrhea, abdominal pain)\n- Stage 2 (6–24 hours): Apparent recovery (deceptive quiescence)\n- Stage 3 (12–48 hours): Systemic toxicity (shock, metabolic acidosis, coagulopathy, hepatic failure)\n- Stage 4 (2–6 weeks): Gastrointestinal scarring (pyloric stenosis, strictures)\n\nb) Mechanism of deferoxamine:\n- Binds free iron in the bloodstream and tissues, forming ferrioxamine\n- Ferrioxamine is water-soluble and excreted renally, reducing iron-mediated oxidative damage\n- Administered IV or IM; does not remove iron from hemoglobin or ferritin\n\nc) Monitoring during deferoxamine therapy:\n- Urine color: Ferrioxamine turns urine pink/red (monitor for adequate chelation)\n- Serum iron levels: Track reduction in free iron\n- Renal function: Monitor for deferoxamine-induced renal toxicity\n- Vital signs and clinical status: Assess for resolution of systemic toxicity"
+            },
+            {
+              "stem": "A 30-year-old man presents with confusion, lactic acidosis, and a bitter almond odor on his breath.\n\na) What is the most likely diagnosis? (1 mark)\n\nb) Outline the mechanism of toxicity for this agent. (2 marks)\n\nc) What are the key antidotes for this poisoning, and how do they work? (2 marks)",
+              "modelAnswer": "a) Most likely diagnosis: Cyanide poisoning.\n\nb) Mechanism of toxicity:\n- Cyanide binds to cytochrome c oxidase in the electron transport chain, inhibiting cellular respiration\n- Leads to anaerobic metabolism, lactic acidosis, and cellular hypoxia despite normal oxygen delivery\n- Affects organs with high oxygen demand (brain, heart) first\n\nc) Key antidotes and their mechanisms:\n- Hydroxocobalamin: Binds cyanide to form cyanocobalamin (vitamin B12), which is renally excreted; rapid onset, preferred in severe cases\n- Sodium nitrite: Induces methemoglobinemia, which binds cyanide (forming cyanmethemoglobin); slower onset, risk of hypotension\n- Sodium thiosulfate: Provides sulfur donors to convert cyanide to thiocyanate (excreted in urine); used as adjunct therapy"
+            },
+            {
+              "stem": "A 65-year-old man with a history of alcohol use disorder presents with confusion, ataxia, and ophthalmoplegia.\n\na) What is the most likely vitamin deficiency responsible? (1 mark)\n\nb) Outline the pathophysiology of this condition. (2 marks)\n\nc) What is the treatment, and what are the key monitoring points? (2 marks)",
+              "modelAnswer": "a) Most likely vitamin deficiency: Vitamin B1 (thiamine).\n\nb) Pathophysiology:\n- Thiamine is a cofactor for enzymes in carbohydrate metabolism (pyruvate dehydrogenase, alpha-ketoglutarate dehydrogenase)\n- Deficiency leads to impaired glucose metabolism in the brain, particularly in regions with high metabolic demand (mammillary bodies, brainstem)\n- Results in neuronal damage, oxidative stress, and lactic acidosis\n\nc) Treatment and monitoring:\n- Thiamine 500 mg IV three times daily for 2–3 days, then 250 mg IV daily for 3–5 days\n- Followed by oral thiamine 100 mg daily\n- Monitor for improvement in neurological symptoms (ataxia, ophthalmoplegia, confusion)\n- Monitor for refeeding syndrome (hypophosphatemia, hypokalemia) in malnourished patients"
+            },
+            {
+              "stem": "A 40-year-old man presents with acute onset of chest pain, palpitations, and agitation after taking a dietary supplement. His ECG shows QT prolongation.\n\na) What is the most likely causative agent in this scenario? (1 mark)\n\nb) Outline the mechanism by which this agent causes QT prolongation. (2 marks)\n\nc) What is the management of this toxicity? (2 marks)",
+              "modelAnswer": "a) Most likely causative agent: Ephedrine (or other sympathomimetic stimulants).\n\nb) Mechanism of QT prolongation:\n- Ephedrine increases catecholamine release, leading to sympathetic overactivity\n- Sympathomimetics can cause electrolyte disturbances (hypokalemia, hypomagnesemia) via renal losses and intracellular shifts\n- Hypokalemia and hypomagnesemia prolong the QT interval by delaying cardiac repolarization (phase 3 of the action potential)\n- Direct effects on cardiac ion channels (e.g., inhibition of delayed rectifier potassium current) may also contribute\n\nc) Management:\n- IV benzodiazepines (e.g., lorazepam) to control agitation and reduce sympathetic drive\n- Correct electrolyte imbalances (potassium, magnesium) to shorten QT interval\n- Monitor ECG for torsades de pointes; consider magnesium sulfate or overdrive pacing if arrhythmias occur\n- Avoid class IA or III antiarrhythmics (e.g., procainamide, sotalol), which can worsen QT prolongation"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 35-year-old man presents to the emergency department with acute confusion, abdominal pain, and a metallic taste in his mouth. He works in a battery factory and reports recent exposure to lead fumes. His blood lead level is 80 µg/dL, and his hemoglobin is 10.5 g/dL with basophilic stippling on peripheral smear.\n\na) Describe the pathophysiology of lead toxicity, including its effects on heme synthesis and the nervous system. (5 marks)\n\nb) Outline the stepwise management of this patient, including chelation therapy and monitoring. (5 marks)\n\nc) Discuss the long-term complications of chronic lead exposure and their management. (5 marks)",
+              "modelAnswer": "a) Pathophysiology of lead toxicity:\n- Heme synthesis: Lead inhibits delta-aminolevulinic acid dehydratase (ALAD) and ferrochelatase, leading to accumulation of delta-ALA and protoporphyrin IX. This disrupts heme synthesis, causing microcytic hypochromic anemia with basophilic stippling (ribosomal aggregation in erythrocytes).\n- Nervous system: Lead crosses the blood-brain barrier, interfering with neurotransmission (e.g., inhibition of N-methyl-D-aspartate receptors) and causing oxidative stress. In adults, it primarily affects peripheral nerves (demyelination), while in children, it disrupts synaptic development, leading to encephalopathy (confusion, seizures).\n- Other systems: Lead interferes with calcium-dependent processes, disrupting mitochondrial function, and causes oxidative damage to cellular membranes. It also inhibits sodium-potassium ATPases, contributing to hypertension and renal tubular dysfunction.\n\nb) Stepwise management:\n1. Immediate stabilization: Assess airway, breathing, and circulation. Provide oxygen if hypoxic.\n2. Chelation therapy:\n   - Severe poisoning (encephalopathy, blood lead >70 µg/dL): Dimercaprol (BAL) 4 mg/kg IM every 4 hours for 2–5 days, followed by oral succimer (DMSA) 10 mg/kg every 8 hours for 5 days.\n   - Moderate poisoning (blood lead 45–69 µg/dL): Succimer alone.\n   - Mild poisoning (blood lead 20–44 µg/dL): Remove from exposure; monitor.\n3. Supportive care: Hydration, correction of electrolyte imbalances (e.g., hypocalcemia), and management of seizures (benzodiazepines if needed).\n4. Monitoring:\n   - Daily blood lead levels until stable.\n   - Hemoglobin, reticulocyte count, and peripheral smear for anemia.\n   - Renal function (serum creatinine, electrolytes) and hepatic enzymes.\n   - Neurological assessment (cognitive function, peripheral neuropathy).\n\nc) Long-term complications and management:\n- Neurological: Chronic lead exposure can cause peripheral neuropathy (motor > sensory), cognitive impairment, and chronic encephalopathy. Management includes physical therapy, occupational therapy, and cognitive rehabilitation. Chelation may not reverse established deficits.\n- Renal: Lead nephropathy presents as chronic kidney disease with proximal tubular dysfunction (glycosuria, aminoaciduria, phosphaturia). Management includes blood pressure control (ACE inhibitors/ARBs), avoidance of further exposure, and monitoring for progression.\n- Hematological: Persistent microcytic anemia may require iron supplementation and avoidance of further lead exposure.\n- Reproductive: Lead crosses the placenta and can cause miscarriage, preterm birth, or developmental delays. Management includes preconception counseling, chelation if necessary (avoid BAL in pregnancy), and monitoring.\n- Cardiovascular: Chronic lead exposure is associated with hypertension and increased cardiovascular risk. Management includes lifestyle modifications, antihypertensives (e.g., ACE inhibitors), and monitoring.\n- Prevention: Primary prevention through workplace safety measures (respirators, ventilation), secondary prevention via regular blood lead monitoring in high-risk populations, and tertiary prevention via chelation and supportive care."
+            },
+            {
+              "stem": "A 25-year-old woman is brought to the emergency department after ingesting 50 paracetamol 500 mg tablets 6 hours ago. She is nauseated but otherwise asymptomatic. Her serum paracetamol level is 300 mg/L, and her liver function tests are normal.\n\na) Explain the toxicokinetics of paracetamol, including its metabolism and the role of glutathione. (5 marks)\n\nb) Outline the management of this patient, including the rationale for N-acetylcysteine (NAC) therapy and its dosing regimen. (5 marks)\n\nc) Discuss the criteria for liver transplantation in paracetamol-induced acute liver failure and the post-transplant considerations. (5 marks)",
+              "modelAnswer": "a) Toxicokinetics of paracetamol:\n- Absorption: Rapidly absorbed from the gastrointestinal tract, with peak plasma levels within 1–2 hours in therapeutic doses. In overdose, absorption may be delayed due to gastrointestinal stasis.\n- Distribution: Paracetamol is widely distributed into most tissues, including the liver, where it undergoes metabolism. Protein binding is low (~10–25%).\n- Metabolism: Primarily hepatic via three pathways:\n  1. Glucuronidation (40–60%): Conjugation with glucuronic acid to form non-toxic metabolites excreted in urine.\n  2. Sulfation (20–30%): Conjugation with sulfate to form non-toxic metabolites.\n  3. Cytochrome P450 2E1 (5–10%): Oxidation to N-acetyl-p-benzoquinone imine (NAPQI), a toxic metabolite.\n- Role of glutathione: In therapeutic doses, NAPQI is detoxified by conjugation with glutathione, forming a non-toxic mercapturic acid. In overdose, glutathione stores are depleted, allowing NAPQI to bind cellular proteins (e.g., mitochondrial proteins), leading to hepatocellular necrosis.\n- Elimination: Paracetamol has a half-life of 1–4 hours in therapeutic doses but may be prolonged in overdose due to saturation of metabolic pathways.\n\nb) Management of paracetamol overdose:\n- Risk assessment: Use the Rumack-Matthew nomogram to determine the risk of hepatotoxicity based on serum paracetamol level and time since ingestion. A level of 300 mg/L at 6 hours is above the treatment line, indicating high risk.\n- N-acetylcysteine (NAC) therapy:\n  - Rationale: NAC replenishes glutathione stores, providing sulfhydryl groups to detoxify NAPQI. It also has antioxidant and anti-inflammatory effects.\n  - Dosing regimen (IV):\n    - Loading dose: 150 mg/kg in 200 mL 5% dextrose over 15 minutes.\n    - Second dose: 50 mg/kg in 500 mL 5% dextrose over 4 hours.\n    - Third dose: 100 mg/kg in 1000 mL 5% dextrose over 16 hours.\n    - Total dose: 300 mg/kg over 21 hours.\n  - Duration: Continue NAC until liver function tests normalize and paracetamol level is undetectable.\n- Monitoring:\n  - Serum paracetamol levels: Repeat at 4 and 8 hours post-ingestion to confirm declining levels.\n  - Liver function tests (ALT, AST, bilirubin, INR): Monitor for hepatocellular injury.\n  - Renal function: Monitor for acute kidney injury (paracetamol can cause renal tubular necrosis).\n  - Coagulation profile: INR >1.5 indicates severe liver injury.\n\nc) Criteria for liver transplantation and post-transplant considerations:\n- King’s College Hospital criteria for paracetamol-induced acute liver failure:\n  - Arterial pH <7.3 (after fluid resuscitation) OR\n  - Grade III–IV encephalopathy AND prothrombin time >100 seconds (INR >6.5) AND serum creatinine >3.4 mg/dL.\n- Other poor prognostic factors: Rapidly rising INR, severe lactic acidosis, or persistent oliguria.\n- Post-transplant considerations:\n  - Immunosuppression: Typically triple therapy (calcineurin inhibitor + antiproliferative agent + corticosteroids). Monitor for infections and drug interactions.\n  - Graft function: Monitor liver enzymes, bilirubin, and coagulation profile.\n  - Complications: Rejection (acute or chronic), infection (bacterial, viral, fungal), renal dysfunction (due to calcineurin inhibitors), and metabolic complications (e.g., diabetes, hypertension).\n  - Long-term outcomes: 1-year survival >85%; 5-year survival ~75%. Requires lifelong follow-up and adherence to immunosuppression."
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Toxicology & Drug Discovery",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 45-year-old man presents with acute confusion, abdominal pain, and a metallic taste in the mouth. Blood tests reveal a haemoglobin of 10.2 g/dL with basophilic stippling on the peripheral smear. Which of the following chelating agents is most appropriate for initial management of suspected lead poisoning?",
+              "options": [
+                "a) Deferoxamine",
+                "b) Dimercaprol (BAL)",
+                "c) Succimer (DMSA)",
+                "d) Penicillamine"
+              ],
+              "answer": "b) Dimercaprol (BAL)",
+              "explanation": "Dimercaprol is the preferred initial chelator for severe lead poisoning, particularly in encephalopathy or high blood lead levels, due to its rapid onset and ability to cross the blood-brain barrier."
+            },
+            {
+              "stem": "A 28-year-old female is brought to the ED with nausea, vomiting, and severe abdominal cramps 6 hours after ingesting an unknown quantity of a household cleaning product. She is diaphoretic, and her pupils are constricted. Which of the following antidotes should be administered first?",
+              "options": [
+                "a) Atropine",
+                "b) Pralidoxime",
+                "c) N-acetylcysteine",
+                "d) Flumazenil"
+              ],
+              "answer": "a) Atropine",
+              "explanation": "The clinical presentation suggests organophosphate poisoning (cholinergic crisis), where atropine is the first-line antidote to counteract muscarinic effects."
+            },
+            {
+              "stem": "A 35-year-old male is admitted with altered mental status, metabolic acidosis, and visual disturbances after ingesting a large amount of an unknown substance. Blood gas analysis shows a pH of 7.25 and an anion gap of 28. Which of the following substances is most likely responsible?",
+              "options": [
+                "a) Paracetamol",
+                "b) Methanol",
+                "c) Ethylene glycol",
+                "d) Iron"
+              ],
+              "answer": "b) Methanol",
+              "explanation": "Methanol poisoning classically presents with altered mental status, metabolic acidosis, and visual disturbances due to formic acid accumulation."
+            },
+            {
+              "stem": "A 50-year-old man is found unresponsive with shallow respirations and pinpoint pupils. His family reports he was depressed and had access to a bottle of tablets. Which of the following is the most appropriate initial step in management?",
+              "options": [
+                "a) Administer activated charcoal",
+                "b) Administer naloxone",
+                "c) Perform gastric lavage",
+                "d) Administer flumazenil"
+              ],
+              "answer": "b) Administer naloxone",
+              "explanation": "The presentation is consistent with opioid overdose, and naloxone is the specific antidote to reverse respiratory depression."
+            },
+            {
+              "stem": "A 22-year-old female presents with nausea, vomiting, and right upper quadrant pain 24 hours after ingesting 30 paracetamol 500 mg tablets. Her serum paracetamol level is 200 mcg/mL at 4 hours post-ingestion. Which of the following antidotes should be administered?",
+              "options": [
+                "a) Activated charcoal",
+                "b) N-acetylcysteine",
+                "c) Methionine",
+                "d) Silymarin"
+              ],
+              "answer": "b) N-acetylcysteine",
+              "explanation": "N-acetylcysteine is the antidote for paracetamol poisoning, replenishing glutathione stores to prevent NAPQI-induced hepatotoxicity."
+            },
+            {
+              "stem": "A 60-year-old man with a history of hypertension is brought to the ED after ingesting a large quantity of his antihypertensive medication. He is hypotensive and bradycardic. Which of the following antidotes is most appropriate?",
+              "options": [
+                "a) Atropine",
+                "b) Glucagon",
+                "c) Calcium gluconate",
+                "d) Digoxin immune fab"
+              ],
+              "answer": "c) Calcium gluconate",
+              "explanation": "Calcium gluconate is the antidote for calcium channel blocker overdose, which can present with bradycardia and hypotension."
+            },
+            {
+              "stem": "A 30-year-old female presents with confusion, tremors, and a fruity odour on her breath. Her blood glucose is 450 mg/dL, and serum ketones are positive. Which of the following antidotes should be administered?",
+              "options": [
+                "a) Insulin",
+                "b) Glucagon",
+                "c) Sodium bicarbonate",
+                "d) Thiamine"
+              ],
+              "answer": "a) Insulin",
+              "explanation": "The presentation is consistent with diabetic ketoacidosis, and insulin is the primary treatment to reverse hyperglycaemia and ketosis."
+            },
+            {
+              "stem": "A 40-year-old male is admitted with cyanosis unresponsive to oxygen, headache, and dizziness after working in a poorly ventilated garage. Which of the following antidotes should be administered immediately?",
+              "options": [
+                "a) Sodium nitrite",
+                "b) Hydroxocobalamin",
+                "c) Methylene blue",
+                "d) N-acetylcysteine"
+              ],
+              "answer": "b) Hydroxocobalamin",
+              "explanation": "Hydroxocobalamin is the preferred antidote for cyanide poisoning, rapidly binding cyanide to form cyanocobalamin."
+            },
+            {
+              "stem": "A 25-year-old female presents with nausea, vomiting, and diarrhoea after ingesting an unknown quantity of iron tablets. Her serum iron level is 500 mcg/dL. Which of the following antidotes should be administered?",
+              "options": [
+                "a) Deferoxamine",
+                "b) Dimercaprol",
+                "c) Succimer",
+                "d) Penicillamine"
+              ],
+              "answer": "a) Deferoxamine",
+              "explanation": "Deferoxamine is the specific chelator for iron poisoning, binding free iron to form ferrioxamine, which is excreted renally."
+            },
+            {
+              "stem": "A 55-year-old man is found unconscious with a bottle of ethylene glycol nearby. He has a severe metabolic acidosis with an anion gap of 30. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Ethanol infusion",
+                "b) Fomepizole",
+                "c) Sodium bicarbonate",
+                "d) Haemodialysis"
+              ],
+              "answer": "b) Fomepizole",
+              "explanation": "Fomepizole is the preferred antidote for ethylene glycol poisoning, inhibiting alcohol dehydrogenase to prevent toxic metabolite formation."
+            },
+            {
+              "stem": "A 32-year-old female presents with acute onset of flushing, urticaria, and bronchospasm after receiving a dose of penicillin. Which of the following is the most appropriate immediate treatment?",
+              "options": [
+                "a) Adrenaline (epinephrine)",
+                "b) Diphenhydramine",
+                "c) Hydrocortisone",
+                "d) Ranitidine"
+              ],
+              "answer": "a) Adrenaline (epinephrine)",
+              "explanation": "Adrenaline is the first-line treatment for anaphylaxis, rapidly reversing bronchospasm, hypotension, and urticaria."
+            },
+            {
+              "stem": "A 45-year-old male presents with acute renal failure and a serum potassium of 7.2 mEq/L after ingesting a large quantity of a potassium-sparing diuretic. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Calcium gluconate",
+                "b) Insulin and dextrose",
+                "c) Sodium polystyrene sulfonate",
+                "d) Haemodialysis"
+              ],
+              "answer": "d) Haemodialysis",
+              "explanation": "Haemodialysis is the definitive treatment for severe hyperkalaemia unresponsive to medical therapy, particularly in renal failure."
+            },
+            {
+              "stem": "A 28-year-old female is admitted with agitation, tachycardia, and hypertension after ingesting a large quantity of a stimulant drug. Which of the following antidotes should be administered?",
+              "options": [
+                "a) Benzodiazepines",
+                "b) Beta-blockers",
+                "c) Naloxone",
+                "d) Flumazenil"
+              ],
+              "answer": "a) Benzodiazepines",
+              "explanation": "Benzodiazepines are the first-line treatment for stimulant-induced agitation and hypertension, providing sedation and cardiovascular stability."
+            },
+            {
+              "stem": "A 50-year-old man presents with confusion, ataxia, and nystagmus after ingesting a large quantity of an unknown substance. His arterial blood gas shows a pH of 7.30 and a bicarbonate of 15 mEq/L. Which of the following substances is most likely responsible?",
+              "options": [
+                "a) Ethanol",
+                "b) Methanol",
+                "c) Ethylene glycol",
+                "d) Salicylates"
+              ],
+              "answer": "d) Salicylates",
+              "explanation": "Salicylate poisoning classically presents with metabolic acidosis, confusion, and tinnitus, often with a mixed respiratory alkalosis."
+            },
+            {
+              "stem": "A 35-year-old female presents with acute onset of chest pain and palpitations after ingesting a large quantity of a tricyclic antidepressant. Her ECG shows a widened QRS complex. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Sodium bicarbonate",
+                "b) Calcium gluconate",
+                "c) Magnesium sulfate",
+                "d) Lidocaine"
+              ],
+              "answer": "a) Sodium bicarbonate",
+              "explanation": "Sodium bicarbonate is the treatment for tricyclic antidepressant-induced cardiotoxicity, reversing sodium channel blockade and widening QRS."
+            },
+            {
+              "stem": "A 40-year-old male presents with acute onset of seizures after ingesting a large quantity of isoniazid. Which of the following antidotes should be administered?",
+              "options": [
+                "a) Pyridoxine (vitamin B6)",
+                "b) Thiamine",
+                "c) Folic acid",
+                "d) N-acetylcysteine"
+              ],
+              "answer": "a) Pyridoxine (vitamin B6)",
+              "explanation": "Pyridoxine is the specific antidote for isoniazid-induced seizures, replenishing depleted GABA stores."
+            },
+            {
+              "stem": "A 25-year-old female presents with acute onset of severe hypertension and headache after ingesting a large quantity of a monoamine oxidase inhibitor (MAOI) with tyramine-rich foods. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Phentolamine",
+                "b) Nitroprusside",
+                "c) Labetalol",
+                "d) Esmolol"
+              ],
+              "answer": "a) Phentolamine",
+              "explanation": "Phentolamine is a non-selective alpha-blocker used to treat hypertensive crises induced by MAOI-tyramine interactions."
+            },
+            {
+              "stem": "A 55-year-old man presents with acute onset of severe hypotension and bradycardia after ingesting a large quantity of a beta-blocker. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Glucagon",
+                "b) Atropine",
+                "c) Dopamine",
+                "d) Adrenaline (epinephrine)"
+              ],
+              "answer": "a) Glucagon",
+              "explanation": "Glucagon is the antidote for beta-blocker overdose, increasing intracellular cAMP and improving cardiac contractility."
+            },
+            {
+              "stem": "A 30-year-old female presents with acute onset of severe hypertension and tachycardia after ingesting a large quantity of cocaine. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Benzodiazepines",
+                "b) Beta-blockers",
+                "c) Calcium channel blockers",
+                "d) Nitroglycerin"
+              ],
+              "answer": "a) Benzodiazepines",
+              "explanation": "Benzodiazepines are the first-line treatment for cocaine-induced hypertension and tachycardia, providing sedation and reducing sympathetic outflow."
+            },
+            {
+              "stem": "A 45-year-old male presents with acute onset of severe hypotension and flushing after ingesting a large quantity of sildenafil with nitrates. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Methylene blue",
+                "b) Adrenaline (epinephrine)",
+                "c) Dopamine",
+                "d) Norepinephrine"
+              ],
+              "answer": "a) Methylene blue",
+              "explanation": "Methylene blue is the antidote for nitrate-induced methemoglobinemia, reversing the oxidation of haemoglobin to methemoglobin."
+            },
+            {
+              "stem": "A 28-year-old female presents with acute onset of severe hyperthermia, muscle rigidity, and altered mental status after receiving a dose of haloperidol. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Dantrolene",
+                "b) Bromocriptine",
+                "c) Amantadine",
+                "d) Lorazepam"
+              ],
+              "answer": "a) Dantrolene",
+              "explanation": "Dantrolene is the antidote for neuroleptic malignant syndrome, a life-threatening complication of antipsychotic drugs."
+            },
+            {
+              "stem": "A 50-year-old man presents with acute onset of severe hypotension and bradycardia after ingesting a large quantity of a calcium channel blocker. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Calcium gluconate",
+                "b) Glucagon",
+                "c) High-dose insulin",
+                "d) Haemodialysis"
+              ],
+              "answer": "a) Calcium gluconate",
+              "explanation": "Calcium gluconate is the first-line treatment for calcium channel blocker overdose, increasing intracellular calcium and improving cardiac contractility."
+            },
+            {
+              "stem": "A 35-year-old female presents with acute onset of severe hypertension and headache after ingesting a large quantity of a sympathomimetic drug. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Phentolamine",
+                "b) Labetalol",
+                "c) Nitroprusside",
+                "d) Esmolol"
+              ],
+              "answer": "a) Phentolamine",
+              "explanation": "Phentolamine is a non-selective alpha-blocker used to treat severe hypertension induced by sympathomimetic drugs."
+            },
+            {
+              "stem": "A 40-year-old male presents with acute onset of severe hypotension and tachycardia after ingesting a large quantity of a tricyclic antidepressant. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Sodium bicarbonate",
+                "b) Calcium gluconate",
+                "c) Magnesium sulfate",
+                "d) Lidocaine"
+              ],
+              "answer": "a) Sodium bicarbonate",
+              "explanation": "Sodium bicarbonate is the treatment for tricyclic antidepressant-induced cardiotoxicity, reversing sodium channel blockade and improving hypotension."
+            },
+            {
+              "stem": "A 25-year-old female presents with acute onset of severe agitation and hallucinations after ingesting a large quantity of a hallucinogenic drug. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Benzodiazepines",
+                "b) Haloperidol",
+                "c) Lorazepam",
+                "d) Diazepam"
+              ],
+              "answer": "a) Benzodiazepines",
+              "explanation": "Benzodiazepines are the first-line treatment for hallucinogen-induced agitation, providing sedation and reducing sympathetic outflow."
+            },
+            {
+              "stem": "A 55-year-old man presents with acute onset of severe hypotension and bradycardia after ingesting a large quantity of a digoxin-containing plant. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Digoxin immune fab",
+                "b) Atropine",
+                "c) Calcium gluconate",
+                "d) Magnesium sulfate"
+              ],
+              "answer": "a) Digoxin immune fab",
+              "explanation": "Digoxin immune fab is the specific antidote for digoxin toxicity, binding free digoxin and reversing its toxic effects."
+            },
+            {
+              "stem": "A 30-year-old female presents with acute onset of severe hypertension and headache after ingesting a large quantity of a monoamine oxidase inhibitor (MAOI) with tyramine-rich foods. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Phentolamine",
+                "b) Nitroprusside",
+                "c) Labetalol",
+                "d) Esmolol"
+              ],
+              "answer": "a) Phentolamine",
+              "explanation": "Phentolamine is a non-selective alpha-blocker used to treat hypertensive crises induced by MAOI-tyramine interactions."
+            },
+            {
+              "stem": "A 45-year-old male presents with acute onset of severe hypotension and tachycardia after ingesting a large quantity of a beta-blocker. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Glucagon",
+                "b) Atropine",
+                "c) Dopamine",
+                "d) Adrenaline (epinephrine)"
+              ],
+              "answer": "a) Glucagon",
+              "explanation": "Glucagon is the antidote for beta-blocker overdose, increasing intracellular cAMP and improving cardiac contractility."
+            },
+            {
+              "stem": "A 28-year-old female presents with acute onset of severe hyperthermia, muscle rigidity, and altered mental status after receiving a dose of haloperidol. Which of the following treatments is most appropriate?",
+              "options": [
+                "a) Dantrolene",
+                "b) Bromocriptine",
+                "c) Amantadine",
+                "d) Lorazepam"
+              ],
+              "answer": "a) Dantrolene",
+              "explanation": "Dantrolene is the antidote for neuroleptic malignant syndrome, a life-threatening complication of antipsychotic drugs."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 35-year-old male presents to the emergency department with a 2-day history of abdominal pain, constipation, and fatigue. He works in a battery recycling plant. His blood lead level is 80 mcg/dL. a) List the key clinical features of chronic lead poisoning. b) Outline the mechanism of action of dimercaprol in lead toxicity. c) What is the role of succimer in this patient’s management?",
+              "modelAnswer": "a) Key clinical features of chronic lead poisoning: abdominal pain (lead colic), constipation, fatigue, anaemia (microcytic, hypochromic with basophilic stippling), peripheral neuropathy (wrist/foot drop), and cognitive impairment. b) Mechanism of action of dimercaprol: Forms a stable, water-soluble complex with lead, facilitating renal excretion. It crosses the blood-brain barrier, making it suitable for severe poisoning or encephalopathy. c) Role of succimer: Used for maintenance therapy after initial dimercaprol to further reduce lead burden, particularly in children or mild-moderate cases. It is orally bioavailable and less toxic than dimercaprol."
+            },
+            {
+              "stem": "A 22-year-old female is brought to the emergency department with confusion, excessive salivation, and muscle fasciculations 2 hours after ingesting an unknown liquid from a garden shed. a) What is the most likely diagnosis? b) Outline the ABCDE approach to stabilise this patient. c) What antidotes are indicated, and in what order?",
+              "modelAnswer": "a) Most likely diagnosis: Organophosphate poisoning (cholinergic crisis). b) ABCDE approach: A (Airway) – secure airway if compromised; B (Breathing) – provide oxygen and ventilatory support if needed; C (Circulation) – assess and support haemodynamics; D (Disability) – assess neurological status; E (Exposure) – decontaminate skin/clothing. c) Antidotes: 1) Atropine (immediate) to reverse muscarinic effects; 2) Pralidoxime (within hours) to reactivate acetylcholinesterase; 3) Diazepam for seizures or severe agitation."
+            },
+            {
+              "stem": "A 40-year-old male presents with nausea, vomiting, and right upper quadrant pain 12 hours after ingesting 40 paracetamol 500 mg tablets. His serum paracetamol level is 250 mcg/mL at 4 hours post-ingestion. a) Explain the toxicokinetics of paracetamol overdose. b) What is the mechanism of N-acetylcysteine in this context? c) Outline the monitoring required during N-acetylcysteine therapy.",
+              "modelAnswer": "a) Toxicokinetics: Paracetamol is metabolised to NAPQI via CYP2E1; glutathione depletion leads to NAPQI binding to hepatic proteins, causing hepatotoxicity. Peak levels occur 4 hours post-ingestion; toxicity risk increases with levels >150 mcg/mL at 4 hours. b) Mechanism of N-acetylcysteine: Replenishes glutathione stores, allowing conjugation of NAPQI to non-toxic metabolites. c) Monitoring: Serum paracetamol levels at 4 and 12 hours; liver function tests (ALT, AST, bilirubin, INR); renal function; clinical signs of hepatotoxicity (jaundice, encephalopathy)."
+            },
+            {
+              "stem": "A 55-year-old man is admitted with severe metabolic acidosis, confusion, and a fruity odour on his breath after ingesting an unknown substance. a) What is the most likely diagnosis? b) Outline the role of fomepizole in management. c) What are the indications for haemodialysis in this scenario?",
+              "modelAnswer": "a) Most likely diagnosis: Methanol poisoning. b) Role of fomepizole: Inhibits alcohol dehydrogenase, preventing metabolism of methanol to toxic formic acid. Administered as a loading dose followed by maintenance dosing. c) Indications for haemodialysis: Severe metabolic acidosis (pH <7.25), visual disturbances, renal impairment, methanol level >50 mg/dL, or failure to respond to fomepizole."
+            },
+            {
+              "stem": "A 30-year-old female presents with nausea, vomiting, and diarrhoea 6 hours after ingesting an unknown quantity of iron tablets. Her serum iron level is 450 mcg/dL. a) What are the stages of iron poisoning? b) Outline the mechanism of action of deferoxamine. c) What are the key monitoring parameters during deferoxamine therapy?",
+              "modelAnswer": "a) Stages of iron poisoning: 1) 0–6 hours: GI symptoms (nausea, vomiting, diarrhoea); 2) 6–24 hours: latent phase with apparent recovery; 3) 12–48 hours: systemic toxicity (shock, metabolic acidosis, hepatic failure); 4) 2–6 weeks: delayed sequelae (GI strictures). b) Mechanism of deferoxamine: Binds free iron to form ferrioxamine, a water-soluble complex excreted renally. c) Monitoring: Serum iron levels, renal function, urine colour (ferrioxamine turns urine pink/red), signs of iron toxicity (hypotension, metabolic acidosis), and infusion site reactions."
+            },
+            {
+              "stem": "A 25-year-old male presents with cyanosis unresponsive to oxygen, headache, and dizziness after working in a poorly ventilated garage. a) What is the most likely diagnosis? b) Outline the role of hydroxocobalamin in management. c) What are the alternative antidotes, and when are they used?",
+              "modelAnswer": "a) Most likely diagnosis: Cyanide poisoning. b) Role of hydroxocobalamin: Binds cyanide to form cyanocobalamin (vitamin B12), which is excreted renally. Administered as a rapid IV infusion. c) Alternative antidotes: Sodium nitrite (induces methaemoglobinemia to bind cyanide) and sodium thiosulfate (provides sulfur for rhodanese enzyme to convert cyanide to thiocyanate). Used when hydroxocobalamin is unavailable or in severe cases."
+            },
+            {
+              "stem": "A 45-year-old female presents with confusion, ataxia, and nystagmus after ingesting a large quantity of an unknown substance. Her arterial blood gas shows a pH of 7.30 and bicarbonate of 15 mEq/L. a) What is the most likely diagnosis? b) Outline the role of sodium bicarbonate in management. c) What are the key monitoring parameters?",
+              "modelAnswer": "a) Most likely diagnosis: Salicylate poisoning. b) Role of sodium bicarbonate: Corrects metabolic acidosis and enhances renal elimination of salicylates by ion trapping. Administered as an IV infusion to maintain urine pH >7.5. c) Monitoring: Serum salicylate levels, arterial blood gas, renal function, electrolytes (potassium), and signs of pulmonary oedema or cerebral oedema."
+            },
+            {
+              "stem": "A 35-year-old male presents with acute onset of severe hypotension and bradycardia after ingesting a large quantity of a calcium channel blocker. a) What is the mechanism of toxicity? b) Outline the management approach, including antidotes. c) What are the key monitoring parameters?",
+              "modelAnswer": "a) Mechanism of toxicity: Calcium channel blockers inhibit L-type calcium channels, reducing cardiac contractility, conduction, and vascular tone, leading to hypotension and bradycardia. b) Management: 1) ABCDE stabilisation; 2) Calcium gluconate (10% solution, 10–20 mL IV) to transiently improve contractility; 3) High-dose insulin (1 U/kg bolus followed by 0.5–1 U/kg/h) with dextrose to enhance cardiac metabolism; 4) Vasopressors (e.g., norepinephrine) if refractory hypotension. c) Monitoring: ECG, blood pressure, heart rate, glucose levels, electrolytes, and signs of pulmonary oedema."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 28-year-old female presents to the emergency department with a 1-day history of nausea, vomiting, and severe abdominal pain. She reports ingesting approximately 50 paracetamol 500 mg tablets 12 hours ago in a suicide attempt. Her serum paracetamol level is 300 mcg/mL at 4 hours post-ingestion. a) Describe the pathophysiology of paracetamol-induced hepatotoxicity. b) Outline the step-by-step management of this patient, including antidotes, monitoring, and supportive care. c) What are the long-term complications of severe paracetamol poisoning?",
+              "modelAnswer": "a) Pathophysiology: Paracetamol is metabolised to NAPQI via CYP2E1. At therapeutic doses, NAPQI is detoxified by glutathione. In overdose, glutathione is depleted, leading to NAPQI binding to hepatic proteins, causing centrilobular necrosis and fulminant hepatic failure. b) Management: 1) ABCDE stabilisation; 2) Activated charcoal (if within 1 hour of ingestion); 3) N-acetylcysteine (loading dose 150 mg/kg over 15 min, followed by 50 mg/kg over 4 hours, then 100 mg/kg over 16 hours); 4) Monitor paracetamol levels, LFTs, INR, renal function, and glucose; 5) Supportive care (IV fluids, antiemetics, correction of coagulopathy with vitamin K or FFP if needed); 6) Consider liver transplant if fulminant hepatic failure develops. c) Long-term complications: Hepatic fibrosis/cirrhosis, chronic liver disease, renal failure, or death if severe."
+            },
+            {
+              "stem": "A 40-year-old male presents to the emergency department with confusion, excessive salivation, muscle fasciculations, and severe bronchospasm 2 hours after spraying an unknown pesticide in his garden. His vital signs are: BP 85/50 mmHg, HR 120 bpm, RR 30/min, SpO2 88% on room air. a) What is the most likely diagnosis, and what is the mechanism of toxicity? b) Outline the step-by-step management of this patient, including antidotes, monitoring, and supportive care. c) What are the key principles of decontamination in this scenario?",
+              "modelAnswer": "a) Diagnosis and mechanism: Organophosphate poisoning (cholinergic crisis). Mechanism: Organophosphates inhibit acetylcholinesterase, leading to accumulation of acetylcholine and overstimulation of muscarinic and nicotinic receptors. b) Management: 1) ABCDE stabilisation (secure airway, oxygen, ventilatory support); 2) Atropine (2–5 mg IV, repeated every 5–10 min until muscarinic symptoms resolve); 3) Pralidoxime (1–2 g IV over 30 min, followed by infusion if needed) to reactivate acetylcholinesterase; 4) Benzodiazepines (e.g., diazepam) for seizures or severe agitation; 5) Monitor vital signs, oxygen saturation, and signs of respiratory failure; 6) Supportive care (IV fluids, correction of metabolic acidosis). c) Decontamination: Remove contaminated clothing; wash skin with soap and water; avoid emesis (risk of aspiration); consider gastric lavage if ingestion occurred within 1 hour."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Toxicology & Drug Discovery",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 45-year-old farmer presents with acute onset of salivation, lacrimation, urinary incontinence, and muscle fasciculations after accidental exposure to an organophosphate pesticide. Which of the following antidotes is MOST appropriate to administer first?",
+              "options": [
+                "a) Atropine sulfate",
+                "b) Pralidoxime chloride",
+                "c) Sodium bicarbonate",
+                "d) N-acetylcysteine"
+              ],
+              "answer": "a) Atropine sulfate",
+              "explanation": "Atropine is the first-line antidote for organophosphate poisoning to counteract muscarinic symptoms by competitively inhibiting acetylcholine at muscarinic receptors."
+            },
+            {
+              "stem": "A 6-year-old child is brought to the emergency department with nausea, vomiting, and abdominal pain after ingesting an unknown number of adult iron tablets. Serum iron concentration is 500 mcg/dL. Which of the following is the MOST appropriate initial management?",
+              "options": [
+                "a) Activated charcoal",
+                "b) Intravenous deferoxamine",
+                "c) Whole bowel irrigation with polyethylene glycol",
+                "d) Gastric lavage"
+              ],
+              "answer": "b) Intravenous deferoxamine",
+              "explanation": "Deferoxamine is the specific antidote for iron poisoning and should be administered intravenously in severe cases with high serum iron levels."
+            },
+            {
+              "stem": "A 28-year-old male is admitted with confusion, visual disturbances, and metabolic acidosis after ingesting a large quantity of an unknown substance. Blood gas analysis shows pH 7.25, bicarbonate 12 mmol/L, and anion gap 25. Which of the following substances is MOST likely responsible?",
+              "options": [
+                "a) Methanol",
+                "b) Ethanol",
+                "c) Isopropanol",
+                "d) Acetaminophen"
+              ],
+              "answer": "a) Methanol",
+              "explanation": "Methanol poisoning presents with metabolic acidosis, visual disturbances (blindness), and confusion due to formic acid accumulation."
+            },
+            {
+              "stem": "A 30-year-old female presents with acute onset of severe headache, dizziness, and shortness of breath after inhaling fumes from a gold refining process. Which of the following heavy metals is MOST likely responsible?",
+              "options": [
+                "a) Lead",
+                "b) Mercury",
+                "c) Arsenic",
+                "d) Cadmium"
+              ],
+              "answer": "b) Mercury",
+              "explanation": "Mercury vapor inhalation causes acute respiratory and neurological symptoms, including headache, dizziness, and shortness of breath."
+            },
+            {
+              "stem": "A 50-year-old male with a history of chronic alcohol use disorder is found unconscious with pinpoint pupils and respiratory depression. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) Naloxone",
+                "b) Flumazenil",
+                "c) Physostigmine",
+                "d) Atropine"
+              ],
+              "answer": "a) Naloxone",
+              "explanation": "Naloxone is the antidote for opioid toxicity, which presents with pinpoint pupils, respiratory depression, and unconsciousness."
+            },
+            {
+              "stem": "A 35-year-old male presents with acute onset of nausea, vomiting, and severe abdominal pain after ingesting a traditional herbal remedy. Laboratory tests reveal hemolysis and basophilic stippling on peripheral smear. Which of the following heavy metals is MOST likely responsible?",
+              "options": [
+                "a) Lead",
+                "b) Mercury",
+                "c) Arsenic",
+                "d) Cadmium"
+              ],
+              "answer": "a) Lead",
+              "explanation": "Lead poisoning causes abdominal pain (lead colic), hemolysis, and basophilic stippling due to inhibition of delta-aminolevulinic acid dehydratase."
+            },
+            {
+              "stem": "A 22-year-old female is brought to the emergency department with confusion, tachycardia, and hyperthermia after ingesting a large dose of a stimulant drug. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) Benzodiazepines",
+                "b) Physostigmine",
+                "c) N-acetylcysteine",
+                "d) Sodium bicarbonate"
+              ],
+              "answer": "a) Benzodiazepines",
+              "explanation": "Benzodiazepines are used to control agitation, tachycardia, and hyperthermia in stimulant toxicity."
+            },
+            {
+              "stem": "A 40-year-old male presents with acute onset of severe chest pain, hypotension, and metabolic acidosis after ingesting a cyanide-containing compound. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) Sodium nitrite",
+                "b) Hydroxocobalamin",
+                "c) Sodium thiosulfate",
+                "d) Methylene blue"
+              ],
+              "answer": "b) Hydroxocobalamin",
+              "explanation": "Hydroxocobalamin is the preferred antidote for cyanide poisoning due to its rapid onset and effectiveness in binding cyanide."
+            },
+            {
+              "stem": "A 55-year-old male with a history of chronic obstructive pulmonary disease (COPD) presents with acute respiratory failure after inhaling smoke from a house fire. Which of the following toxicants is MOST likely responsible for his condition?",
+              "options": [
+                "a) Carbon monoxide",
+                "b) Cyanide",
+                "c) Hydrogen sulfide",
+                "d) Nitrogen dioxide"
+              ],
+              "answer": "a) Carbon monoxide",
+              "explanation": "Carbon monoxide poisoning from smoke inhalation causes hypoxia and respiratory failure due to its high affinity for hemoglobin."
+            },
+            {
+              "stem": "A 25-year-old female presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of an unknown substance. Blood gas analysis reveals pH 7.30, bicarbonate 18 mmol/L, and anion gap 20. Which of the following substances is MOST likely responsible?",
+              "options": [
+                "a) Ethylene glycol",
+                "b) Methanol",
+                "c) Isopropanol",
+                "d) Acetaminophen"
+              ],
+              "answer": "a) Ethylene glycol",
+              "explanation": "Ethylene glycol poisoning causes metabolic acidosis with an elevated anion gap, severe headache, nausea, and confusion."
+            },
+            {
+              "stem": "A 30-year-old male presents with acute onset of severe abdominal pain, vomiting, and diarrhea after ingesting a traditional remedy containing arsenic. Which of the following chelating agents is MOST appropriate for initial management?",
+              "options": [
+                "a) Dimercaprol (BAL)",
+                "b) Succimer (DMSA)",
+                "c) Penicillamine",
+                "d) EDTA"
+              ],
+              "answer": "a) Dimercaprol (BAL)",
+              "explanation": "Dimercaprol (BAL) is the preferred initial chelating agent for acute arsenic poisoning due to its rapid onset of action."
+            },
+            {
+              "stem": "A 45-year-old male presents with acute onset of severe headache, dizziness, and confusion after ingesting a large quantity of paracetamol (acetaminophen). Serum paracetamol level is 300 mcg/mL at 4 hours post-ingestion. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) N-acetylcysteine",
+                "b) Activated charcoal",
+                "c) Sodium bicarbonate",
+                "d) Flumazenil"
+              ],
+              "answer": "a) N-acetylcysteine",
+              "explanation": "N-acetylcysteine is the antidote for paracetamol poisoning and should be administered based on serum paracetamol levels and time since ingestion."
+            },
+            {
+              "stem": "A 50-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of methanol. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) Fomepizole",
+                "b) Ethanol",
+                "c) Sodium bicarbonate",
+                "d) N-acetylcysteine"
+              ],
+              "answer": "a) Fomepizole",
+              "explanation": "Fomepizole is the preferred antidote for methanol poisoning as it inhibits alcohol dehydrogenase, preventing the formation of toxic metabolites."
+            },
+            {
+              "stem": "A 35-year-old female presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of ethylene glycol. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) Fomepizole",
+                "b) Ethanol",
+                "c) Sodium bicarbonate",
+                "d) N-acetylcysteine"
+              ],
+              "answer": "a) Fomepizole",
+              "explanation": "Fomepizole is the preferred antidote for ethylene glycol poisoning as it inhibits alcohol dehydrogenase, preventing the formation of toxic metabolites."
+            },
+            {
+              "stem": "A 40-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of isopropanol. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) Supportive care only",
+                "b) Fomepizole",
+                "c) Ethanol",
+                "d) N-acetylcysteine"
+              ],
+              "answer": "a) Supportive care only",
+              "explanation": "Isopropanol toxicity typically requires only supportive care as its primary metabolite (acetone) is less toxic than metabolites of methanol or ethylene glycol."
+            },
+            {
+              "stem": "A 28-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of ethanol. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) Supportive care only",
+                "b) Fomepizole",
+                "c) Ethanol",
+                "d) N-acetylcysteine"
+              ],
+              "answer": "a) Supportive care only",
+              "explanation": "Ethanol toxicity typically requires only supportive care, including airway management and correction of metabolic disturbances."
+            },
+            {
+              "stem": "A 55-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of acetaminophen. Serum paracetamol level is 150 mcg/mL at 4 hours post-ingestion. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) N-acetylcysteine",
+                "b) Activated charcoal",
+                "c) Sodium bicarbonate",
+                "d) Flumazenil"
+              ],
+              "answer": "a) N-acetylcysteine",
+              "explanation": "N-acetylcysteine is the antidote for paracetamol poisoning and should be administered based on serum paracetamol levels and time since ingestion."
+            },
+            {
+              "stem": "A 30-year-old female presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing lead. Which of the following chelating agents is MOST appropriate for initial management?",
+              "options": [
+                "a) Succimer (DMSA)",
+                "b) Dimercaprol (BAL)",
+                "c) Penicillamine",
+                "d) EDTA"
+              ],
+              "answer": "a) Succimer (DMSA)",
+              "explanation": "Succimer (DMSA) is the preferred oral chelating agent for lead poisoning in children and adults due to its efficacy and lower toxicity."
+            },
+            {
+              "stem": "A 45-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing mercury. Which of the following chelating agents is MOST appropriate for initial management?",
+              "options": [
+                "a) Dimercaprol (BAL)",
+                "b) Succimer (DMSA)",
+                "c) Penicillamine",
+                "d) EDTA"
+              ],
+              "answer": "a) Dimercaprol (BAL)",
+              "explanation": "Dimercaprol (BAL) is the preferred initial chelating agent for acute mercury poisoning due to its rapid onset of action."
+            },
+            {
+              "stem": "A 35-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing arsenic. Which of the following chelating agents is MOST appropriate for initial management?",
+              "options": [
+                "a) Dimercaprol (BAL)",
+                "b) Succimer (DMSA)",
+                "c) Penicillamine",
+                "d) EDTA"
+              ],
+              "answer": "a) Dimercaprol (BAL)",
+              "explanation": "Dimercaprol (BAL) is the preferred initial chelating agent for acute arsenic poisoning due to its rapid onset of action."
+            },
+            {
+              "stem": "A 50-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing cadmium. Which of the following chelating agents is MOST appropriate for initial management?",
+              "options": [
+                "a) Succimer (DMSA)",
+                "b) Dimercaprol (BAL)",
+                "c) Penicillamine",
+                "d) EDTA"
+              ],
+              "answer": "a) Succimer (DMSA)",
+              "explanation": "Succimer (DMSA) is the preferred oral chelating agent for cadmium poisoning due to its efficacy and lower toxicity."
+            },
+            {
+              "stem": "A 25-year-old female presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing copper. Which of the following chelating agents is MOST appropriate for initial management?",
+              "options": [
+                "a) Penicillamine",
+                "b) Dimercaprol (BAL)",
+                "c) Succimer (DMSA)",
+                "d) EDTA"
+              ],
+              "answer": "a) Penicillamine",
+              "explanation": "Penicillamine is the preferred chelating agent for copper poisoning, particularly in Wilson's disease."
+            },
+            {
+              "stem": "A 40-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing iron. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) Deferoxamine",
+                "b) Activated charcoal",
+                "c) Sodium bicarbonate",
+                "d) N-acetylcysteine"
+              ],
+              "answer": "a) Deferoxamine",
+              "explanation": "Deferoxamine is the specific antidote for iron poisoning and should be administered intravenously in severe cases."
+            },
+            {
+              "stem": "A 30-year-old female presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing zinc. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) Supportive care only",
+                "b) Deferoxamine",
+                "c) Dimercaprol (BAL)",
+                "d) Succimer (DMSA)"
+              ],
+              "answer": "a) Supportive care only",
+              "explanation": "Zinc toxicity typically requires only supportive care as it does not have a specific antidote."
+            },
+            {
+              "stem": "A 55-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing selenium. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) Supportive care only",
+                "b) Deferoxamine",
+                "c) Dimercaprol (BAL)",
+                "d) Succimer (DMSA)"
+              ],
+              "answer": "a) Supportive care only",
+              "explanation": "Selenium toxicity typically requires only supportive care as it does not have a specific antidote."
+            },
+            {
+              "stem": "A 28-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing thallium. Which of the following chelating agents is MOST appropriate for initial management?",
+              "options": [
+                "a) Prussian blue",
+                "b) Dimercaprol (BAL)",
+                "c) Succimer (DMSA)",
+                "d) EDTA"
+              ],
+              "answer": "a) Prussian blue",
+              "explanation": "Prussian blue is the preferred antidote for thallium poisoning as it binds thallium in the gastrointestinal tract, preventing reabsorption."
+            },
+            {
+              "stem": "A 45-year-old female presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing lithium. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) Supportive care only",
+                "b) Hemodialysis",
+                "c) Activated charcoal",
+                "d) N-acetylcysteine"
+              ],
+              "answer": "b) Hemodialysis",
+              "explanation": "Hemodialysis is the treatment of choice for severe lithium toxicity due to its narrow therapeutic index and risk of life-threatening complications."
+            },
+            {
+              "stem": "A 35-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing digoxin. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) Digoxin-specific antibody fragments (Fab)",
+                "b) Activated charcoal",
+                "c) Sodium bicarbonate",
+                "d) N-acetylcysteine"
+              ],
+              "answer": "a) Digoxin-specific antibody fragments (Fab)",
+              "explanation": "Digoxin-specific antibody fragments (Fab) are the antidote for digoxin toxicity and bind digoxin, preventing its toxic effects."
+            },
+            {
+              "stem": "A 50-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing warfarin. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) Vitamin K",
+                "b) Fresh frozen plasma",
+                "c) Prothrombin complex concentrate",
+                "d) All of the above"
+              ],
+              "answer": "d) All of the above",
+              "explanation": "Vitamin K, fresh frozen plasma, and prothrombin complex concentrate are all used in the management of warfarin toxicity, depending on the severity."
+            },
+            {
+              "stem": "A 25-year-old female presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing benzodiazepines. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) Flumazenil",
+                "b) Naloxone",
+                "c) Physostigmine",
+                "d) Atropine"
+              ],
+              "answer": "a) Flumazenil",
+              "explanation": "Flumazenil is the antidote for benzodiazepine toxicity and reverses its effects by competitively inhibiting the GABA receptor."
+            },
+            {
+              "stem": "A 40-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing tricyclic antidepressants. Which of the following antidotes is MOST appropriate?",
+              "options": [
+                "a) Sodium bicarbonate",
+                "b) Activated charcoal",
+                "c) N-acetylcysteine",
+                "d) Flumazenil"
+              ],
+              "answer": "a) Sodium bicarbonate",
+              "explanation": "Sodium bicarbonate is the antidote for tricyclic antidepressant toxicity as it corrects metabolic acidosis and stabilizes cardiac membranes."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 30-year-old male presents to the emergency department with acute onset of salivation, lacrimation, urination, diarrhea, and muscle fasciculations after accidental exposure to an organophosphate pesticide. Outline the immediate management steps for this patient, including antidotes and supportive care.",
+              "modelAnswer": "1. Remove the patient from the source of exposure and ensure personal protective equipment for healthcare workers.\n2. Administer atropine sulfate 2–5 mg IV (repeat every 5–10 minutes until muscarinic symptoms resolve).\n3. Administer pralidoxime chloride 1–2 g IV over 30 minutes (may repeat after 1 hour if needed) to reactivate acetylcholinesterase.\n4. Provide supportive care: airway management, oxygen, and ventilation if necessary.\n5. Monitor for respiratory failure and administer atropine as needed.\n6. Consider activated charcoal if ingestion occurred within 1 hour.\n7. Monitor vital signs, oxygen saturation, and neurological status closely."
+            },
+            {
+              "stem": "A 6-year-old child is brought to the emergency department with nausea, vomiting, and abdominal pain after ingesting an unknown number of adult iron tablets. Serum iron concentration is 500 mcg/dL. Outline the management steps for this patient, including antidotes and monitoring.",
+              "modelAnswer": "1. Assess airway, breathing, and circulation; provide supportive care as needed.\n2. Obtain serum iron level and complete blood count.\n3. Administer deferoxamine 15 mg/kg/h IV (maximum 80 mg/kg/day) for severe iron poisoning (serum iron > 500 mcg/dL).\n4. Consider whole bowel irrigation with polyethylene glycol if tablets are visible on abdominal X-ray.\n5. Monitor for signs of iron toxicity: hypotension, metabolic acidosis, and hepatic failure.\n6. Monitor serum iron levels, complete blood count, and renal function.\n7. Consider exchange transfusion or hemodialysis in severe cases."
+            },
+            {
+              "stem": "A 28-year-old male is admitted with confusion, visual disturbances, and metabolic acidosis after ingesting a large quantity of an unknown substance. Blood gas analysis shows pH 7.25, bicarbonate 12 mmol/L, and anion gap 25. a) What is the most likely substance responsible? b) Outline the management steps for this patient.",
+              "modelAnswer": "a) The most likely substance responsible is methanol.\n\nb) Management steps:\n1. Administer fomepizole 15 mg/kg IV loading dose, followed by 10 mg/kg every 12 hours (or ethanol therapy if fomepizole is unavailable).\n2. Provide supportive care: airway management, oxygen, and ventilation if necessary.\n3. Correct metabolic acidosis with sodium bicarbonate IV.\n4. Consider hemodialysis if severe acidosis or visual disturbances are present.\n5. Monitor serum methanol levels, arterial blood gases, and electrolytes.\n6. Provide folinic acid (leucovorin) 50 mg IV every 6 hours to enhance formic acid metabolism."
+            },
+            {
+              "stem": "A 35-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of ethylene glycol. a) What are the toxic metabolites of ethylene glycol? b) Outline the management steps for this patient.",
+              "modelAnswer": "a) The toxic metabolites of ethylene glycol are glycolic acid and oxalic acid.\n\nb) Management steps:\n1. Administer fomepizole 15 mg/kg IV loading dose, followed by 10 mg/kg every 12 hours (or ethanol therapy if fomepizole is unavailable).\n2. Provide supportive care: airway management, oxygen, and ventilation if necessary.\n3. Correct metabolic acidosis with sodium bicarbonate IV.\n4. Consider hemodialysis if severe acidosis or renal failure is present.\n5. Monitor serum ethylene glycol levels, arterial blood gases, and electrolytes.\n6. Provide thiamine and pyridoxine to enhance metabolism of ethylene glycol."
+            },
+            {
+              "stem": "A 40-year-old male presents with acute onset of severe headache, nausea, and confusion after inhaling fumes from a gold refining process. a) What is the most likely heavy metal responsible? b) Outline the management steps for this patient, including antidotes and monitoring.",
+              "modelAnswer": "a) The most likely heavy metal responsible is mercury.\n\nb) Management steps:\n1. Remove the patient from the source of exposure and ensure personal protective equipment for healthcare workers.\n2. Administer dimercaprol (BAL) 3–5 mg/kg IM every 4 hours for 2 days, then every 6 hours for 1 day, then twice daily for 7 days.\n3. Consider succimer (DMSA) 10 mg/kg orally every 8 hours for 5 days, then 10 mg/kg every 12 hours for 14 days for maintenance.\n4. Provide supportive care: airway management, oxygen, and ventilation if necessary.\n5. Monitor for signs of mercury toxicity: neurological symptoms, renal failure, and gastrointestinal symptoms.\n6. Monitor urinary mercury levels, renal function, and neurological status."
+            },
+            {
+              "stem": "A 50-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of paracetamol (acetaminophen). Serum paracetamol level is 300 mcg/mL at 4 hours post-ingestion. a) What is the mechanism of paracetamol toxicity? b) Outline the management steps for this patient.",
+              "modelAnswer": "a) Paracetamol toxicity occurs due to glutathione depletion, leading to accumulation of the toxic metabolite N-acetyl-p-benzoquinone imine (NAPQI), which causes hepatocellular necrosis.\n\nb) Management steps:\n1. Administer N-acetylcysteine (NAC) 150 mg/kg IV loading dose over 1 hour, followed by 50 mg/kg IV over 4 hours, then 100 mg/kg IV over 16 hours.\n2. Provide supportive care: airway management, oxygen, and ventilation if necessary.\n3. Monitor for signs of liver failure: jaundice, coagulopathy, and encephalopathy.\n4. Monitor serum paracetamol levels, liver function tests, and INR.\n5. Consider liver transplantation in severe cases."
+            },
+            {
+              "stem": "A 30-year-old female presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing lead. a) What are the clinical features of lead poisoning? b) Outline the management steps for this patient, including antidotes and monitoring.",
+              "modelAnswer": "a) Clinical features of lead poisoning include abdominal pain (lead colic), neurological symptoms (headache, confusion, encephalopathy), anemia (basophilic stippling), and renal impairment.\n\nb) Management steps:\n1. Remove the patient from the source of exposure.\n2. Administer succimer (DMSA) 10 mg/kg orally every 8 hours for 5 days, then 10 mg/kg every 12 hours for 14 days.\n3. Consider dimercaprol (BAL) 3–5 mg/kg IM every 4 hours for 2 days in severe cases.\n4. Provide supportive care: hydration, correction of electrolyte imbalances, and management of neurological symptoms.\n5. Monitor for signs of lead toxicity: neurological symptoms, anemia, and renal impairment.\n6. Monitor blood lead levels, complete blood count, and renal function."
+            },
+            {
+              "stem": "A 45-year-old male presents with acute onset of severe headache, nausea, and confusion after ingesting a large quantity of a traditional remedy containing arsenic. a) What are the clinical features of arsenic poisoning? b) Outline the management steps for this patient, including antidotes and monitoring.",
+              "modelAnswer": "a) Clinical features of arsenic poisoning include gastrointestinal symptoms (nausea, vomiting, diarrhea), neurological symptoms (headache, confusion, peripheral neuropathy), and cardiovascular symptoms (hypotension, QT prolongation).\n\nb) Management steps:\n1. Remove the patient from the source of exposure.\n2. Administer dimercaprol (BAL) 3–5 mg/kg IM every 4 hours for 2 days, then every 6 hours for 1 day, then twice daily for 7 days.\n3. Consider succimer (DMSA) 10 mg/kg orally every 8 hours for 5 days, then 10 mg/kg every 12 hours for 14 days for maintenance.\n4. Provide supportive care: airway management, oxygen, and ventilation if necessary.\n5. Correct metabolic acidosis with sodium bicarbonate IV.\n6. Monitor for signs of arsenic toxicity: gastrointestinal symptoms, neurological symptoms, and cardiovascular symptoms.\n7. Monitor urinary arsenic levels, complete blood count, and renal function."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 25-year-old male presents to the emergency department with acute onset of confusion, visual disturbances, and metabolic acidosis after ingesting a large quantity of an unknown substance. Blood gas analysis shows pH 7.20, bicarbonate 10 mmol/L, and anion gap 30. a) What is the most likely substance responsible? Explain your reasoning. b) Outline the stepwise management of this patient, including antidotes, supportive care, and monitoring. c) Discuss the role of hemodialysis in this scenario.",
+              "modelAnswer": "a) The most likely substance responsible is methanol. Reasoning: Methanol poisoning presents with metabolic acidosis, visual disturbances (blindness), and confusion due to the accumulation of formic acid, a toxic metabolite of methanol.\n\nb) Stepwise management:\n1. **Airway and breathing**: Ensure patent airway and provide oxygen. Intubate if necessary for respiratory failure.\n2. **Circulation**: Monitor vital signs and correct hypotension with IV fluids and vasopressors if needed.\n3. **Antidote administration**:\n   - Administer fomepizole 15 mg/kg IV loading dose, followed by 10 mg/kg every 12 hours (or ethanol 10% solution IV at 1.5 mL/kg/h to maintain blood ethanol level of 100–150 mg/dL if fomepizole is unavailable).\n4. **Metabolic acidosis correction**: Administer sodium bicarbonate IV to correct acidosis (target pH > 7.35).\n5. **Folate supplementation**: Administer folinic acid (leucovorin) 50 mg IV every 6 hours to enhance formic acid metabolism.\n6. **Hemodialysis**: Consider if severe acidosis (pH < 7.25), visual disturbances, or renal impairment is present.\n7. **Supportive care**: Monitor for complications such as cerebral edema, pancreatitis, and renal failure.\n\nc) Role of hemodialysis:\n- Hemodialysis is indicated in severe methanol poisoning to rapidly remove methanol and its toxic metabolites (formic acid) from the blood.\n- Indications for hemodialysis include severe metabolic acidosis (pH < 7.25), visual disturbances, renal impairment, or serum methanol level > 50 mg/dL.\n- Hemodialysis also corrects electrolyte imbalances and removes formic acid, reducing the risk of complications such as cerebral edema and permanent visual loss."
+            },
+            {
+              "stem": "A 30-year-old female presents to the emergency department with acute onset of salivation, lacrimation, urination, diarrhea, and muscle fasciculations after accidental exposure to an organophosphate pesticide. She is confused and in respiratory distress. a) Explain the pathophysiology of organophosphate toxicity. b) Outline the stepwise management of this patient, including antidotes, supportive care, and monitoring. c) Discuss the role of pralidoxime in the management of organophosphate poisoning.",
+              "modelAnswer": "a) Pathophysiology of organophosphate toxicity:\n- Organophosphates irreversibly inhibit acetylcholinesterase, leading to accumulation of acetylcholine at muscarinic and nicotinic receptors.\n- Muscarinic effects include salivation, lacrimation, urination, diarrhea, bronchospasm, bradycardia, and miosis.\n- Nicotinic effects include muscle fasciculations, weakness, paralysis, and respiratory failure.\n- Central nervous system effects include confusion, seizures, and coma.\n\nb) Stepwise management:\n1. **Airway and breathing**: Ensure patent airway and provide oxygen. Intubate if necessary for respiratory failure.\n2. **Circulation**: Monitor vital signs and correct hypotension with IV fluids and vasopressors if needed.\n3. **Antidote administration**:\n   - Administer atropine sulfate 2–5 mg IV (repeat every 5–10 minutes until muscarinic symptoms resolve).\n   - Administer pralidoxime chloride 1–2 g IV over 30 minutes (may repeat after 1 hour if needed) to reactivate acetylcholinesterase.\n4. **Decontamination**: Remove contaminated clothing and wash skin with soap and water. Consider activated charcoal if ingestion occurred within 1 hour.\n5. **Supportive care**: Monitor for respiratory failure, seizures, and arrhythmias. Provide benzodiazepines (e.g., diazepam) for agitation or seizures.\n6. **Monitoring**: Monitor vital signs, oxygen saturation, neurological status, and cholinesterase levels.\n\nc) Role of pralidoxime:\n- Pralidoxime (2-PAM) is a cholinesterase reactivator that breaks the bond between organophosphate and acetylcholinesterase, restoring enzyme function.\n- It is most effective when administered early (within hours of exposure) but may still provide benefit in delayed presentations.\n- Pralidoxime is particularly useful for treating nicotinic symptoms (muscle fasciculations, weakness) and may reduce the need for prolonged atropine therapy.\n- It does not reverse central nervous system effects or muscarinic symptoms as effectively as atropine.\n- Pralidoxime is contraindicated in carbamate poisoning (e.g., physostigmine) as it may worsen toxicity by transiently increasing acetylcholine levels."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

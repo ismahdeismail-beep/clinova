@@ -345,6 +345,14 @@ export default function DashboardScreen() {
 
   const currentArticle = DAILY_ARTICLES[currentArticleIdx]
 
+  // Auto-swipe Today's Reading every 8 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentArticleIdx(prev => (prev + 1) % DAILY_ARTICLES.length)
+    }, 8000)
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <div className="p-4 sm:p-6 md:p-8 max-w-full 2xl:max-w-7xl mx-auto space-y-6 md:space-y-8 pb-24">
       {/* ── Welcome Banner ── */}

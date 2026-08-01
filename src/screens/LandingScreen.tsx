@@ -14,9 +14,20 @@ import { INITIAL_CASES, ALL_CLINICAL_CASES } from '../data/clinicalCasesData'
 export default function LandingScreen() {
   const navigate = useNavigate()
 
-  const drugCount = 1000
-  const caseCount = ALL_CLINICAL_CASES.length
+  const [drugCount, setDrugCount] = React.useState(0)
+  const [caseCount, setCaseCount] = React.useState(0)
   const therapeuticAreaCount = Object.keys(INTEGRATED_UNITS_MAP).length
+
+  React.useEffect(() => {
+    const { supabase } = require('../lib/supabase')
+    if (!supabase) return
+    supabase.from('drug_monographs').select('id', { count: 'exact', head: true }).then(({ data, error }) => {
+      if (!error && data) setDrugCount(data.count || 0)
+    })
+    supabase.from('clinical_cases').select('id', { count: 'exact', head: true }).then(({ data, error }) => {
+      if (!error && data) setCaseCount(data.count || 0)
+    })
+  }, [])
 
   const features = [
     {

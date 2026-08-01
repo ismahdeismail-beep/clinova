@@ -6,7 +6,7 @@ import {
   Briefcase, HelpCircle, Layers, Headphones, FileArchive, Calendar, BrainCircuit,
   Bookmark, Download, History, ChevronLeft, Bot, Play, List, Sparkles, CheckCircle2, Clock, Database, Mic,
   Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star, ArrowUpRight, Flag,
-  Compass, FileDown, MoreHorizontal, ArrowLeft, ArrowRight, AlertTriangle
+  Compass, FileDown, MoreHorizontal, ArrowLeft, ArrowRight, AlertTriangle, GraduationCap
 } from 'lucide-react';
 import Markdown from 'react-markdown';
 import html2canvas from 'html2canvas';
@@ -167,7 +167,7 @@ export default function EducationHubScreen() {
     }
     // Check if moduleId is a top-level module
     const mod = EDUCATION_MODULES.find(m => m.id === moduleId) || null;
-    // Check if moduleId is a sub-module (e.g. clinical_pharm under exam_prep)
+    // Check if moduleId is a sub-module (e.g. board_exam under exam)
     const subMatch = !mod ? findSubModule(moduleId) : undefined;
     
     if (mod) {
@@ -214,10 +214,6 @@ export default function EducationHubScreen() {
     navigate('/drugs');
     return;
   }
-  if (mod.id === 'board_exam') {
-    navigate('/knowledge/exam/board-exam');
-    return;
-  }
     setSelectedModule(mod);
     setSelectedSubModule(null);
     setSelectedUnit(null);
@@ -226,6 +222,15 @@ export default function EducationHubScreen() {
 
   // Handle sub-module click (Level 2 → Level 3)
   const handleSubModuleClick = (subMod: EducationModuleUnit) => {
+    // Exam sub-modules open their dedicated screens
+    if (subMod.id === 'board_exam') {
+      navigate('/knowledge/exam/board-exam');
+      return;
+    }
+    if (subMod.id === 'exam_prep') {
+      navigate('/knowledge/exam/prep');
+      return;
+    }
     // Sub-modules are returned by getModuleUnits with isSubModule flag
     // Navigate to /knowledge/{subModuleId} — the URL sync will detect it's a sub-module
     setSelectedUnit(null);
@@ -560,7 +565,7 @@ function ModuleIcon({ name, className }: { name?: string, className?: string }) 
   const icons: Record<string, any> = {
     Activity, Accessibility, Dna, FlaskConical, Droplets, Flame, Beaker, HeartPulse,
     BookOpen, Bug, Skull, Heart, Award, FileText, Briefcase, HelpCircle, Layers,
-    Headphones, FileArchive, Calendar, BrainCircuit, Bookmark, Download, History, Mic
+    Headphones, FileArchive, Calendar, BrainCircuit, Bookmark, Download, History, Mic, GraduationCap
   };
   const Icon = name ? icons[name] || BookOpen : BookOpen;
   return <Icon className={className} size={24} />;

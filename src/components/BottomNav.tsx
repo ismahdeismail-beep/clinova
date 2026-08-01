@@ -1,11 +1,10 @@
 import { useLocation, Link } from 'react-router-dom'
-import { LayoutDashboard, BookOpen, Pill, GraduationCap, ClipboardCheck } from 'lucide-react'
+import { LayoutDashboard, BookOpen, Pill, ClipboardCheck } from 'lucide-react'
 
 const NAV_ITEMS = [
   { to: '/', label: 'Home', icon: LayoutDashboard },
   { to: '/knowledge', label: 'Education', icon: BookOpen },
   { to: '/drugs', label: 'Drugs', icon: Pill },
-  { to: '/exam', label: 'Exam', icon: GraduationCap },
   { to: '/care-plan', label: 'Care Plan', icon: ClipboardCheck },
 ]
 

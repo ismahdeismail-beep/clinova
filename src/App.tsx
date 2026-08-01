@@ -338,8 +338,8 @@ function AppContent() {
               <Route path="/care-plan/:specialtyId" element={<CarePlanScreen />} />
               <Route path="/care-plan/:specialtyId/:disease" element={<CarePlanScreen />} />
               {/* Legacy redirect */}
-              <Route path="/board-exam" element={<Navigate to="/exam/board-exam" replace />} />
-              <Route path="/board-exam/:setId" element={<Navigate to="/exam/board-exam" replace />} />
+              <Route path="/board-exam" element={<Navigate to="/knowledge/exam/board-exam" replace />} />
+              <Route path="/board-exam/:setId" element={<Navigate to="/knowledge/exam/board-exam" replace />} />
   <Route path="/library" element={<OnlineLibraryScreen />} />
   <Route path="/settings" element={<SettingsScreen />} />
   <Route path="*" element={<Navigate to="/" replace />} />

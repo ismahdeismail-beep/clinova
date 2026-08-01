@@ -232,9 +232,9 @@ export default function BoardExamScreen() {
 
   const handleBack = () => {
     if (selectedSet) {
-      navigate('/exam/board-exam')
+      navigate('/knowledge/exam/board-exam')
     } else {
-      navigate('/exam')
+      navigate('/knowledge/exam')
     }
   }
 
@@ -301,7 +301,7 @@ export default function BoardExamScreen() {
             return (
               <button
                 key={set.id}
-                onClick={() => navigate('/exam/board-exam/' + set.id)}
+                onClick={() => navigate('/knowledge/exam/board-exam/' + set.id)}
                 className={`text-left bg-[var(--surface)] border ${set.border} rounded-2xl p-5 hover:shadow-md transition-all group relative overflow-hidden`}
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${set.gradient} opacity-50`} />

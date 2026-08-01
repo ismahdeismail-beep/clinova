@@ -10,8 +10,9 @@ function getAdminClient(): SupabaseClient | null {
 }
 
 export async function getImagesForDrug(drugId: string): Promise<DrugImage[]> {
-  if (!supabase) return []
-  const { data, error } = await supabase
+  const client = getAdminClient()
+  if (!client) return []
+  const { data, error } = await client
     .from('drug_images')
     .select('*')
     .eq('drug_id', drugId)
@@ -24,9 +25,10 @@ export async function getImagesForDrug(drugId: string): Promise<DrugImage[]> {
 }
 
 export async function searchImages(query: string): Promise<DrugImage[]> {
-  if (!supabase) return []
+  const client = getAdminClient()
+  if (!client) return []
   if (!query.trim()) {
-    const { data, error } = await supabase
+    const { data, error } = await client
       .from('drug_images')
       .select('*')
       .order('created_at', { ascending: false })
@@ -36,7 +38,7 @@ export async function searchImages(query: string): Promise<DrugImage[]> {
   }
 
   const q = `%${query}%`
-  const { data, error } = await supabase
+  const { data, error } = await client
     .from('drug_images')
     .select('*')
     .or(`generic_name.ilike.${q},dosage_form.ilike.${q},title.ilike.${q}`)
@@ -51,25 +53,26 @@ export async function searchImages(query: string): Promise<DrugImage[]> {
 }
 
 export async function getImageStats(): Promise<CrawlStatistics> {
-  if (!supabase) return { total_images: 0, verified_images: 0, rejected_images: 0, unique_drugs: 0, by_source: {} }
+  const client = getAdminClient()
+  if (!client) return { total_images: 0, verified_images: 0, rejected_images: 0, unique_drugs: 0, by_source: {} }
 
-  const { count: total, error: totalErr } = await supabase
+  const { count: total, error: totalErr } = await client
     .from('drug_images')
     .select('*', { count: 'exact', head: true })
   if (totalErr) return defaultStats()
 
-  const { count: verified } = await supabase
+  const { count: verified } = await client
     .from('drug_images')
     .select('*', { count: 'exact', head: true })
     .eq('verified', true)
 
-  const { count: rejected } = await supabase
+  const { count: rejected } = await client
     .from('drug_images')
     .select('*', { count: 'exact', head: true })
     .not('rejection_reason', 'is', null)
     .neq('rejection_reason', '')
 
-  const { data: sourceData, error: sourceErr } = await supabase
+  const { data: sourceData, error: sourceErr } = await client
     .from('drug_images')
     .select('source')
     .limit(1000)
@@ -82,7 +85,7 @@ export async function getImageStats(): Promise<CrawlStatistics> {
     }
   }
 
-  const { data: drugData, error: drugErr } = await supabase
+  const { data: drugData, error: drugErr } = await client
     .from('drug_images')
     .select('drug_id')
     .limit(1000)
@@ -99,8 +102,9 @@ export async function getImageStats(): Promise<CrawlStatistics> {
 }
 
 export async function getMissingDrugs(): Promise<string[]> {
-  if (!supabase) return []
-  const { data: allDrugs } = await supabase
+  const client = getAdminClient()
+  if (!client) return []
+  const { data: allDrugs } = await client
     .from('drug_monographs')
     .select('id, name, generic_name')
     .limit(1000)
@@ -108,7 +112,7 @@ export async function getMissingDrugs(): Promise<string[]> {
   if (!allDrugs) return []
 
   const drugsWithImages = new Set()
-  const { data: imageDrugs } = await supabase
+  const { data: imageDrugs } = await client
     .from('drug_images')
     .select('drug_id')
     .limit(10000)
@@ -127,8 +131,9 @@ export async function getMissingDrugs(): Promise<string[]> {
 }
 
 export async function verifyImage(id: string): Promise<boolean> {
-  if (!supabase) return false
-  const { error } = await supabase
+  const client = getAdminClient()
+  if (!client) return false
+  const { error } = await client
     .from('drug_images')
     .update({ verified: true })
     .eq('id', id)
@@ -136,8 +141,9 @@ export async function verifyImage(id: string): Promise<boolean> {
 }
 
 export async function deleteImage(id: string): Promise<boolean> {
-  if (!supabase) return false
-  const { error } = await supabase
+  const client = getAdminClient()
+  if (!client) return false
+  const { error } = await client
     .from('drug_images')
     .delete()
     .eq('id', id)

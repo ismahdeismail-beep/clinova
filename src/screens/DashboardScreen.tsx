@@ -558,13 +558,13 @@ export default function DashboardScreen() {
            <p className="text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed mb-3">{currentArticle.summary}</p>
            <Link
              to="/library"
-             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--primary)]/10 text-[var(--primary)] text-xs font-bold hover:bg-[var(--primary)]/20 transition-colors"
+             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold hover:opacity-90 transition-opacity"
            >
              Read More <ArrowRight size={12} />
            </Link>
          </div>
          {/* Auto-swipe indicator */}
-         <div className="absolute bottom-3 right-3 flex gap-1.5">
+         <div className="flex justify-center gap-1.5 mt-3">
            {DAILY_ARTICLES.map((_, idx) => (
              <button
                key={idx}

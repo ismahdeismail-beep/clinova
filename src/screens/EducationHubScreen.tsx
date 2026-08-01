@@ -206,18 +206,18 @@ export default function EducationHubScreen() {
   }, [moduleId, unitId, customUnits]);
 
   const handleModuleClick = (mod: EducationModule) => {
-    if (mod.id === 'cases') {
-      navigate('/cases');
-      return;
-    }
-    if (mod.id === 'drug_info') {
-      navigate('/drugs');
-      return;
-    }
-    if (mod.id === 'board_exam') {
-      navigate('/exam');
-      return;
-    }
+  if (mod.id === 'cases') {
+    navigate('/cases');
+    return;
+  }
+  if (mod.id === 'drug_info') {
+    navigate('/drugs');
+    return;
+  }
+  if (mod.id === 'board_exam') {
+    navigate('/knowledge/exam/board-exam');
+    return;
+  }
     setSelectedModule(mod);
     setSelectedSubModule(null);
     setSelectedUnit(null);

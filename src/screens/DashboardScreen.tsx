@@ -130,13 +130,6 @@ const QUICK_LINKS = [
     gradient: 'from-sky-500 to-sky-600',
   },
   {
-    to: '/exam',
-    icon: GraduationCap,
-    label: 'Exam',
-    desc: 'Board exam papers & practice prep',
-    gradient: 'from-violet-500 to-violet-600',
-  },
-  {
     to: '/care-plan',
     icon: ClipboardCheck,
     label: 'Care Plan',
@@ -379,13 +372,6 @@ export default function DashboardScreen() {
 
           <div className="flex flex-wrap items-center gap-3">
             <Link
-              to="/exam"
-              className="flex items-center gap-2 px-4 py-2.5 bg-white/15 hover:bg-white/25 text-white rounded-xl font-semibold backdrop-blur-sm transition-all text-sm"
-            >
-              <GraduationCap size={16} />
-              Exam
-            </Link>
-            <Link
               to="/cases"
               className="flex items-center gap-2 px-4 py-2.5 bg-white text-[var(--primary)] rounded-xl font-semibold hover:shadow-md transition-all text-sm"
             >
@@ -561,8 +547,24 @@ export default function DashboardScreen() {
             </span>
           </div>
           <h4 className="font-bold text-[var(--text)] text-sm sm:text-base mb-1.5">{currentArticle.title}</h4>
-          <p className="text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed">{currentArticle.summary}</p>
-        </div>
+           <p className="text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed mb-3">{currentArticle.summary}</p>
+           <Link
+             to="/library"
+             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--primary)]/10 text-[var(--primary)] text-xs font-bold hover:bg-[var(--primary)]/20 transition-colors"
+           >
+             Read More <ArrowRight size={12} />
+           </Link>
+         </div>
+         {/* Auto-swipe indicator */}
+         <div className="absolute bottom-3 right-3 flex gap-1.5">
+           {DAILY_ARTICLES.map((_, idx) => (
+             <button
+               key={idx}
+               onClick={() => setCurrentArticleIdx(idx)}
+               className={`w-1.5 h-1.5 rounded-full transition-all cursor-pointer ${idx === currentArticleIdx ? 'bg-[var(--primary)] w-4' : 'bg-[var(--border)]'}`}
+             />
+           ))}
+         </div>
       </div>
 
       {/* ── Main Content Grid ── */}
@@ -631,10 +633,10 @@ export default function DashboardScreen() {
                 <Stethoscope size={14} /> Browse Cases
               </Link>
               <Link
-                to="/exam"
+                to="/knowledge/exam/prep"
                 className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-[var(--primary)]/10 text-[var(--primary)] text-xs font-bold hover:bg-[var(--primary)]/20 transition-colors"
               >
-                <GraduationCap size={14} /> Exam
+                <GraduationCap size={14} /> Exam Prep
               </Link>
               <Link
                 to="/care-plan"

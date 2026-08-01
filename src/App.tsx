@@ -14,7 +14,6 @@ const ClinovaSupportScreen = React.lazy(() => import('./screens/ClinovaSupportSc
 const EducationHubScreen = React.lazy(() => import('./screens/EducationHubScreen'));
 const BoardExamScreen = React.lazy(() => import('./screens/BoardExamScreen'));
 const ExamPrepScreen = React.lazy(() => import('./screens/ExamPrepScreen'));
-const ExamScreen = React.lazy(() => import('./screens/ExamScreen'));
 const CarePlanScreen = React.lazy(() => import('./screens/CarePlanScreen'));
 const OnlineLibraryScreen = React.lazy(() => import('./screens/OnlineLibraryScreen'));
 const SettingsScreen = React.lazy(() => import('./screens/SettingsScreen'));
@@ -329,13 +328,12 @@ function AppContent() {
               <Route path="/cases" element={<ClinicalCasesScreen />} />
               <Route path="/drugs" element={<DrugIndexScreen />} />
               <Route path="/assistant" element={<ClinovaSupportScreen />} />
-              <Route path="/knowledge" element={<EducationHubScreen />} />
-              <Route path="/knowledge/:moduleId" element={<EducationHubScreen />} />
-              <Route path="/knowledge/:moduleId/:unitId" element={<EducationHubScreen />} />
-              <Route path="/exam" element={<ExamScreen />} />
-              <Route path="/exam/prep" element={<ExamPrepScreen />} />
-              <Route path="/exam/board-exam" element={<BoardExamScreen />} />
-              <Route path="/exam/board-exam/:setId" element={<BoardExamScreen />} />
+  <Route path="/knowledge" element={<EducationHubScreen />} />
+  <Route path="/knowledge/:moduleId" element={<EducationHubScreen />} />
+  <Route path="/knowledge/:moduleId/:unitId" element={<EducationHubScreen />} />
+  <Route path="/knowledge/exam/prep" element={<ExamPrepScreen />} />
+  <Route path="/knowledge/exam/board-exam" element={<BoardExamScreen />} />
+  <Route path="/knowledge/exam/board-exam/:setId" element={<BoardExamScreen />} />
               <Route path="/care-plan" element={<CarePlanScreen />} />
               <Route path="/care-plan/:specialtyId" element={<CarePlanScreen />} />
               <Route path="/care-plan/:specialtyId/:disease" element={<CarePlanScreen />} />

@@ -1030,17 +1030,50 @@ export interface EducationSubModule {
 
 /** All top-level modules for the Education Hub */
 export const EDUCATION_MODULES: EducationModule[] = [
-  { id: 'exam_prep', title: 'Exam Prep', description: 'Structured exam preparation across clinical pharmacy, pharmacology, and more.', isIntegrated: false, icon: 'Award', color: 'amber',
+  {
+    id: 'exam_prep',
+    title: 'Exam Prep',
+    description: 'Structured exam preparation across clinical pharmacy, pharmacology, and more.',
+    isIntegrated: false,
+    icon: 'Award',
+    color: 'amber',
     subModules: [
-      { id: 'clinical_pharm', title: 'Clinical Pharmacy', description: 'Disease management and patient care across 17 integrated therapeutic areas.', icon: 'HeartPulse', color: 'red', parentModuleId: 'exam_prep',
+      {
+        id: 'clinical_pharm',
+        title: 'Clinical Pharmacy & Therapeutics',
+        description: 'Disease management and patient care across 17 integrated therapeutic areas.',
+        icon: 'HeartPulse',
+        color: 'red',
+        parentModuleId: 'exam_prep',
         units: getArea('clinical_pharm')?.units.map(u => ({ id: u.id, title: u.title, description: u.description, estimatedHours: u.estimatedHours } as EducationModuleUnit)) ?? [],
       },
-      { id: 'pharmacology', title: 'Pharmacology', description: 'Systematic pharmacology from general principles through chemotherapy and toxicology.', icon: 'FlaskConical', color: 'blue', parentModuleId: 'exam_prep',
+      {
+        id: 'pharmacology',
+        title: 'Pharmacology',
+        description: 'Systematic pharmacology from general principles through chemotherapy and toxicology.',
+        icon: 'FlaskConical',
+        color: 'blue',
+        parentModuleId: 'exam_prep',
         units: getArea('pharmacology')?.units.map(u => ({ id: u.id, title: u.title, description: u.description, estimatedHours: u.estimatedHours } as EducationModuleUnit)) ?? [],
       },
     ],
   },
-  { id: 'online_books', title: 'Online Books', description: 'Pharmacy reference books, textbooks, and clinical resources.', isIntegrated: false, icon: 'BookOpen', color: 'sky' },
+  {
+    id: 'board_exam',
+    title: 'Board Exam',
+    description: 'Dedicated board exam preparation with mock papers and focused revision.',
+    isIntegrated: false,
+    icon: 'GraduationCap',
+    color: 'violet',
+  },
+  {
+    id: 'online_books',
+    title: 'Online Books',
+    description: 'Pharmacy reference books, textbooks, and clinical resources organized by module.',
+    isIntegrated: false,
+    icon: 'BookOpen',
+    color: 'sky',
+  },
 ];
 
 export function getEducationModule(moduleId: string): EducationModule | undefined {

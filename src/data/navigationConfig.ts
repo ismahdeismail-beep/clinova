@@ -1,8 +1,7 @@
 import {
   BookOpen, FolderOpen, Pill,
-  GraduationCap, ClipboardList, ClipboardCheck,
-  Settings,
-  type LucideIcon,
+  GraduationCap, ClipboardCheck,
+  Settings, type LucideIcon,
 } from 'lucide-react'
 
 export type NavItem = {
@@ -22,14 +21,13 @@ export const NAV_GROUPS: NavGroup[] = [
   {
     id: 'main',
     icon: BookOpen,
-    items: [
-      { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
-      { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
-      { to: '/drugs', label: 'Drug Index', icon: Pill },
-      { to: '/exam', label: 'Exam', icon: GraduationCap },
-      { to: '/care-plan', label: 'Care Plan', icon: ClipboardCheck },
-      { to: '/assistant', label: 'Clinova Support', icon: ClipboardList },
-    ],
+  items: [
+    { to: '/knowledge', label: 'Education Hub', icon: BookOpen },
+    { to: '/cases', label: 'Clinical Cases', icon: FolderOpen },
+    { to: '/drugs', label: 'Drug Index', icon: Pill },
+    { to: '/care-plan', label: 'Care Plan', icon: ClipboardCheck },
+    { to: '/assistant', label: 'Clinova Support', icon: ClipboardList },
+  ],
   },
   {
     id: 'settings',

@@ -30,7 +30,7 @@ export default function LandingScreen() {
       icon: BookOpen,
       title: 'Education Hub',
       description:
-        'Integrated clinical pharmacy curriculum with disease monographs, study guides, tutor sessions, flashcards, and curated online pharmacy resources.',
+        'Integrated clinical pharmacy curriculum with disease monographs, study guides, tutor sessions, flashcards, exam prep, board exam modules, and curated online pharmacy resources.',
       gradient: 'from-sky-500 to-blue-600',
     },
     {

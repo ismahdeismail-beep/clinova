@@ -1,9 +1,12 @@
-import { supabase } from '../../lib/supabase'
+import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 import type { DrugImage, CrawlStatistics } from '../../types/crawler'
 
-function getAdminClient() {
-  if (!supabase) return null
-  return supabase
+const SUPABASE_URL = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL || ''
+const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || ''
+
+function getAdminClient(): SupabaseClient | null {
+  if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) return null
+  return createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, { auth: { persistSession: false } })
 }
 
 export async function getImagesForDrug(drugId: string): Promise<DrugImage[]> {

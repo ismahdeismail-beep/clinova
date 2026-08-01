@@ -28,7 +28,15 @@ async function main() {
     process.exit(1)
   }
 
-  const toCrawl = drugs.filter((d: any) => !state.crawled_drugs.includes(d.id))
+  // Never re-crawl drugs already marked failed (they need the fallback pass,
+  // not Wikimedia retries). Dedupe both arrays to keep them from growing.
+  state.crawled_drugs = [...new Set(state.crawled_drugs)]
+  state.failed_drugs = [...new Set(state.failed_drugs)]
+  saveState(state)
+
+  const toCrawl = drugs.filter(
+    (d: any) => !state.crawled_drugs.includes(d.id) && !state.failed_drugs.includes(d.id),
+  )
   const batch = toCrawl.slice(0, BATCH_SIZE)
 
   console.log(`[crawl] total=${drugs.length} done=${state.crawled_drugs.length} pending=${toCrawl.length} batch=${batch.length}`)

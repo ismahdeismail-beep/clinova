@@ -3,10 +3,60 @@ import sharp from 'sharp'
 import { createHash } from 'crypto'
 
 // ── Download ───────────────────────────────────────────────────────
+// upload.wikimedia.org rate-limits unregistered bots hard (429s) — retry with
+// backoff, respect Retry-After, and pace downloads with a small delay.
+const DOWNLOAD_USER_AGENT = 'ClinovaBot/1.0 (educational project; contact admin@clinova.example)'
+
+function parseRetryAfter(header: string | null): number {
+  if (!header) return 0
+  const seconds = Number(header)
+  if (Number.isFinite(seconds)) return Math.min(seconds, 120)
+  const when = Date.parse(header)
+  if (Number.isFinite(when)) return Math.min(Math.max(Math.ceil((when - Date.now()) / 1000), 0), 120)
+  return 0
+}
+
 export async function downloadImage(url: string): Promise<Buffer> {
-  const res = await fetch(url, { signal: AbortSignal.timeout(30000) })
-  if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${url}`)
-  return Buffer.from(await res.arrayBuffer())
+  let lastErr: Error | null = null
+  for (let attempt = 0; attempt < 6; attempt++) {
+    let res: Response
+    try {
+      res = await fetch(url, {
+        signal: AbortSignal.timeout(30000),
+        headers: { 'User-Agent': DOWNLOAD_USER_AGENT },
+      })
+    } catch (e: any) {
+      lastErr = e
+      await new Promise((r) => setTimeout(r, 3000 * (attempt + 1)))
+      continue
+    }
+
+    if (res.status === 429) {
+      const waitMs = parseRetryAfter(res.headers.get('retry-after')) * 1000 || 12000 * (attempt + 1)
+      console.log(`  [download 429] waiting ${Math.round(waitMs / 1000)}s (attempt ${attempt + 1}/6)`)
+      await new Promise((r) => setTimeout(r, waitMs))
+      continue
+    }
+
+    if (!res.ok) {
+      lastErr = new Error(`HTTP ${res.status} fetching ${url}`)
+      if (res.status >= 500) {
+        await new Promise((r) => setTimeout(r, 3000 * (attempt + 1)))
+        continue
+      }
+      throw lastErr
+    }
+
+    return Buffer.from(await res.arrayBuffer())
+  }
+  throw lastErr || new Error(`Failed to download ${url}`)
+}
+
+// Space out downloads so upload.wikimedia.org's burst limiter stays quiet.
+export function downloadDelay(): Promise<void> {
+  const base = Number(process.env.CRAWL_DOWNLOAD_DELAY_MS || '900')
+  const jitter = Math.floor(Math.random() * 700)
+  return new Promise((r) => setTimeout(r, base + jitter))
 }
 
 // ── Validation ─────────────────────────────────────────────────────

@@ -8,6 +8,7 @@ import {
 } from './providers'
 import {
   downloadImage,
+  downloadDelay,
   validateImage,
   computeDHash,
   hammingDistance,
@@ -16,22 +17,31 @@ import {
   md5,
 } from './imageProcessor'
 import { type CrawlerState, loadState, saveState } from './state'
+import { brandNamesFor, isTitleRelevant, isWeakRelevant } from './kenyanBrands'
+import { politeDelay } from './providers'
 
 const DOSAGE_FORMS = [
   'tablet', 'capsule', 'suspension', 'injection', 'vial', 'inhaler',
   'cream', 'ointment', 'eye drops', 'syrup', 'powder', 'implant',
 ]
 
+const QUICK_FORMS = ['tablet', 'capsule', 'injection', 'syrup']
+
 const STORAGE_BUCKET = 'medicine-images'
 
 // ── Generate search queries for a medicine ─────────────────────────
-function generateSearchQueries(genericName: string, dosageForms?: string[]): string[] {
-  const forms = dosageForms?.length ? dosageForms : DOSAGE_FORMS
+export function generateSearchQueries(genericName: string, dosageForms?: string[]): string[] {
+  const forms = dosageForms?.length ? dosageForms : QUICK_FORMS
   const queries: string[] = []
+  // Kenyan-market brands first — real-world packaging photos are preferred.
+  for (const brand of brandNamesFor(genericName)) {
+    queries.push(`${brand} ${genericName}`)
+  }
   for (const form of forms) {
     queries.push(`${genericName} ${form}`)
   }
-  queries.push(`Generic ${genericName}`)
+  // Plain name matches the most on Wikimedia (form-suffixed queries often hit zero).
+  queries.push(genericName)
   return queries
 }
 
@@ -53,7 +63,7 @@ async function searchAllProviders(query: string): Promise<ProviderResult[]> {
   const settled = await Promise.allSettled(
     PROVIDERS.map((provider) =>
       withTimeout(
-        provider.fn(query, 5).catch((e: any) => {
+        provider.fn(query, 10).catch((e: any) => {
           console.error(`[${provider.name}] search failed for "${query}":`, e?.message ?? e)
           return [] as ProviderResult[]
         }),
@@ -161,57 +171,92 @@ export async function crawlDrug(
   existingHashes: Set<string> = new Set(),
 ): Promise<{ found: number; accepted: number; rejected: number; failures: string[] }> {
   const stats = { found: 0, accepted: 0, rejected: 0, failures: [] as string[] }
+  const weakCandidates: ProviderResult[] = []
   const queries = generateSearchQueries(genericName, dosageForms)
+  const MAX_IMAGES_PER_DRUG = 4
+
+  // Shared processing: download → validate → dedup → optimize → upload → insert.
+  // Returns true when the image was accepted (and stored).
+  const processResult = async (result: ProviderResult): Promise<boolean> => {
+    try {
+      await downloadDelay() // pace downloads — upload.wikimedia.org throttles bursts
+      const buf = await downloadImage(result.imageUrl)
+      const validation = await validateImage(buf)
+      if (!validation.valid) {
+        stats.rejected++
+        return false
+      }
+
+      const optimized = await optimizeImage(buf)
+      if (await isDuplicate(optimized.hash, existingHashes)) {
+        stats.rejected++
+        return false
+      }
+      existingHashes.add(optimized.hash)
+
+      const form = DOSAGE_FORMS.find((f) => result.title.toLowerCase().includes(f)) || 'unknown'
+      const urls = await uploadImages(genericName, form, strength, optimized)
+
+      await insertImageRecord(drugId, {
+        generic_name: genericName,
+        dosage_form: form,
+        strength,
+        image_url: urls.image_url,
+        thumbnail_url: urls.thumbnail_url,
+        large_url: urls.large_url,
+        medium_url: urls.medium_url,
+        source: result.source,
+        license: result.license,
+        license_url: result.licenseUrl,
+        author: result.author,
+        page_url: result.pageUrl,
+        hash: optimized.hash,
+        quality_score: scoreQuality(validation.width, validation.height, validation.format),
+      })
+
+      stats.accepted++
+      return true
+    } catch (e: any) {
+      stats.failures.push(`${result.source}/${result.title}: ${e.message}`)
+      return false
+    }
+  }
 
   for (const query of queries) {
+    if (stats.accepted >= MAX_IMAGES_PER_DRUG) break
     const results = await searchAllProviders(query)
     stats.found += results.length
 
     for (const result of results) {
-      try {
-        if (!isLicenseAccepted(result.license)) {
-          stats.rejected++
-          continue
-        }
-
-        const buf = await downloadImage(result.imageUrl)
-        const validation = await validateImage(buf)
-        if (!validation.valid) {
-          stats.rejected++
-          continue
-        }
-
-        const optimized = await optimizeImage(buf)
-        if (await isDuplicate(optimized.hash, existingHashes)) {
-          stats.rejected++
-          continue
-        }
-        existingHashes.add(optimized.hash)
-
-        const form = DOSAGE_FORMS.find((f) => query.toLowerCase().includes(f)) || 'unknown'
-        const urls = await uploadImages(genericName, form, strength, optimized)
-
-        await insertImageRecord(drugId, {
-          generic_name: genericName,
-          dosage_form: form,
-          strength,
-          image_url: urls.image_url,
-          thumbnail_url: urls.thumbnail_url,
-          large_url: urls.large_url,
-          medium_url: urls.medium_url,
-          source: result.source,
-          license: result.license,
-          license_url: result.licenseUrl,
-          author: result.author,
-          page_url: result.pageUrl,
-          hash: optimized.hash,
-          quality_score: scoreQuality(validation.width, validation.height, validation.format),
-        })
-
-        stats.accepted++
-      } catch (e: any) {
-        stats.failures.push(`${result.source}/${result.title}: ${e.message}`)
+      if (stats.accepted >= MAX_IMAGES_PER_DRUG) break
+      if (!isLicenseAccepted(result.license)) {
+        stats.rejected++
+        continue
       }
+      // Wikimedia search is fuzzy — keep only results that name the drug
+      // (or a brand); stash the rest as weak fallback candidates.
+      if (isTitleRelevant(result.title, genericName)) {
+        await processResult(result)
+      } else {
+        weakCandidates.push(result)
+      }
+    }
+
+    // Be polite to Wikimedia between queries (burst limiter returns 429).
+    if (queries.length > 1) await politeDelay()
+  }
+
+  // Weak fallback tier: no titled matches at all — accept license-clean
+  // generic medicine imagery (medicine-worded titles only, never junk like
+  // scenery photos) so every monograph still gets an image.
+  if (stats.accepted === 0) {
+    const seen = new Set<string>()
+    for (const result of weakCandidates) {
+      if (stats.accepted >= MAX_IMAGES_PER_DRUG) break
+      if (seen.has(result.imageUrl)) continue
+      seen.add(result.imageUrl)
+      if (!isWeakRelevant(result.title)) continue
+      if (await processResult(result)) break
     }
   }
 

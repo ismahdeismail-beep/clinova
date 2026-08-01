@@ -12,18 +12,20 @@ async function main() {
     .from('drug_monographs')
     .select('*', { count: 'exact', head: true })
 
-  const { count: drugsWithImages } = await supabase
-    .from('drug_images')
-    .select('drug_id', { count: 'exact', head: true, distinct: true })
+  // NOTE: do NOT use distinct+head count here — PostgREST returns the total row count,
+  // not distinct drug_ids. Build the distinct set from the rows instead.
+  const { data: imageRows } = await supabase.from('drug_images').select('drug_id').limit(10000)
 
   const { count: totalImages } = await supabase
     .from('drug_images')
     .select('*', { count: 'exact', head: true })
 
+  const drugsWithImages = new Set((imageRows || []).map((r) => r.drug_id)).size
+
   console.log('totalDrugs:', totalDrugs)
-  console.log('drugsWithImages:', drugsWithImages)
-  console.log('totalImages:', totalImages)
-  console.log('drugsMissingImages:', (totalDrugs ?? 0) - (drugsWithImages ?? 0))
+  console.log('drugsWithImages (distinct):', drugsWithImages)
+  console.log('totalImages (rows):', totalImages)
+  console.log('drugsMissingImages:', (totalDrugs ?? 0) - drugsWithImages)
 }
 
 main().catch((e) => {

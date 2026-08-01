@@ -2,6 +2,14 @@
 // Each provider returns metadata only (no download). License verification happens in the crawler.
 import { type DrugImage } from '../../types/crawler'
 
+const FETCH_TIMEOUT_MS = 12000
+
+async function fetchJson(url: string): Promise<any> {
+  const res = await fetch(url, { signal: AbortSignal.timeout(FETCH_TIMEOUT_MS) })
+  if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`)
+  return res.json()
+}
+
 export interface ProviderResult {
   imageUrl: string
   thumbnailUrl: string
@@ -44,8 +52,7 @@ export async function searchWikimedia(query: string, limit = 10): Promise<Provid
     searchUrl.searchParams.set('srlimit', String(limit))
     searchUrl.searchParams.set('srprop', '')
 
-    const searchRes = await fetch(searchUrl.toString())
-    const searchData = await searchRes.json()
+    const searchData = await fetchJson(searchUrl.toString())
     const pages = searchData?.query?.search || []
 
     // Step 2: for each result, get imageinfo
@@ -71,8 +78,7 @@ async function getWikimediaImageInfo(fileTitle: string): Promise<ProviderResult 
     url.searchParams.set('iiurlwidth', '800')
     url.searchParams.set('iiurlheight', '800')
 
-    const res = await fetch(url.toString())
-    const data = await res.json()
+    const data = await fetchJson(url.toString())
     const pages = data?.query?.pages || {}
     const page = Object.values(pages)[0] as any
     if (!page?.imageinfo?.[0]) return null
@@ -108,8 +114,7 @@ export async function searchOpenI(query: string, limit = 10): Promise<ProviderRe
     url.searchParams.set('it', 'i') // images
     url.searchParams.set('m', String(limit))
 
-    const res = await fetch(url.toString())
-    const data = await res.json()
+    const data = await fetchJson(url.toString())
     const images = data?.list?.img || []
 
     for (const img of images) {
@@ -140,8 +145,7 @@ export async function searchNIH(query: string, limit = 10): Promise<ProviderResu
     url.searchParams.set('q', query)
     url.searchParams.set('n', String(limit))
 
-    const res = await fetch(url.toString())
-    const data = await res.json()
+    const data = await fetchJson(url.toString())
     const items = data?.results || []
 
     for (const item of items) {
@@ -172,8 +176,7 @@ export async function searchNCI(query: string, limit = 10): Promise<ProviderResu
     url.searchParams.set('q', query)
     url.searchParams.set('n', String(limit))
 
-    const res = await fetch(url.toString())
-    const data = await res.json()
+    const data = await fetchJson(url.toString())
     const items = data?.results || []
 
     for (const item of items) {

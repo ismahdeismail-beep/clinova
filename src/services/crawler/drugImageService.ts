@@ -75,7 +75,7 @@ export async function getImageStats(): Promise<CrawlStatistics> {
   const { data: sourceData, error: sourceErr } = await client
     .from('drug_images')
     .select('source')
-    .limit(1000)
+    .limit(5000)
 
   const bySource: Record<string, number> = {}
   if (!sourceErr && sourceData) {
@@ -88,7 +88,7 @@ export async function getImageStats(): Promise<CrawlStatistics> {
   const { data: drugData, error: drugErr } = await client
     .from('drug_images')
     .select('drug_id')
-    .limit(1000)
+    .limit(5000)
 
   const uniqueDrugs = drugErr ? 0 : new Set(drugData?.map((r: any) => r.drug_id)).size
 
@@ -107,7 +107,7 @@ export async function getMissingDrugs(): Promise<string[]> {
   const { data: allDrugs } = await client
     .from('drug_monographs')
     .select('id, name, generic_name')
-    .limit(1000)
+    .limit(5000)
 
   if (!allDrugs) return []
 

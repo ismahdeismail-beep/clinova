@@ -381,8 +381,8 @@ function mapDrugRow(row: any): DrugMonograph {
 /**
  * Query drugs via the provided Supabase client (service-role on server, anon on client).
  * Falls back to DrugMonographService when no client is available.
- * This ensures the server-side KnowledgeEngine can reach the full 355-drug Supabase
- * index instead of being limited to the 149 bundled drugs.
+ * This ensures the server-side KnowledgeEngine can reach the full Supabase drug
+ * index instead of being limited to the bundled drugs.
  */
 async function queryDrugByName(client: any, name: string): Promise<DrugMonograph | null> {
   if (client) {

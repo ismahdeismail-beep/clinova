@@ -21,7 +21,7 @@ async function main() {
     .from('drug_monographs')
     .select('id, generic_name, name')
     .order('id')
-    .limit(1000)
+    .limit(5000)
 
   if (drugErr || !drugs) {
     console.error('Failed to fetch drugs:', drugErr?.message)

@@ -40,7 +40,7 @@ interface OpenFdaLabel {
     generic_name?: string[];
     brand_name?: string[];
     substance_name?: string[];
-   /pharm_class_epc?: string[];
+    pharm_class_epc?: string[];
   };
   indications_and_usage?: string[];
   dosage_and_administration?: string[];

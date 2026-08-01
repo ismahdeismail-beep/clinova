@@ -3,7 +3,7 @@
     "name": "Amoxicillin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -19,7 +19,7 @@
     "name": "Ampicillin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -27,7 +27,7 @@
     "name": "Benzylpenicillin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -35,7 +35,7 @@
     "name": "Phenoxymethylpenicillin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -43,7 +43,7 @@
     "name": "Flucloxacillin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -75,7 +75,7 @@
     "name": "Cefuroxime",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -83,7 +83,7 @@
     "name": "Ceftriaxone",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -91,7 +91,7 @@
     "name": "Cefotaxime",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -107,7 +107,7 @@
     "name": "Cefepime",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -115,7 +115,7 @@
     "name": "Cefixime",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -131,7 +131,7 @@
     "name": "Cefazolin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -147,7 +147,7 @@
     "name": "Meropenem",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -179,7 +179,7 @@
     "name": "Vancomycin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -187,7 +187,7 @@
     "name": "Teicoplanin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -195,7 +195,7 @@
     "name": "Linezolid",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -203,7 +203,7 @@
     "name": "Daptomycin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -219,7 +219,7 @@
     "name": "Gentamicin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -227,7 +227,7 @@
     "name": "Tobramycin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -243,7 +243,7 @@
     "name": "Neomycin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -251,7 +251,7 @@
     "name": "Erythromycin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -259,7 +259,7 @@
     "name": "Clarithromycin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -267,7 +267,7 @@
     "name": "Azithromycin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -275,7 +275,7 @@
     "name": "Doxycycline",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -283,7 +283,7 @@
     "name": "Tetracycline",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -299,7 +299,7 @@
     "name": "Ciprofloxacin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -307,7 +307,7 @@
     "name": "Levofloxacin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -315,7 +315,7 @@
     "name": "Moxifloxacin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -323,7 +323,7 @@
     "name": "Norfloxacin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -331,7 +331,7 @@
     "name": "Ofloxacin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -347,7 +347,7 @@
     "name": "Co-trimoxazole",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -355,7 +355,7 @@
     "name": "Metronidazole",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -379,7 +379,7 @@
     "name": "Fosfomycin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -387,7 +387,7 @@
     "name": "Clindamycin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -403,7 +403,7 @@
     "name": "Fusidic Acid",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -411,7 +411,7 @@
     "name": "Mupirocin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -419,7 +419,7 @@
     "name": "Fluconazole",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -427,7 +427,7 @@
     "name": "Itraconazole",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -435,7 +435,7 @@
     "name": "Voriconazole",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -467,7 +467,7 @@
     "name": "Nystatin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -491,7 +491,7 @@
     "name": "Terbinafine",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -499,7 +499,7 @@
     "name": "Griseofulvin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -531,7 +531,7 @@
     "name": "Ganciclovir",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -539,7 +539,7 @@
     "name": "Oseltamivir",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -579,7 +579,7 @@
     "name": "Sofosbuvir",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -595,7 +595,7 @@
     "name": "Daclatasvir",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -603,7 +603,7 @@
     "name": "Entecavir",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -627,7 +627,7 @@
     "name": "Lamivudine",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -635,7 +635,7 @@
     "name": "Zidovudine",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -643,7 +643,7 @@
     "name": "Efavirenz",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -651,7 +651,7 @@
     "name": "Dolutegravir",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -659,7 +659,7 @@
     "name": "Raltegravir",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -675,7 +675,7 @@
     "name": "Atazanavir",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -691,7 +691,7 @@
     "name": "Darunavir",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -707,7 +707,7 @@
     "name": "Artesunate",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -723,7 +723,7 @@
     "name": "Chloroquine",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -731,7 +731,7 @@
     "name": "Hydroxychloroquine",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -739,7 +739,7 @@
     "name": "Quinine",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -747,7 +747,7 @@
     "name": "Primaquine",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -779,7 +779,7 @@
     "name": "Albendazole",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -787,7 +787,7 @@
     "name": "Mebendazole",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -795,7 +795,7 @@
     "name": "Ivermectin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -803,7 +803,7 @@
     "name": "Praziquantel",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -843,7 +843,7 @@
     "name": "Isoniazid",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -851,7 +851,7 @@
     "name": "Rifampicin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -859,7 +859,7 @@
     "name": "Pyrazinamide",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -867,7 +867,7 @@
     "name": "Ethambutol",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -875,7 +875,7 @@
     "name": "Streptomycin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -931,7 +931,7 @@
     "name": "Sulfasalazine",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -939,7 +939,7 @@
     "name": "Dapsone",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1019,7 +1019,7 @@
     "name": "Polymyxin B",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1171,7 +1171,7 @@
     "name": "Ribavirin",
     "therapeuticClass": "Anti-infectives",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -1195,7 +1195,7 @@
     "name": "Lamotrigine",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1203,7 +1203,7 @@
     "name": "Ramipril",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1211,7 +1211,7 @@
     "name": "Enalapril",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1219,7 +1219,7 @@
     "name": "Lisinopril",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1291,7 +1291,7 @@
     "name": "Losartan",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1299,7 +1299,7 @@
     "name": "Valsartan",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1315,7 +1315,7 @@
     "name": "Candesartan",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1355,7 +1355,7 @@
     "name": "Sacubitril/Valsartan",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1363,7 +1363,7 @@
     "name": "Amlodipine",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1371,7 +1371,7 @@
     "name": "Nifedipine",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1379,7 +1379,7 @@
     "name": "Diltiazem",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1387,7 +1387,7 @@
     "name": "Verapamil",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1395,7 +1395,7 @@
     "name": "Felodipine",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -1435,7 +1435,7 @@
     "name": "Atenolol",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1443,7 +1443,7 @@
     "name": "Metoprolol",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1451,7 +1451,7 @@
     "name": "Bisoprolol",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1459,7 +1459,7 @@
     "name": "Carvedilol",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1467,7 +1467,7 @@
     "name": "Propranolol",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1531,7 +1531,7 @@
     "name": "Indapamide",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1539,7 +1539,7 @@
     "name": "Hydrochlorothiazide",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1579,7 +1579,7 @@
     "name": "Bumetanide",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1595,7 +1595,7 @@
     "name": "Spironolactone",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1627,7 +1627,7 @@
     "name": "Doxazosin",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1635,7 +1635,7 @@
     "name": "Prazosin",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1659,7 +1659,7 @@
     "name": "Tamsulosin",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -1675,7 +1675,7 @@
     "name": "Methyldopa",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1691,7 +1691,7 @@
     "name": "Hydralazine",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1699,7 +1699,7 @@
     "name": "Minoxidil",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1771,7 +1771,7 @@
     "name": "Atorvastatin",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1779,7 +1779,7 @@
     "name": "Rosuvastatin",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1787,7 +1787,7 @@
     "name": "Simvastatin",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1795,7 +1795,7 @@
     "name": "Pravastatin",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1875,7 +1875,7 @@
     "name": "Clopidogrel",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1883,7 +1883,7 @@
     "name": "Ticagrelor",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1915,7 +1915,7 @@
     "name": "Digoxin",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1923,7 +1923,7 @@
     "name": "Amiodarone",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1955,7 +1955,7 @@
     "name": "Adenosine",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1963,7 +1963,7 @@
     "name": "Magnesium Sulfate",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1971,7 +1971,7 @@
     "name": "Milrinone",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -1979,7 +1979,7 @@
     "name": "Dobutamine",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -1987,7 +1987,7 @@
     "name": "Dopamine",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2043,7 +2043,7 @@
     "name": "Aspirin",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2051,7 +2051,7 @@
     "name": "Warfarin",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2059,7 +2059,7 @@
     "name": "Heparin",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2067,7 +2067,7 @@
     "name": "Enoxaparin",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2083,7 +2083,7 @@
     "name": "Rivaroxaban",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2091,7 +2091,7 @@
     "name": "Apixaban",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2099,7 +2099,7 @@
     "name": "Dabigatran",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2147,7 +2147,7 @@
     "name": "Tranexamic Acid",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2195,7 +2195,7 @@
     "name": "Tacrolimus",
     "therapeuticClass": "Cardiovascular",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2219,7 +2219,7 @@
     "name": "Methotrexate",
     "therapeuticClass": "Immunology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2235,7 +2235,7 @@
     "name": "Infliximab",
     "therapeuticClass": "Immunology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2243,7 +2243,7 @@
     "name": "Adalimumab",
     "therapeuticClass": "Immunology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2259,7 +2259,7 @@
     "name": "Rituximab",
     "therapeuticClass": "Immunology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2267,7 +2267,7 @@
     "name": "Tocilizumab",
     "therapeuticClass": "Immunology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2379,7 +2379,7 @@
     "name": "Cyclophosphamide",
     "therapeuticClass": "Immunology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2395,7 +2395,7 @@
     "name": "Cetirizine",
     "therapeuticClass": "Immunology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2403,7 +2403,7 @@
     "name": "Loratadine",
     "therapeuticClass": "Immunology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2435,7 +2435,7 @@
     "name": "Chlorphenamine",
     "therapeuticClass": "Immunology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2451,7 +2451,7 @@
     "name": "Promethazine",
     "therapeuticClass": "Immunology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2459,7 +2459,7 @@
     "name": "Montelukast",
     "therapeuticClass": "Immunology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2571,7 +2571,7 @@
     "name": "Trastuzumab",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2715,7 +2715,7 @@
     "name": "Letrozole",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2723,7 +2723,7 @@
     "name": "Anastrozole",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2739,7 +2739,7 @@
     "name": "Bicalutamide",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2771,7 +2771,7 @@
     "name": "Goserelin",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2803,7 +2803,7 @@
     "name": "Capecitabine",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -2811,7 +2811,7 @@
     "name": "Gemcitabine",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2819,7 +2819,7 @@
     "name": "Pemetrexed",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2851,7 +2851,7 @@
     "name": "Vincristine",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2859,7 +2859,7 @@
     "name": "Vinblastine",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2875,7 +2875,7 @@
     "name": "Paclitaxel",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2883,7 +2883,7 @@
     "name": "Docetaxel",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2899,7 +2899,7 @@
     "name": "Doxorubicin",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2931,7 +2931,7 @@
     "name": "Bleomycin",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2947,7 +2947,7 @@
     "name": "Cisplatin",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2955,7 +2955,7 @@
     "name": "Carboplatin",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -2963,7 +2963,7 @@
     "name": "Oxaliplatin",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3067,7 +3067,7 @@
     "name": "Hydroxyurea",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3171,7 +3171,7 @@
     "name": "Filgrastim",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3179,7 +3179,7 @@
     "name": "Pegfilgrastim",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3187,7 +3187,7 @@
     "name": "Epoetin Alfa",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3195,7 +3195,7 @@
     "name": "Darbepoetin Alfa",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3203,7 +3203,7 @@
     "name": "Ondansetron",
     "therapeuticClass": "Oncology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3227,7 +3227,7 @@
     "name": "Metformin",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3251,7 +3251,7 @@
     "name": "Gliclazide",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3451,7 +3451,7 @@
     "name": "Levothyroxine",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3467,7 +3467,7 @@
     "name": "Carbimazole",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3475,7 +3475,7 @@
     "name": "Methimazole",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -3483,7 +3483,7 @@
     "name": "Propylthiouracil",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3491,7 +3491,7 @@
     "name": "Prednisolone",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3507,7 +3507,7 @@
     "name": "Dexamethasone",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3515,7 +3515,7 @@
     "name": "Hydrocortisone",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3523,7 +3523,7 @@
     "name": "Methylprednisolone",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3531,7 +3531,7 @@
     "name": "Betamethasone",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3539,7 +3539,7 @@
     "name": "Triamcinolone",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3555,7 +3555,7 @@
     "name": "Desmopressin",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3667,7 +3667,7 @@
     "name": "Octreotide",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3675,7 +3675,7 @@
     "name": "Calcitonin",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3683,7 +3683,7 @@
     "name": "Alendronate",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3699,7 +3699,7 @@
     "name": "Zoledronic Acid",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3715,7 +3715,7 @@
     "name": "Denosumab",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3723,7 +3723,7 @@
     "name": "Teriparatide",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3739,7 +3739,7 @@
     "name": "Calcium Carbonate",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3755,7 +3755,7 @@
     "name": "Cholecalciferol",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3763,7 +3763,7 @@
     "name": "Ergocalciferol",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3771,7 +3771,7 @@
     "name": "Calcitriol",
     "therapeuticClass": "Endocrine",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -3859,7 +3859,7 @@
     "name": "Salbutamol",
     "therapeuticClass": "Respiratory",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -3931,7 +3931,7 @@
     "name": "Ipratropium",
     "therapeuticClass": "Respiratory",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -3939,7 +3939,7 @@
     "name": "Tiotropium",
     "therapeuticClass": "Respiratory",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -3971,7 +3971,7 @@
     "name": "Beclometasone",
     "therapeuticClass": "Respiratory",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -3979,7 +3979,7 @@
     "name": "Budesonide",
     "therapeuticClass": "Respiratory",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4011,7 +4011,7 @@
     "name": "Mometasone",
     "therapeuticClass": "Respiratory",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4075,7 +4075,7 @@
     "name": "Acetylcysteine",
     "therapeuticClass": "Respiratory",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4147,7 +4147,7 @@
     "name": "Theophylline",
     "therapeuticClass": "Respiratory",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -4155,7 +4155,7 @@
     "name": "Aminophylline",
     "therapeuticClass": "Respiratory",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -4179,7 +4179,7 @@
     "name": "Metoclopramide",
     "therapeuticClass": "Gastrointestinal",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4187,7 +4187,7 @@
     "name": "Omeprazole",
     "therapeuticClass": "Gastrointestinal",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4195,7 +4195,7 @@
     "name": "Esomeprazole",
     "therapeuticClass": "Gastrointestinal",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4203,7 +4203,7 @@
     "name": "Pantoprazole",
     "therapeuticClass": "Gastrointestinal",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4227,7 +4227,7 @@
     "name": "Ranitidine",
     "therapeuticClass": "Gastrointestinal",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4235,7 +4235,7 @@
     "name": "Famotidine",
     "therapeuticClass": "Gastrointestinal",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4259,7 +4259,7 @@
     "name": "Sodium Bicarbonate",
     "therapeuticClass": "Gastrointestinal",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4315,7 +4315,7 @@
     "name": "Loperamide",
     "therapeuticClass": "Gastrointestinal",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4339,7 +4339,7 @@
     "name": "Lactulose",
     "therapeuticClass": "Gastrointestinal",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4395,7 +4395,7 @@
     "name": "Senna",
     "therapeuticClass": "Gastrointestinal",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4435,7 +4435,7 @@
     "name": "Mesalazine",
     "therapeuticClass": "Gastrointestinal",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -4459,7 +4459,7 @@
     "name": "Paracetamol",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4467,7 +4467,7 @@
     "name": "Ibuprofen",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4475,7 +4475,7 @@
     "name": "Naproxen",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4483,7 +4483,7 @@
     "name": "Diclofenac",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4499,7 +4499,7 @@
     "name": "Indomethacin",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4507,7 +4507,7 @@
     "name": "Piroxicam",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4515,7 +4515,7 @@
     "name": "Meloxicam",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4523,7 +4523,7 @@
     "name": "Celecoxib",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -4531,7 +4531,7 @@
     "name": "Etoricoxib",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -4555,7 +4555,7 @@
     "name": "Morphine",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4571,7 +4571,7 @@
     "name": "Tramadol",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4659,7 +4659,7 @@
     "name": "Gabapentin",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4667,7 +4667,7 @@
     "name": "Pregabalin",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4675,7 +4675,7 @@
     "name": "Carbamazepine",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4683,7 +4683,7 @@
     "name": "Duloxetine",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4691,7 +4691,7 @@
     "name": "Amitriptyline",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4755,7 +4755,7 @@
     "name": "Lidocaine",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4763,7 +4763,7 @@
     "name": "Bupivacaine",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4771,7 +4771,7 @@
     "name": "Ropivacaine",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4779,7 +4779,7 @@
     "name": "Prilocaine",
     "therapeuticClass": "Analgesics",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -4875,7 +4875,7 @@
     "name": "Sertraline",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4915,7 +4915,7 @@
     "name": "Venlafaxine",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -4931,7 +4931,7 @@
     "name": "Milnacipran",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -5003,7 +5003,7 @@
     "name": "Selegiline",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5027,7 +5027,7 @@
     "name": "Mirtazapine",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5067,7 +5067,7 @@
     "name": "Ketamine",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5083,7 +5083,7 @@
     "name": "Lithium",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5115,7 +5115,7 @@
     "name": "Phenobarbital",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5123,7 +5123,7 @@
     "name": "Levetiracetam",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5203,7 +5203,7 @@
     "name": "Diazepam",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5211,7 +5211,7 @@
     "name": "Lorazepam",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5227,7 +5227,7 @@
     "name": "Midazolam",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5251,7 +5251,7 @@
     "name": "Chlordiazepoxide",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5275,7 +5275,7 @@
     "name": "Hydroxyzine",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5291,7 +5291,7 @@
     "name": "Zopiclone",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -5323,7 +5323,7 @@
     "name": "Haloperidol",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5371,7 +5371,7 @@
     "name": "Olanzapine",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5379,7 +5379,7 @@
     "name": "Risperidone",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5555,7 +5555,7 @@
     "name": "Entacapone",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5627,7 +5627,7 @@
     "name": "Rasagiline",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5731,7 +5731,7 @@
     "name": "Naloxone",
     "therapeuticClass": "CNS",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5747,7 +5747,7 @@
     "name": "Ferrous Sulphate",
     "therapeuticClass": "Haematology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5755,7 +5755,7 @@
     "name": "Ferrous Fumarate",
     "therapeuticClass": "Haematology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5771,7 +5771,7 @@
     "name": "Iron Sucrose",
     "therapeuticClass": "Haematology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5787,7 +5787,7 @@
     "name": "Iron Dextran",
     "therapeuticClass": "Haematology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5795,7 +5795,7 @@
     "name": "Folic Acid",
     "therapeuticClass": "Haematology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5803,7 +5803,7 @@
     "name": "Cyanocobalamin",
     "therapeuticClass": "Haematology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5835,7 +5835,7 @@
     "name": "Vitamin K",
     "therapeuticClass": "Haematology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5875,7 +5875,7 @@
     "name": "Isotretinoin",
     "therapeuticClass": "Dermatology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5883,7 +5883,7 @@
     "name": "Tretinoin",
     "therapeuticClass": "Dermatology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5891,7 +5891,7 @@
     "name": "Adapalene",
     "therapeuticClass": "Dermatology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -5899,7 +5899,7 @@
     "name": "Benzoyl Peroxide",
     "therapeuticClass": "Dermatology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -5939,7 +5939,7 @@
     "name": "Clobetasol",
     "therapeuticClass": "Dermatology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6011,7 +6011,7 @@
     "name": "Permethrin",
     "therapeuticClass": "Dermatology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6027,7 +6027,7 @@
     "name": "Salicylic Acid",
     "therapeuticClass": "Dermatology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6051,7 +6051,7 @@
     "name": "Calcipotriol",
     "therapeuticClass": "Dermatology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6067,7 +6067,7 @@
     "name": "Pimecrolimus",
     "therapeuticClass": "Dermatology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -6083,7 +6083,7 @@
     "name": "Silver Sulfadiazine",
     "therapeuticClass": "Dermatology",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6123,7 +6123,7 @@
     "name": "Thiamine",
     "therapeuticClass": "Nutrition/Vitamins",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -6147,7 +6147,7 @@
     "name": "Pyridoxine",
     "therapeuticClass": "Nutrition/Vitamins",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "FDA",
     "priority": "supplementary"
   },
@@ -6235,7 +6235,7 @@
     "name": "Calcium Gluconate",
     "therapeuticClass": "Nutrition/Vitamins",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6299,7 +6299,7 @@
     "name": "Dextrose",
     "therapeuticClass": "Nutrition/Vitamins",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6315,7 +6315,7 @@
     "name": "Flumazenil",
     "therapeuticClass": "Toxicology/Antidotes",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6323,7 +6323,7 @@
     "name": "Atropine",
     "therapeuticClass": "Toxicology/Antidotes",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6331,7 +6331,7 @@
     "name": "Pralidoxime",
     "therapeuticClass": "Toxicology/Antidotes",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6355,7 +6355,7 @@
     "name": "Activated Charcoal",
     "therapeuticClass": "Toxicology/Antidotes",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6371,7 +6371,7 @@
     "name": "Deferoxamine",
     "therapeuticClass": "Toxicology/Antidotes",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6419,7 +6419,7 @@
     "name": "Ethanol",
     "therapeuticClass": "Toxicology/Antidotes",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6523,7 +6523,7 @@
     "name": "Sodium Chloride",
     "therapeuticClass": "Renal/Electrolytes",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6531,7 +6531,7 @@
     "name": "Calcium Chloride",
     "therapeuticClass": "Renal/Electrolytes",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6539,7 +6539,7 @@
     "name": "Mannitol",
     "therapeuticClass": "Renal/Electrolytes",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6563,7 +6563,7 @@
     "name": "Furosemide",
     "therapeuticClass": "Renal/Electrolytes",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6571,7 +6571,7 @@
     "name": "Acetazolamide",
     "therapeuticClass": "Renal/Electrolytes",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -6843,7 +6843,7 @@
     "name": "Allopurinol",
     "therapeuticClass": "Other",
     "sourceMentions": 0,
-    "status": "new",
+    "status": "seeded",
     "source": "KEML",
     "priority": "essential"
   },
@@ -7998,5 +7998,1005 @@
     "status": "new",
     "source": "FDA",
     "priority": "supplementary"
+  },
+  {
+    "name": "Abacavir/Lamivudine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Abacavir/Lamivudine/Zidovudine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Abaloparatide",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Abemaciclib",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Acalabrutinib",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Aceclofenac",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Acemetacin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Acenocoumarol",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Acitretin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Afatinib",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Albumin Human",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Albuterol",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Alclometasone",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Alendronic Acid",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Aliskiren",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Alogliptin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Amoxicillin/Clavulanic Acid",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Ampicillin/Sulbactam",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Amprenavir",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Anidulafungin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Apalutamide",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Bendamustine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Benzathine Benzylpenicillin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Benzhexol",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Benzocaine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Betahistine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Bexarotene",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Bictegravir",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Bivalirudin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Caffeine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Cefaclor",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Cefadroxil",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Cefoperazone",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Ceftibuten",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Ceftizoxime",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Ceritinib",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Chlorpheniramine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Clomifene",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Daratumumab",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Deflazacort",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Dexketoprofen",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Dexlansoprazole",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Dicloxacillin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Didanosine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Dimenhydrinate",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Droperidol",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Ephedrine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Esmolol",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Ethinylestradiol",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Etodolac",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Everolimus",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Famciclovir",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Ferrous Sulfate",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Flucytosine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Gatifloxacin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Gemifloxacin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Glibenclamide",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Gliquidone",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Glyceryl Trinitrate",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Glycopyrrolate",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Hyoscine Butylbromide",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Insulin Premix",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Isavuconazole",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Isradipine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Kanamycin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Ketoprofen",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Ketotifen",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Lomefloxacin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Maraviroc",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Meclizine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Megestrol",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Melatonin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Mitotane",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Nabumetone",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Nafcillin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Naphazoline",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Nicardipine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Nicotine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Olopatadine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Olsalazine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Orlistat",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Oxacillin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Oxymetazoline",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Oxytetracycline",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Pamidronate",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Penciclovir",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Penicillin V",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Pentoxifylline",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Phenoxybenzamine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Piperacillin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Pirfenidone",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Procaine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Prochlorperazine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Propantheline",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Pseudoephedrine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Quinidine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Rifabutin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Rilpivirine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Riluzole",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Rimantadine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Roxithromycin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Rufinamide",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Scopolamine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Secnidazole",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Sertaconazole",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Sodium Cromoglicate",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Spectinomycin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Succinylcholine",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Sufentanil",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Sulbactam",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Sulfamethoxazole/Trimethoprim",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Sulindac",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Thiotepa",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Tirofiban",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Tolbutamide",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Tolcapone",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Tolmetin",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Torasemide",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Trazodone",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Triazolam",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Trospium",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Valganciclovir",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Vilazodone",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Xylometazoline",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
+  },
+  {
+    "name": "Zaleplon",
+    "therapeuticClass": "Unclassified",
+    "sourceMentions": 0,
+    "status": "new",
+    "source": "Master List",
+    "priority": "complementary"
   }
 ]

@@ -35,18 +35,33 @@ function generateSearchQueries(genericName: string, dosageForms?: string[]): str
   return queries
 }
 
-// ── Search all providers for a query ───────────────────────────────
-async function searchAllProviders(query: string): Promise<ProviderResult[]> {
-  const results: ProviderResult[] = []
-  for (const provider of PROVIDERS) {
-    try {
-      const found = await provider.fn(query, 5)
-      results.push(...found)
-    } catch (e) {
-      console.error(`[${provider.name}] search failed for "${query}":`, e)
-    }
+// ── Run a promise with a hard timeout ──────────────────────────────
+async function withTimeout<T>(p: Promise<T>, ms: number): Promise<T> {
+  let timer: NodeJS.Timeout
+  const timeout = new Promise<never>((_, reject) => {
+    timer = setTimeout(() => reject(new Error('provider timeout')), ms)
+  })
+  try {
+    return await Promise.race([p, timeout])
+  } finally {
+    clearTimeout(timer!)
   }
-  return results
+}
+
+// ── Search all providers for a query (in parallel) ─────────────────
+async function searchAllProviders(query: string): Promise<ProviderResult[]> {
+  const settled = await Promise.allSettled(
+    PROVIDERS.map((provider) =>
+      withTimeout(
+        provider.fn(query, 5).catch((e: any) => {
+          console.error(`[${provider.name}] search failed for "${query}":`, e?.message ?? e)
+          return [] as ProviderResult[]
+        }),
+        20000,
+      ),
+    ),
+  )
+  return settled.flatMap((s) => (s.status === 'fulfilled' ? s.value : ([] as ProviderResult[])))
 }
 
 // ── Check if image is duplicate ────────────────────────────────────
@@ -229,7 +244,7 @@ export async function crawlAllMissing(): Promise<{
   const { data: drugs, error: drugErr } = await adminSupabase
     .from('drug_monographs')
     .select('id, generic_name, name')
-    .limit(1000)
+    .limit(5000)
 
   if (drugErr || !drugs) {
     throw new Error(`Failed to fetch drugs: ${drugErr?.message}`)

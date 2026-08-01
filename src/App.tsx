@@ -29,6 +29,7 @@ import { InstallPWA } from './components/InstallPWA';
 import BottomNav from './components/BottomNav';
 
 function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
+  const navigate = useNavigate();
   const { userData } = useAuth();
   const { notifications, unreadCount, markAsRead, markAllAsRead } = useNotifications();
   const [showNotifPanel, setShowNotifPanel] = React.useState(false);
@@ -70,7 +71,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
               aria-label="Open search"
               className="w-full bg-[var(--surface-dim)]/50 border border-[var(--border)] text-[var(--text-muted)] flex items-center justify-between cursor-pointer hover:border-[var(--primary)] transition-all duration-300 backdrop-blur-sm pl-10 pr-4 py-2 rounded-full text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)]"
               onClick={() => {
-                window.location.href = '/knowledge';
+                navigate('/knowledge');
               }}
             >
               <span className="truncate">Search drugs, diseases, guidelines...</span>
@@ -98,7 +99,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
           <div className="relative" ref={notifRef}>
             <button
               onClick={() => setShowNotifPanel(!showNotifPanel)}
-              className="relative p-2 rounded-full text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)] transition-all cursor-pointer"
+              className="relative p-2 rounded-full text-[var(--text-muted)] hover:text-[var(--text)] hover:bg-[var(--surface-dim)] transition-all cursor-pointer active:scale-90"
               aria-label="Notifications"
             >
               {unreadCount > 0 ? <BellRing size={18} className="text-[var(--primary)]" /> : <Bell size={18} />}
@@ -110,13 +111,13 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
             </button>
 
             {showNotifPanel && (
-              <div className="absolute right-0 top-full mt-2 w-80 sm:w-96 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-xl z-50 overflow-hidden">
+              <div className="absolute right-0 top-full mt-2 w-[calc(100vw-2rem)] max-w-sm sm:w-96 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-xl z-50 overflow-hidden">
                 <div className="p-3 border-b border-[var(--border)] flex items-center justify-between">
                   <h4 className="font-bold text-sm text-[var(--text)]">Notifications</h4>
                   {unreadCount > 0 && (
                     <button
                       onClick={() => { markAllAsRead(); }}
-                      className="text-[10px] font-bold text-[var(--primary)] hover:underline cursor-pointer"
+                      className="text-[10px] font-bold text-[var(--primary)] hover:underline cursor-pointer active:scale-95"
                     >
                       Mark all read
                     </button>
@@ -135,11 +136,11 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
                         onClick={() => {
                           markAsRead(n.id);
                           if (n.link) {
-                            window.location.href = n.link;
+                            navigate(n.link);
                           }
                           setShowNotifPanel(false);
                         }}
-                        className={`w-full p-3 flex items-start gap-3 hover:bg-[var(--surface-dim)] transition-colors text-left cursor-pointer ${!n.read ? 'bg-[var(--primary)]/[0.03]' : ''}`}
+                        className={`w-full p-3 flex items-start gap-3 hover:bg-[var(--surface-dim)] active:bg-[var(--surface-dim)] transition-colors text-left cursor-pointer ${!n.read ? 'bg-[var(--primary)]/[0.03]' : ''}`}
                       >
                         <span className={`w-7 h-7 rounded-lg ${n.bg} flex items-center justify-center shrink-0 mt-0.5`}>
                           <BellRing size={12} className={n.color} />

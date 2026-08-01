@@ -4,7 +4,7 @@ import {
   Bot, Send, User, BrainCircuit, Library, Pill, Activity, 
   FlaskConical, FileText, CheckCircle2, ChevronDown, ChevronRight, Loader2, 
   Database, AlertCircle, Mic, MicOff, ArrowDown, X, Layers, Sparkles,
-  Download, FileDown, Copy, Check, Menu, Plus, Settings,
+  Download, FileDown, Copy, Check, Menu, Plus, Settings, ArrowLeft, Home,
   Trash2, AlertTriangle, Stethoscope, GraduationCap, HeartPulse
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -1089,7 +1089,7 @@ export default function ClinovaSupportScreen() {
 
   return (
     <div 
-      className="fixed inset-0 md:left-64 md:top-[calc(4rem+env(safe-area-inset-top,0px))] md:bottom-0 md:right-0 bg-[var(--bg)] text-[var(--text)] flex flex-row overflow-hidden z-50 font-sans"
+      className="flex-1 bg-[var(--bg)] text-[var(--text)] flex flex-row overflow-hidden font-sans relative h-[calc(100dvh-8rem-env(safe-area-inset-top,0px))] md:h-[calc(100dvh-4rem-env(safe-area-inset-top,0px))]"
     >
       
       {/* Sidebar for Mobile & Desktop */}
@@ -1121,6 +1121,22 @@ export default function ClinovaSupportScreen() {
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
             >
               <Menu size={18} className="text-[var(--text)]" />
+            </button>
+            <button
+              onClick={() => navigate('/')}
+              className="hidden md:flex p-2 rounded-xl border border-[var(--border)] hover:bg-[var(--surface-dim)] transition-all cursor-pointer shrink-0"
+              title="Back to Dashboard"
+              aria-label="Back to Dashboard"
+            >
+              <ArrowLeft size={18} className="text-[var(--text)]" />
+            </button>
+            <button
+              onClick={() => navigate('/')}
+              className="md:hidden p-2 rounded-xl border border-[var(--border)] hover:bg-[var(--surface-dim)] transition-all cursor-pointer shrink-0"
+              title="Home"
+              aria-label="Home"
+            >
+              <Home size={18} className="text-[var(--text)]" />
             </button>
             <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[var(--primary)]/15 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20 shadow-inner shrink-0">
               <Bot size={20} className="animate-pulse" />
@@ -1234,7 +1250,7 @@ export default function ClinovaSupportScreen() {
           onScroll={handleScroll}
           className="flex-1 overflow-y-auto p-3 sm:p-4 md:p-6 scrollbar-thin scroll-smooth"
         >
-          <div className="w-full flex flex-col gap-4 sm:gap-6">
+          <div className="w-full max-w-3xl mx-auto flex flex-col gap-4 sm:gap-6">
             {/* Welcome State / Initial Empty State */}
           {messages.length === 0 && (
             <div className="max-w-3xl mx-auto py-3 sm:py-8 px-2">

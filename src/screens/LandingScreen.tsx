@@ -10,7 +10,10 @@ import ClinovaLogo from '../components/ClinovaLogo'
 import { BUNDLED_DRUGS } from '../data/drugIndexData'
 import { INTEGRATED_UNITS_MAP } from '../data/curriculum'
 import { INITIAL_CASES, ALL_CLINICAL_CASES } from '../data/clinicalCasesData'
+import { getAllCarePlanDiseases } from '../data/carePlanData'
 import { supabase } from '../lib/supabase'
+
+const CARE_PLAN_COUNT = getAllCarePlanDiseases().length
 
 export default function LandingScreen() {
   const navigate = useNavigate()
@@ -41,7 +44,7 @@ export default function LandingScreen() {
       icon: BookOpen,
       title: 'Education Hub',
       description:
-        'Integrated clinical pharmacy curriculum with disease monographs, study guides, tutor sessions, flashcards, exam prep, board exam modules, and curated online pharmacy resources.',
+        'Five integrated modules — Exam (Board Exam & Exam Prep), Clinical Pharmacy & Therapeutics, Online Books, Clinical Cases, and Clinova Support — with disease monographs, study guides, tutor sessions, flashcards, and curated pharmacy resources.',
       gradient: 'from-sky-500 to-blue-600',
     },
     {
@@ -85,7 +88,7 @@ export default function LandingScreen() {
     { value: String(therapeuticAreaCount), label: 'Therapeutic Areas', icon: Layers },
     { value: String(caseCount), label: 'Clinical Cases', icon: Stethoscope },
     { value: String(drugCount), label: 'Drug Monographs', icon: Pill },
-    { value: '92', label: 'Care Plans', icon: ClipboardCheck },
+    { value: String(CARE_PLAN_COUNT), label: 'Care Plans', icon: ClipboardCheck },
   ]
 
   const steps = [

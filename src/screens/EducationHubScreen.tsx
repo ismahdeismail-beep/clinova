@@ -6,7 +6,7 @@ import {
   Briefcase, HelpCircle, Layers, Headphones, FileArchive, Calendar, BrainCircuit,
   Bookmark, Download, History, ChevronLeft, Bot, Play, List, Sparkles, CheckCircle2, Clock, Database, Mic,
   Trash2, Folder, Plus, FileSignature, RotateCcw, Check, AlertCircle, HelpCircle as QuestionIcon, X, Printer, Star, ArrowUpRight, Flag,
-  Compass, FileDown, MoreHorizontal, ArrowLeft, ArrowRight, AlertTriangle, GraduationCap
+  Compass, FileDown, MoreHorizontal, ArrowLeft, ArrowRight, AlertTriangle, GraduationCap, Stethoscope
 } from 'lucide-react';
 import Markdown from 'react-markdown';
 import html2canvas from 'html2canvas';
@@ -171,6 +171,11 @@ export default function EducationHubScreen() {
     const subMatch = !mod ? findSubModule(moduleId) : undefined;
     
     if (mod) {
+      if (mod.external) {
+        // External modules open their dedicated screen directly (deep-link guard)
+        navigate(mod.id === 'cases' ? '/cases' : mod.id === 'assistant' ? '/assistant' : `/knowledge/${mod.id}`, { replace: true });
+        return;
+      }
       if (mod.id !== selectedModule?.id) setSelectedModule(mod);
       if (selectedSubModule) setSelectedSubModule(null);
     } else if (subMatch) {
@@ -208,6 +213,10 @@ export default function EducationHubScreen() {
   const handleModuleClick = (mod: EducationModule) => {
   if (mod.id === 'cases') {
     navigate('/cases');
+    return;
+  }
+  if (mod.id === 'assistant') {
+    navigate('/assistant');
     return;
   }
   if (mod.id === 'drug_info') {
@@ -565,7 +574,8 @@ function ModuleIcon({ name, className }: { name?: string, className?: string }) 
   const icons: Record<string, any> = {
     Activity, Accessibility, Dna, FlaskConical, Droplets, Flame, Beaker, HeartPulse,
     BookOpen, Bug, Skull, Heart, Award, FileText, Briefcase, HelpCircle, Layers,
-    Headphones, FileArchive, Calendar, BrainCircuit, Bookmark, Download, History, Mic, GraduationCap
+    Headphones, FileArchive, Calendar, BrainCircuit, Bookmark, Download, History, Mic, GraduationCap,
+    Bot, Stethoscope
   };
   const Icon = name ? icons[name] || BookOpen : BookOpen;
   return <Icon className={className} size={24} />;
@@ -622,7 +632,7 @@ function ModuleCard({
         </div>
         <div>
           <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors whitespace-normal break-words">{module.title}</h3>
-          <p className="text-xs text-[var(--text-muted)] mt-0.5">{getModuleUnits(module.id).length} Standard Units</p>
+          <p className="text-xs text-[var(--text-muted)] mt-0.5">{module.external ? 'Opens dedicated module screen' : `${getModuleUnits(module.id).length} Standard Units`}</p>
         </div>
       </div>
       <p className="text-xs text-[var(--text-muted)] line-clamp-2 mt-auto">{module.description}</p>

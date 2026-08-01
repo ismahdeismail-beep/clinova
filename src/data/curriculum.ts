@@ -1004,6 +1004,8 @@ export interface EducationModule {
   color?: string;
   /** Optional sub-modules for nested navigation */
   subModules?: EducationSubModule[];
+  /** External modules open a dedicated screen instead of a drill-in unit view */
+  external?: boolean;
 }
 
 export interface EducationSubModule {
@@ -1073,6 +1075,24 @@ export const EDUCATION_MODULES: EducationModule[] = [
     isIntegrated: false,
     icon: 'BookOpen',
     color: 'sky',
+  },
+  {
+    id: 'cases',
+    title: 'Clinical Cases',
+    description: 'Interactive clinical case simulations to practice diagnosis, treatment, and patient management decisions.',
+    isIntegrated: false,
+    external: true,
+    icon: 'Stethoscope',
+    color: 'rose',
+  },
+  {
+    id: 'assistant',
+    title: 'Clinova Support',
+    description: 'AI clinical decision support — ask clinical questions and get evidence-based, guideline-anchored answers.',
+    isIntegrated: false,
+    external: true,
+    icon: 'Bot',
+    color: 'cyan',
   },
 ];
 

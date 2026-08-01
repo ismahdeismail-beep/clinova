@@ -22,6 +22,7 @@ import {
   BrainCircuit,
   TrendingUp,
   ClipboardCheck,
+  Award,
   X,
   ChevronLeft,
   Clock,
@@ -119,8 +120,22 @@ const QUICK_LINKS = [
     to: '/knowledge',
     icon: BookOpen,
     label: 'Education Hub',
-    desc: 'Disease monographs, study materials & resources',
+    desc: 'Exam, therapeutics, books, cases & AI support',
     gradient: 'from-emerald-500 to-emerald-600',
+  },
+  {
+    to: '/knowledge/exam/board-exam',
+    icon: Award,
+    label: 'Board Exam',
+    desc: 'Dedicated mock papers & revision',
+    gradient: 'from-violet-500 to-violet-600',
+  },
+  {
+    to: '/knowledge/exam/prep',
+    icon: GraduationCap,
+    label: 'Exam Prep',
+    desc: 'Mock papers in 30/40/30 format',
+    gradient: 'from-fuchsia-500 to-purple-600',
   },
   {
     to: '/cases',
@@ -191,7 +206,7 @@ const DAILY_ARTICLES = [
   },
   {
     title: 'How to Use the Education Hub Effectively',
-    summary: 'Navigate modules, track your progress, and use the curriculum graph to plan your study path across clinical pharmacy and pharmacology.',
+    summary: 'Five modules — Exam (Board Exam & Exam Prep), Clinical Pharmacy & Therapeutics, Online Books, Clinical Cases, and Clinova Support. Navigate modules, track your progress, and use the curriculum graph to plan your study path.',
     category: 'Guide',
     readTime: '3 min read',
     badge: 'Tips',
@@ -443,7 +458,7 @@ export default function DashboardScreen() {
           <Target size={16} className="text-[var(--primary)]" />
           Quick Access
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-3">
           {QUICK_LINKS.map((link, idx) => {
             const Icon = link.icon
             return (

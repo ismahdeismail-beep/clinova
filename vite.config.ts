@@ -12,10 +12,14 @@ export default defineConfig(() => {
       VitePWA({
         registerType: 'autoUpdate',
         includeAssets: ['clinova_logo.jpg'],
+        cacheId: 'clinova-app-v1',
         workbox: {
           globPatterns: ['**/*.{js,css,html,ico,png,jpg,jpeg,svg}'],
           navigateFallback: '/index.html',
-          maximumFileSizeToCacheInBytes: 8 * 1024 * 1024
+          maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
+          skipWaiting: true,
+          clientsClaim: true,
+          cleanupOutdatedCaches: true
         },
         manifest: {
           name: 'Clinova OS',

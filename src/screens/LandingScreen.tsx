@@ -10,6 +10,7 @@ import ClinovaLogo from '../components/ClinovaLogo'
 import { BUNDLED_DRUGS } from '../data/drugIndexData'
 import { INTEGRATED_UNITS_MAP } from '../data/curriculum'
 import { INITIAL_CASES, ALL_CLINICAL_CASES } from '../data/clinicalCasesData'
+import { supabase } from '../lib/supabase'
 
 export default function LandingScreen() {
   const navigate = useNavigate()
@@ -19,13 +20,12 @@ export default function LandingScreen() {
   const therapeuticAreaCount = Object.keys(INTEGRATED_UNITS_MAP).length
 
   React.useEffect(() => {
-    const { supabase } = require('../lib/supabase')
     if (!supabase) return
-    supabase.from('drug_monographs').select('id', { count: 'exact', head: true }).then(({ data, error }) => {
-      if (!error && data) setDrugCount(data.count || 0)
+    supabase.from('drug_monographs').select('id', { count: 'exact', head: true }).then(({ count, error }) => {
+      if (!error && typeof count === 'number') setDrugCount(count)
     })
-    supabase.from('clinical_cases').select('id', { count: 'exact', head: true }).then(({ data, error }) => {
-      if (!error && data) setCaseCount(data.count || 0)
+    supabase.from('clinical_cases').select('id', { count: 'exact', head: true }).then(({ count, error }) => {
+      if (!error && typeof count === 'number') setCaseCount(count)
     })
   }, [])
 

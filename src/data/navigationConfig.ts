@@ -1,6 +1,6 @@
 import {
   BookOpen, FolderOpen, Pill,
-  GraduationCap, ClipboardCheck,
+  GraduationCap, ClipboardCheck, ClipboardList,
   Settings, type LucideIcon,
 } from 'lucide-react'
 

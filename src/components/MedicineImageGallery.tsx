@@ -1,5 +1,12 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { Search, Loader2, ImageOff, ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { Loader2, ImageOff, WifiOff } from 'lucide-react';
+import {
+  cacheDrugImages,
+  cleanupImageCache,
+  getCachedDrugImages,
+  getCachedDrugImagesByGeneric,
+  type CachedDrugImage,
+} from '../lib/localDb';
 
 interface DrugImage {
   id: string;
@@ -17,6 +24,9 @@ interface DrugImage {
   page_url: string;
   verified: boolean;
   quality_score: number;
+  blobUrl?: string;
+  fullBlobUrl?: string;
+  fromCache?: boolean;
 }
 
 interface MedicineImageGalleryProps {
@@ -25,36 +35,134 @@ interface MedicineImageGalleryProps {
   dosageForms?: string[];
 }
 
+function toBlobUrl(blob: Blob | undefined): string | undefined {
+  if (!blob) return undefined;
+  try {
+    return URL.createObjectURL(blob);
+  } catch {
+    return undefined;
+  }
+}
+
 export function MedicineImageGallery({ drugId, genericName, dosageForms }: MedicineImageGalleryProps) {
   const [images, setImages] = useState<DrugImage[]>([]);
   const [loading, setLoading] = useState(true);
+  const [offlineMode, setOfflineMode] = useState(false);
   const [selectedImage, setSelectedImage] = useState<DrugImage | null>(null);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<string | null>(null);
+  const blobUrlsRef = useRef<string[]>([]);
+
+  useEffect(() => {
+    return () => {
+      blobUrlsRef.current.forEach((url) => URL.revokeObjectURL(url));
+      blobUrlsRef.current = [];
+    };
+  }, []);
+
+  const fromCache = useCallback((cached: CachedDrugImage[]): DrugImage[] => {
+    const created: string[] = [];
+    const mapped: DrugImage[] = cached.map((img) => {
+      const thumbUrl = toBlobUrl(img.thumbBlob);
+      const fullUrl = toBlobUrl(img.fullBlob);
+      if (thumbUrl) created.push(thumbUrl);
+      if (fullUrl) created.push(fullUrl);
+      return {
+        id: img.id,
+        drug_id: img.drugId,
+        generic_name: img.genericName,
+        dosage_form: img.dosageForm,
+        strength: img.strength,
+        image_url: img.imageUrl,
+        thumbnail_url: img.thumbnailUrl,
+        large_url: img.largeUrl,
+        medium_url: img.mediumUrl,
+        source: img.source,
+        license: img.license,
+        author: img.author,
+        page_url: img.pageUrl,
+        verified: false,
+        quality_score: 0,
+        blobUrl: thumbUrl || img.thumbnailUrl,
+        fullBlobUrl: fullUrl,
+        fromCache: true,
+      };
+    });
+    blobUrlsRef.current = created;
+    return mapped;
+  }, []);
 
   const fetchImages = useCallback(async () => {
     try {
-      let results: any[] = [];
+      const online = navigator.onLine !== false;
+      let results: DrugImage[] = [];
+      let apiError = false;
 
-      if (drugId) {
-        const res = await fetch(`/api/drugs/${drugId}/images`);
-        const data = await res.json();
-        if (data.ok) results = data.data || [];
-      } else if (genericName) {
-        const res = await fetch(`/api/images/search?q=${encodeURIComponent(genericName)}`);
-        const data = await res.json();
-        if (data.ok) results = data.data || [];
+      if (online) {
+        try {
+          if (drugId) {
+            const res = await fetch(`/api/drugs/${drugId}/images`);
+            const data = await res.json();
+            if (data.ok) results = data.data || [];
+            else apiError = true;
+          } else if (genericName) {
+            const res = await fetch(`/api/images/search?q=${encodeURIComponent(genericName)}`);
+            const data = await res.json();
+            if (data.ok) results = data.data || [];
+            else apiError = true;
+          }
+        } catch (err) {
+          console.warn('Failed to fetch drug images from API:', err);
+          apiError = true;
+        }
       }
 
-      setImages(results);
+      if (results.length > 0) {
+        setImages(results);
+        setOfflineMode(false);
+        // Auto-cache viewed images so they are available offline later.
+        const cacheKey = drugId || results[0]?.drug_id || '';
+        if (cacheKey) {
+          cacheDrugImages(cacheKey, results, false)
+            .then(() => cleanupImageCache(400))
+            .catch(() => {});
+        }
+        return;
+      }
+
+      if (!online || apiError) {
+        // Offline / API unreachable: fall back to the local IndexedDB blob cache.
+        const cached = drugId
+          ? await getCachedDrugImages(drugId)
+          : await getCachedDrugImagesByGeneric(genericName);
+        if (cached.length > 0) {
+          setImages(fromCache(cached));
+          setOfflineMode(true);
+          return;
+        }
+      }
+
+      setImages([]);
     } catch (err) {
-      console.error('Failed to fetch drug images:', err);
+      console.error('Failed to load drug images:', err);
+      try {
+        const cached = drugId
+          ? await getCachedDrugImages(drugId)
+          : await getCachedDrugImagesByGeneric(genericName);
+        if (cached.length > 0) {
+          setImages(fromCache(cached));
+          setOfflineMode(true);
+        }
+      } catch {
+        setImages([]);
+      }
     } finally {
       setLoading(false);
     }
-  }, [drugId, genericName]);
+  }, [drugId, genericName, fromCache]);
 
   useEffect(() => {
+    setLoading(true);
     fetchImages();
   }, [fetchImages]);
 
@@ -93,7 +201,15 @@ export function MedicineImageGallery({ drugId, genericName, dosageForms }: Medic
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h2 className="text-xl font-bold text-[var(--text)]">Image Gallery</h2>
+        <div className="flex items-center gap-2">
+          <h2 className="text-xl font-bold text-[var(--text)]">Image Gallery</h2>
+          {offlineMode && (
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[var(--info-container)] text-[var(--info)] border border-[var(--info)]/30">
+              <WifiOff size={11} />
+              Offline
+            </span>
+          )}
+        </div>
         <span className="text-xs text-[var(--text-muted)]">{images.length} image{images.length !== 1 ? 's' : ''}</span>
       </div>
 
@@ -132,9 +248,9 @@ export function MedicineImageGallery({ drugId, genericName, dosageForms }: Medic
             onClick={() => { setSelectedImage(img); setLightboxOpen(true); }}
             className="group relative aspect-square bg-[var(--surface)] border border-[var(--border)] rounded-xl overflow-hidden hover:border-[var(--primary)] transition-all cursor-pointer"
           >
-            {img.thumbnail_url ? (
+            {(img.blobUrl || img.thumbnail_url) ? (
               <img
-                src={img.thumbnail_url}
+                src={img.blobUrl || img.thumbnail_url}
                 alt={`${img.generic_name} ${img.dosage_form}`}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 loading="lazy"
@@ -165,7 +281,7 @@ export function MedicineImageGallery({ drugId, genericName, dosageForms }: Medic
             ✕
           </button>
           <img
-            src={selectedImage.image_url || selectedImage.large_url || selectedImage.thumbnail_url}
+            src={selectedImage.fullBlobUrl || selectedImage.image_url || selectedImage.large_url || selectedImage.thumbnail_url || selectedImage.blobUrl}
             alt={`${selectedImage.generic_name} ${selectedImage.dosage_form}`}
             className="max-w-full max-h-[90vh] object-contain rounded-xl"
           />

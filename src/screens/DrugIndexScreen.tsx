@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import { DrugMonographView } from '../components/DrugMonographView';
 import { getMonographCached, pinMonograph } from '../lib/getMonograph';
+import { pinDrugImages } from '../lib/localDb';
 import { useSearchParams } from 'react-router-dom';
 import { DrugMonographService, type DrugMonograph } from '../services/drugMonograph.service';
 import { monographToMarkdown } from '../lib/monographToMarkdown';
@@ -241,10 +242,31 @@ export default function DrugIndexScreen() {
   };
 
   const handlePinForOffline = async () => {
-    if (monographKey) {
-      await pinMonograph(monographKey);
-      alert('Monograph saved for offline access!');
+    if (!monographKey) return;
+    await pinMonograph(monographKey);
+
+    // Pin images too: download thumbnails + full images into the local cache so the
+    // gallery works fully offline for this drug.
+    try {
+      if (currentMonographId) {
+        const res = await fetch(`/api/drugs/${currentMonographId}/images`);
+        const data = await res.json();
+        if (data.ok && Array.isArray(data.data) && data.data.length > 0) {
+          await pinDrugImages(currentMonographId, data.data);
+        }
+      } else if (selectedDrugName) {
+        const res = await fetch(`/api/images/search?q=${encodeURIComponent(selectedDrugName)}`);
+        const data = await res.json();
+        if (data.ok && Array.isArray(data.data) && data.data.length > 0) {
+          const drugId = data.data[0]?.drug_id;
+          if (drugId) await pinDrugImages(drugId, data.data);
+        }
+      }
+    } catch (err) {
+      console.warn('Could not download images for offline pin:', err);
     }
+
+    alert('Monograph saved for offline access!');
   };
 
   const handleSearchSubmit = (e: React.FormEvent) => {

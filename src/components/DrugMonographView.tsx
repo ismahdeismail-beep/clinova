@@ -192,10 +192,10 @@ export function DrugMonographView({
         </div>
 
         {/* ── Medicine Image Gallery ── */}
-        {drugId && (
+        {(drugId || genericName || drugName) && (
           <div className="px-4 sm:px-6 md:px-8 py-4 border-t border-[var(--border)]/60">
             <MedicineImageGallery
-              drugId={drugId}
+              drugId={drugId || ''}
               genericName={genericName || drugName}
             />
           </div>

@@ -1,7 +1,7 @@
 import {
   BookOpen, FolderOpen, Pill,
   GraduationCap, ClipboardList, ClipboardCheck,
-  Settings, Image as ImageIcon,
+  Settings,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -32,10 +32,9 @@ export const NAV_GROUPS: NavGroup[] = [
     ],
   },
   {
-    id: 'admin',
+    id: 'settings',
     icon: Settings,
     items: [
-      { to: '/admin/images', label: 'Image Manager', icon: ImageIcon },
       { to: '/settings', label: 'Settings', icon: Settings },
     ],
   },

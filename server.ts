@@ -29,15 +29,7 @@ import { fetchOpenFdaLabel, resolveRxCui, fetchRxNormInteractions } from './src/
 import { crawlSource, crawlMany, searchLibrary } from './src/server/bookCrawler.service.js';
 import { LIBRARY_CATEGORY, isSupermemoryConfigured } from './src/server/supermemory.service.js';
 import { adminSupabase } from './src/server/adminClient.js';
-import {
-  getImagesForDrug,
-  searchImages,
-  getImageStats,
-  getMissingDrugs,
-  verifyImage,
-  deleteImage,
-} from './src/services/crawler/drugImageService.js';
-import { getCrawlStatus, triggerCrawl, getCrawlReport } from './src/services/crawler/schedulerService.js';
+import { getImagesForDrug, searchImages } from './src/services/crawler/drugImageService.js';
 
 // Load environment variables
 dotenv.config();
@@ -2104,99 +2096,7 @@ app.get('/api/images/search', async (req, res) => {
   }
 });
 
-// POST /api/admin/images/reindex - Reindex drug images table
-app.post('/api/admin/images/reindex', async (_req, res) => {
-  try {
-    if (!adminSupabase) return res.status(500).json({ error: 'Admin client not configured' });
-    res.json({ ok: true, message: 'Drug images table ready (managed via Supabase migrations)' });
-  } catch (e: any) {
-    res.status(500).json({ error: e.message });
-  }
-});
 
-// GET /api/admin/images/stats - Get crawl statistics
-app.get('/api/admin/images/stats', async (_req, res) => {
-  try {
-    const stats = await getImageStats();
-    res.json({ ok: true, data: stats });
-  } catch (e: any) {
-    res.status(500).json({ error: e.message });
-  }
-});
-
-// POST /api/admin/images/crawl - Trigger a crawl (calls external Python service)
-app.post('/api/admin/images/crawl', async (req, res) => {
-  try {
-    const { drug_id, drug_ids, drug_name } = req.body || {};
-    const result = await triggerCrawl(drug_ids);
-    res.json({ ok: true, result });
-  } catch (e: any) {
-    res.status(500).json({ error: e.message });
-  }
-});
-
-// GET /api/admin/images/missing - Get drugs missing images
-app.get('/api/admin/images/missing', async (_req, res) => {
-  try {
-    const missing = await getMissingDrugs();
-    res.json({ ok: true, data: missing, total: missing.length });
-  } catch (e: any) {
-    res.status(500).json({ error: e.message });
-  }
-});
-
-// GET /api/admin/images/schedule - Get crawl schedule status
-app.get('/api/admin/images/schedule', async (_req, res) => {
-  try {
-    const status = getCrawlStatus();
-    res.json({ ok: true, data: status });
-  } catch (e: any) {
-    res.status(500).json({ error: e.message });
-  }
-});
-
-// GET /api/admin/images/report - Get latest crawl report
-app.get('/api/admin/images/report', async (_req, res) => {
-  try {
-    const report = await getCrawlReport();
-    res.json({ ok: true, data: report });
-  } catch (e: any) {
-    res.status(500).json({ error: e.message });
-  }
-});
-
-// DELETE /api/admin/images/:id - Delete an image record
-app.delete('/api/admin/images/:id', async (req, res) => {
-  try {
-    const { id } = req.params;
-    const deleted = await deleteImage(id);
-    res.json({ ok: deleted });
-  } catch (e: any) {
-    res.status(500).json({ error: e.message });
-  }
-});
-
-// POST /api/admin/images/:id/verify - Mark image as verified
-app.post('/api/admin/images/:id/verify', async (req, res) => {
-  try {
-    const { id } = req.params;
-    const verified = await verifyImage(id);
-    res.json({ ok: verified });
-  } catch (e: any) {
-    res.status(500).json({ error: e.message });
-  }
-});
-
-// POST /api/admin/images/refresh - Re-crawl specific drugs
-app.post('/api/admin/images/refresh', async (req, res) => {
-  try {
-    const { drug_ids } = req.body || {};
-    const result = await triggerCrawl(drug_ids);
-    res.json({ ok: true, result });
-  } catch (e: any) {
-    res.status(500).json({ error: e.message });
-  }
-});
 
 app.get('*', (req, res) => {
       res.sendFile(path.join(distPath, 'index.html'));

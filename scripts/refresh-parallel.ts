@@ -11,6 +11,9 @@ import * as fs from 'fs'
 
 const WORKERS = Number(process.env.REFRESH_WORKERS || '3')
 const MAIN_STATE = 'storage/refresh_state.json'
+// Explicit target list (comma-separated ids) — used for phased category fills
+// (e.g. audit-driven P1/P2/P3 runs). When set, done-state is ignored.
+const TARGET_IDS = process.env.REFRESH_IDS ? new Set(process.env.REFRESH_IDS.split(',')) : null
 
 function chunk<T>(arr: T[], n: number): T[][] {
   const out: T[][] = []
@@ -44,6 +47,7 @@ async function main() {
   if (!drugs) throw new Error('no drugs rows')
 
   const toRefresh = (drugs as any[]).filter((d) => {
+    if (TARGET_IDS) return TARGET_IDS.has(d.id) // phased fill: explicit list only
     const e = perDrug.get(d.id)
     if (!e || !e.hasNonStructure) return false
     if (e.count >= 4) return false
@@ -72,7 +76,7 @@ async function main() {
               REFRESH_IDS: slice.map((d) => d.id).join(','),
               REFRESH_STATE: stateFile,
               REFRESH_BATCH_SIZE: '999',
-              CRAWL_MAX_IMAGES: process.env.CRAWL_MAX_IMAGES || '2',
+              CRAWL_MAX_IMAGES: process.env.CRAWL_MAX_IMAGES || '4',
               CRAWL_DELAY_MS: process.env.CRAWL_DELAY_MS || '400',
               CRAWL_DOWNLOAD_DELAY_MS: process.env.CRAWL_DOWNLOAD_DELAY_MS || '300',
               CRAWL_NO_FORMS: process.env.CRAWL_NO_FORMS || '1',

@@ -14,7 +14,8 @@ const BATCH = Number(process.env.REFRESH_BATCH_SIZE || '10')
 // Parallel workers: give each its own state file + disjoint id list (via env)
 const REFRESH_STATE_FILE = process.env.REFRESH_STATE || 'storage/refresh_state.json'
 const REFRESH_IDS = process.env.REFRESH_IDS ? new Set(process.env.REFRESH_IDS.split(',')) : null
-const MAX_IMAGES = 4
+// Total-gallery cap per drug (existing + new). Lower than 4 if a worker env says so.
+const MAX_IMAGES = Number(process.env.CRAWL_MAX_IMAGES || '4')
 
 async function main() {
   const admin = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!, {
@@ -46,6 +47,9 @@ async function main() {
 
   const toRefresh = (drugs as any[]).filter((d) => {
     if (REFRESH_IDS && !REFRESH_IDS.has(d.id)) return false // parallel worker slice
+    // Explicit targeting overrides the resume state (re-crawl a listed drug even
+    // if a previous pass already marked it done at a lower cap).
+    if (REFRESH_IDS) return true
     const e = perDrug.get(d.id)
     if (!e || !e.hasNonStructure) return false // structure-only or no images
     if (e.count >= MAX_IMAGES) return false // gallery already full
@@ -60,10 +64,15 @@ async function main() {
     const name = drug.generic_name || drug.name
     if (!name) continue
     const e = perDrug.get(drug.id)
+    const existingCount = e?.count || 0
+    if (existingCount >= MAX_IMAGES) {
+      console.log(`[skip] ${name} gallery already ${existingCount} (cap ${MAX_IMAGES})`)
+      continue
+    }
     try {
-      const stats = await crawlDrug(drug.id, name, undefined, '', new Set(e?.hashes || []))
+      const stats = await crawlDrug(drug.id, name, undefined, '', new Set(e?.hashes || []), existingCount)
       added += stats.accepted
-      console.log(`[ok] ${name} +${stats.accepted} -${stats.rejected} (gallery ${e?.count} -> ${(e?.count || 0) + stats.accepted})`)
+      console.log(`[ok] ${name} +${stats.accepted} -${stats.rejected} (gallery ${existingCount} -> ${existingCount + stats.accepted})`)
     } catch (err: any) {
       console.log(`[err] ${name}: ${err.message}`)
     }

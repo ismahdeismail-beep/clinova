@@ -37,13 +37,24 @@ const STORAGE_BUCKET = 'medicine-images'
 export function generateSearchQueries(genericName: string, dosageForms?: string[]): string[] {
   const forms = process.env.CRAWL_NO_FORMS === '1' ? [] : dosageForms?.length ? dosageForms : QUICK_FORMS
   const queries: string[] = []
+  // Salt/ester words (phosphate, sodium, fumarate…) pollute Wikimedia searches
+  // ("tedizolid phosphate" hits 0 while "tedizolid" matches). Strip them when
+  // building the name query but keep the full name for title-relevance checks.
+  const SALT_STOP = new Set([
+    'sodium', 'potassium', 'calcium', 'magnesium', 'hydrochloride', 'dihydrochloride',
+    'sulfate', 'sulphate', 'acetate', 'citrate', 'fumarate', 'maleate',
+    'phosphate', 'diphosphate', 'monohydrate', 'dihydrate', 'trihydrate',
+    'proxetil', 'oxide', 'tartrate', 'succinate', 'carbonate', 'nitrate',
+    'mesylate', 'tosylate', 'isethionate', 'tromethamine', 'meglumine', 'medocaril',
+    'sodium', 'sulfate', 'embonate', 'pamoate', 'bromide',
+  ])
   const tokens = [...new Set(
     (genericName || '')
       .toLowerCase()
       .replace(/[^a-z0-9 ]+/g, ' ')
       .replace(/\s+/g, ' ')
       .split(' ')
-      .filter((t) => t.length >= 4),
+      .filter((t) => t.length >= 4 && !SALT_STOP.has(t)),
   )]
   const short = tokens.slice(0, 3).join(' ')
   if (!short) return queries

@@ -77,7 +77,7 @@ for (const m of monos) {
   if (nImgs > 0) s.withImages += 1
   if (nImgs >= 4) s.complete4 += 1
   if (m.in_kem) s.kem += 1
-  if (nImgs < 4) s.missing.push({ name: m.name, imgs: nImgs, in_kem: !!m.in_kem })
+  if (nImgs < 4) s.missing.push({ id: m.id, name: m.name, imgs: nImgs, in_kem: !!m.in_kem })
 }
 
 // ── Report ─────────────────────────────────────────────────────────────────

@@ -164,7 +164,7 @@ const SALT_STOP = new Set([
   'sodium', 'potassium', 'calcium', 'hydrochloride', 'dihydrochloride',
   'sulfate', 'sulphate', 'acetate', 'citrate', 'fumarate', 'maleate',
   'phosphate', 'diphosphate', 'monohydrate', 'dihydrate', 'trihydrate',
-  'proxetil', 'magnesium', 'oxide', 'tartrate', 'succinate', 'carbonate',
+  'proxetil', 'oxide', 'tartrate', 'succinate', 'carbonate',
   'nitrate', 'mesylate', 'tosylate', 'acid', 'and', 'with', 'of',
   'alfa', 'alpha', 'beta',
 ])

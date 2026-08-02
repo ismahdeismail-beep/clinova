@@ -258,6 +258,95 @@ export async function searchNCI(query: string, limit = 10): Promise<ProviderResu
   return results
 }
 
+// ── DailyMed (US FDA label images) ─────────────────────────────────
+// DailyMed hosts FDA-approved Structured Product Labels; the embedded
+// package/carton/product photos are US-government works (public domain).
+// Search by generic OR brand name works; each SPL's XML lists image files
+// served at /dailymed/image.cfm?name=<file>&setid=<setid>&type=img.
+const DAILYMED_SEARCH = 'https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json'
+const DAILYMED_XML = 'https://dailymed.nlm.nih.gov/dailymed/services/v2/spls'
+const DAILYMED_IMG = 'https://dailymed.nlm.nih.gov/dailymed/image.cfm'
+const DAILYMED_MAX_SPLS = Number(process.env.CRAWL_DAILYMED_SPLS || '5')
+const DAILYMED_MAX_IMAGES = Number(process.env.CRAWL_DAILYMED_IMAGES || '12')
+
+async function fetchText(url: string): Promise<string> {
+  const res = await fetchWithRetry(new URL(url))
+  return res.text()
+}
+
+export async function searchDailyMed(query: string, limit = 10): Promise<ProviderResult[]> {
+  // DailyMed's drug_name search is picky: compound phrases (e.g. the salt-stripped
+  // "furosemide frusemide tablet" built from paren-form names) return zero SPLs,
+  // while a single term matches. Retry by dropping trailing tokens until a hit.
+  let attempts: string[] = [query]
+  if (query.trim().split(/\s+/).length > 1) {
+    const tokens = query.trim().split(/\s+/)
+    for (let i = tokens.length - 1; i >= 1; i--) attempts.push(tokens.slice(0, i).join(' '))
+  }
+
+  for (const attempt of attempts) {
+    const results = await searchDailyMedExact(attempt, limit)
+    if (results.length > 0) return results
+    await sleep(100)
+  }
+  return []
+}
+
+async function searchDailyMedExact(query: string, limit = 10): Promise<ProviderResult[]> {
+  const results: ProviderResult[] = []
+  const seenUrls = new Set<string>()
+  try {
+    const url = new URL(DAILYMED_SEARCH)
+    url.searchParams.set('drug_name', query)
+    url.searchParams.set('pagesize', String(DAILYMED_MAX_SPLS))
+    const data = JSON.parse(await fetchText(url.toString()))
+    const spls = (data?.data || []).slice(0, DAILYMED_MAX_SPLS)
+
+    for (const spl of spls) {
+      if (results.length >= limit) break
+      const setid: string = spl.setid
+      const title: string = (spl.title || query).toString()
+      let xml = ''
+      try {
+        xml = await fetchText(`${DAILYMED_XML}/${setid}.xml`)
+      } catch {
+        continue
+      }
+      // <reference value="xxx.jpg"/> — embedded label images in the SPL.
+      // The same file is often referenced multiple times (or as both
+      // "AC Fast Back.jpg" and "AC+Fast+Back.jpg") — dedup by final URL.
+      const refs = [...xml.matchAll(/<reference value="([^"]+\.(?:jpg|jpeg|png))"/gi)].map((m) => m[1])
+      for (const ref of refs.slice(0, DAILYMED_MAX_IMAGES)) {
+        if (results.length >= limit) break
+        // Skip structure diagrams and logos — we want package/product photos.
+        if (/structure|logo|molecular|chemical|formula/i.test(ref)) continue
+        const fileUrl = new URL(DAILYMED_IMG)
+        fileUrl.searchParams.set('name', ref)
+        fileUrl.searchParams.set('setid', setid)
+        fileUrl.searchParams.set('type', 'img')
+        const urlStr = fileUrl.toString()
+        if (seenUrls.has(urlStr)) continue
+        seenUrls.add(urlStr)
+        results.push({
+          imageUrl: urlStr,
+          thumbnailUrl: urlStr,
+          pageUrl: `https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=${setid}`,
+          title: `${ref.replace(/\.(jpg|jpeg|png)$/i, '').replace(/[_+]+/g, ' ')} — ${title}`,
+          author: 'US FDA / DailyMed',
+          license: 'Public domain (US FDA label)',
+          licenseUrl: 'https://dailymed.nlm.nih.gov/dailymed/about.cfm',
+          source: 'DailyMed (FDA)',
+          mimeType: ref.toLowerCase().endsWith('.png') ? 'image/png' : 'image/jpeg',
+        })
+      }
+      await sleep(150) // be polite between SPL fetches
+    }
+  } catch (e) {
+    console.error('[DailyMed] search failed:', e)
+  }
+  return results
+}
+
 // ── Provider registry ──────────────────────────────────────────────
 // NOTE: Open-i (NLM) was retired, and images.nih.gov + visualsonline.cancer.gov
 // are decommissioned (DNS dead) — only Wikimedia Commons is operational, and it
@@ -265,6 +354,7 @@ export async function searchNCI(query: string, limit = 10): Promise<ProviderResu
 // safe; the crawler runs them in parallel with hard timeouts.
 export const PROVIDERS = [
   { name: 'Wikimedia Commons', fn: searchWikimedia, priority: 1 },
+  { name: 'DailyMed (FDA)', fn: searchDailyMed, priority: 2 },
 ] as const
 
 export type ProviderFn = (query: string, limit?: number) => Promise<ProviderResult[]>

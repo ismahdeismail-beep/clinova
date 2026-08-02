@@ -41,12 +41,12 @@ export function generateSearchQueries(genericName: string, dosageForms?: string[
   // ("tedizolid phosphate" hits 0 while "tedizolid" matches). Strip them when
   // building the name query but keep the full name for title-relevance checks.
   const SALT_STOP = new Set([
-    'sodium', 'potassium', 'calcium', 'magnesium', 'hydrochloride', 'dihydrochloride',
+    'sodium', 'potassium', 'calcium', 'hydrochloride', 'dihydrochloride',
     'sulfate', 'sulphate', 'acetate', 'citrate', 'fumarate', 'maleate',
     'phosphate', 'diphosphate', 'monohydrate', 'dihydrate', 'trihydrate',
     'proxetil', 'oxide', 'tartrate', 'succinate', 'carbonate', 'nitrate',
     'mesylate', 'tosylate', 'isethionate', 'tromethamine', 'meglumine', 'medocaril',
-    'sodium', 'sulfate', 'embonate', 'pamoate', 'bromide',
+    'embonate', 'pamoate', 'bromide',
   ])
   const tokens = [...new Set(
     (genericName || '')
@@ -87,10 +87,24 @@ async function withTimeout<T>(p: Promise<T>, ms: number): Promise<T> {
   }
 }
 
-// ── Search all providers for a query (in parallel) ─────────────────
+// ── Search all providers for a query ───────────────────────────────
+// Wikimedia runs first; the fallback providers (DailyMed/FDA) are consulted by
+// the crawler only when a query's Wikimedia results under-deliver, so NLM is
+// never hammered for drugs that Wikimedia already fills.
 async function searchAllProviders(query: string): Promise<ProviderResult[]> {
+  return withTimeout(
+    PROVIDERS[0].fn(query, 10).catch((e: any) => {
+      console.error(`[${PROVIDERS[0].name}] search failed for "${query}":`, e?.message ?? e)
+      return [] as ProviderResult[]
+    }),
+    20000,
+  )
+}
+
+// ── Search fallback providers (DailyMed/FDA) for a query ───────────
+async function searchFallbackProviders(query: string): Promise<ProviderResult[]> {
   const settled = await Promise.allSettled(
-    PROVIDERS.map((provider) =>
+    PROVIDERS.slice(1).map((provider) =>
       withTimeout(
         provider.fn(query, 10).catch((e: any) => {
           console.error(`[${provider.name}] search failed for "${query}":`, e?.message ?? e)
@@ -275,6 +289,25 @@ export async function crawlDrug(
         await processResult(result)
       } else {
         weakCandidates.push(result)
+      }
+    }
+
+    // Fallback tier: if Wikimedia under-delivered for this query, consult the
+    // secondary providers (DailyMed/FDA). Same acceptance pipeline as above.
+    if (stats.accepted < remaining) {
+      const fallbacks = await searchFallbackProviders(query)
+      stats.found += fallbacks.length
+      for (const result of fallbacks) {
+        if (stats.accepted >= remaining) break
+        if (!isLicenseAccepted(result.license)) {
+          stats.rejected++
+          continue
+        }
+        if (isTitleRelevant(result.title, genericName)) {
+          await processResult(result)
+        } else {
+          weakCandidates.push(result)
+        }
       }
     }
 

@@ -40,6 +40,108 @@ const CATEGORIES = [
   'Toxicology/Antidotes',
 ];
 
+// Per-category accent colors for the KDI browse grid (first page).
+// Each class gets a distinct hue — gradient icon tile, tinted card wash,
+// colored border + shadow on hover, and colored count text.
+const CATEGORY_COLORS: Record<string, { card: string; hover: string; tile: string; text: string }> = {
+  'Anti-infectives': {
+    card: 'from-[var(--surface)] to-red-500/10',
+    hover: 'hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10',
+    tile: 'from-red-500 to-rose-500',
+    text: 'text-red-600 dark:text-red-400',
+  },
+  Cardiovascular: {
+    card: 'from-[var(--surface)] to-rose-500/10',
+    hover: 'hover:border-rose-400 hover:shadow-lg hover:shadow-rose-500/10',
+    tile: 'from-rose-500 to-pink-500',
+    text: 'text-rose-600 dark:text-rose-400',
+  },
+  'Central Nervous System': {
+    card: 'from-[var(--surface)] to-violet-500/10',
+    hover: 'hover:border-violet-400 hover:shadow-lg hover:shadow-violet-500/10',
+    tile: 'from-violet-500 to-purple-500',
+    text: 'text-violet-600 dark:text-violet-400',
+  },
+  Analgesics: {
+    card: 'from-[var(--surface)] to-orange-500/10',
+    hover: 'hover:border-orange-400 hover:shadow-lg hover:shadow-orange-500/10',
+    tile: 'from-orange-500 to-amber-500',
+    text: 'text-orange-600 dark:text-orange-400',
+  },
+  Gastrointestinal: {
+    card: 'from-[var(--surface)] to-emerald-500/10',
+    hover: 'hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-500/10',
+    tile: 'from-emerald-500 to-teal-500',
+    text: 'text-emerald-600 dark:text-emerald-400',
+  },
+  Endocrine: {
+    card: 'from-[var(--surface)] to-amber-500/10',
+    hover: 'hover:border-amber-400 hover:shadow-lg hover:shadow-amber-500/10',
+    tile: 'from-amber-500 to-yellow-500',
+    text: 'text-amber-600 dark:text-amber-400',
+  },
+  Respiratory: {
+    card: 'from-[var(--surface)] to-sky-500/10',
+    hover: 'hover:border-sky-400 hover:shadow-lg hover:shadow-sky-500/10',
+    tile: 'from-sky-500 to-cyan-500',
+    text: 'text-sky-600 dark:text-sky-400',
+  },
+  Anticoagulants: {
+    card: 'from-[var(--surface)] to-fuchsia-500/10',
+    hover: 'hover:border-fuchsia-400 hover:shadow-lg hover:shadow-fuchsia-500/10',
+    tile: 'from-fuchsia-500 to-pink-500',
+    text: 'text-fuchsia-600 dark:text-fuchsia-400',
+  },
+  Oncology: {
+    card: 'from-[var(--surface)] to-indigo-500/10',
+    hover: 'hover:border-indigo-400 hover:shadow-lg hover:shadow-indigo-500/10',
+    tile: 'from-indigo-500 to-violet-500',
+    text: 'text-indigo-600 dark:text-indigo-400',
+  },
+  Immunology: {
+    card: 'from-[var(--surface)] to-green-500/10',
+    hover: 'hover:border-green-400 hover:shadow-lg hover:shadow-green-500/10',
+    tile: 'from-green-500 to-emerald-500',
+    text: 'text-green-600 dark:text-green-400',
+  },
+  Dermatology: {
+    card: 'from-[var(--surface)] to-slate-500/10',
+    hover: 'hover:border-slate-400 hover:shadow-lg hover:shadow-slate-500/10',
+    tile: 'from-slate-500 to-slate-600',
+    text: 'text-slate-600 dark:text-slate-400',
+  },
+  'Renal/Electrolytes': {
+    card: 'from-[var(--surface)] to-teal-500/10',
+    hover: 'hover:border-teal-400 hover:shadow-lg hover:shadow-teal-500/10',
+    tile: 'from-teal-500 to-cyan-600',
+    text: 'text-teal-600 dark:text-teal-400',
+  },
+  'Nutrition/Vitamins': {
+    card: 'from-[var(--surface)] to-lime-500/10',
+    hover: 'hover:border-lime-400 hover:shadow-lg hover:shadow-lime-500/10',
+    tile: 'from-lime-500 to-green-500',
+    text: 'text-lime-600 dark:text-lime-400',
+  },
+  Anaesthesia: {
+    card: 'from-[var(--surface)] to-cyan-500/10',
+    hover: 'hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/10',
+    tile: 'from-cyan-500 to-sky-500',
+    text: 'text-cyan-600 dark:text-cyan-400',
+  },
+  Ophthalmology: {
+    card: 'from-[var(--surface)] to-pink-500/10',
+    hover: 'hover:border-pink-400 hover:shadow-lg hover:shadow-pink-500/10',
+    tile: 'from-pink-500 to-rose-500',
+    text: 'text-pink-600 dark:text-pink-400',
+  },
+  'Toxicology/Antidotes': {
+    card: 'from-[var(--surface)] to-yellow-500/10',
+    hover: 'hover:border-yellow-400 hover:shadow-lg hover:shadow-yellow-500/10',
+    tile: 'from-yellow-500 to-amber-500',
+    text: 'text-yellow-600 dark:text-yellow-400',
+  },
+};
+
 function LikeButton({ monographId }: { monographId: string }) {
   const [saved, setSaved] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -407,7 +509,12 @@ export default function DrugIndexScreen() {
         <>
           {/* ── Browse Mode: Header + Tabs ── */}
           <div className="mb-4">
-            <h1 className="text-3xl font-bold text-[var(--text)] tracking-tight">Kenya Drug Index (KDI)</h1>
+            <h1 className="text-3xl font-bold text-[var(--text)] tracking-tight">
+              Kenya Drug Index{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] via-emerald-500 to-purple-500">
+                (KDI)
+              </span>
+            </h1>
             <p className="text-sm text-[var(--text-muted)] mt-1">Browse monographs by therapeutic class or search for a specific drug</p>
           </div>
 
@@ -551,7 +658,7 @@ export default function DrugIndexScreen() {
                   /* ── Level 1: Category Cards ── */
                   <div className="space-y-6 animate-in fade-in duration-200">
                     <div className="flex items-center justify-between">
-                      <h2 className="text-2xl font-bold text-[var(--text)]">Therapeutic Classes</h2>
+                      <h2 className="text-2xl font-bold text-[var(--text)] border-l-4 border-[var(--primary)] pl-3">Therapeutic Classes</h2>
                       <div className="text-sm text-[var(--text-muted)] font-medium">
                         {catalog.length} monographs
                       </div>
@@ -563,21 +670,22 @@ export default function DrugIndexScreen() {
                           (m.drug_class_name || '').toLowerCase().includes(cat.toLowerCase())
                         ).length;
                         if (count === 0) return null;
+                        const cc = CATEGORY_COLORS[cat] || CATEGORY_COLORS.Immunology;
                         return (
                           <button
                             key={cat}
                             onClick={() => handleCategoryClick(cat)}
-                            className="text-left bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] hover:shadow-md rounded-2xl p-5 cursor-pointer transition-all group"
+                            className={`text-left bg-gradient-to-br ${cc.card} border border-[var(--border)] rounded-2xl p-5 cursor-pointer transition-all group ${cc.hover}`}
                           >
                             <div className="flex items-center gap-3 mb-3">
-                              <div className="w-10 h-10 rounded-xl bg-[var(--primary-container)] flex items-center justify-center shrink-0">
-                                <Pill size={18} className="text-[var(--primary)]" />
+                              <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${cc.tile} flex items-center justify-center shrink-0 shadow-sm`}>
+                                <Pill size={18} className="text-white" />
                               </div>
                               <div className="min-w-0">
                                 <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors text-sm truncate">{cat}</h3>
-                                <p className="text-xs text-[var(--text-muted)]">{count} monograph{count !== 1 ? 's' : ''}</p>
+                                <p className={`text-xs font-medium ${cc.text}`}>{count} monograph{count !== 1 ? 's' : ''}</p>
                               </div>
-                              <ChevronRight size={16} className="text-[var(--text-dim)] group-hover:text-[var(--primary)] ml-auto shrink-0 group-hover:translate-x-1 transition-all" />
+                              <ChevronRight size={16} className={`${cc.text} ml-auto shrink-0 group-hover:translate-x-1 transition-all`} />
                             </div>
                           </button>
                         );

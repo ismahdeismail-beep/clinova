@@ -30,20 +30,36 @@ const QUICK_FORMS = ['tablet', 'capsule', 'injection', 'syrup']
 const STORAGE_BUCKET = 'medicine-images'
 
 // ── Generate search queries for a medicine ─────────────────────────
+// Wikimedia search chokes on parens/slashes/plus signs — "Insulin
+// (Regular/Soluble)" returns 0 while "insulin regular" matches. Queries are
+// built from clean tokens (letters/numbers only), with Kenyan-market brands
+// first — real-world packaging photos are preferred.
 export function generateSearchQueries(genericName: string, dosageForms?: string[]): string[] {
   const forms = process.env.CRAWL_NO_FORMS === '1' ? [] : dosageForms?.length ? dosageForms : QUICK_FORMS
   const queries: string[] = []
+  const tokens = [...new Set(
+    (genericName || '')
+      .toLowerCase()
+      .replace(/[^a-z0-9 ]+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .split(' ')
+      .filter((t) => t.length >= 4),
+  )]
+  const short = tokens.slice(0, 3).join(' ')
+  if (!short) return queries
   // Kenyan-market brands first — real-world packaging photos are preferred.
+  // Brand-only queries (e.g. "Insulatard", "Actrapid") find the actual product
+  // photos; the title-relevance filter rejects any junk they also return.
   for (const brand of brandNamesFor(genericName)) {
-    queries.push(`${brand} ${genericName}`)
+    queries.push(brand)
   }
   if (forms.length > 0) {
     for (const form of forms) {
-      queries.push(`${genericName} ${form}`)
+      queries.push(`${short} ${form}`)
     }
   }
   // Plain name matches the most on Wikimedia (form-suffixed queries often hit zero).
-  queries.push(genericName)
+  queries.push(short)
   return queries
 }
 
@@ -175,11 +191,14 @@ export async function crawlDrug(
   dosageForms?: string[],
   strength = '',
   existingHashes: Set<string> = new Set(),
+  existingCount = 0,
 ): Promise<{ found: number; accepted: number; rejected: number; failures: string[] }> {
   const stats = { found: 0, accepted: 0, rejected: 0, failures: [] as string[] }
   const weakCandidates: ProviderResult[] = []
   const queries = generateSearchQueries(genericName, dosageForms)
   const MAX_IMAGES_PER_DRUG = Number(process.env.CRAWL_MAX_IMAGES || '4')
+  // Cap on TOTAL gallery size (existing + new), not just new additions.
+  const remaining = Math.max(0, MAX_IMAGES_PER_DRUG - existingCount)
 
   // Shared processing: download → validate → dedup → optimize → upload → insert.
   // Returns true when the image was accepted (and stored).
@@ -229,12 +248,12 @@ export async function crawlDrug(
   }
 
   for (const query of queries) {
-    if (stats.accepted >= MAX_IMAGES_PER_DRUG) break
+    if (stats.accepted >= remaining) break
     const results = await searchAllProviders(query)
     stats.found += results.length
 
     for (const result of results) {
-      if (stats.accepted >= MAX_IMAGES_PER_DRUG) break
+      if (stats.accepted >= remaining) break
       if (!isLicenseAccepted(result.license)) {
         stats.rejected++
         continue
@@ -258,7 +277,7 @@ export async function crawlDrug(
   if (stats.accepted === 0) {
     const seen = new Set<string>()
     for (const result of weakCandidates) {
-      if (stats.accepted >= MAX_IMAGES_PER_DRUG) break
+      if (stats.accepted >= remaining) break
       if (seen.has(result.imageUrl)) continue
       seen.add(result.imageUrl)
       if (!isWeakRelevant(result.title)) continue

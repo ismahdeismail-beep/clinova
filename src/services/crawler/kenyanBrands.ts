@@ -24,6 +24,7 @@ export const KENYAN_BRANDS: Record<string, string[]> = {
   'ceftaroline fosamil': ['Teflaro', 'Zinforo'],
   'ceftazidime': ['Fortum', 'Fortaz'],
   'ceftobiprole medocaril sodium': ['Zevtera', 'Mabelio'],
+  'cephalexin': ['Keflex', 'Keforal', 'Ceporex', 'cefalexin'],
   'chloramphenicol sodium succinate': ['Chloromycetin', 'Kemicetine'],
   'chlorthalidone': ['Hygroton', 'Thalitone'],
   'clofazimine': ['Lamprene'],
@@ -50,6 +51,8 @@ export const KENYAN_BRANDS: Record<string, string[]> = {
   'lenacapavir sodium': ['Sunlenca'],
   'mefloquine hydrochloride': ['Lariam'],
   'meropenem-vaborbactam': ['Vabomere'],
+  'metformin': ['Glucophage', 'Glumet', 'Orofer'],
+  'metoclopramide': ['Maxolon', 'Pramin'],
   'metolazone': ['Zaroxolyn'],
   'micafungin': ['Mycamine'],
   'minocycline hydrochloride': ['Minocin', 'Minomycin'],
@@ -78,6 +81,7 @@ export const KENYAN_BRANDS: Record<string, string[]> = {
   'sotalol hydrochloride': ['Betapace', 'Sotacor'],
   'sulfamethoxazole and trimethoprim': ['Bactrim', 'Septrin', 'Cotrimoxazole'],
   'tedizolid phosphate': ['Sivextro'],
+  'salbutamol': ['Ventolin', 'Salbuvent', 'Asthalin'],
   'telmisartan': ['Micardis', 'Pritor'],
   'tenofovir disoproxil fumarate': ['Viread'],
   'terazosin hydrochloride': ['Hytrin'],
@@ -87,6 +91,10 @@ export const KENYAN_BRANDS: Record<string, string[]> = {
   'trandolapril': ['Mavik', 'Gopten'],
   'triamterene and hydrochlorothiazide': ['Dyazide', 'Maxzide'],
   'valacyclovir': ['Valtrex', 'Valcivir'],
+  'insulin': ['Humulin', 'Novolin', 'Actrapid', 'Insulatard', 'Mixtard', 'Novomix'],
+  'insulin regular': ['Humulin R', 'Novolin R', 'Actrapid', 'Actrapid penfill'],
+  'insulin soluble': ['Humulin R', 'Novolin R', 'Actrapid', 'Actrapid penfill'],
+  'biphasic isophane insulin': ['Novomix', 'Mixtard', 'Insulatard', 'Humulin 30/70', 'Novomix 30', 'Mixtard 30'],
   'zanamivir': ['Relenza'],
 }
 
@@ -96,9 +104,44 @@ export function normalizeGeneric(name: string): string {
   return (name || '').toLowerCase().replace(NORMALIZE_RE, ' ').trim()
 }
 
-/** Kenyan-market brand names for a generic drug (lowercase match). */
+// Tokens that carry no brand-matching signal — salts, esters, connector words.
+const BRAND_STOP = new Set([
+  'and', 'with', 'of', 'for', 'or', 'plus',
+  'sodium', 'potassium', 'calcium', 'hydrochloride', 'dihydrochloride',
+  'sulfate', 'sulphate', 'acetate', 'citrate', 'fumarate', 'maleate',
+  'phosphate', 'diphosphate', 'monohydrate', 'dihydrate', 'trihydrate',
+  'proxetil', 'magnesium', 'oxide', 'tartrate', 'succinate', 'carbonate',
+  'nitrate', 'mesylate', 'tosylate', 'acid', 'alfa', 'alpha', 'beta',
+])
+
+function brandTokens(name: string): string[] {
+  return normalizeGeneric(name)
+    .replace(/[^a-z ]/g, ' ') // hyphens, slashes, '+', parens → space
+    .replace(/\s+/g, ' ')
+    .split(' ')
+    .filter((w) => w.length >= 3 && !BRAND_STOP.has(w))
+}
+
+/** Kenyan-market brand names for a generic drug.
+ *  Format-tolerant: matches 'Amoxicillin-Clavulanate' to the
+ *  'amoxicillin/clavulanate' key, 'Artemether + Lumefantrine' to
+ *  'artemether and lumefantrine', etc. (token-subset match).
+ *  The MOST SPECIFIC key wins (e.g. 'insulin regular' beats 'insulin'). */
 export function brandNamesFor(genericName: string): string[] {
-  return KENYAN_BRANDS[normalizeGeneric(genericName)] ?? []
+  const nameTokens = brandTokens(genericName)
+  if (nameTokens.length === 0) return []
+  let best: string[] | null = null
+  let bestScore = 0
+  for (const [key, brands] of Object.entries(KENYAN_BRANDS)) {
+    const keyTokens = brandTokens(key)
+    if (keyTokens.length === 0) continue
+    if (!keyTokens.every((t) => nameTokens.includes(t))) continue
+    if (keyTokens.length > bestScore) {
+      bestScore = keyTokens.length
+      best = brands
+    }
+  }
+  return best ?? []
 }
 
 // ── Title-relevance filtering ──────────────────────────────────────

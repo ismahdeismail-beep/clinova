@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { RAGRouter } from './src/services/ragRouter';
 import { KnowledgeEngine } from './src/engine/knowledgeEngine.service';
 import { processAcademicRequest } from "./src/server/academicEngine.js";
@@ -6,7 +7,6 @@ import express from 'express';
 import path from 'path';
 import fs from 'fs';
 import { GoogleGenAI, Type } from '@google/genai';
-import dotenv from 'dotenv';
 import crypto from 'crypto';
 
 import multer from 'multer';
@@ -30,9 +30,6 @@ import { crawlSource, crawlMany, searchLibrary } from './src/server/bookCrawler.
 import { LIBRARY_CATEGORY, isSupermemoryConfigured } from './src/server/supermemory.service.js';
 import { adminSupabase } from './src/server/adminClient.js';
 import { getImagesForDrug, searchImages } from './src/services/crawler/drugImageService.js';
-
-// Load environment variables
-dotenv.config();
 
 const app = express();
 const PORT = 3000;
@@ -2010,6 +2007,34 @@ app.post('/api/cloudinary/destroy', async (req, res) => {
   }
 });
 
+// ================================================================
+// Medicine Image Crawler API
+// Registered at module level (NOT inside startServer) so it works on
+// serverless platforms like Vercel, where startServer() is skipped.
+// ================================================================
+
+// GET /api/drugs/:id/images - Get images for a specific drug
+app.get('/api/drugs/:id/images', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const images = await getImagesForDrug(id);
+    res.json({ ok: true, data: images });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// GET /api/images/search - Search images
+app.get('/api/images/search', async (req, res) => {
+  try {
+    const q = (req.query.q as string) || '';
+    const results = await searchImages(q);
+    res.json({ ok: true, data: results, total: results.length });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
 // Setup Vite Dev Server / Static files for production
 async function startServer() {
   if (process.env.NODE_ENV !== 'production') {
@@ -2069,36 +2094,7 @@ async function startServer() {
       res.json({ ok: true, category: LIBRARY_CATEGORY, results })
     })
 
-
-// ================================================================
-// Medicine Image Crawler API
-// ================================================================
-
-// GET /api/drugs/:id/images - Get images for a specific drug
-app.get('/api/drugs/:id/images', async (req, res) => {
-  try {
-    const { id } = req.params;
-    const images = await getImagesForDrug(id);
-    res.json({ ok: true, data: images });
-  } catch (e: any) {
-    res.status(500).json({ error: e.message });
-  }
-});
-
-// GET /api/images/search - Search images
-app.get('/api/images/search', async (req, res) => {
-  try {
-    const q = (req.query.q as string) || '';
-    const results = await searchImages(q);
-    res.json({ ok: true, data: results, total: results.length });
-  } catch (e: any) {
-    res.status(500).json({ error: e.message });
-  }
-});
-
-
-
-app.get('*', (req, res) => {
+    app.get('*', (req, res) => {
       res.sendFile(path.join(distPath, 'index.html'));
     });
   }

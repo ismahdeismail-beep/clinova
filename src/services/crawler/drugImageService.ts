@@ -3,10 +3,15 @@ import type { DrugImage, CrawlStatistics } from '../../types/crawler'
 
 const SUPABASE_URL = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL || ''
 const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || ''
+const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || process.env.VITE_SUPABASE_ANON_KEY || ''
 
 function getAdminClient(): SupabaseClient | null {
-  if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) return null
-  return createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, { auth: { persistSession: false } })
+  if (!SUPABASE_URL) return null
+  // Prefer the service role key; fall back to the anon key for read-only
+  // endpoints (RLS allows public SELECT on drug_images).
+  const key = SUPABASE_SERVICE_ROLE_KEY || SUPABASE_ANON_KEY
+  if (!key) return null
+  return createClient(SUPABASE_URL, key, { auth: { persistSession: false } })
 }
 
 export async function getImagesForDrug(drugId: string): Promise<DrugImage[]> {

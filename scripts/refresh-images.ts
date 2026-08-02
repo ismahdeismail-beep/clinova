@@ -11,7 +11,9 @@ import { crawlDrug } from '../src/services/crawler/imageCrawler'
 import { loadState, saveState } from '../src/services/crawler/state'
 
 const BATCH = Number(process.env.REFRESH_BATCH_SIZE || '10')
-const REFRESH_STATE_FILE = 'storage/refresh_state.json'
+// Parallel workers: give each its own state file + disjoint id list (via env)
+const REFRESH_STATE_FILE = process.env.REFRESH_STATE || 'storage/refresh_state.json'
+const REFRESH_IDS = process.env.REFRESH_IDS ? new Set(process.env.REFRESH_IDS.split(',')) : null
 const MAX_IMAGES = 4
 
 async function main() {
@@ -43,6 +45,7 @@ async function main() {
   if (drugsErr || !drugs) throw new Error(`drugs: ${drugsErr?.message}`)
 
   const toRefresh = (drugs as any[]).filter((d) => {
+    if (REFRESH_IDS && !REFRESH_IDS.has(d.id)) return false // parallel worker slice
     const e = perDrug.get(d.id)
     if (!e || !e.hasNonStructure) return false // structure-only or no images
     if (e.count >= MAX_IMAGES) return false // gallery already full

@@ -35,7 +35,10 @@ async function main() {
   saveState(state)
 
   const toCrawl = drugs.filter(
-    (d: any) => !state.crawled_drugs.includes(d.id) && !state.failed_drugs.includes(d.id),
+    (d: any) =>
+      !state.crawled_drugs.includes(d.id) &&
+      !state.failed_drugs.includes(d.id) &&
+      !(state.deferred_drugs || []).includes(d.id),
   )
   const batch = toCrawl.slice(0, BATCH_SIZE)
 

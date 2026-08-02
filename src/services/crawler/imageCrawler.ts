@@ -31,14 +31,16 @@ const STORAGE_BUCKET = 'medicine-images'
 
 // ── Generate search queries for a medicine ─────────────────────────
 export function generateSearchQueries(genericName: string, dosageForms?: string[]): string[] {
-  const forms = dosageForms?.length ? dosageForms : QUICK_FORMS
+  const forms = process.env.CRAWL_NO_FORMS === '1' ? [] : dosageForms?.length ? dosageForms : QUICK_FORMS
   const queries: string[] = []
   // Kenyan-market brands first — real-world packaging photos are preferred.
   for (const brand of brandNamesFor(genericName)) {
     queries.push(`${brand} ${genericName}`)
   }
-  for (const form of forms) {
-    queries.push(`${genericName} ${form}`)
+  if (forms.length > 0) {
+    for (const form of forms) {
+      queries.push(`${genericName} ${form}`)
+    }
   }
   // Plain name matches the most on Wikimedia (form-suffixed queries often hit zero).
   queries.push(genericName)
@@ -102,14 +104,18 @@ async function uploadImages(
   ]
 
   const urls: Record<string, string> = {}
-  for (const { path, buf, key } of uploads) {
-    const { error } = await adminSupabase.storage
-      .from(STORAGE_BUCKET)
-      .upload(path, buf, { contentType: 'image/webp', upsert: false })
-    if (error) throw error
-    const { data: { publicUrl } } = adminSupabase.storage.from(STORAGE_BUCKET).getPublicUrl(path)
-    urls[key] = publicUrl
-  }
+  // Upload the 4 sizes in parallel — storage puts are independent.
+  const results = await Promise.all(
+    uploads.map(async ({ path, buf, key }) => {
+      const { error } = await adminSupabase!.storage
+        .from(STORAGE_BUCKET)
+        .upload(path, buf, { contentType: 'image/webp', upsert: false })
+      if (error) throw error
+      const { data: { publicUrl } } = adminSupabase!.storage.from(STORAGE_BUCKET).getPublicUrl(path)
+      return { key, publicUrl }
+    }),
+  )
+  for (const { key, publicUrl } of results) urls[key] = publicUrl
 
   return {
     image_url: urls.image_url,
@@ -173,7 +179,7 @@ export async function crawlDrug(
   const stats = { found: 0, accepted: 0, rejected: 0, failures: [] as string[] }
   const weakCandidates: ProviderResult[] = []
   const queries = generateSearchQueries(genericName, dosageForms)
-  const MAX_IMAGES_PER_DRUG = 4
+  const MAX_IMAGES_PER_DRUG = Number(process.env.CRAWL_MAX_IMAGES || '4')
 
   // Shared processing: download → validate → dedup → optimize → upload → insert.
   // Returns true when the image was accepted (and stored).

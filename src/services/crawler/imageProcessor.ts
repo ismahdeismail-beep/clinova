@@ -163,10 +163,20 @@ export interface OptimizedImages {
 export async function optimizeImage(buf: Buffer): Promise<OptimizedImages> {
   const hash = await computeDHash(buf)
 
-  const original = await sharp(buf).webp({ quality: 90 }).toBuffer()
-  const large = await sharp(buf).resize(800, 800, { fit: 'inside' }).webp({ quality: 85 }).toBuffer()
-  const medium = await sharp(buf).resize(400, 400, { fit: 'inside' }).webp({ quality: 80 }).toBuffer()
-  const thumbnail = await sharp(buf).resize(128, 128, { fit: 'inside' }).webp({ quality: 75 }).toBuffer()
+  // Downscale huge sources first — the original is also uploaded and 1600px
+  // is plenty for display; this keeps WebP encoding fast.
+  const meta = await sharp(buf).metadata()
+  let source = buf
+  if ((meta.width || 0) > 1600 || (meta.height || 0) > 1600) {
+    source = await sharp(buf).resize(1600, 1600, { fit: 'inside' }).toBuffer()
+  }
+
+  const original = await sharp(source).webp({ quality: 90 }).toBuffer()
+  const [large, medium, thumbnail] = await Promise.all([
+    sharp(source).resize(800, 800, { fit: 'inside' }).webp({ quality: 85 }).toBuffer(),
+    sharp(source).resize(400, 400, { fit: 'inside' }).webp({ quality: 80 }).toBuffer(),
+    sharp(source).resize(128, 128, { fit: 'inside' }).webp({ quality: 75 }).toBuffer(),
+  ])
 
   return { original, large, medium, thumbnail, hash }
 }

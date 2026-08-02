@@ -1,3 +1,15 @@
+## 2026-08-02
+
+### Fixed
+- **Zero-image drugs refilled**: 27 monographs (Paracetamol, Aspirin, Amoxicillin, Fluconazole, etc.) left empty by the earlier cleanup-refill re-crawl were re-crawled; **440/440 drugs now have images** (1,826 total: 1,572 Wikimedia, 152 DailyMed, 73 structure, 29 Kenyan-brand).
+- **Kenyan-brand matcher matched combo drugs**: `amoxicillin/clavulanate` normalized to `amoxicillin clavulanate` and passed the word-boundary check, so plain-amoxicillin Kemoxyl packaging landed on both co-amoxiclav monographs. Added a `COMBINATION_PARTNERS` blocklist (clavulanate, sulbactam, lumefantrine, artemether, trimethoprim…) so fixed-dose combinations never get a single-ingredient brand image.
+- **Duplicate image rows from concurrent refresh runs**: the cleanup refill's re-crawl step and the follow-up refresh ran concurrently with empty per-drug hash sets, double-inserting 200 rows (same drug_id + hash). New `dedupe-images.ts` deletes duplicates keeping the earliest and removes the orphaned storage files (832 removed).
+- **Supabase 1000-row cap silently truncating hash/count fetches**: `refresh-images.ts`, `refresh-parallel.ts` and `crawlAllMissing` read `drug_images` without pagination, so drugs beyond the first 1000 rows were seen as empty — the top-up pass would have re-inserted the same images. All three now paginate with `.range()`.
+
+### Added
+- `scripts/refill-zero-images.ts` — resumable refill for monographs with no images (state in `storage/refill_state.json`).
+- `scripts/dedupe-images.ts` — removes duplicate `drug_images` rows (keep earliest) plus their orphaned storage files, and strips Kenyan-brand rows from drugs the current matcher excludes.
+
 ## 2026-07-22
 
 ### Added

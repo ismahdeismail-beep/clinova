@@ -419,8 +419,20 @@ export async function crawlAllMissing(): Promise<{
   const { data: existing } = await adminSupabase
     .from('drug_images')
     .select('hash')
-    .limit(10000)
+    .limit(50000)
   const existingHashes = new Set((existing || []).map((r: any) => r.hash as string).filter(Boolean))
+
+  // Paginate past Supabase's 1000-row response cap so every existing hash is
+  // seen — otherwise a second crawl pass re-inserts the same images.
+  {
+    let from = 1000
+    for (let i = 0; i < 60; i++) {
+      const { data: more } = await adminSupabase.from('drug_images').select('hash').range(from, from + 999)
+      if (!more || more.length === 0) break
+      for (const r of more) if (r.hash) existingHashes.add(r.hash as string)
+      from += 1000
+    }
+  }
 
   const drugsToCrawl = drugs.filter((d: any) => !state.crawled_drugs.includes(d.id))
 

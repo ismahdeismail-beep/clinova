@@ -32,15 +32,20 @@ async function main() {
     : { done: [] }
   const done = new Set(refresh.done)
 
-  const { data: images } = await admin.from('drug_images').select('drug_id, hash, source')
-  if (!images) throw new Error('no images rows')
-
   const perDrug = new Map<string, { count: number; hasNonStructure: boolean }>()
-  for (const row of images as any[]) {
-    const e = perDrug.get(row.drug_id) || { count: 0, hasNonStructure: false }
-    e.count++
-    if (row.source !== 'Wikimedia Commons (structure)') e.hasNonStructure = true
-    perDrug.set(row.drug_id, e)
+  {
+    let from = 0
+    for (let i = 0; i < 60; i++) {
+      const { data: images } = await admin.from('drug_images').select('drug_id, hash, source').range(from, from + 999)
+      if (!images || images.length === 0) break
+      for (const row of images as any[]) {
+        const e = perDrug.get(row.drug_id) || { count: 0, hasNonStructure: false }
+        e.count++
+        if (row.source !== 'Wikimedia Commons (structure)') e.hasNonStructure = true
+        perDrug.set(row.drug_id, e)
+      }
+      from += 1000
+    }
   }
 
   const { data: drugs } = await admin.from('drug_monographs').select('id, generic_name, name').limit(5000)

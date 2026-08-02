@@ -51,10 +51,23 @@ const KE_KEYWORDS = [
   'diclofenac', 'metronidazole', 'fluconazole', 'azithromycin', 'mebendazole',
 ]
 
+// Second active ingredients in fixed-dose combinations. A generic name that
+// mentions one of these (amoxicillin/clavulanate, artemether + lumefantrine)
+// is a combo product, so a single-ingredient brand image must never attach.
+const COMBINATION_PARTNERS = new Set([
+  'clavulanate', 'clavulanic', 'sulbactam', 'tazobactam', 'lumefantrine',
+  'artemether', 'trimethoprim', 'sulfamethoxazole', 'isoniazid', 'rifampicin',
+  'pyrazinamide', 'ethambutol', 'dolutegravir', 'tenofovir', 'emtricitabine',
+  'lamivudine', 'abacavir', 'efavirenz', 'nevirapine', 'dapsone', 'primaquine',
+])
+
 /** Kenyan-brand packaging images for a generic name (curated + verified). */
 export function kenyanBrandImagesFor(genericName: string): { brand: string; imageUrl: string }[] {
   if (!genericName) return []
   const norm = genericName.toLowerCase().replace(/[^a-z ]/g, ' ').replace(/\s+/g, ' ').trim()
+  const tokens = norm.split(' ')
+  // Combination products never get a single-ingredient brand image.
+  if (tokens.some((t) => COMBINATION_PARTNERS.has(t))) return []
   for (const key of KE_KEYWORDS) {
     // Word-boundary match so 'amoxicillin' never hits 'amoxicillin/clavulanate'
     if (norm === key || norm.startsWith(`${key} `) || norm.includes(` ${key} `) || norm.endsWith(` ${key}`)) {

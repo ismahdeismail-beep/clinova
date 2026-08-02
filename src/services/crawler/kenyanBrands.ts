@@ -194,13 +194,11 @@ function levenshtein(a: string, b: string, max: number): number {
 
 /** Strong tier: title references the drug, a component, or a Kenyan brand. */
 export function isTitleRelevant(title: string, genericName: string): boolean {
+  if (isJunkTitle(title)) return false
   const t = title.toLowerCase().replace(/[^a-z0-9]+/g, ' ')
   const tokens = t.split(' ').filter((w) => w.length >= 4)
-  const names = [
-    ...componentWords(genericName),
-    ...brandNamesFor(genericName).map((b) => b.toLowerCase()),
-  ]
-  for (const n of names) {
+  const components = componentWords(genericName)
+  for (const n of components) {
     if (n.length < 4) continue
     if (t.includes(n)) return true
     // Typo tolerance for single words (aciclovir vs acyclovir, torasemide vs torsemide)
@@ -211,7 +209,84 @@ export function isTitleRelevant(title: string, genericName: string): boolean {
       return true
     }
   }
+  // Brand names are NOT distinctive on their own — "Enid PEGASYS Truck" contains
+  // the brand "Pegasys" but is a truck photo. A brand match only counts when the
+  // title also shows medicine context (tablet/capsule/bottle/vial/box/mg…).
+  if (!hasMedicineContext(title)) return false
+  for (const n of brandNamesFor(genericName)) {
+    if (n.length < 4) continue
+    const nn = n.toLowerCase()
+    if (!nn.includes(' ') && tokens.includes(nn)) return true
+    if (nn.includes(' ') && t.includes(nn)) return true
+  }
   return false
+}
+
+// Words/patterns that mark a title as clearly NOT a drug photo — scenery,
+// people, vehicles, aircraft, animals, sports, food, chemical models, journal
+// figures, histology slides, etc. Applied on top of drug-name matching because
+// "US Navy boy after drinking albendazole" contains the drug name but is a
+// photo of a child, and "Enid PEGASYS Truck" contains a brand but is a truck.
+const JUNK_TOKENS = new Set([
+  'aircraft', 'aeroplane', 'airplane', 'airport', 'flight', 'plane', 'helicopter',
+  'ship', 'vessel', 'warship', 'navy', 'train', 'locomotive', 'truck', 'lorry',
+  'vehicle', 'bus', 'bicycle', 'motorbike', 'car', 'church', 'temple', 'mosque',
+  'cathedral', 'scenery', 'landscape', 'mountain', 'hill', 'beach', 'sea', 'ocean',
+  'river', 'lake', 'sky', 'sunset', 'sunrise', 'forest', 'flower', 'tree', 'animal',
+  'dog', 'cat', 'snake', 'bird', 'fish', 'insect', 'horse', 'cow', 'elephant', 'lion',
+  'bear', 'monkey', 'rabbit', 'turtle', 'frog', 'spider', 'people', 'person', 'child',
+  'children', 'boy', 'girl', 'man', 'woman', 'portrait', 'face', 'hand', 'foot', 'arm',
+  'statue', 'sculpture', 'bridge', 'building', 'house', 'road', 'street', 'city',
+  'village', 'town', 'handball', 'football', 'basketball', 'cricket', 'soccer',
+  'tennis', 'rugby', 'olympics', 'stadium', 'tournament', 'food', 'meal', 'fruit',
+  'vegetable', 'meat', 'bread', 'cake', 'drink', 'coffee', 'restaurant', 'histology',
+  'microscope', 'magnification', 'micrograph', 'microphotograph', 'leiomyoma',
+  'tissue', 'biopsy', 'pathology', 'hematoxylin', 'eosin', 'stain', 'stained',
+  'section', 'journal', 'doi', 'biomedcentral', 'plos', 'bait', 'cartridges',
+  'xtal', 'spacefill', 'spacfill', 'ballandstick', 'stickmodel', 'model', 'cation',
+  'dna', 'replication', 'visualizing', 'induced', 'systematic', 'review', 'efficacy',
+  'safety', 'uncomplicated', 'trial', 'study', 'analysis', 'meta', 'stress',
+])
+
+const JUNK_SUBSTRINGS = ['3d', 'ball and stick', 'ball-and-stick', '1475-2875', '2018 summer youth']
+
+function isJunkTitle(title: string): boolean {
+  const t = title.toLowerCase().replace(/[^a-z0-9]+/g, ' ')
+  const tokens = t.split(' ').filter(Boolean)
+  if (tokens.some((w) => JUNK_TOKENS.has(w))) return true
+  return JUNK_SUBSTRINGS.some((s) => t.includes(s))
+}
+
+export { isJunkTitle }
+
+// Subject-junk only — for cleanup tooling. Excludes chemical-structure/model
+// terms (ball-and-stick, xtal, 3D…) which are the correct drug, just not
+// product photos; the cleanup keeps those as last-resort content.
+const SUBJECT_JUNK_RE =
+  /aircraft|aeroplane|airplane|airport|flight|helicopter|ship|vessel|warship|navy|train|locomotive|truck|lorry|vehicle|\bcar\b|church|temple|mosque|cathedral|scenery|landscape|mountain|\bhill\b|beach|\bsea\b|ocean|river|\blake\b|\bsky\b|sunset|sunrise|forest|flower|\btree\b|animal|\bdog\b|\bcat\b|snake|\bbird\b|\bfish\b|insect|horse|\bcow\b|elephant|lion|\bbear\b|monkey|rabbit|turtle|frog|spider|people|person|child|children|\bboy\b|\bgirl\b|\bman\b|woman|portrait|\bface\b|\bhand\b|\bfoot\b|\barm\b|statue|sculpture|bridge|building|\bhouse\b|\broad\b|street|\bcity\b|village|\btown\b|handball|football|basketball|cricket|soccer|tennis|rugby|olympics|stadium|tournament|food|\bmeal\b|fruit|vegetable|meat|bread|\bcake\b|drink|coffee|restaurant|histology|microscope|magnification|micrograph|leiomyoma|tissue|biopsy|pathology|hematoxylin|eosin|stain|journal|\bdoi\b|biomedcentral|plos|bait|cartridges|dna|replication|visualizing|induced|systematic|review|efficacy|safety|uncomplicated|trial|\bstudy\b|analysis|\bmeta\b|stress|screenshot|poster|industrial|clinicaltrials/i
+
+export function isSubjectJunkTitle(title: string): boolean {
+  return SUBJECT_JUNK_RE.test((title || '').toLowerCase())
+}
+
+// Medicine-context words — packaging/box/bottle/vial/injection/mg etc. A brand
+// name alone ("Pegasys") is not enough; the photo must actually show product.
+const MED_WORDS = new Set([
+  'tablet', 'tablets', 'tab', 'tabs', 'cap', 'caps', 'capsule', 'capsules',
+  'vial', 'vials', 'bottle', 'bottles', 'box', 'boxes', 'pack', 'packs',
+  'injection', 'inj', 'syringe', 'pen', 'cartridge', 'cartridges', 'solution',
+  'suspension', 'syrup', 'drops', 'drop', 'ointment', 'cream', 'gel', 'spray',
+  'inhaler', 'sachet', 'ampoule', 'ampule', 'blister', 'strip', 'label',
+  'coated', 'enteric', 'drug', 'drugs', 'medication', 'medications', 'medicine',
+  'medicines', 'pharmaceutical', 'pharmaceuticals', 'dose', 'doses',
+  'unit', 'units', 'vials', 'ampoules', 'ampules',
+])
+
+function hasMedicineContext(title: string): boolean {
+  const t = title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').replace(/\s+/g, ' ').trim()
+  const tokens = t.split(' ').filter(Boolean)
+  if (tokens.some((w) => MED_WORDS.has(w))) return true
+  return /\b\d+\s?(mg|mcg|ml|g|iu|units?|s)\b/.test(t)
 }
 
 const WEAK_WORDS = [
@@ -222,6 +297,7 @@ const WEAK_WORDS = [
 
 /** Weak tier: generic medicine imagery for drugs with no titled matches. */
 export function isWeakRelevant(title: string): boolean {
+  if (isJunkTitle(title)) return false
   const t = title.toLowerCase()
-  return WEAK_WORDS.some((w) => t.includes(w))
+  return WEAK_WORDS.some((w) => t.includes(w)) && hasMedicineContext(title)
 }

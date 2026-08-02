@@ -18,6 +18,7 @@ import {
 } from './imageProcessor'
 import { type CrawlerState, loadState, saveState } from './state'
 import { brandNamesFor, isTitleRelevant, isWeakRelevant } from './kenyanBrands'
+import { kenyanBrandImagesFor } from './kenyanBrandImages'
 import { politeDelay } from './providers'
 
 const DOSAGE_FORMS = [
@@ -225,6 +226,13 @@ export async function crawlDrug(
   // Cap on TOTAL gallery size (existing + new), not just new additions.
   const remaining = Math.max(0, MAX_IMAGES_PER_DRUG - existingCount)
 
+  // Kenyan-market brand packaging is the highest-value content for learners
+  // (they recognize local products), so it always reserves slots and is
+  // inserted LAST — newest created_at → appears first in the gallery.
+  const keImages = kenyanBrandImagesFor(genericName)
+  const keSlots = Math.min(keImages.length, remaining)
+  const webBudget = remaining - keSlots
+
   // Shared processing: download → validate → dedup → optimize → upload → insert.
   // Returns true when the image was accepted (and stored).
   const processResult = async (result: ProviderResult): Promise<boolean> => {
@@ -273,7 +281,7 @@ export async function crawlDrug(
   }
 
   for (const query of queries) {
-    if (stats.accepted >= remaining) break
+    if (stats.accepted >= webBudget) break
     const results = await searchAllProviders(query)
     stats.found += results.length
 
@@ -294,7 +302,7 @@ export async function crawlDrug(
 
     // Fallback tier: if Wikimedia under-delivered for this query, consult the
     // secondary providers (DailyMed/FDA). Same acceptance pipeline as above.
-    if (stats.accepted < remaining) {
+    if (stats.accepted < webBudget) {
       const fallbacks = await searchFallbackProviders(query)
       stats.found += fallbacks.length
       for (const result of fallbacks) {
@@ -317,8 +325,9 @@ export async function crawlDrug(
 
   // Weak fallback tier: no titled matches at all — accept license-clean
   // generic medicine imagery (medicine-worded titles only, never junk like
-  // scenery photos) so every monograph still gets an image.
-  if (stats.accepted === 0) {
+  // scenery photos) so every monograph still gets an image. Skipped when a
+  // curated Kenyan-brand image is available — that already fills the gallery.
+  if (stats.accepted === 0 && webBudget > 0 && keSlots === 0) {
     const seen = new Set<string>()
     for (const result of weakCandidates) {
       if (stats.accepted >= remaining) break
@@ -326,6 +335,49 @@ export async function crawlDrug(
       seen.add(result.imageUrl)
       if (!isWeakRelevant(result.title)) continue
       if (await processResult(result)) break
+    }
+  }
+
+  // Kenyan-market brand tier — curated, verified local packaging (Lab & Allied).
+  // Inserted last so it sorts first in the gallery (created_at DESC).
+  let keAdded = 0
+  for (const img of keImages) {
+    if (stats.accepted >= remaining || keAdded >= keSlots) break
+    try {
+      await downloadDelay()
+      const buf = await downloadImage(img.imageUrl)
+      const validation = await validateImage(buf)
+      if (!validation.valid) {
+        stats.rejected++
+        continue
+      }
+      const optimized = await optimizeImage(buf)
+      if (await isDuplicate(optimized.hash, existingHashes)) {
+        stats.rejected++
+        continue
+      }
+      existingHashes.add(optimized.hash)
+      const urls = await uploadImages(genericName, 'unknown', strength, optimized)
+      await insertImageRecord(drugId, {
+        generic_name: genericName,
+        dosage_form: 'unknown',
+        strength,
+        image_url: urls.image_url,
+        thumbnail_url: urls.thumbnail_url,
+        large_url: urls.large_url,
+        medium_url: urls.medium_url,
+        source: 'Kenyan brand (Lab & Allied)',
+        license: 'Manufacturer marketing image (educational use)',
+        license_url: 'https://www.laballied.com',
+        author: 'Laboratory & Allied Ltd',
+        page_url: img.imageUrl,
+        hash: optimized.hash,
+        quality_score: scoreQuality(validation.width, validation.height, validation.format),
+      })
+      stats.accepted++
+      keAdded++
+    } catch (e: any) {
+      stats.failures.push(`${img.brand}: ${e.message}`)
     }
   }
 

@@ -96,19 +96,32 @@ async function main() {
   }
   console.log(`kenyan-brand drugs needing refresh: ${kenyanDrugs.size}`)
 
-  // Merge targets: junk drugs ∪ kenyan drugs
+  // Merge targets: junk drugs ∪ kenyan drugs ∪ zero-image drugs.
+  // Every target drug gets ALL its images cleared for a clean re-crawl
+  // (fresh hashes + Kenyan tier first in the gallery).
   const targets = new Map<string, string>()
-  const toDelete: any[] = []
-  for (const [drugId, rows] of junkByDrug) {
-    const name = drugNames.get(drugId) || rows[0]?.generic_name
+  const targetIds = new Set<string>()
+  for (const [drugId] of junkByDrug) {
+    targetIds.add(drugId)
+    const name = drugNames.get(drugId) || junkByDrug.get(drugId)![0]?.generic_name
     if (name) targets.set(drugId, name)
-    toDelete.push(...rows)
   }
-  for (const [drugId, rows] of kenyanDrugs) {
-    const name = drugNames.get(drugId) || rows[0]?.generic_name
+  for (const [drugId] of kenyanDrugs) {
+    targetIds.add(drugId)
+    const name = drugNames.get(drugId) || kenyanDrugs.get(drugId)![0]?.generic_name
     if (name) targets.set(drugId, name)
-    toDelete.push(...rows)
   }
+  // Drugs left empty by earlier refresh runs — refill them too.
+  const imageCounts = new Map<string, number>()
+  for (const img of images) imageCounts.set(img.drug_id, (imageCounts.get(img.drug_id) || 0) + 1)
+  for (const d of monographs || []) {
+    if (!d.generic_name || targets.has(d.id)) continue
+    if ((imageCounts.get(d.id) || 0) === 0) {
+      targets.set(d.id, d.generic_name)
+      targetIds.add(d.id)
+    }
+  }
+  const toDelete = images.filter((i) => targetIds.has(i.drug_id))
 
   const list = [...targets.entries()].slice(0, LIMIT || undefined)
   console.log(`will delete ${toDelete.length} rows and re-crawl ${list.length} drugs`)
@@ -118,12 +131,20 @@ async function main() {
   if (dryRun) return
 
   // Re-crawl targets with the fixed crawler (Kenyan tier reserves slots).
-  const { data: remaining } = await admin.from('drug_images').select('drug_id, hash').limit(10000)
   const hashesByDrug = new Map<string, Set<string>>()
-  for (const r of remaining || []) {
-    if (!r.hash) continue
-    if (!hashesByDrug.has(r.drug_id)) hashesByDrug.set(r.drug_id, new Set())
-    hashesByDrug.get(r.drug_id)!.add(r.hash)
+  {
+    let from = 0
+    for (let i = 0; i < 25; i++) {
+      const { data, error } = await admin.from('drug_images').select('drug_id, hash').range(from, from + 999)
+      if (error) throw error
+      if (!data || data.length === 0) break
+      for (const r of data) {
+        if (!r.hash) continue
+        if (!hashesByDrug.has(r.drug_id)) hashesByDrug.set(r.drug_id, new Set())
+        hashesByDrug.get(r.drug_id)!.add(r.hash)
+      }
+      from += 1000
+    }
   }
 
   let done = 0

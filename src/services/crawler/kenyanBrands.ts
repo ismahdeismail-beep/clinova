@@ -246,6 +246,8 @@ const JUNK_TOKENS = new Set([
   'xtal', 'spacefill', 'spacfill', 'ballandstick', 'stickmodel', 'model', 'cation',
   'dna', 'replication', 'visualizing', 'induced', 'systematic', 'review', 'efficacy',
   'safety', 'uncomplicated', 'trial', 'study', 'analysis', 'meta', 'stress',
+  'scan', 'dmsa', 'mri', 'radiology', 'xray', 'ultrasound', 'echocardiogram',
+  'electrocardiogram', 'ecg', 'eeg', 'angiogram', 'endoscopy', 'colonoscopy',
 ])
 
 const JUNK_SUBSTRINGS = ['3d', 'ball and stick', 'ball-and-stick', '1475-2875', '2018 summer youth']
@@ -263,7 +265,7 @@ export { isJunkTitle }
 // terms (ball-and-stick, xtal, 3D…) which are the correct drug, just not
 // product photos; the cleanup keeps those as last-resort content.
 const SUBJECT_JUNK_RE =
-  /aircraft|aeroplane|airplane|airport|flight|helicopter|ship|vessel|warship|navy|train|locomotive|truck|lorry|vehicle|\bcar\b|church|temple|mosque|cathedral|scenery|landscape|mountain|\bhill\b|beach|\bsea\b|ocean|river|\blake\b|\bsky\b|sunset|sunrise|forest|flower|\btree\b|animal|\bdog\b|\bcat\b|snake|\bbird\b|\bfish\b|insect|horse|\bcow\b|elephant|lion|\bbear\b|monkey|rabbit|turtle|frog|spider|people|person|child|children|\bboy\b|\bgirl\b|\bman\b|woman|portrait|\bface\b|\bhand\b|\bfoot\b|\barm\b|statue|sculpture|bridge|building|\bhouse\b|\broad\b|street|\bcity\b|village|\btown\b|handball|football|basketball|cricket|soccer|tennis|rugby|olympics|stadium|tournament|food|\bmeal\b|fruit|vegetable|meat|bread|\bcake\b|drink|coffee|restaurant|histology|microscope|magnification|micrograph|leiomyoma|tissue|biopsy|pathology|hematoxylin|eosin|stain|journal|\bdoi\b|biomedcentral|plos|bait|cartridges|dna|replication|visualizing|induced|systematic|review|efficacy|safety|uncomplicated|trial|\bstudy\b|analysis|\bmeta\b|stress|screenshot|poster|industrial|clinicaltrials/i
+  /aircraft|aeroplane|airplane|airport|flight|helicopter|ship|vessel|warship|navy|train|locomotive|truck|lorry|vehicle|\bcar\b|church|temple|mosque|cathedral|scenery|landscape|mountain|\bhill\b|beach|\bsea\b|ocean|river|\blake\b|\bsky\b|sunset|sunrise|forest|flower|\btree\b|animal|\bdog\b|\bcat\b|snake|\bbird\b|\bfish\b|insect|horse|\bcow\b|elephant|lion|\bbear\b|monkey|rabbit|turtle|frog|spider|people|person|child|children|\bboy\b|\bgirl\b|\bman\b|woman|portrait|\bface\b|\bhand\b|\bfoot\b|\barm\b|statue|sculpture|bridge|building|\bhouse\b|\broad\b|street|\bcity\b|village|\btown\b|handball|football|basketball|cricket|soccer|tennis|rugby|olympics|stadium|tournament|food|\bmeal\b|fruit|vegetable|meat|bread|\bcake\b|drink|coffee|restaurant|histology|microscope|magnification|micrograph|leiomyoma|tissue|biopsy|pathology|hematoxylin|eosin|stain|journal|\bdoi\b|biomedcentral|plos|bait|cartridges|dna|replication|visualizing|induced|systematic|review|efficacy|safety|uncomplicated|trial|\bstudy\b|analysis|\bmeta\b|stress|screenshot|poster|industrial|clinicaltrials|scan|dmsa|\bmri\b|radiology|xray|ultrasound|echocardiogram|electrocardiogram|\becg\b|\beeg\b|angiogram|endoscopy|colonoscopy/i
 
 export function isSubjectJunkTitle(title: string): boolean {
   return SUBJECT_JUNK_RE.test((title || '').toLowerCase())

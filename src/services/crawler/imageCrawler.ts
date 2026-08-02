@@ -286,7 +286,7 @@ export async function crawlDrug(
     stats.found += results.length
 
     for (const result of results) {
-      if (stats.accepted >= remaining) break
+      if (stats.accepted >= webBudget) break
       if (!isLicenseAccepted(result.license)) {
         stats.rejected++
         continue
@@ -306,7 +306,7 @@ export async function crawlDrug(
       const fallbacks = await searchFallbackProviders(query)
       stats.found += fallbacks.length
       for (const result of fallbacks) {
-        if (stats.accepted >= remaining) break
+        if (stats.accepted >= webBudget) break
         if (!isLicenseAccepted(result.license)) {
           stats.rejected++
           continue

@@ -16,10 +16,17 @@ const CASE_KEY = 'clinova_stat_cases'
 const DRUG_KEY = 'clinova_stat_drugs'
 const AREA_KEY = 'clinova_stat_areas'
 
+// Cached counts expire after 24h — a stale cache (e.g. from a smaller
+// database months ago) must never flash a wrong number on screen.
+const CACHE_TTL_MS = 24 * 60 * 60 * 1000
+
 function readCache(key: string): number | null {
   try {
-    const v = localStorage.getItem(key)
-    return v ? Number(v) : null
+    const raw = localStorage.getItem(key)
+    if (!raw) return null
+    const v = JSON.parse(raw)
+    if (!v || typeof v.n !== 'number' || Date.now() - v.ts > CACHE_TTL_MS) return null
+    return v.n
   } catch {
     return null
   }
@@ -27,7 +34,7 @@ function readCache(key: string): number | null {
 
 function writeCache(key: string, n: number) {
   try {
-    localStorage.setItem(key, String(n))
+    localStorage.setItem(key, JSON.stringify({ n, ts: Date.now() }))
   } catch {
     /* ignore */
   }

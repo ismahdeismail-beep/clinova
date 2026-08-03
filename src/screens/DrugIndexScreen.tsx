@@ -212,6 +212,28 @@ function LikeButton({ monographId }: { monographId: string }) {
   );
 }
 
+// 3D-structure icon for drug cards — uses the gallery image (PubChem/PDB 3D
+// renders are preferred by the service) with a class-tinted fallback tile.
+function DrugThumb({ m, size = 'md' }: { m: DrugMonograph; size?: 'sm' | 'md' }) {
+  const cc = getDrugClassConfig(m.drug_class_name || m.drug_class)
+  const dim = size === 'sm' ? 'w-8 h-8' : 'w-11 h-11'
+  if (m.thumbnail_url) {
+    return (
+      <img
+        src={m.thumbnail_url}
+        alt=""
+        loading="lazy"
+        className={`${dim} rounded-xl object-cover bg-white shrink-0 border border-[var(--border)] shadow-sm`}
+      />
+    )
+  }
+  return (
+    <div className={`${dim} rounded-xl bg-gradient-to-br ${cc.gradient} flex items-center justify-center shrink-0 border border-[var(--border)]`}>
+      <Pill size={size === 'sm' ? 15 : 19} className="text-[var(--text-muted)]" />
+    </div>
+  )
+}
+
 export default function DrugIndexScreen() {
   const [searchParams] = useSearchParams();
 
@@ -712,7 +734,7 @@ export default function DrugIndexScreen() {
                           onClick={() => handleSuggestionClick(m)}
                           className="w-full text-left px-2 py-2 rounded-lg text-xs font-medium text-[var(--text)] hover:bg-[var(--surface-dim)] transition-colors flex items-center gap-2 cursor-pointer"
                         >
-                          <Pill size={12} className="text-[var(--text-dim)] shrink-0" />
+                          <DrugThumb m={m} size="sm" />
                           <span className="min-w-0 flex-1">
                             <span className="font-semibold block truncate">{m.name}</span>
                             {m.generic_name && m.generic_name !== m.name && (
@@ -865,15 +887,20 @@ export default function DrugIndexScreen() {
                         {searchResults.map((m) => (
                           <div key={m.id} className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-xl transition-all group overflow-hidden">
                             <button onClick={() => openSeeded(m)} className="w-full text-left p-4 cursor-pointer">
-                              <div className="flex items-start justify-between gap-2 min-w-0">
-                                <div className="font-semibold text-[var(--text)] text-sm group-hover:text-[var(--primary)] transition-colors truncate">{m.name}</div>
-                                <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-full shrink-0 ${hasClinicalContent(m) ? 'bg-emerald-500/10 text-emerald-600' : 'bg-amber-500/10 text-amber-600'}`}>
-                                  {hasClinicalContent(m) ? 'Full' : 'Limited'}
-                                </span>
+                              <div className="flex items-start gap-3 min-w-0">
+                                <DrugThumb m={m} />
+                                <div className="flex-1 min-w-0">
+                                  <div className="flex items-start justify-between gap-2 min-w-0">
+                                    <div className="font-semibold text-[var(--text)] text-sm group-hover:text-[var(--primary)] transition-colors truncate">{m.name}</div>
+                                    <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-full shrink-0 ${hasClinicalContent(m) ? 'bg-emerald-500/10 text-emerald-600' : 'bg-amber-500/10 text-amber-600'}`}>
+                                      {hasClinicalContent(m) ? 'Full' : 'Limited'}
+                                    </span>
+                                  </div>
+                                  {m.generic_name && m.generic_name !== m.name && (
+                                    <div className="text-xs text-[var(--text-muted)] truncate">{m.generic_name}</div>
+                                  )}
+                                </div>
                               </div>
-                              {m.generic_name && m.generic_name !== m.name && (
-                                <div className="text-xs text-[var(--text-muted)] truncate">{m.generic_name}</div>
-                              )}
                               {(m.drug_class_name || m.drug_class) && (() => {
                                 const cc = getDrugClassConfig(m.drug_class_name || m.drug_class);
                                 return (
@@ -958,11 +985,32 @@ export default function DrugIndexScreen() {
                     <div className="flex items-center justify-between">
                       <h2 className="text-2xl font-bold text-[var(--text)] border-l-4 border-[var(--primary)] pl-3">Therapeutic Classes</h2>
                       <div className="text-sm text-[var(--text-muted)] font-medium">
-                        {catalog.length} monographs
+                        {catalogLoading ? (
+                          <span className="inline-block w-16 h-4 rounded bg-[var(--surface-dim)] animate-pulse align-middle" aria-hidden />
+                        ) : (
+                          `${catalog.length} monographs`
+                        )}
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                    {catalogLoading ? (
+                      /* Skeleton cards — never flash bundled-seed counts before the live catalog arrives */
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                        {Array.from({ length: 8 }).map((_, i) => (
+                          <div key={i} className="rounded-2xl border border-[var(--border)] p-5 animate-pulse">
+                            <div className="flex items-center gap-3 mb-3">
+                              <div className="w-10 h-10 rounded-xl bg-[var(--surface-dim)]" />
+                              <div className="flex-1 space-y-2">
+                                <div className="h-3.5 w-3/4 rounded bg-[var(--surface-dim)]" />
+                                <div className="h-3 w-1/2 rounded bg-[var(--surface-dim)]" />
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                       {CATEGORIES.map((cat) => {
                         const count = catalog.filter((m) => getDrugCategory(m) === cat).length;
                         if (count === 0) return null;
@@ -1002,6 +1050,8 @@ export default function DrugIndexScreen() {
                         <h3 className="text-lg font-bold text-[var(--text)]">No monographs loaded</h3>
                         <p className="text-sm text-[var(--text-muted)] mt-2">The Kenya Drug Index is being populated.</p>
                       </div>
+                    )}
+                    </>
                     )}
                   </div>
                 ) : (
@@ -1089,21 +1139,28 @@ export default function DrugIndexScreen() {
                       </div>
                     ) : (
                       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                        {filteredCatalog.map((m) => (
+                        {filteredCatalog.map((m) => {
+                          const catCc = CATEGORY_COLORS[selectedCategory] || CATEGORY_COLORS.Immunology;
+                          return (
                           <div
                             key={m.id}
-                            className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] rounded-xl transition-all group overflow-hidden"
+                            className={`bg-gradient-to-br ${catCc.card} border border-[var(--border)] rounded-xl transition-all group overflow-hidden ${catCc.hover}`}
                           >
                             <button
                               onClick={() => openSeeded(m)}
                               className="w-full text-left p-4 cursor-pointer"
                             >
-                              <div className="flex items-start justify-between gap-2 min-w-0">
-                                <div className="font-semibold text-[var(--text)] text-sm group-hover:text-[var(--primary)] transition-colors truncate">{m.name}</div>
+                              <div className="flex items-start gap-3 min-w-0">
+                                <DrugThumb m={m} />
+                                <div className="flex-1 min-w-0">
+                                  <div className="flex items-start justify-between gap-2 min-w-0">
+                                    <div className="font-semibold text-[var(--text)] text-sm group-hover:text-[var(--primary)] transition-colors truncate">{m.name}</div>
+                                  </div>
+                                  {m.generic_name && m.generic_name !== m.name && (
+                                    <div className="text-xs text-[var(--text-muted)] truncate">{m.generic_name}</div>
+                                  )}
+                                </div>
                               </div>
-                              {m.generic_name && m.generic_name !== m.name && (
-                                <div className="text-xs text-[var(--text-muted)] truncate">{m.generic_name}</div>
-                              )}
                               {(m.drug_class_name || m.drug_class) && (() => {
                                 const cc = getDrugClassConfig(m.drug_class_name || m.drug_class);
                                 return (
@@ -1119,7 +1176,8 @@ export default function DrugIndexScreen() {
                               <LikeButton monographId={m.id} />
                             </div>
                           </div>
-                        ))}
+                          );
+                        })}
                       </div>
                     )}
                   </div>

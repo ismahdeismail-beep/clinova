@@ -21,6 +21,66 @@ function buildStaticIndex() {
 }
 buildStaticIndex()
 
+// ── Thumbnail index (3D structure first) ──────────────────────────
+// Every monograph gets a best-image icon from drug_images. Preference order:
+// 3D renders (PubChem conformers, PDB/PDBe ribbons) → 2D structures → photos.
+// Loaded once per session and cached so list renders are instant.
+let thumbCache: Map<string, string> | null = null
+let thumbFetching: Promise<Map<string, string>> | null = null
+
+function thumbPriority(r: any): number {
+  const s = String(r.source || '').toLowerCase()
+  if (s.includes('3d') || s.includes('pdbe') || s.includes('ribbon') || s.includes('pdb')) return 0
+  if (s.includes('2d') || s.includes('structure')) return 1
+  return 2
+}
+
+async function loadThumbnails(): Promise<Map<string, string>> {
+  if (thumbCache) return thumbCache
+  if (thumbFetching) return thumbFetching
+  thumbFetching = (async (): Promise<Map<string, string>> => {
+    const map = new Map<string, { url: string; priority: number }>()
+    if (!supabase) return new Map<string, string>()
+    let from = 0
+    for (let i = 0; i < 80; i++) {
+      const { data } = await supabase
+        .from('drug_images')
+        .select('drug_id, source, thumbnail_url, large_url, quality_score')
+        .range(from, from + 999)
+      if (!data || data.length === 0) break
+      for (const r of data) {
+        const url = r.thumbnail_url || r.large_url
+        if (!url) continue
+        const cur = map.get(r.drug_id)
+        if (cur && thumbPriority(r) >= cur.priority) continue
+        map.set(r.drug_id, { url, priority: thumbPriority(r) })
+      }
+      from += 1000
+      if (data.length < 1000) break
+    }
+    const out = new Map<string, string>()
+    for (const [id, v] of map) out.set(id, v.url)
+    thumbCache = out
+    return out
+  })().finally(() => {
+    thumbFetching = null
+  })
+  return thumbFetching
+}
+
+async function attachThumbnails(rows: DrugMonograph[]): Promise<DrugMonograph[]> {
+  if (rows.length === 0) return rows
+  try {
+    const map = await loadThumbnails()
+    return rows.map((r) => ({
+      ...r,
+      thumbnail_url: map.get(r.id) ?? '',
+    }))
+  } catch {
+    return rows
+  }
+}
+
 export interface DrugMonograph {
   id: string;
   name: string;
@@ -52,6 +112,8 @@ export interface DrugMonograph {
   /** Clinical pearls and practice tips */
   clinical_pearls?: string[];
   created_at?: string;
+  /** Best available gallery image for list icons — 3D structures preferred */
+  thumbnail_url?: string;
 }
 
 function mapRow(row: any): DrugMonograph {
@@ -111,7 +173,7 @@ export const DrugMonographService = {
       .order('name');
     if (error) throw error;
     const rows = (data ?? []).map(mapRow);
-    return rows.length > 0 ? rows : STATIC_ALL;
+    return rows.length > 0 ? attachThumbnails(rows) : STATIC_ALL;
   },
 
   async getById(id: string): Promise<DrugMonograph | null> {
@@ -148,7 +210,7 @@ export const DrugMonographService = {
     if (error) throw error;
 
     const rows = (data ?? []).map(mapRow);
-    return rows.length > 0 ? rows : searchStatic(q);
+    return rows.length > 0 ? attachThumbnails(rows) : searchStatic(q);
   },
 
   async searchByIndication(indication: string): Promise<DrugMonograph[]> {
@@ -163,7 +225,7 @@ export const DrugMonographService = {
     if (error) throw error;
 
     const rows = (data ?? []).map(mapRow);
-    return rows.length > 0 ? rows : STATIC_ALL.filter((d) => d.indications.some((i) => i.toLowerCase().includes(ind)))
+    return rows.length > 0 ? attachThumbnails(rows) : STATIC_ALL.filter((d) => d.indications.some((i) => i.toLowerCase().includes(ind)))
   },
 
   async getByDrugClass(drugClass: string): Promise<DrugMonograph[]> {
@@ -178,7 +240,7 @@ export const DrugMonographService = {
     if (error) throw error;
 
     const rows = (data ?? []).map(mapRow);
-    return rows.length > 0 ? rows : STATIC_ALL.filter((d) => d.drug_class.toLowerCase().includes(dc) || d.drug_class_name.toLowerCase().includes(dc))
+    return rows.length > 0 ? attachThumbnails(rows) : STATIC_ALL.filter((d) => d.drug_class.toLowerCase().includes(dc) || d.drug_class_name.toLowerCase().includes(dc))
   },
 
   async getInteractingDrugs(drugName: string): Promise<{ drug: DrugMonograph; interactions: string[] }[]> {

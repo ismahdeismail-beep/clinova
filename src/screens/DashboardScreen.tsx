@@ -273,7 +273,7 @@ export default function DashboardScreen() {
   }, [userData?.id])
 
   // ── Stable stats (single source of truth via useContentStats) ──
-  const { drugCount, caseCount, areaCount, carePlanCount } = useContentStats()
+  const { drugCount, caseCount, areaCount, carePlanCount, loading: statsLoading } = useContentStats()
 
   // Featured article index (rotates daily)
   const [currentArticleIdx, setCurrentArticleIdx] = useState(() => {
@@ -402,7 +402,11 @@ export default function DashboardScreen() {
                 <Icon size={20} className={stat.color} />
               </div>
               <div>
-                <p className="text-lg font-extrabold tracking-tight text-[var(--text)]">{stat.value}</p>
+                {statsLoading ? (
+                  <span className="block w-12 h-6 rounded bg-[var(--surface-dim)] animate-pulse" aria-hidden />
+                ) : (
+                  <p className="text-lg font-extrabold tracking-tight text-[var(--text)]">{stat.value}</p>
+                )}
                 <p className="text-[11px] text-[var(--text-muted)] font-medium">{stat.label}</p>
               </div>
             </div>

@@ -1,6 +1,17 @@
 ## 2026-08-03
 
+### Added
+- **Second-source drug images — 100% coverage**: monographs with no Wikimedia/DailyMed photos are now filled from NIH PubChem (2D + 3D structure renderings), RCSB PDB/PDBe (ribbon structures for biologics, falling back to the drug's binding target e.g. Alirocumab→PCSK9), Wikipedia REST lead images, plus 8 images extracted from the B.Pharm pharmacology lecture notes. **1,072/1,072 monographs now have images** (2,542 rows: 1,676 Wikimedia, 616 DailyMed, 147 PubChem, 28 Kenyan brands, 25 PDB/PDBe, 14 Wikipedia, 8 lecture notes).
+- **Real FDA indications**: the generic "Management of … as per approved indications" template on **346 monographs replaced with real FDA `indications_and_usage`** parsed from OpenFDA (50 skipped — no FDA label on file).
+- **Simplified therapeutic classification**: 40 `drug_classes` renamed to short scannable names ("Aminoglycoside antibiotic", "Benzodiazepine", "Statin"…); the verbose detail moved to the `description` column. The UI now prefers the specific class name over the root category.
+- **3D structure icons in the Drug Index**: every drug card and search suggestion shows its best image as an icon — 3D structures preferred (PubChem conformers / PDB ribbons), then 2D structures, then product photos.
+- **Class colors everywhere**: the 16 root therapeutic classes + 44 granular class names added to the color map — no drug class badge renders grey anymore; in-class drug cards get the category's colored wash and hover tint.
+
 ### Fixed
+- **Flickering / stale counts**: landing and dashboard stat cards render a skeleton while the live Supabase counts load (no fallback-number flash), the KDI category grid shows skeleton cards instead of bundled-seed counts, and cached stats expire after 24h so stale numbers never reappear.
+- **Hardcoded support-screen numbers**: "1000 monographs", "1,100+ simulations" and "92 NANDA/NIC/NOC" quick-nav descriptions now derive from live data.
+
+### Fixed (earlier same day)
 - **Enrichment columns lost in a failed type migration**: an attempt to convert `clinical_pearls` (text) and `pharmacokinetics` (jsonb) to the interface types ended up dropping both columns. Re-added with the correct types (`text[]`, `text`) and regenerated all data — **440/440 monographs now carry MOA, pharmacokinetics, overdose, pregnancy category and clinical pearls** (was 22%/19%/19%/19%/0%).
 - **Gap-fill pass clobbered seed contraindications**: a placeholder-first-item regex replaced richer multi-item contraindications with a single FDA item that failed the content audit's 2-item bar. Restored 62 rows from the seed batch files (`scripts/restore-core-seeds.ts`) and made the gap-fill only touch fields below the audit's quality bar.
 - **FDA label search returning the wrong drug**: several monographs picked up a different drug's label (Artemether–Lumefantrine → olanzapine, Rifampicin → clarithromycin, N-acetylcysteine → oxycodone/paracetamol, Thiopental → lidocaine, Benzyl Benzoate → Dove deodorant, Dextrose → ACD anticoagulant). Replaced with accurate mechanisms and added a mechanism-like guard so the `description` section (excipients/appearance) is never used as MOA.

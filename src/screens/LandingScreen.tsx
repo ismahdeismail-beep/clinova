@@ -15,14 +15,14 @@ const CARE_PLAN_COUNT = getAllCarePlanDiseases().length
 export default function LandingScreen() {
   const navigate = useNavigate()
 
-  const { drugCount, caseCount, areaCount, carePlanCount } = useContentStats()
+  const { drugCount, caseCount, areaCount, carePlanCount, loading } = useContentStats()
   const therapeuticAreaCount = areaCount
 
   const stats = [
-    { value: String(therapeuticAreaCount), label: 'Therapeutic Areas', icon: Layers },
-    { value: String(caseCount ?? FALLBACK_CASES), label: 'Clinical Cases', icon: Stethoscope },
-    { value: String(drugCount ?? FALLBACK_DRUGS), label: 'Drug Monographs', icon: Pill },
-    { value: String(carePlanCount || CARE_PLAN_COUNT), label: 'Care Plans', icon: ClipboardCheck },
+    { value: String(therapeuticAreaCount), label: 'Therapeutic Areas', icon: Layers, live: !loading },
+    { value: String(caseCount ?? FALLBACK_CASES), label: 'Clinical Cases', icon: Stethoscope, live: !loading },
+    { value: String(drugCount ?? FALLBACK_DRUGS), label: 'Drug Monographs', icon: Pill, live: !loading },
+    { value: String(carePlanCount || CARE_PLAN_COUNT), label: 'Care Plans', icon: ClipboardCheck, live: !loading },
   ]
 
   const features = [
@@ -203,7 +203,11 @@ export default function LandingScreen() {
             return (
               <div key={i} className="flex flex-col items-center gap-1.5 text-center">
                 <Icon size={22} className="text-[var(--primary)]" />
-                <span className="text-2xl sm:text-3xl font-extrabold tracking-tight">{s.value}</span>
+                {s.live ? (
+                  <span className="text-2xl sm:text-3xl font-extrabold tracking-tight">{s.value}</span>
+                ) : (
+                  <span className="block w-16 h-8 rounded-md bg-[var(--surface-dim)] animate-pulse" aria-hidden />
+                )}
                 <span className="text-xs sm:text-sm text-[var(--text-muted)] font-medium">{s.label}</span>
               </div>
             )

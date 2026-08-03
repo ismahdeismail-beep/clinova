@@ -16,6 +16,7 @@ import { ChatSessionList } from '../components/ChatSessionList';
 import { saveChatSession, deleteChatSession, ChatSession } from '../lib/localDb';
 import { ChatService } from '../services/chat.service';
 import { useAuth } from '../contexts/AuthContext';
+import { useContentStats, FALLBACK_DRUGS, FALLBACK_CASES } from '../hooks/useContentStats';
 import exportService from '../services/export.service';
 
 interface Citation {
@@ -284,7 +285,12 @@ function DownloadButton({ content, filename }: { content: string; filename: stri
 export default function ClinovaSupportScreen() {
   const navigate = useNavigate();
   const { userData } = useAuth();
-  const [currentSessionId, setCurrentSessionId] = useState<string>('session-' + Date.now());
+  const { drugCount, caseCount, carePlanCount } = useContentStats();
+  const [currentSessionId, setCurrentSessionId] = useState<string>('');
+
+  useEffect(() => {
+    setCurrentSessionId('session-' + Date.now());
+  }, []);
   const [chatSessions, setChatSessions] = useState<ChatSession[]>([]);
   const [sessionsLoading, setSessionsLoading] = useState(true);
 
@@ -1318,10 +1324,10 @@ export default function ClinovaSupportScreen() {
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                   {[
                     { icon: BrainCircuit, label: 'Education Hub', desc: 'Study modules & units', path: '/knowledge' },
-                    { icon: Pill, label: 'Drug Index', desc: '1000 monographs', path: '/drugs' },
-                    { icon: Stethoscope, label: 'Clinical Cases', desc: '1,100+ simulations', path: '/cases' },
+                    { icon: Pill, label: 'Drug Index', desc: `${(drugCount ?? FALLBACK_DRUGS).toLocaleString()} monographs`, path: '/drugs' },
+                    { icon: Stethoscope, label: 'Clinical Cases', desc: `${(caseCount ?? FALLBACK_CASES).toLocaleString()} simulations`, path: '/cases' },
                     { icon: GraduationCap, label: 'Exam Prep', desc: 'Mock papers & topics', path: '/knowledge/exam/prep' },
-                    { icon: HeartPulse, label: 'Care Plans', desc: '92 NANDA/NIC/NOC', path: '/care-plan' },
+                    { icon: HeartPulse, label: 'Care Plans', desc: `${carePlanCount} NANDA/NIC/NOC`, path: '/care-plan' },
                     { icon: Library, label: 'Library', desc: 'Clinical references', path: '/library' },
                     { icon: Settings, label: 'Settings', desc: 'App preferences', path: '/settings' },
                   ].map((nav, i) => {

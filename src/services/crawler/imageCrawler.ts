@@ -55,6 +55,8 @@ function kindOfTitle(title: string, source: string, pageUrl = ''): string {
   return 'unknown'
 }
 
+export { kindOfTitle }
+
 // Max images of the SAME kind per gallery (keeps the mix box/product/structure).
 const MAX_PER_KIND = Number(process.env.CRAWL_MAX_PER_KIND || '2')
 

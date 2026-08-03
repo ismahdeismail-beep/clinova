@@ -874,13 +874,13 @@ export default function DrugIndexScreen() {
                               {m.generic_name && m.generic_name !== m.name && (
                                 <div className="text-xs text-[var(--text-muted)] truncate">{m.generic_name}</div>
                               )}
-                              {(m.drug_class || m.drug_class_name) && (() => {
-                                const cc = getDrugClassConfig(m.drug_class || m.drug_class_name);
+                              {(m.drug_class_name || m.drug_class) && (() => {
+                                const cc = getDrugClassConfig(m.drug_class_name || m.drug_class);
                                 return (
                                   <span className={`mt-2 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}>
                                     {cc.subtitle && <span className="opacity-70 shrink-0">{cc.subtitle}</span>}
                                     <span className="font-bold shrink-0">·</span>
-                                    <span className="truncate">{m.drug_class || m.drug_class_name}</span>
+                                    <span className="truncate">{m.drug_class_name || m.drug_class}</span>
                                   </span>
                                 );
                               })()}
@@ -1104,13 +1104,13 @@ export default function DrugIndexScreen() {
                               {m.generic_name && m.generic_name !== m.name && (
                                 <div className="text-xs text-[var(--text-muted)] truncate">{m.generic_name}</div>
                               )}
-                              {(m.drug_class || m.drug_class_name) && (() => {
-                                const cc = getDrugClassConfig(m.drug_class || m.drug_class_name);
+                              {(m.drug_class_name || m.drug_class) && (() => {
+                                const cc = getDrugClassConfig(m.drug_class_name || m.drug_class);
                                 return (
                                   <span className={`mt-2 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}>
                                     {cc.subtitle && <span className="opacity-70 shrink-0">{cc.subtitle}</span>}
                                     <span className="font-bold shrink-0">·</span>
-                                    <span className="truncate">{m.drug_class || m.drug_class_name}</span>
+                                    <span className="truncate">{m.drug_class_name || m.drug_class}</span>
                                   </span>
                                 );
                               })()}

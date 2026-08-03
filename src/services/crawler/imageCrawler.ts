@@ -30,6 +30,38 @@ const QUICK_FORMS = ['tablet', 'capsule', 'injection', 'syrup']
 
 const STORAGE_BUCKET = 'medicine-images'
 
+// ── Image-kind classification (diversity) ──────────────────────────
+// Galleries should mix kinds — packaging (box/vial/label), product (tablets/
+// gel/cream…), 3D structure — instead of piling up N copies of one kind.
+// Diagram (journal synthesis/pathway/mechanism figures) is never drug imagery.
+const IMAGE_KIND_RE: Record<string, RegExp> = {
+  diagram:
+    /(synthesis|pathway|mechanism|scheme|reaction|reactions|metabolic|biosynth|figure|degradation|schematic|metabolism)/i,
+  packaging:
+    /\b(pack|packaging|box|vial|bottle|blister|strip|label|carton|tube|sachet|ampoule|ampule|inhaler|pen|jar|tin|syringe|prefilled|dispenser|dropper|container)\b/i,
+  product:
+    /(\b(tablet|tablets|tab|capsule|capsules|gel|cream|ointment|syrup|suspension|solution|drops|spray|injection|suppository|patch|lozenge|granules|powder|pill|pills|effervescent|tablets)\b|\b\d+\s?(mg|mcg|ml|g|iu|units?)\b)/i,
+  structure:
+    /(3d|ball.?and.?stick|skeletal|vdw|van.?der.?waals|space.?fill|molecule|molecular|chemical structure|formula|conformer|render|model)/i,
+}
+
+function kindOfTitle(title: string, source: string, pageUrl = ''): string {
+  const t = `${pageUrl} ${title || ''}`.toLowerCase()
+  if ((source || '').includes('structure')) return 'structure'
+  if (IMAGE_KIND_RE.diagram.test(t)) return 'diagram'
+  if (IMAGE_KIND_RE.packaging.test(t)) return 'packaging'
+  if (IMAGE_KIND_RE.product.test(t)) return 'product'
+  if (IMAGE_KIND_RE.structure.test(t)) return 'structure'
+  return 'unknown'
+}
+
+// Max images of the SAME kind per gallery (keeps the mix box/product/structure).
+const MAX_PER_KIND = Number(process.env.CRAWL_MAX_PER_KIND || '2')
+
+function setidOf(pageUrl: string): string | null {
+  return pageUrl.match(/setid=([0-9a-f-]+)/i)?.[1] || null
+}
+
 // ── Generate search queries for a medicine ─────────────────────────
 // Wikimedia search chokes on parens/slashes/plus signs — "Insulin
 // (Regular/Soluble)" returns 0 while "insulin regular" matches. Queries are
@@ -225,6 +257,19 @@ export async function crawlDrug(
   const MAX_IMAGES_PER_DRUG = Number(process.env.CRAWL_MAX_IMAGES || '4')
   // Cap on TOTAL gallery size (existing + new), not just new additions.
   const remaining = Math.max(0, MAX_IMAGES_PER_DRUG - existingCount)
+  // Kind-diversity bookkeeping: how many of each kind accepted so far, and
+  // which DailyMed label pages (setid) already contributed.
+  const acceptedKinds = new Map<string, number>()
+  const acceptedSetIds = new Set<string>()
+  const budgetOk = (kind: string, setid: string | null): boolean => {
+    if (kind === 'diagram') return false
+    if (setid && acceptedSetIds.has(setid)) return false
+    return (acceptedKinds.get(kind) || 0) < MAX_PER_KIND
+  }
+  const acceptKind = (kind: string, setid: string | null) => {
+    acceptedKinds.set(kind, (acceptedKinds.get(kind) || 0) + 1)
+    if (setid) acceptedSetIds.add(setid)
+  }
 
   // Kenyan-market brand packaging is the highest-value content for learners
   // (they recognize local products), so it always reserves slots and is
@@ -236,6 +281,12 @@ export async function crawlDrug(
   // Shared processing: download → validate → dedup → optimize → upload → insert.
   // Returns true when the image was accepted (and stored).
   const processResult = async (result: ProviderResult): Promise<boolean> => {
+    const kind = kindOfTitle(result.title, result.source, result.pageUrl)
+    const setid = setidOf(result.pageUrl || '')
+    if (!budgetOk(kind, setid)) {
+      stats.rejected++
+      return false
+    }
     try {
       await downloadDelay() // pace downloads — upload.wikimedia.org throttles bursts
       const buf = await downloadImage(result.imageUrl)
@@ -273,6 +324,7 @@ export async function crawlDrug(
       })
 
       stats.accepted++
+      acceptKind(kind, setid)
       return true
     } catch (e: any) {
       stats.failures.push(`${result.source}/${result.title}: ${e.message}`)
@@ -343,6 +395,10 @@ export async function crawlDrug(
   let keAdded = 0
   for (const img of keImages) {
     if (stats.accepted >= remaining || keAdded >= keSlots) break
+    if (!budgetOk('packaging', null)) {
+      stats.rejected++
+      continue
+    }
     try {
       await downloadDelay()
       const buf = await downloadImage(img.imageUrl)
@@ -375,6 +431,7 @@ export async function crawlDrug(
         quality_score: scoreQuality(validation.width, validation.height, validation.format),
       })
       stats.accepted++
+      acceptKind('packaging', null)
       keAdded++
     } catch (e: any) {
       stats.failures.push(`${img.brand}: ${e.message}`)

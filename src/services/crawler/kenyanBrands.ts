@@ -248,6 +248,9 @@ const JUNK_TOKENS = new Set([
   'safety', 'uncomplicated', 'trial', 'study', 'analysis', 'meta', 'stress',
   'scan', 'dmsa', 'mri', 'radiology', 'xray', 'ultrasound', 'echocardiogram',
   'electrocardiogram', 'ecg', 'eeg', 'angiogram', 'endoscopy', 'colonoscopy',
+  'synthesis', 'pathway', 'mechanism', 'scheme', 'reaction', 'reactions',
+  'metabolic', 'biosynthesis', 'biosynth', 'figure', 'degradation', 'schematic',
+  'metabolism', 'graphical', 'abstract',
 ])
 
 const JUNK_SUBSTRINGS = ['3d', 'ball and stick', 'ball-and-stick', '1475-2875', '2018 summer youth']

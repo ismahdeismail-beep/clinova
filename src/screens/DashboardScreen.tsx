@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react'
+import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import {
@@ -38,10 +38,7 @@ import ClinovaLogo from '../components/ClinovaLogo'
 import DailySpotlight from '../components/DailySpotlight'
 import { SearchService, type UnifiedSearchResult } from '../services/search.service'
 import { useDebounce } from '../hooks/useDebounce'
-import { BUNDLED_DRUGS } from '../data/drugIndexData'
-import { supabase } from '../lib/supabase'
-import { INTEGRATED_UNITS_MAP } from '../data/curriculum'
-import { getAllCarePlanDiseases } from '../data/carePlanData'
+import { useContentStats, FALLBACK_DRUGS, FALLBACK_CASES } from '../hooks/useContentStats'
 
 const STUDY_TRACKS: Record<
   string,
@@ -275,47 +272,8 @@ export default function DashboardScreen() {
     }
   }, [userData?.id])
 
-  // ── Stable stats (fetched once, cached in localStorage) ──
-  const [caseCount, setCaseCount] = useState<number>(() => {
-    const cached = localStorage.getItem('clinova_stat_cases')
-    return cached ? Number(cached) : 0
-  })
-  const [drugCount, setDrugCount] = useState<number>(() => {
-    const cached = localStorage.getItem('clinova_stat_drugs')
-    return cached ? Number(cached) : BUNDLED_DRUGS.length
-  })
-
-  useEffect(() => {
-    if (!supabase) return
-    // Fetch case count once
-    ;(async () => {
-      try {
-        const { count } = await supabase
-          .from('clinical_cases')
-          .select('id', { count: 'exact', head: true })
-          .eq('status', 'published')
-        const n = (count as number) ?? 0
-        if (n > 0) {
-          setCaseCount(n)
-          localStorage.setItem('clinova_stat_cases', String(n))
-        }
-      } catch { /* ignore */ }
-
-      try {
-        const { count } = await supabase
-          .from('drug_monographs')
-          .select('id', { count: 'exact', head: true })
-        const n = (count as number) ?? 0
-        if (n > 0) {
-          setDrugCount(n)
-          localStorage.setItem('clinova_stat_drugs', String(n))
-        }
-      } catch { /* ignore */ }
-    })()
-  }, [])
-
-  const therapeuticAreaCount = Object.keys(INTEGRATED_UNITS_MAP).length
-  const carePlanCount = useMemo(() => getAllCarePlanDiseases().length, [])
+  // ── Stable stats (single source of truth via useContentStats) ──
+  const { drugCount, caseCount, areaCount, carePlanCount } = useContentStats()
 
   // Featured article index (rotates daily)
   const [currentArticleIdx, setCurrentArticleIdx] = useState(() => {
@@ -429,10 +387,10 @@ export default function DashboardScreen() {
       {/* ── Quick Stats Row ── */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
         {[
-          { icon: Pill, label: 'Drug Monographs', value: drugCount > 0 ? String(drugCount) : String(BUNDLED_DRUGS.length), color: 'text-blue-600', bg: 'bg-blue-500/10' },
-          { icon: BarChart3, label: 'Clinical Cases', value: caseCount > 0 ? String(caseCount) : '—', color: 'text-emerald-600', bg: 'bg-emerald-500/10' },
+          { icon: Pill, label: 'Drug Monographs', value: String(drugCount ?? FALLBACK_DRUGS), color: 'text-blue-600', bg: 'bg-blue-500/10' },
+          { icon: BarChart3, label: 'Clinical Cases', value: String(caseCount ?? FALLBACK_CASES), color: 'text-emerald-600', bg: 'bg-emerald-500/10' },
           { icon: ClipboardCheck, label: 'Care Plans', value: String(carePlanCount), color: 'text-teal-600', bg: 'bg-teal-500/10' },
-          { icon: TrendingUp, label: 'Therapeutic Areas', value: String(therapeuticAreaCount), color: 'text-rose-600', bg: 'bg-rose-500/10' },
+          { icon: TrendingUp, label: 'Therapeutic Areas', value: String(areaCount), color: 'text-rose-600', bg: 'bg-rose-500/10' },
         ].map((stat, idx) => {
           const Icon = stat.icon
           return (

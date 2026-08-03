@@ -7,30 +7,23 @@ import {
   ClipboardCheck, Image,
 } from 'lucide-react'
 import ClinovaLogo from '../components/ClinovaLogo'
-import { BUNDLED_DRUGS } from '../data/drugIndexData'
-import { INTEGRATED_UNITS_MAP } from '../data/curriculum'
-import { INITIAL_CASES, ALL_CLINICAL_CASES } from '../data/clinicalCasesData'
+import { useContentStats, FALLBACK_DRUGS, FALLBACK_CASES } from '../hooks/useContentStats'
 import { getAllCarePlanDiseases } from '../data/carePlanData'
-import { supabase } from '../lib/supabase'
 
 const CARE_PLAN_COUNT = getAllCarePlanDiseases().length
 
 export default function LandingScreen() {
   const navigate = useNavigate()
 
-  const [drugCount, setDrugCount] = React.useState(0)
-  const [caseCount, setCaseCount] = React.useState(0)
-  const therapeuticAreaCount = Object.keys(INTEGRATED_UNITS_MAP).length
+  const { drugCount, caseCount, areaCount, carePlanCount } = useContentStats()
+  const therapeuticAreaCount = areaCount
 
-  React.useEffect(() => {
-    if (!supabase) return
-    supabase.from('drug_monographs').select('id', { count: 'exact', head: true }).then(({ count, error }) => {
-      if (!error && typeof count === 'number') setDrugCount(count)
-    })
-    supabase.from('clinical_cases').select('id', { count: 'exact', head: true }).then(({ count, error }) => {
-      if (!error && typeof count === 'number') setCaseCount(count)
-    })
-  }, [])
+  const stats = [
+    { value: String(therapeuticAreaCount), label: 'Therapeutic Areas', icon: Layers },
+    { value: String(caseCount ?? FALLBACK_CASES), label: 'Clinical Cases', icon: Stethoscope },
+    { value: String(drugCount ?? FALLBACK_DRUGS), label: 'Drug Monographs', icon: Pill },
+    { value: String(carePlanCount || CARE_PLAN_COUNT), label: 'Care Plans', icon: ClipboardCheck },
+  ]
 
   const features = [
     {
@@ -82,13 +75,6 @@ export default function LandingScreen() {
         'Thousands of medicine images — tablets, injections, and dosage forms — embedded in drug monographs for visual identification and safe prescribing.',
       gradient: 'from-rose-500 to-pink-600',
     },
-  ]
-
-  const stats = [
-    { value: String(therapeuticAreaCount), label: 'Therapeutic Areas', icon: Layers },
-    { value: String(caseCount), label: 'Clinical Cases', icon: Stethoscope },
-    { value: String(drugCount), label: 'Drug Monographs', icon: Pill },
-    { value: String(CARE_PLAN_COUNT), label: 'Care Plans', icon: ClipboardCheck },
   ]
 
   const steps = [

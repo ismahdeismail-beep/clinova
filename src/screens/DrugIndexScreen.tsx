@@ -2,6 +2,9 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
   Pill, Search, Loader2, BookOpen,
   Sparkles, ChevronRight, ChevronLeft, Heart, BookmarkCheck, Plus,
+  Bug, HeartPulse, Brain, Utensils, Gauge, Wind, Droplets, Ribbon,
+  Shield, Hand, Filter, Apple, Moon, Eye, FlaskConical,
+  type LucideIcon,
 } from 'lucide-react';
 import { DrugMonographView } from '../components/DrugMonographView';
 import { getMonographCached, pinMonograph } from '../lib/getMonograph';
@@ -148,6 +151,29 @@ const CATEGORY_COLORS: Record<string, { card: string; hover: string; tile: strin
     tile: 'from-slate-500 to-slate-600',
     text: 'text-slate-600 dark:text-slate-400',
   },
+};
+
+// Distinct icon per therapeutic class — each category gets its own symbol
+// instead of a single generic pill (mirrors the typeIcons pattern used in
+// clinical cases / library resources).
+const CATEGORY_SYMBOLS: Record<string, LucideIcon> = {
+  'Anti-infectives': Bug,
+  Cardiovascular: HeartPulse,
+  'Central Nervous System': Brain,
+  Analgesics: Pill,
+  Gastrointestinal: Utensils,
+  Endocrine: Gauge,
+  Respiratory: Wind,
+  Anticoagulants: Droplets,
+  Oncology: Ribbon,
+  Immunology: Shield,
+  Dermatology: Hand,
+  'Renal/Electrolytes': Filter,
+  'Nutrition/Vitamins': Apple,
+  Anaesthesia: Moon,
+  Ophthalmology: Eye,
+  'Toxicology/Antidotes': FlaskConical,
+  General: BookOpen,
 };
 
 function LikeButton({ monographId }: { monographId: string }) {
@@ -949,7 +975,10 @@ export default function DrugIndexScreen() {
                           >
                             <div className="flex items-center gap-3 mb-3">
                               <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${cc.tile} flex items-center justify-center shrink-0 shadow-sm`}>
-                                <Pill size={18} className="text-white" />
+                                {(() => {
+                                  const Sym = CATEGORY_SYMBOLS[cat] || Pill;
+                                  return <Sym size={18} className="text-white" />;
+                                })()}
                               </div>
                               <div className="min-w-0">
                                 <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors text-sm truncate">{cat}</h3>
@@ -984,7 +1013,11 @@ export default function DrugIndexScreen() {
                       </button>
                       <div>
                         <h2 className="text-2xl font-bold text-[var(--text)] flex items-center gap-3">
-                          <Pill size={20} className="text-[var(--primary)]" /> {selectedCategory}
+                          {(() => {
+                            const Sym = CATEGORY_SYMBOLS[selectedCategory] || Pill;
+                            return <Sym size={20} className="text-[var(--primary)]" />;
+                          })()}
+                          {selectedCategory}
                         </h2>
                         <p className="text-xs text-[var(--text-muted)] mt-0.5">{filteredCatalog.length} monograph{filteredCatalog.length !== 1 ? 's' : ''} available</p>
                       </div>

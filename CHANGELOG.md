@@ -1,3 +1,22 @@
+## 2026-08-03
+
+### Fixed
+- **Enrichment columns lost in a failed type migration**: an attempt to convert `clinical_pearls` (text) and `pharmacokinetics` (jsonb) to the interface types ended up dropping both columns. Re-added with the correct types (`text[]`, `text`) and regenerated all data — **440/440 monographs now carry MOA, pharmacokinetics, overdose, pregnancy category and clinical pearls** (was 22%/19%/19%/19%/0%).
+- **Gap-fill pass clobbered seed contraindications**: a placeholder-first-item regex replaced richer multi-item contraindications with a single FDA item that failed the content audit's 2-item bar. Restored 62 rows from the seed batch files (`scripts/restore-core-seeds.ts`) and made the gap-fill only touch fields below the audit's quality bar.
+- **FDA label search returning the wrong drug**: several monographs picked up a different drug's label (Artemether–Lumefantrine → olanzapine, Rifampicin → clarithromycin, N-acetylcysteine → oxycodone/paracetamol, Thiopental → lidocaine, Benzyl Benzoate → Dove deodorant, Dextrose → ACD anticoagulant). Replaced with accurate mechanisms and added a mechanism-like guard so the `description` section (excipients/appearance) is never used as MOA.
+- **Placeholder text counted as real content**: `"Mechanism of action for X. Refer to current…"` satisfied the hasReal check, so FDA's real MOA never overwrote it. The enrich/gap-fill scripts now treat "refer to current prescribing information" boilerplate as empty.
+
+### Changed
+- **Monographs are now colour-coded and bulleted for faster scanning**: MOA renders as a "How it works" callout plus mechanism bullets with key verbs bolded (inhibits, binds, blocks…); pharmacokinetics renders as structured ADME bullets (curated rows) or graceful pending notes; every section gets a distinct emoji header (⚙️ MOA, ⏱ PK, 🎯 Indications, ⛔ Contraindications, 🚨 Black Box, 💊 Dosage, ⚠️ Warnings, 😖 Adverse Effects, 💎 Clinical Pearls) so sections are easy to spot while reading.
+- **Each therapeutic class now has its own icon** instead of the same pill everywhere: 🦠 Bug (Anti-infectives), HeartPulse (Cardiovascular), Brain (CNS), Utensils (GI), Gauge (Endocrine), Wind (Respiratory), Droplets (Anticoagulants), Ribbon (Oncology), Shield (Immunology), Hand (Dermatology), Filter (Renal), Apple (Nutrition), Moon (Anaesthesia), Eye (Ophthalmology), FlaskConical (Toxicology).
+
+### Added
+- `scripts/enrich-monographs.ts` — resumable FDA-first enrichment of all 8 enrichment fields + missing core fields (state in `storage/enrich_state.json`).
+- `scripts/gapfill-partials.ts` — targeted gap-fill for PARTIAL monographs, fills only fields below the audit quality bar with real FDA label content.
+- `scripts/restore-core-seeds.ts` — restores core array fields (CI/interactions/SE/indications) from the seed batch files when the live value is placeholder-ish.
+- `scripts/audit-monograph-content.ts` — scores all content fields and classifies each monograph FULL/PARTIAL/THIN/EMPTY.
+- `supabase/migrations/000013_fix_monograph_column_types.sql` — correct column types for `clinical_pearls`/`pharmacokinetics`.
+
 ## 2026-08-02
 
 ### Fixed

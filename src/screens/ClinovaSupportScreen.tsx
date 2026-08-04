@@ -1,17 +1,17 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
-  Bot, Send, User, BrainCircuit, Library, Pill, Activity, 
+  Bot, Send, User, Library, Pill, Activity, 
   FlaskConical, FileText, CheckCircle2, ChevronDown, ChevronRight, Loader2, 
-  Database, AlertCircle, Mic, MicOff, ArrowDown, X, Layers, Sparkles,
-  Download, FileDown, Copy, Check, Menu, Plus, Settings, ArrowLeft, Home,
-  Trash2, AlertTriangle, Stethoscope, GraduationCap, HeartPulse
+  Database, AlertCircle, Mic, MicOff, ArrowDown, X, Sparkles,
+  Download, FileDown, Copy, Check, Menu, Plus, ArrowLeft, Home,
+  Trash2, AlertTriangle
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { RAGRouter } from '../services/ragRouter';
 import { KnowledgeEngine } from '../engine/knowledgeEngine.service';
 import ReactMarkdown from 'react-markdown';
-import { jsPDF } from 'jspdf';
+
 import { ChatSessionList } from '../components/ChatSessionList';
 import { saveChatSession, deleteChatSession, ChatSession } from '../lib/localDb';
 import { ChatService } from '../services/chat.service';
@@ -342,7 +342,7 @@ export default function ClinovaSupportScreen() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isListening, setIsListening] = useState(false);
-  const [isMobileRouterOpen, setIsMobileRouterOpen] = useState(false);
+
   const [speechInterim, setSpeechInterim] = useState('');
   const [speechError, setSpeechError] = useState<string | null>(null);
   const [speechLang, setSpeechLang] = useState('en-US');
@@ -595,228 +595,13 @@ export default function ClinovaSupportScreen() {
   }, [input]);
 
   const [isProcessing, setIsProcessing] = useState(false);
-  const [activeRouterState, setActiveRouterState] = useState<{ intent: string, routes: string[] } | null>(null);
-  const [selectedSources, setSelectedSources] = useState<string[]>(['Kenya Drug Index', 'Kenya STG', 'WHO Guidelines']);
-  const [showSourceSelector, setShowSourceSelector] = useState(false);
-  const [showExportMenu, setShowExportMenu] = useState(false);
 
-  const handleExportMarkdown = () => {
-    let mdContent = `# Clinova Support - Session Export\n`;
-    mdContent += `*Date/Time:* ${new Date().toLocaleString()}\n`;
-    mdContent += `*Active Knowledge Bases:* ${selectedSources.join(', ')}\n`;
-    mdContent += `*Verification Target:* Zero Hallucination Retrieval & Live Validation\n\n`;
-    mdContent += `--- \n\n`;
 
-    messages.forEach((msg, idx) => {
-      if (msg.isThinking) return;
-      const role = msg.role === 'user' ? 'User (Clinician)' : 'Clinova Support';
-      mdContent += `### **${idx + 1}. ${role}**\n\n`;
-      mdContent += `${msg.content}\n\n`;
-
-      if (msg.citations && msg.citations.length > 0) {
-        mdContent += `#### **Evidence Synthesized:**\n`;
-        msg.citations.forEach((cite) => {
-          mdContent += `- **${cite.source}**: ${cite.document}${cite.year ? ` (${cite.year})` : ''}\n`;
-        });
-        if (msg.confidence) {
-          mdContent += `\n*Clinical Decisional Confidence: ${msg.confidence}%*\n`;
-        }
-        mdContent += `\n`;
-      }
-
-      if (msg.routedTo && msg.routedTo.length > 0) {
-        mdContent += `*Routed via:* \`${msg.routedTo.join(', ')}\` \n`;
-      }
-
-      mdContent += `\n---\n\n`;
-    });
-
-    mdContent += `\n*End of Clinova Support record. Clinova is an assistive reasoning engine. Standard protocols should always be cross-referenced with official local policies and drug guidelines.*`;
-
-    const blob = new Blob([mdContent], { type: 'text/markdown;charset=utf-8;' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.setAttribute('download', `clinova_session_export_${new Date().toISOString().slice(0,10)}_${Date.now().toString().slice(-4)}.md`);
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    setShowExportMenu(false);
-  };
-
-  const handleExportPDF = () => {
-    const doc = new jsPDF({
-      orientation: 'portrait',
-      unit: 'mm',
-      format: 'a4'
-    });
-
-    const pageWidth = doc.internal.pageSize.getWidth();
-    const pageHeight = doc.internal.pageSize.getHeight();
-    const margin = 20;
-    const maxLineWidth = pageWidth - (margin * 2);
-    let y = 20;
-
-    const checkPageOverflow = (neededHeight: number) => {
-      if (y + neededHeight > pageHeight - margin) {
-        doc.addPage();
-        y = 20; // reset with top padding
-        // Tiny running footer/header
-        doc.setFont('helvetica', 'italic');
-        doc.setFontSize(8);
-        doc.setTextColor(150, 150, 150);
-        doc.text('Clinova Session Record - Confidential Clinova Support', margin, 12);
-        doc.line(margin, 14, pageWidth - margin, 14);
-      }
-    };
-
-    // Header Title
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(18);
-    doc.setTextColor(22, 119, 242); // Clinova primary color
-    doc.text('CLINOVA HEALTHCARE', margin, y);
-    y += 7;
-
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(12);
-    doc.setTextColor(30, 41, 59);
-    doc.text('Clinova Support Session Record', margin, y);
-    y += 8;
-
-    // Metadata Block
-    doc.setFillColor(248, 250, 252); // light slate background
-    doc.rect(margin, y, maxLineWidth, 22, 'F');
-    doc.setDrawColor(226, 232, 240); // border
-    doc.rect(margin, y, maxLineWidth, 22, 'S');
-
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(8.5);
-    doc.setTextColor(71, 85, 105);
-    doc.text('METADATA & CONFIGURATION', margin + 5, y + 6);
-    
-    doc.setFont('helvetica', 'normal');
-    doc.setFontSize(8);
-    doc.setTextColor(100, 116, 139);
-    doc.text(`Timestamp: ${new Date().toLocaleString()}`, margin + 5, y + 11);
-    
-    const activeBasesText = `Active Knowledge Bases: ${selectedSources.join(', ')}`;
-    const wrappedBases = doc.splitTextToSize(activeBasesText, maxLineWidth - 10);
-    doc.text(wrappedBases, margin + 5, y + 16);
-    
-    y += 32;
-
-    // Loop through chat messages
-    messages.forEach((msg, index) => {
-      if (msg.isThinking) return; // skip temporary thinking states
-      
-      const isUser = msg.role === 'user';
-      const roleHeader = isUser ? 'User (Clinician)' : 'Clinova Support (Evidence Synthesized)';
-
-      // Reserve space for message header
-      checkPageOverflow(14);
-
-      // Draw light side indicator line
-      doc.setDrawColor(isUser ? 71 : 22, isUser ? 85 : 119, isUser ? 105 : 242);
-      doc.setLineWidth(0.8);
-      doc.line(margin, y - 2, margin, y + 2); // a short tick mark
-      
-      doc.setFont('helvetica', 'bold');
-      doc.setFontSize(10);
-      doc.setTextColor(isUser ? 71 : 22, isUser ? 85 : 119, isUser ? 105 : 242);
-      doc.text(`${index + 1}. ${roleHeader}`, margin + 3, y);
-      y += 6;
-
-      doc.setFont('helvetica', 'normal');
-      doc.setFontSize(9.5);
-      doc.setTextColor(30, 41, 59);
-
-      // Clean the content of unnecessary raw asterisks from markdown bolding before printing
-      // and formatting paragraphs
-      const cleanedContent = msg.content
-        .replace(/\*\*([^*]+)\*\*/g, '$1') // remove asterisks
-        .replace(/#+\s+/g, ''); // remove headings formatting tags
-        
-      const wrappedText = doc.splitTextToSize(cleanedContent, maxLineWidth);
-      wrappedText.forEach((line: string) => {
-        checkPageOverflow(6);
-        doc.text(line, margin, y);
-        y += 5;
-      });
-
-      // Citations if any
-      if (msg.citations && msg.citations.length > 0) {
-        y += 2.5;
-        checkPageOverflow(12 + msg.citations.length * 5);
-        
-        doc.setFont('helvetica', 'bold');
-        doc.setFontSize(8.5);
-        doc.setTextColor(16, 185, 129); // Emerald
-        doc.text('Synthesized Evidence Citations:', margin, y);
-        y += 4.5;
-
-        doc.setFont('helvetica', 'normal');
-        doc.setFontSize(8);
-        doc.setTextColor(71, 85, 105);
-
-        msg.citations.forEach((cite) => {
-          const citationText = `- [${cite.source}] ${cite.document}${cite.year ? ` (${cite.year})` : ''}`;
-          const wrappedCite = doc.splitTextToSize(citationText, maxLineWidth);
-          wrappedCite.forEach((citeLine: string) => {
-            checkPageOverflow(5);
-            doc.text(citeLine, margin, y);
-            y += 4;
-          });
-        });
-
-        if (msg.confidence) {
-          y += 2;
-          checkPageOverflow(5);
-          doc.setFont('helvetica', 'italic');
-          doc.text(`Clinical Decisional Confidence: ${msg.confidence}%`, margin, y);
-          y += 4;
-        }
-      }
-
-      y += 8; // Spacer
-    });
-
-    // Disclaimer footer on the last page if space allows, or on a new page
-    checkPageOverflow(15);
-    doc.setDrawColor(226, 232, 240);
-    doc.setLineWidth(0.2);
-    doc.line(margin, y, pageWidth - margin, y);
-    y += 5;
-
-    doc.setFont('helvetica', 'italic');
-    doc.setFontSize(7.5);
-    doc.setTextColor(148, 163, 184);
-    const disclaimer = "Disclaimer: Clinova is a clinical decisional helper. The clinician maintains full primary patient responsibility. This export is meant as an evidence reference and patient record attachment support.";
-    const wrappedDisclaimer = doc.splitTextToSize(disclaimer, maxLineWidth);
-    wrappedDisclaimer.forEach((line: string) => {
-      checkPageOverflow(4);
-      doc.text(line, margin, y);
-      y += 4;
-    });
-
-    doc.save(`clinova_session_report_${new Date().toISOString().slice(0,10)}_${Date.now().toString().slice(-4)}.pdf`);
-    setShowExportMenu(false);
-  };
-  
   const chatContainerRef = useRef<HTMLDivElement>(null);
   const [showScrollBottomBtn, setShowScrollBottomBtn] = useState(false);
 
-  const AVAILABLE_SOURCES = [
-    'Kenya Drug Index', 'Kenya STG', 'WHO Guidelines',
-    'Clinical Pharmacy Library', 'Pharmacotherapy Library', 'Research Evidence'
-  ];
-
-  const toggleSource = (source: string) => {
-    setSelectedSources(prev => 
-      prev.includes(source) 
-        ? prev.filter(s => s !== source)
-        : [...prev, source]
-    );
-  };
+  const selectedSources = ['Kenya Drug Index', 'Kenya STG', 'WHO Guidelines', 'Clinical Pharmacy Library', 'Pharmacotherapy Library', 'Research Evidence'];
+  const [activeRouterState, setActiveRouterState] = useState<{ intent: string, routes: string[] } | null>(null);
 
   const handleScroll = () => {
     if (!chatContainerRef.current) return;
@@ -1100,161 +885,55 @@ export default function ClinovaSupportScreen() {
 
 
   return (
-    <div 
-      className="flex-1 bg-[var(--bg)] text-[var(--text)] flex flex-row overflow-hidden font-sans relative h-[calc(100dvh-8rem-env(safe-area-inset-top,0px))] md:h-[calc(100dvh-4rem-env(safe-area-inset-top,0px))]"
-    >
-      
-      {/* Sidebar for Mobile & Desktop */}
-      {isSidebarOpen && (
-        <div 
-          className="fixed inset-0 bg-black/60 z-30 md:hidden backdrop-blur-sm"
-          onClick={() => setIsSidebarOpen(false)}
-        />
-      )}
-      <div className={`
-        absolute inset-y-0 left-0 z-40 transform transition-transform duration-300 md:relative md:translate-x-0
-        ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
-      `}>
-        <ChatSessionList 
-          onSelectSession={handleSelectSession} 
-          onNewSession={handleNewSession}
-          currentSessionId={currentSessionId}
-        />
+    <div className="flex-1 flex flex-col h-full overflow-hidden bg-[var(--bg)] text-[var(--text)] font-sans">
+
+      {/* Header — matches other Clinova screens */}
+      <div className="h-14 sm:h-16 border-b border-[var(--border)]/80 px-3 sm:px-6 bg-[var(--surface)] flex items-center gap-2 sm:gap-3 shrink-0 z-10">
+        <button
+          onClick={goBack}
+          className="p-2 rounded-xl border border-[var(--border)] hover:bg-[var(--surface-dim)] transition-all cursor-pointer shrink-0"
+          title="Back"
+        >
+          <ArrowLeft size={18} className="text-[var(--text)]" />
+        </button>
+        <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[var(--primary)]/15 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20 shadow-inner shrink-0">
+          <Bot size={20} />
+        </div>
+        <div className="min-w-0 flex-1">
+          <h2 className="text-sm sm:text-base font-bold text-[var(--text)] tracking-tight">Clinova Support</h2>
+          <p className="text-xs text-[var(--text-muted)] truncate hidden sm:block">Clinical Decision Support</p>
+        </div>
+        <div className="flex items-center gap-1.5 shrink-0">
+          <button
+            onClick={handleNewSession}
+            className="p-2 rounded-xl border border-[var(--border)] hover:bg-[var(--surface-dim)] transition-all cursor-pointer"
+            title="New session"
+          >
+            <Plus size={16} className="text-[var(--primary)]" />
+          </button>
+          <button
+            onClick={() => setIsSidebarOpen(true)}
+            className="p-2 rounded-xl border border-[var(--border)] hover:bg-[var(--surface-dim)] transition-all cursor-pointer"
+            title="Chat history"
+          >
+            <Menu size={16} className="text-[var(--text)]" />
+          </button>
+        </div>
       </div>
 
-      {/* Main Chat Interface */}
-      <div className="flex-1 flex flex-col h-full overflow-hidden bg-[var(--bg)] relative">
-        
-        {/* Chat Header */}
-        <div className="h-14 sm:h-16 border-b border-[var(--border)]/80 px-3 sm:px-6 bg-[var(--surface)] flex items-center justify-between z-10 shrink-0">
-          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
-            <button 
-              className="md:hidden p-2 rounded-xl border border-[var(--border)] hover:bg-[var(--surface-dim)] transition-all cursor-pointer"
-              onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-            >
-              <Menu size={18} className="text-[var(--text)]" />
-            </button>
-            <button
-              onClick={goBack}
-              className="hidden md:flex p-2 rounded-xl border border-[var(--border)] hover:bg-[var(--surface-dim)] transition-all cursor-pointer shrink-0"
-              title="Back"
-              aria-label="Back"
-            >
-              <ArrowLeft size={18} className="text-[var(--text)]" />
-            </button>
-            <button
-              onClick={goBack}
-              className="md:hidden p-2 rounded-xl border border-[var(--border)] hover:bg-[var(--surface-dim)] transition-all cursor-pointer shrink-0"
-              title="Back"
-              aria-label="Back"
-            >
-              <Home size={18} className="text-[var(--text)]" />
-            </button>
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[var(--primary)]/15 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20 shadow-inner shrink-0">
-              <Bot size={20} className="animate-pulse" />
-            </div>
-            <div className="min-w-0">
-              <div className="flex items-center gap-1.5 sm:gap-2">
-                <h2 className="text-sm sm:text-base font-bold text-[var(--text)] tracking-tight">Clinova Support</h2>
-                <div className="hidden sm:flex items-center gap-1.5 text-[10px] font-bold text-[var(--primary)] bg-[var(--primary)]/10 px-2.5 py-0.5 rounded-full border border-[var(--primary)]/20 select-none">
-                  <span className="relative flex h-1.5 w-1.5">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[var(--primary)]"></span>
-                  </span>
-                  <span>● Online</span>
-                </div>
-              </div>
-              <p className="text-xs text-[var(--text-muted)] truncate hidden sm:block mt-0.5">Clinical Decision Support</p>
-            </div>
-          </div>
-          
-          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
-            {/* Quick New Chat Button */}
-            <button
-              onClick={handleNewSession}
-              className="p-2 sm:px-3 sm:py-1.5 rounded-xl border border-[var(--border)] hover:border-[var(--border)] bg-[var(--bg)]/40 hover:bg-[var(--bg)]/80 text-xs font-bold text-[var(--text)] transition-all flex items-center gap-1.5 cursor-pointer"
-              title="Start New Session"
-            >
-              <Plus size={14} className="text-[var(--primary)]" />
-              <span className="hidden md:inline">New Session</span>
-            </button>
-
-            {/* Delete Current Conversation */}
-            <button
-              onClick={handleDeleteCurrentSession}
-              className="p-2 sm:px-3 sm:py-2 rounded-xl border border-[var(--border)] hover:border-red-400/40 bg-[var(--bg)]/40 hover:bg-red-500/10 text-[var(--text-muted)] hover:text-red-500 transition-all cursor-pointer"
-              title="Delete current conversation"
-            >
-              <Trash2 size={14} />
-            </button>
-
-            {/* Export Chat Dropdown - Modern */}
-            <div className="relative">
-              <button
-                onClick={() => setShowExportMenu(!showExportMenu)}
-                className="flex items-center gap-1.5 text-xs font-bold text-[var(--text)] bg-[var(--bg)]/40 hover:bg-[var(--bg)]/80 sm:px-3 py-2 rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/40 transition-all cursor-pointer select-none"
-                title="Export current conversation for records"
-                id="export-chat-button"
-                aria-expanded={showExportMenu}
-                aria-haspopup="true"
-                aria-label="Export chat"
-              >
-                <Download size={14} className="text-[var(--text-muted)]" />
-                <span className="hidden sm:inline">Export</span>
-                <ChevronDown size={12} className={`text-[var(--text-muted)] transition-transform duration-200 ${showExportMenu ? 'rotate-180' : ''}`} />
-              </button>
-              
-              <AnimatePresence>
-                {showExportMenu && (
-                  <>
-                    <div 
-                      className="fixed inset-0 z-30" 
-                      onClick={() => setShowExportMenu(false)}
-                      aria-hidden="true"
-                    />
-                    <motion.div
-                      initial={{ opacity: 0, y: 8, scale: 0.95 }}
-                      animate={{ opacity: 1, y: 0, scale: 1 }}
-                      exit={{ opacity: 0, y: 8, scale: 0.95 }}
-                      transition={{ duration: 0.15 }}
-                      className="absolute right-0 mt-2 w-60 bg-[var(--surface)] border border-[var(--border)] rounded-2xl shadow-xl z-40 p-2 flex flex-col gap-1 text-xs"
-                      id="export-chat-dropdown"
-                      role="menu"
-                    >
-                      <div className="px-2.5 py-1.5 border-b border-[var(--border)] text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider">
-                        Patient Record Format
-                      </div>
-                      <button
-                        onClick={handleExportPDF}
-                        className="flex items-center gap-2.5 w-full text-left p-2.5 hover:bg-[var(--surface)]/50 text-[var(--text)] rounded-xl transition-all cursor-pointer font-medium"
-                        role="menuitem"
-                        id="export-pdf-option"
-                      >
-                        <FileDown size={15} className="text-red-400 shrink-0" />
-                        <div className="flex-1 min-w-0">
-                          <div className="font-semibold text-xs text-[var(--text)]">Export as Medical PDF</div>
-                          <div className="text-[10px] text-[var(--text-muted)]">Formatted, printable record</div>
-                        </div>
-                      </button>
-                      <button
-                        onClick={handleExportMarkdown}
-                        className="flex items-center gap-2.5 w-full text-left p-2.5 hover:bg-[var(--surface)]/50 text-[var(--text)] rounded-xl transition-all cursor-pointer font-medium"
-                        role="menuitem"
-                        id="export-md-option"
-                      >
-                        <FileText size={15} className="text-[var(--primary)] shrink-0" />
-                        <div className="flex-1 min-w-0">
-                          <div className="font-semibold text-xs text-[var(--text)]">Export as Markdown (.md)</div>
-                          <div className="text-[10px] text-[var(--text-muted)]">EHR compatible raw text</div>
-                        </div>
-                      </button>
-                    </motion.div>
-                  </>
-                )}
-              </AnimatePresence>
-            </div>
+      {/* Sidebar overlay (rendered via portal to avoid nesting issues) */}
+      {isSidebarOpen && (
+        <div className="fixed inset-0 z-40 flex">
+          <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setIsSidebarOpen(false)} />
+          <div className="relative z-10 w-72 h-full bg-[var(--surface)] border-r border-[var(--border)] shadow-xl">
+            <ChatSessionList
+              onSelectSession={(id) => { handleSelectSession(id); setIsSidebarOpen(false); }}
+              onNewSession={() => { handleNewSession(); setIsSidebarOpen(false); }}
+              currentSessionId={currentSessionId}
+            />
           </div>
         </div>
+      )}
 
         {/* Message Thread Scroll Container */}
         <div 
@@ -1265,126 +944,45 @@ export default function ClinovaSupportScreen() {
           <div className="w-full max-w-3xl mx-auto flex flex-col gap-4 sm:gap-6">
             {/* Welcome State / Initial Empty State */}
           {messages.length === 0 && (
-            <div className="max-w-3xl mx-auto py-3 sm:py-8 px-2">
-              <motion.div 
-                initial={{ opacity: 0, y: 15 }}
+            <div className="max-w-xl mx-auto py-6 sm:py-12 px-2 text-center">
+              <motion.div
+                initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4 }}
-                className="bg-[var(--surface)] border border-[var(--border)] rounded-3xl p-4 sm:p-8 shadow-md text-center flex flex-col items-center gap-3 sm:gap-5"
+                transition={{ duration: 0.35 }}
+                className="flex flex-col items-center gap-3 mb-6"
               >
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20 shadow-inner">
-                  <Sparkles size={28} className="text-[var(--primary)]" />
+                <div className="w-12 h-12 rounded-2xl bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/20">
+                  <Sparkles size={24} />
                 </div>
-                
-                <div className="space-y-2">
-                  <h1 className="text-xl sm:text-2xl font-bold text-[var(--text)] tracking-tight">
-                    Welcome to Clinova Support
-                  </h1>
-                  <p className="text-sm text-[var(--text-muted)] max-w-xl mx-auto leading-relaxed">
-                    A fully-equipped clinical console designed to retrieve, synthesize, and validate clinical evidence from the Kenya Drug Index (KDI), STG Guidelines, WHO, and notes.
-                  </p>
-                </div>
-
-                <div className="w-full h-px bg-[var(--surface)]/60 my-1" />
-
-                <div className="w-full text-left">
-                  <span className="text-[11px] font-bold text-[var(--primary)] uppercase tracking-widest block mb-4 text-center sm:text-left">
-                    What can I do for you today?
-                  </span>
-                  
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                    {[
-                      { icon: Pill, title: "Learn pharmacology", desc: "Action mechanisms, indications, side effects, and exact dosing" },
-                      { icon: Library, title: "Get treatment guidance", desc: "Strict adherence to Kenyan STG & global guidelines" },
-                      { icon: Activity, title: "Ask clinical questions", desc: "Differential diagnostics, symptom checking, risk stratification" },
-                      { icon: FlaskConical, title: "Interpret investigations", desc: "Synthesizing abnormal laboratory or imaging results" }
-                    ].map((feat, idx) => {
-                      const Icon = feat.icon;
-                      return (
-                        <div key={idx} className="flex gap-2.5 sm:gap-3 p-3 sm:p-4 bg-[var(--bg)]/50 border border-[var(--border)]/80 rounded-2xl">
-                          <div className="w-8 h-8 rounded-lg bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/10 shrink-0">
-                            <Icon size={16} />
-                          </div>
-                          <div>
-                            <h4 className="text-xs font-bold text-[var(--text)]">{feat.title}</h4>
-                            <p className="text-[11px] text-[var(--text-muted)] leading-normal mt-0.5">{feat.desc}</p>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
+                <div>
+                  <h1 className="text-lg sm:text-xl font-bold text-[var(--text)] tracking-tight">How can I help?</h1>
+                  <p className="text-sm text-[var(--text-muted)] mt-1">Ask about diseases, drugs, guidelines, or lab results</p>
                 </div>
               </motion.div>
 
-              {/* Quick Navigation */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 0.1, duration: 0.4 }}
-                className="mt-4 sm:mt-8 space-y-2 sm:space-y-3"
+                transition={{ delay: 0.1, duration: 0.35 }}
+                className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-w-lg mx-auto"
               >
-                <div className="flex items-center gap-2 px-1">
-                  <Layers size={14} className="text-[var(--primary)]" />
-                  <span className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Quick Navigation</span>
-                </div>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                  {[
-                    { icon: BrainCircuit, label: 'Education Hub', desc: 'Study modules & units', path: '/knowledge' },
-                    { icon: Pill, label: 'Drug Index', desc: `${(drugCount ?? FALLBACK_DRUGS).toLocaleString()} monographs`, path: '/drugs' },
-                    { icon: Stethoscope, label: 'Clinical Cases', desc: `${(caseCount ?? FALLBACK_CASES).toLocaleString()} simulations`, path: '/cases' },
-                    { icon: GraduationCap, label: 'Exam Prep', desc: 'Mock papers & topics', path: '/knowledge/exam/prep' },
-                    { icon: HeartPulse, label: 'Care Plans', desc: `${carePlanCount} NANDA/NIC/NOC`, path: '/care-plan' },
-                    { icon: Library, label: 'Library', desc: 'Clinical references', path: '/library' },
-                    { icon: Settings, label: 'Settings', desc: 'App preferences', path: '/settings' },
-                  ].map((nav, i) => {
-                    const Icon = nav.icon;
-                    return (
-                      <button
-                        key={i}
-                        onClick={() => navigate(nav.path)}
-                        className="flex flex-col items-center gap-1.5 p-3 sm:p-4 bg-[var(--surface)] hover:bg-[var(--primary)]/5 border border-[var(--border)]/80 hover:border-[var(--primary)]/30 rounded-xl text-center transition-all cursor-pointer group"
-                      >
-                        <div className="w-9 h-9 rounded-lg bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center border border-[var(--primary)]/10 group-hover:bg-[var(--primary)]/15 transition-colors">
-                          <Icon size={18} />
-                        </div>
-                        <span className="text-xs font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors">{nav.label}</span>
-                        <span className="text-[10px] text-[var(--text-muted)] leading-tight">{nav.desc}</span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </motion.div>
-
-              {/* Suggestion Chips Section inside Empty State */}
-              <motion.div 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.2, duration: 0.4 }}
-                className="mt-4 sm:mt-8 space-y-2 sm:space-y-3"
-              >
-                <div className="flex items-center gap-2 px-1">
-                  <Sparkles size={14} className="text-[var(--primary)]" />
-                  <span className="text-xs font-bold text-[var(--text)] uppercase tracking-wider">Suggested Queries</span>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                  {[
-                    { text: 'Explain pneumonia treatment guidelines in Kenya', label: 'Explain pneumonia' },
-                    { text: 'Check drug interactions for Amoxicillin', label: 'Drug interactions' },
-                    { text: 'Calculate paediatric dosage for Paracetamol', label: 'Calculate dosage' },
-                    { text: 'Differential diagnosis for acute chest pain', label: 'Differential diagnosis' },
-                    { text: 'Kenya STG guidelines for first-line Malaria', label: 'Treatment guidelines' },
-                    { text: 'How to interpret abnormal renal function lab results?', label: 'Interpret lab results' }
-                  ].map((sug, i) => (
-                    <button
-                      key={i}
-                      onClick={() => handleSuggestionClick(sug.text)}
-                      className="text-left px-3 sm:px-4 py-2.5 sm:py-3 bg-[var(--surface)] hover:bg-[var(--surface-dim)] border border-[var(--border)]/80 hover:border-[var(--border)] rounded-xl text-xs sm:text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-all cursor-pointer shadow-xs flex items-center justify-between select-none"
-                    >
-                      <span className="truncate">{sug.label}</span>
-                      <ChevronRight size={14} className="text-[var(--text-muted)] shrink-0 ml-2" />
-                    </button>
-                  ))}
-                </div>
+                {[
+                  'Explain pneumonia treatment guidelines in Kenya',
+                  'Check drug interactions for Amoxicillin',
+                  'Calculate paediatric dosage for Paracetamol',
+                  'Differential diagnosis for acute chest pain',
+                  'Kenya STG guidelines for first-line Malaria',
+                  'How to interpret abnormal renal function labs?'
+                ].map((text, i) => (
+                  <button
+                    key={i}
+                    onClick={() => handleSuggestionClick(text)}
+                    className="text-left px-4 py-3 bg-[var(--surface)] hover:bg-[var(--surface-dim)] border border-[var(--border)]/80 hover:border-[var(--border)] rounded-xl text-sm font-medium text-[var(--text-muted)] hover:text-[var(--primary)] transition-all cursor-pointer flex items-center gap-2 select-none"
+                  >
+                    <Sparkles size={13} className="text-[var(--primary)] shrink-0" />
+                    <span className="truncate">{text}</span>
+                  </button>
+                ))}
               </motion.div>
             </div>
           )}
@@ -1553,193 +1151,67 @@ export default function ClinovaSupportScreen() {
           )}
         </AnimatePresence>
         
-        {/* Floating Interactive Input Composer Area */}
-        <div className="p-2.5 sm:p-4 border-t border-[var(--border)]/80 bg-[var(--surface)] shrink-0 z-10 shadow-lg pb-[calc(0.625rem+env(safe-area-inset-bottom,0px))]">
-          <div className="max-w-5xl mx-auto w-full">
-          <div className="mb-1.5 sm:mb-3 relative">
-            <button 
-              onClick={() => setShowSourceSelector(!showSourceSelector)}
-              className="flex items-center gap-1.5 text-xs font-bold text-[var(--primary)] px-2.5 sm:px-3 py-1.5 hover:bg-[var(--primary)]/10 border border-[var(--primary)]/20 rounded-xl transition-all cursor-pointer select-none"
-              aria-expanded={showSourceSelector}
-              aria-haspopup="true"
-              aria-label="Configure active databases"
-            >
-              <Library size={13} className="text-[var(--primary)] shrink-0" /> 
-              <span className="truncate">Databases ({selectedSources.length})</span>
-              <ChevronDown size={12} className={`text-[var(--primary)] transition-transform duration-200 shrink-0 ${showSourceSelector ? 'rotate-180' : ''}`} />
-            </button>
-            
+        {/* Input area */}
+        <div className="px-3 sm:px-6 pt-2 pb-3 sm:pb-4 bg-[var(--surface)] border-t border-[var(--border)]/80 shrink-0 z-10">
+          <div className="max-w-3xl mx-auto w-full">
+
+            {/* Voice dictation indicator (compact, only when active) */}
             <AnimatePresence>
-              {showSourceSelector && (
-                <motion.div 
-                  initial={{ opacity: 0, y: 10, scale: 0.98 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  exit={{ opacity: 0, y: 10, scale: 0.98 }}
-                  transition={{ duration: 0.15 }}
-                  className="absolute bottom-full left-0 mb-1 w-full sm:w-[480px] p-3 sm:p-4 bg-[var(--surface)] border border-[var(--border)] rounded-2xl grid grid-cols-2 gap-2 shadow-xl z-50 max-h-[50vh] overflow-y-auto"
-                  role="menu"
+              {isListening && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                  className="overflow-hidden mb-2"
                 >
-                  {AVAILABLE_SOURCES.map(source => (
-                    <label key={source} role="menuitemcheckbox" aria-checked={selectedSources.includes(source)} className="flex items-center gap-2.5 cursor-pointer p-2.5 bg-[var(--bg)]/80 border border-[var(--border)] hover:border-[var(--primary)]/40 rounded-xl transition-all select-none">
-                      <input 
-                        type="checkbox" 
-                        checked={selectedSources.includes(source)}
-                        onChange={() => toggleSource(source)}
-                        className="accent-blue-500 rounded h-4 w-4 border-[var(--border)] cursor-pointer"
-                      />
-                      <span className="text-xs text-[var(--text)] font-medium">{source}</span>
-                    </label>
-                  ))}
+                  <div className="flex items-center gap-2 px-3 py-2 bg-red-500/10 border border-red-500/20 rounded-xl text-xs">
+                    <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" /><span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" /></span>
+                    <span className="font-bold text-red-500">Listening</span>
+                    {speechInterim && <span className="text-[var(--text-muted)] truncate flex-1">{speechInterim}</span>}
+                    <button onClick={toggleListening} className="text-[10px] font-semibold px-2 py-0.5 rounded border border-red-300 text-red-500 hover:bg-red-500/10 cursor-pointer">Stop</button>
+                  </div>
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
 
-          {/* Clinical Voice Dictation Panel */}
-          <AnimatePresence>
-            {isListening && (
-              <motion.div
-                initial={{ opacity: 0, height: 0, y: 10 }}
-                animate={{ opacity: 1, height: 'auto', y: 0 }}
-                exit={{ opacity: 0, height: 0, y: 10 }}
-                className="overflow-hidden mb-2 sm:mb-3 bg-[var(--primary)]/5 border border-[var(--primary)]/15 rounded-2xl p-3 sm:p-4 shadow-sm"
-              >
-                <div className="flex items-center justify-between gap-3 mb-2 flex-wrap">
-                  <div className="flex items-center gap-2">
-                    {/* Animated mic indicator (waveform pulses) */}
-                    <div className="flex items-center gap-1.5 bg-red-500/10 px-2.5 py-1 rounded-full text-red-400 font-bold text-[10px] uppercase tracking-wider animate-pulse border border-red-500/15">
-                      <span className="relative flex h-2 w-2">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
-                      </span>
-                      <span>Dictation Active</span>
-                    </div>
-
-                    {/* Speech Language selector dropdown */}
-                    <div className="relative">
-                      <span className="text-[10px] text-[var(--text-muted)] font-medium">Language:</span>
-                      <select
-                        value={speechLang}
-                        onChange={(e) => setSpeechLang(e.target.value)}
-                        className="bg-[var(--bg)] text-xs text-[var(--text)] border border-[var(--border)] rounded px-2 py-0.5 outline-none font-semibold cursor-pointer font-sans appearance-none pr-8 bg-[var(--surface)] hover:border-[var(--primary)]/40 focus:border-[var(--primary)] focus:outline-none focus:ring-1 focus:ring-[var(--primary)]"
-                      >
-                        <option value="en-US">English (US)</option>
-                        <option value="en-GB">English (UK)</option>
-                        <option value="en-KE">English (Kenya)</option>
-                        <option value="sw-KE">Swahili (Kenya)</option>
-                      </select>
-                      <ChevronDown size={12} className="absolute right-2 top-1/2 -translate-y-1/2 text-[var(--text-muted)] pointer-events-none" />
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-1.5">
-                    {/* Visualizer waves */}
-                    <div className="flex items-end gap-0.5 h-3">
-                      <span className="w-0.5 bg-red-500 rounded-full animate-[bounce_0.8s_infinite_100ms] h-2"></span>
-                      <span className="w-0.5 bg-red-500 rounded-full animate-[bounce_0.8s_infinite_300ms] h-3"></span>
-                      <span className="w-0.5 bg-red-500 rounded-full animate-[bounce_0.8s_infinite_200ms] h-1.5"></span>
-                      <span className="w-0.5 bg-red-500 rounded-full animate-[bounce_0.8s_infinite_400ms] h-2.5"></span>
-                    </div>
-                    <button
-                      onClick={toggleListening}
-                      className="text-[10px] bg-[var(--bg)] border border-[var(--border)] hover:bg-[var(--surface-dim)] px-2.5 py-0.5 rounded text-[var(--text)] font-semibold transition-colors cursor-pointer"
-                    >
-                      Stop
-                    </button>
-                  </div>
-                </div>
-
-                {/* Real-time Interim speech content */}
-                <div className="bg-[var(--bg)] border border-[var(--border)] rounded-xl p-3 min-h-[50px] flex flex-col justify-between mb-2">
-                  <div className="text-xs text-[var(--text)] select-text">
-                    {speechInterim ? (
-                      <span className="text-[var(--text-muted)] italic animate-pulse">{speechInterim}</span>
-                    ) : (
-                      <span className="text-[var(--text-muted)] text-[11px]">Start speaking to dictate symptoms or clinical details...</span>
-                    )}
-                  </div>
-                </div>
-
-                {/* Hands-free Voice Commands Info Banner */}
-                <div className="flex items-start gap-1.5 bg-[var(--bg)]/50 border border-[var(--border)]/50 rounded-xl p-2.5 text-[10px] text-[var(--text-muted)] leading-relaxed">
-                  <span className="font-bold text-[var(--primary)] text-xs shrink-0">💡 Commands:</span>
-                  <div className="grid grid-cols-2 gap-x-3 gap-y-1 w-full pl-1">
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--bg)] px-1 rounded font-mono">"period"</code> for .</div>
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--bg)] px-1 rounded font-mono">"comma"</code> for ,</div>
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--bg)] px-1 rounded font-mono">"new line"</code> for break</div>
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--bg)] px-1 rounded font-mono">"send message"</code> to send</div>
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--bg)] px-1 rounded font-mono">"clear all"</code> to reset</div>
-                    <div>Say <code className="font-bold text-[var(--text)] bg-[var(--bg)] px-1 rounded font-mono">"delete last"</code> to undo word</div>
-                  </div>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-
-          {/* Toast / Banner for Speech Recognition Error */}
-          <AnimatePresence>
             {speechError && (
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 10 }}
-                className="mb-3 flex items-center justify-between gap-3 bg-red-500/10 border border-red-500/25 rounded-xl p-3 text-xs text-red-400 font-semibold"
-              >
-                <div className="flex items-center gap-2">
-                  <AlertCircle size={14} className="text-red-400 shrink-0" />
-                  <span>{speechError}</span>
-                </div>
-                <button
-                  onClick={() => setSpeechError(null)}
-                  className="p-1 hover:bg-red-500/20 rounded-lg text-red-400 transition-colors cursor-pointer"
-                >
-                  <X size={14} />
-                </button>
-              </motion.div>
+              <div className="mb-2 flex items-center gap-2 px-3 py-2 bg-red-500/10 border border-red-500/20 rounded-xl text-xs text-red-500 font-semibold">
+                <AlertCircle size={13} className="shrink-0" />
+                <span className="flex-1 truncate">{speechError}</span>
+                <button onClick={() => setSpeechError(null)} className="p-0.5 hover:bg-red-500/20 rounded cursor-pointer"><X size={13} /></button>
+              </div>
             )}
-          </AnimatePresence>
 
-          {/* Styled Floating Input Box */}
-          <div className="relative flex flex-col bg-[var(--bg)] border border-[var(--border)] focus-within:ring-2 focus-within:ring-cyan-500/20 focus-within:border-[var(--primary)] focus-within:bg-[var(--bg)]/90 rounded-2xl shadow-inner transition-all overflow-hidden p-1">
-            <div className="flex items-end w-full pr-2">
-              <textarea 
+            {/* Input box */}
+            <div className="flex items-end gap-2 bg-[var(--bg)] border border-[var(--border)] focus-within:border-[var(--primary)] rounded-2xl px-3 py-2 transition-colors">
+              <textarea
                 ref={textareaRef}
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Ask anything about diseases, drugs, laboratory results or patient management..." 
-                className="w-full pl-4 pr-2 py-3 max-h-36 min-h-[44px] bg-transparent outline-none text-[var(--text)] text-sm sm:text-base resize-none placeholder-slate-500 leading-relaxed self-center font-sans"
+                placeholder="Ask about diseases, drugs, guidelines, or labs..."
+                className="flex-1 min-w-0 bg-transparent outline-none text-sm text-[var(--text)] resize-none placeholder-[var(--text-muted)] leading-relaxed max-h-32 font-sans"
                 rows={1}
               />
-              <div className="flex items-center gap-1.5 pb-2 shrink-0 self-end">
+              <div className="flex items-center gap-1 shrink-0">
                 <button
                   onClick={toggleListening}
-                  className={`p-2.5 rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center ${
-                    isListening
-                      ? 'bg-red-500/20 text-red-400 animate-pulse'
-                      : 'text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--surface-dim)]'
-                  }`}
-                  title={isListening ? "Stop listening" : "Start dictation"}
+                  className={`p-2 rounded-xl transition-all cursor-pointer ${isListening ? 'bg-red-500/20 text-red-400 animate-pulse' : 'text-[var(--text-muted)] hover:text-[var(--primary)] hover:bg-[var(--surface-dim)]'}`}
+                  title={isListening ? 'Stop listening' : 'Voice dictation'}
                 >
-                  {isListening ? <MicOff size={18} /> : <Mic size={18} />}
+                  {isListening ? <MicOff size={16} /> : <Mic size={16} />}
                 </button>
-                <button 
+                <button
                   onClick={() => handleSend()}
                   disabled={!input.trim() || isProcessing}
-                  className={`p-2.5 rounded-xl transition-all cursor-pointer select-none min-h-[44px] min-w-[44px] flex items-center justify-center ${
-                    input.trim() && !isProcessing
-                      ? 'bg-[var(--primary)] text-[var(--text)] shadow-sm hover:bg-[var(--primary)]' 
-                      : 'bg-[var(--surface)] text-[var(--text-muted)] cursor-not-allowed'
-                  }`}
+                  className={`p-2 rounded-xl transition-all cursor-pointer ${input.trim() && !isProcessing ? 'bg-[var(--primary)] text-[var(--primary-foreground)]' : 'text-[var(--text-muted)] cursor-not-allowed'}`}
                 >
-                  {isProcessing ? <Loader2 size={18} className="animate-spin" /> : <Send size={18} />}
+                  {isProcessing ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} />}
                 </button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
     </div>
   );
 }

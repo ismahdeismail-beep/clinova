@@ -61,8 +61,27 @@ function formatMoa(moa: string): string {
 //   1. structured "label: value" lines (curated rows, e.g. Artemether-Lumefantrine)
 //   2. prose with ADME markers -> sub-headed bullets
 //   3. free prose -> key-number bullets
+//
+// FDA-label noise is stripped first (section numbers, embedded ADME sub-heads,
+// scraped "Drug Interaction Studies" blocks) — same normalization the
+// cleanup-pk.ts script applies to stored rows, so anything the script missed
+// or future scrapes still render cleanly.
+const FDA_LEAD = /^\s*\d+(?:\.\d+){0,2}\s+(?:Pharmacokinetics|PHARMACOKINETICS)\s*/i
+const ADME_HEAD_RE =
+  /\b(?:Absorption|Distribution|Metabolism|Elimination|Excretion)(?:\s+and\s+(?:Distribution|Metabolism|Elimination|Excretion))?(?:\s*[\/,]\s*(?:Bioavailability|Distribution|Excretion))?\s+(?=[A-Z])/g
+const INTERACTION_STUDIES = /\s*Drug Interaction Studies\b.*$/i
+
+function stripFdaNoise(text: string): string {
+  return text
+    .replace(FDA_LEAD, '')
+    .replace(ADME_HEAD_RE, '')
+    .replace(INTERACTION_STUDIES, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
 function formatPk(pk: string): string {
-  const clean = pk.trim();
+  const clean = stripFdaNoise(pk.trim())
   if (!clean) return '';
 
   const lines = clean.split(/\n+/).map((l) => l.trim()).filter(Boolean);

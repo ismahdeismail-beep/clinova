@@ -46,7 +46,7 @@ export async function searchImages(query: string): Promise<DrugImage[]> {
   const { data, error } = await client
     .from('drug_images')
     .select('*')
-    .or(`generic_name.ilike.${q},dosage_form.ilike.${q},title.ilike.${q}`)
+    .or(`generic_name.ilike.${q},dosage_form.ilike.${q}`)
     .order('created_at', { ascending: false })
     .limit(200)
 

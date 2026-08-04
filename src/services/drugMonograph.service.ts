@@ -30,16 +30,18 @@ let thumbFetching: Promise<Map<string, string>> | null = null
 
 function thumbPriority(r: any): number {
   const s = String(r.source || '').toLowerCase()
-  const k = String(r.kind || '').toLowerCase()
+  // Note: there is no 'kind' column in the live drug_images table — the
+  // crawler folds the classification into the descriptive `source` string
+  // (e.g. "PubChem (NIH) 3D conformer", "Wikimedia Commons (structure)",
+  // "Kenyan brand (Lab & Allied)"), so priority is derived from that.
   // 3D renderings are the ideal icon — molecule structure at a glance
-  if (s.includes('3d') || s.includes('pdbe') || s.includes('ribbon') || s.includes('pdb')) return 0
-  // Packaging / box images show the actual drug name — instantly recognizable
-  if (k === 'packaging') return 1
+  if (s.includes('3d') || s.includes('pdb') || s.includes('ribbon')) return 0
+  // Real product / packaging photos show the actual drug name
+  if (s.includes('kenyan brand') || s.includes('dailymed') || s.includes('wikipedia')) return 1
   // 2D skeletal structures (chemical formula)
-  if (s.includes('2d') || (s.includes('structure') && k === 'structure')) return 2
-  // Product photos (may be blurry or generic)
-  if (k === 'product') return 3
-  return 4
+  if (s.includes('2d') || s.includes('structure')) return 2
+  // Generic photos (may be blurry or generic)
+  return 3
 }
 
 async function loadThumbnails(): Promise<Map<string, string>> {
@@ -52,7 +54,7 @@ async function loadThumbnails(): Promise<Map<string, string>> {
     for (let i = 0; i < 80; i++) {
       const { data } = await supabase
         .from('drug_images')
-        .select('drug_id, source, kind, thumbnail_url, large_url, quality_score')
+        .select('drug_id, source, thumbnail_url, large_url, quality_score')
         .range(from, from + 999)
       if (!data || data.length === 0) break
       for (const r of data) {

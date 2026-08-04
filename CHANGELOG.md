@@ -1,3 +1,8 @@
+## 2026-08-04
+
+### Added
+- **Auto-update on deploy**: the app now checks for a freshly deployed build every 15 minutes (and whenever the tab regains focus/visibility) and, when an update is found, posts an "update" notification then auto-refreshes to apply it — no manual reload needed. The old flow only checked at page load and reloaded silently.
+
 ## 2026-08-03
 
 ### Added

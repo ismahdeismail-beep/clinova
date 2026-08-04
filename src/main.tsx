@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./lib/env.ts"; // Validate environment variables
-import { registerSW } from "virtual:pwa-register";
 import App from "./App.tsx";
 import { ErrorBoundary } from "./components/ErrorBoundary.tsx";
+import { UpdateManager } from "./components/UpdateManager.tsx";
 import { AuthProvider } from "./contexts/AuthContext.tsx";
 import { syncManager } from "./lib/syncManager.ts";
 import { initSupabaseSync } from "./lib/supabaseSync";
@@ -16,21 +16,13 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 syncManager.sync();
 initSupabaseSync();
 
-const updateSW = registerSW({
-  onNeedRefresh() {
-    updateSW(true);
-  },
-  onOfflineReady() {
-    console.log("App ready to work offline");
-  },
-});
-
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ErrorBoundary>
       <AuthProvider>
         <NotificationProvider>
           <ThemeProvider>
+            <UpdateManager />
             <App />
           </ThemeProvider>
         </NotificationProvider>

@@ -1,6 +1,15 @@
 ## 2026-08-03
 
 ### Added
+- **849 new 3D/2D structure icons**: 697 drugs got PubChem 3D conformer renders + 152 got 2D skeletal structures (salt-stripping fallback + CID-to-parent fallback for compounds like Ertapenem Sodium where the salt CID lacks a 3D render). Total structure icons: 929/1072 drugs. Remaining 135 are biologics (mAbs) that keep their PDB ribbon or photo icons.
+- **Fast KDI catalog load**: `getCatalog()` fetches only the fields needed for the browse grid (name/class/content flags) with thumbnails loaded in parallel — no more waiting for full monograph text fields at startup.
+
+### Fixed
+- **Navigation returns to where you came from**: KDI `closeView` is now layered — closing a monograph returns to its category or search results (not Level 1); the pushed history entry is only popped when closing the layer that owns it, so browser back works correctly through nested views.
+- **ClinovaSupport back button**: returns to the previous page via `navigate(-1)` instead of always navigating to dashboard (`navigate('/')`). Same fix applied to AdminImageManager.
+- **Drug icon prominence**: monograph header icon enlarged (w-14 h-14 sm:w-16 sm:h-16, rounded-2xl, border-2, shadow-md); KDI grid DrugThumb enlarged (w-12 h-12); packaging photos ranked above 2D skeletal in `thumbPriority` so the icon shows the actual drug name when possible.
+
+### Added
 - **Second-source drug images — 100% coverage**: monographs with no Wikimedia/DailyMed photos are now filled from NIH PubChem (2D + 3D structure renderings), RCSB PDB/PDBe (ribbon structures for biologics, falling back to the drug's binding target e.g. Alirocumab→PCSK9), Wikipedia REST lead images, plus 8 images extracted from the B.Pharm pharmacology lecture notes. **1,072/1,072 monographs now have images** (2,542 rows: 1,676 Wikimedia, 616 DailyMed, 147 PubChem, 28 Kenyan brands, 25 PDB/PDBe, 14 Wikipedia, 8 lecture notes).
 - **Real FDA indications**: the generic "Management of … as per approved indications" template on **346 monographs replaced with real FDA `indications_and_usage`** parsed from OpenFDA (50 skipped — no FDA label on file).
 - **Simplified therapeutic classification**: 40 `drug_classes` renamed to short scannable names ("Aminoglycoside antibiotic", "Benzodiazepine", "Statin"…); the verbose detail moved to the `description` column. The UI now prefers the specific class name over the root category.

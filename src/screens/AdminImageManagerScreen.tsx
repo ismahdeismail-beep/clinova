@@ -10,11 +10,11 @@ export default function AdminImageManagerScreen() {
     <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
       <div className="flex items-center gap-3 mb-4">
         <button
-          onClick={() => navigate('/')}
+          onClick={() => (window.history.length > 1 ? navigate(-1) : navigate('/'))}
           className="flex items-center gap-1.5 px-3 py-1.5 bg-[var(--surface)] border border-[var(--border)] hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] rounded-xl text-xs font-black shadow-xs transition-all cursor-pointer"
         >
           <ChevronLeft size={14} />
-          Back to Dashboard
+          Back
         </button>
       </div>
 

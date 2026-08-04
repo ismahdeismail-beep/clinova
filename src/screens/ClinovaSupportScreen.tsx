@@ -286,6 +286,12 @@ export default function ClinovaSupportScreen() {
   const navigate = useNavigate();
   const { userData } = useAuth();
   const { drugCount, caseCount, carePlanCount } = useContentStats();
+  // Back returns to the page the user came from; only falls back to the
+  // dashboard when there is no previous history (direct link / fresh tab).
+  const goBack = () => {
+    if (window.history.length > 1) navigate(-1);
+    else navigate('/');
+  };
   const [currentSessionId, setCurrentSessionId] = useState<string>('');
 
   useEffect(() => {
@@ -1129,18 +1135,18 @@ export default function ClinovaSupportScreen() {
               <Menu size={18} className="text-[var(--text)]" />
             </button>
             <button
-              onClick={() => navigate('/')}
+              onClick={goBack}
               className="hidden md:flex p-2 rounded-xl border border-[var(--border)] hover:bg-[var(--surface-dim)] transition-all cursor-pointer shrink-0"
-              title="Back to Dashboard"
-              aria-label="Back to Dashboard"
+              title="Back"
+              aria-label="Back"
             >
               <ArrowLeft size={18} className="text-[var(--text)]" />
             </button>
             <button
-              onClick={() => navigate('/')}
+              onClick={goBack}
               className="md:hidden p-2 rounded-xl border border-[var(--border)] hover:bg-[var(--surface-dim)] transition-all cursor-pointer shrink-0"
-              title="Home"
-              aria-label="Home"
+              title="Back"
+              aria-label="Back"
             >
               <Home size={18} className="text-[var(--text)]" />
             </button>

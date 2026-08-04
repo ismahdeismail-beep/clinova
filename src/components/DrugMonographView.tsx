@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { BookOpen, ArrowRight, Download, Pill, Database, Sparkles, ShieldCheck } from 'lucide-react';
 import { getDrugClassConfig } from '../data/drugClassColors';
 import { MedicineImageGallery } from './MedicineImageGallery';
+import { getDrugThumbnail } from '../services/drugMonograph.service';
 
 interface DrugMonographViewProps {
   content: string;
@@ -35,6 +36,22 @@ export function DrugMonographView({
   // Strip a leading "# Title" so the header card doesn't duplicate the drug name.
   const body = content.replace(/^#\s+.*\n+/, '').trim();
   const classConfig = drugClass ? getDrugClassConfig(drugClass) : null;
+  const [thumb, setThumb] = useState<string | null>(null);
+
+  // 3D-first thumbnail for the header icon (session-cached in the service).
+  useEffect(() => {
+    let on = true;
+    if (drugId) {
+      getDrugThumbnail(drugId).then((u) => {
+        if (on) setThumb(u);
+      });
+    } else {
+      setThumb(null);
+    }
+    return () => {
+      on = false;
+    };
+  }, [drugId]);
 
   return (
     <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden animate-in fade-in duration-300">
@@ -45,10 +62,18 @@ export function DrugMonographView({
           <div className={`absolute top-0 left-0 right-0 h-1 ${classConfig.bar}`} />
         )}
         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
-          <div className="flex items-start gap-3 min-w-0">
-            <div className="w-11 h-11 shrink-0 rounded-xl bg-[var(--primary-container)] flex items-center justify-center text-[var(--primary)] shadow-sm">
-              <Pill size={22} />
-            </div>
+          <div className="flex items-start gap-4 min-w-0">
+            {thumb ? (
+              <img
+                src={thumb}
+                alt=""
+                className="w-14 h-14 sm:w-16 sm:h-16 shrink-0 rounded-2xl object-cover bg-white border-2 border-[var(--border)] shadow-md"
+              />
+            ) : (
+              <div className="w-14 h-14 sm:w-16 sm:h-16 shrink-0 rounded-2xl bg-[var(--primary-container)] flex items-center justify-center text-[var(--primary)] shadow-md">
+                <Pill size={28} />
+              </div>
+            )}
             <div className="min-w-0">
               <h1 className="text-xl sm:text-2xl font-bold text-[var(--text)] tracking-tight leading-tight break-words">
                 {drugName || 'Medication Monograph'}

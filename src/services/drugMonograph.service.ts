@@ -30,9 +30,16 @@ let thumbFetching: Promise<Map<string, string>> | null = null
 
 function thumbPriority(r: any): number {
   const s = String(r.source || '').toLowerCase()
+  const k = String(r.kind || '').toLowerCase()
+  // 3D renderings are the ideal icon — molecule structure at a glance
   if (s.includes('3d') || s.includes('pdbe') || s.includes('ribbon') || s.includes('pdb')) return 0
-  if (s.includes('2d') || s.includes('structure')) return 1
-  return 2
+  // Packaging / box images show the actual drug name — instantly recognizable
+  if (k === 'packaging') return 1
+  // 2D skeletal structures (chemical formula)
+  if (s.includes('2d') || (s.includes('structure') && k === 'structure')) return 2
+  // Product photos (may be blurry or generic)
+  if (k === 'product') return 3
+  return 4
 }
 
 async function loadThumbnails(): Promise<Map<string, string>> {
@@ -45,7 +52,7 @@ async function loadThumbnails(): Promise<Map<string, string>> {
     for (let i = 0; i < 80; i++) {
       const { data } = await supabase
         .from('drug_images')
-        .select('drug_id, source, thumbnail_url, large_url, quality_score')
+        .select('drug_id, source, kind, thumbnail_url, large_url, quality_score')
         .range(from, from + 999)
       if (!data || data.length === 0) break
       for (const r of data) {
@@ -78,6 +85,16 @@ async function attachThumbnails(rows: DrugMonograph[]): Promise<DrugMonograph[]>
     }))
   } catch {
     return rows
+  }
+}
+
+/** Best 3D-first thumbnail for a single monograph (session-cached). */
+export async function getDrugThumbnail(drugId: string): Promise<string | null> {
+  try {
+    const map = await loadThumbnails()
+    return map.get(drugId) ?? null
+  } catch {
+    return null
   }
 }
 
@@ -165,6 +182,27 @@ function searchStatic(q: string): DrugMonograph[] {
 }
 
 export const DrugMonographService = {
+  /**
+   * Fast catalog fetch for the KDI browse grid — only the fields needed for
+   * category grouping, display, and hasClinicalContent checks. Thumbnails are
+   * loaded in parallel so the grid renders without waiting for the full drug
+   * payload (which includes long text fields like monitoring text).
+   */
+  async getCatalog(): Promise<DrugMonograph[]> {
+    if (!supabase) return STATIC_ALL;
+    const [drugRes, thumbs] = await Promise.all([
+      supabase
+        .from('drug_monographs')
+        .select('id,name,generic_name,brand_names,drug_class,drug_class_name,drug_class_id,dosage_forms,indications,side_effects,contraindications,monitoring,interactions')
+        .order('name'),
+      loadThumbnails(),
+    ]);
+    if (drugRes.error) throw drugRes.error;
+    const rows = (drugRes.data ?? []).map(mapRow);
+    if (rows.length === 0) return STATIC_ALL;
+    return rows.map((r) => ({ ...r, thumbnail_url: thumbs.get(r.id) ?? '' }));
+  },
+
   async getAll(): Promise<DrugMonograph[]> {
     if (!supabase) return STATIC_ALL;
     const { data, error } = await supabase

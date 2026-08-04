@@ -216,7 +216,7 @@ function LikeButton({ monographId }: { monographId: string }) {
 // renders are preferred by the service) with a class-tinted fallback tile.
 function DrugThumb({ m, size = 'md' }: { m: DrugMonograph; size?: 'sm' | 'md' }) {
   const cc = getDrugClassConfig(m.drug_class_name || m.drug_class)
-  const dim = size === 'sm' ? 'w-8 h-8' : 'w-11 h-11'
+  const dim = size === 'sm' ? 'w-10 h-10' : 'w-12 h-12'
   if (m.thumbnail_url) {
     return (
       <img
@@ -276,7 +276,7 @@ export default function DrugIndexScreen() {
     const loadCatalog = async () => {
       setCatalogLoading(true);
       try {
-        const list = await DrugMonographService.getAll();
+        const list = await DrugMonographService.getCatalog();
         if (list.length > 0) setCatalog(list);
       } catch (err) {
         console.warn('[DrugIndex] Supabase unavailable, using bundled data:', err);
@@ -361,29 +361,37 @@ export default function DrugIndexScreen() {
     (m.interactions?.length ?? 0) > 0;
 
   const openSeeded = (m: DrugMonograph) => {
-    setSearchResults(null);
-    setResultsQuery('');
     setSuggestions([]);
     setMonograph(monographToMarkdown(m));
     setMonographKey((m.name || m.generic_name || '').toLowerCase());
     setCurrentMonographId(m.id);
     setSelectedDrugName(m.name || m.generic_name || null);
-    setSelectedCategory(null);
-    setSelectedLetter(null);
     setNeedsAi(!hasClinicalContent(m));
     setError(null);
   };
 
+  // Close one view layer at a time so Back returns to the exact place the
+  // user came from: monograph → its results/category context → browse mode.
+  // The pushed history entry belongs to the FIRST-opened layer (results, or
+  // a monograph opened from Level 1/category) — only pop when closing that
+  // owner layer, otherwise the popstate handler would close the parent too.
   const closeView = (popHistory = true) => {
-    setMonograph(null);
-    setCurrentMonographId(null);
-    setMonographKey('');
-    setSelectedDrugName(null);
-    setNeedsAi(false);
-    setSearchResults(null);
-    setResultsQuery('');
+    const closingMonograph = !!monograph;
+    const closingResults = !monograph && !!searchResults;
+    if (closingMonograph) {
+      setMonograph(null);
+      setCurrentMonographId(null);
+      setMonographKey('');
+      setSelectedDrugName(null);
+      setNeedsAi(false);
+      setError(null);
+    } else if (closingResults) {
+      setSearchResults(null);
+      setResultsQuery('');
+    }
     setSuggestions([]);
-    if (popHistory && window.history.state?.kdi === 'view') {
+    const ownsHistoryEntry = closingResults || (closingMonograph && !searchResults);
+    if (popHistory && ownsHistoryEntry && window.history.state?.kdi === 'view') {
       window.history.back();
     }
   };
@@ -999,7 +1007,7 @@ export default function DrugIndexScreen() {
                         {Array.from({ length: 8 }).map((_, i) => (
                           <div key={i} className="rounded-2xl border border-[var(--border)] p-5 animate-pulse">
                             <div className="flex items-center gap-3 mb-3">
-                              <div className="w-10 h-10 rounded-xl bg-[var(--surface-dim)]" />
+                              <div className="w-12 h-12 rounded-xl bg-[var(--surface-dim)]" />
                               <div className="flex-1 space-y-2">
                                 <div className="h-3.5 w-3/4 rounded bg-[var(--surface-dim)]" />
                                 <div className="h-3 w-1/2 rounded bg-[var(--surface-dim)]" />
@@ -1022,7 +1030,7 @@ export default function DrugIndexScreen() {
                             className={`text-left bg-gradient-to-br ${cc.card} border border-[var(--border)] rounded-2xl p-5 cursor-pointer transition-all group ${cc.hover}`}
                           >
                             <div className="flex items-center gap-3 mb-3">
-                              <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${cc.tile} flex items-center justify-center shrink-0 shadow-sm`}>
+                              <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${cc.tile} flex items-center justify-center shrink-0 shadow-sm`}>
                                 {(() => {
                                   const Sym = CATEGORY_SYMBOLS[cat] || Pill;
                                   return <Sym size={18} className="text-white" />;

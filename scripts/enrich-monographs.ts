@@ -11,6 +11,10 @@ import * as fs from 'fs'
 const STATE_FILE = 'storage/enrich_state.json'
 const limitArg = process.argv.find((a) => a.startsWith('--limit='))
 const LIMIT = limitArg ? Number(limitArg.split('=')[1]) : 0
+const REST = process.argv.includes('--rest')
+// The --rest pass uses its own state file so it can retry rows the first pass
+// marked done even when they ended up with placeholder/boilerplate content.
+const STATE_FILE_FINAL = REST ? 'storage/enrich_rest_state.json' : STATE_FILE
 
 const admin = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!, {
   auth: { persistSession: false },
@@ -50,12 +54,21 @@ function fdaArray(field: string[] | undefined): string[] {
 }
 
 async function fetchFdaLabel(drugName: string): Promise<OpenFdaLabel | null> {
+  const fetchWithTimeout = async (url: string): Promise<Response> => {
+    const ctrl = new AbortController()
+    const t = setTimeout(() => ctrl.abort(), 15000)
+    try {
+      return await fetch(url, { signal: ctrl.signal })
+    } finally {
+      clearTimeout(t)
+    }
+  }
   try {
     const url = `https://api.fda.gov/drug/label.json?search=openfda.generic_name:"${encodeURIComponent(drugName)}"+OR+openfda.brand_name:"${encodeURIComponent(drugName)}"&limit=1`
-    const res = await fetch(url)
+    const res = await fetchWithTimeout(url)
     if (!res.ok) {
       const fbUrl = `https://api.fda.gov/drug/label.json?search=search="${encodeURIComponent(drugName)}"&limit=1`
-      const fbRes = await fetch(fbUrl)
+      const fbRes = await fetchWithTimeout(fbUrl)
       if (!fbRes.ok) return null
       const fbData: any = await fbRes.json()
       return fbData?.results?.[0] ?? null
@@ -70,6 +83,16 @@ async function fetchFdaLabel(drugName: string): Promise<OpenFdaLabel | null> {
 function hasReal(v: any): boolean {
   if (Array.isArray(v)) return v.some((x) => typeof x === 'string' && x.trim().length > 10)
   return typeof v === 'string' && v.trim().length > 20
+}
+
+// Placeholder/boilerplate rows pass hasReal (they are long strings) but carry
+// no actual content — "Refer to current prescribing information…" and the
+// generated fallbacks. Treat those as empty so the --rest pass re-fetches them.
+const BOILERPLATE = /^(refer to current|consult current|seek immediate|mechanism of action for |n\/a|none|tbd|todo|placeholder|unknown|pending)/i
+function hasSubstance(v: any): boolean {
+  if (!hasReal(v)) return false
+  const items = Array.isArray(v) ? v : [v]
+  return items.some((x) => typeof x === 'string' && x.trim().length > 10 && !BOILERPLATE.test(x.trim()))
 }
 
 /** Two concise, drug-specific practice tips drawn from the monograph's own
@@ -110,18 +133,42 @@ async function main() {
   const rows = await fetchAllMonographs()
   console.log(`total monographs: ${rows.length}`)
 
-  const state: { done: string[] } = fs.existsSync(STATE_FILE)
-    ? JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'))
+  const state: { done: string[] } = fs.existsSync(STATE_FILE_FINAL)
+    ? JSON.parse(fs.readFileSync(STATE_FILE_FINAL, 'utf8'))
     : { done: [] }
   const done = new Set(state.done)
 
-  // Only enrich rows still missing enrichment depth.
+  // Target rows that are still weak — any core or enrichment field below the
+  // substance bar (placeholder/boilerplate counts as weak). In --rest mode the
+  // old done-list is ignored for weak rows so fallback-only rows get retried.
+  const isWeak = (r: any): boolean =>
+    !hasSubstance(r.mechanism_of_action) ||
+    !hasSubstance(r.pharmacokinetics) ||
+    !hasSubstance(r.overdose) ||
+    !hasSubstance(r.warnings) ||
+    !hasSubstance(r.black_box_warnings) ||
+    !hasSubstance(r.brand_names) ||
+    !hasSubstance(r.indications) ||
+    !hasSubstance(r.contraindications) ||
+    !hasSubstance(r.side_effects) ||
+    !hasSubstance(r.interactions) ||
+    !hasSubstance(r.monitoring) ||
+    !hasSubstance(r.patient_counselling)
+
   const targets = rows.filter((r) => {
-    if (done.has(r.id)) return false
-    const missing = !hasReal(r.mechanism_of_action) || !hasReal(r.pharmacokinetics) || !hasReal(r.overdose)
-    return missing
+    if (!isWeak(r)) return false
+    if (!REST && done.has(r.id)) return false
+    return true
   })
+  const weakBoilerPk = targets.filter((r) => !hasSubstance(r.pharmacokinetics) && BOILERPLATE.test(String(r.pharmacokinetics || '').trim())).length
+  const weakPk = targets.filter((r) => !hasSubstance(r.pharmacokinetics)).length
+  const weakWarn = targets.filter((r) => !hasSubstance(r.warnings)).length
+  const weakBb = targets.filter((r) => !hasSubstance(r.black_box_warnings)).length
+  const weakCore = targets.filter((r) => !hasSubstance(r.indications) || !hasSubstance(r.contraindications) || !hasSubstance(r.side_effects) || !hasSubstance(r.interactions)).length
+  console.log(`total monographs: ${rows.length}`)
   console.log(`targets needing enrichment: ${targets.length} (done already: ${done.size})`)
+  console.log(`  weak PK: ${weakPk} (of which boilerplate: ${weakBoilerPk})`)
+  console.log(`  weak warnings: ${weakWarn} | weak black_box: ${weakBb} | weak core: ${weakCore}`)
 
   const batch = LIMIT ? targets.slice(0, LIMIT) : targets
   let fdaHits = 0
@@ -187,7 +234,7 @@ async function main() {
     }
 
     done.add(r.id)
-    fs.writeFileSync(STATE_FILE, JSON.stringify({ done: [...done] }, null, 2))
+    fs.writeFileSync(STATE_FILE_FINAL, JSON.stringify({ done: [...done] }, null, 2))
     await new Promise((r2) => setTimeout(r2, 300))
   }
 

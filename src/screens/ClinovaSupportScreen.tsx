@@ -9,7 +9,6 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { RAGRouter } from '../services/ragRouter';
-import { KnowledgeEngine } from '../engine/knowledgeEngine.service';
 import ReactMarkdown from 'react-markdown';
 
 import { ChatSessionList } from '../components/ChatSessionList';
@@ -670,10 +669,13 @@ export default function ClinovaSupportScreen() {
       const savedData = localStorage.getItem('clinova_pharma_review_form');
       const parsed = savedData ? JSON.parse(savedData) : {};
 
-      const maxAttempts = 3;
+      const maxAttempts = 2;
       let success = false;
       let lastError: any = null;
-      let engineSources: any[] = [];
+      // Sources are retrieved ONCE, server-side (buildAssistantRequest → RAG).
+      // They arrive as an early SSE event so the citation widget renders
+      // without the client running its own second search.
+      let streamSources: any[] = [];
 
       for (let attempt = 1; attempt <= maxAttempts; attempt++) {
         try {
@@ -687,33 +689,13 @@ export default function ClinovaSupportScreen() {
             await new Promise(resolve => setTimeout(resolve, 1500 * (attempt - 1)));
           }
 
-          // RETRIEVE KNOWLEDGE ENGINE CONTEXT (for citation widget only)
-          // Server-side RAG in buildAssistantRequest handles the actual context injection
-          try {
-            setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
-              ...m,
-              content: 'Searching knowledge bases for relevant context...'
-            } : m));
-            setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
-              ...m,
-              content: 'Querying Drug Monographs, Clinical Cases, and Disease Knowledge...'
-            } : m));
-            const engineResult = await KnowledgeEngine.process(userQuery);
-            if (engineResult.hasData) {
-              engineSources = engineResult.sources;
-              setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
-                ...m,
-                content: `Found ${engineSources.length} relevant sources. Generating clinical response...`
-              } : m));
-            } else {
-              setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
-                ...m,
-                content: 'No specific knowledge base matches. Answering from general clinical knowledge...'
-              } : m));
-            }
-          } catch (e) {
-            console.warn('[ClinovaSupport] KnowledgeEngine retrieval failed:', e);
-          }
+          // RETRIEVAL HAPPENS SERVER-SIDE ONLY: buildAssistantRequest runs the
+          // RAG search (via RAGRouter.route) and streams the found sources back
+          // as the first SSE event, so the client never duplicates the query.
+          setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
+            ...m,
+            content: 'Searching knowledge bases for relevant context...'
+          } : m));
 
           // Use AbortController to prevent endless loading if server hangs
           const controller = new AbortController();
@@ -762,7 +744,16 @@ export default function ClinovaSupportScreen() {
                 if (!payload) continue;
                 try {
                   const evt = JSON.parse(payload);
-                  if (evt.text) {
+                  if (evt.sources && Array.isArray(evt.sources)) {
+                    // First SSE event: the sources the server grounded on.
+                    streamSources = evt.sources;
+                    setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
+                      ...m,
+                      content: streamSources.length > 0
+                        ? `Found ${streamSources.length} relevant sources. Generating clinical response...`
+                        : 'No specific knowledge base matches. Answering from general clinical knowledge...'
+                    } : m));
+                  } else if (evt.text) {
                     streamedText += evt.text;
                     setMessages(prev => prev.map(m => m.id === thinkingMsgId ? { ...m, content: streamedText } : m));
                   } else if (evt.error) {
@@ -821,6 +812,9 @@ export default function ClinovaSupportScreen() {
             if (fallbackData.text && fallbackData.text.trim()) {
               responseContent = fallbackData.text;
             }
+            if (fallbackData.sources) {
+              streamSources = fallbackData.sources;
+            }
           }
         } catch (fallbackErr) {
           console.warn('[ClinovaSupport] Buffered fallback also failed:', fallbackErr);
@@ -831,11 +825,11 @@ export default function ClinovaSupportScreen() {
         throw lastError || new Error('Failed to reach assistant after multiple attempts');
       }
       
-      if (engineSources.length > 0) {
-        citations = engineSources.slice(0, 4).map((s: any) => ({
-          source: s.type === 'drug_monograph' ? 'Kenya Drug Index' : s.type === 'drug_registry' ? 'Kenya Drug Index' : s.type === 'clinical_case' ? 'Clinical Cases' : s.type === 'disease' ? 'Disease Knowledge' : 'Knowledge Base',
-          document: s.title,
-          year: '2024'
+      if (streamSources.length > 0) {
+        citations = streamSources.slice(0, 4).map((s: any) => ({
+          source: s.source || 'Knowledge Base',
+          document: s.document || 'Clinical Reference',
+          year: s.year || '2024'
         }));
       } else {
         citations = selectedSources.map((db: string) => ({

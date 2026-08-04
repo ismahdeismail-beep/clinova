@@ -966,10 +966,28 @@ async function buildAssistantRequest(body: any) {
   const { userMessage, chatHistory, currentFormState, fileData, fileType, fileName } = body;
 
   let ragContext = '';
+  let sources: { source: string; document: string }[] = [];
   if (userMessage) {
     const route = await RAGRouter.route(userMessage, adminSupabase);
     if (route.requiresRag) {
       ragContext = RAGRouter.buildContextForAi(route.engineResult);
+      // Surface the retrieved sources to the client for the citation widget.
+      // The client no longer runs its own duplicate KnowledgeEngine search,
+      // so this is the single source of truth for what the AI grounded on.
+      const engine = route.engineResult;
+      if (engine.hasData) {
+        sources = engine.sources.slice(0, 4).map((s: any) => ({
+          source:
+            s.type === 'drug_monograph' || s.type === 'drug_registry'
+              ? 'Kenya Drug Index'
+              : s.type === 'clinical_case'
+                ? 'Clinical Cases'
+                : s.type === 'disease'
+                  ? 'Disease Knowledge'
+                  : 'Knowledge Base',
+          document: s.title,
+        }));
+      }
     }
   }
 
@@ -1071,7 +1089,7 @@ ${fileName ? `(Attached file: ${fileName})` : ''}
 
   contents.push({ role: 'user', parts: userParts });
 
-  return { contents, systemInstruction };
+  return { contents, systemInstruction, sources };
 }
 
 // AI Interactive Assistant / Chat Sidebar (buffered)
@@ -1083,7 +1101,7 @@ app.post('/api/gemini/assistant', async (req, res) => {
       return res.status(400).json({ error: 'Missing userMessage or fileData' });
     }
 
-    const { contents, systemInstruction } = await buildAssistantRequest(req.body);
+    const { contents, systemInstruction, sources = [] } = await buildAssistantRequest(req.body);
 
     const response = await generateContentWithFallback({
       model: 'gemini-flash-latest',
@@ -1091,7 +1109,7 @@ app.post('/api/gemini/assistant', async (req, res) => {
       config: { systemInstruction },
     });
 
-    res.json({ text: response.text });
+    res.json({ text: response.text, sources });
   } catch (error: any) {
     console.error('Clinova Support error:', error);
     res.status(500).json({ error: error.message ? (error.message.includes('{') ? 'Service temporarily unavailable (Model high demand or API Error)' : error.message) : 'AI assistant failed' });
@@ -1117,7 +1135,11 @@ app.post('/api/gemini/assistant/stream', async (req, res) => {
       return res.end();
     }
 
-    const { contents, systemInstruction } = await buildAssistantRequest(req.body);
+    const { contents, systemInstruction, sources = [] } = await buildAssistantRequest(req.body);
+
+    // Push the retrieved sources first so the client can render the citation
+    // widget immediately while the model streams its answer.
+    if (!closed) send({ sources });
 
     // Log context size for diagnosis
     const instrLen = (systemInstruction || '').length;

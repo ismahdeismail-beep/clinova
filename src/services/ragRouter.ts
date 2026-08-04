@@ -131,6 +131,24 @@ export const RAGRouter = {
       }
     }
 
+    // Interaction pairs detected by scanning the full drug index (type drug_monograph
+    // with a ' <-> ' title). These are distinct from the matched monographs above —
+    // they are the OTHER drugs in the registry that interact with the queried one.
+    const interactionSources = engineResult.sources.filter(
+      s => s.type === 'drug_monograph' && s.title.includes(' <-> '),
+    );
+    if (interactionSources.length > 0) {
+      context += `### Detected Drug Interactions (${interactionSources.length} pairs found in registry)\n\n`;
+      for (const ix of interactionSources.slice(0, 12)) {
+        const line = ix.content.replace('INTERACTION: ', '')
+        context += `- ${line.length > 180 ? line.slice(0, 180) + '…' : line}\n`
+      }
+      if (interactionSources.length > 12) {
+        context += `\n(${interactionSources.length - 12} more interaction pairs found — see registry for full list)\n`;
+      }
+      context += '\n';
+    }
+
     // Registry-only entries: drugs recognized by name but no full monograph available
     const registrySources = engineResult.sources.filter(s => s.type === 'drug_registry');
     if (registrySources.length > 0) {
@@ -166,8 +184,11 @@ export const RAGRouter = {
       }
     }
 
-    // Cap context to prevent oversized prompts that may cause empty AI responses
-    const MAX_CONTEXT_CHARS = 8000;
+    // Cap context to prevent oversized prompts that may cause empty AI responses.
+    // 12k chars ≈ 3k tokens — well within Gemini Flash's window, but keeps the
+    // prompt lean for fast first-token latency (drug-interaction queries need
+    // room for both monographs and the detected-pairs section).
+    const MAX_CONTEXT_CHARS = 12000;
     if (context.length > MAX_CONTEXT_CHARS) {
       context = context.slice(0, MAX_CONTEXT_CHARS) + '\n\n[Context truncated for brevity — focus on the most relevant sources above]\n';
     }

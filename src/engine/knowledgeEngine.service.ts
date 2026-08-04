@@ -24,6 +24,15 @@ export interface KnowledgeEngineResult {
   hasData: boolean;
 }
 
+// -- Retrieval caches ------------------------------------------------
+// All clients (browser anon + server service-role) query the same Supabase
+// project, so results are safe to share process-wide. Caching turns repeated
+// drug lookups (the hottest path — every drug query re-fetches the same
+// monographs) from network round-trips into O(1) map hits.
+const monographByNameCache = new Map<string, DrugMonograph | null>()
+const monographSearchCache = new Map<string, DrugMonograph[]>()
+let interactionDrugListCache: { id: string; name: string; interactions: string[] }[] | null = null
+
 // -- Stop words stripped during keyword extraction --
 const STOP_WORDS = new Set([
   'a', 'an', 'the', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
@@ -65,7 +74,9 @@ function detectIntent(query: string): QueryIntent {
   const q = query.toLowerCase();
 
   if (q.includes('interaction') || q.includes('interact with') || q.includes('combine') ||
-      q.includes('take with') || q.includes('co-prescrib') || q.includes('together with')) {
+      q.includes('take with') || q.includes('co-prescrib') || q.includes('together with') ||
+      q.includes('taken together') || q.includes('with each other') || q.includes('concomitant') ||
+      q.includes('concurrent use')) {
     return 'drug_interaction';
   }
 
@@ -196,7 +207,7 @@ function levenshtein(a: string, b: string): number {
 /** Extract meaningful medical keywords, stripping NLP filler */
 function extractKeywords(query: string): string[] {
   const q = query.toLowerCase()
-    .replace(/[^\w\s\-\/]/g, ' ')
+    .replace(/[^\w\s-/]/g, ' ')
     .replace(/\b\d+\b/g, ' ')
     .trim()
 
@@ -232,7 +243,7 @@ function extractDiseaseKeywords(query: string): string[] {
   const stripped = q
     .replace(/\b(explain|describe|discuss|what|how|why|when|which|tell|me|about|the|a|an|is|are|was|were|do|does|did|can|could|would|should|for|in|with|of|on|at|to|from|and|or|but|not|this|that|it|its|my|your|our|their|we|you|they|he|she|his|her)\b/gi, ' ')
     .replace(/\b(treatment|management|pathophysiology|aetiology|etiology|epidemiology|diagnosis|signs|symptoms|clinical|features|presentation|complications|overview|guideline|protocol|pharmacology|drug|therapy|therapeutics|approach to)\b/gi, ' ')
-    .replace(/[^\w\s\-]/g, ' ')
+    .replace(/[^\w\s-]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
 
@@ -266,22 +277,27 @@ function extractDrugNames(query: string): string[] {
 
     if (found.length === 0) {
       const queryWords = q.split(/\s+/).filter(w => w.length >= 3)
-      for (const qw of queryWords) {
-        let bestMatch = ''
-        let bestDist = Infinity
-        for (const name of ALL_DRUG_NAMES) {
-          const nameParts = name.split(/\s+/)
-          for (const np of nameParts) {
-            if (np.length < 3) continue
-            const threshold = np.length <= 5 ? 2 : 3
-            const dist = levenshtein(qw, np)
-            if (dist <= threshold && dist < bestDist) {
-              bestDist = dist
-              bestMatch = name
+      // Skip the fuzzy pass for long natural-language queries — the exact and
+      // substring passes above cover them, and Levenshtein over 1000+ names ×
+      // words is the single most expensive part of retrieval.
+      if (queryWords.length > 0 && queryWords.length <= 4) {
+        for (const qw of queryWords) {
+          let bestMatch = ''
+          let bestDist = Infinity
+          for (const name of ALL_DRUG_NAMES) {
+            const nameParts = name.split(/\s+/)
+            for (const np of nameParts) {
+              if (np.length < 3) continue
+              const threshold = np.length <= 5 ? 2 : 3
+              const dist = levenshtein(qw, np)
+              if (dist <= threshold && dist < bestDist) {
+                bestDist = dist
+                bestMatch = name
+              }
             }
           }
+          if (bestMatch && !found.includes(bestMatch)) found.push(bestMatch)
         }
-        if (bestMatch && !found.includes(bestMatch)) found.push(bestMatch)
       }
     }
   }
@@ -385,6 +401,10 @@ function mapDrugRow(row: any): DrugMonograph {
  * index instead of being limited to the bundled drugs.
  */
 async function queryDrugByName(client: any, name: string): Promise<DrugMonograph | null> {
+  const key = name.toLowerCase().trim()
+  if (monographByNameCache.has(key)) return monographByNameCache.get(key)!
+
+  let result: DrugMonograph | null = null
   if (client) {
     try {
       const { data, error } = await client
@@ -392,13 +412,19 @@ async function queryDrugByName(client: any, name: string): Promise<DrugMonograph
         .select('*, drug_class_info:drug_classes(name)')
         .ilike('name', name)
         .single()
-      if (!error && data) return mapDrugRow(data)
+      if (!error && data) result = mapDrugRow(data)
     } catch { /* fall through to DrugMonographService */ }
   }
-  return DrugMonographService.getByName(name)
+  if (!result) result = await DrugMonographService.getByName(name)
+  monographByNameCache.set(key, result)
+  return result
 }
 
 async function queryDrugBySearch(client: any, query: string): Promise<DrugMonograph[]> {
+  const key = query.toLowerCase().trim()
+  if (monographSearchCache.has(key)) return monographSearchCache.get(key)!
+
+  let result: DrugMonograph[] = []
   if (client) {
     try {
       const { data, error } = await client
@@ -407,10 +433,57 @@ async function queryDrugBySearch(client: any, query: string): Promise<DrugMonogr
         .or(`name.ilike.%${query}%,generic_name.ilike.%${query}%`)
         .order('name')
         .limit(5)
-      if (!error && data && data.length > 0) return data.map(mapDrugRow)
+      if (!error && data && data.length > 0) result = data.map(mapDrugRow)
     } catch { /* fall through to DrugMonographService */ }
   }
-  return DrugMonographService.search(query)
+  if (result.length === 0) result = await DrugMonographService.search(query)
+  if (monographSearchCache.size > 200) monographSearchCache.clear()
+  monographSearchCache.set(key, result)
+  return result
+}
+
+// Interaction lookup against the FULL drug index, cached per process.
+// Uses the passed client (service-role on server) so all ~1000 drugs are
+// scanned instead of the bundled subset the browser client can see, and the
+// list is fetched once instead of on every interaction query.
+async function findInteractingDrugs(
+  client: any,
+  monograph: DrugMonograph,
+): Promise<KnowledgeSource[]> {
+  if (interactionDrugListCache === null) {
+    if (!client) return []
+    try {
+      const { data, error } = await client
+        .from('drug_monographs')
+        .select('id, name, interactions')
+        .limit(5000)
+      if (error || !data || data.length === 0) return []
+      interactionDrugListCache = data as { id: string; name: string; interactions: string[] }[]
+    } catch {
+      return []
+    }
+  }
+
+  const needle = monograph.name.toLowerCase()
+  const sources: KnowledgeSource[] = []
+  for (const other of interactionDrugListCache) {
+    if (other.id === monograph.id) continue
+    const interactions = (other.interactions || []).filter(i =>
+      i.toLowerCase().includes(needle),
+    )
+    if (interactions.length > 0) {
+      sources.push({
+        type: 'drug_monograph',
+        id: other.id,
+        title: `${monograph.name} <-> ${other.name}`,
+        content: `INTERACTION: ${interactions.join('; ')}`,
+        // Below the queried drug's own monographs (0.95) so the citation widget
+        // shows the main drugs first, but above cases/diseases (0.8x).
+        relevance: 0.94,
+      })
+    }
+  }
+  return sources
 }
 
 export const KnowledgeEngine = {
@@ -432,12 +505,17 @@ export const KnowledgeEngine = {
 
     if (drugNames.length > 0) {
       const results: DrugMonograph[] = []
-      for (const name of drugNames) {
-        const mono = await queryDrugByName(client, name)
+      // Look up every matched name in parallel — sequential .ilike()
+      // round-trips per name were a major source of retrieval latency.
+      const foundMonographs = await Promise.all(
+        drugNames.map(name => queryDrugByName(client, name)),
+      )
+      for (let i = 0; i < drugNames.length; i++) {
+        const mono = foundMonographs[i]
         if (mono) {
           results.push(mono)
         } else {
-          unmatchedDrugNames.push(name)
+          unmatchedDrugNames.push(drugNames[i])
         }
       }
       if (results.length === 0 && drugNames.length > 0) {
@@ -456,18 +534,13 @@ export const KnowledgeEngine = {
       }
 
       if (intent === 'drug_interaction' && results.length > 0) {
-        for (const m of results) {
-          const interacting = await DrugMonographService.getInteractingDrugs(m.name)
-          for (const { drug: d, interactions: inter } of interacting) {
-            sources.push({
-              type: 'drug_monograph',
-              id: d.id,
-              title: `${m.name} <-> ${d.name}`,
-              content: `INTERACTION: ${inter.join('; ')}`,
-              relevance: 0.98,
-            })
-          }
-        }
+        // Uses the cached full drug index via the passed client — covers the
+        // whole 1000-drug registry, not just the bundled subset, and avoids
+        // re-fetching the entire table for every interaction query.
+        const interactionSources = await Promise.all(
+          results.map(m => findInteractingDrugs(client, m)),
+        )
+        for (const srcs of interactionSources) sources.push(...srcs)
       }
     }
 
@@ -511,10 +584,13 @@ export const KnowledgeEngine = {
       }
     }
 
-    // -- 2. Clinical case search: ALWAYS attempted --
-    // Use extracted disease keywords, NOT the raw natural-language query
+    // -- 2. Clinical case + disease search: gated by intent --
+    // Drug queries already get rich context from monographs; searching cases
+    // and the disease registry only adds latency for them. Run both remaining
+    // DB searches concurrently instead of sequentially.
     const searchTerms = diseaseKeywords.length > 0 ? diseaseKeywords : keywords
-    if (searchTerms.length > 0 && client) {
+    const isDrugQuery = intent === 'drug_info' || intent === 'drug_interaction'
+    if (!isDrugQuery && searchTerms.length > 0 && client) {
       const orParts: string[] = []
       for (const term of searchTerms.slice(0, 5)) {
         orParts.push(`title.ilike.%${term}%`)
@@ -523,73 +599,76 @@ export const KnowledgeEngine = {
         orParts.push(`chief_complaint.ilike.%${term}%`)
       }
 
-      if (orParts.length > 0) {
-        const { data: cases } = await client
-          .from('clinical_cases')
-          .select('id, title, disease, diagnosis, specialty, difficulty, chief_complaint')
-          .or(orParts.join(','))
-          .eq('status', 'published')
-          .limit(8)
-
-        if (cases && cases.length > 0) {
-          for (const c of cases) {
-            sources.push({
-              type: 'clinical_case',
-              id: c.id,
-              title: c.title,
-              content: `Disease: ${c.disease}\nSpecialty: ${c.specialty}\nDifficulty: ${c.difficulty}\nDiagnosis: ${c.diagnosis}${c.chief_complaint ? '\nChief Complaint: ' + c.chief_complaint : ''}`,
-              relevance: 0.8,
-            })
+      const [casesResult, diseasesResult] = await Promise.all([
+        orParts.length > 0
+          ? client
+              .from('clinical_cases')
+              .select('id, title, disease, diagnosis, specialty, difficulty, chief_complaint')
+              .or(orParts.join(','))
+              .eq('status', 'published')
+              .limit(8)
+          : Promise.resolve({ data: null }),
+        (async () => {
+          try {
+            const { data } = await client
+              .from('diseases')
+              .select('id, name, aliases')
+              .or(searchTerms.slice(0, 5).map(t => `name.ilike.%${t}%`).join(','))
+              .limit(5)
+            return { data }
+          } catch {
+            return { data: null }
           }
-        }
-      }
-    }
+        })(),
+      ])
 
-    // Also search bundled clinical cases for additional context
-    for (const keyword of searchTerms.slice(0, 3)) {
-      const lower = keyword.toLowerCase()
-      for (const c of ALL_CLINICAL_CASES.slice(0, 50)) {
-        const diseaseMatch = (c.disease || '').toLowerCase().includes(lower)
-        const titleMatch = (c.title || '').toLowerCase().includes(lower)
-        if ((diseaseMatch || titleMatch) && !sources.some(s => s.id === c.id)) {
+      const cases = casesResult?.data
+      if (cases && cases.length > 0) {
+        for (const c of cases) {
           sources.push({
             type: 'clinical_case',
             id: c.id,
             title: c.title,
-            content: `Disease: ${c.disease}\nSpecialty: ${c.specialty}\nDifficulty: ${c.difficulty}`,
-            relevance: diseaseMatch ? 0.78 : 0.7,
+            content: `Disease: ${c.disease}\nSpecialty: ${c.specialty}\nDifficulty: ${c.difficulty}\nDiagnosis: ${c.diagnosis}${c.chief_complaint ? '\nChief Complaint: ' + c.chief_complaint : ''}`,
+            relevance: 0.8,
+          })
+        }
+      }
+
+      const diseases = diseasesResult?.data
+      if (diseases && diseases.length > 0) {
+        for (const d of diseases) {
+          const aliasText = Array.isArray(d.aliases) && d.aliases.length > 0
+            ? '\nAliases: ' + d.aliases.join(', ')
+            : ''
+          sources.push({
+            type: 'disease',
+            id: d.id,
+            title: d.name,
+            content: `Specialty: Clinical Pharmacy${aliasText}`,
+            relevance: 0.88,
           })
         }
       }
     }
 
-    // -- 3. Disease database search: ALWAYS attempted --
-    // Note: diseases table has id, name, aliases (TEXT[]), created_at only.
-    // aliases is a PostgreSQL array — use a text-cast search instead of ilike.
-    if (client && searchTerms.length > 0) {
-      try {
-        const { data: diseases } = await client
-          .from('diseases')
-          .select('id, name, aliases')
-          .or(searchTerms.slice(0, 5).map(t => `name.ilike.%${t}%`).join(','))
-          .limit(5)
-
-        if (diseases && diseases.length > 0) {
-          for (const d of diseases) {
-            const aliasText = Array.isArray(d.aliases) && d.aliases.length > 0
-              ? '\nAliases: ' + d.aliases.join(', ')
-              : ''
+    // Also search bundled clinical cases for additional context
+    if (!isDrugQuery) {
+      for (const keyword of searchTerms.slice(0, 3)) {
+        const lower = keyword.toLowerCase()
+        for (const c of ALL_CLINICAL_CASES.slice(0, 50)) {
+          const diseaseMatch = (c.disease || '').toLowerCase().includes(lower)
+          const titleMatch = (c.title || '').toLowerCase().includes(lower)
+          if ((diseaseMatch || titleMatch) && !sources.some(s => s.id === c.id)) {
             sources.push({
-              type: 'disease',
-              id: d.id,
-              title: d.name,
-              content: `Specialty: Clinical Pharmacy${aliasText}`,
-              relevance: 0.88,
+              type: 'clinical_case',
+              id: c.id,
+              title: c.title,
+              content: `Disease: ${c.disease}\nSpecialty: ${c.specialty}\nDifficulty: ${c.difficulty}`,
+              relevance: diseaseMatch ? 0.78 : 0.7,
             })
           }
         }
-      } catch {
-        // Disease table may not exist or schema may differ — fail silently
       }
     }
 

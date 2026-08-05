@@ -1,3 +1,12 @@
+## 2026-08-05
+
+### Added
+- **Pharmacology subclass layer in the Kenya Drug Index**: every browse category now breaks down into ATC-style subclasses (Anti-infectives → Penicillins / Cephalosporins / Carbapenems / Macrolides / Antimalarials…, Cardiovascular → ACE inhibitors / Beta-blockers / Statins…, etc.) via a new `src/lib/drugSubclass.ts` keyword engine mirroring `drugCategory.ts`. Subclass chips with live counts (derived at render, never hardcoded) filter the drug grid, the breadcrumb reads "Drug Index › Category › Subclass", and each card shows its subclass badge. `scripts/audit_subclasses.ts` classifies all 1,072 drugs with a 0% "Other" rate.
+- **Fixed category routing**: antiretrovirals/carbapenems (dolutegravir, meropenem, remdesivir…) now classify as Anti-infectives, antihistamines as Respiratory, and ophthalmic drops before systemic corticosteroids so eye preparations land under Ophthalmology.
+
+### Fixed
+- **Scoped "search within class" now actually filters**: typing in the in-category search bar previously updated the query but the grid ignored it; it now composes with category, subclass and A–Z filters.
+
 ## 2026-08-04
 
 ### Added

@@ -11,7 +11,14 @@ export default defineConfig(() => {
       react(), 
       VitePWA({
         registerType: 'autoUpdate',
-        includeAssets: ['clinova_logo.jpg'],
+        includeAssets: [
+          'clinova_logo.jpg',
+          'favicon.svg',
+          'pwa-192x192.png',
+          'pwa-512x512.png',
+          'pwa-512x512-maskable.png',
+          'apple-touch-icon.png'
+        ],
         cacheId: 'clinova-app-v1',
         workbox: {
           globPatterns: ['**/*.{js,css,html,ico,png,jpg,jpeg,svg}'],
@@ -25,15 +32,36 @@ export default defineConfig(() => {
           name: 'Clinova OS',
           short_name: 'Clinova',
           description: 'Clinical Intelligence System',
+          id: '/',
+          start_url: '/',
+          scope: '/',
           theme_color: '#0E0E10',
           background_color: '#0E0E10',
           display: 'standalone',
           icons: [
             {
+              src: 'pwa-192x192.png',
+              sizes: '192x192',
+              type: 'image/png',
+              purpose: 'any'
+            },
+            {
+              src: 'pwa-512x512.png',
+              sizes: '512x512',
+              type: 'image/png',
+              purpose: 'any'
+            },
+            {
+              src: 'pwa-512x512-maskable.png',
+              sizes: '512x512',
+              type: 'image/png',
+              purpose: 'maskable'
+            },
+            {
               src: 'clinova_logo.jpg',
-              sizes: '192x192 512x512 1024x1024',
+              sizes: '1024x1024',
               type: 'image/jpeg',
-              purpose: 'any maskable'
+              purpose: 'any'
             }
           ]
         }

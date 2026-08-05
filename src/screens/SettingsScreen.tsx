@@ -58,6 +58,7 @@ export default function SettingsScreen() {
     if (!("Notification" in window)) return false
     return Notification.permission === "granted"
   })
+  const [pushHint, setPushHint] = useState("")
   const [loggingOut, setLoggingOut] = useState(false)
 
   // Re-sync local state when userData changes from external source (login, Firestore sync)
@@ -84,8 +85,23 @@ const handleSave = async () => {
   }
 
   const handleTogglePush = async () => {
+    if (!("Notification" in window)) {
+      setPushHint("Browser notifications are not supported in this browser.")
+      setPushEnabled(false)
+      return
+    }
+    if (Notification.permission === "denied") {
+      setPushHint("Notifications are blocked for this site. Enable them in your browser's site settings.")
+      setPushEnabled(false)
+      return
+    }
     const result = await requestNotificationPermission()
     setPushEnabled(result === "granted")
+    setPushHint(
+      result === "denied"
+        ? "Notifications were blocked. You can enable them in your browser's site settings."
+        : ""
+    )
   }
 
   const handleLogout = async () => {
@@ -276,6 +292,9 @@ const handleSave = async () => {
                 <p className="text-xs text-[var(--text-muted)] mt-0.5">
                   Receive browser alerts for drug of the day and reminders
                 </p>
+                {pushHint && (
+                  <p className="text-xs text-amber-500 mt-1">{pushHint}</p>
+                )}
               </div>
               <button
                 type="button"

@@ -145,12 +145,9 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
     return result;
   }, []);
 
-  useEffect(() => {
-    if ('Notification' in window && Notification.permission === 'default') {
-      // Auto-request on first visit
-      Notification.requestPermission();
-    }
-  }, []);
+  // Browser notification permission is only requested on a user gesture
+  // (e.g. the toggle in Settings) — modern browsers ignore permission
+  // requests made on page load without one.
 
   const addNotification = (notif: Omit<AppNotification, 'id' | 'time' | 'read' | 'timestamp'>) => {
     const newNotif: AppNotification = {
@@ -167,7 +164,7 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
       try {
         new Notification(notif.title, {
           body: notif.message,
-          icon: '/vite.svg',
+          icon: '/pwa-192x192.png',
         });
       } catch (e) {
         // Browser notifications may fail in some contexts
@@ -226,19 +223,11 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
   }, [addNotification, getDrugOfTheDay])
 
   const markAsRead = (id: string) => {
-    setNotifications(prev => {
-      const updated = prev.map(n => n.id === id ? { ...n, read: true } : n);
-      localStorage.setItem('clinova_notifications', JSON.stringify(updated));
-      return updated;
-    });
+    setNotifications(prev => prev.map(n => (n.id === id ? { ...n, read: true } : n)));
   };
 
   const markAllAsRead = () => {
-    setNotifications(prev => {
-      const updated = prev.map(n => ({ ...n, read: true }));
-      localStorage.setItem('clinova_notifications', JSON.stringify(updated));
-      return updated;
-    });
+    setNotifications(prev => prev.map(n => ({ ...n, read: true })));
   };
 
   const unreadCount = notifications.filter(n => !n.read).length;

@@ -66,7 +66,8 @@ function formatMoa(moa: string): string {
 // scraped "Drug Interaction Studies" blocks) — same normalization the
 // cleanup-pk.ts script applies to stored rows, so anything the script missed
 // or future scrapes still render cleanly.
-const FDA_LEAD = /^\s*\d+(?:\.\d+){0,2}\s+(?:Pharmacokinetics|PHARMACOKINETICS)\s*/i
+const FDA_LEAD =
+  /^\s*(?:\d+(?:\.\d+){0,2}\s+)?(?:Pharmacokinetics|CLINICAL PHARMACOLOGY|PHARMACOKINETICS)\s*/i
 const ADME_HEAD_RE =
   /\b(?:Absorption|Distribution|Metabolism|Elimination|Excretion)(?:\s+and\s+(?:Distribution|Metabolism|Elimination|Excretion))?(?:\s*[\/,]\s*(?:Bioavailability|Distribution|Excretion))?\s+(?=[A-Z])/g
 const INTERACTION_STUDIES = /\s*Drug Interaction Studies\b.*$/i

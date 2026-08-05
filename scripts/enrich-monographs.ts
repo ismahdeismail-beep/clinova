@@ -12,6 +12,7 @@ const STATE_FILE = 'storage/enrich_state.json'
 const limitArg = process.argv.find((a) => a.startsWith('--limit='))
 const LIMIT = limitArg ? Number(limitArg.split('=')[1]) : 0
 const REST = process.argv.includes('--rest')
+const ONLY_PK = process.argv.includes('--only-pk')
 // The --rest pass uses its own state file so it can retry rows the first pass
 // marked done even when they ended up with placeholder/boilerplate content.
 const STATE_FILE_FINAL = REST ? 'storage/enrich_rest_state.json' : STATE_FILE
@@ -29,9 +30,12 @@ interface OpenFdaLabel {
   mechanism_of_action?: string[]
   description?: string[]
   pharmacokinetics?: string[]
+  clinical_pharmacology?: string[]
   overdose?: string[]
   pregnancy?: string[]
   warnings?: string[]
+  warnings_and_cautions?: string[]
+  precautions?: string[]
   boxed_warning?: string[]
 }
 
@@ -47,10 +51,13 @@ function fdaArray(field: string[] | undefined): string[] {
   if (!field?.length) return []
   const raw = field.join(' ').replace(/\s+/g, ' ').trim()
   if (!raw) return []
+  // Split into sentence-sized items so long FDA sections ("5 WARNINGS AND
+  // PRECAUTIONS" paragraphs run thousands of chars) become readable bullets
+  // instead of being dropped by a length cap.
   return raw
-    .split(/(?:;|(?:\.\s+)|(?:\r?\n))/)
-    .map((s) => s.replace(/\[.*?\]/g, '').trim())
-    .filter((s) => s.length > 3 && s.length < 500)
+    .split(/(?<=[.;])\s+(?=[A-Z])/)
+    .map((s) => s.replace(/\[.*?\]/g, '').replace(/^\d+\s*/, '').trim())
+    .filter((s) => s.length > 15 && s.length < 600)
 }
 
 async function fetchFdaLabel(drugName: string): Promise<OpenFdaLabel | null> {
@@ -158,6 +165,7 @@ async function main() {
   const targets = rows.filter((r) => {
     if (!isWeak(r)) return false
     if (!REST && done.has(r.id)) return false
+    if (ONLY_PK && hasSubstance(r.pharmacokinetics)) return false
     return true
   })
   const weakBoilerPk = targets.filter((r) => !hasSubstance(r.pharmacokinetics) && BOILERPLATE.test(String(r.pharmacokinetics || '').trim())).length
@@ -183,10 +191,37 @@ async function main() {
 
     const moaRaw = fdaText(label?.mechanism_of_action) || fdaText(label?.description)
     const moa = moaRaw && /(mechanism|inhibits?|antagoni[sz]es?|agonist|binds?|blocks?|receptor|enzyme|prevents?|reduces?|stimulates?|suppresses?|interferes?|disrupts?|selective|potentiates?|modulates?|catalys|metaboli[sz])/i.test(moaRaw) ? moaRaw : ''
-    const pk = fdaText(label?.pharmacokinetics)
+    // Old SPL-format labels keep the PK text under clinical_pharmacology —
+    // without this fallback those drugs keep the boilerplate placeholder.
+    let pk = fdaText(label?.pharmacokinetics) || fdaText(label?.clinical_pharmacology)
+    // OTC generic searches often return the Drug-Facts label (no PK section)
+    // ahead of the Rx label. Retry with a filter for labels that HAVE a
+    // pharmacokinetics section.
+    if (!pk && label) {
+      const pkUrl = `https://api.fda.gov/drug/label.json?search=openfda.generic_name:"${encodeURIComponent(name)}"+AND+pharmacokinetics:[*+TO+*]&limit=1`
+      try {
+        const ctrl = new AbortController()
+        const t = setTimeout(() => ctrl.abort(), 15000)
+        const res = await fetch(pkUrl, { signal: ctrl.signal })
+        clearTimeout(t)
+        if (res.ok) {
+          const data: any = await res.json()
+          const rx = data?.results?.[0]
+          pk = fdaText(rx?.pharmacokinetics) || fdaText(rx?.clinical_pharmacology)
+        }
+      } catch {
+        // keep pk empty — the update preserves the existing placeholder
+      }
+    }
     const od = fdaText(label?.overdose)
     const preg = fdaText(label?.pregnancy)
-    const warnings = fdaArray(label?.warnings)
+    // fdaArray returns [] (truthy) when empty, so a plain || chain would
+    // short-circuit and never reach the fallback sections — find the first
+    // section that actually produced content instead.
+    const warnings =
+      [fdaArray(label?.warnings), fdaArray(label?.warnings_and_cautions), fdaArray(label?.precautions)].find(
+        (a) => a.length > 0,
+      ) ?? []
     const bbw = fdaArray(label?.boxed_warning)
     const brands = label?.openfda?.brand_name?.slice(0, 5) || []
 

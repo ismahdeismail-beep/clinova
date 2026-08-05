@@ -52,7 +52,8 @@ const CATEGORY_RULES: { category: TherapeuticCategory; keywords: string[] }[] = 
       'monobactam', 'nitrofuran', 'polyene', 'echinocandin', 'azole', 'artemisinin',
       'nucleoside analog', 'nucleoside analogue', 'reverse transcriptase',
       'integrase strand', 'neuraminidase', 'antiretroviral', 'cd4-directed',
-      'anti-infectives', 'antiinfective',
+      'anti-infectives', 'antiinfective', 'dolutegravir', 'raltegravir', 'meropenem',
+      'imipenem', 'ertapenem', 'remdesivir', 'darunavir', 'atazanavir', 'lopinavir',
     ],
   },
   {
@@ -134,6 +135,9 @@ const CATEGORY_RULES: { category: TherapeuticCategory; keywords: string[] }[] = 
       'decongestant', 'theophylline', 'aminophylline', 'salbutamol', 'albuterol',
       'salmeterol', 'formoterol', 'budesonide', 'fluticasone', 'ipratropium',
       'tiotropium', 'nasal', 'beclometasone', 'beclomethasone', 'xanthine',
+      'cetirizine', 'loratadine', 'desloratadine', 'fexofenadine', 'levocetirizine',
+      'diphenhydramine', 'chlorphenamine', 'chlorpheniramine', 'brompheniramine',
+      'promethazine',
     ],
   },
   {
@@ -185,6 +189,15 @@ const CATEGORY_RULES: { category: TherapeuticCategory; keywords: string[] }[] = 
     ],
   },
   {
+    category: 'Ophthalmology',
+    keywords: [
+      'ophthalmological', 'ophthalmic', 'ocular', 'intraocular', 'eye drop',
+      'eye drops', 'mydriatic', 'cycloplegic', 'glaucoma', 'artificial tears',
+      'latanoprost', 'travoprost', 'bimatoprost', 'dorzolamide', 'brinzolamide',
+      'pilocarpine', 'tropicamide',
+    ],
+  },
+  {
     category: 'Immunology',
     keywords: [
       'immunomodulatory', 'immunosuppress', 'immunomodulator', 'biologic',
@@ -195,15 +208,6 @@ const CATEGORY_RULES: { category: TherapeuticCategory; keywords: string[] }[] = 
       'methylprednisolone', 'betamethasone', 'triamcinolone', 'azathioprine',
       'mycophenolate', 'cyclosporine', 'tacrolimus', 'sirolimus', 'ibalizumab',
       'adalimumab', 'infliximab', 'ustekinumab', 'etanercept', 'tocilizumab',
-    ],
-  },
-  {
-    category: 'Ophthalmology',
-    keywords: [
-      'ophthalmological', 'ophthalmic', 'ocular', 'intraocular', 'eye drop',
-      'eye drops', 'mydriatic', 'cycloplegic', 'glaucoma', 'artificial tears',
-      'latanoprost', 'travoprost', 'bimatoprost', 'dorzolamide', 'brinzolamide',
-      'pilocarpine', 'tropicamide',
     ],
   },
   {

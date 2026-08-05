@@ -6,6 +6,7 @@
 
 ### Fixed
 - **Scoped "search within class" now actually filters**: typing in the in-category search bar previously updated the query but the grid ignored it; it now composes with category, subclass and A–Z filters.
+- **Live site showing the old build (missing drug icons/subclass chips)**: the Vercel project had Deployment Protection (Vercel Authentication) set to `all_except_custom_domains`, which auth-walled every `*.vercel.app` URL and left the production alias serving a stale edge-cached HTML from a pre-image-pipeline deployment. Fixed on the Vercel side: protection is now preview-only, and a fresh production deployment from `main` (`78b562f`) was pushed so the alias serves the current build (verified: new `drugMonograph.service` chunk contains the `drug_images` pipeline, `DrugIndexScreen` chunk contains the subclass UI, and `sw.js` now precaches the new hashes with `skipWaiting` so existing service workers self-update).
 
 ## 2026-08-04
 

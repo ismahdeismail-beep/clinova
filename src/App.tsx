@@ -330,11 +330,16 @@ function AppContent() {
               <Route path="/" element={<DashboardScreen />} />
               <Route path="/cases" element={<ClinicalCasesScreen />} />
               <Route path="/drugs" element={<DrugIndexScreen />} />
+              <Route path="/drugs/class/:category" element={<DrugIndexScreen />} />
+              <Route path="/drugs/class/:category/sub/:subclass" element={<DrugIndexScreen />} />
               <Route path="/assistant" element={<ClinovaSupportScreen />} />
   <Route path="/knowledge" element={<EducationHubScreen />} />
   <Route path="/knowledge/:moduleId" element={<EducationHubScreen />} />
   <Route path="/knowledge/:moduleId/:unitId" element={<EducationHubScreen />} />
   <Route path="/knowledge/exam/prep" element={<ExamPrepScreen />} />
+  <Route path="/knowledge/exam/prep/:moduleId" element={<ExamPrepScreen />} />
+  <Route path="/knowledge/exam/prep/:moduleId/:unitId" element={<ExamPrepScreen />} />
+  <Route path="/knowledge/exam/prep/:moduleId/:unitId/:variant" element={<ExamPrepScreen />} />
   <Route path="/knowledge/exam/board-exam" element={<BoardExamScreen />} />
   <Route path="/knowledge/exam/board-exam/:setId" element={<BoardExamScreen />} />
               <Route path="/care-plan" element={<CarePlanScreen />} />

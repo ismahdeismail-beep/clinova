@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import { Sparkles, Eye, EyeOff, Download, BookOpen, FileText, CheckCircle2, Award, Clock, Target, FlaskConical, Pill, ArrowRight } from 'lucide-react';
-import { EXAM_PREP_MODULES, STANDARD_EXAM_STRUCTURE, getExamPrepModule, type ExamUnitSpec, type ExamModuleSpec } from '../data/examPrepData';
+import { Eye, EyeOff, Download, BookOpen, FileText, Award, Clock, Target, FlaskConical, Pill, ArrowRight } from 'lucide-react';
+import { STANDARD_EXAM_STRUCTURE, type ExamUnitSpec, type ExamModuleSpec } from '../data/examPrepData';
 import { getExamPrepPaper, type GeneratedPaper } from '../data/examPrepPapers';
 
 // Count available paper variants for a unit (mock units have 3, real/OLD units have 1)
-const getPaperCount = (spec: ExamUnitSpec): number => {
+export const getPaperCount = (spec: ExamUnitSpec): number => {
   const isReal = spec.source === 'real';
   return isReal ? 1 : 3;
 };
 
 // Total papers across all units in a module
-const getModulePaperCount = (mod: ExamModuleSpec): number =>
+export const getModulePaperCount = (mod: ExamModuleSpec): number =>
   mod.units.reduce((sum, u) => sum + getPaperCount(u), 0);
 
 const txt = (v: any): string => {
@@ -106,7 +106,7 @@ function AnswerBody({ value }: { value: any }) {
   );
 }
 
-function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
+export function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
   const [showAnswers, setShowAnswers] = useState(false);
   const paper: GeneratedPaper | undefined = getExamPrepPaper(spec.id, variant);
 
@@ -237,86 +237,68 @@ function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: number }) {
   );
 }
 
-function ExamSubjectCard({ spec }: { spec: ExamUnitSpec }) {
-  const [open, setOpen] = useState(false);
-
+export function UnitCard({ spec, onSelect }: { spec: ExamUnitSpec; onSelect: (unitId: string) => void }) {
+  const paperCount = getPaperCount(spec);
+  const totalQs = spec.structure.reduce((a, s) => a + s.count, 0);
   return (
-    <div className="border border-[var(--border)] rounded-2xl overflow-hidden bg-[var(--surface)]">
-      <button
-        onClick={() => setOpen((v) => !v)}
-        className="w-full flex items-center justify-between gap-3 px-5 py-4 hover:bg-[var(--surface-2)] transition-colors"
-      >
-        <div className="flex items-center gap-3 text-left">
-          {open ? <BookOpen size={18} className="text-[var(--primary)]" /> : <FileText size={18} className="text-[var(--text-muted)]" />}
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="font-bold text-[var(--text)]">{spec.title}</span>
+    <button
+      onClick={() => onSelect(spec.id)}
+      className="w-full text-left border border-[var(--border)] rounded-2xl bg-[var(--surface)] px-5 py-4 hover:border-[var(--primary)]/40 hover:bg-[var(--surface-2)] transition-all group"
+    >
+      <div className="flex items-center justify-between gap-3">
+        <div className="flex items-center gap-3 min-w-0">
+          <div className="w-9 h-9 rounded-xl bg-[var(--primary)]/10 flex items-center justify-center shrink-0">
+            <FileText size={16} className="text-[var(--primary)]" />
+          </div>
+          <div className="min-w-0">
+            <div className="font-bold text-[var(--text)] text-sm truncate">{spec.title}</div>
+            <div className="text-[11px] text-[var(--text-muted)]">
+              {spec.structure.length} sections · {totalQs} questions · {paperCount} paper{paperCount !== 1 ? 's' : ''}
             </div>
-            <span className="text-[11px] text-[var(--text-muted)]">
-              {spec.structure.length} sections · {spec.structure.reduce((a, s) => a + s.marks, 0)} marks ·{' '}
-              {spec.topics.length} topic areas
-            </span>
           </div>
         </div>
-        {open ? null : <CheckCircle2 size={16} className="text-emerald-500" />}
-      </button>
-
-      {open && (
-        <div className="px-5 pb-5 space-y-5">
-          <div className="grid gap-2 sm:grid-cols-3">
-            {spec.structure.map((s) => (
-              <div key={s.letter} className="rounded-xl border border-[var(--border)] p-3">
-                <div className="flex items-center gap-2 text-[12px] font-bold text-[var(--primary)]">
-                  Section {s.letter}
-                </div>
-                <div className="text-[12px] text-[var(--text)] mt-1">{s.name}</div>
-                <div className="text-[11px] text-[var(--text-muted)]">
-                  {s.count} Qs · {s.marks} marks
-                </div>
-                <div className="text-[11px] text-[var(--text-muted)] mt-1 italic">{s.instruction}</div>
-              </div>
-            ))}
-          </div>
-
-          <div>
-            <div className="text-[12px] font-bold text-[var(--text)] mb-2 flex items-center gap-2">
-              <FileText size={14} className="text-[var(--primary)]" /> Topics covered (from the latest past paper)
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {spec.topics.map((t, i) => (
-                <span
-                  key={i}
-                  className="text-[11px] px-2 py-1 rounded-full bg-[var(--surface-2)] border border-[var(--border)] text-[var(--text-muted)]"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            <div className="text-[12px] font-bold text-[var(--text)]">
-              {spec.source === 'real' ? 'Past Paper' : 'Mock Papers'}
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {spec.source === 'real' ? (
-                <PaperCard spec={spec} variant={1} />
-              ) : (
-                <>
-                  <PaperCard spec={spec} variant={1} />
-                  <PaperCard spec={spec} variant={2} />
-                  <PaperCard spec={spec} variant={3} />
-                </>
-              )}
-            </div>
-          </div>
+        <ArrowRight size={18} className="text-[var(--text-muted)] group-hover:text-[var(--primary)] group-hover:translate-x-0.5 transition-all shrink-0" />
+      </div>
+      {spec.topics.length > 0 && (
+        <div className="flex flex-wrap gap-1.5 mt-3">
+          {spec.topics.slice(0, 4).map((t, i) => (
+            <span key={i} className="text-[10px] px-2 py-0.5 rounded-full bg-[var(--surface-2)] border border-[var(--border)] text-[var(--text-muted)]">
+              {t}
+            </span>
+          ))}
         </div>
       )}
-    </div>
+    </button>
   );
 }
 
-function ModuleCard({ mod, onSelect }: { mod: ExamModuleSpec; onSelect: (id: string) => void }) {
+export function PaperLinkCard({ spec, variant, onSelect }: { spec: ExamUnitSpec; variant: number; onSelect: (variant: number) => void }) {
+  const paper = getExamPrepPaper(spec.id, variant);
+  const label = spec.source === 'real' ? 'Past Paper' : variant === 1 ? 'Paper One' : variant === 2 ? 'Paper Two' : `Paper ${variant}`;
+  const qCount = paper ? paper.sections.reduce((a, s) => a + s.questions.length, 0) : 0;
+  const marks = spec.structure.reduce((a, s) => a + s.marks, 0);
+  return (
+    <button
+      onClick={() => onSelect(variant)}
+      className="w-full text-left border border-[var(--border)] rounded-2xl bg-[var(--surface)] p-5 hover:border-[var(--primary)]/40 hover:bg-[var(--surface-2)] transition-all group"
+    >
+      <div className="flex items-center gap-3">
+        <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold shrink-0">
+          {variant}
+        </span>
+        <div className="flex-1 min-w-0">
+          <div className="font-bold text-[var(--text)] text-sm">{label}</div>
+          <div className="text-[11px] text-[var(--text-muted)]">
+            {qCount} questions · {marks} marks
+          </div>
+        </div>
+        <Eye size={16} className="text-[var(--text-muted)] group-hover:text-[var(--primary)] transition-colors shrink-0" />
+      </div>
+    </button>
+  );
+}
+
+export function ModuleCard({ mod, onSelect }: { mod: ExamModuleSpec; onSelect: (id: string) => void }) {
   const Icon = mod.id === 'clinical-pharmacy-exam' ? Award : FlaskConical;
   return (
     <button
@@ -347,149 +329,51 @@ function ModuleCard({ mod, onSelect }: { mod: ExamModuleSpec; onSelect: (id: str
   );
 }
 
-export default function ExamPrepView({ moduleId: initialModuleId, subjectId }: { moduleId?: string; subjectId?: string }) {
-  // support both new moduleId and legacy subjectId
-  const effectiveId = initialModuleId || (subjectId === 'clinical-pharmacy-exam' ? 'clinical-pharmacy-exam' : undefined);
-  const [selectedModuleId, setSelectedModuleId] = useState<string | undefined>(effectiveId);
-  const selectedModule = selectedModuleId ? getExamPrepModule(selectedModuleId) : undefined;
-  const specs = selectedModule?.units ?? [];
-
-  // Module picker
-  if (!selectedModuleId) {
-    return (
-      <div className="space-y-6">
-        <div className="flex items-center gap-2">
-          <Sparkles size={20} className="text-[var(--primary)]" />
-          <h2 className="text-xl font-bold text-[var(--text)]">Exam Prep</h2>
-        </div>
-          <p className="text-sm text-[var(--text-muted)]">
-            Choose a module to start practising. Each unit has mock papers with answers; past papers are also available.
-          </p>
-        <div className="grid gap-4">
-          {EXAM_PREP_MODULES.map((mod) => (
-            <ModuleCard key={mod.id} mod={mod} onSelect={setSelectedModuleId} />
-          ))}
-        </div>
-      </div>
-    );
-  }
-
-  const moduleIcon = selectedModuleId === 'clinical-pharmacy-exam' ? Award : FlaskConical;
-  const ModuleIcon = moduleIcon;
-  const isClinicalPharmacy = selectedModuleId === 'clinical-pharmacy-exam';
+export function ModuleOverview({ mod }: { mod: ExamModuleSpec }) {
+  const isClinicalPharmacy = mod.id === 'clinical-pharmacy-exam';
+  const Icon = isClinicalPharmacy ? Award : Pill;
+  const title = isClinicalPharmacy ? 'Clinical Pharmacy Exam Overview' : 'Pharmacology Exam Overview';
 
   return (
-    <div className="space-y-5">
-      {/* Back button */}
-      <button
-        onClick={() => setSelectedModuleId(undefined)}
-        className="flex items-center gap-1.5 text-[12px] text-[var(--text-muted)] hover:text-[var(--primary)] transition-colors"
-      >
-        <span>&larr;</span> All modules
-      </button>
-
-      <div className="flex items-center gap-2">
-        <ModuleIcon size={18} className="text-[var(--primary)]" />
-        <h2 className="text-lg font-bold text-[var(--text)]">{selectedModule?.title ?? 'Exam Prep'}</h2>
+    <div className="border-2 border-[var(--primary)]/20 rounded-2xl bg-[var(--primary)]/5 overflow-hidden">
+      <div className="px-5 py-4 border-b border-[var(--border)]">
+        <div className="flex items-center gap-2 mb-1">
+          <Icon size={16} className="text-[var(--primary)]" />
+          <h3 className="text-sm font-bold text-[var(--text)]">{title}</h3>
+        </div>
+        <p className="text-[11px] text-[var(--text-muted)]">Standard format across all unit exams — 100 marks total</p>
       </div>
-      <p className="text-sm text-[var(--text-muted)]">
-        {selectedModule?.description}
-      </p>
-
-      {/* Overview — shown before unit exams */}
-      {isClinicalPharmacy && (
-        <div className="border-2 border-[var(--primary)]/20 rounded-2xl bg-[var(--primary)]/5 overflow-hidden">
-          <div className="px-5 py-4 border-b border-[var(--border)]">
-            <div className="flex items-center gap-2 mb-1">
-              <Award size={16} className="text-[var(--primary)]" />
-              <h3 className="text-sm font-bold text-[var(--text)]">Clinical Pharmacy Exam Overview</h3>
+      <div className="p-5 space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {STANDARD_EXAM_STRUCTURE.map((sec) => (
+            <div key={sec.letter} className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-3.5">
+              <div className="flex items-center justify-between mb-2">
+                <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold">
+                  {sec.letter}
+                </span>
+                <span className="text-lg font-bold text-[var(--primary)]">{sec.marks}<span className="text-[10px] font-normal text-[var(--text-muted)] ml-0.5">marks</span></span>
+              </div>
+              <div className="text-[13px] font-semibold text-[var(--text)]">{sec.name}</div>
+              <div className="text-[11px] text-[var(--text-muted)] mt-1">{sec.count} {sec.count === 1 ? 'question' : 'questions'}</div>
+              <div className="text-[10px] text-[var(--text-muted)] mt-1 italic">{sec.instruction}</div>
             </div>
-            <p className="text-[11px] text-[var(--text-muted)]">Standard format across all unit exams — 100 marks total</p>
+          ))}
+        </div>
+
+        <div className="flex flex-wrap gap-3 text-[11px] text-[var(--text-muted)]">
+          <div className="flex items-center gap-1.5">
+            <Target size={13} className="text-[var(--primary)]" />
+            <span><strong className="text-[var(--text)]">Total:</strong> 100 marks</span>
           </div>
-          <div className="p-5 space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {STANDARD_EXAM_STRUCTURE.map((sec) => (
-                <div key={sec.letter} className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-3.5">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold">
-                      {sec.letter}
-                    </span>
-                    <span className="text-lg font-bold text-[var(--primary)]">{sec.marks}<span className="text-[10px] font-normal text-[var(--text-muted)] ml-0.5">marks</span></span>
-                  </div>
-                  <div className="text-[13px] font-semibold text-[var(--text)]">{sec.name}</div>
-                  <div className="text-[11px] text-[var(--text-muted)] mt-1">{sec.count} {sec.count === 1 ? 'question' : 'questions'}</div>
-                  <div className="text-[10px] text-[var(--text-muted)] mt-1 italic">{sec.instruction}</div>
-                </div>
-              ))}
-            </div>
-
-            <div className="flex flex-wrap gap-3 text-[11px] text-[var(--text-muted)]">
-              <div className="flex items-center gap-1.5">
-                <Target size={13} className="text-[var(--primary)]" />
-                <span><strong className="text-[var(--text)]">Total:</strong> 100 marks</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <Clock size={13} className="text-[var(--primary)]" />
-                <span><strong className="text-[var(--text)]">Duration:</strong> 3 hours</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <BookOpen size={13} className="text-[var(--primary)]" />
-                <span><strong className="text-[var(--text)]">Units:</strong> {specs.length} subject areas below</span>
-              </div>
-            </div>
+          <div className="flex items-center gap-1.5">
+            <Clock size={13} className="text-[var(--primary)]" />
+            <span><strong className="text-[var(--text)]">Duration:</strong> 3 hours</span>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <BookOpen size={13} className="text-[var(--primary)]" />
+            <span><strong className="text-[var(--text)]">Units:</strong> {mod.units.length} subject areas below</span>
           </div>
         </div>
-      )}
-
-      {/* Pharmacology overview */}
-      {!isClinicalPharmacy && (
-        <div className="border-2 border-[var(--primary)]/20 rounded-2xl bg-[var(--primary)]/5 overflow-hidden">
-          <div className="px-5 py-4 border-b border-[var(--border)]">
-            <div className="flex items-center gap-2 mb-1">
-              <Pill size={16} className="text-[var(--primary)]" />
-              <h3 className="text-sm font-bold text-[var(--text)]">Pharmacology Exam Overview</h3>
-            </div>
-            <p className="text-[11px] text-[var(--text-muted)]">Standard format across all unit exams — 100 marks total</p>
-          </div>
-          <div className="p-5 space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {STANDARD_EXAM_STRUCTURE.map((sec) => (
-                <div key={sec.letter} className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-3.5">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold">
-                      {sec.letter}
-                    </span>
-                    <span className="text-lg font-bold text-[var(--primary)]">{sec.marks}<span className="text-[10px] font-normal text-[var(--text-muted)] ml-0.5">marks</span></span>
-                  </div>
-                  <div className="text-[13px] font-semibold text-[var(--text)]">{sec.name}</div>
-                  <div className="text-[11px] text-[var(--text-muted)] mt-1">{sec.count} {sec.count === 1 ? 'question' : 'questions'}</div>
-                  <div className="text-[10px] text-[var(--text-muted)] mt-1 italic">{sec.instruction}</div>
-                </div>
-              ))}
-            </div>
-
-            <div className="flex flex-wrap gap-3 text-[11px] text-[var(--text-muted)]">
-              <div className="flex items-center gap-1.5">
-                <Target size={13} className="text-[var(--primary)]" />
-                <span><strong className="text-[var(--text)]">Total:</strong> 100 marks</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <Clock size={13} className="text-[var(--primary)]" />
-                <span><strong className="text-[var(--text)]">Duration:</strong> 3 hours</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <BookOpen size={13} className="text-[var(--primary)]" />
-                <span><strong className="text-[var(--text)]">Units:</strong> {specs.length} subject areas below</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      <div className="space-y-4">
-        {specs.map((spec) => (
-          <ExamSubjectCard key={spec.id} spec={spec} />
-        ))}
       </div>
     </div>
   );

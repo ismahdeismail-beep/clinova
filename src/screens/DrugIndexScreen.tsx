@@ -10,7 +10,7 @@ import { DrugMonographView } from '../components/DrugMonographView';
 import { DrugIcon } from '../components/DrugIcon';
 import { getMonographCached, pinMonograph } from '../lib/getMonograph';
 import { pinDrugImages } from '../lib/localDb';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useParams, useNavigate } from 'react-router-dom';
 import { DrugMonographService, type DrugMonograph } from '../services/drugMonograph.service';
 import { monographToMarkdown } from '../lib/monographToMarkdown';
 import SavedMonographsPanel, { SaveMonographButton } from '../components/SavedMonographsPanel';
@@ -230,6 +230,8 @@ function DrugThumb({ m, size = 'md' }: { m: DrugMonograph; size?: 'sm' | 'md' | 
 
 export default function DrugIndexScreen() {
   const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
+  const { category: categoryParam, subclass: subclassParam } = useParams<{ category: string; subclass: string }>();
 
   // Navigation State
   const [activeTab, setActiveTab] = useState<'monograph' | 'library'>('monograph');
@@ -542,14 +544,16 @@ export default function DrugIndexScreen() {
     if (!searchQuery.trim()) return;
     setSelectedLetter(null);
     setSelectedCategory(null);
+    setSelectedSubclass(null);
     setSuggestions([]);
     saveRecentSearch(searchQuery.trim());
     setShowSearchDropdown(false);
+    navigate('/drugs');
     runSearch(searchQuery.trim());
   };
 
   const handleBackToCategories = () => {
-    setSelectedCategory(null);
+    navigate('/drugs');
     setSelectedLetter(null);
     setSelectedSubclass(null);
     setSearchQuery('');
@@ -558,22 +562,24 @@ export default function DrugIndexScreen() {
   };
 
   const handleCategoryClick = (category: string) => {
-    setSelectedCategory(category);
     setSelectedLetter(null);
     setSelectedSubclass(null);
     setSearchQuery('');  // ← clears the global search so it doesn't persist
     setSuggestions([]);
     closeView();
     setError(null);
+    navigate(`/drugs/class/${encodeURIComponent(category)}`);
   };
 
   const handleQuickDrugClick = (drugName: string) => {
     setSearchQuery(drugName);
     setSelectedLetter(null);
     setSelectedCategory(null);
+    setSelectedSubclass(null);
     setSuggestions([]);
     saveRecentSearch(drugName);
     setShowSearchDropdown(false);
+    navigate('/drugs');
     runSearch(drugName);
   };
 
@@ -586,6 +592,17 @@ export default function DrugIndexScreen() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Drill-down sync: /drugs/class/:category and /drugs/class/:category/sub/:subclass
+  useEffect(() => {
+    const cat = categoryParam ? decodeURIComponent(categoryParam) : null;
+    const sub = subclassParam ? decodeURIComponent(subclassParam) : null;
+    setSelectedCategory((prev) => (cat === prev ? prev : cat));
+    setSelectedSubclass((prev) => (sub === prev ? prev : sub));
+    setSelectedLetter(null);
+    if (cat && searchQuery) setSearchQuery('');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [categoryParam, subclassParam]);
 
   // Filtered view of the catalog
   const filteredCatalog = useMemo(() => {
@@ -619,6 +636,8 @@ export default function DrugIndexScreen() {
   }, [catalog, searchQuery, selectedCategory, selectedLetter, selectedSubclass]);
 
   const hasActiveFilter = !!(searchQuery.trim() || selectedCategory || selectedLetter || selectedSubclass);
+
+  const activeCatColors = selectedCategory ? (CATEGORY_COLORS[selectedCategory] || CATEGORY_COLORS.Immunology) : null;
 
   return (
     <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
@@ -973,7 +992,7 @@ export default function DrugIndexScreen() {
                     <ChevronRight size={14} />
                     <span
                       className={`${!selectedSubclass ? 'text-[var(--text)] font-bold' : 'hover:text-[var(--primary)] transition-colors cursor-pointer'}`}
-                      onClick={!selectedSubclass ? undefined : () => setSelectedSubclass(null)}
+                      onClick={!selectedSubclass ? undefined : () => navigate(`/drugs/class/${encodeURIComponent(selectedCategory)}`)}
                     >
                       {selectedCategory}
                     </span>
@@ -1091,8 +1110,8 @@ export default function DrugIndexScreen() {
                     </>
                     )}
                   </div>
-                ) : (
-                  /* ── Level 2: Drugs in Selected Category ── */
+                ) : !selectedSubclass ? (
+                  /* ── Level 2: Subclasses in Selected Category ── */
                   <div className="animate-in fade-in slide-in-from-right-4 duration-300 space-y-6">
                     <div className="flex items-center gap-3">
                       <button onClick={handleBackToCategories} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer">
@@ -1106,7 +1125,67 @@ export default function DrugIndexScreen() {
                           })()}
                           {selectedCategory}
                         </h2>
-                        <p className="text-xs text-[var(--text-muted)] mt-0.5">{filteredCatalog.length} monograph{filteredCatalog.length !== 1 ? 's' : ''} available</p>
+                        <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                          {catalog.filter((m) => getDrugCategory(m) === selectedCategory).length} monographs · choose a subclass
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                      {getSubclassesForCategory(selectedCategory as TherapeuticCategory).map((sub) => {
+                        const drugs = catalog.filter(
+                          (m) => getDrugCategory(m) === selectedCategory && getDrugSubclass(m, selectedCategory as TherapeuticCategory) === sub,
+                        );
+                        if (drugs.length === 0) return null;
+                        const catColors = activeCatColors || CATEGORY_COLORS.Immunology;
+                        const samples = drugs.slice(0, 3).map((m) => m.name || m.generic_name || '').filter(Boolean);
+                        return (
+                          <button
+                            key={sub}
+                            onClick={() => navigate(`/drugs/class/${encodeURIComponent(selectedCategory)}/sub/${encodeURIComponent(sub)}`)}
+                            className={`text-left bg-gradient-to-br ${catColors.card} border border-[var(--border)] rounded-2xl p-5 transition-all group ${catColors.hover}`}
+                          >
+                            <div className="flex items-center gap-3 mb-2">
+                              <div className="flex-1 min-w-0">
+                                <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors text-sm truncate">{sub}</h3>
+                                <p className={`text-xs font-medium ${catColors.text}`}>{drugs.length} monograph{drugs.length !== 1 ? 's' : ''}</p>
+                              </div>
+                              <ChevronRight size={16} className={`${catColors.text} ml-auto shrink-0 group-hover:translate-x-1 transition-all`} />
+                            </div>
+                            {samples.length > 0 && (
+                              <p className="text-xs text-[var(--text-muted)] truncate">
+                                e.g. {samples.join(', ')}
+                              </p>
+                            )}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ) : (
+                  /* ── Level 3: Drugs in Selected Subclass ── */
+                  <div className="animate-in fade-in slide-in-from-right-4 duration-300 space-y-6">
+                    <div className="flex items-center gap-3">
+                      <button onClick={() => navigate(`/drugs/class/${encodeURIComponent(selectedCategory)}`)} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer">
+                        <ChevronLeft size={18} className="text-[var(--text)]" />
+                      </button>
+                      <div>
+                        <h2 className="text-2xl font-bold text-[var(--text)] flex items-center gap-3">
+                          {(() => {
+                            const Sym = CATEGORY_SYMBOLS[selectedCategory] || Pill;
+                            return <Sym size={20} className="text-[var(--primary)]" />;
+                          })()}
+                          <span className="truncate">{selectedSubclass}</span>
+                        </h2>
+                        <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                          {filteredCatalog.length} monograph{filteredCatalog.length !== 1 ? 's' : ''} in{' '}
+                          <button
+                            onClick={() => navigate(`/drugs/class/${encodeURIComponent(selectedCategory)}`)}
+                            className="font-bold underline underline-offset-2 hover:text-[var(--primary)] transition-colors cursor-pointer"
+                          >
+                            {selectedCategory}
+                          </button>
+                        </p>
                       </div>
                     </div>
 
@@ -1120,40 +1199,6 @@ export default function DrugIndexScreen() {
                         placeholder="Search drugs within this class..."
                         className="w-full pl-10 pr-4 py-2.5 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-sm text-[var(--text)] outline-none focus:border-[var(--primary)] transition-colors"
                       />
-                    </div>
-
-                    {/* Subclass filter — derived from drugSubclass rules, counts never hardcoded */}
-                    <div className="flex flex-wrap items-center gap-1.5">
-                      <span className="text-[10px] font-bold text-[var(--text-muted)] uppercase tracking-wider mr-1">Subclass:</span>
-                      <button
-                        onClick={() => setSelectedSubclass(null)}
-                        className={`px-2.5 py-1 rounded-full text-xs font-bold transition-all cursor-pointer ${
-                          !selectedSubclass
-                            ? 'bg-[var(--primary)] text-[var(--primary-foreground)]'
-                            : 'bg-[var(--surface)] text-[var(--text-muted)] border border-[var(--border)] hover:border-[var(--primary)]'
-                        }`}
-                      >
-                        All
-                      </button>
-                      {getSubclassesForCategory(selectedCategory as TherapeuticCategory).map((sub) => {
-                        const count = catalog.filter(
-                          (m) => getDrugCategory(m) === selectedCategory && getDrugSubclass(m, selectedCategory as TherapeuticCategory) === sub,
-                        ).length;
-                        if (count === 0) return null;
-                        return (
-                          <button
-                            key={sub}
-                            onClick={() => setSelectedSubclass(selectedSubclass === sub ? null : sub)}
-                            className={`px-2.5 py-1 rounded-full text-xs font-bold transition-all cursor-pointer ${
-                              selectedSubclass === sub
-                                ? 'bg-[var(--primary)] text-[var(--primary-foreground)]'
-                                : 'bg-[var(--surface)] text-[var(--text-muted)] border border-[var(--border)] hover:border-[var(--primary)] hover:text-[var(--primary)]'
-                            }`}
-                          >
-                            {sub} · {count}
-                          </button>
-                        );
-                      })}
                     </div>
 
                     {/* Alpha filter */}

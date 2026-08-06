@@ -17,8 +17,10 @@ const ExamPrepScreen = React.lazy(() => import('./screens/ExamPrepScreen'));
 const CarePlanScreen = React.lazy(() => import('./screens/CarePlanScreen'));
 const OnlineLibraryScreen = React.lazy(() => import('./screens/OnlineLibraryScreen'));
 const SettingsScreen = React.lazy(() => import('./screens/SettingsScreen'));
+const AdminImageManagerScreen = React.lazy(() => import('./screens/AdminImageManagerScreen'));
 const LoginScreen = React.lazy(() => import('./screens/LoginScreen'));
 const LandingScreen = React.lazy(() => import('./screens/LandingScreen'));
+const ReadingScreen = React.lazy(() => import('./screens/ReadingScreen'));
 
 import { useAuth } from './contexts/AuthContext';
 import { useNotifications } from './contexts/NotificationContext';
@@ -342,7 +344,9 @@ function AppContent() {
               <Route path="/board-exam" element={<Navigate to="/knowledge/exam/board-exam" replace />} />
               <Route path="/board-exam/:setId" element={<Navigate to="/knowledge/exam/board-exam" replace />} />
   <Route path="/library" element={<OnlineLibraryScreen />} />
+  <Route path="/reading/:articleId" element={<ReadingScreen />} />
   <Route path="/settings" element={<SettingsScreen />} />
+  <Route path="/admin/images" element={<AdminImageManagerScreen />} />
   <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </React.Suspense>

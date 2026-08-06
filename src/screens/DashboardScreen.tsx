@@ -39,6 +39,7 @@ import DailySpotlight from '../components/DailySpotlight'
 import { SearchService, type UnifiedSearchResult } from '../services/search.service'
 import { useDebounce } from '../hooks/useDebounce'
 import { useContentStats, FALLBACK_DRUGS, FALLBACK_CASES } from '../hooks/useContentStats'
+import { DAILY_READINGS as DAILY_ARTICLES } from '../data/dailyReadings'
 
 const STUDY_TRACKS: Record<
   string,
@@ -193,51 +194,6 @@ const COMING_SOON_FEATURES = [
   },
 ]
 
-const DAILY_ARTICLES = [
-  {
-    title: 'Clinova: Your Complete Clinical Learning Companion',
-    summary: 'Explore disease monographs, care plans, exam prep, and clinical support — all in one platform designed for pharmacy and medicine students.',
-    category: 'Platform',
-    readTime: '2 min read',
-    badge: 'Welcome',
-  },
-  {
-    title: 'How to Use the Education Hub Effectively',
-    summary: 'Five modules — Exam (Board Exam & Exam Prep), Clinical Pharmacy & Therapeutics, Online Books, Clinical Cases, and Clinova Support. Navigate modules, track your progress, and use the curriculum graph to plan your study path.',
-    category: 'Guide',
-    readTime: '3 min read',
-    badge: 'Tips',
-  },
-  {
-    title: 'Understanding Drug Monographs',
-    summary: 'Learn how to read and use drug monographs for safe prescribing — from dosing and interactions to contraindications and therapeutic monitoring.',
-    category: 'Reference',
-    readTime: '4 min read',
-    badge: 'Essential',
-  },
-  {
-    title: 'Clinical Cases: Build Diagnostic Reasoning',
-    summary: 'Work through real-world clinical scenarios across multiple therapeutic areas. Build diagnostic reasoning and treatment planning skills with guided feedback.',
-    category: 'Practice',
-    readTime: '5 min read',
-    badge: 'Featured',
-  },
-  {
-    title: 'Nursing Care Plans: NANDA-NIC-NOC Standards',
-    summary: "An overview of the standardized nursing language system powering Clinova's Care Plan module. Includes 19 specialties and 92 evidence-based care plans.",
-    category: 'Nursing',
-    readTime: '5 min read',
-    badge: 'New',
-  },
-  {
-    title: 'Renal Dose Adjustments: A Quick Reference',
-    summary: 'CrCl-based dosing pearls for the most commonly renally-cleared medications. Includes aminoglycosides, DOACs, antifungals, and antimicrobials.',
-    category: 'Reference',
-    readTime: '3 min read',
-    badge: 'High-Yield',
-  },
-]
-
 const RESULT_ICONS: Record<string, React.ReactNode> = {
   drug: <Pill size={14} className="text-blue-500" />,
   disease: <Activity size={14} className="text-rose-500" />,
@@ -331,6 +287,7 @@ export default function DashboardScreen() {
   }
 
   const currentArticle = DAILY_ARTICLES[currentArticleIdx]
+  const ArticleIcon = currentArticle.icon
 
   // Auto-swipe Today's Reading every 8 seconds
   useEffect(() => {
@@ -512,33 +469,37 @@ export default function DashboardScreen() {
       <DailySpotlight />
 
       {/* ── Featured Article ── */}
-      <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] shadow-sm overflow-hidden">
-        <div className="p-4 sm:p-5 border-b border-[var(--border)] flex items-center justify-between">
+      <div className={`rounded-xl border ${currentArticle.theme.border} bg-[var(--surface)] shadow-sm overflow-hidden`}>
+        <div className={`p-4 sm:p-5 border-b ${currentArticle.theme.border} bg-gradient-to-r ${currentArticle.theme.chip} flex items-center justify-between`}>
           <h3 className="font-bold text-sm text-[var(--text)] flex items-center gap-2">
-            <Newspaper size={15} className="text-[var(--primary)]" />
+            <span className={`w-7 h-7 rounded-lg bg-gradient-to-br ${currentArticle.theme.gradient} flex items-center justify-center shadow-sm`}>
+              <ArticleIcon size={14} className="text-white" />
+            </span>
             Today's Reading
           </h3>
           <div className="flex items-center gap-1.5">
             <button
               onClick={() => setCurrentArticleIdx(prev => (prev - 1 + DAILY_ARTICLES.length) % DAILY_ARTICLES.length)}
               className="p-1 rounded-lg hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors cursor-pointer"
+              aria-label="Previous reading"
             >
               <ChevronLeft size={16} />
             </button>
             <button
               onClick={() => setCurrentArticleIdx(prev => (prev + 1) % DAILY_ARTICLES.length)}
               className="p-1 rounded-lg hover:bg-[var(--surface-dim)] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors cursor-pointer"
+              aria-label="Next reading"
             >
               <ChevronRight size={16} />
             </button>
           </div>
         </div>
         <div className="p-4 sm:p-5">
-          <div className="flex items-center gap-2 mb-2">
-            <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] uppercase tracking-wider">
+          <div className="flex items-center gap-2 mb-2 flex-wrap">
+            <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${currentArticle.theme.chip} uppercase tracking-wider`}>
               {currentArticle.badge}
             </span>
-            <span className="text-[10px] text-[var(--text-muted)] font-medium">{currentArticle.category}</span>
+            <span className={`text-[10px] font-bold ${currentArticle.theme.text}`}>{currentArticle.category}</span>
             <span className="text-[10px] text-[var(--text-muted)]">·</span>
             <span className="text-[10px] text-[var(--text-muted)] flex items-center gap-1">
               <Clock size={10} />
@@ -548,19 +509,19 @@ export default function DashboardScreen() {
           <h4 className="font-bold text-[var(--text)] text-sm sm:text-base mb-1.5">{currentArticle.title}</h4>
            <p className="text-xs sm:text-sm text-[var(--text-muted)] leading-relaxed mb-3">{currentArticle.summary}</p>
            <Link
-             to="/library"
-             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold hover:opacity-90 transition-opacity"
+             to={`/reading/${currentArticle.id}`}
+             className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r ${currentArticle.theme.button} text-white text-xs font-bold hover:opacity-90 transition-opacity shadow-sm`}
            >
              Read More <ArrowRight size={12} />
            </Link>
          </div>
          {/* Auto-swipe indicator */}
-         <div className="flex justify-center gap-1.5 mt-3">
+         <div className="flex justify-center gap-1.5 mt-3 pb-4">
            {DAILY_ARTICLES.map((_, idx) => (
              <button
                key={idx}
                onClick={() => setCurrentArticleIdx(idx)}
-               className={`w-1.5 h-1.5 rounded-full transition-all cursor-pointer ${idx === currentArticleIdx ? 'bg-[var(--primary)] w-4' : 'bg-[var(--border)]'}`}
+               className={`w-1.5 h-1.5 rounded-full transition-all cursor-pointer ${idx === currentArticleIdx ? `${currentArticle.theme.dot} w-4` : 'bg-[var(--border)]'}`}
              />
            ))}
          </div>

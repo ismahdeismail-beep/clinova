@@ -7,6 +7,7 @@ import {
   getCachedDrugImagesByGeneric,
   type CachedDrugImage,
 } from '../lib/localDb';
+import { DrugIcon } from './DrugIcon';
 
 interface DrugImage {
   id: string;
@@ -51,7 +52,13 @@ export function MedicineImageGallery({ drugId, genericName, dosageForms }: Medic
   const [selectedImage, setSelectedImage] = useState<DrugImage | null>(null);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<string | null>(null);
+  const [failedIds, setFailedIds] = useState<Set<string>>(new Set());
   const blobUrlsRef = useRef<string[]>([]);
+
+  // Reset broken-image markers whenever a new image set arrives.
+  useEffect(() => {
+    setFailedIds(new Set());
+  }, [images]);
 
   useEffect(() => {
     return () => {
@@ -189,7 +196,10 @@ export function MedicineImageGallery({ drugId, genericName, dosageForms }: Medic
   if (images.length === 0) {
     return (
       <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-8 text-center">
-        <ImageOff className="w-12 h-12 text-[var(--text-muted)] mx-auto mb-3" />
+        <div className="flex justify-center mb-3">
+          <DrugIcon name={genericName || 'Drug'} size="lg" />
+        </div>
+        <ImageOff className="w-10 h-10 text-[var(--text-muted)] mx-auto mb-2" />
         <h3 className="text-lg font-semibold text-[var(--text)] mb-1">No Images Available</h3>
         <p className="text-sm text-[var(--text-muted)]">
           No licensed images found for {genericName}. Administrators can upload verified images.
@@ -248,12 +258,13 @@ export function MedicineImageGallery({ drugId, genericName, dosageForms }: Medic
             onClick={() => { setSelectedImage(img); setLightboxOpen(true); }}
             className="group relative aspect-square bg-[var(--surface)] border border-[var(--border)] rounded-xl overflow-hidden hover:border-[var(--primary)] transition-all cursor-pointer"
           >
-            {(img.blobUrl || img.thumbnail_url) ? (
+            {(img.blobUrl || img.thumbnail_url) && !failedIds.has(img.id) ? (
               <img
                 src={img.blobUrl || img.thumbnail_url}
                 alt={`${img.generic_name} ${img.dosage_form}`}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 loading="lazy"
+                onError={() => setFailedIds(prev => new Set(prev).add(img.id))}
               />
             ) : (
               <div className="w-full h-full flex items-center justify-center bg-[var(--surface-dim)]">
@@ -284,6 +295,7 @@ export function MedicineImageGallery({ drugId, genericName, dosageForms }: Medic
             src={selectedImage.fullBlobUrl || selectedImage.image_url || selectedImage.large_url || selectedImage.thumbnail_url || selectedImage.blobUrl}
             alt={`${selectedImage.generic_name} ${selectedImage.dosage_form}`}
             className="max-w-full max-h-[90vh] object-contain rounded-xl"
+            onError={(e) => { e.currentTarget.style.display = 'none'; }}
           />
           <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-sm rounded-xl p-4 text-white">
             <div className="flex items-center justify-between">

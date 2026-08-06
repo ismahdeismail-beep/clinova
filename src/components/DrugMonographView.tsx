@@ -4,6 +4,7 @@ import { BookOpen, ArrowRight, Download, Pill, Database, Sparkles, ShieldCheck }
 import { getDrugClassConfig } from '../data/drugClassColors';
 import { MedicineImageGallery } from './MedicineImageGallery';
 import { getDrugThumbnail } from '../services/drugMonograph.service';
+import { DrugIcon } from './DrugIcon';
 
 interface DrugMonographViewProps {
   content: string;
@@ -64,11 +65,7 @@ export function DrugMonographView({
         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
           <div className="flex items-start gap-4 min-w-0">
             {thumb ? (
-              <img
-                src={thumb}
-                alt=""
-                className="w-14 h-14 sm:w-16 sm:h-16 shrink-0 rounded-2xl object-cover bg-white border-2 border-[var(--border)] shadow-md"
-              />
+              <DrugIcon name={drugName} thumbnailUrl={thumb} drugClass={drugClass} size="lg" />
             ) : (
               <div className="w-14 h-14 sm:w-16 sm:h-16 shrink-0 rounded-2xl bg-[var(--primary-container)] flex items-center justify-center text-[var(--primary)] shadow-md">
                 <Pill size={28} />

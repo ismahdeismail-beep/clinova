@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import {
   Bookmark, BookmarkCheck, Search, Trash2, Loader2,
-  Pill, BookOpen, X, Tag, ChevronDown, ExternalLink, Heart,
+  BookOpen, X, Tag, ChevronDown, ExternalLink, Heart,
   ArrowUpDown, Clock, Database,
 } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { DrugMonographService, type DrugMonograph, type UserMonograph } from '../services/drugMonograph.service';
 import { getDrugClassConfig } from '../data/drugClassColors';
+import { DrugIcon } from './DrugIcon';
 
 interface SavedMonographsPanelProps {
   onNavigateToDrug?: (name: string) => void;
@@ -163,8 +164,13 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
             >
               <div className="flex items-center justify-between p-3">
                 <div className="flex items-center gap-3 flex-1 min-w-0">
-                  <div className="w-8 h-8 rounded-lg bg-[var(--primary-container)] flex items-center justify-center text-[var(--primary)] shrink-0">
-                    <Pill size={14} />
+                  <div className="shrink-0">
+                    <DrugIcon
+                      name={item.monograph?.name || item.monograph?.generic_name || 'Drug'}
+                      thumbnailUrl={item.monograph?.thumbnail_url}
+                      drugClass={item.monograph?.drug_class_name || item.monograph?.drug_class}
+                      size="sm"
+                    />
                   </div>
                   <div className="min-w-0 flex-1">
                     <button

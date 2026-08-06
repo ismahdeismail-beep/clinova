@@ -7,6 +7,7 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 import { DrugMonographView } from '../components/DrugMonographView';
+import { DrugIcon } from '../components/DrugIcon';
 import { getMonographCached, pinMonograph } from '../lib/getMonograph';
 import { pinDrugImages } from '../lib/localDb';
 import { useSearchParams } from 'react-router-dom';
@@ -213,25 +214,17 @@ function LikeButton({ monographId }: { monographId: string }) {
   );
 }
 
-// 3D-structure icon for drug cards — uses the gallery image (PubChem/PDB 3D
-// renders are preferred by the service) with a class-tinted fallback tile.
-function DrugThumb({ m, size = 'md' }: { m: DrugMonograph; size?: 'sm' | 'md' }) {
-  const cc = getDrugClassConfig(m.drug_class_name || m.drug_class)
-  const dim = size === 'sm' ? 'w-10 h-10' : 'w-12 h-12'
-  if (m.thumbnail_url) {
-    return (
-      <img
-        src={m.thumbnail_url}
-        alt=""
-        loading="lazy"
-        className={`${dim} rounded-xl object-cover bg-white shrink-0 border border-[var(--border)] shadow-sm`}
-      />
-    )
-  }
+// Drug icon for cards — real gallery image when available (PubChem/PDB 3D
+// renders are preferred), otherwise a deterministic class-colored monogram
+// tile so every drug in the index shows a distinct icon.
+function DrugThumb({ m, size = 'md' }: { m: DrugMonograph; size?: 'sm' | 'md' | 'lg' }) {
   return (
-    <div className={`${dim} rounded-xl bg-gradient-to-br ${cc.gradient} flex items-center justify-center shrink-0 border border-[var(--border)]`}>
-      <Pill size={size === 'sm' ? 15 : 19} className="text-[var(--text-muted)]" />
-    </div>
+    <DrugIcon
+      name={m.name || m.generic_name || 'Drug'}
+      thumbnailUrl={m.thumbnail_url}
+      drugClass={m.drug_class_name || m.drug_class}
+      size={size}
+    />
   )
 }
 
@@ -699,6 +692,7 @@ export default function DrugIndexScreen() {
                 content={monograph}
                 drugName={selectedDrugName || searchQuery || 'Medication Monograph'}
                 genericName={catalog.find(m => m.name.toLowerCase() === (selectedDrugName || searchQuery || '').toLowerCase())?.generic_name}
+                drugClass={catalog.find(m => m.name.toLowerCase() === (selectedDrugName || searchQuery || '').toLowerCase())?.drug_class_name || catalog.find(m => m.name.toLowerCase() === (selectedDrugName || searchQuery || '').toLowerCase())?.drug_class}
                 drugId={currentMonographId || undefined}
                 isSeeded={!!currentMonographId}
                 onBack={() => closeView()}

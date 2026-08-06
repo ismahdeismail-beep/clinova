@@ -152,7 +152,7 @@ const QUICK_LINKS = [
     to: '/drugs',
     icon: Pill,
     label: 'Drug Index',
-    desc: '1,072 monographs — subclass browsing, 100% image coverage, dosing & interactions',
+    desc: 'Comprehensive monographs with dosing & interactions',
     gradient: 'from-rose-500 to-rose-600',
   },
   {

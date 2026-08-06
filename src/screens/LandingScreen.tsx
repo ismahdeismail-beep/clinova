@@ -4,7 +4,7 @@ import {
   ArrowRight, Sparkles, CheckCircle2, Bot, BookOpen, GraduationCap,
   FileText, Shield, Brain, Stethoscope, Library, Target,
   ChevronRight, Star, Users, BarChart3, Layers, Pill,
-  ClipboardCheck, Image, Download,
+  ClipboardCheck, Image,
 } from 'lucide-react'
 import ClinovaLogo from '../components/ClinovaLogo'
 import { useContentStats, FALLBACK_DRUGS, FALLBACK_CASES } from '../hooks/useContentStats'
@@ -65,22 +65,15 @@ export default function LandingScreen() {
       icon: Shield,
       title: 'Drug Index',
       description:
-        '1,072 drug monographs with dosing, interactions, contraindications, and therapeutic monitoring. Browse by therapeutic category, pharmacology subclass, and search — with live counts for every level.',
+        'Comprehensive drug monographs with dosing, interactions, contraindications, adverse effects, and therapeutic monitoring parameters.',
       gradient: 'from-cyan-500 to-indigo-600',
     },
     {
       icon: Image,
       title: 'Drug Visuals',
       description:
-        '1,072 monographs with images — 3D structures, 2D skeletons, product photos, and Kenyan brand labels — embedded for visual identification and safe prescribing (100% coverage).',
+        'Thousands of medicine images — tablets, injections, and dosage forms — embedded in drug monographs for visual identification and safe prescribing.',
       gradient: 'from-rose-500 to-pink-600',
-    },
-    {
-      icon: Download,
-      title: 'Install Clinova',
-      description:
-        'Install as a PWA — works offline, auto-updates in the background, and launches like a native app. No app store needed.',
-      gradient: 'from-emerald-500 to-green-600',
     },
   ]
 

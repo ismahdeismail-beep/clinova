@@ -87,7 +87,7 @@ function TopNavigation({ onMenuClick }: { onMenuClick: () => void }) {
           <Link
             to="/assistant"
             className="flex items-center gap-1.5 px-3 py-1.5 bg-[var(--primary)]/10 hover:bg-[var(--primary)]/20 text-[var(--primary)] rounded-full text-xs font-bold transition-all cursor-pointer"
-            title="Clinova Support AI"
+            title="Clinova Support"
           >
             <Bot size={16} />
             <span className="hidden sm:inline">Clinova Support</span>
@@ -284,7 +284,7 @@ function AppContent() {
             <ClinovaLogo size={64} variant="colored" />
           </div>
           <h2 className="text-xl font-bold text-[var(--text)] tracking-tight">CLINOVA</h2>
-          <p className="text-xs text-[var(--text-muted)] font-medium">Initializing Clinical Intelligence OS...</p>
+          <p className="text-xs text-[var(--text-muted)] font-medium">Initializing...</p>
         </div>
       </div>
     );

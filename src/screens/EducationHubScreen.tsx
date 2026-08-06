@@ -1165,7 +1165,7 @@ function LearningWorkspace({ unit, module, onBack }: { unit: EducationModuleUnit
             Active Sub-folder: <span className="text-[var(--primary)] underline">{currentFolderName}</span>
           </span>
           <span className="text-[10px] text-[var(--text-muted)]">
-            All AI tools and notes will sync specifically within this subfolder context.
+            All notes and tools will sync specifically within this subfolder context.
           </span>
         </div>
 
@@ -1721,7 +1721,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
                   ) : (
                     <>
                       <Sparkles size={13} />
-                      Regenerate with AI
+                      Regenerate
                     </>
                   )}
                 </button>
@@ -1733,7 +1733,7 @@ function WorkspaceOverview({ unit, module, currentFolderId, currentFolderName, u
                 </div>
                 <h4 className="text-base font-bold text-[var(--text)]">Let the Magic Happen!</h4>
                 <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-                  Write down your class summaries in the scratchpad. Clinova AI will build a personalized clinical guide summarizing:
+                  Write down your class summaries in the scratchpad. A personalized clinical guide will be built summarizing:
                 </p>
                 <div className="text-left text-xs text-[var(--text-muted)] space-y-2 bg-[var(--surface-dim)]/50 p-4 rounded-xl border border-[var(--border)]/40">
                   <div className="flex gap-2">&bull; <strong>Core Pharmacology & receptor pathways</strong></div>
@@ -1904,7 +1904,7 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
         {isTutorThinking && (
           <div className="flex justify-start">
             <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl rounded-bl-none p-4 flex gap-1.5 items-center shadow-xs">
-              <span className="text-xs text-[var(--text-muted)] mr-1">AI compiling clinical answer</span>
+              <span className="text-xs text-[var(--text-muted)] mr-1">Compiling clinical answer</span>
               <div className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] animate-bounce" style={{ animationDelay: '0ms' }} />
               <div className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] animate-bounce" style={{ animationDelay: '150ms' }} />
               <div className="w-1.5 h-1.5 rounded-full bg-[var(--primary)] animate-bounce" style={{ animationDelay: '300ms' }} />
@@ -1929,7 +1929,7 @@ function WorkspaceTutor({ unit, module, currentFolderId, currentFolderName, user
             disabled={!tutorMessage.trim() || isTutorThinking}
             className="px-5 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-xl hover:opacity-95 disabled:opacity-50 transition-all flex items-center justify-center shrink-0 cursor-pointer font-bold text-sm shadow-xs"
           >
-            Ask AI
+            Ask
           </button>
         </form>
       </div>
@@ -2812,7 +2812,7 @@ function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName,
         </div>
         <h3 className="text-base font-bold text-[var(--text)]">Analyzing Course Materials...</h3>
         <p className="text-xs text-[var(--text-muted)] mt-1 max-w-sm">
-          Clinova AI is extracting high-yield questions, core guidelines, and target dosing facts to prepare your custom memorization deck.
+          Extracting high-yield questions, core guidelines, and target dosing facts to prepare your custom memorization deck.
         </p>
       </div>
     );
@@ -2909,7 +2909,7 @@ function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName,
                 onClick={handleGenerateCards}
                 className="text-xs text-[var(--primary)] font-bold hover:underline flex items-center gap-1 justify-center mx-auto cursor-pointer"
               >
-                <Sparkles size={12} /> Regenerate revision cards with AI
+                <Sparkles size={12} /> Regenerate revision cards
               </button>
             </div>
             {/* Download buttons */}
@@ -2953,13 +2953,13 @@ function WorkspaceFlashcards({ unit, module, currentFolderId, currentFolderName,
           </div>
           <h3 className="text-xl font-bold text-[var(--text)] mb-2">Spaced Repetition Active Recall Cards</h3>
           <p className="text-sm text-[var(--text-muted)] max-w-sm mb-4 leading-relaxed">
-            Memorize dosage formulas, pharmacological mechanism chains, or adverse profiles with custom revision flashcards built by AI.
+            Memorize dosage formulas, pharmacological mechanism chains, or adverse profiles with custom revision flashcards.
           </p>
           <button 
             onClick={handleGenerateCards}
             className="px-6 py-3 bg-gradient-to-r from-purple-600 to-[var(--primary)] text-white font-bold rounded-xl flex items-center gap-2 shadow-md hover:opacity-95 transition-all cursor-pointer"
           >
-            <Sparkles size={16} /> Generate Revision Cards with AI
+            <Sparkles size={16} /> Generate Revision Cards
           </button>
         </div>
       )}

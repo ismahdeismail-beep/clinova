@@ -657,7 +657,7 @@ export default function DrugIndexScreen() {
               <div>
                 <h3 className="text-lg font-semibold text-[var(--text)]">Loading Formulary Profile</h3>
                 <p className="text-[var(--text-muted)] text-sm max-w-sm mt-1">
-                  Checking Kenya Drug Index database for monograph, then querying AI if needed...
+                        Checking Kenya Drug Index database for monograph...
                 </p>
               </div>
             </div>
@@ -683,7 +683,7 @@ export default function DrugIndexScreen() {
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 bg-amber-500/10 border border-amber-500/30 rounded-xl px-4 py-3">
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-bold text-amber-700 dark:text-amber-400">Limited formulary data for {selectedDrugName}</p>
-                    <p className="text-xs text-[var(--text-muted)] mt-0.5">This entry has no clinical details yet. Generate a complete, drug-specific monograph with AI.</p>
+                    <p className="text-xs text-[var(--text-muted)] mt-0.5">This entry has no clinical details yet. Generate a complete, drug-specific monograph.</p>
                   </div>
                   <button
                     onClick={() => generateWithAi(selectedDrugName)}
@@ -691,7 +691,7 @@ export default function DrugIndexScreen() {
                     className="shrink-0 px-4 py-2 bg-gradient-to-r from-violet-600 to-indigo-600 text-white text-xs font-bold rounded-lg hover:opacity-90 transition-opacity flex items-center gap-1.5 cursor-pointer disabled:opacity-60"
                   >
                     <Sparkles size={14} />
-                    Generate with AI
+                        Generate monograph
                   </button>
                 </div>
               )}
@@ -772,7 +772,7 @@ export default function DrugIndexScreen() {
                     </div>
                   ) : (
                     <div className="absolute top-full left-0 right-0 mt-1 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-lg z-10 p-3 animate-in fade-in slide-in-from-top-1 duration-150">
-                      <p className="text-xs text-[var(--text-muted)]">No matches in the index yet — press <span className="font-bold text-[var(--text)]">Search</span> to generate with AI.</p>
+                      <p className="text-xs text-[var(--text-muted)]">No matches in the index yet — press <span className="font-bold text-[var(--text)]">Search</span> to generate a monograph.</p>
                     </div>
                   )
                 ) : recentSearches.length > 0 ? (
@@ -865,7 +865,7 @@ export default function DrugIndexScreen() {
                       </div>
                       <div>
                         <h3 className="text-lg font-semibold text-[var(--text)]">Generating Monograph</h3>
-                        <p className="text-[var(--text-muted)] text-sm max-w-sm mt-1">Querying AI for a complete drug-specific monograph...</p>
+                        <p className="text-[var(--text-muted)] text-sm max-w-sm mt-1">Generating a complete drug-specific monograph...</p>
                       </div>
                     </div>
                   ) : error ? (
@@ -892,7 +892,7 @@ export default function DrugIndexScreen() {
                       <div>
                         <h3 className="text-lg font-semibold text-[var(--text)] mb-1">No exact match in the Kenya Drug Index</h3>
                         <p className="text-[var(--text-muted)] text-sm max-w-md">
-                          “{resultsQuery}” isn't in the index. Generate a complete AI monograph instead.
+                          “{resultsQuery}” isn't in the index. Generate a complete monograph instead.
                         </p>
                       </div>
                       <button
@@ -901,7 +901,7 @@ export default function DrugIndexScreen() {
                         className="px-5 py-2.5 bg-gradient-to-r from-violet-600 to-indigo-600 text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-all flex items-center gap-2 cursor-pointer shadow-md"
                       >
                         <Sparkles size={16} />
-                        Generate with AI
+                    Generate monograph
                       </button>
                     </div>
                   ) : (
@@ -957,7 +957,7 @@ export default function DrugIndexScreen() {
                           className="px-5 py-2.5 bg-gradient-to-r from-violet-600 to-indigo-600 text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-all flex items-center gap-2 cursor-pointer shadow-md disabled:opacity-60"
                         >
                           {isLoading ? <Loader2 size={16} className="animate-spin" /> : <Sparkles size={16} />}
-                          {isLoading ? 'Generating...' : 'Generate full monograph with AI'}
+                          {isLoading ? 'Generating...' : 'Generate full monograph'}
                         </button>
                         <p className="text-xs text-[var(--text-muted)]">No good match? Get a complete, drug-specific monograph.</p>
                       </div>
@@ -1002,7 +1002,7 @@ export default function DrugIndexScreen() {
                     <div>
                       <h3 className="text-lg font-semibold text-[var(--text)]">Loading Formulary Profile</h3>
                       <p className="text-[var(--text-muted)] text-sm max-w-sm mt-1">
-                        Checking Kenya Drug Index database for monograph, then querying AI if needed...
+                  Checking Kenya Drug Index database for monograph...
                       </p>
                     </div>
                   </div>
@@ -1211,7 +1211,7 @@ export default function DrugIndexScreen() {
                           className="px-5 py-2.5 bg-gradient-to-r from-violet-600 to-indigo-600 text-white text-sm font-semibold rounded-xl hover:opacity-90 transition-all flex items-center gap-2 cursor-pointer shadow-md"
                         >
                           <Sparkles size={16} />
-                          Search with AI
+                          Search
                         </button>
                       </div>
                     ) : (

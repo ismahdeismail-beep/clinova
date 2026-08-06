@@ -58,7 +58,7 @@ export default function LandingScreen() {
       icon: Bot,
       title: 'Clinova Support',
       description:
-        'AI-powered clinical decision support — audit regimens, answer drug questions, and suggest evidence-based optimisations from trusted references.',
+        'Clinical decision support — audit regimens, answer drug questions, and suggest evidence-based optimisations from trusted references.',
       gradient: 'from-amber-500 to-orange-600',
     },
     {
@@ -166,7 +166,7 @@ export default function LandingScreen() {
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl text-[var(--text-muted)] max-w-2xl font-normal leading-relaxed mb-10">
             Master clinical pharmacy with integrated case-based learning, structured nursing care plans,
-            mock exam papers, disease monographs, and AI-powered clinical support — all in one platform.
+            mock exam papers, disease monographs, and clinical support — all in one platform.
           </p>
 
           {/* CTA */}

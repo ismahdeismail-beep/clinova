@@ -791,7 +791,7 @@ export default function ClinovaSupportScreen() {
           console.warn('[ClinovaSupport] Streaming returned empty, retrying with buffered endpoint');
           setMessages(prev => prev.map(m => m.id === thinkingMsgId ? {
             ...m,
-            content: 'Retrying with alternative AI model...'
+            content: 'Retrying with alternative model...'
           } : m));
           const savedData2 = localStorage.getItem('clinova_pharma_review_form');
           const parsed2 = savedData2 ? JSON.parse(savedData2) : {};

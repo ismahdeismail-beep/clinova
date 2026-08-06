@@ -120,7 +120,7 @@ export function InstallPWA() {
             exit={{ scale: 0, opacity: 0, y: 50 }}
             onClick={handleFloatingClick}
             className="fixed bottom-6 right-6 z-40 bg-[var(--primary)] text-[var(--primary-foreground)] p-3.5 rounded-full shadow-2xl hover:scale-105 transition-transform flex items-center justify-center border border-white/10 group cursor-pointer"
-            title="Install Clinova OS App"
+            title="Install Clinova App"
           >
             <Download className="w-5 h-5 group-hover:animate-bounce" />
             <span className="max-w-0 overflow-hidden group-hover:max-w-xs group-hover:ml-2 transition-all duration-300 font-medium text-sm whitespace-nowrap">
@@ -155,7 +155,7 @@ export function InstallPWA() {
                   <div className="absolute inset-0 bg-[var(--primary)] rounded-2xl opacity-35 blur-xl group-hover:opacity-50 transition-opacity"></div>
                   <img
                     src="/clinova_logo.jpg"
-                    alt="Clinova OS Logo"
+                    alt="Clinova Logo"
                     referrerPolicy="no-referrer"
                     className="relative w-16 h-16 rounded-2xl shadow-xl object-cover border border-white/20"
                   />
@@ -165,7 +165,7 @@ export function InstallPWA() {
                 </div>
 
                 <h3 className="text-lg font-bold tracking-tight text-[var(--text)]">
-                  Install Clinova OS
+                  Install Clinova
                 </h3>
                 <p className="text-xs text-[var(--text-muted)] mt-1 max-w-[240px]">
                   Add to your home screen for quick offline access to medical databases and drug indices.

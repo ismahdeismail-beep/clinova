@@ -398,7 +398,7 @@ export function PatientQuickSummary({
                 size={14}
                 className="text-[var(--primary)] animate-spin-slow"
               />
-              AI analyzing clinical priority...
+              Analyzing clinical priority...
             </div>
           ) : priority ? (
             <div

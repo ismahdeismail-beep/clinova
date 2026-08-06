@@ -132,7 +132,7 @@ export function DrugMonographView({
             }`}
           >
             {isSeeded ? <Database size={12} /> : <Sparkles size={12} />}
-            {isSeeded ? 'KDI Seeded' : 'AI-Generated'}
+            {isSeeded ? 'KDI Seeded' : 'Generated'}
           </span>
           <span className="text-[11px] text-[var(--text-muted)] font-mono">
             {isSeeded ? 'Kenya Drug Index · Clinova Monograph DB' : 'FDA / NLM Grounded'}

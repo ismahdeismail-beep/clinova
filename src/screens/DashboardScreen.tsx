@@ -117,7 +117,7 @@ const QUICK_LINKS = [
     to: '/knowledge',
     icon: BookOpen,
     label: 'Education Hub',
-    desc: 'Exam, therapeutics, books, cases & AI support',
+    desc: 'Exam, therapeutics, books, cases',
     gradient: 'from-emerald-500 to-emerald-600',
   },
   {
@@ -159,7 +159,7 @@ const QUICK_LINKS = [
     to: '/assistant',
     icon: Bot,
     label: 'Clinova Support',
-    desc: 'AI-powered regimen review & drug Q&A',
+    desc: 'Regimen review & drug Q&A',
     gradient: 'from-amber-500 to-amber-600',
   },
   {
@@ -196,7 +196,7 @@ const COMING_SOON_FEATURES = [
 const DAILY_ARTICLES = [
   {
     title: 'Clinova: Your Complete Clinical Learning Companion',
-    summary: 'Explore disease monographs, care plans, exam prep, and AI-powered clinical support — all in one platform designed for pharmacy and medicine students.',
+    summary: 'Explore disease monographs, care plans, exam prep, and clinical support — all in one platform designed for pharmacy and medicine students.',
     category: 'Platform',
     readTime: '2 min read',
     badge: 'Welcome',

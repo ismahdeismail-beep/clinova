@@ -29,9 +29,9 @@ export default defineConfig(() => {
           cleanupOutdatedCaches: true
         },
         manifest: {
-          name: 'Clinova OS',
+          name: 'Clinova',
           short_name: 'Clinova',
-          description: 'Clinical Intelligence System',
+          description: 'Clinical pharmacy learning platform',
           id: '/',
           start_url: '/',
           scope: '/',

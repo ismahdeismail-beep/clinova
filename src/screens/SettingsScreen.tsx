@@ -1,46 +1,21 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import {
   ArrowLeft,
-  Pill,
-  Search,
-  Sparkles,
-  X,
-  PlusCircle,
-  ChevronRight,
-  User,
-  Mail,
-  Shield,
-  Save,
-  CheckCircle2,
   Bell,
-  BellOff,
   BellRing,
+  ChevronDown,
   CheckCheck,
   LogOut,
+  Mail,
+  Shield,
 } from "lucide-react"
 import { useAuth } from "../contexts/AuthContext"
 import { useNotifications } from "../contexts/NotificationContext"
 
-const ALL_CLINICAL_SYSTEMS = [
-  "Cardiology",
-  "Nephrology",
-  "Gastrointestinal",
-  "Infectious Disease",
-  "Endocrinology",
-  "Neurology",
-  "Pulmonology",
-  "Pediatrics",
-  "Critical Care",
-  "Oncology",
-  "Toxicology & Poison Management",
-  "Psychiatry",
-  "Hematology",
-]
-
 export default function SettingsScreen() {
   const navigate = useNavigate()
-  const { userData, updatePreferences, logout } = useAuth()
+  const { userData, logout } = useAuth()
   const {
     notifications,
     unreadCount,
@@ -49,40 +24,13 @@ export default function SettingsScreen() {
     requestNotificationPermission,
   } = useNotifications()
 
-  const [saved, setSaved] = useState(false)
-  const [clinicalInterests, setClinicalInterests] = useState<string[]>(
-    userData?.clinicalInterests || ["Cardiology", "Nephrology"]
-  )
-  const [searchQuery, setSearchQuery] = useState("")
   const [pushEnabled, setPushEnabled] = useState(() => {
     if (!("Notification" in window)) return false
     return Notification.permission === "granted"
   })
   const [pushHint, setPushHint] = useState("")
   const [loggingOut, setLoggingOut] = useState(false)
-
-  // Re-sync local state when userData changes from external source (login, Firestore sync)
-  useEffect(() => {
-    if (userData?.clinicalInterests) {
-      setClinicalInterests(userData.clinicalInterests)
-    }
-  }, [userData?.clinicalInterests])
-
-  // Auto-save: propagate changes to Dashboard immediately when toggled
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      updatePreferences(clinicalInterests)
-      setSaved(true)
-      setTimeout(() => setSaved(false), 2000)
-    }, 300) // 300ms debounce for rapid toggling
-    return () => clearTimeout(timer)
-  }, [clinicalInterests]) // eslint-disable-line react-hooks/exhaustive-deps
-
-const handleSave = async () => {
-    await updatePreferences(clinicalInterests)
-    setSaved(true)
-    setTimeout(() => setSaved(false), 2500)
-  }
+  const [showNotifications, setShowNotifications] = useState(false)
 
   const handleTogglePush = async () => {
     if (!("Notification" in window)) {
@@ -111,7 +59,7 @@ const handleSave = async () => {
 
   return (
     <div className="flex-1 bg-[var(--bg)] min-h-screen overflow-y-auto">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-4 sm:space-y-6">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-6">
         {/* Header */}
         <div className="flex items-center gap-4">
           <button
@@ -125,22 +73,19 @@ const handleSave = async () => {
               Settings
             </h1>
             <p className="text-sm text-[var(--text-muted)] mt-1">
-              Manage your profile and clinical focus areas
+              Manage your profile and notifications
             </p>
           </div>
         </div>
 
-        {/* Profile Card */}
-        <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden">
-          <div className="p-6 border-b border-[var(--border)]">
-            <h2 className="font-bold text-[var(--text)] flex items-center gap-2">
-              <User size={18} className="text-[var(--primary)]" />
-              Profile
-            </h2>
-          </div>
-          <div className="p-6 space-y-5">
-            <div className="flex items-center gap-4">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-[var(--primary)] to-[var(--primary-hover)] text-[var(--primary-foreground)] flex items-center justify-center font-bold text-xl shadow-sm border-2 border-white shrink-0">
+        {/* ── Profile ── */}
+        <section>
+          <h2 className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)] px-1 mb-2">
+            Profile
+          </h2>
+          <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm divide-y divide-[var(--border)] overflow-hidden">
+            <div className="flex items-center gap-4 px-4 py-4 min-w-0">
+              <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-[var(--primary)] to-[var(--primary-hover)] text-[var(--primary-foreground)] flex items-center justify-center font-bold text-lg shadow-sm border-2 border-white shrink-0">
                 {userData?.name
                   ? userData.name
                       .split(" ")
@@ -149,152 +94,42 @@ const handleSave = async () => {
                       .substring(0, 2)
                   : "G"}
               </div>
-              <div>
-                <p className="text-lg font-bold text-[var(--text)]">{userData?.name || "Guest"}</p>
-                <p className="text-sm text-[var(--text-muted)] flex items-center gap-1.5 mt-0.5">
-                  <Mail size={13} />
-                  {userData?.email || "No email"}
+              <div className="min-w-0 flex-1">
+                <p className="text-base font-bold text-[var(--text)] truncate">
+                  {userData?.name || "Guest"}
+                </p>
+                <p className="text-sm text-[var(--text-muted)] flex items-center gap-1.5 mt-0.5 truncate">
+                  <Mail size={13} className="shrink-0" />
+                  <span className="truncate">{userData?.email || "No email"}</span>
                 </p>
                 <p className="text-xs text-[var(--text-muted)] flex items-center gap-1.5 mt-0.5 capitalize">
-                  <Shield size={13} />
+                  <Shield size={13} className="shrink-0" />
                   {userData?.role || "user"}
                 </p>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        
-        <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden">
-          <div className="p-6 border-b border-[var(--border)]">
-            <h2 className="font-bold text-[var(--text)] flex items-center gap-2">
-              <Pill size={18} className="text-[var(--primary)]" />
-              Clinical Focus Areas
-            </h2>
-          </div>
-          <div className="p-6 space-y-4">
-            <div className="relative">
-              <Search
-                size={16}
-                className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--text-muted)]"
-              />
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search or add custom focus area..."
-                className="w-full pl-10 pr-8 py-2.5 bg-[var(--bg)] border border-[var(--border)] focus:border-[var(--primary)] outline-none rounded-xl text-sm text-[var(--text)]"
-              />
-              {searchQuery && (
-                <button
-                  type="button"
-                  onClick={() => setSearchQuery("")}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)] hover:text-[var(--text)] p-0.5"
-                >
-                  <X size={14} />
-                </button>
-              )}
-            </div>
-
-            {searchQuery.trim() &&
-              !ALL_CLINICAL_SYSTEMS.some(
-                (s) => s.toLowerCase() === searchQuery.trim().toLowerCase()
-              ) &&
-              !clinicalInterests.some(
-                (t) => t.toLowerCase() === searchQuery.trim().toLowerCase()
-              ) && (
-                <button
-                  type="button"
-                  onClick={() => {
-                    const trimmed = searchQuery.trim()
-                    const formatted = trimmed.charAt(0).toUpperCase() + trimmed.slice(1)
-                    setClinicalInterests((prev) =>
-                      prev.includes(formatted) ? prev : [...prev, formatted]
-                    )
-                    setSearchQuery("")
-                  }}
-                  className="w-full text-left p-3 bg-[var(--primary-container)]/10 border border-dashed border-[var(--primary)]/30 rounded-xl text-sm font-semibold text-[var(--primary)] hover:border-[var(--primary)]/50 transition-all flex items-center justify-between group cursor-pointer"
-                >
-                  <span className="flex items-center gap-1.5">
-                    <PlusCircle size={16} />
-                    Add custom: &quot;{searchQuery.trim()}&quot;
-                  </span>
-                  <ChevronRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
-                </button>
-              )}
-
-            {clinicalInterests.length > 0 && (
-              <div className="flex flex-wrap gap-2 p-2 rounded-xl bg-[var(--bg)]/50 border border-[var(--border)]/40">
-                {Array.from(new Set(clinicalInterests)).map((topic) => (
-                  <span
-                    key={topic}
-                    className="inline-flex items-center gap-1 text-xs bg-[var(--primary-container)]/50 text-[var(--primary)] font-semibold px-2.5 py-1 rounded-lg border border-[var(--primary)]/10"
-                  >
-                    {topic}
-                    <button
-                      type="button"
-                      onClick={() =>
-                        setClinicalInterests((prev) => prev.filter((t) => t !== topic))
-                      }
-                      className="hover:bg-[var(--primary)]/20 p-0.5 rounded-full text-[var(--primary)] transition-colors cursor-pointer"
-                    >
-                      <X size={10} strokeWidth={3} />
-                    </button>
-                  </span>
-                ))}
-              </div>
-            )}
-
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 pt-1 max-h-64 overflow-y-auto pr-1">
-              {Array.from(new Set([...ALL_CLINICAL_SYSTEMS, ...clinicalInterests]))
-                .filter((system) => system.toLowerCase().includes(searchQuery.toLowerCase()))
-                .map((system) => {
-                  const isSelected = clinicalInterests.includes(system)
-                  return (
-                    <button
-                      key={system}
-                      type="button"
-                      onClick={() =>
-                        setClinicalInterests((prev) =>
-                          prev.includes(system)
-                            ? prev.filter((t) => t !== system)
-                            : [...prev, system]
-                        )
-                      }
-                      className={`px-3 py-2 rounded-xl border text-left text-sm font-medium transition-all cursor-pointer truncate ${
-                        isSelected
-                          ? "border-[var(--primary)] bg-[var(--primary-container)]/25 text-[var(--primary)] font-semibold"
-                          : "border-[var(--border)] bg-[var(--bg)] text-[var(--text-muted)] hover:border-[var(--primary)]/30"
-                      }`}
-                    >
-                      {isSelected ? "✓ " : ""}
-                      {system}
-                    </button>
-                  )
-                })}
-            </div>
-          </div>
-        </div>
-
-        {/* ── Notifications Section ── */}
-        <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden">
-          <div className="p-6 border-b border-[var(--border)]">
-            <h2 className="font-bold text-[var(--text)] flex items-center gap-2">
-              <Bell size={18} className="text-[var(--primary)]" />
-              Notifications
-            </h2>
-          </div>
-          <div className="divide-y divide-[var(--border)]">
-            {/* Push Notifications Toggle */}
-            <div className="p-5 flex items-center justify-between gap-4">
-              <div className="min-w-0">
-                <p className="text-sm font-semibold text-[var(--text)]">Push Notifications</p>
-                <p className="text-xs text-[var(--text-muted)] mt-0.5">
-                  Receive browser alerts for drug of the day and reminders
-                </p>
-                {pushHint && (
-                  <p className="text-xs text-amber-500 mt-1">{pushHint}</p>
-                )}
+        {/* ── Notifications ── */}
+        <section>
+          <h2 className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)] px-1 mb-2">
+            Notifications
+          </h2>
+          <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm divide-y divide-[var(--border)] overflow-hidden">
+            {/* Push Notifications */}
+            <div className="flex items-center justify-between gap-4 px-4 py-3.5 min-w-0">
+              <div className="flex items-center gap-3 min-w-0">
+                <span className="w-9 h-9 rounded-xl bg-[var(--primary-container)]/25 text-[var(--primary)] flex items-center justify-center shrink-0">
+                  <Bell size={18} />
+                </span>
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold text-[var(--text)]">Push Notifications</p>
+                  <p className="text-xs text-[var(--text-muted)] mt-0.5">
+                    Browser alerts for drug of the day and reminders
+                  </p>
+                  {pushHint && <p className="text-xs text-amber-500 mt-1">{pushHint}</p>}
+                </div>
               </div>
               <button
                 type="button"
@@ -311,104 +146,116 @@ const handleSave = async () => {
               </button>
             </div>
 
-            {/* Recent Notifications */}
-            <div className="p-5">
-              <div className="flex items-center justify-between mb-3">
-                <p className="text-sm font-semibold text-[var(--text)]">Recent Notifications</p>
-                {unreadCount > 0 && (
-                  <button
-                    type="button"
-                    onClick={markAllAsRead}
-                    className="text-xs font-semibold text-[var(--primary)] hover:underline flex items-center gap-1 cursor-pointer"
-                  >
-                    <CheckCheck size={14} />
-                    Mark all read
-                  </button>
-                )}
-              </div>
-              {notifications.length === 0 ? (
-                <p className="text-sm text-[var(--text-muted)] py-4 text-center">No notifications yet</p>
-              ) : (
-                <div className="space-y-2 max-h-72 overflow-y-auto pr-1">
-                  {notifications.slice(0, 10).map((n) => (
-                    <div
-                      key={n.id}
-                      onClick={() => !n.read && markAsRead(n.id)}
-                      className={`flex items-start gap-3 p-3 rounded-xl border transition-all cursor-pointer ${
-                        n.read
-                          ? "bg-[var(--bg)]/50 border-[var(--border)]/40 opacity-60"
-                          : "bg-[var(--primary)]/5 border-[var(--primary)]/15 hover:border-[var(--primary)]/30"
-                      }`}
-                    >
-                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 ${n.bg}`}>
-                        <BellRing size={14} className={n.color} />
-                      </div>
-                      <div className="min-w-0 flex-1">
-                        <div className="flex items-center gap-2">
-                          <p className="text-sm font-semibold text-[var(--text)] truncate">{n.title}</p>
-                          {!n.read && (
-                            <span className="w-2 h-2 rounded-full bg-[var(--primary)] shrink-0" />
-                          )}
+            {/* Recent Notifications (accordion) */}
+            <div className="px-4 py-3.5">
+              <button
+                type="button"
+                onClick={() => setShowNotifications((s) => !s)}
+                className="flex items-center justify-between w-full gap-3 cursor-pointer"
+              >
+                <div className="flex items-center gap-3 min-w-0">
+                  <span className="w-9 h-9 rounded-xl bg-[var(--primary-container)]/25 text-[var(--primary)] flex items-center justify-center shrink-0">
+                    <BellRing size={18} />
+                  </span>
+                  <p className="text-sm font-semibold text-[var(--text)]">Recent Notifications</p>
+                </div>
+                <div className="flex items-center gap-2 shrink-0">
+                  {unreadCount > 0 && (
+                    <span className="min-w-[1.25rem] h-5 px-1.5 rounded-full bg-[var(--primary)] text-[var(--primary-foreground)] text-[10px] font-bold flex items-center justify-center">
+                      {unreadCount}
+                    </span>
+                  )}
+                  <ChevronDown
+                    size={16}
+                    className={`text-[var(--text-muted)] transition-transform duration-200 ${
+                      showNotifications ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
+              </button>
+
+              {showNotifications && (
+                <div className="mt-3 pt-3 border-t border-[var(--border)]">
+                  <div className="flex items-center justify-between mb-3">
+                    <p className="text-xs text-[var(--text-muted)]">
+                      {notifications.length > 0
+                        ? `${notifications.length} notification${notifications.length === 1 ? "" : "s"}`
+                        : "No notifications yet"}
+                    </p>
+                    {unreadCount > 0 && (
+                      <button
+                        type="button"
+                        onClick={markAllAsRead}
+                        className="text-xs font-semibold text-[var(--primary)] hover:underline flex items-center gap-1 cursor-pointer"
+                      >
+                        <CheckCheck size={14} />
+                        Mark all read
+                      </button>
+                    )}
+                  </div>
+                  {notifications.length === 0 ? (
+                    <p className="text-sm text-[var(--text-muted)] py-4 text-center">
+                      No notifications yet
+                    </p>
+                  ) : (
+                    <div className="space-y-2 max-h-72 overflow-y-auto pr-1">
+                      {notifications.slice(0, 10).map((n) => (
+                        <div
+                          key={n.id}
+                          onClick={() => !n.read && markAsRead(n.id)}
+                          className={`flex items-start gap-3 p-3 rounded-xl border transition-all cursor-pointer ${
+                            n.read
+                              ? "bg-[var(--bg)]/50 border-[var(--border)]/40 opacity-60"
+                              : "bg-[var(--primary)]/5 border-[var(--primary)]/15 hover:border-[var(--primary)]/30"
+                          }`}
+                        >
+                          <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 ${n.bg}`}>
+                            <BellRing size={14} className={n.color} />
+                          </div>
+                          <div className="min-w-0 flex-1">
+                            <div className="flex items-center gap-2">
+                              <p className="text-sm font-semibold text-[var(--text)] truncate">{n.title}</p>
+                              {!n.read && (
+                                <span className="w-2 h-2 rounded-full bg-[var(--primary)] shrink-0" />
+                              )}
+                            </div>
+                            <p className="text-xs text-[var(--text-muted)] leading-relaxed mt-0.5 line-clamp-2">{n.message}</p>
+                            <p className="text-[10px] text-[var(--text-muted)] mt-1 font-medium">{n.time}</p>
+                          </div>
                         </div>
-                        <p className="text-xs text-[var(--text-muted)] leading-relaxed mt-0.5 line-clamp-2">{n.message}</p>
-                        <p className="text-[10px] text-[var(--text-muted)] mt-1 font-medium">{n.time}</p>
-                      </div>
+                      ))}
                     </div>
-                  ))}
+                  )}
                 </div>
               )}
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* ── Account Section ── */}
-        <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm overflow-hidden">
-          <div className="p-6 border-b border-[var(--border)]">
-            <h2 className="font-bold text-[var(--text)] flex items-center gap-2">
-              <Shield size={18} className="text-[var(--primary)]" />
-              Account
-            </h2>
-          </div>
-          <div className="p-5">
+        {/* ── Account ── */}
+        <section>
+          <h2 className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)] px-1 mb-2">
+            Account
+          </h2>
+          <div className="bg-[var(--surface)] rounded-2xl border border-[var(--border)] shadow-sm divide-y divide-[var(--border)] overflow-hidden">
             <button
               type="button"
               onClick={handleLogout}
               disabled={loggingOut}
-              className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl text-sm font-semibold text-[var(--destructive)] border border-[var(--destructive)]/20 hover:bg-[var(--destructive)]/10 transition-all disabled:opacity-50 cursor-pointer"
+              className="w-full flex items-center gap-3 px-4 py-3.5 text-[var(--destructive)] hover:bg-[var(--destructive)]/5 transition-colors disabled:opacity-50 cursor-pointer"
             >
-              {loggingOut ? (
-                <span className="flex items-center gap-2">
-                  <span className="w-4 h-4 border-2 border-[var(--destructive)]/30 border-t-[var(--destructive)] rounded-full animate-spin" />
-                  Signing out...
-                </span>
-              ) : (
-                <>
-                  <LogOut size={16} />
-                  Sign Out
-                </>
+              <span className="w-9 h-9 rounded-xl bg-[var(--destructive)]/10 text-[var(--destructive)] flex items-center justify-center shrink-0">
+                <LogOut size={18} />
+              </span>
+              <span className="text-sm font-semibold flex-1 text-left">
+                {loggingOut ? "Signing out..." : "Sign Out"}
+              </span>
+              {loggingOut && (
+                <span className="w-4 h-4 border-2 border-[var(--destructive)]/30 border-t-[var(--destructive)] rounded-full animate-spin shrink-0" />
               )}
             </button>
           </div>
-        </div>
-
-        {/* Save Button */}
-        <div className="flex items-center gap-3">
-          <button
-            type="button"
-            onClick={handleSave}
-            disabled={clinicalInterests.length === 0}
-            className="flex items-center gap-2 px-6 py-3 bg-[var(--primary)] text-[var(--primary-foreground)] font-bold text-sm rounded-xl hover:opacity-95 transition-all shadow-sm disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
-          >
-            <Save size={16} />
-            Save Changes
-          </button>
-          {saved && (
-            <span className="flex items-center gap-1.5 text-sm font-semibold text-[var(--success)] animate-in fade-in duration-200">
-              <CheckCircle2 size={16} />
-              Saved successfully
-            </span>
-          )}
-        </div>
+        </section>
       </div>
     </div>
   )

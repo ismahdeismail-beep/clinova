@@ -53,11 +53,13 @@ export function MedicineImageGallery({ drugId, genericName, dosageForms }: Medic
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<string | null>(null);
   const [failedIds, setFailedIds] = useState<Set<string>>(new Set());
+  const [failedFullIds, setFailedFullIds] = useState<Set<string>>(new Set());
   const blobUrlsRef = useRef<string[]>([]);
 
   // Reset broken-image markers whenever a new image set arrives.
   useEffect(() => {
     setFailedIds(new Set());
+    setFailedFullIds(new Set());
   }, [images]);
 
   useEffect(() => {
@@ -258,13 +260,20 @@ export function MedicineImageGallery({ drugId, genericName, dosageForms }: Medic
             onClick={() => { setSelectedImage(img); setLightboxOpen(true); }}
             className="group relative aspect-square bg-[var(--surface)] border border-[var(--border)] rounded-xl overflow-hidden hover:border-[var(--primary)] transition-all cursor-pointer"
           >
-            {(img.blobUrl || img.thumbnail_url) && !failedIds.has(img.id) ? (
+            {(img.blobUrl || img.thumbnail_url || img.large_url || img.medium_url) && !failedFullIds.has(img.id) ? (
               <img
-                src={img.blobUrl || img.thumbnail_url}
+                src={
+                  !failedIds.has(img.id)
+                    ? (img.blobUrl || img.thumbnail_url)
+                    : (img.large_url || img.medium_url || img.blobUrl || img.thumbnail_url)
+                }
                 alt={`${img.generic_name} ${img.dosage_form}`}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 loading="lazy"
-                onError={() => setFailedIds(prev => new Set(prev).add(img.id))}
+                onError={() => {
+                  if (!failedIds.has(img.id)) setFailedIds(prev => new Set(prev).add(img.id))
+                  else setFailedFullIds(prev => new Set(prev).add(img.id))
+                }}
               />
             ) : (
               <div className="w-full h-full flex items-center justify-center bg-[var(--surface-dim)]">

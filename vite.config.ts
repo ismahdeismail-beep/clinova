@@ -19,7 +19,7 @@ export default defineConfig(() => {
           'pwa-512x512-maskable.png',
           'apple-touch-icon.png'
         ],
-        cacheId: 'clinova-app-v1',
+        cacheId: 'clinova-app-v2',
         workbox: {
           globPatterns: ['**/*.{js,css,html,ico,png,jpg,jpeg,svg}'],
           navigateFallback: '/index.html',

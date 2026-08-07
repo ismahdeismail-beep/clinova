@@ -48,7 +48,7 @@ async function loadThumbnails(): Promise<Map<string, string>> {
   if (thumbCache) return thumbCache
   if (thumbFetching) return thumbFetching
   thumbFetching = (async (): Promise<Map<string, string>> => {
-    const map = new Map<string, { url: string; priority: number }>()
+    const map = new Map<string, { url: string; priority: number; quality: number; storage: boolean }>()
     if (!supabase) return new Map<string, string>()
     let from = 0
     for (let i = 0; i < 80; i++) {
@@ -61,8 +61,24 @@ async function loadThumbnails(): Promise<Map<string, string>> {
         const url = r.thumbnail_url || r.large_url
         if (!url) continue
         const cur = map.get(r.drug_id)
-        if (cur && thumbPriority(r) >= cur.priority) continue
-        map.set(r.drug_id, { url, priority: thumbPriority(r) })
+        const priority = thumbPriority(r)
+        // Tie-break within the same source tier: prefer the higher-quality
+        // image so weak generic photos don't beat clean structure renders.
+        const quality = Number(r.quality_score) || 0
+        // Storage copies are our own re-uploads — always live. Legacy rows
+        // kept the raw upload.wikimedia.org URL, which browsers get 429'd
+        // on, so a storage copy wins over an external URL at equal priority.
+        const storage = url.includes('supabase.co/storage')
+        if (cur) {
+          if (priority > cur.priority) continue
+          if (priority === cur.priority) {
+            if (storage && !cur.storage) {
+              // prefer the storage copy — fall through to replace
+            } else if (cur.storage && !storage) continue
+            else if (quality <= cur.quality) continue
+          }
+        }
+        map.set(r.drug_id, { url, priority, quality, storage })
       }
       from += 1000
       if (data.length < 1000) break
@@ -87,6 +103,16 @@ async function attachThumbnails(rows: DrugMonograph[]): Promise<DrugMonograph[]>
     }))
   } catch {
     return rows
+  }
+}
+
+/** Attach the best thumbnail to a single monograph (session-cached map). */
+async function attachThumbnail(row: DrugMonograph): Promise<DrugMonograph> {
+  try {
+    const map = await loadThumbnails()
+    return { ...row, thumbnail_url: map.get(row.id) ?? '' }
+  } catch {
+    return row
   }
 }
 
@@ -183,6 +209,25 @@ function searchStatic(q: string): DrugMonograph[] {
   )
 }
 
+// PostgREST caps a single request at 1000 rows — page through the results so
+// lists are complete (the 1,072-drug catalog used to silently drop its last
+// 72 entries because only the first page was fetched).
+async function paginate<T>(
+  build: (from: number, to: number) => PromiseLike<{ data: T[] | null; error: any }>,
+): Promise<T[]> {
+  const all: T[] = []
+  let from = 0
+  for (let i = 0; i < 50; i++) {
+    const { data, error } = await build(from, from + 999)
+    if (error) throw error
+    if (!data || data.length === 0) break
+    all.push(...data)
+    from += 1000
+    if (data.length < 1000) break
+  }
+  return all
+}
+
 export const DrugMonographService = {
   /**
    * Fast catalog fetch for the KDI browse grid — only the fields needed for
@@ -192,27 +237,33 @@ export const DrugMonographService = {
    */
   async getCatalog(): Promise<DrugMonograph[]> {
     if (!supabase) return STATIC_ALL;
-    const [drugRes, thumbs] = await Promise.all([
-      supabase
-        .from('drug_monographs')
-        .select('id,name,generic_name,brand_names,drug_class,drug_class_name,drug_class_id,dosage_forms,indications,side_effects,contraindications,monitoring,interactions')
-        .order('name'),
+    const [drugRows, thumbs] = await Promise.all([
+      paginate<any>((from, to) =>
+        supabase!
+          .from('drug_monographs')
+          // drug_class_name is NOT a column — derive it from the drug_classes
+          // join (selecting the raw name previously 400'd and silently fell
+          // back to the static bundle, hiding the live catalog from the grid).
+          .select('id,name,generic_name,brand_names,drug_class,drug_class_id,drug_class_info:drug_classes(name),indications,side_effects,contraindications,monitoring,interactions')
+          .order('name')
+          .range(from, to),
+      ),
       loadThumbnails(),
     ]);
-    if (drugRes.error) throw drugRes.error;
-    const rows = (drugRes.data ?? []).map(mapRow);
+    const rows = drugRows.map(mapRow);
     if (rows.length === 0) return STATIC_ALL;
     return rows.map((r) => ({ ...r, thumbnail_url: thumbs.get(r.id) ?? '' }));
   },
 
   async getAll(): Promise<DrugMonograph[]> {
     if (!supabase) return STATIC_ALL;
-    const { data, error } = await supabase
-      .from('drug_monographs')
-      .select('*, drug_class_info:drug_classes(name)')
-      .order('name');
-    if (error) throw error;
-    const rows = (data ?? []).map(mapRow);
+    const rows = (await paginate<any>((from, to) =>
+      supabase!
+        .from('drug_monographs')
+        .select('*, drug_class_info:drug_classes(name)')
+        .order('name')
+        .range(from, to),
+    )).map(mapRow);
     return rows.length > 0 ? attachThumbnails(rows) : STATIC_ALL;
   },
 
@@ -224,7 +275,7 @@ export const DrugMonographService = {
       .eq('id', id)
       .single();
     if (error) return STATIC_BY_ID.get(id) ?? null;
-    return data ? mapRow(data) : STATIC_BY_ID.get(id) ?? null;
+    return data ? attachThumbnail(mapRow(data)) : STATIC_BY_ID.get(id) ?? null;
   },
 
   async getByName(name: string): Promise<DrugMonograph | null> {
@@ -235,21 +286,21 @@ export const DrugMonographService = {
       .ilike('name', name)
       .single();
     if (error) return STATIC_BY_NAME.get(name.toLowerCase().trim()) ?? null;
-    return data ? mapRow(data) : STATIC_BY_NAME.get(name.toLowerCase().trim()) ?? null;
+    return data ? attachThumbnail(mapRow(data)) : STATIC_BY_NAME.get(name.toLowerCase().trim()) ?? null;
   },
 
   async search(query: string): Promise<DrugMonograph[]> {
     const q = query.toLowerCase().trim()
     if (!supabase) return searchStatic(q);
 
-    const { data, error } = await supabase
-      .from('drug_monographs')
-      .select('*, drug_class_info:drug_classes(name)')
-      .or(`name.ilike.%${query}%,generic_name.ilike.%${query}%`)
-      .order('name');
-    if (error) throw error;
-
-    const rows = (data ?? []).map(mapRow);
+    const rows = (await paginate<any>((from, to) =>
+      supabase!
+        .from('drug_monographs')
+        .select('*, drug_class_info:drug_classes(name)')
+        .or(`name.ilike.%${query}%,generic_name.ilike.%${query}%`)
+        .order('name')
+        .range(from, to),
+    )).map(mapRow);
     return rows.length > 0 ? attachThumbnails(rows) : searchStatic(q);
   },
 
@@ -257,14 +308,14 @@ export const DrugMonographService = {
     const ind = indication.toLowerCase()
     if (!supabase) return STATIC_ALL.filter((d) => d.indications.some((i) => i.toLowerCase().includes(ind)))
 
-    const { data, error } = await supabase
-      .from('drug_monographs')
-      .select('*, drug_class_info:drug_classes(name)')
-      .contains('indications', [indication])
-      .order('name');
-    if (error) throw error;
-
-    const rows = (data ?? []).map(mapRow);
+    const rows = (await paginate<any>((from, to) =>
+      supabase!
+        .from('drug_monographs')
+        .select('*, drug_class_info:drug_classes(name)')
+        .contains('indications', [indication])
+        .order('name')
+        .range(from, to),
+    )).map(mapRow);
     return rows.length > 0 ? attachThumbnails(rows) : STATIC_ALL.filter((d) => d.indications.some((i) => i.toLowerCase().includes(ind)))
   },
 
@@ -272,14 +323,14 @@ export const DrugMonographService = {
     const dc = drugClass.toLowerCase()
     if (!supabase) return STATIC_ALL.filter((d) => d.drug_class.toLowerCase().includes(dc) || d.drug_class_name.toLowerCase().includes(dc))
 
-    const { data, error } = await supabase
-      .from('drug_monographs')
-      .select('*, drug_class_info:drug_classes(name)')
-      .ilike('drug_class_info.name', `%${drugClass}%`)
-      .order('name');
-    if (error) throw error;
-
-    const rows = (data ?? []).map(mapRow);
+    const rows = (await paginate<any>((from, to) =>
+      supabase!
+        .from('drug_monographs')
+        .select('*, drug_class_info:drug_classes(name)')
+        .ilike('drug_class_info.name', `%${drugClass}%`)
+        .order('name')
+        .range(from, to),
+    )).map(mapRow);
     return rows.length > 0 ? attachThumbnails(rows) : STATIC_ALL.filter((d) => d.drug_class.toLowerCase().includes(dc) || d.drug_class_name.toLowerCase().includes(dc))
   },
 
@@ -371,16 +422,24 @@ export const DrugMonographService = {
 
     if (error) return { items: [], total: 0 };
 
+    // Attach the best 3D-first thumbnail to every saved monograph so library
+    // icons render images (mapRow alone can't — drug_monographs has no
+    // thumbnail column; the thumbs live in drug_images).
+    const thumbs = await loadThumbnails();
+    const items = (data ?? []).map((r: any) => ({
+      id: r.id,
+      user_id: r.user_id,
+      monograph_id: r.monograph_id,
+      saved_at: r.saved_at,
+      notes: r.notes,
+      tags: r.tags ?? [],
+      monograph: r.monograph
+        ? { ...mapRow(r.monograph), thumbnail_url: thumbs.get(r.monograph_id) ?? '' }
+        : undefined,
+    }));
+
     return {
-      items: (data ?? []).map((r: any) => ({
-        id: r.id,
-        user_id: r.user_id,
-        monograph_id: r.monograph_id,
-        saved_at: r.saved_at,
-        notes: r.notes,
-        tags: r.tags ?? [],
-        monograph: r.monograph ? mapRow(r.monograph) : undefined,
-      })),
+      items,
       total: count ?? 0,
     };
   },

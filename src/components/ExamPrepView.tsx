@@ -243,7 +243,7 @@ export function UnitCard({ spec, onSelect }: { spec: ExamUnitSpec; onSelect: (un
   return (
     <button
       onClick={() => onSelect(spec.id)}
-      className="w-full text-left border border-[var(--border)] rounded-2xl bg-[var(--surface)] px-5 py-4 hover:border-[var(--primary)]/40 hover:bg-[var(--surface-2)] transition-all group"
+      className="w-full text-left border border-[var(--border)] rounded-2xl bg-[var(--surface)] p-5 hover:shadow-md hover:border-[var(--primary)]/40 transition-all group"
     >
       <div className="flex items-center justify-between gap-3">
         <div className="flex items-center gap-3 min-w-0">
@@ -280,7 +280,7 @@ export function PaperLinkCard({ spec, variant, onSelect }: { spec: ExamUnitSpec;
   return (
     <button
       onClick={() => onSelect(variant)}
-      className="w-full text-left border border-[var(--border)] rounded-2xl bg-[var(--surface)] p-5 hover:border-[var(--primary)]/40 hover:bg-[var(--surface-2)] transition-all group"
+      className="w-full text-left border border-[var(--border)] rounded-2xl bg-[var(--surface)] p-5 hover:shadow-md hover:border-[var(--primary)]/40 transition-all group"
     >
       <div className="flex items-center gap-3">
         <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold shrink-0">
@@ -303,7 +303,7 @@ export function ModuleCard({ mod, onSelect }: { mod: ExamModuleSpec; onSelect: (
   return (
     <button
       onClick={() => onSelect(mod.id)}
-      className="w-full border-2 border-[var(--border)] rounded-2xl overflow-hidden bg-[var(--surface)] hover:border-[var(--primary)]/40 transition-all group text-left"
+      className="w-full border border-[var(--border)] rounded-2xl overflow-hidden bg-[var(--surface)] hover:shadow-md hover:border-[var(--primary)]/40 transition-all group text-left"
     >
       <div className="p-6 space-y-4">
         <div className="flex items-center gap-3">

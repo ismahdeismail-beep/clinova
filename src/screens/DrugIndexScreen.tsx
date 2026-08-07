@@ -1112,13 +1112,13 @@ export default function DrugIndexScreen() {
                   </div>
                 ) : !selectedSubclass ? (
                   /* ── Level 2: Subclasses in Selected Category ── */
-                  <div className="animate-in fade-in slide-in-from-right-4 duration-300 space-y-6">
+                  <div className="space-y-6">
                     <div className="flex items-center gap-3">
-                      <button onClick={handleBackToCategories} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer">
+                      <button onClick={handleBackToCategories} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer shadow-xs">
                         <ChevronLeft size={18} className="text-[var(--text)]" />
                       </button>
                       <div>
-                        <h2 className="text-2xl font-bold text-[var(--text)] flex items-center gap-3">
+                        <h2 className="text-2xl font-bold text-[var(--text)] border-l-4 border-[var(--primary)] pl-3 flex items-center gap-3">
                           {(() => {
                             const Sym = CATEGORY_SYMBOLS[selectedCategory] || Pill;
                             return <Sym size={20} className="text-[var(--primary)]" />;
@@ -1131,7 +1131,7 @@ export default function DrugIndexScreen() {
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                       {getSubclassesForCategory(selectedCategory as TherapeuticCategory).map((sub) => {
                         const drugs = catalog.filter(
                           (m) => getDrugCategory(m) === selectedCategory && getDrugSubclass(m, selectedCategory as TherapeuticCategory) === sub,
@@ -1145,7 +1145,13 @@ export default function DrugIndexScreen() {
                             onClick={() => navigate(`/drugs/class/${encodeURIComponent(selectedCategory)}/sub/${encodeURIComponent(sub)}`)}
                             className={`text-left bg-gradient-to-br ${catColors.card} border border-[var(--border)] rounded-2xl p-5 transition-all group ${catColors.hover}`}
                           >
-                            <div className="flex items-center gap-3 mb-2">
+                            <div className="flex items-center gap-3 mb-3">
+                              <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${catColors.tile} flex items-center justify-center shrink-0 shadow-sm`}>
+                                {(() => {
+                                  const Sym = CATEGORY_SYMBOLS[selectedCategory] || Pill;
+                                  return <Sym size={18} className="text-white" />;
+                                })()}
+                              </div>
                               <div className="flex-1 min-w-0">
                                 <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors text-sm truncate">{sub}</h3>
                                 <p className={`text-xs font-medium ${catColors.text}`}>{drugs.length} monograph{drugs.length !== 1 ? 's' : ''}</p>
@@ -1164,13 +1170,13 @@ export default function DrugIndexScreen() {
                   </div>
                 ) : (
                   /* ── Level 3: Drugs in Selected Subclass ── */
-                  <div className="animate-in fade-in slide-in-from-right-4 duration-300 space-y-6">
+                  <div className="space-y-6">
                     <div className="flex items-center gap-3">
-                      <button onClick={() => navigate(`/drugs/class/${encodeURIComponent(selectedCategory)}`)} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer">
+                      <button onClick={() => navigate(`/drugs/class/${encodeURIComponent(selectedCategory)}`)} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer shadow-xs">
                         <ChevronLeft size={18} className="text-[var(--text)]" />
                       </button>
                       <div>
-                        <h2 className="text-2xl font-bold text-[var(--text)] flex items-center gap-3">
+                        <h2 className="text-2xl font-bold text-[var(--text)] border-l-4 border-[var(--primary)] pl-3 flex items-center gap-3">
                           {(() => {
                             const Sym = CATEGORY_SYMBOLS[selectedCategory] || Pill;
                             return <Sym size={20} className="text-[var(--primary)]" />;

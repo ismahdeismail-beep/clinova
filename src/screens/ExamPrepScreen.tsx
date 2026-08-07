@@ -5,7 +5,7 @@ import { EXAM_PREP_MODULES, getExamPrepModule } from '../data/examPrepData';
 import { ModuleCard, ModuleOverview, UnitCard, PaperLinkCard, PaperCard, getPaperCount } from '../components/ExamPrepView';
 
 const backButtonClass =
-  'flex items-center gap-1.5 text-[12px] text-[var(--text-muted)] hover:text-[var(--primary)] transition-colors cursor-pointer';
+  'inline-flex items-center gap-1.5 text-xs font-semibold text-[var(--text-muted)] hover:text-[var(--text)] transition-colors cursor-pointer';
 
 export default function ExamPrepScreen() {
   const { moduleId, unitId, variant } = useParams<{ moduleId?: string; unitId?: string; variant?: string }>();
@@ -87,11 +87,13 @@ export default function ExamPrepScreen() {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           {unit.source === 'real' ? (
-            <PaperLinkCard
-              spec={unit}
-              variant={1}
-              onSelect={(v) => navigate(`/knowledge/exam/prep/${encodeURIComponent(module.id)}/${encodeURIComponent(unit.id)}/${v}`)}
-            />
+            <div className="grid grid-cols-1 gap-3 max-w-sm">
+              <PaperLinkCard
+                spec={unit}
+                variant={1}
+                onSelect={(v) => navigate(`/knowledge/exam/prep/${encodeURIComponent(module.id)}/${encodeURIComponent(unit.id)}/${v}`)}
+              />
+            </div>
           ) : (
             [1, 2, 3].map((v) => (
               <PaperLinkCard

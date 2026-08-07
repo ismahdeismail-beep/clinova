@@ -14,6 +14,30 @@ function getAdminClient(): SupabaseClient | null {
   return createClient(SUPABASE_URL, key, { auth: { persistSession: false } })
 }
 
+// Gallery ordering: the same source-tier preference used for card icons, so
+// the 3D/PDB render leads the gallery, then real packaging/product photos,
+// then 2D skeletal structures, then generic photos. Within a tier the
+// highest-quality image wins; newest breaks ties.
+function imagePriority(r: any): number {
+  const s = String(r.source || '').toLowerCase()
+  if (s.includes('3d') || s.includes('pdb') || s.includes('ribbon')) return 0
+  if (s.includes('kenyan brand') || s.includes('dailymed') || s.includes('wikipedia')) return 1
+  if (s.includes('2d') || s.includes('structure')) return 2
+  return 3
+}
+
+function sortByPriority(rows: DrugImage[]): DrugImage[] {
+  return [...rows].sort((a, b) => {
+    const pa = imagePriority(a)
+    const pb = imagePriority(b)
+    if (pa !== pb) return pa - pb
+    const qa = Number(a.quality_score) || 0
+    const qb = Number(b.quality_score) || 0
+    if (qa !== qb) return qb - qa
+    return String(b.created_at || '').localeCompare(String(a.created_at || ''))
+  })
+}
+
 export async function getImagesForDrug(drugId: string): Promise<DrugImage[]> {
   const client = getAdminClient()
   if (!client) return []
@@ -26,7 +50,7 @@ export async function getImagesForDrug(drugId: string): Promise<DrugImage[]> {
     console.error('Failed to fetch drug images:', error)
     return []
   }
-  return data || []
+  return sortByPriority(data || [])
 }
 
 export async function searchImages(query: string): Promise<DrugImage[]> {
@@ -54,7 +78,7 @@ export async function searchImages(query: string): Promise<DrugImage[]> {
     console.error('Failed to search images:', error)
     return []
   }
-  return data || []
+  return sortByPriority(data || [])
 }
 
 export async function getImageStats(): Promise<CrawlStatistics> {
@@ -77,25 +101,17 @@ export async function getImageStats(): Promise<CrawlStatistics> {
     .not('rejection_reason', 'is', null)
     .neq('rejection_reason', '')
 
-  const { data: sourceData, error: sourceErr } = await client
-    .from('drug_images')
-    .select('source')
-    .limit(5000)
-
+  // PostgREST caps a single request at 1000 rows — paginate to cover the full
+  // table instead of sampling only the first page.
+  const sourceData = await fetchAllRows(client, 'drug_images', 'source')
   const bySource: Record<string, number> = {}
-  if (!sourceErr && sourceData) {
-    for (const row of sourceData) {
-      const src = row.source || 'unknown'
-      bySource[src] = (bySource[src] || 0) + 1
-    }
+  for (const row of sourceData) {
+    const src = row.source || 'unknown'
+    bySource[src] = (bySource[src] || 0) + 1
   }
 
-  const { data: drugData, error: drugErr } = await client
-    .from('drug_images')
-    .select('drug_id')
-    .limit(5000)
-
-  const uniqueDrugs = drugErr ? 0 : new Set(drugData?.map((r: any) => r.drug_id)).size
+  const drugData = await fetchAllRows(client, 'drug_images', 'drug_id')
+  const uniqueDrugs = new Set(drugData.map((r: any) => r.drug_id)).size
 
   return {
     total_images: total || 0,
@@ -109,30 +125,35 @@ export async function getImageStats(): Promise<CrawlStatistics> {
 export async function getMissingDrugs(): Promise<string[]> {
   const client = getAdminClient()
   if (!client) return []
-  const { data: allDrugs } = await client
-    .from('drug_monographs')
-    .select('id, name, generic_name')
-    .limit(5000)
 
-  if (!allDrugs) return []
+  const allDrugs = await fetchAllRows(client, 'drug_monographs', 'id, name, generic_name')
+  const imageDrugs = await fetchAllRows(client, 'drug_images', 'drug_id')
 
-  const drugsWithImages = new Set()
-  const { data: imageDrugs } = await client
-    .from('drug_images')
-    .select('drug_id')
-    .limit(10000)
-
-  if (imageDrugs) {
-    for (const row of imageDrugs) {
-      drugsWithImages.add(row.drug_id)
-    }
-  }
-
-  const missing = allDrugs
+  const drugsWithImages = new Set(imageDrugs.map((r: any) => r.drug_id))
+  return allDrugs
     .filter((d: any) => !drugsWithImages.has(d.id))
     .map((d: any) => d.generic_name || d.name || d.id)
+}
 
-  return missing
+// PostgREST caps a single request at 1000 rows — page through the table so
+// counts and sets cover the full dataset (3525+ image rows, 1072 monographs).
+async function fetchAllRows(
+  client: SupabaseClient,
+  table: string,
+  cols: string,
+  step = 1000,
+): Promise<any[]> {
+  const rows: any[] = []
+  let from = 0
+  for (let i = 0; i < 100; i++) {
+    const { data, error } = await client.from(table as any).select(cols).range(from, from + step - 1)
+    if (error) throw error
+    if (!data || data.length === 0) break
+    rows.push(...data)
+    from += step
+    if (data.length < step) break
+  }
+  return rows
 }
 
 export async function verifyImage(id: string): Promise<boolean> {

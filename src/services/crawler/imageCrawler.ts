@@ -161,7 +161,7 @@ async function isDuplicate(hash: string, existingHashes: Set<string>): Promise<b
 }
 
 // ── Upload optimized images to Supabase Storage ────────────────────
-async function uploadImages(
+export async function uploadImages(
   genericName: string,
   dosageForm: string,
   strength: string,
@@ -202,7 +202,7 @@ async function uploadImages(
 }
 
 // ── Insert image record into drug_images table ─────────────────────
-async function insertImageRecord(drugId: string, img: {
+export async function insertImageRecord(drugId: string, img: {
   generic_name: string
   dosage_form: string
   strength: string

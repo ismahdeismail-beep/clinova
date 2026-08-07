@@ -11,6 +11,9 @@ export default defineConfig(() => {
       react(), 
       VitePWA({
         registerType: 'autoUpdate',
+        strategies: 'injectManifest',
+        srcDir: 'src',
+        filename: 'sw.ts',
         includeAssets: [
           'clinova_logo.jpg',
           'favicon.svg',
@@ -19,14 +22,10 @@ export default defineConfig(() => {
           'pwa-512x512-maskable.png',
           'apple-touch-icon.png'
         ],
-        cacheId: 'clinova-app-v2',
-        workbox: {
-          globPatterns: ['**/*.{js,css,html,ico,png,jpg,jpeg,svg}'],
-          navigateFallback: '/index.html',
-          maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
-          skipWaiting: true,
-          clientsClaim: true,
-          cleanupOutdatedCaches: true
+        injectManifest: {
+          swSrc: 'src/sw.ts',
+          globPatterns: ['**/*.{js,css,html,ico,png,jpg,jpeg,svg,webmanifest}'],
+          maximumFileSizeToCacheInBytes: 8 * 1024 * 1024
         },
         manifest: {
           name: 'Clinova',

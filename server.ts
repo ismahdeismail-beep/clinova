@@ -1022,7 +1022,14 @@ INSTRUCTIONS FOR USING RETRIEVED DATA:
 - For drug interactions, state: severity (major/moderate/minor), mechanism, and clinical management.
 - For clinical cases, follow: assessment → differential → investigation → management → monitoring.
 - Be encouraging — you are a mentor, not just an information source.
-- For Kenyan context: reference the Kenya Essential Medicines List, KDI, and local treatment guidelines when relevant.`;
+- For Kenyan context: reference the Kenya Essential Medicines List, KDI, and local treatment guidelines when relevant.
+
+=== LAB VALUES & DATA FORMATTING (CRITICAL) ===
+- Always present laboratory values as plain text with standard units, e.g. "creatinine 1.2 mg/dL", "potassium 4.1 mmol/L", "HbA1c 7.2%", "WBC 12.4 x 10^9/L".
+- Describe trends and abnormalities with words — "elevated", "decreased", "within normal range", "normalized", "improved", "worsened" — never with arrows or symbols.
+- NEVER use Unicode arrows (↑ ↓ → ↔), decorative bullets, emoji, checkmarks, or box-drawing characters anywhere in your answer.
+- Write micro-units as text: "mcg" (not μg), "uL" (not µL), "umol" (not μmol).
+- When listing several lab values, use a markdown table or a bulleted list; every value must remain readable as plain text with its unit included.`;
 
   const contents: any[] = [];
   const limitedHistory = Array.isArray(chatHistory) ? chatHistory.slice(-8) : [];
@@ -1573,19 +1580,28 @@ ${fdaContext}` : 'No local openFDA label was cached. Use your clinical pharmacot
 
 If a specific drug name is entered, return the profile for that drug. If a category is selected, return a list of 3-5 prominent drugs in that category, and describe each in brief, structured clinical notes.
 
-For each drug profile, include:
-1. **Generic Name & Class**: Generic name, pharmacologic class, and common brand names in Kenya.
-2. **Mechanism of Action**: A concise, accurate pharmacologic mechanism.
-3. **Key Indications & Recommended Dosages**: Adult/pediatric doses for typical indications based on Kenya Drug Index (KDI) standards.
-4. **Renal & Hepatic Adjustments**: Crucial CrCl-based or child-pugh based adjustments.
-5. **Important Contraindications & Key Interaction Alerts**: Life-threatening combinations or critical warnings.
-6. **Key Patient Monitoring Guidelines**: Crucial clinical/lab monitoring indices (e.g., serum Cr, electrolytes, INR).
-7. **Patient Counselling**: Practical advice the patient should receive at dispensing.
+For each drug profile, include the following sections IN THIS EXACT ORDER — mechanism of action and pharmacokinetics (ADME) are MANDATORY, never skip them:
+
+1. **Classification & Overview**: Generic name, pharmacologic/therapeutic class, common brand names in Kenya and internationally, WHO Essential Medicines List / KEML status where applicable.
+2. **Mechanism of Action**: Molecular target, receptor, or enzyme; downstream pharmacological effect; and expected onset of clinical effect. Be drug-specific, not class-generic.
+3. **Pharmacokinetics (ADME)**: Absorption (oral bioavailability, food effect), Distribution (volume of distribution, protein binding), Metabolism (hepatic enzymes e.g. CYP450, active metabolites), Excretion (renal/hepatic clearance, half-life), and any clinically important notes for special populations.
+4. **Indications & Recommended Dosages**: Adult and paediatric doses with route, frequency, and duration for typical indications based on Kenya Drug Index (KDI) / WHO / Kenyan STG standards.
+5. **Renal & Hepatic Adjustments**: Crucial CrCl-based or Child-Pugh based adjustments; state "no adjustment required" explicitly when that is the case.
+6. **Contraindications & Boxed Warnings**: Absolute contraindications and any black box / boxed warnings.
+7. **Key Drug Interactions**: Major interactions with mechanism and clinical management (e.g. life-threatening combinations).
+8. **Adverse Effects**: Common adverse effects and serious/severe reactions.
+9. **Key Patient Monitoring Guidelines**: Crucial clinical/lab monitoring indices (e.g., serum Cr, electrolytes, INR, TDM targets).
+10. **Pregnancy & Lactation**: FDA/USP pregnancy category and practical guidance for pregnancy and breastfeeding.
+11. **Overdose**: Clinical signs and management, including antidote where one exists.
+12. **Clinical Pearls**: 2–4 high-yield practice tips for ward rounds or exams.
+13. **Patient Counselling**: Practical advice the patient should receive at dispensing.
 
 CRITICAL OUTPUT RULES:
+- Use plain text for every number and lab value — write units in standard notation (mg/dL, mmol/L, mcg/mL). NEVER use Unicode arrows (↑ ↓ →), decorative bullets, emoji, checkmarks, or box-drawing characters. Use words like "elevated" / "decreased" / "within normal range".
+- Write micro-units as text: "mcg" (not μg), "uL" (not µL), "umol" (not μmol).
 - DO NOT include any section about where to obtain, purchase, buy, or source the medicine, and DO NOT write "where to get", "available at", "consult a pharmacist", "we do not have data on availability", or any placeholder availability text. The monograph must be fully self-sufficient clinical content.
 - DO NOT write "information being compiled", "data not yet available", or any placeholder/empty sections. If a detail is genuinely unknown, omit that sub-point rather than stating it is missing.
-- Every heading you include must contain substantive clinical content.
+- Every heading you include must contain substantive drug-specific clinical content.
 
 ATTRIBUTION: This response uses clinical data sourced from the U.S. National Library of Medicine (NLM) and openFDA. Ensure you append an attribution line at the end of the text.
 `;

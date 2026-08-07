@@ -1,4 +1,5 @@
 import { GoogleGenAI } from '@google/genai';
+import { sanitizeClinicalText } from '../lib/clinicalTextSanitize.js';
 
 export interface AIProviderStatus {
   id: string;
@@ -307,7 +308,7 @@ export async function generateContentWithFallback(request: any, providerOverride
         cost: (inputTok * providerStatuses[activeOverride].costInputPer1M + outputTok * providerStatuses[activeOverride].costOutputPer1M) / 1000000
       });
       
-      return response;
+      return { ...response, text: sanitizeClinicalText(response.text) };
     } catch (err: any) {
       console.warn(`[AI Gateway] Forced provider override ${activeOverride} failed. Falling back. Error: ${err.message}`);
       recordProviderError(activeOverride);
@@ -346,7 +347,7 @@ export async function generateContentWithFallback(request: any, providerOverride
         cost: (inputTok * providerStatuses[provider].costInputPer1M + outputTok * providerStatuses[provider].costOutputPer1M) / 1000000
       });
 
-      return response;
+      return { ...response, text: sanitizeClinicalText(response.text) };
     } catch (err: any) {
       console.error(`[AI Gateway] ${provider} failed: ${err.message}`);
       recordProviderError(provider);

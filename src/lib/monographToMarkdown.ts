@@ -69,7 +69,7 @@ function formatMoa(moa: string): string {
 const FDA_LEAD =
   /^\s*(?:\d+(?:\.\d+){0,2}\s+)?(?:Pharmacokinetics|CLINICAL PHARMACOLOGY|PHARMACOKINETICS)\s*/i
 const ADME_HEAD_RE =
-  /\b(?:Absorption|Distribution|Metabolism|Elimination|Excretion)(?:\s+and\s+(?:Distribution|Metabolism|Elimination|Excretion))?(?:\s*[\/,]\s*(?:Bioavailability|Distribution|Excretion))?\s+(?=[A-Z])/g
+  /\b(?:Absorption|Distribution|Metabolism|Elimination|Excretion)(?:\s+and\s+(?:Distribution|Metabolism|Elimination|Excretion))?(?:\s*[,]\s*(?:Bioavailability|Distribution|Excretion))?\s+(?=[A-Z])/g
 const INTERACTION_STUDIES = /\s*Drug Interaction Studies\b.*$/i
 
 function stripFdaNoise(text: string): string {
@@ -136,8 +136,10 @@ function formatPk(pk: string): string {
 
 // Strip "Refer to current prescribing information..." boilerplate so those rows
 // render as a graceful "pending AI enrichment" note instead of a fake bullet.
+// Also catches the class-generic seeded mechanism text ("Mechanism varies by
+// subclass…") that is shared verbatim across many bundled anti-infectives.
 function isBoilerplate(text: string): boolean {
-  return /^(refer to current|consult current|seek immediate medical)/i.test(text.trim());
+  return /^(refer to current|consult current|seek immediate medical|mechanism varies|mechanism of action varies|information not yet available)/i.test(text.trim());
 }
 
 export function monographToMarkdown(m: DrugMonograph): string {
@@ -200,6 +202,8 @@ export function monographToMarkdown(m: DrugMonograph): string {
       ? `> *${m.mechanism_of_action}*\n> *A tailored mechanism explanation can be generated on demand via the Clinova AI Knowledge Engine.*`
       : formatMoa(m.mechanism_of_action);
     sections.push(section('⚙️ Mechanism of Action', body));
+  } else {
+    sections.push(emptySection('⚙️ Mechanism of Action', 'Pending enrichment — generate the full monograph for a drug-specific mechanism of action.'));
   }
 
   // Pharmacokinetics — creative: structured ADME bullets / sub-heads
@@ -208,6 +212,8 @@ export function monographToMarkdown(m: DrugMonograph): string {
       ? `> *${m.pharmacokinetics}*\n> *Detailed ADME data can be generated on demand via the Clinova AI Knowledge Engine.*`
       : formatPk(m.pharmacokinetics);
     sections.push(section('⏱ Pharmacokinetics', body));
+  } else {
+    sections.push(emptySection('⏱ Pharmacokinetics', 'Pending enrichment — generate the full monograph for absorption, distribution, metabolism, and excretion (ADME) data.'));
   }
 
   // Indications

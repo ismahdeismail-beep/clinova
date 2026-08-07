@@ -18,6 +18,7 @@ import { BUNDLED_DRUGS } from '../data/drugIndexData';
 import { getDrugClassConfig } from '../data/drugClassColors';
 import { getDrugCategory, type TherapeuticCategory } from '../lib/drugCategory';
 import { getDrugSubclass, getSubclassesForCategory } from '../lib/drugSubclass';
+import { getSubclassColor } from '../lib/drugSubclassColors';
 
 const QUICK_DRUGS: { name: string; category: string }[] = [
   { name: 'Ceftriaxone', category: 'Anti-infectives' },
@@ -357,13 +358,35 @@ export default function DrugIndexScreen() {
     !!m.monitoring ||
     (m.interactions?.length ?? 0) > 0;
 
-  const openSeeded = (m: DrugMonograph) => {
+  // A monograph is only "Full" when its enriched pharmacology core (mechanism
+  // of action + ADME/pharmacokinetics) is drug-specific — not class-generic
+  // boilerplate like "Mechanism varies by subclass…" or "Refer to prescribing
+  // information for ADME…". Monographs missing that core get the AI-enrichment
+  // banner so users can generate a complete, drug-specific profile.
+  const BOILERPLATE_CORE = /^(refer to|consult|seek immediate|mechanism varies|mechanism of action varies|information not yet available)/i;
+  const hasEnrichedContent = (m: DrugMonograph): boolean =>
+    hasClinicalContent(m) &&
+    !!m.mechanism_of_action &&
+    !BOILERPLATE_CORE.test(m.mechanism_of_action.trim()) &&
+    !!m.pharmacokinetics &&
+    !BOILERPLATE_CORE.test(m.pharmacokinetics.trim());
+
+  const openSeeded = async (m: DrugMonograph) => {
     setSuggestions([]);
-    setMonograph(monographToMarkdown(m));
-    setMonographKey((m.name || m.generic_name || '').toLowerCase());
-    setCurrentMonographId(m.id);
-    setSelectedDrugName(m.name || m.generic_name || null);
-    setNeedsAi(!hasClinicalContent(m));
+    let full = m;
+    try {
+      // The browse grid ships lightweight rows (no mechanism/ADME). Fetch the
+      // full row so opened monographs always render the enriched sections.
+      const detailed = await DrugMonographService.getById(m.id);
+      if (detailed) full = detailed;
+    } catch {
+      // Keep the light copy if the detail fetch fails.
+    }
+    setMonograph(monographToMarkdown(full));
+    setMonographKey((full.name || full.generic_name || '').toLowerCase());
+    setCurrentMonographId(full.id);
+    setSelectedDrugName(full.name || full.generic_name || null);
+    setNeedsAi(!hasEnrichedContent(full));
     setError(null);
   };
 
@@ -637,8 +660,6 @@ export default function DrugIndexScreen() {
 
   const hasActiveFilter = !!(searchQuery.trim() || selectedCategory || selectedLetter || selectedSubclass);
 
-  const activeCatColors = selectedCategory ? (CATEGORY_COLORS[selectedCategory] || CATEGORY_COLORS.Immunology) : null;
-
   return (
     <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-6 pb-24 selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
       {/* ── Monograph Detail View ── */}
@@ -653,10 +674,10 @@ export default function DrugIndexScreen() {
               Back
             </button>
             {selectedCategory && (
-              <span className="text-sm text-[var(--text-muted)]">
-                <button onClick={() => closeView()} className="hover:text-[var(--primary)] transition-colors">{selectedCategory}</button>
-                <ChevronRight size={14} className="inline mx-1" />
-                <span className="text-[var(--text)] font-semibold">{selectedDrugName}</span>
+              <span className="text-sm text-[var(--text-muted)] min-w-0 flex items-center gap-1">
+                <button onClick={() => closeView()} className="hover:text-[var(--primary)] transition-colors shrink-0">{selectedCategory}</button>
+                <ChevronRight size={14} className="inline shrink-0" />
+                <span className="text-[var(--text)] font-semibold truncate min-w-0">{selectedDrugName}</span>
               </span>
             )}
           </div>
@@ -777,7 +798,7 @@ export default function DrugIndexScreen() {
                               <span className="text-[var(--text-muted)] block truncate">{m.generic_name}</span>
                             )}
                           </span>
-                          {!hasClinicalContent(m) && (
+                          {!hasEnrichedContent(m) && (
                             <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-amber-500/10 text-amber-600 shrink-0">Limited</span>
                           )}
                         </button>
@@ -928,8 +949,8 @@ export default function DrugIndexScreen() {
                                 <div className="flex-1 min-w-0">
                                   <div className="flex items-start justify-between gap-2 min-w-0">
                                     <div className="font-semibold text-[var(--text)] text-sm group-hover:text-[var(--primary)] transition-colors truncate">{m.name}</div>
-                                    <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-full shrink-0 ${hasClinicalContent(m) ? 'bg-emerald-500/10 text-emerald-600' : 'bg-amber-500/10 text-amber-600'}`}>
-                                      {hasClinicalContent(m) ? 'Full' : 'Limited'}
+                                    <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-full shrink-0 ${hasEnrichedContent(m) ? 'bg-emerald-500/10 text-emerald-600' : 'bg-amber-500/10 text-amber-600'}`}>
+                                      {hasEnrichedContent(m) ? 'Full' : 'Limited'}
                                     </span>
                                   </div>
                                   {m.generic_name && m.generic_name !== m.name && (
@@ -943,7 +964,7 @@ export default function DrugIndexScreen() {
                                   <span className={`mt-2 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}>
                                     {cc.subtitle && <span className="opacity-70 shrink-0">{cc.subtitle}</span>}
                                     <span className="font-bold shrink-0">·</span>
-                                    <span className="truncate">{m.drug_class_name || m.drug_class}</span>
+                                    <span className="truncate min-w-0">{m.drug_class_name || m.drug_class}</span>
                                   </span>
                                 );
                               })()}
@@ -951,8 +972,8 @@ export default function DrugIndexScreen() {
                                 const sub = getDrugSubclass(m);
                                 if (sub === 'Other') return null;
                                 return (
-                                  <span className="mt-1 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border bg-[var(--surface)] text-[var(--primary)] border-[var(--border)] max-w-full">
-                                    <span className="truncate">{sub}</span>
+                                  <span className={`mt-1 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border bg-[var(--surface)] ${getSubclassColor(sub).text} border-[var(--border)] max-w-full`}>
+                                    <span className="truncate min-w-0">{sub}</span>
                                   </span>
                                 );
                               })()}
@@ -979,19 +1000,19 @@ export default function DrugIndexScreen() {
                 </div>
               ) : (
                 <>
-              {/* Breadcrumb */}
-              <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] pb-3 whitespace-nowrap">
+              {/* Breadcrumb — long class/subclass names must truncate instead of overflowing the page */}
+              <div className="flex items-center gap-2 text-sm font-medium text-[var(--text-muted)] pb-3 min-w-0">
                 <span
-                  className={`${!selectedCategory ? 'text-[var(--text)] font-bold' : 'hover:text-[var(--primary)] transition-colors cursor-pointer'}`}
+                  className={`${!selectedCategory ? 'text-[var(--text)] font-bold' : 'hover:text-[var(--primary)] transition-colors cursor-pointer'} shrink-0`}
                   onClick={!selectedCategory ? undefined : handleBackToCategories}
                 >
                   Drug Index
                 </span>
                 {selectedCategory && (
                   <>
-                    <ChevronRight size={14} />
+                    <ChevronRight size={14} className="shrink-0" />
                     <span
-                      className={`${!selectedSubclass ? 'text-[var(--text)] font-bold' : 'hover:text-[var(--primary)] transition-colors cursor-pointer'}`}
+                      className={`${!selectedSubclass ? 'text-[var(--text)] font-bold' : 'hover:text-[var(--primary)] transition-colors cursor-pointer'} min-w-0 truncate`}
                       onClick={!selectedSubclass ? undefined : () => navigate(`/drugs/class/${encodeURIComponent(selectedCategory)}`)}
                     >
                       {selectedCategory}
@@ -1000,8 +1021,8 @@ export default function DrugIndexScreen() {
                 )}
                 {selectedCategory && selectedSubclass && (
                   <>
-                    <ChevronRight size={14} />
-                    <span className="text-[var(--text)] font-bold">{selectedSubclass}</span>
+                    <ChevronRight size={14} className="shrink-0" />
+                    <span className="text-[var(--text)] font-bold truncate min-w-0">{selectedSubclass}</span>
                   </>
                 )}
               </div>
@@ -1117,13 +1138,13 @@ export default function DrugIndexScreen() {
                       <button onClick={handleBackToCategories} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer shadow-xs">
                         <ChevronLeft size={18} className="text-[var(--text)]" />
                       </button>
-                      <div>
-                        <h2 className="text-2xl font-bold text-[var(--text)] border-l-4 border-[var(--primary)] pl-3 flex items-center gap-3">
+                      <div className="min-w-0">
+                        <h2 className="text-2xl font-bold text-[var(--text)] border-l-4 border-[var(--primary)] pl-3 flex items-center gap-3 min-w-0">
                           {(() => {
                             const Sym = CATEGORY_SYMBOLS[selectedCategory] || Pill;
-                            return <Sym size={20} className="text-[var(--primary)]" />;
+                            return <Sym size={20} className="text-[var(--primary)] shrink-0" />;
                           })()}
-                          {selectedCategory}
+                          <span className="truncate min-w-0">{selectedCategory}</span>
                         </h2>
                         <p className="text-xs text-[var(--text-muted)] mt-0.5">
                           {catalog.filter((m) => getDrugCategory(m) === selectedCategory).length} monographs · choose a subclass
@@ -1137,16 +1158,16 @@ export default function DrugIndexScreen() {
                           (m) => getDrugCategory(m) === selectedCategory && getDrugSubclass(m, selectedCategory as TherapeuticCategory) === sub,
                         );
                         if (drugs.length === 0) return null;
-                        const catColors = activeCatColors || CATEGORY_COLORS.Immunology;
+                        const subColors = getSubclassColor(sub);
                         const samples = drugs.slice(0, 3).map((m) => m.name || m.generic_name || '').filter(Boolean);
                         return (
                           <button
                             key={sub}
                             onClick={() => navigate(`/drugs/class/${encodeURIComponent(selectedCategory)}/sub/${encodeURIComponent(sub)}`)}
-                            className={`text-left bg-gradient-to-br ${catColors.card} border border-[var(--border)] rounded-2xl p-5 transition-all group ${catColors.hover}`}
+                            className={`text-left bg-gradient-to-br ${subColors.card} border border-[var(--border)] rounded-2xl p-5 transition-all group ${subColors.hover}`}
                           >
                             <div className="flex items-center gap-3 mb-3">
-                              <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${catColors.tile} flex items-center justify-center shrink-0 shadow-sm`}>
+                              <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${subColors.tile} flex items-center justify-center shrink-0 shadow-sm`}>
                                 {(() => {
                                   const Sym = CATEGORY_SYMBOLS[selectedCategory] || Pill;
                                   return <Sym size={18} className="text-white" />;
@@ -1154,9 +1175,9 @@ export default function DrugIndexScreen() {
                               </div>
                               <div className="flex-1 min-w-0">
                                 <h3 className="font-bold text-[var(--text)] group-hover:text-[var(--primary)] transition-colors text-sm truncate">{sub}</h3>
-                                <p className={`text-xs font-medium ${catColors.text}`}>{drugs.length} monograph{drugs.length !== 1 ? 's' : ''}</p>
+                                <p className={`text-xs font-medium ${subColors.text}`}>{drugs.length} monograph{drugs.length !== 1 ? 's' : ''}</p>
                               </div>
-                              <ChevronRight size={16} className={`${catColors.text} ml-auto shrink-0 group-hover:translate-x-1 transition-all`} />
+                              <ChevronRight size={16} className={`${subColors.text} ml-auto shrink-0 group-hover:translate-x-1 transition-all`} />
                             </div>
                             {samples.length > 0 && (
                               <p className="text-xs text-[var(--text-muted)] truncate">
@@ -1175,13 +1196,13 @@ export default function DrugIndexScreen() {
                       <button onClick={() => navigate(`/drugs/class/${encodeURIComponent(selectedCategory)}`)} className="p-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl hover:bg-[var(--surface-dim)] transition-colors cursor-pointer shadow-xs">
                         <ChevronLeft size={18} className="text-[var(--text)]" />
                       </button>
-                      <div>
-                        <h2 className="text-2xl font-bold text-[var(--text)] border-l-4 border-[var(--primary)] pl-3 flex items-center gap-3">
+                      <div className="min-w-0">
+                        <h2 className="text-2xl font-bold text-[var(--text)] border-l-4 border-[var(--primary)] pl-3 flex items-center gap-3 min-w-0">
                           {(() => {
                             const Sym = CATEGORY_SYMBOLS[selectedCategory] || Pill;
-                            return <Sym size={20} className="text-[var(--primary)]" />;
+                            return <Sym size={20} className="text-[var(--primary)] shrink-0" />;
                           })()}
-                          <span className="truncate">{selectedSubclass}</span>
+                          <span className="truncate min-w-0">{selectedSubclass}</span>
                         </h2>
                         <p className="text-xs text-[var(--text-muted)] mt-0.5">
                           {filteredCatalog.length} monograph{filteredCatalog.length !== 1 ? 's' : ''} in{' '}
@@ -1262,11 +1283,11 @@ export default function DrugIndexScreen() {
                     ) : (
                       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                         {filteredCatalog.map((m) => {
-                          const catCc = CATEGORY_COLORS[selectedCategory] || CATEGORY_COLORS.Immunology;
+                          const subCc = getSubclassColor(selectedSubclass || '');
                           return (
                           <div
                             key={m.id}
-                            className={`bg-gradient-to-br ${catCc.card} border border-[var(--border)] rounded-xl transition-all group overflow-hidden ${catCc.hover}`}
+                            className={`bg-gradient-to-br ${subCc.card} border border-[var(--border)] rounded-xl transition-all group overflow-hidden ${subCc.hover}`}
                           >
                             <button
                               onClick={() => openSeeded(m)}
@@ -1289,7 +1310,7 @@ export default function DrugIndexScreen() {
                                   <span className={`mt-2 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}>
                                     {cc.subtitle && <span className="opacity-70 shrink-0">{cc.subtitle}</span>}
                                     <span className="font-bold shrink-0">·</span>
-                                    <span className="truncate">{m.drug_class_name || m.drug_class}</span>
+                                    <span className="truncate min-w-0">{m.drug_class_name || m.drug_class}</span>
                                   </span>
                                 );
                               })()}
@@ -1297,8 +1318,8 @@ export default function DrugIndexScreen() {
                                 const sub = getDrugSubclass(m);
                                 if (sub === 'Other') return null;
                                 return (
-                                  <span className="mt-1 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border bg-[var(--surface)] text-[var(--primary)] border-[var(--border)] max-w-full">
-                                    <span className="truncate">{sub}</span>
+                                  <span className={`mt-1 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full border bg-[var(--surface)] ${getSubclassColor(sub).text} border-[var(--border)] max-w-full`}>
+                                    <span className="truncate min-w-0">{sub}</span>
                                   </span>
                                 );
                               })()}

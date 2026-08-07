@@ -186,7 +186,7 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
                           <span className={`inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}>
                             {cc.subtitle && <span className="opacity-70 shrink-0">{cc.subtitle}</span>}
                             <span className="font-bold shrink-0">·</span>
-                            <span className="truncate">{item.monograph?.drug_class_name || item.monograph?.drug_class}</span>
+                            <span className="truncate min-w-0">{item.monograph?.drug_class_name || item.monograph?.drug_class}</span>
                           </span>
                         );
                       })()}
@@ -244,7 +244,7 @@ export default function SavedMonographsPanel({ onNavigateToDrug, compact }: Save
                             <span className={`mt-0.5 inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 rounded-full border ${cc.badge} ${cc.border} max-w-full`}>
                               {cc.subtitle && <span className="opacity-70 shrink-0">{cc.subtitle}</span>}
                               <span className="font-bold shrink-0">·</span>
-                              <span className="truncate">{item.monograph.drug_class_name || item.monograph.drug_class}</span>
+                              <span className="truncate min-w-0">{item.monograph.drug_class_name || item.monograph.drug_class}</span>
                             </span>
                           );
                         })()}

@@ -17,6 +17,7 @@ import { ChatService } from '../services/chat.service';
 import { useAuth } from '../contexts/AuthContext';
 import { useContentStats, FALLBACK_DRUGS, FALLBACK_CASES } from '../hooks/useContentStats';
 import exportService from '../services/export.service';
+import { sanitizeClinicalText } from '../lib/clinicalTextSanitize';
 
 interface Citation {
   source: string;
@@ -755,7 +756,7 @@ export default function ClinovaSupportScreen() {
                     } : m));
                   } else if (evt.text) {
                     streamedText += evt.text;
-                    setMessages(prev => prev.map(m => m.id === thinkingMsgId ? { ...m, content: streamedText } : m));
+                    setMessages(prev => prev.map(m => m.id === thinkingMsgId ? { ...m, content: sanitizeClinicalText(streamedText) } : m));
                   } else if (evt.error) {
                     // Server sent an error — propagate it so the retry loop can handle it
                     throw new Error(evt.error);
@@ -773,7 +774,7 @@ export default function ClinovaSupportScreen() {
               }
             }
           }
-          responseContent = streamedText || 'No response received.';
+          responseContent = sanitizeClinicalText(streamedText) || 'No response received.';
           success = true;
           break;
         } finally {
@@ -810,7 +811,7 @@ export default function ClinovaSupportScreen() {
           if (fallbackRes.ok) {
             const fallbackData = await fallbackRes.json();
             if (fallbackData.text && fallbackData.text.trim()) {
-              responseContent = fallbackData.text;
+              responseContent = sanitizeClinicalText(fallbackData.text);
             }
             if (fallbackData.sources) {
               streamSources = fallbackData.sources;

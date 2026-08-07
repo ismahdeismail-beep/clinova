@@ -244,7 +244,7 @@ export const DrugMonographService = {
           // drug_class_name is NOT a column — derive it from the drug_classes
           // join (selecting the raw name previously 400'd and silently fell
           // back to the static bundle, hiding the live catalog from the grid).
-          .select('id,name,generic_name,brand_names,drug_class,drug_class_id,drug_class_info:drug_classes(name),indications,side_effects,contraindications,monitoring,interactions')
+          .select('id,name,generic_name,brand_names,drug_class,drug_class_id,drug_class_info:drug_classes(name),indications,side_effects,contraindications,monitoring,interactions,mechanism_of_action,pharmacokinetics')
           .order('name')
           .range(from, to),
       ),

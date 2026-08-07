@@ -29,7 +29,9 @@ import { fetchOpenFdaLabel, resolveRxCui, fetchRxNormInteractions } from './src/
 import { crawlSource, crawlMany, searchLibrary } from './src/server/bookCrawler.service.js';
 import { LIBRARY_CATEGORY, isSupermemoryConfigured } from './src/server/supermemory.service.js';
 import { adminSupabase } from './src/server/adminClient.js';
-import { getImagesForDrug, searchImages } from './src/services/crawler/drugImageService.js';
+import { setVapidDetails } from 'web-push';
+import { getImagesForDrug, searchImages, getImageStats, getMissingDrugs, verifyImage, deleteImage } from './src/services/crawler/drugImageService.js';
+import { getCrawlStatus, triggerCrawl, getCrawlReport } from './src/services/crawler/schedulerService.js';
 
 const app = express();
 const PORT = 3000;
@@ -184,6 +186,118 @@ function aiRateLimit(req: any, res: any, next: any) {
 app.use('/api', rateLimit, requireAuth);
 app.use('/api/admin', requireAdmin);
 app.use('/api/gemini', aiRateLimit);
+
+// ----- Push Notifications (Phase 2: subscription plumbing) -----
+// The app's primary identity is Firebase Auth, so every push endpoint verifies
+// a Firebase ID token (Authorization: Bearer <idToken>) via Google's official
+// Firebase Auth REST endpoint (accounts:lookup). The Firebase uid becomes the
+// user_id in push_subscriptions. RLS on that table is deny-by-default; the
+// service-role client below is the only access path.
+
+const FIREBASE_WEB_API_KEY = process.env.VITE_FIREBASE_API_KEY || process.env.FIREBASE_WEB_API_KEY || 'AIzaSyBOXVvQm2JxW7JT9CXlFeZqC23iSrX3GoA';
+const FIREBASE_PROJECT_ID = process.env.VITE_FIREBASE_PROJECT_ID || process.env.FIREBASE_PROJECT_ID || 'nakurubnb-b99f2';
+
+async function verifyFirebaseToken(token: string): Promise<string | null> {
+  if (!token) return null;
+  try {
+    const resp = await fetch(
+      `https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=${encodeURIComponent(FIREBASE_WEB_API_KEY)}`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ idToken: token }),
+      }
+    );
+    if (!resp.ok) return null;
+    const data = await resp.json();
+    const localId: string | undefined = data?.users?.[0]?.localId;
+    return localId || null;
+  } catch (err) {
+    console.error('[push] Firebase token verification failed:', err);
+    return null;
+  }
+}
+
+// web-push VAPID setup — only when env keys are present (Phase 4 sends pushes).
+const VAPID_PUBLIC_KEY = process.env.VAPID_PUBLIC_KEY || '';
+const VAPID_PRIVATE_KEY = process.env.VAPID_PRIVATE_KEY || '';
+const VAPID_SUBJECT = process.env.VAPID_SUBJECT || 'mailto:support@clinova.app';
+if (VAPID_PUBLIC_KEY && VAPID_PRIVATE_KEY) {
+  try {
+    setVapidDetails(VAPID_SUBJECT, VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY);
+  } catch (err) {
+    console.error('[push] Invalid VAPID keys:', err);
+  }
+}
+
+app.post('/api/push/subscribe', async (req, res) => {
+  try {
+    const auth = req.headers['authorization'] || '';
+    const token = auth.startsWith('Bearer ') ? auth.slice(7) : '';
+    const uid = await verifyFirebaseToken(token);
+    if (!uid) return res.status(401).json({ error: 'Unauthorized' });
+
+    const sub = req.body?.subscription;
+    if (!sub || !sub.endpoint || !sub.keys?.p256dh || !sub.keys?.auth) {
+      return res.status(400).json({ error: 'Invalid push subscription payload' });
+    }
+
+    if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+
+    const { error } = await adminSupabase
+      .from('push_subscriptions')
+      .upsert(
+        {
+          user_id: uid,
+          endpoint: sub.endpoint,
+          p256dh: sub.keys.p256dh,
+          auth: sub.keys.auth,
+          last_seen_at: new Date().toISOString(),
+        },
+        { onConflict: 'endpoint' }
+      );
+
+    if (error) {
+      console.error('[push] subscribe upsert failed:', error);
+      return res.status(500).json({ error: 'Failed to save subscription' });
+    }
+
+    res.json({ ok: true, userId: uid });
+  } catch (err: any) {
+    console.error('[push] subscribe error:', err);
+    res.status(500).json({ error: err.message || 'Failed to subscribe' });
+  }
+});
+
+app.post('/api/push/unsubscribe', async (req, res) => {
+  try {
+    const auth = req.headers['authorization'] || '';
+    const token = auth.startsWith('Bearer ') ? auth.slice(7) : '';
+    const uid = await verifyFirebaseToken(token);
+    if (!uid) return res.status(401).json({ error: 'Unauthorized' });
+
+    const endpoint = req.body?.endpoint;
+    if (!endpoint) return res.status(400).json({ error: 'Missing endpoint' });
+
+    if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+
+    const { error } = await adminSupabase
+      .from('push_subscriptions')
+      .delete()
+      .eq('endpoint', endpoint)
+      .eq('user_id', uid);
+
+    if (error) {
+      console.error('[push] unsubscribe failed:', error);
+      return res.status(500).json({ error: 'Failed to remove subscription' });
+    }
+
+    res.json({ ok: true });
+  } catch (err: any) {
+    console.error('[push] unsubscribe error:', err);
+    res.status(500).json({ error: err.message || 'Failed to unsubscribe' });
+  }
+});
 
 // Proxy Cloudinary Upload
 app.post('/api/cloudinary/upload', upload.single('file'), async (req, res) => {
@@ -2068,6 +2182,103 @@ app.get('/api/images/search', async (req, res) => {
     const q = (req.query.q as string) || '';
     const results = await searchImages(q);
     res.json({ ok: true, data: results, total: results.length });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// ================================================================
+// Medicine Image Admin API (restored — powers the Admin Image Manager)
+// ================================================================
+
+// GET /api/admin/images/stats - Crawl statistics (paginated counts)
+app.get('/api/admin/images/stats', async (_req, res) => {
+  try {
+    const stats = await getImageStats();
+    res.json({ ok: true, data: stats });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// GET /api/admin/images/missing - Drugs with zero images (paginated)
+app.get('/api/admin/images/missing', async (_req, res) => {
+  try {
+    const missing = await getMissingDrugs();
+    res.json({ ok: true, data: missing, total: missing.length });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// GET /api/admin/images/schedule - Crawl schedule status
+app.get('/api/admin/images/schedule', async (_req, res) => {
+  try {
+    const status = getCrawlStatus();
+    res.json({ ok: true, data: status });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// GET /api/admin/images/report - Latest crawl report
+app.get('/api/admin/images/report', async (_req, res) => {
+  try {
+    const report = await getCrawlReport();
+    res.json({ ok: true, data: report });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// POST /api/admin/images/crawl - Trigger a full crawl of missing drugs
+app.post('/api/admin/images/crawl', async (_req, res) => {
+  try {
+    const result = await triggerCrawl();
+    res.json({ ok: true, result });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// POST /api/admin/images/refresh - Re-crawl specific drugs
+app.post('/api/admin/images/refresh', async (req, res) => {
+  try {
+    const { drug_ids } = req.body || {};
+    const result = await triggerCrawl(drug_ids);
+    res.json({ ok: true, result });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// DELETE /api/admin/images/:id - Delete an image record
+app.delete('/api/admin/images/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const deleted = await deleteImage(id);
+    res.json({ ok: deleted });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// POST /api/admin/images/:id/verify - Mark image as verified
+app.post('/api/admin/images/:id/verify', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const verified = await verifyImage(id);
+    res.json({ ok: verified });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// POST /api/admin/images/reindex - Reindex drug images table
+app.post('/api/admin/images/reindex', async (_req, res) => {
+  try {
+    if (!adminSupabase) return res.status(500).json({ error: 'Admin client not configured' });
+    res.json({ ok: true, message: 'Drug images table ready (managed via Supabase migrations)' });
   } catch (e: any) {
     res.status(500).json({ error: e.message });
   }

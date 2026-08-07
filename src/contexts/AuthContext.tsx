@@ -33,6 +33,7 @@ interface AuthContextType {
   loginWithEmail: (email: string, password: string) => Promise<void>;
   signUpWithEmail: (email: string, password: string, name: string) => Promise<void>;
   updatePreferences: (interests: string[]) => Promise<void>;
+  getIdToken: () => Promise<string | null>;
 }
 
 const AuthContext = createContext<AuthContextType | null>(null);
@@ -252,6 +253,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
+  // Fresh Firebase ID token for server-verified endpoints (e.g. push subscribe).
+  // `true` forces a token refresh so revoked/expired sessions are rejected.
+  const getIdToken = async (): Promise<string | null> => {
+    try {
+      if (!auth.currentUser) return null;
+      return await auth.currentUser.getIdToken(true);
+    } catch (e) {
+      console.error('getIdToken failed', e);
+      return null;
+    }
+  };
+
   const updatePreferences = async (interests: string[]) => {
     if (!userData) return;
     const updated: UserData = {
@@ -287,7 +300,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       loginReturning,
       loginWithEmail,
       signUpWithEmail,
-      updatePreferences
+      updatePreferences,
+      getIdToken
     }}>
       {children}
     </AuthContext.Provider>
@@ -306,7 +320,8 @@ export function useAuth() {
       loginReturning: async () => {},
       loginWithEmail: async () => {},
       signUpWithEmail: async () => {},
-      updatePreferences: async (interests: string[]) => {}
+      updatePreferences: async (interests: string[]) => {},
+      getIdToken: async () => null
     };
   }
   return context;

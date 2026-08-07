@@ -49,6 +49,7 @@
     "supermemory": "^4.24.12",
     "tailwind-merge": "^3.6.0",
     "vite": "^6.2.3",
+    "web-push": "^3.6.7",
     "zod": "^4.4.3",
     "zustand": "^5.0.14"
   },
@@ -67,6 +68,7 @@
     "@types/pg": "^8.20.3",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
+    "@types/web-push": "^3.6.4",
     "autoprefixer": "^10.4.21",
     "esbuild": "^0.25.0",
     "eslint": "^9.39.5",

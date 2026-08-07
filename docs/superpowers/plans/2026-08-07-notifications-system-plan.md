@@ -94,3 +94,26 @@ Vercel
 - Per-user notification preferences (topic filters, quiet hours) — add later if requested.
 - Analytics/tracking of push engagement.
 - Push for medication reminders (no caller today; if a reminder feature ships, it reuses this pipeline).
+
+## Auth Reality Adaptation (applied during Phase 2 — 2026-08-07)
+
+The original plan assumed Supabase Auth + RLS via `auth.uid()`. Verification of the
+codebase showed the app's identity is **Firebase Auth** (Firebase→Supabase Auth
+migration was attempted in `b1792bf` and **reverted** in `9724179`; the client never
+calls `supabase.auth.signIn/signUp`, so Supabase Auth sessions don't exist for app users).
+
+Phase 2 therefore ships this equivalent-secure design:
+
+- `user_id` in `push_subscriptions` is the **Firebase uid** (text), not a Supabase UUID.
+- Every `/api/push/*` request carries `Authorization: Bearer <Firebase ID token>`;
+  the server verifies it via Google's Firebase Auth REST endpoint
+  (`identitytoolkit.googleapis.com/v1/accounts:lookup` with the Firebase web API key)
+  and uses the returned `localId` as `user_id`.
+- `push_subscriptions` has RLS **enabled with zero policies** (deny-by-default): no
+  direct supabase-js access. All reads/writes go through the Express API (service role).
+- Vercel env: `VITE_VAPID_PUBLIC_KEY` (build-time, Dev+Prod), `VAPID_PRIVATE_KEY`,
+  `VAPID_SUBJECT` (Prod).
+- Phase 3 realtime consequence: `postgres_changes` respects RLS, so with no policies it
+  cannot stream rows. The feed will use a uid-scoped Realtime Broadcast channel
+  (server broadcasts, client subscribes) or short polling — to be decided in Phase 3.
+

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import {
   ArrowLeft,
@@ -22,15 +22,46 @@ export default function SettingsScreen() {
     markAsRead,
     markAllAsRead,
     requestNotificationPermission,
+    subscribePush,
+    unsubscribePush,
   } = useNotifications()
 
-  const [pushEnabled, setPushEnabled] = useState(() => {
-    if (!("Notification" in window)) return false
-    return Notification.permission === "granted"
-  })
+  const [pushEnabled, setPushEnabled] = useState(false)
+  const [pushSubscribed, setPushSubscribed] = useState(false)
+  const [pushBusy, setPushBusy] = useState(false)
   const [pushHint, setPushHint] = useState("")
   const [loggingOut, setLoggingOut] = useState(false)
   const [showNotifications, setShowNotifications] = useState(false)
+
+  // Sync the toggle with the real state: browser permission + existing
+  // PushManager subscription for this device.
+  useEffect(() => {
+    let active = true
+    const sync = async () => {
+      if (!("Notification" in window)) {
+        if (active) setPushEnabled(false)
+        return
+      }
+      let subscribed = false
+      try {
+        if ("serviceWorker" in navigator && "PushManager" in window) {
+          const registration = await navigator.serviceWorker.ready
+          const sub = await registration.pushManager.getSubscription()
+          subscribed = Boolean(sub)
+        }
+      } catch {
+        subscribed = false
+      }
+      if (active) {
+        setPushSubscribed(subscribed)
+        setPushEnabled(subscribed || Notification.permission === "granted")
+      }
+    }
+    sync()
+    return () => {
+      active = false
+    }
+  }, [])
 
   const handleTogglePush = async () => {
     if (!("Notification" in window)) {
@@ -38,18 +69,40 @@ export default function SettingsScreen() {
       setPushEnabled(false)
       return
     }
-    if (Notification.permission === "denied") {
-      setPushHint("Notifications are blocked for this site. Enable them in your browser's site settings.")
-      setPushEnabled(false)
-      return
+    if (pushBusy) return
+    setPushBusy(true)
+    setPushHint("")
+    try {
+      // Turning OFF: remove the subscription for this device.
+      if (pushEnabled) {
+        setPushEnabled(false)
+        const ok = await unsubscribePush()
+        setPushSubscribed(false)
+        setPushHint(ok ? "Push notifications turned off for this device." : "Could not remove this device's push subscription.")
+        return
+      }
+      if (Notification.permission === "denied") {
+        setPushHint("Notifications are blocked for this site. Enable them in your browser's site settings.")
+        setPushEnabled(false)
+        return
+      }
+      const result = await requestNotificationPermission()
+      if (result !== "granted") {
+        setPushEnabled(false)
+        setPushHint(
+          result === "denied"
+            ? "Notifications were blocked. You can enable them in your browser's site settings."
+            : ""
+        )
+        return
+      }
+      const ok = await subscribePush()
+      setPushSubscribed(ok)
+      setPushEnabled(ok)
+      setPushHint(ok ? "" : "Could not register this device for push. Your browser may block push notifications.")
+    } finally {
+      setPushBusy(false)
     }
-    const result = await requestNotificationPermission()
-    setPushEnabled(result === "granted")
-    setPushHint(
-      result === "denied"
-        ? "Notifications were blocked. You can enable them in your browser's site settings."
-        : ""
-    )
   }
 
   const handleLogout = async () => {
@@ -128,13 +181,20 @@ export default function SettingsScreen() {
                   <p className="text-xs text-[var(--text-muted)] mt-0.5">
                     Browser alerts for drug of the day and reminders
                   </p>
+                  {pushSubscribed && (
+                    <p className="text-xs text-[var(--primary)] mt-0.5">
+                      This device is registered for push
+                    </p>
+                  )}
                   {pushHint && <p className="text-xs text-amber-500 mt-1">{pushHint}</p>}
                 </div>
               </div>
               <button
                 type="button"
                 onClick={handleTogglePush}
-                className={`relative inline-flex h-7 w-12 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 ${
+                disabled={pushBusy}
+                aria-pressed={pushEnabled}
+                className={`relative inline-flex h-7 w-12 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 disabled:opacity-50 ${
                   pushEnabled ? "bg-[var(--primary)]" : "bg-[var(--border)]"
                 }`}
               >

@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, useEffect, ReactNode, useCa
 import { Bell, Activity, Pill, AlertTriangle, Megaphone } from 'lucide-react';
 import { BUNDLED_DRUGS } from '../data/drugIndexData';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from './AuthContext';
 
 export interface AppNotification {
   id: string;
@@ -25,9 +26,24 @@ interface NotificationContextType {
   markAllAsRead: () => void;
   scheduleMedicationReminder: (patientName: string, medication: string, delayMinutes: number) => void;
   requestNotificationPermission: () => Promise<NotificationPermission>;
+  subscribePush: () => Promise<boolean>;
+  unsubscribePush: () => Promise<boolean>;
 }
 
 const NotificationContext = createContext<NotificationContextType | null>(null);
+
+// Converts a base64url VAPID public key into the Uint8Array that
+// pushManager.subscribe() requires for the applicationServerKey option.
+function urlBase64ToUint8Array(base64String: string): Uint8Array {
+  const padding = '='.repeat((4 - (base64String.length % 4)) % 4);
+  const base64 = (base64String + padding).replace(/-/g, '+').replace(/_/g, '/');
+  const rawData = window.atob(base64);
+  const outputArray = new Uint8Array(rawData.length);
+  for (let i = 0; i < rawData.length; ++i) {
+    outputArray[i] = rawData.charCodeAt(i);
+  }
+  return outputArray;
+}
 
 const DEFAULT_NOTIFICATIONS: AppNotification[] = [
   {
@@ -101,6 +117,7 @@ const FEATURE_ANNOUNCEMENTS = [
 ];
 
 export function NotificationProvider({ children }: { children: ReactNode }) {
+  const { getIdToken } = useAuth();
   const [notifications, setNotifications] = useState<AppNotification[]>(() => {
     const saved = localStorage.getItem('clinova_notifications');
     if (saved) {
@@ -148,6 +165,77 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
   // Browser notification permission is only requested on a user gesture
   // (e.g. the toggle in Settings) — modern browsers ignore permission
   // requests made on page load without one.
+
+  // Registers this device for web-push: PushManager.subscribe with the VAPID
+  // public key, then persists the subscription server-side (Supabase) using a
+  // verified Firebase ID token. Returns true when the endpoint is saved.
+  const subscribePush = useCallback(async (): Promise<boolean> => {
+    try {
+      if (!('serviceWorker' in navigator) || !('PushManager' in window)) return false;
+      const token = await getIdToken();
+      if (!token) return false;
+      const registration = await navigator.serviceWorker.ready;
+      let subscription = await registration.pushManager.getSubscription();
+      if (!subscription) {
+        const vapidKey = import.meta.env.VITE_VAPID_PUBLIC_KEY as string | undefined;
+        if (!vapidKey) return false;
+        subscription = await registration.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: urlBase64ToUint8Array(vapidKey),
+        });
+      }
+      const json = subscription.toJSON();
+      const resp = await fetch('/api/push/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          subscription: {
+            endpoint: json.endpoint,
+            keys: { p256dh: json.keys?.p256dh, auth: json.keys?.auth },
+          },
+        }),
+      });
+      return resp.ok;
+    } catch (e) {
+      console.error('[push] subscribe failed', e);
+      return false;
+    }
+  }, [getIdToken]);
+
+  // Unsubscribes this device: removes the local push subscription and tells the
+  // server to delete the row. Safe to call when nothing is subscribed.
+  const unsubscribePush = useCallback(async (): Promise<boolean> => {
+    try {
+      if (!('serviceWorker' in navigator) || !('PushManager' in window)) return true;
+      const registration = await navigator.serviceWorker.ready;
+      const subscription = await registration.pushManager.getSubscription();
+      let endpoint: string | undefined;
+      if (subscription) {
+        endpoint = subscription.toJSON().endpoint;
+        await subscription.unsubscribe();
+      }
+      if (endpoint) {
+        const token = await getIdToken();
+        if (token) {
+          await fetch('/api/push/unsubscribe', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${token}`,
+            },
+            body: JSON.stringify({ endpoint }),
+          });
+        }
+      }
+      return true;
+    } catch (e) {
+      console.error('[push] unsubscribe failed', e);
+      return false;
+    }
+  }, [getIdToken]);
 
   const addNotification = (notif: Omit<AppNotification, 'id' | 'time' | 'read' | 'timestamp'>) => {
     const newNotif: AppNotification = {
@@ -241,6 +329,8 @@ export function NotificationProvider({ children }: { children: ReactNode }) {
       markAllAsRead,
       scheduleMedicationReminder,
       requestNotificationPermission,
+      subscribePush,
+      unsubscribePush,
     }}>
       {children}
     </NotificationContext.Provider>

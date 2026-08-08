@@ -21,7 +21,6 @@
     {
       "path": "/api/push/daily",
       "schedule": "0 5 * * *",
-      "method": "POST",
       "timezone": "UTC",
       "headers": {
         "Authorization": "Bearer ${PUSH_CRON_SECRET}"

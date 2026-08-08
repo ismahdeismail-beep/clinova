@@ -4,6 +4,8 @@ import { adminSupabase } from '../../server/adminClient'
 import type { CrawlStatus, CrawlReport } from '../../types/crawler'
 import { loadState, saveState, type CrawlerState } from './state'
 import { crawlDrug, crawlAllMissing } from './imageCrawler'
+import * as path from 'path'
+import * as fs from 'fs'
 
 export { type CrawlerState }
 
@@ -131,10 +133,10 @@ export async function triggerCrawl(
 }
 
 export async function getCrawlReport(): Promise<CrawlReport | null> {
-  const reportPath = require('path').join(process.cwd(), 'storage', 'crawler_state.json')
+  const reportPath = path.join(process.cwd(), 'storage', 'crawler_state.json')
   try {
-    if (require('fs').existsSync(reportPath)) {
-      const state = JSON.parse(require('fs').readFileSync(reportPath, 'utf-8'))
+    if (fs.existsSync(reportPath)) {
+      const state = JSON.parse(fs.readFileSync(reportPath, 'utf-8'))
       return {
         timestamp: state.last_crawl || new Date().toISOString(),
         summary: {

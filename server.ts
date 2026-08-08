@@ -29,7 +29,7 @@ import { fetchOpenFdaLabel, resolveRxCui, fetchRxNormInteractions } from './src/
 import { crawlSource, crawlMany, searchLibrary } from './src/server/bookCrawler.service.js';
 import { LIBRARY_CATEGORY, isSupermemoryConfigured } from './src/server/supermemory.service.js';
 import { adminSupabase } from './src/server/adminClient.js';
-import { setVapidDetails } from 'web-push';
+import { setVapidDetails, sendNotification } from 'web-push';
 import { getImagesForDrug, searchImages, getImageStats, getMissingDrugs, verifyImage, deleteImage } from './src/services/crawler/drugImageService.js';
 import { getCrawlStatus, triggerCrawl, getCrawlReport } from './src/services/crawler/schedulerService.js';
 
@@ -296,6 +296,306 @@ app.post('/api/push/unsubscribe', async (req, res) => {
   } catch (err: any) {
     console.error('[push] unsubscribe error:', err);
     res.status(500).json({ error: err.message || 'Failed to unsubscribe' });
+  }
+});
+
+// ----- Notifications feed (Phase 3: per-user synced feed) -----
+// The feed lives in Supabase `notifications` (RLS deny-by-default, server API
+// only). Every endpoint verifies the Firebase ID token and scopes rows to the
+// returned uid, so the feed syncs across a user's devices.
+
+function bearerToken(req: any): string {
+  const auth = req.headers['authorization'] || '';
+  return auth.startsWith('Bearer ') ? auth.slice(7) : '';
+}
+
+app.get('/api/notifications', async (req, res) => {
+  try {
+    const uid = await verifyFirebaseToken(bearerToken(req));
+    if (!uid) return res.status(401).json({ error: 'Unauthorized' });
+    if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+
+    const { data, error } = await adminSupabase
+      .from('notifications')
+      .select('*')
+      .eq('user_id', uid)
+      .order('created_at', { ascending: false })
+      .limit(100);
+
+    if (error) {
+      console.error('[notifications] list failed:', error);
+      return res.status(500).json({ error: 'Failed to load notifications' });
+    }
+
+    res.json({ notifications: data ?? [] });
+  } catch (err: any) {
+    console.error('[notifications] list error:', err);
+    res.status(500).json({ error: err.message || 'Failed to load notifications' });
+  }
+});
+
+app.post('/api/notifications', async (req, res) => {
+  try {
+    const uid = await verifyFirebaseToken(bearerToken(req));
+    if (!uid) return res.status(401).json({ error: 'Unauthorized' });
+    if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+
+    const { type, title, message, link, iconName, color, bg } = req.body ?? {};
+    if (!title || !message) return res.status(400).json({ error: 'title and message are required' });
+
+    const { data, error } = await adminSupabase
+      .from('notifications')
+      .insert({
+        user_id: uid,
+        type: type || 'info',
+        title,
+        message,
+        link: link || null,
+        icon_name: iconName || null,
+        color: color || null,
+        bg: bg || null,
+      })
+      .select('id, created_at')
+      .single();
+
+    if (error) {
+      console.error('[notifications] create failed:', error);
+      return res.status(500).json({ error: 'Failed to create notification' });
+    }
+
+    res.json({ ok: true, id: data.id, created_at: data.created_at });
+  } catch (err: any) {
+    console.error('[notifications] create error:', err);
+    res.status(500).json({ error: err.message || 'Failed to create notification' });
+  }
+});
+
+app.post('/api/notifications/read', async (req, res) => {
+  try {
+    const uid = await verifyFirebaseToken(bearerToken(req));
+    if (!uid) return res.status(401).json({ error: 'Unauthorized' });
+    if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+
+    const id = req.body?.id;
+    if (!id) return res.status(400).json({ error: 'Missing id' });
+
+    const { error } = await adminSupabase
+      .from('notifications')
+      .update({ read: true })
+      .eq('id', id)
+      .eq('user_id', uid);
+
+    if (error) {
+      console.error('[notifications] mark-read failed:', error);
+      return res.status(500).json({ error: 'Failed to update notification' });
+    }
+
+    res.json({ ok: true });
+  } catch (err: any) {
+    console.error('[notifications] mark-read error:', err);
+    res.status(500).json({ error: err.message || 'Failed to update notification' });
+  }
+});
+
+app.post('/api/notifications/read-all', async (req, res) => {
+  try {
+    const uid = await verifyFirebaseToken(bearerToken(req));
+    if (!uid) return res.status(401).json({ error: 'Unauthorized' });
+    if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+
+    const { error } = await adminSupabase
+      .from('notifications')
+      .update({ read: true })
+      .eq('user_id', uid)
+      .eq('read', false);
+
+    if (error) {
+      console.error('[notifications] mark-all-read failed:', error);
+      return res.status(500).json({ error: 'Failed to update notifications' });
+    }
+
+    res.json({ ok: true });
+  } catch (err: any) {
+    console.error('[notifications] mark-all-read error:', err);
+    res.status(500).json({ error: err.message || 'Failed to update notifications' });
+  }
+});
+
+// Idempotent per-user welcome rows: inserts the onboarding notifications the
+// first time a user opens the app, and does nothing on every later call.
+app.post('/api/notifications/welcome', async (req, res) => {
+  try {
+    const uid = await verifyFirebaseToken(bearerToken(req));
+    if (!uid) return res.status(401).json({ error: 'Unauthorized' });
+    if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+
+    const { count, error: countErr } = await adminSupabase
+      .from('notifications')
+      .select('id', { count: 'exact', head: true })
+      .eq('user_id', uid);
+    if (countErr) {
+      console.error('[notifications] welcome count failed:', countErr);
+      return res.status(500).json({ error: 'Failed to check notifications' });
+    }
+    if ((count ?? 0) > 0) return res.json({ ok: true, inserted: 0 });
+
+    const welcome = [
+      {
+        user_id: uid,
+        type: 'info',
+        title: 'Welcome to Clinova',
+        message: 'Explore drug monographs, clinical cases, nursing care plans, and clinical support.',
+        icon_name: 'Megaphone',
+        color: 'text-blue-500',
+        bg: 'bg-blue-500/10',
+      },
+      {
+        user_id: uid,
+        type: 'info',
+        title: 'NANDA Nursing Care Plans Now Available',
+        message: '92 evidence-based care plans across 19 specialties — from Critical Care/ICU to Community Health.',
+        icon_name: 'Megaphone',
+        color: 'text-teal-500',
+        bg: 'bg-teal-500/10',
+        link: '/care-plan',
+      },
+      {
+        user_id: uid,
+        type: 'info',
+        title: 'Clinova Support',
+        message: 'Get instant answers to clinical questions, backed by Kenyan STG guidelines.',
+        icon_name: 'Activity',
+        color: 'text-cyan-500',
+        bg: 'bg-cyan-500/10',
+        link: '/assistant',
+      },
+    ];
+
+    const { error } = await adminSupabase.from('notifications').insert(welcome);
+    if (error) {
+      console.error('[notifications] welcome insert failed:', error);
+      return res.status(500).json({ error: 'Failed to create welcome notifications' });
+    }
+
+    res.json({ ok: true, inserted: welcome.length });
+  } catch (err: any) {
+    console.error('[notifications] welcome error:', err);
+    res.status(500).json({ error: err.message || 'Failed to create welcome notifications' });
+  }
+});
+
+// ----- Push Notifications (Phase 4: daily sender) -----
+// Triggered by Vercel Cron (vercel.json -> /api/push/daily, schedule "0 5 * * *"
+// = 08:00 EAT). Vercel sends the PUSH_CRON_SECRET as a Bearer token in the
+// Authorization header. Computes the Drug of the Day server-side (same
+// day-of-year index the client used to use), writes one feed row per user
+// (deduped per day), pushes to every valid subscription, and prunes dead ones.
+const PUSH_CRON_SECRET = process.env.PUSH_CRON_SECRET || '';
+
+app.post('/api/push/daily', async (req, res) => {
+  try {
+    if (!PUSH_CRON_SECRET || bearerToken(req) !== PUSH_CRON_SECRET) {
+      return res.status(401).json({ error: 'Unauthorized' });
+    }
+
+    if (!adminSupabase) return res.status(500).json({ error: 'Supabase service client not configured' });
+
+    // Drug of the Day — day-of-year index into the full monograph list.
+    const { count: drugCount } = await adminSupabase
+      .from('drug_monographs')
+      .select('id', { count: 'exact', head: true });
+    if (!drugCount) return res.status(500).json({ error: 'No drugs in database' });
+
+    const now = new Date();
+    const dayOfYear = Math.floor((now.getTime() - new Date(now.getFullYear(), 0, 0).getTime()) / 86400000);
+    const idx = dayOfYear % drugCount;
+    const { data: drugRows } = await adminSupabase
+      .from('drug_monographs')
+      .select('name, drug_class, indications')
+      .range(idx, idx);
+    const drug = drugRows?.[0];
+
+    const { data: subs, error: listErr } = await adminSupabase
+      .from('push_subscriptions')
+      .select('user_id, endpoint, p256dh, auth');
+
+    if (listErr) {
+      console.error('[push] daily: failed to list subscriptions:', listErr);
+      return res.status(500).json({ error: 'Failed to list subscriptions' });
+    }
+
+    const title = drug ? `Drug of the Day: ${drug.name}` : 'Clinova Daily';
+    const body = drug
+      ? `${drug.drug_class || 'Drug'} — ${drug.indications?.[0] || 'Tap to view the full monograph.'}`
+      : 'Your daily clinical knowledge digest is ready. Tap to continue learning.';
+    const drugLink = drug ? `/drugs?q=${encodeURIComponent(drug.name)}` : '/';
+    const payload = JSON.stringify({ title, body, url: drugLink });
+
+    // One feed row per user per day (upsert dedupes on user_id + dedupe_key).
+    const users = [...new Set((subs ?? []).map((s) => s.user_id))];
+    const dedupeKey = `dotd-${now.toISOString().slice(0, 10)}`;
+    if (users.length > 0) {
+      const { error: feedErr } = await adminSupabase.from('notifications').upsert(
+        users.map((user_id) => ({
+          user_id,
+          type: 'reminder',
+          title,
+          message: body,
+          link: drugLink,
+          icon_name: 'Pill',
+          color: 'text-emerald-500',
+          bg: 'bg-emerald-500/15',
+          dedupe_key: dedupeKey,
+        })),
+        { onConflict: 'user_id,dedupe_key' }
+      );
+      if (feedErr) console.error('[push] daily: feed rows failed:', feedErr);
+    }
+
+    let sent = 0;
+    let failed = 0;
+    const deadEndpoints: string[] = [];
+
+    for (const sub of subs ?? []) {
+      try {
+        await sendNotification(
+          {
+            endpoint: sub.endpoint,
+            keys: { p256dh: sub.p256dh, auth: sub.auth },
+          },
+          payload
+        );
+        sent++;
+      } catch (err: any) {
+        const status = err?.statusCode;
+        // 410 Gone / 404 / 403 = subscription no longer valid -> prune.
+        if (status === 410 || status === 404 || status === 403) {
+          deadEndpoints.push(sub.endpoint);
+        }
+        failed++;
+      }
+    }
+
+    // Prune dead subscriptions.
+    if (deadEndpoints.length > 0) {
+      const { error: delErr } = await adminSupabase
+        .from('push_subscriptions')
+        .delete()
+        .in('endpoint', deadEndpoints);
+      if (delErr) console.error('[push] daily: prune failed:', delErr);
+    }
+
+    res.json({
+      ok: true,
+      sent,
+      failed,
+      pruned: deadEndpoints.length,
+      feedRows: users.length,
+      drug: drug?.name ?? null,
+    });
+  } catch (err: any) {
+    console.error('[push] daily error:', err);
+    res.status(500).json({ error: err.message || 'Failed to send daily push' });
   }
 });
 

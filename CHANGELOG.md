@@ -1,3 +1,27 @@
+## 2026-08-07
+
+### Added
+- **Per-user synced notification feed (Phase 3)**: the in-app feed now lives in a new Supabase `notifications` table (RLS deny-by-default, server API only — same model as `push_subscriptions`) instead of `localStorage`. New endpoints: `GET /api/notifications`, `POST /api/notifications` (create), `/read`, `/read-all`, and `/welcome` (idempotent per-user onboarding rows). `NotificationContext` hydrates from the feed on login, refreshes on window focus + a 60s poll, keeps `localStorage` only as an offline cache, and persists client-created notifications (medication reminders) to the feed so they sync across devices.
+- **Daily Drug-of-the-Day push completes (Phase 4)**: `POST /api/push/daily` (Vercel cron `0 5 * * *` = 08:00 EAT, guarded by `PUSH_CRON_SECRET`) now computes the Drug of the Day server-side (day-of-year index over `drug_monographs` — no more 1,000-row cap issue), writes one feed row per user per day (deduped via `user_id` + `dedupe_key`), pushes to every valid subscription, and prunes dead endpoints (404/403/410).
+
+### Changed
+- Removed the client-side Drug-of-the-Day 60s interval and the `DEFAULT_NOTIFICATIONS` / `FEATURE_ANNOUNCEMENTS` / `clinova_seen_announcements` mechanism — onboarding rows come from the server (`/welcome`, once per user), and the daily spotlights come from the cron.
+- `scheduleMedicationReminder` is **kept** (the plan assumed zero callers, but `PatientQuickSummary` schedules medication-administration reminders through it — they now also persist to the server feed when signed in).
+
+## 2026-08-06
+
+### Fixed
+- **Image-coverage reporting was wrong (100% → looked like 28%)**: `scripts/show-image-progress.mjs` and `drugImageService.getImageStats()/getMissingDrugs()` used `.limit(5000)` / `.limit(10000)`, which PostgREST silently caps at 1,000 rows — so the tools reported ~304/1,072 drugs covered when the real figure is **1,072/1,072 (3,525 rows)**. All three now paginate with `.range()`; the admin stats endpoint returns correct totals (3,525 images, 1,072 unique drugs).
+- **Admin Image Manager re-wired (was 100% broken)**: commit `0233100` removed the `/api/admin/images/*` endpoints but left `MedicineImageManager` + `AdminImageManagerScreen` orphaned and calling eight endpoints that 404'd (stats, missing, schedule, report, crawl, refresh, verify, delete, reindex). The endpoints are restored in `server.ts` behind the existing `requireAdmin` guard, and the `/admin/images` route is back in `App.tsx`.
+- **`GET /api/admin/images/report` crashed with "require is not defined"**: `schedulerService.getCrawlReport()` used CJS `require` in an ESM bundle — now ESM `fs`/`path` imports.
+- **Thumbnail quality tiebreak**: `loadThumbnails()` prefers the higher-`quality_score` image within the same source tier, so weak generic photos (score 0.5) no longer win over clean structure renders of the same tier.
+- **Drug icons for every drug (incl. broken/absent images)**: new `DrugIcon` component renders the real gallery image when present and falls back to a deterministic class-colored monogram tile otherwise; used across the KDI grid/suggestions, monograph header, saved library and gallery empty state, with `onError` fallback for dead URLs.
+
+### Audit (Aug 2026 image pipeline)
+- Data: **100% coverage** — 1,072/1,072 monographs have ≥1 image (3,525 rows); no orphan `drug_id`s, no true duplicate rows, all Supabase-storage URLs return 200 (external Wikimedia URLs are valid; they return 429 to this IP only due to rate limiting).
+- Data quality gaps (not blocking): `strength` empty in all 3,525 rows; `dosage_form` missing/`unknown` in ~75% of rows (structure renders predominate — not derivable from filenames); 284 rows score <65 (weak generic photos — kept as last-resort); `verified` never set (verify workflow previously unreachable — now restored).
+- Tooling: `scripts/_audit-urls.ts` added — bounded URL-liveness checker for `drug_images` thumbnails.
+
 ## 2026-08-05
 
 ### Added

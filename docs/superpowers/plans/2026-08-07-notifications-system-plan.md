@@ -117,3 +117,23 @@ Phase 2 therefore ships this equivalent-secure design:
   cannot stream rows. The feed will use a uid-scoped Realtime Broadcast channel
   (server broadcasts, client subscribes) or short polling — to be decided in Phase 3.
 
+## Execution Status (updated 2026-08-07 — Phases 1–5 complete)
+
+- **Phase 1 ✅** (`90adc85`) injectManifest SW with push + notificationclick handlers.
+- **Phase 2 ✅** (`5aa2399`) Firebase-verified subscribe/unsubscribe + VAPID + `push_subscriptions` migration.
+- **Phase 3 ✅** `000015_notifications.sql` (`notifications` table, RLS deny-by-default, non-partial
+  `UNIQUE (user_id, dedupe_key)` for daily dedupe); server endpoints `GET/POST /api/notifications`,
+  `/read`, `/read-all`, `/welcome` (idempotent per-user onboarding); `NotificationContext` hydrates
+  from the feed on login, refreshes on focus + 60s poll, localStorage only as offline cache. Realtime
+  decision: **short polling** (chosen over Broadcast — no infra, works with deny-by-default RLS).
+- **Phase 4 ✅** `/api/push/daily` computes Drug of the Day server-side (day-of-year index over
+  `drug_monographs` via `head` count + `.range(idx, idx)` — no 1,000-row cap), upserts one feed row
+  per user per day, pushes via web-push, prunes 404/403/410 endpoints. Cron in `vercel.json`
+  (`0 5 * * *` UTC = 08:00 EAT, Bearer `PUSH_CRON_SECRET`).
+- **Phase 5 ✅** removed client-side DOTD 60s interval, `DEFAULT_NOTIFICATIONS`,
+  `FEATURE_ANNOUNCEMENTS`, `clinova_seen_announcements`. `scheduleMedicationReminder` **kept** —
+  plan assumed zero callers but `PatientQuickSummary` schedules medication reminders through it
+  (now persisted to the server feed when signed in). Verified: `tsc --noEmit`, `vite build`, esbuild.
+- **Not deployed**: migration `000015` must be pushed to Supabase and Vercel env `PUSH_CRON_SECRET`
+  verified before the cron row will send.
+

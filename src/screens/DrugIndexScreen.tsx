@@ -274,7 +274,14 @@ export default function DrugIndexScreen() {
     const loadCatalog = async () => {
       setCatalogLoading(true);
       try {
-        const list = await DrugMonographService.getCatalog();
+        // Race the catalog fetch against a timeout so a slow/hung Supabase
+        // query never leaves the KDI grid stuck on skeleton loaders forever.
+        const list = await Promise.race([
+          DrugMonographService.getCatalog(),
+          new Promise<DrugMonograph[]>((_, reject) =>
+            setTimeout(() => reject(new Error('Catalog load timeout')), 10000),
+          ),
+        ]);
         if (list.length > 0) setCatalog(list);
       } catch (err) {
         console.warn('[DrugIndex] Supabase unavailable, using bundled data:', err);

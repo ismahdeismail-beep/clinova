@@ -51,7 +51,10 @@ async function loadThumbnails(): Promise<Map<string, string>> {
     const map = new Map<string, { url: string; priority: number; quality: number; storage: boolean }>()
     if (!supabase) return new Map<string, string>()
     let from = 0
-    for (let i = 0; i < 80; i++) {
+    // Cap at 20 pages (20k rows) — the thumbnail cache only needs one image
+    // per drug, and the table rarely exceeds a few thousand rows. The old
+    // 80-iteration loop could hang for minutes on large tables.
+    for (let i = 0; i < 20; i++) {
       const { data } = await supabase
         .from('drug_images')
         .select('drug_id, source, thumbnail_url, large_url, quality_score')

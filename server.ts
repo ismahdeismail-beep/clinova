@@ -486,15 +486,17 @@ app.post('/api/notifications/welcome', async (req, res) => {
 
 // ----- Push Notifications (Phase 4: daily sender) -----
 // Triggered by Vercel Cron (vercel.json -> /api/push/daily, schedule "0 5 * * *"
-// = 08:00 EAT). Vercel sends the PUSH_CRON_SECRET as a Bearer token in the
-// Authorization header. Computes the Drug of the Day server-side (same
-// day-of-year index the client used to use), writes one feed row per user
-// (deduped per day), pushes to every valid subscription, and prunes dead ones.
+// = 08:00 EAT). Vercel Cron doesn't support custom headers in vercel.json, so the
+// secret is passed as a query parameter (?secret=...) in the cron path. Computes
+// the Drug of the Day server-side (same day-of-year index the client used to use),
+// writes one feed row per user (deduped per day), pushes to every valid
+// subscription, and prunes dead ones.
 const PUSH_CRON_SECRET = process.env.PUSH_CRON_SECRET || '';
 
 app.post('/api/push/daily', async (req, res) => {
   try {
-    if (!PUSH_CRON_SECRET || bearerToken(req) !== PUSH_CRON_SECRET) {
+    const secret = (req.query?.secret as string) || bearerToken(req);
+    if (!PUSH_CRON_SECRET || secret !== PUSH_CRON_SECRET) {
       return res.status(401).json({ error: 'Unauthorized' });
     }
 

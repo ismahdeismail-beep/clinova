@@ -19,11 +19,8 @@
   ],
   "crons": [
     {
-      "path": "/api/push/daily",
-      "schedule": "0 5 * * *",
-      "headers": {
-        "Authorization": "Bearer ${PUSH_CRON_SECRET}"
-      }
+      "path": "/api/push/daily?secret=2ZTRWKCJP3VApdwkYt0HziGNoQnEjBab",
+      "schedule": "0 5 * * *"
     }
   ]
 }

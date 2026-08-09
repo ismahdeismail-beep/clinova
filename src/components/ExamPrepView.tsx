@@ -168,18 +168,18 @@ export function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: numb
 
   return (
     <div className="border-2 border-[var(--border)] rounded-2xl bg-[var(--surface)] overflow-hidden w-full">
-      <div className="flex items-center justify-between gap-3 flex-wrap bg-[var(--primary)]/5 border-b border-[var(--border)] px-4 py-3">
-        <div className="flex items-center gap-2">
-          <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold">
+      <div className="flex items-center justify-between gap-x-3 gap-y-2 flex-wrap bg-[var(--primary)]/5 border-b border-[var(--border)] px-3 sm:px-4 py-3">
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 min-w-0">
+          <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold shrink-0">
             {variant}
           </span>
           <span className="text-sm font-bold text-[var(--primary)]">{paperLabel}</span>
-          <span className="text-[11px] text-[var(--text-muted)]">
+          <span className="text-[11px] text-[var(--text-muted)] whitespace-nowrap">
             {spec.structure.reduce((a, s) => a + s.count, 0)} questions ·{' '}
             {spec.structure.reduce((a, s) => a + s.marks, 0)} marks
           </span>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 shrink-0">
           <button
             onClick={() => setShowAnswers((v) => !v)}
             className="flex items-center gap-1 text-[11px] px-2 py-1 rounded-lg border border-[var(--border)] hover:bg-[var(--surface-2)]"
@@ -201,25 +201,25 @@ export function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: numb
         {paper.sections.map((sec) => (
           <div key={sec.letter} className="space-y-4">
             <div className="border-b border-[var(--border)] pb-2">
-              <h4 className="text-[13px] font-bold text-[var(--text)]">
+              <h4 className="text-[13px] font-bold text-[var(--text)] break-words">
                 Section {sec.letter}: {sec.name}{' '}
                 <span className="text-[var(--text-muted)] font-normal">[{sec.marks} marks]</span>
               </h4>
-              <p className="text-[11px] text-[var(--text-muted)] italic mt-0.5">{sec.instruction}</p>
+              <p className="text-[11px] text-[var(--text-muted)] italic mt-0.5 break-words">{sec.instruction}</p>
             </div>
-            <ol className="space-y-4 list-decimal list-inside">
+            <ol className="space-y-4 list-decimal list-outside pl-5">
               {sec.questions.map((q, i) => (
-                <li key={i} className="text-[13px] text-[var(--text)] leading-relaxed">
-                  <div className="font-medium">{txt(q.stem)}</div>
+                <li key={i} className="text-[13px] text-[var(--text)] leading-relaxed break-words">
+                  <div className="font-medium whitespace-pre-line">{txt(q.stem)}</div>
                   {opts(q.options).length > 0 && (
-                    <ul className="mt-2 ml-6 list-[lower-alpha] space-y-1.5 text-[12px] text-[var(--text-muted)]">
+                    <ul className="mt-2 ml-5 pl-4 list-[lower-alpha] list-outside space-y-1.5 text-[12px] text-[var(--text-muted)]">
                       {opts(q.options).map((o, oi) => (
-                        <li key={oi}>{o}</li>
+                        <li key={oi} className="break-words">{o}</li>
                       ))}
                     </ul>
                   )}
                   {showAnswers && (q.answer || q.modelAnswer) && (
-                    <div className="mt-3 ml-6 space-y-2 border-l-2 border-emerald-500/30 pl-3 bg-emerald-500/5 rounded-r">
+                    <div className="mt-3 ml-5 space-y-2 border-l-2 border-emerald-500/30 pl-3 bg-emerald-500/5 rounded-r">
                       <div className="font-semibold text-emerald-700 uppercase tracking-wide text-[10px]">Answer</div>
                       <div className="text-emerald-700">
                         <AnswerBody value={q.answer || q.modelAnswer} />
@@ -227,7 +227,7 @@ export function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: numb
                     </div>
                   )}
                   {showAnswers && q.explanation && (
-                    <div className="mt-2 ml-6 text-[12px] text-[var(--text-muted)] italic border-l-2 border-blue-500/30 pl-2">
+                    <div className="mt-2 ml-5 text-[12px] text-[var(--text-muted)] italic border-l-2 border-blue-500/30 pl-2 break-words">
                       Explanation: {txt(q.explanation)}
                     </div>
                   )}
@@ -315,7 +315,7 @@ export function ModuleCard({ mod, onSelect }: { mod: ExamModuleSpec; onSelect: (
           <div className="w-12 h-12 rounded-xl bg-[var(--primary)]/10 flex items-center justify-center">
             <Icon size={24} className="text-[var(--primary)]" />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 min-w-0">
             <h3 className="text-lg font-bold text-[var(--text)]">{mod.title}</h3>
             <p className="text-[12px] text-[var(--text-muted)]">{mod.tracks.length} curriculum tracks · {mod.units.length} units · {getModulePaperCount(mod)} papers</p>
           </div>

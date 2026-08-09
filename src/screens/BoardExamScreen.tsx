@@ -98,7 +98,7 @@ function QuestionCard({
 
   return (
     <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6">
-      <div className="flex items-center gap-3 mb-4">
+      <div className="flex items-center gap-2 flex-wrap mb-4">
         <span className="text-xs font-bold text-[var(--text-muted)] bg-[var(--bg)] px-3 py-1 rounded-full">
           Q{number}/{total}
         </span>
@@ -110,7 +110,7 @@ function QuestionCard({
         </span>
       </div>
 
-      <p className="font-semibold text-[var(--text)] mb-5 leading-relaxed">{question.question}</p>
+      <p className="font-semibold text-[var(--text)] mb-5 leading-relaxed break-words">{question.question}</p>
 
       {question.type === 'mcq' && question.options && (
         <div className="space-y-2 mb-5">
@@ -130,7 +130,7 @@ function QuestionCard({
                   <span className="w-6 h-6 rounded-full bg-[var(--bg)] flex items-center justify-center text-xs font-bold shrink-0">
                     {letter}
                   </span>
-                  <span className="flex-1">{opt.substring(3)}</span>
+                  <span className="flex-1 break-words">{opt.substring(3)}</span>
                   {isAnswered && isCorrectOpt && (
                     <CheckCircle2 size={16} className="text-emerald-500 shrink-0" />
                   )}
@@ -349,7 +349,7 @@ export default function BoardExamScreen() {
         Back to Prediction Sets
       </button>
 
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between gap-3 flex-wrap mb-6">
         <div>
           <h2 className="text-lg font-bold">{SET_INFO.find((s) => s.id === selectedSet)?.title}</h2>
           <p className="text-xs text-[var(--text-muted)]">{questions.length} questions &middot; Mixed types</p>

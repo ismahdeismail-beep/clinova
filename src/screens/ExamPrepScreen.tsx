@@ -37,7 +37,7 @@ export default function ExamPrepScreen() {
   // ── Hub: no module selected (or unknown module id) ──
   if (!moduleId || !module) {
     return (
-      <div className="space-y-6">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-4 sm:space-y-6">
         <div className="flex items-center gap-2">
           <Sparkles size={20} className="text-[var(--primary)]" />
           <h2 className="text-xl font-bold text-[var(--text)]">Exam Prep</h2>
@@ -72,7 +72,7 @@ export default function ExamPrepScreen() {
     const variantNum = Number(variant);
     if (!Number.isNaN(variantNum) && variantNum >= 1 && variantNum <= getPaperCount(unit)) {
       return (
-        <div className="space-y-4">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-4">
           <button
             onClick={() =>
               navigate(`/knowledge/exam/prep/${encodeURIComponent(module.id)}/${track.id}/${encodeURIComponent(unit.id)}`)
@@ -90,7 +90,7 @@ export default function ExamPrepScreen() {
   // ── Unit page: list of papers ──
   if (track && unit) {
     return (
-      <div className="space-y-5">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-5">
         <button
           onClick={() => navigate(`/knowledge/exam/prep/${encodeURIComponent(module.id)}/${track.id}`)}
           className={backButtonClass}
@@ -138,7 +138,7 @@ export default function ExamPrepScreen() {
   if (track) {
     const TrackIcon = track.id === 'traditional' ? History : Sparkles;
     return (
-      <div className="space-y-5">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-5">
         <button onClick={() => navigate(`/knowledge/exam/prep/${encodeURIComponent(module.id)}`)} className={backButtonClass}>
           <ArrowLeft size={14} /> {module.title}
         </button>

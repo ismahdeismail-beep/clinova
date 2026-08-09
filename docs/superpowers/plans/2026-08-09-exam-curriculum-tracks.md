@@ -78,8 +78,9 @@ Kabarak: "comprehensive review of our curriculum". One-line changes in `examPrep
 - [x] **T6 — Verify** `npx tsc --noEmit` → `npx vite build` → `npx esbuild server.ts
   --bundle --platform=node --format=cjs --outfile=dist/server.cjs --packages=external`.
 
-- [ ] **T7 — Ship**: commit (`feat(exam): curriculum tracks — Traditional vs Revised`),
-  push, `vercel --prod --yes` (canonical `clinova-main.vercel.app`).
+- [x] **T7 — Ship**: commit `d2bf108` (`feat(exam): curriculum tracks — Traditional vs Revised`),
+  push, `vercel --prod --yes` (canonical `clinova-main.vercel.app`). Layout pass shipped
+  separately as `c29a155` (`fix(exam): responsive layout ...`).
 
 ## Global constraints
 

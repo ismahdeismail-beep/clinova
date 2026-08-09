@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import {
   ArrowLeft, ChevronRight, CheckCircle2, AlertCircle,
   GraduationCap, BookOpen, Target, FileText, Lightbulb,
-  Download, RotateCcw, TrendingUp,
+  Download, RotateCcw, TrendingUp, Stethoscope, ShieldCheck,
 } from 'lucide-react'
 import {
   BOARD_EXAM_QUESTIONS,
@@ -17,7 +17,8 @@ const SET_INFO = [
     title: 'Prediction Set 1',
     description: '30 authentic PPB-style MCQs, SAQs, and essays covering all 17 therapeutic units with detailed clinical explanations.',
     icon: Target,
-    color: 'amber',
+    iconBg: 'bg-amber-500/15',
+    iconColor: 'text-amber-500',
     gradient: 'from-amber-500/20 via-amber-500/5 to-transparent',
     border: 'border-amber-500/20',
   },
@@ -26,7 +27,8 @@ const SET_INFO = [
     title: 'Prediction Set 2',
     description: '30 questions focusing on complex case scenarios, drug therapy problems, and regulatory pharmacy practice.',
     icon: BookOpen,
-    color: 'purple',
+    iconBg: 'bg-purple-500/15',
+    iconColor: 'text-purple-500',
     gradient: 'from-purple-500/20 via-purple-500/5 to-transparent',
     border: 'border-purple-500/20',
   },
@@ -35,16 +37,39 @@ const SET_INFO = [
     title: 'Prediction Set 3',
     description: '30 questions covering advanced therapeutics, toxicology, emergency care, and specialty pharmacy practice.',
     icon: TrendingUp,
-    color: 'emerald',
+    iconBg: 'bg-emerald-500/15',
+    iconColor: 'text-emerald-500',
     gradient: 'from-emerald-500/20 via-emerald-500/5 to-transparent',
     border: 'border-emerald-500/20',
   },
+  {
+    id: 'prediction-set-4',
+    title: 'Prediction Set 4',
+    description: '30 clinical case scenarios and patient cases integrating therapeutics, laboratory interpretation, and individualized pharmacotherapy decisions.',
+    icon: Stethoscope,
+    iconBg: 'bg-blue-500/15',
+    iconColor: 'text-blue-500',
+    gradient: 'from-blue-500/20 via-blue-500/5 to-transparent',
+    border: 'border-blue-500/20',
+  },
+  {
+    id: 'prediction-set-5',
+    title: 'Prediction Set 5',
+    description: '30 regulatory, professional practice, and grand-review questions consolidating the full syllabus with PPB jurisprudence and exam strategy.',
+    icon: ShieldCheck,
+    iconBg: 'bg-rose-500/15',
+    iconColor: 'text-rose-500',
+    gradient: 'from-rose-500/20 via-rose-500/5 to-transparent',
+    border: 'border-rose-500/20',
+  },
 ]
 
-const SET_NUMBER: Record<string, 1 | 2 | 3> = {
+const SET_NUMBER: Record<string, 1 | 2 | 3 | 4 | 5> = {
   'prediction-set-1': 1,
   'prediction-set-2': 2,
   'prediction-set-3': 3,
+  'prediction-set-4': 4,
+  'prediction-set-5': 5,
 }
 
 const getSelectedLetter = (opt: string) => opt.charAt(0).toUpperCase()
@@ -283,7 +308,7 @@ export default function BoardExamScreen() {
               {BOARD_EXAM_QUESTIONS.length} Questions
             </span>
             <span className="text-xs bg-[var(--surface)] border border-[var(--border)] px-3 py-1 rounded-full">
-              3 Prediction Sets
+              {SET_INFO.length} Prediction Sets
             </span>
             <span className="text-xs bg-[var(--surface)] border border-[var(--border)] px-3 py-1 rounded-full">
               Sources: PPB &middot; JKUAT &middot; MKU &middot; Maseno
@@ -291,7 +316,7 @@ export default function BoardExamScreen() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 sm:mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6 sm:mb-8">
           {SET_INFO.map((set) => {
             const qs = getQuestionsByPredictionSet(SET_NUMBER[set.id])
             const mcqCount = qs.filter((q) => q.type === 'mcq').length
@@ -306,8 +331,8 @@ export default function BoardExamScreen() {
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${set.gradient} opacity-50`} />
                 <div className="relative">
-                  <div className={`w-10 h-10 rounded-xl bg-${set.color}-500/15 flex items-center justify-center mb-3`}>
-                    <set.icon size={20} className={`text-${set.color}-500`} />
+                  <div className={`w-10 h-10 rounded-xl ${set.iconBg} flex items-center justify-center mb-3`}>
+                    <set.icon size={20} className={set.iconColor} />
                   </div>
                   <h3 className="font-bold text-sm mb-1 group-hover:text-[var(--primary)] transition-colors">{set.title}</h3>
                   <p className="text-xs text-[var(--text-muted)] mb-3 line-clamp-2">{set.description}</p>

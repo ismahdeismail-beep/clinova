@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Eye, EyeOff, Download, BookOpen, FileText, Award, Clock, Target, FlaskConical, Pill, ArrowRight } from 'lucide-react';
-import { STANDARD_EXAM_STRUCTURE, type ExamUnitSpec, type ExamModuleSpec } from '../data/examPrepData';
+import { Eye, EyeOff, Download, BookOpen, FileText, Award, Clock, Target, FlaskConical, Pill, ArrowRight, History, Sparkles } from 'lucide-react';
+import { STANDARD_EXAM_STRUCTURE, type ExamUnitSpec, type ExamModuleSpec, type ExamTrackSpec } from '../data/examPrepData';
 import { getExamPrepPaper, type GeneratedPaper } from '../data/examPrepPapers';
 
 // Count available paper variants for a unit (mock units have 3, real/OLD units have 1)
@@ -12,6 +12,10 @@ export const getPaperCount = (spec: ExamUnitSpec): number => {
 // Total papers across all units in a module
 export const getModulePaperCount = (mod: ExamModuleSpec): number =>
   mod.units.reduce((sum, u) => sum + getPaperCount(u), 0);
+
+// Total papers across all units in a track (derived, never hardcoded)
+export const getTrackPaperCount = (track: ExamTrackSpec): number =>
+  track.units.reduce((sum, u) => sum + getPaperCount(u), 0);
 
 const txt = (v: any): string => {
   if (v == null) return '';
@@ -253,6 +257,7 @@ export function UnitCard({ spec, onSelect }: { spec: ExamUnitSpec; onSelect: (un
           <div className="min-w-0">
             <div className="font-bold text-[var(--text)] text-sm truncate">{spec.title}</div>
             <div className="text-[11px] text-[var(--text-muted)]">
+              {spec.year && spec.trimester ? `Year ${spec.year} · Trimester ${spec.trimester} · ` : ''}
               {spec.structure.length} sections · {totalQs} questions · {paperCount} paper{paperCount !== 1 ? 's' : ''}
             </div>
           </div>
@@ -312,7 +317,7 @@ export function ModuleCard({ mod, onSelect }: { mod: ExamModuleSpec; onSelect: (
           </div>
           <div className="flex-1">
             <h3 className="text-lg font-bold text-[var(--text)]">{mod.title}</h3>
-            <p className="text-[12px] text-[var(--text-muted)]">{mod.units.length} units · {getModulePaperCount(mod)} papers</p>
+            <p className="text-[12px] text-[var(--text-muted)]">{mod.tracks.length} curriculum tracks · {mod.units.length} units · {getModulePaperCount(mod)} papers</p>
           </div>
           <ArrowRight size={20} className="text-[var(--text-muted)] group-hover:text-[var(--primary)] transition-colors" />
         </div>
@@ -324,6 +329,42 @@ export function ModuleCard({ mod, onSelect }: { mod: ExamModuleSpec; onSelect: (
             </span>
           ))}
         </div>
+      </div>
+    </button>
+  );
+}
+
+export function TrackCard({ track, onSelect }: { track: ExamTrackSpec; onSelect: (trackId: string) => void }) {
+  const Icon = track.id === 'traditional' ? History : Sparkles;
+  const paperCount = getTrackPaperCount(track);
+  return (
+    <button
+      onClick={() => onSelect(track.id)}
+      className="w-full border border-[var(--border)] rounded-2xl overflow-hidden bg-[var(--surface)] hover:shadow-md hover:border-[var(--primary)]/40 transition-all group text-left"
+    >
+      <div className="p-6 space-y-4">
+        <div className="flex items-center gap-3">
+          <div
+            className={`w-12 h-12 rounded-xl flex items-center justify-center ${
+              track.id === 'traditional' ? 'bg-amber-500/10' : 'bg-emerald-500/10'
+            }`}
+          >
+            <Icon size={24} className={track.id === 'traditional' ? 'text-amber-600' : 'text-emerald-600'} />
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-2">
+              <h3 className="text-lg font-bold text-[var(--text)]">{track.title}</h3>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-[var(--surface-2)] border border-[var(--border)] text-[var(--text-muted)]">
+                {track.badge}
+              </span>
+            </div>
+            <p className="text-[12px] text-[var(--text-muted)]">
+              {track.units.length} units · {paperCount} papers
+            </p>
+          </div>
+          <ArrowRight size={20} className="text-[var(--text-muted)] group-hover:text-[var(--primary)] transition-colors" />
+        </div>
+        <p className="text-sm text-[var(--text-muted)] leading-relaxed">{track.description}</p>
       </div>
     </button>
   );
@@ -341,7 +382,9 @@ export function ModuleOverview({ mod }: { mod: ExamModuleSpec }) {
           <Icon size={16} className="text-[var(--primary)]" />
           <h3 className="text-sm font-bold text-[var(--text)]">{title}</h3>
         </div>
-        <p className="text-[11px] text-[var(--text-muted)]">Standard format across all unit exams — 100 marks total</p>
+        <p className="text-[11px] text-[var(--text-muted)]">
+          Two curriculum tracks — {mod.tracks.map((t) => t.shortLabel).join(' & ')} — standard format: 100 marks total
+        </p>
       </div>
       <div className="p-5 space-y-4">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -371,7 +414,10 @@ export function ModuleOverview({ mod }: { mod: ExamModuleSpec }) {
           </div>
           <div className="flex items-center gap-1.5">
             <BookOpen size={13} className="text-[var(--primary)]" />
-            <span><strong className="text-[var(--text)]">Units:</strong> {mod.units.length} subject areas below</span>
+            <span>
+              <strong className="text-[var(--text)]">Tracks:</strong>{' '}
+              {mod.tracks.map((t) => `${t.shortLabel} (${t.units.length} units)`).join(' · ')}
+            </span>
           </div>
         </div>
       </div>

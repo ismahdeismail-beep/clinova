@@ -22,6 +22,8 @@ export interface ExamSectionSpec {
   instruction: string;
 }
 
+export type ExamTrackId = 'traditional' | 'revised';
+
 export interface ExamUnitSpec {
   id: string;
   title: string;
@@ -30,6 +32,18 @@ export interface ExamUnitSpec {
   topics: string[];
   /** 'mock' = AI-generated practice papers; 'real' = verbatim cleaned past paper(s) */
   source?: 'mock' | 'real';
+  /** Kabarak old-curriculum placement (year/trimester) for OLD/traditional units. */
+  year?: number;
+  trimester?: number;
+}
+
+export interface ExamTrackSpec {
+  id: ExamTrackId;
+  title: string;
+  shortLabel: string;
+  description: string;
+  badge: string;
+  units: ExamUnitSpec[];
 }
 
 export interface ExamModuleSpec {
@@ -37,6 +51,7 @@ export interface ExamModuleSpec {
   title: string;
   description: string;
   units: ExamUnitSpec[];
+  tracks: ExamTrackSpec[];
 }
 
 // ----------------------------------------------------------------
@@ -72,6 +87,8 @@ const CLINICAL_PHARMACY_UNITS: ExamUnitSpec[] = [
   {
     id: 'exam-respiratory-renal',
     title: 'Respiratory & Renal',
+    year: 3,
+    trimester: 3,
     mappedUnits: ['cp-resp', 'cp-renal'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -89,6 +106,8 @@ const CLINICAL_PHARMACY_UNITS: ExamUnitSpec[] = [
   {
     id: 'exam-antimicrobials',
     title: 'Principles of Antimicrobial Therapy',
+    year: 4,
+    trimester: 1,
     mappedUnits: ['cp-id'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -105,6 +124,8 @@ const CLINICAL_PHARMACY_UNITS: ExamUnitSpec[] = [
   {
     id: 'exam-cardiovascular-heme',
     title: 'Cardiovascular & Hematopoietic',
+    year: 4,
+    trimester: 1,
     mappedUnits: ['cp-cv', 'cp-onc'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -125,6 +146,8 @@ const CLINICAL_PHARMACY_UNITS: ExamUnitSpec[] = [
   {
     id: 'exam-infections-i',
     title: 'Infections I',
+    year: 4,
+    trimester: 2,
     mappedUnits: ['cp-id'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -144,6 +167,8 @@ const CLINICAL_PHARMACY_UNITS: ExamUnitSpec[] = [
   {
     id: 'exam-infections-ii',
     title: 'Infections II',
+    year: 4,
+    trimester: 2,
     mappedUnits: ['cp-id'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -161,6 +186,8 @@ const CLINICAL_PHARMACY_UNITS: ExamUnitSpec[] = [
   {
     id: 'exam-cns',
     title: 'Central Nervous System Disorders',
+    year: 5,
+    trimester: 1,
     mappedUnits: ['cp-neuro'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -179,6 +206,8 @@ const CLINICAL_PHARMACY_UNITS: ExamUnitSpec[] = [
   {
     id: 'exam-endo-onc-rheum',
     title: 'Endocrinology, Joint & Oncology',
+    year: 5,
+    trimester: 2,
     mappedUnits: ['cp-endo', 'cp-onc', 'cp-rheum'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -196,6 +225,8 @@ const CLINICAL_PHARMACY_UNITS: ExamUnitSpec[] = [
   {
     id: 'exam-hospital-practice',
     title: 'Hospital & Clinical Pharmacy Practice',
+    year: 3,
+    trimester: 2,
     mappedUnits: ['cp-intro'],
     structure: STANDARD_EXAM_STRUCTURE,
     topics: [
@@ -484,6 +515,8 @@ const PHARMACOLOGY_OLD_UNITS: ExamUnitSpec[] = [
   {
     id: 'pharm-gen-principles',
     title: 'General Principles of Pharmacology',
+    year: 3,
+    trimester: 1,
     mappedUnits: ['pharm-intro', 'pharm-gen', 'pharm-pk', 'pharm-pd'],
     structure: oldStructure(30, 3, 3),
     topics: [
@@ -502,6 +535,8 @@ const PHARMACOLOGY_OLD_UNITS: ExamUnitSpec[] = [
   {
     id: 'pharm-autonomic',
     title: 'Autonomic Pharmacology',
+    year: 3,
+    trimester: 1,
     mappedUnits: ['pharm-auto'],
     structure: oldStructure(60, 2, 2),
     topics: [
@@ -520,6 +555,8 @@ const PHARMACOLOGY_OLD_UNITS: ExamUnitSpec[] = [
   {
     id: 'pharm-autacoids',
     title: 'Autacoids',
+    year: 3,
+    trimester: 2,
     mappedUnits: ['pharm-endo'],
     structure: oldStructure(60, 4, 3),
     topics: [
@@ -536,6 +573,8 @@ const PHARMACOLOGY_OLD_UNITS: ExamUnitSpec[] = [
   {
     id: 'pharm-cns',
     title: 'Central Nervous System Pharmacology',
+    year: 3,
+    trimester: 2,
     mappedUnits: ['pharm-cns'],
     structure: oldStructure(20, 7, 3),
     topics: [
@@ -555,6 +594,8 @@ const PHARMACOLOGY_OLD_UNITS: ExamUnitSpec[] = [
   {
     id: 'pharm-cardiovascular',
     title: 'Cardiovascular Pharmacology',
+    year: 3,
+    trimester: 3,
     mappedUnits: ['pharm-cv'],
     structure: oldStructure(30, 7, 2),
     topics: [
@@ -591,6 +632,8 @@ const PHARMACOLOGY_OLD_UNITS: ExamUnitSpec[] = [
   {
     id: 'pharm-gi',
     title: 'Gastrointestinal Pharmacology',
+    year: 4,
+    trimester: 1,
     mappedUnits: ['pharm-gi'],
     structure: oldStructure(60, 5, 2),
     topics: [
@@ -608,6 +651,8 @@ const PHARMACOLOGY_OLD_UNITS: ExamUnitSpec[] = [
   {
     id: 'pharm-chemo-agents',
     title: 'Chemotherapeutic Agents',
+    year: 4,
+    trimester: 1,
     mappedUnits: ['pharm-chemo'],
     structure: oldStructure(30, 8, 2),
     topics: [
@@ -627,6 +672,8 @@ const PHARMACOLOGY_OLD_UNITS: ExamUnitSpec[] = [
   {
     id: 'pharm-chemo-infections',
     title: 'Chemotherapy of Infections',
+    year: 4,
+    trimester: 2,
     mappedUnits: ['pharm-anti'],
     structure: oldStructure(60, 1, 2),
     topics: [
@@ -646,6 +693,8 @@ const PHARMACOLOGY_OLD_UNITS: ExamUnitSpec[] = [
   {
     id: 'pharm-anticancer-derm-ocular',
     title: 'Anticancer, Dermatological & Ocular Drugs',
+    year: 5,
+    trimester: 1,
     mappedUnits: ['pharm-onc', 'pharm-derm', 'pharm-ophth'],
     structure: oldStructure(30, 5, 2),
     topics: [
@@ -662,6 +711,8 @@ const PHARMACOLOGY_OLD_UNITS: ExamUnitSpec[] = [
   {
     id: 'pharm-vitamins-hormones',
     title: 'Vitamins, Hormones & Endocrine Pharmacology',
+    year: 5,
+    trimester: 1,
     mappedUnits: ['pharm-endo', 'pharm-vit'],
     structure: oldStructure(30, 6, 2),
     topics: [
@@ -678,6 +729,8 @@ const PHARMACOLOGY_OLD_UNITS: ExamUnitSpec[] = [
   {
     id: 'pharm-toxicology',
     title: 'Toxicology & Drug Discovery',
+    year: 5,
+    trimester: 3,
     mappedUnits: ['pharm-tox'],
     structure: oldStructure(30, 7, 3),
     topics: [
@@ -694,25 +747,117 @@ const PHARMACOLOGY_OLD_UNITS: ExamUnitSpec[] = [
     ],
     source: 'real',
   },
+  {
+    id: 'pharm-veterinary',
+    title: 'Veterinary Pharmacology',
+    year: 5,
+    trimester: 2,
+    mappedUnits: ['pharm-vet'],
+    structure: oldStructure(30, 6, 2),
+    topics: [
+      'Principles of veterinary pharmacology — species differences in drug handling',
+      'Classes of veterinary medicines — antibiotics, anthelmintics, ectoparasiticides',
+      'Mechanisms of veterinary drug action',
+      'Therapeutic applications in companion & food animals',
+      'Adverse effects & withdrawal periods',
+      'Medicine safety — residues in food-producing animals',
+      'Regulatory considerations for veterinary medicines',
+    ],
+    source: 'real',
+  },
 ];
 
 // ====================================================================
-// MODULE REGISTRY — both modules
+// MODULE REGISTRY — both modules, each with curriculum tracks
 // ====================================================================
+
+// User-facing track metadata (old vs new syllabus)
+export const EXAM_TRACKS: Record<ExamTrackId, { title: string; shortLabel: string; badge: string }> = {
+  traditional: {
+    title: 'Traditional Curriculum',
+    shortLabel: 'Traditional',
+    badge: 'Pre-revision syllabus',
+  },
+  revised: {
+    title: 'Revised Curriculum',
+    shortLabel: 'Revised',
+    badge: 'Current syllabus',
+  },
+};
+
 export const EXAM_PREP_MODULES: ExamModuleSpec[] = [
   {
     id: 'clinical-pharmacy-exam',
     title: 'Clinical Pharmacy',
-    description: 'Practice papers modelled on the real clinical-pharmacy exam pattern. Each subject shows the section structure and topic areas drawn from the most recent past paper, then provides three full mock papers.',
+    description:
+      'Practice papers modelled on the real clinical-pharmacy exam pattern. First choose your curriculum track — Traditional (pre-revision syllabus) or Revised (current syllabus) — then practise the papers for that track.',
     units: CLINICAL_PHARMACY_UNITS,
+    tracks: [
+      {
+        id: 'traditional',
+        title: EXAM_TRACKS.traditional.title,
+        shortLabel: EXAM_TRACKS.traditional.shortLabel,
+        badge: EXAM_TRACKS.traditional.badge,
+        description:
+          'Practice papers built on the pre-revision Clinical Pharmacy I–XI unit structure — kept for learners still studying the old curriculum.',
+        units: CLINICAL_PHARMACY_UNITS.filter((u) => u.id.startsWith('exam-')),
+      },
+      {
+        id: 'revised',
+        title: EXAM_TRACKS.revised.title,
+        shortLabel: EXAM_TRACKS.revised.shortLabel,
+        badge: EXAM_TRACKS.revised.badge,
+        description:
+          'Practice papers for the current syllabus in the standard format — Section A 30 MCQs · B 40 marks · C 30 marks (100 total) — across the integrated new-curriculum units.',
+        units: CLINICAL_PHARMACY_UNITS.filter((u) => u.id.startsWith('cp-new-')),
+      },
+    ],
   },
   {
     id: 'pharmacology-exam',
     title: 'Pharmacology',
-    description: 'Practice papers covering systematic pharmacology from general principles through chemotherapy and toxicology. Includes NEW-curriculum mock papers (3 per unit) and the verbatim cleaned OLD-curriculum past papers.',
+    description:
+      'Practice papers covering systematic pharmacology from general principles through chemotherapy and toxicology. First choose your curriculum track — Traditional (Pharmacology I–XIV past papers) or Revised (current-syllabus mock papers).',
     units: [...PHARMACOLOGY_NEW_UNITS, ...PHARMACOLOGY_OLD_UNITS],
+    tracks: [
+      {
+        id: 'traditional',
+        title: EXAM_TRACKS.traditional.title,
+        shortLabel: EXAM_TRACKS.traditional.shortLabel,
+        badge: EXAM_TRACKS.traditional.badge,
+        description:
+          'Verbatim cleaned past papers from the pre-revision syllabus — the classic Pharmacology I–XIV units — kept for learners still studying the old curriculum.',
+        units: PHARMACOLOGY_OLD_UNITS,
+      },
+      {
+        id: 'revised',
+        title: EXAM_TRACKS.revised.title,
+        shortLabel: EXAM_TRACKS.revised.shortLabel,
+        badge: EXAM_TRACKS.revised.badge,
+        description:
+          'Practice papers for the current syllabus in the standard format — Section A 30 MCQs · B 40 marks · C 30 marks (100 total) — across the integrated new-curriculum units.',
+        units: PHARMACOLOGY_NEW_UNITS,
+      },
+    ],
   },
 ];
+
+// Track helpers
+export function getModuleTracks(mod: ExamModuleSpec): ExamTrackSpec[] {
+  return mod.tracks;
+}
+
+export function getTrackById(mod: ExamModuleSpec, trackId: string): ExamTrackSpec | undefined {
+  return mod.tracks.find((t) => t.id === trackId);
+}
+
+export function getTrackUnits(mod: ExamModuleSpec, trackId: string): ExamUnitSpec[] {
+  return getTrackById(mod, trackId)?.units ?? [];
+}
+
+export function findUnitTrack(mod: ExamModuleSpec, unitId: string): ExamTrackSpec | undefined {
+  return mod.tracks.find((t) => t.units.some((u) => u.id === unitId));
+}
 
 // Flat list for direct access (backwards-compatible)
 export const EXAM_PREP_UNITS: ExamUnitSpec[] = [

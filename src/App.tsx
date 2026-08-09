@@ -336,10 +336,11 @@ function AppContent() {
   <Route path="/knowledge" element={<EducationHubScreen />} />
   <Route path="/knowledge/:moduleId" element={<EducationHubScreen />} />
   <Route path="/knowledge/:moduleId/:unitId" element={<EducationHubScreen />} />
-  <Route path="/knowledge/exam/prep" element={<ExamPrepScreen />} />
-  <Route path="/knowledge/exam/prep/:moduleId" element={<ExamPrepScreen />} />
-  <Route path="/knowledge/exam/prep/:moduleId/:unitId" element={<ExamPrepScreen />} />
-  <Route path="/knowledge/exam/prep/:moduleId/:unitId/:variant" element={<ExamPrepScreen />} />
+            <Route path="/knowledge/exam/prep" element={<ExamPrepScreen />} />
+            <Route path="/knowledge/exam/prep/:moduleId" element={<ExamPrepScreen />} />
+            <Route path="/knowledge/exam/prep/:moduleId/:trackId" element={<ExamPrepScreen />} />
+            <Route path="/knowledge/exam/prep/:moduleId/:trackId/:unitId" element={<ExamPrepScreen />} />
+            <Route path="/knowledge/exam/prep/:moduleId/:trackId/:unitId/:variant" element={<ExamPrepScreen />} />
   <Route path="/knowledge/exam/board-exam" element={<BoardExamScreen />} />
   <Route path="/knowledge/exam/board-exam/:setId" element={<BoardExamScreen />} />
               <Route path="/care-plan" element={<CarePlanScreen />} />

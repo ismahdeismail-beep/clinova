@@ -27,9 +27,9 @@ for (const [unitId, variants] of Object.entries(EXAM_PREP_PAPERS)) {
   merged[unitId] = variants
 }
 
-// Add OLD papers (variant 1 only) — kept for current learners, removed in future
+// Add OLD papers (all variants — variant 1 + any real second sittings merged upstream)
 for (const [unitId, variants] of Object.entries(EXAM_PREP_PAPERS_OLD_PHARM)) {
-  merged[unitId] = { 1: variants[1] }
+  merged[unitId] = { ...variants }
 }
 
 // Add NEW papers (variants 1-3)
@@ -38,6 +38,17 @@ for (const file of newFiles) {
   const json = JSON.parse(readFileSync(`${NEW_DIR}/${file}`, 'utf8'))
   const unitId = Object.keys(json)[0]
   merged[unitId] = json[unitId]
+}
+
+// Add OLD-EXTRAS papers (real second sittings + generated v2/v3) — merge into existing units
+const EXTRAS_DIR = './scripts/out/old-extras'
+const extrasFiles = readdirSync(EXTRAS_DIR).filter((f) => f.endsWith('.json')).sort()
+for (const file of extrasFiles) {
+  const json = JSON.parse(readFileSync(`${EXTRAS_DIR}/${file}`, 'utf8'))
+  for (const [unitId, variants] of Object.entries<Record<number, GeneratedPaper>>(json)) {
+    if (!merged[unitId]) merged[unitId] = {}
+    merged[unitId] = { ...merged[unitId], ...variants }
+  }
 }
 
 // 2. Serialize to TypeScript format

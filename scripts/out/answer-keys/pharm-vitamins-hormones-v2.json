@@ -1,0 +1,261 @@
+{
+  "code": "5112b",
+  "a": [
+    {
+      "answer": "avascular necrosis of femoral heads",
+      "explanation": "Avascular (aseptic) necrosis of the femoral head is an IRREVERSIBLE complication of long-term glucocorticoid therapy. Hypertension, infections and moon facies are reversible when the steroid is tapered to physiologic doses."
+    },
+    {
+      "answer": "Metabolism",
+      "explanation": "Carbamazepine is a potent hepatic enzyme inducer (CYP3A4) that accelerates the metabolism of vitamin D, reducing its active form and risking osteomalacia/osteoporosis — hence the recommendation to increase vitamin D intake. The affected pharmacokinetic process is metabolism (induction)."
+    },
+    {
+      "answer": "Vitamin B12",
+      "explanation": "Subacute combined degeneration of the cord — weakness, exaggerated reflexes (upper motor neuron signs), and decreased vibration/position sense — is classic vitamin B12 deficiency (myelin damage in dorsal and lateral columns)."
+    },
+    {
+      "answer": "Folic acid",
+      "explanation": "A ballet dancer at 70% of expected weight with macrocytic anaemia, pancytopenia and purpura has anorexia nervosa — folate deficiency from malnutrition causes the macrocytic anaemia. Iron causes microcytic anaemia; B6 and vitamin K deficiency have different presentations."
+    },
+    {
+      "answer": "Nandrolone",
+      "explanation": "Hirsutism, deepening of voice and amenorrhea in a competitive swimmer indicate anabolic-androgenic steroid abuse — nandrolone. Ethinyl estradiol, leuprolide and medroxyprogesterone do not cause virilization."
+    },
+    {
+      "answer": "Folic acid",
+      "explanation": "Periconceptional folic acid (400–800 µg/day) prevents neural tube defects (anencephaly, spina bifida) — recommended before conception and in early pregnancy. Biotin, thiamine and riboflavin do not prevent NTDs."
+    },
+    {
+      "answer": "Erythropoietin",
+      "explanation": "Anaemia of chronic kidney disease results from deficient erythropoietin production by the failing kidney. Recombinant erythropoietin is the appropriate treatment (with iron supplementation). Folic acid, thiamine and cyanocobalamin don't treat renal anaemia."
+    },
+    {
+      "answer": "Omeprazole",
+      "explanation": "Long-term PPI use (omeprazole) causes vitamin B12 deficiency (reduced gastric acid impairs B12 release from food), presenting with paresthesias, ataxia, elevated homocysteine and positive Romberg (subacute combined degeneration). Metformin also causes B12 deficiency, but omeprazole is the classic answer with this triad in a GERD patient."
+    },
+    {
+      "answer": "combination oral contraceptive pills",
+      "explanation": "Combined oral contraceptives (oestrogen-containing) are contraindicated after a pulmonary embolism — oestrogen increases venous thromboembolism risk. Progestin-only methods (DMPA, implant, levonorgestrel IUD) are safe alternatives."
+    },
+    {
+      "answer": "regular insulin",
+      "explanation": "In DKA, a soluble/regular (short-acting) insulin is given IV for rapid onset and titratability. Detemir, glargine (long-acting basal) and NPH (intermediate) are not used alone for acute DKA management."
+    },
+    {
+      "answer": "Chlorpropamide",
+      "explanation": "Chlorpropamide, a first-generation sulfonylurea, causes a disulfiram-like reaction with alcohol (flushing) and SIADH (hyponatremia) — an older agent with these distinctive adverse effects. Metformin, sitagliptin and pioglitazone do not cause disulfiram reactions."
+    },
+    {
+      "answer": "Metformin",
+      "explanation": "A newly diagnosed overweight Type 2 diabetic should be started on metformin (first-line), which improves insulin sensitivity without weight gain or hypoglycaemia. Acarbose, chlorpropamide and insulin are not first-line initial therapy here."
+    },
+    {
+      "answer": "SGLT-2 inhibitor",
+      "explanation": "When metformin plus sulfonylurea fails, an SGLT-2 inhibitor (empagliflozin, canagliflozin) is a preferred add-on — it lowers glucose independent of insulin, promotes weight loss, and reduces CV/renal events. DPP-4 inhibitors, amylin analogues and dopamine agonists are less preferred."
+    },
+    {
+      "answer": "Metformin",
+      "explanation": "JT has lactic acidosis (nausea, shaky, likely acidotic) — a rare but serious adverse effect of metformin, especially in patients with renal impairment or hypoxia. Glyburide, acarbose and pioglitazone do not cause lactic acidosis."
+    },
+    {
+      "answer": "Exenatide",
+      "explanation": "James D is obese and poorly controlled on glyburide + metformin. Exenatide (GLP-1 receptor agonist) promotes weight loss, reduces appetite, and improves glycaemic control — ideal add-on for obesity. Sitagliptin is weight-neutral, pioglitazone causes weight gain, glimepiride causes weight gain."
+    },
+    {
+      "answer": "Amiodarone",
+      "explanation": "Amiodarone (used for atrial fibrillation) causes hypothyroidism (or hyperthyroidism) because of its high iodine content — presenting with signs of hypothyroidism in this cardiac patient. Metoprolol, insulin and HCTZ do not cause hypothyroidism."
+    },
+    {
+      "answer": "Levothyroxine",
+      "explanation": "Levothyroxine (T4) is the preparation of choice for hypothyroidism — stable, once-daily oral dosing with reliable replacement. Liothyronine (T3) is used in specific circumstances (myxedema coma adjunct); PTU and methimazole are antithyroid drugs."
+    },
+    {
+      "answer": "Oral prednisolone for SLE",
+      "explanation": "Long-term high-dose systemic steroids (prednisolone for SLE) cause osteoporosis — the concern flagged in the check-up. Inhaled fluticasone, physiologic hydrocortisone replacement for Addison's, and topical dexamethasone have minimal systemic bone effects."
+    },
+    {
+      "answer": "Fludrocortisone",
+      "explanation": "Fludrocortisone is the mineralocorticoid used to manage mineralocorticoid deficiency in adrenocortical insufficiency (with glucocorticoid replacement). Hydrocortisone has some mineralocorticoid activity; dexamethasone has none; desoxycorticosterone acetate is rarely used."
+    },
+    {
+      "answer": "Hepatotoxicity",
+      "explanation": "Mineralocorticoid excess causes hypokalaemia, hypertension and fluid overload (congestive heart failure) — but NOT hepatotoxicity. Hepatotoxicity is not a complication of mineralocorticoid treatment."
+    },
+    {
+      "answer": "Gastritis",
+      "explanation": "In Addison's disease, glucocorticoid replacement at recommended dosages most commonly causes gastritis/dyspepsia (GI irritation). Hypokalaemia and hypertension are mineralocorticoid effects; hepatotoxicity is not typical."
+    },
+    {
+      "answer": "Mitotane",
+      "explanation": "Mitotane is the adrenolytic drug of choice for adrenocortical carcinoma — it destroys the adrenal cortex and inhibits steroid synthesis. Spironolactone and aminoglutethimide are alternatives in some settings but mitotane is the classic answer."
+    },
+    {
+      "answer": "Increased macrophage phagocytic action",
+      "explanation": "Glucocorticoids DECREASE (not increase) macrophage phagocytic activity — they suppress it. Inhibition of COX-2 expression, inhibition of kinin/endotoxin activity, and decreased leukocyte responsiveness are all anti-inflammatory mechanisms."
+    },
+    {
+      "answer": "Detemir",
+      "explanation": "Insulin detemir is a long-acting basal insulin with a long duration of action (up to 24 h). Glulisine, lispro and aspart are rapid-acting insulins with short durations."
+    },
+    {
+      "answer": "Hypoglycemia",
+      "explanation": "Hypoglycaemia is the most common complication of insulin therapy (dose, timing, missed meals, exercise). Lipodystrophy is an injection-site issue; gallstones and retinopathy are not complications of insulin."
+    },
+    {
+      "answer": "Bradycardia",
+      "explanation": "Insulin-induced hypoglycaemia causes sympathoadrenal activation — tachycardia/palpitations (not bradycardia), sweating, nausea and anxiety. Bradycardia is NOT associated; it is seen with other causes (e.g., beta-blockers, sick sinus)."
+    },
+    {
+      "answer": "Provide IV infusion of 50% glucose solution",
+      "explanation": "A comatose hypoglycaemic patient cannot take oral glucose. IV 50% dextrose is the most effective immediate management (followed by glucose infusion). Glucagon IM/SC is used when IV access is unavailable."
+    },
+    {
+      "answer": "Glimepiride",
+      "explanation": "Glimepiride is a second-generation sulfonylurea approved for once-daily use. Glyburide and glipizide are also second-generation but glimepiride is the once-daily example in this list; metformin is a biguanide, not a sulfonylurea."
+    },
+    {
+      "answer": "Metformin",
+      "explanation": "Metformin is the oral hypoglycaemic of choice for refractory obesity with insulin resistance — it improves sensitivity, does not cause weight gain (often slight loss), and does not cause hypoglycaemia. Pioglitazone and glibenclamide cause weight gain; acarbose is less effective."
+    },
+    {
+      "answer": "All of the choices",
+      "explanation": "At pharmacologic doses glucagon promotes insulin release from normal pancreatic B cells, catecholamine release from pheochromocytoma, and calcitonin release from medullary carcinoma cells — so 'All of the choices' is correct."
+    },
+    {
+      "answer": "Glucagon",
+      "explanation": "Glucagon activates cardiac beta-adrenergic signalling independently of receptors — it is the treatment for beta-blocker (and calcium-channel blocker) overdose to increase inotropy and chronotropy. Isoproterenol may be ineffective when receptors are blocked."
+    },
+    {
+      "answer": "All of the choices",
+      "explanation": "Rifampin, carbamazepine and phenytoin are hepatic enzyme inducers that increase the metabolism of T4 and T3 — so 'All of the choices' is correct."
+    },
+    {
+      "answer": "Iopanoic acid",
+      "explanation": "Iopanoic acid (oral cholecystographic contrast) inhibits 5'-deiodinase, blocking peripheral conversion of T4 to T3 — used historically in thyroid storm. Rifampin induces metabolism, dopamine and cholestyramine do not inhibit 5'-deiodinase."
+    },
+    {
+      "answer": "Furosemide",
+      "explanation": "Furosemide (and salicylates, phenytoin) displaces thyroid hormones from thyroxine-binding globulin (TBG), transiently raising free T4 (hyperthyroxinemia). Methadone, sucralfate and lithium do not displace thyroid hormones from TBG."
+    },
+    {
+      "answer": "Levothyroxine",
+      "explanation": "Levothyroxine (T4) is the preparation of choice for thyroid replacement therapy — stable pharmacokinetics, once-daily dosing, and reliable conversion to T3 in tissues. Dessicated thyroid is variable; liothyronine has rapid fluctuations; PTU is antithyroid."
+    },
+    {
+      "answer": "Propylthiouracil",
+      "explanation": "PTU is preferred in thyroid storm because it blocks new hormone synthesis AND inhibits peripheral T4→T3 conversion (rapid effect). Propranolol is used but is contraindicated in asthma; dexamethasone also reduces conversion; levothyroxine is contraindicated."
+    },
+    {
+      "answer": "Diethylstilbestrol",
+      "explanation": "Diethylstilbestrol is a synthetic, steroidal compound with potent estrogenic activity (historically used; now for prostate cancer and some indications). Estrone, estradiol and ethinyl estradiol are natural/semi-synthetic estrogens."
+    },
+    {
+      "answer": "Clomiphene",
+      "explanation": "Clomiphene citrate is a SERM that blocks oestrogen negative feedback on the hypothalamus/pituitary, increasing gonadotropin (FSH/LH) release and promoting ovulation in anovulatory women wishing to conceive. Danazol, MPA and tamoxifen do not promote ovulation."
+    },
+    {
+      "answer": "Flutamide",
+      "explanation": "Flutamide is an androgen-receptor antagonist — it does NOT inhibit pituitary TSH release. Somatostatin, dopamine and corticosteroids all inhibit TSH secretion."
+    },
+    {
+      "answer": "Sotalol",
+      "explanation": "Sotalol (a beta-blocker/class III antiarrhythmic) does not affect thyroid hormone synthesis or release. Amiodarone (high iodine), lithium and aminoglutethimide all inhibit thyroid hormone synthesis/release."
+    },
+    {
+      "answer": "Hypertension",
+      "explanation": "Oestrogen therapy causes migraine, cholestasis and weight gain — but hypertension is NOT a typical side effect (oestrogen usually has neutral or slight BP effect; the classic BP effect is associated with older high-dose OCs and is uncommon now)."
+    },
+    {
+      "answer": "Renal failure",
+      "explanation": "Serious contraceptive adverse effects include cancer (rare, e.g., liver), depression and myocardial infarction (VTE/arterial events) — but renal failure is NOT associated with contraceptive use."
+    },
+    {
+      "answer": "Treatment of prostate cancer",
+      "explanation": "Progestins are used for endometriosis, hirsutism and premenstrual syndrome — but NOT for prostate cancer (androgens/antiandrogens, LHRH analogues are used there)."
+    },
+    {
+      "answer": "Tamoxifen",
+      "explanation": "Tamoxifen (SERM) is the adjunct hormonal therapy for oestrogen-receptor-positive breast cancer — blocks oestrogen receptors in breast tissue. Tamsulosin is for BPH, clomiphene for ovulation, danazol for endometriosis."
+    },
+    {
+      "answer": "Finasteride",
+      "explanation": "Finasteride is an orally active 5-alpha-reductase inhibitor that reduces prostate size in BPH (blocks DHT formation). Flutamide and cyproterone are androgen-receptor antagonists; spironolactone is a mineralocorticoid/androgen antagonist."
+    },
+    {
+      "answer": "Leuprolide acetate",
+      "explanation": "Leuprolide acetate (LHRH/GnRH agonist) produces continuous gonadal suppression (initial flare then medical castration) for advanced prostate carcinoma. Ketoconazole inhibits steroidogenesis; methyltestosterone and stanozolol are androgens."
+    },
+    {
+      "answer": "Anastrozole",
+      "explanation": "Anastrozole is a selective nonsteroidal aromatase inhibitor (third-generation) used in hormone-positive breast cancer — blocks oestrogen synthesis. Danazol, clomiphene and norethindrone are not aromatase inhibitors."
+    },
+    {
+      "answer": "Dopamine",
+      "explanation": "Dopamine is the hypothalamic hormone that inhibits prolactin release from the pituitary (prolactin-inhibiting factor). CRH, GnRH and somatostatin have other functions."
+    },
+    {
+      "answer": "Dwarfism",
+      "explanation": "Octreotide (somatostatin analogue) is used for acute variceal bleeding, carcinoid syndrome and gastrinoma — but it is NOT a treatment for dwarfism (growth hormone deficiency). In fact it inhibits GH, potentially worsening growth delay."
+    },
+    {
+      "answer": "Stimulation of prolactin release by the pituitary",
+      "explanation": "TRH stimulates the pituitary to release prolactin (and TSH). It does not directly inhibit thyroxine production, stimulate ACTH, or stimulate growth hormone release."
+    },
+    {
+      "answer": "Dexamethasone",
+      "explanation": "A woman with elevated cortisol and features of Cushing's would be given dexamethasone for the dexamethasone suppression test — dexamethasone suppresses ACTH-dependent cortisol (Cushing's disease) but not adrenal tumours. Fludrocortisone, methylprednisolone and prednisolone are not used for this test."
+    },
+    {
+      "answer": "Mifepristone",
+      "explanation": "Mifepristone is a progesterone-receptor antagonist (abortifacient) that also has antiglucocorticoid activity at higher doses — a drug with multiple unrelated indications acting on more than one receptor type. Fludrocortisone, metyrapone and triamcinolone don't fit."
+    },
+    {
+      "answer": "It is imperative that progestin mini pills be taken at the same time each day",
+      "explanation": "Progestin-only pills must be taken at the same time each day (within 3 hours) because they do not reliably suppress ovulation otherwise — the key counselling point. Mini pills do not cause sterility, do not help acne (unlike combined OCs), and do not have a 2-week grace period."
+    },
+    {
+      "answer": "Increased ALT & AST plasma levels",
+      "explanation": "Long-term anabolic steroid abuse causes hepatotoxicity (elevated ALT/AST), dyslipidaemia (decreased HDL), hypertension and reduced sperm count. Increased ALT/AST is consistent; hypotension, increased HDL and increased sperm count are NOT."
+    },
+    {
+      "answer": "Potassium iodide",
+      "explanation": "Potassium iodide (or Lugol's iodine) rapidly inhibits thyroid hormone RELEASE (Wolff-Chaikoff effect) but should not be given for more than a few weeks. Methimazole/PTU block synthesis slowly; levothyroxine is replacement therapy."
+    },
+    {
+      "answer": "Methimazole",
+      "explanation": "Methimazole selectively inhibits thyroid peroxidase (hormone synthesis) and requires several weeks to produce a euthyroid state. Potassium iodide inhibits release; propranolol is symptomatic; levothyroxine is replacement."
+    },
+    {
+      "answer": "Levothyroxine",
+      "explanation": "Levothyroxine (T4) acts via nuclear thyroid receptors to alter gene expression — the mechanism of thyroid hormone action. Methimazole, potassium iodide and propylthiouracil are antithyroid drugs."
+    },
+    {
+      "answer": "Pramlintide",
+      "explanation": "Pramlintide (amylin analogue) produces CNS-mediated appetite suppression, delays gastric emptying, suppresses glucagon, and reduces postprandial glucose. Exenatide is a GLP-1 agonist (similar but different class); acarbose and saxagliptin don't have CNS effects."
+    },
+    {
+      "answer": "Glargine",
+      "explanation": "Corticosteroid therapy causes hyperglycaemia; insulin glargine (long-acting basal) provides background insulin coverage without pronounced peaks — appropriate for steroid-induced diabetes. Aspart and detemir are alternatives but glargine is the long-acting basal commonly chosen; glyburide is oral."
+    },
+    {
+      "answer": "Transdermal patch",
+      "explanation": "A 38-year-old smoker should avoid oestrogen-containing contraception (increased VTE/MI risk with smoking + age). The transdermal patch contains oestrogen (ethinyl estradiol) — so it is the one to AVOID. DMPA, implant and levonorgestrel IUD are progestin-only and safe."
+    }
+  ],
+  "b": [
+    {
+      "modelAnswer": "a) DRUG (1 mark): Propylthiouracil (PTU) — the antithyroid drug of choice in the FIRST trimester of pregnancy (methimazole is teratogenic — aplasia cutis, embryopathy).\nb) REASON/ALTERNATIVES (if asked): PTU is preferred because methimazole is associated with congenital malformations in early pregnancy; PTU also inhibits peripheral T4→T3 conversion. After the first trimester, methimazole may be used (less hepatotoxicity risk with prolonged PTU). Levothyroxine would be used for hypothyroidism, not hyperthyroidism."
+    },
+    {
+      "modelAnswer": "a) FOUR DRUGS FOR TYPE II DIABETES + HYPERTENSION + HEART FAILURE (4 marks):\n1. Metformin — for type II diabetes (insulin sensitiser; first-line).\n2. ACE inhibitor (e.g., ramipril/enalapril) or ARB — for hypertension AND heart failure (mortality benefit, afterload reduction, renoprotection).\n3. Beta-blocker (e.g., bisoprolol, carvedilol, metoprolol succinate) — for heart failure (mortality benefit) and rate/BP control.\n4. Loop diuretic (furosemide) or mineralocorticoid receptor antagonist (spironolactone/eplerenone) — for fluid overload/congestion in heart failure.\n(Also acceptable: SGLT-2 inhibitor — empagliflozin/dapagliflozin, which benefits diabetes + heart failure; or a long-acting insulin if glycaemic control is inadequate.)\nb) MODE OF ACTION (8 marks):\n- Metformin: activates AMPK in the liver → decreases hepatic gluconeogenesis; increases peripheral insulin sensitivity (muscle/adiopose glucose uptake); does not cause hypoglycaemia or weight gain.\n- ACE inhibitor: inhibits angiotensin-converting enzyme → ↓angiotensin II → vasodilation (↓afterload), ↓aldosterone (↓sodium/water retention) → lowers BP and improves heart-failure remodelling.\n- Beta-blocker: blocks cardiac beta-1 adrenoceptors → ↓heart rate, ↓contractility (O2 demand), ↓renin; in HFrEF, reverses remodelling and reduces arrhythmic death (carvedilol also blocks alpha-1 → vasodilation).\n- Furosemide: inhibits Na+-K+-2Cl− cotransporter in the thick ascending limb → natriuresis/diuresis → ↓preload and congestion.\n- Spironolactone: aldosterone-receptor antagonist → ↓sodium retention, ↓cardiac fibrosis.\n- SGLT-2 inhibitor (if given): blocks renal SGLT2 → glycosuria, natriuresis → glucose lowering, weight loss, preload reduction and CV/renal protection.\nc) FOUR POTENTIAL DRUG-DRUG INTERACTIONS (4 marks):\n1. ACE inhibitor + spironolactone → hyperkalaemia (monitor K+).\n2. Beta-blocker + ACE inhibitor → additive hypotension/bradycardia.\n3. Diuretic + ACE inhibitor → first-dose hypotension; hypovolaemia.\n4. Metformin + loop diuretic → risk of renal impairment/lactic acidosis (monitor renal function); iodinated contrast interaction.\n5. NSAIDs (if added) → reduce antihypertensive/diuretic efficacy and worsen renal function.\n6. Beta-blocker may mask hypoglycaemia symptoms in insulin/sulfonylurea-treated patients."
+    },
+    {
+      "modelAnswer": "DEPO PROVERA vs COMBINED ORAL CONTRACEPTIVE PILLS (3 marks):\nDepo Provera (DMPA, depot medroxyprogesterone acetate): progestin-only injectable given IM/SC every 12 weeks. Mechanism: suppresses ovulation (inhibits LH surge) + thickens cervical mucus + thins endometrium. Advantages: high efficacy, no oestrogen (safe in VTE history/smokers), private, no daily pill. Disadvantages: delayed return of fertility (up to 12–18 months), irregular bleeding/amenorrhea, weight gain, decreased bone density with long use, injection visits.\nCombined oral contraceptive pill (COC): oestrogen (ethinyl estradiol) + progestin, taken daily with a hormone-free interval. Mechanism: suppresses ovulation (inhibits FSH/LH), thickens cervical mucus, alters endometrium. Advantages: cycle control, reversible, treats acne/menorrhagia/PMS, reduces ovarian/endometrial cancer risk. Disadvantages: daily adherence required, oestrogen-related VTE risk (contraindicated in smokers >35, migraine with aura, VTE history), nausea, breast tenderness, breakthrough bleeding."
+    }
+  ],
+  "c": [
+    {
+      "modelAnswer": "CORTICOSTEROIDS:\na) CLASSES AND EXAMPLES (2 marks):\n1. Short-acting (half-life 8–12 h): hydrocortisone, cortisone.\n2. Intermediate-acting (12–36 h): prednisone, prednisolone, methylprednisolone, triamcinolone.\n3. Long-acting (36–72 h): dexamethasone, betamethasone.\n4. Mineralocorticoid (for replacement): fludrocortisone (DOCA historically).\nb) MODE OF ACTION (2 marks): Corticosteroids are lipophilic and diffuse into cells, binding cytoplasmic glucocorticoid receptors → the complex translocates to the nucleus and regulates gene transcription (transactivation/transrepression). Effects: induce lipocortin-1 (inhibits phospholipase A2 → ↓arachidonic acid/prostaglandins/leukotrienes), inhibit COX-2 and cytokine gene expression (↓IL-1, IL-2, IL-6, TNF-α), suppress NF-κB, reduce leukocyte migration/inflammatory cell function, cause lympholysis, and (at higher doses) mineralocorticoid effects.\nc) CLINICAL APPLICATIONS (4 marks):\n- Replacement therapy: Addison's disease (hydrocortisone ± fludrocortisone); congenital adrenal hyperplasia; adrenocortical insufficiency; adrenal crisis.\n- Anti-inflammatory/immunosuppressive: asthma and COPD exacerbations; rheumatoid arthritis and other autoimmune diseases (SLE, vasculitis); inflammatory bowel disease (Crohn's, UC); allergic disorders and anaphylaxis; dermatological conditions (eczema, psoriasis — topical); organ-transplant immunosuppression; nephrotic syndrome.\n- Other: dexamethasone in cerebral oedema/raised ICP; antenatal lung maturation (betamethasone); Cushing's syndrome diagnosis (dexamethasone suppression test); haematological malignancies (ALL, lymphoma, myeloma); palliative care.\nd) SIDE EFFECTS (4 marks):\n- Endocrine/metabolic: hyperglycaemia/diabetes, weight gain, Cushing's features (moon face, buffalo hump), adrenal suppression/withdrawal crisis, growth retardation in children.\n- Musculoskeletal: osteoporosis, avascular necrosis of femoral head, myopathy.\n- GI: peptic ulcer, gastritis, pancreatitis.\n- Immunological: immunosuppression/increased infections, delayed wound healing.\n- CNS: insomnia, mood changes/psychosis, raised intracranial pressure.\n- CVS/fluid: hypertension, fluid retention, hypokalaemia (with high doses).\n- Ocular: cataracts, glaucoma.\ne) CONTRAINDICATIONS (2 marks): Systemic fungal infections (untreated); live-virus vaccines; hypersensitivity to corticosteroids; caution (relative): peptic ulcer disease, uncontrolled diabetes/hypertension, osteoporosis, glaucoma, severe infections (unless treating the infection), pregnancy (weigh risk/benefit), psychosis.\nf) PHARMACOKINETICS (3 marks): Oral corticosteroids are well absorbed; most are highly protein-bound (corticosteroid-binding globulin, albumin). Prednisone is a prodrug converted in the liver to prednisolone. Metabolised in the liver (CYP3A4) and excreted renally as glucuronide/sulphate conjugates. Duration of action depends on half-life (short 8–12 h to long 36–72 h); dexamethasone has no mineralocorticoid activity and a long half-life. In liver disease, prednisolone is preferred.\ng) DRUG-DRUG INTERACTIONS (3 marks):\n- CYP3A4 inducers (rifampicin, phenytoin, carbamazepine, phenobarbital) → increased steroid metabolism, reduced efficacy.\n- CYP3A4 inhibitors (ketoconazole, itraconazole, ritonavir) → increased steroid levels/effects.\n- NSAIDs/aspirin → additive GI ulceration/bleeding.\n- Diuretics (loop/thiazide) → additive hypokalaemia.\n- Oral hypoglycaemics/insulin → reduced glycaemic control (dose adjustment needed).\n- Vaccines (live) → increased risk of disseminated infection in immunosuppressed patients.\n- Digoxin → hypokalaemia increases digoxin toxicity.\n- Warfarin → altered anticoagulant effect (monitor INR)."
+    }
+  ]
+}

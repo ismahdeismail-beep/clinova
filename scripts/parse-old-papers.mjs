@@ -19,6 +19,13 @@ const PICKS = {
   '5111': 'pharmacology_kabarak_university_PHAM_5111_PHARMACOLOGY_XI.txt',
   '5112': 'pharmacology_kabarak_university_PHAM_5112_PHARMACOLOGY_XII_Exam_draft_MayAug2021.txt',
   '5314': 'pharmacology_kabarak_university_PHAM_5314Pharmacology_XIV_(Toxicology_and_drug_discovery_and_development).txt',
+  // Second sittings (variant 2) — genuinely different exam papers for the same units.
+  // NOTE: the 'Exam_MayAug2021' files for 3306/5111 are byte-identical duplicates of the
+  // regular papers (NOT second sittings) — the real distinct papers are the older sittings
+  // (July 2019 regular for 3306, special/resit 60-MCQ for 5111 & 5112).
+  '3306b': 'pharmacology_kabarak_university_PHAM_3306_PHARMACOLOGY_VI.txt',
+  '5111b': 'pharmacology_kabarak_university_PHAM_5111_PHARMACOLOGY_XI_(ANTICANCER,_DERMATOLOGIC_&_OCULAR).txt',
+  '5112b': 'pharmacology_kabarak_university_PHAM_5112_PHARMACOLOGY_XII_(VITAMINS_&_ENDOCRINE).txt',
 }
 
 const TITLES = {
@@ -34,6 +41,9 @@ const TITLES = {
   '5111': 'Pharmacology XI — Anticancer, Dermatological & Ocular Drugs',
   '5112': 'Pharmacology XII — Vitamins, Hormones & Endocrine Pharmacology',
   '5314': 'Pharmacology XIV — Toxicology & Drug Discovery',
+  '3306b': 'Pharmacology VI — Cardiovascular Pharmacology (July 2019)',
+  '5111b': 'Pharmacology XI — Anticancer, Dermatological & Ocular Drugs (Special Exam)',
+  '5112b': 'Pharmacology XII — Vitamins, Hormones & Endocrine Pharmacology (Special Exam)',
 }
 
 // ---------------------------------------------------------------- mojibake
@@ -213,7 +223,9 @@ function parsePaper(file, code) {
 
 fs.mkdirSync(DEST, { recursive: true })
 let total = 0
+const only = process.argv[2] // optional: re-parse a single paper (e.g. '3306b') without touching curated JSONs
 for (const [code, file] of Object.entries(PICKS)) {
+  if (only && code !== only) continue
   const paper = parsePaper(file, code)
   fs.writeFileSync(path.join(DEST, code + '.json'), JSON.stringify(paper, null, 2))
   const a = paper.sections.A

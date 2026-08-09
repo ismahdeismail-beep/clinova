@@ -1,0 +1,261 @@
+{
+  "code": "5111b",
+  "a": [
+    {
+      "answer": "Filgrastim",
+      "explanation": "Six days after chemotherapy the patient is neutropenic (leukocyte count 100/mm3 with 5% neutrophils) and febrile — febrile neutropenia. Filgrastim (G-CSF) stimulates granulocyte production and is the appropriate pharmacotherapy to raise the leukocyte count. Leucovorin rescues methotrexate toxicity, dexamethasone is an antiemetic/steroid, and interferon alfa has antiviral/immunomodulatory roles."
+    },
+    {
+      "answer": "Vincristine",
+      "explanation": "Progressive numbness and weakness of hands/feet (symmetric peripheral neuropathy) after chemotherapy is classic vincristine-induced peripheral neuropathy (microtubule inhibitor → axonal damage). Bleomycin causes pulmonary fibrosis, cyclophosphamide causes haemorrhagic cystitis, and doxorubicin causes cardiotoxicity."
+    },
+    {
+      "answer": "Timolol",
+      "explanation": "A nonselective beta-blocker eyedrop (timolol) can be absorbed systemically and precipitate bronchospasm in a smoker/COPD/asthmatic — worsening shortness of breath. Apraclonidine (alpha-2 agonist), epinephrine and latanoprost (prostaglandin analogue) do not cause bronchospasm."
+    },
+    {
+      "answer": "Explain the adverse effects this herbal supplement has on the patient's treatment",
+      "explanation": "Madagascar periwinkle contains vinca alkaloids (vincristine/vinblastine). The herbal supplement adds to the patient's chemotherapy (vincristine) — potentiating myelosuppression and neurotoxicity. The correct response is to explain the supplement's adverse interaction with his treatment. Asking him to stop outright or continuing silently is incomplete; multivitamins don't address the interaction."
+    },
+    {
+      "answer": "Trastuzumab",
+      "explanation": "Trastuzumab (anti-HER2/neu monoclonal antibody) is used for HER2-overexpressing breast cancer and is well known to cause cardiotoxicity — congestive heart failure (reversible cardiomyopathy). Bevacizumab causes hypertension/bleeding, imatinib causes oedema/hepatotoxicity, rituximab causes infusion reactions."
+    },
+    {
+      "answer": "Thrombembolic events",
+      "explanation": "SERMs (raloxifene, tamoxifen) increase the risk of venous thromboembolism (DVT/PE) — the major warning when prescribing raloxifene. They do not increase infections, severe N+V, or secondary leukaemia (that is more associated with alkylators/topoisomerase II inhibitors)."
+    },
+    {
+      "answer": "Paclitaxel",
+      "explanation": "A plant product that 'enhances' (stabilizes) tubulin polymerization and inhibits depolymerisation, causing mitotic arrest, is a taxane — paclitaxel. Vincristine/vinblastine do the opposite (inhibit tubulin polymerisation). Etoposide and topotecan are topoisomerase inhibitors."
+    },
+    {
+      "answer": "Methotrexate",
+      "explanation": "Leucovorin (folinic acid) rescue is given to protect normal cells from high-dose methotrexate toxicity (DHFR inhibition). In osteosarcoma neoadjuvant therapy (doxorubicin + cisplatin + high-dose methotrexate), leucovorin rescues normal tissues from methotrexate."
+    },
+    {
+      "answer": "Peripheral neuropathy",
+      "explanation": "Paclitaxel (taxane) adjuvant therapy causes dose-limiting peripheral neuropathy (and alopecia, myelosuppression) — in addition to alopecia and nausea/vomiting. Heart failure is doxorubicin's hallmark; haemorrhagic cystitis is cyclophosphamide's; nephrotoxicity is cisplatin's."
+    },
+    {
+      "answer": "Increased cellular efflux of drugs",
+      "explanation": "Multidrug resistance to multiple chemotherapeutic drugs is most commonly caused by increased efflux via P-glycoprotein (MDR1) — pumping drugs out of the cell. Amplification of target/metabolizing enzymes and increased DNA repair cause narrower, single-agent resistance."
+    },
+    {
+      "answer": "Adriamycin",
+      "explanation": "Adriamycin (doxorubicin) in ABVD (and MOPP's derivatives) causes cumulative dose-dependent cardiomyopathy leading to CHF years later. Bleomycin causes pulmonary fibrosis; dacarbazine and prednisone are not cardiotoxic."
+    },
+    {
+      "answer": "Bleomycin",
+      "explanation": "Shortness of breath in an ABVD-treated patient suggests bleomycin pulmonary toxicity (pneumonitis/fibrosis) — a hallmark dose-limiting effect. Doxorubicin causes cardiac toxicity, vinblastine neuropathy, dacarbazine myelosuppression/N+V."
+    },
+    {
+      "answer": "imatinib",
+      "explanation": "CML is driven by the BCR-ABL fusion (Philadelphia chromosome). Imatinib, a BCR-ABL tyrosine kinase inhibitor, is the standard targeted therapy. Busulphan, cyclophosphamide and trastuzumab are not first-line for CML."
+    },
+    {
+      "answer": "Methotrexate",
+      "explanation": "Leucovorin rescue 'releases' the block of methotrexate by providing reduced folate — the efficacy of methotrexate against cancer is increased when combined with leucovorin rescue in high-dose regimens (protects normal cells, allowing higher MTX doses)."
+    },
+    {
+      "answer": "Bleomycin",
+      "explanation": "Bleomycin chelates iron and generates free radicals that cause DNA strand breaks — intercalation with iron-dependent radical formation is its mechanism. Doxorubicin also intercalates but its signature is topoisomerase II inhibition + free radicals; the iron/strand-break description fits bleomycin best."
+    },
+    {
+      "answer": "Latanoprost",
+      "explanation": "Latanoprost (prostaglandin F2α analogue) is used topically once daily for open-angle glaucoma (increases uveoscleral outflow). Pilocarpine is a miotic used multiple times daily; tropicamide is a mydriatic; carteolol is a beta-blocker used twice daily."
+    },
+    {
+      "answer": "Nivolumab",
+      "explanation": "Nivolumab (anti-PD-1 checkpoint inhibitor) in melanoma commonly causes immune-related vitiligo (melanocyte destruction). Ipilimumab causes colitis/dermatitis; vemurafenib (BRAF) causes rash/photosensitivity; trametinib (MEK) causes rash."
+    },
+    {
+      "answer": "Phenylephrine",
+      "explanation": "Tropicamide (antimuscarinic mydriatic/cycloplegic) causes blurred near vision and photophobia. To reverse the mydriasis the ophthalmologist would use pilocarpine (muscarinic agonist miotic). Phenylephrine is an alpha-agonist mydriatic used in fundoscopy — of the options, the one used in funduscopic examination (dilating) is phenylephrine."
+    },
+    {
+      "answer": "Betamethasone valerate ointment",
+      "explanation": "Palmar psoriasis (thick skin) responds best to a potent topical corticosteroid such as betamethasone valerate. Hydrocortisone 1% is too weak for palms; oral prednisolone risks rebound pustular psoriasis; emollients alone are insufficient."
+    },
+    {
+      "answer": "D. Cisplatin",
+      "explanation": "Cisplatin is a highly emetogenic chemotherapeutic (requires prophylactic NK1/5-HT3 + dexamethasone). Vincristine, chlorambucil and 6-mercaptopurine are low–moderate emetogenic."
+    },
+    {
+      "answer": "Cyclophosphamide",
+      "explanation": "Cyclophosphamide is a prodrug activated by hepatic cytochrome P-450 (CYP2B6/3A4) to phosphoramide mustard (active alkylating species). 5-FU, doxorubicin and methotrexate are not P-450-activated prodrugs."
+    },
+    {
+      "answer": "B. Lymphoid tissue",
+      "explanation": "Chlorambucil, a nitrogen-mustard alkylating agent, preferentially targets lymphoid tissue — it is used in chronic lymphocytic leukaemia and lymphomas. Myeloid tissue is more affected by busulphan."
+    },
+    {
+      "answer": "B. Procarbazine",
+      "explanation": "Procarbazine inhibits aldehyde dehydrogenase and causes a disulfiram-like reaction with alcohol (flushing, tachycardia, nausea). It is part of the MOPP regimen. Dacarbazine, melphalan and hydroxyurea do not cause this."
+    },
+    {
+      "answer": "Vincristine",
+      "explanation": "A plant alkaloid (Catharanthus roseus) causing peripheral neuropathy, significant alopecia and minimal myelosuppression is vincristine. Vinblastine causes more myelosuppression and less neuropathy; cytarabine and etoposide are not plant alkaloids."
+    },
+    {
+      "answer": "Doxorubicin",
+      "explanation": "Doxorubicin (anthracycline) acts by multiple mechanisms: DNA intercalation, topoisomerase II inhibition (blocking DNA synthesis and causing strand breaks), and free-radical generation. It is the classic multi-mechanism anthracycline."
+    },
+    {
+      "answer": "Bevacizumab",
+      "explanation": "Bevacizumab is a monoclonal antibody against VEGF-A that inhibits tumour angiogenesis. Anastrozole and exemestane are aromatase inhibitors; imatinib is a kinase inhibitor."
+    },
+    {
+      "answer": "Telomerase",
+      "explanation": "Telomerase is the enzyme that maintains telomere length, allowing cells to escape replicative senescence — a target in cancer therapy. Aromatase synthesises oestrogen, CD20 is a B-cell marker, topoisomerase unwinds DNA."
+    },
+    {
+      "answer": "Imatinib",
+      "explanation": "Imatinib (tyrosine kinase inhibitor of BCR-ABL) is now preferred for chronic myeloid leukaemia. Busulphan is an older alkylating agent; the question asks for the alkylating agent 'preferred for CML' — historically busulphan was used, but with imatinib listed, imatinib is the correct modern answer for CML management."
+    },
+    {
+      "answer": "Myelosuppression",
+      "explanation": "Myelosuppression (bone marrow depression) is the dose-limiting major toxicity of alkylating agents (nitrogen mustards, busulphan, cyclophosphamide). Alopecia occurs but is not the major dose-limiting toxicity."
+    },
+    {
+      "answer": "Decreased HGPRT activity",
+      "explanation": "Resistance to 6-MP and 6-TG (purine antimetabolites) most commonly results from decreased HGPRT (hypoxanthine-guanine phosphoribosyltransferase) activity, since these prodrugs require HGPRT activation to nucleotides. Increased DHFR causes MTX resistance; efflux causes MDR resistance."
+    },
+    {
+      "answer": "Fluorouracil",
+      "explanation": "Fluorouracil (5-FU) is used systemically for adenocarcinomas (colon, breast, gastric) and topically for skin cancers (actinic keratosis, basal cell); it inhibits thymidylate synthase and DNA synthesis. Cytarabine is for leukaemia; vinblastine and cladribine are not used topically for skin cancer."
+    },
+    {
+      "answer": "Mercaptopurine",
+      "explanation": "Allopurinol inhibits xanthine oxidase, the enzyme that inactivates 6-mercaptopurine — co-administration causes excessive 6-MP toxicity (myelosuppression). Thioguanine is inactivated differently (not by XO to the same degree); therefore mercaptopurine is the classic interaction."
+    },
+    {
+      "answer": "Vinblastine",
+      "explanation": "Vinca alkaloids (vinblastine, vincristine) bind tubulin and inhibit polymerisation → depolymerization of microtubules and mitotic arrest. Azatadine is an antihistamine; cladribine and methotrexate are antimetabolites."
+    },
+    {
+      "answer": "Topotecan",
+      "explanation": "Topotecan is a topoisomerase I inhibitor used in metastatic ovarian cancer; its dose-limiting toxicities are neutropenia and thrombocytopenia. Vincristine, doxorubicin and mitomycin are not topoisomerase I inhibitors with this indication."
+    },
+    {
+      "answer": "Etoposide",
+      "explanation": "Etoposide is a topoisomerase II inhibitor active in the late S–G2 phase of the cell cycle. Topotecan is topoisomerase I; vincristine and paclitaxel are microtubule agents."
+    },
+    {
+      "answer": "Irinotecan",
+      "explanation": "Irinotecan is a prodrug activated to SN-38, a topoisomerase I inhibitor used in fluorouracil-nonresponsive colon cancer; its dose-limiting toxicity is delayed diarrhoea (plus myelosuppression). Vincristine, paclitaxel and docetaxel are microtubule agents."
+    },
+    {
+      "answer": "Daunorubicin",
+      "explanation": "Daunorubicin is the anthracycline whose major clinical use is in acute leukaemias (AML/ALL). Doxorubicin is used for solid tumours/lymphomas; dactinomycin for Wilms/EWing sarcoma; bleomycin for lymphomas/testicular."
+    },
+    {
+      "answer": "D. Ameliorate cystitis caused by them",
+      "explanation": "Mesna binds and inactivates acrolein (the urotoxic metabolite of cyclophosphamide/ifosfamide) in the urinary tract, preventing haemorrhagic cystitis. It does not potentiate cytotoxicity, retard excretion, or block emesis."
+    },
+    {
+      "answer": "Mitomycin",
+      "explanation": "Mitomycin is an antibiotic anticancer drug bioactivated (by reductive activation) to an alkylating agent; it is selectively toxic to hypoxic solid-tumour cells. Doxorubicin, vincristine and plicamycin do not fit this description."
+    },
+    {
+      "answer": "Idarubicin",
+      "explanation": "Idarubicin is an anthracycline analogue used in acute myeloid leukaemia, often combined with cytarabine (ARA-C); cardiotoxicity (congestive heart failure) can occur in combination. Plicamycin, bleomycin and paclitaxel are not anthracyclines."
+    },
+    {
+      "answer": "Plicamycin",
+      "explanation": "Plicamycin (mithramycin) inhibits osteoclasts and lowers serum calcium — used in hypercalcaemia of malignancy (independent of antitumour action). Dactinomycin, doxorubicin and bleomycin do not have this calciotropic action."
+    },
+    {
+      "answer": "Colon cancer",
+      "explanation": "Colon cancer is relatively chemoresistant, while choriocarcinoma and testicular cancer are highly curable with chemo; diffuse large B-cell lymphoma is also chemo-sensitive. Colon cancer (solid, relatively resistant) is the answer."
+    },
+    {
+      "answer": "Drugs more beneficial if major toxicities are non-overlapping",
+      "explanation": "A key dosing principle of combination chemotherapy: combine drugs with non-overlapping toxicities so full doses of each can be given, maximising tumour kill while limiting side effects. Low-dose frequent administration, infrequent dosing and 'rarely effective in combination' are incorrect."
+    },
+    {
+      "answer": "All of the choices",
+      "explanation": "Melphalan, chlorambucil and cyclophosphamide are all nitrogen-mustard alkylating agents that can be administered orally — hence 'All of the choices'."
+    },
+    {
+      "answer": "Streptozocin",
+      "explanation": "Streptozocin (nitrosourea) is selectively toxic to pancreatic islet beta cells — used for insulin-secreting islet cell carcinomas (and sometimes carcinoid/NHL). Busulfan, cyclophosphamide and thiotepa do not share this selectivity."
+    },
+    {
+      "answer": "Cisplatin",
+      "explanation": "Cisplatin is given with bleomycin and vinblastine (BEP regimen) for non-seminomatous testicular cancer. Dacarbazine, procarbazine and altretamine are not part of this regimen."
+    },
+    {
+      "answer": "Nausea and vomiting",
+      "explanation": "Cisplatin causes severe acute (and delayed) nausea and vomiting — highly emetogenic, requiring aggressive antiemetic prophylaxis. Renal dysfunction and ototoxicity are significant but the major ACUTE side effect is N+V."
+    },
+    {
+      "answer": "Nephrotoxicity and gout",
+      "explanation": "Purine antagonists cause rapid tumour lysis → hyperuricaemia → nephrotoxicity and gout. Allopurinol (xanthine oxidase inhibitor) is co-administered to prevent uric acid nephropathy and gouty attacks."
+    },
+    {
+      "answer": "Myelosuppression",
+      "explanation": "Carboplatin's dose-limiting toxicity is myelosuppression (thrombocytopenia), unlike cisplatin whose dose-limiting toxicity is nephrotoxicity. Hepatotoxicity and cardiotoxicity are not dose-limiting for carboplatin."
+    },
+    {
+      "answer": "Oxaliplatin",
+      "explanation": "Oxaliplatin causes dose-limiting peripheral neurotoxicity (acute cold-induced dysaesthesia and chronic neuropathy). Cisplatin's dose-limiting toxicity is nephrotoxicity/ototoxicity; carboplatin's is myelosuppression."
+    },
+    {
+      "answer": "Non-small-cell lung cancer",
+      "explanation": "Cytarabine (ara-C) is used primarily for acute leukaemias (AML, ALL) and high-grade lymphomas — NOT non-small-cell lung cancer. NSCLC is treated with other agents (platinum doublets, taxanes, targeted therapy)."
+    },
+    {
+      "answer": "All of the choices",
+      "explanation": "5-Fluorouracil is used for head and neck cancer, hepatocellular cancer, and anal cancer — so 'All of the choices' is correct."
+    },
+    {
+      "answer": "Breast cancer",
+      "explanation": "Gemcitabine is a pyrimidine antimetabolite used primarily for pancreatic cancer, non-small-cell lung cancer, bladder cancer and breast cancer. Hodgkin's lymphoma and soft tissue sarcoma are not primary uses."
+    },
+    {
+      "answer": "All of the choices",
+      "explanation": "Dactinomycin commonly causes diarrhoea, mucosal ulceration and glossitis (GI mucositis) — so 'All of the choices' is correct."
+    },
+    {
+      "answer": "Clobetasone butyrate cream",
+      "explanation": "Clobetasone butyrate (e.g., 0.05%) is a very potent (Class I) topical corticosteroid — more potent than clobetasone propionate, hydrocortisone, or mometasone furoate ointment (potent but not the most potent). Note: clobetasol propionate would be the strongest; among the options clobetasone butyrate is the most potent."
+    },
+    {
+      "answer": "Selenium sulphide shampoo",
+      "explanation": "Pityriasis versicolor (Malassezia) is best treated topically with selenium sulphide shampoo (or ketoconazole shampoo) applied to affected skin. Permethrin is for scabies/lice, benzyl benzoate for scabies, amphotericin B IV for systemic fungal infection."
+    },
+    {
+      "answer": "Imiquimod cream",
+      "explanation": "Imiquimod (immune response modifier) is used for actinic keratosis, basal cell carcinoma and genital warts — NOT for eczema. Urea cream, tacrolimus ointment (calcineurin inhibitor) and betamethasone cream are all used in eczema."
+    },
+    {
+      "answer": "Pegaptanib",
+      "explanation": "Pegaptanib is an anti-VEGF aptamer (monoclonal-type RNA aptamer) used intravitreally for wet macular degeneration. Bevacizumab is used off-label for AMD; of the options, pegaptanib is the agent specifically approved and described as an aptamer/monoclonal-type for macular degeneration."
+    },
+    {
+      "answer": "Bacitracin",
+      "explanation": "Bacitracin ointment is applied topically to the eyelid margin for blepharitis. Trifluridine is an antiviral for herpetic keratitis (not topical on skin); ciprofloxacin and natamycin are eye drops for bacterial/fungal keratitis."
+    },
+    {
+      "answer": "Loratadine tablets",
+      "explanation": "Recurrent urticaria is best managed with a non-sedating H1 antihistamine (loratadine) as first-line. Montelukast is add-on for chronic urticaria, oral prednisolone only for severe flares, and topical steroids are not useful for urticaria."
+    }
+  ],
+  "b": [
+    {
+      "modelAnswer": "a) THREE CLASSES OF DRUGS FOR PRIMARY OPEN-ANGLE GLAUCOMA WITH EXAMPLES (3 marks):\n1. Prostaglandin analogues — latanoprost, travoprost, bimatoprost (increase uveoscleral outflow).\n2. Beta-blockers — timolol, carteolol, betaxolol (decrease aqueous humour production).\n3. Alpha-2 adrenergic agonists — brimonidine, apraclonidine (decrease aqueous production + increase uveoscleral outflow).\n(Also acceptable: carbonic anhydrase inhibitors — dorzolamide, brinzolamide; miotics/parasympathomimetics — pilocarpine; or a combination.)\nb) MODE OF ACTION OF THE ABOVE DRUGS (6 marks):\n- Prostaglandin analogues: bind FP receptors on the ciliary body → relax ciliary muscle and remodel extracellular matrix → increase uveoscleral (alternate) outflow of aqueous humour → lower intraocular pressure (IOP).\n- Beta-blockers (timolol): block beta-1/beta-2 adrenoceptors on the non-pigmented ciliary epithelium → reduce cyclic AMP → decrease aqueous humour formation (by ~20–30%) → lower IOP.\n- Alpha-2 agonists (brimonidine): stimulate prejunctional alpha-2 receptors → reduce aqueous production and enhance uveoscleral outflow; also have a neuroprotective effect.\n- Carbonic anhydrase inhibitors (if given): inhibit carbonic anhydrase in ciliary epithelium → reduce bicarbonate and aqueous formation.\n- Miotics (pilocarpine): stimulate muscarinic receptors → ciliary muscle contraction → pull on scleral spur → open trabecular meshwork → increase conventional outflow."
+    },
+    {
+      "modelAnswer": "a) TWO CLASSES OF KINASE INHIBITORS WITH EXAMPLES (2 marks):\n1. Tyrosine kinase inhibitors (TKIs) — imatinib (BCR-ABL), erlotinib/gefitinib (EGFR), sunitinib/sorafenib (VEGFR/PDGFR), lapatinib (HER2/EGFR).\n2. Serine/threonine kinase inhibitors — vemurafenib (BRAF), trametinib (MEK), everolimus/temsirolimus (mTOR kinase).\nb) TWO CLINICAL APPLICATIONS OF EACH (4 marks):\n- Imatinib: chronic myeloid leukaemia (BCR-ABL); GIST (KIT/PDGFRα-positive gastrointestinal stromal tumours); also Ph+ ALL.\n- Erlotinib/gefitinib: EGFR-mutant non-small-cell lung cancer; pancreatic cancer (erlotinib).\n- Sunitinib/sorafenib: renal cell carcinoma; hepatocellular carcinoma (sorafenib); GIST (sunitinib second-line).\n- Vemurafenib: BRAF V600E-mutant melanoma; hairy-cell leukaemia (off-label).\n- Everolimus: advanced renal cell carcinoma; everolimus-eluting stents / tuberous sclerosis; neuroendocrine tumours."
+    },
+    {
+      "modelAnswer": "TWO TOPICAL DRUGS FOR ACNE AND MODE OF ACTION (5 marks):\n1. Benzoyl peroxide (2.5–10% gel/cream): releases free-radical oxygen → oxidises and kills Cutibacterium (Propionibacterium) acnes; also mild comedolytic and reduces inflammation. Used alone or with antibiotics/clindamycin.\n2. Topical retinoid — tretinoin (adapalene, isotretinoin gel): binds retinoic-acid receptors → normalises follicular keratinisation → prevents microcomedone formation and reduces comedones; anti-inflammatory.\n3. Topical antibiotic — clindamycin (1% lotion/gel): inhibits bacterial protein synthesis (50S ribosome) → reduces C. acnes colonisation and inflammatory lesions; usually combined with benzoyl peroxide to reduce resistance.\n4. Azelaic acid (15–20%): inhibits bacterial protein synthesis and reduces keratinisation; useful in acne with hyperpigmentation.\n(Answer two with mechanism — e.g., benzoyl peroxide + clindamycin, or adapalene + benzoyl peroxide.)"
+    }
+  ],
+  "c": [
+    {
+      "modelAnswer": "CHOPP IN NON-HODGKIN'S LYMPHOMA:\na) DRUGS REPRESENTED BY CHOPP (4 marks):\nC = Cyclophosphamide\nH = Hydroxydaunorubicin (Doxorubicin, Adriamycin)\nO = Oncovin (Vincristine)\nP = Prednisone (prednisolone)\nP = Procarbazine\n(Note: classic regimens are CHOP [without the second P] or C-MOPP; the question's CHOPP adds procarbazine — credit the five letters as written.)\nb) MODE OF ACTION OF EACH DRUG (8 marks):\n- Cyclophosphamide: nitrogen-mustard alkylating agent; hepatic P-450 activation to phosphoramide mustard → alkylates/cross-links DNA (N7 of guanine) → blocks DNA replication → cell death (cell-cycle non-specific).\n- Doxorubicin (hydroxydaunorubicin): anthracycline antibiotic — intercalates between DNA base pairs and inhibits topoisomerase II → DNA strand breaks; also generates free radicals via iron-dependent redox cycling → DNA/membrane damage; inhibits DNA/RNA synthesis.\n- Vincristine (oncovin): vinca alkaloid — binds beta-tubulin and inhibits microtubule polymerisation → metaphase arrest (M-phase specific); disrupts mitotic spindle.\n- Prednisone: glucocorticoid — binds cytoplasmic glucocorticoid receptor → modulates gene transcription; induces apoptosis in lymphoid cells (lympholytic); anti-inflammatory and anti-lymphoma effect.\n- Procarbazine: methylhydrazine derivative — activated to a methyl-diazonium cation that methylates/alkylates DNA; inhibits DNA, RNA and protein synthesis; also a MAO inhibitor (hence dietary/tyramine and alcohol cautions).\nc) TWO SIDE EFFECTS OF EACH DRUG (8 marks):\n- Cyclophosphamide: haemorrhagic cystitis (acrolein metabolite — prevent with hydration + mesna); myelosuppression (leukopenia); alopecia; SIADH; secondary malignancy (bladder).\n- Doxorubicin: dose-dependent cardiotoxicity (cardiomyopathy/CHF — cumulative >450–550 mg/m2); myelosuppression; mucositis/stomatitis; alopecia; red urine.\n- Vincristine: peripheral neuropathy (areflexia, paraesthesia, foot drop); constipation/ileus (autonomic neuropathy); alopecia; SIADH; (spares marrow).\n- Prednisone: hyperglycaemia; immunosuppression/infection; Cushing's features (weight gain, moon face); osteoporosis; GI ulceration; mood changes; adrenal suppression.\n- Procarbazine: myelosuppression; N+V; disulfiram-like reaction with alcohol; MAO-inhibitor interactions (hypertensive crisis with tyramine); CNS depression."
+    }
+  ]
+}

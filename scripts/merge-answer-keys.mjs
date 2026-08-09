@@ -2,7 +2,9 @@
 // OLD pharmacology papers file (src/data/examPrepPapersOldPharm.ts).
 // - A questions get { answer, explanation } (answer must exactly match an option string)
 // - B/C questions get { modelAnswer }
-// Run after scripts/convert-parsed-papers.mjs. Validates counts before writing.
+// - Variant 1 = latest regular paper per unit; variant 2 = real second sitting where one
+//   exists (July 2019 for Cardiovascular; Special Exam for Anticancer/Derm/Ocular and
+//   Vitamins/Hormones). Run after scripts/convert-parsed-papers.mjs. Validates counts before writing.
 import { readFileSync, writeFileSync } from 'fs'
 
 const UNITS = [
@@ -20,11 +22,17 @@ const UNITS = [
   ['5314', 'pharm-toxicology', 'Toxicology & Drug Discovery', 'pharm-toxicology.json'],
 ]
 
+// Real second sittings (variant 2) — genuinely distinct papers parsed as <code>b
+const SECOND_SITTINGS = {
+  '3306': ['3306b', 'Cardiovascular Pharmacology (July 2019)', 'pharm-cardiovascular-v2.json'],
+  '5111': ['5111b', 'Anticancer, Dermatological & Ocular Drugs (Special Exam)', 'pharm-cancer-derm-ocular-v2.json'],
+  '5112': ['5112b', 'Vitamins, Hormones & Endocrine Pharmacology (Special Exam)', 'pharm-vitamins-hormones-v2.json'],
+}
+
 const MARKS = { A: 30, B: 40, C: 30 }
 const NAMES = { A: 'Multiple Choice Questions', B: 'Short Answer Questions', C: 'Long Answer Questions' }
 
-const record = {}
-for (const [code, slug, title, keyFile] of UNITS) {
+function buildVariant(code, slug, title, keyFile, variant) {
   const p = JSON.parse(readFileSync('scripts/out/parsed-papers/' + code + '.json', 'utf8'))
   const k = JSON.parse(readFileSync('scripts/out/answer-keys/' + keyFile, 'utf8'))
 
@@ -60,10 +68,17 @@ for (const [code, slug, title, keyFile] of UNITS) {
     })
     sections.push({ letter, name: NAMES[letter], marks: MARKS[letter], questions })
   }
-  record[slug] = {
-    1: { title, variant: 1, sections },
+  return { title, variant, sections }
+}
+
+const record = {}
+for (const [code, slug, title, keyFile] of UNITS) {
+  record[slug] = { 1: buildVariant(code, slug, title, keyFile, 1) }
+  if (SECOND_SITTINGS[code]) {
+    const [bCode, bTitle, bKeyFile] = SECOND_SITTINGS[code]
+    record[slug][2] = buildVariant(bCode, slug, bTitle, bKeyFile, 2)
   }
-  console.log(slug, '| A=' + k.a.length, 'B=' + k.b.length, 'C=' + k.c.length, '-> merged')
+  console.log(slug, '| A=' + record[slug][1].sections[0].questions.length, 'B=' + record[slug][1].sections[1].questions.length, 'C=' + record[slug][1].sections[2].questions.length)
 }
 
 const header = `// AUTO-GENERATED from the real OLD-curriculum past papers (scripts/out/parsed-papers, latest paper per unit).

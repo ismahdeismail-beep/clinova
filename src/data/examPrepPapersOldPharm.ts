@@ -2507,6 +2507,317 @@ export const EXAM_PREP_PAPERS_OLD_PHARM: Record<string, Record<number, Generated
           ]
         }
       ]
+    },
+    "2": {
+      "title": "Cardiovascular Pharmacology (July 2019)",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 67-year-old gentleman with a history of poorly controlled diabetes presents to his primary care physician for a routine examination. He is found to be hypertensive on physical exam and is started on a medication that is considered first-line therapy for his condition. What should the physician warn the patient about before the patient takes his first dose of the medication?",
+              "options": [
+                "Hypertensive episodes",
+                "Hypotensive episodes",
+                "Hyperthermic episodes",
+                "Hypothermic episodes",
+                "Anuric episodes"
+              ],
+              "answer": "Hypotensive episodes",
+              "explanation": "First-dose hypotension is the classic warning for drugs that cause rapid vasodilation or sympathetic blockade (ACE inhibitors, ARBs, alpha-blockers, and nitrates). This patient is being started on first-line antihypertensive therapy, so the physician should warn about syncope/hypotension after the first dose, especially if volume-depleted."
+            },
+            {
+              "stem": "A 27-year-old female with no significant past medical history presents to clinic for an annual evaluation. She has no complaints. Vital signs are as follows: T 37 Celsius, HR 70, BP 159/93, RR 12, and O2 99% on room air. Her BMI is 20.1. Repeat blood pressures on two separate occasions are 157/95 and 161/91. On physical examination, you auscultate just laterally to the umbilicus and detect a low pitched \"wooshing\" sound on each side. In medical management of this patient's hypertension, which medication should be avoided?",
+              "options": [
+                "Hydrochlorothiazide",
+                "Atenolol",
+                "Amlodipine",
+                "Spironolactone",
+                "Lisinopril"
+              ],
+              "answer": "Lisinopril",
+              "explanation": "The low-pitched 'wooshing' bruit just lateral to the umbilicus is a renal artery bruit, suggesting renovascular hypertension. ACE inhibitors (lisinopril) and ARBs are relatively contraindicated in bilateral renal artery stenosis because they dilate the efferent arteriole, dropping glomerular filtration pressure and precipitating acute kidney injury."
+            },
+            {
+              "stem": "A 67-year-old man with a history of diabetes mellitus type II and a previous myocardial infarction presents to your office for a routine examination. His blood pressure is found to be 180/100 mmHg. Which drug is the first-line choice of treatment for this patient's hypertension?",
+              "options": [
+                "Amlodipine",
+                "Hydrochlorothiazide",
+                "Lisinopril",
+                "Prazosin",
+                "Isoproterenol"
+              ],
+              "answer": "Lisinopril",
+              "explanation": "In a diabetic patient with a prior MI and hypertension, an ACE inhibitor is first-line: it lowers blood pressure, improves mortality post-MI, and provides renoprotection (reduces albuminuria, slows diabetic nephropathy progression)."
+            },
+            {
+              "stem": "A 59-year-old man presents to general medical clinic for his yearly checkup. He has no complaints except for a dry cough. He has a past medical history of type II diabetes, hypertension, hyperlipidemia, asthma, and depression. His home medications are sitagliptin/metformin, lisinopril, atorvastatin, albuterol inhaler, and citalopram. His vital signs are stable, with blood pressure 126/79 mmHg. Hemoglobin A1C is 6.3%, and creatinine is 1.3 g/dL. The remainder of his physical exam is unremarkable. If this patient's cough is due to one of the medications he is taking, what would be the next step in management?",
+              "options": [
+                "Change citalopram to escitalopram",
+                "Change lisinopril to metoprolol",
+                "Change lisinopril to amlodipine",
+                "Change atorvastatin to to lovastatin",
+                "Change lisinopril to losartan"
+              ],
+              "answer": "Change lisinopril to losartan",
+              "explanation": "A dry, non-productive cough is the classic ACE-inhibitor adverse effect (bradykinin accumulation). The next step is to switch to an ARB such as losartan, which provides equivalent blood-pressure and renoprotective benefits without the cough. Changing to a beta-blocker (metoprolol) or CCB (amlodipine) does not address the cough mechanism."
+            },
+            {
+              "stem": "A 21-year-old college female presents after her swim practice with persistent palpitations. The palpitations began 3 hours ago during a rigorous swim and are not accompanied by chest pain, shortness of breath, nausea or vomiting. The patient has a documented history of Wolff-Parkinson-White (WPW). She denies recent alcohol or drug use. On physical exam, the patient's blood pressure is 115/70. EKG shows atrial fibrillation with a rate of 170/min. What is the most appropriate next step in management?",
+              "options": [
+                "Procainamide",
+                "Adenosine",
+                "Atenolol",
+                "Diltiazem",
+                "Digoxin"
+              ],
+              "answer": "Procainamide",
+              "explanation": "Atrial fibrillation in Wolff-Parkinson-White syndrome must be treated by blocking conduction down the accessory pathway — not the AV node. AV-nodal blockers (adenosine, digoxin, diltiazem, verapamil) can accelerate conduction through the bypass tract and precipitate ventricular fibrillation. Procainamide (Class IA) slows accessory-pathway conduction and is the appropriate choice."
+            },
+            {
+              "stem": "A 71-year-old man with a history of BPH is hospitalized for an ST-elevation myocardial infarction and undergoes percutaneous coronary intervention. Upon discharge, he is prescribed aspirin, clopidogrel, prazosin, isosorbide mononitrate, carvedilol, enalapril, and atorvastatin. He is scheduled to follow up with his primary care provider 1 week after discharge. Which of the following is the most likely complication of his drug regimen?",
+              "options": [
+                "Torsades de pointes",
+                "Drug-induced hepatitis",
+                "Orthostatic hypotension",
+                "Agranulocytosis",
+                "Seizure"
+              ],
+              "answer": "Orthostatic hypotension",
+              "explanation": "The regimen includes prazosin (a nonselective alpha-1 blocker) combined with carvedilol (alpha+beta blocker), isosorbide mononitrate, and enalapril — a strongly vasodilating, sympatholytic combination. The most likely complication is orthostatic hypotension, especially in an older man with BPH started on prazosin."
+            },
+            {
+              "stem": "A 63-year-old man presents to your office for a routine check-up. He currently has no physical complaints. At his last visit three months ago, he was started on therapeutic lifestyle changes to decrease his blood pressure, which was measured in the 150s/90s on two separate visits. Today, his blood pressure is 154/93. You and the patient agree to start on an antihypertensive medication. The medication that you prescribe for him decreases aldosterone production and serum angiotensin I concentration and increases natriuresis. To which of the following drug classes does this medication belong?",
+              "options": [
+                "Angiotensin converting enzyme (ACE) inhibitor",
+                "Direct renin inhibitor",
+                "Alpha-adrenergic blocker",
+                "Aldosterone receptor antagonist",
+                "Angiotensin receptor blocker (ARB)"
+              ],
+              "answer": "Direct renin inhibitor",
+              "explanation": "Decreased aldosterone production, decreased serum angiotensin I (and angiotensin II), and increased natriuresis are the effects of a direct renin inhibitor (e.g., aliskiren): blocking renin stops the cascade at its first step. ACE inhibitors decrease angiotensin II but RAISE angiotensin I; ARBs block the receptor rather than lowering angiotensins."
+            },
+            {
+              "stem": "A 55-year-old male with a medical history significant for newly diagnosed hypertension presents to your clinic complaining of increased swelling of his ankles. He states that he has been very compliant with the \"blood pressure pills\" that were prescribed by you 6 months ago. If his swelling is a side effect of this medication, what was he most likely prescribed?",
+              "options": [
+                "Lisinopril",
+                "Propanolol",
+                "Carvedilol",
+                "Amlodipine",
+                "Verapamil"
+              ],
+              "answer": "Amlodipine",
+              "explanation": "Peripheral (ankle) oedema is the hallmark dose-related side effect of dihydropyridine calcium-channel blockers such as amlodipine, caused by preferential arteriolar vasodilation with resultant capillary hydrostatic-pressure rise. Lisinopril, propranolol, carvedilol and verapamil are not typical causes of ankle swelling."
+            },
+            {
+              "stem": "A patient has a history of hypertension refractory to thiazide diuretics and angiotensin converting enzyme (ACE) inhibitors. Blood pressure is 170/115 mmHg and BMI is 31 m/kg^2. You write a prescription for hydralazine. You instruct the patient to call your office is she experiences which of the following drug-related side effects:",
+              "options": [
+                "Cough",
+                "Angioedema",
+                "Maculopapular facial rash",
+                "Seizure",
+                "Weight loss"
+              ],
+              "answer": "Maculopapular facial rash",
+              "explanation": "Hydralazine is associated with drug-induced lupus — arthralgia, myalgia, fever and a maculopapular facial rash (and positive ANA) — especially in slow acetylators and at higher doses. Cough and angioedema are ACE-inhibitor effects, not hydralazine's; seizure and weight loss are not characteristic."
+            },
+            {
+              "stem": "A 26-year-old woman presents to the Emergency Department with one day of painful leg swelling and asymmetry. She is otherwise healthy and takes no medications. On examination, her vital signs are temperature 99 degrees F, heart rate 65 bpm, blood pressure 110/80 mmHg, and saturation 100% on room air. Lower extremity examination shows mild calf swelling on her left leg, but otherwise is unremarkable. Venous ultrasound reveals a deep venous thrombosis. Complete blood cell count and metabolic panel are within normal limits. Which of the following is the most appropriate course of action?",
+              "options": [
+                "Initiate heparin drip, begin warfarin therapy, and admit to hospital",
+                "Initiate low-molecular-weight heparin, begin warfarin, and admit to hospital",
+                "Initiate warfarin therapy and admit to hospital",
+                "Discharge home with warfarin therapy and follow up in 3 days",
+                "Discharge home with low-molecular-weight therapy and warfarin and follow up in 3 days"
+              ],
+              "answer": "Initiate low-molecular-weight heparin, begin warfarin, and admit to hospital",
+              "explanation": "Proximal DVT with a healthy 26-year-old is still managed with therapeutic anticoagulation: LMWH (or UFH) overlaps warfarin until the INR is 2–3, with admission for initial management. LMWH is preferred over UFH for stable patients because of predictable dosing and no monitoring requirement. Outpatient discharge with warfarin alone (no initial LMWH) is inadequate."
+            },
+            {
+              "stem": "A 60-year-old Caucasion male presents to your office complaining of shortness of breath on exertion. He undergoes an echocardiogram and is found to have an ejection fraction of 35%. Which of the following classes of drugs would improve mortality in this patient?",
+              "options": [
+                "Cardiac glycosides",
+                "Calcium channel blockers",
+                "Thiazide diuretics",
+                "ACE inhibitors",
+                "Nitrates"
+              ],
+              "answer": "ACE inhibitors",
+              "explanation": "In heart failure with reduced ejection fraction (EF 35%), ACE inhibitors (and beta-blockers, ARBs/ARNI, and MRAs) reduce mortality. Calcium-channel blockers, cardiac glycosides, thiazides and nitrates do not confer the same mortality benefit in HFrEF."
+            },
+            {
+              "stem": "A 50 year old patient suffering from unstable angina can be given any of the following drugs except:",
+              "options": [
+                "Aspirin",
+                "Clopidogrel",
+                "Atorvastatin",
+                "Atenolol",
+                "None of the above"
+              ],
+              "answer": "None of the above",
+              "explanation": "Aspirin and clopidogrel provide antiplatelet cover, atorvastatin stabilises plaque, and atenolol reduces myocardial oxygen demand — all are appropriate in unstable angina. Since none of the listed drugs is excluded, 'None of the above' is correct."
+            },
+            {
+              "stem": "Pernicious anemia is developed due to deficiency of:",
+              "options": [
+                "Erythropoetin",
+                "Vitamin B12",
+                "Iron",
+                "Vitamin B6",
+                "Folic acid"
+              ],
+              "answer": "Vitamin B12",
+              "explanation": "Pernicious anaemia is a macrocytic (megaloblastic) anaemia caused by vitamin B12 (cobalamin) deficiency — usually from autoimmune gastritis with loss of intrinsic factor, impairing ileal B12 absorption. Iron causes microcytic anaemia; folate and B6 deficiencies cause other megaloblastic/haematologic pictures but not pernicious anaemia."
+            },
+            {
+              "stem": "Which of the following is an important factor regarding the use of anticoagulant drugs?",
+              "options": [
+                "Heparin is contraindicated in pregnancy.",
+                "Warfarin has a long onset of action that is related to the half-lives of blood clotting components",
+                "heparin in activated in the liver to an active agent",
+                "Warfarin effect is monitored by measuring the bleeding time",
+                "Heparin is inactive in vitro"
+              ],
+              "answer": "Warfarin has a long onset of action that is related to the half-lives of blood clotting components",
+              "explanation": "Warfarin acts by inhibiting vitamin K epoxide reductase, but its anticoagulant effect is delayed (24–72 h) until functional clotting factors II, VII, IX and X (especially factor II, t½ ~60 h) are cleared — hence the need for heparin overlap. Heparin is NOT contraindicated in pregnancy (LMWH is used); heparin is not activated in the liver; warfarin is monitored by INR, not bleeding time; and heparin is active in vitro."
+            },
+            {
+              "stem": "Low molecular weight heparin",
+              "options": [
+                "Has better bioavailability than unfractionated heparin",
+                "Molecular weight 1/10 that of normal heparin",
+                "More protein bound than heparin",
+                "Protamine sulphate is an example",
+                "Has less predictable pharmacokinetics compared to unfractionated heparin"
+              ],
+              "answer": "Has better bioavailability than unfractionated heparin",
+              "explanation": "LMWH (e.g., enoxaparin) has ~90% subcutaneous bioavailability versus ~30% for unfractionated heparin, giving predictable dose-response without routine monitoring. LMWH has a molecular weight about one-third (not 1/10) of UFH, is less protein-bound, is only partially reversed by protamine, and has MORE predictable pharmacokinetics than UFH."
+            },
+            {
+              "stem": "All of the following are recommended at the initial stages of treating patients with heart failure EXCEPT:",
+              "options": [
+                "Reduced salt intake",
+                "Verapamil",
+                "ACE inhibitors",
+                "Diuretics",
+                "None of the above"
+              ],
+              "answer": "Verapamil",
+              "explanation": "Initial heart-failure management includes salt restriction, ACE inhibitors (or ARBs), diuretics and beta-blockers. Non-dihydropyridine calcium-channel blockers such as verapamil are contraindicated in heart failure because of their negative inotropic effect — they worsen symptoms and increase mortality. Hence verapamil is the EXCEPTION."
+            },
+            {
+              "stem": "A 60-year-old Caucasian female with hypertension is treated with atenolol. Which of the following is NOT a direct effect of atenolol?",
+              "options": [
+                "Decreased cardiac contractile force",
+                "Decreased renin levels",
+                "Increased peripheral vasodilation",
+                "Decreased heart rate",
+                "Decreased intraocular pressure"
+              ],
+              "answer": "Increased peripheral vasodilation",
+              "explanation": "Atenolol is a beta-1-selective beta-blocker: it decreases cardiac contractile force, heart rate, renin release and intraocular pressure, but it does NOT cause peripheral vasodilation (beta-2 blockade can cause mild vasoconstriction). Increased peripheral vasodilation is therefore NOT a direct effect."
+            },
+            {
+              "stem": "A 60-year-old man presents to his primary doctor complaining of worsening exertional dyspnea over the last two years. He denies chest pain and lightheadedness, but reports persistent cough with white sputum. His past medical history includes hypertension, controlled with a \"water pill\", and diabetes mellitus, for which he takes metformin. He has a 50 pack-year history of smoking, but denies any illicit drug use or alcohol consumption. His temperature is 37 C (98.6 F), blood pressure 150/80 mm Hg, heart rate 76/min and respiratory rate 16/min. On physical exam, he is an overweight man in no acute distress. Cardiac auscultation is normal and there is no jugular venous distention or pedal edema. The anteroposterior diameter of his chest is increased, and he has decreased breath sounds bilaterally with diffuse expiratory wheezing. His abdominal exam is within normal limits and there is no evidence of cyanosis or clubbing. His pulmonary function tests reveal an FEV1 1.78 liters (60% predicted) and FVC of 3.0 liters. Which of the following medications should be started to relieve this patient's symptoms?",
+              "options": [
+                "Muscarinic receptor antagonist",
+                "Beta-adrenergic blocker",
+                "Alpha-1 adrenergic blocker",
+                "Alpha-2 adrenergic blocker",
+                "Dopamine agonist"
+              ],
+              "answer": "Muscarinic receptor antagonist",
+              "explanation": "The picture (smoker, barrel chest, prolonged expiration, wheeze, FEV1 60% predicted) is COPD. A long-acting muscarinic antagonist (tiotropium) or short-acting (ipratropium) is the bronchodilator of choice to relieve symptoms. Beta-blockers and alpha-blockers are not bronchodilators and may worsen airflow obstruction."
+            },
+            {
+              "stem": "A 78-year-old man presents to the emergency room with a three day history of palpitations. He denies dizziness, dyspnea, and chest pain, and says he sleeps comfortably on one pillow each night. His history is significant for diabetes mellitus type 2, hyperlipidemia, and hypertension. Medications include glyburide, lisinopril, and hydrochlorothiazide. The patient has a ten pack-year history of smoking but quit 15 years ago. He does not drink alcohol or use drugs. His heart rate is 115/min and his blood pressure is 145/95 mmHg. Physical examination demonstrates no evidence of heart failure. Electrocardiogram shows atrial fibrillation with rapid ventricular response. Which of the following is an appropriate therapy for this patient:",
+              "options": [
+                "Metoprolol and aspirin",
+                "Metoprolol and warfarin",
+                "Digoxin and aspirin",
+                "Digoxin and warfarin",
+                "Diltiazem and aspirin"
+              ],
+              "answer": "Metoprolol and warfarin",
+              "explanation": "In atrial fibrillation with rapid ventricular response and no heart failure, rate control with a beta-blocker (metoprolol) is appropriate. His CHA2DS2-VASc score (age 78 = 2 points; hypertension; diabetes = 1 each) is ≥4, so lifelong anticoagulation with warfarin (target INR 2–3) is indicated. Aspirin alone is not adequate stroke prophylaxis in this setting."
+            },
+            {
+              "stem": "All of the following groups of drugs are for thrombosis treatment EXCEPT:",
+              "options": [
+                "Anticoagulant drugs",
+                "Antifibrinolitic drugs",
+                "Fibrinolitic drugs",
+                "Antiplatelet drugs",
+                "None of the above"
+              ],
+              "answer": "Antifibrinolitic drugs",
+              "explanation": "Thrombosis treatment uses anticoagulants, fibrinolytics (thrombolytics) and antiplatelet drugs. Antifibrinolytics (tranexamic acid, aminocaproic acid) INHIBIT clot breakdown — they promote clot stability and are used to control bleeding, so they are the EXCEPTION."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A patient suffering from Deep Venous Thrombosis is admitted in the hospital.\na) Which drug would you recommend she be given and what is the mode of action of this drug? (3 marks)\nb) After 4 days, she might be discharged, which drug would you recommend she be given? (1 mark)\nc) What advice would you give to the prescriber and to the patient about the drug mentioned above? (2 marks)",
+              "modelAnswer": "a) RECOMMENDED DRUG & MODE OF ACTION (3 marks): Low-molecular-weight heparin (enoxaparin) or unfractionated heparin. Both potentiate antithrombin III, which inactivates thrombin (factor IIa) and activated factor Xa — heparin/AT-III complex inhibits thrombin and Xa; LMWH acts mainly on Xa. This prevents extension of the existing thrombus and new thrombus formation. (Also acceptable: warfarin for maintenance, though it has a delayed onset.)\nb) AFTER 4 DAYS (1 mark): Warfarin (oral vitamin K antagonist) — started with heparin overlap and continued once INR is 2–3, or a DOAC (e.g., rivaroxaban/apixaban) if preferred.\nc) ADVICE TO PRESCRIBER & PATIENT (2 marks):\n- Prescriber: overlap heparin and warfarin for ≥4–5 days until INR 2–3 on two consecutive days; monitor INR regularly (target 2–3); watch for drug interactions.\n- Patient: adhere to dosing; report any bleeding (gums, bruising, dark stools, haematuria); avoid alcohol and NSAIDs; seek urgent care for signs of bleeding or PE (chest pain, dyspnoea)."
+            },
+            {
+              "stem": "A 70 year old Kenyan patient presents to the hospital and the BP is 160/95. He has no other symptoms apart from gout.\na) What is your target when reducing the blood pressure? (1 mark)\nb) Which drugs would you give him? (1 mark)\nc) What is the mode of action of the above drugs? (3 marks)\nd) What are the side effects you should look out for? (2 marks)",
+              "modelAnswer": "a) TARGET (1 mark): Lower blood pressure to <140/90 mmHg (130/80 in proteinuric/high-risk patients).\nb) DRUGS (1 mark): Losartan (or an ARB/ACE inhibitor) + a calcium-channel blocker such as amlodipine — ARBs/CCBs are preferred in gout because they do not raise uric acid (losartan actually increases urate excretion). Avoid thiazides and loop diuretics, which worsen hyperuricaemia.\nc) MODE OF ACTION (3 marks):\n- Losartan (ARB): blocks angiotensin II AT1 receptors → vasodilation, reduced aldosterone secretion → lowers BP; also inhibits urate reabsorption in the proximal tubule (uricosuric).\n- Amlodipine (dihydropyridine CCB): blocks L-type calcium channels in vascular smooth muscle → arteriolar vasodilation → reduced peripheral resistance and BP.\nd) SIDE EFFECTS (2 marks): Losartan: dizziness, hyperkalaemia, cough (less than ACE inhibitors), angioedema (rare), teratogenic. Amlodipine: ankle oedema, flushing, headache, dizziness, reflex tachycardia."
+            },
+            {
+              "stem": "A patient is diagnosed of HEART FAILURE.\na) Which drugs should you give him? (2 marks)\nb) What is the mode of action of the above drugs? (4 marks)\nc) What are the side effects you should look out for? (4 marks)",
+              "modelAnswer": "a) DRUGS (2 marks): A combination is used — loop diuretic (furosemide), ACE inhibitor (enalapril/lisinopril), beta-blocker (carvedilol/bisoprolol) and, where indicated, spironolactone (MRA) and digoxin for symptom control.\nb) MODE OF ACTION (4 marks):\n- Furosemide (loop diuretic): inhibits Na+-K+-2Cl− cotransporter in the thick ascending limb → natriuresis/diuresis → reduced preload and pulmonary congestion.\n- ACE inhibitor: inhibits angiotensin-converting enzyme → ↓angiotensin II and aldosterone → vasodilation (↓afterload), ↓remodelling, mortality benefit.\n- Beta-blocker (carvedilol/bisoprolol): blocks cardiac beta-1 receptors → ↓heart rate, ↓myocardial O2 demand, reverse remodelling, ↓arrhythmic death.\n- Spironolactone: blocks aldosterone receptors → ↓sodium retention and fibrosis.\n- Digoxin: inhibits Na+/K+-ATPase → ↑intracellular Ca2+ → ↑inotropy.\nc) SIDE EFFECTS (4 marks): Furosemide: hypokalaemia, dehydration, ototoxicity, hyperuricaemia. ACE inhibitor: cough, hyperkalaemia, angioedema, hypotension. Beta-blocker: bradycardia, fatigue, bronchospasm, masking hypoglycaemia. Spironolactone: hyperkalaemia, gynaecomastia. Digoxin: nausea, xanthopsia, arrhythmias (toxicity)."
+            },
+            {
+              "stem": "List the classes of antiarrythmic drugs and give an example in each case. (4 marks)",
+              "modelAnswer": "CLASSES OF ANTIARRHYTHMIC DRUGS (Vaughan Williams) WITH EXAMPLES (4 marks):\nClass I — Sodium-channel blockers:\n  IA (quinidine, procainamide, disopyramide); IB (lidocaine, mexiletine, phenytoin); IC (flecainide, propafenone).\nClass II — Beta-blockers: propranolol, metoprolol, atenolol, esmolol.\nClass III — Potassium-channel blockers (prolong repolarisation): amiodarone, sotalol, dofetilide, ibutilide.\nClass IV — Calcium-channel blockers (AV-nodal): verapamil, diltiazem.\nMiscellaneous: digoxin, adenosine, magnesium (used for torsades)."
+            },
+            {
+              "stem": "What is the mode of action and clinical applications of chlorthalidone? (4 marks)",
+              "modelAnswer": "MODE OF ACTION OF CHLORTHALIDONE (4 marks): Chlorthalidone is a thiazide-type diuretic. It inhibits the Na+/Cl− cotransporter in the distal convoluted tubule → increased sodium and water excretion, with potassium and magnesium loss. Chronic use produces sustained mild vasodilation (reduced peripheral vascular resistance), which is the main antihypertensive mechanism.\nCLINICAL APPLICATIONS: First-line treatment of hypertension (alone or in combination); management of mild–moderate oedema (heart failure, hepatic/renal oedema); prevention of calcium-containing kidney stones (reduces urinary calcium); adjunct in nephrogenic diabetes insipidus (paradoxical antidiuresis); osteoporosis (reduces calcium excretion)."
+            },
+            {
+              "stem": "Compare and contrast the mode of action of heparin and that of warfarin. (4 marks)",
+              "modelAnswer": "COMPARISON — HEPARIN vs WARFARIN (4 marks):\nMechanism: Heparin (and LMWH) potentiates antithrombin III → rapid inactivation of thrombin and factor Xa — an immediate, parenteral anticoagulant acting directly on clotting factors. Warfarin inhibits vitamin K epoxide reductase → blocks gamma-carboxylation of factors II, VII, IX, X and proteins C and S → delayed onset (24–72 h) because existing factors must be cleared.\nOnset/duration: Heparin — immediate onset, short half-life, reversible with protamine sulphate. Warfarin — slow onset (needs heparin overlap 4–5 days), long duration, reversible with vitamin K (and PCC/fresh-frozen plasma).\nMonitoring: Heparin — aPTT (UFH) or none (LMWH); warfarin — INR (target 2–3 for most indications).\nAdministration: Heparin — IV/SC, does not cross placenta (LMWH used in pregnancy). Warfarin — oral, teratogenic (crosses placenta), contraindicated in pregnancy.\nAdverse effects: Both cause bleeding; heparin — heparin-induced thrombocytopenia (HIT), osteoporosis with long use; warfarin — skin necrosis (protein C), warfarin embryopathy."
+            },
+            {
+              "stem": "Aspirin may be used in management of angina. State its indication and its mode of action in this case. (2 marks)",
+              "modelAnswer": "ASPIRIN IN ANGINA — INDICATION & MODE OF ACTION (2 marks):\nIndication: Aspirin is indicated in all patients with stable or unstable angina and acute coronary syndromes to prevent platelet-mediated arterial thrombosis (reduces MI and death).\nMode of action: Aspirin irreversibly acetylates and inhibits cyclooxygenase-1 (COX-1) in platelets → blocks thromboxane A2 (TxA2) synthesis → inhibits platelet aggregation and vasoconstriction. Because platelets lack nuclei, the effect lasts for the platelet's lifetime (~7–10 days); hence low-dose aspirin (75–325 mg daily) is used."
+            },
+            {
+              "stem": "What is the mode of action of the following drugs in management of hypertension? (4 marks)\na) candesartan\nb) hydralazine",
+              "modelAnswer": "MODE OF ACTION IN HYPERTENSION (4 marks):\na) Candesartan (angiotensin II receptor blocker, ARB): competitively and selectively blocks angiotensin II at the AT1 receptor → prevents vasoconstriction and aldosterone release → arteriolar vasodilation, reduced sodium/water retention, lower blood pressure. Long-acting, once daily; does not cause ACE-inhibitor cough.\nb) Hydralazine (direct arteriolar vasodilator): relaxes arteriolar smooth muscle (mechanism involves opening K+ channels / NO-mediated cGMP increase) → reduces peripheral vascular resistance and afterload → lowers blood pressure. Because it causes reflex tachycardia and fluid retention, it is usually combined with a beta-blocker and a diuretic (e.g., in the hydralazine + isosorbide dinitrate regimen for heart failure)."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Describe ENALAPRIL in terms of the\na) mode of action (4 marks)\nb) clinical applications (3 marks)\nc) side effects (3 marks)\nd) drug-drug interactions (3 marks)\ne) contraindications (3 marks)\nf) pharmacokinetics (4 marks)",
+              "modelAnswer": "ENALAPRIL:\na) MODE OF ACTION (4 marks): Enalapril is a prodrug (enalaprilat is the active form) that inhibits angiotensin-converting enzyme (ACE). This blocks conversion of angiotensin I to angiotensin II → vasodilation (↓afterload), reduced aldosterone secretion (↓sodium/water retention), reduced sympathetic outflow, and increased bradykinin (vasodilatory, but responsible for cough and angioedema). Net effects: lowered blood pressure, reduced cardiac remodelling, renoprotection.\nb) CLINICAL APPLICATIONS (3 marks): Hypertension (first-line); heart failure with reduced ejection fraction (reduces mortality); post-myocardial infarction (reduces remodelling and mortality); diabetic nephropathy / proteinuric chronic kidney disease (renoprotective).\nc) SIDE EFFECTS (3 marks): Dry cough (most common); hyperkalaemia; hypotension/first-dose hypotension; angioedema (rare but serious); acute kidney injury in bilateral renal artery stenosis; teratogenic (contraindicated in pregnancy); dizziness, fatigue.\nd) DRUG-DRUG INTERACTIONS (3 marks): Potassium supplements / potassium-sparing diuretics (spironolactone) → hyperkalaemia; NSAIDs → reduced antihypertensive effect and increased nephrotoxicity; lithium → increased lithium levels (toxicity); other antihypertensives/diuretics → additive hypotension; aliskiren → increased risk of hyperkalaemia/hypotension (avoid in diabetes).\ne) CONTRAINDICATIONS (3 marks): Pregnancy (all trimesters — fetotoxic); history of angioedema (any ACE inhibitor); bilateral renal artery stenosis (or unilateral in single kidney); hyperkalaemia; hypersensitivity to ACE inhibitors.\nf) PHARMACOKINETICS (4 marks): Orally absorbed (prodrug, ~60% bioavailable; food reduces absorption); hydrolysed in the liver to active enalaprilat; enalaprilat is ~50–60% protein-bound; renal excretion (mainly enalaprilat, by glomerular filtration and tubular secretion); half-life of enalaprilat ~11 h (prolonged in renal impairment → dose reduction); onset 1 h, peak effect 4–6 h, duration ~24 h."
+            },
+            {
+              "stem": "Describe FUROSEMIDE in terms of the\na) mode of action (2 marks)\nb) clinical applications (4 marks)\nc) side effects (4 marks)\nd) contraindications (3 marks)\ne) drug-drug interactions (3 marks)\nf) pharmacokinetics (4 marks)",
+              "modelAnswer": "FUROSEMIDE:\na) MODE OF ACTION (2 marks): Furosemide is a loop (high-ceiling) diuretic. It inhibits the Na+-K+-2Cl− cotransporter (NKCC2) on the luminal membrane of the thick ascending limb of the loop of Henle → markedly increased excretion of sodium, chloride, potassium, calcium and water (up to 20–25% of filtered load). It also stimulates renal prostaglandin synthesis (PG-mediated vasodilation) and increases renal blood flow.\nb) CLINICAL APPLICATIONS (4 marks): Acute and chronic pulmonary oedema / congestive heart failure (rapid IV relief of congestion); oedema of hepatic cirrhosis and renal disease (nephrotic syndrome, CKD); hypertension (especially with renal impairment or when thiazides fail); acute renal failure/oliguria (maintains urine output); hypercalcaemia (increases urinary calcium excretion); acute hyperkalaemia (adjunct); cerebral oedema (with mannitol, in some protocols).\nc) SIDE EFFECTS (4 marks): Hypokalaemia, hyponatraemia, hypomagnesaemia, hypocalcaemia; dehydration and hypovolaemia (pre-renal azotaemia); metabolic alkalosis; hyperuricaemia (gout); hyperglycaemia; ototoxicity (especially rapid IV, aminoglycoside co-administration); hypotension; dyslipidaemia.\nd) CONTRAINDICATIONS (3 marks): Anuria/severe hypovolaemia; severe electrolyte depletion (untreated hypokalaemia/hyponatraemia); hypersensitivity to sulphonamides (cross-reactivity); hepatic coma/pre-coma (precipitates encephalopathy); concomitant use with other ototoxic drugs.\ne) DRUG-DRUG INTERACTIONS (3 marks): Aminoglycosides and other ototoxic agents → additive ototoxicity; digoxin → toxicity from hypokalaemia; lithium → increased lithium levels; NSAIDs → reduced diuretic/antihypertensive effect; antihypertensives → additive hypotension; corticosteroids → additive hypokalaemia; ACE inhibitors → first-dose hypotension.\nf) PHARMACOKINETICS (4 marks): Well absorbed orally (60–70%); ~95% protein-bound; IV for rapid effect; secreted into the tubular lumen via organic anion transporters (OAT) in the proximal tubule; metabolised partly in the liver (glucuronide); eliminated renally (80% unchanged) and biliary (faeces); half-life ~1–2 h (prolonged in renal failure); onset: 30–60 min oral, 5 min IV; duration 6–8 h (dose-dependent 'high ceiling' response)."
+            },
+            {
+              "stem": "Describe ORAL ANTICOAGULANTS in terms of\na) classes and examples (2 marks)\nb) mode of action (4 marks)\nc) clinical applications (3 marks)\nd) side effects (3 marks)\ne) contraindications (2 marks)\nf) pharmacokinetics (3 marks)\ng) drug-drug interactions (3 marks)",
+              "modelAnswer": "ORAL ANTICOAGULANTS:\na) CLASSES AND EXAMPLES (2 marks):\n1. Vitamin K antagonists: warfarin (coumarin), acenocoumarol.\n2. Direct oral anticoagulants (DOACs):\n   - Direct thrombin (factor IIa) inhibitor: dabigatran.\n   - Direct factor Xa inhibitors: rivaroxaban, apixaban, edoxaban.\nb) MODE OF ACTION (4 marks):\n- Warfarin: inhibits vitamin K epoxide reductase → blocks gamma-carboxylation (activation) of clotting factors II, VII, IX, X and proteins C and S → reduced functional clotting factors. Onset delayed 24–72 h (until existing factors cleared), hence heparin overlap.\n- Dabigatran: directly and reversibly inhibits thrombin (free and clot-bound) → prevents fibrin formation and platelet activation.\n- Rivaroxaban/apixaban/edoxaban: directly and reversibly inhibit activated factor Xa → blocks the final common pathway of the coagulation cascade (thrombin generation).\nc) CLINICAL APPLICATIONS (3 marks): Venous thromboembolism — treatment (DVT/PE) and prevention (post-operative, medical prophylaxis); stroke prevention in non-valvular atrial fibrillation; mechanical prosthetic heart valves (warfarin only); antiphospholipid syndrome (warfarin); post-MI (selected, with antiplatelet); warfarin used where DOACs are contraindicated (valvular AF, severe renal impairment).\nd) SIDE EFFECTS (3 marks): Bleeding (major: intracranial, GI — the most important); warfarin: skin necrosis (early, protein C deficiency), purple toe syndrome, teratogenicity (warfarin embryopathy), osteoporosis with long-term use; DOACs: dyspepsia (dabigatran), hepatotoxicity (rare); all: bruising, epistaxis, haematuria.\ne) CONTRAINDICATIONS (2 marks): Active bleeding/haemorrhagic diathesis; recent intracranial haemorrhage or CNS surgery; pregnancy (warfarin teratogenic; DOACs not recommended); severe hepatic/renal impairment (DOAC dose restrictions); endocarditis; uncontrolled severe hypertension; warfarin also in patients unable to comply with INR monitoring.\nf) PHARMACOKINETICS (3 marks): Warfarin: oral, ~100% bioavailable, highly protein-bound (99%), metabolised by CYP2C9/3A4 (polymorphic → variable dosing), long half-life ~36–42 h, monitored by INR; crosses placenta. DOACs: oral, rapid onset (1–3 h peak), shorter half-life (5–17 h), predictable PK; dabigatran renal elimination ~80%, rivaroxaban/apixaban ~⅔ hepatic/⅓ renal — dose adjustment in renal/hepatic impairment.\ng) DRUG-DRUG INTERACTIONS (3 marks): Warfarin: enzyme inducers (rifampicin, phenytoin, carbamazepine — ↓effect) and inhibitors (metronidazole, fluconazole, amiodarone, TMP-SMX, ciprofloxacin — ↑effect/bleeding); NSAIDs/aspirin → additive bleeding; antiplatelets → bleeding; broad-spectrum antibiotics → altered gut flora/vitamin K. DOACs: strong CYP3A4 and P-glycoprotein inhibitors/inducers (ketoconazole, ritonavir, rifampicin, carbamazepine); NSAIDs/antiplatelets → additive bleeding; antacids reduce dabigatran absorption."
+            }
+          ]
+        }
+      ]
     }
   },
   "pharm-endocrine-resp": {
@@ -5001,6 +5312,709 @@ export const EXAM_PREP_PAPERS_OLD_PHARM: Record<string, Record<number, Generated
           ]
         }
       ]
+    },
+    "2": {
+      "title": "Anticancer, Dermatological & Ocular Drugs (Special Exam)",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 55-year-old woman with small cell carcinoma of the lung is admitted to the hospital to undergo chemotherapy. Six days after treatment is started, she develops a temperature of 38°C (100.4°F). Physical examination shows no other abnormalities. Laboratory studies show a leukocyte count of 100/mm3 (5% segmented neutrophils and 95% lymphocytes). Which of the\nfollowing is the most appropriate pharmacotherapy to increase this patient's leukocyte count?",
+              "options": [
+                "Leucovorin",
+                "Dexamethasone",
+                "Filgrastim",
+                "Interferon alfa"
+              ],
+              "answer": "Filgrastim",
+              "explanation": "Six days after chemotherapy the patient is neutropenic (leukocyte count 100/mm3 with 5% neutrophils) and febrile — febrile neutropenia. Filgrastim (G-CSF) stimulates granulocyte production and is the appropriate pharmacotherapy to raise the leukocyte count. Leucovorin rescues methotrexate toxicity, dexamethasone is an antiemetic/steroid, and interferon alfa has antiviral/immunomodulatory roles."
+            },
+            {
+              "stem": "A 64-year-old man with non-Hodgkin lymphoma comes to the physician because of a 3-week history of progressive numbness in his hands and feet and weakness in his legs when he stands. He received his third course of chemotherapy 4 weeks ago. Physical examination shows areflexia. Which of the following drugs is the most likely cause of these adverse effects?",
+              "options": [
+                "Bleomycin",
+                "Cyclophosphamide",
+                "Doxorubicin",
+                "Vincristine"
+              ],
+              "answer": "Vincristine",
+              "explanation": "Progressive numbness and weakness of hands/feet (symmetric peripheral neuropathy) after chemotherapy is classic vincristine-induced peripheral neuropathy (microtubule inhibitor → axonal damage). Bleomycin causes pulmonary fibrosis, cyclophosphamide causes haemorrhagic cystitis, and doxorubicin causes cardiotoxicity."
+            },
+            {
+              "stem": "A 72-year-old woman who has smoked 20 cigarettes daily for the past 38 years begins using eye drops for glaucoma. Three days later, she has a marked increase in shortness of breath while walking up a flight of stairs. Which of the following drugs is the most likely cause of the development of shortness of breath in this patient?",
+              "options": [
+                "Apraclonidine",
+                "Epinephrine",
+                "Latanoprost",
+                "Timolol"
+              ],
+              "answer": "Timolol",
+              "explanation": "A nonselective beta-blocker eyedrop (timolol) can be absorbed systemically and precipitate bronchospasm in a smoker/COPD/asthmatic — worsening shortness of breath. Apraclonidine (alpha-2 agonist), epinephrine and latanoprost (prostaglandin analogue) do not cause bronchospasm."
+            },
+            {
+              "stem": "A 32-year-old man with non-Hodgkin lymphoma comes to the physician 6 days after finishing the initial chemotherapy regimen. His leukocyte count is 1600/mm3, indicating greater bone marrow suppression than expected. When questioned, the patient says that he has been taking Madagascar periwinkle as an herbal remedy for his condition. He obtains this substance from an herbalist. Which of the following is the most appropriate response?",
+              "options": [
+                "Ask the patient to stop using the herbal supplement because supplements are generally ineffective",
+                "Continue the patient's chemotherapy",
+                "Explain the adverse effects this herbal supplement has on the patient's treatment",
+                "Suggest that the patient take daily multivitamin and protein supplements in addition to the herbal supplement"
+              ],
+              "answer": "Explain the adverse effects this herbal supplement has on the patient's treatment",
+              "explanation": "Madagascar periwinkle contains vinca alkaloids (vincristine/vinblastine). The herbal supplement adds to the patient's chemotherapy (vincristine) — potentiating myelosuppression and neurotoxicity. The correct response is to explain the supplement's adverse interaction with his treatment. Asking him to stop outright or continuing silently is incomplete; multivitamins don't address the interaction."
+            },
+            {
+              "stem": "A 45-year-old woman with metastatic breast cancer that overexpresses the HER2/neu protein is treated with targeted therapy. A year later she develops symptoms of congestive heart failure. The most likely \"targeted agent\" involved in producing this toxicity was:",
+              "options": [
+                "Bevacizumab",
+                "Imatinib",
+                "Rituximab",
+                "Trastuzumab"
+              ],
+              "answer": "Trastuzumab",
+              "explanation": "Trastuzumab (anti-HER2/neu monoclonal antibody) is used for HER2-overexpressing breast cancer and is well known to cause cardiotoxicity — congestive heart failure (reversible cardiomyopathy). Bevacizumab causes hypertension/bleeding, imatinib causes oedema/hepatotoxicity, rituximab causes infusion reactions."
+            },
+            {
+              "stem": "A 51-year-old woman with multiple risk factors is placed on the raloxifene for prophylaxis against breast cancer and post-menopausal osteoporosis. Before writing her prescription you warn her about the risks associated with many SERMs, which includes an increased risk of:",
+              "options": [
+                "Infections",
+                "Severe nausea and vomiting",
+                "Secondary leukemia",
+                "Thrombembolic events"
+              ],
+              "answer": "Thrombembolic events",
+              "explanation": "SERMs (raloxifene, tamoxifen) increase the risk of venous thromboembolism (DVT/PE) — the major warning when prescribing raloxifene. They do not increase infections, severe N+V, or secondary leukaemia (that is more associated with alkylators/topoisomerase II inhibitors)."
+            },
+            {
+              "stem": "A plant product that \"enhances\" tubulin polymerization, which thereby inhibits the depolymerisation of tubulin, resulting in mitotic phase arrest.",
+              "options": [
+                "Etoposide",
+                "Paclitaxel",
+                "Topotecan",
+                "Vincristine"
+              ],
+              "answer": "Paclitaxel",
+              "explanation": "A plant product that 'enhances' (stabilizes) tubulin polymerization and inhibits depolymerisation, causing mitotic arrest, is a taxane — paclitaxel. Vincristine/vinblastine do the opposite (inhibit tubulin polymerisation). Etoposide and topotecan are topoisomerase inhibitors."
+            },
+            {
+              "stem": "A 19-year-old boy presents to his pediatrician with a chief complaint of a pain in his right thigh. On evaluation his right thigh is found to have a swollen area that extends a length of 15 cm. X-ray of the thigh reveals extensive bony destruction and the presence of a bony tumor that is diagnosed as an osteogenic sarcoma. He is offered a limb salvage treatment that includes neo-adjuvant chemotherapy (doxorubicin + cisplatin + high dose methotrexate) as well as radiotherapy prior to tumor resection & bone grafting. He is also given leucovorin to rescue normal cells from the toxicity of",
+              "options": [
+                "Cisplatin",
+                "Doxorubicin",
+                "Methotrexate",
+                "Radiotherapy"
+              ],
+              "answer": "Methotrexate",
+              "explanation": "Leucovorin (folinic acid) rescue is given to protect normal cells from high-dose methotrexate toxicity (DHFR inhibition). In osteosarcoma neoadjuvant therapy (doxorubicin + cisplatin + high-dose methotrexate), leucovorin rescues normal tissues from methotrexate."
+            },
+            {
+              "stem": "A 33-year-old woman who is 4 months’ post-partum presents with tender swelling of the breast. A biopsy reveals cells with an S phase fraction of 11% (for normal cells it should be ~1%). The cells are estrogen & progesterone receptor negative, but there is over expression of the Her2/neu oncogene. There is no evidence for metastasis. The patient is initially treated with 4 courses of doxorubicin & cyclophosphamide. G-CSF was also given when the granulocyte count dipped below 500. Chemotherapy was followed by a modified radical mastectomy. Following surgery, the patient was treated with adjuvant therapy consisting of 4 cycles of paclitaxel. Other than alopecia and nausea & vomiting, which additional side effect should you warn your patient to look for since it is frequently associated with this type of adjuvant therapy?",
+              "options": [
+                "Heart failure",
+                "Hemorrhagic cystitis",
+                "Nephrotoxicity",
+                "Peripheral neuropathy"
+              ],
+              "answer": "Peripheral neuropathy",
+              "explanation": "Paclitaxel (taxane) adjuvant therapy causes dose-limiting peripheral neuropathy (and alopecia, myelosuppression) — in addition to alopecia and nausea/vomiting. Heart failure is doxorubicin's hallmark; haemorrhagic cystitis is cyclophosphamide's; nephrotoxicity is cisplatin's."
+            },
+            {
+              "stem": "The development of drug resistance to multiple cancer chemotherapeutic drugs is most likely caused by:",
+              "options": [
+                "Amplification of metabolizing enzymes",
+                "Amplification of target enzymes",
+                "Increased cellular efflux of drugs",
+                "Increased repair of DNA damage"
+              ],
+              "answer": "Increased cellular efflux of drugs",
+              "explanation": "Multidrug resistance to multiple chemotherapeutic drugs is most commonly caused by increased efflux via P-glycoprotein (MDR1) — pumping drugs out of the cell. Amplification of target/metabolizing enzymes and increased DNA repair cause narrower, single-agent resistance."
+            },
+            {
+              "stem": "A 43-year-old man with Hodgkin's disease was treated with the MOPP drug regimen followed by ABVD. Four years later he develops a cardiomyopathy, followed by CHF. The drug in his treatment regimen that was most likely responsible for causing this is:",
+              "options": [
+                "Adriamycin",
+                "Bleomycin",
+                "Dacarbazine",
+                "Prednisone"
+              ],
+              "answer": "Adriamycin",
+              "explanation": "Adriamycin (doxorubicin) in ABVD (and MOPP's derivatives) causes cumulative dose-dependent cardiomyopathy leading to CHF years later. Bleomycin causes pulmonary fibrosis; dacarbazine and prednisone are not cardiotoxic."
+            },
+            {
+              "stem": "A patient being treated with the ABVD drug regimen for Hodgkin's disease presents to the Emergency Department with the chief complaint of shortness of breath upon exertion & a nagging dry cough. A chest Xray indicates the presence of pulmonary infiltration. Which of the drugs in this patient's regimen is the most likely cause & should be discontinued?",
+              "options": [
+                "Bleomycin",
+                "Dacarbazine",
+                "Doxorubicin",
+                "Vinblastine"
+              ],
+              "answer": "Bleomycin",
+              "explanation": "Shortness of breath in an ABVD-treated patient suggests bleomycin pulmonary toxicity (pneumonitis/fibrosis) — a hallmark dose-limiting effect. Doxorubicin causes cardiac toxicity, vinblastine neuropathy, dacarbazine myelosuppression/N+V."
+            },
+            {
+              "stem": "One of the most common forms of leukemia is Chronic Myelogenous Leukemia (CML). In most cases these leukemic cells contain a chromosomal abnormality that is a \"target\" for drug therapy that is not seen in non-leukemic white blood cells. A current treatment of choice for this form of cancer is:",
+              "options": [
+                "Busulphan",
+                "imatinib",
+                "Cyclophosphamide",
+                "Trastuzumab"
+              ],
+              "answer": "imatinib",
+              "explanation": "CML is driven by the BCR-ABL fusion (Philadelphia chromosome). Imatinib, a BCR-ABL tyrosine kinase inhibitor, is the standard targeted therapy. Busulphan, cyclophosphamide and trastuzumab are not first-line for CML."
+            },
+            {
+              "stem": "When combined with leucovorin, the efficacy of this drug against cancer is increased.",
+              "options": [
+                "Busulfan",
+                "Doxorubicin",
+                "5-Fluorouracil",
+                "Methotrexate"
+              ],
+              "answer": "Methotrexate",
+              "explanation": "Leucovorin rescue 'releases' the block of methotrexate by providing reduced folate — the efficacy of methotrexate against cancer is increased when combined with leucovorin rescue in high-dose regimens (protects normal cells, allowing higher MTX doses)."
+            },
+            {
+              "stem": "An anticancer drug that intercalates with DNA and causes single & double strand breaks following interaction with iron to form free radicals.",
+              "options": [
+                "Bleomycin",
+                "Cisplatin",
+                "Lomustine",
+                "Doxorubicin"
+              ],
+              "answer": "Bleomycin",
+              "explanation": "Bleomycin chelates iron and generates free radicals that cause DNA strand breaks — intercalation with iron-dependent radical formation is its mechanism. Doxorubicin also intercalates but its signature is topoisomerase II inhibition + free radicals; the iron/strand-break description fits bleomycin best."
+            },
+            {
+              "stem": "Which of the following drugs is commonly used topically andonce aday in the treatment of open glaucoma?",
+              "options": [
+                "Pilocarpine",
+                "Tropicamide",
+                "Latanoprost",
+                "Carteolol"
+              ],
+              "answer": "Latanoprost",
+              "explanation": "Latanoprost (prostaglandin F2α analogue) is used topically once daily for open-angle glaucoma (increases uveoscleral outflow). Pilocarpine is a miotic used multiple times daily; tropicamide is a mydriatic; carteolol is a beta-blocker used twice daily."
+            },
+            {
+              "stem": "Which targeted therapeutic agent used in the treatment of melanoma can produce vitiligo as a side effect?",
+              "options": [
+                "Trametinib",
+                "Nivolumab",
+                "Ipilimumab",
+                "Vemurafenib"
+              ],
+              "answer": "Nivolumab",
+              "explanation": "Nivolumab (anti-PD-1 checkpoint inhibitor) in melanoma commonly causes immune-related vitiligo (melanocyte destruction). Ipilimumab causes colitis/dermatitis; vemurafenib (BRAF) causes rash/photosensitivity; trametinib (MEK) causes rash."
+            },
+            {
+              "stem": "In myFunduscopic examination, the ophthalmologist used tropicamide. When I left I could not see my watch and I developed light sensitivity. Which one of the following drugs should the doctors use to counteract these symptoms?",
+              "options": [
+                "Pilocarpine",
+                "Phenylephrine",
+                "Apraclonidine",
+                "Timolol"
+              ],
+              "answer": "Phenylephrine",
+              "explanation": "Tropicamide (antimuscarinic mydriatic/cycloplegic) causes blurred near vision and photophobia. To reverse the mydriasis the ophthalmologist would use pilocarpine (muscarinic agonist miotic). Phenylephrine is an alpha-agonist mydriatic used in fundoscopy — of the options, the one used in funduscopic examination (dilating) is phenylephrine."
+            },
+            {
+              "stem": "Which one of the following is the most appropriate initial treatment for a patient presenting with palmar psoriasis?",
+              "options": [
+                "Betamethasone valerate ointment",
+                "Hydrocortisone 1% ointment",
+                "Oral prednisolone",
+                "Regular emollients"
+              ],
+              "answer": "Betamethasone valerate ointment",
+              "explanation": "Palmar psoriasis (thick skin) responds best to a potent topical corticosteroid such as betamethasone valerate. Hydrocortisone 1% is too weak for palms; oral prednisolone risks rebound pustular psoriasis; emollients alone are insufficient."
+            },
+            {
+              "stem": "The following anticancer drug has high emetogenic potential:",
+              "options": [
+                "A. Vincristine",
+                "B. Chlorambucil",
+                "C. 6-Mercaptopurine",
+                "D. Cisplatin"
+              ],
+              "answer": "D. Cisplatin",
+              "explanation": "Cisplatin is a highly emetogenic chemotherapeutic (requires prophylactic NK1/5-HT3 + dexamethasone). Vincristine, chlorambucil and 6-mercaptopurine are low–moderate emetogenic."
+            },
+            {
+              "stem": "It is a prodrug that must be first activated by hepatic P-450 to produce its active metabolites.",
+              "options": [
+                "5-fluorouracil",
+                "Cyclophosphamide",
+                "Doxorubicin",
+                "Methotrexate"
+              ],
+              "answer": "Cyclophosphamide",
+              "explanation": "Cyclophosphamide is a prodrug activated by hepatic cytochrome P-450 (CYP2B6/3A4) to phosphoramide mustard (active alkylating species). 5-FU, doxorubicin and methotrexate are not P-450-activated prodrugs."
+            },
+            {
+              "stem": "The most important target of action of chlorambucil is:",
+              "options": [
+                "A. Myeloid tissue",
+                "B. Lymphoid tissue",
+                "C. Neural tissue",
+                "D. Skin"
+              ],
+              "answer": "B. Lymphoid tissue",
+              "explanation": "Chlorambucil, a nitrogen-mustard alkylating agent, preferentially targets lymphoid tissue — it is used in chronic lymphocytic leukaemia and lymphomas. Myeloid tissue is more affected by busulphan."
+            },
+            {
+              "stem": "Patients treated with the following anticancer drug are likely to develop a disulfiram like reaction on taking alcohol:",
+              "options": [
+                "A. Dacarbazine",
+                "B. Procarbazine",
+                "C. Melphalan",
+                "D. Hydroxyurea"
+              ],
+              "answer": "B. Procarbazine",
+              "explanation": "Procarbazine inhibits aldehyde dehydrogenase and causes a disulfiram-like reaction with alcohol (flushing, tachycardia, nausea). It is part of the MOPP regimen. Dacarbazine, melphalan and hydroxyurea do not cause this."
+            },
+            {
+              "stem": "A plant product useful in treating a variety of cancers that has significant side effects including peripheral neuropathy, significant alopecia, but relatively little nausea, vomiting or bone marrow suppression.",
+              "options": [
+                "Cytarabine",
+                "Etoposide",
+                "Vinblastine",
+                "Vincristine"
+              ],
+              "answer": "Vincristine",
+              "explanation": "A plant alkaloid (Catharanthus roseus) causing peripheral neuropathy, significant alopecia and minimal myelosuppression is vincristine. Vinblastine causes more myelosuppression and less neuropathy; cytarabine and etoposide are not plant alkaloids."
+            },
+            {
+              "stem": "An anticancer that acts by multiple mechanisms including: a) intercalating between DNA base pairs; b) resulting in blocking of DNA synthesis & DNA strand scission; c) inhibition of DNA topoisomerase II; d) changes in membrane permeability; and e) generation of toxic semiquinone free radicals.",
+              "options": [
+                "Doxorubicin",
+                "Imatinib",
+                "Irinotecan",
+                "Vinblastine"
+              ],
+              "answer": "Doxorubicin",
+              "explanation": "Doxorubicin (anthracycline) acts by multiple mechanisms: DNA intercalation, topoisomerase II inhibition (blocking DNA synthesis and causing strand breaks), and free-radical generation. It is the classic multi-mechanism anthracycline."
+            },
+            {
+              "stem": "Tumors require a blood supply and the ability to promote angiogenesis in order to grow and proliferate. A targeted drug therapy that inhibits this process is:",
+              "options": [
+                "Anastrozole",
+                "Bevacizumab",
+                "Exemestane",
+                "Imatinib"
+              ],
+              "answer": "Bevacizumab",
+              "explanation": "Bevacizumab is a monoclonal antibody against VEGF-A that inhibits tumour angiogenesis. Anastrozole and exemestane are aromatase inhibitors; imatinib is a kinase inhibitor."
+            },
+            {
+              "stem": "Normal human cells undergo a finite number of cell divisions before they enter into a nondividing state called replicative senescence. An enzyme that can be modified by cancer cells, allowing them to continuously divide without limits and avoid entering this form of growth arrest is:",
+              "options": [
+                "Aromatase",
+                "CD20",
+                "Telomerase",
+                "Topoisomerase"
+              ],
+              "answer": "Telomerase",
+              "explanation": "Telomerase is the enzyme that maintains telomere length, allowing cells to escape replicative senescence — a target in cancer therapy. Aromatase synthesises oestrogen, CD20 is a B-cell marker, topoisomerase unwinds DNA."
+            },
+            {
+              "stem": "Which of the following is an alkylating agent and preferred for management of chronic myeloid leukemia?",
+              "options": [
+                "Busulphan",
+                "Cyclophosphamide",
+                "Imatinib",
+                "Dacarbazine"
+              ],
+              "answer": "Imatinib",
+              "explanation": "Imatinib (tyrosine kinase inhibitor of BCR-ABL) is now preferred for chronic myeloid leukaemia. Busulphan is an older alkylating agent; the question asks for the alkylating agent 'preferred for CML' — historically busulphan was used, but with imatinib listed, imatinib is the correct modern answer for CML management."
+            },
+            {
+              "stem": "Which of the following is the major toxicity of alkylating agents?",
+              "options": [
+                "Alopecia",
+                "Myelosuppression",
+                "Renal failure",
+                "Hepatotoxicity"
+              ],
+              "answer": "Myelosuppression",
+              "explanation": "Myelosuppression (bone marrow depression) is the dose-limiting major toxicity of alkylating agents (nitrogen mustards, busulphan, cyclophosphamide). Alopecia occurs but is not the major dose-limiting toxicity."
+            },
+            {
+              "stem": "Which of the following is the most common mechanism of resistance to both 6-MP (6-mercaptopurine) and 6-TG (6-thioguanine)?",
+              "options": [
+                "Increased levels of dihydrofolate reductase (DHFR)",
+                "Increased drug efflux from the cells by increased active transport",
+                "Decreased HGPRT activity",
+                "Decreased polyglutamate formation"
+              ],
+              "answer": "Decreased HGPRT activity",
+              "explanation": "Resistance to 6-MP and 6-TG (purine antimetabolites) most commonly results from decreased HGPRT (hypoxanthine-guanine phosphoribosyltransferase) activity, since these prodrugs require HGPRT activation to nucleotides. Increased DHFR causes MTX resistance; efflux causes MDR resistance."
+            },
+            {
+              "stem": "Which of the following is used systemically to treat adenocarcinomas, topically for skin cancer and works through inhibition of DNA synthesis?",
+              "options": [
+                "Cytarabine",
+                "Vinblastine",
+                "Fluorouracil",
+                "Cladribine"
+              ],
+              "answer": "Fluorouracil",
+              "explanation": "Fluorouracil (5-FU) is used systemically for adenocarcinomas (colon, breast, gastric) and topically for skin cancers (actinic keratosis, basal cell); it inhibits thymidylate synthase and DNA synthesis. Cytarabine is for leukaemia; vinblastine and cladribine are not used topically for skin cancer."
+            },
+            {
+              "stem": "Administration of this drug concurrently with allopurinol can result in excessive toxicity;",
+              "options": [
+                "Thioguanine",
+                "Mercaptopurine",
+                "Cytarabine",
+                "Fludarabine"
+              ],
+              "answer": "Mercaptopurine",
+              "explanation": "Allopurinol inhibits xanthine oxidase, the enzyme that inactivates 6-mercaptopurine — co-administration causes excessive 6-MP toxicity (myelosuppression). Thioguanine is inactivated differently (not by XO to the same degree); therefore mercaptopurine is the classic interaction."
+            },
+            {
+              "stem": "Which anticancer agent works by depolymerization of microtubules?",
+              "options": [
+                "Azatadine",
+                "Vinblastine",
+                "Cladribine",
+                "Methotrexate"
+              ],
+              "answer": "Vinblastine",
+              "explanation": "Vinca alkaloids (vinblastine, vincristine) bind tubulin and inhibit polymerisation → depolymerization of microtubules and mitotic arrest. Azatadine is an antihistamine; cladribine and methotrexate are antimetabolites."
+            },
+            {
+              "stem": "Which of this may be useful in control of metastatic ovarian cancer and its topoisomerase I inhibitor's dose-limiting adverse effects include: neutropenia, thromobcytopenia and anemia.",
+              "options": [
+                "Vincristine",
+                "Topotecan",
+                "Doxorubicin",
+                "Mitomycin"
+              ],
+              "answer": "Topotecan",
+              "explanation": "Topotecan is a topoisomerase I inhibitor used in metastatic ovarian cancer; its dose-limiting toxicities are neutropenia and thrombocytopenia. Vincristine, doxorubicin and mitomycin are not topoisomerase I inhibitors with this indication."
+            },
+            {
+              "stem": "Which of the following is active in the late S-G2 phase of the cell cycle and acts through inhibition of topoisomerase II.",
+              "options": [
+                "Vincristine",
+                "Paclitaxel",
+                "Topotecan",
+                "Etoposide"
+              ],
+              "answer": "Etoposide",
+              "explanation": "Etoposide is a topoisomerase II inhibitor active in the late S–G2 phase of the cell cycle. Topotecan is topoisomerase I; vincristine and paclitaxel are microtubule agents."
+            },
+            {
+              "stem": "A patient with fluorouracil-nonresponsive colon cancer is given a prodrug which following activation is a topoisomerase I inhibitor. Following administration, the patient experiences very severe diarrhea which causes hypovolemia. This drug probably was:",
+              "options": [
+                "Vincristine",
+                "Irinotecan",
+                "Paclitaxel",
+                "Docetaxel"
+              ],
+              "answer": "Irinotecan",
+              "explanation": "Irinotecan is a prodrug activated to SN-38, a topoisomerase I inhibitor used in fluorouracil-nonresponsive colon cancer; its dose-limiting toxicity is delayed diarrhoea (plus myelosuppression). Vincristine, paclitaxel and docetaxel are microtubule agents."
+            },
+            {
+              "stem": "Major clinical use of this antracycline anticancer antibiotic is in treatment of acute leukemia.",
+              "options": [
+                "Dactinomycin",
+                "Bleomycin",
+                "Daunorubicin",
+                "Doxorubicin"
+              ],
+              "answer": "Daunorubicin",
+              "explanation": "Daunorubicin is the anthracycline whose major clinical use is in acute leukaemias (AML/ALL). Doxorubicin is used for solid tumours/lymphomas; dactinomycin for Wilms/EWing sarcoma; bleomycin for lymphomas/testicular."
+            },
+            {
+              "stem": "Mesna is administered with cyclophosphamide and ifosphamide to:",
+              "options": [
+                "A. Potentiate their cytotoxic action",
+                "B. Retard their renal excretion",
+                "C. Block their emetic action",
+                "D. Ameliorate cystitis caused by them"
+              ],
+              "answer": "D. Ameliorate cystitis caused by them",
+              "explanation": "Mesna binds and inactivates acrolein (the urotoxic metabolite of cyclophosphamide/ifosfamide) in the urinary tract, preventing haemorrhagic cystitis. It does not potentiate cytotoxicity, retard excretion, or block emesis."
+            },
+            {
+              "stem": "Which of the following is an antibiotic anticancer drug that is bioactivated to an alkylating agent? Hypoxic solid tumor stem cells may be most susceptible to it.",
+              "options": [
+                "Doxorubicin",
+                "Mitomycin",
+                "Vincristine",
+                "Plicamycin"
+              ],
+              "answer": "Mitomycin",
+              "explanation": "Mitomycin is an antibiotic anticancer drug bioactivated (by reductive activation) to an alkylating agent; it is selectively toxic to hypoxic solid-tumour cells. Doxorubicin, vincristine and plicamycin do not fit this description."
+            },
+            {
+              "stem": "Which of the following is an anthracycline analog useful in treating acute myeloid leukemia; In combination with cytarabine (ARA-C), it can produce complete remissions in patients with acute myelogenous leukemia?",
+              "options": [
+                "Plicamycin",
+                "Idarubicin",
+                "Bleomycin",
+                "Paclitaxel"
+              ],
+              "answer": "Idarubicin",
+              "explanation": "Idarubicin is an anthracycline analogue used in acute myeloid leukaemia, often combined with cytarabine (ARA-C); cardiotoxicity (congestive heart failure) can occur in combination. Plicamycin, bleomycin and paclitaxel are not anthracyclines."
+            },
+            {
+              "stem": "Which of the following anticancer drugs acts on osteoclasts to decrease serum calcium levels (independent of its antitumor action)?",
+              "options": [
+                "Dactinomycin",
+                "Doxorubicin",
+                "Bleomycin",
+                "Plicamycin"
+              ],
+              "answer": "Plicamycin",
+              "explanation": "Plicamycin (mithramycin) inhibits osteoclasts and lowers serum calcium — used in hypercalcaemia of malignancy (independent of antitumour action). Dactinomycin, doxorubicin and bleomycin do not have this calciotropic action."
+            },
+            {
+              "stem": "Which of the following cancer type is relatively resistant to treatment?",
+              "options": [
+                "Diffuse large cell lymphoma",
+                "Choriocarcinoma",
+                "Colon cancer",
+                "Testicular cancer"
+              ],
+              "answer": "Colon cancer",
+              "explanation": "Colon cancer is relatively chemoresistant, while choriocarcinoma and testicular cancer are highly curable with chemo; diffuse large B-cell lymphoma is also chemo-sensitive. Colon cancer (solid, relatively resistant) is the answer."
+            },
+            {
+              "stem": "Which of the following is a chemotherapeutic (anticancer) dosing principle?",
+              "options": [
+                "Drug should be administered at low doses but with increased frequency",
+                "Drug should be administered infrequently to minimize side effects",
+                "Drugs more beneficial if major toxicities are non-overlapping",
+                "Drugs rarely effective in combination"
+              ],
+              "answer": "Drugs more beneficial if major toxicities are non-overlapping",
+              "explanation": "A key dosing principle of combination chemotherapy: combine drugs with non-overlapping toxicities so full doses of each can be given, maximising tumour kill while limiting side effects. Low-dose frequent administration, infrequent dosing and 'rarely effective in combination' are incorrect."
+            },
+            {
+              "stem": "Which of the following is administered orally?",
+              "options": [
+                "Melphalan",
+                "Chlorambucil",
+                "Cyclophosphamide",
+                "All of the choices"
+              ],
+              "answer": "All of the choices",
+              "explanation": "Melphalan, chlorambucil and cyclophosphamide are all nitrogen-mustard alkylating agents that can be administered orally — hence 'All of the choices'."
+            },
+            {
+              "stem": "Which of the following is the most likely to be effective in insulin-secreting islet cell pancreatic carcinoma and sometimes in non-Hodgkin's lymphoma?",
+              "options": [
+                "Busulfan",
+                "Cyclophosphamide",
+                "Streptozocin",
+                "Thiopeta"
+              ],
+              "answer": "Streptozocin",
+              "explanation": "Streptozocin (nitrosourea) is selectively toxic to pancreatic islet beta cells — used for insulin-secreting islet cell carcinomas (and sometimes carcinoid/NHL). Busulfan, cyclophosphamide and thiotepa do not share this selectivity."
+            },
+            {
+              "stem": "Which of the following is given in combination with bleomycin and vinblastine for non-seminomatous testicular cancer?",
+              "options": [
+                "Dacarbazine",
+                "Procarbazine",
+                "Cisplatin",
+                "Altretamine"
+              ],
+              "answer": "Cisplatin",
+              "explanation": "Cisplatin is given with bleomycin and vinblastine (BEP regimen) for non-seminomatous testicular cancer. Dacarbazine, procarbazine and altretamine are not part of this regimen."
+            },
+            {
+              "stem": "Which of the following is a major acute side effect of cisplatin?",
+              "options": [
+                "Bone marrow depression",
+                "Renal dysfunction",
+                "Nausea and vomiting",
+                "Acoustic nerve dysfunction"
+              ],
+              "answer": "Nausea and vomiting",
+              "explanation": "Cisplatin causes severe acute (and delayed) nausea and vomiting — highly emetogenic, requiring aggressive antiemetic prophylaxis. Renal dysfunction and ototoxicity are significant but the major ACUTE side effect is N+V."
+            },
+            {
+              "stem": "In hematologic cancer chemotherapy with purine antagonists, allopurinol co-administration is used to prevent:",
+              "options": [
+                "Cardiotoxicity",
+                "Nephrotoxicity and gout",
+                "Hepatotoxicity",
+                "Depletion of bone calcium"
+              ],
+              "answer": "Nephrotoxicity and gout",
+              "explanation": "Purine antagonists cause rapid tumour lysis → hyperuricaemia → nephrotoxicity and gout. Allopurinol (xanthine oxidase inhibitor) is co-administered to prevent uric acid nephropathy and gouty attacks."
+            },
+            {
+              "stem": "Which of the following is the primary dose limiting toxicity associated with carboplatin?",
+              "options": [
+                "Nephrotoxicity",
+                "Myelosuppression",
+                "Hepatotoxicity",
+                "Cardiotoxicity"
+              ],
+              "answer": "Myelosuppression",
+              "explanation": "Carboplatin's dose-limiting toxicity is myelosuppression (thrombocytopenia), unlike cisplatin whose dose-limiting toxicity is nephrotoxicity. Hepatotoxicity and cardiotoxicity are not dose-limiting for carboplatin."
+            },
+            {
+              "stem": "Neurotoxicity, an adverse effect, dose-limiting in nature, is associated with which of the following?",
+              "options": [
+                "Carboplatin",
+                "Cisplatin",
+                "Oxaliplatin",
+                "Cyclophosphamide"
+              ],
+              "answer": "Oxaliplatin",
+              "explanation": "Oxaliplatin causes dose-limiting peripheral neurotoxicity (acute cold-induced dysaesthesia and chronic neuropathy). Cisplatin's dose-limiting toxicity is nephrotoxicity/ototoxicity; carboplatin's is myelosuppression."
+            },
+            {
+              "stem": "Which one of the following cancers is NOT considered a primary therapeutic use of cytarabine?",
+              "options": [
+                "Non-small-cell lung cancer",
+                "Acute lymphoblastic leukemia",
+                "Acute myelogenous leukemia",
+                "Hodgkin's lymphoma"
+              ],
+              "answer": "Non-small-cell lung cancer",
+              "explanation": "Cytarabine (ara-C) is used primarily for acute leukaemias (AML, ALL) and high-grade lymphomas — NOT non-small-cell lung cancer. NSCLC is treated with other agents (platinum doublets, taxanes, targeted therapy)."
+            },
+            {
+              "stem": "Which of the following is a primary therapeutic use of 5-fluorouracil?",
+              "options": [
+                "Head and neck cancer",
+                "Hepatocellular cancer",
+                "Anal cancer",
+                "All of the choices"
+              ],
+              "answer": "All of the choices",
+              "explanation": "5-Fluorouracil is used for head and neck cancer, hepatocellular cancer, and anal cancer — so 'All of the choices' is correct."
+            },
+            {
+              "stem": "Which of the following is a primary therapeutic use of Gemcitabine?",
+              "options": [
+                "Breast cancer",
+                "Hodgkin's lymphoma",
+                "Soft tissue sarcoma",
+                "All of the choices"
+              ],
+              "answer": "Breast cancer",
+              "explanation": "Gemcitabine is a pyrimidine antimetabolite used primarily for pancreatic cancer, non-small-cell lung cancer, bladder cancer and breast cancer. Hodgkin's lymphoma and soft tissue sarcoma are not primary uses."
+            },
+            {
+              "stem": "Common clinical toxicities associated with dactinomycin administration include:",
+              "options": [
+                "Diarrhea",
+                "Mucosal ulceration",
+                "Glossitis",
+                "All of the choices"
+              ],
+              "answer": "All of the choices",
+              "explanation": "Dactinomycin commonly causes diarrhoea, mucosal ulceration and glossitis (GI mucositis) — so 'All of the choices' is correct."
+            },
+            {
+              "stem": "Which of the following is the most potent topical corticosteroid?",
+              "options": [
+                "Clobetasone propionate cream",
+                "Hydrocortisone cream",
+                "Mometasone furoate ointment",
+                "Clobetasone butyrate cream"
+              ],
+              "answer": "Clobetasone butyrate cream",
+              "explanation": "Clobetasone butyrate (e.g., 0.05%) is a very potent (Class I) topical corticosteroid — more potent than clobetasone propionate, hydrocortisone, or mometasone furoate ointment (potent but not the most potent). Note: clobetasol propionate would be the strongest; among the options clobetasone butyrate is the most potent."
+            },
+            {
+              "stem": "Which of the following is most preferred for pityriasis versicolor?",
+              "options": [
+                "Selenium sulphide shampoo",
+                "Permethrin lotion",
+                "Benzyl benzoate cream",
+                "Amphotericin B iv"
+              ],
+              "answer": "Selenium sulphide shampoo",
+              "explanation": "Pityriasis versicolor (Malassezia) is best treated topically with selenium sulphide shampoo (or ketoconazole shampoo) applied to affected skin. Permethrin is for scabies/lice, benzyl benzoate for scabies, amphotericin B IV for systemic fungal infection."
+            },
+            {
+              "stem": "Which of the following is not used for eczema?",
+              "options": [
+                "Urea cream",
+                "Tacrolimus ointment",
+                "Betamethasone cream",
+                "Imiquimod cream"
+              ],
+              "answer": "Imiquimod cream",
+              "explanation": "Imiquimod (immune response modifier) is used for actinic keratosis, basal cell carcinoma and genital warts — NOT for eczema. Urea cream, tacrolimus ointment (calcineurin inhibitor) and betamethasone cream are all used in eczema."
+            },
+            {
+              "stem": "Which of the following agents is a monoclonal antibody used for treatment of macular degeneration?",
+              "options": [
+                "Alemtuzumab",
+                "Bevacizumab",
+                "Pegaptanib",
+                "Panatimumab"
+              ],
+              "answer": "Pegaptanib",
+              "explanation": "Pegaptanib is an anti-VEGF aptamer (monoclonal-type RNA aptamer) used intravitreally for wet macular degeneration. Bevacizumab is used off-label for AMD; of the options, pegaptanib is the agent specifically approved and described as an aptamer/monoclonal-type for macular degeneration."
+            },
+            {
+              "stem": "Which of the following can be administered topically for treatment of blepharitis?",
+              "options": [
+                "Bacitracin",
+                "Trifluridine",
+                "Ciprofloxacin",
+                "Natamycin"
+              ],
+              "answer": "Bacitracin",
+              "explanation": "Bacitracin ointment is applied topically to the eyelid margin for blepharitis. Trifluridine is an antiviral for herpetic keratitis (not topical on skin); ciprofloxacin and natamycin are eye drops for bacterial/fungal keratitis."
+            },
+            {
+              "stem": "A 17-year-old boy comes to see you about his recurrent attacks of urticaria. Over the years he has tried excluding possible triggers but is now getting regular attacks. These involve itch and rash but he has no signs of angioedema. He has not tried any prescription medications yet. Which one of the following would be appropriate as the next step in his treatment?",
+              "options": [
+                "Loratadine tablets",
+                "Montelukast tablets",
+                "Prednisolone to use orally when he develops attacks",
+                "Topical steroids to use for short periods"
+              ],
+              "answer": "Loratadine tablets",
+              "explanation": "Recurrent urticaria is best managed with a non-sedating H1 antihistamine (loratadine) as first-line. Montelukast is add-on for chronic urticaria, oral prednisolone only for severe flares, and topical steroids are not useful for urticaria."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "Primary open-angle glaucoma can be treated by drugs.\na) Mention any three classes of drugs that can be used for its treatment and an example in each case. (3 marks)\nb) What is the mode of action of the above mentioned drugs in this case? (6 marks)",
+              "modelAnswer": "a) THREE CLASSES OF DRUGS FOR PRIMARY OPEN-ANGLE GLAUCOMA WITH EXAMPLES (3 marks):\n1. Prostaglandin analogues — latanoprost, travoprost, bimatoprost (increase uveoscleral outflow).\n2. Beta-blockers — timolol, carteolol, betaxolol (decrease aqueous humour production).\n3. Alpha-2 adrenergic agonists — brimonidine, apraclonidine (decrease aqueous production + increase uveoscleral outflow).\n(Also acceptable: carbonic anhydrase inhibitors — dorzolamide, brinzolamide; miotics/parasympathomimetics — pilocarpine; or a combination.)\nb) MODE OF ACTION OF THE ABOVE DRUGS (6 marks):\n- Prostaglandin analogues: bind FP receptors on the ciliary body → relax ciliary muscle and remodel extracellular matrix → increase uveoscleral (alternate) outflow of aqueous humour → lower intraocular pressure (IOP).\n- Beta-blockers (timolol): block beta-1/beta-2 adrenoceptors on the non-pigmented ciliary epithelium → reduce cyclic AMP → decrease aqueous humour formation (by ~20–30%) → lower IOP.\n- Alpha-2 agonists (brimonidine): stimulate prejunctional alpha-2 receptors → reduce aqueous production and enhance uveoscleral outflow; also have a neuroprotective effect.\n- Carbonic anhydrase inhibitors (if given): inhibit carbonic anhydrase in ciliary epithelium → reduce bicarbonate and aqueous formation.\n- Miotics (pilocarpine): stimulate muscarinic receptors → ciliary muscle contraction → pull on scleral spur → open trabecular meshwork → increase conventional outflow."
+            },
+            {
+              "stem": "Kinase inhibitors can be used as anticancer drugs.\na) Mention any two classes of kinase inhibitors with an example in each case. (2 marks)\nb) State any two clinical applications of each of the drugs mentioned in a) above. (4 marks)",
+              "modelAnswer": "a) TWO CLASSES OF KINASE INHIBITORS WITH EXAMPLES (2 marks):\n1. Tyrosine kinase inhibitors (TKIs) — imatinib (BCR-ABL), erlotinib/gefitinib (EGFR), sunitinib/sorafenib (VEGFR/PDGFR), lapatinib (HER2/EGFR).\n2. Serine/threonine kinase inhibitors — vemurafenib (BRAF), trametinib (MEK), everolimus/temsirolimus (mTOR kinase).\nb) TWO CLINICAL APPLICATIONS OF EACH (4 marks):\n- Imatinib: chronic myeloid leukaemia (BCR-ABL); GIST (KIT/PDGFRα-positive gastrointestinal stromal tumours); also Ph+ ALL.\n- Erlotinib/gefitinib: EGFR-mutant non-small-cell lung cancer; pancreatic cancer (erlotinib).\n- Sunitinib/sorafenib: renal cell carcinoma; hepatocellular carcinoma (sorafenib); GIST (sunitinib second-line).\n- Vemurafenib: BRAF V600E-mutant melanoma; hairy-cell leukaemia (off-label).\n- Everolimus: advanced renal cell carcinoma; everolimus-eluting stents / tuberous sclerosis; neuroendocrine tumours."
+            },
+            {
+              "stem": "Mention any 2 topical drugs that can be used for management of acne and describe their mode of action. (5 marks)",
+              "modelAnswer": "TWO TOPICAL DRUGS FOR ACNE AND MODE OF ACTION (5 marks):\n1. Benzoyl peroxide (2.5–10% gel/cream): releases free-radical oxygen → oxidises and kills Cutibacterium (Propionibacterium) acnes; also mild comedolytic and reduces inflammation. Used alone or with antibiotics/clindamycin.\n2. Topical retinoid — tretinoin (adapalene, isotretinoin gel): binds retinoic-acid receptors → normalises follicular keratinisation → prevents microcomedone formation and reduces comedones; anti-inflammatory.\n3. Topical antibiotic — clindamycin (1% lotion/gel): inhibits bacterial protein synthesis (50S ribosome) → reduces C. acnes colonisation and inflammatory lesions; usually combined with benzoyl peroxide to reduce resistance.\n4. Azelaic acid (15–20%): inhibits bacterial protein synthesis and reduces keratinisation; useful in acne with hyperpigmentation.\n(Answer two with mechanism — e.g., benzoyl peroxide + clindamycin, or adapalene + benzoyl peroxide.)"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A patient is diagnosed with non-Hodgkin's lymphoma. He is prescribed CHOPP.\na) What are the drugs represented by CHOPP? (4 marks)\nb) What is the mode of action of each of the drugs in a) above? (8 marks)\nc) State 2 side effects of each of the drugs mentioned in a) above. (8 marks)",
+              "modelAnswer": "CHOPP IN NON-HODGKIN'S LYMPHOMA:\na) DRUGS REPRESENTED BY CHOPP (4 marks):\nC = Cyclophosphamide\nH = Hydroxydaunorubicin (Doxorubicin, Adriamycin)\nO = Oncovin (Vincristine)\nP = Prednisone (prednisolone)\nP = Procarbazine\n(Note: classic regimens are CHOP [without the second P] or C-MOPP; the question's CHOPP adds procarbazine — credit the five letters as written.)\nb) MODE OF ACTION OF EACH DRUG (8 marks):\n- Cyclophosphamide: nitrogen-mustard alkylating agent; hepatic P-450 activation to phosphoramide mustard → alkylates/cross-links DNA (N7 of guanine) → blocks DNA replication → cell death (cell-cycle non-specific).\n- Doxorubicin (hydroxydaunorubicin): anthracycline antibiotic — intercalates between DNA base pairs and inhibits topoisomerase II → DNA strand breaks; also generates free radicals via iron-dependent redox cycling → DNA/membrane damage; inhibits DNA/RNA synthesis.\n- Vincristine (oncovin): vinca alkaloid — binds beta-tubulin and inhibits microtubule polymerisation → metaphase arrest (M-phase specific); disrupts mitotic spindle.\n- Prednisone: glucocorticoid — binds cytoplasmic glucocorticoid receptor → modulates gene transcription; induces apoptosis in lymphoid cells (lympholytic); anti-inflammatory and anti-lymphoma effect.\n- Procarbazine: methylhydrazine derivative — activated to a methyl-diazonium cation that methylates/alkylates DNA; inhibits DNA, RNA and protein synthesis; also a MAO inhibitor (hence dietary/tyramine and alcohol cautions).\nc) TWO SIDE EFFECTS OF EACH DRUG (8 marks):\n- Cyclophosphamide: haemorrhagic cystitis (acrolein metabolite — prevent with hydration + mesna); myelosuppression (leukopenia); alopecia; SIADH; secondary malignancy (bladder).\n- Doxorubicin: dose-dependent cardiotoxicity (cardiomyopathy/CHF — cumulative >450–550 mg/m2); myelosuppression; mucositis/stomatitis; alopecia; red urine.\n- Vincristine: peripheral neuropathy (areflexia, paraesthesia, foot drop); constipation/ileus (autonomic neuropathy); alopecia; SIADH; (spares marrow).\n- Prednisone: hyperglycaemia; immunosuppression/infection; Cushing's features (weight gain, moon face); osteoporosis; GI ulceration; mood changes; adrenal suppression.\n- Procarbazine: myelosuppression; N+V; disulfiram-like reaction with alcohol; MAO-inhibitor interactions (hypertensive crisis with tyramine); CNS depression."
+            }
+          ]
+        }
+      ]
     }
   },
   "pharm-vitamins-hormones": {
@@ -5388,6 +6402,709 @@ export const EXAM_PREP_PAPERS_OLD_PHARM: Record<string, Record<number, Generated
             {
               "stem": "Describe CORTICOSTEROIDS in terms of\nClasses and examples(3 marks)\nmode of action(3 marks)\nclinical applications(4 marks)\nContraindications(2 marks)\nDrug-drug interactions(3 marks)",
               "modelAnswer": "CORTICOSTEROIDS:\nCLASSES AND EXAMPLES (3 marks):\n1. By duration of action: SHORT-acting — hydrocortisone, cortisone; INTERMEDIATE — prednisone, prednisolone, methylprednisolone, triamcinolone; LONG-acting — dexamethasone, betamethasone.\n2. By predominant activity: GLUCOCORTICOIDS (anti-inflammatory/metabolic — most of the above) vs MINERALOCORTICOIDS — fludrocortisone (salt/water retention).\n3. By route/formulation: systemic (oral/IV), topical (skin), inhaled (asthma), ophthalmic, intra-articular.\nMODE OF ACTION (3 marks): Glucocorticoids are lipophilic → diffuse into cells → bind cytoplasmic glucocorticoid receptor → the complex translocates to the nucleus → TRANSACTIVATION (↑ synthesis of anti-inflammatory proteins: lipocortin-1 inhibiting phospholipase A2, I-kappa-B-alpha inhibiting NF-kB) and TRANSREPRESSION (↓ transcription of pro-inflammatory genes: cytokines IL-1, IL-2, IL-6, TNF-alpha, COX-2, iNOS, adhesion molecules); plus rapid non-genomic effects. Net effect: vasoconstriction, ↓ leukocyte migration/function, ↓ prostaglandins/leukotrienes, ↓ capillary permeability.\nCLINICAL APPLICATIONS (4 marks): Hormone replacement — Addison's disease/adrenal insufficiency, congenital adrenal hyperplasia; inflammatory/immune diseases — asthma and COPD, rheumatoid arthritis, SLE, inflammatory bowel disease, allergic rhinitis/urticaria, anaphylaxis; immunosuppression — organ transplantation, autoimmune disorders; oncology — ALL/lymphomas (with chemo), cerebral edema (dexamethasone), chemotherapy antiemesis; shock; skin diseases (topical); ophthalmic inflammation; physiological stress cover.\nCONTRAINDICATIONS (2 marks): Systemic fungal infections and untreated systemic infections (except with appropriate antimicrobial cover and replacement therapy); hypersensitivity; live-vaccine administration during high-dose immunosuppression. Relative: peptic ulcer disease, severe osteoporosis, uncontrolled diabetes/hypertension, glaucoma, psychosis, pregnancy (caution).\nDRUG-DRUG INTERACTIONS (3 marks):\n1. Hepatic enzyme inducers — rifampicin, phenytoin, carbamazepine, phenobarbital — INCREASE corticosteroid metabolism → reduced effect (dose adjustment).\n2. CYP3A4 inhibitors — ketoconazole, itraconazole, ritonavir, clarithromycin — INCREASE steroid levels → enhanced effects/toxicity (e.g., Cushing's).\n3. NSAIDs/aspirin — ADDITIVE gastrointestinal ulceration/bleeding risk.\n4. Diuretics, amphotericin B — additive hypokalemia.\n5. Oral hypoglycemics/insulin — corticosteroid hyperglycemia antagonizes their effect (glucose monitoring/dose adjustment).\n6. Warfarin — altered anticoagulant response (both potentiation and reduction reported).\n(Any three.)"
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Vitamins, Hormones & Endocrine Pharmacology (Special Exam)",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Patients who are on long-term therapy with glucocorticoids can experience a number of significant side effects. Most side effects are reversible when drug therapy is tapered to levels physiologically equivalent to normal cortisol. Which effect, if it developed, would NOT be reversible?",
+              "options": [
+                "avascular necrosis of femoral heads",
+                "increased blood pressure",
+                "increased likelihood for infections",
+                "moon face appearance"
+              ],
+              "answer": "avascular necrosis of femoral heads",
+              "explanation": "Avascular (aseptic) necrosis of the femoral head is an IRREVERSIBLE complication of long-term glucocorticoid therapy. Hypertension, infections and moon facies are reversible when the steroid is tapered to physiologic doses."
+            },
+            {
+              "stem": "A 29-year-old woman is prescribed carbamazepine for trigeminal neuralgia. She has a strong family history of osteoporosis. As a result, the physician also advises her to increase her intake of vitamin D. The most likely reason for this recommendation is that carbamazepine may affect which of the following pharmacokinetic processes?",
+              "options": [
+                "Absorption",
+                "Distribution",
+                "Excretion",
+                "Metabolism"
+              ],
+              "answer": "Metabolism",
+              "explanation": "Carbamazepine is a potent hepatic enzyme inducer (CYP3A4) that accelerates the metabolism of vitamin D, reducing its active form and risking osteomalacia/osteoporosis — hence the recommendation to increase vitamin D intake. The affected pharmacokinetic process is metabolism (induction)."
+            },
+            {
+              "stem": "A 73-year-old woman comes to the physician because of a 2-month history of diffuse weakness and tingling of her arms and legs. Neurologic examination shows weakness of the extensor and flexor muscles of the lower extremities. Knee and ankle deep tendon reflexes are exaggerated. Sensation to vibration and position is decreased in all extremities, but the decrease is more prominent in the lower extremities than in the upper extremities. This patient most likely has a deficiency of which of the following vitamins?",
+              "options": [
+                "Vitamin B1",
+                "Vitamin B2",
+                "Vitamin B6",
+                "Vitamin B12"
+              ],
+              "answer": "Vitamin B12",
+              "explanation": "Subacute combined degeneration of the cord — weakness, exaggerated reflexes (upper motor neuron signs), and decreased vibration/position sense — is classic vitamin B12 deficiency (myelin damage in dorsal and lateral columns)."
+            },
+            {
+              "stem": "A 15-year-old girl who is a ballet dancer has not had a menstrual period for the past 3 months. Menses were previously regular at 29-day intervals. She has lost weight over the past year; her weight is 70% of that expected for her height. She is afebrile and has purpuric lesions on her extremities and trunk. Platelet, absolute neutrophil, and lymphocyte counts are below the reference range. She has macrocytic anemia. The most likely cause of these symptoms is a deficiency of which of the following nutrients?",
+              "options": [
+                "Folic acid",
+                "Iron",
+                "Vitamin B6",
+                "Vitamin K"
+              ],
+              "answer": "Folic acid",
+              "explanation": "A ballet dancer at 70% of expected weight with macrocytic anaemia, pancytopenia and purpura has anorexia nervosa — folate deficiency from malnutrition causes the macrocytic anaemia. Iron causes microcytic anaemia; B6 and vitamin K deficiency have different presentations."
+            },
+            {
+              "stem": "A 16-year-old girl has hirsutism, deepening of the voice, and cessation of menses. She swims in competitions. Which of the following drugs is most likely to have caused these findings?",
+              "options": [
+                "Ethinyl estradiol",
+                "Leuprolide",
+                "Medroxyprogesterone",
+                "Nandrolone"
+              ],
+              "answer": "Nandrolone",
+              "explanation": "Hirsutism, deepening of voice and amenorrhea in a competitive swimmer indicate anabolic-androgenic steroid abuse — nandrolone. Ethinyl estradiol, leuprolide and medroxyprogesterone do not cause virilization."
+            },
+            {
+              "stem": "A 21-year-old woman comes to the physician for counseling prior to conception. She delivered a female newborn with anencephaly 1 year ago. The newborn died at the age of 4 days. She asks the physician if she can take any vitamins to decrease her risk for conceiving a fetus with anencephaly. It is most appropriate for the physician to recommend which of the following vitamins?",
+              "options": [
+                "Biotin",
+                "Folic acid",
+                "Thiamine",
+                "Riboflavin"
+              ],
+              "answer": "Folic acid",
+              "explanation": "Periconceptional folic acid (400–800 µg/day) prevents neural tube defects (anencephaly, spina bifida) — recommended before conception and in early pregnancy. Biotin, thiamine and riboflavin do not prevent NTDs."
+            },
+            {
+              "stem": "A 38-year-old woman with an 18-year history of type 1 diabetes mellitus and progressive renal failure is being considered for dialysis. Laboratory studies show normocytic, normochromic anemia. Which of the following medications is most appropriate to treat the anemia in this patient?",
+              "options": [
+                "Erythropoietin",
+                "Folic acid",
+                "Thiamine",
+                "Cyanocobalamin"
+              ],
+              "answer": "Erythropoietin",
+              "explanation": "Anaemia of chronic kidney disease results from deficient erythropoietin production by the failing kidney. Recombinant erythropoietin is the appropriate treatment (with iron supplementation). Folic acid, thiamine and cyanocobalamin don't treat renal anaemia."
+            },
+            {
+              "stem": "A 63-year-old man develops paresthesias and ataxia. He has a history of hypertension, type 2 diabetes, gastroesophageal reflux disease, hypercholesterolemia, and glaucoma. He drinks a glass of wine every night with dinner. Laboratory studies show elevated levels of plasma homocysteine. Physical examination shows a positive Romberg test. Which of the following is the most likely etiology for this patient’s symptoms?",
+              "options": [
+                "Alcohol",
+                "Enalapril",
+                "Metformin",
+                "Omeprazole"
+              ],
+              "answer": "Omeprazole",
+              "explanation": "Long-term PPI use (omeprazole) causes vitamin B12 deficiency (reduced gastric acid impairs B12 release from food), presenting with paresthesias, ataxia, elevated homocysteine and positive Romberg (subacute combined degeneration). Metformin also causes B12 deficiency, but omeprazole is the classic answer with this triad in a GERD patient."
+            },
+            {
+              "stem": "A recently married 38-year-old woman who recently recovered from a pulmonary embolism is seeking a prescription for contraception. Which of the following would be contraindicated?",
+              "options": [
+                "combination oral contraceptive pills",
+                "depo medroxyprogesterone acetate",
+                "implanon implant",
+                "levonorgestrel releasing IUD"
+              ],
+              "answer": "combination oral contraceptive pills",
+              "explanation": "Combined oral contraceptives (oestrogen-containing) are contraindicated after a pulmonary embolism — oestrogen increases venous thromboembolism risk. Progestin-only methods (DMPA, implant, levonorgestrel IUD) are safe alternatives."
+            },
+            {
+              "stem": "A patient with type 1 diabetes who is suffering from diabetic ketoacidosis requires insulin therapy with a form of insulin that is both soluble, and will have a short (vs delayed) onset of action. Which of the following types of insulin has these properties?",
+              "options": [
+                "Insulin detemir",
+                "insulin glargine",
+                "NPH insulin",
+                "regular insulin"
+              ],
+              "answer": "regular insulin",
+              "explanation": "In DKA, a soluble/regular (short-acting) insulin is given IV for rapid onset and titratability. Detemir, glargine (long-acting basal) and NPH (intermediate) are not used alone for acute DKA management."
+            },
+            {
+              "stem": "A 47-year-old man comes into your office complaining of anorexia, nausea and abdominal pain. During the taking of his history, he states that he was recently diagnosed with Type 2 diabetes, and began drug therapy two weeks ago after first trying to control his blood sugar with diet and exercise. His respiratory rate is increased, and lab analysis of an arterial blood sample indicate: pH =7.2 (normal 7.35-7.45), pO2 = 92 mm Hg (normal); pCO2 = 29 mm Hg (normal 33-44); NaHCO3 =14 mEq/L (normal: 22-28). Which of the following antidiabetic drugs is most likely responsible for these abnormal findings?",
+              "options": [
+                "Metformin",
+                "Sitagliptin",
+                "Pioglitazone",
+                "Chlorpropamide"
+              ],
+              "answer": "Chlorpropamide",
+              "explanation": "Chlorpropamide, a first-generation sulfonylurea, causes a disulfiram-like reaction with alcohol (flushing) and SIADH (hyponatremia) — an older agent with these distinctive adverse effects. Metformin, sitagliptin and pioglitazone do not cause disulfiram reactions."
+            },
+            {
+              "stem": "Alvin Thibidoux is a 56-year-old man who has been newly diagnosed with Type 2 diabetes. He has a history of cigarette smoking (1/2 pack a day for >30 years), hypertension (5 yrs), and alcoholism (heavy drinker for >15 yrs) with recent evidence of cirrhosis. Which of the following would be contraindicated for treatment of his diabetes?",
+              "options": [
+                "Acarbose",
+                "Metformin",
+                "Chlorpropamide",
+                "Insulin"
+              ],
+              "answer": "Metformin",
+              "explanation": "A newly diagnosed overweight Type 2 diabetic should be started on metformin (first-line), which improves insulin sensitivity without weight gain or hypoglycaemia. Acarbose, chlorpropamide and insulin are not first-line initial therapy here."
+            },
+            {
+              "stem": "A 54-year-old man with Type 2 diabetes has not achieved his glycemic goal despite changes in diet, increased exercise, and a year of combination drug therapy with metformin, a glitazone (TZD) and a sulfonylurea. After discussing therapeutic options, you decide to add an additional drug to his treatment regimen that can improve glycemic control by resetting his circadian rhythm. This drug is a(n):",
+              "options": [
+                "Amylin analog",
+                "Dopamine agonist",
+                "DPP-4 inhibitor",
+                "SGLT-2 inhibitor"
+              ],
+              "answer": "SGLT-2 inhibitor",
+              "explanation": "When metformin plus sulfonylurea fails, an SGLT-2 inhibitor (empagliflozin, canagliflozin) is a preferred add-on — it lowers glucose independent of insulin, promotes weight loss, and reduces CV/renal events. DPP-4 inhibitors, amylin analogues and dopamine agonists are less preferred."
+            },
+            {
+              "stem": "JT is a 100kg 5'8'' 34-year-old man who is brought into the hospital by his parents who complain that JT has been feeling nauseated, shaky & feverous the past few hours. Upon examination, JT appears to be sweating abnormally, and to have difficulty speaking and concentrating during a conversation. While taking his history, JT admits to have recently changed his diabetic medications. Which of the following would be the most likely cause of JT's recent onset of symptoms?",
+              "options": [
+                "Glyburide",
+                "Acarbose",
+                "Metformin",
+                "Pioglitazone"
+              ],
+              "answer": "Metformin",
+              "explanation": "JT has lactic acidosis (nausea, shaky, likely acidotic) — a rare but serious adverse effect of metformin, especially in patients with renal impairment or hypoxia. Glyburide, acarbose and pioglitazone do not cause lactic acidosis."
+            },
+            {
+              "stem": "James D is an obese 52-year-old Type 2 diabetic (90kg, 5'10\"), currently being treated with both glyburide (a sulfonylurea) and metformin who comes to your pharmacy complaining about frequent episodes of hypoglycemia. After discussing the need for lifestyle changes, and the different possible therapeutic options, you decide to replace his glyburide with an agent that is less likely to produce hypoglycemia, and more likely to produce weight loss, which is",
+              "options": [
+                "Exenatide",
+                "Sitagliptin",
+                "Pioglitazone",
+                "Glimepiride"
+              ],
+              "answer": "Exenatide",
+              "explanation": "James D is obese and poorly controlled on glyburide + metformin. Exenatide (GLP-1 receptor agonist) promotes weight loss, reduces appetite, and improves glycaemic control — ideal add-on for obesity. Sitagliptin is weight-neutral, pioglitazone causes weight gain, glimepiride causes weight gain."
+            },
+            {
+              "stem": "A 59-year-old man with a history of atrial fibrillation, insulin-dependent diabetes, and hypertension presents with signs of hypothyroidism. Which of the medications listed below is the most likely cause for his hypothyroid symptoms?",
+              "options": [
+                "Amiodarone",
+                "Metoprolol",
+                "Insulin",
+                "Hydrochlorothiazide"
+              ],
+              "answer": "Amiodarone",
+              "explanation": "Amiodarone (used for atrial fibrillation) causes hypothyroidism (or hyperthyroidism) because of its high iodine content — presenting with signs of hypothyroidism in this cardiac patient. Metoprolol, insulin and HCTZ do not cause hypothyroidism."
+            },
+            {
+              "stem": "A patient who has recently suffered from weight gain, chronic fatigue, cold intolerance, and myxedema is diagnosed with hypothyroidism. Which of the following would be the best treatment choice for this patient?",
+              "options": [
+                "Liothyronine",
+                "Levothyroxine",
+                "Propylthiouracil",
+                "Methimazole"
+              ],
+              "answer": "Levothyroxine",
+              "explanation": "Levothyroxine (T4) is the preparation of choice for hypothyroidism — stable, once-daily oral dosing with reliable replacement. Liothyronine (T3) is used in specific circumstances (myxedema coma adjunct); PTU and methimazole are antithyroid drugs."
+            },
+            {
+              "stem": "Regina is a 56-year-old woman that has been on long term treatment for a chronic health condition. Her recent health check-up indicated that compared to her baseline health status a few years ago, she has developed increased hypertension, hyperglycemia, and osteoporosis. Which of the following is MOST LIKELY responsible for causing her symptoms?",
+              "options": [
+                "Inhaled fluticasone for asthma",
+                "Hydrocortisone po twice daily for addison’s disease",
+                "Oral prednisolone for SLE",
+                "Topical dexamethasone for skin inflammatory conditions"
+              ],
+              "answer": "Oral prednisolone for SLE",
+              "explanation": "Long-term high-dose systemic steroids (prednisolone for SLE) cause osteoporosis — the concern flagged in the check-up. Inhaled fluticasone, physiologic hydrocortisone replacement for Addison's, and topical dexamethasone have minimal systemic bone effects."
+            },
+            {
+              "stem": "Which of the following is the most appropriate mineralocorticoid following management of acute adrenocortical insufficiency?",
+              "options": [
+                "Dexamethasone",
+                "Desoxycorticosterone acetate",
+                "Hydrocortisone",
+                "Fludrocortisone"
+              ],
+              "answer": "Fludrocortisone",
+              "explanation": "Fludrocortisone is the mineralocorticoid used to manage mineralocorticoid deficiency in adrenocortical insufficiency (with glucocorticoid replacement). Hydrocortisone has some mineralocorticoid activity; dexamethasone has none; desoxycorticosterone acetate is rarely used."
+            },
+            {
+              "stem": "Which of the following is not a complication of mineralocorticoid treatment?",
+              "options": [
+                "Hypokalemia",
+                "Hypertension",
+                "Hepatotoxicity",
+                "Congestive heart failure"
+              ],
+              "answer": "Hepatotoxicity",
+              "explanation": "Mineralocorticoid excess causes hypokalaemia, hypertension and fluid overload (congestive heart failure) — but NOT hepatotoxicity. Hepatotoxicity is not a complication of mineralocorticoid treatment."
+            },
+            {
+              "stem": "At recommended dosages, which of the following is the most common complication of glucocorticoid therapy for Addison's disease?",
+              "options": [
+                "Hypokalemia",
+                "Gastritis",
+                "Hypertension",
+                "Hepatotoxicity"
+              ],
+              "answer": "Gastritis",
+              "explanation": "In Addison's disease, glucocorticoid replacement at recommended dosages most commonly causes gastritis/dyspepsia (GI irritation). Hypokalaemia and hypertension are mineralocorticoid effects; hepatotoxicity is not typical."
+            },
+            {
+              "stem": "In Cushing's syndrome due to adrenal neoplasm, the most common drug for treating adrenocortical carcinoma is",
+              "options": [
+                "Cortisol",
+                "Spironolactone",
+                "Mitotane",
+                "Aminoglutethimide"
+              ],
+              "answer": "Mitotane",
+              "explanation": "Mitotane is the adrenolytic drug of choice for adrenocortical carcinoma — it destroys the adrenal cortex and inhibits steroid synthesis. Spironolactone and aminoglutethimide are alternatives in some settings but mitotane is the classic answer."
+            },
+            {
+              "stem": "Which of the following is not a mechanism for glucocorticoid anti-inflammatory and anti-immune effects?",
+              "options": [
+                "Inhibition of COX-II expression",
+                "Inhibition of kinin and bacterial endotoxin activity",
+                "Decreased leukocyte responsiveness to mitogens/antigens",
+                "Increased macrophage phagocytic action"
+              ],
+              "answer": "Increased macrophage phagocytic action",
+              "explanation": "Glucocorticoids DECREASE (not increase) macrophage phagocytic activity — they suppress it. Inhibition of COX-2 expression, inhibition of kinin/endotoxin activity, and decreased leukocyte responsiveness are all anti-inflammatory mechanisms."
+            },
+            {
+              "stem": "Which one of the following insulin preparations exhibits a relatively longer duration of action?",
+              "options": [
+                "Glulisine",
+                "Detemir",
+                "Lispro",
+                "Aspart"
+              ],
+              "answer": "Detemir",
+              "explanation": "Insulin detemir is a long-acting basal insulin with a long duration of action (up to 24 h). Glulisine, lispro and aspart are rapid-acting insulins with short durations."
+            },
+            {
+              "stem": "Which of the following is the most common complication of insulin therapy?",
+              "options": [
+                "Lipodystrophies",
+                "Gallstones",
+                "Hypoglycemia",
+                "Retinopathy"
+              ],
+              "answer": "Hypoglycemia",
+              "explanation": "Hypoglycaemia is the most common complication of insulin therapy (dose, timing, missed meals, exercise). Lipodystrophy is an injection-site issue; gallstones and retinopathy are not complications of insulin."
+            },
+            {
+              "stem": "Which of the following effects is not associated with insulin- induced hypoglycemia?",
+              "options": [
+                "Bradycardia",
+                "Palpitations",
+                "Nausea",
+                "Sweating"
+              ],
+              "answer": "Bradycardia",
+              "explanation": "Insulin-induced hypoglycaemia causes sympathoadrenal activation — tachycardia/palpitations (not bradycardia), sweating, nausea and anxiety. Bradycardia is NOT associated; it is seen with other causes (e.g., beta-blockers, sick sinus)."
+            },
+            {
+              "stem": "Which of the following is the most effective in the immediate management of a comatose, hypoglycemic patient?",
+              "options": [
+                "Have the patient drink orange juice",
+                "Provide IV infusion of 50% glucose solution",
+                "Glucagon injection -- subcutaneous or intramuscular",
+                "Provide IV infusion of normal saline"
+              ],
+              "answer": "Provide IV infusion of 50% glucose solution",
+              "explanation": "A comatose hypoglycaemic patient cannot take oral glucose. IV 50% dextrose is the most effective immediate management (followed by glucose infusion). Glucagon IM/SC is used when IV access is unavailable."
+            },
+            {
+              "stem": "Which of the following is a second-generation sulfonylurea approved for once-daily use as monotherapy in management of Type II diabetes?",
+              "options": [
+                "Glyburide",
+                "Glipizide",
+                "Glimepiride",
+                "Metformin"
+              ],
+              "answer": "Glimepiride",
+              "explanation": "Glimepiride is a second-generation sulfonylurea approved for once-daily use. Glyburide and glipizide are also second-generation but glimepiride is the once-daily example in this list; metformin is a biguanide, not a sulfonylurea."
+            },
+            {
+              "stem": "Which of the following is an oral hypoglycemic agent most likely to be prescribed for patients with refractory obesity and who exhibit insulin resistance syndrome?",
+              "options": [
+                "Pioglitazone",
+                "Acarbose",
+                "Glibenclamide",
+                "Metformin"
+              ],
+              "answer": "Metformin",
+              "explanation": "Metformin is the oral hypoglycaemic of choice for refractory obesity with insulin resistance — it improves sensitivity, does not cause weight gain (often slight loss), and does not cause hypoglycaemia. Pioglitazone and glibenclamide cause weight gain; acarbose is less effective."
+            },
+            {
+              "stem": "Which of the following is a glucagon effect(s) at pharmacologic doses?",
+              "options": [
+                "Promote insulin release from normal pancreatic B cells",
+                "Promote catecholamine release from pheochromocytoma",
+                "Promote calcitonin release from medullary carcinoma cells",
+                "All of the choices"
+              ],
+              "answer": "All of the choices",
+              "explanation": "At pharmacologic doses glucagon promotes insulin release from normal pancreatic B cells, catecholamine release from pheochromocytoma, and calcitonin release from medullary carcinoma cells — so 'All of the choices' is correct."
+            },
+            {
+              "stem": "Following very significant alpha and beta-adrenergic blocker overdose, the most likely drug to promote increased inotropic and chronotropic cardiac response is",
+              "options": [
+                "Isoproterenol",
+                "Phenylephrine",
+                "Glucagon",
+                "Mecamylamine"
+              ],
+              "answer": "Glucagon",
+              "explanation": "Glucagon activates cardiac beta-adrenergic signalling independently of receptors — it is the treatment for beta-blocker (and calcium-channel blocker) overdose to increase inotropy and chronotropy. Isoproterenol may be ineffective when receptors are blocked."
+            },
+            {
+              "stem": "Which of the following is an example of a drug that increases metabolism of T4 and T3?",
+              "options": [
+                "Rifampin",
+                "Carbamazepine",
+                "Phenytoin",
+                "All of the choices"
+              ],
+              "answer": "All of the choices",
+              "explanation": "Rifampin, carbamazepine and phenytoin are hepatic enzyme inducers that increase the metabolism of T4 and T3 — so 'All of the choices' is correct."
+            },
+            {
+              "stem": "Which of the following is associated with 5'-deiodinase inhibition?",
+              "options": [
+                "Rifampin",
+                "Iopanoic acid",
+                "Dopamine",
+                "Cholestyramine"
+              ],
+              "answer": "Iopanoic acid",
+              "explanation": "Iopanoic acid (oral cholecystographic contrast) inhibits 5'-deiodinase, blocking peripheral conversion of T4 to T3 — used historically in thyroid storm. Rifampin induces metabolism, dopamine and cholestyramine do not inhibit 5'-deiodinase."
+            },
+            {
+              "stem": "Which of the following displaces thyroid hormones from TBG and thus may cause hyperthyroxinemia?",
+              "options": [
+                "Methadone",
+                "Sucralfate",
+                "Lithium",
+                "Furosemide"
+              ],
+              "answer": "Furosemide",
+              "explanation": "Furosemide (and salicylates, phenytoin) displaces thyroid hormones from thyroxine-binding globulin (TBG), transiently raising free T4 (hyperthyroxinemia). Methadone, sucralfate and lithium do not displace thyroid hormones from TBG."
+            },
+            {
+              "stem": "Preparation of choice for thyroid replacement therapy is",
+              "options": [
+                "Dessicated thyroid",
+                "Liothyronine",
+                "Levothyroxine",
+                "Propylthiouracil"
+              ],
+              "answer": "Levothyroxine",
+              "explanation": "Levothyroxine (T4) is the preparation of choice for thyroid replacement therapy — stable pharmacokinetics, once-daily dosing, and reliable conversion to T3 in tissues. Dessicated thyroid is variable; liothyronine has rapid fluctuations; PTU is antithyroid."
+            },
+            {
+              "stem": "Which of the following is the preferred treatment of thyroid storm?",
+              "options": [
+                "Propranolol if patient has asthma",
+                "Propylthiouracil",
+                "Levothyroxine",
+                "Dexamethasone"
+              ],
+              "answer": "Propylthiouracil",
+              "explanation": "PTU is preferred in thyroid storm because it blocks new hormone synthesis AND inhibits peripheral T4→T3 conversion (rapid effect). Propranolol is used but is contraindicated in asthma; dexamethasone also reduces conversion; levothyroxine is contraindicated."
+            },
+            {
+              "stem": "Which of the following is a steroidal, synthetic compound with estrogenic activity?",
+              "options": [
+                "Diethylstilbestrol",
+                "Estrone",
+                "Estradiol",
+                "Ethinyl estradiol"
+              ],
+              "answer": "Diethylstilbestrol",
+              "explanation": "Diethylstilbestrol is a synthetic, steroidal compound with potent estrogenic activity (historically used; now for prostate cancer and some indications). Estrone, estradiol and ethinyl estradiol are natural/semi-synthetic estrogens."
+            },
+            {
+              "stem": "Which of the following is primarily used to promote ovulation in patients wishing to become pregnant?",
+              "options": [
+                "Danazol",
+                "Medroxyprogesterone acetate",
+                "Clomiphene",
+                "Tamoxifen"
+              ],
+              "answer": "Clomiphene",
+              "explanation": "Clomiphene citrate is a SERM that blocks oestrogen negative feedback on the hypothalamus/pituitary, increasing gonadotropin (FSH/LH) release and promoting ovulation in anovulatory women wishing to conceive. Danazol, MPA and tamoxifen do not promote ovulation."
+            },
+            {
+              "stem": "Which of the following does not inhibit pituitary TSH release?",
+              "options": [
+                "Somatostatin",
+                "Dopamine",
+                "Corticosteroids",
+                "Flutamide"
+              ],
+              "answer": "Flutamide",
+              "explanation": "Flutamide is an androgen-receptor antagonist — it does NOT inhibit pituitary TSH release. Somatostatin, dopamine and corticosteroids all inhibit TSH secretion."
+            },
+            {
+              "stem": "Which of the following does not inhibit thyroid hormone synthesis or release?",
+              "options": [
+                "Amiodarone",
+                "Lithium",
+                "Aminoglutethimide",
+                "Sotalol"
+              ],
+              "answer": "Sotalol",
+              "explanation": "Sotalol (a beta-blocker/class III antiarrhythmic) does not affect thyroid hormone synthesis or release. Amiodarone (high iodine), lithium and aminoglutethimide all inhibit thyroid hormone synthesis/release."
+            },
+            {
+              "stem": "Which of the following is not a side effect of estrogen therapy?",
+              "options": [
+                "Migraine headaches",
+                "Cholestasis",
+                "Hypertension",
+                "Weight gain"
+              ],
+              "answer": "Hypertension",
+              "explanation": "Oestrogen therapy causes migraine, cholestasis and weight gain — but hypertension is NOT a typical side effect (oestrogen usually has neutral or slight BP effect; the classic BP effect is associated with older high-dose OCs and is uncommon now)."
+            },
+            {
+              "stem": "Which of the following is not a serious adverse effect associated with contraceptive use?",
+              "options": [
+                "Cancer",
+                "Depression",
+                "Renal failure",
+                "Myocardial infarction"
+              ],
+              "answer": "Renal failure",
+              "explanation": "Serious contraceptive adverse effects include cancer (rare, e.g., liver), depression and myocardial infarction (VTE/arterial events) — but renal failure is NOT associated with contraceptive use."
+            },
+            {
+              "stem": "Which of the following is not a clinical use of progestins?",
+              "options": [
+                "Treatment of endometriosis",
+                "Treatment of prostate cancer",
+                "Treatment of hirsutism",
+                "Treating premenstrual syndrome"
+              ],
+              "answer": "Treatment of prostate cancer",
+              "explanation": "Progestins are used for endometriosis, hirsutism and premenstrual syndrome — but NOT for prostate cancer (androgens/antiandrogens, LHRH analogues are used there)."
+            },
+            {
+              "stem": "Which of the following is an adjunct hormonal therapy, particularly in estrogen-receptor-positive breast cancer?",
+              "options": [
+                "Tamsulosin",
+                "Clomiphene",
+                "Tamoxifen",
+                "Danazol"
+              ],
+              "answer": "Tamoxifen",
+              "explanation": "Tamoxifen (SERM) is the adjunct hormonal therapy for oestrogen-receptor-positive breast cancer — blocks oestrogen receptors in breast tissue. Tamsulosin is for BPH, clomiphene for ovulation, danazol for endometriosis."
+            },
+            {
+              "stem": "Which of the following is an orally active 5-alpha reductase inhibitor; moderately effective in reducing prostate size in men with benign prostatic hyperplasia?",
+              "options": [
+                "Flutamide",
+                "Spironolactone",
+                "Finasteride",
+                "Cyproterone"
+              ],
+              "answer": "Finasteride",
+              "explanation": "Finasteride is an orally active 5-alpha-reductase inhibitor that reduces prostate size in BPH (blocks DHT formation). Flutamide and cyproterone are androgen-receptor antagonists; spironolactone is a mineralocorticoid/androgen antagonist."
+            },
+            {
+              "stem": "Which of the following is used for treating advanced prostatic carcinoma; works by producing continuous gonadal suppression and is a gonadotropin-releasing hormone analog?",
+              "options": [
+                "Ketoconazole",
+                "Methyltestosterone",
+                "Leuprolide acetate",
+                "Stanozolol"
+              ],
+              "answer": "Leuprolide acetate",
+              "explanation": "Leuprolide acetate (LHRH/GnRH agonist) produces continuous gonadal suppression (initial flare then medical castration) for advanced prostate carcinoma. Ketoconazole inhibits steroidogenesis; methyltestosterone and stanozolol are androgens."
+            },
+            {
+              "stem": "Which of the following is a selective nonsteroidal aromatase inhibitor?",
+              "options": [
+                "Danazol",
+                "Clomiphene",
+                "Anastrozole",
+                "Norethindrone"
+              ],
+              "answer": "Anastrozole",
+              "explanation": "Anastrozole is a selective nonsteroidal aromatase inhibitor (third-generation) used in hormone-positive breast cancer — blocks oestrogen synthesis. Danazol, clomiphene and norethindrone are not aromatase inhibitors."
+            },
+            {
+              "stem": "Which of the following is a hypothalamic hormone linked to the pituitary hormone prolactin?",
+              "options": [
+                "Corticotropin-releasing hormone",
+                "Dopamine",
+                "Gonadotropin-releasing hormone",
+                "Somatostatin"
+              ],
+              "answer": "Dopamine",
+              "explanation": "Dopamine is the hypothalamic hormone that inhibits prolactin release from the pituitary (prolactin-inhibiting factor). CRH, GnRH and somatostatin have other functions."
+            },
+            {
+              "stem": "Which of the following is not a clinical use of octreotide?",
+              "options": [
+                "Acute bleeding control from esophageal varices",
+                "Carcinoid syndrome symptoms",
+                "Gastrinoma symptoms",
+                "Dwarfism"
+              ],
+              "answer": "Dwarfism",
+              "explanation": "Octreotide (somatostatin analogue) is used for acute variceal bleeding, carcinoid syndrome and gastrinoma — but it is NOT a treatment for dwarfism (growth hormone deficiency). In fact it inhibits GH, potentially worsening growth delay."
+            },
+            {
+              "stem": "Thyrotropin-releasing hormone (TRH) infusion causes",
+              "options": [
+                "Stimulation of prolactin release by the pituitary",
+                "Inhibition of thyroxine production",
+                "Stimulation of ACTH production by the pituitary",
+                "Stimulation of growth hormone production"
+              ],
+              "answer": "Stimulation of prolactin release by the pituitary",
+              "explanation": "TRH stimulates the pituitary to release prolactin (and TSH). It does not directly inhibit thyroxine production, stimulate ACTH, or stimulate growth hormone release."
+            },
+            {
+              "stem": "A 32-year-old woman suffering from weight gain, hirsutism, fatigue, hypertension, diabetes and premature osteoporosis is found to have elevated plasma cortisol levels. To determine if her cortisol production is under pituitary control, you attempt to suppress pituitary ACTH production by administering a potent & long-acting synthetic glucocorticoid. Which glucocorticoid would you use for this purpose?",
+              "options": [
+                "Dexamethasone",
+                "Fludrocortisone",
+                "Methylprednisolone",
+                "Prednisolone"
+              ],
+              "answer": "Dexamethasone",
+              "explanation": "A woman with elevated cortisol and features of Cushing's would be given dexamethasone for the dexamethasone suppression test — dexamethasone suppresses ACTH-dependent cortisol (Cushing's disease) but not adrenal tumours. Fludrocortisone, methylprednisolone and prednisolone are not used for this test."
+            },
+            {
+              "stem": "Some drugs have multiple clinical indications that are unrelated because drugs can affect more than one type of receptor. One drug that fits this description is an antagonist of both progesterone & glucocorticoid steroid receptors. As a result, it can be used for two completely different uses: 1) termination of pregnancy and 2) reducing hyperglycemia in patients with inoperable Cushing's disease. The drug that fits this description is:",
+              "options": [
+                "Fludocortisone",
+                "Metyrapone",
+                "Mifepristone",
+                "Triamcinolone"
+              ],
+              "answer": "Mifepristone",
+              "explanation": "Mifepristone is a progesterone-receptor antagonist (abortifacient) that also has antiglucocorticoid activity at higher doses — a drug with multiple unrelated indications acting on more than one receptor type. Fludrocortisone, metyrapone and triamcinolone don't fit."
+            },
+            {
+              "stem": "A 23-year-old woman is prescribed a progestin-only mini pill for contraception. Which advice would you consider most appropriate before writing her prescription?",
+              "options": [
+                "Taking these pills for more than a year in duration frequently results in sterility",
+                "It is imperative that progestin mini pills be taken at the same time each day",
+                "These pills can help with acne",
+                "These pills are potent suppressors of ovulation, and have a 2-week grace period before pregnancy is likely to occur if a pill is missed"
+              ],
+              "answer": "It is imperative that progestin mini pills be taken at the same time each day",
+              "explanation": "Progestin-only pills must be taken at the same time each day (within 3 hours) because they do not reliably suppress ovulation otherwise — the key counselling point. Mini pills do not cause sterility, do not help acne (unlike combined OCs), and do not have a 2-week grace period."
+            },
+            {
+              "stem": "A 30-year-old semi-pro athelete who recently acknowledged that he had abused anabolic steroids for the past decade arrives in your clinic for a comprehensive medical exam. Based upon his medical history, which signs or symptoms would be consistent with his previous drug abuse?",
+              "options": [
+                "Hypotension",
+                "Increased ALT & AST plasma levels",
+                "Increased HDL",
+                "Increased sperm count"
+              ],
+              "answer": "Increased ALT & AST plasma levels",
+              "explanation": "Long-term anabolic steroid abuse causes hepatotoxicity (elevated ALT/AST), dyslipidaemia (decreased HDL), hypertension and reduced sperm count. Increased ALT/AST is consistent; hypotension, increased HDL and increased sperm count are NOT."
+            },
+            {
+              "stem": "When considering an appropriate treatment for your hyperthyroid patient, you decide to prescribe a drug that can produce a relatively rapid inhibition of thyroid hormone release, but should not be given for more than a few weeks. Which drug has these characteristics?",
+              "options": [
+                "Levothyroxine",
+                "Methimazole",
+                "Potassium iodide",
+                "Propylthiouracil"
+              ],
+              "answer": "Potassium iodide",
+              "explanation": "Potassium iodide (or Lugol's iodine) rapidly inhibits thyroid hormone RELEASE (Wolff-Chaikoff effect) but should not be given for more than a few weeks. Methimazole/PTU block synthesis slowly; levothyroxine is replacement therapy."
+            },
+            {
+              "stem": "You prescribe a drug that selectively inhibits thyroid peroxidase, and requires several weeks of treatment to produce a euthyroid state in your patient with Grave's disease. Which drug did you prescribe?",
+              "options": [
+                "Levothyroxine",
+                "Methimazole",
+                "Potassium iodide",
+                "Propranolol"
+              ],
+              "answer": "Methimazole",
+              "explanation": "Methimazole selectively inhibits thyroid peroxidase (hormone synthesis) and requires several weeks to produce a euthyroid state. Potassium iodide inhibits release; propranolol is symptomatic; levothyroxine is replacement."
+            },
+            {
+              "stem": "A patient with a thyroid disorder is treated with a drug that directly results in activation of nuclear receptors and altered gene expression. Which of the following was most likely given?",
+              "options": [
+                "Levothyroxine",
+                "Methimazole",
+                "Potassium iodide",
+                "Propylthiouracil"
+              ],
+              "answer": "Levothyroxine",
+              "explanation": "Levothyroxine (T4) acts via nuclear thyroid receptors to alter gene expression — the mechanism of thyroid hormone action. Methimazole, potassium iodide and propylthiouracil are antithyroid drugs."
+            },
+            {
+              "stem": "Which of the following produces CNS-mediated effects to decrease hunger and delay gastric emptying, suppresses the release of glucagon, and can be used along with insulin in BOTH Type1 and Type 2 diabetic patients?",
+              "options": [
+                "Exenatide",
+                "Acarbose",
+                "Pramlintide",
+                "Saxagliptin"
+              ],
+              "answer": "Pramlintide",
+              "explanation": "Pramlintide (amylin analogue) produces CNS-mediated appetite suppression, delays gastric emptying, suppresses glucagon, and reduces postprandial glucose. Exenatide is a GLP-1 agonist (similar but different class); acarbose and saxagliptin don't have CNS effects."
+            },
+            {
+              "stem": "John is a 52-year-old Type 2 diabetic patient who has been treated with corticosteroids for severe inflammatory bowel disease (IBD) for the past few months. Recently he has found to have normal morning (pre-breakfast) fasting blood glucose levels, but progressively elevated pre-lunch and pre-dinner glucose levels. Which of the following would be the most appropriate drug to treat this patient’s hyperglycemia?",
+              "options": [
+                "Aspart",
+                "Detemir",
+                "Glargine",
+                "Glyburide"
+              ],
+              "answer": "Glargine",
+              "explanation": "Corticosteroid therapy causes hyperglycaemia; insulin glargine (long-acting basal) provides background insulin coverage without pronounced peaks — appropriate for steroid-induced diabetes. Aspart and detemir are alternatives but glargine is the long-acting basal commonly chosen; glyburide is oral."
+            },
+            {
+              "stem": "A 38-year-old woman with a 20 year of cigarette smoking (1/2 pack per day) is seeking a prescription for contraception. Which of the following would have the greatest contraindication for use in this patient?",
+              "options": [
+                "Depo medroxyprogesterone",
+                "Implanon implant",
+                "Levonorgestrel releasing IUD",
+                "Transdermal patch"
+              ],
+              "answer": "Transdermal patch",
+              "explanation": "A 38-year-old smoker should avoid oestrogen-containing contraception (increased VTE/MI risk with smoking + age). The transdermal patch contains oestrogen (ethinyl estradiol) — so it is the one to AVOID. DMPA, implant and levonorgestrel IUD are progestin-only and safe."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A pregnant lady in her first trimester is diagnosed with hypothyroidism. Which drug would you recommend be given to the patient? (1 mark)",
+              "modelAnswer": "a) DRUG (1 mark): Propylthiouracil (PTU) — the antithyroid drug of choice in the FIRST trimester of pregnancy (methimazole is teratogenic — aplasia cutis, embryopathy).\nb) REASON/ALTERNATIVES (if asked): PTU is preferred because methimazole is associated with congenital malformations in early pregnancy; PTU also inhibits peripheral T4→T3 conversion. After the first trimester, methimazole may be used (less hepatotoxicity risk with prolonged PTU). Levothyroxine would be used for hypothyroidism, not hyperthyroidism."
+            },
+            {
+              "stem": "A 35-year old patient is diagnosed with type II diabetes, hypertension and heart failure.\na) Which 4 drugs would you recommend be administered to this patient? (4 marks)\nb) What is the mode of action of the drugs mentioned in a) above? (8 marks)\nc) State 4 potential drug-drug interactions you would be wary about. (4 marks)",
+              "modelAnswer": "a) FOUR DRUGS FOR TYPE II DIABETES + HYPERTENSION + HEART FAILURE (4 marks):\n1. Metformin — for type II diabetes (insulin sensitiser; first-line).\n2. ACE inhibitor (e.g., ramipril/enalapril) or ARB — for hypertension AND heart failure (mortality benefit, afterload reduction, renoprotection).\n3. Beta-blocker (e.g., bisoprolol, carvedilol, metoprolol succinate) — for heart failure (mortality benefit) and rate/BP control.\n4. Loop diuretic (furosemide) or mineralocorticoid receptor antagonist (spironolactone/eplerenone) — for fluid overload/congestion in heart failure.\n(Also acceptable: SGLT-2 inhibitor — empagliflozin/dapagliflozin, which benefits diabetes + heart failure; or a long-acting insulin if glycaemic control is inadequate.)\nb) MODE OF ACTION (8 marks):\n- Metformin: activates AMPK in the liver → decreases hepatic gluconeogenesis; increases peripheral insulin sensitivity (muscle/adiopose glucose uptake); does not cause hypoglycaemia or weight gain.\n- ACE inhibitor: inhibits angiotensin-converting enzyme → ↓angiotensin II → vasodilation (↓afterload), ↓aldosterone (↓sodium/water retention) → lowers BP and improves heart-failure remodelling.\n- Beta-blocker: blocks cardiac beta-1 adrenoceptors → ↓heart rate, ↓contractility (O2 demand), ↓renin; in HFrEF, reverses remodelling and reduces arrhythmic death (carvedilol also blocks alpha-1 → vasodilation).\n- Furosemide: inhibits Na+-K+-2Cl− cotransporter in the thick ascending limb → natriuresis/diuresis → ↓preload and congestion.\n- Spironolactone: aldosterone-receptor antagonist → ↓sodium retention, ↓cardiac fibrosis.\n- SGLT-2 inhibitor (if given): blocks renal SGLT2 → glycosuria, natriuresis → glucose lowering, weight loss, preload reduction and CV/renal protection.\nc) FOUR POTENTIAL DRUG-DRUG INTERACTIONS (4 marks):\n1. ACE inhibitor + spironolactone → hyperkalaemia (monitor K+).\n2. Beta-blocker + ACE inhibitor → additive hypotension/bradycardia.\n3. Diuretic + ACE inhibitor → first-dose hypotension; hypovolaemia.\n4. Metformin + loop diuretic → risk of renal impairment/lactic acidosis (monitor renal function); iodinated contrast interaction.\n5. NSAIDs (if added) → reduce antihypertensive/diuretic efficacy and worsen renal function.\n6. Beta-blocker may mask hypoglycaemia symptoms in insulin/sulfonylurea-treated patients."
+            },
+            {
+              "stem": "Compare and contrast Depo Provera and combined oral contraceptive pills. (3 marks)",
+              "modelAnswer": "DEPO PROVERA vs COMBINED ORAL CONTRACEPTIVE PILLS (3 marks):\nDepo Provera (DMPA, depot medroxyprogesterone acetate): progestin-only injectable given IM/SC every 12 weeks. Mechanism: suppresses ovulation (inhibits LH surge) + thickens cervical mucus + thins endometrium. Advantages: high efficacy, no oestrogen (safe in VTE history/smokers), private, no daily pill. Disadvantages: delayed return of fertility (up to 12–18 months), irregular bleeding/amenorrhea, weight gain, decreased bone density with long use, injection visits.\nCombined oral contraceptive pill (COC): oestrogen (ethinyl estradiol) + progestin, taken daily with a hormone-free interval. Mechanism: suppresses ovulation (inhibits FSH/LH), thickens cervical mucus, alters endometrium. Advantages: cycle control, reversible, treats acne/menorrhagia/PMS, reduces ovarian/endometrial cancer risk. Disadvantages: daily adherence required, oestrogen-related VTE risk (contraindicated in smokers >35, migraine with aura, VTE history), nausea, breast tenderness, breakthrough bleeding."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Describe CORTICOSTEROIDS in terms of\na) classes and examples (2 marks)\nb) mode of action (2 marks)\nc) clinical applications (4 marks)\nd) side effects (4 marks)\ne) contraindications (2 marks)\nf) pharmacokinetics (3 marks)\ng) drug-drug interactions (3 marks)",
+              "modelAnswer": "CORTICOSTEROIDS:\na) CLASSES AND EXAMPLES (2 marks):\n1. Short-acting (half-life 8–12 h): hydrocortisone, cortisone.\n2. Intermediate-acting (12–36 h): prednisone, prednisolone, methylprednisolone, triamcinolone.\n3. Long-acting (36–72 h): dexamethasone, betamethasone.\n4. Mineralocorticoid (for replacement): fludrocortisone (DOCA historically).\nb) MODE OF ACTION (2 marks): Corticosteroids are lipophilic and diffuse into cells, binding cytoplasmic glucocorticoid receptors → the complex translocates to the nucleus and regulates gene transcription (transactivation/transrepression). Effects: induce lipocortin-1 (inhibits phospholipase A2 → ↓arachidonic acid/prostaglandins/leukotrienes), inhibit COX-2 and cytokine gene expression (↓IL-1, IL-2, IL-6, TNF-α), suppress NF-κB, reduce leukocyte migration/inflammatory cell function, cause lympholysis, and (at higher doses) mineralocorticoid effects.\nc) CLINICAL APPLICATIONS (4 marks):\n- Replacement therapy: Addison's disease (hydrocortisone ± fludrocortisone); congenital adrenal hyperplasia; adrenocortical insufficiency; adrenal crisis.\n- Anti-inflammatory/immunosuppressive: asthma and COPD exacerbations; rheumatoid arthritis and other autoimmune diseases (SLE, vasculitis); inflammatory bowel disease (Crohn's, UC); allergic disorders and anaphylaxis; dermatological conditions (eczema, psoriasis — topical); organ-transplant immunosuppression; nephrotic syndrome.\n- Other: dexamethasone in cerebral oedema/raised ICP; antenatal lung maturation (betamethasone); Cushing's syndrome diagnosis (dexamethasone suppression test); haematological malignancies (ALL, lymphoma, myeloma); palliative care.\nd) SIDE EFFECTS (4 marks):\n- Endocrine/metabolic: hyperglycaemia/diabetes, weight gain, Cushing's features (moon face, buffalo hump), adrenal suppression/withdrawal crisis, growth retardation in children.\n- Musculoskeletal: osteoporosis, avascular necrosis of femoral head, myopathy.\n- GI: peptic ulcer, gastritis, pancreatitis.\n- Immunological: immunosuppression/increased infections, delayed wound healing.\n- CNS: insomnia, mood changes/psychosis, raised intracranial pressure.\n- CVS/fluid: hypertension, fluid retention, hypokalaemia (with high doses).\n- Ocular: cataracts, glaucoma.\ne) CONTRAINDICATIONS (2 marks): Systemic fungal infections (untreated); live-virus vaccines; hypersensitivity to corticosteroids; caution (relative): peptic ulcer disease, uncontrolled diabetes/hypertension, osteoporosis, glaucoma, severe infections (unless treating the infection), pregnancy (weigh risk/benefit), psychosis.\nf) PHARMACOKINETICS (3 marks): Oral corticosteroids are well absorbed; most are highly protein-bound (corticosteroid-binding globulin, albumin). Prednisone is a prodrug converted in the liver to prednisolone. Metabolised in the liver (CYP3A4) and excreted renally as glucuronide/sulphate conjugates. Duration of action depends on half-life (short 8–12 h to long 36–72 h); dexamethasone has no mineralocorticoid activity and a long half-life. In liver disease, prednisolone is preferred.\ng) DRUG-DRUG INTERACTIONS (3 marks):\n- CYP3A4 inducers (rifampicin, phenytoin, carbamazepine, phenobarbital) → increased steroid metabolism, reduced efficacy.\n- CYP3A4 inhibitors (ketoconazole, itraconazole, ritonavir) → increased steroid levels/effects.\n- NSAIDs/aspirin → additive GI ulceration/bleeding.\n- Diuretics (loop/thiazide) → additive hypokalaemia.\n- Oral hypoglycaemics/insulin → reduced glycaemic control (dose adjustment needed).\n- Vaccines (live) → increased risk of disseminated infection in immunosuppressed patients.\n- Digoxin → hypokalaemia increases digoxin toxicity.\n- Warfarin → altered anticoagulant effect (monitor INR)."
             }
           ]
         }

@@ -1,0 +1,1171 @@
+{
+  "pharm-veterinary": {
+    "1": {
+      "title": "Veterinary Pharmacology",
+      "variant": 1,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Ivermectin is widely used in livestock and companion animals as an anthelmintic. What is the primary mechanism of action of ivermectin?",
+              "options": [
+                "Inhibition of acetylcholinesterase",
+                "Activation of glutamate-gated chloride channels causing hyperpolarisation",
+                "Blockade of nicotinic acetylcholine receptors",
+                "Inhibition of fumarate reductase"
+              ],
+              "answer": "Activation of glutamate-gated chloride channels causing hyperpolarisation",
+              "explanation": "Ivermectin (a macrocyclic lactone) binds glutamate-gated chloride channels in nematode and arthropod nerve/muscle, increasing chloride influx and causing hyperpolarisation, flaccid paralysis and death. Levamisole and pyrantel act on nicotinic receptors; organophosphates inhibit acetylcholinesterase."
+            },
+            {
+              "stem": "A cat is accidentally given paracetamol (acetaminophen) by its owner. Cats are exceptionally susceptible to paracetamol toxicity mainly because they:",
+              "options": [
+                "Have deficient glucuronidation capacity",
+                "Metabolise paracetamol too rapidly",
+                "Lack cytochrome P450 enzymes entirely",
+                "Have excessive hepatic glutathione"
+              ],
+              "answer": "Have deficient glucuronidation capacity",
+              "explanation": "Cats have low hepatic glucuronosyltransferase activity, so paracetamol is shunted through oxidative (CYP) pathways producing the toxic metabolite NAPQI, causing methaemoglobinaemia and hepatic necrosis. This is a classic species difference in drug metabolism."
+            },
+            {
+              "stem": "Which of the following species is physically unable to vomit, which influences the choice of emetic and the handling of oral intoxications?",
+              "options": [
+                "Dog",
+                "Cat",
+                "Horse",
+                "Pig"
+              ],
+              "answer": "Horse",
+              "explanation": "Horses cannot vomit because of a strong cardiac sphincter and the long axis of the oesophagus entering the stomach at an acute angle. Gastric lavage and repeated tubing are used instead of emetics in equine poisonings."
+            },
+            {
+              "stem": "When extrapolating drug doses between species of different body sizes (e.g., from a mouse to a cow), the most reliable basis is:",
+              "options": [
+                "Body weight raised to the power of 0.75 (metabolic body weight)",
+                "Surface area divided by body weight",
+                "Direct linear scaling of body weight",
+                "Age in months"
+              ],
+              "answer": "Body weight raised to the power of 0.75 (metabolic body weight)",
+              "explanation": "Metabolic rate scales with body weight^0.75, so doses scaled allometrically by metabolic body weight (BW^0.75) give more accurate cross-species extrapolation than linear mg/kg scaling, which tends to overdose large animals and underdose small ones."
+            },
+            {
+              "stem": "The withdrawal period of a veterinary medicine is best defined as the time required after last administration until:",
+              "options": [
+                "The animal is fully recovered from disease",
+                "Drug residues in edible tissues and milk fall below the maximum residue limit (MRL)",
+                "The drug has been completely metabolised to inactive products",
+                "The next dose of the drug can be given"
+              ],
+              "answer": "Drug residues in edible tissues and milk fall below the maximum residue limit (MRL)",
+              "explanation": "The withdrawal period ensures that residues of the drug (or its metabolites) in meat, milk, eggs or honey fall below the MRL, protecting consumers from pharmacological, toxicological and antimicrobial-resistance effects. Milk discard and meat withdrawal times are species- and product-specific."
+            },
+            {
+              "stem": "Oxytetracycline is a broad-spectrum antibiotic commonly used in cattle. Its mechanism of antibacterial action is:",
+              "options": [
+                "Inhibition of cell wall synthesis",
+                "Inhibition of the 30S ribosomal subunit",
+                "Inhibition of DNA gyrase",
+                "Disruption of the cytoplasmic membrane"
+              ],
+              "answer": "Inhibition of the 30S ribosomal subunit",
+              "explanation": "Tetracyclines (oxytetracycline, doxycycline) reversibly bind the 30S ribosomal subunit, blocking tRNA binding and protein synthesis. Beta-lactams inhibit cell wall synthesis; fluoroquinolones inhibit DNA gyrase; polymyxins disrupt membranes."
+            },
+            {
+              "stem": "Enrofloxacin, a fluoroquinolone used in dogs, cats and food animals, acts by inhibiting:",
+              "options": [
+                "Transpeptidase enzymes",
+                "Dihydrofolate reductase",
+                "DNA gyrase (topoisomerase II)",
+                "Beta-lactamase"
+              ],
+              "answer": "DNA gyrase (topoisomerase II)",
+              "explanation": "Fluoroquinolones inhibit bacterial DNA gyrase (and topoisomerase IV), preventing DNA supercoiling and replication. Trimethoprim/sulphonamides inhibit dihydrofolate reductase/folate synthesis. Note that enrofloxacin is avoided in growing dogs due to cartilage damage."
+            },
+            {
+              "stem": "Levamisole is used as an anthelmintic in cattle, sheep and goats. Its mechanism of action against nematodes is:",
+              "options": [
+                "Inhibition of cholinesterase enzymes",
+                "Acting as a nicotinic acetylcholine receptor agonist causing spastic paralysis",
+                "Opening glutamate-gated chloride channels",
+                "Inhibiting fumarate reductase"
+              ],
+              "answer": "Acting as a nicotinic acetylcholine receptor agonist causing spastic paralysis",
+              "explanation": "Levamisole (an imidazothiazole) is a nicotinic agonist that causes sustained depolarisation and spastic paralysis of nematode muscle, after which the worm is expelled. Organophosphates inhibit cholinesterase; ivermectin opens glutamate-gated chloride channels."
+            },
+            {
+              "stem": "Praziquantel is the drug of choice for which of the following infections in dogs and cats?",
+              "options": [
+                "Roundworms (Toxocara)",
+                "Hookworms (Ancylostoma)",
+                "Tapeworms (Taenia, Dipylidium) and flukes",
+                "Heartworm (Dirofilaria)"
+              ],
+              "answer": "Tapeworms (Taenia, Dipylidium) and flukes",
+              "explanation": "Praziquantel increases Ca2+ permeability of the cestode tegument, causing contraction and paralysis of tapeworms and trematodes. Roundworms/hookworms are treated with pyrantel, fenbendazole or milbemycin; heartworm requires macrocyclic lactones plus adulticide protocols."
+            },
+            {
+              "stem": "Closantel is a salicylanilide compound used mainly for the treatment of:",
+              "options": [
+                "Gastrointestinal roundworms in poultry",
+                "Liver flukes (fascioliasis) and Haemonchus in ruminants",
+                "Ectoparasites in cats",
+                "Bacterial mastitis in dairy cows"
+              ],
+              "answer": "Liver flukes (fascioliasis) and Haemonchus in ruminants",
+              "explanation": "Closantel is a halogenated salicylanilide that uncouples oxidative phosphorylation; it is highly effective against Fasciola hepatica and Haemonchus contortus (blood-feeding parasites that concentrate the drug). It is given orally or by injection in cattle and sheep."
+            },
+            {
+              "stem": "Fipronil, applied topically to dogs and cats for flea and tick control, exerts its insecticidal effect by:",
+              "options": [
+                "Inhibiting acetylcholinesterase",
+                "Blocking GABA-gated chloride channels",
+                "Acting as a sodium channel opener",
+                "Inhibiting chitin synthesis"
+              ],
+              "answer": "Blocking GABA-gated chloride channels",
+              "explanation": "Fipronil blocks GABA-gated chloride channels (and to a lesser extent glutamate-gated chloride channels) in insects, causing hyperexcitation and death. Organophosphates inhibit acetylcholinesterase; pyrethroids keep sodium channels open; benzoylureas inhibit chitin synthesis."
+            },
+            {
+              "stem": "Amitraz is indicated in dogs for the treatment of:",
+              "options": [
+                "Tapeworm infections",
+                "Generalised demodicosis (Demodex mange)",
+                "Bacterial otitis externa",
+                "Heartworm disease"
+              ],
+              "answer": "Generalised demodicosis (Demodex mange)",
+              "explanation": "Amitraz, an alpha-2 adrenergic agonist, is used as a topical dip (or collar) for generalised demodicosis when local treatments fail. Adverse effects include sedation, and the alpha-2 antagonist atipamezole is its reversal agent. It should not be used in cats or diabetic animals."
+            },
+            {
+              "stem": "Amprolium is used for the prevention and treatment of coccidiosis in poultry and calves because it:",
+              "options": [
+                "Blocks the folate synthesis pathway",
+                "Acts as a thiamine (vitamin B1) analogue that starves the coccidia",
+                "Inhibits DNA gyrase of Eimeria",
+                "Disrupts the coccidial cell membrane"
+              ],
+              "answer": "Acts as a thiamine (vitamin B1) analogue that starves the coccidia",
+              "explanation": "Amprolium competitively inhibits thiamine uptake by Eimeria species, which have a high thiamine requirement, starving the developing coccidia. It is given in drinking water or feed and is safe in birds and mammals (which synthesise or obtain thiamine more efficiently)."
+            },
+            {
+              "stem": "Xylazine is commonly used in veterinary practice for its:",
+              "options": [
+                "Beta-adrenergic agonist effects causing bronchodilatation",
+                "Alpha-2 adrenergic agonist effects producing sedation, analgesia and muscle relaxation",
+                "Anticholinergic effects producing mydriasis",
+                "NMDA antagonist effects producing dissociative anaesthesia"
+              ],
+              "answer": "Alpha-2 adrenergic agonist effects producing sedation, analgesia and muscle relaxation",
+              "explanation": "Xylazine (and detomidine) are alpha-2 adrenergic agonists used for sedation, analgesia and muscle relaxation in horses, cattle, dogs and cats. They commonly cause bradycardia and, in cats, vomiting. Atipamezole is the specific reversal agent."
+            },
+            {
+              "stem": "Ketamine, used for dissociative anaesthesia in cats and dogs, produces its effects primarily by:",
+              "options": [
+                "Potentiating GABA-A receptors",
+                "Blocking NMDA glutamate receptors",
+                "Activating opioid mu receptors",
+                "Blocking voltage-gated sodium channels"
+              ],
+              "answer": "Blocking NMDA glutamate receptors",
+              "explanation": "Ketamine is a non-competitive NMDA receptor antagonist producing dissociative anaesthesia, analgesia and catalepsy while preserving protective airway reflexes. It is often combined with alpha-2 agonists or benzodiazepines for balanced anaesthesia in small animals."
+            },
+            {
+              "stem": "In organophosphate poisoning in dogs and cattle, the antidote that directly counteracts the muscarinic signs (salivation, bradycardia, bronchoconstriction) is:",
+              "options": [
+                "Pralidoxime",
+                "Atropine",
+                "Flumazenil",
+                "Naloxone"
+              ],
+              "answer": "Atropine",
+              "explanation": "Atropine is a competitive muscarinic antagonist that reverses the parasympathetic (SLUDGE) signs of organophosphate poisoning. Pralidoxime reactivates inhibited cholinesterase and is used as an adjunct, but atropine is the immediate lifesaving antidote. Flumazenil reverses benzodiazepines; naloxone reverses opioids."
+            },
+            {
+              "stem": "Flunixin meglumine is a non-steroidal anti-inflammatory drug (NSAID) used in horses mainly for:",
+              "options": [
+                "Sedation before castration",
+                "Relief of visceral pain in colic and musculoskeletal inflammation",
+                "General anaesthesia induction",
+                "Treatment of bacterial pneumonia"
+              ],
+              "answer": "Relief of visceral pain in colic and musculoskeletal inflammation",
+              "explanation": "Flunixin is a potent COX-inhibiting NSAID providing visceral analgesia (colic) and anti-inflammatory effects in horses and cattle. It does not sedate or anaesthetise and has no antibacterial activity; prolonged use can cause GI ulceration and renal injury."
+            },
+            {
+              "stem": "Meloxicam is preferred over older NSAIDs for chronic pain management in cats mainly because it:",
+              "options": [
+                "Is a selective COX-2 inhibitor with a better safety profile at low doses",
+                "Is a corticosteroid with faster onset",
+                "Cannot be given orally",
+                "Has no analgesic effect"
+              ],
+              "answer": "Is a selective COX-2 inhibitor with a better safety profile at low doses",
+              "explanation": "Meloxicam preferentially inhibits COX-2, sparing constitutive COX-1, which reduces GI and renal adverse effects compared with non-selective NSAIDs. In cats, only single-dose or carefully titrated long-term use is recommended because of their slow elimination of the drug."
+            },
+            {
+              "stem": "Tylosin, a macrolide antibiotic, is used in pigs and poultry mainly against:",
+              "options": [
+                "Respiratory and enteric infections (e.g., Mycoplasma, swine dysentery)",
+                "Mastitis caused by yeasts",
+                "Viral infections",
+                "Protozoal infections such as coccidiosis"
+              ],
+              "answer": "Respiratory and enteric infections (e.g., Mycoplasma, swine dysentery)",
+              "explanation": "Tylosin binds the 50S ribosomal subunit and is active against Gram-positive bacteria and Mycoplasma. It is used in pigs for mycoplasmal pneumonia and swine dysentery (Brachyspira) and in poultry for chronic respiratory disease, often administered in feed or drinking water."
+            },
+            {
+              "stem": "Chloramphenicol is prohibited for use in food-producing animals in most countries mainly because it:",
+              "options": [
+                "Causes methaemoglobinaemia in cattle",
+                "Can cause aplastic anaemia in humans consuming residues",
+                "Is rapidly inactivated by ruminal microflora",
+                "Has no activity against Gram-negative bacteria"
+              ],
+              "answer": "Can cause aplastic anaemia in humans consuming residues",
+              "explanation": "Chloramphenicol is associated with dose-independent, often fatal aplastic anaemia in humans; even trace residues in food are considered unacceptable, so it is banned in food animals in Kenya and most other countries. Florfenicol, a safer derivative, is used instead."
+            },
+            {
+              "stem": "The main purpose of the milk discard (withdrawal) time after antibiotic treatment of mastitis is to:",
+              "options": [
+                "Allow the cow to rest the infected quarter",
+                "Prevent antibiotic residues from reaching consumers and to limit resistance selection",
+                "Improve the palatability of milk",
+                "Reduce the cost of milk testing"
+              ],
+              "answer": "Prevent antibiotic residues from reaching consumers and to limit resistance selection",
+              "explanation": "Milk discard times ensure intramammary and systemic antibiotics are eliminated from milk before sale, protecting consumers (allergy, toxicity) and the dairy industry (starter culture failure, resistance). Farmers must follow the label milk-withholding period and test suspicious milk."
+            },
+            {
+              "stem": "Extra-label (off-label) drug use in food animals is permitted under veterinary oversight provided that:",
+              "options": [
+                "The withdrawal period is extended appropriately and a valid client-patient relationship exists",
+                "The drug is given without any record keeping",
+                "The drug is a banned substance such as chloramphenicol",
+                "The animal is slaughtered immediately"
+              ],
+              "answer": "The withdrawal period is extended appropriately and a valid client-patient relationship exists",
+              "explanation": "Responsible extra-label use requires veterinary judgement, informed client consent and an extended withdrawal period to guarantee residue safety, because tissue depletion has not been studied for that species/indication. Banned substances (chloramphenicol, nitroimidazoles) are never permitted."
+            },
+            {
+              "stem": "In Kenya, the regulatory authority responsible for registration and control of veterinary medicines is the:",
+              "options": [
+                "Pharmacy and Poisons Board (PPB)",
+                "Directorate of Veterinary Services / Kenya Veterinary Board",
+                "Kenya Bureau of Standards only",
+                "National Environment Management Authority"
+              ],
+              "answer": "Directorate of Veterinary Services / Kenya Veterinary Board",
+              "explanation": "Veterinary medicines in Kenya are regulated through the veterinary medicines registration system administered under the Veterinary Surgeons and Veterinary Para-Professional Act (Cap 366), coordinated by the Kenya Veterinary Board and the Directorate of Veterinary Services, while human medicines fall under the PPB."
+            },
+            {
+              "stem": "The recommended strategy for preventing heartworm (Dirofilaria immitis) infection in dogs is:",
+              "options": [
+                "Monthly administration of a macrocyclic lactone (e.g., ivermectin, milbemycin)",
+                "Daily administration of prednisolone",
+                "Annual vaccination with a live vaccine",
+                "Topical application of fipronil alone"
+              ],
+              "answer": "Monthly administration of a macrocyclic lactone (e.g., ivermectin, milbemycin)",
+              "explanation": "Macrocyclic lactones kill developing heartworm larvae (L3/L4) when given monthly, preventing adult worm establishment. Fipronil controls fleas/ticks but not heartworm larvae; there is no heartworm vaccine; steroids do not prevent infection."
+            },
+            {
+              "stem": "A dairy cow with clinical mastitis is best treated with antibiotics administered:",
+              "options": [
+                "Only by the oral route",
+                "By the intramammary route (into the affected quarter), with systemic therapy where indicated",
+                "Intravenously into the tail vein only",
+                "By topical skin application"
+              ],
+              "answer": "By the intramammary route (into the affected quarter), with systemic therapy where indicated",
+              "explanation": "Intramammary infusion delivers high drug concentrations directly into the infected udder quarter and is the standard treatment for lactating mastitis; severe cases with systemic signs also require parenteral antibiotics plus supportive therapy. Milk discard times apply."
+            },
+            {
+              "stem": "When treating bacterial infections in a large flock of broiler chickens, the most practical route of mass medication is:",
+              "options": [
+                "Individual intramuscular injection of every bird",
+                "Administration in drinking water or feed",
+                "Topical application to the wing web",
+                "Subcutaneous implantation"
+              ],
+              "answer": "Administration in drinking water or feed",
+              "explanation": "Flock medication via drinking water or feed is practical and economical for thousands of birds, ensuring uniform dosing through water intake. Individual injections are reserved for valuable or small numbers of birds; medicated water should be the only water source during treatment."
+            },
+            {
+              "stem": "Ibuprofen, a common human NSAID, is highly toxic to dogs because it can cause:",
+              "options": [
+                "Acute gastrointestinal ulceration and renal failure",
+                "Malignant hyperthermia",
+                "Paradoxical seizures only",
+                "Permanent blindness without systemic effects"
+              ],
+              "answer": "Acute gastrointestinal ulceration and renal failure",
+              "explanation": "Dogs are sensitive to ibuprofen toxicity due to its long half-life and potent COX-1 inhibition, producing GI ulceration, nephrotoxicity and CNS signs at doses tolerated by humans. Paracetamol, carprofen or meloxicam should be used instead, strictly at veterinary doses."
+            },
+            {
+              "stem": "Which of the following is an example of a species-specific adverse drug reaction rather than a general toxic effect?",
+              "options": [
+                "Penicillin allergy in humans",
+                "Idiosyncratic procaine-induced central nervous excitation in horses",
+                "Nephrotoxicity of gentamicin in all species",
+                "Hepatotoxicity of paracetamol in overdose in humans"
+              ],
+              "answer": "Idiosyncratic procaine-induced central nervous excitation in horses",
+              "explanation": "Some horses show severe CNS excitation and even convulsions after procaine penicillin G because of rapid hydrolysis of procaine to PABA, an idiosyncratic species-specific reaction. The other options are general pharmacological/toxicological effects common across species."
+            },
+            {
+              "stem": "The most important reason for rotating anthelmintic drug classes in grazing ruminants is to:",
+              "options": [
+                "Reduce the cost of treatment",
+                "Slow the development of anthelmintic resistance",
+                "Increase the growth rate of pasture",
+                "Eliminate the need for faecal egg counts"
+              ],
+              "answer": "Slow the development of anthelmintic resistance",
+              "explanation": "Sustained use of a single anthelmintic class selects for resistant nematode populations. Class rotation, targeted selective treatment guided by faecal egg counts and refugia management preserve drug efficacy. Rotation alone does not replace monitoring."
+            },
+            {
+              "stem": "Atropine is used in small animal practice to treat bradycardia during anaesthesia because it:",
+              "options": [
+                "Blocks muscarinic receptors, increasing heart rate",
+                "Stimulates beta-1 receptors directly",
+                "Inhibits the vagus nerve centrally",
+                "Increases venous return mechanically"
+              ],
+              "answer": "Blocks muscarinic receptors, increasing heart rate",
+              "explanation": "Atropine competitively blocks cardiac muscarinic (M2) receptors, removing vagal tone and increasing heart rate, useful for bradycardia and to reduce salivation during anaesthesia. Glycopyrrolate is an alternative with fewer central effects."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "Explain the major species differences in drug pharmacokinetics using THREE of the following examples: cats, horses, ruminants and pigs. (6 marks)",
+              "modelAnswer": "Any three of the following (2 marks each):\n1. CATS - Defective glucuronidation: cats have low hepatic glucuronosyltransferase, so drugs such as paracetamol, aspirin and morphine are poorly conjugated and either become toxic (paracetamol - NAPQI accumulation) or are eliminated slowly. Phenolic drugs are especially hazardous.\n2. HORSES - Cannot vomit: gastric anatomy prevents emesis, so emetics are useless; oral intoxications are managed by gastric lavage/tubing. Horses also have a large caecum where oral drugs may be metabolised by microflora.\n3. RUMINANTS - Rumen first-pass effects: orally administered drugs are exposed to ruminal microflora which may degrade (e.g., penicillin) or activate (e.g., some pro-drugs) them; large ruminal fluid volume dilutes oral doses; drugs may also be sequestered. Rumen motility affects absorption.\n4. PIGS - Oral bioavailability variations with feeding and slower gastric emptying; pigs metabolise some drugs more rapidly (e.g., faster clearance of some beta-lactams) and tolerate many drugs at mg/kg doses scaled metabolically; injection-site residues are a concern.\n(Also acceptable: birds - drug in drinking water; rabbits - extensive caecotrophy and poor oral dosing reliability.)\n(Any 3.)"
+            },
+            {
+              "stem": "Define the withdrawal period of a veterinary medicine and explain why compliance is essential in dairy and beef production. (6 marks)",
+              "modelAnswer": "Definition (2 marks):\nThe withdrawal period is the interval from the last administration of a veterinary medicine to the time when residues in edible products (meat, milk, eggs, honey) fall below the Maximum Residue Limit (MRL) established for that drug/species.\nWhy compliance is essential (4 marks, any four):\n1. Consumer safety: residues may cause toxicity, allergy or pharmacological effects (e.g., antimicrobial-induced dysbiosis).\n2. Prevention of antimicrobial resistance: sub-therapeutic residues select for resistant bacteria in the human food chain.\n3. Legal and regulatory compliance: selling products before the end of the withdrawal period is an offence; producers face penalties and loss of licences.\n4. Trade and market access: residue violations lead to rejection of consignments and loss of export markets.\n5. Dairy industry quality: antibiotic residues in milk spoil starter cultures for cheese and yoghurt fermentation.\n6. Public trust: repeated violations damage consumer confidence in animal products.\n(Any 4.)"
+            },
+            {
+              "stem": "Classify the main anthelmintic drug groups used in ruminants, giving ONE example and the mechanism of action of each. (8 marks)",
+              "modelAnswer": "Four groups (2 marks each = example + MOA):\n1. BENZIMIDAZOLES (e.g., albendazole, fenbendazole): bind beta-tubulin, inhibiting microtubule polymerisation and glucose uptake; nematodes starve and are expelled (ovicidal effect also useful).\n2. MACROCYCLIC LACTONES (e.g., ivermectin, doramectin, moxidectin): open glutamate-gated chloride channels, causing hyperpolarisation and flaccid paralysis of nematodes and arthropods.\n3. IMIDAZOTHIAZOLES/TETRAHYDROPYRIMIDINES (e.g., levamisole; pyrantel): nicotinic acetylcholine receptor agonists causing sustained depolarisation and spastic paralysis.\n4. SALICYLANILIDES/PHENOLS (e.g., closantel, nitroxynil; bithionol): uncouple oxidative phosphorylation, depleting ATP; effective against flukes and blood-feeding nematodes (Haemonchus).\n(Also acceptable: praziquantel - increases Ca2+ permeability of cestode/fluke tegument causing contraction and paralysis, mainly for tapeworms/flukes.)\n(Any 4 groups.)"
+            },
+            {
+              "stem": "Describe the main classes of antimicrobials used in food animals with TWO examples each and explain how withdrawal times relate to responsible use. (8 marks)",
+              "modelAnswer": "Classes with examples (6 marks, 2 each for three classes):\n1. BETA-LACTAMS (penicillin G procaine, amoxicillin, ceftiofur): cell wall synthesis inhibitors; short milk/meat withdrawal times; used for mastitis, respiratory and wound infections.\n2. TETRACYCLINES (oxytetracycline, chlortetracycline, doxycycline): 30S ribosomal inhibitors; broad spectrum; long-acting LA formulations; common in pneumonia and enteritis.\n3. MACROLIDES (tylosin, tilmicosin, tulathromycin): 50S inhibitors; used for respiratory disease in cattle, pigs and poultry; tilmicosin is highly toxic to humans (injection hazard).\n(Also acceptable: fluoroquinolones (enrofloxacin, danofloxacin) - DNA gyrase inhibitors, reserved for severe infections; aminoglycosides (gentamicin) - 30S inhibitors, narrow margin; sulphonamide/trimethoprim combinations - folate synthesis inhibitors.)\nResponsible use and withdrawal (2 marks):\nWithdrawal times are dose-, route- and species-specific and must be observed to keep residues below MRLs, prevent antimicrobial resistance and protect consumers. Drugs with long half-lives (e.g., some long-acting tetracyclines) need longer withdrawal. Never use banned drugs (chloramphenicol, nitroimidazoles) in food animals."
+            },
+            {
+              "stem": "Compare the mechanisms of action and uses of fipronil, permethrin and amitraz in ectoparasite control. (6 marks)",
+              "modelAnswer": "Each agent (2 marks):\n1. FIPRONIL - mechanism: blocks GABA-gated chloride channels in insects, causing hyperexcitation and death; use: spot-on for fleas and ticks in dogs and cats; also flea collars and environmental sprays. Long residual activity.\n2. PERMETHRIN (synthetic pyrethroid) - mechanism: delays closure of voltage-gated sodium channels, causing repeated firing, paralysis and death; use: flea/tick control in dogs, fly control in cattle (pour-on), sheep dips. HIGHLY TOXIC TO CATS (poor hepatic metabolism, no glucuronidation) - never use permethrin products on cats.\n3. AMITRAZ (formamidine) - mechanism: alpha-2 adrenergic agonist with monoamine oxidase inhibition, causing neuronal hyperexcitability and detachment of mites; use: dips/collars for generalised demodicosis in dogs. Side effects: sedation; reversal agent atipamezole; avoid in cats, diabetics and very young animals.\n(All 3 must be covered; each 2 marks.)"
+            },
+            {
+              "stem": "What is extra-label (off-label) drug use in veterinary medicine, and what safeguards must the veterinary surgeon apply before using an extra-label drug in a food-producing animal in Kenya? (6 marks)",
+              "modelAnswer": "Definition (2 marks):\nExtra-label use is the administration of a registered veterinary (or human) medicine in a manner not stated on the label - different species, indication, dose, route or frequency - under a valid veterinarian-client-patient relationship (VCPR).\nSafeguards (4 marks, any four):\n1. VCPR: the veterinarian must have examined the animal(s) and have sufficient knowledge of the herd/flock.\n2. Withdrawal period extension: because tissue depletion in the target species is unstudied, the withdrawal period must be extended (a longer default interval is applied) to guarantee residue safety.\n3. No banned substances: extra-label use is prohibited for drugs banned in food animals (e.g., chloramphenicol, nitroimidazoles, some growth promoters).\n4. Record keeping: full records of drug, batch, dose, route, treated animals and withdrawal times must be kept and traceable.\n5. Client informed consent: the owner must be advised of the treatment and the extended withdrawal times.\n6. Safety and efficacy justification: no registered product is available for the condition/species, and the chosen drug has a documented pharmacological basis for use.\n(Any 4.)"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A farmer presents a 2-year-old dog with profuse salivation, muscle fasciculations, diarrhoea, miosis and respiratory distress after suspected organophosphate (OP) insecticide exposure.\na) Name the toxic syndrome and explain the mechanism by which organophosphates produce these signs. (5 marks)\nb) Outline the immediate emergency management of this case. (7 marks)\nc) Explain the role of atropine and pralidoxime, and how you would monitor the response to therapy. (3 marks)",
+              "modelAnswer": "a) TOXIC SYNDROME AND MECHANISM (5 marks):\n- Diagnosis: acute organophosphate poisoning (cholinergic crisis).\n- Mechanism: OPs irreversibly phosphorylate (inhibit) acetylcholinesterase at cholinergic synapses, preventing hydrolysis of acetylcholine.\n- Result: acetylcholine accumulates at muscarinic (parasympathetic) and nicotinic (somatic motor and autonomic ganglia) receptors.\n- Muscarinic signs (SLUDGE): salivation, lacrimation, urination, diarrhoea, gastric emesis, miosis, bronchoconstriction and bradycardia.\n- Nicotinic signs: muscle fasciculations, weakness, tremors and, in severe cases, paralysis; CNS signs: agitation, seizures, respiratory depression.\n\nb) EMERGENCY MANAGEMENT (7 marks, any seven):\n1. Remove the animal from the source and decontaminate: wash skin with mild detergent and water (wear gloves), avoid inducing vomiting in an already cholinergic patient; prevent further exposure.\n2. Stabilise the airway: ensure patency, suction excessive secretions, provide oxygen; intubate if respiratory failure.\n3. Atropine (antidote): 0.02-0.05 mg/kg IV (a quarter of the dose may be given subcutaneously); titrate to effect - target: drying of secretions and resolution of bradycardia/bronchoconstriction; repeat as needed because atropine is short-acting.\n4. Pralidoxime (2-PAM): 20-50 mg/kg slow IV (repeat in 12-24 h if signs persist) - most effective if given early before 'ageing' of the enzyme.\n5. Control seizures: diazepam (0.5 mg/kg IV) if CNS signs occur.\n6. Fluid therapy: IV crystalloids to correct dehydration and support perfusion.\n7. Symptomatic and supportive care: monitor temperature, cardiac rhythm, respiratory status; keep the animal warm.\n8. Avoid drugs that worsen cholinergic signs: no opioids (esp. morphine), no succinylcholine; use only when essential.\n\nc) ROLES OF ANTIDOTES AND MONITORING (3 marks):\n- Atropine: competitive muscarinic antagonist; reverses life-threatening parasympathetic signs (secretions, bradycardia, bronchoconstriction) but does NOT reactivate cholinesterase and does not relieve nicotinic (muscle) signs.\n- Pralidoxime: reactivates the phosphorylated acetylcholinesterase by removing the OP moiety; effective mainly when given before enzyme 'ageing' (within hours); regenerates enzyme for metabolism of ACh, relieving nicotinic and CNS effects.\n- Monitoring: clinical response (reduction of salivation, normalisation of heart rate/pupils, cessation of fasciculations), serial cholinesterase activity (recovery over days-weeks), and watch for relapse requiring repeat atropine."
+            },
+            {
+              "stem": "You are the pharmacist at a rural veterinary clinic advising a dairy farmer on rational antimicrobial use.\na) Discuss the principles of rational antibiotic use in food-producing animals. (7 marks)\nb) Explain the concept of antimicrobial residues and withdrawal periods, with examples from dairy practice. (5 marks)\nc) Describe the regulatory framework governing veterinary medicines in Kenya and the role of the pharmacist in antimicrobial stewardship. (3 marks)",
+              "modelAnswer": "a) PRINCIPLES OF RATIONAL ANTIBIOTIC USE (7 marks, any seven):\n1. Correct diagnosis: identify the pathogen (culture and sensitivity where possible) before prescribing; avoid blind treatment of viral disease with antibacterials.\n2. Right drug: select an antibiotic with appropriate spectrum, pharmacokinetics (e.g., intramammary vs systemic) and safety profile for the species.\n3. Right dose, route and duration: use label doses, correct route (oral, injectable, intramammary) and complete the full course to avoid relapse and resistance.\n4. Right animal/group: treat sick animals; consider metaphylaxis only with clear justification, not routine prophylaxis.\n5. Avoid critically important antimicrobials as first line: reserve fluoroquinolones, 3rd/4th generation cephalosporins and colistin for serious infections (WHO/WAHIS priorities).\n6. Evidence-based withdrawal: respect meat and milk withdrawal times to keep residues below MRLs.\n7. Record keeping and traceability: document drug, batch, dose, route, animals treated and withdrawal times.\n8. Monitor outcomes and resistance: review treatment response, use susceptibility testing, and adjust protocols; consult a veterinarian.\n9. Never use banned substances (chloramphenicol, nitroimidazoles) in food animals.\n(Any 7.)\n\nb) RESIDUES AND WITHDRAWAL PERIODS (5 marks):\n- Antimicrobial residues: unmetabolised drug or active metabolites remaining in edible tissues (meat, milk, eggs) after treatment; they can cause allergy, toxicity, dysbiosis and select for resistant bacteria in humans.\n- Maximum Residue Limit (MRL): the legally permitted maximum concentration in a food commodity; withdrawal periods are set so residues fall below the MRL.\n- Dairy practice examples: intramammary tubes for mastitis carry a milk discard time (e.g., 72-96 hours or more); systemic injections also have milk withholding and meat withdrawal; long-acting oxytetracycline has longer withdrawal than short-acting formulations.\n- Consequences of violation: rejection of milk at the processor, penalties, loss of markets, and harm to consumers (antibiotic allergy, resistant gut flora).\n- Good practice: label treated animals, calendar the end of withdrawal, and test milk (e.g., Delvotest) before selling if uncertain.\n\nc) REGULATORY FRAMEWORK IN KENYA AND PHARMACIST ROLE (3 marks):\n- Veterinary medicines are registered and controlled through the veterinary medicines registration system under the Veterinary Surgeons and Veterinary Para-Professional Act (Cap 366) - Kenya Veterinary Board and Directorate of Veterinary Services; enforcement of quality, distribution and import controls parallels the Pharmacy and Poisons Board for human medicines.\n- Pharmacist role in stewardship: ensure proper storage, dispensing and labelling of veterinary medicines; verify prescriptions and species-appropriate dosing; advise farmers on withdrawal periods and residue avoidance; report suspected adverse reactions (pharmacovigilance) and discourage over-the-counter misuse of antibiotics; educate on resistance prevention.\n(Each part 1 mark; must mention Cap 366/KVB and the stewardship duties.)"
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "title": "Veterinary Pharmacology",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 5-year-old dairy cow presents with acute mastitis. The veterinarian prescribes intramammary ceftiofur, a third-generation cephalosporin. Which of the following is the MOST appropriate rationale for selecting ceftiofur in this case?",
+              "options": [
+                "Ceftiofur has a narrow spectrum of activity, minimizing disruption to ruminal flora.",
+                "Ceftiofur is highly effective against Gram-positive bacteria, which are the primary pathogens in mastitis.",
+                "Ceftiofur has a long withdrawal period, ensuring prolonged milk safety.",
+                "Ceftiofur is approved for use in lactating dairy cows without a milk withdrawal period."
+              ],
+              "answer": "Ceftiofur is highly effective against Gram-positive bacteria, which are the primary pathogens in mastitis.",
+              "explanation": "Ceftiofur is a broad-spectrum third-generation cephalosporin with activity against both Gram-positive and Gram-negative bacteria, including common mastitis pathogens like Staphylococcus aureus and Streptococcus agalactiae. It is approved for use in lactating dairy cows with a specified milk withdrawal period."
+            },
+            {
+              "stem": "A farmer reports that his goats have been scratching excessively and have visible ticks. The veterinarian recommends a pour-on formulation of ivermectin. Which of the following is the PRIMARY mechanism of action of ivermectin in ectoparasite control?",
+              "options": [
+                "Inhibition of acetylcholinesterase, leading to paralysis of the parasite.",
+                "Activation of glutamate-gated chloride channels, causing hyperpolarization and paralysis.",
+                "Disruption of the parasite's cuticle, leading to desiccation and death.",
+                "Inhibition of chitin synthesis, preventing molting and development."
+              ],
+              "answer": "Activation of glutamate-gated chloride channels, causing hyperpolarization and paralysis.",
+              "explanation": "Ivermectin binds to glutamate-gated chloride channels in invertebrates, leading to increased chloride ion influx, hyperpolarization, and paralysis of the parasite. This mechanism is specific to invertebrates and explains its efficacy against ectoparasites like ticks."
+            },
+            {
+              "stem": "A dog with heartworm disease is prescribed melarsomine dihydrochloride. Which of the following is the PRIMARY therapeutic goal of this drug?",
+              "options": [
+                "To kill adult heartworms in the pulmonary arteries and right heart.",
+                "To prevent microfilariae from developing into infective larvae.",
+                "To eliminate Wolbachia bacteria, which are symbiotic with heartworms.",
+                "To reduce inflammation caused by dying heartworms."
+              ],
+              "answer": "To kill adult heartworms in the pulmonary arteries and right heart.",
+              "explanation": "Melarsomine dihydrochloride is an arsenical compound specifically used to kill adult heartworms (Dirofilaria immitis) in the pulmonary arteries and right heart. It is part of the adulticide therapy for heartworm disease."
+            },
+            {
+              "stem": "A cat with suspected bacterial urinary tract infection is prescribed enrofloxacin. Which of the following is the MOST important pharmacokinetic consideration when selecting this fluoroquinolone for the cat?",
+              "options": [
+                "Enrofloxacin has a high oral bioavailability in cats.",
+                "Enrofloxacin is primarily excreted via the biliary route in cats.",
+                "Enrofloxacin has a narrow therapeutic index in cats, requiring careful dosing.",
+                "Enrofloxacin is contraindicated in cats due to risk of retinal toxicity."
+              ],
+              "answer": "Enrofloxacin has a narrow therapeutic index in cats, requiring careful dosing.",
+              "explanation": "Enrofloxacin is a fluoroquinolone with a narrow therapeutic index in cats, and high doses or prolonged use can lead to retinal toxicity. Careful dosing and monitoring are essential to avoid adverse effects."
+            },
+            {
+              "stem": "A horse with colic is administered flunixin meglumine for pain relief. Which of the following is the PRIMARY mechanism of action of flunixin meglumine?",
+              "options": [
+                "Inhibition of cyclooxygenase (COX), reducing prostaglandin synthesis.",
+                "Blockade of opioid receptors, reducing pain perception.",
+                "Stimulation of GABA receptors, producing sedation and analgesia.",
+                "Inhibition of sodium channels, reducing nerve conduction."
+              ],
+              "answer": "Inhibition of cyclooxygenase (COX), reducing prostaglandin synthesis.",
+              "explanation": "Flunixin meglumine is a nonsteroidal anti-inflammatory drug (NSAID) that inhibits cyclooxygenase (COX), reducing the synthesis of prostaglandins involved in inflammation and pain. It is commonly used for pain relief in horses with colic."
+            },
+            {
+              "stem": "A poultry farmer reports increased mortality and respiratory signs in his flock. The veterinarian suspects a Mycoplasma gallisepticum infection and prescribes tylosin. Which of the following is the PRIMARY mechanism of action of tylosin in this context?",
+              "options": [
+                "Inhibition of bacterial cell wall synthesis.",
+                "Inhibition of bacterial protein synthesis by binding to the 50S ribosomal subunit.",
+                "Disruption of bacterial DNA replication.",
+                "Inhibition of bacterial folate synthesis."
+              ],
+              "answer": "Inhibition of bacterial protein synthesis by binding to the 50S ribosomal subunit.",
+              "explanation": "Tylosin is a macrolide antibiotic that inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit. It is effective against Mycoplasma species, which lack a cell wall and are resistant to beta-lactams."
+            },
+            {
+              "stem": "A dog with epilepsy is prescribed phenobarbital. Which of the following is the PRIMARY mechanism of action of phenobarbital in controlling seizures?",
+              "options": [
+                "Enhancement of GABA-mediated inhibition in the central nervous system.",
+                "Blockade of sodium channels, reducing neuronal excitability.",
+                "Inhibition of glutamate receptors, reducing excitatory neurotransmission.",
+                "Stimulation of potassium channels, hyperpolarizing neurons."
+              ],
+              "answer": "Enhancement of GABA-mediated inhibition in the central nervous system.",
+              "explanation": "Phenobarbital is a barbiturate that enhances GABA-mediated inhibition in the central nervous system by binding to GABA_A receptors, reducing neuronal excitability and controlling seizures."
+            },
+            {
+              "stem": "A farmer reports that his pigs have been coughing and showing signs of respiratory distress. The veterinarian suspects Mycoplasma hyopneumoniae infection and prescribes tiamulin. Which of the following is the PRIMARY mechanism of action of tiamulin?",
+              "options": [
+                "Inhibition of bacterial cell wall synthesis.",
+                "Inhibition of bacterial protein synthesis by binding to the 50S ribosomal subunit.",
+                "Disruption of bacterial DNA replication.",
+                "Inhibition of bacterial folate synthesis."
+              ],
+              "answer": "Inhibition of bacterial protein synthesis by binding to the 50S ribosomal subunit.",
+              "explanation": "Tiamulin is a pleuromutilin antibiotic that inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit. It is effective against Mycoplasma species, which are common causes of respiratory disease in pigs."
+            },
+            {
+              "stem": "A cat with hyperthyroidism is prescribed methimazole. Which of the following is the PRIMARY mechanism of action of methimazole in this case?",
+              "options": [
+                "Inhibition of thyroid hormone synthesis by blocking iodine incorporation.",
+                "Destruction of thyroid tissue via radioactive iodine uptake.",
+                "Blockade of thyroid hormone receptors, preventing hormone action.",
+                "Stimulation of thyroid hormone degradation."
+              ],
+              "answer": "Inhibition of thyroid hormone synthesis by blocking iodine incorporation.",
+              "explanation": "Methimazole is a thioamide that inhibits thyroid hormone synthesis by blocking the incorporation of iodine into thyroglobulin, reducing the production of thyroid hormones (T3 and T4)."
+            },
+            {
+              "stem": "A horse with laminitis is administered phenylbutazone for pain relief. Which of the following adverse effects is MOST commonly associated with phenylbutazone in horses?",
+              "options": [
+                "Gastrointestinal ulceration and renal toxicity.",
+                "Hepatotoxicity and neurotoxicity.",
+                "Cardiotoxicity and arrhythmias.",
+                "Bone marrow suppression and anemia."
+              ],
+              "answer": "Gastrointestinal ulceration and renal toxicity.",
+              "explanation": "Phenylbutazone is an NSAID commonly used in horses for pain relief, but it is associated with a high risk of gastrointestinal ulceration and renal toxicity, especially with prolonged or high-dose use."
+            },
+            {
+              "stem": "A dog with atopic dermatitis is prescribed oclacitinib. Which of the following is the PRIMARY mechanism of action of oclacitinib in this context?",
+              "options": [
+                "Inhibition of histamine receptors, reducing allergic responses.",
+                "Blockade of Janus kinase (JAK) enzymes, reducing cytokine signaling.",
+                "Stimulation of glucocorticoid receptors, producing anti-inflammatory effects.",
+                "Inhibition of leukotriene synthesis, reducing inflammation."
+              ],
+              "answer": "Blockade of Janus kinase (JAK) enzymes, reducing cytokine signaling.",
+              "explanation": "Oclacitinib is a Janus kinase (JAK) inhibitor that blocks cytokine signaling pathways involved in inflammation and pruritus, making it effective for the treatment of atopic dermatitis in dogs."
+            },
+            {
+              "stem": "A cow with suspected salmonellosis is prescribed florfenicol. Which of the following is the PRIMARY mechanism of action of florfenicol?",
+              "options": [
+                "Inhibition of bacterial cell wall synthesis.",
+                "Inhibition of bacterial protein synthesis by binding to the 50S ribosomal subunit.",
+                "Disruption of bacterial DNA replication.",
+                "Inhibition of bacterial folate synthesis."
+              ],
+              "answer": "Inhibition of bacterial protein synthesis by binding to the 50S ribosomal subunit.",
+              "explanation": "Florfenicol is a broad-spectrum antibiotic that inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit. It is effective against a wide range of Gram-positive and Gram-negative bacteria, including Salmonella species."
+            },
+            {
+              "stem": "A dog with congestive heart failure is prescribed pimobendan. Which of the following is the PRIMARY mechanism of action of pimobendan in this context?",
+              "options": [
+                "Inhibition of phosphodiesterase III, increasing intracellular cAMP and cardiac contractility.",
+                "Blockade of beta-1 adrenergic receptors, reducing heart rate.",
+                "Stimulation of muscarinic receptors, reducing afterload.",
+                "Inhibition of angiotensin-converting enzyme (ACE), reducing preload."
+              ],
+              "answer": "Inhibition of phosphodiesterase III, increasing intracellular cAMP and cardiac contractility.",
+              "explanation": "Pimobendan is a positive inotrope and vasodilator that inhibits phosphodiesterase III, increasing intracellular cAMP levels and enhancing cardiac contractility. It is used in the management of congestive heart failure in dogs."
+            },
+            {
+              "stem": "A goat with suspected coccidiosis is prescribed amprolium. Which of the following is the PRIMARY mechanism of action of amprolium?",
+              "options": [
+                "Inhibition of bacterial cell wall synthesis.",
+                "Inhibition of thiamine uptake by coccidia, disrupting their metabolism.",
+                "Disruption of coccidial DNA replication.",
+                "Inhibition of folate synthesis in coccidia."
+              ],
+              "answer": "Inhibition of thiamine uptake by coccidia, disrupting their metabolism.",
+              "explanation": "Amprolium is a thiamine analog that inhibits thiamine uptake by coccidia, disrupting their metabolism and leading to their death. It is commonly used to treat coccidiosis in ruminants."
+            },
+            {
+              "stem": "A horse with gastric ulcers is prescribed omeprazole. Which of the following is the PRIMARY mechanism of action of omeprazole in this context?",
+              "options": [
+                "Blockade of histamine H2 receptors, reducing gastric acid secretion.",
+                "Inhibition of the H+/K+ ATPase pump, reducing gastric acid secretion.",
+                "Neutralization of gastric acid via direct chemical reaction.",
+                "Stimulation of prostaglandin synthesis, protecting the gastric mucosa."
+              ],
+              "answer": "Inhibition of the H+/K+ ATPase pump, reducing gastric acid secretion.",
+              "explanation": "Omeprazole is a proton pump inhibitor that irreversibly inhibits the H+/K+ ATPase pump in gastric parietal cells, reducing gastric acid secretion and promoting healing of gastric ulcers."
+            },
+            {
+              "stem": "A dog with suspected Babesia infection is prescribed imidocarb dipropionate. Which of the following is the PRIMARY mechanism of action of imidocarb?",
+              "options": [
+                "Inhibition of parasite DNA replication.",
+                "Disruption of parasite cell membranes.",
+                "Inhibition of parasite cholinesterase, leading to paralysis.",
+                "Stimulation of the host immune response against the parasite."
+              ],
+              "answer": "Inhibition of parasite DNA replication.",
+              "explanation": "Imidocarb dipropionate is a diamidine compound that inhibits parasite DNA replication, making it effective against Babesia species, which cause babesiosis in dogs."
+            },
+            {
+              "stem": "A pig with suspected erysipelas is prescribed penicillin G benzathine. Which of the following is the PRIMARY mechanism of action of penicillin G benzathine?",
+              "options": [
+                "Inhibition of bacterial cell wall synthesis.",
+                "Inhibition of bacterial protein synthesis.",
+                "Disruption of bacterial DNA replication.",
+                "Inhibition of bacterial folate synthesis."
+              ],
+              "answer": "Inhibition of bacterial cell wall synthesis.",
+              "explanation": "Penicillin G benzathine is a beta-lactam antibiotic that inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins, leading to bacterial cell death. It is effective against Gram-positive bacteria like Erysipelothrix rhusiopathiae."
+            },
+            {
+              "stem": "A cat with suspected feline infectious peritonitis (FIP) is prescribed polyprenyl immunostimulant. Which of the following is the PRIMARY therapeutic goal of this drug?",
+              "options": [
+                "To directly kill the FIP virus.",
+                "To stimulate the cat's immune response against the FIP virus.",
+                "To reduce inflammation associated with FIP.",
+                "To inhibit viral replication."
+              ],
+              "answer": "To stimulate the cat's immune response against the FIP virus.",
+              "explanation": "Polyprenyl immunostimulant is an immunomodulatory drug used in the management of FIP to stimulate the cat's immune response against the virus, particularly in cases of dry FIP."
+            },
+            {
+              "stem": "A cow with suspected blackleg is prescribed penicillin G procaine. Which of the following is the PRIMARY mechanism of action of penicillin G procaine?",
+              "options": [
+                "Inhibition of bacterial cell wall synthesis.",
+                "Inhibition of bacterial protein synthesis.",
+                "Disruption of bacterial DNA replication.",
+                "Inhibition of bacterial folate synthesis."
+              ],
+              "answer": "Inhibition of bacterial cell wall synthesis.",
+              "explanation": "Penicillin G procaine is a beta-lactam antibiotic that inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins, leading to bacterial cell death. It is effective against Clostridium chauvoei, the causative agent of blackleg."
+            },
+            {
+              "stem": "A dog with suspected leptospirosis is prescribed doxycycline. Which of the following is the PRIMARY mechanism of action of doxycycline in this context?",
+              "options": [
+                "Inhibition of bacterial cell wall synthesis.",
+                "Inhibition of bacterial protein synthesis by binding to the 30S ribosomal subunit.",
+                "Disruption of bacterial DNA replication.",
+                "Inhibition of bacterial folate synthesis."
+              ],
+              "answer": "Inhibition of bacterial protein synthesis by binding to the 30S ribosomal subunit.",
+              "explanation": "Doxycycline is a tetracycline antibiotic that inhibits bacterial protein synthesis by binding to the 30S ribosomal subunit. It is effective against a wide range of bacteria, including Leptospira species."
+            },
+            {
+              "stem": "A horse with suspected tetanus is prescribed tetanus antitoxin. Which of the following is the PRIMARY mechanism of action of tetanus antitoxin?",
+              "options": [
+                "Directly killing Clostridium tetani bacteria.",
+                "Neutralizing tetanus toxin, preventing its effects on the nervous system.",
+                "Stimulating the horse's immune response against Clostridium tetani.",
+                "Inhibiting bacterial cell wall synthesis."
+              ],
+              "answer": "Neutralizing tetanus toxin, preventing its effects on the nervous system.",
+              "explanation": "Tetanus antitoxin contains antibodies against tetanus toxin, which neutralize the toxin and prevent its effects on the nervous system. It is used for passive immunization in cases of suspected tetanus."
+            },
+            {
+              "stem": "A pig with suspected swine dysentery is prescribed tiamulin. Which of the following is the PRIMARY mechanism of action of tiamulin?",
+              "options": [
+                "Inhibition of bacterial cell wall synthesis.",
+                "Inhibition of bacterial protein synthesis by binding to the 50S ribosomal subunit.",
+                "Disruption of bacterial DNA replication.",
+                "Inhibition of bacterial folate synthesis."
+              ],
+              "answer": "Inhibition of bacterial protein synthesis by binding to the 50S ribosomal subunit.",
+              "explanation": "Tiamulin is a pleuromutilin antibiotic that inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit. It is effective against Brachyspira hyodysenteriae, the causative agent of swine dysentery."
+            },
+            {
+              "stem": "A dog with suspected demodicosis is prescribed ivermectin. Which of the following is the PRIMARY mechanism of action of ivermectin in this context?",
+              "options": [
+                "Inhibition of parasite cell wall synthesis.",
+                "Activation of glutamate-gated chloride channels, causing paralysis of the parasite.",
+                "Disruption of parasite cuticle, leading to desiccation.",
+                "Inhibition of parasite chitin synthesis."
+              ],
+              "answer": "Activation of glutamate-gated chloride channels, causing paralysis of the parasite.",
+              "explanation": "Ivermectin binds to glutamate-gated chloride channels in invertebrates, leading to increased chloride ion influx, hyperpolarization, and paralysis of the parasite. It is effective against Demodex mites in dogs."
+            },
+            {
+              "stem": "A cow with suspected foot rot is prescribed oxytetracycline. Which of the following is the PRIMARY mechanism of action of oxytetracycline in this context?",
+              "options": [
+                "Inhibition of bacterial cell wall synthesis.",
+                "Inhibition of bacterial protein synthesis by binding to the 30S ribosomal subunit.",
+                "Disruption of bacterial DNA replication.",
+                "Inhibition of bacterial folate synthesis."
+              ],
+              "answer": "Inhibition of bacterial protein synthesis by binding to the 30S ribosomal subunit.",
+              "explanation": "Oxytetracycline is a tetracycline antibiotic that inhibits bacterial protein synthesis by binding to the 30S ribosomal subunit. It is effective against a wide range of bacteria, including Fusobacterium necrophorum, a common cause of foot rot in cattle."
+            },
+            {
+              "stem": "A cat with suspected toxoplasmosis is prescribed clindamycin. Which of the following is the PRIMARY mechanism of action of clindamycin in this context?",
+              "options": [
+                "Inhibition of bacterial cell wall synthesis.",
+                "Inhibition of bacterial protein synthesis by binding to the 50S ribosomal subunit.",
+                "Disruption of parasite DNA replication.",
+                "Inhibition of parasite folate synthesis."
+              ],
+              "answer": "Inhibition of bacterial protein synthesis by binding to the 50S ribosomal subunit.",
+              "explanation": "Clindamycin is a lincosamide antibiotic that inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit. It is also effective against Toxoplasma gondii, the causative agent of toxoplasmosis in cats."
+            },
+            {
+              "stem": "A horse with suspected equine protozoal myeloencephalitis (EPM) is prescribed ponazuril. Which of the following is the PRIMARY mechanism of action of ponazuril?",
+              "options": [
+                "Inhibition of parasite cell wall synthesis.",
+                "Inhibition of parasite folate synthesis.",
+                "Disruption of parasite mitochondrial function.",
+                "Inhibition of parasite DNA replication."
+              ],
+              "answer": "Disruption of parasite mitochondrial function.",
+              "explanation": "Ponazuril is a triazine antiprotozoal drug that disrupts the mitochondrial function of protozoal parasites, including Sarcocystis neurona, the causative agent of EPM in horses."
+            },
+            {
+              "stem": "A dog with suspected giardiasis is prescribed fenbendazole. Which of the following is the PRIMARY mechanism of action of fenbendazole in this context?",
+              "options": [
+                "Inhibition of parasite cell wall synthesis.",
+                "Disruption of parasite microtubules, leading to impaired glucose uptake.",
+                "Inhibition of parasite DNA replication.",
+                "Activation of parasite glutamate-gated chloride channels."
+              ],
+              "answer": "Disruption of parasite microtubules, leading to impaired glucose uptake.",
+              "explanation": "Fenbendazole is a benzimidazole anthelmintic that disrupts parasite microtubules, leading to impaired glucose uptake and death of the parasite. It is effective against Giardia species in dogs."
+            },
+            {
+              "stem": "A pig with suspected ascariasis is prescribed ivermectin. Which of the following is the PRIMARY mechanism of action of ivermectin in this context?",
+              "options": [
+                "Inhibition of parasite cell wall synthesis.",
+                "Activation of glutamate-gated chloride channels, causing paralysis of the parasite.",
+                "Disruption of parasite cuticle, leading to desiccation.",
+                "Inhibition of parasite chitin synthesis."
+              ],
+              "answer": "Activation of glutamate-gated chloride channels, causing paralysis of the parasite.",
+              "explanation": "Ivermectin binds to glutamate-gated chloride channels in invertebrates, leading to increased chloride ion influx, hyperpolarization, and paralysis of the parasite. It is effective against Ascaris suum in pigs."
+            },
+            {
+              "stem": "A cow with suspected fascioliasis is prescribed albendazole. Which of the following is the PRIMARY mechanism of action of albendazole in this context?",
+              "options": [
+                "Inhibition of parasite cell wall synthesis.",
+                "Disruption of parasite microtubules, leading to impaired glucose uptake.",
+                "Inhibition of parasite DNA replication.",
+                "Activation of parasite glutamate-gated chloride channels."
+              ],
+              "answer": "Disruption of parasite microtubules, leading to impaired glucose uptake.",
+              "explanation": "Albendazole is a benzimidazole anthelmintic that disrupts parasite microtubules, leading to impaired glucose uptake and death of the parasite. It is effective against Fasciola hepatica in cattle."
+            },
+            {
+              "stem": "A dog with suspected sarcoptic mange is prescribed selamectin. Which of the following is the PRIMARY mechanism of action of selamectin?",
+              "options": [
+                "Inhibition of parasite cell wall synthesis.",
+                "Activation of glutamate-gated chloride channels, causing paralysis of the parasite.",
+                "Disruption of parasite cuticle, leading to desiccation.",
+                "Inhibition of parasite chitin synthesis."
+              ],
+              "answer": "Activation of glutamate-gated chloride channels, causing paralysis of the parasite.",
+              "explanation": "Selamectin is a macrocyclic lactone that binds to glutamate-gated chloride channels in invertebrates, leading to increased chloride ion influx, hyperpolarization, and paralysis of the parasite. It is effective against Sarcoptes scabiei in dogs."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 3-year-old dairy cow presents with acute mastitis. The veterinarian suspects a Gram-negative bacterial infection and prescribes intramammary ceftiofur. (10 marks)\n(a) Explain the rationale for selecting ceftiofur in this case. (3 marks)\n(b) Outline the key pharmacokinetic considerations for ceftiofur in lactating dairy cows. (4 marks)\n(c) Describe the withdrawal period for ceftiofur in milk and meat. (3 marks)",
+              "modelAnswer": "a) Ceftiofur is a third-generation cephalosporin with broad-spectrum activity against both Gram-positive and Gram-negative bacteria, including common mastitis pathogens such as Staphylococcus aureus and Escherichia coli. It is approved for intramammary use in lactating dairy cows, making it a suitable choice for this case.\n\nb) Ceftiofur is well-absorbed after intramammary administration and achieves high concentrations in milk and udder tissue. It is primarily excreted via the kidneys, with a half-life of approximately 3-4 hours in cattle. The drug is metabolized to desfuroylceftiofur, an active metabolite, which also contributes to its antibacterial activity. Renal function should be monitored, especially in cows with pre-existing renal impairment.\n\nc) The milk withdrawal period for ceftiofur is 72 hours (3 days) after the last treatment. The meat withdrawal period is 4 days after the last treatment."
+            },
+            {
+              "stem": "A farmer reports that his goats have been scratching excessively and have visible ticks. The veterinarian recommends a pour-on formulation of ivermectin. (7 marks)\n(a) Explain the mechanism of action of ivermectin against ticks. (3 marks)\n(b) Describe the key pharmacokinetic properties of ivermectin in goats. (2 marks)\n(c) Outline the withdrawal period for ivermectin in meat and milk. (2 marks)",
+              "modelAnswer": "a) Ivermectin binds to glutamate-gated chloride channels in invertebrates, leading to increased chloride ion influx into neurons and muscle cells. This hyperpolarizes the cells, causing paralysis and death of the parasite.\n\nb) Ivermectin is well-absorbed after pour-on administration and achieves high concentrations in the skin and subcutaneous tissues. It has a long half-life (approximately 2-3 days in goats) due to its lipophilicity and slow release from tissues.\n\nc) The meat withdrawal period for ivermectin in goats is 28 days after the last treatment. There is no milk withdrawal period specified for goats, but milk should not be consumed during treatment."
+            },
+            {
+              "stem": "A dog with heartworm disease is prescribed melarsomine dihydrochloride. (7 marks)\n(a) Explain the primary therapeutic goal of melarsomine in heartworm disease. (2 marks)\n(b) Describe the dosing protocol for melarsomine in dogs. (3 marks)\n(c) Outline the key adverse effects associated with melarsomine therapy. (2 marks)",
+              "modelAnswer": "a) The primary therapeutic goal of melarsomine is to kill adult heartworms (Dirofilaria immitis) located in the pulmonary arteries and right heart.\n\nb) The standard dosing protocol for melarsomine involves two intramuscular injections given 24 hours apart, followed by a third injection 30 days later. The dose is 2.5 mg/kg per injection.\n\nc) Key adverse effects include pain and swelling at the injection site, lethargy, coughing (due to dying worms), and potential complications from pulmonary thromboembolism. Dogs should be strictly rested during and after treatment to minimize these risks."
+            },
+            {
+              "stem": "A cat with suspected bacterial urinary tract infection is prescribed enrofloxacin. (6 marks)\n(a) Explain the primary mechanism of action of enrofloxacin. (2 marks)\n(b) Describe the key pharmacokinetic considerations for enrofloxacin in cats. (2 marks)\n(c) Outline the key adverse effects associated with enrofloxacin in cats. (2 marks)",
+              "modelAnswer": "a) Enrofloxacin is a fluoroquinolone antibiotic that inhibits bacterial DNA gyrase and topoisomerase IV, enzymes essential for bacterial DNA replication and transcription.\n\nb) Enrofloxacin has high oral bioavailability in cats and is widely distributed in tissues, including the urinary tract. It is primarily excreted via the kidneys, so renal function should be monitored. Cats metabolize enrofloxacin to ciprofloxacin, an active metabolite.\n\nc) Key adverse effects include retinal toxicity (especially at high doses), gastrointestinal upset, and potential cartilage damage in young animals. Careful dosing and monitoring are essential to avoid these effects."
+            },
+            {
+              "stem": "A horse with colic is administered flunixin meglumine for pain relief. (5 marks)\n(a) Explain the primary mechanism of action of flunixin meglumine. (2 marks)\n(b) Describe the key pharmacokinetic considerations for flunixin meglumine in horses. (2 marks)\n(c) Outline the key adverse effects associated with flunixin meglumine in horses. (1 mark)",
+              "modelAnswer": "a) Flunixin meglumine is a nonsteroidal anti-inflammatory drug (NSAID) that inhibits cyclooxygenase (COX), reducing the synthesis of prostaglandins involved in inflammation and pain.\n\nb) Flunixin meglumine has high oral and parenteral bioavailability in horses and is widely distributed in tissues. It is primarily metabolized in the liver and excreted via the kidneys. The drug has a relatively short half-life (approximately 1.6 hours in horses).\n\nc) Key adverse effects include gastrointestinal ulceration and renal toxicity, especially with prolonged or high-dose use."
+            },
+            {
+              "stem": "A poultry farmer reports increased mortality and respiratory signs in his flock. The veterinarian suspects a Mycoplasma gallisepticum infection and prescribes tylosin. (5 marks)\n(a) Explain the primary mechanism of action of tylosin. (2 marks)\n(b) Describe the key pharmacokinetic considerations for tylosin in poultry. (2 marks)\n(c) Outline the withdrawal period for tylosin in meat and eggs. (1 mark)",
+              "modelAnswer": "a) Tylosin is a macrolide antibiotic that inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit, preventing peptide chain elongation.\n\nb) Tylosin is well-absorbed after oral administration in poultry and achieves high concentrations in respiratory tissues. It is primarily excreted via the bile and feces, with minimal renal excretion.\n\nc) The withdrawal period for tylosin in meat is 5 days, and in eggs, it is 2 days."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 4-year-old dairy cow presents with acute mastitis. The veterinarian suspects a mixed bacterial infection involving Staphylococcus aureus and Escherichia coli. The cow is in peak lactation, and the farmer is concerned about milk production and withdrawal periods. (15 marks)\n(a) Discuss the rationale for selecting a broad-spectrum intramammary antibiotic for this case. (4 marks)\n(b) Compare and contrast the use of ceftiofur and cefquinome for the treatment of mastitis in lactating dairy cows, including their mechanisms of action, spectrum of activity, and withdrawal periods. (6 marks)\n(c) Outline the key monitoring and supportive care measures for this cow during and after treatment. (5 marks)",
+              "modelAnswer": "a) A broad-spectrum intramammary antibiotic is selected to cover both Gram-positive (Staphylococcus aureus) and Gram-negative (Escherichia coli) bacteria, which are common causes of mastitis. This approach ensures that the treatment is effective against the likely pathogens, reducing the risk of treatment failure and chronic infection. Broad-spectrum antibiotics also help to minimize the development of antimicrobial resistance.\n\nb) Ceftiofur and cefquinome are both third-generation cephalosporins with broad-spectrum activity. \n- Mechanism of action: Both drugs inhibit bacterial cell wall synthesis by binding to penicillin-binding proteins, leading to bacterial cell death.\n- Spectrum of activity: Both are effective against Gram-positive and Gram-negative bacteria, including Staphylococcus aureus and Escherichia coli. Cefquinome has slightly greater activity against Gram-negative bacteria.\n- Withdrawal periods: The milk withdrawal period for ceftiofur is 72 hours (3 days), and the meat withdrawal period is 4 days. The milk withdrawal period for cefquinome is 96 hours (4 days), and the meat withdrawal period is 5 days.\n\nc) Key monitoring and supportive care measures include:\n- Regular monitoring of the cow's clinical signs, including udder appearance, milk quality, and systemic health.\n- Monitoring of milk production and quality, with regular stripping and assessment of the affected quarter.\n- Supportive care, including fluid therapy, anti-inflammatory drugs (e.g., flunixin meglumine), and oxytocin to facilitate milk letdown.\n- Regular milk sampling for culture and sensitivity testing to guide treatment adjustments if necessary.\n- Strict adherence to withdrawal periods for milk and meat to ensure food safety."
+            },
+            {
+              "stem": "A farmer reports that his pigs have been coughing and showing signs of respiratory distress. The veterinarian suspects Mycoplasma hyopneumoniae infection and prescribes tiamulin. (15 marks)\n(a) Discuss the rationale for selecting tiamulin for the treatment of Mycoplasma hyopneumoniae infection in pigs. (4 marks)\n(b) Describe the mechanism of action, spectrum of activity, and key pharmacokinetic properties of tiamulin. (6 marks)\n(c) Outline the key adverse effects, contraindications, and monitoring requirements for tiamulin therapy in pigs. (5 marks)",
+              "modelAnswer": "a) Tiamulin is selected for the treatment of Mycoplasma hyopneumoniae infection in pigs because it is a pleuromutilin antibiotic with specific activity against Mycoplasma species. Mycoplasma hyopneumoniae lacks a cell wall, making it resistant to beta-lactam antibiotics. Tiamulin is effective against this pathogen and is approved for use in pigs.\n\nb) Mechanism of action: Tiamulin inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit, preventing peptide chain elongation.\nSpectrum of activity: Tiamulin is primarily active against Gram-positive bacteria and Mycoplasma species, including Mycoplasma hyopneumoniae.\nKey pharmacokinetic properties: Tiamulin is well-absorbed after oral administration and achieves high concentrations in respiratory tissues. It is primarily metabolized in the liver and excreted via the bile and feces. The drug has a relatively long half-life, allowing for once-daily dosing.\n\nc) Key adverse effects: Tiamulin can cause gastrointestinal upset, including vomiting and diarrhea. High doses or prolonged use may lead to liver toxicity.\nContraindications: Tiamulin should not be used in combination with ionophores (e.g., monensin, salinomycin) due to the risk of toxicity.\nMonitoring requirements: Regular monitoring of the pigs' clinical signs, including respiratory rate, coughing, and feed intake. Liver function should be monitored in cases of prolonged or high-dose therapy. Strict adherence to withdrawal periods for meat (14 days) is essential to ensure food safety."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Veterinary Pharmacology",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 5-year-old dairy cow presents with acute mastitis. Culture reveals Staphylococcus aureus sensitive to penicillin. Which penicillin formulation is most appropriate for intramammary administration in this case?",
+              "options": [
+                "Benzylpenicillin sodium for parenteral use",
+                "Procaine penicillin G for parenteral use",
+                "Penicillin G benzathine for parenteral depot use",
+                "Procaine penicillin G combined with dihydrostreptomycin for intramammary infusion"
+              ],
+              "answer": "Procaine penicillin G combined with dihydrostreptomycin for intramammary infusion",
+              "explanation": "Intramammary formulations for mastitis typically combine penicillin with an aminoglycoside like dihydrostreptomycin to broaden coverage against Gram-negative pathogens common in mastitis."
+            },
+            {
+              "stem": "A farmer reports that his flock of indigenous chickens has developed scaly leg mite infestation. Which ectoparasiticide is most appropriate for topical treatment in poultry?",
+              "options": [
+                "Ivermectin oral solution",
+                "Fipronil spray",
+                "Permethrin dusting powder",
+                "Doramectin injectable"
+              ],
+              "answer": "Permethrin dusting powder",
+              "explanation": "Permethrin is a pyrethroid ectoparasiticide approved for topical use in poultry for mite infestations, with minimal systemic absorption and good efficacy."
+            },
+            {
+              "stem": "A 3-year-old German Shepherd dog is diagnosed with heartworm disease. Which anthelmintic is the drug of choice for adulticide therapy in dogs?",
+              "options": [
+                "Fenbendazole",
+                "Praziquantel",
+                "Melarsomine dihydrochloride",
+                "Ivermectin"
+              ],
+              "answer": "Melarsomine dihydrochloride",
+              "explanation": "Melarsomine is the only FDA-approved adulticide for Dirofilaria immitis in dogs, administered via deep intramuscular injection."
+            },
+            {
+              "stem": "A dairy goat is presented with suspected bacterial pneumonia. Culture confirms Mannheimia haemolytica sensitive to tetracyclines. Which tetracycline formulation is preferred for parenteral use in goats due to its long-acting properties?",
+              "options": [
+                "Oxytetracycline hydrochloride",
+                "Doxycycline hyclate",
+                "Chlortetracycline base",
+                "Oxytetracycline dihydrate long-acting injectable"
+              ],
+              "answer": "Oxytetracycline dihydrate long-acting injectable",
+              "explanation": "Long-acting oxytetracycline formulations provide sustained plasma levels for 48-72 hours, reducing handling stress in goats and improving compliance."
+            },
+            {
+              "stem": "A piglet develops post-weaning diarrhea due to enterotoxigenic Escherichia coli. Which class of antibiotics is most appropriate for treatment, considering withdrawal period requirements?",
+              "options": [
+                "Fluoroquinolones",
+                "Macrolides",
+                "Aminoglycosides",
+                "Third-generation cephalosporins"
+              ],
+              "answer": "Macrolides",
+              "explanation": "Macrolides like tylosin or tilmicosin are commonly used in pigs for E. coli diarrhea with shorter withdrawal periods compared to fluoroquinolones or cephalosporins."
+            },
+            {
+              "stem": "A veterinarian intends to use ivermectin for the treatment of gastrointestinal nematodes in a camel. Which formulation is contraindicated in camels due to potential toxicity?",
+              "options": [
+                "Oral drench solution",
+                "Injectable formulation",
+                "Pour-on formulation",
+                "Intraruminal bolus"
+              ],
+              "answer": "Pour-on formulation",
+              "explanation": "Camels are highly sensitive to ivermectin pour-on formulations due to increased systemic absorption and risk of neurotoxicity."
+            },
+            {
+              "stem": "A horse with colic is administered flunixin meglumine for analgesia. What is the primary mechanism of action of flunixin meglumine?",
+              "options": [
+                "Inhibition of cyclooxygenase-1 and COX-2",
+                "Blockade of opioid receptors",
+                "Inhibition of calcium channels",
+                "Stimulation of GABA receptors"
+              ],
+              "answer": "Inhibition of cyclooxygenase-1 and COX-2",
+              "explanation": "Flunixin meglumine is a non-steroidal anti-inflammatory drug (NSAID) that inhibits COX enzymes, reducing prostaglandin synthesis and providing analgesia and anti-inflammatory effects."
+            },
+            {
+              "stem": "A dairy cow is treated with oxytetracycline for a systemic infection. What is the recommended withdrawal period for milk following treatment with a long-acting oxytetracycline formulation?",
+              "options": [
+                "7 days",
+                "14 days",
+                "21 days",
+                "28 days"
+              ],
+              "answer": "21 days",
+              "explanation": "Long-acting oxytetracycline formulations have extended withdrawal periods; for milk, a minimum of 21 days is required to ensure residues are below the maximum residue limit (MRL)."
+            },
+            {
+              "stem": "A cat with chronic kidney disease is prescribed benazepril for hypertension. Which class of drugs does benazepril belong to?",
+              "options": [
+                "Angiotensin-converting enzyme (ACE) inhibitors",
+                "Angiotensin II receptor blockers (ARBs)",
+                "Calcium channel blockers",
+                "Beta-blockers"
+              ],
+              "answer": "Angiotensin-converting enzyme (ACE) inhibitors",
+              "explanation": "Benazepril is an ACE inhibitor used in cats for hypertension and proteinuria associated with chronic kidney disease."
+            },
+            {
+              "stem": "A farmer reports that his sheep flock has developed footrot. Which antibiotic is most effective for the treatment of footrot caused by Dichelobacter nodosus?",
+              "options": [
+                "Penicillin G benzathine",
+                "Tetracycline long-acting",
+                "Tylosin",
+                "Florfenicol"
+              ],
+              "answer": "Tetracycline long-acting",
+              "explanation": "Tetracyclines, particularly long-acting formulations, are effective against D. nodosus and are commonly used in the treatment of footrot in sheep."
+            },
+            {
+              "stem": "A dog with atopic dermatitis is prescribed oclacitinib for pruritus control. What is the primary mechanism of action of oclacitinib?",
+              "options": [
+                "Inhibition of Janus kinase (JAK) 1",
+                "Blockade of histamine H1 receptors",
+                "Inhibition of leukotriene synthesis",
+                "Stimulation of opioid receptors"
+              ],
+              "answer": "Inhibition of Janus kinase (JAK) 1",
+              "explanation": "Oclacitinib is a Janus kinase inhibitor that selectively inhibits JAK1, reducing cytokine signaling involved in pruritus and inflammation."
+            },
+            {
+              "stem": "A goat is diagnosed with caseous lymphadenitis caused by Corynebacterium pseudotuberculosis. Which antibiotic is most appropriate for parenteral treatment?",
+              "options": [
+                "Penicillin G procaine",
+                "Enrofloxacin",
+                "Gentamicin",
+                "Ceftiofur"
+              ],
+              "answer": "Penicillin G procaine",
+              "explanation": "Penicillin G procaine is the drug of choice for Corynebacterium pseudotuberculosis infections due to its narrow spectrum and efficacy against Gram-positive bacteria."
+            },
+            {
+              "stem": "A piglet with neonatal diarrhea is treated with colistin sulfate. What is the primary indication for colistin sulfate in veterinary medicine?",
+              "options": [
+                "Treatment of Gram-negative bacterial infections",
+                "Treatment of fungal infections",
+                "Treatment of viral infections",
+                "Treatment of protozoal infections"
+              ],
+              "answer": "Treatment of Gram-negative bacterial infections",
+              "explanation": "Colistin sulfate is a polymyxin antibiotic primarily used for Gram-negative bacterial infections, including those caused by Escherichia coli in neonatal pigs."
+            },
+            {
+              "stem": "A horse with laminitis is administered phenylbutazone for pain management. What is the primary adverse effect associated with prolonged use of phenylbutazone in horses?",
+              "options": [
+                "Gastrointestinal ulceration",
+                "Hepatic toxicity",
+                "Nephrotoxicity",
+                "Cardiotoxicity"
+              ],
+              "answer": "Gastrointestinal ulceration",
+              "explanation": "Phenylbutazone, a non-steroidal anti-inflammatory drug (NSAID), is associated with a high risk of gastrointestinal ulceration and renal toxicity with prolonged use in horses."
+            },
+            {
+              "stem": "A dairy cow is treated with a combination of oxytetracycline and flunixin meglumine. What is the primary concern regarding drug residues in milk when using this combination?",
+              "options": [
+                "Extended withdrawal period for milk",
+                "Increased risk of hypersensitivity reactions",
+                "Reduced efficacy of both drugs",
+                "Development of antimicrobial resistance"
+              ],
+              "answer": "Extended withdrawal period for milk",
+              "explanation": "Combining oxytetracycline and flunixin meglumine does not directly affect efficacy but requires adherence to the longest withdrawal period for milk, which is typically 21 days for oxytetracycline."
+            },
+            {
+              "stem": "A cat with hyperthyroidism is prescribed methimazole. What is the primary mechanism of action of methimazole?",
+              "options": [
+                "Inhibition of thyroid peroxidase",
+                "Blockade of thyroid hormone receptors",
+                "Inhibition of iodine uptake",
+                "Stimulation of thyroid hormone synthesis"
+              ],
+              "answer": "Inhibition of thyroid peroxidase",
+              "explanation": "Methimazole inhibits thyroid peroxidase, reducing the synthesis of thyroid hormones (T3 and T4) in the treatment of hyperthyroidism."
+            },
+            {
+              "stem": "A dog with heartworm disease is started on ivermectin for microfilaria control. What is the primary concern when using ivermectin in heartworm-positive dogs?",
+              "options": [
+                "Risk of anaphylaxis due to dying microfilaria",
+                "Development of ivermectin resistance",
+                "Increased risk of hepatic toxicity",
+                "Reduced efficacy of adulticide therapy"
+              ],
+              "answer": "Risk of anaphylaxis due to dying microfilaria",
+              "explanation": "Ivermectin can cause rapid killing of microfilaria, leading to anaphylaxis in some dogs, especially those with high microfilarial loads."
+            },
+            {
+              "stem": "A sheep farmer reports that his flock has developed coccidiosis. Which anticoccidial drug is most appropriate for treatment in sheep?",
+              "options": [
+                "Amprolium",
+                "Sulfonamides",
+                "Toltrazuril",
+                "Ivermectin"
+              ],
+              "answer": "Toltrazuril",
+              "explanation": "Toltrazuril is a triazine anticoccidial specifically approved for the treatment and prevention of coccidiosis in sheep and other livestock."
+            },
+            {
+              "stem": "A horse with recurrent airway obstruction (RAO) is treated with dexamethasone. What is the primary concern when using dexamethasone in horses?",
+              "options": [
+                "Risk of laminitis",
+                "Development of antimicrobial resistance",
+                "Hepatotoxicity",
+                "Nephrotoxicity"
+              ],
+              "answer": "Risk of laminitis",
+              "explanation": "Dexamethasone, a corticosteroid, is associated with an increased risk of laminitis in horses, especially with prolonged or high-dose use."
+            },
+            {
+              "stem": "A dairy cow is treated with a combination of penicillin and streptomycin for a systemic infection. What is the primary rationale for combining these two antibiotics?",
+              "options": [
+                "Synergistic effect against Gram-negative and Gram-positive bacteria",
+                "Reduced risk of antimicrobial resistance",
+                "Enhanced renal excretion",
+                "Decreased cost of treatment"
+              ],
+              "answer": "Synergistic effect against Gram-negative and Gram-positive bacteria",
+              "explanation": "Penicillin provides coverage against Gram-positive bacteria, while streptomycin extends coverage to Gram-negative bacteria, offering a broader spectrum of activity."
+            },
+            {
+              "stem": "A cat with chronic kidney disease is prescribed benazepril. What is the primary monitoring parameter for benazepril therapy in this cat?",
+              "options": [
+                "Blood pressure",
+                "Serum potassium levels",
+                "Liver enzyme levels",
+                "Serum glucose levels"
+              ],
+              "answer": "Blood pressure",
+              "explanation": "Benazepril is an ACE inhibitor used for hypertension in cats with chronic kidney disease; monitoring blood pressure is critical to assess efficacy and safety."
+            },
+            {
+              "stem": "A pig with erysipelas is treated with penicillin G benzathine. What is the primary advantage of using penicillin G benzathine over penicillin G procaine in pigs?",
+              "options": [
+                "Longer duration of action",
+                "Broader spectrum of activity",
+                "Lower risk of hypersensitivity reactions",
+                "Better oral bioavailability"
+              ],
+              "answer": "Longer duration of action",
+              "explanation": "Penicillin G benzathine is a depot formulation that provides prolonged plasma levels, reducing the frequency of administration in pigs."
+            },
+            {
+              "stem": "A dog with osteoarthritis is prescribed carprofen. What is the primary mechanism of action of carprofen?",
+              "options": [
+                "Selective inhibition of cyclooxygenase-2 (COX-2)",
+                "Non-selective inhibition of cyclooxygenase-1 and COX-2",
+                "Inhibition of leukotriene synthesis",
+                "Blockade of opioid receptors"
+              ],
+              "answer": "Selective inhibition of cyclooxygenase-2 (COX-2)",
+              "explanation": "Carprofen is a non-steroidal anti-inflammatory drug (NSAID) with preferential inhibition of COX-2, reducing inflammation while minimizing gastrointestinal side effects."
+            },
+            {
+              "stem": "A goat with caseous lymphadenitis is treated with a combination of penicillin and rifampicin. What is the primary rationale for adding rifampicin to the treatment regimen?",
+              "options": [
+                "Penetration into abscesses and intracellular bacteria",
+                "Reduced risk of antimicrobial resistance",
+                "Enhanced renal excretion",
+                "Decreased cost of treatment"
+              ],
+              "answer": "Penetration into abscesses and intracellular bacteria",
+              "explanation": "Rifampicin has excellent tissue penetration and activity against intracellular bacteria, making it useful in combination with penicillin for deep-seated infections like caseous lymphadenitis."
+            },
+            {
+              "stem": "A horse with colic is administered xylazine for sedation. What is the primary adverse effect associated with xylazine use in horses?",
+              "options": [
+                "Bradycardia and second-degree heart block",
+                "Tachycardia and hypertension",
+                "Hypotension and collapse",
+                "Respiratory depression and apnea"
+              ],
+              "answer": "Bradycardia and second-degree heart block",
+              "explanation": "Xylazine, an alpha-2 adrenergic agonist, commonly causes bradycardia and conduction disturbances such as second-degree heart block in horses."
+            },
+            {
+              "stem": "A dairy cow is treated with a long-acting oxytetracycline formulation for pneumonia. What is the primary concern regarding residues in meat when using this formulation?",
+              "options": [
+                "Extended withdrawal period for meat (28 days)",
+                "Increased risk of hypersensitivity reactions",
+                "Reduced efficacy of the drug",
+                "Development of antimicrobial resistance"
+              ],
+              "answer": "Extended withdrawal period for meat (28 days)",
+              "explanation": "Long-acting oxytetracycline formulations require a withdrawal period of 28 days for meat to ensure residues are below the maximum residue limit (MRL)."
+            },
+            {
+              "stem": "A cat with feline lower urinary tract disease (FLUTD) is prescribed prazosin. What is the primary mechanism of action of prazosin in this context?",
+              "options": [
+                "Alpha-1 adrenergic blockade",
+                "Beta-adrenergic blockade",
+                "Calcium channel blockade",
+                "Angiotensin-converting enzyme inhibition"
+              ],
+              "answer": "Alpha-1 adrenergic blockade",
+              "explanation": "Prazosin is an alpha-1 adrenergic blocker used in cats with FLUTD to relax urethral smooth muscle and facilitate urine flow."
+            },
+            {
+              "stem": "A pig with proliferative enteropathy (ileitis) is treated with tylosin. What is the primary indication for tylosin in pigs?",
+              "options": [
+                "Treatment of Lawsonia intracellularis infections",
+                "Treatment of Escherichia coli diarrhea",
+                "Treatment of Brachyspira hyodysenteriae infections",
+                "Treatment of Salmonella infections"
+              ],
+              "answer": "Treatment of Lawsonia intracellularis infections",
+              "explanation": "Tylosin is a macrolide antibiotic specifically effective against Lawsonia intracellularis, the causative agent of proliferative enteropathy (ileitis) in pigs."
+            },
+            {
+              "stem": "A dog with congestive heart failure is prescribed furosemide. What is the primary monitoring parameter for furosemide therapy in this dog?",
+              "options": [
+                "Serum electrolytes (especially potassium)",
+                "Liver enzyme levels",
+                "Serum glucose levels",
+                "Thyroid function tests"
+              ],
+              "answer": "Serum electrolytes (especially potassium)",
+              "explanation": "Furosemide is a loop diuretic that can cause electrolyte imbalances, particularly hypokalemia, which requires monitoring during therapy."
+            },
+            {
+              "stem": "A sheep with footrot is treated with a combination of oxytetracycline and ketoprofen. What is the primary rationale for adding ketoprofen to the treatment regimen?",
+              "options": [
+                "Anti-inflammatory and analgesic effects",
+                "Antimicrobial synergy",
+                "Enhanced renal excretion of oxytetracycline",
+                "Reduced risk of antimicrobial resistance"
+              ],
+              "answer": "Anti-inflammatory and analgesic effects",
+              "explanation": "Ketoprofen, a non-steroidal anti-inflammatory drug (NSAID), provides additional anti-inflammatory and analgesic effects to support recovery from footrot."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 4-year-old dairy cow presents with acute mastitis caused by Staphylococcus aureus. The cow is in peak lactation. (10 marks)\n\n(a) Outline the steps for intramammary infusion of antibiotics in this cow. (3 marks)\n(b) Justify the choice of an intramammary antibiotic formulation for this case. (3 marks)\n(c) Describe the milk withdrawal period following treatment with an intramammary antibiotic. (2 marks)\n(d) What additional supportive therapy should be considered for this cow? (2 marks)",
+              "modelAnswer": "a) Steps for intramammary infusion:\n- Clean and disinfect the teat end thoroughly with 70% alcohol.\n- Strip out a few squirts of milk to clear the teat canal.\n- Insert the cannula of the intramammary tube into the teat canal and infuse the contents.\n- Massage the udder gently to distribute the antibiotic.\n\nb) Justification for antibiotic choice:\n- Staphylococcus aureus is a Gram-positive bacterium, so a penicillin-based intramammary formulation (e.g., procaine penicillin G with dihydrostreptomycin) is appropriate due to its narrow spectrum and efficacy against Gram-positive organisms.\n- Intramammary formulations provide high local concentrations of the drug at the site of infection, improving efficacy.\n\nc) Milk withdrawal period:\n- Typically 3-7 days post-treatment, depending on the specific product used. Always refer to the product datasheet for exact withdrawal times.\n\nd) Additional supportive therapy:\n- Systemic antibiotics if the infection is severe or systemic signs are present.\n- Non-steroidal anti-inflammatory drugs (NSAIDs) like flunixin meglumine for pain and inflammation.\n- Fluid therapy and supportive care if the cow is systemically ill."
+            },
+            {
+              "stem": "A farmer reports that his flock of indigenous chickens has developed a severe infestation of red mites (Dermanyssus gallinae). (8 marks)\n\n(a) Outline the life cycle of Dermanyssus gallinae and its relevance to treatment. (3 marks)\n(b) Recommend an appropriate ectoparasiticide for treatment, including formulation and route of administration. (3 marks)\n(c) Describe the environmental management measures to prevent reinfestation. (2 marks)",
+              "modelAnswer": "a) Life cycle and relevance:\n- Dermanyssus gallinae has a rapid life cycle (7-10 days), with mites feeding on birds at night and hiding in cracks and crevices during the day.\n- This life cycle means that treatment must target both the mites on the birds and their environment to be effective.\n- Adult mites can survive without feeding for several months, making environmental control critical.\n\nb) Ectoparasiticide recommendation:\n- Permethrin dusting powder or spray is appropriate for poultry due to its efficacy against mites and low toxicity to birds.\n- Apply directly to the birds and their environment (coops, nests, cracks) to ensure complete coverage.\n- Repeat treatment after 7-10 days to target newly hatched mites.\n\nc) Environmental management:\n- Thoroughly clean and disinfect the coop, nests, and perches.\n- Seal cracks and crevices where mites hide.\n- Use diatomaceous earth or other desiccants in the environment to kill mites.\n- Rotate housing or rest periods to break the mite life cycle."
+            },
+            {
+              "stem": "A 2-year-old German Shepherd dog is diagnosed with heartworm disease (Dirofilaria immitis). (8 marks)\n\n(a) Outline the stages of heartworm disease and their clinical relevance. (3 marks)\n(b) Describe the adulticide therapy protocol for this dog, including drug, dose, and monitoring. (3 marks)\n(c) What precautions should be taken during adulticide therapy? (2 marks)",
+              "modelAnswer": "a) Stages of heartworm disease:\n- Stage 1: Mild disease with no or minimal clinical signs.\n- Stage 2: Moderate disease with coughing and exercise intolerance.\n- Stage 3: Severe disease with right-sided heart failure, ascites, and cachexia.\n- Stage 4: Caval syndrome, a life-threatening emergency requiring immediate intervention.\n\nb) Adulticide therapy protocol:\n- Use melarsomine dihydrochloride (Immiticide) at a dose of 2.5 mg/kg intramuscularly, repeated after 24 hours.\n- Alternatively, a split-dose protocol (2 injections 24 hours apart, followed by a third injection 30 days later) may be used for higher efficacy and safety.\n- Strict cage rest is essential for 4-6 weeks post-treatment to prevent complications from dying worms.\n- Monitor for clinical improvement and resolution of microfilaria.\n\nc) Precautions during therapy:\n- Avoid exercise restriction to prevent worm embolization and pulmonary complications.\n- Monitor for signs of pulmonary thromboembolism (coughing, dyspnea, hemoptysis).\n- Provide supportive care (e.g., corticosteroids, bronchodilators) if needed.\n- Consider microfilaria testing and treatment prior to adulticide therapy to reduce the risk of anaphylaxis."
+            },
+            {
+              "stem": "A 5-year-old dairy goat presents with suspected caseous lymphadenitis (CLA) caused by Corynebacterium pseudotuberculosis. (6 marks)\n\n(a) Describe the clinical presentation and diagnosis of CLA in goats. (2 marks)\n(b) Outline the treatment options for CLA, including antibiotics and supportive care. (2 marks)\n(c) What are the key considerations for antibiotic selection in food-producing animals? (2 marks)",
+              "modelAnswer": "a) Clinical presentation and diagnosis:\n- Clinical signs include abscesses in lymph nodes (especially prescapular and prefemoral), weight loss, and poor body condition.\n- Diagnosis is typically clinical, but culture and sensitivity testing of abscess contents can confirm Corynebacterium pseudotuberculosis.\n\nb) Treatment options:\n- Surgical drainage and lavage of abscesses.\n- Systemic antibiotics: Penicillin G procaine (drug of choice) or long-acting oxytetracycline.\n- Supportive care: Nutritional support and pain management if needed.\n\nc) Key considerations for antibiotic selection:\n- Use antibiotics with a narrow spectrum to minimize resistance (e.g., penicillin for Gram-positive bacteria).\n- Consider withdrawal periods for milk and meat to ensure food safety.\n- Avoid critically important antibiotics (e.g., fluoroquinolones, third-generation cephalosporins) unless absolutely necessary."
+            },
+            {
+              "stem": "A piglet develops post-weaning diarrhea due to enterotoxigenic Escherichia coli (ETEC). (4 marks)\n\n(a) Describe the pathogenesis of ETEC-induced diarrhea in piglets. (2 marks)\n(b) Outline the treatment and prevention strategies for this condition. (2 marks)",
+              "modelAnswer": "a) Pathogenesis of ETEC-induced diarrhea:\n- ETEC produces heat-stable (STa) and/or heat-labile (LT) enterotoxins that stimulate intestinal secretion of chloride and water, leading to profuse watery diarrhea.\n- The bacteria adhere to the intestinal epithelium via fimbrial adhesins (e.g., F4, F18), causing localized damage and malabsorption.\n\nb) Treatment and prevention:\n- Treatment: Oral rehydration solutions, antimicrobials (e.g., apramycin, neomycin, or colistin), and supportive care (e.g., warmth, electrolytes).\n- Prevention: Vaccination of sows with ETEC vaccines, improving hygiene and biosecurity, and using zinc oxide in feed (where permitted) to reduce bacterial adhesion."
+            },
+            {
+              "stem": "A horse with recurrent airway obstruction (RAO) is prescribed dexamethasone for anti-inflammatory therapy. (4 marks)\n\n(a) Describe the mechanism of action of dexamethasone in RAO. (2 marks)\n(b) What are the primary adverse effects of prolonged dexamethasone use in horses? (2 marks)",
+              "modelAnswer": "a) Mechanism of action:\n- Dexamethasone is a corticosteroid that inhibits phospholipase A2, reducing the production of arachidonic acid metabolites (e.g., prostaglandins, leukotrienes) and subsequent inflammation.\n- It also suppresses immune responses and reduces mucus production in the airways.\n\nb) Adverse effects:\n- Laminitis: A serious and potentially life-threatening complication of prolonged or high-dose corticosteroid use in horses.\n- Immunosuppression: Increased risk of infections.\n- Gastric ulceration: Due to reduced mucosal protection.\n- Delayed wound healing and metabolic disturbances (e.g., hyperglycemia, polyuria/polydipsia)."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 3-year-old dairy cow presents with acute mastitis caused by a mixed infection of Staphylococcus aureus and Escherichia coli. The cow is in peak lactation, and the farmer is concerned about milk residues and withdrawal periods. (15 marks)\n\n(a) Outline the steps for obtaining a milk sample for culture and sensitivity testing. (3 marks)\n(b) Describe the rationale for selecting an appropriate antibiotic therapy for this mixed infection. (4 marks)\n(c) Outline a treatment plan, including drug selection, route of administration, and monitoring. (5 marks)\n(d) Discuss the considerations for milk and meat withdrawal periods in this case. (3 marks)",
+              "modelAnswer": "a) Steps for obtaining a milk sample:\n- Clean and disinfect the teat end thoroughly with 70% alcohol.\n- Strip out a few squirts of milk to clear the teat canal and reduce contamination.\n- Collect a sterile sample from each affected quarter into a sterile tube, ensuring no contamination from the environment or hands.\n- Label the sample clearly with the cow's identification, date, and affected quarter(s).\n- Submit the sample to the laboratory promptly for culture and sensitivity testing.\n\nb) Rationale for antibiotic selection:\n- Staphylococcus aureus is a Gram-positive bacterium, while Escherichia coli is a Gram-negative bacterium, requiring a broad-spectrum antibiotic or a combination of antibiotics.\n- Intramammary formulations are preferred for mastitis as they provide high local concentrations of the drug at the site of infection.\n- Systemic antibiotics may be required if the infection is severe or systemic signs are present.\n- Consider the withdrawal period for milk and meat to ensure food safety.\n\nc) Treatment plan:\n- Intramammary antibiotic: A combination of procaine penicillin G and dihydrostreptomycin (e.g., Penstrep) for Gram-positive and Gram-negative coverage.\n- Systemic antibiotic: If systemic signs are present, consider a parenteral broad-spectrum antibiotic like ceftiofur or florfenicol.\n- Supportive therapy: Administer a non-steroidal anti-inflammatory drug (NSAID) like flunixin meglumine for pain and inflammation.\n- Fluid therapy and supportive care if the cow is systemically ill.\n- Monitor the cow closely for clinical improvement and resolution of infection.\n\nd) Considerations for withdrawal periods:\n- Intramammary antibiotics typically have a milk withdrawal period of 3-7 days, depending on the product. Always refer to the product datasheet for exact times.\n- Systemic antibiotics may have longer withdrawal periods for milk and meat (e.g., 7-21 days for ceftiofur, 28 days for florfenicol).\n- Ensure the cow is not milked for human consumption during the withdrawal period.\n- Document all treatments and withdrawal periods to comply with food safety regulations."
+            },
+            {
+              "stem": "A 6-month-old piglet presents with severe diarrhea, dehydration, and lethargy. The farmer reports that the condition has spread rapidly through the weaned piglets. On examination, the piglet has watery yellow diarrhea and sunken eyes. (15 marks)\n\n(a) Outline the differential diagnosis for this condition. (3 marks)\n(b) Describe the diagnostic approach to confirm the causative agent. (4 marks)\n(c) Outline a treatment and prevention plan for this outbreak. (5 marks)\n(d) Discuss the regulatory considerations for antibiotic use in food-producing animals during an outbreak. (3 marks)",
+              "modelAnswer": "a) Differential diagnosis:\n- Enterotoxigenic Escherichia coli (ETEC): Common cause of post-weaning diarrhea in piglets, characterized by watery diarrhea and dehydration.\n- Porcine epidemic diarrhea virus (PEDV): Causes severe watery diarrhea and high mortality in piglets.\n- Rotavirus: Causes diarrhea in young piglets, often with a milder clinical course.\n- Salmonella spp.: Can cause diarrhea and systemic illness in piglets.\n- Clostridium perfringens type C: Causes hemorrhagic diarrhea in piglets.\n\nb) Diagnostic approach:\n- Collect fecal samples from affected piglets for bacterial culture and sensitivity testing to identify ETEC or other bacterial pathogens.\n- Perform PCR or ELISA for viral pathogens like PEDV or rotavirus if viral diarrhea is suspected.\n- Conduct a necropsy on a dead piglet to examine the intestines for gross and microscopic lesions.\n- Submit samples to a veterinary diagnostic laboratory for comprehensive testing.\n\nc) Treatment and prevention plan:\n- Treatment:\n  - Oral rehydration solutions to correct dehydration and electrolyte imbalances.\n  - Antimicrobials: Apramycin, neomycin, or colistin for ETEC; adjust based on culture and sensitivity results.\n  - Supportive care: Provide warmth, clean bedding, and nutritional support.\n  - Isolate affected piglets to prevent spread.\n- Prevention:\n  - Vaccinate sows with ETEC vaccines prior to farrowing to provide passive immunity to piglets.\n  - Improve hygiene and biosecurity in the farrowing and weaning areas.\n  - Use zinc oxide in feed (where permitted) to reduce bacterial adhesion and improve gut health.\n  - Implement all-in, all-out management to break the cycle of infection.\n\nd) Regulatory considerations:\n- Use antibiotics responsibly to minimize the risk of antimicrobial resistance; avoid critically important antibiotics unless absolutely necessary.\n- Follow withdrawal periods for meat to ensure food safety; document all treatments and withdrawal times.\n- Report notifiable diseases (e.g., PEDV) to the relevant veterinary authorities.\n- Ensure compliance with local and national regulations on antibiotic use in food-producing animals."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

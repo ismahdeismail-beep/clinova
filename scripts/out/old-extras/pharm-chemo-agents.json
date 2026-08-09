@@ -1,0 +1,782 @@
+{
+  "pharm-chemo-agents": {
+    "2": {
+      "title": "Chemotherapeutic Agents",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 32-year-old male farmer presents with a 3-day history of fever, headache, and myalgia after working in a rice paddy. Blood cultures reveal Gram-negative bacilli. Which of the following antibiotics is the most appropriate for empiric therapy due to its reliable activity against Leptospira species?",
+              "options": [
+                "Ceftriaxone",
+                "Gentamicin",
+                "Doxycycline",
+                "Clindamycin"
+              ],
+              "answer": "Doxycycline",
+              "explanation": "Doxycycline is the drug of choice for leptospirosis due to its excellent intracellular penetration and activity against Leptospira. Ceftriaxone is an alternative but less preferred for outpatient empiric therapy. Gentamicin and clindamycin lack activity against Leptospira."
+            },
+            {
+              "stem": "A 68-year-old male with a history of chronic obstructive pulmonary disease (COPD) is admitted with a severe exacerbation and suspected bacterial pneumonia. Sputum Gram stain shows numerous gram-positive diplococci. Which of the following antibiotics is most appropriate for empiric therapy?",
+              "options": [
+                "Ciprofloxacin",
+                "Vancomycin",
+                "Amoxicillin-clavulanate",
+                "Metronidazole"
+              ],
+              "answer": "Amoxicillin-clavulanate",
+              "explanation": "Streptococcus pneumoniae is the most common bacterial cause of COPD exacerbations. Amoxicillin-clavulanate provides excellent coverage against penicillin-susceptible and some penicillin-resistant S. pneumoniae, as well as common respiratory pathogens. Ciprofloxacin has poor gram-positive activity, vancomycin is reserved for resistant organisms, and metronidazole lacks activity against S. pneumoniae."
+            },
+            {
+              "stem": "A 24-year-old female presents with a 5-day history of dysuria, urgency, and suprapubic pain. Urine dipstick is positive for leukocyte esterase and nitrites. She has no known drug allergies. Which of the following antibiotics is the most appropriate first-line agent for uncomplicated cystitis?",
+              "options": [
+                "Nitrofurantoin",
+                "Ciprofloxacin",
+                "Cefuroxime",
+                "Trimethoprim-sulfamethoxazole"
+              ],
+              "answer": "Nitrofurantoin",
+              "explanation": "Nitrofurantoin is a first-line agent for uncomplicated cystitis due to its excellent urinary concentrations, activity against common uropathogens (including E. coli), and low resistance rates. Ciprofloxacin is reserved for complicated infections or resistant organisms. Cefuroxime and TMP-SMX are alternatives but not first-line due to resistance patterns."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of macrolides is correct?",
+              "options": [
+                "They inhibit bacterial DNA gyrase",
+                "They bind to the 50S ribosomal subunit and inhibit protein synthesis",
+                "They disrupt bacterial cell membranes by forming pores",
+                "They inhibit folate synthesis by blocking dihydrofolate reductase"
+              ],
+              "answer": "They bind to the 50S ribosomal subunit and inhibit protein synthesis",
+              "explanation": "Macrolides (e.g., erythromycin, azithromycin) bind reversibly to the 50S ribosomal subunit, inhibiting translocation of the peptidyl-tRNA and blocking protein synthesis. They do not inhibit DNA gyrase, form pores, or block folate synthesis."
+            },
+            {
+              "stem": "A 45-year-old male with a history of type 2 diabetes mellitus presents with a severe soft tissue infection of the left foot. The wound is foul-smelling, and imaging reveals gas in the tissues. Which of the following antibiotics provides the best anaerobic coverage for this patient?",
+              "options": [
+                "Ceftriaxone",
+                "Clindamycin",
+                "Metronidazole",
+                "Gentamicin"
+              ],
+              "answer": "Metronidazole",
+              "explanation": "Metronidazole is the drug of choice for anaerobic infections, including those caused by Bacteroides species, which are commonly involved in diabetic foot infections with gas formation. Clindamycin also covers anaerobes but is less reliable for Bacteroides. Ceftriaxone and gentamicin lack significant anaerobic activity."
+            },
+            {
+              "stem": "Which of the following antibiotics is most likely to cause ototoxicity and nephrotoxicity?",
+              "options": [
+                "Ceftriaxone",
+                "Gentamicin",
+                "Doxycycline",
+                "Clarithromycin"
+              ],
+              "answer": "Gentamicin",
+              "explanation": "Gentamicin, an aminoglycoside, is associated with both ototoxicity (cochlear and vestibular) and nephrotoxicity due to its accumulation in renal tubular cells and inner ear structures. The other agents listed have different adverse effect profiles."
+            },
+            {
+              "stem": "A 50-year-old female with a history of hypertension and chronic kidney disease (eGFR 30 mL/min) presents with pyelonephritis. Which of the following antibiotics requires dose adjustment in this patient due to renal elimination?",
+              "options": [
+                "Azithromycin",
+                "Ceftriaxone",
+                "Ciprofloxacin",
+                "Gentamicin"
+              ],
+              "answer": "Gentamicin",
+              "explanation": "Gentamicin is primarily eliminated by renal excretion, and its dose must be adjusted in patients with reduced kidney function to avoid accumulation and toxicity. Azithromycin, ceftriaxone, and ciprofloxacin are not primarily renally eliminated."
+            },
+            {
+              "stem": "Which of the following antifungal agents inhibits the synthesis of ergosterol in the fungal cell membrane?",
+              "options": [
+                "Amphotericin B",
+                "Fluconazole",
+                "Caspofungin",
+                "Nystatin"
+              ],
+              "answer": "Fluconazole",
+              "explanation": "Fluconazole is an azole antifungal that inhibits the fungal cytochrome P450-dependent enzyme lanosterol 14-alpha-demethylase, blocking ergosterol synthesis. Amphotericin B binds ergosterol directly, caspofungin inhibits beta-glucan synthesis, and nystatin forms pores in the fungal membrane."
+            },
+            {
+              "stem": "A 30-year-old female presents with a 1-week history of watery diarrhea, abdominal cramps, and low-grade fever after returning from a trip to rural Kenya. Stool microscopy reveals trophozoites of Entamoeba histolytica. Which of the following antibiotics is the most appropriate for treatment?",
+              "options": [
+                "Metronidazole",
+                "Doxycycline",
+                "Ciprofloxacin",
+                "Clindamycin"
+              ],
+              "answer": "Metronidazole",
+              "explanation": "Metronidazole is the drug of choice for invasive amebiasis caused by Entamoeba histolytica due to its excellent tissue penetration and activity against the trophozoite form. Doxycycline, ciprofloxacin, and clindamycin are not effective against E. histolytica."
+            },
+            {
+              "stem": "Which of the following statements about the pharmacokinetics of doxycycline is correct?",
+              "options": [
+                "It is primarily eliminated by renal excretion",
+                "It is not affected by food intake",
+                "It has a long half-life allowing once-daily dosing",
+                "It is contraindicated in patients with hepatic impairment"
+              ],
+              "answer": "It has a long half-life allowing once-daily dosing",
+              "explanation": "Doxycycline has a long half-life (16–22 hours), allowing once-daily dosing. It is primarily eliminated via the fecal route (enterohepatic circulation), is affected by food (absorption reduced by divalent cations), and is not contraindicated in hepatic impairment."
+            },
+            {
+              "stem": "A 25-year-old male presents with a painful, swollen knee joint. Synovial fluid analysis reveals gram-positive cocci in clusters. He reports a history of anaphylaxis to penicillin. Which of the following antibiotics is the most appropriate for empiric therapy?",
+              "options": [
+                "Ceftriaxone",
+                "Vancomycin",
+                "Clindamycin",
+                "Aztreonam"
+              ],
+              "answer": "Vancomycin",
+              "explanation": "Vancomycin is the drug of choice for empiric therapy of suspected staphylococcal septic arthritis in a patient with a history of penicillin anaphylaxis. Ceftriaxone may have cross-reactivity risk, clindamycin is not first-line for severe infections, and aztreonam lacks gram-positive activity."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of fluoroquinolones is correct?",
+              "options": [
+                "They inhibit bacterial cell wall synthesis",
+                "They bind to the 30S ribosomal subunit and inhibit protein synthesis",
+                "They inhibit bacterial DNA gyrase and topoisomerase IV",
+                "They disrupt bacterial cell membranes by forming pores"
+              ],
+              "answer": "They inhibit bacterial DNA gyrase and topoisomerase IV",
+              "explanation": "Fluoroquinolones inhibit bacterial DNA gyrase (topoisomerase II) and topoisomerase IV, enzymes essential for DNA replication, transcription, and repair. They do not inhibit cell wall synthesis, bind to the 30S subunit, or form pores in the membrane."
+            },
+            {
+              "stem": "A 60-year-old male with a history of prostate cancer presents with fever, chills, and dysuria. Blood and urine cultures grow extended-spectrum beta-lactamase (ESBL)-producing Escherichia coli. Which of the following antibiotics is the most appropriate for empiric therapy?",
+              "options": [
+                "Piperacillin-tazobactam",
+                "Ceftriaxone",
+                "Meropenem",
+                "Ciprofloxacin"
+              ],
+              "answer": "Meropenem",
+              "explanation": "Meropenem is a carbapenem with excellent activity against ESBL-producing gram-negative organisms, including E. coli. Piperacillin-tazobactam may be used but is less reliable for ESBL producers. Ceftriaxone and ciprofloxacin are not recommended due to high resistance rates in ESBL-producing organisms."
+            },
+            {
+              "stem": "Which of the following antibiotics is most likely to cause tendon rupture as an adverse effect?",
+              "options": [
+                "Ceftriaxone",
+                "Ciprofloxacin",
+                "Vancomycin",
+                "Doxycycline"
+              ],
+              "answer": "Ciprofloxacin",
+              "explanation": "Ciprofloxacin and other fluoroquinolones are associated with an increased risk of tendon rupture, particularly Achilles tendon rupture. This risk is higher in older adults, those on corticosteroids, and patients with renal impairment. The other agents listed do not have this adverse effect."
+            },
+            {
+              "stem": "A 40-year-old female with a history of rheumatoid arthritis presents with a severe skin and soft tissue infection. The wound culture grows methicillin-resistant Staphylococcus aureus (MRSA). Which of the following antibiotics is the most appropriate for empiric therapy?",
+              "options": [
+                "Ceftriaxone",
+                "Clindamycin",
+                "Vancomycin",
+                "Amoxicillin-clavulanate"
+              ],
+              "answer": "Vancomycin",
+              "explanation": "Vancomycin is the drug of choice for empiric therapy of severe MRSA infections. Ceftriaxone and amoxicillin-clavulanate lack activity against MRSA, and clindamycin resistance is common in MRSA strains."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of tetracyclines is correct?",
+              "options": [
+                "They inhibit bacterial cell wall synthesis",
+                "They bind to the 30S ribosomal subunit and inhibit protein synthesis",
+                "They inhibit bacterial DNA gyrase",
+                "They disrupt bacterial cell membranes by forming pores"
+              ],
+              "answer": "They bind to the 30S ribosomal subunit and inhibit protein synthesis",
+              "explanation": "Tetracyclines bind reversibly to the 30S ribosomal subunit, blocking the binding of aminoacyl-tRNA to the ribosome and inhibiting protein synthesis. They do not inhibit cell wall synthesis, DNA gyrase, or form pores in the membrane."
+            },
+            {
+              "stem": "A 28-year-old female presents with a 3-day history of fever, malaise, and a maculopapular rash. She reports unprotected sexual contact 2 weeks ago. Serology confirms primary syphilis. Which of the following antibiotics is the most appropriate for treatment?",
+              "options": [
+                "Doxycycline",
+                "Azithromycin",
+                "Penicillin G benzathine",
+                "Ceftriaxone"
+              ],
+              "answer": "Penicillin G benzathine",
+              "explanation": "Penicillin G benzathine is the drug of choice for the treatment of syphilis at all stages, including primary syphilis. Doxycycline and azithromycin are alternatives for penicillin-allergic patients, but ceftriaxone is not first-line for syphilis."
+            },
+            {
+              "stem": "Which of the following statements about the pharmacokinetics of vancomycin is correct?",
+              "options": [
+                "It is well absorbed orally",
+                "It is primarily eliminated by hepatic metabolism",
+                "It requires therapeutic drug monitoring to avoid nephrotoxicity",
+                "It has excellent penetration into the cerebrospinal fluid without meningeal inflammation"
+              ],
+              "answer": "It requires therapeutic drug monitoring to avoid nephrotoxicity",
+              "explanation": "Vancomycin requires therapeutic drug monitoring (TDM) to ensure efficacy and avoid nephrotoxicity and ototoxicity. It is poorly absorbed orally, primarily eliminated by renal excretion, and has poor CSF penetration without meningeal inflammation."
+            },
+            {
+              "stem": "A 55-year-old male with a history of chronic liver disease presents with fever, jaundice, and right upper quadrant pain. Blood cultures grow Klebsiella pneumoniae. Which of the following antibiotics is the most appropriate for empiric therapy?",
+              "options": [
+                "Ceftriaxone",
+                "Gentamicin",
+                "Ciprofloxacin",
+                "Metronidazole"
+              ],
+              "answer": "Ceftriaxone",
+              "explanation": "Ceftriaxone is a third-generation cephalosporin with excellent activity against Klebsiella pneumoniae and good biliary excretion, making it suitable for patients with liver disease. Gentamicin and ciprofloxacin are alternatives but require dose adjustment in liver disease. Metronidazole lacks activity against Klebsiella."
+            },
+            {
+              "stem": "Which of the following antibiotics is most likely to cause photosensitivity as an adverse effect?",
+              "options": [
+                "Amoxicillin",
+                "Ceftriaxone",
+                "Doxycycline",
+                "Vancomycin"
+              ],
+              "answer": "Doxycycline",
+              "explanation": "Doxycycline is a tetracycline associated with photosensitivity reactions, including exaggerated sunburn and skin rashes upon exposure to sunlight. The other agents listed do not commonly cause photosensitivity."
+            },
+            {
+              "stem": "A 35-year-old female presents with a 2-week history of cough, night sweats, and weight loss. A chest X-ray reveals bilateral upper lobe infiltrates. Sputum microscopy is positive for acid-fast bacilli. Which of the following antibiotics is the most appropriate for initial empiric therapy?",
+              "options": [
+                "Isoniazid",
+                "Rifampicin",
+                "Pyrazinamide",
+                "Ethambutol"
+              ],
+              "answer": "Rifampicin",
+              "explanation": "Rifampicin is a cornerstone of tuberculosis treatment due to its bactericidal activity against Mycobacterium tuberculosis. Isoniazid, pyrazinamide, and ethambutol are also used in combination regimens, but rifampicin is essential for initial empiric therapy."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of sulfonamides is correct?",
+              "options": [
+                "They inhibit bacterial cell wall synthesis",
+                "They bind to the 30S ribosomal subunit and inhibit protein synthesis",
+                "They inhibit bacterial dihydropteroate synthase and block folate synthesis",
+                "They disrupt bacterial cell membranes by forming pores"
+              ],
+              "answer": "They inhibit bacterial dihydropteroate synthase and block folate synthesis",
+              "explanation": "Sulfonamides are structural analogues of para-aminobenzoic acid (PABA) and competitively inhibit dihydropteroate synthase, blocking the synthesis of folate in bacteria. They do not inhibit cell wall synthesis, bind to the 30S subunit, or form pores in the membrane."
+            },
+            {
+              "stem": "A 42-year-old male presents with a 1-week history of watery diarrhea, abdominal cramps, and low-grade fever. Stool culture grows Salmonella species. Which of the following antibiotics is the most appropriate for treatment?",
+              "options": [
+                "Ciprofloxacin",
+                "Azithromycin",
+                "Metronidazole",
+                "Doxycycline"
+              ],
+              "answer": "Ciprofloxacin",
+              "explanation": "Ciprofloxacin is the drug of choice for the treatment of invasive salmonellosis, including typhoid fever, due to its excellent activity against Salmonella species. Azithromycin is an alternative for susceptible strains, while metronidazole and doxycycline are not effective."
+            },
+            {
+              "stem": "Which of the following antibiotics is most likely to cause red man syndrome as an adverse effect?",
+              "options": [
+                "Vancomycin",
+                "Gentamicin",
+                "Ceftriaxone",
+                "Doxycycline"
+              ],
+              "answer": "Vancomycin",
+              "explanation": "Vancomycin is associated with red man syndrome, a non-allergic reaction characterized by flushing, pruritus, and erythema of the upper body due to histamine release. The other agents listed do not commonly cause this reaction."
+            },
+            {
+              "stem": "A 65-year-old male with a history of chronic kidney disease (eGFR 25 mL/min) presents with a severe soft tissue infection. The wound culture grows Pseudomonas aeruginosa. Which of the following antibiotics is the most appropriate for empiric therapy?",
+              "options": [
+                "Ceftriaxone",
+                "Ciprofloxacin",
+                "Piperacillin-tazobactam",
+                "Vancomycin"
+              ],
+              "answer": "Ciprofloxacin",
+              "explanation": "Ciprofloxacin is a fluoroquinolone with excellent activity against Pseudomonas aeruginosa and good tissue penetration. Ceftriaxone and vancomycin lack activity against Pseudomonas, and piperacillin-tazobactam requires dose adjustment in renal impairment."
+            },
+            {
+              "stem": "Which of the following statements about the pharmacokinetics of azithromycin is correct?",
+              "options": [
+                "It is primarily eliminated by renal excretion",
+                "It has a short half-life requiring multiple daily doses",
+                "It achieves high intracellular concentrations and has a prolonged post-antibiotic effect",
+                "It is contraindicated in patients with hepatic impairment"
+              ],
+              "answer": "It achieves high intracellular concentrations and has a prolonged post-antibiotic effect",
+              "explanation": "Azithromycin achieves high intracellular concentrations, has a prolonged half-life (allowing once-daily dosing), and exhibits a prolonged post-antibiotic effect. It is primarily eliminated via the biliary route and is not contraindicated in hepatic impairment."
+            },
+            {
+              "stem": "A 30-year-old female presents with a 3-day history of fever, headache, and myalgia. She reports a recent trip to a malaria-endemic area. Blood smear confirms Plasmodium falciparum malaria. Which of the following antibiotics is the most appropriate for treatment?",
+              "options": [
+                "Artemether-lumefantrine",
+                "Chloroquine",
+                "Doxycycline",
+                "Quinine"
+              ],
+              "answer": "Artemether-lumefantrine",
+              "explanation": "Artemether-lumefantrine is the first-line treatment for uncomplicated Plasmodium falciparum malaria in Kenya due to widespread chloroquine resistance. Chloroquine is no longer recommended for P. falciparum, doxycycline is used for prophylaxis or in combination regimens, and quinine is reserved for severe malaria."
+            },
+            {
+              "stem": "Which of the following antibiotics is most likely to cause Clostridioides difficile-associated diarrhea as an adverse effect?",
+              "options": [
+                "Vancomycin",
+                "Metronidazole",
+                "Clindamycin",
+                "Azithromycin"
+              ],
+              "answer": "Clindamycin",
+              "explanation": "Clindamycin is strongly associated with Clostridioides difficile-associated diarrhea due to its broad anaerobic spectrum and disruption of the gut microbiota. Vancomycin and metronidazole are used to treat C. difficile infection, and azithromycin is less commonly implicated."
+            },
+            {
+              "stem": "A 50-year-old male presents with a 1-week history of fever, cough, and shortness of breath. Chest X-ray reveals bilateral interstitial infiltrates. He is diagnosed with Pneumocystis jirovecii pneumonia. Which of the following antibiotics is the most appropriate for treatment?",
+              "options": [
+                "Trimethoprim-sulfamethoxazole",
+                "Doxycycline",
+                "Ciprofloxacin",
+                "Clindamycin"
+              ],
+              "answer": "Trimethoprim-sulfamethoxazole",
+              "explanation": "Trimethoprim-sulfamethoxazole (TMP-SMX) is the drug of choice for the treatment of Pneumocystis jirovecii pneumonia. Doxycycline, ciprofloxacin, and clindamycin are not effective against P. jirovecii."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of echinocandins (e.g., caspofungin) is correct?",
+              "options": [
+                "They inhibit fungal cell wall synthesis by blocking beta-glucan synthesis",
+                "They bind to ergosterol in the fungal cell membrane",
+                "They inhibit fungal DNA gyrase",
+                "They disrupt fungal cell membranes by forming pores"
+              ],
+              "answer": "They inhibit fungal cell wall synthesis by blocking beta-glucan synthesis",
+              "explanation": "Echinocandins inhibit fungal cell wall synthesis by non-competitively blocking the enzyme beta-1,3-glucan synthase, leading to cell wall instability and lysis. They do not bind ergosterol, inhibit DNA gyrase, or form pores in the membrane."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "Explain the rationale behind the combination of antibiotics in the treatment of tuberculosis (TB), including an example of a standard first-line regimen. (7 marks)",
+              "modelAnswer": "Rationale for antibiotic combinations in TB treatment:\n1. SYNERGY: Combining drugs with different mechanisms enhances bactericidal activity and reduces the risk of resistance. Example: Isoniazid (inhibits mycolic acid synthesis) and rifampicin (inhibits RNA polymerase) act synergistically to rapidly reduce bacterial load.\n2. PREVENTION OF RESISTANCE: TB has a high mutation rate; using multiple drugs with different targets reduces the likelihood that a single mutation confers resistance to all agents. Example: Standard first-line regimen RHZE (rifampicin, isoniazid, pyrazinamide, ethambutol) for drug-susceptible TB.\n3. COVERAGE OF DIFFERENT PHASES OF INFECTION: TB has active extracellular, intracellular, and dormant phases; combining drugs with different penetration and activity ensures all phases are targeted. Example: Pyrazinamide is particularly effective against semi-dormant bacilli in acidic environments (e.g., caseous lesions).\n4. REDUCTION OF TREATMENT DURATION: Combination therapy allows shorter treatment courses (e.g., 6 months for drug-susceptible TB) compared to monotherapy, which would require prolonged treatment and risk resistance.\nStandard first-line regimen: RHZE (rifampicin, isoniazid, pyrazinamide, ethambutol) for 2 months, followed by RH (rifampicin, isoniazid) for 4 months."
+            },
+            {
+              "stem": "Describe the mechanism of action of fluoroquinolones and outline three adverse effects associated with their use. (7 marks)",
+              "modelAnswer": "Mechanism of action of fluoroquinolones:\nFluoroquinolones inhibit bacterial DNA gyrase (topoisomerase II) and topoisomerase IV, enzymes essential for DNA replication, transcription, and repair. This inhibition leads to bacterial DNA fragmentation, impaired cell division, and ultimately cell death (bactericidal effect).\n\nThree adverse effects of fluoroquinolones:\n1. TENDON RUPTURE: Fluoroquinolones are associated with an increased risk of tendon rupture, particularly Achilles tendon rupture, due to disruption of collagen synthesis and matrix metalloproteinase activation. Risk factors include older age, corticosteroid use, and renal impairment.\n2. QT PROLONGATION: Fluoroquinolones can prolong the QT interval, increasing the risk of torsades de pointes, particularly in patients with pre-existing cardiac disease, electrolyte imbalances, or concomitant use of other QT-prolonging drugs.\n3. CENTRAL NERVOUS SYSTEM TOXICITY: Fluoroquinolones may cause dizziness, headache, confusion, hallucinations, or seizures due to their ability to cross the blood-brain barrier and antagonize GABA receptors."
+            },
+            {
+              "stem": "a) Explain the mechanism of action of sulfonamides. (2 marks)\nb) Outline three adverse effects of sulfonamides. (3 marks)\nc) Identify one clinical scenario where sulfonamides are used in combination with another agent, and explain the rationale for the combination. (2 marks)",
+              "modelAnswer": "a) Mechanism of action of sulfonamides (2 marks):\nSulfonamides are structural analogues of para-aminobenzoic acid (PABA). They competitively inhibit dihydropteroate synthase, the enzyme that incorporates PABA into dihydropteroic acid, blocking bacterial folate synthesis. Since folate is essential for nucleotide and DNA synthesis, bacterial growth is inhibited (bacteriostatic effect). Mammalian cells use preformed dietary folate and are unaffected.\n\nb) Three adverse effects of sulfonamides (3 marks):\n1. HYPERSENSITIVITY REACTIONS: Rash, Stevens-Johnson syndrome/toxic epidermal necrolysis, drug fever, and anaphylaxis.\n2. CRYSTALLURIA AND RENAL DAMAGE: Sulfonamides are poorly soluble and may precipitate in acidic urine, causing crystalluria, hematuria, and acute kidney injury. Prevention includes maintaining hydration and alkalinizing urine.\n3. KERNICTERUS IN NEONATES: Sulfonamides displace bilirubin from albumin, increasing the risk of bilirubin encephalopathy (kernicterus) in neonates, particularly premature infants. They are contraindicated in pregnancy near term and in neonates.\n\nc) Clinical scenario and rationale for combination (2 marks):\nTrimethoprim-sulfamethoxazole (TMP-SMX) is used in the treatment and prophylaxis of Pneumocystis jirovecii pneumonia (PCP) in immunocompromised patients (e.g., HIV/AIDS). The combination provides sequential blockade of folate synthesis: sulfonamides inhibit dihydropteroate synthase, and trimethoprim inhibits dihydrofolate reductase. This dual blockade enhances efficacy and reduces the risk of resistance."
+            },
+            {
+              "stem": "a) Explain the mechanism of action of aminoglycosides. (2 marks)\nb) Outline three adverse effects of aminoglycosides. (3 marks)\nc) Identify one clinical scenario where aminoglycosides are used in combination with another agent, and explain the rationale for the combination. (2 marks)",
+              "modelAnswer": "a) Mechanism of action of aminoglycosides (2 marks):\nAminoglycosides irreversibly bind to the 30S ribosomal subunit, causing:\n1. Misreading of mRNA, leading to incorporation of incorrect amino acids and production of non-functional proteins.\n2. Inhibition of the initiation complex, preventing protein synthesis.\n3. Disruption of the bacterial cell membrane, enhancing bactericidal activity.\nAminoglycosides are bactericidal and require oxygen-dependent active transport into the bacterial cell (hence inactive against anaerobes).\n\nb) Three adverse effects of aminoglycosides (3 marks):\n1. OTOTOXICITY: Cochlear damage (hearing loss, tinnitus) and vestibular damage (vertigo, ataxia) due to accumulation in the inner ear. Risk factors include prolonged therapy, high doses, and renal impairment.\n2. NEPHROTOXICITY: Acute tubular necrosis due to accumulation in proximal renal tubular cells. Risk factors include prolonged therapy, high doses, and pre-existing renal disease. Reversible if detected early.\n3. NEUROMUSCULAR BLOCKADE: Inhibition of acetylcholine release at the neuromuscular junction, leading to weakness or respiratory paralysis. Risk factors include rapid intravenous administration and concomitant use of neuromuscular blockers.\n\nc) Clinical scenario and rationale for combination (2 marks):\nAminoglycosides (e.g., gentamicin) are used in combination with a beta-lactam (e.g., penicillin or ampicillin) for the treatment of enterococcal endocarditis. The beta-lactam damages the bacterial cell wall, enhancing the uptake of the aminoglycoside, which then inhibits protein synthesis. This combination provides synergistic bactericidal activity against enterococci."
+            },
+            {
+              "stem": "a) Explain the mechanism of action of azoles (e.g., fluconazole). (2 marks)\nb) Outline three adverse effects of azoles. (3 marks)\nc) Identify one clinical scenario where azoles are used in combination with another agent, and explain the rationale for the combination. (2 marks)",
+              "modelAnswer": "a) Mechanism of action of azoles (2 marks):\nAzoles (e.g., fluconazole, itraconazole) inhibit the fungal cytochrome P450-dependent enzyme lanosterol 14-alpha-demethylase (CYP51), which is essential for the synthesis of ergosterol, a key component of the fungal cell membrane. This inhibition disrupts membrane integrity, increases permeability, and leads to fungal cell death (fungistatic or fungicidal depending on the agent and concentration).\n\nb) Three adverse effects of azoles (3 marks):\n1. HEPATOTOXICITY: Azoles can cause elevated liver enzymes and, rarely, fulminant hepatic failure due to their metabolism by the liver and potential for drug-induced liver injury.\n2. QT PROLONGATION: Azoles (particularly itraconazole and voriconazole) can prolong the QT interval, increasing the risk of torsades de pointes, particularly in patients with pre-existing cardiac disease or electrolyte imbalances.\n3. DRUG INTERACTIONS: Azoles are potent inhibitors of CYP3A4 and other cytochrome P450 enzymes, leading to increased plasma levels and toxicity of many drugs (e.g., warfarin, statins, cyclosporine).\n\nc) Clinical scenario and rationale for combination (2 marks):\nFluconazole is often used in combination with flucytosine for the treatment of cryptococcal meningitis, particularly in HIV-infected patients. Flucytosine is converted to 5-fluorouracil within fungal cells, inhibiting DNA and RNA synthesis. The combination provides synergistic activity, reduces the risk of resistance, and allows for lower doses of flucytosine, minimizing its bone marrow toxicity."
+            },
+            {
+              "stem": "You are reviewing the microbiology results of a patient with a urinary tract infection. The isolate is identified as extended-spectrum beta-lactamase (ESBL)-producing Escherichia coli. \na) Define ESBL and explain how it confers resistance to beta-lactam antibiotics. (2 marks)\nb) Outline three antibiotics that are likely to be effective against ESBL-producing organisms. (3 marks)\nc) Describe one strategy to prevent the spread of ESBL-producing organisms in a hospital setting. (2 marks)",
+              "modelAnswer": "a) Definition and mechanism of ESBL (2 marks):\nExtended-spectrum beta-lactamases (ESBLs) are enzymes produced by certain gram-negative bacteria (e.g., Escherichia coli, Klebsiella pneumoniae) that hydrolyze and inactivate a wide range of beta-lactam antibiotics, including third-generation cephalosporins (e.g., ceftriaxone, cefotaxime) and monobactams (e.g., aztreonam). ESBLs are typically plasmid-mediated and can be inhibited by beta-lactamase inhibitors such as clavulanate, sulbactam, or tazobactam.\n\nb) Three antibiotics effective against ESBL-producing organisms (3 marks):\n1. CARBAPENEMS (e.g., meropenem, imipenem): Highly stable to ESBL hydrolysis and provide broad-spectrum activity against gram-negative organisms.\n2. CEPHAMYCINS (e.g., cefoxitin, cefotetan): Less susceptible to hydrolysis by ESBLs due to their unique structure.\n3. AMINOGLYCOSIDES (e.g., gentamicin, amikacin): Provide alternative coverage, though resistance may develop with prolonged use.\n\nc) Strategy to prevent spread of ESBL-producing organisms (2 marks):\nIMPLEMENT INFECTION CONTROL MEASURES:\n- Strict hand hygiene (alcohol-based hand rub or soap and water) before and after patient contact.\n- Contact precautions (e.g., gloves, gowns) for colonized or infected patients.\n- Environmental cleaning and disinfection of high-touch surfaces.\n- Active surveillance cultures to identify and isolate colonized patients.\n- Antimicrobial stewardship to reduce unnecessary use of broad-spectrum antibiotics, which drive resistance."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Discuss the fluoroquinolone antibiotics under the following sub-topics: (15 marks)\na) Mechanism of action (3 marks)\nb) Spectrum of antimicrobial activity (3 marks)\nc) Pharmacokinetics (3 marks)\nd) Clinical uses (3 marks)\ne) Adverse effects and contraindications (3 marks)",
+              "modelAnswer": "FLUOROQUINOLONES: COMPREHENSIVE DISCUSSION\n\na) MECHANISM OF ACTION (3 marks):\nFluoroquinolones are bactericidal antibiotics that inhibit bacterial DNA synthesis by targeting two essential enzymes:\n1. DNA GYRASE (topoisomerase II): Inhibits the supercoiling of bacterial DNA, which is essential for DNA replication, transcription, and repair.\n2. TOPOISOMERASE IV: Inhibits the decatenation of daughter DNA strands during cell division, leading to DNA fragmentation and cell death.\nFluoroquinolones bind to the enzyme-DNA complex, stabilizing it and preventing the relegation of DNA breaks. This results in bacterial cell death due to the accumulation of DNA damage.\n\nb) SPECTRUM OF ANTIMICROBIAL ACTIVITY (3 marks):\nFluoroquinolones have a broad spectrum of activity against both gram-negative and gram-positive bacteria, with variable activity depending on the specific agent:\n- EXCELLENT GRAM-NEGATIVE COVERAGE: Includes Enterobacteriaceae (E. coli, Klebsiella, Proteus), Haemophilus influenzae, Neisseria gonorrhoeae, Moraxella catarrhalis, and Pseudomonas aeruginosa (e.g., ciprofloxacin, levofloxacin).\n- MODERATE GRAM-POSITIVE COVERAGE: Includes Streptococcus pneumoniae (e.g., levofloxacin, moxifloxacin), Staphylococcus aureus (including some MRSA strains), and Enterococcus faecalis.\n- ATYPICAL PATHOGENS: Active against Chlamydia trachomatis, Mycoplasma pneumoniae, and Legionella pneumophila.\n- ANAEROBIC COVERAGE: Limited to moxifloxacin, which has activity against some anaerobes (e.g., Bacteroides fragilis).\n\nc) PHARMACOKINETICS (3 marks):\nFluoroquinolones are well absorbed orally (bioavailability >90%) and achieve high plasma and tissue concentrations. Key pharmacokinetic properties include:\n1. DISTRIBUTION: Excellent tissue penetration, including lungs, skin, bone, and prostate. Moxifloxacin achieves high concentrations in the cerebrospinal fluid (CSF), while ciprofloxacin and levofloxacin have moderate CSF penetration.\n2. METABOLISM: Primarily hepatic metabolism via CYP450 enzymes (e.g., CYP1A2, CYP3A4), with variable renal and fecal elimination. Moxifloxacin is predominantly metabolized and excreted via the biliary route, while ciprofloxacin and levofloxacin are renally eliminated.\n3. HALF-LIFE: Varies by agent (e.g., ciprofloxacin 3–5 hours, levofloxacin 6–8 hours, moxifloxacin 12 hours), allowing once- or twice-daily dosing.\n4. FOOD EFFECT: Absorption is not significantly affected by food, though divalent cations (e.g., calcium, magnesium) can chelate fluoroquinolones and reduce absorption.\n\nd) CLINICAL USES (3 marks):\nFluoroquinolones are used for a variety of infections, including:\n1. URINARY TRACT INFECTIONS (UTIs): Ciprofloxacin or levofloxacin for complicated UTIs or pyelonephritis, particularly when caused by resistant organisms.\n2. RESPIRATORY TRACT INFECTIONS: Levofloxacin or moxifloxacin for community-acquired pneumonia (CAP), including penicillin-resistant S. pneumoniae, and healthcare-associated pneumonia.\n3. GASTROINTESTINAL INFECTIONS: Ciprofloxacin for traveler's diarrhea (e.g., caused by E. coli, Salmonella, Shigella) and typhoid fever.\n4. SKIN AND SOFT TISSUE INFECTIONS: Ciprofloxacin or levofloxacin for complicated skin infections, including those caused by Pseudomonas aeruginosa.\n5. BONE AND JOINT INFECTIONS: Ciprofloxacin or levofloxacin for osteomyelitis or septic arthritis, particularly when caused by gram-negative organisms.\n6. SEXUALLY TRANSMITTED INFECTIONS (STIs): Ciprofloxacin or ofloxacin for gonorrhea (though resistance is increasing, and ceftriaxone is now preferred).\n7. PROPHYLAXIS: Ciprofloxacin for neutropenic fever prophylaxis in high-risk patients.\n\ne) ADVERSE EFFECTS AND CONTRAINDICATIONS (3 marks):\nADVERSE EFFECTS:\n1. TENDON RUPTURE: Increased risk of Achilles tendon rupture, particularly in older adults, patients on corticosteroids, or those with renal impairment. Mechanism involves disruption of collagen synthesis and matrix metalloproteinase activation.\n2. QT PROLONGATION: Fluoroquinolones can prolong the QT interval, increasing the risk of torsades de pointes. Risk factors include pre-existing cardiac disease, electrolyte imbalances (e.g., hypokalemia), and concomitant use of other QT-prolonging drugs.\n3. CENTRAL NERVOUS SYSTEM (CNS) TOXICITY: May cause dizziness, headache, confusion, hallucinations, or seizures due to antagonism of GABA receptors and ability to cross the blood-brain barrier.\n4. PERIPHERAL NEUROPATHY: Rare but potentially irreversible peripheral neuropathy, particularly with prolonged or high-dose therapy.\n5. PHOTOSENSITIVITY: Increased risk of sunburn or skin rashes upon exposure to ultraviolet light.\n6. CLOSTRIDIOIDES DIFFICILE-ASSOCIATED DIARRHEA: Disruption of gut microbiota can lead to C. difficile overgrowth and colitis.\n\nCONTRAINDICATIONS:\n1. PREGNANCY: Fluoroquinolones are contraindicated in pregnancy due to potential fetal toxicity (e.g., arthropathy, CNS effects).\n2. PEDIATRIC PATIENTS: Generally avoided in children and adolescents due to potential for cartilage damage and arthropathy (though exceptions exist for life-threatening infections).\n3. PATIENTS WITH A HISTORY OF TENDON RUPTURE OR MYASTHENIA GRAVIS: Fluoroquinolones may exacerbate these conditions.\n4. PATIENTS WITH QT PROLONGATION OR UNCORRECTED ELECTROLYTE IMBALANCES: Increased risk of torsades de pointes."
+            },
+            {
+              "stem": "A 45-year-old male presents to the emergency department with a 3-day history of fever, cough productive of rust-colored sputum, and pleuritic chest pain. Chest X-ray reveals a right middle lobe consolidation. Sputum Gram stain shows gram-positive diplococci in pairs. The patient has no known drug allergies but reports a history of hypertension and type 2 diabetes mellitus. \na) Based on the clinical presentation, identify the most likely causative organism. (1 mark)\nb) Outline the mechanism of action of the drug class most appropriate for empiric therapy. (3 marks)\nc) Describe the spectrum of activity of the chosen drug class. (3 marks)\nd) Discuss the pharmacokinetics of the chosen drug class. (3 marks)\ne) Outline three adverse effects of the chosen drug class and how you would monitor for them. (5 marks)",
+              "modelAnswer": "CASE DISCUSSION: COMMUNITY-ACQUIRED PNEUMONIA (CAP) DUE TO STREPTOCOCCUS PNEUMONIAE\n\na) Most likely causative organism (1 mark):\nStreptococcus pneumoniae (gram-positive diplococci in pairs on sputum Gram stain, rust-colored sputum, and lobar consolidation are classic for pneumococcal pneumonia).\n\nb) Mechanism of action of the drug class (3 marks):\nPENICILLINS (e.g., benzylpenicillin, amoxicillin):\n- BIND TO PENICILLIN-BINDING PROTEINS (PBPs): Penicillins bind to PBPs (transpeptidases) in the bacterial cell wall, inhibiting the cross-linking of peptidoglycan strands.\n- BLOCK CELL WALL SYNTHESIS: This inhibition disrupts cell wall integrity, leading to bacterial cell lysis and death (bactericidal effect).\n- REQUIRE ACTIVELY DIVIDING BACTERIA: Penicillins are only active against bacteria that are actively synthesizing cell walls.\n\nc) Spectrum of activity of penicillins (3 marks):\n- GRAM-POSITIVE COVERAGE: Excellent activity against Streptococcus pneumoniae, Streptococcus pyogenes (group A Streptococcus), and non-penicillinase-producing Staphylococcus aureus. Moderate activity against Enterococcus faecalis.\n- GRAM-NEGATIVE COVERAGE: Limited to Neisseria meningitidis, Neisseria gonorrhoeae, and some strains of Haemophilus influenzae (amoxicillin has better gram-negative coverage than benzylpenicillin).\n- ANAEROBIC COVERAGE: Active against some anaerobes (e.g., Peptostreptococcus, Clostridium species) but not Bacteroides fragilis.\n- SPIROCHETES: Active against Treponema pallidum (syphilis) and Leptospira species.\n- NOT ACTIVE AGAINST: Methicillin-resistant Staphylococcus aureus (MRSA), Pseudomonas aeruginosa, most Enterobacteriaceae, and beta-lactamase-producing organisms (unless combined with a beta-lactamase inhibitor).\n\nd) Pharmacokinetics of penicillins (3 marks):\n- ABSORPTION: Benzylpenicillin has poor oral bioavailability and is typically administered parenterally (IV or IM). Amoxicillin is acid-stable and well absorbed orally (bioavailability ~70–90%).\n- DISTRIBUTION: Penicillins achieve good tissue penetration, including lungs, skin, and joints. Benzylpenicillin achieves high concentrations in the cerebrospinal fluid (CSF) during meningeal inflammation but poor penetration without inflammation. Amoxicillin has moderate CSF penetration.\n- METABOLISM: Minimal hepatic metabolism; primarily eliminated unchanged by the kidneys via tubular secretion.\n- HALF-LIFE: Short half-life (e.g., benzylpenicillin 30–60 minutes, amoxicillin 1–2 hours), requiring frequent dosing or extended-release formulations.\n- ELIMINATION: Primarily renal excretion; dose adjustment is required in patients with renal impairment to avoid accumulation and toxicity.\n\ne) Adverse effects and monitoring (5 marks):\nTHREE ADVERSE EFFECTS OF PENICILLINS:\n1. HYPERSENSITIVITY REACTIONS:\n   - RANGE: From mild rash to anaphylaxis (IgE-mediated immediate hypersensitivity).\n   - MONITORING: Assess for signs of allergic reactions (e.g., rash, urticaria, angioedema, bronchospasm, hypotension) during and after administration. Ensure emergency medications (e.g., epinephrine, antihistamines, corticosteroids) are available for anaphylaxis management.\n   - PREVENTION: Obtain a detailed drug allergy history before administration. Consider skin testing or desensitization in patients with a history of penicillin allergy if no alternatives are available.\n\n2. GASTROINTESTINAL TOXICITY:\n   - MANIFESTATIONS: Nausea, vomiting, diarrhea, and Clostridioides difficile-associated diarrhea (CDAD).\n   - MONITORING: Monitor for signs of gastrointestinal upset (e.g., abdominal pain, diarrhea) during therapy. Educate patients about the importance of hand hygiene and avoiding unnecessary antibiotic use to reduce the risk of CDAD.\n   - PREVENTION: Administer penicillins with food to reduce gastrointestinal irritation. Consider probiotics for patients at high risk of CDAD.\n\n3. ELECTROLYTE IMBALANCES (HIGH-DOSE PENICILLINS):\n   - MANIFESTATIONS: Hyperkalemia and metabolic alkalosis due to the potassium salt formulation of high-dose benzylpenicillin (e.g., penicillin G potassium).\n   - MONITORING: Monitor serum potassium and acid-base status in patients receiving high-dose penicillin therapy, particularly those with renal impairment.\n   - PREVENTION: Use penicillin sodium salts (e.g., penicillin G sodium) in patients with hyperkalemia risk. Adjust dosing in renal impairment to avoid accumulation.\n\nADDITIONAL MONITORING:\n- RENAL FUNCTION: Monitor serum creatinine and estimated glomerular filtration rate (eGFR) in patients with renal impairment or those receiving high-dose therapy.\n- HEPATIC FUNCTION: Monitor liver enzymes in patients with pre-existing liver disease or those receiving prolonged therapy.\n- HEMATOLOGIC PARAMETERS: Monitor complete blood count (CBC) in patients receiving prolonged therapy to assess for neutropenia or other hematologic toxicities."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Chemotherapeutic Agents",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 32-year-old male presents with acute bacterial meningitis. The isolate is confirmed as Neisseria meningitidis. Which of the following antibiotics provides optimal bactericidal activity against this organism with excellent CSF penetration?",
+              "options": [
+                "Ceftriaxone",
+                "Clindamycin",
+                "Doxycycline",
+                "Vancomycin"
+              ],
+              "answer": "Ceftriaxone",
+              "explanation": "Ceftriaxone achieves high CSF concentrations, is bactericidal against N. meningitidis, and is the drug of choice for empiric and targeted therapy of bacterial meningitis. Clindamycin and doxycycline have poor CSF penetration; vancomycin is reserved for gram-positive coverage."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of macrolides is correct?",
+              "options": [
+                "Bind to the 30S ribosomal subunit and inhibit protein synthesis",
+                "Inhibit bacterial DNA gyrase and topoisomerase IV",
+                "Bind to the 50S ribosomal subunit and inhibit translocation of the peptidyl-tRNA",
+                "Inhibit bacterial cell wall synthesis by binding penicillin-binding proteins"
+              ],
+              "answer": "Bind to the 50S ribosomal subunit and inhibit translocation of the peptidyl-tRNA",
+              "explanation": "Macrolides bind the 50S ribosomal subunit and inhibit translocation of the peptidyl-tRNA from the A site to the P site, blocking protein synthesis. They do not bind 30S, inhibit DNA gyrase, or affect cell wall synthesis."
+            },
+            {
+              "stem": "A 68-year-old woman with chronic obstructive pulmonary disease (COPD) exacerbation is started on azithromycin. Which of the following adverse effects is most likely to occur with prolonged use of azithromycin in this patient?",
+              "options": [
+                "Ototoxicity",
+                "QT prolongation and torsades de pointes",
+                "Red man syndrome",
+                "Grey baby syndrome"
+              ],
+              "answer": "QT prolongation and torsades de pointes",
+              "explanation": "Azithromycin can prolong the QT interval and, in susceptible patients (e.g., elderly with electrolyte disturbances or on other QT-prolonging drugs), may precipitate torsades de pointes. Ototoxicity is more typical of aminoglycosides; red man syndrome is associated with vancomycin; grey baby syndrome is caused by chloramphenicol."
+            },
+            {
+              "stem": "Which of the following antibiotics is most likely to cause photosensitivity reactions?",
+              "options": [
+                "Gentamicin",
+                "Doxycycline",
+                "Vancomycin",
+                "Ceftriaxone"
+              ],
+              "answer": "Doxycycline",
+              "explanation": "Tetracyclines, particularly doxycycline, are associated with photosensitivity reactions due to their ability to absorb UV light and generate reactive oxygen species. Gentamicin, vancomycin, and ceftriaxone are not known to cause photosensitivity."
+            },
+            {
+              "stem": "A 45-year-old male with a history of intravenous drug use presents with infective endocarditis. Blood cultures grow methicillin-resistant Staphylococcus aureus (MRSA). Which of the following antibiotics is the drug of choice for this infection?",
+              "options": [
+                "Ceftriaxone",
+                "Vancomycin",
+                "Ciprofloxacin",
+                "Amoxicillin-clavulanate"
+              ],
+              "answer": "Vancomycin",
+              "explanation": "Vancomycin is the drug of choice for MRSA infective endocarditis. Ceftriaxone is not active against MRSA; ciprofloxacin has limited gram-positive coverage and resistance issues; amoxicillin-clavulanate is not active against MRSA."
+            },
+            {
+              "stem": "Which of the following statements about the pharmacokinetics of aminoglycosides is true?",
+              "options": [
+                "They are well absorbed orally and achieve high serum levels",
+                "They are primarily eliminated via hepatic metabolism",
+                "They exhibit concentration-dependent bactericidal activity and post-antibiotic effect",
+                "They are safe to use in patients with renal impairment without dose adjustment"
+              ],
+              "answer": "They exhibit concentration-dependent bactericidal activity and post-antibiotic effect",
+              "explanation": "Aminoglycosides exhibit concentration-dependent bactericidal activity and a prolonged post-antibiotic effect. They are poorly absorbed orally, primarily eliminated renally (not hepatic metabolism), and require dose adjustment in renal impairment."
+            },
+            {
+              "stem": "A 28-year-old female with a urinary tract infection is prescribed ciprofloxacin. Which of the following patient factors is most likely to increase the risk of tendon rupture associated with fluoroquinolone use?",
+              "options": [
+                "Age under 18 years",
+                "Concurrent use of warfarin",
+                "History of renal impairment",
+                "Concurrent use of corticosteroids"
+              ],
+              "answer": "Concurrent use of corticosteroids",
+              "explanation": "Concurrent use of corticosteroids significantly increases the risk of fluoroquinolone-induced tendon rupture (e.g., Achilles tendon). Age under 18 is a relative contraindication due to potential cartilage toxicity; renal impairment requires dose adjustment; warfarin interaction is unrelated to tendon toxicity."
+            },
+            {
+              "stem": "Which of the following antifungals inhibits the synthesis of ergosterol in the fungal cell membrane by targeting the enzyme 14-alpha-demethylase?",
+              "options": [
+                "Amphotericin B",
+                "Caspofungin",
+                "Fluconazole",
+                "Nystatin"
+              ],
+              "answer": "Fluconazole",
+              "explanation": "Fluconazole is an azole antifungal that inhibits 14-alpha-demethylase, an enzyme in the ergosterol synthesis pathway, leading to disruption of the fungal cell membrane. Amphotericin B binds ergosterol directly; caspofungin inhibits beta-glucan synthase; nystatin also binds ergosterol."
+            },
+            {
+              "stem": "A 50-year-old male with HIV infection presents with a CD4 count of 50 cells/mm³ and symptoms of cryptococcal meningitis. Which of the following antifungals is the initial induction therapy for this condition?",
+              "options": [
+                "Fluconazole",
+                "Amphotericin B plus flucytosine",
+                "Caspofungin",
+                "Itraconazole"
+              ],
+              "answer": "Amphotericin B plus flucytosine",
+              "explanation": "The initial induction therapy for cryptococcal meningitis in HIV-infected patients is amphotericin B (liposomal formulation preferred) combined with flucytosine. Fluconazole is used for consolidation and maintenance; caspofungin and itraconazole are not first-line for induction."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of acyclovir is correct?",
+              "options": [
+                "Inhibits viral DNA polymerase by binding to the viral RNA-dependent RNA polymerase",
+                "Inhibits viral replication by blocking viral entry into host cells",
+                "Inhibits viral DNA synthesis by incorporating into viral DNA and causing chain termination",
+                "Inhibits viral protein synthesis by binding to the 50S ribosomal subunit"
+              ],
+              "answer": "Inhibits viral DNA synthesis by incorporating into viral DNA and causing chain termination",
+              "explanation": "Acyclovir is a guanosine analogue that is phosphorylated by viral thymidine kinase and host kinases to acyclovir triphosphate. It inhibits viral DNA polymerase and is incorporated into viral DNA, causing chain termination. It does not inhibit RNA polymerase, block viral entry, or affect protein synthesis."
+            },
+            {
+              "stem": "A 30-year-old male presents with a 3-day history of fever, chills, and myalgia after returning from a malaria-endemic region. Rapid diagnostic tests confirm Plasmodium falciparum malaria. Which of the following is the recommended first-line treatment for uncomplicated P. falciparum malaria in Kenya?",
+              "options": [
+                "Chloroquine",
+                "Artemether-lumefantrine",
+                "Quinine",
+                "Doxycycline"
+              ],
+              "answer": "Artemether-lumefantrine",
+              "explanation": "Artemether-lumefantrine is the recommended first-line treatment for uncomplicated P. falciparum malaria in Kenya due to widespread chloroquine resistance. Chloroquine is no longer effective; quinine is reserved for severe malaria or when artemisinin-based combinations are unavailable; doxycycline is used for chemoprophylaxis or in combination for severe malaria."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of beta-lactam antibiotics is correct?",
+              "options": [
+                "Inhibit bacterial protein synthesis by binding to the 50S ribosomal subunit",
+                "Inhibit bacterial cell wall synthesis by binding to penicillin-binding proteins",
+                "Inhibit bacterial DNA gyrase and topoisomerase IV",
+                "Inhibit bacterial folate synthesis by competing with para-aminobenzoic acid"
+              ],
+              "answer": "Inhibit bacterial cell wall synthesis by binding to penicillin-binding proteins",
+              "explanation": "Beta-lactam antibiotics inhibit bacterial cell wall synthesis by binding to penicillin-binding proteins (PBPs), which are transpeptidases involved in cross-linking peptidoglycan chains. They do not inhibit protein synthesis, DNA gyrase, or folate synthesis."
+            },
+            {
+              "stem": "A 60-year-old female with a history of penicillin allergy (anaphylaxis) requires treatment for a severe gram-negative infection. Which of the following antibiotics is the safest choice?",
+              "options": [
+                "Ceftriaxone",
+                "Aztreonam",
+                "Imipenem",
+                "Ciprofloxacin"
+              ],
+              "answer": "Aztreonam",
+              "explanation": "Aztreonam is a monobactam with activity against gram-negative bacteria and no cross-reactivity with penicillins, making it safe for patients with a history of anaphylaxis to penicillin. Ceftriaxone and imipenem are beta-lactams with potential cross-reactivity; ciprofloxacin is a fluoroquinolone with a different mechanism."
+            },
+            {
+              "stem": "Which of the following antibiotics is most likely to cause Clostridium difficile-associated diarrhea?",
+              "options": [
+                "Vancomycin",
+                "Metronidazole",
+                "Clindamycin",
+                "Gentamicin"
+              ],
+              "answer": "Clindamycin",
+              "explanation": "Clindamycin is one of the antibiotics most strongly associated with Clostridium difficile-associated diarrhea due to its broad anaerobic spectrum and disruption of the gut microbiota. Vancomycin and metronidazole are used to treat C. difficile infection; gentamicin has minimal anaerobic activity."
+            },
+            {
+              "stem": "A 25-year-old female with a history of recurrent urinary tract infections is prescribed nitrofurantoin for prophylaxis. Which of the following adverse effects is most commonly associated with nitrofurantoin?",
+              "options": [
+                "Hepatotoxicity",
+                "Pulmonary toxicity",
+                "Nephrotoxicity",
+                "Ototoxicity"
+              ],
+              "answer": "Pulmonary toxicity",
+              "explanation": "Nitrofurantoin can cause acute and chronic pulmonary toxicity, including interstitial lung disease and pulmonary fibrosis. Hepatotoxicity, nephrotoxicity, and ototoxicity are not typical adverse effects of nitrofurantoin."
+            },
+            {
+              "stem": "Which of the following statements about the pharmacokinetics of doxycycline is correct?",
+              "options": [
+                "It is primarily excreted unchanged in the urine",
+                "It is not affected by food intake",
+                "It has excellent CSF penetration",
+                "It is contraindicated in patients with renal impairment"
+              ],
+              "answer": "It is not affected by food intake",
+              "explanation": "Doxycycline is a lipophilic tetracycline that is well absorbed orally and is minimally affected by food intake. It is primarily excreted via the feces (not urine), has poor CSF penetration, and is safe in renal impairment (hepatic elimination)."
+            },
+            {
+              "stem": "A 40-year-old male with a prosthetic heart valve develops infective endocarditis. Blood cultures grow Enterococcus faecalis. Which of the following antibiotic combinations is the recommended therapy for this infection?",
+              "options": [
+                "Vancomycin alone",
+                "Ampicillin plus gentamicin",
+                "Ceftriaxone alone",
+                "Ciprofloxacin plus metronidazole"
+              ],
+              "answer": "Ampicillin plus gentamicin",
+              "explanation": "Enterococcus faecalis endocarditis is treated with a combination of ampicillin (or penicillin G) plus gentamicin to achieve synergistic bactericidal activity. Vancomycin is used for penicillin-allergic patients; ceftriaxone and ciprofloxacin are not first-line for enterococcal endocarditis."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of vancomycin is correct?",
+              "options": [
+                "Inhibits bacterial cell wall synthesis by binding to D-alanyl-D-alanine residues in peptidoglycan precursors",
+                "Inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit",
+                "Inhibits bacterial DNA gyrase and topoisomerase IV",
+                "Inhibits bacterial folate synthesis by competing with para-aminobenzoic acid"
+              ],
+              "answer": "Inhibits bacterial cell wall synthesis by binding to D-alanyl-D-alanine residues in peptidoglycan precursors",
+              "explanation": "Vancomycin inhibits bacterial cell wall synthesis by binding to the D-alanyl-D-alanine residues in peptidoglycan precursors, preventing cross-linking and polymerization. It does not inhibit protein synthesis, DNA gyrase, or folate synthesis."
+            },
+            {
+              "stem": "A 55-year-old male with a history of chronic kidney disease (eGFR 30 mL/min/1.73m²) presents with pneumonia. Which of the following antibiotics requires dose adjustment in this patient?",
+              "options": [
+                "Azithromycin",
+                "Ceftriaxone",
+                "Gentamicin",
+                "Doxycycline"
+              ],
+              "answer": "Gentamicin",
+              "explanation": "Gentamicin is primarily eliminated renally and requires dose adjustment in patients with renal impairment to avoid accumulation and toxicity (nephrotoxicity, ototoxicity). Azithromycin, ceftriaxone, and doxycycline are primarily eliminated via non-renal routes and do not require dose adjustment in renal impairment."
+            },
+            {
+              "stem": "Which of the following antibiotics is a narrow-spectrum agent with activity primarily against gram-positive bacteria, including methicillin-resistant Staphylococcus aureus (MRSA)?",
+              "options": [
+                "Ceftazidime",
+                "Vancomycin",
+                "Ciprofloxacin",
+                "Amoxicillin-clavulanate"
+              ],
+              "answer": "Vancomycin",
+              "explanation": "Vancomycin is a narrow-spectrum glycopeptide antibiotic with activity primarily against gram-positive bacteria, including MRSA. Ceftazidime is a broad-spectrum antipseudomonal cephalosporin; ciprofloxacin is a broad-spectrum fluoroquinolone; amoxicillin-clavulanate is a broad-spectrum penicillin."
+            },
+            {
+              "stem": "A 35-year-old female with a history of epilepsy is prescribed ciprofloxacin for a urinary tract infection. Which of the following drug interactions is most likely to occur?",
+              "options": [
+                "Increased plasma levels of phenytoin",
+                "Decreased plasma levels of warfarin",
+                "Increased plasma levels of caffeine",
+                "Decreased plasma levels of oral contraceptives"
+              ],
+              "answer": "Increased plasma levels of caffeine",
+              "explanation": "Ciprofloxacin inhibits CYP1A2, which metabolizes caffeine, leading to increased plasma levels of caffeine and potential adverse effects (e.g., tachycardia, tremor). It does not significantly interact with phenytoin, warfarin, or oral contraceptives."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of fluoroquinolones is correct?",
+              "options": [
+                "Inhibit bacterial cell wall synthesis by binding to penicillin-binding proteins",
+                "Inhibit bacterial DNA gyrase and topoisomerase IV, leading to DNA fragmentation",
+                "Inhibit bacterial protein synthesis by binding to the 30S ribosomal subunit",
+                "Inhibit bacterial folate synthesis by competing with para-aminobenzoic acid"
+              ],
+              "answer": "Inhibit bacterial DNA gyrase and topoisomerase IV, leading to DNA fragmentation",
+              "explanation": "Fluoroquinolones inhibit bacterial DNA gyrase and topoisomerase IV, enzymes essential for DNA replication and transcription, leading to DNA fragmentation and bacterial cell death. They do not inhibit cell wall synthesis, protein synthesis, or folate synthesis."
+            },
+            {
+              "stem": "A 22-year-old female with a history of recurrent genital herpes is prescribed valacyclovir. Which of the following statements about valacyclovir is correct?",
+              "options": [
+                "It is a prodrug of acyclovir with improved oral bioavailability",
+                "It inhibits viral reverse transcriptase",
+                "It is active against hepatitis B virus",
+                "It is contraindicated in pregnancy"
+              ],
+              "answer": "It is a prodrug of acyclovir with improved oral bioavailability",
+              "explanation": "Valacyclovir is the L-valyl ester prodrug of acyclovir, designed to improve oral bioavailability. It is converted to acyclovir after absorption. It does not inhibit reverse transcriptase, is not active against hepatitis B, and is considered safe in pregnancy."
+            },
+            {
+              "stem": "Which of the following antibiotics is most likely to cause ototoxicity?",
+              "options": [
+                "Ceftriaxone",
+                "Gentamicin",
+                "Azithromycin",
+                "Doxycycline"
+              ],
+              "answer": "Gentamicin",
+              "explanation": "Gentamicin is an aminoglycoside associated with ototoxicity (cochlear and vestibular toxicity), which can be irreversible. Ceftriaxone, azithromycin, and doxycycline are not typically associated with ototoxicity."
+            },
+            {
+              "stem": "A 65-year-old male with a history of type 2 diabetes and chronic kidney disease presents with a severe soft tissue infection. The isolate is confirmed as methicillin-resistant Staphylococcus aureus (MRSA). Which of the following antibiotics is the most appropriate choice for this patient?",
+              "options": [
+                "Ceftriaxone",
+                "Vancomycin",
+                "Ciprofloxacin",
+                "Amoxicillin-clavulanate"
+              ],
+              "answer": "Vancomycin",
+              "explanation": "Vancomycin is the drug of choice for MRSA soft tissue infections, particularly in patients with renal impairment where dose adjustment is feasible. Ceftriaxone and amoxicillin-clavulanate are not active against MRSA; ciprofloxacin has limited gram-positive coverage and resistance issues."
+            },
+            {
+              "stem": "Which of the following statements about the pharmacokinetics of metronidazole is correct?",
+              "options": [
+                "It is primarily excreted unchanged in the urine",
+                "It has poor oral bioavailability",
+                "It achieves high concentrations in the CSF",
+                "It is contraindicated in patients with hepatic impairment"
+              ],
+              "answer": "It achieves high concentrations in the CSF",
+              "explanation": "Metronidazole achieves high concentrations in the CSF, making it useful for central nervous system infections. It is well absorbed orally, primarily metabolized hepatically (not excreted unchanged in urine), and is not contraindicated in hepatic impairment (dose adjustment may be required)."
+            },
+            {
+              "stem": "A 45-year-old male with a history of intravenous drug use presents with infective endocarditis. Blood cultures grow methicillin-sensitive Staphylococcus aureus (MSSA). Which of the following antibiotics is the drug of choice for this infection?",
+              "options": [
+                "Vancomycin",
+                "Ceftriaxone",
+                "Flucloxacillin",
+                "Ciprofloxacin"
+              ],
+              "answer": "Flucloxacillin",
+              "explanation": "Flucloxacillin is the drug of choice for MSSA infective endocarditis due to its excellent activity against penicillinase-producing staphylococci. Vancomycin is reserved for MRSA; ceftriaxone and ciprofloxacin are not first-line for MSSA endocarditis."
+            },
+            {
+              "stem": "Which of the following antibiotics is a carbapenem with activity against gram-negative bacteria, including Pseudomonas aeruginosa?",
+              "options": [
+                "Ceftazidime",
+                "Meropenem",
+                "Aztreonam",
+                "Ciprofloxacin"
+              ],
+              "answer": "Meropenem",
+              "explanation": "Meropenem is a carbapenem with broad-spectrum activity against gram-negative bacteria, including Pseudomonas aeruginosa. Ceftazidime is a third-generation cephalosporin with antipseudomonal activity but is not a carbapenem; aztreonam is a monobactam; ciprofloxacin is a fluoroquinolone."
+            },
+            {
+              "stem": "A 30-year-old female with a history of recurrent urinary tract infections is prescribed trimethoprim-sulfamethoxazole (TMP-SMX) for prophylaxis. Which of the following adverse effects is most likely to occur with prolonged use of TMP-SMX?",
+              "options": [
+                "Hepatotoxicity",
+                "Hyperkalemia",
+                "Ototoxicity",
+                "Photosensitivity"
+              ],
+              "answer": "Hyperkalemia",
+              "explanation": "Trimethoprim has a potassium-sparing effect similar to amiloride, leading to hyperkalemia, especially in patients with renal impairment or those taking other potassium-sparing drugs. Hepatotoxicity, ototoxicity, and photosensitivity are less commonly associated with TMP-SMX."
+            },
+            {
+              "stem": "Which of the following statements about the mechanism of action of echinocandins (e.g., caspofungin) is correct?",
+              "options": [
+                "Inhibit fungal cell wall synthesis by blocking beta-glucan synthase",
+                "Inhibit fungal protein synthesis by binding to the 60S ribosomal subunit",
+                "Inhibit fungal DNA synthesis by blocking thymidylate synthase",
+                "Inhibit fungal cell membrane synthesis by blocking ergosterol synthesis"
+              ],
+              "answer": "Inhibit fungal cell wall synthesis by blocking beta-glucan synthase",
+              "explanation": "Echinocandins inhibit fungal cell wall synthesis by blocking beta-glucan synthase, an enzyme essential for the synthesis of beta-glucan, a component of the fungal cell wall. They do not inhibit protein synthesis, DNA synthesis, or ergosterol synthesis."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "Explain the rationale behind the combination of antibiotics in the treatment of tuberculosis (TB). Include two specific examples of combination regimens used in TB treatment. (7 marks)",
+              "modelAnswer": "Rationale for antibiotic combinations in TB treatment:\n1. PREVENT RESISTANCE EMERGENCE: TB treatment uses multiple drugs to reduce the risk of resistance developing during therapy, as single-drug therapy rapidly selects for resistant mutants. Example: RHZE (rifampicin, isoniazid, pyrazinamide, ethambutol) for drug-sensitive TB.\n2. SYNERGISTIC ACTIVITY: Some combinations enhance bactericidal or sterilizing activity. Example: isoniazid (inhibits mycolic acid synthesis) + rifampicin (inhibits RNA polymerase) for rapid kill of actively dividing bacilli.\n3. COVER MULTIPLE PHASES OF INFECTION: TB has subpopulations in different metabolic states (e.g., actively replicating, semi-dormant, intracellular). Example: pyrazinamide (active in acidic environments of macrophages) + ethambutol (inhibits arabinan synthesis) target semi-dormant bacilli.\n4. SHORTEN TREATMENT DURATION: Combination therapy reduces total treatment duration from 12–18 months to 6 months for drug-sensitive TB.\n\nSpecific regimens:\n- Drug-sensitive TB: RHZE (rifampicin, isoniazid, pyrazinamide, ethambutol) for 2 months, followed by RH (rifampicin, isoniazid) for 4 months.\n- Multidrug-resistant TB (rifampicin-resistant): Combinations such as bedaquiline, linezolid, levofloxacin, clofazimine, and cycloserine (WHO Group A/B drugs) for 18–24 months."
+            },
+            {
+              "stem": "Describe five mechanisms through which bacteria develop resistance to antibiotics. Provide one example for each mechanism. (7 marks)",
+              "modelAnswer": "Five mechanisms of bacterial antibiotic resistance:\n1. ENZYMATIC INACTIVATION: Bacteria produce enzymes that destroy or modify the antibiotic. Example: beta-lactamases hydrolyze the beta-lactam ring of penicillins/cephalosporins (e.g., TEM-1 beta-lactamase in E. coli).\n2. TARGET MODIFICATION: Alteration of the antibiotic target site reduces binding affinity. Example: MRSA acquires mecA gene encoding PBP2a, a penicillin-binding protein with low affinity for beta-lactams.\n3. DECREASED PERMEABILITY: Reduced entry of the antibiotic into the bacterial cell. Example: loss of porins (OprD) in Pseudomonas aeruginosa reduces imipenem entry.\n4. ACTIVE EFFLUX: Efflux pumps expel antibiotics from the bacterial cell. Example: tetracycline efflux pumps (TetA/B) in gram-negative bacteria pump tetracyclines out of the cell.\n5. BYPASS PATHWAYS: Bacteria develop alternative metabolic pathways to bypass the inhibited step. Example: vancomycin-resistant enterococci (VRE) alter peptidoglycan precursors from D-ala-D-ala to D-ala-D-lac, reducing vancomycin binding."
+            },
+            {
+              "stem": "a) Explain the mechanism of action of sulfonamides. (2 marks)\nb) Outline three adverse effects of sulfonamides. (3 marks)\nc) Name one clinical use of sulfonamides. (2 marks)",
+              "modelAnswer": "a) MECHANISM OF ACTION: Sulfonamides are structural analogues of para-aminobenzoic acid (PABA). They competitively inhibit dihydropteroate synthase, blocking the incorporation of PABA into dihydropteroic acid, thereby inhibiting bacterial folate synthesis (bacteriostatic).\n\nb) THREE ADVERSE EFFECTS:\n1. Hypersensitivity reactions (e.g., rash, Stevens-Johnson syndrome, drug fever).\n2. Crystalluria and renal damage (due to poor solubility; maintain hydration and alkalinize urine).\n3. Kernicterus in neonates (displaces bilirubin from albumin, leading to bilirubin encephalopathy; avoid in pregnancy/neonates).\n\nc) CLINICAL USE: Treatment of nocardiosis; in combination with pyrimethamine for prophylaxis/treatment of Pneumocystis jirovecii pneumonia (PCP) and toxoplasmosis in AIDS patients."
+            },
+            {
+              "stem": "a) Explain the mechanism of action of aminoglycosides. (2 marks)\nb) Outline three adverse effects of aminoglycosides. (3 marks)\nc) Name one clinical use of aminoglycosides. (2 marks)",
+              "modelAnswer": "a) MECHANISM OF ACTION: Aminoglycosides irreversibly bind to the 30S ribosomal subunit, causing misreading of mRNA and inhibition of protein synthesis initiation. They are bactericidal and require oxygen-dependent active transport into the bacterial cell (hence inactive against anaerobes).\n\nb) THREE ADVERSE EFFECTS:\n1. Nephrotoxicity (acute tubular necrosis; reversible).\n2. Ototoxicity (cochlear and vestibular toxicity; often irreversible).\n3. Neuromuscular blockade (inhibits acetylcholine release; reversible with calcium gluconate or neostigmine).\n\nc) CLINICAL USE: Empiric therapy for severe gram-negative infections (e.g., sepsis, pneumonia) in combination with a beta-lactam; treatment of infective endocarditis (e.g., gentamicin + ampicillin for enterococcal endocarditis)."
+            },
+            {
+              "stem": "A 35-year-old female presents with a 5-day history of watery diarrhea, fever, and abdominal cramps after consuming contaminated food. Stool microscopy reveals gram-negative bacilli. The physician suspects bacterial gastroenteritis.\n\na) Name two antibiotics that could be used empirically for this infection. (2 marks)\nb) For each antibiotic, describe one potential drug interaction. (4 marks)",
+              "modelAnswer": "a) TWO EMPIRIC ANTIBIOTICS:\n1. Ciprofloxacin (fluoroquinolone).\n2. Azithromycin (macrolide).\n\nb) DRUG INTERACTIONS:\n1. Ciprofloxacin:\n   - Chelates divalent cations (e.g., calcium, magnesium, iron) in supplements or antacids, reducing its absorption. Advise taking ciprofloxacin 2 hours before or 6 hours after calcium/iron supplements.\n   - Inhibits CYP1A2, increasing plasma levels of caffeine and theophylline (risk of tachycardia, tremor).\n2. Azithromycin:\n   - Inhibits CYP3A4, increasing plasma levels of drugs metabolized by this enzyme (e.g., warfarin, statins, cyclosporine). Monitor for signs of toxicity (e.g., bleeding with warfarin).\n   - May prolong the QT interval; caution with other QT-prolonging drugs (e.g., antiarrhythmics, antipsychotics)."
+            },
+            {
+              "stem": "List two adverse effects and two therapeutic uses of metronidazole. (6 marks)",
+              "modelAnswer": "TWO ADVERSE EFFECTS:\n1. Disulfiram-like reaction with alcohol (flushing, nausea, vomiting, tachycardia).\n2. Peripheral neuropathy (with prolonged high doses).\n\nTWO THERAPEUTIC USES:\n1. Treatment of anaerobic bacterial infections (e.g., intra-abdominal abscesses, pelvic infections, brain abscesses).\n2. Treatment of protozoal infections (e.g., amoebiasis, giardiasis, trichomoniasis) and Clostridium difficile colitis."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Discuss the beta-lactam antibiotics under the following sub-topics:\na) Mechanism of action of benzylpenicillin (3 marks)\nb) Spectrum of antimicrobial activity of amoxicillin (3 marks)\nc) Six pharmacokinetic properties of benzylpenicillin (3 marks)\nd) Three clinical uses of benzylpenicillin (3 marks)\ne) Adverse effects associated with benzylpenicillin (3 marks)",
+              "modelAnswer": "a) MECHANISM OF ACTION OF BENZYLPENICILLIN (3 marks):\nBenzylpenicillin (penicillin G) inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins (PBPs), specifically transpeptidases. It blocks the cross-linking of peptidoglycan chains in the bacterial cell wall, leading to cell lysis. It also inactivates the bacterial autolysin inhibitor, activating autolysins that degrade the cell wall. The result is bactericidal activity, but only against actively dividing bacteria.\n\nb) SPECTRUM OF AMOXICILLIN (3 marks):\nAmoxicillin is an aminopenicillin with a broader spectrum than benzylpenicillin. It retains activity against gram-positive bacteria (e.g., Streptococcus pneumoniae, Streptococcus pyogenes, Enterococcus faecalis) and has enhanced activity against gram-negative bacteria, including Haemophilus influenzae, Escherichia coli, Proteus mirabilis, Salmonella, and Shigella. It is also active against Helicobacter pylori (in combination regimens) and Listeria monocytogenes. However, it is susceptible to beta-lactamase degradation, so it is often combined with clavulanate (co-amoxiclav) to extend its spectrum.\n\nc) SIX PHARMACOKINETIC PROPERTIES OF BENZYLPENICILLIN (3 marks):\n1. Poor oral bioavailability: Benzylpenicillin is acid-labile and poorly absorbed orally; it is primarily administered parenterally (IV or IM).\n2. Short half-life: Approximately 30–60 minutes; requires frequent dosing (every 4–6 hours) for sustained plasma levels.\n3. Limited tissue distribution: Poor penetration into the CSF unless meninges are inflamed; does not cross the blood-brain barrier well.\n4. Renal elimination: Primarily excreted unchanged in the urine via tubular secretion; dose adjustment is required in renal impairment.\n5. Protein binding: Approximately 60% bound to plasma proteins, but the unbound fraction is active.\n6. Poor CSF penetration: Minimal entry into the CSF in the absence of meningeal inflammation; higher doses are required for meningitis.\n\n\nd) THREE CLINICAL USES OF BENZYLPENICILLIN (3 marks):\n1. Treatment of infections caused by susceptible gram-positive cocci: e.g., Streptococcus pneumoniae pneumonia, Streptococcus pyogenes pharyngitis, and meningococcal meningitis.\n2. Treatment of syphilis: Benzylpenicillin is the drug of choice for all stages of syphilis, including neurosyphilis (requires high-dose IV therapy).\n3. Prophylaxis in high-risk patients: e.g., rheumatic heart disease prophylaxis to prevent Streptococcus pyogenes infections.\n\n\ne) ADVERSE EFFECTS ASSOCIATED WITH BENZYLPENICILLIN (3 marks):\n1. Hypersensitivity reactions: Ranging from rash and urticaria to anaphylaxis (cross-reactivity with other beta-lactams is possible).\n2. Electrolyte imbalances: High-dose IV penicillin G potassium salt can cause hyperkalemia; sodium salt can cause hypernatremia.\n3. Neurotoxicity: High doses or renal impairment can lead to seizures due to GABA antagonism in the central nervous system."
+            },
+            {
+              "stem": "A 38-year-old male with a history of intravenous drug use presents with fever, night sweats, and weight loss over the past 3 months. He reports a productive cough with blood-streaked sputum. A chest radiograph shows upper lobe cavitary lesions, and sputum microscopy is positive for acid-fast bacilli. GeneXpert confirms Mycobacterium tuberculosis resistant to rifampicin.\n\n\na) Elucidate a probable effective five-drug regimen for the treatment of multidrug-resistant tuberculosis (MDR-TB) in this patient. (5 marks)\nb) For each drug in the regimen, explain the mechanism of action. (5 marks)\nc) For each drug in the regimen, identify at least one adverse effect associated with it. (5 marks)",
+              "modelAnswer": "a) PROBABLE EFFECTIVE FIVE-DRUG REGIMEN FOR MDR-TB (5 marks):\nSince the isolate is resistant to rifampicin, the regimen must exclude rifampicin and include drugs from different classes to ensure efficacy and reduce resistance. A probable regimen (aligned with WHO guidelines) is:\n1. Isoniazid (high-dose)\n2. Pyrazinamide\n3. Ethambutol\n4. Moxifloxacin (or levofloxacin)\n5. Amikacin (or kanamycin/capreomycin)\n\nNote: Bedaquiline, linezolid, clofazimine, or cycloserine may replace or supplement these agents based on susceptibility and patient tolerance. Directly observed therapy (DOT) is essential, especially in this patient with a history of intravenous drug use.\n\n\nb) MECHANISM OF ACTION FOR EACH DRUG (5 marks):\n1. Isoniazid: Inhibits mycolic acid synthesis in the mycobacterial cell wall by targeting the enzyme InhA (after activation by KatG).\n2. Pyrazinamide: Converted to pyrazinoic acid in acidic environments (e.g., within macrophages), disrupting membrane potential and energy production.\n3. Ethambutol: Inhibits arabinan synthesis by blocking arabinosyl transferase (EmbB), disrupting cell wall integrity.\n4. Moxifloxacin: Inhibits bacterial DNA gyrase and topoisomerase IV, preventing DNA replication and transcription.\n5. Amikacin: Binds to the 30S ribosomal subunit, causing misreading of mRNA and inhibition of protein synthesis (bactericidal).\n\n\nc) ADVERSE EFFECTS FOR EACH DRUG (5 marks):\n1. Isoniazid: Hepatotoxicity (monitor liver enzymes), peripheral neuropathy (give pyridoxine to prevent), CNS toxicity (seizures in overdose).\n2. Pyrazinamide: Hepatotoxicity (monitor liver enzymes), hyperuricemia/gout, arthralgia.\n3. Ethambutol: Optic neuritis (dose-related; monitor visual acuity), peripheral neuropathy.\n4. Moxifloxacin: QT prolongation (risk of torsades de pointes), tendinitis/tendon rupture, CNS effects (dizziness, confusion).\n5. Amikacin: Nephrotoxicity (monitor renal function), ototoxicity (cochlear and vestibular; irreversible), neuromuscular blockade."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

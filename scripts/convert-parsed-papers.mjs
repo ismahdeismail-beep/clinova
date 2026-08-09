@@ -21,11 +21,17 @@ const UNITS = [
   ['5314', 'pharm-toxicology', 'Toxicology & Drug Discovery'],
 ]
 
+// Real second sittings (variant 2) — genuinely distinct papers parsed as <code>b
+const SECOND_SITTINGS = {
+  '3306': ['3306b', 'Cardiovascular Pharmacology (July 2019)'],
+  '5111': ['5111b', 'Anticancer, Dermatological & Ocular Drugs (Special Exam)'],
+  '5112': ['5112b', 'Vitamins, Hormones & Endocrine Pharmacology (Special Exam)'],
+}
+
 const MARKS = { A: 30, B: 40, C: 30 }
 const NAMES = { A: 'Multiple Choice Questions', B: 'Short Answer Questions', C: 'Long Answer Questions' }
 
-const record = {}
-for (const [code, slug, title] of UNITS) {
+function buildPaper(code, title) {
   const p = JSON.parse(readFileSync('scripts/out/parsed-papers/' + code + '.json', 'utf8'))
   const sections = []
   for (const letter of ['A', 'B', 'C']) {
@@ -37,10 +43,20 @@ for (const [code, slug, title] of UNITS) {
     })
     sections.push({ letter, name: NAMES[letter], marks: MARKS[letter], questions })
   }
-  record[slug] = {
-    1: { title, variant: 1, sections },
+  return { title, sections }
+}
+
+const record = {}
+for (const [code, slug, title] of UNITS) {
+  const paper = buildPaper(code, title)
+  const variants = { 1: { title, variant: 1, sections: paper.sections } }
+  if (SECOND_SITTINGS[code]) {
+    const [bCode, bTitle] = SECOND_SITTINGS[code]
+    const b = buildPaper(bCode, bTitle)
+    variants[2] = { title: bTitle, variant: 2, sections: b.sections }
   }
-  console.log(slug, '|', title, '| A=' + p.sections.A.length, 'B=' + p.sections.B.length, 'C=' + p.sections.C.length)
+  record[slug] = variants
+  console.log(slug, '|', title, '| A=' + paper.sections[0].questions.length, 'B=' + paper.sections[1].questions.length, 'C=' + paper.sections[2].questions.length)
 }
 
 const header = `// AUTO-GENERATED from the real OLD-curriculum past papers (scripts/out/parsed-papers, latest paper per unit).

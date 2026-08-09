@@ -1,0 +1,122 @@
+{
+  "code": "3306b",
+  "a": [
+    {
+      "answer": "Hypotensive episodes",
+      "explanation": "First-dose hypotension is the classic warning for drugs that cause rapid vasodilation or sympathetic blockade (ACE inhibitors, ARBs, alpha-blockers, and nitrates). This patient is being started on first-line antihypertensive therapy, so the physician should warn about syncope/hypotension after the first dose, especially if volume-depleted."
+    },
+    {
+      "answer": "Lisinopril",
+      "explanation": "The low-pitched 'wooshing' bruit just lateral to the umbilicus is a renal artery bruit, suggesting renovascular hypertension. ACE inhibitors (lisinopril) and ARBs are relatively contraindicated in bilateral renal artery stenosis because they dilate the efferent arteriole, dropping glomerular filtration pressure and precipitating acute kidney injury."
+    },
+    {
+      "answer": "Lisinopril",
+      "explanation": "In a diabetic patient with a prior MI and hypertension, an ACE inhibitor is first-line: it lowers blood pressure, improves mortality post-MI, and provides renoprotection (reduces albuminuria, slows diabetic nephropathy progression)."
+    },
+    {
+      "answer": "Change lisinopril to losartan",
+      "explanation": "A dry, non-productive cough is the classic ACE-inhibitor adverse effect (bradykinin accumulation). The next step is to switch to an ARB such as losartan, which provides equivalent blood-pressure and renoprotective benefits without the cough. Changing to a beta-blocker (metoprolol) or CCB (amlodipine) does not address the cough mechanism."
+    },
+    {
+      "answer": "Procainamide",
+      "explanation": "Atrial fibrillation in Wolff-Parkinson-White syndrome must be treated by blocking conduction down the accessory pathway — not the AV node. AV-nodal blockers (adenosine, digoxin, diltiazem, verapamil) can accelerate conduction through the bypass tract and precipitate ventricular fibrillation. Procainamide (Class IA) slows accessory-pathway conduction and is the appropriate choice."
+    },
+    {
+      "answer": "Orthostatic hypotension",
+      "explanation": "The regimen includes prazosin (a nonselective alpha-1 blocker) combined with carvedilol (alpha+beta blocker), isosorbide mononitrate, and enalapril — a strongly vasodilating, sympatholytic combination. The most likely complication is orthostatic hypotension, especially in an older man with BPH started on prazosin."
+    },
+    {
+      "answer": "Direct renin inhibitor",
+      "explanation": "Decreased aldosterone production, decreased serum angiotensin I (and angiotensin II), and increased natriuresis are the effects of a direct renin inhibitor (e.g., aliskiren): blocking renin stops the cascade at its first step. ACE inhibitors decrease angiotensin II but RAISE angiotensin I; ARBs block the receptor rather than lowering angiotensins."
+    },
+    {
+      "answer": "Amlodipine",
+      "explanation": "Peripheral (ankle) oedema is the hallmark dose-related side effect of dihydropyridine calcium-channel blockers such as amlodipine, caused by preferential arteriolar vasodilation with resultant capillary hydrostatic-pressure rise. Lisinopril, propranolol, carvedilol and verapamil are not typical causes of ankle swelling."
+    },
+    {
+      "answer": "Maculopapular facial rash",
+      "explanation": "Hydralazine is associated with drug-induced lupus — arthralgia, myalgia, fever and a maculopapular facial rash (and positive ANA) — especially in slow acetylators and at higher doses. Cough and angioedema are ACE-inhibitor effects, not hydralazine's; seizure and weight loss are not characteristic."
+    },
+    {
+      "answer": "Initiate low-molecular-weight heparin, begin warfarin, and admit to hospital",
+      "explanation": "Proximal DVT with a healthy 26-year-old is still managed with therapeutic anticoagulation: LMWH (or UFH) overlaps warfarin until the INR is 2–3, with admission for initial management. LMWH is preferred over UFH for stable patients because of predictable dosing and no monitoring requirement. Outpatient discharge with warfarin alone (no initial LMWH) is inadequate."
+    },
+    {
+      "answer": "ACE inhibitors",
+      "explanation": "In heart failure with reduced ejection fraction (EF 35%), ACE inhibitors (and beta-blockers, ARBs/ARNI, and MRAs) reduce mortality. Calcium-channel blockers, cardiac glycosides, thiazides and nitrates do not confer the same mortality benefit in HFrEF."
+    },
+    {
+      "answer": "None of the above",
+      "explanation": "Aspirin and clopidogrel provide antiplatelet cover, atorvastatin stabilises plaque, and atenolol reduces myocardial oxygen demand — all are appropriate in unstable angina. Since none of the listed drugs is excluded, 'None of the above' is correct."
+    },
+    {
+      "answer": "Vitamin B12",
+      "explanation": "Pernicious anaemia is a macrocytic (megaloblastic) anaemia caused by vitamin B12 (cobalamin) deficiency — usually from autoimmune gastritis with loss of intrinsic factor, impairing ileal B12 absorption. Iron causes microcytic anaemia; folate and B6 deficiencies cause other megaloblastic/haematologic pictures but not pernicious anaemia."
+    },
+    {
+      "answer": "Warfarin has a long onset of action that is related to the half-lives of blood clotting components",
+      "explanation": "Warfarin acts by inhibiting vitamin K epoxide reductase, but its anticoagulant effect is delayed (24–72 h) until functional clotting factors II, VII, IX and X (especially factor II, t½ ~60 h) are cleared — hence the need for heparin overlap. Heparin is NOT contraindicated in pregnancy (LMWH is used); heparin is not activated in the liver; warfarin is monitored by INR, not bleeding time; and heparin is active in vitro."
+    },
+    {
+      "answer": "Has better bioavailability than unfractionated heparin",
+      "explanation": "LMWH (e.g., enoxaparin) has ~90% subcutaneous bioavailability versus ~30% for unfractionated heparin, giving predictable dose-response without routine monitoring. LMWH has a molecular weight about one-third (not 1/10) of UFH, is less protein-bound, is only partially reversed by protamine, and has MORE predictable pharmacokinetics than UFH."
+    },
+    {
+      "answer": "Verapamil",
+      "explanation": "Initial heart-failure management includes salt restriction, ACE inhibitors (or ARBs), diuretics and beta-blockers. Non-dihydropyridine calcium-channel blockers such as verapamil are contraindicated in heart failure because of their negative inotropic effect — they worsen symptoms and increase mortality. Hence verapamil is the EXCEPTION."
+    },
+    {
+      "answer": "Increased peripheral vasodilation",
+      "explanation": "Atenolol is a beta-1-selective beta-blocker: it decreases cardiac contractile force, heart rate, renin release and intraocular pressure, but it does NOT cause peripheral vasodilation (beta-2 blockade can cause mild vasoconstriction). Increased peripheral vasodilation is therefore NOT a direct effect."
+    },
+    {
+      "answer": "Muscarinic receptor antagonist",
+      "explanation": "The picture (smoker, barrel chest, prolonged expiration, wheeze, FEV1 60% predicted) is COPD. A long-acting muscarinic antagonist (tiotropium) or short-acting (ipratropium) is the bronchodilator of choice to relieve symptoms. Beta-blockers and alpha-blockers are not bronchodilators and may worsen airflow obstruction."
+    },
+    {
+      "answer": "Metoprolol and warfarin",
+      "explanation": "In atrial fibrillation with rapid ventricular response and no heart failure, rate control with a beta-blocker (metoprolol) is appropriate. His CHA2DS2-VASc score (age 78 = 2 points; hypertension; diabetes = 1 each) is ≥4, so lifelong anticoagulation with warfarin (target INR 2–3) is indicated. Aspirin alone is not adequate stroke prophylaxis in this setting."
+    },
+    {
+      "answer": "Antifibrinolitic drugs",
+      "explanation": "Thrombosis treatment uses anticoagulants, fibrinolytics (thrombolytics) and antiplatelet drugs. Antifibrinolytics (tranexamic acid, aminocaproic acid) INHIBIT clot breakdown — they promote clot stability and are used to control bleeding, so they are the EXCEPTION."
+    }
+  ],
+  "b": [
+    {
+      "modelAnswer": "a) RECOMMENDED DRUG & MODE OF ACTION (3 marks): Low-molecular-weight heparin (enoxaparin) or unfractionated heparin. Both potentiate antithrombin III, which inactivates thrombin (factor IIa) and activated factor Xa — heparin/AT-III complex inhibits thrombin and Xa; LMWH acts mainly on Xa. This prevents extension of the existing thrombus and new thrombus formation. (Also acceptable: warfarin for maintenance, though it has a delayed onset.)\nb) AFTER 4 DAYS (1 mark): Warfarin (oral vitamin K antagonist) — started with heparin overlap and continued once INR is 2–3, or a DOAC (e.g., rivaroxaban/apixaban) if preferred.\nc) ADVICE TO PRESCRIBER & PATIENT (2 marks):\n- Prescriber: overlap heparin and warfarin for ≥4–5 days until INR 2–3 on two consecutive days; monitor INR regularly (target 2–3); watch for drug interactions.\n- Patient: adhere to dosing; report any bleeding (gums, bruising, dark stools, haematuria); avoid alcohol and NSAIDs; seek urgent care for signs of bleeding or PE (chest pain, dyspnoea)."
+    },
+    {
+      "modelAnswer": "a) TARGET (1 mark): Lower blood pressure to <140/90 mmHg (130/80 in proteinuric/high-risk patients).\nb) DRUGS (1 mark): Losartan (or an ARB/ACE inhibitor) + a calcium-channel blocker such as amlodipine — ARBs/CCBs are preferred in gout because they do not raise uric acid (losartan actually increases urate excretion). Avoid thiazides and loop diuretics, which worsen hyperuricaemia.\nc) MODE OF ACTION (3 marks):\n- Losartan (ARB): blocks angiotensin II AT1 receptors → vasodilation, reduced aldosterone secretion → lowers BP; also inhibits urate reabsorption in the proximal tubule (uricosuric).\n- Amlodipine (dihydropyridine CCB): blocks L-type calcium channels in vascular smooth muscle → arteriolar vasodilation → reduced peripheral resistance and BP.\nd) SIDE EFFECTS (2 marks): Losartan: dizziness, hyperkalaemia, cough (less than ACE inhibitors), angioedema (rare), teratogenic. Amlodipine: ankle oedema, flushing, headache, dizziness, reflex tachycardia."
+    },
+    {
+      "modelAnswer": "a) DRUGS (2 marks): A combination is used — loop diuretic (furosemide), ACE inhibitor (enalapril/lisinopril), beta-blocker (carvedilol/bisoprolol) and, where indicated, spironolactone (MRA) and digoxin for symptom control.\nb) MODE OF ACTION (4 marks):\n- Furosemide (loop diuretic): inhibits Na+-K+-2Cl− cotransporter in the thick ascending limb → natriuresis/diuresis → reduced preload and pulmonary congestion.\n- ACE inhibitor: inhibits angiotensin-converting enzyme → ↓angiotensin II and aldosterone → vasodilation (↓afterload), ↓remodelling, mortality benefit.\n- Beta-blocker (carvedilol/bisoprolol): blocks cardiac beta-1 receptors → ↓heart rate, ↓myocardial O2 demand, reverse remodelling, ↓arrhythmic death.\n- Spironolactone: blocks aldosterone receptors → ↓sodium retention and fibrosis.\n- Digoxin: inhibits Na+/K+-ATPase → ↑intracellular Ca2+ → ↑inotropy.\nc) SIDE EFFECTS (4 marks): Furosemide: hypokalaemia, dehydration, ototoxicity, hyperuricaemia. ACE inhibitor: cough, hyperkalaemia, angioedema, hypotension. Beta-blocker: bradycardia, fatigue, bronchospasm, masking hypoglycaemia. Spironolactone: hyperkalaemia, gynaecomastia. Digoxin: nausea, xanthopsia, arrhythmias (toxicity)."
+    },
+    {
+      "modelAnswer": "CLASSES OF ANTIARRHYTHMIC DRUGS (Vaughan Williams) WITH EXAMPLES (4 marks):\nClass I — Sodium-channel blockers:\n  IA (quinidine, procainamide, disopyramide); IB (lidocaine, mexiletine, phenytoin); IC (flecainide, propafenone).\nClass II — Beta-blockers: propranolol, metoprolol, atenolol, esmolol.\nClass III — Potassium-channel blockers (prolong repolarisation): amiodarone, sotalol, dofetilide, ibutilide.\nClass IV — Calcium-channel blockers (AV-nodal): verapamil, diltiazem.\nMiscellaneous: digoxin, adenosine, magnesium (used for torsades)."
+    },
+    {
+      "modelAnswer": "MODE OF ACTION OF CHLORTHALIDONE (4 marks): Chlorthalidone is a thiazide-type diuretic. It inhibits the Na+/Cl− cotransporter in the distal convoluted tubule → increased sodium and water excretion, with potassium and magnesium loss. Chronic use produces sustained mild vasodilation (reduced peripheral vascular resistance), which is the main antihypertensive mechanism.\nCLINICAL APPLICATIONS: First-line treatment of hypertension (alone or in combination); management of mild–moderate oedema (heart failure, hepatic/renal oedema); prevention of calcium-containing kidney stones (reduces urinary calcium); adjunct in nephrogenic diabetes insipidus (paradoxical antidiuresis); osteoporosis (reduces calcium excretion)."
+    },
+    {
+      "modelAnswer": "COMPARISON — HEPARIN vs WARFARIN (4 marks):\nMechanism: Heparin (and LMWH) potentiates antithrombin III → rapid inactivation of thrombin and factor Xa — an immediate, parenteral anticoagulant acting directly on clotting factors. Warfarin inhibits vitamin K epoxide reductase → blocks gamma-carboxylation of factors II, VII, IX, X and proteins C and S → delayed onset (24–72 h) because existing factors must be cleared.\nOnset/duration: Heparin — immediate onset, short half-life, reversible with protamine sulphate. Warfarin — slow onset (needs heparin overlap 4–5 days), long duration, reversible with vitamin K (and PCC/fresh-frozen plasma).\nMonitoring: Heparin — aPTT (UFH) or none (LMWH); warfarin — INR (target 2–3 for most indications).\nAdministration: Heparin — IV/SC, does not cross placenta (LMWH used in pregnancy). Warfarin — oral, teratogenic (crosses placenta), contraindicated in pregnancy.\nAdverse effects: Both cause bleeding; heparin — heparin-induced thrombocytopenia (HIT), osteoporosis with long use; warfarin — skin necrosis (protein C), warfarin embryopathy."
+    },
+    {
+      "modelAnswer": "ASPIRIN IN ANGINA — INDICATION & MODE OF ACTION (2 marks):\nIndication: Aspirin is indicated in all patients with stable or unstable angina and acute coronary syndromes to prevent platelet-mediated arterial thrombosis (reduces MI and death).\nMode of action: Aspirin irreversibly acetylates and inhibits cyclooxygenase-1 (COX-1) in platelets → blocks thromboxane A2 (TxA2) synthesis → inhibits platelet aggregation and vasoconstriction. Because platelets lack nuclei, the effect lasts for the platelet's lifetime (~7–10 days); hence low-dose aspirin (75–325 mg daily) is used."
+    },
+    {
+      "modelAnswer": "MODE OF ACTION IN HYPERTENSION (4 marks):\na) Candesartan (angiotensin II receptor blocker, ARB): competitively and selectively blocks angiotensin II at the AT1 receptor → prevents vasoconstriction and aldosterone release → arteriolar vasodilation, reduced sodium/water retention, lower blood pressure. Long-acting, once daily; does not cause ACE-inhibitor cough.\nb) Hydralazine (direct arteriolar vasodilator): relaxes arteriolar smooth muscle (mechanism involves opening K+ channels / NO-mediated cGMP increase) → reduces peripheral vascular resistance and afterload → lowers blood pressure. Because it causes reflex tachycardia and fluid retention, it is usually combined with a beta-blocker and a diuretic (e.g., in the hydralazine + isosorbide dinitrate regimen for heart failure)."
+    }
+  ],
+  "c": [
+    {
+      "modelAnswer": "ENALAPRIL:\na) MODE OF ACTION (4 marks): Enalapril is a prodrug (enalaprilat is the active form) that inhibits angiotensin-converting enzyme (ACE). This blocks conversion of angiotensin I to angiotensin II → vasodilation (↓afterload), reduced aldosterone secretion (↓sodium/water retention), reduced sympathetic outflow, and increased bradykinin (vasodilatory, but responsible for cough and angioedema). Net effects: lowered blood pressure, reduced cardiac remodelling, renoprotection.\nb) CLINICAL APPLICATIONS (3 marks): Hypertension (first-line); heart failure with reduced ejection fraction (reduces mortality); post-myocardial infarction (reduces remodelling and mortality); diabetic nephropathy / proteinuric chronic kidney disease (renoprotective).\nc) SIDE EFFECTS (3 marks): Dry cough (most common); hyperkalaemia; hypotension/first-dose hypotension; angioedema (rare but serious); acute kidney injury in bilateral renal artery stenosis; teratogenic (contraindicated in pregnancy); dizziness, fatigue.\nd) DRUG-DRUG INTERACTIONS (3 marks): Potassium supplements / potassium-sparing diuretics (spironolactone) → hyperkalaemia; NSAIDs → reduced antihypertensive effect and increased nephrotoxicity; lithium → increased lithium levels (toxicity); other antihypertensives/diuretics → additive hypotension; aliskiren → increased risk of hyperkalaemia/hypotension (avoid in diabetes).\ne) CONTRAINDICATIONS (3 marks): Pregnancy (all trimesters — fetotoxic); history of angioedema (any ACE inhibitor); bilateral renal artery stenosis (or unilateral in single kidney); hyperkalaemia; hypersensitivity to ACE inhibitors.\nf) PHARMACOKINETICS (4 marks): Orally absorbed (prodrug, ~60% bioavailable; food reduces absorption); hydrolysed in the liver to active enalaprilat; enalaprilat is ~50–60% protein-bound; renal excretion (mainly enalaprilat, by glomerular filtration and tubular secretion); half-life of enalaprilat ~11 h (prolonged in renal impairment → dose reduction); onset 1 h, peak effect 4–6 h, duration ~24 h."
+    },
+    {
+      "modelAnswer": "FUROSEMIDE:\na) MODE OF ACTION (2 marks): Furosemide is a loop (high-ceiling) diuretic. It inhibits the Na+-K+-2Cl− cotransporter (NKCC2) on the luminal membrane of the thick ascending limb of the loop of Henle → markedly increased excretion of sodium, chloride, potassium, calcium and water (up to 20–25% of filtered load). It also stimulates renal prostaglandin synthesis (PG-mediated vasodilation) and increases renal blood flow.\nb) CLINICAL APPLICATIONS (4 marks): Acute and chronic pulmonary oedema / congestive heart failure (rapid IV relief of congestion); oedema of hepatic cirrhosis and renal disease (nephrotic syndrome, CKD); hypertension (especially with renal impairment or when thiazides fail); acute renal failure/oliguria (maintains urine output); hypercalcaemia (increases urinary calcium excretion); acute hyperkalaemia (adjunct); cerebral oedema (with mannitol, in some protocols).\nc) SIDE EFFECTS (4 marks): Hypokalaemia, hyponatraemia, hypomagnesaemia, hypocalcaemia; dehydration and hypovolaemia (pre-renal azotaemia); metabolic alkalosis; hyperuricaemia (gout); hyperglycaemia; ototoxicity (especially rapid IV, aminoglycoside co-administration); hypotension; dyslipidaemia.\nd) CONTRAINDICATIONS (3 marks): Anuria/severe hypovolaemia; severe electrolyte depletion (untreated hypokalaemia/hyponatraemia); hypersensitivity to sulphonamides (cross-reactivity); hepatic coma/pre-coma (precipitates encephalopathy); concomitant use with other ototoxic drugs.\ne) DRUG-DRUG INTERACTIONS (3 marks): Aminoglycosides and other ototoxic agents → additive ototoxicity; digoxin → toxicity from hypokalaemia; lithium → increased lithium levels; NSAIDs → reduced diuretic/antihypertensive effect; antihypertensives → additive hypotension; corticosteroids → additive hypokalaemia; ACE inhibitors → first-dose hypotension.\nf) PHARMACOKINETICS (4 marks): Well absorbed orally (60–70%); ~95% protein-bound; IV for rapid effect; secreted into the tubular lumen via organic anion transporters (OAT) in the proximal tubule; metabolised partly in the liver (glucuronide); eliminated renally (80% unchanged) and biliary (faeces); half-life ~1–2 h (prolonged in renal failure); onset: 30–60 min oral, 5 min IV; duration 6–8 h (dose-dependent 'high ceiling' response)."
+    },
+    {
+      "modelAnswer": "ORAL ANTICOAGULANTS:\na) CLASSES AND EXAMPLES (2 marks):\n1. Vitamin K antagonists: warfarin (coumarin), acenocoumarol.\n2. Direct oral anticoagulants (DOACs):\n   - Direct thrombin (factor IIa) inhibitor: dabigatran.\n   - Direct factor Xa inhibitors: rivaroxaban, apixaban, edoxaban.\nb) MODE OF ACTION (4 marks):\n- Warfarin: inhibits vitamin K epoxide reductase → blocks gamma-carboxylation (activation) of clotting factors II, VII, IX, X and proteins C and S → reduced functional clotting factors. Onset delayed 24–72 h (until existing factors cleared), hence heparin overlap.\n- Dabigatran: directly and reversibly inhibits thrombin (free and clot-bound) → prevents fibrin formation and platelet activation.\n- Rivaroxaban/apixaban/edoxaban: directly and reversibly inhibit activated factor Xa → blocks the final common pathway of the coagulation cascade (thrombin generation).\nc) CLINICAL APPLICATIONS (3 marks): Venous thromboembolism — treatment (DVT/PE) and prevention (post-operative, medical prophylaxis); stroke prevention in non-valvular atrial fibrillation; mechanical prosthetic heart valves (warfarin only); antiphospholipid syndrome (warfarin); post-MI (selected, with antiplatelet); warfarin used where DOACs are contraindicated (valvular AF, severe renal impairment).\nd) SIDE EFFECTS (3 marks): Bleeding (major: intracranial, GI — the most important); warfarin: skin necrosis (early, protein C deficiency), purple toe syndrome, teratogenicity (warfarin embryopathy), osteoporosis with long-term use; DOACs: dyspepsia (dabigatran), hepatotoxicity (rare); all: bruising, epistaxis, haematuria.\ne) CONTRAINDICATIONS (2 marks): Active bleeding/haemorrhagic diathesis; recent intracranial haemorrhage or CNS surgery; pregnancy (warfarin teratogenic; DOACs not recommended); severe hepatic/renal impairment (DOAC dose restrictions); endocarditis; uncontrolled severe hypertension; warfarin also in patients unable to comply with INR monitoring.\nf) PHARMACOKINETICS (3 marks): Warfarin: oral, ~100% bioavailable, highly protein-bound (99%), metabolised by CYP2C9/3A4 (polymorphic → variable dosing), long half-life ~36–42 h, monitored by INR; crosses placenta. DOACs: oral, rapid onset (1–3 h peak), shorter half-life (5–17 h), predictable PK; dabigatran renal elimination ~80%, rivaroxaban/apixaban ~⅔ hepatic/⅓ renal — dose adjustment in renal/hepatic impairment.\ng) DRUG-DRUG INTERACTIONS (3 marks): Warfarin: enzyme inducers (rifampicin, phenytoin, carbamazepine — ↓effect) and inhibitors (metronidazole, fluconazole, amiodarone, TMP-SMX, ciprofloxacin — ↑effect/bleeding); NSAIDs/aspirin → additive bleeding; antiplatelets → bleeding; broad-spectrum antibiotics → altered gut flora/vitamin K. DOACs: strong CYP3A4 and P-glycoprotein inhibitors/inducers (ketoconazole, ritonavir, rifampicin, carbamazepine); NSAIDs/antiplatelets → additive bleeding; antacids reduce dabigatran absorption."
+    }
+  ]
+}

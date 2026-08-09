@@ -1,0 +1,782 @@
+{
+  "pharm-autonomic": {
+    "2": {
+      "title": "Autonomic Pharmacology",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 35-year-old farmer is brought to the Nakuru County Referral Hospital after accidentally spraying himself with an organophosphate insecticide while working in his maize field. He presents with salivation, lacrimation, urination, defecation, and severe bronchospasm. Which of the following is the most appropriate immediate treatment?",
+              "options": [
+                "Atropine alone",
+                "Pralidoxime alone",
+                "Atropine plus pralidoxime",
+                "Physostigmine plus pralidoxime"
+              ],
+              "answer": "Atropine plus pralidoxime",
+              "explanation": "Organophosphate poisoning requires both atropine (to reverse muscarinic effects such as bronchospasm and secretions) and pralidoxime (to reactivate inhibited cholinesterase). Physostigmine is contraindicated in organophosphate poisoning."
+            },
+            {
+              "stem": "A 50-year-old patient with myasthenia gravis is admitted for elective surgery. To maintain muscle strength perioperatively, the physician prescribes a cholinesterase inhibitor that does not cross the blood-brain barrier. Which drug is most appropriate?",
+              "options": [
+                "Physostigmine",
+                "Neostigmine",
+                "Edrophonium",
+                "Pyridostigmine"
+              ],
+              "answer": "Pyridostigmine",
+              "explanation": "Pyridostigmine is a quaternary ammonium cholinesterase inhibitor that does not cross the blood-brain barrier, making it suitable for long-term maintenance therapy in myasthenia gravis without central side effects."
+            },
+            {
+              "stem": "A 68-year-old woman with a history of hypertension and glaucoma presents with urinary urgency and frequency. Her physician considers prescribing an antimuscarinic agent. Which of the following drugs is most appropriate for her condition?",
+              "options": [
+                "Tolterodine",
+                "Bethanechol",
+                "Pilocarpine",
+                "Neostigmine"
+              ],
+              "answer": "Tolterodine",
+              "explanation": "Tolterodine is a selective antimuscarinic agent used to treat overactive bladder symptoms such as urinary urgency and frequency. Bethanechol and pilocarpine are muscarinic agonists, and neostigmine is a cholinesterase inhibitor."
+            },
+            {
+              "stem": "A 22-year-old male is brought to the emergency department after ingesting a large quantity of wild mushrooms. He presents with confusion, hallucinations, dilated pupils, flushed skin, and tachycardia. Which of the following is the most likely active ingredient in the mushrooms?",
+              "options": [
+                "Atropine",
+                "Muscarine",
+                "Pilocarpine",
+                "Scopolamine"
+              ],
+              "answer": "Atropine",
+              "explanation": "The clinical presentation (antimuscarinic syndrome: confusion, hallucinations, dilated pupils, flushed skin, tachycardia) is consistent with atropine-like toxicity, commonly caused by ingestion of Atropa belladonna (deadly nightshade) berries or mushrooms."
+            },
+            {
+              "stem": "A 45-year-old patient with a history of asthma is admitted with an acute exacerbation. The physician considers using a bronchodilator that does not cause tremor or tachycardia. Which of the following drugs is most appropriate?",
+              "options": [
+                "Salbutamol",
+                "Ipratropium",
+                "Terbutaline",
+                "Formoterol"
+              ],
+              "answer": "Ipratropium",
+              "explanation": "Ipratropium is an inhaled antimuscarinic bronchodilator used in asthma and COPD. It does not cause tremor or tachycardia, which are common side effects of β2-agonists like salbutamol and terbutaline."
+            },
+            {
+              "stem": "A 30-year-old patient with a dissecting aortic aneurysm is given an intravenous bolus of phenylephrine to maintain blood pressure. Which of the following receptors is primarily responsible for the pressor effect of phenylephrine?",
+              "options": [
+                "Alpha-1 adrenoceptors",
+                "Alpha-2 adrenoceptors",
+                "Beta-1 adrenoceptors",
+                "Beta-2 adrenoceptors"
+              ],
+              "answer": "Alpha-1 adrenoceptors",
+              "explanation": "Phenylephrine is a selective α1-adrenoceptor agonist that causes vasoconstriction and increases blood pressure by stimulating α1 receptors on vascular smooth muscle."
+            },
+            {
+              "stem": "A 55-year-old patient with hypertension and benign prostatic hyperplasia is prescribed an α1-adrenoceptor blocker. Which of the following drugs is most appropriate?",
+              "options": [
+                "Propranolol",
+                "Metoprolol",
+                "Prazosin",
+                "Clonidine"
+              ],
+              "answer": "Prazosin",
+              "explanation": "Prazosin is a selective α1-adrenoceptor blocker that reduces blood pressure and relaxes prostatic and bladder-neck smooth muscle, improving urinary flow in benign prostatic hyperplasia."
+            },
+            {
+              "stem": "A 28-year-old patient with a history of hypertension is admitted for elective surgery. The anesthesiologist administers a drug to prevent bradycardia during intubation. Which of the following drugs is most appropriate?",
+              "options": [
+                "Atropine",
+                "Neostigmine",
+                "Pilocarpine",
+                "Physostigmine"
+              ],
+              "answer": "Atropine",
+              "explanation": "Atropine is a muscarinic antagonist that blocks vagal effects on the heart, preventing bradycardia during intubation and other vagal maneuvers."
+            },
+            {
+              "stem": "A 60-year-old patient with a history of heart failure and hypertension is prescribed a β1-selective adrenoceptor blocker. Which of the following drugs is most appropriate?",
+              "options": [
+                "Propranolol",
+                "Metoprolol",
+                "Prazosin",
+                "Clonidine"
+              ],
+              "answer": "Metoprolol",
+              "explanation": "Metoprolol is a β1-selective (cardioselective) adrenoceptor blocker that reduces heart rate and contractility, making it suitable for patients with heart failure and hypertension."
+            },
+            {
+              "stem": "A 40-year-old patient with a history of hypertension and angina is prescribed a nonselective β-adrenoceptor blocker. Which of the following drugs is most appropriate?",
+              "options": [
+                "Metoprolol",
+                "Atenolol",
+                "Propranolol",
+                "Bisoprolol"
+              ],
+              "answer": "Propranolol",
+              "explanation": "Propranolol is a nonselective β-adrenoceptor blocker that reduces heart rate, contractility, and renin release, making it useful for hypertension and angina. Metoprolol, atenolol, and bisoprolol are β1-selective."
+            },
+            {
+              "stem": "A 35-year-old patient with a history of hypertension is prescribed clonidine. Which of the following is the primary mechanism of action of clonidine?",
+              "options": [
+                "Alpha-1 adrenoceptor blockade",
+                "Alpha-2 adrenoceptor agonism",
+                "Beta-1 adrenoceptor blockade",
+                "Beta-2 adrenoceptor agonism"
+              ],
+              "answer": "Alpha-2 adrenoceptor agonism",
+              "explanation": "Clonidine is a centrally acting α2-adrenoceptor agonist that reduces sympathetic outflow from the vasomotor center, lowering blood pressure."
+            },
+            {
+              "stem": "A 50-year-old patient with a history of hypertension is prescribed methyldopa. Which of the following is the primary mechanism of action of methyldopa?",
+              "options": [
+                "Alpha-1 adrenoceptor blockade",
+                "Alpha-2 adrenoceptor agonism",
+                "Beta-1 adrenoceptor blockade",
+                "Beta-2 adrenoceptor agonism"
+              ],
+              "answer": "Alpha-2 adrenoceptor agonism",
+              "explanation": "Methyldopa is converted to α-methylnorepinephrine, a false neurotransmitter that stimulates central α2-adrenoceptors, reducing sympathetic outflow and lowering blood pressure."
+            },
+            {
+              "stem": "A 25-year-old patient with a history of asthma is prescribed a β2-selective adrenoceptor agonist for acute bronchospasm. Which of the following drugs is most appropriate?",
+              "options": [
+                "Propranolol",
+                "Metoprolol",
+                "Salbutamol",
+                "Prazosin"
+              ],
+              "answer": "Salbutamol",
+              "explanation": "Salbutamol is a selective β2-adrenoceptor agonist that causes bronchodilation, making it suitable for the treatment of acute bronchospasm in asthma."
+            },
+            {
+              "stem": "A 65-year-old patient with a history of hypertension and benign prostatic hyperplasia is prescribed tamsulosin. Which of the following is the primary mechanism of action of tamsulosin?",
+              "options": [
+                "Alpha-1 adrenoceptor blockade",
+                "Alpha-2 adrenoceptor agonism",
+                "Beta-1 adrenoceptor blockade",
+                "Beta-2 adrenoceptor agonism"
+              ],
+              "answer": "Alpha-1 adrenoceptor blockade",
+              "explanation": "Tamsulosin is a selective α1-adrenoceptor blocker that relaxes prostatic and bladder-neck smooth muscle, improving urinary flow in benign prostatic hyperplasia."
+            },
+            {
+              "stem": "A 45-year-old patient with a history of hypertension and angina is prescribed carvedilol. Which of the following is the primary mechanism of action of carvedilol?",
+              "options": [
+                "Nonselective β-adrenoceptor blockade",
+                "Selective β1-adrenoceptor blockade",
+                "Alpha-1 and nonselective β-adrenoceptor blockade",
+                "Alpha-2 adrenoceptor agonism"
+              ],
+              "answer": "Alpha-1 and nonselective β-adrenoceptor blockade",
+              "explanation": "Carvedilol is a third-generation β-blocker with additional α1-adrenoceptor blocking activity, providing vasodilation and reducing afterload, making it useful for hypertension and heart failure."
+            },
+            {
+              "stem": "A 30-year-old patient with a history of hypertension is prescribed doxazosin. Which of the following is a common side effect of doxazosin?",
+              "options": [
+                "Bradycardia",
+                "Tachycardia",
+                "Postural hypotension",
+                "Bronchospasm"
+              ],
+              "answer": "Postural hypotension",
+              "explanation": "Doxazosin is an α1-adrenoceptor blocker that can cause postural (orthostatic) hypotension, especially after the first dose, due to vasodilation and reduced venous return."
+            },
+            {
+              "stem": "A 55-year-old patient with a history of hypertension and heart failure is prescribed nebivolol. Which of the following is the primary mechanism of action of nebivolol?",
+              "options": [
+                "Nonselective β-adrenoceptor blockade",
+                "Selective β1-adrenoceptor blockade with nitric oxide-mediated vasodilation",
+                "Alpha-1 adrenoceptor blockade",
+                "Alpha-2 adrenoceptor agonism"
+              ],
+              "answer": "Selective β1-adrenoceptor blockade with nitric oxide-mediated vasodilation",
+              "explanation": "Nebivolol is a selective β1-adrenoceptor blocker that also induces nitric oxide-mediated vasodilation, providing additional antihypertensive effects."
+            },
+            {
+              "stem": "A 40-year-old patient with a history of hypertension is prescribed guanethidine. Which of the following is the primary mechanism of action of guanethidine?",
+              "options": [
+                "Alpha-1 adrenoceptor blockade",
+                "Alpha-2 adrenoceptor agonism",
+                "Inhibition of norepinephrine release from sympathetic nerves",
+                "Beta-1 adrenoceptor blockade"
+              ],
+              "answer": "Inhibition of norepinephrine release from sympathetic nerves",
+              "explanation": "Guanethidine depletes norepinephrine stores in sympathetic nerve terminals and inhibits its release, reducing sympathetic tone and lowering blood pressure."
+            },
+            {
+              "stem": "A 60-year-old patient with a history of hypertension and angina is prescribed bisoprolol. Which of the following is the primary mechanism of action of bisoprolol?",
+              "options": [
+                "Nonselective β-adrenoceptor blockade",
+                "Selective β1-adrenoceptor blockade",
+                "Alpha-1 adrenoceptor blockade",
+                "Alpha-2 adrenoceptor agonism"
+              ],
+              "answer": "Selective β1-adrenoceptor blockade",
+              "explanation": "Bisoprolol is a selective β1-adrenoceptor blocker that reduces heart rate and contractility, making it useful for hypertension and angina."
+            },
+            {
+              "stem": "A 35-year-old patient with a history of hypertension is prescribed labetalol. Which of the following is the primary mechanism of action of labetalol?",
+              "options": [
+                "Nonselective β-adrenoceptor blockade",
+                "Selective β1-adrenoceptor blockade",
+                "Alpha-1 and nonselective β-adrenoceptor blockade",
+                "Alpha-2 adrenoceptor agonism"
+              ],
+              "answer": "Alpha-1 and nonselective β-adrenoceptor blockade",
+              "explanation": "Labetalol is a third-generation β-blocker with additional α1-adrenoceptor blocking activity, providing vasodilation and reducing afterload, making it useful for hypertension and hypertensive emergencies."
+            },
+            {
+              "stem": "A 50-year-old patient with a history of hypertension and heart failure is prescribed carvedilol. Which of the following is a common side effect of carvedilol?",
+              "options": [
+                "Bradycardia",
+                "Tachycardia",
+                "Postural hypotension",
+                "Bronchospasm"
+              ],
+              "answer": "Postural hypotension",
+              "explanation": "Carvedilol, due to its α1-adrenoceptor blocking activity, can cause postural hypotension, especially after the first dose, due to vasodilation and reduced venous return."
+            },
+            {
+              "stem": "A 28-year-old patient with a history of hypertension is prescribed prazosin. Which of the following is a common side effect of prazosin?",
+              "options": [
+                "Bradycardia",
+                "Tachycardia",
+                "First-dose syncope",
+                "Bronchospasm"
+              ],
+              "answer": "First-dose syncope",
+              "explanation": "Prazosin can cause first-dose syncope due to a precipitous drop in blood pressure after the initial dose, particularly in volume-depleted or elderly patients."
+            },
+            {
+              "stem": "A 65-year-old patient with a history of hypertension and benign prostatic hyperplasia is prescribed doxazosin. Which of the following is a common side effect of doxazosin?",
+              "options": [
+                "Bradycardia",
+                "Tachycardia",
+                "Dizziness",
+                "Bronchospasm"
+              ],
+              "answer": "Dizziness",
+              "explanation": "Doxazosin can cause dizziness due to postural hypotension and reduced cerebral perfusion, especially after the first dose or dose increases."
+            },
+            {
+              "stem": "A 45-year-old patient with a history of hypertension is prescribed terazosin. Which of the following is a common side effect of terazosin?",
+              "options": [
+                "Bradycardia",
+                "Tachycardia",
+                "Headache",
+                "Bronchospasm"
+              ],
+              "answer": "Headache",
+              "explanation": "Terazosin can cause headache due to vasodilation and increased cerebral blood flow, especially after the first dose or dose increases."
+            },
+            {
+              "stem": "A 30-year-old patient with a history of hypertension is prescribed alfuzosin. Which of the following is the primary indication for alfuzosin?",
+              "options": [
+                "Hypertension",
+                "Benign prostatic hyperplasia",
+                "Angina",
+                "Arrhythmias"
+              ],
+              "answer": "Benign prostatic hyperplasia",
+              "explanation": "Alfuzosin is an α1-adrenoceptor blocker primarily used to treat benign prostatic hyperplasia by relaxing prostatic and bladder-neck smooth muscle."
+            },
+            {
+              "stem": "A 55-year-old patient with a history of hypertension and heart failure is prescribed nebivolol. Which of the following is a common side effect of nebivolol?",
+              "options": [
+                "Bradycardia",
+                "Tachycardia",
+                "Headache",
+                "Bronchospasm"
+              ],
+              "answer": "Bradycardia",
+              "explanation": "Nebivolol, like other β1-selective blockers, can cause bradycardia due to reduced heart rate and conduction velocity, especially in patients with pre-existing bradyarrhythmias."
+            },
+            {
+              "stem": "A 40-year-old patient with a history of hypertension is prescribed bisoprolol. Which of the following is a common side effect of bisoprolol?",
+              "options": [
+                "Bradycardia",
+                "Tachycardia",
+                "Headache",
+                "Bronchospasm"
+              ],
+              "answer": "Bradycardia",
+              "explanation": "Bisoprolol, a selective β1-adrenoceptor blocker, can cause bradycardia due to reduced heart rate and conduction velocity, especially in patients with pre-existing bradyarrhythmias."
+            },
+            {
+              "stem": "A 60-year-old patient with a history of hypertension and angina is prescribed metoprolol. Which of the following is a common side effect of metoprolol?",
+              "options": [
+                "Bradycardia",
+                "Tachycardia",
+                "Headache",
+                "Bronchospasm"
+              ],
+              "answer": "Bradycardia",
+              "explanation": "Metoprolol, a selective β1-adrenoceptor blocker, can cause bradycardia due to reduced heart rate and conduction velocity, especially in patients with pre-existing bradyarrhythmias."
+            },
+            {
+              "stem": "A 35-year-old patient with a history of hypertension is prescribed atenolol. Which of the following is a common side effect of atenolol?",
+              "options": [
+                "Bradycardia",
+                "Tachycardia",
+                "Headache",
+                "Bronchospasm"
+              ],
+              "answer": "Bradycardia",
+              "explanation": "Atenolol, a selective β1-adrenoceptor blocker, can cause bradycardia due to reduced heart rate and conduction velocity, especially in patients with pre-existing bradyarrhythmias."
+            },
+            {
+              "stem": "A 50-year-old patient with a history of hypertension and heart failure is prescribed carvedilol. Which of the following is a common side effect of carvedilol?",
+              "options": [
+                "Bradycardia",
+                "Tachycardia",
+                "Headache",
+                "Bronchospasm"
+              ],
+              "answer": "Bradycardia",
+              "explanation": "Carvedilol, due to its β1-adrenoceptor blocking activity, can cause bradycardia, especially in patients with pre-existing bradyarrhythmias."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 55-year-old male patient presents to the clinic with symptoms of urinary urgency, frequency, and nocturia. His prostate examination reveals benign prostatic hyperplasia (BPH). (7 marks)\na) Which class of autonomic drugs is most appropriate for this patient? (1 mark)\nb) Give two examples of drugs in this class. (2 marks)\nc) Explain the mechanism of action of these drugs in BPH. (2 marks)\nd) State two common side effects of these drugs. (2 marks)",
+              "modelAnswer": "a) Antimuscarinic drugs (1 mark)\nb) Examples: Tolterodine, Solifenacin, Oxybutynin (any two; 2 marks)\nc) Mechanism: Antimuscarinic drugs block muscarinic receptors in the detrusor muscle of the bladder, reducing involuntary contractions and improving bladder storage function. In BPH, they reduce symptoms of urgency and frequency by decreasing detrusor overactivity (2 marks)\nd) Side effects: Dry mouth, constipation, blurred vision, dizziness, headache (any two; 2 marks)"
+            },
+            {
+              "stem": "A 60-year-old female patient with a history of hypertension and glaucoma presents with symptoms of overactive bladder. Her physician considers prescribing an antimuscarinic agent. (6 marks)\na) Which class of autonomic drugs is most appropriate for this patient? (1 mark)\nb) Give two examples of drugs in this class. (2 marks)\nc) Explain the mechanism of action of these drugs in overactive bladder. (2 marks)\nd) State two common side effects of these drugs. (1 mark)",
+              "modelAnswer": "a) Antimuscarinic drugs (1 mark)\nb) Examples: Tolterodine, Solifenacin, Darifenacin (any two; 2 marks)\nc) Mechanism: Antimuscarinic drugs block muscarinic (M3) receptors in the detrusor muscle of the bladder, reducing involuntary contractions and improving bladder storage function. This decreases urgency, frequency, and urge incontinence (2 marks)\nd) Side effects: Dry mouth, constipation, blurred vision, dizziness (any two; 1 mark)"
+            },
+            {
+              "stem": "A 45-year-old patient with a history of hypertension and angina is prescribed a β-blocker. (7 marks)\na) Which class of autonomic drugs does this patient likely receive? (1 mark)\nb) Give two examples of β-blockers. (2 marks)\nc) Explain the mechanism of action of β-blockers in hypertension and angina. (2 marks)\nd) State two common side effects of β-blockers. (2 marks)",
+              "modelAnswer": "a) β-adrenoceptor antagonists (β-blockers) (1 mark)\nb) Examples: Metoprolol, Atenolol, Propranolol, Bisoprolol (any two; 2 marks)\nc) Mechanism: β-blockers reduce heart rate, contractility, and renin release by blocking β1-adrenoceptors in the heart and kidneys. This decreases cardiac output and blood pressure, reducing myocardial oxygen demand and relieving angina (2 marks)\nd) Side effects: Bradycardia, fatigue, cold extremities, bronchospasm (in nonselective agents), sleep disturbances (any two; 2 marks)"
+            },
+            {
+              "stem": "A 30-year-old patient with a history of hypertension is prescribed an α1-adrenoceptor blocker. (6 marks)\na) Which class of autonomic drugs does this patient likely receive? (1 mark)\nb) Give two examples of α1-adrenoceptor blockers. (2 marks)\nc) Explain the mechanism of action of α1-adrenoceptor blockers in hypertension. (2 marks)\nd) State one common side effect of α1-adrenoceptor blockers. (1 mark)",
+              "modelAnswer": "a) α1-adrenoceptor antagonists (α1-blockers) (1 mark)\nb) Examples: Prazosin, Doxazosin, Terazosin, Tamsulosin (any two; 2 marks)\nc) Mechanism: α1-blockers reduce peripheral vascular resistance by blocking α1-adrenoceptors on vascular smooth muscle, causing vasodilation. This lowers blood pressure by reducing afterload (2 marks)\nd) Side effect: Postural hypotension, first-dose syncope (1 mark)"
+            },
+            {
+              "stem": "A 50-year-old patient with a history of hypertension and benign prostatic hyperplasia is prescribed tamsulosin. (7 marks)\na) Which class of autonomic drugs does this patient likely receive? (1 mark)\nb) Explain the mechanism of action of tamsulosin in BPH. (2 marks)\nc) State two common side effects of tamsulosin. (2 marks)\nd) What is the primary indication for tamsulosin? (2 marks)",
+              "modelAnswer": "a) α1-adrenoceptor antagonists (α1-blockers) (1 mark)\nb) Mechanism: Tamsulosin selectively blocks α1A-adrenoceptors in the prostate and bladder neck, relaxing smooth muscle and improving urinary flow in BPH (2 marks)\nc) Side effects: Dizziness, postural hypotension, retrograde ejaculation, headache (any two; 2 marks)\nd) Primary indication: Benign prostatic hyperplasia (BPH) (2 marks)"
+            },
+            {
+              "stem": "A 65-year-old patient with a history of hypertension and heart failure is prescribed carvedilol. (7 marks)\na) Which class of autonomic drugs does this patient likely receive? (1 mark)\nb) Explain the mechanism of action of carvedilol in heart failure. (2 marks)\nc) State two common side effects of carvedilol. (2 marks)\nd) What additional receptor activity does carvedilol possess compared to metoprolol? (2 marks)",
+              "modelAnswer": "a) β-adrenoceptor antagonists with α1-blocking activity (3rd generation β-blocker) (1 mark)\nb) Mechanism: Carvedilol reduces heart rate and contractility (β1-blockade), decreases renin release, and provides vasodilation (α1-blockade and antioxidant/anti-inflammatory effects), improving cardiac function and reducing afterload in heart failure (2 marks)\nc) Side effects: Bradycardia, postural hypotension, fatigue, dizziness (any two; 2 marks)\nd) Additional receptor activity: α1-adrenoceptor blockade (2 marks)"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 55-year-old male patient presents to the clinic with symptoms of urinary urgency, frequency, and nocturia. His prostate examination reveals benign prostatic hyperplasia (BPH). His blood pressure is 150/90 mmHg. (15 marks)\na) Outline the autonomic drug classes that could be considered for this patient. (3 marks)\nb) For each class, give one example drug and explain its mechanism of action in BPH. (6 marks)\nc) Discuss the rationale for choosing an α1-blocker over other classes for this patient, considering his hypertension. (3 marks)\nd) State three common side effects of α1-blockers and how you would monitor for them. (3 marks)",
+              "modelAnswer": "a) Autonomic drug classes for BPH: (3 marks)\n   - α1-adrenoceptor antagonists (α1-blockers)\n   - 5α-reductase inhibitors\n   - Antimuscarinic drugs (for overactive bladder symptoms)\n   - Phosphodiesterase-5 inhibitors (e.g., tadalafil)\n\nb) Example drugs and mechanisms: (6 marks)\n   - Prazosin (α1-blocker): Blocks α1-adrenoceptors on prostatic and bladder-neck smooth muscle, relaxing the prostate and improving urinary flow. Also reduces blood pressure by vasodilation.\n   - Finasteride (5α-reductase inhibitor): Inhibits 5α-reductase, reducing dihydrotestosterone (DHT) synthesis, shrinking the prostate and improving urinary symptoms.\n   - Tolterodine (antimuscarinic): Blocks muscarinic (M3) receptors in the detrusor muscle, reducing involuntary contractions and improving bladder storage.\n   - Tadalafil (PDE-5 inhibitor): Enhances nitric oxide-mediated smooth muscle relaxation in the prostate and bladder, improving urinary flow.\n\nc) Rationale for α1-blocker in this patient: (3 marks)\n   - α1-blockers provide rapid symptom relief by relaxing prostatic and bladder-neck smooth muscle, improving urinary flow.\n   - They also reduce blood pressure by vasodilation, making them suitable for this patient with hypertension.\n   - α1-blockers are first-line therapy for moderate-to-severe BPH symptoms, especially in patients with hypertension.\n\nd) Side effects and monitoring: (3 marks)\n   - Postural hypotension: Monitor blood pressure in standing and supine positions, especially after the first dose.\n   - Dizziness: Assess for dizziness or syncope, particularly in elderly patients.\n   - Retrograde ejaculation: Counsel the patient about this reversible side effect and reassure if it occurs."
+            },
+            {
+              "stem": "A 60-year-old female patient with a history of hypertension and glaucoma presents with symptoms of overactive bladder. Her physician considers prescribing an antimuscarinic agent. (15 marks)\na) Outline the autonomic drug classes that could be considered for this patient. (3 marks)\nb) For each class, give one example drug and explain its mechanism of action in overactive bladder. (6 marks)\nc) Discuss the rationale for choosing an antimuscarinic agent over other classes for this patient, considering her glaucoma. (3 marks)\nd) State three common side effects of antimuscarinic drugs and how you would monitor for them. (3 marks)",
+              "modelAnswer": "a) Autonomic drug classes for overactive bladder: (3 marks)\n   - Antimuscarinic drugs (first-line)\n   - β3-adrenoceptor agonists\n   - Antimuscarinic drugs with β3 activity (e.g., mirabegron)\n   - Topical estrogen (for postmenopausal women)\n\nb) Example drugs and mechanisms: (6 marks)\n   - Tolterodine (antimuscarinic): Blocks muscarinic (M3) receptors in the detrusor muscle, reducing involuntary contractions and improving bladder storage.\n   - Solifenacin (antimuscarinic): Selectively blocks M3 receptors, reducing urgency, frequency, and urge incontinence.\n   - Mirabegron (β3-agonist): Stimulates β3-adrenoceptors in the detrusor muscle, increasing bladder capacity and reducing overactivity.\n   - Oxybutynin (antimuscarinic): Blocks muscarinic receptors, reducing detrusor overactivity and improving bladder storage.\n\nc) Rationale for antimuscarinic agent in this patient: (3 marks)\n   - Antimuscarinic drugs are first-line therapy for overactive bladder, providing rapid symptom relief.\n   - The patient's glaucoma is a contraindication to mydriatic agents, but antimuscarinic drugs do not cause pupillary dilation when used systemically (unlike topical ophthalmic agents).\n   - Antimuscarinic drugs improve bladder storage and reduce urgency/frequency, enhancing quality of life.\n\nd) Side effects and monitoring: (3 marks)\n   - Dry mouth: Monitor for oral dryness and advise on hydration, sugar-free gum, or saliva substitutes.\n   - Constipation: Assess bowel habits and recommend dietary fiber, hydration, and laxatives if needed.\n   - Blurred vision: Monitor for visual disturbances and advise caution when driving or operating machinery.\n   - Dizziness: Assess for dizziness or postural hypotension, especially in elderly patients."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Autonomic Pharmacology",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 35-year-old farmer presents with excessive salivation, lacrimation, urination, diarrhea, miosis, and muscle fasciculations after accidental exposure to an organophosphate pesticide. Which drug should be administered immediately to reverse the muscarinic symptoms?",
+              "options": [
+                "Atropine",
+                "Neostigmine",
+                "Pralidoxime",
+                "Physostigmine"
+              ],
+              "answer": "Atropine",
+              "explanation": "Atropine is a muscarinic antagonist that rapidly reverses the muscarinic symptoms of organophosphate poisoning (SLUDGE). Pralidoxime is used to reactivate inhibited cholinesterase but does not reverse muscarinic effects."
+            },
+            {
+              "stem": "A 50-year-old male with myasthenia gravis is admitted for a thymectomy. Post-operatively, he develops severe muscle weakness and respiratory distress. Which drug should be administered immediately to confirm the diagnosis and assess the need for ventilatory support?",
+              "options": [
+                "Edrophonium",
+                "Neostigmine",
+                "Pyridostigmine",
+                "Succinylcholine"
+              ],
+              "answer": "Edrophonium",
+              "explanation": "Edrophonium is a short-acting cholinesterase inhibitor used in the Tensilon test to confirm myasthenia gravis by transiently improving muscle strength."
+            },
+            {
+              "stem": "A 68-year-old female with chronic obstructive pulmonary disease (COPD) and hypertension develops urinary incontinence. Which drug would be most appropriate to reduce bladder overactivity without worsening her respiratory condition?",
+              "options": [
+                "Atropine",
+                "Bethanechol",
+                "Oxybutynin",
+                "Tolterodine"
+              ],
+              "answer": "Tolterodine",
+              "explanation": "Tolterodine is a selective muscarinic antagonist with minimal bronchodilatory effects, making it safer for patients with COPD compared to oxybutynin."
+            },
+            {
+              "stem": "A 22-year-old male is brought to the emergency department after ingesting a large quantity of wild mushrooms. He presents with confusion, hallucinations, dilated pupils, flushed skin, and tachycardia. Which drug should be administered to reverse the central and peripheral antimuscarinic effects?",
+              "options": [
+                "Atropine",
+                "Neostigmine",
+                "Physostigmine",
+                "Pralidoxime"
+              ],
+              "answer": "Physostigmine",
+              "explanation": "Physostigmine is a reversible cholinesterase inhibitor that crosses the blood-brain barrier and reverses both central and peripheral antimuscarinic effects."
+            },
+            {
+              "stem": "A 45-year-old male with a history of hypertension and benign prostatic hyperplasia (BPH) presents with acute urinary retention. Which drug would be most appropriate to relieve his symptoms?",
+              "options": [
+                "Bethanechol",
+                "Clonidine",
+                "Prazosin",
+                "Tamsulosin"
+              ],
+              "answer": "Tamsulosin",
+              "explanation": "Tamsulosin is an α1-selective adrenoceptor antagonist that relaxes prostatic and bladder-neck smooth muscle, improving urinary flow in BPH."
+            },
+            {
+              "stem": "A 30-year-old female with a history of supraventricular tachycardia is admitted for a cardiac ablation procedure. Which drug should be administered to control her heart rate during the procedure?",
+              "options": [
+                "Atenolol",
+                "Clonidine",
+                "Metoprolol",
+                "Phenylephrine"
+              ],
+              "answer": "Metoprolol",
+              "explanation": "Metoprolol is a β1-selective antagonist that reduces heart rate and contractility, making it suitable for controlling supraventricular tachycardia."
+            },
+            {
+              "stem": "A 55-year-old male with a history of coronary artery disease presents with severe hypertension and angina. Which drug should be administered to rapidly lower his blood pressure and relieve his chest pain?",
+              "options": [
+                "Clonidine",
+                "Epinephrine",
+                "Nitroglycerin",
+                "Phenylephrine"
+              ],
+              "answer": "Nitroglycerin",
+              "explanation": "Nitroglycerin is a vasodilator that reduces preload and afterload, relieving angina and lowering blood pressure. It is not an autonomic drug but is the most appropriate choice in this scenario."
+            },
+            {
+              "stem": "A 28-year-old female with a history of asthma presents with acute bronchospasm and wheezing. Which drug should be administered to relieve her symptoms?",
+              "options": [
+                "Atropine",
+                "Ipratropium",
+                "Propranolol",
+                "Salbutamol"
+              ],
+              "answer": "Salbutamol",
+              "explanation": "Salbutamol is a selective β2-agonist that relaxes bronchial smooth muscle, relieving bronchospasm in asthma."
+            },
+            {
+              "stem": "A 60-year-old male with a history of Parkinson's disease presents with urinary retention. Which drug should be administered to relieve his symptoms?",
+              "options": [
+                "Bethanechol",
+                "Clonidine",
+                "Oxybutynin",
+                "Tolterodine"
+              ],
+              "answer": "Bethanechol",
+              "explanation": "Bethanechol is a muscarinic agonist that stimulates bladder detrusor contraction, relieving urinary retention."
+            },
+            {
+              "stem": "A 40-year-old female with a history of hypertension and diabetes presents with severe hypertension and tachycardia. Which drug should be administered to lower her blood pressure and heart rate?",
+              "options": [
+                "Clonidine",
+                "Labetalol",
+                "Prazosin",
+                "Propranolol"
+              ],
+              "answer": "Labetalol",
+              "explanation": "Labetalol is a nonselective β-blocker with α1-blocking activity, making it suitable for lowering both blood pressure and heart rate."
+            },
+            {
+              "stem": "A 50-year-old male with a history of glaucoma presents with elevated intraocular pressure. Which drug should be administered to lower his intraocular pressure?",
+              "options": [
+                "Atropine",
+                "Pilocarpine",
+                "Propranolol",
+                "Timolol"
+              ],
+              "answer": "Timolol",
+              "explanation": "Timolol is a nonselective β-blocker that reduces aqueous humor production, lowering intraocular pressure in glaucoma."
+            },
+            {
+              "stem": "A 35-year-old female with a history of hypertension and preeclampsia presents with severe hypertension. Which drug should be administered to lower her blood pressure?",
+              "options": [
+                "Clonidine",
+                "Hydralazine",
+                "Methyldopa",
+                "Nifedipine"
+              ],
+              "answer": "Hydralazine",
+              "explanation": "Hydralazine is a direct-acting vasodilator that rapidly lowers blood pressure in hypertensive emergencies, including preeclampsia."
+            },
+            {
+              "stem": "A 25-year-old male with a history of depression presents with severe hypertension and tachycardia. Which drug should be administered to lower his blood pressure and heart rate?",
+              "options": [
+                "Atenolol",
+                "Clonidine",
+                "Propranolol",
+                "Reserpine"
+              ],
+              "answer": "Propranolol",
+              "explanation": "Propranolol is a nonselective β-blocker that reduces heart rate and contractility, making it suitable for lowering blood pressure and heart rate in this scenario."
+            },
+            {
+              "stem": "A 65-year-old male with a history of hypertension and heart failure presents with severe hypertension and pulmonary edema. Which drug should be administered to lower his blood pressure and reduce fluid overload?",
+              "options": [
+                "Clonidine",
+                "Furosemide",
+                "Nitroglycerin",
+                "Prazosin"
+              ],
+              "answer": "Furosemide",
+              "explanation": "Furosemide is a loop diuretic that reduces fluid overload and lowers blood pressure in heart failure and pulmonary edema."
+            },
+            {
+              "stem": "A 40-year-old female with a history of hypertension and diabetes presents with severe hypertension and bradycardia. Which drug should be administered to lower her blood pressure without worsening her bradycardia?",
+              "options": [
+                "Atenolol",
+                "Clonidine",
+                "Labetalol",
+                "Prazosin"
+              ],
+              "answer": "Prazosin",
+              "explanation": "Prazosin is an α1-selective antagonist that lowers blood pressure without affecting heart rate, making it suitable for this scenario."
+            },
+            {
+              "stem": "A 50-year-old male with a history of hypertension and COPD presents with severe hypertension and tachycardia. Which drug should be administered to lower his blood pressure and heart rate without worsening his respiratory condition?",
+              "options": [
+                "Atenolol",
+                "Clonidine",
+                "Metoprolol",
+                "Propranolol"
+              ],
+              "answer": "Metoprolol",
+              "explanation": "Metoprolol is a β1-selective antagonist that reduces heart rate and contractility without affecting β2 receptors in the lungs, making it safer for patients with COPD."
+            },
+            {
+              "stem": "A 30-year-old female with a history of hypertension and pregnancy presents with severe hypertension. Which drug should be administered to lower her blood pressure safely?",
+              "options": [
+                "Clonidine",
+                "Labetalol",
+                "Methyldopa",
+                "Nifedipine"
+              ],
+              "answer": "Methyldopa",
+              "explanation": "Methyldopa is a centrally acting α2-agonist that lowers blood pressure safely in pregnancy."
+            },
+            {
+              "stem": "A 60-year-old male with a history of hypertension and heart failure presents with severe hypertension and pulmonary edema. Which drug should be administered to lower his blood pressure and reduce fluid overload?",
+              "options": [
+                "Clonidine",
+                "Furosemide",
+                "Nitroglycerin",
+                "Prazosin"
+              ],
+              "answer": "Nitroglycerin",
+              "explanation": "Nitroglycerin is a vasodilator that reduces preload and afterload, relieving pulmonary edema and lowering blood pressure."
+            },
+            {
+              "stem": "A 45-year-old male with a history of hypertension and diabetes presents with severe hypertension and tachycardia. Which drug should be administered to lower his blood pressure and heart rate?",
+              "options": [
+                "Atenolol",
+                "Clonidine",
+                "Labetalol",
+                "Prazosin"
+              ],
+              "answer": "Labetalol",
+              "explanation": "Labetalol is a nonselective β-blocker with α1-blocking activity, making it suitable for lowering both blood pressure and heart rate."
+            },
+            {
+              "stem": "A 55-year-old female with a history of hypertension and glaucoma presents with elevated intraocular pressure. Which drug should be administered to lower her intraocular pressure?",
+              "options": [
+                "Atropine",
+                "Pilocarpine",
+                "Propranolol",
+                "Timolol"
+              ],
+              "answer": "Timolol",
+              "explanation": "Timolol is a nonselective β-blocker that reduces aqueous humor production, lowering intraocular pressure in glaucoma."
+            },
+            {
+              "stem": "A 30-year-old male with a history of hypertension and asthma presents with severe hypertension and tachycardia. Which drug should be administered to lower his blood pressure and heart rate without worsening his respiratory condition?",
+              "options": [
+                "Atenolol",
+                "Clonidine",
+                "Metoprolol",
+                "Propranolol"
+              ],
+              "answer": "Metoprolol",
+              "explanation": "Metoprolol is a β1-selective antagonist that reduces heart rate and contractility without affecting β2 receptors in the lungs, making it safer for patients with asthma."
+            },
+            {
+              "stem": "A 60-year-old female with a history of hypertension and heart failure presents with severe hypertension and pulmonary edema. Which drug should be administered to lower her blood pressure and reduce fluid overload?",
+              "options": [
+                "Clonidine",
+                "Furosemide",
+                "Nitroglycerin",
+                "Prazosin"
+              ],
+              "answer": "Furosemide",
+              "explanation": "Furosemide is a loop diuretic that reduces fluid overload and lowers blood pressure in heart failure and pulmonary edema."
+            },
+            {
+              "stem": "A 40-year-old male with a history of hypertension and diabetes presents with severe hypertension and bradycardia. Which drug should be administered to lower his blood pressure without worsening his bradycardia?",
+              "options": [
+                "Atenolol",
+                "Clonidine",
+                "Labetalol",
+                "Prazosin"
+              ],
+              "answer": "Prazosin",
+              "explanation": "Prazosin is an α1-selective antagonist that lowers blood pressure without affecting heart rate, making it suitable for this scenario."
+            },
+            {
+              "stem": "A 50-year-old female with a history of hypertension and pregnancy presents with severe hypertension. Which drug should be administered to lower her blood pressure safely?",
+              "options": [
+                "Clonidine",
+                "Labetalol",
+                "Methyldopa",
+                "Nifedipine"
+              ],
+              "answer": "Methyldopa",
+              "explanation": "Methyldopa is a centrally acting α2-agonist that lowers blood pressure safely in pregnancy."
+            },
+            {
+              "stem": "A 35-year-old male with a history of hypertension and COPD presents with severe hypertension and tachycardia. Which drug should be administered to lower his blood pressure and heart rate without worsening his respiratory condition?",
+              "options": [
+                "Atenolol",
+                "Clonidine",
+                "Metoprolol",
+                "Propranolol"
+              ],
+              "answer": "Metoprolol",
+              "explanation": "Metoprolol is a β1-selective antagonist that reduces heart rate and contractility without affecting β2 receptors in the lungs, making it safer for patients with COPD."
+            },
+            {
+              "stem": "A 65-year-old male with a history of hypertension and heart failure presents with severe hypertension and pulmonary edema. Which drug should be administered to lower his blood pressure and reduce fluid overload?",
+              "options": [
+                "Clonidine",
+                "Furosemide",
+                "Nitroglycerin",
+                "Prazosin"
+              ],
+              "answer": "Nitroglycerin",
+              "explanation": "Nitroglycerin is a vasodilator that reduces preload and afterload, relieving pulmonary edema and lowering blood pressure."
+            },
+            {
+              "stem": "A 45-year-old female with a history of hypertension and diabetes presents with severe hypertension and tachycardia. Which drug should be administered to lower her blood pressure and heart rate?",
+              "options": [
+                "Atenolol",
+                "Clonidine",
+                "Labetalol",
+                "Prazosin"
+              ],
+              "answer": "Labetalol",
+              "explanation": "Labetalol is a nonselective β-blocker with α1-blocking activity, making it suitable for lowering both blood pressure and heart rate."
+            },
+            {
+              "stem": "A 50-year-old male with a history of hypertension and glaucoma presents with elevated intraocular pressure. Which drug should be administered to lower his intraocular pressure?",
+              "options": [
+                "Atropine",
+                "Pilocarpine",
+                "Propranolol",
+                "Timolol"
+              ],
+              "answer": "Timolol",
+              "explanation": "Timolol is a nonselective β-blocker that reduces aqueous humor production, lowering intraocular pressure in glaucoma."
+            },
+            {
+              "stem": "A 30-year-old female with a history of hypertension and asthma presents with severe hypertension and tachycardia. Which drug should be administered to lower her blood pressure and heart rate without worsening her respiratory condition?",
+              "options": [
+                "Atenolol",
+                "Clonidine",
+                "Metoprolol",
+                "Propranolol"
+              ],
+              "answer": "Metoprolol",
+              "explanation": "Metoprolol is a β1-selective antagonist that reduces heart rate and contractility without affecting β2 receptors in the lungs, making it safer for patients with asthma."
+            },
+            {
+              "stem": "A 60-year-old male with a history of hypertension and heart failure presents with severe hypertension and pulmonary edema. Which drug should be administered to lower his blood pressure and reduce fluid overload?",
+              "options": [
+                "Clonidine",
+                "Furosemide",
+                "Nitroglycerin",
+                "Prazosin"
+              ],
+              "answer": "Furosemide",
+              "explanation": "Furosemide is a loop diuretic that reduces fluid overload and lowers blood pressure in heart failure and pulmonary edema."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 55-year-old male with a history of hypertension and benign prostatic hyperplasia (BPH) presents to the clinic. (a) Which class of autonomic drugs would you recommend for this patient? (2 marks) (b) Explain the mechanism of action of the drug class mentioned in (a). (2 marks) (c) State four side effects of the drug class mentioned in (a). (2 marks)",
+              "modelAnswer": "a) Recommended class: α1-selective adrenoceptor antagonists (e.g., tamsulosin, doxazosin, terazosin). (2 marks)\nb) Mechanism of action: Selective competitive blockade of α1-adrenoceptors on (i) prostatic and bladder-neck smooth muscle → relaxation, improved urinary flow and reduced obstructive symptoms of BPH; (ii) vascular smooth muscle → arteriolar and venous dilatation, reduced peripheral resistance → lowered blood pressure. (2 marks)\nc) Four side effects: 1. Postural (orthostatic) hypotension / dizziness; 2. First-dose syncope; 3. Headache; 4. Nasal congestion; also fatigue, weakness, reflex tachycardia, fluid retention. (2 marks)"
+            },
+            {
+              "stem": "A 30-year-old female with a history of myasthenia gravis presents to the emergency department with severe muscle weakness and respiratory distress. (a) Which drug would you administer to confirm the diagnosis? (1 mark) (b) Explain the mechanism of action of the drug mentioned in (a). (2 marks) (c) State three side effects of the drug mentioned in (a). (2 marks)",
+              "modelAnswer": "a) Drug: Edrophonium. (1 mark)\nb) Mechanism of action: Edrophonium is a short-acting, reversible cholinesterase inhibitor that increases acetylcholine at the neuromuscular junction, transiently improving muscle strength in myasthenia gravis. (2 marks)\nc) Three side effects: 1. Cholinergic crisis (muscle weakness, fasciculations, respiratory distress); 2. Bradycardia; 3. Hypotension; also nausea, vomiting, and abdominal cramps. (2 marks)"
+            },
+            {
+              "stem": "A 60-year-old male with a history of hypertension and glaucoma presents to the clinic. (a) Which class of autonomic drugs would you recommend for this patient? (2 marks) (b) Explain the mechanism of action of the drug class mentioned in (a). (2 marks) (c) State three side effects of the drug class mentioned in (a). (2 marks)",
+              "modelAnswer": "a) Recommended class: β-blockers (e.g., timolol, betaxolol, carteolol). (2 marks)\nb) Mechanism of action: Nonselective β-blockers reduce aqueous humor production by the ciliary epithelium, lowering intraocular pressure in glaucoma. (2 marks)\nc) Three side effects: 1. Systemic absorption may cause bradycardia and hypotension; 2. Bronchospasm (in nonselective agents); 3. Ocular irritation, dry eyes; also headache, fatigue, and blurred vision. (2 marks)"
+            },
+            {
+              "stem": "A 45-year-old male with a history of hypertension and asthma presents to the clinic. (a) Which class of autonomic drugs would you avoid in this patient? (1 mark) (b) Explain the reason for your choice in (a). (2 marks) (c) State three alternative classes of drugs that could be used to manage his hypertension. (2 marks)",
+              "modelAnswer": "a) Avoid: Nonselective β-blockers (e.g., propranolol). (1 mark)\nb) Reason: Nonselective β-blockers block β2-adrenoceptors in the lungs, leading to bronchoconstriction and worsening asthma symptoms. (2 marks)\nc) Three alternative classes: 1. Calcium channel blockers (e.g., nifedipine, amlodipine); 2. ACE inhibitors (e.g., enalapril, lisinopril); 3. Angiotensin II receptor blockers (e.g., losartan, valsartan). (2 marks)"
+            },
+            {
+              "stem": "A 50-year-old female with a history of hypertension and pregnancy presents to the clinic. (a) Which class of autonomic drugs would you recommend for this patient? (1 mark) (b) Explain the mechanism of action of the drug class mentioned in (a). (2 marks) (c) State three side effects of the drug class mentioned in (a). (2 marks)",
+              "modelAnswer": "a) Recommended class: Centrally acting α2-agonists (e.g., methyldopa). (1 mark)\nb) Mechanism of action: Methyldopa is converted to α-methylnorepinephrine, a false neurotransmitter that stimulates central α2-adrenoceptors in the vasomotor centre, reducing sympathetic outflow and lowering blood pressure. (2 marks)\nc) Three side effects: 1. Sedation; 2. Dry mouth; 3. Postural hypotension; also dizziness, headache, and bradycardia. (2 marks)"
+            },
+            {
+              "stem": "A 35-year-old male with a history of organophosphate poisoning presents to the emergency department. (a) Which two drugs would you administer to manage his condition? (2 marks) (b) Explain the role of each drug mentioned in (a). (3 marks) (c) State two side effects of each drug mentioned in (a). (2 marks)",
+              "modelAnswer": "a) Drugs: Atropine and pralidoxime. (2 marks)\nb) Roles: Atropine reverses muscarinic symptoms (e.g., salivation, lacrimation, urination, diarrhea, miosis, bradycardia) by blocking muscarinic receptors. Pralidoxime reactivates inhibited cholinesterase by removing the organophosphate from the enzyme, restoring normal neurotransmission. (3 marks)\nc) Side effects: Atropine — 1. Tachycardia; 2. Dry mouth, blurred vision, urinary retention. Pralidoxime — 1. Muscle weakness; 2. Headache, dizziness, nausea. (2 marks)"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Describe ATROPINE under the following headings: (15 marks) (a) Mode of action (2 marks) (b) Five clinical applications (5 marks) (c) Ten side effects (5 marks) (d) Three drug-drug interactions (3 marks)",
+              "modelAnswer": "a) Mode of action (2 marks): Competitive antagonist at muscarinic (M1–M5) cholinoceptors — reversibly blocks acetylcholine at postganglionic parasympathetic effector sites (heart, smooth muscle, glands, eye) and, being a tertiary amine, also at central muscarinic receptors. No intrinsic agonist activity.\n\nb) Five clinical applications (5 marks):\n1. Pre-anaesthetic medication — reduces salivary/bronchial secretions and prevents vagal bradycardia during intubation.\n2. Bradyarrhythmias — treatment of symptomatic sinus bradycardia and AV block (e.g., after myocardial infarction).\n3. Organophosphate/carbamate insecticide poisoning — reverses muscarinic effects (given with pralidoxime for reactivation of cholinesterase).\n4. Ophthalmic use — mydriasis and cycloplegia for fundoscopy, refraction, and treatment of uveitis/iritis.\n5. Antispasmodic — relief of gastrointestinal, biliary or renal colic.\n6. Antidote to antimuscarinic drug overdose (e.g., atropine-like poisoning from nightshade berries).\n\nc) Ten side effects (5 marks):\n1. Dry mouth; 2. Blurred vision and photophobia (cycloplegia, mydriasis); 3. Tachycardia; 4. Urinary retention; 5. Constipation; 6. Anhidrosis and heat intolerance; 7. Confusion, hallucinations, delirium (central anticholinergic syndrome); 8. Glaucoma exacerbation (angle-closure); 9. Palpitations; 10. Paradoxical bradycardia (with low doses).\n\nd) Three drug-drug interactions (3 marks):\n1. Other anticholinergics (e.g., tricyclic antidepressants, antipsychotics, antihistamines) — additive anticholinergic effects (increased risk of delirium, tachycardia, urinary retention).\n2. Cholinesterase inhibitors (e.g., neostigmine, pyridostigmine) — antagonise atropine’s effects; atropine may be used to counteract cholinergic crisis from cholinesterase inhibitors.\n3. Digoxin — atropine may increase digoxin absorption and toxicity by reducing gastrointestinal motility."
+            },
+            {
+              "stem": "Describe PROPRANOLOL under the following headings: (15 marks) (a) Mode of action (2 marks) (b) Seven clinical applications (7 marks) (c) Six side effects (3 marks) (d) Three drug-drug interactions (3 marks)",
+              "modelAnswer": "a) Mode of action (2 marks): Nonselective competitive antagonist at β1- and β2-adrenoceptors — blocks catecholamine effects on the heart (β1: reduced rate, contractility, conduction) and on bronchial/vascular smooth muscle and metabolic tissues (β2). Membrane-stabilising effect only at high doses.\n\nb) Seven clinical applications (7 marks):\n1. Hypertension — reduces cardiac output and renin release.\n2. Angina pectoris — reduces myocardial oxygen demand.\n3. Post-myocardial infarction — secondary prevention (reduces mortality and arrhythmias).\n4. Cardiac arrhythmias — supraventricular tachyarrhythmias, rate control in atrial fibrillation/flutter.\n5. Heart failure — compensated stable HFrEF (initiated cautiously, uptitrated under specialist supervision).\n6. Migraine prophylaxis — reduces frequency and severity of attacks.\n7. Essential tremor — symptomatic control.\n8. Thyrotoxicosis/hyperthyroidism — controls tachycardia, tremor, and other adrenergic symptoms.\n9. Portal hypertension — reduces portal venous pressure in cirrhosis.\n\nc) Six side effects (3 marks):\n1. Bradycardia and heart block; 2. Hypotension; 3. Bronchospasm (β2 blockade); 4. Fatigue and lethargy; 5. Cold extremities; 6. Masking of hypoglycaemia symptoms (tremor, tachycardia) in diabetics.\n\nd) Three drug-drug interactions (3 marks):\n1. Calcium channel blockers (e.g., verapamil, diltiazem) — additive negative inotropic and chronotropic effects, risk of severe bradycardia, heart failure, or asystole.\n2. Digoxin — additive bradycardic effect; increased risk of AV block.\n3. Insulin or oral hypoglycaemics — propranolol masks tachycardia and tremor, delaying recognition of hypoglycaemia; may prolong hypoglycaemia by inhibiting glycogenolysis."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "pharm-vitamins-hormones": {
+    "3": {
+      "title": "Vitamins, Hormones & Endocrine Pharmacology",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 45-year-old man with a history of chronic alcohol use disorder presents with confusion, ataxia, and ophthalmoplegia. Which vitamin deficiency is most likely responsible for these symptoms?",
+              "options": [
+                "Vitamin B1 (thiamine)",
+                "Vitamin B6 (pyridoxine)",
+                "Vitamin B12 (cyanocobalamin)",
+                "Vitamin E (tocopherol)"
+              ],
+              "answer": "Vitamin B1 (thiamine)",
+              "explanation": "The triad of confusion, ataxia, and ophthalmoplegia is classic for Wernicke encephalopathy, caused by thiamine (vitamin B1) deficiency in alcoholics."
+            },
+            {
+              "stem": "A 60-year-old woman with osteoporosis is prescribed a medication that inhibits osteoclast-mediated bone resorption. Which drug class does this medication belong to?",
+              "options": [
+                "Selective estrogen receptor modulators (SERMs)",
+                "Bisphosphonates",
+                "Parathyroid hormone analogues",
+                "Calcium supplements"
+              ],
+              "answer": "Bisphosphonates",
+              "explanation": "Bisphosphonates (e.g., alendronate, zoledronic acid) inhibit osteoclast activity, reducing bone resorption and improving bone density in osteoporosis."
+            },
+            {
+              "stem": "A 28-year-old woman with Graves' disease is started on a drug that inhibits thyroid hormone synthesis by blocking thyroid peroxidase. Which drug is this?",
+              "options": [
+                "Levothyroxine",
+                "Methimazole",
+                "Potassium iodide",
+                "Propranolol"
+              ],
+              "answer": "Methimazole",
+              "explanation": "Methimazole inhibits thyroid peroxidase, blocking the organification of iodide and coupling of iodotyrosines, thereby reducing thyroid hormone synthesis."
+            },
+            {
+              "stem": "A 50-year-old man with type 2 diabetes and chronic kidney disease (eGFR 30 mL/min/1.73m²) develops lactic acidosis. Which antidiabetic drug is most likely responsible?",
+              "options": [
+                "Metformin",
+                "Glipizide",
+                "Pioglitazone",
+                "Sitagliptin"
+              ],
+              "answer": "Metformin",
+              "explanation": "Metformin is contraindicated in significant renal impairment due to the risk of lactic acidosis, which is more likely in patients with reduced eGFR."
+            },
+            {
+              "stem": "A 35-year-old woman with a history of deep vein thrombosis is prescribed a combined oral contraceptive pill. Which component of the pill is contraindicated in this patient?",
+              "options": [
+                "Ethinyl estradiol",
+                "Levonorgestrel",
+                "Norethindrone",
+                "Drospirenone"
+              ],
+              "answer": "Ethinyl estradiol",
+              "explanation": "Ethinyl estradiol (an estrogen) increases the risk of venous thromboembolism and is contraindicated in patients with a history of DVT or other thrombotic disorders."
+            },
+            {
+              "stem": "A 70-year-old man with a history of hypertension and type 2 diabetes is started on a drug that increases urinary glucose excretion by inhibiting the sodium-glucose cotransporter 2 (SGLT2) in the proximal renal tubule. Which drug is this?",
+              "options": [
+                "Empagliflozin",
+                "Liraglutide",
+                "Glimepiride",
+                "Acarbose"
+              ],
+              "answer": "Empagliflozin",
+              "explanation": "Empagliflozin is an SGLT2 inhibitor that promotes glycosuria by blocking glucose reabsorption in the proximal renal tubule, thereby lowering blood glucose."
+            },
+            {
+              "stem": "A 40-year-old woman with a history of rheumatoid arthritis is started on long-term prednisone therapy. Which of the following adverse effects is irreversible?",
+              "options": [
+                "Moon face appearance",
+                "Increased blood pressure",
+                "Osteoporosis with vertebral fractures",
+                "Increased susceptibility to infections"
+              ],
+              "answer": "Osteoporosis with vertebral fractures",
+              "explanation": "Vertebral fractures due to glucocorticoid-induced osteoporosis are often irreversible, whereas moon face, hypertension, and infection risk are reversible upon tapering the steroid."
+            },
+            {
+              "stem": "A 25-year-old woman with a history of epilepsy is started on phenytoin. She is advised to increase her intake of which vitamin to prevent deficiency?",
+              "options": [
+                "Vitamin B6 (pyridoxine)",
+                "Vitamin D (calciferol)",
+                "Vitamin K (phylloquinone)",
+                "Vitamin B12 (cyanocobalamin)"
+              ],
+              "answer": "Vitamin D (calciferol)",
+              "explanation": "Phenytoin is a hepatic enzyme inducer that accelerates the metabolism of vitamin D, leading to deficiency and potential osteomalacia or rickets."
+            },
+            {
+              "stem": "A 55-year-old man with a history of atrial fibrillation is diagnosed with hypothyroidism. Which medication is most likely responsible for his hypothyroid state?",
+              "options": [
+                "Amiodarone",
+                "Furosemide",
+                "Metoprolol",
+                "Simvastatin"
+              ],
+              "answer": "Amiodarone",
+              "explanation": "Amiodarone contains iodine and can cause hypothyroidism by inhibiting thyroid hormone synthesis (Wolff-Chaikoff effect) or by inducing thyroiditis."
+            },
+            {
+              "stem": "A 30-year-old man with a history of anabolic steroid abuse presents with jaundice, elevated liver enzymes, and gynecomastia. Which of the following is the most likely cause of his gynecomastia?",
+              "options": [
+                "Increased testosterone production",
+                "Increased estrogen production",
+                "Decreased prolactin levels",
+                "Increased cortisol levels"
+              ],
+              "answer": "Increased estrogen production",
+              "explanation": "Anabolic steroids are converted to estrogens via aromatase, leading to elevated estrogen levels and gynecomastia in men."
+            },
+            {
+              "stem": "A 65-year-old woman with a history of hypertension and type 2 diabetes is started on a drug that reduces hepatic glucose production and increases insulin sensitivity. Which drug is this?",
+              "options": [
+                "Metformin",
+                "Glipizide",
+                "Pioglitazone",
+                "Insulin glargine"
+              ],
+              "answer": "Metformin",
+              "explanation": "Metformin reduces hepatic gluconeogenesis and increases peripheral insulin sensitivity, making it a first-line therapy for type 2 diabetes."
+            },
+            {
+              "stem": "A 42-year-old woman with a history of breast cancer is prescribed tamoxifen. Which of the following is a common adverse effect of tamoxifen?",
+              "options": [
+                "Hot flashes",
+                "Hypocalcemia",
+                "Hyperthyroidism",
+                "Hypoglycemia"
+              ],
+              "answer": "Hot flashes",
+              "explanation": "Tamoxifen is a selective estrogen receptor modulator (SERM) that can cause hot flashes due to its estrogenic effects in some tissues."
+            },
+            {
+              "stem": "A 50-year-old man with a history of chronic obstructive pulmonary disease (COPD) is started on high-dose oral prednisone. Which of the following is a common adverse effect of this therapy?",
+              "options": [
+                "Hyperkalemia",
+                "Hypoglycemia",
+                "Osteoporosis",
+                "Bradycardia"
+              ],
+              "answer": "Osteoporosis",
+              "explanation": "Long-term glucocorticoid therapy, such as high-dose prednisone, increases the risk of osteoporosis due to decreased bone formation and increased bone resorption."
+            },
+            {
+              "stem": "A 38-year-old woman with a history of infertility is prescribed clomiphene citrate. Which of the following is the mechanism of action of clomiphene?",
+              "options": [
+                "Inhibits estrogen receptors in the hypothalamus",
+                "Stimulates follicle-stimulating hormone (FSH) secretion",
+                "Inhibits progesterone receptors",
+                "Stimulates luteinizing hormone (LH) secretion"
+              ],
+              "answer": "Inhibits estrogen receptors in the hypothalamus",
+              "explanation": "Clomiphene citrate is a selective estrogen receptor modulator (SERM) that inhibits estrogen receptors in the hypothalamus, leading to increased FSH and LH secretion and ovulation."
+            },
+            {
+              "stem": "A 60-year-old man with a history of benign prostatic hyperplasia (BPH) is prescribed finasteride. Which of the following is the mechanism of action of finasteride?",
+              "options": [
+                "Alpha-1 adrenergic receptor antagonist",
+                "5-alpha reductase inhibitor",
+                "Androgen receptor antagonist",
+                "Phosphodiesterase-5 inhibitor"
+              ],
+              "answer": "5-alpha reductase inhibitor",
+              "explanation": "Finasteride inhibits 5-alpha reductase, reducing the conversion of testosterone to dihydrotestosterone (DHT), which is responsible for prostate enlargement."
+            },
+            {
+              "stem": "A 25-year-old woman with a history of irregular menses and hirsutism is diagnosed with polycystic ovary syndrome (PCOS). Which of the following drugs is most appropriate for managing her hirsutism?",
+              "options": [
+                "Metformin",
+                "Spironolactone",
+                "Levothyroxine",
+                "Dexamethasone"
+              ],
+              "answer": "Spironolactone",
+              "explanation": "Spironolactone is an antiandrogen that blocks androgen receptors, reducing hirsutism in women with PCOS."
+            },
+            {
+              "stem": "A 45-year-old man with a history of type 2 diabetes and hypertension is started on a drug that reduces blood pressure and has a beneficial effect on albuminuria. Which drug class is this?",
+              "options": [
+                "Thiazide diuretics",
+                "Calcium channel blockers",
+                "Angiotensin-converting enzyme (ACE) inhibitors",
+                "Beta-blockers"
+              ],
+              "answer": "Angiotensin-converting enzyme (ACE) inhibitors",
+              "explanation": "ACE inhibitors (e.g., enalapril, lisinopril) reduce blood pressure and have renoprotective effects, including reducing albuminuria in diabetic nephropathy."
+            },
+            {
+              "stem": "A 30-year-old woman with a history of migraines is prescribed a combined oral contraceptive pill. Which component of the pill is most likely to exacerbate her migraines?",
+              "options": [
+                "Ethinyl estradiol",
+                "Levonorgestrel",
+                "Norethindrone",
+                "Drospirenone"
+              ],
+              "answer": "Ethinyl estradiol",
+              "explanation": "Estrogen-containing contraceptives can exacerbate migraines in susceptible women due to estrogen's effects on vascular tone and neurotransmitter systems."
+            },
+            {
+              "stem": "A 55-year-old man with a history of type 2 diabetes and chronic kidney disease is started on a drug that reduces blood glucose by increasing insulin secretion in a glucose-dependent manner. Which drug is this?",
+              "options": [
+                "Glipizide",
+                "Metformin",
+                "Liraglutide",
+                "Acarbose"
+              ],
+              "answer": "Liraglutide",
+              "explanation": "Liraglutide is a GLP-1 receptor agonist that increases insulin secretion in a glucose-dependent manner, reducing the risk of hypoglycemia compared to sulfonylureas."
+            },
+            {
+              "stem": "A 40-year-old woman with a history of osteoporosis is prescribed alendronate. Which of the following instructions is most important to give her to maximize the drug's efficacy?",
+              "options": [
+                "Take with food to reduce gastrointestinal irritation",
+                "Take at bedtime to improve absorption",
+                "Take on an empty stomach with a full glass of water and remain upright for 30 minutes",
+                "Take with calcium supplements to enhance absorption"
+              ],
+              "answer": "Take on an empty stomach with a full glass of water and remain upright for 30 minutes",
+              "explanation": "Alendronate requires an empty stomach for optimal absorption and must be taken with a full glass of water, followed by remaining upright for 30 minutes to prevent esophageal irritation."
+            },
+            {
+              "stem": "A 35-year-old man with a history of type 1 diabetes is brought to the emergency department with confusion, sweating, and tachycardia. His blood glucose is 2.5 mmol/L. Which of the following is the most appropriate immediate treatment?",
+              "options": [
+                "Intravenous insulin",
+                "Oral glucose tablets",
+                "Intravenous glucagon",
+                "Subcutaneous glucagon"
+              ],
+              "answer": "Intravenous glucagon",
+              "explanation": "Intravenous glucagon is the most appropriate immediate treatment for severe hypoglycemia in a patient unable to take oral glucose, as it rapidly raises blood glucose levels."
+            },
+            {
+              "stem": "A 60-year-old woman with a history of hypertension and type 2 diabetes is started on a drug that reduces blood pressure and has a beneficial effect on bone mineral density. Which drug class is this?",
+              "options": [
+                "Beta-blockers",
+                "Thiazide diuretics",
+                "Angiotensin II receptor blockers (ARBs)",
+                "Calcium channel blockers"
+              ],
+              "answer": "Thiazide diuretics",
+              "explanation": "Thiazide diuretics (e.g., hydrochlorothiazide) reduce blood pressure and can increase bone mineral density by reducing urinary calcium excretion."
+            },
+            {
+              "stem": "A 45-year-old woman with a history of breast cancer is prescribed anastrozole. Which of the following is a common adverse effect of anastrozole?",
+              "options": [
+                "Hot flashes",
+                "Hypocalcemia",
+                "Hyperthyroidism",
+                "Hypoglycemia"
+              ],
+              "answer": "Hot flashes",
+              "explanation": "Anastrozole is an aromatase inhibitor that reduces estrogen levels, leading to hot flashes as a common adverse effect."
+            },
+            {
+              "stem": "A 50-year-old man with a history of type 2 diabetes and heart failure is started on a drug that reduces blood glucose and has a proven benefit in reducing cardiovascular mortality. Which drug is this?",
+              "options": [
+                "Glipizide",
+                "Pioglitazone",
+                "Empagliflozin",
+                "Acarbose"
+              ],
+              "answer": "Empagliflozin",
+              "explanation": "Empagliflozin is an SGLT2 inhibitor that reduces blood glucose and has been shown to reduce cardiovascular mortality and hospitalization for heart failure in patients with type 2 diabetes."
+            },
+            {
+              "stem": "A 30-year-old woman with a history of infertility is prescribed letrozole. Which of the following is the mechanism of action of letrozole?",
+              "options": [
+                "Inhibits estrogen receptors in the hypothalamus",
+                "Stimulates follicle-stimulating hormone (FSH) secretion",
+                "Inhibits aromatase, reducing estrogen synthesis",
+                "Stimulates luteinizing hormone (LH) secretion"
+              ],
+              "answer": "Inhibits aromatase, reducing estrogen synthesis",
+              "explanation": "Letrozole is an aromatase inhibitor that reduces estrogen synthesis, leading to increased FSH secretion and ovulation in women with infertility."
+            },
+            {
+              "stem": "A 65-year-old man with a history of type 2 diabetes and chronic kidney disease is started on a drug that reduces blood glucose by inhibiting the sodium-glucose cotransporter 2 (SGLT2) in the proximal renal tubule. Which drug is this?",
+              "options": [
+                "Metformin",
+                "Glipizide",
+                "Dapagliflozin",
+                "Pioglitazone"
+              ],
+              "answer": "Dapagliflozin",
+              "explanation": "Dapagliflozin is an SGLT2 inhibitor that promotes glycosuria by blocking glucose reabsorption in the proximal renal tubule, thereby lowering blood glucose."
+            },
+            {
+              "stem": "A 40-year-old woman with a history of hypothyroidism is started on levothyroxine. Which of the following is the most appropriate time to take levothyroxine to maximize absorption?",
+              "options": [
+                "With breakfast to improve absorption",
+                "At bedtime to reduce gastrointestinal irritation",
+                "On an empty stomach, 30-60 minutes before breakfast",
+                "With a calcium supplement to enhance absorption"
+              ],
+              "answer": "On an empty stomach, 30-60 minutes before breakfast",
+              "explanation": "Levothyroxine should be taken on an empty stomach, 30-60 minutes before breakfast, to maximize absorption and minimize interactions with food or other medications."
+            },
+            {
+              "stem": "A 55-year-old man with a history of type 2 diabetes and hypertension is started on a drug that reduces blood pressure and has a beneficial effect on albuminuria. Which drug class is this?",
+              "options": [
+                "Thiazide diuretics",
+                "Calcium channel blockers",
+                "Angiotensin-converting enzyme (ACE) inhibitors",
+                "Beta-blockers"
+              ],
+              "answer": "Angiotensin-converting enzyme (ACE) inhibitors",
+              "explanation": "ACE inhibitors (e.g., enalapril, lisinopril) reduce blood pressure and have renoprotective effects, including reducing albuminuria in diabetic nephropathy."
+            },
+            {
+              "stem": "A 30-year-old woman with a history of irregular menses and hirsutism is diagnosed with polycystic ovary syndrome (PCOS). Which of the following drugs is most appropriate for managing her irregular menses?",
+              "options": [
+                "Metformin",
+                "Spironolactone",
+                "Levothyroxine",
+                "Dexamethasone"
+              ],
+              "answer": "Metformin",
+              "explanation": "Metformin improves insulin sensitivity and can restore ovulation in women with PCOS, thereby regulating menstrual cycles."
+            },
+            {
+              "stem": "A 60-year-old woman with a history of osteoporosis is prescribed denosumab. Which of the following is the mechanism of action of denosumab?",
+              "options": [
+                "Inhibits osteoclast-mediated bone resorption",
+                "Stimulates osteoblast activity",
+                "Inhibits parathyroid hormone secretion",
+                "Inhibits vitamin D metabolism"
+              ],
+              "answer": "Inhibits osteoclast-mediated bone resorption",
+              "explanation": "Denosumab is a monoclonal antibody that inhibits RANKL, a key mediator of osteoclast formation, function, and survival, thereby reducing bone resorption."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 28-year-old woman with a history of Graves' disease is started on methimazole. (6 marks)\na) What is the mechanism of action of methimazole? (2 marks)\nb) State two potential adverse effects of methimazole. (2 marks)\nc) Describe the monitoring required for this patient. (2 marks)",
+              "modelAnswer": "a) Mechanism of action (2 marks): Methimazole inhibits thyroid peroxidase, blocking the organification of iodide and the coupling of iodotyrosines, thereby reducing the synthesis of thyroid hormones (T3 and T4).\nb) Adverse effects (2 marks): Agranulocytosis (rare but serious) and hepatotoxicity (elevated liver enzymes or jaundice).\nc) Monitoring (2 marks): Regular thyroid function tests (TSH, free T4) every 4-6 weeks initially; complete blood count (CBC) to monitor for agranulocytosis; liver function tests (ALT, AST) to monitor for hepatotoxicity."
+            },
+            {
+              "stem": "A 50-year-old man with type 2 diabetes and chronic kidney disease (eGFR 30 mL/min/1.73m²) is started on empagliflozin. (7 marks)\na) What is the mechanism of action of empagliflozin? (2 marks)\nb) State two clinical benefits of empagliflozin in this patient. (2 marks)\nc) State two potential adverse effects of empagliflozin. (2 marks)\nd) Describe the monitoring required for this patient. (1 mark)",
+              "modelAnswer": "a) Mechanism of action (2 marks): Empagliflozin inhibits the sodium-glucose cotransporter 2 (SGLT2) in the proximal renal tubule, reducing glucose reabsorption and promoting glycosuria.\nb) Clinical benefits (2 marks): Improved glycemic control and reduced risk of hospitalization for heart failure (cardiovascular benefit).\nc) Adverse effects (2 marks): Genital mycotic infections (e.g., candidiasis) and urinary tract infections (UTIs).\nd) Monitoring (1 mark): Renal function (serum creatinine/eGFR) and HbA1c every 3-6 months."
+            },
+            {
+              "stem": "A 35-year-old woman with a history of polycystic ovary syndrome (PCOS) is prescribed metformin. (7 marks)\na) What is the mechanism of action of metformin in PCOS? (2 marks)\nb) State two clinical benefits of metformin in this patient. (2 marks)\nc) State two potential adverse effects of metformin. (2 marks)\nd) Describe the monitoring required for this patient. (1 mark)",
+              "modelAnswer": "a) Mechanism of action (2 marks): Metformin improves insulin sensitivity, reduces hepatic gluconeogenesis, and may have direct effects on ovarian steroidogenesis.\nb) Clinical benefits (2 marks): Improved menstrual regularity (restoration of ovulation) and reduced hirsutism.\nc) Adverse effects (2 marks): Gastrointestinal upset (nausea, diarrhea) and lactic acidosis (rare but serious).\nd) Monitoring (1 mark): HbA1c every 3-6 months and renal function (serum creatinine/eGFR) annually."
+            },
+            {
+              "stem": "A 60-year-old woman with a history of osteoporosis is prescribed alendronate. (6 marks)\na) What is the mechanism of action of alendronate? (2 marks)\nb) State two clinical benefits of alendronate. (2 marks)\nc) State two potential adverse effects of alendronate. (2 marks)",
+              "modelAnswer": "a) Mechanism of action (2 marks): Alendronate is a bisphosphonate that inhibits osteoclast-mediated bone resorption by binding to hydroxyapatite in bone and inhibiting osteoclast activity.\nb) Clinical benefits (2 marks): Increased bone mineral density (BMD) and reduced risk of vertebral and non-vertebral fractures.\nc) Adverse effects (2 marks): Esophageal irritation/ulceration and osteonecrosis of the jaw (rare)."
+            },
+            {
+              "stem": "A 45-year-old man with a history of type 1 diabetes is started on insulin detemir. (7 marks)\na) What is the duration of action of insulin detemir? (1 mark)\nb) State two clinical benefits of insulin detemir. (2 marks)\nc) State two potential adverse effects of insulin detemir. (2 marks)\nd) Describe the monitoring required for this patient. (2 marks)",
+              "modelAnswer": "a) Duration of action (1 mark): 18-24 hours (long-acting insulin).\nb) Clinical benefits (2 marks): Provides basal insulin coverage with a reduced risk of nocturnal hypoglycemia and flexible dosing (can be administered once or twice daily).\nc) Adverse effects (2 marks): Hypoglycemia and injection-site reactions (e.g., lipodystrophy).\nd) Monitoring (2 marks): Fasting blood glucose levels daily and HbA1c every 3-6 months; monitor for signs and symptoms of hypoglycemia."
+            },
+            {
+              "stem": "Compare and contrast levothyroxine and liothyronine in terms of their pharmacokinetics and clinical applications. (7 marks)",
+              "modelAnswer": "Levothyroxine (T4):\n- Pharmacokinetics: Oral bioavailability ~80%, peak levels in 2-4 hours, half-life ~7 days, converted to active T3 in peripheral tissues.\n- Clinical applications: First-line therapy for hypothyroidism; once-daily dosing; stable and predictable effects.\n\nLiothyronine (T3):\n- Pharmacokinetics: Oral bioavailability ~95%, peak levels in 2-4 hours, half-life ~1 day, rapid onset and offset of action.\n- Clinical applications: Used in myxedema coma (IV) or for rapid correction in specific cases (e.g., T3 suppression testing); not used for routine hypothyroidism due to short half-life and risk of fluctuations in thyroid hormone levels.\n\nComparison (7 marks): Levothyroxine is preferred for long-term replacement due to its stability and predictable pharmacokinetics, while liothyronine is reserved for acute situations requiring rapid thyroid hormone effects."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Describe INSULIN in terms of the following: (15 marks)\na) Classes and examples (3 marks)\nb) Mode of action (3 marks)\nc) Clinical applications (4 marks)\nd) Side effects (3 marks)\ne) Contraindications (2 marks)",
+              "modelAnswer": "a) Classes and examples (3 marks):\n- Rapid-acting analogues: Insulin lispro, insulin aspart, insulin glulisine (onset ~5-15 min, peak 1-2 h, duration 3-5 h).\n- Short-acting: Regular insulin (onset ~30 min, peak 2-4 h, duration 6-8 h).\n- Intermediate-acting: NPH (isophane) insulin (onset 1-2 h, peak 4-10 h, duration 18-24 h).\n- Long-acting: Insulin glargine, insulin detemir (peakless, duration ~24 h); ultra-long insulin degludec (>42 h).\n- Premixed: e.g., 70/30 (NPH/regular) or biphasic insulin aspart.\n\nb) Mode of action (3 marks):\nInsulin binds to the insulin receptor (a tyrosine kinase receptor) on target cells, leading to autophosphorylation and activation of intracellular signaling pathways. This results in translocation of GLUT4 transporters to the cell membrane, increasing glucose uptake in muscle and adipose tissue. Insulin also promotes glycogenesis, lipogenesis, and protein synthesis while inhibiting gluconeogenesis, glycogenolysis, lipolysis, and proteolysis.\n\nc) Clinical applications (4 marks):\n- Type 1 diabetes mellitus (essential therapy).\n- Type 2 diabetes mellitus (when oral agents are insufficient or in acute settings like hyperglycemic crises).\n- Gestational diabetes (if diet and exercise are insufficient).\n- Hyperkalemia (with glucose to shift potassium intracellularly).\n- Diabetic ketoacidosis (DKA) and hyperosmolar hyperglycemic state (HHS) (IV regular insulin).\n- Stress hyperglycemia in hospitalized patients.\n\nd) Side effects (3 marks):\n- Hypoglycemia (most common and serious).\n- Weight gain (due to anabolic effects).\n- Injection-site reactions (e.g., lipodystrophy, lipoatrophy).\n- Rarely, allergic reactions (e.g., insulin allergy, anaphylaxis).\n\ne) Contraindications (2 marks):\n- Hypoglycemia (relative contraindication to further insulin administration).\n- Known hypersensitivity to insulin or its components."
+            },
+            {
+              "stem": "Describe CORTICOSTEROIDS in terms of the following: (15 marks)\na) Classes and examples (3 marks)\nb) Mode of action (3 marks)\nc) Clinical applications (4 marks)\nd) Side effects (3 marks)\ne) Drug-drug interactions (2 marks)",
+              "modelAnswer": "a) Classes and examples (3 marks):\n- By duration of action: Short-acting (hydrocortisone, cortisone), intermediate-acting (prednisone, prednisolone, methylprednisolone, triamcinolone), long-acting (dexamethasone, betamethasone).\n- By predominant activity: Glucocorticoids (anti-inflammatory/metabolic effects) and mineralocorticoids (salt-retaining effects, e.g., fludrocortisone).\n- By route/formulation: Systemic (oral/IV), topical (skin), inhaled (asthma), ophthalmic, intra-articular.\n\nb) Mode of action (3 marks):\nCorticosteroids are lipophilic and diffuse into cells, where they bind to cytoplasmic glucocorticoid receptors. The receptor-ligand complex translocates to the nucleus and modulates gene transcription via transactivation (increasing anti-inflammatory proteins like lipocortin-1 and IκB-α) and transrepression (decreasing pro-inflammatory cytokines like IL-1, IL-2, IL-6, and TNF-α).\n\nc) Clinical applications (4 marks):\n- Anti-inflammatory/immunosuppressive therapy (e.g., rheumatoid arthritis, systemic lupus erythematosus, inflammatory bowel disease).\n- Allergic reactions (e.g., anaphylaxis, severe asthma).\n- Autoimmune diseases (e.g., multiple sclerosis, myasthenia gravis).\n- Organ transplant rejection prophylaxis.\n- Replacement therapy in adrenal insufficiency (Addison’s disease).\n- Cerebral edema (e.g., dexamethasone in brain tumors or meningitis).\n- Nausea/vomiting (e.g., dexamethasone in chemotherapy-induced nausea).\n\nd) Side effects (3 marks):\n- Metabolic: Hyperglycemia, weight gain, central obesity, moon face, buffalo hump.\n- Musculoskeletal: Osteoporosis, avascular necrosis, proximal myopathy.\n- Cardiovascular: Hypertension, fluid retention.\n- Dermatologic: Skin thinning, easy bruising, poor wound healing, acne, hirsutism.\n- Immunologic: Increased susceptibility to infections.\n- Ophthalmic: Cataracts, glaucoma.\n- Psychiatric: Mood swings, insomnia, depression, psychosis.\n- Endocrine: Adrenal suppression (HPA axis suppression).\n\ne) Drug-drug interactions (2 marks):\n- Increased risk of peptic ulcer disease with NSAIDs or anticoagulants.\n- Enhanced effects of diuretics (hypokalemia risk).\n- Reduced efficacy of vaccines (due to immunosuppression).\n- Increased risk of hyperglycemia with thiazide diuretics or beta-blockers."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

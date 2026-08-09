@@ -44,7 +44,9 @@ matching the PPB Stage I & II syllabus.
   server.ts --bundle --platform=node --format=cjs --outfile=dist/server.cjs
   --packages=external` (OK; pre-existing benign `import.meta` warnings).
 
-- [ ] **B4 — Ship**: commit, push, `vercel --prod --yes` (canonical `clinova-main.vercel.app`).
+- [x] **B4 — Ship**: commit `c199bc5` (`feat(exam): board exam 5 prediction sets - sets 4
+  & 5 (60 new questions)`), pushed, `vercel --prod --yes` — Ready in 2m, aliased to
+  canonical `clinova-main.vercel.app`.
 
 ## Global constraints
 

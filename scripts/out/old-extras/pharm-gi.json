@@ -1,0 +1,782 @@
+{
+  "pharm-gi": {
+    "2": {
+      "title": "Gastrointestinal Pharmacology",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 58-year-old man with a history of peptic ulcer disease presents with epigastric pain and bloating. Endoscopy confirms a duodenal ulcer. Which of the following drugs would be most appropriate to heal the ulcer by reducing gastric acid secretion?",
+              "options": [
+                "Misoprostol",
+                "Sucralfate",
+                "Omeprazole",
+                "Magnesium hydroxide"
+              ],
+              "answer": "Omeprazole",
+              "explanation": "Omeprazole is a proton pump inhibitor that irreversibly inhibits H+/K+-ATPase in parietal cells, reducing gastric acid secretion by up to 95% and promoting ulcer healing."
+            },
+            {
+              "stem": "A 42-year-old woman with a history of hypertension and type 2 diabetes is started on cimetidine for gastroesophageal reflux disease. Which of the following adverse effects is most likely to occur in this patient?",
+              "options": [
+                "Hyperkalemia",
+                "Gynecomastia",
+                "Hypotension",
+                "Tachycardia"
+              ],
+              "answer": "Gynecomastia",
+              "explanation": "Cimetidine has antiandrogenic effects, including binding to androgen receptors and increasing prolactin levels, which can cause gynecomastia and impotence."
+            },
+            {
+              "stem": "A 30-year-old man presents with acute diarrhea after eating contaminated food while traveling. He has no blood in the stool and no signs of systemic illness. Which of the following drugs would be most appropriate for symptomatic relief?",
+              "options": [
+                "Loperamide",
+                "Metoclopramide",
+                "Bisacodyl",
+                "Ondansetron"
+              ],
+              "answer": "Loperamide",
+              "explanation": "Loperamide is a peripherally acting mu-opioid receptor agonist that slows intestinal transit and reduces stool frequency in acute diarrhea without systemic effects."
+            },
+            {
+              "stem": "A 65-year-old woman with a history of chronic constipation is prescribed a laxative that acts by increasing the water content of stool through osmotic effects. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Bisacodyl",
+                "Senna",
+                "Lactulose",
+                "Docusate"
+              ],
+              "answer": "Lactulose",
+              "explanation": "Lactulose is a non-absorbable disaccharide that is fermented by colonic bacteria to organic acids, increasing osmotic pressure and drawing water into the stool."
+            },
+            {
+              "stem": "A 50-year-old man with a history of peptic ulcer disease is found to be H. pylori positive. Which of the following regimens would be most appropriate for H. pylori eradication?",
+              "options": [
+                "Omeprazole + amoxicillin + clarithromycin",
+                "Ranitidine + metronidazole + bismuth subsalicylate",
+                "Famotidine + doxycycline + metronidazole",
+                "Sucralfate + tetracycline + metronidazole"
+              ],
+              "answer": "Omeprazole + amoxicillin + clarithromycin",
+              "explanation": "Standard triple therapy for H. pylori eradication includes a proton pump inhibitor (omeprazole) plus two antibiotics (amoxicillin and clarithromycin) for 7–14 days."
+            },
+            {
+              "stem": "A 28-year-old woman presents with nausea and vomiting after a viral gastroenteritis. She is prescribed an antiemetic that blocks 5-HT3 receptors. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Metoclopramide",
+                "Prochlorperazine",
+                "Ondansetron",
+                "Dronabinol"
+              ],
+              "answer": "Ondansetron",
+              "explanation": "Ondansetron is a selective 5-HT3 receptor antagonist that blocks serotonin action in the chemoreceptor trigger zone and vagal afferents, reducing nausea and vomiting."
+            },
+            {
+              "stem": "A 70-year-old man with a history of chronic kidney disease is prescribed a laxative for constipation. Which of the following laxatives should be avoided due to the risk of accumulation and toxicity?",
+              "options": [
+                "Methylcellulose",
+                "Lactulose",
+                "Magnesium hydroxide",
+                "Bisacodyl"
+              ],
+              "answer": "Magnesium hydroxide",
+              "explanation": "Magnesium hydroxide is an osmotic laxative that contains magnesium ions, which can accumulate in renal impairment and cause hypermagnesemia and toxicity."
+            },
+            {
+              "stem": "A 45-year-old man with a history of inflammatory bowel disease is prescribed a drug that releases 5-aminosalicylic acid (5-ASA) in the colon to reduce inflammation. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Sulfasalazine",
+                "Prednisone",
+                "Azathioprine",
+                "Infliximab"
+              ],
+              "answer": "Sulfasalazine",
+              "explanation": "Sulfasalazine is a prodrug that is cleaved by colonic bacteria to release 5-ASA (mesalamine), which exerts a topical anti-inflammatory effect in the colon."
+            },
+            {
+              "stem": "A 55-year-old woman with a history of motion sickness is prescribed a drug that blocks histamine H1 receptors in the vestibular system. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Ondansetron",
+                "Metoclopramide",
+                "Meclizine",
+                "Aprepitant"
+              ],
+              "answer": "Meclizine",
+              "explanation": "Meclizine is a first-generation H1 antihistamine that blocks histamine receptors in the vestibular system, reducing motion sickness."
+            },
+            {
+              "stem": "A 60-year-old man with a history of peptic ulcer disease is prescribed a drug that forms a protective barrier over the ulcer bed by polymerizing in acidic conditions. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Misoprostol",
+                "Omeprazole",
+                "Sucralfate",
+                "Famotidine"
+              ],
+              "answer": "Sucralfate",
+              "explanation": "Sucralfate is a mucosal protective agent that polymerizes in the acidic gastric environment to form a viscous gel that adheres to ulcerated mucosa, protecting it from acid and pepsin."
+            },
+            {
+              "stem": "A 35-year-old woman with a history of irritable bowel syndrome with diarrhea is prescribed a drug that blocks 5-HT3 receptors in the gut. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Alosetron",
+                "Metoclopramide",
+                "Ondansetron",
+                "Dronabinol"
+              ],
+              "answer": "Alosetron",
+              "explanation": "Alosetron is a selective 5-HT3 receptor antagonist used for severe irritable bowel syndrome with diarrhea, reducing colonic motility and secretion."
+            },
+            {
+              "stem": "A 40-year-old man with a history of gastroesophageal reflux disease is prescribed a drug that increases lower esophageal sphincter tone and promotes gastric emptying. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Omeprazole",
+                "Metoclopramide",
+                "Famotidine",
+                "Misoprostol"
+              ],
+              "answer": "Metoclopramide",
+              "explanation": "Metoclopramide is a prokinetic agent that increases lower esophageal sphincter tone and stimulates gastric emptying by blocking D2 dopamine receptors and stimulating 5-HT4 receptors."
+            },
+            {
+              "stem": "A 50-year-old woman with a history of peptic ulcer disease is prescribed a drug that inhibits gastric acid secretion by blocking H2 receptors on parietal cells. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Omeprazole",
+                "Misoprostol",
+                "Ranitidine",
+                "Sucralfate"
+              ],
+              "answer": "Ranitidine",
+              "explanation": "Ranitidine is an H2 receptor antagonist that blocks histamine-mediated stimulation of parietal cells, reducing gastric acid secretion."
+            },
+            {
+              "stem": "A 65-year-old man with a history of chronic constipation is prescribed a drug that increases stool bulk by absorbing water. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Bisacodyl",
+                "Senna",
+                "Methylcellulose",
+                "Lactulose"
+              ],
+              "answer": "Methylcellulose",
+              "explanation": "Methylcellulose is a bulk-forming laxative that absorbs water in the intestine, increasing stool bulk and promoting peristalsis."
+            },
+            {
+              "stem": "A 45-year-old man with a history of peptic ulcer disease is prescribed a drug that requires an acidic environment for activation and forms a protective coating over the ulcer. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Misoprostol",
+                "Omeprazole",
+                "Sucralfate",
+                "Famotidine"
+              ],
+              "answer": "Sucralfate",
+              "explanation": "Sucralfate requires an acidic pH to polymerize and form a protective gel that adheres to ulcerated mucosa, shielding it from acid and pepsin."
+            },
+            {
+              "stem": "A 30-year-old woman with a history of inflammatory bowel disease is prescribed a drug that inhibits tumor necrosis factor-alpha (TNF-α). Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Mesalamine",
+                "Azathioprine",
+                "Infliximab",
+                "Prednisone"
+              ],
+              "answer": "Infliximab",
+              "explanation": "Infliximab is a monoclonal antibody that binds to and neutralizes TNF-α, reducing inflammation in inflammatory bowel disease."
+            },
+            {
+              "stem": "A 55-year-old man with a history of peptic ulcer disease is prescribed a drug that stimulates prostaglandin E1 receptors to protect the gastric mucosa. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Misoprostol",
+                "Omeprazole",
+                "Sucralfate",
+                "Famotidine"
+              ],
+              "answer": "Misoprostol",
+              "explanation": "Misoprostol is a prostaglandin E1 analogue that stimulates mucus and bicarbonate secretion and mucosal blood flow, protecting the gastric mucosa from damage."
+            },
+            {
+              "stem": "A 40-year-old woman with a history of chronic constipation is prescribed a drug that increases intestinal motility by stimulating cholinergic receptors. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Bisacodyl",
+                "Senna",
+                "Metoclopramide",
+                "Lactulose"
+              ],
+              "answer": "Metoclopramide",
+              "explanation": "Metoclopramide stimulates gastrointestinal motility by blocking D2 dopamine receptors and stimulating 5-HT4 receptors, which indirectly enhances cholinergic activity."
+            },
+            {
+              "stem": "A 60-year-old man with a history of peptic ulcer disease is prescribed a drug that reduces gastric acid secretion by inhibiting the H+/K+-ATPase pump. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Ranitidine",
+                "Omeprazole",
+                "Misoprostol",
+                "Sucralfate"
+              ],
+              "answer": "Omeprazole",
+              "explanation": "Omeprazole is a proton pump inhibitor that irreversibly inhibits the H+/K+-ATPase enzyme in parietal cells, reducing gastric acid secretion."
+            },
+            {
+              "stem": "A 35-year-old man with a history of traveler's diarrhea is prescribed a drug that slows intestinal transit by acting on mu-opioid receptors. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Bisacodyl",
+                "Loperamide",
+                "Senna",
+                "Docusate"
+              ],
+              "answer": "Loperamide",
+              "explanation": "Loperamide is a peripherally acting mu-opioid receptor agonist that slows intestinal transit and reduces stool frequency without crossing the blood-brain barrier."
+            },
+            {
+              "stem": "A 50-year-old woman with a history of peptic ulcer disease is prescribed a drug that requires an acidic environment for activation and binds to ulcerated mucosa to form a protective barrier. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Misoprostol",
+                "Omeprazole",
+                "Sucralfate",
+                "Famotidine"
+              ],
+              "answer": "Sucralfate",
+              "explanation": "Sucralfate polymerizes in an acidic environment to form a viscous gel that adheres to ulcerated mucosa, protecting it from acid and pepsin."
+            },
+            {
+              "stem": "A 45-year-old man with a history of inflammatory bowel disease is prescribed a drug that inhibits cyclooxygenase and lipoxygenase pathways to reduce inflammation. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Prednisone",
+                "Azathioprine",
+                "Mesalamine",
+                "Infliximab"
+              ],
+              "answer": "Mesalamine",
+              "explanation": "Mesalamine (5-ASA) inhibits cyclooxygenase and lipoxygenase pathways, reducing prostaglandin and leukotriene synthesis and exerting a topical anti-inflammatory effect in the colon."
+            },
+            {
+              "stem": "A 65-year-old woman with a history of chronic constipation is prescribed a drug that increases stool water content by osmotic effects. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Bisacodyl",
+                "Senna",
+                "Lactulose",
+                "Docusate"
+              ],
+              "answer": "Lactulose",
+              "explanation": "Lactulose is a non-absorbable disaccharide that is fermented by colonic bacteria to organic acids, increasing osmotic pressure and drawing water into the stool."
+            },
+            {
+              "stem": "A 30-year-old man with a history of peptic ulcer disease is prescribed a drug that stimulates prostaglandin E1 receptors to protect the gastric mucosa. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Misoprostol",
+                "Omeprazole",
+                "Sucralfate",
+                "Famotidine"
+              ],
+              "answer": "Misoprostol",
+              "explanation": "Misoprostol is a prostaglandin E1 analogue that stimulates mucus and bicarbonate secretion and mucosal blood flow, protecting the gastric mucosa from damage."
+            },
+            {
+              "stem": "A 55-year-old woman with a history of motion sickness is prescribed a drug that blocks histamine H1 receptors in the vestibular system. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Ondansetron",
+                "Metoclopramide",
+                "Meclizine",
+                "Aprepitant"
+              ],
+              "answer": "Meclizine",
+              "explanation": "Meclizine is a first-generation H1 antihistamine that blocks histamine receptors in the vestibular system, reducing motion sickness."
+            },
+            {
+              "stem": "A 40-year-old man with a history of irritable bowel syndrome with diarrhea is prescribed a drug that blocks 5-HT3 receptors in the gut. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Alosetron",
+                "Metoclopramide",
+                "Ondansetron",
+                "Dronabinol"
+              ],
+              "answer": "Alosetron",
+              "explanation": "Alosetron is a selective 5-HT3 receptor antagonist used for severe irritable bowel syndrome with diarrhea, reducing colonic motility and secretion."
+            },
+            {
+              "stem": "A 60-year-old man with a history of peptic ulcer disease is prescribed a drug that reduces gastric acid secretion by inhibiting the H+/K+-ATPase pump. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Ranitidine",
+                "Omeprazole",
+                "Misoprostol",
+                "Sucralfate"
+              ],
+              "answer": "Omeprazole",
+              "explanation": "Omeprazole is a proton pump inhibitor that irreversibly inhibits the H+/K+-ATPase enzyme in parietal cells, reducing gastric acid secretion."
+            },
+            {
+              "stem": "A 35-year-old woman with a history of inflammatory bowel disease is prescribed a drug that inhibits tumor necrosis factor-alpha (TNF-α). Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Mesalamine",
+                "Azathioprine",
+                "Infliximab",
+                "Prednisone"
+              ],
+              "answer": "Infliximab",
+              "explanation": "Infliximab is a monoclonal antibody that binds to and neutralizes TNF-α, reducing inflammation in inflammatory bowel disease."
+            },
+            {
+              "stem": "A 50-year-old man with a history of chronic constipation is prescribed a drug that increases intestinal motility by stimulating cholinergic receptors. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Bisacodyl",
+                "Senna",
+                "Metoclopramide",
+                "Lactulose"
+              ],
+              "answer": "Metoclopramide",
+              "explanation": "Metoclopramide stimulates gastrointestinal motility by blocking D2 dopamine receptors and stimulating 5-HT4 receptors, which indirectly enhances cholinergic activity."
+            },
+            {
+              "stem": "A 45-year-old man with a history of peptic ulcer disease is prescribed a drug that requires an acidic environment for activation and forms a protective coating over the ulcer. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Misoprostol",
+                "Omeprazole",
+                "Sucralfate",
+                "Famotidine"
+              ],
+              "answer": "Sucralfate",
+              "explanation": "Sucralfate requires an acidic pH to polymerize and form a protective gel that adheres to ulcerated mucosa, shielding it from acid and pepsin."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "Match each gastrointestinal drug with the appropriate description (7 marks)\nDrugs: Erythromycin, omeprazole, magnesium hydroxide, misoprostol, sucralfate, metoclopramide, docusate, aprepitant, aluminium hydroxide, ranitidine, mesalamine, bisacodyl\nDescriptions:\n1. A drug that can increase intestinal peristalsis by activating motilin receptors\n2. An antiulcer agent that can inhibit 24-hour gastric acid secretion up to 95%\n3. A salicylate derivative used in inflammatory bowel diseases\n4. An antiemetic drug used primarily for chemotherapy-induced vomiting\n5. An antacid that also has laxative properties\n6. A prostaglandin E1 analogue that can have a cytoprotective effect on gastric mucosa\n7. An antiulcer agent that binds to necrotic peptic ulcer tissue, thus acting as a barrier to gastric juice",
+              "modelAnswer": "1 – Erythromycin: activates motilin receptors on GI smooth muscle/enteric neurons → increases intestinal peristalsis (prokinetic).\n2 – Omeprazole: proton pump inhibitor — irreversibly inhibits H+/K+-ATPase in parietal cells → inhibits 24-hour gastric acid secretion up to 95%.\n3 – Mesalamine: a 5-aminosalicylic acid (salicylate) derivative used topically in inflammatory bowel disease.\n4 – Aprepitant: neurokinin-1 (NK1) receptor antagonist — antiemetic used primarily for chemotherapy-induced vomiting.\n5 – Magnesium hydroxide: antacid that also has osmotic laxative properties.\n6 – Misoprostol: prostaglandin E1 analogue with cytoprotective effects on the gastric mucosa (stimulates mucus/bicarbonate secretion, mucosal blood flow).\n7 – Sucralfate: binds to necrotic peptic ulcer tissue and polymerizes in gastric acid to form a protective barrier over the ulcer bed, accelerating healing."
+            },
+            {
+              "stem": "Using a suitable example illustrate the mode of action and clinical use of one emetic agent (3 marks)",
+              "modelAnswer": "Syrup of ipecacuanha — contains emetine and cephaeline; acts locally by gastric irritation and centrally on the chemoreceptor trigger zone (CTZ) to induce vomiting within 15–30 minutes of oral administration. Historically used to expel ingested poisons, though now largely superseded by gastric lavage and activated charcoal due to risks of aspiration and cardiac toxicity with overdose."
+            },
+            {
+              "stem": "A patient who has been diabetic for the last 25 years is diagnosed with gastroparesis. Recommend an antibiotic drug that could be used to manage this condition and describe the mode of action of this drug (3 marks)",
+              "modelAnswer": "Erythromycin — a macrolide antibiotic that is also a motilin receptor agonist. It mimics motilin, increasing antral contractions and gastric emptying, hence its use as a prokinetic in diabetic gastroparesis. Mode of action: binding to motilin receptors on GI smooth muscle and enteric neurons → increased gastric motility and accelerated emptying; low doses are used to minimize antibacterial adverse effects."
+            },
+            {
+              "stem": "A patient traveling from Japan visits Nakuru and is diagnosed with traveler’s diarrhea. Identify and explain the mechanism of action of a drug that you would recommend to reduce the number of bowel movements (3 marks)",
+              "modelAnswer": "Loperamide — a peripherally acting mu-opioid receptor agonist that reduces the number of bowel movements by slowing intestinal transit and decreasing intestinal secretion (antisecretory). It does not cross the blood–brain barrier, so it has no central opioid/analgesic effects. Used for symptomatic control of traveler's diarrhea; contraindicated in dysentery (bloody stools) and acute ulcerative colitis."
+            },
+            {
+              "stem": "S.W is a 32-year-old lady who is 5 months pregnant. She calls you for advice regarding her heartburn which seems to be worsening. Currently she is not on any medication. With reason(s), identify the antacids you would advise her to chew and the one(s) you would advise her to avoid. (4 marks)",
+              "modelAnswer": "Advise (chewable, safe in pregnancy): calcium carbonate and magnesium hydroxide — non-systemic antacids that provide rapid symptom relief without significant fetal exposure. Avoid: sodium bicarbonate (absorbable → risk of metabolic alkalosis and fluid overload/edema in pregnancy) and aluminium hydroxide (causes constipation; aluminium may accumulate with prolonged high-dose use). Magnesium may loosen stools and calcium may constipate, so a combination often balances these effects."
+            },
+            {
+              "stem": "Explain why antacids containing aluminium hydroxide are often combined with magnesium hydroxide in clinical practice (4 marks)",
+              "modelAnswer": "Aluminium hydroxide is constipating due to its astringent properties, while magnesium hydroxide is osmotic and causes diarrhea. Combining the two balances bowel effects, producing a more regular bowel habit. Additionally, aluminium hydroxide binds dietary phosphate in the gut, which may be beneficial in patients with hyperphosphatemia (e.g., renal impairment), though this is not the primary reason for combination."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "O.M, a 35-year-old man was diagnosed with non-Hodgkin’s lymphoma requiring many sessions of treatment with combined cytotoxic therapy, including cyclophosphamide and vincristine.\n\na) Explain why O.M was likely to experience nausea and vomiting? (1 Mark)\nb) Nausea and vomiting started several hours after each course of treatment and continued for 4–5 days. Identify a planned antiemetic treatment prior to the first course of chemotherapy that would be beneficial? (2 Marks)\nc) Describe how the treatments you have chosen work? (4 Marks)\nd) O.M became very distressed by the severity of the nausea and vomiting and developed intense nausea and vomiting prior to the administration of the chemotherapeutic agents. Identify what treatment could be given to reduce the anticipatory nausea and vomiting? (2 Marks)\ne) Three days after the 3rd cycle of chemotherapy, O.M experiences severe pain and returns to his oncologist. He is put on PO morphine syrup. After 3 days of taking the morphine, OM hasn’t had a bowel movement and he now complains of bloating and abdominal discomfort. Recommend a drug that would help relieve O.M (2 Marks)\n\nf) Describe the mechanism of action, two adverse effects and one contraindication of the drug suggested in (e) above (5 Marks)\n\ng) After achieving full cancer remission O.M was diagnosed with peptic ulcer disease. Devise a treatment regimen that you would recommend for radical eradication of H.pylori Infection and cure of the ulcers (4 Marks)",
+              "modelAnswer": "a) Why O.M experienced nausea and vomiting: Cyclophosphamide and vincristine are highly emetogenic cytotoxics. They damage gut enterochromaffin cells → release of serotonin (5-HT) and substance P, which stimulate 5-HT3 receptors on vagal afferents and NK1 receptors in the chemoreceptor trigger zone/area postrema → vomiting centre activation.\n\nb) Planned antiemetic treatment before the first course: triple prophylaxis with a 5-HT3 antagonist (ondansetron) + corticosteroid (dexamethasone) + NK1 antagonist (aprepitant) given before each chemotherapy cycle and continued for 4–5 days.\n\nc) How they work: Ondansetron — selective 5-HT3 receptor antagonist, blocks serotonin action on vagal afferents and in the CTZ/area postrema (acute emesis). Dexamethasone — corticosteroid that reduces prostaglandin release and central sensitization, effective against delayed emesis. Aprepitant — neurokinin-1 (NK1) receptor antagonist, blocks substance P in the area postrema and vomiting centre, preventing delayed and anticipatory emesis.\n\nd) Treatment for anticipatory nausea and vomiting: Lorazepam (a benzodiazepine) — reduces anxiety and induces amnesia, breaking the conditioned response to chemotherapy.\n\ne) Recommendation for opioid-induced constipation: Polyethylene glycol (PEG) 3350 — an osmotic laxative that increases stool water content and promotes bowel movements without systemic absorption.\n\nf) Mechanism of action, adverse effects, and contraindication of PEG 3350: Mechanism — non-absorbable osmotic agent that draws water into the stool, increasing stool bulk and promoting peristalsis. Adverse effects — abdominal bloating, flatulence, and electrolyte imbalances (rare with short-term use). Contraindication — bowel obstruction or ileus (risk of worsening obstruction).\n\ng) Treatment regimen for H. pylori eradication and peptic ulcer cure: Triple therapy with omeprazole 20 mg twice daily + amoxicillin 1 g twice daily + clarithromycin 500 mg twice daily for 14 days. Followed by omeprazole 20 mg once daily for 4–6 weeks to ensure ulcer healing. Confirm H. pylori eradication with a urea breath test or stool antigen test 4–8 weeks after completion of therapy."
+            },
+            {
+              "stem": "A 35-year-old man presented with a 3-week period of frequent diarrhea with mucus but no blood in the stool. Stool analysis for infective agents was negative. Sigmoidoscopy indicated gross thickening of the mucosa, with inflammation and linear ulcers. Changes were present in restricted areas (skip lesions) with intervening normal mucosa. Histology was diagnostic of Crohn’s disease and investigation suggested that the condition was confined to the sigmoid and part of the ascending colon.\n\na) Describe the cause of Crohn’s disease? (2 Marks)\nb) Propose the initial pharmacological therapy for this patient? (2 Marks)\nc) Explain the mode(s) of action of the drug that you have proposed in (b) above (2 Marks)\nd) Devise an appropriate pharmacological therapy that could be used to maintain remission in this man? (2 Marks)\ne) Outline the mode of action of the drug you have suggested in (d) above (2 Marks)\nf) Illustrate 4 adverse effects of the drug you have suggested in (d) above (4 Marks)\ng) Recommend an alternative therapy can be given to try and reduce the risk of dependence on the drug you suggested in (b) above? (2 Marks)\nh) Examine the mode of action and 2 adverse effects of the drug you suggested in (g) above. (4 Marks)",
+              "modelAnswer": "a) Cause of Crohn's disease: Unknown/idiopathic — a chronic, relapsing, immune-mediated inflammatory bowel disease. In genetically susceptible individuals, an abnormal T-cell (Th1/Th17)-mediated inflammatory response to the gut microbiota is triggered by environmental factors (diet, infection, smoking) → transmural inflammation of the bowel wall.\n\nb) Initial pharmacological therapy: Oral mesalamine (5-aminosalicylic acid, 5-ASA) 2–4 g/day in divided doses, or sulfasalazine 3–4 g/day if mesalamine is unavailable. For moderate-to-severe disease, oral prednisone 40–60 mg/day tapered over 8–12 weeks may be used to induce remission.\n\nc) Mode(s) of action of mesalamine: 5-ASA inhibits cyclo-oxygenase and lipoxygenase pathways → reduced prostaglandin and leukotriene (LTB4) synthesis in the colonic mucosa; it also scavenges free radicals and exerts a topical anti-inflammatory action on the inflamed mucosa.\n\nd) Pharmacological therapy to maintain remission: Azathioprine 2–2.5 mg/kg/day orally or 6-mercaptopurine 1–1.5 mg/kg/day orally, as steroid-sparing agents to maintain remission.\n\ne) Mode of action of azathioprine: A purine analogue that is metabolized to 6-thioguanine nucleotides, which are incorporated into DNA and RNA, inhibiting purine synthesis and lymphocyte proliferation, thereby reducing inflammation.\n\nf) Adverse effects of azathioprine: Bone marrow suppression (leukopenia, thrombocytopenia, anemia), hepatotoxicity (elevated liver enzymes), pancreatitis (idiosyncratic), and increased risk of infections and malignancies (e.g., skin cancer, lymphoma) with long-term use.\n\ng) Alternative therapy to reduce steroid dependence: Budesonide (controlled-release oral formulation) 9 mg/day for 8–12 weeks, followed by tapering. Budesonide has high first-pass metabolism, reducing systemic corticosteroid effects.\n\nh) Mode of action and adverse effects of budesonide: Mode — a corticosteroid with potent local anti-inflammatory effects in the gut, reducing mucosal inflammation and symptoms. Adverse effects — adrenal suppression (with prolonged high doses), osteoporosis, hypertension, and hyperglycemia."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Gastrointestinal Pharmacology",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 58-year-old man with type 2 diabetes mellitus and chronic kidney disease (eGFR 30 mL/min/1.73m²) presents with persistent heartburn. Which antacid would be most appropriate to avoid in this patient due to the risk of systemic accumulation?",
+              "options": [
+                "Aluminium hydroxide",
+                "Calcium carbonate",
+                "Magnesium hydroxide",
+                "Sodium bicarbonate"
+              ],
+              "answer": "Magnesium hydroxide",
+              "explanation": "Magnesium hydroxide is an osmotic laxative that is poorly absorbed, but in chronic kidney disease, magnesium can accumulate leading to hypermagnesemia and toxicity (e.g., cardiac arrhythmias, neuromuscular depression). Aluminium hydroxide is constipating but safer in CKD; calcium carbonate is an option but can cause hypercalcaemia; sodium bicarbonate is systemically absorbed and can cause metabolic alkalosis."
+            },
+            {
+              "stem": "A 42-year-old woman with a history of peptic ulcer disease is started on triple therapy for Helicobacter pylori eradication. Which of the following combinations is the standard first-line regimen according to WHO/KDIGO guidelines?",
+              "options": [
+                "Omeprazole, amoxicillin, clarithromycin",
+                "Famotidine, metronidazole, bismuth subsalicylate",
+                "Ranitidine, tetracycline, metronidazole",
+                "Pantoprazole, levofloxacin, amoxicillin"
+              ],
+              "answer": "Omeprazole, amoxicillin, clarithromycin",
+              "explanation": "The standard first-line triple therapy for H. pylori eradication per WHO/KDIGO guidelines is a proton pump inhibitor (e.g., omeprazole) plus two antibiotics (typically amoxicillin and clarithromycin) for 7–14 days. The other combinations are not standard first-line regimens."
+            },
+            {
+              "stem": "A 65-year-old man with a history of hypertension and chronic obstructive pulmonary disease (COPD) is prescribed cimetidine for gastroesophageal reflux disease (GERD). Which of the following adverse effects is most likely to occur with cimetidine in this patient?",
+              "options": [
+                "Hyperkalemia",
+                "Gynecomastia",
+                "Torsades de pointes",
+                "Hypoglycemia"
+              ],
+              "answer": "Gynecomastia",
+              "explanation": "Cimetidine has antiandrogenic effects, including binding to androgen receptors and increasing prolactin levels, which can lead to gynecomastia and impotence. The other options are not typical adverse effects of cimetidine."
+            },
+            {
+              "stem": "A 30-year-old woman presents with severe nausea and vomiting after a 12-hour bus journey. She has no fever or diarrhea. Which of the following antiemetics is most appropriate for motion sickness?",
+              "options": [
+                "Metoclopramide",
+                "Ondansetron",
+                "Hyoscine (scopolamine)",
+                "Dexamethasone"
+              ],
+              "answer": "Hyoscine (scopolamine)",
+              "explanation": "Hyoscine (scopolamine) is a centrally acting antimuscarinic drug that is highly effective for motion sickness due to its rapid onset and potent anticholinergic effects in the vestibular system. Ondansetron and metoclopramide are not first-line for motion sickness; dexamethasone is not used for motion sickness."
+            },
+            {
+              "stem": "A 28-year-old man with a history of irritable bowel syndrome with diarrhea (IBS-D) is prescribed a drug that selectively blocks 5-HT3 receptors. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Alosetron",
+                "Tegaserod",
+                "Lubiprostone",
+                "Linaclotide"
+              ],
+              "answer": "Alosetron",
+              "explanation": "Alosetron is a selective 5-HT3 receptor antagonist used for the treatment of severe IBS with diarrhea in women who have not responded to conventional therapy. Tegaserod is a 5-HT4 agonist, while lubiprostone and linaclotide are chloride channel activators used for IBS with constipation."
+            },
+            {
+              "stem": "A 50-year-old woman with a history of constipation-predominant irritable bowel syndrome (IBS-C) is prescribed a drug that activates intestinal chloride channels. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Lubiprostone",
+                "Senna",
+                "Bisacodyl",
+                "Docusate"
+              ],
+              "answer": "Lubiprostone",
+              "explanation": "Lubiprostone is a chloride channel activator (CIC-2) that increases intestinal fluid secretion and motility, making it effective for IBS-C. Senna and bisacodyl are stimulant laxatives, while docusate is a stool softener."
+            },
+            {
+              "stem": "A 45-year-old man with a history of peptic ulcer disease is prescribed a drug that forms a protective barrier over the ulcer bed by binding to necrotic tissue. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Misoprostol",
+                "Sucralfate",
+                "Omeprazole",
+                "Ranitidine"
+              ],
+              "answer": "Sucralfate",
+              "explanation": "Sucralfate is a mucosal protective agent that binds to positively charged proteins in the ulcer bed, forming a viscous gel that protects the ulcer from acid and pepsin. Misoprostol is a prostaglandin analogue, while omeprazole and ranitidine are acid-suppressive agents."
+            },
+            {
+              "stem": "A 60-year-old woman with a history of chronic constipation is prescribed a drug that increases stool water content by drawing fluid into the colon. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Magnesium hydroxide",
+                "Bisacodyl",
+                "Methylcellulose",
+                "Docusate"
+              ],
+              "answer": "Magnesium hydroxide",
+              "explanation": "Magnesium hydroxide is an osmotic laxative that draws water into the colon by osmosis, increasing stool water content and promoting bowel movements. Bisacodyl is a stimulant laxative; methylcellulose is a bulk-forming laxative; docusate is a stool softener."
+            },
+            {
+              "stem": "A 35-year-old man with a history of Crohn’s disease is prescribed a drug that is a 5-aminosalicylic acid (5-ASA) derivative. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Sulfasalazine",
+                "Prednisone",
+                "Azathioprine",
+                "Infliximab"
+              ],
+              "answer": "Sulfasalazine",
+              "explanation": "Sulfasalazine is a 5-ASA derivative used for the induction and maintenance of remission in mild-to-moderate ulcerative colitis and Crohn’s colitis. Prednisone is a corticosteroid, azathioprine is an immunosuppressant, and infliximab is a biologic agent."
+            },
+            {
+              "stem": "A 55-year-old woman with a history of GERD is prescribed a drug that irreversibly inhibits the H+/K+ ATPase pump in parietal cells. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Famotidine",
+                "Ranitidine",
+                "Omeprazole",
+                "Misoprostol"
+              ],
+              "answer": "Omeprazole",
+              "explanation": "Omeprazole is a proton pump inhibitor (PPI) that irreversibly inhibits the H+/K+ ATPase pump in parietal cells, leading to potent and prolonged suppression of gastric acid secretion. Famotidine and ranitidine are H2-receptor antagonists, while misoprostol is a prostaglandin analogue."
+            },
+            {
+              "stem": "A 40-year-old man with a history of diarrhea-predominant IBS is prescribed a drug that slows intestinal transit by acting on mu-opioid receptors. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Loperamide",
+                "Diphenoxylate",
+                "Bismuth subsalicylate",
+                "Cholestyramine"
+              ],
+              "answer": "Loperamide",
+              "explanation": "Loperamide is a peripherally acting mu-opioid receptor agonist that slows intestinal transit and reduces secretion, making it effective for diarrhea-predominant IBS. Diphenoxylate is similar but has central opioid effects; bismuth subsalicylate and cholestyramine are not mu-opioid agonists."
+            },
+            {
+              "stem": "A 65-year-old man with a history of hypertension and chronic kidney disease (eGFR 25 mL/min/1.73m²) is prescribed a drug for portal hypertension-related ascites. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Spironolactone",
+                "Furosemide",
+                "Mannitol",
+                "Lactulose"
+              ],
+              "answer": "Spironolactone",
+              "explanation": "Spironolactone is a potassium-sparing diuretic that is used for the management of ascites in patients with portal hypertension due to its aldosterone antagonism. Furosemide is a loop diuretic but can cause electrolyte imbalances in CKD; mannitol is an osmotic diuretic; lactulose is used for hepatic encephalopathy."
+            },
+            {
+              "stem": "A 30-year-old woman with a history of GERD is prescribed a drug that neutralizes gastric acid by reacting with hydrochloric acid in the stomach lumen. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Famotidine",
+                "Omeprazole",
+                "Magnesium hydroxide",
+                "Misoprostol"
+              ],
+              "answer": "Magnesium hydroxide",
+              "explanation": "Magnesium hydroxide is an antacid that neutralizes gastric acid by reacting with hydrochloric acid in the stomach lumen. Famotidine and omeprazole suppress acid secretion, while misoprostol is a prostaglandin analogue that protects the mucosa."
+            },
+            {
+              "stem": "A 50-year-old man with a history of peptic ulcer disease is prescribed a drug that stimulates mucus and bicarbonate secretion in the stomach. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Misoprostol",
+                "Sucralfate",
+                "Omeprazole",
+                "Ranitidine"
+              ],
+              "answer": "Misoprostol",
+              "explanation": "Misoprostol is a prostaglandin E1 analogue that stimulates mucus and bicarbonate secretion and enhances mucosal blood flow, providing cytoprotection to the gastric mucosa. The other drugs do not have this mechanism."
+            },
+            {
+              "stem": "A 45-year-old woman with a history of chronic constipation is prescribed a drug that increases the water content of stool by osmotic effects. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Lactulose",
+                "Senna",
+                "Bisacodyl",
+                "Docusate"
+              ],
+              "answer": "Lactulose",
+              "explanation": "Lactulose is an osmotic laxative that increases the water content of stool by drawing fluid into the colon, promoting bowel movements. Senna and bisacodyl are stimulant laxatives; docusate is a stool softener."
+            },
+            {
+              "stem": "A 60-year-old man with a history of GERD is prescribed a drug that blocks H2 receptors on parietal cells. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Omeprazole",
+                "Famotidine",
+                "Misoprostol",
+                "Sucralfate"
+              ],
+              "answer": "Famotidine",
+              "explanation": "Famotidine is an H2-receptor antagonist that blocks histamine H2 receptors on parietal cells, reducing gastric acid secretion. Omeprazole is a PPI; misoprostol and sucralfate are not H2 antagonists."
+            },
+            {
+              "stem": "A 35-year-old man with a history of traveler’s diarrhea is prescribed a drug that reduces intestinal motility by acting on mu-opioid receptors. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Loperamide",
+                "Bismuth subsalicylate",
+                "Metronidazole",
+                "Doxycycline"
+              ],
+              "answer": "Loperamide",
+              "explanation": "Loperamide is a peripherally acting mu-opioid receptor agonist that reduces intestinal motility and secretion, making it effective for the symptomatic control of traveler’s diarrhea. Bismuth subsalicylate has antisecretory and antimicrobial effects; metronidazole and doxycycline are antibiotics."
+            },
+            {
+              "stem": "A 55-year-old woman with a history of GERD is prescribed a drug that inhibits the action of histamine released from enterochromaffin-like (ECL) cells in the stomach. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Omeprazole",
+                "Famotidine",
+                "Misoprostol",
+                "Sucralfate"
+              ],
+              "answer": "Famotidine",
+              "explanation": "Famotidine is an H2-receptor antagonist that inhibits the action of histamine released from ECL cells, reducing gastric acid secretion. Omeprazole is a PPI; misoprostol and sucralfate are not H2 antagonists."
+            },
+            {
+              "stem": "A 40-year-old man with a history of Crohn’s disease is prescribed a drug that is a monoclonal antibody targeting tumor necrosis factor-alpha (TNF-α). Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Infliximab",
+                "Azathioprine",
+                "Sulfasalazine",
+                "Prednisone"
+              ],
+              "answer": "Infliximab",
+              "explanation": "Infliximab is a monoclonal antibody that targets TNF-α, used for the treatment of moderate-to-severe Crohn’s disease and ulcerative colitis. Azathioprine is an immunosuppressant; sulfasalazine is a 5-ASA derivative; prednisone is a corticosteroid."
+            },
+            {
+              "stem": "A 60-year-old woman with a history of chronic constipation is prescribed a drug that increases intestinal motility by stimulating enteric nerves. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Bisacodyl",
+                "Lactulose",
+                "Docusate",
+                "Magnesium hydroxide"
+              ],
+              "answer": "Bisacodyl",
+              "explanation": "Bisacodyl is a stimulant laxative that increases intestinal motility by directly stimulating the enteric nerves in the colon, promoting bowel movements. Lactulose and magnesium hydroxide are osmotic laxatives; docusate is a stool softener."
+            },
+            {
+              "stem": "A 50-year-old man with a history of peptic ulcer disease is prescribed a drug that is a prostaglandin E1 analogue. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Misoprostol",
+                "Omeprazole",
+                "Famotidine",
+                "Sucralfate"
+              ],
+              "answer": "Misoprostol",
+              "explanation": "Misoprostol is a prostaglandin E1 analogue used for the prevention of NSAID-induced peptic ulcers and for cytoprotection in peptic ulcer disease. The other drugs do not have this mechanism."
+            },
+            {
+              "stem": "A 35-year-old woman with a history of IBS with constipation (IBS-C) is prescribed a drug that activates guanylate cyclase-C receptors. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Linaclotide",
+                "Lubiprostone",
+                "Senna",
+                "Docusate"
+              ],
+              "answer": "Linaclotide",
+              "explanation": "Linaclotide is a guanylate cyclase-C receptor agonist that increases intestinal fluid secretion and transit, making it effective for IBS-C. Lubiprostone activates chloride channels; senna and docusate are stimulant and softening laxatives, respectively."
+            },
+            {
+              "stem": "A 65-year-old man with a history of GERD is prescribed a drug that is a proton pump inhibitor (PPI). Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Omeprazole",
+                "Famotidine",
+                "Misoprostol",
+                "Sucralfate"
+              ],
+              "answer": "Omeprazole",
+              "explanation": "Omeprazole is a proton pump inhibitor (PPI) that irreversibly inhibits the H+/K+ ATPase pump in parietal cells, leading to potent and prolonged suppression of gastric acid secretion. The other drugs do not have this mechanism."
+            },
+            {
+              "stem": "A 40-year-old man with a history of diarrhea-predominant IBS is prescribed a drug that selectively blocks 5-HT3 receptors. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Alosetron",
+                "Tegaserod",
+                "Lubiprostone",
+                "Linaclotide"
+              ],
+              "answer": "Alosetron",
+              "explanation": "Alosetron is a selective 5-HT3 receptor antagonist used for the treatment of severe IBS with diarrhea in women who have not responded to conventional therapy. Tegaserod is a 5-HT4 agonist; lubiprostone and linaclotide are used for IBS-C."
+            },
+            {
+              "stem": "A 55-year-old woman with a history of chronic constipation is prescribed a drug that increases stool bulk by absorbing water. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Methylcellulose",
+                "Senna",
+                "Bisacodyl",
+                "Docusate"
+              ],
+              "answer": "Methylcellulose",
+              "explanation": "Methylcellulose is a bulk-forming laxative that absorbs water into the stool, increasing bulk and promoting bowel movements. Senna and bisacodyl are stimulant laxatives; docusate is a stool softener."
+            },
+            {
+              "stem": "A 30-year-old man with a history of peptic ulcer disease is prescribed a drug that is a mucosal protective agent. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Sucralfate",
+                "Omeprazole",
+                "Famotidine",
+                "Misoprostol"
+              ],
+              "answer": "Sucralfate",
+              "explanation": "Sucralfate is a mucosal protective agent that binds to positively charged proteins in the ulcer bed, forming a viscous gel that protects the ulcer from acid and pepsin. The other drugs do not have this mechanism."
+            },
+            {
+              "stem": "A 60-year-old woman with a history of GERD is prescribed a drug that is a histamine H2-receptor antagonist. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Famotidine",
+                "Omeprazole",
+                "Misoprostol",
+                "Sucralfate"
+              ],
+              "answer": "Famotidine",
+              "explanation": "Famotidine is an H2-receptor antagonist that blocks histamine H2 receptors on parietal cells, reducing gastric acid secretion. Omeprazole is a PPI; misoprostol and sucralfate are not H2 antagonists."
+            },
+            {
+              "stem": "A 45-year-old man with a history of traveler’s diarrhea is prescribed a drug that has antisecretory and antimicrobial effects. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Bismuth subsalicylate",
+                "Loperamide",
+                "Metronidazole",
+                "Doxycycline"
+              ],
+              "answer": "Bismuth subsalicylate",
+              "explanation": "Bismuth subsalicylate has antisecretory and antimicrobial effects, making it effective for the symptomatic control of traveler’s diarrhea. Loperamide reduces motility; metronidazole and doxycycline are antibiotics."
+            },
+            {
+              "stem": "A 50-year-old woman with a history of IBS with constipation (IBS-C) is prescribed a drug that activates chloride channels in the intestinal epithelium. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Lubiprostone",
+                "Linaclotide",
+                "Senna",
+                "Docusate"
+              ],
+              "answer": "Lubiprostone",
+              "explanation": "Lubiprostone is a chloride channel activator (CIC-2) that increases intestinal fluid secretion and motility, making it effective for IBS-C. Linaclotide activates guanylate cyclase-C; senna and docusate are stimulant and softening laxatives, respectively."
+            },
+            {
+              "stem": "A 35-year-old man with a history of Crohn’s disease is prescribed a drug that is a 5-aminosalicylic acid (5-ASA) derivative. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Mesalamine",
+                "Prednisone",
+                "Azathioprine",
+                "Infliximab"
+              ],
+              "answer": "Mesalamine",
+              "explanation": "Mesalamine is a 5-ASA derivative used for the induction and maintenance of remission in mild-to-moderate ulcerative colitis and Crohn’s colitis. Prednisone is a corticosteroid; azathioprine is an immunosuppressant; infliximab is a biologic agent."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "Match each gastrointestinal drug with the appropriate description (7 Marks)\nDrugs: Erythromycin, omeprazole, magnesium hydroxide, misoprostol, sucralfate, metoclopramide, docusate, aprepitant, aluminium hydroxide, ranitidine, mesalamine, bisacodyl\nDescriptions:\n1. A drug that can increase intestinal peristalsis by activating motilin receptors\n2. An antiulcer agent that can inhibit 24-hour gastric acid secretion up to 95%\n3. A salicylate derivative used in inflammatory bowel diseases\n4. An antiemetic drug used primarily for chemotherapy-induced vomiting\n5. An antacid that also has laxative properties\n6. A prostaglandin E1 analogue that can have a cytoprotective effect on gastric mucosa\n7. An antiulcer agent that binds to necrotic peptic ulcer tissue, thus acting as a barrier to gastric juice",
+              "modelAnswer": "1 – Erythromycin: activates motilin receptors on GI smooth muscle/enteric neurons → increases intestinal peristalsis (prokinetic).\n2 – Omeprazole: proton pump inhibitor — irreversibly inhibits H+/K+-ATPase in parietal cells → inhibits 24-hour gastric acid secretion up to 95%.\n3 – Mesalamine: a 5-aminosalicylic acid (salicylate) derivative used topically in inflammatory bowel disease.\n4 – Aprepitant: neurokinin-1 (NK1) receptor antagonist — antiemetic used primarily for chemotherapy-induced vomiting.\n5 – Magnesium hydroxide: antacid that also has osmotic laxative properties.\n6 – Misoprostol: prostaglandin E1 analogue with cytoprotective effects on the gastric mucosa (stimulates mucus/bicarbonate secretion, mucosal blood flow).\n7 – Sucralfate: binds to necrotic peptic ulcer tissue and polymerizes in gastric acid to form a protective barrier over the ulcer bed, accelerating healing."
+            },
+            {
+              "stem": "A 68-year-old man with a history of hypertension and type 2 diabetes mellitus presents with severe constipation after starting verapamil for angina. Recommend an osmotic laxative that could be used to treat his constipation and describe its mechanism of action (3 Marks)",
+              "modelAnswer": "Magnesium hydroxide — an osmotic laxative that increases stool water content by drawing fluid into the colon via osmosis, promoting bowel movements. It is safe in this patient (no renal impairment) and effective for verapamil-induced constipation."
+            },
+            {
+              "stem": "A 32-year-old woman in her second trimester of pregnancy complains of constipation. Recommend a laxative that is safe in pregnancy and explain why it is preferred (3 Marks)",
+              "modelAnswer": "Docusate — a stool softener that increases water and fat penetration into the stool, making it easier to pass. It is safe in pregnancy due to minimal systemic absorption and lack of teratogenic effects."
+            },
+            {
+              "stem": "A 45-year-old man with a history of peptic ulcer disease is prescribed triple therapy for Helicobacter pylori eradication. List the three drugs in the standard first-line regimen and briefly explain the role of each (4 Marks)",
+              "modelAnswer": "1. Omeprazole (PPI): suppresses gastric acid secretion, creating a favorable environment for antibiotic action and promoting ulcer healing.\n2. Amoxicillin: a broad-spectrum penicillin that kills H. pylori by disrupting cell wall synthesis.\n3. Clarithromycin: a macrolide antibiotic that inhibits bacterial protein synthesis, targeting H. pylori. This triple therapy is given for 7–14 days."
+            },
+            {
+              "stem": "A 50-year-old woman with a history of GERD is prescribed a proton pump inhibitor (PPI). Outline the mechanism of action of PPIs and list two common adverse effects (4 Marks)",
+              "modelAnswer": "Mechanism: PPIs (e.g., omeprazole, esomeprazole) are prodrugs that accumulate in the acidic parietal cell canaliculi, where they are protonated to the active sulphenamide. This active form irreversibly inhibits the H+/K+ ATPase pump, blocking the final step in gastric acid secretion.\nAdverse effects: 1) Increased risk of Clostridioides difficile infection due to altered gut microbiota; 2) Hypomagnesemia and hypocalcemia with long-term use (due to reduced acid-mediated absorption)."
+            },
+            {
+              "stem": "A 35-year-old man with a history of Crohn’s disease is prescribed sulfasalazine for maintenance therapy. Explain the mechanism of action of sulfasalazine and list two adverse effects (4 Marks)",
+              "modelAnswer": "Mechanism: Sulfasalazine is a prodrug that reaches the colon intact, where bacterial azoreductases cleave it into 5-aminosalicylic acid (5-ASA, the active anti-inflammatory component) and sulfapyridine. 5-ASA suppresses inflammation locally in the colon by inhibiting cyclo-oxygenase and lipoxygenase pathways, reducing prostaglandin and leukotriene synthesis.\nAdverse effects: 1) Nausea, vomiting, and diarrhea (due to 5-ASA); 2) Bone marrow suppression (rare, due to sulfapyridine)."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 55-year-old woman with a history of type 2 diabetes mellitus and chronic kidney disease (eGFR 30 mL/min/1.73m²) presents with persistent heartburn and epigastric pain. She is currently taking metformin, insulin, amlodipine, and atorvastatin. (15 Marks)\na) Outline the stepwise approach to managing her GERD, including non-pharmacological and pharmacological interventions. (5 Marks)\nb) Explain the rationale for choosing a specific antacid or acid-suppressive agent in this patient, considering her comorbidities and drug interactions. (4 Marks)\nc) Describe the mechanism of action, adverse effects, and monitoring parameters for the chosen acid-suppressive agent. (6 Marks)",
+              "modelAnswer": "a) Stepwise approach to managing GERD:\n1. Lifestyle modifications: weight loss if overweight, avoidance of late-night meals, elevation of the head of the bed, and avoidance of trigger foods (caffeine, alcohol, fatty/spicy foods).\n2. Pharmacological therapy: Start with a proton pump inhibitor (PPI) or H2-receptor antagonist (H2RA) for symptom control and healing of erosive esophagitis.\n3. If symptoms persist despite acid suppression, consider prokinetic agents (e.g., metoclopramide) or further evaluation (endoscopy, pH monitoring).\n4. For refractory cases, consider surgical or endoscopic interventions (e.g., fundoplication).\n\nb) Rationale for choosing an acid-suppressive agent:\n- Avoid PPIs that interact with clopidogrel (e.g., omeprazole) due to CYP2C19 inhibition, which may reduce clopidogrel’s antiplatelet effect. Pantoprazole or rabeprazole are preferred as they have minimal CYP2C19 interaction.\n- H2RAs (e.g., famotidine) are an alternative but may be less effective for severe erosive esophagitis. Avoid cimetidine due to its antiandrogenic effects and CYP450 interactions.\n- Antacids: Aluminium hydroxide is preferred over magnesium hydroxide in CKD due to the risk of magnesium accumulation. Avoid sodium bicarbonate due to systemic absorption and metabolic alkalosis risk.\n\nc) Mechanism of action, adverse effects, and monitoring for pantoprazole:\n- Mechanism: Pantoprazole is a PPI that irreversibly inhibits the H+/K+ ATPase pump in parietal cells, reducing gastric acid secretion.\n- Adverse effects: 1) Increased risk of Clostridioides difficile infection; 2) Hypomagnesemia and hypocalcemia with long-term use; 3) Vitamin B12 deficiency with prolonged use; 4) Increased risk of osteoporosis-related fractures with long-term, high-dose use.\n- Monitoring: Monitor for symptoms of hypomagnesemia (e.g., muscle cramps, seizures), vitamin B12 deficiency (e.g., fatigue, neuropathy), and bone mineral density in patients on long-term therapy. Assess renal function periodically in CKD."
+            },
+            {
+              "stem": "A 40-year-old man with a history of Crohn’s disease involving the terminal ileum and colon presents with a 3-week history of bloody diarrhea, abdominal pain, and weight loss. He is currently not on any medication. (15 Marks)\na) Outline the pharmacological management for inducing remission in this patient, including the rationale for each drug. (5 Marks)\nb) Describe the mechanism of action, adverse effects, and contraindications of the drug used for maintenance therapy. (5 Marks)\nc) Explain the role of nutritional therapy in this patient’s management. (5 Marks)",
+              "modelAnswer": "a) Pharmacological management for inducing remission:\n1. Corticosteroids (e.g., prednisone 40–60 mg/day orally): Rapidly reduce inflammation and induce remission in moderate-to-severe Crohn’s disease. Mechanism: Suppress immune response and inflammation via inhibition of cytokine production.\n2. 5-Aminosalicylic acid (5-ASA) derivatives (e.g., mesalamine 4–6 g/day orally): Used for mild-to-moderate disease, particularly if colonic involvement. Mechanism: Topical anti-inflammatory effect in the colon.\n3. Biologic therapy (e.g., infliximab): For severe, refractory, or fistulizing Crohn’s disease. Mechanism: Monoclonal antibody targeting TNF-α, reducing inflammation.\n4. Antibiotics (e.g., metronidazole or ciprofloxacin): For perianal disease or fistulas. Mechanism: Antibacterial and anti-inflammatory effects.\n\nb) Maintenance therapy (e.g., azathioprine):\n- Mechanism: Azathioprine is a purine analogue that inhibits purine synthesis, suppressing T- and B-cell proliferation and immune response.\n- Adverse effects: 1) Bone marrow suppression (leukopenia, thrombocytopenia); 2) Hepatotoxicity; 3) Increased risk of infections; 4) Lymphoma and skin cancer with long-term use.\n- Contraindications: Pregnancy (relative), severe hepatic or renal impairment, known hypersensitivity to azathioprine.\n\nc) Role of nutritional therapy:\n1. Exclusive enteral nutrition (EEN) with elemental or polymeric formulas can induce remission in Crohn’s disease, particularly in children and adolescents, by reducing inflammation and providing nutritional support.\n2. Nutritional support (e.g., high-calorie, high-protein diet) is essential to correct malnutrition and promote healing.\n3. Avoidance of trigger foods (e.g., high-fiber, fatty, or spicy foods) during flares to reduce symptoms.\n4. Vitamin and mineral supplementation (e.g., vitamin D, calcium, iron, vitamin B12) to address deficiencies common in Crohn’s disease."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

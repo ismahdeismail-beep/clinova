@@ -1,0 +1,782 @@
+{
+  "pharm-chemo-infections": {
+    "2": {
+      "title": "Chemotherapy of Infections",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 32-year-old HIV-positive patient on ART presents with a CD4 count of 120 cells/μL and symptoms of fever, headache, and confusion. Cryptococcal antigen is positive in CSF. Which antifungal regimen is recommended for induction therapy in this setting?",
+              "options": [
+                "Fluconazole monotherapy 800 mg daily",
+                "Amphotericin B deoxycholate 0.7–1.0 mg/kg/day plus flucytosine 100 mg/kg/day",
+                "Itraconazole 200 mg twice daily",
+                "Voriconazole 200 mg twice daily"
+              ],
+              "answer": "Amphotericin B deoxycholate 0.7–1.0 mg/kg/day plus flucytosine 100 mg/kg/day",
+              "explanation": "WHO/KDIGO guidelines recommend amphotericin B plus flucytosine for 2 weeks as induction therapy for cryptococcal meningitis in HIV patients due to superior fungicidal activity and survival benefit."
+            },
+            {
+              "stem": "A 28-year-old pregnant woman at 28 weeks gestation presents with dysuria, urinary frequency, and suprapubic pain. Gram stain of urine reveals Gram-negative diplococci. Which antibiotic is contraindicated for presumptive gonococcal urethritis in pregnancy?",
+              "options": [
+                "Ceftriaxone 500 mg IM single dose",
+                "Azithromycin 1 g oral single dose",
+                "Doxycycline 100 mg twice daily for 7 days",
+                "Cefixime 400 mg oral single dose"
+              ],
+              "answer": "Doxycycline 100 mg twice daily for 7 days",
+              "explanation": "Doxycycline is contraindicated in pregnancy due to fetal skeletal and dental toxicity. Ceftriaxone, azithromycin, and cefixime are recommended for gonococcal infections in pregnancy."
+            },
+            {
+              "stem": "A 45-year-old man with advanced HIV (CD4 40 cells/μL) develops chronic watery diarrhea with a positive modified Ziehl-Neelsen stain for acid-fast oocysts. Which antimicrobial is most appropriate for empiric treatment?",
+              "options": [
+                "Metronidazole 500 mg three times daily for 10 days",
+                "Co-trimoxazole 960 mg twice daily for 14 days",
+                "Nitazoxanide 500 mg twice daily for 3 days",
+                "Albendazole 400 mg twice daily for 3 days"
+              ],
+              "answer": "Co-trimoxazole 960 mg twice daily for 14 days",
+              "explanation": "Co-trimoxazole is the first-line treatment for both Pneumocystis pneumonia and cryptosporidiosis in HIV patients with advanced immunosuppression."
+            },
+            {
+              "stem": "A 22-year-old female sex worker presents with purulent vaginal discharge and cervical motion tenderness. She is diagnosed with pelvic inflammatory disease (PID). Which regimen is recommended for empiric outpatient treatment according to WHO guidelines?",
+              "options": [
+                "Ceftriaxone 250 mg IM single dose plus doxycycline 100 mg twice daily for 14 days",
+                "Azithromycin 1 g oral single dose plus metronidazole 400 mg twice daily for 14 days",
+                "Ciprofloxacin 500 mg twice daily for 7 days",
+                "Amoxicillin-clavulanate 625 mg three times daily for 10 days"
+              ],
+              "answer": "Ceftriaxone 250 mg IM single dose plus doxycycline 100 mg twice daily for 14 days",
+              "explanation": "WHO recommends ceftriaxone (for gonorrhea coverage) plus doxycycline (for chlamydia) as empiric outpatient PID therapy. Azithromycin may replace doxycycline if tetracyclines are contraindicated."
+            },
+            {
+              "stem": "A 30-year-old healthcare worker sustains a needlestick injury from an HIV-positive patient. The source patient's viral load is unknown. What is the recommended post-exposure prophylaxis (PEP) regimen within 72 hours?",
+              "options": [
+                "Tenofovir + lamivudine + dolutegravir (TLD) for 28 days",
+                "Zidovudine + lamivudine + efavirenz for 28 days",
+                "Emtricitabine + tenofovir + raltegravir for 28 days",
+                "Lopinavir/ritonavir + zidovudine + lamivudine for 28 days"
+              ],
+              "answer": "Tenofovir + lamivudine + dolutegravir (TLD) for 28 days",
+              "explanation": "Current Kenyan and WHO guidelines recommend a 28-day triple-drug PEP regimen with tenofovir, lamivudine, and dolutegravir (TLD) initiated within 72 hours of exposure."
+            },
+            {
+              "stem": "A 50-year-old man with chronic hepatitis B undergoes liver transplantation. Which antiviral is indicated to prevent HBV recurrence post-transplant?",
+              "options": [
+                "Entecavir monotherapy",
+                "Tenofovir monotherapy",
+                "Lamivudine monotherapy",
+                "Adefovir monotherapy"
+              ],
+              "answer": "Tenofovir monotherapy",
+              "explanation": "Tenofovir is preferred for HBV prophylaxis post-liver transplant due to high barrier to resistance and potent antiviral activity. Entecavir is an alternative but tenofovir is first-line."
+            },
+            {
+              "stem": "A 25-year-old HIV-positive patient on co-trimoxazole preventive therapy (CPT) develops a maculopapular rash and fever. Which is the most likely cause of this adverse drug reaction?",
+              "options": [
+                "Hypersensitivity to sulfamethoxazole",
+                "Direct toxicity of trimethoprim",
+                "Immune reconstitution inflammatory syndrome (IRIS)",
+                "Superinfection with herpes zoster"
+              ],
+              "answer": "Hypersensitivity to sulfamethoxazole",
+              "explanation": "Co-trimoxazole contains sulfamethoxazole, which commonly causes hypersensitivity reactions (rash, fever) in HIV patients, especially during early ART."
+            },
+            {
+              "stem": "A 19-year-old female student presents with fever, non-productive cough, and dyspnea. Chest X-ray shows bilateral interstitial infiltrates. Which diagnostic test is most specific for Pneumocystis pneumonia (PCP)?",
+              "options": [
+                "Sputum Gram stain",
+                "Serum LDH level",
+                "Induced sputum or bronchoalveolar lavage with Grocott-Gomori methenamine silver stain",
+                "Blood culture for fungi"
+              ],
+              "answer": "Induced sputum or bronchoalveolar lavage with Grocott-Gomori methenamine silver stain",
+              "explanation": "Microscopic identification of Pneumocystis jirovecii cysts/trophozoites in respiratory specimens using GMS stain is the gold standard for PCP diagnosis."
+            },
+            {
+              "stem": "A 35-year-old man with HIV (CD4 80 cells/μL) is diagnosed with Pneumocystis pneumonia. Which is the preferred first-line treatment?",
+              "options": [
+                "Trimethoprim-sulfamethoxazole 15–20 mg/kg/day IV in divided doses for 21 days",
+                "Pentamidine 4 mg/kg/day IV for 21 days",
+                "Clindamycin 600 mg IV every 8 hours plus primaquine 15 mg daily for 21 days",
+                "Atovaquone 750 mg twice daily for 21 days"
+              ],
+              "answer": "Trimethoprim-sulfamethoxazole 15–20 mg/kg/day IV in divided doses for 21 days",
+              "explanation": "TMP-SMX is the first-line treatment for PCP due to proven efficacy and availability. Alternatives (pentamidine, clindamycin-primaquine, atovaquone) are used for intolerance or failure."
+            },
+            {
+              "stem": "A 40-year-old woman with HIV on ART develops jaundice and dark urine. Liver function tests show ALT 450 IU/L, AST 380 IU/L, total bilirubin 6.2 mg/dL. Which antiretroviral is most likely responsible?",
+              "options": [
+                "Tenofovir",
+                "Dolutegravir",
+                "Efavirenz",
+                "Lamivudine"
+              ],
+              "answer": "Efavirenz",
+              "explanation": "Efavirenz commonly causes hepatotoxicity (elevated transaminases and bilirubin) and is associated with jaundice in some patients."
+            },
+            {
+              "stem": "A 28-year-old male with HIV presents for ART adherence assessment. Which indirect method is most reliable for measuring adherence to antiretroviral therapy?",
+              "options": [
+                "Patient self-report",
+                "Pill count",
+                "Pharmacy refill records",
+                "Plasma drug concentration measurement"
+              ],
+              "answer": "Plasma drug concentration measurement",
+              "explanation": "Plasma drug concentration (e.g., tenofovir levels) is the most objective indirect method for assessing recent adherence to ART."
+            },
+            {
+              "stem": "A 33-year-old woman with HIV (CD4 150 cells/μL) is started on co-trimoxazole for Pneumocystis prophylaxis. Which laboratory parameter should be monitored most closely?",
+              "options": [
+                "Serum potassium",
+                "White blood cell count",
+                "Hemoglobin",
+                "Platelet count"
+              ],
+              "answer": "White blood cell count",
+              "explanation": "Co-trimoxazole can cause bone marrow suppression (neutropenia, thrombocytopenia), so WBC count is critical to monitor."
+            },
+            {
+              "stem": "A 55-year-old man with chronic hepatitis C genotype 1b is started on direct-acting antiviral (DAA) therapy. What is the primary goal of HCV therapy?",
+              "options": [
+                "Normalization of liver enzymes",
+                "Sustained virologic response (SVR) 12 weeks post-treatment",
+                "Reduction of HCV RNA by 2 log10 IU/mL at week 4",
+                "Prevention of hepatocellular carcinoma"
+              ],
+              "answer": "Sustained virologic response (SVR) 12 weeks post-treatment",
+              "explanation": "The primary goal of HCV therapy is achieving SVR12 (undetectable HCV RNA 12 weeks after completing therapy), which correlates with cure."
+            },
+            {
+              "stem": "A 22-year-old female sex worker is diagnosed with gonococcal urethritis. Which antibiotic is recommended for empiric treatment according to Kenyan national guidelines?",
+              "options": [
+                "Ceftriaxone 250 mg IM single dose",
+                "Ciprofloxacin 500 mg oral single dose",
+                "Azithromycin 1 g oral single dose",
+                "Doxycycline 100 mg twice daily for 7 days"
+              ],
+              "answer": "Ceftriaxone 250 mg IM single dose",
+              "explanation": "Ceftriaxone 250 mg IM single dose is the recommended first-line treatment for gonococcal infections in Kenya due to rising ciprofloxacin resistance."
+            },
+            {
+              "stem": "A 30-year-old HIV-positive patient on ART presents with fever, night sweats, and weight loss. Chest X-ray shows upper lobe infiltrates. Which opportunistic infection is most likely?",
+              "options": [
+                "Pneumocystis jirovecii pneumonia",
+                "Tuberculosis",
+                "Cryptococcal meningitis",
+                "Histoplasmosis"
+              ],
+              "answer": "Tuberculosis",
+              "explanation": "Tuberculosis is the most common opportunistic infection in HIV-positive patients in Kenya and presents with upper lobe infiltrates on chest X-ray."
+            },
+            {
+              "stem": "A 45-year-old man with HIV (CD4 60 cells/μL) develops chronic diarrhea with acid-fast oocysts on stool microscopy. Which antimicrobial is indicated for treatment?",
+              "options": [
+                "Metronidazole",
+                "Co-trimoxazole",
+                "Albendazole",
+                "Praziquantel"
+              ],
+              "answer": "Co-trimoxazole",
+              "explanation": "Co-trimoxazole is effective against both Pneumocystis pneumonia and cryptosporidiosis in HIV patients with advanced immunosuppression."
+            },
+            {
+              "stem": "A 25-year-old woman with HIV presents for ART initiation. Which regimen is recommended as first-line therapy in Kenya?",
+              "options": [
+                "Tenofovir + lamivudine + efavirenz",
+                "Zidovudine + lamivudine + nevirapine",
+                "Tenofovir + lamivudine + dolutegravir",
+                "Abacavir + lamivudine + atazanavir/ritonavir"
+              ],
+              "answer": "Tenofovir + lamivudine + dolutegravir",
+              "explanation": "Tenofovir, lamivudine, and dolutegravir (TLD) is the recommended first-line ART regimen in Kenya due to efficacy, safety, and availability."
+            },
+            {
+              "stem": "A 38-year-old man with HIV on ART develops lipodystrophy and hyperlipidemia. Which antiretroviral class is most associated with these metabolic complications?",
+              "options": [
+                "Nucleoside reverse transcriptase inhibitors (NRTIs)",
+                "Non-nucleoside reverse transcriptase inhibitors (NNRTIs)",
+                "Protease inhibitors (PIs)",
+                "Integrase strand transfer inhibitors (INSTIs)"
+              ],
+              "answer": "Protease inhibitors (PIs)",
+              "explanation": "Protease inhibitors are strongly associated with lipodystrophy, hyperlipidemia, insulin resistance, and metabolic syndrome."
+            },
+            {
+              "stem": "A 22-year-old female sex worker is diagnosed with pelvic inflammatory disease (PID). Which pathogen is most commonly implicated in PID?",
+              "options": [
+                "Neisseria gonorrhoeae",
+                "Chlamydia trachomatis",
+                "Mycoplasma genitalium",
+                "Trichomonas vaginalis"
+              ],
+              "answer": "Chlamydia trachomatis",
+              "explanation": "Chlamydia trachomatis is the most common bacterial cause of PID, often co-infecting with Neisseria gonorrhoeae."
+            },
+            {
+              "stem": "A 30-year-old man with HIV (CD4 100 cells/μL) is started on co-trimoxazole for Pneumocystis prophylaxis. Which adverse effect is most commonly associated with co-trimoxazole in this patient?",
+              "options": [
+                "Rash and fever",
+                "Nephrotoxicity",
+                "Hepatotoxicity",
+                "Peripheral neuropathy"
+              ],
+              "answer": "Rash and fever",
+              "explanation": "Hypersensitivity reactions (rash, fever) are the most common adverse effects of co-trimoxazole in HIV patients."
+            },
+            {
+              "stem": "A 40-year-old woman with HIV presents with fever, headache, and confusion. CSF analysis shows encapsulated yeast on India ink stain. Which antifungal is indicated for induction therapy?",
+              "options": [
+                "Fluconazole",
+                "Amphotericin B",
+                "Itraconazole",
+                "Voriconazole"
+              ],
+              "answer": "Amphotericin B",
+              "explanation": "Amphotericin B is the preferred induction therapy for cryptococcal meningitis due to its fungicidal activity and rapid CSF penetration."
+            },
+            {
+              "stem": "A 25-year-old healthcare worker sustains a needlestick injury. The source patient's HIV status is unknown. What is the recommended time window for initiating post-exposure prophylaxis (PEP)?",
+              "options": [
+                "Within 24 hours",
+                "Within 48 hours",
+                "Within 72 hours",
+                "Within 1 week"
+              ],
+              "answer": "Within 72 hours",
+              "explanation": "PEP should be initiated as soon as possible, ideally within 72 hours of exposure, to maximize efficacy."
+            },
+            {
+              "stem": "A 35-year-old man with HIV (CD4 50 cells/μL) develops Pneumocystis pneumonia. Which is the recommended duration of treatment?",
+              "options": [
+                "7 days",
+                "14 days",
+                "21 days",
+                "28 days"
+              ],
+              "answer": "21 days",
+              "explanation": "The recommended duration of treatment for Pneumocystis pneumonia is 21 days to ensure complete eradication of the organism."
+            },
+            {
+              "stem": "A 45-year-old woman with HIV on ART presents with jaundice and elevated liver enzymes. Which antiretroviral is most likely responsible for hepatotoxicity?",
+              "options": [
+                "Tenofovir",
+                "Lamivudine",
+                "Efavirenz",
+                "Dolutegravir"
+              ],
+              "answer": "Efavirenz",
+              "explanation": "Efavirenz is commonly associated with hepatotoxicity, including jaundice and elevated liver enzymes."
+            },
+            {
+              "stem": "A 28-year-old man with HIV (CD4 120 cells/μL) is started on co-trimoxazole for Pneumocystis prophylaxis. Which laboratory parameter should be monitored most closely?",
+              "options": [
+                "Serum creatinine",
+                "White blood cell count",
+                "Hemoglobin",
+                "Platelet count"
+              ],
+              "answer": "White blood cell count",
+              "explanation": "Co-trimoxazole can cause bone marrow suppression, so monitoring WBC count is critical to detect neutropenia early."
+            },
+            {
+              "stem": "A 30-year-old woman with HIV presents with chronic watery diarrhea and acid-fast oocysts on stool microscopy. Which antimicrobial is indicated for treatment?",
+              "options": [
+                "Metronidazole",
+                "Co-trimoxazole",
+                "Albendazole",
+                "Praziquantel"
+              ],
+              "answer": "Co-trimoxazole",
+              "explanation": "Co-trimoxazole is effective against cryptosporidiosis in HIV patients with advanced immunosuppression."
+            },
+            {
+              "stem": "A 22-year-old female sex worker is diagnosed with gonococcal urethritis. Which antibiotic is contraindicated due to rising resistance?",
+              "options": [
+                "Ceftriaxone",
+                "Ciprofloxacin",
+                "Azithromycin",
+                "Doxycycline"
+              ],
+              "answer": "Ciprofloxacin",
+              "explanation": "Ciprofloxacin is no longer recommended for gonococcal infections in Kenya due to high rates of resistance."
+            },
+            {
+              "stem": "A 35-year-old man with HIV on ART presents with fever, night sweats, and weight loss. Chest X-ray shows upper lobe infiltrates. Which opportunistic infection is most likely?",
+              "options": [
+                "Pneumocystis jirovecii pneumonia",
+                "Tuberculosis",
+                "Cryptococcal meningitis",
+                "Histoplasmosis"
+              ],
+              "answer": "Tuberculosis",
+              "explanation": "Tuberculosis is the most common opportunistic infection in HIV-positive patients in Kenya and presents with upper lobe infiltrates on chest X-ray."
+            },
+            {
+              "stem": "A 40-year-old woman with chronic hepatitis C genotype 1b is started on direct-acting antiviral (DAA) therapy. What is the primary goal of HCV therapy?",
+              "options": [
+                "Normalization of liver enzymes",
+                "Sustained virologic response (SVR) 12 weeks post-treatment",
+                "Reduction of HCV RNA by 2 log10 IU/mL at week 4",
+                "Prevention of hepatocellular carcinoma"
+              ],
+              "answer": "Sustained virologic response (SVR) 12 weeks post-treatment",
+              "explanation": "The primary goal of HCV therapy is achieving SVR12 (undetectable HCV RNA 12 weeks after completing therapy), which correlates with cure."
+            },
+            {
+              "stem": "A 25-year-old healthcare worker sustains a needlestick injury. The source patient's HIV status is unknown. Which regimen is recommended for post-exposure prophylaxis (PEP)?",
+              "options": [
+                "Tenofovir + lamivudine + dolutegravir for 28 days",
+                "Zidovudine + lamivudine + efavirenz for 28 days",
+                "Emtricitabine + tenofovir + raltegravir for 28 days",
+                "Lopinavir/ritonavir + zidovudine + lamivudine for 28 days"
+              ],
+              "answer": "Tenofovir + lamivudine + dolutegravir for 28 days",
+              "explanation": "Current Kenyan and WHO guidelines recommend a 28-day triple-drug PEP regimen with tenofovir, lamivudine, and dolutegravir (TLD) initiated within 72 hours of exposure."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 35-year-old HIV-positive patient presents with fever, headache, and confusion. Cryptococcal antigen is positive in CSF. (a) Outline the recommended induction therapy for cryptococcal meningitis. (2 marks) (b) Describe the mechanism of action of amphotericin B. (2 marks) (c) List two key monitoring parameters during amphotericin B therapy. (2 marks)",
+              "modelAnswer": "a) Induction therapy: Amphotericin B deoxycholate 0.7–1.0 mg/kg/day IV plus flucytosine 100 mg/kg/day orally for 2 weeks (WHO guidelines).\n\nb) Mechanism of action: Amphotericin B binds ergosterol in the fungal cell membrane, forming pores that disrupt membrane integrity, leading to leakage of cellular contents and fungal cell death.\n\nc) Monitoring parameters: Serum creatinine and electrolytes (especially potassium and magnesium) due to amphotericin B-induced nephrotoxicity and electrolyte wasting; complete blood count for bone marrow suppression (flucytosine)."
+            },
+            {
+              "stem": "A 28-year-old female sex worker presents with dysuria, urinary frequency, and purulent vaginal discharge. Gram stain reveals Gram-negative diplococci. (a) What is the most likely diagnosis? (1 mark) (b) Outline the recommended treatment regimen. (2 marks) (c) List two contraindications to the recommended treatment in pregnancy. (2 marks)",
+              "modelAnswer": "a) Most likely diagnosis: Gonococcal urethritis/cervicitis.\n\nb) Recommended treatment: Ceftriaxone 250 mg IM single dose plus azithromycin 1 g oral single dose (dual therapy to cover possible chlamydial co-infection).\n\nc) Contraindications to ceftriaxone in pregnancy: Known severe penicillin/cephalosporin allergy; history of severe hypersensitivity reactions to beta-lactams."
+            },
+            {
+              "stem": "A 40-year-old man with HIV (CD4 60 cells/μL) develops chronic watery diarrhea with acid-fast oocysts on stool microscopy. (a) What is the most likely pathogen? (1 mark) (b) Outline the recommended treatment. (2 marks) (c) Describe the mechanism of action of the drug used. (2 marks)",
+              "modelAnswer": "a) Most likely pathogen: Cryptosporidium spp.\n\nb) Recommended treatment: Co-trimoxazole 960 mg twice daily for 14 days (first-line); alternatives include nitazoxanide or paromomycin if co-trimoxazole is contraindicated.\n\nc) Mechanism of action: Co-trimoxazole (trimethoprim-sulfamethoxazole) inhibits bacterial folate synthesis: sulfamethoxazole is a sulfonamide that inhibits dihydropteroate synthase, and trimethoprim inhibits dihydrofolate reductase, blocking tetrahydrofolate synthesis required for DNA/RNA/protein synthesis."
+            },
+            {
+              "stem": "A 30-year-old healthcare worker sustains a needlestick injury from an HIV-positive patient. (a) What is the recommended post-exposure prophylaxis (PEP) regimen? (2 marks) (b) What is the recommended duration of PEP? (1 mark) (c) List two key counseling points for the healthcare worker during PEP. (2 marks)",
+              "modelAnswer": "a) Recommended PEP regimen: Tenofovir 300 mg + lamivudine 300 mg + dolutegravir 50 mg once daily for 28 days.\n\nb) Duration of PEP: 28 days.\n\nc) Key counseling points: Adherence to the full 28-day course is critical for efficacy; report any adverse effects (e.g., rash, nausea, fatigue) immediately; avoid alcohol and other hepatotoxic drugs; use barrier contraception during PEP; follow-up for HIV testing at 6 weeks, 3 months, and 6 months post-exposure."
+            },
+            {
+              "stem": "A 25-year-old woman with HIV presents with fever, non-productive cough, and dyspnea. Chest X-ray shows bilateral interstitial infiltrates. (a) What is the most likely diagnosis? (1 mark) (b) Outline the recommended treatment. (2 marks) (c) List two alternative treatments if the first-line therapy is contraindicated. (2 marks)",
+              "modelAnswer": "a) Most likely diagnosis: Pneumocystis pneumonia (PCP).\n\nb) Recommended treatment: Trimethoprim-sulfamethoxazole (TMP-SMX) 15–20 mg/kg/day IV in divided doses for 21 days.\n\nc) Alternative treatments: Clindamycin 600 mg IV every 8 hours plus primaquine 15 mg daily for 21 days; or atovaquone 750 mg twice daily for 21 days; or pentamidine 4 mg/kg/day IV for 21 days (if other options are unavailable or contraindicated)."
+            },
+            {
+              "stem": "A 45-year-old man with chronic hepatitis B undergoes liver transplantation. (a) What antiviral is indicated to prevent HBV recurrence post-transplant? (1 mark) (b) Describe the mechanism of action of this antiviral. (2 marks) (c) List two key monitoring parameters during therapy. (2 marks)",
+              "modelAnswer": "a) Antiviral indicated: Tenofovir (tenofovir disoproxil fumarate or tenofovir alafenamide).\n\nb) Mechanism of action: Tenofovir is a nucleotide reverse transcriptase inhibitor that competitively inhibits HBV DNA polymerase, leading to chain termination and inhibition of viral replication.\n\nc) Monitoring parameters: Serum HBV DNA levels to assess virologic response; liver function tests (ALT, AST) to monitor for hepatitis flare; renal function (serum creatinine, eGFR) due to potential nephrotoxicity."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 32-year-old HIV-positive patient presents with a CD4 count of 100 cells/μL and symptoms of fever, headache, and confusion. Cryptococcal antigen is positive in CSF. (a) Outline the recommended management plan for this patient. (5 marks) (b) Describe the pharmacology of amphotericin B, including mechanism of action, spectrum of activity, and key adverse effects. (5 marks) (c) Explain the rationale for combining amphotericin B with flucytosine in the induction phase of cryptococcal meningitis treatment. (5 marks)",
+              "modelAnswer": "a) Management plan:\n   - Admit to hospital for close monitoring and supportive care.\n   - Start induction therapy: Amphotericin B deoxycholate 0.7–1.0 mg/kg/day IV plus flucytosine 100 mg/kg/day orally for 2 weeks (WHO guidelines).\n   - Monitor for amphotericin B toxicity: serum creatinine, electrolytes (K+, Mg2+), CBC, and vital signs.\n   - Consider lumbar puncture at day 7 to assess CSF fungal clearance if clinically indicated.\n   - After 2 weeks, switch to consolidation therapy: Fluconazole 400–800 mg/day orally for 8 weeks, then maintenance: Fluconazole 200 mg/day orally for up to 1 year.\n   - Start or continue ART after 2–4 weeks of antifungal therapy to reduce risk of immune reconstitution inflammatory syndrome (IRIS).\n\nb) Pharmacology of amphotericin B:\n   - Mechanism of action: Binds ergosterol in the fungal cell membrane, forming pores that disrupt membrane integrity, leading to leakage of cellular contents and fungal cell death.\n   - Spectrum of activity: Broad-spectrum antifungal active against Candida spp., Cryptococcus neoformans, Aspergillus spp., Histoplasma capsulatum, and other dimorphic fungi.\n   - Key adverse effects: Nephrotoxicity (dose-limiting), electrolyte wasting (hypokalemia, hypomagnesemia), infusion-related reactions (fever, chills, rigors), anemia, and thrombophlebitis.\n\nc) Rationale for combining amphotericin B with flucytosine:\n   - Synergistic fungicidal activity: Amphotericin B disrupts the fungal cell membrane, increasing the intracellular uptake of flucytosine, which is a pyrimidine analogue.\n   - Flucytosine mechanism: Converted intracellularly to 5-fluorouracil by fungal cytosine deaminase, then to 5-fluorouridine monophosphate, which inhibits thymidylate synthase and disrupts DNA/RNA synthesis.\n   - Faster fungal clearance: Combination therapy achieves more rapid CSF sterilization and improves survival compared to amphotericin B alone.\n   - Reduced resistance: Flucytosine monotherapy is associated with rapid development of resistance, which is minimized by combining with amphotericin B."
+            },
+            {
+              "stem": "A 28-year-old female sex worker presents with dysuria, urinary frequency, and purulent vaginal discharge. Gram stain reveals Gram-negative diplococci. She is diagnosed with gonococcal urethritis. (a) Outline the recommended treatment regimen for gonococcal urethritis, including rationale for dual therapy. (5 marks) (b) Describe the pharmacology of ceftriaxone, including mechanism of action, spectrum of activity, and key adverse effects. (5 marks) (c) Explain the importance of partner notification and follow-up in this case. (5 marks)",
+              "modelAnswer": "a) Recommended treatment regimen:\n   - Ceftriaxone 250 mg IM single dose (first-line for gonococcal infections due to rising ciprofloxacin resistance).\n   - Azithromycin 1 g oral single dose (to cover possible co-infection with Chlamydia trachomatis, which is common in gonococcal urethritis).\n   - Rationale for dual therapy: Gonococcal infections are often co-infected with Chlamydia trachomatis, and azithromycin provides effective coverage for chlamydia. Dual therapy also reduces the risk of antimicrobial resistance.\n\nb) Pharmacology of ceftriaxone:\n   - Mechanism of action: Ceftriaxone is a third-generation cephalosporin that inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins (PBPs), leading to cell lysis and death.\n   - Spectrum of activity: Broad-spectrum activity against Gram-negative bacteria (including Neisseria gonorrhoeae) and some Gram-positive bacteria. Limited activity against anaerobic bacteria.\n   - Key adverse effects: Hypersensitivity reactions (rash, anaphylaxis), injection site pain, diarrhea, and rarely Clostridioides difficile-associated diarrhea. Ceftriaxone is generally well-tolerated but should be avoided in patients with severe penicillin/cephalosporin allergy.\n\nc) Importance of partner notification and follow-up:\n   - Partner notification: Essential to prevent reinfection and further transmission. All sexual partners in the past 60 days should be notified, tested, and treated empirically for gonorrhea and chlamydia to break the chain of transmission.\n   - Follow-up: Re-testing for gonorrhea and chlamydia at 3 months post-treatment is recommended to detect reinfection or treatment failure. Patient education on safe sex practices, condom use, and regular STI screening is critical.\n   - Public health impact: Partner notification and follow-up reduce the prevalence of gonorrhea and chlamydia in the community, preventing complications such as PID, infertility, and disseminated gonococcal infection."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Chemotherapy of Infections",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 32-year-old woman with HIV on ART presents with a CD4 count of 120 cells/mm³ and a positive serum cryptococcal antigen. Which antifungal regimen is recommended for induction therapy of cryptococcal meningitis in this patient?",
+              "options": [
+                "Fluconazole 800 mg daily monotherapy",
+                "Amphotericin B deoxycholate 0.7–1.0 mg/kg/day IV plus flucytosine 100 mg/kg/day orally for 2 weeks",
+                "Itraconazole 200 mg twice daily for 4 weeks",
+                "Caspofungin 70 mg loading dose then 50 mg daily IV for 2 weeks"
+              ],
+              "answer": "Amphotericin B deoxycholate 0.7–1.0 mg/kg/day IV plus flucytosine 100 mg/kg/day orally for 2 weeks",
+              "explanation": "WHO/KDIGO guidelines recommend amphotericin B deoxycholate (or liposomal amphotericin B) plus flucytosine for 2 weeks as induction therapy for cryptococcal meningitis in HIV patients due to superior fungicidal activity and survival benefit."
+            },
+            {
+              "stem": "A 28-year-old pregnant woman at 28 weeks gestation presents with a positive endocervical swab for Neisseria gonorrhoeae. Which antibiotic is contraindicated in pregnancy for this infection?",
+              "options": [
+                "Ceftriaxone 500 mg IM single dose",
+                "Azithromycin 1 g orally single dose",
+                "Doxycycline 100 mg twice daily for 7 days",
+                "Spectinomycin 2 g IM single dose"
+              ],
+              "answer": "Doxycycline 100 mg twice daily for 7 days",
+              "explanation": "Doxycycline is contraindicated in pregnancy due to fetal skeletal abnormalities and dental discoloration. Ceftriaxone, azithromycin, and spectinomycin are recommended alternatives for gonococcal infections in pregnancy."
+            },
+            {
+              "stem": "A 45-year-old man with advanced HIV (CD4 50 cells/mm³) develops watery diarrhea, abdominal cramping, and weight loss. Stool microscopy reveals acid-fast oocysts. Which antimicrobial is the drug of choice for this infection?",
+              "options": [
+                "Metronidazole 500 mg three times daily for 7 days",
+                "Nitazoxanide 500 mg twice daily for 3 days",
+                "Trimethoprim-sulfamethoxazole 160/800 mg twice daily for 7 days",
+                "Paromomycin 500 mg four times daily for 7 days"
+              ],
+              "answer": "Trimethoprim-sulfamethoxazole 160/800 mg twice daily for 7 days",
+              "explanation": "The oocysts are consistent with Isospora belli. TMP-SMX is the drug of choice for isosporiasis in HIV patients. Metronidazole is for amoebiasis/giardiasis; nitazoxanide is an alternative; paromomycin is for cryptosporidiosis (which is not acid-fast)."
+            },
+            {
+              "stem": "A healthcare worker sustains a needlestick injury from an HIV-positive patient. The source patient’s viral load is unknown. According to Kenyan post-exposure prophylaxis guidelines, what is the recommended window for initiating PEP?",
+              "options": [
+                "Within 24 hours",
+                "Within 48 hours",
+                "Within 72 hours",
+                "Within 1 week"
+              ],
+              "answer": "Within 72 hours",
+              "explanation": "Kenyan and WHO guidelines recommend initiating HIV post-exposure prophylaxis (PEP) within 72 hours of exposure to maximize efficacy. Earlier initiation (ideally within 2 hours) is preferred, but the 72-hour window is the strict cutoff."
+            },
+            {
+              "stem": "A 30-year-old man with HIV on ART presents with a 2-week history of dry cough, fever, and progressive dyspnea. Chest X-ray shows bilateral interstitial infiltrates. Which antimicrobial is the first-line treatment for presumptive Pneumocystis pneumonia (PCP)?",
+              "options": [
+                "Trimethoprim-sulfamethoxazole 15–20 mg/kg/day IV in divided doses for 21 days",
+                "Clindamycin 600 mg IV every 8 hours plus primaquine 30 mg daily for 21 days",
+                "Pentamidine 4 mg/kg IV daily for 21 days",
+                "Dapsone 100 mg daily plus trimethoprim 20 mg/kg/day for 21 days"
+              ],
+              "answer": "Trimethoprim-sulfamethoxazole 15–20 mg/kg/day IV in divided doses for 21 days",
+              "explanation": "TMP-SMX is the first-line treatment for PCP. Clindamycin-primaquine and dapsone-TMP are alternatives for sulfa-allergic patients. Pentamidine is a second-line agent due to toxicity."
+            },
+            {
+              "stem": "A 25-year-old woman with a history of recurrent genital herpes presents for episodic treatment. Which antiviral is most appropriate for self-initiated treatment of recurrent episodes?",
+              "options": [
+                "Acyclovir 400 mg three times daily for 5 days",
+                "Famciclovir 125 mg twice daily for 5 days",
+                "Valacyclovir 500 mg twice daily for 3 days",
+                "Ganciclovir 1 g three times daily for 7 days"
+              ],
+              "answer": "Valacyclovir 500 mg twice daily for 3 days",
+              "explanation": "Valacyclovir is the preferred agent for episodic treatment of recurrent genital herpes due to its high oral bioavailability and convenient dosing (500 mg twice daily for 3 days). Acyclovir and famciclovir are also options but require more frequent dosing."
+            },
+            {
+              "stem": "A 60-year-old man with chronic hepatitis B develops acute liver failure and is listed for liver transplantation. Which antiviral is recommended to prevent HBV recurrence post-transplant?",
+              "options": [
+                "Lamivudine 100 mg daily",
+                "Entecavir 0.5 mg daily",
+                "Tenofovir disoproxil fumarate 300 mg daily",
+                "Adefovir dipivoxil 10 mg daily"
+              ],
+              "answer": "Tenofovir disoproxil fumarate 300 mg daily",
+              "explanation": "Tenofovir (TDF or TAF) is the preferred antiviral for preventing HBV recurrence post-liver transplant due to its high barrier to resistance and potent antiviral activity. Entecavir is an alternative but requires longer duration pre-transplant."
+            },
+            {
+              "stem": "A 35-year-old woman with HIV on ART presents with a CD4 count of 200 cells/mm³ and a positive serum cryptococcal antigen but no symptoms of meningitis. Which intervention is recommended to prevent cryptococcal disease?",
+              "options": [
+                "Initiate fluconazole 400 mg daily for secondary prophylaxis",
+                "Initiate amphotericin B 1 mg/kg weekly for primary prophylaxis",
+                "Initiate itraconazole 200 mg daily for primary prophylaxis",
+                "No prophylaxis needed; monitor closely"
+              ],
+              "answer": "Initiate fluconazole 400 mg daily for secondary prophylaxis",
+              "explanation": "WHO recommends secondary prophylaxis with fluconazole 400 mg daily for HIV patients with a positive serum cryptococcal antigen to prevent progression to meningitis, especially in those with CD4 < 200 cells/mm³."
+            },
+            {
+              "stem": "A 22-year-old female sex worker presents with a 3-day history of purulent vaginal discharge and dysuria. Gram stain of the discharge shows Gram-negative diplococci. Which antibiotic regimen is recommended for presumptive treatment of pelvic inflammatory disease (PID)?",
+              "options": [
+                "Ceftriaxone 500 mg IM single dose plus doxycycline 100 mg orally twice daily for 14 days",
+                "Azithromycin 1 g orally single dose plus metronidazole 500 mg orally twice daily for 14 days",
+                "Ciprofloxacin 500 mg orally twice daily for 7 days",
+                "Amoxicillin-clavulanate 875/125 mg orally twice daily for 14 days"
+              ],
+              "answer": "Ceftriaxone 500 mg IM single dose plus doxycycline 100 mg orally twice daily for 14 days",
+              "explanation": "CDC and WHO guidelines recommend ceftriaxone (for gonococcal coverage) plus doxycycline (for chlamydial coverage) for empiric treatment of PID. Azithromycin is an alternative for chlamydia but does not cover gonorrhea."
+            },
+            {
+              "stem": "A 40-year-old man with HIV on ART presents with a 1-month history of watery diarrhea and abdominal pain. Stool microscopy reveals oocysts that are acid-fast. Which antimicrobial is the drug of choice for this infection?",
+              "options": [
+                "Metronidazole 500 mg three times daily for 7 days",
+                "Nitazoxanide 500 mg twice daily for 3 days",
+                "Trimethoprim-sulfamethoxazole 160/800 mg twice daily for 7 days",
+                "Paromomycin 500 mg four times daily for 7 days"
+              ],
+              "answer": "Trimethoprim-sulfamethoxazole 160/800 mg twice daily for 7 days",
+              "explanation": "The acid-fast oocysts are consistent with Cryptosporidium parvum. TMP-SMX is the drug of choice for cryptosporidiosis in HIV patients. Metronidazole is for amoebiasis/giardiasis; nitazoxanide is an alternative; paromomycin is less effective."
+            },
+            {
+              "stem": "A 50-year-old man with a history of heavy alcohol use presents with fever, jaundice, and abdominal pain. Serology confirms acute hepatitis B infection. Which antiviral is recommended for treatment of acute hepatitis B?",
+              "options": [
+                "Tenofovir disoproxil fumarate 300 mg daily for 4 weeks",
+                "Entecavir 0.5 mg daily for 12 weeks",
+                "Lamivudine 100 mg daily for 4 weeks",
+                "No antiviral therapy; supportive care only"
+              ],
+              "answer": "No antiviral therapy; supportive care only",
+              "explanation": "WHO and KDIGO guidelines recommend supportive care for acute hepatitis B, as most cases resolve spontaneously. Antivirals are reserved for severe or fulminant cases or chronic hepatitis B."
+            },
+            {
+              "stem": "A 28-year-old woman with HIV on ART presents with a CD4 count of 180 cells/mm³ and a positive serum cryptococcal antigen. She is asymptomatic. Which intervention is recommended to prevent cryptococcal meningitis?",
+              "options": [
+                "Initiate fluconazole 200 mg daily for primary prophylaxis",
+                "Initiate amphotericin B 1 mg/kg weekly for primary prophylaxis",
+                "Initiate itraconazole 200 mg daily for primary prophylaxis",
+                "No prophylaxis needed; monitor closely"
+              ],
+              "answer": "Initiate fluconazole 200 mg daily for primary prophylaxis",
+              "explanation": "WHO recommends primary prophylaxis with fluconazole 200 mg daily for HIV patients with CD4 < 200 cells/mm³ and a positive serum cryptococcal antigen to prevent progression to meningitis."
+            },
+            {
+              "stem": "A 30-year-old man presents with a 1-week history of dysuria and purulent urethral discharge. Gram stain of the discharge shows Gram-negative diplococci. Which antibiotic regimen is recommended for treatment of gonococcal urethritis?",
+              "options": [
+                "Ceftriaxone 500 mg IM single dose",
+                "Azithromycin 1 g orally single dose",
+                "Doxycycline 100 mg orally twice daily for 7 days",
+                "Ciprofloxacin 500 mg orally single dose"
+              ],
+              "answer": "Ceftriaxone 500 mg IM single dose",
+              "explanation": "WHO and CDC guidelines recommend ceftriaxone 500 mg IM as a single dose for treatment of gonococcal urethritis due to increasing resistance to fluoroquinolones and azithromycin."
+            },
+            {
+              "stem": "A 45-year-old man with HIV on ART presents with a 2-week history of fever, night sweats, and weight loss. Chest X-ray shows a right upper lobe infiltrate. Sputum microscopy reveals acid-fast bacilli. Which antimicrobial is the drug of choice for treatment of tuberculosis in this patient?",
+              "options": [
+                "Isoniazid 300 mg daily, rifampicin 600 mg daily, pyrazinamide 1.5 g daily, ethambutol 1.2 g daily for 2 months, then isoniazid and rifampicin for 4 months",
+                "Streptomycin 1 g daily IM for 2 months, then isoniazid and rifampicin for 4 months",
+                "Ethambutol 1.2 g daily, pyrazinamide 1.5 g daily for 6 months",
+                "Levofloxacin 500 mg daily for 6 months"
+              ],
+              "answer": "Isoniazid 300 mg daily, rifampicin 600 mg daily, pyrazinamide 1.5 g daily, ethambutol 1.2 g daily for 2 months, then isoniazid and rifampicin for 4 months",
+              "explanation": "WHO recommends standard 6-month rifampicin-based regimen (2HRZE/4HR) for treatment of drug-susceptible tuberculosis in HIV patients. Streptomycin is no longer recommended due to toxicity and resistance."
+            },
+            {
+              "stem": "A 25-year-old woman with HIV on ART presents with a CD4 count of 150 cells/mm³ and a positive serum cryptococcal antigen. She is asymptomatic. Which antifungal is recommended for primary prophylaxis to prevent cryptococcal meningitis?",
+              "options": [
+                "Fluconazole 200 mg daily",
+                "Amphotericin B 1 mg/kg weekly",
+                "Itraconazole 200 mg daily",
+                "Voriconazole 200 mg twice daily"
+              ],
+              "answer": "Fluconazole 200 mg daily",
+              "explanation": "WHO recommends fluconazole 200 mg daily for primary prophylaxis against cryptococcal meningitis in HIV patients with CD4 < 200 cells/mm³ and a positive serum cryptococcal antigen."
+            },
+            {
+              "stem": "A 35-year-old man with HIV on ART presents with a 1-month history of watery diarrhea and abdominal pain. Stool microscopy reveals oocysts that are not acid-fast. Which antimicrobial is the drug of choice for this infection?",
+              "options": [
+                "Metronidazole 500 mg three times daily for 7 days",
+                "Nitazoxanide 500 mg twice daily for 3 days",
+                "Trimethoprim-sulfamethoxazole 160/800 mg twice daily for 7 days",
+                "Paromomycin 500 mg four times daily for 7 days"
+              ],
+              "answer": "Paromomycin 500 mg four times daily for 7 days",
+              "explanation": "The non-acid-fast oocysts are consistent with Cryptosporidium parvum. Paromomycin (a non-absorbed aminoglycoside) is the preferred agent for cryptosporidiosis in HIV patients due to its safety and efficacy."
+            },
+            {
+              "stem": "A 40-year-old man with a history of intravenous drug use presents with fever, jaundice, and abdominal pain. Serology confirms chronic hepatitis C infection. Which antiviral regimen is recommended for treatment of chronic hepatitis C?",
+              "options": [
+                "Ribavirin 1000 mg daily plus pegylated interferon alfa-2a 180 mcg weekly for 24 weeks",
+                "Sofosbuvir 400 mg daily plus ledipasvir 90 mg daily for 12 weeks",
+                "Tenofovir disoproxil fumarate 300 mg daily for 48 weeks",
+                "Lamivudine 100 mg daily for 24 weeks"
+              ],
+              "answer": "Sofosbuvir 400 mg daily plus ledipasvir 90 mg daily for 12 weeks",
+              "explanation": "Direct-acting antiviral regimens (e.g., sofosbuvir/ledipasvir) are the standard of care for chronic hepatitis C due to high cure rates and improved tolerability compared to interferon-based regimens."
+            },
+            {
+              "stem": "A 28-year-old woman with HIV on ART presents with a CD4 count of 120 cells/mm³ and a positive serum cryptococcal antigen. She is asymptomatic. Which antifungal is recommended for primary prophylaxis to prevent cryptococcal meningitis?",
+              "options": [
+                "Fluconazole 200 mg daily",
+                "Amphotericin B 1 mg/kg weekly",
+                "Itraconazole 200 mg daily",
+                "Voriconazole 200 mg twice daily"
+              ],
+              "answer": "Fluconazole 200 mg daily",
+              "explanation": "WHO recommends fluconazole 200 mg daily for primary prophylaxis against cryptococcal meningitis in HIV patients with CD4 < 200 cells/mm³ and a positive serum cryptococcal antigen."
+            },
+            {
+              "stem": "A 30-year-old man presents with a 1-week history of dysuria and purulent urethral discharge. Gram stain of the discharge shows Gram-negative diplococci. Which antibiotic regimen is recommended for treatment of gonococcal urethritis in a patient with a penicillin allergy?",
+              "options": [
+                "Ceftriaxone 500 mg IM single dose",
+                "Azithromycin 2 g orally single dose",
+                "Gentamicin 240 mg IM single dose",
+                "Ciprofloxacin 500 mg orally single dose"
+              ],
+              "answer": "Gentamicin 240 mg IM single dose",
+              "explanation": "For patients with severe penicillin allergy, gentamicin 240 mg IM as a single dose is recommended as an alternative for treatment of gonococcal urethritis. Azithromycin 2 g is an alternative but resistance is increasing."
+            },
+            {
+              "stem": "A 45-year-old man with HIV on ART presents with a 2-week history of fever, night sweats, and weight loss. Chest X-ray shows a right upper lobe infiltrate. Sputum microscopy reveals acid-fast bacilli. Which antimicrobial is contraindicated in this patient due to potential drug interactions with rifampicin?",
+              "options": [
+                "Isoniazid 300 mg daily",
+                "Pyrazinamide 1.5 g daily",
+                "Ethambutol 1.2 g daily",
+                "Dolutegravir 50 mg daily"
+              ],
+              "answer": "Dolutegravir 50 mg daily",
+              "explanation": "Rifampicin is a potent inducer of CYP3A4 and UGT1A1, which can significantly reduce dolutegravir levels. Dolutegravir should be dosed at 50 mg twice daily when co-administered with rifampicin, or an alternative integrase inhibitor (e.g., raltegravir) should be used."
+            },
+            {
+              "stem": "A 25-year-old woman with HIV on ART presents with a CD4 count of 180 cells/mm³ and a positive serum cryptococcal antigen. She is asymptomatic. Which antifungal is recommended for primary prophylaxis to prevent cryptococcal meningitis?",
+              "options": [
+                "Fluconazole 200 mg daily",
+                "Amphotericin B 1 mg/kg weekly",
+                "Itraconazole 200 mg daily",
+                "Voriconazole 200 mg twice daily"
+              ],
+              "answer": "Fluconazole 200 mg daily",
+              "explanation": "WHO recommends fluconazole 200 mg daily for primary prophylaxis against cryptococcal meningitis in HIV patients with CD4 < 200 cells/mm³ and a positive serum cryptococcal antigen."
+            },
+            {
+              "stem": "A 35-year-old man with HIV on ART presents with a 1-month history of watery diarrhea and abdominal pain. Stool microscopy reveals oocysts that are acid-fast. Which antimicrobial is the drug of choice for this infection?",
+              "options": [
+                "Metronidazole 500 mg three times daily for 7 days",
+                "Nitazoxanide 500 mg twice daily for 3 days",
+                "Trimethoprim-sulfamethoxazole 160/800 mg twice daily for 7 days",
+                "Paromomycin 500 mg four times daily for 7 days"
+              ],
+              "answer": "Trimethoprim-sulfamethoxazole 160/800 mg twice daily for 7 days",
+              "explanation": "The acid-fast oocysts are consistent with Isospora belli. TMP-SMX is the drug of choice for isosporiasis in HIV patients. Metronidazole is for amoebiasis/giardiasis; nitazoxanide is an alternative; paromomycin is less effective."
+            },
+            {
+              "stem": "A 40-year-old man with a history of heavy alcohol use presents with fever, jaundice, and abdominal pain. Serology confirms acute hepatitis B infection. Which antiviral is recommended for treatment of acute hepatitis B?",
+              "options": [
+                "Tenofovir disoproxil fumarate 300 mg daily for 4 weeks",
+                "Entecavir 0.5 mg daily for 12 weeks",
+                "Lamivudine 100 mg daily for 4 weeks",
+                "No antiviral therapy; supportive care only"
+              ],
+              "answer": "No antiviral therapy; supportive care only",
+              "explanation": "WHO and KDIGO guidelines recommend supportive care for acute hepatitis B, as most cases resolve spontaneously. Antivirals are reserved for severe or fulminant cases or chronic hepatitis B."
+            },
+            {
+              "stem": "A 28-year-old woman with HIV on ART presents with a CD4 count of 150 cells/mm³ and a positive serum cryptococcal antigen. She is asymptomatic. Which antifungal is recommended for primary prophylaxis to prevent cryptococcal meningitis?",
+              "options": [
+                "Fluconazole 200 mg daily",
+                "Amphotericin B 1 mg/kg weekly",
+                "Itraconazole 200 mg daily",
+                "Voriconazole 200 mg twice daily"
+              ],
+              "answer": "Fluconazole 200 mg daily",
+              "explanation": "WHO recommends fluconazole 200 mg daily for primary prophylaxis against cryptococcal meningitis in HIV patients with CD4 < 200 cells/mm³ and a positive serum cryptococcal antigen."
+            },
+            {
+              "stem": "A 30-year-old man presents with a 1-week history of dysuria and purulent urethral discharge. Gram stain of the discharge shows Gram-negative diplococci. Which antibiotic regimen is recommended for treatment of gonococcal urethritis in a patient with a severe penicillin allergy?",
+              "options": [
+                "Ceftriaxone 500 mg IM single dose",
+                "Azithromycin 2 g orally single dose",
+                "Gentamicin 240 mg IM single dose",
+                "Ciprofloxacin 500 mg orally single dose"
+              ],
+              "answer": "Gentamicin 240 mg IM single dose",
+              "explanation": "For patients with severe penicillin allergy, gentamicin 240 mg IM as a single dose is recommended as an alternative for treatment of gonococcal urethritis. Azithromycin 2 g is an alternative but resistance is increasing."
+            },
+            {
+              "stem": "A 45-year-old man with HIV on ART presents with a 2-week history of fever, night sweats, and weight loss. Chest X-ray shows a right upper lobe infiltrate. Sputum microscopy reveals acid-fast bacilli. Which antimicrobial is contraindicated in this patient due to potential drug interactions with rifampicin?",
+              "options": [
+                "Isoniazid 300 mg daily",
+                "Pyrazinamide 1.5 g daily",
+                "Ethambutol 1.2 g daily",
+                "Dolutegravir 50 mg daily"
+              ],
+              "answer": "Dolutegravir 50 mg daily",
+              "explanation": "Rifampicin is a potent inducer of CYP3A4 and UGT1A1, which can significantly reduce dolutegravir levels. Dolutegravir should be dosed at 50 mg twice daily when co-administered with rifampicin, or an alternative integrase inhibitor (e.g., raltegravir) should be used."
+            },
+            {
+              "stem": "A 25-year-old woman with HIV on ART presents with a CD4 count of 120 cells/mm³ and a positive serum cryptococcal antigen. She is asymptomatic. Which antifungal is recommended for primary prophylaxis to prevent cryptococcal meningitis?",
+              "options": [
+                "Fluconazole 200 mg daily",
+                "Amphotericin B 1 mg/kg weekly",
+                "Itraconazole 200 mg daily",
+                "Voriconazole 200 mg twice daily"
+              ],
+              "answer": "Fluconazole 200 mg daily",
+              "explanation": "WHO recommends fluconazole 200 mg daily for primary prophylaxis against cryptococcal meningitis in HIV patients with CD4 < 200 cells/mm³ and a positive serum cryptococcal antigen."
+            },
+            {
+              "stem": "A 35-year-old man with HIV on ART presents with a 1-month history of watery diarrhea and abdominal pain. Stool microscopy reveals oocysts that are not acid-fast. Which antimicrobial is the drug of choice for this infection?",
+              "options": [
+                "Metronidazole 500 mg three times daily for 7 days",
+                "Nitazoxanide 500 mg twice daily for 3 days",
+                "Trimethoprim-sulfamethoxazole 160/800 mg twice daily for 7 days",
+                "Paromomycin 500 mg four times daily for 7 days"
+              ],
+              "answer": "Paromomycin 500 mg four times daily for 7 days",
+              "explanation": "The non-acid-fast oocysts are consistent with Cryptosporidium parvum. Paromomycin (a non-absorbed aminoglycoside) is the preferred agent for cryptosporidiosis in HIV patients due to its safety and efficacy."
+            },
+            {
+              "stem": "A 40-year-old man with a history of intravenous drug use presents with fever, jaundice, and abdominal pain. Serology confirms chronic hepatitis C infection. Which antiviral regimen is recommended for treatment of chronic hepatitis C?",
+              "options": [
+                "Ribavirin 1000 mg daily plus pegylated interferon alfa-2a 180 mcg weekly for 24 weeks",
+                "Sofosbuvir 400 mg daily plus ledipasvir 90 mg daily for 12 weeks",
+                "Tenofovir disoproxil fumarate 300 mg daily for 48 weeks",
+                "Lamivudine 100 mg daily for 24 weeks"
+              ],
+              "answer": "Sofosbuvir 400 mg daily plus ledipasvir 90 mg daily for 12 weeks",
+              "explanation": "Direct-acting antiviral regimens (e.g., sofosbuvir/ledipasvir) are the standard of care for chronic hepatitis C due to high cure rates and improved tolerability compared to interferon-based regimens."
+            },
+            {
+              "stem": "A 28-year-old woman with HIV on ART presents with a CD4 count of 180 cells/mm³ and a positive serum cryptococcal antigen. She is asymptomatic. Which antifungal is recommended for primary prophylaxis to prevent cryptococcal meningitis?",
+              "options": [
+                "Fluconazole 200 mg daily",
+                "Amphotericin B 1 mg/kg weekly",
+                "Itraconazole 200 mg daily",
+                "Voriconazole 200 mg twice daily"
+              ],
+              "answer": "Fluconazole 200 mg daily",
+              "explanation": "WHO recommends fluconazole 200 mg daily for primary prophylaxis against cryptococcal meningitis in HIV patients with CD4 < 200 cells/mm³ and a positive serum cryptococcal antigen."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 35-year-old man with HIV on ART presents with a CD4 count of 120 cells/mm³ and a positive serum cryptococcal antigen. He is asymptomatic. (a) Outline the recommended antifungal regimen for primary prophylaxis against cryptococcal meningitis. (2 marks) (b) Describe the mechanism of action of the antifungal drug used in primary prophylaxis. (2 marks) (c) State two monitoring parameters for this patient during primary prophylaxis. (2 marks)",
+              "modelAnswer": "a) Recommended regimen: Fluconazole 200 mg orally once daily. (2 marks)\nb) Mechanism of action: Fluconazole inhibits fungal cytochrome P450 14-alpha-demethylase (CYP51), blocking the conversion of lanosterol to ergosterol, a critical component of the fungal cell membrane. This disrupts membrane integrity and function, leading to fungistasis. (2 marks)\nc) Monitoring parameters: (1) Serum cryptococcal antigen titers every 3–6 months to assess for subclinical infection progression; (2) Liver function tests (ALT/AST) every 3 months to monitor for hepatotoxicity. (2 marks)"
+            },
+            {
+              "stem": "A 28-year-old woman with HIV on ART presents with a 1-month history of watery diarrhea and abdominal pain. Stool microscopy reveals acid-fast oocysts. (a) Identify the most likely pathogen. (1 mark) (b) Outline the recommended treatment regimen. (2 marks) (c) Describe the mechanism of action of the drug used for treatment. (2 marks) (d) State two alternative regimens for patients with sulfa allergy. (2 marks)",
+              "modelAnswer": "a) Most likely pathogen: Isospora belli. (1 mark)\nb) Recommended treatment regimen: Trimethoprim-sulfamethoxazole (TMP-SMX) 160/800 mg orally twice daily for 7 days. (2 marks)\nc) Mechanism of action: TMP-SMX inhibits bacterial and protozoal dihydrofolate reductase (DHFR) and dihydropteroate synthase (DHPS), respectively, blocking folate synthesis and DNA replication. (2 marks)\nd) Alternative regimens: (1) Pyrimethamine 50–75 mg daily plus leucovorin 10–25 mg daily for 14 days; (2) Ciprofloxacin 500 mg twice daily for 7 days (less effective but an option). (2 marks)"
+            },
+            {
+              "stem": "A 30-year-old man presents with a 1-week history of dysuria and purulent urethral discharge. Gram stain of the discharge shows Gram-negative diplococci. (a) Identify the most likely pathogen. (1 mark) (b) Outline the recommended treatment regimen. (2 marks) (c) Describe the mechanism of action of the drug used for treatment. (2 marks) (d) State two alternative regimens for patients with severe penicillin allergy. (2 marks)",
+              "modelAnswer": "a) Most likely pathogen: Neisseria gonorrhoeae. (1 mark)\nb) Recommended treatment regimen: Ceftriaxone 500 mg IM as a single dose. (2 marks)\nc) Mechanism of action: Ceftriaxone is a third-generation cephalosporin that inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins (PBPs), leading to cell lysis and death. (2 marks)\nd) Alternative regimens: (1) Gentamicin 240 mg IM as a single dose; (2) Azithromycin 2 g orally as a single dose (though resistance is increasing). (2 marks)"
+            },
+            {
+              "stem": "A 45-year-old man with HIV on ART presents with a 2-week history of fever, night sweats, and weight loss. Chest X-ray shows a right upper lobe infiltrate. Sputum microscopy reveals acid-fast bacilli. (a) Identify the most likely pathogen. (1 mark) (b) Outline the recommended treatment regimen. (2 marks) (c) Describe the mechanism of action of rifampicin. (2 marks) (d) State two drug interactions of rifampicin that are relevant to this patient. (2 marks)",
+              "modelAnswer": "a) Most likely pathogen: Mycobacterium tuberculosis. (1 mark)\nb) Recommended treatment regimen: Isoniazid 300 mg daily, rifampicin 600 mg daily, pyrazinamide 1.5 g daily, and ethambutol 1.2 g daily for 2 months, followed by isoniazid and rifampicin for 4 months. (2 marks)\nc) Mechanism of action: Rifampicin inhibits bacterial RNA synthesis by binding to the beta subunit of bacterial DNA-dependent RNA polymerase (rpoB), blocking RNA elongation and leading to cell death. (2 marks)\nd) Drug interactions: (1) Rifampicin induces CYP3A4, reducing levels of dolutegravir (HIV integrase inhibitor) and requiring dose adjustment; (2) Rifampicin reduces the efficacy of oral contraceptives, requiring alternative contraception methods. (2 marks)"
+            },
+            {
+              "stem": "A 25-year-old woman with HIV on ART presents with a CD4 count of 180 cells/mm³ and a positive serum cryptococcal antigen. She is asymptomatic. (a) Outline the recommended antifungal regimen for primary prophylaxis against cryptococcal meningitis. (2 marks) (b) Describe the mechanism of action of the antifungal drug used in primary prophylaxis. (2 marks) (c) State two monitoring parameters for this patient during primary prophylaxis. (2 marks)",
+              "modelAnswer": "a) Recommended regimen: Fluconazole 200 mg orally once daily. (2 marks)\nb) Mechanism of action: Fluconazole inhibits fungal cytochrome P450 14-alpha-demethylase (CYP51), blocking the conversion of lanosterol to ergosterol, a critical component of the fungal cell membrane. This disrupts membrane integrity and function, leading to fungistasis. (2 marks)\nc) Monitoring parameters: (1) Serum cryptococcal antigen titers every 3–6 months to assess for subclinical infection progression; (2) Liver function tests (ALT/AST) every 3 months to monitor for hepatotoxicity. (2 marks)"
+            },
+            {
+              "stem": "A 35-year-old man with HIV on ART presents with a 1-month history of watery diarrhea and abdominal pain. Stool microscopy reveals oocysts that are not acid-fast. (a) Identify the most likely pathogen. (1 mark) (b) Outline the recommended treatment regimen. (2 marks) (c) Describe the mechanism of action of the drug used for treatment. (2 marks) (d) State two alternative regimens for patients with contraindications to the first-line drug. (2 marks)",
+              "modelAnswer": "a) Most likely pathogen: Cryptosporidium parvum. (1 mark)\nb) Recommended treatment regimen: Paromomycin 500 mg orally four times daily for 7 days. (2 marks)\nc) Mechanism of action: Paromomycin is a non-absorbed aminoglycoside that binds to the 30S ribosomal subunit of protozoal ribosomes, inhibiting protein synthesis and leading to parasite death. (2 marks)\nd) Alternative regimens: (1) Nitazoxanide 500 mg orally twice daily for 3 days; (2) Azithromycin 500 mg daily for 7 days (less effective but an option). (2 marks)"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 32-year-old woman with HIV on ART presents with a CD4 count of 120 cells/mm³ and a positive serum cryptococcal antigen. She is asymptomatic. (15 marks) (a) Outline the recommended antifungal regimen for primary prophylaxis against cryptococcal meningitis. (2 marks) (b) Describe the mechanism of action, clinical applications, and adverse effects of the antifungal drug used in primary prophylaxis. (6 marks) (c) State the rationale for initiating primary prophylaxis in this patient. (2 marks) (d) Describe the monitoring plan for this patient during primary prophylaxis. (3 marks) (e) State two drug-drug interactions of fluconazole that are relevant to this patient. (2 marks)",
+              "modelAnswer": "a) Recommended regimen: Fluconazole 200 mg orally once daily. (2 marks)\n\nb) Mechanism of action, clinical applications, and adverse effects: (6 marks)\n- Mechanism of action: Fluconazole inhibits fungal cytochrome P450 14-alpha-demethylase (CYP51), blocking the conversion of lanosterol to ergosterol, a critical component of the fungal cell membrane. This disrupts membrane integrity and function, leading to fungistasis.\n- Clinical applications: Primary and secondary prophylaxis of cryptococcal meningitis in HIV patients; treatment of mucosal candidiasis; systemic fungal infections (e.g., candidemia, coccidioidomycosis).\n- Adverse effects: Hepatotoxicity (elevated liver enzymes), QT prolongation, gastrointestinal disturbances (nausea, vomiting, diarrhea), headache, and rash. Rarely, Stevens-Johnson syndrome.\n\nc) Rationale for initiating primary prophylaxis: (2 marks)\n- The patient has a CD4 count < 200 cells/mm³ and a positive serum cryptococcal antigen, placing her at high risk for developing cryptococcal meningitis. Primary prophylaxis with fluconazole reduces the risk of progression to meningitis and associated mortality.\n\n d) Monitoring plan: (3 marks)\n- Baseline: Serum cryptococcal antigen, liver function tests (ALT, AST, bilirubin), renal function tests (creatinine, urea), and electrolytes.\n- During therapy: Liver function tests every 3 months; serum cryptococcal antigen titers every 3–6 months to assess for subclinical infection progression; renal function tests every 3 months if risk factors for nephrotoxicity are present.\n- Clinical monitoring: Assess for symptoms of hepatotoxicity (jaundice, abdominal pain), gastrointestinal intolerance, and skin reactions.\n\n e) Drug-drug interactions: (2 marks)\n- Warfarin: Fluconazole inhibits CYP2C9, increasing warfarin levels and the risk of bleeding. Monitor INR closely and adjust warfarin dose as needed.\n- Phenytoin: Fluconazole inhibits CYP2C9/2C19, increasing phenytoin levels and the risk of toxicity. Monitor phenytoin levels and adjust dose as needed."
+            },
+            {
+              "stem": "A 28-year-old woman with HIV on ART presents with a 1-month history of watery diarrhea and abdominal pain. Stool microscopy reveals acid-fast oocysts. (15 marks) (a) Identify the most likely pathogen and outline the recommended treatment regimen. (3 marks) (b) Describe the mechanism of action, clinical applications, and adverse effects of the drug used for treatment. (6 marks) (c) State the rationale for the recommended treatment duration. (2 marks) (d) Describe the monitoring plan for this patient during treatment. (2 marks) (e) State two alternative regimens for patients with sulfa allergy. (2 marks)",
+              "modelAnswer": "a) Most likely pathogen and recommended treatment regimen: (3 marks)\n- Most likely pathogen: Isospora belli.\n- Recommended treatment regimen: Trimethoprim-sulfamethoxazole (TMP-SMX) 160/800 mg orally twice daily for 7 days.\n\nb) Mechanism of action, clinical applications, and adverse effects: (6 marks)\n- Mechanism of action: TMP-SMX inhibits bacterial and protozoal dihydrofolate reductase (DHFR) and dihydropteroate synthase (DHPS), respectively, blocking folate synthesis and DNA replication. TMP inhibits DHFR, while SMX inhibits DHPS, leading to synergistic antimicrobial activity.\n- Clinical applications: Treatment of isosporiasis, toxoplasmosis, Pneumocystis pneumonia (PCP), and other protozoal infections; bacterial infections (e.g., urinary tract infections, bronchitis).\n- Adverse effects: Hypersensitivity reactions (rash, Stevens-Johnson syndrome), bone marrow suppression (neutropenia, thrombocytopenia), gastrointestinal disturbances (nausea, vomiting, diarrhea), hyperkalemia, and crystalluria.\n\nc) Rationale for the recommended treatment duration: (2 marks)\n- The recommended 7-day course of TMP-SMX is sufficient to eradicate Isospora belli from the gastrointestinal tract. Shorter courses may lead to treatment failure or relapse, while longer courses increase the risk of adverse effects without additional benefit.\n\n d) Monitoring plan: (2 marks)\n- Baseline: Complete blood count (CBC) to assess for bone marrow suppression; renal function tests (creatinine, urea) to assess for crystalluria and nephrotoxicity; electrolytes (potassium) to assess for hyperkalemia.\n- During therapy: CBC at the end of treatment to assess for bone marrow suppression; monitor for signs of hypersensitivity reactions (rash, Stevens-Johnson syndrome).\n\n e) Alternative regimens for patients with sulfa allergy: (2 marks)\n- Pyrimethamine 50–75 mg daily plus leucovorin 10–25 mg daily for 14 days: Pyrimethamine inhibits DHFR, while leucovorin (folinic acid) reduces the risk of bone marrow suppression.\n- Ciprofloxacin 500 mg twice daily for 7 days: Ciprofloxacin has some activity against Isospora belli but is less effective than TMP-SMX."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

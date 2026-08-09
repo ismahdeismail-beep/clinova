@@ -1,0 +1,245 @@
+{
+  "code": "3306b",
+  "title": "Pharmacology VI — Cardiovascular Pharmacology (July 2019)",
+  "sections": {
+    "A": [
+      {
+        "stem": "A 67-year-old gentleman with a history of poorly controlled diabetes presents to his primary care physician for a routine examination. He is found to be hypertensive on physical exam and is started on a medication that is considered first-line therapy for his condition. What should the physician warn the patient about before the patient takes his first dose of the medication?",
+        "options": [
+          "Hypertensive episodes",
+          "Hypotensive episodes",
+          "Hyperthermic episodes",
+          "Hypothermic episodes",
+          "Anuric episodes"
+        ]
+      },
+      {
+        "stem": "A 27-year-old female with no significant past medical history presents to clinic for an annual evaluation. She has no complaints. Vital signs are as follows: T 37 Celsius, HR 70, BP 159/93, RR 12, and O2 99% on room air. Her BMI is 20.1. Repeat blood pressures on two separate occasions are 157/95 and 161/91. On physical examination, you auscultate just laterally to the umbilicus and detect a low pitched \"wooshing\" sound on each side. In medical management of this patient's hypertension, which medication should be avoided?",
+        "options": [
+          "Hydrochlorothiazide",
+          "Atenolol",
+          "Amlodipine",
+          "Spironolactone",
+          "Lisinopril"
+        ]
+      },
+      {
+        "stem": "A 67-year-old man with a history of diabetes mellitus type II and a previous myocardial infarction presents to your office for a routine examination. His blood pressure is found to be 180/100 mmHg. Which drug is the first-line choice of treatment for this patient's hypertension?",
+        "options": [
+          "Amlodipine",
+          "Hydrochlorothiazide",
+          "Lisinopril",
+          "Prazosin",
+          "Isoproterenol"
+        ]
+      },
+      {
+        "stem": "A 59-year-old man presents to general medical clinic for his yearly checkup. He has no complaints except for a dry cough. He has a past medical history of type II diabetes, hypertension, hyperlipidemia, asthma, and depression. His home medications are sitagliptin/metformin, lisinopril, atorvastatin, albuterol inhaler, and citalopram. His vital signs are stable, with blood pressure 126/79 mmHg. Hemoglobin A1C is 6.3%, and creatinine is 1.3 g/dL. The remainder of his physical exam is unremarkable. If this patient's cough is due to one of the medications he is taking, what would be the next step in management?",
+        "options": [
+          "Change citalopram to escitalopram",
+          "Change lisinopril to metoprolol",
+          "Change lisinopril to amlodipine",
+          "Change atorvastatin to to lovastatin",
+          "Change lisinopril to losartan"
+        ]
+      },
+      {
+        "stem": "A 21-year-old college female presents after her swim practice with persistent palpitations. The palpitations began 3 hours ago during a rigorous swim and are not accompanied by chest pain, shortness of breath, nausea or vomiting. The patient has a documented history of Wolff-Parkinson-White (WPW). She denies recent alcohol or drug use. On physical exam, the patient's blood pressure is 115/70. EKG shows atrial fibrillation with a rate of 170/min. What is the most appropriate next step in management?",
+        "options": [
+          "Procainamide",
+          "Adenosine",
+          "Atenolol",
+          "Diltiazem",
+          "Digoxin"
+        ]
+      },
+      {
+        "stem": "A 71-year-old man with a history of BPH is hospitalized for an ST-elevation myocardial infarction and undergoes percutaneous coronary intervention. Upon discharge, he is prescribed aspirin, clopidogrel, prazosin, isosorbide mononitrate, carvedilol, enalapril, and atorvastatin. He is scheduled to follow up with his primary care provider 1 week after discharge. Which of the following is the most likely complication of his drug regimen?",
+        "options": [
+          "Torsades de pointes",
+          "Drug-induced hepatitis",
+          "Orthostatic hypotension",
+          "Agranulocytosis",
+          "Seizure"
+        ]
+      },
+      {
+        "stem": "A 63-year-old man presents to your office for a routine check-up. He currently has no physical complaints. At his last visit three months ago, he was started on therapeutic lifestyle changes to decrease his blood pressure, which was measured in the 150s/90s on two separate visits. Today, his blood pressure is 154/93. You and the patient agree to start on an antihypertensive medication. The medication that you prescribe for him decreases aldosterone production and serum angiotensin I concentration and increases natriuresis. To which of the following drug classes does this medication belong?",
+        "options": [
+          "Angiotensin converting enzyme (ACE) inhibitor",
+          "Direct renin inhibitor",
+          "Alpha-adrenergic blocker",
+          "Aldosterone receptor antagonist",
+          "Angiotensin receptor blocker (ARB)"
+        ]
+      },
+      {
+        "stem": "A 55-year-old male with a medical history significant for newly diagnosed hypertension presents to your clinic complaining of increased swelling of his ankles. He states that he has been very compliant with the \"blood pressure pills\" that were prescribed by you 6 months ago. If his swelling is a side effect of this medication, what was he most likely prescribed?",
+        "options": [
+          "Lisinopril",
+          "Propanolol",
+          "Carvedilol",
+          "Amlodipine",
+          "Verapamil"
+        ]
+      },
+      {
+        "stem": "A patient has a history of hypertension refractory to thiazide diuretics and angiotensin converting enzyme (ACE) inhibitors. Blood pressure is 170/115 mmHg and BMI is 31 m/kg^2. You write a prescription for hydralazine. You instruct the patient to call your office is she experiences which of the following drug-related side effects:",
+        "options": [
+          "Cough",
+          "Angioedema",
+          "Maculopapular facial rash",
+          "Seizure",
+          "Weight loss"
+        ]
+      },
+      {
+        "stem": "A 26-year-old woman presents to the Emergency Department with one day of painful leg swelling and asymmetry. She is otherwise healthy and takes no medications. On examination, her vital signs are temperature 99 degrees F, heart rate 65 bpm, blood pressure 110/80 mmHg, and saturation 100% on room air. Lower extremity examination shows mild calf swelling on her left leg, but otherwise is unremarkable. Venous ultrasound reveals a deep venous thrombosis. Complete blood cell count and metabolic panel are within normal limits. Which of the following is the most appropriate course of action?",
+        "options": [
+          "Initiate heparin drip, begin warfarin therapy, and admit to hospital",
+          "Initiate low-molecular-weight heparin, begin warfarin, and admit to hospital",
+          "Initiate warfarin therapy and admit to hospital",
+          "Discharge home with warfarin therapy and follow up in 3 days",
+          "Discharge home with low-molecular-weight therapy and warfarin and follow up in 3 days"
+        ]
+      },
+      {
+        "stem": "A 60-year-old Caucasion male presents to your office complaining of shortness of breath on exertion. He undergoes an echocardiogram and is found to have an ejection fraction of 35%. Which of the following classes of drugs would improve mortality in this patient?",
+        "options": [
+          "Cardiac glycosides",
+          "Calcium channel blockers",
+          "Thiazide diuretics",
+          "ACE inhibitors",
+          "Nitrates"
+        ]
+      },
+      {
+        "stem": "A 50 year old patient suffering from unstable angina can be given any of the following drugs except:",
+        "options": [
+          "Aspirin",
+          "Clopidogrel",
+          "Atorvastatin",
+          "Atenolol",
+          "None of the above"
+        ]
+      },
+      {
+        "stem": "Pernicious anemia is developed due to deficiency of:",
+        "options": [
+          "Erythropoetin",
+          "Vitamin B12",
+          "Iron",
+          "Vitamin B6",
+          "Folic acid"
+        ]
+      },
+      {
+        "stem": "Which of the following is an important factor regarding the use of anticoagulant drugs?",
+        "options": [
+          "Heparin is contraindicated in pregnancy.",
+          "Warfarin has a long onset of action that is related to the half-lives of blood clotting components",
+          "heparin in activated in the liver to an active agent",
+          "Warfarin effect is monitored by measuring the bleeding time",
+          "Heparin is inactive in vitro"
+        ]
+      },
+      {
+        "stem": "Low molecular weight heparin",
+        "options": [
+          "Has better bioavailability than unfractionated heparin",
+          "Molecular weight 1/10 that of normal heparin",
+          "More protein bound than heparin",
+          "Protamine sulphate is an example",
+          "Has less predictable pharmacokinetics compared to unfractionated heparin"
+        ]
+      },
+      {
+        "stem": "All of the following are recommended at the initial stages of treating patients with heart failure EXCEPT:",
+        "options": [
+          "Reduced salt intake",
+          "Verapamil",
+          "ACE inhibitors",
+          "Diuretics",
+          "None of the above"
+        ]
+      },
+      {
+        "stem": "A 60-year-old Caucasian female with hypertension is treated with atenolol. Which of the following is NOT a direct effect of atenolol?",
+        "options": [
+          "Decreased cardiac contractile force",
+          "Decreased renin levels",
+          "Increased peripheral vasodilation",
+          "Decreased heart rate",
+          "Decreased intraocular pressure"
+        ]
+      },
+      {
+        "stem": "A 60-year-old man presents to his primary doctor complaining of worsening exertional dyspnea over the last two years. He denies chest pain and lightheadedness, but reports persistent cough with white sputum. His past medical history includes hypertension, controlled with a \"water pill\", and diabetes mellitus, for which he takes metformin. He has a 50 pack-year history of smoking, but denies any illicit drug use or alcohol consumption. His temperature is 37 C (98.6 F), blood pressure 150/80 mm Hg, heart rate 76/min and respiratory rate 16/min. On physical exam, he is an overweight man in no acute distress. Cardiac auscultation is normal and there is no jugular venous distention or pedal edema. The anteroposterior diameter of his chest is increased, and he has decreased breath sounds bilaterally with diffuse expiratory wheezing. His abdominal exam is within normal limits and there is no evidence of cyanosis or clubbing. His pulmonary function tests reveal an FEV1 1.78 liters (60% predicted) and FVC of 3.0 liters. Which of the following medications should be started to relieve this patient's symptoms?",
+        "options": [
+          "Muscarinic receptor antagonist",
+          "Beta-adrenergic blocker",
+          "Alpha-1 adrenergic blocker",
+          "Alpha-2 adrenergic blocker",
+          "Dopamine agonist"
+        ]
+      },
+      {
+        "stem": "A 78-year-old man presents to the emergency room with a three day history of palpitations. He denies dizziness, dyspnea, and chest pain, and says he sleeps comfortably on one pillow each night. His history is significant for diabetes mellitus type 2, hyperlipidemia, and hypertension. Medications include glyburide, lisinopril, and hydrochlorothiazide. The patient has a ten pack-year history of smoking but quit 15 years ago. He does not drink alcohol or use drugs. His heart rate is 115/min and his blood pressure is 145/95 mmHg. Physical examination demonstrates no evidence of heart failure. Electrocardiogram shows atrial fibrillation with rapid ventricular response. Which of the following is an appropriate therapy for this patient:",
+        "options": [
+          "Metoprolol and aspirin",
+          "Metoprolol and warfarin",
+          "Digoxin and aspirin",
+          "Digoxin and warfarin",
+          "Diltiazem and aspirin"
+        ]
+      },
+      {
+        "stem": "All of the following groups of drugs are for thrombosis treatment EXCEPT:",
+        "options": [
+          "Anticoagulant drugs",
+          "Antifibrinolitic drugs",
+          "Fibrinolitic drugs",
+          "Antiplatelet drugs",
+          "None of the above"
+        ]
+      }
+    ],
+    "B": [
+      {
+        "stem": "A patient suffering from Deep Venous Thrombosis is admitted in the hospital.\na) Which drug would you recommend she be given and what is the mode of action of this drug? (3 marks)\nb) After 4 days, she might be discharged, which drug would you recommend she be given? (1 mark)\nc) What advice would you give to the prescriber and to the patient about the drug mentioned above? (2 marks)"
+      },
+      {
+        "stem": "A 70 year old Kenyan patient presents to the hospital and the BP is 160/95. He has no other symptoms apart from gout.\na) What is your target when reducing the blood pressure? (1 mark)\nb) Which drugs would you give him? (1 mark)\nc) What is the mode of action of the above drugs? (3 marks)\nd) What are the side effects you should look out for? (2 marks)"
+      },
+      {
+        "stem": "A patient is diagnosed of HEART FAILURE.\na) Which drugs should you give him? (2 marks)\nb) What is the mode of action of the above drugs? (4 marks)\nc) What are the side effects you should look out for? (4 marks)"
+      },
+      {
+        "stem": "List the classes of antiarrythmic drugs and give an example in each case. (4 marks)"
+      },
+      {
+        "stem": "What is the mode of action and clinical applications of chlorthalidone? (4 marks)"
+      },
+      {
+        "stem": "Compare and contrast the mode of action of heparin and that of warfarin. (4 marks)"
+      },
+      {
+        "stem": "Aspirin may be used in management of angina. State its indication and its mode of action in this case. (2 marks)"
+      },
+      {
+        "stem": "What is the mode of action of the following drugs in management of hypertension? (4 marks)\na) candesartan\nb) hydralazine"
+      }
+    ],
+    "C": [
+      {
+        "stem": "Describe ENALAPRIL in terms of the\na) mode of action (4 marks)\nb) clinical applications (3 marks)\nc) side effects (3 marks)\nd) drug-drug interactions (3 marks)\ne) contraindications (3 marks)\nf) pharmacokinetics (4 marks)"
+      },
+      {
+        "stem": "Describe FUROSEMIDE in terms of the\na) mode of action (2 marks)\nb) clinical applications (4 marks)\nc) side effects (4 marks)\nd) contraindications (3 marks)\ne) drug-drug interactions (3 marks)\nf) pharmacokinetics (4 marks)"
+      },
+      {
+        "stem": "Describe ORAL ANTICOAGULANTS in terms of\na) classes and examples (2 marks)\nb) mode of action (4 marks)\nc) clinical applications (3 marks)\nd) side effects (3 marks)\ne) contraindications (2 marks)\nf) pharmacokinetics (3 marks)\ng) drug-drug interactions (3 marks)"
+      }
+    ]
+  }
+}

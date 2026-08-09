@@ -3,10 +3,12 @@ import { Eye, EyeOff, Download, BookOpen, FileText, Award, Clock, Target, FlaskC
 import { STANDARD_EXAM_STRUCTURE, type ExamUnitSpec, type ExamModuleSpec, type ExamTrackSpec } from '../data/examPrepData';
 import { getExamPrepPaper, type GeneratedPaper } from '../data/examPrepPapers';
 
-// Count available paper variants for a unit (mock units have 3, real/OLD units have 1)
+// Count available paper variants for a unit (derived from the paper registry —
+// mock units have 3, real/OLD units have 1-3 depending on real second sittings + generated papers).
 export const getPaperCount = (spec: ExamUnitSpec): number => {
-  const isReal = spec.source === 'real';
-  return isReal ? 1 : 3;
+  if (getExamPrepPaper(spec.id, 3)) return 3;
+  if (getExamPrepPaper(spec.id, 2)) return 2;
+  return getExamPrepPaper(spec.id, 1) ? 1 : 0;
 };
 
 // Total papers across all units in a module
@@ -163,7 +165,7 @@ export function PaperCard({ spec, variant }: { spec: ExamUnitSpec; variant: numb
   }
 
   const paperLabel = spec.source === 'real'
-    ? 'Past Paper'
+    ? (paper.title !== spec.title ? paper.title : 'Past Paper')
     : (variant === 1 ? 'Paper One' : variant === 2 ? 'Paper Two' : `Paper ${variant}`);
 
   return (
@@ -279,7 +281,16 @@ export function UnitCard({ spec, onSelect }: { spec: ExamUnitSpec; onSelect: (un
 
 export function PaperLinkCard({ spec, variant, onSelect }: { spec: ExamUnitSpec; variant: number; onSelect: (variant: number) => void }) {
   const paper = getExamPrepPaper(spec.id, variant);
-  const label = spec.source === 'real' ? 'Past Paper' : variant === 1 ? 'Paper One' : variant === 2 ? 'Paper Two' : `Paper ${variant}`;
+  const label =
+    spec.source === 'real'
+      ? paper && paper.title !== spec.title
+        ? paper.title
+        : 'Past Paper'
+      : variant === 1
+        ? 'Paper One'
+        : variant === 2
+          ? 'Paper Two'
+          : `Paper ${variant}`;
   const qCount = paper ? paper.sections.reduce((a, s) => a + s.questions.length, 0) : 0;
   const marks = spec.structure.reduce((a, s) => a + s.marks, 0);
   return (

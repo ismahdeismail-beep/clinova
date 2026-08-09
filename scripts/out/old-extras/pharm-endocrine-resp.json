@@ -1,0 +1,782 @@
+{
+  "pharm-endocrine-resp": {
+    "2": {
+      "title": "Endocrine & Respiratory Pharmacology",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 35-year-old male with poorly controlled asthma presents with tremor, palpitations, and a serum potassium of 3.2 mmol/L after using his reliever inhaler excessively. Which class of drug is most likely responsible for these adverse effects?",
+              "options": [
+                "Inhaled corticosteroids",
+                "Long-acting beta-2 agonists",
+                "Short-acting beta-2 agonists",
+                "Leukotriene receptor antagonists"
+              ],
+              "answer": "Short-acting beta-2 agonists",
+              "explanation": "Short-acting beta-2 agonists (e.g., salbutamol) cause tremor, palpitations, and hypokalaemia due to stimulation of beta-2 receptors leading to potassium influx into cells. Inhaled corticosteroids do not cause these systemic effects; LABAs are not used as relievers; leukotriene antagonists have different adverse effects."
+            },
+            {
+              "stem": "Which of the following is the primary mechanism by which inhaled corticosteroids reduce airway inflammation in asthma?",
+              "options": [
+                "Direct bronchodilation by relaxing smooth muscle",
+                "Inhibition of leukotriene synthesis",
+                "Upregulation of beta-2 receptors on airway smooth muscle",
+                "Suppression of inflammatory gene transcription"
+              ],
+              "answer": "Suppression of inflammatory gene transcription",
+              "explanation": "Inhaled corticosteroids suppress inflammatory gene transcription by binding to glucocorticoid receptors, reducing synthesis of pro-inflammatory cytokines (e.g., IL-4, IL-5) and mediators. They do not directly bronchodilate, inhibit leukotriene synthesis, or upregulate beta-2 receptors."
+            },
+            {
+              "stem": "A patient with chronic obstructive pulmonary disease (COPD) is prescribed ipratropium bromide. Which of the following statements best describes its mechanism of action?",
+              "options": [
+                "It is a selective beta-2 receptor agonist",
+                "It blocks muscarinic M3 receptors in bronchial smooth muscle",
+                "It inhibits phosphodiesterase enzymes",
+                "It stabilises mast cell membranes"
+              ],
+              "answer": "It blocks muscarinic M3 receptors in bronchial smooth muscle",
+              "explanation": "Ipratropium bromide is an anticholinergic agent that competitively blocks muscarinic M3 receptors on bronchial smooth muscle and submucosal glands, reducing vagally mediated bronchoconstriction and mucus secretion. It is not a beta-2 agonist, PDE inhibitor, or mast cell stabiliser."
+            },
+            {
+              "stem": "Which of the following adverse effects is most commonly associated with long-term use of oral corticosteroids?",
+              "options": [
+                "Hypoglycaemia",
+                "Hyperkalaemia",
+                "Osteoporosis",
+                "Bradycardia"
+              ],
+              "answer": "Osteoporosis",
+              "explanation": "Chronic oral corticosteroid use causes osteoporosis due to decreased bone formation, increased bone resorption, and reduced calcium absorption. Hypoglycaemia and hyperkalaemia are not typical; bradycardia is not a recognised adverse effect."
+            },
+            {
+              "stem": "A 45-year-old female with type 2 diabetes mellitus is started on metformin. Which of the following is the primary mechanism of action of metformin?",
+              "options": [
+                "Stimulation of insulin secretion from pancreatic beta cells",
+                "Inhibition of hepatic gluconeogenesis",
+                "Enhancement of peripheral glucose uptake independent of insulin",
+                "Inhibition of alpha-glucosidase in the gut"
+              ],
+              "answer": "Inhibition of hepatic gluconeogenesis",
+              "explanation": "Metformin primarily reduces hepatic gluconeogenesis by activating AMP-activated protein kinase (AMPK), leading to decreased glucose production. It does not stimulate insulin secretion, enhance glucose uptake independently of insulin, or inhibit alpha-glucosidase."
+            },
+            {
+              "stem": "Which of the following is a contraindication to the use of beta-blockers in a patient with asthma?",
+              "options": [
+                "Hypertension",
+                "Heart failure",
+                "Diabetes mellitus",
+                "COPD"
+              ],
+              "answer": "COPD",
+              "explanation": "Beta-blockers are contraindicated in asthma and COPD due to risk of bronchospasm from blockade of beta-2 receptors in bronchial smooth muscle. Hypertension, heart failure, and diabetes are not absolute contraindications (though caution is needed in diabetes due to masking of hypoglycaemia)."
+            },
+            {
+              "stem": "A patient with severe asthma exacerbation is given intravenous theophylline. Which of the following laboratory parameters should be monitored most closely?",
+              "options": [
+                "Serum sodium",
+                "Serum potassium",
+                "Serum theophylline concentration",
+                "Serum bicarbonate"
+              ],
+              "answer": "Serum theophylline concentration",
+              "explanation": "Theophylline has a narrow therapeutic index (5–15 mg/L), and toxicity (nausea, arrhythmias, seizures) occurs at levels >20 mg/L. Serum theophylline concentration must be monitored to avoid toxicity. Other parameters are less critical for theophylline monitoring."
+            },
+            {
+              "stem": "Which of the following drugs is a leukotriene receptor antagonist used in the management of asthma?",
+              "options": [
+                "Cromolyn sodium",
+                "Zileuton",
+                "Montelukast",
+                "Omalizumab"
+              ],
+              "answer": "Montelukast",
+              "explanation": "Montelukast is a leukotriene receptor antagonist (CysLT1) used for asthma prophylaxis and allergic rhinitis. Cromolyn is a mast cell stabiliser; zileuton is a 5-lipoxygenase inhibitor; omalizumab is an anti-IgE monoclonal antibody."
+            },
+            {
+              "stem": "A patient with Graves' disease is started on carbimazole. Which of the following is the primary mechanism of action of carbimazole?",
+              "options": [
+                "Inhibition of thyroid hormone release from the thyroid gland",
+                "Blockade of thyroid hormone synthesis by inhibiting thyroid peroxidase",
+                "Destruction of thyroid follicular cells",
+                "Stimulation of TSH secretion to suppress thyroid hormone production"
+              ],
+              "answer": "Blockade of thyroid hormone synthesis by inhibiting thyroid peroxidase",
+              "explanation": "Carbimazole inhibits thyroid peroxidase, blocking the oxidation of iodide to iodine and the coupling of iodotyrosines to form thyroid hormones (T3/T4). It does not inhibit hormone release, destroy follicular cells, or stimulate TSH secretion."
+            },
+            {
+              "stem": "Which of the following is the most appropriate first-line treatment for acute severe asthma in a child?",
+              "options": [
+                "Oral prednisolone",
+                "High-dose inhaled salbutamol via spacer",
+                "Intravenous hydrocortisone",
+                "Subcutaneous adrenaline"
+              ],
+              "answer": "High-dose inhaled salbutamol via spacer",
+              "explanation": "For acute severe asthma in children, high-dose inhaled short-acting beta-2 agonists (e.g., salbutamol via spacer or nebuliser) are first-line. Oral prednisolone or IV hydrocortisone are used for severe exacerbations or if inhaled therapy fails; adrenaline is rarely used except in anaphylaxis."
+            },
+            {
+              "stem": "A patient with type 1 diabetes mellitus is started on insulin glargine. Which of the following best describes the pharmacokinetic profile of insulin glargine?",
+              "options": [
+                "Rapid onset and short duration of action",
+                "Intermediate duration of action with a peak effect at 2–4 hours",
+                "Long duration of action with a relatively flat pharmacokinetic profile",
+                "Ultra-rapid onset with peak effect within 15 minutes"
+              ],
+              "answer": "Long duration of action with a relatively flat pharmacokinetic profile",
+              "explanation": "Insulin glargine is a long-acting insulin analogue with a prolonged duration of action (up to 24 hours) and a relatively flat pharmacokinetic profile, providing basal insulin coverage without pronounced peaks. Rapid-acting insulins (e.g., aspart, lispro) have rapid onset and short duration."
+            },
+            {
+              "stem": "Which of the following adverse effects is most commonly associated with the use of inhaled corticosteroids?",
+              "options": [
+                "Hyperglycaemia",
+                "Oral candidiasis",
+                "Hypokalaemia",
+                "Bradycardia"
+              ],
+              "answer": "Oral candidiasis",
+              "explanation": "Inhaled corticosteroids can cause oral candidiasis (thrush) due to local immunosuppression in the oropharynx. Hyperglycaemia and hypokalaemia are not typical; bradycardia is not a recognised adverse effect."
+            },
+            {
+              "stem": "A patient with COPD is prescribed tiotropium bromide. Which of the following statements is true regarding tiotropium?",
+              "options": [
+                "It is a short-acting beta-2 agonist",
+                "It is administered orally",
+                "It is a long-acting muscarinic antagonist",
+                "It causes significant systemic absorption"
+              ],
+              "answer": "It is a long-acting muscarinic antagonist",
+              "explanation": "Tiotropium is a long-acting muscarinic antagonist (LAMA) used for COPD maintenance. It is administered via inhalation, has minimal systemic absorption, and is not a beta-2 agonist. Short-acting muscarinic antagonists (e.g., ipratropium) have a shorter duration."
+            },
+            {
+              "stem": "Which of the following drugs is contraindicated in a patient with a history of anaphylaxis to eggs?",
+              "options": [
+                "Omalizumab",
+                "Montelukast",
+                "Fluticasone",
+                "Salbutamol"
+              ],
+              "answer": "Omalizumab",
+              "explanation": "Omalizumab is a humanised monoclonal antibody produced in a mouse myeloma cell line with egg-derived components, and it is contraindicated in patients with a history of anaphylaxis to eggs due to risk of severe hypersensitivity reactions. The other drugs are not egg-derived."
+            },
+            {
+              "stem": "A patient with type 2 diabetes mellitus is started on glibenclamide. Which of the following is the primary mechanism of action of glibenclamide?",
+              "options": [
+                "Inhibition of hepatic gluconeogenesis",
+                "Stimulation of insulin secretion from pancreatic beta cells",
+                "Enhancement of peripheral glucose uptake independent of insulin",
+                "Inhibition of alpha-glucosidase in the gut"
+              ],
+              "answer": "Stimulation of insulin secretion from pancreatic beta cells",
+              "explanation": "Glibenclamide (a sulfonylurea) stimulates insulin secretion from pancreatic beta cells by closing ATP-sensitive potassium channels, leading to depolarisation and calcium influx. It does not inhibit gluconeogenesis, enhance glucose uptake independently, or inhibit alpha-glucosidase."
+            },
+            {
+              "stem": "Which of the following is the most appropriate initial treatment for a patient presenting with diabetic ketoacidosis?",
+              "options": [
+                "Intravenous insulin infusion",
+                "Oral metformin",
+                "Subcutaneous insulin glargine",
+                "Intravenous glucose"
+              ],
+              "answer": "Intravenous insulin infusion",
+              "explanation": "Diabetic ketoacidosis requires immediate intravenous insulin infusion to suppress ketogenesis and correct hyperglycaemia. Oral metformin or subcutaneous long-acting insulin are not appropriate for acute management; IV glucose is used only if hypoglycaemia occurs during treatment."
+            },
+            {
+              "stem": "A patient with asthma is prescribed a combination inhaler containing fluticasone and salmeterol. Which of the following best explains the rationale for this combination?",
+              "options": [
+                "The LABA provides rapid bronchodilation while the ICS suppresses inflammation",
+                "The ICS enhances the bronchodilatory effect of the LABA",
+                "The LABA reduces the systemic absorption of the ICS",
+                "The combination allows for once-daily dosing"
+              ],
+              "answer": "The ICS enhances the bronchodilatory effect of the LABA",
+              "explanation": "The combination of an inhaled corticosteroid (ICS) and a long-acting beta-2 agonist (LABA) is synergistic: the ICS suppresses airway inflammation while the LABA provides bronchodilation. The LABA also primes the glucocorticoid receptor, enhancing the anti-inflammatory effect of the ICS."
+            },
+            {
+              "stem": "Which of the following drugs is most likely to cause hypoglycaemia when used in a patient with diabetes?",
+              "options": [
+                "Metformin",
+                "Glibenclamide",
+                "Pioglitazone",
+                "Acarbose"
+              ],
+              "answer": "Glibenclamide",
+              "explanation": "Sulfonylureas like glibenclamide stimulate insulin secretion and can cause hypoglycaemia, especially in elderly patients or those with renal impairment. Metformin, pioglitazone, and acarbose do not typically cause hypoglycaemia as monotherapy."
+            },
+            {
+              "stem": "A patient with COPD is prescribed roflumilast. Which of the following is the primary mechanism of action of roflumilast?",
+              "options": [
+                "Inhibition of phosphodiesterase-4",
+                "Blockade of muscarinic receptors",
+                "Stimulation of beta-2 receptors",
+                "Inhibition of leukotriene synthesis"
+              ],
+              "answer": "Inhibition of phosphodiesterase-4",
+              "explanation": "Roflumilast is a selective phosphodiesterase-4 inhibitor that reduces inflammation in COPD by increasing intracellular cAMP levels in inflammatory cells. It does not block muscarinic receptors, stimulate beta-2 receptors, or inhibit leukotriene synthesis."
+            },
+            {
+              "stem": "Which of the following is the most appropriate treatment for a patient with hyperthyroidism who is allergic to carbimazole?",
+              "options": [
+                "Radioactive iodine ablation",
+                "Levothyroxine",
+                "Propranolol alone",
+                "Propylthiouracil"
+              ],
+              "answer": "Radioactive iodine ablation",
+              "explanation": "For patients allergic to carbimazole, radioactive iodine ablation is an alternative definitive treatment for hyperthyroidism. Levothyroxine is used for hypothyroidism; propranolol is used for symptom control but does not treat the underlying hyperthyroidism; propylthiouracil is an alternative antithyroid drug but may also cause allergy."
+            },
+            {
+              "stem": "A patient with asthma is started on montelukast. Which of the following statements is true regarding montelukast?",
+              "options": [
+                "It is administered via inhalation",
+                "It is effective for acute asthma exacerbations",
+                "It can cause eosinophilic vasculitis",
+                "It has a rapid onset of action within minutes"
+              ],
+              "answer": "It can cause eosinophilic vasculitis",
+              "explanation": "Montelukast is an oral leukotriene receptor antagonist used for asthma prophylaxis and allergic rhinitis. It does not cause eosinophilic vasculitis directly but has been associated with Churg-Strauss syndrome (eosinophilic granulomatosis with polyangiitis) in rare cases. It is not inhaled, ineffective for acute exacerbations, and has a slower onset of action."
+            },
+            {
+              "stem": "Which of the following adverse effects is most commonly associated with the use of metformin?",
+              "options": [
+                "Hypoglycaemia",
+                "Lactic acidosis",
+                "Weight gain",
+                "Peripheral oedema"
+              ],
+              "answer": "Lactic acidosis",
+              "explanation": "Metformin can rarely cause lactic acidosis, especially in patients with renal impairment, hypoxia, or liver disease. Hypoglycaemia is not typical; weight gain and peripheral oedema are not associated with metformin."
+            },
+            {
+              "stem": "A patient with COPD is prescribed a combination of inhaled ipratropium and albuterol for acute exacerbation. Which of the following best explains the rationale for this combination?",
+              "options": [
+                "Synergistic bronchodilation through different mechanisms",
+                "Reduction of systemic absorption of both drugs",
+                "Enhancement of mucociliary clearance",
+                "Prevention of tachyphylaxis to beta-2 agonists"
+              ],
+              "answer": "Synergistic bronchodilation through different mechanisms",
+              "explanation": "The combination of a short-acting beta-2 agonist (albuterol) and an anticholinergic (ipratropium) provides synergistic bronchodilation by targeting different receptors: beta-2 receptors on smooth muscle and muscarinic M3 receptors mediating cholinergic bronchoconstriction. This combination is more effective than either drug alone in acute severe asthma/COPD."
+            },
+            {
+              "stem": "Which of the following drugs is most likely to cause weight gain as an adverse effect?",
+              "options": [
+                "Metformin",
+                "Glibenclamide",
+                "Pioglitazone",
+                "Acarbose"
+              ],
+              "answer": "Pioglitazone",
+              "explanation": "Thiazolidinediones like pioglitazone cause weight gain due to fluid retention and increased subcutaneous fat deposition. Metformin and acarbose do not typically cause weight gain; glibenclamide may cause mild weight gain but less than pioglitazone."
+            },
+            {
+              "stem": "A patient with type 1 diabetes mellitus is started on insulin detemir. Which of the following best describes the pharmacokinetic profile of insulin detemir?",
+              "options": [
+                "Rapid onset and short duration of action",
+                "Intermediate duration of action with a peak effect at 2–4 hours",
+                "Long duration of action with a relatively flat pharmacokinetic profile",
+                "Ultra-rapid onset with peak effect within 15 minutes"
+              ],
+              "answer": "Long duration of action with a relatively flat pharmacokinetic profile",
+              "explanation": "Insulin detemir is a long-acting insulin analogue with a prolonged duration of action (up to 24 hours) and a relatively flat pharmacokinetic profile, providing basal insulin coverage. Rapid-acting insulins (e.g., aspart, lispro) have rapid onset and short duration; intermediate-acting insulins (e.g., NPH) have a peak effect."
+            },
+            {
+              "stem": "Which of the following is the most appropriate treatment for a patient with hypothyroidism?",
+              "options": [
+                "Carbimazole",
+                "Levothyroxine",
+                "Propylthiouracil",
+                "Radioactive iodine"
+              ],
+              "answer": "Levothyroxine",
+              "explanation": "Levothyroxine is the treatment of choice for hypothyroidism, replacing deficient thyroid hormone. Carbimazole and propylthiouracil are used for hyperthyroidism; radioactive iodine is used for hyperthyroidism or thyroid cancer."
+            },
+            {
+              "stem": "A patient with asthma is prescribed cromolyn sodium. Which of the following best describes the mechanism of action of cromolyn sodium?",
+              "options": [
+                "Inhibition of leukotriene synthesis",
+                "Stabilisation of mast cell membranes",
+                "Blockade of muscarinic receptors",
+                "Suppression of inflammatory gene transcription"
+              ],
+              "answer": "Stabilisation of mast cell membranes",
+              "explanation": "Cromolyn sodium stabilises mast cell membranes, preventing degranulation and release of inflammatory mediators (e.g., histamine, leukotrienes). It does not inhibit leukotriene synthesis, block muscarinic receptors, or suppress gene transcription."
+            },
+            {
+              "stem": "Which of the following adverse effects is most commonly associated with the use of sulfonylureas?",
+              "options": [
+                "Hypoglycaemia",
+                "Lactic acidosis",
+                "Weight loss",
+                "Peripheral neuropathy"
+              ],
+              "answer": "Hypoglycaemia",
+              "explanation": "Sulfonylureas (e.g., glibenclamide) stimulate insulin secretion and can cause hypoglycaemia, especially in elderly patients or those with renal impairment. Lactic acidosis is associated with metformin; weight loss and peripheral neuropathy are not typical adverse effects."
+            },
+            {
+              "stem": "A patient with COPD is prescribed theophylline. Which of the following laboratory parameters should be monitored most closely?",
+              "options": [
+                "Serum sodium",
+                "Serum potassium",
+                "Serum theophylline concentration",
+                "Serum bicarbonate"
+              ],
+              "answer": "Serum theophylline concentration",
+              "explanation": "Theophylline has a narrow therapeutic index (5–15 mg/L), and toxicity (nausea, arrhythmias, seizures) occurs at levels >20 mg/L. Serum theophylline concentration must be monitored to avoid toxicity. Other parameters are less critical for theophylline monitoring."
+            },
+            {
+              "stem": "Which of the following drugs is a monoclonal antibody used in the management of severe allergic asthma?",
+              "options": [
+                "Omalizumab",
+                "Montelukast",
+                "Zileuton",
+                "Cromolyn sodium"
+              ],
+              "answer": "Omalizumab",
+              "explanation": "Omalizumab is a humanised monoclonal antibody against IgE used for severe allergic asthma. Montelukast and zileuton are leukotriene pathway inhibitors; cromolyn sodium is a mast cell stabiliser."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 28-year-old female with a history of asthma presents with worsening symptoms despite using her salbutamol inhaler 4 times daily. She reports nocturnal awakenings and a morning peak expiratory flow rate (PEFR) of 60% of her personal best. (a) Outline the stepwise approach to managing this patient’s asthma according to GINA guidelines (5 marks). (b) Explain the rationale for adding an inhaled corticosteroid to her regimen (2 marks).",
+              "modelAnswer": "a) Stepwise approach to managing asthma (GINA guidelines) (5 marks):\n1. Confirm diagnosis and assess severity (symptoms, PEFR, FEV1).\n2. Step up therapy: from SABA-only (Step 1) to low-dose ICS (Step 2) if symptoms persist or worsen.\n3. If symptoms remain uncontrolled, step up to low-dose ICS/LABA combination (Step 3).\n4. Consider medium-dose ICS/LABA or add LTRA (Step 4) for persistent uncontrolled asthma.\n5. Refer to specialist for Step 5 (high-dose ICS/LABA, add-on therapies like tiotropium, anti-IgE, or oral corticosteroids).\n\nb) Rationale for adding inhaled corticosteroid (2 marks):\nICS suppress airway inflammation by reducing pro-inflammatory cytokine production (e.g., IL-4, IL-5), eosinophil recruitment, and mediator release from mast cells. This addresses the underlying inflammatory component of asthma, reducing airway hyperresponsiveness and preventing exacerbations, unlike SABA monotherapy which only provides symptomatic relief."
+            },
+            {
+              "stem": "A 55-year-old male with type 2 diabetes mellitus is started on metformin. (a) Describe the mechanism of action of metformin (3 marks). (b) Outline the key monitoring parameters for this patient (4 marks).",
+              "modelAnswer": "a) Mechanism of action of metformin (3 marks):\n1. Primary: Inhibits hepatic gluconeogenesis by activating AMP-activated protein kinase (AMPK), reducing glucose production.\n2. Secondary: Enhances insulin-mediated glucose uptake in peripheral tissues (muscle, fat) by increasing GLUT4 translocation.\n3. Delays intestinal glucose absorption.\n\nb) Key monitoring parameters (4 marks):\n1. Glycaemic control: HbA1c every 3–6 months, fasting plasma glucose.\n2. Renal function: Serum creatinine and eGFR at baseline and annually (or more frequently if risk factors); metformin is contraindicated if eGFR <30 mL/min.\n3. Liver function: Baseline LFTs; monitor for lactic acidosis (rare but serious).\n4. Vitamin B12 levels: Annually if long-term use (metformin can reduce B12 absorption).\n5. Clinical: Symptoms of hypoglycaemia (unlikely with metformin alone), gastrointestinal side effects (nausea, diarrhoea)."
+            },
+            {
+              "stem": "A 40-year-old female with Graves’ disease is started on carbimazole. (a) Describe the mechanism of action of carbimazole (3 marks). (b) Outline the adverse effects of carbimazole (4 marks).",
+              "modelAnswer": "a) Mechanism of action of carbimazole (3 marks):\nCarbimazole inhibits thyroid peroxidase (TPO), blocking:\n1. Oxidation of iodide (I-) to iodine (I2).\n2. Coupling of iodotyrosines to form thyroid hormones (T3 and T4).\nThis reduces thyroid hormone synthesis without affecting hormone release or destroying thyroid tissue.\n\nb) Adverse effects of carbimazole (4 marks):\n1. Agranulocytosis (rare but serious; monitor for fever, sore throat).\n2. Rash, pruritus, and other hypersensitivity reactions.\n3. Hepatotoxicity (hepatitis, cholestasis).\n4. Teratogenicity (avoid in first trimester; use propylthiouracil if necessary).\n5. Gastrointestinal upset (nausea, vomiting).\n6. Hypothyroidism (if dose too high)."
+            },
+            {
+              "stem": "A 60-year-old male with COPD is prescribed tiotropium bromide. (a) Describe the mechanism of action of tiotropium (3 marks). (b) Outline the key counselling points for this patient (4 marks).",
+              "modelAnswer": "a) Mechanism of action of tiotropium (3 marks):\nTiotropium is a long-acting muscarinic antagonist (LAMA) that:\n1. Competitively blocks muscarinic M3 receptors on bronchial smooth muscle and submucosal glands.\n2. Reduces vagally mediated bronchoconstriction and mucus hypersecretion.\n3. Provides sustained bronchodilation over 24 hours with once-daily dosing.\n\nb) Key counselling points for the patient (4 marks):\n1. Correct inhaler technique: Demonstrate use of the HandiHaler or Respimat device; ensure capsule is pierced and inhaled fully.\n2. Timing: Use at the same time daily for consistent bronchodilation.\n3. Storage: Keep capsules in blister pack until use; store inhaler in a dry place.\n4. Adverse effects: Report symptoms of urinary retention, constipation, or worsening glaucoma (due to anticholinergic effects).\n5. Monitoring: Regular follow-up for symptom control and lung function (FEV1).\n6. Avoidance: Do not use for acute exacerbations; continue other COPD medications as prescribed."
+            },
+            {
+              "stem": "A 30-year-old female with type 1 diabetes mellitus is started on insulin glargine and insulin aspart. (a) Compare the pharmacokinetic profiles of insulin glargine and insulin aspart (4 marks). (b) Outline the rationale for using a basal-bolus insulin regimen in this patient (3 marks).",
+              "modelAnswer": "a) Pharmacokinetic profiles of insulin glargine vs. insulin aspart (4 marks):\nInsulin glargine:\n- Onset: 1–2 hours (slow, prolonged).\n- Peak: Minimal peak (flat profile).\n- Duration: Up to 24 hours (long-acting, basal insulin).\n- Route: Subcutaneous injection once or twice daily.\n\nInsulin aspart:\n- Onset: 10–20 minutes (rapid).\n- Peak: 1–2 hours.\n- Duration: 3–5 hours (short-acting, bolus insulin).\n- Route: Subcutaneous injection before meals.\n\nb) Rationale for basal-bolus regimen (3 marks):\n1. Basal insulin (glargine) provides continuous background insulin to suppress hepatic gluconeogenesis and maintain euglycaemia between meals and overnight.\n2. Bolus insulin (aspart) provides meal-time coverage to match prandial glucose excursions, reducing postprandial hyperglycaemia.\n3. This regimen mimics physiological insulin secretion, improving glycaemic control and reducing the risk of hypoglycaemia compared to fixed-dose regimens."
+            },
+            {
+              "stem": "A 25-year-old male with allergic rhinitis and asthma is prescribed montelukast. (a) Describe the mechanism of action of montelukast (3 marks). (b) Outline the key adverse effects of montelukast (3 marks).",
+              "modelAnswer": "a) Mechanism of action of montelukast (3 marks):\nMontelukast is a leukotriene receptor antagonist that:\n1. Selectively blocks cysteinyl leukotriene receptor 1 (CysLT1) on bronchial smooth muscle, vascular endothelium, and inflammatory cells.\n2. Inhibits the effects of leukotrienes (LTC4, LTD4, LTE4), which mediate bronchoconstriction, mucus secretion, and vascular permeability.\n3. Reduces airway inflammation and hyperresponsiveness, improving asthma control and allergic rhinitis symptoms.\n\nb) Key adverse effects of montelukast (3 marks):\n1. Headache (most common).\n2. Gastrointestinal upset (nausea, diarrhoea).\n3. Neuropsychiatric effects (rare but serious): mood changes, sleep disturbances, agitation, or depression (monitor for behavioural changes).\n4. Hypersensitivity reactions (rash, pruritus).\n5. Elevated liver enzymes (hepatotoxicity; monitor LFTs if symptoms arise)."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 50-year-old male with a 20-year history of type 2 diabetes mellitus presents with poor glycaemic control despite taking metformin 1 g twice daily and glibenclamide 5 mg twice daily. His HbA1c is 9.2%, and his BMI is 32 kg/m². (a) Discuss the stepwise approach to intensifying his diabetes therapy, including the rationale for each step (10 marks). (b) Outline the monitoring plan for this patient following therapy intensification (5 marks).",
+              "modelAnswer": "a) Stepwise approach to intensifying diabetes therapy (10 marks):\n1. Assess adherence and lifestyle factors: Ensure metformin and glibenclamide are taken correctly; review diet, physical activity, and weight management.\n2. Optimise metformin: Increase dose to 2 g/day if tolerated (maximal effective dose), or switch to extended-release formulation to reduce GI side effects.\n3. Review sulfonylurea: Consider switching glibenclamide to a longer-acting sulfonylurea (e.g., glimepiride) or a safer alternative (e.g., gliclazide) to reduce hypoglycaemia risk.\n4. Add a second-line oral agent:\n   - SGLT2 inhibitor (e.g., empagliflozin): Reduces hyperglycaemia by increasing urinary glucose excretion; also provides weight loss and cardiovascular benefits.\n   - DPP-4 inhibitor (e.g., sitagliptin): Enhances incretin effect, reducing postprandial glucose; weight-neutral.\n   - Thiazolidinedione (e.g., pioglitazone): Improves insulin sensitivity; however, consider weight gain and oedema risks.\n5. Consider injectable therapy if HbA1c remains >7.5%:\n   - GLP-1 receptor agonist (e.g., liraglutide): Enhances glucose-dependent insulin secretion, suppresses glucagon, slows gastric emptying, and promotes weight loss.\n   - Basal insulin (e.g., insulin glargine): Provides consistent background insulin coverage; start with low dose and titrate based on fasting glucose.\n6. Combination therapy: Consider fixed-dose combinations (e.g., metformin + SGLT2 inhibitor or metformin + DPP-4 inhibitor) to improve adherence.\n7. Address comorbidities: Treat hypertension (ACE inhibitor/ARB), dyslipidaemia (statin), and consider aspirin for primary prevention if high cardiovascular risk.\n\nRationale: Stepwise intensification aims to achieve glycaemic targets while minimising hypoglycaemia, weight gain, and adverse effects. Choice of agent depends on patient factors (e.g., renal function, cardiovascular risk, cost, and preferences).\n\nb) Monitoring plan following therapy intensification (5 marks):\n1. Glycaemic control: HbA1c every 3 months until target achieved, then every 6 months; fasting plasma glucose and 2-hour postprandial glucose as needed.\n2. Renal function: Serum creatinine and eGFR at baseline and every 6–12 months (especially with SGLT2 inhibitors or metformin).\n3. Liver function: LFTs if starting pioglitazone or GLP-1 receptor agonist.\n4. Weight and BMI: Monitor every 3–6 months; assess for weight loss or gain.\n5. Blood pressure: Monitor every 3–6 months; titrate antihypertensives as needed.\n6. Lipid profile: Baseline and annually or as indicated.\n7. Hypoglycaemia: Educate patient on symptoms and management; monitor for recurrent hypoglycaemia.\n8. Adverse effects: Monitor for GI symptoms (GLP-1 agonists), urinary tract infections (SGLT2 inhibitors), oedema (pioglitazone), or injection-site reactions (insulin/GLP-1 agonists).\n9. Cardiovascular risk: Assess for symptoms of heart failure (pioglitazone) or pancreatitis (GLP-1 agonists).\n10. Patient education: Reinforce adherence, diet, exercise, and self-monitoring of blood glucose."
+            },
+            {
+              "stem": "A 65-year-old female with a history of COPD (GOLD Stage 3) presents with worsening dyspnoea, increased sputum production, and a cough productive of yellow-green sputum over the past 5 days. She is currently on tiotropium bromide 18 mcg daily and salbutamol as needed. Her oxygen saturation is 88% on room air, and her chest X-ray shows no consolidation. (a) Discuss the pharmacological management of this acute exacerbation of COPD (10 marks). (b) Outline the non-pharmacological strategies to prevent future exacerbations (5 marks).",
+              "modelAnswer": "a) Pharmacological management of acute exacerbation of COPD (10 marks):\n1. Oxygen therapy: Administer controlled oxygen (24–28% via Venturi mask) to maintain SpO2 88–92% (avoid hyperoxia to prevent CO2 retention).\n2. Bronchodilators:\n   - Short-acting beta-2 agonist (SABA): Nebulised salbutamol 2.5–5 mg every 4–6 hours as needed.\n   - Short-acting muscarinic antagonist (SAMA): Nebulised ipratropium bromide 500 mcg every 6 hours (additive bronchodilation with SABA).\n3. Corticosteroids: Oral prednisolone 30 mg daily for 5–7 days to reduce airway inflammation and speed recovery (avoid prolonged courses to minimise adverse effects).\n4. Antibiotics: Empirical therapy for 5–7 days if purulent sputum or signs of infection (e.g., amoxicillin-clavulanate 625 mg three times daily, or doxycycline 200 mg on day 1 then 100 mg daily if penicillin-allergic).\n5. Consider additional therapies if severe exacerbation:\n   - Theophylline (oral or IV) if inadequate response to bronchodilators (monitor serum levels due to narrow therapeutic index).\n   - Consider noninvasive ventilation (NIV) if respiratory acidosis (pH <7.35, PaCO2 >6.0 kPa) or severe dyspnoea.\n6. Monitor for complications: Respiratory failure, arrhythmias, or heart failure.\n\nb) Non-pharmacological strategies to prevent future exacerbations (5 marks):\n1. Smoking cessation: The most important intervention to slow COPD progression; provide behavioural support and pharmacotherapy (nicotine replacement, varenicline, or bupropion).\n2. Pulmonary rehabilitation: Supervised exercise programme to improve exercise capacity, reduce dyspnoea, and enhance quality of life.\n3. Vaccinations: Annual influenza vaccine and pneumococcal vaccine (PPSV23) to reduce risk of respiratory infections.\n4. Self-management education: Teach patients to recognise early signs of exacerbation (increased sputum, change in colour, worsening dyspnoea) and initiate action plans (e.g., increase bronchodilator use, start oral corticosteroids/antibiotics).\n5. Nutritional support: Address malnutrition or obesity; consider dietary counselling for weight management.\n6. Avoidance of triggers: Reduce exposure to air pollution, occupational dusts, and indoor biomass fuels.\n7. Long-term oxygen therapy (LTOT): If chronic hypoxaemia (PaO2 <7.3 kPa) to improve survival and reduce hospitalisations.\n8. Regular follow-up: Monitor lung function (spirometry), symptoms (COPD Assessment Test, CAT), and adherence to therapy; adjust treatment as needed."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Endocrine & Respiratory Pharmacology",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 45-year-old patient with poorly controlled asthma presents with persistent nocturnal symptoms despite using a short-acting beta-2 agonist as needed. Which of the following is the most appropriate next step in management according to current asthma guidelines?",
+              "options": [
+                "Increase the dose of the short-acting beta-2 agonist to every 2 hours as needed",
+                "Add a long-acting beta-2 agonist (LABA) as monotherapy to control nocturnal symptoms",
+                "Start a low-dose inhaled corticosteroid (ICS) as a controller therapy",
+                "Prescribe oral prednisolone immediately for systemic control"
+              ],
+              "answer": "Start a low-dose inhaled corticosteroid (ICS) as a controller therapy",
+              "explanation": "Current asthma guidelines recommend inhaled corticosteroids (ICS) as the cornerstone of controller therapy for persistent asthma. LABA monotherapy is contraindicated due to increased risk of asthma-related death. Increasing SABA use alone does not address airway inflammation, and oral prednisolone should not be used routinely for nocturnal symptoms without first optimizing controller therapy."
+            },
+            {
+              "stem": "Which of the following statements about ipratropium bromide is correct?",
+              "options": [
+                "It is a selective beta-2 receptor agonist used for acute asthma exacerbations",
+                "It causes bronchodilation primarily by blocking muscarinic M3 receptors in bronchial smooth muscle",
+                "It is administered orally for systemic absorption to achieve bronchodilation",
+                "It is more effective than short-acting beta-2 agonists in reversing acute bronchospasm"
+              ],
+              "answer": "It causes bronchodilation primarily by blocking muscarinic M3 receptors in bronchial smooth muscle",
+              "explanation": "Ipratropium bromide is a quaternary ammonium anticholinergic agent that competitively blocks muscarinic M3 receptors in bronchial smooth muscle, reducing vagally mediated bronchoconstriction. It is administered via inhalation, not orally, and is less effective than SABAs in acute asthma."
+            },
+            {
+              "stem": "A 30-year-old patient with type 1 diabetes mellitus presents with recurrent hypoglycemia despite multiple daily insulin injections. Which of the following insulin regimens is most likely contributing to this issue?",
+              "options": [
+                "Basal-bolus regimen using insulin glargine once daily and insulin aspart before meals",
+                "Twice-daily premixed insulin (e.g., 70/30 NPH/regular)",
+                "Continuous subcutaneous insulin infusion (insulin pump) with rapid-acting insulin analog",
+                "Once-daily long-acting insulin detemir combined with oral metformin"
+              ],
+              "answer": "Twice-daily premixed insulin (e.g., 70/30 NPH/regular)",
+              "explanation": "Premixed insulins (e.g., 70/30 NPH/regular) provide fixed ratios of rapid- and intermediate-acting insulin, which can lead to unpredictable peaks and troughs in insulin levels, increasing the risk of hypoglycemia. Basal-bolus regimens and insulin pump therapy allow for more flexible and physiologic insulin delivery."
+            },
+            {
+              "stem": "Which of the following adverse effects is most commonly associated with inhaled corticosteroids (ICS) when used at high doses over prolonged periods?",
+              "options": [
+                "Hyperkalemia",
+                "Osteoporosis",
+                "Hypoglycemia",
+                "Bradycardia"
+              ],
+              "answer": "Osteoporosis",
+              "explanation": "High-dose inhaled corticosteroids can cause systemic adverse effects, including osteoporosis due to suppression of the hypothalamic-pituitary-adrenal axis and reduced bone mineral density. Hyperkalemia, hypoglycemia, and bradycardia are not typical adverse effects of ICS."
+            },
+            {
+              "stem": "A patient with chronic obstructive pulmonary disease (COPD) is prescribed a long-acting muscarinic antagonist (LAMA) for maintenance therapy. Which of the following drugs is an example of a LAMA?",
+              "options": [
+                "Salbutamol",
+                "Tiotropium",
+                "Montelukast",
+                "Budesonide"
+              ],
+              "answer": "Tiotropium",
+              "explanation": "Tiotropium is a long-acting muscarinic antagonist (LAMA) used for maintenance therapy in COPD. Salbutamol is a short-acting beta-2 agonist, montelukast is a leukotriene receptor antagonist, and budesonide is an inhaled corticosteroid."
+            },
+            {
+              "stem": "Which of the following statements about metformin is correct?",
+              "options": [
+                "It primarily increases insulin secretion from pancreatic beta cells",
+                "It can cause lactic acidosis, especially in patients with renal impairment",
+                "It is contraindicated in patients with type 2 diabetes mellitus",
+                "It is administered subcutaneously once daily"
+              ],
+              "answer": "It can cause lactic acidosis, especially in patients with renal impairment",
+              "explanation": "Metformin is a biguanide that primarily reduces hepatic gluconeogenesis and increases insulin sensitivity. It does not stimulate insulin secretion and is contraindicated in severe renal impairment due to the risk of lactic acidosis. It is administered orally."
+            },
+            {
+              "stem": "A 25-year-old patient with asthma experiences exercise-induced bronchoconstriction. Which of the following drugs is most appropriate for prophylaxis?",
+              "options": [
+                "Oral prednisolone taken 30 minutes before exercise",
+                "Inhaled cromolyn sodium taken 15 minutes before exercise",
+                "Intravenous theophylline taken immediately before exercise",
+                "Subcutaneous adrenaline taken immediately before exercise"
+              ],
+              "answer": "Inhaled cromolyn sodium taken 15 minutes before exercise",
+              "explanation": "Cromolyn sodium is a mast cell stabilizer that can be used prophylactically for exercise-induced bronchoconstriction. It is administered via inhalation 15 minutes before exercise. Oral prednisolone is not typically used for this purpose, and theophylline and adrenaline are not first-line options for prophylaxis."
+            },
+            {
+              "stem": "Which of the following is a key mechanism by which corticosteroids reduce airway inflammation in asthma?",
+              "options": [
+                "Stimulation of beta-2 receptors in bronchial smooth muscle",
+                "Inhibition of leukotriene synthesis",
+                "Reduction of eosinophil recruitment and activation via suppression of cytokine production",
+                "Blockade of muscarinic receptors in the airways"
+              ],
+              "answer": "Reduction of eosinophil recruitment and activation via suppression of cytokine production",
+              "explanation": "Corticosteroids reduce airway inflammation by suppressing the production of pro-inflammatory cytokines (e.g., IL-4, IL-5, IL-13), which decreases eosinophil recruitment and activation. They do not directly stimulate beta-2 receptors, inhibit leukotriene synthesis, or block muscarinic receptors."
+            },
+            {
+              "stem": "A patient with type 2 diabetes mellitus and chronic kidney disease (eGFR 30 mL/min/1.73m²) requires additional glucose-lowering therapy. Which of the following oral hypoglycemic agents is contraindicated in this patient?",
+              "options": [
+                "Metformin",
+                "Gliclazide",
+                "Pioglitazone",
+                "Empagliflozin"
+              ],
+              "answer": "Metformin",
+              "explanation": "Metformin is contraindicated in patients with significant renal impairment (eGFR <30 mL/min/1.73m²) due to the increased risk of lactic acidosis. Gliclazide, pioglitazone, and empagliflozin can be used with caution in CKD, though dose adjustments may be required."
+            },
+            {
+              "stem": "Which of the following statements about leukotriene receptor antagonists (e.g., montelukast) is correct?",
+              "options": [
+                "They are administered via the inhaled route for asthma management",
+                "They are effective in preventing aspirin-induced asthma exacerbations",
+                "They cause significant renal toxicity with prolonged use",
+                "They are the first-line treatment for acute asthma exacerbations"
+              ],
+              "answer": "They are effective in preventing aspirin-induced asthma exacerbations",
+              "explanation": "Leukotriene receptor antagonists like montelukast are effective in preventing aspirin-induced asthma exacerbations by blocking the effects of cysteinyl leukotrienes. They are administered orally, not inhaled, and do not cause renal toxicity or serve as first-line therapy for acute exacerbations."
+            },
+            {
+              "stem": "A patient with severe asthma is prescribed a combination inhaler containing an inhaled corticosteroid (ICS) and a long-acting beta-2 agonist (LABA). Which of the following combinations is an example of such a product?",
+              "options": [
+                "Budesonide + formoterol",
+                "Ipratropium + albuterol",
+                "Fluticasone + salmeterol",
+                "Montelukast + fluticasone"
+              ],
+              "answer": "Fluticasone + salmeterol",
+              "explanation": "Fluticasone + salmeterol is a commonly prescribed ICS/LABA combination inhaler for the maintenance treatment of asthma. Budesonide + formoterol is another example, but the question asks for a specific combination, and fluticasone + salmeterol is a standard option."
+            },
+            {
+              "stem": "Which of the following adverse effects is most commonly associated with sulfonylureas (e.g., glibenclamide)?",
+              "options": [
+                "Hypoglycemia",
+                "Hyperkalemia",
+                "Weight loss",
+                "Diarrhea"
+              ],
+              "answer": "Hypoglycemia",
+              "explanation": "Sulfonylureas stimulate insulin secretion from pancreatic beta cells, which can lead to hypoglycemia, especially in elderly patients or those with renal impairment. Hyperkalemia, weight loss, and diarrhea are not typical adverse effects of sulfonylureas."
+            },
+            {
+              "stem": "A patient with COPD and frequent exacerbations is prescribed a phosphodiesterase-4 (PDE-4) inhibitor. Which of the following drugs is an example of a PDE-4 inhibitor?",
+              "options": [
+                "Tiotropium",
+                "Roflumilast",
+                "Budesonide",
+                "Salbutamol"
+              ],
+              "answer": "Roflumilast",
+              "explanation": "Roflumilast is a selective phosphodiesterase-4 (PDE-4) inhibitor used to reduce the risk of COPD exacerbations in patients with chronic bronchitis and a history of exacerbations. Tiotropium is a LAMA, budesonide is an ICS, and salbutamol is a SABA."
+            },
+            {
+              "stem": "Which of the following statements about carbimazole is correct?",
+              "options": [
+                "It is a thyroid hormone replacement used in hypothyroidism",
+                "It inhibits the synthesis of thyroid hormones by blocking iodine organification",
+                "It is administered intravenously for rapid control of hyperthyroidism",
+                "It is contraindicated in patients with Graves' disease"
+              ],
+              "answer": "It inhibits the synthesis of thyroid hormones by blocking iodine organification",
+              "explanation": "Carbimazole is an antithyroid drug that inhibits the synthesis of thyroid hormones by blocking the organification of iodine and the coupling of iodotyrosines. It is administered orally, not intravenously, and is used in hyperthyroidism, including Graves' disease."
+            },
+            {
+              "stem": "A patient with type 1 diabetes mellitus is switched from a basal-bolus insulin regimen to an insulin pump. Which of the following insulins is most commonly used in insulin pumps?",
+              "options": [
+                "Insulin glargine",
+                "Insulin detemir",
+                "Insulin NPH",
+                "Insulin aspart"
+              ],
+              "answer": "Insulin aspart",
+              "explanation": "Rapid-acting insulin analogs such as insulin aspart, lispro, and glulisine are used in insulin pumps due to their rapid onset and short duration of action, which allows for precise meal-time dosing and basal rate adjustments."
+            },
+            {
+              "stem": "Which of the following statements about theophylline is correct?",
+              "options": [
+                "It is primarily administered via the inhaled route for asthma management",
+                "It has a wide therapeutic index, making therapeutic drug monitoring unnecessary",
+                "It can cause cardiac arrhythmias at high plasma concentrations",
+                "It is the first-line treatment for acute asthma exacerbations"
+              ],
+              "answer": "It can cause cardiac arrhythmias at high plasma concentrations",
+              "explanation": "Theophylline has a narrow therapeutic index, and plasma concentrations above 20 mg/L can cause serious adverse effects, including cardiac arrhythmias. It is administered orally or intravenously, not inhaled, and is not a first-line treatment for acute exacerbations."
+            },
+            {
+              "stem": "A patient with asthma and allergic rhinitis is prescribed a drug that blocks leukotriene receptors. Which of the following drugs is a leukotriene receptor antagonist?",
+              "options": [
+                "Zileuton",
+                "Omalizumab",
+                "Montelukast",
+                "Cromolyn sodium"
+              ],
+              "answer": "Montelukast",
+              "explanation": "Montelukast is a leukotriene receptor antagonist (LTRA) used for the maintenance treatment of asthma and allergic rhinitis. Zileuton is a 5-lipoxygenase inhibitor, omalizumab is an anti-IgE monoclonal antibody, and cromolyn sodium is a mast cell stabilizer."
+            },
+            {
+              "stem": "Which of the following is a key adverse effect of systemic corticosteroids?",
+              "options": [
+                "Hyperkalemia",
+                "Hypoglycemia",
+                "Osteoporosis",
+                "Bradycardia"
+              ],
+              "answer": "Osteoporosis",
+              "explanation": "Prolonged systemic corticosteroid use can lead to osteoporosis due to suppression of osteoblast activity and increased bone resorption. Hyperkalemia, hypoglycemia, and bradycardia are not typical adverse effects of corticosteroids."
+            },
+            {
+              "stem": "A patient with COPD is prescribed a long-acting beta-2 agonist (LABA) for maintenance therapy. Which of the following drugs is an example of a LABA?",
+              "options": [
+                "Salbutamol",
+                "Formoterol",
+                "Ipratropium",
+                "Budesonide"
+              ],
+              "answer": "Formoterol",
+              "explanation": "Formoterol is a long-acting beta-2 agonist (LABA) used for the maintenance treatment of COPD and asthma. Salbutamol is a short-acting beta-2 agonist, ipratropium is a muscarinic antagonist, and budesonide is an inhaled corticosteroid."
+            },
+            {
+              "stem": "Which of the following statements about insulin glargine is correct?",
+              "options": [
+                "It is a rapid-acting insulin analog used for meal-time dosing",
+                "It has a peak effect approximately 2 hours after administration",
+                "It provides a relatively constant basal insulin level over 24 hours",
+                "It is administered via inhalation"
+              ],
+              "answer": "It provides a relatively constant basal insulin level over 24 hours",
+              "explanation": "Insulin glargine is a long-acting insulin analog that provides a relatively constant basal insulin level over 24 hours, making it suitable for once-daily dosing. It does not have a pronounced peak and is administered subcutaneously, not inhaled."
+            },
+            {
+              "stem": "A patient with asthma experiences paradoxical bronchospasm after using an inhaled medication. Which of the following drugs is most likely to cause this adverse effect?",
+              "options": [
+                "Fluticasone",
+                "Salbutamol",
+                "Ipratropium",
+                "Cromolyn sodium"
+              ],
+              "answer": "Cromolyn sodium",
+              "explanation": "Cromolyn sodium can cause paradoxical bronchospasm, especially if the patient has underlying severe airway hyperresponsiveness. Fluticasone (ICS), salbutamol (SABA), and ipratropium (anticholinergic) are not typically associated with this adverse effect."
+            },
+            {
+              "stem": "Which of the following is a key mechanism by which beta-2 agonists cause bronchodilation?",
+              "options": [
+                "Stimulation of muscarinic M3 receptors in bronchial smooth muscle",
+                "Inhibition of phosphodiesterase enzymes",
+                "Increase in intracellular cyclic AMP (cAMP) leading to smooth muscle relaxation",
+                "Blockade of leukotriene receptors"
+              ],
+              "answer": "Increase in intracellular cyclic AMP (cAMP) leading to smooth muscle relaxation",
+              "explanation": "Beta-2 agonists cause bronchodilation by stimulating beta-2 receptors on bronchial smooth muscle, which activates adenylyl cyclase and increases intracellular cAMP, leading to smooth muscle relaxation. They do not stimulate muscarinic receptors, inhibit phosphodiesterase, or block leukotriene receptors."
+            },
+            {
+              "stem": "A patient with type 2 diabetes mellitus is prescribed a drug that increases insulin sensitivity and reduces hepatic gluconeogenesis. Which of the following drugs is most likely prescribed?",
+              "options": [
+                "Gliclazide",
+                "Metformin",
+                "Insulin glargine",
+                "Pioglitazone"
+              ],
+              "answer": "Metformin",
+              "explanation": "Metformin increases insulin sensitivity and reduces hepatic gluconeogenesis, making it a first-line oral hypoglycemic agent for type 2 diabetes mellitus. Gliclazide is a sulfonylurea that stimulates insulin secretion, insulin glargine is a long-acting insulin analog, and pioglitazone is a thiazolidinedione that improves insulin sensitivity."
+            },
+            {
+              "stem": "Which of the following statements about inhaled corticosteroids (ICS) is correct?",
+              "options": [
+                "They are primarily used for the relief of acute asthma symptoms",
+                "They can cause systemic adverse effects such as adrenal suppression with high doses",
+                "They are contraindicated in patients with COPD",
+                "They have a rapid onset of action comparable to short-acting beta-2 agonists"
+              ],
+              "answer": "They can cause systemic adverse effects such as adrenal suppression with high doses",
+              "explanation": "High-dose inhaled corticosteroids can cause systemic adverse effects, including adrenal suppression, especially in children or with prolonged use. ICS are not used for acute symptom relief, are not contraindicated in COPD, and have a slower onset of action compared to SABAs."
+            },
+            {
+              "stem": "A patient with hyperthyroidism is prescribed a drug that inhibits the peripheral conversion of T4 to T3. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Carbimazole",
+                "Propylthiouracil",
+                "Levothyroxine",
+                "Propranolol"
+              ],
+              "answer": "Propylthiouracil",
+              "explanation": "Propylthiouracil inhibits the peripheral conversion of thyroxine (T4) to triiodothyronine (T3) in addition to blocking thyroid hormone synthesis. Carbimazole primarily blocks thyroid hormone synthesis, levothyroxine is a thyroid hormone replacement, and propranolol is a beta-blocker used for symptom control."
+            },
+            {
+              "stem": "Which of the following is a key adverse effect of anticholinergic drugs like ipratropium?",
+              "options": [
+                "Hyperkalemia",
+                "Dry mouth",
+                "Hypoglycemia",
+                "Bradycardia"
+              ],
+              "answer": "Dry mouth",
+              "explanation": "Anticholinergic drugs like ipratropium can cause dry mouth as a common adverse effect due to their blockade of muscarinic receptors in salivary glands. Hyperkalemia, hypoglycemia, and bradycardia are not typical adverse effects of anticholinergics."
+            },
+            {
+              "stem": "A patient with COPD is prescribed a drug that reduces the risk of exacerbations by inhibiting phosphodiesterase-4 (PDE-4). Which of the following drugs is an example of a PDE-4 inhibitor?",
+              "options": [
+                "Tiotropium",
+                "Roflumilast",
+                "Budesonide",
+                "Salbutamol"
+              ],
+              "answer": "Roflumilast",
+              "explanation": "Roflumilast is a selective phosphodiesterase-4 (PDE-4) inhibitor used to reduce the risk of COPD exacerbations in patients with chronic bronchitis and a history of exacerbations. Tiotropium is a LAMA, budesonide is an ICS, and salbutamol is a SABA."
+            },
+            {
+              "stem": "Which of the following statements about insulin regimens is correct?",
+              "options": [
+                "A basal-bolus regimen uses a long-acting insulin for meal-time dosing",
+                "Premixed insulins provide fixed ratios of rapid- and intermediate-acting insulin",
+                "Insulin pumps deliver intermediate-acting insulin continuously",
+                "Insulin glargine is a rapid-acting insulin analog"
+              ],
+              "answer": "Premixed insulins provide fixed ratios of rapid- and intermediate-acting insulin",
+              "explanation": "Premixed insulins (e.g., 70/30 NPH/regular) provide fixed ratios of rapid- and intermediate-acting insulin, which can simplify dosing but may increase the risk of hypoglycemia. Basal-bolus regimens use a long-acting insulin for basal coverage and rapid-acting insulin for meal-time dosing. Insulin pumps deliver rapid-acting insulin, and insulin glargine is a long-acting insulin analog."
+            },
+            {
+              "stem": "A patient with asthma is prescribed a drug that stabilizes mast cells and prevents the release of inflammatory mediators. Which of the following drugs has this mechanism of action?",
+              "options": [
+                "Montelukast",
+                "Fluticasone",
+                "Cromolyn sodium",
+                "Salbutamol"
+              ],
+              "answer": "Cromolyn sodium",
+              "explanation": "Cromolyn sodium stabilizes mast cells and prevents the release of inflammatory mediators such as histamine and leukotrienes. Montelukast is a leukotriene receptor antagonist, fluticasone is an inhaled corticosteroid, and salbutamol is a short-acting beta-2 agonist."
+            },
+            {
+              "stem": "Which of the following statements about the pharmacokinetics of theophylline is correct?",
+              "options": [
+                "It is primarily eliminated via renal excretion",
+                "It has a narrow therapeutic index requiring therapeutic drug monitoring",
+                "It is administered via the inhaled route for optimal bronchodilation",
+                "It is metabolized by the kidney, making dose adjustments unnecessary"
+              ],
+              "answer": "It has a narrow therapeutic index requiring therapeutic drug monitoring",
+              "explanation": "Theophylline has a narrow therapeutic index (5–15 mg/L), and plasma concentrations must be monitored to avoid toxicity. It is metabolized by the liver (CYP1A2), not eliminated renally, and is administered orally or intravenously, not inhaled."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "a) Outline the key steps in the biosynthesis of thyroid hormones (3 marks)\nb) Describe the mechanism of action of antithyroid drugs carbimazole and propylthiouracil (4 marks)",
+              "modelAnswer": "a) Key steps in thyroid hormone biosynthesis (3 marks):\n1. Iodide uptake: Iodide (I-) is actively transported into thyroid follicular cells via the sodium-iodide symporter (NIS).\n2. Oxidation and organification: Iodide is oxidized to iodine (I2) by thyroid peroxidase (TPO) and incorporated into tyrosine residues on thyroglobulin to form monoiodotyrosine (MIT) and diiodotyrosine (DIT).\n3. Coupling: TPO catalyzes the coupling of MIT and DIT to form thyroxine (T4) and triiodothyronine (T3) within thyroglobulin.\n\nb) Mechanism of action of antithyroid drugs (4 marks):\n- Carbimazole: A prodrug converted to methimazole; inhibits thyroid peroxidase (TPO), blocking the oxidation of iodide to iodine and the organification and coupling of tyrosine residues, thereby reducing thyroid hormone synthesis.\n- Propylthiouracil (PTU): Inhibits TPO (like carbimazole) and additionally inhibits the peripheral conversion of T4 to T3 by deiodinase enzymes, reducing circulating T3 levels."
+            },
+            {
+              "stem": "a) List four clinical uses of inhaled corticosteroids in respiratory medicine (2 marks)\nb) Describe the adverse effects associated with high-dose inhaled corticosteroids (5 marks)",
+              "modelAnswer": "a) Clinical uses of inhaled corticosteroids (2 marks):\n1. Maintenance treatment of persistent asthma (cornerstone therapy).\n2. Prophylaxis of exercise-induced bronchoconstriction.\n3. Management of chronic obstructive pulmonary disease (COPD) with frequent exacerbations and evidence of asthma-COPD overlap.\n4. Treatment of allergic rhinitis (intranasal corticosteroids).\n\nb) Adverse effects of high-dose inhaled corticosteroids (5 marks):\n1. Local adverse effects: oral candidiasis (thrush), hoarseness, throat irritation, and cough.\n2. Systemic adverse effects: adrenal suppression (especially in children), osteoporosis, growth retardation in children, cataracts, glaucoma, and increased risk of pneumonia in COPD.\n3. Metabolic effects: hyperglycemia (in susceptible individuals), weight gain, and fluid retention.\n4. Immunosuppression: increased risk of infections (e.g., tuberculosis reactivation).\n5. Skin effects: easy bruising, thinning of the skin, and delayed wound healing."
+            },
+            {
+              "stem": "a) Outline the mechanism of action of beta-2 agonists in asthma (3 marks)\nb) Describe the adverse effects of beta-2 agonists (4 marks)",
+              "modelAnswer": "a) Mechanism of action of beta-2 agonists in asthma (3 marks):\n1. Stimulation of beta-2 adrenergic receptors on bronchial smooth muscle activates Gs proteins, increasing adenylyl cyclase activity and intracellular cyclic AMP (cAMP).\n2. Increased cAMP activates protein kinase A (PKA), leading to smooth muscle relaxation and bronchodilation.\n3. Additional effects include inhibition of mast cell mediator release, increased mucociliary clearance, and reduced microvascular leakage.\n\nb) Adverse effects of beta-2 agonists (4 marks):\n1. Skeletal muscle tremors (due to beta-2 receptor stimulation in skeletal muscle).\n2. Tachycardia and palpitations (beta-1 receptor stimulation in the heart, especially with non-selective agents).\n3. Hypokalemia (beta-2 receptor-mediated shift of potassium into cells).\n4. Nervousness, restlessness, and insomnia (CNS stimulation).\n5. Paradoxical bronchospasm (rare, with inhaled agents)."
+            },
+            {
+              "stem": "a) List three classes of drugs used for the maintenance treatment of asthma (3 marks)\nb) For each class, provide one example drug (3 marks)",
+              "modelAnswer": "a) Three classes of drugs used for the maintenance treatment of asthma (3 marks):\n1. Inhaled corticosteroids (ICS).\n2. Long-acting beta-2 agonists (LABA).\n3. Leukotriene receptor antagonists (LTRA).\n\nb) Example drugs for each class (3 marks):\n1. Inhaled corticosteroids: Fluticasone, budesonide.\n2. Long-acting beta-2 agonists: Salmeterol, formoterol.\n3. Leukotriene receptor antagonists: Montelukast."
+            },
+            {
+              "stem": "a) Describe the mechanism of action of insulin in the body (3 marks)\nb) Outline the key differences between rapid-acting and long-acting insulin analogs (4 marks)",
+              "modelAnswer": "a) Mechanism of action of insulin (3 marks):\n1. Insulin binds to insulin receptors on target cells (e.g., liver, muscle, adipose tissue), activating tyrosine kinase and initiating a cascade of intracellular signaling pathways.\n2. Facilitates glucose uptake into cells (especially muscle and adipose tissue) by translocating GLUT4 glucose transporters to the cell membrane.\n3. Promotes glycogenesis (glycogen synthesis) in the liver and muscle, inhibits gluconeogenesis and glycogenolysis in the liver, and stimulates lipogenesis while inhibiting lipolysis in adipose tissue.\n\nb) Key differences between rapid-acting and long-acting insulin analogs (4 marks):\n1. Onset of action: Rapid-acting insulins (e.g., insulin aspart, lispro, glulisine) have an onset of 10–30 minutes, while long-acting insulins (e.g., insulin glargine, detemir, degludec) have a slow onset over 1–2 hours.\n2. Peak effect: Rapid-acting insulins peak at 1–2 hours, while long-acting insulins have a relatively flat, prolonged action with no pronounced peak.\n3. Duration of action: Rapid-acting insulins last 3–5 hours, while long-acting insulins provide 12–24 hours of basal insulin coverage.\n4. Clinical use: Rapid-acting insulins are used for meal-time dosing, while long-acting insulins are used for basal insulin coverage."
+            },
+            {
+              "stem": "a) List three clinical uses of corticosteroids in non-respiratory conditions (3 marks)\nb) Describe the adverse effects of systemic corticosteroids (3 marks)",
+              "modelAnswer": "a) Clinical uses of corticosteroids in non-respiratory conditions (3 marks):\n1. Rheumatoid arthritis and other inflammatory autoimmune diseases.\n2. Organ transplant rejection prophylaxis.\n3. Severe allergic reactions (e.g., anaphylaxis) and allergic skin conditions (e.g., severe eczema, psoriasis).\n4. Hematologic malignancies (e.g., lymphomas, leukemias).\n5. Inflammatory bowel disease (e.g., Crohn's disease, ulcerative colitis).\n\nb) Adverse effects of systemic corticosteroids (3 marks):\n1. Metabolic: Hyperglycemia, hyperlipidemia, sodium retention, hypokalemia, and metabolic alkalosis.\n2. Musculoskeletal: Osteoporosis, avascular necrosis, proximal myopathy, and growth retardation in children.\n3. Immunosuppression: Increased susceptibility to infections, reactivation of latent tuberculosis, and impaired wound healing.\n4. Endocrine: Adrenal suppression, Cushingoid features (moon face, buffalo hump), and menstrual irregularities.\n5. Psychiatric: Mood swings, depression, psychosis, and insomnia.\n6. Ophthalmic: Cataracts, glaucoma, and increased intraocular pressure."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "a) Discuss the mechanisms of action of the following classes of drugs used in the management of asthma (10 marks):\n   i) Beta-2 agonists\n   ii) Inhaled corticosteroids (ICS)\n   iii) Leukotriene receptor antagonists (LTRA)\n   iv) Mast cell stabilizers\n   v) Anticholinergics\n\nb) For each class, describe the key adverse effects and monitoring considerations (5 marks)",
+              "modelAnswer": "a) Mechanisms of action of drug classes in asthma management (10 marks):\n\n   i) Beta-2 agonists:\n   - Stimulate beta-2 adrenergic receptors on bronchial smooth muscle, activating Gs proteins and increasing intracellular cyclic AMP (cAMP).\n   - cAMP activates protein kinase A (PKA), leading to smooth muscle relaxation and bronchodilation.\n   - Additional effects: inhibition of mast cell mediator release, increased mucociliary clearance, and reduced microvascular leakage.\n   - Short-acting beta-2 agonists (SABA, e.g., salbutamol) provide rapid relief; long-acting beta-2 agonists (LABA, e.g., salmeterol, formoterol) provide sustained bronchodilation.\n\n   ii) Inhaled corticosteroids (ICS):\n   - Bind to glucocorticoid receptors in the cytoplasm, translocate to the nucleus, and modulate gene transcription.\n   - Suppress pro-inflammatory cytokines (e.g., IL-4, IL-5, IL-13), reducing eosinophil recruitment and activation.\n   - Inhibit the production of inflammatory mediators (e.g., leukotrienes, prostaglandins) and reduce airway hyperresponsiveness.\n   - Enhance the expression of anti-inflammatory genes (e.g., lipocortin-1).\n\n   iii) Leukotriene receptor antagonists (LTRA):\n   - Competitively block cysteinyl leukotriene receptors (CysLT1) on bronchial smooth muscle and inflammatory cells.\n   - Prevent leukotriene-mediated bronchoconstriction, mucus secretion, and vascular permeability.\n   - Reduce airway inflammation and improve asthma control, particularly in aspirin-sensitive asthma.\n\n   iv) Mast cell stabilizers:\n   - Stabilize mast cell membranes, preventing degranulation and the release of preformed and newly synthesized inflammatory mediators (e.g., histamine, leukotrienes, prostaglandins).\n   - Reduce early and late-phase bronchoconstriction and inflammation.\n   - Primarily used for prophylaxis (e.g., exercise-induced asthma, allergic rhinitis).\n\n   v) Anticholinergics:\n   - Competitively block muscarinic M3 receptors on bronchial smooth muscle and submucosal glands.\n   - Block vagally mediated bronchoconstriction and mucus hypersecretion.\n   - Provide bronchodilation via functional antagonism of cholinergic tone.\n\nb) Adverse effects and monitoring considerations (5 marks):\n\n   i) Beta-2 agonists:\n   - Adverse effects: skeletal muscle tremors, tachycardia/palpitations, hypokalemia, nervousness/restlessness, paradoxical bronchospasm (rare).\n   - Monitoring: assess symptom control, peak expiratory flow rate (PEFR), and technique for inhaled devices. Monitor for hypokalemia in high-dose or systemic use.\n\n   ii) Inhaled corticosteroids (ICS):\n   - Adverse effects: oral candidiasis, hoarseness, throat irritation, systemic effects (adrenal suppression, osteoporosis, growth retardation in children) with high doses.\n   - Monitoring: assess inhaler technique, monitor for local adverse effects (e.g., thrush), and consider bone density scans and adrenal function tests in high-dose or prolonged use.\n\n   iii) Leukotriene receptor antagonists (LTRA):\n   - Adverse effects: headache, dizziness, gastrointestinal disturbances (e.g., nausea, diarrhea), hypersensitivity reactions, and rare hepatotoxicity (zafirlukast).\n   - Monitoring: assess clinical response, liver function tests (LFTs) periodically, and monitor for neuropsychiatric effects (e.g., agitation, depression).\n\n   iv) Mast cell stabilizers:\n   - Adverse effects: throat irritation, cough, chest tightness (paradoxical bronchospasm), dry mouth.\n   - Monitoring: assess symptom control and technique for inhaled devices. Monitor for paradoxical bronchospasm, especially in severe asthma.\n\n   v) Anticholinergics:\n   - Adverse effects: dry mouth, blurred vision (if eye contact), urinary retention, constipation, and paradoxical bronchospasm (rare).\n   - Monitoring: assess symptom control, technique for inhaled devices, and monitor for systemic anticholinergic effects (e.g., urinary retention in elderly patients)."
+            },
+            {
+              "stem": "a) Discuss the mechanisms of action of the following classes of diuretics (10 marks):\n   i) Loop diuretics\n   ii) Thiazide diuretics\n   iii) Potassium-sparing diuretics\n   iv) Osmotic diuretics\n   v) Carbonic anhydrase inhibitors\n\nb) For each class, describe the key adverse effects and clinical uses (5 marks)",
+              "modelAnswer": "a) Mechanisms of action of diuretic classes (10 marks):\n\n   i) Loop diuretics (e.g., furosemide, bumetanide, torsemide):\n   - Inhibit the Na+-K+-2Cl- cotransporter (NKCC2) in the thick ascending limb of the loop of Henle.\n   - Reduce reabsorption of NaCl, K+, and Ca2+/Mg2+, leading to potent diuresis.\n   - Increase renal blood flow and prostaglandin synthesis (why NSAIDs blunt their effect).\n   - Used for edema (e.g., heart failure, cirrhosis), acute pulmonary edema, and hypercalcemia.\n\n   ii) Thiazide diuretics (e.g., hydrochlorothiazide, chlorthalidone):\n   - Inhibit the Na+-Cl- symporter (NCC) in the early distal convoluted tubule.\n   - Reduce reabsorption of NaCl and increase Ca2+ reabsorption.\n   - Used for hypertension, heart failure, and nephrolithiasis (calcium stones).\n\n   iii) Potassium-sparing diuretics:\n   - Aldosterone antagonists (e.g., spironolactone, eplerenone): block mineralocorticoid receptors in the collecting duct, reducing Na+ reabsorption and K+ excretion.\n   - Epithelial sodium channel (ENaC) blockers (e.g., amiloride, triamterene): directly block Na+ reabsorption in the collecting duct, reducing K+ excretion.\n   - Used for hyperaldosteronism, heart failure (spironolactone), and hypokalemia prevention.\n\n   iv) Osmotic diuretics (e.g., mannitol):\n   - Freely filtered but not reabsorbed, increasing osmotic pressure in the tubular lumen.\n   - Retain water and Na+ in the lumen, leading to diuresis.\n   - Also increase medullary blood flow and wash out the medullary concentration gradient.\n   - Used for cerebral edema, acute renal failure, and reduction of intraocular pressure.\n\n   v) Carbonic anhydrase inhibitors (e.g., acetazolamide):\n   - Inhibit carbonic anhydrase in the proximal convoluted tubule.\n   - Reduce H+ generation, decreasing Na+-H+ exchange and increasing NaHCO3 excretion.\n   - Weak diuretics with self-limiting effect due to metabolic acidosis.\n   - Used for glaucoma, metabolic alkalosis, and altitude sickness.\n\nb) Adverse effects and clinical uses (5 marks):\n\n   i) Loop diuretics:\n   - Adverse effects: hypokalemia, hyponatremia, hypocalcemia, hypomagnesemia, metabolic alkalosis, ototoxicity (high doses), and hyperuricemia.\n   - Clinical uses: acute pulmonary edema, heart failure, cirrhosis with ascites, hypertension (less common), and hypercalcemia.\n\n   ii) Thiazide diuretics:\n   - Adverse effects: hypokalemia, hyponatremia, hypercalcemia, hyperuricemia, metabolic alkalosis, and hyperglycemia (worsening diabetes control).\n   - Clinical uses: hypertension (first-line), heart failure, nephrolithiasis (calcium stones), and osteoporosis (reduces urinary calcium excretion).\n\n   iii) Potassium-sparing diuretics:\n   - Adverse effects: hyperkalemia (especially with renal impairment or ACE inhibitors), metabolic acidosis (aldosterone antagonists), gynecomastia/hirsutism (spironolactone), and gastrointestinal disturbances.\n   - Clinical uses: hyperaldosteronism, heart failure (spironolactone), hypokalemia prevention, and ascites (spironolactone).\n\n   iv) Osmotic diuretics:\n   - Adverse effects: volume depletion, hypernatremia, pulmonary edema (if used inappropriately), and headache.\n   - Clinical uses: cerebral edema, acute renal failure, reduction of intraocular pressure (glaucoma), and forced diuresis (e.g., drug overdose).\n\n   v) Carbonic anhydrase inhibitors:\n   - Adverse effects: metabolic acidosis, hypokalemia, renal stones (due to alkaline urine), and paresthesias.\n   - Clinical uses: glaucoma, metabolic alkalosis, altitude sickness, and raised intracranial pressure."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

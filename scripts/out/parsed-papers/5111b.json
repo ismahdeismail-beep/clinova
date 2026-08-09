@@ -1,0 +1,564 @@
+{
+  "code": "5111b",
+  "title": "Pharmacology XI — Anticancer, Dermatological & Ocular Drugs (Special Exam)",
+  "sections": {
+    "A": [
+      {
+        "stem": "A 55-year-old woman with small cell carcinoma of the lung is admitted to the hospital to undergo chemotherapy. Six days after treatment is started, she develops a temperature of 38°C (100.4°F). Physical examination shows no other abnormalities. Laboratory studies show a leukocyte count of 100/mm3 (5% segmented neutrophils and 95% lymphocytes). Which of the\nfollowing is the most appropriate pharmacotherapy to increase this patient's leukocyte count?",
+        "options": [
+          "Leucovorin",
+          "Dexamethasone",
+          "Filgrastim",
+          "Interferon alfa"
+        ]
+      },
+      {
+        "stem": "A 64-year-old man with non-Hodgkin lymphoma comes to the physician because of a 3-week history of progressive numbness in his hands and feet and weakness in his legs when he stands. He received his third course of chemotherapy 4 weeks ago. Physical examination shows areflexia. Which of the following drugs is the most likely cause of these adverse effects?",
+        "options": [
+          "Bleomycin",
+          "Cyclophosphamide",
+          "Doxorubicin",
+          "Vincristine"
+        ]
+      },
+      {
+        "stem": "A 72-year-old woman who has smoked 20 cigarettes daily for the past 38 years begins using eye drops for glaucoma. Three days later, she has a marked increase in shortness of breath while walking up a flight of stairs. Which of the following drugs is the most likely cause of the development of shortness of breath in this patient?",
+        "options": [
+          "Apraclonidine",
+          "Epinephrine",
+          "Latanoprost",
+          "Timolol"
+        ]
+      },
+      {
+        "stem": "A 32-year-old man with non-Hodgkin lymphoma comes to the physician 6 days after finishing the initial chemotherapy regimen. His leukocyte count is 1600/mm3, indicating greater bone marrow suppression than expected. When questioned, the patient says that he has been taking Madagascar periwinkle as an herbal remedy for his condition. He obtains this substance from an herbalist. Which of the following is the most appropriate response?",
+        "options": [
+          "Ask the patient to stop using the herbal supplement because supplements are generally ineffective",
+          "Continue the patient's chemotherapy",
+          "Explain the adverse effects this herbal supplement has on the patient's treatment",
+          "Suggest that the patient take daily multivitamin and protein supplements in addition to the herbal supplement"
+        ]
+      },
+      {
+        "stem": "A 45-year-old woman with metastatic breast cancer that overexpresses the HER2/neu protein is treated with targeted therapy. A year later she develops symptoms of congestive heart failure. The most likely \"targeted agent\" involved in producing this toxicity was:",
+        "options": [
+          "Bevacizumab",
+          "Imatinib",
+          "Rituximab",
+          "Trastuzumab"
+        ]
+      },
+      {
+        "stem": "A 51-year-old woman with multiple risk factors is placed on the raloxifene for prophylaxis against breast cancer and post-menopausal osteoporosis. Before writing her prescription you warn her about the risks associated with many SERMs, which includes an increased risk of:",
+        "options": [
+          "Infections",
+          "Severe nausea and vomiting",
+          "Secondary leukemia",
+          "Thrombembolic events"
+        ]
+      },
+      {
+        "stem": "A plant product that \"enhances\" tubulin polymerization, which thereby inhibits the depolymerisation of tubulin, resulting in mitotic phase arrest.",
+        "options": [
+          "Etoposide",
+          "Paclitaxel",
+          "Topotecan",
+          "Vincristine"
+        ]
+      },
+      {
+        "stem": "A 19-year-old boy presents to his pediatrician with a chief complaint of a pain in his right thigh. On evaluation his right thigh is found to have a swollen area that extends a length of 15 cm. X-ray of the thigh reveals extensive bony destruction and the presence of a bony tumor that is diagnosed as an osteogenic sarcoma. He is offered a limb salvage treatment that includes neo-adjuvant chemotherapy (doxorubicin + cisplatin + high dose methotrexate) as well as radiotherapy prior to tumor resection & bone grafting. He is also given leucovorin to rescue normal cells from the toxicity of",
+        "options": [
+          "Cisplatin",
+          "Doxorubicin",
+          "Methotrexate",
+          "Radiotherapy"
+        ]
+      },
+      {
+        "stem": "A 33-year-old woman who is 4 months’ post-partum presents with tender swelling of the breast. A biopsy reveals cells with an S phase fraction of 11% (for normal cells it should be ~1%). The cells are estrogen & progesterone receptor negative, but there is over expression of the Her2/neu oncogene. There is no evidence for metastasis. The patient is initially treated with 4 courses of doxorubicin & cyclophosphamide. G-CSF was also given when the granulocyte count dipped below 500. Chemotherapy was followed by a modified radical mastectomy. Following surgery, the patient was treated with adjuvant therapy consisting of 4 cycles of paclitaxel. Other than alopecia and nausea & vomiting, which additional side effect should you warn your patient to look for since it is frequently associated with this type of adjuvant therapy?",
+        "options": [
+          "Heart failure",
+          "Hemorrhagic cystitis",
+          "Nephrotoxicity",
+          "Peripheral neuropathy"
+        ]
+      },
+      {
+        "stem": "The development of drug resistance to multiple cancer chemotherapeutic drugs is most likely caused by:",
+        "options": [
+          "Amplification of metabolizing enzymes",
+          "Amplification of target enzymes",
+          "Increased cellular efflux of drugs",
+          "Increased repair of DNA damage"
+        ]
+      },
+      {
+        "stem": "A 43-year-old man with Hodgkin's disease was treated with the MOPP drug regimen followed by ABVD. Four years later he develops a cardiomyopathy, followed by CHF. The drug in his treatment regimen that was most likely responsible for causing this is:",
+        "options": [
+          "Adriamycin",
+          "Bleomycin",
+          "Dacarbazine",
+          "Prednisone"
+        ]
+      },
+      {
+        "stem": "A patient being treated with the ABVD drug regimen for Hodgkin's disease presents to the Emergency Department with the chief complaint of shortness of breath upon exertion & a nagging dry cough. A chest Xray indicates the presence of pulmonary infiltration. Which of the drugs in this patient's regimen is the most likely cause & should be discontinued?",
+        "options": [
+          "Bleomycin",
+          "Dacarbazine",
+          "Doxorubicin",
+          "Vinblastine"
+        ]
+      },
+      {
+        "stem": "One of the most common forms of leukemia is Chronic Myelogenous Leukemia (CML). In most cases these leukemic cells contain a chromosomal abnormality that is a \"target\" for drug therapy that is not seen in non-leukemic white blood cells. A current treatment of choice for this form of cancer is:",
+        "options": [
+          "Busulphan",
+          "imatinib",
+          "Cyclophosphamide",
+          "Trastuzumab"
+        ]
+      },
+      {
+        "stem": "When combined with leucovorin, the efficacy of this drug against cancer is increased.",
+        "options": [
+          "Busulfan",
+          "Doxorubicin",
+          "5-Fluorouracil",
+          "Methotrexate"
+        ]
+      },
+      {
+        "stem": "An anticancer drug that intercalates with DNA and causes single & double strand breaks following interaction with iron to form free radicals.",
+        "options": [
+          "Bleomycin",
+          "Cisplatin",
+          "Lomustine",
+          "Doxorubicin"
+        ]
+      },
+      {
+        "stem": "Which of the following drugs is commonly used topically andonce aday in the treatment of open glaucoma?",
+        "options": [
+          "Pilocarpine",
+          "Tropicamide",
+          "Latanoprost",
+          "Carteolol"
+        ]
+      },
+      {
+        "stem": "Which targeted therapeutic agent used in the treatment of melanoma can produce vitiligo as a side effect?",
+        "options": [
+          "Trametinib",
+          "Nivolumab",
+          "Ipilimumab",
+          "Vemurafenib"
+        ]
+      },
+      {
+        "stem": "In myFunduscopic examination, the ophthalmologist used tropicamide. When I left I could not see my watch and I developed light sensitivity. Which one of the following drugs should the doctors use to counteract these symptoms?",
+        "options": [
+          "Pilocarpine",
+          "Phenylephrine",
+          "Apraclonidine",
+          "Timolol"
+        ]
+      },
+      {
+        "stem": "Which one of the following is the most appropriate initial treatment for a patient presenting with palmar psoriasis?",
+        "options": [
+          "Betamethasone valerate ointment",
+          "Hydrocortisone 1% ointment",
+          "Oral prednisolone",
+          "Regular emollients"
+        ]
+      },
+      {
+        "stem": "The following anticancer drug has high emetogenic potential:",
+        "options": [
+          "A. Vincristine",
+          "B. Chlorambucil",
+          "C. 6-Mercaptopurine",
+          "D. Cisplatin"
+        ]
+      },
+      {
+        "stem": "It is a prodrug that must be first activated by hepatic P-450 to produce its active metabolites.",
+        "options": [
+          "5-fluorouracil",
+          "Cyclophosphamide",
+          "Doxorubicin",
+          "Methotrexate"
+        ]
+      },
+      {
+        "stem": "The most important target of action of chlorambucil is:",
+        "options": [
+          "A. Myeloid tissue",
+          "B. Lymphoid tissue",
+          "C. Neural tissue",
+          "D. Skin"
+        ]
+      },
+      {
+        "stem": "Patients treated with the following anticancer drug are likely to develop a disulfiram like reaction on taking alcohol:",
+        "options": [
+          "A. Dacarbazine",
+          "B. Procarbazine",
+          "C. Melphalan",
+          "D. Hydroxyurea"
+        ]
+      },
+      {
+        "stem": "A plant product useful in treating a variety of cancers that has significant side effects including peripheral neuropathy, significant alopecia, but relatively little nausea, vomiting or bone marrow suppression.",
+        "options": [
+          "Cytarabine",
+          "Etoposide",
+          "Vinblastine",
+          "Vincristine"
+        ]
+      },
+      {
+        "stem": "An anticancer that acts by multiple mechanisms including: a) intercalating between DNA base pairs; b) resulting in blocking of DNA synthesis & DNA strand scission; c) inhibition of DNA topoisomerase II; d) changes in membrane permeability; and e) generation of toxic semiquinone free radicals.",
+        "options": [
+          "Doxorubicin",
+          "Imatinib",
+          "Irinotecan",
+          "Vinblastine"
+        ]
+      },
+      {
+        "stem": "Tumors require a blood supply and the ability to promote angiogenesis in order to grow and proliferate. A targeted drug therapy that inhibits this process is:",
+        "options": [
+          "Anastrozole",
+          "Bevacizumab",
+          "Exemestane",
+          "Imatinib"
+        ]
+      },
+      {
+        "stem": "Normal human cells undergo a finite number of cell divisions before they enter into a nondividing state called replicative senescence. An enzyme that can be modified by cancer cells, allowing them to continuously divide without limits and avoid entering this form of growth arrest is:",
+        "options": [
+          "Aromatase",
+          "CD20",
+          "Telomerase",
+          "Topoisomerase"
+        ]
+      },
+      {
+        "stem": "Which of the following is an alkylating agent and preferred for management of chronic myeloid leukemia?",
+        "options": [
+          "Busulphan",
+          "Cyclophosphamide",
+          "Imatinib",
+          "Dacarbazine"
+        ]
+      },
+      {
+        "stem": "Which of the following is the major toxicity of alkylating agents?",
+        "options": [
+          "Alopecia",
+          "Myelosuppression",
+          "Renal failure",
+          "Hepatotoxicity"
+        ]
+      },
+      {
+        "stem": "Which of the following is the most common mechanism of resistance to both 6-MP (6-mercaptopurine) and 6-TG (6-thioguanine)?",
+        "options": [
+          "Increased levels of dihydrofolate reductase (DHFR)",
+          "Increased drug efflux from the cells by increased active transport",
+          "Decreased HGPRT activity",
+          "Decreased polyglutamate formation"
+        ]
+      },
+      {
+        "stem": "Which of the following is used systemically to treat adenocarcinomas, topically for skin cancer and works through inhibition of DNA synthesis?",
+        "options": [
+          "Cytarabine",
+          "Vinblastine",
+          "Fluorouracil",
+          "Cladribine"
+        ]
+      },
+      {
+        "stem": "Administration of this drug concurrently with allopurinol can result in excessive toxicity;",
+        "options": [
+          "Thioguanine",
+          "Mercaptopurine",
+          "Cytarabine",
+          "Fludarabine"
+        ]
+      },
+      {
+        "stem": "Which anticancer agent works by depolymerization of microtubules?",
+        "options": [
+          "Azatadine",
+          "Vinblastine",
+          "Cladribine",
+          "Methotrexate"
+        ]
+      },
+      {
+        "stem": "Which of this may be useful in control of metastatic ovarian cancer and its topoisomerase I inhibitor's dose-limiting adverse effects include: neutropenia, thromobcytopenia and anemia.",
+        "options": [
+          "Vincristine",
+          "Topotecan",
+          "Doxorubicin",
+          "Mitomycin"
+        ]
+      },
+      {
+        "stem": "Which of the following is active in the late S-G2 phase of the cell cycle and acts through inhibition of topoisomerase II.",
+        "options": [
+          "Vincristine",
+          "Paclitaxel",
+          "Topotecan",
+          "Etoposide"
+        ]
+      },
+      {
+        "stem": "A patient with fluorouracil-nonresponsive colon cancer is given a prodrug which following activation is a topoisomerase I inhibitor. Following administration, the patient experiences very severe diarrhea which causes hypovolemia. This drug probably was:",
+        "options": [
+          "Vincristine",
+          "Irinotecan",
+          "Paclitaxel",
+          "Docetaxel"
+        ]
+      },
+      {
+        "stem": "Major clinical use of this antracycline anticancer antibiotic is in treatment of acute leukemia.",
+        "options": [
+          "Dactinomycin",
+          "Bleomycin",
+          "Daunorubicin",
+          "Doxorubicin"
+        ]
+      },
+      {
+        "stem": "Mesna is administered with cyclophosphamide and ifosphamide to:",
+        "options": [
+          "A. Potentiate their cytotoxic action",
+          "B. Retard their renal excretion",
+          "C. Block their emetic action",
+          "D. Ameliorate cystitis caused by them"
+        ]
+      },
+      {
+        "stem": "Which of the following is an antibiotic anticancer drug that is bioactivated to an alkylating agent? Hypoxic solid tumor stem cells may be most susceptible to it.",
+        "options": [
+          "Doxorubicin",
+          "Mitomycin",
+          "Vincristine",
+          "Plicamycin"
+        ]
+      },
+      {
+        "stem": "Which of the following is an anthracycline analog useful in treating acute myeloid leukemia; In combination with cytarabine (ARA-C), it can produce complete remissions in patients with acute myelogenous leukemia?",
+        "options": [
+          "Plicamycin",
+          "Idarubicin",
+          "Bleomycin",
+          "Paclitaxel"
+        ]
+      },
+      {
+        "stem": "Which of the following anticancer drugs acts on osteoclasts to decrease serum calcium levels (independent of its antitumor action)?",
+        "options": [
+          "Dactinomycin",
+          "Doxorubicin",
+          "Bleomycin",
+          "Plicamycin"
+        ]
+      },
+      {
+        "stem": "Which of the following cancer type is relatively resistant to treatment?",
+        "options": [
+          "Diffuse large cell lymphoma",
+          "Choriocarcinoma",
+          "Colon cancer",
+          "Testicular cancer"
+        ]
+      },
+      {
+        "stem": "Which of the following is a chemotherapeutic (anticancer) dosing principle?",
+        "options": [
+          "Drug should be administered at low doses but with increased frequency",
+          "Drug should be administered infrequently to minimize side effects",
+          "Drugs more beneficial if major toxicities are non-overlapping",
+          "Drugs rarely effective in combination"
+        ]
+      },
+      {
+        "stem": "Which of the following is administered orally?",
+        "options": [
+          "Melphalan",
+          "Chlorambucil",
+          "Cyclophosphamide",
+          "All of the choices"
+        ]
+      },
+      {
+        "stem": "Which of the following is the most likely to be effective in insulin-secreting islet cell pancreatic carcinoma and sometimes in non-Hodgkin's lymphoma?",
+        "options": [
+          "Busulfan",
+          "Cyclophosphamide",
+          "Streptozocin",
+          "Thiopeta"
+        ]
+      },
+      {
+        "stem": "Which of the following is given in combination with bleomycin and vinblastine for non-seminomatous testicular cancer?",
+        "options": [
+          "Dacarbazine",
+          "Procarbazine",
+          "Cisplatin",
+          "Altretamine"
+        ]
+      },
+      {
+        "stem": "Which of the following is a major acute side effect of cisplatin?",
+        "options": [
+          "Bone marrow depression",
+          "Renal dysfunction",
+          "Nausea and vomiting",
+          "Acoustic nerve dysfunction"
+        ]
+      },
+      {
+        "stem": "In hematologic cancer chemotherapy with purine antagonists, allopurinol co-administration is used to prevent:",
+        "options": [
+          "Cardiotoxicity",
+          "Nephrotoxicity and gout",
+          "Hepatotoxicity",
+          "Depletion of bone calcium"
+        ]
+      },
+      {
+        "stem": "Which of the following is the primary dose limiting toxicity associated with carboplatin?",
+        "options": [
+          "Nephrotoxicity",
+          "Myelosuppression",
+          "Hepatotoxicity",
+          "Cardiotoxicity"
+        ]
+      },
+      {
+        "stem": "Neurotoxicity, an adverse effect, dose-limiting in nature, is associated with which of the following?",
+        "options": [
+          "Carboplatin",
+          "Cisplatin",
+          "Oxaliplatin",
+          "Cyclophosphamide"
+        ]
+      },
+      {
+        "stem": "Which one of the following cancers is NOT considered a primary therapeutic use of cytarabine?",
+        "options": [
+          "Non-small-cell lung cancer",
+          "Acute lymphoblastic leukemia",
+          "Acute myelogenous leukemia",
+          "Hodgkin's lymphoma"
+        ]
+      },
+      {
+        "stem": "Which of the following is a primary therapeutic use of 5-fluorouracil?",
+        "options": [
+          "Head and neck cancer",
+          "Hepatocellular cancer",
+          "Anal cancer",
+          "All of the choices"
+        ]
+      },
+      {
+        "stem": "Which of the following is a primary therapeutic use of Gemcitabine?",
+        "options": [
+          "Breast cancer",
+          "Hodgkin's lymphoma",
+          "Soft tissue sarcoma",
+          "All of the choices"
+        ]
+      },
+      {
+        "stem": "Common clinical toxicities associated with dactinomycin administration include:",
+        "options": [
+          "Diarrhea",
+          "Mucosal ulceration",
+          "Glossitis",
+          "All of the choices"
+        ]
+      },
+      {
+        "stem": "Which of the following is the most potent topical corticosteroid?",
+        "options": [
+          "Clobetasone propionate cream",
+          "Hydrocortisone cream",
+          "Mometasone furoate ointment",
+          "Clobetasone butyrate cream"
+        ]
+      },
+      {
+        "stem": "Which of the following is most preferred for pityriasis versicolor?",
+        "options": [
+          "Selenium sulphide shampoo",
+          "Permethrin lotion",
+          "Benzyl benzoate cream",
+          "Amphotericin B iv"
+        ]
+      },
+      {
+        "stem": "Which of the following is not used for eczema?",
+        "options": [
+          "Urea cream",
+          "Tacrolimus ointment",
+          "Betamethasone cream",
+          "Imiquimod cream"
+        ]
+      },
+      {
+        "stem": "Which of the following agents is a monoclonal antibody used for treatment of macular degeneration?",
+        "options": [
+          "Alemtuzumab",
+          "Bevacizumab",
+          "Pegaptanib",
+          "Panatimumab"
+        ]
+      },
+      {
+        "stem": "Which of the following can be administered topically for treatment of blepharitis?",
+        "options": [
+          "Bacitracin",
+          "Trifluridine",
+          "Ciprofloxacin",
+          "Natamycin"
+        ]
+      },
+      {
+        "stem": "A 17-year-old boy comes to see you about his recurrent attacks of urticaria. Over the years he has tried excluding possible triggers but is now getting regular attacks. These involve itch and rash but he has no signs of angioedema. He has not tried any prescription medications yet. Which one of the following would be appropriate as the next step in his treatment?",
+        "options": [
+          "Loratadine tablets",
+          "Montelukast tablets",
+          "Prednisolone to use orally when he develops attacks",
+          "Topical steroids to use for short periods"
+        ]
+      }
+    ],
+    "B": [
+      {
+        "stem": "Primary open-angle glaucoma can be treated by drugs.\na) Mention any three classes of drugs that can be used for its treatment and an example in each case. (3 marks)\nb) What is the mode of action of the above mentioned drugs in this case? (6 marks)"
+      },
+      {
+        "stem": "Kinase inhibitors can be used as anticancer drugs.\na) Mention any two classes of kinase inhibitors with an example in each case. (2 marks)\nb) State any two clinical applications of each of the drugs mentioned in a) above. (4 marks)"
+      },
+      {
+        "stem": "Mention any 2 topical drugs that can be used for management of acne and describe their mode of action. (5 marks)"
+      }
+    ],
+    "C": [
+      {
+        "stem": "A patient is diagnosed with non-Hodgkin's lymphoma. He is prescribed CHOPP.\na) What are the drugs represented by CHOPP? (4 marks)\nb) What is the mode of action of each of the drugs in a) above? (8 marks)\nc) State 2 side effects of each of the drugs mentioned in a) above. (8 marks)"
+      }
+    ]
+  }
+}

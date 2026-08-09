@@ -1,0 +1,782 @@
+{
+  "pharm-autacoids": {
+    "2": {
+      "title": "Autacoids",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Which of the following best distinguishes autacoids from classical hormones?",
+              "options": [
+                "Autacoids act only in pathological states, whereas hormones act in both physiological and pathological states",
+                "Autacoids are released locally and act near their site of synthesis, while hormones are secreted into the bloodstream to act at distant sites",
+                "Autacoids are produced exclusively by endocrine glands, whereas hormones are produced by all tissues",
+                "Autacoids have a longer half-life than hormones"
+              ],
+              "answer": "Autacoids are released locally and act near their site of synthesis, while hormones are secreted into the bloodstream to act at distant sites",
+              "explanation": "Autacoids (local hormones) are released locally and act near their site of synthesis, unlike classical hormones which are secreted into the bloodstream to act at distant target organs."
+            },
+            {
+              "stem": "Which of the following is a selective H2 receptor agonist?",
+              "options": [
+                "2-Thiazolyl ethylamine",
+                "4-Methyl histamine",
+                "Impromidine",
+                "Chlorpheniramine"
+              ],
+              "answer": "Impromidine",
+              "explanation": "Impromidine is a selective H2 receptor agonist. 2-Thiazolyl ethylamine is an H1 agonist, 4-methyl histamine is an H4 agonist, and chlorpheniramine is an H1 antagonist."
+            },
+            {
+              "stem": "Histamine-induced vasodilation is primarily mediated through which receptor subtype?",
+              "options": [
+                "H1",
+                "H2",
+                "H3",
+                "H4"
+              ],
+              "answer": "H2",
+              "explanation": "Histamine-induced vasodilation is primarily mediated through H2 receptors on vascular smooth muscle, leading to increased cAMP and relaxation."
+            },
+            {
+              "stem": "Which first-generation H1 antihistamine is most likely to cause significant sedation due to its high lipophilicity and ability to cross the blood-brain barrier?",
+              "options": [
+                "Cetirizine",
+                "Loratadine",
+                "Diphenhydramine",
+                "Fexofenadine"
+              ],
+              "answer": "Diphenhydramine",
+              "explanation": "Diphenhydramine is a highly lipophilic first-generation H1 antihistamine that readily crosses the blood-brain barrier, causing significant sedation."
+            },
+            {
+              "stem": "A 35-year-old patient with chronic urticaria is prescribed a second-generation H1 antihistamine. Which of the following is LEAST likely to cause sedation or impair cognitive function?",
+              "options": [
+                "Cetirizine",
+                "Loratadine",
+                "Astemizole",
+                "Terfenadine"
+              ],
+              "answer": "Cetirizine",
+              "explanation": "Cetirizine is a second-generation H1 antihistamine with minimal sedation and cognitive impairment due to its reduced ability to cross the blood-brain barrier."
+            },
+            {
+              "stem": "Which of the following H1 antihistamines has additional anti-serotonin (5-HT2), anticholinergic, and appetite-stimulating properties?",
+              "options": [
+                "Promethazine",
+                "Cyproheptadine",
+                "Terfenadine",
+                "Hydroxyzine"
+              ],
+              "answer": "Cyproheptadine",
+              "explanation": "Cyproheptadine is a first-generation H1 antihistamine with additional 5-HT2 antagonism, anticholinergic effects, and appetite-stimulating properties."
+            },
+            {
+              "stem": "Which second-generation H1 antihistamine is metabolized primarily via glucuronidation and is therefore less likely to interact with CYP3A4 inhibitors such as ketoconazole?",
+              "options": [
+                "Terfenadine",
+                "Astemizole",
+                "Ebastine",
+                "Mizolastine"
+              ],
+              "answer": "Mizolastine",
+              "explanation": "Mizolastine is metabolized predominantly via glucuronidation (CYP3A4-independent), making it less likely to interact with CYP3A4 inhibitors like ketoconazole."
+            },
+            {
+              "stem": "A patient on terfenadine develops palpitations and dizziness after starting erythromycin. Which of the following best explains this interaction?",
+              "options": [
+                "Erythromycin induces terfenadine metabolism",
+                "Terfenadine inhibits erythromycin metabolism",
+                "Erythromycin inhibits CYP3A4, leading to elevated terfenadine levels and QT prolongation",
+                "Terfenadine antagonizes the antimicrobial action of erythromycin"
+              ],
+              "answer": "Erythromycin inhibits CYP3A4, leading to elevated terfenadine levels and QT prolongation",
+              "explanation": "Erythromycin inhibits CYP3A4, causing accumulation of terfenadine, which then blocks cardiac K+ channels (HERG), leading to QT prolongation and potential ventricular arrhythmias."
+            },
+            {
+              "stem": "Which of the following H1 antihistamines is most likely to be effective in reducing symptoms of motion sickness?",
+              "options": [
+                "Fexofenadine",
+                "Cetirizine",
+                "Dimenhydrinate",
+                "Loratadine"
+              ],
+              "answer": "Dimenhydrinate",
+              "explanation": "Dimenhydrinate is a first-generation H1 antihistamine with strong anticholinergic and vestibular suppressant properties, making it effective for motion sickness."
+            },
+            {
+              "stem": "Which of the following is NOT a clinical indication for H1 antihistamines?",
+              "options": [
+                "Seasonal allergic rhinitis",
+                "Acute anaphylaxis",
+                "Urticaria",
+                "Common cold"
+              ],
+              "answer": "Acute anaphylaxis",
+              "explanation": "H1 antihistamines are adjunctive in anaphylaxis but not the primary treatment; epinephrine is the first-line drug. H1 antihistamines are effective for allergic rhinitis, urticaria, and common cold symptoms (due to anticholinergic drying effects)."
+            },
+            {
+              "stem": "Which 5-HT receptor subtype is a ligand-gated ion channel (fast excitatory response) rather than a G protein-coupled receptor?",
+              "options": [
+                "5-HT1",
+                "5-HT2",
+                "5-HT3",
+                "5-HT4"
+              ],
+              "answer": "5-HT3",
+              "explanation": "5-HT3 receptors are ligand-gated cation channels that mediate fast excitatory responses (e.g., vomiting reflex), whereas 5-HT1, 5-HT2, and 5-HT4 are G protein-coupled receptors."
+            },
+            {
+              "stem": "Which of the following 5-HT receptor subtypes is primarily involved in the emetic response via the chemoreceptor trigger zone (CTZ)?",
+              "options": [
+                "5-HT1",
+                "5-HT2",
+                "5-HT3",
+                "5-HT4"
+              ],
+              "answer": "5-HT3",
+              "explanation": "5-HT3 receptors in the chemoreceptor trigger zone (CTZ) and vagal afferents mediate the emetic response, making 5-HT3 antagonists (e.g., ondansetron) effective antiemetics."
+            },
+            {
+              "stem": "A 30-year-old woman with frequent migraines is prescribed a drug for prophylaxis. After 6 months, she develops retroperitoneal fibrosis. Which drug is most likely responsible?",
+              "options": [
+                "Propranolol",
+                "Amitriptyline",
+                "Methysergide",
+                "Verapamil"
+              ],
+              "answer": "Methysergide",
+              "explanation": "Methysergide, an ergot alkaloid used for migraine prophylaxis, is associated with retroperitoneal, pleuropulmonary, and cardiac valvular fibrosis after prolonged use."
+            },
+            {
+              "stem": "Which of the following ergot alkaloids is more potent as an α-adrenergic blocker and less potent as a vasoconstrictor compared to ergotamine?",
+              "options": [
+                "Ergotamine",
+                "Dihydroergotamine (DHE)",
+                "Methysergide",
+                "Bromocriptine"
+              ],
+              "answer": "Dihydroergotamine (DHE)",
+              "explanation": "Dihydroergotamine (DHE) is a more potent α-adrenergic antagonist and less potent direct vasoconstrictor than ergotamine, with less oxytocic activity and fewer adverse effects."
+            },
+            {
+              "stem": "Ergotamine relieves migraine by acting primarily on which receptor subtype?",
+              "options": [
+                "α1-adrenergic",
+                "5-HT2",
+                "5-HT1B/1D",
+                "Dopamine D2"
+              ],
+              "answer": "5-HT1B/1D",
+              "explanation": "Ergotamine acts as an agonist at 5-HT1B/1D receptors, constricting dilated cranial vessels and reducing perivascular neurogenic inflammation (e.g., inhibiting CGRP release)."
+            },
+            {
+              "stem": "Which of the following is the most serious adverse effect of sumatriptan in a patient with coronary artery disease?",
+              "options": [
+                "Seizures",
+                "Hypertension",
+                "Coronary vasospasm",
+                "Psychosis"
+              ],
+              "answer": "Coronary vasospasm",
+              "explanation": "Sumatriptan activates 5-HT1B receptors on coronary arteries, causing vasospasm and increasing the risk of myocardial ischemia in patients with coronary artery disease."
+            },
+            {
+              "stem": "Which of the following drugs is most commonly used for migraine prophylaxis?",
+              "options": [
+                "Ergotamine",
+                "Propranolol",
+                "Methysergide",
+                "Sumatriptan"
+              ],
+              "answer": "Propranolol",
+              "explanation": "β-adrenergic blockers such as propranolol are the most commonly used drugs for migraine prophylaxis due to their efficacy and safety profile."
+            },
+            {
+              "stem": "Which cyclooxygenase isoenzyme is primarily inducible and expressed during inflammation?",
+              "options": [
+                "COX-1",
+                "COX-2",
+                "COX-3",
+                "Both COX-1 and COX-2"
+              ],
+              "answer": "COX-2",
+              "explanation": "COX-2 is primarily inducible and expressed during inflammation (e.g., by cytokines and growth factors), whereas COX-1 is constitutive and expressed in most tissues."
+            },
+            {
+              "stem": "Which of the following NSAIDs is an irreversible inhibitor of cyclooxygenase?",
+              "options": [
+                "Ibuprofen",
+                "Indomethacin",
+                "Aspirin",
+                "Piroxicam"
+              ],
+              "answer": "Aspirin",
+              "explanation": "Aspirin irreversibly acetylates a serine residue in the COX active site, permanently inactivating the enzyme, whereas other NSAIDs are reversible inhibitors."
+            },
+            {
+              "stem": "Prostaglandin E2 (PGE2) causes all of the following EXCEPT:",
+              "options": [
+                "Fall in blood pressure (vasodilation)",
+                "Bronchoconstriction",
+                "Uterine contraction",
+                "Inhibition of gastric acid secretion"
+              ],
+              "answer": "Bronchoconstriction",
+              "explanation": "PGE2 causes vasodilation (fall in blood pressure), uterine contraction, and inhibition of gastric acid secretion, but it is a bronchodilator, not a bronchoconstrictor."
+            },
+            {
+              "stem": "Which of the following is NOT a pathophysiological role of prostaglandins?",
+              "options": [
+                "Maintenance of ductus arteriosus patency",
+                "Regulation of renal tubular salt absorption",
+                "Initiation of labor",
+                "Ventricular remodeling after myocardial infarction"
+              ],
+              "answer": "Ventricular remodeling after myocardial infarction",
+              "explanation": "Prostaglandins maintain ductus arteriosus patency, regulate renal tubular salt/water handling, and initiate labor, but they do not play a direct role in ventricular remodeling after myocardial infarction."
+            },
+            {
+              "stem": "Why does low-dose aspirin produce long-lasting inhibition of platelet COX?",
+              "options": [
+                "Platelets contain low quantities of COX",
+                "Platelets cannot synthesize new COX molecules",
+                "Platelets bind aspirin with high affinity",
+                "Platelet COX is inducible"
+              ],
+              "answer": "Platelets cannot synthesize new COX molecules",
+              "explanation": "Platelets are anucleate and cannot synthesize new COX enzymes, so the irreversible inhibition by aspirin lasts for the entire platelet lifespan (7–10 days)."
+            },
+            {
+              "stem": "Which of the following oxytocics is effective in the early pregnancy uterus?",
+              "options": [
+                "Oxytocin",
+                "Methylergometrine",
+                "Prostaglandin F2α",
+                "Both A and B"
+              ],
+              "answer": "Prostaglandin F2α",
+              "explanation": "The early-pregnancy uterus is insensitive to oxytocin and methylergometrine but responds to prostaglandins (PGF2α/PGE2), which are used for first/second-trimester pregnancy termination."
+            },
+            {
+              "stem": "Aspirin produces analgesia by:",
+              "options": [
+                "Preventing sensitization of peripheral pain receptors",
+                "Affecting pain impulse gating at the spinal level",
+                "Raising the pain threshold at subcortical levels",
+                "Both A and C"
+              ],
+              "answer": "Preventing sensitization of peripheral pain receptors",
+              "explanation": "Aspirin produces analgesia peripherally by inhibiting prostaglandin synthesis, thereby preventing sensitization of peripheral nociceptors to mediators such as bradykinin."
+            },
+            {
+              "stem": "Which of the following is NOT a feature shared by inhibitors of prostaglandin synthesis?",
+              "options": [
+                "Prolongation of bleeding time",
+                "Prolongation of prothrombin time",
+                "Prolongation of labor",
+                "Gastric mucosal damage"
+              ],
+              "answer": "Prolongation of prothrombin time",
+              "explanation": "COX inhibitors prolong bleeding time (due to inhibited platelet thromboxane), prolong labor (loss of uterine PG stimulation), and damage the gastric mucosa, but they do not prolong prothrombin time."
+            },
+            {
+              "stem": "Selective COX-2 inhibitors differ from nonselective COX-1/COX-2 inhibitors in that they:",
+              "options": [
+                "Are anti-inflammatory but not analgesic",
+                "Do not reduce fever",
+                "Do not inhibit platelet aggregation",
+                "Have no renal effects"
+              ],
+              "answer": "Do not inhibit platelet aggregation",
+              "explanation": "Selective COX-2 inhibitors spare platelet COX-1, so they do not inhibit platelet thromboxane A2 production or platelet aggregation, unlike nonselective NSAIDs."
+            },
+            {
+              "stem": "Which of the following sites constitutively expresses COX-2?",
+              "options": [
+                "Gastric mucosa",
+                "Neutrophils",
+                "Blood platelets",
+                "Juxtaglomerular apparatus"
+              ],
+              "answer": "Juxtaglomerular apparatus",
+              "explanation": "COX-2 is expressed constitutively in the kidney (juxtaglomerular apparatus and macula densa), brain, endothelium, and reproductive tissues, whereas gastric mucosa and platelets express COX-1."
+            },
+            {
+              "stem": "A 65-year-old male with hypertension, diabetes, and a history of gastric ulcer presents with musculoskeletal pain. Which NSAID regimen is most appropriate?",
+              "options": [
+                "Celecoxib",
+                "Naproxen and omeprazole",
+                "Indomethacin",
+                "Aspirin"
+              ],
+              "answer": "Naproxen and omeprazole",
+              "explanation": "Naproxen (nonselective NSAID) with omeprazole (PPI) is appropriate for this patient with cardiovascular risk factors and a history of gastric ulcer, balancing efficacy and GI protection."
+            },
+            {
+              "stem": "Which of the following correctly represents the mechanism of action of tofacitinib in rheumatoid arthritis?",
+              "options": [
+                "TNF-α inhibitor",
+                "Inhibitor of Janus kinases (JAK)",
+                "IL-6 receptor blocker",
+                "Dihydrofolate reductase inhibitor"
+              ],
+              "answer": "Inhibitor of Janus kinases (JAK)",
+              "explanation": "Tofacitinib is a Janus kinase (JAK) inhibitor that blocks JAK1/JAK3 signaling and thereby reduces cytokine-mediated inflammation in rheumatoid arthritis."
+            },
+            {
+              "stem": "Which of the following strategies is LEAST likely to improve acute gout symptoms?",
+              "options": [
+                "Naproxen",
+                "Colchicine",
+                "Probenecid",
+                "Prednisone"
+              ],
+              "answer": "Probenecid",
+              "explanation": "Probenecid is a uricosuric agent used for chronic gout and does not relieve acute flares; it may even worsen symptoms by mobilizing urate. NSAIDs, colchicine, and prednisone are effective for acute gout."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "a) Using a suitable flow chart, illustrate the metabolic pathway of acetaminophen that leads to the formation of the toxic metabolite (4 marks)\n\nb) Explain why you would be less concerned if a mother reports that her 18-month-old son took an overdose of paracetamol syrup (2 marks)",
+              "modelAnswer": "a) Metabolic pathway of acetaminophen (paracetamol) leading to toxic metabolite formation:\n\nAcetaminophen (Paracetamol)\n│\n├── (~85–90%) GLUCURONIDATION ────────────────────────► Glucuronide conjugate (inactive) ────► Renal excretion\n├── (~5–10%) SULFATION ─────────────────────────────► Sulfate conjugate (inactive) ���────────► Renal excretion\n└── (~5%) CYP450 OXIDATION (CYP2E1, CYP3A4, CYP1A2) ──► NAPQI (N-acetyl-p-benzoquinone imine) — TOXIC METABOLITE\n      │\n      ├── (Therapeutic doses) NAPQI + GLUTATHIONE ──► Mercapturic acid conjugate (non-toxic) ──► Renal excretion\n      └── (Overdose: glutathione depleted) NAPQI binds covalently to hepatic proteins ──► HEPATOCELLULAR NECROSIS\n\nb) Why less concern in an 18-month-old after paracetamol syrup overdose:\n• Children have a relatively HIGHER capacity for sulfate conjugation (alternative detoxifying pathway) than adults.\n• Children have LOWER CYP2E1/CYP3A4 activity, so less of the dose is converted to the toxic metabolite NAPQI.\n• Glutathione reserves are relatively higher in children, providing more substrate for detoxification of NAPQI."
+            },
+            {
+              "stem": "Y.S is a 19-year-old college student brought to the health center with breathing difficulties, generalized body swelling, and fainting after being stung severally by bees. Formulate a stepwise management plan for this patient (4 marks)",
+              "modelAnswer": "Stepwise management of anaphylaxis (bee stings — Y.S):\n1. Assess and secure the airway, breathing, and circulation (ABCDE); call for help; remove the trigger (scrape out the bee stinger); stop any drug infusions.\n2. ADRENALINE (epinephrine) is first-line: IM 0.5 mg (0.5 mL of 1:1000) into the anterolateral thigh, repeat every 5 minutes as needed (IV infusion in refractory shock under monitoring).\n3. Give high-flow oxygen; position the patient supine with legs elevated (or sitting up if breathing difficulty is severe).\n4. Rapid IV crystalloid fluid bolus (e.g., 20 mL/kg) for hypotension/shock.\n5. Adjunctive drugs: chlorpheniramine (H1 antagonist) IV/IM + ranitidine (H2 antagonist) IV; hydrocortisone IV to help prevent the late (biphasic) reaction; nebulized salbutamol for bronchospasm.\n6. Continuous monitoring; observe for 6–24 hours (risk of biphasic anaphylaxis); arrange adrenaline auto-injector prescription and allergy referral."
+            },
+            {
+              "stem": "PQ is a 67-year-old retired labor officer with Prinzmetal angina and sporadic migraine attacks. The medical officer wants to know which classes of drugs effective for acute migraine are safe for her.\n\na) Identify two classes of drugs that are contraindicated in such a patient (2 marks)\n\nb) Illustrate, using suitable examples, three classes of drugs recommended for migraine prophylaxis in this patient (3 marks)",
+              "modelAnswer": "a) Classes of drugs CONTRAINDICATED for acute migraine in a patient with Prinzmetal (variant) angina:\n• ERGOT ALKALOIDS — ergotamine and dihydroergotamine: potent vasoconstrictors (α-adrenergic/5-HT agonism) that can precipitate coronary vasospasm.\n• TRIPTANS (5-HT1B/1D agonists) — e.g., sumatriptan, zolmitriptan: cause coronary vasoconstriction and are contraindicated in ischemic heart disease/Prinzmetal angina.\n\nb) Classes of drugs recommended for migraine PROPHYLAXIS in this patient (with examples):\n1. β-ADRENERGIC BLOCKERS — propranolol (standard first-line migraine prophylactic; use with caution in vasospastic angina — preferred if no resting ischemia).\n2. CALCIUM CHANNEL BLOCKERS — flunarizine or verapamil (useful both for migraine prophylaxis and for treating Prinzmetal angina — a particularly suitable choice here).\n3. TRICYCLIC ANTIDEPRESSANTS — amitriptyline (effective prophylactic; also helps with comorbid depression/anxiety and neuropathic pain)."
+            },
+            {
+              "stem": "For each numbered item in Category A, select the one lettered option in Category B that is most closely associated with it. Each lettered option can be selected once, more than once, or not at all. (5 marks)\n\nCategory A:\n1. A partial agonist at μ (mu) opioid receptors and antagonist at κ (kappa) opioid receptors\n2. A full opioid agonist with the highest oral bioavailability\n3. A drug with very weak opioid activity used in the treatment of diarrhea\n4. A partial agonist at μ (mu) opioid receptors and full agonist at κ (kappa) opioid receptors\n5. A drug with high affinity but no intrinsic activity at opioid receptors\n\nCategory B:\nCodeine, Buprenorphine, Fentanyl, Loperamide, Methadone, Morphine, Naloxone, Pentazocine",
+              "modelAnswer": "Matching (Category A → Category B):\n1. A partial agonist at μ opioid receptors and antagonist at κ opioid receptors → BUPRENORPHINE (buprenorphine is a partial μ agonist and κ antagonist with very high receptor affinity).\n2. A full opioid agonist with the highest oral bioavailability → METHADONE (oral bioavailability ~80–90%, the highest among full agonists; also long-acting).\n3. A drug with very weak opioid activity used in the treatment of diarrhea → LOPERAMIDE (peripherally acting μ agonist that slows gut motility without CNS effects).\n4. A partial agonist at μ opioid receptors and full agonist at κ opioid receptors → PENTAZOCINE (κ agonist with partial μ agonism/weak antagonism).\n5. A drug with high affinity but no intrinsic activity at opioid receptors → NALOXONE (pure opioid antagonist — high receptor affinity, zero intrinsic activity)."
+            },
+            {
+              "stem": "a) Identify a drug that you would recommend for a 48-year-old man with CKD stage 2, hay fever, and poor appetite (2 marks)\n\nb) Describe the mechanism of action of this drug (2 marks)\n\nc) Using suitable examples, examine two other different clinical applications of H1 receptor antagonists (2 marks)",
+              "modelAnswer": "a) Drug recommended for hay fever and poor appetite: CYPROHEPTADINE (an H1 receptor antagonist with additional 5-HT2 (serotonin) antagonism — it relieves allergic rhinitis and stimulates appetite/weight gain).\n\nb) Mechanism of action:\n• Blocks H1 receptors — relieves histamine-mediated symptoms of hay fever (sneezing, rhinorrhea, nasal itching, urticaria).\n• Blocks 5-HT2 receptors in the hypothalamic appetite/satiety center — reduces serotonergic satiety signaling, increasing appetite and promoting weight gain.\n• Also has anticholinergic and mild sedative (CNS-depressant) actions.\n\nc) Other clinical applications of H1 receptor antagonists (with examples):\n1. Motion sickness and vestibular disorders — dimenhydrinate, meclizine, promethazine (prophylaxis of travel sickness; vertigo).\n2. Sedation/insomnia — diphenhydramine, promethazine (non-prescription sleep aids).\n3. Antiemesis — diphenhydramine, dimenhydrinate (used for nausea/vomiting, including chemotherapy-induced nausea)."
+            },
+            {
+              "stem": "After careful history taking, D.W is also diagnosed with migraine headaches. He admits to taking a drug prescribed by a neurologist for prophylaxis. He now complains of dyspnea, chest tightness and pain. Examination reveals pleural friction rubs, an aortic murmur, and pleural effusion. Chest X-ray and echocardiogram confirm pleuropulmonary and cardiac fibrotic changes.\n\na) Identify and classify the most likely drug responsible for these fibrotic changes (3 marks)\n\nb) Outline three other adverse effects and three contraindications of the drug in (a) above (6 marks)",
+              "modelAnswer": "a) Most likely drug: METHYSERGIDE — classified as an ERGOT ALKALOID and 5-HT2 (serotonin) receptor antagonist used for migraine prophylaxis. It is well known to cause RETROPERITONEAL, PLEUROPULMONARY, and CARDIAC VALVULAR FIBROSIS after prolonged use — matching the pleural friction rubs, aortic murmur, and pleural effusion (fibrotic pleuropulmonary and cardiac changes) seen in this patient.\n\nb) Other adverse effects of methysergide:\n1. Nausea, vomiting, and abdominal pain.\n2. Dizziness, drowsiness, insomnia, and hallucinations.\n3. Vasoconstriction — peripheral ischemia (ergotism), cold extremities, claudication.\n4. Weight gain and edema.\n5. Muscle cramps, hair loss, and weakness.\n(It should be given with 1-month drug-free holidays every 6 months to reduce fibrosis risk.)\n\nContraindications of methysergide:\n1. Pregnancy and lactation.\n2. Peripheral vascular disease/occlusive arterial disease.\n3. Coronary artery disease or uncontrolled hypertension.\n4. Severe hepatic or renal impairment.\n5. Fibrotic disorders (e.g., retroperitoneal fibrosis)."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "AW is a 42-year-old patient with advanced liver disease. She is involved in a road traffic accident and sustains a fractured tibia of her left leg. Her eGFR is approximately 28 mL/min/1.73 m² (normal: 90–120 mL/min/1.73 m²). She is in severe pain and requires an analgesic.\n\na) Identify a suitable opioid analgesic that you would recommend which would not require dose adjustment and could be used for induction of anesthesia, maintenance of anesthesia, and analgesia in the immediate postoperative period (2 marks)\n\nb) List two other opioids that could be considered safe for use in this patient but require dose adjustment (1 mark)\n\nc) Outline the mode of action of the drug you identified in (a) above (2 marks)\n\nd) Using appropriate examples, examine three other clinical applications, three adverse effects, and three contraindications of opioid analgesics (9 marks)\n\nAfter surgery, the orthopedic surgeon notices that AW’s leg is inflamed and thus she requires a short course of an NSAID.\n\ne) Identify one NSAID considered relatively safe in renal insufficiency that you would recommend (2 marks)\n\nf) Outline two drug-drug interactions and two contraindications of the drug you have identified in (e) above (4 marks)",
+              "modelAnswer": "a) Suitable opioid: FENTANYL — a potent synthetic phenylpiperidine opioid that is safe in renal impairment (no active renally-excreted metabolites) and does not require dose adjustment in this patient; it is used for induction of anesthesia (with a hypnotic), maintenance of anesthesia, and as an analgesic in the immediate postoperative period.\n\nb) Two opioids safe in renal impairment but requiring dose adjustment:\n• Morphine — active metabolite morphine-6-glucuronide accumulates in renal failure (dose reduction needed).\n• Oxycodone (or hydromorphone, tramadol) — metabolites accumulate in renal impairment; reduce dose and monitor.\n\nc) Mode of action of fentanyl:\nFentanyl is a selective μ-opioid receptor agonist. μ receptors are G protein-coupled (Gi/Go): activation inhibits adenylyl cyclase (↓cAMP), opens K+ channels (membrane hyperpolarization), and inhibits voltage-gated Ca2+ channels, reducing neurotransmitter release (e.g., substance P) in pain pathways. This results in analgesia, sedation, respiratory depression, and euphoria.\n\nd) Other clinical applications, adverse effects, and contraindications of opioid analgesics:\n\nClinical applications (examples):\n1. Acute pain management (postoperative, trauma, burns) — morphine, fentanyl.\n2. Chronic cancer pain — morphine, oxycodone.\n3. Palliative care (dyspnea, cough suppression) — morphine.\n4. Anesthesia (induction/maintenance) — fentanyl, remifentanil.\n5. Diarrhea — loperamide (peripheral μ agonist).\n6. Opioid dependence maintenance therapy — methadone, buprenorphine.\n\nAdverse effects (examples):\n1. Respiratory depression — life-threatening at high doses.\n2. Constipation — common and often requires laxatives.\n3. Nausea and vomiting — stimulation of the chemoreceptor trigger zone (CTZ).\n4. Sedation and cognitive impairment — risk of falls/accidents.\n5. Pruritus — histamine release (especially with morphine).\n6. Tolerance and physical dependence — with chronic use.\n7. Urinary retention — due to increased bladder sphincter tone.\n8. Miosis — diagnostic sign of opioid overdose.\n\nContraindications (examples):\n1. Severe respiratory depression or acute asthma exacerbation.\n2. Acute alcohol intoxication or other CNS depressants (additive respiratory depression).\n3. Paralytic ileus or severe bowel obstruction.\n4. Known allergy to opioids (cross-sensitivity possible).\n5. Use of monoamine oxidase inhibitors (MAOIs) within 14 days (risk of serotonin syndrome with meperidine, tramadol).\n6. Severe hepatic impairment (caution with morphine due to accumulation of active metabolites).\n\n\n\ne) NSAID relatively safe in renal insufficiency: NABUMETONE — a nonselective NSAID with a relatively long half-life and minimal renal elimination of active metabolites, making it a safer choice in mild to moderate renal impairment compared to other NSAIDs.\n\nf) Drug-drug interactions and contraindications of nabumetone:\n\nDrug-drug interactions:\n1. ACE inhibitors/ARBs — increased risk of acute kidney injury due to reduced prostaglandin-mediated renal vasodilation.\n2. Anticoagulants (warfarin) — increased bleeding risk due to antiplatelet effects and displacement from protein binding.\n3. Diuretics (loop/thiazide) — reduced diuretic efficacy and increased risk of nephrotoxicity.\n4. Lithium — reduced renal clearance of lithium, leading to toxicity.\n\nContraindications:\n1. Active peptic ulcer disease or history of NSAID-induced GI bleeding.\n2. Severe renal impairment (eGFR <30 mL/min/1.73 m²) — risk of further renal deterioration.\n3. Severe hepatic impairment.\n4. Hypersensitivity to nabumetone or other NSAIDs.\n5. Third trimester of pregnancy (risk of premature closure of the ductus arteriosus and fetal renal impairment)."
+            },
+            {
+              "stem": "A 55-year-old man presents to the emergency department with acute severe headache, nausea, vomiting, and photophobia. He reports a history of hypertension and type 2 diabetes mellitus. On examination, he is afebrile, with a blood pressure of 180/110 mmHg, heart rate 105 bpm, and no focal neurological deficits. A CT scan of the brain is unremarkable. The attending physician suspects a migraine attack with aura.\n\na) Outline the pathophysiology of migraine with aura, including the role of serotonin and calcitonin gene-related peptide (CGRP) (5 marks)\n\nb) Formulate a stepwise management plan for this patient’s acute migraine attack (5 marks)\n\nc) Discuss the rationale for choosing a specific triptan over another in this patient, considering his comorbidities (5 marks)",
+              "modelAnswer": "a) Pathophysiology of migraine with aura:\n\n1. Cortical spreading depression (CSD): A wave of neuronal and glial depolarization spreads across the cerebral cortex, causing transient neuronal suppression and aura symptoms (e.g., visual scintillations, scotomas).\n2. Activation of trigeminovascular system: CSD activates trigeminal afferents, releasing pro-inflammatory neuropeptides, including calcitonin gene-related peptide (CGRP) and substance P.\n3. Neurogenic inflammation: CGRP causes vasodilation of meningeal vessels and plasma protein extravasation, contributing to pain.\n4. Role of serotonin (5-HT):\n   • 5-HT1B/1D receptors on cranial blood vessels mediate vasoconstriction, reducing neurogenic inflammation.\n   • 5-HT1B receptors on trigeminal nerve endings inhibit CGRP release.\n   • Low serotonin levels or dysfunction in serotonergic pathways may predispose to migraine attacks.\n5. Central sensitization: Repeated activation of trigeminal pathways leads to central sensitization, amplifying pain perception.\n\n\nb) Stepwise management plan for acute migraine attack:\n\n1. Immediate assessment and stabilization:\n   • Ensure airway, breathing, and circulation (ABCs).\n   • Check vital signs; treat severe hypertension (e.g., labetalol or hydralazine) if systolic BP >180 mmHg or diastolic BP >120 mmHg.\n   • Provide high-flow oxygen if needed.\n\n2. First-line acute migraine therapy:\n   • TRIPTAN (e.g., sumatriptan 6 mg SC or 50–100 mg oral) — first-line for moderate to severe migraine with no contraindications.\n   • NSAID (e.g., ibuprofen 400–800 mg oral or diclofenac 50 mg oral) — if triptan is contraindicated or not tolerated.\n   • Antiemetic (e.g., metoclopramide 10 mg IV or oral) — for nausea/vomiting.\n\n3. Adjunctive therapies if needed:\n   • IV fluids (normal saline) for dehydration.\n   • Paracetamol 1 g oral/IV if pain persists.\n   • Consider dexamethasone 8–10 mg IV to prevent recurrence (if no contraindications).\n\n4. Monitoring and follow-up:\n   • Observe for 2–4 hours; assess response and adverse effects.\n   • If triptan is ineffective, consider switching to a different triptan or route of administration (e.g., nasal spray, subcutaneous).\n   • Arrange follow-up with a neurologist for migraine prophylaxis if attacks are frequent.\n\n5. Patient education:\n   • Avoid known triggers (e.g., stress, certain foods, sleep deprivation).\n   • Keep a headache diary to identify patterns.\n   • Discuss prophylactic therapy if attacks are frequent or disabling.\n\n\nc) Rationale for choosing a specific triptan over another in this patient:\n\n1. Efficacy and speed of onset:\n   • Sumatriptan SC (6 mg) has the fastest onset (5–20 minutes) and highest efficacy but may cause more adverse effects (e.g., injection-site reactions).\n   • Oral sumatriptan (50–100 mg) or zolmitriptan (2.5–5 mg) are alternatives if SC is not preferred.\n\n2. Comorbidities and safety:\n   • Patient has hypertension and type 2 diabetes — avoid triptans if uncontrolled hypertension or ischemic heart disease (risk of coronary vasospasm).\n   • If hypertension is well-controlled and no ischemic heart disease, sumatriptan is generally safe.\n   • Consider eletriptan or naratriptan if sumatriptan is ineffective or poorly tolerated (different receptor affinity and metabolism).\n\n3. Route of administration:\n   • SC sumatriptan is preferred for rapid relief in severe attacks.\n   • Oral triptans are suitable if the patient prefers oral therapy and can tolerate it.\n\n4. Drug interactions:\n   • Avoid triptans with ergot alkaloids (risk of vasoconstriction) or MAOIs (risk of serotonin syndrome).\n   • No significant interactions with antihypertensives (e.g., ACE inhibitors, calcium channel blockers) or antidiabetic drugs.\n\n5. Adverse effects:\n   • Sumatriptan may cause chest tightness, flushing, or dizziness — monitor for these.\n   • If the patient has a history of poor response to one triptan, try another (e.g., rizatriptan or almotriptan).\n\nConclusion: Given the patient’s comorbidities (hypertension, diabetes), sumatriptan SC is a reasonable first choice if there is no evidence of ischemic heart disease. If hypertension is uncontrolled or ischemic heart disease is suspected, avoid triptans and consider alternative therapies (e.g., NSAIDs with antiemetics, or IV valproate/dexamethasone)."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Autacoids",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "Which of the following best describes the key difference between autacoids and classical hormones?",
+              "options": [
+                "Autacoids are released only during pathological states, whereas hormones are released continuously.",
+                "Autacoids act locally at the site of synthesis and release, while hormones act at distant target organs.",
+                "Autacoids are synthesized by endocrine glands, whereas hormones are synthesized by non-endocrine tissues.",
+                "Autacoids are exclusively peptides, whereas hormones include steroids, peptides, and amino acid derivatives."
+              ],
+              "answer": "Autacoids act locally at the site of synthesis and release, while hormones act at distant target organs.",
+              "explanation": "Autacoids (e.g., histamine, prostaglandins) are local mediators that act near their site of release, unlike hormones which travel through the bloodstream to distant target organs."
+            },
+            {
+              "stem": "A patient with chronic urticaria is prescribed an H1 antihistamine. Which of the following is a second-generation H1 antihistamine with minimal sedative and anticholinergic effects?",
+              "options": [
+                "Diphenhydramine",
+                "Chlorpheniramine",
+                "Cetirizine",
+                "Promethazine"
+              ],
+              "answer": "Cetirizine",
+              "explanation": "Cetirizine is a second-generation H1 antihistamine with minimal penetration of the blood-brain barrier, resulting in reduced sedation and anticholinergic effects compared to first-generation agents like diphenhydramine and promethazine."
+            },
+            {
+              "stem": "Which of the following is a selective H2 receptor agonist used experimentally to study gastric acid secretion?",
+              "options": [
+                "2-Thiazolyl ethylamine",
+                "Impromidine",
+                "Betahistine",
+                "4-Methylhistamine"
+              ],
+              "answer": "Impromidine",
+              "explanation": "Impromidine is a selective H2 receptor agonist used in research to stimulate gastric acid secretion, unlike 2-thiazolyl ethylamine (H1 agonist), betahistine (H1/H3 partial agonist), and 4-methylhistamine (H4 agonist)."
+            },
+            {
+              "stem": "A 35-year-old patient with a history of hypertension and type 2 diabetes presents with severe allergic rhinitis. Which H1 antihistamine would be most appropriate to avoid exacerbating his cardiovascular risk?",
+              "options": [
+                "Astemizole",
+                "Terfenadine",
+                "Loratadine",
+                "Doxepin"
+              ],
+              "answer": "Loratadine",
+              "explanation": "Loratadine is a second-generation H1 antihistamine with a low risk of QT prolongation and minimal cardiovascular adverse effects, making it safer for patients with cardiovascular risk factors compared to astemizole and terfenadine."
+            },
+            {
+              "stem": "Which of the following actions of histamine is mediated primarily through H3 receptors?",
+              "options": [
+                "Vasodilation of vascular smooth muscle",
+                "Inhibition of neurotransmitter release in the central nervous system",
+                "Bronchoconstriction",
+                "Increased gastric acid secretion"
+              ],
+              "answer": "Inhibition of neurotransmitter release in the central nervous system",
+              "explanation": "H3 receptors are presynaptic autoreceptors and heteroreceptors in the central nervous system that inhibit the release of neurotransmitters such as histamine, acetylcholine, and serotonin."
+            },
+            {
+              "stem": "A patient with a history of motion sickness is prescribed an H1 antihistamine for prophylaxis. Which of the following agents is most effective when taken 1 hour before travel?",
+              "options": [
+                "Fexofenadine",
+                "Dimenhydrinate",
+                "Loratadine",
+                "Cetirizine"
+              ],
+              "answer": "Dimenhydrinate",
+              "explanation": "Dimenhydrinate is a first-generation H1 antihistamine with strong anticholinergic properties, making it effective for motion sickness when taken prophylactically 1 hour before travel."
+            },
+            {
+              "stem": "Which of the following adverse effects is most commonly associated with first-generation H1 antihistamines due to their anticholinergic properties?",
+              "options": [
+                "QT prolongation",
+                "Sedation",
+                "Hyperglycemia",
+                "Hypertension"
+              ],
+              "answer": "Sedation",
+              "explanation": "First-generation H1 antihistamines (e.g., diphenhydramine, promethazine) readily cross the blood-brain barrier, causing sedation due to central H1 receptor blockade."
+            },
+            {
+              "stem": "A 40-year-old patient with a history of migraine is prescribed a drug for prophylaxis that is known to cause retroperitoneal fibrosis with long-term use. Which of the following drugs is most likely responsible?",
+              "options": [
+                "Propranolol",
+                "Amitriptyline",
+                "Methysergide",
+                "Verapamil"
+              ],
+              "answer": "Methysergide",
+              "explanation": "Methysergide, an ergot alkaloid used for migraine prophylaxis, is associated with serious fibrotic complications, including retroperitoneal fibrosis, with prolonged use."
+            },
+            {
+              "stem": "Which of the following 5-HT receptors is a ligand-gated ion channel rather than a G protein-coupled receptor?",
+              "options": [
+                "5-HT1",
+                "5-HT2",
+                "5-HT3",
+                "5-HT4"
+              ],
+              "answer": "5-HT3",
+              "explanation": "5-HT3 receptors are ligand-gated ion channels that mediate fast excitatory neurotransmission, unlike 5-HT1, 5-HT2, and 5-HT4 receptors, which are G protein-coupled receptors."
+            },
+            {
+              "stem": "A patient with carcinoid syndrome presents with flushing, diarrhea, and bronchospasm. Which of the following drugs would be most effective in controlling the diarrhea?",
+              "options": [
+                "Ondansetron",
+                "Cyproheptadine",
+                "Sumatriptan",
+                "Ergotamine"
+              ],
+              "answer": "Cyproheptadine",
+              "explanation": "Cyproheptadine, an H1 antihistamine with additional 5-HT2 antagonism, is effective in controlling diarrhea associated with carcinoid syndrome by blocking serotonin-mediated effects."
+            },
+            {
+              "stem": "Which of the following eicosanoids is primarily responsible for bronchoconstriction in asthma?",
+              "options": [
+                "Prostaglandin E2 (PGE2)",
+                "Prostaglandin I2 (PGI2)",
+                "Leukotriene C4 (LTC4)",
+                "Thromboxane A2 (TXA2)"
+              ],
+              "answer": "Leukotriene C4 (LTC4)",
+              "explanation": "Leukotriene C4 (LTC4) and its metabolites (LTD4, LTE4) are potent bronchoconstrictors and play a key role in the pathophysiology of asthma."
+            },
+            {
+              "stem": "A patient with rheumatoid arthritis is prescribed a selective COX-2 inhibitor. Which of the following is a selective COX-2 inhibitor?",
+              "options": [
+                "Ibuprofen",
+                "Naproxen",
+                "Celecoxib",
+                "Aspirin"
+              ],
+              "answer": "Celecoxib",
+              "explanation": "Celecoxib is a selective COX-2 inhibitor with reduced risk of gastrointestinal bleeding compared to nonselective NSAIDs like ibuprofen, naproxen, and aspirin."
+            },
+            {
+              "stem": "Which of the following actions is mediated by prostaglandin E2 (PGE2)?",
+              "options": [
+                "Bronchoconstriction",
+                "Uterine contraction",
+                "Vasoconstriction",
+                "Inhibition of platelet aggregation"
+              ],
+              "answer": "Uterine contraction",
+              "explanation": "PGE2 stimulates uterine contractions and is used clinically for inducing labor or terminating pregnancy. It does not cause bronchoconstriction (PGF2α and PGD2 do) or vasoconstriction (TXA2 does), and it promotes platelet aggregation."
+            },
+            {
+              "stem": "A patient with a history of peptic ulcer disease requires an NSAID for chronic pain. Which of the following strategies would be most appropriate to minimize gastrointestinal toxicity?",
+              "options": [
+                "Prescribe a high dose of ibuprofen with antacids.",
+                "Use a selective COX-2 inhibitor with a proton pump inhibitor.",
+                "Combine aspirin with misoprostol.",
+                "Switch to a topical NSAID like diclofenac gel."
+              ],
+              "answer": "Use a selective COX-2 inhibitor with a proton pump inhibitor.",
+              "explanation": "A selective COX-2 inhibitor (e.g., celecoxib) combined with a proton pump inhibitor (e.g., omeprazole) reduces the risk of peptic ulcer disease in patients requiring long-term NSAID therapy."
+            },
+            {
+              "stem": "Which of the following drugs is an irreversible inhibitor of cyclooxygenase (COX)?",
+              "options": [
+                "Ibuprofen",
+                "Indomethacin",
+                "Aspirin",
+                "Piroxicam"
+              ],
+              "answer": "Aspirin",
+              "explanation": "Aspirin irreversibly acetylates the COX enzyme, leading to prolonged inhibition of platelet thromboxane production and a lasting antiplatelet effect."
+            },
+            {
+              "stem": "A 50-year-old patient with a history of hypertension and chronic kidney disease presents with acute gout. Which of the following drugs is contraindicated for acute gout in this patient?",
+              "options": [
+                "Colchicine",
+                "Indomethacin",
+                "Allopurinol",
+                "Prednisone"
+              ],
+              "answer": "Indomethacin",
+              "explanation": "Indomethacin, a nonselective NSAID, is contraindicated in patients with chronic kidney disease due to its nephrotoxic potential. Colchicine, allopurinol (for chronic gout), and prednisone are safer alternatives."
+            },
+            {
+              "stem": "Which of the following prostaglandins is used clinically to maintain patency of the ductus arteriosus in neonates with congenital heart disease?",
+              "options": [
+                "Prostaglandin E1 (PGE1)",
+                "Prostaglandin E2 (PGE2)",
+                "Prostaglandin I2 (PGI2)",
+                "Thromboxane A2 (TXA2)"
+              ],
+              "answer": "Prostaglandin E1 (PGE1)",
+              "explanation": "PGE1 (alprostadil) is used to maintain ductal patency in neonates with ductal-dependent congenital heart lesions until surgical correction can be performed."
+            },
+            {
+              "stem": "A patient with a history of migraine is prescribed a drug that causes coronary vasospasm and is contraindicated in patients with ischemic heart disease. Which of the following drugs is responsible?",
+              "options": [
+                "Propranolol",
+                "Sumatriptan",
+                "Amitriptyline",
+                "Verapamil"
+              ],
+              "answer": "Sumatriptan",
+              "explanation": "Sumatriptan, a 5-HT1B/1D receptor agonist, can cause coronary vasospasm and is contraindicated in patients with ischemic heart disease or Prinzmetal angina."
+            },
+            {
+              "stem": "Which of the following adverse effects is most commonly associated with ergotamine use?",
+              "options": [
+                "Hypotension",
+                "Peripheral ischemia (ergotism)",
+                "Hyperglycemia",
+                "Tachycardia"
+              ],
+              "answer": "Peripheral ischemia (ergotism)",
+              "explanation": "Ergotamine, an ergot alkaloid used for migraine, can cause peripheral vasoconstriction leading to ischemia (ergotism), particularly in patients with peripheral vascular disease."
+            },
+            {
+              "stem": "A patient with a history of asthma is prescribed a drug that blocks leukotriene receptors. Which of the following drugs is most likely responsible?",
+              "options": [
+                "Zileuton",
+                "Montelukast",
+                "Zafirlukast",
+                "Omalizumab"
+              ],
+              "answer": "Montelukast",
+              "explanation": "Montelukast is a leukotriene receptor antagonist (LTRA) used for the prophylaxis and treatment of asthma by blocking the effects of cysteinyl leukotrienes."
+            },
+            {
+              "stem": "Which of the following drugs is a selective thromboxane synthase inhibitor used to reduce platelet aggregation?",
+              "options": [
+                "Aspirin",
+                "Clopidogrel",
+                "Picotamide",
+                "Ticlopidine"
+              ],
+              "answer": "Picotamide",
+              "explanation": "Picotamide is a selective thromboxane synthase inhibitor that reduces the synthesis of thromboxane A2, thereby inhibiting platelet aggregation."
+            },
+            {
+              "stem": "A patient with a history of allergic rhinitis and insomnia is prescribed a drug that provides both antihistaminic and sedative effects. Which of the following drugs is most appropriate?",
+              "options": [
+                "Fexofenadine",
+                "Loratadine",
+                "Diphenhydramine",
+                "Cetirizine"
+              ],
+              "answer": "Diphenhydramine",
+              "explanation": "Diphenhydramine is a first-generation H1 antihistamine with strong sedative properties due to its ability to cross the blood-brain barrier, making it useful for both allergic rhinitis and insomnia."
+            },
+            {
+              "stem": "Which of the following drugs is a 5-HT1B/1D receptor agonist used for the acute treatment of migraine?",
+              "options": [
+                "Propranolol",
+                "Sumatriptan",
+                "Methysergide",
+                "Cyproheptadine"
+              ],
+              "answer": "Sumatriptan",
+              "explanation": "Sumatriptan is a 5-HT1B/1D receptor agonist used for the acute treatment of migraine by constricting dilated cranial blood vessels and inhibiting neurogenic inflammation."
+            },
+            {
+              "stem": "A patient with a history of hypertension and chronic obstructive pulmonary disease (COPD) is prescribed a drug for migraine prophylaxis that may worsen bronchospasm. Which of the following drugs is most likely responsible?",
+              "options": [
+                "Propranolol",
+                "Amitriptyline",
+                "Verapamil",
+                "Methysergide"
+              ],
+              "answer": "Propranolol",
+              "explanation": "Propranolol, a nonselective beta-blocker, can exacerbate bronchospasm in patients with COPD and is contraindicated in such patients."
+            },
+            {
+              "stem": "Which of the following drugs is a leukotriene receptor antagonist used for the prophylaxis of asthma?",
+              "options": [
+                "Zileuton",
+                "Montelukast",
+                "Prednisone",
+                "Theophylline"
+              ],
+              "answer": "Montelukast",
+              "explanation": "Montelukast is a leukotriene receptor antagonist (LTRA) used for the prophylaxis and chronic treatment of asthma by blocking the effects of cysteinyl leukotrienes."
+            },
+            {
+              "stem": "A patient with a history of peptic ulcer disease is prescribed a drug that inhibits gastric acid secretion by blocking H2 receptors. Which of the following drugs is responsible?",
+              "options": [
+                "Omeprazole",
+                "Ranitidine",
+                "Misoprostol",
+                "Sucralfate"
+              ],
+              "answer": "Ranitidine",
+              "explanation": "Ranitidine is an H2 receptor antagonist that reduces gastric acid secretion by blocking histamine H2 receptors on parietal cells, making it useful for peptic ulcer disease."
+            },
+            {
+              "stem": "Which of the following drugs is a selective COX-2 inhibitor that does not inhibit platelet aggregation?",
+              "options": [
+                "Ibuprofen",
+                "Naproxen",
+                "Celecoxib",
+                "Aspirin"
+              ],
+              "answer": "Celecoxib",
+              "explanation": "Celecoxib is a selective COX-2 inhibitor that spares COX-1 in platelets, thereby not inhibiting platelet aggregation, unlike nonselective NSAIDs like ibuprofen, naproxen, and aspirin."
+            },
+            {
+              "stem": "A patient with a history of motion sickness is prescribed a drug that blocks muscarinic receptors in the vestibular system. Which of the following drugs is most appropriate?",
+              "options": [
+                "Dimenhydrinate",
+                "Meclizine",
+                "Scopolamine",
+                "Diphenhydramine"
+              ],
+              "answer": "Scopolamine",
+              "explanation": "Scopolamine, a muscarinic receptor antagonist, is highly effective for motion sickness by blocking cholinergic transmission in the vestibular system."
+            },
+            {
+              "stem": "Which of the following drugs is a 5-HT3 receptor antagonist used for the prevention of chemotherapy-induced nausea and vomiting?",
+              "options": [
+                "Metoclopramide",
+                "Ondansetron",
+                "Aprepitant",
+                "Dexamethasone"
+              ],
+              "answer": "Ondansetron",
+              "explanation": "Ondansetron is a selective 5-HT3 receptor antagonist used for the prevention and treatment of chemotherapy-induced nausea and vomiting."
+            },
+            {
+              "stem": "A patient with a history of allergic rhinitis is prescribed a drug that blocks both H1 and 5-HT2 receptors. Which of the following drugs is responsible?",
+              "options": [
+                "Diphenhydramine",
+                "Cyproheptadine",
+                "Loratadine",
+                "Fexofenadine"
+              ],
+              "answer": "Cyproheptadine",
+              "explanation": "Cyproheptadine is an H1 antihistamine with additional 5-HT2 receptor antagonism, making it useful for conditions like allergic rhinitis and carcinoid syndrome."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "a) Outline the metabolic pathways of arachidonic acid leading to the synthesis of leukotrienes and prostaglandins. (3 marks)\nb) Explain why leukotriene receptor antagonists are preferred over leukotriene synthesis inhibitors for the prophylaxis of asthma in clinical practice. (2 marks)",
+              "modelAnswer": "a) Metabolic pathways of arachidonic acid:\n• Arachidonic acid is released from membrane phospholipids by phospholipase A2 (PLA2).\n• Cyclooxygenase (COX) pathway: Arachidonic acid is converted by COX-1/COX-2 to prostaglandin G2 (PGG2) and then to prostaglandin H2 (PGH2), which serves as a substrate for the synthesis of thromboxane A2 (TXA2), prostaglandins (PGE2, PGF2α, PGI2), and prostacyclin.\n• Lipoxygenase (LOX) pathway: Arachidonic acid is converted by 5-lipoxygenase (5-LOX) to 5-hydroperoxyeicosatetraenoic acid (5-HPETE), which is further metabolized to leukotriene A4 (LTA4). LTA4 is then converted to leukotriene B4 (LTB4) or to cysteinyl leukotrienes (LTC4, LTD4, LTE4).\n\nb) Leukotriene receptor antagonists (e.g., montelukast, zafirlukast) are preferred over leukotriene synthesis inhibitors (e.g., zileuton) for asthma prophylaxis because:\n• They are orally active and have a longer duration of action, allowing once-daily dosing.\n• They have a more favorable safety profile with fewer drug interactions and less risk of hepatotoxicity compared to zileuton, which requires liver function monitoring."
+            },
+            {
+              "stem": "a) Describe the mechanism of action of ergotamine in the treatment of acute migraine. (2 marks)\nb) Explain why ergotamine is contraindicated in patients with peripheral vascular disease. (2 marks)",
+              "modelAnswer": "a) Mechanism of action of ergotamine in acute migraine:\n• Ergotamine is a partial agonist at 5-HT1B and 5-HT1D receptors.\n• Activation of 5-HT1B receptors on cranial blood vessels causes vasoconstriction of dilated extracerebral vessels, reducing neurogenic inflammation and pain.\n• Activation of 5-HT1D receptors on trigeminal nerve endings inhibits the release of pro-inflammatory neuropeptides such as calcitonin gene-related peptide (CGRP).\n\nb) Ergotamine is contraindicated in peripheral vascular disease because:\n• Ergotamine is a potent vasoconstrictor that can exacerbate peripheral ischemia by reducing blood flow to already compromised extremities.\n• Its α-adrenergic and 5-HT receptor agonism further constricts peripheral blood vessels, increasing the risk of tissue necrosis and gangrene."
+            },
+            {
+              "stem": "A 45-year-old patient with a history of hypertension and type 2 diabetes presents with acute gout. The physician prescribes colchicine for symptom relief.\na) Explain the mechanism of action of colchicine in acute gout. (2 marks)\nb) Outline two adverse effects of colchicine and their management. (3 marks)",
+              "modelAnswer": "a) Mechanism of action of colchicine in acute gout:\n• Colchicine binds to tubulin, inhibiting its polymerization into microtubules.\n• This disrupts cytoskeletal function in neutrophils, preventing their migration to the site of inflammation (e.g., joint).\n• It also inhibits the release of pro-inflammatory cytokines such as interleukin-1β (IL-1β) and leukotriene B4 (LTB4), reducing inflammation and pain.\n\nb) Adverse effects of colchicine and their management:\n1. Gastrointestinal toxicity (nausea, vomiting, diarrhea):\n   • Occurs in up to 80% of patients at therapeutic doses.\n   • Management: Reduce the dose or discontinue the drug; supportive care with antiemetics and hydration.\n2. Myelosuppression (neutropenia, thrombocytopenia):\n   • Rare but serious; dose-related and reversible upon discontinuation.\n   • Management: Monitor complete blood count (CBC) regularly; discontinue colchicine if significant myelosuppression occurs."
+            },
+            {
+              "stem": "a) Compare and contrast the pharmacology of first-generation and second-generation H1 antihistamines. (3 marks)\nb) Provide two clinical scenarios where first-generation H1 antihistamines are preferred over second-generation agents. (2 marks)",
+              "modelAnswer": "a) Comparison of first-generation and second-generation H1 antihistamines:\n• First-generation H1 antihistamines (e.g., diphenhydramine, promethazine) readily cross the blood-brain barrier, causing sedation and anticholinergic effects (e.g., dry mouth, blurred vision, urinary retention).\n• Second-generation H1 antihistamines (e.g., loratadine, cetirizine, fexofenadine) have minimal penetration of the blood-brain barrier, resulting in reduced sedation and anticholinergic effects.\n• First-generation agents have a shorter duration of action and require multiple daily dosing, while second-generation agents often have longer durations of action (once-daily dosing).\n\nb) Clinical scenarios where first-generation H1 antihistamines are preferred:\n1. Insomnia: First-generation H1 antihistamines (e.g., diphenhydramine) are used as over-the-counter sleep aids due to their sedative properties.\n2. Motion sickness: First-generation agents with strong anticholinergic effects (e.g., dimenhydrinate, meclizine) are effective for preventing motion sickness."
+            },
+            {
+              "stem": "a) Describe the role of prostaglandins in the regulation of renal function. (3 marks)\nb) Explain why nonselective NSAIDs can exacerbate chronic kidney disease. (2 marks)",
+              "modelAnswer": "a) Role of prostaglandins in renal function:\n• Prostaglandins (e.g., PGE2, PGI2) are synthesized in the kidney and play a key role in maintaining renal blood flow and glomerular filtration rate (GFR).\n• PGE2 and PGI2 vasodilate afferent arterioles, counteracting the vasoconstrictive effects of angiotensin II and norepinephrine.\n• Prostaglandins also regulate sodium and water reabsorption in the renal tubules and modulate renin release from the juxtaglomerular apparatus.\n\nb) Why nonselective NSAIDs exacerbate chronic kidney disease:\n• Nonselective NSAIDs inhibit both COX-1 and COX-2, reducing the synthesis of vasodilatory prostaglandins (PGE2, PGI2).\n• This leads to unopposed vasoconstriction of afferent arterioles, reducing renal blood flow and GFR.\n• In patients with chronic kidney disease, this can precipitate acute kidney injury or accelerate the progression of renal impairment."
+            },
+            {
+              "stem": "A 30-year-old patient with a history of severe allergic rhinitis is prescribed a drug that blocks both H1 and 5-HT2 receptors.\na) Identify the drug and explain its mechanism of action. (2 marks)\nb) Outline two additional clinical uses of this drug. (2 marks)",
+              "modelAnswer": "a) Drug: Cyproheptadine.\nMechanism of action:\n• Cyproheptadine is an H1 antihistamine with additional 5-HT2 receptor antagonism.\n• It blocks H1 receptors, reducing histamine-mediated symptoms such as sneezing, rhinorrhea, and itching.\n• It also blocks 5-HT2 receptors in the hypothalamus, reducing serotonergic satiety signaling and increasing appetite.\n\nb) Additional clinical uses of cyproheptadine:\n1. Appetite stimulation: Used in patients with cachexia or poor appetite (e.g., cancer, HIV/AIDS).\n2. Treatment of carcinoid syndrome: Effective in controlling diarrhea and flushing associated with excess serotonin secretion."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 55-year-old patient with a history of hypertension, type 2 diabetes, and chronic kidney disease (eGFR 35 mL/min/1.73 m²) presents with severe pain following a motor vehicle accident. The patient requires opioid analgesia for pain management.\n\n(15 marks)\na) Identify the most appropriate opioid for this patient and justify your choice. (3 marks)\nb) Outline the mechanism of action of the opioid you identified. (3 marks)\nc) Discuss three other clinical applications of opioids besides analgesia. (3 marks)\nd) Describe three adverse effects of opioids and their management. (3 marks)\ne) List three contraindications to opioid use in this patient. (3 marks)",
+              "modelAnswer": "a) Most appropriate opioid: Fentanyl.\nJustification:\n• Fentanyl is metabolized primarily by the liver and does not produce active renally-excreted metabolites, making it safe for use in patients with chronic kidney disease without dose adjustment.\n• It is available in multiple formulations (transdermal patch, intravenous, oral transmucosal) for flexible dosing.\n• Fentanyl has a rapid onset and short duration of action, making it suitable for acute pain management.\n\nb) Mechanism of action of fentanyl:\n• Fentanyl is a synthetic opioid that acts as a selective μ-opioid receptor agonist.\n• μ receptors are G protein-coupled receptors (Gi/Go) that, when activated, inhibit adenylyl cyclase, reducing intracellular cyclic AMP (cAMP) levels.\n• This leads to the opening of potassium channels (hyperpolarization of the cell membrane) and inhibition of voltage-gated calcium channels, reducing neurotransmitter release (e.g., substance P, glutamate) in pain pathways.\n• The net effect is inhibition of pain transmission in the spinal cord and activation of descending inhibitory pain pathways in the brain.\n\nc) Other clinical applications of opioids:\n1. Anesthesia: Opioids (e.g., fentanyl, morphine) are used as adjuncts to general anesthesia to provide analgesia and reduce the required doses of inhaled anesthetics.\n2. Cough suppression: Opioids such as codeine and dextromethorphan suppress the cough reflex by acting on the medullary cough center.\n3. Diarrhea: Opioids such as loperamide act on μ receptors in the gastrointestinal tract to reduce motility and fluid secretion, providing symptomatic relief in diarrhea.\n\n\nd) Adverse effects of opioids and their management:\n1. Respiratory depression:\n   • Mechanism: Opioids depress the respiratory center in the medulla, reducing the sensitivity to carbon dioxide.\n   • Management: Monitor respiratory rate and oxygen saturation; administer naloxone (opioid antagonist) if severe respiratory depression occurs.\n2. Constipation:\n   • Mechanism: Opioids reduce gastrointestinal motility by acting on μ receptors in the gut.\n   • Management: Use prophylactic laxatives (e.g., senna, polyethylene glycol); encourage fluid intake and dietary fiber.\n3. Nausea and vomiting:\n   • Mechanism: Opioids stimulate the chemoreceptor trigger zone (CTZ) in the medulla.\n   • Management: Administer antiemetics (e.g., metoclopramide, ondansetron); consider switching to a different opioid if symptoms persist.\n\n\ne) Contraindications to opioid use in this patient:\n1. Severe respiratory insufficiency: Opioids can exacerbate respiratory depression in patients with compromised lung function.\n2. Bowel obstruction: Opioids reduce gastrointestinal motility and can worsen bowel obstruction.\n3. History of opioid abuse or addiction: Increased risk of misuse or diversion in patients with a history of substance abuse."
+            },
+            {
+              "stem": "A 40-year-old patient with a history of migraine headaches is prescribed a drug for prophylaxis. After several months of therapy, the patient develops progressive dyspnea, chest pain, and peripheral edema. Investigations reveal pleural and pericardial effusions, as well as aortic valve regurgitation on echocardiography.\n\n(15 marks)\na) Identify the most likely drug responsible for these adverse effects and explain the mechanism of fibrosis. (4 marks)\nb) Outline the mechanism of action of this drug in migraine prophylaxis. (3 marks)\nc) Describe three other adverse effects of this drug. (3 marks)\nd) List three contraindications to the use of this drug. (3 marks)\ne) Discuss the monitoring required for patients on long-term therapy with this drug. (2 marks)",
+              "modelAnswer": "a) Most likely drug: Methysergide.\nMechanism of fibrosis:\n• Methysergide is an ergot alkaloid and 5-HT2 receptor antagonist used for migraine prophylaxis.\n• Long-term use of methysergide is associated with fibrotic complications, including retroperitoneal fibrosis, pleuropulmonary fibrosis, and cardiac valvular fibrosis.\n• The mechanism involves excessive stimulation of 5-HT2B receptors on fibroblasts, leading to abnormal collagen deposition and fibrosis in affected tissues.\n\nb) Mechanism of action of methysergide in migraine prophylaxis:\n• Methysergide is a partial agonist/antagonist at 5-HT2 receptors, particularly 5-HT2B and 5-HT2D subtypes.\n• It inhibits the vasodilatory and pro-inflammatory effects of serotonin, reducing the frequency and severity of migraine attacks.\n• It may also inhibit neurogenic inflammation by blocking the release of pro-inflammatory neuropeptides such as calcitonin gene-related peptide (CGRP).\n\nc) Other adverse effects of methysergide:\n1. Nausea, vomiting, and abdominal pain: Due to stimulation of gastrointestinal 5-HT receptors.\n2. Dizziness, drowsiness, and hallucinations: Central nervous system effects due to 5-HT receptor antagonism.\n3. Peripheral vasoconstriction (ergotism): Cold extremities, claudication, and ischemia due to α-adrenergic agonism.\n\n\nd) Contraindications to methysergide:\n1. Pregnancy and lactation: Risk of fetal harm and unknown effects on breast milk.\n2. Peripheral vascular disease: Increased risk of ischemia due to vasoconstriction.\n3. Coronary artery disease: Risk of vasospasm and myocardial ischemia.\n\n\ne) Monitoring required for patients on long-term methysergide therapy:\n• Regular clinical assessment for signs of fibrosis (e.g., dyspnea, chest pain, peripheral edema).\n• Chest X-ray and echocardiography every 6–12 months to monitor for pleuropulmonary and cardiac valvular fibrosis.\n• Periodic drug-free holidays (e.g., 1 month every 6 months) to reduce the risk of fibrosis."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

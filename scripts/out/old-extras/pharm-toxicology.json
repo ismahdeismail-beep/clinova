@@ -1,0 +1,782 @@
+{
+  "pharm-toxicology": {
+    "2": {
+      "title": "Toxicology & Drug Discovery",
+      "variant": 2,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 34-year-old farmer in Nakuru presents with acute onset of blurred vision, nausea, vomiting, and muscle fasciculations after accidental exposure to an insecticide spray. Which class of insecticide is most likely responsible for these symptoms?",
+              "options": [
+                "Pyrethroids",
+                "Organophosphates",
+                "Neonicotinoids",
+                "Carbamates"
+              ],
+              "answer": "Organophosphates",
+              "explanation": "Organophosphates inhibit acetylcholinesterase, leading to accumulation of acetylcholine and cholinergic crisis (muscle fasciculations, blurred vision, nausea, vomiting). Pyrethroids cause tremors and paresthesia; neonicotinoids are nicotinic agonists causing tremor and paralysis; carbamates also inhibit acetylcholinesterase but with reversible inhibition."
+            },
+            {
+              "stem": "A 5-year-old child is brought to the emergency department with severe abdominal pain, vomiting, and bloody diarrhea 2 hours after ingesting bright red tablets found in a medicine cabinet. The child is lethargic and pale. Which of the following is the most likely ingested agent?",
+              "options": [
+                "Paracetamol",
+                "Aspirin",
+                "Iron",
+                "Diphenhydramine"
+              ],
+              "answer": "Iron",
+              "explanation": "Iron poisoning in children causes severe gastrointestinal symptoms (vomiting, hematemesis, bloody diarrhea), abdominal pain, and lethargy within 1-6 hours. Paracetamol and diphenhydramine do not cause bloody diarrhea; aspirin causes metabolic acidosis but not typically bloody diarrhea."
+            },
+            {
+              "stem": "A patient presents with confusion, cherry-red skin, and metabolic acidosis after inhaling smoke from a burning plastic container. Which antidote should be administered immediately?",
+              "options": [
+                "Sodium nitrite",
+                "Hydroxocobalamin",
+                "N-acetylcysteine",
+                "Atropine"
+              ],
+              "answer": "Hydroxocobalamin",
+              "explanation": "Cherry-red skin and metabolic acidosis after smoke inhalation indicate cyanide poisoning. Hydroxocobalamin is the preferred antidote as it directly binds cyanide to form cyanocobalamin. Sodium nitrite is an alternative but less preferred due to methemoglobinemia risk."
+            },
+            {
+              "stem": "A 28-year-old male is admitted with severe headache, dizziness, and visual disturbances after consuming homemade brew ('chang'aa'). Which toxic alcohol is most likely responsible?",
+              "options": [
+                "Ethanol",
+                "Methanol",
+                "Ethylene glycol",
+                "Isopropanol"
+              ],
+              "answer": "Methanol",
+              "explanation": "Methanol poisoning causes severe headache, dizziness, visual disturbances (blurred vision, 'snowstorm' vision), and metabolic acidosis. Ethanol causes CNS depression without visual symptoms; ethylene glycol causes renal failure; isopropanol causes ketosis without acidosis."
+            },
+            {
+              "stem": "A 45-year-old woman is treated with deferoxamine for iron overload secondary to multiple blood transfusions. Which adverse effect is most commonly associated with deferoxamine therapy?",
+              "options": [
+                "Hypotension",
+                "Ototoxicity",
+                "Nephrotoxicity",
+                "Hypocalcemia"
+              ],
+              "answer": "Hypotension",
+              "explanation": "Deferoxamine can cause rapid infusion-related hypotension due to histamine release and vasodilation. Ototoxicity and nephrotoxicity are less common; hypocalcemia is not a typical adverse effect."
+            },
+            {
+              "stem": "A 60-year-old male presents with severe respiratory distress, cyanosis, and metabolic acidosis after accidental ingestion of a rodenticide. Which antidote is indicated?",
+              "options": [
+                "Atropine",
+                "Pralidoxime",
+                "Vitamin K",
+                "Sodium nitrite"
+              ],
+              "answer": "Vitamin K",
+              "explanation": "The rodenticide is likely warfarin or a superwarfarin (long-acting anticoagulant rodenticide). Vitamin K is the antidote to reverse anticoagulation. Atropine and pralidoxime are for organophosphate poisoning; sodium nitrite is for cyanide poisoning."
+            },
+            {
+              "stem": "A 30-year-old patient is admitted with acute lead poisoning after occupational exposure. Which chelating agent is preferred for severe lead encephalopathy?",
+              "options": [
+                "Succimer",
+                "Dimercaprol",
+                "Calcium disodium EDTA",
+                "Penicillamine"
+              ],
+              "answer": "Calcium disodium EDTA",
+              "explanation": "For severe lead poisoning with encephalopathy, calcium disodium EDTA (with dimercaprol) is given parenterally immediately to rapidly reduce lead levels. Succimer is oral and used for less severe cases; dimercaprol and penicillamine are less effective for acute encephalopathy."
+            },
+            {
+              "stem": "A 22-year-old female presents with tinnitus, nausea, vomiting, and hyperventilation after ingesting a large number of aspirin tablets. Which laboratory finding is most likely?",
+              "options": [
+                "Metabolic acidosis",
+                "Metabolic alkalosis",
+                "Respiratory acidosis",
+                "Respiratory alkalosis"
+              ],
+              "answer": "Metabolic acidosis",
+              "explanation": "Salicylate (aspirin) overdose causes a mixed respiratory alkalosis (hyperventilation) and metabolic acidosis (lactic acidosis, salicylate accumulation). The metabolic acidosis predominates in severe cases."
+            },
+            {
+              "stem": "A 40-year-old male is treated with fomepizole for ethylene glycol poisoning. Which enzyme does fomepizole inhibit?",
+              "options": [
+                "Alcohol dehydrogenase",
+                "Aldehyde dehydrogenase",
+                "Xanthine oxidase",
+                "Cytochrome P450 2E1"
+              ],
+              "answer": "Alcohol dehydrogenase",
+              "explanation": "Fomepizole inhibits alcohol dehydrogenase, preventing the metabolism of ethylene glycol to toxic metabolites (glycolic acid, oxalate). This reduces formation of toxic metabolites and allows renal excretion of ethylene glycol."
+            },
+            {
+              "stem": "A 50-year-old patient with chronic alcohol use disorder presents with confusion, ataxia, and ophthalmoplegia. Which vitamin deficiency is most likely?",
+              "options": [
+                "Vitamin B1 (thiamine)",
+                "Vitamin B6 (pyridoxine)",
+                "Vitamin B12 (cobalamin)",
+                "Vitamin C"
+              ],
+              "answer": "Vitamin B1 (thiamine)",
+              "explanation": "Wernicke-Korsakoff syndrome is caused by thiamine (vitamin B1) deficiency, commonly in chronic alcohol use disorder. It presents with confusion, ataxia, and ophthalmoplegia (classic triad). B6, B12, and vitamin C deficiencies do not cause this syndrome."
+            },
+            {
+              "stem": "A 35-year-old female is admitted with severe nausea, vomiting, and diarrhea after ingesting a traditional herbal remedy. Which of the following is the most appropriate initial management step?",
+              "options": [
+                "Administer activated charcoal",
+                "Administer ipecac syrup",
+                "Administer atropine",
+                "Administer N-acetylcysteine"
+              ],
+              "answer": "Administer activated charcoal",
+              "explanation": "Activated charcoal is the initial management for most acute oral poisonings within 1 hour of ingestion to reduce absorption. Ipecac syrup is no longer recommended due to risks; atropine is for cholinergic toxicity; N-acetylcysteine is for paracetamol poisoning."
+            },
+            {
+              "stem": "A 65-year-old male presents with acute kidney injury, hemolysis, and dark urine after ingesting a traditional herbal remedy. Which heavy metal is most likely responsible?",
+              "options": [
+                "Lead",
+                "Mercury",
+                "Arsenic",
+                "Copper"
+              ],
+              "answer": "Arsenic",
+              "explanation": "Arsenic poisoning causes hemolysis, hemoglobinuria (dark urine), acute kidney injury, and gastrointestinal symptoms. Lead causes neuropathy and anemia but not hemolysis; mercury causes nephrotoxicity and neurotoxicity; copper causes hemolysis in Wilson's disease but not typically acute poisoning."
+            },
+            {
+              "stem": "A 20-year-old male is admitted with severe agitation, tachycardia, and hallucinations after ingesting a recreational drug. Which antidote is indicated if the drug is suspected to be MDMA (ecstasy)?",
+              "options": [
+                "Flumazenil",
+                "Naloxone",
+                "Benzodiazepines",
+                "Atropine"
+              ],
+              "answer": "Benzodiazepines",
+              "explanation": "MDMA (ecstasy) causes serotonin syndrome-like symptoms (agitation, tachycardia, hallucinations, hyperthermia). Benzodiazepines are the first-line treatment for agitation and hyperthermia. Flumazenil is for benzodiazepine reversal; naloxone is for opioid overdose; atropine is for bradycardia."
+            },
+            {
+              "stem": "A 45-year-old female presents with severe abdominal pain, constipation, and confusion after chronic ingestion of a traditional remedy containing lead. Which laboratory finding is most specific for lead toxicity?",
+              "options": [
+                "Elevated serum iron",
+                "Elevated serum lead level",
+                "Elevated serum copper",
+                "Elevated serum zinc"
+              ],
+              "answer": "Elevated serum lead level",
+              "explanation": "The most specific laboratory finding for lead toxicity is an elevated serum lead level. Other findings (e.g., basophilic stippling, elevated zinc protoporphyrin) are supportive but not specific."
+            },
+            {
+              "stem": "A 30-year-old male is treated with pralidoxime for organophosphate poisoning. Which of the following is the mechanism of action of pralidoxime?",
+              "options": [
+                "Muscarinic receptor antagonist",
+                "Cholinesterase reactivator",
+                "Nicotinic receptor antagonist",
+                "GABA receptor agonist"
+              ],
+              "answer": "Cholinesterase reactivator",
+              "explanation": "Pralidoxime reactivates phosphorylated acetylcholinesterase by removing the organophosphate moiety, restoring normal cholinesterase activity. It does not block muscarinic or nicotinic receptors; it is not a GABA receptor agonist."
+            },
+            {
+              "stem": "A 55-year-old patient presents with severe lactic acidosis, tachypnea, and altered mental status after ingesting a large number of metformin tablets. Which antidote is indicated?",
+              "options": [
+                "Sodium bicarbonate",
+                "N-acetylcysteine",
+                "Fomepizole",
+                "Hemodialysis"
+              ],
+              "answer": "Hemodialysis",
+              "explanation": "Metformin-associated lactic acidosis (MALA) requires hemodialysis to remove metformin and correct acidosis. Sodium bicarbonate may be used for acidosis but does not remove metformin; N-acetylcysteine and fomepizole are not indicated."
+            },
+            {
+              "stem": "A 25-year-old female is admitted with severe agitation, hypertension, and hyperthermia after ingesting cocaine. Which antidote is indicated for severe hypertension?",
+              "options": [
+                "Labetalol",
+                "Naloxone",
+                "Flumazenil",
+                "Atropine"
+              ],
+              "answer": "Labetalol",
+              "explanation": "Cocaine toxicity causes severe hypertension and tachycardia due to catecholamine excess. Labetalol (a combined alpha/beta blocker) is preferred for severe hypertension in cocaine toxicity. Naloxone is for opioid overdose; flumazenil is for benzodiazepine reversal; atropine is for bradycardia."
+            },
+            {
+              "stem": "A 40-year-old male presents with acute kidney injury, hematuria, and hypertension after ingesting a traditional herbal remedy. Which heavy metal is most likely responsible?",
+              "options": [
+                "Lead",
+                "Mercury",
+                "Arsenic",
+                "Cadmium"
+              ],
+              "answer": "Mercury",
+              "explanation": "Mercury poisoning causes acute kidney injury, hematuria, proteinuria, and hypertension. Lead causes neuropathy and anemia; arsenic causes hemolysis and GI symptoms; cadmium causes proximal tubular dysfunction and osteomalacia."
+            },
+            {
+              "stem": "A 35-year-old female is treated with N-acetylcysteine for paracetamol overdose. Which of the following is the primary mechanism of action of N-acetylcysteine?",
+              "options": [
+                "Direct binding of paracetamol",
+                "Replenishment of glutathione stores",
+                "Inhibition of paracetamol metabolism",
+                "Enhancement of renal excretion"
+              ],
+              "answer": "Replenishment of glutathione stores",
+              "explanation": "N-acetylcysteine acts as a glutathione precursor and replenishes hepatic glutathione stores, which detoxify NAPQI (the toxic metabolite of paracetamol). It does not directly bind paracetamol, inhibit its metabolism, or enhance renal excretion."
+            },
+            {
+              "stem": "A 50-year-old male presents with severe headache, nausea, and confusion after inhaling carbon monoxide from a faulty generator. Which treatment is most appropriate?",
+              "options": [
+                "100% oxygen via non-rebreather mask",
+                "Hyperbaric oxygen therapy",
+                "N-acetylcysteine",
+                "Sodium nitrite"
+              ],
+              "answer": "100% oxygen via non-rebreather mask",
+              "explanation": "Carbon monoxide poisoning is treated with high-flow 100% oxygen to displace CO from hemoglobin. Hyperbaric oxygen is reserved for severe cases (e.g., pregnancy, severe acidosis, neurologic symptoms). N-acetylcysteine and sodium nitrite are not indicated."
+            },
+            {
+              "stem": "A 28-year-old female presents with severe vomiting, diarrhea, and abdominal cramps after ingesting a traditional remedy. Which of the following is the most likely active ingredient responsible for these symptoms?",
+              "options": [
+                "Arsenic",
+                "Mercury",
+                "Lead",
+                "Iron"
+              ],
+              "answer": "Arsenic",
+              "explanation": "Arsenic poisoning causes severe gastrointestinal symptoms (vomiting, diarrhea, abdominal cramps), garlic-like breath odor, and shock. Mercury causes neurotoxicity and nephrotoxicity; lead causes neuropathy and anemia; iron causes GI bleeding and metabolic acidosis."
+            },
+            {
+              "stem": "A 45-year-old male is admitted with severe agitation, hallucinations, and tachycardia after ingesting a recreational drug. Which antidote is indicated if the drug is suspected to be LSD?",
+              "options": [
+                "Benzodiazepines",
+                "Haloperidol",
+                "Flumazenil",
+                "Naloxone"
+              ],
+              "answer": "Benzodiazepines",
+              "explanation": "LSD toxicity causes severe agitation, hallucinations, and sympathomimetic symptoms. Benzodiazepines are the first-line treatment for agitation and anxiety. Haloperidol may be used for severe agitation but is not first-line; flumazenil is for benzodiazepine reversal; naloxone is for opioid overdose."
+            },
+            {
+              "stem": "A 30-year-old female presents with severe nausea, vomiting, and diarrhea after ingesting a traditional herbal remedy. Which laboratory finding is most specific for heavy metal poisoning?",
+              "options": [
+                "Elevated serum iron",
+                "Elevated serum lead level",
+                "Elevated serum copper",
+                "Elevated serum zinc"
+              ],
+              "answer": "Elevated serum lead level",
+              "explanation": "Elevated serum lead level is specific for lead poisoning. Other heavy metals (e.g., arsenic, mercury) require specific testing (e.g., urine arsenic, blood mercury). Serum iron, copper, and zinc are not specific for heavy metal poisoning."
+            },
+            {
+              "stem": "A 55-year-old male presents with severe respiratory distress and metabolic acidosis after inhaling hydrogen sulfide gas from a sewage tank. Which antidote is indicated?",
+              "options": [
+                "Sodium nitrite",
+                "Hydroxocobalamin",
+                "N-acetylcysteine",
+                "Amyl nitrite"
+              ],
+              "answer": "Hydroxocobalamin",
+              "explanation": "Hydrogen sulfide poisoning causes severe hypoxia and metabolic acidosis. Hydroxocobalamin binds hydrogen sulfide to form sulfocobalamin, reducing toxicity. Sodium nitrite and amyl nitrite induce methemoglobinemia to bind cyanide/hydrogen sulfide but are less effective; N-acetylcysteine is not indicated."
+            },
+            {
+              "stem": "A 22-year-old female is admitted with severe agitation, hypertension, and hyperthermia after ingesting a large number of amphetamine tablets. Which antidote is indicated for severe hypertension?",
+              "options": [
+                "Labetalol",
+                "Nitroprusside",
+                "Hydralazine",
+                "Clonidine"
+              ],
+              "answer": "Labetalol",
+              "explanation": "Amphetamine toxicity causes severe hypertension and tachycardia due to catecholamine excess. Labetalol (a combined alpha/beta blocker) is preferred for severe hypertension. Nitroprusside and hydralazine are vasodilators but may cause reflex tachycardia; clonidine is not first-line."
+            },
+            {
+              "stem": "A 40-year-old male presents with severe abdominal pain, constipation, and confusion after chronic ingestion of a traditional remedy. Which laboratory finding is most specific for lead toxicity?",
+              "options": [
+                "Elevated serum iron",
+                "Elevated serum lead level",
+                "Elevated serum copper",
+                "Elevated serum zinc"
+              ],
+              "answer": "Elevated serum lead level",
+              "explanation": "Elevated serum lead level is the most specific laboratory finding for lead toxicity. Other findings (e.g., basophilic stippling, elevated zinc protoporphyrin) are supportive but not specific."
+            },
+            {
+              "stem": "A 35-year-old female is treated with dimercaprol for acute arsenic poisoning. Which of the following is the primary mechanism of action of dimercaprol?",
+              "options": [
+                "Chelation of arsenic",
+                "Inhibition of arsenic absorption",
+                "Enhancement of arsenic excretion",
+                "Neutralization of arsenic toxicity"
+              ],
+              "answer": "Chelation of arsenic",
+              "explanation": "Dimercaprol (British Anti-Lewisite, BAL) chelates arsenic by forming a stable complex, facilitating urinary excretion. It does not inhibit absorption, enhance excretion directly, or neutralize arsenic toxicity."
+            },
+            {
+              "stem": "A 50-year-old male presents with severe headache, dizziness, and visual disturbances after ingesting homemade brew. Which toxic alcohol is most likely responsible?",
+              "options": [
+                "Ethanol",
+                "Methanol",
+                "Ethylene glycol",
+                "Isopropanol"
+              ],
+              "answer": "Methanol",
+              "explanation": "Methanol poisoning causes severe headache, dizziness, visual disturbances (blurred vision, 'snowstorm' vision), and metabolic acidosis. Ethanol causes CNS depression without visual symptoms; ethylene glycol causes renal failure; isopropanol causes ketosis without acidosis."
+            },
+            {
+              "stem": "A 28-year-old farmer presents with severe cholinergic symptoms (salivation, lacrimation, urination, diarrhea, miosis) after accidental exposure to an insecticide. Which antidote combination is indicated?",
+              "options": [
+                "Atropine and pralidoxime",
+                "Naloxone and flumazenil",
+                "Benzodiazepines and oxygen",
+                "Hydroxocobalamin and sodium nitrite"
+              ],
+              "answer": "Atropine and pralidoxime",
+              "explanation": "Organophosphate poisoning causes cholinergic crisis (SLUDGE symptoms). Atropine blocks muscarinic receptors, and pralidoxime reactivates acetylcholinesterase. Naloxone/flumazenil are for opioid/benzodiazepine overdose; benzodiazepines are for agitation; hydroxocobalamin/sodium nitrite are for cyanide poisoning."
+            },
+            {
+              "stem": "A 45-year-old female presents with severe nausea, vomiting, and metabolic acidosis after ingesting a large number of aspirin tablets. Which treatment is most appropriate?",
+              "options": [
+                "Sodium bicarbonate infusion",
+                "N-acetylcysteine",
+                "Fomepizole",
+                "Hemodialysis"
+              ],
+              "answer": "Sodium bicarbonate infusion",
+              "explanation": "Salicylate overdose causes metabolic acidosis and requires sodium bicarbonate infusion to alkalinize urine, enhance salicylate excretion, and correct acidosis. N-acetylcysteine is for paracetamol; fomepizole is for toxic alcohols; hemodialysis is for severe cases."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "Describe five key stages in the drug discovery and development pipeline, from target identification to post-marketing surveillance. (5 marks)",
+              "modelAnswer": "FIVE KEY STAGES IN DRUG DISCOVERY AND DEVELOPMENT (5 marks):\n1. TARGET IDENTIFICATION: Identification of a biological target (e.g., enzyme, receptor, pathway) linked to a disease using genomics, proteomics, or bioinformatics.\n2. TARGET VALIDATION: Confirmation that modulating the target will produce a therapeutic effect (e.g., knockout/knockdown studies, animal models).\n3. LEAD DISCOVERY: Identification of lead compounds (e.g., via high-throughput screening, virtual screening, or natural product screening) that interact with the target.\n4. LEAD OPTIMIZATION: Modification of lead compounds to improve potency, selectivity, pharmacokinetics, and reduce toxicity (e.g., structure-activity relationship studies, prodrug design).\n5. PRECLINICAL DEVELOPMENT: GLP-compliant toxicology and pharmacology studies in animals to assess safety, efficacy, and pharmacokinetics before human trials.\n6. CLINICAL DEVELOPMENT: Phases 1-4 trials in humans to assess safety, tolerability, efficacy, and post-marketing surveillance for adverse effects.\n7. REGULATORY APPROVAL: Submission of data to regulatory agencies (e.g., PPB, WHO) for marketing authorization."
+            },
+            {
+              "stem": "List four key principles of toxicokinetics and briefly explain their relevance in clinical toxicology. (4 marks)",
+              "modelAnswer": "FOUR KEY PRINCIPLES OF TOXICOKINETICS (4 marks):\n1. ABSORPTION: Rate and extent of toxicant entry into the bloodstream (e.g., oral, inhalation, dermal). Relevance: Determines time to peak toxicity and choice of decontamination (e.g., activated charcoal for oral ingestion).\n2. DISTRIBUTION: Tissue distribution of the toxicant (e.g., lipid-soluble toxins distribute to fat, heavy metals to bone). Relevance: Predicts target organs (e.g., lead to CNS/bone marrow; organophosphates to synapses).\n3. METABOLISM: Biotransformation of the toxicant (e.g., phase I/II reactions). Relevance: May activate (e.g., paracetamol to NAPQI) or detoxify (e.g., methanol to formic acid) the toxicant; influences antidote choice.\n4. ELIMINATION: Excretion of the toxicant or metabolites (renal, biliary, pulmonary). Relevance: Determines half-life and need for enhanced elimination (e.g., hemodialysis for methanol, forced diuresis for salicylates)."
+            },
+            {
+              "stem": "A 3-year-old child is brought to the emergency department 30 minutes after ingesting an unknown number of iron tablets. Outline the immediate management steps, including antidote therapy. (6 marks)",
+              "modelAnswer": "IMMEDIATE MANAGEMENT OF IRON POISONING IN A 3-YEAR-OLD (6 marks):\n1. ASSESSMENT AND STABILIZATION: ABCDE approach; check vital signs, mental status, and airway patency. Administer oxygen if hypoxic.\n2. DECONTAMINATION: Administer activated charcoal (1 g/kg) if ingestion was recent (<1 hour) and the child is alert. Avoid ipecac syrup (no longer recommended).\n3. ANTIDOTE THERAPY: Administer DEFEROXAMINE (iron chelator) intravenously if:\n   - Serum iron level >500 mcg/dL OR\n   - Severe symptoms (e.g., vomiting, diarrhea, lethargy, shock) OR\n   - Radiopaque tablets visible on X-ray.\n   Dose: 15 mg/kg/hour IV infusion (maximum 80 mg/kg/day). Monitor for hypotension and allergic reactions.\n4. SUPPORTIVE CARE: IV fluids for shock/hypotension; monitor for metabolic acidosis, hepatic failure, and coagulopathy.\n5. MONITORING: Serial serum iron levels, CBC, LFTs, renal function, and glucose.\n6. ADMISSION: Admit for observation and monitoring; consider ICU if severe poisoning."
+            },
+            {
+              "stem": "Describe the mechanism of action, clinical use, and adverse effects of N-acetylcysteine in paracetamol poisoning. (7 marks)",
+              "modelAnswer": "N-ACETYLCYSTEINE IN PARACETAMOL POISONING (7 marks):\nMECHANISM OF ACTION:\n- N-acetylcysteine (NAC) acts as a precursor for glutathione synthesis.\n- Glutathione detoxifies NAPQI (N-acetyl-p-benzoquinone imine), the toxic metabolite of paracetamol, by conjugation.\n- NAC also scavenges free radicals and improves oxygen delivery.\n\nCLINICAL USE:\n- Indicated for paracetamol overdose when:\n  - Plasma paracetamol level is above the treatment line on the Rumack-Matthew nomogram (e.g., >100 mg/L at 4 hours post-ingestion).\n  - Time of ingestion is unknown and serum level cannot be plotted.\n  - Features of liver toxicity (e.g., elevated ALT/AST, INR) even if paracetamol level is below treatment line.\n- Route: Oral (loading dose 140 mg/kg, then 70 mg/kg every 4 hours for 17 doses) or IV (150 mg/kg over 1 hour, then 50 mg/kg over 4 hours, then 100 mg/kg over 16 hours).\n\nADVERSE EFFECTS:\n- Nausea, vomiting, diarrhea (common with oral NAC).\n- Anaphylactoid reactions (flushing, rash, pruritus, bronchospasm, hypotension) — more common with IV NAC.\n- Rare: Severe allergic reactions (e.g., angioedema, shock).\n- Monitor for hepatotoxicity (elevated ALT/AST, INR) and renal failure."
+            },
+            {
+              "stem": "a) Define the term 'therapeutic index' and explain its clinical significance. (3 marks)\nb) How does the therapeutic index differ from the 'safety margin'? (2 marks)\nc) Give one example of a drug with a narrow therapeutic index. (1 mark)",
+              "modelAnswer": "a) THERAPEUTIC INDEX (3 marks):\n- Definition: The ratio of the toxic dose (TD50) to the effective dose (ED50) in a population: TI = TD50/ED50.\n- Clinical significance: A low therapeutic index indicates a narrow margin between therapeutic and toxic doses, requiring careful dose titration, therapeutic drug monitoring (TDM), and close patient monitoring to avoid toxicity.\n\nb) THERAPEUTIC INDEX VS. SAFETY MARGIN (2 marks):\n- Therapeutic index is a population-based ratio (TD50/ED50).\n- Safety margin is the difference between the maximum tolerated dose and the minimum effective dose in an individual patient, reflecting the practical dosing range in clinical use.\n\nc) EXAMPLE OF A DRUG WITH NARROW THERAPEUTIC INDEX (1 mark):\n- Warfarin (TI ~1.5-2)\n- Digoxin (TI ~2)\n- Lithium (TI ~2-3)\n- Theophylline (TI ~2-3)"
+            },
+            {
+              "stem": "Outline the ABCDE approach to the management of a patient with acute poisoning. Provide one example of a toxicant for which each step is particularly critical. (8 marks)",
+              "modelAnswer": "ABCDE APPROACH TO ACUTE POISONING (8 marks):\nA (AIRWAY): Ensure airway patency; intubate if necessary (e.g., opioid overdose with respiratory depression).\nB (BREATHING): Assess respiratory rate, oxygen saturation; administer oxygen if hypoxic (e.g., carbon monoxide poisoning).\nC (CIRCULATION): Check pulse, blood pressure; administer IV fluids if hypotensive (e.g., iron poisoning with shock).\nD (DISABILITY): Assess mental status (GCS); consider antidotes for altered consciousness (e.g., naloxone for opioid overdose, flumazenil for benzodiazepine overdose).\nE (EXPOSURE): Remove contaminated clothing; decontaminate skin/eyes if dermal exposure (e.g., organophosphate poisoning with dermal absorption).\n\nEXAMPLES:\n- Opioid overdose: Critical at A (airway protection) and D (naloxone for respiratory depression).\n- Carbon monoxide poisoning: Critical at B (oxygen therapy for hypoxia).\n- Iron poisoning: Critical at C (IV fluids for shock).\n- Organophosphate poisoning: Critical at E (decontamination for dermal exposure)."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 24-year-old male is brought to the emergency department after ingesting an unknown quantity of an organophosphate insecticide (chlorpyrifos) in a suicide attempt. He is drooling, sweating profusely, and has pinpoint pupils, muscle fasciculations, and severe respiratory distress. His heart rate is 45 bpm, blood pressure is 85/50 mmHg, and oxygen saturation is 88% on room air. \n\na) Explain the mechanism of action of organophosphate insecticides and how this leads to the patient’s clinical presentation. (5 marks)\nb) Outline the immediate management steps for this patient, including antidote therapy and supportive care. (7 marks)\nc) Describe the role of pralidoxime in the management of organophosphate poisoning and explain why it is less effective in carbamate poisoning. (3 marks)",
+              "modelAnswer": "ORGANOPHOSPHATE (CHLORPYRIFOS) POISONING IN A 24-YEAR-OLD MALE:\n\na) MECHANISM OF ACTION AND CLINICAL PRESENTATION (5 marks):\n- Organophosphates (e.g., chlorpyrifos) IRREVERSIBLY inhibit acetylcholinesterase (AChE) by phosphorylating the enzyme at cholinergic synapses.\n- This leads to ACCUMULATION of acetylcholine (ACh) in the synaptic cleft, causing excessive stimulation of muscarinic, nicotinic, and central nervous system (CNS) cholinergic receptors.\n- MUSCARINIC EFFECTS (SLUDGE + bronchospasm): Salivation, Lacrimation, Urination, Diarrhea, Gastrointestinal cramps, Emesis; bronchospasm and bronchorrhea → respiratory distress.\n- NICOTINIC EFFECTS (muscle fasciculations, weakness, paralysis): Depolarizing neuromuscular blockade → respiratory muscle paralysis.\n- CNS EFFECTS: Confusion, seizures, coma.\n- The patient’s presentation (drooling, sweating, pinpoint pupils, fasciculations, respiratory distress, bradycardia, hypotension) reflects muscarinic and nicotinic overstimulation.\n\nb) IMMEDIATE MANAGEMENT STEPS (7 marks):\n1. ABCDE STABILIZATION:\n   - A (Airway): Intubate if respiratory failure or severe bronchospasm (e.g., GCS <8, hypoxia despite oxygen).\n   - B (Breathing): Administer 100% oxygen; consider bronchodilators (e.g., salbutamol) for bronchospasm.\n   - C (Circulation): IV fluids for hypotension (e.g., 0.9% saline 20 mL/kg bolus); atropine may be needed for bradycardia.\n   - D (Disability): Assess GCS; consider antidotes for altered consciousness if present.\n   - E (Exposure): Remove contaminated clothing; decontaminate skin with soap and water.\n\n2. ANTIDOTE THERAPY:\n   - ATROPINE: Muscarinic antagonist; dose 1-2 mg IV (repeat every 5-10 minutes) until secretions dry and heart rate normalizes. Titrate to effect (e.g., heart rate >80 bpm, clear lungs).\n   - PRALIDOXIME: Cholinesterase reactivator; dose 1-2 g IV over 15-30 minutes, then 500 mg/hour infusion for 24-48 hours. Reactivates phosphorylated AChE.\n\n3. SUPPORTIVE CARE:\n   - Monitor vital signs, oxygen saturation, and fluid balance.\n   - Consider benzodiazepines (e.g., diazepam) for seizures or severe agitation.\n   - Admit to ICU for close monitoring and ventilation if required.\n\nc) ROLE OF PRALIDOXIME AND CARBAMATE POISONING (3 marks):\n- PRALIDOXIME: Reactivates phosphorylated AChE by removing the organophosphate moiety, restoring normal enzyme function. It is most effective when given early (within hours) before 'aging' of the phosphorylated enzyme occurs.\n- CARBAMATE POISONING: Carbamates (e.g., carbaryl) CARBAMYLATE AChE reversibly, unlike organophosphates. Pralidoxime is less effective because spontaneous reactivation of carbamylated AChE occurs within hours, making reactivation unnecessary. Additionally, pralidoxime may worsen carbamate toxicity by prolonging inhibition."
+            },
+            {
+              "stem": "A pharmaceutical company is developing a new drug for the treatment of hypertension. The drug has shown promising results in preclinical studies, including high potency, good oral bioavailability, and a favorable safety profile in animal models.\n\na) Describe the key objectives and study designs for each phase of clinical trials (I–IV) in the drug development process. (10 marks)\nb) Outline the regulatory requirements and ethical considerations for conducting clinical trials in Kenya, including the role of the Pharmacy and Poisons Board (PPB) and the Kenya Medical Research Institute (KEMRI). (5 marks)",
+              "modelAnswer": "DEVELOPMENT OF A NEW ANTIHYPERTENSIVE DRUG: CLINICAL TRIALS AND REGULATORY REQUIREMENTS:\n\na) KEY OBJECTIVES AND STUDY DESIGNS FOR CLINICAL TRIAL PHASES (10 marks):\n\nPHASE 1 (Clinical Pharmacology and Toxicology):\n- OBJECTIVES: Assess safety, tolerability, pharmacokinetics (ADME), and maximum tolerated dose (MTD) in healthy volunteers.\n- STUDY DESIGN: Open-label or single-blind, dose-escalation study in 20-80 healthy volunteers (sometimes patients for toxic drugs). Conducted in specialized clinical pharmacology units with close monitoring.\n- OUTCOMES: Determine safe starting dose for Phase 2; identify dose-limiting toxicities.\n\nPHASE 2 (Therapeutic Exploratory):\n- OBJECTIVES: Assess efficacy, dose-response relationship, and short-term safety in patients with the target disease (e.g., hypertension).\n- STUDY DESIGN: Randomized, double-blind, placebo-controlled or active-controlled trials in 100-300 patients. Dose-ranging studies to identify optimal dose.\n- OUTCOMES: Establish proof-of-concept; determine effective dose range for Phase 3.\n\nPHASE 3 (Therapeutic Confirmatory):\n- OBJECTIVES: Confirm efficacy and safety in a larger population under conditions of proposed use; compare with standard therapy.\n- STUDY DESIGN: Large, randomized, double-blind, placebo-controlled or active-controlled trials in 1,000-5,000 patients. Multicenter, multinational studies to ensure generalizability.\n- OUTCOMES: Basis for regulatory approval; detect rare adverse effects.\n\nPHASE 4 (Post-Marketing Surveillance):\n- OBJECTIVES: Monitor long-term safety, efficacy, and rare adverse effects in the general population; assess cost-effectiveness and quality of life.\n- STUDY DESIGN: Observational studies (cohort, case-control), registries, and pharmacovigilance programs. May include comparative effectiveness studies.\n- OUTCOMES: Identify rare/late adverse effects; optimize drug use in real-world settings.\n\nb) REGULATORY REQUIREMENTS AND ETHICAL CONSIDERATIONS IN KENYA (5 marks):\n- REGULATORY REQUIREMENTS:\n  1. PPB (Pharmacy and Poisons Board): Approves clinical trials via the Clinical Trials Committee; reviews drug safety, protocol, investigator qualifications, and site suitability.\n  2. KEMRI (Kenya Medical Research Institute): Provides ethical approval via the KEMRI Scientific and Ethics Review Unit (SERU); ensures compliance with international ethical standards (e.g., Declaration of Helsinki).\n  3. NACOSTI (National Commission for Science, Technology and Innovation): Approves research permits for scientific studies.\n  4. INFORMED CONSENT: Must be obtained from participants; must include clear explanation of risks, benefits, and alternatives. Consent must be documented and witnessed.\n  5. DATA AND SAFETY MONITORING BOARD (DSMB): Independent board to review interim safety and efficacy data; may recommend trial modification or termination.\n\n- ETHICAL CONSIDERATIONS:\n  1. BENEFICENCE: Ensure the trial offers potential benefit to participants or society.\n  2. NON-MALEFICENCE: Minimize risks and ensure safety of participants.\n  3. AUTONOMY: Respect participant rights and ensure voluntary informed consent.\n  4. JUSTICE: Ensure fair selection of participants; avoid exploitation of vulnerable groups.\n  5. EQUITY: Ensure access to benefits and burdens of research is distributed fairly.\n\n- ROLE OF PPB AND KEMRI:\n  - PPB: Regulates the conduct of clinical trials, ensures drug safety, and monitors compliance with Good Clinical Practice (GCP).\n  - KEMRI: Provides ethical oversight, ensures participant protection, and promotes high standards of research integrity."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "title": "Toxicology & Drug Discovery",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 35-year-old farmer presents with acute onset of excessive salivation, lacrimation, urination, diarrhea, and muscle fasciculations after accidental exposure to a pesticide spray. Which antidote combination is most appropriate for immediate management?",
+              "options": [
+                "Atropine alone",
+                "Pralidoxime alone",
+                "Atropine and pralidoxime",
+                "Naloxone and atropine"
+              ],
+              "answer": "Atropine and pralidoxime",
+              "explanation": "The patient has a cholinergic crisis from organophosphate poisoning. Atropine blocks muscarinic effects (salivation, lacrimation, urination, diarrhea), while pralidoxime reactivates phosphorylated cholinesterase to restore neuromuscular function."
+            },
+            {
+              "stem": "A 4-year-old child is brought to the emergency department with vomiting, abdominal pain, and lethargy 2 hours after ingesting a bottle of iron tablets. Which laboratory finding is most consistent with severe iron poisoning?",
+              "options": [
+                "Metabolic alkalosis",
+                "Metabolic acidosis",
+                "Respiratory acidosis",
+                "Hyperglycemia"
+              ],
+              "answer": "Metabolic acidosis",
+              "explanation": "Severe iron poisoning causes corrosive gastrointestinal injury leading to metabolic acidosis due to tissue hypoperfusion, lactic acid accumulation, and direct cellular toxicity."
+            },
+            {
+              "stem": "A patient presents with headache, confusion, and cherry-red skin after inhaling fumes from a poorly ventilated charcoal grill. Which antidote is most appropriate?",
+              "options": [
+                "N-acetylcysteine",
+                "Hydroxocobalamin",
+                "Sodium nitrite",
+                "Oxygen"
+              ],
+              "answer": "Oxygen",
+              "explanation": "The clinical picture suggests carbon monoxide (CO) poisoning. The primary treatment is high-flow oxygen to displace CO from hemoglobin and improve tissue oxygenation."
+            },
+            {
+              "stem": "A 28-year-old male is admitted with severe metabolic acidosis, tachypnea, and altered mental status after ingesting an unknown substance. Which antidote is indicated if methanol or ethylene glycol poisoning is suspected?",
+              "options": [
+                "Ethanol",
+                "Fomepizole",
+                "N-acetylcysteine",
+                "Flumazenil"
+              ],
+              "answer": "Fomepizole",
+              "explanation": "Fomepizole is a specific inhibitor of alcohol dehydrogenase, preventing the formation of toxic metabolites from methanol or ethylene glycol. Ethanol is an alternative but less preferred due to toxicity and monitoring challenges."
+            },
+            {
+              "stem": "A 50-year-old patient with a history of hypertension presents with acute lead poisoning confirmed by blood lead levels. Which chelating agent is most appropriate for immediate use in symptomatic patients?",
+              "options": [
+                "Succimer",
+                "Dimercaprol",
+                "Calcium disodium EDTA",
+                "Penicillamine"
+              ],
+              "answer": "Calcium disodium EDTA",
+              "explanation": "For severe symptomatic lead poisoning, parenteral calcium disodium EDTA is the preferred initial chelator, often combined with dimercaprol for encephalopathy. Succimer is oral and used for less severe cases."
+            },
+            {
+              "stem": "A 60-year-old male presents with garlic odor on breath, abdominal pain, and hemolysis after chronic exposure to a toxic metal. Which metal is most likely responsible?",
+              "options": [
+                "Lead",
+                "Mercury",
+                "Arsenic",
+                "Iron"
+              ],
+              "answer": "Arsenic",
+              "explanation": "Chronic inorganic arsenic exposure causes garlic breath, gastrointestinal symptoms, and hemolysis due to oxidative stress on red blood cells."
+            },
+            {
+              "stem": "A 25-year-old female is admitted with paracetamol overdose 6 hours post-ingestion. Which antidote should be administered immediately?",
+              "options": [
+                "N-acetylcysteine",
+                "Flumazenil",
+                "Atropine",
+                "Naloxone"
+              ],
+              "answer": "N-acetylcysteine",
+              "explanation": "N-acetylcysteine replenishes glutathione stores, preventing the formation of the toxic metabolite NAPQI in paracetamol overdose. It is most effective when given within 8 hours of ingestion."
+            },
+            {
+              "stem": "A 30-year-old male presents with cyanosis unresponsive to oxygen, headache, and dizziness after working in a gold mining site. Which antidote is indicated for cyanide poisoning?",
+              "options": [
+                "Sodium nitrite",
+                "Hydroxocobalamin",
+                "Thiosulfate",
+                "All of the above"
+              ],
+              "answer": "All of the above",
+              "explanation": "Cyanide poisoning requires combination therapy: sodium nitrite induces methemoglobinemia to bind cyanide, hydroxocobalamin directly chelates cyanide, and sodium thiosulfate converts cyanide to thiocyanate for renal excretion."
+            },
+            {
+              "stem": "A 45-year-old female presents with acute arsenic poisoning after ingesting contaminated water. Which chelator is most appropriate for initial management?",
+              "options": [
+                "Succimer",
+                "Dimercaprol",
+                "Calcium disodium EDTA",
+                "Deferoxamine"
+              ],
+              "answer": "Dimercaprol",
+              "explanation": "Dimercaprol (BAL) is the preferred chelator for acute arsenic poisoning due to its rapid onset and effectiveness in binding arsenic. Succimer is used for follow-up therapy."
+            },
+            {
+              "stem": "A 20-year-old male presents with severe agitation, hallucinations, and tachycardia after ingesting a large quantity of a recreational drug. Which antidote is indicated if serotonin syndrome is suspected?",
+              "options": [
+                "Naloxone",
+                "Flumazenil",
+                "Cyproheptadine",
+                "Atropine"
+              ],
+              "answer": "Cyproheptadine",
+              "explanation": "Cyproheptadine is a serotonin antagonist used to treat serotonin syndrome, characterized by agitation, hallucinations, tachycardia, and hyperthermia."
+            },
+            {
+              "stem": "A 55-year-old male presents with acute methanol poisoning. Which laboratory finding is most specific for methanol toxicity?",
+              "options": [
+                "Elevated serum osmolal gap",
+                "Metabolic alkalosis",
+                "Hyperkalemia",
+                "Hypoglycemia"
+              ],
+              "answer": "Elevated serum osmolal gap",
+              "explanation": "Methanol metabolism produces toxic metabolites (formaldehyde, formic acid) causing an elevated osmolal gap and metabolic acidosis. The osmolal gap is a key early indicator of methanol ingestion."
+            },
+            {
+              "stem": "A 35-year-old female presents with acute iron poisoning. Which clinical stage is characterized by severe gastrointestinal symptoms, vomiting, and diarrhea?",
+              "options": [
+                "Stage 1 (0-6 hours)",
+                "Stage 2 (6-24 hours)",
+                "Stage 3 (24-48 hours)",
+                "Stage 4 (2-6 weeks)"
+              ],
+              "answer": "Stage 1 (0-6 hours)",
+              "explanation": "Stage 1 of iron poisoning (0-6 hours) presents with gastrointestinal symptoms including vomiting, diarrhea, and abdominal pain due to the corrosive effects of iron on the gastrointestinal mucosa."
+            },
+            {
+              "stem": "A 40-year-old male presents with acute organophosphate poisoning. Which clinical feature is most specific for nicotinic receptor overstimulation?",
+              "options": [
+                "Miosis",
+                "Bradycardia",
+                "Muscle fasciculations",
+                "Bronchorrhea"
+              ],
+              "answer": "Muscle fasciculations",
+              "explanation": "Muscle fasciculations are a hallmark of nicotinic receptor overstimulation in organophosphate poisoning, resulting from excessive acetylcholine at the neuromuscular junction."
+            },
+            {
+              "stem": "A 22-year-old female presents with acute paracetamol overdose. Which antidote is most effective when administered within 8 hours of ingestion?",
+              "options": [
+                "N-acetylcysteine",
+                "Flumazenil",
+                "Atropine",
+                "Naloxone"
+              ],
+              "answer": "N-acetylcysteine",
+              "explanation": "N-acetylcysteine is most effective in preventing hepatotoxicity when administered within 8 hours of paracetamol ingestion by replenishing glutathione stores and neutralizing NAPQI."
+            },
+            {
+              "stem": "A 50-year-old male presents with acute cyanide poisoning after smoke inhalation. Which antidote directly binds cyanide without inducing methemoglobinemia?",
+              "options": [
+                "Sodium nitrite",
+                "Hydroxocobalamin",
+                "Sodium thiosulfate",
+                "Methylene blue"
+              ],
+              "answer": "Hydroxocobalamin",
+              "explanation": "Hydroxocobalamin directly chelates cyanide to form cyanocobalamin (vitamin B12), providing rapid detoxification without inducing methemoglobinemia, which is a risk with sodium nitrite."
+            },
+            {
+              "stem": "A 30-year-old female presents with acute arsenic poisoning. Which chelator is contraindicated in patients with glucose-6-phosphate dehydrogenase deficiency?",
+              "options": [
+                "Dimercaprol",
+                "Succimer",
+                "Calcium disodium EDTA",
+                "Penicillamine"
+              ],
+              "answer": "Dimercaprol",
+              "explanation": "Dimercaprol can cause hemolysis in patients with G6PD deficiency due to oxidative stress on red blood cells. Succimer is a safer alternative in such cases."
+            },
+            {
+              "stem": "A 45-year-old male presents with acute methanol poisoning. Which antidote inhibits alcohol dehydrogenase, preventing the formation of toxic metabolites?",
+              "options": [
+                "Ethanol",
+                "Fomepizole",
+                "N-acetylcysteine",
+                "Thiamine"
+              ],
+              "answer": "Fomepizole",
+              "explanation": "Fomepizole is a competitive inhibitor of alcohol dehydrogenase, blocking the metabolism of methanol to its toxic metabolites (formaldehyde and formic acid). Ethanol is an alternative substrate but less preferred."
+            },
+            {
+              "stem": "A 25-year-old female presents with acute iron poisoning. Which laboratory finding is most specific for severe iron toxicity?",
+              "options": [
+                "Elevated serum iron (>500 mcg/dL)",
+                "Metabolic alkalosis",
+                "Hyperglycemia",
+                "Leukocytosis"
+              ],
+              "answer": "Elevated serum iron (>500 mcg/dL)",
+              "explanation": "A serum iron level >500 mcg/dL is associated with severe iron toxicity and correlates with the risk of systemic toxicity, including shock and hepatic failure."
+            },
+            {
+              "stem": "A 55-year-old male presents with acute lead poisoning. Which clinical feature is most specific for lead encephalopathy?",
+              "options": [
+                "Peripheral neuropathy",
+                "Abdominal colic",
+                "Seizures",
+                "Hemolytic anemia"
+              ],
+              "answer": "Seizures",
+              "explanation": "Lead encephalopathy, seen in severe acute lead poisoning, presents with seizures, altered mental status, and increased intracranial pressure due to cerebral edema."
+            },
+            {
+              "stem": "A 30-year-old female presents with acute organophosphate poisoning. Which antidote is most effective for reactivating cholinesterase?",
+              "options": [
+                "Atropine",
+                "Pralidoxime",
+                "Naloxone",
+                "Flumazenil"
+              ],
+              "answer": "Pralidoxime",
+              "explanation": "Pralidoxime reactivates phosphorylated cholinesterase by removing the organophosphate moiety, restoring neuromuscular function. It is most effective when administered early."
+            },
+            {
+              "stem": "A 40-year-old male presents with acute cyanide poisoning. Which antidote converts cyanide to thiocyanate for renal excretion?",
+              "options": [
+                "Sodium nitrite",
+                "Hydroxocobalamin",
+                "Sodium thiosulfate",
+                "Methylene blue"
+              ],
+              "answer": "Sodium thiosulfate",
+              "explanation": "Sodium thiosulfate converts cyanide to thiocyanate, which is less toxic and excreted renally. It is used in combination with other antidotes for cyanide poisoning."
+            },
+            {
+              "stem": "A 22-year-old female presents with acute paracetamol overdose. Which antidote replenishes glutathione stores?",
+              "options": [
+                "N-acetylcysteine",
+                "Flumazenil",
+                "Atropine",
+                "Naloxone"
+              ],
+              "answer": "N-acetylcysteine",
+              "explanation": "N-acetylcysteine provides cysteine, a precursor for glutathione synthesis, which neutralizes the toxic metabolite NAPQI formed in paracetamol overdose."
+            },
+            {
+              "stem": "A 50-year-old male presents with acute methanol poisoning. Which laboratory finding is most specific for methanol toxicity?",
+              "options": [
+                "Elevated anion gap metabolic acidosis",
+                "Metabolic alkalosis",
+                "Hyperkalemia",
+                "Hypoglycemia"
+              ],
+              "answer": "Elevated anion gap metabolic acidosis",
+              "explanation": "Methanol metabolism produces formic acid, causing an elevated anion gap metabolic acidosis. This is a key diagnostic feature of methanol toxicity."
+            },
+            {
+              "stem": "A 35-year-old female presents with acute arsenic poisoning. Which chelator is most appropriate for chronic arsenic exposure?",
+              "options": [
+                "Dimercaprol",
+                "Succimer",
+                "Calcium disodium EDTA",
+                "Penicillamine"
+              ],
+              "answer": "Succimer",
+              "explanation": "Succimer (DMSA) is an oral chelator used for chronic arsenic poisoning due to its effectiveness and lower toxicity compared to parenteral agents like dimercaprol."
+            },
+            {
+              "stem": "A 45-year-old male presents with acute iron poisoning. Which antidote is contraindicated in patients with renal failure?",
+              "options": [
+                "Deferoxamine",
+                "N-acetylcysteine",
+                "Flumazenil",
+                "Naloxone"
+              ],
+              "answer": "Deferoxamine",
+              "explanation": "Deferoxamine is contraindicated in patients with severe renal impairment due to the risk of deferoxamine-induced neurotoxicity and accumulation of the iron-chelate complex."
+            },
+            {
+              "stem": "A 28-year-old female presents with acute organophosphate poisoning. Which clinical feature is most specific for muscarinic receptor overstimulation?",
+              "options": [
+                "Muscle fasciculations",
+                "Tachycardia",
+                "Miosis",
+                "Hypertension"
+              ],
+              "answer": "Miosis",
+              "explanation": "Miosis (pinpoint pupils) is a hallmark of muscarinic receptor overstimulation in organophosphate poisoning, resulting from excessive acetylcholine at muscarinic receptors in the iris."
+            },
+            {
+              "stem": "A 50-year-old male presents with acute cyanide poisoning. Which antidote is most appropriate for patients with smoke inhalation-induced cyanide toxicity?",
+              "options": [
+                "Sodium nitrite",
+                "Hydroxocobalamin",
+                "Sodium thiosulfate",
+                "All of the above"
+              ],
+              "answer": "All of the above",
+              "explanation": "Smoke inhalation often causes cyanide poisoning, requiring combination therapy with sodium nitrite, hydroxocobalamin, and sodium thiosulfate to address different aspects of cyanide toxicity."
+            },
+            {
+              "stem": "A 30-year-old female presents with acute paracetamol overdose. Which antidote is most effective when administered beyond 24 hours post-ingestion?",
+              "options": [
+                "N-acetylcysteine",
+                "Flumazenil",
+                "Atropine",
+                "Naloxone"
+              ],
+              "answer": "N-acetylcysteine",
+              "explanation": "N-acetylcysteine remains beneficial even when administered beyond 24 hours post-ingestion, particularly in patients with evidence of hepatotoxicity or elevated INR."
+            },
+            {
+              "stem": "A 40-year-old male presents with acute lead poisoning. Which chelator is most appropriate for asymptomatic patients with mild lead toxicity?",
+              "options": [
+                "Dimercaprol",
+                "Succimer",
+                "Calcium disodium EDTA",
+                "Penicillamine"
+              ],
+              "answer": "Succimer",
+              "explanation": "Succimer is an oral chelator used for asymptomatic or mildly symptomatic patients with lead toxicity due to its convenience and lower toxicity compared to parenteral agents."
+            },
+            {
+              "stem": "A 25-year-old female presents with acute methanol poisoning. Which antidote is most appropriate for patients with renal impairment?",
+              "options": [
+                "Ethanol",
+                "Fomepizole",
+                "N-acetylcysteine",
+                "Thiamine"
+              ],
+              "answer": "Fomepizole",
+              "explanation": "Fomepizole is preferred in patients with renal impairment as it does not require dose adjustment and avoids the risk of fluid overload associated with ethanol infusion."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "Describe five key steps in the drug discovery and development pipeline from target identification to lead optimization. (5 marks)",
+              "modelAnswer": "1. TARGET IDENTIFICATION: Identify a biological target (e.g., enzyme, receptor, ion channel) implicated in disease pathology using genomics, proteomics, or bioinformatics.\n2. TARGET VALIDATION: Confirm the target's role in disease using in vitro and in vivo models (e.g., knockout/knockdown studies, animal models).\n3. LEAD DISCOVERY: Screen compound libraries (natural products, synthetic compounds) or use rational design to identify initial 'hits' that modulate the target.\n4. LEAD OPTIMIZATION: Modify lead compounds to improve potency, selectivity, pharmacokinetics (ADME), and reduce toxicity through structure-activity relationship (SAR) studies.\n5. PRECLINICAL DEVELOPMENT: Conduct GLP-compliant toxicology, pharmacokinetics, and safety studies in animals to assess safety and determine the therapeutic index before human trials."
+            },
+            {
+              "stem": "Define therapeutic index and safety margin. Provide an example of a drug with a narrow therapeutic index and explain why careful monitoring is required. (7 marks)",
+              "modelAnswer": "THERAPEUTIC INDEX (TI): The ratio of the toxic dose (TD50) to the effective dose (ED50) in 50% of the population, expressed as TI = TD50/ED50. It quantifies the safety margin of a drug.\nSAFETY MARGIN: The difference between the therapeutic dose and the toxic dose, often expressed as the range between the minimum effective dose and the minimum toxic dose.\nEXAMPLE: Warfarin has a narrow therapeutic index. Its ED50 (anticoagulant effect) is close to its TD50 (bleeding risk).\nREASON FOR MONITORING: Due to the narrow margin, small changes in dose or interactions (e.g., with rifampin) can lead to subtherapeutic or toxic effects. Regular INR monitoring is essential to maintain therapeutic anticoagulation and prevent bleeding."
+            },
+            {
+              "stem": "Outline the clinical manifestations of acute arsenic poisoning and describe the mechanism of action of the primary antidote. (6 marks)",
+              "modelAnswer": "CLINICAL MANIFESTATIONS OF ACUTE ARSENIC POISONING:\n- Gastrointestinal: Nausea, vomiting, diarrhea (rice-water stools), abdominal pain.\n- Cardiovascular: Hypotension, QT prolongation, arrhythmias.\n- Neurological: Encephalopathy, seizures, peripheral neuropathy (stocking-glove distribution).\n- Hematological: Hemolysis, anemia, leukopenia.\n- Other: Garlic odor on breath, skin hyperpigmentation, Mees lines (transverse white lines on nails).\nMECHANISM OF DIMERCAPROL (PRIMARY ANTIDOTE):\nDimercaprol (BAL) is a dithiol chelator that binds arsenic by forming stable, water-soluble complexes. It binds to arsenic in the bloodstream and tissues, facilitating renal excretion. It also prevents arsenic from binding to sulfhydryl groups on enzymes and proteins, reducing toxicity."
+            },
+            {
+              "stem": "Compare and contrast the mechanisms of action, indications, and adverse effects of atropine and pralidoxime in organophosphate poisoning. (7 marks)",
+              "modelAnswer": "ATROPINE:\n- MECHANISM: Competitive antagonist of muscarinic acetylcholine receptors, blocking the effects of excessive acetylcholine.\n- INDICATIONS: Organophosphate or carbamate poisoning to reverse muscarinic symptoms (e.g., bronchorrhea, bradycardia, miosis).\n- ADVERSE EFFECTS: Tachycardia, dry mouth, urinary retention, confusion, hyperthermia, and paradoxical bradycardia at high doses.\nPRALIDOXIME:\n- MECHANISM: Reactivates phosphorylated cholinesterase by removing the organophosphate moiety, restoring neuromuscular function.\n- INDICATIONS: Organophosphate poisoning to reverse nicotinic effects (e.g., muscle weakness, fasciculations) and severe poisoning.\n- ADVERSE EFFECTS: Dizziness, blurred vision, nausea, and rarely, neuromuscular weakness if given in excessive doses. Contraindicated in carbamate poisoning (e.g., physostigmine) as it can worsen toxicity by transiently increasing acetylcholine."
+            },
+            {
+              "stem": "Describe the four phases of clinical trials in drug development, including the primary objectives and typical participant populations for each phase. (8 marks)",
+              "modelAnswer": "PHASE 1: PRIMARY OBJECTIVES are to assess safety, tolerability, pharmacokinetics (ADME), and maximum tolerated dose (MTD). PARTICIPANTS: 20-80 healthy volunteers (or patients for toxic drugs). Conducted by clinical pharmacologists in controlled settings.\nPHASE 2: PRIMARY OBJECTIVES are to evaluate efficacy, dose-response relationships, and short-term safety. PARTICIPANTS: 100-300 patients with the target disease. Often includes placebo or active comparator groups.\nPHASE 3: PRIMARY OBJECTIVES are to confirm efficacy, detect adverse effects, and compare with standard therapies. PARTICIPANTS: 1,000-5,000 patients with the disease under proposed use conditions. Randomized, double-blind, controlled trials to support regulatory approval.\nPHASE 4: PRIMARY OBJECTIVES are post-marketing surveillance to identify rare adverse effects, long-term safety, and drug interactions. PARTICIPANTS: Large, diverse populations receiving the drug in real-world settings."
+            },
+            {
+              "stem": "A 45-year-old male presents with acute methanol poisoning. Outline the ABCDE approach to initial management and explain the rationale for each step. (7 marks)",
+              "modelAnswer": "A (AIRWAY): Ensure patent airway and provide oxygen if needed. Rationale: Methanol toxicity can cause CNS depression, leading to airway compromise.\nB (BREATHING): Administer high-flow oxygen and consider mechanical ventilation if respiratory failure occurs. Rationale: Oxygen supports tissue oxygenation and may displace methanol metabolites.\nC (CIRCULATION): Establish IV access and monitor hemodynamics. Rationale: Hypotension may occur due to methanol-induced metabolic acidosis or vomiting.\nD (DISABILITY): Assess neurological status (GCS). Rationale: Methanol poisoning can cause altered mental status or seizures.\nE (EXPOSURE): Obtain history, examine for signs of toxicity (e.g., visual disturbances, metabolic acidosis), and initiate antidote therapy (fomepizole or ethanol). Rationale: Early intervention with fomepizole or ethanol inhibits methanol metabolism, preventing toxic metabolite formation."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 28-year-old male is brought to the emergency department after accidentally ingesting a bottle of insecticide containing chlorpyrifos. He presents with excessive salivation, lacrimation, urination, diarrhea, muscle fasciculations, and altered mental status. Vital signs: BP 90/60 mmHg, HR 45 bpm, RR 10/min, SpO2 88% on room air. (15 marks)\n\na) Describe the mechanism of action of organophosphate insecticides and how this leads to the patient’s clinical presentation. (4 marks)\nb) Outline the step-by-step management of this patient, including antidotes, supportive care, and monitoring. (7 marks)\nc) Explain the role of pralidoxime in this scenario and why it must be administered early. (4 marks)",
+              "modelAnswer": "a) MECHANISM OF ACTION OF ORGANOPHOSPHATE INSECTICIDES:\nOrganophosphates irreversibly inhibit acetylcholinesterase (AChE) by phosphorylating the enzyme’s active site. This prevents the breakdown of acetylcholine (ACh), leading to its accumulation at cholinergic synapses. Excess ACh overstimulates muscarinic, nicotinic, and central nervous system (CNS) receptors, resulting in the clinical manifestations observed:\n- Muscarinic effects: Salivation, lacrimation, urination, diarrhea (SLUDGE), bradycardia, bronchospasm, and miosis.\n- Nicotinic effects: Muscle fasciculations, weakness, and paralysis.\n- CNS effects: Altered mental status, seizures, and respiratory depression.\n\nb) STEP-BY-STEP MANAGEMENT:\n1. DECONTAMINATION: Remove contaminated clothing and wash skin thoroughly to prevent further absorption.\n2. AIRWAY/BREATHING: Secure airway (intubate if necessary) and provide 100% oxygen. Rationale: Respiratory failure is a leading cause of death in organophosphate poisoning.\n3. CIRCULATION: Establish IV access and administer IV fluids for hypotension. Consider atropine for bradycardia.\n4. ANTIDOTES:\n   - ATROPINE: Start with 2 mg IV (repeat every 5-10 minutes) until muscarinic symptoms (e.g., bronchorrhea, bradycardia) resolve. Rationale: Atropine blocks muscarinic receptors, reversing SLUDGE symptoms.\n   - PRALIDOXIME: Administer 1-2 g IV over 15-30 minutes, followed by continuous infusion (500 mg/hour for 24-48 hours). Rationale: Pralidoxime reactivates phosphorylated AChE, restoring neuromuscular function.\n5. MONITORING: Continuous cardiac monitoring, frequent assessment of respiratory status, and serial neurological exams. Monitor for complications (e.g., aspiration pneumonia, arrhythmias).\n6. SUPPORTIVE CARE: Correct acidosis, maintain electrolyte balance, and provide mechanical ventilation if needed.\n\nc) ROLE OF PRALIDOXIME:\nPralidoxime (2-PAM) is a cholinesterase reactivator that removes the organophosphate moiety from the AChE enzyme, restoring its function. It is most effective when administered early (within hours of exposure) because the phosphorylated enzyme undergoes 'aging' (irreversible inhibition) over time. Early administration prevents permanent enzyme inhibition, reduces nicotinic symptoms (e.g., muscle weakness), and improves survival. Delayed administration may be less effective due to aging of the enzyme-inhibitor complex."
+            },
+            {
+              "stem": "A pharmaceutical company is developing a new drug for the treatment of hypertension. Outline the pre-clinical and clinical development pathway for this drug, including key objectives, study designs, and regulatory considerations at each stage. (15 marks)",
+              "modelAnswer": "PRE-CLINICAL DEVELOPMENT:\n1. TARGET IDENTIFICATION AND VALIDATION: Identify a biological target (e.g., angiotensin II receptor) implicated in hypertension using genomics or proteomics. Validate the target using in vitro and in vivo models (e.g., knockout mice, cell culture).\n2. LEAD DISCOVERY: Screen compound libraries or use rational design to identify initial 'hits' that modulate the target. Optimize leads for potency, selectivity, and ADME properties.\n3. PRECLINICAL SAFETY AND TOXICOLOGY: Conduct GLP-compliant studies in at least two mammalian species (one non-rodent) to assess:\n   - Acute toxicity (LD50, MTD).\n   - Subacute and chronic toxicity (28-day and 6-month studies).\n   - Genotoxicity (Ames test, chromosomal aberration assays).\n   - Reproductive toxicity (teratogenicity, fertility studies).\n   - Carcinogenicity (2-year rodent studies for drugs intended for chronic use).\n   - Pharmacokinetics (ADME in animals).\n4. REGULATORY SUBMISSION: Prepare an Investigational New Drug (IND) application for submission to regulatory authorities (e.g., Pharmacy and Poisons Board in Kenya) to initiate clinical trials.\n\nCLINICAL DEVELOPMENT:\nPHASE 1 (Clinical Pharmacology):\n- OBJECTIVES: Assess safety, tolerability, pharmacokinetics (ADME), and maximum tolerated dose (MTD) in 20-80 healthy volunteers.\n- DESIGN: Open-label or placebo-controlled, dose-escalation studies.\n- OUTCOME: Determine safe starting dose for Phase 2.\n\nPHASE 2 (Therapeutic Exploratory):\n- OBJECTIVES: Evaluate efficacy, dose-response relationships, and short-term safety in 100-300 patients with hypertension.\n- DESIGN: Randomized, double-blind, placebo-controlled or active comparator trials. Include multiple dose groups.\n- OUTCOME: Identify optimal dose range for Phase 3.\n\nPHASE 3 (Therapeutic Confirmatory):\n- OBJECTIVES: Confirm efficacy, detect adverse effects, and compare with standard therapies in 1,000-5,000 patients.\n- DESIGN: Multicenter, randomized, double-blind, placebo-controlled or active comparator trials. Include hard endpoints (e.g., reduction in blood pressure, cardiovascular events).\n- OUTCOME: Regulatory submission (New Drug Application, NDA) to support marketing approval.\n\nPHASE 4 (Post-Marketing Surveillance):\n- OBJECTIVES: Identify rare adverse effects, long-term safety, and drug interactions in real-world settings.\n- DESIGN: Observational studies, pharmacovigilance programs, and registries.\n- OUTCOME: Post-marketing commitments and safety updates.\n\nREGULATORY CONSIDERATIONS:\n- IND Application: Must include pre-clinical data, manufacturing information, and clinical protocol for Phase 1.\n- NDA Submission: Requires Phase 1-3 data, labeling, and risk management plan.\n- Post-Marketing Requirements: May include additional studies (e.g., pediatric trials, comparative effectiveness).\n- Good Clinical Practice (GCP): All clinical trials must adhere to GCP guidelines to ensure ethical and scientific integrity."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "pharm-cardiovascular": {
+    "3": {
+      "title": "Cardiovascular Pharmacology",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 58-year-old man with hypertension and type 2 diabetes presents with a BP of 150/90 mmHg. His serum creatinine is 1.8 mg/dL (eGFR 45 mL/min/1.73m²). Which antihypertensive is contraindicated in this patient?",
+              "options": [
+                "Amlodipine",
+                "Lisinopril",
+                "Losartan",
+                "Hydrochlorothiazide"
+              ],
+              "answer": "Hydrochlorothiazide",
+              "explanation": "Thiazide diuretics (e.g., hydrochlorothiazide) are less effective when eGFR < 45 mL/min/1.73m² and can worsen hyperglycaemia and hyperuricaemia; ACE inhibitors/ARBs are preferred in diabetic nephropathy."
+            },
+            {
+              "stem": "A 62-year-old woman with chronic heart failure (LVEF 35%) develops a dry cough 2 weeks after starting an antihypertensive. Which drug is most likely responsible?",
+              "options": [
+                "Amlodipine",
+                "Bisoprolol",
+                "Candesartan",
+                "Furosemide"
+              ],
+              "answer": "Candesartan",
+              "explanation": "Candesartan is an ARB; ACE inhibitors cause dry cough via bradykinin accumulation, but ARBs do not. Amlodipine, bisoprolol and furosemide do not cause this cough."
+            },
+            {
+              "stem": "A 45-year-old man with atrial fibrillation and a CHA₂DS₂-VASc score of 2 is started on dabigatran. Which reversal agent should be available in case of major bleeding?",
+              "options": [
+                "Protamine sulfate",
+                "Idarucizumab",
+                "Vitamin K",
+                "Fresh frozen plasma"
+              ],
+              "answer": "Idarucizumab",
+              "explanation": "Dabigatran is a direct oral thrombin inhibitor; idarucizumab is its specific monoclonal antibody reversal agent. Protamine reverses heparin, vitamin K reverses warfarin, and FFP is a general haemostatic."
+            },
+            {
+              "stem": "A 70-year-old man with hypertension and benign prostatic hyperplasia presents with ankle oedema. Which antihypertensive is most likely contributing to this adverse effect?",
+              "options": [
+                "Amlodipine",
+                "Enalapril",
+                "Metoprolol",
+                "Doxazosin"
+              ],
+              "answer": "Amlodipine",
+              "explanation": "Dihydropyridine calcium channel blockers (e.g., amlodipine) cause peripheral oedema via preferential arterial vasodilation and increased capillary hydrostatic pressure. Enalapril, metoprolol and doxazosin do not typically cause this."
+            },
+            {
+              "stem": "A 32-year-old woman with supraventricular tachycardia is given adenosine. What is the mechanism of action of adenosine?",
+              "options": [
+                "Blocks L-type calcium channels",
+                "Activates potassium channels and inhibits calcium influx",
+                "Inhibits beta-1 adrenergic receptors",
+                "Blocks angiotensin II receptors"
+              ],
+              "answer": "Activates potassium channels and inhibits calcium influx",
+              "explanation": "Adenosine activates A1 receptors on the AV node, opening K+ channels (hyperpolarisation) and inhibiting Ca2+ influx, causing transient AV block and terminating SVT. It does not act on calcium channels directly, beta-blockers or angiotensin receptors."
+            },
+            {
+              "stem": "A 68-year-old man with chronic kidney disease (eGFR 20 mL/min) develops hyperkalaemia after starting an ACE inhibitor. Which drug class would be safer for BP control in this setting?",
+              "options": [
+                "Thiazide diuretics",
+                "Loop diuretics",
+                "Potassium-sparing diuretics",
+                "Beta-blockers"
+              ],
+              "answer": "Loop diuretics",
+              "explanation": "Loop diuretics (e.g., furosemide) are effective in reduced eGFR and do not cause hyperkalaemia; thiazides are ineffective when eGFR < 30 mL/min, and potassium-sparing diuretics worsen hyperkalaemia. Beta-blockers do not treat hyperkalaemia."
+            },
+            {
+              "stem": "A 55-year-old man with STEMI receives alteplase. Which laboratory parameter should be monitored closely during thrombolytic therapy?",
+              "options": [
+                "Serum potassium",
+                "International Normalised Ratio (INR)",
+                "Activated partial thromboplastin time (aPTT)",
+                "Fibrinogen level"
+              ],
+              "answer": "Fibrinogen level",
+              "explanation": "Thrombolytics (alteplase) cause systemic fibrinolysis; monitoring fibrinogen (target > 1 g/L) ensures adequate clot lysis without excessive systemic bleeding risk. INR and aPTT are not directly affected by alteplase; potassium is unrelated."
+            },
+            {
+              "stem": "A 40-year-old woman with hypertension and asthma is started on an antihypertensive. Which drug is contraindicated due to bronchospasm risk?",
+              "options": [
+                "Amlodipine",
+                "Lisinopril",
+                "Losartan",
+                "Propranolol"
+              ],
+              "answer": "Propranolol",
+              "explanation": "Non-selective beta-blockers (e.g., propranolol) can precipitate bronchospasm in asthma by blocking β2-mediated bronchodilation; cardioselective β1-blockers (e.g., metoprolol, bisoprolol) are safer. Calcium channel blockers and RAAS blockers do not cause bronchospasm."
+            },
+            {
+              "stem": "A 75-year-old man with heart failure (LVEF 25%) develops symptomatic bradycardia on carvedilol. Which drug can reverse this bradycardia?",
+              "options": [
+                "Atropine",
+                "Glucagon",
+                "Isoproterenol",
+                "Digoxin"
+              ],
+              "answer": "Glucagon",
+              "explanation": "Glucagon bypasses β-adrenergic blockade by activating cardiac glucagon receptors, increasing cAMP and heart rate/contractility; atropine may not overcome full β-blockade, isoproterenol risks arrhythmias, and digoxin worsens bradycardia."
+            },
+            {
+              "stem": "A 60-year-old man with hypertension and gout is started on hydrochlorothiazide. Which metabolic adverse effect is most likely?",
+              "options": [
+                "Hypercalcaemia",
+                "Hyperuricaemia",
+                "Hypokalaemia",
+                "Metabolic alkalosis"
+              ],
+              "answer": "Hyperuricaemia",
+              "explanation": "Thiazide diuretics (hydrochlorothiazide) increase uric acid reabsorption in the proximal tubule, precipitating gout attacks; they also cause hypokalaemia and metabolic alkalosis, but hyperuricaemia is the most gout-specific adverse effect."
+            },
+            {
+              "stem": "A 50-year-old woman with atrial fibrillation is prescribed digoxin. Which electrolyte abnormality predisposes to digoxin toxicity?",
+              "options": [
+                "Hypercalcaemia",
+                "Hyperkalaemia",
+                "Hypokalaemia",
+                "Hyponatraemia"
+              ],
+              "answer": "Hypokalaemia",
+              "explanation": "Hypokalaemia increases digoxin binding to Na+/K+-ATPase, enhancing its toxic effects (arrhythmias, GI symptoms); hyperkalaemia, hypercalcaemia and hyponatraemia do not directly predispose to digoxin toxicity."
+            },
+            {
+              "stem": "A 48-year-old man with hypertension and chronic kidney disease (eGFR 30 mL/min) is started on an ACE inhibitor. Which baseline investigation is essential before initiation?",
+              "options": [
+                "Serum potassium",
+                "Serum sodium",
+                "Serum creatinine and eGFR",
+                "Urinary protein-to-creatinine ratio"
+              ],
+              "answer": "Serum creatinine and eGFR",
+              "explanation": "ACE inhibitors can cause acute kidney injury, especially in bilateral renal artery stenosis or reduced renal perfusion; baseline serum creatinine/eGFR is essential to monitor for renal function deterioration. Serum potassium is monitored after initiation."
+            },
+            {
+              "stem": "A 35-year-old woman with hypertension is started on nifedipine. Which adverse effect is most commonly associated with this drug?",
+              "options": [
+                "Bradycardia",
+                "Reflex tachycardia",
+                "Hyperkalaemia",
+                "Hyperglycaemia"
+              ],
+              "answer": "Reflex tachycardia",
+              "explanation": "Dihydropyridine calcium channel blockers (e.g., nifedipine) cause peripheral vasodilation, triggering reflex sympathetic activation and tachycardia; bradycardia is seen with non-dihydropyridines (verapamil/diltiazem), and hyperkalaemia/hyperglycaemia are unrelated."
+            },
+            {
+              "stem": "A 65-year-old man with hypertension and type 2 diabetes is started on an ACE inhibitor. Which additional drug class should be co-prescribed to reduce cardiovascular risk?",
+              "options": [
+                "Thiazide diuretic",
+                "High-intensity statin",
+                "Loop diuretic",
+                "Calcium channel blocker"
+              ],
+              "answer": "High-intensity statin",
+              "explanation": "ACE inhibitors reduce cardiovascular events in diabetes; high-intensity statins (e.g., atorvastatin 40–80 mg) are recommended for primary/secondary prevention in diabetes regardless of baseline LDL-C to reduce atherosclerotic risk."
+            },
+            {
+              "stem": "A 72-year-old man with hypertension and chronic obstructive pulmonary disease is started on an antihypertensive. Which drug is safest in this setting?",
+              "options": [
+                "Atenolol",
+                "Amlodipine",
+                "Doxazosin",
+                "Hydrochlorothiazide"
+              ],
+              "answer": "Amlodipine",
+              "explanation": "Amlodipine (a dihydropyridine CCB) is safe in COPD and does not cause bronchospasm; atenolol is contraindicated (β1-selectivity is insufficient in COPD), doxazosin causes orthostatic hypotension, and thiazides may worsen glucose control."
+            },
+            {
+              "stem": "A 55-year-old man with hypertension and left ventricular hypertrophy is started on an ACE inhibitor. Which additional drug class should be considered to further reduce LVH?",
+              "options": [
+                "Thiazide diuretic",
+                "Calcium channel blocker",
+                "Angiotensin II receptor blocker",
+                "Beta-blocker"
+              ],
+              "answer": "Thiazide diuretic",
+              "explanation": "Thiazide diuretics (e.g., hydrochlorothiazide) are recommended in combination with ACE inhibitors/ARBs to reduce left ventricular hypertrophy (LVH) and blood pressure; calcium channel blockers, ARBs and beta-blockers are alternatives but not first-line for LVH regression."
+            },
+            {
+              "stem": "A 42-year-old woman with hypertension and hyperlipidaemia is started on atorvastatin. Which baseline investigation is essential before initiation?",
+              "options": [
+                "Serum potassium",
+                "Liver function tests (ALT/AST)",
+                "Serum creatinine",
+                "Urinary protein-to-creatinine ratio"
+              ],
+              "answer": "Liver function tests (ALT/AST)",
+              "explanation": "Statins can cause hepatotoxicity; baseline liver enzymes (ALT/AST) are essential to monitor for drug-induced liver injury. Serum potassium, creatinine and urinary protein are not directly affected by statins."
+            },
+            {
+              "stem": "A 60-year-old man with hypertension and chronic kidney disease (eGFR 25 mL/min) develops hyperkalaemia on an ACE inhibitor. Which drug class should be avoided?",
+              "options": [
+                "Loop diuretics",
+                "Potassium-sparing diuretics",
+                "Calcium channel blockers",
+                "Beta-blockers"
+              ],
+              "answer": "Potassium-sparing diuretics",
+              "explanation": "Potassium-sparing diuretics (e.g., spironolactone, amiloride) inhibit renal potassium excretion and worsen hyperkalaemia in CKD; loop diuretics, calcium channel blockers and beta-blockers do not cause hyperkalaemia."
+            },
+            {
+              "stem": "A 50-year-old man with hypertension and gout is started on losartan. Which additional benefit does losartan provide in this patient?",
+              "options": [
+                "Reduces serum uric acid",
+                "Increases serum potassium",
+                "Lowers serum glucose",
+                "Increases serum sodium"
+              ],
+              "answer": "Reduces serum uric acid",
+              "explanation": "Losartan (an ARB) has a uricosuric effect, lowering serum uric acid levels and reducing gout attacks; ACE inhibitors and other ARBs do not have this effect. Serum potassium, glucose and sodium are not directly affected."
+            },
+            {
+              "stem": "A 70-year-old woman with hypertension and osteoporosis is started on hydrochlorothiazide. Which beneficial effect does this drug have in this setting?",
+              "options": [
+                "Increases serum calcium",
+                "Reduces urinary calcium excretion",
+                "Increases bone mineral density",
+                "Reduces fracture risk"
+              ],
+              "answer": "Reduces urinary calcium excretion",
+              "explanation": "Thiazide diuretics reduce urinary calcium excretion, which may help preserve bone mineral density and reduce fracture risk in osteoporosis; they do not directly increase serum calcium or bone density."
+            },
+            {
+              "stem": "A 45-year-old man with hypertension and erectile dysfunction is started on an antihypertensive. Which drug is least likely to worsen erectile dysfunction?",
+              "options": [
+                "Amlodipine",
+                "Enalapril",
+                "Metoprolol",
+                "Hydrochlorothiazide"
+              ],
+              "answer": "Amlodipine",
+              "explanation": "Amlodipine (a dihydropyridine CCB) is least likely to cause erectile dysfunction compared to beta-blockers (metoprolol), thiazides (hydrochlorothiazide) or ACE inhibitors (enalapril), which are associated with higher rates of sexual dysfunction."
+            },
+            {
+              "stem": "A 65-year-old man with hypertension and benign prostatic hyperplasia is started on doxazosin. Which adverse effect is most commonly associated with this drug?",
+              "options": [
+                "Bradycardia",
+                "First-dose hypotension",
+                "Hyperkalaemia",
+                "Hyperglycaemia"
+              ],
+              "answer": "First-dose hypotension",
+              "explanation": "Alpha-1 blockers (e.g., doxazosin) cause first-dose hypotension due to vasodilation; bradycardia, hyperkalaemia and hyperglycaemia are not typical adverse effects of alpha-1 blockers."
+            },
+            {
+              "stem": "A 55-year-old woman with hypertension and chronic kidney disease (eGFR 15 mL/min) is started on furosemide. Which electrolyte abnormality is most likely?",
+              "options": [
+                "Hyperkalaemia",
+                "Hypercalcaemia",
+                "Hypokalaemia",
+                "Hyponatraemia"
+              ],
+              "answer": "Hypokalaemia",
+              "explanation": "Loop diuretics (e.g., furosemide) cause hypokalaemia by increasing distal tubular potassium secretion; hyperkalaemia, hypercalcaemia and hyponatraemia are less common with loop diuretics in CKD."
+            },
+            {
+              "stem": "A 40-year-old man with hypertension and hyperlipidaemia is started on simvastatin. Which drug interaction increases the risk of myopathy?",
+              "options": [
+                "Amlodipine",
+                "Furosemide",
+                "Clarithromycin",
+                "Metoprolol"
+              ],
+              "answer": "Clarithromycin",
+              "explanation": "Clarithromycin (a CYP3A4 inhibitor) increases simvastatin levels, raising the risk of myopathy/rhabdomyolysis; amlodipine, furosemide and metoprolol do not significantly interact with simvastatin."
+            },
+            {
+              "stem": "A 60-year-old man with hypertension and atrial fibrillation is started on verapamil. Which adverse effect is most likely?",
+              "options": [
+                "Bradycardia",
+                "Tachycardia",
+                "Hyperkalaemia",
+                "Hyperglycaemia"
+              ],
+              "answer": "Bradycardia",
+              "explanation": "Verapamil (a non-dihydropyridine CCB) slows AV nodal conduction and heart rate, causing bradycardia; tachycardia, hyperkalaemia and hyperglycaemia are not typical adverse effects of verapamil."
+            },
+            {
+              "stem": "A 50-year-old woman with hypertension and type 2 diabetes is started on an ACE inhibitor. Which additional drug class should be co-prescribed to reduce proteinuria?",
+              "options": [
+                "Thiazide diuretic",
+                "Loop diuretic",
+                "Sodium-glucose cotransporter-2 inhibitor",
+                "Calcium channel blocker"
+              ],
+              "answer": "Sodium-glucose cotransporter-2 inhibitor",
+              "explanation": "SGLT2 inhibitors (e.g., empagliflozin) reduce intraglomerular pressure and proteinuria in diabetic kidney disease, complementing ACE inhibitor/ARB renoprotection; thiazides, loop diuretics and CCBs do not have this specific effect."
+            },
+            {
+              "stem": "A 75-year-old man with hypertension and chronic heart failure (LVEF 30%) is started on carvedilol. Which beneficial effect does this drug have in this setting?",
+              "options": [
+                "Increases heart rate",
+                "Reduces myocardial oxygen demand",
+                "Increases afterload",
+                "Causes fluid retention"
+              ],
+              "answer": "Reduces myocardial oxygen demand",
+              "explanation": "Carvedilol (a non-selective beta-blocker with alpha-1 blockade) reduces heart rate, contractility and afterload, lowering myocardial oxygen demand and improving survival in heart failure; it does not increase heart rate, afterload or cause fluid retention."
+            },
+            {
+              "stem": "A 45-year-old man with hypertension and chronic kidney disease (eGFR 20 mL/min) is started on an ACE inhibitor. Which monitoring parameter is essential after initiation?",
+              "options": [
+                "Serum potassium",
+                "Serum sodium",
+                "Serum creatinine and eGFR",
+                "Urinary protein-to-creatinine ratio"
+              ],
+              "answer": "Serum creatinine and eGFR",
+              "explanation": "ACE inhibitors can cause acute kidney injury; monitoring serum creatinine and eGFR is essential to detect renal function deterioration. Serum potassium is monitored for hyperkalaemia, and urinary protein for renoprotection."
+            },
+            {
+              "stem": "A 60-year-old woman with hypertension and osteoporosis is started on hydrochlorothiazide. Which beneficial effect does this drug have in this setting?",
+              "options": [
+                "Increases serum calcium",
+                "Reduces urinary calcium excretion",
+                "Increases bone mineral density",
+                "Reduces fracture risk"
+              ],
+              "answer": "Reduces urinary calcium excretion",
+              "explanation": "Thiazide diuretics reduce urinary calcium excretion, which may help preserve bone mineral density and reduce fracture risk in osteoporosis; they do not directly increase serum calcium or bone density."
+            },
+            {
+              "stem": "A 55-year-old man with hypertension and hyperlipidaemia is started on atorvastatin. Which baseline investigation is essential before initiation?",
+              "options": [
+                "Serum potassium",
+                "Liver function tests (ALT/AST)",
+                "Serum creatinine",
+                "Urinary protein-to-creatinine ratio"
+              ],
+              "answer": "Liver function tests (ALT/AST)",
+              "explanation": "Statins can cause hepatotoxicity; baseline liver enzymes (ALT/AST) are essential to monitor for drug-induced liver injury. Serum potassium, creatinine and urinary protein are not directly affected by statins."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 65-year-old Kenyan man presents with a BP of 170/100 mmHg. He has no other comorbidities. (7 marks)\na) Recommend an appropriate first-line antihypertensive drug class. (1 mark)\nb) State the mechanism of action of this drug class. (3 marks)\nc) Outline TWO (2) side effects you would monitor for. (3 marks)",
+              "modelAnswer": "a) First-line antihypertensive drug class: Calcium channel blocker (e.g., amlodipine) or thiazide diuretic (e.g., hydrochlorothiazide). (1 mark)\n\nb) Mechanism of action: Calcium channel blockers (dihydropyridines like amlodipine) block L-type calcium channels in vascular smooth muscle, reducing calcium influx and causing vasodilation of arterioles → reduced peripheral vascular resistance and blood pressure. Thiazide diuretics (e.g., hydrochlorothiazide) inhibit the Na+/Cl− cotransporter in the distal convoluted tubule, reducing sodium and water reabsorption → decreased plasma volume and blood pressure. (3 marks)\n\nc) Side effects to monitor: (Any two, 1.5 marks each)\n1. Peripheral oedema (dihydropyridine CCBs).\n2. Hypokalaemia and metabolic alkalosis (thiazide diuretics).\n3. First-dose hypotension (CCBs/thiazides).\n4. Hyperuricaemia/gout (thiazides)."
+            },
+            {
+              "stem": "A 55-year-old woman with atrial fibrillation and a CHA₂DS₂-VASc score of 3 is started on dabigatran. (7 marks)\na) State the mechanism of action of dabigatran. (2 marks)\nb) Outline TWO (2) clinical applications of dabigatran. (2 marks)\nc) State TWO (2) side effects you would monitor for. (3 marks)",
+              "modelAnswer": "a) Mechanism of action: Dabigatran is a direct oral thrombin inhibitor; it binds reversibly to the active site of thrombin (factor IIa), preventing the conversion of fibrinogen to fibrin and inhibiting thrombin-mediated platelet activation. (2 marks)\n\nb) Clinical applications: (Any two, 1 mark each)\n1. Prevention of stroke and systemic embolism in patients with non-valvular atrial fibrillation.\n2. Treatment and secondary prevention of venous thromboembolism (DVT/PE).\n3. Post-hip/knee replacement thromboprophylaxis. (2 marks)\n\nc) Side effects to monitor: (Any two, 1.5 marks each)\n1. Bleeding (major/minor).\n2. Dyspepsia (acidic formulation).\n3. Liver function test abnormalities (rare)."
+            },
+            {
+              "stem": "A 60-year-old man with chronic heart failure (LVEF 30%) is started on carvedilol. (7 marks)\na) State the mechanism of action of carvedilol. (2 marks)\nb) Outline THREE (3) clinical applications of carvedilol. (3 marks)\nc) State TWO (2) side effects you would monitor for. (2 marks)",
+              "modelAnswer": "a) Mechanism of action: Carvedilol is a non-selective beta-blocker with additional alpha-1 adrenergic blockade. It competitively blocks β1- and β2-adrenergic receptors in the heart, reducing heart rate, contractility and myocardial oxygen demand; the alpha-1 blockade causes vasodilation, reducing afterload. (2 marks)\n\nb) Clinical applications: (Any three, 1 mark each)\n1. Chronic heart failure with reduced ejection fraction (HFrEF) — improves symptoms, reduces hospitalisation and mortality.\n2. Hypertension — reduces blood pressure via beta-1 blockade and vasodilation.\n3. Post-myocardial infarction — reduces mortality and recurrent events.\n4. Rate control in atrial fibrillation (if beta-blockers are preferred over CCBs/digoxin). (3 marks)\n\nc) Side effects to monitor: (Any two, 1 mark each)\n1. Bradycardia and heart block.\n2. Hypotension (especially first-dose).\n3. Bronchospasm (due to non-selective beta-blockade).\n4. Fluid retention/heart failure exacerbation (early in therapy)."
+            },
+            {
+              "stem": "A 45-year-old man with STEMI is started on alteplase. (6 marks)\na) State the mechanism of action of alteplase. (2 marks)\nb) Outline TWO (2) clinical applications of alteplase. (2 marks)\nc) State TWO (2) contraindications to its use. (2 marks)",
+              "modelAnswer": "a) Mechanism of action: Alteplase is a recombinant tissue plasminogen activator (t-PA) that binds to fibrin in a thrombus and converts plasminogen to plasmin, which degrades fibrin and lyses the clot. (2 marks)\n\nb) Clinical applications: (Any two, 1 mark each)\n1. Acute ST-elevation myocardial infarction (STEMI) when primary PCI is not immediately available.\n2. Acute ischaemic stroke (within 4.5 hours of symptom onset).\n3. Massive pulmonary embolism with haemodynamic compromise. (2 marks)\n\nc) Contraindications: (Any two, 1 mark each)\n1. Active internal bleeding or bleeding diathesis.\n2. Recent major surgery or trauma (within 2–4 weeks).\n3. History of haemorrhagic stroke or ischaemic stroke within 3 months.\n4. Severe uncontrolled hypertension (SBP > 185 mmHg or DBP > 110 mmHg)."
+            },
+            {
+              "stem": "A 50-year-old woman with hypertension and type 2 diabetes is started on lisinopril. (7 marks)\na) State the mechanism of action of lisinopril. (2 marks)\nb) Outline THREE (3) clinical applications of lisinopril. (3 marks)\nc) State TWO (2) side effects you would monitor for. (2 marks)",
+              "modelAnswer": "a) Mechanism of action: Lisinopril is an angiotensin-converting enzyme (ACE) inhibitor that blocks the conversion of angiotensin I to angiotensin II, reducing vasoconstriction, aldosterone secretion and sympathetic activity. It also reduces bradykinin degradation (leading to cough). (2 marks)\n\nb) Clinical applications: (Any three, 1 mark each)\n1. Hypertension — reduces blood pressure via vasodilation and reduced sodium/water retention.\n2. Chronic heart failure with reduced ejection fraction (HFrEF) — improves symptoms and survival.\n3. Diabetic nephropathy/proteinuria — reduces intraglomerular pressure and slows renal function decline.\n4. Post-myocardial infarction — reduces ventricular remodelling and mortality. (3 marks)\n\nc) Side effects to monitor: (Any two, 1 mark each)\n1. Dry, persistent cough (bradykinin-mediated).\n2. Hyperkalaemia (reduced aldosterone).\n3. First-dose hypotension.\n4. Angioedema (rare but serious)."
+            },
+            {
+              "stem": "A 65-year-old man with hypertension and hyperlipidaemia is started on atorvastatin. (6 marks)\na) State the mechanism of action of atorvastatin. (2 marks)\nb) Outline TWO (2) clinical applications of atorvastatin. (2 marks)\nc) State TWO (2) side effects you would monitor for. (2 marks)",
+              "modelAnswer": "a) Mechanism of action: Atorvastatin is a HMG-CoA reductase inhibitor that blocks the rate-limiting step in cholesterol synthesis (conversion of HMG-CoA to mevalonate), reducing hepatic cholesterol and upregulating LDL receptor expression → increased LDL clearance from the bloodstream. (2 marks)\n\nb) Clinical applications: (Any two, 1 mark each)\n1. Primary and secondary prevention of atherosclerotic cardiovascular disease (ASCVD) — reduces LDL-C and cardiovascular events.\n2. Hypercholesterolaemia/dyslipidaemia — lowers LDL-C and triglycerides, modestly raises HDL-C.\n3. Familial hypercholesterolaemia — high-dose atorvastatin (with ezetimibe/PCSK9 inhibitor if needed) to achieve LDL goals. (2 marks)\n\nc) Side effects to monitor: (Any two, 1 mark each)\n1. Myopathy/myositis (elevated CK, risk of rhabdomyolysis).\n2. Hepatotoxicity (elevated liver enzymes).\n3. Gastrointestinal symptoms (nausea, diarrhoea).\n4. New-onset diabetes (rare)."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 70-year-old Kenyan man presents with a BP of 180/110 mmHg and a history of chronic kidney disease (eGFR 35 mL/min/1.73m²). He has no other comorbidities. (15 marks)\na) Formulate a pharmaceutical plan for this patient, including drug names and doses where applicable. (3 marks)\nb) Describe the mechanism of action of the THREE (3) drugs you recommended in a) above. (6 marks)\nc) State TWO (2) side effects for each drug that you would monitor for. (6 marks)",
+              "modelAnswer": "a) Pharmaceutical plan: (Any three appropriate drugs, 1 mark each)\n1. Amlodipine 5 mg orally once daily (calcium channel blocker).\n2. Losartan 50 mg orally once daily (angiotensin II receptor blocker).\n3. Hydrochlorothiazide 12.5 mg orally once daily (thiazide diuretic).\n(Alternative: furosemide 20 mg orally once daily if eGFR < 30 mL/min, but thiazides are preferred in this setting.)\n\nb) Mechanism of action: (2 marks each)\n• Amlodipine: A dihydropyridine calcium channel blocker that inhibits L-type calcium channels in vascular smooth muscle cells, reducing calcium influx and causing vasodilation of arterioles → reduced peripheral vascular resistance and blood pressure.\n• Losartan: An angiotensin II receptor blocker (ARB) that selectively blocks angiotensin II type 1 (AT1) receptors, preventing angiotensin II-mediated vasoconstriction, aldosterone release and sympathetic activity → vasodilation and reduced blood pressure.\n• Hydrochlorothiazide: A thiazide diuretic that inhibits the Na+/Cl− cotransporter in the distal convoluted tubule of the kidney, reducing sodium and water reabsorption → decreased plasma volume and blood pressure.\n\nc) Side effects to monitor: (2 marks each, any two per drug)\n• Amlodipine: Peripheral oedema, flushing, headache, dizziness/first-dose hypotension.\n• Losartan: Hyperkalaemia, first-dose hypotension, angioedema (rare), impaired renal function (monitor creatinine/eGFR).\n• Hydrochlorothiazide: Hypokalaemia, metabolic alkalosis, hyperuricaemia/gout, hyponatraemia."
+            },
+            {
+              "stem": "A 55-year-old woman with atrial fibrillation and a CHA₂DS₂-VASc score of 4 is admitted with a suspected acute coronary syndrome (NSTEMI). (15 marks)\na) Formulate a pharmaceutical plan for this patient, including drug names and doses where applicable. (4 marks)\nb) Describe the mechanism of action of the FOUR (4) drugs you recommended in a) above. (8 marks)\nc) State TWO (2) side effects for each drug that you would monitor for. (3 marks)",
+              "modelAnswer": "a) Pharmaceutical plan: (Any four appropriate drugs, 1 mark each)\n1. Aspirin 300 mg chewable loading dose, then 75 mg orally daily (antiplatelet).\n2. Clopidogrel 600 mg loading dose, then 75 mg orally daily (P2Y12 inhibitor).\n3. Enoxaparin 1 mg/kg subcutaneous every 12 hours (low-molecular-weight heparin).\n4. Metoprolol 25–50 mg orally twice daily (beta-blocker).\n5. Atorvastatin 40–80 mg orally at night (high-intensity statin).\n6. Lisinopril 2.5–5 mg orally once daily (ACE inhibitor, if tolerated).\n\nb) Mechanism of action: (2 marks each)\n• Aspirin: Irreversibly inhibits cyclooxygenase-1 (COX-1) in platelets, blocking thromboxane A2 synthesis → reduced platelet aggregation and vasoconstriction.\n• Clopidogrel: A P2Y12 ADP receptor antagonist that inhibits platelet activation and aggregation by blocking the binding of ADP to its receptor on the platelet surface.\n• Enoxaparin: A low-molecular-weight heparin that binds to antithrombin III, accelerating its inhibition of factor Xa (and to a lesser extent thrombin) → reduced thrombin generation and clot formation.\n• Metoprolol: A selective beta-1 adrenergic blocker that reduces heart rate, contractility and myocardial oxygen demand by competitively blocking beta-1 receptors in the heart.\n• Atorvastatin: A HMG-CoA reductase inhibitor that reduces hepatic cholesterol synthesis and upregulates LDL receptor expression → increased LDL clearance from the bloodstream.\n• Lisinopril: An ACE inhibitor that blocks the conversion of angiotensin I to angiotensin II → reduced vasoconstriction, aldosterone secretion and sympathetic activity.\n\nc) Side effects to monitor: (1.5 marks each, any two per drug)\n• Aspirin: Gastrointestinal bleeding, peptic ulcer disease, tinnitus (high doses), bronchospasm (rare).\n• Clopidogrel: Bleeding, thrombotic thrombocytopenic purpura (TTP), gastrointestinal upset.\n• Enoxaparin: Bleeding, heparin-induced thrombocytopenia (HIT), injection-site reactions.\n• Metoprolol: Bradycardia, hypotension, bronchospasm (in asthma/COPD), fatigue.\n• Atorvastatin: Myopathy/myositis (elevated CK), hepatotoxicity (elevated liver enzymes), gastrointestinal symptoms.\n• Lisinopril: Dry cough, hyperkalaemia, first-dose hypotension, angioedema."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

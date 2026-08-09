@@ -107,28 +107,16 @@ export default function ExamPrepScreen() {
           {unit.structure.reduce((a, s) => a + s.marks, 0)} marks
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          {unit.source === 'real' ? (
-            <div className="grid grid-cols-1 gap-3 max-w-sm">
-              <PaperLinkCard
-                spec={unit}
-                variant={1}
-                onSelect={(v) =>
-                  navigate(`/knowledge/exam/prep/${encodeURIComponent(module.id)}/${track.id}/${encodeURIComponent(unit.id)}/${v}`)
-                }
-              />
-            </div>
-          ) : (
-            [1, 2, 3].map((v) => (
-              <PaperLinkCard
-                key={v}
-                spec={unit}
-                variant={v}
-                onSelect={(vv) =>
-                  navigate(`/knowledge/exam/prep/${encodeURIComponent(module.id)}/${track.id}/${encodeURIComponent(unit.id)}/${vv}`)
-                }
-              />
-            ))
-          )}
+          {Array.from({ length: getPaperCount(unit) }, (_, i) => i + 1).map((v) => (
+            <PaperLinkCard
+              key={v}
+              spec={unit}
+              variant={v}
+              onSelect={(vv) =>
+                navigate(`/knowledge/exam/prep/${encodeURIComponent(module.id)}/${track.id}/${encodeURIComponent(unit.id)}/${vv}`)
+              }
+            />
+          ))}
         </div>
       </div>
     );

@@ -1,0 +1,393 @@
+{
+  "pharm-anticancer-derm-ocular": {
+    "3": {
+      "title": "Anticancer, Dermatological & Ocular Drugs",
+      "variant": 3,
+      "sections": [
+        {
+          "letter": "A",
+          "name": "Multiple Choice Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 58-year-old man with metastatic castration-resistant prostate cancer is started on abiraterone. Which of the following adverse effects is most likely to occur with this drug?",
+              "options": [
+                "Cardiotoxicity",
+                "Hepatotoxicity",
+                "Nephrotoxicity",
+                "Osteoporosis"
+              ],
+              "answer": "Hepatotoxicity",
+              "explanation": "Abiraterone is an androgen biosynthesis inhibitor that requires hepatic CYP17A1 metabolism; it can cause elevated liver enzymes and hepatotoxicity, necessitating liver function monitoring."
+            },
+            {
+              "stem": "A 42-year-old woman with ER-positive, HER2-negative breast cancer is prescribed tamoxifen as adjuvant therapy. Which of the following is a known adverse effect of tamoxifen?",
+              "options": [
+                "Cardiotoxicity",
+                "Endometrial hyperplasia",
+                "Peripheral neuropathy",
+                "Pulmonary fibrosis"
+              ],
+              "answer": "Endometrial hyperplasia",
+              "explanation": "Tamoxifen is a selective estrogen receptor modulator (SERM) with estrogenic effects on the endometrium, increasing the risk of endometrial hyperplasia, polyps, and carcinoma."
+            },
+            {
+              "stem": "A 65-year-old man with chronic lymphocytic leukemia is treated with fludarabine. Which of the following is the most likely dose-limiting toxicity?",
+              "options": [
+                "Cardiotoxicity",
+                "Neurotoxicity",
+                "Nephrotoxicity",
+                "Pulmonary toxicity"
+              ],
+              "answer": "Neurotoxicity",
+              "explanation": "Fludarabine, a purine analog, causes dose-dependent neurotoxicity (encephalopathy, peripheral neuropathy) and myelosuppression; neurotoxicity is often dose-limiting."
+            },
+            {
+              "stem": "A 30-year-old woman with severe psoriasis unresponsive to topical therapy is started on acitretin. Which of the following is a key monitoring parameter for this drug?",
+              "options": [
+                "Blood pressure",
+                "Liver function tests",
+                "Serum potassium",
+                "Thyroid function"
+              ],
+              "answer": "Liver function tests",
+              "explanation": "Acitretin is a retinoid with hepatotoxic potential; regular liver function tests (ALT, AST, bilirubin) are essential for monitoring."
+            },
+            {
+              "stem": "A 70-year-old man with open-angle glaucoma is prescribed latanoprost eye drops. Which of the following is the primary mechanism of action of latanoprost?",
+              "options": [
+                "Decreases aqueous humor production",
+                "Increases trabecular meshwork outflow",
+                "Increases uveoscleral outflow",
+                "Reduces vitreous volume"
+              ],
+              "answer": "Increases uveoscleral outflow",
+              "explanation": "Latanoprost is a prostaglandin F2-alpha analog that increases uveoscleral outflow of aqueous humor, thereby reducing intraocular pressure."
+            },
+            {
+              "stem": "A 25-year-old man with nodular acne is prescribed isotretinoin. Which of the following is a mandatory requirement before initiating isotretinoin therapy?",
+              "options": [
+                "Baseline chest X-ray",
+                "Pregnancy test in women of childbearing potential",
+                "Serum lipid profile",
+                "Thyroid function tests"
+              ],
+              "answer": "Pregnancy test in women of childbearing potential",
+              "explanation": "Isotretinoin is highly teratogenic; a negative pregnancy test is mandatory before initiation and monthly thereafter in women of childbearing potential."
+            },
+            {
+              "stem": "A 50-year-old woman with metastatic colorectal cancer is treated with 5-fluorouracil (5-FU) and leucovorin. Which of the following is the primary purpose of leucovorin in this regimen?",
+              "options": [
+                "Enhance 5-FU cytotoxicity by stabilizing the drug-receptor complex",
+                "Prevent 5-FU-induced myelosuppression",
+                "Reduce 5-FU-induced cardiotoxicity",
+                "Reverse 5-FU resistance"
+              ],
+              "answer": "Enhance 5-FU cytotoxicity by stabilizing the drug-receptor complex",
+              "explanation": "Leucovorin (folinic acid) stabilizes the ternary complex of 5-FU, thymidylate synthase, and folate, enhancing 5-FU's cytotoxic effect on tumor cells."
+            },
+            {
+              "stem": "A 40-year-old man with Hodgkin lymphoma is treated with doxorubicin, bleomycin, vinblastine, and dacarbazine (ABVD). Which of the following is the most likely cardiotoxic agent in this regimen?",
+              "options": [
+                "Bleomycin",
+                "Dacarbazine",
+                "Doxorubicin",
+                "Vinblastine"
+              ],
+              "answer": "Doxorubicin",
+              "explanation": "Doxorubicin is an anthracycline with well-documented dose-dependent cardiotoxicity (cardiomyopathy, heart failure) due to free radical generation and mitochondrial damage."
+            },
+            {
+              "stem": "A 35-year-old woman with severe atopic dermatitis is prescribed tacrolimus ointment. Which of the following is the primary mechanism of action of tacrolimus?",
+              "options": [
+                "Inhibits calcineurin and blocks T-cell activation",
+                "Inhibits cyclooxygenase-2",
+                "Inhibits dihydrofolate reductase",
+                "Inhibits tumor necrosis factor-alpha"
+              ],
+              "answer": "Inhibits calcineurin and blocks T-cell activation",
+              "explanation": "Tacrolimus binds FKBP12 and inhibits calcineurin, preventing NFAT dephosphorylation and blocking IL-2 transcription, thereby suppressing T-cell activation."
+            },
+            {
+              "stem": "A 60-year-old man with metastatic renal cell carcinoma is started on sunitinib. Which of the following is the primary mechanism of action of sunitinib?",
+              "options": [
+                "Inhibits epidermal growth factor receptor (EGFR)",
+                "Inhibits vascular endothelial growth factor receptors (VEGFR)",
+                "Inhibits mammalian target of rapamycin (mTOR)",
+                "Inhibits platelet-derived growth factor receptors (PDGFR)"
+              ],
+              "answer": "Inhibits vascular endothelial growth factor receptors (VEGFR)",
+              "explanation": "Sunitinib is a multitargeted tyrosine kinase inhibitor that primarily inhibits VEGFR-1, VEGFR-2, and VEGFR-3, reducing tumor angiogenesis and growth."
+            },
+            {
+              "stem": "A 28-year-old woman with severe acne vulgaris is prescribed clindamycin lotion. Which of the following is the primary mechanism of action of clindamycin in acne?",
+              "options": [
+                "Anti-inflammatory and comedolytic",
+                "Bactericidal against Cutibacterium acnes",
+                "Keratinolytic",
+                "Sebum production inhibitor"
+              ],
+              "answer": "Bactericidal against Cutibacterium acnes",
+              "explanation": "Clindamycin (a lincosamide antibiotic) inhibits bacterial protein synthesis at the 50S ribosomal subunit, reducing Cutibacterium acnes colonization and inflammation."
+            },
+            {
+              "stem": "A 55-year-old man with metastatic prostate cancer is treated with enzalutamide. Which of the following is the primary mechanism of action of enzalutamide?",
+              "options": [
+                "Androgen receptor antagonist",
+                "Aromatase inhibitor",
+                "GnRH agonist",
+                "LHRH antagonist"
+              ],
+              "answer": "Androgen receptor antagonist",
+              "explanation": "Enzalutamide is a second-generation androgen receptor inhibitor that blocks androgen receptor signaling in prostate cancer cells."
+            },
+            {
+              "stem": "A 45-year-old woman with metastatic breast cancer overexpressing HER2 is treated with pertuzumab and trastuzumab. Which of the following is the primary mechanism of action of pertuzumab?",
+              "options": [
+                "Binds HER2 extracellular domain and inhibits ligand-independent signaling",
+                "Inhibits HER2 tyrosine kinase activity",
+                "Inhibits estrogen receptor signaling",
+                "Inhibits vascular endothelial growth factor"
+              ],
+              "answer": "Binds HER2 extracellular domain and inhibits ligand-independent signaling",
+              "explanation": "Pertuzumab binds the extracellular dimerization domain of HER2, preventing ligand-independent HER2-HER3 dimerization and downstream signaling."
+            },
+            {
+              "stem": "A 30-year-old man with severe psoriasis is treated with methotrexate. Which of the following is the primary mechanism of action of methotrexate in psoriasis?",
+              "options": [
+                "Inhibits dihydrofolate reductase and reduces DNA synthesis",
+                "Inhibits tumor necrosis factor-alpha",
+                "Inhibits interleukin-17",
+                "Inhibits interleukin-23"
+              ],
+              "answer": "Inhibits dihydrofolate reductase and reduces DNA synthesis",
+              "explanation": "Methotrexate inhibits dihydrofolate reductase, depleting tetrahydrofolate and inhibiting purine and thymidylate synthesis, thereby suppressing rapidly dividing cells in psoriasis."
+            },
+            {
+              "stem": "A 65-year-old woman with metastatic colorectal cancer is treated with irinotecan. Which of the following is the primary dose-limiting toxicity of irinotecan?",
+              "options": [
+                "Cardiotoxicity",
+                "Diarrhea",
+                "Nephrotoxicity",
+                "Neurotoxicity"
+              ],
+              "answer": "Diarrhea",
+              "explanation": "Irinotecan causes severe, delayed diarrhea (cholinergic and secretory) due to its active metabolite SN-38, which is dose-limiting and requires aggressive management."
+            },
+            {
+              "stem": "A 22-year-old woman with severe nodular acne is prescribed spironolactone. Which of the following is the primary mechanism of action of spironolactone in acne?",
+              "options": [
+                "Androgen receptor antagonist",
+                "5-alpha-reductase inhibitor",
+                "Estrogen receptor agonist",
+                "Progesterone receptor antagonist"
+              ],
+              "answer": "Androgen receptor antagonist",
+              "explanation": "Spironolactone is a potassium-sparing diuretic with antiandrogenic properties; it blocks androgen receptors in sebaceous glands, reducing sebum production."
+            },
+            {
+              "stem": "A 50-year-old man with metastatic melanoma is treated with pembrolizumab. Which of the following is the primary mechanism of action of pembrolizumab?",
+              "options": [
+                "Binds PD-1 and blocks PD-L1/PD-L2 interaction",
+                "Binds CTLA-4 and enhances T-cell priming",
+                "Inhibits BRAF V600E mutation",
+                "Inhibits MEK kinase activity"
+              ],
+              "answer": "Binds PD-1 and blocks PD-L1/PD-L2 interaction",
+              "explanation": "Pembrolizumab is a humanized monoclonal antibody against PD-1 that blocks the interaction with PD-L1/PD-L2, restoring T-cell-mediated anti-tumor immunity."
+            },
+            {
+              "stem": "A 40-year-old woman with severe atopic dermatitis is treated with dupilumab. Which of the following is the primary mechanism of action of dupilumab?",
+              "options": [
+                "Inhibits interleukin-4 and interleukin-13 signaling",
+                "Inhibits tumor necrosis factor-alpha",
+                "Inhibits interleukin-17",
+                "Inhibits interleukin-22"
+              ],
+              "answer": "Inhibits interleukin-4 and interleukin-13 signaling",
+              "explanation": "Dupilumab is a monoclonal antibody against the IL-4 receptor alpha subunit, blocking IL-4 and IL-13 signaling, which are key drivers of Th2 inflammation in atopic dermatitis."
+            },
+            {
+              "stem": "A 60-year-old man with metastatic prostate cancer is treated with abiraterone. Which of the following is the primary adverse effect of abiraterone?",
+              "options": [
+                "Hypercalcemia",
+                "Hypertension",
+                "Hypokalemia",
+                "Thrombocytopenia"
+              ],
+              "answer": "Hypertension",
+              "explanation": "Abiraterone inhibits CYP17A1, leading to mineralocorticoid excess (hypertension, hypokalemia, fluid retention) due to upstream accumulation of adrenal steroids."
+            },
+            {
+              "stem": "A 35-year-old woman with severe psoriasis is treated with apremilast. Which of the following is the primary mechanism of action of apremilast?",
+              "options": [
+                "Inhibits phosphodiesterase-4 and increases cAMP",
+                "Inhibits tumor necrosis factor-alpha",
+                "Inhibits interleukin-17",
+                "Inhibits interleukin-23"
+              ],
+              "answer": "Inhibits phosphodiesterase-4 and increases cAMP",
+              "explanation": "Apremilast is a selective PDE-4 inhibitor that increases intracellular cAMP in immune cells, reducing pro-inflammatory cytokine production (TNF-alpha, IL-17, IL-23)."
+            },
+            {
+              "stem": "A 55-year-old man with metastatic renal cell carcinoma is treated with everolimus. Which of the following is the primary mechanism of action of everolimus?",
+              "options": [
+                "Inhibits mTOR and blocks cell cycle progression",
+                "Inhibits vascular endothelial growth factor receptors",
+                "Inhibits epidermal growth factor receptor",
+                "Inhibits platelet-derived growth factor receptors"
+              ],
+              "answer": "Inhibits mTOR and blocks cell cycle progression",
+              "explanation": "Everolimus is an mTOR inhibitor that blocks the mTORC1 complex, inhibiting protein synthesis and cell cycle progression in tumor cells."
+            },
+            {
+              "stem": "A 40-year-old woman with severe acne vulgaris is treated with oral isotretinoin. Which of the following is the primary mechanism of action of isotretinoin in acne?",
+              "options": [
+                "Reduces sebum production and normalizes keratinization",
+                "Inhibits Cutibacterium acnes",
+                "Inhibits 5-alpha-reductase",
+                "Inhibits tumor necrosis factor-alpha"
+              ],
+              "answer": "Reduces sebum production and normalizes keratinization",
+              "explanation": "Isotretinoin reduces sebum production by shrinking sebaceous glands and normalizes follicular keratinization, reducing comedone formation and inflammation."
+            },
+            {
+              "stem": "A 60-year-old man with metastatic colorectal cancer is treated with cetuximab. Which of the following is the primary mechanism of action of cetuximab?",
+              "options": [
+                "Binds EGFR and inhibits downstream signaling",
+                "Binds VEGF and inhibits angiogenesis",
+                "Binds HER2 and inhibits dimerization",
+                "Binds PD-1 and restores T-cell function"
+              ],
+              "answer": "Binds EGFR and inhibits downstream signaling",
+              "explanation": "Cetuximab is a monoclonal antibody against the epidermal growth factor receptor (EGFR), blocking ligand binding and downstream signaling in tumor cells."
+            },
+            {
+              "stem": "A 30-year-old woman with severe psoriasis is treated with adalimumab. Which of the following is the primary mechanism of action of adalimumab?",
+              "options": [
+                "Binds TNF-alpha and neutralizes its activity",
+                "Binds IL-17A and inhibits its signaling",
+                "Binds IL-23 and blocks its interaction",
+                "Binds IL-4 receptor and inhibits Th2 signaling"
+              ],
+              "answer": "Binds TNF-alpha and neutralizes its activity",
+              "explanation": "Adalimumab is a fully human monoclonal antibody against tumor necrosis factor-alpha (TNF-alpha), neutralizing its pro-inflammatory effects."
+            },
+            {
+              "stem": "A 55-year-old man with metastatic prostate cancer is treated with docetaxel. Which of the following is the primary mechanism of action of docetaxel?",
+              "options": [
+                "Stabilizes microtubules and inhibits depolymerization",
+                "Inhibits topoisomerase I",
+                "Inhibits dihydrofolate reductase",
+                "Inhibits DNA polymerase"
+              ],
+              "answer": "Stabilizes microtubules and inhibits depolymerization",
+              "explanation": "Docetaxel is a taxane that binds tubulin and stabilizes microtubules, preventing depolymerization and causing mitotic arrest and cell death."
+            },
+            {
+              "stem": "A 40-year-old woman with severe atopic dermatitis is treated with cyclosporine. Which of the following is the primary mechanism of action of cyclosporine?",
+              "options": [
+                "Inhibits calcineurin and blocks T-cell activation",
+                "Inhibits mTOR and blocks cell cycle progression",
+                "Inhibits dihydrofolate reductase",
+                "Inhibits tumor necrosis factor-alpha"
+              ],
+              "answer": "Inhibits calcineurin and blocks T-cell activation",
+              "explanation": "Cyclosporine binds cyclophilin and inhibits calcineurin, preventing NFAT dephosphorylation and blocking IL-2 transcription, thereby suppressing T-cell activation."
+            },
+            {
+              "stem": "A 60-year-old man with metastatic renal cell carcinoma is treated with sorafenib. Which of the following is the primary mechanism of action of sorafenib?",
+              "options": [
+                "Inhibits multiple tyrosine kinases including VEGFR and PDGFR",
+                "Binds PD-1 and restores T-cell function",
+                "Inhibits mTOR and blocks cell cycle progression",
+                "Inhibits dihydrofolate reductase"
+              ],
+              "answer": "Inhibits multiple tyrosine kinases including VEGFR and PDGFR",
+              "explanation": "Sorafenib is a multitargeted tyrosine kinase inhibitor that inhibits VEGFR, PDGFR, and other kinases, reducing tumor angiogenesis and growth."
+            },
+            {
+              "stem": "A 35-year-old woman with severe psoriasis is treated with ustekinumab. Which of the following is the primary mechanism of action of ustekinumab?",
+              "options": [
+                "Binds IL-12 and IL-23 and inhibits their signaling",
+                "Binds TNF-alpha and neutralizes its activity",
+                "Binds IL-17A and inhibits its signaling",
+                "Binds IL-4 receptor and inhibits Th2 signaling"
+              ],
+              "answer": "Binds IL-12 and IL-23 and inhibits their signaling",
+              "explanation": "Ustekinumab is a monoclonal antibody against the p40 subunit of IL-12 and IL-23, blocking their interaction with receptors and reducing Th1/Th17-mediated inflammation."
+            },
+            {
+              "stem": "A 50-year-old man with metastatic colorectal cancer is treated with panitumumab. Which of the following is the primary mechanism of action of panitumumab?",
+              "options": [
+                "Binds EGFR and inhibits downstream signaling",
+                "Binds VEGF and inhibits angiogenesis",
+                "Binds HER2 and inhibits dimerization",
+                "Binds PD-1 and restores T-cell function"
+              ],
+              "answer": "Binds EGFR and inhibits downstream signaling",
+              "explanation": "Panitumumab is a fully human monoclonal antibody against the epidermal growth factor receptor (EGFR), blocking ligand binding and downstream signaling in tumor cells."
+            },
+            {
+              "stem": "A 45-year-old woman with severe acne vulgaris is treated with oral contraceptives containing ethinylestradiol and drospirenone. Which of the following is the primary mechanism of action in acne?",
+              "options": [
+                "Reduces androgen production and sebum secretion",
+                "Inhibits Cutibacterium acnes",
+                "Inhibits 5-alpha-reductase",
+                "Inhibits tumor necrosis factor-alpha"
+              ],
+              "answer": "Reduces androgen production and sebum secretion",
+              "explanation": "Ethinylestradiol and drospirenone suppress ovarian androgen production and increase sex hormone-binding globulin, reducing free testosterone and sebum production."
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "name": "Short Answer Questions",
+          "marks": 40,
+          "questions": [
+            {
+              "stem": "A 55-year-old woman with metastatic breast cancer overexpressing HER2 is started on a combination regimen including trastuzumab, pertuzumab, and docetaxel.\n\n(a) Describe the mechanism of action of trastuzumab. (3 marks)\n(b) Describe the mechanism of action of pertuzumab. (3 marks)\n(c) Outline the rationale for combining trastuzumab and pertuzumab in HER2-positive breast cancer. (3 marks)",
+              "modelAnswer": "a) Trastuzumab mechanism (3 marks): Trastuzumab is a humanized monoclonal antibody against the extracellular domain of the HER2 receptor. It binds HER2 and inhibits ligand-independent HER2 signaling, induces antibody-dependent cellular cytotoxicity (ADCC) against HER2-overexpressing tumor cells, and prevents receptor dimerization and downstream MAPK and PI3K/AKT signaling pathways.\n\nb) Pertuzumab mechanism (3 marks): Pertuzumab is a humanized monoclonal antibody that binds the extracellular dimerization domain of HER2 (subdomain II), preventing ligand-dependent and ligand-independent HER2-HER3 (and other) heterodimerization. This blocks downstream signaling pathways (MAPK, PI3K/AKT) critical for tumor cell proliferation and survival.\n\nc) Rationale for combination (3 marks): Combining trastuzumab and pertuzumab targets two distinct epitopes on HER2, providing complementary mechanisms of action. Trastuzumab inhibits ligand-independent signaling and triggers ADCC, while pertuzumab blocks ligand-dependent dimerization and signaling. This dual blockade enhances anti-tumor efficacy, reduces the risk of resistance, and improves progression-free and overall survival in HER2-positive metastatic breast cancer."
+            },
+            {
+              "stem": "A 40-year-old man with severe psoriasis is prescribed apremilast.\n\n(a) What is the primary mechanism of action of apremilast? (2 marks)\n(b) Outline TWO (2) key adverse effects of apremilast. (4 marks)",
+              "modelAnswer": "a) Primary mechanism of action (2 marks): Apremilast is a selective phosphodiesterase-4 (PDE-4) inhibitor that increases intracellular cyclic AMP (cAMP) levels in immune cells, leading to reduced production of pro-inflammatory cytokines (e.g., TNF-alpha, IL-17, IL-23) and increased anti-inflammatory mediators (e.g., IL-10).\n\nb) Key adverse effects (4 marks):\n1. Gastrointestinal effects: nausea, vomiting, diarrhea (common, dose-related).\n2. Headache and dizziness (frequent).\n3. Weight loss (can be significant in some patients).\n4. Increased risk of depression or mood changes (requires monitoring).\n5. Rare but serious: suicidal ideation (monitor for psychiatric symptoms)."
+            },
+            {
+              "stem": "A 50-year-old woman with metastatic colorectal cancer is treated with 5-fluorouracil (5-FU), leucovorin, and irinotecan (FOLFIRI regimen).\n\n(a) Describe the mechanism of action of 5-FU. (3 marks)\n(b) Explain the role of leucovorin in this regimen. (2 marks)\n(c) Outline the primary dose-limiting toxicity of irinotecan and its management. (3 marks)",
+              "modelAnswer": "a) Mechanism of action of 5-FU (3 marks): 5-Fluorouracil (5-FU) is an antimetabolite that is converted intracellularly to 5-fluorodeoxyuridine monophosphate (5-FdUMP). 5-FdUMP forms a stable ternary complex with thymidylate synthase and reduced folate (CH2THF), inhibiting thymidylate synthase and blocking de novo thymidylate synthesis. This leads to impaired DNA synthesis and repair, causing cell cycle arrest and apoptosis (primarily in the S-phase).\n\nb) Role of leucovorin (2 marks): Leucovorin (folinic acid) provides reduced folate (CH2THF) that stabilizes the ternary complex between 5-FdUMP, thymidylate synthase, and folate. This enhances the cytotoxic effect of 5-FU by prolonging the inhibition of thymidylate synthase, thereby increasing the efficacy of the drug in tumor cells.\n\nc) Primary dose-limiting toxicity of irinotecan and its management (3 marks): The primary dose-limiting toxicity of irinotecan is severe, delayed diarrhea (cholinergic and secretory), which can be life-threatening. Management includes:\n- Early administration of loperamide (4 mg initially, then 2 mg every 2 hours until diarrhea resolves for 12 hours).\n- Aggressive fluid and electrolyte replacement.\n- Consideration of dose reduction or treatment interruption in subsequent cycles.\n- Prophylactic use of atropine for early cholinergic diarrhea (abdominal cramping, diarrhea within 24 hours)."
+            },
+            {
+              "stem": "A 35-year-old woman with severe nodular acne is prescribed oral isotretinoin.\n\n(a) Outline the mechanism of action of isotretinoin in acne. (3 marks)\n(b) List THREE (3) key monitoring parameters for patients on isotretinoin. (3 marks)",
+              "modelAnswer": "a) Mechanism of action of isotretinoin in acne (3 marks):\n1. Reduces sebum production by shrinking sebaceous glands and inhibiting sebocyte differentiation.\n2. Normalizes follicular keratinization, reducing comedone formation and microcomedone development.\n3. Exhibits anti-inflammatory effects by reducing the production of inflammatory mediators (e.g., IL-1, TNF-alpha) and reducing Cutibacterium acnes colonization.\n\nb) Key monitoring parameters for isotretinoin (3 marks):\n1. Pregnancy testing: mandatory in women of childbearing potential before initiation, monthly during treatment, and one month after discontinuation (due to teratogenicity).\n2. Liver function tests: baseline and monthly due to hepatotoxic potential (elevated ALT/AST).\n3. Serum lipid profile: baseline and monthly due to hypertriglyceridemia and hypercholesterolemia risk.\n4. Complete blood count: baseline and periodically due to potential myelosuppression (rare).\n5. Mood and psychiatric symptoms: monitor for depression, suicidal ideation, or mood changes."
+            },
+            {
+              "stem": "A 60-year-old man with open-angle glaucoma is prescribed latanoprost eye drops.\n\n(a) Describe the mechanism of action of latanoprost. (2 marks)\n(b) Outline TWO (2) key adverse effects of latanoprost. (4 marks)\n(c) Compare the mechanism of action of latanoprost with that of timolol. (2 marks)",
+              "modelAnswer": "a) Mechanism of action of latanoprost (2 marks): Latanoprost is a prostaglandin F2-alpha analog that increases uveoscleral outflow of aqueous humor by remodeling the extracellular matrix of the ciliary muscle and sclera, thereby reducing intraocular pressure (IOP).\n\nb) Key adverse effects of latanoprost (4 marks):\n1. Iris pigmentation (irreversible, gradual darkening of the iris, especially in mixed-color irises).\n2. Eyelash changes (hypertrichosis, increased length, thickness, and pigmentation of eyelashes).\n3. Conjunctival hyperemia (redness of the eye).\n4. Ocular irritation, burning, or stinging sensation.\n5. Rare: macular edema (in aphakic or pseudophakic patients with torn posterior lens capsule).\n\nc) Comparison with timolol (2 marks): Latanoprost primarily increases uveoscleral outflow of aqueous humor, while timolol (a non-selective beta-blocker) reduces aqueous humor production by blocking beta-adrenergic receptors on the ciliary epithelium. Latanoprost is administered once daily (evening), whereas timolol is typically administered twice daily."
+            },
+            {
+              "stem": "A 50-year-old woman with metastatic breast cancer is treated with an aromatase inhibitor (e.g., anastrozole).\n\n(a) Describe the mechanism of action of aromatase inhibitors. (3 marks)\n(b) Outline TWO (2) key adverse effects of aromatase inhibitors. (3 marks)",
+              "modelAnswer": "a) Mechanism of action of aromatase inhibitors (3 marks): Aromatase inhibitors (e.g., anastrozole, letrozole, exemestane) block the enzyme aromatase, which converts androgens (androstenedione and testosterone) to estrogens (estrone and estradiol) in peripheral tissues (e.g., adipose tissue, breast tissue). By inhibiting aromatase, these drugs reduce circulating estrogen levels, thereby suppressing estrogen-dependent tumor growth in postmenopausal women with hormone receptor-positive breast cancer.\n\nb) Key adverse effects of aromatase inhibitors (3 marks):\n1. Musculoskeletal symptoms: arthralgia, myalgia, and bone pain (common, can be dose-limiting).\n2. Osteoporosis and increased fracture risk: due to estrogen deprivation and reduced bone mineral density (requires bone density monitoring and consideration of bisphosphonates or denosumab).\n3. Vasomotor symptoms: hot flashes and night sweats (due to estrogen withdrawal).\n4. Rare: cardiovascular events (e.g., hypertension, hyperlipidemia) and increased risk of endometrial cancer (lower than with tamoxifen)."
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "name": "Long Answer Questions",
+          "marks": 30,
+          "questions": [
+            {
+              "stem": "A 55-year-old woman with ER-positive, HER2-negative metastatic breast cancer is started on a combination regimen including tamoxifen, letrozole, and palbociclib.\n\n(a) Describe the mechanism of action of tamoxifen. (4 marks)\n(b) Describe the mechanism of action of letrozole. (3 marks)\n(c) Describe the mechanism of action of palbociclib. (4 marks)\n(d) Outline the rationale for combining these three drugs in this patient. (4 marks)",
+              "modelAnswer": "a) Mechanism of action of tamoxifen (4 marks): Tamoxifen is a selective estrogen receptor modulator (SERM) that acts as a partial agonist/antagonist at estrogen receptors. In breast tissue, it competitively binds estrogen receptors and blocks estrogen-mediated transcription of genes involved in cell proliferation. This inhibits the growth of ER-positive breast cancer cells. Tamoxifen also has estrogenic effects on bone (preventing osteoporosis) and the endometrium (increasing risk of hyperplasia/carcinoma).\n\nb) Mechanism of action of letrozole (3 marks): Letrozole is a non-steroidal aromatase inhibitor that reversibly binds and inhibits the enzyme aromatase. Aromatase converts androgens (androstenedione and testosterone) to estrogens (estrone and estradiol) in peripheral tissues (e.g., adipose tissue, breast tissue). By inhibiting aromatase, letrozole reduces circulating estrogen levels, thereby suppressing estrogen-dependent tumor growth in postmenopausal women with hormone receptor-positive breast cancer.\n\nc) Mechanism of action of palbociclib (4 marks): Palbociclib is a cyclin-dependent kinase (CDK) 4/6 inhibitor that selectively inhibits CDK4 and CDK6. These kinases phosphorylate the retinoblastoma protein (Rb), leading to cell cycle progression from G1 to S phase. By inhibiting CDK4/6, palbociclib blocks Rb phosphorylation, causing cell cycle arrest in the G1 phase and inhibiting tumor cell proliferation. Palbociclib is used in combination with endocrine therapy (e.g., letrozole or fulvestrant) to delay resistance in ER-positive breast cancer.\n\n\nd) Rationale for combining tamoxifen, letrozole, and palbociclib (4 marks):\n- Tamoxifen and letrozole are endocrine therapies targeting the estrogen receptor pathway: tamoxifen blocks estrogen receptors in breast tissue, while letrozole reduces estrogen production. However, resistance to endocrine therapy is common, often due to upregulation of cell cycle pathways (e.g., CDK4/6).\n- Palbociclib inhibits CDK4/6, blocking cell cycle progression and overcoming endocrine resistance. Combining palbociclib with endocrine therapy (e.g., letrozole) has been shown to significantly improve progression-free survival in ER-positive, HER2-negative metastatic breast cancer.\n- Tamoxifen is less commonly combined with palbociclib in practice due to overlapping toxicities (e.g., thromboembolic events) and the preference for aromatase inhibitors in postmenopausal women. However, the rationale for combining all three would be to maximize estrogen receptor blockade (tamoxifen) while reducing estrogen production (letrozole) and inhibiting cell cycle progression (palbociclib). This triple combination is not standard but illustrates the principle of combining endocrine therapy with CDK4/6 inhibition to delay resistance and improve outcomes."
+            },
+            {
+              "stem": "A 45-year-old man with severe plaque psoriasis unresponsive to topical therapy is started on a combination of methotrexate, acitretin, and narrowband UVB phototherapy.\n\n(a) Describe the mechanism of action of methotrexate in psoriasis. (5 marks)\n(b) Describe the mechanism of action of acitretin in psoriasis. (5 marks)\n(c) Outline the rationale for combining methotrexate, acitretin, and narrowband UVB phototherapy in this patient. (5 marks)",
+              "modelAnswer": "a) Mechanism of action of methotrexate in psoriasis (5 marks): Methotrexate is a folate antimetabolite that inhibits dihydrofolate reductase (DHFR), depleting tetrahydrofolate (THF) and inhibiting purine and thymidylate synthesis. This leads to impaired DNA synthesis and cell proliferation, particularly in rapidly dividing cells such as keratinocytes and immune cells (e.g., T lymphocytes). Methotrexate also has anti-inflammatory effects by increasing adenosine release, which suppresses neutrophil function and reduces pro-inflammatory cytokine production (e.g., TNF-alpha, IL-6). Additionally, methotrexate may induce apoptosis in activated T cells and reduce the expression of adhesion molecules, further contributing to its anti-psoriatic effects.\n\nb) Mechanism of action of acitretin in psoriasis (5 marks): Acitretin is a second-generation retinoid (vitamin A derivative) that binds to and activates retinoic acid receptors (RARs) and retinoid X receptors (RXRs). In psoriasis, acitretin normalizes keratinocyte differentiation and proliferation, reducing the formation of hyperproliferative plaques and scales. It also has anti-inflammatory effects by modulating the expression of genes involved in inflammation (e.g., reducing IL-1, IL-6, and TNF-alpha production) and inhibiting the migration of neutrophils and other immune cells into psoriatic lesions. Acitretin also reduces sebum production by shrinking sebaceous glands, which may contribute to its efficacy in psoriasis.\n\n\nc) Rationale for combining methotrexate, acitretin, and narrowband UVB phototherapy (5 marks):\n1. Methotrexate and acitretin have complementary mechanisms of action: Methotrexate primarily inhibits DNA synthesis and immune cell proliferation, while acitretin normalizes keratinocyte differentiation and reduces inflammation. Combining these drugs can enhance efficacy and reduce the dose required for each, minimizing adverse effects (e.g., methotrexate-induced hepatotoxicity, acitretin-induced hyperlipidemia).\n\n2. Narrowband UVB phototherapy provides an additional anti-inflammatory and immunomodulatory effect: UVB light suppresses the proliferation of keratinocytes and immune cells (e.g., Langerhans cells, T lymphocytes) in psoriatic plaques. It also induces apoptosis in activated T cells and reduces the production of pro-inflammatory cytokines (e.g., IL-17, IL-22). Combining UVB with systemic therapies can lead to faster and more sustained clearance of psoriasis.\n\n3. Combination therapy reduces the risk of resistance and improves outcomes: Psoriasis often recurs or becomes resistant to monotherapy. Combining drugs with different mechanisms of action (e.g., methotrexate + acitretin + UVB) targets multiple pathways involved in psoriasis pathogenesis, reducing the likelihood of resistance and improving the overall response rate.\n\n4. Dose-sparing and toxicity reduction: Using lower doses of methotrexate and acitretin in combination with UVB can achieve similar efficacy to higher doses of monotherapy, reducing the risk of dose-limiting toxicities (e.g., hepatotoxicity with methotrexate, hyperlipidemia with acitretin).\n\n5. Patient-specific factors: This combination may be particularly useful in patients with severe, recalcitrant psoriasis who have failed topical therapy or single-agent systemic therapy. The rationale is to achieve rapid and sustained disease control while minimizing adverse effects and improving quality of life."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
